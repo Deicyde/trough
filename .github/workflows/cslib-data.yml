@@ -20,6 +20,7 @@ on:
     paths:
       - "tools/refresh_cslib.py"
       - "tools/trough/cslib.py"
+      - "tools/trough/library.py"
       - "tools/trough/leansource.py"
       - "tools/trough/formal_conjectures.py"
       - "tools/trough/ff.py"
@@ -30,6 +31,7 @@ on:
     paths:
       - "tools/refresh_cslib.py"
       - "tools/trough/cslib.py"
+      - "tools/trough/library.py"
       - "tools/trough/leansource.py"
       - "tools/trough/formal_conjectures.py"
       - "tools/trough/ff.py"

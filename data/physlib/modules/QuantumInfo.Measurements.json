@@ -1,0 +1,99 @@
+{
+ "schema": "trough-physlib/v1",
+ "rev": "2a1dfe43134b49b643642f13d33031754021bb5d",
+ "modules": [
+  {
+   "file": "QuantumInfo/Measurements/POVM.lean",
+   "module": "QuantumInfo.Measurements.POVM",
+   "title": "Positive Operator-Valued Measures",
+   "doc": "A Positive Operator-Valued Measures, or POVM, is the most general notion of a quantum \"measurement\":\na collection of positive semidefinite (PSD) operators that sum to the identity. These induce a distribution,\n`POVM.measure`, of measurement outcomes; and they induce a CPTP map, `POVM.measurement_map`, which changes the state\nbut adds learned information.\n\nDeveloping this theory is important if one wants to discuss classical information across quantum channels, as POVMs\nare the route to get back to classical information (a `ProbDistribution` of outcomes).\n\nTODO: They can also evolve under CPTP maps themselves (the Heisenberg picture of quantum evolution), they might commute\nwith each other or not, they might be projective or not.",
+   "copyright": "2025 Alex Meiburg",
+   "sections": [],
+   "declarations": [
+    {
+     "name": "POVM",
+     "kind": "structure",
+     "line": 41,
+     "doc": "A POVM is a (finite) collection of PSD matrices on the same Hilbert space\nthat sum to the identity. Here `X` indexes the matrices, and `d` is the space\ndimension.\n\nApplied to an `MState` on that on that space with\n`POVM.measure`, this produces a distribution of outcomes indexed by the same\ntype as the collection.\n\nThis measurement action can be composed with `MState.of_classical`, in which\ncase it is equal to a CPTP map `measurement_map`.",
+     "statement": "structure POVM (X : Type*) (d : Type*) [Fintype X] [Fintype d] [DecidableEq d] where\n  mats : X → HermitianMat d ℂ\n  nonneg : ∀ x, 0 ≤ (mats x)\n  normalized : ∑ x, mats x = 1",
+     "sorry": false
+    },
+    {
+     "name": "POVM.measurementMap",
+     "kind": "def",
+     "line": 52,
+     "doc": "The act of measuring is a quantum channel, that maps a `d`-dimensional quantum\nstate to an `d × X`-dimensional quantum-classical state.",
+     "statement": "def measurementMap (Λ : POVM X d) : CPTPMap d (d × X)",
+     "sorry": false
+    },
+    {
+     "name": "POVM.measurementMap_apply_matrix",
+     "kind": "lemma",
+     "line": 99,
+     "doc": "",
+     "statement": "lemma measurementMap_apply_matrix (Λ : POVM X d) (m : Matrix d d ℂ) :\n  Λ.measurementMap.map m =  ∑ x : X,\n    ((((Λ.mats x) ^ (1/2:ℝ)).mat * m * ((Λ.mats x)^(1/2:ℝ)).mat) ⊗ₖ Matrix.single x x 1)",
+     "sorry": false
+    },
+    {
+     "name": "POVM.measurementMap_apply_hermitianMat",
+     "kind": "lemma",
+     "line": 108,
+     "doc": "",
+     "statement": "lemma measurementMap_apply_hermitianMat (Λ : POVM X d) (m : HermitianMat d ℂ) :\n  Λ.measurementMap.toHPMap m = ∑ x : X,\n    --TODO: Something like `HermitianMat.single` to make this better\n    ((m.conj ((Λ.mats x)^(1/2:ℝ)).mat : HermitianMat d ℂ) ⊗ₖ HermitianMat.diagonal ℂ (fun y ↦ ite (x = y) 1 0))",
+     "sorry": false
+    },
+    {
+     "name": "POVM.measure",
+     "kind": "def",
+     "line": 122,
+     "doc": "A POVM leads to a distribution of outcomes on any given mixed state ρ.",
+     "statement": "def measure (Λ : POVM X d) (ρ : MState d) : ProbDistribution X",
+     "sorry": false
+    },
+    {
+     "name": "POVM.traceLeft_measurementMap_eq_measure",
+     "kind": "theorem",
+     "line": 130,
+     "doc": "The quantum-classical `POVM.measurement_map`, gives a marginal on the right equal to `POVM.measure`.",
+     "statement": "theorem traceLeft_measurementMap_eq_measure (Λ : POVM X d) (ρ : MState d) :\n    (Λ.measurementMap ρ).traceLeft = MState.ofClassical (Λ.measure ρ)",
+     "sorry": false
+    },
+    {
+     "name": "POVM.measureDiscard",
+     "kind": "def",
+     "line": 157,
+     "doc": "The action of measuring a state with the POVM `Λ`, discarding the resulting state, and keeping\nthe mixed state recording the outcome. This resulting state is purely diagonal, as given in\n`POVM.measureDiscard_apply`.",
+     "statement": "noncomputable def measureDiscard (Λ : POVM X d) : CPTPMap d X",
+     "sorry": false
+    },
+    {
+     "name": "POVM.measureDiscard_apply",
+     "kind": "lemma",
+     "line": 160,
+     "doc": "",
+     "statement": "lemma measureDiscard_apply (Λ : POVM X d) (ρ : MState d) :\n    Λ.measureDiscard ρ = MState.ofClassical (Λ.measure ρ)",
+     "sorry": false
+    },
+    {
+     "name": "POVM.measureForget",
+     "kind": "def",
+     "line": 166,
+     "doc": "The action of measuring a state with the POVM `Λ`, forgetting the measurement outcome, and\nkeeping the disturbed state.",
+     "statement": "noncomputable def measureForget (Λ : POVM X d) : CPTPMap d d",
+     "sorry": false
+    },
+    {
+     "name": "POVM.measureForget_eq_kraus",
+     "kind": "lemma",
+     "line": 169,
+     "doc": "",
+     "statement": "lemma measureForget_eq_kraus (Λ : POVM X d) :\n    Λ.measureForget = CPTPMap.of_kraus_CPTPMap (fun i ↦ (Λ.mats i) ^ (1/2 : ℝ)) (by\n      simpa [-one_div, fun x ↦ HermitianMat.pow_half_mul (Λ.nonneg x), HermitianMat.ext_iff]\n        using Λ.normalized\n    )",
+     "sorry": false
+    }
+   ],
+   "private": 0,
+   "aliases": 0,
+   "informal": 0
+  }
+ ]
+}

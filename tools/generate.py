@@ -26,7 +26,7 @@ from pathlib import Path
 
 from collections import Counter
 
-from trough import anthropic_flt, atlas, blueprints, catalog, cfsg, cslib, ff, formal_conjectures, lean_pool, links, mathlib, openai_math, satellites, stacks, tauceti, wiki
+from trough import anthropic_flt, atlas, blueprints, catalog, cfsg, cslib, ff, formal_conjectures, lean_pool, links, mathlib, openai_math, physlib, satellites, stacks, tauceti, wiki
 from trough.vault import Container, Leaf, assign_paths, render_container, render_tree, walk
 
 ROOT = Path(__file__).resolve().parent.parent
@@ -299,6 +299,27 @@ def generate() -> dict[Path, str]:
             f"{cs['statement_edges']} statement and {cs['proof_edges']} proof edges",
             file=sys.stderr,
         )
+    physlib_data = physlib.load(DATA)
+    if physlib_data:
+        physlib_built, physlib_links = physlib.chapter(physlib_data, tau_root)
+        assign_paths(physlib_built.root, ROADMAP / "physlib")
+        blueprints.resolve(physlib_built, VAULT)
+        files.update(render_tree(physlib_built.root, VAULT))
+        chapters["physlib"] = "physlib/README.md"
+        hosts["physlib"] = physlib_built.root
+        lean_links["physlib"] = physlib_links
+        ph = Counter(physlib_built.stats)
+        blueprint_rows.append((physlib.TITLE, "DECOMPOSED",
+                               f"[{ph['articles']:,} modules](../roadmap/physlib/README.md) with a declaration, one "
+                               "article each, with a block per declaration."))
+        print(
+            f"physlib: {ph['articles']} module articles on {ph['pages']} folder pages in {ph['parts']} parts; "
+            f"{ph['declarations']} declarations ({ph['instances']} instances with no name, {ph['documented']} "
+            f"documented, {ph['significant']} significant, {ph['sorry']} with sorry), {ph['private']} private not shown, "
+            f"{ph['unresolved']} not in Lean; {ph['unshown']} modules without an article; {ph['statement_edges']} "
+            f"statement and {ph['proof_edges']} proof edges",
+            file=sys.stderr,
+        )
     sat_records, sat_packages, sat_overrides = satellites.load(DATA)
     sat_stats = None
     if sat_records:
@@ -380,6 +401,7 @@ def generate() -> dict[Path, str]:
         atlas=atlas_data["source"]["rev"] if atlas_data else None,
         openai_math=oai_data["source"]["rev"] if oai_data else None,
         cslib=cslib_data["rev"] if cslib_data else None,
+        physlib=physlib_data["source"]["rev"] if physlib_data else None,
         satellites=sat_stats["projects"] if sat_stats else None,
     )
     print(

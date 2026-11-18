@@ -1,0 +1,2707 @@
+{
+ "schema": "trough-physlib/v1",
+ "rev": "2a1dfe43134b49b643642f13d33031754021bb5d",
+ "modules": [
+  {
+   "file": "QuantumInfo/States/Ensemble.lean",
+   "module": "QuantumInfo.States.Ensemble",
+   "title": "",
+   "doc": "",
+   "copyright": "2025 Leonardo A Lessa",
+   "sections": [],
+   "declarations": [
+    {
+     "name": "MEnsemble",
+     "kind": "abbrev",
+     "line": 21,
+     "doc": "A mixed-state ensemble is a random variable valued in `MState d`. That is,\na collection of mixed states `var : α → MState d`, each with their own probability weight\ndescribed by `distr : ProbDistribution α`.",
+     "statement": "abbrev MEnsemble (d : Type*) (α : Type*) [Fintype d] [DecidableEq d] [Fintype α]",
+     "sorry": false
+    },
+    {
+     "name": "PEnsemble",
+     "kind": "abbrev",
+     "line": 26,
+     "doc": "A pure-state ensemble is a random variable valued in `Ket d`. That is,\na collection of pure states `var : α → Ket d`, each with their own probability weight\ndescribed by `distr : ProbDistribution α`.",
+     "statement": "abbrev PEnsemble (d : Type*) (α : Type*) [Fintype d] [Fintype α]",
+     "sorry": false
+    },
+    {
+     "name": "MEnsemble.states",
+     "kind": "abbrev",
+     "line": 31,
+     "doc": "Alias for `ProbDistribution.var` for mixed-state ensembles.",
+     "statement": "abbrev MEnsemble.states : MEnsemble d α → (α → MState d)",
+     "sorry": false
+    },
+    {
+     "name": "PEnsemble.states",
+     "kind": "abbrev",
+     "line": 34,
+     "doc": "Alias for `ProbDistribution.var` for pure-state ensembles.",
+     "statement": "abbrev PEnsemble.states : PEnsemble d α → (α → Ket d)",
+     "sorry": false
+    },
+    {
+     "name": "Ensemble.toMEnsemble",
+     "kind": "def",
+     "line": 39,
+     "doc": "A pure-state ensemble is a mixed-state ensemble if all kets are interpreted as mixed states.",
+     "statement": "def toMEnsemble : PEnsemble d α → MEnsemble d α",
+     "sorry": false
+    },
+    {
+     "name": "",
+     "kind": "instance",
+     "line": 41,
+     "doc": "",
+     "statement": "instance : Coe (PEnsemble d α) (MEnsemble d α)",
+     "sorry": false
+    },
+    {
+     "name": "Ensemble.toMEnsemble_mk",
+     "kind": "lemma",
+     "line": 44,
+     "doc": "",
+     "statement": "lemma toMEnsemble_mk : (toMEnsemble ⟨ps, distr⟩ : MEnsemble d α) = ⟨pure ∘ ps, distr⟩",
+     "sorry": false
+    },
+    {
+     "name": "Ensemble.coe_PEnsemble_iff_pure_states",
+     "kind": "theorem",
+     "line": 48,
+     "doc": "A mixed-state ensemble comes from a pure-state ensemble if and only if all states are pure.",
+     "statement": "theorem coe_PEnsemble_iff_pure_states (me : MEnsemble d α): (∃ pe : PEnsemble d α, ↑pe = me) ↔ (∃ ψ : α → Ket d, me.states = MState.pure ∘ ψ)",
+     "sorry": false
+    },
+    {
+     "name": "Ensemble.mix",
+     "kind": "def",
+     "line": 64,
+     "doc": "The resulting mixed state after mixing the states in an ensemble with their\nrespective probability weights. Note that, generically, a single mixed state has infinitely many\nensembles that mixes into it.",
+     "statement": "def mix (e : MEnsemble d α) : MState d",
+     "sorry": false
+    },
+    {
+     "name": "Ensemble.mix_of",
+     "kind": "lemma",
+     "line": 67,
+     "doc": "",
+     "statement": "lemma mix_of (e : MEnsemble d α) : (mix e).m = ∑ i, (e.distr i : ℝ) • (e.states i).m",
+     "sorry": false
+    },
+    {
+     "name": "Ensemble.congrMEnsemble",
+     "kind": "def",
+     "line": 71,
+     "doc": "Two mixed-state ensembles indexed by `\\alpha` and `\\beta` are equivalent if `α ≃ β`.",
+     "statement": "def congrMEnsemble (σ : α ≃ β) : MEnsemble d α ≃ MEnsemble d β",
+     "sorry": false
+    },
+    {
+     "name": "Ensemble.congrPEnsemble",
+     "kind": "def",
+     "line": 74,
+     "doc": "Two pure-state ensembles indexed by `\\alpha` and `\\beta` are equivalent if `α ≃ β`.",
+     "statement": "def congrPEnsemble (σ : α ≃ β) : PEnsemble d α ≃ PEnsemble d β",
+     "sorry": false
+    },
+    {
+     "name": "Ensemble.mix_congrMEnsemble_eq_mix",
+     "kind": "theorem",
+     "line": 78,
+     "doc": "Equivalence of mixed-state ensembles leaves the resulting mixed state invariant",
+     "statement": "theorem mix_congrMEnsemble_eq_mix (σ : α ≃ β) (e : MEnsemble d α) : mix (congrMEnsemble σ e) = mix e",
+     "sorry": false
+    },
+    {
+     "name": "Ensemble.mix_congrPEnsemble_eq_mix",
+     "kind": "theorem",
+     "line": 83,
+     "doc": "Equivalence of pure-state ensembles leaves the resulting mixed state invariant",
+     "statement": "theorem mix_congrPEnsemble_eq_mix (σ : α ≃ β) (e : PEnsemble d α) : mix (toMEnsemble (congrPEnsemble σ e)) = mix (↑e : MEnsemble d α)",
+     "sorry": false
+    },
+    {
+     "name": "Ensemble.average",
+     "kind": "def",
+     "line": 90,
+     "doc": "The average of a function `f : MState d → T`, where `T` is of `Mixable U T` instance, on a mixed-state ensemble `e`\nis the expectation value of `f` acting on the states of `e`, with the corresponding probability weights from `e.distr`.",
+     "statement": "def average {T : Type _} {U : Type*} [AddCommGroup U] [Module ℝ U] [inst : Mixable U T] (f : MState d → T) (e : MEnsemble d α) : T",
+     "sorry": false
+    },
+    {
+     "name": "Ensemble.average_NNReal",
+     "kind": "def",
+     "line": 95,
+     "doc": "A version of `average` conveniently specialized for functions `f : MState d → ℝ≥0` returning nonnegative reals.\nNotably, the average is also a nonnegative real number.",
+     "statement": "def average_NNReal {d : Type _} [Fintype d] [DecidableEq d] (f : MState d → NNReal) (e : MEnsemble d α) : NNReal",
+     "sorry": false
+    },
+    {
+     "name": "Ensemble.pure_average",
+     "kind": "def",
+     "line": 101,
+     "doc": "The average of a function `f : Ket d → T`, where `T` is of `Mixable U T` instance, on a pure-state ensemble `e`\nis the expectation value of `f` acting on the states of `e`, with the corresponding probability weights from `e.distr`.",
+     "statement": "def pure_average {T : Type _} {U : Type*} [AddCommGroup U] [Module ℝ U] [inst : Mixable U T] (f : Ket d → T) (e : PEnsemble d α) : T",
+     "sorry": false
+    },
+    {
+     "name": "Ensemble.pure_average_NNReal",
+     "kind": "def",
+     "line": 106,
+     "doc": "A version of `average` conveniently specialized for functions `f : Ket d → ℝ≥0` returning nonnegative reals.\nNotably, the average is also a nonnegative real number.",
+     "statement": "def pure_average_NNReal {d : Type _} [Fintype d] (f : Ket d → NNReal) (e : PEnsemble d α) : NNReal",
+     "sorry": false
+    },
+    {
+     "name": "Ensemble.average_of_pure_ensemble",
+     "kind": "theorem",
+     "line": 112,
+     "doc": "The average of `f : MState d → T` on a coerced pure-state ensemble `↑e : MEnsemble d α`\nis equal to averaging the restricted function over Kets `f ∘ pure : Ket d → T` on `e`.",
+     "statement": "theorem average_of_pure_ensemble {T : Type _} {U : Type*} [AddCommGroup U] [Module ℝ U] [inst : Mixable U T]\n  (f : MState d → T) (e : PEnsemble d α) :\n  average f (toMEnsemble e) = pure_average (f ∘ pure) e",
+     "sorry": false
+    },
+    {
+     "name": "Ensemble.distr_toMEnsemble",
+     "kind": "lemma",
+     "line": 120,
+     "doc": "",
+     "statement": "lemma distr_toMEnsemble (e : PEnsemble d α) : (toMEnsemble e).distr = e.distr",
+     "sorry": false
+    },
+    {
+     "name": "Ensemble.mix_pEnsemble_pure_iff_pure",
+     "kind": "lemma",
+     "line": 128,
+     "doc": "",
+     "statement": "lemma mix_pEnsemble_pure_iff_pure {e : PEnsemble d α} :\n    mix (toMEnsemble e) = MState.pure ψ ↔\n    ∀ i : α, e.distr i ≠ 0 → MState.pure (e.states i) = MState.pure ψ",
+     "sorry": false
+    },
+    {
+     "name": "Ensemble.mix_pEnsemble_pure_average",
+     "kind": "theorem",
+     "line": 149,
+     "doc": "The average of `f : Ket d → T` on an ensemble that mixes to a pure state `ψ` is `f ψ`",
+     "statement": "theorem mix_pEnsemble_pure_average {e : PEnsemble d α} {T : Type _} {U : Type*} [AddCommGroup U] [Module ℝ U]\n    [inst : Mixable U T] (f : Ket d → T) (hf : ∀ ψ φ, Ket.PhaseEquiv.r ψ φ → f ψ = f φ)\n    (hmix : mix (toMEnsemble e) = MState.pure ψ) :\n  pure_average f e = f ψ",
+     "sorry": false
+    },
+    {
+     "name": "Ensemble.sum_prob_mul_eq_one_iff",
+     "kind": "lemma",
+     "line": 169,
+     "doc": "",
+     "statement": "lemma sum_prob_mul_eq_one_iff {ι : Type*} [Fintype ι] (p : ι → ℝ) (x : ι → ℝ)\n    (hp : ∀ i, 0 ≤ p i) (hsum : ∑ i, p i = 1) (hx : ∀ i, x i ≤ 1) :\n    (∑ i, p i * x i = 1) ↔ ∀ i, p i ≠ 0 → x i = 1",
+     "sorry": false
+    },
+    {
+     "name": "Ensemble.MState.exp_val_pure_eq_one_iff",
+     "kind": "lemma",
+     "line": 190,
+     "doc": "",
+     "statement": "lemma MState.exp_val_pure_eq_one_iff {d : Type*} [Fintype d] [DecidableEq d]\n    (ρ : MState d) (ψ : Ket d) :\n    ρ.exp_val (pure ψ) = 1 ↔ ρ = pure ψ",
+     "sorry": false
+    },
+    {
+     "name": "Ensemble.mix_mEnsemble_pure_iff_pure",
+     "kind": "lemma",
+     "line": 212,
+     "doc": "",
+     "statement": "lemma mix_mEnsemble_pure_iff_pure {e : MEnsemble d α} :\n    mix e = pure ψ ↔ ∀ i : α, e.distr i ≠ 0 → e.states i = MState.pure ψ",
+     "sorry": false
+    },
+    {
+     "name": "Ensemble.mix_mEnsemble_pure_average",
+     "kind": "theorem",
+     "line": 225,
+     "doc": "The average of `f : MState d → T` on an ensemble that mixes to a pure state `ψ` is `f (pure ψ)`",
+     "statement": "theorem mix_mEnsemble_pure_average {e : MEnsemble d α} {T : Type _} {U : Type*} [AddCommGroup U] [Module ℝ U] [inst : Mixable U T] (f : MState d → T) (hmix : mix e = pure ψ) :\n  average f e = f (pure ψ)",
+     "sorry": false
+    },
+    {
+     "name": "Ensemble.trivial_mEnsemble",
+     "kind": "def",
+     "line": 255,
+     "doc": "The trivial mixed-state ensemble of `ρ` consists of copies of `rho`, with the `i`-th one having\nprobability 1.",
+     "statement": "def trivial_mEnsemble (ρ : MState d) (i : α) : MEnsemble d α",
+     "sorry": false
+    },
+    {
+     "name": "Ensemble.trivial_mEnsemble_mix",
+     "kind": "theorem",
+     "line": 258,
+     "doc": "The trivial mixed-state ensemble of `ρ` mixes to `ρ`",
+     "statement": "theorem trivial_mEnsemble_mix (ρ : MState d) : ∀ i : α, mix (trivial_mEnsemble ρ i) = ρ",
+     "sorry": false
+    },
+    {
+     "name": "Ensemble.trivial_mEnsemble_average",
+     "kind": "theorem",
+     "line": 266,
+     "doc": "The average of `f : MState d → T` on a trivial ensemble of `ρ` is `f ρ`",
+     "statement": "theorem trivial_mEnsemble_average {T : Type _} {U : Type*} [AddCommGroup U] [Module ℝ U] [inst : Mixable U T] (f : MState d → T) (ρ : MState d):\n  ∀ i : α, average f (trivial_mEnsemble ρ i) = f ρ",
+     "sorry": false
+    },
+    {
+     "name": "Ensemble.MEnsemble.instInhabited",
+     "kind": "instance",
+     "line": 272,
+     "doc": "",
+     "statement": "instance MEnsemble.instInhabited [Nonempty d] [Inhabited α] : Inhabited (MEnsemble d α)",
+     "sorry": false
+    },
+    {
+     "name": "Ensemble.trivial_pEnsemble",
+     "kind": "def",
+     "line": 277,
+     "doc": "The trivial pure-state ensemble of `ψ` consists of copies of `ψ`, with the `i`-th one having\nprobability 1.",
+     "statement": "def trivial_pEnsemble (ψ : Ket d) (i : α) : PEnsemble d α",
+     "sorry": false
+    },
+    {
+     "name": "Ensemble.trivial_pEnsemble_mix",
+     "kind": "theorem",
+     "line": 283,
+     "doc": "The trivial pure-state ensemble of `ψ` mixes to `ψ`",
+     "statement": "theorem trivial_pEnsemble_mix : ∀ i : α, mix (toMEnsemble (trivial_pEnsemble ψ i)) = MState.pure ψ",
+     "sorry": false
+    },
+    {
+     "name": "Ensemble.trivial_pEnsemble_average",
+     "kind": "theorem",
+     "line": 292,
+     "doc": "The average of `f : Ket d → T` on a trivial ensemble of `ψ` is `f ψ`",
+     "statement": "theorem trivial_pEnsemble_average {T : Type _} {U : Type*} [AddCommGroup U] [Module ℝ U] [inst : Mixable U T] (f : Ket d → T) :\n  ∀ i : α, pure_average f (trivial_pEnsemble ψ i) = f ψ",
+     "sorry": false
+    },
+    {
+     "name": "Ensemble.PEnsemble.instInhabited",
+     "kind": "instance",
+     "line": 298,
+     "doc": "",
+     "statement": "instance PEnsemble.instInhabited [Nonempty d] [Inhabited α] : Inhabited (PEnsemble d α)",
+     "sorry": false
+    },
+    {
+     "name": "Ensemble.spectral_ensemble",
+     "kind": "def",
+     "line": 302,
+     "doc": "The spectral pure-state ensemble of `ρ`. The states are its eigenvectors, and the probabilities, eigenvalues.",
+     "statement": "def spectral_ensemble (ρ : MState d) : PEnsemble d d",
+     "sorry": false
+    },
+    {
+     "name": "Ensemble.spectral_decomposition_sum",
+     "kind": "lemma",
+     "line": 315,
+     "doc": "",
+     "statement": "lemma spectral_decomposition_sum {d 𝕜 : Type*} [Fintype d] [DecidableEq d] [RCLike 𝕜]\n    {A : Matrix d d 𝕜} (hA : A.IsHermitian) :\n    A = ∑ i, (hA.eigenvalues i) • (Matrix.vecMulVec (hA.eigenvectorBasis i) (star (hA.eigenvectorBasis i)))",
+     "sorry": false
+    },
+    {
+     "name": "Ensemble.spectral_ensemble_mix",
+     "kind": "theorem",
+     "line": 329,
+     "doc": "The spectral pure-state ensemble of `ρ` mixes to `ρ`",
+     "statement": "theorem spectral_ensemble_mix {ρ : MState d} : mix (↑(spectral_ensemble ρ) : MEnsemble d d) = ρ",
+     "sorry": false
+    },
+    {
+     "name": "MState.IsSeparable.exists_pEnsemble_isProd",
+     "kind": "lemma",
+     "line": 348,
+     "doc": "Every separable bipartite mixed state is a mixture of finitely many\npure product states. The ensemble is indexed by `Fin n` for some `n > 0`.",
+     "statement": "lemma MState.IsSeparable.exists_pEnsemble_isProd {ρ : MState (d₁ × d₂)}\n    (hρ : ρ.IsSeparable) :\n    ∃ (n : ℕ) (e : PEnsemble (d₁ × d₂) (Fin n)), 0 < n ∧ mix (toMEnsemble e) = ρ ∧\n      ∀ i, (e.states i).IsProd",
+     "sorry": false
+    }
+   ],
+   "private": 0,
+   "aliases": 0,
+   "informal": 0
+  },
+  {
+   "file": "QuantumInfo/States/Entanglement.lean",
+   "module": "QuantumInfo.States.Entanglement",
+   "title": "",
+   "doc": "Entanglement measures. (Mixed) convex roof extensions. Definition of product / separable / entangled states\nare in `Braket.lean` and/or `MState.lean`\n\nImportant definitions:\n * `convex_roof`: Convex roof extension of `g : KetUpToPhase d → ℝ≥0`\n * `mixed_convex_roof`: Mixed convex roof extension of `f : MState d → ℝ≥0`\n * `EoF`: Entanglement of Formation\n\nTODO:\n - Other entanglement measures (not necessarily based on convex roof extensions). In roughly increasing order of\n   difficulty to implement: (Logarithmic) Negativity, Entanglement of Purification, Squashed Entanglement, Relative\n   Entropy of Entanglement, Entanglement Cost, Distillable Entanglement.\n   For a compendium on the zoo of entanglement measures, see\n   [1] Christandl, Matthias. “The Structure of Bipartite Quantum States - Insights from Group Theory and Cryptography.”\n       https://doi.org/10.48550/arXiv.quant-ph/0604183.\n - Define classes of entanglement measures with good properties, including: monotonicity under LOCC (easier: just LO),\n   monotonicity on average under LOCC, convexity (if the latter two are present, it is called an entanglement monotone\n   by some), vanishing on separable states, normalized on the maximally entangled state, (sub)additivity, regularisible.\n   For other properties, see [1] above and:\n   [2] Szalay, Szilárd. “Multipartite Entanglement Measures.” (mainly Sec. IV)\n       https://doi.org/10.1103/PhysRevA.92.042329.\n   [3] Horodecki, Ryszard, Paweł Horodecki, Michał Horodecki, and Karol Horodecki. “Quantum Entanglement.”\n       https://doi.org/10.1103/RevModPhys.81.865.\n - Useful properties of convex roof extensions:\n   1. If f is monotonically non-increasing under LOCC, so is its convex roof.\n   2. If f ψ is zero if and only if ψ is a product state, then its convex roof is faithful: zero if and only if\n      the mixed state is separable\n   For other properties, see Sec. IV.F of [2] above.",
+   "copyright": "2025 Leonardo A Lessa",
+   "sections": [],
+   "declarations": [
+    {
+     "name": "convex_roof_ENNReal",
+     "kind": "def",
+     "line": 58,
+     "doc": "Convex roof extension of a function `g : KetUpToPhase d → ℝ≥0`, defined as the infimum of all pure-state\nensembles of a given `ρ` of the average of `g` in that ensemble.\n\nThis is valued in the extended nonnegative real numbers `ℝ≥0∞` to have good properties of the infimum, which\ncome from the fact that `ℝ≥0∞` is a complete lattice. For example, it is necessary for `le_iInf` and `iInf_le_of_le`.\nHowever, it is also proven in `convex_roof_ne_top` that the convex roof is never `∞`, so the definition `convex_roof` should\nbe used in most applications.",
+     "statement": "def convex_roof_ENNReal {d : Type _} [Fintype d] [DecidableEq d] (g : KetUpToPhase d → ℝ≥0) : MState d → ℝ≥0∞",
+     "sorry": false
+    },
+    {
+     "name": "mixed_convex_roof_ENNReal",
+     "kind": "def",
+     "line": 68,
+     "doc": "Mixed convex roof extension of a function `f : MState d → ℝ≥0`, defined as the infimum of all mixed-state\nensembles of a given `ρ` of the average of `f` on that ensemble.\n\nThis is valued in the extended nonnegative real numbers `ℝ≥0∞` to have good properties of the infimum, which\ncome from the fact that `ℝ≥0∞` is a complete lattice (see `ENNReal.instCompleteLinearOrder`). However,\nit is also proven in `mixed_convex_roof_ne_top` that the mixed convex roof is never `∞`, so the definition `mixed_convex_roof` should\nbe used in most applications.",
+     "statement": "def mixed_convex_roof_ENNReal {d : Type _} [Fintype d] [DecidableEq d] (f : MState d → ℝ≥0) : MState d → ℝ≥0∞",
+     "sorry": false
+    },
+    {
+     "name": "convex_roof_ne_top",
+     "kind": "theorem",
+     "line": 78,
+     "doc": "The convex roof extension `convex_roof_ENNReal` is never ∞.",
+     "statement": "theorem convex_roof_ne_top : ∀ ρ, convex_roof_ENNReal g ρ ≠ ∞",
+     "sorry": false
+    },
+    {
+     "name": "mixed_convex_roof_ne_top",
+     "kind": "theorem",
+     "line": 91,
+     "doc": "The convex roof extension `mixed_convex_roof_ENNReal` is never ∞.",
+     "statement": "theorem mixed_convex_roof_ne_top : ∀ ρ, mixed_convex_roof_ENNReal f ρ ≠ ∞",
+     "sorry": false
+    },
+    {
+     "name": "convex_roof",
+     "kind": "def",
+     "line": 102,
+     "doc": "Convex roof extension of a function `g : KetUpToPhase d → ℝ≥0`, defined as the infimum of all pure-state\nensembles of a given `ρ` of the average of `g` in that ensemble.\n\nThis is valued in the nonnegative real numbers `ℝ≥0` by applying `ENNReal.toNNReal` to `convex_roof_ENNReal`. Hence,\nit should be used in proofs alongside `convex_roof_ne_top`.",
+     "statement": "def convex_roof : MState d → ℝ≥0",
+     "sorry": false
+    },
+    {
+     "name": "mixed_convex_roof",
+     "kind": "def",
+     "line": 109,
+     "doc": "Mixed convex roof extension of a function `f : MState d → ℝ≥0`, defined as the infimum of all mixed-state\nensembles of a given `ρ` of the average of `f` on that ensemble.\n\nThis is valued in the nonnegative real numbers `ℝ≥0` by applying `ENNReal.toNNReal` to `mixed_convex_roof_ENNReal`. Hence,\nit should be used in proofs alongside `mixed_convex_roof_ne_top`.",
+     "statement": "def mixed_convex_roof : MState d → ℝ≥0",
+     "sorry": false
+    },
+    {
+     "name": "convex_roof_of_MState_fun",
+     "kind": "def",
+     "line": 113,
+     "doc": "Auxiliary function. Convex roof of a function `f : MState d → ℝ≥0` defined over mixed states by\nrestricting `f` to pure states, via `pureQ : KetUpToPhase d → MState d`.",
+     "statement": "def convex_roof_of_MState_fun : MState d → ℝ≥0",
+     "sorry": false
+    },
+    {
+     "name": "le_mixed_convex_roof",
+     "kind": "lemma",
+     "line": 119,
+     "doc": "",
+     "statement": "lemma le_mixed_convex_roof (ρ : MState d) :\n  (∀ n > 0, ∀ e : MEnsemble d (Fin n), mix e = ρ → c ≤ average_NNReal f e) → (c ≤ mixed_convex_roof f ρ)",
+     "sorry": false
+    },
+    {
+     "name": "le_convex_roof",
+     "kind": "lemma",
+     "line": 128,
+     "doc": "",
+     "statement": "lemma le_convex_roof (ρ : MState d) :\n  (∀ n > 0, ∀ e : PEnsemble d (Fin n), mix (toMEnsemble e) = ρ → c ≤ pure_average_NNReal (g ∘ KetUpToPhase.mk) e) → (c ≤ convex_roof g ρ)",
+     "sorry": false
+    },
+    {
+     "name": "convex_roof_le",
+     "kind": "lemma",
+     "line": 137,
+     "doc": "",
+     "statement": "lemma convex_roof_le (ρ : MState d):\n(∃ n > 0, ∃ e : PEnsemble d (Fin n), mix (toMEnsemble e) = ρ ∧ pure_average_NNReal (g ∘ KetUpToPhase.mk) e ≤ c) → (convex_roof g ρ ≤ c)",
+     "sorry": false
+    },
+    {
+     "name": "mixed_convex_roof_le",
+     "kind": "lemma",
+     "line": 148,
+     "doc": "",
+     "statement": "lemma mixed_convex_roof_le (ρ : MState d):\n(∃ n > 0, ∃ e : MEnsemble d (Fin n), mix e = ρ ∧ average_NNReal f e ≤ c) → (mixed_convex_roof f ρ ≤ c)",
+     "sorry": false
+    },
+    {
+     "name": "mixed_convex_roof_le_convex_roof",
+     "kind": "theorem",
+     "line": 159,
+     "doc": "The mixed convex roof extension of `f` is smaller than or equal to its convex roof extension, since\nthe former minimizes over a larger set of ensembles.",
+     "statement": "theorem mixed_convex_roof_le_convex_roof : mixed_convex_roof f ≤ convex_roof_of_MState_fun f",
+     "sorry": false
+    },
+    {
+     "name": "convex_roof_of_pure",
+     "kind": "theorem",
+     "line": 172,
+     "doc": "The convex roof extension of `g : KetUpToPhase d → ℝ≥0` applied to a pure state `ψ` is `g (KetUpToPhase.mk ψ)`.",
+     "statement": "theorem convex_roof_of_pure (ψ : Ket d) : convex_roof g (pure ψ) = g (KetUpToPhase.mk ψ)",
+     "sorry": false
+    },
+    {
+     "name": "mixed_convex_roof_of_pure",
+     "kind": "theorem",
+     "line": 200,
+     "doc": "The mixed convex roof extension of `f : MState d → ℝ≥0` applied to a pure state `ψ` is `f (pure ψ)`.",
+     "statement": "theorem mixed_convex_roof_of_pure (ψ : Ket d) : mixed_convex_roof f (pure ψ) = f (pure ψ)",
+     "sorry": false
+    },
+    {
+     "name": "convex_roof_eq_zero_of_mix",
+     "kind": "lemma",
+     "line": 224,
+     "doc": "If `g` vanishes on every state in a pure-state ensemble whose mixture is `ρ`,\nthen `convex_roof g ρ = 0`.",
+     "statement": "lemma convex_roof_eq_zero_of_mix {n : ℕ} (hnpos : 0 < n) (e : PEnsemble d (Fin n))\n    {ρ : MState d} (hmix : mix (toMEnsemble e) = ρ)\n    (hg : ∀ i, g (KetUpToPhase.mk (e.states i)) = 0) :\n    convex_roof g ρ = 0",
+     "sorry": false
+    },
+    {
+     "name": "convex_roof_eq_zero_of_isSeparable",
+     "kind": "lemma",
+     "line": 236,
+     "doc": "The convex roof of a function that vanishes on pure product states\nvanishes on every separable state.",
+     "statement": "lemma convex_roof_eq_zero_of_isSeparable (g : KetUpToPhase (d₁ × d₂) → ℝ≥0)\n    (hg : ∀ (ξ : Ket d₁) (η : Ket d₂), g (KetUpToPhase.mk (ξ ⊗ᵠ η)) = 0)\n    {ρ : MState (d₁ × d₂)} (hρ : ρ.IsSeparable) :\n    convex_roof g ρ = 0",
+     "sorry": false
+    },
+    {
+     "name": "EoF",
+     "kind": "def",
+     "line": 251,
+     "doc": "Entanglement of Formation of bipartite systems. It is the convex roof extension of the\nvon Neumann entropy of one of the subsystems (here chosen to be the left one, but see `Entropy.Sᵥₙ_of_partial_eq`).\n\nThe function `Sᵥₙ ∘ traceRight ∘ pure` is phase-invariant because `pure` maps phase-equivalent kets to the\nsame mixed state, so it descends to `KetUpToPhase` via `pureQ`.",
+     "statement": "def EoF : MState (d₁ × d₂) → ℝ≥0",
+     "sorry": false
+    },
+    {
+     "name": "traceRight_pure_MES",
+     "kind": "lemma",
+     "line": 262,
+     "doc": "",
+     "statement": "lemma traceRight_pure_MES (d : Type*) [Fintype d] [DecidableEq d] [Nonempty d] :\n    (MState.pure (Ket.MES d)).traceRight = MState.uniform",
+     "sorry": false
+    },
+    {
+     "name": "Sᵥₙ_eq_trace_cfc",
+     "kind": "lemma",
+     "line": 288,
+     "doc": "",
+     "statement": "lemma Sᵥₙ_eq_trace_cfc {d : Type*} [Fintype d] [DecidableEq d] (ρ : MState d) :\n    Sᵥₙ ρ = (HermitianMat.cfc ρ.M Real.negMulLog).trace",
+     "sorry": false
+    },
+    {
+     "name": "Sᵥₙ_ofClassical",
+     "kind": "lemma",
+     "line": 307,
+     "doc": "",
+     "statement": "lemma Sᵥₙ_ofClassical {d : Type*} [Fintype d] [DecidableEq d] (dist : ProbDistribution d) :\n    Sᵥₙ (MState.ofClassical dist) = Hₛ dist",
+     "sorry": false
+    },
+    {
+     "name": "EoF_of_MES",
+     "kind": "theorem",
+     "line": 320,
+     "doc": "The entanglement of formation of the maximally entangled state with on-site dimension 𝕕 is log(𝕕).",
+     "statement": "theorem EoF_of_MES : EoF (pure <| Ket.MES d) = Real.log (Finset.card Finset.univ (α := d))",
+     "sorry": false
+    },
+    {
+     "name": "EoF_eq_zero_of_isSeparable",
+     "kind": "lemma",
+     "line": 330,
+     "doc": "The entanglement of formation vanishes on separable states.",
+     "statement": "lemma EoF_eq_zero_of_isSeparable {ρ : MState (d₁ × d₂)} (hρ : ρ.IsSeparable) : EoF ρ = 0",
+     "sorry": false
+    }
+   ],
+   "private": 0,
+   "aliases": 0,
+   "informal": 0
+  },
+  {
+   "file": "QuantumInfo/States/Mixed/Fidelity.lean",
+   "module": "QuantumInfo.States.Mixed.Fidelity",
+   "title": "",
+   "doc": "",
+   "copyright": "2025 Alex Meiburg",
+   "sections": [],
+   "declarations": [
+    {
+     "name": "MState.fidelity",
+     "kind": "def",
+     "line": 25,
+     "doc": "The fidelity of two quantum states. This is the quantum version of the Bhattacharyya\ncoefficient.",
+     "statement": "def fidelity (ρ σ : MState d) : ℝ",
+     "sorry": false
+    },
+    {
+     "name": "MState.fidelity_ge_zero",
+     "kind": "lemma",
+     "line": 28,
+     "doc": "",
+     "statement": "lemma fidelity_ge_zero : 0 ≤ fidelity ρ σ",
+     "sorry": false
+    },
+    {
+     "name": "MState.fidelity_le_one",
+     "kind": "lemma",
+     "line": 32,
+     "doc": "",
+     "statement": "lemma fidelity_le_one : fidelity ρ σ ≤ 1",
+     "sorry": false
+    },
+    {
+     "name": "MState.fidelity_prob",
+     "kind": "def",
+     "line": 51,
+     "doc": "The fidelity, as a `Prob` probability with value between 0 and 1.",
+     "statement": "def fidelity_prob : Prob",
+     "sorry": false
+    },
+    {
+     "name": "MState.fidelity_self_eq_one",
+     "kind": "theorem",
+     "line": 55,
+     "doc": "A state has perfect fidelity with itself.",
+     "statement": "theorem fidelity_self_eq_one : fidelity ρ ρ = 1",
+     "sorry": false
+    },
+    {
+     "name": "MState.fidelity_eq_traceNorm_sqrt_mul_sqrt",
+     "kind": "theorem",
+     "line": 70,
+     "doc": "Fidelity can be rewritten as the trace norm of the product of square roots.",
+     "statement": "theorem fidelity_eq_traceNorm_sqrt_mul_sqrt (ρ σ : MState d) :\n    fidelity ρ σ = (σ.M.sqrt.mat * ρ.M.sqrt.mat).traceNorm",
+     "sorry": false
+    },
+    {
+     "name": "MState.fidelity_eq_one_iff_self",
+     "kind": "theorem",
+     "line": 82,
+     "doc": "The fidelity is 1 if and only if the two states are the same.",
+     "statement": "theorem fidelity_eq_one_iff_self : fidelity ρ σ = 1 ↔ ρ = σ",
+     "sorry": false
+    },
+    {
+     "name": "MState.fidelity_symm",
+     "kind": "theorem",
+     "line": 116,
+     "doc": "The fidelity is a symmetric quantity.",
+     "statement": "theorem fidelity_symm : fidelity ρ σ = fidelity σ ρ",
+     "sorry": false
+    }
+   ],
+   "private": 0,
+   "aliases": 0,
+   "informal": 1
+  },
+  {
+   "file": "QuantumInfo/States/Mixed/MState.lean",
+   "module": "QuantumInfo.States.Mixed.MState",
+   "title": "",
+   "doc": "Finite dimensional quantum mixed states, ρ.\n\nThe same comments apply as in `Braket`:\n\nThese could be done with a Hilbert space of Fintype, which would look like\n```lean4\n(H : Type*) [NormedAddCommGroup H] [InnerProductSpace ℂ H] [CompleteSpace H] [FiniteDimensional ℂ H]\n```\nor by choosing a particular `Basis` and asserting it is `Fintype`. But frankly it seems easier to\nmostly focus on the basis-dependent notion of `Matrix`, which has the added benefit of an obvious\n\"classical\" interpretation (as the basis elements, or diagonal elements of a mixed state). In that\nsense, this quantum theory comes with the a particular classical theory always preferred.\n\nImportant definitions:\n * `instMixable`: the `Mixable` instance allowing convex combinations of `MState`s\n * `ofClassical`: Mixed states representing classical distributions\n * `purity`: The purity `Tr[ρ^2]` of a state\n * `spectrum`: The spectrum of the matrix\n * `uniform`: The maximally mixed state\n * `mix`: The total state corresponding to an ensemble\n * `average`: Averages a function over an ensemble, with appropriate weights",
+   "copyright": "2025 Alex Meiburg",
+   "sections": [],
+   "declarations": [
+    {
+     "name": "MState",
+     "kind": "structure",
+     "line": 51,
+     "doc": "A **mixed quantum state** is a PSD matrix with trace 1.\n\nWe don't `extend (M : HermitianMat d ℂ)` because that gives an annoying thing where\n`M` is actually a `Subtype`, which means `ρ.M.foo` notation doesn't work.",
+     "statement": "structure MState (d : Type*) [Fintype d] [DecidableEq d] where\n  M : HermitianMat d ℂ\n  nonneg : 0 ≤ M\n  tr : M.trace = 1",
+     "sorry": false
+    },
+    {
+     "name": "MState.instCoe",
+     "kind": "instance",
+     "line": 66,
+     "doc": "",
+     "statement": "instance instCoe : Coe (MState d) (HermitianMat d ℂ)",
+     "sorry": false
+    },
+    {
+     "name": "MState.m",
+     "kind": "def",
+     "line": 71,
+     "doc": "The underlying `Matrix` in an MState. Prefer `MState.M` for the `HermitianMat`.",
+     "statement": "def m (ρ : MState d) : Matrix d d ℂ",
+     "sorry": false
+    },
+    {
+     "name": "MState.mat_M",
+     "kind": "lemma",
+     "line": 74,
+     "doc": "",
+     "statement": "lemma mat_M : ρ.M.mat = ρ.m",
+     "sorry": false
+    },
+    {
+     "name": "MState.pos",
+     "kind": "lemma",
+     "line": 77,
+     "doc": "",
+     "statement": "lemma pos (ρ : MState d) : 0 < ρ.M",
+     "sorry": false
+    },
+    {
+     "name": "MState.evalMStateM",
+     "kind": "def",
+     "line": 88,
+     "doc": "Positivity extension for `MState.M`: it is always positive (`0 < ρ.M`).\nNote: we must not call `whnfR` on `e` because `MState.M` is a structure\nprojection (reducible), so `whnfR` would reduce it and destroy the pattern.",
+     "statement": "meta def evalMStateM : PositivityExt",
+     "sorry": false
+    },
+    {
+     "name": "MState.psd",
+     "kind": "lemma",
+     "line": 100,
+     "doc": "",
+     "statement": "lemma psd : ρ.m.PosSemidef",
+     "sorry": false
+    },
+    {
+     "name": "MState.Hermitian",
+     "kind": "theorem",
+     "line": 105,
+     "doc": "Every mixed state is Hermitian.",
+     "statement": "theorem Hermitian : ρ.m.IsHermitian",
+     "sorry": false
+    },
+    {
+     "name": "MState.tr'",
+     "kind": "lemma",
+     "line": 109,
+     "doc": "",
+     "statement": "lemma tr' : ρ.m.trace = 1",
+     "sorry": false
+    },
+    {
+     "name": "MState.ext_m",
+     "kind": "lemma",
+     "line": 113,
+     "doc": "",
+     "statement": "lemma ext_m {ρ₁ ρ₂ : MState d} (h : ρ₁.m = ρ₂.m) : ρ₁ = ρ₂",
+     "sorry": false
+    },
+    {
+     "name": "MState.m_inj",
+     "kind": "theorem",
+     "line": 119,
+     "doc": "The map from mixed states to their matrices is injective",
+     "statement": "theorem m_inj : (MState.m (d := d)).Injective",
+     "sorry": false
+    },
+    {
+     "name": "MState.M_Injective",
+     "kind": "lemma",
+     "line": 122,
+     "doc": "",
+     "statement": "lemma M_Injective : Function.Injective (MState.M (d := d))",
+     "sorry": false
+    },
+    {
+     "name": "MState.convex",
+     "kind": "theorem",
+     "line": 128,
+     "doc": "The matrices corresponding to MStates are `Convex ℝ`",
+     "statement": "theorem convex : Convex ℝ (Set.range (MState.M (d := d)))",
+     "sorry": false
+    },
+    {
+     "name": "MState.instMixable",
+     "kind": "instance",
+     "line": 136,
+     "doc": "",
+     "statement": "instance instMixable : Mixable (HermitianMat d ℂ) (MState d)",
+     "sorry": false
+    },
+    {
+     "name": "MState.nonempty",
+     "kind": "lemma",
+     "line": 146,
+     "doc": "An MState is a witness that d is nonempty.",
+     "statement": "lemma nonempty : Nonempty d",
+     "sorry": false
+    },
+    {
+     "name": "MState.eigenvalue_nonneg",
+     "kind": "lemma",
+     "line": 151,
+     "doc": "",
+     "statement": "lemma eigenvalue_nonneg : ∀ i, 0 ≤ ρ.Hermitian.eigenvalues i",
+     "sorry": false
+    },
+    {
+     "name": "MState.eigenvalue_le_one",
+     "kind": "lemma",
+     "line": 157,
+     "doc": "",
+     "statement": "lemma eigenvalue_le_one : ∀ i, ρ.Hermitian.eigenvalues i ≤ 1",
+     "sorry": false
+    },
+    {
+     "name": "MState.le_one",
+     "kind": "lemma",
+     "line": 162,
+     "doc": "",
+     "statement": "lemma le_one : ρ.M ≤ 1",
+     "sorry": false
+    },
+    {
+     "name": "",
+     "kind": "instance",
+     "line": 173,
+     "doc": "The inner product of two MState's, as a real number between 0 and 1.",
+     "statement": "scoped instance : Inner Prob (MState d)",
+     "sorry": false
+    },
+    {
+     "name": "MState.inner_def",
+     "kind": "lemma",
+     "line": 178,
+     "doc": "",
+     "statement": "lemma inner_def : ⟪ρ, σ⟫_Prob = ⟨⟪ρ.M, σ.M⟫,\n    inner_ge_zero ρ.nonneg σ.nonneg,\n    (inner_le_mul_trace ρ.nonneg σ.nonneg).trans (by simp)⟩",
+     "sorry": false
+    },
+    {
+     "name": "MState.val_inner",
+     "kind": "lemma",
+     "line": 183,
+     "doc": "",
+     "statement": "lemma val_inner : (⟪ρ, σ⟫_Prob : ℝ) = ⟪ρ.M, σ.M⟫",
+     "sorry": false
+    },
+    {
+     "name": "MState.exp_val_ℂ",
+     "kind": "def",
+     "line": 188,
+     "doc": "",
+     "statement": "def exp_val_ℂ (T : Matrix d d ℂ) : ℂ",
+     "sorry": false
+    },
+    {
+     "name": "MState.exp_val",
+     "kind": "def",
+     "line": 193,
+     "doc": "The **expectation value** of an operator on a quantum state.",
+     "statement": "def exp_val (T : HermitianMat d ℂ) : ℝ",
+     "sorry": false
+    },
+    {
+     "name": "MState.exp_val_nonneg",
+     "kind": "lemma",
+     "line": 196,
+     "doc": "",
+     "statement": "lemma exp_val_nonneg {T : HermitianMat d ℂ} (h : 0 ≤ T) : 0 ≤ ρ.exp_val T",
+     "sorry": false
+    },
+    {
+     "name": "MState.exp_val_zero",
+     "kind": "lemma",
+     "line": 203,
+     "doc": "",
+     "statement": "lemma exp_val_zero : ρ.exp_val 0 = 0",
+     "sorry": false
+    },
+    {
+     "name": "MState.exp_val_one",
+     "kind": "lemma",
+     "line": 207,
+     "doc": "",
+     "statement": "lemma exp_val_one : ρ.exp_val 1 = 1",
+     "sorry": false
+    },
+    {
+     "name": "MState.exp_val_le_one",
+     "kind": "lemma",
+     "line": 210,
+     "doc": "",
+     "statement": "lemma exp_val_le_one {T : HermitianMat d ℂ} (h : T ≤ 1) : ρ.exp_val T ≤ 1",
+     "sorry": false
+    },
+    {
+     "name": "MState.exp_val_prob",
+     "kind": "lemma",
+     "line": 214,
+     "doc": "",
+     "statement": "lemma exp_val_prob {T : HermitianMat d ℂ} (h : 0 ≤ T ∧ T ≤ 1) :\n    ρ.exp_val T ∈ unitInterval",
+     "sorry": false
+    },
+    {
+     "name": "MState.exp_val_sub",
+     "kind": "lemma",
+     "line": 218,
+     "doc": "",
+     "statement": "lemma exp_val_sub (A B : HermitianMat d ℂ) :\n    ρ.exp_val (A - B) = ρ.exp_val A - ρ.exp_val B",
+     "sorry": false
+    },
+    {
+     "name": "MState.exp_val_eq_zero_iff",
+     "kind": "theorem",
+     "line": 224,
+     "doc": "If a PSD observable `A` has expectation value of 0 on a state `ρ`, it must entirely contain the\nsupport of `ρ` in its kernel.",
+     "statement": "theorem exp_val_eq_zero_iff {A : HermitianMat d ℂ} (hA₁ : 0 ≤ A) :\n    ρ.exp_val A = 0 ↔ ρ.M.support ≤ A.ker",
+     "sorry": false
+    },
+    {
+     "name": "MState.exp_val_eq_one_iff",
+     "kind": "theorem",
+     "line": 230,
+     "doc": "If an observable `A` has expectation value of 1 on a state `ρ`, it must entirely contain the\nsupport of `ρ` in its 1-eigenspace.",
+     "statement": "theorem exp_val_eq_one_iff {A : HermitianMat d ℂ} (hA₂ : A ≤ 1) :\n    ρ.exp_val A = 1 ↔ ρ.M.support ≤ (1 - A).ker",
+     "sorry": false
+    },
+    {
+     "name": "MState.exp_val_add",
+     "kind": "lemma",
+     "line": 236,
+     "doc": "",
+     "statement": "lemma exp_val_add (A B : HermitianMat d ℂ) :\n    ρ.exp_val (A + B) = ρ.exp_val A + ρ.exp_val B",
+     "sorry": false
+    },
+    {
+     "name": "MState.exp_val_smul",
+     "kind": "lemma",
+     "line": 241,
+     "doc": "",
+     "statement": "lemma exp_val_smul (r : ℝ) (A : HermitianMat d ℂ) :\n    ρ.exp_val (r • A) = r * ρ.exp_val A",
+     "sorry": false
+    },
+    {
+     "name": "MState.exp_val_le_exp_val",
+     "kind": "lemma",
+     "line": 246,
+     "doc": "",
+     "statement": "lemma exp_val_le_exp_val (ρ : MState d) {A B : HermitianMat d ℂ} (h : A ≤ B) :\n    ρ.exp_val A ≤ ρ.exp_val B",
+     "sorry": false
+    },
+    {
+     "name": "MState.pure",
+     "kind": "def",
+     "line": 257,
+     "doc": "A mixed state can be constructed as a pure state arising from a ket.",
+     "statement": "def pure (ψ : Ket d) : MState d",
+     "sorry": false
+    },
+    {
+     "name": "MState.pure_inner",
+     "kind": "lemma",
+     "line": 270,
+     "doc": "",
+     "statement": "lemma pure_inner : ⟪pure ψ, pure φ⟫_Prob = ‖Braket.dot ψ φ‖^2",
+     "sorry": false
+    },
+    {
+     "name": "MState.pure_apply",
+     "kind": "lemma",
+     "line": 284,
+     "doc": "",
+     "statement": "lemma pure_apply {i j : d} : (pure ψ).m i j = (ψ i) * conj (ψ j)",
+     "sorry": false
+    },
+    {
+     "name": "MState.pure_mul_self",
+     "kind": "lemma",
+     "line": 288,
+     "doc": "",
+     "statement": "lemma pure_mul_self : (pure ψ).m * (pure ψ).m = (pure ψ : Matrix d d ℂ)",
+     "sorry": false
+    },
+    {
+     "name": "MState.purity",
+     "kind": "def",
+     "line": 294,
+     "doc": "The purity of a state is Tr[ρ^2]. This is a `Prob`, because it is always\nbetween zero and one.",
+     "statement": "def purity (ρ : MState d) : Prob",
+     "sorry": false
+    },
+    {
+     "name": "MState.spectrum",
+     "kind": "def",
+     "line": 297,
+     "doc": "The eigenvalue spectrum of a mixed quantum state, as a `Distribution`.",
+     "statement": "def spectrum (ρ : MState d) : ProbDistribution d",
+     "sorry": false
+    },
+    {
+     "name": "MState.spectrum_pure_eq_constant",
+     "kind": "theorem",
+     "line": 304,
+     "doc": "The spectrum of a pure state is (1,0,0,...), i.e. a constant distribution.",
+     "statement": "theorem spectrum_pure_eq_constant :\n    ∃ i, (pure ψ).spectrum = ProbDistribution.constant i",
+     "sorry": false
+    },
+    {
+     "name": "MState.pure_of_constant_spectrum",
+     "kind": "theorem",
+     "line": 371,
+     "doc": "If the spectrum of a mixed state is (1,0,0...) i.e. a constant distribution, it is\na pure state.",
+     "statement": "theorem pure_of_constant_spectrum (h : ∃ i, ρ.spectrum = ProbDistribution.constant i) :\n    ∃ ψ, ρ = pure ψ",
+     "sorry": false
+    },
+    {
+     "name": "MState.pure_iff_constant_spectrum",
+     "kind": "theorem",
+     "line": 417,
+     "doc": "A state ρ is pure iff its spectrum is (1,0,0,...) i.e. a constant distribution.",
+     "statement": "theorem pure_iff_constant_spectrum : (∃ ψ, ρ = pure ψ) ↔\n    ∃ i, ρ.spectrum = ProbDistribution.constant i",
+     "sorry": false
+    },
+    {
+     "name": "MState.pure_iff_purity_one",
+     "kind": "lemma",
+     "line": 423,
+     "doc": "",
+     "statement": "lemma pure_iff_purity_one : (∃ ψ, ρ = pure ψ) ↔ ρ.purity = 1",
+     "sorry": false
+    },
+    {
+     "name": "MState.spectralDecomposition",
+     "kind": "lemma",
+     "line": 469,
+     "doc": "",
+     "statement": "lemma spectralDecomposition (ρ : MState d) :\n    ∃ (ψs : d → Ket d), ρ.M = ∑ i, (ρ.spectrum i : ℝ) • (MState.pure (ψs i)).M",
+     "sorry": false
+    },
+    {
+     "name": "MState.prod",
+     "kind": "def",
+     "line": 491,
+     "doc": "",
+     "statement": "def prod (ρ₁ : MState d₁) (ρ₂ : MState d₂) : MState (d₁ × d₂)",
+     "sorry": false
+    },
+    {
+     "name": "MState.prod_inner_prod",
+     "kind": "lemma",
+     "line": 498,
+     "doc": "",
+     "statement": "lemma prod_inner_prod (ξ1 ψ1 : MState d₁) (ξ2 ψ2 : MState d₂) :\n    ⟪ξ1 ⊗ᴹ ξ2, ψ1 ⊗ᴹ ψ2⟫_Prob = ⟪ξ1, ψ1⟫_Prob * ⟪ξ2, ψ2⟫_Prob",
+     "sorry": false
+    },
+    {
+     "name": "MState.pure_prod_pure",
+     "kind": "theorem",
+     "line": 509,
+     "doc": "The product of pure states is a pure product state , `Ket.prod`.",
+     "statement": "theorem pure_prod_pure (ψ₁ : Ket d₁) (ψ₂ : Ket d₂) : pure (ψ₁ ⊗ᵠ ψ₂) = (pure ψ₁) ⊗ᴹ (pure ψ₂)",
+     "sorry": false
+    },
+    {
+     "name": "MState.ofClassical",
+     "kind": "def",
+     "line": 518,
+     "doc": "A representation of a classical distribution as a quantum state, diagonal in the given basis.",
+     "statement": "def ofClassical (dist : ProbDistribution d) : MState d",
+     "sorry": false
+    },
+    {
+     "name": "MState.coe_ofClassical",
+     "kind": "lemma",
+     "line": 524,
+     "doc": "",
+     "statement": "lemma coe_ofClassical (dist : ProbDistribution d) :\n    (ofClassical dist).M = diagonal ℂ (dist ·)",
+     "sorry": false
+    },
+    {
+     "name": "MState.ofClassical_pow",
+     "kind": "lemma",
+     "line": 528,
+     "doc": "",
+     "statement": "lemma ofClassical_pow (dist : ProbDistribution d) (p : ℝ) :\n    (ofClassical dist).M ^ p = diagonal ℂ (fun i ↦ (dist i) ^ p)",
+     "sorry": false
+    },
+    {
+     "name": "MState.uniform",
+     "kind": "def",
+     "line": 533,
+     "doc": "The maximally mixed state.",
+     "statement": "def uniform [Nonempty d] : MState d",
+     "sorry": false
+    },
+    {
+     "name": "MState.instUnique",
+     "kind": "instance",
+     "line": 540,
+     "doc": "There is exactly one state on a dimension-1 system.",
+     "statement": "instance instUnique [Unique d] : Unique (MState d)",
+     "sorry": false
+    },
+    {
+     "name": "MState.instInhabited",
+     "kind": "instance",
+     "line": 554,
+     "doc": "There exists a mixed state for every nonempty `d`.\nHere, the maximally mixed one is chosen.",
+     "statement": "instance instInhabited [Nonempty d] : Inhabited (MState d)",
+     "sorry": false
+    },
+    {
+     "name": "MState.default_eq",
+     "kind": "lemma",
+     "line": 557,
+     "doc": "",
+     "statement": "lemma default_eq [Nonempty d] : (default : MState d) = uniform",
+     "sorry": false
+    },
+    {
+     "name": "MState.M_default",
+     "kind": "lemma",
+     "line": 560,
+     "doc": "",
+     "statement": "lemma M_default [Unique d] : (default : MState d).M = 1",
+     "sorry": false
+    },
+    {
+     "name": "MState.traceLeft",
+     "kind": "def",
+     "line": 568,
+     "doc": "Partial tracing out the left half of a system.",
+     "statement": "def traceLeft (ρ : MState (d₁ × d₂)) : MState d₂",
+     "sorry": false
+    },
+    {
+     "name": "MState.traceRight",
+     "kind": "def",
+     "line": 575,
+     "doc": "Partial tracing out the right half of a system.",
+     "statement": "def traceRight (ρ : MState (d₁ × d₂)) : MState d₁",
+     "sorry": false
+    },
+    {
+     "name": "MState.traceLeft_prod_eq",
+     "kind": "theorem",
+     "line": 582,
+     "doc": "Taking the direct product on the left and tracing it back out gives the same state.",
+     "statement": "theorem traceLeft_prod_eq (ρ₁ : MState d₁) (ρ₂ : MState d₂) : (ρ₁ ⊗ᴹ ρ₂).traceLeft = ρ₂",
+     "sorry": false
+    },
+    {
+     "name": "MState.traceRight_prod_eq",
+     "kind": "theorem",
+     "line": 588,
+     "doc": "Taking the direct product on the right and tracing it back out gives the same state.",
+     "statement": "theorem traceRight_prod_eq (ρ₁ : MState d₁) (ρ₂ : MState d₂) : (ρ₁ ⊗ᴹ ρ₂).traceRight = ρ₁",
+     "sorry": false
+    },
+    {
+     "name": "MState.spectrum_prod",
+     "kind": "theorem",
+     "line": 600,
+     "doc": "Spectrum of direct product. There is a permutation σ so that the spectrum of the direct product of\nρ₁ and ρ₂, as permuted under σ, is the pairwise products of the spectra of ρ₁ and ρ₂.",
+     "statement": "theorem spectrum_prod (ρ₁ : MState d₁) (ρ₂ : MState d₂) : ∃(σ : d₁ × d₂ ≃ d₁ × d₂),\n    ∀i, ∀j, (ρ₁ ⊗ᴹ ρ₂).spectrum (σ (i, j)) = (ρ₁.spectrum i) * (ρ₂.spectrum j)",
+     "sorry": false
+    },
+    {
+     "name": "MState.sInf_spectrum_prod",
+     "kind": "lemma",
+     "line": 639,
+     "doc": "",
+     "statement": "lemma sInf_spectrum_prod (ρ : MState d) (σ : MState d₂) :\n    sInf (_root_.spectrum ℝ (ρ ⊗ᴹ σ).m) = sInf (_root_.spectrum ℝ ρ.m) * sInf (_root_.spectrum ℝ σ.m)",
+     "sorry": false
+    },
+    {
+     "name": "MState.IsSeparable",
+     "kind": "def",
+     "line": 657,
+     "doc": "A mixed state is separable iff it can be written as a convex combination of product mixed states.",
+     "statement": "def IsSeparable (ρ : MState (d₁ × d₂)) : Prop",
+     "sorry": false
+    },
+    {
+     "name": "MState.IsSeparable_prod",
+     "kind": "theorem",
+     "line": 663,
+     "doc": "A product state `MState.prod` is separable.",
+     "statement": "theorem IsSeparable_prod (ρ₁ : MState d₁) (ρ₂ : MState d₂) : IsSeparable (ρ₁ ⊗ᴹ ρ₂)",
+     "sorry": false
+    },
+    {
+     "name": "MState.eq_of_sum_eq_pure",
+     "kind": "lemma",
+     "line": 669,
+     "doc": "",
+     "statement": "lemma eq_of_sum_eq_pure {d : Type*} [Fintype d] [DecidableEq d]\n    {ι : Type*} {s : Finset ι} {p : ι → ℝ} {ρs : ι → MState d}\n    {ρ : MState d} (h_pure : ρ.purity = 1) (h_sum : ρ.M = ∑ i ∈ s, p i • (ρs i).M)\n    (hp_nonneg : ∀ i ∈ s, 0 ≤ p i) (hp_sum : ∑ i ∈ s, p i = 1) (i : ι) (hi : i ∈ s) (hpi : 0 < p i) :\n    ρs i = ρ",
+     "sorry": false
+    },
+    {
+     "name": "MState.purity_prod",
+     "kind": "lemma",
+     "line": 722,
+     "doc": "",
+     "statement": "lemma purity_prod {d₁ d₂ : Type*} [Fintype d₁] [Fintype d₂] [DecidableEq d₁] [DecidableEq d₂]\n    (ρ₁ : MState d₁) (ρ₂ : MState d₂) : (ρ₁ ⊗ᴹ ρ₂).purity = ρ₁.purity * ρ₂.purity",
+     "sorry": false
+    },
+    {
+     "name": "MState.pure_eq_pure_iff",
+     "kind": "lemma",
+     "line": 726,
+     "doc": "",
+     "statement": "lemma pure_eq_pure_iff {d : Type*} [Fintype d] [DecidableEq d] (ψ φ : Ket d) :\n    pure ψ = pure φ ↔ ∃ z : ℂ, ‖z‖ = 1 ∧ ψ.vec = z • φ.vec",
+     "sorry": false
+    },
+    {
+     "name": "MState.PhaseEquiv_iff_pure_eq",
+     "kind": "theorem",
+     "line": 760,
+     "doc": "Two kets are phase-equivalent if and only if their pure states are equal.",
+     "statement": "theorem PhaseEquiv_iff_pure_eq {d : Type*} [Fintype d] [DecidableEq d] (ψ φ : Ket d) :\n    Ket.PhaseEquiv.r ψ φ ↔ MState.pure ψ = MState.pure φ",
+     "sorry": false
+    },
+    {
+     "name": "MState.pureQ",
+     "kind": "def",
+     "line": 765,
+     "doc": "`MState.pure` descends to the quotient `KetUpToPhase`.",
+     "statement": "def pureQ {d : Type*} [Fintype d] [DecidableEq d] : KetUpToPhase d → MState d",
+     "sorry": false
+    },
+    {
+     "name": "MState.pureQ_mk",
+     "kind": "lemma",
+     "line": 769,
+     "doc": "",
+     "statement": "lemma pureQ_mk {d : Type*} [Fintype d] [DecidableEq d] (ψ : Ket d) :\n    pureQ (Quotient.mk Ket.PhaseEquiv ψ) = MState.pure ψ",
+     "sorry": false
+    },
+    {
+     "name": "MState.pureQ_injective",
+     "kind": "lemma",
+     "line": 772,
+     "doc": "",
+     "statement": "lemma pureQ_injective {d : Type*} [Fintype d] [DecidableEq d] : Function.Injective (pureQ (d := d))",
+     "sorry": false
+    },
+    {
+     "name": "MState.pure_separable_imp_IsProd",
+     "kind": "lemma",
+     "line": 780,
+     "doc": "",
+     "statement": "lemma pure_separable_imp_IsProd {d₁ d₂ : Type*} [Fintype d₁] [Fintype d₂] [DecidableEq d₁] [DecidableEq d₂]\n    (ψ : Ket (d₁ × d₂)) (h : IsSeparable (pure ψ)) : ψ.IsProd",
+     "sorry": false
+    },
+    {
+     "name": "MState.pure_separable_iff_IsProd",
+     "kind": "theorem",
+     "line": 846,
+     "doc": "A pure state is separable iff the ket is a product state.",
+     "statement": "theorem pure_separable_iff_IsProd (ψ : Ket (d₁ × d₂)) :\n    IsSeparable (pure ψ) ↔ ψ.IsProd",
+     "sorry": false
+    },
+    {
+     "name": "MState.pure_iff_rank_eq_one",
+     "kind": "theorem",
+     "line": 857,
+     "doc": "A mixed state is pure if and only if its rank is 1.",
+     "statement": "theorem pure_iff_rank_eq_one {d : Type*} [Fintype d] [DecidableEq d] (ρ : MState d) :\n    (∃ ψ, ρ = pure ψ) ↔ ρ.m.rank = 1",
+     "sorry": false
+    },
+    {
+     "name": "MState.Ket.IsProd_iff_rank_eq_one",
+     "kind": "theorem",
+     "line": 921,
+     "doc": "A ket on a product space is a product state if and only if its coefficient matrix has rank 1.",
+     "statement": "theorem Ket.IsProd_iff_rank_eq_one {d₁ d₂ : Type*} [Fintype d₁] [Fintype d₂] [DecidableEq d₁] [DecidableEq d₂]\n    (ψ : Ket (d₁ × d₂)) :\n    ψ.IsProd ↔ (Matrix.of (fun i j => ψ (i, j))).rank = 1",
+     "sorry": false
+    },
+    {
+     "name": "MState.pure_separable_iff_traceLeft_pure",
+     "kind": "theorem",
+     "line": 973,
+     "doc": "A pure state is separable iff the partial trace on the left is pure.",
+     "statement": "theorem pure_separable_iff_traceLeft_pure (ψ : Ket (d₁ × d₂)) : IsSeparable (pure ψ) ↔\n    ∃ ψ₁, pure ψ₁ = (pure ψ).traceLeft",
+     "sorry": false
+    },
+    {
+     "name": "MState.purify",
+     "kind": "def",
+     "line": 994,
+     "doc": "The purification of a mixed state. Always uses the full dimension of the Hilbert space (d) to\npurify, so e.g. an existing pure state with d=4 still becomes d=16 in the purification. The defining\nproperty is `MState.traceRight_of_purify`; see also `MState.purify'` for the bundled version.",
+     "statement": "def purify (ρ : MState d) : Ket (d × d)",
+     "sorry": false
+    },
+    {
+     "name": "MState.purify_spec",
+     "kind": "theorem",
+     "line": 1013,
+     "doc": "The defining property of purification, that tracing out the purifying system gives the\noriginal mixed state.",
+     "statement": "theorem purify_spec (ρ : MState d) : (pure ρ.purify).traceRight = ρ",
+     "sorry": false
+    },
+    {
+     "name": "MState.purifyX",
+     "kind": "def",
+     "line": 1039,
+     "doc": "`MState.purify` bundled with its defining property `MState.traceRight_of_purify`.",
+     "statement": "def purifyX (ρ : MState d) : { ψ : Ket (d × d) // (pure ψ).traceRight = ρ }",
+     "sorry": false
+    },
+    {
+     "name": "MState.relabel",
+     "kind": "def",
+     "line": 1045,
+     "doc": "",
+     "statement": "def relabel (ρ : MState d₁) (e : d₂ ≃ d₁) : MState d₂",
+     "sorry": false
+    },
+    {
+     "name": "MState.relabel_m",
+     "kind": "lemma",
+     "line": 1051,
+     "doc": "",
+     "statement": "lemma relabel_m (ρ : MState d₁) (e : d₂ ≃ d₁) :\n    (ρ.relabel e).m = ρ.m.submatrix e e",
+     "sorry": false
+    },
+    {
+     "name": "MState.relabel_refl",
+     "kind": "lemma",
+     "line": 1056,
+     "doc": "",
+     "statement": "lemma relabel_refl {d : Type*} [Fintype d] [DecidableEq d] (ρ : MState d) :\n    ρ.relabel (Equiv.refl d) = ρ",
+     "sorry": false
+    },
+    {
+     "name": "MState.relabel_pure",
+     "kind": "lemma",
+     "line": 1064,
+     "doc": "Relabeling the pure state associated to a ket gives the pure state associated to the\nrelabeled ket.",
+     "statement": "lemma relabel_pure (ψ : Ket d₁) (e : d₂ ≃ d₁) :\n    (pure ψ).relabel e = pure (ψ.relabel e)",
+     "sorry": false
+    },
+    {
+     "name": "MState.relabel_pure_exists",
+     "kind": "theorem",
+     "line": 1069,
+     "doc": "Relabeling a pure state along an equivalence of basis index types yields another pure state.",
+     "statement": "theorem relabel_pure_exists (ψ : Ket d₁) (e : d₂ ≃ d₁) :\n    ∃ ψ' : Ket d₂, (pure ψ).relabel e = pure ψ'",
+     "sorry": false
+    },
+    {
+     "name": "MState.relabel_relabel",
+     "kind": "lemma",
+     "line": 1074,
+     "doc": "",
+     "statement": "lemma relabel_relabel {d d₂ d₃ : Type*}\n    [Fintype d] [DecidableEq d] [Fintype d₂] [DecidableEq d₂] [Fintype d₃] [DecidableEq d₃]\n    (ρ : MState d) (e : d₂ ≃ d) (e₂ : d₃ ≃ d₂) : (ρ.relabel e).relabel e₂ = ρ.relabel (e₂.trans e)",
+     "sorry": false
+    },
+    {
+     "name": "MState.eq_relabel_iff",
+     "kind": "lemma",
+     "line": 1079,
+     "doc": "",
+     "statement": "lemma eq_relabel_iff {d₁ d₂ : Type u} [Fintype d₁] [DecidableEq d₁] [Fintype d₂] [DecidableEq d₂]\n    (ρ : MState d₁) (σ : MState d₂) (h : d₁ ≃ d₂) :\n    ρ = σ.relabel h ↔ ρ.relabel h.symm = σ",
+     "sorry": false
+    },
+    {
+     "name": "MState.relabel_comp",
+     "kind": "lemma",
+     "line": 1085,
+     "doc": "",
+     "statement": "lemma relabel_comp {d₁ d₂ d₃ : Type*} [Fintype d₁] [DecidableEq d₁] [Fintype d₂] [DecidableEq d₂]\n      [Fintype d₃] [DecidableEq d₃] (ρ : MState d₁) (e : d₂ ≃ d₁) (f : d₃ ≃ d₂) :\n    (ρ.relabel e).relabel f = ρ.relabel (f.trans e)",
+     "sorry": false
+    },
+    {
+     "name": "MState.relabel_cast",
+     "kind": "lemma",
+     "line": 1091,
+     "doc": "",
+     "statement": "lemma relabel_cast {d₁ d₂ : Type u} [Fintype d₁] [DecidableEq d₁]\n    [Fintype d₂] [DecidableEq d₂]\n       (ρ : MState d₁) (e : d₂ = d₁) :\n    ρ.relabel (Equiv.cast e) = cast (by have := e.symm; congr <;> (apply Subsingleton.helim; congr)) ρ",
+     "sorry": false
+    },
+    {
+     "name": "MState.spectrum_relabel",
+     "kind": "lemma",
+     "line": 1104,
+     "doc": "",
+     "statement": "lemma spectrum_relabel {ρ : MState d} (e : d₂ ≃ d) :\n    _root_.spectrum ℝ (ρ.relabel e).m = _root_.spectrum ℝ ρ.m",
+     "sorry": false
+    },
+    {
+     "name": "MState.purity_relabel",
+     "kind": "theorem",
+     "line": 1117,
+     "doc": "The purity of a state is invariant under relabeling of the basis.",
+     "statement": "theorem purity_relabel (ρ : MState d₁) (e : d₂ ≃ d₁) : (ρ.relabel e).purity = ρ.purity",
+     "sorry": false
+    },
+    {
+     "name": "MState.SWAP",
+     "kind": "def",
+     "line": 1125,
+     "doc": "The heterogeneous SWAP gate that exchanges the left and right halves of a quantum system.\nThis can apply even when the two \"halves\" are of different types, as opposed to (say) the SWAP\ngate on quantum circuits that leaves the qubit dimensions unchanged. Notably, it is not unitary.",
+     "statement": "def SWAP (ρ : MState (d₁ × d₂)) : MState (d₂ × d₁)",
+     "sorry": false
+    },
+    {
+     "name": "MState.multiset_spectrum_relabel_eq",
+     "kind": "lemma",
+     "line": 1131,
+     "doc": "The multiset of values in the spectrum of a relabeled state is the same as the multiset of values in the spectrum of the original state.",
+     "statement": "lemma multiset_spectrum_relabel_eq {d₁ d₂ : Type*} [Fintype d₁] [DecidableEq d₁] [Fintype d₂] [DecidableEq d₂]\n    (ρ : MState d₁) (e : d₂ ≃ d₁) :\n    Multiset.map (ρ.relabel e).spectrum Finset.univ.val = Multiset.map ρ.spectrum Finset.univ.val",
+     "sorry": false
+    },
+    {
+     "name": "MState.spectrum_SWAP",
+     "kind": "lemma",
+     "line": 1159,
+     "doc": "",
+     "statement": "lemma spectrum_SWAP (ρ : MState (d₁ × d₂)) : ∃ e, ρ.SWAP.spectrum.relabel e = ρ.spectrum",
+     "sorry": false
+    },
+    {
+     "name": "MState.SWAP_SWAP",
+     "kind": "lemma",
+     "line": 1169,
+     "doc": "",
+     "statement": "lemma SWAP_SWAP (ρ : MState (d₁ × d₂)) : ρ.SWAP.SWAP = ρ",
+     "sorry": false
+    },
+    {
+     "name": "MState.traceLeft_SWAP",
+     "kind": "lemma",
+     "line": 1173,
+     "doc": "",
+     "statement": "lemma traceLeft_SWAP (ρ : MState (d₁ × d₂)) : ρ.SWAP.traceLeft = ρ.traceRight",
+     "sorry": false
+    },
+    {
+     "name": "MState.traceRight_SWAP",
+     "kind": "lemma",
+     "line": 1177,
+     "doc": "",
+     "statement": "lemma traceRight_SWAP (ρ : MState (d₁ × d₂)) : ρ.SWAP.traceRight = ρ.traceLeft",
+     "sorry": false
+    },
+    {
+     "name": "MState.assoc",
+     "kind": "def",
+     "line": 1181,
+     "doc": "The associator that re-clusters the parts of a quantum system.",
+     "statement": "def assoc (ρ : MState ((d₁ × d₂) × d₃)) : MState (d₁ × d₂ × d₃)",
+     "sorry": false
+    },
+    {
+     "name": "MState.assoc'",
+     "kind": "def",
+     "line": 1185,
+     "doc": "The associator that re-clusters the parts of a quantum system.",
+     "statement": "def assoc' (ρ : MState (d₁ × d₂ × d₃)) : MState ((d₁ × d₂) × d₃)",
+     "sorry": false
+    },
+    {
+     "name": "MState.assoc_assoc'",
+     "kind": "lemma",
+     "line": 1189,
+     "doc": "",
+     "statement": "lemma assoc_assoc' (ρ : MState (d₁ × d₂ × d₃)) : ρ.assoc'.assoc = ρ",
+     "sorry": false
+    },
+    {
+     "name": "MState.assoc'_assoc",
+     "kind": "lemma",
+     "line": 1193,
+     "doc": "",
+     "statement": "lemma assoc'_assoc (ρ : MState ((d₁ × d₂) × d₃)) : ρ.assoc.assoc' = ρ",
+     "sorry": false
+    },
+    {
+     "name": "MState.traceLeft_right_assoc",
+     "kind": "lemma",
+     "line": 1197,
+     "doc": "",
+     "statement": "lemma traceLeft_right_assoc (ρ : MState ((d₁ × d₂) × d₃)) :\n    ρ.assoc.traceLeft.traceRight = ρ.traceRight.traceLeft",
+     "sorry": false
+    },
+    {
+     "name": "MState.traceRight_left_assoc'",
+     "kind": "lemma",
+     "line": 1203,
+     "doc": "",
+     "statement": "lemma traceRight_left_assoc' (ρ : MState (d₁ × d₂ × d₃)) :\n    ρ.assoc'.traceRight.traceLeft = ρ.traceLeft.traceRight",
+     "sorry": false
+    },
+    {
+     "name": "MState.traceRight_assoc",
+     "kind": "lemma",
+     "line": 1208,
+     "doc": "",
+     "statement": "lemma traceRight_assoc (ρ : MState ((d₁ × d₂) × d₃)) :\n    ρ.assoc.traceRight = ρ.traceRight.traceRight",
+     "sorry": false
+    },
+    {
+     "name": "MState.traceLeft_assoc'",
+     "kind": "lemma",
+     "line": 1214,
+     "doc": "",
+     "statement": "lemma traceLeft_assoc' (ρ : MState (d₁ × d₂ × d₃)) :\n    ρ.assoc'.traceLeft = ρ.traceLeft.traceLeft",
+     "sorry": false
+    },
+    {
+     "name": "MState.traceLeft_left_assoc",
+     "kind": "lemma",
+     "line": 1220,
+     "doc": "",
+     "statement": "lemma traceLeft_left_assoc (ρ : MState ((d₁ × d₂) × d₃)) :\n    ρ.assoc.traceLeft.traceLeft = ρ.traceLeft",
+     "sorry": false
+    },
+    {
+     "name": "MState.traceRight_right_assoc'",
+     "kind": "lemma",
+     "line": 1225,
+     "doc": "",
+     "statement": "lemma traceRight_right_assoc' (ρ : MState (d₁ × d₂ × d₃)) :\n    ρ.assoc'.traceRight.traceRight = ρ.traceRight",
+     "sorry": false
+    },
+    {
+     "name": "MState.traceNorm_eq_one",
+     "kind": "lemma",
+     "line": 1230,
+     "doc": "",
+     "statement": "lemma traceNorm_eq_one (ρ : MState d) : ρ.m.traceNorm = 1",
+     "sorry": false
+    },
+    {
+     "name": "MState.relabel_kron",
+     "kind": "lemma",
+     "line": 1238,
+     "doc": "",
+     "statement": "lemma relabel_kron (ρ : MState d₁) (σ : MState d₂) (e : d₃ ≃ d₁) :\n    ((ρ.relabel e) ⊗ᴹ σ) = (ρ ⊗ᴹ σ).relabel (e.prodCongr (Equiv.refl d₂))",
+     "sorry": false
+    },
+    {
+     "name": "MState.kron_relabel",
+     "kind": "lemma",
+     "line": 1242,
+     "doc": "",
+     "statement": "lemma kron_relabel (ρ : MState d₁) (σ : MState d₂) (e : d₃ ≃ d₂) :\n    (ρ ⊗ᴹ σ.relabel e) = (ρ ⊗ᴹ σ).relabel ((Equiv.refl d₁).prodCongr e)",
+     "sorry": false
+    },
+    {
+     "name": "MState.prod_assoc",
+     "kind": "lemma",
+     "line": 1246,
+     "doc": "",
+     "statement": "lemma prod_assoc (ρ : MState d₁) (σ : MState d₂) (τ : MState d₃) :\n    (ρ ⊗ᴹ (σ ⊗ᴹ τ)) = (ρ ⊗ᴹ σ ⊗ᴹ τ).relabel (Equiv.prodAssoc d₁ d₂ d₃).symm",
+     "sorry": false
+    },
+    {
+     "name": "",
+     "kind": "instance",
+     "line": 1255,
+     "doc": "Mixed states inherit the subspace topology from matrices",
+     "statement": "instance : TopologicalSpace (MState d)",
+     "sorry": false
+    },
+    {
+     "name": "MState.toMat_IsEmbedding",
+     "kind": "theorem",
+     "line": 1259,
+     "doc": "The projection from mixed states to their Hermitian matrices is an embedding",
+     "statement": "theorem toMat_IsEmbedding : Topology.IsEmbedding (MState.M (d := d))",
+     "sorry": false
+    },
+    {
+     "name": "",
+     "kind": "instance",
+     "line": 1263,
+     "doc": "",
+     "statement": "instance : T3Space (MState d)",
+     "sorry": false
+    },
+    {
+     "name": "",
+     "kind": "instance",
+     "line": 1266,
+     "doc": "",
+     "statement": "instance : CompactSpace (MState d)",
+     "sorry": false
+    },
+    {
+     "name": "",
+     "kind": "instance",
+     "line": 1281,
+     "doc": "",
+     "statement": "noncomputable instance : MetricSpace (MState d)",
+     "sorry": false
+    },
+    {
+     "name": "MState.dist_eq",
+     "kind": "lemma",
+     "line": 1284,
+     "doc": "",
+     "statement": "lemma dist_eq (x y : MState d) : dist x y = dist x.M y.M",
+     "sorry": false
+    },
+    {
+     "name": "",
+     "kind": "instance",
+     "line": 1288,
+     "doc": "",
+     "statement": "instance : BoundedSpace (MState d)",
+     "sorry": false
+    },
+    {
+     "name": "MState.Continuous_HermitianMat",
+     "kind": "lemma",
+     "line": 1293,
+     "doc": "",
+     "statement": "lemma Continuous_HermitianMat : Continuous (MState.M (d := d))",
+     "sorry": false
+    },
+    {
+     "name": "MState.Continuous_Matrix",
+     "kind": "lemma",
+     "line": 1297,
+     "doc": "",
+     "statement": "lemma Continuous_Matrix : Continuous (MState.m (d := d))",
+     "sorry": false
+    },
+    {
+     "name": "MState.image_M_isBounded",
+     "kind": "lemma",
+     "line": 1301,
+     "doc": "",
+     "statement": "lemma image_M_isBounded (S : Set (MState d)) : Bornology.IsBounded (MState.M '' S)",
+     "sorry": false
+    },
+    {
+     "name": "MState.piProd",
+     "kind": "def",
+     "line": 1313,
+     "doc": "",
+     "statement": "def piProd (ρi : (i:ι) → MState (dI i)) : MState ((i:ι) → dI i)",
+     "sorry": false
+    },
+    {
+     "name": "MState.pure_piProd",
+     "kind": "lemma",
+     "line": 1325,
+     "doc": "The pure state of `Ket.piProd ψ` is `MState.piProd` of the pure states `pure (ψ i)`,\ngeneralizing `MState.pure_prod_pure`.",
+     "statement": "lemma pure_piProd (ψ : (i : ι) → Ket (dI i)) :\n    pure (Ket.piProd ψ) = piProd (fun i ↦ pure (ψ i))",
+     "sorry": false
+    },
+    {
+     "name": "MState.isPiProd_iff_exists_pure_eq_piProd",
+     "kind": "lemma",
+     "line": 1332,
+     "doc": "With at least one party, a ket satisfies `Ket.IsPiProd` if and only if its associated\npure state `MState.pure ψ` is an `MState.piProd` of pure states.",
+     "statement": "lemma isPiProd_iff_exists_pure_eq_piProd [Nonempty ι] (ψ : Ket ((i : ι) → dI i)) :\n    ψ.IsPiProd ↔ ∃ φ : (i : ι) → Ket (dI i), pure ψ = piProd (fun i ↦ pure (φ i))",
+     "sorry": false
+    },
+    {
+     "name": "MState.isPiProd_iff_exists_pureQ_eq_piProd",
+     "kind": "lemma",
+     "line": 1343,
+     "doc": "A ket up to global phase is a product state if and only if its density matrix is an\n`MState.piProd` of pure states. This also holds when `ι` is empty.",
+     "statement": "lemma isPiProd_iff_exists_pureQ_eq_piProd (q : KetUpToPhase ((i : ι) → dI i)) :\n    q.IsPiProd ↔ ∃ φ : (i : ι) → Ket (dI i), pureQ q = piProd (fun i ↦ pure (φ i))",
+     "sorry": false
+    },
+    {
+     "name": "MState.npow",
+     "kind": "def",
+     "line": 1353,
+     "doc": "The n-copy \"power\" of a mixed state, with the standard basis indexed by pi types.",
+     "statement": "def npow (ρ : MState d) (n : ℕ) : MState (Fin n → d)",
+     "sorry": false
+    },
+    {
+     "name": "MState.PosDef.kron",
+     "kind": "lemma",
+     "line": 1363,
+     "doc": "",
+     "statement": "lemma PosDef.kron {d₁ d₂ : Type*} [Fintype d₁] [DecidableEq d₁] [Fintype d₂] [DecidableEq d₂]\n    {σ₁ : MState d₁} {σ₂ : MState d₂} (hσ₁ : σ₁.m.PosDef) (hσ₂ : σ₂.m.PosDef) : (σ₁ ⊗ᴹ σ₂).m.PosDef",
+     "sorry": false
+    },
+    {
+     "name": "MState.PosDef.relabel",
+     "kind": "lemma",
+     "line": 1367,
+     "doc": "",
+     "statement": "lemma PosDef.relabel {d₁ d₂ : Type*} [Fintype d₁] [DecidableEq d₁] [Fintype d₂] [DecidableEq d₂]\n    {ρ : MState d₁} (hρ : ρ.m.PosDef) (e : d₂ ≃ d₁) : (ρ.relabel e).m.PosDef",
+     "sorry": false
+    },
+    {
+     "name": "MState.PosDef_mix",
+     "kind": "theorem",
+     "line": 1372,
+     "doc": "If both states positive definite, so is their mixture.",
+     "statement": "theorem PosDef_mix {d : Type*} [Fintype d] [DecidableEq d] {σ₁ σ₂ : MState d}\n    (hσ₁ : σ₁.m.PosDef) (hσ₂ : σ₂.m.PosDef) (p : Prob) : (p [σ₁ ↔ σ₂]).m.PosDef",
+     "sorry": false
+    },
+    {
+     "name": "MState.PosDef_mix_of_ne_zero",
+     "kind": "theorem",
+     "line": 1377,
+     "doc": "If one state is positive definite and the mixture is nondegenerate, their mixture is also positive definite.",
+     "statement": "theorem PosDef_mix_of_ne_zero {d : Type*} [Fintype d] [DecidableEq d] {σ₁ σ₂ : MState d}\n    (hσ₁ : σ₁.m.PosDef) (p : Prob) (hp : p ≠ 0) : (p [σ₁ ↔ σ₂]).m.PosDef",
+     "sorry": false
+    },
+    {
+     "name": "MState.PosDef_mix_of_ne_one",
+     "kind": "theorem",
+     "line": 1383,
+     "doc": "If the second state is positive definite and the mixture is nondegenerate, their mixture is also positive definite.",
+     "statement": "theorem PosDef_mix_of_ne_one {d : Type*} [Fintype d] [DecidableEq d] {σ₁ σ₂ : MState d}\n    (hσ₂ : σ₂.m.PosDef) (p : Prob) (hp : p ≠ 1) : (p [σ₁ ↔ σ₂]).m.PosDef",
+     "sorry": false
+    },
+    {
+     "name": "MState.uniform_posDef",
+     "kind": "lemma",
+     "line": 1397,
+     "doc": "",
+     "statement": "lemma uniform_posDef {d : Type*} [Nonempty d] [Fintype d] [DecidableEq d] :\n    (uniform (d := d)).m.PosDef",
+     "sorry": false
+    },
+    {
+     "name": "MState.posDef_of_unique",
+     "kind": "lemma",
+     "line": 1402,
+     "doc": "",
+     "statement": "lemma posDef_of_unique {d : Type*} [Fintype d] [DecidableEq d] (ρ : MState d) [Unique d] : ρ.m.PosDef",
+     "sorry": false
+    }
+   ],
+   "private": 0,
+   "aliases": 0,
+   "informal": 0
+  },
+  {
+   "file": "QuantumInfo/States/Mixed/TraceDistance.lean",
+   "module": "QuantumInfo.States.Mixed.TraceDistance",
+   "title": "",
+   "doc": "",
+   "copyright": "2025 Alex Meiburg",
+   "sections": [],
+   "declarations": [
+    {
+     "name": "TrDistance",
+     "kind": "def",
+     "line": 24,
+     "doc": "The trace distance between two quantum states: half the trace norm of the difference (ρ - σ).",
+     "statement": "def TrDistance (ρ σ : MState d) : ℝ",
+     "sorry": false
+    },
+    {
+     "name": "TrDistance.ge_zero",
+     "kind": "lemma",
+     "line": 31,
+     "doc": "",
+     "statement": "lemma ge_zero : 0 ≤ TrDistance ρ σ",
+     "sorry": false
+    },
+    {
+     "name": "TrDistance.le_one",
+     "kind": "lemma",
+     "line": 35,
+     "doc": "",
+     "statement": "lemma le_one : TrDistance ρ σ ≤ 1",
+     "sorry": false
+    },
+    {
+     "name": "TrDistance.prob",
+     "kind": "def",
+     "line": 42,
+     "doc": "The trace distance, as a `Prob` probability with value between 0 and 1.",
+     "statement": "def prob : Prob",
+     "sorry": false
+    },
+    {
+     "name": "TrDistance.symm",
+     "kind": "theorem",
+     "line": 46,
+     "doc": "The trace distance is a symmetric quantity.",
+     "statement": "theorem symm : TrDistance ρ σ = TrDistance σ ρ",
+     "sorry": false
+    },
+    {
+     "name": "TrDistance.eq_abs_eigenvalues",
+     "kind": "theorem",
+     "line": 51,
+     "doc": "The trace distance is equal to half the 1-norm of the eigenvalues of their difference .",
+     "statement": "theorem eq_abs_eigenvalues : TrDistance ρ σ = (1/2:ℝ) *\n    ∑ i, abs ((ρ.Hermitian.sub σ.Hermitian).eigenvalues i)",
+     "sorry": false
+    }
+   ],
+   "private": 0,
+   "aliases": 0,
+   "informal": 0
+  },
+  {
+   "file": "QuantumInfo/States/Pure/BargmannInvariant.lean",
+   "module": "QuantumInfo.States.Pure.BargmannInvariant",
+   "title": "Bargmann Invariant and Geometric Phase",
+   "doc": "The Bargmann invariant for three quantum states is the cyclic product\nof inner products `⟨ψ₁|ψ₂⟩ · ⟨ψ₂|ψ₃⟩ · ⟨ψ₃|ψ₁⟩`. Its argument is\nthe geometric (Pancharatnam-Berry) phase accumulated around the\ngeodesic triangle in projective Hilbert space.\n\n## Important definitions\n * `bargmannInvariantThree`: the 3-vertex Bargmann invariant `Δ₃`\n * `bargmannPhaseThree`: the geometric phase `arg(Δ₃)`\n\n## Important results\n * `bargmannInvariantThree_degenerate`: identical states give `Δ₃ = 1`\n * `bargmannPhaseThree_degenerate`: identical states give phase `= 0`\n * `bargmannInvariantThree_reverse`: reversing conjugates `Δ₃`\n * `bargmannPhaseThree_reverse`: reversing negates the phase (mod 2π)\n * `bargmannInvariantThree_cyclic`: cyclic permutation preserves `Δ₃`\n * `bargmannPhaseThree_cyclic`: cyclic permutation preserves the phase\n * `norm_bargmannInvariantThree_le_one`: `‖Δ₃‖ ≤ 1` (via `Braket.norm_dot_le_one`)\n\n## References\n\n* V. Bargmann, Note on Wigner's theorem on symmetry operations, J. Math. Phys. 5, 862–868 (1964).\n  [ref: bargmann1964]\n* S. Pancharatnam, Generalized theory of interference, and its applications, Proc. Indian Acad.\n  Sci. A 44, 247–262 (1956). [ref: pancharatnam1956]",
+   "copyright": "2026 Anand Nambakam",
+   "sections": [
+    {
+     "line": 57,
+     "text": "## Degenerate triangles"
+    },
+    {
+     "line": 73,
+     "text": "## Conjugacy"
+    },
+    {
+     "line": 93,
+     "text": "## Cyclic symmetry"
+    },
+    {
+     "line": 107,
+     "text": "## Norm bounds"
+    }
+   ],
+   "declarations": [
+    {
+     "name": "bargmannInvariantThree",
+     "kind": "def",
+     "line": 50,
+     "doc": "The three-vertex Bargmann invariant: `⟨ψ₁|ψ₂⟩ · ⟨ψ₂|ψ₃⟩ · ⟨ψ₃|ψ₁⟩`.\nThis is a gauge-invariant complex number whose argument is the\ngeometric phase of the geodesic triangle.",
+     "statement": "def bargmannInvariantThree (ψ₁ ψ₂ ψ₃ : Ket d) : ℂ",
+     "sorry": false
+    },
+    {
+     "name": "bargmannPhaseThree",
+     "kind": "def",
+     "line": 54,
+     "doc": "The geometric (Pancharatnam-Berry) phase of three states.",
+     "statement": "def bargmannPhaseThree (ψ₁ ψ₂ ψ₃ : Ket d) : ℝ",
+     "sorry": false
+    },
+    {
+     "name": "bargmannInvariantThree_degenerate",
+     "kind": "lemma",
+     "line": 62,
+     "doc": "The Bargmann invariant of three identical states is 1.",
+     "statement": "lemma bargmannInvariantThree_degenerate (ψ : Ket d) :\n    bargmannInvariantThree ψ ψ ψ = 1",
+     "sorry": false
+    },
+    {
+     "name": "bargmannPhaseThree_degenerate",
+     "kind": "lemma",
+     "line": 69,
+     "doc": "The geometric phase of three identical states is 0.",
+     "statement": "lemma bargmannPhaseThree_degenerate (ψ : Ket d) :\n    bargmannPhaseThree ψ ψ ψ = 0",
+     "sorry": false
+    },
+    {
+     "name": "bargmannInvariantThree_reverse",
+     "kind": "lemma",
+     "line": 77,
+     "doc": "Reversing the cyclic order conjugates the invariant.",
+     "statement": "lemma bargmannInvariantThree_reverse (ψ₁ ψ₂ ψ₃ : Ket d) :\n    bargmannInvariantThree ψ₃ ψ₂ ψ₁ = starRingEnd ℂ (bargmannInvariantThree ψ₁ ψ₂ ψ₃)",
+     "sorry": false
+    },
+    {
+     "name": "bargmannPhaseThree_reverse",
+     "kind": "lemma",
+     "line": 87,
+     "doc": "Reversing the cyclic order negates the geometric phase (mod 2π).",
+     "statement": "lemma bargmannPhaseThree_reverse (ψ₁ ψ₂ ψ₃ : Ket d) :\n    (bargmannPhaseThree ψ₃ ψ₂ ψ₁ : Real.Angle) =\n    -(bargmannPhaseThree ψ₁ ψ₂ ψ₃ : Real.Angle)",
+     "sorry": false
+    },
+    {
+     "name": "bargmannInvariantThree_cyclic",
+     "kind": "lemma",
+     "line": 97,
+     "doc": "Cyclic permutation of the three states preserves the Bargmann invariant.",
+     "statement": "lemma bargmannInvariantThree_cyclic (ψ₁ ψ₂ ψ₃ : Ket d) :\n    bargmannInvariantThree ψ₂ ψ₃ ψ₁ = bargmannInvariantThree ψ₁ ψ₂ ψ₃",
+     "sorry": false
+    },
+    {
+     "name": "bargmannPhaseThree_cyclic",
+     "kind": "lemma",
+     "line": 103,
+     "doc": "Cyclic permutation preserves the geometric phase.",
+     "statement": "lemma bargmannPhaseThree_cyclic (ψ₁ ψ₂ ψ₃ : Ket d) :\n    bargmannPhaseThree ψ₂ ψ₃ ψ₁ = bargmannPhaseThree ψ₁ ψ₂ ψ₃",
+     "sorry": false
+    },
+    {
+     "name": "norm_bargmannInvariantThree_le_one",
+     "kind": "lemma",
+     "line": 112,
+     "doc": "The Bargmann invariant has norm at most 1: each inner product factor\nis bounded by Cauchy-Schwarz on unit vectors.",
+     "statement": "lemma norm_bargmannInvariantThree_le_one (ψ₁ ψ₂ ψ₃ : Ket d) :\n    ‖bargmannInvariantThree ψ₁ ψ₂ ψ₃‖ ≤ 1",
+     "sorry": false
+    }
+   ],
+   "private": 0,
+   "aliases": 0,
+   "informal": 0
+  },
+  {
+   "file": "QuantumInfo/States/Pure/BlochSphere.lean",
+   "module": "QuantumInfo.States.Pure.BlochSphere",
+   "title": "Bloch Sphere",
+   "doc": "The Bloch sphere is the unit sphere S² in ℝ³, used to represent\npure states of a two-level quantum system (qubit). Each point on the\nsphere corresponds to a qubit state up to global phase.\n\nThis file defines the Bloch sphere type and its angular parameterization,\nthen builds the solid angle and dot product API on sphere points.\n\n## Important definitions\n * `BlochSphere`: the unit sphere `Metric.sphere 0 1` in `EuclideanSpace ℝ (Fin 3)`\n * `blochPoint`: point on the Bloch sphere from polar angle α and azimuthal angle θ\n * `solidAngle`: solid angle of a geodesic triangle via Van Vleck formula\n\n## Important results\n * `blochPoint_norm`: the Bloch vector has unit norm\n * `dot_blochPoint`: dot product of Bloch vectors in terms of angle differences\n\n## References\n\n* S. Pancharatnam, Generalized theory of interference, and its applications, Proc. Indian Acad.\n  Sci. A 44, 247–262 (1956). [ref: pancharatnam1956]\n* M. V. Berry, Quantal phase factors accompanying adiabatic changes, Proc. R. Soc. London A 392,\n  45–57 (1984). [ref: berry1984]",
+   "copyright": "2026 Anand Nambakam",
+   "sections": [
+    {
+     "line": 79,
+     "text": "## Solid angle via Van Vleck formula"
+    },
+    {
+     "line": 94,
+     "text": "## Dot product of Bloch vectors"
+    }
+   ],
+   "declarations": [
+    {
+     "name": "BlochSphere",
+     "kind": "abbrev",
+     "line": 45,
+     "doc": "The Bloch sphere: unit sphere in `EuclideanSpace ℝ (Fin 3)`.",
+     "statement": "abbrev BlochSphere",
+     "sorry": false
+    },
+    {
+     "name": "BlochSphere.blochVecRaw",
+     "kind": "def",
+     "line": 50,
+     "doc": "The raw Bloch vector for angles (α, θ). Internal helper for `blochPoint`.",
+     "statement": "def blochVecRaw (α θ : ℝ) : Fin 3 → ℝ",
+     "sorry": false
+    },
+    {
+     "name": "BlochSphere.blochVecRaw_norm",
+     "kind": "lemma",
+     "line": 54,
+     "doc": "The Bloch vector has unit norm: sin²α(cos²θ + sin²θ) + cos²α = 1.",
+     "statement": "lemma blochVecRaw_norm (α θ : ℝ) :\n    Real.sqrt ((blochVecRaw α θ 0) ^ 2 + (blochVecRaw α θ 1) ^ 2 +\n      (blochVecRaw α θ 2) ^ 2) = 1",
+     "sorry": false
+    },
+    {
+     "name": "BlochSphere.blochPoint",
+     "kind": "def",
+     "line": 69,
+     "doc": "A point on the Bloch sphere parameterized by polar angle `α` and\nazimuthal angle `θ`.",
+     "statement": "def blochPoint (α θ : ℝ) : BlochSphere",
+     "sorry": false
+    },
+    {
+     "name": "BlochSphere.blochPoint_val",
+     "kind": "lemma",
+     "line": 75,
+     "doc": "The underlying vector of a `blochPoint`.",
+     "statement": "lemma blochPoint_val (α θ : ℝ) :\n    (blochPoint α θ : EuclideanSpace ℝ (Fin 3)) =\n    (WithLp.equiv 2 _).symm (blochVecRaw α θ)",
+     "sorry": false
+    },
+    {
+     "name": "BlochSphere.solidAngle",
+     "kind": "def",
+     "line": 86,
+     "doc": "Solid angle of a geodesic triangle on the Bloch sphere, computed via\nthe Van Vleck formula using `Complex.arg` for full-quadrant support.\n\n`Ω = 2 · arg(den + num · i)` where\n`den = 1 + n₁·n₂ + n₂·n₃ + n₃·n₁` and `num = n₁ · (n₂ × n₃)`.",
+     "statement": "def solidAngle (p₁ p₂ p₃ : BlochSphere) : ℝ",
+     "sorry": false
+    },
+    {
+     "name": "BlochSphere.dot_blochPoint",
+     "kind": "lemma",
+     "line": 97,
+     "doc": "The dot product of two Bloch points expressed in angle differences.",
+     "statement": "lemma dot_blochPoint (α₁ θ₁ α₂ θ₂ : ℝ) :\n    (blochPoint α₁ θ₁ : EuclideanSpace ℝ (Fin 3)) ⬝ᵥ\n    (blochPoint α₂ θ₂ : EuclideanSpace ℝ (Fin 3)) =\n    Real.sin α₁ * Real.sin α₂ * Real.cos (θ₂ - θ₁) +\n    Real.cos α₁ * Real.cos α₂",
+     "sorry": false
+    }
+   ],
+   "private": 0,
+   "aliases": 0,
+   "informal": 0
+  },
+  {
+   "file": "QuantumInfo/States/Pure/Braket.lean",
+   "module": "QuantumInfo.States.Pure.Braket",
+   "title": "",
+   "doc": "Finite dimensional quantum pure states, bra and kets. Mixed states are `MState` in that file.\n\nThese could be done with a Hilbert space of Fintype, which would look like\n```lean4\n(H : Type*) [NormedAddCommGroup H] [InnerProductSpace ℂ H] [CompleteSpace H] [FiniteDimensional ℂ H]\n```\nor by choosing a particular `Basis` and asserting it is `Fintype`. But frankly it seems easier to\nmostly focus on the basis-dependent notion of `Matrix`, which has the added benefit of an obvious\n\"classical\" interpretation (as the basis elements, or diagonal elements of a mixed state). In that\nsense, this quantum theory comes with the a particular classical theory always preferred.",
+   "copyright": "2025 Alex Meiburg",
+   "sections": [
+    {
+     "line": 561,
+     "text": "## Norm bounds"
+    }
+   ],
+   "declarations": [
+    {
+     "name": "Ket",
+     "kind": "structure",
+     "line": 40,
+     "doc": "A ket as a vector of unit norm. We follow the convention in `Matrix` of vectors as simple functions\nfrom a Fintype. Kets are distinctly not a vector space in our notion, as they represent only normalized\nstates and so cannot (in general) be added or scaled.",
+     "statement": "structure Ket where\n  vec : d → ℂ\n  normalized' : ∑ x, ‖vec x‖ ^ 2 = 1",
+     "sorry": false
+    },
+    {
+     "name": "Bra",
+     "kind": "structure",
+     "line": 47,
+     "doc": "A bra is identical in definition to a `Ket`, but are separate to avoid complex conjugation confusion.\nThey can be interconverted with the adjoint: `Ket.to_bra` and `Bra.to_ket`",
+     "statement": "structure Bra where\n  vec : d → ℂ\n  normalized' : ∑ x, ‖vec x‖ ^ 2 =1",
+     "sorry": false
+    },
+    {
+     "name": "Braket.instFunLikeKet",
+     "kind": "instance",
+     "line": 61,
+     "doc": "",
+     "statement": "instance instFunLikeKet : FunLike (Ket d) d ℂ",
+     "sorry": false
+    },
+    {
+     "name": "Ket.coe_fun_eq",
+     "kind": "lemma",
+     "line": 65,
+     "doc": "",
+     "statement": "lemma _root_.Ket.coe_fun_eq (ψ : Ket d) : (ψ : d → ℂ) = ψ.vec",
+     "sorry": false
+    },
+    {
+     "name": "Braket.instFunLikeBra",
+     "kind": "instance",
+     "line": 67,
+     "doc": "",
+     "statement": "instance instFunLikeBra : FunLike (Bra d) d ℂ",
+     "sorry": false
+    },
+    {
+     "name": "Bra.coe_fun_eq",
+     "kind": "lemma",
+     "line": 71,
+     "doc": "",
+     "statement": "lemma _root_.Bra.coe_fun_eq (ψ : Bra d) : (ψ : d → ℂ) = ψ.vec",
+     "sorry": false
+    },
+    {
+     "name": "Braket.dot",
+     "kind": "def",
+     "line": 73,
+     "doc": "",
+     "statement": "def dot (ξ : Bra d) (ψ : Ket d) : ℂ",
+     "sorry": false
+    },
+    {
+     "name": "Braket.dot_eq_dotProduct",
+     "kind": "lemma",
+     "line": 77,
+     "doc": "",
+     "statement": "lemma dot_eq_dotProduct (ψ : Bra d) (φ : Ket d) :〈ψ‖φ〉= dotProduct (m := d) ψ φ",
+     "sorry": false
+    },
+    {
+     "name": "Ket.apply",
+     "kind": "lemma",
+     "line": 87,
+     "doc": "",
+     "statement": "lemma Ket.apply (ψ : Ket d) (i : d) : ψ i = ψ.vec i",
+     "sorry": false
+    },
+    {
+     "name": "Bra.apply",
+     "kind": "lemma",
+     "line": 90,
+     "doc": "",
+     "statement": "lemma Bra.apply (ψ : Bra d) (i : d) : ψ i = ψ.vec i",
+     "sorry": false
+    },
+    {
+     "name": "Ket.ext",
+     "kind": "lemma",
+     "line": 94,
+     "doc": "",
+     "statement": "lemma Ket.ext {ξ ψ : Ket d} (h : ∀ x, ξ x = ψ x) : ξ = ψ",
+     "sorry": false
+    },
+    {
+     "name": "Bra.ext",
+     "kind": "lemma",
+     "line": 98,
+     "doc": "",
+     "statement": "lemma Bra.ext {ξ ψ : Bra d} (h : ∀ x, ξ x = ψ x) : ξ = ψ",
+     "sorry": false
+    },
+    {
+     "name": "Ket.normalized",
+     "kind": "lemma",
+     "line": 101,
+     "doc": "",
+     "statement": "lemma Ket.normalized (ψ : Ket d) : ∑ x, Complex.normSq (ψ x) = 1",
+     "sorry": false
+    },
+    {
+     "name": "Bra.normalized",
+     "kind": "lemma",
+     "line": 106,
+     "doc": "",
+     "statement": "lemma Bra.normalized (ψ : Bra d) : ∑ x, Complex.normSq (ψ x) = 1",
+     "sorry": false
+    },
+    {
+     "name": "Ket.to_bra",
+     "kind": "def",
+     "line": 113,
+     "doc": "Any Bra can be turned into a Ket by conjugating the elements.",
+     "statement": "def Ket.to_bra (ψ : Ket d) : Bra d",
+     "sorry": false
+    },
+    {
+     "name": "Bra.to_ket",
+     "kind": "def",
+     "line": 118,
+     "doc": "Any Ket can be turned into a Bra by conjugating the elements.",
+     "statement": "def Bra.to_ket (ψ : Bra d) : Ket d",
+     "sorry": false
+    },
+    {
+     "name": "instBraOfKet",
+     "kind": "instance",
+     "line": 121,
+     "doc": "",
+     "statement": "instance instBraOfKet : Coe (Ket d) (Bra d)",
+     "sorry": false
+    },
+    {
+     "name": "instKetOfBra",
+     "kind": "instance",
+     "line": 123,
+     "doc": "",
+     "statement": "instance instKetOfBra : Coe (Bra d) (Ket d)",
+     "sorry": false
+    },
+    {
+     "name": "Bra.eq_conj",
+     "kind": "lemma",
+     "line": 126,
+     "doc": "",
+     "statement": "lemma Bra.eq_conj (ψ : Ket d) (x : d) :〈ψ∣ x = conj (∣ψ〉 x)",
+     "sorry": false
+    },
+    {
+     "name": "Bra.apply'",
+     "kind": "lemma",
+     "line": 129,
+     "doc": "",
+     "statement": "lemma Bra.apply' (ψ : Ket d) (i : d) : 〈ψ∣ i = conj (ψ.vec i)",
+     "sorry": false
+    },
+    {
+     "name": "Ket.exists_ne_zero",
+     "kind": "lemma",
+     "line": 132,
+     "doc": "",
+     "statement": "lemma Ket.exists_ne_zero (ψ : Ket d) : ∃ x, ψ x ≠ 0",
+     "sorry": false
+    },
+    {
+     "name": "Bra.exists_ne_zero",
+     "kind": "lemma",
+     "line": 139,
+     "doc": "",
+     "statement": "lemma Bra.exists_ne_zero (ψ : Bra d) : ∃ x, ψ x ≠ 0",
+     "sorry": false
+    },
+    {
+     "name": "Ket.normalize",
+     "kind": "def",
+     "line": 147,
+     "doc": "Create a ket out of a vector given it has a nonzero component",
+     "statement": "def Ket.normalize (v : d → ℂ) (h : ∃ x, v x ≠ 0) : Ket d",
+     "sorry": false
+    },
+    {
+     "name": "Ket.normalize_ket_eq_self",
+     "kind": "theorem",
+     "line": 163,
+     "doc": "A ket is already normalized",
+     "statement": "theorem Ket.normalize_ket_eq_self (ψ : Ket d) : Ket.normalize (ψ.vec) (Ket.exists_ne_zero ψ) = ψ",
+     "sorry": false
+    },
+    {
+     "name": "Bra.normalize",
+     "kind": "def",
+     "line": 169,
+     "doc": "Create a bra out of a vector given it has a nonzero component",
+     "statement": "def Bra.normalize (v : d → ℂ) (h : ∃ x, v x ≠ 0) : Bra d",
+     "sorry": false
+    },
+    {
+     "name": "Bra.normalize_ket_eq_self",
+     "kind": "lemma",
+     "line": 185,
+     "doc": "A bra is already normalized",
+     "statement": "lemma Bra.normalize_ket_eq_self (ψ : Bra d) : Bra.normalize (ψ.vec) (Bra.exists_ne_zero ψ) = ψ",
+     "sorry": false
+    },
+    {
+     "name": "uniform_superposition",
+     "kind": "def",
+     "line": 192,
+     "doc": "Ket form by the superposition of all elements in `d`.\nCommonly denoted by |+⟩, especially for qubits",
+     "statement": "def uniform_superposition [hdne : Nonempty d] : Ket d",
+     "sorry": false
+    },
+    {
+     "name": "instInhabited",
+     "kind": "instance",
+     "line": 202,
+     "doc": "There exists a ket for every nonempty `d`.\nHere, we use the uniform superposition",
+     "statement": "instance instInhabited [Nonempty d] : Inhabited (Ket d)",
+     "sorry": false
+    },
+    {
+     "name": "Ket.basis",
+     "kind": "def",
+     "line": 206,
+     "doc": "Construct the Ket corresponding to a basis vector, with a +1 phase.",
+     "statement": "def Ket.basis (i : d) : Ket d",
+     "sorry": false
+    },
+    {
+     "name": "Bra.basis",
+     "kind": "def",
+     "line": 210,
+     "doc": "Construct the Bra corresponding to a basis vector, with a +1 phase.",
+     "statement": "def Bra.basis (i : d) : Bra d",
+     "sorry": false
+    },
+    {
+     "name": "instFunLikeBraket",
+     "kind": "instance",
+     "line": 214,
+     "doc": "A Bra can be viewed as a function from Ket's to ℂ.",
+     "statement": "instance instFunLikeBraket : FunLike (Bra d) (Ket d) ℂ",
+     "sorry": false
+    },
+    {
+     "name": "Braket.dot_self_eq_one",
+     "kind": "theorem",
+     "line": 222,
+     "doc": "The inner product of any state with itself is 1.",
+     "statement": "theorem Braket.dot_self_eq_one (ψ : Ket d) :〈ψ‖ψ〉= 1",
+     "sorry": false
+    },
+    {
+     "name": "Braket.dot_swap_conj",
+     "kind": "lemma",
+     "line": 229,
+     "doc": "Swapping the arguments conjugates the bra-ket product:\n`⟨ψ₂|ψ₁⟩ = conj(⟨ψ₁|ψ₂⟩)`.",
+     "statement": "lemma Braket.dot_swap_conj (ψ₁ ψ₂ : Ket d) :\n    〈ψ₂‖ψ₁〉 = starRingEnd ℂ 〈ψ₁‖ψ₂〉",
+     "sorry": false
+    },
+    {
+     "name": "Ket.relabel",
+     "kind": "def",
+     "line": 239,
+     "doc": "Relabel a ket along an equivalence of basis index types. Given `e : d₂ ≃ d₁`,\nthe amplitude of `ψ.relabel e` at `i : d₂` is the amplitude of `ψ` at `e i`.",
+     "statement": "def Ket.relabel (ψ : Ket d₁) (e : d₂ ≃ d₁) : Ket d₂",
+     "sorry": false
+    },
+    {
+     "name": "Ket.relabel_apply",
+     "kind": "lemma",
+     "line": 246,
+     "doc": "",
+     "statement": "lemma Ket.relabel_apply (ψ : Ket d₁) (e : d₂ ≃ d₁) (i : d₂) :\n    ψ.relabel e i = ψ (e i)",
+     "sorry": false
+    },
+    {
+     "name": "Ket.prod",
+     "kind": "def",
+     "line": 256,
+     "doc": "The outer product of two kets, creating an unentangled state.",
+     "statement": "def Ket.prod (ψ₁ : Ket d₁) (ψ₂ : Ket d₂) : Ket (d₁ × d₂)",
+     "sorry": false
+    },
+    {
+     "name": "Ket.piProd",
+     "kind": "def",
+     "line": 267,
+     "doc": "The tensor product of a finite family of kets, generalizing `Ket.prod`. Party `i` has\nbasis index type `d i`, and a joint index `j` selects one index `j i` for each party; the\namplitude at `j` is `∏ i, ψ i (j i)`.",
+     "statement": "def Ket.piProd {ι : Type*} [DecidableEq ι] [Fintype ι] {d : ι → Type*}\n    [∀ i, Fintype (d i)] (ψ : (i : ι) → Ket (d i)) : Ket ((i : ι) → d i)",
+     "sorry": false
+    },
+    {
+     "name": "Ket.piProd_apply",
+     "kind": "lemma",
+     "line": 276,
+     "doc": "",
+     "statement": "lemma Ket.piProd_apply {ι : Type*} [DecidableEq ι] [Fintype ι] {d : ι → Type*}\n    [∀ i, Fintype (d i)] (ψ : (i : ι) → Ket (d i)) (j : (i : ι) → d i) :\n    Ket.piProd ψ j = ∏ i, ψ i (j i)",
+     "sorry": false
+    },
+    {
+     "name": "Ket.IsProd",
+     "kind": "def",
+     "line": 282,
+     "doc": "A Ket is a product if it's `Ket.prod` of two kets.",
+     "statement": "def Ket.IsProd (ψ : Ket (d₁ × d₂)) : Prop",
+     "sorry": false
+    },
+    {
+     "name": "Ket.IsEntangled",
+     "kind": "def",
+     "line": 285,
+     "doc": "A Ket is entangled if it's not `Ket.prod` of two kets.",
+     "statement": "def Ket.IsEntangled (ψ : Ket (d₁ × d₂)) : Prop",
+     "sorry": false
+    },
+    {
+     "name": "Ket.IsProd_prod",
+     "kind": "theorem",
+     "line": 289,
+     "doc": "`Ket.prod` states are product states.",
+     "statement": "theorem Ket.IsProd_prod (ψ₁ : Ket d₁) (ψ₂ : Ket d₂) : (ψ₁.prod ψ₂).IsProd",
+     "sorry": false
+    },
+    {
+     "name": "Ket.not_IsEntangled_prod",
+     "kind": "theorem",
+     "line": 294,
+     "doc": "`Ket.prod` states are not entangled states.",
+     "statement": "theorem Ket.not_IsEntangled_prod (ψ₁ : Ket d₁) (ψ₂ : Ket d₂) : ¬(ψ₁.prod ψ₂).IsEntangled",
+     "sorry": false
+    },
+    {
+     "name": "Ket.IsProd_iff_mul_eq_mul",
+     "kind": "theorem",
+     "line": 298,
+     "doc": "A ket is a product state iff its components are cross-multiplicative.",
+     "statement": "theorem Ket.IsProd_iff_mul_eq_mul (ψ : Ket (d₁ × d₂)) : ψ.IsProd ↔\n    ∀ i₁ i₂ j₁ j₂, ψ (i₁,j₁)  * ψ (i₂,j₂) = ψ (i₁,j₂) * ψ (i₂,j₁)",
+     "sorry": false
+    },
+    {
+     "name": "Ket.IsPiProd",
+     "kind": "def",
+     "line": 365,
+     "doc": "A ket on the joint system of a finite family of parties is a product state if it is\nthe `Ket.piProd` of one ket for each party, generalizing `Ket.IsProd`.",
+     "statement": "def Ket.IsPiProd {ι : Type*} [DecidableEq ι] [Fintype ι] {d : ι → Type*}\n    [∀ i, Fintype (d i)] (ψ : Ket ((i : ι) → d i)) : Prop",
+     "sorry": false
+    },
+    {
+     "name": "Ket.isPiProd_piProd",
+     "kind": "lemma",
+     "line": 371,
+     "doc": "Every `Ket.piProd` state satisfies `Ket.IsPiProd`, generalizing `Ket.IsProd_prod`.",
+     "statement": "lemma Ket.isPiProd_piProd {ι : Type*} [DecidableEq ι] [Fintype ι] {d : ι → Type*}\n    [∀ i, Fintype (d i)] (φ : (i : ι) → Ket (d i)) : (Ket.piProd φ).IsPiProd",
+     "sorry": false
+    },
+    {
+     "name": "Ket.isPiProd_iff_isProd_relabel",
+     "kind": "lemma",
+     "line": 377,
+     "doc": "For two parties, `Ket.IsPiProd` agrees with `Ket.IsProd` after relabeling the joint\nindex type `(i : Fin 2) → d i` as `d 0 × d 1`.",
+     "statement": "lemma Ket.isPiProd_iff_isProd_relabel {d : Fin 2 → Type*} [∀ i, Fintype (d i)]\n    (ψ : Ket ((i : Fin 2) → d i)) :\n    ψ.IsPiProd ↔ (ψ.relabel (piFinTwoEquiv d).symm).IsProd",
+     "sorry": false
+    },
+    {
+     "name": "Ket.MES",
+     "kind": "def",
+     "line": 398,
+     "doc": "The Maximally Entangled State, or MES, on a d×d system. In principle there are many, this\nis specifically the MES with an all-positive phase. For instance on `d := Fin 2`, this is the\nBell state.",
+     "statement": "def Ket.MES (d) [Fintype d] [Nonempty d] : Ket (d × d)",
+     "sorry": false
+    },
+    {
+     "name": "Ket.MES_isEntangled",
+     "kind": "theorem",
+     "line": 404,
+     "doc": "On any space of dimension at least two, the maximally entangled state `MES` is entangled.",
+     "statement": "theorem Ket.MES_isEntangled [Nontrivial d] : (Ket.MES d).IsEntangled",
+     "sorry": false
+    },
+    {
+     "name": "transposeTrick",
+     "kind": "theorem",
+     "line": 412,
+     "doc": "The transpose trick",
+     "statement": "theorem transposeTrick {d} [Fintype d] [Nonempty d] [DecidableEq d] {M : Matrix d d ℂ} :\n    (M ⊗ₖ 1) *ᵥ (Ket.MES d).vec = (1 ⊗ₖ M.transpose) *ᵥ (Ket.MES d).vec",
+     "sorry": false
+    },
+    {
+     "name": "Ket.PhaseEquiv",
+     "kind": "def",
+     "line": 433,
+     "doc": "The equivalence relation on `Ket` where two kets equivalent if they are equal up to a\nglobal phase, i.e. `∃ z, ‖z‖ = 1 ∧ a.vec = z • b.vec",
+     "statement": "def Ket.PhaseEquiv : Setoid (Ket d)",
+     "sorry": false
+    },
+    {
+     "name": "KetUpToPhase",
+     "kind": "def",
+     "line": 448,
+     "doc": "The type of `Ket`s up to a global phase equivalence, as given by `Ket.PhaseEquiv`.\nIn particular, `MState`s really only care about a KetUpToPhase, and not Kets themselves.",
+     "statement": "def KetUpToPhase",
+     "sorry": false
+    },
+    {
+     "name": "KetUpToPhase.mk",
+     "kind": "def",
+     "line": 452,
+     "doc": "Construct a `KetUpToPhase` from a `Ket`.",
+     "statement": "def KetUpToPhase.mk (ψ : Ket d) : KetUpToPhase d",
+     "sorry": false
+    },
+    {
+     "name": "KetUpToPhase.lift",
+     "kind": "def",
+     "line": 456,
+     "doc": "Lift a function on `Ket d` to `KetUpToPhase d`, given that it respects phase equivalence.",
+     "statement": "def KetUpToPhase.lift {α : Sort*} (f : Ket d → α)\n    (hf : ∀ ψ φ, Ket.PhaseEquiv.r ψ φ → f ψ = f φ) : KetUpToPhase d → α",
+     "sorry": false
+    },
+    {
+     "name": "KetUpToPhase.lift_mk",
+     "kind": "lemma",
+     "line": 461,
+     "doc": "",
+     "statement": "lemma KetUpToPhase.lift_mk {α : Sort*} (f : Ket d → α)\n    (hf : ∀ ψ φ, Ket.PhaseEquiv.r ψ φ → f ψ = f φ) (ψ : Ket d) :\n    KetUpToPhase.lift f hf (KetUpToPhase.mk ψ) = f ψ",
+     "sorry": false
+    },
+    {
+     "name": "KetUpToPhase.ind",
+     "kind": "lemma",
+     "line": 465,
+     "doc": "",
+     "statement": "lemma KetUpToPhase.ind {p : KetUpToPhase d → Prop}\n    (h : ∀ ψ : Ket d, p (KetUpToPhase.mk ψ)) : ∀ q, p q",
+     "sorry": false
+    },
+    {
+     "name": "KetUpToPhase.surjective_mk",
+     "kind": "lemma",
+     "line": 469,
+     "doc": "",
+     "statement": "lemma KetUpToPhase.surjective_mk : Function.Surjective (KetUpToPhase.mk (d := d))",
+     "sorry": false
+    },
+    {
+     "name": "Ket.IsPiProd.of_phaseEquiv",
+     "kind": "lemma",
+     "line": 481,
+     "doc": "If a ket is phase-equivalent to a `Ket.IsPiProd` state, then it is also a\n`Ket.IsPiProd` state, provided there is at least one party. The global phase is\nabsorbed into one tensor factor.",
+     "statement": "lemma Ket.IsPiProd.of_phaseEquiv [Nonempty ι] {ψ ψ' : Ket ((i : ι) → d i)}\n    (h' : ψ'.IsPiProd) (h : Ket.PhaseEquiv.r ψ ψ') : ψ.IsPiProd",
+     "sorry": false
+    },
+    {
+     "name": "KetUpToPhase.IsPiProd",
+     "kind": "def",
+     "line": 499,
+     "doc": "A ket up to global phase is a product state if its class contains a ket of the form\n`Ket.piProd φ`. If `ι` is empty, every class is a product state.",
+     "statement": "def KetUpToPhase.IsPiProd (q : KetUpToPhase ((i : ι) → d i)) : Prop",
+     "sorry": false
+    },
+    {
+     "name": "KetUpToPhase.isPiProd_mk",
+     "kind": "lemma",
+     "line": 505,
+     "doc": "With at least one party, the class of a ket is a product state exactly when the ket\nitself is a product state.",
+     "statement": "lemma KetUpToPhase.isPiProd_mk [Nonempty ι] (ψ : Ket ((i : ι) → d i)) :\n    (KetUpToPhase.mk ψ).IsPiProd ↔ ψ.IsPiProd",
+     "sorry": false
+    },
+    {
+     "name": "Ket.prod_sqrt_sum_norm_sq_eq_one",
+     "kind": "lemma",
+     "line": 520,
+     "doc": "If the amplitudes of a ket factor as `∏ i, v i (j i)`, then the product of the norms of the\nvectors `v i` equals `1`.",
+     "statement": "lemma Ket.prod_sqrt_sum_norm_sq_eq_one {ψ : Ket ((i : ι) → d i)} {v : (i : ι) → d i → ℂ}\n    (hv : ∀ j, ψ j = ∏ i, v i (j i)) : ∏ i, √(∑ a, ‖v i a‖ ^ 2) = 1",
+     "sorry": false
+    },
+    {
+     "name": "Ket.isPiProd_iff_exists_prod",
+     "kind": "lemma",
+     "line": 534,
+     "doc": "A ket is a product state exactly when its amplitudes factor as `∏ i, v i (j i)` for some\nvectors `v i`, which need not have norm `1`.",
+     "statement": "lemma Ket.isPiProd_iff_exists_prod (ψ : Ket ((i : ι) → d i)) :\n    ψ.IsPiProd ↔ ∃ v : (i : ι) → d i → ℂ, ∀ j, ψ j = ∏ i, v i (j i)",
+     "sorry": false
+    },
+    {
+     "name": "Ket.isPiProd_iff_mul_update",
+     "kind": "lemma",
+     "line": 553,
+     "doc": "With at least one party, a ket is a product state exactly when its amplitudes satisfy the\nexchange relations, that is, when all `2 × 2` minors vanish in each flattening of its amplitude\narray that separates one party from the rest. This generalizes `Ket.IsProd_iff_mul_eq_mul`.",
+     "statement": "lemma Ket.isPiProd_iff_mul_update [Nonempty ι] (ψ : Ket ((i : ι) → d i)) :\n    ψ.IsPiProd ↔ ∀ i (a b : d i) x y, ψ (Function.update x i a) * ψ (Function.update y i b) =\n      ψ (Function.update x i b) * ψ (Function.update y i a)",
+     "sorry": false
+    },
+    {
+     "name": "Braket.norm_dot_le_one",
+     "kind": "lemma",
+     "line": 585,
+     "doc": "The bra-ket product of normalized states has norm at most 1 (Cauchy-Schwarz).",
+     "statement": "lemma Braket.norm_dot_le_one (ψ₁ ψ₂ : Ket d) : ‖〈ψ₁‖ψ₂〉‖ ≤ 1",
+     "sorry": false
+    }
+   ],
+   "private": 3,
+   "aliases": 0,
+   "informal": 0
+  },
+  {
+   "file": "QuantumInfo/States/Pure/Qubit.lean",
+   "module": "QuantumInfo.States.Pure.Qubit",
+   "title": "Qubits",
+   "doc": "## i. Overview\n\nA qubit is a two-level quantum system. In this module the computational basis of a qubit is\nindexed by `Qubit`, an abbreviation for `Fin 2`, and a gate on a qubit is an element of\n`𝐔[Qubit]`, the group of unitary `2 × 2` complex matrices. The standard single-qubit gates are\ndefined by their matrices in the computational basis, and the basic identities between them are\nproved. For a unitary matrix `g` indexed by a finite type `k`, the controlled gate `C[g]` acts on\n`Qubit × k`: it is the identity when the `Qubit` component, the control, is `0`, and applies `g`\nwhen it is `1`. The CNOT gate is `C[X]`.\n\nMost proofs use the tactic `matrix_expand`, defined at the start of the module, which reduces an\nequality of small matrices to its entries and tries to close them with `simp`, `norm_num`,\n`field_simp` and `ring_nf`.\n\n## ii. Key results\n\n- `Qubit` : the index type `Fin 2` of the computational basis of a qubit.\n- `matrix_expand` : a tactic reducing an equality of small matrices to its entries and\n  simplifying them.\n- `Qubit.X`, `Qubit.Y`, `Qubit.Z` : the Pauli gates.\n- `Qubit.H`, `Qubit.S`, `Qubit.T` : the Hadamard gate and the gates `S = diag(1, i)` and\n  `T = diag(1, (1 + i) / √2)`.\n- `Qubit.X_Y_anticomm`, `Qubit.Y_Z_anticomm`, `Qubit.Z_X_anticomm` : the Pauli gates\n  anticommute.\n- `Qubit.controllize` : the controlled gate `C[g]` of a unitary `g`.\n- `Qubit.CNOT`, `Qubit.CNOT_matrix` : the CNOT gate and its `4 × 4` matrix, with `Fin 2 × Fin 2`\n  reindexed by `finProdFinEquiv`.\n- `Qubit.X_controllize_X` : conjugating `C[g]` by `X` on the control qubit gives\n  `(1 ⊗ᵤ g) * C[g⁻¹]`.\n\n## iii. Table of contents\n\n- A. The qubit index type and the `matrix_expand` tactic\n- B. The single-qubit gates\n- C. Identities between the single-qubit gates\n- D. Controlled gates\n\n## iv. References\n\n* M. A. Nielsen and I. L. Chuang, Quantum Computation and Quantum Information, Cambridge\n  University Press (2010). [ref: nielsen_chuang_qci]",
+   "copyright": "2025 Alex Meiburg",
+   "sections": [
+    {
+     "line": 61,
+     "text": "## A. The qubit index type and the `matrix_expand` tactic"
+    },
+    {
+     "line": 105,
+     "text": "## B. The single-qubit gates"
+    },
+    {
+     "line": 135,
+     "text": "## C. Identities between the single-qubit gates"
+    },
+    {
+     "line": 199,
+     "text": "## D. Controlled gates"
+    }
+   ],
+   "declarations": [
+    {
+     "name": "Qubit",
+     "kind": "abbrev",
+     "line": 68,
+     "doc": "The index type of the computational basis of a qubit.",
+     "statement": "abbrev Qubit",
+     "sorry": false
+    },
+    {
+     "name": "Qubit.Z",
+     "kind": "def",
+     "line": 112,
+     "doc": "The Pauli Z gate on a qubit.",
+     "statement": "def Z : 𝐔[Qubit]",
+     "sorry": false
+    },
+    {
+     "name": "Qubit.X",
+     "kind": "def",
+     "line": 116,
+     "doc": "The Pauli X gate on a qubit.",
+     "statement": "def X : 𝐔[Qubit]",
+     "sorry": false
+    },
+    {
+     "name": "Qubit.Y",
+     "kind": "def",
+     "line": 120,
+     "doc": "The Pauli Y gate on a qubit.",
+     "statement": "def Y : 𝐔[Qubit]",
+     "sorry": false
+    },
+    {
+     "name": "Qubit.H",
+     "kind": "def",
+     "line": 124,
+     "doc": "The H gate, a Hadamard gate, on a qubit.",
+     "statement": "noncomputable def H : 𝐔[Qubit]",
+     "sorry": false
+    },
+    {
+     "name": "Qubit.S",
+     "kind": "def",
+     "line": 128,
+     "doc": "The S gate, or Rz(π/2) rotation on a qubit.",
+     "statement": "def S : 𝐔[Qubit]",
+     "sorry": false
+    },
+    {
+     "name": "Qubit.T",
+     "kind": "def",
+     "line": 132,
+     "doc": "The T gate, or Rz(π/4) rotation on a qubit.",
+     "statement": "noncomputable def T : 𝐔[Qubit]",
+     "sorry": false
+    },
+    {
+     "name": "Qubit.Z_sq",
+     "kind": "lemma",
+     "line": 142,
+     "doc": "",
+     "statement": "lemma Z_sq : Z * Z = 1",
+     "sorry": false
+    },
+    {
+     "name": "Qubit.X_sq",
+     "kind": "lemma",
+     "line": 146,
+     "doc": "",
+     "statement": "lemma X_sq : X * X = 1",
+     "sorry": false
+    },
+    {
+     "name": "Qubit.Y_sq",
+     "kind": "lemma",
+     "line": 150,
+     "doc": "",
+     "statement": "lemma Y_sq : Y * Y = 1",
+     "sorry": false
+    },
+    {
+     "name": "Qubit.H_sq",
+     "kind": "lemma",
+     "line": 154,
+     "doc": "",
+     "statement": "lemma H_sq : H * H = 1",
+     "sorry": false
+    },
+    {
+     "name": "Qubit.S_sq",
+     "kind": "lemma",
+     "line": 158,
+     "doc": "",
+     "statement": "lemma S_sq : S * S = Z",
+     "sorry": false
+    },
+    {
+     "name": "Qubit.T_sq",
+     "kind": "lemma",
+     "line": 162,
+     "doc": "",
+     "statement": "lemma T_sq : T * T = S",
+     "sorry": false
+    },
+    {
+     "name": "Qubit.X_Y_anticomm",
+     "kind": "theorem",
+     "line": 168,
+     "doc": "The anticommutator `{X,Y}` is zero. Marked simp as to put Pauli products in a canonical Y-X-Z\norder.",
+     "statement": "theorem X_Y_anticomm : X * Y = -Y * X",
+     "sorry": false
+    },
+    {
+     "name": "Qubit.Y_Z_anticomm",
+     "kind": "theorem",
+     "line": 172,
+     "doc": "The anticommutator `{Y,Z}` is zero.",
+     "statement": "theorem Y_Z_anticomm : Z * Y = -Y * Z",
+     "sorry": false
+    },
+    {
+     "name": "Qubit.Z_X_anticomm",
+     "kind": "theorem",
+     "line": 176,
+     "doc": "The anticommutator `{Z,X}` is zero.",
+     "statement": "theorem Z_X_anticomm : Z * X = -X * Z",
+     "sorry": false
+    },
+    {
+     "name": "Qubit.H_mul_X_eq_Z_mul_H",
+     "kind": "lemma",
+     "line": 180,
+     "doc": "",
+     "statement": "lemma H_mul_X_eq_Z_mul_H : H * X = Z * H",
+     "sorry": false
+    },
+    {
+     "name": "Qubit.H_mul_Z_eq_X_mul_H",
+     "kind": "lemma",
+     "line": 184,
+     "doc": "",
+     "statement": "lemma H_mul_Z_eq_X_mul_H : H * Z = X * H",
+     "sorry": false
+    },
+    {
+     "name": "Qubit.S_Z_comm",
+     "kind": "lemma",
+     "line": 188,
+     "doc": "",
+     "statement": "lemma S_Z_comm : Z * S = S * Z",
+     "sorry": false
+    },
+    {
+     "name": "Qubit.T_Z_comm",
+     "kind": "lemma",
+     "line": 192,
+     "doc": "",
+     "statement": "lemma T_Z_comm : Z * T = T * Z",
+     "sorry": false
+    },
+    {
+     "name": "Qubit.S_T_comm",
+     "kind": "lemma",
+     "line": 196,
+     "doc": "",
+     "statement": "lemma S_T_comm : S * T = T * S",
+     "sorry": false
+    },
+    {
+     "name": "Qubit.controllize",
+     "kind": "def",
+     "line": 207,
+     "doc": "The controlled version `C[g]` of a unitary matrix `g` indexed by `k`, acting on `Qubit × k`:\nthe identity when the `Qubit` component, the control, is `0`, and `g` when it is `1`.",
+     "statement": "def controllize (g : 𝐔[k]) : 𝐔[Qubit × k]",
+     "sorry": false
+    },
+    {
+     "name": "Qubit.CNOT",
+     "kind": "def",
+     "line": 227,
+     "doc": "Controlled-NOT gate on two qubits.\nThe first qubit is the control and the second qubit is the target.",
+     "statement": "def CNOT : 𝐔[Fin 2 × Fin 2]",
+     "sorry": false
+    },
+    {
+     "name": "Qubit.CNOT_matrix",
+     "kind": "lemma",
+     "line": 230,
+     "doc": "The matrix representation of CNOT is the standard 4×4 permutation matrix.",
+     "statement": "lemma CNOT_matrix :\n    Matrix.reindex finProdFinEquiv finProdFinEquiv CNOT.val =\n      ![![(1:ℂ), 0, 0, 0],\n        ![0, 1, 0, 0],\n        ![0, 0, 0, 1],\n        ![0, 0, 1, 0]]",
+     "sorry": false
+    },
+    {
+     "name": "Qubit.controllize_apply_zero_zero",
+     "kind": "lemma",
+     "line": 243,
+     "doc": "",
+     "statement": "lemma controllize_apply_zero_zero : C[g] (0, j₁) (0, j₂) = (1 : 𝐔[k]) j₁ j₂",
+     "sorry": false
+    },
+    {
+     "name": "Qubit.controllize_apply_zero_one",
+     "kind": "lemma",
+     "line": 247,
+     "doc": "",
+     "statement": "lemma controllize_apply_zero_one : C[g] (0, j₁) (1, j₂) = 0",
+     "sorry": false
+    },
+    {
+     "name": "Qubit.controllize_apply_one_zero",
+     "kind": "lemma",
+     "line": 251,
+     "doc": "",
+     "statement": "lemma controllize_apply_one_zero : C[g] (1, j₁) (0, j₂) = 0",
+     "sorry": false
+    },
+    {
+     "name": "Qubit.controllize_apply_one_one",
+     "kind": "lemma",
+     "line": 255,
+     "doc": "",
+     "statement": "lemma controllize_apply_one_one : C[g] (1, j₁) (1, j₂) = g j₁ j₂",
+     "sorry": false
+    },
+    {
+     "name": "Qubit.controllize_mul",
+     "kind": "lemma",
+     "line": 259,
+     "doc": "",
+     "statement": "lemma controllize_mul (g₁ g₂ : 𝐔[k]) : C[g₁] * C[g₂] = C[g₁ * g₂]",
+     "sorry": false
+    },
+    {
+     "name": "Qubit.controllize_one",
+     "kind": "lemma",
+     "line": 263,
+     "doc": "",
+     "statement": "lemma controllize_one : C[(1 : 𝐔[k])] = 1",
+     "sorry": false
+    },
+    {
+     "name": "Qubit.controllize_mul_inv",
+     "kind": "lemma",
+     "line": 266,
+     "doc": "",
+     "statement": "lemma controllize_mul_inv : C[g] * C[g⁻¹] = 1",
+     "sorry": false
+    },
+    {
+     "name": "Qubit.X_controllize_X",
+     "kind": "lemma",
+     "line": 271,
+     "doc": "",
+     "statement": "lemma X_controllize_X : (X ⊗ᵤ 1) * C[g] * (X ⊗ᵤ 1) = (1 ⊗ᵤ g) * C[g⁻¹]",
+     "sorry": false
+    }
+   ],
+   "private": 0,
+   "aliases": 0,
+   "informal": 0
+  }
+ ]
+}

@@ -58,6 +58,11 @@ Trough reads these sources. The catalog of libraries is `catalog/libraries.toml`
 
 - `data/cslib/library.json`: each module's title, docstrings and authors, and its public declarations with their kinds, lines, docstrings and Lean statements, read from the source text without Lean, with the opening of each folder's README, the README's description and the maintainers GOVERNANCE.md names, from [leanprover/cslib at 86d560b6](https://github.com/leanprover/cslib/tree/86d560b6cbb379bd82512424cbcd2a915a1565e7), Apache-2.0. `data/cslib/deps.json`: the modules each module's statements and proofs use, and the names read from the source that Lean has only as private declarations or not at all, written by `lean/cslib/CslibDeps.lean` in GitHub Actions. `data/cslib/source.json` records the commit, its Lean toolchain and Mathlib.
 
+## Physlib
+
+- `data/physlib/modules/`: each module's title, module docstring and section docstrings, and its declarations with their docstrings and Lean statements, read from the source text without Lean; `data/physlib/api-maps.json`: the content and references of each API map; `data/physlib/source.json`: the commit, the README's words on the project and the significant results scripts/lint/exemptions/Theorems.txt lists. From [leanprover-community/physlib at 2a1dfe43](https://github.com/leanprover-community/physlib/tree/2a1dfe43134b49b643642f13d33031754021bb5d), Apache-2.0.
+- `data/physlib/deps.json`: the modules whose declarations each module's statements and proofs use, and the names read from the source that Lean does not have, written by `lean/physlib/PhyslibDeps.lean` in GitHub Actions.
+
 ## Libraries
 
 ### Core library
@@ -80,7 +85,7 @@ Trough reads these sources. The catalog of libraries is `catalog/libraries.toml`
 ### Libraries
 
 - [Formal Conjectures](https://github.com/google-deepmind/formal-conjectures) at 5258ab9ac6db: Statements, mostly without proof, of open and solved problems, a file per problem in a folder per source: the Erdős problems, OEIS, Wikipedia, Green's open problems, Written on the Wall II, papers, arXiv, MathOverflow, books and smaller ones.
-- [Physlib](https://github.com/leanprover-community/physlib) at 3d3ec913681f: Physics (formerly HepLean/PhysLean): relativity, particles, QFT, quantum mechanics, classical mechanics, electromagnetism, condensed matter, plus quantum information (QuantumInfo lib).
+- [Physlib](https://github.com/leanprover-community/physlib) at 2a1dfe43134b: Physics in Lean (formerly PhysLean, and HepLean before that), merged with Lean-QuantumInfo: three libraries, the reviewed core Physlib (space and time, relativity, particles, QFT, quantum and classical mechanics, electromagnetism, condensed matter, cosmology and more), PhyslibAlpha under a lighter review, and QuantumInfo.
 - [CSLib](https://github.com/leanprover/cslib) at 86d560b6cbb3: The Lean Computer Science Library: computability (automata, machines, circuits, formal languages), operational semantics and transition systems, programming languages and calculi, logics, algorithms, cryptography and learning theory, documented in Mathlib's style.
 - [Foundation](https://github.com/FormalizedFormalLogic/Foundation) at c3eb37ae896d: Mathematical logic: first-order arithmetic and incompleteness (FirstOrder 177), provability logic (58), propositional and modal logic, second-order.
 - [Analysis I companion](https://github.com/teorth/analysis) at a19a5bfadc61: Lean companion to Tao's Analysis I textbook (section-by-section exercises), plus measure theory.
