@@ -21,3 +21,8 @@ reason = "a GitHub fork of TauCetiProject/TauCeti"
 url = "https://github.com/vasnesterov/cslib"
 chapter = "cslib"
 reason = "a GitHub fork of leanprover/cslib"
+
+[[package]]
+url = "https://github.com/AxiomMath/PrimeNumberTheoremAnd"
+chapter = "pnt-plus"
+reason = "a repository with the Lake package name and library root of AlexKontorovich/PrimeNumberTheoremAnd"
