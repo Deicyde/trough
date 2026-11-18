@@ -6,8 +6,8 @@ too. tools/refresh_library.py reads a checkout at a pinned commit into data/batt
 trough.library reads any library: each module's title, docstrings, the authors its header names and its declarations,
 with the README's description. lean/library/LibraryDeps.lean then reads, with Lean, the modules each module's
 statements and proofs use, and which of the names read from the source are public. A module that declares nothing
-public by name, such as one that only adds syntax, an elaborator or a linter, is listed on its folder's page rather
-than given an article. trough.library builds the chapter; this module holds what is Batteries' own: its README's
+public by name, such as one that only imports others, a deprecated module or one that only adds syntax, is listed on
+its folder's page rather than given an article. trough.library builds the chapter; this module holds what is Batteries' own: its README's
 description and the chapter's intro.
 """
 
@@ -75,8 +75,9 @@ def intro(data: dict, stats: Counter) -> str:
             (theorems, "theorem", None), (definitions, "definition", None),
             (others, "instance or alias", "instances and aliases")) if count])
         + f", {stats['documented']:,} of them with a docstring."
-        + (f" The other {plural(stats['empty'], 'module')}, which add syntax, elaborators, linters and other tools "
-           "without a public declaration, are listed on their folders' pages." if stats["empty"] else ""),
+        + (f" The other {plural(stats['empty'], 'module')} declare nothing public by name, such as a module that only "
+           "imports others, a deprecated module whose code has moved, or one that adds syntax or an elaborator; they "
+           "are listed on their folders' pages." if stats["empty"] else ""),
         "An article is titled by its module docstring, or by its file name when the docstring has no title; where "
         "modules share a title, each adds the shortest end of its path that tells them apart. It gives the module's "
         "authors as its header names them, its docstrings, and a block per public declaration in file order with its "

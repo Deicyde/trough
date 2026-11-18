@@ -254,8 +254,9 @@ def test_the_front_page_quotes_the_readme_and_gives_the_counts(tmp_path):
     assert "Mathlib requires it, so every project built on Mathlib builds on it too." in root
     assert ("It has an article for each of the 2 modules under `Batteries/` that declare something public by name, in "
             "a part per folder of `Batteries/` and a page per folder below. They hold 3 public declarations, 1 theorem "
-            "and 2 definitions, 2 of them with a docstring. The other 3 modules, which add syntax, elaborators, linters "
-            "and other tools without a public declaration, are listed on their folders' pages.") in root
+            "and 2 definitions, 2 of them with a docstring. The other 3 modules declare nothing public by name, such "
+            "as a module that only imports others, a deprecated module whose code has moved, or one that adds syntax or "
+            "an elaborator; they are listed on their folders' pages.") in root
     assert "Lean marks 1 of them as private to their modules" in root
     # No Mathlib commit: Batteries needs none.
     assert "Mathlib" not in root.split("builds on it too.")[1]

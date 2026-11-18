@@ -681,13 +681,13 @@ is built as CSLib's is, by `tools/trough/library.py`, with
 `tools/trough/batteries.py` holding what is Batteries' own, its README's
 description and the chapter's intro: an article per module under `Batteries/`
 that declares something public by name, in a part per folder of `Batteries/`
-(Classes, CodeAction, Control, Data, Lean, Linter, Recycling, Tactic, Util) and
-a page per folder below. Tactic, linter and other meta modules are mapped like
-any others; a module that declares nothing public by name, such as one that
-only adds syntax or an elaborator, is listed on its folder's page instead of
-having an article, and a folder left without an article lists its modules on
-the page above. Docstrings go through the filter the CSLib and Physlib chapters
-use.
+(Data, Lean, Tactic, Util and smaller ones) and a page per folder below.
+Tactic, linter and other meta modules are mapped like any others; a module
+that declares nothing public by name, such as one that only imports others, a
+deprecated module or one that only adds syntax, is listed on its folder's page
+instead of having an article, and a folder left without an article lists its
+modules on the page above. Docstrings go through the filter the CSLib and
+Physlib chapters use.
 
 1. `tools/refresh_library.py batteries CHECKOUT` reads a checkout and writes
    `data/batteries/source.json`, the commit, its date and toolchain, and
