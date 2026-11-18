@@ -66,7 +66,7 @@ navigation: transparent
 - [Least $m$ such that $m + n$ divides $\mathrm{prime}(m) + \mathrm{prime}(n)$](../../../../oeis/part-15/least-m-such-that-m-n-divides-prime-m-prime-n.md)
 - [Least $m > 0$ coprime to $n$ such that $mn \mid C(m+n)$](../../../../oeis/part-15/least-m-0-coprime-to-n-such-that-mn-mid-c-m-n.md)
 - [Smallest prime factors of $2^{2^n+2} + 3$](../../../../oeis/part-15/smallest-prime-factors-of-2-2-n-2-3.md)
-- [Smallest $m \in \[1, n\]$ such that $\binom{n}{m}$ is evil](../../../../oeis/part-15/smallest-m-in-1-n-such-that-binom-n-m-is-evil.md)
+- [Smallest $m \in [1, n]$ such that $\binom{n}{m}$ is evil](../../../../oeis/part-15/smallest-m-in-1-n-such-that-binom-n-m-is-evil.md)
 - [Odd part of the digital sum of $3^n$ divided by the maximal power of $3$](../../../../oeis/part-15/odd-part-of-the-digital-sum-of-3-n-divided-by-th.md)
 - [Floor of $n^2$ divided by the sum of products of consecutive divisors of $n$](../../../../oeis/part-15/floor-of-n-2-divided-by-the-sum-of-products-of-c.md)
 - [Representations of $n$ as the sum of two pentagonal and a generalized decagonal number](../../../../oeis/part-15/representations-of-n-as-the-sum-of-two-pentagona.md)

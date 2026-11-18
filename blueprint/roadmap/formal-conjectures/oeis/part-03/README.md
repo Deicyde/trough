@@ -17,7 +17,7 @@ navigation: transparent
 - [Catalan-Larcombe-French sequence](catalan-larcombe-french-sequence.md)
 - [Least $m$ such that $\phi(m) = n!$](least-m-such-that-phi-m-n.md)
 - [Divisibility of $2^n + 1$ by $n$](divisibility-of-2-n-1-by-n.md)
-- [Numerator of $1/\det(M)$ for $M\[i,j\] = 1/\operatorname{lcm}(i,j)$](numerator-of-1-det-m-for-m-i-j-1-lcm-i-j.md)
+- [Numerator of $1/\det(M)$ for $M[i,j] = 1/\operatorname{lcm}(i,j)$](numerator-of-1-det-m-for-m-i-j-1-lcm-i-j.md)
 - [Number of different products of subsets of $\{1, 2, \dots, n\}$](number-of-different-products-of-subsets-of-1-2-d.md)
 - [Reversible multiples $a(3^n) = 10^{3^{n-2}} - 1$ for powers of $3$](reversible-multiples-a-3-n-10-3-n-2-1-for-powers.md)
 - [Conjectures associated with A063880](conjectures-associated-with-a063880.md)

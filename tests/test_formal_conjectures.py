@@ -225,6 +225,21 @@ def test_a_quote_puts_each_display_formula_in_a_block_of_its_own():
     assert fc.quote("then$$x&#60; 1,$$where") == "> then\n>\n> $$x< 1,$$\n>\n> where"
 
 
+def test_a_docstrings_formulas_lose_their_markdown_escapes_as_on_github():
+    # The site reads a formula raw, so it gets the escapes GitHub's Markdown undoes before the formula.
+    assert fc.docstring("with $M\\[i,j\\] = 1$") == "> with $M[i,j] = 1$"
+    assert fc.docstring("a word $w \\in \\Sigma^\\*$, *really*") == "> a word $w \\in \\Sigma^*$, *really*"
+    assert fc.docstring("$p_n\\\\# + m$ and $$a \\\\[2pt] b$$") == "> $p_n\\# + m$ and\n>\n> $$a \\\\[2pt] b$$"
+    # Outside a formula, and in code, the text is as typed.
+    assert fc.docstring("\\[x\\] and `$\\*$`") == "> \\[x\\] and `$\\*$`"
+
+
+def test_a_docstring_drops_control_characters_but_tab_and_newline():
+    # 814.lean has a backspace where `\binom` lost its `\b`; MathJax fails on the page for it.
+    assert fc.docstring("at least $(k-1)+\x08inom{k-2}{2}$\tedges\r\nand more") == (
+        "> at least $(k-1)+inom{k-2}{2}$\tedges\n> and more")
+
+
 def test_status_lines_follow_category_proof_links_and_sorry():
     def line(category, sorry, proofs=(), kind="theorem"):
         return fc.status({"category": category, "sorry": sorry, "formal_proofs": list(proofs), "kind": kind})
