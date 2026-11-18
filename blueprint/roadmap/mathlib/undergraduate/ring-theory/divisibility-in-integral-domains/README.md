@@ -6,7 +6,7 @@
 - [Unique factorisation domain (UFD)](../../../overview/general-algebra/divisibility-in-integral-domains/unique-factorisation-domain.md)
 - [Greatest common divisor](../../../overview/general-algebra/divisibility-in-integral-domains/greatest-common-divisor.md)
 - [Least common multiple](../../../overview/general-algebra/divisibility-in-integral-domains/least-common-multiple.md)
-- [$A\[{X_i}\]$ is a UFD when $A$ is a UFD](../../../overview/general-algebra/polynomials-and-power-series/a-x-i-is-a-ufd-when-a-is-a-ufd.md)
+- [$A[{X_i}]$ is a UFD when $A$ is a UFD](../../../overview/general-algebra/polynomials-and-power-series/a-x-i-is-a-ufd-when-a-is-a-ufd.md)
 - [Principal ideal domain](../../../overview/general-algebra/divisibility-in-integral-domains/principal-ideal-domain.md)
 - [Euclidean rings](../../../overview/general-algebra/divisibility-in-integral-domains/euclidean-domain.md)
 - [Euclid's' algorithm](../../../overview/general-algebra/divisibility-in-integral-domains/euclids-algorithm.md)

@@ -112,7 +112,7 @@ unique factorisation.
 
 - [Field of fractions of an integral domain](../field-theory/field-of-fractions-of-an-integral-domain.md)
 - [Greatest common divisor](../divisibility-in-integral-domains/greatest-common-divisor.md)
-- [$K\[X\]$ is Euclidean](k-x-is-euclidean.md)
+- [$K[X]$ is Euclidean](k-x-is-euclidean.md)
 
 ## Sources
 
