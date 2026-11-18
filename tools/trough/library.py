@@ -17,8 +17,11 @@ no new reading of the library, and its tests and the data check one another.
 from __future__ import annotations
 
 import json
+import os
 import posixpath
 import re
+import subprocess
+import sys
 from collections import Counter
 from collections.abc import Callable
 from dataclasses import dataclass
@@ -77,6 +80,9 @@ class Library:
     quotes: str = "The docstrings, Lean statements and README text"
     # The folders whose docstrings keep their TODO notes, as they describe a TODO command.
     todo_exempt: tuple[str, ...] = ()
+    # Whether a module that declares nothing public by name is listed on its folder's page rather than given an
+    # article; a folder left with no article has no page, and its modules are listed on the page above.
+    list_empty: bool = False
 
     def notes(self, file: str) -> bool:
         """Whether the filter cuts the TODO notes of the module at *file*: not in the folders the library exempts."""
@@ -215,6 +221,45 @@ def checked_out(checkout: Path, wanted: list[str]) -> str:
     if not missing:
         return ""
     return f"not checked out: {missing[0]}" + (f" and {len(missing) - 1:,} other files" if len(missing) > 1 else "")
+
+
+def git(checkout: Path, *args: str) -> str:
+    return subprocess.run(["git", "-C", str(checkout), *args], check=True, capture_output=True, text=True,
+                          env={**os.environ, "TZ": "UTC"}).stdout.strip()
+
+
+def refresh(library: Library, checkout: Path, out: Path) -> list[str]:
+    """Write source.json and library.json under *out* from a checkout of the library at the commit to pin, or neither
+    when there is a problem: a license that is not Apache-2.0, a file not checked out, a module whose scopes don't
+    close, or a reading of under half the declarations the last record has. Return the problems."""
+    rev = git(checkout, "rev-parse", "HEAD")
+    paths = git(checkout, "ls-tree", "-r", "--name-only", "HEAD").splitlines()
+    record, problems = read(library, checkout, paths)
+    previous = out / "library.json"
+    last = json.loads(previous.read_text(encoding="utf-8")) if previous.is_file() else None
+    if record and last:
+        now, before = counts(record["modules"])["declarations"], counts(last["modules"])["declarations"]
+        if now * 2 < before:
+            problems.append(f"reads {now} declarations, under half the {before} the last record read")
+    if problems:
+        return problems
+    manifest = json.loads((checkout / "lake-manifest.json").read_text(encoding="utf-8"))
+    mathlib = next((package.get("rev", "") for package in manifest.get("packages", []) if package.get("name") == "mathlib"), "")
+    source = {"repo": library.repo, "rev": rev,
+              # In UTC, as git versions print %cI differently.
+              "date": git(checkout, "log", "-1", "--date=format-local:%Y-%m-%dT%H:%M:%SZ", "--format=%cd", "HEAD"),
+              "toolchain": (checkout / "lean-toolchain").read_text(encoding="utf-8").strip().split(":")[-1],
+              "mathlib": mathlib, "license": "Apache-2.0"}
+    record = {"schema": record.pop("schema"), "rev": rev, **record}
+    out.mkdir(parents=True, exist_ok=True)
+    (out / "source.json").write_text(json.dumps(source, indent=1, ensure_ascii=False) + "\n", encoding="utf-8")
+    previous.write_text(json.dumps(record, indent=1, ensure_ascii=False) + "\n", encoding="utf-8")
+    tally = counts(record["modules"])
+    print(f"{library.repo} {rev[:8]}: {len(record['modules'])} modules, {tally['declarations']} declarations read "
+          f"({tally['documented']} documented, {tally['sorry']} holding sorry), "
+          f"{sum(1 for module in record['modules'] if module['title'])} modules titled by their docstrings, "
+          f"{len(record['folders'])} folder READMEs", file=sys.stderr)
+    return []
 
 
 def counts(modules: list[dict]) -> Counter:
@@ -391,26 +436,44 @@ def chapter(library: Library, data: dict) -> tuple[Built, dict[str, str]]:
         stats["unresolved"] += sum(item.get("name") in missing for item in module["items"])
         modules.append({**module, "items": [item for item in module["items"]
                                             if item.get("name") not in private | missing or "name" not in item]})
-    named = titles(modules)
-    keys = {module["file"]: f"{library.id}-{module['module']}" for module in modules}  # each article's key, by file
+    # The modules with an article, and those listed instead.
+    shown = [module for module in modules if declarations(module) or not library.list_empty]
+    named = titles(shown)
+    keys = {module["file"]: f"{library.id}-{module['module']}" for module in shown}  # each article's key, by file
     targets: dict[str, Leaf | Container] = {}
     links: dict[str, str] = {}
     leaves: dict[str, Leaf] = {}
 
-    def build(name: str, node: dict, path: str, part: bool) -> Container:
-        entries = []
+    def unshown(module: dict) -> bool:
+        return library.list_empty and not declarations(module)
+
+    def listed_line(listed: list[dict]) -> str:
+        """The line naming the modules a page lists, which declare nothing public by name."""
+        names = listing([f"[`{module['module']}`]({blob(library, rev, module['file'])})" for module in listed])
+        return (f"{'This module declares' if len(listed) == 1 else 'These modules declare'} nothing public by name, "
+                f"so {'it has' if len(listed) == 1 else 'they have'} no article: {names}.")
+
+    def build(name: str, node: dict, path: str, part: bool) -> tuple[Container | None, list[dict]]:
+        """The folder's page, or None when it would hold no article, with the modules a page above must list."""
+        entries, listed = [], []
         # By name, as the root module imports them, a module before the folder of the same name.
         children = sorted([(stem(module), 0, module) for module in node["modules"]]
                           + [(folder, 1, child) for folder, child in node["folders"].items()], key=lambda row: row[:2])
         for child_name, is_folder, child in children:
             if is_folder:
-                entries.append(Entry(build(child_name, child, f"{path}/{child_name}", False)))
+                page, below = build(child_name, child, f"{path}/{child_name}", False)
+                entries += [Entry(page)] if page else []
+                listed += below
+            elif unshown(child):
+                listed.append(child)
             else:
                 leaf = article(library, child, named[child["module"]], rev, links, keys)
                 leaves[child["module"]] = leaf
                 targets[f"{library.id}-{child['module']}"] = leaf
                 stats["articles"] += 1
                 entries.append(Entry(leaf))
+        if not entries:
+            return None, listed
         container = Container(escape(name), slugify(name), entries)
         inside = every(node)
         tally = counts(inside)
@@ -418,6 +481,9 @@ def chapter(library: Library, data: dict) -> tuple[Built, dict[str, str]]:
                 ", none of which declares anything public by name." if len(inside) > 1 else
                 ", which declares nothing public by name.")
         lines = [f"{plural(len(inside), 'module')} under `{path}/`{held}"]
+        if listed:
+            lines.append(listed_line(listed))
+            stats["listed"] += len(listed)
         if path in data["folders"]:
             lines.append(f"Its [README]({blob(library, rev, path + '/README.md')}) opens:\n\n{quote(pinned(library, data['folders'][path], rev))}")
         if part:
@@ -425,12 +491,19 @@ def chapter(library: Library, data: dict) -> tuple[Built, dict[str, str]]:
         container.prose = "\n\n".join(lines)
         targets[f"{library.id}-{path}"] = container
         stats["folders"] += 1
-        return chunk(container, budget=library.page_budget)
+        return chunk(container, budget=library.page_budget), []
 
     top = tree(modules)
-    parts = [Entry(build(name, child, f"{library.root}/{name}", True)) for name, child in sorted(top["folders"].items())]
+    parts, listed = [], []
+    for name, child in sorted(top["folders"].items()):
+        page, below = build(name, child, f"{library.root}/{name}", True)
+        parts += [Entry(page)] if page else []
+        listed += below
     stats["parts"] = len(parts)
     for module in top["modules"]:
+        if unshown(module):
+            listed.append(module)
+            continue
         leaf = article(library, module, named[module["module"]], rev, links, keys)
         leaves[module["module"]] = leaf
         targets[f"{library.id}-{module['module']}"] = leaf
@@ -439,8 +512,10 @@ def chapter(library: Library, data: dict) -> tuple[Built, dict[str, str]]:
     edges(library, data, leaves, stats)
     stats.update(counts(modules))
     stats["empty"] = sum(1 for module in modules if not declarations(module))
+    if listed:
+        stats["listed"] += len(listed)
     root = Container(library.title, library.id, parts)
-    root.prose = library.intro(data, stats)
+    root.prose = library.intro(data, stats) + (f"\n\n{listed_line(listed)}" if listed else "")
     return Built(root, targets, {}, dict(stats), Counter()), dict(sorted(links.items()))
 
 

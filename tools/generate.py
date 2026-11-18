@@ -26,7 +26,7 @@ from pathlib import Path
 
 from collections import Counter
 
-from trough import anthropic_flt, atlas, blueprints, catalog, cfsg, cslib, ff, formal_conjectures, lean_pool, links, mathlib, openai_math, physlib, stacks, tauceti, wiki
+from trough import anthropic_flt, atlas, batteries, blueprints, catalog, cfsg, cslib, ff, formal_conjectures, lean_pool, links, mathlib, openai_math, physlib, stacks, tauceti, wiki
 from trough.vault import Leaf, assign_paths, render_tree, walk
 
 ROOT = Path(__file__).resolve().parent.parent
@@ -286,6 +286,25 @@ def generate() -> dict[Path, str]:
             f"{cs['statement_edges']} statement and {cs['proof_edges']} proof edges",
             file=sys.stderr,
         )
+    batteries_data = batteries.load(DATA)
+    if batteries_data:
+        batteries_built, batteries_links = batteries.chapter(batteries_data)
+        assign_paths(batteries_built.root, ROADMAP / "batteries")
+        blueprints.resolve(batteries_built, VAULT)
+        files.update(render_tree(batteries_built.root, VAULT))
+        chapters["batteries"] = "batteries/README.md"
+        lean_links["batteries"] = batteries_links
+        bt = Counter(batteries_built.stats)
+        blueprint_rows.append(("Batteries", "INVENTORIED",
+                               f"[{bt['articles']:,} modules](../roadmap/batteries/README.md), one article each, with a "
+                               f"block per public declaration; {bt['listed']:,} modules that declare nothing public by "
+                               "name are listed on their folders' pages."))
+        print(
+            f"batteries: {bt['articles']} module articles in {bt['folders']} folders and {bt['parts']} parts, "
+            f"{bt['listed']} modules listed; {bt['declarations']} public declarations, {bt['documented']} documented, "
+            f"{bt['sorry']} holding sorry; {bt['statement_edges']} statement and {bt['proof_edges']} proof edges",
+            file=sys.stderr,
+        )
     physlib_data = physlib.load(DATA)
     if physlib_data:
         physlib_built, physlib_links = physlib.chapter(physlib_data, tau_root)
@@ -336,6 +355,7 @@ def generate() -> dict[Path, str]:
         atlas=atlas_data["source"]["rev"] if atlas_data else None,
         openai_math=oai_data["source"]["rev"] if oai_data else None,
         cslib=cslib_data["rev"] if cslib_data else None,
+        batteries=batteries_data["rev"] if batteries_data else None,
         physlib=physlib_data["source"]["rev"] if physlib_data else None,
     )
     print(
