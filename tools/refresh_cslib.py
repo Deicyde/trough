@@ -7,7 +7,7 @@ CHECKOUT is a git checkout of leanprover/cslib at the commit to pin. A sparse
 checkout is enough: the .lean and README.md files under Cslib/, with README.md,
 GOVERNANCE.md, LICENSE, lean-toolchain and lake-manifest.json. This writes
 data/cslib/source.json, the commit, its date, toolchain and Mathlib, and
-library.json: each module's title, module docstring and later `/-!` notes, the
+library.json: each module's title, module docstring and later `/-!` notes as written, the
 authors its header names, and its public declarations as trough.leansource
 reads them without Lean, each with its kind, line, docstring and statement; the
 area READMEs without their plans; the README's description; and the

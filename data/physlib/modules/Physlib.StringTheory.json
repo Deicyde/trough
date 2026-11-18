@@ -1,0 +1,3148 @@
+{
+ "schema": "trough-physlib/v1",
+ "rev": "2a1dfe43134b49b643642f13d33031754021bb5d",
+ "modules": [
+  {
+   "file": "Physlib/StringTheory/Basic.lean",
+   "module": "Physlib.StringTheory.Basic",
+   "title": "String Theory",
+   "doc": "This directory is currently a place holder.\nPlease feel free to contribute!\n\nSome directories which are NOT currently place holders are:\n- Mathematics\n- Meta\n- Particles\n- QFT\n- Quantum Mechanics\n- Relativity",
+   "copyright": "2025 Joseph Tooby-Smith",
+   "sections": [],
+   "declarations": [],
+   "private": 0,
+   "aliases": 0,
+   "informal": 0
+  },
+  {
+   "file": "Physlib/StringTheory/FTheory/SU5/Basic.lean",
+   "module": "Physlib.StringTheory.FTheory.SU5.Basic",
+   "title": "F-theory with a SU(5) gauge group",
+   "doc": "This module contains the details of F-theory with a SU(5) gauge group, with possible\nadditional charges. This should be compared to the directory:\n\n- `Physlib.Particles.SuperSymmetry.SU5`\n\nwhich contains the details of the SUSY SU(5) gauge group not in F-theory. Many of the\nresults here use results from that directory.\n\n## Data structures\n\nThe main data structures part of this theory are:\n- `PotentialTerm`: An inductive type containing the terms in the super and\n  Kahler potential of the theory. This can be found in\n  `Physlib.Particles.SuperSymmetry.SU5.Potential`, as not specific to F-theory.\n- `Fluxes`: Contains the fluxes associated with each representation present in the theory.\n- `Charges`: Contains the charges associated with each representation present in the theory.\n  This can be found in `Physlib.Particles.SuperSymmetry.SU5.Potential`, as not specific to\n  F-theory.\n- `Quanta`: Contains the fluxes and charges of each representation present in the theory.\n\n## Propositions\n\nThere are a number of important propositions in the theory.\n- `Charges.AllowsTerm`: For a given potential term, determines whether an element of `Charges`\n  allows that term.\n- `Charges.IsPhenoConstrained`: Is true when the charges permit a term that is phenomenologically\n  constrained, such as the four-dimension proton decay coupling.\n- `Fluxes.NoExotics`: Is true when the fluxes lead to no exotic particles.\n- `Quanta.IsViable`: Is true when the quanta is phenomenologically viable, meaning it satisfies\n  a number of conditions, such as anomaly cancellation, no exotic particles, and allowing the top\n  Yukawa coupling.\n\nThe charges are additionally constrained by the configuration `CodimensionOneConfig`,\nof the zero-section (`σ₀`) and the additional rational section (`σ₁`).\nThis is detailed in the paper `arxiv:1504.05593` [ref: lawrie_schafer_nameki_wong_2015]. In\nimplemented here using\n- `Charges.ofFinset S5 S10`: which gives the finite set of charges where the 5-bar charges\n  must live in the set `S5` and the 10-bar charges must live in the set `S10`.\n\n## Important results\n\n- `isViable_iff_mem_viableElems`: Enumerates all the viable `Quanta` for a given\n  `CodimensionOneConfig`.\n\n## References\n\n* Froggatt-Nielsen meets Mordell-Weil: A Phenomenological Survey of Global F-theory GUTs\n  with U(1)s (arxiv:1507.05961). [ref: arxiv_1507_05961]",
+   "copyright": "2025 Joseph Tooby-Smith",
+   "sections": [],
+   "declarations": [],
+   "private": 0,
+   "aliases": 0,
+   "informal": 0
+  },
+  {
+   "file": "Physlib/StringTheory/FTheory/SU5/Charges/AnomalyFree.lean",
+   "module": "Physlib.StringTheory.FTheory.SU5.Charges.AnomalyFree",
+   "title": "Anomaly cancellation",
+   "doc": "## i. Overview\n\nIn this module we do two things. The first is to define a proposition `IsAnomalyFree`\non a `ChargeSpectrum` which states that the charge spectrum can be lifted\nto an anomaly-free `Quanta` with fluxes which do not have exotics.\n\nWe then find all the viable charges given a configuration of the sections in codimension one\nfiber `CodimensionOneConfig` that can be lifted to an anomaly-free `Quanta` with fluxes\nwhich do not have exotics.\n\n## ii. Key results\n\n- `IsAnomalyFree` : The proposition on a `ChargeSpectrum` that it can be lifted to an\n  anomaly-free `Quanta` with fluxes which do not have exotics.\n- `viable_anomalyFree` : The viable charges given a configuration of the sections\n  in codimension one fiber `CodimensionOneConfig` which can be lifted to an anomaly-free\n  `Quanta` with fluxes which do not have exotics.\n\n## iii. Table of contents\n\n- A. Charge spectrum which lift to anomaly free quanta\n  - A.1. Decidability of the proposition\n  - A.2. The proposition is preserved under mappings of charge spectra\n- B. The viable charges which lift to anomaly free quanta\n\n## iv. References\n\n* None.",
+   "copyright": "2025 Joseph Tooby-Smith",
+   "sections": [
+    {
+     "line": 57,
+     "text": "## A. Charge spectrum which lift to anomaly free quanta"
+    },
+    {
+     "line": 69,
+     "text": "### A.1. Decidability of the proposition"
+    },
+    {
+     "line": 78,
+     "text": "### A.2. The proposition is preserved under mappings of charge spectra"
+    },
+    {
+     "line": 104,
+     "text": "## B. The viable charges which lift to anomaly free quanta"
+    }
+   ],
+   "declarations": [
+    {
+     "name": "FTheory.SU5.ChargeSpectrum.IsAnomalyFree",
+     "kind": "def",
+     "line": 66,
+     "doc": "The condition on a collection of charges `c` that it extends to an anomaly free `Quanta`.\nThat anomaly free `Quanta` is not tracked by this proposition.",
+     "statement": "def IsAnomalyFree [DecidableEq 𝓩] [CommRing 𝓩] (c : ChargeSpectrum 𝓩) : Prop",
+     "sorry": false
+    },
+    {
+     "name": "",
+     "kind": "instance",
+     "line": 75,
+     "doc": "",
+     "statement": "instance [DecidableEq 𝓩] [CommRing 𝓩] {c : ChargeSpectrum 𝓩} : Decidable (IsAnomalyFree c)",
+     "sorry": false
+    },
+    {
+     "name": "FTheory.SU5.ChargeSpectrum.isAnomalyFree_map",
+     "kind": "lemma",
+     "line": 88,
+     "doc": "",
+     "statement": "lemma isAnomalyFree_map (f : 𝓩 →+* 𝓩1) {c : ChargeSpectrum 𝓩}\n    (h : IsAnomalyFree c) : IsAnomalyFree (c.map (f.toAddMonoidHom))",
+     "sorry": false
+    },
+    {
+     "name": "FTheory.SU5.ChargeSpectrum.viable_anomalyFree",
+     "kind": "lemma",
+     "line": 112,
+     "doc": "The viable charges which are anomaly free.",
+     "statement": "lemma viable_anomalyFree (I : CodimensionOneConfig) :\n    (viableCharges I).filter IsAnomalyFree =\n    (match I with\n    | .same => {⟨some 2, some (-2), {-3, -1}, {-1}⟩,\n      ⟨some 2, some (-2), {-1, 1}, {-1}⟩,\n      ⟨some (-2), some 2, {-1, 1}, {1}⟩,\n      ⟨some (-2), some 2, {1, 3}, {1}⟩}\n    | .nearestNeighbor => {⟨some (-4), some (-14), {6, 11}, {-7}⟩,\n      ⟨some 6, some (-14), {-9, 1}, {-7}⟩,\n      ⟨some 6, some (-14), {1, 11}, {-7}⟩,\n      ⟨some (-14), some 6, {1, 11}, {3}⟩}\n    | .nextToNearestNeighbor => {⟨some 2, some 12, {-13, -8}, {6}⟩})",
+     "sorry": false
+    }
+   ],
+   "private": 0,
+   "aliases": 0,
+   "informal": 0
+  },
+  {
+   "file": "Physlib/StringTheory/FTheory/SU5/Charges/OfRationalSection.lean",
+   "module": "Physlib.StringTheory.FTheory.SU5.Charges.OfRationalSection",
+   "title": "Allowed charges",
+   "doc": "## i. Overview\n\nWithin SU(5) F-theory with 10d and 5-bar matter fields there are constraints on the\nallowed U(1) charges the fields can have.\nThese constraints are determined in arXiv:1504.05593 [ref: lawrie_schafer_nameki_wong_2015].\nThey are related to the\ndistinct configurations of the zero-section (`σ₀`) relativity to the\nadditional rational section (`σ₁`s) in codimension one fiber.\nFor our purposes here, we currently just state the constraints found\nin arXiv:1504.05593 [ref: lawrie_schafer_nameki_wong_2015], and leave the proof and derivation\nof these constraints to future work.\n\n## ii. Key results\n\n- `CodimensionOneConfig` : The distinct configurations of the\n  zero-section (`σ₀`) relativity to the additional rational section (`σ₁`s) in\n  the codimension one fiber, `I₅`.\n- `CodimensionOneConfig.allowedBarFiveCharges` : The allowed\n  `U(1)`-charges of matter in the 5-bar representation of `SU(5)`\n  given a `CodimensionOneConfig`.\n- `CodimensionOneConfig.allowedTenCharges` : The allowed\n  `U(1)`-charges of matter in the 10d representation of `SU(5)`\n  given a `CodimensionOneConfig`.\n\n## iii. Table of contents\n\n- A. The distinct section configurations\n  - A.1. The finiteness of the set of configurations\n- B. The allowed charges given a configuration\n  - B.1. The allowed charges of the 5-bar matter\n  - B.2. The allowed charges of the 10d matter\n  - B.3. The finiteness of the allowed charges\n\n## iv. References\n\n* The main reference for the material in this section: Lawrie, Schafer-Nameki and Wong, F-theory\n  and All Things Rational: Surveying U(1) Symmetries with Rational Sections, page 6.\n  [ref: lawrie_schafer_nameki_wong_2015]\n* See also footnote 4 of 1507.05961. [ref: arxiv_1507_05961]",
+   "copyright": "2025 Joseph Tooby-Smith",
+   "sections": [
+    {
+     "line": 66,
+     "text": "## A. The distinct section configurations"
+    },
+    {
+     "line": 88,
+     "text": "### A.1. The finiteness of the set of configurations"
+    },
+    {
+     "line": 98,
+     "text": "## B. The allowed charges given a configuration"
+    },
+    {
+     "line": 104,
+     "text": "### B.1. The allowed charges of the 5-bar matter"
+    },
+    {
+     "line": 117,
+     "text": "### B.2. The allowed charges of the 10d matter"
+    },
+    {
+     "line": 130,
+     "text": "### B.3. The finiteness of the allowed charges"
+    }
+   ],
+   "declarations": [
+    {
+     "name": "FTheory.SU5.CodimensionOneConfig",
+     "kind": "inductive",
+     "line": 74,
+     "doc": "The distinct codimension one configurations of the\nzero-section (`σ₀`) relativity to the additional rational section (`σ₁`s).",
+     "statement": "inductive CodimensionOneConfig\n  /-- `σ₀` and `σ₁` intersect the same `ℙ¹` of the `I₅` Kodaira fiber.\n    This is sometimes denoted `I₅^{(01)}` -/\n  | same : CodimensionOneConfig\n  /-- `σ₀` and `σ₁` intersect the nearest neighbor `ℙ¹`s of the `I₅` Kodaira fiber.\n    This is sometimes denoted `I₅^{(0|1)}` -/\n  | nearestNeighbor : CodimensionOneConfig\n  /-- `σ₀` and `σ₁` intersect the next to nearest neighbor `ℙ¹`s of the `I₅` Kodaira fiber.\n    This is sometimes denoted `I₅^{(0||1)}` -/\n  | nextToNearestNeighbor : CodimensionOneConfig\nderiving DecidableEq",
+     "sorry": false
+    },
+    {
+     "name": "",
+     "kind": "instance",
+     "line": 94,
+     "doc": "",
+     "statement": "instance : Fintype CodimensionOneConfig",
+     "sorry": false
+    },
+    {
+     "name": "FTheory.SU5.CodimensionOneConfig.allowedBarFiveCharges",
+     "kind": "def",
+     "line": 112,
+     "doc": "The allowed `U(1)`-charges of matter in the 5-bar representation of `SU(5)`\ngiven a `CodimensionOneConfig`.",
+     "statement": "def allowedBarFiveCharges : CodimensionOneConfig → Finset ℤ",
+     "sorry": false
+    },
+    {
+     "name": "FTheory.SU5.CodimensionOneConfig.allowedTenCharges",
+     "kind": "def",
+     "line": 125,
+     "doc": "The allowed `U(1)`-charges of matter in the 10d representation of `SU(5)`\ngiven a `CodimensionOneConfig`.",
+     "statement": "def allowedTenCharges : CodimensionOneConfig → Finset ℤ",
+     "sorry": false
+    },
+    {
+     "name": "",
+     "kind": "instance",
+     "line": 136,
+     "doc": "",
+     "statement": "instance : (I : CodimensionOneConfig) → Fintype I.allowedBarFiveCharges",
+     "sorry": false
+    },
+    {
+     "name": "",
+     "kind": "instance",
+     "line": 141,
+     "doc": "",
+     "statement": "instance : (I : CodimensionOneConfig) → Fintype I.allowedTenCharges",
+     "sorry": false
+    }
+   ],
+   "private": 0,
+   "aliases": 0,
+   "informal": 1
+  },
+  {
+   "file": "Physlib/StringTheory/FTheory/SU5/Charges/Viable.lean",
+   "module": "Physlib.StringTheory.FTheory.SU5.Charges.Viable",
+   "title": "Charges which are not pheno-constrained and do not regenerate dangerous couplings with Yukawas",
+   "doc": "## i. Overview\n\nWARNING: This file can take a long time to compute.\n\nIn this module, given a configuration of the sections in codimension one\nfiber `CodimensionOneConfig`, we find the multiset of all\n`ℤ`-valued charges which have values allowed by the configuration,\npermit a top Yukawa coupling, are not phenomenologically constrained,\nand do not regenerate dangerous couplings with one insertion of a Yukawa coupling.\n\nThe multiset of charge spectrum is called `viableCharges`.\nThe main proof that `viableCharges` contains all such charges is\nusing `completeness_of_isPhenoClosedQ5_isPhenoClosedQ10`.\nNote this proof relies on us stating `viableCharges` and then verifying\nthat it has the required properties.\n\nTo make our lives easier, we first construct a multiset of charge spectrum called\n`viableCompletions` which contains all completions of charges which minimally allow the top Yukawa,\nwhich are not phenomenologically constrained, and do not regenerate dangerous couplings.\nAgain the proof that `viableCompletions` has these properties is done by\nfirst stating `viableCompletions` and then verifying that it has the required properties,\nprimarily using `ContainsPhenoCompletionsOfMinimallyAllows`.\n\nWe also define `viableChargesAdditional` which are the multiset of charge spectrum\nwhich are in `viableCharges` but not in `viableCompletions`. This helps split some of the\nproofs.\n\nNote that this file is slow to run, any improvements to the speed of this file\nwill be very welcome. In particular working out a way to restrict by anomaly cancellation.\n\n## ii. Key results\n\n- `viableCharges` contains all charges, for a given `CodimensionOneConfig`, `I`,\n  which permit a top Yukawa coupling, are not phenomenologically constrained,\n  and do not regenerate dangerous couplings with one insertion of a Yukawa coupling.\n- The lemma `mem_viableCharges_iff` expresses membership of `viableCharges I`, i.e.\n  that it contains all charges which permit a top Yukawa coupling,\n  are not phenomenologically constrained, and do not regenerate dangerous couplings.\n- The lemma `mem_viableCharges_iff` follows directly from\n  `completeness_of_isPhenoClosedQ5_isPhenoClosedQ10`\n  and a number of conditions on `viableCharges` which can be proved using the `decide`\n  tactic.\n- `viableCharges` itself is constructed via `viableCompletions` which\n  contains all completions of charges which minimally allow the top Yukawa,\n  which are not phenomenologically constrained, and do not regenerate dangerous couplings.\n\n## iii. Table of contents\n\n- A. Viable completions of charges permitting a top Yukawa coupling\n  - A.1. Stating the multiset `viableCompletions`\n  - A.2. Cardinality of `viableCompletions`\n  - A.3. No duplicates of `viableCompletions`\n  - A.4. Elements of `viableCompletions` are not pheno-constrained\n  - A.5. Elements of `viableCompletions` do not regenerate dangerous couplings\n  - A.6. `viableCompletions` contain all pheno-viable completions of top-yukawa permitting\n- B. The multiset of additional viable charges\n  - B.1. Stating the multiset `viableChargesAdditional`\n  - B.2. `viableChargesAdditional` has no duplicates\n  - B.3. Elements of `viableChargesAdditional` are not pheno-constrained\n  - B.4. Elements of `viableChargesAdditional` do not regenerate dangerous couplings\n  - B.5. `viableChargesAdditional` is disjoint from `viableCompletions`\n- C. The multiset of all viable charges given a configuration of sections\n  - C.1. Stating the multiset `viableCharges`\n  - C.2. `viableCharges` has no duplicates\n  - C.3. Cardinality of `viableCharges`\n  - C.4. Elements of `viableCharges` have charges allowed by configuration\n  - C.5. Elements of `viableCharges` are complete\n  - C.6. Elements of `viableCharges` permit a top Yukawa coupling\n  - C.7. Elements of `viableCharges` are not pheno-constrained\n  - C.8. Elements of `viableCharges` do not regenerate dangerous couplings\n  - C.9. Elements of `viableCharges` have at most two 5-bar reps\n  - C.10. Elements of `viableCharges` have at most two 10d reps\n  - C.11. `viableCharges` is phenomenologically closed under adding 5-bar charges\n  - C.12. `viableCharges` is phenomenologically closed under adding 10d charges\n  - C.13. `viableCompletions` is a subset of `viableCharges`\n  - C.14. `viableCharges` contains all pheno-viable charges given a section configuration\n\n## iv. References\n\n* None.",
+   "copyright": "2025 Joseph Tooby-Smith",
+   "sections": [
+    {
+     "line": 108,
+     "text": "## A. Viable completions of charges permitting a top Yukawa coupling"
+    },
+    {
+     "line": 114,
+     "text": "### A.1. Stating the multiset `viableCompletions`"
+    },
+    {
+     "line": 230,
+     "text": "### A.2. Cardinality of `viableCompletions`"
+    },
+    {
+     "line": 241,
+     "text": "### A.3. No duplicates of `viableCompletions`"
+    },
+    {
+     "line": 251,
+     "text": "### A.4. Elements of `viableCompletions` are not pheno-constrained"
+    },
+    {
+     "line": 261,
+     "text": "### A.5. Elements of `viableCompletions` do not regenerate dangerous couplings"
+    },
+    {
+     "line": 271,
+     "text": "### A.6. `viableCompletions` contain all pheno-viable completions of top-yukawa permitting"
+    },
+    {
+     "line": 283,
+     "text": "## B. The multiset of additional viable charges"
+    },
+    {
+     "line": 289,
+     "text": "### B.1. Stating the multiset `viableChargesAdditional`"
+    },
+    {
+     "line": 344,
+     "text": "### B.2. `viableChargesAdditional` has no duplicates"
+    },
+    {
+     "line": 354,
+     "text": "### B.3. Elements of `viableChargesAdditional` are not pheno-constrained"
+    },
+    {
+     "line": 364,
+     "text": "### B.4. Elements of `viableChargesAdditional` do not regenerate dangerous couplings"
+    },
+    {
+     "line": 375,
+     "text": "### B.5. `viableChargesAdditional` is disjoint from `viableCompletions`"
+    },
+    {
+     "line": 387,
+     "text": "## C. The multiset of all viable charges given a configuration of sections"
+    },
+    {
+     "line": 393,
+     "text": "### C.1. Stating the multiset `viableCharges`"
+    },
+    {
+     "line": 408,
+     "text": "### C.2. `viableCharges` has no duplicates"
+    },
+    {
+     "line": 418,
+     "text": "### C.3. Cardinality of `viableCharges`"
+    },
+    {
+     "line": 430,
+     "text": "### C.4. Elements of `viableCharges` have charges allowed by configuration"
+    },
+    {
+     "line": 442,
+     "text": "### C.5. Elements of `viableCharges` are complete"
+    },
+    {
+     "line": 451,
+     "text": "### C.6. Elements of `viableCharges` permit a top Yukawa coupling"
+    },
+    {
+     "line": 461,
+     "text": "### C.7. Elements of `viableCharges` are not pheno-constrained"
+    },
+    {
+     "line": 474,
+     "text": "### C.8. Elements of `viableCharges` do not regenerate dangerous couplings"
+    },
+    {
+     "line": 488,
+     "text": "### C.9. Elements of `viableCharges` have at most two 5-bar reps"
+    },
+    {
+     "line": 498,
+     "text": "### C.10. Elements of `viableCharges` have at most two 10d reps"
+    },
+    {
+     "line": 508,
+     "text": "### C.11. `viableCharges` is phenomenologically closed under adding 5-bar charges\n\nWe now show that adding a Q5 or a Q10 charge to an element of `viableCharges I` leads to a\ncharge which is either not phenomenologically constrained, or does not regenerate dangerous\ncouplings, or is already in `viableCharges I`."
+    },
+    {
+     "line": 528,
+     "text": "### C.12. `viableCharges` is phenomenologically closed under adding 10d charges"
+    },
+    {
+     "line": 544,
+     "text": "### C.13. `viableCompletions` is a subset of `viableCharges`"
+    },
+    {
+     "line": 556,
+     "text": "### C.14. `viableCharges` contains all pheno-viable charges given a section configuration"
+    }
+   ],
+   "declarations": [
+    {
+     "name": "FTheory.SU5.ChargeSpectrum.viableCompletions",
+     "kind": "def",
+     "line": 128,
+     "doc": "The multiset of charges which are completions of charges which minimally allow the top Yukawa,\n  which are not phenomenologically constrained, and do not regenerate dangerous couplings.\n\nThis can be constructed via\n\n`#eval completeMinSubset same.allowedBarFiveCharges same.allowedTenCharges`",
+     "statement": "def viableCompletions (I : CodimensionOneConfig) : Multiset (ChargeSpectrum ℤ)",
+     "sorry": false
+    },
+    {
+     "name": "FTheory.SU5.ChargeSpectrum.viableCompletions_card",
+     "kind": "lemma",
+     "line": 236,
+     "doc": "",
+     "statement": "lemma viableCompletions_card (I : CodimensionOneConfig) :\n    (viableCompletions I).card = if I = same then 70 else\n      if I = nearestNeighbor then 48 else 37",
+     "sorry": false
+    },
+    {
+     "name": "FTheory.SU5.ChargeSpectrum.viableCompletions_nodup",
+     "kind": "lemma",
+     "line": 247,
+     "doc": "",
+     "statement": "lemma viableCompletions_nodup (I : CodimensionOneConfig) :\n    (viableCompletions I).Nodup",
+     "sorry": false
+    },
+    {
+     "name": "FTheory.SU5.ChargeSpectrum.viableCompletions_isPhenoConstrained",
+     "kind": "lemma",
+     "line": 257,
+     "doc": "",
+     "statement": "lemma viableCompletions_isPhenoConstrained (I : CodimensionOneConfig) :\n    ∀ x ∈ viableCompletions I, ¬ IsPhenoConstrained x",
+     "sorry": false
+    },
+    {
+     "name": "FTheory.SU5.ChargeSpectrum.viableCompletions_yukawaGeneratesDangerousAtLevel_one",
+     "kind": "lemma",
+     "line": 267,
+     "doc": "",
+     "statement": "lemma viableCompletions_yukawaGeneratesDangerousAtLevel_one (I : CodimensionOneConfig) :\n    ∀ x ∈ viableCompletions I, ¬ YukawaGeneratesDangerousAtLevel x 1",
+     "sorry": false
+    },
+    {
+     "name": "FTheory.SU5.ChargeSpectrum.containsPhenoCompletionsOfMinimallyAllows_viableCompletions",
+     "kind": "lemma",
+     "line": 277,
+     "doc": "",
+     "statement": "lemma containsPhenoCompletionsOfMinimallyAllows_viableCompletions :\n    (I : CodimensionOneConfig) →\n    ContainsPhenoCompletionsOfMinimallyAllows I.allowedBarFiveCharges\n      I.allowedTenCharges (viableCompletions I)",
+     "sorry": false
+    },
+    {
+     "name": "FTheory.SU5.ChargeSpectrum.viableChargesAdditional",
+     "kind": "def",
+     "line": 304,
+     "doc": "The charges in addition to `viableCompletions` which which permit a top Yukawa coupling,\nare not phenomenologically constrained,\nand do not regenerate dangerous couplings with one insertion of a Yukawa coupling.\n\nThese can be found with e.g.\n- #eval (viableChargesMultiset same.allowedBarFiveCharges same.allowedTenCharges).toFinset \\\n  (completeMinSubset same.allowedBarFiveCharges\n    same.allowedTenCharges).toFinset",
+     "statement": "def viableChargesAdditional : CodimensionOneConfig → Multiset (ChargeSpectrum ℤ)",
+     "sorry": false
+    },
+    {
+     "name": "FTheory.SU5.ChargeSpectrum.viableChargesAdditional_nodup",
+     "kind": "lemma",
+     "line": 350,
+     "doc": "",
+     "statement": "lemma viableChargesAdditional_nodup (I : CodimensionOneConfig) :\n    (viableChargesAdditional I).Nodup",
+     "sorry": false
+    },
+    {
+     "name": "FTheory.SU5.ChargeSpectrum.not_isPhenoConstrained_of_mem_viableChargesAdditional",
+     "kind": "lemma",
+     "line": 360,
+     "doc": "",
+     "statement": "lemma not_isPhenoConstrained_of_mem_viableChargesAdditional (I : CodimensionOneConfig) :\n    ∀ x ∈ (viableChargesAdditional I), ¬ IsPhenoConstrained x",
+     "sorry": false
+    },
+    {
+     "name": "FTheory.SU5.ChargeSpectrum.yukawaGeneratesDangerousAtLevel_one_of_mem_viableChargesAdditional",
+     "kind": "lemma",
+     "line": 370,
+     "doc": "",
+     "statement": "lemma yukawaGeneratesDangerousAtLevel_one_of_mem_viableChargesAdditional\n    (I : CodimensionOneConfig) :\n    ∀ x ∈ (viableChargesAdditional I), ¬ YukawaGeneratesDangerousAtLevel x 1",
+     "sorry": false
+    },
+    {
+     "name": "FTheory.SU5.ChargeSpectrum.viableCompletions_disjiont_viableChargesAdditional",
+     "kind": "lemma",
+     "line": 381,
+     "doc": "",
+     "statement": "lemma viableCompletions_disjiont_viableChargesAdditional (I : CodimensionOneConfig) :\n    Disjoint (viableCompletions I) (viableChargesAdditional I)",
+     "sorry": false
+    },
+    {
+     "name": "FTheory.SU5.ChargeSpectrum.viableCharges",
+     "kind": "def",
+     "line": 405,
+     "doc": "All charges, for a given `CodimensionOneConfig`, `I`,\nwhich permit a top Yukawa coupling, are not phenomenologically constrained,\nand do not regenerate dangerous couplings with one insertion of a Yukawa coupling.\n\nThese trees can be found with e.g.\n`#eval viableChargesExt nextToNearestNeighbor`.",
+     "statement": "def viableCharges (I : CodimensionOneConfig) : Multiset (ChargeSpectrum ℤ)",
+     "sorry": false
+    },
+    {
+     "name": "FTheory.SU5.ChargeSpectrum.viableCharges_nodup",
+     "kind": "lemma",
+     "line": 414,
+     "doc": "",
+     "statement": "lemma viableCharges_nodup (I : CodimensionOneConfig) :\n    (viableCharges I).Nodup",
+     "sorry": false
+    },
+    {
+     "name": "FTheory.SU5.ChargeSpectrum.viableCharges_card",
+     "kind": "lemma",
+     "line": 424,
+     "doc": "",
+     "statement": "lemma viableCharges_card (I : CodimensionOneConfig) :\n    (viableCharges I).card =\n    if I = .same then 102 else\n    if I = .nearestNeighbor then 71 else 51",
+     "sorry": false
+    },
+    {
+     "name": "FTheory.SU5.ChargeSpectrum.viableCharges_mem_ofFinset",
+     "kind": "lemma",
+     "line": 436,
+     "doc": "",
+     "statement": "lemma viableCharges_mem_ofFinset (I : CodimensionOneConfig) :\n    ∀ x ∈ (viableCharges I), x ∈ ofFinset I.allowedBarFiveCharges I.allowedTenCharges",
+     "sorry": false
+    },
+    {
+     "name": "FTheory.SU5.ChargeSpectrum.isComplete_of_mem_viableCharges",
+     "kind": "lemma",
+     "line": 447,
+     "doc": "",
+     "statement": "lemma isComplete_of_mem_viableCharges (I : CodimensionOneConfig) :\n    ∀ x ∈ (viableCharges I), IsComplete x",
+     "sorry": false
+    },
+    {
+     "name": "FTheory.SU5.ChargeSpectrum.allowsTerm_topYukawa_of_mem_viableCharges",
+     "kind": "lemma",
+     "line": 457,
+     "doc": "",
+     "statement": "lemma allowsTerm_topYukawa_of_mem_viableCharges (I : CodimensionOneConfig) :\n    ∀ x ∈ (viableCharges I), x.AllowsTerm topYukawa",
+     "sorry": false
+    },
+    {
+     "name": "FTheory.SU5.ChargeSpectrum.not_isPhenoConstrained_of_mem_viableCharges",
+     "kind": "lemma",
+     "line": 467,
+     "doc": "",
+     "statement": "lemma not_isPhenoConstrained_of_mem_viableCharges (I : CodimensionOneConfig) :\n    ∀ x ∈ (viableCharges I), ¬ IsPhenoConstrained x",
+     "sorry": false
+    },
+    {
+     "name": "FTheory.SU5.ChargeSpectrum.not_yukawaGeneratesDangerousAtLevel_one_of_mem_viableCharges",
+     "kind": "lemma",
+     "line": 480,
+     "doc": "",
+     "statement": "lemma not_yukawaGeneratesDangerousAtLevel_one_of_mem_viableCharges\n    (I : CodimensionOneConfig) :\n    ∀ x ∈ (viableCharges I), ¬ YukawaGeneratesDangerousAtLevel x 1",
+     "sorry": false
+    },
+    {
+     "name": "FTheory.SU5.ChargeSpectrum.card_five_bar_le_of_mem_viableCharges",
+     "kind": "lemma",
+     "line": 494,
+     "doc": "",
+     "statement": "lemma card_five_bar_le_of_mem_viableCharges (I : CodimensionOneConfig) :\n    ∀ x ∈ (viableCharges I), x.Q5.card ≤ 2",
+     "sorry": false
+    },
+    {
+     "name": "FTheory.SU5.ChargeSpectrum.card_ten_le_of_mem_viableCharges",
+     "kind": "lemma",
+     "line": 504,
+     "doc": "",
+     "statement": "lemma card_ten_le_of_mem_viableCharges (I : CodimensionOneConfig) :\n    ∀ x ∈ (viableCharges I), x.Q10.card ≤ 2",
+     "sorry": false
+    },
+    {
+     "name": "FTheory.SU5.ChargeSpectrum.isPhenoClosedQ5_viableCharges",
+     "kind": "lemma",
+     "line": 522,
+     "doc": "Inserting a `q5` charge into an element of `viableCharges I` either\n1. produces another element of `viableCharges I`, or\n2. produce a charge which is phenomenologically constrained or regenerates dangerous couplings\n  with the Yukawas.",
+     "statement": "lemma isPhenoClosedQ5_viableCharges : (I : CodimensionOneConfig) →\n    IsPhenoClosedQ5 I.allowedBarFiveCharges (viableCharges I)",
+     "sorry": false
+    },
+    {
+     "name": "FTheory.SU5.ChargeSpectrum.isPhenoClosedQ10_viableCharges",
+     "kind": "lemma",
+     "line": 538,
+     "doc": "Inserting a `q10` charge into an element of `viableCharges I` either\n1. produces another element of `viableCharges I`, or\n2. produce a charge which is phenomenologically constrained or regenerates dangerous couplings\n  with the Yukawas.",
+     "statement": "lemma isPhenoClosedQ10_viableCharges : (I : CodimensionOneConfig) →\n    IsPhenoClosedQ10 I.allowedTenCharges (viableCharges I)",
+     "sorry": false
+    },
+    {
+     "name": "FTheory.SU5.ChargeSpectrum.viableCompletions_subset_viableCharges",
+     "kind": "lemma",
+     "line": 550,
+     "doc": "",
+     "statement": "lemma viableCompletions_subset_viableCharges (I : CodimensionOneConfig) :\n    ∀ x ∈ (viableCompletions I), x ∈ viableCharges I",
+     "sorry": false
+    },
+    {
+     "name": "FTheory.SU5.ChargeSpectrum.mem_viableCharges_iff",
+     "kind": "lemma",
+     "line": 562,
+     "doc": "",
+     "statement": "lemma mem_viableCharges_iff {I} {x : ChargeSpectrum}\n    (hsub : x ∈ ofFinset I.allowedBarFiveCharges I.allowedTenCharges) :\n    x ∈ viableCharges I ↔ AllowsTerm x topYukawa ∧\n    ¬ IsPhenoConstrained x ∧ ¬ YukawaGeneratesDangerousAtLevel x 1 ∧ IsComplete x",
+     "sorry": false
+    },
+    {
+     "name": "FTheory.SU5.ChargeSpectrum.mem_viableCharges_iff'",
+     "kind": "lemma",
+     "line": 578,
+     "doc": "",
+     "statement": "lemma mem_viableCharges_iff' {I} {x : ChargeSpectrum} :\n    x ∈ viableCharges I ↔\n    x ∈ ofFinset I.allowedBarFiveCharges I.allowedTenCharges ∧\n    AllowsTerm x topYukawa ∧\n    ¬ IsPhenoConstrained x ∧ ¬ YukawaGeneratesDangerousAtLevel x 1 ∧ IsComplete x",
+     "sorry": false
+    }
+   ],
+   "private": 0,
+   "aliases": 0,
+   "informal": 0
+  },
+  {
+   "file": "Physlib/StringTheory/FTheory/SU5/Fluxes/Basic.lean",
+   "module": "Physlib.StringTheory.FTheory.SU5.Fluxes.Basic",
+   "title": "Fluxes of representations",
+   "doc": "## i. Overview\n\nAssociated with each matter curve `Σ` are `G₄`-fluxes and `hypercharge` fluxes.\n\nFor a given matter curve `Σ`, and a Standard Model representation `R`,\nthese two fluxes contribute to the chiral index `χ(R)` of the representation\n(eq 17 of [1]).\n\nThe chiral index is equal to the difference the number of left-handed minus\nthe number of right-handed fermions `Σ` leads to in the representation `R`.\nThus, for example, if `χ(R) = 0`, then all fermions in the representation `R`\narising from `Σ` arise in vector-like pairs, and can be given a mass term without\nthe presence of a Higgs like-particle.\n\nFor a 10d representation matter curve the non-zero chiral indices can be parameterized in terms\nof two integers `M : ℤ` and `N : ℤ`. For the SM representation\n- `Q = (3,2)_{1/6}` the chirality index is `M`\n- `U = (bar 3,1)_{-2/3}` the chirality index is `M - N`\n- `E = (1,1)_{1}` the chirality index is `M + N`\nWe call refer to `M` as the chirality flux of the 10d representation, and\n`N` as the hypercharge flux. There exact definitions are given in (eq 19 of [1]).\n\nSimilarly, for the 5-bar representation matter curve the non-zero chiral indices can be\nlikewise be parameterized in terms of two integers `M : ℤ` and `N : ℤ`. For the SM representation\n- `D = (bar 3,1)_{1/3}` the chirality index is `M`\n- `L = (1,2)_{-1/2}` the chirality index is `M + N`\nWe again refer to `M` as the chirality flux of the 5-bar representation, and\n`N` as the hypercharge flux. The exact definitions are given in (eq 19 of [1]).\n\nIf one wishes to put the condition of no chiral exotics in the spectrum, then\nwe must ensure that the chiral indices above give the chiral content of the MSSM.\nThese correspond to the following conditions:\n1. The two higgs `Hu` and `Hd` must arise from different 5d-matter curves. Otherwise\n  they will give a `μ`-term.\n2. The matter curve containing `Hu` must give one anti-chiral `(1,2)_{-1/2}` and\n  no `(bar 3,1)_{1/3}`. Thus `N = -1` and `M = 0`.\n3. The matter curve containing `Hd` must give one chiral `(1,2)_{-1/2}` and\n  no `(bar 3,1)_{1/3}`. Thus `N = 1` and `M = 0`.\n4. We should have no anti-chiral `(3,2)_{1/6}` and anti-chiral `(bar 3,1)_{-2/3}`.\n  Thus `0 ≤ M ` for all 10d-matter curves and 5d matter curves.\n5. For the 10d-matter curves we should have no anti-chiral `(bar 3,1)_{-2/3}`\n    and no anti-chiral `(1,1)_{1}`. Thus `-M ≤ N ≤ M` for all 10d-matter curves.\n6. For the 5d-matter curves we should have no anti-chiral `(1,2)_{-1/2}` (the only\n  anti-chiral one present is the one from `Hu`) and thus\n  `-M ≤ N` for all 5d-matter curves.\n7. To ensure we have 3-families of fermions we must have that `∑ M = 3` and\n    `∑ N = 0` for the matter 10d and 5bar matter curves, and in addition `∑ (M + N) = 3` for the\n    matter 5d matter curves.\nSee the conditions in equation 26 - 28 of [1].\n\n## ii. Key results\n\nThe above theory is implemented by defining two data structures:\n- `Fluxes` : The data of the fluxes `(M, N)` carried by a matter field.\n- `FluxesTen` of type `Multiset Fluxes`\n  which contains the chirality `M` and hypercharge fluxes\n  `N` of the 10d-matter curves.\n- `FluxesFive` of type `Multiset Fluxes`\n  which contains the chirality `M` and hypercharge fluxes\n  `N` of the 5-bar-matter curves (excluding the higgses).\n\nNote: Neither `FluxesTen` or `FluxesFive` are fundamental to the theory,\nthey can be derived from other data structures.\n\n## iii. Table of contents\n\n- A. Fluxes\n  - A.1. Repr instance on `Fluxes`\n  - A.2. Extensionality lemma for the fluxes\n  - A.3. The zero flux\n  - A.4. Addition of fluxes\n  - A.5. The instance of an additive commutative monoid on fluxes\n- B. Fluxes of the 5d matter representation\n  - B.1. Decidability instance on `FluxesFive`\n  - B.2. The proposition for no element to be zero\n  - B.3. The SM representation `D = (bar 3,1)_{1/3}`\n    - B.3.1. Chiral indices of `D`\n    - B.3.2. The number of chiral `D`\n    - B.3.3. The number of anti-chiral `D`\n    - B.3.4. Relation between number of chiral and anti-chiral `D`\n  - B.4. The SM representation `L = (1,2)_{-1/2}`\n    - B.4.1. Chiral indices of `L`\n    - B.4.2. The number of chiral `L`\n    - B.4.3. The number of anti-chiral `L`\n    - B.4.4. Relation between number of chiral and anti-chiral `L`\n  - B.5. No exotics from the 5-bar matter fields\n- C. Fluxes of the 10d matter representation\n  - C.1. Decidability instance on `FluxesTen`\n  - C.2. The proposition for no element to be zero\n  - C.3. The SM representation `Q = (3,2)_{1/6}`\n    - C.3.1. Chiral indices of `Q`\n    - C.3.2. The number of chiral `Q`\n    - C.3.3. The number of anti-chiral `Q`\n    - C.3.4. Relation between number of chiral and anti-chiral `Q`\n  - C.4. The SM representation `U = (bar 3,1)_{-2/3}`\n    - C.4.1. Chiral indices of `U`\n    - C.4.2. The number of chiral `U`\n    - C.4.3. The number of anti-chiral `U`\n    - C.4.4. Relation between number of chiral and anti-chiral `Q`\n  - C.5. The SM representation `E = (1,1)_{1}`\n    - C.5.1. Chiral indices of `E`\n    - C.5.2. The number of chiral `E`\n    - C.5.3. The number of anti-chiral `E`\n    - C.5.4. Relation between number of chiral and anti-chiral `E`\n  - C.6. No exotics from the 10d matter fields\n\n## iv. References\n\n* Rational F-Theory GUTs without exotics (arXiv:1401.5084). [ref: arxiv_1401_5084]\n* For an old version of the material in this module see PR #569.",
+   "copyright": "2025 Joseph Tooby-Smith",
+   "sections": [
+    {
+     "line": 132,
+     "text": "## A. Fluxes\n\nTo each matter curve we associate a pair of integers `(M, N)`,\nthe former of which is the chirality flux and the latter the hypercharge flux."
+    },
+    {
+     "line": 151,
+     "text": "### A.1. Repr instance on `Fluxes`"
+    },
+    {
+     "line": 160,
+     "text": "### A.2. Extensionality lemma for the fluxes"
+    },
+    {
+     "line": 171,
+     "text": "### A.3. The zero flux"
+    },
+    {
+     "line": 183,
+     "text": "### A.4. Addition of fluxes"
+    },
+    {
+     "line": 198,
+     "text": "### A.5. The instance of an additive commutative monoid on fluxes"
+    },
+    {
+     "line": 215,
+     "text": "## B. Fluxes of the 5d matter representation"
+    },
+    {
+     "line": 226,
+     "text": "### B.1. Decidability instance on `FluxesFive`"
+    },
+    {
+     "line": 235,
+     "text": "### B.2. The proposition for no element to be zero"
+    },
+    {
+     "line": 245,
+     "text": "### B.3. The SM representation `D = (bar 3,1)_{1/3}`"
+    },
+    {
+     "line": 251,
+     "text": "#### B.3.1. Chiral indices of `D`"
+    },
+    {
+     "line": 261,
+     "text": "#### B.3.2. The number of chiral `D`"
+    },
+    {
+     "line": 272,
+     "text": "#### B.3.3. The number of anti-chiral `D`"
+    },
+    {
+     "line": 283,
+     "text": "#### B.3.4. Relation between number of chiral and anti-chiral `D`"
+    },
+    {
+     "line": 294,
+     "text": "### B.4. The SM representation `L = (1,2)_{-1/2}`"
+    },
+    {
+     "line": 300,
+     "text": "#### B.4.1. Chiral indices of `L`"
+    },
+    {
+     "line": 310,
+     "text": "#### B.4.2. The number of chiral `L`"
+    },
+    {
+     "line": 321,
+     "text": "#### B.4.3. The number of anti-chiral `L`"
+    },
+    {
+     "line": 332,
+     "text": "#### B.4.4. Relation between number of chiral and anti-chiral `L`"
+    },
+    {
+     "line": 343,
+     "text": "### B.5. No exotics from the 5-bar matter fields"
+    },
+    {
+     "line": 362,
+     "text": "## C. Fluxes of the 10d matter representation"
+    },
+    {
+     "line": 373,
+     "text": "### C.1. Decidability instance on `FluxesTen`"
+    },
+    {
+     "line": 382,
+     "text": "### C.2. The proposition for no element to be zero"
+    },
+    {
+     "line": 392,
+     "text": "### C.3. The SM representation `Q = (3,2)_{1/6}`"
+    },
+    {
+     "line": 398,
+     "text": "#### C.3.1. Chiral indices of `Q`"
+    },
+    {
+     "line": 408,
+     "text": "#### C.3.2. The number of chiral `Q`"
+    },
+    {
+     "line": 418,
+     "text": "#### C.3.3. The number of anti-chiral `Q`"
+    },
+    {
+     "line": 428,
+     "text": "#### C.3.4. Relation between number of chiral and anti-chiral `Q`"
+    },
+    {
+     "line": 439,
+     "text": "### C.4. The SM representation `U = (bar 3,1)_{-2/3}`"
+    },
+    {
+     "line": 445,
+     "text": "#### C.4.1. Chiral indices of `U`"
+    },
+    {
+     "line": 455,
+     "text": "#### C.4.2. The number of chiral `U`"
+    },
+    {
+     "line": 465,
+     "text": "#### C.4.3. The number of anti-chiral `U`"
+    },
+    {
+     "line": 485,
+     "text": "### C.5. The SM representation `E = (1,1)_{1}`"
+    },
+    {
+     "line": 491,
+     "text": "#### C.5.1. Chiral indices of `E`"
+    },
+    {
+     "line": 501,
+     "text": "#### C.5.2. The number of chiral `E`"
+    },
+    {
+     "line": 511,
+     "text": "#### C.5.3. The number of anti-chiral `E`"
+    },
+    {
+     "line": 521,
+     "text": "#### C.5.4. Relation between number of chiral and anti-chiral `E`"
+    },
+    {
+     "line": 532,
+     "text": "### C.6. No exotics from the 10d matter fields"
+    }
+   ],
+   "declarations": [
+    {
+     "name": "FTheory.SU5.Fluxes",
+     "kind": "structure",
+     "line": 142,
+     "doc": "The data of the fluxes carried by a matter field.",
+     "statement": "structure Fluxes where\n  /-- The chirality flux. -/\n  M : ℤ\n  /-- The hypercharge flux. -/\n  N : ℤ\nderiving DecidableEq",
+     "sorry": false
+    },
+    {
+     "name": "",
+     "kind": "instance",
+     "line": 157,
+     "doc": "",
+     "statement": "instance : Repr Fluxes",
+     "sorry": false
+    },
+    {
+     "name": "FTheory.SU5.Fluxes.ext_iff",
+     "kind": "lemma",
+     "line": 166,
+     "doc": "",
+     "statement": "lemma ext_iff {f1 f2 : Fluxes} : f1 = f2 ↔ f1.M = f2.M ∧ f1.N = f2.N",
+     "sorry": false
+    },
+    {
+     "name": "",
+     "kind": "instance",
+     "line": 169,
+     "doc": "",
+     "statement": "instance : Zero Fluxes",
+     "sorry": false
+    },
+    {
+     "name": "FTheory.SU5.Fluxes.zero_M",
+     "kind": "lemma",
+     "line": 178,
+     "doc": "",
+     "statement": "lemma zero_M : (0 : Fluxes).M = 0",
+     "sorry": false
+    },
+    {
+     "name": "FTheory.SU5.Fluxes.zero_N",
+     "kind": "lemma",
+     "line": 181,
+     "doc": "",
+     "statement": "lemma zero_N : (0 : Fluxes).N = 0",
+     "sorry": false
+    },
+    {
+     "name": "",
+     "kind": "instance",
+     "line": 189,
+     "doc": "",
+     "statement": "instance : Add Fluxes",
+     "sorry": false
+    },
+    {
+     "name": "FTheory.SU5.Fluxes.add_M",
+     "kind": "lemma",
+     "line": 193,
+     "doc": "",
+     "statement": "lemma add_M (f1 f2 : Fluxes) : (f1 + f2).M = f1.M + f2.M",
+     "sorry": false
+    },
+    {
+     "name": "FTheory.SU5.Fluxes.add_N",
+     "kind": "lemma",
+     "line": 196,
+     "doc": "",
+     "statement": "lemma add_N (f1 f2 : Fluxes) : (f1 + f2).N = f1.N + f2.N",
+     "sorry": false
+    },
+    {
+     "name": "",
+     "kind": "instance",
+     "line": 204,
+     "doc": "",
+     "statement": "instance : AddCommMonoid Fluxes",
+     "sorry": false
+    },
+    {
+     "name": "FTheory.SU5.FluxesFive",
+     "kind": "abbrev",
+     "line": 222,
+     "doc": "The fluxes `(M, N)` of the 5-bar matter curves of a theory.",
+     "statement": "abbrev FluxesFive : Type",
+     "sorry": false
+    },
+    {
+     "name": "",
+     "kind": "instance",
+     "line": 232,
+     "doc": "",
+     "statement": "instance : DecidableEq FluxesFive",
+     "sorry": false
+    },
+    {
+     "name": "FTheory.SU5.FluxesFive.HasNoZero",
+     "kind": "abbrev",
+     "line": 243,
+     "doc": "The proposition on `FluxesFive` such that `(0, 0)` is not in `F`\nand as such each component in `F` leads to chiral matter.",
+     "statement": "abbrev HasNoZero (F : FluxesFive) : Prop",
+     "sorry": false
+    },
+    {
+     "name": "FTheory.SU5.FluxesFive.chiralIndicesOfD",
+     "kind": "def",
+     "line": 259,
+     "doc": "The multiset of chiral indices of the representation `D = (bar 3,1)_{1/3}`\narising from the matter 5d representations.",
+     "statement": "def chiralIndicesOfD (F : FluxesFive) : Multiset ℤ",
+     "sorry": false
+    },
+    {
+     "name": "FTheory.SU5.FluxesFive.numChiralD",
+     "kind": "def",
+     "line": 269,
+     "doc": "The total number of chiral `D` representations arising from the matter 5d\nrepresentations.",
+     "statement": "def numChiralD (F : FluxesFive) : ℤ",
+     "sorry": false
+    },
+    {
+     "name": "FTheory.SU5.FluxesFive.numAntiChiralD",
+     "kind": "def",
+     "line": 280,
+     "doc": "The total number of anti-chiral `D` representations arising from the matter 5d\nrepresentations.",
+     "statement": "def numAntiChiralD (F : FluxesFive) : ℤ",
+     "sorry": false
+    },
+    {
+     "name": "FTheory.SU5.FluxesFive.numChiralD_eq_sum_sub_numAntiChiralD",
+     "kind": "lemma",
+     "line": 289,
+     "doc": "",
+     "statement": "lemma numChiralD_eq_sum_sub_numAntiChiralD (F : FluxesFive) :\n    F.numChiralD = (chiralIndicesOfD F).sum - F.numAntiChiralD",
+     "sorry": false
+    },
+    {
+     "name": "FTheory.SU5.FluxesFive.chiralIndicesOfL",
+     "kind": "def",
+     "line": 308,
+     "doc": "The multiset of chiral indices of the representation `L = (1,2)_{-1/2}`\narising from the matter 5d representations.",
+     "statement": "def chiralIndicesOfL (F : FluxesFive) : Multiset ℤ",
+     "sorry": false
+    },
+    {
+     "name": "FTheory.SU5.FluxesFive.numChiralL",
+     "kind": "def",
+     "line": 318,
+     "doc": "The total number of chiral `L` representations arising from the matter 5d\nrepresentations.",
+     "statement": "def numChiralL (F : FluxesFive) : ℤ",
+     "sorry": false
+    },
+    {
+     "name": "FTheory.SU5.FluxesFive.numAntiChiralL",
+     "kind": "def",
+     "line": 329,
+     "doc": "The total number of anti-chiral `L` representations arising from the matter 5d\nrepresentations.",
+     "statement": "def numAntiChiralL (F : FluxesFive) : ℤ",
+     "sorry": false
+    },
+    {
+     "name": "FTheory.SU5.FluxesFive.numChiralL_eq_sum_sub_numAntiChiralL",
+     "kind": "lemma",
+     "line": 338,
+     "doc": "",
+     "statement": "lemma numChiralL_eq_sum_sub_numAntiChiralL (F : FluxesFive) :\n    F.numChiralL = (chiralIndicesOfL F).sum - F.numAntiChiralL",
+     "sorry": false
+    },
+    {
+     "name": "FTheory.SU5.FluxesFive.NoExotics",
+     "kind": "def",
+     "line": 354,
+     "doc": "The condition that the 5d-matter representations do not lead to exotic chiral matter in the\n  MSSM spectrum. This corresponds to the conditions that:\n- There are 3 chiral `L` representations and no anti-chiral `L` representations.\n- There are 3 chiral `D` representations and no anti-chiral `D` representations.",
+     "statement": "def NoExotics (F : FluxesFive) : Prop",
+     "sorry": false
+    },
+    {
+     "name": "",
+     "kind": "instance",
+     "line": 357,
+     "doc": "",
+     "statement": "instance (F : FluxesFive) : Decidable (F.NoExotics)",
+     "sorry": false
+    },
+    {
+     "name": "FTheory.SU5.FluxesTen",
+     "kind": "abbrev",
+     "line": 369,
+     "doc": "The fluxes `(M, N)` of the 10d matter curves of a theory.",
+     "statement": "abbrev FluxesTen : Type",
+     "sorry": false
+    },
+    {
+     "name": "",
+     "kind": "instance",
+     "line": 379,
+     "doc": "",
+     "statement": "instance : DecidableEq FluxesTen",
+     "sorry": false
+    },
+    {
+     "name": "FTheory.SU5.FluxesTen.HasNoZero",
+     "kind": "abbrev",
+     "line": 390,
+     "doc": "The proposition on `FluxesTen` such that `(0, 0)` is not in `F`\nand as such each component in `F` leads to chiral matter.",
+     "statement": "abbrev HasNoZero (F : FluxesTen) : Prop",
+     "sorry": false
+    },
+    {
+     "name": "FTheory.SU5.FluxesTen.chiralIndicesOfQ",
+     "kind": "def",
+     "line": 406,
+     "doc": "The multiset of chiral indices of the representation `Q = (3,2)_{1/6}`\narising from the matter 10d representations, corresponding to `M`.",
+     "statement": "def chiralIndicesOfQ (F : FluxesTen) : Multiset ℤ",
+     "sorry": false
+    },
+    {
+     "name": "FTheory.SU5.FluxesTen.numChiralQ",
+     "kind": "def",
+     "line": 416,
+     "doc": "The total number of chiral `Q` representations arising from the matter 10d\nrepresentations.",
+     "statement": "def numChiralQ (F : FluxesTen) : ℤ",
+     "sorry": false
+    },
+    {
+     "name": "FTheory.SU5.FluxesTen.numAntiChiralQ",
+     "kind": "def",
+     "line": 426,
+     "doc": "The total number of anti-chiral `Q` representations arising from the matter 10d\nrepresentations.",
+     "statement": "def numAntiChiralQ (F : FluxesTen) : ℤ",
+     "sorry": false
+    },
+    {
+     "name": "FTheory.SU5.FluxesTen.numChiralQ_eq_sum_sub_numAntiChiralQ",
+     "kind": "lemma",
+     "line": 434,
+     "doc": "",
+     "statement": "lemma numChiralQ_eq_sum_sub_numAntiChiralQ (F : FluxesTen) :\n    F.numChiralQ = (chiralIndicesOfQ F).sum - F.numAntiChiralQ",
+     "sorry": false
+    },
+    {
+     "name": "FTheory.SU5.FluxesTen.chiralIndicesOfU",
+     "kind": "def",
+     "line": 453,
+     "doc": "The multiset of chiral indices of the representation `U = (bar 3,1)_{-2/3}`\narising from the matter 10d representations, corresponding to `M - N`",
+     "statement": "def chiralIndicesOfU (F : FluxesTen) : Multiset ℤ",
+     "sorry": false
+    },
+    {
+     "name": "FTheory.SU5.FluxesTen.numChiralU",
+     "kind": "def",
+     "line": 463,
+     "doc": "The total number of chiral `U` representations arising from the matter 10d\nrepresentations.",
+     "statement": "def numChiralU (F : FluxesTen) : ℤ",
+     "sorry": false
+    },
+    {
+     "name": "FTheory.SU5.FluxesTen.numAntiChiralU",
+     "kind": "def",
+     "line": 473,
+     "doc": "The total number of anti-chiral `U` representations arising from the matter 10d\nrepresentations.",
+     "statement": "def numAntiChiralU (F : FluxesTen) : ℤ",
+     "sorry": false
+    },
+    {
+     "name": "FTheory.SU5.FluxesTen.numChiralU_eq_sum_sub_numAntiChiralU",
+     "kind": "lemma",
+     "line": 481,
+     "doc": "",
+     "statement": "lemma numChiralU_eq_sum_sub_numAntiChiralU (F : FluxesTen) :\n    F.numChiralU = (chiralIndicesOfU F).sum - F.numAntiChiralU",
+     "sorry": false
+    },
+    {
+     "name": "FTheory.SU5.FluxesTen.chiralIndicesOfE",
+     "kind": "def",
+     "line": 499,
+     "doc": "The multiset of chiral indices of the representation `E = (1,1)_{1}`\narising from the matter 10d representations, corresponding to `M + N`",
+     "statement": "def chiralIndicesOfE (F : FluxesTen) : Multiset ℤ",
+     "sorry": false
+    },
+    {
+     "name": "FTheory.SU5.FluxesTen.numChiralE",
+     "kind": "def",
+     "line": 509,
+     "doc": "The total number of chiral `E` representations arising from the matter 10d\nrepresentations.",
+     "statement": "def numChiralE (F : FluxesTen) : ℤ",
+     "sorry": false
+    },
+    {
+     "name": "FTheory.SU5.FluxesTen.numAntiChiralE",
+     "kind": "def",
+     "line": 519,
+     "doc": "The total number of anti-chiral `E` representations arising from the matter 10d\nrepresentations.",
+     "statement": "def numAntiChiralE (F : FluxesTen) : ℤ",
+     "sorry": false
+    },
+    {
+     "name": "FTheory.SU5.FluxesTen.numChiralE_eq_sum_sub_numAntiChiralE",
+     "kind": "lemma",
+     "line": 527,
+     "doc": "",
+     "statement": "lemma numChiralE_eq_sum_sub_numAntiChiralE (F : FluxesTen) :\n    F.numChiralE = (chiralIndicesOfE F).sum - F.numAntiChiralE",
+     "sorry": false
+    },
+    {
+     "name": "FTheory.SU5.FluxesTen.NoExotics",
+     "kind": "def",
+     "line": 544,
+     "doc": "The condition that the 10d-matter representations do not lead to exotic chiral matter in the\n  MSSM spectrum. This corresponds to the conditions that:\n- There are 3 chiral `Q` representations and no anti-chiral `Q` representations.\n- There are 3 chiral `U` representations and no anti-chiral `U` representations.\n- There are 3 chiral `E` representations and no anti-chiral `E` representations.",
+     "statement": "def NoExotics (F : FluxesTen) : Prop",
+     "sorry": false
+    },
+    {
+     "name": "",
+     "kind": "instance",
+     "line": 549,
+     "doc": "",
+     "statement": "instance (F : FluxesTen) : Decidable (F.NoExotics)",
+     "sorry": false
+    }
+   ],
+   "private": 0,
+   "aliases": 0,
+   "informal": 0
+  },
+  {
+   "file": "Physlib/StringTheory/FTheory/SU5/Fluxes/NoExotics/ChiralIndices.lean",
+   "module": "Physlib.StringTheory.FTheory.SU5.Fluxes.NoExotics.ChiralIndices",
+   "title": "Constraints on chiral indices from the condition of no chiral exotics",
+   "doc": "## i. Overview\n\nThe chiral indices of each of the standard model representations\nsatisfy certain constraints if there are no chiral exotics in the spectrum.\nWe give prove these constraints in this file.\n\n## ii. Key results\n\nEach of the following results holds for each of the standard model representations,\nwe state them for the representation `D = (bar 3,1)_{1/3}` only:\n- Each chiral index is non-negative, `FluxesFive.chiralIndicesOfD_noneg_of_noExotics`.\n- The sum of the chiral indices is equal to three,\n  `FluxesFive.chiralIndicesOfD_sum_eq_three_of_noExotics`.\n- Each chiral index is less then or equal to three,\n  `FluxesFive.chiralIndicesOfD_le_three_of_noExotics`.\n- Each chiral index is `0`, `1`, `2` or `3`,\n  `FluxesFive.mem_chiralIndicesOfD_mem_of_noExotics`\n- The sum of a subset of the chiral indices is less then or equal to three,\n  `FluxesFive.chiralIndicesOfD_subset_sum_le_three_of_noExotics`.\n\n## iii. Table of contents\n\n- A. Positivity of the chiral indices given no exotics\n- B. Chiral indices sum to three given no exotics\n- C. Each chiral index is less then or equal to three given no exotics\n- D. Each chiral index is 0, 1, 2, or 3 given no exotics\n- E. Sum of a subset of chiral indices is less then or equal to 3 given no exotics\n\n## iv. References\n\n* None.",
+   "copyright": "2025 Joseph Tooby-Smith",
+   "sections": [
+    {
+     "line": 56,
+     "text": "## A. Positivity of the chiral indices given no exotics\n\nThe chiral indices of all the SM representations are non-negative if there are no chiral exotics."
+    },
+    {
+     "line": 152,
+     "text": "## B. Chiral indices sum to three given no exotics\n\nThe sum of the chiral indices of each representation is equal to three if\nthere are no chiral exotics."
+    },
+    {
+     "line": 201,
+     "text": "## C. Each chiral index is less then or equal to three given no exotics"
+    },
+    {
+     "line": 247,
+     "text": "## D. Each chiral index is 0, 1, 2, or 3 given no exotics"
+    },
+    {
+     "line": 293,
+     "text": "## E. Sum of a subset of chiral indices is less then or equal to 3 given no exotics"
+    }
+   ],
+   "declarations": [
+    {
+     "name": "FTheory.SU5.FluxesFive.chiralIndicesOfD_noneg_of_noExotics",
+     "kind": "lemma",
+     "line": 66,
+     "doc": "The chiral indices of the representations `D = (bar 3,1)_{1/3}` are all non-negative if\nthere are no chiral exotics in the spectrum.",
+     "statement": "lemma FluxesFive.chiralIndicesOfD_noneg_of_noExotics (F : FluxesFive) (hF : NoExotics F)\n    (ci : ℤ) (hci : ci ∈ F.chiralIndicesOfD) : 0 ≤ ci",
+     "sorry": false
+    },
+    {
+     "name": "FTheory.SU5.FluxesFive.chiralIndicesOfL_noneg_of_noExotics",
+     "kind": "lemma",
+     "line": 84,
+     "doc": "The chiral indices of the representations `L = (1,2)_{-1/2}` are all non-negative if\nthere are no chiral exotics in the spectrum.",
+     "statement": "lemma FluxesFive.chiralIndicesOfL_noneg_of_noExotics (F : FluxesFive) (hF : NoExotics F)\n    (ci : ℤ) (hci : ci ∈ F.chiralIndicesOfL) : 0 ≤ ci",
+     "sorry": false
+    },
+    {
+     "name": "FTheory.SU5.FluxesTen.chiralIndicesOfQ_noneg_of_noExotics",
+     "kind": "lemma",
+     "line": 102,
+     "doc": "The chiral indices of the representations `Q = (3,2)_{1/6}` are all non-negative if\nthere are no chiral exotics in the spectrum.",
+     "statement": "lemma FluxesTen.chiralIndicesOfQ_noneg_of_noExotics (F : FluxesTen) (hF : NoExotics F)\n    (ci : ℤ) (hci : ci ∈ F.chiralIndicesOfQ) : 0 ≤ ci",
+     "sorry": false
+    },
+    {
+     "name": "FTheory.SU5.FluxesTen.chiralIndicesOfU_noneg_of_noExotics",
+     "kind": "lemma",
+     "line": 120,
+     "doc": "The chiral indices of the representations `U = (bar 3,1)_{-2/3}` are all non-negative if\nthere are no chiral exotics in the spectrum.",
+     "statement": "lemma FluxesTen.chiralIndicesOfU_noneg_of_noExotics (F : FluxesTen) (hF : NoExotics F)\n    (ci : ℤ) (hci : ci ∈ F.chiralIndicesOfU) : 0 ≤ ci",
+     "sorry": false
+    },
+    {
+     "name": "FTheory.SU5.FluxesTen.chiralIndicesOfE_noneg_of_noExotics",
+     "kind": "lemma",
+     "line": 136,
+     "doc": "",
+     "statement": "lemma FluxesTen.chiralIndicesOfE_noneg_of_noExotics (F : FluxesTen) (hF : NoExotics F)\n    (ci : ℤ) (hci : ci ∈ F.chiralIndicesOfE) : 0 ≤ ci",
+     "sorry": false
+    },
+    {
+     "name": "FTheory.SU5.FluxesFive.chiralIndicesOfD_sum_eq_three_of_noExotics",
+     "kind": "lemma",
+     "line": 163,
+     "doc": "The sum of the chiral indices of the representations `D = (bar 3,1)_{1/3}` is equal\nto `3` in the presences of no exotics.",
+     "statement": "lemma FluxesFive.chiralIndicesOfD_sum_eq_three_of_noExotics (F : FluxesFive) (hF : NoExotics F) :\n    F.chiralIndicesOfD.sum = 3",
+     "sorry": false
+    },
+    {
+     "name": "FTheory.SU5.FluxesFive.chiralIndicesOfL_sum_eq_three_of_noExotics",
+     "kind": "lemma",
+     "line": 171,
+     "doc": "The sum of the chiral indices of the representations `L = (1,2)_{-1/2}` is equal\nto `3` in the presences of no exotics.",
+     "statement": "lemma FluxesFive.chiralIndicesOfL_sum_eq_three_of_noExotics (F : FluxesFive) (hF : NoExotics F) :\n    F.chiralIndicesOfL.sum = 3",
+     "sorry": false
+    },
+    {
+     "name": "FTheory.SU5.FluxesTen.chiralIndicesOfQ_sum_eq_three_of_noExotics",
+     "kind": "lemma",
+     "line": 179,
+     "doc": "The sum of the chiral indices of the representations `Q = (3,2)_{1/6}` is equal\nto `3` in the presences of no exotics.",
+     "statement": "lemma FluxesTen.chiralIndicesOfQ_sum_eq_three_of_noExotics (F : FluxesTen) (hF : NoExotics F) :\n    F.chiralIndicesOfQ.sum = 3",
+     "sorry": false
+    },
+    {
+     "name": "FTheory.SU5.FluxesTen.chiralIndicesOfU_sum_eq_three_of_noExotics",
+     "kind": "lemma",
+     "line": 187,
+     "doc": "The sum of the chiral indices of the representations `U = (bar 3,1)_{-2/3}` is equal\nto `3` in the presences of no exotics.",
+     "statement": "lemma FluxesTen.chiralIndicesOfU_sum_eq_three_of_noExotics (F : FluxesTen) (hF : NoExotics F) :\n    F.chiralIndicesOfU.sum = 3",
+     "sorry": false
+    },
+    {
+     "name": "FTheory.SU5.FluxesTen.chiralIndicesOfE_sum_eq_three_of_noExotics",
+     "kind": "lemma",
+     "line": 195,
+     "doc": "The sum of the chiral indices of the representations `E = (1,1)_{1}` is equal\nto `3` in the presences of no exotics.",
+     "statement": "lemma FluxesTen.chiralIndicesOfE_sum_eq_three_of_noExotics (F : FluxesTen) (hF : NoExotics F) :\n    F.chiralIndicesOfE.sum = 3",
+     "sorry": false
+    },
+    {
+     "name": "FTheory.SU5.FluxesFive.chiralIndicesOfD_le_three_of_noExotics",
+     "kind": "lemma",
+     "line": 209,
+     "doc": "The chiral indices of the representation `D = (bar 3,1)_{1/3}` are less then\nor equal to `3`.",
+     "statement": "lemma FluxesFive.chiralIndicesOfD_le_three_of_noExotics (F : FluxesFive) (hF : NoExotics F)\n    (ci : ℤ) (hci : ci ∈ F.chiralIndicesOfD) : ci ≤ 3",
+     "sorry": false
+    },
+    {
+     "name": "FTheory.SU5.FluxesFive.chiralIndicesOfL_le_three_of_noExotics",
+     "kind": "lemma",
+     "line": 217,
+     "doc": "The chiral indices of the representation `L = (1,2)_{-1/2}` are less then\nor equal to `3`.",
+     "statement": "lemma FluxesFive.chiralIndicesOfL_le_three_of_noExotics (F : FluxesFive) (hF : NoExotics F)\n    (ci : ℤ) (hci : ci ∈ F.chiralIndicesOfL) : ci ≤ 3",
+     "sorry": false
+    },
+    {
+     "name": "FTheory.SU5.FluxesTen.chiralIndicesOfQ_le_three_of_noExotics",
+     "kind": "lemma",
+     "line": 225,
+     "doc": "The chiral indices of the representation `Q = (3,2)_{1/6}` are less then\nor equal to `3`.",
+     "statement": "lemma FluxesTen.chiralIndicesOfQ_le_three_of_noExotics (F : FluxesTen) (hF : NoExotics F)\n    (ci : ℤ) (hci : ci ∈ F.chiralIndicesOfQ) : ci ≤ 3",
+     "sorry": false
+    },
+    {
+     "name": "FTheory.SU5.FluxesTen.chiralIndicesOfU_le_three_of_noExotics",
+     "kind": "lemma",
+     "line": 233,
+     "doc": "The chiral indices of the representation `U = (bar 3,1)_{-2/3}` are less then\nor equal to `3`.",
+     "statement": "lemma FluxesTen.chiralIndicesOfU_le_three_of_noExotics (F : FluxesTen) (hF : NoExotics F)\n    (ci : ℤ) (hci : ci ∈ F.chiralIndicesOfU) : ci ≤ 3",
+     "sorry": false
+    },
+    {
+     "name": "FTheory.SU5.FluxesTen.chiralIndicesOfE_le_three_of_noExotics",
+     "kind": "lemma",
+     "line": 241,
+     "doc": "The chiral indices of the representation `E = (1,1)_{1}` are less then\nor equal to `3`.",
+     "statement": "lemma FluxesTen.chiralIndicesOfE_le_three_of_noExotics (F : FluxesTen) (hF : NoExotics F)\n    (ci : ℤ) (hci : ci ∈ F.chiralIndicesOfE) : ci ≤ 3",
+     "sorry": false
+    },
+    {
+     "name": "FTheory.SU5.FluxesFive.mem_chiralIndicesOfD_mem_of_noExotics",
+     "kind": "lemma",
+     "line": 253,
+     "doc": "",
+     "statement": "lemma FluxesFive.mem_chiralIndicesOfD_mem_of_noExotics (F : FluxesFive)\n    (hF : NoExotics F) (ci : ℤ) (hci : ci ∈ F.chiralIndicesOfD) :\n    ci ∈ ({0, 1, 2, 3} : Finset ℤ)",
+     "sorry": false
+    },
+    {
+     "name": "FTheory.SU5.FluxesFive.mem_chiralIndicesOfL_mem_of_noExotics",
+     "kind": "lemma",
+     "line": 261,
+     "doc": "",
+     "statement": "lemma FluxesFive.mem_chiralIndicesOfL_mem_of_noExotics (F : FluxesFive)\n    (hF : NoExotics F) (ci : ℤ) (hci : ci ∈ F.chiralIndicesOfL) :\n    ci ∈ ({0, 1, 2, 3} : Finset ℤ)",
+     "sorry": false
+    },
+    {
+     "name": "FTheory.SU5.FluxesTen.mem_chiralIndicesOfQ_mem_of_noExotics",
+     "kind": "lemma",
+     "line": 269,
+     "doc": "",
+     "statement": "lemma FluxesTen.mem_chiralIndicesOfQ_mem_of_noExotics (F : FluxesTen)\n    (hF : NoExotics F) (ci : ℤ) (hci : ci ∈ F.chiralIndicesOfQ) :\n    ci ∈ ({0, 1, 2, 3} : Finset ℤ)",
+     "sorry": false
+    },
+    {
+     "name": "FTheory.SU5.FluxesTen.mem_chiralIndicesOfU_mem_of_noExotics",
+     "kind": "lemma",
+     "line": 277,
+     "doc": "",
+     "statement": "lemma FluxesTen.mem_chiralIndicesOfU_mem_of_noExotics (F : FluxesTen)\n    (hF : NoExotics F) (ci : ℤ) (hci : ci ∈ F.chiralIndicesOfU) :\n    ci ∈ ({0, 1, 2, 3} : Finset ℤ)",
+     "sorry": false
+    },
+    {
+     "name": "FTheory.SU5.FluxesTen.mem_chiralIndicesOfE_mem_of_noExotics",
+     "kind": "lemma",
+     "line": 285,
+     "doc": "",
+     "statement": "lemma FluxesTen.mem_chiralIndicesOfE_mem_of_noExotics (F : FluxesTen)\n    (hF : NoExotics F) (ci : ℤ) (hci : ci ∈ F.chiralIndicesOfE) :\n    ci ∈ ({0, 1, 2, 3} : Finset ℤ)",
+     "sorry": false
+    },
+    {
+     "name": "FTheory.SU5.FluxesFive.chiralIndicesOfD_subset_sum_le_three_of_noExotics",
+     "kind": "lemma",
+     "line": 299,
+     "doc": "",
+     "statement": "lemma FluxesFive.chiralIndicesOfD_subset_sum_le_three_of_noExotics (F : FluxesFive)\n    (hF : NoExotics F) (S : Multiset Fluxes)\n    (hSle : S ≤ F) : (S.map (fun x => x.1)).sum ≤ 3",
+     "sorry": false
+    },
+    {
+     "name": "FTheory.SU5.FluxesFive.chiralIndicesOfL_subset_sum_le_three_of_noExotics",
+     "kind": "lemma",
+     "line": 312,
+     "doc": "",
+     "statement": "lemma FluxesFive.chiralIndicesOfL_subset_sum_le_three_of_noExotics (F : FluxesFive)\n    (hF : NoExotics F) (S : Multiset Fluxes)\n    (hSle : S ≤ F) : (S.map (fun x => (x.1 + x.2))).sum ≤ 3",
+     "sorry": false
+    },
+    {
+     "name": "FTheory.SU5.FluxesTen.chiralIndicesOfQ_subset_sum_le_three_of_noExotics",
+     "kind": "lemma",
+     "line": 325,
+     "doc": "",
+     "statement": "lemma FluxesTen.chiralIndicesOfQ_subset_sum_le_three_of_noExotics (F : FluxesTen)\n    (hF : NoExotics F) (S : Multiset Fluxes)\n    (hSle : S ≤ F) : (S.map (fun x => x.1)).sum ≤ 3",
+     "sorry": false
+    },
+    {
+     "name": "FTheory.SU5.FluxesTen.chiralIndicesOfU_subset_sum_le_three_of_noExotics",
+     "kind": "lemma",
+     "line": 338,
+     "doc": "",
+     "statement": "lemma FluxesTen.chiralIndicesOfU_subset_sum_le_three_of_noExotics (F : FluxesTen)\n    (hF : NoExotics F) (S : Multiset Fluxes)\n    (hSle : S ≤ F) : (S.map (fun x => (x.1 - x.2))).sum ≤ 3",
+     "sorry": false
+    },
+    {
+     "name": "FTheory.SU5.FluxesTen.chiralIndicesOfE_subset_sum_le_three_of_noExotics",
+     "kind": "lemma",
+     "line": 351,
+     "doc": "",
+     "statement": "lemma FluxesTen.chiralIndicesOfE_subset_sum_le_three_of_noExotics (F : FluxesTen)\n    (hF : NoExotics F) (S : Multiset Fluxes)\n    (hSle : S ≤ F) : (S.map (fun x => (x.1 + x.2))).sum ≤ 3",
+     "sorry": false
+    }
+   ],
+   "private": 0,
+   "aliases": 0,
+   "informal": 0
+  },
+  {
+   "file": "Physlib/StringTheory/FTheory/SU5/Fluxes/NoExotics/Completeness.lean",
+   "module": "Physlib.StringTheory.FTheory.SU5.Fluxes.NoExotics.Completeness",
+   "title": "Completeness of `Elems` with regard to the `NoExotics` condition",
+   "doc": "## i. Overview\n\nIn the module:\n\n- `Physlib.StringTheory.FTheory.SU5.Fluxes.NoExotics.Elems`\n\nwe define finite sets of elements of `FluxesFive` and `FluxesTen` which satisfy the\n`NoExotics` and `HasNoZero` conditions.\n\nIn this module we prove that these sets are complete, in the sense that every\nelement of `FluxesFive` or `FluxesTen` which satisfies the `NoExotics` and\n`HasNoZero` conditions is contained in them.\n\nOur proof follows by building allowed subsets of fluxes by their cardinality, and heavily relies\non the `decide` tactic.\n\nNote that the `10d` fluxes are much more constrained than the 5-bar fluxes. This is because\nthey are constrained by `3` SM representations `Q`, `U`, and `E`, whereas the 5-bar fluxes\nare only constrained by `2` SM representations `D` and `L`.\n\n## ii. Key results\n\n- `FluxesFive.noExotics_iff_mem_elemsNoExotics` : An element of `FluxesFive` satisfies `NoExotics`\n  and `HasNoZero` if and only if it is an element of `elemsNoExotics`.\n- `FluxesTen.noExotics_iff_mem_elemsNoExotics` : An element of `FluxesTen` satisfies `NoExotics`\n  and `HasNoZero` if and only if it is an element of `elemsNoExotics`.\n\n## iii. Table of contents\n\n- A. All terms of `FluxesFive` obeying `NoExotics` and `HasNoZero`\n  - A.1. The allowed fluxes in a `FluxesFive` which obeys `NoExotics` and `HasNoZero`\n  - A.2. Sufficient condition for a set to contain allowed subsets of card `n.succ` based on `n`\n  - A.3. Statement of the allowed subsets of each cardinality\n  - A.4. Lemma that stated allowed subsets are complete\n  - A.5. Terms of `FluxesFive` obeying `NoExotics` and `HasNoZero` have card ≤ 6\n  - A.6. Terms of `FluxesFive` obeying `NoExotics` and `HasNoZero` are in `elemsNoExotics`\n  - A.7. Terms of `FluxesFive` obey `NoExotics` and `HasNoZero` if and only if in `elemsNoExotics`\n- B. All terms of `FluxesTen` obeying `NoExotics` and `HasNoZero`\n  - B.1. The allowed fluxes in a `FluxesTen` which obeys `NoExotics` and `HasNoZero`\n  - B.2. Sufficient condition for a set to contain allowed subsets of card `n.succ` based on `n`\n  - B.3. Statement of the allowed subsets of each cardinality\n  - B.4. Lemma that stated allowed subsets are complete\n  - B.5. Terms of `FluxesTen` obeying `NoExotics` and `HasNoZero` have card ≤ 3\n  - B.6. Terms of `FluxesTen` obeying `NoExotics` and `HasNoZero` are in `elemsNoExotics`\n  - B.7. Terms of `FluxesTen` obey `NoExotics` and `HasNoZero` if and only if in `elemsNoExotics`\n\n## iv. References\n\n* None.",
+   "copyright": "2025 Joseph Tooby-Smith",
+   "sections": [
+    {
+     "line": 70,
+     "text": "## A. All terms of `FluxesFive` obeying `NoExotics` and `HasNoZero`"
+    },
+    {
+     "line": 77,
+     "text": "### A.1. The allowed fluxes in a `FluxesFive` which obeys `NoExotics` and `HasNoZero`"
+    },
+    {
+     "line": 106,
+     "text": "### A.2. Sufficient condition for a set to contain allowed subsets of card `n.succ` based on `n`"
+    },
+    {
+     "line": 134,
+     "text": "### A.3. Statement of the allowed subsets of each cardinality"
+    },
+    {
+     "line": 184,
+     "text": "### A.4. Lemma that stated allowed subsets are complete"
+    },
+    {
+     "line": 216,
+     "text": "### A.5. Terms of `FluxesFive` obeying `NoExotics` and `HasNoZero` have card ≤ 6"
+    },
+    {
+     "line": 242,
+     "text": "### A.6. Terms of `FluxesFive` obeying `NoExotics` and `HasNoZero` are in `elemsNoExotics`"
+    },
+    {
+     "line": 264,
+     "text": "### A.7. Terms of `FluxesFive` obey `NoExotics` and `HasNoZero` if and only if in `elemsNoExotics`"
+    },
+    {
+     "line": 281,
+     "text": "## B. All terms of `FluxesTen` obeying `NoExotics` and `HasNoZero`"
+    },
+    {
+     "line": 289,
+     "text": "### B.1. The allowed fluxes in a `FluxesTen` which obeys `NoExotics` and `HasNoZero`"
+    },
+    {
+     "line": 322,
+     "text": "### B.2. Sufficient condition for a set to contain allowed subsets of card `n.succ` based on `n`"
+    },
+    {
+     "line": 350,
+     "text": "### B.3. Statement of the allowed subsets of each cardinality"
+    },
+    {
+     "line": 365,
+     "text": "### B.4. Lemma that stated allowed subsets are complete"
+    },
+    {
+     "line": 391,
+     "text": "### B.5. Terms of `FluxesTen` obeying `NoExotics` and `HasNoZero` have card ≤ 3"
+    },
+    {
+     "line": 414,
+     "text": "### B.6. Terms of `FluxesTen` obeying `NoExotics` and `HasNoZero` are in `elemsNoExotics`"
+    },
+    {
+     "line": 436,
+     "text": "### B.7. Terms of `FluxesTen` obey `NoExotics` and `HasNoZero` if and only if in `elemsNoExotics`"
+    }
+   ],
+   "declarations": [
+    {
+     "name": "FTheory.SU5.FluxesFive.mem_mem_finset_of_noExotics",
+     "kind": "lemma",
+     "line": 83,
+     "doc": "",
+     "statement": "lemma mem_mem_finset_of_noExotics (F : FluxesFive) (hF : F.NoExotics)\n    (hnZ : F.HasNoZero) (x : Fluxes) (hx : x ∈ F) :\n    x ∈ ({⟨0, 1⟩, ⟨0, 2⟩, ⟨0, 3⟩, ⟨1, -1⟩, ⟨1, 0⟩, ⟨1, 1⟩, ⟨1, 2⟩,\n      ⟨2, -2⟩, ⟨2, -1⟩, ⟨2, 0⟩, ⟨2, 1⟩, ⟨3, -3⟩, ⟨3, -2⟩, ⟨3, -1⟩, ⟨3, 0⟩} : Finset Fluxes)",
+     "sorry": false
+    },
+    {
+     "name": "FTheory.SU5.FluxesFive.subset_le_mem_of_card_eq_succ",
+     "kind": "lemma",
+     "line": 112,
+     "doc": "",
+     "statement": "lemma subset_le_mem_of_card_eq_succ {n : ℕ} {F : FluxesFive} (hF : F.NoExotics) (hnZ : F.HasNoZero)\n    (S : Multiset Fluxes) (hcard : S.card = n.succ) (hS : S ≤ F) {Y X : Finset (Multiset Fluxes)}\n    (hY : ∀ (S : Multiset Fluxes), S.card = n → S ≤ F → S ∈ Y)\n    (hX : ∀ a ∈ ({⟨0, 1⟩, ⟨0, 2⟩, ⟨0, 3⟩, ⟨1, -1⟩, ⟨1, 0⟩, ⟨1, 1⟩, ⟨1, 2⟩,\n      ⟨2, -2⟩, ⟨2, -1⟩, ⟨2, 0⟩, ⟨2, 1⟩, ⟨3, -3⟩, ⟨3, -2⟩, ⟨3, -1⟩, ⟨3, 0⟩} : Finset Fluxes),\n      ∀ y ∈ Y,\n      (Multiset.map (fun x => x.M + x.N) (a ::ₘ y)).sum ≤ 3 →\n      (Multiset.map (fun x => x.M) (a ::ₘ y)).sum ≤ 3 →\n      a ::ₘ y ∈ X) :\n    S ∈ X",
+     "sorry": false
+    },
+    {
+     "name": "FTheory.SU5.FluxesFive.noExoticsSubsets",
+     "kind": "def",
+     "line": 141,
+     "doc": "The allowed subsets of a `FluxesFive` which has no exotics or zeros.",
+     "statement": "def noExoticsSubsets : (n : ℕ) → Finset (Multiset Fluxes)",
+     "sorry": false
+    },
+    {
+     "name": "FTheory.SU5.FluxesFive.subset_of_fluxesFive_mem_noExoticsSubsets_of_noExotics",
+     "kind": "lemma",
+     "line": 190,
+     "doc": "",
+     "statement": "lemma subset_of_fluxesFive_mem_noExoticsSubsets_of_noExotics {F : FluxesFive} (hF : F.NoExotics)\n    (hnZ : F.HasNoZero) (S : Multiset Fluxes) (hS : S ≤ F) :\n    S ∈ noExoticsSubsets S.card",
+     "sorry": false
+    },
+    {
+     "name": "FTheory.SU5.FluxesFive.card_le_six_of_noExotics",
+     "kind": "lemma",
+     "line": 222,
+     "doc": "",
+     "statement": "lemma card_le_six_of_noExotics {F : FluxesFive} (hF : F.NoExotics) (hnZ : F.HasNoZero) :\n    F.card ≤ 6",
+     "sorry": false
+    },
+    {
+     "name": "FTheory.SU5.FluxesFive.card_mem_range_seven_of_noExotics",
+     "kind": "lemma",
+     "line": 237,
+     "doc": "",
+     "statement": "lemma card_mem_range_seven_of_noExotics {F : FluxesFive} (hF : F.NoExotics) (hnZ : F.HasNoZero) :\n    F.card ∈ Finset.range 7",
+     "sorry": false
+    },
+    {
+     "name": "FTheory.SU5.FluxesFive.mem_elemsNoExotics_of_noExotics",
+     "kind": "lemma",
+     "line": 248,
+     "doc": "",
+     "statement": "lemma mem_elemsNoExotics_of_noExotics (F : FluxesFive) (hNE : F.NoExotics) (hnZ : F.HasNoZero) :\n    F ∈ elemsNoExotics",
+     "sorry": false
+    },
+    {
+     "name": "FTheory.SU5.FluxesFive.noExotics_iff_mem_elemsNoExotics",
+     "kind": "lemma",
+     "line": 273,
+     "doc": "Completeness of `elemsNoExotics`, that is, every element of `FluxesFive`\nwhich obeys `NoExotics` is an element of `elemsNoExotics`, and every\nelement of `elemsNoExotics` obeys `NoExotics`.",
+     "statement": "lemma noExotics_iff_mem_elemsNoExotics (F : FluxesFive) :\n    F.NoExotics ∧ F.HasNoZero ↔ F ∈ elemsNoExotics",
+     "sorry": false
+    },
+    {
+     "name": "FTheory.SU5.FluxesTen.mem_mem_finset_of_noExotics",
+     "kind": "lemma",
+     "line": 295,
+     "doc": "",
+     "statement": "lemma mem_mem_finset_of_noExotics (F : FluxesTen) (hF : F.NoExotics) (hnZ : F.HasNoZero)\n    (x : Fluxes) (hx : x ∈ F) :\n    x ∈ ({⟨1, -1⟩, ⟨1, 0⟩, ⟨1, 1⟩, ⟨2, -1⟩, ⟨2, 0⟩, ⟨2, 1⟩, ⟨3, 0⟩} : Finset Fluxes)",
+     "sorry": false
+    },
+    {
+     "name": "FTheory.SU5.FluxesTen.subset_le_mem_of_card_eq_succ",
+     "kind": "lemma",
+     "line": 327,
+     "doc": "",
+     "statement": "lemma subset_le_mem_of_card_eq_succ {n : ℕ} {F : FluxesTen} (hF : F.NoExotics) (hnZ : F.HasNoZero)\n    (S : Multiset Fluxes) (hcard : S.card = n.succ) (hS : S ≤ F) {Y X : Finset (Multiset Fluxes)}\n    (hY : ∀ (S : Multiset Fluxes), S.card = n → S ≤ F → S ∈ Y)\n    (hX : ∀ a ∈ ({⟨1, -1⟩, ⟨1, 0⟩, ⟨1, 1⟩, ⟨2, -1⟩, ⟨2, 0⟩, ⟨2, 1⟩, ⟨3, 0⟩} : Finset Fluxes),\n      ∀ y ∈ Y,\n      (Multiset.map (fun x => x.M) (a ::ₘ y)).sum ≤ 3 →\n      (Multiset.map (fun x => x.M - x.N) (a ::ₘ y)).sum ≤ 3 →\n      (Multiset.map (fun x => x.M + x.N) (a ::ₘ y)).sum ≤ 3 →\n      a ::ₘ y ∈ X) :\n    S ∈ X",
+     "sorry": false
+    },
+    {
+     "name": "FTheory.SU5.FluxesTen.noExoticsSubsets",
+     "kind": "def",
+     "line": 357,
+     "doc": "The allowed subsets of a `FluxesTen` which has no exotics or zeros.",
+     "statement": "def noExoticsSubsets : (n : ℕ) → Finset (Multiset Fluxes)",
+     "sorry": false
+    },
+    {
+     "name": "FTheory.SU5.FluxesTen.subset_of_fluxesTen_mem_noExoticsSubsets_of_noExotics",
+     "kind": "lemma",
+     "line": 371,
+     "doc": "",
+     "statement": "lemma subset_of_fluxesTen_mem_noExoticsSubsets_of_noExotics {F : FluxesTen} (hF : F.NoExotics)\n    (hnZ : F.HasNoZero) (S : Multiset Fluxes) (hS : S ≤ F) :\n    S ∈ noExoticsSubsets S.card",
+     "sorry": false
+    },
+    {
+     "name": "FTheory.SU5.FluxesTen.card_le_three_of_noExotics",
+     "kind": "lemma",
+     "line": 397,
+     "doc": "",
+     "statement": "lemma card_le_three_of_noExotics {F : FluxesTen} (hF : F.NoExotics) (hnZ : F.HasNoZero) :\n    F.card ≤ 3",
+     "sorry": false
+    },
+    {
+     "name": "FTheory.SU5.FluxesTen.card_mem_range_four_of_noExotics",
+     "kind": "lemma",
+     "line": 409,
+     "doc": "",
+     "statement": "lemma card_mem_range_four_of_noExotics {F : FluxesTen} (hF : F.NoExotics) (hnZ : F.HasNoZero) :\n    F.card ∈ Finset.range 4",
+     "sorry": false
+    },
+    {
+     "name": "FTheory.SU5.FluxesTen.mem_elemsNoExotics_of_noExotics",
+     "kind": "lemma",
+     "line": 420,
+     "doc": "",
+     "statement": "lemma mem_elemsNoExotics_of_noExotics (F : FluxesTen) (hNE : F.NoExotics) (hnZ : F.HasNoZero) :\n    F ∈ elemsNoExotics",
+     "sorry": false
+    },
+    {
+     "name": "FTheory.SU5.FluxesTen.noExotics_iff_mem_elemsNoExotics",
+     "kind": "lemma",
+     "line": 445,
+     "doc": "Completeness of `elemsNoExotics`, that is, every element of `FluxesTen`\nwhich obeys `NoExotics` is an element of `elemsNoExotics`, and every\nelement of `elemsNoExotics` obeys `NoExotics`.",
+     "statement": "lemma noExotics_iff_mem_elemsNoExotics (F : FluxesTen) :\n    F.NoExotics ∧ F.HasNoZero ↔ F ∈ elemsNoExotics",
+     "sorry": false
+    }
+   ],
+   "private": 0,
+   "aliases": 0,
+   "informal": 0
+  },
+  {
+   "file": "Physlib/StringTheory/FTheory/SU5/Fluxes/NoExotics/Elems.lean",
+   "module": "Physlib.StringTheory.FTheory.SU5.Fluxes.NoExotics.Elems",
+   "title": "Terms of `FluxesFive` and `FluxesTen` with no chiral exotics",
+   "doc": "## i. Overview\n\nIn this module we give the terms of type `FluxesFive` and `FluxesTen`\nwhich obey the `NoExotics` and `HasNoZero` propositions.\n\nIn each case, there is only a finite set of such elements, which we give explicitly.\nWe show that these sets are complete in the module\n`StringTheory.FTheory.SU5.Fluxes.NoExotics.Completeness`.\n\nThis module is reserved for the explicit sets of elements, and simple lemmas about the\nelements of those elements.\n\n## ii. Key results\n\n- `FluxesFive.elemsNoExotics` : The multiset of elements of `FluxesFive` which obey `NoExotics`\n  and `HasNoZero`.\n- `FluxesTen.elemsNoExotics` : The multiset of elements of `FluxesTen` which obey `NoExotics`\n  and `HasNoZero`.\n\n## iii. Table of contents\n\n- A. The multiset sets of `FluxesFive` with no chiral exotics and no zero fluxes\n  - A.1. The definition of the multiset\n  - A.2. The cardinality of the multiset is 31\n  - A.3. The multiset has no duplicates\n  - A.4. Every element of the multiset obeys `NoExotics`\n  - A.5. Every element of the multiset has at most 4 distinct flux pairs\n  - A.6. Every element of the multiset has at most 6 flux pairs\n  - A.7. The sum of all flux-pairs in any element of the multiset is (3, 0)\n  - A.8. Every element of the multiset obeys `HasNoZero`\n  - A.9. A sum relation for subsets of elements of the multiset\n- B. The multiset sets of `FluxesFive` with no chiral exotics and no zero fluxes\n  - B.1. The definition of the multiset\n  - B.2. The cardinality of the multiset is 6\n  - B.3. The multiset has no duplicates\n  - B.4. Every element of the multiset obeys `NoExotics`\n  - B.5. Every element of the multiset has at most 3 distinct flux pairs\n  - B.6. The sum of all flux-pairs in any element of the multiset is (3, 0)\n  - B.7. Every element of the multiset obeys `HasNoZero`\n\n## iv. References\n\n* None.",
+   "copyright": "2025 Joseph Tooby-Smith",
+   "sections": [
+    {
+     "line": 66,
+     "text": "## A. The multiset sets of `FluxesFive` with no chiral exotics and no zero fluxes"
+    },
+    {
+     "line": 74,
+     "text": "### A.1. The definition of the multiset"
+    },
+    {
+     "line": 105,
+     "text": "### A.2. The cardinality of the multiset is 31"
+    },
+    {
+     "line": 114,
+     "text": "### A.3. The multiset has no duplicates"
+    },
+    {
+     "line": 123,
+     "text": "### A.4. Every element of the multiset obeys `NoExotics`"
+    },
+    {
+     "line": 134,
+     "text": "### A.5. Every element of the multiset has at most 4 distinct flux pairs"
+    },
+    {
+     "line": 145,
+     "text": "### A.6. Every element of the multiset has at most 6 flux pairs"
+    },
+    {
+     "line": 156,
+     "text": "### A.7. The sum of all flux-pairs in any element of the multiset is (3, 0)"
+    },
+    {
+     "line": 167,
+     "text": "### A.8. Every element of the multiset obeys `HasNoZero`"
+    },
+    {
+     "line": 178,
+     "text": "### A.9. A sum relation for subsets of elements of the multiset"
+    },
+    {
+     "line": 193,
+     "text": "## B. The multiset sets of `FluxesFive` with no chiral exotics and no zero fluxes"
+    },
+    {
+     "line": 200,
+     "text": "### B.1. The definition of the multiset"
+    },
+    {
+     "line": 212,
+     "text": "### B.2. The cardinality of the multiset is 6"
+    },
+    {
+     "line": 221,
+     "text": "### B.3. The multiset has no duplicates"
+    },
+    {
+     "line": 230,
+     "text": "### B.4. Every element of the multiset obeys `NoExotics`"
+    },
+    {
+     "line": 241,
+     "text": "### B.5. Every element of the multiset has at most 3 distinct flux pairs"
+    },
+    {
+     "line": 252,
+     "text": "### B.6. The sum of all flux-pairs in any element of the multiset is (3, 0)"
+    },
+    {
+     "line": 263,
+     "text": "### B.7. Every element of the multiset obeys `HasNoZero`"
+    }
+   ],
+   "declarations": [
+    {
+     "name": "FTheory.SU5.FluxesFive.elemsNoExotics",
+     "kind": "def",
+     "line": 81,
+     "doc": "The elements of `FluxesFive` for which the `NoExotics` condition holds.",
+     "statement": "def elemsNoExotics : Multiset FluxesFive",
+     "sorry": false
+    },
+    {
+     "name": "FTheory.SU5.FluxesFive.elemsNoExotics_card",
+     "kind": "lemma",
+     "line": 111,
+     "doc": "",
+     "statement": "lemma elemsNoExotics_card : elemsNoExotics.card = 31",
+     "sorry": false
+    },
+    {
+     "name": "FTheory.SU5.FluxesFive.elemsNoExotics_nodup",
+     "kind": "lemma",
+     "line": 120,
+     "doc": "",
+     "statement": "lemma elemsNoExotics_nodup : elemsNoExotics.Nodup",
+     "sorry": false
+    },
+    {
+     "name": "FTheory.SU5.FluxesFive.noExotics_of_mem_elemsNoExotics",
+     "kind": "lemma",
+     "line": 129,
+     "doc": "",
+     "statement": "lemma noExotics_of_mem_elemsNoExotics (F : FluxesFive) (h : F ∈ elemsNoExotics) :\n    NoExotics F",
+     "sorry": false
+    },
+    {
+     "name": "FTheory.SU5.FluxesFive.toFinset_card_le_four_mem_elemsNoExotics",
+     "kind": "lemma",
+     "line": 140,
+     "doc": "",
+     "statement": "lemma toFinset_card_le_four_mem_elemsNoExotics (F : FluxesFive) (h : F ∈ elemsNoExotics) :\n    F.toFinset.card ≤ 4",
+     "sorry": false
+    },
+    {
+     "name": "FTheory.SU5.FluxesFive.card_le_six_mem_elemsNoExotics",
+     "kind": "lemma",
+     "line": 151,
+     "doc": "",
+     "statement": "lemma card_le_six_mem_elemsNoExotics (F : FluxesFive) (h : F ∈ elemsNoExotics) :\n    F.card ≤ 6",
+     "sorry": false
+    },
+    {
+     "name": "FTheory.SU5.FluxesFive.sum_of_mem_elemsNoExotics",
+     "kind": "lemma",
+     "line": 162,
+     "doc": "",
+     "statement": "lemma sum_of_mem_elemsNoExotics (F : FluxesFive) (h : F ∈ elemsNoExotics) :\n    F.sum = ⟨3, 0⟩",
+     "sorry": false
+    },
+    {
+     "name": "FTheory.SU5.FluxesFive.hasNoZero_of_mem_elemsNoExotics",
+     "kind": "lemma",
+     "line": 173,
+     "doc": "",
+     "statement": "lemma hasNoZero_of_mem_elemsNoExotics (F : FluxesFive) (h : F ∈ elemsNoExotics) :\n    F.HasNoZero",
+     "sorry": false
+    },
+    {
+     "name": "FTheory.SU5.FluxesFive.map_sum_add_of_mem_powerset_elemsNoExotics",
+     "kind": "lemma",
+     "line": 184,
+     "doc": "",
+     "statement": "lemma map_sum_add_of_mem_powerset_elemsNoExotics (F S : FluxesFive)\n    (hf : F ∈ FluxesFive.elemsNoExotics)\n    (hS: S ∈ Multiset.powerset F) :\n    (S.map (fun x => ⟨|x.1|, -|x.1|⟩)).sum +\n    (S.map (fun x => ⟨(0 : ℤ), |x.1 + x.2|⟩)).sum = S.sum",
+     "sorry": false
+    },
+    {
+     "name": "FTheory.SU5.FluxesTen.elemsNoExotics",
+     "kind": "def",
+     "line": 207,
+     "doc": "The elements of `FluxesTen` for which the `NoExotics` condition holds.",
+     "statement": "def elemsNoExotics : Multiset FluxesTen",
+     "sorry": false
+    },
+    {
+     "name": "FTheory.SU5.FluxesTen.elemsNoExotics_card",
+     "kind": "lemma",
+     "line": 218,
+     "doc": "",
+     "statement": "lemma elemsNoExotics_card : elemsNoExotics.card = 6",
+     "sorry": false
+    },
+    {
+     "name": "FTheory.SU5.FluxesTen.elemsNoExotics_nodup",
+     "kind": "lemma",
+     "line": 227,
+     "doc": "",
+     "statement": "lemma elemsNoExotics_nodup : elemsNoExotics.Nodup",
+     "sorry": false
+    },
+    {
+     "name": "FTheory.SU5.FluxesTen.noExotics_of_mem_elemsNoExotics",
+     "kind": "lemma",
+     "line": 236,
+     "doc": "",
+     "statement": "lemma noExotics_of_mem_elemsNoExotics (F : FluxesTen) (h : F ∈ elemsNoExotics) :\n    NoExotics F",
+     "sorry": false
+    },
+    {
+     "name": "FTheory.SU5.FluxesTen.toFinset_card_le_three_mem_elemsNoExotics",
+     "kind": "lemma",
+     "line": 247,
+     "doc": "",
+     "statement": "lemma toFinset_card_le_three_mem_elemsNoExotics (F : FluxesTen) (h : F ∈ elemsNoExotics) :\n    F.toFinset.card ≤ 3",
+     "sorry": false
+    },
+    {
+     "name": "FTheory.SU5.FluxesTen.sum_of_mem_elemsNoExotics",
+     "kind": "lemma",
+     "line": 258,
+     "doc": "",
+     "statement": "lemma sum_of_mem_elemsNoExotics (F : FluxesTen) (h : F ∈ elemsNoExotics) :\n    F.sum = ⟨3, 0⟩",
+     "sorry": false
+    },
+    {
+     "name": "FTheory.SU5.FluxesTen.hasNoZero_of_mem_elemsNoExotics",
+     "kind": "lemma",
+     "line": 269,
+     "doc": "",
+     "statement": "lemma hasNoZero_of_mem_elemsNoExotics (F : FluxesTen) (h : F ∈ elemsNoExotics) :\n    F.HasNoZero",
+     "sorry": false
+    }
+   ],
+   "private": 0,
+   "aliases": 0,
+   "informal": 0
+  },
+  {
+   "file": "Physlib/StringTheory/FTheory/SU5/Quanta/Basic.lean",
+   "module": "Physlib.StringTheory.FTheory.SU5.Quanta.Basic",
+   "title": "Quanta of representations",
+   "doc": "## i. Overview\n\nIn SU(5) × U(1) F-theory theory, each 5-bar and 10d representation\ncarries with it the quantum numbers of their U(1) charges and their fluxes.\n\nIn this module we define the data structure for these quanta and\nproperties thereof.\n\n## ii. Key results\n\n- `Quanta` : The structure containing the quantum numbers of the 5-bar and 10d\n  representations, as well as the charges of the `Hd` and `Hu` particles.\n- `Quanta.liftCharge` : Lifting a `ChargeSpectrum` to a multiset of `Quanta`\n  which have no chiral exotics and no zero fluxes.\n- `Quanta.AnomalyCancellation` : The anomaly cancellation conditions on a `Quanta`.\n\n## iii. Table of contents\n\n- A. The Quanta structure\n  - A.1. Repr instance on `Quanta`\n  - A.2. Extensionality lemma\n  - A.3. Decidable equality instance\n  - A.4. Map to the underlying `ChargeSpectrum`\n- B. The reduction of a `Quanta`\n- C. Lifting a charge spectrum to quanta with no exotics or zero fluxes\n  - C.1. Simplification of membership in the liftCharge multiset\n  - C.2. Charge spectrum of a lifted quanta\n- D. Anomaly cancellation conditions\n  - D.1. The anomaly coefficient of Hd\n  - D.2. The anomaly coefficient of Hu\n  - D.3. The anomaly cancellation condition propositions\n    - D.3.1. The propositions are decidable\n\n## iv. References\n\n* Rational F-Theory GUTs without exotics (arXiv:1401.5084), Anomaly cancellation conditions,\n  equation 22. [ref: arxiv_1401_5084]",
+   "copyright": "2025 Joseph Tooby-Smith",
+   "sections": [
+    {
+     "line": 60,
+     "text": "## A. The Quanta structure"
+    },
+    {
+     "line": 88,
+     "text": "### A.1. Repr instance on `Quanta`"
+    },
+    {
+     "line": 102,
+     "text": "### A.2. Extensionality lemma"
+    },
+    {
+     "line": 114,
+     "text": "### A.3. Decidable equality instance"
+    },
+    {
+     "line": 123,
+     "text": "### A.4. Map to the underlying `ChargeSpectrum`"
+    },
+    {
+     "line": 139,
+     "text": "## B. The reduction of a `Quanta`"
+    },
+    {
+     "line": 153,
+     "text": "## C. Lifting a charge spectrum to quanta with no exotics or zero fluxes"
+    },
+    {
+     "line": 168,
+     "text": "### C.1. Simplification of membership in the liftCharge multiset"
+    },
+    {
+     "line": 184,
+     "text": "### C.2. Charge spectrum of a lifted quanta"
+    },
+    {
+     "line": 199,
+     "text": "## D. Anomaly cancellation conditions\n\nThere are two anomaly cancellation conditions in the SU(5)×U(1) model which involve the\n`U(1)` charges. These are\n\n- `∑ᵢ qᵢ Nᵢ + ∑ₐ qₐ Nₐ = 0` where the first sum is over all 5-bar representations and the second\n  is over all 10d representations.\n- `∑ᵢ qᵢ² Nᵢ + 3 * ∑ₐ qₐ² Nₐ = 0` where the first sum is over all 5-bar representations and the\n  second is over all 10d representations.\n\nAccording to arXiv:1401.5084 [ref: arxiv_1401_5084] it is unclear whether this second condition\nshould necessarily be imposed."
+    },
+    {
+     "line": 216,
+     "text": "### D.1. The anomaly coefficient of Hd"
+    },
+    {
+     "line": 234,
+     "text": "### D.2. The anomaly coefficient of Hu"
+    },
+    {
+     "line": 252,
+     "text": "### D.3. The anomaly cancellation condition propositions"
+    },
+    {
+     "line": 274,
+     "text": "#### D.3.1. The propositions are decidable"
+    }
+   ],
+   "declarations": [
+    {
+     "name": "FTheory.SU5.Quanta",
+     "kind": "structure",
+     "line": 71,
+     "doc": "The quanta associated with the representations in a `SU(5) x U(1)` F-theory.\nThis contains the value of the charges and the flux integers `(M, N)` for the\n5-bar matter content and the 10d matter content, and the charges of the `Hd` and\n`Hu` particles (there values of `(M,N)` are not included as they are\nforced to be `(0, 1)` and `(0, -1)` respectively.",
+     "statement": "structure Quanta (𝓩 : Type := ℤ) where\n  /-- The charge of the Hd matter field. -/\n  qHd : Option 𝓩\n  /-- The negative charge of the Hu matter field.\n    In other words the charge of the Hu considered as a 5-bar field. -/\n  qHu : Option 𝓩\n  /-- The quanta carried by the 5-bar matter fields. -/\n  F : FiveQuanta 𝓩\n  /-- The quanta carried by the 10d matter fields. -/\n  T : TenQuanta 𝓩",
+     "sorry": false
+    },
+    {
+     "name": "",
+     "kind": "instance",
+     "line": 94,
+     "doc": "",
+     "statement": "unsafe instance [Repr 𝓩] : Repr (Quanta 𝓩)",
+     "sorry": false
+    },
+    {
+     "name": "FTheory.SU5.Quanta.ext",
+     "kind": "lemma",
+     "line": 109,
+     "doc": "",
+     "statement": "lemma ext {𝓩 : Type} {x y : Quanta 𝓩} (h1 : x.qHd = y.qHd) (h2 : x.qHu = y.qHu)\n    (h3 : x.F = y.F) (h4 : x.T = y.T) : x = y",
+     "sorry": false
+    },
+    {
+     "name": "",
+     "kind": "instance",
+     "line": 120,
+     "doc": "",
+     "statement": "instance [DecidableEq 𝓩] : DecidableEq (Quanta 𝓩)",
+     "sorry": false
+    },
+    {
+     "name": "FTheory.SU5.Quanta.toCharges",
+     "kind": "def",
+     "line": 129,
+     "doc": "The underlying `ChargeSpectrum` of a `Quanta`.",
+     "statement": "def toCharges [DecidableEq 𝓩] (x : Quanta 𝓩) : ChargeSpectrum 𝓩",
+     "sorry": false
+    },
+    {
+     "name": "FTheory.SU5.Quanta.toCharges_qHd",
+     "kind": "lemma",
+     "line": 135,
+     "doc": "",
+     "statement": "lemma toCharges_qHd [DecidableEq 𝓩] (x : Quanta 𝓩) : (toCharges x).qHd = x.qHd",
+     "sorry": false
+    },
+    {
+     "name": "FTheory.SU5.Quanta.toCharges_qHu",
+     "kind": "lemma",
+     "line": 137,
+     "doc": "",
+     "statement": "lemma toCharges_qHu [DecidableEq 𝓩] (x : Quanta 𝓩) : (toCharges x).qHu = x.qHu",
+     "sorry": false
+    },
+    {
+     "name": "FTheory.SU5.Quanta.reduce",
+     "kind": "def",
+     "line": 147,
+     "doc": "The reduce of `Quanta` is a new `Quanta` with all the fluxes corresponding to the same\ncharge (i.e. representation) added together.",
+     "statement": "def reduce [DecidableEq 𝓩] (x : Quanta 𝓩) : Quanta 𝓩",
+     "sorry": false
+    },
+    {
+     "name": "FTheory.SU5.Quanta.liftCharge",
+     "kind": "def",
+     "line": 161,
+     "doc": "Lifting a charge spectrum to quanta which do not have exotics and\nwhich have no zero flux.",
+     "statement": "def liftCharge [DecidableEq 𝓩] (c : ChargeSpectrum 𝓩) : Multiset (Quanta 𝓩)",
+     "sorry": false
+    },
+    {
+     "name": "FTheory.SU5.Quanta.mem_liftCharge_iff",
+     "kind": "lemma",
+     "line": 173,
+     "doc": "",
+     "statement": "lemma mem_liftCharge_iff [DecidableEq 𝓩] {c : ChargeSpectrum 𝓩}\n    {x : Quanta 𝓩} :\n    x ∈ liftCharge c ↔ x.qHd = c.qHd ∧ x.qHu = c.qHu ∧\n    x.F ∈ FiveQuanta.liftCharge c.Q5 ∧ x.T ∈ TenQuanta.liftCharge c.Q10",
+     "sorry": false
+    },
+    {
+     "name": "FTheory.SU5.Quanta.toCharges_of_mem_liftCharge",
+     "kind": "lemma",
+     "line": 190,
+     "doc": "",
+     "statement": "lemma toCharges_of_mem_liftCharge [DecidableEq 𝓩] {c : ChargeSpectrum 𝓩}\n    {x : Quanta 𝓩} (h : x ∈ liftCharge c) :\n    x.toCharges = c",
+     "sorry": false
+    },
+    {
+     "name": "FTheory.SU5.Quanta.HdAnomalyCoefficient",
+     "kind": "def",
+     "line": 223,
+     "doc": "The pair of anomaly cancellation coefficients associated with the `Hd` particle.",
+     "statement": "def HdAnomalyCoefficient [CommRing 𝓩] (qHd : Option 𝓩) : 𝓩 × 𝓩",
+     "sorry": false
+    },
+    {
+     "name": "FTheory.SU5.Quanta.HdAnomalyCoefficient_map",
+     "kind": "lemma",
+     "line": 229,
+     "doc": "",
+     "statement": "lemma HdAnomalyCoefficient_map {𝓩 𝓩1 : Type} [CommRing 𝓩] [CommRing 𝓩1]\n    (f : 𝓩 →+* 𝓩1) (qHd : Option 𝓩) :\n    HdAnomalyCoefficient (qHd.map f) = (f.prodMap f) (HdAnomalyCoefficient qHd)",
+     "sorry": false
+    },
+    {
+     "name": "FTheory.SU5.Quanta.HuAnomalyCoefficient",
+     "kind": "def",
+     "line": 241,
+     "doc": "The pair of anomaly cancellation coefficients associated with the `Hu` particle.",
+     "statement": "def HuAnomalyCoefficient [CommRing 𝓩] (qHu : Option 𝓩) : 𝓩 × 𝓩",
+     "sorry": false
+    },
+    {
+     "name": "FTheory.SU5.Quanta.HuAnomalyCoefficient_map",
+     "kind": "lemma",
+     "line": 247,
+     "doc": "",
+     "statement": "lemma HuAnomalyCoefficient_map {𝓩 𝓩1 : Type} [CommRing 𝓩] [CommRing 𝓩1]\n    (f : 𝓩 →+* 𝓩1) (qHu : Option 𝓩) :\n    HuAnomalyCoefficient (qHu.map f) = (f.prodMap f) (HuAnomalyCoefficient qHu)",
+     "sorry": false
+    },
+    {
+     "name": "FTheory.SU5.Quanta.LinearAnomalyCancellation",
+     "kind": "def",
+     "line": 261,
+     "doc": "The linear anomaly cancellation condition, corresponding to\n`∑ᵢ qᵢ Nᵢ + ∑ₐ qₐ Nₐ = 0` where the first sum is over all 5-bar representations and the second\n  is over all 10d representations.",
+     "statement": "def LinearAnomalyCancellation [CommRing 𝓩] (Q : Quanta 𝓩) : Prop",
+     "sorry": false
+    },
+    {
+     "name": "FTheory.SU5.Quanta.QuarticAnomalyCancellation",
+     "kind": "def",
+     "line": 269,
+     "doc": "The quartic anomaly cancellation condition, corresponding to\n`∑ᵢ qᵢ² Nᵢ + 3 * ∑ₐ qₐ² Nₐ = 0` where the first sum is over all 5-bar representations and the\n  second is over all 10d representations.",
+     "statement": "def QuarticAnomalyCancellation [CommRing 𝓩] (Q : Quanta 𝓩) :\n    Prop",
+     "sorry": false
+    },
+    {
+     "name": "",
+     "kind": "instance",
+     "line": 280,
+     "doc": "",
+     "statement": "instance [CommRing 𝓩] [DecidableEq 𝓩] (Q : Quanta 𝓩) : Decidable Q.LinearAnomalyCancellation",
+     "sorry": false
+    },
+    {
+     "name": "",
+     "kind": "instance",
+     "line": 284,
+     "doc": "",
+     "statement": "instance [CommRing 𝓩] [DecidableEq 𝓩] (Q : Quanta 𝓩) : Decidable Q.QuarticAnomalyCancellation",
+     "sorry": false
+    }
+   ],
+   "private": 0,
+   "aliases": 0,
+   "informal": 0
+  },
+  {
+   "file": "Physlib/StringTheory/FTheory/SU5/Quanta/FiveQuanta.lean",
+   "module": "Physlib.StringTheory.FTheory.SU5.Quanta.FiveQuanta",
+   "title": "Quanta of 5-d representations",
+   "doc": "## i. Overview\n\nThe 5-bar representations of the `SU(5)×U(1)` carry\nthe quantum numbers of their `U(1)` charges and their fluxes.\n\nIn this module we define the data structure for these quanta and\nproperties thereof.\n\n## ii. Key results\n\n- `FiveQuanta` is the type of quanta of 5-bar representations.\n- `FiveQuanta.toFluxesFive` is the underlying `FluxesFive` of a `FiveQuanta`.\n- `FiveQuanta.toCharges` is the underlying Multiset charges of a `FiveQuanta`.\n- `FiveQuanta.reduce` is the reduction of a `FiveQuanta` which adds together\n  all the fluxes corresponding to the same charge (i.e. representation).\n- `FiveQuanta.liftCharges` given a charge `c` the `FiveQuanta` which have\n  charge `c` and no exotics or zero fluxes.\n- `FiveQuanta.anomalyCoefficient` is the anomaly coefficient associated with a `FiveQuanta`.\n\n## iii. Table of contents\n\n- A. The definition of `FiveQuanta`\n  - A.1. The map to underlying fluxes\n  - A.2. The map to underlying charges\n  - A.3. The map from charges to fluxes\n- B. The reduction of a `FiveQuanta`\n  - B.1. The reduced `FiveQuanta` has no duplicate elements\n  - B.2. The underlying charges of the reduced `FiveQuanta` are the deduped charges\n  - B.3. Membership condition on the reduced `FiveQuanta`\n  - B.4. Filter of the reduced `FiveQuanta` by a charge\n  - B.5. The reduction is idempotent\n  - B.6. Preservation of certain sums under reduction\n  - B.7. Reduction does nothing if no duplicate charges\n  - B.8. The charge map is preserved by reduction\n  - B.9. A fluxes in the reduced `FiveQuanta` is a sum of fluxes in the original `FiveQuanta`\n  - B.10. No exotics condition on the reduced `FiveQuanta`\n    - B.10.1. Number of chiral `L`\n    - B.10.2. Number of anti-chiral `L`\n    - B.10.3. Number of chiral `D`\n    - B.10.4. Number of anti-chiral `D`\n    - B.10.5. The `NoExotics` condition on the reduced `FiveQuanta`\n  - B.11. Reduce member of `FluxesFive.elemsNoExotics`\n- C. Decomposition of a `FiveQuanta` into basic fluxes\n  - C.1. Decomposition of fluxes\n  - C.2. Decomposition of a `FiveQuanta` (with no exotics)\n    - C.2.1. Decomposition distributes over addition\n    - C.2.2. Decomposition commutes with filtering charges\n    - C.2.3. Decomposition preserves the charge map\n    - C.2.4. Decomposition preserves the charges\n    - C.2.5. Decomposition preserves the reduction\n    - C.2.6. Fluxes of the decomposition of a `FiveQuanta`\n- D. Lifting charges to `FiveQuanta`\n  - D.1. `liftCharge c`: multiset of five-quanta for a finite set of charges `c` with no exotics\n  - D.2. FiveQuanta in `liftCharge c` have a finite set of charges `c`\n  - D.3. FiveQuanta in `liftCharge c` have no duplicate charges\n  - D.4. Membership in `liftCharge c` iff is reduction of `FiveQuanta` with given fluxes\n  - D.5. FiveQuanta in `liftCharge c` do not have zero fluxes\n  - D.6. FiveQuanta in `liftCharge c` have no exotics\n  - D.7. Membership in `liftCharge c` iff have no exotics, no zero fluxes, and charges `c`\n  - D.8. `liftCharge c` is preserved under a map if reduced\n- E. Anomaly cancellation coefficients\n  - E.1. Anomaly coefficients of a `FiveQuanta`\n  - E.2. Anomaly coefficients under a map\n  - E.3. Anomaly coefficients is preserved under `reduce`\n\n## iv. References\n\n* Rational F-Theory GUTs without exotics (arXiv:1401.5084), Anomaly cancellation\n  conditions. [ref: arxiv_1401_5084]",
+   "copyright": "2025 Joseph Tooby-Smith",
+   "sections": [
+    {
+     "line": 93,
+     "text": "## A. The definition of `FiveQuanta`"
+    },
+    {
+     "line": 107,
+     "text": "### A.1. The map to underlying fluxes"
+    },
+    {
+     "line": 116,
+     "text": "### A.2. The map to underlying charges"
+    },
+    {
+     "line": 125,
+     "text": "### A.3. The map from charges to fluxes"
+    },
+    {
+     "line": 144,
+     "text": "## B. The reduction of a `FiveQuanta`"
+    },
+    {
+     "line": 159,
+     "text": "### B.1. The reduced `FiveQuanta` has no duplicate elements"
+    },
+    {
+     "line": 173,
+     "text": "### B.2. The underlying charges of the reduced `FiveQuanta` are the deduped charges"
+    },
+    {
+     "line": 182,
+     "text": "### B.3. Membership condition on the reduced `FiveQuanta`"
+    },
+    {
+     "line": 194,
+     "text": "### B.4. Filter of the reduced `FiveQuanta` by a charge"
+    },
+    {
+     "line": 205,
+     "text": "### B.5. The reduction is idempotent"
+    },
+    {
+     "line": 223,
+     "text": "### B.6. Preservation of certain sums under reduction"
+    },
+    {
+     "line": 288,
+     "text": "### B.7. Reduction does nothing if no duplicate charges"
+    },
+    {
+     "line": 319,
+     "text": "### B.8. The charge map is preserved by reduction"
+    },
+    {
+     "line": 336,
+     "text": "### B.9. A fluxes in the reduced `FiveQuanta` is a sum of fluxes in the original `FiveQuanta`"
+    },
+    {
+     "line": 374,
+     "text": "### B.10. No exotics condition on the reduced `FiveQuanta`"
+    },
+    {
+     "line": 380,
+     "text": "#### B.10.1. Number of chiral `L`"
+    },
+    {
+     "line": 405,
+     "text": "#### B.10.2. Number of anti-chiral `L`"
+    },
+    {
+     "line": 425,
+     "text": "#### B.10.3. Number of chiral `D`"
+    },
+    {
+     "line": 449,
+     "text": "#### B.10.4. Number of anti-chiral `D`"
+    },
+    {
+     "line": 469,
+     "text": "#### B.10.5. The `NoExotics` condition on the reduced `FiveQuanta`"
+    },
+    {
+     "line": 481,
+     "text": "### B.11. Reduce member of `FluxesFive.elemsNoExotics`"
+    },
+    {
+     "line": 499,
+     "text": "## C. Decomposition of a `FiveQuanta` into basic fluxes"
+    },
+    {
+     "line": 505,
+     "text": "### C.1. Decomposition of fluxes"
+    },
+    {
+     "line": 523,
+     "text": "### C.2. Decomposition of a `FiveQuanta` (with no exotics)"
+    },
+    {
+     "line": 534,
+     "text": "#### C.2.1. Decomposition distributes over addition"
+    },
+    {
+     "line": 544,
+     "text": "#### C.2.2. Decomposition commutes with filtering charges"
+    },
+    {
+     "line": 580,
+     "text": "#### C.2.3. Decomposition preserves the charge map"
+    },
+    {
+     "line": 602,
+     "text": "#### C.2.4. Decomposition preserves the charges"
+    },
+    {
+     "line": 631,
+     "text": "#### C.2.5. Decomposition preserves the reduction"
+    },
+    {
+     "line": 647,
+     "text": "#### C.2.6. Fluxes of the decomposition of a `FiveQuanta`"
+    },
+    {
+     "line": 666,
+     "text": "## D. Lifting charges to `FiveQuanta`"
+    },
+    {
+     "line": 678,
+     "text": "### D.1. `liftCharge c`: multiset of five-quanta for a finite set of charges `c` with no exotics\n\nThis is an efficient definition, we will later show that it gives the correct answer"
+    },
+    {
+     "line": 699,
+     "text": "### D.2. FiveQuanta in `liftCharge c` have a finite set of charges `c`"
+    },
+    {
+     "line": 715,
+     "text": "### D.3. FiveQuanta in `liftCharge c` have no duplicate charges"
+    },
+    {
+     "line": 727,
+     "text": "### D.4. Membership in `liftCharge c` iff is reduction of `FiveQuanta` with given fluxes"
+    },
+    {
+     "line": 807,
+     "text": "### D.5. FiveQuanta in `liftCharge c` do not have zero fluxes"
+    },
+    {
+     "line": 823,
+     "text": "### D.6. FiveQuanta in `liftCharge c` have no exotics"
+    },
+    {
+     "line": 838,
+     "text": "### D.7. Membership in `liftCharge c` iff have no exotics, no zero fluxes, and charges `c`"
+    },
+    {
+     "line": 876,
+     "text": "### D.8. `liftCharge c` is preserved under a map if reduced"
+    },
+    {
+     "line": 895,
+     "text": "## E. Anomaly cancellation coefficients"
+    },
+    {
+     "line": 905,
+     "text": "### E.1. Anomaly coefficients of a `FiveQuanta`"
+    },
+    {
+     "line": 922,
+     "text": "### E.2. Anomaly coefficients under a map"
+    },
+    {
+     "line": 935,
+     "text": "### E.3. Anomaly coefficients is preserved under `reduce`"
+    }
+   ],
+   "declarations": [
+    {
+     "name": "FTheory.SU5.FiveQuanta",
+     "kind": "abbrev",
+     "line": 101,
+     "doc": "The quanta of 5-bar representations corresponding to a multiset of\n`(q, M, N)` for each particle. `(M, N)` are defined in the `FluxesFive` module.",
+     "statement": "abbrev FiveQuanta (𝓩 : Type := ℤ) : Type",
+     "sorry": false
+    },
+    {
+     "name": "FTheory.SU5.FiveQuanta.toFluxesFive",
+     "kind": "def",
+     "line": 114,
+     "doc": "The underlying `FluxesFive` from a `FiveQuanta`.",
+     "statement": "def toFluxesFive (x : FiveQuanta 𝓩) : FluxesFive",
+     "sorry": false
+    },
+    {
+     "name": "FTheory.SU5.FiveQuanta.toCharges",
+     "kind": "def",
+     "line": 123,
+     "doc": "The underlying Multiset charges from a `FiveQuanta`.",
+     "statement": "def toCharges (x : FiveQuanta 𝓩) : Multiset 𝓩",
+     "sorry": false
+    },
+    {
+     "name": "FTheory.SU5.FiveQuanta.toChargeMap",
+     "kind": "def",
+     "line": 133,
+     "doc": "The map which takes a charge to the overall flux it\ncorresponds to in a `FiveQuanta`.",
+     "statement": "def toChargeMap [DecidableEq 𝓩] (x : FiveQuanta 𝓩) : 𝓩 → Fluxes",
+     "sorry": false
+    },
+    {
+     "name": "FTheory.SU5.FiveQuanta.toChargeMap_of_not_mem",
+     "kind": "lemma",
+     "line": 136,
+     "doc": "",
+     "statement": "lemma toChargeMap_of_not_mem [DecidableEq 𝓩] (x : FiveQuanta 𝓩) {z : 𝓩} (h : z ∉ x.toCharges) :\n    x.toChargeMap z = 0",
+     "sorry": false
+    },
+    {
+     "name": "FTheory.SU5.FiveQuanta.reduce",
+     "kind": "def",
+     "line": 156,
+     "doc": "The `reduce` of `FiveQuanta` is a new `FiveQuanta` with all the fluxes\ncorresponding to the same charge (i.e. representation) added together.",
+     "statement": "def reduce (x : FiveQuanta 𝓩) : FiveQuanta 𝓩",
+     "sorry": false
+    },
+    {
+     "name": "FTheory.SU5.FiveQuanta.reduce_nodup",
+     "kind": "lemma",
+     "line": 165,
+     "doc": "",
+     "statement": "lemma reduce_nodup (x : FiveQuanta 𝓩) : x.reduce.Nodup",
+     "sorry": false
+    },
+    {
+     "name": "FTheory.SU5.FiveQuanta.reduce_dedup",
+     "kind": "lemma",
+     "line": 170,
+     "doc": "",
+     "statement": "lemma reduce_dedup (x : FiveQuanta 𝓩) : x.reduce.dedup = x.reduce",
+     "sorry": false
+    },
+    {
+     "name": "FTheory.SU5.FiveQuanta.reduce_toCharges",
+     "kind": "lemma",
+     "line": 179,
+     "doc": "",
+     "statement": "lemma reduce_toCharges (x : FiveQuanta 𝓩) : x.reduce.toCharges = x.toCharges.dedup",
+     "sorry": false
+    },
+    {
+     "name": "FTheory.SU5.FiveQuanta.mem_reduce_iff",
+     "kind": "lemma",
+     "line": 188,
+     "doc": "",
+     "statement": "lemma mem_reduce_iff (x : FiveQuanta 𝓩) (p : 𝓩 × Fluxes) :\n    p ∈ x.reduce ↔ p.1 ∈ x.toCharges ∧\n      p.2 = ((x.filter (fun f => f.1 = p.1)).map (fun y => y.2)).sum",
+     "sorry": false
+    },
+    {
+     "name": "FTheory.SU5.FiveQuanta.reduce_filter",
+     "kind": "lemma",
+     "line": 200,
+     "doc": "",
+     "statement": "lemma reduce_filter (x : FiveQuanta 𝓩) (q : 𝓩) (h : q ∈ x.toCharges) :\n    x.reduce.filter (fun f => f.1 = q) =\n    {(q, ((x.filter (fun f => f.1 = q)).map (fun y => y.2)).sum)}",
+     "sorry": false
+    },
+    {
+     "name": "FTheory.SU5.FiveQuanta.reduce_reduce",
+     "kind": "lemma",
+     "line": 212,
+     "doc": "",
+     "statement": "lemma reduce_reduce (x : FiveQuanta 𝓩) :\n    x.reduce.reduce = x.reduce",
+     "sorry": false
+    },
+    {
+     "name": "FTheory.SU5.FiveQuanta.reduce_sum_eq_sum_toCharges",
+     "kind": "lemma",
+     "line": 229,
+     "doc": "",
+     "statement": "lemma reduce_sum_eq_sum_toCharges {M} [AddCommMonoid M] (x : FiveQuanta 𝓩) (f : 𝓩 → Fluxes →+ M) :\n    (x.reduce.map fun (q5, x) => f q5 x).sum = (x.map fun (q5, x) => f q5 x).sum",
+     "sorry": false
+    },
+    {
+     "name": "FTheory.SU5.FiveQuanta.reduce_eq_self_of_ofCharges_nodup",
+     "kind": "lemma",
+     "line": 294,
+     "doc": "",
+     "statement": "lemma reduce_eq_self_of_ofCharges_nodup (x : FiveQuanta 𝓩) (h : x.toCharges.Nodup) :\n    x.reduce = x",
+     "sorry": false
+    },
+    {
+     "name": "FTheory.SU5.FiveQuanta.reduce_toChargeMap_eq",
+     "kind": "lemma",
+     "line": 325,
+     "doc": "",
+     "statement": "lemma reduce_toChargeMap_eq (x : FiveQuanta 𝓩) :\n    x.reduce.toChargeMap = x.toChargeMap",
+     "sorry": false
+    },
+    {
+     "name": "FTheory.SU5.FiveQuanta.mem_powerset_sum_of_mem_reduce_toFluxesFive",
+     "kind": "lemma",
+     "line": 342,
+     "doc": "",
+     "statement": "lemma mem_powerset_sum_of_mem_reduce_toFluxesFive {F : FiveQuanta 𝓩}\n    {f : Fluxes} (hf : f ∈ F.reduce.toFluxesFive) :\n    f ∈ (Multiset.powerset F.toFluxesFive).map fun s => s.sum",
+     "sorry": false
+    },
+    {
+     "name": "FTheory.SU5.FiveQuanta.mem_powerset_sum_of_mem_reduce_toFluxesFive_filter",
+     "kind": "lemma",
+     "line": 354,
+     "doc": "",
+     "statement": "lemma mem_powerset_sum_of_mem_reduce_toFluxesFive_filter {F : FiveQuanta 𝓩}\n    {f : Fluxes} (hf : f ∈ F.reduce.toFluxesFive) :\n    f ∈ (F.toFluxesFive.powerset.filter fun s => s ≠ ∅).map fun s => s.sum",
+     "sorry": false
+    },
+    {
+     "name": "FTheory.SU5.FiveQuanta.reduce_numChiralL_of_mem_elemsNoExotics",
+     "kind": "lemma",
+     "line": 386,
+     "doc": "",
+     "statement": "lemma reduce_numChiralL_of_mem_elemsNoExotics {F : FiveQuanta 𝓩}\n    (hx : F.toFluxesFive ∈ FluxesFive.elemsNoExotics) :\n    F.reduce.toFluxesFive.numChiralL = 3",
+     "sorry": false
+    },
+    {
+     "name": "FTheory.SU5.FiveQuanta.reduce_numAntiChiralL_of_mem_elemsNoExotics",
+     "kind": "lemma",
+     "line": 411,
+     "doc": "",
+     "statement": "lemma reduce_numAntiChiralL_of_mem_elemsNoExotics {F : FiveQuanta 𝓩}\n    (hx : F.toFluxesFive ∈ FluxesFive.elemsNoExotics) :\n    F.reduce.toFluxesFive.numAntiChiralL = 0",
+     "sorry": false
+    },
+    {
+     "name": "FTheory.SU5.FiveQuanta.reduce_numChiralD_of_mem_elemsNoExotics",
+     "kind": "lemma",
+     "line": 431,
+     "doc": "",
+     "statement": "lemma reduce_numChiralD_of_mem_elemsNoExotics {F : FiveQuanta 𝓩}\n    (hx : F.toFluxesFive ∈ FluxesFive.elemsNoExotics) :\n    F.reduce.toFluxesFive.numChiralD = 3",
+     "sorry": false
+    },
+    {
+     "name": "FTheory.SU5.FiveQuanta.reduce_numAntiChiralD_of_mem_elemsNoExotics",
+     "kind": "lemma",
+     "line": 455,
+     "doc": "",
+     "statement": "lemma reduce_numAntiChiralD_of_mem_elemsNoExotics {F : FiveQuanta 𝓩}\n    (hx : F.toFluxesFive ∈ FluxesFive.elemsNoExotics) :\n    F.reduce.toFluxesFive.numAntiChiralD = 0",
+     "sorry": false
+    },
+    {
+     "name": "FTheory.SU5.FiveQuanta.reduce_noExotics_of_mem_elemsNoExotics",
+     "kind": "lemma",
+     "line": 474,
+     "doc": "",
+     "statement": "lemma reduce_noExotics_of_mem_elemsNoExotics {F : FiveQuanta 𝓩}\n    (hx : F.toFluxesFive ∈ FluxesFive.elemsNoExotics) :\n    F.reduce.toFluxesFive.NoExotics",
+     "sorry": false
+    },
+    {
+     "name": "FTheory.SU5.FiveQuanta.reduce_mem_elemsNoExotics",
+     "kind": "lemma",
+     "line": 487,
+     "doc": "",
+     "statement": "lemma reduce_mem_elemsNoExotics {F : FiveQuanta 𝓩}\n    (hx : F.toFluxesFive ∈ FluxesFive.elemsNoExotics) :\n    F.reduce.toFluxesFive ∈ FluxesFive.elemsNoExotics",
+     "sorry": false
+    },
+    {
+     "name": "FTheory.SU5.FiveQuanta.decomposeFluxes",
+     "kind": "def",
+     "line": 512,
+     "doc": "The decomposition of a flux into `⟨1, -1⟩` and `⟨0, 1⟩`.",
+     "statement": "def decomposeFluxes (f : Fluxes) : Multiset Fluxes",
+     "sorry": false
+    },
+    {
+     "name": "FTheory.SU5.FiveQuanta.decomposeFluxes_sum_of_noExotics",
+     "kind": "lemma",
+     "line": 516,
+     "doc": "",
+     "statement": "lemma decomposeFluxes_sum_of_noExotics (f : Fluxes) (hf : ∃ F ∈ FluxesFive.elemsNoExotics, f ∈ F) :\n    (decomposeFluxes f).sum = f",
+     "sorry": false
+    },
+    {
+     "name": "FTheory.SU5.FiveQuanta.decompose",
+     "kind": "def",
+     "line": 531,
+     "doc": "The decomposition of a `FiveQuanta` into a `FiveQuanta` which has the\nsame `reduce` by has fluxes `⟨1, -1⟩` and `⟨0,1⟩` only.",
+     "statement": "def decompose (x : FiveQuanta 𝓩) : FiveQuanta 𝓩",
+     "sorry": false
+    },
+    {
+     "name": "FTheory.SU5.FiveQuanta.decompose_add",
+     "kind": "lemma",
+     "line": 540,
+     "doc": "",
+     "statement": "lemma decompose_add (x y : FiveQuanta 𝓩) :\n    (x + y).decompose = x.decompose + y.decompose",
+     "sorry": false
+    },
+    {
+     "name": "FTheory.SU5.FiveQuanta.decompose_filter_charge",
+     "kind": "lemma",
+     "line": 550,
+     "doc": "",
+     "statement": "lemma decompose_filter_charge [DecidableEq 𝓩] (x : FiveQuanta 𝓩) (q : 𝓩) :\n    (x.decompose).filter (fun p => p.1 = q) =\n    decompose (x.filter (fun p => p.1 = q))",
+     "sorry": false
+    },
+    {
+     "name": "FTheory.SU5.FiveQuanta.decompose_toChargeMap",
+     "kind": "lemma",
+     "line": 586,
+     "doc": "",
+     "statement": "lemma decompose_toChargeMap [DecidableEq 𝓩] (x : FiveQuanta 𝓩)\n    (hx : x.toFluxesFive ∈ FluxesFive.elemsNoExotics) :\n    x.decompose.toChargeMap = x.toChargeMap",
+     "sorry": false
+    },
+    {
+     "name": "FTheory.SU5.FiveQuanta.decompose_toCharges_dedup",
+     "kind": "lemma",
+     "line": 608,
+     "doc": "",
+     "statement": "lemma decompose_toCharges_dedup [DecidableEq 𝓩] (x : FiveQuanta 𝓩)\n    (hx : x.toFluxesFive ∈ FluxesFive.elemsNoExotics) :\n    x.decompose.toCharges.dedup = x.toCharges.dedup",
+     "sorry": false
+    },
+    {
+     "name": "FTheory.SU5.FiveQuanta.decompose_reduce",
+     "kind": "lemma",
+     "line": 637,
+     "doc": "",
+     "statement": "lemma decompose_reduce (x : FiveQuanta 𝓩) [DecidableEq 𝓩]\n    (hx : x.toFluxesFive ∈ FluxesFive.elemsNoExotics) :\n    x.decompose.reduce = x.reduce",
+     "sorry": false
+    },
+    {
+     "name": "FTheory.SU5.FiveQuanta.decompose_toFluxesFive",
+     "kind": "lemma",
+     "line": 653,
+     "doc": "",
+     "statement": "lemma decompose_toFluxesFive (x : FiveQuanta 𝓩)\n    (hx : x.toFluxesFive ∈ FluxesFive.elemsNoExotics) :\n    x.decompose.toFluxesFive = {⟨1, -1⟩, ⟨1, -1⟩, ⟨1, -1⟩, ⟨0, 1⟩, ⟨0, 1⟩, ⟨0, 1⟩}",
+     "sorry": false
+    },
+    {
+     "name": "FTheory.SU5.FiveQuanta.liftCharge",
+     "kind": "def",
+     "line": 688,
+     "doc": "Given a finite set of charges `c` the `FiveQuanta`\nwhich do not have exotics, duplicate charges or zero fluxes, which map down to `c`.",
+     "statement": "def liftCharge (c : Finset 𝓩) : Multiset (FiveQuanta 𝓩)",
+     "sorry": false
+    },
+    {
+     "name": "FTheory.SU5.FiveQuanta.toCharges_toFinset_of_mem_liftCharge",
+     "kind": "lemma",
+     "line": 705,
+     "doc": "",
+     "statement": "lemma toCharges_toFinset_of_mem_liftCharge (c : Finset 𝓩) {x : FiveQuanta 𝓩}\n    (h : x ∈ liftCharge c) : x.toCharges.toFinset = c",
+     "sorry": false
+    },
+    {
+     "name": "FTheory.SU5.FiveQuanta.toCharges_nodup_of_mem_liftCharge",
+     "kind": "lemma",
+     "line": 721,
+     "doc": "",
+     "statement": "lemma toCharges_nodup_of_mem_liftCharge (c : Finset 𝓩) {x : FiveQuanta 𝓩}\n    (h : x ∈ liftCharge c) : x.toCharges.Nodup",
+     "sorry": false
+    },
+    {
+     "name": "FTheory.SU5.FiveQuanta.exists_toCharges_toFluxesFive_of_mem_liftCharge",
+     "kind": "lemma",
+     "line": 733,
+     "doc": "",
+     "statement": "lemma exists_toCharges_toFluxesFive_of_mem_liftCharge (c : Finset 𝓩) {x : FiveQuanta 𝓩}\n    (h : x ∈ liftCharge c) :\n    ∃ a : FiveQuanta 𝓩, a.reduce = x ∧ a.toCharges.toFinset = c ∧ a.toFluxesFive =\n      {⟨1, -1⟩, ⟨1, -1⟩, ⟨1, -1⟩, ⟨0, 1⟩, ⟨0, 1⟩, ⟨0, 1⟩}",
+     "sorry": false
+    },
+    {
+     "name": "FTheory.SU5.FiveQuanta.mem_liftCharge_of_exists_toCharges_toFluxesFive",
+     "kind": "lemma",
+     "line": 749,
+     "doc": "",
+     "statement": "lemma mem_liftCharge_of_exists_toCharges_toFluxesFive (c : Finset 𝓩) {x : FiveQuanta 𝓩}\n    (h : ∃ a : FiveQuanta 𝓩, a.reduce = x ∧ a.toCharges.toFinset = c ∧ a.toFluxesFive =\n      {⟨1, -1⟩, ⟨1, -1⟩, ⟨1, -1⟩, ⟨0, 1⟩, ⟨0, 1⟩, ⟨0, 1⟩}) :\n    x ∈ liftCharge c",
+     "sorry": false
+    },
+    {
+     "name": "FTheory.SU5.FiveQuanta.mem_liftCharge_iff_exists",
+     "kind": "lemma",
+     "line": 800,
+     "doc": "",
+     "statement": "lemma mem_liftCharge_iff_exists (c : Finset 𝓩) {x : FiveQuanta 𝓩} :\n    x ∈ liftCharge c ↔ ∃ a : FiveQuanta 𝓩, a.reduce = x ∧\n      a.toCharges.toFinset = c ∧ a.toFluxesFive =\n      {⟨1, -1⟩, ⟨1, -1⟩, ⟨1, -1⟩, ⟨0, 1⟩, ⟨0, 1⟩, ⟨0, 1⟩}",
+     "sorry": false
+    },
+    {
+     "name": "FTheory.SU5.FiveQuanta.hasNoZero_of_mem_liftCharge",
+     "kind": "lemma",
+     "line": 813,
+     "doc": "",
+     "statement": "lemma hasNoZero_of_mem_liftCharge (c : Finset 𝓩) {x : FiveQuanta 𝓩}\n    (h : x ∈ liftCharge c) : x.toFluxesFive.HasNoZero",
+     "sorry": false
+    },
+    {
+     "name": "FTheory.SU5.FiveQuanta.noExotics_of_mem_liftCharge",
+     "kind": "lemma",
+     "line": 829,
+     "doc": "",
+     "statement": "lemma noExotics_of_mem_liftCharge (c : Finset 𝓩) (F : FiveQuanta 𝓩)\n    (h : F ∈ liftCharge c) :\n    F.toFluxesFive.NoExotics",
+     "sorry": false
+    },
+    {
+     "name": "FTheory.SU5.FiveQuanta.mem_liftCharge_of_mem_noExotics_hasNoZero",
+     "kind": "lemma",
+     "line": 844,
+     "doc": "",
+     "statement": "lemma mem_liftCharge_of_mem_noExotics_hasNoZero (c : Finset 𝓩) {x : FiveQuanta 𝓩}\n    (h1 : x.toFluxesFive.NoExotics) (h2 : x.toFluxesFive.HasNoZero)\n    (h3 : x.toCharges.toFinset = c) (h4 : x.toCharges.Nodup) :\n    x ∈ liftCharge c",
+     "sorry": false
+    },
+    {
+     "name": "FTheory.SU5.FiveQuanta.mem_liftCharge_iff",
+     "kind": "lemma",
+     "line": 862,
+     "doc": "",
+     "statement": "lemma mem_liftCharge_iff (c : Finset 𝓩) (x : FiveQuanta 𝓩) :\n    x ∈ liftCharge c ↔ x.toFluxesFive ∈ FluxesFive.elemsNoExotics\n      ∧ x.toCharges.toFinset = c ∧ x.toCharges.Nodup",
+     "sorry": false
+    },
+    {
+     "name": "FTheory.SU5.FiveQuanta.map_liftCharge",
+     "kind": "lemma",
+     "line": 882,
+     "doc": "",
+     "statement": "lemma map_liftCharge {𝓩 𝓩1 : Type}[DecidableEq 𝓩] [DecidableEq 𝓩1] [CommRing 𝓩] [CommRing 𝓩1]\n    (f : 𝓩 →+* 𝓩1) (c : Finset 𝓩) (F : FiveQuanta 𝓩) (h : F ∈ liftCharge c) :\n    FiveQuanta.reduce (F.map fun y => (f y.1, y.2)) ∈ liftCharge (c.image f)",
+     "sorry": false
+    },
+    {
+     "name": "FTheory.SU5.FiveQuanta.anomalyCoefficient",
+     "kind": "def",
+     "line": 919,
+     "doc": "The anomaly coefficient of a `FiveQuanta` is given by the pair of integers:\n`(∑ᵢ qᵢ Nᵢ, ∑ᵢ qᵢ² Nᵢ)`.\n\nThe first components is for the mixed U(1)-MSSM, see equation (22) of arXiv:1401.5084\n[ref: arxiv_1401_5084]. The second component is for the mixed U(1)Y-U(1)-U(1) gauge anomaly,\nsee equation (23) of arXiv:1401.5084 [ref: arxiv_1401_5084].",
+     "statement": "def anomalyCoefficient (F : FiveQuanta 𝓩) : 𝓩 × 𝓩",
+     "sorry": false
+    },
+    {
+     "name": "FTheory.SU5.FiveQuanta.anomalyCoefficient_of_map",
+     "kind": "lemma",
+     "line": 929,
+     "doc": "",
+     "statement": "lemma anomalyCoefficient_of_map {𝓩 𝓩1 : Type} [CommRing 𝓩] [CommRing 𝓩1]\n    (f : 𝓩 →+* 𝓩1) (F : FiveQuanta 𝓩) :\n    FiveQuanta.anomalyCoefficient (F.map fun y => (f y.1, y.2) : FiveQuanta 𝓩1) =\n    (f.prodMap f) F.anomalyCoefficient",
+     "sorry": false
+    },
+    {
+     "name": "FTheory.SU5.FiveQuanta.anomalyCoefficient_of_reduce",
+     "kind": "lemma",
+     "line": 941,
+     "doc": "",
+     "statement": "lemma anomalyCoefficient_of_reduce (F : FiveQuanta 𝓩) [DecidableEq 𝓩] :\n    F.reduce.anomalyCoefficient = F.anomalyCoefficient",
+     "sorry": false
+    }
+   ],
+   "private": 0,
+   "aliases": 0,
+   "informal": 0
+  },
+  {
+   "file": "Physlib/StringTheory/FTheory/SU5/Quanta/IsViable.lean",
+   "module": "Physlib.StringTheory.FTheory.SU5.Quanta.IsViable",
+   "title": "Viable Quanta with Yukawa",
+   "doc": "## i. Overview\n\nWe say a term of a type `Quanta` is viable\n  if it satisfies the following properties:\n- It has a `Hd`, `Hu` and at least one matter particle in the 5 and 10 representation.\n- It has no exotic chiral particles.\n- It leads to a top Yukawa coupling.\n- It does not lead to a pheno constraining terms.\n- It does not lead to a dangerous Yukawa coupling at one insertion of the Yukawa singlets.\n- It satisfies linear anomaly cancellation.\n- The charges are allowed by an `I` configuration.\n\nWe also write down the explicit set of viable quanta, and prove that this set is complete.\n\nOne can view the dependencies of this module with:\n\n```\nlake exe graph --from\n  Physlib.StringTheory.FTheory.SU5.Fluxes.Basic,Physlib.Particles.SuperSymmetry.SU5.FieldLabels\n  my_graph.pdf\n```\n\n## ii. Key results\n\n- `Quanta.IsViable` : The proposition on a `Quanta` that it is viable.\n- `Quanta.viableElems` : The multiset of viable quanta.\n- `Quanta.isViable_iff_mem_viableElems` : A quanta is viable if and only if it is in the\n  `Quanta.viableElems`.\n\n## iii. Table of contents\n\n- A. The condition for a `Quanta` to be viable\n  - A.1. Simplification of the prop to use the set of viable charges `viableCharges I`\n  - A.2. Further simplification of the prop to use the set of viable charges `Quanta.liftCharge`\n  - A.3. Further simplification of the prop to use the anomaly free set of viable charges\n- B. The multiset of viable quanta\n  - B.1. Every element of the multiset is viable\n  - B.2. A quanta is viable if and only if it is in the multiset\n  - B.3. Every element of the multiset regenerates Yukawa at two insertions of the Yukawa singlets\n  - B.4. Those quanta which satisfy the quartic anomaly cancellation condition\n  - B.5. Map down to Z2\n\n## iv. References\n\n* Froggatt-Nielsen meets Mordell-Weil: A Phenomenological Survey of Global F-theory GUTs\n  with U(1)s (arxiv:1507.05961). [ref: arxiv_1507_05961]",
+   "copyright": "2025 Joseph Tooby-Smith",
+   "sections": [
+    {
+     "line": 73,
+     "text": "## A. The condition for a `Quanta` to be viable"
+    },
+    {
+     "line": 129,
+     "text": "### A.1. Simplification of the prop to use the set of viable charges `viableCharges I`"
+    },
+    {
+     "line": 151,
+     "text": "### A.2. Further simplification of the prop to use the set of viable charges `Quanta.liftCharge`"
+    },
+    {
+     "line": 167,
+     "text": "### A.3. Further simplification of the prop to use the anomaly free set of viable charges"
+    },
+    {
+     "line": 180,
+     "text": "## B. The multiset of viable quanta\n\nWe find all the viable quanta. This can be evaluated with\n\n```\n  ((((viableCharges .same ∪ viableCharges .nearestNeighbor ∪\n  viableCharges .nextToNearestNeighbor).filter IsAnomalyFree).bind\n    Quanta.liftCharge).filter LinearAnomalyCancellation)\n```"
+    },
+    {
+     "line": 233,
+     "text": "### B.1. Every element of the multiset is viable"
+    },
+    {
+     "line": 245,
+     "text": "### B.2. A quanta is viable if and only if it is in the multiset"
+    },
+    {
+     "line": 266,
+     "text": "### B.3. Every element of the multiset regenerates Yukawa at two insertions of the Yukawa singlets"
+    },
+    {
+     "line": 281,
+     "text": "### B.4. Those quanta which satisfy the quartic anomaly cancellation condition"
+    },
+    {
+     "line": 299,
+     "text": "### B.5. Map down to Z2"
+    }
+   ],
+   "declarations": [
+    {
+     "name": "FTheory.SU5.Quanta.IsViable",
+     "kind": "structure",
+     "line": 81,
+     "doc": "For a given `I : CodimensionOneConfig` the condition on a `Quanta` for it to be\nphenomenologically viable.",
+     "statement": "structure IsViable (x : Quanta) : Prop where\n  /-- There is a `Hd`, `Hu`, 5-bar matter and 10d matter. -/\n  has_all_charges : x.toCharges.IsComplete\n  /-- The charges do not lead to any phenomenologically constraining terms. -/\n  not_pheno_constrained : ¬ x.toCharges.IsPhenoConstrained\n  /-- The charges are such that dangerous couplings in the super potential are not\n    regenerated with the Yukawa terms. -/\n  not_regenerate_dangerous_couplings : ¬ x.toCharges.YukawaGeneratesDangerousAtLevel 1\n  /-- The charges are such that they are allowed by a configuration of sections on the\n    co-dimension 1 fiber. -/\n  charges_allowed_by_section_config :\n    (∃ I : CodimensionOneConfig, x.toCharges ∈ ofFinset I.allowedBarFiveCharges I.allowedTenCharges)\n  /-- Within the 5-bar matter, there is at most one entry for each charge. -/\n  no_duplicate_five_bar_charges : x.F.toCharges.Nodup\n  /-- Within the 10d matter, there is at most one entry for each charge. -/\n  no_duplicate_ten_charges : x.T.toCharges.Nodup\n  /-- The charges permit at least one Top-Yukawa coupling. -/\n  allows_top_yukawa : AllowsTerm x.toCharges topYukawa\n  /-- The fluxes of the 5-bar matter fields do not lead to any exotic chiral particles. -/\n  no_exotics_from_five_bar : x.F.toFluxesFive.NoExotics\n  /-- There are 5-bar matter fields where both fluxes are zero (these are not\n    being counted here). -/\n  no_five_bar_zero_fluxes : x.F.toFluxesFive.HasNoZero\n  /-- The fluxes of the 10d matter fields do not lead to any exotic chiral particles. -/\n  no_exotics_from_ten : x.T.toFluxesTen.NoExotics\n  /-- There are 10d matter fields where both fluxes are zero (these are not\n    being counted here). -/\n  no_ten_zero_fluxes : x.T.toFluxesTen.HasNoZero\n  /-- The quanta satisfy the linear anomaly cancellation conditions. -/\n  linear_anomalies : x.LinearAnomalyCancellation",
+     "sorry": false
+    },
+    {
+     "name": "FTheory.SU5.Quanta.isViable_iff_def",
+     "kind": "lemma",
+     "line": 112,
+     "doc": "",
+     "statement": "lemma isViable_iff_def (x : Quanta) : IsViable x ↔\n    x.toCharges.IsComplete ∧\n    ¬ x.toCharges.IsPhenoConstrained ∧\n    ¬ x.toCharges.YukawaGeneratesDangerousAtLevel 1 ∧\n    (∃ I : CodimensionOneConfig, x.toCharges ∈\n      ofFinset I.allowedBarFiveCharges I.allowedTenCharges) ∧\n    x.F.toCharges.Nodup ∧\n    x.T.toCharges.Nodup ∧\n    x.toCharges.AllowsTerm topYukawa ∧\n    x.F.toFluxesFive.NoExotics ∧\n    x.F.toFluxesFive.HasNoZero ∧\n    x.T.toFluxesTen.NoExotics ∧\n    x.T.toFluxesTen.HasNoZero ∧\n    x.LinearAnomalyCancellation",
+     "sorry": false
+    },
+    {
+     "name": "FTheory.SU5.Quanta.isViable_iff_charges_mem_viableCharges",
+     "kind": "lemma",
+     "line": 135,
+     "doc": "",
+     "statement": "lemma isViable_iff_charges_mem_viableCharges (x : Quanta) :\n    IsViable x ↔\n        /- 1. Conditions just on the charges. -/\n        (∃ I, x.toCharges ∈ viableCharges I) ∧\n        x.F.toCharges.Nodup ∧\n        x.T.toCharges.Nodup ∧\n        /- 2. Conditions just on the fluxes -/\n        x.F.toFluxesFive.NoExotics ∧\n        x.F.toFluxesFive.HasNoZero ∧\n        x.T.toFluxesTen.NoExotics ∧\n        x.T.toFluxesTen.HasNoZero ∧\n        /- 3. Conditions on the fluxes and the charges. -/\n        x.LinearAnomalyCancellation",
+     "sorry": false
+    },
+    {
+     "name": "FTheory.SU5.Quanta.isViable_iff_charges_mem_viableCharges_mem_liftCharges",
+     "kind": "lemma",
+     "line": 157,
+     "doc": "",
+     "statement": "lemma isViable_iff_charges_mem_viableCharges_mem_liftCharges (x : Quanta) :\n    IsViable x ↔ (∃ I, x.toCharges ∈ viableCharges I) ∧\n      x ∈ Quanta.liftCharge x.toCharges ∧\n      x.LinearAnomalyCancellation",
+     "sorry": false
+    },
+    {
+     "name": "FTheory.SU5.Quanta.isViable_iff_filter",
+     "kind": "lemma",
+     "line": 173,
+     "doc": "",
+     "statement": "lemma isViable_iff_filter (x : Quanta) :\n    IsViable x ↔ (∃ I, x.toCharges ∈ (viableCharges I).filter IsAnomalyFree) ∧\n      x ∈ Quanta.liftCharge x.toCharges\n      ∧ x.LinearAnomalyCancellation",
+     "sorry": false
+    },
+    {
+     "name": "FTheory.SU5.Quanta.viableElems",
+     "kind": "def",
+     "line": 195,
+     "doc": "Given a `CodimensionOneConfig` the `Quanta` which satisfy the condition `IsViable`.",
+     "statement": "def viableElems : Multiset Quanta",
+     "sorry": false
+    },
+    {
+     "name": "FTheory.SU5.Quanta.isViable_of_mem_viableElems",
+     "kind": "lemma",
+     "line": 239,
+     "doc": "",
+     "statement": "lemma isViable_of_mem_viableElems (x : Quanta) (h : x ∈ viableElems) :\n    IsViable x",
+     "sorry": false
+    },
+    {
+     "name": "FTheory.SU5.Quanta.isViable_iff_mem_viableElems",
+     "kind": "lemma",
+     "line": 251,
+     "doc": "",
+     "statement": "lemma isViable_iff_mem_viableElems (x : Quanta) :\n    x.IsViable ↔ x ∈ viableElems",
+     "sorry": false
+    },
+    {
+     "name": "FTheory.SU5.Quanta.yukawaSingletsRegenerateDangerousInsertion_two_of_isViable",
+     "kind": "lemma",
+     "line": 274,
+     "doc": "Every viable Quanta regenerates a dangerous coupling at two insertions of the Yukawa\nsinglets.",
+     "statement": "lemma yukawaSingletsRegenerateDangerousInsertion_two_of_isViable\n    (x : Quanta) (h : IsViable x) :\n    (toCharges x).YukawaGeneratesDangerousAtLevel 2",
+     "sorry": false
+    },
+    {
+     "name": "FTheory.SU5.Quanta.quarticAnomalyCancellation_iff_mem_of_isViable",
+     "kind": "lemma",
+     "line": 287,
+     "doc": "",
+     "statement": "lemma quarticAnomalyCancellation_iff_mem_of_isViable (x : Quanta) (h : IsViable x) :\n    x.QuarticAnomalyCancellation ↔ x ∈\n    ({⟨some 2, some (-2), {(-1, ⟨1, 2⟩), (1, ⟨2, -2⟩)}, {(-1, ⟨3, 0⟩)}⟩,\n    ⟨some 2, some (-2), {(-1, ⟨0, 2⟩), (1, ⟨3, -2⟩)}, {(-1, ⟨3, 0⟩)}⟩,\n    ⟨some (-2), some 2, {(-1, ⟨2, -2⟩), (1, ⟨1, 2⟩)}, {(1, ⟨3, 0⟩)}⟩,\n    ⟨some (-2), some 2, {(-1, ⟨3, -2⟩), (1, ⟨0, 2⟩)}, {(1, ⟨3, 0⟩)}⟩,\n    ⟨some 6, some (-14), {(-9, ⟨1, 2⟩), (1, ⟨2, -2⟩)}, {(-7, ⟨3, 0⟩)}⟩,\n    ⟨some 6, some (-14), {(-9, ⟨0, 2⟩), (1, ⟨3, -2⟩)}, {(-7, ⟨3, 0⟩)}⟩} : Finset Quanta)",
+     "sorry": false
+    },
+    {
+     "name": "FTheory.SU5.Quanta.map_to_Z2_of_isViable",
+     "kind": "lemma",
+     "line": 305,
+     "doc": "",
+     "statement": "lemma map_to_Z2_of_isViable (x : Quanta ℤ) (h : IsViable x) :\n    x.toCharges.map (Int.castAddHom (ZMod 2)) ∈\n    ({⟨some 0, some 0, {1}, {1}⟩, ⟨some 0, some 0, {0,1}, {1}⟩, ⟨some 0, some 0, {0,1}, {0}⟩} :\n    Finset (ChargeSpectrum (ZMod 2)))",
+     "sorry": false
+    }
+   ],
+   "private": 0,
+   "aliases": 0,
+   "informal": 0
+  },
+  {
+   "file": "Physlib/StringTheory/FTheory/SU5/Quanta/TenQuanta.lean",
+   "module": "Physlib.StringTheory.FTheory.SU5.Quanta.TenQuanta",
+   "title": "Quanta of 10d representations",
+   "doc": "## i. Overview\n\nThe 10d representations of the `SU(5)×U(1)` carry\nthe quantum numbers of their `U(1)` charges and their fluxes.\n\nIn this module we define the data structure for these quanta and\nproperties thereof.\n\n## ii. Key results\n\n- `TenQuanta` is the type of quanta of 10d representations.\n- `TenQuanta.toFluxesTen` is the underlying `FluxesTen` of a `TenQuanta`.\n- `TenQuanta.toCharges` is the underlying Multiset charges of a `TenQuanta`.\n- `TenQuanta.reduce` is the reduction of a `TenQuanta` which adds together\n  all the fluxes corresponding to the same charge (i.e. representation).\n- `TenQuanta.liftCharges` given a charge `c` the `TenQuanta` which have\n  charge `c` and no exotics or zero fluxes.\n- `TenQuanta.anomalyCoefficient` is the anomaly coefficient associated with a `TenQuanta`.\n\n## iii. Table of contents\n\n- A. The definition of `TenQuanta`\n  - A.1. The map to underlying fluxes\n  - A.2. The map to underlying charges\n  - A.3. The map from charges to fluxes\n- B. The reduction of a `TenQuanta`\n  - B.1. The reduced `TenQuanta` has no duplicate elements\n  - B.2. The underlying charges of the reduced `TenQuanta` are the deduped charges\n  - B.3. Membership condition on the reduced `TenQuanta`\n  - B.4. Filter of the reduced `TenQuanta` by a charge\n  - B.5. The reduction is idempotent\n  - B.6. Preservation of certain sums under reduction\n  - B.7. Reduction does nothing if no duplicate charges\n  - B.8. The charge map is preserved by reduction\n  - B.9. A fluxes in the reduced `TenQuanta` is a sum of fluxes in the original `TenQuanta`\n  - B.10. No exotics condition on the reduced `TenQuanta`\n    - B.10.1. Number of chiral `U`\n    - B.10.2. Number of anti-chiral `U`\n    - B.10.3. Number of chiral `Q`\n    - B.10.4. Number of anti-chiral `Q`\n    - B.10.5. Number of chiral `E`\n    - B.10.6. Number of anti-chiral `E`\n    - B.10.7. The `NoExotics` condition on the reduced `TenQuanta`\n  - B.11. Reduce member of `FLuxesTen.elemsNoExotics`\n- C. Decomposition of a `TenQuanta` into basic fluxes\n  - C.1. Decomposition of fluxes\n  - C.2. Decomposition of a `TenQuanta` (with no exotics)\n    - C.2.1. Decomposition distributes over addition\n    - C.2.2. Decomposition commutes with filtering charges\n    - C.2.3. Decomposition preserves the charge map\n    - C.2.4. Decomposition preserves the charges\n    - C.2.5. Decomposition preserves the reduction\n    - C.2.6. Fluxes of the decomposition of a `TenQuanta`\n- D. Lifting charges to `TenQuanta`\n  - D.1. `liftCharge c`: multiset of ten-quanta for a finite set of charges `c` with no exotics\n  - D.2. TenQuanta in `liftCharge c` have a finite set of charges `c`\n  - D.3. TenQuanta in `liftCharge c` have no duplicate charges\n  - D.4. Membership in `liftCharge c` iff is reduction of `TenQuanta` with given fluxes\n  - D.5. TenQuanta in `liftCharge c` do not have zero fluxes\n  - D.6. TenQuanta in `liftCharge c` have no exotics\n  - D.7. Membership in `liftCharge c` iff have no exotics, no zero fluxes, and charges `c`\n  - D.8. `liftCharge c` is preserved under a map if reduced\n- E. Anomaly cancellation coefficients\n  - E.1. Anomaly coefficients of a `TenQuanta`\n  - E.2. Anomaly coefficients under a map\n  - E.3. Anomaly coefficients is preserved under `reduce`\n\n## iv. References\n\n* Rational F-Theory GUTs without exotics (arXiv:1401.5084), Anomaly cancellation\n  conditions. [ref: arxiv_1401_5084]",
+   "copyright": "2025 Joseph Tooby-Smith",
+   "sections": [
+    {
+     "line": 95,
+     "text": "## A. The definition of `TenQuanta`"
+    },
+    {
+     "line": 109,
+     "text": "### A.1. The map to underlying fluxes"
+    },
+    {
+     "line": 118,
+     "text": "### A.2. The map to underlying charges"
+    },
+    {
+     "line": 127,
+     "text": "### A.3. The map from charges to fluxes"
+    },
+    {
+     "line": 144,
+     "text": "## B. The reduction of a `TenQuanta`"
+    },
+    {
+     "line": 159,
+     "text": "### B.1. The reduced `TenQuanta` has no duplicate elements"
+    },
+    {
+     "line": 173,
+     "text": "### B.2. The underlying charges of the reduced `TenQuanta` are the deduped charges"
+    },
+    {
+     "line": 182,
+     "text": "### B.3. Membership condition on the reduced `TenQuanta`"
+    },
+    {
+     "line": 198,
+     "text": "### B.4. Filter of the reduced `TenQuanta` by a charge"
+    },
+    {
+     "line": 215,
+     "text": "### B.5. The reduction is idempotent"
+    },
+    {
+     "line": 232,
+     "text": "### B.6. Preservation of certain sums under reduction"
+    },
+    {
+     "line": 297,
+     "text": "### B.7. Reduction does nothing if no duplicate charges"
+    },
+    {
+     "line": 326,
+     "text": "### B.8. The charge map is preserved by reduction"
+    },
+    {
+     "line": 345,
+     "text": "### B.9. A fluxes in the reduced `TenQuanta` is a sum of fluxes in the original `TenQuanta`"
+    },
+    {
+     "line": 384,
+     "text": "### B.10. No exotics condition on the reduced `TenQuanta`"
+    },
+    {
+     "line": 390,
+     "text": "#### B.10.1. Number of chiral `U`"
+    },
+    {
+     "line": 418,
+     "text": "#### B.10.2. Number of anti-chiral `U`"
+    },
+    {
+     "line": 438,
+     "text": "#### B.10.3. Number of chiral `Q`"
+    },
+    {
+     "line": 466,
+     "text": "#### B.10.4. Number of anti-chiral `Q`"
+    },
+    {
+     "line": 486,
+     "text": "#### B.10.5. Number of chiral `E`"
+    },
+    {
+     "line": 514,
+     "text": "#### B.10.6. Number of anti-chiral `E`"
+    },
+    {
+     "line": 534,
+     "text": "#### B.10.7. The `NoExotics` condition on the reduced `TenQuanta`"
+    },
+    {
+     "line": 549,
+     "text": "### B.11. Reduce member of `FLuxesTen.elemsNoExotics`"
+    },
+    {
+     "line": 568,
+     "text": "## C. Decomposition of a `TenQuanta` into basic fluxes"
+    },
+    {
+     "line": 574,
+     "text": "### C.1. Decomposition of fluxes"
+    },
+    {
+     "line": 598,
+     "text": "### C.2. Decomposition of a `TenQuanta` (with no exotics)"
+    },
+    {
+     "line": 611,
+     "text": "#### C.2.1. Decomposition distributes over addition"
+    },
+    {
+     "line": 621,
+     "text": "#### C.2.2. Decomposition commutes with filtering charges"
+    },
+    {
+     "line": 645,
+     "text": "#### C.2.3. Decomposition preserves the charge map"
+    },
+    {
+     "line": 668,
+     "text": "#### C.2.4. Decomposition preserves the charges"
+    },
+    {
+     "line": 697,
+     "text": "#### C.2.5. Decomposition preserves the reduction"
+    },
+    {
+     "line": 712,
+     "text": "#### C.2.6. Fluxes of the decomposition of a `TenQuanta`"
+    },
+    {
+     "line": 735,
+     "text": "## D. Lifting charges to `TenQuanta`"
+    },
+    {
+     "line": 747,
+     "text": "### D.1. `liftCharge c`: multiset of ten-quanta for a finite set of charges `c` with no exotics\n\nThis is an efficient definition, we will later show that it gives the correct answer"
+    },
+    {
+     "line": 770,
+     "text": "### D.2. TenQuanta in `liftCharge c` have a finite set of charges `c`"
+    },
+    {
+     "line": 808,
+     "text": "### D.3. TenQuanta in `liftCharge c` have no duplicate charges"
+    },
+    {
+     "line": 821,
+     "text": "### D.4. Membership in `liftCharge c` iff is reduction of `TenQuanta` with given fluxes"
+    },
+    {
+     "line": 946,
+     "text": "### D.5. TenQuanta in `liftCharge c` do not have zero fluxes"
+    },
+    {
+     "line": 964,
+     "text": "### D.6. TenQuanta in `liftCharge c` have no exotics"
+    },
+    {
+     "line": 981,
+     "text": "### D.7. Membership in `liftCharge c` iff have no exotics, no zero fluxes, and charges `c`"
+    },
+    {
+     "line": 1018,
+     "text": "### D.8. `liftCharge c` is preserved under a map if reduced"
+    },
+    {
+     "line": 1038,
+     "text": "## E. Anomaly cancellation coefficients"
+    },
+    {
+     "line": 1048,
+     "text": "### E.1. Anomaly coefficients of a `TenQuanta`"
+    },
+    {
+     "line": 1065,
+     "text": "### E.2. Anomaly coefficients under a map"
+    },
+    {
+     "line": 1078,
+     "text": "### E.3. Anomaly coefficients is preserved under `reduce`"
+    }
+   ],
+   "declarations": [
+    {
+     "name": "FTheory.SU5.TenQuanta",
+     "kind": "abbrev",
+     "line": 103,
+     "doc": "The quanta of w0d representations corresponding to a multiset of\n`(q, M, N)` for each particle. `(M, N)` are defined in the `FluxesFive` module.",
+     "statement": "abbrev TenQuanta (𝓩 : Type := ℤ) : Type",
+     "sorry": false
+    },
+    {
+     "name": "FTheory.SU5.TenQuanta.toFluxesTen",
+     "kind": "def",
+     "line": 116,
+     "doc": "The underlying `FluxesTen` from a `TenQuanta`.",
+     "statement": "def toFluxesTen (x : TenQuanta 𝓩) : FluxesTen",
+     "sorry": false
+    },
+    {
+     "name": "FTheory.SU5.TenQuanta.toCharges",
+     "kind": "def",
+     "line": 125,
+     "doc": "The underlying Multiset charges from a `TenQuanta`.",
+     "statement": "def toCharges (x : TenQuanta 𝓩) : Multiset 𝓩",
+     "sorry": false
+    },
+    {
+     "name": "FTheory.SU5.TenQuanta.toChargeMap",
+     "kind": "def",
+     "line": 135,
+     "doc": "The map which takes a charge to the overall flux it\ncorresponds to in a `TenQuanta`.",
+     "statement": "def toChargeMap [DecidableEq 𝓩] (x : TenQuanta 𝓩) : 𝓩 → Fluxes",
+     "sorry": false
+    },
+    {
+     "name": "FTheory.SU5.TenQuanta.toChargeMap_of_not_mem",
+     "kind": "lemma",
+     "line": 138,
+     "doc": "",
+     "statement": "lemma toChargeMap_of_not_mem [DecidableEq 𝓩] (x : TenQuanta 𝓩) {z : 𝓩} (h : z ∉ x.toCharges) :\n    x.toChargeMap z = 0",
+     "sorry": false
+    },
+    {
+     "name": "FTheory.SU5.TenQuanta.reduce",
+     "kind": "def",
+     "line": 156,
+     "doc": "The `reduce` of `TenQuanta` is a new `TenQuanta` with all the fluxes\ncorresponding to the same charge (i.e. representation) added together.",
+     "statement": "def reduce (x : TenQuanta 𝓩) : TenQuanta 𝓩",
+     "sorry": false
+    },
+    {
+     "name": "FTheory.SU5.TenQuanta.reduce_nodup",
+     "kind": "lemma",
+     "line": 165,
+     "doc": "",
+     "statement": "lemma reduce_nodup (x : TenQuanta 𝓩) : x.reduce.Nodup",
+     "sorry": false
+    },
+    {
+     "name": "FTheory.SU5.TenQuanta.reduce_dedup",
+     "kind": "lemma",
+     "line": 170,
+     "doc": "",
+     "statement": "lemma reduce_dedup (x : TenQuanta 𝓩) : x.reduce.dedup = x.reduce",
+     "sorry": false
+    },
+    {
+     "name": "FTheory.SU5.TenQuanta.reduce_toCharges",
+     "kind": "lemma",
+     "line": 179,
+     "doc": "",
+     "statement": "lemma reduce_toCharges (x : TenQuanta 𝓩) : x.reduce.toCharges = x.toCharges.dedup",
+     "sorry": false
+    },
+    {
+     "name": "FTheory.SU5.TenQuanta.mem_reduce_iff",
+     "kind": "lemma",
+     "line": 188,
+     "doc": "",
+     "statement": "lemma mem_reduce_iff (x : TenQuanta 𝓩) (p : 𝓩 × Fluxes) :\n    p ∈ x.reduce ↔ p.1 ∈ x.toCharges ∧\n      p.2 = ((x.filter (fun f => f.1 = p.1)).map (fun y => y.2)).sum",
+     "sorry": false
+    },
+    {
+     "name": "FTheory.SU5.TenQuanta.reduce_filter",
+     "kind": "lemma",
+     "line": 204,
+     "doc": "",
+     "statement": "lemma reduce_filter (x : TenQuanta 𝓩) (q : 𝓩) (h : q ∈ x.toCharges) :\n    x.reduce.filter (fun f => f.1 = q) =\n    {(q, ((x.filter (fun f => f.1 = q)).map (fun y => y.2)).sum)}",
+     "sorry": false
+    },
+    {
+     "name": "FTheory.SU5.TenQuanta.reduce_reduce",
+     "kind": "lemma",
+     "line": 222,
+     "doc": "",
+     "statement": "lemma reduce_reduce (x : TenQuanta 𝓩) :\n    x.reduce.reduce = x.reduce",
+     "sorry": false
+    },
+    {
+     "name": "FTheory.SU5.TenQuanta.reduce_sum_eq_sum_toCharges",
+     "kind": "lemma",
+     "line": 238,
+     "doc": "",
+     "statement": "lemma reduce_sum_eq_sum_toCharges {M} [AddCommMonoid M] (x : TenQuanta 𝓩) (f : 𝓩 → Fluxes →+ M) :\n    (x.reduce.map fun (q, x) => f q x).sum = (x.map fun (q, x) => f q x).sum",
+     "sorry": false
+    },
+    {
+     "name": "FTheory.SU5.TenQuanta.reduce_eq_self_of_ofCharges_nodup",
+     "kind": "lemma",
+     "line": 303,
+     "doc": "",
+     "statement": "lemma reduce_eq_self_of_ofCharges_nodup (x : TenQuanta 𝓩) (h : x.toCharges.Nodup) :\n    x.reduce = x",
+     "sorry": false
+    },
+    {
+     "name": "FTheory.SU5.TenQuanta.reduce_toChargeMap_eq",
+     "kind": "lemma",
+     "line": 332,
+     "doc": "",
+     "statement": "lemma reduce_toChargeMap_eq (x : TenQuanta 𝓩) :\n    x.reduce.toChargeMap = x.toChargeMap",
+     "sorry": false
+    },
+    {
+     "name": "FTheory.SU5.TenQuanta.mem_powerset_sum_of_mem_reduce_toFluxesTen",
+     "kind": "lemma",
+     "line": 351,
+     "doc": "",
+     "statement": "lemma mem_powerset_sum_of_mem_reduce_toFluxesTen {F : TenQuanta 𝓩}\n    {f : Fluxes} (hf : f ∈ F.reduce.toFluxesTen) :\n    f ∈ (Multiset.powerset F.toFluxesTen).map fun s => s.sum",
+     "sorry": false
+    },
+    {
+     "name": "FTheory.SU5.TenQuanta.mem_powerset_sum_of_mem_reduce_toFluxesTen_filter",
+     "kind": "lemma",
+     "line": 366,
+     "doc": "",
+     "statement": "lemma mem_powerset_sum_of_mem_reduce_toFluxesTen_filter {F : TenQuanta 𝓩}\n    {f : Fluxes} (hf : f ∈ F.reduce.toFluxesTen) :\n    f ∈ (F.toFluxesTen.powerset.filter fun s => s ≠ 0).map fun s => s.sum",
+     "sorry": false
+    },
+    {
+     "name": "FTheory.SU5.TenQuanta.reduce_numChiralU_of_mem_elemsNoExotics",
+     "kind": "lemma",
+     "line": 396,
+     "doc": "",
+     "statement": "lemma reduce_numChiralU_of_mem_elemsNoExotics {F : TenQuanta 𝓩}\n    (hx : F.toFluxesTen ∈ FluxesTen.elemsNoExotics) :\n    F.reduce.toFluxesTen.numChiralU = 3",
+     "sorry": false
+    },
+    {
+     "name": "FTheory.SU5.TenQuanta.reduce_numAntiChiralU_of_mem_elemsNoExotics",
+     "kind": "lemma",
+     "line": 424,
+     "doc": "",
+     "statement": "lemma reduce_numAntiChiralU_of_mem_elemsNoExotics {F : TenQuanta 𝓩}\n    (hx : F.toFluxesTen ∈ FluxesTen.elemsNoExotics) :\n    F.reduce.toFluxesTen.numAntiChiralU = 0",
+     "sorry": false
+    },
+    {
+     "name": "FTheory.SU5.TenQuanta.reduce_numChiralQ_of_mem_elemsNoExotics",
+     "kind": "lemma",
+     "line": 444,
+     "doc": "",
+     "statement": "lemma reduce_numChiralQ_of_mem_elemsNoExotics {F : TenQuanta 𝓩}\n    (hx : F.toFluxesTen ∈ FluxesTen.elemsNoExotics) :\n    F.reduce.toFluxesTen.numChiralQ = 3",
+     "sorry": false
+    },
+    {
+     "name": "FTheory.SU5.TenQuanta.reduce_numAntiChiralQ_of_mem_elemsNoExotics",
+     "kind": "lemma",
+     "line": 472,
+     "doc": "",
+     "statement": "lemma reduce_numAntiChiralQ_of_mem_elemsNoExotics {F : TenQuanta 𝓩}\n    (hx : F.toFluxesTen ∈ FluxesTen.elemsNoExotics) :\n    F.reduce.toFluxesTen.numAntiChiralQ = 0",
+     "sorry": false
+    },
+    {
+     "name": "FTheory.SU5.TenQuanta.reduce_numChiralE_of_mem_elemsNoExotics",
+     "kind": "lemma",
+     "line": 492,
+     "doc": "",
+     "statement": "lemma reduce_numChiralE_of_mem_elemsNoExotics {F : TenQuanta 𝓩}\n    (hx : F.toFluxesTen ∈ FluxesTen.elemsNoExotics) :\n    F.reduce.toFluxesTen.numChiralE = 3",
+     "sorry": false
+    },
+    {
+     "name": "FTheory.SU5.TenQuanta.reduce_numAntiChiralE_of_mem_elemsNoExotics",
+     "kind": "lemma",
+     "line": 520,
+     "doc": "",
+     "statement": "lemma reduce_numAntiChiralE_of_mem_elemsNoExotics {F : TenQuanta 𝓩}\n    (hx : F.toFluxesTen ∈ FluxesTen.elemsNoExotics) :\n    F.reduce.toFluxesTen.numAntiChiralE = 0",
+     "sorry": false
+    },
+    {
+     "name": "FTheory.SU5.TenQuanta.reduce_noExotics_of_mem_elemsNoExotics",
+     "kind": "lemma",
+     "line": 540,
+     "doc": "",
+     "statement": "lemma reduce_noExotics_of_mem_elemsNoExotics {F : TenQuanta 𝓩}\n    (hx : F.toFluxesTen ∈ FluxesTen.elemsNoExotics) :\n    F.reduce.toFluxesTen.NoExotics",
+     "sorry": false
+    },
+    {
+     "name": "FTheory.SU5.TenQuanta.reduce_mem_elemsNoExotics",
+     "kind": "lemma",
+     "line": 555,
+     "doc": "",
+     "statement": "lemma reduce_mem_elemsNoExotics {F : TenQuanta 𝓩}\n    (hx : F.toFluxesTen ∈ FluxesTen.elemsNoExotics) :\n    F.reduce.toFluxesTen ∈ FluxesTen.elemsNoExotics",
+     "sorry": false
+    },
+    {
+     "name": "FTheory.SU5.TenQuanta.decomposeFluxes",
+     "kind": "def",
+     "line": 581,
+     "doc": "The decomposition of a relevant flux into `⟨1, 0⟩`, `⟨1, 1⟩` and `⟨1, -1⟩` .",
+     "statement": "def decomposeFluxes (f : Fluxes) : Multiset Fluxes",
+     "sorry": false
+    },
+    {
+     "name": "FTheory.SU5.TenQuanta.decomposeFluxes_sum_of_noExotics",
+     "kind": "lemma",
+     "line": 591,
+     "doc": "",
+     "statement": "lemma decomposeFluxes_sum_of_noExotics (f : Fluxes) (hf : ∃ F ∈ FluxesTen.elemsNoExotics, f ∈ F) :\n    (decomposeFluxes f).sum = f",
+     "sorry": false
+    },
+    {
+     "name": "FTheory.SU5.TenQuanta.decompose",
+     "kind": "def",
+     "line": 608,
+     "doc": "The decomposition of a `TenQuanta` into a `TenQuanta` which has the\nsame `reduce` by has fluxes `{⟨1, 0⟩, ⟨1, 0⟩, ⟨1, 0⟩}` or `{⟨1, 1⟩, ⟨1, -1⟩, ⟨1, 0⟩}` only.\n\nThis only works for fluxes which have no exotics or zeros.",
+     "statement": "def decompose (x : TenQuanta 𝓩) : TenQuanta 𝓩",
+     "sorry": false
+    },
+    {
+     "name": "FTheory.SU5.TenQuanta.decompose_add",
+     "kind": "lemma",
+     "line": 617,
+     "doc": "",
+     "statement": "lemma decompose_add (x y : TenQuanta 𝓩) :\n    (x + y).decompose = x.decompose + y.decompose",
+     "sorry": false
+    },
+    {
+     "name": "FTheory.SU5.TenQuanta.decompose_filter_charge",
+     "kind": "lemma",
+     "line": 627,
+     "doc": "",
+     "statement": "lemma decompose_filter_charge [DecidableEq 𝓩] (x : TenQuanta 𝓩) (q : 𝓩) :\n    (x.decompose).filter (fun p => p.1 = q) =\n    decompose (x.filter (fun p => p.1 = q))",
+     "sorry": false
+    },
+    {
+     "name": "FTheory.SU5.TenQuanta.decompose_toChargeMap",
+     "kind": "lemma",
+     "line": 651,
+     "doc": "",
+     "statement": "lemma decompose_toChargeMap [DecidableEq 𝓩] (x : TenQuanta 𝓩)\n    (hx : x.toFluxesTen ∈ FluxesTen.elemsNoExotics) :\n    x.decompose.toChargeMap = x.toChargeMap",
+     "sorry": false
+    },
+    {
+     "name": "FTheory.SU5.TenQuanta.decompose_toCharges_dedup",
+     "kind": "lemma",
+     "line": 674,
+     "doc": "",
+     "statement": "lemma decompose_toCharges_dedup [DecidableEq 𝓩] (x : TenQuanta 𝓩)\n    (hx : x.toFluxesTen ∈ FluxesTen.elemsNoExotics) :\n    x.decompose.toCharges.dedup = x.toCharges.dedup",
+     "sorry": false
+    },
+    {
+     "name": "FTheory.SU5.TenQuanta.decompose_reduce",
+     "kind": "lemma",
+     "line": 703,
+     "doc": "",
+     "statement": "lemma decompose_reduce (x : TenQuanta 𝓩) [DecidableEq 𝓩]\n    (hx : x.toFluxesTen ∈ FluxesTen.elemsNoExotics) :\n    x.decompose.reduce = x.reduce",
+     "sorry": false
+    },
+    {
+     "name": "FTheory.SU5.TenQuanta.decompose_toFluxesTen",
+     "kind": "lemma",
+     "line": 718,
+     "doc": "",
+     "statement": "lemma decompose_toFluxesTen (x : TenQuanta 𝓩)\n    (hx : x.toFluxesTen ∈ FluxesTen.elemsNoExotics) :\n    x.decompose.toFluxesTen = {⟨1, 0⟩, ⟨1, 0⟩, ⟨1, 0⟩} ∨\n    x.decompose.toFluxesTen = {⟨1, 1⟩, ⟨1, -1⟩, ⟨1, 0⟩}",
+     "sorry": false
+    },
+    {
+     "name": "FTheory.SU5.TenQuanta.liftCharge",
+     "kind": "def",
+     "line": 758,
+     "doc": "Given a finite set of charges `c` the `TenQuanta`\nwhich do not have exotics, duplicate charges or zero fluxes, which map down to `c`.\nThis is defined to be as efficient as possible.",
+     "statement": "def liftCharge (c : Finset 𝓩) : Multiset (TenQuanta 𝓩)",
+     "sorry": false
+    },
+    {
+     "name": "FTheory.SU5.TenQuanta.toCharge_toFinset_of_mem_liftCharge",
+     "kind": "lemma",
+     "line": 776,
+     "doc": "",
+     "statement": "lemma toCharge_toFinset_of_mem_liftCharge (c : Finset 𝓩)\n    {x : TenQuanta 𝓩} (h : x ∈ liftCharge c) :\n    x.toCharges.toFinset = c",
+     "sorry": false
+    },
+    {
+     "name": "FTheory.SU5.TenQuanta.toCharges_nodup_of_mem_liftCharge",
+     "kind": "lemma",
+     "line": 814,
+     "doc": "",
+     "statement": "lemma toCharges_nodup_of_mem_liftCharge (c : Finset 𝓩) {x : TenQuanta 𝓩}\n    (h : x ∈ liftCharge c) : x.toCharges.Nodup",
+     "sorry": false
+    },
+    {
+     "name": "FTheory.SU5.TenQuanta.exists_toCharges_toFluxesTen_of_mem_liftCharge",
+     "kind": "lemma",
+     "line": 827,
+     "doc": "",
+     "statement": "lemma exists_toCharges_toFluxesTen_of_mem_liftCharge (c : Finset 𝓩)\n    {x : TenQuanta 𝓩} (h : x ∈ liftCharge c) :\n    ∃ a : TenQuanta 𝓩, a.reduce = x ∧ a.toCharges.toFinset = c ∧\n    (a.toFluxesTen = {⟨1, 0⟩, ⟨1, 0⟩, ⟨1, 0⟩}\n    ∨ a.toFluxesTen = {⟨1, 1⟩, ⟨1, -1⟩, ⟨1, 0⟩})",
+     "sorry": false
+    },
+    {
+     "name": "FTheory.SU5.TenQuanta.mem_liftCharge_of_exists_toCharges_toFluxesTen",
+     "kind": "lemma",
+     "line": 850,
+     "doc": "",
+     "statement": "lemma mem_liftCharge_of_exists_toCharges_toFluxesTen (c : Finset 𝓩) {x : TenQuanta 𝓩}\n    (h :∃ a : TenQuanta 𝓩, a.reduce = x ∧ a.toCharges.toFinset = c ∧\n    (a.toFluxesTen = {⟨1, 0⟩, ⟨1, 0⟩, ⟨1, 0⟩}\n    ∨ a.toFluxesTen = {⟨1, 1⟩, ⟨1, -1⟩, ⟨1, 0⟩})) :\n    x ∈ liftCharge c",
+     "sorry": false
+    },
+    {
+     "name": "FTheory.SU5.TenQuanta.mem_liftCharge_iff_exists",
+     "kind": "lemma",
+     "line": 937,
+     "doc": "",
+     "statement": "lemma mem_liftCharge_iff_exists (c : Finset 𝓩) {x : TenQuanta 𝓩} :\n    x ∈ liftCharge c ↔\n    ∃ a : TenQuanta 𝓩, a.reduce = x ∧ a.toCharges.toFinset = c ∧\n    (a.toFluxesTen = {⟨1, 0⟩, ⟨1, 0⟩, ⟨1, 0⟩}\n    ∨ a.toFluxesTen = {⟨1, 1⟩, ⟨1, -1⟩, ⟨1, 0⟩})",
+     "sorry": false
+    },
+    {
+     "name": "FTheory.SU5.TenQuanta.hasNoZero_of_mem_liftCharge",
+     "kind": "lemma",
+     "line": 952,
+     "doc": "",
+     "statement": "lemma hasNoZero_of_mem_liftCharge (c : Finset 𝓩) {x : TenQuanta 𝓩}\n    (h : x ∈ liftCharge c) : x.toFluxesTen.HasNoZero",
+     "sorry": false
+    },
+    {
+     "name": "FTheory.SU5.TenQuanta.noExotics_of_mem_liftCharge",
+     "kind": "lemma",
+     "line": 970,
+     "doc": "",
+     "statement": "lemma noExotics_of_mem_liftCharge (c : Finset 𝓩) (F : TenQuanta 𝓩)\n    (h : F ∈ liftCharge c) :\n    F.toFluxesTen.NoExotics",
+     "sorry": false
+    },
+    {
+     "name": "FTheory.SU5.TenQuanta.mem_liftCharge_of_mem_noExotics_hasNoZero",
+     "kind": "lemma",
+     "line": 987,
+     "doc": "",
+     "statement": "lemma mem_liftCharge_of_mem_noExotics_hasNoZero (c : Finset 𝓩) {x : TenQuanta 𝓩}\n    (h1 : x.toFluxesTen.NoExotics) (h2 : x.toFluxesTen.HasNoZero)\n    (h3 : x.toCharges.toFinset = c) (h4 : x.toCharges.Nodup) :\n    x ∈ liftCharge c",
+     "sorry": false
+    },
+    {
+     "name": "FTheory.SU5.TenQuanta.mem_liftCharge_iff",
+     "kind": "lemma",
+     "line": 1004,
+     "doc": "",
+     "statement": "lemma mem_liftCharge_iff (c : Finset 𝓩) (x : TenQuanta 𝓩) :\n    x ∈ liftCharge c ↔ x.toFluxesTen ∈ FluxesTen.elemsNoExotics\n      ∧ x.toCharges.toFinset = c ∧ x.toCharges.Nodup",
+     "sorry": false
+    },
+    {
+     "name": "FTheory.SU5.TenQuanta.map_liftCharge",
+     "kind": "lemma",
+     "line": 1024,
+     "doc": "",
+     "statement": "lemma map_liftCharge {𝓩 𝓩1 : Type}[DecidableEq 𝓩] [DecidableEq 𝓩1] [CommRing 𝓩] [CommRing 𝓩1]\n    (f : 𝓩 →+* 𝓩1) (c : Finset 𝓩) (F : TenQuanta 𝓩) (h : F ∈ liftCharge c) :\n    TenQuanta.reduce (F.map fun y => (f y.1, y.2)) ∈ liftCharge (c.image f)",
+     "sorry": false
+    },
+    {
+     "name": "FTheory.SU5.TenQuanta.anomalyCoefficient",
+     "kind": "def",
+     "line": 1062,
+     "doc": "The anomaly coefficient of a `TenQuanta` is given by the pair of integers:\n`(∑ᵢ qᵢ Nᵢ, 3 * ∑ᵢ qᵢ² Nᵢ)`.\n\nThe first components is for the mixed U(1)-MSSM, see equation (22) of arXiv:1401.5084\n[ref: arxiv_1401_5084]. The second component is for the mixed U(1)Y-U(1)-U(1) gauge anomaly,\nsee equation (23) of arXiv:1401.5084 [ref: arxiv_1401_5084].",
+     "statement": "def anomalyCoefficient (F : TenQuanta 𝓩) : 𝓩 × 𝓩",
+     "sorry": false
+    },
+    {
+     "name": "FTheory.SU5.TenQuanta.anomalyCoefficient_of_map",
+     "kind": "lemma",
+     "line": 1072,
+     "doc": "",
+     "statement": "lemma anomalyCoefficient_of_map {𝓩 𝓩1 : Type} [CommRing 𝓩] [CommRing 𝓩1]\n    (f : 𝓩 →+* 𝓩1) (F : TenQuanta 𝓩) :\n    TenQuanta.anomalyCoefficient (F.map fun y => (f y.1, y.2) : TenQuanta 𝓩1) =\n    (f.prodMap f) F.anomalyCoefficient",
+     "sorry": false
+    },
+    {
+     "name": "FTheory.SU5.TenQuanta.anomalyCoefficient_of_reduce",
+     "kind": "lemma",
+     "line": 1084,
+     "doc": "",
+     "statement": "lemma anomalyCoefficient_of_reduce [DecidableEq 𝓩] (F : TenQuanta 𝓩) :\n    F.reduce.anomalyCoefficient = F.anomalyCoefficient",
+     "sorry": false
+    }
+   ],
+   "private": 0,
+   "aliases": 0,
+   "informal": 0
+  }
+ ]
+}
