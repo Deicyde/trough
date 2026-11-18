@@ -43,7 +43,8 @@ PLANS = re.compile(r"\b(?:underway|under way|planned|we plan|plans? to|welcome|r
                    r"future design work|be upstreamed|accepted upstream|will follow|(?<!has )(?<!have )(?<!needs )to be added|"
                    r"we would want|we should show|"
                    r"will eventually|near future|one day|be deprecated|with the intention|eventually we will|"
-                   r"long term aim)\b", re.I)
+                   r"long term aim|leave this as future work|would be appreciated|contributors can|may want to focus|"
+                   r"feel free to)\b", re.I)
 # A README opening that speaks of plans, as a placeholder for later work does.
 PLANNED = re.compile(r"\b(?:plan(?:s|ned)?|placeholder|upstream(?:ing)?)\b", re.I)
 HEADING = re.compile(r"^(#{1,6})[ \t]+(.+?)[ \t]*#*[ \t]*$")

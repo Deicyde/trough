@@ -363,6 +363,8 @@ def read(root: Path, entry: str, architect: Path | None = None) -> Blueprint:
     captions = theorem_kinds(text[:body_start] or text)
     thms = package_thms(text[:body_start] or text)
     macros = definitions(text)
+    # A note to the authors, whatever the project's macro prints it as: the writer drops it.
+    macros.pop("todo", None)
     links = {}
     for key in ("home", "github", "dochome"):
         value = macro_args(text[:body_start] or text, key)

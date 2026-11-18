@@ -224,6 +224,47 @@ def without_lead_in(markdown: str) -> str:
     return "\n\n".join(part for part in (head, kept) if part)
 
 
+# A parenthetical that holds a TODO note, as in "a Markov category (TODO ref), which ...", nested parentheses and all.
+TODO_ASIDE = re.compile(r"[ \t]*\([^()]*?\bTODOs?\b(?:[^()]|\([^()]*\))*\)")
+# A list item, bulleted or numbered.
+ITEM = re.compile(r"^[ \t]*(?:[-*+]|\d+\.)[ \t]+")
+# A text that is only a note that it is still to be written.
+TO_DO = re.compile(r"\s*(?:TODO|To do)\.?\s*")
+NO_PLANS = re.compile(r"(?!)")
+
+
+def without_notes(markdown: str, plans: bool = False) -> str:
+    """Blueprint Markdown without its TODO notes and, with *plans*, its sentences about plans and invitations, as the
+    library chapters' docstring filter (trough.library) cuts them, each cut marked with …. A parenthetical that holds
+    a TODO goes and the rest of its sentence stays; a list item keeps its text before a TODO; any other TODO goes with
+    the rest of its paragraph from the start of its sentence. Displays, code and tables are not read. The map records
+    what the project has, not what it plans."""
+    from trough import library  # it imports this module
+
+    pattern = library.PLANS if plans else NO_PLANS
+    blocks = []
+    for block in re.split(r"(\n[ \t]*\n)", markdown):
+        if not block.strip() or block.lstrip().startswith(("$$", "```", "|")):
+            blocks.append(block)
+            continue
+        block = TODO_ASIDE.sub("", block)
+        lines = []
+        for line in block.split("\n"):
+            item, todo = ITEM.match(line), library.TODOS.search(line)
+            if item and todo:
+                kept = line[:todo.start()].rstrip(" \t:;,")
+                if len(kept) > item.end():
+                    lines.append(kept + " …")
+                continue
+            lines.append(line)
+        block = "\n".join(lines)
+        if library.TODOS.search(block) or pattern.search(block):
+            block = library.without_todos(block, pattern)
+        blocks.append(block)
+    text = "".join(blocks)
+    return re.sub(r"…(?:\n[ \t]*\n…)+", "…", text).strip()
+
+
 def chapter(project: Project, blueprint: Blueprint, mathlib_heads: dict[str, Leaf]) -> Built:
     """The chapter for *project*. *mathlib_heads* maps a Mathlib declaration to the
     Mathlib-chapter article it heads, for nodes in Mathlib.
@@ -508,12 +549,13 @@ def chapter(project: Project, blueprint: Blueprint, mathlib_heads: dict[str, Lea
             continue
         current[0] = key(event.unit)
         if event.kind == "prose":
-            markdown = writer.statement(node.text)
+            markdown = without_notes(writer.statement(node.text), plans=True)
         elif event.kind == "aside":
             title = f" ({escape(writer.plain(node.title))})" if node.title else ""
-            markdown = run_in(f"**{caption(node)}{title}.**", writer.statement(node.body))
+            markdown = run_in(f"**{caption(node)}{title}.**", without_notes(writer.statement(node.body), plans=True))
         elif event.kind == "aside proof":
-            markdown = run_in(proof_head(node.proof, writer), writer.statement(node.proof.body))
+            proof = without_notes(writer.statement(node.proof.body), plans=True)
+            markdown = run_in(proof_head(node.proof, writer), proof) if proof.strip("… ") else ""
         else:
             target = placeholder(display(node), node.id)
             markdown = (f"*{escape(writer.plain(node.proof.title))}: shown with {target}.*" if node.proof.title
@@ -600,10 +642,12 @@ def leaf(project: Project, node: Node, caption: str, title: str, writer: Writer,
             notes.append(("Lean", f"Stated as {names}; the blueprint marks no proof of it as formalized."))
     place, source = project.source(node.where)
     if project.text:
-        body = writer.statement(node.body) or f"A {caption.lower()} of the blueprint of {project.name}, with no text."
+        body = (without_notes(writer.statement(node.body))
+                or f"A {caption.lower()} of the blueprint of {project.name}, with no text.")
         if node.proof is not None:
-            proof = writer.statement(node.proof.body)
-            if proof:
+            # A proof the blueprint does not mark formalized may say what is planned; one that is only notes is none.
+            proof = without_notes(writer.statement(node.proof.body), plans=not proof_ok)
+            if proof.strip("… ") and not TO_DO.fullmatch(proof):
                 notes.insert(0, ("Proof", run_in(proof_head(node.proof, writer), proof) if node.proof.title else proof))
     else:
         body = (f"The blueprint of {project.name} states this {caption.lower()} at [{place}]({source}). The "

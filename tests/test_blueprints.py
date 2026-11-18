@@ -588,3 +588,63 @@ def test_round_three_pages(tmp_path):
     assert "Theorem: $R$ is Church-Rosser iff it is confluent." in leaves  # no … after a full stop
     text = " ".join([page.prose, page.tail, *(entry.before for entry in page.entries)])
     assert "Remark R." in text and "shown with its statement" not in text  # the remark is inside lemma e
+
+
+def test_a_projects_todo_macro_is_dropped(tmp_path):
+    (tmp_path / "web.tex").write_text(
+        "\\newcommand{\\todo}[1]{{\\color{red}{\\textbf{#1}}}}\n\\begin{document}\n\\chapter{A}\n"
+        "\\begin{lemma}\\label{a}\\lean{A.a}\\leanok Prove it.\\todo{Lean hates me.}\\end{lemma}\n"
+        "\\begin{proof} Easy. \\todo[inline]{fill in proof.}\\end{proof}\n\\end{document}\n")
+    blueprint = leanblueprint.read(tmp_path, "web.tex")
+    built, leaves = build(blueprint, tmp_path)
+    assert leaves["a"].body == "Prove it."
+    assert dict(leaves["a"].notes)["Proof"] == "Easy."
+
+
+@pytest.mark.parametrize("markdown, kept", [
+    # From testing-lower-bounds: a parenthetical TODO goes and its sentence stays.
+    ("If we restrict the morphisms to Markov kernels, we get a Markov category (TODO ref), which is a copy-discard "
+     "category.", "If we restrict the morphisms to Markov kernels, we get a Markov category, which is a copy-discard "
+     "category."),
+    ("- The discard kernel $d_{\\mathcal X}$ (TODO: conflicts with deterministic kernel notation). This is a kernel "
+     "from $\\mathcal X$ to $*$.\n- The copy kernel.",
+     "- The discard kernel $d_{\\mathcal X}$. This is a kernel from $\\mathcal X$ to $*$.\n- The copy kernel."),
+    ("- $\\mathcal{M}$: càdlàg martingales (TODO: (he2019) add uniform integrability)", "- $\\mathcal{M}$: càdlàg martingales"),
+    ("and the fact that $a = b$ (Lemma TODO), done.", "and the fact that $a = b$, done."),
+    # A list item keeps its text before the TODO.
+    ("- First.\n- Second, TODO: say more.\n- TODO: third.", "- First.\n- Second …"),
+    # Any other TODO goes with the rest of its paragraph, from its sentence.
+    ("Note the bound. TODO: why? It is needed.\n\nNext paragraph.", "Note the bound. …\n\nNext paragraph."),
+    ("TODO: reorganize this section.\n\nThe measure is finite.", "…\n\nThe measure is finite."),
+    ("TODO", "…"),
+    # Formulas and code are not read.
+    ("$$\nTODO\n$$", "$$\nTODO\n$$"),
+])
+def test_todo_notes_are_cut(markdown, kept):
+    assert blueprints.without_notes(markdown) == kept
+
+
+def test_plans_and_invitations_are_cut():
+    plans = ("In addition, contributors can participate at different levels. Experts may want to focus on the "
+             "foundations.\n\n## Departures\n\nSimplifications have appeared. In particular, we plan to incorporate "
+             "the following.\n\nThis is hard over a scheme, so we leave this as future work.\n\n"
+             "One proof would be by induction. Ideas would be appreciated. Feel free to help.")
+    assert blueprints.without_notes(plans, plans=True) == (
+        "…\n\n## Departures\n\nSimplifications have appeared. …\n\nOne proof would be by induction. …")
+    assert blueprints.without_notes(plans) == plans  # a statement, or a proof marked formalized, keeps them
+
+
+def test_a_proof_that_is_only_notes_is_no_proof(tmp_path):
+    (tmp_path / "web.tex").write_text(
+        "\\begin{document}\n\\chapter{A}\n"
+        "\\begin{lemma}\\label{a}\\lean{A.a}\\leanok A.\\end{lemma}\\begin{proof} TODO \\end{proof}\n"
+        "\\begin{lemma}\\label{b}\\lean{A.b}\\leanok B.\\end{lemma}\\begin{proof} To do. \\end{proof}\n"
+        "\\begin{lemma}\\label{c}\\lean{A.c}\\leanok C.\\end{lemma}\\begin{proof} One proof is by induction. Ideas "
+        "would be appreciated.\\end{proof}\n"
+        "\\begin{lemma}\\label{d}\\lean{A.d}\\leanok D.\\end{lemma}\\begin{proof}\\leanok To do so, use C.\\end{proof}\n"
+        "\\end{document}\n")
+    built, leaves = build(leanblueprint.read(tmp_path, "web.tex"), tmp_path)
+    assert "Proof" not in dict(leaves["a"].notes) and "Proof" not in dict(leaves["b"].notes)
+    assert dict(leaves["c"].notes)["Proof"] == "One proof is by induction. …"
+    assert dict(leaves["d"].notes)["Proof"] == "To do so, use C."
+
