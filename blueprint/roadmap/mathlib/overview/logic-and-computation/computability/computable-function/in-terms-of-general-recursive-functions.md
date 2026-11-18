@@ -15,5 +15,5 @@ Computable.{u_1, u_2} {α : Type u_1} {σ : Type u_2} [Primcodable α] [Primcoda
 ## Sources
 
 - [Mathlib documentation: `Computable`](https://leanprover-community.github.io/mathlib4_docs/Mathlib/Computability/Partrec.html#Computable)
-- [Source of `Computable` in Mathlib/Computability/Partrec.lean](https://github.com/leanprover-community/mathlib4/blob/9bac2d0692944a775113f7c130fd5e5b4608a854/Mathlib/Computability/Partrec.lean#L239)
-- [Mathlib overview: Logic and computation › Computability › computable function](https://github.com/leanprover-community/mathlib4/blob/9bac2d0692944a775113f7c130fd5e5b4608a854/docs/overview.yaml#L602)
+- [Source of `Computable` in Mathlib/Computability/Partrec.lean](https://github.com/leanprover-community/mathlib4/blob/15cf10d19dfd4cdee9602318e271fa3ce99c454d/Mathlib/Computability/Partrec.lean#L239)
+- [Mathlib overview: Logic and computation › Computability › computable function](https://github.com/leanprover-community/mathlib4/blob/15cf10d19dfd4cdee9602318e271fa3ce99c454d/docs/overview.yaml#L602)

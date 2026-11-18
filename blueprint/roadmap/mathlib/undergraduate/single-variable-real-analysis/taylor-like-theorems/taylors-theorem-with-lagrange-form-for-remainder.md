@@ -47,10 +47,10 @@ The 1000+ list (Q1137206) also cites `taylor_mean_remainder_cauchy`.
 ## Sources
 
 - [Mathlib documentation: `taylor_mean_remainder_lagrange`](https://leanprover-community.github.io/mathlib4_docs/Mathlib/Analysis/Calculus/Taylor.html#taylor_mean_remainder_lagrange)
-- [Source of `taylor_mean_remainder_lagrange` in Mathlib/Analysis/Calculus/Taylor.lean](https://github.com/leanprover-community/mathlib4/blob/9bac2d0692944a775113f7c130fd5e5b4608a854/Mathlib/Analysis/Calculus/Taylor.lean#L322)
-- [Mathlib undergraduate list: Single Variable Real Analysis › Taylor-like theorems](https://github.com/leanprover-community/mathlib4/blob/9bac2d0692944a775113f7c130fd5e5b4608a854/docs/undergrad.yaml#L327)
-- [Freek Wiedijk's 100 theorems, no. 35](https://github.com/leanprover-community/mathlib4/blob/9bac2d0692944a775113f7c130fd5e5b4608a854/docs/100.yaml#L183)
-- [1000+ theorems list: Q1137206](https://github.com/leanprover-community/mathlib4/blob/9bac2d0692944a775113f7c130fd5e5b4608a854/docs/1000.yaml#L1399)
+- [Source of `taylor_mean_remainder_lagrange` in Mathlib/Analysis/Calculus/Taylor.lean](https://github.com/leanprover-community/mathlib4/blob/15cf10d19dfd4cdee9602318e271fa3ce99c454d/Mathlib/Analysis/Calculus/Taylor.lean#L322)
+- [Mathlib undergraduate list: Single Variable Real Analysis › Taylor-like theorems](https://github.com/leanprover-community/mathlib4/blob/15cf10d19dfd4cdee9602318e271fa3ce99c454d/docs/undergrad.yaml#L327)
+- [Freek Wiedijk's 100 theorems, no. 35](https://github.com/leanprover-community/mathlib4/blob/15cf10d19dfd4cdee9602318e271fa3ce99c454d/docs/100.yaml#L183)
+- [1000+ theorems list: Q1137206](https://github.com/leanprover-community/mathlib4/blob/15cf10d19dfd4cdee9602318e271fa3ce99c454d/docs/1000.yaml#L1402)
 - [1000+ theorems project: Q1137206](https://1000-plus.github.io/all.html?length=-1#Q1137206)
 - [Wikipedia: Taylor's theorem](https://en.wikipedia.org/wiki/Taylor's_theorem)
 - [Wikidata: Q1137206](https://www.wikidata.org/wiki/Q1137206)

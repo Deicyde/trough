@@ -17,5 +17,5 @@ SimpleGraph.sum_degrees_eq_twice_card_edges.{u} {V : Type u} (G : SimpleGraph V)
 ## Sources
 
 - [Mathlib documentation: `SimpleGraph.sum_degrees_eq_twice_card_edges`](https://leanprover-community.github.io/mathlib4_docs/Mathlib/Combinatorics/SimpleGraph/DegreeSum.html#SimpleGraph.sum_degrees_eq_twice_card_edges)
-- [Source of `SimpleGraph.sum_degrees_eq_twice_card_edges` in Mathlib/Combinatorics/SimpleGraph/DegreeSum.lean](https://github.com/leanprover-community/mathlib4/blob/9bac2d0692944a775113f7c130fd5e5b4608a854/Mathlib/Combinatorics/SimpleGraph/DegreeSum.lean#L99)
-- [Mathlib overview: Combinatorics › Graph theory](https://github.com/leanprover-community/mathlib4/blob/9bac2d0692944a775113f7c130fd5e5b4608a854/docs/overview.yaml#L524)
+- [Source of `SimpleGraph.sum_degrees_eq_twice_card_edges` in Mathlib/Combinatorics/SimpleGraph/DegreeSum.lean](https://github.com/leanprover-community/mathlib4/blob/15cf10d19dfd4cdee9602318e271fa3ce99c454d/Mathlib/Combinatorics/SimpleGraph/DegreeSum.lean#L99)
+- [Mathlib overview: Combinatorics › Graph theory](https://github.com/leanprover-community/mathlib4/blob/15cf10d19dfd4cdee9602318e271fa3ce99c454d/docs/overview.yaml#L524)

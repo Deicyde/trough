@@ -52,5 +52,5 @@ Mathlib defines an abelian category as a structure placed on a category, extendi
 ## Sources
 
 - [Mathlib documentation: `CategoryTheory.Abelian`](https://leanprover-community.github.io/mathlib4_docs/Mathlib/CategoryTheory/Abelian/Basic.html#CategoryTheory.Abelian)
-- [Source of `CategoryTheory.Abelian` in Mathlib/CategoryTheory/Abelian/Basic.lean](https://github.com/leanprover-community/mathlib4/blob/9bac2d0692944a775113f7c130fd5e5b4608a854/Mathlib/CategoryTheory/Abelian/Basic.lean#L102)
-- [Mathlib overview: General algebra › Category theory](https://github.com/leanprover-community/mathlib4/blob/9bac2d0692944a775113f7c130fd5e5b4608a854/docs/overview.yaml#L17)
+- [Source of `CategoryTheory.Abelian` in Mathlib/CategoryTheory/Abelian/Basic.lean](https://github.com/leanprover-community/mathlib4/blob/15cf10d19dfd4cdee9602318e271fa3ce99c454d/Mathlib/CategoryTheory/Abelian/Basic.lean#L101)
+- [Mathlib overview: General algebra › Category theory](https://github.com/leanprover-community/mathlib4/blob/15cf10d19dfd4cdee9602318e271fa3ce99c454d/docs/overview.yaml#L17)

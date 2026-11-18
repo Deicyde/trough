@@ -25,5 +25,5 @@ ZMod.cauchy_davenport {p : ℕ} (hp : Nat.Prime p) {s t : Finset (ZMod p)} (hs :
 ## Sources
 
 - [Mathlib documentation: `ZMod.cauchy_davenport`](https://leanprover-community.github.io/mathlib4_docs/Mathlib/Combinatorics/Additive/CauchyDavenport.html#ZMod.cauchy_davenport)
-- [Source of `ZMod.cauchy_davenport` in Mathlib/Combinatorics/Additive/CauchyDavenport.lean](https://github.com/leanprover-community/mathlib4/blob/9bac2d0692944a775113f7c130fd5e5b4608a854/Mathlib/Combinatorics/Additive/CauchyDavenport.lean#L196)
-- [Mathlib overview: Combinatorics › Additive combinatorics](https://github.com/leanprover-community/mathlib4/blob/9bac2d0692944a775113f7c130fd5e5b4608a854/docs/overview.yaml#L550)
+- [Source of `ZMod.cauchy_davenport` in Mathlib/Combinatorics/Additive/CauchyDavenport.lean](https://github.com/leanprover-community/mathlib4/blob/15cf10d19dfd4cdee9602318e271fa3ce99c454d/Mathlib/Combinatorics/Additive/CauchyDavenport.lean#L196)
+- [Mathlib overview: Combinatorics › Additive combinatorics](https://github.com/leanprover-community/mathlib4/blob/15cf10d19dfd4cdee9602318e271fa3ce99c454d/docs/overview.yaml#L550)

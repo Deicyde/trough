@@ -16,5 +16,5 @@ PiLp.normedSpace.{u_1, u_2, u_4} (p : ENNReal) (𝕜 : Type u_1) {ι : Type u_2}
 ## Sources
 
 - [Mathlib documentation: `PiLp.normedSpace`](https://leanprover-community.github.io/mathlib4_docs/Mathlib/Analysis/Normed/Lp/PiLp.html#PiLp.normedSpace)
-- [Source of `PiLp.normedSpace` in Mathlib/Analysis/Normed/Lp/PiLp.lean](https://github.com/leanprover-community/mathlib4/blob/9bac2d0692944a775113f7c130fd5e5b4608a854/Mathlib/Analysis/Normed/Lp/PiLp.lean#L862)
-- [Mathlib undergraduate list: Topology › Normed vector spaces on $\R$ and $\C$](https://github.com/leanprover-community/mathlib4/blob/9bac2d0692944a775113f7c130fd5e5b4608a854/docs/undergrad.yaml#L427)
+- [Source of `PiLp.normedSpace` in Mathlib/Analysis/Normed/Lp/PiLp.lean](https://github.com/leanprover-community/mathlib4/blob/15cf10d19dfd4cdee9602318e271fa3ce99c454d/Mathlib/Analysis/Normed/Lp/PiLp.lean#L862)
+- [Mathlib undergraduate list: Topology › Normed vector spaces on $\R$ and $\C$](https://github.com/leanprover-community/mathlib4/blob/15cf10d19dfd4cdee9602318e271fa3ce99c454d/docs/undergrad.yaml#L427)

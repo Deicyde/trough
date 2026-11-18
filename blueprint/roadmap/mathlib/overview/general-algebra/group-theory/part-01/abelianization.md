@@ -125,5 +125,5 @@ the abelianization of the free group, written additively.
 ## Sources
 
 - [Mathlib documentation: `Group.Abelianization`](https://leanprover-community.github.io/mathlib4_docs/Mathlib/GroupTheory/Abelianization/Defs.html#Group.Abelianization)
-- [Source of `Group.Abelianization` in Mathlib/GroupTheory/Abelianization/Defs.lean](https://github.com/leanprover-community/mathlib4/blob/9bac2d0692944a775113f7c130fd5e5b4608a854/Mathlib/GroupTheory/Abelianization/Defs.lean#L39)
-- [Mathlib overview: General algebra › Group theory](https://github.com/leanprover-community/mathlib4/blob/9bac2d0692944a775113f7c130fd5e5b4608a854/docs/overview.yaml#L47)
+- [Source of `Group.Abelianization` in Mathlib/GroupTheory/Abelianization/Defs.lean](https://github.com/leanprover-community/mathlib4/blob/15cf10d19dfd4cdee9602318e271fa3ce99c454d/Mathlib/GroupTheory/Abelianization/Defs.lean#L41)
+- [Mathlib overview: General algebra › Group theory](https://github.com/leanprover-community/mathlib4/blob/15cf10d19dfd4cdee9602318e271fa3ce99c454d/docs/overview.yaml#L47)

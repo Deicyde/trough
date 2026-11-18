@@ -25,5 +25,5 @@ MvPolynomial.mul_esymm_eq_sum.{u_1, u_2} (σ : Type u_1) [Fintype σ] (R : Type 
 ## Sources
 
 - [Mathlib documentation: `MvPolynomial.mul_esymm_eq_sum`](https://leanprover-community.github.io/mathlib4_docs/Mathlib/RingTheory/MvPolynomial/Symmetric/NewtonIdentities.html#MvPolynomial.mul_esymm_eq_sum)
-- [Source of `MvPolynomial.mul_esymm_eq_sum` in Mathlib/RingTheory/MvPolynomial/Symmetric/NewtonIdentities.lean](https://github.com/leanprover-community/mathlib4/blob/9bac2d0692944a775113f7c130fd5e5b4608a854/Mathlib/RingTheory/MvPolynomial/Symmetric/NewtonIdentities.lean#L219)
-- [Mathlib undergraduate list: Ring Theory › Polynomial rings](https://github.com/leanprover-community/mathlib4/blob/9bac2d0692944a775113f7c130fd5e5b4608a854/docs/undergrad.yaml#L166)
+- [Source of `MvPolynomial.mul_esymm_eq_sum` in Mathlib/RingTheory/MvPolynomial/Symmetric/NewtonIdentities.lean](https://github.com/leanprover-community/mathlib4/blob/15cf10d19dfd4cdee9602318e271fa3ce99c454d/Mathlib/RingTheory/MvPolynomial/Symmetric/NewtonIdentities.lean#L219)
+- [Mathlib undergraduate list: Ring Theory › Polynomial rings](https://github.com/leanprover-community/mathlib4/blob/15cf10d19dfd4cdee9602318e271fa3ce99c454d/docs/undergrad.yaml#L166)

@@ -36,8 +36,8 @@ PadicInt.hasSum_mahler.{u_1} {p : ℕ} [hp : Fact (Nat.Prime p)] {E : Type u_1} 
 ## Sources
 
 - [Mathlib documentation: `PadicInt.hasSum_mahler`](https://leanprover-community.github.io/mathlib4_docs/Mathlib/NumberTheory/Padics/MahlerBasis.html#PadicInt.hasSum_mahler)
-- [Source of `PadicInt.hasSum_mahler` in Mathlib/NumberTheory/Padics/MahlerBasis.lean](https://github.com/leanprover-community/mathlib4/blob/9bac2d0692944a775113f7c130fd5e5b4608a854/Mathlib/NumberTheory/Padics/MahlerBasis.lean#L331)
-- [1000+ theorems list: Q3527118](https://github.com/leanprover-community/mathlib4/blob/9bac2d0692944a775113f7c130fd5e5b4608a854/docs/1000.yaml#L2495)
+- [Source of `PadicInt.hasSum_mahler` in Mathlib/NumberTheory/Padics/MahlerBasis.lean](https://github.com/leanprover-community/mathlib4/blob/15cf10d19dfd4cdee9602318e271fa3ce99c454d/Mathlib/NumberTheory/Padics/MahlerBasis.lean#L331)
+- [1000+ theorems list: Q3527118](https://github.com/leanprover-community/mathlib4/blob/15cf10d19dfd4cdee9602318e271fa3ce99c454d/docs/1000.yaml#L2498)
 - [1000+ theorems project: Q3527118](https://1000-plus.github.io/all.html?length=-1#Q3527118)
 - [Wikipedia: Mahler's theorem](https://en.wikipedia.org/wiki/Mahler's_theorem)
 - [Wikidata: Q3527118](https://www.wikidata.org/wiki/Q3527118)

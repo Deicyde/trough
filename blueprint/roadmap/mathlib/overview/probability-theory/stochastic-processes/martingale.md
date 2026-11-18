@@ -16,5 +16,5 @@ MeasureTheory.Martingale.{u_1, u_2, u_3} {Ω : Type u_1} {E : Type u_2} {ι : Ty
 ## Sources
 
 - [Mathlib documentation: `MeasureTheory.Martingale`](https://leanprover-community.github.io/mathlib4_docs/Mathlib/Probability/Martingale/Basic.html#MeasureTheory.Martingale)
-- [Source of `MeasureTheory.Martingale` in Mathlib/Probability/Martingale/Basic.lean](https://github.com/leanprover-community/mathlib4/blob/9bac2d0692944a775113f7c130fd5e5b4608a854/Mathlib/Probability/Martingale/Basic.lean#L51)
-- [Mathlib overview: Probability Theory › Stochastic Processes](https://github.com/leanprover-community/mathlib4/blob/9bac2d0692944a775113f7c130fd5e5b4608a854/docs/overview.yaml#L423)
+- [Source of `MeasureTheory.Martingale` in Mathlib/Probability/Martingale/Basic.lean](https://github.com/leanprover-community/mathlib4/blob/15cf10d19dfd4cdee9602318e271fa3ce99c454d/Mathlib/Probability/Martingale/Basic.lean#L50)
+- [Mathlib overview: Probability Theory › Stochastic Processes](https://github.com/leanprover-community/mathlib4/blob/15cf10d19dfd4cdee9602318e271fa3ce99c454d/docs/overview.yaml#L423)

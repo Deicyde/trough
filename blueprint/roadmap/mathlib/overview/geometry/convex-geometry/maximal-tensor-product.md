@@ -19,5 +19,5 @@ PointedCone.maxTensorProduct.{u_1, u_2, u_3} {R : Type u_1} [CommRing R] [Linear
 ## Sources
 
 - [Mathlib documentation: `PointedCone.maxTensorProduct`](https://leanprover-community.github.io/mathlib4_docs/Mathlib/Geometry/Convex/Cone/TensorProduct.html#PointedCone.maxTensorProduct)
-- [Source of `PointedCone.maxTensorProduct` in Mathlib/Geometry/Convex/Cone/TensorProduct.lean](https://github.com/leanprover-community/mathlib4/blob/9bac2d0692944a775113f7c130fd5e5b4608a854/Mathlib/Geometry/Convex/Cone/TensorProduct.lean#L62)
-- [Mathlib overview: Geometry › Convex geometry](https://github.com/leanprover-community/mathlib4/blob/9bac2d0692944a775113f7c130fd5e5b4608a854/docs/overview.yaml#L494)
+- [Source of `PointedCone.maxTensorProduct` in Mathlib/Geometry/Convex/Cone/TensorProduct.lean](https://github.com/leanprover-community/mathlib4/blob/15cf10d19dfd4cdee9602318e271fa3ce99c454d/Mathlib/Geometry/Convex/Cone/TensorProduct.lean#L61)
+- [Mathlib overview: Geometry › Convex geometry](https://github.com/leanprover-community/mathlib4/blob/15cf10d19dfd4cdee9602318e271fa3ce99c454d/docs/overview.yaml#L494)

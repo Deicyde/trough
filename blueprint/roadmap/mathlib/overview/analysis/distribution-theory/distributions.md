@@ -19,6 +19,6 @@ Distribution.{u_1, u_2} {E : Type u_1} [NormedAddCommGroup E] [NormedSpace ℝ E
 ## Sources
 
 - [Mathlib documentation: `Distribution`](https://leanprover-community.github.io/mathlib4_docs/Mathlib/Analysis/Distribution/Distribution.html#Distribution)
-- [Source of `Distribution` in Mathlib/Analysis/Distribution/Distribution.lean](https://github.com/leanprover-community/mathlib4/blob/9bac2d0692944a775113f7c130fd5e5b4608a854/Mathlib/Analysis/Distribution/Distribution.lean#L162)
-- [Mathlib overview: Analysis › Distribution theory](https://github.com/leanprover-community/mathlib4/blob/9bac2d0692944a775113f7c130fd5e5b4608a854/docs/overview.yaml#L381)
-- [Mathlib undergraduate list: Distribution calculus › Distributions on $\R^d$](https://github.com/leanprover-community/mathlib4/blob/9bac2d0692944a775113f7c130fd5e5b4608a854/docs/undergrad.yaml#L596)
+- [Source of `Distribution` in Mathlib/Analysis/Distribution/Distribution.lean](https://github.com/leanprover-community/mathlib4/blob/15cf10d19dfd4cdee9602318e271fa3ce99c454d/Mathlib/Analysis/Distribution/Distribution.lean#L161)
+- [Mathlib overview: Analysis › Distribution theory](https://github.com/leanprover-community/mathlib4/blob/15cf10d19dfd4cdee9602318e271fa3ce99c454d/docs/overview.yaml#L381)
+- [Mathlib undergraduate list: Distribution calculus › Distributions on $\R^d$](https://github.com/leanprover-community/mathlib4/blob/15cf10d19dfd4cdee9602318e271fa3ce99c454d/docs/undergrad.yaml#L596)

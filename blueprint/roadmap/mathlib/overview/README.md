@@ -1,6 +1,6 @@
 # Mathlib overview
 
-Mathlib's own overview of what it contains, area by area ([docs/overview.yaml](https://github.com/leanprover-community/mathlib4/blob/9bac2d0692944a775113f7c130fd5e5b4608a854/docs/overview.yaml)).
+Mathlib's own overview of what it contains, area by area ([docs/overview.yaml](https://github.com/leanprover-community/mathlib4/blob/15cf10d19dfd4cdee9602318e271fa3ce99c454d/docs/overview.yaml)).
 
 - [General algebra](general-algebra/README.md)
 - [Linear algebra](linear-algebra/README.md)

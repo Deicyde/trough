@@ -18,5 +18,5 @@ TemperedDistribution.smulLeftCLM.{u_3, u_4} {E : Type u_3} (F : Type u_4) [Norme
 ## Sources
 
 - [Mathlib documentation: `TemperedDistribution.smulLeftCLM`](https://leanprover-community.github.io/mathlib4_docs/Mathlib/Analysis/Distribution/TemperedDistribution.html#TemperedDistribution.smulLeftCLM)
-- [Source of `TemperedDistribution.smulLeftCLM` in Mathlib/Analysis/Distribution/TemperedDistribution.lean](https://github.com/leanprover-community/mathlib4/blob/9bac2d0692944a775113f7c130fd5e5b4608a854/Mathlib/Analysis/Distribution/TemperedDistribution.lean#L247)
-- [Mathlib undergraduate list: Distribution calculus › Tempered distributions](https://github.com/leanprover-community/mathlib4/blob/9bac2d0692944a775113f7c130fd5e5b4608a854/docs/undergrad.yaml#L616)
+- [Source of `TemperedDistribution.smulLeftCLM` in Mathlib/Analysis/Distribution/TemperedDistribution.lean](https://github.com/leanprover-community/mathlib4/blob/15cf10d19dfd4cdee9602318e271fa3ce99c454d/Mathlib/Analysis/Distribution/TemperedDistribution.lean#L247)
+- [Mathlib undergraduate list: Distribution calculus › Tempered distributions](https://github.com/leanprover-community/mathlib4/blob/15cf10d19dfd4cdee9602318e271fa3ce99c454d/docs/undergrad.yaml#L616)

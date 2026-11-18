@@ -25,5 +25,5 @@ AlgebraicGeometry.Scheme.{u_1} : Type (u_1 + 1)
 ## Sources
 
 - [Mathlib documentation: `AlgebraicGeometry.Scheme`](https://leanprover-community.github.io/mathlib4_docs/Mathlib/AlgebraicGeometry/Scheme.html#AlgebraicGeometry.Scheme)
-- [Source of `AlgebraicGeometry.Scheme` in Mathlib/AlgebraicGeometry/Scheme.lean](https://github.com/leanprover-community/mathlib4/blob/9bac2d0692944a775113f7c130fd5e5b4608a854/Mathlib/AlgebraicGeometry/Scheme.lean#L34)
-- [Mathlib overview: Geometry › Algebraic geometry](https://github.com/leanprover-community/mathlib4/blob/9bac2d0692944a775113f7c130fd5e5b4608a854/docs/overview.yaml#L484)
+- [Source of `AlgebraicGeometry.Scheme` in Mathlib/AlgebraicGeometry/Scheme.lean](https://github.com/leanprover-community/mathlib4/blob/15cf10d19dfd4cdee9602318e271fa3ce99c454d/Mathlib/AlgebraicGeometry/Scheme.lean#L33)
+- [Mathlib overview: Geometry › Algebraic geometry](https://github.com/leanprover-community/mathlib4/blob/15cf10d19dfd4cdee9602318e271fa3ce99c454d/docs/overview.yaml#L484)

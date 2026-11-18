@@ -48,5 +48,5 @@ Mathlib builds the presented group from a type of generators, which may be infin
 ## Sources
 
 - [Mathlib documentation: `PresentedGroup`](https://leanprover-community.github.io/mathlib4_docs/Mathlib/GroupTheory/PresentedGroup.html#PresentedGroup)
-- [Source of `PresentedGroup` in Mathlib/GroupTheory/PresentedGroup.lean](https://github.com/leanprover-community/mathlib4/blob/9bac2d0692944a775113f7c130fd5e5b4608a854/Mathlib/GroupTheory/PresentedGroup.lean#L37)
-- [Mathlib overview: General algebra › Group theory](https://github.com/leanprover-community/mathlib4/blob/9bac2d0692944a775113f7c130fd5e5b4608a854/docs/overview.yaml#L49)
+- [Source of `PresentedGroup` in Mathlib/GroupTheory/PresentedGroup.lean](https://github.com/leanprover-community/mathlib4/blob/15cf10d19dfd4cdee9602318e271fa3ce99c454d/Mathlib/GroupTheory/PresentedGroup.lean#L37)
+- [Mathlib overview: General algebra › Group theory](https://github.com/leanprover-community/mathlib4/blob/15cf10d19dfd4cdee9602318e271fa3ce99c454d/docs/overview.yaml#L49)

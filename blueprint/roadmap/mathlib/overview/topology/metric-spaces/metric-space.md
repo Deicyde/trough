@@ -28,5 +28,5 @@ MetricSpace.{u} (α : Type u) : Type u
 ## Sources
 
 - [Mathlib documentation: `MetricSpace`](https://leanprover-community.github.io/mathlib4_docs/Mathlib/Topology/MetricSpace/Defs.html#MetricSpace)
-- [Source of `MetricSpace` in Mathlib/Topology/MetricSpace/Defs.lean](https://github.com/leanprover-community/mathlib4/blob/9bac2d0692944a775113f7c130fd5e5b4608a854/Mathlib/Topology/MetricSpace/Defs.lean#L54)
-- [Mathlib overview: Topology › Metric spaces](https://github.com/leanprover-community/mathlib4/blob/9bac2d0692944a775113f7c130fd5e5b4608a854/docs/overview.yaml#L260)
+- [Source of `MetricSpace` in Mathlib/Topology/MetricSpace/Defs.lean](https://github.com/leanprover-community/mathlib4/blob/15cf10d19dfd4cdee9602318e271fa3ce99c454d/Mathlib/Topology/MetricSpace/Defs.lean#L54)
+- [Mathlib overview: Topology › Metric spaces](https://github.com/leanprover-community/mathlib4/blob/15cf10d19dfd4cdee9602318e271fa3ce99c454d/docs/overview.yaml#L260)

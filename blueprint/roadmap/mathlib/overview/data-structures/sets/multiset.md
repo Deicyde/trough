@@ -14,5 +14,5 @@ Multiset.{u} (α : Type u) : Type u
 ## Sources
 
 - [Mathlib documentation: `Multiset`](https://leanprover-community.github.io/mathlib4_docs/Mathlib/Data/Multiset/Defs.html#Multiset)
-- [Source of `Multiset` in Mathlib/Data/Multiset/Defs.lean](https://github.com/leanprover-community/mathlib4/blob/9bac2d0692944a775113f7c130fd5e5b4608a854/Mathlib/Data/Multiset/Defs.lean#L67)
-- [Mathlib overview: Data structures › Sets](https://github.com/leanprover-community/mathlib4/blob/9bac2d0692944a775113f7c130fd5e5b4608a854/docs/overview.yaml#L581)
+- [Source of `Multiset` in Mathlib/Data/Multiset/Defs.lean](https://github.com/leanprover-community/mathlib4/blob/15cf10d19dfd4cdee9602318e271fa3ce99c454d/Mathlib/Data/Multiset/Defs.lean#L67)
+- [Mathlib overview: Data structures › Sets](https://github.com/leanprover-community/mathlib4/blob/15cf10d19dfd4cdee9602318e271fa3ce99c454d/docs/overview.yaml#L581)

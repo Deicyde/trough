@@ -133,6 +133,6 @@ complete linearly ordered fields.
 ## Sources
 
 - [Mathlib documentation: `Real`](https://leanprover-community.github.io/mathlib4_docs/Mathlib/Basic/Real/Basic.html#Real)
-- [Source of `Real` in Mathlib/Basic/Real/Basic.lean](https://github.com/leanprover-community/mathlib4/blob/9bac2d0692944a775113f7c130fd5e5b4608a854/Mathlib/Basic/Real/Basic.lean#L33)
-- [Mathlib overview: General algebra › Numbers](https://github.com/leanprover-community/mathlib4/blob/9bac2d0692944a775113f7c130fd5e5b4608a854/docs/overview.yaml#L25)
-- [Mathlib undergraduate list: Single Variable Real Analysis › Real numbers](https://github.com/leanprover-community/mathlib4/blob/9bac2d0692944a775113f7c130fd5e5b4608a854/docs/undergrad.yaml#L280)
+- [Source of `Real` in Mathlib/Basic/Real/Basic.lean](https://github.com/leanprover-community/mathlib4/blob/15cf10d19dfd4cdee9602318e271fa3ce99c454d/Mathlib/Basic/Real/Basic.lean#L33)
+- [Mathlib overview: General algebra › Numbers](https://github.com/leanprover-community/mathlib4/blob/15cf10d19dfd4cdee9602318e271fa3ce99c454d/docs/overview.yaml#L25)
+- [Mathlib undergraduate list: Single Variable Real Analysis › Real numbers](https://github.com/leanprover-community/mathlib4/blob/15cf10d19dfd4cdee9602318e271fa3ce99c454d/docs/undergrad.yaml#L280)

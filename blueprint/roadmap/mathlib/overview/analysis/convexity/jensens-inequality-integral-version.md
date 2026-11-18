@@ -33,5 +33,5 @@ ConvexOn.map_integral_le.{u_1, u_2} {α : Type u_1} {E : Type u_2} {m0 : Measura
 ## Sources
 
 - [Mathlib documentation: `ConvexOn.map_integral_le`](https://leanprover-community.github.io/mathlib4_docs/Mathlib/Analysis/Convex/Integral.html#ConvexOn.map_integral_le)
-- [Source of `ConvexOn.map_integral_le` in Mathlib/Analysis/Convex/Integral.lean](https://github.com/leanprover-community/mathlib4/blob/9bac2d0692944a775113f7c130fd5e5b4608a854/Mathlib/Analysis/Convex/Integral.lean#L191)
-- [Mathlib overview: Analysis › Convexity](https://github.com/leanprover-community/mathlib4/blob/9bac2d0692944a775113f7c130fd5e5b4608a854/docs/overview.yaml#L324)
+- [Source of `ConvexOn.map_integral_le` in Mathlib/Analysis/Convex/Integral.lean](https://github.com/leanprover-community/mathlib4/blob/15cf10d19dfd4cdee9602318e271fa3ce99c454d/Mathlib/Analysis/Convex/Integral.lean#L191)
+- [Mathlib overview: Analysis › Convexity](https://github.com/leanprover-community/mathlib4/blob/15cf10d19dfd4cdee9602318e271fa3ce99c454d/docs/overview.yaml#L324)

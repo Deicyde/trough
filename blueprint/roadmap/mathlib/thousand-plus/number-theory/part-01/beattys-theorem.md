@@ -31,10 +31,10 @@ compl_beattySeq {r s : ℝ} (hrs : r.HolderConjugate s) :
 ## Sources
 
 - [Mathlib documentation: `Irrational.beattySeq_symmDiff_beattySeq_pos`](https://leanprover-community.github.io/mathlib4_docs/Mathlib/NumberTheory/Rayleigh.html#Irrational.beattySeq_symmDiff_beattySeq_pos)
-- [Source of `Irrational.beattySeq_symmDiff_beattySeq_pos` in Mathlib/NumberTheory/Rayleigh.lean](https://github.com/leanprover-community/mathlib4/blob/9bac2d0692944a775113f7c130fd5e5b4608a854/Mathlib/NumberTheory/Rayleigh.lean#L175)
+- [Source of `Irrational.beattySeq_symmDiff_beattySeq_pos` in Mathlib/NumberTheory/Rayleigh.lean](https://github.com/leanprover-community/mathlib4/blob/15cf10d19dfd4cdee9602318e271fa3ce99c454d/Mathlib/NumberTheory/Rayleigh.lean#L175)
 - [Mathlib documentation: `compl_beattySeq`](https://leanprover-community.github.io/mathlib4_docs/Mathlib/NumberTheory/Rayleigh.html#compl_beattySeq)
-- [Source of `compl_beattySeq` in Mathlib/NumberTheory/Rayleigh.lean](https://github.com/leanprover-community/mathlib4/blob/9bac2d0692944a775113f7c130fd5e5b4608a854/Mathlib/NumberTheory/Rayleigh.lean#L118)
-- [1000+ theorems list: Q791663](https://github.com/leanprover-community/mathlib4/blob/9bac2d0692944a775113f7c130fd5e5b4608a854/docs/1000.yaml#L895)
+- [Source of `compl_beattySeq` in Mathlib/NumberTheory/Rayleigh.lean](https://github.com/leanprover-community/mathlib4/blob/15cf10d19dfd4cdee9602318e271fa3ce99c454d/Mathlib/NumberTheory/Rayleigh.lean#L118)
+- [1000+ theorems list: Q791663](https://github.com/leanprover-community/mathlib4/blob/15cf10d19dfd4cdee9602318e271fa3ce99c454d/docs/1000.yaml#L898)
 - [1000+ theorems project: Q791663](https://1000-plus.github.io/all.html?length=-1#Q791663)
 - [Wikipedia: Beatty's theorem](https://en.wikipedia.org/wiki/Beatty's_theorem)
 - [Wikidata: Q791663](https://www.wikidata.org/wiki/Q791663)

@@ -28,5 +28,5 @@ DiffContOnCl.circleIntegral_sub_inv_smul.{u} {E : Type u} [NormedAddCommGroup E]
 ## Sources
 
 - [Mathlib documentation: `DiffContOnCl.circleIntegral_sub_inv_smul`](https://leanprover-community.github.io/mathlib4_docs/Mathlib/Analysis/Complex/CauchyIntegral.html#DiffContOnCl.circleIntegral_sub_inv_smul)
-- [Source of `DiffContOnCl.circleIntegral_sub_inv_smul` in Mathlib/Analysis/Complex/CauchyIntegral.lean](https://github.com/leanprover-community/mathlib4/blob/9bac2d0692944a775113f7c130fd5e5b4608a854/Mathlib/Analysis/Complex/CauchyIntegral.lean#L560)
-- [Mathlib overview: Analysis › Complex analysis](https://github.com/leanprover-community/mathlib4/blob/9bac2d0692944a775113f7c130fd5e5b4608a854/docs/overview.yaml#L366)
+- [Source of `DiffContOnCl.circleIntegral_sub_inv_smul` in Mathlib/Analysis/Complex/CauchyIntegral.lean](https://github.com/leanprover-community/mathlib4/blob/15cf10d19dfd4cdee9602318e271fa3ce99c454d/Mathlib/Analysis/Complex/CauchyIntegral.lean#L560)
+- [Mathlib overview: Analysis › Complex analysis](https://github.com/leanprover-community/mathlib4/blob/15cf10d19dfd4cdee9602318e271fa3ce99c454d/docs/overview.yaml#L366)

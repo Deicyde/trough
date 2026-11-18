@@ -26,8 +26,8 @@ WeakDual.isCompact_polar.{u_1, u_3} (𝕜 : Type u_1) {E : Type u_3} [Nontrivial
 ## Sources
 
 - [Mathlib documentation: `WeakDual.isCompact_polar`](https://leanprover-community.github.io/mathlib4_docs/Mathlib/Analysis/Normed/Module/WeakDual.html#WeakDual.isCompact_polar)
-- [Source of `WeakDual.isCompact_polar` in Mathlib/Analysis/Normed/Module/WeakDual.lean](https://github.com/leanprover-community/mathlib4/blob/9bac2d0692944a775113f7c130fd5e5b4608a854/Mathlib/Analysis/Normed/Module/WeakDual.lean#L312)
-- [1000+ theorems list: Q537618](https://github.com/leanprover-community/mathlib4/blob/9bac2d0692944a775113f7c130fd5e5b4608a854/docs/1000.yaml#L545)
+- [Source of `WeakDual.isCompact_polar` in Mathlib/Analysis/Normed/Module/WeakDual.lean](https://github.com/leanprover-community/mathlib4/blob/15cf10d19dfd4cdee9602318e271fa3ce99c454d/Mathlib/Analysis/Normed/Module/WeakDual.lean#L311)
+- [1000+ theorems list: Q537618](https://github.com/leanprover-community/mathlib4/blob/15cf10d19dfd4cdee9602318e271fa3ce99c454d/docs/1000.yaml#L548)
 - [1000+ theorems project: Q537618](https://1000-plus.github.io/all.html?length=-1#Q537618)
 - [Wikipedia: Banach–Alaoglu theorem](https://en.wikipedia.org/wiki/Banach%E2%80%93Alaoglu_theorem)
 - [Wikidata: Q537618](https://www.wikidata.org/wiki/Q537618)

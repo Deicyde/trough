@@ -120,5 +120,5 @@ for groups written with $+$, is
 ## Sources
 
 - [Mathlib documentation: `CommGroup.is_simple_iff_prime_card`](https://leanprover-community.github.io/mathlib4_docs/Mathlib/GroupTheory/SpecificGroups/Cyclic.html#CommGroup.is_simple_iff_prime_card)
-- [Source of `CommGroup.is_simple_iff_prime_card` in Mathlib/GroupTheory/SpecificGroups/Cyclic.lean](https://github.com/leanprover-community/mathlib4/blob/9bac2d0692944a775113f7c130fd5e5b4608a854/Mathlib/GroupTheory/SpecificGroups/Cyclic.lean#L272)
-- [Mathlib overview: General algebra › Group theory](https://github.com/leanprover-community/mathlib4/blob/9bac2d0692944a775113f7c130fd5e5b4608a854/docs/overview.yaml#L57)
+- [Source of `CommGroup.is_simple_iff_prime_card` in Mathlib/GroupTheory/SpecificGroups/Cyclic.lean](https://github.com/leanprover-community/mathlib4/blob/15cf10d19dfd4cdee9602318e271fa3ce99c454d/Mathlib/GroupTheory/SpecificGroups/Cyclic.lean#L272)
+- [Mathlib overview: General algebra › Group theory](https://github.com/leanprover-community/mathlib4/blob/15cf10d19dfd4cdee9602318e271fa3ce99c454d/docs/overview.yaml#L57)

@@ -23,5 +23,5 @@ Real.tendsto_sum_pi_div_four :
 ## Sources
 
 - [Mathlib documentation: `Real.tendsto_sum_pi_div_four`](https://leanprover-community.github.io/mathlib4_docs/Mathlib/Analysis/Real/Pi/Leibniz.html#Real.tendsto_sum_pi_div_four)
-- [Source of `Real.tendsto_sum_pi_div_four` in Mathlib/Analysis/Real/Pi/Leibniz.lean](https://github.com/leanprover-community/mathlib4/blob/9bac2d0692944a775113f7c130fd5e5b4608a854/Mathlib/Analysis/Real/Pi/Leibniz.lean#L22)
-- [Freek Wiedijk's 100 theorems, no. 26](https://github.com/leanprover-community/mathlib4/blob/9bac2d0692944a775113f7c130fd5e5b4608a854/docs/100.yaml#L127)
+- [Source of `Real.tendsto_sum_pi_div_four` in Mathlib/Analysis/Real/Pi/Leibniz.lean](https://github.com/leanprover-community/mathlib4/blob/15cf10d19dfd4cdee9602318e271fa3ce99c454d/Mathlib/Analysis/Real/Pi/Leibniz.lean#L22)
+- [Freek Wiedijk's 100 theorems, no. 26](https://github.com/leanprover-community/mathlib4/blob/15cf10d19dfd4cdee9602318e271fa3ce99c454d/docs/100.yaml#L127)

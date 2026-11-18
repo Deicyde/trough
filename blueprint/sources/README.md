@@ -4,7 +4,7 @@ Trough reads these sources. The catalog of libraries is `catalog/libraries.toml`
 
 ## Mathlib's curated lists
 
-- `data/mathlib/yaml/`: docs/overview.yaml, docs/undergrad.yaml, docs/100.yaml and docs/1000.yaml from [leanprover-community/mathlib4 at 9bac2d06](https://github.com/leanprover-community/mathlib4/tree/9bac2d0692944a775113f7c130fd5e5b4608a854/docs), Apache-2.0.
+- `data/mathlib/yaml/`: docs/overview.yaml, docs/undergrad.yaml, docs/100.yaml and docs/1000.yaml from [leanprover-community/mathlib4 at 15cf10d1](https://github.com/leanprover-community/mathlib4/tree/15cf10d19dfd4cdee9602318e271fa3ce99c454d/docs), Apache-2.0.
 - `data/mathlib/concept-deps.json`: each listed declaration's kind, docstring, signature and nearest listed dependencies, written by `lean/ConceptDeps.lean` in GitHub Actions.
 - `data/thousand-plus.json`: subject classification and Wikipedia pages of the 1000+ theorems, from [1000-plus/1000-plus.github.io](https://github.com/1000-plus/1000-plus.github.io) at 8e04b97d, released into the public domain.
 
@@ -54,10 +54,9 @@ Trough reads these sources. The catalog of libraries is `catalog/libraries.toml`
 
 - `data/openai-math/families/`: each result family's description, its manuscripts' titles, PDFs and abstracts, and its Lean page, with each formalized result's statements as the statement file writes them and where the repository's Lean proves them, read from the source text without Lean; `data/openai-math/structure.json`: the subjects and their families. From [openai/math at 4eaee875](https://github.com/openai/math/tree/4eaee87548250b2682affda7d05d947c05554bae), Apache-2.0.
 
-## Physlib
+## CSLib
 
-- `data/physlib/modules/`: each module's title, module docstring and section docstrings, and its declarations with their docstrings and Lean statements, read from the source text without Lean; `data/physlib/api-maps.json`: the content and references of each API map; `data/physlib/source.json`: the commit, the README's words on the project and the significant results scripts/lint/exemptions/Theorems.txt lists. From [leanprover-community/physlib at 2a1dfe43](https://github.com/leanprover-community/physlib/tree/2a1dfe43134b49b643642f13d33031754021bb5d), Apache-2.0.
-- `data/physlib/deps.json`: the modules whose declarations each module's statements and proofs use, and the names read from the source that Lean does not have, written by `lean/physlib/PhyslibDeps.lean` in GitHub Actions.
+- `data/cslib/library.json`: each module's title, docstrings and authors, and its public declarations with their kinds, lines, docstrings and Lean statements, read from the source text without Lean, with the opening of each folder's README, the README's description and the maintainers GOVERNANCE.md names, from [leanprover/cslib at 86d560b6](https://github.com/leanprover/cslib/tree/86d560b6cbb379bd82512424cbcd2a915a1565e7), Apache-2.0. `data/cslib/deps.json`: the modules each module's statements and proofs use, and the names read from the source that Lean has only as private declarations or not at all, written by `lean/cslib/CslibDeps.lean` in GitHub Actions. `data/cslib/source.json` records the commit, its Lean toolchain and Mathlib.
 
 ## Libraries
 
@@ -81,8 +80,8 @@ Trough reads these sources. The catalog of libraries is `catalog/libraries.toml`
 ### Libraries
 
 - [Formal Conjectures](https://github.com/google-deepmind/formal-conjectures) at 5258ab9ac6db: Statements, mostly without proof, of open and solved problems, a file per problem in a folder per source: the Erdős problems, OEIS, Wikipedia, Green's open problems, Written on the Wall II, papers, arXiv, MathOverflow, books and smaller ones.
-- [Physlib](https://github.com/leanprover-community/physlib) at 2a1dfe43134b: Physics in Lean (formerly PhysLean, and HepLean before that), merged with Lean-QuantumInfo: three libraries, the reviewed core Physlib (space and time, relativity, particles, QFT, quantum and classical mechanics, electromagnetism, condensed matter, cosmology and more), PhyslibAlpha under a lighter review, and QuantumInfo.
-- [CSLib](https://github.com/leanprover/cslib) at 52897fc2059b: Computer science foundations: computability (110), foundations (82), languages and semantics (45), logics, algorithms, crypto, ML.
+- [Physlib](https://github.com/leanprover-community/physlib) at 3d3ec913681f: Physics (formerly HepLean/PhysLean): relativity, particles, QFT, quantum mechanics, classical mechanics, electromagnetism, condensed matter, plus quantum information (QuantumInfo lib).
+- [CSLib](https://github.com/leanprover/cslib) at 86d560b6cbb3: The Lean Computer Science Library: computability (automata, machines, circuits, formal languages), operational semantics and transition systems, programming languages and calculi, logics, algorithms, cryptography and learning theory, documented in Mathlib's style.
 - [Foundation](https://github.com/FormalizedFormalLogic/Foundation) at c3eb37ae896d: Mathematical logic: first-order arithmetic and incompleteness (FirstOrder 177), provability logic (58), propositional and modal logic, second-order.
 - [Analysis I companion](https://github.com/teorth/analysis) at a19a5bfadc61: Lean companion to Tao's Analysis I textbook (section-by-section exercises), plus measure theory.
 

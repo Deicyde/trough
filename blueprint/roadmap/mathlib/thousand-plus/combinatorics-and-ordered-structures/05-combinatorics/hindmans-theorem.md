@@ -22,8 +22,8 @@ Hindman.FP_partition_regular.{u_1} {M : Type u_1} [Semigroup M] (a : Stream' M) 
 ## Sources
 
 - [Mathlib documentation: `Hindman.FP_partition_regular`](https://leanprover-community.github.io/mathlib4_docs/Mathlib/Combinatorics/Hindman.html#Hindman.FP_partition_regular)
-- [Source of `Hindman.FP_partition_regular` in Mathlib/Combinatorics/Hindman.lean](https://github.com/leanprover-community/mathlib4/blob/9bac2d0692944a775113f7c130fd5e5b4608a854/Mathlib/Combinatorics/Hindman.lean#L190)
-- [1000+ theorems list: Q1566341](https://github.com/leanprover-community/mathlib4/blob/9bac2d0692944a775113f7c130fd5e5b4608a854/docs/1000.yaml#L1767)
+- [Source of `Hindman.FP_partition_regular` in Mathlib/Combinatorics/Hindman.lean](https://github.com/leanprover-community/mathlib4/blob/15cf10d19dfd4cdee9602318e271fa3ce99c454d/Mathlib/Combinatorics/Hindman.lean#L189)
+- [1000+ theorems list: Q1566341](https://github.com/leanprover-community/mathlib4/blob/15cf10d19dfd4cdee9602318e271fa3ce99c454d/docs/1000.yaml#L1770)
 - [1000+ theorems project: Q1566341](https://1000-plus.github.io/all.html?length=-1#Q1566341)
 - [Wikipedia: Hindman's theorem](https://en.wikipedia.org/wiki/Hindman's_theorem)
 - [Wikidata: Q1566341](https://www.wikidata.org/wiki/Q1566341)

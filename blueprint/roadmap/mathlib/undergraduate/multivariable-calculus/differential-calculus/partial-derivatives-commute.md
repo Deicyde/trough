@@ -34,5 +34,5 @@ second_derivative_symmetric.{u_1, u_2, u_3} {𝕜 : Type u_1} [NontriviallyNorme
 ## Sources
 
 - [Mathlib documentation: `second_derivative_symmetric`](https://leanprover-community.github.io/mathlib4_docs/Mathlib/Analysis/Calculus/FDeriv/Symmetric.html#second_derivative_symmetric)
-- [Source of `second_derivative_symmetric` in Mathlib/Analysis/Calculus/FDeriv/Symmetric.lean](https://github.com/leanprover-community/mathlib4/blob/9bac2d0692944a775113f7c130fd5e5b4608a854/Mathlib/Analysis/Calculus/FDeriv/Symmetric.lean#L484)
-- [Mathlib undergraduate list: Multivariable calculus › Differential calculus](https://github.com/leanprover-community/mathlib4/blob/9bac2d0692944a775113f7c130fd5e5b4608a854/docs/undergrad.yaml#L467)
+- [Source of `second_derivative_symmetric` in Mathlib/Analysis/Calculus/FDeriv/Symmetric.lean](https://github.com/leanprover-community/mathlib4/blob/15cf10d19dfd4cdee9602318e271fa3ce99c454d/Mathlib/Analysis/Calculus/FDeriv/Symmetric.lean#L484)
+- [Mathlib undergraduate list: Multivariable calculus › Differential calculus](https://github.com/leanprover-community/mathlib4/blob/15cf10d19dfd4cdee9602318e271fa3ce99c454d/docs/undergrad.yaml#L467)

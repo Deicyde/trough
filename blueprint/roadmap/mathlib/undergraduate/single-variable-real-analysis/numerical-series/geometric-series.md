@@ -22,5 +22,5 @@ tsum_geometric_of_norm_lt_one.{u_4} {K : Type u_4} [NormedDivisionRing K] {ξ : 
 ## Sources
 
 - [Mathlib documentation: `tsum_geometric_of_norm_lt_one`](https://leanprover-community.github.io/mathlib4_docs/Mathlib/Analysis/SpecificLimits/Normed.html#tsum_geometric_of_norm_lt_one)
-- [Source of `tsum_geometric_of_norm_lt_one` in Mathlib/Analysis/SpecificLimits/Normed.lean](https://github.com/leanprover-community/mathlib4/blob/9bac2d0692944a775113f7c130fd5e5b4608a854/Mathlib/Analysis/SpecificLimits/Normed.lean#L489)
-- [Mathlib undergraduate list: Single Variable Real Analysis › Numerical series](https://github.com/leanprover-community/mathlib4/blob/9bac2d0692944a775113f7c130fd5e5b4608a854/docs/undergrad.yaml#L298)
+- [Source of `tsum_geometric_of_norm_lt_one` in Mathlib/Analysis/SpecificLimits/Normed.lean](https://github.com/leanprover-community/mathlib4/blob/15cf10d19dfd4cdee9602318e271fa3ce99c454d/Mathlib/Analysis/SpecificLimits/Normed.lean#L489)
+- [Mathlib undergraduate list: Single Variable Real Analysis › Numerical series](https://github.com/leanprover-community/mathlib4/blob/15cf10d19dfd4cdee9602318e271fa3ce99c454d/docs/undergrad.yaml#L298)

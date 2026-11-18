@@ -29,10 +29,10 @@ ContractingWith.exists_fixedPoint.{u_1} {α : Type u_1} [EMetricSpace α] {K : N
 ## Sources
 
 - [Mathlib documentation: `ContractingWith.exists_fixedPoint`](https://leanprover-community.github.io/mathlib4_docs/Mathlib/Topology/MetricSpace/Contracting.html#ContractingWith.exists_fixedPoint)
-- [Source of `ContractingWith.exists_fixedPoint` in Mathlib/Topology/MetricSpace/Contracting.lean](https://github.com/leanprover-community/mathlib4/blob/9bac2d0692944a775113f7c130fd5e5b4608a854/Mathlib/Topology/MetricSpace/Contracting.lean#L90)
-- [Mathlib overview: Topology › Metric spaces](https://github.com/leanprover-community/mathlib4/blob/9bac2d0692944a775113f7c130fd5e5b4608a854/docs/overview.yaml#L266)
-- [Mathlib undergraduate list: Topology › Topology and Metric Spaces](https://github.com/leanprover-community/mathlib4/blob/9bac2d0692944a775113f7c130fd5e5b4608a854/docs/undergrad.yaml#L421)
-- [1000+ theorems list: Q220680](https://github.com/leanprover-community/mathlib4/blob/9bac2d0692944a775113f7c130fd5e5b4608a854/docs/1000.yaml#L239)
+- [Source of `ContractingWith.exists_fixedPoint` in Mathlib/Topology/MetricSpace/Contracting.lean](https://github.com/leanprover-community/mathlib4/blob/15cf10d19dfd4cdee9602318e271fa3ce99c454d/Mathlib/Topology/MetricSpace/Contracting.lean#L90)
+- [Mathlib overview: Topology › Metric spaces](https://github.com/leanprover-community/mathlib4/blob/15cf10d19dfd4cdee9602318e271fa3ce99c454d/docs/overview.yaml#L266)
+- [Mathlib undergraduate list: Topology › Topology and Metric Spaces](https://github.com/leanprover-community/mathlib4/blob/15cf10d19dfd4cdee9602318e271fa3ce99c454d/docs/undergrad.yaml#L421)
+- [1000+ theorems list: Q220680](https://github.com/leanprover-community/mathlib4/blob/15cf10d19dfd4cdee9602318e271fa3ce99c454d/docs/1000.yaml#L239)
 - [1000+ theorems project: Q220680](https://1000-plus.github.io/all.html?length=-1#Q220680)
 - [Wikipedia: Banach fixed-point theorem](https://en.wikipedia.org/wiki/Banach_fixed-point_theorem)
 - [Wikidata: Q220680](https://www.wikidata.org/wiki/Q220680)

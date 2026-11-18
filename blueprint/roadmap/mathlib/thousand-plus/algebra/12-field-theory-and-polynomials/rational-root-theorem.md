@@ -38,10 +38,10 @@ den_dvd_of_is_root.{u_1, u_2} {A : Type u_1} {K : Type u_2} [CommRing A] [IsDoma
 ## Sources
 
 - [Mathlib documentation: `num_dvd_of_is_root`](https://leanprover-community.github.io/mathlib4_docs/Mathlib/RingTheory/Polynomial/RationalRoot.html#num_dvd_of_is_root)
-- [Source of `num_dvd_of_is_root` in Mathlib/RingTheory/Polynomial/RationalRoot.lean](https://github.com/leanprover-community/mathlib4/blob/9bac2d0692944a775113f7c130fd5e5b4608a854/Mathlib/RingTheory/Polynomial/RationalRoot.lean#L65)
+- [Source of `num_dvd_of_is_root` in Mathlib/RingTheory/Polynomial/RationalRoot.lean](https://github.com/leanprover-community/mathlib4/blob/15cf10d19dfd4cdee9602318e271fa3ce99c454d/Mathlib/RingTheory/Polynomial/RationalRoot.lean#L65)
 - [Mathlib documentation: `den_dvd_of_is_root`](https://leanprover-community.github.io/mathlib4_docs/Mathlib/RingTheory/Polynomial/RationalRoot.html#den_dvd_of_is_root)
-- [Source of `den_dvd_of_is_root` in Mathlib/RingTheory/Polynomial/RationalRoot.lean](https://github.com/leanprover-community/mathlib4/blob/9bac2d0692944a775113f7c130fd5e5b4608a854/Mathlib/RingTheory/Polynomial/RationalRoot.lean#L85)
-- [1000+ theorems list: Q180345](https://github.com/leanprover-community/mathlib4/blob/9bac2d0692944a775113f7c130fd5e5b4608a854/docs/1000.yaml#L102)
+- [Source of `den_dvd_of_is_root` in Mathlib/RingTheory/Polynomial/RationalRoot.lean](https://github.com/leanprover-community/mathlib4/blob/15cf10d19dfd4cdee9602318e271fa3ce99c454d/Mathlib/RingTheory/Polynomial/RationalRoot.lean#L85)
+- [1000+ theorems list: Q180345](https://github.com/leanprover-community/mathlib4/blob/15cf10d19dfd4cdee9602318e271fa3ce99c454d/docs/1000.yaml#L102)
 - [1000+ theorems project: Q180345](https://1000-plus.github.io/all.html?length=-1#Q180345)
 - [Wikipedia: Rational root theorem](https://en.wikipedia.org/wiki/Rational_root_theorem)
 - [Wikidata: Q180345](https://www.wikidata.org/wiki/Q180345)

@@ -24,10 +24,10 @@ MeasureTheory.tendsto_integral_of_dominated_convergence.{u_1, u_3} {α : Type u_
 ## Sources
 
 - [Mathlib documentation: `MeasureTheory.tendsto_integral_of_dominated_convergence`](https://leanprover-community.github.io/mathlib4_docs/Mathlib/MeasureTheory/Integral/DominatedConvergence.html#MeasureTheory.tendsto_integral_of_dominated_convergence)
-- [Source of `MeasureTheory.tendsto_integral_of_dominated_convergence` in Mathlib/MeasureTheory/Integral/DominatedConvergence.lean](https://github.com/leanprover-community/mathlib4/blob/9bac2d0692944a775113f7c130fd5e5b4608a854/Mathlib/MeasureTheory/Integral/DominatedConvergence.lean#L53)
-- [Mathlib overview: Analysis › Measures and integral calculus](https://github.com/leanprover-community/mathlib4/blob/9bac2d0692944a775113f7c130fd5e5b4608a854/docs/overview.yaml#L354)
-- [Mathlib undergraduate list: Measures and integral calculus › Integration](https://github.com/leanprover-community/mathlib4/blob/9bac2d0692944a775113f7c130fd5e5b4608a854/docs/undergrad.yaml#L517)
-- [1000+ theorems list: Q1067156](https://github.com/leanprover-community/mathlib4/blob/9bac2d0692944a775113f7c130fd5e5b4608a854/docs/1000.yaml#L1299)
+- [Source of `MeasureTheory.tendsto_integral_of_dominated_convergence` in Mathlib/MeasureTheory/Integral/DominatedConvergence.lean](https://github.com/leanprover-community/mathlib4/blob/15cf10d19dfd4cdee9602318e271fa3ce99c454d/Mathlib/MeasureTheory/Integral/DominatedConvergence.lean#L52)
+- [Mathlib overview: Analysis › Measures and integral calculus](https://github.com/leanprover-community/mathlib4/blob/15cf10d19dfd4cdee9602318e271fa3ce99c454d/docs/overview.yaml#L354)
+- [Mathlib undergraduate list: Measures and integral calculus › Integration](https://github.com/leanprover-community/mathlib4/blob/15cf10d19dfd4cdee9602318e271fa3ce99c454d/docs/undergrad.yaml#L517)
+- [1000+ theorems list: Q1067156](https://github.com/leanprover-community/mathlib4/blob/15cf10d19dfd4cdee9602318e271fa3ce99c454d/docs/1000.yaml#L1302)
 - [1000+ theorems project: Q1067156](https://1000-plus.github.io/all.html?length=-1#Q1067156)
 - [Wikipedia: Dominated convergence theorem](https://en.wikipedia.org/wiki/Dominated_convergence_theorem)
 - [Wikidata: Q1067156](https://www.wikidata.org/wiki/Q1067156)

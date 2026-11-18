@@ -52,5 +52,5 @@ Mathlib works in more generality than this article: $R$ is a commutative semirin
 ## Sources
 
 - [Mathlib documentation: `Algebra.TensorProduct.instAlgebra`](https://leanprover-community.github.io/mathlib4_docs/Mathlib/RingTheory/TensorProduct/Basic.html#Algebra.TensorProduct.instAlgebra)
-- [Source of `Algebra.TensorProduct.instAlgebra` in Mathlib/RingTheory/TensorProduct/Basic.lean](https://github.com/leanprover-community/mathlib4/blob/9bac2d0692944a775113f7c130fd5e5b4608a854/Mathlib/RingTheory/TensorProduct/Basic.lean#L247)
-- [Mathlib overview: General algebra › Algebras over a ring](https://github.com/leanprover-community/mathlib4/blob/9bac2d0692944a775113f7c130fd5e5b4608a854/docs/overview.yaml#L113)
+- [Source of `Algebra.TensorProduct.instAlgebra` in Mathlib/RingTheory/TensorProduct/Basic.lean](https://github.com/leanprover-community/mathlib4/blob/15cf10d19dfd4cdee9602318e271fa3ce99c454d/Mathlib/RingTheory/TensorProduct/Basic.lean#L246)
+- [Mathlib overview: General algebra › Algebras over a ring](https://github.com/leanprover-community/mathlib4/blob/15cf10d19dfd4cdee9602318e271fa3ce99c454d/docs/overview.yaml#L113)

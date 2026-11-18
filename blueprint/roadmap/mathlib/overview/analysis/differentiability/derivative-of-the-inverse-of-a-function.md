@@ -28,5 +28,5 @@ HasFDerivAt.of_local_left_inverse.{u_1, u_2, u_3} {𝕜 : Type u_1} {E : Type u_
 ## Sources
 
 - [Mathlib documentation: `HasFDerivAt.of_local_left_inverse`](https://leanprover-community.github.io/mathlib4_docs/Mathlib/Analysis/Calculus/FDeriv/OfCompLeft.html#HasFDerivAt.of_local_left_inverse)
-- [Source of `HasFDerivAt.of_local_left_inverse` in Mathlib/Analysis/Calculus/FDeriv/OfCompLeft.lean](https://github.com/leanprover-community/mathlib4/blob/9bac2d0692944a775113f7c130fd5e5b4608a854/Mathlib/Analysis/Calculus/FDeriv/OfCompLeft.lean#L161)
-- [Mathlib overview: Analysis › Differentiability](https://github.com/leanprover-community/mathlib4/blob/9bac2d0692944a775113f7c130fd5e5b4608a854/docs/overview.yaml#L309)
+- [Source of `HasFDerivAt.of_local_left_inverse` in Mathlib/Analysis/Calculus/FDeriv/OfCompLeft.lean](https://github.com/leanprover-community/mathlib4/blob/15cf10d19dfd4cdee9602318e271fa3ce99c454d/Mathlib/Analysis/Calculus/FDeriv/OfCompLeft.lean#L161)
+- [Mathlib overview: Analysis › Differentiability](https://github.com/leanprover-community/mathlib4/blob/15cf10d19dfd4cdee9602318e271fa3ce99c454d/docs/overview.yaml#L309)

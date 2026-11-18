@@ -21,5 +21,5 @@ LinearMap.BilinForm.toMatrix_comp.{u_1, u_2, u_5, u_6, u_7} {R₁ : Type u_1} {M
 ## Sources
 
 - [Mathlib documentation: `LinearMap.BilinForm.toMatrix_comp`](https://leanprover-community.github.io/mathlib4_docs/Mathlib/LinearAlgebra/Matrix/BilinearForm.html#LinearMap.BilinForm.toMatrix_comp)
-- [Source of `LinearMap.BilinForm.toMatrix_comp` in Mathlib/LinearAlgebra/Matrix/BilinearForm.lean](https://github.com/leanprover-community/mathlib4/blob/9bac2d0692944a775113f7c130fd5e5b4608a854/Mathlib/LinearAlgebra/Matrix/BilinearForm.lean#L251)
-- [Mathlib undergraduate list: Bilinear and Quadratic Forms Over a Vector Space › Bilinear forms](https://github.com/leanprover-community/mathlib4/blob/9bac2d0692944a775113f7c130fd5e5b4608a854/docs/undergrad.yaml#L201)
+- [Source of `LinearMap.BilinForm.toMatrix_comp` in Mathlib/LinearAlgebra/Matrix/BilinearForm.lean](https://github.com/leanprover-community/mathlib4/blob/15cf10d19dfd4cdee9602318e271fa3ce99c454d/Mathlib/LinearAlgebra/Matrix/BilinearForm.lean#L250)
+- [Mathlib undergraduate list: Bilinear and Quadratic Forms Over a Vector Space › Bilinear forms](https://github.com/leanprover-community/mathlib4/blob/15cf10d19dfd4cdee9602318e271fa3ce99c454d/docs/undergrad.yaml#L201)

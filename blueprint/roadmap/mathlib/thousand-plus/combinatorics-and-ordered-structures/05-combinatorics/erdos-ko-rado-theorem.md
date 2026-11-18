@@ -24,8 +24,8 @@ Finset.erdos_ko_rado {n : ℕ} {𝒜 : Finset (Finset (Fin n))} {r : ℕ} (h𝒜
 ## Sources
 
 - [Mathlib documentation: `Finset.erdos_ko_rado`](https://leanprover-community.github.io/mathlib4_docs/Mathlib/Combinatorics/SetFamily/KruskalKatona.html#Finset.erdos_ko_rado)
-- [Source of `Finset.erdos_ko_rado` in Mathlib/Combinatorics/SetFamily/KruskalKatona.lean](https://github.com/leanprover-community/mathlib4/blob/9bac2d0692944a775113f7c130fd5e5b4608a854/Mathlib/Combinatorics/SetFamily/KruskalKatona.lean#L342)
-- [1000+ theorems list: Q718875](https://github.com/leanprover-community/mathlib4/blob/9bac2d0692944a775113f7c130fd5e5b4608a854/docs/1000.yaml#L771)
+- [Source of `Finset.erdos_ko_rado` in Mathlib/Combinatorics/SetFamily/KruskalKatona.lean](https://github.com/leanprover-community/mathlib4/blob/15cf10d19dfd4cdee9602318e271fa3ce99c454d/Mathlib/Combinatorics/SetFamily/KruskalKatona.lean#L342)
+- [1000+ theorems list: Q718875](https://github.com/leanprover-community/mathlib4/blob/15cf10d19dfd4cdee9602318e271fa3ce99c454d/docs/1000.yaml#L774)
 - [1000+ theorems project: Q718875](https://1000-plus.github.io/all.html?length=-1#Q718875)
 - [Wikipedia: Erdős–Ko–Rado theorem](https://en.wikipedia.org/wiki/Erd%C5%91s%E2%80%93Ko%E2%80%93Rado_theorem)
 - [Wikidata: Q718875](https://www.wikidata.org/wiki/Q718875)

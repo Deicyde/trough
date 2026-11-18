@@ -28,9 +28,9 @@ ContinuousMap.subalgebra_topologicalClosure_eq_top_of_separatesPoints.{u_1} {X :
 ## Sources
 
 - [Mathlib documentation: `ContinuousMap.subalgebra_topologicalClosure_eq_top_of_separatesPoints`](https://leanprover-community.github.io/mathlib4_docs/Mathlib/Topology/ContinuousMap/StoneWeierstrass.html#ContinuousMap.subalgebra_topologicalClosure_eq_top_of_separatesPoints)
-- [Source of `ContinuousMap.subalgebra_topologicalClosure_eq_top_of_separatesPoints` in Mathlib/Topology/ContinuousMap/StoneWeierstrass.lean](https://github.com/leanprover-community/mathlib4/blob/9bac2d0692944a775113f7c130fd5e5b4608a854/Mathlib/Topology/ContinuousMap/StoneWeierstrass.lean#L259)
-- [Mathlib overview: Topology › General topology](https://github.com/leanprover-community/mathlib4/blob/9bac2d0692944a775113f7c130fd5e5b4608a854/docs/overview.yaml#L236)
-- [1000+ theorems list: Q939927](https://github.com/leanprover-community/mathlib4/blob/9bac2d0692944a775113f7c130fd5e5b4608a854/docs/1000.yaml#L1118)
+- [Source of `ContinuousMap.subalgebra_topologicalClosure_eq_top_of_separatesPoints` in Mathlib/Topology/ContinuousMap/StoneWeierstrass.lean](https://github.com/leanprover-community/mathlib4/blob/15cf10d19dfd4cdee9602318e271fa3ce99c454d/Mathlib/Topology/ContinuousMap/StoneWeierstrass.lean#L258)
+- [Mathlib overview: Topology › General topology](https://github.com/leanprover-community/mathlib4/blob/15cf10d19dfd4cdee9602318e271fa3ce99c454d/docs/overview.yaml#L236)
+- [1000+ theorems list: Q939927](https://github.com/leanprover-community/mathlib4/blob/15cf10d19dfd4cdee9602318e271fa3ce99c454d/docs/1000.yaml#L1121)
 - [1000+ theorems project: Q939927](https://1000-plus.github.io/all.html?length=-1#Q939927)
 - [Wikipedia: Stone–Weierstrass theorem](https://en.wikipedia.org/wiki/Stone%E2%80%93Weierstrass_theorem)
 - [Wikidata: Q939927](https://www.wikidata.org/wiki/Q939927)
