@@ -94,10 +94,13 @@ def range_title(group: list[Entry], number: int, total: int) -> str:
 
 
 def link_text(text: str) -> str:
-    """Text for a link label, its brackets escaped outside code spans, which show a backslash as is."""
-    parts = re.split(r"(`+[^`]*`+)", text)
-    return "".join(part if index % 2 else part.replace("[", "\\[").replace("]", "\\]")
-                   for index, part in enumerate(parts))
+    """Text for a link label, its brackets escaped outside code spans and formulas: the site reads both before the
+    link, and shows a backslash in them as is."""
+    out, last = [], 0
+    for match in re.finditer(r"`+[^`]*`+|(?<!\\)(\${1,2}).*?(?<!\\)\1", text):
+        out += [text[last : match.start()].replace("[", "\\[").replace("]", "\\]"), match.group()]
+        last = match.end()
+    return "".join(out) + text[last:].replace("[", "\\[").replace("]", "\\]")
 
 
 def folded(entry: Entry) -> int:

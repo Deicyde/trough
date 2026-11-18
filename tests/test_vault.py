@@ -66,8 +66,10 @@ def test_rel_and_frontmatter():
     assert frontmatter([], None) == ""
 
 
-def test_link_text_escapes_brackets_outside_code_spans_only():
+def test_link_text_escapes_brackets_outside_code_spans_and_formulas_only():
     assert link_text("A [b] and `[Γ(N)]` over `k[X]`") == "A \\[b\\] and `[Γ(N)]` over `k[X]`"
+    # The site reads a formula before the link, raw, so a backslash in it would reach MathJax.
+    assert link_text("$1/\\det(M)$ for $M[i,j] = 1$ and [c]") == "$1/\\det(M)$ for $M[i,j] = 1$ and \\[c\\]"
 
 
 def test_entries_after_pagination_parts_are_lines_of_their_own():
