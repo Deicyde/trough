@@ -118,6 +118,9 @@ def test_mutual_blocks_and_named_sections_close():
     assert set(leansource.scan(text)) == {"A.even", "A.odd", "A.inner", "after"}
     # A section named with a dot closes at the top level too.
     assert set(leansource.scan("section A.B\ntheorem x : True := trivial\nend A.B\n")) == {"x"}
+    # The module system's `public meta section`, which holds a module's metaprograms, closes with `end` too.
+    text = "namespace A\npublic meta section\ndef elab : Nat := 0\nend\ntheorem after : True := trivial\nend A\n"
+    assert set(leansource.scan(text)) == {"A.elab", "A.after"}
 
 
 def test_nothing_after_exit_is_read():

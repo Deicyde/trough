@@ -54,6 +54,10 @@ Trough reads these sources. The catalog of libraries is `catalog/libraries.toml`
 
 - `data/openai-math/families/`: each result family's description, its manuscripts' titles, PDFs and abstracts, and its Lean page, with each formalized result's statements as the statement file writes them and where the repository's Lean proves them, read from the source text without Lean; `data/openai-math/structure.json`: the subjects and their families. From [openai/math at 4eaee875](https://github.com/openai/math/tree/4eaee87548250b2682affda7d05d947c05554bae), Apache-2.0.
 
+## CSLib
+
+- `data/cslib/library.json`: each module's title, docstrings and authors, and its public declarations with their kinds, lines, docstrings and Lean statements, read from the source text without Lean, with the opening of each folder's README, the README's description and the maintainers GOVERNANCE.md names, from [leanprover/cslib at 86d560b6](https://github.com/leanprover/cslib/tree/86d560b6cbb379bd82512424cbcd2a915a1565e7), Apache-2.0. `data/cslib/deps.json`: the modules each module's statements and proofs use, and the names read from the source that Lean has only as private declarations or not at all, written by `lean/cslib/CslibDeps.lean` in GitHub Actions. `data/cslib/source.json` records the commit, its Lean toolchain and Mathlib.
+
 ## Libraries
 
 ### Core library
@@ -77,7 +81,7 @@ Trough reads these sources. The catalog of libraries is `catalog/libraries.toml`
 
 - [Formal Conjectures](https://github.com/google-deepmind/formal-conjectures) at 5258ab9ac6db: Statements, mostly without proof, of open and solved problems, a file per problem in a folder per source: the Erdős problems, OEIS, Wikipedia, Green's open problems, Written on the Wall II, papers, arXiv, MathOverflow, books and smaller ones.
 - [Physlib](https://github.com/leanprover-community/physlib) at 3d3ec913681f: Physics (formerly HepLean/PhysLean): relativity, particles, QFT, quantum mechanics, classical mechanics, electromagnetism, condensed matter, plus quantum information (QuantumInfo lib).
-- [CSLib](https://github.com/leanprover/cslib) at 52897fc2059b: Computer science foundations: computability (110), foundations (82), languages and semantics (45), logics, algorithms, crypto, ML.
+- [CSLib](https://github.com/leanprover/cslib) at 86d560b6cbb3: The Lean Computer Science Library: computability (automata, machines, circuits, formal languages), operational semantics and transition systems, programming languages and calculi, logics, algorithms, cryptography and learning theory, documented in Mathlib's style.
 - [Foundation](https://github.com/FormalizedFormalLogic/Foundation) at c3eb37ae896d: Mathematical logic: first-order arithmetic and incompleteness (FirstOrder 177), provability logic (58), propositional and modal logic, second-order.
 - [Analysis I companion](https://github.com/teorth/analysis) at a19a5bfadc61: Lean companion to Tao's Analysis I textbook (section-by-section exercises), plus measure theory.
 

@@ -26,7 +26,7 @@ from pathlib import Path
 
 from collections import Counter
 
-from trough import anthropic_flt, atlas, blueprints, catalog, cfsg, ff, formal_conjectures, lean_pool, links, mathlib, openai_math, stacks, tauceti, wiki
+from trough import anthropic_flt, atlas, blueprints, catalog, cfsg, cslib, ff, formal_conjectures, lean_pool, links, mathlib, openai_math, stacks, tauceti, wiki
 from trough.vault import Leaf, assign_paths, render_tree, walk
 
 ROOT = Path(__file__).resolve().parent.parent
@@ -268,6 +268,24 @@ def generate() -> dict[Path, str]:
             f"{om['formalized']} families with Lean, {om['statements']} statements, {om['proved']} proved in a file read",
             file=sys.stderr,
         )
+    cslib_data = cslib.load(DATA)
+    if cslib_data:
+        cslib_built, cslib_links = cslib.chapter(cslib_data)
+        assign_paths(cslib_built.root, ROADMAP / "cslib")
+        blueprints.resolve(cslib_built, VAULT)
+        files.update(render_tree(cslib_built.root, VAULT))
+        chapters["cslib"] = "cslib/README.md"
+        lean_links["cslib"] = cslib_links
+        cs = Counter(cslib_built.stats)
+        blueprint_rows.append(("CSLib", "INVENTORIED",
+                               f"[{cs['articles']:,} modules](../roadmap/cslib/README.md), one article each, with a "
+                               "block per public declaration."))
+        print(
+            f"cslib: {cs['articles']} module articles in {cs['folders']} folders and {cs['parts']} parts; "
+            f"{cs['declarations']} public declarations, {cs['documented']} documented, {cs['sorry']} holding sorry; "
+            f"{cs['statement_edges']} statement and {cs['proof_edges']} proof edges",
+            file=sys.stderr,
+        )
     files[ROOT / "hooks" / "lean-links.json"] = json.dumps(lean_links, indent=1, ensure_ascii=False) + "\n"
     root = ROADMAP / "README.md"
     previous = root.read_text(encoding="utf-8") if root.is_file() else None
@@ -297,6 +315,7 @@ def generate() -> dict[Path, str]:
         stacks=stacks_data["source"]["rev"] if stacks_data else None,
         atlas=atlas_data["source"]["rev"] if atlas_data else None,
         openai_math=oai_data["source"]["rev"] if oai_data else None,
+        cslib=cslib_data["rev"] if cslib_data else None,
     )
     print(
         f"mathlib: {stats['articles']} articles ({stats['formalized']} in Mathlib, {stats['stated']} stated only, "
