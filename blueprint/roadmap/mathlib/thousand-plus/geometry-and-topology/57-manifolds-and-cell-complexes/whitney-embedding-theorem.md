@@ -47,8 +47,8 @@ baby version: for compact manifolds; embedding into some *n*.
 ## Sources
 
 - [Mathlib documentation: `exists_embedding_euclidean_of_compact`](https://leanprover-community.github.io/mathlib4_docs/Mathlib/Geometry/Manifold/WhitneyEmbedding.html#exists_embedding_euclidean_of_compact)
-- [Source of `exists_embedding_euclidean_of_compact` in Mathlib/Geometry/Manifold/WhitneyEmbedding.lean](https://github.com/leanprover-community/mathlib4/blob/9bac2d0692944a775113f7c130fd5e5b4608a854/Mathlib/Geometry/Manifold/WhitneyEmbedding.lean#L129)
-- [1000+ theorems list: Q1306095](https://github.com/leanprover-community/mathlib4/blob/9bac2d0692944a775113f7c130fd5e5b4608a854/docs/1000.yaml#L1589)
+- [Source of `exists_embedding_euclidean_of_compact` in Mathlib/Geometry/Manifold/WhitneyEmbedding.lean](https://github.com/leanprover-community/mathlib4/blob/15cf10d19dfd4cdee9602318e271fa3ce99c454d/Mathlib/Geometry/Manifold/WhitneyEmbedding.lean#L129)
+- [1000+ theorems list: Q1306095](https://github.com/leanprover-community/mathlib4/blob/15cf10d19dfd4cdee9602318e271fa3ce99c454d/docs/1000.yaml#L1592)
 - [1000+ theorems project: Q1306095](https://1000-plus.github.io/all.html?length=-1#Q1306095)
 - [Wikipedia: Whitney embedding theorem](https://en.wikipedia.org/wiki/Whitney_embedding_theorem)
 - [Wikidata: Q1306095](https://www.wikidata.org/wiki/Q1306095)

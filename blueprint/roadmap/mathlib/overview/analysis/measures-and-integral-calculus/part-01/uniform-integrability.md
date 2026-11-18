@@ -22,5 +22,5 @@ MeasureTheory.UniformIntegrable.{u_1, u_2, u_3} {α : Type u_1} {β : Type u_2} 
 ## Sources
 
 - [Mathlib documentation: `MeasureTheory.UniformIntegrable`](https://leanprover-community.github.io/mathlib4_docs/Mathlib/MeasureTheory/Function/UniformIntegrable.html#MeasureTheory.UniformIntegrable)
-- [Source of `MeasureTheory.UniformIntegrable` in Mathlib/MeasureTheory/Function/UniformIntegrable.lean](https://github.com/leanprover-community/mathlib4/blob/9bac2d0692944a775113f7c130fd5e5b4608a854/Mathlib/MeasureTheory/Function/UniformIntegrable.lean#L70)
-- [Mathlib overview: Analysis › Measures and integral calculus](https://github.com/leanprover-community/mathlib4/blob/9bac2d0692944a775113f7c130fd5e5b4608a854/docs/overview.yaml#L351)
+- [Source of `MeasureTheory.UniformIntegrable` in Mathlib/MeasureTheory/Function/UniformIntegrable.lean](https://github.com/leanprover-community/mathlib4/blob/15cf10d19dfd4cdee9602318e271fa3ce99c454d/Mathlib/MeasureTheory/Function/UniformIntegrable.lean#L70)
+- [Mathlib overview: Analysis › Measures and integral calculus](https://github.com/leanprover-community/mathlib4/blob/15cf10d19dfd4cdee9602318e271fa3ce99c454d/docs/overview.yaml#L351)

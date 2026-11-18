@@ -31,9 +31,9 @@ Theorems100.friendship_theorem.{u} {V : Type u} [Fintype V] {G : SimpleGraph V}
 ## Sources
 
 - [Mathlib documentation: `Theorems100.friendship_theorem`](https://leanprover-community.github.io/mathlib4_docs/Archive/Wiedijk100Theorems/FriendshipGraphs.html#Theorems100.friendship_theorem)
-- [Source of `Theorems100.friendship_theorem` in Archive/Wiedijk100Theorems/FriendshipGraphs.lean](https://github.com/leanprover-community/mathlib4/blob/9bac2d0692944a775113f7c130fd5e5b4608a854/Archive/Wiedijk100Theorems/FriendshipGraphs.lean#L324)
-- [Freek Wiedijk's 100 theorems, no. 83](https://github.com/leanprover-community/mathlib4/blob/9bac2d0692944a775113f7c130fd5e5b4608a854/docs/100.yaml#L425)
-- [1000+ theorems list: Q5504427](https://github.com/leanprover-community/mathlib4/blob/9bac2d0692944a775113f7c130fd5e5b4608a854/docs/1000.yaml#L3240)
+- [Source of `Theorems100.friendship_theorem` in Archive/Wiedijk100Theorems/FriendshipGraphs.lean](https://github.com/leanprover-community/mathlib4/blob/15cf10d19dfd4cdee9602318e271fa3ce99c454d/Archive/Wiedijk100Theorems/FriendshipGraphs.lean#L324)
+- [Freek Wiedijk's 100 theorems, no. 83](https://github.com/leanprover-community/mathlib4/blob/15cf10d19dfd4cdee9602318e271fa3ce99c454d/docs/100.yaml#L425)
+- [1000+ theorems list: Q5504427](https://github.com/leanprover-community/mathlib4/blob/15cf10d19dfd4cdee9602318e271fa3ce99c454d/docs/1000.yaml#L3243)
 - [1000+ theorems project: Q5504427](https://1000-plus.github.io/all.html?length=-1#Q5504427)
 - [Wikipedia: Friendship theorem](https://en.wikipedia.org/wiki/Friendship_theorem)
 - [Wikidata: Q5504427](https://www.wikidata.org/wiki/Q5504427)

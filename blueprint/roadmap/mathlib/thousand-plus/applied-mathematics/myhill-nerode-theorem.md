@@ -15,8 +15,8 @@ Language.isRegular_iff_finite_range_leftQuotient.{u} {α : Type u} {L : Language
 ## Sources
 
 - [Mathlib documentation: `Language.isRegular_iff_finite_range_leftQuotient`](https://leanprover-community.github.io/mathlib4_docs/Mathlib/Computability/MyhillNerode.html#Language.isRegular_iff_finite_range_leftQuotient)
-- [Source of `Language.isRegular_iff_finite_range_leftQuotient` in Mathlib/Computability/MyhillNerode.lean](https://github.com/leanprover-community/mathlib4/blob/9bac2d0692944a775113f7c130fd5e5b4608a854/Mathlib/Computability/MyhillNerode.lean#L102)
-- [1000+ theorems list: Q422187](https://github.com/leanprover-community/mathlib4/blob/9bac2d0692944a775113f7c130fd5e5b4608a854/docs/1000.yaml#L442)
+- [Source of `Language.isRegular_iff_finite_range_leftQuotient` in Mathlib/Computability/MyhillNerode.lean](https://github.com/leanprover-community/mathlib4/blob/15cf10d19dfd4cdee9602318e271fa3ce99c454d/Mathlib/Computability/MyhillNerode.lean#L102)
+- [1000+ theorems list: Q422187](https://github.com/leanprover-community/mathlib4/blob/15cf10d19dfd4cdee9602318e271fa3ce99c454d/docs/1000.yaml#L445)
 - [1000+ theorems project: Q422187](https://1000-plus.github.io/all.html?length=-1#Q422187)
 - [Wikipedia: Myhill–Nerode theorem](https://en.wikipedia.org/wiki/Myhill%E2%80%93Nerode_theorem)
 - [Wikidata: Q422187](https://www.wikidata.org/wiki/Q422187)

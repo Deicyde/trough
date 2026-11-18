@@ -24,9 +24,9 @@ EuclideanGeometry.mul_dist_add_mul_dist_eq_mul_dist_of_cospherical.{u_1, u_2} {V
 ## Sources
 
 - [Mathlib documentation: `EuclideanGeometry.mul_dist_add_mul_dist_eq_mul_dist_of_cospherical`](https://leanprover-community.github.io/mathlib4_docs/Mathlib/Geometry/Euclidean/Sphere/Ptolemy.html#EuclideanGeometry.mul_dist_add_mul_dist_eq_mul_dist_of_cospherical)
-- [Source of `EuclideanGeometry.mul_dist_add_mul_dist_eq_mul_dist_of_cospherical` in Mathlib/Geometry/Euclidean/Sphere/Ptolemy.lean](https://github.com/leanprover-community/mathlib4/blob/9bac2d0692944a775113f7c130fd5e5b4608a854/Mathlib/Geometry/Euclidean/Sphere/Ptolemy.lean#L56)
-- [Freek Wiedijk's 100 theorems, no. 95](https://github.com/leanprover-community/mathlib4/blob/9bac2d0692944a775113f7c130fd5e5b4608a854/docs/100.yaml#L488)
-- [1000+ theorems list: Q459547](https://github.com/leanprover-community/mathlib4/blob/9bac2d0692944a775113f7c130fd5e5b4608a854/docs/1000.yaml#L454)
+- [Source of `EuclideanGeometry.mul_dist_add_mul_dist_eq_mul_dist_of_cospherical` in Mathlib/Geometry/Euclidean/Sphere/Ptolemy.lean](https://github.com/leanprover-community/mathlib4/blob/15cf10d19dfd4cdee9602318e271fa3ce99c454d/Mathlib/Geometry/Euclidean/Sphere/Ptolemy.lean#L56)
+- [Freek Wiedijk's 100 theorems, no. 95](https://github.com/leanprover-community/mathlib4/blob/15cf10d19dfd4cdee9602318e271fa3ce99c454d/docs/100.yaml#L488)
+- [1000+ theorems list: Q459547](https://github.com/leanprover-community/mathlib4/blob/15cf10d19dfd4cdee9602318e271fa3ce99c454d/docs/1000.yaml#L457)
 - [1000+ theorems project: Q459547](https://1000-plus.github.io/all.html?length=-1#Q459547)
 - [Wikipedia: Ptolemy's theorem](https://en.wikipedia.org/wiki/Ptolemy's_theorem)
 - [Wikidata: Q459547](https://www.wikidata.org/wiki/Q459547)

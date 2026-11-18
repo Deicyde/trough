@@ -134,5 +134,5 @@ recorded as typeclass instances.
 ## Sources
 
 - [Mathlib documentation: `PadicInt`](https://leanprover-community.github.io/mathlib4_docs/Mathlib/NumberTheory/Padics/PadicIntegers.html#PadicInt)
-- [Source of `PadicInt` in Mathlib/NumberTheory/Padics/PadicIntegers.lean](https://github.com/leanprover-community/mathlib4/blob/9bac2d0692944a775113f7c130fd5e5b4608a854/Mathlib/NumberTheory/Padics/PadicIntegers.lean#L70)
-- [Mathlib overview: General algebra › Numbers](https://github.com/leanprover-community/mathlib4/blob/9bac2d0692944a775113f7c130fd5e5b4608a854/docs/overview.yaml#L29)
+- [Source of `PadicInt` in Mathlib/NumberTheory/Padics/PadicIntegers.lean](https://github.com/leanprover-community/mathlib4/blob/15cf10d19dfd4cdee9602318e271fa3ce99c454d/Mathlib/NumberTheory/Padics/PadicIntegers.lean#L70)
+- [Mathlib overview: General algebra › Numbers](https://github.com/leanprover-community/mathlib4/blob/15cf10d19dfd4cdee9602318e271fa3ce99c454d/docs/overview.yaml#L29)

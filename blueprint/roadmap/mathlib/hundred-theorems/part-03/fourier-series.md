@@ -44,7 +44,7 @@ hasSum_fourier_series_L2 {T : ℝ} [hT : Fact (0 < T)]
 ## Sources
 
 - [Mathlib documentation: `fourierCoeff`](https://leanprover-community.github.io/mathlib4_docs/Mathlib/Analysis/Fourier/AddCircle.html#fourierCoeff)
-- [Source of `fourierCoeff` in Mathlib/Analysis/Fourier/AddCircle.lean](https://github.com/leanprover-community/mathlib4/blob/9bac2d0692944a775113f7c130fd5e5b4608a854/Mathlib/Analysis/Fourier/AddCircle.lean#L294)
+- [Source of `fourierCoeff` in Mathlib/Analysis/Fourier/AddCircle.lean](https://github.com/leanprover-community/mathlib4/blob/15cf10d19dfd4cdee9602318e271fa3ce99c454d/Mathlib/Analysis/Fourier/AddCircle.lean#L294)
 - [Mathlib documentation: `hasSum_fourier_series_L2`](https://leanprover-community.github.io/mathlib4_docs/Mathlib/Analysis/Fourier/AddCircle.html#hasSum_fourier_series_L2)
-- [Source of `hasSum_fourier_series_L2` in Mathlib/Analysis/Fourier/AddCircle.lean](https://github.com/leanprover-community/mathlib4/blob/9bac2d0692944a775113f7c130fd5e5b4608a854/Mathlib/Analysis/Fourier/AddCircle.lean#L430)
-- [Freek Wiedijk's 100 theorems, no. 76](https://github.com/leanprover-community/mathlib4/blob/9bac2d0692944a775113f7c130fd5e5b4608a854/docs/100.yaml#L383)
+- [Source of `hasSum_fourier_series_L2` in Mathlib/Analysis/Fourier/AddCircle.lean](https://github.com/leanprover-community/mathlib4/blob/15cf10d19dfd4cdee9602318e271fa3ce99c454d/Mathlib/Analysis/Fourier/AddCircle.lean#L430)
+- [Freek Wiedijk's 100 theorems, no. 76](https://github.com/leanprover-community/mathlib4/blob/15cf10d19dfd4cdee9602318e271fa3ce99c454d/docs/100.yaml#L383)

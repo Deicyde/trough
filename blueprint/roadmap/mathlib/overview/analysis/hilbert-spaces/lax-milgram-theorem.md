@@ -20,10 +20,10 @@ IsCoercive.continuousLinearEquivOfBilin.{u} {V : Type u} [NormedAddCommGroup V]
 ## Sources
 
 - [Mathlib documentation: `IsCoercive.continuousLinearEquivOfBilin`](https://leanprover-community.github.io/mathlib4_docs/Mathlib/Analysis/InnerProductSpace/LaxMilgram.html#IsCoercive.continuousLinearEquivOfBilin)
-- [Source of `IsCoercive.continuousLinearEquivOfBilin` in Mathlib/Analysis/InnerProductSpace/LaxMilgram.lean](https://github.com/leanprover-community/mathlib4/blob/9bac2d0692944a775113f7c130fd5e5b4608a854/Mathlib/Analysis/InnerProductSpace/LaxMilgram.lean#L100)
-- [Mathlib overview: Analysis › Hilbert spaces](https://github.com/leanprover-community/mathlib4/blob/9bac2d0692944a775113f7c130fd5e5b4608a854/docs/overview.yaml#L304)
-- [Mathlib undergraduate list: Topology › Hilbert spaces](https://github.com/leanprover-community/mathlib4/blob/9bac2d0692944a775113f7c130fd5e5b4608a854/docs/undergrad.yaml#L449)
-- [1000+ theorems list: Q9993851](https://github.com/leanprover-community/mathlib4/blob/9bac2d0692944a775113f7c130fd5e5b4608a854/docs/1000.yaml#L4033)
+- [Source of `IsCoercive.continuousLinearEquivOfBilin` in Mathlib/Analysis/InnerProductSpace/LaxMilgram.lean](https://github.com/leanprover-community/mathlib4/blob/15cf10d19dfd4cdee9602318e271fa3ce99c454d/Mathlib/Analysis/InnerProductSpace/LaxMilgram.lean#L100)
+- [Mathlib overview: Analysis › Hilbert spaces](https://github.com/leanprover-community/mathlib4/blob/15cf10d19dfd4cdee9602318e271fa3ce99c454d/docs/overview.yaml#L304)
+- [Mathlib undergraduate list: Topology › Hilbert spaces](https://github.com/leanprover-community/mathlib4/blob/15cf10d19dfd4cdee9602318e271fa3ce99c454d/docs/undergrad.yaml#L449)
+- [1000+ theorems list: Q9993851](https://github.com/leanprover-community/mathlib4/blob/15cf10d19dfd4cdee9602318e271fa3ce99c454d/docs/1000.yaml#L4036)
 - [1000+ theorems project: Q9993851](https://1000-plus.github.io/all.html?length=-1#Q9993851)
 - [Wikipedia: Lax–Milgram theorem](https://en.wikipedia.org/wiki/Lax%E2%80%93Milgram_theorem)
 - [Wikidata: Q9993851](https://www.wikidata.org/wiki/Q9993851)

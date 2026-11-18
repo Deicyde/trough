@@ -18,5 +18,5 @@ Matrix.rank.{um, un, uR} {m : Type um} {n : Type un} {R : Type uR} [Fintype n] [
 ## Sources
 
 - [Mathlib documentation: `Matrix.rank`](https://leanprover-community.github.io/mathlib4_docs/Mathlib/LinearAlgebra/Matrix/Rank.html#Matrix.rank)
-- [Source of `Matrix.rank` in Mathlib/LinearAlgebra/Matrix/Rank.lean](https://github.com/leanprover-community/mathlib4/blob/9bac2d0692944a775113f7c130fd5e5b4608a854/Mathlib/LinearAlgebra/Matrix/Rank.lean#L132)
-- [Mathlib undergraduate list: Linear algebra › Matrices](https://github.com/leanprover-community/mathlib4/blob/9bac2d0692944a775113f7c130fd5e5b4608a854/docs/undergrad.yaml#L46)
+- [Source of `Matrix.rank` in Mathlib/LinearAlgebra/Matrix/Rank.lean](https://github.com/leanprover-community/mathlib4/blob/15cf10d19dfd4cdee9602318e271fa3ce99c454d/Mathlib/LinearAlgebra/Matrix/Rank.lean#L132)
+- [Mathlib undergraduate list: Linear algebra › Matrices](https://github.com/leanprover-community/mathlib4/blob/15cf10d19dfd4cdee9602318e271fa3ce99c454d/docs/undergrad.yaml#L46)

@@ -26,5 +26,5 @@ NormedSpace.exp.{u_2} {𝔸 : Type u_2} [Ring 𝔸] [TopologicalSpace 𝔸] [IsT
 ## Sources
 
 - [Mathlib documentation: `NormedSpace.exp`](https://leanprover-community.github.io/mathlib4_docs/Mathlib/Analysis/Normed/Algebra/Exponential.html#NormedSpace.exp)
-- [Source of `NormedSpace.exp` in Mathlib/Analysis/Normed/Algebra/Exponential.lean](https://github.com/leanprover-community/mathlib4/blob/9bac2d0692944a775113f7c130fd5e5b4608a854/Mathlib/Analysis/Normed/Algebra/Exponential.lean#L118)
-- [Mathlib undergraduate list: Linear algebra › Exponential](https://github.com/leanprover-community/mathlib4/blob/9bac2d0692944a775113f7c130fd5e5b4608a854/docs/undergrad.yaml#L74)
+- [Source of `NormedSpace.exp` in Mathlib/Analysis/Normed/Algebra/Exponential.lean](https://github.com/leanprover-community/mathlib4/blob/15cf10d19dfd4cdee9602318e271fa3ce99c454d/Mathlib/Analysis/Normed/Algebra/Exponential.lean#L118)
+- [Mathlib undergraduate list: Linear algebra › Exponential](https://github.com/leanprover-community/mathlib4/blob/15cf10d19dfd4cdee9602318e271fa3ce99c454d/docs/undergrad.yaml#L74)

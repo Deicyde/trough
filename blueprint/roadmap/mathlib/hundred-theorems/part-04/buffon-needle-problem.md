@@ -47,7 +47,7 @@ BuffonsNeedle.buffon_long.{u_1} {Ω : Type u_1} [MeasureTheory.MeasureSpace Ω] 
 ## Sources
 
 - [Mathlib documentation: `BuffonsNeedle.buffon_short`](https://leanprover-community.github.io/mathlib4_docs/Archive/Wiedijk100Theorems/BuffonsNeedle.html#BuffonsNeedle.buffon_short)
-- [Source of `BuffonsNeedle.buffon_short` in Archive/Wiedijk100Theorems/BuffonsNeedle.lean](https://github.com/leanprover-community/mathlib4/blob/9bac2d0692944a775113f7c130fd5e5b4608a854/Archive/Wiedijk100Theorems/BuffonsNeedle.lean#L246)
+- [Source of `BuffonsNeedle.buffon_short` in Archive/Wiedijk100Theorems/BuffonsNeedle.lean](https://github.com/leanprover-community/mathlib4/blob/15cf10d19dfd4cdee9602318e271fa3ce99c454d/Archive/Wiedijk100Theorems/BuffonsNeedle.lean#L246)
 - [Mathlib documentation: `BuffonsNeedle.buffon_long`](https://leanprover-community.github.io/mathlib4_docs/Archive/Wiedijk100Theorems/BuffonsNeedle.html#BuffonsNeedle.buffon_long)
-- [Source of `BuffonsNeedle.buffon_long` in Archive/Wiedijk100Theorems/BuffonsNeedle.lean](https://github.com/leanprover-community/mathlib4/blob/9bac2d0692944a775113f7c130fd5e5b4608a854/Archive/Wiedijk100Theorems/BuffonsNeedle.lean#L327)
-- [Freek Wiedijk's 100 theorems, no. 99](https://github.com/leanprover-community/mathlib4/blob/9bac2d0692944a775113f7c130fd5e5b4608a854/docs/100.yaml#L510)
+- [Source of `BuffonsNeedle.buffon_long` in Archive/Wiedijk100Theorems/BuffonsNeedle.lean](https://github.com/leanprover-community/mathlib4/blob/15cf10d19dfd4cdee9602318e271fa3ce99c454d/Archive/Wiedijk100Theorems/BuffonsNeedle.lean#L327)
+- [Freek Wiedijk's 100 theorems, no. 99](https://github.com/leanprover-community/mathlib4/blob/15cf10d19dfd4cdee9602318e271fa3ce99c454d/docs/100.yaml#L510)

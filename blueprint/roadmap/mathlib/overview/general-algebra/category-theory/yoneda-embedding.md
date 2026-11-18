@@ -130,5 +130,5 @@ representable.
 ## Sources
 
 - [Mathlib documentation: `CategoryTheory.yoneda`](https://leanprover-community.github.io/mathlib4_docs/Mathlib/CategoryTheory/Yoneda.html#CategoryTheory.yoneda)
-- [Source of `CategoryTheory.yoneda` in Mathlib/CategoryTheory/Yoneda.lean](https://github.com/leanprover-community/mathlib4/blob/9bac2d0692944a775113f7c130fd5e5b4608a854/Mathlib/CategoryTheory/Yoneda.lean#L39)
-- [Mathlib overview: General algebra › Category theory](https://github.com/leanprover-community/mathlib4/blob/9bac2d0692944a775113f7c130fd5e5b4608a854/docs/overview.yaml#L7)
+- [Source of `CategoryTheory.yoneda` in Mathlib/CategoryTheory/Yoneda.lean](https://github.com/leanprover-community/mathlib4/blob/15cf10d19dfd4cdee9602318e271fa3ce99c454d/Mathlib/CategoryTheory/Yoneda.lean#L39)
+- [Mathlib overview: General algebra › Category theory](https://github.com/leanprover-community/mathlib4/blob/15cf10d19dfd4cdee9602318e271fa3ce99c454d/docs/overview.yaml#L7)

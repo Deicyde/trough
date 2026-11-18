@@ -16,5 +16,5 @@ Complex.exp (z : ℂ) : ℂ
 ## Sources
 
 - [Mathlib documentation: `Complex.exp`](https://leanprover-community.github.io/mathlib4_docs/Mathlib/Analysis/Complex/Exponential.html#Complex.exp)
-- [Source of `Complex.exp` in Mathlib/Analysis/Complex/Exponential.lean](https://github.com/leanprover-community/mathlib4/blob/9bac2d0692944a775113f7c130fd5e5b4608a854/Mathlib/Analysis/Complex/Exponential.lean#L61)
-- [Mathlib undergraduate list: Single Variable Complex Analysis › Complex-valued series](https://github.com/leanprover-community/mathlib4/blob/9bac2d0692944a775113f7c130fd5e5b4608a854/docs/undergrad.yaml#L374)
+- [Source of `Complex.exp` in Mathlib/Analysis/Complex/Exponential.lean](https://github.com/leanprover-community/mathlib4/blob/15cf10d19dfd4cdee9602318e271fa3ce99c454d/Mathlib/Analysis/Complex/Exponential.lean#L60)
+- [Mathlib undergraduate list: Single Variable Complex Analysis › Complex-valued series](https://github.com/leanprover-community/mathlib4/blob/15cf10d19dfd4cdee9602318e271fa3ce99c454d/docs/undergrad.yaml#L374)

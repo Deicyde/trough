@@ -15,5 +15,5 @@ crossProduct.{u_1} {R : Type u_1} [CommRing R] : (Fin 3 → R) →ₗ[R] (Fin 3 
 ## Sources
 
 - [Mathlib documentation: `crossProduct`](https://leanprover-community.github.io/mathlib4_docs/Mathlib/LinearAlgebra/CrossProduct.html#crossProduct)
-- [Source of `crossProduct` in Mathlib/LinearAlgebra/CrossProduct.lean](https://github.com/leanprover-community/mathlib4/blob/9bac2d0692944a775113f7c130fd5e5b4608a854/Mathlib/LinearAlgebra/CrossProduct.lean#L46)
-- [Mathlib undergraduate list: Bilinear and Quadratic Forms Over a Vector Space › Low dimensions](https://github.com/leanprover-community/mathlib4/blob/9bac2d0692944a775113f7c130fd5e5b4608a854/docs/undergrad.yaml#L236)
+- [Source of `crossProduct` in Mathlib/LinearAlgebra/CrossProduct.lean](https://github.com/leanprover-community/mathlib4/blob/15cf10d19dfd4cdee9602318e271fa3ce99c454d/Mathlib/LinearAlgebra/CrossProduct.lean#L46)
+- [Mathlib undergraduate list: Bilinear and Quadratic Forms Over a Vector Space › Low dimensions](https://github.com/leanprover-community/mathlib4/blob/15cf10d19dfd4cdee9602318e271fa3ce99c454d/docs/undergrad.yaml#L236)

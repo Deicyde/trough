@@ -16,5 +16,5 @@ Finset.addConst.{u_1} {G : Type u_1} [AddGroup G] [DecidableEq G] (A B : Finset 
 ## Sources
 
 - [Mathlib documentation: `Finset.addConst`](https://leanprover-community.github.io/mathlib4_docs/Mathlib/Combinatorics/Additive/DoublingConst.html#Finset.addConst)
-- [Source of `Finset.addConst` in Mathlib/Combinatorics/Additive/DoublingConst.lean](https://github.com/leanprover-community/mathlib4/blob/9bac2d0692944a775113f7c130fd5e5b4608a854/Mathlib/Combinatorics/Additive/DoublingConst.lean#L33)
-- [Mathlib overview: Combinatorics › Additive combinatorics](https://github.com/leanprover-community/mathlib4/blob/9bac2d0692944a775113f7c130fd5e5b4608a854/docs/overview.yaml#L544)
+- [Source of `Finset.addConst` in Mathlib/Combinatorics/Additive/DoublingConst.lean](https://github.com/leanprover-community/mathlib4/blob/15cf10d19dfd4cdee9602318e271fa3ce99c454d/Mathlib/Combinatorics/Additive/DoublingConst.lean#L33)
+- [Mathlib overview: Combinatorics › Additive combinatorics](https://github.com/leanprover-community/mathlib4/blob/15cf10d19dfd4cdee9602318e271fa3ce99c454d/docs/overview.yaml#L544)

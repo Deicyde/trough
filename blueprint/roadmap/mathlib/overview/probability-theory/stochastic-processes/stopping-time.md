@@ -19,5 +19,5 @@ MeasureTheory.IsStoppingTime.{u_1, u_3} {Ω : Type u_1} {ι : Type u_3} {m : Mea
 ## Sources
 
 - [Mathlib documentation: `MeasureTheory.IsStoppingTime`](https://leanprover-community.github.io/mathlib4_docs/Mathlib/Probability/Process/Stopping.html#MeasureTheory.IsStoppingTime)
-- [Source of `MeasureTheory.IsStoppingTime` in Mathlib/Probability/Process/Stopping.lean](https://github.com/leanprover-community/mathlib4/blob/9bac2d0692944a775113f7c130fd5e5b4608a854/Mathlib/Probability/Process/Stopping.lean#L69)
-- [Mathlib overview: Probability Theory › Stochastic Processes](https://github.com/leanprover-community/mathlib4/blob/9bac2d0692944a775113f7c130fd5e5b4608a854/docs/overview.yaml#L425)
+- [Source of `MeasureTheory.IsStoppingTime` in Mathlib/Probability/Process/Stopping.lean](https://github.com/leanprover-community/mathlib4/blob/15cf10d19dfd4cdee9602318e271fa3ce99c454d/Mathlib/Probability/Process/Stopping.lean#L68)
+- [Mathlib overview: Probability Theory › Stochastic Processes](https://github.com/leanprover-community/mathlib4/blob/15cf10d19dfd4cdee9602318e271fa3ce99c454d/docs/overview.yaml#L425)

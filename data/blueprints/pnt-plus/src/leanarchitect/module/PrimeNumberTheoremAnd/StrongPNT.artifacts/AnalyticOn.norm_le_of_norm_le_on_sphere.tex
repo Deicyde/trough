@@ -1,11 +1,20 @@
 \begin{lemma}[AnalyticOn.norm-le-of-norm-le-on-sphere]
 \label{AnalyticOn.norm_le_of_norm_le_on_sphere}
 \lean{AnalyticOn.norm_le_of_norm_le_on_sphere}
-% at /home/runner/work/trough/trough/library/PrimeNumberTheoremAnd/StrongPNT.lean:30.0-55.14
+% at /home/runner/work/trough/trough/library/PrimeNumberTheoremAnd/StrongPNT.lean:34.0-68.14
 \leanok
-An application of the Maximum modulus principle.
+An application of the maximum modulus principle.
+
+    Let $r\leq R$. If $f$ is analytic on $\overline{\mathbb{D}_R}$ and $\|f(z)\|\leq C$ for all $z$
+    on the boundary of $\overline{\mathbb{D}_r}$, then $\|f(z)\|\leq C$
+    for all $z$ in $\overline{\mathbb{D}_r}$.
 \end{lemma}
 \begin{proof}
 \leanok
-This is standard in the literature.
+By the mean value theorem for holomorphic functions, we know that for any
+    $z$ in $\overline{\mathbb{D}_r}$, one has
+    $$f(z)=\frac{1}{2\pi}\int_0^{2\pi}f(z+re^{i\theta})\,d\theta.$$
+    Thus,
+    $$|f(z)|\leq\frac{1}{2\pi}\int_0^{2\pi}|f(z+re^{i\theta})|\,d\theta
+    \leq\max_{\theta\in[0,2\pi)}|f(z+re^{i\theta})|\leq C.$$
 \end{proof}

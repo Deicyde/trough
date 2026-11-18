@@ -17,6 +17,6 @@ Module.Basis.dualBasis.{uR, uM, uι} {R : Type uR} {M : Type uM} {ι : Type uι}
 ## Sources
 
 - [Mathlib documentation: `Module.Basis.dualBasis`](https://leanprover-community.github.io/mathlib4_docs/Mathlib/LinearAlgebra/Dual/Basis.html#Module.Basis.dualBasis)
-- [Source of `Module.Basis.dualBasis` in Mathlib/LinearAlgebra/Dual/Basis.lean](https://github.com/leanprover-community/mathlib4/blob/9bac2d0692944a775113f7c130fd5e5b4608a854/Mathlib/LinearAlgebra/Dual/Basis.lean#L131)
-- [Mathlib overview: Linear algebra › Duality](https://github.com/leanprover-community/mathlib4/blob/9bac2d0692944a775113f7c130fd5e5b4608a854/docs/overview.yaml#L182)
-- [Mathlib undergraduate list: Linear algebra › Duality](https://github.com/leanprover-community/mathlib4/blob/9bac2d0692944a775113f7c130fd5e5b4608a854/docs/undergrad.yaml#L25)
+- [Source of `Module.Basis.dualBasis` in Mathlib/LinearAlgebra/Dual/Basis.lean](https://github.com/leanprover-community/mathlib4/blob/15cf10d19dfd4cdee9602318e271fa3ce99c454d/Mathlib/LinearAlgebra/Dual/Basis.lean#L131)
+- [Mathlib overview: Linear algebra › Duality](https://github.com/leanprover-community/mathlib4/blob/15cf10d19dfd4cdee9602318e271fa3ce99c454d/docs/overview.yaml#L182)
+- [Mathlib undergraduate list: Linear algebra › Duality](https://github.com/leanprover-community/mathlib4/blob/15cf10d19dfd4cdee9602318e271fa3ce99c454d/docs/undergrad.yaml#L25)

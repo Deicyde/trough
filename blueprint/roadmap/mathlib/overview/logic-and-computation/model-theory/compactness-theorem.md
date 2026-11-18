@@ -20,9 +20,9 @@ FirstOrder.Language.Theory.isSatisfiable_iff_isFinitelySatisfiable.{u, v} {L : F
 ## Sources
 
 - [Mathlib documentation: `FirstOrder.Language.Theory.isSatisfiable_iff_isFinitelySatisfiable`](https://leanprover-community.github.io/mathlib4_docs/Mathlib/ModelTheory/Satisfiability.html#FirstOrder.Language.Theory.isSatisfiable_iff_isFinitelySatisfiable)
-- [Source of `FirstOrder.Language.Theory.isSatisfiable_iff_isFinitelySatisfiable` in Mathlib/ModelTheory/Satisfiability.lean](https://github.com/leanprover-community/mathlib4/blob/9bac2d0692944a775113f7c130fd5e5b4608a854/Mathlib/ModelTheory/Satisfiability.lean#L99)
-- [Mathlib overview: Logic and computation › Model theory](https://github.com/leanprover-community/mathlib4/blob/9bac2d0692944a775113f7c130fd5e5b4608a854/docs/overview.yaml#L642)
-- [1000+ theorems list: Q1149458](https://github.com/leanprover-community/mathlib4/blob/9bac2d0692944a775113f7c130fd5e5b4608a854/docs/1000.yaml#L1453)
+- [Source of `FirstOrder.Language.Theory.isSatisfiable_iff_isFinitelySatisfiable` in Mathlib/ModelTheory/Satisfiability.lean](https://github.com/leanprover-community/mathlib4/blob/15cf10d19dfd4cdee9602318e271fa3ce99c454d/Mathlib/ModelTheory/Satisfiability.lean#L99)
+- [Mathlib overview: Logic and computation › Model theory](https://github.com/leanprover-community/mathlib4/blob/15cf10d19dfd4cdee9602318e271fa3ce99c454d/docs/overview.yaml#L642)
+- [1000+ theorems list: Q1149458](https://github.com/leanprover-community/mathlib4/blob/15cf10d19dfd4cdee9602318e271fa3ce99c454d/docs/1000.yaml#L1456)
 - [1000+ theorems project: Q1149458](https://1000-plus.github.io/all.html?length=-1#Q1149458)
 - [Wikipedia: Compactness theorem](https://en.wikipedia.org/wiki/Compactness_theorem)
 - [Wikidata: Q1149458](https://www.wikidata.org/wiki/Q1149458)

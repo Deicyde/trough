@@ -117,6 +117,6 @@ unique factorisation.
 ## Sources
 
 - [Mathlib documentation: `MvPolynomial.uniqueFactorizationMonoid`](https://leanprover-community.github.io/mathlib4_docs/Mathlib/RingTheory/Polynomial/UniqueFactorization.html#MvPolynomial.uniqueFactorizationMonoid)
-- [Source of `MvPolynomial.uniqueFactorizationMonoid` in Mathlib/RingTheory/Polynomial/UniqueFactorization.lean](https://github.com/leanprover-community/mathlib4/blob/9bac2d0692944a775113f7c130fd5e5b4608a854/Mathlib/RingTheory/Polynomial/UniqueFactorization.lean#L128)
-- [Mathlib overview: General algebra › Polynomials and power series](https://github.com/leanprover-community/mathlib4/blob/9bac2d0692944a775113f7c130fd5e5b4608a854/docs/overview.yaml#L103)
-- [Mathlib undergraduate list: Ring Theory › Divisibility in integral domains](https://github.com/leanprover-community/mathlib4/blob/9bac2d0692944a775113f7c130fd5e5b4608a854/docs/undergrad.yaml#L147)
+- [Source of `MvPolynomial.uniqueFactorizationMonoid` in Mathlib/RingTheory/Polynomial/UniqueFactorization.lean](https://github.com/leanprover-community/mathlib4/blob/15cf10d19dfd4cdee9602318e271fa3ce99c454d/Mathlib/RingTheory/Polynomial/UniqueFactorization.lean#L128)
+- [Mathlib overview: General algebra › Polynomials and power series](https://github.com/leanprover-community/mathlib4/blob/15cf10d19dfd4cdee9602318e271fa3ce99c454d/docs/overview.yaml#L103)
+- [Mathlib undergraduate list: Ring Theory › Divisibility in integral domains](https://github.com/leanprover-community/mathlib4/blob/15cf10d19dfd4cdee9602318e271fa3ce99c454d/docs/undergrad.yaml#L147)

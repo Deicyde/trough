@@ -18,6 +18,6 @@ FiniteDimensional.{u_1, u_2} (K : Type u_1) (V : Type u_2) [DivisionRing K] [Add
 ## Sources
 
 - [Mathlib documentation: `FiniteDimensional`](https://leanprover-community.github.io/mathlib4_docs/Mathlib/LinearAlgebra/FiniteDimensional/Defs.html#FiniteDimensional)
-- [Source of `FiniteDimensional` in Mathlib/LinearAlgebra/FiniteDimensional/Defs.lean](https://github.com/leanprover-community/mathlib4/blob/9bac2d0692944a775113f7c130fd5e5b4608a854/Mathlib/LinearAlgebra/FiniteDimensional/Defs.lean#L72)
-- [Mathlib overview: Linear algebra › Finite-dimensional vector spaces](https://github.com/leanprover-community/mathlib4/blob/9bac2d0692944a775113f7c130fd5e5b4608a854/docs/overview.yaml#L184)
-- [Mathlib undergraduate list: Linear algebra › Finite-dimensional vector spaces](https://github.com/leanprover-community/mathlib4/blob/9bac2d0692944a775113f7c130fd5e5b4608a854/docs/undergrad.yaml#L29)
+- [Source of `FiniteDimensional` in Mathlib/LinearAlgebra/FiniteDimensional/Defs.lean](https://github.com/leanprover-community/mathlib4/blob/15cf10d19dfd4cdee9602318e271fa3ce99c454d/Mathlib/LinearAlgebra/FiniteDimensional/Defs.lean#L72)
+- [Mathlib overview: Linear algebra › Finite-dimensional vector spaces](https://github.com/leanprover-community/mathlib4/blob/15cf10d19dfd4cdee9602318e271fa3ce99c454d/docs/overview.yaml#L184)
+- [Mathlib undergraduate list: Linear algebra › Finite-dimensional vector spaces](https://github.com/leanprover-community/mathlib4/blob/15cf10d19dfd4cdee9602318e271fa3ce99c454d/docs/undergrad.yaml#L29)

@@ -17,5 +17,5 @@ LinearMap.range.{u_1, u_2, u_5, u_6} {R : Type u_1} {R₂ : Type u_2} {M : Type 
 ## Sources
 
 - [Mathlib documentation: `LinearMap.range`](https://leanprover-community.github.io/mathlib4_docs/Mathlib/Algebra/Module/Submodule/Range.html#LinearMap.range)
-- [Source of `LinearMap.range` in Mathlib/Algebra/Module/Submodule/Range.lean](https://github.com/leanprover-community/mathlib4/blob/9bac2d0692944a775113f7c130fd5e5b4608a854/Mathlib/Algebra/Module/Submodule/Range.lean#L55)
-- [Mathlib undergraduate list: Linear algebra › Fundamentals](https://github.com/leanprover-community/mathlib4/blob/9bac2d0692944a775113f7c130fd5e5b4608a854/docs/undergrad.yaml#L19)
+- [Source of `LinearMap.range` in Mathlib/Algebra/Module/Submodule/Range.lean](https://github.com/leanprover-community/mathlib4/blob/15cf10d19dfd4cdee9602318e271fa3ce99c454d/Mathlib/Algebra/Module/Submodule/Range.lean#L55)
+- [Mathlib undergraduate list: Linear algebra › Fundamentals](https://github.com/leanprover-community/mathlib4/blob/15cf10d19dfd4cdee9602318e271fa3ce99c454d/docs/undergrad.yaml#L19)

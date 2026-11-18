@@ -25,5 +25,5 @@ Continuous.deriv_integral.{u_3} {E : Type u_3} [NormedAddCommGroup E] [NormedSpa
 ## Sources
 
 - [Mathlib documentation: `Continuous.deriv_integral`](https://leanprover-community.github.io/mathlib4_docs/Mathlib/MeasureTheory/Integral/IntervalIntegral/FundThmCalculus.html#Continuous.deriv_integral)
-- [Source of `Continuous.deriv_integral` in Mathlib/MeasureTheory/Integral/IntervalIntegral/FundThmCalculus.lean](https://github.com/leanprover-community/mathlib4/blob/9bac2d0692944a775113f7c130fd5e5b4608a854/Mathlib/MeasureTheory/Integral/IntervalIntegral/FundThmCalculus.lean#L661)
-- [Mathlib undergraduate list: Single Variable Real Analysis › Integration](https://github.com/leanprover-community/mathlib4/blob/9bac2d0692944a775113f7c130fd5e5b4608a854/docs/undergrad.yaml#L342)
+- [Source of `Continuous.deriv_integral` in Mathlib/MeasureTheory/Integral/IntervalIntegral/FundThmCalculus.lean](https://github.com/leanprover-community/mathlib4/blob/15cf10d19dfd4cdee9602318e271fa3ce99c454d/Mathlib/MeasureTheory/Integral/IntervalIntegral/FundThmCalculus.lean#L661)
+- [Mathlib undergraduate list: Single Variable Real Analysis › Integration](https://github.com/leanprover-community/mathlib4/blob/15cf10d19dfd4cdee9602318e271fa3ce99c454d/docs/undergrad.yaml#L342)

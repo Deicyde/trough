@@ -26,5 +26,5 @@ EuclideanGeometry.angle_add_angle_add_angle_eq_pi.{u_1, u_2} {V : Type u_1} {P :
 ## Sources
 
 - [Mathlib documentation: `EuclideanGeometry.angle_add_angle_add_angle_eq_pi`](https://leanprover-community.github.io/mathlib4_docs/Mathlib/Geometry/Euclidean/Triangle.html#EuclideanGeometry.angle_add_angle_add_angle_eq_pi)
-- [Source of `EuclideanGeometry.angle_add_angle_add_angle_eq_pi` in Mathlib/Geometry/Euclidean/Triangle.lean](https://github.com/leanprover-community/mathlib4/blob/9bac2d0692944a775113f7c130fd5e5b4608a854/Mathlib/Geometry/Euclidean/Triangle.lean#L314)
-- [Freek Wiedijk's 100 theorems, no. 27](https://github.com/leanprover-community/mathlib4/blob/9bac2d0692944a775113f7c130fd5e5b4608a854/docs/100.yaml#L131)
+- [Source of `EuclideanGeometry.angle_add_angle_add_angle_eq_pi` in Mathlib/Geometry/Euclidean/Triangle.lean](https://github.com/leanprover-community/mathlib4/blob/15cf10d19dfd4cdee9602318e271fa3ce99c454d/Mathlib/Geometry/Euclidean/Triangle.lean#L313)
+- [Freek Wiedijk's 100 theorems, no. 27](https://github.com/leanprover-community/mathlib4/blob/15cf10d19dfd4cdee9602318e271fa3ce99c454d/docs/100.yaml#L131)

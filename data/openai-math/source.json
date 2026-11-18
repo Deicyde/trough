@@ -1,0 +1,51 @@
+{
+ "repo": "openai/math",
+ "rev": "4eaee87548250b2682affda7d05d947c05554bae",
+ "date": "2026-10-30T00:35:35Z",
+ "toolchain": "v4.34.1",
+ "mathlib": "d13f23b723b8a846827a245b89c10fc7d3f11612",
+ "mathlib_version": "d13f23b723b8a846827a245b89c10fc7d3f11612",
+ "license": "Apache-2.0",
+ "project": {
+  "name": "OpenAI math repository",
+  "description": "Lean formalizations accompanying a mathematics manuscript collection.",
+  "authors": [
+   "OpenAI"
+  ]
+ },
+ "review": {
+  "status": "unchecked",
+  "notes": "",
+  "reviewers": []
+ },
+ "automation": {
+  "methods": [
+   {
+    "method": "agent"
+   }
+  ],
+  "notes": ""
+ },
+ "readme": {
+  "opening": "This repository contains mathematical manuscripts and supporting proof artifacts produced by an unnamed internal OpenAI model.",
+  "issues": "Some of the unformalized results could have issues.",
+  "raw": "In our view, these manuscripts are best understood as a form of raw research data, rather than polished academic papers.",
+  "procedure": "The vast majority of results were obtained with the same procedure using an unreleased internal OpenAI model.",
+  "exceptions": "Exceptions to this fixed procedure include work on a zero-free region for the Riemann zeta function and proof of the Hodge Conjecture for CM abelian varieties. Additionally, the writeup for the Re(s) > 11/12 zero-free region for the Riemann zeta function was human edited for readability."
+ },
+ "counts": {
+  "families": 373,
+  "families_with_lean": 245,
+  "lean_files": 3340,
+  "main_results": 192,
+  "main_results_unlinked": 0,
+  "manuscripts": 721,
+  "proofs_found": 521,
+  "proofs_not_found": 26,
+  "proofs_with_sorry": 0,
+  "results": 434,
+  "results_main": 199,
+  "statements": 547,
+  "subjects": 17
+ }
+}

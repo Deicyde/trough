@@ -121,5 +121,5 @@ proof that the algebra is nontrivial over a nontrivial ring, both assume that $2
 ## Sources
 
 - [Mathlib documentation: `CliffordAlgebra`](https://leanprover-community.github.io/mathlib4_docs/Mathlib/LinearAlgebra/CliffordAlgebra/Basic.html#CliffordAlgebra)
-- [Source of `CliffordAlgebra` in Mathlib/LinearAlgebra/CliffordAlgebra/Basic.lean](https://github.com/leanprover-community/mathlib4/blob/9bac2d0692944a775113f7c130fd5e5b4608a854/Mathlib/LinearAlgebra/CliffordAlgebra/Basic.lean#L68)
-- [Mathlib overview: General algebra › Algebras over a ring](https://github.com/leanprover-community/mathlib4/blob/9bac2d0692944a775113f7c130fd5e5b4608a854/docs/overview.yaml#L117)
+- [Source of `CliffordAlgebra` in Mathlib/LinearAlgebra/CliffordAlgebra/Basic.lean](https://github.com/leanprover-community/mathlib4/blob/15cf10d19dfd4cdee9602318e271fa3ce99c454d/Mathlib/LinearAlgebra/CliffordAlgebra/Basic.lean#L68)
+- [Mathlib overview: General algebra › Algebras over a ring](https://github.com/leanprover-community/mathlib4/blob/15cf10d19dfd4cdee9602318e271fa3ce99c454d/docs/overview.yaml#L117)

@@ -32,5 +32,5 @@ deriv.lhopital_zero_nhds {a : ℝ} {l : Filter ℝ} {f g : ℝ → ℝ}
 ## Sources
 
 - [Mathlib documentation: `deriv.lhopital_zero_nhds`](https://leanprover-community.github.io/mathlib4_docs/Mathlib/Analysis/Calculus/LHopital.html#deriv.lhopital_zero_nhds)
-- [Source of `deriv.lhopital_zero_nhds` in Mathlib/Analysis/Calculus/LHopital.lean](https://github.com/leanprover-community/mathlib4/blob/9bac2d0692944a775113f7c130fd5e5b4608a854/Mathlib/Analysis/Calculus/LHopital.lean#L429)
-- [Freek Wiedijk's 100 theorems, no. 64](https://github.com/leanprover-community/mathlib4/blob/9bac2d0692944a775113f7c130fd5e5b4608a854/docs/100.yaml#L323)
+- [Source of `deriv.lhopital_zero_nhds` in Mathlib/Analysis/Calculus/LHopital.lean](https://github.com/leanprover-community/mathlib4/blob/15cf10d19dfd4cdee9602318e271fa3ce99c454d/Mathlib/Analysis/Calculus/LHopital.lean#L429)
+- [Freek Wiedijk's 100 theorems, no. 64](https://github.com/leanprover-community/mathlib4/blob/15cf10d19dfd4cdee9602318e271fa3ce99c454d/docs/100.yaml#L323)

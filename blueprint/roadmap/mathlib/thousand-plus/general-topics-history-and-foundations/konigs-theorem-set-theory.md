@@ -18,8 +18,8 @@ Cardinal.sum_lt_prod.{u_1, u_2} {ι : Type u_1} (f g : ι → Cardinal.{u_2})
 ## Sources
 
 - [Mathlib documentation: `Cardinal.sum_lt_prod`](https://leanprover-community.github.io/mathlib4_docs/Mathlib/SetTheory/Cardinal/Order.html#Cardinal.sum_lt_prod)
-- [Source of `Cardinal.sum_lt_prod` in Mathlib/SetTheory/Cardinal/Order.lean](https://github.com/leanprover-community/mathlib4/blob/9bac2d0692944a775113f7c130fd5e5b4608a854/Mathlib/SetTheory/Cardinal/Order.lean#L547)
-- [1000+ theorems list: Q1077462](https://github.com/leanprover-community/mathlib4/blob/9bac2d0692944a775113f7c130fd5e5b4608a854/docs/1000.yaml#L1331)
+- [Source of `Cardinal.sum_lt_prod` in Mathlib/SetTheory/Cardinal/Order.lean](https://github.com/leanprover-community/mathlib4/blob/15cf10d19dfd4cdee9602318e271fa3ce99c454d/Mathlib/SetTheory/Cardinal/Order.lean#L547)
+- [1000+ theorems list: Q1077462](https://github.com/leanprover-community/mathlib4/blob/15cf10d19dfd4cdee9602318e271fa3ce99c454d/docs/1000.yaml#L1334)
 - [1000+ theorems project: Q1077462](https://1000-plus.github.io/all.html?length=-1#Q1077462)
 - [Wikipedia: König's theorem (set theory)](https://en.wikipedia.org/wiki/K%C3%B6nig's_theorem_%28set_theory%29)
 - [Wikidata: Q1077462](https://www.wikidata.org/wiki/Q1077462)

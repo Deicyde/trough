@@ -24,5 +24,5 @@ SchwartzMap.tsum_eq_tsum_fourier (f : SchwartzMap ℝ ℂ) (x : ℝ) :
 ## Sources
 
 - [Mathlib documentation: `SchwartzMap.tsum_eq_tsum_fourier`](https://leanprover-community.github.io/mathlib4_docs/Mathlib/Analysis/Fourier/PoissonSummation.html#SchwartzMap.tsum_eq_tsum_fourier)
-- [Source of `SchwartzMap.tsum_eq_tsum_fourier` in Mathlib/Analysis/Fourier/PoissonSummation.lean](https://github.com/leanprover-community/mathlib4/blob/9bac2d0692944a775113f7c130fd5e5b4608a854/Mathlib/Analysis/Fourier/PoissonSummation.lean#L214)
-- [Mathlib undergraduate list: Distribution calculus › Applications](https://github.com/leanprover-community/mathlib4/blob/9bac2d0692944a775113f7c130fd5e5b4608a854/docs/undergrad.yaml#L626)
+- [Source of `SchwartzMap.tsum_eq_tsum_fourier` in Mathlib/Analysis/Fourier/PoissonSummation.lean](https://github.com/leanprover-community/mathlib4/blob/15cf10d19dfd4cdee9602318e271fa3ce99c454d/Mathlib/Analysis/Fourier/PoissonSummation.lean#L214)
+- [Mathlib undergraduate list: Distribution calculus › Applications](https://github.com/leanprover-community/mathlib4/blob/15cf10d19dfd4cdee9602318e271fa3ce99c454d/docs/undergrad.yaml#L626)

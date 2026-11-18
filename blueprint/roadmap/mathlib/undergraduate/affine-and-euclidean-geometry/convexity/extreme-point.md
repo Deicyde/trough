@@ -15,5 +15,5 @@ Set.extremePoints.{u_1, u_2} (𝕜 : Type u_1) {E : Type u_2} [Semiring 𝕜] [P
 ## Sources
 
 - [Mathlib documentation: `Set.extremePoints`](https://leanprover-community.github.io/mathlib4_docs/Mathlib/Analysis/Convex/Extreme.html#Set.extremePoints)
-- [Source of `Set.extremePoints` in Mathlib/Analysis/Convex/Extreme.lean](https://github.com/leanprover-community/mathlib4/blob/9bac2d0692944a775113f7c130fd5e5b4608a854/Mathlib/Analysis/Convex/Extreme.lean#L68)
-- [Mathlib undergraduate list: Affine and Euclidean Geometry › Convexity](https://github.com/leanprover-community/mathlib4/blob/9bac2d0692944a775113f7c130fd5e5b4608a854/docs/undergrad.yaml#L257)
+- [Source of `Set.extremePoints` in Mathlib/Analysis/Convex/Extreme.lean](https://github.com/leanprover-community/mathlib4/blob/15cf10d19dfd4cdee9602318e271fa3ce99c454d/Mathlib/Analysis/Convex/Extreme.lean#L68)
+- [Mathlib undergraduate list: Affine and Euclidean Geometry › Convexity](https://github.com/leanprover-community/mathlib4/blob/15cf10d19dfd4cdee9602318e271fa3ce99c454d/docs/undergrad.yaml#L257)

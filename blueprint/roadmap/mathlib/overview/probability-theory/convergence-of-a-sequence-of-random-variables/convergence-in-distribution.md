@@ -21,5 +21,5 @@ MeasureTheory.ProbabilityMeasure.tendsto_iff_forall_integral_tendsto.{u_1, u_2} 
 ## Sources
 
 - [Mathlib documentation: `MeasureTheory.ProbabilityMeasure.tendsto_iff_forall_integral_tendsto`](https://leanprover-community.github.io/mathlib4_docs/Mathlib/MeasureTheory/Measure/ProbabilityMeasure.html#MeasureTheory.ProbabilityMeasure.tendsto_iff_forall_integral_tendsto)
-- [Source of `MeasureTheory.ProbabilityMeasure.tendsto_iff_forall_integral_tendsto` in Mathlib/MeasureTheory/Measure/ProbabilityMeasure.lean](https://github.com/leanprover-community/mathlib4/blob/9bac2d0692944a775113f7c130fd5e5b4608a854/Mathlib/MeasureTheory/Measure/ProbabilityMeasure.lean#L364)
-- [Mathlib overview: Probability Theory › Convergence of a sequence of random variables](https://github.com/leanprover-community/mathlib4/blob/9bac2d0692944a775113f7c130fd5e5b4608a854/docs/overview.yaml#L417)
+- [Source of `MeasureTheory.ProbabilityMeasure.tendsto_iff_forall_integral_tendsto` in Mathlib/MeasureTheory/Measure/ProbabilityMeasure.lean](https://github.com/leanprover-community/mathlib4/blob/15cf10d19dfd4cdee9602318e271fa3ce99c454d/Mathlib/MeasureTheory/Measure/ProbabilityMeasure.lean#L363)
+- [Mathlib overview: Probability Theory › Convergence of a sequence of random variables](https://github.com/leanprover-community/mathlib4/blob/15cf10d19dfd4cdee9602318e271fa3ce99c454d/docs/overview.yaml#L417)

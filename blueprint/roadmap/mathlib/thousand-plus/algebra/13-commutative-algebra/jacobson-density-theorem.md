@@ -27,8 +27,8 @@ jacobson_density.{u_2, u_4} {R : Type u_2} [Ring R] {M : Type u_4} [AddCommGroup
 ## Sources
 
 - [Mathlib documentation: `jacobson_density`](https://leanprover-community.github.io/mathlib4_docs/Mathlib/RingTheory/SimpleModule/Basic.html#jacobson_density)
-- [Source of `jacobson_density` in Mathlib/RingTheory/SimpleModule/Basic.lean](https://github.com/leanprover-community/mathlib4/blob/9bac2d0692944a775113f7c130fd5e5b4608a854/Mathlib/RingTheory/SimpleModule/Basic.lean#L562)
-- [1000+ theorems list: Q17098298](https://github.com/leanprover-community/mathlib4/blob/9bac2d0692944a775113f7c130fd5e5b4608a854/docs/1000.yaml#L4145)
+- [Source of `jacobson_density` in Mathlib/RingTheory/SimpleModule/Basic.lean](https://github.com/leanprover-community/mathlib4/blob/15cf10d19dfd4cdee9602318e271fa3ce99c454d/Mathlib/RingTheory/SimpleModule/Basic.lean#L561)
+- [1000+ theorems list: Q17098298](https://github.com/leanprover-community/mathlib4/blob/15cf10d19dfd4cdee9602318e271fa3ce99c454d/docs/1000.yaml#L4148)
 - [1000+ theorems project: Q17098298](https://1000-plus.github.io/all.html?length=-1#Q17098298)
 - [Wikipedia: Jacobson density theorem](https://en.wikipedia.org/wiki/Jacobson_density_theorem)
 - [Wikidata: Q17098298](https://www.wikidata.org/wiki/Q17098298)

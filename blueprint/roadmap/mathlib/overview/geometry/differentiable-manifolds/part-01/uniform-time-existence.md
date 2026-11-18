@@ -33,5 +33,5 @@ exists_isMIntegralCurve_of_isMIntegralCurveOn.{u_1, u_2, u_3} {E : Type u_1} [No
 ## Sources
 
 - [Mathlib documentation: `exists_isMIntegralCurve_of_isMIntegralCurveOn`](https://leanprover-community.github.io/mathlib4_docs/Mathlib/Geometry/Manifold/IntegralCurve/UniformTime.html#exists_isMIntegralCurve_of_isMIntegralCurveOn)
-- [Source of `exists_isMIntegralCurve_of_isMIntegralCurveOn` in Mathlib/Geometry/Manifold/IntegralCurve/UniformTime.lean](https://github.com/leanprover-community/mathlib4/blob/9bac2d0692944a775113f7c130fd5e5b4608a854/Mathlib/Geometry/Manifold/IntegralCurve/UniformTime.lean#L163)
-- [Mathlib overview: Geometry › Differentiable manifolds](https://github.com/leanprover-community/mathlib4/blob/9bac2d0692944a775113f7c130fd5e5b4608a854/docs/overview.yaml#L455)
+- [Source of `exists_isMIntegralCurve_of_isMIntegralCurveOn` in Mathlib/Geometry/Manifold/IntegralCurve/UniformTime.lean](https://github.com/leanprover-community/mathlib4/blob/15cf10d19dfd4cdee9602318e271fa3ce99c454d/Mathlib/Geometry/Manifold/IntegralCurve/UniformTime.lean#L163)
+- [Mathlib overview: Geometry › Differentiable manifolds](https://github.com/leanprover-community/mathlib4/blob/15cf10d19dfd4cdee9602318e271fa3ce99c454d/docs/overview.yaml#L455)

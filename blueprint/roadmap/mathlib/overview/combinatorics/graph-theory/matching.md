@@ -15,5 +15,5 @@ SimpleGraph.Subgraph.IsMatching.{u_1} {V : Type u_1} {G : SimpleGraph V} (M : G.
 ## Sources
 
 - [Mathlib documentation: `SimpleGraph.Subgraph.IsMatching`](https://leanprover-community.github.io/mathlib4_docs/Mathlib/Combinatorics/SimpleGraph/Matching.html#SimpleGraph.Subgraph.IsMatching)
-- [Source of `SimpleGraph.Subgraph.IsMatching` in Mathlib/Combinatorics/SimpleGraph/Matching.lean](https://github.com/leanprover-community/mathlib4/blob/9bac2d0692944a775113f7c130fd5e5b4608a854/Mathlib/Combinatorics/SimpleGraph/Matching.lean#L63)
-- [Mathlib overview: Combinatorics › Graph theory](https://github.com/leanprover-community/mathlib4/blob/9bac2d0692944a775113f7c130fd5e5b4608a854/docs/overview.yaml#L525)
+- [Source of `SimpleGraph.Subgraph.IsMatching` in Mathlib/Combinatorics/SimpleGraph/Matching.lean](https://github.com/leanprover-community/mathlib4/blob/15cf10d19dfd4cdee9602318e271fa3ce99c454d/Mathlib/Combinatorics/SimpleGraph/Matching.lean#L63)
+- [Mathlib overview: Combinatorics › Graph theory](https://github.com/leanprover-community/mathlib4/blob/15cf10d19dfd4cdee9602318e271fa3ce99c454d/docs/overview.yaml#L525)

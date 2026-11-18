@@ -27,9 +27,9 @@ SchwartzMap.integral_inner_fourier_fourier.{u_3, u_4} {V : Type u_3} [NormedAddC
 ## Sources
 
 - [Mathlib documentation: `SchwartzMap.integral_inner_fourier_fourier`](https://leanprover-community.github.io/mathlib4_docs/Mathlib/Analysis/Distribution/SchwartzSpace/Fourier.html#SchwartzMap.integral_inner_fourier_fourier)
-- [Source of `SchwartzMap.integral_inner_fourier_fourier` in Mathlib/Analysis/Distribution/SchwartzSpace/Fourier.lean](https://github.com/leanprover-community/mathlib4/blob/9bac2d0692944a775113f7c130fd5e5b4608a854/Mathlib/Analysis/Distribution/SchwartzSpace/Fourier.lean#L303)
-- [Mathlib undergraduate list: Measures and integral calculus › Fourier analysis](https://github.com/leanprover-community/mathlib4/blob/9bac2d0692944a775113f7c130fd5e5b4608a854/docs/undergrad.yaml#L540)
-- [1000+ theorems list: Q2096184](https://github.com/leanprover-community/mathlib4/blob/9bac2d0692944a775113f7c130fd5e5b4608a854/docs/1000.yaml#L2014)
+- [Source of `SchwartzMap.integral_inner_fourier_fourier` in Mathlib/Analysis/Distribution/SchwartzSpace/Fourier.lean](https://github.com/leanprover-community/mathlib4/blob/15cf10d19dfd4cdee9602318e271fa3ce99c454d/Mathlib/Analysis/Distribution/SchwartzSpace/Fourier.lean#L304)
+- [Mathlib undergraduate list: Measures and integral calculus › Fourier analysis](https://github.com/leanprover-community/mathlib4/blob/15cf10d19dfd4cdee9602318e271fa3ce99c454d/docs/undergrad.yaml#L540)
+- [1000+ theorems list: Q2096184](https://github.com/leanprover-community/mathlib4/blob/15cf10d19dfd4cdee9602318e271fa3ce99c454d/docs/1000.yaml#L2017)
 - [1000+ theorems project: Q2096184](https://1000-plus.github.io/all.html?length=-1#Q2096184)
 - [Wikipedia: Plancherel theorem](https://en.wikipedia.org/wiki/Plancherel_theorem)
 - [Wikidata: Q2096184](https://www.wikidata.org/wiki/Q2096184)

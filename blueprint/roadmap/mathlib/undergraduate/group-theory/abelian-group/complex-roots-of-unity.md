@@ -116,5 +116,5 @@ domains, and the factorization into cyclotomic polynomials over any commutative 
 ## Sources
 
 - [Mathlib documentation: `Complex.mem_rootsOfUnity`](https://leanprover-community.github.io/mathlib4_docs/Mathlib/RingTheory/RootsOfUnity/Complex.html#Complex.mem_rootsOfUnity)
-- [Source of `Complex.mem_rootsOfUnity` in Mathlib/RingTheory/RootsOfUnity/Complex.lean](https://github.com/leanprover-community/mathlib4/blob/9bac2d0692944a775113f7c130fd5e5b4608a854/Mathlib/RingTheory/RootsOfUnity/Complex.lean#L111)
-- [Mathlib undergraduate list: Group Theory › Abelian group](https://github.com/leanprover-community/mathlib4/blob/9bac2d0692944a775113f7c130fd5e5b4608a854/docs/undergrad.yaml#L96)
+- [Source of `Complex.mem_rootsOfUnity` in Mathlib/RingTheory/RootsOfUnity/Complex.lean](https://github.com/leanprover-community/mathlib4/blob/15cf10d19dfd4cdee9602318e271fa3ce99c454d/Mathlib/RingTheory/RootsOfUnity/Complex.lean#L110)
+- [Mathlib undergraduate list: Group Theory › Abelian group](https://github.com/leanprover-community/mathlib4/blob/15cf10d19dfd4cdee9602318e271fa3ce99c454d/docs/undergrad.yaml#L96)

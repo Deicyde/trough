@@ -23,5 +23,5 @@ HasFDerivAt.comp.{u_1, u_2, u_3, u_4} {𝕜 : Type u_1} [NontriviallyNormedField
 ## Sources
 
 - [Mathlib documentation: `HasFDerivAt.comp`](https://leanprover-community.github.io/mathlib4_docs/Mathlib/Analysis/Calculus/FDeriv/Comp.html#HasFDerivAt.comp)
-- [Source of `HasFDerivAt.comp` in Mathlib/Analysis/Calculus/FDeriv/Comp.lean](https://github.com/leanprover-community/mathlib4/blob/9bac2d0692944a775113f7c130fd5e5b4608a854/Mathlib/Analysis/Calculus/FDeriv/Comp.lean#L101)
-- [Mathlib overview: Analysis › Differentiability](https://github.com/leanprover-community/mathlib4/blob/9bac2d0692944a775113f7c130fd5e5b4608a854/docs/overview.yaml#L308)
+- [Source of `HasFDerivAt.comp` in Mathlib/Analysis/Calculus/FDeriv/Comp.lean](https://github.com/leanprover-community/mathlib4/blob/15cf10d19dfd4cdee9602318e271fa3ce99c454d/Mathlib/Analysis/Calculus/FDeriv/Comp.lean#L101)
+- [Mathlib overview: Analysis › Differentiability](https://github.com/leanprover-community/mathlib4/blob/15cf10d19dfd4cdee9602318e271fa3ce99c454d/docs/overview.yaml#L308)

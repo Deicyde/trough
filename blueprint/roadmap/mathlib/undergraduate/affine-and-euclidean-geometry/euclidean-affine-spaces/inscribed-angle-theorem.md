@@ -28,5 +28,5 @@ Orientation.two_zsmul_oangle_sub_eq_two_zsmul_oangle_sub_of_norm_eq.{u_1} {V : T
 ## Sources
 
 - [Mathlib documentation: `Orientation.two_zsmul_oangle_sub_eq_two_zsmul_oangle_sub_of_norm_eq`](https://leanprover-community.github.io/mathlib4_docs/Mathlib/Geometry/Euclidean/Angle/Sphere.html#Orientation.two_zsmul_oangle_sub_eq_two_zsmul_oangle_sub_of_norm_eq)
-- [Source of `Orientation.two_zsmul_oangle_sub_eq_two_zsmul_oangle_sub_of_norm_eq` in Mathlib/Geometry/Euclidean/Angle/Sphere.lean](https://github.com/leanprover-community/mathlib4/blob/9bac2d0692944a775113f7c130fd5e5b4608a854/Mathlib/Geometry/Euclidean/Angle/Sphere.lean#L58)
-- [Mathlib undergraduate list: Affine and Euclidean Geometry › Euclidean affine spaces](https://github.com/leanprover-community/mathlib4/blob/9bac2d0692944a775113f7c130fd5e5b4608a854/docs/undergrad.yaml#L266)
+- [Source of `Orientation.two_zsmul_oangle_sub_eq_two_zsmul_oangle_sub_of_norm_eq` in Mathlib/Geometry/Euclidean/Angle/Sphere.lean](https://github.com/leanprover-community/mathlib4/blob/15cf10d19dfd4cdee9602318e271fa3ce99c454d/Mathlib/Geometry/Euclidean/Angle/Sphere.lean#L57)
+- [Mathlib undergraduate list: Affine and Euclidean Geometry › Euclidean affine spaces](https://github.com/leanprover-community/mathlib4/blob/15cf10d19dfd4cdee9602318e271fa3ce99c454d/docs/undergrad.yaml#L266)

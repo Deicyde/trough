@@ -21,5 +21,5 @@ StieltjesFunction.measure.{u_1} {R : Type u_1} [LinearOrder R] [TopologicalSpace
 ## Sources
 
 - [Mathlib documentation: `StieltjesFunction.measure`](https://leanprover-community.github.io/mathlib4_docs/Mathlib/MeasureTheory/Measure/Stieltjes.html#StieltjesFunction.measure)
-- [Source of `StieltjesFunction.measure` in Mathlib/MeasureTheory/Measure/Stieltjes.lean](https://github.com/leanprover-community/mathlib4/blob/9bac2d0692944a775113f7c130fd5e5b4608a854/Mathlib/MeasureTheory/Measure/Stieltjes.lean#L518)
-- [Mathlib overview: Analysis › Measures and integral calculus](https://github.com/leanprover-community/mathlib4/blob/9bac2d0692944a775113f7c130fd5e5b4608a854/docs/overview.yaml#L342)
+- [Source of `StieltjesFunction.measure` in Mathlib/MeasureTheory/Measure/Stieltjes.lean](https://github.com/leanprover-community/mathlib4/blob/15cf10d19dfd4cdee9602318e271fa3ce99c454d/Mathlib/MeasureTheory/Measure/Stieltjes.lean#L518)
+- [Mathlib overview: Analysis › Measures and integral calculus](https://github.com/leanprover-community/mathlib4/blob/15cf10d19dfd4cdee9602318e271fa3ce99c454d/docs/overview.yaml#L342)

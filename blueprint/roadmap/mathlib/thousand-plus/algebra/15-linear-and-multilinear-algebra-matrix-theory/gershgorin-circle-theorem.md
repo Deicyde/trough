@@ -28,8 +28,8 @@ eigenvalue_mem_ball.{u_1, u_2} {K : Type u_1} {n : Type u_2} [NormedField K] [Fi
 ## Sources
 
 - [Mathlib documentation: `eigenvalue_mem_ball`](https://leanprover-community.github.io/mathlib4_docs/Mathlib/LinearAlgebra/Matrix/Gershgorin.html#eigenvalue_mem_ball)
-- [Source of `eigenvalue_mem_ball` in Mathlib/LinearAlgebra/Matrix/Gershgorin.lean](https://github.com/leanprover-community/mathlib4/blob/9bac2d0692944a775113f7c130fd5e5b4608a854/Mathlib/LinearAlgebra/Matrix/Gershgorin.lean#L27)
-- [1000+ theorems list: Q978688](https://github.com/leanprover-community/mathlib4/blob/9bac2d0692944a775113f7c130fd5e5b4608a854/docs/1000.yaml#L1179)
+- [Source of `eigenvalue_mem_ball` in Mathlib/LinearAlgebra/Matrix/Gershgorin.lean](https://github.com/leanprover-community/mathlib4/blob/15cf10d19dfd4cdee9602318e271fa3ce99c454d/Mathlib/LinearAlgebra/Matrix/Gershgorin.lean#L27)
+- [1000+ theorems list: Q978688](https://github.com/leanprover-community/mathlib4/blob/15cf10d19dfd4cdee9602318e271fa3ce99c454d/docs/1000.yaml#L1182)
 - [1000+ theorems project: Q978688](https://1000-plus.github.io/all.html?length=-1#Q978688)
 - [Wikipedia: Gershgorin circle theorem](https://en.wikipedia.org/wiki/Gershgorin_circle_theorem)
 - [Wikidata: Q978688](https://www.wikidata.org/wiki/Q978688)

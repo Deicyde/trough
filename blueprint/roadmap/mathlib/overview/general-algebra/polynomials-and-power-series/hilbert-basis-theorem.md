@@ -67,9 +67,9 @@ Mathlib states the theorem for commutative rings. A ring is Noetherian in Mathli
 ## Sources
 
 - [Mathlib documentation: `Polynomial.isNoetherianRing`](https://leanprover-community.github.io/mathlib4_docs/Mathlib/RingTheory/Polynomial/Basic.html#Polynomial.isNoetherianRing)
-- [Source of `Polynomial.isNoetherianRing` in Mathlib/RingTheory/Polynomial/Basic.lean](https://github.com/leanprover-community/mathlib4/blob/9bac2d0692944a775113f7c130fd5e5b4608a854/Mathlib/RingTheory/Polynomial/Basic.lean#L753)
-- [Mathlib overview: General algebra › Polynomials and power series](https://github.com/leanprover-community/mathlib4/blob/9bac2d0692944a775113f7c130fd5e5b4608a854/docs/overview.yaml#L101)
-- [1000+ theorems list: Q656645](https://github.com/leanprover-community/mathlib4/blob/9bac2d0692944a775113f7c130fd5e5b4608a854/docs/1000.yaml#L695)
+- [Source of `Polynomial.isNoetherianRing` in Mathlib/RingTheory/Polynomial/Basic.lean](https://github.com/leanprover-community/mathlib4/blob/15cf10d19dfd4cdee9602318e271fa3ce99c454d/Mathlib/RingTheory/Polynomial/Basic.lean#L753)
+- [Mathlib overview: General algebra › Polynomials and power series](https://github.com/leanprover-community/mathlib4/blob/15cf10d19dfd4cdee9602318e271fa3ce99c454d/docs/overview.yaml#L101)
+- [1000+ theorems list: Q656645](https://github.com/leanprover-community/mathlib4/blob/15cf10d19dfd4cdee9602318e271fa3ce99c454d/docs/1000.yaml#L698)
 - [1000+ theorems project: Q656645](https://1000-plus.github.io/all.html?length=-1#Q656645)
 - [Wikipedia: Hilbert's basis theorem](https://en.wikipedia.org/wiki/Hilbert's_basis_theorem)
 - [Wikidata: Q656645](https://www.wikidata.org/wiki/Q656645)

@@ -29,6 +29,6 @@ Complex.eventually_eq_of_isLocalMax_norm.{u, v} {E : Type u} [NormedAddCommGroup
 ## Sources
 
 - [Mathlib documentation: `Complex.eventually_eq_of_isLocalMax_norm`](https://leanprover-community.github.io/mathlib4_docs/Mathlib/Analysis/Complex/AbsMax.html#Complex.eventually_eq_of_isLocalMax_norm)
-- [Source of `Complex.eventually_eq_of_isLocalMax_norm` in Mathlib/Analysis/Complex/AbsMax.lean](https://github.com/leanprover-community/mathlib4/blob/9bac2d0692944a775113f7c130fd5e5b4608a854/Mathlib/Analysis/Complex/AbsMax.lean#L350)
-- [Mathlib overview: Analysis › Complex analysis](https://github.com/leanprover-community/mathlib4/blob/9bac2d0692944a775113f7c130fd5e5b4608a854/docs/overview.yaml#L368)
-- [Mathlib undergraduate list: Single Variable Complex Analysis › Functions on one complex variable](https://github.com/leanprover-community/mathlib4/blob/9bac2d0692944a775113f7c130fd5e5b4608a854/docs/undergrad.yaml#L394)
+- [Source of `Complex.eventually_eq_of_isLocalMax_norm` in Mathlib/Analysis/Complex/AbsMax.lean](https://github.com/leanprover-community/mathlib4/blob/15cf10d19dfd4cdee9602318e271fa3ce99c454d/Mathlib/Analysis/Complex/AbsMax.lean#L350)
+- [Mathlib overview: Analysis › Complex analysis](https://github.com/leanprover-community/mathlib4/blob/15cf10d19dfd4cdee9602318e271fa3ce99c454d/docs/overview.yaml#L368)
+- [Mathlib undergraduate list: Single Variable Complex Analysis › Functions on one complex variable](https://github.com/leanprover-community/mathlib4/blob/15cf10d19dfd4cdee9602318e271fa3ce99c454d/docs/undergrad.yaml#L394)

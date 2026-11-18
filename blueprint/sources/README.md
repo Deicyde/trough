@@ -4,7 +4,7 @@ Trough reads these sources. The catalog of libraries is `catalog/libraries.toml`
 
 ## Mathlib's curated lists
 
-- `data/mathlib/yaml/`: docs/overview.yaml, docs/undergrad.yaml, docs/100.yaml and docs/1000.yaml from [leanprover-community/mathlib4 at 9bac2d06](https://github.com/leanprover-community/mathlib4/tree/9bac2d0692944a775113f7c130fd5e5b4608a854/docs), Apache-2.0.
+- `data/mathlib/yaml/`: docs/overview.yaml, docs/undergrad.yaml, docs/100.yaml and docs/1000.yaml from [leanprover-community/mathlib4 at 15cf10d1](https://github.com/leanprover-community/mathlib4/tree/15cf10d19dfd4cdee9602318e271fa3ce99c454d/docs), Apache-2.0.
 - `data/mathlib/concept-deps.json`: each listed declaration's kind, docstring, signature and nearest listed dependencies, written by `lean/ConceptDeps.lean` in GitHub Actions.
 - `data/thousand-plus.json`: subject classification and Wikipedia pages of the 1000+ theorems, from [1000-plus/1000-plus.github.io](https://github.com/1000-plus/1000-plus.github.io) at 8e04b97d, released into the public domain.
 
@@ -66,6 +66,14 @@ Trough reads these sources. The catalog of libraries is `catalog/libraries.toml`
 
 - `data/atlas/articles/`: each result of ATLAS's vault, its title, statement and Lean declaration, and where the repository's Lean declares it, read from the source text without Lean; `data/atlas/structure.json`: the vault's areas, subjects and containers, with their titles and prose. From [Deicyde/atlas-lean at 035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce), the `wiki/autoform-blueprint` branch, Apache-2.0. The archived `v1/`, under a non-commercial license, is not read.
 
+## OpenAI Math
+
+- `data/openai-math/families/`: each result family's description, its manuscripts' titles, PDFs and abstracts, and its Lean page, with each formalized result's statements as the statement file writes them and where the repository's Lean proves them, read from the source text without Lean; `data/openai-math/structure.json`: the subjects and their families. From [openai/math at 4eaee875](https://github.com/openai/math/tree/4eaee87548250b2682affda7d05d947c05554bae), Apache-2.0.
+
+## CSLib
+
+- `data/cslib/library.json`: each module's title, docstrings and authors, and its public declarations with their kinds, lines, docstrings and Lean statements, read from the source text without Lean, with the opening of each folder's README, the README's description and the maintainers GOVERNANCE.md names, from [leanprover/cslib at 86d560b6](https://github.com/leanprover/cslib/tree/86d560b6cbb379bd82512424cbcd2a915a1565e7), Apache-2.0. `data/cslib/deps.json`: the modules each module's statements and proofs use, and the names read from the source that Lean has only as private declarations or not at all, written by `lean/cslib/CslibDeps.lean` in GitHub Actions. `data/cslib/source.json` records the commit, its Lean toolchain and Mathlib.
+
 ## Libraries
 
 ### Core library
@@ -105,14 +113,14 @@ Trough reads these sources. The catalog of libraries is `catalog/libraries.toml`
 
 - [Formal Conjectures](https://github.com/google-deepmind/formal-conjectures) at 5258ab9ac6db: Statements, mostly without proof, of open and solved problems, a file per problem in a folder per source: the Erdős problems, OEIS, Wikipedia, Green's open problems, Written on the Wall II, papers, arXiv, MathOverflow, books and smaller ones.
 - [Physlib](https://github.com/leanprover-community/physlib) at 3d3ec913681f: Physics (formerly HepLean/PhysLean): relativity, particles, QFT, quantum mechanics, classical mechanics, electromagnetism, condensed matter, plus quantum information (QuantumInfo lib).
-- [CSLib](https://github.com/leanprover/cslib) at 52897fc2059b: Computer science foundations: computability (110), foundations (82), languages and semantics (45), logics, algorithms, crypto, ML.
+- [CSLib](https://github.com/leanprover/cslib) at 86d560b6cbb3: The Lean Computer Science Library: computability (automata, machines, circuits, formal languages), operational semantics and transition systems, programming languages and calculi, logics, algorithms, cryptography and learning theory, documented in Mathlib's style.
 - [Foundation](https://github.com/FormalizedFormalLogic/Foundation) at c3eb37ae896d: Mathematical logic: first-order arithmetic and incompleteness (FirstOrder 177), provability logic (58), propositional and modal logic, second-order.
 - [Analysis I companion](https://github.com/teorth/analysis) at a19a5bfadc61: Lean companion to Tao's Analysis I textbook (section-by-section exercises), plus measure theory.
 
 ### Large corpora
 
 - [Fermat's Last Theorem (Anthropic)](https://github.com/anthropics/fermats-last-theorem) at 6e837e753555: Its README states that it is a complete, machine-checked proof of FLT via Frey, Serre, Ribet, Wiles and Taylor-Wiles, from the three standard axioms, checked by comparator and the nanoda kernel.
-- [OpenAI Math](https://github.com/openai/math) at 4eaee8754825: Lean proofs of results from about 721 model-generated research manuscripts (README says ~42% of top-line results are formalized). Includes Hodge for CM abelian varieties, BSD cases, and counterexamples (Hadwiger, Kaplansky).
+- [OpenAI Math](https://github.com/openai/math) at 4eaee8754825: Research manuscripts produced by an OpenAI model, with Lean formalizations of some of their results (Hodge for CM abelian varieties; counterexamples to Hadwiger and Kaplansky).
 - [Classification of Finite Simple Groups (Axiom)](https://github.com/AxiomMath/CFSG) at 69cb972f587a: A sorry-free proof of the Classification of Finite Simple Groups, mostly first-generation, using TauCeti's ClassificationStatement; produced by AxiomProver.
 - [Lean Pool](https://github.com/LeanPool/lean-pool) at 701389c04bdd: A pool of permissively licensed Lean projects outside Mathlib's scope, e.g. Navier-Stokes, CKN, Davis-Kahan, Conway-Soifer, Zeta5Irrational, MovingSofa.
 - [The Stacks Project in Lean (Axiom)](https://github.com/AxiomMath/Stacks) at c496df0d9bee: A formalization of the Stacks Project, indexed by Stacks tag, in two tiers: StacksCore, human-reviewed, and StacksFrontier, drafted with AxiomProver and not yet reviewed. Declarations also carry the EGA and SGA items they prove.

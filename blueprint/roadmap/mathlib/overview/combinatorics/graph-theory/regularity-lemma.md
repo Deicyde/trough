@@ -25,5 +25,5 @@ szemeredi_regularity.{u_1} {α : Type u_1} [DecidableEq α] [Fintype α] (G : Si
 ## Sources
 
 - [Mathlib documentation: `szemeredi_regularity`](https://leanprover-community.github.io/mathlib4_docs/Mathlib/Combinatorics/SimpleGraph/Regularity/Lemma.html#szemeredi_regularity)
-- [Source of `szemeredi_regularity` in Mathlib/Combinatorics/SimpleGraph/Regularity/Lemma.lean](https://github.com/leanprover-community/mathlib4/blob/9bac2d0692944a775113f7c130fd5e5b4608a854/Mathlib/Combinatorics/SimpleGraph/Regularity/Lemma.lean#L74)
-- [Mathlib overview: Combinatorics › Graph theory](https://github.com/leanprover-community/mathlib4/blob/9bac2d0692944a775113f7c130fd5e5b4608a854/docs/overview.yaml#L530)
+- [Source of `szemeredi_regularity` in Mathlib/Combinatorics/SimpleGraph/Regularity/Lemma.lean](https://github.com/leanprover-community/mathlib4/blob/15cf10d19dfd4cdee9602318e271fa3ce99c454d/Mathlib/Combinatorics/SimpleGraph/Regularity/Lemma.lean#L74)
+- [Mathlib overview: Combinatorics › Graph theory](https://github.com/leanprover-community/mathlib4/blob/15cf10d19dfd4cdee9602318e271fa3ce99c454d/docs/overview.yaml#L530)

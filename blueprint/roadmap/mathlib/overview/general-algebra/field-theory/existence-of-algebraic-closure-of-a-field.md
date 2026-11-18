@@ -154,5 +154,5 @@ torsion-freeness conditions on the algebras that are automatic over a field.
 ## Sources
 
 - [Mathlib documentation: `AlgebraicClosure`](https://leanprover-community.github.io/mathlib4_docs/Mathlib/FieldTheory/IsAlgClosed/AlgebraicClosure.html#AlgebraicClosure)
-- [Source of `AlgebraicClosure` in Mathlib/FieldTheory/IsAlgClosed/AlgebraicClosure.lean](https://github.com/leanprover-community/mathlib4/blob/9bac2d0692944a775113f7c130fd5e5b4608a854/Mathlib/FieldTheory/IsAlgClosed/AlgebraicClosure.lean#L124)
-- [Mathlib overview: General algebra › Field theory](https://github.com/leanprover-community/mathlib4/blob/9bac2d0692944a775113f7c130fd5e5b4608a854/docs/overview.yaml#L127)
+- [Source of `AlgebraicClosure` in Mathlib/FieldTheory/IsAlgClosed/AlgebraicClosure.lean](https://github.com/leanprover-community/mathlib4/blob/15cf10d19dfd4cdee9602318e271fa3ce99c454d/Mathlib/FieldTheory/IsAlgClosed/AlgebraicClosure.lean#L124)
+- [Mathlib overview: General algebra › Field theory](https://github.com/leanprover-community/mathlib4/blob/15cf10d19dfd4cdee9602318e271fa3ce99c454d/docs/overview.yaml#L127)
