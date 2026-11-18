@@ -25,7 +25,7 @@ from . import library, leansource
 from .blueprints import Built, escape
 from .ff import is_apache
 from .formal_conjectures import module_name, natural, plural, quote, title_and_doc
-from .library import GITHUB, HEADING, Library, checked_out, check_names, declared_name, one_cut
+from .library import GITHUB, HEADING, PLANS, Library, checked_out, check_names, declared_name, one_cut
 from .mathlib import fence
 from .stacks import comment, header, literal
 from .vault import Container, Entry, Leaf, chunk, slugify
@@ -35,12 +35,6 @@ REPO = "leanprover-community/physlib"
 LIBRARIES = ("Physlib", "PhyslibAlpha", "QuantumInfo")
 THEOREMS = "scripts/lint/exemptions/Theorems.txt"
 API_MAP = "API-map.md"
-# A sentence about what is planned, wanted or welcome, not about what the library has. Not "not yet", "remains to be",
-# "in the future" or "upstream", which say what the library has or are physics.
-PLANS = re.compile(r"\b(?:underway|under way|planned|we plan|plans? to|welcome|reserved for future work|future work on|"
-                   r"future design work|be upstreamed|will follow|to be added|we would want|we should show|"
-                   r"will eventually|near future|one day|be deprecated|with the intention|eventually we will|"
-                   r"long term aim)\b", re.I)
 # A line of a structure, class or inductive type that starts at its command's column without ending it.
 CONTINUES = re.compile(r"\||deriving\b(?![ \t]+instance\b)")
 # `alias ⟨mp, mpr⟩ := ...`, which names the two directions of an equivalence; leansource does not read it.
@@ -730,5 +724,5 @@ def listing(parts: list[str]) -> str:
 
 PHYSLIB = Library(id="physlib", name="Physlib", title=TITLE, repo=REPO, root=LIBRARIES[0], schema=SCHEMA, intro=intro,
                   roots=LIBRARIES, required=(THEOREMS, "README.md", "lean-toolchain", "lake-manifest.json"),
-                  page_budget=250_000, plan_sentences=PLANS, quotes="The docstrings, Lean statements, API maps and README text",
+                  page_budget=250_000, quotes="The docstrings, Lean statements, API maps and README text",
                   todo_exempt=(META,))

@@ -555,12 +555,17 @@ Lean statement, or the whole text of a structure, class or inductive type. The
 module's later `/-!` notes stand where it writes them. A folder's page quotes
 the opening paragraph of its README, the folder's description, and links the
 README; the READMEs' principles for contributors and their plans are left out.
-So are TODO notes, from a TODO to the end of its paragraph, and text about
-plans or inviting future work: a section headed plans, future work, TODOs or
-roadmap, a sentence that plans or invites work ("would be welcome", "we plan",
-"reserved for future work", "future work on", "future design work", "will
-follow") and a paragraph saying code should be upstreamed, each cut marked with
-…. Sections on a module's limitations stay: they say what it does not claim.
+The docstrings are quoted through the filter the Physlib chapter uses, applied
+when the chapter is built, so `data/cslib/` keeps them as written: a section
+headed plans, future work, TODOs or roadmap goes, and so does a sentence that
+mentions a TODO with the rest of its paragraph, a sentence about plans or
+inviting work ("we plan", "welcome", "will follow", "be upstreamed" and the
+other phrases `trough.library.PLANS` lists), and a list item that does either;
+a paragraph that opens with a TODO note or a plan goes with the paragraphs after
+it up to the next heading. Each cut is marked with …, and docstrings cut whole
+one after another show one mark. A link to another module points at its
+article, and a link into the repository's `master` points at the pin. Sections
+on a module's limitations stay: they say what it does not claim.
 An edge means that a module's declarations use another module's: "Depends on"
 lists the modules its statements use, the types of its declarations and the
 values of its definitions, and "Proof depends on" those only its proofs use; a

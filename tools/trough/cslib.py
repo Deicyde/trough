@@ -22,8 +22,8 @@ from pathlib import Path
 from . import library
 from .blueprints import Built
 from .formal_conjectures import quote
-# counts, header, readme_text, titles and without_plans are CSLib's too, as refresh_cslib and the tests use them.
-from .library import GITHUB, Library, at, counts, credit, header, listing, plural, readme_text, titles, without_plans
+# counts, header, readme_text and titles are CSLib's too, as refresh_cslib and the tests use them.
+from .library import GITHUB, Library, at, counts, credit, header, listing, pinned, plural, readme_text, titles
 
 SCHEMA = "trough-cslib/v1"
 REPO = "leanprover/cslib"
@@ -90,7 +90,7 @@ def intro(data: dict, stats: Counter) -> str:
                 "from a Lean run over CSLib at this commit, which the data lack.")
     return "\n\n".join(part for part in [
         f"[{REPO}]({GITHUB}/{REPO}), the Lean Computer Science Library, says in its README:",
-        quote("\n\n".join(data["readme"])),
+        quote(pinned(CSLIB, "\n\n".join(data["readme"]), rev)),
         f"Its GOVERNANCE.md names {listing(roles)}." if roles else "",
         f"This chapter maps CSLib at commit {at(CSLIB, rev)} ({data['date'][:10]}), with Lean toolchain {data['toolchain']} and "
         f"Mathlib {data['mathlib'][:8]}. It has an article for each of the {plural(stats['articles'], 'module')} under "
@@ -116,7 +116,7 @@ def intro(data: dict, stats: Counter) -> str:
 
 
 CSLIB = Library(id="cslib", name="CSLib", title=TITLE, repo=REPO, root=LIBRARY, schema=SCHEMA, intro=intro,
-                required=("README.md", "GOVERNANCE.md"), extras=extras)
+                required=("README.md", "GOVERNANCE.md", "lean-toolchain", "lake-manifest.json"), extras=extras)
 
 
 def read_module(text: str, path: str) -> dict:
