@@ -6,11 +6,16 @@ and its declarations, as trough.leansource reads them, without its TODO notes an
 over the built library (for CSLib, lean/cslib/CslibDeps.lean) says which names are public and which modules each
 module's statements and proofs use. The chapter has a part per folder under the library's root, a page per folder
 below and an article per module, with a block per public declaration in file order.
+
+Physlib's chapter (trough.physlib) keeps its own record, pages and blocks, and takes from here its links at the pin,
+its guards, its docstring filter, its quoting of docstrings and its edges. Its filter cuts at rendering, where CSLib's
+cuts at reading; the two filters are kept apart until they are made one.
 """
 
 from __future__ import annotations
 
 import json
+import posixpath
 import re
 from collections import Counter
 from collections.abc import Callable
@@ -22,6 +27,7 @@ from .blueprints import Built, escape
 from .ff import is_apache
 from .formal_conjectures import OPAQUE, module_name, quote
 from .mathlib import fence
+from .stacks import comment, literal
 from .vault import Container, Entry, Leaf, chunk, slugify
 
 GITHUB = "https://github.com"
@@ -71,9 +77,19 @@ class Library:
     plan_headings: re.Pattern = PLANS
     plan_sentences: re.Pattern = PLAN_SENTENCE
     plan_moving: re.Pattern = UPSTREAMING
+    # The folders its modules live under when there are several; else its root alone.
+    roots: tuple[str, ...] = ()
+    # What its credit line says is quoted.
+    quotes: str = "The docstrings, Lean statements and README text"
+    # The folders whose docstrings keep their TODO notes, as they describe a TODO command.
+    todo_exempt: tuple[str, ...] = ()
 
     def without_plans(self, markdown: str) -> str:
         return without_plans(markdown, self.plan_headings, self.plan_sentences, self.plan_moving)
+
+    def without_todos(self, markdown: str, file: str = "") -> str:
+        """without_todos() with the library's plan phrases, keeping TODO notes in the folders it exempts."""
+        return without_todos(markdown, self.plan_sentences, notes=not file.startswith(self.todo_exempt) if file else True)
 
 
 def without_plans(markdown: str, headings: re.Pattern = PLANS, sentences: re.Pattern = PLAN_SENTENCE,
@@ -261,9 +277,8 @@ def read(library: Library, checkout: Path, paths: list[str]) -> tuple[dict, list
     lean = sorted(path for path in paths if path.startswith(library.root + "/") and path.endswith(".lean"))
     readmes = sorted(path for path in paths if path.startswith(library.root + "/") and path.endswith("/README.md"))
     wanted = lean + readmes + list(library.required)
-    missing = [path for path in wanted if not (checkout / path).is_file()]
-    if missing:
-        problems.append(f"not checked out: {missing[0]}" + (f" and {len(missing) - 1:,} other files" if len(missing) > 1 else ""))
+    if problem := checked_out(checkout, wanted):
+        problems.append(problem)
         return {}, problems
     if not lean:
         return {}, problems + [f"no Lean file under {library.root}/"]
@@ -286,6 +301,14 @@ def read(library: Library, checkout: Path, paths: list[str]) -> tuple[dict, list
         "modules": modules,
     }
     return record, problems
+
+
+def checked_out(checkout: Path, wanted: list[str]) -> str:
+    """The problem when a file the record needs is not in the checkout, naming the first."""
+    missing = [path for path in wanted if not (checkout / path).is_file()]
+    if not missing:
+        return ""
+    return f"not checked out: {missing[0]}" + (f" and {len(missing) - 1:,} other files" if len(missing) > 1 else "")
 
 
 def counts(modules: list[dict]) -> Counter:
@@ -318,8 +341,18 @@ def blob(library: Library, rev: str, path: str, line: int | None = None) -> str:
     return f"{GITHUB}/{library.repo}/blob/{rev}/{path}" + (f"#L{line}" if line else "")
 
 
+def folder_url(library: Library, rev: str, path: str = "") -> str:
+    return f"{GITHUB}/{library.repo}/tree/{rev}" + (f"/{path}" if path else "")
+
+
 def at(library: Library, rev: str) -> str:
-    return f"[{rev[:8]}]({GITHUB}/{library.repo}/tree/{rev})"
+    return f"[{rev[:8]}]({folder_url(library, rev)})"
+
+
+def pinned(library: Library, text: str, rev: str) -> str:
+    """Quoted text whose links into the repository's master branch point at the pinned commit."""
+    return re.sub(rf"{GITHUB}/{re.escape(library.repo)}/(blob|tree)/master/",
+                  lambda match: f"{GITHUB}/{library.repo}/{match.group(1)}/{rev}/", text)
 
 
 def plural(count: int, word: str, words: str | None = None) -> str:
@@ -422,7 +455,7 @@ def every(node: dict) -> list[dict]:
 
 
 def credit(library: Library, rev: str) -> str:
-    return (f"The docstrings, Lean statements and README text are quoted from [{library.repo}]({GITHUB}/{library.repo}) "
+    return (f"{library.quotes} are quoted from [{library.repo}]({GITHUB}/{library.repo}) "
             f"at commit {at(library, rev)}, under its Apache-2.0 license.")
 
 
@@ -538,3 +571,242 @@ def edges(library: Library, data: dict, leaves: dict[str, Leaf], stats: Counter)
             stats["unrecorded"] += 1
         stats["statement_edges"] += len(leaf.depends)
         stats["proof_edges"] += len(leaf.proof_depends)
+
+
+# What Physlib's chapter reads and renders, shared for the libraries that take it up.
+
+# `class abbrev X := A, B`, which leansource reads as a class named `abbrev`.
+CLASS_ABBREV = re.compile(rf"\bclass[ \t]+abbrev[ \t]+({leansource.NAME})")
+TODOS = re.compile(r"\bTODOs?\b")
+# A TODO note: a block that starts with one.
+TODO_NOTE = re.compile(r"TODOs?\b")
+# A heading over plans, after its section number if it has one.
+PLAN_HEADING = re.compile(r"^(?:[A-Za-z0-9]+(?:\.[A-Za-z0-9]+)*\.[ \t]+)?(?:plans?|future work|todos?|roadmap)\b", re.I)
+HEADING_START = re.compile(r"#{1,6}[ \t]")
+SENTENCE_END = re.compile(r"(?<=[.!?])\s+")
+ABBREVIATION = re.compile(r"\b(?:e\.g|i\.e|cf|resp|vs)\.$")
+BULLET = re.compile(r"^[ \t]*[-*+][ \t]")
+FENCE = re.compile(r"^ {0,3}(?:`{3,}|~{3,})")
+INLINE_LINK = re.compile(r"(?<!!)\[((?:[^\[\]\n]|\[[^\[\]\n]*\])*)\]\(([^()\s]+)\)")
+SCHEME = re.compile(r"^(?:[a-zA-Z][a-zA-Z0-9+.-]*:|#)")
+CUT_MARKS = ("…", "> …")  # a cut mark, as a paragraph and quoted
+
+
+def declared_name(declaration: leansource.Declaration, source: list[str]) -> str:
+    """A declaration's name, a `class abbrev`'s own where leansource reads `abbrev`; *source* is the text's lines."""
+    if declaration.kind == "class" and declaration.name.rsplit(".", 1)[-1] == "abbrev":
+        if match := CLASS_ABBREV.search(source[declaration.line - 1]):
+            return declaration.name.removesuffix("abbrev") + match.group(1)
+    return declaration.name
+
+
+def check_names(library: Library, read_names: set[str], missing: set[str]) -> None:
+    """Refuse a Lean dump that marks over half the names read from the source missing: as the refresh refuses a record
+    that reads under half the last one, the reading, not the library, has gone wrong."""
+    if len(missing & read_names) * 2 > len(read_names):
+        raise ValueError(f"data/{library.id}/deps.json marks {len(missing & read_names):,} of the {len(read_names):,} "
+                         "names read from the source missing, over half")
+
+
+def sentences(paragraph: str) -> list[str]:
+    """A paragraph's sentences, each with the space after it, so that they join to the paragraph; a sentence does not
+    end at an abbreviation such as e.g."""
+    pieces, start = [], 0
+    for match in SENTENCE_END.finditer(paragraph):
+        if not ABBREVIATION.search(paragraph[start:match.start()]):
+            pieces.append(paragraph[start:match.end()])
+            start = match.end()
+    return pieces + ([paragraph[start:]] if start < len(paragraph) else [])
+
+
+def without_cut_sentences(paragraph: str, plans: re.Pattern, todos: re.Pattern = TODOS) -> str:
+    """A paragraph without its sentences about plans, and without what follows the start of the sentence, or of the
+    clause after a semicolon, that mentions a TODO item, each cut marked with …."""
+    kept, marked = "", False
+    for sentence in sentences(paragraph):
+        todo = todos.search(sentence)
+        clauses = [match.start() for match in re.finditer(r";\s", sentence[:todo.start()])] if todo else []
+        if clauses:
+            return kept + sentence[:clauses[-1] + 1] + " …"
+        if todo or plans.search(sentence):
+            if not marked:
+                kept, marked = kept + "… ", True
+            if todo:
+                break
+            continue
+        kept, marked = kept + sentence, False
+    return kept.strip()
+
+
+def without_todos(markdown: str, plans: re.Pattern, notes: bool = True) -> str:
+    """Quoted Markdown without its TODO notes and its sentences about plans (those *plans* matches), each cut marked
+    with …. A paragraph that starts with a TODO note, or whose first sentence is about plans, goes with the list it
+    introduces and every paragraph after it up to the next heading. Otherwise a list item that mentions a TODO item or
+    plans goes whole, and in a paragraph a sentence about plans goes, and so does a sentence that mentions a TODO item
+    with the rest of its paragraph. The map records what the library has, not what it plans. Without *notes*, TODO
+    items are not cut, for text that describes a TODO command."""
+    todos = TODOS if notes else re.compile(r"(?!)")
+    out, cutting = [], False
+    for block in re.split(r"\n[ \t]*\n", markdown.strip()):
+        if HEADING_START.match(block):
+            cutting = False
+        elif cutting:
+            continue
+        else:
+            # The paragraph's first sentence, before any list it introduces.
+            lines = block.strip().split("\n")
+            opening = lines[:next((index for index, line in enumerate(lines) if index and BULLET.match(line)), len(lines))]
+            lead = (sentences("\n".join(opening)) or [""])[0]
+            if (notes and TODO_NOTE.match(block.lstrip())) or plans.search(lead):
+                out.append("…")
+                cutting = True
+                continue
+        if not (todos.search(block) or plans.search(block)):
+            out.append(block)
+            continue
+        items: list[list[str]] = []
+        for line in block.split("\n"):
+            if BULLET.match(line) or not items:
+                items.append([line])
+            else:
+                items[-1].append(line)
+        if len(items) > 1 and all(BULLET.match(item[0]) for item in items):
+            kept = [line for item in items if not (todos.search(text := "\n".join(item)) or plans.search(text))
+                    for line in item]
+            out.append("\n".join(kept) + "\n\n…" if kept else "…")
+        else:
+            out.append(without_cut_sentences(block, plans, todos))
+    return re.sub(r"…(?:\n\n…)+", "…", "\n\n".join(out)).strip()
+
+
+def quoted_prose(markdown: str, here: str = "", keys: dict[str, str] | None = None) -> str:
+    """Prose of the module at *here*, quoted: escaped as literal() escapes it, its inline links kept whole, so an
+    underscore in a link's target stays one. With *keys*, each article's key by file, a link to one of the
+    repository's files, written relative to the module, points at the article of that module here; a link to another
+    path, which is no module of the commit, keeps only its label. A link out of the repository is left for quote() to
+    make text."""
+    links: list[str] = []
+    folder = here.rsplit("/", 1)[0]
+    opaque = [match.span() for match in OPAQUE.finditer(markdown)]
+
+    def keep(match: re.Match) -> str:
+        label, target = match.groups()
+        if any(start <= match.start() < end for start, end in opaque):
+            return match.group()
+        if not SCHEME.match(target):
+            if keys is None:
+                return match.group()
+            path = target.split("#")[0]
+            path = posixpath.normpath(path.lstrip("/") if path.startswith("/") else posixpath.join(folder, path))
+            if path == ".." or path.startswith("../"):
+                return match.group()
+            if path not in keys:
+                return label
+            target = f"trough:{keys[path]}"
+        links.append(f"[{literal(label)}]({target})")
+        return f"\x00{len(links) - 1}\x00"
+
+    text = literal(INLINE_LINK.sub(keep, markdown))
+    return quote(re.sub(r"\x00(\d+)\x00", lambda match: links[int(match.group(1))], text))
+
+
+def doc_markdown(text: str, quoted: Callable[[str], str], plans: re.Pattern) -> list[str]:
+    """A docstring as an article shows it: its headings as the article's, from `##` down, and its prose quoted. A
+    table of contents, which the article's own headings give, is left out, and so is a section headed by a TODO or by
+    plans (Future work, Roadmap), with the TODO notes and sentences about plans without_todos cuts, each such cut
+    marked with …."""
+    parts: list[str] = []
+    prose: list[str] = []
+    skipping, fenced = 0, False
+
+    def flush() -> None:
+        kept = without_todos("\n".join(prose), plans)
+        if kept:
+            parts.append(quoted(kept))
+        prose.clear()
+
+    for line in text.split("\n"):
+        if FENCE.match(line):
+            fenced = not fenced
+        match = None if fenced else HEADING.match(line)
+        if match is None:
+            if not skipping:
+                prose.append(line)
+            continue
+        level, words = len(match.group(1)), match.group(2)
+        if skipping and level > skipping:
+            continue
+        flush()
+        planned = bool(TODOS.search(words) or PLAN_HEADING.match(words))
+        skipping = level if "table of contents" in words.casefold() or planned else 0
+        if planned:
+            parts.append("…")
+        elif not skipping:
+            parts.append("#" * min(max(level, 2), 6) + " " + comment(words))
+    flush()
+    return parts
+
+
+def one_cut(parts: list[str]) -> list[str]:
+    """An article's parts with each run of cut marks, as from docstrings cut whole one after another, made one."""
+    return [part for index, part in enumerate(parts) if not (part in CUT_MARKS and parts[index - 1] in CUT_MARKS)]
+
+
+def closures(graph: dict[str, list[str]]) -> dict[str, set[str]]:
+    """What each node of an acyclic graph reaches through one or more edges."""
+    out: dict[str, set[str]] = {}
+
+    def visit(node: str) -> set[str]:
+        if node not in out:
+            out[node] = set()
+            out[node] = set().union(*({target} | visit(target) for target in graph.get(node, [])))
+        return out[node]
+
+    for node in graph:
+        visit(node)
+    return out
+
+
+def nearest_edges(deps: dict, articles: set[str], order: Callable[[str], object] = str) \
+        -> tuple[dict[str, list[str]], dict[str, list[str]]]:
+    """Each module's nearest dependencies among the modules with an article: those its statements use, without one
+    reached through another's statements, and those only its proofs use, without one reached through any other.
+    A module without an article is passed through, its uses taken as the module's own. *order* sorts each list."""
+    uses = deps["modules"]
+
+    def through(kind: str) -> dict[str, list[str]]:
+        memo: dict[str, set[str]] = {}
+
+        def reached(module: str) -> set[str]:
+            if module not in memo:
+                memo[module] = set()
+                found: set[str] = set()
+                direct = uses.get(module, {}).get(kind, [])
+                if kind == "proof":
+                    direct = [*direct, *uses.get(module, {}).get("statement", [])]
+                for target in direct:
+                    found |= {target} if target in articles else reached(target)
+                memo[module] = found
+            return memo[module]
+
+        out = {}
+        for module in articles:
+            found: set[str] = set()
+            for target in uses.get(module, {}).get(kind, []):
+                found |= {target} if target in articles else reached(target)
+            out[module] = sorted(found - {module}, key=order)
+        return out
+
+    statement = through("statement")
+    proof = {module: [target for target in targets if target not in set(statement[module])]
+             for module, targets in through("proof").items()}
+    by_statement = closures(statement)
+    either = {module: statement[module] + proof[module] for module in articles}
+    by_either = closures(either)
+    nearest = {module: [target for target in targets
+                        if not any(target in by_statement[other] for other in targets if other != target)]
+               for module, targets in statement.items()}
+    proof_nearest = {module: [target for target in targets
+                              if not any(target in by_either[other] for other in either[module] if other != target)]
+                     for module, targets in proof.items()}
+    return nearest, proof_nearest
