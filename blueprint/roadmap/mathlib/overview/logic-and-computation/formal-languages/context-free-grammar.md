@@ -13,5 +13,5 @@ ContextFreeGrammar.{u_1} (T : Type u_1) : Type (max 1 u_1)
 ## Sources
 
 - [Mathlib documentation: `ContextFreeGrammar`](https://leanprover-community.github.io/mathlib4_docs/Mathlib/Computability/ContextFreeGrammar.html#ContextFreeGrammar)
-- [Source of `ContextFreeGrammar` in Mathlib/Computability/ContextFreeGrammar.lean](https://github.com/leanprover-community/mathlib4/blob/9bac2d0692944a775113f7c130fd5e5b4608a854/Mathlib/Computability/ContextFreeGrammar.lean#L44)
-- [Mathlib overview: Logic and computation › Formal languages](https://github.com/leanprover-community/mathlib4/blob/9bac2d0692944a775113f7c130fd5e5b4608a854/docs/overview.yaml#L621)
+- [Source of `ContextFreeGrammar` in Mathlib/Computability/ContextFreeGrammar.lean](https://github.com/leanprover-community/mathlib4/blob/15cf10d19dfd4cdee9602318e271fa3ce99c454d/Mathlib/Computability/ContextFreeGrammar.lean#L44)
+- [Mathlib overview: Logic and computation › Formal languages](https://github.com/leanprover-community/mathlib4/blob/15cf10d19dfd4cdee9602318e271fa3ce99c454d/docs/overview.yaml#L621)

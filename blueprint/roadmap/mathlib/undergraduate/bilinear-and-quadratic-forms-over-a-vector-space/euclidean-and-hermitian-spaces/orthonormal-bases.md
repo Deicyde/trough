@@ -26,5 +26,5 @@ maximal_orthonormal_iff_basis_of_finiteDimensional.{u_1, u_2} {𝕜 : Type u_1} 
 ## Sources
 
 - [Mathlib documentation: `maximal_orthonormal_iff_basis_of_finiteDimensional`](https://leanprover-community.github.io/mathlib4_docs/Mathlib/Analysis/InnerProductSpace/Projection/FiniteDimensional.html#maximal_orthonormal_iff_basis_of_finiteDimensional)
-- [Source of `maximal_orthonormal_iff_basis_of_finiteDimensional` in Mathlib/Analysis/InnerProductSpace/Projection/FiniteDimensional.lean](https://github.com/leanprover-community/mathlib4/blob/9bac2d0692944a775113f7c130fd5e5b4608a854/Mathlib/Analysis/InnerProductSpace/Projection/FiniteDimensional.lean#L402)
-- [Mathlib undergraduate list: Bilinear and Quadratic Forms Over a Vector Space › Euclidean and Hermitian spaces](https://github.com/leanprover-community/mathlib4/blob/9bac2d0692944a775113f7c130fd5e5b4608a854/docs/undergrad.yaml#L221)
+- [Source of `maximal_orthonormal_iff_basis_of_finiteDimensional` in Mathlib/Analysis/InnerProductSpace/Projection/FiniteDimensional.lean](https://github.com/leanprover-community/mathlib4/blob/15cf10d19dfd4cdee9602318e271fa3ce99c454d/Mathlib/Analysis/InnerProductSpace/Projection/FiniteDimensional.lean#L402)
+- [Mathlib undergraduate list: Bilinear and Quadratic Forms Over a Vector Space › Euclidean and Hermitian spaces](https://github.com/leanprover-community/mathlib4/blob/15cf10d19dfd4cdee9602318e271fa3ce99c454d/docs/undergrad.yaml#L221)

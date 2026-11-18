@@ -16,6 +16,6 @@ ProbabilityTheory.poissonMeasure (r : NNReal) : MeasureTheory.Measure ℕ
 ## Sources
 
 - [Mathlib documentation: `ProbabilityTheory.poissonMeasure`](https://leanprover-community.github.io/mathlib4_docs/Mathlib/Probability/Distributions/Poisson/Basic.html#ProbabilityTheory.poissonMeasure)
-- [Source of `ProbabilityTheory.poissonMeasure` in Mathlib/Probability/Distributions/Poisson/Basic.lean](https://github.com/leanprover-community/mathlib4/blob/9bac2d0692944a775113f7c130fd5e5b4608a854/Mathlib/Probability/Distributions/Poisson/Basic.lean#L37)
-- [Mathlib overview: Probability Theory › Random variables and their laws](https://github.com/leanprover-community/mathlib4/blob/9bac2d0692944a775113f7c130fd5e5b4608a854/docs/overview.yaml#L409)
-- [Mathlib undergraduate list: Probability Theory › Random variables and their laws](https://github.com/leanprover-community/mathlib4/blob/9bac2d0692944a775113f7c130fd5e5b4608a854/docs/undergrad.yaml#L569)
+- [Source of `ProbabilityTheory.poissonMeasure` in Mathlib/Probability/Distributions/Poisson/Basic.lean](https://github.com/leanprover-community/mathlib4/blob/15cf10d19dfd4cdee9602318e271fa3ce99c454d/Mathlib/Probability/Distributions/Poisson/Basic.lean#L37)
+- [Mathlib overview: Probability Theory › Random variables and their laws](https://github.com/leanprover-community/mathlib4/blob/15cf10d19dfd4cdee9602318e271fa3ce99c454d/docs/overview.yaml#L409)
+- [Mathlib undergraduate list: Probability Theory › Random variables and their laws](https://github.com/leanprover-community/mathlib4/blob/15cf10d19dfd4cdee9602318e271fa3ce99c454d/docs/undergrad.yaml#L569)

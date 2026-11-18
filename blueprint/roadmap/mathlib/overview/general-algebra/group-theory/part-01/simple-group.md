@@ -126,5 +126,5 @@ groups covers only $n = 2$.
 ## Sources
 
 - [Mathlib documentation: `IsSimpleGroup`](https://leanprover-community.github.io/mathlib4_docs/Mathlib/GroupTheory/Subgroup/Simple.html#IsSimpleGroup)
-- [Source of `IsSimpleGroup` in Mathlib/GroupTheory/Subgroup/Simple.lean](https://github.com/leanprover-community/mathlib4/blob/9bac2d0692944a775113f7c130fd5e5b4608a854/Mathlib/GroupTheory/Subgroup/Simple.lean#L36)
-- [Mathlib overview: General algebra › Group theory](https://github.com/leanprover-community/mathlib4/blob/9bac2d0692944a775113f7c130fd5e5b4608a854/docs/overview.yaml#L41)
+- [Source of `IsSimpleGroup` in Mathlib/GroupTheory/Subgroup/Simple.lean](https://github.com/leanprover-community/mathlib4/blob/15cf10d19dfd4cdee9602318e271fa3ce99c454d/Mathlib/GroupTheory/Subgroup/Simple.lean#L35)
+- [Mathlib overview: General algebra › Group theory](https://github.com/leanprover-community/mathlib4/blob/15cf10d19dfd4cdee9602318e271fa3ce99c454d/docs/overview.yaml#L41)

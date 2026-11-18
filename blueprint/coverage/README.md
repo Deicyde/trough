@@ -7,7 +7,7 @@ Each library is a row. A mapped library has one row per source it is mapped from
 | Mathlib / Mathlib overview | `DECOMPOSED` | [512 of 512 list items](../roadmap/mathlib/overview/README.md) in Mathlib, one article per concept. |
 | Mathlib / Undergraduate mathematics | `DECOMPOSED` | [399 of 566 list items](../roadmap/mathlib/undergraduate/README.md) in Mathlib, one article per concept. |
 | Mathlib / Freek Wiedijk's 100 theorems | `DECOMPOSED` | [79 of 100 list items](../roadmap/mathlib/hundred-theorems/README.md) in Mathlib, one article per concept. |
-| Mathlib / 1000+ theorems | `DECOMPOSED` | [218 of 1,199 list items](../roadmap/mathlib/thousand-plus/README.md) in Mathlib, one article per concept. |
+| Mathlib / 1000+ theorems | `DECOMPOSED` | [219 of 1,199 list items](../roadmap/mathlib/thousand-plus/README.md) in Mathlib, one article per concept. |
 | Fermat's Last Theorem (Imperial) | `DECOMPOSED` | [172 blueprint nodes in Lean](../roadmap/flt/README.md), one article per node. |
 | PNT+ | `DECOMPOSED` | [383 blueprint nodes in Lean](../roadmap/pnt-plus/README.md), one article per node. |
 | Polynomial Freiman-Ruzsa | `DECOMPOSED` | [213 blueprint nodes in Lean](../roadmap/pfr/README.md), one article per node. |
@@ -64,9 +64,8 @@ Each library is a row. A mapped library has one row per source it is mapped from
 | Classification of Finite Simple Groups (Axiom) | `DECOMPOSED` | [The top theorem, its reduction to 9 cases and the theorem for each case, and 110 milestone modules](../roadmap/cfsg/README.md), one article each, with their Lean statements. |
 | The Stacks Project in Lean (Axiom) | `DECOMPOSED` | [2,906 sections of the Stacks Project](../roadmap/stacks/README.md) with a tag that a declaration carries, one article each, with a block per tag. |
 | ATLAS: textbook mathematics in Lean (Meta) | `DECOMPOSED` | [3,607 topics of ATLAS's vault](../roadmap/atlas/README.md), one article each, with a block per result. |
-| Satellite projects | `DECOMPOSED` | 7 project cards, each in a projects box on the page of the library it builds on ([Projects building on General algebra (2)](../roadmap/mathlib/overview/general-algebra/projects/README.md), [Projects building on Linear algebra (1)](../roadmap/mathlib/overview/linear-algebra/projects/README.md), [Projects building on Analysis (3)](../roadmap/mathlib/overview/analysis/projects/README.md), [Projects building on Combinatorics (1)](../roadmap/mathlib/overview/combinatorics/projects/README.md), [Projects building on Logic and computation (1)](../roadmap/mathlib/overview/logic-and-computation/projects/README.md), [Projects building on PNT+ (1)](../roadmap/pnt-plus/projects/README.md)); 3 more listed there without a named main result. |
+| OpenAI Math: a model's research manuscripts and their Lean (OpenAI) | `DECOMPOSED` | [373 result families](../roadmap/openai-math/README.md), one article each, with a block per manuscript and per formalized result. |
+| CSLib | `INVENTORIED` | [301 modules](../roadmap/cslib/README.md), one article each, with a block per public declaration. |
 | Physlib | `DEFERRED` | Planned map, by documented declaration: One article per documented declaration, grouped by physics area; granularity to be checked against a docstring count. |
-| CSLib | `DEFERRED` | Planned map, by documented declaration: One article per documented public declaration. |
 | Foundation | `DEFERRED` | Planned map, by documented declaration: One article per documented declaration; the Zoo's inclusion diagrams between logics as edges. |
 | Analysis I companion | `DEFERRED` | Planned map, by textbook section: One article per textbook section (the Section_X_Y modules). |
-| OpenAI Math | `DEFERRED` | Planned map, by result family: One article per result family in CONTENTS.md, joined to the 208 formalization.yaml main results. |

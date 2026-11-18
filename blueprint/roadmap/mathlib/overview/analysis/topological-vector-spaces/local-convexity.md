@@ -18,5 +18,5 @@ LocallyConvexSpace.{u_1, u_2} (𝕜 : Type u_1) (E : Type u_2) [Semiring 𝕜] [
 ## Sources
 
 - [Mathlib documentation: `LocallyConvexSpace`](https://leanprover-community.github.io/mathlib4_docs/Mathlib/Topology/Algebra/Module/LocallyConvex.html#LocallyConvexSpace)
-- [Source of `LocallyConvexSpace` in Mathlib/Topology/Algebra/Module/LocallyConvex.lean](https://github.com/leanprover-community/mathlib4/blob/9bac2d0692944a775113f7c130fd5e5b4608a854/Mathlib/Topology/Algebra/Module/LocallyConvex.lean#L48)
-- [Mathlib overview: Analysis › Topological vector spaces](https://github.com/leanprover-community/mathlib4/blob/9bac2d0692944a775113f7c130fd5e5b4608a854/docs/overview.yaml#L274)
+- [Source of `LocallyConvexSpace` in Mathlib/Topology/Algebra/Module/LocallyConvex.lean](https://github.com/leanprover-community/mathlib4/blob/15cf10d19dfd4cdee9602318e271fa3ce99c454d/Mathlib/Topology/Algebra/Module/LocallyConvex.lean#L47)
+- [Mathlib overview: Analysis › Topological vector spaces](https://github.com/leanprover-community/mathlib4/blob/15cf10d19dfd4cdee9602318e271fa3ce99c454d/docs/overview.yaml#L274)

@@ -37,8 +37,8 @@ MeasureTheory.tendstoInMeasure_iff_tendsto_Lp.{u_1, u_2} {α : Type u_1} {β : T
 ## Sources
 
 - [Mathlib documentation: `MeasureTheory.tendstoInMeasure_iff_tendsto_Lp`](https://leanprover-community.github.io/mathlib4_docs/Mathlib/MeasureTheory/Function/UnifTight.html#MeasureTheory.tendstoInMeasure_iff_tendsto_Lp)
-- [Source of `MeasureTheory.tendstoInMeasure_iff_tendsto_Lp` in Mathlib/MeasureTheory/Function/UnifTight.lean](https://github.com/leanprover-community/mathlib4/blob/9bac2d0692944a775113f7c130fd5e5b4608a854/Mathlib/MeasureTheory/Function/UnifTight.lean#L362)
-- [1000+ theorems list: Q11352023](https://github.com/leanprover-community/mathlib4/blob/9bac2d0692944a775113f7c130fd5e5b4608a854/docs/1000.yaml#L4046)
+- [Source of `MeasureTheory.tendstoInMeasure_iff_tendsto_Lp` in Mathlib/MeasureTheory/Function/UnifTight.lean](https://github.com/leanprover-community/mathlib4/blob/15cf10d19dfd4cdee9602318e271fa3ce99c454d/Mathlib/MeasureTheory/Function/UnifTight.lean#L362)
+- [1000+ theorems list: Q11352023](https://github.com/leanprover-community/mathlib4/blob/15cf10d19dfd4cdee9602318e271fa3ce99c454d/docs/1000.yaml#L4049)
 - [1000+ theorems project: Q11352023](https://1000-plus.github.io/all.html?length=-1#Q11352023)
 - [Wikipedia: Vitali convergence theorem](https://en.wikipedia.org/wiki/Vitali_convergence_theorem)
 - [Wikidata: Q11352023](https://www.wikidata.org/wiki/Q11352023)

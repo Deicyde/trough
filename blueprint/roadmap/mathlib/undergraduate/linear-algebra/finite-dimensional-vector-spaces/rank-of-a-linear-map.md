@@ -16,5 +16,5 @@ LinearMap.rank.{u, v, v'} {K : Type u} {V : Type v} {V' : Type v'} [Semiring K] 
 ## Sources
 
 - [Mathlib documentation: `LinearMap.rank`](https://leanprover-community.github.io/mathlib4_docs/Mathlib/LinearAlgebra/Dimension/LinearMap.html#LinearMap.rank)
-- [Source of `LinearMap.rank` in Mathlib/LinearAlgebra/Dimension/LinearMap.lean](https://github.com/leanprover-community/mathlib4/blob/9bac2d0692944a775113f7c130fd5e5b4608a854/Mathlib/LinearAlgebra/Dimension/LinearMap.lean#L39)
-- [Mathlib undergraduate list: Linear algebra › Finite-dimensional vector spaces](https://github.com/leanprover-community/mathlib4/blob/9bac2d0692944a775113f7c130fd5e5b4608a854/docs/undergrad.yaml#L31)
+- [Source of `LinearMap.rank` in Mathlib/LinearAlgebra/Dimension/LinearMap.lean](https://github.com/leanprover-community/mathlib4/blob/15cf10d19dfd4cdee9602318e271fa3ce99c454d/Mathlib/LinearAlgebra/Dimension/LinearMap.lean#L39)
+- [Mathlib undergraduate list: Linear algebra › Finite-dimensional vector spaces](https://github.com/leanprover-community/mathlib4/blob/15cf10d19dfd4cdee9602318e271fa3ce99c454d/docs/undergrad.yaml#L31)

@@ -15,5 +15,5 @@ GromovHausdorff.GHSpace : Type
 ## Sources
 
 - [Mathlib documentation: `GromovHausdorff.GHSpace`](https://leanprover-community.github.io/mathlib4_docs/Mathlib/Topology/MetricSpace/GromovHausdorff.html#GromovHausdorff.GHSpace)
-- [Source of `GromovHausdorff.GHSpace` in Mathlib/Topology/MetricSpace/GromovHausdorff.lean](https://github.com/leanprover-community/mathlib4/blob/9bac2d0692944a775113f7c130fd5e5b4608a854/Mathlib/Topology/MetricSpace/GromovHausdorff.lean#L85)
-- [Mathlib overview: Topology › Metric spaces](https://github.com/leanprover-community/mathlib4/blob/9bac2d0692944a775113f7c130fd5e5b4608a854/docs/overview.yaml#L270)
+- [Source of `GromovHausdorff.GHSpace` in Mathlib/Topology/MetricSpace/GromovHausdorff.lean](https://github.com/leanprover-community/mathlib4/blob/15cf10d19dfd4cdee9602318e271fa3ce99c454d/Mathlib/Topology/MetricSpace/GromovHausdorff.lean#L84)
+- [Mathlib overview: Topology › Metric spaces](https://github.com/leanprover-community/mathlib4/blob/15cf10d19dfd4cdee9602318e271fa3ce99c454d/docs/overview.yaml#L270)

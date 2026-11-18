@@ -27,5 +27,5 @@ SchwartzMap.convolution.{u_1, u_3, u_5, u_6, u_7} {𝕜 : Type u_1} {E : Type u_
 ## Sources
 
 - [Mathlib documentation: `SchwartzMap.convolution`](https://leanprover-community.github.io/mathlib4_docs/Mathlib/Analysis/Fourier/Convolution.html#SchwartzMap.convolution)
-- [Source of `SchwartzMap.convolution` in Mathlib/Analysis/Fourier/Convolution.lean](https://github.com/leanprover-community/mathlib4/blob/9bac2d0692944a775113f7c130fd5e5b4608a854/Mathlib/Analysis/Fourier/Convolution.lean#L141)
-- [Mathlib undergraduate list: Distribution calculus › Spaces $\mathcal{S}(\R^d)$](https://github.com/leanprover-community/mathlib4/blob/9bac2d0692944a775113f7c130fd5e5b4608a854/docs/undergrad.yaml#L612)
+- [Source of `SchwartzMap.convolution` in Mathlib/Analysis/Fourier/Convolution.lean](https://github.com/leanprover-community/mathlib4/blob/15cf10d19dfd4cdee9602318e271fa3ce99c454d/Mathlib/Analysis/Fourier/Convolution.lean#L140)
+- [Mathlib undergraduate list: Distribution calculus › Spaces $\mathcal{S}(\R^d)$](https://github.com/leanprover-community/mathlib4/blob/15cf10d19dfd4cdee9602318e271fa3ce99c454d/docs/undergrad.yaml#L612)

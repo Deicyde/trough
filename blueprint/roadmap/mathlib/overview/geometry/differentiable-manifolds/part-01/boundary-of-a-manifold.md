@@ -20,5 +20,5 @@ ModelWithCorners.boundary.{u_1, u_2, u_3, u_4} {𝕜 : Type u_1} [NontriviallyNo
 ## Sources
 
 - [Mathlib documentation: `ModelWithCorners.boundary`](https://leanprover-community.github.io/mathlib4_docs/Mathlib/Geometry/Manifold/IsManifold/InteriorBoundary.html#ModelWithCorners.boundary)
-- [Source of `ModelWithCorners.boundary` in Mathlib/Geometry/Manifold/IsManifold/InteriorBoundary.lean](https://github.com/leanprover-community/mathlib4/blob/9bac2d0692944a775113f7c130fd5e5b4608a854/Mathlib/Geometry/Manifold/IsManifold/InteriorBoundary.lean#L111)
-- [Mathlib overview: Geometry › Differentiable manifolds](https://github.com/leanprover-community/mathlib4/blob/9bac2d0692944a775113f7c130fd5e5b4608a854/docs/overview.yaml#L447)
+- [Source of `ModelWithCorners.boundary` in Mathlib/Geometry/Manifold/IsManifold/InteriorBoundary.lean](https://github.com/leanprover-community/mathlib4/blob/15cf10d19dfd4cdee9602318e271fa3ce99c454d/Mathlib/Geometry/Manifold/IsManifold/InteriorBoundary.lean#L110)
+- [Mathlib overview: Geometry › Differentiable manifolds](https://github.com/leanprover-community/mathlib4/blob/15cf10d19dfd4cdee9602318e271fa3ce99c454d/docs/overview.yaml#L447)

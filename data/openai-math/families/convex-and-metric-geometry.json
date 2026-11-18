@@ -1,0 +1,1185 @@
+{
+ "schema": "trough-openai-math/v1",
+ "rev": "4eaee87548250b2682affda7d05d947c05554bae",
+ "families": [
+  {
+   "number": "087",
+   "title": "The Mahler conjectures, functional inequalities and polar-product symplectic width",
+   "description": "Resolves the symmetric and nonsymmetric geometric Mahler conjectures in every dimension, with Hanner polytopes and simplices as the respective volume-product minimizers and all equality cases classified. The corresponding sharp functional Mahler inequalities also hold. For *n* ≥ 2, every symmetric polar product $K\\times K^\\circ$ in dimension $2n$ has Gromov width 4.",
+   "doc": "lean/docs/087.md",
+   "manuscripts": [
+    {
+     "title": "The symmetric Mahler conjecture and its equality cases",
+     "path": "preprints/The-symmetric-Mahler-conjecture-and-its-equality-cases-September-22-2026/paper.pdf",
+     "note": "",
+     "abstract": "We resolve the symmetric Mahler conjecture positively, including its equality classification. Every origin-symmetric convex body in ℝ$^{n}$ has volume product at least $4^n/n!$, with equality exactly for invertible linear images of Hanner polytopes."
+    },
+    {
+     "title": "The Mahler Conjecture for General Convex Bodies",
+     "path": "preprints/The-Mahler-Conjecture-for-General-Convex-Bodies-September-22-2026/paper.pdf",
+     "note": "",
+     "abstract": "We resolve the Mahler conjecture for general convex bodies positively. For every convex body $K\\subset\\mathbb R^n$, *n* ≥ 1, with Santaló point $s(K)$, $|K|\\,|(K-s(K))^\\circ|\\ge (n+1)^{n+1}/(n!)^2$, with equality exactly for simplices."
+    },
+    {
+     "title": "Symplectic Balls in Symmetric Polar Products",
+     "path": "preprints/Symplectic-Balls-in-Symmetric-Polar-Products-September-22-2026/paper.pdf",
+     "note": "",
+     "abstract": "For every integer *n* ≥ 2 and every origin-symmetric convex body $K\\subset\\mathbb R^n$, we prove that the Gromov width of $\\mathop{\\mathrm{int}}\\nolimits K\\times\\mathop{\\mathrm{int}}\\nolimits K^\\circ$ is 4. We construct smooth symplectic embeddings of standard balls of every capacity $0\\lt c\\lt 4$ into this polar product. Volume preservation then resolves the symmetric Mahler conjecture positively in every dimension."
+    }
+   ],
+   "lean": {
+    "path": "lean/docs/087.md",
+    "title": "The Mahler conjectures, functional inequalities and polar-product symplectic width",
+    "papers": [
+     "preprints/The-symmetric-Mahler-conjecture-and-its-equality-cases-September-22-2026/paper.pdf",
+     "preprints/The-Mahler-Conjecture-for-General-Convex-Bodies-September-22-2026/paper.pdf",
+     "preprints/Symplectic-Balls-in-Symmetric-Polar-Products-September-22-2026/paper.pdf"
+    ],
+    "scope": "The symmetric Mahler conjecture predicts $|K||K^\\circ|\\ge4^n/n!$ for every origin-symmetric convex body $K\\subset\\mathbb R^n$. The formalization establishes this for every $n\\ge1$ and characterizes equality exactly by invertible linear images of Hanner bodies, built from intervals using Cartesian products and convex-hull joins.\n\nThe nonsymmetric Mahler conjecture and the functional inequalities are not included.\n\nThe general Mahler conjecture gives a sharp lower bound for the volume product of a convex body and its polar. For every $n\\ge1$ and compact convex body $K\\subset\\mathbb R^n$ with nonempty interior, the formalization proves\n$\\inf_{z\\in\\mathrm{int}\\,K}|K|\\,|(K-z)^\\circ|\\ge (n+1)^{n+1}/(n!)^2$.\nEquality holds exactly when $K$ is a simplex. The paper's functional inequality is outside this selected statement.\n\nFor an origin-symmetric convex body $K\\subset\\mathbb R^n$, $n\\ge2$, the formalized result determines the symplectic ball capacity of $\\mathrm{int}\\,K\\times\\mathrm{int}\\,K^\\circ$: its Gromov width is $4$, and every ball of capacity $0<c<4$ embeds symplectically into it. The normalization assigns capacity $\\pi r^2$ to a ball of radius $r$.\n\nNo boundary smoothness or strict convexity is assumed. An embedding at capacity exactly $4$ is not asserted.",
+    "results": [
+     {
+      "label": "Symmetric Mahler inequality",
+      "challenge": "lean/ComparatorChallenges/MahlerConjecture.lean",
+      "config": "lean/ComparatorChallenges/MahlerConjecture.json",
+      "main": true,
+      "statements": [
+       {
+        "name": "OAI.SymmetricMahler.symmetric_mahler",
+        "role": "theorem",
+        "kind": "theorem",
+        "line": 15,
+        "statement": "theorem symmetric_mahler {n : ℕ} (hn : 1 ≤ n)\n    {K : Set (Fin n → ℝ)} (hK : IsCompact K) (hconv : Convex ℝ K)\n    (hsym : ∀ x ∈ K, -x ∈ K) (hint : (interior K).Nonempty) :\n    (4:ℝ)^n/(Nat.factorial n:ℝ) ≤\n      (volume K).toReal*(volume (coordinatePolar K)).toReal",
+        "proof": {
+         "file": "lean/OAI/Analysis/Mahler/MainTheorem.lean",
+         "line": 12,
+         "kind": "theorem",
+         "sorry": false
+        },
+        "module": "lean/OAI/Analysis/Mahler/MainTheorem.lean",
+        "main": true
+       }
+      ]
+     },
+     {
+      "label": "Symmetric Mahler equality characterization",
+      "challenge": "lean/ComparatorChallenges/SymmetricMahlerEquality.lean",
+      "config": "lean/ComparatorChallenges/SymmetricMahlerEquality.json",
+      "main": true,
+      "statements": [
+       {
+        "name": "OAI.SymmetricMahler.symmetric_mahler_equality",
+        "role": "theorem",
+        "kind": "theorem",
+        "line": 43,
+        "statement": "theorem symmetric_mahler_equality {n : ℕ} (hn : 1 ≤ n)\n    {K : Set (Fin n → ℝ)} (hK : IsCompact K) (hconv : Convex ℝ K)\n    (hsym : ∀ x ∈ K, -x ∈ K) (hint : (interior K).Nonempty) :\n    ((volume K).toReal * (volume (coordinatePolar K)).toReal =\n      (4 : ℝ)^n / (Nat.factorial n : ℝ)) ↔ IsLinearHanner K",
+        "proof": {
+         "file": "lean/OAI/Analysis/Mahler/Classification.lean",
+         "line": 534,
+         "kind": "theorem",
+         "sorry": false
+        },
+        "module": "lean/OAI/Analysis/Mahler/Classification.lean",
+        "main": true
+       }
+      ]
+     },
+     {
+      "label": "General Mahler inequality and simplex equality cases",
+      "challenge": "lean/ComparatorChallenges/GeneralMahler.lean",
+      "config": "lean/ComparatorChallenges/GeneralMahler.json",
+      "main": false,
+      "statements": [
+       {
+        "name": "OAI.GeneralMahler.general_mahler",
+        "role": "theorem",
+        "kind": "theorem",
+        "line": 24,
+        "statement": "theorem general_mahler {n : ℕ} (hn : 1 ≤ n)\n    (K : Set (EuclideanSpace ℝ (Fin n)))\n    (hcompact : IsCompact K) (hconvex : Convex ℝ K)\n    (hinterior : (interior K).Nonempty) :\n    ((n : ℝ) + 1) ^ (n + 1) / (Nat.factorial n : ℝ) ^ 2 ≤ volumeProduct K ∧\n      (volumeProduct K = ((n : ℝ) + 1) ^ (n + 1) / (Nat.factorial n : ℝ) ^ 2 ↔\n        ∃ vertices : Fin (n + 1) → EuclideanSpace ℝ (Fin n),\n          AffineIndependent ℝ vertices ∧ K = convexHull ℝ (range vertices))",
+        "proof": {
+         "file": "lean/OAI/Geometry/Convex/GeneralMahler/Theorem.lean",
+         "line": 17,
+         "kind": "theorem",
+         "sorry": false
+        },
+        "module": "lean/OAI/Geometry/Convex/GeneralMahler/Theorem.lean",
+        "main": false
+       }
+      ]
+     },
+     {
+      "label": "Gromov width of symmetric polar products",
+      "challenge": "lean/ComparatorChallenges/SymmetricPolar.lean",
+      "config": "lean/ComparatorChallenges/SymmetricPolar.json",
+      "main": true,
+      "statements": [
+       {
+        "name": "OAI.SymmetricPolar.symmetric_polar_main",
+        "role": "theorem",
+        "kind": "theorem",
+        "line": 40,
+        "statement": "theorem symmetric_polar_main {n : ℕ} (hn : 2 ≤ n)\n    (K : Set (Position n)) (hK : IsSymmetricConvexBody K) :\n    gromovWidth (polarProduct K) = 4 ∧\n      ∀ c : ℝ, 0 < c → c < 4 →\n        HasSymplecticEmbedding (capacityBall n c) (polarProduct K)",
+        "proof": {
+         "file": "lean/OAI/Geometry/PolarProducts/Main.lean",
+         "line": 7,
+         "kind": "theorem",
+         "sorry": false
+        },
+        "module": "lean/OAI/Geometry/PolarProducts/Main.lean",
+        "main": true
+       }
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "number": "088",
+   "title": "Sharp projection-body inequalities and a counterexample to simplex maximization",
+   "description": "Proves Petty's projection-volume conjecture in the remaining dimensions *n* ≥ 4: ellipsoids uniquely minimize projection-body volume at fixed body volume. Also establishes the full Lutwak–Petty projection inequalities. In contrast, products of simplices exceed Brannen's proposed simplex maximum for normalized projection-body volume by an exponential factor in every sufficiently large dimension.",
+   "doc": "lean/docs/088.md",
+   "manuscripts": [
+    {
+     "title": "Petty’s projection-volume conjecture in dimensions at least four",
+     "path": "preprints/Pettys-projection-volume-conjecture-in-dimensions-at-least-four-September-24-2026/paper.pdf",
+     "note": "",
+     "abstract": "We prove that ellipsoids uniquely minimize the volume of the projection body among convex bodies of fixed volume in every dimension at least four. This proves Petty's projection-volume conjecture in these dimensions."
+    },
+    {
+     "title": "A product counterexample to the simplex maximum for projection-body volume",
+     "path": "preprints/A-product-counterexample-to-the-simplex-maximum-for-projection-body-volume-September-24-2026/paper.pdf",
+     "note": "",
+     "abstract": "The product of two ten-dimensional simplices has larger normalized projection-body volume than a twenty-dimensional simplex. This gives a counterexample to Brannen's proposed simplex maximum."
+    }
+   ],
+   "lean": {
+    "path": "lean/docs/088.md",
+    "title": "Sharp projection-body inequalities and a counterexample to simplex maximization",
+    "papers": [
+     "preprints/Pettys-projection-volume-conjecture-in-dimensions-at-least-four-September-24-2026/paper.pdf",
+     "preprints/A-product-counterexample-to-the-simplex-maximum-for-projection-body-volume-September-24-2026/paper.pdf"
+    ],
+    "scope": "Petty's projection-volume conjecture predicts\n\n$\\displaystyle \\frac{|\\Pi K|}{|K|^{n-1}}\\ge \\kappa_{n-1}^{n}\\kappa_n^{2-n},$\n\nwith equality exactly for ellipsoids; here $\\kappa_j$ is the volume of the Euclidean unit ball in dimension $j$. The formalization establishes this for every convex body $K\\subset\\mathbb R^n$ and every $n\\ge4$.\n\nOther inequalities in the projection-body family are not included.\n\nBrannen's simplex-maximization conjecture predicts that a simplex maximizes normalized projection-body volume $|\\Pi K|/|K|^{n-1}$ in dimension $n$. The formalized counterexample is the product of two ten-dimensional simplices. Its normalized projection volume, divided by that of a twenty-dimensional simplex, is\n\n$\\displaystyle \\frac{22{,}355{,}476}{22{,}020{,}096}>1.$\n\nThus the proposed maximum fails in dimension $20$. The paper's exponential-factor result for every sufficiently large dimension is not included.",
+    "results": [
+     {
+      "label": "Petty's projection-volume inequality",
+      "challenge": "lean/ComparatorChallenges/PettyProjectionVolume.lean",
+      "config": "lean/ComparatorChallenges/PettyProjectionVolume.json",
+      "main": true,
+      "statements": [
+       {
+        "name": "OAI.PettyProjection.petty_projection_volume",
+        "role": "theorem",
+        "kind": "theorem",
+        "line": 45,
+        "statement": "theorem petty_projection_volume (n : ℕ) (hn : 4 ≤ n)\n    (K : Set (Space n)) (hK : IsConvexBody K) :\n    pettyConstant n ≤ projectionRatio K ∧\n      (projectionRatio K = pettyConstant n ↔ IsEllipsoid K)",
+        "proof": {
+         "file": "lean/OAI/Geometry/ProjectionBodies/Main.lean",
+         "line": 11,
+         "kind": "theorem",
+         "sorry": false
+        },
+        "module": "lean/OAI/Geometry/ProjectionBodies/Main.lean",
+        "main": true
+       }
+      ]
+     },
+     {
+      "label": "Failure of the simplex upper bound in dimension 20",
+      "challenge": "lean/ComparatorChallenges/ProjectionCounterexample.lean",
+      "config": "lean/ComparatorChallenges/ProjectionCounterexample.json",
+      "main": true,
+      "statements": [
+       {
+        "name": "OAI.ProjectionCounterexample.universal_simplex_upper_bound_false",
+        "role": "theorem",
+        "kind": "theorem",
+        "line": 37,
+        "statement": "theorem universal_simplex_upper_bound_false :\n    ¬ (∀ P : Set (E 20), IsConvexBody P → ratio P ≤ ratio (simplex 20))",
+        "proof": {
+         "file": "lean/OAI/Geometry/ProjectionBody/Counterexample.lean",
+         "line": 96,
+         "kind": "theorem",
+         "sorry": false
+        },
+        "module": "lean/OAI/Geometry/ProjectionBody/Counterexample.lean",
+        "main": true
+       }
+      ]
+     },
+     {
+      "label": "Explicit product-of-simplices counterexample",
+      "challenge": "lean/ComparatorChallenges/ProjectionVolume.lean",
+      "config": "lean/ComparatorChallenges/ProjectionVolume.json",
+      "main": true,
+      "statements": [
+       {
+        "name": "OAI.Paper092.product_counterexample",
+        "role": "theorem",
+        "kind": "theorem",
+        "line": 45,
+        "statement": "theorem product_counterexample :\n    (IsCompact productWitness ∧ Convex ℝ productWitness ∧\n      (interior productWitness).Nonempty) ∧\n    normalizedProjectionVolume productWitness / simplexConstant 20 =\n      (121 * (Nat.choose 20 10 : ℝ)) / (21 * (2 : ℝ) ^ 20) ∧\n    normalizedProjectionVolume productWitness / simplexConstant 20 =\n      (22355476 : ℝ) / 22020096 ∧\n    1 < normalizedProjectionVolume productWitness / simplexConstant 20 ∧\n    (volume (projectionBody productWitness)).toReal >\n      simplexConstant 20 * (volume productWitness).toReal ^ 19",
+        "proof": {
+         "file": "lean/OAI/Geometry/ProjectionVolume/ProductCounterexample.lean",
+         "line": 31,
+         "kind": "theorem",
+         "sorry": false
+        },
+        "module": "lean/OAI/Geometry/ProjectionVolume/ProductCounterexample.lean",
+        "main": true
+       }
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "number": "089",
+   "title": "Bounded-distortion $L_{1}$ embeddings of planar and bounded-treewidth graphs",
+   "description": "Resolves the planar and bounded-treewidth cases of the Gupta–Newman–Rabinovich–Sinclair conjecture. Shortest-path metrics of finite connected graphs with arbitrary positive edge lengths embed into real $L_{1}$ with universal distortion for planar graphs, and distortion depending only on treewidth for bounded-treewidth graphs. The corresponding multicommodity flow–cut gaps are uniformly bounded.",
+   "doc": "lean/docs/089.md",
+   "manuscripts": [
+    {
+     "title": "Planar Graph Metrics Embed into L1 with Constant Distortion",
+     "path": "preprints/Planar-Graph-Metrics-Embed-into-L1-with-Constant-Distortion-September-23-2026/paper.pdf",
+     "note": "",
+     "abstract": "We prove that every finite connected planar graph with arbitrary positive real edge lengths embeds into real $L_{1}$ with a universal distortion bound. This resolves the planar embedding conjecture positively."
+    },
+    {
+     "title": "L1 Embeddings of Graphs of Bounded Treewidth",
+     "path": "preprints/L1-Embeddings-of-Graphs-of-Bounded-Treewidth-September-23-2026/paper.pdf",
+     "note": "",
+     "abstract": "For every fixed treewidth bound, the shortest-path metrics of finite connected graphs with arbitrary positive real edge lengths embed into real $L_{1}$ with uniformly bounded distortion. This resolves the bounded-treewidth case of the Gupta–Newman–Rabinovich–Sinclair conjecture positively."
+    }
+   ],
+   "lean": {
+    "path": "lean/docs/089.md",
+    "title": "Bounded-distortion <i>L</i><sub>1</sub> embeddings of planar and bounded-treewidth graphs",
+    "papers": [
+     "preprints/Planar-Graph-Metrics-Embed-into-L1-with-Constant-Distortion-September-23-2026/paper.pdf",
+     "preprints/L1-Embeddings-of-Graphs-of-Bounded-Treewidth-September-23-2026/paper.pdf"
+    ],
+    "scope": "The planar case of the Gupta–Newman–Rabinovich–Sinclair embedding problem asks for a universal distortion bound in $L_1$. The formalized result gives one constant $C$ for every finite connected planar graph with arbitrary positive real edge lengths: its weighted shortest-path metric embeds into real $L_1$ with distortion at most $C$. The constant is independent of the number of vertices and the ratios between edge lengths; singleton graphs are included.\n\nThe formalized result gives a uniform $L_1$ embedding bound for each bounded-treewidth class. For every bag-size bound $k\\ge2$, there is a constant $C(k)$ such that the weighted shortest-path metric of every nonempty finite connected graph with a tree decomposition of bag size at most $k$ embeds into finite-dimensional real $L_1$ with distortion at most $C(k)$. Edge lengths may be arbitrary positive real numbers, and the constant is independent of the graph and decomposition size.",
+    "results": [
+     {
+      "label": "Planar graph metrics in $L_1$",
+      "challenge": "lean/ComparatorChallenges/PlanarL1.lean",
+      "config": "lean/ComparatorChallenges/PlanarL1.json",
+      "main": true,
+      "statements": [
+       {
+        "name": "OAI.PlanarL1.planar_graph_metrics_embed_L1",
+        "role": "theorem",
+        "kind": "theorem",
+        "line": 46,
+        "statement": "theorem planar_graph_metrics_embed_L1 : MainStatement",
+        "proof": {
+         "file": "lean/OAI/Combinatorics/PlanarL1/Embedding.lean",
+         "line": 96,
+         "kind": "theorem",
+         "sorry": false
+        },
+        "module": "lean/OAI/Combinatorics/PlanarL1/Embedding.lean",
+        "main": true
+       }
+      ]
+     },
+     {
+      "label": "Bounded-treewidth graph metrics in $L_1$",
+      "challenge": "lean/ComparatorChallenges/BoundedTreewidthL1.lean",
+      "config": "lean/ComparatorChallenges/BoundedTreewidthL1.json",
+      "main": true,
+      "statements": [
+       {
+        "name": "OAI.BoundedTreewidthL1.main_theorem",
+        "role": "theorem",
+        "kind": "theorem",
+        "line": 43,
+        "statement": "theorem main_theorem : MainStatement",
+        "proof": {
+         "file": "lean/OAI/Combinatorics/TreewidthL1/Main.lean",
+         "line": 135,
+         "kind": "theorem",
+         "sorry": false
+        },
+        "module": "lean/OAI/Combinatorics/TreewidthL1/Main.lean",
+        "main": true
+       }
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "number": "090",
+   "title": "Triangular-lattice optimality, long-range Riesz and Coulomb energies, and spherical logarithmic energy",
+   "description": "Proves that the triangular lattice minimizes the lower limit of energy per particle for every nonnegative completely monotone potential of squared distance among locally finite planar configurations of centered-disk density one. It also minimizes unit-background renormalized Riesz energies for $0\\lt s\\lt 2$ and Coulomb energy, resolving Sandier–Serfaty and the two-dimensional Brauchart–Hardin–Saff conjecture on the linear term of optimal spherical logarithmic energy.",
+   "doc": "lean/docs/090.md",
+   "manuscripts": [
+    {
+     "title": "An atomic certificate for triangular-lattice universal optimality",
+     "path": "preprints/An-atomic-certificate-for-triangular-lattice-universal-optimality-September-26-2026/paper.pdf",
+     "note": "",
+     "abstract": "We prove that the density-one triangular lattice minimizes the lower energy per particle for every nonnegative completely monotone function of squared distance, among all locally finite planar configurations of centered disk density one. The comparison includes infinite energies. The proof constructs sharp Gaussian Fourier minorants using an atomic interpolation certificate."
+    },
+    {
+     "title": "Universal optimality of the triangular lattice",
+     "path": "preprints/Universal-optimality-of-the-triangular-lattice-September-23-2026/paper.pdf",
+     "note": "",
+     "abstract": "We prove universal energy minimality for the triangular lattice in the plane. Among locally finite configurations of centered density one, it minimizes the lower limit of centered-ball energy averages for every nonnegative completely monotone function of squared distance, including when the energy is infinite. We also prove triangular minimality for planar logarithmic and Riesz renormalized energies, with $0\\lt s\\lt 2$ in the Riesz case, and the corresponding jellium minima. The proof uses sharp Gaussian Fourier bounds, positive mixtures, and heat-kernel comparison."
+    },
+    {
+     "title": "A sharp Fourier certificate for planar circle packing",
+     "path": "preprints/A-sharp-Fourier-certificate-for-planar-circle-packing-September-23-2026/paper.pdf",
+     "note": "",
+     "abstract": "We resolve the planar Cohn–Elkies sharpness conjecture: the two-point Fourier bound attains the optimal circle-packing density $\\pi/(2\\sqrt3)$. We construct a radial Schwartz certificate and prove its global sign conditions using rigorous interval arithmetic and analytic estimates. The same certificate recovers the classical uniqueness of the triangular packing among periodic equality cases."
+    },
+    {
+     "title": "Triangular minimality for planar Coulomb renormalized energy",
+     "path": "preprints/Triangular-minimality-for-planar-Coulomb-renormalized-energy-September-23-2026/paper.pdf",
+     "note": "",
+     "abstract": "We prove the Sandier–Serfaty conjecture: the triangular lattice of covolume one minimizes planar Coulomb renormalized energy over all admissible curl-free fields with a unit uniform background. Combined with Bétermin and Sandier's asymptotic formula, this also proves the Brauchart–Hardin–Saff conjecture for the linear term of optimal ordered-pair logarithmic energy on the unit two-sphere. The proof uses a direct Voronoi-cell comparison with rigorous interval arithmetic."
+    }
+   ],
+   "lean": {
+    "path": "lean/docs/090.md",
+    "title": "Triangular-lattice optimality, long-range Riesz and Coulomb energies, and spherical logarithmic energy",
+    "papers": [
+     "preprints/An-atomic-certificate-for-triangular-lattice-universal-optimality-September-26-2026/paper.pdf",
+     "preprints/A-sharp-Fourier-certificate-for-planar-circle-packing-September-23-2026/paper.pdf"
+    ],
+    "scope": "The formalization proves that the density-one triangular lattice minimizes lower energy per particle among all locally finite planar configurations of centered-disk density one, for every nonnegative completely monotone function of squared distance. Infinite energies are allowed in the comparison.\n\nIt also constructs sharp radial Schwartz minorants for every Gaussian potential: each minorant lies below the Gaussian, has nonnegative real Fourier transform, agrees with the Gaussian at nonzero triangular-lattice points, and vanishes on nonzero dual-lattice points after Fourier transformation. For the stated parameter range, the formalization includes the explicit atomic interpolation construction.\n\nThe planar Cohn–Elkies sharpness conjecture asks whether the two-point Fourier method attains the optimal circle-packing density. The formalization constructs a radial Schwartz function $f$ on $\\mathbb R^2$ with $\\widehat f(0)=1$, $f(0)=2/\\sqrt3$, $\\widehat f$ real and nonnegative everywhere, and $f(x)\\le0$ whenever $\\|x\\|\\ge1$. These are the sharp Fourier certificate conditions yielding density $\\pi/(2\\sqrt3)$. The separate uniqueness statement for periodic equality cases is outside this selected theorem.",
+    "results": [
+     {
+      "label": "Sharp Gaussian minorants from an atomic certificate",
+      "challenge": "lean/ComparatorChallenges/AtomicGaussian.lean",
+      "config": "lean/ComparatorChallenges/AtomicGaussian.json",
+      "main": false,
+      "statements": [
+       {
+        "name": "OAI.AtomicTriangular.sharp_gaussian_minorants_atomic",
+        "role": "theorem",
+        "kind": "theorem",
+        "line": 239,
+        "statement": "theorem sharp_gaussian_minorants_atomic (α : ℝ) (hα : 0 < α) :\n    ∃ f : SchwartzMap Plane ℝ,\n      Radial f ∧ (∀ x, f x ≤ gaussian α x) ∧\n      (∀ w, (realFourier f w).im = 0 ∧ 0 ≤ (realFourier f w).re) ∧\n      (∀ a ∈ A, a ≠ 0 → f a = gaussian α a) ∧\n      (∀ w ∈ dualA, w ≠ 0 → realFourier f w = 0) ∧\n      (1 ≤ α → Construction.HasAtomicConstruction α f)",
+        "proof": {
+         "file": "lean/OAI/Analysis/Triangular/Main.lean",
+         "line": 75,
+         "kind": "theorem",
+         "sorry": false
+        },
+        "module": "lean/OAI/Analysis/Triangular/Main.lean",
+        "main": false
+       }
+      ]
+     },
+     {
+      "label": "Universal energy minimality of the triangular lattice",
+      "challenge": "lean/ComparatorChallenges/TriangularEnergy.lean",
+      "config": "lean/ComparatorChallenges/TriangularEnergy.json",
+      "main": false,
+      "statements": [
+       {
+        "name": "OAI.AtomicTriangular.universal_energy_minimum",
+        "role": "theorem",
+        "kind": "theorem",
+        "line": 66,
+        "statement": "theorem universal_energy_minimum (g : ℝ → ℝ) (C : Set Plane)\n    (hg : AdmissiblePotential g) (hC : LocallyFinite C) (hd : DensityOne C) :\n    latticeEnergy g ≤ energy g C ∧ latticeEnergy g = energy g A",
+        "proof": {
+         "file": "lean/OAI/Analysis/Triangular/Energy/Universal.lean",
+         "line": 9,
+         "kind": "theorem",
+         "sorry": false
+        },
+        "module": "lean/OAI/Analysis/Triangular/Energy/Universal.lean",
+        "main": false
+       }
+      ]
+     },
+     {
+      "label": "Gaussian Fourier minorants with their construction",
+      "challenge": "lean/ComparatorChallenges/TriangularGaussian.lean",
+      "config": "lean/ComparatorChallenges/TriangularGaussian.json",
+      "main": false,
+      "statements": [
+       {
+        "name": "OAI.AtomicTriangular.sharp_gaussian_minorants_with_construction",
+        "role": "theorem",
+        "kind": "theorem",
+        "line": 263,
+        "statement": "theorem sharp_gaussian_minorants_with_construction (α : ℝ) (hα : 0 < α) :\n    ∃ f : SchwartzMap Plane ℝ,\n      Radial f ∧ (∀ x, f x ≤ gaussian α x) ∧\n      (∀ w, (realFourier f w).im = 0 ∧ 0 ≤ (realFourier f w).re) ∧\n      (∀ a ∈ A, a ≠ 0 → f a = gaussian α a) ∧\n      (∀ w ∈ dualA, w ≠ 0 → realFourier f w = 0) ∧\n      (1 ≤ α → AtomicConstruction α f)",
+        "proof": {
+         "file": "lean/OAI/Analysis/Triangular/GaussianMinorants.lean",
+         "line": 73,
+         "kind": "theorem",
+         "sorry": false
+        },
+        "module": "lean/OAI/Analysis/Triangular/GaussianMinorants.lean",
+        "main": false
+       }
+      ]
+     },
+     {
+      "label": "Sharp Fourier certificate for planar circle packing",
+      "challenge": "lean/ComparatorChallenges/PlanarPacking.lean",
+      "config": "lean/ComparatorChallenges/PlanarPacking.json",
+      "main": false,
+      "statements": [
+       {
+        "name": "OAI.sharp_fourier_certificate",
+        "role": "theorem",
+        "kind": "theorem",
+        "line": 36,
+        "statement": "theorem sharp_fourier_certificate :\n    ∃ f : SchwartzMap SharpPlanar.Plane ℝ, SharpPlanar.SharpCertificate f",
+        "proof": {
+         "file": "lean/OAI/Analysis/PlanarPacking/Main.lean",
+         "line": 32,
+         "kind": "theorem",
+         "sorry": false
+        },
+        "module": "lean/OAI/Analysis/PlanarPacking/Main.lean",
+        "main": false
+       }
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "number": "091",
+   "title": "Logarithmic and $L_{p}$ Brunn–Minkowski inequalities and the B-conjecture",
+   "description": "Proves the logarithmic Brunn–Minkowski inequality for origin-symmetric convex bodies in every dimension, and the scalar-dilation B-conjecture for all even log-concave Radon measures. For Lebesgue volume it also proves the additive $L_{p}$ Brunn–Minkowski inequality for full-dimensional origin-symmetric convex bodies throughout $0\\lt p\\lt 1$.",
+   "doc": "lean/docs/091.md",
+   "manuscripts": [
+    {
+     "title": "The logarithmic Brunn–Minkowski conjecture",
+     "path": "preprints/The-logarithmic-Brunn-Minkowski-conjecture-September-23-2026/paper.pdf",
+     "note": "",
+     "abstract": "We prove the logarithmic Brunn–Minkowski conjecture for arbitrary origin-symmetric convex bodies in every dimension. The theorem also gives the symmetric $L_{p}$ Brunn–Minkowski inequality for every $0\\lt p\\lt 1$. Combined with Saroglou's transfer theorem and a support-subspace reduction, it yields the logarithmic inequality for every even log-concave Radon measure and the scalar-dilation $(B)$-conjecture."
+    }
+   ],
+   "lean": {
+    "path": "lean/docs/091.md",
+    "title": "Logarithmic and <i>L</i><sub><i>p</i></sub> Brunn–Minkowski inequalities and the B-conjecture",
+    "papers": [
+     "preprints/The-logarithmic-Brunn-Minkowski-conjecture-September-23-2026/paper.pdf"
+    ],
+    "scope": "The logarithmic Brunn–Minkowski conjecture asserts that logarithmic interpolation of origin-symmetric convex bodies preserves the geometric-mean lower bound for volume. The formalized result proves, for every dimension $n\\ge1$, such bodies $K,L\\subset\\mathbb R^n$, and $0\\le t\\le1$, that their logarithmic Wulff combination has volume at least $|K|^{1-t}|L|^t$. It assumes neither boundary smoothness nor coordinatewise unconditionality.",
+    "results": [
+     {
+      "label": "Logarithmic Brunn–Minkowski inequality",
+      "challenge": "lean/ComparatorChallenges/LogBrunnMinkowski.lean",
+      "config": "lean/ComparatorChallenges/LogBrunnMinkowski.json",
+      "main": true,
+      "statements": [
+       {
+        "name": "OAI.LogBrunnMinkowski.main",
+        "role": "theorem",
+        "kind": "theorem",
+        "line": 30,
+        "statement": "theorem main (n : ℕ) (hn : 1 ≤ n) (K L : Set (Space n))\n    (hK : IsConvexBody K) (hL : IsConvexBody L)\n    (hsK : OriginSymmetric K) (hsL : OriginSymmetric L)\n    (t : ℝ) (ht0 : 0 ≤ t) (ht1 : t ≤ 1) :\n    (volume K) ^ (1 - t) * (volume L) ^ t ≤ volume (logCombination K L t)",
+        "proof": {
+         "file": "lean/OAI/Geometry/LogVolume/BrunnMinkowski.lean",
+         "line": 24481,
+         "kind": "theorem",
+         "sorry": false
+        },
+        "module": "lean/OAI/Geometry/LogVolume/BrunnMinkowski.lean",
+        "main": true
+       }
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "number": "092",
+   "title": "The optimal order of convex-body covering density",
+   "description": "Determines the optimal worst-case covering density as $\\Theta(n\\log n)$, for both lattice and unrestricted translative coverings. Every convex body in ℝ$^{n}$, *n* ≥ 2, admits a lattice covering of density at most $Cn\\log n$; centrally symmetric examples in every sufficiently large dimension require at least $cn\\log n$ even without the lattice restriction, for absolute $c,C\\gt 0$.",
+   "doc": "lean/docs/092.md",
+   "manuscripts": [
+    {
+     "title": "A single-lattice covering bound of order n log n",
+     "path": "preprints/A-single-lattice-covering-bound-of-order-n-log-n-September-23-2026/paper.pdf",
+     "note": "",
+     "abstract": "Every convex body in ℝ$^{n}$, *n* ≥ 2, admits a covering by translates along one full-rank lattice with density at most $Cn\\log n$, for an absolute constant *C*. No symmetry or boundary regularity is assumed."
+    },
+    {
+     "title": "Translative covering densities of order n log n",
+     "path": "preprints/Translative-covering-densities-of-order-n-log-n-September-23-2026/paper.pdf",
+     "note": "",
+     "abstract": "For every sufficiently large dimension *n*, we construct a centrally symmetric convex body whose translative covering density exceeds $c n\\log n$, where *c* > 0 is absolute. This disproves the existence of a universal linear upper bound and matches the order of Rogers' upper bound."
+    }
+   ],
+   "lean": {
+    "path": "lean/docs/092.md",
+    "title": "The optimal order of convex-body covering density",
+    "papers": [
+     "preprints/A-single-lattice-covering-bound-of-order-n-log-n-September-23-2026/paper.pdf",
+     "preprints/Translative-covering-densities-of-order-n-log-n-September-23-2026/paper.pdf"
+    ],
+    "scope": "The formalized result gives an absolute constant $C>0$ such that every convex body $K\\subset\\mathbb R^n$, $n\\ge2$, admits a covering by translates along one full-rank lattice $L$ with density $|K|/\\mathrm{covol}(L)\\le Cn\\log n$. The covering is exact, and no symmetry, boundary regularity, or volume normalization is assumed.\n\nThe formalization determines the order of the largest covering density in dimension $n$. For all sufficiently large $n$, the suprema of translative covering density and lattice covering density are each bounded above and below by absolute positive multiples of $n\\log n$, both over all convex bodies and over centrally symmetric convex bodies.",
+    "results": [
+     {
+      "label": "Single-lattice covering bound",
+      "challenge": "lean/ComparatorChallenges/SingleLatticeCovering.lean",
+      "config": "lean/ComparatorChallenges/SingleLatticeCovering.json",
+      "main": true,
+      "statements": [
+       {
+        "name": "OAI.SingleLatticeCovering.single_lattice_covering",
+        "role": "theorem",
+        "kind": "theorem",
+        "line": 20,
+        "statement": "theorem single_lattice_covering :\n    ∃ C : ℝ, 0 < C ∧ ∀ (n : ℕ), 2 ≤ n →\n      ∀ (K : Set (Space n)), IsConvexBody K →\n        ∃ (L : Submodule ℤ (Space n)) (_ : DiscreteTopology L),\n          IsZLattice ℝ L ∧ LatticeCovers K L ∧\n            (volume K).toReal / ZLattice.covolume L ≤ C * (n : ℝ) * Real.log (n : ℝ)",
+        "proof": {
+         "file": "lean/OAI/Geometry/LatticeCovering/Main.lean",
+         "line": 25,
+         "kind": "theorem",
+         "sorry": false
+        },
+        "module": "lean/OAI/Geometry/LatticeCovering/Main.lean",
+        "main": true
+       }
+      ]
+     },
+     {
+      "label": "Optimal order for translative and lattice covering-density suprema",
+      "challenge": "lean/ComparatorChallenges/CoveringDensity.lean",
+      "config": "lean/ComparatorChallenges/CoveringDensity.json",
+      "main": false,
+      "statements": [
+       {
+        "name": "OAI.CoveringOrder.optimal_order",
+        "role": "theorem",
+        "kind": "theorem",
+        "line": 113,
+        "statement": "theorem CoveringOrder.optimal_order : CoveringOrder.OptimalOrder",
+        "proof": {
+         "file": "lean/OAI/Geometry/CoveringDensity/Main.lean",
+         "line": 79,
+         "kind": "theorem",
+         "sorry": false
+        },
+        "module": "lean/OAI/Geometry/CoveringDensity/Main.lean",
+        "main": false
+       }
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "number": "093",
+   "title": "Dimension-free logarithmic Sobolev inequality for subgaussian log-concave measures",
+   "description": "Proves a dimension-free logarithmic Sobolev inequality for centered log-concave densities with uniformly subgaussian linear marginals, with constant bounded by a universal multiple of the squared linear subgaussian parameter.",
+   "doc": null,
+   "manuscripts": [
+    {
+     "title": "A dimension-free logarithmic Sobolev inequality for subgaussian log-concave measures",
+     "path": "preprints/A-dimension-free-logarithmic-Sobolev-inequality-for-subgaussian-log-concave-measures-September-23-2026/paper.pdf",
+     "note": "",
+     "abstract": "We prove that every centered log-concave probability measure with a Lebesgue density on ℝ$^{n}$ and linear subgaussian parameter *a* satisfies $\\mathop{\\mathrm{Ent}}\\nolimits _\\mu(f^2)\\le Ca^2\\int|Df|^2\\,d\\mu$ for compactly supported smooth *f*, with one universal constant *C*. This resolves positively the dimension-free logarithmic Sobolev conjecture for subgaussian log-concave measures."
+    }
+   ],
+   "lean": null
+  },
+  {
+   "number": "094",
+   "title": "Subpolynomial dimension reduction in $L_{p}$",
+   "description": "For every fixed $1\\lt p\\lt \\infty$ and distortion *D* > 1, every *n*-point subset of real $L_{p}$ embeds into $\\ell_p^d$ with distortion at most *D* and dimension $d=n^{o(1)}$, answering Naor's sublinear-dimension question for *p* ≠ 2. In contrast, exact embeddings require worst-case dimension $\\Theta(n^2)$ when *p* ≠ 2.",
+   "doc": "lean/docs/094.md",
+   "manuscripts": [
+    {
+     "title": "Subpolynomial dimension reduction in Lp",
+     "path": "preprints/Subpolynomial-dimension-reduction-in-Lp-September-23-2026/paper.pdf",
+     "note": "",
+     "abstract": "For every fixed $1\\lt p\\lt \\infty$ and *D* > 1, every *n*-point subset of a real $L_{p}$ space embeds into $\\ell_p^d$ with distortion at most *D* and subpolynomial dimension $d=n^{o(1)}$. The target has the same exponent *p*, and the embedding need not be linear."
+    }
+   ],
+   "lean": {
+    "path": "lean/docs/094.md",
+    "title": "Subpolynomial dimension reduction in <i>L</i><sub><i>p</i></sub>",
+    "papers": [
+     "preprints/Subpolynomial-dimension-reduction-in-Lp-September-23-2026/paper.pdf"
+    ],
+    "scope": "For $p>1$, $p\\ne2$, the formalization bounds the least dimension needed to embed every $n$-point subset of real $L_p$ with distortion $D$. For each fixed $D>1$, there is a constant $C=C(p,D)$ such that this dimension lies between $\\log n/\\log(1+2D)$ and $\\exp(C(\\log n)^{\\gamma(p)})$ for every $n\\ge2$, where $\\gamma(p)=2-p$ for $p<2$ and $1-2/p$ for $p>2$. At distortion $1$ and $n\\ge9$, it lies between $\\lfloor(n-1)/4\\rfloor^2$ and $\\binom n2$. The least dimension is attained, and its logarithm divided by $\\log n$ tends to $0$ for $D>1$ and to $2$ for $D=1$.",
+    "results": [
+     {
+      "label": "Dimension reduction in $L_p$",
+      "challenge": "lean/ComparatorChallenges/SubpolynomialLp.lean",
+      "config": "lean/ComparatorChallenges/SubpolynomialLp.json",
+      "main": true,
+      "statements": [
+       {
+        "name": "OAI.SubpolynomialLp.source_main",
+        "role": "theorem",
+        "kind": "theorem",
+        "line": 32,
+        "statement": "theorem source_main (p : ℝ) (hp : 1 < p) (hp2 : p ≠ 2) :\n    (∀ D : ℝ, 1 < D → ∃ C : ℝ, ∀ n : ℕ, 2 ≤ n →\n      GoodDimension.{u} p n D (dimension.{u} p n D) ∧\n      Real.log (n : ℝ) / Real.log (1 + 2 * D) ≤ (dimension.{u} p n D : ℝ) ∧\n      (dimension.{u} p n D : ℝ) ≤ Real.exp (C * Real.log (n : ℝ) ^ gamma p)) ∧\n    (∀ n : ℕ, 9 ≤ n →\n      GoodDimension.{u} p n 1 (dimension.{u} p n 1) ∧\n      ((n - 1) / 4) ^ 2 ≤ dimension.{u} p n 1 ∧\n      dimension.{u} p n 1 ≤ n.choose 2) ∧\n    (∀ D : ℝ, 1 ≤ D →\n      Tendsto (fun n : ℕ => Real.log (dimension.{u} p n D : ℝ) / Real.log (n : ℝ))\n        atTop (𝓝 (if 1 < D then 0 else 2)))",
+        "proof": {
+         "file": "lean/OAI/Analysis/LpDimension/Main.lean",
+         "line": 13,
+         "kind": "theorem",
+         "sorry": false
+        },
+        "module": "lean/OAI/Analysis/LpDimension/Main.lean",
+        "main": true
+       }
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "number": "095",
+   "title": "Hyperbolicity cones without semidefinite lifts",
+   "description": "Disproves the Projected Lax conjecture: some hyperbolicity cones are not spectrahedral shadows. The examples admit no exact finite affine semidefinite lift, regardless of the number of auxiliary variables or the real coefficients used. This also disproves the generalized Lax conjecture that every hyperbolicity cone is spectrahedral.",
+   "doc": "lean/docs/095.md",
+   "manuscripts": [
+    {
+     "title": "Hyperbolicity Cones Without Semidefinite Lifts",
+     "path": "preprints/Hyperbolicity-Cones-Without-Semidefinite-Lifts-October-5-2026/nonliftable-hyperbolicity.pdf",
+     "note": "",
+     "abstract": "We prove that not every hyperbolicity cone is a spectrahedral shadow: some closed hyperbolicity cones admit no finite affine semidefinite lift, even with arbitrary real coefficients and any finite number of auxiliary variables. This disproves the Projected Lax Conjecture and hence the generalized Lax conjecture."
+    },
+    {
+     "title": "A nonspectrahedral hyperbolicity cone",
+     "path": "preprints/A-Nonspectrahedral-Hyperbolicity-Cone-September-24-2026/nonspectrahedral-hyperbolicity-cone.pdf",
+     "note": "",
+     "abstract": "We construct a homogeneous polynomial of degree 16 in 23 real variables whose hyperbolicity cone has no representation by a finite homogeneous real symmetric linear matrix inequality. This disproves the geometric Generalized Lax conjecture."
+    },
+    {
+     "title": "An Exact Semidefinite Lift of a Nonspectrahedral Hyperbolicity Cone",
+     "path": "preprints/An-Exact-Semidefinite-Lift-of-a-Nonspectrahedral-Hyperbolicity-Cone-October-5-2026/Exact-Semidefinite-Lift-of-a-Nonspectrahedral-Hyperbolicity-Cone.pdf",
+     "note": "",
+     "abstract": "We construct an exact semidefinite lift of the explicit nonspectrahedral hyperbolicity cone in twenty-three variables defined in the companion paper. The lift is a homogeneous real symmetric pencil of size 100 with 307 auxiliary variables and represents the entire closed cone, including every point with singular *X*. Thus, although this cone has no semidefinite representation in its original coordinates, it admits one when auxiliary variables are allowed. The stated sizes are not claimed to be minimal."
+    }
+   ],
+   "lean": {
+    "path": "lean/docs/095.md",
+    "title": "Hyperbolicity cones without semidefinite lifts",
+    "papers": [
+     "preprints/A-Nonspectrahedral-Hyperbolicity-Cone-September-24-2026/nonspectrahedral-hyperbolicity-cone.pdf"
+    ],
+    "scope": "The generalized Lax conjecture predicts that every hyperbolicity cone is spectrahedral. The formalized counterexample is an explicit homogeneous polynomial of degree $20$ in $23$ real variables. It is hyperbolic, but its closed hyperbolicity cone cannot be represented as the positive-semidefinite region of any finite real symmetric linear matrix pencil, in any positive matrix size.",
+    "results": [
+     {
+      "label": "Nonspectrahedral hyperbolicity cone",
+      "challenge": "lean/ComparatorChallenges/HyperbolicCones.lean",
+      "config": "lean/ComparatorChallenges/HyperbolicCones.json",
+      "main": true,
+      "statements": [
+       {
+        "name": "OAI.Paper256.main_result",
+        "role": "theorem",
+        "kind": "theorem",
+        "line": 67,
+        "statement": "theorem main_result :\n    Module.finrank ℝ Ambient = 23 ∧\n    polynomial.IsHomogeneous 20 ∧\n    polynomial.totalDegree = 20 ∧\n    MvPolynomial.eval (coordinates basePoint) polynomial = 1 ∧\n    (∀ (x : Ambient) (z : ℂ), (linePolynomial x).aeval z = 0 → z.im = 0) ∧\n    ∀ (N : ℕ) (_hN : 0 < N) (L : Ambient →ₗ[ℝ] Sym N),\n      cone ≠ {x | (L x : Mat N ℝ).PosSemidef}",
+        "proof": {
+         "file": "lean/OAI/Analysis/HyperbolicCones/Main.lean",
+         "line": 25,
+         "kind": "theorem",
+         "sorry": false
+        },
+        "module": "lean/OAI/Analysis/HyperbolicCones/Main.lean",
+        "main": true
+       }
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "number": "096",
+   "title": "The Gaussian propeller conjecture in every dimension",
+   "description": "Proves that the sum of squared Gaussian first moments of any finite measurable partition is at most $9/(8\\pi)$. In dimension at least two, three planar sectors of angle $2\\pi/3$, extended orthogonally, attain the bound. Combined with the separate Unique Games theorem, this proves NP-hardness of improving the loss factor $(8\\pi/9)(1-1/k)$ for identity-target kernel clustering with fixed *k* ≥ 3 on rational centered positive semidefinite inputs.",
+   "doc": "lean/docs/096.md",
+   "manuscripts": [
+    {
+     "title": "The Gaussian propeller bound in every dimension",
+     "path": "preprints/The-Gaussian-Propeller-Bound-in-Every-Dimension-September-24-2026/main.pdf",
+     "note": "",
+     "abstract": "We prove the Gaussian propeller conjecture: for every finite measurable partition of a Euclidean space, the sum of the squared lengths of its Gaussian first moments is at most $9/(8\\pi)$. For dimension at least two and at least three cells, three planar sectors of angle $2\\pi/3$, extended by an orthogonal Euclidean factor, attain the bound."
+    }
+   ],
+   "lean": {
+    "path": "lean/docs/096.md",
+    "title": "The Gaussian propeller conjecture in every dimension",
+    "papers": [
+     "preprints/The-Gaussian-Propeller-Bound-in-Every-Dimension-September-24-2026/main.pdf"
+    ],
+    "scope": "The Gaussian propeller problem asks how large the sum of squared Gaussian first moments can be over a partition. The formalized result proves the sharp bound $9/(8\\pi)$ for every positive dimension and every positive number of labelled cells, allowing empty cells and arbitrary masses. In dimension at least two with at least three cells, three planar sectors of angle $120^\\circ$, extended in orthogonal directions, attain equality. The separate Gaussian-maxima and kernel-clustering consequences are not included.",
+    "results": [
+     {
+      "label": "Gaussian propeller bound and attainment",
+      "challenge": "lean/ComparatorChallenges/GaussianPropeller.lean",
+      "config": "lean/ComparatorChallenges/GaussianPropeller.json",
+      "main": true,
+      "statements": [
+       {
+        "name": "OAI.GaussianPropeller.all_partitions",
+        "role": "theorem",
+        "kind": "theorem",
+        "line": 38,
+        "statement": "theorem all_partitions : AllPartitions",
+        "proof": {
+         "file": "lean/OAI/Probability/GaussianPropeller/Main.lean",
+         "line": 78,
+         "kind": "theorem",
+         "sorry": false
+        },
+        "module": "lean/OAI/Probability/GaussianPropeller/Main.lean",
+        "main": true
+       }
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "number": "097",
+   "title": "The Euclidean Steinitz–Bergström bound",
+   "description": "Proves that any finite sequence in the Euclidean unit ball of ℝ$^{d}$ admits signs keeping every partial sum within $C\\sqrt d$, independently of length. Consequently every zero-sum family can be reordered with the same bound on unsigned partial sums. A matching lower bound gives the optimal order $S_2(d)=\\Theta(\\sqrt d)$.",
+   "doc": "lean/docs/097.md",
+   "manuscripts": [
+    {
+     "title": "The Euclidean Steinitz–Bergström theorem",
+     "path": "preprints/The-Euclidean-Steinitz-Bergstrom-theorem-September-24-2026/The-Euclidean-Steinitz-Bergstrom-theorem-September-24-2026.pdf",
+     "note": "",
+     "abstract": "Every prescribed-order finite sequence of vectors in the Euclidean unit ball of ℝ$^{d}$ has one signing for which every signed prefix has norm at most $C\\sqrt d$, with *C* absolute and independent of the sequence length. Consequently, every indexed zero-sum family of unit-ball vectors admits an ordering with the same bound for its unsigned partial sums. This determines the Euclidean Steinitz constant up to absolute factors, $S_2(d)=\\Theta(\\sqrt d)$, and resolves the Euclidean Steinitz–Bergström conjecture."
+    }
+   ],
+   "lean": {
+    "path": "lean/docs/097.md",
+    "title": "The Euclidean Steinitz–Bergström bound",
+    "papers": [
+     "preprints/The-Euclidean-Steinitz-Bergstrom-theorem-September-24-2026/The-Euclidean-Steinitz-Bergstrom-theorem-September-24-2026.pdf"
+    ],
+    "scope": "The formalized result gives the Euclidean Steinitz–Bergström bound with one absolute constant $C$. For every finite family of vectors in the unit ball of $\\mathbb R^d$, signs can be chosen so that every prefix in the prescribed order has norm at most $C\\sqrt d$. When the vector sum is zero, a permutation makes every unsigned prefix satisfy the same bound. Repeated and zero vectors are included. The result is existential and does not supply an online algorithm.",
+    "results": [
+     {
+      "label": "Euclidean signed and reordered prefix bounds",
+      "challenge": "lean/ComparatorChallenges/SteinitzBergstrom.lean",
+      "config": "lean/ComparatorChallenges/SteinitzBergstrom.json",
+      "main": true,
+      "statements": [
+       {
+        "name": "OAI.EuclideanSteinitzBergstrom.main",
+        "role": "theorem",
+        "kind": "theorem",
+        "line": 24,
+        "statement": "theorem main : ∃ C : ℝ, SignedPrefixBound C ∧ OrderingPrefixBound C",
+        "proof": {
+         "file": "lean/OAI/Analysis/Steinitz/Main.lean",
+         "line": 111,
+         "kind": "theorem",
+         "sorry": false
+        },
+        "module": "lean/OAI/Analysis/Steinitz/Main.lean",
+        "main": true
+       }
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "number": "098",
+   "title": "Compact counterexamples to bi-Lipschitz dimension reduction",
+   "description": "Every infinite-dimensional real Banach space contains a compact doubling set that admits no bi-Lipschitz embedding into any finite-dimensional normed space. The doubling constant is universal. This answers the Lang–Plaut problem negatively, even for compact subsets of Hilbert space.",
+   "doc": "lean/docs/098.md",
+   "manuscripts": [
+    {
+     "title": "A doubling Hilbert subset with no finite-dimensional bi-Lipschitz embedding",
+     "path": "preprints/A-doubling-Hilbert-subset-with-no-finite-dimensional-bi-Lipschitz-embedding-September-25-2026/main.pdf",
+     "note": "",
+     "abstract": "Every infinite-dimensional real Banach space contains a compact doubling subset that admits no bi-Lipschitz embedding into any finite-dimensional real normed space. The doubling constant has a universal bound, independent of the ambient Banach space. This answers the Lang–Plaut problem negatively, even for compact subsets of Hilbert space."
+    }
+   ],
+   "lean": {
+    "path": "lean/docs/098.md",
+    "title": "Compact counterexamples to bi-Lipschitz dimension reduction",
+    "papers": [
+     "preprints/A-doubling-Hilbert-subset-with-no-finite-dimensional-bi-Lipschitz-embedding-September-25-2026/main.pdf"
+    ],
+    "scope": "The formalized result gives a doubling subset of real $\\ell_2$, with doubling constant at most $76800$, that admits no bi-Lipschitz embedding into any finite-dimensional Euclidean space at any finite distortion. A companion gives one universal doubling constant such that every infinite-dimensional real Banach space contains a compact doubling subset with no bi-Lipschitz embedding into any finite-dimensional normed space.",
+    "results": [
+     {
+      "label": "Doubling Hilbert subset without finite-dimensional embedding",
+      "challenge": "lean/ComparatorChallenges/DoublingHilbert.lean",
+      "config": "lean/ComparatorChallenges/DoublingHilbert.json",
+      "main": true,
+      "statements": [
+       {
+        "name": "OAI.DoublingHilbert.main",
+        "role": "theorem",
+        "kind": "theorem",
+        "line": 23,
+        "statement": "theorem main : ∃ S : Set RealL2,\n    DoublingAtMost S 76800 ∧\n      ∀ k : ℕ, 0 < k → ¬ AdmitsBiLipschitzEmbedding S k",
+        "proof": {
+         "file": "lean/OAI/Geometry/DoublingHilbert/Main.lean",
+         "line": 57,
+         "kind": "theorem",
+         "sorry": false
+        },
+        "module": "lean/OAI/Geometry/DoublingHilbert/Main.lean",
+        "main": true
+       }
+      ]
+     },
+     {
+      "label": "Compact counterexamples in infinite-dimensional Banach spaces",
+      "challenge": "lean/ComparatorChallenges/CompactBanach.lean",
+      "config": "lean/ComparatorChallenges/CompactBanach.json",
+      "main": true,
+      "statements": [
+       {
+        "name": "OAI.CompactBanach.main",
+        "role": "theorem",
+        "kind": "theorem",
+        "line": 25,
+        "statement": "theorem main : ∃ Λ : ℕ, ∀ (B : Type u) [NormedAddCommGroup B] [NormedSpace ℝ B]\n    [CompleteSpace B], ¬ FiniteDimensional ℝ B →\n    ∃ K : Set B, IsCompact K ∧ DoublingAtMost K Λ ∧\n      ∀ (E : Type v) [NormedAddCommGroup E] [NormedSpace ℝ E]\n        [FiniteDimensional ℝ E], ¬ AdmitsBiLipschitzEmbedding K E",
+        "proof": {
+         "file": "lean/OAI/Geometry/DoublingHilbert/CompactBanach.lean",
+         "line": 20,
+         "kind": "theorem",
+         "sorry": false
+        },
+        "module": "lean/OAI/Geometry/DoublingHilbert/CompactBanach.lean",
+        "main": true
+       }
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "number": "099",
+   "title": "The sharp exponential scale of edit-distance distortion",
+   "description": "Determines the least distortion of embedding edit distance on words of length at most *d* into real $ℓ_{1}$: it is $\\exp(\\Theta(\\sqrt{\\log d\\,\\log\\log d}))$. Insertions, deletions and substitutions have unit cost. The constants are uniform over all finite alphabets with at least two symbols, even when the alphabet grows with *d*; binary words already force the lower bound.",
+   "doc": "lean/docs/099.md",
+   "manuscripts": [
+    {
+     "title": "Edit Distance in l1: Matching Bounds up to Constants in the Exponent",
+     "path": "preprints/Edit-Distance-in-l1-Matching-Bounds-up-to-Constants-in-the-Exponent-September-27-2026/paper.pdf",
+     "note": "",
+     "abstract": "We determine the exponential scale of the least $ℓ_{1}$ distortion of unit-cost edit distance on all strings of length at most *d*. For every sufficiently large *d*, uniformly over finite alphabets of size at least two, the distortion lies between $\\exp(c\\sqrt{\\log d\\,\\log\\log d})$ and $\\exp(C\\sqrt{\\log d\\,\\log\\log d})$ for absolute constants $c,C\\gt 0$. The lower bound already holds on binary strings of one common length. Thus the order of logarithmic distortion is sharp up to absolute constants."
+    },
+    {
+     "title": "Finite-Circle Obstructions, Binary Codes, and Histogram Embeddings for Edit Distance",
+     "path": "preprints/Finite-Circle-Obstructions-Binary-Codes-and-Histogram-Embeddings-for-Edit-Distance-September-27-2026/paper.pdf",
+     "note": "",
+     "abstract": "We give two finite-circle constructions of binary strings whose least $ℓ_{1}$ distortion is $\\exp(\\Omega(\\sqrt{\\log d\\,\\log\\log d}))$, where *d* bounds their length. Both constructions supply words of one common length for every sufficiently large cap. Two direct binary coding arguments transfer the constructions with absolute distortion and logarithmic block width. We also develop the overlapping-substring method of Ostrovsky and Rabani into a complete finite histogram embedding at the same exponential scale, uniformly over all finite alphabets and all words of length at most *d*, including the empty word."
+    },
+    {
+     "title": "Tree Constructions for the l1 Distortion of Binary Edit Distance",
+     "path": "preprints/Tree-Constructions-for-the-l1-Distortion-of-Binary-Edit-Distance-September-27-2026/paper.pdf",
+     "note": "",
+     "abstract": "We give two independent constructions of binary words of one length at most *d* whose ordinary edit-distance metrics require $ℓ_{1}$ distortion $\\exp(\\Omega(\\sqrt{\\log d\\,\\log\\log d}))$ for every sufficiently large *d*. We also prove a constant-distortion binary conversion for one prescribed input length. Together with the companion upper embedding theorem, these lower bounds determine the order of logarithmic distortion uniformly over finite alphabets with at least two symbols."
+    }
+   ],
+   "lean": {
+    "path": "lean/docs/099.md",
+    "title": "The sharp exponential scale of edit-distance distortion",
+    "papers": [
+     "preprints/Edit-Distance-in-l1-Matching-Bounds-up-to-Constants-in-the-Exponent-September-27-2026/paper.pdf",
+     "preprints/Finite-Circle-Obstructions-Binary-Codes-and-Histogram-Embeddings-for-Edit-Distance-September-27-2026/paper.pdf",
+     "preprints/Tree-Constructions-for-the-l1-Distortion-of-Binary-Edit-Distance-September-27-2026/paper.pdf"
+    ],
+    "scope": "The formalization determines the exponential scale of the least $\\ell_1$ distortion of unit-cost edit distance on strings of length at most $d$. For every sufficiently large $d$, uniformly over finite alphabets with at least two symbols, the distortion lies between $\\exp(c\\sqrt{\\log d\\,\\log\\log d})$ and $\\exp(C\\sqrt{\\log d\\,\\log\\log d})$ for absolute constants $c,C>0$. The lower bound has a witness consisting of binary strings of one common length, and the same scale controls the supremum over finite alphabets.\n\nThe formalization gives two finite-circle constructions of binary strings whose least $\\ell_1$ distortion is at least $\\exp(c\\sqrt{\\log d\\,\\log\\log d})$ for all sufficiently large length caps $d$. The witnesses use strings of one common length and include the binary coding transfers with their stated uniform bounds.\n\nIt also gives a finite histogram embedding with distortion at most $\\exp(C\\sqrt{\\log d\\,\\log\\log d})$ for all strings of length at most $d$, uniformly over finite alphabets, including the empty string. Thus the lower and upper exponential scales agree up to absolute constants.\n\nThe formalization gives two lower-bound constructions for the $\\ell_1$ distortion of ordinary edit distance on binary words. For every sufficiently large length cap $d$, each construction supplies a finite set of at least two binary words of one common length at most $d$ whose least $\\ell_1$ distortion is at least $\\exp(c\\sqrt{\\log d\\,\\log\\log d})$ for an absolute $c>0$.\n\nThe selected statements are the binary lower bounds. The paper's constant-distortion binary conversion and the companion upper embedding theorem are outside them.",
+    "results": [
+     {
+      "label": "Matching exponential-scale bounds for edit-distance distortion",
+      "challenge": "lean/ComparatorChallenges/EditDistance.lean",
+      "config": "lean/ComparatorChallenges/EditDistance.json",
+      "main": false,
+      "statements": [
+       {
+        "name": "OAI.edit_distance_main",
+        "role": "theorem",
+        "kind": "theorem",
+        "line": 67,
+        "statement": "theorem edit_distance_main : EditDistortion.MainClaim.{u}",
+        "proof": {
+         "file": "lean/OAI/Combinatorics/EditDistance/Main.lean",
+         "line": 13,
+         "kind": "theorem",
+         "sorry": false
+        },
+        "module": "lean/OAI/Combinatorics/EditDistance/Main.lean",
+        "main": false
+       }
+      ]
+     },
+     {
+      "label": "Finite-circle obstructions and histogram embeddings for edit distance",
+      "challenge": "lean/ComparatorChallenges/FiniteCircle.lean",
+      "config": "lean/ComparatorChallenges/FiniteCircle.json",
+      "main": false,
+      "statements": [
+       {
+        "name": "OAI.finiteCircle_fullMain",
+        "role": "theorem",
+        "kind": "theorem",
+        "line": 225,
+        "statement": "theorem finiteCircle_fullMain : FiniteCircle.FullMain",
+        "proof": {
+         "file": "lean/OAI/Combinatorics/FiniteCircle/Main.lean",
+         "line": 139,
+         "kind": "theorem",
+         "sorry": false
+        },
+        "module": "lean/OAI/Combinatorics/FiniteCircle/Main.lean",
+        "main": false
+       }
+      ]
+     },
+     {
+      "label": "Binary edit-distance distortion lower bound",
+      "challenge": "lean/ComparatorChallenges/BinaryEditLower.lean",
+      "config": "lean/ComparatorChallenges/BinaryEditLower.json",
+      "main": false,
+      "statements": [
+       {
+        "name": "OAI.TreeEdit.binary_lower_bound",
+        "role": "theorem",
+        "kind": "theorem",
+        "line": 51,
+        "statement": "theorem binary_lower_bound :\n    ∃ c : ℝ, 0 < c ∧ ∃ d₀ : ℕ, ∀ d : ℕ, d₀ ≤ d →\n      ∃ n : ℕ, 1 ≤ n ∧ n ≤ d ∧\n        ∃ W : Finset (Word Bool n), 2 ≤ W.card ∧\n          growth c d ≤ binarySetDistortion W",
+        "proof": {
+         "file": "lean/OAI/Combinatorics/BinaryEdit/BinaryLowerBound.lean",
+         "line": 12,
+         "kind": "theorem",
+         "sorry": false
+        },
+        "module": "lean/OAI/Combinatorics/BinaryEdit/BinaryLowerBound.lean",
+        "main": false
+       }
+      ]
+     },
+     {
+      "label": "Tree-based binary edit-distance distortion lower bound",
+      "challenge": "lean/ComparatorChallenges/TreeEdit.lean",
+      "config": "lean/ComparatorChallenges/TreeEdit.json",
+      "main": false,
+      "statements": [
+       {
+        "name": "OAI.TreeEdit.binary_torus",
+        "role": "theorem",
+        "kind": "theorem",
+        "line": 46,
+        "statement": "theorem binary_torus : BinaryLowerBound",
+        "proof": {
+         "file": "lean/OAI/Combinatorics/TreeEdit/TorusLowerBound.lean",
+         "line": 106,
+         "kind": "theorem",
+         "sorry": false
+        },
+        "module": "lean/OAI/Combinatorics/TreeEdit/TorusLowerBound.lean",
+        "main": false
+       }
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "number": "100",
+   "title": "Cylinder coverings below the half-area bound",
+   "description": "Covers the entire closed regular tetrahedron by finitely many cylinders with compact triangular perpendicular bases whose total area is less than half its smallest orthogonal projection area. This disproves Bang's half-area cylinder-covering bound and the stronger directionwise normalized conjecture in dimension three.",
+   "doc": "lean/docs/100.md",
+   "manuscripts": [
+    {
+     "title": "Finite angular cylinder covers below the half-area bound",
+     "path": "preprints/Finite-angular-cylinder-covers-below-the-half-area-bound-September-27-2026/main.pdf",
+     "note": "",
+     "abstract": "A regular tetrahedron admits a finite cylinder covering with compact triangular perpendicular bases whose total area is less than half its minimum orthogonal projection area. This disproves the half-area cylinder-covering conjecture. By affine invariance, the same construction gives a counterexample to the directionwise normalized half-bound for every nondegenerate tetrahedron."
+    },
+    {
+     "title": "Finite cylinder approximation of ruled sets",
+     "path": "preprints/Finite-cylinder-approximation-of-ruled-sets-September-27-2026/main.pdf",
+     "note": "",
+     "abstract": "We approximate compact ruled families of segments by finitely many cylinders with square intercept tiles and perpendicular-base area at most their integral projection cost plus any positive error. The velocity field is $C^{1}$, and its differential has opposite real eigenvalues whose magnitudes are strictly below the inverse segment half-length; both eigenvalues may vanish. The result includes square-zero differentials with unrestricted shear and fields that pass between the two regimes. It holds for arbitrary compact label sets."
+    },
+    {
+     "title": "Slope-field perturbations of the two-cylinder covering",
+     "path": "preprints/Slope-field-perturbations-of-the-two-cylinder-covering-September-27-2026/main.pdf",
+     "note": "",
+     "abstract": "The two-cylinder covering of a regular tetrahedron can be perturbed to give finite covers with total perpendicular base area strictly below half its minimum projection area. These covers give negative answers to both the half-area question and the directionwise normalized half-bound conjecture. By affine invariance, the directionwise conclusion holds for every nondegenerate tetrahedron."
+    },
+    {
+     "title": "Finite triangular approximation of radial sweeps",
+     "path": "preprints/Finite-triangular-approximation-of-radial-sweeps-September-27-2026/main.pdf",
+     "note": "",
+     "abstract": "We prove that radially aligned segment sweeps admit finite cylinder covers with one triangular base for each interval of any tagged partition. As the mesh tends to zero, the total perpendicular base area converges to a weighted parameter area. An explicit application covers every regular tetrahedron with total base area below half its minimum projection area, giving negative answers to the half-area question and the directionwise normalized 1-Codimensional Cylinder Covering Conjecture."
+    }
+   ],
+   "lean": {
+    "path": "lean/docs/100.md",
+    "title": "Cylinder coverings below the half-area bound",
+    "papers": [
+     "preprints/Finite-angular-cylinder-covers-below-the-half-area-bound-September-27-2026/main.pdf",
+     "preprints/Finite-cylinder-approximation-of-ruled-sets-September-27-2026/main.pdf",
+     "preprints/Slope-field-perturbations-of-the-two-cylinder-covering-September-27-2026/main.pdf",
+     "preprints/Finite-triangular-approximation-of-radial-sweeps-September-27-2026/main.pdf"
+    ],
+    "scope": "The half-area cylinder-covering conjecture predicts that a cylinder cover of a convex body has total perpendicular-base area at least half its smallest projection area. The formalization constructs finite covers of a regular tetrahedron by cylinders with compact triangular bases whose total area is strictly below that bound. For the explicit small parameter $\\varepsilon$, the normalized area is $1/2-(13/6000)\\varepsilon^2+O(\\varepsilon^4)$, giving the strict saving.\n\nIt also gives a counterexample to the directionwise normalized half-bound. The broader Comparator file includes the companion ruled-set and radial-sweep approximation results.\n\nThe formalization approximates compact ruled families of line segments by finite cylinder covers with perpendicular-base area at most the integral projection cost plus any prescribed positive error. The selected results cover the stated $C^1$ hyperbolic differential condition, square-zero and nilpotent cases, physical rescalings, logarithmic and product-cell estimates, and singular cases. Compact label sets need not have regular boundary.\n\nThe differential and segment-length hypotheses remain part of each result. The aggregate Comparator file also contains the companion tetrahedron counterexamples and radial-sweep estimates.\n\nThe formalization proves that every regular tetrahedron has a finite cylinder cover whose total perpendicular-base area is strictly less than half its minimum projection area. It supplies covers with parallelogram bases and also proves the directionwise normalized cost is below one half. These are counterexamples to the two cylinder-covering bounds studied in the paper.\n\nThe linked aggregate includes the accompanying explicit angular covers and finite approximation theorems for ruled sets and radial sweeps. The affine extension of the directionwise conclusion to every nondegenerate tetrahedron is outside the selected regular-tetrahedron statements.\n\nThe formalization proves finite triangular-cylinder approximation for radially aligned segment sweeps. For every tagged partition of the parameter interval, it constructs one cylinder per interval with the prescribed radial direction, and the total perpendicular-base area converges to the weighted parameter area as the mesh tends to zero. It also covers the corresponding actual swept set under the stated geometric hypotheses.\n\nThe same aggregate includes finite cylinder covers of regular tetrahedra below half the minimum projection area. These are the radial approximation and covering consequences relevant to the paper.",
+    "results": [
+     {
+      "label": "Cylinder-covering counterexamples and companion approximations",
+      "challenge": "lean/ComparatorChallenges/CylinderCovering.lean",
+      "config": "lean/ComparatorChallenges/CylinderCovering.json",
+      "main": false,
+      "statements": [
+       {
+        "name": "OAI.CylinderCovering.fourPaperMain",
+        "role": "theorem",
+        "kind": "theorem",
+        "line": 561,
+        "statement": "theorem fourPaperMain :\n    AngularExplicitStatement ∧\n    RuledApproximation.HyperbolicStatement ∧\n    RuledApproximation.NilpotentC1Statement ∧\n    RegularParallelogramCounterexampleStatement ∧\n    RegularOpenCounterexampleStatement ∧\n    RadialSweep.AlignedStatement ∧\n    RadialSweep.ActualSweepStatement",
+        "proof": {
+         "file": "lean/OAI/Geometry/CylinderCovering/Main.lean",
+         "line": 44,
+         "kind": "theorem",
+         "sorry": false
+        },
+        "module": "lean/OAI/Geometry/CylinderCovering/Main.lean",
+        "main": false
+       }
+      ]
+     },
+     {
+      "label": "Explicit triangular-cylinder cover below half area",
+      "challenge": "lean/ComparatorChallenges/TriangularCovering.lean",
+      "config": "lean/ComparatorChallenges/TriangularCovering.json",
+      "main": false,
+      "statements": [
+       {
+        "name": "OAI.TriangularCovering.main",
+        "role": "theorem",
+        "kind": "theorem",
+        "line": 65,
+        "statement": "theorem main : A_min = H ∧ MainAsymptotic ∧ NormalizedCounterexample",
+        "proof": {
+         "file": "lean/OAI/Geometry/TriangularCovering/Main.lean",
+         "line": 61,
+         "kind": "theorem",
+         "sorry": false
+        },
+        "module": "lean/OAI/Geometry/TriangularCovering/Main.lean",
+        "main": false
+       }
+      ]
+     },
+     {
+      "label": "Ruled-set approximation within the cylinder-covering aggregate",
+      "challenge": "lean/ComparatorChallenges/CylinderCovering.lean",
+      "config": "lean/ComparatorChallenges/CylinderCovering.json",
+      "main": false,
+      "statements": [
+       {
+        "name": "OAI.CylinderCovering.fourPaperMain",
+        "role": "theorem",
+        "kind": "theorem",
+        "line": 561,
+        "statement": "theorem fourPaperMain :\n    AngularExplicitStatement ∧\n    RuledApproximation.HyperbolicStatement ∧\n    RuledApproximation.NilpotentC1Statement ∧\n    RegularParallelogramCounterexampleStatement ∧\n    RegularOpenCounterexampleStatement ∧\n    RadialSweep.AlignedStatement ∧\n    RadialSweep.ActualSweepStatement",
+        "proof": {
+         "file": "lean/OAI/Geometry/CylinderCovering/Main.lean",
+         "line": 44,
+         "kind": "theorem",
+         "sorry": false
+        },
+        "module": "lean/OAI/Geometry/CylinderCovering/Main.lean",
+        "main": false
+       }
+      ]
+     },
+     {
+      "label": "Finite cylinder approximation for the selected ruled families",
+      "challenge": "lean/ComparatorChallenges/RuledCovering.lean",
+      "config": "lean/ComparatorChallenges/RuledCovering.json",
+      "main": false,
+      "statements": [
+       {
+        "name": "OAI.RuledApproximation.fullMain",
+        "role": "theorem",
+        "kind": "theorem",
+        "line": 215,
+        "statement": "theorem fullMain : FullMain",
+        "proof": {
+         "file": "lean/OAI/Geometry/RuledCovering/Main.lean",
+         "line": 13,
+         "kind": "theorem",
+         "sorry": false
+        },
+        "module": "lean/OAI/Geometry/RuledCovering/Main.lean",
+        "main": false
+       }
+      ]
+     },
+     {
+      "label": "Cylinder-covering counterexamples and approximation results",
+      "challenge": "lean/ComparatorChallenges/CylinderCovering.lean",
+      "config": "lean/ComparatorChallenges/CylinderCovering.json",
+      "main": false,
+      "statements": [
+       {
+        "name": "OAI.CylinderCovering.fourPaperMain",
+        "role": "theorem",
+        "kind": "theorem",
+        "line": 561,
+        "statement": "theorem fourPaperMain :\n    AngularExplicitStatement ∧\n    RuledApproximation.HyperbolicStatement ∧\n    RuledApproximation.NilpotentC1Statement ∧\n    RegularParallelogramCounterexampleStatement ∧\n    RegularOpenCounterexampleStatement ∧\n    RadialSweep.AlignedStatement ∧\n    RadialSweep.ActualSweepStatement",
+        "proof": {
+         "file": "lean/OAI/Geometry/CylinderCovering/Main.lean",
+         "line": 44,
+         "kind": "theorem",
+         "sorry": false
+        },
+        "module": "lean/OAI/Geometry/CylinderCovering/Main.lean",
+        "main": false
+       }
+      ]
+     },
+     {
+      "label": "Finite triangular approximation of radial sweeps",
+      "challenge": "lean/ComparatorChallenges/CylinderCovering.lean",
+      "config": "lean/ComparatorChallenges/CylinderCovering.json",
+      "main": false,
+      "statements": [
+       {
+        "name": "OAI.CylinderCovering.fourPaperMain",
+        "role": "theorem",
+        "kind": "theorem",
+        "line": 561,
+        "statement": "theorem fourPaperMain :\n    AngularExplicitStatement ∧\n    RuledApproximation.HyperbolicStatement ∧\n    RuledApproximation.NilpotentC1Statement ∧\n    RegularParallelogramCounterexampleStatement ∧\n    RegularOpenCounterexampleStatement ∧\n    RadialSweep.AlignedStatement ∧\n    RadialSweep.ActualSweepStatement",
+        "proof": {
+         "file": "lean/OAI/Geometry/CylinderCovering/Main.lean",
+         "line": 44,
+         "kind": "theorem",
+         "sorry": false
+        },
+        "module": "lean/OAI/Geometry/CylinderCovering/Main.lean",
+        "main": false
+       }
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "number": "101",
+   "title": "The sharp simplex conjecture for isotropic constants",
+   "description": "Proves that simplices uniquely maximize the isotropic constant among convex bodies in every dimension, resolving the strong isotropic constant conjecture. Also establishes the sharp entropy lower bound for log-concave probability densities, with equality precisely for invertible affine images of products of one-sided exponential laws.",
+   "doc": null,
+   "manuscripts": [
+    {
+     "title": "A sharp entropy bound and the simplex inequality for isotropic constants",
+     "path": "preprints/A-sharp-entropy-bound-and-the-simplex-inequality-for-isotropic-constants-October-5-2026/isotropic-simplex.pdf",
+     "note": "",
+     "abstract": "We prove the strong isotropic constant conjecture: in each dimension, simplices are the unique maximizers of the isotropic constant among convex bodies. We also prove the sharp entropy bound $h(f)\\ge m+\\tfrac12\\log\\det\\mathop{\\mathrm{Cov}}\\nolimits (f)$ for every log-concave probability density on ℝ$^{m}$, with equality precisely for invertible affine images of products of one-sided exponential laws."
+    }
+   ],
+   "lean": null
+  }
+ ]
+}

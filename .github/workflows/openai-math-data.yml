@@ -1,0 +1,248 @@
+# Reads OpenAI Math, openai/math, at the commit data/openai-math/source.json
+# pins (tools/refresh_openai_math.py): its result families, their manuscripts
+# and abstracts, their Lean pages, each formalized result's statement as its
+# statement file writes it, and where the repository's Lean proves it, read
+# from the source without Lean. The pages are then regenerated from that data.
+# The checkout is blobless and sparse: the collection's text files, the Lean
+# pages and statement files, then in two rounds the solution modules and the
+# files formalization.yaml names for its main results and, where a solution
+# module does not declare every name itself, the modules it imports. The
+# repository's PDFs and the rest of its Lean are never fetched.
+#
+# A push that changes the reader or the data runs it too, so the committed data
+# always match the pin. The weekly run, or a dispatch with "newest", moves the
+# pin to the repository's newest commit. On main, the commit job records the
+# data and the pages, then starts the Pages and Tests workflows. On a pull
+# request the run fails when the committed data differ from what the pin
+# gives, and keeps a patch.
+
+name: OpenAI Math data
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - "tools/refresh_openai_math.py"
+      - "tools/trough/openai_math.py"
+      - "tools/trough/leansource.py"
+      - "tools/trough/ff.py"
+      - "tools/trough/formalization.py"
+      - "tools/trough/formal_conjectures.py"
+      - "tools/trough/tex.py"
+      - "tools/trough/blueprints.py"
+      - "tools/trough/bibtex.py"
+      - "tools/trough/leanblueprint.py"
+      - "tools/trough/mathlib.py"
+      - "tools/trough/wiki.py"
+      - "tools/trough/catalog.py"
+      - "tools/trough/vault.py"
+      - "data/openai-math/**"
+      - ".github/workflows/openai-math-data.yml"
+  pull_request:
+    paths:
+      - "tools/refresh_openai_math.py"
+      - "tools/trough/openai_math.py"
+      - "tools/trough/leansource.py"
+      - "tools/trough/ff.py"
+      - "tools/trough/formalization.py"
+      - "tools/trough/formal_conjectures.py"
+      - "tools/trough/tex.py"
+      - "tools/trough/blueprints.py"
+      - "tools/trough/bibtex.py"
+      - "tools/trough/leanblueprint.py"
+      - "tools/trough/mathlib.py"
+      - "tools/trough/wiki.py"
+      - "tools/trough/catalog.py"
+      - "tools/trough/vault.py"
+      - "data/openai-math/**"
+      - ".github/workflows/openai-math-data.yml"
+  workflow_dispatch:
+    inputs:
+      newest:
+        description: Pin the repository's newest commit
+        type: boolean
+        default: false
+  schedule:
+    - cron: "47 7 * * 5"
+
+permissions:
+  contents: read
+
+concurrency:
+  group: openai-math-data-${{ github.ref }}
+  cancel-in-progress: ${{ github.event_name == 'pull_request' }}
+
+jobs:
+  refresh:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 30
+    outputs:
+      changed: ${{ steps.compare.outputs.changed }}
+      rev: ${{ steps.pin.outputs.rev }}
+      sha: ${{ steps.head.outputs.sha }}
+    steps:
+      # Outside pull requests, read the branch as it is now rather than the
+      # commit that started the run.
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          ref: ${{ github.event_name != 'pull_request' && github.ref || '' }}
+          persist-credentials: false
+
+      - name: Record the commit this run reads
+        id: head
+        run: echo "sha=$(git rev-parse HEAD)" >> "$GITHUB_OUTPUT"
+
+      - name: Install uv
+        uses: astral-sh/setup-uv@c771a70e6277c0a99b617c7a806ffedaca235ff9 # v9.0.0
+        with:
+          version: "0.12.1"
+
+      - name: Choose the commit
+        id: pin
+        env:
+          GH_TOKEN: ${{ github.token }}
+          NEWEST: ${{ github.event_name == 'schedule' || inputs.newest }}
+        run: |
+          set -euo pipefail
+          rev=$(jq -r '.rev // empty' data/openai-math/source.json 2>/dev/null || true)
+          if [ "$NEWEST" = true ] || [ -z "$rev" ]; then
+            rev=$(gh api repos/openai/math/commits/main --jq .sha)
+          fi
+          echo "openai/math $rev"
+          echo "rev=$rev" >> "$GITHUB_OUTPUT"
+
+      - name: Fetch the collection and the Lean at that commit
+        env:
+          REV: ${{ steps.pin.outputs.rev }}
+        run: |
+          set -euo pipefail
+          dir="$RUNNER_TEMP/openai-math"
+          git init --quiet "$dir"
+          git -C "$dir" remote add origin https://github.com/openai/math.git
+          git -C "$dir" fetch --quiet --depth 1 --filter=blob:none origin "$REV"
+          git -C "$dir" sparse-checkout set --no-cone /README.md /CONTENTS.md /overview.tex /LICENSE /lean/docs/ \
+            /lean/ComparatorChallenges/ /lean/formalization.yaml /lean/lean-toolchain /lean/lake-manifest.json
+          git -C "$dir" checkout --quiet FETCH_HEAD
+          # The solution modules and the files formalization.yaml names, then the modules they import.
+          for round in 1 2; do
+            uv run --no-dev python tools/refresh_openai_math.py --files "$dir" | sed 's|^|/|' > "$RUNNER_TEMP/files"
+            xargs -a "$RUNNER_TEMP/files" git -C "$dir" sparse-checkout add
+          done
+          du -sh "$dir"
+
+      - name: Read the collection
+        run: uv run --no-dev python tools/refresh_openai_math.py "$RUNNER_TEMP/openai-math"
+
+      - name: Regenerate the pages
+        run: uv run --no-dev python tools/generate.py
+
+      - name: Run the tests on the new data
+        run: uv run pytest -q
+
+      - name: Compare with the committed data
+        id: compare
+        run: |
+          git add -A data/openai-math blueprint hooks/lean-links.json
+          if git diff --cached --quiet; then
+            echo "The committed data are what the pin gives."
+            echo "changed=false" >> "$GITHUB_OUTPUT"
+            exit 0
+          fi
+          git diff --cached --stat | tail -n 20
+          git diff --cached --binary > openai-math-data.patch
+          echo "changed=true" >> "$GITHUB_OUTPUT"
+          if [ "$GITHUB_EVENT_NAME" = pull_request ]; then
+            base=$(git cat-file -p HEAD | sed -n 's/^parent //p' | head -n 1)
+            echo "::error::The committed data differ from what the pin gives. Merge main and apply the patch: git fetch origin ${base} && git merge --no-edit ${base} && gh run download ${GITHUB_RUN_ID} -R ${GITHUB_REPOSITORY} -n openai-math-data && git apply openai-math-data.patch"
+            exit 1
+          fi
+
+      - name: Keep the patch
+        if: always() && steps.compare.outputs.changed == 'true'
+        uses: actions/upload-artifact@cf430e030ddbb5b0abf93d22962f4752f3646cd9 # v7.0.2
+        with:
+          name: openai-math-data
+          path: openai-math-data.patch
+          retention-days: 14
+
+      - name: Keep the data for the commit job
+        if: steps.compare.outputs.changed == 'true' && github.event_name != 'pull_request'
+        uses: actions/upload-artifact@cf430e030ddbb5b0abf93d22962f4752f3646cd9 # v7.0.2
+        with:
+          name: openai-math-data-files
+          path: data/openai-math
+          retention-days: 14
+
+  # Records the data in the newest main, regenerating the pages with main's
+  # generator, as the Formal Frontier data workflow does. Data changed
+  # meanwhile win: that push's run records its own.
+  commit:
+    needs: refresh
+    if: >-
+      needs.refresh.outputs.changed == 'true' &&
+      github.event_name != 'pull_request' && github.ref == 'refs/heads/main'
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+      actions: write
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          fetch-depth: 0
+
+      - name: Fetch the data
+        uses: actions/download-artifact@9000827ccba6bdab643e8b6fd33ac0654aef8333 # v8.0.2
+        with:
+          name: openai-math-data-files
+          path: ${{ runner.temp }}/data
+
+      - name: Install uv
+        uses: astral-sh/setup-uv@c771a70e6277c0a99b617c7a806ffedaca235ff9 # v9.0.0
+        with:
+          version: "0.12.1"
+
+      - name: Commit the data and pages
+        env:
+          REV: ${{ needs.refresh.outputs.rev }}
+          READ: ${{ needs.refresh.outputs.sha }}
+          GIT_AUTHOR_NAME: github-actions[bot]
+          GIT_AUTHOR_EMAIL: 41898282+github-actions[bot]@users.noreply.github.com
+          GIT_COMMITTER_NAME: github-actions[bot]
+          GIT_COMMITTER_EMAIL: 41898282+github-actions[bot]@users.noreply.github.com
+        run: |
+          set -euo pipefail
+          # The artifact keeps the files without their common folder, data/openai-math.
+          src="$RUNNER_TEMP/data"
+          if (cd "$src" && find . -type f | sed 's|^\./||') | grep -vE '^(source|structure)\.json$|^families/[a-z0-9-]+\.json$'; then
+            echo "::error::The data artifact holds the files listed above."
+            exit 1
+          fi
+          for attempt in 1 2 3; do
+            git fetch --quiet origin main
+            git reset --quiet --hard origin/main
+            if ! git diff --quiet "$READ" HEAD -- data/openai-math; then
+              echo "::notice::main has changed data/openai-math since ${READ:0:8}; that push's run records the data."
+              exit 0
+            fi
+            git rm --quiet -r --ignore-unmatch data/openai-math/families
+            mkdir -p data/openai-math
+            cp -R "$src"/. data/openai-math/
+            uv run --no-dev python tools/generate.py
+            git add -A data/openai-math blueprint hooks/lean-links.json
+            if git diff --cached --quiet; then
+              echo "main already has this data."
+              exit 0
+            fi
+            git commit --quiet -m "OpenAI Math data at ${REV:0:8}"
+            if git push --quiet origin HEAD:main; then
+              exit 0
+            fi
+          done
+          exit 1
+
+      - name: Rebuild the site and run the tests
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          gh workflow run pages.yml --ref main -R "$GITHUB_REPOSITORY"
+          gh workflow run tests.yml --ref main -R "$GITHUB_REPOSITORY"

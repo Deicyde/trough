@@ -16,5 +16,5 @@ Module.End.instAlgebra.{u, v, w} (R : Type u) (S : Type v) (M : Type w) [CommSem
 ## Sources
 
 - [Mathlib documentation: `Module.End.instAlgebra`](https://leanprover-community.github.io/mathlib4_docs/Mathlib/Algebra/Algebra/Basic.html#Module.End.instAlgebra)
-- [Source of `Module.End.instAlgebra` in Mathlib/Algebra/Algebra/Basic.lean](https://github.com/leanprover-community/mathlib4/blob/9bac2d0692944a775113f7c130fd5e5b4608a854/Mathlib/Algebra/Algebra/Basic.lean#L204)
-- [Mathlib undergraduate list: Linear algebra › Fundamentals](https://github.com/leanprover-community/mathlib4/blob/9bac2d0692944a775113f7c130fd5e5b4608a854/docs/undergrad.yaml#L21)
+- [Source of `Module.End.instAlgebra` in Mathlib/Algebra/Algebra/Basic.lean](https://github.com/leanprover-community/mathlib4/blob/15cf10d19dfd4cdee9602318e271fa3ce99c454d/Mathlib/Algebra/Algebra/Basic.lean#L204)
+- [Mathlib undergraduate list: Linear algebra › Fundamentals](https://github.com/leanprover-community/mathlib4/blob/15cf10d19dfd4cdee9602318e271fa3ce99c454d/docs/undergrad.yaml#L21)

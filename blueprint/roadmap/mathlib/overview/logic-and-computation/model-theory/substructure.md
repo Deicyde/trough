@@ -14,5 +14,5 @@ FirstOrder.Language.Substructure.{u, v, w} (L : FirstOrder.Language) (M : Type w
 ## Sources
 
 - [Mathlib documentation: `FirstOrder.Language.Substructure`](https://leanprover-community.github.io/mathlib4_docs/Mathlib/ModelTheory/Substructures.html#FirstOrder.Language.Substructure)
-- [Source of `FirstOrder.Language.Substructure` in Mathlib/ModelTheory/Substructures.lean](https://github.com/leanprover-community/mathlib4/blob/9bac2d0692944a775113f7c130fd5e5b4608a854/Mathlib/ModelTheory/Substructures.lean#L96)
-- [Mathlib overview: Logic and computation › Model theory](https://github.com/leanprover-community/mathlib4/blob/9bac2d0692944a775113f7c130fd5e5b4608a854/docs/overview.yaml#L639)
+- [Source of `FirstOrder.Language.Substructure` in Mathlib/ModelTheory/Substructures.lean](https://github.com/leanprover-community/mathlib4/blob/15cf10d19dfd4cdee9602318e271fa3ce99c454d/Mathlib/ModelTheory/Substructures.lean#L96)
+- [Mathlib overview: Logic and computation › Model theory](https://github.com/leanprover-community/mathlib4/blob/15cf10d19dfd4cdee9602318e271fa3ce99c454d/docs/overview.yaml#L639)

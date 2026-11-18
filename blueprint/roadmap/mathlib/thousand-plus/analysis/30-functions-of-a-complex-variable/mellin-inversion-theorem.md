@@ -27,8 +27,8 @@ mellinInv_mellin_eq.{u_1} {E : Type u_1} [NormedAddCommGroup E] [NormedSpace ℂ
 ## Sources
 
 - [Mathlib documentation: `mellinInv_mellin_eq`](https://leanprover-community.github.io/mathlib4_docs/Mathlib/Analysis/MellinInversion.html#mellinInv_mellin_eq)
-- [Source of `mellinInv_mellin_eq` in Mathlib/Analysis/MellinInversion.lean](https://github.com/leanprover-community/mathlib4/blob/9bac2d0692944a775113f7c130fd5e5b4608a854/Mathlib/Analysis/MellinInversion.lean#L91)
-- [1000+ theorems list: Q6813106](https://github.com/leanprover-community/mathlib4/blob/9bac2d0692944a775113f7c130fd5e5b4608a854/docs/1000.yaml#L3556)
+- [Source of `mellinInv_mellin_eq` in Mathlib/Analysis/MellinInversion.lean](https://github.com/leanprover-community/mathlib4/blob/15cf10d19dfd4cdee9602318e271fa3ce99c454d/Mathlib/Analysis/MellinInversion.lean#L91)
+- [1000+ theorems list: Q6813106](https://github.com/leanprover-community/mathlib4/blob/15cf10d19dfd4cdee9602318e271fa3ce99c454d/docs/1000.yaml#L3559)
 - [1000+ theorems project: Q6813106](https://1000-plus.github.io/all.html?length=-1#Q6813106)
 - [Wikipedia: Mellin inversion theorem](https://en.wikipedia.org/wiki/Mellin_inversion_theorem)
 - [Wikidata: Q6813106](https://www.wikidata.org/wiki/Q6813106)

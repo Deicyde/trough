@@ -31,8 +31,8 @@ MeasureTheory.Measure.div_mem_nhds_one_of_haar_pos.{u_1} {G : Type u_1} [Group G
 ## Sources
 
 - [Mathlib documentation: `MeasureTheory.Measure.div_mem_nhds_one_of_haar_pos`](https://leanprover-community.github.io/mathlib4_docs/Mathlib/MeasureTheory/Measure/Haar/Basic.html#MeasureTheory.Measure.div_mem_nhds_one_of_haar_pos)
-- [Source of `MeasureTheory.Measure.div_mem_nhds_one_of_haar_pos` in Mathlib/MeasureTheory/Measure/Haar/Basic.lean](https://github.com/leanprover-community/mathlib4/blob/9bac2d0692944a775113f7c130fd5e5b4608a854/Mathlib/MeasureTheory/Measure/Haar/Basic.lean#L629)
-- [1000+ theorems list: Q3527166](https://github.com/leanprover-community/mathlib4/blob/9bac2d0692944a775113f7c130fd5e5b4608a854/docs/1000.yaml#L2515)
+- [Source of `MeasureTheory.Measure.div_mem_nhds_one_of_haar_pos` in Mathlib/MeasureTheory/Measure/Haar/Basic.lean](https://github.com/leanprover-community/mathlib4/blob/15cf10d19dfd4cdee9602318e271fa3ce99c454d/Mathlib/MeasureTheory/Measure/Haar/Basic.lean#L629)
+- [1000+ theorems list: Q3527166](https://github.com/leanprover-community/mathlib4/blob/15cf10d19dfd4cdee9602318e271fa3ce99c454d/docs/1000.yaml#L2518)
 - [1000+ theorems project: Q3527166](https://1000-plus.github.io/all.html?length=-1#Q3527166)
 - [Wikipedia: Steinhaus theorem](https://en.wikipedia.org/wiki/Steinhaus_theorem)
 - [Wikidata: Q3527166](https://www.wikidata.org/wiki/Q3527166)

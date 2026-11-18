@@ -55,5 +55,5 @@ Mathlib defines being local as a property of a semiring that need not be commuta
 ## Sources
 
 - [Mathlib documentation: `IsLocalRing`](https://leanprover-community.github.io/mathlib4_docs/Mathlib/RingTheory/LocalRing/Defs.html#IsLocalRing)
-- [Source of `IsLocalRing` in Mathlib/RingTheory/LocalRing/Defs.lean](https://github.com/leanprover-community/mathlib4/blob/9bac2d0692944a775113f7c130fd5e5b4608a854/Mathlib/RingTheory/LocalRing/Defs.lean#L26)
-- [Mathlib overview: General algebra › Rings](https://github.com/leanprover-community/mathlib4/blob/9bac2d0692944a775113f7c130fd5e5b4608a854/docs/overview.yaml#L70)
+- [Source of `IsLocalRing` in Mathlib/RingTheory/LocalRing/Defs.lean](https://github.com/leanprover-community/mathlib4/blob/15cf10d19dfd4cdee9602318e271fa3ce99c454d/Mathlib/RingTheory/LocalRing/Defs.lean#L25)
+- [Mathlib overview: General algebra › Rings](https://github.com/leanprover-community/mathlib4/blob/15cf10d19dfd4cdee9602318e271fa3ce99c454d/docs/overview.yaml#L70)

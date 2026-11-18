@@ -17,5 +17,5 @@ FirstOrder.Language.Structure.{u, v, w} (L : FirstOrder.Language) (M : Type w) :
 ## Sources
 
 - [Mathlib documentation: `FirstOrder.Language.Structure`](https://leanprover-community.github.io/mathlib4_docs/Mathlib/ModelTheory/Basic.html#FirstOrder.Language.Structure)
-- [Source of `FirstOrder.Language.Structure` in Mathlib/ModelTheory/Basic.lean](https://github.com/leanprover-community/mathlib4/blob/9bac2d0692944a775113f7c130fd5e5b4608a854/Mathlib/ModelTheory/Basic.lean#L150)
-- [Mathlib overview: Logic and computation › Model theory](https://github.com/leanprover-community/mathlib4/blob/9bac2d0692944a775113f7c130fd5e5b4608a854/docs/overview.yaml#L636)
+- [Source of `FirstOrder.Language.Structure` in Mathlib/ModelTheory/Basic.lean](https://github.com/leanprover-community/mathlib4/blob/15cf10d19dfd4cdee9602318e271fa3ce99c454d/Mathlib/ModelTheory/Basic.lean#L150)
+- [Mathlib overview: Logic and computation › Model theory](https://github.com/leanprover-community/mathlib4/blob/15cf10d19dfd4cdee9602318e271fa3ce99c454d/docs/overview.yaml#L636)

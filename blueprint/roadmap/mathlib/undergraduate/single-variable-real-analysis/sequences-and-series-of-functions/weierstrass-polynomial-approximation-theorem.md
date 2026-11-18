@@ -37,5 +37,5 @@ polynomialFunctions_closure_eq_top (a b : ℝ) :
 ## Sources
 
 - [Mathlib documentation: `polynomialFunctions_closure_eq_top`](https://leanprover-community.github.io/mathlib4_docs/Mathlib/Topology/ContinuousMap/Weierstrass.html#polynomialFunctions_closure_eq_top)
-- [Source of `polynomialFunctions_closure_eq_top` in Mathlib/Topology/ContinuousMap/Weierstrass.lean](https://github.com/leanprover-community/mathlib4/blob/9bac2d0692944a775113f7c130fd5e5b4608a854/Mathlib/Topology/ContinuousMap/Weierstrass.lean#L48)
-- [Mathlib undergraduate list: Single Variable Real Analysis › Sequences and series of functions](https://github.com/leanprover-community/mathlib4/blob/9bac2d0692944a775113f7c130fd5e5b4608a854/docs/undergrad.yaml#L356)
+- [Source of `polynomialFunctions_closure_eq_top` in Mathlib/Topology/ContinuousMap/Weierstrass.lean](https://github.com/leanprover-community/mathlib4/blob/15cf10d19dfd4cdee9602318e271fa3ce99c454d/Mathlib/Topology/ContinuousMap/Weierstrass.lean#L48)
+- [Mathlib undergraduate list: Single Variable Real Analysis › Sequences and series of functions](https://github.com/leanprover-community/mathlib4/blob/15cf10d19dfd4cdee9602318e271fa3ce99c454d/docs/undergrad.yaml#L356)

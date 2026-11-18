@@ -28,9 +28,9 @@ Affine.Triangle.prod_dist_div_dist_eq_one_of_mem_line_of_mem_line.{u_1, u_2, u_3
 ## Sources
 
 - [Mathlib documentation: `Affine.Triangle.prod_dist_div_dist_eq_one_of_mem_line_of_mem_line`](https://leanprover-community.github.io/mathlib4_docs/Mathlib/Analysis/Normed/Affine/Ceva.html#Affine.Triangle.prod_dist_div_dist_eq_one_of_mem_line_of_mem_line)
-- [Source of `Affine.Triangle.prod_dist_div_dist_eq_one_of_mem_line_of_mem_line` in Mathlib/Analysis/Normed/Affine/Ceva.lean](https://github.com/leanprover-community/mathlib4/blob/9bac2d0692944a775113f7c130fd5e5b4608a854/Mathlib/Analysis/Normed/Affine/Ceva.lean#L44)
-- [Freek Wiedijk's 100 theorems, no. 61](https://github.com/leanprover-community/mathlib4/blob/9bac2d0692944a775113f7c130fd5e5b4608a854/docs/100.yaml#L311)
-- [1000+ theorems list: Q213603](https://github.com/leanprover-community/mathlib4/blob/9bac2d0692944a775113f7c130fd5e5b4608a854/docs/1000.yaml#L233)
+- [Source of `Affine.Triangle.prod_dist_div_dist_eq_one_of_mem_line_of_mem_line` in Mathlib/Analysis/Normed/Affine/Ceva.lean](https://github.com/leanprover-community/mathlib4/blob/15cf10d19dfd4cdee9602318e271fa3ce99c454d/Mathlib/Analysis/Normed/Affine/Ceva.lean#L43)
+- [Freek Wiedijk's 100 theorems, no. 61](https://github.com/leanprover-community/mathlib4/blob/15cf10d19dfd4cdee9602318e271fa3ce99c454d/docs/100.yaml#L311)
+- [1000+ theorems list: Q213603](https://github.com/leanprover-community/mathlib4/blob/15cf10d19dfd4cdee9602318e271fa3ce99c454d/docs/1000.yaml#L233)
 - [1000+ theorems project: Q213603](https://1000-plus.github.io/all.html?length=-1#Q213603)
 - [Wikipedia: Ceva's theorem](https://en.wikipedia.org/wiki/Ceva's_theorem)
 - [Wikidata: Q213603](https://www.wikidata.org/wiki/Q213603)

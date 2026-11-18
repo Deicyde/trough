@@ -36,5 +36,5 @@ CircleDeg1Lift.semiconj_of_group_action_of_forall_translationNumber_eq.{u_1} {G 
 ## Sources
 
 - [Mathlib documentation: `CircleDeg1Lift.semiconj_of_group_action_of_forall_translationNumber_eq`](https://leanprover-community.github.io/mathlib4_docs/Mathlib/Dynamics/Circle/RotationNumber/TranslationNumber.html#CircleDeg1Lift.semiconj_of_group_action_of_forall_translationNumber_eq)
-- [Source of `CircleDeg1Lift.semiconj_of_group_action_of_forall_translationNumber_eq` in Mathlib/Dynamics/Circle/RotationNumber/TranslationNumber.lean](https://github.com/leanprover-community/mathlib4/blob/9bac2d0692944a775113f7c130fd5e5b4608a854/Mathlib/Dynamics/Circle/RotationNumber/TranslationNumber.lean#L825)
-- [Mathlib overview: Dynamics › Circle dynamics](https://github.com/leanprover-community/mathlib4/blob/9bac2d0692944a775113f7c130fd5e5b4608a854/docs/overview.yaml#L558)
+- [Source of `CircleDeg1Lift.semiconj_of_group_action_of_forall_translationNumber_eq` in Mathlib/Dynamics/Circle/RotationNumber/TranslationNumber.lean](https://github.com/leanprover-community/mathlib4/blob/15cf10d19dfd4cdee9602318e271fa3ce99c454d/Mathlib/Dynamics/Circle/RotationNumber/TranslationNumber.lean#L825)
+- [Mathlib overview: Dynamics › Circle dynamics](https://github.com/leanprover-community/mathlib4/blob/15cf10d19dfd4cdee9602318e271fa3ce99c454d/docs/overview.yaml#L558)

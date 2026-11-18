@@ -20,5 +20,5 @@ Ordinal.CNF.{u_1} (b o : Ordinal.{u_1}) : List (Ordinal.{u_1} × Ordinal.{u_1})
 ## Sources
 
 - [Mathlib documentation: `Ordinal.CNF`](https://leanprover-community.github.io/mathlib4_docs/Mathlib/SetTheory/Ordinal/CantorNormalForm.html#Ordinal.CNF)
-- [Source of `Ordinal.CNF` in Mathlib/SetTheory/Ordinal/CantorNormalForm.lean](https://github.com/leanprover-community/mathlib4/blob/9bac2d0692944a775113f7c130fd5e5b4608a854/Mathlib/SetTheory/Ordinal/CantorNormalForm.lean#L63)
-- [Mathlib overview: Logic and computation › Set theory › Ordinals](https://github.com/leanprover-community/mathlib4/blob/9bac2d0692944a775113f7c130fd5e5b4608a854/docs/overview.yaml#L625)
+- [Source of `Ordinal.CNF` in Mathlib/SetTheory/Ordinal/CantorNormalForm.lean](https://github.com/leanprover-community/mathlib4/blob/15cf10d19dfd4cdee9602318e271fa3ce99c454d/Mathlib/SetTheory/Ordinal/CantorNormalForm.lean#L63)
+- [Mathlib overview: Logic and computation › Set theory › Ordinals](https://github.com/leanprover-community/mathlib4/blob/15cf10d19dfd4cdee9602318e271fa3ce99c454d/docs/overview.yaml#L625)

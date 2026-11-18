@@ -17,5 +17,5 @@ InnerProductSpace.Core.toNorm.{u_1, u_3} {𝕜 : Type u_1} {F : Type u_3} [RCLik
 ## Sources
 
 - [Mathlib documentation: `InnerProductSpace.Core.toNorm`](https://leanprover-community.github.io/mathlib4_docs/Mathlib/Analysis/InnerProductSpace/Defs.html#InnerProductSpace.Core.toNorm)
-- [Source of `InnerProductSpace.Core.toNorm` in Mathlib/Analysis/InnerProductSpace/Defs.lean](https://github.com/leanprover-community/mathlib4/blob/9bac2d0692944a775113f7c130fd5e5b4608a854/Mathlib/Analysis/InnerProductSpace/Defs.lean#L376)
-- [Mathlib undergraduate list: Bilinear and Quadratic Forms Over a Vector Space › Euclidean and Hermitian spaces](https://github.com/leanprover-community/mathlib4/blob/9bac2d0692944a775113f7c130fd5e5b4608a854/docs/undergrad.yaml#L220)
+- [Source of `InnerProductSpace.Core.toNorm` in Mathlib/Analysis/InnerProductSpace/Defs.lean](https://github.com/leanprover-community/mathlib4/blob/15cf10d19dfd4cdee9602318e271fa3ce99c454d/Mathlib/Analysis/InnerProductSpace/Defs.lean#L376)
+- [Mathlib undergraduate list: Bilinear and Quadratic Forms Over a Vector Space › Euclidean and Hermitian spaces](https://github.com/leanprover-community/mathlib4/blob/15cf10d19dfd4cdee9602318e271fa3ce99c454d/docs/undergrad.yaml#L220)

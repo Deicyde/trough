@@ -1,4 +1,5 @@
 # Third Approach
 
 - [Hadamard factorization](hadamard-factorization/README.md)
-- [Strong PNT](strong-pnt/README.md)
+- [ZetaBounds](zetabounds/README.md)
+- [StrongPNT](strongpnt/README.md)

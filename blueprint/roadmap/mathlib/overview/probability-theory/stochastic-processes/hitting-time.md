@@ -18,5 +18,5 @@ MeasureTheory.hittingBtwn.{u_1, u_2, u_3} {Ω : Type u_1} {β : Type u_2} {ι : 
 ## Sources
 
 - [Mathlib documentation: `MeasureTheory.hittingBtwn`](https://leanprover-community.github.io/mathlib4_docs/Mathlib/Probability/Process/HittingTime.html#MeasureTheory.hittingBtwn)
-- [Source of `MeasureTheory.hittingBtwn` in Mathlib/Probability/Process/HittingTime.lean](https://github.com/leanprover-community/mathlib4/blob/9bac2d0692944a775113f7c130fd5e5b4608a854/Mathlib/Probability/Process/HittingTime.lean#L52)
-- [Mathlib overview: Probability Theory › Stochastic Processes](https://github.com/leanprover-community/mathlib4/blob/9bac2d0692944a775113f7c130fd5e5b4608a854/docs/overview.yaml#L426)
+- [Source of `MeasureTheory.hittingBtwn` in Mathlib/Probability/Process/HittingTime.lean](https://github.com/leanprover-community/mathlib4/blob/15cf10d19dfd4cdee9602318e271fa3ce99c454d/Mathlib/Probability/Process/HittingTime.lean#L51)
+- [Mathlib overview: Probability Theory › Stochastic Processes](https://github.com/leanprover-community/mathlib4/blob/15cf10d19dfd4cdee9602318e271fa3ce99c454d/docs/overview.yaml#L426)

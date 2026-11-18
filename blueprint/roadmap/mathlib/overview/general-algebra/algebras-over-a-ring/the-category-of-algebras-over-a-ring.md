@@ -124,5 +124,5 @@ description of commutative algebras and their coproducts.
 ## Sources
 
 - [Mathlib documentation: `AlgCat`](https://leanprover-community.github.io/mathlib4_docs/Mathlib/Algebra/Category/AlgCat/Basic.html#AlgCat)
-- [Source of `AlgCat` in Mathlib/Algebra/Category/AlgCat/Basic.lean](https://github.com/leanprover-community/mathlib4/blob/9bac2d0692944a775113f7c130fd5e5b4608a854/Mathlib/Algebra/Category/AlgCat/Basic.lean#L28)
-- [Mathlib overview: General algebra › Algebras over a ring](https://github.com/leanprover-community/mathlib4/blob/9bac2d0692944a775113f7c130fd5e5b4608a854/docs/overview.yaml#L111)
+- [Source of `AlgCat` in Mathlib/Algebra/Category/AlgCat/Basic.lean](https://github.com/leanprover-community/mathlib4/blob/15cf10d19dfd4cdee9602318e271fa3ce99c454d/Mathlib/Algebra/Category/AlgCat/Basic.lean#L28)
+- [Mathlib overview: General algebra › Algebras over a ring](https://github.com/leanprover-community/mathlib4/blob/15cf10d19dfd4cdee9602318e271fa3ce99c454d/docs/overview.yaml#L111)

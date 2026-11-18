@@ -126,5 +126,5 @@ extensions are algebraic.
 ## Sources
 
 - [Mathlib documentation: `Polynomial.Separable`](https://leanprover-community.github.io/mathlib4_docs/Mathlib/FieldTheory/Separable.html#Polynomial.Separable)
-- [Source of `Polynomial.Separable` in Mathlib/FieldTheory/Separable.lean](https://github.com/leanprover-community/mathlib4/blob/9bac2d0692944a775113f7c130fd5e5b4608a854/Mathlib/FieldTheory/Separable.lean#L40)
-- [Mathlib overview: General algebra › Polynomials and power series](https://github.com/leanprover-community/mathlib4/blob/9bac2d0692944a775113f7c130fd5e5b4608a854/docs/overview.yaml#L99)
+- [Source of `Polynomial.Separable` in Mathlib/FieldTheory/Separable.lean](https://github.com/leanprover-community/mathlib4/blob/15cf10d19dfd4cdee9602318e271fa3ce99c454d/Mathlib/FieldTheory/Separable.lean#L39)
+- [Mathlib overview: General algebra › Polynomials and power series](https://github.com/leanprover-community/mathlib4/blob/15cf10d19dfd4cdee9602318e271fa3ce99c454d/docs/overview.yaml#L99)

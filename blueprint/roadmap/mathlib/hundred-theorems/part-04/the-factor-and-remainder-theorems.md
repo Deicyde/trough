@@ -30,7 +30,7 @@ Polynomial.mod_X_sub_C_eq_C_eval.{u} {R : Type u} [Field R] (p : Polynomial R) (
 ## Sources
 
 - [Mathlib documentation: `Polynomial.dvd_iff_isRoot`](https://leanprover-community.github.io/mathlib4_docs/Mathlib/Algebra/Polynomial/Div.html#Polynomial.dvd_iff_isRoot)
-- [Source of `Polynomial.dvd_iff_isRoot` in Mathlib/Algebra/Polynomial/Div.lean](https://github.com/leanprover-community/mathlib4/blob/9bac2d0692944a775113f7c130fd5e5b4608a854/Mathlib/Algebra/Polynomial/Div.lean#L627)
+- [Source of `Polynomial.dvd_iff_isRoot` in Mathlib/Algebra/Polynomial/Div.lean](https://github.com/leanprover-community/mathlib4/blob/15cf10d19dfd4cdee9602318e271fa3ce99c454d/Mathlib/Algebra/Polynomial/Div.lean#L627)
 - [Mathlib documentation: `Polynomial.mod_X_sub_C_eq_C_eval`](https://leanprover-community.github.io/mathlib4_docs/Mathlib/Algebra/Polynomial/FieldDivision.html#Polynomial.mod_X_sub_C_eq_C_eval)
-- [Source of `Polynomial.mod_X_sub_C_eq_C_eval` in Mathlib/Algebra/Polynomial/FieldDivision.lean](https://github.com/leanprover-community/mathlib4/blob/9bac2d0692944a775113f7c130fd5e5b4608a854/Mathlib/Algebra/Polynomial/FieldDivision.lean#L349)
-- [Freek Wiedijk's 100 theorems, no. 89](https://github.com/leanprover-community/mathlib4/blob/9bac2d0692944a775113f7c130fd5e5b4608a854/docs/100.yaml#L457)
+- [Source of `Polynomial.mod_X_sub_C_eq_C_eval` in Mathlib/Algebra/Polynomial/FieldDivision.lean](https://github.com/leanprover-community/mathlib4/blob/15cf10d19dfd4cdee9602318e271fa3ce99c454d/Mathlib/Algebra/Polynomial/FieldDivision.lean#L348)
+- [Freek Wiedijk's 100 theorems, no. 89](https://github.com/leanprover-community/mathlib4/blob/15cf10d19dfd4cdee9602318e271fa3ce99c454d/docs/100.yaml#L457)

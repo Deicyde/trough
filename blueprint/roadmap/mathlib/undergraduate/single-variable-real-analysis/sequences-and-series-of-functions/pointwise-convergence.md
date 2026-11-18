@@ -21,5 +21,5 @@ tendsto_pi_nhds.{v, u_2, u_3} {Y : Type v} {ι : Type u_2} {A : ι → Type u_3}
 ## Sources
 
 - [Mathlib documentation: `tendsto_pi_nhds`](https://leanprover-community.github.io/mathlib4_docs/Mathlib/Topology/Constructions.html#tendsto_pi_nhds)
-- [Source of `tendsto_pi_nhds` in Mathlib/Topology/Constructions.lean](https://github.com/leanprover-community/mathlib4/blob/9bac2d0692944a775113f7c130fd5e5b4608a854/Mathlib/Topology/Constructions.lean#L818)
-- [Mathlib undergraduate list: Single Variable Real Analysis › Sequences and series of functions](https://github.com/leanprover-community/mathlib4/blob/9bac2d0692944a775113f7c130fd5e5b4608a854/docs/undergrad.yaml#L349)
+- [Source of `tendsto_pi_nhds` in Mathlib/Topology/Constructions.lean](https://github.com/leanprover-community/mathlib4/blob/15cf10d19dfd4cdee9602318e271fa3ce99c454d/Mathlib/Topology/Constructions.lean#L817)
+- [Mathlib undergraduate list: Single Variable Real Analysis › Sequences and series of functions](https://github.com/leanprover-community/mathlib4/blob/15cf10d19dfd4cdee9602318e271fa3ce99c454d/docs/undergrad.yaml#L349)

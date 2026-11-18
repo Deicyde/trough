@@ -15,5 +15,5 @@ AffineIsometryEquiv.instGroup.{u_1, u_2, u_7} {𝕜 : Type u_1} {V : Type u_2} {
 ## Sources
 
 - [Mathlib documentation: `AffineIsometryEquiv.instGroup`](https://leanprover-community.github.io/mathlib4_docs/Mathlib/Analysis/Normed/Affine/Isometry.html#AffineIsometryEquiv.instGroup)
-- [Source of `AffineIsometryEquiv.instGroup` in Mathlib/Analysis/Normed/Affine/Isometry.lean](https://github.com/leanprover-community/mathlib4/blob/9bac2d0692944a775113f7c130fd5e5b4608a854/Mathlib/Analysis/Normed/Affine/Isometry.lean#L594)
-- [Mathlib undergraduate list: Affine and Euclidean Geometry › Euclidean affine spaces](https://github.com/leanprover-community/mathlib4/blob/9bac2d0692944a775113f7c130fd5e5b4608a854/docs/undergrad.yaml#L260)
+- [Source of `AffineIsometryEquiv.instGroup` in Mathlib/Analysis/Normed/Affine/Isometry.lean](https://github.com/leanprover-community/mathlib4/blob/15cf10d19dfd4cdee9602318e271fa3ce99c454d/Mathlib/Analysis/Normed/Affine/Isometry.lean#L618)
+- [Mathlib undergraduate list: Affine and Euclidean Geometry › Euclidean affine spaces](https://github.com/leanprover-community/mathlib4/blob/15cf10d19dfd4cdee9602318e271fa3ce99c454d/docs/undergrad.yaml#L260)

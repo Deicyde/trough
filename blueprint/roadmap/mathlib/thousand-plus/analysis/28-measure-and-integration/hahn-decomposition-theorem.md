@@ -33,8 +33,8 @@ MeasureTheory.SignedMeasure.exists_isCompl_positive_negative.{u_1} {α : Type u_
 ## Sources
 
 - [Mathlib documentation: `MeasureTheory.SignedMeasure.exists_isCompl_positive_negative`](https://leanprover-community.github.io/mathlib4_docs/Mathlib/MeasureTheory/VectorMeasure/Decomposition/Hahn.html#MeasureTheory.SignedMeasure.exists_isCompl_positive_negative)
-- [Source of `MeasureTheory.SignedMeasure.exists_isCompl_positive_negative` in Mathlib/MeasureTheory/VectorMeasure/Decomposition/Hahn.lean](https://github.com/leanprover-community/mathlib4/blob/9bac2d0692944a775113f7c130fd5e5b4608a854/Mathlib/MeasureTheory/VectorMeasure/Decomposition/Hahn.lean#L407)
-- [1000+ theorems list: Q1568811](https://github.com/leanprover-community/mathlib4/blob/9bac2d0692944a775113f7c130fd5e5b4608a854/docs/1000.yaml#L1778)
+- [Source of `MeasureTheory.SignedMeasure.exists_isCompl_positive_negative` in Mathlib/MeasureTheory/VectorMeasure/Decomposition/Hahn.lean](https://github.com/leanprover-community/mathlib4/blob/15cf10d19dfd4cdee9602318e271fa3ce99c454d/Mathlib/MeasureTheory/VectorMeasure/Decomposition/Hahn.lean#L407)
+- [1000+ theorems list: Q1568811](https://github.com/leanprover-community/mathlib4/blob/15cf10d19dfd4cdee9602318e271fa3ce99c454d/docs/1000.yaml#L1781)
 - [1000+ theorems project: Q1568811](https://1000-plus.github.io/all.html?length=-1#Q1568811)
 - [Wikipedia: Hahn decomposition theorem](https://en.wikipedia.org/wiki/Hahn_decomposition_theorem)
 - [Wikidata: Q1568811](https://www.wikidata.org/wiki/Q1568811)

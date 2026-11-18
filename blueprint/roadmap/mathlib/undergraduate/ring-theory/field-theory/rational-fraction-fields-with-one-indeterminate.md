@@ -18,5 +18,5 @@ RatFunc.{u} (K : Type u) [CommRing K] : Type u
 ## Sources
 
 - [Mathlib documentation: `RatFunc`](https://leanprover-community.github.io/mathlib4_docs/Mathlib/FieldTheory/RatFunc/Defs.html#RatFunc)
-- [Source of `RatFunc` in Mathlib/FieldTheory/RatFunc/Defs.lean](https://github.com/leanprover-community/mathlib4/blob/9bac2d0692944a775113f7c130fd5e5b4608a854/Mathlib/FieldTheory/RatFunc/Defs.lean#L61)
-- [Mathlib undergraduate list: Ring Theory › Field Theory](https://github.com/leanprover-community/mathlib4/blob/9bac2d0692944a775113f7c130fd5e5b4608a854/docs/undergrad.yaml#L189)
+- [Source of `RatFunc` in Mathlib/FieldTheory/RatFunc/Defs.lean](https://github.com/leanprover-community/mathlib4/blob/15cf10d19dfd4cdee9602318e271fa3ce99c454d/Mathlib/FieldTheory/RatFunc/Defs.lean#L60)
+- [Mathlib undergraduate list: Ring Theory › Field Theory](https://github.com/leanprover-community/mathlib4/blob/15cf10d19dfd4cdee9602318e271fa3ce99c454d/docs/undergrad.yaml#L189)

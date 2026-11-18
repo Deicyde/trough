@@ -135,5 +135,5 @@ be semisimple.
 ## Sources
 
 - [Mathlib documentation: `Representation`](https://leanprover-community.github.io/mathlib4_docs/Mathlib/RepresentationTheory/Basic.html#Representation)
-- [Source of `Representation` in Mathlib/RepresentationTheory/Basic.lean](https://github.com/leanprover-community/mathlib4/blob/9bac2d0692944a775113f7c130fd5e5b4608a854/Mathlib/RepresentationTheory/Basic.lean#L46)
-- [Mathlib overview: General algebra › Representation theory](https://github.com/leanprover-community/mathlib4/blob/9bac2d0692944a775113f7c130fd5e5b4608a854/docs/overview.yaml#L162)
+- [Source of `Representation` in Mathlib/RepresentationTheory/Basic.lean](https://github.com/leanprover-community/mathlib4/blob/15cf10d19dfd4cdee9602318e271fa3ce99c454d/Mathlib/RepresentationTheory/Basic.lean#L46)
+- [Mathlib overview: General algebra › Representation theory](https://github.com/leanprover-community/mathlib4/blob/15cf10d19dfd4cdee9602318e271fa3ce99c454d/docs/overview.yaml#L162)

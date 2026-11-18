@@ -65,5 +65,5 @@ Mathlib bundles a presheafed space as an object of the category of topological s
 ## Sources
 
 - [Mathlib documentation: `AlgebraicGeometry.PresheafedSpace`](https://leanprover-community.github.io/mathlib4_docs/Mathlib/Geometry/RingedSpace/PresheafedSpace.html#AlgebraicGeometry.PresheafedSpace)
-- [Source of `AlgebraicGeometry.PresheafedSpace` in Mathlib/Geometry/RingedSpace/PresheafedSpace.lean](https://github.com/leanprover-community/mathlib4/blob/9bac2d0692944a775113f7c130fd5e5b4608a854/Mathlib/Geometry/RingedSpace/PresheafedSpace.lean#L41)
-- [Mathlib overview: General algebra › Category theory](https://github.com/leanprover-community/mathlib4/blob/9bac2d0692944a775113f7c130fd5e5b4608a854/docs/overview.yaml#L13)
+- [Source of `AlgebraicGeometry.PresheafedSpace` in Mathlib/Geometry/RingedSpace/PresheafedSpace.lean](https://github.com/leanprover-community/mathlib4/blob/15cf10d19dfd4cdee9602318e271fa3ce99c454d/Mathlib/Geometry/RingedSpace/PresheafedSpace.lean#L41)
+- [Mathlib overview: General algebra › Category theory](https://github.com/leanprover-community/mathlib4/blob/15cf10d19dfd4cdee9602318e271fa3ce99c454d/docs/overview.yaml#L13)
