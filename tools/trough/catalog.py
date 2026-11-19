@@ -133,7 +133,8 @@ def sources_readme(libraries: list[dict], mathlib_rev: str, thousand_plus: dict 
                    formal_conjectures: str | None = None, lean_pool: str | None = None,
                    anthropic_flt: dict | None = None, cfsg: str | None = None,
                    stacks: str | None = None, atlas: str | None = None, openai_math: str | None = None,
-                   cslib: str | None = None, physlib: str | None = None) -> str:
+                   cslib: str | None = None, physlib: str | None = None,
+                   blueprint_revs: dict[str, str] | None = None) -> str:
     """The sources page. *blueprints* has (id, name, repo, license, text) for each blueprint library;
     *tauceti* has the Tau Ceti and roadmap commits, once the chapter is built; *formal_frontier* has the
     commit each Formal Frontier library's record pins, by library id; *formal_conjectures* is the Formal
@@ -141,7 +142,8 @@ def sources_readme(libraries: list[dict], mathlib_rev: str, thousand_plus: dict 
     source record of Anthropic's Fermat's Last Theorem, whose commit it pins, *cfsg* the commit Axiom
     Math's CFSG's record pins, *stacks* the commit of Axiom's Stacks Project formalization, *atlas* the
     commit of ATLAS's vault, on its fork's wiki/autoform-blueprint branch, *openai_math* the commit of
-    OpenAI Math's record, *cslib* the commit of CSLib and *physlib* the commit of Physlib its record pins."""
+    OpenAI Math's record, *cslib* the commit of CSLib and *physlib* the commit of Physlib its record pins;
+    *blueprint_revs* has the commit each blueprint library's data/blueprints/<id>/source.json pins, by id."""
     formal_frontier = formal_frontier or {}
     # Every chapter whose data pins a library's commit, by library id; the Libraries list shows that commit.
     pinned = (formal_frontier | ({"formal-conjectures": formal_conjectures} if formal_conjectures else {})
@@ -151,7 +153,8 @@ def sources_readme(libraries: list[dict], mathlib_rev: str, thousand_plus: dict 
               | ({"stacks": stacks} if stacks else {})
               | ({"openai-math": openai_math} if openai_math else {})
               | ({"cslib": cslib} if cslib else {})
-              | ({"physlib": physlib} if physlib else {}))
+              | ({"physlib": physlib} if physlib else {})
+              | (blueprint_revs or {}))
     lines = [
         "# Sources",
         "",

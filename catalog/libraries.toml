@@ -6,7 +6,9 @@
 # its data/ff/ record pins, Formal Conjectures' the one
 # data/formal-conjectures/source.json pins, Anthropic's FLT's the one
 # data/anthropic-flt/source.json pins and Axiom Math's CFSG's the one
-# data/cfsg/source.json pins, so their entries have no head. Nor has Lean
+# data/cfsg/source.json pins, so their entries have no head. Nor have the
+# blueprint libraries': each one's commit is the one its
+# data/blueprints/<id>/source.json pins. Nor has Lean
 # Pool's: its commit is the one data/lean-pool/ pins, and its snapshot fields
 # were read at that pin on 2026-11-08. map_status is "live" (a chapter of this
 # site), "elsewhere" (mapped on another site) or
@@ -85,8 +87,6 @@ license = "Apache-2.0"
 toolchain = "v4.35.0"
 mathlib = "56a005855ea1"
 lean_files = 271
-head = "a3210204ad88"
-head_date = "2026-10-22"
 map_status = "live"
 map_unit = "blueprint node"
 map_plan = "One article per node of its leanblueprint that is in Lean, with dependencies from its uses; the Verso blueprint (3 chapters) is left for later."
@@ -104,8 +104,6 @@ license = "Apache-2.0"
 toolchain = "v4.35.0"
 mathlib = "56a005855ea1"
 lean_files = 235
-head = "127b50e33f60"
-head_date = "2026-10-20"
 map_status = "live"
 map_unit = "blueprint node"
 map_plan = "One article per node of its LeanArchitect blueprint that is in Lean, with dependencies from its uses; the Blueprint build workflow builds the blueprint weekly with `lake build :blueprint`."
@@ -123,8 +121,6 @@ license = "Apache-2.0"
 toolchain = "v4.36.0-rc2"
 mathlib = "8fe7ce475b05"
 lean_files = 76
-head = "7e7fadf0c4d0"
-head_date = "2026-10-29"
 map_status = "live"
 map_unit = "blueprint node"
 map_plan = "One article per node of its leanblueprint that is in Lean, with dependencies from its uses."
@@ -142,8 +138,6 @@ license = "Apache-2.0"
 toolchain = "v4.29.1"
 mathlib = "5e932f97dd25"
 lean_files = 1347
-head = "2ddb16c4c4c0"
-head_date = "2026-11-01"
 map_status = "live"
 map_unit = "blueprint node"
 map_plan = "One article per node of its leanblueprint that is in Lean, with dependencies from its uses; the equations and implication classes in the project's data files are left for later."
@@ -161,8 +155,6 @@ license = "none (no LICENSE file; GitHub reports no license)"
 toolchain = "v4.21.0"
 mathlib = "308445d79850"
 lean_files = 8
-head = "2f5835c32231"
-head_date = "2025-09-11"
 map_status = "live"
 map_unit = "blueprint node"
 map_plan = "One article per node of its leanblueprint that is in Lean, with dependencies from its uses. The project gives no license, so the articles link to its statements rather than quote them."
