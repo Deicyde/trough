@@ -532,6 +532,7 @@ class Writer:
                     out.extend(self.list_block(env, body))
                 elif env == "thebibliography":
                     flush()
+                    out.append(Para("**References**"))
                     out.extend(self.list_block("itemize", bibliography_items(body)))
                 elif env in QUOTES:
                     flush()
@@ -943,12 +944,27 @@ class Writer:
         return re.sub(r"\s+", " ", writer.inline(tex)).strip()
 
 
+BIBITEM = re.compile(r"\\bibitem\s*(?:\[([^\]]*)\])?\s*\{([^}]*)\}")
+
+
+def bibitems(body: str) -> list[tuple[str, str]]:
+    """Each \\bibitem of a thebibliography's body: its key and the label LaTeX prints, its own or else its number,
+    which counts only the items with no label of their own."""
+    out, number = [], 0
+    for match in BIBITEM.finditer(body):
+        if match.group(1) is None:
+            number += 1
+        out.append((squeeze(match.group(2)), match.group(1).strip() if match.group(1) is not None else str(number)))
+    return out
+
+
 def bibliography_items(body: str) -> str:
-    """A thebibliography's body as an itemize body: the widest label goes, and each \\bibitem, with its
-    key and any printed label, is an \\item."""
+    """A thebibliography's body as an itemize body: the widest label goes, and each \\bibitem is an \\item that
+    shows the label citations print for it."""
     widest = argument(body, 0)
     body = body[widest[1]:] if widest else body
-    return re.sub(r"\\bibitem\s*(?:\[[^\]]*\])?\s*\{[^}]*\}", r"\\item ", body)
+    labels = iter([label for _, label in bibitems(body)])
+    return BIBITEM.sub(lambda match: f"\\item[{{[{next(labels)}]}}] ", body)
 
 
 def cited(text: str) -> list[str]:

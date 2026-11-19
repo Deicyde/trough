@@ -122,7 +122,7 @@ def main() -> int:
     for stale in ("structure.json", "LICENSE"):
         (directory / stale).unlink(missing_ok=True)
     if text:
-        for name in blueprint.files + blueprint.bibliography:
+        for name in blueprint.files + blueprint.bibliography + blueprint.print_files:
             target = directory / "src" / name
             target.parent.mkdir(parents=True, exist_ok=True)
             lake = name.removeprefix(f"{leanblueprint.ARCHITECT}/")

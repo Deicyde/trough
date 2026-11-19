@@ -35,6 +35,7 @@ from trough.tex import (
     FLOATS,
     LISTS,
     argument,
+    bibitems as tex_bibitems,
     bracket_end,
     definitions,
     environment_end,
@@ -56,6 +57,11 @@ UNREAD = re.compile(r" names no (?:file|module|node)$| nests too deep$")  # prob
 # Files an \input can name that hold no blueprint text: a bibliography a LaTeX run writes, or Markdown
 # such as an authors list. When one is missing, nothing the blueprint says is left unread.
 NOT_TEX = (".bbl", ".md")
+# The print entry, and how it names its .bib files: \bibliography, \addbibresource, bibunits' \defaultbibliography
+# or \putbib[...].
+PRINT = "print.tex"
+PRINT_BIBLIOGRAPHY = re.compile(r"\\(?:bibliography|addbibresource|defaultbibliography)\s*(?:\[[^\]]*\])?\s*\{([^}]*)\}"
+                                r"|\\putbib\s*\[([^\]]*)\]")
 # \ifplastex web \else print \fi: plasTeX, which builds the web blueprint, reads the first branch.
 IFPLASTEX = re.compile(r"(?<!\\newif)\\ifplastex(?![A-Za-z])")
 SECTION = re.compile(r"\\(part|chapter|section|subsection|subsubsection)(\*?)(?![A-Za-z])")
@@ -147,6 +153,9 @@ class Blueprint:
     problems: list[str]
     prose: list[Prose] = field(default_factory=list)  # in document order, from the first sectioning unit on
     bibliography: list[str] = field(default_factory=list)  # the .bib files it cites from
+    bibitems: dict[str, str] = field(default_factory=dict)  # a thebibliography's keys and the labels LaTeX prints
+    # Files read only for the names of its .bib files: the print entry, when the web entry names none.
+    print_files: list[str] = field(default_factory=list)
 
     @property
     def graph(self) -> list[Node]:
@@ -599,8 +608,24 @@ def read(root: Path, entry: str, architect: Path | None = None) -> Blueprint:
             elif found not in bibliography:
                 bibliography.append(found)
 
+    # A web entry that names no bibliography may leave it to the print entry beside it, as bibunits'
+    # \\defaultbibliography or \\putbib does, or a \\bibliography only print.tex loads.
+    print_files: list[str] = []
+    if not bibliography and (root / PRINT).is_file():
+        printed = "\n".join(strip_comment(line) for line in (root / PRINT).read_text(encoding="utf-8").splitlines())
+        for match in PRINT_BIBLIOGRAPHY.finditer(printed):
+            for name in names(match.group(1) or match.group(2) or ""):
+                found = document.resolve(name if name.endswith(".bib") else f"{name}.bib")
+                if found is not None and found not in bibliography:
+                    bibliography.append(found)
+        print_files = [PRINT] if bibliography else []
+    bibitems = {key: label for match in re.finditer(r"\\begin\s*\{thebibliography\}(.*?)\\end\s*\{thebibliography\}",
+                                                     text, re.S)
+                for key, label in tex_bibitems(match.group(1))}
+
     for node in nodes:
         for label in node.uses + node.proof_uses:
             if label not in labels:
                 problems.append(f"{node.where.file}:{node.where.line}: \\uses{{{label}}} names no label")
-    return Blueprint(document.files, macros, captions, thms, units, nodes, labels, links, problems, prose, bibliography)
+    return Blueprint(document.files, macros, captions, thms, units, nodes, labels, links, problems, prose, bibliography,
+                     bibitems, print_files)

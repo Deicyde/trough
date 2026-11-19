@@ -368,7 +368,27 @@ def test_verb_is_code():
 
 def test_a_thebibliography_is_a_list():
     tex_ = "\\begin{thebibliography}{9}\n\\bibitem{a}\nL.~Carlitz, \\emph{Note}.\n\n\\bibitem[IR]{b} K. Ireland.\n\\end{thebibliography}"
-    assert writer().statement(tex_) == "- L. Carlitz, *Note*.\n- K. Ireland."
+    assert writer().statement(tex_) == "**References**\n\n- [1] L. Carlitz, *Note*.\n- [IR] K. Ireland."
+    # Citations print the same labels: an item's own, or its number among the items with none.
+    assert tex.bibitems("\\bibitem{a} A. \\bibitem[IR]{b} B. \\bibitem{c} C.") == [("a", "1"), ("b", "IR"), ("c", "2")]
+
+
+def test_citations_read_a_thebibliography_and_the_print_entrys_bibliography(tmp_path):
+    src = tmp_path / "src"
+    src.mkdir()
+    (src / "web.tex").write_text(
+        "\\newcommand{\\putbib}{}\n\\begin{document}\n\\chapter{A}\n"
+        "\\begin{lemma}\\label{a}\\lean{A.a}\\leanok By \\cite[Exercise 1.1.1]{ds} and \\cite{luzin}.\\end{lemma}\n"
+        "\\putbib\n\\begin{thebibliography}{9}\\bibitem{ds} F. Diamond.\\end{thebibliography}\n\\end{document}\n")
+    # Brownian motion's layout: bibunits in print.tex names the .bib, and the web entry none.
+    (src / "print.tex").write_text("\\usepackage{bibunits}\n% \\defaultbibliography{old}\n"
+                                        "\\defaultbibliography{refs}\n\\input{content}\n")
+    (src / "refs.bib").write_text("@book{luzin, author = {Luzin, N.}, title = {Integral}, year = {1913}}\n")
+    blueprint = leanblueprint.read(src, "web.tex")
+    assert blueprint.bibliography == ["refs.bib"] and blueprint.print_files == ["print.tex"]
+    assert blueprint.bibitems == {"ds": "1"}
+    built, leaves = build(blueprint, tmp_path)
+    assert leaves["a"].body == "By (1, Exercise 1.1.1) and (Luzin 1913)."
 
 
 def test_a_proof_inside_a_proof_is_part_of_it(tmp_path):

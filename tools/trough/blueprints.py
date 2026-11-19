@@ -373,6 +373,8 @@ def chapter(project: Project, blueprint: Blueprint, mathlib_heads: dict[str, Lea
     texts += [unit.title for unit in blueprint.units]
     bib = bibtex.bibliography([project.directory / "src" / name for name in blueprint.bibliography],
                               [key for text in texts for key in cited(text)]) if project.text else {}
+    # A thebibliography's keys print the labels its list shows.
+    bib = {**{key: (label, None) for key, label in blueprint.bibitems.items()}, **bib}
 
     # Equations, figures and tables: numbered on their page in the blueprint's order, before
     # any text refers to one.
