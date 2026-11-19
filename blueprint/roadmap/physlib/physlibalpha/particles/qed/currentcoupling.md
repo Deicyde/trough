@@ -114,6 +114,7 @@ lemma current_conservation (e m : ℝ) :
 
 - [Spin-statistics of the QED fields](fermionstatistics.md)
 - [Properties of the field strength](fieldstrength.md)
+- [Gauge invariance of quantum electrodynamics](gaugeinvariance.md)
 
 ## Sources
 

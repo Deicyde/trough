@@ -145,10 +145,6 @@ instance bisimilarityCongruence : LawfulCongruence (HomBisimilarity (lts (defs :
 - [Congruence](../../foundations/syntax/congruence.md)
 - [Semantics of CCS](semantics.md)
 
-## Proof depends on
-
-- [Buchi Congruence](../../computability/languages/congruences/buchicongruence.md)
-
 ## Sources
 
 - [Cslib/Languages/CCS/BehaviouralTheory.lean at 86d560b6](https://github.com/leanprover/cslib/blob/86d560b6cbb379bd82512424cbcd2a915a1565e7/Cslib/Languages/CCS/BehaviouralTheory.lean)

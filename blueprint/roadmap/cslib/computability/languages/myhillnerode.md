@@ -169,7 +169,7 @@ theorem unique_minimal [Finite State]
 
 ## Proof depends on
 
-- [Buchi Congruence](congruences/buchicongruence.md)
+- [Regular languages](regularlanguage.md)
 
 ## Sources
 
