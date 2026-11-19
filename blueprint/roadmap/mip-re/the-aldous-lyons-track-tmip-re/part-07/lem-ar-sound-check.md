@@ -8,7 +8,7 @@ proof: formalized
 
 # The proof check, on the polynomials
 
-An outcome of the oracle's polynomial measurement at a seed *passes densely* if its evaluations pass the thirteen checks of the seed's circuit on more than a fraction $m (5 + 6 (d + 1)) / q$ of the points of $\mathbb{F}_q^M$. If $q \geq 2 m (5 + 6 (d + 1))$, the outcomes of $G^\textsc{A}_\textsc{O}$ that do not pass densely weigh, summed over the seeds, at most $|Z| (2\, \delta_\textsc{O}(9\theta) + 162\, \theta)$.
+An outcome of the oracle's polynomial measurement at a seed *passes densely* if its evaluations pass the thirteen checks of the seed's circuit on more than a fraction $m (5 + 6 (d + 1)) / q$ of the points of $\mathbb{F}_q^M$. If $q \geq 2 m (5 + 6 (d + 1))$, the outcomes of $G^\text{A}_\text{O}$ that do not pass densely weigh, summed over the seeds, at most $|Z| (2\, \delta_\text{O}(9\theta) + 162\, \theta)$.
 
 ## Depends on
 
@@ -23,7 +23,7 @@ An outcome of the oracle's polynomial measurement at a seed *passes densely* if 
 
 ## Proof
 
-The typed data checks Bob's point answer at the oracle's point question against the seed's circuit. An outcome's evaluations at a point pass whenever Bob's point answer passes and agrees with them, so an outcome that does not pass densely meets, with probability at least one half, a point where Bob's answer fails or disagrees with it; the event moves between the two players' measurements at the cost of their disagreement, as in Lemma [Indifference, at two points of a line](lem-ar-sound-indifference.md). Those points weigh at most the extraction's error at the oracle and the failure at the pair of types $(\textsc{O}, \mathrm{Point}), (\textsc{O}, \mathrm{Point})$.
+The typed data checks Bob's point answer at the oracle's point question against the seed's circuit. An outcome's evaluations at a point pass whenever Bob's point answer passes and agrees with them, so an outcome that does not pass densely meets, with probability at least one half, a point where Bob's answer fails or disagrees with it; the event moves between the two players' measurements at the cost of their disagreement, as in Lemma [Indifference, at two points of a line](lem-ar-sound-indifference.md). Those points weigh at most the extraction's error at the oracle and the failure at the pair of types $(\text{O}, \mathrm{Point}), (\text{O}, \mathrm{Point})$.
 
 ## Lean
 

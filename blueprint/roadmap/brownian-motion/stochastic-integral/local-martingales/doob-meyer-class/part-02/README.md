@@ -9,7 +9,7 @@ navigation: transparent
 - [locally_classD_of_locally_classDL](lem-locally-classd-of-locally-classdl.md)
 - [isBounded_image_of_isCadlag_of_isCompact](lem-isbounded-image-of-iscadlag-of-iscompact.md)
 
-TODO: refine the hypotheses with those of Début theorem.
+…
 
 - [isLocalizingSequence_leastGE](lem-islocalizingsequence-leastge.md)
 - [sup_stoppedProcess_le](lem-sup-stoppedprocess-le.md)

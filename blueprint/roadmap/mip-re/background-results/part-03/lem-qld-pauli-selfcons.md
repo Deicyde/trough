@@ -11,14 +11,14 @@ proof: formalized
 For every basis $W$, every $e \in \mathbb{F}_q$ and every probe $\tilde{u} \in \mathbb{F}_q^{M}$, $M = 2^m$, the exact Pauli observable of Lemma [Exact Pauli operators](lem-qld-exact-paulis.md) on one party agrees with the same observable on the other:
 
 $$
-\left\| {\Bigl( \bigl( \tilde{W}^e(\tilde{u}) \bigr)_{\textsc{A} \textsc{A}' \textsc{A}''}
-- \bigl( \tilde{W}^e(\tilde{u}) \bigr)_{\textsc{B} \textsc{B}' \textsc{B}''} \Bigr)
+\left\| {\Bigl( \bigl( \tilde{W}^e(\tilde{u}) \bigr)_{\text{A} \text{A}' \text{A}''}
+- \bigl( \tilde{W}^e(\tilde{u}) \bigr)_{\text{B} \text{B}' \text{B}''} \Bigr)
 |\widehat{\psi}\rangle} \right\|^2
 \;\leq\; 72 \Bigl( 10 \delta_S + 860 \varepsilon + 2\sqrt{172 \varepsilon} + \frac{md}{q} \Bigr)
 \;=\; O\Bigl( \delta_S + \sqrt{\varepsilon} + \frac{md}{q} \Bigr) ,
 $$
 
-which is the paper's $\bigl( \tilde{W}^e(\tilde{u}) \bigr)_{\textsc{A} \textsc{A}' \textsc{A}''} \approx_{\delta_{qld}} \bigl( \tilde{W}^e(\tilde{u}) \bigr)_{\textsc{B} \textsc{B}' \textsc{B}''}$ once the $O(\sqrt\varepsilon)$ and $O(md/q)$ terms are absorbed into $\delta_S$, as the paper says it does. Two departures from the paper's phrasing, both in the direction of a stronger statement: the bound holds at *every* probe rather than on average over a uniform one — the chain never averages over the probe, only over the sampled point — and the constant is explicit. The Lean proves it for the two cuts of one physical state (`MirrorSimul`) of a projective strategy in any bipartite model, $|\widehat\psi\rangle$ being the state of the physical model of Definition [The models of stages 4 and 5](def-qld-physical-model.md); the two cuts exist for every legal projective strategy in the regime $48md \leq q$ of a model in which the seeded CL test is sound in every ancilla extension by a unit vector. The statement above is its tensor-product instance.
+which is the paper's $\bigl( \tilde{W}^e(\tilde{u}) \bigr)_{\text{A} \text{A}' \text{A}''} \approx_{\delta_{qld}} \bigl( \tilde{W}^e(\tilde{u}) \bigr)_{\text{B} \text{B}' \text{B}''}$ once the $O(\sqrt\varepsilon)$ and $O(md/q)$ terms are absorbed into $\delta_S$, as the paper says it does. Two departures from the paper's phrasing, both in the direction of a stronger statement: the bound holds at *every* probe rather than on average over a uniform one — the chain never averages over the probe, only over the sampled point — and the constant is explicit. The Lean proves it for the two cuts of one physical state (`MirrorSimul`) of a projective strategy in any bipartite model, $|\widehat\psi\rangle$ being the state of the physical model of Definition [The models of stages 4 and 5](def-qld-physical-model.md); the two cuts exist for every legal projective strategy in the regime $48md \leq q$ of a model in which the seeded CL test is sound in every ancilla extension by a unit vector. The statement above is its tensor-product instance.
 
 ## Depends on
 
@@ -35,7 +35,7 @@ which is the paper's $\bigl( \tilde{W}^e(\tilde{u}) \bigr)_{\textsc{A} \textsc{A
 
 ## Proof
 
-The paper's “pulling” chain. Right-multiplying $\tilde{M}^{W,\tilde{u}}_a$ on one party by the near-identity $\sum_g (\widehat S^W_g)_{\textsc{A}\textsc{A}'} \otimes (\widehat M^{(\mathtt{Point},W),u}_{g(u)})_{\textsc{B}\textsc{A}''}$ of Lemma [The marginals track the point measurements](lem-qld-helper.md) and expanding both definitions rewrites it as a sum over pairs $(g, h)$ with $({\mathrm{Coded}}(g) - h) \cdot \tilde{u} = a$ of $(\widehat S^W_g) \otimes (\tau^W_h) \otimes (M^{(\mathtt{Point},W),u}_{(g - g_h)(u)})$; the self-consistency of the point measurements (Lemma [Win implications](../part-02/lem-qld-win.md)) then moves the last factor across, and undoing the expansion on the other side gives the claim. Lemma [Schwartz–Zippel](../part-05/lem-schwartz-zippel.md) enters where $g$ is compared with $g_h$, and is where the $md/q$ of $\delta_{qld}$ comes from.
+The paper's “pulling” chain. Right-multiplying $\tilde{M}^{W,\tilde{u}}_a$ on one party by the near-identity $\sum_g (\widehat S^W_g)_{\text{A}\text{A}'} \otimes (\widehat M^{(\mathtt{Point},W),u}_{g(u)})_{\text{B}\text{A}''}$ of Lemma [The marginals track the point measurements](lem-qld-helper.md) and expanding both definitions rewrites it as a sum over pairs $(g, h)$ with $({\mathrm{Coded}}(g) - h) \cdot \tilde{u} = a$ of $(\widehat S^W_g) \otimes (\tau^W_h) \otimes (M^{(\mathtt{Point},W),u}_{(g - g_h)(u)})$; the self-consistency of the point measurements (Lemma [Win implications](../part-02/lem-qld-win.md)) then moves the last factor across, and undoing the expansion on the other side gives the claim. Lemma [Schwartz–Zippel](../part-05/lem-schwartz-zippel.md) enters where $g$ is compared with $g_h$, and is where the $md/q$ of $\delta_{qld}$ comes from.
 
 ## Lean
 

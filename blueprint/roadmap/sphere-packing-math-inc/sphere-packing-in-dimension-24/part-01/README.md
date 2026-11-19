@@ -17,7 +17,7 @@ navigation: transparent
 - [LP-d24](thm-lp-d24.md)
 - [SpherePackingConstant_eq_leech_density](thm-spherepackingconstant-eq-leech-density.md)
 
-**Remark.** The proof of [Cohn–Kumar–Miller–Radchenko–Viazovska](thm-maintheorem-d24.md) therefore splits into two parts: proving [Theorem SpherePackingConstant_eq_leech_density](thm-spherepackingconstant-eq-leech-density.md) by constructing such an $f$ with cutoff radius $2$, and proving uniqueness among periodic packings using the additional root structure (as in Section 8 of (ElkiesCohn)).
+**Remark.** The proof of [Cohn–Kumar–Miller–Radchenko–Viazovska](thm-maintheorem-d24.md) therefore splits into two parts: proving [Theorem SpherePackingConstant_eq_leech_density](thm-spherepackingconstant-eq-leech-density.md) by constructing such an $f$ with cutoff radius $2$, and proving uniqueness among periodic packings using the additional root structure (as in Section 8 of (2)).
 
 ## Uniqueness among optimal periodic packings
 

@@ -21,7 +21,7 @@ $\mathrm{TMIP}^* \subseteq \mathrm{MIP}^* \subseteq \mathrm{RE}$. Given a tailor
 
 ## Proof depends on
 
-- [Turing](../../background-results/part-03/thm-halting-undecidable.md)
+- [Turing](../../background-results/part-04/thm-halting-undecidable.md)
 
 ## Proof
 

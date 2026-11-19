@@ -20,7 +20,7 @@ $$
 
 ## Lean
 
-Formalized as [`SlashAction.slash_mul`](https://thefundamentaltheor3m.github.io/Sphere-Packing-Lean/docs/find/#doc/SlashAction.slash_mul).
+Formalized as `SlashAction.slash_mul`.
 
 ## Sources
 

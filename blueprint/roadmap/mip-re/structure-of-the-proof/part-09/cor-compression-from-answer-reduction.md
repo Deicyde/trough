@@ -8,7 +8,7 @@ proof: formalized
 
 # Compression, and $\mathrm{MIP}^* = \mathrm{RE}$, from answer reduction alone
 
-From an inhabitant of `MIPRE.AnswerReduction 5` alone there is a `MIPRE.GapCompression`, and consequently Theorem [Halting reduces to the game value; Theorem 12.2 of (JNVWY20), synchronous form](../../the-main-theorem/thm-main.md), Corollary [Halting reduces to the quantum value](../../the-main-theorem/cor-main-quantum.md), Corollary [Uncomputability of the game value](../../the-main-theorem/cor-value-uncomputable.md) and Theorem [$\mathrm{MIP}^* = \mathrm{RE}$](../../the-main-theorem/thm-mipstar-eq-re.md) hold with no other hypothesis.
+From an inhabitant of `MIPRE.AnswerReduction 5` alone there is a `MIPRE.GapCompression`, and consequently Theorem [Halting reduces to the game value; Theorem 12.2 of (1), synchronous form](../../the-main-theorem/thm-main.md), Corollary [Halting reduces to the quantum value](../../the-main-theorem/cor-main-quantum.md), Corollary [Uncomputability of the game value](../../the-main-theorem/cor-value-uncomputable.md) and Theorem [$\mathrm{MIP}^* = \mathrm{RE}$](../../the-main-theorem/thm-mipstar-eq-re.md) hold with no other hypothesis.
 
 ## Depends on
 

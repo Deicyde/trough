@@ -13,7 +13,7 @@ $$
 L(x) = L_1\bigl(x^{V_1}\bigr) + L_{>1,\, L_1(x^{V_1})}\bigl(x^{V_{>1}}\bigr)
 $$
 
-for complementary register subspaces $V = V_1 \oplus V_{>1}$, a linear map $L_1 : V_1 \to V_1$, and, for each $v$ in the range of $L_1$, an $(\ell-1)$-level CL function $L_{>1,v}$ on $V_{>1}$. A *CL distribution* is the distribution of $(L^\textsc{A}(x), L^\textsc{B}(x))$ for uniformly random $x \in V$ and CL functions $L^\textsc{A}, L^\textsc{B}$ on $V$.
+for complementary register subspaces $V = V_1 \oplus V_{>1}$, a linear map $L_1 : V_1 \to V_1$, and, for each $v$ in the range of $L_1$, an $(\ell-1)$-level CL function $L_{>1,v}$ on $V_{>1}$. A *CL distribution* is the distribution of $(L^\text{A}(x), L^\text{B}(x))$ for uniformly random $x \in V$ and CL functions $L^\text{A}, L^\text{B}$ on $V$.
 
 ## Depends on
 

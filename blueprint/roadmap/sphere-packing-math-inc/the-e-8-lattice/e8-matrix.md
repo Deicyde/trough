@@ -45,7 +45,7 @@ Its statement uses no other node of the blueprint.
 
 ## Lean
 
-Formalized as [`E8Matrix`](https://thefundamentaltheor3m.github.io/Sphere-Packing-Lean/docs/find/#doc/E8Matrix).
+Formalized as `E8Matrix`.
 
 ## Sources
 

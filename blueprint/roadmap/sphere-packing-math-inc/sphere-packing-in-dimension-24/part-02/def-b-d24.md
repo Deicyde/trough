@@ -20,7 +20,7 @@ $$
 
 ## Lean
 
-Formalized as [`SpherePacking.Dim24.BKernel`](https://thefundamentaltheor3m.github.io/Sphere-Packing-Lean/docs/find/#doc/SpherePacking.Dim24.BKernel).
+Formalized as `SpherePacking.Dim24.BKernel`.
 
 ## Sources
 

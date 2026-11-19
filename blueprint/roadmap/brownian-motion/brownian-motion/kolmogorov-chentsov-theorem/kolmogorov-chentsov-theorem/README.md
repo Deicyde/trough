@@ -2,7 +2,7 @@
 
 ## Sets with bounded internal covering number
 
-TODO: change the proofs here to avoid $s \ne t$ and use instead properties of processes satisfying the Kolmogorov condition for exponents $(p,q)$.
+…
 
 - [integral_div_dist_le_sum_integral_dist_le](lem-integral-div-dist-le-sum-integral-dist-le.md)
 - [L](def-l.md)

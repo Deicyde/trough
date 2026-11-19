@@ -16,7 +16,7 @@ $\operatorname{Vol}\!\left(\Lambda_8\right) = \mathrm{Covol}(\mathbb{R}^8 / \Lam
 
 ## Lean
 
-Formalized as [`E8Basis_volume`](https://thefundamentaltheor3m.github.io/Sphere-Packing-Lean/docs/find/#doc/E8Basis_volume).
+Formalized as `E8Basis_volume`.
 
 ## Sources
 

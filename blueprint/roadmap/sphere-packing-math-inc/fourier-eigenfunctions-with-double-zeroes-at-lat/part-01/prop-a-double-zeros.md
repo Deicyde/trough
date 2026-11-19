@@ -71,7 +71,7 @@ This finishes the proof.
 
 ## Lean
 
-Formalized as [`MagicFunction.g.CohnElkies.IntegralReps.aRadial_eq_laplace_phi0_main`](https://thefundamentaltheor3m.github.io/Sphere-Packing-Lean/docs/find/#doc/MagicFunction.g.CohnElkies.IntegralReps.aRadial_eq_laplace_phi0_main).
+Formalized as `MagicFunction.g.CohnElkies.IntegralReps.aRadial_eq_laplace_phi0_main`.
 
 ## Sources
 

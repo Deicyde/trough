@@ -7,14 +7,14 @@ statement: formalized
 
 # State-dependent POVM distance
 
-Let $\mu$ be a distribution on a finite set ${\mathcal{X}}$, let $|\psi\rangle \in \mathbb{C}^{d_\textsc{A}} \otimes \mathbb{C}^{d_\textsc{B}}$, and let $\{A^x\}$, $\{B^x\}$ be families of operators on $\mathbb{C}^{d_\textsc{A}}$. We say $A$ and $B$ are *$\delta$-close on $|\psi\rangle$*, written $A^x \approx_\delta B^x$ when $\mu$ and $|\psi\rangle$ are clear from context, if
+Let $\mu$ be a distribution on a finite set ${\mathcal{X}}$, let $|\psi\rangle \in \mathbb{C}^{d_\text{A}} \otimes \mathbb{C}^{d_\text{B}}$, and let $\{A^x\}$, $\{B^x\}$ be families of operators on $\mathbb{C}^{d_\text{A}}$. We say $A$ and $B$ are *$\delta$-close on $|\psi\rangle$*, written $A^x \approx_\delta B^x$ when $\mu$ and $|\psi\rangle$ are clear from context, if
 
 $$
-\mathop{\mathbb{E}}_{x \sim \mu} \langle\psi| \bigl( (A^x - B^x) \otimes {I}_\textsc{B} \bigr)^\dagger
-\bigl( (A^x - B^x) \otimes {I}_\textsc{B} \bigr) |\psi\rangle \;\leq\; \delta\;,
+\mathop{\mathbb{E}}_{x \sim \mu} \langle\psi| \bigl( (A^x - B^x) \otimes {I}_\text{B} \bigr)^\dagger
+\bigl( (A^x - B^x) \otimes {I}_\text{B} \bigr) |\psi\rangle \;\leq\; \delta\;,
 $$
 
-equivalently if $\mathop{\mathbb{E}}_{x\sim\mu} \left\| {((A^x - B^x) \otimes {I}_\textsc{B})|\psi\rangle} \right\|^2 \leq \delta$. For families indexed by answers as well, $\{A^x_a\}$ and $\{B^x_a\}$, the outcome sum sits inside the question average.
+equivalently if $\mathop{\mathbb{E}}_{x\sim\mu} \left\| {((A^x - B^x) \otimes {I}_\text{B})|\psi\rangle} \right\|^2 \leq \delta$. For families indexed by answers as well, $\{A^x_a\}$ and $\{B^x_a\}$, the outcome sum sits inside the question average.
 
 ## Depends on
 

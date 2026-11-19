@@ -58,7 +58,7 @@ Hence $\mathcal{L}_{1, 0}(it) > 0$ by Theorem [anti-serre-der-pos](../modular-fo
 
 ## Lean
 
-Formalized as [`FmodG_antitone`](https://thefundamentaltheor3m.github.io/Sphere-Packing-Lean/docs/find/#doc/FmodG_antitone).
+Formalized as `FmodG_antitone`.
 
 ## Sources
 

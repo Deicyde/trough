@@ -12,7 +12,7 @@ Under the hypotheses of Lemma [Win implications](lem-qld-win.md), with the first
 
 $$
 \sum_{\omega \,:\, \gamma(\omega) = 1} \frac{1}{\left\vert {{\mathcal{C}}} \right\vert}
-\left\| {\bigl( X^{r_X}(u_X)\, Z^{r_Z}(u_Z) + Z^{r_Z}(u_Z)\, X^{r_X}(u_X) \bigr) \otimes {I}_\textsc{B}
+\left\| {\bigl( X^{r_X}(u_X)\, Z^{r_Z}(u_Z) + Z^{r_Z}(u_Z)\, X^{r_X}(u_X) \bigr) \otimes {I}_\text{B}
 |\psi\rangle} \right\|^2
 \;\leq\; 16049664\, \varepsilon + 8256\, \varepsilon \;=\; 48157248\, \varepsilon\;,
 $$

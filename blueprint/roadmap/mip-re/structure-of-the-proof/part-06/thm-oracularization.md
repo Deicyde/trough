@@ -8,11 +8,11 @@ proof: formalized
 
 # Oracularization
 
-The source theorem supplies a polynomial-time Turing machine ${\mathsf{ComputeOracleVerifier}}$ mapping an $\ell$-level normal form verifier $\mathsf{V} = (\mathcal{S}, \mathcal{D})$, whose decider is in standard timeout-counter form, to a *typed* verifier $\mathsf{V}^{\textsc{Orac}}$ such that, for some $\delta(\varepsilon) = O(\sqrt{\varepsilon})$ and all $n$:
+The source theorem supplies a polynomial-time Turing machine ${\mathsf{ComputeOracleVerifier}}$ mapping an $\ell$-level normal form verifier $\mathsf{V} = (\mathcal{S}, \mathcal{D})$, whose decider is in standard timeout-counter form, to a *typed* verifier $\mathsf{V}^{\text{Orac}}$ such that, for some $\delta(\varepsilon) = O(\sqrt{\varepsilon})$ and all $n$:
 
-1. (**Completeness**) If $\mathsf{V}_n$ has a value-$1$ PCC strategy then $\mathsf{V}^{\textsc{Orac}}_n$ has a value-$1$ PCC strategy, in which moreover both players measure with the same family of operators.
-2. (**Soundness**) If $\mathrm{val}^*(\mathsf{V}^{\textsc{Orac}}_n) > 1 - \varepsilon$ then $\mathrm{val}^*(\mathsf{V}_n) \geq 1 - \delta(\varepsilon)$.
-3. (**Complexity**) The sampler of $\mathsf{V}^{\textsc{Orac}}$ depends only on $\mathcal{S}$, with $\mathsf{TIME}_{\mathcal{S}^{\mathrm{ora}}}(n) = \mathrm{poly}(\mathsf{TIME}_\mathcal{S}(n))$ and $\ell$ typed levels. The decider has time $\mathrm{poly}(\mathsf{TIME}_\mathcal{S}(n),B_\mathcal{D}(n))$.
+1. (**Completeness**) If $\mathsf{V}_n$ has a value-$1$ PCC strategy then $\mathsf{V}^{\text{Orac}}_n$ has a value-$1$ PCC strategy, in which moreover both players measure with the same family of operators.
+2. (**Soundness**) If $\mathrm{val}^*(\mathsf{V}^{\text{Orac}}_n) > 1 - \varepsilon$ then $\mathrm{val}^*(\mathsf{V}_n) \geq 1 - \delta(\varepsilon)$.
+3. (**Complexity**) The sampler of $\mathsf{V}^{\text{Orac}}$ depends only on $\mathcal{S}$, with $\mathsf{TIME}_{\mathcal{S}^{\mathrm{ora}}}(n) = \mathrm{poly}(\mathsf{TIME}_\mathcal{S}(n))$ and $\ell$ typed levels. The decider has time $\mathrm{poly}(\mathsf{TIME}_\mathcal{S}(n),B_\mathcal{D}(n))$.
 
 The oracularized decider's preamble performs a type check, a question-length check, and a bounded parse of each answer component against the decider's timeout bound $B_\mathcal{D}(n)$; answers failing the parse are grouped into one distinguished outcome, so the oracle families are projective measurements and not sub-measurements.
 

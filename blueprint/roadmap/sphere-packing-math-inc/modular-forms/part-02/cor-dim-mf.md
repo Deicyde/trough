@@ -28,7 +28,7 @@ $$
 
 ## Lean
 
-Formalized as [`ModularForm.dimension_level_one`](https://thefundamentaltheor3m.github.io/Sphere-Packing-Lean/docs/find/#doc/ModularForm.dimension_level_one).
+Formalized as `ModularForm.dimension_level_one`.
 
 ## Sources
 

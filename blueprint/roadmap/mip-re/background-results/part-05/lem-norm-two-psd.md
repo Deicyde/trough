@@ -8,7 +8,7 @@ proof: formalized
 
 # Decidable candidate set: a norm constraint is two psd tests
 
-Let $M$ be a Hermitian matrix and $c$ a real number. Then $c{I} + M \succeq 0$ and $c{I} - M \succeq 0$ both hold if and only if $-c\left\| {x} \right\|^2 \leq \langlex| M |x\rangle \leq c \left\| {x} \right\|^2$ for every vector $x$ — which for Hermitian $M$ says $\left\| {M} \right\| \leq c$.
+Let $M$ be a Hermitian matrix and $c$ a real number. Then $c{I} + M \succeq 0$ and $c{I} - M \succeq 0$ both hold if and only if $-c\left\| {x} \right\|^2 \leq \langle x| M |x\rangle \leq c \left\| {x} \right\|^2$ for every vector $x$ — which for Hermitian $M$ says $\left\| {M} \right\| \leq c$.
 
 ## Depends on
 
@@ -16,7 +16,7 @@ Its statement uses no other node of the blueprint.
 
 ## Proof
 
-Both directions are the defining property of positive semidefiniteness applied to the quadratic form, read once forwards and once backwards; the scalar step is $\langlex|(c{I} \pm M)|x\rangle = c\left\| {x} \right\|^2 \pm \langlex| M |x\rangle$.
+Both directions are the defining property of positive semidefiniteness applied to the quadratic form, read once forwards and once backwards; the scalar step is $\langle x|(c{I} \pm M)|x\rangle = c\left\| {x} \right\|^2 \pm \langle x| M |x\rangle$.
 
 ## Lean
 

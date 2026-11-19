@@ -8,7 +8,7 @@ proof: formalized
 
 # Compressibility criterion, nested classes
 
-Let $A$ and $B_0 \subseteq B_1$ be families of languages indexed by the level $n$, with distinguished elements $y_{\mathrm{yes}} \in A(n)$ and $y_{\mathrm{no}} \in B_0(n)$ at every level $n \geq n_0$, and suppose that the complement of $B_1$ is recursively enumerable uniformly in the level: there is a program $S$ that halts on $(x, n)$ if and only if $x \notin B_1(n)$. Suppose there is a polynomial-time computable $\textsc{Compr}$ such that whenever $c$ is a succinct description with parameter $n \geq n_0$ of a string $x$ with $\left\vert {x} \right\vert \leq n + 1$ and $2\left\vert {c} \right\vert \leq n$, and $y = \textsc{Compr}(c, n)$:
+Let $A$ and $B_0 \subseteq B_1$ be families of languages indexed by the level $n$, with distinguished elements $y_{\mathrm{yes}} \in A(n)$ and $y_{\mathrm{no}} \in B_0(n)$ at every level $n \geq n_0$, and suppose that the complement of $B_1$ is recursively enumerable uniformly in the level: there is a program $S$ that halts on $(x, n)$ if and only if $x \notin B_1(n)$. Suppose there is a polynomial-time computable $\text{Compr}$ such that whenever $c$ is a succinct description with parameter $n \geq n_0$ of a string $x$ with $\left\vert {x} \right\vert \leq n + 1$ and $2\left\vert {c} \right\vert \leq n$, and $y = \text{Compr}(c, n)$:
 
 1. if $x \in A(2n+1)$ then $y \in A(n)$, and
 2. if $x \in B_0(2n+1)$ then $y \in B_0(n)$.

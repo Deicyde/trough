@@ -14,7 +14,7 @@ $$
 \phi : \mathbb{F}_q^L \to \mathbb{F}_2^{L \times k}\;, \qquad \phi(u)_{i j} \;=\; \kappa(u_i)_j\;,
 $$
 
-is a bijection, and conjugating by it carries the whole Weyl system over $\mathbb{F}_q$ on $L$ registers to the Weyl system over $\mathbb{F}_2$ on $L k$ registers: the form $\langle \cdot, \cdot \rangle$, the two operator families $\tau^X$ and $\tau^Z$, their spectral projectors, and $|\textsc{EPR}_q\rangle^{\otimes L} \mapsto |\textsc{EPR}_2\rangle^{\otimes L k}$. Such a basis exists whenever $k$ is odd.
+is a bijection, and conjugating by it carries the whole Weyl system over $\mathbb{F}_q$ on $L$ registers to the Weyl system over $\mathbb{F}_2$ on $L k$ registers: the form $\langle \cdot, \cdot \rangle$, the two operator families $\tau^X$ and $\tau^Z$, their spectral projectors, and $|\text{EPR}_q\rangle^{\otimes L} \mapsto |\text{EPR}_2\rangle^{\otimes L k}$. Such a basis exists whenever $k$ is odd.
 
 ## Depends on
 

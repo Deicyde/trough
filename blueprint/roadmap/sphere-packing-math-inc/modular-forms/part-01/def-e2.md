@@ -19,7 +19,7 @@ Its statement uses no other node of the blueprint.
 
 ## Lean
 
-Formalized as [`E₂_eq`](https://thefundamentaltheor3m.github.io/Sphere-Packing-Lean/docs/find/#doc/E₂_eq).
+Formalized as `E₂_eq`.
 
 ## Sources
 

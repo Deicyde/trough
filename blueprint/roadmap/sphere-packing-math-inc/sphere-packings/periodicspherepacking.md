@@ -16,7 +16,7 @@ We say that a sphere packing $\mathcal{P}(X)$ is ($\Lambda$-)*periodic* if there
 
 ## Lean
 
-Formalized as [`PeriodicSpherePacking`](https://thefundamentaltheor3m.github.io/Sphere-Packing-Lean/docs/find/#doc/PeriodicSpherePacking).
+Formalized as `PeriodicSpherePacking`.
 
 ## Sources
 

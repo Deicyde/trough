@@ -22,7 +22,7 @@ Immediate from Theorem [serre-der-equiv-action](thm-serre-der-equiv-action.md) s
 
 ## Lean
 
-Formalized as [`serre_D_slash_invariant`](https://thefundamentaltheor3m.github.io/Sphere-Packing-Lean/docs/find/#doc/serre_D_slash_invariant).
+Formalized as `serre_D_slash_invariant`.
 
 ## Sources
 

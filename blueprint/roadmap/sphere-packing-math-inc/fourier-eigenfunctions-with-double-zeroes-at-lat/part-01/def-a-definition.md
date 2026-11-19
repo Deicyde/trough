@@ -34,7 +34,7 @@ Here all the contours are chosen to be straight line segments. Now, define $a(x)
 
 ## Lean
 
-Formalized as [`MagicFunction.a.RealIntegrals.a'`](https://thefundamentaltheor3m.github.io/Sphere-Packing-Lean/docs/find/#doc/MagicFunction.a.RealIntegrals.a'), [`MagicFunction.a.RadialFunctions.a`](https://thefundamentaltheor3m.github.io/Sphere-Packing-Lean/docs/find/#doc/MagicFunction.a.RadialFunctions.a).
+Formalized as `MagicFunction.a.RealIntegrals.a'`, `MagicFunction.a.RadialFunctions.a`.
 
 ## Sources
 

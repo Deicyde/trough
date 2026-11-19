@@ -51,6 +51,6 @@ Similar argument allow us to compute (Serre) derivatives of $H_2, H_3, H_4$.
 - [theta-der](prop-theta-der.md)
 - [serre-der-prod-rule](thm-serre-der-prod-rule.md)
 
-We also have the following useful theorem for proving positivity of quasimodular forms on the imaginary axis, which is (Lee, Proposition 3.5, Corollary 3.6).
+We also have the following useful theorem for proving positivity of quasimodular forms on the imaginary axis, which is (6, Proposition 3.5, Corollary 3.6).
 
 - [anti-serre-der-pos](thm-anti-serre-der-pos.md)

@@ -21,7 +21,7 @@ $$
 
 ## Proof
 
-One possible proof would be by induction on $d$. However, there are numerous nuances involved, particularly in manipulating nested infinite sums. Ideas would be appreciated.
+One possible proof would be by induction on $d$. However, there are numerous nuances involved, particularly in manipulating nested infinite sums. …
 
 ## Lean
 

@@ -24,7 +24,7 @@ for all $z$ with $\Im z > 1/2$.
 
 ## Lean
 
-Formalized as [`φ₄'`](https://thefundamentaltheor3m.github.io/Sphere-Packing-Lean/docs/find/#doc/φ₄').
+Formalized as `φ₄'`.
 
 ## Sources
 

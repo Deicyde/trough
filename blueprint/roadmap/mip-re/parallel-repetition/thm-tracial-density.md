@@ -22,7 +22,7 @@ Its statement uses no other node of the blueprint.
 
 ## Proof
 
-This is Theorem 3.2 of (Lin23), as formalized in (Vid26) (the density programme of the vendored development, `Tracial/Density/Main.lean`). The statement above is that of the vendored development, in its own vocabulary — its tracially embeddable correlations have the shape of Lin's Definition 3.1, with Bob's measurement taken in the commutant of the left action; restating it through the definitions of Section [Foundations](../foundations/README.md) is pending.
+This is Theorem 3.2 of (12), as formalized in (32) (the density programme of the vendored development, `Tracial/Density/Main.lean`). The statement above is that of the vendored development, in its own vocabulary — its tracially embeddable correlations have the shape of Lin's Definition 3.1, with Bob's measurement taken in the commutant of the left action; restating it through the definitions of Section [Foundations](../foundations/README.md) is pending.
 
 ## Lean
 

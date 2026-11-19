@@ -8,7 +8,7 @@ proof: formalized
 
 # The polynomials of the roles agree
 
-Two measurements of tuples of polynomials of individual degree at most $d$ in $M$ variables disagree at most as often as their evaluations at a uniform point do, plus $M d / q$. So for an isolated role $r$, $\sum_z \mathrm{dis}(G^\textsc{A}_r, \mathrm{res}_r G^\textsc{B}_\textsc{O}) \leq |Z|\, e_r(\theta)$, and the same with the players exchanged, where $e_r(\theta) = 11 (\delta_r(9\theta) + 81\theta + \delta_\textsc{O}(9\theta)) + M d / q$.
+Two measurements of tuples of polynomials of individual degree at most $d$ in $M$ variables disagree at most as often as their evaluations at a uniform point do, plus $M d / q$. So for an isolated role $r$, $\sum_z \mathrm{dis}(G^\text{A}_r, \mathrm{res}_r G^\text{B}_\text{O}) \leq |Z|\, e_r(\theta)$, and the same with the players exchanged, where $e_r(\theta) = 11 (\delta_r(9\theta) + 81\theta + \delta_\text{O}(9\theta)) + M d / q$.
 
 ## Depends on
 

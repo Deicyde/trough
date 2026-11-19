@@ -20,7 +20,7 @@ Since $\Lambda_8$ is a topological group and $+$ is continuous, it suffices to p
 
 ## Lean
 
-Formalized as [`instDiscreteE8Lattice`](https://thefundamentaltheor3m.github.io/Sphere-Packing-Lean/docs/find/#doc/instDiscreteE8Lattice).
+Formalized as `instDiscreteE8Lattice`.
 
 ## Sources
 

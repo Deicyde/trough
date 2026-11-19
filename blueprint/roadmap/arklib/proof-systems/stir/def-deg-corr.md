@@ -7,7 +7,7 @@ statement: formalized
 
 # deg_corr
 
-Given target degree $d^*\in\mathbb{N}$, shifting parameter $r\in\mathbb{F}$, function $f:\mathcal{L}\rightarrow\mathbb{F}$, and degree $0\leqd\leqd^*$, we define $\mathsf{DegCor}(d^*,r,f,d)$ as follows.
+Given target degree $d^*\in\mathbb{N}$, shifting parameter $r\in\mathbb{F}$, function $f:\mathcal{L}\rightarrow\mathbb{F}$, and degree $0\leq d\leq d^*$, we define $\mathsf{DegCor}(d^*,r,f,d)$ as follows.
 
 $$
 \begin{array}{rcl}

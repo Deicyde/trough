@@ -7,26 +7,26 @@ statement: formalized
 
 # Pauli basis test
 
-Let $\mathsf{qldparams} = (q, m, d)$ be admissible: $q$ an admissible field size and $m \mid q$. Write $M = 2^m$ and let $\omega = (u_X, u_Z, r_X, r_Z) \in (\mathbb{F}_q^m)^2 \times \mathbb{F}_q^2$. The *Pauli basis test* $\mathfrak{G}^\textsc{Pauli}_\mathsf{qldparams}$ is the two-player game with the following twenty-six question types,
+Let $\mathsf{qldparams} = (q, m, d)$ be admissible: $q$ an admissible field size and $m \mid q$. Write $M = 2^m$ and let $\omega = (u_X, u_Z, r_X, r_Z) \in (\mathbb{F}_q^m)^2 \times \mathbb{F}_q^2$. The *Pauli basis test* $\mathfrak{G}^\text{Pauli}_\mathsf{qldparams}$ is the two-player game with the following twenty-six question types,
 
 $$
-{\mathcal{T}}^\textsc{Pauli} = \bigl( \{\mathtt{Point}, \mathtt{ALine}, \mathtt{DLine}, \textsc{Pauli},
+{\mathcal{T}}^\text{Pauli} = \bigl( \{\mathtt{Point}, \mathtt{ALine}, \mathtt{DLine}, \text{Pauli},
 \mathtt{Pair}\} \times \{X, Z\} \bigr) \cup {\mathcal{T}}^\mathrm{MS} \cup \{\mathtt{Pair}\}\;,
 $$
 
 where ${\mathcal{T}}^\mathrm{MS}$ is the six constraints and nine variables of the Magic Square (Definition [The Magic Square](../../foundations/part-01/def-magic-square.md)).
 
-*Question distribution.* The verifier draws an ordered pair of types uniformly among those adjacent in the type graph $G^\textsc{Pauli}$ — each non-loop edge contributing two ordered pairs and each self-loop one — and independently $u_X, u_Z, v \in \mathbb{F}_q^m$, $s \in \mathbb{F}_q$ and $r_X, r_Z \in \mathbb{F}_q$ uniformly. The edges of $G^\textsc{Pauli}$ are: a self-loop at every type; $(\mathtt{ALine}, W)$ and $(\mathtt{DLine}, W)$ each to $(\mathtt{Point}, W)$; $(\mathtt{Point}, W)$ to $(\textsc{Pauli}, W)$; $(\mathtt{Point}, W)$ to $(\mathtt{Pair}, W)$ to $\mathtt{Pair}$; $(\mathtt{Point}, X)$ to $\mathtt{Variable}_1$ and $(\mathtt{Point}, Z)$ to $\mathtt{Variable}_5$; and the eighteen incidences of the Magic Square, $\mathtt{Constraint}_i$ to $\mathtt{Variable}_j$ for $j$ in the support of equation $i$. So there are thirty non-loop edges and eighty-six ordered pairs, each of weight $1/86$.
+*Question distribution.* The verifier draws an ordered pair of types uniformly among those adjacent in the type graph $G^\text{Pauli}$ — each non-loop edge contributing two ordered pairs and each self-loop one — and independently $u_X, u_Z, v \in \mathbb{F}_q^m$, $s \in \mathbb{F}_q$ and $r_X, r_Z \in \mathbb{F}_q$ uniformly. The edges of $G^\text{Pauli}$ are: a self-loop at every type; $(\mathtt{ALine}, W)$ and $(\mathtt{DLine}, W)$ each to $(\mathtt{Point}, W)$; $(\mathtt{Point}, W)$ to $(\text{Pauli}, W)$; $(\mathtt{Point}, W)$ to $(\mathtt{Pair}, W)$ to $\mathtt{Pair}$; $(\mathtt{Point}, X)$ to $\mathtt{Variable}_1$ and $(\mathtt{Point}, Z)$ to $\mathtt{Variable}_5$; and the eighteen incidences of the Magic Square, $\mathtt{Constraint}_i$ to $\mathtt{Variable}_j$ for $j$ in the support of equation $i$. So there are thirty non-loop edges and eighty-six ordered pairs, each of weight $1/86$.
 
-*Question content.* A type $(\mathtt{Point}, W)$ receives $u_W$; $(\mathtt{ALine}, W)$ receives $(u_0, s)$ with $u_0 = L^{\mathrm{Ln}}_{e_i}(u_W)$ and $i = \chi(s)$; $(\mathtt{DLine}, W)$ receives $(u_0, s, v')$ with $v' = \pi_{i-1}(v)$ and $u_0 = L^{\mathrm{Ln}}_{v'}(u_W)$ — all three exactly as in Definition [Seeded CL low individual degree test](def-lidt-cl.md); $(\textsc{Pauli}, W)$ receives nothing; and each of $\mathtt{Pair}$, $(\mathtt{Pair}, W)$, $\mathtt{Constraint}_i$ and $\mathtt{Variable}_j$ receives $\omega$.
+*Question content.* A type $(\mathtt{Point}, W)$ receives $u_W$; $(\mathtt{ALine}, W)$ receives $(u_0, s)$ with $u_0 = L^{\mathrm{Ln}}_{e_i}(u_W)$ and $i = \chi(s)$; $(\mathtt{DLine}, W)$ receives $(u_0, s, v')$ with $v' = \pi_{i-1}(v)$ and $u_0 = L^{\mathrm{Ln}}_{v'}(u_W)$ — all three exactly as in Definition [Seeded CL low individual degree test](def-lidt-cl.md); $(\text{Pauli}, W)$ receives nothing; and each of $\mathtt{Pair}$, $(\mathtt{Pair}, W)$, $\mathtt{Constraint}_i$ and $\mathtt{Variable}_j$ receives $\omega$.
 
-*Answer format.* An element of $\mathbb{F}_q$ for $(\mathtt{Point}, W)$; a polynomial of degree at most $d$ for $(\mathtt{ALine}, W)$ and at most $md$ for $(\mathtt{DLine}, W)$; an element of $\mathbb{F}_q^M$ for $(\textsc{Pauli}, W)$; a pair $(\beta_X, \beta_Z) \in \mathbb{F}_2^2$ for $\mathtt{Pair}$; a single bit for $(\mathtt{Pair}, W)$ and for $\mathtt{Variable}_j$; and a triple $(\alpha_{v_1}, \alpha_{v_2}, \alpha_{v_3}) \in \mathbb{F}_2^3$, indexed by the three variables of the equation in order, for $\mathtt{Constraint}_i$.
+*Answer format.* An element of $\mathbb{F}_q$ for $(\mathtt{Point}, W)$; a polynomial of degree at most $d$ for $(\mathtt{ALine}, W)$ and at most $md$ for $(\mathtt{DLine}, W)$; an element of $\mathbb{F}_q^M$ for $(\text{Pauli}, W)$; a pair $(\beta_X, \beta_Z) \in \mathbb{F}_2^2$ for $\mathtt{Pair}$; a single bit for $(\mathtt{Pair}, W)$ and for $\mathtt{Variable}_j$; and a triple $(\alpha_{v_1}, \alpha_{v_2}, \alpha_{v_3}) \in \mathbb{F}_2^3$, indexed by the three variables of the equation in order, for $\mathtt{Constraint}_i$.
 
 *Decision.* The verifier first checks that both answers have the format their question's type prescribes, and rejects if not. It then applies, with $\gamma(\omega)$ as in Lemma [Anticommuting question tuples](../part-02/fact-omega-anticomm-prob.md) and $g_h$ the low-degree encoding of Definition [The low-degree code](../../structure-of-the-proof/part-07/def-ld-encoding.md):
 
 1. equal types: accept iff the two answers agree;
 2. $(\mathtt{Point}, W)$ against $(\mathtt{ALine}, W)$ or $(\mathtt{DLine}, W)$: accept iff the seeded CL decider of Definition [Seeded CL low individual degree test](def-lidt-cl.md) at $(q, m, d, 1)$ accepts;
-3. $(\mathtt{Point}, W)$ against $(\textsc{Pauli}, W)$: accept iff $g_{a_{\bar w}}(x_w) = a_w$;
+3. $(\mathtt{Point}, W)$ against $(\text{Pauli}, W)$: accept iff $g_{a_{\bar w}}(x_w) = a_w$;
 4. $(\mathtt{Pair}, W)$ against $\mathtt{Pair}$: accept iff $a_w = \beta_W$ or $\gamma(\omega) \neq 0$;
 5. $(\mathtt{Point}, W)$ against $(\mathtt{Pair}, W)$: accept iff $\operatorname{tr}(a_w r_W) = a_{\bar w}$ or $\gamma(\omega) \neq 0$;
 6. $\mathtt{Constraint}_i$ against $\mathtt{Variable}_j$: accept iff $\gamma(\omega) = 0$, or $j$ occurs in equation $i$, the triple $a_w$ satisfies that equation, and its entry at $j$ is $a_{\bar w}$;

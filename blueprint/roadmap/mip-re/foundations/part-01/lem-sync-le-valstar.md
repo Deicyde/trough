@@ -17,7 +17,7 @@ proof: formalized
 
 ## Proof
 
-Given a synchronous strategy $\{M^x_a\}$ on $\mathbb{C}^d$, take the tensor-product strategy with $\mathcal{H}_\textsc{A} = \mathcal{H}_\textsc{B} = \mathbb{C}^d$, $A^x_a = M^x_a$, $B^y_b = (M^y_b)^{\mathsf{T}}$, and $|\psi\rangle = d^{-1/2}\sum_i |i\rangle|i\rangle$ (in Lean, `MIPRE.SyncStrategy.toTensorProductStrategy`). On that state $\langle\psi| M \otimes N |\psi\rangle = \operatorname{tr}(M N^{\mathsf{T}})/d$ (`MIPRE.dotProduct_kronecker_maxEntangled`), so with $N = (M^y_b)^{\mathsf{T}}$ the Born-rule probability is $\tau(M^x_a M^y_b)$ and the values agree (`MIPRE.SyncStrategy.value_toTensorProductStrategy`). Taking the supremum uses that the quantum value is a supremum over a possibly empty type with bounded range: `MIPRE.TensorProductStrategy.value_le_one` and `MIPRE.quantumValue_nonneg`, both proved from the Born rule.
+Given a synchronous strategy $\{M^x_a\}$ on $\mathbb{C}^d$, take the tensor-product strategy with $\mathcal{H}_\text{A} = \mathcal{H}_\text{B} = \mathbb{C}^d$, $A^x_a = M^x_a$, $B^y_b = (M^y_b)^{\mathsf{T}}$, and $|\psi\rangle = d^{-1/2}\sum_i |i\rangle|i\rangle$ (in Lean, `MIPRE.SyncStrategy.toTensorProductStrategy`). On that state $\langle\psi| M \otimes N |\psi\rangle = \operatorname{tr}(M N^{\mathsf{T}})/d$ (`MIPRE.dotProduct_kronecker_maxEntangled`), so with $N = (M^y_b)^{\mathsf{T}}$ the Born-rule probability is $\tau(M^x_a M^y_b)$ and the values agree (`MIPRE.SyncStrategy.value_toTensorProductStrategy`). Taking the supremum uses that the quantum value is a supremum over a possibly empty type with bounded range: `MIPRE.TensorProductStrategy.value_le_one` and `MIPRE.quantumValue_nonneg`, both proved from the Born rule.
 
 ## Lean
 

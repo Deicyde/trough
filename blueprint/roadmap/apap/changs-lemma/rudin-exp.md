@@ -12,11 +12,11 @@ If the discrete Fourier transform of $f : G \longrightarrow \mathbb{C}$ has diss
 
 $$
 \mathop{
-\mathchoice{\vcenter{\hbox{\larger[4]$\mathbb{E}$}}}
+\mathchoice{\vcenter{{\mathbb{E}}}}
 {\kern0pt\mathbb{E}}
 {\kern0pt\mathbb{E}}
 {\kern0pt\mathbb{E}}
-}\displaylimits
+}\limits
 \exp(\Re f) \le \exp\left(\frac{\lVert f\rVert_2^2} 2\right)
 $$
 
@@ -24,11 +24,11 @@ It follows that
 
 $$
 \mathop{
-\mathchoice{\vcenter{\hbox{\larger[4]$\mathbb{E}$}}}
+\mathchoice{\vcenter{{\mathbb{E}}}}
 {\kern0pt\mathbb{E}}
 {\kern0pt\mathbb{E}}
 {\kern0pt\mathbb{E}}
-}\displaylimits
+}\limits
 _x e^{\left\lvert f(x)\right\rvert} \le 2e^{\| f\|_2^2/2}.
 $$
 
@@ -69,18 +69,18 @@ Therefore
 
 $$
 \mathop{
-\mathchoice{\vcenter{\hbox{\larger[4]$\mathbb{E}$}}}
+\mathchoice{\vcenter{{\mathbb{E}}}}
 {\kern0pt\mathbb{E}}
 {\kern0pt\mathbb{E}}
 {\kern0pt\mathbb{E}}
-}\displaylimits
+}\limits
 _x e^{\Re f(x)}\le
 \mathop{
-\mathchoice{\vcenter{\hbox{\larger[4]$\mathbb{E}$}}}
+\mathchoice{\vcenter{{\mathbb{E}}}}
 {\kern0pt\mathbb{E}}
 {\kern0pt\mathbb{E}}
 {\kern0pt\mathbb{E}}
-}\displaylimits
+}\limits
 _x \prod_{\gamma\in \Gamma} \left( \cosh\lvert \widehat{f}(\gamma)\rvert+\Re c_\gamma \gamma(x)\sinh\lvert \widehat{f}(\gamma)\rvert\right).
 $$
 
@@ -100,11 +100,11 @@ unless $\Gamma_2=\Gamma_3=\emptyset$. In particular summing this term over all $
 
 $$
 \mathop{
-\mathchoice{\vcenter{\hbox{\larger[4]$\mathbb{E}$}}}
+\mathchoice{\vcenter{{\mathbb{E}}}}
 {\kern0pt\mathbb{E}}
 {\kern0pt\mathbb{E}}
 {\kern0pt\mathbb{E}}
-}\displaylimits
+}\limits
 _x e^{\Re f(x)}\le \prod_{\gamma\in \Gamma} \cosh \lvert \widehat{f}(\gamma)\rvert.
 $$
 

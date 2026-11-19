@@ -18,7 +18,7 @@ A few deterministic kernels are particularly useful.
 
 - The identity kernel, deterministic kernel given by the identity function.
 - The copy kernel $c_{\mathcal X} : \mathcal X \rightsquigarrow \mathcal X \times \mathcal X$, from the function $x \mapsto (x, x)$.
-- The discard kernel $d_{\mathcal X}$ (TODO: conflicts with deterministic kernel notation). This is a kernel from $\mathcal X$ to $*$, the space with one point, corresponding to the constant function.
+- The discard kernel $d_{\mathcal X}$. This is a kernel from $\mathcal X$ to $*$, the space with one point, corresponding to the constant function.
 
 Kernels can be described by the integrals of measurable functions, as demonstrated in the following extensionality theorem.
 

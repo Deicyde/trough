@@ -20,7 +20,7 @@ Let $\mu, \nu$ be two measures on $\mathcal X$ and let $\kappa : \mathcal X \rig
 
 ## Proof
 
-By Lemma [rnDeriv_compProd_left](../../../radon-nikodym-derivatives-and-disintegration/composition-product/cor-rnderiv-compprod-left.md) and the fact that $(\mu \otimes \kappa)_{\perp \nu \otimes \kappa} = \mu_{\perp \nu} \otimes \kappa$ (Lemma TODO),
+By Lemma [rnDeriv_compProd_left](../../../radon-nikodym-derivatives-and-disintegration/composition-product/cor-rnderiv-compprod-left.md) and the fact that $(\mu \otimes \kappa)_{\perp \nu \otimes \kappa} = \mu_{\perp \nu} \otimes \kappa$,
 
 $$
 \begin{aligned}

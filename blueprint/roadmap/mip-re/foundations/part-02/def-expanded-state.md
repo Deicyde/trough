@@ -7,11 +7,11 @@ statement: formalized
 
 # The expanded state, and an inert ancilla
 
-Let $|\psi\rangle$ be a state on $\mathbb{C}^{d_\textsc{A}} \otimes \mathbb{C}^{d_\textsc{B}}$ and $|e\rangle$ one on $\mathbb{C}^{a} \otimes \mathbb{C}^{a'}$. The *expanded state* is $|\psi\rangle \otimes |e\rangle$, **re-bipartitioned** so that the first party holds $\mathbb{C}^{d_\textsc{A}} \otimes \mathbb{C}^{a}$ and the second $\mathbb{C}^{d_\textsc{B}} \otimes \mathbb{C}^{a'}$: one half of the ancilla goes to each. Then
+Let $|\psi\rangle$ be a state on $\mathbb{C}^{d_\text{A}} \otimes \mathbb{C}^{d_\text{B}}$ and $|e\rangle$ one on $\mathbb{C}^{a} \otimes \mathbb{C}^{a'}$. The *expanded state* is $|\psi\rangle \otimes |e\rangle$, **re-bipartitioned** so that the first party holds $\mathbb{C}^{d_\text{A}} \otimes \mathbb{C}^{a}$ and the second $\mathbb{C}^{d_\text{B}} \otimes \mathbb{C}^{a'}$: one half of the ancilla goes to each. Then
 
 1. an operator of product form acts factor by factor, $\bigl((M \otimes N) \otimes {I}\bigr)(|\psi\rangle \otimes |e\rangle) = \bigl((M \otimes {I})|\psi\rangle\bigr) \otimes \bigl((N \otimes {I})|e\rangle\bigr)$;
 2. the norm of a product state is the product of the norms, so the expanded state is a unit vector when both factors are;
-3. consequently an operator with an *inert* ancilla has the same state-norm on the expanded state as on the original one: $\left\| {(M \otimes {I}_a) \otimes {I} \,|\hat\psi\rangle} \right\| = \left\| {(M \otimes {I}_\textsc{B})|\psi\rangle} \right\|$ when $|e\rangle$ is a unit vector;
+3. consequently an operator with an *inert* ancilla has the same state-norm on the expanded state as on the original one: $\left\| {(M \otimes {I}_a) \otimes {I} \,|\hat\psi\rangle} \right\| = \left\| {(M \otimes {I}_\text{B})|\psi\rangle} \right\|$ when $|e\rangle$ is a unit vector;
 4. and a *unitary* on the ancilla is invisible: $\left\| {(M \otimes U) \otimes {I} |\hat\psi\rangle} \right\| = \left\| {(M \otimes {I}_a) \otimes {I} |\hat\psi\rangle} \right\|$.
 
 ## Depends on

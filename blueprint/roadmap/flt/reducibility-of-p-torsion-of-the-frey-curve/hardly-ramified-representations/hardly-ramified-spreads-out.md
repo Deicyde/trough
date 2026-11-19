@@ -16,10 +16,6 @@ If $\ell\geq3$ is prime, $K$ is a finite extension of $\mathbb{Q}_\ell$ with int
 
 - [hardly_ramified](hardly-ramified.md)
 
-## Proof
-
-Omitted for now **TODO**
-
 ## Lean
 
 Stated as [`GaloisRepresentation.IsHardlyRamified.mem_isCompatible`](https://ImperialCollegeLondon.github.io/FLT/docs/find/#doc/GaloisRepresentation.IsHardlyRamified.mem_isCompatible); the blueprint marks no proof of it as formalized.

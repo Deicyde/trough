@@ -30,7 +30,7 @@ $$
 
 ## Lean
 
-Formalized as [`H₃`](https://thefundamentaltheor3m.github.io/Sphere-Packing-Lean/docs/find/#doc/H₃).
+Formalized as `H₃`.
 
 ## Sources
 

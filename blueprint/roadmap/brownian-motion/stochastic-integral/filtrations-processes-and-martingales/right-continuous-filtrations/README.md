@@ -20,4 +20,4 @@ We now give the definition of a filtered probability space satisfying the usual 
 - [rightContinuousMeasurableSet](lem-rightcontinuousmeasurableset.md)
 - [Usual conditions](def-hasusualconditions.md)
 
-TODO: adapt this text. In Lean, we don't have a single def for the usual conditions, but rather we have separate defs for right-continuity and completeness.
+…

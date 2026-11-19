@@ -48,7 +48,7 @@ On the other hand, from the definition [(30)](../part-01/def-b-definition.md) we
 
 ## Lean
 
-Formalized as [`MagicFunction.g.CohnElkies.IntegralReps.bRadial_eq_another_integral_main`](https://thefundamentaltheor3m.github.io/Sphere-Packing-Lean/docs/find/#doc/MagicFunction.g.CohnElkies.IntegralReps.bRadial_eq_another_integral_main).
+Formalized as `MagicFunction.g.CohnElkies.IntegralReps.bRadial_eq_another_integral_main`.
 
 ## Sources
 

@@ -21,7 +21,7 @@ The function $r\mapsto b(r)$ analytically continues to a holomorphic function on
 
 ## Lean
 
-Formalized as [`SpherePacking.Dim24.eig_b`](https://thefundamentaltheor3m.github.io/Sphere-Packing-Lean/docs/find/#doc/SpherePacking.Dim24.eig_b).
+Formalized as `SpherePacking.Dim24.eig_b`.
 
 ## Sources
 

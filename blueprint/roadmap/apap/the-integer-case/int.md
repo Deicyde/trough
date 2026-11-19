@@ -17,10 +17,6 @@ $$
 
 Its statement uses no other node of the blueprint.
 
-## Proof
-
-To do.
-
 ## Lean
 
 Stated as [`int`](https://yaeldillies.github.io/apap/docs/find/#doc/int); the blueprint marks no proof of it as formalized.

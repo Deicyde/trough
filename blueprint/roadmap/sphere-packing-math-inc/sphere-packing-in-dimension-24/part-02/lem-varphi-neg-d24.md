@@ -16,7 +16,7 @@ For all $t>0$, we have $\varphi(it)<0$.
 
 ## Lean
 
-Formalized as [`SpherePacking.Dim24.varphi_imagAxis_neg`](https://thefundamentaltheor3m.github.io/Sphere-Packing-Lean/docs/find/#doc/SpherePacking.Dim24.varphi_imagAxis_neg).
+Formalized as `SpherePacking.Dim24.varphi_imagAxis_neg`.
 
 ## Sources
 

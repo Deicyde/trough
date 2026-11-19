@@ -43,7 +43,7 @@ $$
 
 ## Lean
 
-Formalized as [`PeriodicSpherePacking.density_eq`](https://thefundamentaltheor3m.github.io/Sphere-Packing-Lean/docs/find/#doc/PeriodicSpherePacking.density_eq).
+Formalized as `PeriodicSpherePacking.density_eq`.
 
 ## Sources
 

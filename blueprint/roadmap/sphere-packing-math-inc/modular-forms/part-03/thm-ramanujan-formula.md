@@ -47,7 +47,7 @@ Hence, (36)$-\frac{1}{12}$(43) is a modular form of weight 4. By [Corollary dim-
 
 ## Lean
 
-Formalized as [`ramanujan_E₂`](https://thefundamentaltheor3m.github.io/Sphere-Packing-Lean/docs/find/#doc/ramanujan_E₂), [`ramanujan_E₄`](https://thefundamentaltheor3m.github.io/Sphere-Packing-Lean/docs/find/#doc/ramanujan_E₄), [`ramanujan_E₆`](https://thefundamentaltheor3m.github.io/Sphere-Packing-Lean/docs/find/#doc/ramanujan_E₆), [`ramanujan_E₂'`](https://thefundamentaltheor3m.github.io/Sphere-Packing-Lean/docs/find/#doc/ramanujan_E₂'), [`ramanujan_E₄'`](https://thefundamentaltheor3m.github.io/Sphere-Packing-Lean/docs/find/#doc/ramanujan_E₄'), [`ramanujan_E₆'`](https://thefundamentaltheor3m.github.io/Sphere-Packing-Lean/docs/find/#doc/ramanujan_E₆').
+Formalized as `ramanujan_E₂`, `ramanujan_E₄`, `ramanujan_E₆`, `ramanujan_E₂'`, `ramanujan_E₄'`, `ramanujan_E₆'`.
 
 ## Sources
 

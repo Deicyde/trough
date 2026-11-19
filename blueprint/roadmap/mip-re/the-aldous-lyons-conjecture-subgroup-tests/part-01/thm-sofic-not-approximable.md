@@ -15,7 +15,7 @@ Given a computable halting reduction to tailored games, and the two clauses of M
 - [Approximating the sofic value](def-sofic-approximable.md)
 - [The associated test is computable from the game](lem-assoc-test-primrec.md)
 - [The tailored halting reduction, as a proposition](../../the-aldous-lyons-track-tmip-re/part-01/def-tailored-halting-reduction.md)
-- [Turing](../../background-results/part-03/thm-halting-undecidable.md)
+- [Turing](../../background-results/part-04/thm-halting-undecidable.md)
 - [A tailored game description as a game description](../../the-aldous-lyons-track-tmip-re/part-02/lem-tailored-conversion.md)
 
 ## Proof

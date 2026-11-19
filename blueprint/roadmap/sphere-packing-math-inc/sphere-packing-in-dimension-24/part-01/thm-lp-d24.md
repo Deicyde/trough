@@ -12,16 +12,16 @@ Suppose $f:\mathbb{R}^{24}\to\mathbb{R}$ is a Schwartz function with $f(0)=\wide
 
 ## Depends on
 
-- [Cohn–Elkies (ElkiesCohn)](../../cohn-elkies-linear-programming-bounds/thm-cohn-elkies-general.md)
+- [Cohn–Elkies (2)](../../cohn-elkies-linear-programming-bounds/thm-cohn-elkies-general.md)
 - [SpherePacking.scale_density](../../sphere-packings/def-spherepacking-scale-density.md)
 
 ## Proof
 
-This is the Cohn–Elkies bound [Cohn–Elkies (ElkiesCohn)](../../cohn-elkies-linear-programming-bounds/thm-cohn-elkies-general.md) after scaling to convert the cutoff radius $2$ to the normalized cutoff radius $1$ (and using [Lemma SpherePacking.scale_density](../../sphere-packings/def-spherepacking-scale-density.md) to identify densities under scaling).
+This is the Cohn–Elkies bound [Cohn–Elkies (2)](../../cohn-elkies-linear-programming-bounds/thm-cohn-elkies-general.md) after scaling to convert the cutoff radius $2$ to the normalized cutoff radius $1$ (and using [Lemma SpherePacking.scale_density](../../sphere-packings/def-spherepacking-scale-density.md) to identify densities under scaling).
 
 ## Lean
 
-Formalized as [`LinearProgrammingBound`](https://thefundamentaltheor3m.github.io/Sphere-Packing-Lean/docs/find/#doc/LinearProgrammingBound).
+Formalized as `LinearProgrammingBound`.
 
 ## Sources
 

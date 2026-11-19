@@ -33,7 +33,7 @@ Where we prove the final term is convergent by noticing that it equals $\exp(-\p
 
 ## Lean
 
-Formalized as [`isBoundedAtImInfty_H_slash`](https://thefundamentaltheor3m.github.io/Sphere-Packing-Lean/docs/find/#doc/isBoundedAtImInfty_H_slash).
+Formalized as `isBoundedAtImInfty_H_slash`.
 
 ## Sources
 

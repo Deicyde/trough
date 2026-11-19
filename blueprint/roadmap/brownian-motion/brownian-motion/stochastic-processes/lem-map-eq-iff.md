@@ -13,10 +13,6 @@ Let $X, Y : T \to \Omega \to E$ be two stochastic processes. Then $X$ and $Y$ ha
 
 Its statement uses no other node that has an article here.
 
-## Proof
-
-TODO: consider the $\pi$-system of cylinder sets.
-
 ## Lean
 
 Formalized as [`ProbabilityTheory.map_eq_iff_forall_finset_map_restrict_eq`](https://RemyDegenne.github.io/brownian-motion/docs/find/#doc/ProbabilityTheory.map_eq_iff_forall_finset_map_restrict_eq).

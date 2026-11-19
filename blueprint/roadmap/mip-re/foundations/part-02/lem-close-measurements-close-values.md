@@ -22,7 +22,7 @@ $$
 
 ## Proof
 
-This is the measurement-level form of (NW19, Fact 4.31), in the one direction a soundness argument needs and in the synchronous setting, where $\tau((C_iD_i)^\dagger C_iD_i) = \tau(C_iD_i)$ makes the products a measurement on the nose. Put $w_i = C_iD_i - O_i$. Then $\tau(C_iD_i) = \left\| {C_iD_i} \right\|_{hs}^2 = \left\| {O_i + w_i} \right\|_{hs}^2 = \tau(O_i) + 2\langle O_i, w_i\rangle_{hs} + \left\| {w_i} \right\|_{hs}^2$. Summing over $\mathrm{acc}$ and dropping the last term, which is nonnegative,
+This is the measurement-level form of (6, Fact 4.31), in the one direction a soundness argument needs and in the synchronous setting, where $\tau((C_iD_i)^\dagger C_iD_i) = \tau(C_iD_i)$ makes the products a measurement on the nose. Put $w_i = C_iD_i - O_i$. Then $\tau(C_iD_i) = \left\| {C_iD_i} \right\|_{hs}^2 = \left\| {O_i + w_i} \right\|_{hs}^2 = \tau(O_i) + 2\langle O_i, w_i\rangle_{hs} + \left\| {w_i} \right\|_{hs}^2$. Summing over $\mathrm{acc}$ and dropping the last term, which is nonnegative,
 
 $$
 \sum_{i \in \mathrm{acc}} \tau(C_iD_i) \;\geq\; \sum_{i \in \mathrm{acc}} \tau(O_i)

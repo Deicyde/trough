@@ -15,7 +15,7 @@ Its statement uses no other node of the blueprint.
 
 ## Lean
 
-Formalized as [`SpherePacking.Dim24.HasLeechDistanceSpectrum`](https://thefundamentaltheor3m.github.io/Sphere-Packing-Lean/docs/find/#doc/SpherePacking.Dim24.HasLeechDistanceSpectrum).
+Formalized as `SpherePacking.Dim24.HasLeechDistanceSpectrum`.
 
 ## Sources
 

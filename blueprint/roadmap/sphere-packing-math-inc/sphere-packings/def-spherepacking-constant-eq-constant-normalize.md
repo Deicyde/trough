@@ -27,7 +27,7 @@ That the supremum over packings of unit density is at most the sphere packing co
 
 ## Lean
 
-Formalized as [`SpherePacking.constant_eq_constant_normalized`](https://thefundamentaltheor3m.github.io/Sphere-Packing-Lean/docs/find/#doc/SpherePacking.constant_eq_constant_normalized).
+Formalized as `SpherePacking.constant_eq_constant_normalized`.
 
 ## Sources
 

@@ -29,7 +29,7 @@ $$
 
 It suffices to show that $\mu \otimes (\eta \circ \kappa) = ((\eta \circ \kappa \circ \mu) \otimes (\kappa_{\mu}^\dagger \circ \eta_{\kappa \circ \mu}^\dagger))_\leftrightarrow$.
 
-TODO: transcribe the code.
+…
 
 ## Lean
 

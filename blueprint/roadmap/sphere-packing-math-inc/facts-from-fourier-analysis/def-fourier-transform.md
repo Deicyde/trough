@@ -21,7 +21,7 @@ Its statement uses no other node of the blueprint.
 
 ## Lean
 
-Formalized as [`Real.fourierIntegral`](https://thefundamentaltheor3m.github.io/Sphere-Packing-Lean/docs/find/#doc/Real.fourierIntegral).
+Formalized as `Real.fourierIntegral`.
 
 ## Sources
 

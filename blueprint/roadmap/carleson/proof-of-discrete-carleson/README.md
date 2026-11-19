@@ -49,7 +49,7 @@ $$
 2^{4a}2^{-n+1}\}\,.\qquad\text{(7)}
 $$
 
-Following Fefferman (fefferman), we define for ${\mathfrak p} \in {\mathfrak C}(k,n)$
+Following Fefferman ([Fefferman 1973](https://doi.org/10.2307/1970917)), we define for ${\mathfrak p} \in {\mathfrak C}(k,n)$
 
 $$
 \mathfrak{B}({\mathfrak p}) := \{ \mathfrak{m} \in \mathfrak{M}(k,n) \ : \ 100 {\mathfrak p} \lesssim \mathfrak{m}\}\qquad\text{(8)}

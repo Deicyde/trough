@@ -20,7 +20,7 @@ $$
 
 ## Lean
 
-Formalized as [`UpperHalfPlane.denom_cocycle`](https://thefundamentaltheor3m.github.io/Sphere-Packing-Lean/docs/find/#doc/UpperHalfPlane.denom_cocycle).
+Formalized as `UpperHalfPlane.denom_cocycle`.
 
 ## Sources
 

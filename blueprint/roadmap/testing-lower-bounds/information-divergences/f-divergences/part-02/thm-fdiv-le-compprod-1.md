@@ -21,7 +21,7 @@ Let $\mu, \nu$ be two finite measures on $\mathcal X$ and let $\kappa, \eta : \m
 
 ## Proof
 
-TODO: the following proof assumes $\mu \ll \nu$ and $\kappa(x) \ll \eta(x)$ for $\nu$-almost all $x$. Describe the general case.
+…
 
 Using Lemma [rnDeriv_compProd](../../../radon-nikodym-derivatives-and-disintegration/composition-product/lem-rnderiv-compprod.md) and [rnDeriv_value](../../../radon-nikodym-derivatives-and-disintegration/kernel-radon-nikodym-derivative/cor-rnderiv-value.md),
 

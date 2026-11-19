@@ -32,7 +32,7 @@ Comments. The exactness hypothesis is the consumer's and covers all $M t = M \lo
 
 - [Supplying ambient introspection](lem-introspection-supply.md)
 
-The checked soundness analysis follows the rigidity argument of (JNVWY20, Section 8) and techniques introduced in (NW19): the Pauli basis test and the twirling, commutation and sandwiching toolkit. These lemmas use the bipartite setting, as in the sources; the pipeline carries $\mathrm{val}^*$ throughout (Remark Why the pipeline is bipartite throughout).
+The checked soundness analysis follows the rigidity argument of (1, Section 8) and techniques introduced in (6): the Pauli basis test and the twirling, commutation and sandwiching toolkit. These lemmas use the bipartite setting, as in the sources; the pipeline carries $\mathrm{val}^*$ throughout (Remark Why the pipeline is bipartite throughout).
 
 ## Oracularization
 
@@ -44,7 +44,7 @@ Formalized form. The ambient model has no timeout-counter form. The formalizatio
 
 - [The oracularized game](def-oracular-game.md)
 
-Source. `oracularization.tex`, `sec:orac-def` and `fig:oracle-decider`, with the samplers, deciders and typed question strings stripped away: all oracularization uses of a sampler is the pair of maps $L^\textsc{A}, L^\textsc{B}$ on the seed space.
+Source. `oracularization.tex`, `sec:orac-def` and `fig:oracle-decider`, with the samplers, deciders and typed question strings stripped away: all oracularization uses of a sampler is the pair of maps $L^\text{A}, L^\text{B}$ on the seed space.
 
 Comments. The oracularized game is synchronous with no extra hypothesis, which is what makes the PCC vocabulary of Definition [PCC strategy](../../foundations/part-01/def-pcc.md) available on it: equal questions carry equal roles, and the third check then rejects unequal answers.
 

@@ -18,8 +18,6 @@ In this section, we establish basic properties of the $E_8$ lattice and the $\ma
 - [instDiscreteE8Lattice](instdiscretee8lattice.md)
 - [instLatticeE8](instlatticee8.md)
 
-**Prove $E_8$ is unimodular.** **Prove $E_8$ is positive-definite.**
-
 ## The $E_8$ sphere packing
 
 - [E8Packing](e8packing.md)

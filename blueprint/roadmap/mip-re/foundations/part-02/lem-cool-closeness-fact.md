@@ -17,7 +17,7 @@ $$
 
 *simultaneously* over all the fibres of $f$ — multiplying each element by $A$'s own element costs nothing, and neither does summing along a fibre.
 
-Consequently, if $\{Q_{a,b}\}$ is a projective measurement on $\mathbb{C}^{d_\textsc{A}}$ with outcomes pairs, $\{Z_b\}$ is a projective measurement on $\mathbb{C}^{d_\textsc{B}}$, and $\{X_a\}$ is any family on $\mathbb{C}^{d_\textsc{B}}$, then the $b$-marginal of $Q$ inherits $Q$'s consistency with the ordered product:
+Consequently, if $\{Q_{a,b}\}$ is a projective measurement on $\mathbb{C}^{d_\text{A}}$ with outcomes pairs, $\{Z_b\}$ is a projective measurement on $\mathbb{C}^{d_\text{B}}$, and $\{X_a\}$ is any family on $\mathbb{C}^{d_\text{B}}$, then the $b$-marginal of $Q$ inherits $Q$'s consistency with the ordered product:
 
 $$
 \sum_a \left\| {\Bigl( \bigl(\sum_b Q_{a,b}\bigr) \otimes {I} - {I} \otimes X_a \Bigr)

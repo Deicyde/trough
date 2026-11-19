@@ -1,6 +1,6 @@
 # Sphere packing in dimension $24$
 
-This section follows the strategy of (ElkiesCohn) and the explicit construction of (Via2017), as developed for dimension $24$ in (CKMRV24). We reuse the general definitions of sphere packings and density from [Sphere packings](../sphere-packings/README.md) and [Density of packings](../density-of-packings/README.md), and the Cohn–Elkies linear programming bound from [Cohn–Elkies (ElkiesCohn)](../cohn-elkies-linear-programming-bounds/thm-cohn-elkies-general.md).
+This section follows the strategy of (2) and the explicit construction of (11), as developed for dimension $24$ in (12). We reuse the general definitions of sphere packings and density from [Sphere packings](../sphere-packings/README.md) and [Density of packings](../density-of-packings/README.md), and the Cohn–Elkies linear programming bound from [Cohn–Elkies (2)](../cohn-elkies-linear-programming-bounds/thm-cohn-elkies-general.md).
 
 ## Main result in dimension $24$
 

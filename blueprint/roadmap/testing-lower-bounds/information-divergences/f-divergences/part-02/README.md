@@ -8,6 +8,8 @@ navigation: transparent
 - [fDiv_compProd_ne_top_iff](lem-fdiv-compprod-ne-top-iff.md)
 - [fDiv_compProd_right](lem-fdiv-compprod-right.md)
 
+…
+
 ## Integral representation of $f$-divergences
 
 We prove that any $f$-divergence is an integral over priors of statistical informations, in which the measure depends on $f$. The main references for this part are (Liese and Vajda 2006) and (Liese 2012).
@@ -26,9 +28,7 @@ For probability measures, $D_{\phi_{1,y}}(\mu, \nu) = E_y(\mu, \nu)$ , but these
 
 *The proof of [Theorem fDiv_eq_integral_eGamma](thm-fdiv-eq-integral-egamma.md) is shown with its statement.*
 
-TODO: define $\Gamma_f$.
-
-TODO: in the lemma below, $I_\pi(\mu, \nu)$ is the correct value for probability measures, but in general it should be replaced by $D_{\phi_{\pi, 1 - \pi}}(\mu, \nu)$ . These functions can differ if $\mu$ and $\nu$ are finite measures with different masses.
+…
 
 ## Data-processing inequality
 

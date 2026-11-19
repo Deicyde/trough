@@ -11,7 +11,7 @@ proof: formalized
 For $W \in \{X, Z\}$ and $r \in \mathbb{F}_q$ write $W^r(u) = M^{(\mathtt{Point}, W), u}_{[\operatorname{tr}(\cdot\, r) = 0]} - M^{(\mathtt{Point}, W), u}_{[\operatorname{tr}(\cdot\, r) = 1]}$ for the $\pm 1$-observable of the probe. Under the hypotheses of Lemma [Win implications](lem-qld-win.md), on average over the verifier's content,
 
 $$
-W^r(u) \otimes {I}_\textsc{B} \;\approx_{344\varepsilon}\; {I}_\textsc{A} \otimes W^r(u)\;.
+W^r(u) \otimes {I}_\text{B} \;\approx_{344\varepsilon}\; {I}_\text{A} \otimes W^r(u)\;.
 $$
 
 As Lemma [Win implications](lem-qld-win.md), the Lean proves it for a strategy in any bipartite model, with no projectivity.

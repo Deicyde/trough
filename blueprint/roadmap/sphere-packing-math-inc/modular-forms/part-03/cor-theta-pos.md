@@ -25,7 +25,7 @@ $$
 
 ## Lean
 
-Formalized as [`H₂_imag_axis_pos`](https://thefundamentaltheor3m.github.io/Sphere-Packing-Lean/docs/find/#doc/H₂_imag_axis_pos), [`H₄_imag_axis_pos`](https://thefundamentaltheor3m.github.io/Sphere-Packing-Lean/docs/find/#doc/H₄_imag_axis_pos), [`jacobi_identity`](https://thefundamentaltheor3m.github.io/Sphere-Packing-Lean/docs/find/#doc/jacobi_identity).
+Formalized as `H₂_imag_axis_pos`, `H₄_imag_axis_pos`, `jacobi_identity`.
 
 ## Sources
 

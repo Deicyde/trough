@@ -8,7 +8,7 @@ proof: formalized
 
 # The soundness chain of compression, in a value model
 
-If the three stages are sound in the value model $\omega$ (Definition [The stages' soundness clauses in a value model](def-stage-sound-in.md)), then for every $\lambda$-bounded verifier $\mathsf{V}$ and every $n \geq C_0$, $\omega(\mathsf{V}_{2^n}) \leq \frac12$ implies $\omega(\mathsf{V}^{\textsc{Compr}}_n) \leq \frac12$, for the verifier $\mathsf{V}^{\textsc{Compr}}$ of Theorem [Gap-preserving compression from ambient stage contracts](../../structure-of-the-proof/part-09/thm-compression.md) at its answer bounds.
+If the three stages are sound in the value model $\omega$ (Definition [The stages' soundness clauses in a value model](def-stage-sound-in.md)), then for every $\lambda$-bounded verifier $\mathsf{V}$ and every $n \geq C_0$, $\omega(\mathsf{V}_{2^n}) \leq \frac12$ implies $\omega(\mathsf{V}^{\text{Compr}}_n) \leq \frac12$, for the verifier $\mathsf{V}^{\text{Compr}}$ of Theorem [Gap-preserving compression from ambient stage contracts](../../structure-of-the-proof/part-09/thm-compression.md) at its answer bounds.
 
 ## Depends on
 

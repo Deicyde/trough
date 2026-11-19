@@ -18,10 +18,6 @@ For $M$ a square integrable martingale, we have $M_t \to M_\infty$ almost surely
 
 - [tendsto_limitProcess_of_cadlag](../../../filtrations-processes-and-martingales/martingale-convergence/thm-tendsto-limitprocess-of-cadlag.md)
 
-## Proof
-
-TODO: use a martingale convergence theorem. Check whether Theorem [tendsto_limitProcess_of_cadlag](../../../filtrations-processes-and-martingales/martingale-convergence/thm-tendsto-limitprocess-of-cadlag.md) is what we need.
-
 ## Lean
 
 Stated as [`ProbabilityTheory.IsSquareIntegrable.ae_tendsto_limitProcess`](https://RemyDegenne.github.io/brownian-motion/docs/find/#doc/ProbabilityTheory.IsSquareIntegrable.ae_tendsto_limitProcess), [`ProbabilityTheory.IsSquareIntegrable.tendsto_eLpNorm_two_limitProcess`](https://RemyDegenne.github.io/brownian-motion/docs/find/#doc/ProbabilityTheory.IsSquareIntegrable.tendsto_eLpNorm_two_limitProcess); the blueprint marks no proof of it as formalized.

@@ -15,7 +15,7 @@ Its statement uses no other node of the blueprint.
 
 ## Lean
 
-Formalized as [`IsZLattice`](https://thefundamentaltheor3m.github.io/Sphere-Packing-Lean/docs/find/#doc/IsZLattice).
+Formalized as `IsZLattice`.
 
 ## Sources
 

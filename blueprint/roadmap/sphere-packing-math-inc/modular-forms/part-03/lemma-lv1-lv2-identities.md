@@ -29,7 +29,7 @@ We can prove these similarly as Lemma [jacobi-identity](../part-02/lemma-jacobi-
 
 ## Lean
 
-Formalized as [`SpherePacking.ModularForms.E₄_eq_thetaE4`](https://thefundamentaltheor3m.github.io/Sphere-Packing-Lean/docs/find/#doc/SpherePacking.ModularForms.E₄_eq_thetaE4), [`SpherePacking.ModularForms.E₆_eq_thetaE6`](https://thefundamentaltheor3m.github.io/Sphere-Packing-Lean/docs/find/#doc/SpherePacking.ModularForms.E₆_eq_thetaE6), [`Delta_eq_H₂_H₃_H₄`](https://thefundamentaltheor3m.github.io/Sphere-Packing-Lean/docs/find/#doc/Delta_eq_H₂_H₃_H₄).
+Formalized as `SpherePacking.ModularForms.E₄_eq_thetaE4`, `SpherePacking.ModularForms.E₆_eq_thetaE6`, `Delta_eq_H₂_H₃_H₄`.
 
 ## Sources
 

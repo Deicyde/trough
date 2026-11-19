@@ -21,7 +21,7 @@ Optimality is exactly [Theorem SpherePackingConstant_eq_leech_density](thm-spher
 
 ## Lean
 
-Formalized as [`SpherePacking.Dim24.MainTheorem`](https://thefundamentaltheor3m.github.io/Sphere-Packing-Lean/docs/find/#doc/SpherePacking.Dim24.MainTheorem).
+Formalized as `SpherePacking.Dim24.MainTheorem`.
 
 ## Sources
 

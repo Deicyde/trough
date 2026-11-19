@@ -12,8 +12,8 @@ A fixed polynomial-time program combines monic irreducible binary polynomials $f
 
 ## Depends on
 
-- [Canonical coordinates in monic binary quotients](lem-binary-monic-quotient.md)
-- [Effective closed Frobenius orbit polynomials](lem-binary-orbit-polynomial.md)
+- [Canonical coordinates in monic binary quotients](../part-04/lem-binary-monic-quotient.md)
+- [Effective closed Frobenius orbit polynomials](../part-04/lem-binary-orbit-polynomial.md)
 
 ## Proof depends on
 

@@ -7,7 +7,7 @@ statement: formalized
 
 # The polynomial measurements
 
-At a role $r$ with $k_r$ codewords, $\delta_r(\varepsilon) = \delta_{\mathrm{sim}}(q, M, d, k_r, \varepsilon)$ is the error of the seeded test's soundness. When the test is sound in the model, $G^\textsc{A}_{r,y}$ and $G^\textsc{B}_{r,y}$ are the projective measurements, in the two players' algebras, of $k_r$-tuples of polynomials of individual degree at most $d$ in $M$ variables that the test's soundness gives for the per-role strategy at a role $r$ and an oracularized question $y$; $G^\textsc{A}_r$ and $G^\textsc{B}_r$ are those at $y_r(z)$.
+At a role $r$ with $k_r$ codewords, $\delta_r(\varepsilon) = \delta_{\mathrm{sim}}(q, M, d, k_r, \varepsilon)$ is the error of the seeded test's soundness. When the test is sound in the model, $G^\text{A}_{r,y}$ and $G^\text{B}_{r,y}$ are the projective measurements, in the two players' algebras, of $k_r$-tuples of polynomials of individual degree at most $d$ in $M$ variables that the test's soundness gives for the per-role strategy at a role $r$ and an oracularized question $y$; $G^\text{A}_r$ and $G^\text{B}_r$ are those at $y_r(z)$.
 
 ## Depends on
 

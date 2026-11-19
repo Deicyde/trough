@@ -27,7 +27,7 @@ $$
 
 ## Lean
 
-Formalized as [`φ₀`](https://thefundamentaltheor3m.github.io/Sphere-Packing-Lean/docs/find/#doc/φ₀), [`F`](https://thefundamentaltheor3m.github.io/Sphere-Packing-Lean/docs/find/#doc/F), [`G`](https://thefundamentaltheor3m.github.io/Sphere-Packing-Lean/docs/find/#doc/G), [`MagicFunction.b.PsiBounds.ψS_apply_eq_factor`](https://thefundamentaltheor3m.github.io/Sphere-Packing-Lean/docs/find/#doc/MagicFunction.b.PsiBounds.ψS_apply_eq_factor), [`Delta_eq_H₂_H₃_H₄`](https://thefundamentaltheor3m.github.io/Sphere-Packing-Lean/docs/find/#doc/Delta_eq_H₂_H₃_H₄).
+Formalized as `φ₀`, `F`, `G`, `MagicFunction.b.PsiBounds.ψS_apply_eq_factor`, `Delta_eq_H₂_H₃_H₄`.
 
 ## Sources
 

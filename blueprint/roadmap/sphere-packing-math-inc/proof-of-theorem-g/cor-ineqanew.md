@@ -20,7 +20,7 @@ This directly follows from Lemma [F-G-pos](lemma-f-g-pos.md).
 
 ## Lean
 
-Formalized as [`FG_inequality_1`](https://thefundamentaltheor3m.github.io/Sphere-Packing-Lean/docs/find/#doc/FG_inequality_1).
+Formalized as `FG_inequality_1`.
 
 ## Sources
 

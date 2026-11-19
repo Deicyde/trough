@@ -24,7 +24,7 @@ Similar to the proof of [a-schwartz](prop-a-schwartz.md).
 
 ## Lean
 
-Formalized as [`MagicFunction.FourierEigenfunctions.b`](https://thefundamentaltheor3m.github.io/Sphere-Packing-Lean/docs/find/#doc/MagicFunction.FourierEigenfunctions.b).
+Formalized as `MagicFunction.FourierEigenfunctions.b`.
 
 ## Sources
 

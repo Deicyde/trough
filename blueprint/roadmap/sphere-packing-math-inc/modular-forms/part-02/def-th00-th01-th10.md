@@ -23,7 +23,7 @@ Its statement uses no other node of the blueprint.
 
 ## Lean
 
-Formalized as [`Θ₂`](https://thefundamentaltheor3m.github.io/Sphere-Packing-Lean/docs/find/#doc/Θ₂), [`Θ₃`](https://thefundamentaltheor3m.github.io/Sphere-Packing-Lean/docs/find/#doc/Θ₃), [`Θ₄`](https://thefundamentaltheor3m.github.io/Sphere-Packing-Lean/docs/find/#doc/Θ₄).
+Formalized as `Θ₂`, `Θ₃`, `Θ₄`.
 
 ## Sources
 

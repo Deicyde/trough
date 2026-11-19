@@ -15,12 +15,12 @@ The sofic value of subgroup tests is not approximable, and the Aldous–Lyons co
 - [The Aldous–Lyons conjecture is false; Corollary I:2144](thm-aldous-lyons-false.md)
 - [The sofic value is not approximable; Corollary I:2144, measure-free](../part-01/thm-sofic-not-approximable.md)
 - [Main Theorem II; Theorem I:2126](../part-01/thm-main-theorem-ii.md)
-- [$\mathrm{TMIP}^* = \mathrm{RE}$; II:1505, Theorem 7.4 of (BCLV24)](../../the-aldous-lyons-track-tmip-re/part-01/thm-tmip-re.md)
+- [$\mathrm{TMIP}^* = \mathrm{RE}$; II:1505, Theorem 7.4 of (37)](../../the-aldous-lyons-track-tmip-re/part-01/thm-tmip-re.md)
 - [The sofic value is not approximable, from tailored answer reduction](../part-01/cor-sofic-not-approximable-ar.md)
 
 ## Proof
 
-Theorems [The sofic value is not approximable; Corollary I:2144, measure-free](../part-01/thm-sofic-not-approximable.md) and [The Aldous–Lyons conjecture is false; Corollary I:2144](thm-aldous-lyons-false.md) at the halting reduction of Theorem [$\mathrm{TMIP}^* = \mathrm{RE}$; II:1505, Theorem 7.4 of (BCLV24)](../../the-aldous-lyons-track-tmip-re/part-01/thm-tmip-re.md).
+Theorems [The sofic value is not approximable; Corollary I:2144, measure-free](../part-01/thm-sofic-not-approximable.md) and [The Aldous–Lyons conjecture is false; Corollary I:2144](thm-aldous-lyons-false.md) at the halting reduction of Theorem [$\mathrm{TMIP}^* = \mathrm{RE}$; II:1505, Theorem 7.4 of (37)](../../the-aldous-lyons-track-tmip-re/part-01/thm-tmip-re.md).
 
 ## Lean
 

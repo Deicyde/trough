@@ -19,7 +19,7 @@ $$
 
 ## Lean
 
-Formalized as [`Delta`](https://thefundamentaltheor3m.github.io/Sphere-Packing-Lean/docs/find/#doc/Delta).
+Formalized as `Delta`.
 
 ## Sources
 

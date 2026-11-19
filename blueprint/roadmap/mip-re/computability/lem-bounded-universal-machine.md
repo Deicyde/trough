@@ -14,10 +14,6 @@ For each arity $i$ there are a machine code $U$ with $i + 2$ input tapes and a p
 - [Machine codes](def-machine-code.md)
 - [Runs of coded machines](def-code-run.md)
 
-## Proof
-
-Not planned: issue \#18 was closed on 2026-09-24, and the Lean statement is left as a `sorry`. The main theorem does not use this lemma; its universal machine is the ambient one of Lemma [Efficient universal Turing machine](lem-universal-tm.md).
-
 ## Lean
 
 Stated as [`Turing.exists_boundedUniversalCode`](https://vidick.github.io/MIPRE-formalization/docs/find/#doc/Turing.exists_boundedUniversalCode); the blueprint marks no proof of it as formalized.

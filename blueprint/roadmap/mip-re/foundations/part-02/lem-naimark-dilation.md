@@ -16,7 +16,7 @@ Its statement uses no other node of the blueprint.
 
 ## Proof
 
-The columns of the matrix $V^x$ whose $(q, j)$ entry is $\sqrt{E^x}$-like — concretely, the square root of $E^x_a$ read off in the $a$-th block — form an isometry $\mathbb{C}^d \to \mathbb{C}^d \otimes \mathbb{C}^{{\mathcal{A}}}$ compressing the block-diagonal projectors $\Pi_a = {I} \otimes |a\rangle\langlea|$ back to $E^x_a$. Extending each $V^x$ to a unitary $U^x$ of the larger space that agrees with it on the $a_0$-slice — the completion of an orthonormal family to an orthonormal basis — makes $P^x_a = (U^x)^\dagger \Pi_a U^x$ projective with the compression along the *fixed* isometry $|v\rangle \mapsto |v\rangle \otimes |a_0\rangle$. The question-independence of that isometry is the whole point: the expectations are taken against a shared state, which must not depend on the question.
+The columns of the matrix $V^x$ whose $(q, j)$ entry is $\sqrt{E^x}$-like — concretely, the square root of $E^x_a$ read off in the $a$-th block — form an isometry $\mathbb{C}^d \to \mathbb{C}^d \otimes \mathbb{C}^{{\mathcal{A}}}$ compressing the block-diagonal projectors $\Pi_a = {I} \otimes |a\rangle\langle a|$ back to $E^x_a$. Extending each $V^x$ to a unitary $U^x$ of the larger space that agrees with it on the $a_0$-slice — the completion of an orthonormal family to an orthonormal basis — makes $P^x_a = (U^x)^\dagger \Pi_a U^x$ projective with the compression along the *fixed* isometry $|v\rangle \mapsto |v\rangle \otimes |a_0\rangle$. The question-independence of that isometry is the whole point: the expectations are taken against a shared state, which must not depend on the question.
 
 ## Lean
 

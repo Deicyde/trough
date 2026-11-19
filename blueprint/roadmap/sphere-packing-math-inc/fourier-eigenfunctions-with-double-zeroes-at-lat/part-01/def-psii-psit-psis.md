@@ -22,7 +22,7 @@ $$
 
 ## Lean
 
-Formalized as [`ψI`](https://thefundamentaltheor3m.github.io/Sphere-Packing-Lean/docs/find/#doc/ψI), [`ψT`](https://thefundamentaltheor3m.github.io/Sphere-Packing-Lean/docs/find/#doc/ψT), [`ψS`](https://thefundamentaltheor3m.github.io/Sphere-Packing-Lean/docs/find/#doc/ψS), [`ψI'`](https://thefundamentaltheor3m.github.io/Sphere-Packing-Lean/docs/find/#doc/ψI'), [`ψT'`](https://thefundamentaltheor3m.github.io/Sphere-Packing-Lean/docs/find/#doc/ψT'), [`ψS'`](https://thefundamentaltheor3m.github.io/Sphere-Packing-Lean/docs/find/#doc/ψS').
+Formalized as `ψI`, `ψT`, `ψS`, `ψI'`, `ψT'`, `ψS'`.
 
 ## Sources
 

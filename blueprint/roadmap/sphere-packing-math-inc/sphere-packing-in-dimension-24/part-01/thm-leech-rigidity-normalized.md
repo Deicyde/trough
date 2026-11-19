@@ -17,7 +17,7 @@ Let $S$ be a periodic sphere packing in $\mathbb{R}^{24}$ with separation $2$ an
 
 ## Lean
 
-Formalized as [`SpherePacking.Dim24.Uniqueness.RigidityClassify.CE.leech_rigidity_normalized`](https://thefundamentaltheor3m.github.io/Sphere-Packing-Lean/docs/find/#doc/SpherePacking.Dim24.Uniqueness.RigidityClassify.CE.leech_rigidity_normalized).
+Formalized as `SpherePacking.Dim24.Uniqueness.RigidityClassify.CE.leech_rigidity_normalized`.
 
 ## Sources
 

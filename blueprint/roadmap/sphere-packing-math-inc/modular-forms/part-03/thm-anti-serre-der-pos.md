@@ -43,7 +43,7 @@ and $\lim_{t \to \infty} e^{2 \pi n_{0}t} F(it) = a_{n_0} > 0$, hence the result
 
 ## Lean
 
-Formalized as [`antiSerreDerPos`](https://thefundamentaltheor3m.github.io/Sphere-Packing-Lean/docs/find/#doc/antiSerreDerPos).
+Formalized as `antiSerreDerPos`.
 
 ## Sources
 

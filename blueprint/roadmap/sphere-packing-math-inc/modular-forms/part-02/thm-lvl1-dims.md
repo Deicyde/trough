@@ -28,7 +28,7 @@ Finally we need to check that $\dim M_2(\Gamma_1) = 0$. Firstly, there can't be 
 
 ## Lean
 
-Formalized as [`ModularForm.dimension_level_one`](https://thefundamentaltheor3m.github.io/Sphere-Packing-Lean/docs/find/#doc/ModularForm.dimension_level_one).
+Formalized as `ModularForm.dimension_level_one`.
 
 ## Sources
 

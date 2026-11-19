@@ -2,11 +2,11 @@
 
 To prove Proposition [finitary Carleson](../proof-of-metric-space-carleson-overview/finitary-carleson.md), we already fixed in [Proof of Metric Space Carleson, overview](../proof-of-metric-space-carleson-overview/README.md) measurable functions ${\sigma_1},\sigma_2, {Q}$ and Borel sets $F,G$. We have also defined $S$ to be the smallest integer such that the ranges of $\sigma_1$ and $\sigma_2$ are contained in $[-S,S]$ and $F$ and $G$ are contained in the ball $B(o, \frac 14 D^S)$.
 
-The proof of the next lemma is done in Proof of Grid Existence Lemma, following the construction of dyadic cubes in (christ1990b, § 3).
+The proof of the next lemma is done in Proof of Grid Existence Lemma, following the construction of dyadic cubes in (Christ 1990, § 3).
 
 - [grid existence](grid-existence.md)
 
-The next lemma, which we prove in Proof of Tile Structure Lemma, should be compared with the construction in (zk-polynomial, Lemma 2.12).
+The next lemma, which we prove in Proof of Tile Structure Lemma, should be compared with the construction in ([Zorin-Kranich 2021](https://doi.org/10.1016/j.aim.2021.107832), Lemma 2.12).
 
 - [tile structure](tile-structure.md)
 

@@ -54,7 +54,7 @@ Note that the summation in the numerator converges absolutely because of polynom
 
 ## Lean
 
-Formalized as [`MagicFunction.PolyFourierCoeffBound.DivDiscBoundOfPolyFourierCoeff`](https://thefundamentaltheor3m.github.io/Sphere-Packing-Lean/docs/find/#doc/MagicFunction.PolyFourierCoeffBound.DivDiscBoundOfPolyFourierCoeff).
+Formalized as `MagicFunction.PolyFourierCoeffBound.DivDiscBoundOfPolyFourierCoeff`.
 
 ## Sources
 

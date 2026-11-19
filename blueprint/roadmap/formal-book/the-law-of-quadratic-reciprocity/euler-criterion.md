@@ -32,7 +32,7 @@ $$
 Suppose $a \equiv b^2 \pmod{p}$ is a quadratic residue. Then by Fermat's little theorem $a^{\frac{p-1}{2}} \equiv b^{p-1} \equiv 1 \pmod{p}$. Hence the quadratic residues are precisely the roots of the first factor $x^{\frac{p-1}{2}} - 1$, and the $\frac{p-1}{2}$ nonresidues must thus be the roots of the second factor $x^{\frac{p-1}{2}} + 1$. Comparing this to the definition of the Legendre symbol, we obtain
 
 $$
-(\frac{a}{p}) \equiv a^{\frac{p-1}{2}} \pmod{p}. \qedhere
+(\frac{a}{p}) \equiv a^{\frac{p-1}{2}} \pmod{p}.
 $$
 
 ## Lean

@@ -11,7 +11,7 @@ proof: formalized
 For every $n$:
 
 1. if $\mathcal{M}$ halts within $n$ steps then $\mathrm{val}^*(\mathsf{V}^{\mathsf{halt}}_n) = 1$, witnessed by a value-$1$ PCC strategy;
-2. if $\mathcal{M}$ does not halt within $n$ steps then $\mathsf{V}^{\mathsf{halt}}_n$ and $\mathsf{V}^{\textsc{Compr}}_n$ are the same game up to an identification of the answer alphabets; in particular $\mathrm{val}^*(\mathsf{V}^{\mathsf{halt}}_n) = \mathrm{val}^*(\mathsf{V}^{\textsc{Compr}}_n)$, and $\mathsf{V}^{\mathsf{halt}}_n$ has a value-$1$ PCC strategy if and only if $\mathsf{V}^{\textsc{Compr}}_n$ does.
+2. if $\mathcal{M}$ does not halt within $n$ steps then $\mathsf{V}^{\mathsf{halt}}_n$ and $\mathsf{V}^{\text{Compr}}_n$ are the same game up to an identification of the answer alphabets; in particular $\mathrm{val}^*(\mathsf{V}^{\mathsf{halt}}_n) = \mathrm{val}^*(\mathsf{V}^{\text{Compr}}_n)$, and $\mathsf{V}^{\mathsf{halt}}_n$ has a value-$1$ PCC strategy if and only if $\mathsf{V}^{\text{Compr}}_n$ does.
 
 ## Depends on
 
@@ -23,7 +23,7 @@ For every $n$:
 
 ## Proof
 
-Item 1 is the fixed-answer strategy: when $\mathcal{M}$ halts within $n$ steps, $\mathcal{D}^{\mathsf{halt}}$ accepts every answer pair on every question pair in the support, so any strategy has value $1$ and the constant-$0$ strategy is PCC. For item 2, $\mathcal{D}^{\mathsf{halt}}$ at index $n$ performs the same question-length check as $\mathcal{D}^{\textsc{Compr}}$ and then runs $\mathcal{D}^{\textsc{Compr}}(n, x, y, a, b)$ verbatim, with $\mathtt{TIMEOUT}$ rejecting in both, so the two deciders accept on exactly the same inputs; and the two verifiers share the sampler $\mathcal{S}^{\mathsf{halt}} = \mathtt{ComputeSampler}(\lambda)$ (Lemma [The compressed sampler does not depend on the verifier](lem-compress-sampler-indep.md)), so a strategy for either is a strategy for the other with the same winning probability. The timeout counter of $\mathcal{D}^{\mathsf{halt}}$ does not interfere: its bound is chosen in Lemma [The parameter of the halting verifier](lem-lambda.md) so that the computations above finish first.
+Item 1 is the fixed-answer strategy: when $\mathcal{M}$ halts within $n$ steps, $\mathcal{D}^{\mathsf{halt}}$ accepts every answer pair on every question pair in the support, so any strategy has value $1$ and the constant-$0$ strategy is PCC. For item 2, $\mathcal{D}^{\mathsf{halt}}$ at index $n$ performs the same question-length check as $\mathcal{D}^{\text{Compr}}$ and then runs $\mathcal{D}^{\text{Compr}}(n, x, y, a, b)$ verbatim, with $\mathtt{TIMEOUT}$ rejecting in both, so the two deciders accept on exactly the same inputs; and the two verifiers share the sampler $\mathcal{S}^{\mathsf{halt}} = \mathtt{ComputeSampler}(\lambda)$ (Lemma [The compressed sampler does not depend on the verifier](lem-compress-sampler-indep.md)), so a strategy for either is a strategy for the other with the same winning probability. The timeout counter of $\mathcal{D}^{\mathsf{halt}}$ does not interfere: its bound is chosen in Lemma [The parameter of the halting verifier](lem-lambda.md) so that the computations above finish first.
 
 ## Lean
 

@@ -13,10 +13,6 @@ For any $\nu:\widehat{G}\to \mathbb{R}$ there exists $\rho\in[\frac{1}{2},1]$ su
 
 - [Regularity](bohr-reg-def.md)
 
-## Proof
-
-To do.
-
 ## Lean
 
 Stated as [`BohrSet.regularity`](https://yaeldillies.github.io/apap/docs/find/#doc/BohrSet.regularity); the blueprint marks no proof of it as formalized.

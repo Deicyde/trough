@@ -7,9 +7,9 @@ statement: formalized
 
 # Tensor-product strategy
 
-[[$\uparrow$ QuantumLib](https://github.com/Timeroot/Lean-QuantumInfo)] A *tensor-product strategy* for $\mathfrak{G}$ consists of finite-dimensional Hilbert spaces $\mathcal{H}_\textsc{A}$, $\mathcal{H}_\textsc{B}$, a unit vector $|\psi\rangle \in \mathcal{H}_\textsc{A} \otimes \mathcal{H}_\textsc{B}$, and projective measurements (PVMs) $\{A^x_a\}$ on $\mathcal{H}_\textsc{A}$ and $\{B^y_b\}$ on $\mathcal{H}_\textsc{B}$, one for each $x$ (resp. $y$): each $A^x_a$ is an orthogonal projection and $\sum_a A^x_a = {I}$.
+[[$\uparrow$ QuantumLib](https://github.com/Timeroot/Lean-QuantumInfo)] A *tensor-product strategy* for $\mathfrak{G}$ consists of finite-dimensional Hilbert spaces $\mathcal{H}_\text{A}$, $\mathcal{H}_\text{B}$, a unit vector $|\psi\rangle \in \mathcal{H}_\text{A} \otimes \mathcal{H}_\text{B}$, and projective measurements (PVMs) $\{A^x_a\}$ on $\mathcal{H}_\text{A}$ and $\{B^y_b\}$ on $\mathcal{H}_\text{B}$, one for each $x$ (resp. $y$): each $A^x_a$ is an orthogonal projection and $\sum_a A^x_a = {I}$.
 
-Outcome probabilities are computed using the Born rule: the players answer $(a,b)$ to questions $(x,y)$ with probability $\langle\psi| A^x_a \otimes B^y_b |\psi\rangle$. Restricting to projective measurements follows (JNVWY20); by Naimark dilation, allowing general POVMs would define the same quantum value.
+Outcome probabilities are computed using the Born rule: the players answer $(a,b)$ to questions $(x,y)$ with probability $\langle\psi| A^x_a \otimes B^y_b |\psi\rangle$. Restricting to projective measurements follows (1); by Naimark dilation, allowing general POVMs would define the same quantum value.
 
 ## Depends on
 

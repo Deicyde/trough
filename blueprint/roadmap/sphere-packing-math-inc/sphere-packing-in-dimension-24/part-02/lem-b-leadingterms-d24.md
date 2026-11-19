@@ -20,7 +20,7 @@ $$
 
 ## Lean
 
-Formalized as [`SpherePacking.Dim24.B_leadingterms_bound`](https://thefundamentaltheor3m.github.io/Sphere-Packing-Lean/docs/find/#doc/SpherePacking.Dim24.B_leadingterms_bound).
+Formalized as `SpherePacking.Dim24.B_leadingterms_bound`.
 
 ## Sources
 

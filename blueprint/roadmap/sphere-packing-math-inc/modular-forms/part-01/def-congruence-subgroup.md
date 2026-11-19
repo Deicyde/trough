@@ -15,7 +15,7 @@ A subgroup $\Gamma\subset\Gamma_1$ is called a *congruence subgroup* if $\Gamma(
 
 ## Lean
 
-Formalized as [`CongruenceSubgroup.IsCongruenceSubgroup`](https://thefundamentaltheor3m.github.io/Sphere-Packing-Lean/docs/find/#doc/CongruenceSubgroup.IsCongruenceSubgroup).
+Formalized as `CongruenceSubgroup.IsCongruenceSubgroup`.
 
 ## Sources
 

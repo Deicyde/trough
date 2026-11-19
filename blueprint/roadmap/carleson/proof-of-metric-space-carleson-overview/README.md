@@ -241,7 +241,7 @@ The following proposition is proved in [Proof of the Forest Operator Proposition
 
 - [forest operator](forest-operator.md)
 
-[metric space Carleson](../introduction/metric-space-carleson.md) is formulated at the level of generality for general kernels satisfying the mere Hölder regularity condition [(15)](../introduction/README.md). On the other hand, the cancellative condition [(12)](../introduction/README.md) is a testing condition against more regular, namely Lipschitz functions. To bridge the gap, we follow (zk-polynomial) to observe a variant of [(12)](../introduction/README.md) that we formulate in the following proposition proved in [Proof of the Hölder cancellative condition](../proof-of-the-holder-cancellative-condition/README.md).
+[metric space Carleson](../introduction/metric-space-carleson.md) is formulated at the level of generality for general kernels satisfying the mere Hölder regularity condition [(15)](../introduction/README.md). On the other hand, the cancellative condition [(12)](../introduction/README.md) is a testing condition against more regular, namely Lipschitz functions. To bridge the gap, we follow ([Zorin-Kranich 2021](https://doi.org/10.1016/j.aim.2021.107832)) to observe a variant of [(12)](../introduction/README.md) that we formulate in the following proposition proved in [Proof of the Hölder cancellative condition](../proof-of-the-holder-cancellative-condition/README.md).
 
 Define
 

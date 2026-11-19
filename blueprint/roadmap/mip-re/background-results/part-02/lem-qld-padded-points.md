@@ -48,8 +48,8 @@ Both items are about the same coarse-graining and they are free for opposite rea
 **Item 2 is not free, and Parseval is what pays for it.** The right-hand families are *not* POVMs — they are products of two measurements — so the argument above does not apply, and a per-fibre triangle inequality would cost the fibre size $q$, which the conclusion cannot afford. Instead, write
 
 $$
-U_{a, b} \;=\; \bigl(\widehat{Q}^{x,z}_{a,b}\bigr)_{\textsc{A}\textsc{A}'}
-- \bigl(\widehat{M}^{Z, z}_b \widehat{M}^{X, x}_a\bigr)_{\textsc{B}\textsc{A}''}\;,
+U_{a, b} \;=\; \bigl(\widehat{Q}^{x,z}_{a,b}\bigr)_{\text{A}\text{A}'}
+- \bigl(\widehat{M}^{Z, z}_b \widehat{M}^{X, x}_a\bigr)_{\text{B}\text{A}''}\;,
 \qquad
 D_c \;=\; \sum_{\alpha a + \beta b = c} U_{a, b}\;,
 $$

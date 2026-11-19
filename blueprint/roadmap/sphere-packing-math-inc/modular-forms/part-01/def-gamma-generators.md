@@ -24,7 +24,7 @@ It is easily verifiable that $\alpha = T^2$ and $\beta = -S\alpha^{-1}S = -ST^{-
 
 ## Lean
 
-Formalized as [`ModularGroup.S`](https://thefundamentaltheor3m.github.io/Sphere-Packing-Lean/docs/find/#doc/ModularGroup.S), [`ModularGroup.T`](https://thefundamentaltheor3m.github.io/Sphere-Packing-Lean/docs/find/#doc/ModularGroup.T), [`α`](https://thefundamentaltheor3m.github.io/Sphere-Packing-Lean/docs/find/#doc/α), [`β`](https://thefundamentaltheor3m.github.io/Sphere-Packing-Lean/docs/find/#doc/β).
+Formalized as `ModularGroup.S`, `ModularGroup.T`, `α`, `β`.
 
 ## Sources
 

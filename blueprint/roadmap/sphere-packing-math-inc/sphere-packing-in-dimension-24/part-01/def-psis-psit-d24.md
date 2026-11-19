@@ -21,7 +21,7 @@ $$
 
 ## Lean
 
-Formalized as [`SpherePacking.Dim24.ψS`](https://thefundamentaltheor3m.github.io/Sphere-Packing-Lean/docs/find/#doc/SpherePacking.Dim24.ψS), [`SpherePacking.Dim24.ψT`](https://thefundamentaltheor3m.github.io/Sphere-Packing-Lean/docs/find/#doc/SpherePacking.Dim24.ψT).
+Formalized as `SpherePacking.Dim24.ψS`, `SpherePacking.Dim24.ψT`.
 
 ## Sources
 

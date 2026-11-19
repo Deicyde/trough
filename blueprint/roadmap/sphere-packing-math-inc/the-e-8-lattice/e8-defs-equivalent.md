@@ -27,7 +27,7 @@ For the opposite direction, we write the vector as $\vec{v} = \sum_i c_i\mathcal
 
 ## Lean
 
-Formalized as [`span_E8Matrix`](https://thefundamentaltheor3m.github.io/Sphere-Packing-Lean/docs/find/#doc/span_E8Matrix).
+Formalized as `span_E8Matrix`.
 
 ## Sources
 

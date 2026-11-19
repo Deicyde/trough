@@ -8,7 +8,7 @@ proof: formalized
 
 # Explicit succinct Cook–Levin
 
-There is a polynomial-time algorithm that, given a decider $\mathcal{D}$, an index $n$, a time bound $T$ (in binary), a question length $Q$, a bound $\sigma$ and strings $x, y$, with $\max\{Q, 2\lceil \log n \rceil\} \leq T$, $\left\vert {\mathcal{D}} \right\vert \leq \sigma$ and $\left\vert {x} \right\vert, \left\vert {y} \right\vert \leq Q$, outputs a circuit $C$ on $3m + 3$ inputs which succinctly describes (Definition [Succinctly described 3SAT and decoupled 5SAT](../part-03/def-succinct-3sat.md)) a 3SAT formula $\varphi$ on $2^m$ variables such that
+There is a polynomial-time algorithm that, given a decider $\mathcal{D}$, an index $n$, a time bound $T$ (in binary), a question length $Q$, a bound $\sigma$ and strings $x, y$, with $\max\{Q, 2\lceil \log n \rceil\} \leq T$, $\left\vert {\mathcal{D}} \right\vert \leq \sigma$ and $\left\vert {x} \right\vert, \left\vert {y} \right\vert \leq Q$, outputs a circuit $C$ on $3m + 3$ inputs which succinctly describes (Definition [Succinctly described 3SAT and decoupled 5SAT](def-succinct-3sat.md)) a 3SAT formula $\varphi$ on $2^m$ variables such that
 
 1. for all $a, b \in \{0,1\}^{2T}$, the formula $\varphi$ has a satisfying assignment whose first $4T$ variables are $(a, b)$ if and only if $a$ and $b$ are the two-bit tape encodings of strings $a', b'$ of length at most $T$ such that $\mathcal{D}$ accepts $(n, x, y, a', b')$ within $T$ steps;
 2. $m = O(\log T + \log \sigma)$ and $2^m \geq 4T$;
@@ -18,7 +18,7 @@ There is a polynomial-time algorithm that, given a decider $\mathcal{D}$, an ind
 
 ## Depends on
 
-- [Succinctly described 3SAT and decoupled 5SAT](../part-03/def-succinct-3sat.md)
+- [Succinctly described 3SAT and decoupled 5SAT](def-succinct-3sat.md)
 - [Decider](../../foundations/part-03/def-decider.md)
 - [Multi-input Turing machine](../../computability/def-multiinput-tm.md)
 

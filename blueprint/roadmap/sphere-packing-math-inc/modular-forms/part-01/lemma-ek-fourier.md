@@ -29,7 +29,7 @@ $$
 
 ## Lean
 
-Formalized as [`E_k_q_expansion`](https://thefundamentaltheor3m.github.io/Sphere-Packing-Lean/docs/find/#doc/E_k_q_expansion).
+Formalized as `E_k_q_expansion`.
 
 ## Sources
 

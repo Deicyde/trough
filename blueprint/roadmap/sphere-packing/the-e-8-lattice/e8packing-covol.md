@@ -14,10 +14,6 @@ $\operatorname{Vol}\!\left(\Lambda_8\right) = \mathrm{Covol}(\mathbb{R}^8 / \Lam
 
 - [E8Packing](e8packing.md)
 
-## Proof
-
-**In theory this should follow directly from $\det(\Lambda_8) = 1$, but Lean hates me and `EuclideanSpace` is being annoying.**
-
 ## Lean
 
 Formalized as [`E8Basis_volume`](https://thefundamentaltheor3m.github.io/Sphere-Packing-Lean/docs/find/#doc/E8Basis_volume).

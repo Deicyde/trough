@@ -77,7 +77,7 @@ and by considering $q$-series ($E_4$ has an invertible $q$-series), we get $f_2 
 
 ## Lean
 
-Formalized as [`serre_D_two_H₂`](https://thefundamentaltheor3m.github.io/Sphere-Packing-Lean/docs/find/#doc/serre_D_two_H₂), [`serre_D_two_H₃`](https://thefundamentaltheor3m.github.io/Sphere-Packing-Lean/docs/find/#doc/serre_D_two_H₃), [`serre_D_two_H₄`](https://thefundamentaltheor3m.github.io/Sphere-Packing-Lean/docs/find/#doc/serre_D_two_H₄).
+Formalized as `serre_D_two_H₂`, `serre_D_two_H₃`, `serre_D_two_H₄`.
 
 ## Sources
 

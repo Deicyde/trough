@@ -24,7 +24,7 @@ $$
 
 ## Lean
 
-Formalized as [`SpherePacking.Dim24.LaplaceTmp.f_eq_laplace_A`](https://thefundamentaltheor3m.github.io/Sphere-Packing-Lean/docs/find/#doc/SpherePacking.Dim24.LaplaceTmp.f_eq_laplace_A), [`SpherePacking.Dim24.LaplaceTmp.fourier_f_eq_laplace_B`](https://thefundamentaltheor3m.github.io/Sphere-Packing-Lean/docs/find/#doc/SpherePacking.Dim24.LaplaceTmp.fourier_f_eq_laplace_B).
+Formalized as `SpherePacking.Dim24.LaplaceTmp.f_eq_laplace_A`, `SpherePacking.Dim24.LaplaceTmp.fourier_f_eq_laplace_B`.
 
 ## Sources
 

@@ -13,9 +13,9 @@ There is one fixed deterministic ambient program and one polynomial $R$ such tha
 ## Depends on
 
 - [Effective irreducibles of every power-of-two degree](../part-04/lem-binary-power-two-irreducible.md)
-- [Effective irreducibles of every odd-prime-power degree](../part-04/lem-binary-odd-prime-power-irreducible.md)
-- [Effective combination of coprime degrees](../part-04/lem-binary-coprime-degree-combination.md)
-- [Effective unary prime-power decomposition](../part-04/lem-binary-degree-decomposition.md)
+- [Effective irreducibles of every odd-prime-power degree](lem-binary-odd-prime-power-irreducible.md)
+- [Effective combination of coprime degrees](lem-binary-coprime-degree-combination.md)
+- [Effective unary prime-power decomposition](lem-binary-degree-decomposition.md)
 
 ## Proof
 

@@ -13,10 +13,6 @@ For all positive natural $n, k$ such that $n \ge 2k$, at least one of the number
 
 Its statement uses no other node of the blueprint.
 
-## Proof
-
-TODO
-
 ## Lean
 
 Stated as [`chapter3.sylvester`](https://mo271.github.io/FormalBook/docs/find/#doc/chapter3.sylvester); the blueprint marks no proof of it as formalized.

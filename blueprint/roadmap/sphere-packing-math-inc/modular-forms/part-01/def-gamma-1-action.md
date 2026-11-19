@@ -20,7 +20,7 @@ Its statement uses no other node of the blueprint.
 
 ## Lean
 
-Formalized as [`UpperHalfPlane.SLAction`](https://thefundamentaltheor3m.github.io/Sphere-Packing-Lean/docs/find/#doc/UpperHalfPlane.SLAction).
+Formalized as `UpperHalfPlane.SLAction`.
 
 ## Sources
 

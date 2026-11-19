@@ -21,7 +21,7 @@ The first part is by [Lemma instDiscreteE8Lattice](instdiscretee8lattice.md), an
 
 ## Lean
 
-Formalized as [`instIsZLatticeE8Lattice`](https://thefundamentaltheor3m.github.io/Sphere-Packing-Lean/docs/find/#doc/instIsZLatticeE8Lattice).
+Formalized as `instIsZLatticeE8Lattice`.
 
 ## Sources
 

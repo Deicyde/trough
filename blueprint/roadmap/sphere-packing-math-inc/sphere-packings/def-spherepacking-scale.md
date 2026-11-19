@@ -15,7 +15,7 @@ Given a sphere packing $\mathcal{P}(X)$ with separation radius $r$, we defined t
 
 ## Lean
 
-Formalized as [`SpherePacking.scale`](https://thefundamentaltheor3m.github.io/Sphere-Packing-Lean/docs/find/#doc/SpherePacking.scale).
+Formalized as `SpherePacking.scale`.
 
 ## Sources
 

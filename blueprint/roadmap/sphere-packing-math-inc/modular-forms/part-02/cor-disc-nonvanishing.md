@@ -20,7 +20,7 @@ This follows from the product formula.
 
 ## Lean
 
-Formalized as [`Δ_ne_zero`](https://thefundamentaltheor3m.github.io/Sphere-Packing-Lean/docs/find/#doc/Δ_ne_zero).
+Formalized as `Δ_ne_zero`.
 
 ## Sources
 

@@ -40,7 +40,7 @@ $$
 by comparing with the area of the large rectangles (including the lightly shaded parts). Taken together, this yields
 
 $$
-\log n + \frac{1}{n} < H_n < \log n + 1. \qedhere
+\log n + \frac{1}{n} < H_n < \log n + 1.
 $$
 
 ## Lean

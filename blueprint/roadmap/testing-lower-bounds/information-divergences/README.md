@@ -6,7 +6,7 @@ We will pay particular attention to how the divergence behaves with respect to t
 
 Another important concept is the *conditional divergence* of two kernels $\kappa, \eta : \mathcal X \rightsquigarrow \mathcal Y$ given a measure $\mu \in \mathcal M(\mathcal X)$. This is the value $D(\mu \otimes \kappa, \mu \otimes \eta)$.
 
-TODO: two possible concepts of conditional divergence are $D(\mu \otimes \kappa, \mu \otimes \eta)$ and $\mu\left[x \mapsto D(\kappa(x), \eta(x))\right]$. They are equal for $f$-divergences (which gives also convexity of the divergence) but not in general.
+…
 
 - [Statistical divergences](statistical-divergences/README.md)
 - [f-divergences](f-divergences/README.md)

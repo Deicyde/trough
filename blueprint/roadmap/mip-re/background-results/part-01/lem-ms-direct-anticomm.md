@@ -8,7 +8,7 @@ proof: formalized
 
 # Direct Magic Square anticommutation — what the pipeline actually needs
 
-Let $|\psi\rangle$ be a unit vector on $\mathbb{C}^{d_\textsc{A}} \otimes \mathbb{C}^{d_\textsc{B}}$ and let $A, B$ be POVM families for the Magic Square game (Definition [LCS game](../../foundations/part-01/def-lcs-game.md) at the magic square's layout), failing it with probability at most $\varepsilon \geq 0$. Write $B_j$ for the second player's $\pm 1$-observable for variable $\textsc{Variable}_j$ — the difference of the two *bit* outcomes, every other answer contributing zero — and $A_j$ for the first player's. If the first player's measurements are projective, then
+Let $|\psi\rangle$ be a unit vector on $\mathbb{C}^{d_\text{A}} \otimes \mathbb{C}^{d_\text{B}}$ and let $A, B$ be POVM families for the Magic Square game (Definition [LCS game](../../foundations/part-01/def-lcs-game.md) at the magic square's layout), failing it with probability at most $\varepsilon \geq 0$. Write $B_j$ for the second player's $\pm 1$-observable for variable $\text{Variable}_j$ — the difference of the two *bit* outcomes, every other answer contributing zero — and $A_j$ for the first player's. If the first player's measurements are projective, then
 
 $$
 \left\| { ({I} \otimes \{ B_1, B_5 \}) |\psi\rangle } \right\|^2 \;\leq\; 186624\, \varepsilon\;,

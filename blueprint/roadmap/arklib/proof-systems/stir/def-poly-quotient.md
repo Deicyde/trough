@@ -7,7 +7,7 @@ statement: formalized
 
 # poly_quotient
 
-Let $\hat{f}\in\mathbb{F}^{\lt d}[X]$ be a polynomial and $S\subseteq\mathbb{F}$ be a finite set with $|S|\led$, and let $\hat{V}_S(X):=\prod_{s\in S}(X-s)$, the unique monic polynomial of degree $|S|$ vanishing on $S$. The *polynomial quotient* $\mathsf{PolyQuotient}(\hat{f},S)\in\mathbb{F}^{\lt d-|S|}[X]$ is defined as follows:
+Let $\hat{f}\in\mathbb{F}^{\lt d}[X]$ be a polynomial and $S\subseteq\mathbb{F}$ be a finite set with $|S|\le d$, and let $\hat{V}_S(X):=\prod_{s\in S}(X-s)$, the unique monic polynomial of degree $|S|$ vanishing on $S$. The *polynomial quotient* $\mathsf{PolyQuotient}(\hat{f},S)\in\mathbb{F}^{\lt d-|S|}[X]$ is defined as follows:
 
 $$
 \mathsf{PolyQuotient}(\hat{f},S)(X):=\frac{\hat{f}(X)-\hat{\mathsf{Ans}}(X)}{\hat{V}_S(X)}

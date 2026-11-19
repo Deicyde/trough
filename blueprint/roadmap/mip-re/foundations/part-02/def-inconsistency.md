@@ -7,7 +7,7 @@ statement: formalized
 
 # Inconsistency
 
-Let $\mu$ be a distribution on a finite set ${\mathcal{X}}$, let $|\psi\rangle \in \mathbb{C}^{d_\textsc{A}} \otimes \mathbb{C}^{d_\textsc{B}}$, and let $\{M^x_a\}$, $\{N^x_a\}$ be families of POVMs on the two factors with a common question set ${\mathcal{X}}$ and a common answer set. Their *inconsistency* on $|\psi\rangle$ is
+Let $\mu$ be a distribution on a finite set ${\mathcal{X}}$, let $|\psi\rangle \in \mathbb{C}^{d_\text{A}} \otimes \mathbb{C}^{d_\text{B}}$, and let $\{M^x_a\}$, $\{N^x_a\}$ be families of POVMs on the two factors with a common question set ${\mathcal{X}}$ and a common answer set. Their *inconsistency* on $|\psi\rangle$ is
 
 $$
 \mathop{\mathbb{E}}_{x \sim \mu} \sum_{a \neq b} \langle\psi| M^x_a \otimes N^x_b |\psi\rangle,

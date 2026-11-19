@@ -7,7 +7,7 @@ statement: formalized
 
 # General Verifier Composition
 
-A definition of the blueprint of ArkLib, with no text.
+A definition the blueprint states with no text.
 
 ## Depends on
 

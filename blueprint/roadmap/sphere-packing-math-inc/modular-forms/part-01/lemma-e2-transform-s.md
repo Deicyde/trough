@@ -20,11 +20,11 @@ $$
 
 ## Proof
 
-This is exercise 1.2.8 of (first course).
+This is exercise 1.2.8 of (3).
 
 ## Lean
 
-Formalized as [`E₂_transform`](https://thefundamentaltheor3m.github.io/Sphere-Packing-Lean/docs/find/#doc/E₂_transform).
+Formalized as `E₂_transform`.
 
 ## Sources
 

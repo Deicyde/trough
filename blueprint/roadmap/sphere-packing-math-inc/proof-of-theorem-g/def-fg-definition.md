@@ -23,7 +23,7 @@ $$
 
 ## Lean
 
-Formalized as [`F`](https://thefundamentaltheor3m.github.io/Sphere-Packing-Lean/docs/find/#doc/F), [`G`](https://thefundamentaltheor3m.github.io/Sphere-Packing-Lean/docs/find/#doc/G).
+Formalized as `F`, `G`.
 
 ## Sources
 

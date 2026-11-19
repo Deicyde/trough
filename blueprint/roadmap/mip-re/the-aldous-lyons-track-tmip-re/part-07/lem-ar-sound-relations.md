@@ -11,8 +11,8 @@ proof: formalized
 Write $\mathrm{ev}_w$ for evaluation at the point the registers $w$ carry, and $\mathrm{res}_r$ for the restriction of the oracle's tuple to the slots of an isolated role $r$. Summed over the seeds:
 
 1. at one pair of types, if the typed data's acceptance forces two readings of the two answers to agree, their disagreement is at most $81 |Z| |W| \theta$; the consistency check at the point questions of an isolated role and the oracle forces the role's point values to be the oracle's in the role's slots;
-2. $\mathrm{ev}_w G^\textsc{B}_r$ disagrees with Alice's point values at most $|Z| |W| \delta_r(9\theta)$, $\mathrm{ev}_w G^\textsc{A}_r$ with Bob's likewise, and $G^\textsc{A}_r$ with $G^\textsc{B}_r$ at most $|Z| \delta_r(9\theta)$;
-3. for an isolated role $r$, $\mathrm{ev}_w G^\textsc{A}_r$ disagrees with $\mathrm{ev}_w \mathrm{res}_r G^\textsc{B}_\textsc{O}$ at most $11 |Z| |W| (\delta_r(9\theta) + 81 \theta + \delta_\textsc{O}(9\theta))$, and the same with the players exchanged.
+2. $\mathrm{ev}_w G^\text{B}_r$ disagrees with Alice's point values at most $|Z| |W| \delta_r(9\theta)$, $\mathrm{ev}_w G^\text{A}_r$ with Bob's likewise, and $G^\text{A}_r$ with $G^\text{B}_r$ at most $|Z| \delta_r(9\theta)$;
+3. for an isolated role $r$, $\mathrm{ev}_w G^\text{A}_r$ disagrees with $\mathrm{ev}_w \mathrm{res}_r G^\text{B}_\text{O}$ at most $11 |Z| |W| (\delta_r(9\theta) + 81 \theta + \delta_\text{O}(9\theta))$, and the same with the players exchanged.
 
 ## Depends on
 

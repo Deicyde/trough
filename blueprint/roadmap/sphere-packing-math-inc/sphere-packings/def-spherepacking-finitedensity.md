@@ -20,7 +20,7 @@ $$
 
 ## Lean
 
-Formalized as [`SpherePacking.finiteDensity`](https://thefundamentaltheor3m.github.io/Sphere-Packing-Lean/docs/find/#doc/SpherePacking.finiteDensity).
+Formalized as `SpherePacking.finiteDensity`.
 
 ## Sources
 

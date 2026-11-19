@@ -8,7 +8,7 @@ proof: formalized
 
 # Efficient Kleene recursion theorem
 
-For every polynomial-time computable $f : \{0,1\}^* \to \{0,1\}^*$ there is a program $e$ with $\phi_e = \phi_{f(e)}$ and the runtime of $e$ polynomially bounded in terms of that of $f(e)$. (This is the direction used by Lemma [Recursive compression](lem-recursive-compression.md); (MNY) states the runtimes as polynomially equivalent, and the converse direction would require a simulator that is never faster than the simulated program.)
+For every polynomial-time computable $f : \{0,1\}^* \to \{0,1\}^*$ there is a program $e$ with $\phi_e = \phi_{f(e)}$ and the runtime of $e$ polynomially bounded in terms of that of $f(e)$. (This is the direction used by Lemma [Recursive compression](lem-recursive-compression.md); (11) states the runtimes as polynomially equivalent, and the converse direction would require a simulator that is never faster than the simulated program.)
 
 ## Depends on
 

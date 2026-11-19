@@ -19,7 +19,7 @@ Every language in $\mathrm{MIP}^{\mathrm{co}}$ is co-recursively enumerable. Mor
 
 ## Proof
 
-Let $z \mapsto \mathfrak{G}_z$ witness $L \in \mathrm{MIP}(\omega)$. Under the promise, $z \notin L$ if and only if $\omega(\mathfrak{G}_z) < 1$. The set of game descriptions $d$ with $\omega(\mathfrak{G}_d) < 1$ is recursively enumerable, at $p = q = 1$, and the complement of $L$ is its preimage under the computable map $z \mapsto \mathfrak{G}_z$. For ${\omega^{\mathrm{co}}}$ the semidecider is Lemma [Upper semidecision of the commuting-operator value](lem-valco-upper-re.md); Lin's proof runs the NPA hierarchy here (Lin25), and the Lean runs the sum-of-squares certificates of Lemma [Exact sum-of-squares certificates](lem-sos-certificates.md). The same argument at the threshold $\frac12$, for a model r.e. from below, is Lemma [$\mathrm{MIP}^* \subseteq \mathrm{RE}$](../../the-main-theorem/lem-mipstar-sub-re.md).
+Let $z \mapsto \mathfrak{G}_z$ witness $L \in \mathrm{MIP}(\omega)$. Under the promise, $z \notin L$ if and only if $\omega(\mathfrak{G}_z) < 1$. The set of game descriptions $d$ with $\omega(\mathfrak{G}_d) < 1$ is recursively enumerable, at $p = q = 1$, and the complement of $L$ is its preimage under the computable map $z \mapsto \mathfrak{G}_z$. For ${\omega^{\mathrm{co}}}$ the semidecider is Lemma [Upper semidecision of the commuting-operator value](lem-valco-upper-re.md); Lin's proof runs the NPA hierarchy here (13), and the Lean runs the sum-of-squares certificates of Lemma [Exact sum-of-squares certificates](lem-sos-certificates.md). The same argument at the threshold $\frac12$, for a model r.e. from below, is Lemma [$\mathrm{MIP}^* \subseteq \mathrm{RE}$](../../the-main-theorem/lem-mipstar-sub-re.md).
 
 ## Lean
 

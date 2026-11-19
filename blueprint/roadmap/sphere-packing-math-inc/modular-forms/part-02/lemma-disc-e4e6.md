@@ -26,7 +26,7 @@ To check its a cuspform, we just look at the $q$-expansions of $E_4$ and $E_6$ a
 
 ## Lean
 
-Formalized as [`Delta_E4_eqn`](https://thefundamentaltheor3m.github.io/Sphere-Packing-Lean/docs/find/#doc/Delta_E4_eqn).
+Formalized as `Delta_E4_eqn`.
 
 ## Sources
 

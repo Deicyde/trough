@@ -16,12 +16,12 @@ Assume a gap compression is sound in the model ${\omega^{\mathrm{co}}}$. Then $\
 - [$\mathrm{MIP}^{\mathrm{co}} \subseteq \mathrm{coRE}$](../part-01/lem-mipco-sub-core.md)
 - [The class $\mathrm{MIP}^{\mathrm{co}}$](../part-01/def-mipco.md)
 - [Co-recursively enumerable](../part-01/def-core.md)
-- [Turing](../../background-results/part-03/thm-halting-undecidable.md)
+- [Turing](../../background-results/part-04/thm-halting-undecidable.md)
 - [Value models](../part-01/def-value-model.md)
 
 ## Proof
 
-$\mathrm{MIP}(\omega) \subseteq \mathrm{coRE}$ is Lemma [$\mathrm{MIP}^{\mathrm{co}} \subseteq \mathrm{coRE}$](../part-01/lem-mipco-sub-core.md). For the converse, the complement of a co-r.e. language many-one reduces to halting on the empty input (Theorem [Turing](../../background-results/part-03/thm-halting-undecidable.md); in Lean `MIPRE.Halting.exists_code_halts_of_isRE`, applied to the complement), and composing with the map of Theorem [Halting reduces to the commuting-operator value, from co-soundness](thm-halting-co.md) sends the members of $L$, whose machines do not halt, to games of value $1$ and the non-members to games of value at most $\frac12$. This is the argument of Theorem [$\mathrm{MIP}^* = \mathrm{RE}$](../../the-main-theorem/thm-mipstar-eq-re.md) with the two verdicts exchanged, and in Lean the two are the same theorem in the two shapes.
+$\mathrm{MIP}(\omega) \subseteq \mathrm{coRE}$ is Lemma [$\mathrm{MIP}^{\mathrm{co}} \subseteq \mathrm{coRE}$](../part-01/lem-mipco-sub-core.md). For the converse, the complement of a co-r.e. language many-one reduces to halting on the empty input (Theorem [Turing](../../background-results/part-04/thm-halting-undecidable.md); in Lean `MIPRE.Halting.exists_code_halts_of_isRE`, applied to the complement), and composing with the map of Theorem [Halting reduces to the commuting-operator value, from co-soundness](thm-halting-co.md) sends the members of $L$, whose machines do not halt, to games of value $1$ and the non-members to games of value at most $\frac12$. This is the argument of Theorem [$\mathrm{MIP}^* = \mathrm{RE}$](../../the-main-theorem/thm-mipstar-eq-re.md) with the two verdicts exchanged, and in Lean the two are the same theorem in the two shapes.
 
 ## Lean
 

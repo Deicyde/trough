@@ -1,6 +1,6 @@
 # Formal Book
 
-The blueprint of Formal Book, read at commit [7df264a4](https://github.com/mo271/FormalBook/tree/7df264a4d5e57f9036acdf85f7a2702b3ad82a06) (2026-10-27): one article for each of its 62 nodes whose Lean declarations it names and marks formalized, or in Mathlib. Its other 130 nodes have no article, and a section of only those is left out: the map records what the project contains, not what it plans. A statement for which the blueprint marks no proof `\leanok` says so. Dependencies are the blueprint's `\uses`: a statement's under *Depends on*, a proof's under *Proof depends on*.
+The project's blueprint, read at commit [7df264a4](https://github.com/mo271/FormalBook/tree/7df264a4d5e57f9036acdf85f7a2702b3ad82a06) (2026-10-27): one article for each of its 62 nodes whose Lean declarations it names and marks formalized, or in Mathlib. Its other 130 nodes have no article, and a section of only those is left out: the map records what the project contains, not what it plans. A statement for which the blueprint marks no proof `\leanok` says so. Dependencies are the blueprint's `\uses`: a statement's under *Depends on*, a proof's under *Proof depends on*.
 
 The text is the blueprint's, under its Apache-2.0 license: each page has a section's prose, remarks and examples in the blueprint's order, with each node's statement and proof where the node stands.
 

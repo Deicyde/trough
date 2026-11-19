@@ -15,7 +15,7 @@ Its statement uses no other node of the blueprint.
 
 ## Lean
 
-Formalized as [`SchwartzMap`](https://thefundamentaltheor3m.github.io/Sphere-Packing-Lean/docs/find/#doc/SchwartzMap).
+Formalized as `SchwartzMap`.
 
 ## Sources
 

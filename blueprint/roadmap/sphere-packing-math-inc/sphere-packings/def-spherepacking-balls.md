@@ -19,7 +19,7 @@ Its statement uses no other node of the blueprint.
 
 ## Lean
 
-Formalized as [`SpherePacking.balls`](https://thefundamentaltheor3m.github.io/Sphere-Packing-Lean/docs/find/#doc/SpherePacking.balls).
+Formalized as `SpherePacking.balls`.
 
 ## Sources
 

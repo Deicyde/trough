@@ -16,7 +16,7 @@ We have $\Gamma(2) = \langle \alpha, \beta, -I \rangle$.
 
 ## Proof
 
-See (first course, Exercise 1.2.4).
+See (3, Exercise 1.2.4).
 
 ## Lean
 

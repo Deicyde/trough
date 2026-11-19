@@ -8,7 +8,7 @@ proof: formalized
 
 # Expanded point observables commute
 
-Let $|\hat\psi\rangle = |\psi\rangle \otimes |\textsc{EPR}_q\rangle^{\otimes M}$ with the ancilla halves split between the two parties, and let $\widehat{W}^{r}(u) = W^{r}(u) \otimes \tau^W(r \cdot {\mathrm{ind}}_m(u))$. If the first player's measurements are projective then, on average over the verifier's content and with *no sign*,
+Let $|\hat\psi\rangle = |\psi\rangle \otimes |\text{EPR}_q\rangle^{\otimes M}$ with the ancilla halves split between the two parties, and let $\widehat{W}^{r}(u) = W^{r}(u) \otimes \tau^W(r \cdot {\mathrm{ind}}_m(u))$. If the first player's measurements are projective then, on average over the verifier's content and with *no sign*,
 
 $$
 \sum_\omega \frac{1}{\left\vert {{\mathcal{C}}} \right\vert}

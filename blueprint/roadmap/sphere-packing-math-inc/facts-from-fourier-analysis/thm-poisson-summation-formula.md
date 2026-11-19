@@ -22,7 +22,7 @@ $$
 
 ## Lean
 
-Formalized as [`SchwartzMap.poissonSummation_lattice`](https://thefundamentaltheor3m.github.io/Sphere-Packing-Lean/docs/find/#doc/SchwartzMap.poissonSummation_lattice).
+Formalized as `SchwartzMap.poissonSummation_lattice`.
 
 ## Sources
 

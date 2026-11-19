@@ -15,7 +15,7 @@ Its statement uses no other node of the blueprint.
 
 ## Lean
 
-Formalized as [`SpherePacking.Dim24.LeechLattice`](https://thefundamentaltheor3m.github.io/Sphere-Packing-Lean/docs/find/#doc/SpherePacking.Dim24.LeechLattice), [`SpherePacking.Dim24.leech_fundamentalDomain_volume`](https://thefundamentaltheor3m.github.io/Sphere-Packing-Lean/docs/find/#doc/SpherePacking.Dim24.leech_fundamentalDomain_volume), [`SpherePacking.Dim24.leech_norm_lower_bound`](https://thefundamentaltheor3m.github.io/Sphere-Packing-Lean/docs/find/#doc/SpherePacking.Dim24.leech_norm_lower_bound).
+Formalized as `SpherePacking.Dim24.LeechLattice`, `SpherePacking.Dim24.leech_fundamentalDomain_volume`, `SpherePacking.Dim24.leech_norm_lower_bound`.
 
 ## Sources
 

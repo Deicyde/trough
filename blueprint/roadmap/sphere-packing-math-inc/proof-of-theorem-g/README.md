@@ -5,7 +5,7 @@ Our proof of the Theorem [g](../cohn-elkies-linear-programming-bounds/thm-g.md) 
 - [ineqA](prop-ineqa.md)
 - [ineqB](prop-ineqb.md)
 
-Here we formalize the proof of the inequalities by Lee (Lee). First, we can rewrite the inequality in [ineqA](prop-ineqa.md) as follows.
+Here we formalize the proof of the inequalities by Lee (6). First, we can rewrite the inequality in [ineqA](prop-ineqa.md) as follows.
 
 - [FG-definition](def-fg-definition.md)
 - [F-G-phi-psi-identities](lemma-f-g-phi-psi-identities.md)

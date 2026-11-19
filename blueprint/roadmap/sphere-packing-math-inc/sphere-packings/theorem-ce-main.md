@@ -17,15 +17,15 @@ All *periodic* packing $\mathcal{P} \subseteq \mathbb{R}^8$ has density satisfyi
 - [SpherePacking.density](def-spherepacking-density.md)
 - [E8Packing-density](../the-e-8-lattice/e8packing-density.md)
 - [g](../cohn-elkies-linear-programming-bounds/thm-g.md)
-- [Cohn–Elkies (ElkiesCohn)](../cohn-elkies-linear-programming-bounds/thm-cohn-elkies-general.md)
+- [Cohn–Elkies (2)](../cohn-elkies-linear-programming-bounds/thm-cohn-elkies-general.md)
 
 ## Proof
 
-Directly follows from [Cohn–Elkies (ElkiesCohn)](../cohn-elkies-linear-programming-bounds/thm-cohn-elkies-general.md) applied to the function $f(x)=g(x/\sqrt{2})$ of [Theorem g](../cohn-elkies-linear-programming-bounds/thm-g.md).
+Directly follows from [Cohn–Elkies (2)](../cohn-elkies-linear-programming-bounds/thm-cohn-elkies-general.md) applied to the function $f(x)=g(x/\sqrt{2})$ of [Theorem g](../cohn-elkies-linear-programming-bounds/thm-g.md).
 
 ## Lean
 
-Formalized as [`SpherePacking.SpherePackingConstant_le_E8Packing_density`](https://thefundamentaltheor3m.github.io/Sphere-Packing-Lean/docs/find/#doc/SpherePacking.SpherePackingConstant_le_E8Packing_density).
+Formalized as `SpherePacking.SpherePackingConstant_le_E8Packing_density`.
 
 ## Sources
 

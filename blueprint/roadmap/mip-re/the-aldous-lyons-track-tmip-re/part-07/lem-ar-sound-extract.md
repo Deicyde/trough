@@ -8,7 +8,7 @@ proof: formalized
 
 # The polynomial measurements
 
-Let $\varepsilon_{r,y}$ be the failure of the per-role strategy at $(r, y)$. The evaluations of $G^\textsc{B}_{r,y}$ at a uniform point are inconsistent with Alice's point answers of the per-role strategy, those of $G^\textsc{A}_{r,y}$ with Bob's, and $G^\textsc{A}_{r,y}$ with $G^\textsc{B}_{r,y}$, each at most $\delta_r(\varepsilon_{r,y})$; and $\sum_{z} \delta_r(\varepsilon_{r, y_r(z)}) \leq |Z|\, \delta_r(9 \theta)$.
+Let $\varepsilon_{r,y}$ be the failure of the per-role strategy at $(r, y)$. The evaluations of $G^\text{B}_{r,y}$ at a uniform point are inconsistent with Alice's point answers of the per-role strategy, those of $G^\text{A}_{r,y}$ with Bob's, and $G^\text{A}_{r,y}$ with $G^\text{B}_{r,y}$, each at most $\delta_r(\varepsilon_{r,y})$; and $\sum_{z} \delta_r(\varepsilon_{r, y_r(z)}) \leq |Z|\, \delta_r(9 \theta)$.
 
 ## Depends on
 

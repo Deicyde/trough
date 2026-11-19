@@ -21,7 +21,7 @@ This is a direct consequence of Theorem [Theorem periodic-packing-optimal](thm-p
 
 ## Lean
 
-Formalized as [`SpherePacking.SpherePackingConstant_le_E8Packing_density`](https://thefundamentaltheor3m.github.io/Sphere-Packing-Lean/docs/find/#doc/SpherePacking.SpherePackingConstant_le_E8Packing_density).
+Formalized as `SpherePacking.SpherePackingConstant_le_E8Packing_density`.
 
 ## Sources
 

@@ -18,7 +18,7 @@ At a pair of Pauli questions of the low individual degree test over $\mathbb{F}_
 - [The input's question at an auxiliary answer, and the Pauli labels](def-intro-source.md)
 - [The introspective verifier](../../structure-of-the-proof/part-02/def-intro-verifier.md)
 - [Self-dual and normal bases](../../background-results/part-04/def-self-dual-basis.md)
-- [Effective unary prime-power decomposition](../../background-results/part-04/lem-binary-degree-decomposition.md)
+- [Effective unary prime-power decomposition](../../background-results/part-05/lem-binary-degree-decomposition.md)
 - [Uniform deterministic binary irreducible polynomials](../../background-results/part-05/lem-binary-uniform-irreducible.md)
 - [Downsizing](../../structure-of-the-proof/part-01/lem-cl-downsize.md)
 - [Effective polynomial-basis field arithmetic](../../background-results/part-05/lem-effective-binary-field-arithmetic.md)

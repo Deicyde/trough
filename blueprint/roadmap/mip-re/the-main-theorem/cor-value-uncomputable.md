@@ -12,7 +12,7 @@ There is no algorithm that, given a game description $g$ with the promise that $
 
 ## Depends on
 
-- [Turing](../background-results/part-03/thm-halting-undecidable.md)
+- [Turing](../background-results/part-04/thm-halting-undecidable.md)
 
 ## Proof depends on
 
@@ -21,7 +21,7 @@ There is no algorithm that, given a game description $g$ with the promise that $
 
 ## Proof
 
-A computable $f$ answering *true* on every description of value $1$ and *false* on every description of value at most $\frac12$, composed with the map of Theorem [Halting reduces to the game value; Theorem 12.2 of (JNVWY20), synchronous form](thm-main.md) (respectively Corollary [Halting reduces to the quantum value](cor-main-quantum.md)), would decide whether a machine halts on the empty input, against Theorem [Turing](../background-results/part-03/thm-halting-undecidable.md). In Lean the algorithm is a Mathlib-computable Boolean function (`Halting/Corollaries.lean`), at the compression of Theorem [Ambient compression inhabitation target](../structure-of-the-proof/part-09/thm-compression-target.md).
+A computable $f$ answering *true* on every description of value $1$ and *false* on every description of value at most $\frac12$, composed with the map of Theorem [Halting reduces to the game value; Theorem 12.2 of (1), synchronous form](thm-main.md) (respectively Corollary [Halting reduces to the quantum value](cor-main-quantum.md)), would decide whether a machine halts on the empty input, against Theorem [Turing](../background-results/part-04/thm-halting-undecidable.md). In Lean the algorithm is a Mathlib-computable Boolean function (`Halting/Corollaries.lean`), at the compression of Theorem [Ambient compression inhabitation target](../structure-of-the-proof/part-09/thm-compression-target.md).
 
 ## Lean
 

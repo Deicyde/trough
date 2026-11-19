@@ -29,7 +29,7 @@ Negativity of [(12)](lemma-fg-de.md), i.e. $-640 \Delta(it) H_2(it) < 0$ follows
 
 ## Lean
 
-Formalized as [`SerreDer_22_L₁₀_pos`](https://thefundamentaltheor3m.github.io/Sphere-Packing-Lean/docs/find/#doc/SerreDer_22_L₁₀_pos).
+Formalized as `SerreDer_22_L₁₀_pos`.
 
 ## Sources
 

@@ -62,7 +62,7 @@ $$
 \end{aligned}
 $$
 
-TODO
+…
 
 ## Lean
 

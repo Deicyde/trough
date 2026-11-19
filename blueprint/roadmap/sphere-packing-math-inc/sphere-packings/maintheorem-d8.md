@@ -20,7 +20,7 @@ By definition, $\Delta_{E_8} \leq \Delta_8$, while [Corollary upper-bound-E8](co
 
 ## Lean
 
-Formalized as [`SpherePacking.Dim8.MainTheorem`](https://thefundamentaltheor3m.github.io/Sphere-Packing-Lean/docs/find/#doc/SpherePacking.Dim8.MainTheorem).
+Formalized as `SpherePacking.Dim8.MainTheorem`.
 
 ## Sources
 

@@ -33,7 +33,7 @@ $$
 
 ## Lean
 
-Formalized as [`serre_D_mul`](https://thefundamentaltheor3m.github.io/Sphere-Packing-Lean/docs/find/#doc/serre_D_mul).
+Formalized as `serre_D_mul`.
 
 ## Sources
 

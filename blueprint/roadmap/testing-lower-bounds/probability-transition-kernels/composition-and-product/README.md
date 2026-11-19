@@ -4,7 +4,7 @@
 
 As for all other kernel definitions in this section, we omit the proof that this indeed defines a kernel and refer the reader to the Mathlib implementation.
 
-TODO: explanation of that composition-product on an example.
+…
 
 The name *composition-product* is not standard in the literature, where it can be called either composition or product depending on the source. We reserve the name *composition* for an operation that from kernels $\mathcal X \rightsquigarrow \mathcal Y$ and $\mathcal Y \rightsquigarrow \mathcal Z$ produces a kernel $\mathcal X \rightsquigarrow \mathcal Z$, and the name product for the one that takes kernels $\mathcal X \rightsquigarrow \mathcal Y$ and $\mathcal X \rightsquigarrow \mathcal Z$ and produces a kernel $\mathcal X \rightsquigarrow (\mathcal Y \times \mathcal Z)$. Both are special cases of the composition-product, which justifies that name.
 

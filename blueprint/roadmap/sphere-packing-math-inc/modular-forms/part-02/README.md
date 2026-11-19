@@ -21,7 +21,7 @@ A key fact in the theory of modular forms is that the spaces $M_k(\Gamma)$ are f
 - [dim-mf-general-level](thm-dim-mf-general-level.md)
 - [dim-mf](cor-dim-mf.md)
 
-Another examples of modular forms we would like to consider are *theta functions* (1-2-3, Section 3.1).
+Another examples of modular forms we would like to consider are *theta functions* (13, Section 3.1).
 
 - [th00-th01-th10](def-th00-th01-th10.md)
 

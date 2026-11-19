@@ -19,7 +19,7 @@ Its statement uses no other node of the blueprint.
 
 ## Lean
 
-Formalized as [`LinearMap.BilinForm.dualSubmodule`](https://thefundamentaltheor3m.github.io/Sphere-Packing-Lean/docs/find/#doc/LinearMap.BilinForm.dualSubmodule).
+Formalized as `LinearMap.BilinForm.dualSubmodule`.
 
 ## Sources
 

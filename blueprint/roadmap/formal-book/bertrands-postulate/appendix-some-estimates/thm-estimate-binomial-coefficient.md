@@ -18,7 +18,7 @@ Its statement uses no other node of the blueprint.
 ## Proof
 
 $$
-\binom{n}{k} = \frac{n (n-1) \cdots (n-k+1)}{k!} \le \frac{n^k}{k!} \le \frac{n^k}{2^{k-1}}. \qedhere
+\binom{n}{k} = \frac{n (n-1) \cdots (n-k+1)}{k!} \le \frac{n^k}{k!} \le \frac{n^k}{2^{k-1}}.
 $$
 
 ## Lean

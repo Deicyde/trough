@@ -8,7 +8,7 @@ proof: formalized
 
 # Quantum soundness of the seeded CL test
 
-There are universal constants $a\geq 1$ and $0\lt b<1$ such that every projective strategy passing the seeded CL test with probability at least $1-\varepsilon$, for $\varepsilon>0$, admits projective measurements $G^\textsc{A},G^\textsc{B}$ on the respective players' spaces with outcomes tuples $(g_1,\ldots,g_{\mathrm{ldc}})$ of polynomials of individual degree at most $d$. Their evaluations are consistent with the other player's point measurement on average over uniform $u\in\mathbb{F}_q^m$, and the two full tuple measurements are consistent with each other, all with error at most
+There are universal constants $a\geq 1$ and $0\lt b<1$ such that every projective strategy passing the seeded CL test with probability at least $1-\varepsilon$, for $\varepsilon>0$, admits projective measurements $G^\text{A},G^\text{B}$ on the respective players' spaces with outcomes tuples $(g_1,\ldots,g_{\mathrm{ldc}})$ of polynomials of individual degree at most $d$. Their evaluations are consistent with the other player's point measurement on average over uniform $u\in\mathbb{F}_q^m$, and the two full tuple measurements are consistent with each other, all with error at most
 
 $$
 \delta_{\mathrm{CL}}(\varepsilon,q,m,d,\mathrm{ldc})

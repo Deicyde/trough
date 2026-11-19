@@ -11,9 +11,9 @@ proof: formalized
 If $q \geq 2 (M + 1) d$ and $q \geq 2 m (5 + 6 (d + 1))$, the decoded strategy fails the typed oracularized game of the input with probability at most
 
 $$
-e(\theta) = 6 \bigl(2M (12\, \delta_\textsc{O}(9\theta) + 1782\, \theta) + 2\,
-\delta_\textsc{O}(9\theta) + 162\, \theta\bigr) + 4\, \delta_\textsc{O}(9\theta) +
-\delta_\textsc{A}(9\theta) + \delta_\textsc{B}(9\theta) + 2 e_\textsc{A}(\theta) + 2 e_\textsc{B}(\theta),
+e(\theta) = 6 \bigl(2M (12\, \delta_\text{O}(9\theta) + 1782\, \theta) + 2\,
+\delta_\text{O}(9\theta) + 162\, \theta\bigr) + 4\, \delta_\text{O}(9\theta) +
+\delta_\text{A}(9\theta) + \delta_\text{B}(9\theta) + 2 e_\text{A}(\theta) + 2 e_\text{B}(\theta),
 $$
 
 which is strictly increasing in $\theta \geq 0$ and at least $\theta$.

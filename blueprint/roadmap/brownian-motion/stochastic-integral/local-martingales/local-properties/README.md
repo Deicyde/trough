@@ -1,6 +1,6 @@
 # Local properties
 
-This section contains material taken mostly from (kallenberg2021, Chapters 10 and 18) and (almostsuremath).
+This section contains material taken mostly from ([Kallenberg 2021](https://doi.org/10.1007/978-3-030-61871-1), Chapters 10 and 18) and ([Lowther](https://almostsuremath.com)).
 
 - [preLocalizingSequence](def-prelocalizingsequence.md)
 - [Localizing sequence](def-localizingsequence.md)

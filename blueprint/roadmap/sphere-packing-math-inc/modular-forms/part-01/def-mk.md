@@ -15,7 +15,7 @@ Let $M_k(\Gamma)$ be the space of modular forms of weight $k$ and congruence sub
 
 ## Lean
 
-Formalized as [`ModularForm`](https://thefundamentaltheor3m.github.io/Sphere-Packing-Lean/docs/find/#doc/ModularForm).
+Formalized as `ModularForm`.
 
 ## Sources
 

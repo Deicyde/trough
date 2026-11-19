@@ -28,23 +28,23 @@ $$
 
 If $f = 0$, the result is obvious. So assume $f \ne 0$. $\lVert f\rVert_2 > 0$, so WLOG $\lVert f\rVert_2 = \sqrt p$.
 
-Rudin's exponential inequality for $f$ becomes $\mathop{ \mathchoice{\vcenter{\hbox{\larger[4]$\mathbb{E}$}}} {\kern0pt\mathbb{E}} {\kern0pt\mathbb{E}} {\kern0pt\mathbb{E}} }\displaylimits \exp|\Re f| \le 2\exp(\frac p 2) = (2\sqrt e)^p$. Using $\frac{x^p}{p!} \le e^x$ for positive $x$, we get
+Rudin's exponential inequality for $f$ becomes $\mathop{ \mathchoice{\vcenter{{\mathbb{E}}}} {\kern0pt\mathbb{E}} {\kern0pt\mathbb{E}} {\kern0pt\mathbb{E}} }\limits \exp|\Re f| \le 2\exp(\frac p 2) = (2\sqrt e)^p$. Using $\frac{x^p}{p!} \le e^x$ for positive $x$, we get
 
 $$
 \frac{\lVert \Re f\rVert_p^p}{p^p} \le \frac{\lVert \Re f\rVert_p^p}{p!} =
 \mathop{
-\mathchoice{\vcenter{\hbox{\larger[4]$\mathbb{E}$}}}
+\mathchoice{\vcenter{{\mathbb{E}}}}
 {\kern0pt\mathbb{E}}
 {\kern0pt\mathbb{E}}
 {\kern0pt\mathbb{E}}
-}\displaylimits
+}\limits
 \frac{|\Re f|^p}{p!} \le
 \mathop{
-\mathchoice{\vcenter{\hbox{\larger[4]$\mathbb{E}$}}}
+\mathchoice{\vcenter{{\mathbb{E}}}}
 {\kern0pt\mathbb{E}}
 {\kern0pt\mathbb{E}}
 {\kern0pt\mathbb{E}}
-}\displaylimits
+}\limits
 \exp|\Re f|
 $$
 

@@ -25,7 +25,7 @@ By [Theorem magic-function-d24](../part-02/thm-magic-function-d24.md), we have $
 
 ## Lean
 
-Formalized as [`SpherePacking.Dim24.SpherePackingConstant_eq_leech_density`](https://thefundamentaltheor3m.github.io/Sphere-Packing-Lean/docs/find/#doc/SpherePacking.Dim24.SpherePackingConstant_eq_leech_density).
+Formalized as `SpherePacking.Dim24.SpherePackingConstant_eq_leech_density`.
 
 ## Sources
 

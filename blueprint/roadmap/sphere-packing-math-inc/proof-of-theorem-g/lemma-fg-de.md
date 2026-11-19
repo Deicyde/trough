@@ -60,7 +60,7 @@ which proves (11). Similarly, (12) can be proved using Proposition [theta-der](.
 
 ## Lean
 
-Formalized as [`MLDE_F`](https://thefundamentaltheor3m.github.io/Sphere-Packing-Lean/docs/find/#doc/MLDE_F), [`MLDE_G`](https://thefundamentaltheor3m.github.io/Sphere-Packing-Lean/docs/find/#doc/MLDE_G).
+Formalized as `MLDE_F`, `MLDE_G`.
 
 ## Sources
 

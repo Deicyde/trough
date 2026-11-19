@@ -28,7 +28,7 @@ For the second inequality, we prove that $\bigcup_{x \in \Lambda \cap \mathcal{B
 
 ## Lean
 
-Formalized as [`PeriodicSpherePacking.aux2_ge'`](https://thefundamentaltheor3m.github.io/Sphere-Packing-Lean/docs/find/#doc/PeriodicSpherePacking.aux2_ge'), [`PeriodicSpherePacking.aux2_le'`](https://thefundamentaltheor3m.github.io/Sphere-Packing-Lean/docs/find/#doc/PeriodicSpherePacking.aux2_le').
+Formalized as `PeriodicSpherePacking.aux2_ge'`, `PeriodicSpherePacking.aux2_le'`.
 
 ## Sources
 

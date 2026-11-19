@@ -8,7 +8,7 @@ proof: formalized
 
 # The canonical-line theorem in a dyadic pair
 
-Theorem [Quantum soundness of the canonical-line low individual degree test](../../background-results/part-01/thm-lidt-soundness.md) holds, for $d \geq 1$, for the projective strategies in every dyadic pair (Definition [Dyadic pairs](../part-05/def-dyadic-pair.md)), with the measurements $G^\textsc{A}$ and $G^\textsc{B}$ projective measurements in the two players' algebras and consistency measured by the inconsistency of the model.
+Theorem [Quantum soundness of the canonical-line low individual degree test](../../background-results/part-01/thm-lidt-soundness.md) holds, for $d \geq 1$, for the projective strategies in every dyadic pair (Definition [Dyadic pairs](../part-05/def-dyadic-pair.md)), with the measurements $G^\text{A}$ and $G^\text{B}$ projective measurements in the two players' algebras and consistency measured by the inconsistency of the model.
 
 ## Depends on
 

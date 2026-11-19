@@ -18,7 +18,7 @@ We have $\psi_I=\psi_S+\psi_T$, and $\psi_T|_{-10}S=-\psi_T$.
 
 ## Lean
 
-Formalized as [`SpherePacking.Dim24.ψS_add_ψT_eq_ψI`](https://thefundamentaltheor3m.github.io/Sphere-Packing-Lean/docs/find/#doc/SpherePacking.Dim24.ψS_add_ψT_eq_ψI), [`SpherePacking.Dim24.ψT_S_action`](https://thefundamentaltheor3m.github.io/Sphere-Packing-Lean/docs/find/#doc/SpherePacking.Dim24.ψT_S_action).
+Formalized as `SpherePacking.Dim24.ψS_add_ψT_eq_ψI`, `SpherePacking.Dim24.ψT_S_action`.
 
 ## Sources
 

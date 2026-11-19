@@ -21,7 +21,7 @@ Its statement uses no other node of the blueprint.
 
 ## Lean
 
-Formalized as [`η`](https://thefundamentaltheor3m.github.io/Sphere-Packing-Lean/docs/find/#doc/η).
+Formalized as `η`.
 
 ## Sources
 

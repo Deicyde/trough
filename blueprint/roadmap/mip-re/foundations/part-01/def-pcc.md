@@ -7,7 +7,7 @@ statement: formalized
 
 # PCC strategy
 
-[[$\uparrow$ QuantumLib](https://github.com/Timeroot/Lean-QuantumInfo)] A synchronous strategy $\mathscr{S} = (d, M)$ for a synchronous game $\mathfrak{G} = ({\mathcal{X}}, {\mathcal{A}}, \mu, D)$ is *PCC* (*projective, consistent, and commuting*, following (JNVWY20, Section 5.2)) if the measurements associated with any pair of questions asked with positive probability commute: for all $(x, y)$ in the support of $\mu$,
+[[$\uparrow$ QuantumLib](https://github.com/Timeroot/Lean-QuantumInfo)] A synchronous strategy $\mathscr{S} = (d, M)$ for a synchronous game $\mathfrak{G} = ({\mathcal{X}}, {\mathcal{A}}, \mu, D)$ is *PCC* (*projective, consistent, and commuting*, following (1, Section 5.2)) if the measurements associated with any pair of questions asked with positive probability commute: for all $(x, y)$ in the support of $\mu$,
 
 $$
 M^x_a M^y_b = M^y_b M^x_a \qquad \text{for all } a, b \in {\mathcal{A}}\;.

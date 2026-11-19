@@ -25,7 +25,7 @@ By Theorem [smooth-fast-decay-schwartz](../../facts-from-fourier-analysis/thm-sm
 
 ## Lean
 
-Formalized as [`MagicFunction.FourierEigenfunctions.a`](https://thefundamentaltheor3m.github.io/Sphere-Packing-Lean/docs/find/#doc/MagicFunction.FourierEigenfunctions.a).
+Formalized as `MagicFunction.FourierEigenfunctions.a`.
 
 ## Sources
 

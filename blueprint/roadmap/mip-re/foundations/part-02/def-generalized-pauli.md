@@ -16,8 +16,8 @@ $$
 The *generalized Pauli*, or *Weyl*, *observables* are
 
 $$
-\tau^X(a) \;=\; \sum_{i \in \mathbb{F}_q^n} |i + a\rangle\langlei|\;, \qquad
-\tau^Z(b) \;=\; \sum_{i \in \mathbb{F}_q^n} (-1)^{\langle b, i \rangle}\, |i\rangle\langlei|\;.
+\tau^X(a) \;=\; \sum_{i \in \mathbb{F}_q^n} |i + a\rangle\langle i|\;, \qquad
+\tau^Z(b) \;=\; \sum_{i \in \mathbb{F}_q^n} (-1)^{\langle b, i \rangle}\, |i\rangle\langle i|\;.
 $$
 
 They satisfy, for all $a, a', b, b' \in \mathbb{F}_q^n$:

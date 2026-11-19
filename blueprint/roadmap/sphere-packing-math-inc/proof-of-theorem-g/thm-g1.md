@@ -59,7 +59,7 @@ Finally, the property [(7)](../cohn-elkies-linear-programming-bounds/thm-g.md) r
 
 ## Lean
 
-Formalized as [`MagicFunction.g.CohnElkies.g_cohnElkies₁`](https://thefundamentaltheor3m.github.io/Sphere-Packing-Lean/docs/find/#doc/MagicFunction.g.CohnElkies.g_cohnElkies₁), [`MagicFunction.g.CohnElkies.g_cohnElkies₂`](https://thefundamentaltheor3m.github.io/Sphere-Packing-Lean/docs/find/#doc/MagicFunction.g.CohnElkies.g_cohnElkies₂), [`g_zero`](https://thefundamentaltheor3m.github.io/Sphere-Packing-Lean/docs/find/#doc/g_zero), [`fourier_g_zero`](https://thefundamentaltheor3m.github.io/Sphere-Packing-Lean/docs/find/#doc/fourier_g_zero).
+Formalized as `MagicFunction.g.CohnElkies.g_cohnElkies₁`, `MagicFunction.g.CohnElkies.g_cohnElkies₂`, `g_zero`, `fourier_g_zero`.
 
 ## Sources
 

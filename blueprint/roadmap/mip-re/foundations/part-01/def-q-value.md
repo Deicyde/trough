@@ -7,7 +7,7 @@ statement: formalized
 
 # Quantum value
 
-[[$\uparrow$ QuantumLib](https://github.com/Timeroot/Lean-QuantumInfo)] The value of a tensor-product strategy $\mathscr{S} = (\mathcal{H}_\textsc{A},\mathcal{H}_\textsc{B},\psi,A,B)$ in $\mathfrak{G}$ is
+[[$\uparrow$ QuantumLib](https://github.com/Timeroot/Lean-QuantumInfo)] The value of a tensor-product strategy $\mathscr{S} = (\mathcal{H}_\text{A},\mathcal{H}_\text{B},\psi,A,B)$ in $\mathfrak{G}$ is
 
 $$
 \mathrm{val}^*(\mathfrak{G}, \mathscr{S}) = \sum_{x, y, a, b} \mu(x,y)\, D(x,y,a,b)\,

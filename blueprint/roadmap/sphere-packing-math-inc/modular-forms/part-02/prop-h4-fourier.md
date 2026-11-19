@@ -22,7 +22,7 @@ for some $c_{H_4}(n) \in \mathbb{R}$ with $c_{H_4}(0) = 1$ and $c_{H_4}(n) = O(n
 
 ## Lean
 
-Formalized as [`H₄`](https://thefundamentaltheor3m.github.io/Sphere-Packing-Lean/docs/find/#doc/H₄).
+Formalized as `H₄`.
 
 ## Sources
 

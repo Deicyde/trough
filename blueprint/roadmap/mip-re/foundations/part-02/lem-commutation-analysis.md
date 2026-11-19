@@ -8,7 +8,7 @@ proof: formalized
 
 # Commutation analysis
 
-Let $\{A_b\}$ and $\{C_c\}$ be POVMs on $\mathbb{C}^{d_\textsc{A}}$ and let $\{B_{b,c}\}$ be a *projective* measurement on $\mathbb{C}^{d_\textsc{B}}$ with outcomes the pairs, with marginals $B_b = \sum_c B_{b,c}$ and $B_c = \sum_b B_{b,c}$. If
+Let $\{A_b\}$ and $\{C_c\}$ be POVMs on $\mathbb{C}^{d_\text{A}}$ and let $\{B_{b,c}\}$ be a *projective* measurement on $\mathbb{C}^{d_\text{B}}$ with outcomes the pairs, with marginals $B_b = \sum_c B_{b,c}$ and $B_c = \sum_b B_{b,c}$. If
 
 $$
 A_b \otimes {I} \simeq_\delta {I} \otimes B_b \qquad\text{and}\qquad

@@ -22,3 +22,5 @@ See (Clerc et al. 2017) and (Dahlqvist et al. 2018) for a category theory point 
 If $\mathcal{X}$ is countable, then we do have $\kappa(x) \ll \kappa \circ \mu$ almost surely.
 
 *The proof of [Lemma rnDeriv_bayesInv](lem-rnderiv-bayesinv.md) is shown with its statement.*
+
+…

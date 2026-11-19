@@ -17,7 +17,7 @@ Let $S$ be a periodic sphere packing in $\mathbb{R}^{24}$ with the Leech density
 
 ## Lean
 
-Formalized as [`SpherePacking.Dim24.optimal_periodic_has_leech_distance_spectrum`](https://thefundamentaltheor3m.github.io/Sphere-Packing-Lean/docs/find/#doc/SpherePacking.Dim24.optimal_periodic_has_leech_distance_spectrum), [`SpherePacking.Dim24.optimal_periodic_has_leech_distance_spectrum_normalized`](https://thefundamentaltheor3m.github.io/Sphere-Packing-Lean/docs/find/#doc/SpherePacking.Dim24.optimal_periodic_has_leech_distance_spectrum_normalized).
+Formalized as `SpherePacking.Dim24.optimal_periodic_has_leech_distance_spectrum`, `SpherePacking.Dim24.optimal_periodic_has_leech_distance_spectrum_normalized`.
 
 ## Sources
 

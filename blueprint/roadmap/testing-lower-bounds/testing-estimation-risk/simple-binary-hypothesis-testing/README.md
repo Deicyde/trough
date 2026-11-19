@@ -24,3 +24,5 @@ Alternatively, we can reduce the study of the Bayes binary risk for any prior to
 - [bayesBinaryRisk_eq_event](lem-bayesbinaryrisk-eq-event.md)
 - [bayesBinaryRisk_eq](thm-bayesbinaryrisk-eq.md)
 - [bayesBinaryRisk_eq_abs](cor-bayesbinaryrisk-eq-abs.md)
+
+…

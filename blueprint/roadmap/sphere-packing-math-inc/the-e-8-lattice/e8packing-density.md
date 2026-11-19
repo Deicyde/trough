@@ -21,7 +21,7 @@ By [Theorem psp-density](../density-of-packings/theorem-psp-density.md), we have
 
 ## Lean
 
-Formalized as [`E8Packing_density`](https://thefundamentaltheor3m.github.io/Sphere-Packing-Lean/docs/find/#doc/E8Packing_density).
+Formalized as `E8Packing_density`.
 
 ## Sources
 

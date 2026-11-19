@@ -10,4 +10,4 @@ We want to turn the Brownian motion into a measure on the continuous functions $
 - [MeasurableEquiv.continuousMap](def-measurableequiv-continuousmap.md)
 - [Wiener measure](def-wienermeasure.md)
 
-TODO: add the main properties of the Brownian motion and the Wiener measure. We need to be able to tell that we have built the correct objects.
+…

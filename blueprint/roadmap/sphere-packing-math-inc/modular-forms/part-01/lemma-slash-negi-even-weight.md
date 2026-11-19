@@ -20,7 +20,7 @@ Follows from the definition of the slash operator: $(F|_{k}(-I))(z) = (-1)^{-k}F
 
 ## Lean
 
-Formalized as [`modular_slash_negI_of_even`](https://thefundamentaltheor3m.github.io/Sphere-Packing-Lean/docs/find/#doc/modular_slash_negI_of_even).
+Formalized as `modular_slash_negI_of_even`.
 
 ## Sources
 

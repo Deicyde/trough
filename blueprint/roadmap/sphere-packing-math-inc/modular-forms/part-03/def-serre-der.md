@@ -20,7 +20,7 @@ $$
 
 ## Lean
 
-Formalized as [`serre_D`](https://thefundamentaltheor3m.github.io/Sphere-Packing-Lean/docs/find/#doc/serre_D).
+Formalized as `serre_D`.
 
 ## Sources
 

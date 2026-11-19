@@ -6,7 +6,7 @@ statement: formalized
 proof: formalized
 ---
 
-# Cohn–Elkies (ElkiesCohn)
+# Cohn–Elkies (2)
 
 Let $f:\mathbb{R}^d\to\mathbb{R}$ be a Schwartz function that is not identically zero and satisfies [(1)](thm-cohn-elkies-periodic.md) and [(2)](thm-cohn-elkies-periodic.md). Then the density of any $\Lambda$-periodic sphere packing is bounded above by
 
@@ -20,12 +20,12 @@ Its statement uses no other node of the blueprint.
 
 ## Proof depends on
 
-- [Cohn–Elkies (ElkiesCohn)](thm-cohn-elkies-periodic.md)
+- [Cohn–Elkies (2)](thm-cohn-elkies-periodic.md)
 - [periodic-packing-optimal](../sphere-packings/thm-periodic-packing-optimal.md)
 
 ## Proof
 
-The result follows immediately from Theorem [periodic-packing-optimal](../sphere-packings/thm-periodic-packing-optimal.md) and [Cohn–Elkies (ElkiesCohn)](thm-cohn-elkies-periodic.md).
+The result follows immediately from Theorem [periodic-packing-optimal](../sphere-packings/thm-periodic-packing-optimal.md) and [Cohn–Elkies (2)](thm-cohn-elkies-periodic.md).
 
 ## Lean
 

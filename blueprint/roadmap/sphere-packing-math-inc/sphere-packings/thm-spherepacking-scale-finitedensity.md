@@ -32,7 +32,7 @@ where the second equality follows from applying the fact that scaling a (measura
 
 ## Lean
 
-Formalized as [`SpherePacking.scale_finiteDensity`](https://thefundamentaltheor3m.github.io/Sphere-Packing-Lean/docs/find/#doc/SpherePacking.scale_finiteDensity).
+Formalized as `SpherePacking.scale_finiteDensity`.
 
 ## Sources
 

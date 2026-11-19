@@ -20,7 +20,7 @@ These identities follow immediately from the previous proposition.
 
 ## Lean
 
-Formalized as [`MagicFunction.a.SpecialValues.a_zero`](https://thefundamentaltheor3m.github.io/Sphere-Packing-Lean/docs/find/#doc/MagicFunction.a.SpecialValues.a_zero).
+Formalized as `MagicFunction.a.SpecialValues.a_zero`.
 
 ## Sources
 

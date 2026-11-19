@@ -27,7 +27,7 @@ $G(it) > 0$ follows from positivity of $H_2(it)$ and $H_4(it)$ (Lemma [theta-pos
 
 ## Lean
 
-Formalized as [`F_pos`](https://thefundamentaltheor3m.github.io/Sphere-Packing-Lean/docs/find/#doc/F_pos), [`G_pos`](https://thefundamentaltheor3m.github.io/Sphere-Packing-Lean/docs/find/#doc/G_pos).
+Formalized as `F_pos`, `G_pos`.
 
 ## Sources
 

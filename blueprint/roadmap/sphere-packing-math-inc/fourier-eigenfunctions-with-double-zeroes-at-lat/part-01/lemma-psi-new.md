@@ -51,7 +51,7 @@ Applying $|_{-2}S$ and $|_{-2}T$ to the expression of $\psi_I$ proves (27) and (
 
 ## Lean
 
-Formalized as [`ψI_eq`](https://thefundamentaltheor3m.github.io/Sphere-Packing-Lean/docs/find/#doc/ψI_eq), [`ψT_eq`](https://thefundamentaltheor3m.github.io/Sphere-Packing-Lean/docs/find/#doc/ψT_eq), [`ψS_eq'`](https://thefundamentaltheor3m.github.io/Sphere-Packing-Lean/docs/find/#doc/ψS_eq').
+Formalized as `ψI_eq`, `ψT_eq`, `ψS_eq'`.
 
 ## Sources
 

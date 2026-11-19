@@ -6,7 +6,7 @@ statement: formalized
 proof: formalized
 ---
 
-# Cohn–Elkies (ElkiesCohn)
+# Cohn–Elkies (2)
 
 Let $X\subset\mathbb{R}^d$ be a discrete subset such that $\|x-y\|\geq 1$ for any distinct $x,y\in X$. Suppose that $X$ is $\Lambda$-periodic with respect to some lattice $\Lambda\subset\mathbb{R}^d$. Let $f:\mathbb{R}^d\to\mathbb{R}$ be a Schwartz function that is not identically zero and satisfies the following conditions:
 
@@ -37,7 +37,7 @@ $$
 
 ## Proof
 
-Here we reproduce the proof given in (ElkiesCohn).
+Here we reproduce the proof given in (2).
 
 The inequality
 
@@ -81,7 +81,7 @@ This finishes the proof of the theorem for periodic packings.
 
 ## Lean
 
-Formalized as [`LinearProgrammingBound'`](https://thefundamentaltheor3m.github.io/Sphere-Packing-Lean/docs/find/#doc/LinearProgrammingBound').
+Formalized as `LinearProgrammingBound'`.
 
 ## Sources
 

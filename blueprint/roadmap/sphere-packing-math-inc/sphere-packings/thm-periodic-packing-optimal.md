@@ -17,7 +17,7 @@ For all $d$, the periodic sphere packing constant in $\mathbb{R}^d$ is equal to 
 
 ## Lean
 
-Formalized as [`periodic_constant_eq_constant`](https://thefundamentaltheor3m.github.io/Sphere-Packing-Lean/docs/find/#doc/periodic_constant_eq_constant).
+Formalized as `periodic_constant_eq_constant`.
 
 ## Sources
 

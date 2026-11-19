@@ -15,7 +15,7 @@ The *Leech lattice sphere packing* is the lattice packing in $\mathbb{R}^{24}$ w
 
 ## Lean
 
-Formalized as [`SpherePacking.Dim24.LeechPacking`](https://thefundamentaltheor3m.github.io/Sphere-Packing-Lean/docs/find/#doc/SpherePacking.Dim24.LeechPacking).
+Formalized as `SpherePacking.Dim24.LeechPacking`.
 
 ## Sources
 

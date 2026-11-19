@@ -16,7 +16,7 @@ There is a polynomial-time algorithm that, on window lengths $\ell_a, \ell_b, \e
 
 ## Proof depends on
 
-- [Succinctly described 3SAT and decoupled 5SAT](../../background-results/part-03/def-succinct-3sat.md)
+- [Succinctly described 3SAT and decoupled 5SAT](../../background-results/part-04/def-succinct-3sat.md)
 
 ## Proof
 

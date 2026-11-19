@@ -20,7 +20,7 @@ It suffices to prove that $\mathcal{B}_8 \in \mathrm{GL}_8(\mathbb{R})$. We prov
 
 ## Lean
 
-Formalized as [`span_E8Matrix_eq_top`](https://thefundamentaltheor3m.github.io/Sphere-Packing-Lean/docs/find/#doc/span_E8Matrix_eq_top).
+Formalized as `span_E8Matrix_eq_top`.
 
 ## Sources
 

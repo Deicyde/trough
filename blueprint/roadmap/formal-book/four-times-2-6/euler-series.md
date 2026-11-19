@@ -63,7 +63,7 @@ $$
 I &= 4 \int_0^{1/2} g'(u) g(u) du + 4 \int_{1/2}^1 -2 h'(u) h(u) du \\
 &= 2 \left[ g(u)^2 \right]_0^{1/2} - 4 \left[ h(u)^2 \right]_{1/2}^1 \\
 &= 2 g\left(\frac{1}{2}\right)^2 - 2 g(0)^2 - 4 h(1)^2 + 4 h\left(\frac{1}{2}\right)^2 \\
-&= 2 \left(\frac{\pi}{6}\right)^2 - 0 - 0 + 4 \left(\frac{\pi}{6}\right)^2 = \frac{\pi^2}{6}. \qedhere
+&= 2 \left(\frac{\pi}{6}\right)^2 - 0 - 0 + 4 \left(\frac{\pi}{6}\right)^2 = \frac{\pi^2}{6}.
 \end{aligned}
 $$
 

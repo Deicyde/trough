@@ -19,7 +19,7 @@ If we write $\ell'$ and $y$ for their deterministic kernels, the Bayesian risk o
 
 - [bayesRisk_le_minimaxRisk](lem-bayesrisk-le-minimaxrisk.md)
 
-TODO: “often”, $\mathcal R^*_B = \mathcal R^*$.
+…
 
 ## Properties of the Bayes risk of a prior
 
@@ -41,7 +41,7 @@ Generalized Bayes estimator
 
 ## Bayes risk increase
 
-TODO: remove this section? It's not used for anything now.
+…
 
 The following is a new definition, which is a natural generalization of the DeGroot statistical information.
 

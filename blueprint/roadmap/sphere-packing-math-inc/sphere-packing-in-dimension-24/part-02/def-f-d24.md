@@ -20,7 +20,7 @@ $$
 
 ## Lean
 
-Formalized as [`SpherePacking.Dim24.f`](https://thefundamentaltheor3m.github.io/Sphere-Packing-Lean/docs/find/#doc/SpherePacking.Dim24.f), [`SpherePacking.Dim24.fRadial`](https://thefundamentaltheor3m.github.io/Sphere-Packing-Lean/docs/find/#doc/SpherePacking.Dim24.fRadial), [`SpherePacking.Dim24.scaledF`](https://thefundamentaltheor3m.github.io/Sphere-Packing-Lean/docs/find/#doc/SpherePacking.Dim24.scaledF).
+Formalized as `SpherePacking.Dim24.f`, `SpherePacking.Dim24.fRadial`, `SpherePacking.Dim24.scaledF`.
 
 ## Sources
 

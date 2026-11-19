@@ -25,7 +25,7 @@ This follows from the fact that the sum converges absolutely. Now apply slash op
 
 ## Lean
 
-Formalized as [`EisensteinSeries.eisensteinSeries_SIF`](https://thefundamentaltheor3m.github.io/Sphere-Packing-Lean/docs/find/#doc/EisensteinSeries.eisensteinSeries_SIF).
+Formalized as `EisensteinSeries.eisensteinSeries_SIF`.
 
 ## Sources
 

@@ -22,7 +22,7 @@ This is implemented in Lean via the Gaussian Fourier transform lemma `fourier_ga
 
 ## Lean
 
-Formalized as [`fourier_gaussian_innerProductSpace`](https://thefundamentaltheor3m.github.io/Sphere-Packing-Lean/docs/find/#doc/fourier_gaussian_innerProductSpace).
+Formalized as `fourier_gaussian_innerProductSpace`.
 
 ## Sources
 

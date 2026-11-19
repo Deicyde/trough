@@ -14,7 +14,7 @@ navigation: transparent
 - [$\mathrm{TMIP}^* = \mathrm{RE}$ from tailored answer reduction](cor-tmip-re-from-ar.md)
 - [Tailored compression; II:5643, value form](thm-tailored-compression-target.md)
 
-**Remark (The Aldous–Lyons conjecture).** Paper I (BCLV24) associates with a tailored game a subgroup test whose sofic value is $1$ when the game has a perfect ZPC strategy and at most $1 - (C\Lambda^4 2^{6\Lambda})^{-1}$ when the synchronous value of the game is at most $\frac12$, $\Lambda$ being the largest answer length (Theorem 7.3 there, a finitary argument), and shows that under the Aldous–Lyons conjecture the sofic value of a subgroup test is computable to any precision (Main Theorem I there, a weak-$*$ compactness argument). With Theorem [$\mathrm{TMIP}^* = \mathrm{RE}$; II:1505, Theorem 7.4 of (BCLV24)](../part-01/thm-tmip-re.md) the conjecture is false. This is Phase 6 of the plan, after the main theorem.
+**Remark (The Aldous–Lyons conjecture).** Paper I (37) associates with a tailored game a subgroup test whose sofic value is $1$ when the game has a perfect ZPC strategy and at most $1 - (C\Lambda^4 2^{6\Lambda})^{-1}$ when the synchronous value of the game is at most $\frac12$, $\Lambda$ being the largest answer length (Theorem 7.3 there, a finitary argument), and shows that under the Aldous–Lyons conjecture the sofic value of a subgroup test is computable to any precision (Main Theorem I there, a weak-$*$ compactness argument). With Theorem [$\mathrm{TMIP}^* = \mathrm{RE}$; II:1505, Theorem 7.4 of (37)](../part-01/thm-tmip-re.md) the conjecture is false. This is Phase 6 of the plan, after the main theorem.
 
 ## Answer reduction: linear systems over $\mathbb{F}_2$
 

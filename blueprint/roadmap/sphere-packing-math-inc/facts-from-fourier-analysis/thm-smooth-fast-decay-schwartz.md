@@ -32,7 +32,7 @@ This is formalized in Lean as `RadialSchwartz.Bridge.schwartzMap_norm_sq_of_cont
 
 ## Lean
 
-Formalized as [`RadialSchwartz.Bridge.schwartzMap_norm_sq_of_contDiff_decay_nonneg`](https://thefundamentaltheor3m.github.io/Sphere-Packing-Lean/docs/find/#doc/RadialSchwartz.Bridge.schwartzMap_norm_sq_of_contDiff_decay_nonneg).
+Formalized as `RadialSchwartz.Bridge.schwartzMap_norm_sq_of_contDiff_decay_nonneg`.
 
 ## Sources
 

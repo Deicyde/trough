@@ -8,7 +8,7 @@ proof: formalized
 
 # Halting from tailored compression; II:1887–2066
 
-A tailored gap compression gives the proposition of Definition [The tailored halting reduction, as a proposition](../part-01/def-tailored-halting-reduction.md), the statement of Theorem [$\mathrm{TMIP}^* = \mathrm{RE}$; II:1505, Theorem 7.4 of (BCLV24)](../part-01/thm-tmip-re.md), with the soundness clause even in the quantum value $\mathrm{val}^*$, which bounds the synchronous value.
+A tailored gap compression gives the proposition of Definition [The tailored halting reduction, as a proposition](../part-01/def-tailored-halting-reduction.md), the statement of Theorem [$\mathrm{TMIP}^* = \mathrm{RE}$; II:1505, Theorem 7.4 of (37)](../part-01/thm-tmip-re.md), with the soundness clause even in the quantum value $\mathrm{val}^*$, which bounds the synchronous value.
 
 ## Depends on
 

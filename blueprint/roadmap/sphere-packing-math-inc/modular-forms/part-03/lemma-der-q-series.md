@@ -20,7 +20,7 @@ Directly follows from the definition [Definition derivative](def-derivative.md),
 
 ## Lean
 
-Formalized as [`D_qexp_tsum_pnat`](https://thefundamentaltheor3m.github.io/Sphere-Packing-Lean/docs/find/#doc/D_qexp_tsum_pnat).
+Formalized as `D_qexp_tsum_pnat`.
 
 ## Sources
 

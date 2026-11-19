@@ -20,7 +20,7 @@ $$
 
 ## Lean
 
-Formalized as [`PeriodicSpherePackingConstant`](https://thefundamentaltheor3m.github.io/Sphere-Packing-Lean/docs/find/#doc/PeriodicSpherePackingConstant).
+Formalized as `PeriodicSpherePackingConstant`.
 
 ## Sources
 

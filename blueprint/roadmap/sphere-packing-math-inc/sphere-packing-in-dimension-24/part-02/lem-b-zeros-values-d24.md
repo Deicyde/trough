@@ -25,7 +25,7 @@ $$
 
 ## Lean
 
-Formalized as [`SpherePacking.Dim24.b_mapsTo_pureImag`](https://thefundamentaltheor3m.github.io/Sphere-Packing-Lean/docs/find/#doc/SpherePacking.Dim24.b_mapsTo_pureImag), [`SpherePacking.Dim24.b_zero_of_norm_sq_eq_two_mul`](https://thefundamentaltheor3m.github.io/Sphere-Packing-Lean/docs/find/#doc/SpherePacking.Dim24.b_zero_of_norm_sq_eq_two_mul), [`SpherePacking.Dim24.bRadial_hasDerivAt_zero_of_two_lt`](https://thefundamentaltheor3m.github.io/Sphere-Packing-Lean/docs/find/#doc/SpherePacking.Dim24.bRadial_hasDerivAt_zero_of_two_lt), [`SpherePacking.Dim24.bRadial_zero`](https://thefundamentaltheor3m.github.io/Sphere-Packing-Lean/docs/find/#doc/SpherePacking.Dim24.bRadial_zero), [`SpherePacking.Dim24.bRadial_sqrtTwo`](https://thefundamentaltheor3m.github.io/Sphere-Packing-Lean/docs/find/#doc/SpherePacking.Dim24.bRadial_sqrtTwo), [`SpherePacking.Dim24.bRadial_hasDerivAt_sqrtTwo`](https://thefundamentaltheor3m.github.io/Sphere-Packing-Lean/docs/find/#doc/SpherePacking.Dim24.bRadial_hasDerivAt_sqrtTwo), [`SpherePacking.Dim24.bRadial_two`](https://thefundamentaltheor3m.github.io/Sphere-Packing-Lean/docs/find/#doc/SpherePacking.Dim24.bRadial_two), [`SpherePacking.Dim24.bRadial_hasDerivAt_two`](https://thefundamentaltheor3m.github.io/Sphere-Packing-Lean/docs/find/#doc/SpherePacking.Dim24.bRadial_hasDerivAt_two).
+Formalized as `SpherePacking.Dim24.b_mapsTo_pureImag`, `SpherePacking.Dim24.b_zero_of_norm_sq_eq_two_mul`, `SpherePacking.Dim24.bRadial_hasDerivAt_zero_of_two_lt`, `SpherePacking.Dim24.bRadial_zero`, `SpherePacking.Dim24.bRadial_sqrtTwo`, `SpherePacking.Dim24.bRadial_hasDerivAt_sqrtTwo`, `SpherePacking.Dim24.bRadial_two`, `SpherePacking.Dim24.bRadial_hasDerivAt_two`.
 
 ## Sources
 

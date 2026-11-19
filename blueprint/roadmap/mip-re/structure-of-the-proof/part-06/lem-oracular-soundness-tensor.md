@@ -8,7 +8,7 @@ proof: formalized
 
 # Soundness of oracularization, for bipartite strategies
 
-Let $S$ be a seeded game with nonempty seed space and nonempty answer alphabet, let $0 \leq \varepsilon \leq 1$, and let $N$ be a tensor-product strategy for the oracularization of $S$ with value at least $1 - \varepsilon$. Let $\Sigma(N)$ be the strategy for the game of $S$, on the same state, in which Alice measures the first player's $\{N^{(\textsc{A},\, x)}_a\}$ and Bob the second player's $\{N^{(\textsc{B},\, y)}_b\}$, each relabelled so that the oracle-shaped answers are grouped into one fixed answer. Then $\Sigma(N)$ has value at least $1 - 24\sqrt{\varepsilon}$. Consequently, for every $\varepsilon > 0$, if $\mathrm{val}^*$ of the oracularization of $S$ exceeds $1 - \varepsilon$, then $\mathrm{val}^*$ of the game of $S$ is at least $1 - 24\sqrt{\varepsilon}$.
+Let $S$ be a seeded game with nonempty seed space and nonempty answer alphabet, let $0 \leq \varepsilon \leq 1$, and let $N$ be a tensor-product strategy for the oracularization of $S$ with value at least $1 - \varepsilon$. Let $\Sigma(N)$ be the strategy for the game of $S$, on the same state, in which Alice measures the first player's $\{N^{(\text{A},\, x)}_a\}$ and Bob the second player's $\{N^{(\text{B},\, y)}_b\}$, each relabelled so that the oracle-shaped answers are grouped into one fixed answer. Then $\Sigma(N)$ has value at least $1 - 24\sqrt{\varepsilon}$. Consequently, for every $\varepsilon > 0$, if $\mathrm{val}^*$ of the oracularization of $S$ exceeds $1 - \varepsilon$, then $\mathrm{val}^*$ of the game of $S$ is at least $1 - 24\sqrt{\varepsilon}$.
 
 ## Depends on
 

@@ -19,7 +19,7 @@ Its statement uses no other node of the blueprint.
 
 ## Lean
 
-Formalized as [`ModularForm.eisensteinSeries_MF`](https://thefundamentaltheor3m.github.io/Sphere-Packing-Lean/docs/find/#doc/ModularForm.eisensteinSeries_MF).
+Formalized as `ModularForm.eisensteinSeries_MF`.
 
 ## Sources
 

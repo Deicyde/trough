@@ -6,7 +6,7 @@ statement: formalized
 proof: formalized
 ---
 
-# Halting reduces to the game value; Theorem 12.2 of (JNVWY20), synchronous form
+# Halting reduces to the game value; Theorem 12.2 of (1), synchronous form
 
 There is a computable map $g$ from Turing machines to game descriptions such that for every Turing machine $\mathcal{M}$:
 

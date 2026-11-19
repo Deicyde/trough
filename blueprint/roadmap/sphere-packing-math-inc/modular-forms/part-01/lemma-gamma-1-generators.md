@@ -16,11 +16,11 @@ We have $\Gamma(1) = \langle S, T, -I \rangle$.
 
 ## Proof
 
-See (first course, Exercise 1.1.1).
+See (3, Exercise 1.1.1).
 
 ## Lean
 
-Formalized as [`SL2Z_generate`](https://thefundamentaltheor3m.github.io/Sphere-Packing-Lean/docs/find/#doc/SL2Z_generate).
+Formalized as `SL2Z_generate`.
 
 ## Sources
 

@@ -7,10 +7,10 @@ statement: formalized
 
 # Cross-party state-dependent distance
 
-Let $\mu$ be a distribution on a finite set ${\mathcal{X}}$, let $|\psi\rangle \in \mathbb{C}^{d_\textsc{A}} \otimes \mathbb{C}^{d_\textsc{B}}$, and let $\{M^x_a\}$ and $\{N^x_a\}$ be families of POVMs with a common question set ${\mathcal{X}}$ and a common answer set, the first on $\mathbb{C}^{d_\textsc{A}}$ and the second on $\mathbb{C}^{d_\textsc{B}}$. We say they are *$\delta$-close across the two parties*, written $M^x_a \otimes {I} \simeq_\delta {I} \otimes N^x_a$, if
+Let $\mu$ be a distribution on a finite set ${\mathcal{X}}$, let $|\psi\rangle \in \mathbb{C}^{d_\text{A}} \otimes \mathbb{C}^{d_\text{B}}$, and let $\{M^x_a\}$ and $\{N^x_a\}$ be families of POVMs with a common question set ${\mathcal{X}}$ and a common answer set, the first on $\mathbb{C}^{d_\text{A}}$ and the second on $\mathbb{C}^{d_\text{B}}$. We say they are *$\delta$-close across the two parties*, written $M^x_a \otimes {I} \simeq_\delta {I} \otimes N^x_a$, if
 
 $$
-\mathop{\mathbb{E}}_{x \sim \mu} \sum_a \left\| {\bigl( M^x_a \otimes {I}_\textsc{B} - {I}_\textsc{A} \otimes N^x_a \bigr)
+\mathop{\mathbb{E}}_{x \sim \mu} \sum_a \left\| {\bigl( M^x_a \otimes {I}_\text{B} - {I}_\text{A} \otimes N^x_a \bigr)
 |\psi\rangle} \right\|^2 \;\leq\; \delta\;.
 $$
 

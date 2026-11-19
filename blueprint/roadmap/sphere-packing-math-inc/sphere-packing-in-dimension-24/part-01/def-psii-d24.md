@@ -22,7 +22,7 @@ a weakly holomorphic modular form of weight $-10$ for $\Gamma(2)$.
 
 ## Lean
 
-Formalized as [`SpherePacking.Dim24.ψI`](https://thefundamentaltheor3m.github.io/Sphere-Packing-Lean/docs/find/#doc/SpherePacking.Dim24.ψI).
+Formalized as `SpherePacking.Dim24.ψI`.
 
 ## Sources
 

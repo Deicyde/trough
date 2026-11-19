@@ -27,7 +27,7 @@ The proof is similar to that of Lemma [phi0-bound](cor-phi0-bound.md), follows f
 
 ## Lean
 
-Formalized as [`MagicFunction.b.PsiBounds.exists_bound_norm_ψS_resToImagAxis_Ici_one`](https://thefundamentaltheor3m.github.io/Sphere-Packing-Lean/docs/find/#doc/MagicFunction.b.PsiBounds.exists_bound_norm_ψS_resToImagAxis_Ici_one).
+Formalized as `MagicFunction.b.PsiBounds.exists_bound_norm_ψS_resToImagAxis_Ici_one`.
 
 ## Sources
 

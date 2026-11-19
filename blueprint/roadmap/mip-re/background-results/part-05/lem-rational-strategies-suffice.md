@@ -8,11 +8,11 @@ proof: formalized
 
 # Exact rational strategies suffice
 
-An *exact strategy* for a game $\mathfrak{G}$ is the data of dimensions $d_\textsc{A}, d_\textsc{B}$, matrices $A^x_a \in \mathbb{C}^{d_\textsc{A} \times d_\textsc{A}}$ and $B^y_b \in \mathbb{C}^{d_\textsc{B} \times d_\textsc{B}}$, and a vector $u \in \mathbb{C}^{d_\textsc{A}} \otimes \mathbb{C}^{d_\textsc{B}}$; it is *valid* if each $\{A^x_a\}_a$ and each $\{B^y_b\}_b$ is a projective measurement and $u \neq 0$, and its value is
+An *exact strategy* for a game $\mathfrak{G}$ is the data of dimensions $d_\text{A}, d_\text{B}$, matrices $A^x_a \in \mathbb{C}^{d_\text{A} \times d_\text{A}}$ and $B^y_b \in \mathbb{C}^{d_\text{B} \times d_\text{B}}$, and a vector $u \in \mathbb{C}^{d_\text{A}} \otimes \mathbb{C}^{d_\text{B}}$; it is *valid* if each $\{A^x_a\}_a$ and each $\{B^y_b\}_b$ is a projective measurement and $u \neq 0$, and its value is
 
 $$
 \omega \;=\; \frac{1}{\left\| {u} \right\|^2} \sum_{x,y} \mu(x,y) \sum_{a,b} D(x,y,a,b)\,
-\langleu| A^x_a \otimes B^y_b |u\rangle,
+\langle u| A^x_a \otimes B^y_b |u\rangle,
 $$
 
 a rational function of the entries. Suppose the answer alphabets of $\mathfrak{G}$ are nonempty. Then for every real $t$, $\mathrm{val}^*(\mathfrak{G}) > t$ if and only if some valid exact strategy with all entries in $\mathbb{Q}(i)$ has value $\omega > t$.

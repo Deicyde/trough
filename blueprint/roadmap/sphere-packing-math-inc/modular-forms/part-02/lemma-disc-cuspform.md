@@ -27,7 +27,7 @@ The fact that it is invariant under translation is clear from the definition, so
 
 ## Lean
 
-Formalized as [`Delta`](https://thefundamentaltheor3m.github.io/Sphere-Packing-Lean/docs/find/#doc/Delta).
+Formalized as `Delta`.
 
 ## Sources
 

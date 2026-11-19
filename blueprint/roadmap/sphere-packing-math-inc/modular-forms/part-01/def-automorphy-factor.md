@@ -19,7 +19,7 @@ Its statement uses no other node of the blueprint.
 
 ## Lean
 
-Formalized as [`UpperHalfPlane.denom`](https://thefundamentaltheor3m.github.io/Sphere-Packing-Lean/docs/find/#doc/UpperHalfPlane.denom).
+Formalized as `UpperHalfPlane.denom`.
 
 ## Sources
 

@@ -22,6 +22,6 @@ In what follows, we fix a process $X : \mathbb{N} \to \Omega \to E$ and a filtra
 - [Submartingale.monotone_predictablePart](lem-submartingale-monotone-predictablepart.md)
 - [Submartingale.predictablePart_nonneg](lem-submartingale-predictablepart-nonneg.md)
 
-TODO: define $\tau^T_{A_{n+1}>c}$ as the hitting time of $A_{n+1} > c$ but with the convention that it is equal to $T$ if the hitting time is greater than $T$ (`hittingBtwn`).
+…
 
 In the next lemmas, we write $\tau^T(c) = \tau^T_{A_{n+1}>c}$ for brevity.

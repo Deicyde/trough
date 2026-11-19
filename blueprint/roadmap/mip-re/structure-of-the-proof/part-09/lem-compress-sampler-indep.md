@@ -8,7 +8,7 @@ proof: formalized
 
 # The compressed sampler does not depend on the verifier
 
-For all inputs $(\mathsf{V}, \lambda)$ — $\lambda$-bounded or not, well-formed or not — the sampler $\mathcal{S}^{\textsc{Compr}}$ of ${\mathsf{Compress}}(\mathsf{V}, \lambda)$ depends only on $\lambda$, and there is a Turing machine $\mathtt{ComputeSampler}$ that outputs its description from $\lambda$ in time $\mathrm{polylog}(\lambda)$.
+For all inputs $(\mathsf{V}, \lambda)$ — $\lambda$-bounded or not, well-formed or not — the sampler $\mathcal{S}^{\text{Compr}}$ of ${\mathsf{Compress}}(\mathsf{V}, \lambda)$ depends only on $\lambda$, and there is a Turing machine $\mathtt{ComputeSampler}$ that outputs its description from $\lambda$ in time $\mathrm{polylog}(\lambda)$.
 
 ## Depends on
 
@@ -24,7 +24,7 @@ For all inputs $(\mathsf{V}, \lambda)$ — $\lambda$-bounded or not, well-formed
 
 ## Proof
 
-Chain the verifier-independence of the sampler through the three stages: introspection's sampler depends only on $(\lambda, \ell)$, answer reduction's only on its input sampler and the parameters, and repetition's only on its input sampler and $(\lambda, \ell, \tau)$. $\mathtt{ComputeSampler}$ is then realized by running ${\mathsf{Compress}}$ on the trivial verifier. It is this lemma that makes the recursion of Section [The halting reduction](../README.md) possible at all: a fixed point has to quote its own sampler, so the sampler must not depend on what is being compressed. In Lean the lemma is built into the statement of Theorem [Gap-preserving compression from ambient stage contracts](thm-compression.md): the fields `sampler` and `samplerProg` of `MIPRE.GapCompression` are the map $\lambda \mapsto \mathcal{S}^{\textsc{Compr}}_\lambda$ and its polynomial-time description, and `output_sampler` says that every output carries it. The chaining is `MIPRE.Pipeline.sampler`, the composite of the three sampler maps, with `samplerProg_eq` its polynomial-time description and `output_sampler` the claim for every input.
+Chain the verifier-independence of the sampler through the three stages: introspection's sampler depends only on $(\lambda, \ell)$, answer reduction's only on its input sampler and the parameters, and repetition's only on its input sampler and $(\lambda, \ell, \tau)$. $\mathtt{ComputeSampler}$ is then realized by running ${\mathsf{Compress}}$ on the trivial verifier. It is this lemma that makes the recursion of Section [The halting reduction](../README.md) possible at all: a fixed point has to quote its own sampler, so the sampler must not depend on what is being compressed. In Lean the lemma is built into the statement of Theorem [Gap-preserving compression from ambient stage contracts](thm-compression.md): the fields `sampler` and `samplerProg` of `MIPRE.GapCompression` are the map $\lambda \mapsto \mathcal{S}^{\text{Compr}}_\lambda$ and its polynomial-time description, and `output_sampler` says that every output carries it. The chaining is `MIPRE.Pipeline.sampler`, the composite of the three sampler maps, with `samplerProg_eq` its polynomial-time description and `output_sampler` the claim for every input.
 
 ## Lean
 

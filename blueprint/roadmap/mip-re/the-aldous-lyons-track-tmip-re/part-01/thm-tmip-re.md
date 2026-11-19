@@ -6,14 +6,14 @@ statement: formalized
 proof: formalized
 ---
 
-# $\mathrm{TMIP}^* = \mathrm{RE}$; II:1505, Theorem 7.4 of (BCLV24)
+# $\mathrm{TMIP}^* = \mathrm{RE}$; II:1505, Theorem 7.4 of (37)
 
 The proposition of Definition [The tailored halting reduction, as a proposition](def-tailored-halting-reduction.md) holds: there is a computable map $g$ from Turing machines to tailored game descriptions such that for every Turing machine $\mathcal{M}$:
 
 1. (**Completeness**) if $\mathcal{M}$ halts on the empty input, then $g(\mathcal{M})$ has a perfect ZPC strategy;
 2. (**Soundness**) if $\mathcal{M}$ does not halt on the empty input, then ${\mathrm{val}^{s}}(g(\mathcal{M})) \leq \frac12$.
 
-Turing machines, halting and computability are as in Theorem [Halting reduces to the game value; Theorem 12.2 of (JNVWY20), synchronous form](../../the-main-theorem/thm-main.md), and ${\mathrm{val}^{s}}$ is the synchronous value of Definition [Synchronous value](../../foundations/part-01/def-sync-value.md), in its standalone form (Remark [The standalone restatement](../../the-main-theorem/README.md)).
+Turing machines, halting and computability are as in Theorem [Halting reduces to the game value; Theorem 12.2 of (1), synchronous form](../../the-main-theorem/thm-main.md), and ${\mathrm{val}^{s}}$ is the synchronous value of Definition [Synchronous value](../../foundations/part-01/def-sync-value.md), in its standalone form (Remark [The standalone restatement](../../the-main-theorem/README.md)).
 
 ## Depends on
 

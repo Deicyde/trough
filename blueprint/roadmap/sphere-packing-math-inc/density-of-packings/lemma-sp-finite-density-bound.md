@@ -30,7 +30,7 @@ The high level idea is to prove that $\mathcal{P} \cap \mathcal{B}_d(R) = \left(
 
 ## Lean
 
-Formalized as [`SpherePacking.finiteDensity_le`](https://thefundamentaltheor3m.github.io/Sphere-Packing-Lean/docs/find/#doc/SpherePacking.finiteDensity_le), [`SpherePacking.finiteDensity_ge`](https://thefundamentaltheor3m.github.io/Sphere-Packing-Lean/docs/find/#doc/SpherePacking.finiteDensity_ge).
+Formalized as `SpherePacking.finiteDensity_le`, `SpherePacking.finiteDensity_ge`.
 
 ## Sources
 

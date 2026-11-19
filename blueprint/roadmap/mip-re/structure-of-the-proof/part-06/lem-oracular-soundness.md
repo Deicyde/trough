@@ -8,7 +8,7 @@ proof: formalized
 
 # Soundness of oracularization, at the level of games
 
-Let $S$ be a seeded game with nonempty seed space and nonempty answer alphabet, let $0 \leq \varepsilon \leq 1$, and let $N$ be a synchronous strategy for the oracularization of $S$ with value at least $1 - \varepsilon$. Let $\Sigma(N)$ be the strategy for the doubled game of $S$ in which Alice measures $\{N^{(\textsc{A},\, x)}_a\}$ and Bob measures $\{N^{(\textsc{B},\, y)}_b\}$, each relabelled so that the oracle-shaped answers are grouped into one fixed answer. Then $\Sigma(N)$ has value at least $1 - 24\sqrt{\varepsilon}$.
+Let $S$ be a seeded game with nonempty seed space and nonempty answer alphabet, let $0 \leq \varepsilon \leq 1$, and let $N$ be a synchronous strategy for the oracularization of $S$ with value at least $1 - \varepsilon$. Let $\Sigma(N)$ be the strategy for the doubled game of $S$ in which Alice measures $\{N^{(\text{A},\, x)}_a\}$ and Bob measures $\{N^{(\text{B},\, y)}_b\}$, each relabelled so that the oracle-shaped answers are grouped into one fixed answer. Then $\Sigma(N)$ has value at least $1 - 24\sqrt{\varepsilon}$.
 
 ## Depends on
 
@@ -24,7 +24,7 @@ Let $S$ be a seeded game with nonempty seed space and nonempty answer alphabet, 
 
 ## Proof
 
-Fix a seed $z$ and write $O_{(a,b)}$ for the oracle's measurement at $(\textsc{O}, z)$ relabelled onto answer pairs, and $C_a$, $D_b$ for Alice's and Bob's at $(\textsc{A}, L^\textsc{A}(z))$ and $(\textsc{B}, L^\textsc{B}(z))$; the relabellings group the shape failures into one distinguished outcome, so all three are measurements and not sub-measurements. Each of the nine ordered role pairs carries a ninth of the question weight, so at any one of them a set of outcome pairs the decider rejects carries mass at most $9\varepsilon$ on average over the seed. Applying this at $(\textsc{O}, \textsc{O})$, $(\textsc{O}, \textsc{A})$ and $(\textsc{O}, \textsc{B})$ gives, on average over $z$,
+Fix a seed $z$ and write $O_{(a,b)}$ for the oracle's measurement at $(\text{O}, z)$ relabelled onto answer pairs, and $C_a$, $D_b$ for Alice's and Bob's at $(\text{A}, L^\text{A}(z))$ and $(\text{B}, L^\text{B}(z))$; the relabellings group the shape failures into one distinguished outcome, so all three are measurements and not sub-measurements. Each of the nine ordered role pairs carries a ninth of the question weight, so at any one of them a set of outcome pairs the decider rejects carries mass at most $9\varepsilon$ on average over the seed. Applying this at $(\text{O}, \text{O})$, $(\text{O}, \text{A})$ and $(\text{O}, \text{B})$ gives, on average over $z$,
 
 $$
 \gamma = \sum_{(a,b) \text{ rejected}} \tau(O_{(a,b)}) \leq 9\varepsilon, \quad

@@ -29,11 +29,11 @@ $$
 E_{2m}(A)
 & =
 \mathop{
-\mathchoice{\vcenter{\hbox{\larger[4]$\mathbb{E}$}}}
+\mathchoice{\vcenter{{\mathbb{E}}}}
 {\kern0pt\mathbb{E}}
 {\kern0pt\mathbb{E}}
 {\kern0pt\mathbb{E}}
-}\displaylimits
+}\limits
 _\gamma \left\lvert \hat 1_A(\gamma)\right\rvert^{2m} \\
 & = \lVert \hat 1_A\rVert_{2m}^{2m} \\
 & \le (4\sqrt{2em})^{2m} \lVert \hat 1_A\rVert_2^{2m} \\

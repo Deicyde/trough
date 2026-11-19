@@ -22,7 +22,7 @@ $$
 
 ## Lean
 
-Formalized as [`SpherePacking.Dim24.varphi`](https://thefundamentaltheor3m.github.io/Sphere-Packing-Lean/docs/find/#doc/SpherePacking.Dim24.varphi).
+Formalized as `SpherePacking.Dim24.varphi`.
 
 ## Sources
 

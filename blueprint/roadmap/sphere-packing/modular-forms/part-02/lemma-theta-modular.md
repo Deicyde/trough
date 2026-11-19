@@ -17,7 +17,7 @@ $H_{2}$, $H_{3}$, and $H_{4}$ belong to $M_2(\Gamma(2))$.
 
 ## Proof
 
-From [Lemma theta-slash-invariant](lemma-theta-slash-invariant.md) and [Lemma theta-bounded-im-infty](lemma-theta-bounded-im-infty.md), it remains ot prove that $H_2$, $H_3$ and $H_4$ are holomorphic on $\mathbb{H}$. **fill in proof.**
+From [Lemma theta-slash-invariant](lemma-theta-slash-invariant.md) and [Lemma theta-bounded-im-infty](lemma-theta-bounded-im-infty.md), it remains ot prove that $H_2$, $H_3$ and $H_4$ are holomorphic on $\mathbb{H}$.
 
 ## Lean
 

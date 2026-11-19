@@ -26,7 +26,7 @@ By [Theorem psp-density](../../density-of-packings/theorem-psp-density.md), a la
 
 ## Lean
 
-Formalized as [`SpherePacking.Dim24.LeechPacking_density`](https://thefundamentaltheor3m.github.io/Sphere-Packing-Lean/docs/find/#doc/SpherePacking.Dim24.LeechPacking_density).
+Formalized as `SpherePacking.Dim24.LeechPacking_density`.
 
 ## Sources
 

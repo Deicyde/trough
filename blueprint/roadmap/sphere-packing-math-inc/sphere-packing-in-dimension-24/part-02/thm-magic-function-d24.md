@@ -27,7 +27,7 @@ Using [Lemma f-integral-d24](lem-f-integral-d24.md), the inequality $f(r)\le 0$ 
 
 ## Lean
 
-Formalized as [`SpherePacking.Dim24.SpherePackingConstant_le_leech_density`](https://thefundamentaltheor3m.github.io/Sphere-Packing-Lean/docs/find/#doc/SpherePacking.Dim24.SpherePackingConstant_le_leech_density).
+Formalized as `SpherePacking.Dim24.SpherePackingConstant_le_leech_density`.
 
 ## Sources
 

@@ -16,7 +16,7 @@ The *$E_8$ sphere packing* is the (periodic) sphere packing with separation $\sq
 
 ## Lean
 
-Formalized as [`E8Packing`](https://thefundamentaltheor3m.github.io/Sphere-Packing-Lean/docs/find/#doc/E8Packing).
+Formalized as `E8Packing`.
 
 ## Sources
 

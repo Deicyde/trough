@@ -5,7 +5,7 @@
 This part of the blueprint is a guide to the formalization of a standard Brownian motion in Lean using Mathlib. There are two main parts to this formalization:
 
 - a development of the theory of Gaussian distributions, the construction of a projective family of Gaussian distributions and its projective limit by the Kolmogorov extension theorem,
-- a proof of a Kolmogorov-Chentsov continuity theorem, following (kratschmer2023kolmogorov).
+- a proof of a Kolmogorov-Chentsov continuity theorem, following (Krätschmer and Urusov 2023).
 
 Putting the two sides together, we then build a stochastic process that fits the definition of a Brownian motion on the real line.
 

@@ -10,13 +10,13 @@ statement: formalized
 On two copies of $(\mathbb{C}^q)^{\otimes n}$,
 
 $$
-|\textsc{EPR}_q\rangle^{\otimes n} \;=\; \frac{1}{\sqrt{q^n}} \sum_{a \in \mathbb{F}_q^n} |a\rangle \otimes |a\rangle\;,
+|\text{EPR}_q\rangle^{\otimes n} \;=\; \frac{1}{\sqrt{q^n}} \sum_{a \in \mathbb{F}_q^n} |a\rangle \otimes |a\rangle\;,
 $$
 
 a unit vector. For any operator $M$ on one copy,
 
 $$
-(M \otimes {I}) |\textsc{EPR}_q\rangle^{\otimes n} \;=\; ({I} \otimes M^{\mathsf T}) |\textsc{EPR}_q\rangle^{\otimes n}\;,\qquad\text{(12)}
+(M \otimes {I}) |\text{EPR}_q\rangle^{\otimes n} \;=\; ({I} \otimes M^{\mathsf T}) |\text{EPR}_q\rangle^{\otimes n}\;,\qquad\text{(12)}
 $$
 
 and the Weyl operators and their spectral projectors are *symmetric*, so for them the transpose is invisible: the two parties' operators act identically on the state.

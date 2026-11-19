@@ -20,7 +20,7 @@ Writing $\vec{v} = \sum_i c_i\mathcal{B}_8^i$, we have $\|v\|^2 = \sum_i \sum_j 
 
 ## Lean
 
-Formalized as [`E8_norm_eq_sqrt_even`](https://thefundamentaltheor3m.github.io/Sphere-Packing-Lean/docs/find/#doc/E8_norm_eq_sqrt_even).
+Formalized as `E8_norm_eq_sqrt_even`.
 
 ## Sources
 

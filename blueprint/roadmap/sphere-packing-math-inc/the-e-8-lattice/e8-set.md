@@ -19,7 +19,7 @@ Its statement uses no other node of the blueprint.
 
 ## Lean
 
-Formalized as [`Submodule.E8`](https://thefundamentaltheor3m.github.io/Sphere-Packing-Lean/docs/find/#doc/Submodule.E8).
+Formalized as `Submodule.E8`.
 
 ## Sources
 

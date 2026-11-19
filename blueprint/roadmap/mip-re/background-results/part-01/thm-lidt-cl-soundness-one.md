@@ -8,7 +8,7 @@ proof: formalized
 
 # Quantum soundness of the seeded CL test, one codeword
 
-Let $m,d\geq1$, $m\mid q$ and $\varepsilon\geq0$. Every projective strategy passing the seeded CL test at $(q,m,d,1)$ with probability at least $1-\varepsilon$ admits projective measurements $G^\textsc{A},G^\textsc{B}$ on the respective players' spaces with outcomes polynomials of individual degree at most $d$, such that A's point measurement is consistent with $G^\textsc{B}$ evaluated at the point on average over uniform $u\in\mathbb{F}_q^m$, $G^\textsc{A}$ evaluated at the point is consistent with B's point measurement, and $G^\textsc{A}$ and $G^\textsc{B}$ are consistent with each other, all with error at most $\delta_{\mathrm{CL}}(\varepsilon,q,m,d,1)=a(dm)^a(\varepsilon^b+q^{-b}+2^{-bmd})$ for the constants of Lemma [The parameter choice](lem-lidt-cl-adapter-params.md).
+Let $m,d\geq1$, $m\mid q$ and $\varepsilon\geq0$. Every projective strategy passing the seeded CL test at $(q,m,d,1)$ with probability at least $1-\varepsilon$ admits projective measurements $G^\text{A},G^\text{B}$ on the respective players' spaces with outcomes polynomials of individual degree at most $d$, such that A's point measurement is consistent with $G^\text{B}$ evaluated at the point on average over uniform $u\in\mathbb{F}_q^m$, $G^\text{A}$ evaluated at the point is consistent with B's point measurement, and $G^\text{A}$ and $G^\text{B}$ are consistent with each other, all with error at most $\delta_{\mathrm{CL}}(\varepsilon,q,m,d,1)=a(dm)^a(\varepsilon^b+q^{-b}+2^{-bmd})$ for the constants of Lemma [The parameter choice](lem-lidt-cl-adapter-params.md).
 
 ## Depends on
 

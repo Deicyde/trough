@@ -1,6 +1,6 @@
 # Consistency of New Foundations
 
-The blueprint of Consistency of New Foundations, read at commit [edbce7eb](https://github.com/leanprover-community/con-nf/tree/edbce7eb98351870f553cfab6ccb7cab327e4259) (2026-10-23): one article for each of its 59 nodes whose Lean declarations it names and marks formalized, or in Mathlib. Its other 100 nodes have no article, and a section of only those is left out: the map records what the project contains, not what it plans. A statement for which the blueprint marks no proof `\leanok` says so. Dependencies are the blueprint's `\uses`: a statement's under *Depends on*, a proof's under *Proof depends on*.
+The project's blueprint, read at commit [edbce7eb](https://github.com/leanprover-community/con-nf/tree/edbce7eb98351870f553cfab6ccb7cab327e4259) (2026-10-23): one article for each of its 59 nodes whose Lean declarations it names and marks formalized, or in Mathlib. Its other 100 nodes have no article, and a section of only those is left out: the map records what the project contains, not what it plans. A statement for which the blueprint marks no proof `\leanok` says so. Dependencies are the blueprint's `\uses`: a statement's under *Depends on*, a proof's under *Proof depends on*.
 
 The text is the blueprint's, under its Apache-2.0 license: each page has a section's prose, remarks and examples in the blueprint's order, with each node's statement and proof where the node stands.
 

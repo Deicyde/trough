@@ -21,7 +21,7 @@ We know that $\dim(M_k(\Gamma_1))$ is finite dimensional from the above, now thi
 
 ## Lean
 
-Formalized as [`dim_gen_cong_levels`](https://thefundamentaltheor3m.github.io/Sphere-Packing-Lean/docs/find/#doc/dim_gen_cong_levels).
+Formalized as `dim_gen_cong_levels`.
 
 ## Sources
 

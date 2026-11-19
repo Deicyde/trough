@@ -19,7 +19,7 @@ Let $\Gamma$ denote a subgroup of $\mathrm{SL}_2(\mathbb{Z})$, then a modular fo
 
 ## Lean
 
-Formalized as [`ModularForm`](https://thefundamentaltheor3m.github.io/Sphere-Packing-Lean/docs/find/#doc/ModularForm).
+Formalized as `ModularForm`.
 
 ## Sources
 

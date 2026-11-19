@@ -7,14 +7,14 @@ statement: formalized
 
 # Sampler
 
-An *$\ell$-level sampler* (with field size $2$) is a Turing machine $\mathcal{S}$ together with, for each $n$, a dimension $s(n)$ and two $\ell$-level CL functions $L^\textsc{A}, L^\textsc{B}$ on $V = \mathbb{F}_2^{s(n)}$ given with exact decomposition data (Lemma [Structure of a CL function](../../structure-of-the-proof/part-01/lem-cl-structure.md)) such that, writing vectors and register subspaces of $V$ as bit strings of length $s(n)$ (coordinates, respectively indicator vectors), for all $w \in \{\textsc{A}, \textsc{B}\}$, $j \in \{1, \ldots, \ell\}$ and bit strings $z, u, y$ of length $s(n)$:
+An *$\ell$-level sampler* (with field size $2$) is a Turing machine $\mathcal{S}$ together with, for each $n$, a dimension $s(n)$ and two $\ell$-level CL functions $L^\text{A}, L^\text{B}$ on $V = \mathbb{F}_2^{s(n)}$ given with exact decomposition data (Lemma [Structure of a CL function](../../structure-of-the-proof/part-01/lem-cl-structure.md)) such that, writing vectors and register subspaces of $V$ as bit strings of length $s(n)$ (coordinates, respectively indicator vectors), for all $w \in \{\text{A}, \text{B}\}$, $j \in \{1, \ldots, \ell\}$ and bit strings $z, u, y$ of length $s(n)$:
 
 - on input $(n, \mathtt{dimension})$, $\mathcal{S}$ outputs $s(n)$;
 - on input $(n, w, \mathtt{marginal}, j, z)$, it outputs the marginal $L^w_{\leq j}(z)$;
 - on input $(n, w, \mathtt{linear}, j, u, y)$, it outputs $L^w_{j,u}(y)$, provided $u \in L^w_{\lt j}(V)$;
 - on input $(n, w, \mathtt{factor}, j, u)$, it outputs the factor space $V^w_{j,u}$, provided $u \in L^w_{\lt j}(V)$;
 
-and $\mathcal{S}$ halts on every input of the form $(n, \ldots)$, well formed or not; nothing is required of its outputs on other inputs. The *distribution of $\mathcal{S}$ at index $n$* is the CL distribution $\mu_n$ of $(L^\textsc{A}(x), L^\textsc{B}(x))$ for uniform $x \in V$ (Definition [Conditionally linear function](../../structure-of-the-proof/part-01/def-cl-function.md)). In the paper's Turing-machine model, $\mathsf{TIME}_\mathcal{S}(n)$ denotes the absolute supremum of the running times over all inputs of the form $(n, \ldots)$; totality alone does not make that supremum finite.
+and $\mathcal{S}$ halts on every input of the form $(n, \ldots)$, well formed or not; nothing is required of its outputs on other inputs. The *distribution of $\mathcal{S}$ at index $n$* is the CL distribution $\mu_n$ of $(L^\text{A}(x), L^\text{B}(x))$ for uniform $x \in V$ (Definition [Conditionally linear function](../../structure-of-the-proof/part-01/def-cl-function.md)). In the paper's Turing-machine model, $\mathsf{TIME}_\mathcal{S}(n)$ denotes the absolute supremum of the running times over all inputs of the form $(n, \ldots)$; totality alone does not make that supremum finite.
 
 ## Depends on
 

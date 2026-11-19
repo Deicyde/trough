@@ -40,7 +40,7 @@ $$
 
 The three last lines are true since $\mu \perp \nu_{\perp \mu}$ and $\mu_{\perp \nu} \perp \nu$. Only the first line remains. It suffices then to prove that $\mu \sqcap \nu$, $\frac{d \mu}{d \nu} \cdot \nu$ and $\frac{d \nu}{d \mu} \cdot \mu$ are equivalent.
 
-TODO
+…
 
 *3.* By 2. it suffices to consider the case $\nu = \mu$ and show that for $\mu$-almost every $x$, $\kappa(x) \perp \eta(x)$. Let $s$ be a measurable set of $\mathcal X \times \mathcal Y$ such that $(\mu \otimes \kappa)(s) = 0$ and $(\mu \otimes \eta)(s^c) = 0$. Then
 

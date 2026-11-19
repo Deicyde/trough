@@ -6,9 +6,7 @@ We describe the construction of a stochastic integral.
 
 **Status** The formalization is ongoing.
 
-**Blueprint authors** Rémy Degenne, Lorenzo Luccioli, Etienne Marion, Alessio Rondelli, Kexing Ying. Anyone is welcome to contribute!
-
-**Formalization authors** Anyone is welcome to contribute!
+**Blueprint authors** Rémy Degenne, Lorenzo Luccioli, Etienne Marion, Alessio Rondelli, Kexing Ying. …
 
 - [Filtrations, processes and martingales](filtrations-processes-and-martingales/README.md)
 - [Debut Theorem](debut-theorem/README.md)

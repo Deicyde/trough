@@ -10,9 +10,9 @@ proof: formalized
 
 Let $\mu$ be a distribution on questions, $|\psi\rangle$ a unit vector, and suppose given, for each question:
 
-- a *projective* measurement $\{A_{b,a}\}$ on $\mathbb{C}^{d_\textsc{A}}$ with outcomes pairs in ${\mathcal{A}} \times {\mathcal{B}}$;
-- a *projective* measurement $\{R_b\}_{b \in {\mathcal{A}}}$ on $\mathbb{C}^{d_\textsc{B}}$ — in the application already the coarse-graining of the first family along its own outcome map, which is why only its projectivity appears;
-- a *projective* measurement $\{G_g\}_{g \in {\mathcal{C}}}$ on $\mathbb{C}^{d_\textsc{B}}$, a copy $\{G'_g\}$ of it on $\mathbb{C}^{d_\textsc{A}}$, and an outcome map $e : {\mathcal{C}} \to {\mathcal{B}}$.
+- a *projective* measurement $\{A_{b,a}\}$ on $\mathbb{C}^{d_\text{A}}$ with outcomes pairs in ${\mathcal{A}} \times {\mathcal{B}}$;
+- a *projective* measurement $\{R_b\}_{b \in {\mathcal{A}}}$ on $\mathbb{C}^{d_\text{B}}$ — in the application already the coarse-graining of the first family along its own outcome map, which is why only its projectivity appears;
+- a *projective* measurement $\{G_g\}_{g \in {\mathcal{C}}}$ on $\mathbb{C}^{d_\text{B}}$, a copy $\{G'_g\}$ of it on $\mathbb{C}^{d_\text{A}}$, and an outcome map $e : {\mathcal{C}} \to {\mathcal{B}}$.
 
 Write $J_{b, a} = \sum_{g \,:\, e(g) = a} G_g R_b G_g$ for the pasted family, which is a POVM. Suppose that
 

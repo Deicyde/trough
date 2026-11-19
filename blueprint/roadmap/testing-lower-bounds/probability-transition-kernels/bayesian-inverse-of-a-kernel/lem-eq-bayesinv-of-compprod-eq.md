@@ -13,10 +13,6 @@ Let $\mu \in \mathcal M(\mathcal X)$ be a finite measure and let $\kappa : \math
 
 - [bayesInv](def-bayesinv.md)
 
-## Proof
-
-TODO: uniqueness of the conditional kernel.
-
 ## Lean
 
 Formalized as [`ProbabilityTheory.ae_eq_posterior_of_compProd_eq`](https://RemyDegenne.github.io/testing-lower-bounds/docs/find/#doc/ProbabilityTheory.ae_eq_posterior_of_compProd_eq).

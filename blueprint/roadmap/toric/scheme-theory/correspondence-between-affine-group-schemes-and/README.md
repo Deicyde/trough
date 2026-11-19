@@ -4,7 +4,7 @@ We want to show that affine group schemes correspond to Hopf algebras. We must d
 
 We choose to interpret this as lifting Spec to a fully faithful functor from Hopf algebras to group schemes, with essential image affine group schemes.
 
-An alternative would have been to lift the Gamma-Spec adjunction to an adjunction between Hopf algebras and affine group schemes. This is unfortunately much harder to do over an arbitrary scheme, so we leave this as future work.
+An alternative would have been to lift the Gamma-Spec adjunction to an adjunction between Hopf algebras and affine group schemes. …
 
 ## Spec of an algebra
 

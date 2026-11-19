@@ -22,7 +22,7 @@ $$
 
 ## Proof
 
-This is Voronoi's congruence (see e.g. (ireland-rosen, Chapter 15)). Writing $ja = p\lfloor ja/p \rfloor + r_j$ with $r_j$ the residue of $ja$, summing $r_j^k$ over $j$ and expanding by the binomial theorem identifies the two sides modulo $p$, using Faulhaber's formula for power sums and the von Staudt–Clausen integrality ([Lemma vonstaudt-p-integral](../numerators-p-adic-congruences-and-von-staudt-cla/lem-vonstaudt-p-integral.md)) to control the Bernoulli denominators of the lower-order terms.
+This is Voronoi's congruence (see e.g. (2, Chapter 15)). Writing $ja = p\lfloor ja/p \rfloor + r_j$ with $r_j$ the residue of $ja$, summing $r_j^k$ over $j$ and expanding by the binomial theorem identifies the two sides modulo $p$, using Faulhaber's formula for power sums and the von Staudt–Clausen integrality ([Lemma vonstaudt-p-integral](../numerators-p-adic-congruences-and-von-staudt-cla/lem-vonstaudt-p-integral.md)) to control the Bernoulli denominators of the lower-order terms.
 
 ## Lean
 

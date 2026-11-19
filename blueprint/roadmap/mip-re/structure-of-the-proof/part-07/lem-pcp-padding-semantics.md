@@ -12,7 +12,7 @@ Embed the five blocks of a decoupled formula into larger blocks. Add every claus
 
 ## Depends on
 
-- [Succinctly described 3SAT and decoupled 5SAT](../../background-results/part-03/def-succinct-3sat.md)
+- [Succinctly described 3SAT and decoupled 5SAT](../../background-results/part-04/def-succinct-3sat.md)
 
 ## Proof
 

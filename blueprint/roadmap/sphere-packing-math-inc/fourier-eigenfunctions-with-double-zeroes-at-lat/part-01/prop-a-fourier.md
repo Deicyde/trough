@@ -62,7 +62,7 @@ This finishes the proof of the proposition.
 
 ## Lean
 
-Formalized as [`MagicFunction.a.Fourier.eig_a`](https://thefundamentaltheor3m.github.io/Sphere-Packing-Lean/docs/find/#doc/MagicFunction.a.Fourier.eig_a).
+Formalized as `MagicFunction.a.Fourier.eig_a`.
 
 ## Sources
 

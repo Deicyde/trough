@@ -19,7 +19,7 @@ Its statement uses no other node of the blueprint.
 
 ## Lean
 
-Formalized as [`D`](https://thefundamentaltheor3m.github.io/Sphere-Packing-Lean/docs/find/#doc/D).
+Formalized as `D`.
 
 ## Sources
 

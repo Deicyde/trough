@@ -17,7 +17,7 @@ If $S$ is a periodic sphere packing in $\mathbb{R}^{24}$ with the Leech density,
 
 ## Lean
 
-Formalized as [`SpherePacking.Dim24.Uniqueness.RigidityClassify.CE.leech_unique_optimal_periodic`](https://thefundamentaltheor3m.github.io/Sphere-Packing-Lean/docs/find/#doc/SpherePacking.Dim24.Uniqueness.RigidityClassify.CE.leech_unique_optimal_periodic).
+Formalized as `SpherePacking.Dim24.Uniqueness.RigidityClassify.CE.leech_unique_optimal_periodic`.
 
 ## Sources
 

@@ -6,7 +6,7 @@ navigation: transparent
 
 - [Kolmogorov condition](def-iskolmogorovprocess.md)
 
-Remark: the measurability condition on the pair would be implied by the measurability of $X_t$ for all $t \in T$ if we assumed that $E$ is separable (`SecondCountableTopology` in Lean), which implies that the Borel $\sigma$-algebra on the product is equal to the product of the Borel $\sigma$-algebras. We follow (kratschmer2023kolmogorov) and do not require separability.
+Remark: the measurability condition on the pair would be implied by the measurability of $X_t$ for all $t \in T$ if we assumed that $E$ is separable (`SecondCountableTopology` in Lean), which implies that the Borel $\sigma$-algebra on the product is equal to the product of the Borel $\sigma$-algebras. We follow (Krätschmer and Urusov 2023) and do not require separability.
 
 - [IsKolmogorovProcess.edist_eq_zero](lem-iskolmogorovprocess-edist-eq-zero.md)
 - [IsKolmogorovProcess.lintegral_sup_rpow_edist_eq_zero](lem-iskolmogorovprocess-lintegral-sup-rpow-edist.md)

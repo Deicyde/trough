@@ -11,7 +11,7 @@ Measurable spaces and s-finite kernels are a copy-discard category (and in parti
 - Copy morphism: $c_{\mathcal X}: \mathcal X \rightsquigarrow \mathcal X \times \mathcal X$
 - Delete morphism: $d_{\mathcal X} : \mathcal X \rightsquigarrow *$
 
-If we restrict the morphisms to Markov kernels, we get a Markov category (TODO ref), which is a copy-discard category in which for every morphism $\kappa$, $d_{\mathcal Y} \circ \kappa = d_{\mathcal X}$.
+If we restrict the morphisms to Markov kernels, we get a Markov category, which is a copy-discard category in which for every morphism $\kappa$, $d_{\mathcal Y} \circ \kappa = d_{\mathcal X}$.
 
 In that view of transition kernels, the following operations are not primitive, but derived from others:
 

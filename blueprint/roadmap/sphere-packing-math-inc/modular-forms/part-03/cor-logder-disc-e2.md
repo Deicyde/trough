@@ -27,7 +27,7 @@ $$
 
 ## Lean
 
-Formalized as [`D_Delta_eq_E₂_mul_Delta`](https://thefundamentaltheor3m.github.io/Sphere-Packing-Lean/docs/find/#doc/D_Delta_eq_E₂_mul_Delta).
+Formalized as `D_Delta_eq_E₂_mul_Delta`.
 
 ## Sources
 

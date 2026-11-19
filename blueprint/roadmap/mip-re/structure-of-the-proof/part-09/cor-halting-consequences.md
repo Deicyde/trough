@@ -13,7 +13,7 @@ Assume an ambient `MIPRE.GapCompression`. On the map of Theorem [Halting reducti
 ## Depends on
 
 - [Halting reduction](thm-halting.md)
-- [Turing](../../background-results/part-03/thm-halting-undecidable.md)
+- [Turing](../../background-results/part-04/thm-halting-undecidable.md)
 - [$\mathrm{MIP}^* \subseteq \mathrm{RE}$](../../the-main-theorem/lem-mipstar-sub-re.md)
 - [Quantum value](../../foundations/part-01/def-q-value.md)
 - [The computable class](../../foundations/part-03/def-mipstar-computable.md)
@@ -21,7 +21,7 @@ Assume an ambient `MIPRE.GapCompression`. On the map of Theorem [Halting reducti
 
 ## Proof
 
-The tabulation of Theorem [Halting reduction](thm-halting.md) gives both values at once (`halting_reduction_both_of`): at a halting machine the tabulated game has a value-$1$ PCC strategy, and at a non-halting one its quantum value is at most $\tfrac12$. A separating function composed with the map would decide halting, against Theorem [Turing](../../background-results/part-03/thm-halting-undecidable.md). An r.e. language reduces to the halting problem by a computable map, which composes with the quantum-value reduction; the converse inclusion is Lemma [$\mathrm{MIP}^* \subseteq \mathrm{RE}$](../../the-main-theorem/lem-mipstar-sub-re.md). These are the conditional forms of the results of Chapter [The main theorem](../../the-main-theorem/README.md), which Corollary [Compression, and $\mathrm{MIP}^* = \mathrm{RE}$, from answer reduction alone](cor-compression-from-answer-reduction.md) instantiates.
+The tabulation of Theorem [Halting reduction](thm-halting.md) gives both values at once (`halting_reduction_both_of`): at a halting machine the tabulated game has a value-$1$ PCC strategy, and at a non-halting one its quantum value is at most $\tfrac12$. A separating function composed with the map would decide halting, against Theorem [Turing](../../background-results/part-04/thm-halting-undecidable.md). An r.e. language reduces to the halting problem by a computable map, which composes with the quantum-value reduction; the converse inclusion is Lemma [$\mathrm{MIP}^* \subseteq \mathrm{RE}$](../../the-main-theorem/lem-mipstar-sub-re.md). These are the conditional forms of the results of Chapter [The main theorem](../../the-main-theorem/README.md), which Corollary [Compression, and $\mathrm{MIP}^* = \mathrm{RE}$, from answer reduction alone](cor-compression-from-answer-reduction.md) instantiates.
 
 ## Lean
 

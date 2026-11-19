@@ -31,7 +31,7 @@ for all $t > 0$.
 
 ## Lean
 
-Formalized as [`MagicFunction.g.CohnElkies.A_neg`](https://thefundamentaltheor3m.github.io/Sphere-Packing-Lean/docs/find/#doc/MagicFunction.g.CohnElkies.A_neg).
+Formalized as `MagicFunction.g.CohnElkies.A_neg`.
 
 ## Sources
 

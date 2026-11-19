@@ -39,7 +39,7 @@ $$
 
 ## Lean
 
-Formalized as [`φ₀_periodic`](https://thefundamentaltheor3m.github.io/Sphere-Packing-Lean/docs/find/#doc/φ₀_periodic), [`φ₀_S_transform`](https://thefundamentaltheor3m.github.io/Sphere-Packing-Lean/docs/find/#doc/φ₀_S_transform).
+Formalized as `φ₀_periodic`, `φ₀_S_transform`.
 
 ## Sources
 

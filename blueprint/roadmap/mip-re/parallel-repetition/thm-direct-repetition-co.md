@@ -22,7 +22,7 @@ $$
 
 ## Proof
 
-This is the main theorem of (Vid26) (Theorem 7.1 there), whose Lean proof is vendored at `MIPRE/Background/Repetition/CommutingRepetition/`. The bridge identifies a game of Definition [Nonlocal game](../foundations/part-01/def-game.md) with the game of the vendored development having the $\{0, 1\}$-valued payoff $D$, a commuting-operator strategy of Definition [Commuting-operator strategy](def-co-strategy-bipartite.md) with a strategy of the vendored development (field by field, so that the two suprema defining the value range over the same set of numbers), and the two direct repetitions with each other. When $\varepsilon = 0$ and $\left\vert {{\mathcal{A}}} \right\vert = \left\vert {{\mathcal{B}}} \right\vert = 1$ the formalization reads the quotient as $0$ and the bound is trivial.
+This is the main theorem of (32) (Theorem 7.1 there), whose Lean proof is vendored at `MIPRE/Background/Repetition/CommutingRepetition/`. The bridge identifies a game of Definition [Nonlocal game](../foundations/part-01/def-game.md) with the game of the vendored development having the $\{0, 1\}$-valued payoff $D$, a commuting-operator strategy of Definition [Commuting-operator strategy](def-co-strategy-bipartite.md) with a strategy of the vendored development (field by field, so that the two suprema defining the value range over the same set of numbers), and the two direct repetitions with each other. When $\varepsilon = 0$ and $\left\vert {{\mathcal{A}}} \right\vert = \left\vert {{\mathcal{B}}} \right\vert = 1$ the formalization reads the quotient as $0$ and the bound is trivial.
 
 ## Lean
 

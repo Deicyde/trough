@@ -36,7 +36,7 @@ There are several technicalities when formalising in Lean, such as having to pro
 
 ## Lean
 
-Formalized as [`PeriodicSpherePacking.aux2_ge'`](https://thefundamentaltheor3m.github.io/Sphere-Packing-Lean/docs/find/#doc/PeriodicSpherePacking.aux2_ge'), [`PeriodicSpherePacking.aux2_le'`](https://thefundamentaltheor3m.github.io/Sphere-Packing-Lean/docs/find/#doc/PeriodicSpherePacking.aux2_le').
+Formalized as `PeriodicSpherePacking.aux2_ge'`, `PeriodicSpherePacking.aux2_le'`.
 
 ## Sources
 

@@ -21,7 +21,7 @@ $$
 
 ## Lean
 
-Formalized as [`SpherePacking.Dim24.ineq2_imagAxis`](https://thefundamentaltheor3m.github.io/Sphere-Packing-Lean/docs/find/#doc/SpherePacking.Dim24.ineq2_imagAxis).
+Formalized as `SpherePacking.Dim24.ineq2_imagAxis`.
 
 ## Sources
 

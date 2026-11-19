@@ -36,7 +36,7 @@ $$
 
 ## Lean
 
-Formalized as [`H₂_SIF`](https://thefundamentaltheor3m.github.io/Sphere-Packing-Lean/docs/find/#doc/H₂_SIF), [`H₃_SIF`](https://thefundamentaltheor3m.github.io/Sphere-Packing-Lean/docs/find/#doc/H₃_SIF), [`H₄_SIF`](https://thefundamentaltheor3m.github.io/Sphere-Packing-Lean/docs/find/#doc/H₄_SIF).
+Formalized as `H₂_SIF`, `H₃_SIF`, `H₄_SIF`.
 
 ## Sources
 

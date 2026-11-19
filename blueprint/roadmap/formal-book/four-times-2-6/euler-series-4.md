@@ -29,7 +29,7 @@ $$
 \lim_{N \to \infty} \sum_{n=-N}^N \frac{1}{(2n+1)^2} = \frac{\pi^2}{4},
 $$
 
-because then $\sum_{n=0}^\infty \frac{1}{(2n+1)^2} = \pi^2/8$ will follow, and this, as we know, is equivalent to Euler's theorem. So let's show that the sum of all off-diagonal terms tends to $0$! We write $\delta_N$ for this sum, and use a prime to denote that the diagonal terms with $m=n$ are deleted, so
+…
 
 $$
 \begin{aligned}

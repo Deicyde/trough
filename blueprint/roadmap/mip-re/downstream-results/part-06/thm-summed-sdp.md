@@ -14,7 +14,7 @@ Let $t$ be a set of bounded operators on a Hilbert space $\mathcal{H}$, and let 
 2. $A_i \leq Z$ for every $i$;
 3. $T_i Z = T_i A_i$ for every $i$.
 
-Conversely, for a measurement $T$ in $\mathcal{M}$, items 1 and 2 imply item 3. In a finite pair (Definition [Finite pairs](../part-04/def-finite-pair.md)), each player's operators are such a commutant, with the pair's vector trace, so the conclusion holds in each of them. These are the data of the semidefinite program that the vendored proof obtains from Lemma 9.2 of (JNVWY21qld), which this replaces.
+Conversely, for a measurement $T$ in $\mathcal{M}$, items 1 and 2 imply item 3. In a finite pair (Definition [Finite pairs](../part-04/def-finite-pair.md)), each player's operators are such a commutant, with the pair's vector trace, so the conclusion holds in each of them. These are the data of the semidefinite program that the vendored proof obtains from Lemma 9.2 of (2), which this replaces.
 
 ## Depends on
 

@@ -22,7 +22,7 @@ Its statement uses no other node of the blueprint.
 
 ## Proof
 
-We show that the integrals of the two functions agree on all $g^* \mathcal Y$-measurable sets. It suffices to show equality on all sets oc $\mathcal X$ of the form $g^{-1}(t)$ for $t$ a measurable set of $\mathcal Y$. TODO: also show measurability.
+We show that the integrals of the two functions agree on all $g^* \mathcal Y$-measurable sets. It suffices to show equality on all sets oc $\mathcal X$ of the form $g^{-1}(t)$ for $t$ a measurable set of $\mathcal Y$. …
 
 $$
 \begin{aligned}

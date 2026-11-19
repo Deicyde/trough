@@ -34,7 +34,7 @@ so $f$ is actually a modular form of level $1$. By considering the limit as $z \
 
 ## Lean
 
-Formalized as [`jacobi_identity`](https://thefundamentaltheor3m.github.io/Sphere-Packing-Lean/docs/find/#doc/jacobi_identity).
+Formalized as `jacobi_identity`.
 
 ## Sources
 

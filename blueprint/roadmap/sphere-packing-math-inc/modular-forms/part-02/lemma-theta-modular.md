@@ -17,7 +17,7 @@ $H_{2}$, $H_{3}$, and $H_{4}$ belong to $M_2(\Gamma(2))$.
 
 ## Lean
 
-Formalized as [`H₂_MF`](https://thefundamentaltheor3m.github.io/Sphere-Packing-Lean/docs/find/#doc/H₂_MF), [`H₃_MF`](https://thefundamentaltheor3m.github.io/Sphere-Packing-Lean/docs/find/#doc/H₃_MF), [`H₄_MF`](https://thefundamentaltheor3m.github.io/Sphere-Packing-Lean/docs/find/#doc/H₄_MF).
+Formalized as `H₂_MF`, `H₃_MF`, `H₄_MF`.
 
 ## Sources
 

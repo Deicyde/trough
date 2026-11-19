@@ -16,7 +16,7 @@ We have $\Gamma(1) = \langle S, T, -I \rangle$.
 
 ## Proof
 
-See (first course, Exercise 1.1.1).
+See (3, Exercise 1.1.1).
 
 ## Lean
 

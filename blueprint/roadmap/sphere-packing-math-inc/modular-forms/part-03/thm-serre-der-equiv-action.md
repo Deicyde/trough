@@ -52,7 +52,7 @@ $$
 
 ## Lean
 
-Formalized as [`serre_D_slash_equivariant`](https://thefundamentaltheor3m.github.io/Sphere-Packing-Lean/docs/find/#doc/serre_D_slash_equivariant).
+Formalized as `serre_D_slash_equivariant`.
 
 ## Sources
 

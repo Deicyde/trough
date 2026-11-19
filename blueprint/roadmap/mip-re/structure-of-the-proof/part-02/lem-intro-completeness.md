@@ -8,7 +8,7 @@ proof: formalized
 
 # Completeness of introspection
 
-If $\mathsf{V}_{2^n}$ has a value-$1$ PCC strategy, then $\mathsf{V}^{\textsc{Intro}}_n$ has one: the players measure their EPR halves in the bases the sampled question prescribes and then play the value-$1$ strategy of $\mathsf{V}_{2^n}$ on the question they have obtained. Every test of the decider accepts with certainty, and the resulting strategy is again projective, consistent and commuting. The Lean proof is that of Lemma [Concrete completeness for the full typed introspection game](../part-05/lem-intro-full-typed-completeness.md), carried to the ambient output verifier: explicit Pauli and auxiliary measurements on a common carrier, rather than the Fourier and commutation argument below.
+If $\mathsf{V}_{2^n}$ has a value-$1$ PCC strategy, then $\mathsf{V}^{\text{Intro}}_n$ has one: the players measure their EPR halves in the bases the sampled question prescribes and then play the value-$1$ strategy of $\mathsf{V}_{2^n}$ on the question they have obtained. Every test of the decider accepts with certainty, and the resulting strategy is again projective, consistent and commuting. The Lean proof is that of Lemma [Concrete completeness for the full typed introspection game](../part-05/lem-intro-full-typed-completeness.md), carried to the ambient output verifier: explicit Pauli and auxiliary measurements on a common carrier, rather than the Fourier and commutation argument below.
 
 ## Depends on
 

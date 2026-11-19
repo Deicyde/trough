@@ -34,7 +34,7 @@ Then the result follows from Lemma [mod-div-disc-bound](lemma-mod-div-disc-bound
 
 ## Lean
 
-Formalized as [`MagicFunction.PolyFourierCoeffBound.norm_φ₀_le`](https://thefundamentaltheor3m.github.io/Sphere-Packing-Lean/docs/find/#doc/MagicFunction.PolyFourierCoeffBound.norm_φ₀_le).
+Formalized as `MagicFunction.PolyFourierCoeffBound.norm_φ₀_le`.
 
 ## Sources
 

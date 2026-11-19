@@ -20,7 +20,7 @@ In Lean the reduction is stated at any padding $K$ with $r\leq K$, $K\geq1$ and 
 
 ## Proof
 
-Lemma [The padded multi-codeword game adapter](lem-lidt-ldc-adapter.md) gives, on the same state and spaces, a strategy at $(q,K+m,d,1)$ of failure at most $9(K+1)\varepsilon$ whose point measurements are the combined ones. Theorem [Quantum soundness of the seeded CL test, one codeword](thm-lidt-cl-soundness-one.md) gives $R^\textsc{A}$, $R^\textsc{B}$ satisfying the three single-codeword conclusions against them with error $\delta_{\mathrm{CL}}(9(K+1)\varepsilon,q,K+m,d,1)$, and Lemma [Extracting exactly linear combined codewords](lem-lidt-ldc-extraction.md) turns those into $G^\textsc{A}$, $G^\textsc{B}$.
+Lemma [The padded multi-codeword game adapter](lem-lidt-ldc-adapter.md) gives, on the same state and spaces, a strategy at $(q,K+m,d,1)$ of failure at most $9(K+1)\varepsilon$ whose point measurements are the combined ones. Theorem [Quantum soundness of the seeded CL test, one codeword](thm-lidt-cl-soundness-one.md) gives $R^\text{A}$, $R^\text{B}$ satisfying the three single-codeword conclusions against them with error $\delta_{\mathrm{CL}}(9(K+1)\varepsilon,q,K+m,d,1)$, and Lemma [Extracting exactly linear combined codewords](lem-lidt-ldc-extraction.md) turns those into $G^\text{A}$, $G^\text{B}$.
 
 ## Lean
 

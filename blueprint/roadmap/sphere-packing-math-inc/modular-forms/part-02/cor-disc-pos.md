@@ -24,7 +24,7 @@ $$
 
 ## Lean
 
-Formalized as [`Delta_imag_axis_pos`](https://thefundamentaltheor3m.github.io/Sphere-Packing-Lean/docs/find/#doc/Delta_imag_axis_pos).
+Formalized as `Delta_imag_axis_pos`.
 
 ## Sources
 

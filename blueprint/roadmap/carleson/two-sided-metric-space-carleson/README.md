@@ -53,15 +53,15 @@ In order to pass from the one-sided truncation in $T_r$ and $T_{*}^r$ to the two
 
 ## Calderón-Zygmund Decomposition
 
-Calderón-Zygmund decomposition is a tool to extend $L^2$ bounds to $L^p$ bounds with $p<2$ or to the so-called weak $(1, 1)$ type endpoint bound. It is classical and can be found in (stein-book).
+Calderón-Zygmund decomposition is a tool to extend $L^2$ bounds to $L^p$ bounds with $p<2$ or to the so-called weak $(1, 1)$ type endpoint bound. It is classical and can be found in (Stein 1993).
 
-The following lemma is Theorem 3.1(b) in (stein-book). The proof uses [Hardy–Littlewood](../proof-of-metric-space-carleson-overview/hardy-littlewood.md).
+The following lemma is Theorem 3.1(b) in (Stein 1993). The proof uses [Hardy–Littlewood](../proof-of-metric-space-carleson-overview/hardy-littlewood.md).
 
 - [Maximal theorem](maximal-theorem.md)
 - [Lebesgue differentiation](lebesgue-differentiation.md)
 - [Disjoint family countable](disjoint-family-countable.md)
 
-The following lemma corresponds to Lemma 3.2 in (stein-book) with additional proof of the bounded intersection property taken from the proof of Proposition 7.1. It uses the following notation, which will be used throughout the rest of this section: whenever $B_j$ denotes a ball $B_j = B(x_j, r_j)$, define
+The following lemma corresponds to Lemma 3.2 in (Stein 1993) with additional proof of the bounded intersection property taken from the proof of Proposition 7.1. It uses the following notation, which will be used throughout the rest of this section: whenever $B_j$ denotes a ball $B_j = B(x_j, r_j)$, define
 
 $$
 B_{n,j} = B(x_j, nr_j).
@@ -69,7 +69,7 @@ $$
 
 - [Ball covering](ball-covering.md)
 
-Most of the next lemma and its proof is taken from Theorem 4.2 in (stein-book).
+Most of the next lemma and its proof is taken from Theorem 4.2 in (Stein 1993).
 
 - [Calderon Zygmund decomposition](calderon-zygmund-decomposition.md)
 

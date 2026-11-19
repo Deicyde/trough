@@ -23,11 +23,11 @@ $$
 
 ## Proof
 
-Theorem [Cohn–Elkies (ElkiesCohn)](thm-cohn-elkies-general.md) applied to the optimal function $f(x)=g(x/\sqrt{2})$ immediately implies [Corollary MainTheorem-d8](../sphere-packings/maintheorem-d8.md).
+Theorem [Cohn–Elkies (2)](thm-cohn-elkies-general.md) applied to the optimal function $f(x)=g(x/\sqrt{2})$ immediately implies [Corollary MainTheorem-d8](../sphere-packings/maintheorem-d8.md).
 
 ## Lean
 
-Formalized as [`g`](https://thefundamentaltheor3m.github.io/Sphere-Packing-Lean/docs/find/#doc/g), [`g_zero`](https://thefundamentaltheor3m.github.io/Sphere-Packing-Lean/docs/find/#doc/g_zero), [`fourier_g_zero`](https://thefundamentaltheor3m.github.io/Sphere-Packing-Lean/docs/find/#doc/fourier_g_zero), [`MagicFunction.g.CohnElkies.g_cohnElkies₁`](https://thefundamentaltheor3m.github.io/Sphere-Packing-Lean/docs/find/#doc/MagicFunction.g.CohnElkies.g_cohnElkies₁), [`MagicFunction.g.CohnElkies.g_cohnElkies₂`](https://thefundamentaltheor3m.github.io/Sphere-Packing-Lean/docs/find/#doc/MagicFunction.g.CohnElkies.g_cohnElkies₂).
+Formalized as `g`, `g_zero`, `fourier_g_zero`, `MagicFunction.g.CohnElkies.g_cohnElkies₁`, `MagicFunction.g.CohnElkies.g_cohnElkies₂`.
 
 ## Sources
 

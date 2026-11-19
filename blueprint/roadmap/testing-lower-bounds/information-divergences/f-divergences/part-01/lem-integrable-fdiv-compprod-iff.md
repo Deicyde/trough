@@ -25,7 +25,7 @@ Since $x \mapsto f \left(\frac{d(\mu \otimes \kappa)}{d(\mu \otimes \eta)} x \ri
 
 It suffices to use convexity to show that integrability of $x \mapsto \int_y f \left( \frac{d\kappa(x)}{d\eta(x)}(y) \right) \partial \eta(x)$ implies integrability of $x \mapsto \int_y \left\Vert f \left( \frac{d\kappa(x)}{d\eta(x)}(y) \right) \right\Vert \partial \eta(x)$.
 
-TODO
+…
 
 ## Lean
 

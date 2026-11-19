@@ -8,7 +8,7 @@ proof: formalized
 
 # Halting reduces to the quantum value
 
-With $g$ as in Theorem [Halting reduces to the game value; Theorem 12.2 of (JNVWY20), synchronous form](thm-main.md): if $\mathcal{M}$ halts on the empty input then $\mathrm{val}^*(\mathfrak{G}_{g(\mathcal{M})}) = 1$, and if $\mathcal{M}$ does not halt on the empty input then $\mathrm{val}^*(\mathfrak{G}_{g(\mathcal{M})}) \leq \tfrac12$.
+With $g$ as in Theorem [Halting reduces to the game value; Theorem 12.2 of (1), synchronous form](thm-main.md): if $\mathcal{M}$ halts on the empty input then $\mathrm{val}^*(\mathfrak{G}_{g(\mathcal{M})}) = 1$, and if $\mathcal{M}$ does not halt on the empty input then $\mathrm{val}^*(\mathfrak{G}_{g(\mathcal{M})}) \leq \tfrac12$.
 
 ## Depends on
 
@@ -24,7 +24,7 @@ With $g$ as in Theorem [Halting reduces to the game value; Theorem 12.2 of (JNVW
 
 ## Proof
 
-At the compression of Theorem [Ambient compression inhabitation target](../structure-of-the-proof/part-09/thm-compression-target.md), as Theorem [Halting reduces to the game value; Theorem 12.2 of (JNVWY20), synchronous form](thm-main.md) is: `MIPRE.Halting.halting_reduction_both_of` produces one computable map with both values, the quantum one from `tab_value` and `Verifier.valStar_eq_one_of_hasPerfectPCC` in the halting branch and from `tab_value` alone in the other; the corollary is its quantum half.
+At the compression of Theorem [Ambient compression inhabitation target](../structure-of-the-proof/part-09/thm-compression-target.md), as Theorem [Halting reduces to the game value; Theorem 12.2 of (1), synchronous form](thm-main.md) is: `MIPRE.Halting.halting_reduction_both_of` produces one computable map with both values, the quantum one from `tab_value` and `Verifier.valStar_eq_one_of_hasPerfectPCC` in the halting branch and from `tab_value` alone in the other; the corollary is its quantum half.
 
 ## Lean
 

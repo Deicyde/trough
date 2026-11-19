@@ -1,6 +1,6 @@
 # Measure associated with a process
 
-TODO: reorganize and update this section, which should for now be considered a draft.
+…
 
 ## Monotone processes
 
@@ -21,4 +21,4 @@ $$
 
 Set $\mu_X(\{0\} \times A) = 0$ . Then $\mu_X$ is a content on the predictable rectangles, which can be extended to the ring of sets it generates.
 
-TODO: lemmas stating that those 3 coincide whenever they can.
+…

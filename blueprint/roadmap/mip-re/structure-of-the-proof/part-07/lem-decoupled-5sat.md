@@ -8,11 +8,11 @@ proof: formalized
 
 # Succinct decoupled 5SAT
 
-There is a polynomial-time algorithm that, on the inputs of Theorem [Explicit succinct Cook–Levin](../../background-results/part-04/thm-succinct-sat.md) under the same hypotheses, outputs a circuit with two inputs of length $\ell_0 = \lceil \log 2T \rceil$, three of length $r_0 = O(\log T + \log \sigma)$ and five single-bit inputs, with at most $s_0 = \mathrm{poly}(\log T, \log n, Q, \sigma)$ gates, which describes the decider $\mathcal{D}$ on $(n, x, y)$ at time $T$ in the sense of Definition [Succinctly described 3SAT and decoupled 5SAT](../../background-results/part-03/def-succinct-3sat.md): the variables of the decoupled 5SAT formula fall into five blocks, the first two being the players' answer strings, and every clause touches each block once. The parameters $\ell_0, r_0, s_0$ are computable in time polynomial in the bit lengths of $n, T, Q, \sigma$. (The padded description, with the outer variable count a power of two, is the padding step of the PCP, Remark [Why $m$ is a power of two](../README.md).)
+There is a polynomial-time algorithm that, on the inputs of Theorem [Explicit succinct Cook–Levin](../../background-results/part-04/thm-succinct-sat.md) under the same hypotheses, outputs a circuit with two inputs of length $\ell_0 = \lceil \log 2T \rceil$, three of length $r_0 = O(\log T + \log \sigma)$ and five single-bit inputs, with at most $s_0 = \mathrm{poly}(\log T, \log n, Q, \sigma)$ gates, which describes the decider $\mathcal{D}$ on $(n, x, y)$ at time $T$ in the sense of Definition [Succinctly described 3SAT and decoupled 5SAT](../../background-results/part-04/def-succinct-3sat.md): the variables of the decoupled 5SAT formula fall into five blocks, the first two being the players' answer strings, and every clause touches each block once. The parameters $\ell_0, r_0, s_0$ are computable in time polynomial in the bit lengths of $n, T, Q, \sigma$. (The padded description, with the outer variable count a power of two, is the padding step of the PCP, Remark [Why $m$ is a power of two](../README.md).)
 
 ## Depends on
 
-- [Succinctly described 3SAT and decoupled 5SAT](../../background-results/part-03/def-succinct-3sat.md)
+- [Succinctly described 3SAT and decoupled 5SAT](../../background-results/part-04/def-succinct-3sat.md)
 - [Decider](../../foundations/part-03/def-decider.md)
 - [Multi-input Turing machine](../../computability/def-multiinput-tm.md)
 

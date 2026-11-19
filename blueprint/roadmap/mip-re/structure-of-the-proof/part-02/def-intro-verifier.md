@@ -7,7 +7,7 @@ statement: formalized
 
 # The introspective verifier
 
-Fix $\ell$ and an $\ell$-level verifier $\mathsf{V}$ satisfying the paper's absolute $\lambda$-bound, as distinguished in Remark [Runtime normalization obligation](../README.md). The *introspective verifier* $\mathsf{V}^{\textsc{Intro}}$ is the typed verifier whose players sample the conditionally linear question distribution of $\mathsf{V}_{2^n}$ *themselves*: the question $y \in V = \mathbb{F}_q^s$ is not sent to them, but obtained by each player measuring its half of $Q$ shared EPR pairs in a Pauli basis, and reported back. Its decider runs three kinds of test.
+Fix $\ell$ and an $\ell$-level verifier $\mathsf{V}$ satisfying the paper's absolute $\lambda$-bound, as distinguished in Remark [Runtime normalization obligation](../README.md). The *introspective verifier* $\mathsf{V}^{\text{Intro}}$ is the typed verifier whose players sample the conditionally linear question distribution of $\mathsf{V}_{2^n}$ *themselves*: the question $y \in V = \mathbb{F}_q^s$ is not sent to them, but obtained by each player measuring its half of $Q$ shared EPR pairs in a Pauli basis, and reported back. Its decider runs three kinds of test.
 
 1. a **Pauli test**, which is the game of Theorem [Pauli basis test / quantum low individual degree test](../../background-results/part-01/thm-qld.md) on the same EPR pairs, so that the measurements the players use to sample are forced to be genuine Pauli measurements in the low-degree-encoded basis;
 2. a **sampling test**, which forces the reported $y$ to be distributed as the conditionally linear distribution of $\mathsf{V}_{2^n}$ rather than as anything else the players might prefer;
@@ -19,7 +19,7 @@ It is a $3$-level *typed* verifier, hence $5$-level once detyped (Remark [Typed 
 
 - [Normal form verifier in the ambient model](../../foundations/part-03/def-normal-verifier.md)
 - [Conditionally linear function](../part-01/def-cl-function.md)
-- [Effective unary prime-power decomposition](../../background-results/part-04/lem-binary-degree-decomposition.md)
+- [Effective unary prime-power decomposition](../../background-results/part-05/lem-binary-degree-decomposition.md)
 - [Uniform deterministic binary irreducible polynomials](../../background-results/part-05/lem-binary-uniform-irreducible.md)
 - [Effective polynomial-basis field arithmetic](../../background-results/part-05/lem-effective-binary-field-arithmetic.md)
 - [Effective binary matrix arithmetic and elimination](../../background-results/part-05/lem-effective-binary-linear-algebra.md)

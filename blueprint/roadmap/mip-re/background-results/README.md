@@ -2,31 +2,31 @@
 
 This chapter collects theorems that the proof relies on but whose proofs appear in other papers. Each entry gives a full statement, a pointer to the literature, and comments on its role and on formalization. The project may initially assume these as axioms; discharging them are independent sub-projects. Three of these results are larger sub-projects and are developed in their own sections: the computability results in Section [Computability](../computability/README.md) and parallel repetition in Section [Parallel repetition](../parallel-repetition/README.md); they are included in the summary table below for completeness. Statements are given in the form closest to how they will be used. The compression pipeline carries bipartite soundness in $\mathrm{val}^*$; synchronous and tracial results appear as internal ingredients with their own transfer obligations.
 
-Each entry carries an estimate of the formalization effort: [$\bullet$ easy] for self-contained arguments of at most a few pages, [$\bullet\bullet$ medium] for substantial but well-delimited developments, and [$\bullet\bullet\bullet$ hard] for results whose formalization is a project in itself; [$\checkmark$ (mostly) in Mathlib] marks statements essentially available in Mathlib. The estimates are for the statement as it will be used (including any required interface translation) and are of course provisional. Independently of the effort estimate, the [[$\uparrow$ QuantumLib](https://github.com/Timeroot/Lean-QuantumInfo)] badge (introduced in Section [Foundations](../foundations/README.md)) marks results of general quantum-information interest that are intended to be upstreamed to QuantumLib.
+Each entry carries an estimate of the formalization effort: [$\bullet$ easy] for self-contained arguments of at most a few pages, [$\bullet\bullet$ medium] for substantial but well-delimited developments, and [$\bullet\bullet\bullet$ hard] for results whose formalization is a project in itself; [$\checkmark$ (mostly) in Mathlib] marks statements essentially available in Mathlib. The estimates are for the statement as it will be used (including any required interface translation) and are of course provisional. …
 
 | Result | Statement | Source | Effort |
 | --- | --- | --- | --- |
-| Gowers–Hatami | Thm. [Gowers–Hatami](part-01/thm-gowers-hatami.md) | (GH17, dlS21) | ✓ |
-| Almost-synchronous correlations | Thm. [Almost-synchronous strategies are near synchronous strategies](https://github.com/vidick/MIPRE-formalization/blob/5926bdff5db621f44682a101007ef2fe3ae8d970/blueprint/src/content/03_background_results.tex#L137) | (Vid22) | hard |
-| Orthonormalization | Thm. [Orthonormalization](part-01/thm-orthonormalization.md) | (dlS21) | ✓ |
-| Magic Square rigidity | Thm. [Magic Square rigidity](https://github.com/vidick/MIPRE-formalization/blob/5926bdff5db621f44682a101007ef2fe3ae8d970/blueprint/src/content/03_background_results.tex#L420) | (WBMS16) | easy |
-| Low individual degree test (canonical lines) | Thm. [Quantum soundness of the canonical-line low individual degree test](part-01/thm-lidt-soundness.md) | (JNVWY21qld) | ✓ |
-| Low individual degree test (seeded CL) | Thm. [Quantum soundness of the seeded CL test](part-01/thm-lidt-cl-soundness.md) | (AuditSync26) | ✓ |
-| Low individual degree test (seeded CL, one codeword) | Thm. [Quantum soundness of the seeded CL test, one codeword](part-01/thm-lidt-cl-soundness-one.md) | (JNVWY21qld) | ✓ |
-| Low individual degree test (Pauli) | Thm. [Pauli basis test / quantum low individual degree test](part-01/thm-qld.md) | (AuditSync26) | hard |
-| Direct parallel repetition (commuting-operator) | Thm. [Direct parallel repetition for commuting-operator strategies](../parallel-repetition/thm-direct-repetition-co.md) | (Vid26) | ✓ |
-| Direct parallel repetition (entangled) | Thm. [Direct parallel repetition for entangled strategies](../parallel-repetition/thm-direct-repetition-q.md) | (OpenAI26) | ✓ |
-| Tracial density | Thm. [Lin's tracial density theorem](../parallel-repetition/thm-tracial-density.md) | (Lin23, Vid26) | ✓ |
-| Recursive compression lemma | Lem. [Recursive compression](../computability/lem-recursive-compression.md) | (MNY) | ✓ |
-| Compressibility criterion | Lem. [Compressibility criterion](../computability/lem-compressible-criterion.md) | (Lin25) | ✓ |
-| Efficient computability toolkit | Lems. [Efficient universal Turing machine](../computability/lem-universal-tm.md)–[Efficient Kleene recursion theorem](../computability/lem-kleene.md) | (MNY) | hard |
-| Halting undecidability | Thm. [Turing](part-03/thm-halting-undecidable.md) | Mathlib | ✓ |
-| Succinct Cook–Levin | Thm. [Explicit succinct Cook–Levin](part-04/thm-succinct-sat.md) | (Coo71, PY86) | ✓ |
-| Self-dual normal bases | Lem. [Deterministic self-dual normal basis](part-04/lem-self-dual-basis.md) | (Sho90, Len91) | medium |
-| Schwartz–Zippel | Lem. [Schwartz–Zippel](part-05/lem-schwartz-zippel.md) | (Sch80, Zip79) | ✓ |
+| Gowers–Hatami | Thm. [Gowers–Hatami](part-01/thm-gowers-hatami.md) | (7, 8) | ✓ |
+| Almost-synchronous correlations | Thm. [Almost-synchronous strategies are near synchronous strategies](https://github.com/vidick/MIPRE-formalization/blob/5926bdff5db621f44682a101007ef2fe3ae8d970/blueprint/src/content/03_background_results.tex#L137) | (9) | hard |
+| Orthonormalization | Thm. [Orthonormalization](part-01/thm-orthonormalization.md) | (8) | ✓ |
+| Magic Square rigidity | Thm. [Magic Square rigidity](https://github.com/vidick/MIPRE-formalization/blob/5926bdff5db621f44682a101007ef2fe3ae8d970/blueprint/src/content/03_background_results.tex#L420) | (14) | easy |
+| Low individual degree test (canonical lines) | Thm. [Quantum soundness of the canonical-line low individual degree test](part-01/thm-lidt-soundness.md) | (2) | ✓ |
+| Low individual degree test (seeded CL) | Thm. [Quantum soundness of the seeded CL test](part-01/thm-lidt-cl-soundness.md) | (34) | ✓ |
+| Low individual degree test (seeded CL, one codeword) | Thm. [Quantum soundness of the seeded CL test, one codeword](part-01/thm-lidt-cl-soundness-one.md) | (2) | ✓ |
+| Low individual degree test (Pauli) | Thm. [Pauli basis test / quantum low individual degree test](part-01/thm-qld.md) | (34) | hard |
+| Direct parallel repetition (commuting-operator) | Thm. [Direct parallel repetition for commuting-operator strategies](../parallel-repetition/thm-direct-repetition-co.md) | (32) | ✓ |
+| Direct parallel repetition (entangled) | Thm. [Direct parallel repetition for entangled strategies](../parallel-repetition/thm-direct-repetition-q.md) | (31) | ✓ |
+| Tracial density | Thm. [Lin's tracial density theorem](../parallel-repetition/thm-tracial-density.md) | (12, 32) | ✓ |
+| Recursive compression lemma | Lem. [Recursive compression](../computability/lem-recursive-compression.md) | (11) | ✓ |
+| Compressibility criterion | Lem. [Compressibility criterion](../computability/lem-compressible-criterion.md) | (13) | ✓ |
+| Efficient computability toolkit | Lems. [Efficient universal Turing machine](../computability/lem-universal-tm.md)–[Efficient Kleene recursion theorem](../computability/lem-kleene.md) | (11) | hard |
+| Halting undecidability | Thm. [Turing](part-04/thm-halting-undecidable.md) | Mathlib | ✓ |
+| Succinct Cook–Levin | Thm. [Explicit succinct Cook–Levin](part-04/thm-succinct-sat.md) | (23, 22) | ✓ |
+| Self-dual normal bases | Lem. [Deterministic self-dual normal basis](part-04/lem-self-dual-basis.md) | (24, 25) | medium |
+| Schwartz–Zippel | Lem. [Schwartz–Zippel](part-05/lem-schwartz-zippel.md) | (26, 27) | ✓ |
 | Value approximable from below | Lem. [The value is approximable from below](part-05/lem-value-lower-approx.md) | folklore | medium |
 
-The anchored parallel repetition theorem of (BVY17), and the entropy and fidelity toolkit its proof needs, are not on the path to the main theorem and are not stated in this blueprint (Remark [Direct versus anchored repetition](../parallel-repetition/README.md)).
+The anchored parallel repetition theorem of (10), and the entropy and fidelity toolkit its proof needs, are not on the path to the main theorem and are not stated in this blueprint (Remark [Direct versus anchored repetition](../parallel-repetition/README.md)).
 
 ## The Gowers–Hatami theorem
 
@@ -78,7 +78,7 @@ The anchored parallel repetition theorem of (BVY17), and the entropy and fidelit
 - [Padded point measurements](part-02/lem-qld-padded-points.md)
 - [The sublines distribution](part-02/lem-qld-sublines.md)
 
-## [Padded line POVM to Succinctly described 3SAT and…](part-03/README.md)
+## [Padded line POVM to The swap isometry](part-03/README.md)
 
 - [Padded line POVM](part-03/lem-qld-padded-lines.md)
 - [The models of stages 4 and 5](part-03/def-qld-physical-model.md)
@@ -97,12 +97,12 @@ The anchored parallel repetition theorem of (BVY17), and the entropy and fidelit
 - [Exact Pauli operators](part-03/lem-qld-exact-paulis.md)
 - [Self-consistency of the exact Pauli observables](part-03/lem-qld-pauli-selfcons.md)
 - [The swap isometry](part-03/lem-qld-swap.md)
-- [The error of the Pauli basis test](part-03/lem-qld-error.md)
-- [Turing](part-03/thm-halting-undecidable.md)
-- [Succinctly described 3SAT and decoupled 5SAT](part-03/def-succinct-3sat.md)
 
-## [Explicit succinct Cook–Levin to Effective unary prime-power…](part-04/README.md)
+## [The error of the Pauli basis… to Effective irreducibles of every…](part-04/README.md)
 
+- [The error of the Pauli basis test](part-04/lem-qld-error.md)
+- [Turing](part-04/thm-halting-undecidable.md)
+- [Succinctly described 3SAT and decoupled 5SAT](part-04/def-succinct-3sat.md)
 - [Explicit succinct Cook–Levin](part-04/thm-succinct-sat.md)
 - [Correctness of the Cook–Levin tableau](part-04/lem-correct-tableau.md)
 - [Self-dual and normal bases](part-04/def-self-dual-basis.md)
@@ -120,12 +120,12 @@ The anchored parallel repetition theorem of (BVY17), and the entropy and fidelit
 - [Effective closed Frobenius orbit polynomials](part-04/lem-binary-orbit-polynomial.md)
 - [Effective odd-prime nonresidues](part-04/lem-binary-odd-prime-nonresidue.md)
 - [Effective irreducibles of every power-of-two degree](part-04/lem-binary-power-two-irreducible.md)
-- [Effective irreducibles of every odd-prime-power degree](part-04/lem-binary-odd-prime-power-irreducible.md)
-- [Effective combination of coprime degrees](part-04/lem-binary-coprime-degree-combination.md)
-- [Effective unary prime-power decomposition](part-04/lem-binary-degree-decomposition.md)
 
-## [Uniform deterministic binary… to The perturbation split](part-05/README.md)
+## [Effective irreducibles of every… to The perturbation split](part-05/README.md)
 
+- [Effective irreducibles of every odd-prime-power degree](part-05/lem-binary-odd-prime-power-irreducible.md)
+- [Effective combination of coprime degrees](part-05/lem-binary-coprime-degree-combination.md)
+- [Effective unary prime-power decomposition](part-05/lem-binary-degree-decomposition.md)
 - [Uniform deterministic binary irreducible polynomials](part-05/lem-binary-uniform-irreducible.md)
 - [Effective polynomial-basis field arithmetic](part-05/lem-effective-binary-field-arithmetic.md)
 - [Effective inversion, Frobenius iteration and trace](part-05/lem-effective-field-inverse-trace.md)

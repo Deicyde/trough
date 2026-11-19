@@ -50,7 +50,7 @@ $$
 
 ## Lean
 
-Formalized as [`FmodG_rightLimitAt_zero`](https://thefundamentaltheor3m.github.io/Sphere-Packing-Lean/docs/find/#doc/FmodG_rightLimitAt_zero).
+Formalized as `FmodG_rightLimitAt_zero`.
 
 ## Sources
 

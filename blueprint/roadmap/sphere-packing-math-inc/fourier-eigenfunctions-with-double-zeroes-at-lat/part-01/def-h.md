@@ -17,7 +17,7 @@ $$
 
 ## Lean
 
-Formalized as [`h`](https://thefundamentaltheor3m.github.io/Sphere-Packing-Lean/docs/find/#doc/h).
+Formalized as `h`.
 
 ## Sources
 

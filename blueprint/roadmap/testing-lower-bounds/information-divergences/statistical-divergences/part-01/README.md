@@ -23,6 +23,9 @@ For probability measures, this theorem makes the statistical information an $f$-
 
 - [statInfo_eq_integral_abs](cor-statinfo-eq-integral-abs.md)
 - [statInfo_eq_sub_inf_event](lem-statinfo-eq-sub-inf-event.md)
+
+…
+
 - [deGrootInfo](def-degrootinfo.md)
 - [eGamma](def-egamma.md)
 
@@ -38,5 +41,8 @@ This is also equal to $2 I_{1/2}(\mu, \nu)$ and to $E_1(\mu, \nu)$.
 - [tv_nonneg](lem-tv-nonneg.md)
 - [tv_le](lem-tv-le.md)
 - [Data-processing inequality](thm-tv-data-proc.md)
+
+…
+
 - [Total variation distance of Mathlib](def-tvdist.md)
 - [tvDist_eq_integral_abs](lem-tvdist-eq-integral-abs.md)

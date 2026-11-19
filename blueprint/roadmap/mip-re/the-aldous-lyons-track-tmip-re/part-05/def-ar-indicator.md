@@ -13,7 +13,7 @@ The index space of the table is $[N] \times [N] \times [D]^3 \times [64]$, the f
 
 - [Purified, triangulated and decoupled systems](def-ar-linear.md)
 - [The canonical decider, as a program; II:1757–1787](../part-01/def-canonical-decider.md)
-- [Effective unary prime-power decomposition](../../background-results/part-04/lem-binary-degree-decomposition.md)
+- [Effective unary prime-power decomposition](../../background-results/part-05/lem-binary-degree-decomposition.md)
 - [Effective self-dualization of a supplied normal basis](../../background-results/part-05/lem-effective-normal-selfdualization.md)
 
 ## Lean

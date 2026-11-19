@@ -21,7 +21,7 @@ Trivially follows from that $\Lambda_8 \subseteq \mathbb{R}^8$ is the $\mathbb{Z
 
 ## Lean
 
-Formalized as [`E8Lattice`](https://thefundamentaltheor3m.github.io/Sphere-Packing-Lean/docs/find/#doc/E8Lattice).
+Formalized as `E8Lattice`.
 
 ## Sources
 

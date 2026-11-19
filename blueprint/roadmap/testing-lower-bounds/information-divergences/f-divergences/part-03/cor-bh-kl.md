@@ -8,7 +8,7 @@ proof: formalized
 
 # Bretagnolle-Huber inequality
 
-TODO: move this somewhere after the definition of $KL$.
+…
 
 For $\mu, \nu \in \mathcal P(\mathcal X)$,
 

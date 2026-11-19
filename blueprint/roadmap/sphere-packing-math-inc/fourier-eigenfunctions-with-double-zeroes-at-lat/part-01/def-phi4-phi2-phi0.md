@@ -21,7 +21,7 @@ $$
 
 ## Lean
 
-Formalized as [`φ₄'`](https://thefundamentaltheor3m.github.io/Sphere-Packing-Lean/docs/find/#doc/φ₄'), [`φ₂'`](https://thefundamentaltheor3m.github.io/Sphere-Packing-Lean/docs/find/#doc/φ₂'), [`φ₀`](https://thefundamentaltheor3m.github.io/Sphere-Packing-Lean/docs/find/#doc/φ₀).
+Formalized as `φ₄'`, `φ₂'`, `φ₀`.
 
 ## Sources
 

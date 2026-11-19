@@ -42,7 +42,7 @@ The proof is now quickly completed by the following three observations:
 Since the total number of lattice points in the rectangle is $\frac{p-1}{2} \cdot \frac{q-1}{2}$, we infer that $s + t$ and $\frac{p-1}{2} \cdot \frac{q-1}{2}$ have the same parity, and so
 
 $$
-(\frac{q}{p}) (\frac{p}{q}) = (-1)^{s+t} = (-1)^{\frac{p-1}{2} \frac{q-1}{2}}. \qedhere
+(\frac{q}{p}) (\frac{p}{q}) = (-1)^{s+t} = (-1)^{\frac{p-1}{2} \frac{q-1}{2}}.
 $$
 
 ## Lean

@@ -19,7 +19,7 @@ Its statement uses no other node of the blueprint.
 
 ## Lean
 
-Formalized as [`CongruenceSubgroup.Gamma`](https://thefundamentaltheor3m.github.io/Sphere-Packing-Lean/docs/find/#doc/CongruenceSubgroup.Gamma).
+Formalized as `CongruenceSubgroup.Gamma`.
 
 ## Sources
 

@@ -32,4 +32,4 @@ navigation: transparent
 
 - [Tailored game descriptions, standalone; II:1243, II:1279](def-tailored-game-data.md)
 - [The tailored halting reduction, as a proposition](def-tailored-halting-reduction.md)
-- [$\mathrm{TMIP}^* = \mathrm{RE}$; II:1505, Theorem 7.4 of (BCLV24)](thm-tmip-re.md)
+- [$\mathrm{TMIP}^* = \mathrm{RE}$; II:1505, Theorem 7.4 of (37)](thm-tmip-re.md)

@@ -37,7 +37,7 @@ In this section $d_f(p, q)$ denotes the $f$-divergence between two Bernoulli dis
 
 ## Variational representations
 
-TODO
+…
 
 ## Comparisons between divergences
 
@@ -54,7 +54,7 @@ Bretagnolle-Huber inequalities
 
 Joint range
 
-TODO (Harremoës and Vajda 2011)
+…
 
 ## Statistical divergences
 

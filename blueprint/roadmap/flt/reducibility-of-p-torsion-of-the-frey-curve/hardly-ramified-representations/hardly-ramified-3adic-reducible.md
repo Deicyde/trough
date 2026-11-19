@@ -14,10 +14,6 @@ Suppose $L/\mathbb{Q}_3$ is a finite extension, with integer ring $\mathcal{O}_L
 - [hardly_ramified](hardly-ramified.md)
 - [hardly_ramified_mod3_reducible](hardly-ramified-mod3-reducible.md)
 
-## Proof
-
-Omitted for now **TODO**
-
 ## Lean
 
 Stated as [`GaloisRepresentation.IsHardlyRamified.three_adic`](https://ImperialCollegeLondon.github.io/FLT/docs/find/#doc/GaloisRepresentation.IsHardlyRamified.three_adic); the blueprint marks no proof of it as formalized.

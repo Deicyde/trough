@@ -31,8 +31,6 @@ $$
 
 Where we prove the final term is convergent by noticing that it equals $\exp(-\pi A / 4)\theta(iA / 2, iA)$, which has been shown to converge in `Mathlib`. The proofs for $H_3$ and $H_4$ are similar (actually easier) and have been omitted.
 
-**It seems the `MDifferentiable` requirement is missing.**
-
 ## Lean
 
 Formalized as [`isBoundedAtImInfty_H_slash`](https://thefundamentaltheor3m.github.io/Sphere-Packing-Lean/docs/find/#doc/isBoundedAtImInfty_H_slash).

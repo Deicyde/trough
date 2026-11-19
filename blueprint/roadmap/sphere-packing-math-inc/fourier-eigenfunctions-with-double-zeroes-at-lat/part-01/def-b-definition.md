@@ -33,7 +33,7 @@ Here all the contours are straight line segments. Then we define $b : \mathbb{R}
 
 ## Lean
 
-Formalized as [`MagicFunction.b.RealIntegrals.b'`](https://thefundamentaltheor3m.github.io/Sphere-Packing-Lean/docs/find/#doc/MagicFunction.b.RealIntegrals.b'), [`MagicFunction.b.RadialFunctions.b`](https://thefundamentaltheor3m.github.io/Sphere-Packing-Lean/docs/find/#doc/MagicFunction.b.RadialFunctions.b).
+Formalized as `MagicFunction.b.RealIntegrals.b'`, `MagicFunction.b.RadialFunctions.b`.
 
 ## Sources
 

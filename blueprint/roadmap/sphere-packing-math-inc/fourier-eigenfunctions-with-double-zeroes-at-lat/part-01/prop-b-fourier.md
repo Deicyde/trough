@@ -70,7 +70,7 @@ $$
 
 ## Lean
 
-Formalized as [`MagicFunction.b.Fourier.eig_b`](https://thefundamentaltheor3m.github.io/Sphere-Packing-Lean/docs/find/#doc/MagicFunction.b.Fourier.eig_b).
+Formalized as `MagicFunction.b.Fourier.eig_b`.
 
 ## Sources
 

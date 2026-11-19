@@ -72,7 +72,7 @@ Polynomial Commitments. When this protocol is compiled to an interactive proof (
 
 ### Generalizations Not Covered
 
-The formalized sum-check does not cover the following generalizations; `ROADMAP.md` tracks planned protocol work.
+…
 
 - **Variable Degree Bounds:** Generalize to $d : \{0, 1, \ldots, n-1\} \to \mathbb{N}$ and $\mathcal{D} : \{0, 1, \ldots, n-1\} \to (\{0, 1, \ldots, m-1\} \hookrightarrow R)$, allowing different degree bounds and summation domains for each variable.
 - **Restricted Challenge Domains:** Generalize the challenges to come from suitable subsets of $R$ (e.g., subtractive sets), rather than the entire domain. This modification is used in lattice-based protocols.

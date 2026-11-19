@@ -25,9 +25,11 @@ Upper and lower bounds on $D_f$
 - [Superseded by Lemma le_fDiv](lem-le-fdiv-of-ac.md)
 - [le_fDiv](lem-le-fdiv.md)
 
+…
+
 ## Conditional f-divergence
 
-TODO: replace the definition by $D(\mu \otimes \kappa, \mu \otimes \eta)$, which allows for a more general proof of the “conditioning increases divergence” inequality.
+…
 
 - [Conditional f-divergence](def-condfdiv.md)
 - [condFDiv_const](lem-condfdiv-const.md)

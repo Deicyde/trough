@@ -17,7 +17,7 @@ The function $r\mapsto a(r)$ analytically continues to a holomorphic function on
 
 ## Lean
 
-Formalized as [`SpherePacking.Dim24.eig_a`](https://thefundamentaltheor3m.github.io/Sphere-Packing-Lean/docs/find/#doc/SpherePacking.Dim24.eig_a).
+Formalized as `SpherePacking.Dim24.eig_a`.
 
 ## Sources
 

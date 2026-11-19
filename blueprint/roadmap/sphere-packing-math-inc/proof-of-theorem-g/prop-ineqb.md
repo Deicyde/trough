@@ -30,7 +30,7 @@ for all $t > 0$.
 
 ## Lean
 
-Formalized as [`MagicFunction.g.CohnElkies.B_pos`](https://thefundamentaltheor3m.github.io/Sphere-Packing-Lean/docs/find/#doc/MagicFunction.g.CohnElkies.B_pos).
+Formalized as `MagicFunction.g.CohnElkies.B_pos`.
 
 ## Sources
 

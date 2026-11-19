@@ -18,7 +18,7 @@ Given a tailored gap compression, $\mathrm{TMIP}^* = \mathrm{RE}$ for the class 
 - [Extending a tailored game along its questions](lem-tailored-extend.md)
 - [The class verifiers' sampler](../../structure-of-the-proof/part-09/lem-class-sampler.md)
 - [Halting from tailored compression; II:1887–2066](thm-tailored-halting.md)
-- [Turing](../../background-results/part-03/thm-halting-undecidable.md)
+- [Turing](../../background-results/part-04/thm-halting-undecidable.md)
 
 ## Proof
 

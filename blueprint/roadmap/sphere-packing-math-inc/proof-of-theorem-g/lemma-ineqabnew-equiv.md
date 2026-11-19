@@ -42,7 +42,7 @@ for $t > 0$, which is equivalent to (9) by Corollary [disc-pos](../modular-forms
 
 ## Lean
 
-Formalized as [`MagicFunction.g.CohnElkies.A`](https://thefundamentaltheor3m.github.io/Sphere-Packing-Lean/docs/find/#doc/MagicFunction.g.CohnElkies.A), [`MagicFunction.g.CohnElkies.B`](https://thefundamentaltheor3m.github.io/Sphere-Packing-Lean/docs/find/#doc/MagicFunction.g.CohnElkies.B).
+Formalized as `MagicFunction.g.CohnElkies.A`, `MagicFunction.g.CohnElkies.B`.
 
 ## Sources
 

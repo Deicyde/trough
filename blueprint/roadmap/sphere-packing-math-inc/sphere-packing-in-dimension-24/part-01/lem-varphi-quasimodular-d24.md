@@ -23,7 +23,7 @@ $$
 
 ## Lean
 
-Formalized as [`SpherePacking.Dim24.varphi_S_transform`](https://thefundamentaltheor3m.github.io/Sphere-Packing-Lean/docs/find/#doc/SpherePacking.Dim24.varphi_S_transform).
+Formalized as `SpherePacking.Dim24.varphi_S_transform`.
 
 ## Sources
 

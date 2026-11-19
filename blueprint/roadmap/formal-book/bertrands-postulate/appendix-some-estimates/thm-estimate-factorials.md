@@ -46,7 +46,7 @@ $$
 and at the same time an upper estimate
 
 $$
-n! = n(n-1)! < n e^{n\log n - n + 1} = en\left(\frac{n}{e}\right)^n. \qedhere
+n! = n(n-1)! < n e^{n\log n - n + 1} = en\left(\frac{n}{e}\right)^n.
 $$
 
 ## Lean

@@ -12,8 +12,8 @@ A fixed polynomial-time program takes unary $q$ and unary $r$. If $q$ is an odd 
 
 ## Depends on
 
-- [Effective odd-prime nonresidues](lem-binary-odd-prime-nonresidue.md)
-- [Effective closed Frobenius orbit polynomials](lem-binary-orbit-polynomial.md)
+- [Effective odd-prime nonresidues](../part-04/lem-binary-odd-prime-nonresidue.md)
+- [Effective closed Frobenius orbit polynomials](../part-04/lem-binary-orbit-polynomial.md)
 
 ## Proof
 

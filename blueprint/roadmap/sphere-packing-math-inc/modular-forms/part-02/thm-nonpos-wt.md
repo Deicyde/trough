@@ -20,7 +20,7 @@ The proof makes use of the maximum modulus principle, as its already been formal
 
 ## Lean
 
-Formalized as [`ModularForm`](https://thefundamentaltheor3m.github.io/Sphere-Packing-Lean/docs/find/#doc/ModularForm).
+Formalized as `ModularForm`.
 
 ## Sources
 

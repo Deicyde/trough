@@ -23,7 +23,7 @@ $$
 
 ## Proof
 
-This is the main theorem of Chapter 6 of (OpenAI26), whose Lean proof is vendored at `MIPRE/Background/Repetition/TenProofs/`. Its entangled value is defined with a density matrix on the product of two finite sets and POVMs; Lemma [Mixed states and POVMs do not change the quantum value](lem-povm-value-eq.md) identifies it with $\mathrm{val}^*$ (Definition [Quantum value](../foundations/part-01/def-q-value.md)), after which the two direct repetitions are literally the same construction.
+This is the main theorem of Chapter 6 of (31), whose Lean proof is vendored at `MIPRE/Background/Repetition/TenProofs/`. Its entangled value is defined with a density matrix on the product of two finite sets and POVMs; Lemma [Mixed states and POVMs do not change the quantum value](lem-povm-value-eq.md) identifies it with $\mathrm{val}^*$ (Definition [Quantum value](../foundations/part-01/def-q-value.md)), after which the two direct repetitions are literally the same construction.
 
 ## Lean
 

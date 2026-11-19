@@ -10,7 +10,7 @@ navigation: transparent
 
 ## Gaussian measures on a Banach space
 
-That kind of generality is not needed for this project, but we happen to have results about Gaussian measures on a Banach space in Mathlib, so we will use them. The main reference for this section is (hairer2009introduction).
+That kind of generality is not needed for this project, but we happen to have results about Gaussian measures on a Banach space in Mathlib, so we will use them. The main reference for this section is (Hairer 2009).
 
 Let $F$ be a separable Banach space.
 

@@ -19,7 +19,7 @@ $$
 
 ## Lean
 
-Formalized as [`H₂`](https://thefundamentaltheor3m.github.io/Sphere-Packing-Lean/docs/find/#doc/H₂), [`H₃`](https://thefundamentaltheor3m.github.io/Sphere-Packing-Lean/docs/find/#doc/H₃), [`H₄`](https://thefundamentaltheor3m.github.io/Sphere-Packing-Lean/docs/find/#doc/H₄).
+Formalized as `H₂`, `H₃`, `H₄`.
 
 ## Sources
 

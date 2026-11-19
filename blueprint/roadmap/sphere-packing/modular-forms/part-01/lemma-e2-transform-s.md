@@ -20,7 +20,7 @@ $$
 
 ## Proof
 
-This is exercise 1.2.8 of (first course).
+This is exercise 1.2.8 of (3).
 
 ## Lean
 

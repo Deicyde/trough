@@ -16,11 +16,11 @@ We have $\Gamma(2) = \langle \alpha, \beta, -I \rangle$.
 
 ## Proof
 
-See (first course, Exercise 1.2.4).
+See (3, Exercise 1.2.4).
 
 ## Lean
 
-Formalized as [`Γ2_generate`](https://thefundamentaltheor3m.github.io/Sphere-Packing-Lean/docs/find/#doc/Γ2_generate).
+Formalized as `Γ2_generate`.
 
 ## Sources
 

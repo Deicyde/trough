@@ -13,10 +13,6 @@ If $\ell\geq3$ is prime and $\overline{\rho}:\operatorname{Gal}(\overline{\mathb
 
 - [hardly_ramified](hardly-ramified.md)
 
-## Proof
-
-Omitted for now **TODO**
-
 ## Lean
 
 Stated as [`GaloisRepresentation.IsHardlyRamified.lifts`](https://ImperialCollegeLondon.github.io/FLT/docs/find/#doc/GaloisRepresentation.IsHardlyRamified.lifts); the blueprint marks no proof of it as formalized.

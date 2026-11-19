@@ -76,7 +76,7 @@ and taking 4th power.
 
 ## Lean
 
-Formalized as [`H₂_T_action`](https://thefundamentaltheor3m.github.io/Sphere-Packing-Lean/docs/find/#doc/H₂_T_action), [`H₃_T_action`](https://thefundamentaltheor3m.github.io/Sphere-Packing-Lean/docs/find/#doc/H₃_T_action), [`H₄_T_action`](https://thefundamentaltheor3m.github.io/Sphere-Packing-Lean/docs/find/#doc/H₄_T_action), [`H₂_S_action`](https://thefundamentaltheor3m.github.io/Sphere-Packing-Lean/docs/find/#doc/H₂_S_action), [`H₃_S_action`](https://thefundamentaltheor3m.github.io/Sphere-Packing-Lean/docs/find/#doc/H₃_S_action), [`H₄_S_action`](https://thefundamentaltheor3m.github.io/Sphere-Packing-Lean/docs/find/#doc/H₄_S_action).
+Formalized as `H₂_T_action`, `H₃_T_action`, `H₄_T_action`, `H₂_S_action`, `H₃_S_action`, `H₄_S_action`.
 
 ## Sources
 

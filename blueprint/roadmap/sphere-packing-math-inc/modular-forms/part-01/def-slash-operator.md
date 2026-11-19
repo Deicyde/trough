@@ -20,7 +20,7 @@ $$
 
 ## Lean
 
-Formalized as [`ModularForm.SL_slash_apply`](https://thefundamentaltheor3m.github.io/Sphere-Packing-Lean/docs/find/#doc/ModularForm.SL_slash_apply).
+Formalized as `ModularForm.SL_slash_apply`.
 
 ## Sources
 

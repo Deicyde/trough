@@ -21,7 +21,7 @@ We do not elaborate here as the result already exists in Mathlib. We do, however
 
 ## Lean
 
-Formalized as [`SchwartzMap.fourierTransformCLM`](https://thefundamentaltheor3m.github.io/Sphere-Packing-Lean/docs/find/#doc/SchwartzMap.fourierTransformCLM).
+Formalized as `SchwartzMap.fourierTransformCLM`.
 
 ## Sources
 

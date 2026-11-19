@@ -9,7 +9,7 @@ navigation: transparent
 - [RectangleIntegral-tendsTo-UpperU](rectangleintegral-tendsto-upperu.md)
 - [RectangleIntegral-tendsTo-LowerU](rectangleintegral-tendsto-loweru.md)
 
-TODO : Move to general section
+…
 
 - [limitOfConstant](limitofconstant.md)
 - [limitOfConstantLeft](limitofconstantleft.md)
@@ -27,7 +27,7 @@ We are ready for the first case of the Perron formula, namely when $x<1$:
 
 - [formulaLtOne](formulaltone.md)
 
-The second case is when $x>1$. Here are some auxiliary lemmata for the second case. TODO: Move to more general section
+The second case is when $x>1$. Here are some auxiliary lemmata for the second case. …
 
 - [keyIdentity](keyidentity.md)
 - [diffBddAtZero](diffbddatzero.md)

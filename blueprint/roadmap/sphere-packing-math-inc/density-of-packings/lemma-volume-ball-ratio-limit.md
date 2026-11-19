@@ -24,7 +24,7 @@ Write out the formula for volume of a ball and simplify. More specifically, we h
 
 ## Lean
 
-Formalized as [`volume_ball_ratio_tendsto_nhds_one''`](https://thefundamentaltheor3m.github.io/Sphere-Packing-Lean/docs/find/#doc/volume_ball_ratio_tendsto_nhds_one'').
+Formalized as `volume_ball_ratio_tendsto_nhds_one''`.
 
 ## Sources
 

@@ -14,7 +14,7 @@ A key fact in the theory of modular forms is that the spaces $M_k(\Gamma)$ are f
 - [lvl1_dims](thm-lvl1-dims.md)
 - [dim-mf-general-level](thm-dim-mf-general-level.md)
 
-Another examples of modular forms we would like to consider are *theta functions* (1-2-3, Section 3.1).
+Another examples of modular forms we would like to consider are *theta functions* (12, Section 3.1).
 
 - [th00-th01-th10](def-th00-th01-th10.md)
 
@@ -79,4 +79,4 @@ Similar argument allow us to compute (Serre) derivatives of $H_2, H_3, H_4$.
 
 - [serre-der-prod-rule](thm-serre-der-prod-rule.md)
 
-We also have the following useful theorem for proving positivity of quasimodular forms on the imaginary axis, which is (Lee, Proposition 3.5, Corollary 3.6).
+We also have the following useful theorem for proving positivity of quasimodular forms on the imaginary axis, which is (6, Proposition 3.5, Corollary 3.6).

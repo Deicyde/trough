@@ -36,7 +36,7 @@ where the second equality is the result of a similar change of variables to the 
 
 ## Lean
 
-Formalized as [`SpherePacking.scale_density`](https://thefundamentaltheor3m.github.io/Sphere-Packing-Lean/docs/find/#doc/SpherePacking.scale_density).
+Formalized as `SpherePacking.scale_density`.
 
 ## Sources
 
