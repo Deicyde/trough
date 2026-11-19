@@ -3,7 +3,7 @@
   "theorems": 5038,
   "statement_edges": 67,
   "requested": 2721,
-  "proof_edges": 35,
+  "proof_edges": 31,
   "private": 67,
   "modules": 187,
   "missing": 1},
@@ -154,8 +154,7 @@
   "Batteries.Data.Vector.Monadic": {"statement": [], "proof": []},
   "Batteries.Data.Vector.Lemmas":
   {"statement": ["Batteries.Data.Array.Basic", "Batteries.Data.Vector.Basic"],
-   "proof":
-   ["Batteries.Data.Array.Lemmas", "Batteries.Data.Array.Scan", "Batteries.Data.List.Lemmas"]},
+   "proof": ["Batteries.Data.Array.Lemmas", "Batteries.Data.Array.Scan"]},
   "Batteries.Data.Vector.Basic": {"statement": [], "proof": ["Batteries.Data.UInt"]},
   "Batteries.Data.Vector": {"statement": [], "proof": []},
   "Batteries.Data.UnionFind.Lemmas": {"statement": ["Batteries.Data.UnionFind.Basic"], "proof": []},
@@ -211,7 +210,7 @@
   "Batteries.Data.List.Lemmas":
   {"statement": ["Batteries.Control.ForInStep.Basic", "Batteries.Data.List.Basic"],
    "proof": ["Batteries.Control.ForInStep.Lemmas"]},
-  "Batteries.Data.List.Interleave": {"statement": [], "proof": ["Batteries.Data.BinaryHeap.WF"]},
+  "Batteries.Data.List.Interleave": {"statement": [], "proof": []},
   "Batteries.Data.List.Init.Lemmas": {"statement": [], "proof": []},
   "Batteries.Data.List.Count":
   {"statement": ["Batteries.Data.List.Basic"], "proof": ["Batteries.Data.List.Lemmas"]},
@@ -252,7 +251,7 @@
     "Batteries.Data.Fin.OfBits",
     "Batteries.Data.Int",
     "Batteries.Data.Nat.Basic"],
-   "proof": ["Batteries.Data.BinaryHeap.WF", "Batteries.Data.Nat.Lemmas"]},
+   "proof": ["Batteries.Data.Nat.Lemmas"]},
   "Batteries.Data.BitVec.Basic": {"statement": [], "proof": []},
   "Batteries.Data.BitVec": {"statement": [], "proof": []},
   "Batteries.Data.BinomialHeap.Lemmas":
@@ -260,8 +259,7 @@
   "Batteries.Data.BinomialHeap.Basic":
   {"statement": ["Batteries.Control.ForInStep.Basic"], "proof": ["Batteries.Classes.Order"]},
   "Batteries.Data.BinomialHeap": {"statement": [], "proof": []},
-  "Batteries.Data.BinaryHeap.WF":
-  {"statement": ["Batteries.Data.BinaryHeap.Basic"], "proof": ["Batteries.Data.List.Lemmas"]},
+  "Batteries.Data.BinaryHeap.WF": {"statement": ["Batteries.Data.BinaryHeap.Basic"], "proof": []},
   "Batteries.Data.BinaryHeap.Lemmas":
   {"statement": ["Batteries.Data.BinaryHeap.Basic", "Batteries.Data.BinaryHeap.WF"],
    "proof":
