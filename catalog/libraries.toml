@@ -248,6 +248,22 @@ lean_files = 250
 map_status = "live"
 map_unit = "module"
 map_plan = "One article per module under Aesop/ that declares something public by name, titled by its module docstring or its file name, in a part per folder and a page per folder below: the module's authors, its docstrings and a block per public declaration with its docstring and Lean statement, read from the source without Lean; a Lean run over the built library gives the edges between modules and decides which declarations are public. A module that declares nothing public by name is listed on its folder's page, and one that does not build on the front page."
+
+[[library]]
+id = "comppoly"
+name = "CompPoly"
+repo = "Verified-zkEVM/CompPoly"
+group = "library"
+what = "A formally verified library of computable polynomial operations over finite fields and general rings: univariate, multivariate, multilinear and bivariate polynomials, with ring equivalences to Mathlib's, finite fields, linear algebra and data structures, in folders under CompPoly/. Built on Mathlib."
+informal_layer = "Module docstrings on most modules, docstrings on many definitions, and a README in four of its folders. No blueprint."
+formalization_yaml = "absent"
+license = "Apache-2.0"
+toolchain = "v4.36.0"
+mathlib = "fc4f59e577fe"
+lean_files = 560
+map_status = "live"
+map_unit = "module"
+map_plan = "One article per module under CompPoly/ that declares something public by name, titled by its module docstring or its file name, in a part per folder and a page per folder below: the module's authors, its docstrings and a block per public declaration with its docstring and Lean statement, read from the source without Lean; a Lean run over the built library gives the edges between modules and decides which declarations are public. A module that declares nothing public by name is listed on its folder's page, and one that does not build on the front page."
 [[library]]
 id = "foundation"
 name = "Foundation"
