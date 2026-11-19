@@ -1,0 +1,25 @@
+{
+ "schema": "trough-ledger/v1",
+ "library": "Aesop",
+ "repo": "leanprover-community/aesop",
+ "rev": "637fdbb8689a3387a82568b07355231f892144d7",
+ "module": "Aesop.Tree.RunMetaM",
+ "file": "Aesop/Tree/RunMetaM.lean",
+ "public": [
+  {"name": "Aesop.Rapp.runMetaM'", "kind": "def", "line": 47},
+  {"name": "Aesop.Rapp.runMetaM", "kind": "def", "line": 50},
+  {"name": "Aesop.Rapp.runMetaMModifying", "kind": "def", "line": 53},
+  {"name": "Aesop.RappRef.runMetaMModifying", "kind": "def", "line": 57},
+  {"name": "Aesop.Goal.runMetaMInPostNormState'", "kind": "def", "line": 62},
+  {"name": "Aesop.Goal.runMetaMInPostNormState", "kind": "def", "line": 68},
+  {"name": "Aesop.Goal.runMetaMInParentState'", "kind": "def", "line": 72},
+  {"name": "Aesop.Goal.runMetaMInParentState", "kind": "def", "line": 82},
+  {"name": "Aesop.Goal.runMetaMModifyingParentState", "kind": "def", "line": 85},
+  {"name": "Aesop.Rapp.runMetaMInParentState", "kind": "def", "line": 90},
+  {"name": "Aesop.Rapp.runMetaMInParentState'", "kind": "def", "line": 94},
+  {"name": "Aesop.Rapp.runMetaMModifyingParentState", "kind": "def", "line": 97}
+ ],
+ "private": [],
+ "missing": [],
+ "unread": "Unnamed instances, the names an `alias ⟨…⟩` command gives, and the names Lean generates for a declaration (constructors, recursors, derived instances) are not read from the source, so they are not listed."
+}

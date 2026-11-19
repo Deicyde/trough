@@ -1,0 +1,27 @@
+{
+ "schema": "trough-ledger/v1",
+ "library": "Aesop",
+ "repo": "leanprover-community/aesop",
+ "rev": "637fdbb8689a3387a82568b07355231f892144d7",
+ "module": "Aesop.Index.RulePattern",
+ "file": "Aesop/Index/RulePattern.lean",
+ "public": [
+  {"name": "Aesop.RulePatternSubstMap", "kind": "abbrev", "line": 22},
+  {"name": "Aesop.RulePatternSubstMap.insertArray", "kind": "def", "line": 28},
+  {"name": "Aesop.RulePatternSubstMap.ofArray", "kind": "def", "line": 36},
+  {"name": "Aesop.RulePatternSubstMap.toFlatArray", "kind": "def", "line": 40},
+  {"name": "Aesop.RulePatternIndex.Entry", "kind": "structure", "line": 49},
+  {"name": "Aesop.RulePatternIndex", "kind": "structure", "line": 63},
+  {"name": "Aesop.RulePatternIndex.add", "kind": "def", "line": 76},
+  {"name": "Aesop.RulePatternIndex.merge", "kind": "def", "line": 82},
+  {"name": "Aesop.RulePatternIndex.getSingle", "kind": "def", "line": 93},
+  {"name": "Aesop.RulePatternIndex.getCore", "kind": "def", "line": 106},
+  {"name": "Aesop.RulePatternIndex.get", "kind": "def", "line": 128},
+  {"name": "Aesop.RulePatternIndex.getInLocalDeclCore", "kind": "def", "line": 134},
+  {"name": "Aesop.RulePatternIndex.getInLocalDecl", "kind": "def", "line": 146},
+  {"name": "Aesop.RulePatternIndex.getInGoal", "kind": "def", "line": 153}
+ ],
+ "private": [],
+ "missing": [],
+ "unread": "Unnamed instances, the names an `alias ⟨…⟩` command gives, and the names Lean generates for a declaration (constructors, recursors, derived instances) are not read from the source, so they are not listed."
+}

@@ -1,0 +1,19 @@
+{
+ "schema": "trough-ledger/v1",
+ "library": "Aesop",
+ "repo": "leanprover-community/aesop",
+ "rev": "637fdbb8689a3387a82568b07355231f892144d7",
+ "module": "Aesop.Index.Basic",
+ "file": "Aesop/Index/Basic.lean",
+ "public": [
+  {"name": "Aesop.IndexingMode", "kind": "inductive", "line": 16},
+  {"name": "Aesop.IndexingMode.format", "kind": "def", "line": 25},
+  {"name": "Aesop.IndexingMode.targetMatchingConclusion", "kind": "def", "line": 34},
+  {"name": "Aesop.IndexingMode.hypsMatchingConst", "kind": "def", "line": 38},
+  {"name": "Aesop.IndexMatchLocation", "kind": "inductive", "line": 51},
+  {"name": "Aesop.IndexMatchResult", "kind": "structure", "line": 98}
+ ],
+ "private": [],
+ "missing": [],
+ "unread": "Unnamed instances, the names an `alias ⟨…⟩` command gives, and the names Lean generates for a declaration (constructors, recursors, derived instances) are not read from the source, so they are not listed."
+}

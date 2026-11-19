@@ -1,0 +1,24 @@
+{
+ "schema": "trough-ledger/v1",
+ "library": "Aesop",
+ "repo": "leanprover-community/aesop",
+ "rev": "637fdbb8689a3387a82568b07355231f892144d7",
+ "module": "Aesop.RuleSet.Filter",
+ "file": "Aesop/RuleSet/Filter.lean",
+ "public": [
+  {"name": "Aesop.RuleFilter", "kind": "structure", "line": 17},
+  {"name": "Aesop.RuleFilter.matchesPhase", "kind": "def", "line": 31},
+  {"name": "Aesop.RuleFilter.matchesBuilder", "kind": "def", "line": 34},
+  {"name": "Aesop.RuleFilter.«matches»", "kind": "def", "line": 37},
+  {"name": "Aesop.RuleFilter.matchesSimpTheorem?", "kind": "def", "line": 43},
+  {"name": "Aesop.RuleFilter.matchesLocalNormSimpRule?", "kind": "def", "line": 52},
+  {"name": "Aesop.RuleSetNameFilter", "kind": "structure", "line": 60},
+  {"name": "Aesop.RuleSetNameFilter.all", "kind": "def", "line": 65},
+  {"name": "Aesop.RuleSetNameFilter.matchesAll", "kind": "def", "line": 68},
+  {"name": "Aesop.RuleSetNameFilter.«matches»", "kind": "def", "line": 71},
+  {"name": "Aesop.RuleSetNameFilter.matchedRuleSetNames", "kind": "def", "line": 74}
+ ],
+ "private": [],
+ "missing": [],
+ "unread": "Unnamed instances, the names an `alias ⟨…⟩` command gives, and the names Lean generates for a declaration (constructors, recursors, derived instances) are not read from the source, so they are not listed."
+}

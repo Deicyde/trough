@@ -1,8 +1,9 @@
 /-!
 # Module dependencies for trough's map of a Lean library
 
-Runs in a checkout of the library after `lake build`, below an import of every module the map reads, which the data
-workflow writes above it (for Batteries, `import Batteries`, whose root module imports every module). The roots,
+Runs in a checkout of the library after `lake build`, below an import of every module the map reads that the build
+compiled, which the data workflow writes above it (for Batteries, `import Batteries`, whose root module imports every
+module). It lists those modules under `built`, so the map can tell a module that did not build from one it read. The roots,
 the top components of the library's module names, are `$TROUGH_ROOTS`, separated by spaces. Writes `$TROUGH_OUT`:
 for each module under a root, the other modules under a root whose declarations its statements use, and those that
 only its proofs use.
@@ -126,6 +127,8 @@ def run : MetaM Unit := do
     ("rev", rev),
     ("lean_githash", Json.str Lean.githash),
     ("modules", Json.mkObj ((records.qsort (·.1 < ·.1)).toList)),
+    -- The workflow imports every module the library's build compiled, so these are the modules that built.
+    ("built", Json.arr ((records.map (·.1)).qsort (· < ·) |>.map Json.str)),
     ("private", Json.arr (privateOnly.toArray.map Json.str)),
     ("missing", Json.arr (missing.toArray.map Json.str)),
     ("stats", Json.mkObj [

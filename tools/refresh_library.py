@@ -3,7 +3,7 @@
 
     python tools/refresh_library.py LIBRARY CHECKOUT
 
-LIBRARY is the id of a library trough.library reads (batteries, cslib); CHECKOUT is a git checkout of its
+LIBRARY is the id of a library trough.library reads (aesop, batteries, cslib); CHECKOUT is a git checkout of its
 repository at the commit to pin. This writes data/LIBRARY/source.json, the commit, its date, toolchain and
 Mathlib, and library.json: each module's title, module docstring and later `/-!` notes as written, the authors its
 header names, and its declarations as trough.leansource reads them without Lean, each with its kind, line,
@@ -21,10 +21,10 @@ import argparse
 import sys
 from pathlib import Path
 
-from trough import batteries, cslib, library
+from trough import aesop, batteries, cslib, library
 
 ROOT = Path(__file__).resolve().parent.parent
-LIBRARIES = {value.id: value for value in (batteries.BATTERIES, cslib.CSLIB)}
+LIBRARIES = {value.id: value for value in (aesop.AESOP, batteries.BATTERIES, cslib.CSLIB)}
 
 
 def main() -> int:

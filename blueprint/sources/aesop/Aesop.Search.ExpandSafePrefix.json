@@ -1,0 +1,16 @@
+{
+ "schema": "trough-ledger/v1",
+ "library": "Aesop",
+ "repo": "leanprover-community/aesop",
+ "rev": "637fdbb8689a3387a82568b07355231f892144d7",
+ "module": "Aesop.Search.ExpandSafePrefix",
+ "file": "Aesop/Search/ExpandSafePrefix.lean",
+ "public": [
+  {"name": "Aesop.SafeExpansionM.State", "kind": "structure", "line": 21},
+  {"name": "Aesop.SafeExpansionM", "kind": "abbrev", "line": 24},
+  {"name": "Aesop.expandSafePrefix", "kind": "def", "line": 74}
+ ],
+ "private": [],
+ "missing": [],
+ "unread": "Unnamed instances, the names an `alias ⟨…⟩` command gives, and the names Lean generates for a declaration (constructors, recursors, derived instances) are not read from the source, so they are not listed."
+}

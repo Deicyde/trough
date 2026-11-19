@@ -26,7 +26,7 @@ from pathlib import Path
 
 from collections import Counter
 
-from trough import anthropic_flt, atlas, batteries, blueprints, catalog, cfsg, cslib, ff, formal_conjectures, lean_pool, links, mathlib, openai_math, physlib, satellites, stacks, tauceti, wiki
+from trough import aesop, anthropic_flt, atlas, batteries, blueprints, catalog, cfsg, cslib, ff, formal_conjectures, lean_pool, links, mathlib, openai_math, physlib, satellites, stacks, tauceti, wiki
 from trough.vault import Container, Leaf, assign_paths, render_container, render_tree, walk
 
 ROOT = Path(__file__).resolve().parent.parent
@@ -300,25 +300,36 @@ def generate() -> dict[Path, str]:
             f"{cs['statement_edges']} statement and {cs['proof_edges']} proof edges",
             file=sys.stderr,
         )
-    batteries_data = batteries.load(DATA)
-    if batteries_data:
-        batteries_built, batteries_links = batteries.chapter(batteries_data)
-        assign_paths(batteries_built.root, ROADMAP / "batteries")
-        blueprints.resolve(batteries_built, VAULT)
-        files.update(render_tree(batteries_built.root, VAULT))
-        files.update({VAULT / path: text for path, text in batteries_built.files.items()})
-        chapters["batteries"] = "batteries/README.md"
-        lean_links["batteries"] = batteries_links
-        hosts["batteries"] = batteries_built.root
-        bt = Counter(batteries_built.stats)
-        blueprint_rows.append(("Batteries", "INVENTORIED",
-                               f"[{bt['articles']:,} modules](../roadmap/batteries/README.md), one article each, with a "
-                               f"block per public declaration; {bt['listed']:,} modules that declare nothing public by "
-                               "name are listed on their folders' pages."))
+    # The libraries trough.library reads with their modules that declare nothing public listed: Batteries, Aesop.
+    readers = []
+    for reader in (batteries, aesop):
+        lib = reader.LIBRARY
+        reader_data = reader.load(DATA)
+        if not reader_data:
+            continue
+        reader_built, reader_links = reader.chapter(reader_data)
+        assign_paths(reader_built.root, ROADMAP / lib.id)
+        blueprints.resolve(reader_built, VAULT)
+        files.update(render_tree(reader_built.root, VAULT))
+        files.update({VAULT / path: text for path, text in reader_built.files.items()})
+        chapters[lib.id] = f"{lib.id}/README.md"
+        lean_links[lib.id] = reader_links
+        if lib.id == satellites.CORE_HOME:
+            hosts[lib.id] = reader_built.root
+        readers.append((lib.id, lib.name, lib.repo, reader_data["rev"], bool(reader_data.get("mathlib"))))
+        rs = Counter(reader_built.stats)
+        blueprint_rows.append((lib.name, "INVENTORIED",
+                               f"[{rs['articles']:,} modules](../roadmap/{lib.id}/README.md), one article each, with a "
+                               f"block per public declaration; {rs['listed']:,} modules that declare nothing public by "
+                               "name are listed on their folders' pages"
+                               + (f", and {rs['unbuilt']:,} that did not build on the front page" if rs["unbuilt"] else "")
+                               + "."))
         print(
-            f"batteries: {bt['articles']} module articles in {bt['folders']} folders and {bt['parts']} parts, "
-            f"{bt['listed']} modules listed; {bt['declarations']} public declarations, {bt['documented']} documented, "
-            f"{bt['sorry']} holding sorry; {bt['statement_edges']} statement and {bt['proof_edges']} proof edges",
+            f"{lib.id}: {rs['articles']} module articles in {rs['folders']} folders and {rs['parts']} parts, "
+            f"{rs['listed']} modules listed"
+            + (f", {rs['unbuilt']} unbuilt" if rs["unbuilt"] else "")
+            + f"; {rs['declarations']} public declarations, {rs['documented']} documented, "
+            f"{rs['sorry']} holding sorry; {rs['statement_edges']} statement and {rs['proof_edges']} proof edges",
             file=sys.stderr,
         )
     physlib_data = physlib.load(DATA)
@@ -425,7 +436,7 @@ def generate() -> dict[Path, str]:
         atlas=atlas_data["source"]["rev"] if atlas_data else None,
         openai_math=oai_data["source"]["rev"] if oai_data else None,
         cslib=cslib_data["rev"] if cslib_data else None,
-        batteries=batteries_data["rev"] if batteries_data else None,
+        readers=readers,
         physlib=physlib_data["source"]["rev"] if physlib_data else None,
         satellites=sat_stats["projects"] if sat_stats else None,
     )

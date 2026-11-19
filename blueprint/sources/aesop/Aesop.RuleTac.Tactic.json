@@ -1,0 +1,22 @@
+{
+ "schema": "trough-ledger/v1",
+ "library": "Aesop",
+ "repo": "leanprover-community/aesop",
+ "rev": "637fdbb8689a3387a82568b07355231f892144d7",
+ "module": "Aesop.RuleTac.Tactic",
+ "file": "Aesop/RuleTac/Tactic.lean",
+ "public": [
+  {"name": "Aesop.RuleTac.tacticMImpl", "kind": "def", "line": 18},
+  {"name": "Aesop.RuleTac.tacticM", "kind": "opaque", "line": 27},
+  {"name": "Aesop.RuleTac.ruleTacImpl", "kind": "def", "line": 30},
+  {"name": "Aesop.RuleTac.ruleTac", "kind": "opaque", "line": 36},
+  {"name": "Aesop.RuleTac.singleRuleTacImpl", "kind": "def", "line": 39},
+  {"name": "Aesop.RuleTac.singleRuleTac", "kind": "opaque", "line": 46},
+  {"name": "Aesop.RuleTac.tacticStx", "kind": "def", "line": 52},
+  {"name": "Aesop.RuleTac.tacGenImpl", "kind": "def", "line": 76},
+  {"name": "Aesop.RuleTac.tacGen", "kind": "opaque", "line": 118}
+ ],
+ "private": [],
+ "missing": [],
+ "unread": "Unnamed instances, the names an `alias ⟨…⟩` command gives, and the names Lean generates for a declaration (constructors, recursors, derived instances) are not read from the source, so they are not listed."
+}

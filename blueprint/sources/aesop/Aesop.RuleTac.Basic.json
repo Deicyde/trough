@@ -1,0 +1,28 @@
+{
+ "schema": "trough-ledger/v1",
+ "library": "Aesop",
+ "repo": "leanprover-community/aesop",
+ "rev": "637fdbb8689a3387a82568b07355231f892144d7",
+ "module": "Aesop.RuleTac.Basic",
+ "file": "Aesop/RuleTac/Basic.lean",
+ "public": [
+  {"name": "Aesop.RuleTacInput", "kind": "structure", "line": 25},
+  {"name": "Aesop.Subgoal", "kind": "structure", "line": 48},
+  {"name": "Aesop.Subgoal.mvarId", "kind": "def", "line": 60},
+  {"name": "Aesop.mvarIdToSubgoal", "kind": "def", "line": 65},
+  {"name": "Aesop.RuleApplication", "kind": "structure", "line": 81},
+  {"name": "Aesop.RuleApplication.check", "kind": "def", "line": 89},
+  {"name": "Aesop.RuleTacOutput", "kind": "structure", "line": 104},
+  {"name": "Aesop.RuleTac", "kind": "def", "line": 111},
+  {"name": "Aesop.SingleRuleTac", "kind": "def", "line": 119},
+  {"name": "Aesop.SingleRuleTac.toRuleTac", "kind": "def", "line": 124},
+  {"name": "Aesop.RuleTac.ofSingleRuleTac", "kind": "def", "line": 130},
+  {"name": "Aesop.RuleTac.ofTacticSyntax", "kind": "def", "line": 132},
+  {"name": "Aesop.TacGen", "kind": "abbrev", "line": 157},
+  {"name": "Aesop.CasesPattern", "kind": "def", "line": 161},
+  {"name": "Aesop.CasesTarget", "kind": "inductive", "line": 164}
+ ],
+ "private": [],
+ "missing": [],
+ "unread": "Unnamed instances, the names an `alias ⟨…⟩` command gives, and the names Lean generates for a declaration (constructors, recursors, derived instances) are not read from the source, so they are not listed."
+}

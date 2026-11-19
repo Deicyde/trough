@@ -1,0 +1,22 @@
+{
+ "schema": "trough-ledger/v1",
+ "library": "Aesop",
+ "repo": "leanprover-community/aesop",
+ "rev": "637fdbb8689a3387a82568b07355231f892144d7",
+ "module": "Aesop.Builder.Cases",
+ "file": "Aesop/Builder/Cases.lean",
+ "public": [
+  {"name": "Aesop.CasesPattern.check", "kind": "def", "line": 21},
+  {"name": "Aesop.CasesPattern.toIndexingMode", "kind": "def", "line": 27},
+  {"name": "Aesop.RuleBuilderOptions.casesTransparency", "kind": "def", "line": 35},
+  {"name": "Aesop.RuleBuilderOptions.casesIndexTransparency", "kind": "def", "line": 38},
+  {"name": "Aesop.RuleBuilderOptions.casesPatterns", "kind": "def", "line": 41},
+  {"name": "Aesop.RuleBuilder.mkCasesTarget", "kind": "def", "line": 48},
+  {"name": "Aesop.RuleBuilder.getCasesIndexingMode", "kind": "def", "line": 55},
+  {"name": "Aesop.RuleBuilder.casesCore", "kind": "def", "line": 66},
+  {"name": "Aesop.RuleBuilder.cases", "kind": "def", "line": 76}
+ ],
+ "private": [],
+ "missing": [],
+ "unread": "Unnamed instances, the names an `alias ⟨…⟩` command gives, and the names Lean generates for a declaration (constructors, recursors, derived instances) are not read from the source, so they are not listed."
+}

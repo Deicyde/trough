@@ -1,0 +1,22 @@
+{
+ "schema": "trough-ledger/v1",
+ "library": "Aesop",
+ "repo": "leanprover-community/aesop",
+ "rev": "637fdbb8689a3387a82568b07355231f892144d7",
+ "module": "Aesop.Util.UnionFind",
+ "file": "Aesop/Util/UnionFind.lean",
+ "public": [
+  {"name": "Aesop.UnionFind", "kind": "structure", "line": 14},
+  {"name": "Aesop.UnionFind.size", "kind": "def", "line": 28},
+  {"name": "Aesop.UnionFind.add", "kind": "def", "line": 31},
+  {"name": "Aesop.UnionFind.addArray", "kind": "def", "line": 39},
+  {"name": "Aesop.UnionFind.ofArray", "kind": "def", "line": 42},
+  {"name": "Aesop.UnionFind.find?", "kind": "def", "line": 57},
+  {"name": "Aesop.UnionFind.merge", "kind": "opaque", "line": 87},
+  {"name": "Aesop.UnionFind.sets", "kind": "def", "line": 89},
+  {"name": "Aesop.cluster", "kind": "def", "line": 105}
+ ],
+ "private": [],
+ "missing": [],
+ "unread": "Unnamed instances, the names an `alias ⟨…⟩` command gives, and the names Lean generates for a declaration (constructors, recursors, derived instances) are not read from the source, so they are not listed."
+}

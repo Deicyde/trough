@@ -1,0 +1,19 @@
+{
+ "schema": "trough-ledger/v1",
+ "library": "Aesop",
+ "repo": "leanprover-community/aesop",
+ "rev": "637fdbb8689a3387a82568b07355231f892144d7",
+ "module": "Aesop.RuleTac.Apply",
+ "file": "Aesop/RuleTac/Apply.lean",
+ "public": [
+  {"name": "Aesop.RuleTac.applyExpr'", "kind": "def", "line": 21},
+  {"name": "Aesop.RuleTac.applyExpr", "kind": "def", "line": 47},
+  {"name": "Aesop.RuleTac.applyConst", "kind": "def", "line": 68},
+  {"name": "Aesop.RuleTac.applyTerm", "kind": "def", "line": 73},
+  {"name": "Aesop.RuleTac.apply", "kind": "def", "line": 78},
+  {"name": "Aesop.RuleTac.applyConsts", "kind": "def", "line": 85}
+ ],
+ "private": [],
+ "missing": [],
+ "unread": "Unnamed instances, the names an `alias ⟨…⟩` command gives, and the names Lean generates for a declaration (constructors, recursors, derived instances) are not read from the source, so they are not listed."
+}

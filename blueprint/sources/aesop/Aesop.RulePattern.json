@@ -1,0 +1,18 @@
+{
+ "schema": "trough-ledger/v1",
+ "library": "Aesop",
+ "repo": "leanprover-community/aesop",
+ "rev": "637fdbb8689a3387a82568b07355231f892144d7",
+ "module": "Aesop.RulePattern",
+ "file": "Aesop/RulePattern.lean",
+ "public": [
+  {"name": "Aesop.RulePattern", "kind": "structure", "line": 31},
+  {"name": "Aesop.RulePattern.boundPremises", "kind": "def", "line": 56},
+  {"name": "Aesop.RulePattern.«open»", "kind": "def", "line": 64},
+  {"name": "Aesop.RulePattern.«match»", "kind": "def", "line": 72},
+  {"name": "Aesop.RulePattern.«elab»", "kind": "def", "line": 95}
+ ],
+ "private": [],
+ "missing": [],
+ "unread": "Unnamed instances, the names an `alias ⟨…⟩` command gives, and the names Lean generates for a declaration (constructors, recursors, derived instances) are not read from the source, so they are not listed."
+}

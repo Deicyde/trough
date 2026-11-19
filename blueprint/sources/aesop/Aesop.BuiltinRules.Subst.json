@@ -1,0 +1,19 @@
+{
+ "schema": "trough-ledger/v1",
+ "library": "Aesop",
+ "repo": "leanprover-community/aesop",
+ "rev": "637fdbb8689a3387a82568b07355231f892144d7",
+ "module": "Aesop.BuiltinRules.Subst",
+ "file": "Aesop/BuiltinRules/Subst.lean",
+ "public": [
+  {"name": "Aesop.BuiltinRules.matchSubstitutableIff?", "kind": "def", "line": 17},
+  {"name": "Aesop.BuiltinRules.prepareIff?", "kind": "def", "line": 25},
+  {"name": "Aesop.BuiltinRules.prepareIffs", "kind": "def", "line": 41},
+  {"name": "Aesop.BuiltinRules.substEqs?", "kind": "def", "line": 53},
+  {"name": "Aesop.BuiltinRules.substEqsAndIffs?", "kind": "def", "line": 76},
+  {"name": "Aesop.BuiltinRules.subst", "kind": "def", "line": 87}
+ ],
+ "private": [],
+ "missing": [],
+ "unread": "Unnamed instances, the names an `alias ⟨…⟩` command gives, and the names Lean generates for a declaration (constructors, recursors, derived instances) are not read from the source, so they are not listed."
+}
