@@ -40,4 +40,4 @@ TauCeti.globalDimension_eq_iSup_cyclic.{v, u} (R : Type u) [Ring R] [Small.{v, u
 ## Sources
 
 - [Tau Ceti documentation: `TauCeti.globalDimension_eq_projectiveDimension_quotient_jacobson`](https://taucetiproject.org/docs/TauCeti/RingTheory/GlobalDimension/Semiprimary.html#TauCeti.globalDimension_eq_projectiveDimension_quotient_jacobson)
-- [Source of `TauCeti.globalDimension_eq_projectiveDimension_quotient_jacobson` in TauCeti/RingTheory/GlobalDimension/Semiprimary.lean](https://github.com/TauCetiProject/TauCeti/blob/a6027b1d24fcb935c53bd5b50d11b40991cda418/TauCeti/RingTheory/GlobalDimension/Semiprimary.lean#L67)
+- [Source of `TauCeti.globalDimension_eq_projectiveDimension_quotient_jacobson` in TauCeti/RingTheory/GlobalDimension/Semiprimary.lean](https://github.com/TauCetiProject/TauCeti/blob/cd41bffcb343151b3e58c89392e206b11fe78c1c/TauCeti/RingTheory/GlobalDimension/Semiprimary.lean#L67)

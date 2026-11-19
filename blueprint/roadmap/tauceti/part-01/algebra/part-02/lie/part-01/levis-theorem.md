@@ -33,4 +33,4 @@ Formalized in Tau Ceti as [`TauCeti.exists_leviComplement`](https://taucetiproje
 ## Sources
 
 - [Tau Ceti documentation: `TauCeti.exists_leviComplement`](https://taucetiproject.org/docs/TauCeti/Algebra/Lie/LeviDecomposition/Solvable.html#TauCeti.exists_leviComplement)
-- [Source of `TauCeti.exists_leviComplement` in TauCeti/Algebra/Lie/LeviDecomposition/Solvable.lean](https://github.com/TauCetiProject/TauCeti/blob/a6027b1d24fcb935c53bd5b50d11b40991cda418/TauCeti/Algebra/Lie/LeviDecomposition/Solvable.lean#L139)
+- [Source of `TauCeti.exists_leviComplement` in TauCeti/Algebra/Lie/LeviDecomposition/Solvable.lean](https://github.com/TauCetiProject/TauCeti/blob/cd41bffcb343151b3e58c89392e206b11fe78c1c/TauCeti/Algebra/Lie/LeviDecomposition/Solvable.lean#L140)

@@ -36,4 +36,4 @@ Formalized in Tau Ceti as [`Isometry.ae_tendsto_euclideanHausdorffMeasure_inter_
 ## Sources
 
 - [Tau Ceti documentation: `Isometry.ae_tendsto_euclideanHausdorffMeasure_inter_closedBall_div`](https://taucetiproject.org/docs/TauCeti/Geometry/Euclidean/Volume/Density.html#Isometry.ae_tendsto_euclideanHausdorffMeasure_inter_closedBall_div)
-- [Source of `Isometry.ae_tendsto_euclideanHausdorffMeasure_inter_closedBall_div` in TauCeti/Geometry/Euclidean/Volume/Density.lean](https://github.com/TauCetiProject/TauCeti/blob/a6027b1d24fcb935c53bd5b50d11b40991cda418/TauCeti/Geometry/Euclidean/Volume/Density.lean#L201)
+- [Source of `Isometry.ae_tendsto_euclideanHausdorffMeasure_inter_closedBall_div` in TauCeti/Geometry/Euclidean/Volume/Density.lean](https://github.com/TauCetiProject/TauCeti/blob/cd41bffcb343151b3e58c89392e206b11fe78c1c/TauCeti/Geometry/Euclidean/Volume/Density.lean#L201)

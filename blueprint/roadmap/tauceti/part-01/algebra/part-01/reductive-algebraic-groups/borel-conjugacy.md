@@ -38,5 +38,5 @@ Formalized in Tau Ceti as [`TauCeti.HopfIdeal.IsBorelOverAlgClosed.exists_conjug
 ## Sources
 
 - [Tau Ceti documentation: `TauCeti.HopfIdeal.IsBorelOverAlgClosed.exists_conjugate_eq`](https://taucetiproject.org/docs/TauCeti/Algebra/AlgebraicGroup/Borel/Conjugacy/Existence.html#TauCeti.HopfIdeal.IsBorelOverAlgClosed.exists_conjugate_eq)
-- [Source of `TauCeti.HopfIdeal.IsBorelOverAlgClosed.exists_conjugate_eq` in TauCeti/Algebra/AlgebraicGroup/Borel/Conjugacy/Existence.lean](https://github.com/TauCetiProject/TauCeti/blob/a6027b1d24fcb935c53bd5b50d11b40991cda418/TauCeti/Algebra/AlgebraicGroup/Borel/Conjugacy/Existence.lean#L131)
-- [Tau Ceti roadmap status: Reductive algebraic groups](https://github.com/TauCetiProject/TauCetiRoadmap/blob/9f7c032adaf1b838e8183d63ff3cfa886d061cb3/TauCetiRoadmap/ReductiveGroups/STATUS.md)
+- [Source of `TauCeti.HopfIdeal.IsBorelOverAlgClosed.exists_conjugate_eq` in TauCeti/Algebra/AlgebraicGroup/Borel/Conjugacy/Existence.lean](https://github.com/TauCetiProject/TauCeti/blob/cd41bffcb343151b3e58c89392e206b11fe78c1c/TauCeti/Algebra/AlgebraicGroup/Borel/Conjugacy/Existence.lean#L131)
+- [Tau Ceti roadmap status: Reductive algebraic groups](https://github.com/TauCetiProject/TauCetiRoadmap/blob/612845ab80fb9c2b9bee724a156756ee78031591/TauCetiRoadmap/ReductiveGroups/STATUS.md)

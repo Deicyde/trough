@@ -48,4 +48,4 @@ TauCeti.GTPattern.card_topWeight_eq_weylDimension {n : ℕ} (l : TauCeti.Dominan
 ## Sources
 
 - [Tau Ceti documentation: `TauCeti.GTPattern.card_topRow_eq_weylDimension`](https://taucetiproject.org/docs/TauCeti/RepresentationTheory/ClassicalGroups/GelfandTsetlin/Dimension.html#TauCeti.GTPattern.card_topRow_eq_weylDimension)
-- [Source of `TauCeti.GTPattern.card_topRow_eq_weylDimension` in TauCeti/RepresentationTheory/ClassicalGroups/GelfandTsetlin/Dimension.lean](https://github.com/TauCetiProject/TauCeti/blob/a6027b1d24fcb935c53bd5b50d11b40991cda418/TauCeti/RepresentationTheory/ClassicalGroups/GelfandTsetlin/Dimension.lean#L171)
+- [Source of `TauCeti.GTPattern.card_topRow_eq_weylDimension` in TauCeti/RepresentationTheory/ClassicalGroups/GelfandTsetlin/Dimension.lean](https://github.com/TauCetiProject/TauCeti/blob/cd41bffcb343151b3e58c89392e206b11fe78c1c/TauCeti/RepresentationTheory/ClassicalGroups/GelfandTsetlin/Dimension.lean#L171)

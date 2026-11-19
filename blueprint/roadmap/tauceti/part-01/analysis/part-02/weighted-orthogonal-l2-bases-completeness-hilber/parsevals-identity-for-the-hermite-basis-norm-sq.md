@@ -26,7 +26,7 @@ Its statement uses no other declaration mapped here.
 - [The `Fintype`-indexed product Hilbert basis](the-fintype-indexed-product-hilbert-basis.md)
 - [The Chebyshev `T` polynomials are a Hilbert basis of `L²(measureT)`](the-chebyshev-t-polynomials-are-a-hilbert-basis.md)
 - [The Hermite functions are a Hilbert basis of `L²(ℝ)`](the-hermite-functions-are-a-hilbert-basis-of-l2.md)
-- [Moment determinacy, exponential-moment form (the roadmap's B1 hypothesis)](moment-determinacy-exponential-moment-form-the-r.md)
+- [Moment determinacy, exponential-moment form](moment-determinacy-exponential-moment-form.md)
 - [Parseval's identity for a functional](../../part-03/inner-product-space/part-02/parsevals-identity-for-a-functional.md)
 - [The weight ↔ measure isometry](the-weight-measure-isometry.md)
 - [The weighted-measure basis](the-weighted-measure-basis.md)
@@ -138,5 +138,5 @@ TauCeti.tsum_norm_sq_inner_L2piMul_hermiteFunctionLp.{u_1, u_2} {𝕜 : Type u_1
 ## Sources
 
 - [Tau Ceti documentation: `TauCeti.tsum_norm_sq_inner_hermiteFunctionLp`](https://taucetiproject.org/docs/TauCeti/Analysis/SpecialFunctions/Hermite/Function/Parseval.html#TauCeti.tsum_norm_sq_inner_hermiteFunctionLp)
-- [Source of `TauCeti.tsum_norm_sq_inner_hermiteFunctionLp` in TauCeti/Analysis/SpecialFunctions/Hermite/Function/Parseval.lean](https://github.com/TauCetiProject/TauCeti/blob/a6027b1d24fcb935c53bd5b50d11b40991cda418/TauCeti/Analysis/SpecialFunctions/Hermite/Function/Parseval.lean#L57)
-- [Tau Ceti roadmap status: Weighted orthogonal L² bases — completeness, Hilbert-basis structure, and product bases of orthogonal systems](https://github.com/TauCetiProject/TauCetiRoadmap/blob/9f7c032adaf1b838e8183d63ff3cfa886d061cb3/Completed/OrthogonalL2Bases/STATUS.md)
+- [Source of `TauCeti.tsum_norm_sq_inner_hermiteFunctionLp` in TauCeti/Analysis/SpecialFunctions/Hermite/Function/Parseval.lean](https://github.com/TauCetiProject/TauCeti/blob/cd41bffcb343151b3e58c89392e206b11fe78c1c/TauCeti/Analysis/SpecialFunctions/Hermite/Function/Parseval.lean#L57)
+- [Tau Ceti roadmap status: Weighted orthogonal L² bases — completeness, Hilbert-basis structure, and product bases of orthogonal systems](https://github.com/TauCetiProject/TauCetiRoadmap/blob/612845ab80fb9c2b9bee724a156756ee78031591/Completed/OrthogonalL2Bases/STATUS.md)

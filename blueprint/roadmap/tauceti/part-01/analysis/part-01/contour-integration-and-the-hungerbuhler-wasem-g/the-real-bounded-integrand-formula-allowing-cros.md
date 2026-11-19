@@ -39,7 +39,7 @@ TauCeti.Contour.windingNumber_eq_real_integral_of_closed_interior_crossings {γ 
 
 ## Proof depends on
 
-- [First exit time at radius `ε` (left side)](first-exit-time-at-radius-left-side.md)
+- [Piecewise `C¹` on the interval between `a` and `b`](piecewise-c1-on-the-interval-between-a-and-b.md)
 
 ## Lean
 
@@ -48,5 +48,5 @@ Formalized in Tau Ceti as [`TauCeti.Contour.windingNumber_eq_real_integral_of_cl
 ## Sources
 
 - [Tau Ceti documentation: `TauCeti.Contour.windingNumber_eq_real_integral_of_closed_interior_crossings`](https://taucetiproject.org/docs/TauCeti/Analysis/Contour/Winding/RealIntegral/OnCurve.html#TauCeti.Contour.windingNumber_eq_real_integral_of_closed_interior_crossings)
-- [Source of `TauCeti.Contour.windingNumber_eq_real_integral_of_closed_interior_crossings` in TauCeti/Analysis/Contour/Winding/RealIntegral/OnCurve.lean](https://github.com/TauCetiProject/TauCeti/blob/a6027b1d24fcb935c53bd5b50d11b40991cda418/TauCeti/Analysis/Contour/Winding/RealIntegral/OnCurve.lean#L467)
-- [Tau Ceti roadmap status: Contour integration and the Hungerbühler–Wasem generalized residue theorem](https://github.com/TauCetiProject/TauCetiRoadmap/blob/9f7c032adaf1b838e8183d63ff3cfa886d061cb3/Completed/ContourIntegration/STATUS.md)
+- [Source of `TauCeti.Contour.windingNumber_eq_real_integral_of_closed_interior_crossings` in TauCeti/Analysis/Contour/Winding/RealIntegral/OnCurve.lean](https://github.com/TauCetiProject/TauCeti/blob/cd41bffcb343151b3e58c89392e206b11fe78c1c/TauCeti/Analysis/Contour/Winding/RealIntegral/OnCurve.lean#L463)
+- [Tau Ceti roadmap status: Contour integration and the Hungerbühler–Wasem generalized residue theorem](https://github.com/TauCetiProject/TauCetiRoadmap/blob/612845ab80fb9c2b9bee724a156756ee78031591/Completed/ContourIntegration/STATUS.md)

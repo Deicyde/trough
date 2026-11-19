@@ -36,7 +36,7 @@ Its statement uses no other declaration mapped here.
 
 ## Proof depends on
 
-- [The local Morse lemma](../../../../analysis/part-02/calculus/part-01/the-local-morse-lemma.md)
+- [The local Morse lemma](../../../../analysis/part-03/calculus/part-01/the-local-morse-lemma.md)
 
 ## Lean
 
@@ -45,4 +45,4 @@ Formalized in Tau Ceti as [`TauCeti.IsManifoldNondegenerateCriticalPoint.nonempt
 ## Sources
 
 - [Tau Ceti documentation: `TauCeti.IsManifoldNondegenerateCriticalPoint.nonempty_morseChart`](https://taucetiproject.org/docs/TauCeti/Geometry/Manifold/Morse/Lemma.html#TauCeti.IsManifoldNondegenerateCriticalPoint.nonempty_morseChart)
-- [Source of `TauCeti.IsManifoldNondegenerateCriticalPoint.nonempty_morseChart` in TauCeti/Geometry/Manifold/Morse/Lemma.lean](https://github.com/TauCetiProject/TauCeti/blob/a6027b1d24fcb935c53bd5b50d11b40991cda418/TauCeti/Geometry/Manifold/Morse/Lemma.lean#L394)
+- [Source of `TauCeti.IsManifoldNondegenerateCriticalPoint.nonempty_morseChart` in TauCeti/Geometry/Manifold/Morse/Lemma.lean](https://github.com/TauCetiProject/TauCeti/blob/cd41bffcb343151b3e58c89392e206b11fe78c1c/TauCeti/Geometry/Manifold/Morse/Lemma.lean#L432)

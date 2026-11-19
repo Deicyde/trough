@@ -26,7 +26,7 @@ Its statement uses no other declaration mapped here.
 
 ## Proof depends on
 
-- [Abel's inequality, comparison form](../../../../algebra/part-02/other-results/abels-inequality-comparison-form.md)
+- [Abel's inequality, comparison form](../../../../algebra/part-02/order/abels-inequality-comparison-form.md)
 - [Bessel's inequality for a functional](../part-01/bessels-inequality-for-a-functional.md)
 
 ## Lean
@@ -72,4 +72,4 @@ LinearMap.IsPositive.exists_orthonormal_sum_re_inner_eq_kyFanSum.{u_1, u_2} {ùï
 ## Sources
 
 - [Tau Ceti documentation: `LinearMap.exists_orthonormal_sum_inner_eq_kyFanSum`](https://taucetiproject.org/docs/TauCeti/Analysis/InnerProductSpace/KyFan.html#LinearMap.exists_orthonormal_sum_inner_eq_kyFanSum)
-- [Source of `LinearMap.exists_orthonormal_sum_inner_eq_kyFanSum` in TauCeti/Analysis/InnerProductSpace/KyFan.lean](https://github.com/TauCetiProject/TauCeti/blob/a6027b1d24fcb935c53bd5b50d11b40991cda418/TauCeti/Analysis/InnerProductSpace/KyFan.lean#L320)
+- [Source of `LinearMap.exists_orthonormal_sum_inner_eq_kyFanSum` in TauCeti/Analysis/InnerProductSpace/KyFan.lean](https://github.com/TauCetiProject/TauCeti/blob/cd41bffcb343151b3e58c89392e206b11fe78c1c/TauCeti/Analysis/InnerProductSpace/KyFan.lean#L320)

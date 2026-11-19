@@ -14,8 +14,7 @@ corresponds to truncation of the ground distance at `2 * R`, for finite measures
 ```lean
 TauCeti.transportCost_truncated_dist_eq_iSup.{u} {X : Type u} [MeasurableSpace X]
   {μ ν : MeasureTheory.Measure X} [PseudoMetricSpace X] {R : ℝ} [PolishSpace X] [BorelSpace X]
-  [MeasureTheory.IsFiniteMeasure μ] [MeasureTheory.IsFiniteMeasure ν] (hR : 0 ≤ R)
-  (hmass : μ Set.univ = ν Set.univ) :
+  [MeasureTheory.IsFiniteMeasure μ] (hmass : μ Set.univ = ν Set.univ) :
   TauCeti.transportCost (fun z => ENNReal.ofReal (min (dist z.1 z.2) (2 * R))) μ ν =
     ⨆ f,
       ⨆ (_ : LipschitzWith 1 f),
@@ -37,4 +36,4 @@ Formalized in Tau Ceti as [`TauCeti.transportCost_truncated_dist_eq_iSup`](https
 ## Sources
 
 - [Tau Ceti documentation: `TauCeti.transportCost_truncated_dist_eq_iSup`](https://taucetiproject.org/docs/TauCeti/MeasureTheory/OptimalTransport/Wasserstein/KantorovichRubinstein.html#TauCeti.transportCost_truncated_dist_eq_iSup)
-- [Source of `TauCeti.transportCost_truncated_dist_eq_iSup` in TauCeti/MeasureTheory/OptimalTransport/Wasserstein/KantorovichRubinstein.lean](https://github.com/TauCetiProject/TauCeti/blob/a6027b1d24fcb935c53bd5b50d11b40991cda418/TauCeti/MeasureTheory/OptimalTransport/Wasserstein/KantorovichRubinstein.lean#L519)
+- [Source of `TauCeti.transportCost_truncated_dist_eq_iSup` in TauCeti/MeasureTheory/OptimalTransport/Wasserstein/KantorovichRubinstein.lean](https://github.com/TauCetiProject/TauCeti/blob/cd41bffcb343151b3e58c89392e206b11fe78c1c/TauCeti/MeasureTheory/OptimalTransport/Wasserstein/KantorovichRubinstein.lean#L533)

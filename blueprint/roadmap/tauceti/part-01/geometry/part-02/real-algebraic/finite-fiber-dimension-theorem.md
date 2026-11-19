@@ -46,4 +46,4 @@ TauCeti.IsSemialgebraic.semialgebraicDim_image_comp_of_finite {m n : ℕ} {s : S
 ## Sources
 
 - [Tau Ceti documentation: `TauCeti.IsSemialgebraicOn.semialgebraicDim_image_of_finite`](https://taucetiproject.org/docs/TauCeti/Geometry/RealAlgebraic/Semialgebraic/Dimension/Fiber/Basic.html#TauCeti.IsSemialgebraicOn.semialgebraicDim_image_of_finite)
-- [Source of `TauCeti.IsSemialgebraicOn.semialgebraicDim_image_of_finite` in TauCeti/Geometry/RealAlgebraic/Semialgebraic/Dimension/Fiber/Basic.lean](https://github.com/TauCetiProject/TauCeti/blob/a6027b1d24fcb935c53bd5b50d11b40991cda418/TauCeti/Geometry/RealAlgebraic/Semialgebraic/Dimension/Fiber/Basic.lean#L92)
+- [Source of `TauCeti.IsSemialgebraicOn.semialgebraicDim_image_of_finite` in TauCeti/Geometry/RealAlgebraic/Semialgebraic/Dimension/Fiber/Basic.lean](https://github.com/TauCetiProject/TauCeti/blob/cd41bffcb343151b3e58c89392e206b11fe78c1c/TauCeti/Geometry/RealAlgebraic/Semialgebraic/Dimension/Fiber/Basic.lean#L92)

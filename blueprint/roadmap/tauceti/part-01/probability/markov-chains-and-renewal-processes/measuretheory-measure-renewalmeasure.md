@@ -28,5 +28,5 @@ Formalized in Tau Ceti as [`MeasureTheory.Measure.renewalMeasure`](https://tauce
 ## Sources
 
 - [Tau Ceti documentation: `MeasureTheory.Measure.renewalMeasure`](https://taucetiproject.org/docs/TauCeti/Probability/Renewal/Measure.html#MeasureTheory.Measure.renewalMeasure)
-- [Source of `MeasureTheory.Measure.renewalMeasure` in TauCeti/Probability/Renewal/Measure.lean](https://github.com/TauCetiProject/TauCeti/blob/a6027b1d24fcb935c53bd5b50d11b40991cda418/TauCeti/Probability/Renewal/Measure.lean#L78)
-- [Tau Ceti roadmap status: Markov chains and renewal processes](https://github.com/TauCetiProject/TauCetiRoadmap/blob/9f7c032adaf1b838e8183d63ff3cfa886d061cb3/TauCetiRoadmap/MarkovChainsAndRenewal/STATUS.md)
+- [Source of `MeasureTheory.Measure.renewalMeasure` in TauCeti/Probability/Renewal/Measure.lean](https://github.com/TauCetiProject/TauCeti/blob/cd41bffcb343151b3e58c89392e206b11fe78c1c/TauCeti/Probability/Renewal/Measure.lean#L80)
+- [Tau Ceti roadmap status: Markov chains and renewal processes](https://github.com/TauCetiProject/TauCetiRoadmap/blob/612845ab80fb9c2b9bee724a156756ee78031591/TauCetiRoadmap/MarkovChainsAndRenewal/STATUS.md)

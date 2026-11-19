@@ -63,4 +63,4 @@ TauCeti.LocalFieldsRamification.ramificationIndex_mul_lowerIndex_restrictNormal_
 ## Sources
 
 - [Tau Ceti documentation: `TauCeti.LocalFieldsRamification.ramificationIndex_mul_lowerIndex_eq_sum`](https://taucetiproject.org/docs/TauCeti/NumberTheory/LocalField/LowerIndex.html#TauCeti.LocalFieldsRamification.ramificationIndex_mul_lowerIndex_eq_sum)
-- [Source of `TauCeti.LocalFieldsRamification.ramificationIndex_mul_lowerIndex_eq_sum` in TauCeti/NumberTheory/LocalField/LowerIndex.lean](https://github.com/TauCetiProject/TauCeti/blob/a6027b1d24fcb935c53bd5b50d11b40991cda418/TauCeti/NumberTheory/LocalField/LowerIndex.lean#L137)
+- [Source of `TauCeti.LocalFieldsRamification.ramificationIndex_mul_lowerIndex_eq_sum` in TauCeti/NumberTheory/LocalField/LowerIndex.lean](https://github.com/TauCetiProject/TauCeti/blob/cd41bffcb343151b3e58c89392e206b11fe78c1c/TauCeti/NumberTheory/LocalField/LowerIndex.lean#L137)

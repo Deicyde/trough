@@ -28,13 +28,14 @@ Its statement uses no other declaration mapped here.
 
 ## Proof depends on
 
-- [Euler--Poincaré for cellular chains](../../../../algebraic-topology/cellular/euler-poincare-for-cellular-chains.md)
+- [A maximal integral curve confined to a compact set is defined for all time](../../geodesics-the-exponential-map-and-the-hopf-rinow/a-maximal-integral-curve-confined-to-a-compact-s.md)
+- [Euler--Poincaré for cellular chains](../../../../algebraic-topology/other-results/euler-poincare-for-cellular-chains.md)
 - [The Mayer–Vietoris isomorphism of a sphere](../../../../algebraic-topology/singular/the-mayer-vietoris-isomorphism-of-a-sphere.md)
-- [Milnor's cell attachment theorem, in pushout form](../part-01/milnors-cell-attachment-theorem-in-pushout-form.md)
+- [Milnor's cell attachment theorem](../../../part-02/manifold/part-03/milnors-cell-attachment-theorem.md)
 - [The relative small-chain theorem](../../../../algebraic-topology/singular/the-relative-small-chain-theorem.md)
 - [The strong Morse inequalities (`TauCeti.IsMorse.sum_range_neg_one_pow_mul_finrank_singularHomology_le`)](../part-01/the-strong-morse-inequalities-tauceti-ismorse-su.md)
-- [The strong Morse inequalities for a CW pair](../../../../algebraic-topology/cellular/the-strong-morse-inequalities-for-a-cw-pair.md)
-- [The weak Morse inequality for a CW pair](../../../../algebraic-topology/cellular/the-weak-morse-inequality-for-a-cw-pair.md)
+- [The strong Morse inequalities for a CW pair](../../../../algebraic-topology/algebraic-topology-of-spaces-and-manifolds/the-strong-morse-inequalities-for-a-cw-pair.md)
+- [The weak Morse inequality for a CW pair](../../../../algebraic-topology/algebraic-topology-of-spaces-and-manifolds/the-weak-morse-inequality-for-a-cw-pair.md)
 
 ## Lean
 
@@ -124,4 +125,4 @@ TauCeti.IsMorse.finrank_singularHomology_upperBandPair_le.{u, u_1, u_2} {E : Typ
 ## Sources
 
 - [Tau Ceti documentation: `TauCeti.IsMorse.finrank_singularHomology_le`](https://taucetiproject.org/docs/TauCeti/Geometry/Manifold/Morse/Inequalities.html#TauCeti.IsMorse.finrank_singularHomology_le)
-- [Source of `TauCeti.IsMorse.finrank_singularHomology_le` in TauCeti/Geometry/Manifold/Morse/Inequalities.lean](https://github.com/TauCetiProject/TauCeti/blob/a6027b1d24fcb935c53bd5b50d11b40991cda418/TauCeti/Geometry/Manifold/Morse/Inequalities.lean#L986)
+- [Source of `TauCeti.IsMorse.finrank_singularHomology_le` in TauCeti/Geometry/Manifold/Morse/Inequalities.lean](https://github.com/TauCetiProject/TauCeti/blob/cd41bffcb343151b3e58c89392e206b11fe78c1c/TauCeti/Geometry/Manifold/Morse/Inequalities.lean#L975)

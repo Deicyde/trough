@@ -30,4 +30,4 @@ Formalized in Tau Ceti as [`IsCoercive.orthogonalComplement_iSup_eigenspaces_for
 ## Sources
 
 - [Tau Ceti documentation: `IsCoercive.orthogonalComplement_iSup_eigenspaces_formSolutionOperator_eq_bot`](https://taucetiproject.org/docs/TauCeti/Analysis/InnerProductSpace/Variational/Spectrum.html#IsCoercive.orthogonalComplement_iSup_eigenspaces_formSolutionOperator_eq_bot)
-- [Source of `IsCoercive.orthogonalComplement_iSup_eigenspaces_formSolutionOperator_eq_bot` in TauCeti/Analysis/InnerProductSpace/Variational/Spectrum.lean](https://github.com/TauCetiProject/TauCeti/blob/a6027b1d24fcb935c53bd5b50d11b40991cda418/TauCeti/Analysis/InnerProductSpace/Variational/Spectrum.lean#L486)
+- [Source of `IsCoercive.orthogonalComplement_iSup_eigenspaces_formSolutionOperator_eq_bot` in TauCeti/Analysis/InnerProductSpace/Variational/Spectrum.lean](https://github.com/TauCetiProject/TauCeti/blob/cd41bffcb343151b3e58c89392e206b11fe78c1c/TauCeti/Analysis/InnerProductSpace/Variational/Spectrum.lean#L535)

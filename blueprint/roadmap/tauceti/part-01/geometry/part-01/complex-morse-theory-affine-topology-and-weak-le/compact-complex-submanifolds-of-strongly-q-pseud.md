@@ -35,5 +35,5 @@ Formalized in Tau Ceti as [`TauCeti.finrank_le_of_isManifoldStronglyPseudoconvex
 ## Sources
 
 - [Tau Ceti documentation: `TauCeti.finrank_le_of_isManifoldStronglyPseudoconvexAt`](https://taucetiproject.org/docs/TauCeti/Geometry/Manifold/Complex/MaximumPrinciple.html#TauCeti.finrank_le_of_isManifoldStronglyPseudoconvexAt)
-- [Source of `TauCeti.finrank_le_of_isManifoldStronglyPseudoconvexAt` in TauCeti/Geometry/Manifold/Complex/MaximumPrinciple.lean](https://github.com/TauCetiProject/TauCeti/blob/a6027b1d24fcb935c53bd5b50d11b40991cda418/TauCeti/Geometry/Manifold/Complex/MaximumPrinciple.lean#L191)
-- [Tau Ceti roadmap status: Complex Morse theory, affine topology and weak Lefschetz](https://github.com/TauCetiProject/TauCetiRoadmap/blob/9f7c032adaf1b838e8183d63ff3cfa886d061cb3/TauCetiRoadmap/AffineMorseLefschetz/STATUS.md)
+- [Source of `TauCeti.finrank_le_of_isManifoldStronglyPseudoconvexAt` in TauCeti/Geometry/Manifold/Complex/MaximumPrinciple.lean](https://github.com/TauCetiProject/TauCeti/blob/cd41bffcb343151b3e58c89392e206b11fe78c1c/TauCeti/Geometry/Manifold/Complex/MaximumPrinciple.lean#L191)
+- [Tau Ceti roadmap status: Complex Morse theory, affine topology and weak Lefschetz](https://github.com/TauCetiProject/TauCetiRoadmap/blob/612845ab80fb9c2b9bee724a156756ee78031591/TauCetiRoadmap/AffineMorseLefschetz/STATUS.md)

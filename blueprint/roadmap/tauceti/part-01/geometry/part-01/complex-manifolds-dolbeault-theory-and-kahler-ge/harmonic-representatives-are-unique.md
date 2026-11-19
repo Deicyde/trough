@@ -30,7 +30,6 @@ TauCeti.harmonicForms.toDeRhamCohomology_injective.{u_1, u_2, u_3} {E : Type u_1
 ## Proof depends on
 
 - [Green's formula for `d*d`](greens-formula-for-d-d.md)
-- [Orientation.hodgeStar](../../../analysis/part-01/four-dimensional-seiberg-witten-theory/orientation-hodgestar.md)
 - [TauCeti.SmoothForm.hodgeLaplacian](tauceti-smoothform-hodgelaplacian.md)
 - [TauCeti.SmoothForm.hodgeStar](tauceti-smoothform-hodgestar.md)
 
@@ -41,5 +40,5 @@ Formalized in Tau Ceti as [`TauCeti.harmonicForms.toDeRhamCohomology_injective`]
 ## Sources
 
 - [Tau Ceti documentation: `TauCeti.harmonicForms.toDeRhamCohomology_injective`](https://taucetiproject.org/docs/TauCeti/Geometry/Manifold/DeRham/Harmonic.html#TauCeti.harmonicForms.toDeRhamCohomology_injective)
-- [Source of `TauCeti.harmonicForms.toDeRhamCohomology_injective` in TauCeti/Geometry/Manifold/DeRham/Harmonic.lean](https://github.com/TauCetiProject/TauCeti/blob/a6027b1d24fcb935c53bd5b50d11b40991cda418/TauCeti/Geometry/Manifold/DeRham/Harmonic.lean#L296)
-- [Tau Ceti roadmap status: Complex manifolds, Dolbeault theory and Kähler geometry](https://github.com/TauCetiProject/TauCetiRoadmap/blob/9f7c032adaf1b838e8183d63ff3cfa886d061cb3/TauCetiRoadmap/ComplexKahlerGeometry/STATUS.md)
+- [Source of `TauCeti.harmonicForms.toDeRhamCohomology_injective` in TauCeti/Geometry/Manifold/DeRham/Harmonic.lean](https://github.com/TauCetiProject/TauCeti/blob/cd41bffcb343151b3e58c89392e206b11fe78c1c/TauCeti/Geometry/Manifold/DeRham/Harmonic.lean#L371)
+- [Tau Ceti roadmap status: Complex manifolds, Dolbeault theory and Kähler geometry](https://github.com/TauCetiProject/TauCetiRoadmap/blob/612845ab80fb9c2b9bee724a156756ee78031591/TauCetiRoadmap/ComplexKahlerGeometry/STATUS.md)

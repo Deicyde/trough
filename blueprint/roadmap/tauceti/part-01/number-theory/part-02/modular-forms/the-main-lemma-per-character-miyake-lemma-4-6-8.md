@@ -26,10 +26,6 @@ TauCeti.mem_cuspFormsOld_of_forall_coprime_qExpansion_coeff_eq_zero {N : ℕ} [N
 
 Its statement uses no other declaration mapped here.
 
-## Proof depends on
-
-- [Shimura's decomposition of a double coset into right cosets](../hecke-ring/shimuras-decomposition-of-a-double-coset-into-ri.md)
-
 ## Lean
 
 Formalized in Tau Ceti as [`TauCeti.mem_cuspFormsOld_of_forall_coprime_qExpansion_coeff_eq_zero`](https://taucetiproject.org/docs/TauCeti/NumberTheory/ModularForms/Newforms/MainLemma.html#TauCeti.mem_cuspFormsOld_of_forall_coprime_qExpansion_coeff_eq_zero).
@@ -37,4 +33,4 @@ Formalized in Tau Ceti as [`TauCeti.mem_cuspFormsOld_of_forall_coprime_qExpansio
 ## Sources
 
 - [Tau Ceti documentation: `TauCeti.mem_cuspFormsOld_of_forall_coprime_qExpansion_coeff_eq_zero`](https://taucetiproject.org/docs/TauCeti/NumberTheory/ModularForms/Newforms/MainLemma.html#TauCeti.mem_cuspFormsOld_of_forall_coprime_qExpansion_coeff_eq_zero)
-- [Source of `TauCeti.mem_cuspFormsOld_of_forall_coprime_qExpansion_coeff_eq_zero` in TauCeti/NumberTheory/ModularForms/Newforms/MainLemma.lean](https://github.com/TauCetiProject/TauCeti/blob/a6027b1d24fcb935c53bd5b50d11b40991cda418/TauCeti/NumberTheory/ModularForms/Newforms/MainLemma.lean#L180)
+- [Source of `TauCeti.mem_cuspFormsOld_of_forall_coprime_qExpansion_coeff_eq_zero` in TauCeti/NumberTheory/ModularForms/Newforms/MainLemma.lean](https://github.com/TauCetiProject/TauCeti/blob/cd41bffcb343151b3e58c89392e206b11fe78c1c/TauCeti/NumberTheory/ModularForms/Newforms/MainLemma.lean#L180)

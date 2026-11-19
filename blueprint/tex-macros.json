@@ -3,5 +3,9 @@
   "N": "\\mathbb{N}",
   "Q": "\\mathbb{Q}",
   "R": "\\mathbb{R}",
-  "Z": "\\mathbb{Z}"
+  "Z": "\\mathbb{Z}",
+  "llbracket": "\\mathopen{[\\![}",
+  "rrbracket": "\\mathclose{]\\!]}",
+  "sb": "_",
+  "sp": "^"
 }

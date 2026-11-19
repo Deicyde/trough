@@ -29,5 +29,5 @@ Formalized in Tau Ceti as [`TauCeti.NovikovSeries.isArtinianRing_of_isFractionRi
 ## Sources
 
 - [Tau Ceti documentation: `TauCeti.NovikovSeries.isArtinianRing_of_isFractionRing`](https://taucetiproject.org/docs/TauCeti/RingTheory/NovikovSeries/TotalQuotient.html#TauCeti.NovikovSeries.isArtinianRing_of_isFractionRing)
-- [Source of `TauCeti.NovikovSeries.isArtinianRing_of_isFractionRing` in TauCeti/RingTheory/NovikovSeries/TotalQuotient.lean](https://github.com/TauCetiProject/TauCeti/blob/a6027b1d24fcb935c53bd5b50d11b40991cda418/TauCeti/RingTheory/NovikovSeries/TotalQuotient.lean#L93)
-- [Tau Ceti roadmap status: Morse–Novikov homology and dynamical Reidemeister torsion](https://github.com/TauCetiProject/TauCetiRoadmap/blob/9f7c032adaf1b838e8183d63ff3cfa886d061cb3/TauCetiRoadmap/MorseNovikov/STATUS.md)
+- [Source of `TauCeti.NovikovSeries.isArtinianRing_of_isFractionRing` in TauCeti/RingTheory/NovikovSeries/TotalQuotient.lean](https://github.com/TauCetiProject/TauCeti/blob/cd41bffcb343151b3e58c89392e206b11fe78c1c/TauCeti/RingTheory/NovikovSeries/TotalQuotient.lean#L93)
+- [Tau Ceti roadmap status: Morse–Novikov homology and dynamical Reidemeister torsion](https://github.com/TauCetiProject/TauCetiRoadmap/blob/612845ab80fb9c2b9bee724a156756ee78031591/TauCetiRoadmap/MorseNovikov/STATUS.md)

@@ -55,4 +55,4 @@ ContinuousLinearMap.isClosed_range_of_isClosed_range_precomp.{u_1, u_2, u_3} {ù
 ## Sources
 
 - [Tau Ceti documentation: `ContinuousLinearMap.isClosed_range_precomp_iff`](https://taucetiproject.org/docs/TauCeti/Analysis/Normed/Module/Dual/Adjoint.html#ContinuousLinearMap.isClosed_range_precomp_iff)
-- [Source of `ContinuousLinearMap.isClosed_range_precomp_iff` in TauCeti/Analysis/Normed/Module/Dual/Adjoint.lean](https://github.com/TauCetiProject/TauCeti/blob/a6027b1d24fcb935c53bd5b50d11b40991cda418/TauCeti/Analysis/Normed/Module/Dual/Adjoint.lean#L242)
+- [Source of `ContinuousLinearMap.isClosed_range_precomp_iff` in TauCeti/Analysis/Normed/Module/Dual/Adjoint.lean](https://github.com/TauCetiProject/TauCeti/blob/cd41bffcb343151b3e58c89392e206b11fe78c1c/TauCeti/Analysis/Normed/Module/Dual/Adjoint.lean#L242)

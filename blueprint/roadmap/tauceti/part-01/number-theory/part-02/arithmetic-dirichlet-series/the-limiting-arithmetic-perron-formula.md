@@ -37,4 +37,4 @@ Formalized in Tau Ceti as [`TauCeti.tendsto_truncatedPerron_LSeries`](https://ta
 ## Sources
 
 - [Tau Ceti documentation: `TauCeti.tendsto_truncatedPerron_LSeries`](https://taucetiproject.org/docs/TauCeti/NumberTheory/ArithmeticDirichletSeries/Perron/Formula.html#TauCeti.tendsto_truncatedPerron_LSeries)
-- [Source of `TauCeti.tendsto_truncatedPerron_LSeries` in TauCeti/NumberTheory/ArithmeticDirichletSeries/Perron/Formula.lean](https://github.com/TauCetiProject/TauCeti/blob/a6027b1d24fcb935c53bd5b50d11b40991cda418/TauCeti/NumberTheory/ArithmeticDirichletSeries/Perron/Formula.lean#L286)
+- [Source of `TauCeti.tendsto_truncatedPerron_LSeries` in TauCeti/NumberTheory/ArithmeticDirichletSeries/Perron/Formula.lean](https://github.com/TauCetiProject/TauCeti/blob/cd41bffcb343151b3e58c89392e206b11fe78c1c/TauCeti/NumberTheory/ArithmeticDirichletSeries/Perron/Formula.lean#L286)

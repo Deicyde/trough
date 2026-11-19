@@ -42,4 +42,4 @@ Formalized in Tau Ceti as [`TauCeti.SmoothEmbedding.exists_smoothIsotopy_of_det_
 ## Sources
 
 - [Tau Ceti documentation: `TauCeti.SmoothEmbedding.exists_smoothIsotopy_of_det_chartAt_mul_pos`](https://taucetiproject.org/docs/TauCeti/Geometry/Manifold/SmoothIsotopy/DiscTheorem.html#TauCeti.SmoothEmbedding.exists_smoothIsotopy_of_det_chartAt_mul_pos)
-- [Source of `TauCeti.SmoothEmbedding.exists_smoothIsotopy_of_det_chartAt_mul_pos` in TauCeti/Geometry/Manifold/SmoothIsotopy/DiscTheorem.lean](https://github.com/TauCetiProject/TauCeti/blob/a6027b1d24fcb935c53bd5b50d11b40991cda418/TauCeti/Geometry/Manifold/SmoothIsotopy/DiscTheorem.lean#L102)
+- [Source of `TauCeti.SmoothEmbedding.exists_smoothIsotopy_of_det_chartAt_mul_pos` in TauCeti/Geometry/Manifold/SmoothIsotopy/DiscTheorem.lean](https://github.com/TauCetiProject/TauCeti/blob/cd41bffcb343151b3e58c89392e206b11fe78c1c/TauCeti/Geometry/Manifold/SmoothIsotopy/DiscTheorem.lean#L100)

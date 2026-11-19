@@ -34,4 +34,4 @@ Formalized in Tau Ceti as [`TauCeti.Probability.conditionallyIID_of_contractable
 ## Sources
 
 - [Tau Ceti documentation: `TauCeti.Probability.conditionallyIID_of_contractable_viaL2`](https://taucetiproject.org/docs/TauCeti/Probability/DeFinetti/ViaL2/Theorem.html#TauCeti.Probability.conditionallyIID_of_contractable_viaL2)
-- [Source of `TauCeti.Probability.conditionallyIID_of_contractable_viaL2` in TauCeti/Probability/DeFinetti/ViaL2/Theorem.lean](https://github.com/TauCetiProject/TauCeti/blob/a6027b1d24fcb935c53bd5b50d11b40991cda418/TauCeti/Probability/DeFinetti/ViaL2/Theorem.lean#L58)
+- [Source of `TauCeti.Probability.conditionallyIID_of_contractable_viaL2` in TauCeti/Probability/DeFinetti/ViaL2/Theorem.lean](https://github.com/TauCetiProject/TauCeti/blob/cd41bffcb343151b3e58c89392e206b11fe78c1c/TauCeti/Probability/DeFinetti/ViaL2/Theorem.lean#L58)

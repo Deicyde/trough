@@ -46,4 +46,4 @@ Formalized in Tau Ceti as [`TauCeti.CountablyRectifiable.ae_tendsto_euclideanHau
 ## Sources
 
 - [Tau Ceti documentation: `TauCeti.CountablyRectifiable.ae_tendsto_euclideanHausdorffMeasure_inter_closedBall_div`](https://taucetiproject.org/docs/TauCeti/Geometry/MeasureTheory/Rectifiable/Density.html#TauCeti.CountablyRectifiable.ae_tendsto_euclideanHausdorffMeasure_inter_closedBall_div)
-- [Source of `TauCeti.CountablyRectifiable.ae_tendsto_euclideanHausdorffMeasure_inter_closedBall_div` in TauCeti/Geometry/MeasureTheory/Rectifiable/Density.lean](https://github.com/TauCetiProject/TauCeti/blob/a6027b1d24fcb935c53bd5b50d11b40991cda418/TauCeti/Geometry/MeasureTheory/Rectifiable/Density.lean#L179)
+- [Source of `TauCeti.CountablyRectifiable.ae_tendsto_euclideanHausdorffMeasure_inter_closedBall_div` in TauCeti/Geometry/MeasureTheory/Rectifiable/Density.lean](https://github.com/TauCetiProject/TauCeti/blob/cd41bffcb343151b3e58c89392e206b11fe78c1c/TauCeti/Geometry/MeasureTheory/Rectifiable/Density.lean#L179)

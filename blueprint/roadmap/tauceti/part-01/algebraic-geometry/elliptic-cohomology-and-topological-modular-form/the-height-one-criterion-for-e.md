@@ -20,11 +20,7 @@ WeierstrassCurve.height_formalGroup_eq_one_iff.{u_1} {K : Type u_1} [Field K]
 
 ## Depends on
 
-- [FormalGroup.height](../../ring-theory/part-01/bordism-formal-groups-and-chromatic-operations/formalgroup-height.md)
-
-## Proof depends on
-
-- [The `p`-series has order a power of `p` in characteristic `p`](../../ring-theory/part-01/bordism-formal-groups-and-chromatic-operations/the-p-series-has-order-a-power-of-p-in-character.md)
+Its statement uses no other declaration mapped here.
 
 ## Lean
 
@@ -33,5 +29,5 @@ Formalized in Tau Ceti as [`WeierstrassCurve.height_formalGroup_eq_one_iff`](htt
 ## Sources
 
 - [Tau Ceti documentation: `WeierstrassCurve.height_formalGroup_eq_one_iff`](https://taucetiproject.org/docs/TauCeti/AlgebraicGeometry/EllipticCurve/FormalGroup/Height/Basic.html#WeierstrassCurve.height_formalGroup_eq_one_iff)
-- [Source of `WeierstrassCurve.height_formalGroup_eq_one_iff` in TauCeti/AlgebraicGeometry/EllipticCurve/FormalGroup/Height/Basic.lean](https://github.com/TauCetiProject/TauCeti/blob/a6027b1d24fcb935c53bd5b50d11b40991cda418/TauCeti/AlgebraicGeometry/EllipticCurve/FormalGroup/Height/Basic.lean#L98)
-- [Tau Ceti roadmap status: Elliptic cohomology and topological modular forms](https://github.com/TauCetiProject/TauCetiRoadmap/blob/9f7c032adaf1b838e8183d63ff3cfa886d061cb3/TauCetiRoadmap/EllipticCohomology/STATUS.md)
+- [Source of `WeierstrassCurve.height_formalGroup_eq_one_iff` in TauCeti/AlgebraicGeometry/EllipticCurve/FormalGroup/Height/Basic.lean](https://github.com/TauCetiProject/TauCeti/blob/cd41bffcb343151b3e58c89392e206b11fe78c1c/TauCeti/AlgebraicGeometry/EllipticCurve/FormalGroup/Height/Basic.lean#L98)
+- [Tau Ceti roadmap status: Elliptic cohomology and topological modular forms](https://github.com/TauCetiProject/TauCetiRoadmap/blob/612845ab80fb9c2b9bee724a156756ee78031591/TauCetiRoadmap/EllipticCohomology/STATUS.md)

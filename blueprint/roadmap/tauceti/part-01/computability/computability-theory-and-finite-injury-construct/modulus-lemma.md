@@ -36,5 +36,5 @@ Formalized in Tau Ceti as [`TauCeti.Approximation.computableIn_iff_exists_isModu
 ## Sources
 
 - [Tau Ceti documentation: `TauCeti.Approximation.computableIn_iff_exists_isModulus_of_rePred`](https://taucetiproject.org/docs/TauCeti/Computability/Approximation/CEOracle.html#TauCeti.Approximation.computableIn_iff_exists_isModulus_of_rePred)
-- [Source of `TauCeti.Approximation.computableIn_iff_exists_isModulus_of_rePred` in TauCeti/Computability/Approximation/CEOracle.lean](https://github.com/TauCetiProject/TauCeti/blob/a6027b1d24fcb935c53bd5b50d11b40991cda418/TauCeti/Computability/Approximation/CEOracle.lean#L164)
-- [Tau Ceti roadmap status: Computability theory and finite-injury constructions](https://github.com/TauCetiProject/TauCetiRoadmap/blob/9f7c032adaf1b838e8183d63ff3cfa886d061cb3/TauCetiRoadmap/ComputabilityTheory/STATUS.md)
+- [Source of `TauCeti.Approximation.computableIn_iff_exists_isModulus_of_rePred` in TauCeti/Computability/Approximation/CEOracle.lean](https://github.com/TauCetiProject/TauCeti/blob/cd41bffcb343151b3e58c89392e206b11fe78c1c/TauCeti/Computability/Approximation/CEOracle.lean#L164)
+- [Tau Ceti roadmap status: Computability theory and finite-injury constructions](https://github.com/TauCetiProject/TauCetiRoadmap/blob/612845ab80fb9c2b9bee724a156756ee78031591/TauCetiRoadmap/ComputabilityTheory/STATUS.md)

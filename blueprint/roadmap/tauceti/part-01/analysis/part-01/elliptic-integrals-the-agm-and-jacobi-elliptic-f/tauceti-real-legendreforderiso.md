@@ -25,5 +25,5 @@ Formalized in Tau Ceti as [`TauCeti.Real.legendreFOrderIso`](https://taucetiproj
 ## Sources
 
 - [Tau Ceti documentation: `TauCeti.Real.legendreFOrderIso`](https://taucetiproject.org/docs/TauCeti/Analysis/SpecialFunctions/EllipticIntegral/Legendre.html#TauCeti.Real.legendreFOrderIso)
-- [Source of `TauCeti.Real.legendreFOrderIso` in TauCeti/Analysis/SpecialFunctions/EllipticIntegral/Legendre.lean](https://github.com/TauCetiProject/TauCeti/blob/a6027b1d24fcb935c53bd5b50d11b40991cda418/TauCeti/Analysis/SpecialFunctions/EllipticIntegral/Legendre.lean#L334)
-- [Tau Ceti roadmap status: Elliptic integrals, the AGM, and Jacobi elliptic functions](https://github.com/TauCetiProject/TauCetiRoadmap/blob/9f7c032adaf1b838e8183d63ff3cfa886d061cb3/TauCetiRoadmap/EllipticIntegrals/STATUS.md)
+- [Source of `TauCeti.Real.legendreFOrderIso` in TauCeti/Analysis/SpecialFunctions/EllipticIntegral/Legendre.lean](https://github.com/TauCetiProject/TauCeti/blob/cd41bffcb343151b3e58c89392e206b11fe78c1c/TauCeti/Analysis/SpecialFunctions/EllipticIntegral/Legendre.lean#L332)
+- [Tau Ceti roadmap status: Elliptic integrals, the AGM, and Jacobi elliptic functions](https://github.com/TauCetiProject/TauCetiRoadmap/blob/612845ab80fb9c2b9bee724a156756ee78031591/TauCetiRoadmap/EllipticIntegrals/STATUS.md)

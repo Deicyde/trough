@@ -47,4 +47,4 @@ TauCeti.isPushout_fundamentalGroupoidOn.{u} {X : Type u} [TopologicalSpace X] {A
 ## Sources
 
 - [Tau Ceti documentation: `TauCeti.isPushout_fundamentalGroupoid`](https://taucetiproject.org/docs/TauCeti/AlgebraicTopology/FundamentalGroupoid/Pushout.html#TauCeti.isPushout_fundamentalGroupoid)
-- [Source of `TauCeti.isPushout_fundamentalGroupoid` in TauCeti/AlgebraicTopology/FundamentalGroupoid/Pushout.lean](https://github.com/TauCetiProject/TauCeti/blob/a6027b1d24fcb935c53bd5b50d11b40991cda418/TauCeti/AlgebraicTopology/FundamentalGroupoid/Pushout.lean#L162)
+- [Source of `TauCeti.isPushout_fundamentalGroupoid` in TauCeti/AlgebraicTopology/FundamentalGroupoid/Pushout.lean](https://github.com/TauCetiProject/TauCeti/blob/cd41bffcb343151b3e58c89392e206b11fe78c1c/TauCeti/AlgebraicTopology/FundamentalGroupoid/Pushout.lean#L162)

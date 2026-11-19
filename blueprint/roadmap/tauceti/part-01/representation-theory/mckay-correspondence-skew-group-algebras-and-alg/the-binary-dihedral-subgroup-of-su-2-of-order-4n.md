@@ -25,5 +25,5 @@ Formalized in Tau Ceti as [`TauCeti.SU2.binaryDihedralSubgroup`](https://tauceti
 ## Sources
 
 - [Tau Ceti documentation: `TauCeti.SU2.binaryDihedralSubgroup`](https://taucetiproject.org/docs/TauCeti/RepresentationTheory/SU2/BinaryDihedral.html#TauCeti.SU2.binaryDihedralSubgroup)
-- [Source of `TauCeti.SU2.binaryDihedralSubgroup` in TauCeti/RepresentationTheory/SU2/BinaryDihedral.lean](https://github.com/TauCetiProject/TauCeti/blob/a6027b1d24fcb935c53bd5b50d11b40991cda418/TauCeti/RepresentationTheory/SU2/BinaryDihedral.lean#L237)
-- [Tau Ceti roadmap status: McKay correspondence, skew-group algebras and algebraic Weyl functors](https://github.com/TauCetiProject/TauCetiRoadmap/blob/9f7c032adaf1b838e8183d63ff3cfa886d061cb3/TauCetiRoadmap/McKaySkewGroup/STATUS.md)
+- [Source of `TauCeti.SU2.binaryDihedralSubgroup` in TauCeti/RepresentationTheory/SU2/BinaryDihedral.lean](https://github.com/TauCetiProject/TauCeti/blob/cd41bffcb343151b3e58c89392e206b11fe78c1c/TauCeti/RepresentationTheory/SU2/BinaryDihedral.lean#L237)
+- [Tau Ceti roadmap status: McKay correspondence, skew-group algebras and algebraic Weyl functors](https://github.com/TauCetiProject/TauCetiRoadmap/blob/612845ab80fb9c2b9bee724a156756ee78031591/TauCetiRoadmap/McKaySkewGroup/STATUS.md)

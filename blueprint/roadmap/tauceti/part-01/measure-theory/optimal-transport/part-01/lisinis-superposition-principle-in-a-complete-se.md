@@ -41,10 +41,10 @@ Its statement uses no other declaration mapped here.
 
 ## Proof depends on
 
-- [The Arzelà–Ascoli theorem in `C(X, Y)`](../../../topology/other-results/the-arzela-ascoli-theorem-in-c-x-y.md)
+- [Arzelà–Ascoli along exhausting bands](../../../../part-02/topology/other-results/arzela-ascoli-along-exhausting-bands.md)
 - [Fundamental theorem for absolutely continuous curves, integrability](../../function/part-01/fundamental-theorem-for-absolutely-continuous-cu.md)
 - [Hölder estimate along a curve](../../function/part-01/holder-estimate-along-a-curve.md)
-- [Hölder's inequality for the integral of a product](../../function/part-01/holders-inequality-for-the-integral-of-a-product.md)
+- [Hölder's inequality for disjoint pieces](../../function/part-01/holders-inequality-for-disjoint-pieces.md)
 - [Hölder–Markov estimate](../../measure/holder-markov-estimate.md)
 - [Minkowski's integral inequality](../../integral/part-02/minkowskis-integral-inequality.md)
 
@@ -55,4 +55,4 @@ Formalized in Tau Ceti as [`TauCeti.exists_map_IccExtend_eq_lintegral_curveActio
 ## Sources
 
 - [Tau Ceti documentation: `TauCeti.exists_map_IccExtend_eq_lintegral_curveAction_eq`](https://taucetiproject.org/docs/TauCeti/MeasureTheory/OptimalTransport/Wasserstein/Superposition.html#TauCeti.exists_map_IccExtend_eq_lintegral_curveAction_eq)
-- [Source of `TauCeti.exists_map_IccExtend_eq_lintegral_curveAction_eq` in TauCeti/MeasureTheory/OptimalTransport/Wasserstein/Superposition.lean](https://github.com/TauCetiProject/TauCeti/blob/a6027b1d24fcb935c53bd5b50d11b40991cda418/TauCeti/MeasureTheory/OptimalTransport/Wasserstein/Superposition.lean#L202)
+- [Source of `TauCeti.exists_map_IccExtend_eq_lintegral_curveAction_eq` in TauCeti/MeasureTheory/OptimalTransport/Wasserstein/Superposition.lean](https://github.com/TauCetiProject/TauCeti/blob/cd41bffcb343151b3e58c89392e206b11fe78c1c/TauCeti/MeasureTheory/OptimalTransport/Wasserstein/Superposition.lean#L201)

@@ -37,4 +37,4 @@ Formalized in Tau Ceti as [`TauCeti.jordanHolderMultiplicity_vertexProjectiveMod
 ## Sources
 
 - [Tau Ceti documentation: `TauCeti.jordanHolderMultiplicity_vertexProjectiveModuleFG_eq_card_path`](https://taucetiproject.org/docs/TauCeti/RepresentationTheory/GrothendieckGroup/Quiver/Multiplicity.html#TauCeti.jordanHolderMultiplicity_vertexProjectiveModuleFG_eq_card_path)
-- [Source of `TauCeti.jordanHolderMultiplicity_vertexProjectiveModuleFG_eq_card_path` in TauCeti/RepresentationTheory/GrothendieckGroup/Quiver/Multiplicity.lean](https://github.com/TauCetiProject/TauCeti/blob/a6027b1d24fcb935c53bd5b50d11b40991cda418/TauCeti/RepresentationTheory/GrothendieckGroup/Quiver/Multiplicity.lean#L136)
+- [Source of `TauCeti.jordanHolderMultiplicity_vertexProjectiveModuleFG_eq_card_path` in TauCeti/RepresentationTheory/GrothendieckGroup/Quiver/Multiplicity.lean](https://github.com/TauCetiProject/TauCeti/blob/cd41bffcb343151b3e58c89392e206b11fe78c1c/TauCeti/RepresentationTheory/GrothendieckGroup/Quiver/Multiplicity.lean#L136)

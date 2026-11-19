@@ -32,4 +32,4 @@ Formalized in Tau Ceti as [`TauCeti.length_quotient_lsmul_le_finrank_mul_ord`](h
 ## Sources
 
 - [Tau Ceti documentation: `TauCeti.length_quotient_lsmul_le_finrank_mul_ord`](https://taucetiproject.org/docs/TauCeti/RingTheory/IntegralClosure/NormalizationFinite.html#TauCeti.length_quotient_lsmul_le_finrank_mul_ord)
-- [Source of `TauCeti.length_quotient_lsmul_le_finrank_mul_ord` in TauCeti/RingTheory/IntegralClosure/NormalizationFinite.lean](https://github.com/TauCetiProject/TauCeti/blob/a6027b1d24fcb935c53bd5b50d11b40991cda418/TauCeti/RingTheory/IntegralClosure/NormalizationFinite.lean#L227)
+- [Source of `TauCeti.length_quotient_lsmul_le_finrank_mul_ord` in TauCeti/RingTheory/IntegralClosure/NormalizationFinite.lean](https://github.com/TauCetiProject/TauCeti/blob/cd41bffcb343151b3e58c89392e206b11fe78c1c/TauCeti/RingTheory/IntegralClosure/NormalizationFinite.lean#L227)

@@ -25,9 +25,9 @@ Its statement uses no other declaration mapped here.
 
 ## Proof depends on
 
-- [Grothendieck's lemma](../../../analysis/part-01/banach-space-theory/part-02/grothendiecks-lemma.md)
-- [Milman–Pettis theorem](../../../analysis/part-02/convex/milman-pettis-theorem.md)
-- [Šmulian's theorem](../../../analysis/part-01/banach-space-theory/part-02/smulians-theorem.md)
+- [Grothendieck's lemma](../../../analysis/part-03/normed/part-01/grothendiecks-lemma.md)
+- [Milman–Pettis theorem](../../../analysis/part-03/convex/milman-pettis-theorem.md)
+- [Šmulian's theorem](../../../analysis/part-03/normed/part-03/smulians-theorem.md)
 
 ## Lean
 
@@ -82,4 +82,4 @@ MeasureTheory.Lp.uniformIntegrable_of_isCompact_closure_toWeakSpace.{u_1, u_2} {
 ## Sources
 
 - [Tau Ceti documentation: `MeasureTheory.Lp.isCompact_closure_toWeakSpace_iff_isBounded_and_unifIntegrable`](https://taucetiproject.org/docs/TauCeti/MeasureTheory/Function/L1Space/WeakCompact.html#MeasureTheory.Lp.isCompact_closure_toWeakSpace_iff_isBounded_and_unifIntegrable)
-- [Source of `MeasureTheory.Lp.isCompact_closure_toWeakSpace_iff_isBounded_and_unifIntegrable` in TauCeti/MeasureTheory/Function/L1Space/WeakCompact.lean](https://github.com/TauCetiProject/TauCeti/blob/a6027b1d24fcb935c53bd5b50d11b40991cda418/TauCeti/MeasureTheory/Function/L1Space/WeakCompact.lean#L215)
+- [Source of `MeasureTheory.Lp.isCompact_closure_toWeakSpace_iff_isBounded_and_unifIntegrable` in TauCeti/MeasureTheory/Function/L1Space/WeakCompact.lean](https://github.com/TauCetiProject/TauCeti/blob/cd41bffcb343151b3e58c89392e206b11fe78c1c/TauCeti/MeasureTheory/Function/L1Space/WeakCompact.lean#L215)

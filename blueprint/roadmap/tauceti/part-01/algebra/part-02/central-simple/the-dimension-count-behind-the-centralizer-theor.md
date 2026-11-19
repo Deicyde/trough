@@ -38,4 +38,4 @@ Formalized in Tau Ceti as [`TauCeti.finrank_mul_finrank_centralizer_of_isSimpleR
 ## Sources
 
 - [Tau Ceti documentation: `TauCeti.finrank_mul_finrank_centralizer_of_isSimpleRing_tensorProduct_mulOpposite`](https://taucetiproject.org/docs/TauCeti/Algebra/CentralSimple/Centralizer/Basic.html#TauCeti.finrank_mul_finrank_centralizer_of_isSimpleRing_tensorProduct_mulOpposite)
-- [Source of `TauCeti.finrank_mul_finrank_centralizer_of_isSimpleRing_tensorProduct_mulOpposite` in TauCeti/Algebra/CentralSimple/Centralizer/Basic.lean](https://github.com/TauCetiProject/TauCeti/blob/a6027b1d24fcb935c53bd5b50d11b40991cda418/TauCeti/Algebra/CentralSimple/Centralizer/Basic.lean#L304)
+- [Source of `TauCeti.finrank_mul_finrank_centralizer_of_isSimpleRing_tensorProduct_mulOpposite` in TauCeti/Algebra/CentralSimple/Centralizer/Basic.lean](https://github.com/TauCetiProject/TauCeti/blob/cd41bffcb343151b3e58c89392e206b11fe78c1c/TauCeti/Algebra/CentralSimple/Centralizer/Basic.lean#L304)

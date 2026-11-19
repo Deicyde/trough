@@ -44,4 +44,4 @@ NumberField.InfinitePlace.iSup_mul_iSup_pow_mult_le.{u_1, u_2} {K : Type u_1} {Î
 ## Sources
 
 - [Tau Ceti documentation: `NumberField.FinitePlace.iSup_mul_iSup_le`](https://taucetiproject.org/docs/TauCeti/NumberTheory/Height/LinearForm.html#NumberField.FinitePlace.iSup_mul_iSup_le)
-- [Source of `NumberField.FinitePlace.iSup_mul_iSup_le` in TauCeti/NumberTheory/Height/LinearForm.lean](https://github.com/TauCetiProject/TauCeti/blob/a6027b1d24fcb935c53bd5b50d11b40991cda418/TauCeti/NumberTheory/Height/LinearForm.lean#L266)
+- [Source of `NumberField.FinitePlace.iSup_mul_iSup_le` in TauCeti/NumberTheory/Height/LinearForm.lean](https://github.com/TauCetiProject/TauCeti/blob/cd41bffcb343151b3e58c89392e206b11fe78c1c/TauCeti/NumberTheory/Height/LinearForm.lean#L266)

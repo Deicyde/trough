@@ -37,4 +37,4 @@ Formalized in Tau Ceti as [`LinearMap.IsSymmetric.sum_norm_smul_sub_apply_eigenv
 ## Sources
 
 - [Tau Ceti documentation: `LinearMap.IsSymmetric.sum_norm_smul_sub_apply_eigenvectorBasis_sq_le_four_mul_frobenius_sq`](https://taucetiproject.org/docs/TauCeti/Analysis/InnerProductSpace/YuWangSamworth/Basic.html#LinearMap.IsSymmetric.sum_norm_smul_sub_apply_eigenvectorBasis_sq_le_four_mul_frobenius_sq)
-- [Source of `LinearMap.IsSymmetric.sum_norm_smul_sub_apply_eigenvectorBasis_sq_le_four_mul_frobenius_sq` in TauCeti/Analysis/InnerProductSpace/YuWangSamworth/Basic.lean](https://github.com/TauCetiProject/TauCeti/blob/a6027b1d24fcb935c53bd5b50d11b40991cda418/TauCeti/Analysis/InnerProductSpace/YuWangSamworth/Basic.lean#L137)
+- [Source of `LinearMap.IsSymmetric.sum_norm_smul_sub_apply_eigenvectorBasis_sq_le_four_mul_frobenius_sq` in TauCeti/Analysis/InnerProductSpace/YuWangSamworth/Basic.lean](https://github.com/TauCetiProject/TauCeti/blob/cd41bffcb343151b3e58c89392e206b11fe78c1c/TauCeti/Analysis/InnerProductSpace/YuWangSamworth/Basic.lean#L137)

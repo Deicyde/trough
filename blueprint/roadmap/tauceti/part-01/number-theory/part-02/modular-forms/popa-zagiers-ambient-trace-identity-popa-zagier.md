@@ -33,7 +33,7 @@ Its statement uses no other declaration mapped here.
 
 ## Proof depends on
 
-- [Cayley–Hamilton in size two](../../../linear-algebra/matrix/cayley-hamilton-in-size-two.md)
+- [Cayley–Hamilton in size two](../../../linear-algebra/part-01/matrix/cayley-hamilton-in-size-two.md)
 - [Classical Sturm bound for finite-index subgroups of `SL(2, ℤ)`](classical-sturm-bound-for-finite-index-subgroups.md)
 - [The Main Lemma, per character (Miyake, Lemma 4.6.8; Diamond–Shurman, Theorem 5.7.1)](the-main-lemma-per-character-miyake-lemma-4-6-8.md)
 - [Manin's lemma](manins-lemma.md)
@@ -42,7 +42,7 @@ Its statement uses no other declaration mapped here.
 - [Shimura's commutativity criterion (Proposition 3.8 of \[Shimura\]\[shimura1971\])](../hecke-ring/shimuras-commutativity-criterion-proposition-3-8.md)
 - [Shimura's decomposition of a double coset into right cosets](../hecke-ring/shimuras-decomposition-of-a-double-coset-into-ri.md)
 - [Sturm bound for subgroups of `GL(2, ℝ)` of finite relative index in `SL(2, ℤ)` with discrete strict periods](sturm-bound-for-subgroups-of-gl-2-r-of-finite-re.md)
-- [The third isomorphism theorem for coset spaces](../../../group-theory/other-results/the-third-isomorphism-theorem-for-coset-spaces.md)
+- [The third isomorphism theorem for coset spaces](../../../group-theory/other-results/part-02/the-third-isomorphism-theorem-for-coset-spaces.md)
 
 ## Lean
 
@@ -51,4 +51,4 @@ Formalized in Tau Ceti as [`TauCeti.TraceFormulaMatrixModule.PeriodRelation.trac
 ## Sources
 
 - [Tau Ceti documentation: `TauCeti.TraceFormulaMatrixModule.PeriodRelation.trace_periodAction_eq`](https://taucetiproject.org/docs/TauCeti/NumberTheory/ModularForms/LevelOne/PeriodPolynomial/EichlerShimura.html#TauCeti.TraceFormulaMatrixModule.PeriodRelation.trace_periodAction_eq)
-- [Source of `TauCeti.TraceFormulaMatrixModule.PeriodRelation.trace_periodAction_eq` in TauCeti/NumberTheory/ModularForms/LevelOne/PeriodPolynomial/EichlerShimura.lean](https://github.com/TauCetiProject/TauCeti/blob/a6027b1d24fcb935c53bd5b50d11b40991cda418/TauCeti/NumberTheory/ModularForms/LevelOne/PeriodPolynomial/EichlerShimura.lean#L529)
+- [Source of `TauCeti.TraceFormulaMatrixModule.PeriodRelation.trace_periodAction_eq` in TauCeti/NumberTheory/ModularForms/LevelOne/PeriodPolynomial/EichlerShimura.lean](https://github.com/TauCetiProject/TauCeti/blob/cd41bffcb343151b3e58c89392e206b11fe78c1c/TauCeti/NumberTheory/ModularForms/LevelOne/PeriodPolynomial/EichlerShimura.lean#L529)

@@ -8,9 +8,11 @@ proof: formalized
 
 # The relative degree bound of Kummer's theorem (Stichtenoth, Theorem 3.3.7)
 
-a place `P'`
-over `P` at which a monic `g` with irreducible reduction `γ` vanishes has relative degree at
-least `deg γ`, because `γ` is the minimal polynomial of the residue of `y` at `P'`.
+let `P'` be a
+place over `P` at which `y` is integral, and let `g` be a polynomial over `𝒪_P` with irreducible
+reduction `γ` such that `g (y)` vanishes at `P'`. Then `P'` has relative degree at least `deg γ`,
+because `γ` is associated to the minimal polynomial of the residue of `y` at `P'`, and so has the
+same degree.
 
 ```lean
 TauCeti.Place.natDegree_map_residue_le_relativeDegree.{u, u', v, v'} {k : Type u} {k' : Type u'}
@@ -18,7 +20,7 @@ TauCeti.Place.natDegree_map_residue_le_relativeDegree.{u, u', v, v'} {k : Type u
   [Algebra k' F'] [Algebra F F'] [Algebra k F'] [IsScalarTower k k' F'] [IsScalarTower k F F']
   [FiniteDimensional F F'] {P : TauCeti.Place k F} {P' : TauCeti.Place k' F'}
   (hres : TauCeti.Place.restrict k F P' = P) {y : F'} (hy : y ∈ P'.integers)
-  {g : Polynomial ↥P.integers} (hg : g.Monic)
+  {g : Polynomial ↥P.integers}
   (hirr : Irreducible (Polynomial.map (IsLocalRing.residue ↥P.integers) g))
   (hv : P'.valuation ((P.integersEval y) g) < 1) :
   (Polynomial.map (IsLocalRing.residue ↥P.integers) g).natDegree ≤
@@ -36,4 +38,4 @@ Formalized in Tau Ceti as [`TauCeti.Place.natDegree_map_residue_le_relativeDegre
 ## Sources
 
 - [Tau Ceti documentation: `TauCeti.Place.natDegree_map_residue_le_relativeDegree`](https://taucetiproject.org/docs/TauCeti/FieldTheory/FunctionField/Place/Extension/Kummer.html#TauCeti.Place.natDegree_map_residue_le_relativeDegree)
-- [Source of `TauCeti.Place.natDegree_map_residue_le_relativeDegree` in TauCeti/FieldTheory/FunctionField/Place/Extension/Kummer.lean](https://github.com/TauCetiProject/TauCeti/blob/a6027b1d24fcb935c53bd5b50d11b40991cda418/TauCeti/FieldTheory/FunctionField/Place/Extension/Kummer.lean#L293)
+- [Source of `TauCeti.Place.natDegree_map_residue_le_relativeDegree` in TauCeti/FieldTheory/FunctionField/Place/Extension/Kummer.lean](https://github.com/TauCetiProject/TauCeti/blob/cd41bffcb343151b3e58c89392e206b11fe78c1c/TauCeti/FieldTheory/FunctionField/Place/Extension/Kummer.lean#L335)

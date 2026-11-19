@@ -43,7 +43,7 @@ Its statement uses no other declaration mapped here.
 
 ## Proof depends on
 
-- [Hölder's inequality for the integral of a product](../../function/part-01/holders-inequality-for-the-integral-of-a-product.md)
+- [Hölder's inequality for disjoint pieces](../../function/part-01/holders-inequality-for-disjoint-pieces.md)
 
 ## Lean
 
@@ -74,4 +74,4 @@ TauCeti.eLpNorm_le_rpow_mul_rpow_mul_eLpNorm_of_ne_top.{u_1, u_2} {α : Type u_1
 ## Sources
 
 - [Tau Ceti documentation: `TauCeti.eLpNorm_le_rpow_mul_rpow_mul_eLpNorm`](https://taucetiproject.org/docs/TauCeti/MeasureTheory/Integral/RieszThorin.html#TauCeti.eLpNorm_le_rpow_mul_rpow_mul_eLpNorm)
-- [Source of `TauCeti.eLpNorm_le_rpow_mul_rpow_mul_eLpNorm` in TauCeti/MeasureTheory/Integral/RieszThorin.lean](https://github.com/TauCetiProject/TauCeti/blob/a6027b1d24fcb935c53bd5b50d11b40991cda418/TauCeti/MeasureTheory/Integral/RieszThorin.lean#L555)
+- [Source of `TauCeti.eLpNorm_le_rpow_mul_rpow_mul_eLpNorm` in TauCeti/MeasureTheory/Integral/RieszThorin.lean](https://github.com/TauCetiProject/TauCeti/blob/cd41bffcb343151b3e58c89392e206b11fe78c1c/TauCeti/MeasureTheory/Integral/RieszThorin.lean#L555)

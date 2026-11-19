@@ -28,4 +28,4 @@ Formalized in Tau Ceti as [`Real.isEquivalent_Gamma_natCast_add_one_add`](https:
 ## Sources
 
 - [Tau Ceti documentation: `Real.isEquivalent_Gamma_natCast_add_one_add`](https://taucetiproject.org/docs/TauCeti/Analysis/SpecialFunctions/Gamma/Basic.html#Real.isEquivalent_Gamma_natCast_add_one_add)
-- [Source of `Real.isEquivalent_Gamma_natCast_add_one_add` in TauCeti/Analysis/SpecialFunctions/Gamma/Basic.lean](https://github.com/TauCetiProject/TauCeti/blob/a6027b1d24fcb935c53bd5b50d11b40991cda418/TauCeti/Analysis/SpecialFunctions/Gamma/Basic.lean#L181)
+- [Source of `Real.isEquivalent_Gamma_natCast_add_one_add` in TauCeti/Analysis/SpecialFunctions/Gamma/Basic.lean](https://github.com/TauCetiProject/TauCeti/blob/cd41bffcb343151b3e58c89392e206b11fe78c1c/TauCeti/Analysis/SpecialFunctions/Gamma/Basic.lean#L181)

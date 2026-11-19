@@ -27,7 +27,7 @@ Its statement uses no other declaration mapped here.
 
 ## Proof depends on
 
-- [Rademacher's theorem for locally Lipschitz functions](../../analysis/part-02/calculus/part-02/rademachers-theorem-for-locally-lipschitz-functi.md)
+- [Rademacher's theorem for locally Lipschitz functions](../../analysis/part-03/calculus/part-02/rademachers-theorem-for-locally-lipschitz-functi.md)
 
 ## Lean
 
@@ -36,5 +36,5 @@ Formalized in Tau Ceti as [`TauCeti.lintegral_perimeter_lineSection_le`](https:/
 ## Sources
 
 - [Tau Ceti documentation: `TauCeti.lintegral_perimeter_lineSection_le`](https://taucetiproject.org/docs/TauCeti/Analysis/BoundedVariation/Slicing/Basic.html#TauCeti.lintegral_perimeter_lineSection_le)
-- [Source of `TauCeti.lintegral_perimeter_lineSection_le` in TauCeti/Analysis/BoundedVariation/Slicing/Basic.lean](https://github.com/TauCetiProject/TauCeti/blob/a6027b1d24fcb935c53bd5b50d11b40991cda418/TauCeti/Analysis/BoundedVariation/Slicing/Basic.lean#L319)
-- [Tau Ceti roadmap status: Euclidean isoperimetry, sharp inequalities, and rigidity](https://github.com/TauCetiProject/TauCetiRoadmap/blob/9f7c032adaf1b838e8183d63ff3cfa886d061cb3/TauCetiRoadmap/Isoperimetry/STATUS.md)
+- [Source of `TauCeti.lintegral_perimeter_lineSection_le` in TauCeti/Analysis/BoundedVariation/Slicing/Basic.lean](https://github.com/TauCetiProject/TauCeti/blob/cd41bffcb343151b3e58c89392e206b11fe78c1c/TauCeti/Analysis/BoundedVariation/Slicing/Basic.lean#L344)
+- [Tau Ceti roadmap status: Euclidean isoperimetry, sharp inequalities, and rigidity](https://github.com/TauCetiProject/TauCetiRoadmap/blob/612845ab80fb9c2b9bee724a156756ee78031591/TauCetiRoadmap/Isoperimetry/STATUS.md)

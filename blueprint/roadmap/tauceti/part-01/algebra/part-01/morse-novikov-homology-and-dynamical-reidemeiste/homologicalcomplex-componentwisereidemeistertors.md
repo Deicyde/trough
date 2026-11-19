@@ -15,8 +15,8 @@ when `C` is unbounded.
 
 ```lean
 HomologicalComplex.componentwiseReidemeisterTorsion.{u_1, u_2, u_3} {A : Type u_1} [CommRing A]
-  (C : ChainComplex (ModuleCat A) ℤ) {n : ℤ → ℕ} (c : (i : ℤ) → Module.Basis (Fin (n i)) A ↑(C.X i))
-  {Q : Type u_2} [CommRing Q] [IsArtinianRing Q] [IsReduced Q] (f : A →+* Q) : Q
+  {Q : Type u_2} [CommRing Q] [IsArtinianRing Q] [IsReduced Q] (C : ChainComplex (ModuleCat A) ℤ)
+  {n : ℤ → ℕ} (c : (i : ℤ) → Module.Basis (Fin (n i)) A ↑(C.X i)) (f : A →+* Q) : Q
 ```
 
 ## Depends on
@@ -30,5 +30,5 @@ Formalized in Tau Ceti as [`HomologicalComplex.componentwiseReidemeisterTorsion`
 ## Sources
 
 - [Tau Ceti documentation: `HomologicalComplex.componentwiseReidemeisterTorsion`](https://taucetiproject.org/docs/TauCeti/Algebra/Homology/ReidemeisterTorsion/Componentwise.html#HomologicalComplex.componentwiseReidemeisterTorsion)
-- [Source of `HomologicalComplex.componentwiseReidemeisterTorsion` in TauCeti/Algebra/Homology/ReidemeisterTorsion/Componentwise.lean](https://github.com/TauCetiProject/TauCeti/blob/a6027b1d24fcb935c53bd5b50d11b40991cda418/TauCeti/Algebra/Homology/ReidemeisterTorsion/Componentwise.lean#L94)
-- [Tau Ceti roadmap status: Morse–Novikov homology and dynamical Reidemeister torsion](https://github.com/TauCetiProject/TauCetiRoadmap/blob/9f7c032adaf1b838e8183d63ff3cfa886d061cb3/TauCetiRoadmap/MorseNovikov/STATUS.md)
+- [Source of `HomologicalComplex.componentwiseReidemeisterTorsion` in TauCeti/Algebra/Homology/ReidemeisterTorsion/Componentwise.lean](https://github.com/TauCetiProject/TauCeti/blob/cd41bffcb343151b3e58c89392e206b11fe78c1c/TauCeti/Algebra/Homology/ReidemeisterTorsion/Componentwise.lean#L121)
+- [Tau Ceti roadmap status: Morse–Novikov homology and dynamical Reidemeister torsion](https://github.com/TauCetiProject/TauCetiRoadmap/blob/612845ab80fb9c2b9bee724a156756ee78031591/TauCetiRoadmap/MorseNovikov/STATUS.md)

@@ -34,4 +34,4 @@ Formalized in Tau Ceti as [`TauCeti.klDiv_eq_klDiv_add_klDiv`](https://taucetipr
 ## Sources
 
 - [Tau Ceti documentation: `TauCeti.klDiv_eq_klDiv_add_klDiv`](https://taucetiproject.org/docs/TauCeti/InformationTheory/KullbackLeibler/ChangeOfReference.html#TauCeti.klDiv_eq_klDiv_add_klDiv)
-- [Source of `TauCeti.klDiv_eq_klDiv_add_klDiv` in TauCeti/InformationTheory/KullbackLeibler/ChangeOfReference.lean](https://github.com/TauCetiProject/TauCeti/blob/a6027b1d24fcb935c53bd5b50d11b40991cda418/TauCeti/InformationTheory/KullbackLeibler/ChangeOfReference.lean#L70)
+- [Source of `TauCeti.klDiv_eq_klDiv_add_klDiv` in TauCeti/InformationTheory/KullbackLeibler/ChangeOfReference.lean](https://github.com/TauCetiProject/TauCeti/blob/cd41bffcb343151b3e58c89392e206b11fe78c1c/TauCeti/InformationTheory/KullbackLeibler/ChangeOfReference.lean#L70)

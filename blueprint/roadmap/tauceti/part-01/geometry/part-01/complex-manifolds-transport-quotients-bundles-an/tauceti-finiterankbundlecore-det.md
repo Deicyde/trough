@@ -17,7 +17,7 @@ TauCeti.FiniteRankBundleCore.det.{u, u_1} {𝕜 : Type u_1} [NontriviallyNormedF
 
 ## Depends on
 
-- [TauCeti.FiniteRankBundleCore](../../../topology/topological-k-theory-of-vector-bundles/tauceti-finiterankbundlecore.md)
+- [TauCeti.FiniteRankBundleCore](../../../../part-02/topology/topological-k-theory-of-vector-bundles/tauceti-finiterankbundlecore.md)
 
 ## Lean
 
@@ -26,5 +26,5 @@ Formalized in Tau Ceti as [`TauCeti.FiniteRankBundleCore.det`](https://taucetipr
 ## Sources
 
 - [Tau Ceti documentation: `TauCeti.FiniteRankBundleCore.det`](https://taucetiproject.org/docs/TauCeti/Topology/VectorBundle/FiniteRank/ExteriorPower.html#TauCeti.FiniteRankBundleCore.det)
-- [Source of `TauCeti.FiniteRankBundleCore.det` in TauCeti/Topology/VectorBundle/FiniteRank/ExteriorPower.lean](https://github.com/TauCetiProject/TauCeti/blob/a6027b1d24fcb935c53bd5b50d11b40991cda418/TauCeti/Topology/VectorBundle/FiniteRank/ExteriorPower.lean#L240)
-- [Tau Ceti roadmap status: Complex manifolds: transport, quotients, bundles, and gluing](https://github.com/TauCetiProject/TauCetiRoadmap/blob/9f7c032adaf1b838e8183d63ff3cfa886d061cb3/TauCetiRoadmap/ComplexManifolds/STATUS.md)
+- [Source of `TauCeti.FiniteRankBundleCore.det` in TauCeti/Topology/VectorBundle/FiniteRank/ExteriorPower.lean](https://github.com/TauCetiProject/TauCeti/blob/cd41bffcb343151b3e58c89392e206b11fe78c1c/TauCeti/Topology/VectorBundle/FiniteRank/ExteriorPower.lean#L240)
+- [Tau Ceti roadmap status: Complex manifolds: transport, quotients, bundles, and gluing](https://github.com/TauCetiProject/TauCetiRoadmap/blob/612845ab80fb9c2b9bee724a156756ee78031591/TauCetiRoadmap/ComplexManifolds/STATUS.md)

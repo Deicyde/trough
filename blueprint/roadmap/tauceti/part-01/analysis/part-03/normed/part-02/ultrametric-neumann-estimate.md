@@ -23,7 +23,7 @@ Its statement uses no other declaration mapped here.
 
 ## Proof depends on
 
-- [TauCeti.IsNormMulUnit](../../../../ring-theory/part-01/restricted-power-series-and-tate-algebras/part-01/tauceti-isnormmulunit.md)
+- [TauCeti.IsNormMulUnit](../../../../ring-theory/part-01/restricted-power-series-and-tate-algebras/tauceti-isnormmulunit.md)
 
 ## Lean
 
@@ -41,4 +41,4 @@ TauCeti.norm_inverse_one_sub_sub_one.{u_1} {R : Type u_1} [NormedRing R] [HasSum
 ## Sources
 
 - [Tau Ceti documentation: `TauCeti.norm_inverse_one_sub`](https://taucetiproject.org/docs/TauCeti/Analysis/Normed/Ring/UnitBall.html#TauCeti.norm_inverse_one_sub)
-- [Source of `TauCeti.norm_inverse_one_sub` in TauCeti/Analysis/Normed/Ring/UnitBall.lean](https://github.com/TauCetiProject/TauCeti/blob/a6027b1d24fcb935c53bd5b50d11b40991cda418/TauCeti/Analysis/Normed/Ring/UnitBall.lean#L157)
+- [Source of `TauCeti.norm_inverse_one_sub` in TauCeti/Analysis/Normed/Ring/UnitBall.lean](https://github.com/TauCetiProject/TauCeti/blob/cd41bffcb343151b3e58c89392e206b11fe78c1c/TauCeti/Analysis/Normed/Ring/UnitBall.lean#L157)

@@ -32,5 +32,5 @@ Formalized in Tau Ceti as [`TauCeti.CommHopfAlgCat.existsUnique_baseChangeHopfId
 ## Sources
 
 - [Tau Ceti documentation: `TauCeti.CommHopfAlgCat.existsUnique_baseChangeHopfIdeal_eq_iff`](https://taucetiproject.org/docs/TauCeti/Algebra/AlgebraicGroup/HopfIdeal/Descent.html#TauCeti.CommHopfAlgCat.existsUnique_baseChangeHopfIdeal_eq_iff)
-- [Source of `TauCeti.CommHopfAlgCat.existsUnique_baseChangeHopfIdeal_eq_iff` in TauCeti/Algebra/AlgebraicGroup/HopfIdeal/Descent.lean](https://github.com/TauCetiProject/TauCeti/blob/a6027b1d24fcb935c53bd5b50d11b40991cda418/TauCeti/Algebra/AlgebraicGroup/HopfIdeal/Descent.lean#L136)
-- [Tau Ceti roadmap status: Reductive algebraic groups](https://github.com/TauCetiProject/TauCetiRoadmap/blob/9f7c032adaf1b838e8183d63ff3cfa886d061cb3/TauCetiRoadmap/ReductiveGroups/STATUS.md)
+- [Source of `TauCeti.CommHopfAlgCat.existsUnique_baseChangeHopfIdeal_eq_iff` in TauCeti/Algebra/AlgebraicGroup/HopfIdeal/Descent.lean](https://github.com/TauCetiProject/TauCeti/blob/cd41bffcb343151b3e58c89392e206b11fe78c1c/TauCeti/Algebra/AlgebraicGroup/HopfIdeal/Descent.lean#L136)
+- [Tau Ceti roadmap status: Reductive algebraic groups](https://github.com/TauCetiProject/TauCetiRoadmap/blob/612845ab80fb9c2b9bee724a156756ee78031591/TauCetiRoadmap/ReductiveGroups/STATUS.md)

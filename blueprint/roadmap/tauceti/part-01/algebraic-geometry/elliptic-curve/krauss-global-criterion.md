@@ -42,4 +42,4 @@ Formalized in Tau Ceti as [`TauCeti.krausGlobalCondition_iff_exists_integralMode
 ## Sources
 
 - [Tau Ceti documentation: `TauCeti.krausGlobalCondition_iff_exists_integralModel`](https://taucetiproject.org/docs/TauCeti/AlgebraicGeometry/EllipticCurve/GlobalModels/Kraus.html#TauCeti.krausGlobalCondition_iff_exists_integralModel)
-- [Source of `TauCeti.krausGlobalCondition_iff_exists_integralModel` in TauCeti/AlgebraicGeometry/EllipticCurve/GlobalModels/Kraus.lean](https://github.com/TauCetiProject/TauCeti/blob/a6027b1d24fcb935c53bd5b50d11b40991cda418/TauCeti/AlgebraicGeometry/EllipticCurve/GlobalModels/Kraus.lean#L348)
+- [Source of `TauCeti.krausGlobalCondition_iff_exists_integralModel` in TauCeti/AlgebraicGeometry/EllipticCurve/GlobalModels/Kraus.lean](https://github.com/TauCetiProject/TauCeti/blob/cd41bffcb343151b3e58c89392e206b11fe78c1c/TauCeti/AlgebraicGeometry/EllipticCurve/GlobalModels/Kraus.lean#L348)

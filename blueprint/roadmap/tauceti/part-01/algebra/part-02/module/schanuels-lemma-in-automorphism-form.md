@@ -34,4 +34,4 @@ Formalized in Tau Ceti as [`TauCeti.exists_linearEquiv_comp_fst_eq_comp_snd_comp
 ## Sources
 
 - [Tau Ceti documentation: `TauCeti.exists_linearEquiv_comp_fst_eq_comp_snd_comp`](https://taucetiproject.org/docs/TauCeti/Algebra/Module/Projective/Schanuel.html#TauCeti.exists_linearEquiv_comp_fst_eq_comp_snd_comp)
-- [Source of `TauCeti.exists_linearEquiv_comp_fst_eq_comp_snd_comp` in TauCeti/Algebra/Module/Projective/Schanuel.lean](https://github.com/TauCetiProject/TauCeti/blob/a6027b1d24fcb935c53bd5b50d11b40991cda418/TauCeti/Algebra/Module/Projective/Schanuel.lean#L76)
+- [Source of `TauCeti.exists_linearEquiv_comp_fst_eq_comp_snd_comp` in TauCeti/Algebra/Module/Projective/Schanuel.lean](https://github.com/TauCetiProject/TauCeti/blob/cd41bffcb343151b3e58c89392e206b11fe78c1c/TauCeti/Algebra/Module/Projective/Schanuel.lean#L76)

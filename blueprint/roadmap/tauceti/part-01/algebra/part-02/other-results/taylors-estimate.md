@@ -30,4 +30,4 @@ Formalized in Tau Ceti as [`Polynomial.mul_dvd_eval_sub_eval_sub_mul`](https://t
 ## Sources
 
 - [Tau Ceti documentation: `Polynomial.mul_dvd_eval_sub_eval_sub_mul`](https://taucetiproject.org/docs/TauCeti/Algebra/Polynomial/Identities.html#Polynomial.mul_dvd_eval_sub_eval_sub_mul)
-- [Source of `Polynomial.mul_dvd_eval_sub_eval_sub_mul` in TauCeti/Algebra/Polynomial/Identities.lean](https://github.com/TauCetiProject/TauCeti/blob/a6027b1d24fcb935c53bd5b50d11b40991cda418/TauCeti/Algebra/Polynomial/Identities.lean#L32)
+- [Source of `Polynomial.mul_dvd_eval_sub_eval_sub_mul` in TauCeti/Algebra/Polynomial/Identities.lean](https://github.com/TauCetiProject/TauCeti/blob/cd41bffcb343151b3e58c89392e206b11fe78c1c/TauCeti/Algebra/Polynomial/Identities.lean#L32)

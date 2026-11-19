@@ -2,10 +2,10 @@
 navigation: transparent
 ---
 
-# Three-dimensional Poincaré… to Other results
+# Symplectic geometry and… to Other results
 
+- [Symplectic geometry and Hamiltonian mechanics](symplectic-geometry-and-hamiltonian-mechanics/README.md)
 - [Three-dimensional Poincaré through Ricci flow with surgery](three-dimensional-poincare-through-ricci-flow-wi/README.md)
-- [The Yamabe problem and conformal scalar curvature](the-yamabe-problem-and-conformal-scalar-curvatur/README.md)
 - [Contact](contact/README.md)
 - [Convex](convex/README.md)
 - [Lie](lie/README.md)

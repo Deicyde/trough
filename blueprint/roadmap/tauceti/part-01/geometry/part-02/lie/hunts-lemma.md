@@ -35,4 +35,4 @@ Formalized in Tau Ceti as [`LeftInvariantDerivation.exists_Ad_lie_eq_zero`](http
 ## Sources
 
 - [Tau Ceti documentation: `LeftInvariantDerivation.exists_Ad_lie_eq_zero`](https://taucetiproject.org/docs/TauCeti/Geometry/Lie/Adjoint/InvariantForm.html#LeftInvariantDerivation.exists_Ad_lie_eq_zero)
-- [Source of `LeftInvariantDerivation.exists_Ad_lie_eq_zero` in TauCeti/Geometry/Lie/Adjoint/InvariantForm.lean](https://github.com/TauCetiProject/TauCeti/blob/a6027b1d24fcb935c53bd5b50d11b40991cda418/TauCeti/Geometry/Lie/Adjoint/InvariantForm.lean#L278)
+- [Source of `LeftInvariantDerivation.exists_Ad_lie_eq_zero` in TauCeti/Geometry/Lie/Adjoint/InvariantForm.lean](https://github.com/TauCetiProject/TauCeti/blob/cd41bffcb343151b3e58c89392e206b11fe78c1c/TauCeti/Geometry/Lie/Adjoint/InvariantForm.lean#L278)

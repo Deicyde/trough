@@ -34,4 +34,4 @@ Formalized in Tau Ceti as [`MeasureTheory.AnalyticSet.exists_measurable_uniformi
 ## Sources
 
 - [Tau Ceti documentation: `MeasureTheory.AnalyticSet.exists_measurable_uniformization`](https://taucetiproject.org/docs/TauCeti/MeasureTheory/MeasurableSpace/Uniformization.html#MeasureTheory.AnalyticSet.exists_measurable_uniformization)
-- [Source of `MeasureTheory.AnalyticSet.exists_measurable_uniformization` in TauCeti/MeasureTheory/MeasurableSpace/Uniformization.lean](https://github.com/TauCetiProject/TauCeti/blob/a6027b1d24fcb935c53bd5b50d11b40991cda418/TauCeti/MeasureTheory/MeasurableSpace/Uniformization.lean#L123)
+- [Source of `MeasureTheory.AnalyticSet.exists_measurable_uniformization` in TauCeti/MeasureTheory/MeasurableSpace/Uniformization.lean](https://github.com/TauCetiProject/TauCeti/blob/cd41bffcb343151b3e58c89392e206b11fe78c1c/TauCeti/MeasureTheory/MeasurableSpace/Uniformization.lean#L123)

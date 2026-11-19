@@ -34,4 +34,4 @@ Formalized in Tau Ceti as [`MeasureTheory.ProbabilityMeasure.tendsto_iff_forall_
 ## Sources
 
 - [Tau Ceti documentation: `MeasureTheory.ProbabilityMeasure.tendsto_iff_forall_continuousAt_tendsto_cdf`](https://taucetiproject.org/docs/TauCeti/MeasureTheory/Measure/ProbabilityMeasure/Cdf.html#MeasureTheory.ProbabilityMeasure.tendsto_iff_forall_continuousAt_tendsto_cdf)
-- [Source of `MeasureTheory.ProbabilityMeasure.tendsto_iff_forall_continuousAt_tendsto_cdf` in TauCeti/MeasureTheory/Measure/ProbabilityMeasure/Cdf.lean](https://github.com/TauCetiProject/TauCeti/blob/a6027b1d24fcb935c53bd5b50d11b40991cda418/TauCeti/MeasureTheory/Measure/ProbabilityMeasure/Cdf.lean#L105)
+- [Source of `MeasureTheory.ProbabilityMeasure.tendsto_iff_forall_continuousAt_tendsto_cdf` in TauCeti/MeasureTheory/Measure/ProbabilityMeasure/Cdf.lean](https://github.com/TauCetiProject/TauCeti/blob/cd41bffcb343151b3e58c89392e206b11fe78c1c/TauCeti/MeasureTheory/Measure/ProbabilityMeasure/Cdf.lean#L105)

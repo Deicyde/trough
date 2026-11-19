@@ -45,4 +45,4 @@ Formalized in Tau Ceti as [`TauCeti.isLocalDiffeomorph_globalFlow_comp`](https:/
 ## Sources
 
 - [Tau Ceti documentation: `TauCeti.isLocalDiffeomorph_globalFlow_comp`](https://taucetiproject.org/docs/TauCeti/Geometry/Manifold/Flow/FlowOut.html#TauCeti.isLocalDiffeomorph_globalFlow_comp)
-- [Source of `TauCeti.isLocalDiffeomorph_globalFlow_comp` in TauCeti/Geometry/Manifold/Flow/FlowOut.lean](https://github.com/TauCetiProject/TauCeti/blob/a6027b1d24fcb935c53bd5b50d11b40991cda418/TauCeti/Geometry/Manifold/Flow/FlowOut.lean#L87)
+- [Source of `TauCeti.isLocalDiffeomorph_globalFlow_comp` in TauCeti/Geometry/Manifold/Flow/FlowOut.lean](https://github.com/TauCetiProject/TauCeti/blob/cd41bffcb343151b3e58c89392e206b11fe78c1c/TauCeti/Geometry/Manifold/Flow/FlowOut.lean#L87)

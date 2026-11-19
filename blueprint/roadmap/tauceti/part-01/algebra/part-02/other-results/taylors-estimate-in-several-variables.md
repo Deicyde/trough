@@ -32,4 +32,4 @@ Formalized in Tau Ceti as [`MvPolynomial.mul_dvd_eval_sub_eval_sub_sum_pderiv`](
 ## Sources
 
 - [Tau Ceti documentation: `MvPolynomial.mul_dvd_eval_sub_eval_sub_sum_pderiv`](https://taucetiproject.org/docs/TauCeti/Algebra/MvPolynomial/PDeriv.html#MvPolynomial.mul_dvd_eval_sub_eval_sub_sum_pderiv)
-- [Source of `MvPolynomial.mul_dvd_eval_sub_eval_sub_sum_pderiv` in TauCeti/Algebra/MvPolynomial/PDeriv.lean](https://github.com/TauCetiProject/TauCeti/blob/a6027b1d24fcb935c53bd5b50d11b40991cda418/TauCeti/Algebra/MvPolynomial/PDeriv.lean#L192)
+- [Source of `MvPolynomial.mul_dvd_eval_sub_eval_sub_sum_pderiv` in TauCeti/Algebra/MvPolynomial/PDeriv.lean](https://github.com/TauCetiProject/TauCeti/blob/cd41bffcb343151b3e58c89392e206b11fe78c1c/TauCeti/Algebra/MvPolynomial/PDeriv.lean#L192)

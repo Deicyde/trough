@@ -50,4 +50,4 @@ TauCeti.two_mul_sq_measureReal_sub_le_klDiv.{u_1} {α : Type u_1} [MeasurableSpa
 ## Sources
 
 - [Tau Ceti documentation: `TauCeti.etvDist_sq_le_two_mul_klDiv`](https://taucetiproject.org/docs/TauCeti/InformationTheory/KullbackLeibler/Pinsker.html#TauCeti.etvDist_sq_le_two_mul_klDiv)
-- [Source of `TauCeti.etvDist_sq_le_two_mul_klDiv` in TauCeti/InformationTheory/KullbackLeibler/Pinsker.lean](https://github.com/TauCetiProject/TauCeti/blob/a6027b1d24fcb935c53bd5b50d11b40991cda418/TauCeti/InformationTheory/KullbackLeibler/Pinsker.lean#L146)
+- [Source of `TauCeti.etvDist_sq_le_two_mul_klDiv` in TauCeti/InformationTheory/KullbackLeibler/Pinsker.lean](https://github.com/TauCetiProject/TauCeti/blob/cd41bffcb343151b3e58c89392e206b11fe78c1c/TauCeti/InformationTheory/KullbackLeibler/Pinsker.lean#L146)

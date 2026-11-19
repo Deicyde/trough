@@ -36,4 +36,4 @@ Formalized in Tau Ceti as [`TauCeti.Iwasawa.exists_isPseudoIsomorphism_prod_pi_q
 ## Sources
 
 - [Tau Ceti documentation: `TauCeti.Iwasawa.exists_isPseudoIsomorphism_prod_pi_quotient_pow`](https://taucetiproject.org/docs/TauCeti/RingTheory/Iwasawa/StructureTheorem.html#TauCeti.Iwasawa.exists_isPseudoIsomorphism_prod_pi_quotient_pow)
-- [Source of `TauCeti.Iwasawa.exists_isPseudoIsomorphism_prod_pi_quotient_pow` in TauCeti/RingTheory/Iwasawa/StructureTheorem.lean](https://github.com/TauCetiProject/TauCeti/blob/a6027b1d24fcb935c53bd5b50d11b40991cda418/TauCeti/RingTheory/Iwasawa/StructureTheorem.lean#L169)
+- [Source of `TauCeti.Iwasawa.exists_isPseudoIsomorphism_prod_pi_quotient_pow` in TauCeti/RingTheory/Iwasawa/StructureTheorem.lean](https://github.com/TauCetiProject/TauCeti/blob/cd41bffcb343151b3e58c89392e206b11fe78c1c/TauCeti/RingTheory/Iwasawa/StructureTheorem.lean#L169)

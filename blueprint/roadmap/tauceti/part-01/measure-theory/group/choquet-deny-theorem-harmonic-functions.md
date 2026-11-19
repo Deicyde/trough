@@ -46,4 +46,4 @@ MeasureTheory.Measure.eq_smul_volume_of_conv_eq_self {ν : MeasureTheory.Measure
 ## Sources
 
 - [Tau Ceti documentation: `MeasureTheory.Measure.apply_eq_of_forall_eq_integral_sub`](https://taucetiproject.org/docs/TauCeti/MeasureTheory/Group/ChoquetDeny.html#MeasureTheory.Measure.apply_eq_of_forall_eq_integral_sub)
-- [Source of `MeasureTheory.Measure.apply_eq_of_forall_eq_integral_sub` in TauCeti/MeasureTheory/Group/ChoquetDeny.lean](https://github.com/TauCetiProject/TauCeti/blob/a6027b1d24fcb935c53bd5b50d11b40991cda418/TauCeti/MeasureTheory/Group/ChoquetDeny.lean#L149)
+- [Source of `MeasureTheory.Measure.apply_eq_of_forall_eq_integral_sub` in TauCeti/MeasureTheory/Group/ChoquetDeny.lean](https://github.com/TauCetiProject/TauCeti/blob/cd41bffcb343151b3e58c89392e206b11fe78c1c/TauCeti/MeasureTheory/Group/ChoquetDeny.lean#L149)

@@ -35,4 +35,4 @@ Formalized in Tau Ceti as [`TauCeti.smoothCommHopfAlgProperty_of_charZero`](http
 ## Sources
 
 - [Tau Ceti documentation: `TauCeti.smoothCommHopfAlgProperty_of_charZero`](https://taucetiproject.org/docs/TauCeti/Algebra/AlgebraicGroup/Smooth/CharZero.html#TauCeti.smoothCommHopfAlgProperty_of_charZero)
-- [Source of `TauCeti.smoothCommHopfAlgProperty_of_charZero` in TauCeti/Algebra/AlgebraicGroup/Smooth/CharZero.lean](https://github.com/TauCetiProject/TauCeti/blob/a6027b1d24fcb935c53bd5b50d11b40991cda418/TauCeti/Algebra/AlgebraicGroup/Smooth/CharZero.lean#L148)
+- [Source of `TauCeti.smoothCommHopfAlgProperty_of_charZero` in TauCeti/Algebra/AlgebraicGroup/Smooth/CharZero.lean](https://github.com/TauCetiProject/TauCeti/blob/cd41bffcb343151b3e58c89392e206b11fe78c1c/TauCeti/Algebra/AlgebraicGroup/Smooth/CharZero.lean#L148)

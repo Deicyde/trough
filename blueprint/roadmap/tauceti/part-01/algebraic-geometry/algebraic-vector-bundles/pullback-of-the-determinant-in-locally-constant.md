@@ -32,5 +32,5 @@ Formalized in Tau Ceti as [`TauCeti.AlgebraicGeometry.FiniteLocallyFreeSheaf.pul
 ## Sources
 
 - [Tau Ceti documentation: `TauCeti.AlgebraicGeometry.FiniteLocallyFreeSheaf.pullbackDetIso`](https://taucetiproject.org/docs/TauCeti/AlgebraicGeometry/VectorBundle/Determinant/Pullback.html#TauCeti.AlgebraicGeometry.FiniteLocallyFreeSheaf.pullbackDetIso)
-- [Source of `TauCeti.AlgebraicGeometry.FiniteLocallyFreeSheaf.pullbackDetIso` in TauCeti/AlgebraicGeometry/VectorBundle/Determinant/Pullback.lean](https://github.com/TauCetiProject/TauCeti/blob/a6027b1d24fcb935c53bd5b50d11b40991cda418/TauCeti/AlgebraicGeometry/VectorBundle/Determinant/Pullback.lean#L151)
-- [Tau Ceti roadmap status: Algebraic vector bundles](https://github.com/TauCetiProject/TauCetiRoadmap/blob/9f7c032adaf1b838e8183d63ff3cfa886d061cb3/TauCetiRoadmap/AlgebraicVectorBundles/STATUS.md)
+- [Source of `TauCeti.AlgebraicGeometry.FiniteLocallyFreeSheaf.pullbackDetIso` in TauCeti/AlgebraicGeometry/VectorBundle/Determinant/Pullback.lean](https://github.com/TauCetiProject/TauCeti/blob/cd41bffcb343151b3e58c89392e206b11fe78c1c/TauCeti/AlgebraicGeometry/VectorBundle/Determinant/Pullback.lean#L151)
+- [Tau Ceti roadmap status: Algebraic vector bundles](https://github.com/TauCetiProject/TauCetiRoadmap/blob/612845ab80fb9c2b9bee724a156756ee78031591/TauCetiRoadmap/AlgebraicVectorBundles/STATUS.md)

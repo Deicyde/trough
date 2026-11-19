@@ -37,7 +37,7 @@ TauCeti.sw2Class_formClass_traceTransfer_smul_sq.{u} {K L : Type u} [Field K] [I
 - [The index-two degree-one Evens norm](../../../representation-theory/continuous-cohomology-of-profinite-groups/the-index-two-degree-one-evens-norm.md)
 - [The Kummer isomorphism](../../../representation-theory/continuous-cohomology-of-profinite-groups/the-kummer-isomorphism.md)
 - [Shapiro's lemma in degree one](../../../representation-theory/homological/shapiros-lemma-in-degree-one.md)
-- [TauCeti.multiplicativeSquareClassEquiv](../../../linear-algebra/orthogonal-and-spin-groups/tauceti-multiplicativesquareclassequiv.md)
+- [TauCeti.multiplicativeSquareClassEquiv](../../../linear-algebra/part-01/orthogonal-and-spin-groups/tauceti-multiplicativesquareclassequiv.md)
 
 ## Proof depends on
 
@@ -48,7 +48,7 @@ TauCeti.sw2Class_formClass_traceTransfer_smul_sq.{u} {K L : Type u} [Field K] [I
 - [The Skolem-Noether theorem](../../../algebra/part-02/central-simple/the-skolem-noether-theorem.md)
 - [The splitting criterion for quaternion algebras](the-splitting-criterion-for-quaternion-algebras.md)
 - [Wedderburn-Artin for central simple algebras](../../../algebra/part-02/central-simple/wedderburn-artin-for-central-simple-algebras.md)
-- [Witt's chain theorem in its nontrivial range](../../../linear-algebra/quadratic-form/witts-chain-theorem-in-its-nontrivial-range.md)
+- [Witt's chain theorem in its nontrivial range](../../../linear-algebra/part-01/quadratic-form/witts-chain-theorem-in-its-nontrivial-range.md)
 
 ## Lean
 
@@ -136,5 +136,5 @@ TauCeti.sw2_eq_add_galoisEvens_add_cup_of_equivalent_traceTransfer.{u} {K L : Ty
 ## Sources
 
 - [Tau Ceti documentation: `TauCeti.sw2Class_formClass_traceTransfer_smul_sq`](https://taucetiproject.org/docs/TauCeti/FieldTheory/QuadraticForm/StiefelWhitney/QuadraticExtension.html#TauCeti.sw2Class_formClass_traceTransfer_smul_sq)
-- [Source of `TauCeti.sw2Class_formClass_traceTransfer_smul_sq` in TauCeti/FieldTheory/QuadraticForm/StiefelWhitney/QuadraticExtension.lean](https://github.com/TauCetiProject/TauCeti/blob/a6027b1d24fcb935c53bd5b50d11b40991cda418/TauCeti/FieldTheory/QuadraticForm/StiefelWhitney/QuadraticExtension.lean#L238)
-- [Tau Ceti roadmap status: Quadratic forms and cohomological invariants](https://github.com/TauCetiProject/TauCetiRoadmap/blob/9f7c032adaf1b838e8183d63ff3cfa886d061cb3/TauCetiRoadmap/QuadraticFormInvariants/STATUS.md)
+- [Source of `TauCeti.sw2Class_formClass_traceTransfer_smul_sq` in TauCeti/FieldTheory/QuadraticForm/StiefelWhitney/QuadraticExtension.lean](https://github.com/TauCetiProject/TauCeti/blob/cd41bffcb343151b3e58c89392e206b11fe78c1c/TauCeti/FieldTheory/QuadraticForm/StiefelWhitney/QuadraticExtension.lean#L238)
+- [Tau Ceti roadmap status: Quadratic forms and cohomological invariants](https://github.com/TauCetiProject/TauCetiRoadmap/blob/612845ab80fb9c2b9bee724a156756ee78031591/TauCetiRoadmap/QuadraticFormInvariants/STATUS.md)

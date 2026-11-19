@@ -31,4 +31,4 @@ Formalized in Tau Ceti as [`TauCeti.PermutationTriple.eulerChar_le_ncard_mul_eul
 ## Sources
 
 - [Tau Ceti documentation: `TauCeti.PermutationTriple.eulerChar_le_ncard_mul_eulerChar_blockQuotient`](https://taucetiproject.org/docs/TauCeti/Combinatorics/PermutationTriple/BlockQuotient.html#TauCeti.PermutationTriple.eulerChar_le_ncard_mul_eulerChar_blockQuotient)
-- [Source of `TauCeti.PermutationTriple.eulerChar_le_ncard_mul_eulerChar_blockQuotient` in TauCeti/Combinatorics/PermutationTriple/BlockQuotient.lean](https://github.com/TauCetiProject/TauCeti/blob/a6027b1d24fcb935c53bd5b50d11b40991cda418/TauCeti/Combinatorics/PermutationTriple/BlockQuotient.lean#L584)
+- [Source of `TauCeti.PermutationTriple.eulerChar_le_ncard_mul_eulerChar_blockQuotient` in TauCeti/Combinatorics/PermutationTriple/BlockQuotient.lean](https://github.com/TauCetiProject/TauCeti/blob/cd41bffcb343151b3e58c89392e206b11fe78c1c/TauCeti/Combinatorics/PermutationTriple/BlockQuotient.lean#L601)

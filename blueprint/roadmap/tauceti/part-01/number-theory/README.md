@@ -2,8 +2,9 @@
 
 Results in Tau Ceti's `TauCeti.NumberTheory` modules, and the roadmaps whose articles are mostly there: by roadmap, then by area.
 
-## [Arithmetic Dirichlet series and… to Newton polygons of polynomials…](part-01/README.md)
+## [Analytic number theory, Part I to Multiquadratic fields and genus…](part-01/README.md)
 
+- [Analytic number theory, Part I](part-01/analytic-number-theory-part-i/README.md)
 - [Arithmetic Dirichlet series and Tauberian methods](part-01/arithmetic-dirichlet-series-and-tauberian-method/README.md)
 - [Bhargava's mass formula for étale algebras over a local field](part-01/bhargavas-mass-formula-for-etale-algebras-over-a/README.md)
 - [Bounded Laplace and ordered Dirichlet boundary convergence](part-01/bounded-laplace-and-ordered-dirichlet-boundary-c/README.md)
@@ -23,10 +24,11 @@ Results in Tau Ceti's `TauCeti.NumberTheory` modules, and the roadmaps whose art
 - [Local Galois groups of p-adic fields](part-01/local-galois-groups-of-p-adic-fields/README.md)
 - [Modular forms — Hecke theory, newforms, and L-functions](part-01/modular-forms-hecke-theory-newforms-and-l-functi/README.md)
 - [Multiquadratic fields and genus theory](part-01/multiquadratic-fields-and-genus-theory/README.md)
-- [Newton polygons of polynomials and power series](part-01/newton-polygons-of-polynomials-and-power-series/README.md)
 
-## [Number fields, ramification… to Transcendental](part-02/README.md)
+## [Newton polygons of polynomials… to Multiquadratic](part-02/README.md)
 
+- [Newton polygons of polynomials and power series](part-02/newton-polygons-of-polynomials-and-power-series/README.md)
+- [Noncongruence subgroups of the modular group and their modular forms](part-02/noncongruence-subgroups-of-the-modular-group-and/README.md)
 - [Number fields, ramification, Frobenius, and the LMFDB invariants](part-02/number-fields-ramification-frobenius-and-the-lmf/README.md)
 - [P-adic functional analysis](part-02/p-adic-functional-analysis/README.md)
 - [p-adic measures, completed group algebras, and characteristic ideals](part-02/p-adic-measures-completed-group-algebras-and-cha/README.md)
@@ -36,6 +38,7 @@ Results in Tau Ceti's `TauCeti.NumberTheory` modules, and the roadmaps whose art
 - [Successive minima and Minkowski's theorems](part-02/successive-minima-and-minkowskis-theorems/README.md)
 - [Theta series of lattices](part-02/theta-series-of-lattices/README.md)
 - [Arithmetic Dirichlet Series](part-02/arithmetic-dirichlet-series/README.md)
+- [Chebyshev](part-02/chebyshev/README.md)
 - [Class Field Theory: other results](part-02/class-field-theory/README.md)
 - [Diophantine Approximation](part-02/diophantine-approximation/README.md)
 - [Hecke Ring](part-02/hecke-ring/README.md)
@@ -44,10 +47,11 @@ Results in Tau Ceti's `TauCeti.NumberTheory` modules, and the roadmaps whose art
 - [Local Field](part-02/local-field/README.md)
 - [Modular Forms](part-02/modular-forms/README.md)
 - [Multiquadratic](part-02/multiquadratic/README.md)
-- [Number Field](part-02/number-field/README.md)
-- [Padics](part-02/padics/README.md)
-- [Transcendental](part-02/transcendental/README.md)
 
-## [Other results](part-03/README.md)
+## [Number Field to Other results](part-03/README.md)
 
+- [Number Field](part-03/number-field/README.md)
+- [Padics](part-03/padics/README.md)
+- [Quadratic Form](part-03/quadratic-form/README.md)
+- [Transcendental](part-03/transcendental/README.md)
 - [Other results](part-03/other-results/README.md)

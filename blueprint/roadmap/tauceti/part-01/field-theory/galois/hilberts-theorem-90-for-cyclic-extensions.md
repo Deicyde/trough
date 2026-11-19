@@ -29,4 +29,4 @@ Formalized in Tau Ceti as [`TauCeti.exists_smul_div_eq_iff_norm_eq_one`](https:/
 ## Sources
 
 - [Tau Ceti documentation: `TauCeti.exists_smul_div_eq_iff_norm_eq_one`](https://taucetiproject.org/docs/TauCeti/FieldTheory/Galois/Hilbert90.html#TauCeti.exists_smul_div_eq_iff_norm_eq_one)
-- [Source of `TauCeti.exists_smul_div_eq_iff_norm_eq_one` in TauCeti/FieldTheory/Galois/Hilbert90.lean](https://github.com/TauCetiProject/TauCeti/blob/a6027b1d24fcb935c53bd5b50d11b40991cda418/TauCeti/FieldTheory/Galois/Hilbert90.lean#L41)
+- [Source of `TauCeti.exists_smul_div_eq_iff_norm_eq_one` in TauCeti/FieldTheory/Galois/Hilbert90.lean](https://github.com/TauCetiProject/TauCeti/blob/cd41bffcb343151b3e58c89392e206b11fe78c1c/TauCeti/FieldTheory/Galois/Hilbert90.lean#L41)

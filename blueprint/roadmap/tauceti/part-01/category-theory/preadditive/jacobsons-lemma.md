@@ -30,4 +30,4 @@ Formalized in Tau Ceti as [`CategoryTheory.isIso_id_sub_comp_comm`](https://tauc
 ## Sources
 
 - [Tau Ceti documentation: `CategoryTheory.isIso_id_sub_comp_comm`](https://taucetiproject.org/docs/TauCeti/CategoryTheory/Preadditive/Jacobson.html#CategoryTheory.isIso_id_sub_comp_comm)
-- [Source of `CategoryTheory.isIso_id_sub_comp_comm` in TauCeti/CategoryTheory/Preadditive/Jacobson.lean](https://github.com/TauCetiProject/TauCeti/blob/a6027b1d24fcb935c53bd5b50d11b40991cda418/TauCeti/CategoryTheory/Preadditive/Jacobson.lean#L45)
+- [Source of `CategoryTheory.isIso_id_sub_comp_comm` in TauCeti/CategoryTheory/Preadditive/Jacobson.lean](https://github.com/TauCetiProject/TauCeti/blob/cd41bffcb343151b3e58c89392e206b11fe78c1c/TauCeti/CategoryTheory/Preadditive/Jacobson.lean#L45)

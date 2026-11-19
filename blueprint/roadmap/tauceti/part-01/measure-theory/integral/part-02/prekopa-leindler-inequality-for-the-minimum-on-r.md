@@ -10,8 +10,8 @@ proof: formalized
 
 If `f` and `g` have the same
 supremum and `h (c * x + d * y)` dominates `min (f x) (g y)` for all `x` and `y`, then
-`c ∫ f + d ∫ g ≤ ∫ h`. The coefficients may vanish, and the common supremum and the integrals may
-be infinite. A negative coefficient contributes nothing to the left side.
+`c ∫ f + d ∫ g ≤ ∫ h`. The coefficients may vanish or be negative (a negative coefficient
+contributes `0`), and the common supremum and the integrals may be infinite.
 
 ```lean
 TauCeti.Real.mul_lintegral_add_mul_lintegral_le {f g h : ℝ → ENNReal}
@@ -27,9 +27,9 @@ Its statement uses no other declaration mapped here.
 
 ## Lean
 
-Formalized in Tau Ceti as [`TauCeti.Real.mul_lintegral_add_mul_lintegral_le`](https://taucetiproject.org/docs/TauCeti/MeasureTheory/Integral/PrekopaLeindler.html#TauCeti.Real.mul_lintegral_add_mul_lintegral_le).
+Formalized in Tau Ceti as [`TauCeti.Real.mul_lintegral_add_mul_lintegral_le`](https://taucetiproject.org/docs/TauCeti/MeasureTheory/Integral/PrekopaLeindler/Basic.html#TauCeti.Real.mul_lintegral_add_mul_lintegral_le).
 
 ## Sources
 
-- [Tau Ceti documentation: `TauCeti.Real.mul_lintegral_add_mul_lintegral_le`](https://taucetiproject.org/docs/TauCeti/MeasureTheory/Integral/PrekopaLeindler.html#TauCeti.Real.mul_lintegral_add_mul_lintegral_le)
-- [Source of `TauCeti.Real.mul_lintegral_add_mul_lintegral_le` in TauCeti/MeasureTheory/Integral/PrekopaLeindler.lean](https://github.com/TauCetiProject/TauCeti/blob/a6027b1d24fcb935c53bd5b50d11b40991cda418/TauCeti/MeasureTheory/Integral/PrekopaLeindler.lean#L296)
+- [Tau Ceti documentation: `TauCeti.Real.mul_lintegral_add_mul_lintegral_le`](https://taucetiproject.org/docs/TauCeti/MeasureTheory/Integral/PrekopaLeindler/Basic.html#TauCeti.Real.mul_lintegral_add_mul_lintegral_le)
+- [Source of `TauCeti.Real.mul_lintegral_add_mul_lintegral_le` in TauCeti/MeasureTheory/Integral/PrekopaLeindler/Basic.lean](https://github.com/TauCetiProject/TauCeti/blob/cd41bffcb343151b3e58c89392e206b11fe78c1c/TauCeti/MeasureTheory/Integral/PrekopaLeindler/Basic.lean#L300)

@@ -12,7 +12,8 @@ For a full lattice `L` in a real normed
 space `E` of positive dimension `n`, a Haar measure `μ` on `E`, and a convex body `K` symmetric
 about `0`, the first successive minimum `λ₀` of `L` with respect to `K` satisfies
 `λ₀ⁿ · μ.real K ≤ 2ⁿ · covolume L μ`. It follows from the upper bound of Minkowski's second
-theorem, since `λ₀ ≤ λᵢ` for every `i`.
+theorem, since `λ₀ ≤ λᵢ` for every `i` when `0` is an interior point of `K` (otherwise `K` has
+empty interior and `μ.real K = 0`).
 
 ```lean
 ZLattice.successiveMin_pow_mul_measureReal_le_two_pow_mul_covolume.{u_1} {E : Type u_1}
@@ -39,5 +40,5 @@ Formalized in Tau Ceti as [`ZLattice.successiveMin_pow_mul_measureReal_le_two_po
 ## Sources
 
 - [Tau Ceti documentation: `ZLattice.successiveMin_pow_mul_measureReal_le_two_pow_mul_covolume`](https://taucetiproject.org/docs/TauCeti/NumberTheory/GeometryOfNumbers/MinkowskiSecond.html#ZLattice.successiveMin_pow_mul_measureReal_le_two_pow_mul_covolume)
-- [Source of `ZLattice.successiveMin_pow_mul_measureReal_le_two_pow_mul_covolume` in TauCeti/NumberTheory/GeometryOfNumbers/MinkowskiSecond.lean](https://github.com/TauCetiProject/TauCeti/blob/a6027b1d24fcb935c53bd5b50d11b40991cda418/TauCeti/NumberTheory/GeometryOfNumbers/MinkowskiSecond.lean#L674)
-- [Tau Ceti roadmap status: Successive minima and Minkowski's theorems](https://github.com/TauCetiProject/TauCetiRoadmap/blob/9f7c032adaf1b838e8183d63ff3cfa886d061cb3/TauCetiRoadmap/SuccessiveMinima/STATUS.md)
+- [Source of `ZLattice.successiveMin_pow_mul_measureReal_le_two_pow_mul_covolume` in TauCeti/NumberTheory/GeometryOfNumbers/MinkowskiSecond.lean](https://github.com/TauCetiProject/TauCeti/blob/cd41bffcb343151b3e58c89392e206b11fe78c1c/TauCeti/NumberTheory/GeometryOfNumbers/MinkowskiSecond.lean#L673)
+- [Tau Ceti roadmap status: Successive minima and Minkowski's theorems](https://github.com/TauCetiProject/TauCetiRoadmap/blob/612845ab80fb9c2b9bee724a156756ee78031591/TauCetiRoadmap/SuccessiveMinima/STATUS.md)

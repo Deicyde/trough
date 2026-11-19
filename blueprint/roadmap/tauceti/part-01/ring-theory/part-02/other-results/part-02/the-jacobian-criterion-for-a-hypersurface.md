@@ -31,4 +31,4 @@ Formalized in Tau Ceti as [`Ideal.isRegularLocalRing_localization_of_derivation_
 ## Sources
 
 - [Tau Ceti documentation: `Ideal.isRegularLocalRing_localization_of_derivation_notMem`](https://taucetiproject.org/docs/TauCeti/RingTheory/RegularLocalRing/Hypersurface.html#Ideal.isRegularLocalRing_localization_of_derivation_notMem)
-- [Source of `Ideal.isRegularLocalRing_localization_of_derivation_notMem` in TauCeti/RingTheory/RegularLocalRing/Hypersurface.lean](https://github.com/TauCetiProject/TauCeti/blob/a6027b1d24fcb935c53bd5b50d11b40991cda418/TauCeti/RingTheory/RegularLocalRing/Hypersurface.lean#L62)
+- [Source of `Ideal.isRegularLocalRing_localization_of_derivation_notMem` in TauCeti/RingTheory/RegularLocalRing/Hypersurface.lean](https://github.com/TauCetiProject/TauCeti/blob/cd41bffcb343151b3e58c89392e206b11fe78c1c/TauCeti/RingTheory/RegularLocalRing/Hypersurface.lean#L62)

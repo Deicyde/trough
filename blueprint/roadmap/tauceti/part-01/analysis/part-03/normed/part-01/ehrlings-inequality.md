@@ -32,4 +32,4 @@ Formalized in Tau Ceti as [`IsCompactOperator.exists_norm_le_mul_norm_add_mul_no
 ## Sources
 
 - [Tau Ceti documentation: `IsCompactOperator.exists_norm_le_mul_norm_add_mul_norm`](https://taucetiproject.org/docs/TauCeti/Analysis/Normed/Operator/Compact/Ehrling.html#IsCompactOperator.exists_norm_le_mul_norm_add_mul_norm)
-- [Source of `IsCompactOperator.exists_norm_le_mul_norm_add_mul_norm` in TauCeti/Analysis/Normed/Operator/Compact/Ehrling.lean](https://github.com/TauCetiProject/TauCeti/blob/a6027b1d24fcb935c53bd5b50d11b40991cda418/TauCeti/Analysis/Normed/Operator/Compact/Ehrling.lean#L66)
+- [Source of `IsCompactOperator.exists_norm_le_mul_norm_add_mul_norm` in TauCeti/Analysis/Normed/Operator/Compact/Ehrling.lean](https://github.com/TauCetiProject/TauCeti/blob/cd41bffcb343151b3e58c89392e206b11fe78c1c/TauCeti/Analysis/Normed/Operator/Compact/Ehrling.lean#L66)

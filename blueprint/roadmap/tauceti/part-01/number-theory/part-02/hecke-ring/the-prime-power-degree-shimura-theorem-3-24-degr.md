@@ -29,4 +29,4 @@ Formalized in Tau Ceti as [`HeckeRing.GL2.degree_diagCoset_of_ratio_eq_prime_pow
 ## Sources
 
 - [Tau Ceti documentation: `HeckeRing.GL2.degree_diagCoset_of_ratio_eq_prime_pow`](https://taucetiproject.org/docs/TauCeti/NumberTheory/HeckeRing/GL2/DiagonalCosetDegree.html#HeckeRing.GL2.degree_diagCoset_of_ratio_eq_prime_pow)
-- [Source of `HeckeRing.GL2.degree_diagCoset_of_ratio_eq_prime_pow` in TauCeti/NumberTheory/HeckeRing/GL2/DiagonalCosetDegree.lean](https://github.com/TauCetiProject/TauCeti/blob/a6027b1d24fcb935c53bd5b50d11b40991cda418/TauCeti/NumberTheory/HeckeRing/GL2/DiagonalCosetDegree.lean#L178)
+- [Source of `HeckeRing.GL2.degree_diagCoset_of_ratio_eq_prime_pow` in TauCeti/NumberTheory/HeckeRing/GL2/DiagonalCosetDegree.lean](https://github.com/TauCetiProject/TauCeti/blob/cd41bffcb343151b3e58c89392e206b11fe78c1c/TauCeti/NumberTheory/HeckeRing/GL2/DiagonalCosetDegree.lean#L178)

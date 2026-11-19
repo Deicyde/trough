@@ -26,8 +26,8 @@ Its statement uses no other declaration mapped here.
 
 ## Proof depends on
 
-- [The du Bois-Reymond lemma](../../../part-02/distribution/the-du-bois-reymond-lemma.md)
-- [Green's second identity against a test function](../../sobolev/part-01/greens-second-identity-against-a-test-function.md)
+- [The du Bois-Reymond lemma](../../distribution/the-du-bois-reymond-lemma.md)
+- [Green's second identity against a test function](../../../part-04/sobolev/part-01/greens-second-identity-against-a-test-function.md)
 
 ## Lean
 
@@ -49,4 +49,4 @@ TauCeti.WeaklyHarmonicOn.exists_harmonicOnNhd_ae_eq.{u_1, u_2} {E : Type u_1} [N
 ## Sources
 
 - [Tau Ceti documentation: `TauCeti.harmonicOnNhd_iff_weaklyHarmonicOn`](https://taucetiproject.org/docs/TauCeti/Analysis/InnerProductSpace/Harmonic/Weyl.html#TauCeti.harmonicOnNhd_iff_weaklyHarmonicOn)
-- [Source of `TauCeti.harmonicOnNhd_iff_weaklyHarmonicOn` in TauCeti/Analysis/InnerProductSpace/Harmonic/Weyl.lean](https://github.com/TauCetiProject/TauCeti/blob/a6027b1d24fcb935c53bd5b50d11b40991cda418/TauCeti/Analysis/InnerProductSpace/Harmonic/Weyl.lean#L442)
+- [Source of `TauCeti.harmonicOnNhd_iff_weaklyHarmonicOn` in TauCeti/Analysis/InnerProductSpace/Harmonic/Weyl.lean](https://github.com/TauCetiProject/TauCeti/blob/cd41bffcb343151b3e58c89392e206b11fe78c1c/TauCeti/Analysis/InnerProductSpace/Harmonic/Weyl.lean#L453)

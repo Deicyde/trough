@@ -9,6 +9,7 @@ Results in Tau Ceti's `TauCeti.Probability` modules, and the roadmaps whose arti
 - [Random matrices](random-matrices/README.md)
 - [Sampling with and without replacement, exact discrepancy for finite populations](sampling-with-and-without-replacement-exact-disc/README.md)
 - [Standard probability distributions and their elementary theory](standard-probability-distributions-and-their-ele/README.md)
+- [Stochastic calculus, Brownian motion and diffusions](stochastic-calculus-brownian-motion-and-diffusio/README.md)
 - [Distributions](distributions/README.md)
 - [Martingale](martingale/README.md)
 - [Moments](moments/README.md)

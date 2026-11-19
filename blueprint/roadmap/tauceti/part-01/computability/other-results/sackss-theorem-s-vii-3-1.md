@@ -45,4 +45,4 @@ TauCeti.exists_simple_not_turingReducible_code {C : Set ℕ} (hC : REPred fun x 
 ## Sources
 
 - [Tau Ceti documentation: `TauCeti.exists_simple_not_turingReducible`](https://taucetiproject.org/docs/TauCeti/Computability/Simple/ConeAvoiding.html#TauCeti.exists_simple_not_turingReducible)
-- [Source of `TauCeti.exists_simple_not_turingReducible` in TauCeti/Computability/Simple/ConeAvoiding.lean](https://github.com/TauCetiProject/TauCeti/blob/a6027b1d24fcb935c53bd5b50d11b40991cda418/TauCeti/Computability/Simple/ConeAvoiding.lean#L207)
+- [Source of `TauCeti.exists_simple_not_turingReducible` in TauCeti/Computability/Simple/ConeAvoiding.lean](https://github.com/TauCetiProject/TauCeti/blob/cd41bffcb343151b3e58c89392e206b11fe78c1c/TauCeti/Computability/Simple/ConeAvoiding.lean#L207)

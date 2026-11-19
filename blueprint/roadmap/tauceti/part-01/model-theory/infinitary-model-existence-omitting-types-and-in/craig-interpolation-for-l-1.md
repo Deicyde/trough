@@ -44,5 +44,5 @@ Formalized in Tau Ceti as [`FirstOrder.Language.craig_interpolation`](https://ta
 ## Sources
 
 - [Tau Ceti documentation: `FirstOrder.Language.craig_interpolation`](https://taucetiproject.org/docs/TauCeti/ModelTheory/Interpolation/Craig.html#FirstOrder.Language.craig_interpolation)
-- [Source of `FirstOrder.Language.craig_interpolation` in TauCeti/ModelTheory/Interpolation/Craig.lean](https://github.com/TauCetiProject/TauCeti/blob/a6027b1d24fcb935c53bd5b50d11b40991cda418/TauCeti/ModelTheory/Interpolation/Craig.lean#L725)
-- [Tau Ceti roadmap status: Infinitary model existence, omitting types and interpolation](https://github.com/TauCetiProject/TauCetiRoadmap/blob/9f7c032adaf1b838e8183d63ff3cfa886d061cb3/TauCetiRoadmap/InfinitaryModelExistence/STATUS.md)
+- [Source of `FirstOrder.Language.craig_interpolation` in TauCeti/ModelTheory/Interpolation/Craig.lean](https://github.com/TauCetiProject/TauCeti/blob/cd41bffcb343151b3e58c89392e206b11fe78c1c/TauCeti/ModelTheory/Interpolation/Craig.lean#L99)
+- [Tau Ceti roadmap status: Infinitary model existence, omitting types and interpolation](https://github.com/TauCetiProject/TauCetiRoadmap/blob/612845ab80fb9c2b9bee724a156756ee78031591/TauCetiRoadmap/InfinitaryModelExistence/STATUS.md)

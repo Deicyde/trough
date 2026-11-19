@@ -46,4 +46,4 @@ LieModule.Cohomology.twoCocycle_eq_range_d₁₂.{u, v, w} {K : Type u} {L : Typ
 ## Sources
 
 - [Tau Ceti documentation: `LieModule.Cohomology.exists_d₁₂_eq`](https://taucetiproject.org/docs/TauCeti/Algebra/Lie/Whitehead.html#LieModule.Cohomology.exists_d%E2%82%81%E2%82%82_eq)
-- [Source of `LieModule.Cohomology.exists_d₁₂_eq` in TauCeti/Algebra/Lie/Whitehead.lean](https://github.com/TauCetiProject/TauCeti/blob/a6027b1d24fcb935c53bd5b50d11b40991cda418/TauCeti/Algebra/Lie/Whitehead.lean#L112)
+- [Source of `LieModule.Cohomology.exists_d₁₂_eq` in TauCeti/Algebra/Lie/Whitehead.lean](https://github.com/TauCetiProject/TauCeti/blob/cd41bffcb343151b3e58c89392e206b11fe78c1c/TauCeti/Algebra/Lie/Whitehead.lean#L112)

@@ -36,4 +36,4 @@ Formalized in Tau Ceti as [`TauCeti.exists_norm_lt_and_forall_apply_eq_iff`](htt
 ## Sources
 
 - [Tau Ceti documentation: `TauCeti.exists_norm_lt_and_forall_apply_eq_iff`](https://taucetiproject.org/docs/TauCeti/Analysis/Normed/Module/Dual/Helly.html#TauCeti.exists_norm_lt_and_forall_apply_eq_iff)
-- [Source of `TauCeti.exists_norm_lt_and_forall_apply_eq_iff` in TauCeti/Analysis/Normed/Module/Dual/Helly.lean](https://github.com/TauCetiProject/TauCeti/blob/a6027b1d24fcb935c53bd5b50d11b40991cda418/TauCeti/Analysis/Normed/Module/Dual/Helly.lean#L156)
+- [Source of `TauCeti.exists_norm_lt_and_forall_apply_eq_iff` in TauCeti/Analysis/Normed/Module/Dual/Helly.lean](https://github.com/TauCetiProject/TauCeti/blob/cd41bffcb343151b3e58c89392e206b11fe78c1c/TauCeti/Analysis/Normed/Module/Dual/Helly.lean#L156)

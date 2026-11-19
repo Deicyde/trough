@@ -35,5 +35,5 @@ Formalized in Tau Ceti as [`ContMDiff.isInvolutiveDistribution_ker_mfderiv`](htt
 ## Sources
 
 - [Tau Ceti documentation: `ContMDiff.isInvolutiveDistribution_ker_mfderiv`](https://taucetiproject.org/docs/TauCeti/Geometry/Manifold/Distribution/Kernel.html#ContMDiff.isInvolutiveDistribution_ker_mfderiv)
-- [Source of `ContMDiff.isInvolutiveDistribution_ker_mfderiv` in TauCeti/Geometry/Manifold/Distribution/Kernel.lean](https://github.com/TauCetiProject/TauCeti/blob/a6027b1d24fcb935c53bd5b50d11b40991cda418/TauCeti/Geometry/Manifold/Distribution/Kernel.lean#L99)
-- [Tau Ceti roadmap status: Lie algebroids, Lie groupoids and Poisson geometry](https://github.com/TauCetiProject/TauCetiRoadmap/blob/9f7c032adaf1b838e8183d63ff3cfa886d061cb3/TauCetiRoadmap/LieGroupoidsPoisson/STATUS.md)
+- [Source of `ContMDiff.isInvolutiveDistribution_ker_mfderiv` in TauCeti/Geometry/Manifold/Distribution/Kernel.lean](https://github.com/TauCetiProject/TauCeti/blob/cd41bffcb343151b3e58c89392e206b11fe78c1c/TauCeti/Geometry/Manifold/Distribution/Kernel.lean#L99)
+- [Tau Ceti roadmap status: Lie algebroids, Lie groupoids and Poisson geometry](https://github.com/TauCetiProject/TauCetiRoadmap/blob/612845ab80fb9c2b9bee724a156756ee78031591/TauCetiRoadmap/LieGroupoidsPoisson/STATUS.md)

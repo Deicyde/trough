@@ -37,4 +37,4 @@ Formalized in Tau Ceti as [`TauCeti.SmoothEmbedding.exists_smoothIsotopy_mapsTo_
 ## Sources
 
 - [Tau Ceti documentation: `TauCeti.SmoothEmbedding.exists_smoothIsotopy_mapsTo_ball`](https://taucetiproject.org/docs/TauCeti/Geometry/Manifold/SmoothIsotopy/Euclidean.html#TauCeti.SmoothEmbedding.exists_smoothIsotopy_mapsTo_ball)
-- [Source of `TauCeti.SmoothEmbedding.exists_smoothIsotopy_mapsTo_ball` in TauCeti/Geometry/Manifold/SmoothIsotopy/Euclidean.lean](https://github.com/TauCetiProject/TauCeti/blob/a6027b1d24fcb935c53bd5b50d11b40991cda418/TauCeti/Geometry/Manifold/SmoothIsotopy/Euclidean.lean#L159)
+- [Source of `TauCeti.SmoothEmbedding.exists_smoothIsotopy_mapsTo_ball` in TauCeti/Geometry/Manifold/SmoothIsotopy/Euclidean.lean](https://github.com/TauCetiProject/TauCeti/blob/cd41bffcb343151b3e58c89392e206b11fe78c1c/TauCeti/Geometry/Manifold/SmoothIsotopy/Euclidean.lean#L159)

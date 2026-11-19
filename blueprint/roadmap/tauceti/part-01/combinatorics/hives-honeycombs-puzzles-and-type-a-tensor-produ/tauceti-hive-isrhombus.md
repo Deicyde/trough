@@ -25,5 +25,5 @@ Formalized in Tau Ceti as [`TauCeti.Hive.IsRhombus`](https://taucetiproject.org/
 ## Sources
 
 - [Tau Ceti documentation: `TauCeti.Hive.IsRhombus`](https://taucetiproject.org/docs/TauCeti/Combinatorics/Hive/Lattice.html#TauCeti.Hive.IsRhombus)
-- [Source of `TauCeti.Hive.IsRhombus` in TauCeti/Combinatorics/Hive/Lattice.lean](https://github.com/TauCetiProject/TauCeti/blob/a6027b1d24fcb935c53bd5b50d11b40991cda418/TauCeti/Combinatorics/Hive/Lattice.lean#L204)
-- [Tau Ceti roadmap status: Hives, honeycombs, puzzles and type-A tensor products](https://github.com/TauCetiProject/TauCetiRoadmap/blob/9f7c032adaf1b838e8183d63ff3cfa886d061cb3/TauCetiRoadmap/TensorProductCombinatorics/STATUS.md)
+- [Source of `TauCeti.Hive.IsRhombus` in TauCeti/Combinatorics/Hive/Lattice.lean](https://github.com/TauCetiProject/TauCeti/blob/cd41bffcb343151b3e58c89392e206b11fe78c1c/TauCeti/Combinatorics/Hive/Lattice.lean#L369)
+- [Tau Ceti roadmap status: Hives, honeycombs, puzzles and type-A tensor products](https://github.com/TauCetiProject/TauCetiRoadmap/blob/612845ab80fb9c2b9bee724a156756ee78031591/TauCetiRoadmap/TensorProductCombinatorics/STATUS.md)

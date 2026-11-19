@@ -34,7 +34,7 @@ Its statement uses no other declaration mapped here.
 
 ## Proof depends on
 
-- [Ekeland's variational principle](../../../../topology/other-results/ekelands-variational-principle.md)
+- [Ekeland's variational principle](../../../../../part-02/topology/other-results/ekelands-variational-principle.md)
 
 ## Lean
 
@@ -43,4 +43,4 @@ Formalized in Tau Ceti as [`Convex.exists_isMaxOn_re_of_bddAbove`](https://tauce
 ## Sources
 
 - [Tau Ceti documentation: `Convex.exists_isMaxOn_re_of_bddAbove`](https://taucetiproject.org/docs/TauCeti/Analysis/Normed/Module/Dual/BishopPhelps.html#Convex.exists_isMaxOn_re_of_bddAbove)
-- [Source of `Convex.exists_isMaxOn_re_of_bddAbove` in TauCeti/Analysis/Normed/Module/Dual/BishopPhelps.lean](https://github.com/TauCetiProject/TauCeti/blob/a6027b1d24fcb935c53bd5b50d11b40991cda418/TauCeti/Analysis/Normed/Module/Dual/BishopPhelps.lean#L180)
+- [Source of `Convex.exists_isMaxOn_re_of_bddAbove` in TauCeti/Analysis/Normed/Module/Dual/BishopPhelps.lean](https://github.com/TauCetiProject/TauCeti/blob/cd41bffcb343151b3e58c89392e206b11fe78c1c/TauCeti/Analysis/Normed/Module/Dual/BishopPhelps.lean#L180)

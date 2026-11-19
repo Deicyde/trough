@@ -42,4 +42,4 @@ LieModule.Cohomology.exists_eq_lie_of_d₁₂_eq_zero.{u, v, w} {K : Type u} {L 
 ## Sources
 
 - [Tau Ceti documentation: `LieDerivation.IsKilling.exists_eq_inner`](https://taucetiproject.org/docs/TauCeti/Algebra/Lie/Whitehead.html#LieDerivation.IsKilling.exists_eq_inner)
-- [Source of `LieDerivation.IsKilling.exists_eq_inner` in TauCeti/Algebra/Lie/Whitehead.lean](https://github.com/TauCetiProject/TauCeti/blob/a6027b1d24fcb935c53bd5b50d11b40991cda418/TauCeti/Algebra/Lie/Whitehead.lean#L78)
+- [Source of `LieDerivation.IsKilling.exists_eq_inner` in TauCeti/Algebra/Lie/Whitehead.lean](https://github.com/TauCetiProject/TauCeti/blob/cd41bffcb343151b3e58c89392e206b11fe78c1c/TauCeti/Algebra/Lie/Whitehead.lean#L78)

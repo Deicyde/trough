@@ -37,4 +37,4 @@ Formalized in Tau Ceti as [`TauCeti.finsum_repartitionDualComponent_eq_zero`](ht
 ## Sources
 
 - [Tau Ceti documentation: `TauCeti.finsum_repartitionDualComponent_eq_zero`](https://taucetiproject.org/docs/TauCeti/FieldTheory/FunctionField/Differential/LocalComponent.html#TauCeti.finsum_repartitionDualComponent_eq_zero)
-- [Source of `TauCeti.finsum_repartitionDualComponent_eq_zero` in TauCeti/FieldTheory/FunctionField/Differential/LocalComponent.lean](https://github.com/TauCetiProject/TauCeti/blob/a6027b1d24fcb935c53bd5b50d11b40991cda418/TauCeti/FieldTheory/FunctionField/Differential/LocalComponent.lean#L213)
+- [Source of `TauCeti.finsum_repartitionDualComponent_eq_zero` in TauCeti/FieldTheory/FunctionField/Differential/LocalComponent.lean](https://github.com/TauCetiProject/TauCeti/blob/cd41bffcb343151b3e58c89392e206b11fe78c1c/TauCeti/FieldTheory/FunctionField/Differential/LocalComponent.lean#L213)

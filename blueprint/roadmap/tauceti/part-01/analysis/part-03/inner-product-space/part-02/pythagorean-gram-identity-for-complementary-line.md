@@ -39,4 +39,4 @@ Formalized in Tau Ceti as [`LinearIsometry.adjoint_comp_self_adjoint_comp_eq_id_
 ## Sources
 
 - [Tau Ceti documentation: `LinearIsometry.adjoint_comp_self_adjoint_comp_eq_id_sub_comp_adjoint`](https://taucetiproject.org/docs/TauCeti/Analysis/InnerProductSpace/DoubleAngle/Gram.html#LinearIsometry.adjoint_comp_self_adjoint_comp_eq_id_sub_comp_adjoint)
-- [Source of `LinearIsometry.adjoint_comp_self_adjoint_comp_eq_id_sub_comp_adjoint` in TauCeti/Analysis/InnerProductSpace/DoubleAngle/Gram.lean](https://github.com/TauCetiProject/TauCeti/blob/a6027b1d24fcb935c53bd5b50d11b40991cda418/TauCeti/Analysis/InnerProductSpace/DoubleAngle/Gram.lean#L152)
+- [Source of `LinearIsometry.adjoint_comp_self_adjoint_comp_eq_id_sub_comp_adjoint` in TauCeti/Analysis/InnerProductSpace/DoubleAngle/Gram.lean](https://github.com/TauCetiProject/TauCeti/blob/cd41bffcb343151b3e58c89392e206b11fe78c1c/TauCeti/Analysis/InnerProductSpace/DoubleAngle/Gram.lean#L152)

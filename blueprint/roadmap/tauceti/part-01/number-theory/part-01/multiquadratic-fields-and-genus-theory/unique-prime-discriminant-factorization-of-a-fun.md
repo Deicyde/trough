@@ -27,5 +27,5 @@ Formalized in Tau Ceti as [`Int.IsFundamentalDiscr.existsUnique_finset_primeDisc
 ## Sources
 
 - [Tau Ceti documentation: `Int.IsFundamentalDiscr.existsUnique_finset_primeDiscriminant`](https://taucetiproject.org/docs/TauCeti/NumberTheory/Multiquadratic/FundamentalDiscriminant/Factorization.html#Int.IsFundamentalDiscr.existsUnique_finset_primeDiscriminant)
-- [Source of `Int.IsFundamentalDiscr.existsUnique_finset_primeDiscriminant` in TauCeti/NumberTheory/Multiquadratic/FundamentalDiscriminant/Factorization.lean](https://github.com/TauCetiProject/TauCeti/blob/a6027b1d24fcb935c53bd5b50d11b40991cda418/TauCeti/NumberTheory/Multiquadratic/FundamentalDiscriminant/Factorization.lean#L253)
-- [Tau Ceti roadmap status: Multiquadratic fields and genus theory](https://github.com/TauCetiProject/TauCetiRoadmap/blob/9f7c032adaf1b838e8183d63ff3cfa886d061cb3/Completed/Multiquadratic/STATUS.md)
+- [Source of `Int.IsFundamentalDiscr.existsUnique_finset_primeDiscriminant` in TauCeti/NumberTheory/Multiquadratic/FundamentalDiscriminant/Factorization.lean](https://github.com/TauCetiProject/TauCeti/blob/cd41bffcb343151b3e58c89392e206b11fe78c1c/TauCeti/NumberTheory/Multiquadratic/FundamentalDiscriminant/Factorization.lean#L255)
+- [Tau Ceti roadmap status: Multiquadratic fields and genus theory](https://github.com/TauCetiProject/TauCetiRoadmap/blob/612845ab80fb9c2b9bee724a156756ee78031591/Completed/Multiquadratic/STATUS.md)

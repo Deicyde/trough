@@ -30,7 +30,7 @@ NumberField.Chebotarev.hasDirichletDensity_frobeniusPrimeSet.{u_1, u_2} (K : Typ
 - [Artin's theorem](../../../field-theory/galois/artins-theorem.md)
 - [The continued L-function of a unitary weight, defined by partial summation](../arithmetic-dirichlet-series-and-tauberian-method/the-continued-l-function-of-a-unitary-weight-def.md)
 - [The crossing constant](the-crossing-constant.md)
-- [Euler's product formula for the elements of order divisible by `f`](../../../group-theory/other-results/eulers-product-formula-for-the-elements-of-order.md)
+- [Euler's product formula for the elements of order divisible by `f`](../../../group-theory/other-results/part-01/eulers-product-formula-for-the-elements-of-order.md)
 - [The fixed-field Frobenius fiber count](the-fixed-field-frobenius-fiber-count.md)
 - [The ideal-theoretic Artin map](../../part-02/number-fields-ramification-frobenius-and-the-lmf/the-ideal-theoretic-artin-map.md)
 - [Weighted Chebotarev for abelian extensions](weighted-chebotarev-for-abelian-extensions.md)
@@ -66,5 +66,5 @@ NumberField.Chebotarev.tendsto_frobeniusPsi.{u_1, u_2} (K : Type u_1) (L : Type 
 ## Sources
 
 - [Tau Ceti documentation: `NumberField.Chebotarev.hasDirichletDensity_frobeniusPrimeSet`](https://taucetiproject.org/docs/TauCeti/NumberTheory/Chebotarev/Density/Chebotarev.html#NumberField.Chebotarev.hasDirichletDensity_frobeniusPrimeSet)
-- [Source of `NumberField.Chebotarev.hasDirichletDensity_frobeniusPrimeSet` in TauCeti/NumberTheory/Chebotarev/Density/Chebotarev.lean](https://github.com/TauCetiProject/TauCeti/blob/a6027b1d24fcb935c53bd5b50d11b40991cda418/TauCeti/NumberTheory/Chebotarev/Density/Chebotarev.lean#L48)
-- [Tau Ceti roadmap status: The Chebotarev density theorem](https://github.com/TauCetiProject/TauCetiRoadmap/blob/9f7c032adaf1b838e8183d63ff3cfa886d061cb3/Completed/Chebotarev/STATUS.md)
+- [Source of `NumberField.Chebotarev.hasDirichletDensity_frobeniusPrimeSet` in TauCeti/NumberTheory/Chebotarev/Density/Chebotarev.lean](https://github.com/TauCetiProject/TauCeti/blob/cd41bffcb343151b3e58c89392e206b11fe78c1c/TauCeti/NumberTheory/Chebotarev/Density/Chebotarev.lean#L48)
+- [Tau Ceti roadmap status: The Chebotarev density theorem](https://github.com/TauCetiProject/TauCetiRoadmap/blob/612845ab80fb9c2b9bee724a156756ee78031591/Completed/Chebotarev/STATUS.md)

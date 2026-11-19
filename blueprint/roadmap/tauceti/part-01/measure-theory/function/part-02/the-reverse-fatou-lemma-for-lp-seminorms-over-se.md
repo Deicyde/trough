@@ -36,4 +36,4 @@ Formalized in Tau Ceti as [`TauCeti.limsup_eLpNorm_restrict_le`](https://tauceti
 ## Sources
 
 - [Tau Ceti documentation: `TauCeti.limsup_eLpNorm_restrict_le`](https://taucetiproject.org/docs/TauCeti/MeasureTheory/Function/Lp/DominatedConvergence.html#TauCeti.limsup_eLpNorm_restrict_le)
-- [Source of `TauCeti.limsup_eLpNorm_restrict_le` in TauCeti/MeasureTheory/Function/Lp/DominatedConvergence.lean](https://github.com/TauCetiProject/TauCeti/blob/a6027b1d24fcb935c53bd5b50d11b40991cda418/TauCeti/MeasureTheory/Function/Lp/DominatedConvergence.lean#L112)
+- [Source of `TauCeti.limsup_eLpNorm_restrict_le` in TauCeti/MeasureTheory/Function/Lp/DominatedConvergence.lean](https://github.com/TauCetiProject/TauCeti/blob/cd41bffcb343151b3e58c89392e206b11fe78c1c/TauCeti/MeasureTheory/Function/Lp/DominatedConvergence.lean#L172)

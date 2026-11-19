@@ -29,7 +29,7 @@ Its statement uses no other declaration mapped here.
 
 - [Harish-Chandra surjectivity with a degree bound](../../part-02/lie/part-01/harish-chandra-surjectivity-with-a-degree-bound.md)
 - [The linear-independence half of the Poincaré--Birkhoff--Witt theorem](../../part-02/lie/part-01/the-linear-independence-half-of-the-poincare-bir.md)
-- [The Poincaré--Birkhoff--Witt theorem](../../part-02/lie/part-01/the-poincare-birkhoff-witt-theorem.md)
+- [The Poincaré--Birkhoff--Witt theorem](../../part-02/lie/part-02/the-poincare-birkhoff-witt-theorem.md)
 
 ## Lean
 
@@ -38,4 +38,4 @@ Formalized in Tau Ceti as [`TauCeti.vermaCentralCharacter_eq_iff`](https://tauce
 ## Sources
 
 - [Tau Ceti documentation: `TauCeti.vermaCentralCharacter_eq_iff`](https://taucetiproject.org/docs/TauCeti/Algebra/Lie/HighestWeight/CentralCharacter/Isomorphism.html#TauCeti.vermaCentralCharacter_eq_iff)
-- [Source of `TauCeti.vermaCentralCharacter_eq_iff` in TauCeti/Algebra/Lie/HighestWeight/CentralCharacter/Isomorphism.lean](https://github.com/TauCetiProject/TauCeti/blob/a6027b1d24fcb935c53bd5b50d11b40991cda418/TauCeti/Algebra/Lie/HighestWeight/CentralCharacter/Isomorphism.lean#L156)
+- [Source of `TauCeti.vermaCentralCharacter_eq_iff` in TauCeti/Algebra/Lie/HighestWeight/CentralCharacter/Isomorphism.lean](https://github.com/TauCetiProject/TauCeti/blob/cd41bffcb343151b3e58c89392e206b11fe78c1c/TauCeti/Algebra/Lie/HighestWeight/CentralCharacter/Isomorphism.lean#L156)

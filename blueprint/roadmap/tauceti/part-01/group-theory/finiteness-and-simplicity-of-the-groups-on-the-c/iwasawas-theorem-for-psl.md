@@ -29,4 +29,4 @@ Formalized in Tau Ceti as [`Matrix.ProjectiveSpecialLinearGroup.isSimpleGroup_of
 ## Sources
 
 - [Tau Ceti documentation: `Matrix.ProjectiveSpecialLinearGroup.isSimpleGroup_of_commutator_eq_top`](https://taucetiproject.org/docs/TauCeti/LinearAlgebra/Projectivization/PSL/Simple.html#Matrix.ProjectiveSpecialLinearGroup.isSimpleGroup_of_commutator_eq_top)
-- [Source of `Matrix.ProjectiveSpecialLinearGroup.isSimpleGroup_of_commutator_eq_top` in TauCeti/LinearAlgebra/Projectivization/PSL/Simple.lean](https://github.com/TauCetiProject/TauCeti/blob/a6027b1d24fcb935c53bd5b50d11b40991cda418/TauCeti/LinearAlgebra/Projectivization/PSL/Simple.lean#L117)
+- [Source of `Matrix.ProjectiveSpecialLinearGroup.isSimpleGroup_of_commutator_eq_top` in TauCeti/LinearAlgebra/Projectivization/PSL/Simple.lean](https://github.com/TauCetiProject/TauCeti/blob/cd41bffcb343151b3e58c89392e206b11fe78c1c/TauCeti/LinearAlgebra/Projectivization/PSL/Simple.lean#L117)

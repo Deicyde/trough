@@ -29,4 +29,4 @@ Formalized in Tau Ceti as [`ZMod.natCard_nthRoots_prime_pow_eq_natCard_nthRoots`
 ## Sources
 
 - [Tau Ceti documentation: `ZMod.natCard_nthRoots_prime_pow_eq_natCard_nthRoots`](https://taucetiproject.org/docs/TauCeti/Data/ZMod/PrincipalUnits.html#ZMod.natCard_nthRoots_prime_pow_eq_natCard_nthRoots)
-- [Source of `ZMod.natCard_nthRoots_prime_pow_eq_natCard_nthRoots` in TauCeti/Data/ZMod/PrincipalUnits.lean](https://github.com/TauCetiProject/TauCeti/blob/a6027b1d24fcb935c53bd5b50d11b40991cda418/TauCeti/Data/ZMod/PrincipalUnits.lean#L125)
+- [Source of `ZMod.natCard_nthRoots_prime_pow_eq_natCard_nthRoots` in TauCeti/Data/ZMod/PrincipalUnits.lean](https://github.com/TauCetiProject/TauCeti/blob/cd41bffcb343151b3e58c89392e206b11fe78c1c/TauCeti/Data/ZMod/PrincipalUnits.lean#L125)

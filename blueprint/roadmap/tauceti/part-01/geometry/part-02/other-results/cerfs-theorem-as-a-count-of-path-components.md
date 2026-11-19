@@ -36,4 +36,4 @@ Formalized in Tau Ceti as [`TauCeti.cerfTheorem_iff_natCard_zerothHomotopy_eq_tw
 ## Sources
 
 - [Tau Ceti documentation: `TauCeti.cerfTheorem_iff_natCard_zerothHomotopy_eq_two`](https://taucetiproject.org/docs/TauCeti/Geometry/Diffeomorphism/Cerf.html#TauCeti.cerfTheorem_iff_natCard_zerothHomotopy_eq_two)
-- [Source of `TauCeti.cerfTheorem_iff_natCard_zerothHomotopy_eq_two` in TauCeti/Geometry/Diffeomorphism/Cerf.lean](https://github.com/TauCetiProject/TauCeti/blob/a6027b1d24fcb935c53bd5b50d11b40991cda418/TauCeti/Geometry/Diffeomorphism/Cerf.lean#L99)
+- [Source of `TauCeti.cerfTheorem_iff_natCard_zerothHomotopy_eq_two` in TauCeti/Geometry/Diffeomorphism/Cerf.lean](https://github.com/TauCetiProject/TauCeti/blob/cd41bffcb343151b3e58c89392e206b11fe78c1c/TauCeti/Geometry/Diffeomorphism/Cerf.lean#L99)

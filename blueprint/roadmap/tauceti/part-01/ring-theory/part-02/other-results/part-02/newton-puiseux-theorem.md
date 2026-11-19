@@ -40,4 +40,4 @@ TauCeti.puiseuxField.exists_isRoot_levelEmbedding.{u_1} {K : Type u_1} [Field K]
 ## Sources
 
 - [Tau Ceti documentation: `TauCeti.LaurentSeries.exists_isRoot_map_expand`](https://taucetiproject.org/docs/TauCeti/RingTheory/LaurentSeries/NewtonPuiseux.html#TauCeti.LaurentSeries.exists_isRoot_map_expand)
-- [Source of `TauCeti.LaurentSeries.exists_isRoot_map_expand` in TauCeti/RingTheory/LaurentSeries/NewtonPuiseux.lean](https://github.com/TauCetiProject/TauCeti/blob/a6027b1d24fcb935c53bd5b50d11b40991cda418/TauCeti/RingTheory/LaurentSeries/NewtonPuiseux.lean#L126)
+- [Source of `TauCeti.LaurentSeries.exists_isRoot_map_expand` in TauCeti/RingTheory/LaurentSeries/NewtonPuiseux.lean](https://github.com/TauCetiProject/TauCeti/blob/cd41bffcb343151b3e58c89392e206b11fe78c1c/TauCeti/RingTheory/LaurentSeries/NewtonPuiseux.lean#L125)

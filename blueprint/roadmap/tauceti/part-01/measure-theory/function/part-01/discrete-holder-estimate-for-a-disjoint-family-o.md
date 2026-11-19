@@ -35,4 +35,4 @@ Formalized in Tau Ceti as [`TauCeti.sum_edist_ceil_div_rpow_le`](https://tauceti
 ## Sources
 
 - [Tau Ceti documentation: `TauCeti.sum_edist_ceil_div_rpow_le`](https://taucetiproject.org/docs/TauCeti/MeasureTheory/Function/CurveAction/PiecewiseConstant.html#TauCeti.sum_edist_ceil_div_rpow_le)
-- [Source of `TauCeti.sum_edist_ceil_div_rpow_le` in TauCeti/MeasureTheory/Function/CurveAction/PiecewiseConstant.lean](https://github.com/TauCetiProject/TauCeti/blob/a6027b1d24fcb935c53bd5b50d11b40991cda418/TauCeti/MeasureTheory/Function/CurveAction/PiecewiseConstant.lean#L103)
+- [Source of `TauCeti.sum_edist_ceil_div_rpow_le` in TauCeti/MeasureTheory/Function/CurveAction/PiecewiseConstant.lean](https://github.com/TauCetiProject/TauCeti/blob/cd41bffcb343151b3e58c89392e206b11fe78c1c/TauCeti/MeasureTheory/Function/CurveAction/PiecewiseConstant.lean#L103)

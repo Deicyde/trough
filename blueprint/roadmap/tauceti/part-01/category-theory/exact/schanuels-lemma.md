@@ -38,4 +38,4 @@ Formalized in Tau Ceti as [`TauCeti.ExactStructure.nonempty_iso_biprod_of_projec
 ## Sources
 
 - [Tau Ceti documentation: `TauCeti.ExactStructure.nonempty_iso_biprod_of_projective`](https://taucetiproject.org/docs/TauCeti/CategoryTheory/Exact/Projective.html#TauCeti.ExactStructure.nonempty_iso_biprod_of_projective)
-- [Source of `TauCeti.ExactStructure.nonempty_iso_biprod_of_projective` in TauCeti/CategoryTheory/Exact/Projective.lean](https://github.com/TauCetiProject/TauCeti/blob/a6027b1d24fcb935c53bd5b50d11b40991cda418/TauCeti/CategoryTheory/Exact/Projective.lean#L456)
+- [Source of `TauCeti.ExactStructure.nonempty_iso_biprod_of_projective` in TauCeti/CategoryTheory/Exact/Projective.lean](https://github.com/TauCetiProject/TauCeti/blob/cd41bffcb343151b3e58c89392e206b11fe78c1c/TauCeti/CategoryTheory/Exact/Projective.lean#L477)

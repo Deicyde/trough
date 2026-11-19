@@ -52,4 +52,4 @@ TauCeti.AlgorithmicSzpiroConjecture.exists_sq_le_mul_radical_rpow
 ## Sources
 
 - [Tau Ceti documentation: `TauCeti.AlgorithmicSzpiroConjecture.exists_sq_le`](https://taucetiproject.org/docs/TauCeti/AlgebraicGeometry/EllipticCurve/FreyCurve/Abc.html#TauCeti.AlgorithmicSzpiroConjecture.exists_sq_le)
-- [Source of `TauCeti.AlgorithmicSzpiroConjecture.exists_sq_le` in TauCeti/AlgebraicGeometry/EllipticCurve/FreyCurve/Abc.lean](https://github.com/TauCetiProject/TauCeti/blob/a6027b1d24fcb935c53bd5b50d11b40991cda418/TauCeti/AlgebraicGeometry/EllipticCurve/FreyCurve/Abc.lean#L171)
+- [Source of `TauCeti.AlgorithmicSzpiroConjecture.exists_sq_le` in TauCeti/AlgebraicGeometry/EllipticCurve/FreyCurve/Abc.lean](https://github.com/TauCetiProject/TauCeti/blob/cd41bffcb343151b3e58c89392e206b11fe78c1c/TauCeti/AlgebraicGeometry/EllipticCurve/FreyCurve/Abc.lean#L171)

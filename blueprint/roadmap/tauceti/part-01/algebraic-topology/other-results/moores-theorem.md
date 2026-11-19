@@ -46,4 +46,4 @@ SSet.kanComplex_of_addGroup.{u} {X : _root_.SSet} [(n : SimplexCategoryᵒᵖ) �
 ## Sources
 
 - [Tau Ceti documentation: `SSet.kanComplex_of_group`](https://taucetiproject.org/docs/TauCeti/AlgebraicTopology/SimplicialSet/KanComplex/SimplicialGroup/Basic.html#SSet.kanComplex_of_group)
-- [Source of `SSet.kanComplex_of_group` in TauCeti/AlgebraicTopology/SimplicialSet/KanComplex/SimplicialGroup/Basic.lean](https://github.com/TauCetiProject/TauCeti/blob/a6027b1d24fcb935c53bd5b50d11b40991cda418/TauCeti/AlgebraicTopology/SimplicialSet/KanComplex/SimplicialGroup/Basic.lean#L185)
+- [Source of `SSet.kanComplex_of_group` in TauCeti/AlgebraicTopology/SimplicialSet/KanComplex/SimplicialGroup/Basic.lean](https://github.com/TauCetiProject/TauCeti/blob/cd41bffcb343151b3e58c89392e206b11fe78c1c/TauCeti/AlgebraicTopology/SimplicialSet/KanComplex/SimplicialGroup/Basic.lean#L185)

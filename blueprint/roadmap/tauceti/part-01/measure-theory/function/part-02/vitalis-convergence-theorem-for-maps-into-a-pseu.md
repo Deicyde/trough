@@ -57,4 +57,4 @@ TauCeti.tendsto_eLpNorm_dist_iff_tendstoInMeasure_and_uniformIntegrable.{u_1, u_
 ## Sources
 
 - [Tau Ceti documentation: `TauCeti.tendsto_eLpNorm_dist_iff_tendstoInMeasure_and_unifIntegrable`](https://taucetiproject.org/docs/TauCeti/MeasureTheory/Function/UniformIntegrable.html#TauCeti.tendsto_eLpNorm_dist_iff_tendstoInMeasure_and_unifIntegrable)
-- [Source of `TauCeti.tendsto_eLpNorm_dist_iff_tendstoInMeasure_and_unifIntegrable` in TauCeti/MeasureTheory/Function/UniformIntegrable.lean](https://github.com/TauCetiProject/TauCeti/blob/a6027b1d24fcb935c53bd5b50d11b40991cda418/TauCeti/MeasureTheory/Function/UniformIntegrable.lean#L168)
+- [Source of `TauCeti.tendsto_eLpNorm_dist_iff_tendstoInMeasure_and_unifIntegrable` in TauCeti/MeasureTheory/Function/UniformIntegrable.lean](https://github.com/TauCetiProject/TauCeti/blob/cd41bffcb343151b3e58c89392e206b11fe78c1c/TauCeti/MeasureTheory/Function/UniformIntegrable.lean#L247)

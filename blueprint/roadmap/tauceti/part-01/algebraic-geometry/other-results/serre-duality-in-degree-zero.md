@@ -36,7 +36,7 @@ Its statement uses no other declaration mapped here.
 
 ## Proof depends on
 
-- [The duality theorem, in dimensions](../algebraic-curves-function-fields-divisors-and-ri/the-duality-theorem-in-dimensions.md)
+- [The duality theorem, in dimensions](../../field-theory/algebraic-curves-function-fields-divisors-and-ri/the-duality-theorem-in-dimensions.md)
 - [Riemann's theorem](../../field-theory/function-field/part-02/riemanns-theorem.md)
 - [The weak approximation theorem](../../field-theory/function-field/part-02/the-weak-approximation-theorem.md)
 
@@ -70,4 +70,4 @@ TauCeti.AlgebraicGeometry.InvertibleSheaf.nonempty_cohomologyOneDualEquivCohomol
 ## Sources
 
 - [Tau Ceti documentation: `TauCeti.AlgebraicGeometry.InvertibleSheaf.nonempty_cohomologyZeroDualEquivCohomologyOne_tensor_dual`](https://taucetiproject.org/docs/TauCeti/AlgebraicGeometry/LineBundle/SerreDuality.html#TauCeti.AlgebraicGeometry.InvertibleSheaf.nonempty_cohomologyZeroDualEquivCohomologyOne_tensor_dual)
-- [Source of `TauCeti.AlgebraicGeometry.InvertibleSheaf.nonempty_cohomologyZeroDualEquivCohomologyOne_tensor_dual` in TauCeti/AlgebraicGeometry/LineBundle/SerreDuality.lean](https://github.com/TauCetiProject/TauCeti/blob/a6027b1d24fcb935c53bd5b50d11b40991cda418/TauCeti/AlgebraicGeometry/LineBundle/SerreDuality.lean#L135)
+- [Source of `TauCeti.AlgebraicGeometry.InvertibleSheaf.nonempty_cohomologyZeroDualEquivCohomologyOne_tensor_dual` in TauCeti/AlgebraicGeometry/LineBundle/SerreDuality.lean](https://github.com/TauCetiProject/TauCeti/blob/cd41bffcb343151b3e58c89392e206b11fe78c1c/TauCeti/AlgebraicGeometry/LineBundle/SerreDuality.lean#L135)

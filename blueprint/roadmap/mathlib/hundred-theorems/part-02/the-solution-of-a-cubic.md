@@ -22,7 +22,7 @@ Theorems100.cubic_eq_zero_iff.{u_1} {K : Type u_1} [Field K] (a b c d : K) {ω p
 
 ## Proof depends on
 
-- [Cyclotomic polynomials in $\Q\[X\]$](../../undergraduate/ring-theory/polynomial-rings/cyclotomic-polynomials-in-q-x.md)
+- [Cyclotomic polynomials in $\Q[X]$](../../undergraduate/ring-theory/polynomial-rings/cyclotomic-polynomials-in-q-x.md)
 - [Irreducible element](../../overview/general-algebra/divisibility-in-integral-domains/irreducible-element.md)
 - [Local ring](../../overview/general-algebra/rings/local-ring.md)
 

@@ -26,5 +26,5 @@ Formalized in Tau Ceti as [`TauCeti.tameQuotientEquivMaximalTameExtension`](http
 ## Sources
 
 - [Tau Ceti documentation: `TauCeti.tameQuotientEquivMaximalTameExtension`](https://taucetiproject.org/docs/TauCeti/NumberTheory/LocalField/Tame/Quotient.html#TauCeti.tameQuotientEquivMaximalTameExtension)
-- [Source of `TauCeti.tameQuotientEquivMaximalTameExtension` in TauCeti/NumberTheory/LocalField/Tame/Quotient.lean](https://github.com/TauCetiProject/TauCeti/blob/a6027b1d24fcb935c53bd5b50d11b40991cda418/TauCeti/NumberTheory/LocalField/Tame/Quotient.lean#L348)
-- [Tau Ceti roadmap status: Local fields and ramification](https://github.com/TauCetiProject/TauCetiRoadmap/blob/9f7c032adaf1b838e8183d63ff3cfa886d061cb3/Completed/LocalFieldsRamification/STATUS.md)
+- [Source of `TauCeti.tameQuotientEquivMaximalTameExtension` in TauCeti/NumberTheory/LocalField/Tame/Quotient.lean](https://github.com/TauCetiProject/TauCeti/blob/cd41bffcb343151b3e58c89392e206b11fe78c1c/TauCeti/NumberTheory/LocalField/Tame/Quotient.lean#L348)
+- [Tau Ceti roadmap status: Local fields and ramification](https://github.com/TauCetiProject/TauCetiRoadmap/blob/612845ab80fb9c2b9bee724a156756ee78031591/Completed/LocalFieldsRamification/STATUS.md)

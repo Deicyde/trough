@@ -22,11 +22,6 @@ Algebra.IsFiniteSplit.of_henselianLocalRing.{u, u_1} (R : Type u) [CommRing R]
 
 Its statement uses no other declaration mapped here.
 
-## Proof depends on
-
-- [TauCeti.IsFiniteEtaleSplit](../analytic-adic-geometry-for-diamonds/tauceti-isfiniteetalesplit.md)
-- [TauCeti.IsFiniteEtaleSplit.of_henselianLocalRing](../analytic-adic-geometry-for-diamonds/tauceti-isfiniteetalesplit-of-henselianlocalring.md)
-
 ## Lean
 
 Formalized in Tau Ceti as [`Algebra.IsFiniteSplit.of_henselianLocalRing`](https://taucetiproject.org/docs/TauCeti/RingTheory/Henselian/Etale.html#Algebra.IsFiniteSplit.of_henselianLocalRing).
@@ -34,5 +29,5 @@ Formalized in Tau Ceti as [`Algebra.IsFiniteSplit.of_henselianLocalRing`](https:
 ## Sources
 
 - [Tau Ceti documentation: `Algebra.IsFiniteSplit.of_henselianLocalRing`](https://taucetiproject.org/docs/TauCeti/RingTheory/Henselian/Etale.html#Algebra.IsFiniteSplit.of_henselianLocalRing)
-- [Source of `Algebra.IsFiniteSplit.of_henselianLocalRing` in TauCeti/RingTheory/Henselian/Etale.lean](https://github.com/TauCetiProject/TauCeti/blob/a6027b1d24fcb935c53bd5b50d11b40991cda418/TauCeti/RingTheory/Henselian/Etale.lean#L156)
-- [Tau Ceti roadmap status: Abhyankar's lemma for a regular divisor](https://github.com/TauCetiProject/TauCetiRoadmap/blob/9f7c032adaf1b838e8183d63ff3cfa886d061cb3/TauCetiRoadmap/AbhyankarLemma/STATUS.md)
+- [Source of `Algebra.IsFiniteSplit.of_henselianLocalRing` in TauCeti/RingTheory/Henselian/Etale.lean](https://github.com/TauCetiProject/TauCeti/blob/cd41bffcb343151b3e58c89392e206b11fe78c1c/TauCeti/RingTheory/Henselian/Etale.lean#L156)
+- [Tau Ceti roadmap status: Abhyankar's lemma for a regular divisor](https://github.com/TauCetiProject/TauCetiRoadmap/blob/612845ab80fb9c2b9bee724a156756ee78031591/TauCetiRoadmap/AbhyankarLemma/STATUS.md)

@@ -42,4 +42,4 @@ TauCeti.thue_approximation {α : ℂ} (hd : 2 ≤ (minpoly ℚ α).natDegree) {�
 ## Sources
 
 - [Tau Ceti documentation: `TauCeti.thue_approximation_real`](https://taucetiproject.org/docs/TauCeti/NumberTheory/DiophantineApproximation/Thue/GapPrinciple.html#TauCeti.thue_approximation_real)
-- [Source of `TauCeti.thue_approximation_real` in TauCeti/NumberTheory/DiophantineApproximation/Thue/GapPrinciple.lean](https://github.com/TauCetiProject/TauCeti/blob/a6027b1d24fcb935c53bd5b50d11b40991cda418/TauCeti/NumberTheory/DiophantineApproximation/Thue/GapPrinciple.lean#L249)
+- [Source of `TauCeti.thue_approximation_real` in TauCeti/NumberTheory/DiophantineApproximation/Thue/GapPrinciple.lean](https://github.com/TauCetiProject/TauCeti/blob/cd41bffcb343151b3e58c89392e206b11fe78c1c/TauCeti/NumberTheory/DiophantineApproximation/Thue/GapPrinciple.lean#L249)

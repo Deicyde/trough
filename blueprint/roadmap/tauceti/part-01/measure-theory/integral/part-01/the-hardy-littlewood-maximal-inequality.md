@@ -23,8 +23,7 @@ TauCeti.eLpNorm_maximalFunction_le.{u_1, u_2} {E : Type u_1} {F : Type u_2} [Nor
   [TopologicalSpace F] (μ : MeasureTheory.Measure E) [μ.IsAddHaarMeasure] {f : E → F}
   (hf : AEMeasurable (fun x => ‖f x‖ₑ) μ) {p : ENNReal} (hp : 1 < p) (hp_top : p ≠ ⊤) :
   MeasureTheory.eLpNorm (TauCeti.maximalFunction μ f) p μ ≤
-    (ENNReal.ofReal (2 * p.toReal * 2 ^ (p.toReal - 1) / (p.toReal - 1)) * 4 ^ Module.finrank ℝ E) ^
-        (1 / p.toReal) *
+    TauCeti.maximalFunctionConst (Module.finrank ℝ E) p.toReal ^ (1 / p.toReal) *
       MeasureTheory.eLpNorm f p μ
 ```
 
@@ -50,8 +49,7 @@ TauCeti.lintegral_rpow_maximalFunction_le.{u_1, u_2} {E : Type u_1} {F : Type u_
   [FiniteDimensional ℝ E] [ENorm F] (μ : MeasureTheory.Measure E) [μ.IsAddHaarMeasure] {f : E → F}
   (hf : AEMeasurable (fun x => ‖f x‖ₑ) μ) {p : ℝ} (hp : 1 < p) :
   ∫⁻ (x : E), TauCeti.maximalFunction μ f x ^ p ∂μ ≤
-    ENNReal.ofReal (2 * p * 2 ^ (p - 1) / (p - 1)) * 4 ^ Module.finrank ℝ E *
-      ∫⁻ (x : E), ‖f x‖ₑ ^ p ∂μ
+    TauCeti.maximalFunctionConst (Module.finrank ℝ E) p * ∫⁻ (x : E), ‖f x‖ₑ ^ p ∂μ
 ```
 
 **The Hardy–Littlewood maximal inequality, in quotient form.** Formalized in Tau Ceti as [`TauCeti.measure_lt_maximalFunction_le`](https://taucetiproject.org/docs/TauCeti/MeasureTheory/Integral/MaximalFunction.html#TauCeti.measure_lt_maximalFunction_le).
@@ -77,4 +75,4 @@ TauCeti.mul_measure_lt_maximalFunction_le.{u_1, u_2} {E : Type u_1} {F : Type u_
 ## Sources
 
 - [Tau Ceti documentation: `TauCeti.eLpNorm_maximalFunction_le`](https://taucetiproject.org/docs/TauCeti/MeasureTheory/Integral/MaximalFunction.html#TauCeti.eLpNorm_maximalFunction_le)
-- [Source of `TauCeti.eLpNorm_maximalFunction_le` in TauCeti/MeasureTheory/Integral/MaximalFunction.lean](https://github.com/TauCetiProject/TauCeti/blob/a6027b1d24fcb935c53bd5b50d11b40991cda418/TauCeti/MeasureTheory/Integral/MaximalFunction.lean#L515)
+- [Source of `TauCeti.eLpNorm_maximalFunction_le` in TauCeti/MeasureTheory/Integral/MaximalFunction.lean](https://github.com/TauCetiProject/TauCeti/blob/cd41bffcb343151b3e58c89392e206b11fe78c1c/TauCeti/MeasureTheory/Integral/MaximalFunction.lean#L628)

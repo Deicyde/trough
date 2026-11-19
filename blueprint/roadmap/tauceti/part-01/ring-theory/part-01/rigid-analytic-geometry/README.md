@@ -1,16 +1,14 @@
 # Rigid analytic geometry
 
-The declarations the status of Tau Ceti's [roadmap](https://github.com/TauCetiProject/TauCetiRoadmap/blob/9f7c032adaf1b838e8183d63ff3cfa886d061cb3/TauCetiRoadmap/RigidAnalyticGeometry/README.md) names as Tau Ceti has them at commit [a6027b1d](https://github.com/TauCetiProject/TauCeti/tree/a6027b1d24fcb935c53bd5b50d11b40991cda418).
+The declarations the status of Tau Ceti's [roadmap](https://github.com/TauCetiProject/TauCetiRoadmap/blob/612845ab80fb9c2b9bee724a156756ee78031591/TauCetiRoadmap/RigidAnalyticGeometry/README.md) names as Tau Ceti has them at commit [cd41bffc](https://github.com/TauCetiProject/TauCeti/tree/cd41bffcb343151b3e58c89392e206b11fe78c1c).
 
 - [The maximum modulus principle](the-maximum-modulus-principle.md)
-- [TauCeti.MvPowerSeries.supSeminorm_eq_norm](../restricted-power-series-and-tate-algebras/part-01/tauceti-mvpowerseries-supseminorm-eq-norm.md)
+- [Power-bounded elements of an affinoid algebra](power-bounded-elements-of-an-affinoid-algebra.md)
+- [The spectral-radius formula](the-spectral-radius-formula.md)
+- [TauCeti.IsAffinoidAlgebra.exists_supSeminorm_pow_eq_norm](tauceti-isaffinoidalgebra-exists-supseminorm-pow.md)
+- [TauCeti.LaurentCover.exact_moduleAugmentation_moduleDiff](tauceti-laurentcover-exact-moduleaugmentation-mo.md)
 - [Affinoid Noether normalisation](affinoid-noether-normalisation.md)
-- [TauCeti.IsAffinoidAlgebra.continuous_algHom](tauceti-isaffinoidalgebra-continuous-alghom.md)
-- [Equivalence of complete affinoid norms](equivalence-of-complete-affinoid-norms.md)
-- [Heights of maximal ideals of affinoid domains](heights-of-maximal-ideals-of-affinoid-domains.md)
-- [The supremum seminorm is the spectral value of the minimal polynomial](the-supremum-seminorm-is-the-spectral-value-of-t.md)
-- [TauCeti.supSeminorm](tauceti-supseminorm.md)
-- [Restricted series over an affinoid algebra form an affinoid algebra](restricted-series-over-an-affinoid-algebra-form.md)
-- [The universal property of restricted series over an affinoid algebra](the-universal-property-of-restricted-series-over.md)
-- [TauCeti.GTopology](tauceti-gtopology.md)
-- [TauCeti.GTopology.isSheaf_iff](tauceti-gtopology-issheaf-iff.md)
+- [Affinoid subdomains](affinoid-subdomains.md)
+- [The rational fraction algebra `A⟨f/g⟩ = A⟨X₁, …, Xₘ⟩ ⧸ (g Xᵢ - fᵢ)`](the-rational-fraction-algebra-af-g-ax1-xm-g-xi-f.md)
+- [`A⟨f/g⟩` is the Huber rational localisation `A⟨T/g⟩`](af-g-is-the-huber-rational-localisation-at-g.md)
+- [TauCeti.GTopology.sheafEquivFinestSlightlyFiner](tauceti-gtopology-sheafequivfinestslightlyfiner.md)

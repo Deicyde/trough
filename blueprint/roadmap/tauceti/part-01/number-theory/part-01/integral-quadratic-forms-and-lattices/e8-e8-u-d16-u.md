@@ -22,12 +22,12 @@ TauCeti.IntegralLattice.nonempty_isometry_orthogonalSum_hyperbolicPlane_e8PowLat
 
 ## Depends on
 
-- [TauCeti.IntegralLattice](../../../linear-algebra/integral-lattices-discriminant-forms-and-overlat/tauceti-integrallattice.md)
+- [TauCeti.IntegralLattice](../../../linear-algebra/part-01/integral-lattices-discriminant-forms-and-overlat/tauceti-integrallattice.md)
 
 ## Proof depends on
 
 - [TauCeti.FiniteQuadraticModule](tauceti-finitequadraticmodule.md)
-- [TauCeti.IntegralLattice.discriminantQuadraticModule](../../../linear-algebra/integral-lattices-discriminant-forms-and-overlat/tauceti-integrallattice-discriminantquadraticmod.md)
+- [TauCeti.IntegralLattice.discriminantQuadraticModule](../../../linear-algebra/part-01/integral-lattices-discriminant-forms-and-overlat/tauceti-integrallattice-discriminantquadraticmod.md)
 
 ## Lean
 
@@ -36,5 +36,5 @@ Formalized in Tau Ceti as [`TauCeti.IntegralLattice.nonempty_isometry_orthogonal
 ## Sources
 
 - [Tau Ceti documentation: `TauCeti.IntegralLattice.nonempty_isometry_orthogonalSum_hyperbolicPlane_e8PowLattice`](https://taucetiproject.org/docs/TauCeti/NumberTheory/IntegralLattice/Cancellation.html#TauCeti.IntegralLattice.nonempty_isometry_orthogonalSum_hyperbolicPlane_e8PowLattice)
-- [Source of `TauCeti.IntegralLattice.nonempty_isometry_orthogonalSum_hyperbolicPlane_e8PowLattice` in TauCeti/NumberTheory/IntegralLattice/Cancellation.lean](https://github.com/TauCetiProject/TauCeti/blob/a6027b1d24fcb935c53bd5b50d11b40991cda418/TauCeti/NumberTheory/IntegralLattice/Cancellation.lean#L309)
-- [Tau Ceti roadmap status: Integral quadratic forms and lattices](https://github.com/TauCetiProject/TauCetiRoadmap/blob/9f7c032adaf1b838e8183d63ff3cfa886d061cb3/TauCetiRoadmap/IntegralLattices/STATUS.md)
+- [Source of `TauCeti.IntegralLattice.nonempty_isometry_orthogonalSum_hyperbolicPlane_e8PowLattice` in TauCeti/NumberTheory/IntegralLattice/Cancellation.lean](https://github.com/TauCetiProject/TauCeti/blob/cd41bffcb343151b3e58c89392e206b11fe78c1c/TauCeti/NumberTheory/IntegralLattice/Cancellation.lean#L309)
+- [Tau Ceti roadmap status: Integral quadratic forms and lattices](https://github.com/TauCetiProject/TauCetiRoadmap/blob/612845ab80fb9c2b9bee724a156756ee78031591/TauCetiRoadmap/IntegralLattices/STATUS.md)

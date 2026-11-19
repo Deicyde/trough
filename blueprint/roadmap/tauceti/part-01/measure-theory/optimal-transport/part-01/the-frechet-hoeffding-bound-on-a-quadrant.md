@@ -31,4 +31,4 @@ Formalized in Tau Ceti as [`TauCeti.ofReal_cdf_sub_le_measure`](https://taucetip
 ## Sources
 
 - [Tau Ceti documentation: `TauCeti.ofReal_cdf_sub_le_measure`](https://taucetiproject.org/docs/TauCeti/MeasureTheory/OptimalTransport/Wasserstein/Rearrangement.html#TauCeti.ofReal_cdf_sub_le_measure)
-- [Source of `TauCeti.ofReal_cdf_sub_le_measure` in TauCeti/MeasureTheory/OptimalTransport/Wasserstein/Rearrangement.lean](https://github.com/TauCetiProject/TauCeti/blob/a6027b1d24fcb935c53bd5b50d11b40991cda418/TauCeti/MeasureTheory/OptimalTransport/Wasserstein/Rearrangement.lean#L83)
+- [Source of `TauCeti.ofReal_cdf_sub_le_measure` in TauCeti/MeasureTheory/OptimalTransport/Wasserstein/Rearrangement.lean](https://github.com/TauCetiProject/TauCeti/blob/cd41bffcb343151b3e58c89392e206b11fe78c1c/TauCeti/MeasureTheory/OptimalTransport/Wasserstein/Rearrangement.lean#L83)

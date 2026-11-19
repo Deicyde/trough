@@ -47,7 +47,7 @@ Its statement uses no other declaration mapped here.
 
 ## Proof depends on
 
-- [The Choie–Zagier criterion (Popa–Zagier, Lemma 1)](../../../linear-algebra/end/the-choie-zagier-criterion-popa-zagier-lemma-1.md)
+- [The Choie–Zagier criterion (Popa–Zagier, Lemma 1)](../../../linear-algebra/part-02/other-results/the-choie-zagier-criterion-popa-zagier-lemma-1.md)
 
 ## Lean
 
@@ -56,4 +56,4 @@ Formalized in Tau Ceti as [`TauCeti.TraceFormulaMatrixModule.one_sub_S_apply_mem
 ## Sources
 
 - [Tau Ceti documentation: `TauCeti.TraceFormulaMatrixModule.one_sub_S_apply_mem_range_one_sub_T_iff`](https://taucetiproject.org/docs/TauCeti/NumberTheory/ModularForms/LevelOne/TraceFormula/Acyclicity.html#TauCeti.TraceFormulaMatrixModule.one_sub_S_apply_mem_range_one_sub_T_iff)
-- [Source of `TauCeti.TraceFormulaMatrixModule.one_sub_S_apply_mem_range_one_sub_T_iff` in TauCeti/NumberTheory/ModularForms/LevelOne/TraceFormula/Acyclicity.lean](https://github.com/TauCetiProject/TauCeti/blob/a6027b1d24fcb935c53bd5b50d11b40991cda418/TauCeti/NumberTheory/ModularForms/LevelOne/TraceFormula/Acyclicity.lean#L85)
+- [Source of `TauCeti.TraceFormulaMatrixModule.one_sub_S_apply_mem_range_one_sub_T_iff` in TauCeti/NumberTheory/ModularForms/LevelOne/TraceFormula/Acyclicity.lean](https://github.com/TauCetiProject/TauCeti/blob/cd41bffcb343151b3e58c89392e206b11fe78c1c/TauCeti/NumberTheory/ModularForms/LevelOne/TraceFormula/Acyclicity.lean#L85)

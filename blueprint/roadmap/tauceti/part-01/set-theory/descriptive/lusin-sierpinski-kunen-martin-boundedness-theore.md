@@ -45,4 +45,4 @@ MeasureTheory.AnalyticSet.exists_treeRank_lt_omega_one_of_isClosed.{u, u_1} {X :
 ## Sources
 
 - [Tau Ceti documentation: `MeasureTheory.AnalyticSet.exists_treeRank_lt_omega_one`](https://taucetiproject.org/docs/TauCeti/SetTheory/Descriptive/Tree.html#MeasureTheory.AnalyticSet.exists_treeRank_lt_omega_one)
-- [Source of `MeasureTheory.AnalyticSet.exists_treeRank_lt_omega_one` in TauCeti/SetTheory/Descriptive/Tree.lean](https://github.com/TauCetiProject/TauCeti/blob/a6027b1d24fcb935c53bd5b50d11b40991cda418/TauCeti/SetTheory/Descriptive/Tree.lean#L501)
+- [Source of `MeasureTheory.AnalyticSet.exists_treeRank_lt_omega_one` in TauCeti/SetTheory/Descriptive/Tree.lean](https://github.com/TauCetiProject/TauCeti/blob/cd41bffcb343151b3e58c89392e206b11fe78c1c/TauCeti/SetTheory/Descriptive/Tree.lean#L501)

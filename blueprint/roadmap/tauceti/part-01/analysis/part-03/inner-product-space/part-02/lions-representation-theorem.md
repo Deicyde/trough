@@ -38,4 +38,4 @@ Formalized in Tau Ceti as [`LinearMap.exists_forall_apply_eq_and_norm_le_of_coer
 ## Sources
 
 - [Tau Ceti documentation: `LinearMap.exists_forall_apply_eq_and_norm_le_of_coercive`](https://taucetiproject.org/docs/TauCeti/Analysis/InnerProductSpace/Lions.html#LinearMap.exists_forall_apply_eq_and_norm_le_of_coercive)
-- [Source of `LinearMap.exists_forall_apply_eq_and_norm_le_of_coercive` in TauCeti/Analysis/InnerProductSpace/Lions.lean](https://github.com/TauCetiProject/TauCeti/blob/a6027b1d24fcb935c53bd5b50d11b40991cda418/TauCeti/Analysis/InnerProductSpace/Lions.lean#L62)
+- [Source of `LinearMap.exists_forall_apply_eq_and_norm_le_of_coercive` in TauCeti/Analysis/InnerProductSpace/Lions.lean](https://github.com/TauCetiProject/TauCeti/blob/cd41bffcb343151b3e58c89392e206b11fe78c1c/TauCeti/Analysis/InnerProductSpace/Lions.lean#L62)

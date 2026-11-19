@@ -26,7 +26,6 @@ MeasureTheory.Measure.tendsto_renewalFunction_div (μ : MeasureTheory.Measure NN
 
 ## Proof depends on
 
-- [Almost-sure renewal law of large numbers](almost-sure-renewal-law-of-large-numbers.md)
 - [De la Vallée Poussin's criterion](../../measure-theory/function/part-01/de-la-vallee-poussins-criterion.md)
 
 ## Lean
@@ -50,5 +49,5 @@ TauCeti.Probability.tendsto_integral_renewalCountNat_div.{u_1} {Ω : Type u_1} [
 ## Sources
 
 - [Tau Ceti documentation: `MeasureTheory.Measure.tendsto_renewalFunction_div`](https://taucetiproject.org/docs/TauCeti/Probability/Renewal/ElementaryTheorem.html#MeasureTheory.Measure.tendsto_renewalFunction_div)
-- [Source of `MeasureTheory.Measure.tendsto_renewalFunction_div` in TauCeti/Probability/Renewal/ElementaryTheorem.lean](https://github.com/TauCetiProject/TauCeti/blob/a6027b1d24fcb935c53bd5b50d11b40991cda418/TauCeti/Probability/Renewal/ElementaryTheorem.lean#L169)
-- [Tau Ceti roadmap status: Markov chains and renewal processes](https://github.com/TauCetiProject/TauCetiRoadmap/blob/9f7c032adaf1b838e8183d63ff3cfa886d061cb3/TauCetiRoadmap/MarkovChainsAndRenewal/STATUS.md)
+- [Source of `MeasureTheory.Measure.tendsto_renewalFunction_div` in TauCeti/Probability/Renewal/ElementaryTheorem.lean](https://github.com/TauCetiProject/TauCeti/blob/cd41bffcb343151b3e58c89392e206b11fe78c1c/TauCeti/Probability/Renewal/ElementaryTheorem.lean#L169)
+- [Tau Ceti roadmap status: Markov chains and renewal processes](https://github.com/TauCetiProject/TauCetiRoadmap/blob/612845ab80fb9c2b9bee724a156756ee78031591/TauCetiRoadmap/MarkovChainsAndRenewal/STATUS.md)

@@ -39,8 +39,7 @@ Its statement uses no other declaration mapped here.
 
 ## Proof depends on
 
-- [The canonical Laurent decomposition](../../part-02/contour/the-canonical-laurent-decomposition.md)
-- [The residue of the Cauchy kernel](../contour-integration-and-the-hungerbuhler-wasem-g/the-residue-of-the-cauchy-kernel.md)
+- [The canonical Laurent decomposition](../../part-03/contour/the-canonical-laurent-decomposition.md)
 - [Rigidity of the pre-Schwarzian derivative](rigidity-of-the-pre-schwarzian-derivative.md)
 
 ## Lean
@@ -50,4 +49,4 @@ Formalized in Tau Ceti as [`TauCeti.eqOn_const_mul_schwarzChristoffelPrimitive_a
 ## Sources
 
 - [Tau Ceti documentation: `TauCeti.eqOn_const_mul_schwarzChristoffelPrimitive_add_of_tendsto`](https://taucetiproject.org/docs/TauCeti/Analysis/Complex/Conformal/SchwarzChristoffel/Prevertex.html#TauCeti.eqOn_const_mul_schwarzChristoffelPrimitive_add_of_tendsto)
-- [Source of `TauCeti.eqOn_const_mul_schwarzChristoffelPrimitive_add_of_tendsto` in TauCeti/Analysis/Complex/Conformal/SchwarzChristoffel/Prevertex.lean](https://github.com/TauCetiProject/TauCeti/blob/a6027b1d24fcb935c53bd5b50d11b40991cda418/TauCeti/Analysis/Complex/Conformal/SchwarzChristoffel/Prevertex.lean#L383)
+- [Source of `TauCeti.eqOn_const_mul_schwarzChristoffelPrimitive_add_of_tendsto` in TauCeti/Analysis/Complex/Conformal/SchwarzChristoffel/Prevertex.lean](https://github.com/TauCetiProject/TauCeti/blob/cd41bffcb343151b3e58c89392e206b11fe78c1c/TauCeti/Analysis/Complex/Conformal/SchwarzChristoffel/Prevertex.lean#L383)

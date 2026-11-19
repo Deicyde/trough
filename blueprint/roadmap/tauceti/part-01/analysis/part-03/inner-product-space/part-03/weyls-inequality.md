@@ -54,4 +54,4 @@ LinearMap.IsSymmetric.abs_eigenvalue_sub_eigenvalue_le_norm.{u_1, u_2} {𝕜 : T
 ## Sources
 
 - [Tau Ceti documentation: `LinearMap.IsSymmetric.abs_eigenvalue_sub_eigenvalue_le`](https://taucetiproject.org/docs/TauCeti/Analysis/InnerProductSpace/CourantFischer.html#LinearMap.IsSymmetric.abs_eigenvalue_sub_eigenvalue_le)
-- [Source of `LinearMap.IsSymmetric.abs_eigenvalue_sub_eigenvalue_le` in TauCeti/Analysis/InnerProductSpace/CourantFischer.lean](https://github.com/TauCetiProject/TauCeti/blob/a6027b1d24fcb935c53bd5b50d11b40991cda418/TauCeti/Analysis/InnerProductSpace/CourantFischer.lean#L438)
+- [Source of `LinearMap.IsSymmetric.abs_eigenvalue_sub_eigenvalue_le` in TauCeti/Analysis/InnerProductSpace/CourantFischer.lean](https://github.com/TauCetiProject/TauCeti/blob/cd41bffcb343151b3e58c89392e206b11fe78c1c/TauCeti/Analysis/InnerProductSpace/CourantFischer.lean#L437)

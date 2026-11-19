@@ -52,4 +52,4 @@ TauCeti.LieModule.bijective_of_ne_zero.{u, v, w, w₁} {R : Type u} {L : Type v}
 ## Sources
 
 - [Tau Ceti documentation: `TauCeti.exists_forall_apply_eq_smul`](https://taucetiproject.org/docs/TauCeti/Algebra/Lie/Weights/Central.html#TauCeti.exists_forall_apply_eq_smul)
-- [Source of `TauCeti.exists_forall_apply_eq_smul` in TauCeti/Algebra/Lie/Weights/Central.lean](https://github.com/TauCetiProject/TauCeti/blob/a6027b1d24fcb935c53bd5b50d11b40991cda418/TauCeti/Algebra/Lie/Weights/Central.lean#L134)
+- [Source of `TauCeti.exists_forall_apply_eq_smul` in TauCeti/Algebra/Lie/Weights/Central.lean](https://github.com/TauCetiProject/TauCeti/blob/cd41bffcb343151b3e58c89392e206b11fe78c1c/TauCeti/Algebra/Lie/Weights/Central.lean#L134)

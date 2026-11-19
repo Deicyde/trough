@@ -31,4 +31,4 @@ Formalized in Tau Ceti as [`ContIntertwiningMap.coind₁_ext`](https://taucetipr
 ## Sources
 
 - [Tau Ceti documentation: `ContIntertwiningMap.coind₁_ext`](https://taucetiproject.org/docs/TauCeti/RepresentationTheory/Continuous/Coinduced.html#ContIntertwiningMap.coind%E2%82%81_ext)
-- [Source of `ContIntertwiningMap.coind₁_ext` in TauCeti/RepresentationTheory/Continuous/Coinduced.lean](https://github.com/TauCetiProject/TauCeti/blob/a6027b1d24fcb935c53bd5b50d11b40991cda418/TauCeti/RepresentationTheory/Continuous/Coinduced.lean#L128)
+- [Source of `ContIntertwiningMap.coind₁_ext` in TauCeti/RepresentationTheory/Continuous/Coinduced.lean](https://github.com/TauCetiProject/TauCeti/blob/cd41bffcb343151b3e58c89392e206b11fe78c1c/TauCeti/RepresentationTheory/Continuous/Coinduced.lean#L128)

@@ -27,5 +27,5 @@ Formalized in Tau Ceti as [`ContRepresentation.HasAlmostInvariantVectors`](https
 ## Sources
 
 - [Tau Ceti documentation: `ContRepresentation.HasAlmostInvariantVectors`](https://taucetiproject.org/docs/TauCeti/RepresentationTheory/Continuous/AlmostInvariant.html#ContRepresentation.HasAlmostInvariantVectors)
-- [Source of `ContRepresentation.HasAlmostInvariantVectors` in TauCeti/RepresentationTheory/Continuous/AlmostInvariant.lean](https://github.com/TauCetiProject/TauCeti/blob/a6027b1d24fcb935c53bd5b50d11b40991cda418/TauCeti/RepresentationTheory/Continuous/AlmostInvariant.lean#L37)
-- [Tau Ceti roadmap status: Approximation, deformation and rigidity of finite factors](https://github.com/TauCetiProject/TauCetiRoadmap/blob/9f7c032adaf1b838e8183d63ff3cfa886d061cb3/TauCetiRoadmap/FactorRigidity/STATUS.md)
+- [Source of `ContRepresentation.HasAlmostInvariantVectors` in TauCeti/RepresentationTheory/Continuous/AlmostInvariant.lean](https://github.com/TauCetiProject/TauCeti/blob/cd41bffcb343151b3e58c89392e206b11fe78c1c/TauCeti/RepresentationTheory/Continuous/AlmostInvariant.lean#L41)
+- [Tau Ceti roadmap status: Approximation, deformation and rigidity of finite factors](https://github.com/TauCetiProject/TauCetiRoadmap/blob/612845ab80fb9c2b9bee724a156756ee78031591/TauCetiRoadmap/FactorRigidity/STATUS.md)

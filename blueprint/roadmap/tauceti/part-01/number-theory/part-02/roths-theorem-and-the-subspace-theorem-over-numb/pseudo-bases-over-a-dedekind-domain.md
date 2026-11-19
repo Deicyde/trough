@@ -36,5 +36,5 @@ Formalized in Tau Ceti as [`Submodule.exists_pseudoBasis`](https://taucetiprojec
 ## Sources
 
 - [Tau Ceti documentation: `Submodule.exists_pseudoBasis`](https://taucetiproject.org/docs/TauCeti/RingTheory/DedekindDomain/PseudoBasis.html#Submodule.exists_pseudoBasis)
-- [Source of `Submodule.exists_pseudoBasis` in TauCeti/RingTheory/DedekindDomain/PseudoBasis.lean](https://github.com/TauCetiProject/TauCeti/blob/a6027b1d24fcb935c53bd5b50d11b40991cda418/TauCeti/RingTheory/DedekindDomain/PseudoBasis.lean#L154)
-- [Tau Ceti roadmap status: Roth's theorem and the Subspace Theorem over number fields](https://github.com/TauCetiProject/TauCetiRoadmap/blob/9f7c032adaf1b838e8183d63ff3cfa886d061cb3/TauCetiRoadmap/SubspaceTheorem/STATUS.md)
+- [Source of `Submodule.exists_pseudoBasis` in TauCeti/RingTheory/DedekindDomain/PseudoBasis.lean](https://github.com/TauCetiProject/TauCeti/blob/cd41bffcb343151b3e58c89392e206b11fe78c1c/TauCeti/RingTheory/DedekindDomain/PseudoBasis.lean#L169)
+- [Tau Ceti roadmap status: Roth's theorem and the Subspace Theorem over number fields](https://github.com/TauCetiProject/TauCetiRoadmap/blob/612845ab80fb9c2b9bee724a156756ee78031591/TauCetiRoadmap/SubspaceTheorem/STATUS.md)

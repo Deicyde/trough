@@ -44,4 +44,4 @@ TauCeti.kronecker_approximation_nat.{u_1} {ι : Type u_1} [Fintype ι] {α : ι 
 ## Sources
 
 - [Tau Ceti documentation: `TauCeti.kronecker_approximation`](https://taucetiproject.org/docs/TauCeti/NumberTheory/DiophantineApproximation/Kronecker.html#TauCeti.kronecker_approximation)
-- [Source of `TauCeti.kronecker_approximation` in TauCeti/NumberTheory/DiophantineApproximation/Kronecker.lean](https://github.com/TauCetiProject/TauCeti/blob/a6027b1d24fcb935c53bd5b50d11b40991cda418/TauCeti/NumberTheory/DiophantineApproximation/Kronecker.lean#L91)
+- [Source of `TauCeti.kronecker_approximation` in TauCeti/NumberTheory/DiophantineApproximation/Kronecker.lean](https://github.com/TauCetiProject/TauCeti/blob/cd41bffcb343151b3e58c89392e206b11fe78c1c/TauCeti/NumberTheory/DiophantineApproximation/Kronecker.lean#L89)

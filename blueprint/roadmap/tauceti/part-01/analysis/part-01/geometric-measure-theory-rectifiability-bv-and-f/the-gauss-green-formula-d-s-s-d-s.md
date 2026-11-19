@@ -44,5 +44,5 @@ Formalized in Tau Ceti as [`TauCeti.integral_trace_fderiv_mul_indicator_eq_integ
 ## Sources
 
 - [Tau Ceti documentation: `TauCeti.integral_trace_fderiv_mul_indicator_eq_integral_inner_outerNormal`](https://taucetiproject.org/docs/TauCeti/Analysis/BoundedVariation/ReducedBoundary.html#TauCeti.integral_trace_fderiv_mul_indicator_eq_integral_inner_outerNormal)
-- [Source of `TauCeti.integral_trace_fderiv_mul_indicator_eq_integral_inner_outerNormal` in TauCeti/Analysis/BoundedVariation/ReducedBoundary.lean](https://github.com/TauCetiProject/TauCeti/blob/a6027b1d24fcb935c53bd5b50d11b40991cda418/TauCeti/Analysis/BoundedVariation/ReducedBoundary.lean#L272)
-- [Tau Ceti roadmap status: Geometric measure theory: rectifiability, BV, and finite perimeter](https://github.com/TauCetiProject/TauCetiRoadmap/blob/9f7c032adaf1b838e8183d63ff3cfa886d061cb3/TauCetiRoadmap/GeometricMeasureTheory/STATUS.md)
+- [Source of `TauCeti.integral_trace_fderiv_mul_indicator_eq_integral_inner_outerNormal` in TauCeti/Analysis/BoundedVariation/ReducedBoundary.lean](https://github.com/TauCetiProject/TauCeti/blob/cd41bffcb343151b3e58c89392e206b11fe78c1c/TauCeti/Analysis/BoundedVariation/ReducedBoundary.lean#L310)
+- [Tau Ceti roadmap status: Geometric measure theory: rectifiability, BV, and finite perimeter](https://github.com/TauCetiProject/TauCetiRoadmap/blob/612845ab80fb9c2b9bee724a156756ee78031591/TauCetiRoadmap/GeometricMeasureTheory/STATUS.md)

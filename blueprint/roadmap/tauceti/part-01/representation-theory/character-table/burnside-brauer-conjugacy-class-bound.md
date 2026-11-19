@@ -29,4 +29,4 @@ Formalized in Tau Ceti as [`FDRep.exists_pos_finrank_hom_tensorPower_lt_card_con
 ## Sources
 
 - [Tau Ceti documentation: `FDRep.exists_pos_finrank_hom_tensorPower_lt_card_conjClasses`](https://taucetiproject.org/docs/TauCeti/RepresentationTheory/CharacterTable/TensorGeneration.html#FDRep.exists_pos_finrank_hom_tensorPower_lt_card_conjClasses)
-- [Source of `FDRep.exists_pos_finrank_hom_tensorPower_lt_card_conjClasses` in TauCeti/RepresentationTheory/CharacterTable/TensorGeneration.lean](https://github.com/TauCetiProject/TauCeti/blob/a6027b1d24fcb935c53bd5b50d11b40991cda418/TauCeti/RepresentationTheory/CharacterTable/TensorGeneration.lean#L388)
+- [Source of `FDRep.exists_pos_finrank_hom_tensorPower_lt_card_conjClasses` in TauCeti/RepresentationTheory/CharacterTable/TensorGeneration.lean](https://github.com/TauCetiProject/TauCeti/blob/cd41bffcb343151b3e58c89392e206b11fe78c1c/TauCeti/RepresentationTheory/CharacterTable/TensorGeneration.lean#L507)

@@ -29,4 +29,4 @@ Formalized in Tau Ceti as [`TauCeti.exists_mul_eq_of_tendsto_mul_right`](https:/
 ## Sources
 
 - [Tau Ceti documentation: `TauCeti.exists_mul_eq_of_tendsto_mul_right`](https://taucetiproject.org/docs/TauCeti/Analysis/Normed/Module/CohenFactorization/Basic.html#TauCeti.exists_mul_eq_of_tendsto_mul_right)
-- [Source of `TauCeti.exists_mul_eq_of_tendsto_mul_right` in TauCeti/Analysis/Normed/Module/CohenFactorization/Basic.lean](https://github.com/TauCetiProject/TauCeti/blob/a6027b1d24fcb935c53bd5b50d11b40991cda418/TauCeti/Analysis/Normed/Module/CohenFactorization/Basic.lean#L357)
+- [Source of `TauCeti.exists_mul_eq_of_tendsto_mul_right` in TauCeti/Analysis/Normed/Module/CohenFactorization/Basic.lean](https://github.com/TauCetiProject/TauCeti/blob/cd41bffcb343151b3e58c89392e206b11fe78c1c/TauCeti/Analysis/Normed/Module/CohenFactorization/Basic.lean#L361)

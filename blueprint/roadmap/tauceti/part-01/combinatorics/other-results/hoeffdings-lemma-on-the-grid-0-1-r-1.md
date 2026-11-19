@@ -28,4 +28,4 @@ Formalized in Tau Ceti as [`TauCeti.sum_range_exp_mul_div_sub_half_le`](https://
 ## Sources
 
 - [Tau Ceti documentation: `TauCeti.sum_range_exp_mul_div_sub_half_le`](https://taucetiproject.org/docs/TauCeti/Combinatorics/Enumerative/BoxLargeDeviation.html#TauCeti.sum_range_exp_mul_div_sub_half_le)
-- [Source of `TauCeti.sum_range_exp_mul_div_sub_half_le` in TauCeti/Combinatorics/Enumerative/BoxLargeDeviation.lean](https://github.com/TauCetiProject/TauCeti/blob/a6027b1d24fcb935c53bd5b50d11b40991cda418/TauCeti/Combinatorics/Enumerative/BoxLargeDeviation.lean#L80)
+- [Source of `TauCeti.sum_range_exp_mul_div_sub_half_le` in TauCeti/Combinatorics/Enumerative/BoxLargeDeviation.lean](https://github.com/TauCetiProject/TauCeti/blob/cd41bffcb343151b3e58c89392e206b11fe78c1c/TauCeti/Combinatorics/Enumerative/BoxLargeDeviation.lean#L80)

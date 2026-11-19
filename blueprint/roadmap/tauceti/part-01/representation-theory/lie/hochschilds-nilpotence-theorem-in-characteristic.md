@@ -34,4 +34,4 @@ Formalized in Tau Ceti as [`LieSubalgebra.isNilpotent_toEnd_of_isNilpotent_ad_of
 ## Sources
 
 - [Tau Ceti documentation: `LieSubalgebra.isNilpotent_toEnd_of_isNilpotent_ad_of_isCompl_radical`](https://taucetiproject.org/docs/TauCeti/RepresentationTheory/Lie/AdNilpotent.html#LieSubalgebra.isNilpotent_toEnd_of_isNilpotent_ad_of_isCompl_radical)
-- [Source of `LieSubalgebra.isNilpotent_toEnd_of_isNilpotent_ad_of_isCompl_radical` in TauCeti/RepresentationTheory/Lie/AdNilpotent.lean](https://github.com/TauCetiProject/TauCeti/blob/a6027b1d24fcb935c53bd5b50d11b40991cda418/TauCeti/RepresentationTheory/Lie/AdNilpotent.lean#L136)
+- [Source of `LieSubalgebra.isNilpotent_toEnd_of_isNilpotent_ad_of_isCompl_radical` in TauCeti/RepresentationTheory/Lie/AdNilpotent.lean](https://github.com/TauCetiProject/TauCeti/blob/cd41bffcb343151b3e58c89392e206b11fe78c1c/TauCeti/RepresentationTheory/Lie/AdNilpotent.lean#L136)

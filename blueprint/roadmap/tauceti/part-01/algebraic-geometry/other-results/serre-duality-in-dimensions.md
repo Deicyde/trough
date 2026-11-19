@@ -39,7 +39,7 @@ Its statement uses no other declaration mapped here.
 
 ## Proof depends on
 
-- [The duality theorem, in dimensions](../algebraic-curves-function-fields-divisors-and-ri/the-duality-theorem-in-dimensions.md)
+- [The duality theorem, in dimensions](../../field-theory/algebraic-curves-function-fields-divisors-and-ri/the-duality-theorem-in-dimensions.md)
 - [Riemann's theorem](../../field-theory/function-field/part-02/riemanns-theorem.md)
 - [The weak approximation theorem](../../field-theory/function-field/part-02/the-weak-approximation-theorem.md)
 
@@ -50,4 +50,4 @@ Formalized in Tau Ceti as [`TauCeti.AlgebraicGeometry.SchemeWeilDivisor.finrank_
 ## Sources
 
 - [Tau Ceti documentation: `TauCeti.AlgebraicGeometry.SchemeWeilDivisor.finrank_cohomology_one_sheaf_eq_finrank_cohomology_zero_sheaf_sub`](https://taucetiproject.org/docs/TauCeti/AlgebraicGeometry/WeilDivisor/Scheme/SerreDuality.html#TauCeti.AlgebraicGeometry.SchemeWeilDivisor.finrank_cohomology_one_sheaf_eq_finrank_cohomology_zero_sheaf_sub)
-- [Source of `TauCeti.AlgebraicGeometry.SchemeWeilDivisor.finrank_cohomology_one_sheaf_eq_finrank_cohomology_zero_sheaf_sub` in TauCeti/AlgebraicGeometry/WeilDivisor/Scheme/SerreDuality.lean](https://github.com/TauCetiProject/TauCeti/blob/a6027b1d24fcb935c53bd5b50d11b40991cda418/TauCeti/AlgebraicGeometry/WeilDivisor/Scheme/SerreDuality.lean#L196)
+- [Source of `TauCeti.AlgebraicGeometry.SchemeWeilDivisor.finrank_cohomology_one_sheaf_eq_finrank_cohomology_zero_sheaf_sub` in TauCeti/AlgebraicGeometry/WeilDivisor/Scheme/SerreDuality.lean](https://github.com/TauCetiProject/TauCeti/blob/cd41bffcb343151b3e58c89392e206b11fe78c1c/TauCeti/AlgebraicGeometry/WeilDivisor/Scheme/SerreDuality.lean#L196)

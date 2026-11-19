@@ -45,4 +45,4 @@ LinearMap.IsSymmetric.le_eigenvalues_add.{u_1, u_2} {𝕜 : Type u_1} {E : Type 
 ## Sources
 
 - [Tau Ceti documentation: `LinearMap.IsSymmetric.eigenvalues_add_le`](https://taucetiproject.org/docs/TauCeti/Analysis/InnerProductSpace/CourantFischer.html#LinearMap.IsSymmetric.eigenvalues_add_le)
-- [Source of `LinearMap.IsSymmetric.eigenvalues_add_le` in TauCeti/Analysis/InnerProductSpace/CourantFischer.lean](https://github.com/TauCetiProject/TauCeti/blob/a6027b1d24fcb935c53bd5b50d11b40991cda418/TauCeti/Analysis/InnerProductSpace/CourantFischer.lean#L519)
+- [Source of `LinearMap.IsSymmetric.eigenvalues_add_le` in TauCeti/Analysis/InnerProductSpace/CourantFischer.lean](https://github.com/TauCetiProject/TauCeti/blob/cd41bffcb343151b3e58c89392e206b11fe78c1c/TauCeti/Analysis/InnerProductSpace/CourantFischer.lean#L518)

@@ -34,5 +34,5 @@ Formalized in Tau Ceti as [`TauCeti.sub_mem_homogeneousUnitDegrees_iff`](https:/
 ## Sources
 
 - [Tau Ceti documentation: `TauCeti.sub_mem_homogeneousUnitDegrees_iff`](https://taucetiproject.org/docs/TauCeti/RingTheory/GradedAlgebra/Homogeneous/Units.html#TauCeti.sub_mem_homogeneousUnitDegrees_iff)
-- [Source of `TauCeti.sub_mem_homogeneousUnitDegrees_iff` in TauCeti/RingTheory/GradedAlgebra/Homogeneous/Units.lean](https://github.com/TauCetiProject/TauCeti/blob/a6027b1d24fcb935c53bd5b50d11b40991cda418/TauCeti/RingTheory/GradedAlgebra/Homogeneous/Units.lean#L209)
-- [Tau Ceti roadmap status: Equivariant intersection theory and Picard groups of quotient stacks](https://github.com/TauCetiProject/TauCetiRoadmap/blob/9f7c032adaf1b838e8183d63ff3cfa886d061cb3/TauCetiRoadmap/EquivariantIntersectionTheory/STATUS.md)
+- [Source of `TauCeti.sub_mem_homogeneousUnitDegrees_iff` in TauCeti/RingTheory/GradedAlgebra/Homogeneous/Units.lean](https://github.com/TauCetiProject/TauCeti/blob/cd41bffcb343151b3e58c89392e206b11fe78c1c/TauCeti/RingTheory/GradedAlgebra/Homogeneous/Units.lean#L209)
+- [Tau Ceti roadmap status: Equivariant intersection theory and Picard groups of quotient stacks](https://github.com/TauCetiProject/TauCetiRoadmap/blob/612845ab80fb9c2b9bee724a156756ee78031591/TauCetiRoadmap/EquivariantIntersectionTheory/STATUS.md)

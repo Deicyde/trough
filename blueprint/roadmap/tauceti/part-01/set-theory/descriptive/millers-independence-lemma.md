@@ -39,4 +39,4 @@ TauCeti.exists_gSGraph_adj_of_not_isMeagre {S : Set (List Bool)} {A : Set (â„• â
 ## Sources
 
 - [Tau Ceti documentation: `TauCeti.exists_mem_orientedGS_of_not_isMeagre`](https://taucetiproject.org/docs/TauCeti/SetTheory/Descriptive/GSGraph.html#TauCeti.exists_mem_orientedGS_of_not_isMeagre)
-- [Source of `TauCeti.exists_mem_orientedGS_of_not_isMeagre` in TauCeti/SetTheory/Descriptive/GSGraph.lean](https://github.com/TauCetiProject/TauCeti/blob/a6027b1d24fcb935c53bd5b50d11b40991cda418/TauCeti/SetTheory/Descriptive/GSGraph.lean#L312)
+- [Source of `TauCeti.exists_mem_orientedGS_of_not_isMeagre` in TauCeti/SetTheory/Descriptive/GSGraph.lean](https://github.com/TauCetiProject/TauCeti/blob/cd41bffcb343151b3e58c89392e206b11fe78c1c/TauCeti/SetTheory/Descriptive/GSGraph.lean#L312)

@@ -32,5 +32,5 @@ Formalized in Tau Ceti as [`Circle.fundamentalGroupMulEquiv_fromPath`](https://t
 ## Sources
 
 - [Tau Ceti documentation: `Circle.fundamentalGroupMulEquiv_fromPath`](https://taucetiproject.org/docs/TauCeti/AlgebraicTopology/UniversalCover/Circle/FundamentalGroup.html#Circle.fundamentalGroupMulEquiv_fromPath)
-- [Source of `Circle.fundamentalGroupMulEquiv_fromPath` in TauCeti/AlgebraicTopology/UniversalCover/Circle/FundamentalGroup.lean](https://github.com/TauCetiProject/TauCeti/blob/a6027b1d24fcb935c53bd5b50d11b40991cda418/TauCeti/AlgebraicTopology/UniversalCover/Circle/FundamentalGroup.lean#L404)
-- [Tau Ceti roadmap status: Universal covers](https://github.com/TauCetiProject/TauCetiRoadmap/blob/9f7c032adaf1b838e8183d63ff3cfa886d061cb3/Completed/UniversalCovers/STATUS.md)
+- [Source of `Circle.fundamentalGroupMulEquiv_fromPath` in TauCeti/AlgebraicTopology/UniversalCover/Circle/FundamentalGroup.lean](https://github.com/TauCetiProject/TauCeti/blob/cd41bffcb343151b3e58c89392e206b11fe78c1c/TauCeti/AlgebraicTopology/UniversalCover/Circle/FundamentalGroup.lean#L411)
+- [Tau Ceti roadmap status: Universal covers](https://github.com/TauCetiProject/TauCetiRoadmap/blob/612845ab80fb9c2b9bee724a156756ee78031591/Completed/UniversalCovers/STATUS.md)

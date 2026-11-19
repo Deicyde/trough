@@ -30,4 +30,4 @@ Formalized in Tau Ceti as [`TauCeti.alternatingGroup_le_of_isPreprimitive_of_isC
 ## Sources
 
 - [Tau Ceti documentation: `TauCeti.alternatingGroup_le_of_isPreprimitive_of_isCycle_mem`](https://taucetiproject.org/docs/TauCeti/GroupTheory/Perm/Jordan.html#TauCeti.alternatingGroup_le_of_isPreprimitive_of_isCycle_mem)
-- [Source of `TauCeti.alternatingGroup_le_of_isPreprimitive_of_isCycle_mem` in TauCeti/GroupTheory/Perm/Jordan.lean](https://github.com/TauCetiProject/TauCeti/blob/a6027b1d24fcb935c53bd5b50d11b40991cda418/TauCeti/GroupTheory/Perm/Jordan.lean#L153)
+- [Source of `TauCeti.alternatingGroup_le_of_isPreprimitive_of_isCycle_mem` in TauCeti/GroupTheory/Perm/Jordan.lean](https://github.com/TauCetiProject/TauCeti/blob/cd41bffcb343151b3e58c89392e206b11fe78c1c/TauCeti/GroupTheory/Perm/Jordan.lean#L153)

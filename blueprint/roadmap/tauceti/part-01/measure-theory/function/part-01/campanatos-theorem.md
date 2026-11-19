@@ -96,4 +96,4 @@ TauCeti.MeasureTheory.holderOnWith_preciseRepresentative_of_setAverage_norm_sub_
 ## Sources
 
 - [Tau Ceti documentation: `TauCeti.MeasureTheory.holderWith_preciseRepresentative_of_setAverage_norm_sub_le`](https://taucetiproject.org/docs/TauCeti/MeasureTheory/Function/Campanato.html#TauCeti.MeasureTheory.holderWith_preciseRepresentative_of_setAverage_norm_sub_le)
-- [Source of `TauCeti.MeasureTheory.holderWith_preciseRepresentative_of_setAverage_norm_sub_le` in TauCeti/MeasureTheory/Function/Campanato.lean](https://github.com/TauCetiProject/TauCeti/blob/a6027b1d24fcb935c53bd5b50d11b40991cda418/TauCeti/MeasureTheory/Function/Campanato.lean#L609)
+- [Source of `TauCeti.MeasureTheory.holderWith_preciseRepresentative_of_setAverage_norm_sub_le` in TauCeti/MeasureTheory/Function/Campanato.lean](https://github.com/TauCetiProject/TauCeti/blob/cd41bffcb343151b3e58c89392e206b11fe78c1c/TauCeti/MeasureTheory/Function/Campanato.lean#L644)

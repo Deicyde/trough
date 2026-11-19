@@ -43,10 +43,10 @@ TauCeti.torusFamilyMarking_loopClass_eq_of_homotopy.{u_1} {Y E : Type} [Topologi
 
 ## Lean
 
-Formalized in Tau Ceti as [`TauCeti.torusFamilyMarking_loopClass_eq_of_homotopy`](https://taucetiproject.org/docs/TauCeti/AlgebraicTopology/Singular/Torus/Family.html#TauCeti.torusFamilyMarking_loopClass_eq_of_homotopy).
+Formalized in Tau Ceti as [`TauCeti.torusFamilyMarking_loopClass_eq_of_homotopy`](https://taucetiproject.org/docs/TauCeti/AlgebraicTopology/Singular/Torus/Family/Basic.html#TauCeti.torusFamilyMarking_loopClass_eq_of_homotopy).
 
 ## Sources
 
-- [Tau Ceti documentation: `TauCeti.torusFamilyMarking_loopClass_eq_of_homotopy`](https://taucetiproject.org/docs/TauCeti/AlgebraicTopology/Singular/Torus/Family.html#TauCeti.torusFamilyMarking_loopClass_eq_of_homotopy)
-- [Source of `TauCeti.torusFamilyMarking_loopClass_eq_of_homotopy` in TauCeti/AlgebraicTopology/Singular/Torus/Family.lean](https://github.com/TauCetiProject/TauCeti/blob/a6027b1d24fcb935c53bd5b50d11b40991cda418/TauCeti/AlgebraicTopology/Singular/Torus/Family.lean#L353)
-- [Tau Ceti roadmap status: Complex tori: varying lattices and logarithmic transforms](https://github.com/TauCetiProject/TauCetiRoadmap/blob/9f7c032adaf1b838e8183d63ff3cfa886d061cb3/TauCetiRoadmap/ComplexTori/STATUS.md)
+- [Tau Ceti documentation: `TauCeti.torusFamilyMarking_loopClass_eq_of_homotopy`](https://taucetiproject.org/docs/TauCeti/AlgebraicTopology/Singular/Torus/Family/Basic.html#TauCeti.torusFamilyMarking_loopClass_eq_of_homotopy)
+- [Source of `TauCeti.torusFamilyMarking_loopClass_eq_of_homotopy` in TauCeti/AlgebraicTopology/Singular/Torus/Family/Basic.lean](https://github.com/TauCetiProject/TauCeti/blob/cd41bffcb343151b3e58c89392e206b11fe78c1c/TauCeti/AlgebraicTopology/Singular/Torus/Family/Basic.lean#L356)
+- [Tau Ceti roadmap status: Complex tori: varying lattices and logarithmic transforms](https://github.com/TauCetiProject/TauCetiRoadmap/blob/612845ab80fb9c2b9bee724a156756ee78031591/TauCetiRoadmap/ComplexTori/STATUS.md)

@@ -30,4 +30,4 @@ Formalized in Tau Ceti as [`TauCeti.ofReal_integral_sub_integral_le_wassersteinE
 ## Sources
 
 - [Tau Ceti documentation: `TauCeti.ofReal_integral_sub_integral_le_wassersteinEDist_one`](https://taucetiproject.org/docs/TauCeti/MeasureTheory/OptimalTransport/Wasserstein/KantorovichRubinstein.html#TauCeti.ofReal_integral_sub_integral_le_wassersteinEDist_one)
-- [Source of `TauCeti.ofReal_integral_sub_integral_le_wassersteinEDist_one` in TauCeti/MeasureTheory/OptimalTransport/Wasserstein/KantorovichRubinstein.lean](https://github.com/TauCetiProject/TauCeti/blob/a6027b1d24fcb935c53bd5b50d11b40991cda418/TauCeti/MeasureTheory/OptimalTransport/Wasserstein/KantorovichRubinstein.lean#L89)
+- [Source of `TauCeti.ofReal_integral_sub_integral_le_wassersteinEDist_one` in TauCeti/MeasureTheory/OptimalTransport/Wasserstein/KantorovichRubinstein.lean](https://github.com/TauCetiProject/TauCeti/blob/cd41bffcb343151b3e58c89392e206b11fe78c1c/TauCeti/MeasureTheory/OptimalTransport/Wasserstein/KantorovichRubinstein.lean#L91)

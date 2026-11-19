@@ -24,7 +24,7 @@ Its statement uses no other declaration mapped here.
 
 ## Proof depends on
 
-- [The Koszul formula](../../part-02/manifold/part-02/the-koszul-formula.md)
+- [The Koszul formula](../../part-02/manifold/part-03/the-koszul-formula.md)
 
 ## Lean
 
@@ -33,5 +33,5 @@ Formalized in Tau Ceti as [`Bundle.ContMDiffRiemannianMetric.equivalence_concord
 ## Sources
 
 - [Tau Ceti documentation: `Bundle.ContMDiffRiemannianMetric.equivalence_concordant`](https://taucetiproject.org/docs/TauCeti/Geometry/Manifold/Riemannian/PositiveScalarCurvature/Concordance.html#Bundle.ContMDiffRiemannianMetric.equivalence_concordant)
-- [Source of `Bundle.ContMDiffRiemannianMetric.equivalence_concordant` in TauCeti/Geometry/Manifold/Riemannian/PositiveScalarCurvature/Concordance.lean](https://github.com/TauCetiProject/TauCeti/blob/a6027b1d24fcb935c53bd5b50d11b40991cda418/TauCeti/Geometry/Manifold/Riemannian/PositiveScalarCurvature/Concordance.lean#L429)
-- [Tau Ceti roadmap status: Positive scalar curvature, surgery and bordism](https://github.com/TauCetiProject/TauCetiRoadmap/blob/9f7c032adaf1b838e8183d63ff3cfa886d061cb3/TauCetiRoadmap/PositiveScalarCurvature/STATUS.md)
+- [Source of `Bundle.ContMDiffRiemannianMetric.equivalence_concordant` in TauCeti/Geometry/Manifold/Riemannian/PositiveScalarCurvature/Concordance.lean](https://github.com/TauCetiProject/TauCeti/blob/cd41bffcb343151b3e58c89392e206b11fe78c1c/TauCeti/Geometry/Manifold/Riemannian/PositiveScalarCurvature/Concordance.lean#L429)
+- [Tau Ceti roadmap status: Positive scalar curvature, surgery and bordism](https://github.com/TauCetiProject/TauCetiRoadmap/blob/612845ab80fb9c2b9bee724a156756ee78031591/TauCetiRoadmap/PositiveScalarCurvature/STATUS.md)

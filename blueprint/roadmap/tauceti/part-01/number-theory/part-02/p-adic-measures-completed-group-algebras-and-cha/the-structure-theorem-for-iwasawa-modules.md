@@ -33,7 +33,7 @@ Its statement uses no other declaration mapped here.
 ## Proof depends on
 
 - [The structure theorem over a regular local ring of dimension at most two](../../../ring-theory/part-02/other-results/part-02/the-structure-theorem-over-a-regular-local-ring.md)
-- [Weierstrass preparation with a uniformiser power](../../part-01/newton-polygons-of-polynomials-and-power-series/weierstrass-preparation-with-a-uniformiser-power.md)
+- [Weierstrass preparation with a uniformiser power](../newton-polygons-of-polynomials-and-power-series/weierstrass-preparation-with-a-uniformiser-power.md)
 
 ## Lean
 
@@ -42,5 +42,5 @@ Formalized in Tau Ceti as [`TauCeti.Iwasawa.exists_isPseudoIsomorphism_elementar
 ## Sources
 
 - [Tau Ceti documentation: `TauCeti.Iwasawa.exists_isPseudoIsomorphism_elementary`](https://taucetiproject.org/docs/TauCeti/RingTheory/Iwasawa/Elementary.html#TauCeti.Iwasawa.exists_isPseudoIsomorphism_elementary)
-- [Source of `TauCeti.Iwasawa.exists_isPseudoIsomorphism_elementary` in TauCeti/RingTheory/Iwasawa/Elementary.lean](https://github.com/TauCetiProject/TauCeti/blob/a6027b1d24fcb935c53bd5b50d11b40991cda418/TauCeti/RingTheory/Iwasawa/Elementary.lean#L67)
-- [Tau Ceti roadmap status: p-adic measures, completed group algebras, and characteristic ideals](https://github.com/TauCetiProject/TauCetiRoadmap/blob/9f7c032adaf1b838e8183d63ff3cfa886d061cb3/TauCetiRoadmap/PadicMeasuresIwasawaAlgebras/STATUS.md)
+- [Source of `TauCeti.Iwasawa.exists_isPseudoIsomorphism_elementary` in TauCeti/RingTheory/Iwasawa/Elementary.lean](https://github.com/TauCetiProject/TauCeti/blob/cd41bffcb343151b3e58c89392e206b11fe78c1c/TauCeti/RingTheory/Iwasawa/Elementary.lean#L67)
+- [Tau Ceti roadmap status: p-adic measures, completed group algebras, and characteristic ideals](https://github.com/TauCetiProject/TauCetiRoadmap/blob/612845ab80fb9c2b9bee724a156756ee78031591/TauCetiRoadmap/PadicMeasuresIwasawaAlgebras/STATUS.md)

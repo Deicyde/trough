@@ -34,5 +34,5 @@ Formalized in Tau Ceti as [`TauCeti.cellularResolution`](https://taucetiproject.
 ## Sources
 
 - [Tau Ceti documentation: `TauCeti.cellularResolution`](https://taucetiproject.org/docs/TauCeti/AlgebraicTopology/Cellular/Resolution.html#TauCeti.cellularResolution)
-- [Source of `TauCeti.cellularResolution` in TauCeti/AlgebraicTopology/Cellular/Resolution.lean](https://github.com/TauCetiProject/TauCeti/blob/a6027b1d24fcb935c53bd5b50d11b40991cda418/TauCeti/AlgebraicTopology/Cellular/Resolution.lean#L162)
-- [Tau Ceti roadmap status: Classifying spaces of discrete groups](https://github.com/TauCetiProject/TauCetiRoadmap/blob/9f7c032adaf1b838e8183d63ff3cfa886d061cb3/TauCetiRoadmap/ClassifyingSpaces/STATUS.md)
+- [Source of `TauCeti.cellularResolution` in TauCeti/AlgebraicTopology/Cellular/Resolution.lean](https://github.com/TauCetiProject/TauCeti/blob/cd41bffcb343151b3e58c89392e206b11fe78c1c/TauCeti/AlgebraicTopology/Cellular/Resolution.lean#L162)
+- [Tau Ceti roadmap status: Classifying spaces of discrete groups](https://github.com/TauCetiProject/TauCetiRoadmap/blob/612845ab80fb9c2b9bee724a156756ee78031591/TauCetiRoadmap/ClassifyingSpaces/STATUS.md)

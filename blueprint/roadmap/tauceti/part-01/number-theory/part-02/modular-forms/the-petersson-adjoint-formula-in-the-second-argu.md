@@ -33,7 +33,7 @@ Its statement uses no other declaration mapped here.
 ## Proof depends on
 
 - [Shimura's decomposition of a double coset into right cosets](../hecke-ring/shimuras-decomposition-of-a-double-coset-into-ri.md)
-- [The third isomorphism theorem for coset spaces](../../../group-theory/other-results/the-third-isomorphism-theorem-for-coset-spaces.md)
+- [The third isomorphism theorem for coset spaces](../../../group-theory/other-results/part-02/the-third-isomorphism-theorem-for-coset-spaces.md)
 
 ## Lean
 
@@ -42,4 +42,4 @@ Formalized in Tau Ceti as [`HeckeRing.GL2.peterssonInnerCosets_heckeTCuspNat_rig
 ## Sources
 
 - [Tau Ceti documentation: `HeckeRing.GL2.peterssonInnerCosets_heckeTCuspNat_right`](https://taucetiproject.org/docs/TauCeti/NumberTheory/ModularForms/Petersson/Normal.html#HeckeRing.GL2.peterssonInnerCosets_heckeTCuspNat_right)
-- [Source of `HeckeRing.GL2.peterssonInnerCosets_heckeTCuspNat_right` in TauCeti/NumberTheory/ModularForms/Petersson/Normal.lean](https://github.com/TauCetiProject/TauCeti/blob/a6027b1d24fcb935c53bd5b50d11b40991cda418/TauCeti/NumberTheory/ModularForms/Petersson/Normal.lean#L80)
+- [Source of `HeckeRing.GL2.peterssonInnerCosets_heckeTCuspNat_right` in TauCeti/NumberTheory/ModularForms/Petersson/Normal.lean](https://github.com/TauCetiProject/TauCeti/blob/cd41bffcb343151b3e58c89392e206b11fe78c1c/TauCeti/NumberTheory/ModularForms/Petersson/Normal.lean#L78)

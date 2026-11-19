@@ -46,4 +46,4 @@ TauCeti.inertiaDegree_mul_ramificationIndex_sub_one_le_discriminantExponent.{u_1
 ## Sources
 
 - [Tau Ceti documentation: `TauCeti.ramificationIndex_sub_one_le_differentExponent`](https://taucetiproject.org/docs/TauCeti/NumberTheory/LocalField/Different/Basic.html#TauCeti.ramificationIndex_sub_one_le_differentExponent)
-- [Source of `TauCeti.ramificationIndex_sub_one_le_differentExponent` in TauCeti/NumberTheory/LocalField/Different/Basic.lean](https://github.com/TauCetiProject/TauCeti/blob/a6027b1d24fcb935c53bd5b50d11b40991cda418/TauCeti/NumberTheory/LocalField/Different/Basic.lean#L120)
+- [Source of `TauCeti.ramificationIndex_sub_one_le_differentExponent` in TauCeti/NumberTheory/LocalField/Different/Basic.lean](https://github.com/TauCetiProject/TauCeti/blob/cd41bffcb343151b3e58c89392e206b11fe78c1c/TauCeti/NumberTheory/LocalField/Different/Basic.lean#L120)

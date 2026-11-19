@@ -46,4 +46,4 @@ ContinuousLinearMap.IsFredholm.of_isCompactOperator_comp_sub_one.{u_1, u_2, u_3}
 ## Sources
 
 - [Tau Ceti documentation: `TauCeti.isFredholm_iff_exists_isCompactOperator_comp_sub_one`](https://taucetiproject.org/docs/TauCeti/Analysis/Fredholm/CompactPerturbation.html#TauCeti.isFredholm_iff_exists_isCompactOperator_comp_sub_one)
-- [Source of `TauCeti.isFredholm_iff_exists_isCompactOperator_comp_sub_one` in TauCeti/Analysis/Fredholm/CompactPerturbation.lean](https://github.com/TauCetiProject/TauCeti/blob/a6027b1d24fcb935c53bd5b50d11b40991cda418/TauCeti/Analysis/Fredholm/CompactPerturbation.lean#L167)
+- [Source of `TauCeti.isFredholm_iff_exists_isCompactOperator_comp_sub_one` in TauCeti/Analysis/Fredholm/CompactPerturbation.lean](https://github.com/TauCetiProject/TauCeti/blob/cd41bffcb343151b3e58c89392e206b11fe78c1c/TauCeti/Analysis/Fredholm/CompactPerturbation.lean#L187)

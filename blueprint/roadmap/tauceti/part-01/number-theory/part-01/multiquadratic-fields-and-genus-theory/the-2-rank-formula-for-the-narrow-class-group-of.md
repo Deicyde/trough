@@ -28,9 +28,8 @@ TauCeti.Multiquadratic.narrowTwoRank_eq_ncard_ramifiedPrimes_sub_one.{u_1} {K : 
 ## Proof depends on
 
 - [Dirichlet's theorem for prime-discriminant characters](../../part-02/multiquadratic/dirichlets-theorem-for-prime-discriminant-charac.md)
-- [Dirichlet's unit theorem (`NumberField.fg_units_integralClosure`)](../../part-02/number-field/dirichlets-unit-theorem-numberfield-fg-units-int.md)
-- [The genus character on the narrow class group](the-genus-character-on-the-narrow-class-group.md)
-- [Hilbert's Theorem 90 for quadratic conjugation](../../part-02/number-field/hilberts-theorem-90-for-quadratic-conjugation.md)
+- [Dirichlet's unit theorem (`NumberField.fg_units_integralClosure`)](../../part-03/number-field/dirichlets-unit-theorem-numberfield-fg-units-int.md)
+- [Hilbert's Theorem 90 for quadratic conjugation](../../part-03/number-field/hilberts-theorem-90-for-quadratic-conjugation.md)
 
 ## Lean
 
@@ -39,5 +38,5 @@ Formalized in Tau Ceti as [`TauCeti.Multiquadratic.narrowTwoRank_eq_ncard_ramifi
 ## Sources
 
 - [Tau Ceti documentation: `TauCeti.Multiquadratic.narrowTwoRank_eq_ncard_ramifiedPrimes_sub_one`](https://taucetiproject.org/docs/TauCeti/NumberTheory/Multiquadratic/Quadratic/TwoRank.html#TauCeti.Multiquadratic.narrowTwoRank_eq_ncard_ramifiedPrimes_sub_one)
-- [Source of `TauCeti.Multiquadratic.narrowTwoRank_eq_ncard_ramifiedPrimes_sub_one` in TauCeti/NumberTheory/Multiquadratic/Quadratic/TwoRank.lean](https://github.com/TauCetiProject/TauCeti/blob/a6027b1d24fcb935c53bd5b50d11b40991cda418/TauCeti/NumberTheory/Multiquadratic/Quadratic/TwoRank.lean#L256)
-- [Tau Ceti roadmap status: Multiquadratic fields and genus theory](https://github.com/TauCetiProject/TauCetiRoadmap/blob/9f7c032adaf1b838e8183d63ff3cfa886d061cb3/Completed/Multiquadratic/STATUS.md)
+- [Source of `TauCeti.Multiquadratic.narrowTwoRank_eq_ncard_ramifiedPrimes_sub_one` in TauCeti/NumberTheory/Multiquadratic/Quadratic/TwoRank.lean](https://github.com/TauCetiProject/TauCeti/blob/cd41bffcb343151b3e58c89392e206b11fe78c1c/TauCeti/NumberTheory/Multiquadratic/Quadratic/TwoRank.lean#L256)
+- [Tau Ceti roadmap status: Multiquadratic fields and genus theory](https://github.com/TauCetiProject/TauCetiRoadmap/blob/612845ab80fb9c2b9bee724a156756ee78031591/Completed/Multiquadratic/STATUS.md)

@@ -29,4 +29,4 @@ Formalized in Tau Ceti as [`TauCeti.CayleyDickson.mul_assoc_of_mem_adjoin`](http
 ## Sources
 
 - [Tau Ceti documentation: `TauCeti.CayleyDickson.mul_assoc_of_mem_adjoin`](https://taucetiproject.org/docs/TauCeti/Algebra/CayleyDickson/Artin.html#TauCeti.CayleyDickson.mul_assoc_of_mem_adjoin)
-- [Source of `TauCeti.CayleyDickson.mul_assoc_of_mem_adjoin` in TauCeti/Algebra/CayleyDickson/Artin.lean](https://github.com/TauCetiProject/TauCeti/blob/a6027b1d24fcb935c53bd5b50d11b40991cda418/TauCeti/Algebra/CayleyDickson/Artin.lean#L270)
+- [Source of `TauCeti.CayleyDickson.mul_assoc_of_mem_adjoin` in TauCeti/Algebra/CayleyDickson/Artin.lean](https://github.com/TauCetiProject/TauCeti/blob/cd41bffcb343151b3e58c89392e206b11fe78c1c/TauCeti/Algebra/CayleyDickson/Artin.lean#L270)

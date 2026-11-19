@@ -33,8 +33,8 @@ Its statement uses no other declaration mapped here.
 
 ## Proof depends on
 
-- [The du Bois-Reymond lemma](../../../part-02/distribution/the-du-bois-reymond-lemma.md)
-- [Green's second identity against a test function](../../sobolev/part-01/greens-second-identity-against-a-test-function.md)
+- [The du Bois-Reymond lemma](../../distribution/the-du-bois-reymond-lemma.md)
+- [Green's second identity against a test function](../../../part-04/sobolev/part-01/greens-second-identity-against-a-test-function.md)
 
 ## Lean
 
@@ -43,4 +43,4 @@ Formalized in Tau Ceti as [`InnerProductSpace.HarmonicOnNhd.norm_sub_le_of_norm_
 ## Sources
 
 - [Tau Ceti documentation: `InnerProductSpace.HarmonicOnNhd.norm_sub_le_of_norm_le`](https://taucetiproject.org/docs/TauCeti/Analysis/InnerProductSpace/Harmonic/Decay.html#InnerProductSpace.HarmonicOnNhd.norm_sub_le_of_norm_le)
-- [Source of `InnerProductSpace.HarmonicOnNhd.norm_sub_le_of_norm_le` in TauCeti/Analysis/InnerProductSpace/Harmonic/Decay.lean](https://github.com/TauCetiProject/TauCeti/blob/a6027b1d24fcb935c53bd5b50d11b40991cda418/TauCeti/Analysis/InnerProductSpace/Harmonic/Decay.lean#L258)
+- [Source of `InnerProductSpace.HarmonicOnNhd.norm_sub_le_of_norm_le` in TauCeti/Analysis/InnerProductSpace/Harmonic/Decay.lean](https://github.com/TauCetiProject/TauCeti/blob/cd41bffcb343151b3e58c89392e206b11fe78c1c/TauCeti/Analysis/InnerProductSpace/Harmonic/Decay.lean#L267)

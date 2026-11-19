@@ -38,5 +38,5 @@ Formalized in Tau Ceti as [`Submodule.orbitRelQuotientComapQuotientEquiv`](https
 ## Sources
 
 - [Tau Ceti documentation: `Submodule.orbitRelQuotientComapQuotientEquiv`](https://taucetiproject.org/docs/TauCeti/Algebra/Module/Submodule/OrbitRelQuotient.html#Submodule.orbitRelQuotientComapQuotientEquiv)
-- [Source of `Submodule.orbitRelQuotientComapQuotientEquiv` in TauCeti/Algebra/Module/Submodule/OrbitRelQuotient.lean](https://github.com/TauCetiProject/TauCeti/blob/a6027b1d24fcb935c53bd5b50d11b40991cda418/TauCeti/Algebra/Module/Submodule/OrbitRelQuotient.lean#L332)
-- [Tau Ceti roadmap status: Complex tori: varying lattices and logarithmic transforms](https://github.com/TauCetiProject/TauCetiRoadmap/blob/9f7c032adaf1b838e8183d63ff3cfa886d061cb3/TauCetiRoadmap/ComplexTori/STATUS.md)
+- [Source of `Submodule.orbitRelQuotientComapQuotientEquiv` in TauCeti/Algebra/Module/Submodule/OrbitRelQuotient.lean](https://github.com/TauCetiProject/TauCeti/blob/cd41bffcb343151b3e58c89392e206b11fe78c1c/TauCeti/Algebra/Module/Submodule/OrbitRelQuotient.lean#L332)
+- [Tau Ceti roadmap status: Complex tori: varying lattices and logarithmic transforms](https://github.com/TauCetiProject/TauCetiRoadmap/blob/612845ab80fb9c2b9bee724a156756ee78031591/TauCetiRoadmap/ComplexTori/STATUS.md)

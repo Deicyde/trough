@@ -50,5 +50,5 @@ Formalized in Tau Ceti as [`TauCeti.NumberField.multiplicity_relDiscr_fixedField
 ## Sources
 
 - [Tau Ceti documentation: `TauCeti.NumberField.multiplicity_relDiscr_fixedField_eq_sum`](https://taucetiproject.org/docs/TauCeti/NumberTheory/NumberField/Discriminant/FixedField.html#TauCeti.NumberField.multiplicity_relDiscr_fixedField_eq_sum)
-- [Source of `TauCeti.NumberField.multiplicity_relDiscr_fixedField_eq_sum` in TauCeti/NumberTheory/NumberField/Discriminant/FixedField.lean](https://github.com/TauCetiProject/TauCeti/blob/a6027b1d24fcb935c53bd5b50d11b40991cda418/TauCeti/NumberTheory/NumberField/Discriminant/FixedField.lean#L106)
-- [Tau Ceti roadmap status: Number fields, ramification, Frobenius, and the LMFDB invariants](https://github.com/TauCetiProject/TauCetiRoadmap/blob/9f7c032adaf1b838e8183d63ff3cfa886d061cb3/Completed/NumberFieldArithmetic/STATUS.md)
+- [Source of `TauCeti.NumberField.multiplicity_relDiscr_fixedField_eq_sum` in TauCeti/NumberTheory/NumberField/Discriminant/FixedField.lean](https://github.com/TauCetiProject/TauCeti/blob/cd41bffcb343151b3e58c89392e206b11fe78c1c/TauCeti/NumberTheory/NumberField/Discriminant/FixedField.lean#L106)
+- [Tau Ceti roadmap status: Number fields, ramification, Frobenius, and the LMFDB invariants](https://github.com/TauCetiProject/TauCetiRoadmap/blob/612845ab80fb9c2b9bee724a156756ee78031591/Completed/NumberFieldArithmetic/STATUS.md)

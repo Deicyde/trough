@@ -26,8 +26,11 @@ TauCeti.mk_quotient_isoSetoidOn_nat_le_aleph_one_or_eq_continuum.{u, v, uι}
 
 ## Proof depends on
 
-- [Morley's dichotomy on the tier `ℕ`](morleys-dichotomy-on-the-tier-n.md)
 - [Setoid.HasCantorAntichainOn](../../set-theory/borel-equivalence-relations-the-g0-dichotomy-and/setoid-hascantorantichainon.md)
+
+## Informally uses
+
+- [Morley's dichotomy on the tier `ℕ`](morleys-dichotomy-on-the-tier-n.md)
 
 ## Lean
 
@@ -52,4 +55,4 @@ TauCeti.mk_isoClasses_le_aleph_one_or_eq_continuum.{u, v} {L : FirstOrder.Langua
 ## Sources
 
 - [Tau Ceti documentation: `TauCeti.mk_quotient_isoSetoidOn_nat_le_aleph_one_or_eq_continuum`](https://taucetiproject.org/docs/TauCeti/ModelTheory/Counting/Morley.html#TauCeti.mk_quotient_isoSetoidOn_nat_le_aleph_one_or_eq_continuum)
-- [Source of `TauCeti.mk_quotient_isoSetoidOn_nat_le_aleph_one_or_eq_continuum` in TauCeti/ModelTheory/Counting/Morley.lean](https://github.com/TauCetiProject/TauCeti/blob/a6027b1d24fcb935c53bd5b50d11b40991cda418/TauCeti/ModelTheory/Counting/Morley.lean#L139)
+- [Source of `TauCeti.mk_quotient_isoSetoidOn_nat_le_aleph_one_or_eq_continuum` in TauCeti/ModelTheory/Counting/Morley.lean](https://github.com/TauCetiProject/TauCeti/blob/cd41bffcb343151b3e58c89392e206b11fe78c1c/TauCeti/ModelTheory/Counting/Morley.lean#L139)

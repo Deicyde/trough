@@ -45,4 +45,4 @@ Formalized in Tau Ceti as [`TauCeti.ExactStructure.IsResolving.mapEquiv_comp_res
 ## Sources
 
 - [Tau Ceti documentation: `TauCeti.ExactStructure.IsResolving.mapEquiv_comp_resolutionEquiv`](https://taucetiproject.org/docs/TauCeti/CategoryTheory/GrothendieckGroup/Resolving.html#TauCeti.ExactStructure.IsResolving.mapEquiv_comp_resolutionEquiv)
-- [Source of `TauCeti.ExactStructure.IsResolving.mapEquiv_comp_resolutionEquiv` in TauCeti/CategoryTheory/GrothendieckGroup/Resolving.lean](https://github.com/TauCetiProject/TauCeti/blob/a6027b1d24fcb935c53bd5b50d11b40991cda418/TauCeti/CategoryTheory/GrothendieckGroup/Resolving.lean#L400)
+- [Source of `TauCeti.ExactStructure.IsResolving.mapEquiv_comp_resolutionEquiv` in TauCeti/CategoryTheory/GrothendieckGroup/Resolving.lean](https://github.com/TauCetiProject/TauCeti/blob/cd41bffcb343151b3e58c89392e206b11fe78c1c/TauCeti/CategoryTheory/GrothendieckGroup/Resolving.lean#L400)

@@ -33,7 +33,6 @@ Its statement uses no other declaration mapped here.
 - [The first half of Dedekind's different theorem](../../part-02/local-field/the-first-half-of-dedekinds-different-theorem.md)
 - [Hensel's lemma for the norm](../../../ring-theory/part-02/other-results/part-01/hensels-lemma-for-the-norm.md)
 - [The Kummer isomorphism](../../../representation-theory/continuous-cohomology-of-profinite-groups/the-kummer-isomorphism.md)
-- [The local class formation](../class-field-theory/the-local-class-formation.md)
 - [The local invariant](../class-field-theory/the-local-invariant.md)
 - [Local reciprocity for `A(L)`](local-reciprocity-for-a-l.md)
 - [Local Tate duality in degree one](../../part-02/class-field-theory/local-tate-duality-in-degree-one.md)
@@ -46,7 +45,7 @@ Its statement uses no other declaration mapped here.
 - [Tate's theorem for a class formation, in every integer degree](../class-field-theory/tates-theorem-for-a-class-formation-in-every-int.md)
 - [TauCeti.algebraicExtensionNormedField](../local-fields-and-ramification/tauceti-algebraicextensionnormedfield.md)
 - [TauCeti.ClassFieldTheory.tateTheorem](../class-field-theory/tauceti-classfieldtheory-tatetheorem.md)
-- [The third isomorphism theorem for coset spaces](../../../group-theory/other-results/the-third-isomorphism-theorem-for-coset-spaces.md)
+- [The third isomorphism theorem for coset spaces](../../../group-theory/other-results/part-02/the-third-isomorphism-theorem-for-coset-spaces.md)
 
 ## Lean
 
@@ -55,5 +54,5 @@ Formalized in Tau Ceti as [`TauCeti.nonempty_layerTateModule`](https://taucetipr
 ## Sources
 
 - [Tau Ceti documentation: `TauCeti.nonempty_layerTateModule`](https://taucetiproject.org/docs/TauCeti/NumberTheory/Padics/MultiplicativeCompletion/LayerTateModule/Cohomology.html#TauCeti.nonempty_layerTateModule)
-- [Source of `TauCeti.nonempty_layerTateModule` in TauCeti/NumberTheory/Padics/MultiplicativeCompletion/LayerTateModule/Cohomology.lean](https://github.com/TauCetiProject/TauCeti/blob/a6027b1d24fcb935c53bd5b50d11b40991cda418/TauCeti/NumberTheory/Padics/MultiplicativeCompletion/LayerTateModule/Cohomology.lean#L90)
-- [Tau Ceti roadmap status: Local Galois groups of p-adic fields](https://github.com/TauCetiProject/TauCetiRoadmap/blob/9f7c032adaf1b838e8183d63ff3cfa886d061cb3/Completed/LocalGaloisGroups/STATUS.md)
+- [Source of `TauCeti.nonempty_layerTateModule` in TauCeti/NumberTheory/Padics/MultiplicativeCompletion/LayerTateModule/Cohomology.lean](https://github.com/TauCetiProject/TauCeti/blob/cd41bffcb343151b3e58c89392e206b11fe78c1c/TauCeti/NumberTheory/Padics/MultiplicativeCompletion/LayerTateModule/Cohomology.lean#L90)
+- [Tau Ceti roadmap status: Local Galois groups of p-adic fields](https://github.com/TauCetiProject/TauCetiRoadmap/blob/612845ab80fb9c2b9bee724a156756ee78031591/Completed/LocalGaloisGroups/STATUS.md)

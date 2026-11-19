@@ -38,8 +38,8 @@ Its statement uses no other declaration mapped here.
 
 ## Proof depends on
 
-- [The Arzelà–Ascoli theorem in `C(X, Y)`](../../../topology/other-results/the-arzela-ascoli-theorem-in-c-x-y.md)
-- [Hölder's bound on an average](../../integral/part-01/holders-bound-on-an-average.md)
+- [Arzelà–Ascoli along exhausting bands](../../../../part-02/topology/other-results/arzela-ascoli-along-exhausting-bands.md)
+- [Hölder's bound on an average](../../integral/part-02/holders-bound-on-an-average.md)
 
 ## Lean
 
@@ -48,4 +48,4 @@ Formalized in Tau Ceti as [`TauCeti.totallyBounded_of_comp_add_sub_of_unifTight`
 ## Sources
 
 - [Tau Ceti documentation: `TauCeti.totallyBounded_of_comp_add_sub_of_unifTight`](https://taucetiproject.org/docs/TauCeti/MeasureTheory/Function/Lp/FrechetKolmogorov.html#TauCeti.totallyBounded_of_comp_add_sub_of_unifTight)
-- [Source of `TauCeti.totallyBounded_of_comp_add_sub_of_unifTight` in TauCeti/MeasureTheory/Function/Lp/FrechetKolmogorov.lean](https://github.com/TauCetiProject/TauCeti/blob/a6027b1d24fcb935c53bd5b50d11b40991cda418/TauCeti/MeasureTheory/Function/Lp/FrechetKolmogorov.lean#L265)
+- [Source of `TauCeti.totallyBounded_of_comp_add_sub_of_unifTight` in TauCeti/MeasureTheory/Function/Lp/FrechetKolmogorov.lean](https://github.com/TauCetiProject/TauCeti/blob/cd41bffcb343151b3e58c89392e206b11fe78c1c/TauCeti/MeasureTheory/Function/Lp/FrechetKolmogorov.lean#L265)

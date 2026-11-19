@@ -31,5 +31,5 @@ Formalized in Tau Ceti as [`Matrix.sign_det_one_sub_pow`](https://taucetiproject
 ## Sources
 
 - [Tau Ceti documentation: `Matrix.sign_det_one_sub_pow`](https://taucetiproject.org/docs/TauCeti/LinearAlgebra/Matrix/Charpoly/DetSign.html#Matrix.sign_det_one_sub_pow)
-- [Source of `Matrix.sign_det_one_sub_pow` in TauCeti/LinearAlgebra/Matrix/Charpoly/DetSign.lean](https://github.com/TauCetiProject/TauCeti/blob/a6027b1d24fcb935c53bd5b50d11b40991cda418/TauCeti/LinearAlgebra/Matrix/Charpoly/DetSign.lean#L104)
-- [Tau Ceti roadmap status: Morse–Novikov homology and dynamical Reidemeister torsion](https://github.com/TauCetiProject/TauCetiRoadmap/blob/9f7c032adaf1b838e8183d63ff3cfa886d061cb3/TauCetiRoadmap/MorseNovikov/STATUS.md)
+- [Source of `Matrix.sign_det_one_sub_pow` in TauCeti/LinearAlgebra/Matrix/Charpoly/DetSign.lean](https://github.com/TauCetiProject/TauCeti/blob/cd41bffcb343151b3e58c89392e206b11fe78c1c/TauCeti/LinearAlgebra/Matrix/Charpoly/DetSign.lean#L104)
+- [Tau Ceti roadmap status: Morse–Novikov homology and dynamical Reidemeister torsion](https://github.com/TauCetiProject/TauCetiRoadmap/blob/612845ab80fb9c2b9bee724a156756ee78031591/TauCetiRoadmap/MorseNovikov/STATUS.md)

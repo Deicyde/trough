@@ -48,7 +48,7 @@ Its statement uses no other declaration mapped here.
 - [Dedekind's different theorem, first part (Stichtenoth, Theorem 3.5.1(a))](../../field-theory/function-field/part-01/dedekinds-different-theorem-first-part-stichteno.md)
 - [The fundamental inequality (Stichtenoth, Theorem 3.1.11)](../../field-theory/function-field/part-01/the-fundamental-inequality-stichtenoth-theorem-3.md)
 - [Riemann's theorem](../../field-theory/function-field/part-02/riemanns-theorem.md)
-- [The Riemann–Roch theorem (Stichtenoth, Theorem 1.5.15), for the divisor `(ω)` itself](../algebraic-curves-function-fields-divisors-and-ri/the-riemann-roch-theorem-stichtenoth-theorem-1-5.md)
+- [The Riemann–Roch theorem (Stichtenoth, Theorem 1.5.15), for the divisor `(ω)` itself](../../field-theory/algebraic-curves-function-fields-divisors-and-ri/the-riemann-roch-theorem-stichtenoth-theorem-1-5.md)
 - [The weak approximation theorem](../../field-theory/function-field/part-02/the-weak-approximation-theorem.md)
 
 ## Lean
@@ -58,4 +58,4 @@ Formalized in Tau Ceti as [`TauCeti.CurveX3SubX.hurwitz_genus_formula`](https://
 ## Sources
 
 - [Tau Ceti documentation: `TauCeti.CurveX3SubX.hurwitz_genus_formula`](https://taucetiproject.org/docs/TauCeti/AlgebraicGeometry/EllipticCurve/Affine/FunctionField/TameDifferent.html#TauCeti.CurveX3SubX.hurwitz_genus_formula)
-- [Source of `TauCeti.CurveX3SubX.hurwitz_genus_formula` in TauCeti/AlgebraicGeometry/EllipticCurve/Affine/FunctionField/TameDifferent.lean](https://github.com/TauCetiProject/TauCeti/blob/a6027b1d24fcb935c53bd5b50d11b40991cda418/TauCeti/AlgebraicGeometry/EllipticCurve/Affine/FunctionField/TameDifferent.lean#L139)
+- [Source of `TauCeti.CurveX3SubX.hurwitz_genus_formula` in TauCeti/AlgebraicGeometry/EllipticCurve/Affine/FunctionField/TameDifferent.lean](https://github.com/TauCetiProject/TauCeti/blob/cd41bffcb343151b3e58c89392e206b11fe78c1c/TauCeti/AlgebraicGeometry/EllipticCurve/Affine/FunctionField/TameDifferent.lean#L139)

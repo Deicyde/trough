@@ -27,4 +27,4 @@ Formalized in Tau Ceti as [`TauCeti.IsGoodDixonPrime.two_mul_natAbs_lt_of_natAbs
 ## Sources
 
 - [Tau Ceti documentation: `TauCeti.IsGoodDixonPrime.two_mul_natAbs_lt_of_natAbs_le_sqrt`](https://taucetiproject.org/docs/TauCeti/RepresentationTheory/CharacterTable/Dixon/Prime.html#TauCeti.IsGoodDixonPrime.two_mul_natAbs_lt_of_natAbs_le_sqrt)
-- [Source of `TauCeti.IsGoodDixonPrime.two_mul_natAbs_lt_of_natAbs_le_sqrt` in TauCeti/RepresentationTheory/CharacterTable/Dixon/Prime.lean](https://github.com/TauCetiProject/TauCeti/blob/a6027b1d24fcb935c53bd5b50d11b40991cda418/TauCeti/RepresentationTheory/CharacterTable/Dixon/Prime.lean#L191)
+- [Source of `TauCeti.IsGoodDixonPrime.two_mul_natAbs_lt_of_natAbs_le_sqrt` in TauCeti/RepresentationTheory/CharacterTable/Dixon/Prime.lean](https://github.com/TauCetiProject/TauCeti/blob/cd41bffcb343151b3e58c89392e206b11fe78c1c/TauCeti/RepresentationTheory/CharacterTable/Dixon/Prime.lean#L191)

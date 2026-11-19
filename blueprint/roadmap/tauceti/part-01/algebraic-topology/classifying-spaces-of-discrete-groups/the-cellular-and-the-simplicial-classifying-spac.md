@@ -29,7 +29,6 @@ TauCeti.cellularHomotopyEquivClassifyingSpace.{u} {S : Type u} (R : Set (FreeGro
 
 ## Proof depends on
 
-- [The cellular classifying space is a CW complex](the-cellular-classifying-space-is-a-cw-complex.md)
 - [The fundamental group at `x` acts on every homotopy group based at `x`](../universal-covers/the-fundamental-group-at-x-acts-on-every-homotop.md)
 - [The isomorphism `π₁(S¹) ≃* ℤ` is the degree](../universal-covers/the-isomorphism-1-s1-z-is-the-degree.md)
 - [The orbit space of a free cellular action is a CW complex](the-orbit-space-of-a-free-cellular-action-is-a-c.md)
@@ -42,5 +41,5 @@ Formalized in Tau Ceti as [`TauCeti.cellularHomotopyEquivClassifyingSpace`](http
 ## Sources
 
 - [Tau Ceti documentation: `TauCeti.cellularHomotopyEquivClassifyingSpace`](https://taucetiproject.org/docs/TauCeti/AlgebraicTopology/ClassifyingSpace/Comparison.html#TauCeti.cellularHomotopyEquivClassifyingSpace)
-- [Source of `TauCeti.cellularHomotopyEquivClassifyingSpace` in TauCeti/AlgebraicTopology/ClassifyingSpace/Comparison.lean](https://github.com/TauCetiProject/TauCeti/blob/a6027b1d24fcb935c53bd5b50d11b40991cda418/TauCeti/AlgebraicTopology/ClassifyingSpace/Comparison.lean#L202)
-- [Tau Ceti roadmap status: Classifying spaces of discrete groups](https://github.com/TauCetiProject/TauCetiRoadmap/blob/9f7c032adaf1b838e8183d63ff3cfa886d061cb3/TauCetiRoadmap/ClassifyingSpaces/STATUS.md)
+- [Source of `TauCeti.cellularHomotopyEquivClassifyingSpace` in TauCeti/AlgebraicTopology/ClassifyingSpace/Comparison.lean](https://github.com/TauCetiProject/TauCeti/blob/cd41bffcb343151b3e58c89392e206b11fe78c1c/TauCeti/AlgebraicTopology/ClassifyingSpace/Comparison.lean#L202)
+- [Tau Ceti roadmap status: Classifying spaces of discrete groups](https://github.com/TauCetiProject/TauCetiRoadmap/blob/612845ab80fb9c2b9bee724a156756ee78031591/TauCetiRoadmap/ClassifyingSpaces/STATUS.md)

@@ -36,4 +36,4 @@ Formalized in Tau Ceti as [`TauCeti.psumPart_eq_sum_spechtCharValue_smul_schurPo
 ## Sources
 
 - [Tau Ceti documentation: `TauCeti.psumPart_eq_sum_spechtCharValue_smul_schurPoly`](https://taucetiproject.org/docs/TauCeti/RepresentationTheory/Symmetric/FrobeniusCharacteristic.html#TauCeti.psumPart_eq_sum_spechtCharValue_smul_schurPoly)
-- [Source of `TauCeti.psumPart_eq_sum_spechtCharValue_smul_schurPoly` in TauCeti/RepresentationTheory/Symmetric/FrobeniusCharacteristic.lean](https://github.com/TauCetiProject/TauCeti/blob/a6027b1d24fcb935c53bd5b50d11b40991cda418/TauCeti/RepresentationTheory/Symmetric/FrobeniusCharacteristic.lean#L173)
+- [Source of `TauCeti.psumPart_eq_sum_spechtCharValue_smul_schurPoly` in TauCeti/RepresentationTheory/Symmetric/FrobeniusCharacteristic.lean](https://github.com/TauCetiProject/TauCeti/blob/cd41bffcb343151b3e58c89392e206b11fe78c1c/TauCeti/RepresentationTheory/Symmetric/FrobeniusCharacteristic.lean#L170)

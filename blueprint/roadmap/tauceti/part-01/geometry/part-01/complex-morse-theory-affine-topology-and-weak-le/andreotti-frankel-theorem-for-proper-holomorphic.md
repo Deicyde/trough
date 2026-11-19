@@ -33,11 +33,15 @@ Its statement uses no other declaration mapped here.
 
 ## Proof depends on
 
+- [A maximal integral curve confined to a compact set is defined for all time](../geodesics-the-exponential-map-and-the-hopf-rinow/a-maximal-integral-curve-confined-to-a-compact-s.md)
+- [Fermat's theorem on a manifold](../morse-functions-sublevel-topology-and-morse-bott/part-01/fermats-theorem-on-a-manifold.md)
 - [The index bound for strongly `q`-pseudoconvex functions on a complex manifold](the-index-bound-for-strongly-q-pseudoconvex-func.md)
-- [The inverse function theorem, with a `C^n` inverse on the whole target](../../../analysis/part-02/calculus/part-01/the-inverse-function-theorem-with-a-c-n-inverse.md)
+- [The inverse function theorem for a converging family](../../../analysis/part-03/calculus/part-01/the-inverse-function-theorem-for-a-converging-fa.md)
+- [The Mayer–Vietoris isomorphism of a sphere](../../../algebraic-topology/singular/the-mayer-vietoris-isomorphism-of-a-sphere.md)
+- [Milnor's cell attachment theorem](../../part-02/manifold/part-03/milnors-cell-attachment-theorem.md)
 - [ModelWithCorners.restrictScalars](../complex-manifolds-transport-quotients-bundles-an/modelwithcorners-restrictscalars.md)
-- [The relative homology across a critical level is free on the critical points](../morse-functions-sublevel-topology-and-morse-bott/part-01/the-relative-homology-across-a-critical-level-is.md)
-- [Sard's lemma in equal dimensions](../../../analysis/part-02/calculus/part-02/sards-lemma-in-equal-dimensions.md)
+- [The relative small-chain theorem](../../../algebraic-topology/singular/the-relative-small-chain-theorem.md)
+- [Sard's lemma in equal dimensions](../../../analysis/part-03/calculus/part-02/sards-lemma-in-equal-dimensions.md)
 
 ## Lean
 
@@ -46,5 +50,5 @@ Formalized in Tau Ceti as [`TauCeti.isZero_singularHomology_of_isProperMap_holom
 ## Sources
 
 - [Tau Ceti documentation: `TauCeti.isZero_singularHomology_of_isProperMap_holomorphic_immersion`](https://taucetiproject.org/docs/TauCeti/Geometry/Manifold/Complex/SublevelHomology.html#TauCeti.isZero_singularHomology_of_isProperMap_holomorphic_immersion)
-- [Source of `TauCeti.isZero_singularHomology_of_isProperMap_holomorphic_immersion` in TauCeti/Geometry/Manifold/Complex/SublevelHomology.lean](https://github.com/TauCetiProject/TauCeti/blob/a6027b1d24fcb935c53bd5b50d11b40991cda418/TauCeti/Geometry/Manifold/Complex/SublevelHomology.lean#L200)
-- [Tau Ceti roadmap status: Complex Morse theory, affine topology and weak Lefschetz](https://github.com/TauCetiProject/TauCetiRoadmap/blob/9f7c032adaf1b838e8183d63ff3cfa886d061cb3/TauCetiRoadmap/AffineMorseLefschetz/STATUS.md)
+- [Source of `TauCeti.isZero_singularHomology_of_isProperMap_holomorphic_immersion` in TauCeti/Geometry/Manifold/Complex/SublevelHomology.lean](https://github.com/TauCetiProject/TauCeti/blob/cd41bffcb343151b3e58c89392e206b11fe78c1c/TauCeti/Geometry/Manifold/Complex/SublevelHomology.lean#L212)
+- [Tau Ceti roadmap status: Complex Morse theory, affine topology and weak Lefschetz](https://github.com/TauCetiProject/TauCetiRoadmap/blob/612845ab80fb9c2b9bee724a156756ee78031591/TauCetiRoadmap/AffineMorseLefschetz/STATUS.md)

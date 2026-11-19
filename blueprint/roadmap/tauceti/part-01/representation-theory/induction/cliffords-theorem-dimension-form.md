@@ -1,7 +1,7 @@
 ---
 declaration: theorem
 origin: cited
-lean: FDRep.clifford_restrict_finrank, FDRep.clifford_restrict_iso_of_isAtom, TauCeti.clifford_restrict_character, Representation.finrank_linearMap_eq_of_isAtom, Representation.finrank_linearMap_eq_of_isAtom_of_isAtom, FDRep.clifford_restrict_iso, TauCeti.Representation.exists_nonempty_linearEquiv_conjSubrep, TauCeti.Representation.exists_isAtom_forall_nonempty_linearEquiv_conjSubrep, Representation.exists_forall_finrank_linearMap_eq
+lean: FDRep.clifford_restrict_finrank, FDRep.clifford_restrict_iso_of_isAtom, TauCeti.clifford_restrict_character, Representation.finrank_linearMap_eq_of_isAtom, Representation.finrank_linearMap_eq_of_isAtom_of_isAtom, FDRep.clifford_restrict_iso, Representation.exists_nonempty_linearEquiv_conjSubrep, Representation.exists_isAtom_forall_nonempty_linearEquiv_conjSubrep, Representation.exists_forall_finrank_linearMap_eq
 statement: formalized
 proof: formalized
 ---
@@ -38,7 +38,7 @@ Its statement uses no other declaration mapped here.
 
 ## Proof depends on
 
-- [The multiplicity theorem](../../ring-theory/part-01/semisimple/the-multiplicity-theorem.md)
+- [The multiplicity theorem](../../ring-theory/part-02/semisimple/the-multiplicity-theorem.md)
 
 ## Lean
 
@@ -110,33 +110,27 @@ FDRep.clifford_restrict_iso.{u, v} {k : Type u} {G : Type v} [Field k] [Group G]
       ∃ e, e ≠ 0 ∧ Nonempty (N.resFDRep W ≅ V.cliffordSum e)
 ```
 
-**Clifford's theorem, single-orbit form.** Formalized in Tau Ceti as [`TauCeti.Representation.exists_nonempty_linearEquiv_conjSubrep`](https://taucetiproject.org/docs/TauCeti/RepresentationTheory/Induction/Clifford/Orbit/Basic.html#TauCeti.Representation.exists_nonempty_linearEquiv_conjSubrep).
+**Clifford's theorem, single-orbit form.** Formalized in Tau Ceti as [`Representation.exists_nonempty_linearEquiv_conjSubrep`](https://taucetiproject.org/docs/TauCeti/RepresentationTheory/Induction/Clifford/Orbit/Basic.html#Representation.exists_nonempty_linearEquiv_conjSubrep).
 
 ```lean
-TauCeti.Representation.exists_nonempty_linearEquiv_conjSubrep.{u_1, u_2, u_3} {k : Type u_1}
-  {G : Type u_2} {V : Type u_3} [Field k] [Group G] [AddCommGroup V] [_root_.Module k V]
-  {N : Subgroup G} [N.Normal] (ρ : Representation k G V) [ρ.IsIrreducible]
+Representation.exists_nonempty_linearEquiv_conjSubrep.{u_1, u_2, u_3} {k : Type u_1} {G : Type u_2}
+  {V : Type u_3} [Field k] [Group G] [AddCommGroup V] [_root_.Module k V] {N : Subgroup G}
+  [N.Normal] (ρ : Representation k G V) [ρ.IsIrreducible]
   {σ τ : Subrepresentation (MonoidHom.comp ρ N.subtype)} (hσ : IsAtom σ) (hτ : IsAtom τ) :
-  ∃ g,
-    Nonempty
-      (↥τ.asSubmodule ≃ₗ[MonoidAlgebra k ↥N] ↥(TauCeti.Representation.conjSubrep ρ g σ).asSubmodule)
+  ∃ g, Nonempty (↥τ.asSubmodule ≃ₗ[MonoidAlgebra k ↥N] ↥(ρ.conjSubrep g σ).asSubmodule)
 ```
 
-**Clifford's theorem, single-orbit form, packaged.** Formalized in Tau Ceti as [`TauCeti.Representation.exists_isAtom_forall_nonempty_linearEquiv_conjSubrep`](https://taucetiproject.org/docs/TauCeti/RepresentationTheory/Induction/Clifford/Orbit/Basic.html#TauCeti.Representation.exists_isAtom_forall_nonempty_linearEquiv_conjSubrep).
+**Clifford's theorem, single-orbit form, packaged.** Formalized in Tau Ceti as [`Representation.exists_isAtom_forall_nonempty_linearEquiv_conjSubrep`](https://taucetiproject.org/docs/TauCeti/RepresentationTheory/Induction/Clifford/Orbit/Basic.html#Representation.exists_isAtom_forall_nonempty_linearEquiv_conjSubrep).
 
 ```lean
-TauCeti.Representation.exists_isAtom_forall_nonempty_linearEquiv_conjSubrep.{u_1, u_2, u_3}
-  {k : Type u_1} {G : Type u_2} {V : Type u_3} [Field k] [Group G] [AddCommGroup V]
-  [_root_.Module k V] {N : Subgroup G} [N.Normal] (ρ : Representation k G V) [ρ.IsIrreducible]
-  [FiniteDimensional k V] :
+Representation.exists_isAtom_forall_nonempty_linearEquiv_conjSubrep.{u_1, u_2, u_3} {k : Type u_1}
+  {G : Type u_2} {V : Type u_3} [Field k] [Group G] [AddCommGroup V] [_root_.Module k V]
+  {N : Subgroup G} [N.Normal] (ρ : Representation k G V) [ρ.IsIrreducible] [FiniteDimensional k V] :
   ∃ σ,
     IsAtom σ ∧
       ∀ (τ : Subrepresentation (MonoidHom.comp ρ N.subtype)),
         IsAtom τ →
-          ∃ g,
-            Nonempty
-              (↥τ.asSubmodule ≃ₗ[MonoidAlgebra k ↥N]
-                ↥(TauCeti.Representation.conjSubrep ρ g σ).asSubmodule)
+          ∃ g, Nonempty (↥τ.asSubmodule ≃ₗ[MonoidAlgebra k ↥N] ↥(ρ.conjSubrep g σ).asSubmodule)
 ```
 
 **Clifford's theorem, the common multiplicity.** Formalized in Tau Ceti as [`Representation.exists_forall_finrank_linearMap_eq`](https://taucetiproject.org/docs/TauCeti/RepresentationTheory/Induction/Clifford/Multiplicity.html#Representation.exists_forall_finrank_linearMap_eq).
@@ -158,4 +152,4 @@ Representation.exists_forall_finrank_linearMap_eq.{u_1, u_2, u_3} {k : Type u_1}
 ## Sources
 
 - [Tau Ceti documentation: `FDRep.clifford_restrict_finrank`](https://taucetiproject.org/docs/TauCeti/RepresentationTheory/Induction/Clifford/Dimension.html#FDRep.clifford_restrict_finrank)
-- [Source of `FDRep.clifford_restrict_finrank` in TauCeti/RepresentationTheory/Induction/Clifford/Dimension.lean](https://github.com/TauCetiProject/TauCeti/blob/a6027b1d24fcb935c53bd5b50d11b40991cda418/TauCeti/RepresentationTheory/Induction/Clifford/Dimension.lean#L72)
+- [Source of `FDRep.clifford_restrict_finrank` in TauCeti/RepresentationTheory/Induction/Clifford/Dimension.lean](https://github.com/TauCetiProject/TauCeti/blob/cd41bffcb343151b3e58c89392e206b11fe78c1c/TauCeti/RepresentationTheory/Induction/Clifford/Dimension.lean#L72)

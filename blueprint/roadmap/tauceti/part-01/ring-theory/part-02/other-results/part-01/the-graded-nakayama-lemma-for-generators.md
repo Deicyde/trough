@@ -33,4 +33,4 @@ Formalized in Tau Ceti as [`TauCeti.GradedAlgebra.adjoin_eq_top_of_irrelevant_le
 ## Sources
 
 - [Tau Ceti documentation: `TauCeti.GradedAlgebra.adjoin_eq_top_of_irrelevant_le`](https://taucetiproject.org/docs/TauCeti/RingTheory/GradedAlgebra/Nakayama.html#TauCeti.GradedAlgebra.adjoin_eq_top_of_irrelevant_le)
-- [Source of `TauCeti.GradedAlgebra.adjoin_eq_top_of_irrelevant_le` in TauCeti/RingTheory/GradedAlgebra/Nakayama.lean](https://github.com/TauCetiProject/TauCeti/blob/a6027b1d24fcb935c53bd5b50d11b40991cda418/TauCeti/RingTheory/GradedAlgebra/Nakayama.lean#L57)
+- [Source of `TauCeti.GradedAlgebra.adjoin_eq_top_of_irrelevant_le` in TauCeti/RingTheory/GradedAlgebra/Nakayama.lean](https://github.com/TauCetiProject/TauCeti/blob/cd41bffcb343151b3e58c89392e206b11fe78c1c/TauCeti/RingTheory/GradedAlgebra/Nakayama.lean#L57)

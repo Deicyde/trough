@@ -37,5 +37,5 @@ Formalized in Tau Ceti as [`TauCeti.paradoxical_iff_exists_subset`](https://tauc
 ## Sources
 
 - [Tau Ceti documentation: `TauCeti.paradoxical_iff_exists_subset`](https://taucetiproject.org/docs/TauCeti/Algebra/Group/Action/Paradoxical.html#TauCeti.paradoxical_iff_exists_subset)
-- [Source of `TauCeti.paradoxical_iff_exists_subset` in TauCeti/Algebra/Group/Action/Paradoxical.lean](https://github.com/TauCetiProject/TauCeti/blob/a6027b1d24fcb935c53bd5b50d11b40991cda418/TauCeti/Algebra/Group/Action/Paradoxical.lean#L121)
-- [Tau Ceti roadmap status: Amenable groups](https://github.com/TauCetiProject/TauCetiRoadmap/blob/9f7c032adaf1b838e8183d63ff3cfa886d061cb3/TauCetiRoadmap/AmenableGroups/STATUS.md)
+- [Source of `TauCeti.paradoxical_iff_exists_subset` in TauCeti/Algebra/Group/Action/Paradoxical.lean](https://github.com/TauCetiProject/TauCeti/blob/cd41bffcb343151b3e58c89392e206b11fe78c1c/TauCeti/Algebra/Group/Action/Paradoxical.lean#L121)
+- [Tau Ceti roadmap status: Amenable groups](https://github.com/TauCetiProject/TauCetiRoadmap/blob/612845ab80fb9c2b9bee724a156756ee78031591/TauCetiRoadmap/AmenableGroups/STATUS.md)

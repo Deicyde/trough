@@ -26,5 +26,5 @@ Formalized in Tau Ceti as [`TauCeti.Neuromanifold.IsAlgebraicImage`](https://tau
 ## Sources
 
 - [Tau Ceti documentation: `TauCeti.Neuromanifold.IsAlgebraicImage`](https://taucetiproject.org/docs/TauCeti/Geometry/Neuromanifold/Neurovariety.html#TauCeti.Neuromanifold.IsAlgebraicImage)
-- [Source of `TauCeti.Neuromanifold.IsAlgebraicImage` in TauCeti/Geometry/Neuromanifold/Neurovariety.lean](https://github.com/TauCetiProject/TauCeti/blob/a6027b1d24fcb935c53bd5b50d11b40991cda418/TauCeti/Geometry/Neuromanifold/Neurovariety.lean#L84)
-- [Tau Ceti roadmap status: Neuromanifolds, parametrisations, and neurovarieties](https://github.com/TauCetiProject/TauCetiRoadmap/blob/9f7c032adaf1b838e8183d63ff3cfa886d061cb3/TauCetiRoadmap/Neuromanifolds/STATUS.md)
+- [Source of `TauCeti.Neuromanifold.IsAlgebraicImage` in TauCeti/Geometry/Neuromanifold/Neurovariety.lean](https://github.com/TauCetiProject/TauCeti/blob/cd41bffcb343151b3e58c89392e206b11fe78c1c/TauCeti/Geometry/Neuromanifold/Neurovariety.lean#L84)
+- [Tau Ceti roadmap status: Neuromanifolds, parametrisations, and neurovarieties](https://github.com/TauCetiProject/TauCetiRoadmap/blob/612845ab80fb9c2b9bee724a156756ee78031591/TauCetiRoadmap/Neuromanifolds/STATUS.md)

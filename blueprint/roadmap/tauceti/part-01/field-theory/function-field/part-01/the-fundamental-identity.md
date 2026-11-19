@@ -73,4 +73,4 @@ TauCeti.Place.sum_ramificationIdx_mul_relativeDegree_eq_finrank_of_isSeparable.{
 ## Sources
 
 - [Tau Ceti documentation: `TauCeti.Place.sum_ramificationIdx_mul_relativeDegree_eq_finrank`](https://taucetiproject.org/docs/TauCeti/FieldTheory/FunctionField/AffineModel/Extension.html#TauCeti.Place.sum_ramificationIdx_mul_relativeDegree_eq_finrank)
-- [Source of `TauCeti.Place.sum_ramificationIdx_mul_relativeDegree_eq_finrank` in TauCeti/FieldTheory/FunctionField/AffineModel/Extension.lean](https://github.com/TauCetiProject/TauCeti/blob/a6027b1d24fcb935c53bd5b50d11b40991cda418/TauCeti/FieldTheory/FunctionField/AffineModel/Extension.lean#L302)
+- [Source of `TauCeti.Place.sum_ramificationIdx_mul_relativeDegree_eq_finrank` in TauCeti/FieldTheory/FunctionField/AffineModel/Extension.lean](https://github.com/TauCetiProject/TauCeti/blob/cd41bffcb343151b3e58c89392e206b11fe78c1c/TauCeti/FieldTheory/FunctionField/AffineModel/Extension.lean#L302)

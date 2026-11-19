@@ -31,4 +31,4 @@ Formalized in Tau Ceti as [`TauCeti.nonempty_center_algEquiv_conjClasses`](https
 ## Sources
 
 - [Tau Ceti documentation: `TauCeti.nonempty_center_algEquiv_conjClasses`](https://taucetiproject.org/docs/TauCeti/RepresentationTheory/CharacterTable/FiniteField.html#TauCeti.nonempty_center_algEquiv_conjClasses)
-- [Source of `TauCeti.nonempty_center_algEquiv_conjClasses` in TauCeti/RepresentationTheory/CharacterTable/FiniteField.lean](https://github.com/TauCetiProject/TauCeti/blob/a6027b1d24fcb935c53bd5b50d11b40991cda418/TauCeti/RepresentationTheory/CharacterTable/FiniteField.lean#L205)
+- [Source of `TauCeti.nonempty_center_algEquiv_conjClasses` in TauCeti/RepresentationTheory/CharacterTable/FiniteField.lean](https://github.com/TauCetiProject/TauCeti/blob/cd41bffcb343151b3e58c89392e206b11fe78c1c/TauCeti/RepresentationTheory/CharacterTable/FiniteField.lean#L205)

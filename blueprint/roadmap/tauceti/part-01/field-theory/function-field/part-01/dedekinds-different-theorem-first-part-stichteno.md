@@ -77,4 +77,4 @@ TauCeti.Place.ramificationIdx_eq_differentExponent_add_one_iff.{u, u', v, v'} (k
 ## Sources
 
 - [Tau Ceti documentation: `TauCeti.Place.ramificationIdx_le_differentExponent_add_one`](https://taucetiproject.org/docs/TauCeti/FieldTheory/FunctionField/Different/Basic.html#TauCeti.Place.ramificationIdx_le_differentExponent_add_one)
-- [Source of `TauCeti.Place.ramificationIdx_le_differentExponent_add_one` in TauCeti/FieldTheory/FunctionField/Different/Basic.lean](https://github.com/TauCetiProject/TauCeti/blob/a6027b1d24fcb935c53bd5b50d11b40991cda418/TauCeti/FieldTheory/FunctionField/Different/Basic.lean#L236)
+- [Source of `TauCeti.Place.ramificationIdx_le_differentExponent_add_one` in TauCeti/FieldTheory/FunctionField/Different/Basic.lean](https://github.com/TauCetiProject/TauCeti/blob/cd41bffcb343151b3e58c89392e206b11fe78c1c/TauCeti/FieldTheory/FunctionField/Different/Basic.lean#L227)

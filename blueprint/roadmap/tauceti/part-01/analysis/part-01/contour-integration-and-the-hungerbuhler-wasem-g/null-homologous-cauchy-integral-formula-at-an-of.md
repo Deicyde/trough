@@ -11,12 +11,12 @@ proof: formalized
 Let `γ` be a closed curve in
 an open set `U`, continuous on `uIcc a b`, differentiable off a countable set, with
 interval-integrable derivative, and null-homologous in `U`. If `f` is holomorphic on `U` and
-`w ∈ U` is not on the curve, then the Cauchy-type integral evaluates to
-`2πi · windingNumber γ a b w · f w`.
+`w` is a point not on the curve, then the Cauchy-type integral evaluates to
+`2πi · windingNumber γ a b w · f w`. (For `w ∉ U` both sides vanish.)
 
-This is the Cauchy-integral-formula output of Dixon's vanishing theorem. The off-curve point is
-kept as an explicit hypothesis; proving that such a point exists in the ambient domain is a separate
-geometric prerequisite for the full global homology Cauchy theorem.
+This is the Cauchy-integral-formula output of Dixon's vanishing theorem. The point is kept as an
+explicit hypothesis: it is any point off the curve, not necessarily in `U`; since the trace of the
+curve is compact, such a point always exists.
 
 ```lean
 TauCeti.Contour.dixonH2_eq_windingNumber_mul_f_of_nullHomologous {f : ℂ → ℂ} {U : Set ℂ} {γ : ℝ → ℂ}
@@ -25,8 +25,7 @@ TauCeti.Contour.dixonH2_eq_windingNumber_mul_f_of_nullHomologous {f : ℂ → �
   (hderiv_int : IntervalIntegrable (fun t => deriv γ t) MeasureTheory.volume a b)
   (hclosed : γ a = γ b) (hP : P.Countable)
   (hγ_diff : ∀ t ∈ Set.Ioo (min a b) (max a b) \ P, DifferentiableAt ℝ γ t)
-  (h_null : TauCeti.Contour.IsNullHomologous γ a b U) (hwU : w ∈ U)
-  (hoff : ∀ t ∈ Set.uIcc a b, γ t ≠ w) :
+  (h_null : TauCeti.Contour.IsNullHomologous γ a b U) (hoff : ∀ t ∈ Set.uIcc a b, γ t ≠ w) :
   TauCeti.Contour.dixonH2 f γ a b w =
     2 * ↑Real.pi * Complex.I * TauCeti.Contour.windingNumber γ a b w * f w
 ```
@@ -37,7 +36,7 @@ TauCeti.Contour.dixonH2_eq_windingNumber_mul_f_of_nullHomologous {f : ℂ → �
 
 ## Proof depends on
 
-- [Cauchy's integral formula for the `k`-th derivative, homology form](cauchys-integral-formula-for-the-k-th-derivative.md)
+- [Cauchy's integral formula, homology form](cauchys-integral-formula-homology-form.md)
 
 ## Lean
 
@@ -46,4 +45,4 @@ Formalized in Tau Ceti as [`TauCeti.Contour.dixonH2_eq_windingNumber_mul_f_of_nu
 ## Sources
 
 - [Tau Ceti documentation: `TauCeti.Contour.dixonH2_eq_windingNumber_mul_f_of_nullHomologous`](https://taucetiproject.org/docs/TauCeti/Analysis/Contour/HomologyCauchy.html#TauCeti.Contour.dixonH2_eq_windingNumber_mul_f_of_nullHomologous)
-- [Source of `TauCeti.Contour.dixonH2_eq_windingNumber_mul_f_of_nullHomologous` in TauCeti/Analysis/Contour/HomologyCauchy.lean](https://github.com/TauCetiProject/TauCeti/blob/a6027b1d24fcb935c53bd5b50d11b40991cda418/TauCeti/Analysis/Contour/HomologyCauchy.lean#L51)
+- [Source of `TauCeti.Contour.dixonH2_eq_windingNumber_mul_f_of_nullHomologous` in TauCeti/Analysis/Contour/HomologyCauchy.lean](https://github.com/TauCetiProject/TauCeti/blob/cd41bffcb343151b3e58c89392e206b11fe78c1c/TauCeti/Analysis/Contour/HomologyCauchy.lean#L50)

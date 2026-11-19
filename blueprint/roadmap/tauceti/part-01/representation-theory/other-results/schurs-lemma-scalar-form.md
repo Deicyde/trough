@@ -31,4 +31,4 @@ Formalized in Tau Ceti as [`Representation.IsIrreducible.exists_forall_apply_eq_
 ## Sources
 
 - [Tau Ceti documentation: `Representation.IsIrreducible.exists_forall_apply_eq_smul`](https://taucetiproject.org/docs/TauCeti/RepresentationTheory/Irreducible.html#Representation.IsIrreducible.exists_forall_apply_eq_smul)
-- [Source of `Representation.IsIrreducible.exists_forall_apply_eq_smul` in TauCeti/RepresentationTheory/Irreducible.lean](https://github.com/TauCetiProject/TauCeti/blob/a6027b1d24fcb935c53bd5b50d11b40991cda418/TauCeti/RepresentationTheory/Irreducible.lean#L361)
+- [Source of `Representation.IsIrreducible.exists_forall_apply_eq_smul` in TauCeti/RepresentationTheory/Irreducible.lean](https://github.com/TauCetiProject/TauCeti/blob/cd41bffcb343151b3e58c89392e206b11fe78c1c/TauCeti/RepresentationTheory/Irreducible.lean#L383)

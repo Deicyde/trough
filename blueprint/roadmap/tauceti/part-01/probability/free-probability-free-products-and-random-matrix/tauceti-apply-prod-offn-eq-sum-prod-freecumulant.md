@@ -21,10 +21,6 @@ TauCeti.apply_prod_ofFn_eq_sum_prod_freeCumulant.{u_1, u_2} {R : Type u_1} {A : 
 
 - [TauCeti.freeCumulant](tauceti-freecumulant.md)
 
-## Proof depends on
-
-- [TauCeti.partitionCumulant_eq_prod_freeCumulant](tauceti-partitioncumulant-eq-prod-freecumulant.md)
-
 ## Lean
 
 Formalized in Tau Ceti as [`TauCeti.apply_prod_ofFn_eq_sum_prod_freeCumulant`](https://taucetiproject.org/docs/TauCeti/Probability/FreeProbability/Cumulant/Basic.html#TauCeti.apply_prod_ofFn_eq_sum_prod_freeCumulant).
@@ -32,5 +28,5 @@ Formalized in Tau Ceti as [`TauCeti.apply_prod_ofFn_eq_sum_prod_freeCumulant`](h
 ## Sources
 
 - [Tau Ceti documentation: `TauCeti.apply_prod_ofFn_eq_sum_prod_freeCumulant`](https://taucetiproject.org/docs/TauCeti/Probability/FreeProbability/Cumulant/Basic.html#TauCeti.apply_prod_ofFn_eq_sum_prod_freeCumulant)
-- [Source of `TauCeti.apply_prod_ofFn_eq_sum_prod_freeCumulant` in TauCeti/Probability/FreeProbability/Cumulant/Basic.lean](https://github.com/TauCetiProject/TauCeti/blob/a6027b1d24fcb935c53bd5b50d11b40991cda418/TauCeti/Probability/FreeProbability/Cumulant/Basic.lean#L326)
-- [Tau Ceti roadmap status: Free probability, free products, and random matrix models](https://github.com/TauCetiProject/TauCetiRoadmap/blob/9f7c032adaf1b838e8183d63ff3cfa886d061cb3/TauCetiRoadmap/FreeProbability/STATUS.md)
+- [Source of `TauCeti.apply_prod_ofFn_eq_sum_prod_freeCumulant` in TauCeti/Probability/FreeProbability/Cumulant/Basic.lean](https://github.com/TauCetiProject/TauCeti/blob/cd41bffcb343151b3e58c89392e206b11fe78c1c/TauCeti/Probability/FreeProbability/Cumulant/Basic.lean#L326)
+- [Tau Ceti roadmap status: Free probability, free products, and random matrix models](https://github.com/TauCetiProject/TauCetiRoadmap/blob/612845ab80fb9c2b9bee724a156756ee78031591/TauCetiRoadmap/FreeProbability/STATUS.md)

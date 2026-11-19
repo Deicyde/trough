@@ -49,4 +49,4 @@ TauCeti.YoungTableau.dominates_of_asAlgebraHom_columnAntisymmetrizer_apply_ne_ze
 ## Sources
 
 - [Tau Ceti documentation: `TauCeti.dominates_of_asAlgebraHom_columnAntisymmetrizer_ne_zero`](https://taucetiproject.org/docs/TauCeti/RepresentationTheory/Symmetric/Dominance.html#TauCeti.dominates_of_asAlgebraHom_columnAntisymmetrizer_ne_zero)
-- [Source of `TauCeti.dominates_of_asAlgebraHom_columnAntisymmetrizer_ne_zero` in TauCeti/RepresentationTheory/Symmetric/Dominance.lean](https://github.com/TauCetiProject/TauCeti/blob/a6027b1d24fcb935c53bd5b50d11b40991cda418/TauCeti/RepresentationTheory/Symmetric/Dominance.lean#L129)
+- [Source of `TauCeti.dominates_of_asAlgebraHom_columnAntisymmetrizer_ne_zero` in TauCeti/RepresentationTheory/Symmetric/Dominance.lean](https://github.com/TauCetiProject/TauCeti/blob/cd41bffcb343151b3e58c89392e206b11fe78c1c/TauCeti/RepresentationTheory/Symmetric/Dominance.lean#L127)

@@ -35,8 +35,8 @@ Its statement uses no other declaration mapped here.
 
 ## Proof depends on
 
-- [The fundamental theorem of calculus for a continuous representative](../../analysis/part-03/sobolev/part-01/the-fundamental-theorem-of-calculus-for-a-contin.md)
-- [The Hopf–Lax subsolution inequality](../../analysis/part-03/pde/part-01/the-hopf-lax-subsolution-inequality.md)
+- [The fundamental theorem of calculus for a continuous representative](../../analysis/part-04/sobolev/part-01/the-fundamental-theorem-of-calculus-for-a-contin.md)
+- [The Hopf–Lax subsolution inequality](../../analysis/part-04/pde/part-02/the-hopf-lax-subsolution-inequality.md)
 - [The theorem of Rockafellar and Rüschendorf](../optimal-transport/part-02/the-theorem-of-rockafellar-and-ruschendorf.md)
 
 ## Lean
@@ -46,4 +46,4 @@ Formalized in Tau Ceti as [`TauCeti.IsContinuityEquation.wassersteinEDist_rpow_l
 ## Sources
 
 - [Tau Ceti documentation: `TauCeti.IsContinuityEquation.wassersteinEDist_rpow_le`](https://taucetiproject.org/docs/TauCeti/MeasureTheory/OptimalTransport/ContinuityEquation/BenamouBrenier.html#TauCeti.IsContinuityEquation.wassersteinEDist_rpow_le)
-- [Source of `TauCeti.IsContinuityEquation.wassersteinEDist_rpow_le` in TauCeti/MeasureTheory/OptimalTransport/ContinuityEquation/BenamouBrenier.lean](https://github.com/TauCetiProject/TauCeti/blob/a6027b1d24fcb935c53bd5b50d11b40991cda418/TauCeti/MeasureTheory/OptimalTransport/ContinuityEquation/BenamouBrenier.lean#L175)
+- [Source of `TauCeti.IsContinuityEquation.wassersteinEDist_rpow_le` in TauCeti/MeasureTheory/OptimalTransport/ContinuityEquation/BenamouBrenier.lean](https://github.com/TauCetiProject/TauCeti/blob/cd41bffcb343151b3e58c89392e206b11fe78c1c/TauCeti/MeasureTheory/OptimalTransport/ContinuityEquation/BenamouBrenier.lean#L176)

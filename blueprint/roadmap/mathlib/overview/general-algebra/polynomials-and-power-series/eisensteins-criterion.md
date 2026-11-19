@@ -128,7 +128,7 @@ Taking $K$ to be the field of fractions of $R/P$ and $q = x$ gives Eisenstein's 
 
 - [Quotient ring](../ideals-and-quotients/quotient-ring.md)
 - [Field of fractions of an integral domain](../field-theory/field-of-fractions-of-an-integral-domain.md)
-- [$K\[X\]$ is Euclidean](k-x-is-euclidean.md)
+- [$K[X]$ is Euclidean](k-x-is-euclidean.md)
 - [Unique factorisation domain](../divisibility-in-integral-domains/unique-factorisation-domain.md)
 
 ## Sources

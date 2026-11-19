@@ -19,7 +19,7 @@ TauCeti.isDemushkin_absoluteGaloisGroupProP_of_mu (p : ℕ) [Fact (Nat.Prime p)]
 
 ## Depends on
 
-- [The Demushkin predicate](../../../topology/profinite-and-pro-p-groups/part-01/the-demushkin-predicate.md)
+- [The Demushkin predicate](../../../../part-02/topology/profinite-and-pro-p-groups/the-demushkin-predicate.md)
 
 ## Proof depends on
 
@@ -35,5 +35,5 @@ Formalized in Tau Ceti as [`TauCeti.isDemushkin_absoluteGaloisGroupProP_of_mu`](
 ## Sources
 
 - [Tau Ceti documentation: `TauCeti.isDemushkin_absoluteGaloisGroupProP_of_mu`](https://taucetiproject.org/docs/TauCeti/NumberTheory/LocalField/ProP/Demushkin.html#TauCeti.isDemushkin_absoluteGaloisGroupProP_of_mu)
-- [Source of `TauCeti.isDemushkin_absoluteGaloisGroupProP_of_mu` in TauCeti/NumberTheory/LocalField/ProP/Demushkin.lean](https://github.com/TauCetiProject/TauCeti/blob/a6027b1d24fcb935c53bd5b50d11b40991cda418/TauCeti/NumberTheory/LocalField/ProP/Demushkin.lean#L60)
-- [Tau Ceti roadmap status: Local Galois groups of p-adic fields](https://github.com/TauCetiProject/TauCetiRoadmap/blob/9f7c032adaf1b838e8183d63ff3cfa886d061cb3/Completed/LocalGaloisGroups/STATUS.md)
+- [Source of `TauCeti.isDemushkin_absoluteGaloisGroupProP_of_mu` in TauCeti/NumberTheory/LocalField/ProP/Demushkin.lean](https://github.com/TauCetiProject/TauCeti/blob/cd41bffcb343151b3e58c89392e206b11fe78c1c/TauCeti/NumberTheory/LocalField/ProP/Demushkin.lean#L60)
+- [Tau Ceti roadmap status: Local Galois groups of p-adic fields](https://github.com/TauCetiProject/TauCetiRoadmap/blob/612845ab80fb9c2b9bee724a156756ee78031591/Completed/LocalGaloisGroups/STATUS.md)

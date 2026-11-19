@@ -38,5 +38,5 @@ Formalized in Tau Ceti as [`TauCeti.mongeCost_eq_transportCost_of_continuous`](h
 ## Sources
 
 - [Tau Ceti documentation: `TauCeti.mongeCost_eq_transportCost_of_continuous`](https://taucetiproject.org/docs/TauCeti/MeasureTheory/OptimalTransport/Pratelli.html#TauCeti.mongeCost_eq_transportCost_of_continuous)
-- [Source of `TauCeti.mongeCost_eq_transportCost_of_continuous` in TauCeti/MeasureTheory/OptimalTransport/Pratelli.lean](https://github.com/TauCetiProject/TauCeti/blob/a6027b1d24fcb935c53bd5b50d11b40991cda418/TauCeti/MeasureTheory/OptimalTransport/Pratelli.lean#L333)
-- [Tau Ceti roadmap status: Optimal transport and Wasserstein geometry](https://github.com/TauCetiProject/TauCetiRoadmap/blob/9f7c032adaf1b838e8183d63ff3cfa886d061cb3/TauCetiRoadmap/OptimalTransport/STATUS.md)
+- [Source of `TauCeti.mongeCost_eq_transportCost_of_continuous` in TauCeti/MeasureTheory/OptimalTransport/Pratelli.lean](https://github.com/TauCetiProject/TauCeti/blob/cd41bffcb343151b3e58c89392e206b11fe78c1c/TauCeti/MeasureTheory/OptimalTransport/Pratelli.lean#L333)
+- [Tau Ceti roadmap status: Optimal transport and Wasserstein geometry](https://github.com/TauCetiProject/TauCetiRoadmap/blob/612845ab80fb9c2b9bee724a156756ee78031591/TauCetiRoadmap/OptimalTransport/STATUS.md)

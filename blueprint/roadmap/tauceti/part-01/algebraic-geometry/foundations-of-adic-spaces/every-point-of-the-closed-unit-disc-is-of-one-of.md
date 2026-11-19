@@ -51,10 +51,10 @@ Its statement uses no other declaration mapped here.
 ## Proof depends on
 
 - [The remainder theorem in `K⟨T⟩`](the-remainder-theorem-in-kt.md)
-- [TauCeti.IsNormMulUnit](../../ring-theory/part-01/restricted-power-series-and-tate-algebras/part-01/tauceti-isnormmulunit.md)
-- [TauCeti.PowerSeries.IsMulDistinguished](../../ring-theory/part-01/restricted-power-series-and-tate-algebras/part-01/tauceti-powerseries-ismuldistinguished.md)
-- [The Weierstrass division estimate for a multiplicatively distinguished divisor](../../ring-theory/part-01/restricted-power-series-and-tate-algebras/part-01/the-weierstrass-division-estimate-for-a-multipli.md)
-- [Weierstrass preparation](../../ring-theory/part-01/power-series/weierstrass-preparation.md)
+- [TauCeti.IsNormMulUnit](../../ring-theory/part-01/restricted-power-series-and-tate-algebras/tauceti-isnormmulunit.md)
+- [TauCeti.PowerSeries.IsMulDistinguished](../../ring-theory/part-01/restricted-power-series-and-tate-algebras/tauceti-powerseries-ismuldistinguished.md)
+- [The Weierstrass division estimate (Bosch–Güntzer–Remmert §5.2.1, Theorem 2)](../../ring-theory/part-01/restricted-power-series-and-tate-algebras/the-weierstrass-division-estimate-bosch-guntzer.md)
+- [Weierstrass preparation](../../ring-theory/part-02/power-series/weierstrass-preparation.md)
 
 ## Lean
 
@@ -63,5 +63,5 @@ Formalized in Tau Ceti as [`TauCeti.ValuationSpectrum.exists_eq_classicalPoint_o
 ## Sources
 
 - [Tau Ceti documentation: `TauCeti.ValuationSpectrum.exists_eq_classicalPoint_or_discPoint_or_discPointAbove_or_discPointBelow_or_nestedDiscPoint`](https://taucetiproject.org/docs/TauCeti/AlgebraicGeometry/AdicSpace/Spa/Polydisc/Classification.html#TauCeti.ValuationSpectrum.exists_eq_classicalPoint_or_discPoint_or_discPointAbove_or_discPointBelow_or_nestedDiscPoint)
-- [Source of `TauCeti.ValuationSpectrum.exists_eq_classicalPoint_or_discPoint_or_discPointAbove_or_discPointBelow_or_nestedDiscPoint` in TauCeti/AlgebraicGeometry/AdicSpace/Spa/Polydisc/Classification.lean](https://github.com/TauCetiProject/TauCeti/blob/a6027b1d24fcb935c53bd5b50d11b40991cda418/TauCeti/AlgebraicGeometry/AdicSpace/Spa/Polydisc/Classification.lean#L773)
-- [Tau Ceti roadmap status: Foundations of adic spaces](https://github.com/TauCetiProject/TauCetiRoadmap/blob/9f7c032adaf1b838e8183d63ff3cfa886d061cb3/Completed/AdicSpaces/STATUS.md)
+- [Source of `TauCeti.ValuationSpectrum.exists_eq_classicalPoint_or_discPoint_or_discPointAbove_or_discPointBelow_or_nestedDiscPoint` in TauCeti/AlgebraicGeometry/AdicSpace/Spa/Polydisc/Classification.lean](https://github.com/TauCetiProject/TauCeti/blob/cd41bffcb343151b3e58c89392e206b11fe78c1c/TauCeti/AlgebraicGeometry/AdicSpace/Spa/Polydisc/Classification.lean#L773)
+- [Tau Ceti roadmap status: Foundations of adic spaces](https://github.com/TauCetiProject/TauCetiRoadmap/blob/612845ab80fb9c2b9bee724a156756ee78031591/Completed/AdicSpaces/STATUS.md)

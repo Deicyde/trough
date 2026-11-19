@@ -33,5 +33,5 @@ Formalized in Tau Ceti as [`TauCeti.Probability.ergodicSMul_infinitePi_const`](h
 ## Sources
 
 - [Tau Ceti documentation: `TauCeti.Probability.ergodicSMul_infinitePi_const`](https://taucetiproject.org/docs/TauCeti/Probability/Exchangeability/PathSpace/Exchangeable/Ergodic.html#TauCeti.Probability.ergodicSMul_infinitePi_const)
-- [Source of `TauCeti.Probability.ergodicSMul_infinitePi_const` in TauCeti/Probability/Exchangeability/PathSpace/Exchangeable/Ergodic.lean](https://github.com/TauCetiProject/TauCeti/blob/a6027b1d24fcb935c53bd5b50d11b40991cda418/TauCeti/Probability/Exchangeability/PathSpace/Exchangeable/Ergodic.lean#L192)
-- [Tau Ceti roadmap status: Exchangeability and de Finetti](https://github.com/TauCetiProject/TauCetiRoadmap/blob/9f7c032adaf1b838e8183d63ff3cfa886d061cb3/Completed/Exchangeability/STATUS.md)
+- [Source of `TauCeti.Probability.ergodicSMul_infinitePi_const` in TauCeti/Probability/Exchangeability/PathSpace/Exchangeable/Ergodic.lean](https://github.com/TauCetiProject/TauCeti/blob/cd41bffcb343151b3e58c89392e206b11fe78c1c/TauCeti/Probability/Exchangeability/PathSpace/Exchangeable/Ergodic.lean#L190)
+- [Tau Ceti roadmap status: Exchangeability and de Finetti](https://github.com/TauCetiProject/TauCetiRoadmap/blob/612845ab80fb9c2b9bee724a156756ee78031591/Completed/Exchangeability/STATUS.md)

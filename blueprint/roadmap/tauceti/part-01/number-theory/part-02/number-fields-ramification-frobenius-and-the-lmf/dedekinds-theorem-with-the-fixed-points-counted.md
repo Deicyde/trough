@@ -23,7 +23,7 @@ TauCeti.NumberField.factorizationType_eq_cycleType_isArithFrobAt.{u_1, u_2} {M :
   [Fact (Polynomial.map (algebraMap ℚ M) (minpoly ℚ ↑θ)).Splits]
   (Q : Ideal (NumberField.RingOfIntegers M)) [Q.IsPrime] [Q.LiesOver (Ideal.span {↑p})]
   {σ : Gal(M/ℚ)} (hσ : IsArithFrobAt ℤ σ Q) :
-  Multiset.map Polynomial.natDegree (RingOfIntegers.monicFactorsMod θ p).val =
+  Multiset.map Polynomial.natDegree (θ.monicFactorsMod p).val =
     ((Polynomial.Gal.galActionHom (minpoly ℚ ↑θ) M)
           ((Polynomial.Gal.restrict (minpoly ℚ ↑θ) M) σ)).cycleType +
       Multiset.replicate
@@ -71,11 +71,11 @@ TauCeti.NumberField.fullCycleType_galActionHom_restrict_minpoly_eq_map_natDegree
   {σ : Gal(M/ℚ)} (hσ : IsArithFrobAt ℤ σ Q) :
   ((Polynomial.Gal.galActionHom (minpoly ℚ ↑θ) M)
         ((Polynomial.Gal.restrict (minpoly ℚ ↑θ) M) σ)).fullCycleType =
-    Multiset.map Polynomial.natDegree (RingOfIntegers.monicFactorsMod θ p).val
+    Multiset.map Polynomial.natDegree (θ.monicFactorsMod p).val
 ```
 
 ## Sources
 
 - [Tau Ceti documentation: `TauCeti.NumberField.factorizationType_eq_cycleType_isArithFrobAt`](https://taucetiproject.org/docs/TauCeti/NumberTheory/NumberField/Frobenius/CycleType.html#TauCeti.NumberField.factorizationType_eq_cycleType_isArithFrobAt)
-- [Source of `TauCeti.NumberField.factorizationType_eq_cycleType_isArithFrobAt` in TauCeti/NumberTheory/NumberField/Frobenius/CycleType.lean](https://github.com/TauCetiProject/TauCeti/blob/a6027b1d24fcb935c53bd5b50d11b40991cda418/TauCeti/NumberTheory/NumberField/Frobenius/CycleType.lean#L186)
-- [Tau Ceti roadmap status: Number fields, ramification, Frobenius, and the LMFDB invariants](https://github.com/TauCetiProject/TauCetiRoadmap/blob/9f7c032adaf1b838e8183d63ff3cfa886d061cb3/Completed/NumberFieldArithmetic/STATUS.md)
+- [Source of `TauCeti.NumberField.factorizationType_eq_cycleType_isArithFrobAt` in TauCeti/NumberTheory/NumberField/Frobenius/CycleType.lean](https://github.com/TauCetiProject/TauCeti/blob/cd41bffcb343151b3e58c89392e206b11fe78c1c/TauCeti/NumberTheory/NumberField/Frobenius/CycleType.lean#L187)
+- [Tau Ceti roadmap status: Number fields, ramification, Frobenius, and the LMFDB invariants](https://github.com/TauCetiProject/TauCetiRoadmap/blob/612845ab80fb9c2b9bee724a156756ee78031591/Completed/NumberFieldArithmetic/STATUS.md)

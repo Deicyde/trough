@@ -30,4 +30,4 @@ Formalized in Tau Ceti as [`TauCeti.vanKampenWideLift_surjective`](https://tauce
 ## Sources
 
 - [Tau Ceti documentation: `TauCeti.vanKampenWideLift_surjective`](https://taucetiproject.org/docs/TauCeti/AlgebraicTopology/FundamentalGroup/VanKampen/Basic.html#TauCeti.vanKampenWideLift_surjective)
-- [Source of `TauCeti.vanKampenWideLift_surjective` in TauCeti/AlgebraicTopology/FundamentalGroup/VanKampen/Basic.lean](https://github.com/TauCetiProject/TauCeti/blob/a6027b1d24fcb935c53bd5b50d11b40991cda418/TauCeti/AlgebraicTopology/FundamentalGroup/VanKampen/Basic.lean#L765)
+- [Source of `TauCeti.vanKampenWideLift_surjective` in TauCeti/AlgebraicTopology/FundamentalGroup/VanKampen/Basic.lean](https://github.com/TauCetiProject/TauCeti/blob/cd41bffcb343151b3e58c89392e206b11fe78c1c/TauCeti/AlgebraicTopology/FundamentalGroup/VanKampen/Basic.lean#L765)

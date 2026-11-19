@@ -114,8 +114,9 @@ Its statement uses no other declaration mapped here.
 ## Proof depends on
 
 - [The converse Schwarz--Christoffel theorem from the prevertex residues](the-converse-schwarz-christoffel-theorem-from-th.md)
-- [Rouché's theorem for a disc, classical form](../../part-02/complex/part-03/rouches-theorem-for-a-disc-classical-form.md)
-- [Schwarz reflection principle (real axis)](../../part-02/complex/part-03/schwarz-reflection-principle-real-axis.md)
+- [The pre-Schwarzian derivative is conjugation-symmetric when a reflection identity holds off the real axis](the-pre-schwarzian-derivative-is-conjugation-sym.md)
+- [Rouché's theorem for a disc, classical form](../../part-03/complex/part-04/rouches-theorem-for-a-disc-classical-form.md)
+- [Schwarz reflection principle (real axis)](../../part-03/complex/part-04/schwarz-reflection-principle-real-axis.md)
 
 ## Lean
 
@@ -261,4 +262,4 @@ TauCeti.eqOn_const_mul_schwarzChristoffelPrimitive_add_of_unbounded_polygonal_do
 ## Sources
 
 - [Tau Ceti documentation: `TauCeti.eqOn_const_mul_schwarzChristoffelPrimitive_add_of_polygonal_boundary`](https://taucetiproject.org/docs/TauCeti/Analysis/Complex/Conformal/SchwarzChristoffel/Formula.html#TauCeti.eqOn_const_mul_schwarzChristoffelPrimitive_add_of_polygonal_boundary)
-- [Source of `TauCeti.eqOn_const_mul_schwarzChristoffelPrimitive_add_of_polygonal_boundary` in TauCeti/Analysis/Complex/Conformal/SchwarzChristoffel/Formula.lean](https://github.com/TauCetiProject/TauCeti/blob/a6027b1d24fcb935c53bd5b50d11b40991cda418/TauCeti/Analysis/Complex/Conformal/SchwarzChristoffel/Formula.lean#L112)
+- [Source of `TauCeti.eqOn_const_mul_schwarzChristoffelPrimitive_add_of_polygonal_boundary` in TauCeti/Analysis/Complex/Conformal/SchwarzChristoffel/Formula.lean](https://github.com/TauCetiProject/TauCeti/blob/cd41bffcb343151b3e58c89392e206b11fe78c1c/TauCeti/Analysis/Complex/Conformal/SchwarzChristoffel/Formula.lean#L112)

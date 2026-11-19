@@ -48,4 +48,4 @@ TauCeti.inv_card_le_simultaneousExponent.{u_1} {ι : Type u_1} [Fintype ι] (θ 
 ## Sources
 
 - [Tau Ceti documentation: `TauCeti.natCast_le_mahlerExponent`](https://taucetiproject.org/docs/TauCeti/NumberTheory/DiophantineApproximation/LinearFormExponent.html#TauCeti.natCast_le_mahlerExponent)
-- [Source of `TauCeti.natCast_le_mahlerExponent` in TauCeti/NumberTheory/DiophantineApproximation/LinearFormExponent.lean](https://github.com/TauCetiProject/TauCeti/blob/a6027b1d24fcb935c53bd5b50d11b40991cda418/TauCeti/NumberTheory/DiophantineApproximation/LinearFormExponent.lean#L679)
+- [Source of `TauCeti.natCast_le_mahlerExponent` in TauCeti/NumberTheory/DiophantineApproximation/LinearFormExponent.lean](https://github.com/TauCetiProject/TauCeti/blob/cd41bffcb343151b3e58c89392e206b11fe78c1c/TauCeti/NumberTheory/DiophantineApproximation/LinearFormExponent.lean#L698)

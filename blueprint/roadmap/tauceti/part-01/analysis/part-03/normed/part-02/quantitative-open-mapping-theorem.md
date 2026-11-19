@@ -48,4 +48,4 @@ LinearMap.exists_preimage_norm_le_of_surjective.{u_1, u_2, u_3} {R : Type u_1} {
 ## Sources
 
 - [Tau Ceti documentation: `ContinuousLinearMap.exists_preimage_norm_le_of_isTate`](https://taucetiproject.org/docs/TauCeti/Analysis/Normed/Operator/RingOpNorm/OpenMapping.html#ContinuousLinearMap.exists_preimage_norm_le_of_isTate)
-- [Source of `ContinuousLinearMap.exists_preimage_norm_le_of_isTate` in TauCeti/Analysis/Normed/Operator/RingOpNorm/OpenMapping.lean](https://github.com/TauCetiProject/TauCeti/blob/a6027b1d24fcb935c53bd5b50d11b40991cda418/TauCeti/Analysis/Normed/Operator/RingOpNorm/OpenMapping.lean#L291)
+- [Source of `ContinuousLinearMap.exists_preimage_norm_le_of_isTate` in TauCeti/Analysis/Normed/Operator/RingOpNorm/OpenMapping.lean](https://github.com/TauCetiProject/TauCeti/blob/cd41bffcb343151b3e58c89392e206b11fe78c1c/TauCeti/Analysis/Normed/Operator/RingOpNorm/OpenMapping.lean#L291)

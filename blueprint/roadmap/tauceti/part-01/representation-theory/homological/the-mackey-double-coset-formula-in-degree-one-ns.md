@@ -80,4 +80,4 @@ TauCeti.ContinuousCohomology.corestriction_mackey.{u} {G : Type u} [Group G] [To
 ## Sources
 
 - [Tau Ceti documentation: `TauCeti.ContCohomology.explicitCor1_mackey`](https://taucetiproject.org/docs/TauCeti/RepresentationTheory/Homological/ContCohomology/Corestriction/Mackey/Basic.html#TauCeti.ContCohomology.explicitCor1_mackey)
-- [Source of `TauCeti.ContCohomology.explicitCor1_mackey` in TauCeti/RepresentationTheory/Homological/ContCohomology/Corestriction/Mackey/Basic.lean](https://github.com/TauCetiProject/TauCeti/blob/a6027b1d24fcb935c53bd5b50d11b40991cda418/TauCeti/RepresentationTheory/Homological/ContCohomology/Corestriction/Mackey/Basic.lean#L324)
+- [Source of `TauCeti.ContCohomology.explicitCor1_mackey` in TauCeti/RepresentationTheory/Homological/ContCohomology/Corestriction/Mackey/Basic.lean](https://github.com/TauCetiProject/TauCeti/blob/cd41bffcb343151b3e58c89392e206b11fe78c1c/TauCeti/RepresentationTheory/Homological/ContCohomology/Corestriction/Mackey/Basic.lean#L324)

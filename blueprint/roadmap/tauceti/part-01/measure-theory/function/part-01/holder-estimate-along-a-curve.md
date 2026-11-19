@@ -26,7 +26,7 @@ Its statement uses no other declaration mapped here.
 ## Proof depends on
 
 - [Fundamental theorem for absolutely continuous curves, integrability](fundamental-theorem-for-absolutely-continuous-cu.md)
-- [Hölder's inequality for the integral of a product](holders-inequality-for-the-integral-of-a-product.md)
+- [Hölder's inequality for disjoint pieces](holders-inequality-for-disjoint-pieces.md)
 
 ## Lean
 
@@ -35,4 +35,4 @@ Formalized in Tau Ceti as [`AbsolutelyContinuousOnInterval.edist_rpow_le_mul_cur
 ## Sources
 
 - [Tau Ceti documentation: `AbsolutelyContinuousOnInterval.edist_rpow_le_mul_curveAction`](https://taucetiproject.org/docs/TauCeti/MeasureTheory/Function/CurveAction/Basic.html#AbsolutelyContinuousOnInterval.edist_rpow_le_mul_curveAction)
-- [Source of `AbsolutelyContinuousOnInterval.edist_rpow_le_mul_curveAction` in TauCeti/MeasureTheory/Function/CurveAction/Basic.lean](https://github.com/TauCetiProject/TauCeti/blob/a6027b1d24fcb935c53bd5b50d11b40991cda418/TauCeti/MeasureTheory/Function/CurveAction/Basic.lean#L214)
+- [Source of `AbsolutelyContinuousOnInterval.edist_rpow_le_mul_curveAction` in TauCeti/MeasureTheory/Function/CurveAction/Basic.lean](https://github.com/TauCetiProject/TauCeti/blob/cd41bffcb343151b3e58c89392e206b11fe78c1c/TauCeti/MeasureTheory/Function/CurveAction/Basic.lean#L214)

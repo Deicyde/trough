@@ -29,4 +29,4 @@ Formalized in Tau Ceti as [`TauCeti.eq_one_of_isOfFinOrder_of_pow_dvd_sub_one`](
 ## Sources
 
 - [Tau Ceti documentation: `TauCeti.eq_one_of_isOfFinOrder_of_pow_dvd_sub_one`](https://taucetiproject.org/docs/TauCeti/RingTheory/RootsOfUnity/Congruence.html#TauCeti.eq_one_of_isOfFinOrder_of_pow_dvd_sub_one)
-- [Source of `TauCeti.eq_one_of_isOfFinOrder_of_pow_dvd_sub_one` in TauCeti/RingTheory/RootsOfUnity/Congruence.lean](https://github.com/TauCetiProject/TauCeti/blob/a6027b1d24fcb935c53bd5b50d11b40991cda418/TauCeti/RingTheory/RootsOfUnity/Congruence.lean#L134)
+- [Source of `TauCeti.eq_one_of_isOfFinOrder_of_pow_dvd_sub_one` in TauCeti/RingTheory/RootsOfUnity/Congruence.lean](https://github.com/TauCetiProject/TauCeti/blob/cd41bffcb343151b3e58c89392e206b11fe78c1c/TauCeti/RingTheory/RootsOfUnity/Congruence.lean#L134)

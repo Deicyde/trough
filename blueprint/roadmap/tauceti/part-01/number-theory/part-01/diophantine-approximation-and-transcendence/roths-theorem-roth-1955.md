@@ -23,8 +23,8 @@ Its statement uses no other declaration mapped here.
 
 ## Proof depends on
 
-- [Roth's auxiliary polynomial (Pottmeyer, Theorem 2.6.5)](roths-auxiliary-polynomial-pottmeyer-theorem-2-6.md)
-- [Roth's lemma (Pottmeyer, Theorem 3.4.1)](roths-lemma-pottmeyer-theorem-3-4-1.md)
+- [Roth's auxiliary polynomial (Pottmeyer, Theorem 2.6.5)](../../part-02/diophantine-approximation/roths-auxiliary-polynomial-pottmeyer-theorem-2-6.md)
+- [Roth's lemma (Pottmeyer, Theorem 3.4.1)](../../part-02/diophantine-approximation/roths-lemma-pottmeyer-theorem-3-4-1.md)
 
 ## Lean
 
@@ -64,5 +64,5 @@ IsAlgebraic.exists_pos_mul_max_abs_rpow_le_norm_sub_mul {α : ℂ} (hα : IsAlge
 ## Sources
 
 - [Tau Ceti documentation: `IsAlgebraic.finite_setOfPred_abs_sub_le_mulHeight₁_rpow_neg`](https://taucetiproject.org/docs/TauCeti/NumberTheory/DiophantineApproximation/Roth/Theorem.html#IsAlgebraic.finite_setOfPred_abs_sub_le_mulHeight%E2%82%81_rpow_neg)
-- [Source of `IsAlgebraic.finite_setOfPred_abs_sub_le_mulHeight₁_rpow_neg` in TauCeti/NumberTheory/DiophantineApproximation/Roth/Theorem.lean](https://github.com/TauCetiProject/TauCeti/blob/a6027b1d24fcb935c53bd5b50d11b40991cda418/TauCeti/NumberTheory/DiophantineApproximation/Roth/Theorem.lean#L160)
-- [Tau Ceti roadmap status: Diophantine approximation and transcendence](https://github.com/TauCetiProject/TauCetiRoadmap/blob/9f7c032adaf1b838e8183d63ff3cfa886d061cb3/TauCetiRoadmap/DiophantineApproximationAndTranscendence/STATUS.md)
+- [Source of `IsAlgebraic.finite_setOfPred_abs_sub_le_mulHeight₁_rpow_neg` in TauCeti/NumberTheory/DiophantineApproximation/Roth/Theorem.lean](https://github.com/TauCetiProject/TauCeti/blob/cd41bffcb343151b3e58c89392e206b11fe78c1c/TauCeti/NumberTheory/DiophantineApproximation/Roth/Theorem.lean#L160)
+- [Tau Ceti roadmap status: Diophantine approximation and transcendence](https://github.com/TauCetiProject/TauCetiRoadmap/blob/612845ab80fb9c2b9bee724a156756ee78031591/TauCetiRoadmap/DiophantineApproximationAndTranscendence/STATUS.md)

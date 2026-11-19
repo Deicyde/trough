@@ -38,4 +38,4 @@ Formalized in Tau Ceti as [`LinearMap.ker_le_range_of_mapRange_constantCoeff`](h
 ## Sources
 
 - [Tau Ceti documentation: `LinearMap.ker_le_range_of_mapRange_constantCoeff`](https://taucetiproject.org/docs/TauCeti/Algebra/Homology/ReductionModVariables.html#LinearMap.ker_le_range_of_mapRange_constantCoeff)
-- [Source of `LinearMap.ker_le_range_of_mapRange_constantCoeff` in TauCeti/Algebra/Homology/ReductionModVariables.lean](https://github.com/TauCetiProject/TauCeti/blob/a6027b1d24fcb935c53bd5b50d11b40991cda418/TauCeti/Algebra/Homology/ReductionModVariables.lean#L204)
+- [Source of `LinearMap.ker_le_range_of_mapRange_constantCoeff` in TauCeti/Algebra/Homology/ReductionModVariables.lean](https://github.com/TauCetiProject/TauCeti/blob/cd41bffcb343151b3e58c89392e206b11fe78c1c/TauCeti/Algebra/Homology/ReductionModVariables.lean#L204)

@@ -34,4 +34,4 @@ Formalized in Tau Ceti as [`LipschitzWith.euclideanHausdorffMeasure_image_setOf_
 ## Sources
 
 - [Tau Ceti documentation: `LipschitzWith.euclideanHausdorffMeasure_image_setOf_normDet_fderiv_eq_zero`](https://taucetiproject.org/docs/TauCeti/MeasureTheory/Function/AreaFormula/Lipschitz.html#LipschitzWith.euclideanHausdorffMeasure_image_setOf_normDet_fderiv_eq_zero)
-- [Source of `LipschitzWith.euclideanHausdorffMeasure_image_setOf_normDet_fderiv_eq_zero` in TauCeti/MeasureTheory/Function/AreaFormula/Lipschitz.lean](https://github.com/TauCetiProject/TauCeti/blob/a6027b1d24fcb935c53bd5b50d11b40991cda418/TauCeti/MeasureTheory/Function/AreaFormula/Lipschitz.lean#L247)
+- [Source of `LipschitzWith.euclideanHausdorffMeasure_image_setOf_normDet_fderiv_eq_zero` in TauCeti/MeasureTheory/Function/AreaFormula/Lipschitz.lean](https://github.com/TauCetiProject/TauCeti/blob/cd41bffcb343151b3e58c89392e206b11fe78c1c/TauCeti/MeasureTheory/Function/AreaFormula/Lipschitz.lean#L248)

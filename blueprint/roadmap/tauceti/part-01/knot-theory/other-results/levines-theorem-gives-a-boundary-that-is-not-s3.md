@@ -47,4 +47,4 @@ Formalized in Tau Ceti as [`TauCeti.LevineHomologyConcordanceTheorem.exists_isEm
 ## Sources
 
 - [Tau Ceti documentation: `TauCeti.LevineHomologyConcordanceTheorem.exists_isEmpty_diffeomorph_sphere`](https://taucetiproject.org/docs/TauCeti/KnotTheory/HomologyConcordance.html#TauCeti.LevineHomologyConcordanceTheorem.exists_isEmpty_diffeomorph_sphere)
-- [Source of `TauCeti.LevineHomologyConcordanceTheorem.exists_isEmpty_diffeomorph_sphere` in TauCeti/KnotTheory/HomologyConcordance.lean](https://github.com/TauCetiProject/TauCeti/blob/a6027b1d24fcb935c53bd5b50d11b40991cda418/TauCeti/KnotTheory/HomologyConcordance.lean#L111)
+- [Source of `TauCeti.LevineHomologyConcordanceTheorem.exists_isEmpty_diffeomorph_sphere` in TauCeti/KnotTheory/HomologyConcordance.lean](https://github.com/TauCetiProject/TauCeti/blob/cd41bffcb343151b3e58c89392e206b11fe78c1c/TauCeti/KnotTheory/HomologyConcordance.lean#L111)

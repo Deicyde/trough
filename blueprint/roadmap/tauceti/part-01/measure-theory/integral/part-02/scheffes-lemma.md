@@ -34,4 +34,4 @@ Formalized in Tau Ceti as [`MeasureTheory.tendsto_integral_norm_sub_of_tendsto_i
 ## Sources
 
 - [Tau Ceti documentation: `MeasureTheory.tendsto_integral_norm_sub_of_tendsto_integral`](https://taucetiproject.org/docs/TauCeti/MeasureTheory/Integral/Scheffe.html#MeasureTheory.tendsto_integral_norm_sub_of_tendsto_integral)
-- [Source of `MeasureTheory.tendsto_integral_norm_sub_of_tendsto_integral` in TauCeti/MeasureTheory/Integral/Scheffe.lean](https://github.com/TauCetiProject/TauCeti/blob/a6027b1d24fcb935c53bd5b50d11b40991cda418/TauCeti/MeasureTheory/Integral/Scheffe.lean#L37)
+- [Source of `MeasureTheory.tendsto_integral_norm_sub_of_tendsto_integral` in TauCeti/MeasureTheory/Integral/Scheffe.lean](https://github.com/TauCetiProject/TauCeti/blob/cd41bffcb343151b3e58c89392e206b11fe78c1c/TauCeti/MeasureTheory/Integral/Scheffe.lean#L37)

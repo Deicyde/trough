@@ -21,7 +21,7 @@ Its statement uses no other declaration mapped here.
 
 ## Proof depends on
 
-- [The double centralizer theorem](../../ring-theory/part-01/semisimple/the-double-centralizer-theorem.md)
+- [The double centralizer theorem](../../ring-theory/part-02/semisimple/the-double-centralizer-theorem.md)
 
 ## Lean
 
@@ -97,4 +97,4 @@ TauCeti.centralizer_range_tensorPowerRep_asAlgebraHom_eq_range_permTensorActionA
 ## Sources
 
 - [Tau Ceti documentation: `TauCeti.centralizer_range_permTensorActionAlgHom_eq_range_tensorPowerRep_asAlgebraHom`](https://taucetiproject.org/docs/TauCeti/RepresentationTheory/Symmetric/TensorAction/GeneralLinear.html#TauCeti.centralizer_range_permTensorActionAlgHom_eq_range_tensorPowerRep_asAlgebraHom)
-- [Source of `TauCeti.centralizer_range_permTensorActionAlgHom_eq_range_tensorPowerRep_asAlgebraHom` in TauCeti/RepresentationTheory/Symmetric/TensorAction/GeneralLinear.lean](https://github.com/TauCetiProject/TauCeti/blob/a6027b1d24fcb935c53bd5b50d11b40991cda418/TauCeti/RepresentationTheory/Symmetric/TensorAction/GeneralLinear.lean#L75)
+- [Source of `TauCeti.centralizer_range_permTensorActionAlgHom_eq_range_tensorPowerRep_asAlgebraHom` in TauCeti/RepresentationTheory/Symmetric/TensorAction/GeneralLinear.lean](https://github.com/TauCetiProject/TauCeti/blob/cd41bffcb343151b3e58c89392e206b11fe78c1c/TauCeti/RepresentationTheory/Symmetric/TensorAction/GeneralLinear.lean#L75)

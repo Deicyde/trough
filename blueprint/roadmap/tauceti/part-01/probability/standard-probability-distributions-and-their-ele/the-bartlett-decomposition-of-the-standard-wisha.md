@@ -58,5 +58,5 @@ TauCeti.Probability.bartlett_nonsingularWishartMeasure.{u_1} {p : ℕ} {n : ℝ}
 ## Sources
 
 - [Tau Ceti documentation: `TauCeti.Probability.map_choleskyLowerCoordinates_comap_nonsingularWishartMeasure`](https://taucetiproject.org/docs/TauCeti/Probability/Distributions/Wishart/Bartlett.html#TauCeti.Probability.map_choleskyLowerCoordinates_comap_nonsingularWishartMeasure)
-- [Source of `TauCeti.Probability.map_choleskyLowerCoordinates_comap_nonsingularWishartMeasure` in TauCeti/Probability/Distributions/Wishart/Bartlett.lean](https://github.com/TauCetiProject/TauCeti/blob/a6027b1d24fcb935c53bd5b50d11b40991cda418/TauCeti/Probability/Distributions/Wishart/Bartlett.lean#L414)
-- [Tau Ceti roadmap status: Standard probability distributions and their elementary theory](https://github.com/TauCetiProject/TauCetiRoadmap/blob/9f7c032adaf1b838e8183d63ff3cfa886d061cb3/TauCetiRoadmap/StandardDistributions/STATUS.md)
+- [Source of `TauCeti.Probability.map_choleskyLowerCoordinates_comap_nonsingularWishartMeasure` in TauCeti/Probability/Distributions/Wishart/Bartlett.lean](https://github.com/TauCetiProject/TauCeti/blob/cd41bffcb343151b3e58c89392e206b11fe78c1c/TauCeti/Probability/Distributions/Wishart/Bartlett.lean#L409)
+- [Tau Ceti roadmap status: Standard probability distributions and their elementary theory](https://github.com/TauCetiProject/TauCetiRoadmap/blob/612845ab80fb9c2b9bee724a156756ee78031591/TauCetiRoadmap/StandardDistributions/STATUS.md)

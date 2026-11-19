@@ -31,4 +31,4 @@ Formalized in Tau Ceti as [`TauCeti.NormedRing.IsTate.banach_steinhaus`](https:/
 ## Sources
 
 - [Tau Ceti documentation: `TauCeti.NormedRing.IsTate.banach_steinhaus`](https://taucetiproject.org/docs/TauCeti/Analysis/Normed/Operator/RingOpNorm/UniformBoundedness.html#TauCeti.NormedRing.IsTate.banach_steinhaus)
-- [Source of `TauCeti.NormedRing.IsTate.banach_steinhaus` in TauCeti/Analysis/Normed/Operator/RingOpNorm/UniformBoundedness.lean](https://github.com/TauCetiProject/TauCeti/blob/a6027b1d24fcb935c53bd5b50d11b40991cda418/TauCeti/Analysis/Normed/Operator/RingOpNorm/UniformBoundedness.lean#L71)
+- [Source of `TauCeti.NormedRing.IsTate.banach_steinhaus` in TauCeti/Analysis/Normed/Operator/RingOpNorm/UniformBoundedness.lean](https://github.com/TauCetiProject/TauCeti/blob/cd41bffcb343151b3e58c89392e206b11fe78c1c/TauCeti/Analysis/Normed/Operator/RingOpNorm/UniformBoundedness.lean#L71)

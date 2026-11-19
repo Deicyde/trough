@@ -32,4 +32,4 @@ Formalized in Tau Ceti as [`TopPair.isIso_homologyMap_restrictι_smallSingularSu
 ## Sources
 
 - [Tau Ceti documentation: `TopPair.isIso_homologyMap_restrictι_smallSingularSubcomplex`](https://taucetiproject.org/docs/TauCeti/AlgebraicTopology/Singular/Subdivision/Small/Relative.html#TopPair.isIso_homologyMap_restrict%CE%B9_smallSingularSubcomplex)
-- [Source of `TopPair.isIso_homologyMap_restrictι_smallSingularSubcomplex` in TauCeti/AlgebraicTopology/Singular/Subdivision/Small/Relative.lean](https://github.com/TauCetiProject/TauCeti/blob/a6027b1d24fcb935c53bd5b50d11b40991cda418/TauCeti/AlgebraicTopology/Singular/Subdivision/Small/Relative.lean#L77)
+- [Source of `TopPair.isIso_homologyMap_restrictι_smallSingularSubcomplex` in TauCeti/AlgebraicTopology/Singular/Subdivision/Small/Relative.lean](https://github.com/TauCetiProject/TauCeti/blob/cd41bffcb343151b3e58c89392e206b11fe78c1c/TauCeti/AlgebraicTopology/Singular/Subdivision/Small/Relative.lean#L77)

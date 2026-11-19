@@ -35,4 +35,4 @@ Formalized in Tau Ceti as [`TauCeti.MonoidAlgebra.bijective_of_forall_exists_map
 ## Sources
 
 - [Tau Ceti documentation: `TauCeti.MonoidAlgebra.bijective_of_forall_exists_mapRingHom_residue_eq`](https://taucetiproject.org/docs/TauCeti/Algebra/MonoidAlgebra/LocalRing.html#TauCeti.MonoidAlgebra.bijective_of_forall_exists_mapRingHom_residue_eq)
-- [Source of `TauCeti.MonoidAlgebra.bijective_of_forall_exists_mapRingHom_residue_eq` in TauCeti/Algebra/MonoidAlgebra/LocalRing.lean](https://github.com/TauCetiProject/TauCeti/blob/a6027b1d24fcb935c53bd5b50d11b40991cda418/TauCeti/Algebra/MonoidAlgebra/LocalRing.lean#L50)
+- [Source of `TauCeti.MonoidAlgebra.bijective_of_forall_exists_mapRingHom_residue_eq` in TauCeti/Algebra/MonoidAlgebra/LocalRing.lean](https://github.com/TauCetiProject/TauCeti/blob/cd41bffcb343151b3e58c89392e206b11fe78c1c/TauCeti/Algebra/MonoidAlgebra/LocalRing.lean#L50)

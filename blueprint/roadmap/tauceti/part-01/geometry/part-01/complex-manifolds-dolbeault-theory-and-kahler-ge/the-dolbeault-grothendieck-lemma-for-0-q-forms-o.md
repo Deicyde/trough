@@ -6,7 +6,7 @@ statement: formalized
 proof: formalized
 ---
 
-# The Dolbeault–Grothendieck lemma for `(0,q)`-forms on polydiscs
+# The Dolbeault–Grothendieck lemma for `(0,q)`-forms on polydiscs (`TauCeti.exists_contDiffOn_delBarCoeff_eq_of_polydisc`)
 
 A smooth `bar∂`-closed
 `(0,q+1)`-form on the polydisc `∏ B(c_i, r_i)`, with coefficients in a complex Banach space, is
@@ -36,7 +36,7 @@ Its statement uses no other declaration mapped here.
 
 ## Proof depends on
 
-- [The Cauchy–Pompeiu formula for a compactly supported `C¹` map `u : ℂ → F`](../../../analysis/part-01/elliptic-analysis-of-pseudoholomorphic-curves/the-cauchy-pompeiu-formula-for-a-compactly-suppo.md)
+- [The Cauchy–Pompeiu formula with a cutoff](../../../analysis/part-03/complex/part-01/the-cauchy-pompeiu-formula-with-a-cutoff.md)
 
 ## Lean
 
@@ -63,5 +63,5 @@ TauCeti.exists_contDiffAt_delBarCoeff_eventually_eq_of_pi.{u_1, u_2} {F : Type u
 ## Sources
 
 - [Tau Ceti documentation: `TauCeti.exists_contDiffOn_delBarCoeff_eq_of_polydisc`](https://taucetiproject.org/docs/TauCeti/Analysis/Complex/Wirtinger/Polydisc.html#TauCeti.exists_contDiffOn_delBarCoeff_eq_of_polydisc)
-- [Source of `TauCeti.exists_contDiffOn_delBarCoeff_eq_of_polydisc` in TauCeti/Analysis/Complex/Wirtinger/Polydisc.lean](https://github.com/TauCetiProject/TauCeti/blob/a6027b1d24fcb935c53bd5b50d11b40991cda418/TauCeti/Analysis/Complex/Wirtinger/Polydisc.lean#L501)
-- [Tau Ceti roadmap status: Complex manifolds, Dolbeault theory and Kähler geometry](https://github.com/TauCetiProject/TauCetiRoadmap/blob/9f7c032adaf1b838e8183d63ff3cfa886d061cb3/TauCetiRoadmap/ComplexKahlerGeometry/STATUS.md)
+- [Source of `TauCeti.exists_contDiffOn_delBarCoeff_eq_of_polydisc` in TauCeti/Analysis/Complex/Wirtinger/Polydisc.lean](https://github.com/TauCetiProject/TauCeti/blob/cd41bffcb343151b3e58c89392e206b11fe78c1c/TauCeti/Analysis/Complex/Wirtinger/Polydisc.lean#L501)
+- [Tau Ceti roadmap status: Complex manifolds, Dolbeault theory and Kähler geometry](https://github.com/TauCetiProject/TauCetiRoadmap/blob/612845ab80fb9c2b9bee724a156756ee78031591/TauCetiRoadmap/ComplexKahlerGeometry/STATUS.md)

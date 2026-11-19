@@ -40,4 +40,4 @@ LieDerivation.exists_isNilpotent_isSemisimple_of_iSup_maxGenEigenspace_eq_top.{u
 ## Sources
 
 - [Tau Ceti documentation: `LieDerivation.exists_isNilpotent_isSemisimple`](https://taucetiproject.org/docs/TauCeti/Algebra/Lie/Derivation/JordanChevalley.html#LieDerivation.exists_isNilpotent_isSemisimple)
-- [Source of `LieDerivation.exists_isNilpotent_isSemisimple` in TauCeti/Algebra/Lie/Derivation/JordanChevalley.lean](https://github.com/TauCetiProject/TauCeti/blob/a6027b1d24fcb935c53bd5b50d11b40991cda418/TauCeti/Algebra/Lie/Derivation/JordanChevalley.lean#L170)
+- [Source of `LieDerivation.exists_isNilpotent_isSemisimple` in TauCeti/Algebra/Lie/Derivation/JordanChevalley.lean](https://github.com/TauCetiProject/TauCeti/blob/cd41bffcb343151b3e58c89392e206b11fe78c1c/TauCeti/Algebra/Lie/Derivation/JordanChevalley.lean#L170)

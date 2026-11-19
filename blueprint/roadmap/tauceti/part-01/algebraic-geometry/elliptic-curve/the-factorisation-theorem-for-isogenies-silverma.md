@@ -36,4 +36,4 @@ Formalized in Tau Ceti as [`TauCeti.Isogeny.existsUnique_comp_iterateRelativeFro
 ## Sources
 
 - [Tau Ceti documentation: `TauCeti.Isogeny.existsUnique_comp_iterateRelativeFrobeniusIsogeny_eq`](https://taucetiproject.org/docs/TauCeti/AlgebraicGeometry/EllipticCurve/Isogeny/RelativeFrobenius/Factorisation.html#TauCeti.Isogeny.existsUnique_comp_iterateRelativeFrobeniusIsogeny_eq)
-- [Source of `TauCeti.Isogeny.existsUnique_comp_iterateRelativeFrobeniusIsogeny_eq` in TauCeti/AlgebraicGeometry/EllipticCurve/Isogeny/RelativeFrobenius/Factorisation.lean](https://github.com/TauCetiProject/TauCeti/blob/a6027b1d24fcb935c53bd5b50d11b40991cda418/TauCeti/AlgebraicGeometry/EllipticCurve/Isogeny/RelativeFrobenius/Factorisation.lean#L125)
+- [Source of `TauCeti.Isogeny.existsUnique_comp_iterateRelativeFrobeniusIsogeny_eq` in TauCeti/AlgebraicGeometry/EllipticCurve/Isogeny/RelativeFrobenius/Factorisation.lean](https://github.com/TauCetiProject/TauCeti/blob/cd41bffcb343151b3e58c89392e206b11fe78c1c/TauCeti/AlgebraicGeometry/EllipticCurve/Isogeny/RelativeFrobenius/Factorisation.lean#L125)

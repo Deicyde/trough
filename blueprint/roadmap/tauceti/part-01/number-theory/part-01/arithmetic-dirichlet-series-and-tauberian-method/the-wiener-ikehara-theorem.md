@@ -25,9 +25,9 @@ Its statement uses no other declaration mapped here.
 
 ## Proof depends on
 
-- [Abel's inequality, comparison form](../../../algebra/part-02/other-results/abels-inequality-comparison-form.md)
+- [Abel's inequality, comparison form](../../../algebra/part-02/order/abels-inequality-comparison-form.md)
 - [The Chebyshev bound](../../part-02/l-series/the-chebyshev-bound.md)
-- [Riemann--Lebesgue on a vertical line](../../../analysis/part-02/fourier/riemann-lebesgue-on-a-vertical-line.md)
+- [Riemann--Lebesgue on a vertical line](../../../analysis/part-03/fourier/part-01/riemann-lebesgue-on-a-vertical-line.md)
 
 ## Lean
 
@@ -94,5 +94,5 @@ TauCeti.LSeries.wienerIkehara_zero {a : ℕ → ℝ} {F G : ℂ → ℂ} (ha : 0
 ## Sources
 
 - [Tau Ceti documentation: `TauCeti.LSeries.wienerIkehara`](https://taucetiproject.org/docs/TauCeti/NumberTheory/LSeries/WienerIkehara/SharpCutoff.html#TauCeti.LSeries.wienerIkehara)
-- [Source of `TauCeti.LSeries.wienerIkehara` in TauCeti/NumberTheory/LSeries/WienerIkehara/SharpCutoff.lean](https://github.com/TauCetiProject/TauCeti/blob/a6027b1d24fcb935c53bd5b50d11b40991cda418/TauCeti/NumberTheory/LSeries/WienerIkehara/SharpCutoff.lean#L297)
-- [Tau Ceti roadmap status: Arithmetic Dirichlet series and Tauberian methods](https://github.com/TauCetiProject/TauCetiRoadmap/blob/9f7c032adaf1b838e8183d63ff3cfa886d061cb3/Completed/ArithmeticDirichletSeries/STATUS.md)
+- [Source of `TauCeti.LSeries.wienerIkehara` in TauCeti/NumberTheory/LSeries/WienerIkehara/SharpCutoff.lean](https://github.com/TauCetiProject/TauCeti/blob/cd41bffcb343151b3e58c89392e206b11fe78c1c/TauCeti/NumberTheory/LSeries/WienerIkehara/SharpCutoff.lean#L297)
+- [Tau Ceti roadmap status: Arithmetic Dirichlet series and Tauberian methods](https://github.com/TauCetiProject/TauCetiRoadmap/blob/612845ab80fb9c2b9bee724a156756ee78031591/Completed/ArithmeticDirichletSeries/STATUS.md)

@@ -30,4 +30,4 @@ Formalized in Tau Ceti as [`IsIdempotentElem.exists_smul_eq_mul_of_mul_sub_smul_
 ## Sources
 
 - [Tau Ceti documentation: `IsIdempotentElem.exists_smul_eq_mul_of_mul_sub_smul_mem`](https://taucetiproject.org/docs/TauCeti/RingTheory/Idempotents/Jacobson.html#IsIdempotentElem.exists_smul_eq_mul_of_mul_sub_smul_mem)
-- [Source of `IsIdempotentElem.exists_smul_eq_mul_of_mul_sub_smul_mem` in TauCeti/RingTheory/Idempotents/Jacobson.lean](https://github.com/TauCetiProject/TauCeti/blob/a6027b1d24fcb935c53bd5b50d11b40991cda418/TauCeti/RingTheory/Idempotents/Jacobson.lean#L94)
+- [Source of `IsIdempotentElem.exists_smul_eq_mul_of_mul_sub_smul_mem` in TauCeti/RingTheory/Idempotents/Jacobson.lean](https://github.com/TauCetiProject/TauCeti/blob/cd41bffcb343151b3e58c89392e206b11fe78c1c/TauCeti/RingTheory/Idempotents/Jacobson.lean#L94)

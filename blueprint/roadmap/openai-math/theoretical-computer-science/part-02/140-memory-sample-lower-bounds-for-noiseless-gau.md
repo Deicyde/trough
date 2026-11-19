@@ -1,7 +1,7 @@
 ---
 declaration: section
 origin: cited
-lean: OAI.MemoryPrecision.main, OAI.NoiselessRegression.main, OAI.PosteriorReplicas.source_main, OAI.RepeatedLocalization.FiniteEntropy.finite_expected_regularization, OAI.RepeatedLocalization.repeated_localization, OAI.AllScaleInverseVolume.inverse_volume_without_support, OAI.KernelPotential.kernel_coercivity, OAI.KernelPotential.actual_row_drift
+lean: OAI.MemoryPrecision.main, OAI.NoiselessRegression.main, OAI.PosteriorReplicas.source_main, OAI.RepeatedLocalization.FiniteEntropy.finite_expected_regularization, OAI.RepeatedLocalization.repeated_localization, OAI.AllScaleInverseVolume.inverse_volume_without_support, OAI.KernelPotential.actual_row_drift, OAI.ProjectionMoments.main
 statement: formalized
 ---
 

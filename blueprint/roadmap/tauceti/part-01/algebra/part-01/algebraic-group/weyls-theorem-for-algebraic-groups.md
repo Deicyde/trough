@@ -40,4 +40,4 @@ Formalized in Tau Ceti as [`TauCeti.Comodule.isCompletelyReducible_of_isKilling`
 ## Sources
 
 - [Tau Ceti documentation: `TauCeti.Comodule.isCompletelyReducible_of_isKilling`](https://taucetiproject.org/docs/TauCeti/Algebra/AlgebraicGroup/Representation/CompleteReducibility.html#TauCeti.Comodule.isCompletelyReducible_of_isKilling)
-- [Source of `TauCeti.Comodule.isCompletelyReducible_of_isKilling` in TauCeti/Algebra/AlgebraicGroup/Representation/CompleteReducibility.lean](https://github.com/TauCetiProject/TauCeti/blob/a6027b1d24fcb935c53bd5b50d11b40991cda418/TauCeti/Algebra/AlgebraicGroup/Representation/CompleteReducibility.lean#L74)
+- [Source of `TauCeti.Comodule.isCompletelyReducible_of_isKilling` in TauCeti/Algebra/AlgebraicGroup/Representation/CompleteReducibility.lean](https://github.com/TauCetiProject/TauCeti/blob/cd41bffcb343151b3e58c89392e206b11fe78c1c/TauCeti/Algebra/AlgebraicGroup/Representation/CompleteReducibility.lean#L74)

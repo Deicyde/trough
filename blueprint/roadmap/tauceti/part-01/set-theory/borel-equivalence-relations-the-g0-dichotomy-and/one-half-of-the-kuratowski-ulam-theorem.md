@@ -46,4 +46,4 @@ TauCeti.eventually_eventually_right_of_mem_residual.{u_1, u_2} {X : Type u_1} {Y
 ## Sources
 
 - [Tau Ceti documentation: `TauCeti.curry_le_residual`](https://taucetiproject.org/docs/TauCeti/Topology/Baire/KuratowskiUlam.html#TauCeti.curry_le_residual)
-- [Source of `TauCeti.curry_le_residual` in TauCeti/Topology/Baire/KuratowskiUlam.lean](https://github.com/TauCetiProject/TauCeti/blob/a6027b1d24fcb935c53bd5b50d11b40991cda418/TauCeti/Topology/Baire/KuratowskiUlam.lean#L101)
+- [Source of `TauCeti.curry_le_residual` in TauCeti/Topology/Baire/KuratowskiUlam.lean](https://github.com/TauCetiProject/TauCeti/blob/cd41bffcb343151b3e58c89392e206b11fe78c1c/TauCeti/Topology/Baire/KuratowskiUlam.lean#L101)

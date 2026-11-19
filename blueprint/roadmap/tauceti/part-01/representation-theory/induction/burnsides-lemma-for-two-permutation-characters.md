@@ -30,7 +30,7 @@ Its statement uses no other declaration mapped here.
 
 ## Proof depends on
 
-- [Burnside's lemma on a product](../../group-theory/other-results/burnsides-lemma-on-a-product.md)
+- [Burnside's lemma on a product](../../group-theory/other-results/part-01/burnsides-lemma-on-a-product.md)
 
 ## Lean
 
@@ -39,4 +39,4 @@ Formalized in Tau Ceti as [`TauCeti.sum_character_ofMulAction_mul_character_ofMu
 ## Sources
 
 - [Tau Ceti documentation: `TauCeti.sum_character_ofMulAction_mul_character_ofMulAction_eq_card_orbits_mul_card_group`](https://taucetiproject.org/docs/TauCeti/RepresentationTheory/Induction/DoubleCosetPairing.html#TauCeti.sum_character_ofMulAction_mul_character_ofMulAction_eq_card_orbits_mul_card_group)
-- [Source of `TauCeti.sum_character_ofMulAction_mul_character_ofMulAction_eq_card_orbits_mul_card_group` in TauCeti/RepresentationTheory/Induction/DoubleCosetPairing.lean](https://github.com/TauCetiProject/TauCeti/blob/a6027b1d24fcb935c53bd5b50d11b40991cda418/TauCeti/RepresentationTheory/Induction/DoubleCosetPairing.lean#L88)
+- [Source of `TauCeti.sum_character_ofMulAction_mul_character_ofMulAction_eq_card_orbits_mul_card_group` in TauCeti/RepresentationTheory/Induction/DoubleCosetPairing.lean](https://github.com/TauCetiProject/TauCeti/blob/cd41bffcb343151b3e58c89392e206b11fe78c1c/TauCeti/RepresentationTheory/Induction/DoubleCosetPairing.lean#L84)

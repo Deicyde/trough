@@ -45,4 +45,4 @@ Formalized in Tau Ceti as [`TauCeti.galoisEvens2_kummerClass_eq_cup_add_cup`](ht
 ## Sources
 
 - [Tau Ceti documentation: `TauCeti.galoisEvens2_kummerClass_eq_cup_add_cup`](https://taucetiproject.org/docs/TauCeti/FieldTheory/QuadraticForm/StiefelWhitney/Evens/Kummer/Value.html#TauCeti.galoisEvens2_kummerClass_eq_cup_add_cup)
-- [Source of `TauCeti.galoisEvens2_kummerClass_eq_cup_add_cup` in TauCeti/FieldTheory/QuadraticForm/StiefelWhitney/Evens/Kummer/Value.lean](https://github.com/TauCetiProject/TauCeti/blob/a6027b1d24fcb935c53bd5b50d11b40991cda418/TauCeti/FieldTheory/QuadraticForm/StiefelWhitney/Evens/Kummer/Value.lean#L67)
+- [Source of `TauCeti.galoisEvens2_kummerClass_eq_cup_add_cup` in TauCeti/FieldTheory/QuadraticForm/StiefelWhitney/Evens/Kummer/Value.lean](https://github.com/TauCetiProject/TauCeti/blob/cd41bffcb343151b3e58c89392e206b11fe78c1c/TauCeti/FieldTheory/QuadraticForm/StiefelWhitney/Evens/Kummer/Value.lean#L67)

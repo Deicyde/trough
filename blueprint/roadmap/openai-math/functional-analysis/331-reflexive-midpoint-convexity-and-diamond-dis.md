@@ -1,7 +1,7 @@
 ---
 declaration: section
 origin: cited
-lean: OAI.ForestSpace.main_theorem, OAI.SegmentLenses.midpoint_lens_main, OAI.DiamondDistortion.headline_all_pairs, OAI.ExactModuli.exact_main, OAI.ExactModuli.kadets_werner_existence, OAI.ExactModuli.exact_example, OAI.BoundedTreePotentials.TreeCalculus.main_counterexample, OAI.IndependentProducts.main_general
+lean: OAI.ForestSpace.main_theorem, OAI.SegmentLenses.midpoint_lens_main, OAI.DiamondDistortion.headline_all_pairs, OAI.ExactModuli.kadets_werner_existence, OAI.ExactModuli.exact_example, OAI.BoundedTreePotentials.TreeCalculus.main_counterexample, OAI.IndependentProducts.main_general, OAI.IndependentProducts.main_exponential
 statement: formalized
 ---
 

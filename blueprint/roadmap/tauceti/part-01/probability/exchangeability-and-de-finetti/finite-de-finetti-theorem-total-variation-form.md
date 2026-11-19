@@ -49,7 +49,7 @@ TauCeti.Probability.ExchangeableAt.finiteDeFinetti.{u_1, u_2} {α : Type u_1} [M
   {Ω : Type u_2} [MeasurableSpace Ω] {μ : MeasureTheory.Measure Ω}
   [MeasureTheory.IsProbabilityMeasure μ] {X : ℕ → Ω → α} {m n : ℕ}
   (h : TauCeti.Probability.ExchangeableAt μ X n) (hmn : m ≤ n)
-  (hX : ∀ (i : Fin n), AEMeasurable (X ↑i) μ) {A : Set (Fin m → α)} (hA : MeasurableSet A) :
+  (hX : ∀ (i : Fin n), AEMeasurable (X ↑i) μ) (A : Set (Fin m → α)) :
   (TauCeti.Probability.prefixLaw μ X m) A ≤
       (TauCeti.Probability.sampleWithReplacement (TauCeti.Probability.prefixLaw μ X n)) A +
         ↑(m.choose 2) / ↑n ∧
@@ -60,5 +60,5 @@ TauCeti.Probability.ExchangeableAt.finiteDeFinetti.{u_1, u_2} {α : Type u_1} [M
 ## Sources
 
 - [Tau Ceti documentation: `TauCeti.Probability.ExchangeableAt.etvDist_prefixLaw_sampleWithReplacement_le`](https://taucetiproject.org/docs/TauCeti/Probability/Exchangeability/FiniteDeFinetti.html#TauCeti.Probability.ExchangeableAt.etvDist_prefixLaw_sampleWithReplacement_le)
-- [Source of `TauCeti.Probability.ExchangeableAt.etvDist_prefixLaw_sampleWithReplacement_le` in TauCeti/Probability/Exchangeability/FiniteDeFinetti.lean](https://github.com/TauCetiProject/TauCeti/blob/a6027b1d24fcb935c53bd5b50d11b40991cda418/TauCeti/Probability/Exchangeability/FiniteDeFinetti.lean#L185)
-- [Tau Ceti roadmap status: Exchangeability and de Finetti](https://github.com/TauCetiProject/TauCetiRoadmap/blob/9f7c032adaf1b838e8183d63ff3cfa886d061cb3/Completed/Exchangeability/STATUS.md)
+- [Source of `TauCeti.Probability.ExchangeableAt.etvDist_prefixLaw_sampleWithReplacement_le` in TauCeti/Probability/Exchangeability/FiniteDeFinetti.lean](https://github.com/TauCetiProject/TauCeti/blob/cd41bffcb343151b3e58c89392e206b11fe78c1c/TauCeti/Probability/Exchangeability/FiniteDeFinetti.lean#L179)
+- [Tau Ceti roadmap status: Exchangeability and de Finetti](https://github.com/TauCetiProject/TauCetiRoadmap/blob/612845ab80fb9c2b9bee724a156756ee78031591/Completed/Exchangeability/STATUS.md)

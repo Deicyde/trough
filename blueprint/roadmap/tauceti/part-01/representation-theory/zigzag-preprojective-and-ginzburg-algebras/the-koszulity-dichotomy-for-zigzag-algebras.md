@@ -21,7 +21,7 @@ TauCeti.forall_exists_isLinear_zigzagGradedSimple_iff.{u, w} (k : Type w) [Field
 
 ## Depends on
 
-- [TauCeti.GradedProjectiveResolution.IsLinear](../../algebra/part-01/grothendieck-groups-cartan-maps-and-euler-forms/tauceti-gradedprojectiveresolution-islinear.md)
+Its statement uses no other declaration mapped here.
 
 ## Proof depends on
 
@@ -35,5 +35,5 @@ Formalized in Tau Ceti as [`TauCeti.forall_exists_isLinear_zigzagGradedSimple_if
 ## Sources
 
 - [Tau Ceti documentation: `TauCeti.forall_exists_isLinear_zigzagGradedSimple_iff`](https://taucetiproject.org/docs/TauCeti/RepresentationTheory/Quiver/Zigzag/Projective/Koszul/NonDynkin.html#TauCeti.forall_exists_isLinear_zigzagGradedSimple_iff)
-- [Source of `TauCeti.forall_exists_isLinear_zigzagGradedSimple_iff` in TauCeti/RepresentationTheory/Quiver/Zigzag/Projective/Koszul/NonDynkin.lean](https://github.com/TauCetiProject/TauCeti/blob/a6027b1d24fcb935c53bd5b50d11b40991cda418/TauCeti/RepresentationTheory/Quiver/Zigzag/Projective/Koszul/NonDynkin.lean#L83)
-- [Tau Ceti roadmap status: Zigzag, preprojective, and Ginzburg algebras](https://github.com/TauCetiProject/TauCetiRoadmap/blob/9f7c032adaf1b838e8183d63ff3cfa886d061cb3/TauCetiRoadmap/ZigzagPreprojective/STATUS.md)
+- [Source of `TauCeti.forall_exists_isLinear_zigzagGradedSimple_iff` in TauCeti/RepresentationTheory/Quiver/Zigzag/Projective/Koszul/NonDynkin.lean](https://github.com/TauCetiProject/TauCeti/blob/cd41bffcb343151b3e58c89392e206b11fe78c1c/TauCeti/RepresentationTheory/Quiver/Zigzag/Projective/Koszul/NonDynkin.lean#L83)
+- [Tau Ceti roadmap status: Zigzag, preprojective, and Ginzburg algebras](https://github.com/TauCetiProject/TauCetiRoadmap/blob/612845ab80fb9c2b9bee724a156756ee78031591/TauCetiRoadmap/ZigzagPreprojective/STATUS.md)

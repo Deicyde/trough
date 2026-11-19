@@ -32,7 +32,7 @@ Its statement uses no other declaration mapped here.
 ## Proof depends on
 
 - [The divergence theorem on a manifold without boundary](../part-01/the-divergence-theorem-on-a-manifold-without-bou.md)
-- [The Koszul formula](the-koszul-formula.md)
+- [The Koszul formula](../part-03/the-koszul-formula.md)
 
 ## Lean
 
@@ -41,4 +41,4 @@ Formalized in Tau Ceti as [`TauCeti.Manifold.integral_mul_laplaceBeltrami_right_
 ## Sources
 
 - [Tau Ceti documentation: `TauCeti.Manifold.integral_mul_laplaceBeltrami_right_eq_left`](https://taucetiproject.org/docs/TauCeti/Geometry/Manifold/Riemannian/DivergenceTheorem.html#TauCeti.Manifold.integral_mul_laplaceBeltrami_right_eq_left)
-- [Source of `TauCeti.Manifold.integral_mul_laplaceBeltrami_right_eq_left` in TauCeti/Geometry/Manifold/Riemannian/DivergenceTheorem.lean](https://github.com/TauCetiProject/TauCeti/blob/a6027b1d24fcb935c53bd5b50d11b40991cda418/TauCeti/Geometry/Manifold/Riemannian/DivergenceTheorem.lean#L335)
+- [Source of `TauCeti.Manifold.integral_mul_laplaceBeltrami_right_eq_left` in TauCeti/Geometry/Manifold/Riemannian/DivergenceTheorem.lean](https://github.com/TauCetiProject/TauCeti/blob/cd41bffcb343151b3e58c89392e206b11fe78c1c/TauCeti/Geometry/Manifold/Riemannian/DivergenceTheorem.lean#L335)

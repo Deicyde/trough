@@ -17,8 +17,7 @@ Diffeomorph.isOrientationPreservingAt_complexManifoldOrientation.{u_1, u_2, u_3}
   [NormedAddCommGroup E] [NormedSpace ℂ E] [FiniteDimensional ℂ E] {M : Type u_2}
   [TopologicalSpace M] [ChartedSpace E M] [IsManifold (modelWithCornersSelf ℂ E) 1 M] {N : Type u_3}
   [TopologicalSpace N] [ChartedSpace E N] [IsManifold (modelWithCornersSelf ℂ E) 1 N]
-  (n : WithTop ℕ∞) [NeZero n] [IsManifold (modelWithCornersSelf ℂ E) n M]
-  [IsManifold (modelWithCornersSelf ℂ E) n N]
+  (n : WithTop ℕ∞) [NeZero n]
   (Φ : Diffeomorph (modelWithCornersSelf ℂ E) (modelWithCornersSelf ℂ E) M N n) (x : M) :
   (TauCeti.complexManifoldOrientation E M).IsOrientationPreservingAt
     (TauCeti.complexManifoldOrientation E N) (⇑Φ) x
@@ -40,5 +39,5 @@ Formalized in Tau Ceti as [`Diffeomorph.isOrientationPreservingAt_complexManifol
 ## Sources
 
 - [Tau Ceti documentation: `Diffeomorph.isOrientationPreservingAt_complexManifoldOrientation`](https://taucetiproject.org/docs/TauCeti/Geometry/Manifold/Complex/Orientation.html#Diffeomorph.isOrientationPreservingAt_complexManifoldOrientation)
-- [Source of `Diffeomorph.isOrientationPreservingAt_complexManifoldOrientation` in TauCeti/Geometry/Manifold/Complex/Orientation.lean](https://github.com/TauCetiProject/TauCeti/blob/a6027b1d24fcb935c53bd5b50d11b40991cda418/TauCeti/Geometry/Manifold/Complex/Orientation.lean#L437)
-- [Tau Ceti roadmap status: Complex manifolds: transport, quotients, bundles, and gluing](https://github.com/TauCetiProject/TauCetiRoadmap/blob/9f7c032adaf1b838e8183d63ff3cfa886d061cb3/TauCetiRoadmap/ComplexManifolds/STATUS.md)
+- [Source of `Diffeomorph.isOrientationPreservingAt_complexManifoldOrientation` in TauCeti/Geometry/Manifold/Complex/Orientation.lean](https://github.com/TauCetiProject/TauCeti/blob/cd41bffcb343151b3e58c89392e206b11fe78c1c/TauCeti/Geometry/Manifold/Complex/Orientation.lean#L440)
+- [Tau Ceti roadmap status: Complex manifolds: transport, quotients, bundles, and gluing](https://github.com/TauCetiProject/TauCetiRoadmap/blob/612845ab80fb9c2b9bee724a156756ee78031591/TauCetiRoadmap/ComplexManifolds/STATUS.md)

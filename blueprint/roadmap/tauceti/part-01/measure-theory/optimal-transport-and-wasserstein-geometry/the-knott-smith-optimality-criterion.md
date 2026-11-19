@@ -33,7 +33,7 @@ Its statement uses no other declaration mapped here.
 
 ## Proof depends on
 
-- [The Fenchel–Young inequality](../../analysis/part-02/convex/the-fenchel-young-inequality.md)
+- [The Fenchel–Young inequality](../../analysis/part-03/convex/the-fenchel-young-inequality.md)
 - [Rockafellar's theorem](../optimal-transport/part-01/rockafellars-theorem.md)
 
 ## Lean
@@ -43,4 +43,4 @@ Formalized in Tau Ceti as [`TauCeti.IsCoupling.isOptimalCoupling_iff_exists_ae_m
 ## Sources
 
 - [Tau Ceti documentation: `TauCeti.IsCoupling.isOptimalCoupling_iff_exists_ae_mem_subdifferential`](https://taucetiproject.org/docs/TauCeti/MeasureTheory/OptimalTransport/Brenier.html#TauCeti.IsCoupling.isOptimalCoupling_iff_exists_ae_mem_subdifferential)
-- [Source of `TauCeti.IsCoupling.isOptimalCoupling_iff_exists_ae_mem_subdifferential` in TauCeti/MeasureTheory/OptimalTransport/Brenier.lean](https://github.com/TauCetiProject/TauCeti/blob/a6027b1d24fcb935c53bd5b50d11b40991cda418/TauCeti/MeasureTheory/OptimalTransport/Brenier.lean#L397)
+- [Source of `TauCeti.IsCoupling.isOptimalCoupling_iff_exists_ae_mem_subdifferential` in TauCeti/MeasureTheory/OptimalTransport/Brenier.lean](https://github.com/TauCetiProject/TauCeti/blob/cd41bffcb343151b3e58c89392e206b11fe78c1c/TauCeti/MeasureTheory/OptimalTransport/Brenier.lean#L405)

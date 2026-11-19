@@ -2,8 +2,9 @@
 navigation: transparent
 ---
 
-# Arithmetic Dirichlet series and… to Newton polygons of polynomials…
+# Analytic number theory, Part I to Multiquadratic fields and genus…
 
+- [Analytic number theory, Part I](analytic-number-theory-part-i/README.md)
 - [Arithmetic Dirichlet series and Tauberian methods](arithmetic-dirichlet-series-and-tauberian-method/README.md)
 - [Bhargava's mass formula for étale algebras over a local field](bhargavas-mass-formula-for-etale-algebras-over-a/README.md)
 - [Bounded Laplace and ordered Dirichlet boundary convergence](bounded-laplace-and-ordered-dirichlet-boundary-c/README.md)
@@ -23,4 +24,3 @@ navigation: transparent
 - [Local Galois groups of p-adic fields](local-galois-groups-of-p-adic-fields/README.md)
 - [Modular forms — Hecke theory, newforms, and L-functions](modular-forms-hecke-theory-newforms-and-l-functi/README.md)
 - [Multiquadratic fields and genus theory](multiquadratic-fields-and-genus-theory/README.md)
-- [Newton polygons of polynomials and power series](newton-polygons-of-polynomials-and-power-series/README.md)

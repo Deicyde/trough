@@ -30,11 +30,9 @@ Its statement uses no other declaration mapped here.
 
 ## Proof depends on
 
-- [Cauchy-Schwarz against a majorant](../../../../linear-algebra/bilinear-form/cauchy-schwarz-against-a-majorant.md)
+- [Cauchy-Schwarz against a majorant](../../../../linear-algebra/part-01/bilinear-form/cauchy-schwarz-against-a-majorant.md)
 - [The linear-independence half of the Poincaré--Birkhoff--Witt theorem](the-linear-independence-half-of-the-poincare-bir.md)
-- [The Poincaré--Birkhoff--Witt theorem](the-poincare-birkhoff-witt-theorem.md)
-- [Representation.symmetricAlgebraInvariants](../../../../representation-theory/finite-reflection-invariants-degrees-and-weyl-ex/representation-symmetricalgebrainvariants.md)
-- [Representation.symmetricAlgebraReynolds](../../../../representation-theory/finite-reflection-invariants-degrees-and-weyl-ex/representation-symmetricalgebrareynolds.md)
+- [The Poincaré--Birkhoff--Witt theorem](../part-02/the-poincare-birkhoff-witt-theorem.md)
 
 ## Lean
 
@@ -56,4 +54,4 @@ TauCeti.exists_mem_pbwFiltration_hcProjection_eq.{v} {K : Type} {L : Type v} [Fi
 ## Sources
 
 - [Tau Ceti documentation: `TauCeti.exists_mem_pbwFiltration_hcProjectionLinear_eq`](https://taucetiproject.org/docs/TauCeti/Algebra/Lie/HighestWeight/CentralCharacter/Surjective.html#TauCeti.exists_mem_pbwFiltration_hcProjectionLinear_eq)
-- [Source of `TauCeti.exists_mem_pbwFiltration_hcProjectionLinear_eq` in TauCeti/Algebra/Lie/HighestWeight/CentralCharacter/Surjective.lean](https://github.com/TauCetiProject/TauCeti/blob/a6027b1d24fcb935c53bd5b50d11b40991cda418/TauCeti/Algebra/Lie/HighestWeight/CentralCharacter/Surjective.lean#L130)
+- [Source of `TauCeti.exists_mem_pbwFiltration_hcProjectionLinear_eq` in TauCeti/Algebra/Lie/HighestWeight/CentralCharacter/Surjective.lean](https://github.com/TauCetiProject/TauCeti/blob/cd41bffcb343151b3e58c89392e206b11fe78c1c/TauCeti/Algebra/Lie/HighestWeight/CentralCharacter/Surjective.lean#L130)

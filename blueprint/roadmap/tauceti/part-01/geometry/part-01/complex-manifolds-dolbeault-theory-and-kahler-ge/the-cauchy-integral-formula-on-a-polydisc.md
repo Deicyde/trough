@@ -48,4 +48,4 @@ ContinuousOn.torusIntegral_prod_sub_inv_smul.{u_1} {E : Type u_1} [NormedAddComm
 ## Sources
 
 - [Tau Ceti documentation: `DifferentiableOn.torusIntegral_prod_sub_inv_smul`](https://taucetiproject.org/docs/TauCeti/Analysis/Complex/CauchyIntegralPolydisc.html#DifferentiableOn.torusIntegral_prod_sub_inv_smul)
-- [Source of `DifferentiableOn.torusIntegral_prod_sub_inv_smul` in TauCeti/Analysis/Complex/CauchyIntegralPolydisc.lean](https://github.com/TauCetiProject/TauCeti/blob/a6027b1d24fcb935c53bd5b50d11b40991cda418/TauCeti/Analysis/Complex/CauchyIntegralPolydisc.lean#L212)
+- [Source of `DifferentiableOn.torusIntegral_prod_sub_inv_smul` in TauCeti/Analysis/Complex/CauchyIntegralPolydisc.lean](https://github.com/TauCetiProject/TauCeti/blob/cd41bffcb343151b3e58c89392e206b11fe78c1c/TauCeti/Analysis/Complex/CauchyIntegralPolydisc.lean#L212)

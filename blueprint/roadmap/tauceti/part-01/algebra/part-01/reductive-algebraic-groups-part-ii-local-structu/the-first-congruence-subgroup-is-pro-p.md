@@ -15,8 +15,8 @@ topology, is pro-`p`: each of its quotients by an open normal subgroup is a `p`-
 ```lean
 TauCeti.HopfAlgebra.isProP_congruenceSubgroup.{u_1, u_2, u_3} {k : Type u_1} {H : Type u_2}
   {R : Type u_3} [CommSemiring k] [Semiring H] [HopfAlgebra k H] [CommRing R] [Algebra k R]
-  [TopologicalSpace R] [IsTopologicalRing R] [Algebra.FiniteType k H] {I : Ideal R} (hI : IsAdic I)
-  {p : ℕ} (hp : ↑p ∈ I) : TauCeti.IsProP p ↥(TauCeti.HopfAlgebra.congruenceSubgroup k H I)
+  [TopologicalSpace R] [Algebra.FiniteType k H] {I : Ideal R} (hI : IsAdic I) {p : ℕ}
+  (hp : ↑p ∈ I) : TauCeti.IsProP p ↥(TauCeti.HopfAlgebra.congruenceSubgroup k H I)
 ```
 
 ## Depends on
@@ -34,5 +34,5 @@ Formalized in Tau Ceti as [`TauCeti.HopfAlgebra.isProP_congruenceSubgroup`](http
 ## Sources
 
 - [Tau Ceti documentation: `TauCeti.HopfAlgebra.isProP_congruenceSubgroup`](https://taucetiproject.org/docs/TauCeti/Algebra/AlgebraicGroup/CongruenceSubgroup/ProP.html#TauCeti.HopfAlgebra.isProP_congruenceSubgroup)
-- [Source of `TauCeti.HopfAlgebra.isProP_congruenceSubgroup` in TauCeti/Algebra/AlgebraicGroup/CongruenceSubgroup/ProP.lean](https://github.com/TauCetiProject/TauCeti/blob/a6027b1d24fcb935c53bd5b50d11b40991cda418/TauCeti/Algebra/AlgebraicGroup/CongruenceSubgroup/ProP.lean#L106)
-- [Tau Ceti roadmap status: Reductive algebraic groups, part II — local structure and arithmetic models](https://github.com/TauCetiProject/TauCetiRoadmap/blob/9f7c032adaf1b838e8183d63ff3cfa886d061cb3/TauCetiRoadmap/ReductiveGroupsPartII/STATUS.md)
+- [Source of `TauCeti.HopfAlgebra.isProP_congruenceSubgroup` in TauCeti/Algebra/AlgebraicGroup/CongruenceSubgroup/ProP.lean](https://github.com/TauCetiProject/TauCeti/blob/cd41bffcb343151b3e58c89392e206b11fe78c1c/TauCeti/Algebra/AlgebraicGroup/CongruenceSubgroup/ProP.lean#L106)
+- [Tau Ceti roadmap status: Reductive algebraic groups, part II — local structure and arithmetic models](https://github.com/TauCetiProject/TauCetiRoadmap/blob/612845ab80fb9c2b9bee724a156756ee78031591/TauCetiRoadmap/ReductiveGroupsPartII/STATUS.md)

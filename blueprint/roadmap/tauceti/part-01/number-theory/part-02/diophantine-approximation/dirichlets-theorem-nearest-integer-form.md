@@ -42,8 +42,7 @@ Matrix.exists_int_abs_sum_mul_sub_le.{u_1, u_2} {ι : Type u_1} {κ : Type u_2} 
 **Dirichlet's theorem for one linear form, infinitely many solutions.** Formalized in Tau Ceti as [`TauCeti.dirichlet_linearForm_infinite`](https://taucetiproject.org/docs/TauCeti/NumberTheory/DiophantineApproximation/Dirichlet.html#TauCeti.dirichlet_linearForm_infinite).
 
 ```lean
-TauCeti.dirichlet_linearForm_infinite.{u_2} {κ : Type u_2} [Fintype κ] [Nonempty κ] (α : κ → ℝ)
-  (hα : ∀ (y : κ → ℤ), (∃ k, ∑ j, α j * ↑(y j) = ↑k) → y = 0) :
+TauCeti.dirichlet_linearForm_infinite.{u_2} {κ : Type u_2} [Fintype κ] [Nonempty κ] (α : κ → ℝ) :
   {p | p.2 ≠ 0 ∧ |∑ j, α j * ↑(p.2 j) - ↑p.1| ≤ ‖p.2‖ ^ (-↑(Fintype.card κ))}.Infinite
 ```
 
@@ -59,7 +58,7 @@ TauCeti.infinite_linearFormApproximations_of_lt_card.{u_1} {ι : Type u_1} [Fint
 
 ```lean
 Matrix.dirichlet_linearForms.{u_1, u_2} {ι : Type u_1} {κ : Type u_2} [Fintype ι] [Fintype κ]
-  [Nonempty ι] [Nonempty κ] (A : Matrix ι κ ℝ) {Q : ℝ} (hQ : 1 < Q) :
+  [Nonempty κ] (A : Matrix ι κ ℝ) {Q : ℝ} (hQ : 1 < Q) :
   ∃ y x,
     y ≠ 0 ∧
       (∀ (j : κ), |↑(y j)| ≤ Q) ∧
@@ -70,8 +69,7 @@ Matrix.dirichlet_linearForms.{u_1, u_2} {ι : Type u_1} {κ : Type u_2} [Fintype
 
 ```lean
 Matrix.dirichlet_linearForms_infinite.{u_1, u_2} {ι : Type u_1} {κ : Type u_2} [Fintype ι]
-  [Fintype κ] [Nonempty κ] (A : Matrix ι κ ℝ)
-  (hA : ∀ (y : κ → ℤ), (∀ (i : ι), ∃ k, ∑ j, A i j * ↑(y j) = ↑k) → y = 0) :
+  [Fintype κ] [Nonempty κ] (A : Matrix ι κ ℝ) :
   {p |
       p.1 ≠ 0 ∧
         ∀ (i : ι),
@@ -89,4 +87,4 @@ TauCeti.infinite_simultaneousApproximationDenominators_inv_card.{u_1} {ι : Type
 ## Sources
 
 - [Tau Ceti documentation: `Real.infinite_setOf_mul_abs_mul_sub_round_le_one`](https://taucetiproject.org/docs/TauCeti/NumberTheory/DiophantineApproximation/Dirichlet.html#Real.infinite_setOf_mul_abs_mul_sub_round_le_one)
-- [Source of `Real.infinite_setOf_mul_abs_mul_sub_round_le_one` in TauCeti/NumberTheory/DiophantineApproximation/Dirichlet.lean](https://github.com/TauCetiProject/TauCeti/blob/a6027b1d24fcb935c53bd5b50d11b40991cda418/TauCeti/NumberTheory/DiophantineApproximation/Dirichlet.lean#L228)
+- [Source of `Real.infinite_setOf_mul_abs_mul_sub_round_le_one` in TauCeti/NumberTheory/DiophantineApproximation/Dirichlet.lean](https://github.com/TauCetiProject/TauCeti/blob/cd41bffcb343151b3e58c89392e206b11fe78c1c/TauCeti/NumberTheory/DiophantineApproximation/Dirichlet.lean#L259)

@@ -47,7 +47,7 @@ TauCeti.SmoothEmbedding.exists_isClosedEmbedding_normalExp_norm_le_subset.{u_1, 
 ## Proof depends on
 
 - [The inverse function theorem for manifolds](../part-02/the-inverse-function-theorem-for-manifolds.md)
-- [The Koszul formula](../part-02/the-koszul-formula.md)
+- [The Koszul formula](../part-03/the-koszul-formula.md)
 
 ## Lean
 
@@ -56,4 +56,4 @@ Formalized in Tau Ceti as [`TauCeti.SmoothEmbedding.exists_isClosedEmbedding_nor
 ## Sources
 
 - [Tau Ceti documentation: `TauCeti.SmoothEmbedding.exists_isClosedEmbedding_normalExp_norm_le_subset`](https://taucetiproject.org/docs/TauCeti/Geometry/Manifold/TubularNeighborhood/Riemannian/Noncompact.html#TauCeti.SmoothEmbedding.exists_isClosedEmbedding_normalExp_norm_le_subset)
-- [Source of `TauCeti.SmoothEmbedding.exists_isClosedEmbedding_normalExp_norm_le_subset` in TauCeti/Geometry/Manifold/TubularNeighborhood/Riemannian/Noncompact.lean](https://github.com/TauCetiProject/TauCeti/blob/a6027b1d24fcb935c53bd5b50d11b40991cda418/TauCeti/Geometry/Manifold/TubularNeighborhood/Riemannian/Noncompact.lean#L107)
+- [Source of `TauCeti.SmoothEmbedding.exists_isClosedEmbedding_normalExp_norm_le_subset` in TauCeti/Geometry/Manifold/TubularNeighborhood/Riemannian/Noncompact.lean](https://github.com/TauCetiProject/TauCeti/blob/cd41bffcb343151b3e58c89392e206b11fe78c1c/TauCeti/Geometry/Manifold/TubularNeighborhood/Riemannian/Noncompact.lean#L107)

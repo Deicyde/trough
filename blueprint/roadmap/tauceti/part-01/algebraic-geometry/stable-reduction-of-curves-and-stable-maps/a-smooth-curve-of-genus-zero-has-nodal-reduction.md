@@ -44,7 +44,7 @@ TauCeti.HasNodalReduction.exists_finrank_le_two_of_genus_eq_zero.{u} {R K : Type
 - [Krull–Akizuki for Mathlib's `integralClosure`](../../ring-theory/part-02/other-results/part-02/krull-akizuki-for-mathlibs-integralclosure.md)
 - [Kummer's theorem (Stichtenoth, Corollary 3.3.8)](../../field-theory/function-field/part-01/kummers-theorem-stichtenoth-corollary-3-3-8.md)
 - [Riemann's theorem](../../field-theory/function-field/part-02/riemanns-theorem.md)
-- [The Riemann–Roch theorem (Stichtenoth, Theorem 1.5.15), for the divisor `(ω)` itself](../algebraic-curves-function-fields-divisors-and-ri/the-riemann-roch-theorem-stichtenoth-theorem-1-5.md)
+- [The Riemann–Roch theorem (Stichtenoth, Theorem 1.5.15), for the divisor `(ω)` itself](../../field-theory/algebraic-curves-function-fields-divisors-and-ri/the-riemann-roch-theorem-stichtenoth-theorem-1-5.md)
 - [Serre's theorem (`TauCeti.IsRegularLocalRing.of_hasProjectiveDimensionLE`)](../../ring-theory/part-01/purity-of-the-branch-locus/serres-theorem-tauceti-isregularlocalring-of-has.md)
 - [Serre's vanishing theorem on affine opens](../other-results/serres-vanishing-theorem-on-affine-opens.md)
 - [TauCeti.AlgebraicGeometry.FiniteLocallyFreeSheaf](../algebraic-vector-bundles/tauceti-algebraicgeometry-finitelocallyfreesheaf-2.md)
@@ -58,5 +58,5 @@ Formalized in Tau Ceti as [`TauCeti.HasNodalReduction.exists_finrank_le_two_of_g
 ## Sources
 
 - [Tau Ceti documentation: `TauCeti.HasNodalReduction.exists_finrank_le_two_of_genus_eq_zero`](https://taucetiproject.org/docs/TauCeti/AlgebraicGeometry/Curves/StableReduction/GenusZero.html#TauCeti.HasNodalReduction.exists_finrank_le_two_of_genus_eq_zero)
-- [Source of `TauCeti.HasNodalReduction.exists_finrank_le_two_of_genus_eq_zero` in TauCeti/AlgebraicGeometry/Curves/StableReduction/GenusZero.lean](https://github.com/TauCetiProject/TauCeti/blob/a6027b1d24fcb935c53bd5b50d11b40991cda418/TauCeti/AlgebraicGeometry/Curves/StableReduction/GenusZero.lean#L93)
-- [Tau Ceti roadmap status: Stable reduction of curves and stable maps](https://github.com/TauCetiProject/TauCetiRoadmap/blob/9f7c032adaf1b838e8183d63ff3cfa886d061cb3/TauCetiRoadmap/StableReduction/STATUS.md)
+- [Source of `TauCeti.HasNodalReduction.exists_finrank_le_two_of_genus_eq_zero` in TauCeti/AlgebraicGeometry/Curves/StableReduction/GenusZero.lean](https://github.com/TauCetiProject/TauCeti/blob/cd41bffcb343151b3e58c89392e206b11fe78c1c/TauCeti/AlgebraicGeometry/Curves/StableReduction/GenusZero.lean#L136)
+- [Tau Ceti roadmap status: Stable reduction of curves and stable maps](https://github.com/TauCetiProject/TauCetiRoadmap/blob/612845ab80fb9c2b9bee724a156756ee78031591/TauCetiRoadmap/StableReduction/STATUS.md)

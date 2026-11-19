@@ -31,4 +31,4 @@ Formalized in Tau Ceti as [`TauCeti.AdditiveGroup.exists_ne_zero_coact_eq_tmul_o
 ## Sources
 
 - [Tau Ceti documentation: `TauCeti.AdditiveGroup.exists_ne_zero_coact_eq_tmul_one`](https://taucetiproject.org/docs/TauCeti/Algebra/AlgebraicGroup/AdditiveGroup/Unipotent.html#TauCeti.AdditiveGroup.exists_ne_zero_coact_eq_tmul_one)
-- [Source of `TauCeti.AdditiveGroup.exists_ne_zero_coact_eq_tmul_one` in TauCeti/Algebra/AlgebraicGroup/AdditiveGroup/Unipotent.lean](https://github.com/TauCetiProject/TauCeti/blob/a6027b1d24fcb935c53bd5b50d11b40991cda418/TauCeti/Algebra/AlgebraicGroup/AdditiveGroup/Unipotent.lean#L299)
+- [Source of `TauCeti.AdditiveGroup.exists_ne_zero_coact_eq_tmul_one` in TauCeti/Algebra/AlgebraicGroup/AdditiveGroup/Unipotent.lean](https://github.com/TauCetiProject/TauCeti/blob/cd41bffcb343151b3e58c89392e206b11fe78c1c/TauCeti/Algebra/AlgebraicGroup/AdditiveGroup/Unipotent.lean#L299)

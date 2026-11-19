@@ -1,7 +1,7 @@
 ---
 declaration: theorem
 origin: cited
-lean: TauCeti.toReal_transportCost_eq_sSup, TauCeti.isLUB_kantorovichDualValue_integrable, TauCeti.isLUB_ofReal_kantorovichDualValue_continuous_of_lowerSemicontinuous, TauCeti.isLUB_ofReal_kantorovichDualValue_integrable_of_lowerSemicontinuous, TauCeti.transportCost_eq_ofReal_sSup, TauCeti.isLUB_kantorovichDualValue_continuous, TauCeti.isGreatest_kantorovichDualValue_integrable
+lean: TauCeti.toReal_transportCost_eq_sSup, TauCeti.isLUB_kantorovichDualValue_integrable, TauCeti.isLUB_ofReal_kantorovichDualValue_bounded_measurable_of_le, TauCeti.isLUB_ofReal_kantorovichDualValue_integrable_of_measurable_of_le, TauCeti.isLUB_ofReal_kantorovichDualValue_continuous_of_lowerSemicontinuous, TauCeti.isLUB_ofReal_kantorovichDualValue_integrable_of_lowerSemicontinuous, TauCeti.transportCost_eq_ofReal_sSup, TauCeti.isLUB_kantorovichDualValue_continuous, TauCeti.isGreatest_kantorovichDualValue_integrable
 statement: formalized
 proof: formalized
 ---
@@ -33,6 +33,7 @@ Its statement uses no other declaration mapped here.
 ## Proof depends on
 
 - [Approximate Kantorovich duality on compact spaces](../part-01/approximate-kantorovich-duality-on-compact-space.md)
+- [Choquet's capacitability theorem](../../constructions/choquets-capacitability-theorem.md)
 - [The theorem of Rockafellar and Rüschendorf](the-theorem-of-rockafellar-and-ruschendorf.md)
 
 ## Lean
@@ -56,6 +57,46 @@ TauCeti.isLUB_kantorovichDualValue_integrable.{u, v} {X : Type u} {Y : Type v} [
           MeasureTheory.Integrable ψ ν ∧
             (∀ (x : X) (y : Y), φ x + ψ y ≤ c (x, y)) ∧ TauCeti.kantorovichDualValue μ ν φ ψ = r}
     (TauCeti.transportCost (fun z => ENNReal.ofReal (c z)) μ ν).toReal
+```
+
+**Strong Kantorovich duality for bounded Borel costs over bounded measurable potentials.** Formalized in Tau Ceti as [`TauCeti.isLUB_ofReal_kantorovichDualValue_bounded_measurable_of_le`](https://taucetiproject.org/docs/TauCeti/MeasureTheory/OptimalTransport/Duality/Borel.html#TauCeti.isLUB_ofReal_kantorovichDualValue_bounded_measurable_of_le).
+
+```lean
+TauCeti.isLUB_ofReal_kantorovichDualValue_bounded_measurable_of_le.{u_1, u_2} {X : Type u_1}
+  {Y : Type u_2} [TopologicalSpace X] [PolishSpace X] [MeasurableSpace X] [BorelSpace X]
+  [TopologicalSpace Y] [PolishSpace Y] [MeasurableSpace Y] [BorelSpace Y]
+  {μ : MeasureTheory.Measure X} {ν : MeasureTheory.Measure Y} [MeasureTheory.IsProbabilityMeasure μ]
+  [MeasureTheory.IsProbabilityMeasure ν] {c : X × Y → ENNReal} {B : NNReal} (hc : Measurable c)
+  (hB : ∀ (z : X × Y), c z ≤ ↑B) :
+  IsLUB
+    {r |
+      ∃ φ ψ,
+        Measurable φ ∧
+          Measurable ψ ∧
+            (∃ M, ∀ (x : X), |φ x| ≤ M) ∧
+              (∃ M, ∀ (y : Y), |ψ y| ≤ M) ∧
+                TauCeti.DualFeasible (fun z => ↑(c z)) φ ψ ∧
+                  ENNReal.ofReal (TauCeti.kantorovichDualValue μ ν φ ψ) = r}
+    (TauCeti.transportCost c μ ν)
+```
+
+**Strong Kantorovich duality for bounded Borel costs over integrable potentials.** Formalized in Tau Ceti as [`TauCeti.isLUB_ofReal_kantorovichDualValue_integrable_of_measurable_of_le`](https://taucetiproject.org/docs/TauCeti/MeasureTheory/OptimalTransport/Duality/Borel.html#TauCeti.isLUB_ofReal_kantorovichDualValue_integrable_of_measurable_of_le).
+
+```lean
+TauCeti.isLUB_ofReal_kantorovichDualValue_integrable_of_measurable_of_le.{u_1, u_2} {X : Type u_1}
+  {Y : Type u_2} [TopologicalSpace X] [PolishSpace X] [MeasurableSpace X] [BorelSpace X]
+  [TopologicalSpace Y] [PolishSpace Y] [MeasurableSpace Y] [BorelSpace Y]
+  {μ : MeasureTheory.Measure X} {ν : MeasureTheory.Measure Y} [MeasureTheory.IsProbabilityMeasure μ]
+  [MeasureTheory.IsProbabilityMeasure ν] {c : X × Y → ENNReal} {B : NNReal} (hc : Measurable c)
+  (hB : ∀ (z : X × Y), c z ≤ ↑B) :
+  IsLUB
+    {r |
+      ∃ φ ψ,
+        MeasureTheory.Integrable φ μ ∧
+          MeasureTheory.Integrable ψ ν ∧
+            TauCeti.DualFeasible (fun z => ↑(c z)) φ ψ ∧
+              ENNReal.ofReal (TauCeti.kantorovichDualValue μ ν φ ψ) = r}
+    (TauCeti.transportCost c μ ν)
 ```
 
 **Strong Kantorovich duality for lower-semicontinuous costs on compact metrizable spaces.** Formalized in Tau Ceti as [`TauCeti.isLUB_ofReal_kantorovichDualValue_continuous_of_lowerSemicontinuous`](https://taucetiproject.org/docs/TauCeti/MeasureTheory/OptimalTransport/Duality/LowerSemicontinuous.html#TauCeti.isLUB_ofReal_kantorovichDualValue_continuous_of_lowerSemicontinuous).
@@ -152,4 +193,4 @@ TauCeti.isGreatest_kantorovichDualValue_integrable.{u_1, u_2} {X : Type u_1} {Y 
 ## Sources
 
 - [Tau Ceti documentation: `TauCeti.toReal_transportCost_eq_sSup`](https://taucetiproject.org/docs/TauCeti/MeasureTheory/OptimalTransport/Duality/Compact.html#TauCeti.toReal_transportCost_eq_sSup)
-- [Source of `TauCeti.toReal_transportCost_eq_sSup` in TauCeti/MeasureTheory/OptimalTransport/Duality/Compact.lean](https://github.com/TauCetiProject/TauCeti/blob/a6027b1d24fcb935c53bd5b50d11b40991cda418/TauCeti/MeasureTheory/OptimalTransport/Duality/Compact.lean#L428)
+- [Source of `TauCeti.toReal_transportCost_eq_sSup` in TauCeti/MeasureTheory/OptimalTransport/Duality/Compact.lean](https://github.com/TauCetiProject/TauCeti/blob/cd41bffcb343151b3e58c89392e206b11fe78c1c/TauCeti/MeasureTheory/OptimalTransport/Duality/Compact.lean#L424)

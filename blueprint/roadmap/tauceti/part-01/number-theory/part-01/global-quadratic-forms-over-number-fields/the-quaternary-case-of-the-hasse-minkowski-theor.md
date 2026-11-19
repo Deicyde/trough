@@ -60,5 +60,5 @@ QuadraticForm.not_anisotropic_of_isLocallyIsotropic_quaternary_of_discr_eq_zero.
 ## Sources
 
 - [Tau Ceti documentation: `QuadraticForm.not_anisotropic_of_isLocallyIsotropic_quaternary`](https://taucetiproject.org/docs/TauCeti/NumberTheory/QuadraticForm/Global/Quaternary.html#QuadraticForm.not_anisotropic_of_isLocallyIsotropic_quaternary)
-- [Source of `QuadraticForm.not_anisotropic_of_isLocallyIsotropic_quaternary` in TauCeti/NumberTheory/QuadraticForm/Global/Quaternary.lean](https://github.com/TauCetiProject/TauCeti/blob/a6027b1d24fcb935c53bd5b50d11b40991cda418/TauCeti/NumberTheory/QuadraticForm/Global/Quaternary.lean#L129)
-- [Tau Ceti roadmap status: Global quadratic forms over number fields](https://github.com/TauCetiProject/TauCetiRoadmap/blob/9f7c032adaf1b838e8183d63ff3cfa886d061cb3/TauCetiRoadmap/GlobalQuadraticForms/STATUS.md)
+- [Source of `QuadraticForm.not_anisotropic_of_isLocallyIsotropic_quaternary` in TauCeti/NumberTheory/QuadraticForm/Global/Quaternary.lean](https://github.com/TauCetiProject/TauCeti/blob/cd41bffcb343151b3e58c89392e206b11fe78c1c/TauCeti/NumberTheory/QuadraticForm/Global/Quaternary.lean#L129)
+- [Tau Ceti roadmap status: Global quadratic forms over number fields](https://github.com/TauCetiProject/TauCetiRoadmap/blob/612845ab80fb9c2b9bee724a156756ee78031591/TauCetiRoadmap/GlobalQuadraticForms/STATUS.md)

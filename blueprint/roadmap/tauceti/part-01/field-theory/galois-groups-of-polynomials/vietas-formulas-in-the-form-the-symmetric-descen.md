@@ -24,7 +24,7 @@ Its statement uses no other declaration mapped here.
 
 ## Proof depends on
 
-- [Vieta's formulas on the symmetric power](../../ring-theory/part-01/polynomial/vietas-formulas-on-the-symmetric-power.md)
+- [Vieta's formulas on the symmetric power](../../ring-theory/part-02/polynomial/vietas-formulas-on-the-symmetric-power.md)
 
 ## Lean
 
@@ -33,4 +33,4 @@ Formalized in Tau Ceti as [`TauCeti.vietaHom_eq_comp_esymmSubst`](https://taucet
 ## Sources
 
 - [Tau Ceti documentation: `TauCeti.vietaHom_eq_comp_esymmSubst`](https://taucetiproject.org/docs/TauCeti/FieldTheory/GaloisGroups/Resolvent/Specialization.html#TauCeti.vietaHom_eq_comp_esymmSubst)
-- [Source of `TauCeti.vietaHom_eq_comp_esymmSubst` in TauCeti/FieldTheory/GaloisGroups/Resolvent/Specialization.lean](https://github.com/TauCetiProject/TauCeti/blob/a6027b1d24fcb935c53bd5b50d11b40991cda418/TauCeti/FieldTheory/GaloisGroups/Resolvent/Specialization.lean#L175)
+- [Source of `TauCeti.vietaHom_eq_comp_esymmSubst` in TauCeti/FieldTheory/GaloisGroups/Resolvent/Specialization.lean](https://github.com/TauCetiProject/TauCeti/blob/cd41bffcb343151b3e58c89392e206b11fe78c1c/TauCeti/FieldTheory/GaloisGroups/Resolvent/Specialization.lean#L175)

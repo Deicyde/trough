@@ -54,4 +54,4 @@ TauCeti.Place.exists_forall_mem_valuation_sub_le_and_forall_mem_integers.{u_1, u
 ## Sources
 
 - [Tau Ceti documentation: `TauCeti.Place.exists_forall_mem_ord_sub_eq_and_forall_mem_integers`](https://taucetiproject.org/docs/TauCeti/FieldTheory/FunctionField/Consequences/StrongApproximation.html#TauCeti.Place.exists_forall_mem_ord_sub_eq_and_forall_mem_integers)
-- [Source of `TauCeti.Place.exists_forall_mem_ord_sub_eq_and_forall_mem_integers` in TauCeti/FieldTheory/FunctionField/Consequences/StrongApproximation.lean](https://github.com/TauCetiProject/TauCeti/blob/a6027b1d24fcb935c53bd5b50d11b40991cda418/TauCeti/FieldTheory/FunctionField/Consequences/StrongApproximation.lean#L128)
+- [Source of `TauCeti.Place.exists_forall_mem_ord_sub_eq_and_forall_mem_integers` in TauCeti/FieldTheory/FunctionField/Consequences/StrongApproximation.lean](https://github.com/TauCetiProject/TauCeti/blob/cd41bffcb343151b3e58c89392e206b11fe78c1c/TauCeti/FieldTheory/FunctionField/Consequences/StrongApproximation.lean#L128)

@@ -25,11 +25,11 @@ Representation.symmetricAlgebraInvariants_eq_adjoin_homogeneous.{u_1, u_2, u_3} 
 
 ## Depends on
 
-- [Representation.symmetricAlgebraInvariants](../finite-reflection-invariants-degrees-and-weyl-ex/representation-symmetricalgebrainvariants.md)
+Its statement uses no other declaration mapped here.
 
 ## Proof depends on
 
-- [Noether's degree bound](../finite-reflection-invariants-degrees-and-weyl-ex/noethers-degree-bound.md)
+- [Noether's degree bound](../../ring-theory/part-01/invariant/noethers-degree-bound.md)
 
 ## Lean
 
@@ -38,4 +38,4 @@ Formalized in Tau Ceti as [`Representation.symmetricAlgebraInvariants_eq_adjoin_
 ## Sources
 
 - [Tau Ceti documentation: `Representation.symmetricAlgebraInvariants_eq_adjoin_homogeneous`](https://taucetiproject.org/docs/TauCeti/RepresentationTheory/SymmetricAlgebra/FiniteType.html#Representation.symmetricAlgebraInvariants_eq_adjoin_homogeneous)
-- [Source of `Representation.symmetricAlgebraInvariants_eq_adjoin_homogeneous` in TauCeti/RepresentationTheory/SymmetricAlgebra/FiniteType.lean](https://github.com/TauCetiProject/TauCeti/blob/a6027b1d24fcb935c53bd5b50d11b40991cda418/TauCeti/RepresentationTheory/SymmetricAlgebra/FiniteType.lean#L132)
+- [Source of `Representation.symmetricAlgebraInvariants_eq_adjoin_homogeneous` in TauCeti/RepresentationTheory/SymmetricAlgebra/FiniteType.lean](https://github.com/TauCetiProject/TauCeti/blob/cd41bffcb343151b3e58c89392e206b11fe78c1c/TauCeti/RepresentationTheory/SymmetricAlgebra/FiniteType.lean#L132)

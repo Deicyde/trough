@@ -29,7 +29,7 @@ Its statement uses no other declaration mapped here.
 
 ## Proof depends on
 
-- [The Krull-Schmidt theorem with no ambient object](../../algebra/part-01/category/the-krull-schmidt-theorem-with-no-ambient-object.md)
+- [The Krull-Schmidt theorem with no ambient object](../../algebra/part-02/category/the-krull-schmidt-theorem-with-no-ambient-object.md)
 
 ## Lean
 
@@ -50,4 +50,4 @@ TauCeti.QuiverRep.exists_equiv_iso_of_biproduct_iso.{u, v, w, t} {k : Type u} {Q
 ## Sources
 
 - [Tau Ceti documentation: `TauCeti.QuiverRep.exists_equiv_iso_of_iso_biproduct`](https://taucetiproject.org/docs/TauCeti/RepresentationTheory/Quiver/Representation/KrullSchmidt.html#TauCeti.QuiverRep.exists_equiv_iso_of_iso_biproduct)
-- [Source of `TauCeti.QuiverRep.exists_equiv_iso_of_iso_biproduct` in TauCeti/RepresentationTheory/Quiver/Representation/KrullSchmidt.lean](https://github.com/TauCetiProject/TauCeti/blob/a6027b1d24fcb935c53bd5b50d11b40991cda418/TauCeti/RepresentationTheory/Quiver/Representation/KrullSchmidt.lean#L107)
+- [Source of `TauCeti.QuiverRep.exists_equiv_iso_of_iso_biproduct` in TauCeti/RepresentationTheory/Quiver/Representation/KrullSchmidt.lean](https://github.com/TauCetiProject/TauCeti/blob/cd41bffcb343151b3e58c89392e206b11fe78c1c/TauCeti/RepresentationTheory/Quiver/Representation/KrullSchmidt.lean#L107)

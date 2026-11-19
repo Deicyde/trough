@@ -33,7 +33,7 @@ Its statement uses no other declaration mapped here.
 - [Hilbert's Theorem 90 for cyclic extensions](../../../field-theory/galois/hilberts-theorem-90-for-cyclic-extensions.md)
 - [TauCeti.algebraicExtensionNormedField](../../part-01/local-fields-and-ramification/tauceti-algebraicextensionnormedfield.md)
 - [TauCeti.LocalFieldsRamification.upperJump_iff_exists_isCyclic_intermediateField](../../part-01/local-fields-and-ramification/tauceti-localfieldsramification-upperjump-iff-ex.md)
-- [The third isomorphism theorem for coset spaces](../../../group-theory/other-results/the-third-isomorphism-theorem-for-coset-spaces.md)
+- [The third isomorphism theorem for coset spaces](../../../group-theory/other-results/part-02/the-third-isomorphism-theorem-for-coset-spaces.md)
 
 ## Lean
 
@@ -79,4 +79,4 @@ TauCeti.LocalFieldsRamification.UpperJump.exists_eq_intCast_of_exponent_prime.{u
 ## Sources
 
 - [Tau Ceti documentation: `TauCeti.LocalFieldsRamification.UpperJump.exists_eq_intCast_of_finrank_prime`](https://taucetiproject.org/docs/TauCeti/NumberTheory/LocalField/Herbrand/HasseArf/PrimeDegree.html#TauCeti.LocalFieldsRamification.UpperJump.exists_eq_intCast_of_finrank_prime)
-- [Source of `TauCeti.LocalFieldsRamification.UpperJump.exists_eq_intCast_of_finrank_prime` in TauCeti/NumberTheory/LocalField/Herbrand/HasseArf/PrimeDegree.lean](https://github.com/TauCetiProject/TauCeti/blob/a6027b1d24fcb935c53bd5b50d11b40991cda418/TauCeti/NumberTheory/LocalField/Herbrand/HasseArf/PrimeDegree.lean#L127)
+- [Source of `TauCeti.LocalFieldsRamification.UpperJump.exists_eq_intCast_of_finrank_prime` in TauCeti/NumberTheory/LocalField/Herbrand/HasseArf/PrimeDegree.lean](https://github.com/TauCetiProject/TauCeti/blob/cd41bffcb343151b3e58c89392e206b11fe78c1c/TauCeti/NumberTheory/LocalField/Herbrand/HasseArf/PrimeDegree.lean#L127)

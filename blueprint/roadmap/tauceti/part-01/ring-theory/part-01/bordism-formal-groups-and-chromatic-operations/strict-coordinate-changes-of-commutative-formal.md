@@ -29,5 +29,5 @@ Formalized in Tau Ceti as [`TauCeti.LazardRing.coordinateChangeLift`](https://ta
 ## Sources
 
 - [Tau Ceti documentation: `TauCeti.LazardRing.coordinateChangeLift`](https://taucetiproject.org/docs/TauCeti/RingTheory/FormalGroup/CoordinateChange/Lazard.html#TauCeti.LazardRing.coordinateChangeLift)
-- [Source of `TauCeti.LazardRing.coordinateChangeLift` in TauCeti/RingTheory/FormalGroup/CoordinateChange/Lazard.lean](https://github.com/TauCetiProject/TauCeti/blob/a6027b1d24fcb935c53bd5b50d11b40991cda418/TauCeti/RingTheory/FormalGroup/CoordinateChange/Lazard.lean#L73)
-- [Tau Ceti roadmap status: Bordism, formal groups and chromatic operations](https://github.com/TauCetiProject/TauCetiRoadmap/blob/9f7c032adaf1b838e8183d63ff3cfa886d061cb3/TauCetiRoadmap/BordismFormalGroups/STATUS.md)
+- [Source of `TauCeti.LazardRing.coordinateChangeLift` in TauCeti/RingTheory/FormalGroup/CoordinateChange/Lazard.lean](https://github.com/TauCetiProject/TauCeti/blob/cd41bffcb343151b3e58c89392e206b11fe78c1c/TauCeti/RingTheory/FormalGroup/CoordinateChange/Lazard.lean#L73)
+- [Tau Ceti roadmap status: Bordism, formal groups and chromatic operations](https://github.com/TauCetiProject/TauCetiRoadmap/blob/612845ab80fb9c2b9bee724a156756ee78031591/TauCetiRoadmap/BordismFormalGroups/STATUS.md)

@@ -30,5 +30,5 @@ Formalized in Tau Ceti as [`Bundle.ContMDiffRiemannianMetric.chartCkTopology`](h
 ## Sources
 
 - [Tau Ceti documentation: `Bundle.ContMDiffRiemannianMetric.chartCkTopology`](https://taucetiproject.org/docs/TauCeti/Geometry/Manifold/VectorBundle/Riemannian/Topology.html#Bundle.ContMDiffRiemannianMetric.chartCkTopology)
-- [Source of `Bundle.ContMDiffRiemannianMetric.chartCkTopology` in TauCeti/Geometry/Manifold/VectorBundle/Riemannian/Topology.lean](https://github.com/TauCetiProject/TauCeti/blob/a6027b1d24fcb935c53bd5b50d11b40991cda418/TauCeti/Geometry/Manifold/VectorBundle/Riemannian/Topology.lean#L108)
-- [Tau Ceti roadmap status: Positive scalar curvature, surgery and bordism](https://github.com/TauCetiProject/TauCetiRoadmap/blob/9f7c032adaf1b838e8183d63ff3cfa886d061cb3/TauCetiRoadmap/PositiveScalarCurvature/STATUS.md)
+- [Source of `Bundle.ContMDiffRiemannianMetric.chartCkTopology` in TauCeti/Geometry/Manifold/VectorBundle/Riemannian/Topology.lean](https://github.com/TauCetiProject/TauCeti/blob/cd41bffcb343151b3e58c89392e206b11fe78c1c/TauCeti/Geometry/Manifold/VectorBundle/Riemannian/Topology.lean#L108)
+- [Tau Ceti roadmap status: Positive scalar curvature, surgery and bordism](https://github.com/TauCetiProject/TauCetiRoadmap/blob/612845ab80fb9c2b9bee724a156756ee78031591/TauCetiRoadmap/PositiveScalarCurvature/STATUS.md)

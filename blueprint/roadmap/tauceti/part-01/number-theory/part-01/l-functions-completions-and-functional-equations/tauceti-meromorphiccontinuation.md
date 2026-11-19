@@ -27,5 +27,5 @@ Formalized in Tau Ceti as [`TauCeti.meromorphicContinuation`](https://taucetipro
 ## Sources
 
 - [Tau Ceti documentation: `TauCeti.meromorphicContinuation`](https://taucetiproject.org/docs/TauCeti/Analysis/Meromorphic/Continuation.html#TauCeti.meromorphicContinuation)
-- [Source of `TauCeti.meromorphicContinuation` in TauCeti/Analysis/Meromorphic/Continuation.lean](https://github.com/TauCetiProject/TauCeti/blob/a6027b1d24fcb935c53bd5b50d11b40991cda418/TauCeti/Analysis/Meromorphic/Continuation.lean#L69)
-- [Tau Ceti roadmap status: L-functions — completions and functional equations](https://github.com/TauCetiProject/TauCetiRoadmap/blob/9f7c032adaf1b838e8183d63ff3cfa886d061cb3/TauCetiRoadmap/LFunctions/STATUS.md)
+- [Source of `TauCeti.meromorphicContinuation` in TauCeti/Analysis/Meromorphic/Continuation.lean](https://github.com/TauCetiProject/TauCeti/blob/cd41bffcb343151b3e58c89392e206b11fe78c1c/TauCeti/Analysis/Meromorphic/Continuation.lean#L69)
+- [Tau Ceti roadmap status: L-functions — completions and functional equations](https://github.com/TauCetiProject/TauCetiRoadmap/blob/612845ab80fb9c2b9bee724a156756ee78031591/TauCetiRoadmap/LFunctions/STATUS.md)

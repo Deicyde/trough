@@ -30,4 +30,4 @@ Formalized in Tau Ceti as [`TauCeti.isIso_reducedMayerVietorisδ_sphere`](https:
 ## Sources
 
 - [Tau Ceti documentation: `TauCeti.isIso_reducedMayerVietorisδ_sphere`](https://taucetiproject.org/docs/TauCeti/AlgebraicTopology/Singular/Sphere.html#TauCeti.isIso_reducedMayerVietoris%CE%B4_sphere)
-- [Source of `TauCeti.isIso_reducedMayerVietorisδ_sphere` in TauCeti/AlgebraicTopology/Singular/Sphere.lean](https://github.com/TauCetiProject/TauCeti/blob/a6027b1d24fcb935c53bd5b50d11b40991cda418/TauCeti/AlgebraicTopology/Singular/Sphere.lean#L162)
+- [Source of `TauCeti.isIso_reducedMayerVietorisδ_sphere` in TauCeti/AlgebraicTopology/Singular/Sphere.lean](https://github.com/TauCetiProject/TauCeti/blob/cd41bffcb343151b3e58c89392e206b11fe78c1c/TauCeti/AlgebraicTopology/Singular/Sphere.lean#L162)

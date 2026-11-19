@@ -25,8 +25,10 @@ Its statement uses no other declaration mapped here.
 
 ## Proof depends on
 
-- [Boundary data for all primes of a number field](boundary-data-for-all-primes-of-a-number-field.md)
+- [The analytic Euler product](the-analytic-euler-product.md)
+- [Boundary data for the prime Dirichlet series of `S`](boundary-data-for-the-prime-dirichlet-series-of.md)
 - [The conditional prime ideal theorem](the-conditional-prime-ideal-theorem.md)
+- [The Dedekind zeta function has no zeros on the line `Re s = 1` away from its pole](the-dedekind-zeta-function-has-no-zeros-on-the-l.md)
 
 ## Lean
 
@@ -44,5 +46,5 @@ TauCeti.primeCount_univ_isEquivalent_div_log.{u_1} (K : Type u_1) [Field K] [Num
 ## Sources
 
 - [Tau Ceti documentation: `TauCeti.primeIdealTheorem`](https://taucetiproject.org/docs/TauCeti/NumberTheory/ArithmeticDirichletSeries/Prime/PrimeIdealTheorem.html#TauCeti.primeIdealTheorem)
-- [Source of `TauCeti.primeIdealTheorem` in TauCeti/NumberTheory/ArithmeticDirichletSeries/Prime/PrimeIdealTheorem.lean](https://github.com/TauCetiProject/TauCeti/blob/a6027b1d24fcb935c53bd5b50d11b40991cda418/TauCeti/NumberTheory/ArithmeticDirichletSeries/Prime/PrimeIdealTheorem.lean#L36)
-- [Tau Ceti roadmap status: Arithmetic Dirichlet series and Tauberian methods](https://github.com/TauCetiProject/TauCetiRoadmap/blob/9f7c032adaf1b838e8183d63ff3cfa886d061cb3/Completed/ArithmeticDirichletSeries/STATUS.md)
+- [Source of `TauCeti.primeIdealTheorem` in TauCeti/NumberTheory/ArithmeticDirichletSeries/Prime/PrimeIdealTheorem.lean](https://github.com/TauCetiProject/TauCeti/blob/cd41bffcb343151b3e58c89392e206b11fe78c1c/TauCeti/NumberTheory/ArithmeticDirichletSeries/Prime/PrimeIdealTheorem.lean#L36)
+- [Tau Ceti roadmap status: Arithmetic Dirichlet series and Tauberian methods](https://github.com/TauCetiProject/TauCetiRoadmap/blob/612845ab80fb9c2b9bee724a156756ee78031591/Completed/ArithmeticDirichletSeries/STATUS.md)

@@ -24,7 +24,7 @@ WeierstrassCurve.bsdQuotient (E : WeierstrassCurve ℚ) [E.IsElliptic] [Finite �
 
 ## Depends on
 
-- [The real period of an elliptic curve over `ℚ`](the-real-period-of-an-elliptic-curve-over-q.md)
+Its statement uses no other declaration mapped here.
 
 ## Proof depends on
 
@@ -37,5 +37,5 @@ Formalized in Tau Ceti as [`WeierstrassCurve.bsdQuotient`](https://taucetiprojec
 ## Sources
 
 - [Tau Ceti documentation: `WeierstrassCurve.bsdQuotient`](https://taucetiproject.org/docs/TauCeti/AlgebraicGeometry/EllipticCurve/BirchSwinnertonDyer/Quotient.html#WeierstrassCurve.bsdQuotient)
-- [Source of `WeierstrassCurve.bsdQuotient` in TauCeti/AlgebraicGeometry/EllipticCurve/BirchSwinnertonDyer/Quotient.lean](https://github.com/TauCetiProject/TauCeti/blob/a6027b1d24fcb935c53bd5b50d11b40991cda418/TauCeti/AlgebraicGeometry/EllipticCurve/BirchSwinnertonDyer/Quotient.lean#L73)
-- [Tau Ceti roadmap status: Elliptic curves](https://github.com/TauCetiProject/TauCetiRoadmap/blob/9f7c032adaf1b838e8183d63ff3cfa886d061cb3/TauCetiRoadmap/EllipticCurves/STATUS.md)
+- [Source of `WeierstrassCurve.bsdQuotient` in TauCeti/AlgebraicGeometry/EllipticCurve/BirchSwinnertonDyer/Quotient.lean](https://github.com/TauCetiProject/TauCeti/blob/cd41bffcb343151b3e58c89392e206b11fe78c1c/TauCeti/AlgebraicGeometry/EllipticCurve/BirchSwinnertonDyer/Quotient.lean#L73)
+- [Tau Ceti roadmap status: Elliptic curves](https://github.com/TauCetiProject/TauCetiRoadmap/blob/612845ab80fb9c2b9bee724a156756ee78031591/TauCetiRoadmap/EllipticCurves/STATUS.md)

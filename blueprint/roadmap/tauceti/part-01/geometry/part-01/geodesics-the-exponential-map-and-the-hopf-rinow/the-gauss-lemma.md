@@ -29,7 +29,7 @@ TauCeti.Manifold.inner_mfderiv_riemannianExp_radial.{u_1, u_2, u_3} {E : Type u_
 
 ## Proof depends on
 
-- [The Koszul formula](../../part-02/manifold/part-02/the-koszul-formula.md)
+- [The Koszul formula](../../part-02/manifold/part-03/the-koszul-formula.md)
 
 ## Lean
 
@@ -51,5 +51,5 @@ TauCeti.Manifold.inner_mfderiv_riemannianExp_model_space.{u_1} {F : Type u_1} [N
 ## Sources
 
 - [Tau Ceti documentation: `TauCeti.Manifold.inner_mfderiv_riemannianExp_radial`](https://taucetiproject.org/docs/TauCeti/Geometry/Manifold/Riemannian/Geodesic/Gauss/Basic.html#TauCeti.Manifold.inner_mfderiv_riemannianExp_radial)
-- [Source of `TauCeti.Manifold.inner_mfderiv_riemannianExp_radial` in TauCeti/Geometry/Manifold/Riemannian/Geodesic/Gauss/Basic.lean](https://github.com/TauCetiProject/TauCeti/blob/a6027b1d24fcb935c53bd5b50d11b40991cda418/TauCeti/Geometry/Manifold/Riemannian/Geodesic/Gauss/Basic.lean#L145)
-- [Tau Ceti roadmap status: Geodesics, the exponential map, and the Hopf–Rinow theorem](https://github.com/TauCetiProject/TauCetiRoadmap/blob/9f7c032adaf1b838e8183d63ff3cfa886d061cb3/Completed/HopfRinow/STATUS.md)
+- [Source of `TauCeti.Manifold.inner_mfderiv_riemannianExp_radial` in TauCeti/Geometry/Manifold/Riemannian/Geodesic/Gauss/Basic.lean](https://github.com/TauCetiProject/TauCeti/blob/cd41bffcb343151b3e58c89392e206b11fe78c1c/TauCeti/Geometry/Manifold/Riemannian/Geodesic/Gauss/Basic.lean#L145)
+- [Tau Ceti roadmap status: Geodesics, the exponential map, and the Hopf–Rinow theorem](https://github.com/TauCetiProject/TauCetiRoadmap/blob/612845ab80fb9c2b9bee724a156756ee78031591/Completed/HopfRinow/STATUS.md)

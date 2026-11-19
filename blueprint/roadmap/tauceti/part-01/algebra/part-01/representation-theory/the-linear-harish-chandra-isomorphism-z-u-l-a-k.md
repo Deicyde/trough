@@ -27,7 +27,7 @@ Its statement uses no other declaration mapped here.
 - [Chevalley's restriction theorem](../../part-02/lie/part-01/chevalleys-restriction-theorem.md)
 - [Harish-Chandra surjectivity with a degree bound](../../part-02/lie/part-01/harish-chandra-surjectivity-with-a-degree-bound.md)
 - [The linear-independence half of the Poincaré--Birkhoff--Witt theorem](../../part-02/lie/part-01/the-linear-independence-half-of-the-poincare-bir.md)
-- [The Poincaré--Birkhoff--Witt theorem](../../part-02/lie/part-01/the-poincare-birkhoff-witt-theorem.md)
+- [The Poincaré--Birkhoff--Witt theorem](../../part-02/lie/part-02/the-poincare-birkhoff-witt-theorem.md)
 
 ## Lean
 
@@ -36,5 +36,5 @@ Formalized in Tau Ceti as [`TauCeti.harishChandraLinearIso`](https://taucetiproj
 ## Sources
 
 - [Tau Ceti documentation: `TauCeti.harishChandraLinearIso`](https://taucetiproject.org/docs/TauCeti/Algebra/Lie/HighestWeight/CentralCharacter/Isomorphism.html#TauCeti.harishChandraLinearIso)
-- [Source of `TauCeti.harishChandraLinearIso` in TauCeti/Algebra/Lie/HighestWeight/CentralCharacter/Isomorphism.lean](https://github.com/TauCetiProject/TauCeti/blob/a6027b1d24fcb935c53bd5b50d11b40991cda418/TauCeti/Algebra/Lie/HighestWeight/CentralCharacter/Isomorphism.lean#L82)
-- [Tau Ceti roadmap status: Representation theory](https://github.com/TauCetiProject/TauCetiRoadmap/blob/9f7c032adaf1b838e8183d63ff3cfa886d061cb3/TauCetiRoadmap/RepresentationTheory/STATUS.md)
+- [Source of `TauCeti.harishChandraLinearIso` in TauCeti/Algebra/Lie/HighestWeight/CentralCharacter/Isomorphism.lean](https://github.com/TauCetiProject/TauCeti/blob/cd41bffcb343151b3e58c89392e206b11fe78c1c/TauCeti/Algebra/Lie/HighestWeight/CentralCharacter/Isomorphism.lean#L82)
+- [Tau Ceti roadmap status: Representation theory](https://github.com/TauCetiProject/TauCetiRoadmap/blob/612845ab80fb9c2b9bee724a156756ee78031591/TauCetiRoadmap/RepresentationTheory/STATUS.md)

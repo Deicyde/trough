@@ -31,5 +31,5 @@ Formalized in Tau Ceti as [`TauCeti.Neuromanifold.not_isAlgebraicImage_const_sq`
 ## Sources
 
 - [Tau Ceti documentation: `TauCeti.Neuromanifold.not_isAlgebraicImage_const_sq`](https://taucetiproject.org/docs/TauCeti/Geometry/Neuromanifold/Scalar.html#TauCeti.Neuromanifold.not_isAlgebraicImage_const_sq)
-- [Source of `TauCeti.Neuromanifold.not_isAlgebraicImage_const_sq` in TauCeti/Geometry/Neuromanifold/Scalar.lean](https://github.com/TauCetiProject/TauCeti/blob/a6027b1d24fcb935c53bd5b50d11b40991cda418/TauCeti/Geometry/Neuromanifold/Scalar.lean#L136)
-- [Tau Ceti roadmap status: Neuromanifolds, parametrisations, and neurovarieties](https://github.com/TauCetiProject/TauCetiRoadmap/blob/9f7c032adaf1b838e8183d63ff3cfa886d061cb3/TauCetiRoadmap/Neuromanifolds/STATUS.md)
+- [Source of `TauCeti.Neuromanifold.not_isAlgebraicImage_const_sq` in TauCeti/Geometry/Neuromanifold/Scalar.lean](https://github.com/TauCetiProject/TauCeti/blob/cd41bffcb343151b3e58c89392e206b11fe78c1c/TauCeti/Geometry/Neuromanifold/Scalar.lean#L136)
+- [Tau Ceti roadmap status: Neuromanifolds, parametrisations, and neurovarieties](https://github.com/TauCetiProject/TauCetiRoadmap/blob/612845ab80fb9c2b9bee724a156756ee78031591/TauCetiRoadmap/Neuromanifolds/STATUS.md)

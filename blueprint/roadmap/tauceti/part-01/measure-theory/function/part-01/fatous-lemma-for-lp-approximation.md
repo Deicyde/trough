@@ -45,4 +45,4 @@ TauCeti.eLpNorm_ennreal_le_of_ae_tendsto.{u_1, u_2} {α : Type u_1} [MeasurableS
 ## Sources
 
 - [Tau Ceti documentation: `TauCeti.ae_eq_zero_of_tendsto_of_eLpNorm_le`](https://taucetiproject.org/docs/TauCeti/MeasureTheory/Function/Lp/Complete.html#TauCeti.ae_eq_zero_of_tendsto_of_eLpNorm_le)
-- [Source of `TauCeti.ae_eq_zero_of_tendsto_of_eLpNorm_le` in TauCeti/MeasureTheory/Function/Lp/Complete.lean](https://github.com/TauCetiProject/TauCeti/blob/a6027b1d24fcb935c53bd5b50d11b40991cda418/TauCeti/MeasureTheory/Function/Lp/Complete.lean#L158)
+- [Source of `TauCeti.ae_eq_zero_of_tendsto_of_eLpNorm_le` in TauCeti/MeasureTheory/Function/Lp/Complete.lean](https://github.com/TauCetiProject/TauCeti/blob/cd41bffcb343151b3e58c89392e206b11fe78c1c/TauCeti/MeasureTheory/Function/Lp/Complete.lean#L158)
