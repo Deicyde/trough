@@ -179,11 +179,11 @@ def sources_readme(libraries: list[dict], mathlib_rev: str, thousand_plus: dict 
         lines += ["", "## Blueprints", ""]
         for project_id, name, repo, license_name, text in blueprints:
             if text:
-                lines.append(f"- `data/blueprints/{project_id}/`: the TeX of [{name}'s blueprint](https://github.com/{repo}), "
+                lines.append(f"- `data/blueprints/{project_id}/`: the TeX of the blueprint of [{name}](https://github.com/{repo}), "
                              f"pinned in its source.json, {license_name}; the license is copied beside it.")
             else:
                 lines.append(f"- `data/blueprints/{project_id}/structure.json`: the titles, labels, Lean names, marks and "
-                             f"places of [{name}'s blueprint](https://github.com/{repo}); it gives no license, so its text "
+                             f"places of the blueprint of [{name}](https://github.com/{repo}); it gives no license, so its text "
                              "is not copied.")
     if tauceti:
         rev, roadmap_rev = tauceti

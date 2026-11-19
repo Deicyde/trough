@@ -651,7 +651,7 @@ def leaf(project: Project, node: Node, caption: str, title: str, writer: Writer,
     place, source = project.source(node.where)
     if project.text:
         body = (without_notes(writer.statement(node.body))
-                or f"A {caption.lower()} of the blueprint of {project.name}, with no text.")
+                or f"A {caption.lower()} the blueprint states with no text.")
         if node.proof is not None:
             # A proof the blueprint does not mark formalized may say what is planned; one that is only notes is none.
             proof = without_notes(writer.statement(node.proof.body), plans=not proof_ok)
@@ -712,8 +712,10 @@ def intro(project: Project, blueprint: Blueprint, stats: Counter) -> str:
     date = f" ({project.date[:10]})" if project.date else ""
     nodes = stats["nodes"]
     lines = [
-        f"The blueprint of {project.name}, read at commit {rev}{date}: one article for each of its {nodes:,} nodes "
+        f"The project's blueprint, read at commit {rev}{date}: one article for each of its {nodes:,} nodes "
         "whose Lean declarations it names and marks formalized, or in Mathlib"
+        + (f"; for {stats['mathlib_shared']:,} of them in Mathlib, the article is the Mathlib chapter's"
+           if stats["mathlib_shared"] else "")
         + (f". Its other {stats['left_out']:,} nodes have no article, and a section of only those is left out: "
            "the map records what the project contains, not what it plans" if stats["left_out"] else "")
         + ". A statement for which the blueprint marks no proof `\\leanok` says so. Dependencies are the "

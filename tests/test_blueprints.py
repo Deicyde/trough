@@ -223,6 +223,7 @@ def test_a_node_in_mathlib_is_the_mathlib_article_it_names(blueprint, tmp_path):
     built, leaves = build(blueprint, tmp_path, {"Mathlib.main": mathlib_leaf})
     assert "Main" not in leaves
     assert leaves["a-proof-label"].proof_depends == [mathlib_leaf]
+    assert "for 1 of them in Mathlib, the article is the Mathlib chapter's." in built.root.prose
 
 
 def test_a_library_without_a_license_shows_structure_only(blueprint, tmp_path):
