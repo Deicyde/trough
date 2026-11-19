@@ -15,9 +15,10 @@ declarations, by the first of three rules that gives any:
 
 A project with headlines is a card: its `lean:` names are its headlines, its
 statement edges the Mathlib concepts and other chapters' declarations their
-signatures name, and its proof edges the Mathlib concepts its files name most
-often relative to the other projects. The card lives in a projects/ folder of
-its home: the chapter of a live library it requires, else the overview area of
+signatures name, and its proof edges the Mathlib concepts whose Lean names its
+files write most often relative to the other projects (only those of Lean core
+and Std for a project that neither requires nor imports Mathlib). The card
+lives in a projects/ folder of its home: the chapter of a live library it requires, else the overview area of
 Mathlib it uses most. The host's page lists the folder without owning it, so the
 host's generator never reads these pages. A project with no headline is listed by
 its facts on its home's projects page. The README's opening is quoted only when
@@ -567,6 +568,7 @@ CORE_HOME = "batteries"  # the home of a project that requires neither Mathlib n
 ROOT_NO_DEPENDS = "A root module states no result, so the node has no statement edges."
 MAX_ROOTS = 3  # root modules a node names
 MAX_RECORDED_ROOTS = 1000  # root modules a record keeps, by name: every name two projects share, not thousands
+CORE_MODULE = re.compile(r"(?:Init|Std|Lean)(?:\.|$)")  # the modules of Lean core and Std
 LONG_TITLE = 50  # README titles longer than this give way to the repository name
 #: README headings that name a section, not the project.
 GENERIC_TITLES = {"about", "abstract", "build", "building", "contents", "description", "documentation",
@@ -685,6 +687,11 @@ def live_requirements(record: dict, live: dict[str, tuple[str, str]], hosts: dic
     return out
 
 
+def on_mathlib(record: dict) -> bool:
+    """Whether the project requires or imports Mathlib."""
+    return bool(record.get("mathlib") or record.get("mathlib_imports"))
+
+
 def home(record: dict, live: dict[str, tuple[str, str]], hosts: dict, overrides: dict, areas: Areas,
          baseline: dict[str, float], statement_areas: list[str], use_areas: list[str],
          order: list[str]) -> tuple[str | None, str]:
@@ -701,7 +708,7 @@ def home(record: dict, live: dict[str, tuple[str, str]], hosts: dict, overrides:
         files = roots.get(package["name"], 0)
         return chosen, (f"Its Lake manifest requires `{package['name']}`" + (f", {how}" if how else "")
                         + (f", whose modules {plural(files, 'file')} of the project import." if files else "."))
-    if not record.get("mathlib") and not record.get("mathlib_imports"):
+    if not on_mathlib(record):
         if CORE_HOME not in hosts:
             return None, "It requires neither Mathlib nor a library mapped here."
         files = record.get("import_roots", {}).get("Batteries", 0)
@@ -836,13 +843,16 @@ def card(record: dict, depends: list[Leaf], uses: list[Leaf], named: int, placem
     if builds_on:
         notes.append(("Builds on", "\n".join(builds_on)))
     notes.append(("Placement", placement))
-    if lifts or record.get("uses"):
+    if lifts or named:
         lines = [f"{areas.titles[area]} ({files} of {total} imports, {lift:.1f}×)" for area, lift, files, total in lifts[:3]]
         text = (f"Areas of its Mathlib imports by lift over the average project: {', '.join(lines)}." if lines else "")
-        if record.get("uses"):
+        if named:
             text += (" " if text else "") + (
-                f"*Proof depends on* names {len(uses)} of the {plural(named, 'Mathlib concept')} its files name, "
-                "those named most often relative to the other projects.")
+                f"*Proof depends on* lists {len(uses)} of the {plural(named, 'Mathlib overview article')} whose Lean "
+                "names its files write, those written most often relative to the other projects; a name match, not an "
+                "import.")
+            if not on_mathlib(record):
+                text += " It requires no Mathlib, so only the articles whose Lean names Lean core or Std declares are kept."
         notes.append(("Mathlib use", text))
     leaf = Leaf(heading_text(title(record)), record["slug"], fields, body, depends=depends, proof_depends=uses,
                 notes=notes, no_depends=ROOT_NO_DEPENDS if roots else NO_DEPENDS)
@@ -878,11 +888,15 @@ def listed(record: dict) -> str:
 
 
 def chapter(records: list[dict], packages: dict, overrides: dict, libraries: list[dict], hosts: dict[str, Container],
-            heads: dict[str, Leaf], names: dict[str, Leaf]) -> tuple[list[tuple[Container, Container, dict[str, str]]],
-                                                                   Counter, dict[str, Leaf | Container]]:
+            heads: dict[str, Leaf], names: dict[str, Leaf], modules: dict[str, str] | None = None
+            ) -> tuple[list[tuple[Container, Container, dict[str, str]]], Counter, dict[str, Leaf | Container]]:
     """The projects pages: each with its host, the page that lists it, and its cards' source links; the counts;
     and the link targets of the cards' notes (for blueprints.resolve). *hosts* has a page per home: each live
-    chapter's by its catalog id, and Mathlib's overview areas as "mathlib:<slug>", with the overview as OVERVIEW."""
+    chapter's by its catalog id, and Mathlib's overview areas as "mathlib:<slug>", with the overview as OVERVIEW.
+    *modules* has the module declaring each Mathlib concept's Lean name: a project that neither requires nor
+    imports Mathlib keeps only the concepts Lean core or Std declares, since another match is a name it shares by
+    chance."""
+    modules = modules or {}
     order = [library["id"] for library in libraries]
     live = {repo_key(library["repo"]): (library["id"], "") for library in libraries if library["map_status"] == "live"}
     live |= {key: (package["chapter"], package.get("reason", "")) for key, package in packages.items()}
@@ -906,7 +920,9 @@ def chapter(records: list[dict], packages: dict, overrides: dict, libraries: lis
                     statement.append(target)
         statement_areas = [areas.leaf(leaf) for leaf in statement if leaf in heads.values()]
         statement_areas = [area for area in statement_areas if area]
-        ranked = [(heads[name], lift) for name, lift in use_lifts(record, admitted) if name in heads]
+        kept = {name for name in record.get("uses", {})
+                if on_mathlib(record) or CORE_MODULE.match(modules.get(name, ""))}
+        ranked = [(heads[name], lift) for name, lift in use_lifts(record, admitted) if name in heads and name in kept]
         uses = [leaf for leaf, _ in ranked if leaf not in statement][:MAX_USES]
         use_areas = [area for leaf, _ in ranked if (area := areas.leaf(leaf))]
         key, placement = home(record, live, hosts, overrides, areas, baseline, statement_areas, use_areas, order)
@@ -929,7 +945,9 @@ def chapter(records: list[dict], packages: dict, overrides: dict, libraries: lis
             else:
                 url = package["url"]
                 builds_on.append(f"- `{package['name']}`" + (f" ({url})" if url.startswith("https://") else "") + f"{rev}.")
-        placed.setdefault(key, []).append((record, statement, uses, len(record.get("uses", {})), placement, builds_on,
+        stats["uses_dropped"] += len(record.get("uses", {})) - len(kept)
+        stats["uses_dropped_projects"] += len(kept) < len(record.get("uses", {}))
+        placed.setdefault(key, []).append((record, statement, uses, len(kept), placement, builds_on,
                                            area_lifts(record, areas, baseline)))
     out = []
     targets: dict[str, Leaf | Container] = {}

@@ -367,7 +367,9 @@ def generate() -> dict[Path, str]:
                             names.setdefault(name, node)
         pages, sat_stats, sat_targets = satellites.chapter(
             sat_records, sat_packages, sat_overrides, libraries, areas | {satellites.OVERVIEW: overview} | hosts,
-            heads, names)
+            heads, names, {name: record["module"] for table in ("cited", "concepts")
+                           for name, record in ((sources.deps or {}).get(table) or {}).items()
+                           if record and record.get("module")})
         for host, projects_page, _ in pages:
             if any(child.slug == "projects" for child in host.children):
                 raise ValueError(f"{host.path}: a child named projects is in the way of its satellite projects")
@@ -403,7 +405,8 @@ def generate() -> dict[Path, str]:
             f"{sat_stats['listed']} listed; {sat_stats['held_back']} held back; headlines by blueprint {sat_stats['rule_blueprint']}, "
             f"README {sat_stats['rule_readme']}, Main module {sat_stats['rule_main']}; {sat_stats['statement_edges']} "
             f"statement, {sat_stats['proof_edges']} proof and {sat_stats['satellite_edges']} project edges; "
-            f"{sat_stats['mathlib_edges']} cards with Mathlib edges",
+            f"{sat_stats['mathlib_edges']} cards with Mathlib edges; {sat_stats['uses_dropped']} concept names outside "
+            f"Lean core and Std left out for {sat_stats['uses_dropped_projects']} projects without Mathlib",
             file=sys.stderr,
         )
     files[ROOT / "hooks" / "lean-links.json"] = json.dumps(lean_links, indent=1, ensure_ascii=False) + "\n"

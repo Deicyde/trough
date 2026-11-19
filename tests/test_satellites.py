@@ -371,7 +371,33 @@ def test_proof_edges_are_the_concepts_named_most_relative_to_the_other_projects_
     card = next(node for _, projects, _ in pages for node in walk(projects) if isinstance(node, Leaf) and node.slug == "mine")
     assert len(card.proof_depends) == satellites.MAX_USES
     assert heads["Concept0"] not in card.proof_depends
-    assert "names 8 of the 12 Mathlib concepts its files name" in dict(card.notes)["Mathlib use"]
+    note = dict(card.notes)["Mathlib use"]
+    assert "lists 8 of the 12 Mathlib overview articles whose Lean names its files write" in note
+    assert "a name match, not an import" in note and "requires no Mathlib" not in note
+
+
+def test_a_project_without_mathlib_keeps_only_the_concepts_lean_core_or_std_declares(tmp_path):
+    root, hosts, heads = mathlib_fixture(tmp_path)
+    modules = {"List": "Init.Prelude", "Std.HashMap": "Std.Data.HashMap.Basic", "Set": "Mathlib.Data.Set.Defs"}
+    for name in modules:
+        leaf = concept(name, name.lower().replace(".", "-"), "Mathlib.Analysis.Fourier.AddCircle")
+        hosts["mathlib:analysis"].entries.append(Entry(leaf))
+        heads[name] = leaf
+    batteries = Container("Batteries", "batteries")
+    batteries.path = tmp_path / "roadmap" / "batteries" / "README.md"
+    hosts[satellites.CORE_HOME] = batteries
+    assign_paths(root, tmp_path / "roadmap" / "mathlib")
+    uses = {"List": 4, "Std.HashMap": 2, "Set": 1, "Unknown": 1}
+    core = record("core", mathlib="", import_roots={"Lean": 2}, uses=uses)
+    # A project on Mathlib keeps every concept it names, whatever declares it.
+    on = record("on", uses=dict(uses))
+    pages, stats, _ = satellites.chapter([core, on], {}, {}, LIBRARIES, hosts, heads, {}, modules)
+    cards = {node.slug: node for _, projects, _ in pages for node in walk(projects) if isinstance(node, Leaf)}
+    assert set(cards["core"].proof_depends) == {heads["List"], heads["Std.HashMap"]}
+    assert heads["Set"] in cards["on"].proof_depends
+    assert "It requires no Mathlib, so only the articles whose Lean names Lean core or Std declares are kept." in (
+        dict(cards["core"].notes)["Mathlib use"])
+    assert (stats["uses_dropped"], stats["uses_dropped_projects"]) == (2, 1)
 
 
 def test_a_card_quotes_its_readme_only_under_a_recognized_license(tmp_path):
