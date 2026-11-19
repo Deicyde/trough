@@ -156,6 +156,7 @@ class Blueprint:
     bibitems: dict[str, str] = field(default_factory=dict)  # a thebibliography's keys and the labels LaTeX prints
     # Files read only for the names of its .bib files: the print entry, when the web entry names none.
     print_files: list[str] = field(default_factory=list)
+    authors: list[str] = field(default_factory=list)  # its \\author's names, as TeX, in order
 
     @property
     def graph(self) -> list[Node]:
@@ -336,6 +337,16 @@ def package_thms(text: str) -> tuple[str, ...]:
 def masked(body: str) -> str:
     """body with its formulas blanked out, so a \\label found in what is left is not an equation's."""
     return MATH.sub(lambda match: " " * len(match.group()), body)
+
+
+def authors_of(text: str, body_start: int) -> list[str]:
+    """The names the blueprint's last \\author gives, as TeX: split at \\and, a line break, a comma or "and". None when
+    it reads them from a file, as \\author{\\input{AUTHORS.md}} does."""
+    found = macro_args(text[:body_start], "author") or macro_args(text, "author")
+    if not found or "\\input" in found[-1]:
+        return []
+    names = re.split(r"\\and(?![A-Za-z])|\\\\|,|\s+and\s+", found[-1])
+    return [squeeze(name) for name in names if name.strip()]
 
 
 def macro_args(body: str, name: str) -> list[str]:
@@ -628,4 +639,4 @@ def read(root: Path, entry: str, architect: Path | None = None) -> Blueprint:
             if label not in labels:
                 problems.append(f"{node.where.file}:{node.where.line}: \\uses{{{label}}} names no label")
     return Blueprint(document.files, macros, captions, thms, units, nodes, labels, links, problems, prose, bibliography,
-                     bibitems, print_files)
+                     bibitems, print_files, authors_of(text, body_start))
