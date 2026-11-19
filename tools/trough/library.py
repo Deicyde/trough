@@ -396,9 +396,14 @@ def ledger(library: Library, module: dict, rev: str, private: set[str], missing:
     for item in declarations(module):
         group = "private" if item["name"] in private else "missing" if item["name"] in missing else "public"
         entries[group].append({"name": item["name"], "kind": item["kind"], "line": item["line"]})
-    record = {"schema": LEDGER_SCHEMA, "library": library.name, "repo": library.repo, "rev": rev,
-              "module": module["module"], "file": module["file"], **entries, "unread": UNREAD}
-    return json.dumps(record, indent=1, ensure_ascii=False) + "\n"
+    head = {"schema": LEDGER_SCHEMA, "library": library.name, "repo": library.repo, "rev": rev,
+            "module": module["module"], "file": module["file"]}
+    # An entry a line, so that a change to the module shows as a change to its lines.
+    parts = [f" {json.dumps(key)}: {json.dumps(value, ensure_ascii=False)}" for key, value in head.items()]
+    parts += [f' "{group}": [' + ",".join(f"\n  {json.dumps(entry, ensure_ascii=False)}" for entry in items)
+              + ("\n ]" if items else "]") for group, items in entries.items()]
+    parts.append(f' "unread": {json.dumps(UNREAD, ensure_ascii=False)}')
+    return "{\n" + ",\n".join(parts) + "\n}\n"
 
 
 def chapter(library: Library, data: dict) -> tuple[Built, dict[str, str]]:
