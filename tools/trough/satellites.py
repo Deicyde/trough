@@ -549,7 +549,7 @@ def read_project(checkout: Path, project: dict, rev: str, date: str, paths: list
     record.update(declarations=len(declared), sorry_files=len(sorry_paths), axioms=sum(axioms.values()),
                   closure_files=len(closure), closure_sorry=sorted(closure & sorry_paths)[:20],
                   closure_axioms=sum(axioms[path] for path in closure),
-                  root_modules=[{"name": module, "file": path} for module, path in sorted(root_files.items())],
+                  root_modules=[{"name": module, "file": path} for module, path in sorted(root_files.items())][:MAX_RECORDED_ROOTS],
                   root_closure_files=len(root_closure), root_closure_sorry=sorted(root_closure & sorry_paths)[:20],
                   root_closure_axioms=sum(axioms[path] for path in root_closure),
                   unclosed_files=counts["unclosed_files"], headline_rule=rule, headline_count=total,
@@ -566,6 +566,7 @@ OVERVIEW = "mathlib:overview"  # the home of a Mathlib project no area claims
 CORE_HOME = "batteries"  # the home of a project that requires neither Mathlib nor another library mapped here
 ROOT_NO_DEPENDS = "A root module states no result, so the node has no statement edges."
 MAX_ROOTS = 3  # root modules a node names
+MAX_RECORDED_ROOTS = 1000  # root modules a record keeps, by name: every name two projects share, not thousands
 LONG_TITLE = 50  # README titles longer than this give way to the repository name
 #: README headings that name a section, not the project.
 GENERIC_TITLES = {"about", "abstract", "build", "building", "contents", "description", "documentation",
