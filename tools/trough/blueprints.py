@@ -21,7 +21,7 @@ import re
 from collections import Counter
 from dataclasses import dataclass, field
 from pathlib import Path
-from urllib.parse import quote, unquote
+from urllib.parse import quote, unquote, urljoin
 
 from trough import bibtex, leanblueprint
 from trough.leanblueprint import Blueprint, Node, Prose, Proof, Unit, Where
@@ -54,6 +54,9 @@ class Project:
     license: str | None
     text: bool  # whether trough may reproduce the blueprint's text
     directory: Path
+    note: str = ""  # the catalog's chapter_note, a paragraph for the chapter's front page
+    homepage: str = ""  # the catalog's homepage, where the project publishes its blueprint and docs
+    lean_docs: bool = True  # the catalog's lean_docs: false when the project publishes no API documentation
 
     @property
     def url(self) -> str:
@@ -82,7 +85,9 @@ def load_projects(data: Path, libraries: list[dict]) -> list[Project]:
             continue
         source = json.loads((directory / "source.json").read_text(encoding="utf-8"))
         projects.append(Project(library["id"], library["name"], source["repo"], source["rev"], source.get("date", ""),
-                                source["entry"], source.get("license"), bool(source.get("text", True)), directory))
+                                source["entry"], source.get("license"), bool(source.get("text", True)), directory,
+                                library.get("chapter_note", ""), library.get("homepage", ""),
+                                bool(library.get("lean_docs", True))))
     return projects
 
 
@@ -224,6 +229,49 @@ def without_lead_in(markdown: str) -> str:
     return "\n\n".join(part for part in (head, kept) if part)
 
 
+# A parenthetical that holds a TODO note, as in "a Markov category (TODO ref), which ...", nested parentheses and all.
+TODO_ASIDE = re.compile(r"[ \t]*\([^()]*?\bTODOs?\b(?:[^()]|\([^()]*\))*\)")
+# A list item, bulleted or numbered.
+ITEM = re.compile(r"^[ \t]*(?:[-*+]|\d+\.)[ \t]+")
+# A text that is only a note that it is still to be written.
+TO_DO = re.compile(r"\s*(?:TODO|To do)\.?\s*")
+NO_PLANS = re.compile(r"(?!)")
+# The bytes of article Markdown a page folds in before its next node starts a part, as in the other chapters.
+PAGE_BUDGET = 300_000
+
+
+def without_notes(markdown: str, plans: bool = False) -> str:
+    """Blueprint Markdown without its TODO notes and, with *plans*, its sentences about plans and invitations, as the
+    library chapters' docstring filter (trough.library) cuts them, each cut marked with …. A parenthetical that holds
+    a TODO goes and the rest of its sentence stays; a list item keeps its text before a TODO; any other TODO goes with
+    the rest of its paragraph from the start of its sentence. Displays, code and tables are not read. The map records
+    what the project has, not what it plans."""
+    from trough import library  # it imports this module
+
+    pattern = library.PLANS if plans else NO_PLANS
+    blocks = []
+    for block in re.split(r"(\n[ \t]*\n)", markdown):
+        if not block.strip() or block.lstrip().startswith(("$$", "```", "|")):
+            blocks.append(block)
+            continue
+        block = TODO_ASIDE.sub("", block)
+        lines = []
+        for line in block.split("\n"):
+            item, todo = ITEM.match(line), library.TODOS.search(line)
+            if item and todo:
+                kept = line[:todo.start()].rstrip(" \t:;,")
+                if len(kept) > item.end():
+                    lines.append(kept + " …")
+                continue
+            lines.append(line)
+        block = "\n".join(lines)
+        if library.TODOS.search(block) or pattern.search(block):
+            block = library.without_todos(block, pattern)
+        blocks.append(block)
+    text = "".join(blocks)
+    return re.sub(r"…(?:\n[ \t]*\n…)+", "…", text).strip()
+
+
 def chapter(project: Project, blueprint: Blueprint, mathlib_heads: dict[str, Leaf]) -> Built:
     """The chapter for *project*. *mathlib_heads* maps a Mathlib declaration to the
     Mathlib-chapter article it heads, for nodes in Mathlib.
@@ -235,6 +283,9 @@ def chapter(project: Project, blueprint: Blueprint, mathlib_heads: dict[str, Lea
     references print."""
     captions = {**{kind: kind.capitalize() for kind in KINDS}, **blueprint.captions}
     dochome = blueprint.links.get("dochome", "https://leanprover-community.github.io/mathlib4_docs")
+    if "://" not in dochome and project.homepage:
+        # A relative \dochome is relative to the blueprint, which leanblueprint publishes at <home>/blueprint/.
+        dochome = urljoin(f"{project.homepage.rstrip('/')}/blueprint/", dochome).rstrip("/")
     nodes = [node for node in blueprint.graph if in_lean(node)]
     present = set(nodes)
     # A section whose every node is left out goes with its prose, which is about those results; one
@@ -325,6 +376,8 @@ def chapter(project: Project, blueprint: Blueprint, mathlib_heads: dict[str, Lea
     texts += [unit.title for unit in blueprint.units]
     bib = bibtex.bibliography([project.directory / "src" / name for name in blueprint.bibliography],
                               [key for text in texts for key in cited(text)]) if project.text else {}
+    # A thebibliography's keys print the labels its list shows.
+    bib = {**{key: (label, None) for key, label in blueprint.bibitems.items()}, **bib}
 
     # Equations, figures and tables: numbered on their page in the blueprint's order, before
     # any text refers to one.
@@ -505,12 +558,13 @@ def chapter(project: Project, blueprint: Blueprint, mathlib_heads: dict[str, Lea
             continue
         current[0] = key(event.unit)
         if event.kind == "prose":
-            markdown = writer.statement(node.text)
+            markdown = without_notes(writer.statement(node.text), plans=True)
         elif event.kind == "aside":
             title = f" ({escape(writer.plain(node.title))})" if node.title else ""
-            markdown = run_in(f"**{caption(node)}{title}.**", writer.statement(node.body))
+            markdown = run_in(f"**{caption(node)}{title}.**", without_notes(writer.statement(node.body), plans=True))
         elif event.kind == "aside proof":
-            markdown = run_in(proof_head(node.proof, writer), writer.statement(node.proof.body))
+            proof = without_notes(writer.statement(node.proof.body), plans=True)
+            markdown = run_in(proof_head(node.proof, writer), proof) if proof.strip("… ") else ""
         else:
             target = placeholder(display(node), node.id)
             markdown = (f"*{escape(writer.plain(node.proof.title))}: shown with {target}.*" if node.proof.title
@@ -525,7 +579,7 @@ def chapter(project: Project, blueprint: Blueprint, mathlib_heads: dict[str, Lea
         for label in [node.id, *node.labels]:
             targets[label] = leaf_of[node]
     for container in [*pages.values(), root]:
-        chunk(container)
+        chunk(container, budget=PAGE_BUDGET)
 
     # Where each number in a page's own text ended up: the page, or one of its parts.
     for label, (number, article) in numbers.items():
@@ -570,7 +624,9 @@ def leaf(project: Project, node: Node, caption: str, title: str, writer: Writer,
     kind = KINDS.get(node.env, node.env)
     fields = [("declaration", kind), ("origin", "cited")]
     notes: list[tuple[str, str]] = []
-    lean_lines = [f"[`{name}`]({dochome}/find/#doc/{name})" for name in node.lean]
+    # A project that publishes no API documentation has its names shown as code: its \dochome may name another's.
+    url = (lambda name: f"{dochome}/find/#doc/{name}") if project.lean_docs else (lambda name: "")
+    lean_lines = [f"[`{name}`]({url(name)})" if url(name) else f"`{name}`" for name in node.lean]
     statement_ok = node.leanok or bool(node.proof and node.proof.leanok)
     proof_ok = bool(node.proof and node.proof.leanok)
     if node.mathlibok:
@@ -583,7 +639,7 @@ def leaf(project: Project, node: Node, caption: str, title: str, writer: Writer,
             stats["proofs_formalized"] += 1
         stats["statements_formalized"] += 1
         for name in node.lean:
-            lean_links[name] = f"{dochome}/find/#doc/{name}"
+            lean_links[name] = url(name)
     if node.discussion and blueprint.links.get("github"):
         fields.append(("discussion", f"{blueprint.links['github']}/issues/{node.discussion.strip().lstrip('#')}"))
     if lean_lines:
@@ -597,10 +653,12 @@ def leaf(project: Project, node: Node, caption: str, title: str, writer: Writer,
             notes.append(("Lean", f"Stated as {names}; the blueprint marks no proof of it as formalized."))
     place, source = project.source(node.where)
     if project.text:
-        body = writer.statement(node.body) or f"A {caption.lower()} of the blueprint of {project.name}, with no text."
+        body = (without_notes(writer.statement(node.body))
+                or f"A {caption.lower()} the blueprint states with no text.")
         if node.proof is not None:
-            proof = writer.statement(node.proof.body)
-            if proof:
+            # A proof the blueprint does not mark formalized may say what is planned; one that is only notes is none.
+            proof = without_notes(writer.statement(node.proof.body), plans=not proof_ok)
+            if proof.strip("… ") and not TO_DO.fullmatch(proof):
                 notes.insert(0, ("Proof", run_in(proof_head(node.proof, writer), proof) if node.proof.title else proof))
     else:
         body = (f"The blueprint of {project.name} states this {caption.lower()} at [{place}]({source}). The "
@@ -657,13 +715,17 @@ def intro(project: Project, blueprint: Blueprint, stats: Counter) -> str:
     date = f" ({project.date[:10]})" if project.date else ""
     nodes = stats["nodes"]
     lines = [
-        f"The blueprint of {project.name}, read at commit {rev}{date}: one article for each of its {nodes:,} nodes "
+        f"The project's blueprint, read at commit {rev}{date}: one article for each of its {nodes:,} nodes "
         "whose Lean declarations it names and marks formalized, or in Mathlib"
+        + (f"; for {stats['mathlib_shared']:,} of them in Mathlib, the article is the Mathlib chapter's"
+           if stats["mathlib_shared"] else "")
         + (f". Its other {stats['left_out']:,} nodes have no article, and a section of only those is left out: "
            "the map records what the project contains, not what it plans" if stats["left_out"] else "")
         + ". A statement for which the blueprint marks no proof `\\leanok` says so. Dependencies are the "
         "blueprint's `\\uses`: a statement's under *Depends on*, a proof's under *Proof depends on*.",
     ]
+    if project.note:
+        lines.append(project.note)
     if project.text:
         lines.append(
             f"The text is the blueprint's, under its {project.license} license: each page has a section's prose, "

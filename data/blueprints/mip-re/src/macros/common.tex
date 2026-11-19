@@ -1,0 +1,157 @@
+% Shared macros for the MIP* = RE blueprint.
+% Deliberately minimal: add macros only when a statement in the blueprint needs them.
+
+\newtheorem{theorem}{Theorem}[section]
+\newtheorem{lemma}[theorem]{Lemma}
+\newtheorem{proposition}[theorem]{Proposition}
+\newtheorem{corollary}[theorem]{Corollary}
+\newtheorem{definition}[theorem]{Definition}
+\newtheorem{remark}[theorem]{Remark}
+\newtheorem{conjecture}[theorem]{Conjecture}
+
+% Sets and fields
+\newcommand{\N}{\mathbb{N}}
+\newcommand{\C}{\mathbb{C}}
+\newcommand{\R}{\mathbb{R}}
+\newcommand{\F}{\mathbb{F}}
+\newcommand{\Fq}{\F_q}
+\renewcommand{\cal}[1]{\mathcal{#1}}
+\newcommand{\mA}{\ensuremath{\mathcal{A}}}
+\newcommand{\mX}{\ensuremath{\mathcal{X}}}
+\newcommand{\mY}{\ensuremath{\mathcal{Y}}}
+\newcommand{\mB}{\ensuremath{\mathcal{B}}}
+% The Pauli basis test's content set (its verifier's random tape beyond the type edge).
+\newcommand{\mC}{\ensuremath{\mathcal{C}}}
+\newcommand{\eps}{\varepsilon}
+\newcommand{\abs}[1]{\left\vert {#1} \right\vert}
+\newcommand{\norm}[1]{\left\| {#1} \right\|}
+% No \displaylimits: it is already the TeX default for \mathop atoms, and
+% plasTeX (web build) does not understand it and leaks it into the HTML.
+\newcommand{\E}{\mathop{\mathbb{E}}}
+\newcommand{\poly}{\mathrm{poly}}
+\newcommand{\polylog}{\mathrm{polylog}}
+
+% Complexity classes
+\newcommand{\MIPstar}{\mathrm{MIP}^*}
+\newcommand{\MIPco}{\mathrm{MIP}^{\mathrm{co}}}
+\newcommand{\MIPClass}{\mathrm{MIP}}
+\newcommand{\MIP}{\mathrm{MIP}}
+\newcommand{\RE}{\mathrm{RE}}
+\newcommand{\coRE}{\mathrm{coRE}}
+\newcommand{\NEXP}{\mathrm{NEXP}}
+\newcommand{\TIME}{\mathsf{TIME}}
+
+% Games, strategies, values
+\newcommand{\game}{\mathfrak{G}}
+\newcommand{\strategy}{\mathscr{S}}
+\newcommand{\alg}{\ensuremath{\mathscr{A}}} % C*-algebra of a commuting strategy
+\newcommand{\val}{\mathrm{val}}
+\newcommand{\valstar}{\mathrm{val}^*}
+\newcommand{\synval}{\ensuremath{\mathrm{val}^{s}}}
+\newcommand{\valco}{\ensuremath{\mathrm{val}^{\mathrm{co}}}}
+\newcommand{\omegaco}{\ensuremath{\omega^{\mathrm{co}}}} % bipartite commuting-operator value (Section 5)
+\newcommand{\Ent}{\mathrm{Ent}}
+
+% Quantum
+\newcommand{\ket}[1]{|#1\rangle}
+\newcommand{\bra}[1]{\langle#1|}
+\newcommand{\mH}{\mathcal{H}}
+\newcommand{\Id}{\ensuremath{I}}
+\newcommand{\ot}{\otimes}
+\DeclareMathOperator{\tr}{tr}
+\newcommand{\labelstyle}[1]{\textsc{#1}}
+\newcommand{\EPR}{\labelstyle{EPR}}
+\newcommand{\aux}{\labelstyle{aux}}
+\newcommand{\alice}{\labelstyle{A}}
+\newcommand{\bob}{\labelstyle{B}}
+
+% Verifiers and Turing machines
+\newcommand{\sampler}{\mathcal{S}}
+\newcommand{\decider}{\mathcal{D}}
+\newcommand{\verifier}{\mathsf{V}}
+\newcommand{\machine}{\cal{M}}
+\newcommand{\tmstyle}[1]{\ensuremath{\mathsf{#1}}}
+\newcommand{\Compress}{\tmstyle{Compress}}
+\newcommand{\compr}{\textsc{Compr}}
+
+% Named games and transformations
+\newcommand{\gamestyle}[1]{\textsc{#1}}
+\newcommand{\typestyle}[1]{\textsc{#1}}
+\newcommand{\MS}{\mathrm{MS}}
+\newcommand{\pauli}{\gamestyle{Pauli}}
+% The F_q -> F_2 field trace, in the Fourier identities of sec:ps-introspection.
+% Not \tr: \tau is already the normalized matrix trace in def:distance.
+\newcommand{\fieldtr}{\operatorname{tr}}
+% The downsizing map F_q^n -> K^{nt} of sec:ps-introspection, and the downsized
+% conditionally linear function L^\downsize. The paper writes it \kappa
+% (compression.tex); \kappa is also the diagonal-weight and rigidity-error parameter
+% of ch. 3, which is a clash inherited from the source rather than introduced here.
+\newcommand{\downsize}{\kappa}
+\newcommand{\qldparams}{\mathsf{qldparams}}
+% The generalized Pauli (Weyl) observables over F_q of def:generalized-pauli. The paper's own
+% macro (compression.tex), and like \downsize a clash inherited from the source rather than
+% introduced here: \tau is also the normalized matrix trace of def:distance. The two never occur
+% in the same statement -- the Pauli always carries a basis superscript, \qp^X or \qp^Z.
+\newcommand{\qp}{\tau}
+\newcommand{\Variable}{\typestyle{Variable}}
+\newcommand{\intro}{\gamestyle{Intro}}
+\newcommand{\ora}{\gamestyle{Orac}}
+% The role set of the oracularized game (oracularization.tex, sec:orac-def).
+\newcommand{\type}{\ensuremath{\mathcal{T}}}
+\newcommand{\oracle}{\labelstyle{O}}
+\newcommand{\anch}{\gamestyle{Anch}}
+\newcommand{\rep}{\gamestyle{Rep}}
+\newcommand{\ar}{\gamestyle{AR}}
+\newcommand{\sep}{\gamestyle{Sep}}
+
+% Decorated verifiers (one per transformation)
+\def\vint{\verifier^{\intro}}
+\def\sint{\sampler^{\intro}}
+\def\dint{\decider^{\intro}}
+\def\vora{\verifier^{\ora}}
+\def\vans{\verifier^{\mathsf{ar}}}
+\def\sans{\sampler^{\mathsf{ar}}}
+\def\dans{\decider^{\mathsf{ar}}}
+\def\vrep{\verifier^{\rep}}
+\def\srep{\sampler^{\rep}}
+\def\drep{\decider^{\rep}}
+\def\vcompr{\verifier^{\compr}}
+\def\scompr{\sampler^{\compr}}
+\def\dcompr{\decider^{\compr}}
+\def\vhalt{\verifier^{\mathsf{halt}}}
+\def\shalt{\sampler^{\mathsf{halt}}}
+\def\dhalt{\decider^{\mathsf{halt}}}
+
+% Provenance: the node of the vibefeld ledger in vidick/mipre-proof that a statement
+% here accounts for. Source-only — it expands to nothing, so it cannot affect plastex or
+% pdflatex output; scripts/ledger-sync.py reads it out of the .tex source and checks it
+% against planning/ledger-index.json. Takes a comma-separated list of node ids.
+\newcommand{\ledgernode}[1]{}
+
+% Formalization-effort badges for background results (Sections 3--5).
+% Plain fallback (web/plastex); macros/print.tex overrides these with colored pills.
+\newcommand{\effortEasy}{\textsf{\footnotesize[$\bullet$ easy]}}
+\newcommand{\effortMedium}{\textsf{\footnotesize[$\bullet\bullet$ medium]}}
+\newcommand{\effortHard}{\textsf{\footnotesize[$\bullet\bullet\bullet$ hard]}}
+\newcommand{\effortMathlib}{\textsf{\footnotesize[$\checkmark$ (mostly) in Mathlib]}}
+
+% Upstreaming badge: marks general-purpose quantum information content intended
+% to be contributed to QuantumLib (Lean-QuantumInfo) rather than to remain
+% specific to this project. Orthogonal to the effort badges; a statement may
+% carry both. Plain fallback (web/plastex); macros/print.tex overrides it with
+% an outlined violet pill.
+\newcommand{\qliburl}{https://github.com/Timeroot/Lean-QuantumInfo}
+\newcommand{\qlib}{\textsf{\footnotesize[\href{\qliburl}{$\uparrow$ QuantumLib}]}}
+
+% Turing machines computing the transformations
+\newcommand{\ComputeIntroVerifier}{\tmstyle{ComputeIntroVerifier}}
+\newcommand{\ComputeOracleVerifier}{\tmstyle{ComputeOracleVerifier}}
+% The bespoke PCP verifier of thm:pcp-decider (answer_reduction.tex), its parameter
+% function (def:pcpparams), and the low-degree code of def:ld-encoding.
+\newcommand{\pcpverifier}{\ensuremath{\tmstyle{M}^{\mathsf{ar}}}}
+\newcommand{\pcpparams}{\ensuremath{\mathrm{pcpparams}}}
+\newcommand{\ind}{\ensuremath{\mathrm{ind}}}
+\newcommand{\coded}{\ensuremath{\mathrm{Coded}}}
+\newcommand{\ComputeAnsVerifier}{\tmstyle{ComputeAnsRedVerifier}}
+\newcommand{\ComputeParrepVerifier}{\tmstyle{ComputeRepeatedVerifier}}
+

@@ -1,0 +1,123 @@
+\chapter{The Noperthedron}
+\label{chap:noperthedron}
+
+\section{Definition of the Noperthedron}
+
+We define three points $C_1,C_2,C_3\in \mathbb{Q}^3$.
+\[
+    C_1\coloneqq
+        \frac{1}{259375205}
+        \begin{pmatrix}
+        {152024884} \\ 0 \\ {210152163}
+        \end{pmatrix},
+\qquad
+    C_2\coloneqq \frac{1}{10^{10}}
+        \begin{pmatrix}
+        6632738028 \\ 6106948881 \\ 3980949609
+        \end{pmatrix},
+\]
+\[
+    C_3\coloneqq
+        \frac{1}{10^{10}}
+        \begin{pmatrix}
+        8193990033 \\ 5298215096 \\ 1230614493
+        \end{pmatrix}.
+\]
+
+\begin{lemma}
+\label{lem:c1_c2_c3_norms}
+\lean{Noperthedron.c1_norm_one, Noperthedron.c2_norm_bound, Noperthedron.c3_norm_bound}
+\leanok
+$\| C_1 \| = 1$,
+$\frac{98}{100} < \| C_2 \| < \frac{99}{100}$, and
+$\frac{98}{100} < \| C_3 \| < \frac{99}{100}$.
+\end{lemma}
+\begin{proof}
+\leanok
+Trivial arithmetic.
+\end{proof}
+
+Rotations about the $x, y, z$ axes $R_x,R_y,R_z:$  $\mathbb{R}\to \mathbb{R}^{3\times 3}$
+are defined in the usual way:
+    \[
+            R_x(\alpha)\coloneqq
+        \begin{pmatrix}
+            1 & 0 & 0\\
+            0 & \cos\alpha & -\sin\alpha\\
+            0 & \sin\alpha & \cos\alpha
+        \end{pmatrix},
+        \hspace{1cm}
+        R_y(\alpha)\coloneqq
+        \begin{pmatrix}
+            \cos\alpha & 0 & -\sin\alpha\\
+            0 & 1 & 0\\
+            \sin\alpha & 0 & \cos\alpha
+        \end{pmatrix},
+    \]
+    \[
+        R_z(\alpha)\coloneqq
+        \begin{pmatrix}
+            \cos\alpha & -\sin\alpha &0\\
+            \sin\alpha & \cos\alpha &0\\
+            0 & 0 & 1
+        \end{pmatrix}.
+    \]
+
+We define a 30-element set $\mathcal{C}_{30}$
+\[
+    \mathcal{C}_{30} \coloneqq \left\{(-1)^\ell R_z\left(\frac{2\pi k}{15}\right) \colon k=0,\dots,14; \ell=0,1\right\}.
+\]
+of rotations.
+
+We write $\mathcal{C}_{30} \cdot P = \{c P \,\text{ for } \, c \in \mathcal{C}_{30}\}$ for the orbit of $P$ under the action of $\mathcal{C}_{30}$.
+
+\begin{definition}
+\label{def:noperthedron}
+\lean{Noperthedron.exactVertex}
+\leanok
+The Noperthedron $\NOP$ is the convex polyhedron given by the vertex set
+\[\mathcal{C}_{30} \cdot C_1 \cup \mathcal{C}_{30} \cdot C_2 \cup \mathcal{C}_{30} \cdot C_3\]
+\end{definition}
+
+\begin{lemma}
+\label{lemma:nopert_verts_norm_le_one}
+\lean{Noperthedron.exactVertex_norm_le_one}
+\leanok
+\uses{def:noperthedron, lem:c1_c2_c3_norms}
+The norm of any vertex in the Noperthedron is no more than 1.
+\end{lemma}
+\begin{proof}
+\leanok
+Evident from definitions.
+\end{proof}
+
+\begin{definition}
+\label{def:pointsymmetric}
+\lean{PointSym}
+\leanok
+A set $S \subseteq \R^3$ is {\em point-symmetric} if $x \in S$ implies $-x \in S$.
+\end{definition}
+
+\begin{lemma}
+\label{lemma:nopert_point_symmetric}
+\lean{Noperthedron.exactPoly_point_symmetric}
+\leanok
+\uses{def:pointsymmetric, def:noperthedron, lemma:nopert_verts_norm_le_one}
+The noperthedron is point-symmetric.
+\end{lemma}
+\begin{proof}
+\leanok
+The set $\mathcal{C}_{30}$ contains $-\id$.
+\end{proof}
+
+\begin{lemma}
+\label{lemma:nopert_interior}
+\lean{Noperthedron.interior_exactVerts_hull_nonempty}
+\leanok
+\uses{def:noperthedron}
+The Noperthedron has nonempty interior.
+\end{lemma}
+\begin{proof}
+\leanok
+Four of its vertices are affinely independent.
+\end{proof}

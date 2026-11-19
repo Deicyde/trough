@@ -134,7 +134,8 @@ def sources_readme(libraries: list[dict], mathlib_rev: str, thousand_plus: dict 
                    anthropic_flt: dict | None = None, cfsg: str | None = None,
                    stacks: str | None = None, atlas: str | None = None, openai_math: str | None = None,
                    cslib: str | None = None, physlib: str | None = None,
-                   readers: list[tuple[str, str, str, str, bool]] = ()) -> str:
+                   readers: list[tuple[str, str, str, str, bool]] = (),
+                   blueprint_revs: dict[str, str] | None = None) -> str:
     """The sources page. *blueprints* has (id, name, repo, license, text) for each blueprint library;
     *tauceti* has the Tau Ceti and roadmap commits, once the chapter is built; *formal_frontier* has the
     commit each Formal Frontier library's record pins, by library id; *formal_conjectures* is the Formal
@@ -144,7 +145,8 @@ def sources_readme(libraries: list[dict], mathlib_rev: str, thousand_plus: dict 
     commit of ATLAS's vault, on its fork's wiki/autoform-blueprint branch, *openai_math* the commit of
     OpenAI Math's record, *cslib* the commit of CSLib, *physlib* the commit of Physlib its record pins and *readers* the libraries trough.library
     reads with their modules that declare nothing public listed, each as its id, name, repository, commit and whether
-    it builds on Mathlib."""
+    it builds on Mathlib; *blueprint_revs* has the commit each blueprint library's data/blueprints/<id>/source.json
+    pins, by id."""
     formal_frontier = formal_frontier or {}
     # Every chapter whose data pins a library's commit, by library id; the Libraries list shows that commit.
     pinned = (formal_frontier | ({"formal-conjectures": formal_conjectures} if formal_conjectures else {})
@@ -155,7 +157,8 @@ def sources_readme(libraries: list[dict], mathlib_rev: str, thousand_plus: dict 
               | ({"openai-math": openai_math} if openai_math else {})
               | ({"cslib": cslib} if cslib else {})
               | ({"physlib": physlib} if physlib else {})
-              | {reader[0]: reader[3] for reader in readers})
+              | {reader[0]: reader[3] for reader in readers}
+              | (blueprint_revs or {}))
     lines = [
         "# Sources",
         "",
@@ -180,11 +183,11 @@ def sources_readme(libraries: list[dict], mathlib_rev: str, thousand_plus: dict 
         lines += ["", "## Blueprints", ""]
         for project_id, name, repo, license_name, text in blueprints:
             if text:
-                lines.append(f"- `data/blueprints/{project_id}/`: the TeX of [{name}'s blueprint](https://github.com/{repo}), "
+                lines.append(f"- `data/blueprints/{project_id}/`: the TeX of the blueprint of [{name}](https://github.com/{repo}), "
                              f"pinned in its source.json, {license_name}; the license is copied beside it.")
             else:
                 lines.append(f"- `data/blueprints/{project_id}/structure.json`: the titles, labels, Lean names, marks and "
-                             f"places of [{name}'s blueprint](https://github.com/{repo}); it gives no license, so its text "
+                             f"places of the blueprint of [{name}](https://github.com/{repo}); it gives no license, so its text "
                              "is not copied.")
     if tauceti:
         rev, roadmap_rev = tauceti

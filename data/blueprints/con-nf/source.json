@@ -1,0 +1,9 @@
+{
+ "repo": "leanprover-community/con-nf",
+ "rev": "edbce7eb98351870f553cfab6ccb7cab327e4259",
+ "date": "2026-10-23T17:59:13+01:00",
+ "entry": "blueprint/src/web.tex",
+ "license": "Apache-2.0",
+ "text": true,
+ "nodes": 159
+}

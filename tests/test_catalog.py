@@ -53,3 +53,12 @@ def test_the_sources_page_takes_lean_pools_commit_from_its_data():
     page = catalog.sources_readme(catalog.load(CATALOG), "a" * 40, None, lean_pool="b" * 40)
     assert f"[LeanPool/lean-pool at bbbbbbbb](https://github.com/LeanPool/lean-pool/tree/{'b' * 40})" in page
     assert "- [Lean Pool](https://github.com/LeanPool/lean-pool) at bbbbbbbbbbbb: A pool of" in page
+
+
+def test_the_sources_page_takes_each_blueprints_commit_from_its_data():
+    libraries = catalog.load(CATALOG)
+    page = catalog.sources_readme(libraries, "a" * 40, None, blueprint_revs={"carleson": "c" * 40, "pfr": "d" * 40})
+    assert "- [Carleson's theorem](https://github.com/fpvandoorn/carleson) at cccccccccccc: " in page
+    assert "](https://github.com/teorth/pfr) at dddddddddddd: " in page
+    # The catalog keeps no head of its own for them, which would drift from the data.
+    assert not any("head" in library for library in libraries if library["map_unit"] == "blueprint node")

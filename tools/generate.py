@@ -369,6 +369,7 @@ def generate() -> dict[Path, str]:
         cslib=cslib_data["rev"] if cslib_data else None,
         readers=readers,
         physlib=physlib_data["source"]["rev"] if physlib_data else None,
+        blueprint_revs={project.id: project.rev for project in projects},
     )
     print(
         f"mathlib: {stats['articles']} articles ({stats['formalized']} in Mathlib, {stats['stated']} stated only, "

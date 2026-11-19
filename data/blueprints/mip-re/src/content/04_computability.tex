@@ -1,0 +1,581 @@
+\section{Computability}
+\label{ch:computability}
+
+This chapter collects the computability-theoretic ingredients of the proof: classical
+statements with no quantum content, several of which partially exist in Mathlib. Like
+the results of Section~\ref{ch:required-results}, these are external results that the
+project may initially assume as axioms, and each entry carries the same
+formalization-effort estimate. The concrete machine model and its canonical codes come
+first; then the toolkit of resource-bounded computability results; the recursive
+compression lemma, which builds on the toolkit, isolates the self-referential part of
+the proof.
+
+\subsection{The machine model}
+\label{sec:machine-model}
+
+The machine-level side of the project is formalized directly: a concrete multi-tape
+machine model with several input tapes, a canonical first-order syntax of machine
+\emph{codes} with an exact binary serialization, and a reference evaluator. 
+
+\begin{definition}[Multi-input Turing machine]
+\label{def:multiinput-tm}
+\lean{Turing.MultiInputTM, Turing.MultiInputTM.ComputesInTimeAndSpace}
+\leanok
+A \emph{multi-input Turing machine} with $i$ input tapes and $w$ work tapes has $i$
+two-way read-only input tapes (heads clamped one blank cell beyond either end of the
+input), $w$ bidirectional work tapes over an alphabet extended with a blank symbol, and
+a write-only output stream. A transition may write and move on every work tape, move
+every input head, emit at most one output symbol, and either continue or halt. Time is
+counted in steps, and space as the number of work-tape cells visited. 
+
+At $i = 1$ this
+is exactly the CSLib multi-tape model.
+\end{definition}
+
+\begin{definition}[Machine codes]
+\label{def:machine-code}
+\uses{def:multiinput-tm}
+\lean{Turing.Code, Turing.Code.toTM, Turing.encodeCode, Turing.decodeCode,
+Turing.codeSize}
+\leanok
+A \emph{machine code} is first-order data: a header (number of work tapes, alphabet
+size, number of states, start state) and a dense transition table with one entry per
+observation, in a fixed canonical order. A well-formed code is interpreted as a
+multi-input machine, with binary input and output through two reserved alphabet
+symbols. Codes serialize exactly: the \emph{description} $\alpha \in \{0,1\}^*$ of a
+code has size $\abs{\alpha}$, and \emph{total decoding} interprets every string ---
+$[\alpha]_i$ denotes the coded machine with $i$ input tapes described by $\alpha$, with
+every malformed string denoting one fixed machine that immediately rejects.
+\end{definition}
+
+\begin{definition}[Runs of coded machines]
+\label{def:code-run}
+\uses{def:machine-code}
+\lean{Turing.Code.Produces, Turing.Code.evalWithin}
+\leanok
+Let $c$ be a machine code with $i$ input tapes, $x = (x_1, \ldots, x_i)$ bit strings and $y \in
+\{0,1\}^*$. The code $c$ \emph{produces} $y$ on $x$ if its run on $x$ halts with output
+$y$ (in some time and space). The \emph{budgeted evaluation} of $c$ on $x$ with budget
+$T$ returns the output if $c$ has halted within $T$ steps, and a timeout marker
+otherwise; it is total and executable, and the two notions agree: $c$ produces $y$ if
+and only if some budget suffices to observe it.
+\end{definition}
+
+\begin{lemma}[Canonical serialization]
+\label{lem:code-canonical}
+\uses{def:machine-code}
+\lean{Turing.decodeCodeExact_encodeCode, Turing.encodeCode_injective,
+Turing.decodeCodeExact_sound}
+\leanok
+Exact decoding inverts encoding, distinct codes have distinct descriptions, and every
+description accepted by the exact decoder is the canonical encoding of the code it
+parses to.
+\end{lemma}
+\begin{proof}
+\leanok
+Compositional, from paired prefix and soundness lemmas for each field of the
+description format.
+\end{proof}
+
+The following two statements are the machine-level counterparts of
+Lemma~\ref{lem:universal-tm}. 
+
+\begin{lemma}[Universal machine]
+\label{lem:universal-machine}
+\uses{def:machine-code, def:code-run}
+\lean{Turing.exists_universalCode}
+\leanok
+For each arity $i$ there are a machine code $U$ with $i + 1$ input tapes and a
+polynomial $P$ such that for all $\alpha \in \{0,1\}^*$, all inputs $x$ and all $y$:
+$U$ on $(\alpha; x)$ produces $y$ if and only if $[\alpha]_i$ on $x$ produces $y$; and
+whenever $[\alpha]_i$ halts on $x$ within $t$ steps, $U$ halts on $(\alpha; x)$ within
+$P(\abs{\alpha} + t)$ time and space.
+\end{lemma}
+
+\begin{proof}
+Not planned: issue \#17 was closed on 2026-09-24, and the Lean statement is left as a
+\texttt{sorry}. The main theorem does not use this lemma; its universal machine is the ambient
+one of Lemma~\ref{lem:universal-tm}.
+\end{proof}
+
+\begin{lemma}[Bounded universal machine]
+\label{lem:bounded-universal-machine}
+\uses{def:machine-code, def:code-run}
+\lean{Turing.exists_boundedUniversalCode}
+\leanok
+For each arity $i$ there are a machine code $U$ with $i + 2$ input tapes and a
+polynomial $P$ such that on input $(\alpha;\, T \text{ in binary};\, x)$, the machine
+$U$ always halts within $P(\abs{\alpha} + T)$ steps, outputting the canonically encoded
+budgeted evaluation of $[\alpha]_i$ on $x$ with budget $T$.
+\end{lemma}
+
+\begin{proof}
+Not planned: issue \#18 was closed on 2026-09-24, and the Lean statement is left as a
+\texttt{sorry}. The main theorem does not use this lemma; its universal machine is the ambient
+one of Lemma~\ref{lem:universal-tm}.
+\end{proof}
+
+\subsection{Efficient computability toolkit}
+\label{sec:rr-computability}
+
+\effortHard{} (infrastructure: requires a cost model for computation)
+
+\begin{lemma}[Efficient universal Turing machine]
+\label{lem:universal-tm}
+\lean{MIPRE.Cost.exists_efficient_universal, MIPRE.Cost.exists_clocked_universal}
+\leanok
+There is a program $u$ and a polynomial $p$ such that $\phi_u(e, x) = \phi_e(x)$ for
+all $e, x$, with $\mathrm{runtime}(u, (e,x)) \leq
+p\bigl(\abs{e}, \abs{x}, \mathrm{runtime}(e, x)\bigr)$.
+\end{lemma}
+
+\begin{proof}
+\leanok
+Both the universal program and its clocked variant are self-interpreters of the ambient
+list language, written in the language itself (\texttt{MIPRE.Cost.Machine.univProg},
+\texttt{MIPRE.Cost.Machine.univTProg}). Evaluation is first presented as an abstract
+machine on configurations (a control ``evaluate $p$'' or ``return $v$'', an environment
+and a stack of frames) whose steps are charged exactly the costs of the evaluation rules,
+so that a derivation of cost $t$ corresponds to a machine run of at most $3t$ steps
+reaching a final configuration, and conversely every run reaching a final configuration
+comes from a derivation. Configurations are encoded as data and the step function is
+implemented by a fixed program (\texttt{stepProg}) at cost quadratic in the size of the
+configuration. Along the run simulating a derivation of cost $t$ on the input $x$, every
+configuration has size polynomial in $\abs{e} + \abs{x} + t$: values are results of
+sub-derivations, hence of size at most $t$; environments and stacks grow by at most one
+entry per unit of cost. The universal program iterates \texttt{stepProg} until a final
+configuration is reached, so its runs are polynomially bounded, and any of its halting
+runs is a machine run reaching a final configuration, hence a derivation with the same
+result. The clocked variant additionally carries, in unary, the remaining cost budget
+(decremented by the exact cost of each step), a step budget $3k+1$ guaranteeing
+termination, and a size guard $\Theta$, a fixed polynomial in $k + \abs{e} + \abs{x}$
+dominating the configuration sizes of any run of cost at most $k$; it returns the timeout
+value when a budget or the guard is exceeded. The guard is checked on the configuration
+produced by each step, whose size is bounded by the cost of producing it, so the loop
+only handles configurations of polynomial size even when the simulated run does not halt.
+\end{proof}
+
+\begin{lemma}[Efficient s-m-n]
+\label{lem:smn}
+\lean{MIPRE.Cost.hardcode_time, MIPRE.Cost.hardcode_time_rev, MIPRE.Cost.hardcode_size, MIPRE.Cost.smn_polyTime}
+\leanok
+There is a polynomial-time computable $s$ such that $\phi_{s(e,x)}(y) = \phi_e(x, y)$
+for all $e, x, y$, with the runtimes of $e$ and $s(e,x)$ polynomially equivalent.
+\end{lemma}
+
+\begin{proof}
+\leanok
+In the ambient list language, $s(e, x)$ is the program that pairs the literal $x$ with
+its input and runs $e$ on the pair (\texttt{MIPRE.Cost.hardcode}). The time overhead is
+additive and linear in $\abs{x}$ and the input size, in both directions, and the
+description of $s(e, x)$ is that of $e$ plus $\abs{x}$ plus a constant. The map $s$
+itself is computed in linear time by a fixed program assembling the description
+(\texttt{smnProg}).
+\end{proof}
+
+\begin{lemma}[Efficient Kleene recursion theorem]
+\label{lem:kleene}
+\uses{lem:universal-tm,lem:smn}
+\lean{MIPRE.Cost.efficient_fixed_point, MIPRE.Cost.kleeneFix, MIPRE.Cost.kleeneFix_runs_of}
+\leanok
+For every polynomial-time computable $f : \{0,1\}^* \to \{0,1\}^*$ there is a program
+$e$ with $\phi_e = \phi_{f(e)}$ and the runtime of $e$ polynomially bounded in terms
+of that of $f(e)$. (This is the direction used by Lemma~\ref{lem:recursive-compression};
+\cite{MNY} states the runtimes as polynomially equivalent, and the converse direction
+would require a simulator that is never faster than the simulated program.)
+\end{lemma}
+
+\begin{proof}
+\leanok
+The classical construction. Let $G$ be the program that on input $(x, v)$ computes
+$s(x, x)$ (Lemma~\ref{lem:smn}), applies $f$ to it, and runs the resulting program on $v$
+through the universal machine (Lemma~\ref{lem:universal-tm}); put $e = s(G, G)$. Then $e$
+on $v$ is $G$ on $(G, v)$, which runs $f(s(G, G)) = f(e)$ on $v$: the two programs halt
+on the same inputs with the same results (the backward direction inverts the run of $G$
+step by step and uses that the universal machine halts only if the simulated program
+does), and a run of $f(e)$ of time $t$ gives a run of $e$ within $p(\abs{v}, t)$, where
+$p$ is the universal machine's overhead polynomial shifted by the fixed size of $f(e)$,
+plus a linear term for the copies of the input and a constant for the fixed computation
+of $f(e)$.
+\end{proof}
+
+\paragraph{Source.} Folklore; stated in this efficient form in~\cite{MNY}, Lemmas
+2.1--2.3.
+
+\paragraph{Comments.} Mathlib contains the non-resource-bounded versions (universal
+machine, s-m-n and the Rogers fixed-point theorem for \texttt{Nat.Partrec.Code}). The
+efficient versions require a cost model for the chosen machine model; this is real
+infrastructure work and a prerequisite for everything involving ``polynomial-time''.
+The formalization's ambient model is not a Turing machine but a small first-order
+list-processing language (\texttt{MIPRE.Cost.Prog}, over binary trees) with a unit-cost
+semantics in which reading a value costs its size; it is polynomially equivalent to
+Turing-machine time, programs are their own tree serializations (so ``a program $e$''
+and ``$\abs{e}$'' are literal), and the s-m-n theorem is a linear-overhead syntactic
+operation. Mathlib's \texttt{Turing.ToPartrec.Code} was tried first and rejected: its
+programs cannot rebuild a list in polynomial time.
+A pragmatic first pass can replace ``polynomial time'' by ``computable'' wherever
+Section~\ref{sec:departures} permits, deferring the cost model. The machine-level
+counterpart, for the concrete model of Section~\ref{sec:machine-model}, is stated as
+Lemmas~\ref{lem:universal-machine} and~\ref{lem:bounded-universal-machine}; the
+pipeline consumes only the present ambient version.
+
+\subsection{The abstract compression lemmas}
+\label{sec:rr-compression}
+
+\effortEasy{} (given the toolkit of Section~\ref{sec:rr-computability})
+
+\begin{lemma}[Recursive compression]
+\label{lem:recursive-compression}
+\uses{def:succinct,lem:universal-tm,lem:smn,lem:kleene}
+\lean{MIPRE.Cost.recursive_compression}
+\leanok
+Let $f : \{0,1\}^* \to \N \cup \{\infty\}$ be a function and $A \subseteq \{x : f(x) <
+\infty\}$ a nonempty language. Suppose there is a polynomial-time computable function
+$\compr : \{0,1\}^* \times \N \to \{0,1\}^*$ such that whenever $\hat{x}$ is a succinct
+description (Definition~\ref{def:succinct}) of a string $x$ and $y = \compr(\hat{x},
+n)$:
+\begin{enumerate}
+\item $f(y) \geq \max\{ f(x), n \}$, and
+\item if $x \in A$ then $y \in A$.
+\end{enumerate}
+Then there is a polynomial-time computable function $g$ reducing the halting problem to
+$A$: for every Turing machine $e$, if $\phi_e$ halts on the empty input then $g(e) \in
+A$, and otherwise $f(g(e)) = \infty$.
+\end{lemma}
+
+\begin{proof}
+\leanok
+The construction of~\cite{MNY}, with two harmless modifications: the ``next level'' of
+the recursion is $2n + 1$ instead of $n + 1$ (prepending a bit to a binary numeral is one
+step in the list language, an increment is not), and the threshold below is explicit.
+Let $\beta$ be the fixed \emph{bit-query} program that, on input $(((c', e), n), m)$,
+runs the universal machine on $c'$ with input $(e, n)$ to obtain a string $y$ and outputs
+the $m$-th bit of $y$ (or $2$ if $m \geq \abs{y}$). Let $a$ be the polynomial-time
+\emph{decider} that on $(c', (e, n))$ outputs a fixed $y_0 \in A$ if $e$ halts on the
+empty input within $\log n$ steps, and $\compr\bigl((s(\beta, ((c', e), 2n+1)), n),
+n\bigr)$ otherwise, where $s$ is the s-m-n map of Lemma~\ref{lem:smn}. By
+Lemma~\ref{lem:kleene} there is a program $c$ with $\phi_c(e, n) = \phi_a(c, (e, n))
+=: h(e, n)$, running in time polynomial in $\abs{e} + \log n$. Hence for $n$ above a
+threshold $r(e) = 2^{K + 1 + \abs{e}}$ (with $K$ a constant depending only on the
+polynomial overheads), $(s(\beta, ((c, e), 2n+1)), n)$ is a succinct description of
+$h(e, 2n+1)$: the string has length at most $2^n$ and the bit-query program answers within
+the budget of Definition~\ref{def:succinct}. The reduction is $g(e) = h(e, r(e))$. If $e$
+does not halt, then for every $n \geq r(e)$ the decider compresses, so $f(h(e, n)) \geq
+\max\{f(h(e, 2n+1)), n\}$, and iterating gives $f(h(e, n)) \geq n + k$ for all $k$,
+i.e.\ $f(g(e)) = \infty$. If $e$ halts in $T$ steps, then $h(e, n) = y_0 \in A$ once
+$n \geq 2^T$, and by downward induction along the levels $n, 2n+1, 4n + 3, \ldots$ the
+second property of $\compr$ gives $h(e, n) \in A$ for every $n \geq r(e)$, in particular
+$g(e) \in A$.
+\end{proof}
+
+\paragraph{Source.} Marks, Nezhadi and Yuen~\cite{MNY}, Lemma 5.1 (the variant of
+their Lemma 3.1 with compression parameter $n$); the technique is implicit
+in~\cite{DRS08,FJVY19,JNVWY20}. The proof is a fixed-point construction using the
+efficient universal machine, s-m-n and Kleene recursion theorems
+(Section~\ref{sec:rr-computability}).
+
+\paragraph{Comments.} This is the entire ``self-referential'' part of the proof,
+isolated in a statement with no quantum content. In the application
+(Section~\ref{sec:ps-halting}), $A$ is the set of normal form verifier descriptions
+with $\synval = 1$ and finite entanglement requirement, and $f(\verifier) =
+\Ent(\verifier, \frac12)$ (suitably formalized); the compression procedure is
+Theorem~\ref{thm:compression}. The value-form pipeline of
+Section~\ref{ch:proof-structure} uses Lemma~\ref{lem:compressible-criterion} below
+instead; this lemma is retained as the entanglement-form route
+(Remark~\ref{rem:entanglement-form}), where the factor $\frac12$ in the entanglement
+bound of compression requires the variant with hypothesis $f(y) \geq \frac12
+\max\{f(x), G(n)\}$ for a function $G$ growing faster than the levels. Note that~\cite{MNY} also proves a converse (their
+Lemma 4.1): a halting reduction of this kind exists \emph{only if} a compression
+procedure does, which is evidence that this decomposition of the proof is canonical.
+The lemma and its proof are a self-contained computability project, an ideal early
+milestone.
+
+\begin{lemma}[Compressibility criterion]
+\label{lem:compressible-criterion}
+\uses{def:succinct,lem:universal-tm,lem:smn,lem:kleene,lem:compressible-criterion-nested}
+\lean{MIPRE.Cost.compressibility_criterion, MIPRE.Cost.compressibility_criterion_levels}
+\leanok
+Let $A, B \subseteq \{0,1\}^*$ be languages with distinguished elements
+$y_{\mathrm{yes}} \in A$ and $y_{\mathrm{no}} \in B$, and suppose that the complement of
+$B$ is recursively enumerable: there is a program $S$ that halts on input $x$ if and only
+if $x \notin B$. Suppose there is a polynomial-time computable function $\compr : \{0,1\}^*
+\times \N \to \{0,1\}^*$ such that whenever $\hat{x}$ is a succinct description
+(Definition~\ref{def:succinct}) of a string $x$ with $\abs{x} \leq n + 1$ and
+$y = \compr(\hat{x}, n)$:
+\begin{enumerate}
+\item if $x \in A$ then $y \in A$, and
+\item if $x \in B$ then $y \in B$.
+\end{enumerate}
+Then there is a polynomial-time computable function $g$ reducing the halting problem to
+$(A, B)$: for every Turing machine $e$, if $\phi_e$ halts on the empty input then $g(e)
+\in A$, and otherwise $g(e) \in B$.
+\end{lemma}
+
+\begin{proof}
+\leanok
+The construction of Lemma~\ref{lem:recursive-compression}, with a third branch. Let
+$\beta$ be the bit-query program of that proof, and let $\sigma$ be the program that, on
+$((c', (e, (m, m))), \cdot)$, runs the universal machine on $c'$ with input $(e, (m, m))$
+to obtain a string $x$ and then runs $S$ on $x$. Let $a$ be the polynomial-time decider
+that on $(c', (e, (m, n)))$ outputs $y_{\mathrm{yes}}$ if $e$ halts on the empty input
+within $\log n$ steps; otherwise $y_{\mathrm{no}}$ if $s(\sigma, (c', (e, (m, m))))$
+halts within $\log n$ steps; and otherwise $\compr\bigl((s(\beta, ((c', e), (m,
+2n+1))), n), n\bigr)$, where $s$ is the s-m-n map of Lemma~\ref{lem:smn}. By
+Lemma~\ref{lem:kleene} there is a program $c$ with $\phi_c(e, (m, n)) = \phi_a(c, (e, (m,
+n))) =: h(e, m, n)$, running in time polynomial in $\abs{e} + \log m + \log n$. As
+before, for $n$ above a threshold $r(e) = 2^{K + 1 + \abs{e}}$ and $m = r(e)$, the pair
+$(s(\beta, ((c, e), (m, 2n+1))), n)$ is a succinct description of $h(e, m, 2n+1)$; the
+start level $m$ is carried as data so that the threshold can be chosen from the running
+time of $a$ afterwards. The reduction is $g(e) = h(e, r(e), r(e)) =: x_e$; the second
+branch tests, at each level it is run at, whether $S$ halts on $x_e$. Two facts are used
+implicitly below and hold along the chain: $\abs{m} \leq \abs{n}$ at levels $n \geq r(e)
+\geq m$, which is what keeps $K$ out of its own defining polynomial; and ``$e$ halts within
+$\log n$ steps'' is monotone in $n$, so the first branch, once it fires, fires at every
+higher level.
+
+If $e$ does not halt, suppose $x_e \notin B$. Then $S$ halts on $x_e$ in some time $T$,
+so at every level $n$ with $\log n \geq T$ the decider outputs $y_{\mathrm{no}} \in B$,
+and by downward induction along the levels $r(e), 2r(e)+1, 4r(e)+3, \ldots$ from such a
+level, property 2 of $\compr$ gives $h(e, r(e), n) \in B$ at every level of the chain, in particular
+$x_e \in B$, a contradiction. If $e$ halts in $T$ steps, then $h(e, r(e), n) =
+y_{\mathrm{yes}} \in A$ once $\log n \geq T$, and by downward induction property 1 gives
+$h(e, r(e), n) \in A$ at every level of the chain, provided the second branch never fires at a level
+where the first has not. If it fired at such a level $n_1$, then $S$ halts on $x_e$, so
+$x_e \notin B$; but the output $y_{\mathrm{no}} \in B$ at level $n_1$ and property 2, by
+downward induction along the levels between $r(e)$ and $n_1$ (at which the first branch
+does not fire either), give $x_e \in B$, a contradiction. Hence $g(e) = x_e \in A$.
+\end{proof}
+
+\begin{lemma}[Compressibility criterion, nested classes]
+\label{lem:compressible-criterion-nested}
+\uses{def:succinct,lem:universal-tm,lem:smn,lem:kleene}
+\lean{MIPRE.Cost.compressibility_criterion_nested}
+\leanok
+Let $A$ and $B_0 \subseteq B_1$ be families of languages indexed by the level $n$, with
+distinguished elements $y_{\mathrm{yes}} \in A(n)$ and $y_{\mathrm{no}} \in B_0(n)$ at every
+level $n \geq n_0$, and suppose that the complement of $B_1$ is recursively enumerable
+uniformly in the level: there is a program $S$ that halts on $(x, n)$ if and only if
+$x \notin B_1(n)$. Suppose there is a polynomial-time computable $\compr$ such that whenever
+$c$ is a succinct description with parameter $n \geq n_0$ of a string $x$ with
+$\abs{x} \leq n + 1$ and $2\abs{c} \leq n$, and $y = \compr(c, n)$:
+\begin{enumerate}
+\item if $x \in A(2n+1)$ then $y \in A(n)$, and
+\item if $x \in B_0(2n+1)$ then $y \in B_0(n)$.
+\end{enumerate}
+Then there are a polynomial-time computable $g$ and a constant $K$ such that, with
+$r(e) = 2^{K + 1 + \abs{e}} \geq n_0$, for every machine $e$: if $\phi_e$ halts on the
+empty input then $g(e) \in A(r(e))$, and otherwise $g(e) \in B_1(r(e))$.
+\end{lemma}
+
+\begin{proof}
+\leanok
+The proof of Lemma~\ref{lem:compressible-criterion} unchanged, with the two roles of $B$
+separated. The search branch of the self-referential decider runs $S$ on the string at the
+start level, so it fires only if that string is outside $B_1$, and eventually fires if it
+is. The downward induction that puts every level of the recursion in the class of
+$y_{\mathrm{no}}$ runs inside $B_0$, from $y_{\mathrm{no}} \in B_0$ by item 2. In the halting
+case the search cannot fire before $e$ halts, since firing at a level would put the start
+string in $B_0 \subseteq B_1$, against its firing at all; so preservation of $A$ applies from
+the level where $e$ halts. In the non-halting case, if the start string were outside $B_1$
+the search would fire, and the induction would put it in $B_0 \subseteq B_1$.
+Lemma~\ref{lem:compressible-criterion} is the case $B_0 = B_1$, and the Lean proves it that
+way.
+
+This is the form the $\coRE$ direction of $\MIPco = \coRE$ needs
+(Section~\ref{sec:ds-mipco}): the compressor is asked to preserve a class of perfect
+strategies that compression completeness supplies, while the search recognizes the
+complement of the larger class of value $1$, which no compression theorem preserves.
+\end{proof}
+
+\paragraph{Source.} Lin~\cite{Lin25}, the compression criterion for $\RE$-complete
+problems (direction ``weakly compressible implies $\RE$-complete''), whose
+self-referential sequence has exactly these three branches; the formulation through
+succinct descriptions is that of~\cite{MNY} and of Lemma~\ref{lem:recursive-compression}.
+Lin's theorem is an equivalence: given that the no-instances form a $\coRE$ set, a
+decision problem is $\RE$-complete if and only if it is compressible.
+
+\paragraph{Comments.} This is the lemma the main theorem uses
+(Section~\ref{sec:ps-halting}): $A$ is the set of normal form verifier descriptions with a
+value-$1$ PCC strategy, $B$ the set of those with $\valstar \leq \frac12$, and $S$ the
+$\valstar$ half of the enumeration of Lemma~\ref{lem:value-lower-approx}. Compared with
+Lemma~\ref{lem:recursive-compression}, the growth hypothesis on a measure is replaced by
+the semidecidability of the complement of $B$ --- both directions of the specification of
+$S$ are used --- and nothing about entanglement is required of the compression procedure.
+The Lean proof reuses the toolkit of Section~\ref{sec:rr-computability}: the search
+branch runs the semidecision procedure through the clocked universal machine, and the
+start level of the recursion is carried as data next to the current level.
+
+The Lean file proves a \emph{per-level} form first,
+\texttt{compressibility\_criterion\_levels}, and derives the statement above from it. There
+the classes are families $A_n, B_n$ indexed by the level $n$ of the recursion, the
+semidecision procedure receives the pair $(x, n)$, and the compression hypothesis reads: for
+$n \geq n_0$, if $\hat x$ describes $x$ succinctly with parameter $n$ and $2\abs{\hat x}
+\leq n$, then $x \in A_{2n+1}$ implies $\compr(\hat x, n) \in A_n$, and likewise for $B$;
+the conclusion places $g(e)$ in $A_{r(e)}$ or $B_{r(e)}$ at the explicit start level $r(e)
+= 2^{K + 1 + \abs{e}}$, which is at least $n_0$. This is exactly what the proof uses, and
+it is the form an instantiation by gap-preserving compression can meet
+(Remark~\ref{rem:compression-abstract}): $\compr$ runs in time polynomial in the
+\emph{length} of $(\hat x, n)$, hence polylogarithmic in $n$, while a single bit query to
+$\hat x$ costs up to $n$, so $\compr$ cannot read the string $x$ it compresses and can only
+embed $\hat x$ into its output, for a reader whose budget is polynomial in $n$ --- the
+decider of a game at index $n$. The size slack $2\abs{\hat x} \leq n$ keeps that output
+short, and the levels are what let the class of the output be judged at the index where
+it is played.
+
+The hypothesis $\abs{x} \leq n + 1$ is not an extra demand on $\compr$ but a \emph{weakening} of
+what it must cover, and it was added because obligation O4 cannot be met without it. The
+proof already has it: the described string is the output of a run whose cost the threshold
+constant bounds by $n + 1$, so $\abs{x} \leq \abs{\mathrm{encode}(x)} \leq t \leq n + 1$,
+and until this was carried over the proof discarded it into
+Definition~\ref{def:succinct}'s $\abs{x} \leq 2^n$ through $n + 1 \leq 2^n$. Why O4 needs
+it: the class $A$ of the halting reduction asks for a value-$1$ PCC strategy at the answer
+bound $\poly(n, \lambda_x)$ read off the described string's own compression parameter
+$\lambda_x$, while the only source of such a strategy for a compressed verifier is the
+completeness clause of Theorem~\ref{thm:compression}, which takes its input at the bound
+$(2^n)^\lambda$ with $\lambda$ the parameter the compressor \emph{writes into its output} and so
+bounded by the compressor's own output size. Nothing in Definition~\ref{def:lambda-bounded}
+constrains $\lambda_x$ --- for a compression procedure whose compressed sampler does not vary
+with $\lambda$, membership in either class is insensitive to it --- so with only
+$\abs{x} \leq 2^n$ the two bounds cannot be related by any single choice of $\lambda$. With
+$\abs{x} \leq n + 1$ we get $\lambda_x < 2^{n+1}$, hence an answer bound of
+$2^{O(n)}$ against $(2^n)^\lambda$, which $\lambda \geq 2\deg(\mathrm{bound}) + 1$ already
+dominates for $n$ above a threshold read off $\mathrm{bound}$ as well; the Lean says so and
+checks it (\texttt{MIPRE.Halting.exists\_ansBound\_le}).
+
+That settles the class $A$ direction. The class $B$ direction needs the same inequality read
+the other way --- the soundness clause of Theorem~\ref{thm:compression} wants the value
+bounded at $(2^n)^\lambda$, and enlarging the answer bound can only raise a value --- so a
+single $\lambda$ serves both only once the described string's own decider is known to reject
+answers longer than its answer bound, which is what $\mathrm{poly}(n, \lambda_x)$ was chosen
+to be. The paper's $\vhalt$ has that by construction --- Step~6 of its decider is an explicit
+length check, spent in the amended proof of Lemma~\ref{lem:dhalt-values} --- and the
+instantiation asks for it as a clause of membership in $A_n$ and $B_n$
+(Remark~\ref{rem:compression-abstract}, item 1; \texttt{Verifier.RejectsLong}): the two
+distinguished strings have it, the compressor's output has it by the length check of
+Theorem~\ref{thm:compression}'s decider (\texttt{output\_rejects\_long}), and its violation is
+enumerable (Lemma~\ref{lem:halting-semidecider}). The alternative, a well-formedness predicate
+threaded through this lemma and instantiated to the same clause, would have left the classes
+alone and touched this lemma's proof instead; the classes were chosen so that this lemma stays
+as stated. Nothing more is asked of it.
+
+\effortEasy
+
+\begin{lemma}[Halting form of the two reduction lemmas]
+\label{lem:halting-form}
+\uses{lem:recursive-compression,lem:compressible-criterion}
+\lean{MIPRE.Cost.recursive_compression_halting,
+MIPRE.Cost.compressibility_criterion_halting}
+\leanok
+Lemma~\ref{lem:recursive-compression} and Lemma~\ref{lem:compressible-criterion} both
+hold with the halting problem taken in the ambient formalization's own form: the reduction
+may be presented as a computable map defined on the codes of a fixed G\"odel numbering of
+the partial recursive functions, halting being halting of the code on input $0$, rather
+than on the programs of the cost model in which the two lemmas are proved.
+\end{lemma}
+
+\begin{proof}
+\leanok
+\uses{lem:recursive-compression,lem:compressible-criterion}
+Compose the reduction with a compiler from codes to programs of the cost model that is
+computable on descriptions and preserves halting on the empty input: hardcode the code's
+index into a fixed program for the universal partial function, which exists because that
+partial function is partial recursive, and observe that the description of the result is a
+fixed primitive recursive tree around the index. Only the interface changes; neither
+lemma's content is touched, and the compiler carries no time bound, which is why this step
+is available for the computable version of the main theorem and not for the
+polynomial-time one.
+\end{proof}
+
+\paragraph{Comments.} This is the seam at which the development meets Mathlib's halting
+problem, hence the form Theorem~\ref{thm:main} consumes: \texttt{Nat.Partrec.Code} is
+what \texttt{Computable} is stated against, while the two reduction lemmas are proved
+about programs of the cost model of Section~\ref{sec:rr-computability}, whose
+polynomial-time predicate the fixed-point construction needs. Separating the two keeps the
+cost model out of the main statement entirely.
+
+\subsection{Deciding a cost budget, and semideciders on encoded values}
+\label{sec:rr-cost-budget}
+
+Lemma~\ref{lem:compressible-criterion} consumes semidecidability as an \emph{equivalence}:
+its program $S$ halts on exactly the complement of $B$. When the criterion is instantiated
+by the halting reduction that complement is a disjunction of two searches
+(Remark~\ref{rem:compression-abstract}, item 3), one of them for an input on which a time
+bound of Definition~\ref{def:lambda-bounded} fails. Recognizing such an input exactly ---
+and not merely recognizing a program that runs for a long time --- is what the first lemma
+here provides; the second moves the resulting semidecider off bit strings, the criterion's
+$B$ being indexed by a level as well as a string.
+
+\begin{lemma}[Halting within a cost budget is decidable]
+\label{lem:cost-budget-decidable}
+\lean{MIPRE.Cost.Machine.stepCostD, MIPRE.Cost.Machine.stepCostD_toData,
+  MIPRE.Cost.Machine.costStep, MIPRE.Cost.Machine.costStep_iterate,
+  MIPRE.Cost.Machine.evalForCostD, MIPRE.Cost.Machine.evalForCostD_eq_some,
+  MIPRE.Cost.Machine.haltsWithin_of_evalForCostD,
+  MIPRE.Cost.Machine.haltsWithin_iff_evalForCostD, MIPRE.Cost.Machine.haltsWithinB,
+  MIPRE.Cost.Machine.primrec_haltsWithinB, MIPRE.Cost.decidableHaltsWithin}
+\leanok
+Whether a program of the cost model halts on a given input within a given cost is a
+primitive recursive predicate of the program, the input and the cost; in particular it is
+decidable.
+\end{lemma}
+
+\begin{proof}
+\leanok
+Carry the cost along the run. The cost the evaluation machine charges at a step is a
+function of the configuration alone, so it is a function of the encoded configuration too
+(\texttt{Machine.stepCostD}, dispatching on the same seven program tags and four frame tags
+as the step function itself, and primitive recursive for the same reason); iterating the
+step function paired with the running total, from the initial configuration and total $0$,
+therefore computes the pair (configuration, accumulated cost) at every step
+(\texttt{costStep\_iterate}). A derivation of cost $t$ is a machine run of at most $3t$
+steps, so $3k + 1$ iterations suffice to reach the end of every run of cost at most $k$;
+and once the end is reached nothing more is charged, a final configuration being fixed by
+the step function and free. So the test is: iterate $3k + 1$ times, and report success if
+the configuration reached is final \emph{and} the total is at most $k$
+(\texttt{evalForCostD}). Completeness is the step count above; soundness is that the total
+at a final configuration is the cost of the derivation that reached it, which is the
+backward direction of the machine--derivation correspondence together with the freeness of
+the steps after the end.
+\end{proof}
+
+\paragraph{Comments.} A step budget does not decide a cost budget, which is why this is not
+a corollary of \texttt{Machine.runForD} (Remark~\ref{rem:compression-abstract}, item 3): a
+step is not a unit of cost, reading a variable or a constant being charged the size of the
+value, so a run of $3k$ steps can cost far more than $k$ and finding a value after $3k$
+steps says only that the program halted. The clocked universal machine of
+Lemma~\ref{lem:universal-tm} decides the same question as a \emph{program}; what is added
+here is the Lean-level decision procedure, which is what a computability statement about a
+family of verifiers can be built from.
+
+\effortEasy
+
+\begin{lemma}[Semideciders on encoded values]
+\label{lem:semidecide-encoded}
+\lean{MIPRE.Cost.Data.primrec_decode_prod_nat, MIPRE.Cost.exists_semidecider_of_decode,
+  MIPRE.Cost.exists_semidecider_prod_nat}
+\leanok
+Let $\alpha$ be a type encoded as data with a primitive recursive decoding. Then every
+recursively enumerable predicate on $\alpha$ is the halting set of a closed program of the
+cost model on the encodings of its arguments. In particular this holds for pairs
+$(x, n)$ of a bit string and a number.
+\end{lemma}
+
+\begin{proof}
+\uses{lem:value-lower-approx}
+\leanok
+Prefix the bit-string semidecider of Lemma~\ref{lem:value-lower-approx} with the program
+that writes the postorder serialization of its input (\texttt{Prog.serProg},
+Remark~\ref{rem:compression-abstract}). Serialization and the stack machine
+\texttt{Data.parse} invert each other, so the predicate ``decode the parse of this bit
+string, and test it'' holds of the serialization of $\mathrm{encode}(a)$ exactly when the
+original predicate holds of $a$; and it is recursively enumerable, being the original
+predicate precomposed with a computable function.
+\end{proof}
+
+\paragraph{Comments.} The detour through a serialization is what keeps the translation into
+\texttt{ToPartrec} codes untouched. That translation is delicate for one reason --- a
+\texttt{ToPartrec} code cannot see trailing zeros of its input list, while the bit
+\texttt{false} encodes as the datum $\mathtt{nil}$ --- and doing it again for each new type
+of argument would repeat the delicate step; serializing first does it once.
+
+\effortEasy

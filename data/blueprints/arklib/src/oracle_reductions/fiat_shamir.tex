@@ -1,0 +1,176 @@
+\section{The Fiat-Shamir Transformation}\label{sec:fiat_shamir}
+
+The Fiat--Shamir transformation turns a public-coin interactive reduction into a non-interactive
+one. The prover computes all of its messages at once, and both parties derive each verifier
+challenge by querying a challenge oracle on the input statement and the prover messages sent before
+that challenge. In the security analysis this oracle is a random oracle.
+
+ArkLib formalizes the basic (or slow) variant, which hashes the whole statement and message prefix
+for each challenge. The same challenge oracle serves as the state-restoration oracle, so the
+definitions below carry both names. Salted variants are covered by placing the salts in the input
+statement.
+
+\subsection{The Challenge Oracle}\label{sec:fiat_shamir_oracle_interface}
+
+Let $\pSpec$ be a protocol specification and $\StmtIn$ the input statement type. Write
+$\pSpec.\MessagesUpTo\ k$ for the prover messages among the first $k$ rounds.
+
+\begin{definition}[Challenge Oracle Interface]
+    \label{def:fiat_shamir_challenge_oracle_interface}
+    For each challenge index $i : \pSpec.\ChallengeIdx$, the state-restoration (and Fiat--Shamir)
+    oracle interface on $\pSpec.\Challenge\ i$ has:
+    \begin{itemize}
+        \item \textbf{Query type}: $\StmtIn \times \pSpec.\MessagesUpTo\ i.\mathsf{val}.\mathsf{castSucc}$,
+        the input statement together with the prover messages sent before round $i$;
+        \item \textbf{Response type}: $\pSpec.\Challenge\ i$;
+        \item \textbf{Oracle behavior}: return the challenge itself.
+    \end{itemize}
+    The Lean name is $\mathsf{challengeOracleInterfaceSR}$, with alias
+    $\mathsf{challengeOracleInterfaceFS}$.
+    \lean{ProtocolSpec.challengeOracleInterfaceSR, ProtocolSpec.challengeOracleInterfaceFS}
+    \leanok
+\end{definition}
+
+\begin{definition}[Challenge Oracle Specification]
+    \label{def:fiat_shamir_spec}
+    The challenge oracle specification is
+    \[ \mathsf{srChallengeOracle}\ \StmtIn\ \pSpec : \OracleSpec\ \big((i : \pSpec.\ChallengeIdx) \times (\StmtIn \times \pSpec.\MessagesUpTo\ i.\mathsf{val}.\mathsf{castSucc})\big), \]
+    which answers the query $\langle i, (x, m) \rangle$ with a value of type $\pSpec.\Challenge\ i$.
+    The index type pairs a challenge round with a query of the interface of
+    \Cref{def:fiat_shamir_challenge_oracle_interface}. The name $\mathsf{fsChallengeOracle}$ is an
+    alias.
+    \lean{ProtocolSpec.srChallengeOracle, ProtocolSpec.fsChallengeOracle}
+    \leanok
+    \uses{def:fiat_shamir_challenge_oracle_interface}
+\end{definition}
+
+\subsection{Fiat-Shamir Transformation for Provers}\label{sec:fiat_shamir_prover}
+
+The transformed prover runs the interactive prover, answering its own challenges with oracle
+queries. All definitions in this section and the next run in the oracle specification
+$\oSpec \mathrel{+} \mathsf{srChallengeOracle}\ \StmtIn\ \pSpec$.
+
+\begin{definition}[Fiat-Shamir Round Processing]
+    \label{def:prover_process_round_fs}
+    Given the prover messages so far, the input statement and the prover state before round $j$,
+    $\mathsf{processRoundFS}\ j$ computes the same data after round $j$:
+    \begin{itemize}
+        \item If $j$ is a challenge round, it queries the challenge oracle at
+        $\langle j, (x, m) \rangle$, where $x$ is the statement and $m$ the messages so far, and
+        passes the answer to the prover's $\mathsf{receiveChallenge}$.
+        \item If $j$ is a message round, it runs the prover's $\mathsf{sendMessage}$ and appends
+        the message.
+    \end{itemize}
+    Only prover messages are accumulated; challenges are not stored.
+    \lean{Prover.processRoundFS}
+    \leanok
+    \uses{def:fiat_shamir_spec}
+\end{definition}
+
+\begin{definition}[Fiat-Shamir Prover Execution]
+    \label{def:prover_run_to_round_fs}
+    $\mathsf{runToRoundFS}\ i\ \mathsf{stmt}\ \mathsf{prover}\ \mathsf{state}$ starts from the
+    empty message prefix, the statement and the prover state at round $0$, and applies
+    $\mathsf{processRoundFS}$ to rounds $0, \ldots, i - 1$. It returns the messages up to round
+    $i$, the statement and the prover state at round $i$.
+    \lean{Prover.runToRoundFS}
+    \leanok
+    \uses{def:prover_process_round_fs}
+\end{definition}
+
+\begin{definition}[Fiat-Shamir Prover Transformation]
+    \label{def:prover_fiat_shamir}
+    Given an interactive prover $P$ for $\pSpec$, the transformation produces a non-interactive
+    prover
+    \[ P.\mathsf{fiatShamir} : \NonInteractiveProver\ (\forall i, \pSpec.\Message\ i)\ (\oSpec \mathrel{+} \mathsf{srChallengeOracle}\ \StmtIn\ \pSpec)\ \StmtIn\ \WitIn\ \StmtOut\ \WitOut . \]
+    Its state at round $0$ pairs the statement with $P$'s initial state; afterwards it is $P$'s
+    final state. Its single message is the vector of all of $P$'s messages, computed by
+    $\mathsf{runToRoundFS}$ up to the last round. It receives no challenges and outputs through
+    $P$'s output function.
+    \lean{Prover.fiatShamir}
+    \leanok
+    \uses{def:prover_run_to_round_fs}
+\end{definition}
+
+\subsection{Transcript Derivation and Verifier Transformation}\label{sec:fiat_shamir_verifier}
+
+\begin{definition}[Fiat-Shamir Transcript Derivation]
+    \label{def:derive_transcript_fs}
+    Given an input statement $x$ and all prover messages, $\mathsf{deriveTranscriptFS}$
+    reconstructs the full transcript
+    \[ \mathsf{messages}.\mathsf{deriveTranscriptFS}\ x : \OracleComp\ (\oSpec \mathrel{+} \mathsf{srChallengeOracle}\ \StmtIn\ \pSpec)\ (\pSpec.\FullTranscript) . \]
+    Round by round, it copies each prover message and obtains each challenge by querying the
+    challenge oracle at the statement and the messages before that round. The name is an alias of
+    $\mathsf{deriveTranscriptSR}$.
+    \lean{ProtocolSpec.Messages.deriveTranscriptFS}
+    \leanok
+    \uses{def:fiat_shamir_spec}
+\end{definition}
+
+\begin{definition}[Fiat-Shamir Verifier Transformation]
+    \label{def:verifier_fiat_shamir}
+    Given an interactive verifier $V$ for $\pSpec$, the transformation produces a non-interactive
+    verifier
+    \[ V.\mathsf{fiatShamir} : \NonInteractiveVerifier\ (\forall i, \pSpec.\Message\ i)\ (\oSpec \mathrel{+} \mathsf{srChallengeOracle}\ \StmtIn\ \pSpec)\ \StmtIn\ \StmtOut . \]
+    On a statement and a proof consisting of all prover messages, it derives the full transcript
+    with $\mathsf{deriveTranscriptFS}$ and runs $V$'s verification on it.
+    \lean{Verifier.fiatShamir}
+    \leanok
+    \uses{def:derive_transcript_fs}
+\end{definition}
+
+\subsection{Fiat-Shamir Transformation for Reductions}\label{sec:fiat_shamir_reduction}
+
+\begin{definition}[Fiat-Shamir Reduction Transformation]
+    \label{def:reduction_fiat_shamir}
+    Given an interactive reduction $R$ for $\pSpec$, its transform
+    \[ R.\mathsf{fiatShamir} : \NonInteractiveReduction\ (\forall i, \pSpec.\Message\ i)\ (\oSpec \mathrel{+} \mathsf{srChallengeOracle}\ \StmtIn\ \pSpec)\ \StmtIn\ \WitIn\ \StmtOut\ \WitOut \]
+    applies the transformation to the prover and to the verifier of $R$.
+    \lean{Reduction.fiatShamir}
+    \leanok
+    \uses{def:prover_fiat_shamir, def:verifier_fiat_shamir}
+\end{definition}
+
+\subsection{Security Properties}\label{sec:fiat_shamir_security}
+
+\begin{theorem}[Fiat-Shamir Preserves Completeness]
+    \label{thm:fiat_shamir_completeness}
+    If an interactive reduction $R$ has perfect completeness, its Fiat--Shamir transform has
+    perfect completeness for every fixed challenge table.
+
+    If $R$ has completeness error $\epsilon$, its Fiat--Shamir transform has completeness error
+    $\epsilon$ when the challenge oracle is a lazily sampled random oracle shared by prover and
+    verifier, starting from an empty cache. This needs only decidable equality of the oracle's
+    query type. Both claims use the same input and output relations as $R$.
+    \lean{fiatShamir_perfectCompleteness, fiatShamir_completeness_randomOracle}
+    \leanok
+    \uses{def:reduction_fiat_shamir}
+\end{theorem}
+\begin{proof}
+    \leanok
+    Each uniform interactive challenge has full support, so every honest transformed execution is
+    an interactive branch, and verifier reconstruction replays exactly that branch. For the random
+    oracle, the honest prover's queries are at distinct round indices and hence fresh, and
+    reconstruction reads the cached answers.
+\end{proof}
+
+\begin{remark}[Soundness and zero-knowledge]
+    The expected route to soundness of the transform is the following:
+    \begin{itemize}
+        \item state-restoration knowledge soundness of the interactive reduction implies knowledge
+        soundness of its Fiat--Shamir transform in the random oracle model;
+        \item honest-verifier zero-knowledge of the interactive reduction implies zero-knowledge
+        of the transform.
+    \end{itemize}
+    State-restoration knowledge soundness itself is proved for fixed-round oracle protocols in
+    the interaction layer, from round-by-round knowledge certificates, with error $(Q + k)\cdot\epsilon$
+    (\Cref{thm:sr_knowledge_soundness}). The two transfers above are not formalized, and
+    zero-knowledge is not defined (\Cref{def:simulator}). \texttt{docs/design/00-current-status.md}
+    records the status of this work.
+\end{remark}
+
+\begin{remark}[Implementation considerations]
+    Practical Fiat--Shamir implementations absorb transcript elements into a cryptographic sponge
+    incrementally and squeeze challenges from it. ArkLib formalizes only the basic variant above;
+    it has no sponge-based variant.
+\end{remark}

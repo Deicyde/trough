@@ -5,7 +5,8 @@
 # names "build") is refreshed elsewhere.
 #
 # The commit job records the new sources in the newest main, regenerates the
-# pages there, and starts the Pages and Tests workflows.
+# pages there, and starts the Pages and Tests workflows. A library whose refresh
+# refuses keeps main's copy, the others go ahead, and the run fails at the end.
 
 name: Blueprint data
 
@@ -32,6 +33,7 @@ jobs:
     outputs:
       changed: ${{ steps.compare.outputs.changed }}
       libraries: ${{ steps.refresh.outputs.libraries }}
+      failed: ${{ steps.refresh.outputs.failed }}
     steps:
       - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
         with:
@@ -50,6 +52,7 @@ jobs:
         run: |
           set -euo pipefail
           refreshed=()
+          failed=()
           for source in data/blueprints/*/source.json; do
             id=$(basename "$(dirname "$source")")
             if [ -n "$LIBRARY" ] && [ "$id" != "$LIBRARY" ]; then continue; fi
@@ -57,12 +60,17 @@ jobs:
             repo=$(jq -r .repo "$source")
             entry=$(jq -r .entry "$source")
             checkout="$RUNNER_TEMP/src/$id"
-            git clone --quiet --depth 1 --filter=blob:none --sparse "https://github.com/$repo.git" "$checkout"
-            git -C "$checkout" sparse-checkout set "$(dirname "$entry")"
-            uv run --no-dev python tools/refresh_blueprints.py "$id" "$checkout"
-            refreshed+=("$id")
+            if git clone --quiet --depth 1 --filter=blob:none --sparse "https://github.com/$repo.git" "$checkout" &&
+              git -C "$checkout" sparse-checkout set "$(dirname "$entry")" &&
+              uv run --no-dev python tools/refresh_blueprints.py "$id" "$checkout"; then
+              refreshed+=("$id")
+            else
+              echo "::error::$id: the refresh refused or failed; main's copy stays"
+              failed+=("$id")
+            fi
           done
           echo "libraries=${refreshed[*]}" >> "$GITHUB_OUTPUT"
+          echo "failed=${failed[*]}" >> "$GITHUB_OUTPUT"
 
       - name: Regenerate the pages
         run: uv run --no-dev python tools/generate.py
@@ -160,3 +168,16 @@ jobs:
           fi
           gh workflow run pages.yml --ref main -R "$GITHUB_REPOSITORY"
           gh workflow run tests.yml --ref main -R "$GITHUB_REPOSITORY"
+
+  # A library whose refresh refused fails the run, after the others are recorded.
+  refused:
+    needs: [refresh, commit]
+    if: always() && needs.refresh.outputs.failed != ''
+    runs-on: ubuntu-latest
+    steps:
+      - name: Name the libraries whose refresh refused
+        env:
+          FAILED: ${{ needs.refresh.outputs.failed }}
+        run: |
+          echo "::error::Not refreshed: $FAILED (see the refresh job's log)"
+          exit 1

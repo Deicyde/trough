@@ -17,8 +17,9 @@ A blueprint that LeanArchitect writes needs the checkout built first, with
 `lake build :blueprint`; its output, from .lake/build/blueprint or --architect,
 is copied into src/leanarchitect/, and source.json says how it was built.
 
-Nothing is written when the blueprint names a file the checkout lacks, has no
-nodes, or has under half the nodes of the last refresh (--force writes anyway).
+Nothing is written when the blueprint names a file the checkout lacks (a missing
+.bbl or .md, which holds no blueprint text, is only reported), has no nodes, or
+has under half the nodes of the last refresh (--force writes anyway).
 """
 
 from __future__ import annotations
@@ -121,7 +122,7 @@ def main() -> int:
     for stale in ("structure.json", "LICENSE"):
         (directory / stale).unlink(missing_ok=True)
     if text:
-        for name in blueprint.files + blueprint.bibliography:
+        for name in blueprint.files + blueprint.bibliography + blueprint.print_files:
             target = directory / "src" / name
             target.parent.mkdir(parents=True, exist_ok=True)
             lake = name.removeprefix(f"{leanblueprint.ARCHITECT}/")

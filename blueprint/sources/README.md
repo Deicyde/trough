@@ -10,11 +10,27 @@ Trough reads these sources. The catalog of libraries is `catalog/libraries.toml`
 
 ## Blueprints
 
-- `data/blueprints/flt/`: the TeX of [Fermat's Last Theorem (Imperial)'s blueprint](https://github.com/ImperialCollegeLondon/FLT), pinned in its source.json, Apache-2.0; the license is copied beside it.
-- `data/blueprints/pnt-plus/`: the TeX of [PNT+'s blueprint](https://github.com/AlexKontorovich/PrimeNumberTheoremAnd), pinned in its source.json, Apache-2.0; the license is copied beside it.
-- `data/blueprints/pfr/`: the TeX of [Polynomial Freiman-Ruzsa's blueprint](https://github.com/teorth/pfr), pinned in its source.json, Apache-2.0; the license is copied beside it.
-- `data/blueprints/equational-theories/`: the TeX of [Equational Theories's blueprint](https://github.com/teorth/equational_theories), pinned in its source.json, Apache-2.0; the license is copied beside it.
-- `data/blueprints/strongpnt/structure.json`: the titles, labels, Lean names, marks and places of [Strong PNT (Math Inc)'s blueprint](https://github.com/math-inc/strongpnt); it gives no license, so its text is not copied.
+- `data/blueprints/flt/`: the TeX of the blueprint of [Fermat's Last Theorem (Imperial)](https://github.com/ImperialCollegeLondon/FLT), pinned in its source.json, Apache-2.0; the license is copied beside it.
+- `data/blueprints/pnt-plus/`: the TeX of the blueprint of [PNT+](https://github.com/AlexKontorovich/PrimeNumberTheoremAnd), pinned in its source.json, Apache-2.0; the license is copied beside it.
+- `data/blueprints/pfr/`: the TeX of the blueprint of [Polynomial Freiman-Ruzsa](https://github.com/teorth/pfr), pinned in its source.json, Apache-2.0; the license is copied beside it.
+- `data/blueprints/equational-theories/`: the TeX of the blueprint of [Equational Theories](https://github.com/teorth/equational_theories), pinned in its source.json, Apache-2.0; the license is copied beside it.
+- `data/blueprints/strongpnt/structure.json`: the titles, labels, Lean names, marks and places of the blueprint of [Strong PNT (Math Inc)](https://github.com/math-inc/strongpnt); it gives no license, so its text is not copied.
+- `data/blueprints/carleson/`: the TeX of the blueprint of [Carleson's theorem](https://github.com/fpvandoorn/carleson), pinned in its source.json, Apache-2.0; the license is copied beside it.
+- `data/blueprints/sphere-packing/`: the TeX of the blueprint of [Sphere packing in dimension 8](https://github.com/thefundamentaltheor3m/Sphere-Packing-Lean), pinned in its source.json, Apache-2.0; the license is copied beside it.
+- `data/blueprints/sphere-packing-math-inc/`: the TeX of the blueprint of [Sphere packing in dimensions 8 and 24 (Math Inc)](https://github.com/math-inc/Sphere-Packing-Lean), pinned in its source.json, Apache-2.0; the license is copied beside it.
+- `data/blueprints/con-nf/`: the TeX of the blueprint of [Consistency of New Foundations](https://github.com/leanprover-community/con-nf), pinned in its source.json, Apache-2.0; the license is copied beside it.
+- `data/blueprints/brownian-motion/`: the TeX of the blueprint of [Brownian motion](https://github.com/RemyDegenne/brownian-motion), pinned in its source.json, Apache-2.0; the license is copied beside it.
+- `data/blueprints/sphere-eversion/`: the TeX of the blueprint of [Sphere eversion](https://github.com/leanprover-community/sphere-eversion), pinned in its source.json, Apache-2.0; the license is copied beside it.
+- `data/blueprints/noperthedron/`: the TeX of the blueprint of [Noperthedron](https://github.com/jcreedcmu/Noperthedron), pinned in its source.json, Apache-2.0; the license is copied beside it.
+- `data/blueprints/kummer-criterion/`: the TeX of the blueprint of [Kummer's criterion](https://github.com/riccardobrasca/KummerCriterion), pinned in its source.json, Apache-2.0; the license is copied beside it.
+- `data/blueprints/apap/`: the TeX of the blueprint of [Kelley-Meka bound](https://github.com/YaelDillies/apap), pinned in its source.json, Apache-2.0; the license is copied beside it.
+- `data/blueprints/exchangeability/`: the TeX of the blueprint of [Exchangeability and de Finetti](https://github.com/cameronfreer/exchangeability), pinned in its source.json, Apache-2.0; the license is copied beside it.
+- `data/blueprints/class-field-theory/`: the TeX of the blueprint of [Class field theory](https://github.com/kbuzzard/ClassFieldTheory), pinned in its source.json, Apache-2.0; the license is copied beside it.
+- `data/blueprints/testing-lower-bounds/`: the TeX of the blueprint of [Lower bounds for hypothesis testing](https://github.com/RemyDegenne/testing-lower-bounds), pinned in its source.json, Apache-2.0; the license is copied beside it.
+- `data/blueprints/mip-re/`: the TeX of the blueprint of [MIP* = RE](https://github.com/vidick/MIPRE-formalization), pinned in its source.json, Apache-2.0; the license is copied beside it.
+- `data/blueprints/arklib/`: the TeX of the blueprint of [ArkLib](https://github.com/Verified-zkEVM/ArkLib), pinned in its source.json, Apache-2.0; the license is copied beside it.
+- `data/blueprints/formal-book/`: the TeX of the blueprint of [Formal Book](https://github.com/mo271/FormalBook), pinned in its source.json, Apache-2.0; the license is copied beside it.
+- `data/blueprints/toric/`: the TeX of the blueprint of [Toric varieties](https://github.com/YaelDillies/toric), pinned in its source.json, Apache-2.0; the license is copied beside it.
 
 ## Tau Ceti
 
@@ -93,10 +109,26 @@ Trough reads these sources. The catalog of libraries is `catalog/libraries.toml`
 ### Research projects with blueprints
 
 - [Fermat's Last Theorem (Imperial)](https://github.com/ImperialCollegeLondon/FLT) at a3210204ad88: Ongoing formalization of the Wiles/Taylor-Wiles proof of Fermat's Last Theorem, reduced to 1980s-known results (FLT/KnownIn1980s, Assumptions).
-- [PNT+](https://github.com/AlexKontorovich/PrimeNumberTheoremAnd) at 127b50e33f60: Prime Number Theorem and extensions: Wiener-Ikehara, medium/strong error terms, IEANTN (126 files), zero-free regions, explicit estimates.
-- [Polynomial Freiman-Ruzsa](https://github.com/teorth/pfr) at 7e7fadf0c4d0: Polynomial Freiman-Ruzsa conjecture (Gowers-Green-Manners-Tao) and related results: entropy and Ruzsa distance, torsion and integer versions, improved exponents.
-- [Equational Theories](https://github.com/teorth/equational_theories) at 2ddb16c4c4c0: The implication graph between equational laws of magmas (crowdsourced and automated).
+- [PNT+](https://github.com/AlexKontorovich/PrimeNumberTheoremAnd) at a4fb6989b07e: Prime Number Theorem and extensions: Wiener-Ikehara, medium/strong error terms, IEANTN (126 files), zero-free regions, explicit estimates.
+- [Polynomial Freiman-Ruzsa](https://github.com/teorth/pfr) at 1ef23c3c5a83: Polynomial Freiman-Ruzsa conjecture (Gowers-Green-Manners-Tao) and related results: entropy and Ruzsa distance, torsion and integer versions, improved exponents.
+- [Equational Theories](https://github.com/teorth/equational_theories) at 8b87204d5b20: The implication graph between equational laws of magmas (crowdsourced and automated).
 - [Strong PNT (Math Inc)](https://github.com/math-inc/strongpnt) at 2f5835c32231: Strong Prime Number Theorem with classical de la Vallee Poussin error term, produced by Math Inc's Gauss agent.
+- [Carleson's theorem](https://github.com/fpvandoorn/carleson) at d4446d3cab5d: Carleson's theorem on pointwise almost everywhere convergence of Fourier series, through a general Carleson theorem for doubling metric measure spaces.
+- [Sphere packing in dimension 8](https://github.com/thefundamentaltheor3m/Sphere-Packing-Lean) at efe3bbbc1ece: Ongoing formalization of Viazovska's solution of the sphere packing problem in dimension 8, whose main theorem is stated without proof at this commit; the Math Inc fork completes it.
+- [Sphere packing in dimensions 8 and 24 (Math Inc)](https://github.com/math-inc/Sphere-Packing-Lean) at 1e98fb493088: Sphere-packing optimality in dimensions 8 and 24, and uniqueness among periodic packings in dimension 24, completed by Math Inc's autoformalization agent Gauss from the original project's repository and blueprint.
+- [Consistency of New Foundations](https://github.com/leanprover-community/con-nf) at edbce7eb9835: The consistency of Quine's set theory New Foundations, through Holmes's construction of a model of tangled type theory.
+- [Brownian motion](https://github.com/RemyDegenne/brownian-motion) at 8fd8dc52830c: Stochastic processes and stochastic integration: Brownian motion, complete, through Gaussian distributions, a projective family of Gaussian distributions and its limit by the Kolmogorov extension theorem, and a Kolmogorov-Chentsov continuity theorem; stochastic integrals and Itô's lemma, in progress.
+- [Sphere eversion](https://github.com/leanprover-community/sphere-eversion) at 33ab3d626854: The existence of sphere eversions, through Gromov's h-principle for open and ample differential relations.
+- [Noperthedron](https://github.com/jcreedcmu/Noperthedron) at 434011e64752: The Noperthedron, a convex polyhedron of Steininger and Yurkevich, does not have the Rupert property.
+- [Kummer's criterion](https://github.com/riccardobrasca/KummerCriterion) at b96b2cde81e7: Kummer's criterion, which relates the regularity of a prime to the numerators of Bernoulli numbers.
+- [Kelley-Meka bound](https://github.com/YaelDillies/apap) at 5b8cc8c54835: Ongoing formalization of the Kelley-Meka bound on sets without three-term arithmetic progressions, following Bloom and Sisask, through almost-periodicity and Fourier analysis on finite abelian groups.
+- [Exchangeability and de Finetti](https://github.com/cameronfreer/exchangeability) at e0532e59ceff: Exchangeable sequences and three proofs of de Finetti's theorem, following Kallenberg's Probabilistic Symmetries and Invariance Principles.
+- [Class field theory](https://github.com/kbuzzard/ClassFieldTheory) at 629ae9ed7817: An ongoing project to formalize the main theorems of local and global class field theory; the main repository of the 2025 Clay summer school Formalizing Class Field Theory.
+- [Lower bounds for hypothesis testing](https://github.com/RemyDegenne/testing-lower-bounds) at 6c303c98977b: Lower bounds for hypothesis testing based on information theory.
+- [MIP* = RE](https://github.com/vidick/MIPRE-formalization) at 5926bdff5db6: MIP* = RE (Ji, Natarajan, Vidick, Wright and Yuen): a computable map from Turing machines to nonlocal games sending halting machines to games of synchronous value 1 and the others to games of value at most 1/2.
+- [ArkLib](https://github.com/Verified-zkEVM/ArkLib) at e1c185ba001d: Formally verified succinct non-interactive arguments of knowledge (SNARKs): interactive oracle reductions and their completeness and security, from generic theorems about composition and lifting.
+- [Formal Book](https://github.com/mo271/FormalBook) at 7df264a4d5e5: A collaborative, work-in-progress formalization of Aigner and Ziegler's Proofs from THE BOOK, a Lean file for each chapter of the sixth edition.
+- [Toric varieties](https://github.com/YaelDillies/toric) at 5956b80249ec: The theory of toric varieties, following Toric Varieties by Cox, Little and Schenck.
 
 ### Libraries
 

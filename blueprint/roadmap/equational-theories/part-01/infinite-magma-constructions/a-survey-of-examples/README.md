@@ -49,7 +49,7 @@ $$
 x\diamond y = \begin{cases} x+1 & \text{if } x,y \text{ have the same parity} \\ x -1 & \text{otherwise} \end{cases}
 $$
 
-A case analysis shows that the magma $(\mathbb{Z},\diamond)$ satisfies both [E1659](https://teorth.github.io/equational_theories/implications/?1659) and [E4315](https://teorth.github.io/equational_theories/implications/?4315). We will eventually *modify* it by setting
+A case analysis shows that the magma $(\mathbb{Z},\diamond)$ satisfies both [E1659](https://teorth.github.io/equational_theories/implications/?1659) and [E4315](https://teorth.github.io/equational_theories/implications/?4315). …
 
 $$
 x \diamond' y = \begin{cases} 0 & \text{if } x=0,\: x,y \text{ do not have the same parity} \\  x+1 & \text{if } x,y \text{ have the same parity} \\ x -1 & \text{otherwise} \end{cases}
