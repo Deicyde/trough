@@ -1,6 +1,10 @@
 # Sphere packing in dimension 8
 
-The project's blueprint, read at commit [efe3bbbc](https://github.com/thefundamentaltheor3m/Sphere-Packing-Lean/tree/efe3bbbc1ece548f4672a772b94d8f621c10fdda) (2026-11-11): one article for each of its 94 nodes whose Lean declarations it names and marks formalized, or in Mathlib. Its other 45 nodes have no article, and a section of only those is left out: the map records what the project contains, not what it plans. A statement for which the blueprint marks no proof `\leanok` says so. Dependencies are the blueprint's `\uses`: a statement's under *Depends on*, a proof's under *Proof depends on*.
+[thefundamentaltheor3m/Sphere-Packing-Lean](https://github.com/thefundamentaltheor3m/Sphere-Packing-Lean) says in its README:
+
+> This project attempts to formalise some notions about Sphere Packing in Lean.
+
+Its blueprint, by Christopher Birkbeck, Sidharth Hariharan, Seewoo Lee, Gareth Ma, Bhavik Mehta and Maryna Viazovska, read at commit [efe3bbbc](https://github.com/thefundamentaltheor3m/Sphere-Packing-Lean/tree/efe3bbbc1ece548f4672a772b94d8f621c10fdda) (2026-11-11): one article for each of its 94 nodes whose Lean declarations it names and marks formalized, or in Mathlib. Its other 45 nodes have no article, and a section of only those is left out: the map records what the project contains, not what it plans. A statement for which the blueprint marks no proof `\leanok` says so. Dependencies are the blueprint's `\uses`: a statement's under *Depends on*, a proof's under *Proof depends on*.
 
 The repository math-inc/Sphere-Packing-Lean is a fork of this one that completes the formalization in dimensions 8 and 24, and has its own chapter, [Sphere packing in dimensions 8 and 24 (Math Inc)](../sphere-packing-math-inc/README.md). At commit efe3bbbc of this repository and commit 1e98fb49 of the fork, the fork was one commit ahead of this repository and 78 commits behind.
 

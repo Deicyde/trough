@@ -678,6 +678,9 @@ def test_a_proof_that_is_only_notes_is_no_proof(tmp_path):
         "\\end{document}\n")
     built, leaves = build(leanblueprint.read(tmp_path, "web.tex"), tmp_path)
     assert "Proof" not in dict(leaves["a"].notes) and "Proof" not in dict(leaves["b"].notes)
+    for placeholder in ("Omitted for now. …", "Test.", ".", "To do"):
+        assert blueprints.PLACEHOLDER.fullmatch(placeholder)
+    assert not blueprints.PLACEHOLDER.fullmatch("Trivial.") and not blueprints.PLACEHOLDER.fullmatch("To do so, use C.")
     assert dict(leaves["c"].notes)["Proof"] == "One proof is by induction. …"
     assert dict(leaves["d"].notes)["Proof"] == "To do so, use C."
 
@@ -705,3 +708,51 @@ def test_a_page_ends_before_its_articles_pass_the_budget(tmp_path, monkeypatch):
     parts = [entry.node for entry in page.entries]
     assert len(parts) > 1 and all(part.navigation == "transparent" for part in parts)
     assert sum(len(part.entries) for part in parts) == 4
+
+
+@pytest.mark.parametrize("author, names", [
+    (r"\author{Patrick Massot \and Oliver Nash \and Floris van Doorn}", ["Patrick Massot", "Oliver Nash", "Floris van Doorn"]),
+    (r"\author{Lars Becker, \and Leo Diedering}", ["Lars Becker", "Leo Diedering"]),
+    (r"\author{Christopher Birkbeck, Seewoo Lee, \\ Gareth Ma and Maryna Viazovska}",
+     ["Christopher Birkbeck", "Seewoo Lee", "Gareth Ma", "Maryna Viazovska"]),
+    (r"\author{}", []),
+    (r"\author{\input{../../AUTHORS.md}}", []),  # a file it reads them from, which the refresh does not copy
+])
+def test_the_blueprints_authors_are_read(author, names, tmp_path):
+    (tmp_path / "web.tex").write_text(f"{author}\n\\begin{{document}}\\chapter{{A}}\\end{{document}}\n")
+    assert leanblueprint.read(tmp_path, "web.tex").authors == names
+
+
+README = """# Sphere Packing in Lean
+
+[![CI](https://github.com/o/p/actions/workflows/push.yml/badge.svg)](https://github.com/o/p/actions)
+
+> [!WARNING]
+> No longer maintained.
+
+[Completing the formal proof](<https://example.org/sphere-packing>).
+
+This repository formalizes **sphere packing** in
+[dimension 8](Packing/Dim8.lean). It was started in 2024.
+
+## More
+"""
+
+
+def test_the_front_page_quotes_the_readme_and_names_the_authors(tmp_path):
+    src = tmp_path / "src"
+    src.mkdir()
+    (src / "web.tex").write_text("\\author{The Sphere Packing project}\n\\begin{document}\\chapter{C}\n"
+                                 "\\begin{lemma}\\label{a}\\lean{A.b}\\leanok B.\\end{lemma}\n\\end{document}\n")
+    (tmp_path / "README.md").write_text(README)
+    built = blueprints.chapter(project(tmp_path), leanblueprint.read(src, "web.tex"), {})
+    said, quote, opening = built.root.prose.split("\n\n")[:3]
+    assert said == "[o/p](https://github.com/o/p) says in its README:"
+    # Past the title, the badge, the note and the paragraph that is one link; a relative link is read at the commit.
+    assert quote == ("> This repository formalizes **sphere packing** in "
+                     "[dimension 8](https://github.com/o/p/blob/0123456789abcdef/Packing/Dim8.lean).")
+    assert opening.startswith("Its blueprint, by the Sphere Packing project, read at commit [01234567]")
+    # A sentence about plans is not quoted, and a project with no README, or no authors, opens as before.
+    (tmp_path / "README.md").write_text("# P\n\nWe plan to formalize everything.\n")
+    assert blueprints.chapter(project(tmp_path), leanblueprint.read(src, "web.tex"), {}).root.prose.startswith(
+        "The project's blueprint, by the Sphere Packing project, read at commit")

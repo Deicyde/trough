@@ -83,7 +83,9 @@ is marked with an ellipsis.
 
 1. `data/blueprints/<id>/source.json` pins the library's commit, names its
    web entry file and records its node count. `src/` holds the TeX and BibTeX
-   files that entry reads, with the repository's `LICENSE`. Strong PNT gives
+   files that entry reads, with the repository's `LICENSE` and `README.md`
+   beside it. The front page quotes the first sentence of the README's opening
+   text and names the authors the blueprint's `\author` gives. Strong PNT gives
    no license, so it has `structure.json` instead: titles, labels, Lean
    names, marks and places, but no text.
 2. `tools/trough/leanblueprint.py` reads a blueprint the way leanblueprint
