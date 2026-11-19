@@ -203,6 +203,18 @@ def test_a_relative_dochome_is_read_from_the_projects_homepage(tmp_path):
     assert blueprints.chapter(project(tmp_path), blueprint, {}).lean_links["A.b"] == "../docs/find/#doc/A.b"
 
 
+def test_a_project_without_api_documentation_shows_its_names_as_code(tmp_path):
+    (tmp_path / "web.tex").write_text("\\dochome{https://upstream.org/docs}\n\\begin{document}\\chapter{C}\n"
+                                      "\\begin{lemma}\\label{a}\\lean{A.b}\\leanok B.\\end{lemma}\n\\end{document}\n")
+    fork = dataclasses.replace(project(tmp_path), lean_docs=False)
+    built = blueprints.chapter(fork, leanblueprint.read(tmp_path, "web.tex"), {})
+    [leaf] = [node for node in walk(built.root) if not hasattr(node, "entries")]
+    assert dict(leaf.notes)["Lean"] == "Stated as `A.b`; the blueprint marks no proof of it as formalized."
+    assert built.lean_links == {"A.b": ""}  # the site shows it as code, not as missing
+    [demo] = blueprints.load_projects(DATA.parent, [{"id": "pfr", "name": "PFR", "lean_docs": False}])
+    assert not demo.lean_docs
+
+
 def test_a_node_in_mathlib_is_the_mathlib_article_it_names(blueprint, tmp_path):
     from trough.vault import Leaf
 

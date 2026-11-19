@@ -55,6 +55,7 @@ class Project:
     directory: Path
     note: str = ""  # the catalog's chapter_note, a paragraph for the chapter's front page
     homepage: str = ""  # the catalog's homepage, where the project publishes its blueprint and docs
+    lean_docs: bool = True  # the catalog's lean_docs: false when the project publishes no API documentation
 
     @property
     def url(self) -> str:
@@ -84,7 +85,8 @@ def load_projects(data: Path, libraries: list[dict]) -> list[Project]:
         source = json.loads((directory / "source.json").read_text(encoding="utf-8"))
         projects.append(Project(library["id"], library["name"], source["repo"], source["rev"], source.get("date", ""),
                                 source["entry"], source.get("license"), bool(source.get("text", True)), directory,
-                                library.get("chapter_note", ""), library.get("homepage", "")))
+                                library.get("chapter_note", ""), library.get("homepage", ""),
+                                bool(library.get("lean_docs", True))))
     return projects
 
 
@@ -615,7 +617,9 @@ def leaf(project: Project, node: Node, caption: str, title: str, writer: Writer,
     kind = KINDS.get(node.env, node.env)
     fields = [("declaration", kind), ("origin", "cited")]
     notes: list[tuple[str, str]] = []
-    lean_lines = [f"[`{name}`]({dochome}/find/#doc/{name})" for name in node.lean]
+    # A project that publishes no API documentation has its names shown as code: its \dochome may name another's.
+    url = (lambda name: f"{dochome}/find/#doc/{name}") if project.lean_docs else (lambda name: "")
+    lean_lines = [f"[`{name}`]({url(name)})" if url(name) else f"`{name}`" for name in node.lean]
     statement_ok = node.leanok or bool(node.proof and node.proof.leanok)
     proof_ok = bool(node.proof and node.proof.leanok)
     if node.mathlibok:
@@ -628,7 +632,7 @@ def leaf(project: Project, node: Node, caption: str, title: str, writer: Writer,
             stats["proofs_formalized"] += 1
         stats["statements_formalized"] += 1
         for name in node.lean:
-            lean_links[name] = f"{dochome}/find/#doc/{name}"
+            lean_links[name] = url(name)
     if node.discussion and blueprint.links.get("github"):
         fields.append(("discussion", f"{blueprint.links['github']}/issues/{node.discussion.strip().lstrip('#')}"))
     if lean_lines:

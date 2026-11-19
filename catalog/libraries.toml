@@ -217,7 +217,8 @@ lean_files = 830
 map_status = "live"
 map_unit = "blueprint node"
 map_plan = "One article per node of its leanblueprint that is in Lean, with dependencies from its uses. The repository is a fork of thefundamentaltheor3m/Sphere-Packing-Lean, which has its own chapter."
-chapter_note = "This repository is a fork of thefundamentaltheor3m/Sphere-Packing-Lean, whose chapter is [Sphere packing in dimension 8](../sphere-packing/README.md). At commit 1e98fb49 of this repository and commit efe3bbbc of the original, the fork was one commit ahead of the original, the commit that adds the dimension 8 and 24 formalizations, and 78 commits behind."
+chapter_note = "This repository is a fork of thefundamentaltheor3m/Sphere-Packing-Lean, whose chapter is [Sphere packing in dimension 8](../sphere-packing/README.md). At commit 1e98fb49 of this repository and commit efe3bbbc of the original, the fork was one commit ahead of the original, the commit that adds the dimension 8 and 24 formalizations, and 78 commits behind. The fork publishes no API documentation, so its Lean names are shown without links."
+lean_docs = false
 
 [[library]]
 id = "con-nf"
