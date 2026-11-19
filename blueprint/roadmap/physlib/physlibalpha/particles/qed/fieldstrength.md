@@ -167,10 +167,6 @@ lemma jetDeriv_barψ (ρ : Fin 1 ⊕ Fin 3) (s : Multiset (Fin 1 ⊕ Fin 3))
 
 - [The fields of quantum electrodynamics](fields.md)
 
-## Proof depends on
-
-- [Gauge invariance of quantum electrodynamics](gaugeinvariance.md)
-
 ## Sources
 
 - [PhyslibAlpha/Particles/QED/FieldStrength.lean at 2a1dfe43](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/QED/FieldStrength.lean)

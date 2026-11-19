@@ -521,7 +521,6 @@
     "QuantumInfo.ForMathlib.HayataGroup.TraceInequality.LownerHeinzTheorem"],
    "proof":
    ["QuantumInfo.ForMathlib.HayataGroup.TraceInequality.BlockDiagonal",
-    "QuantumInfo.ForMathlib.HayataGroup.TraceInequality.JensenOperatorInequalityIImpIV",
     "QuantumInfo.ForMathlib.HayataGroup.TraceInequality.LownerHeinzCore",
     "QuantumInfo.ForMathlib.HayataGroup.TraceInequality.LownerHeinzTheorem"]},
   "QuantumInfo.ForMathlib.HayataGroup.TraceInequality.JensenOperatorInequalityIImpIV":
@@ -9069,7 +9068,6 @@
     "PhyslibAlpha.Particles.QED.Basic",
     "PhyslibAlpha.Particles.QED.FieldStrength",
     "PhyslibAlpha.Particles.QED.Fields",
-    "PhyslibAlpha.Particles.QED.GaugeInvariance",
     "PhyslibAlpha.Particles.QED.Lagrangian"]},
   "PhyslibAlpha.Particles.QED.LorentzInvariance":
   {"statement":
@@ -9090,7 +9088,6 @@
     "PhyslibAlpha.Particles.QED.Basic",
     "PhyslibAlpha.Particles.QED.Fields",
     "PhyslibAlpha.Particles.QED.GammaMatrices",
-    "PhyslibAlpha.Particles.QED.GaugeInvariance",
     "PhyslibAlpha.Particles.QED.Lagrangian",
     "PhyslibAlpha.Relativity.SL2C.Basic"]},
   "PhyslibAlpha.Particles.QED.Lagrangian":
@@ -9133,10 +9130,7 @@
    "proof": []},
   "PhyslibAlpha.Particles.QED.FieldStrength":
   {"statement": ["PhyslibAlpha.Particles.QED.Basic", "PhyslibAlpha.Particles.QED.Fields"],
-   "proof":
-   ["PhyslibAlpha.Particles.QED.Basic",
-    "PhyslibAlpha.Particles.QED.Fields",
-    "PhyslibAlpha.Particles.QED.GaugeInvariance"]},
+   "proof": ["PhyslibAlpha.Particles.QED.Basic", "PhyslibAlpha.Particles.QED.Fields"]},
   "PhyslibAlpha.Particles.QED.FermionStatistics":
   {"statement": ["PhyslibAlpha.Particles.QED.Basic", "PhyslibAlpha.Particles.QED.Fields"],
    "proof": ["PhyslibAlpha.Particles.QED.Basic", "PhyslibAlpha.Particles.QED.Fields"]},
@@ -9200,7 +9194,6 @@
     "PhyslibAlpha.Particles.QED.Basic",
     "PhyslibAlpha.Particles.QED.FieldStrength",
     "PhyslibAlpha.Particles.QED.Fields",
-    "PhyslibAlpha.Particles.QED.GaugeInvariance",
     "PhyslibAlpha.Particles.QED.LorentzInvariance"]},
   "PhyslibAlpha.Particles.QED.CurrentCoupling":
   {"statement":
@@ -10827,7 +10820,6 @@
     "Physlib.SpaceAndTime.Time.InnerProductSpace"],
    "proof":
    ["Physlib.ClassicalMechanics.EulerLagrange",
-    "Physlib.ClassicalMechanics.HarmonicOscillator.Basic",
     "Physlib.Mathematics.Calculus.Gradient",
     "Physlib.Mathematics.InnerProductSpace.Basic",
     "Physlib.Mathematics.InnerProductSpace.Calculus",
@@ -17666,7 +17658,6 @@
     "Physlib.QFT.QED.AnomalyCancellation.VectorLike"],
    "proof":
    ["Physlib.Mathematics.ForMathlib.LinearMaps",
-    "Physlib.Particles.StandardModel.AnomalyCancellation.Basic",
     "Physlib.QFT.AnomalyCancellation.Basic",
     "Physlib.QFT.AnomalyCancellation.GroupActions",
     "Physlib.QFT.QED.AnomalyCancellation.Basic",
@@ -17864,7 +17855,6 @@
     "Physlib.QFT.PerturbationTheory.WickContraction.Basic",
     "Physlib.QFT.PerturbationTheory.WickContraction.Join",
     "Physlib.QFT.PerturbationTheory.WickContraction.Sign.Basic",
-    "Physlib.QFT.PerturbationTheory.WickContraction.Sign.InsertNone",
     "Physlib.QFT.PerturbationTheory.WickContraction.Singleton",
     "Physlib.QFT.PerturbationTheory.WickContraction.TimeContract",
     "Physlib.QFT.PerturbationTheory.WickContraction.Uncontracted",
@@ -19174,10 +19164,7 @@
   "Physlib.Particles.SuperSymmetry.MSSMNu.AnomalyCancellation.Basic":
   {"statement":
    ["Physlib.Mathematics.ForMathlib.LinearMaps", "Physlib.QFT.AnomalyCancellation.Basic"],
-   "proof":
-   ["Physlib.Mathematics.ForMathlib.LinearMaps",
-    "Physlib.Particles.StandardModel.AnomalyCancellation.Basic",
-    "Physlib.QFT.AnomalyCancellation.Basic"]},
+   "proof": ["Physlib.Mathematics.ForMathlib.LinearMaps", "Physlib.QFT.AnomalyCancellation.Basic"]},
   "Physlib.Particles.SuperSymmetry.MSSMNu.AnomalyCancellation.B3":
   {"statement":
    ["Physlib.Mathematics.ForMathlib.LinearMaps",
@@ -21966,7 +21953,6 @@
     "Physlib.SpaceAndTime.Time.InnerProductSpace"],
    "proof":
    ["Physlib.ClassicalMechanics.EulerLagrange",
-    "Physlib.ClassicalMechanics.HarmonicOscillator.Basic",
     "Physlib.Mathematics.Calculus.Gradient",
     "Physlib.Mathematics.InnerProductSpace.Basic",
     "Physlib.Mathematics.InnerProductSpace.Calculus",

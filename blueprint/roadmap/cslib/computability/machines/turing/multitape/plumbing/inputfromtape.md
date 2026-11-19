@@ -171,10 +171,6 @@ public lemma space_map_inCfgHom_le (tm : MultiTapeTM k Symbol State) (mark : Sym
 - [Deterministic Multi-Tape Turing Machines](../deterministic.md)
 - [Tapes holding words and configurations of such tapes](wordscfg.md)
 
-## Proof depends on
-
-- [Extending a machine with additional work tapes](extendtapes.md)
-
 ## Sources
 
 - [Cslib/Computability/Machines/Turing/MultiTape/Plumbing/InputFromTape.lean at 86d560b6](https://github.com/leanprover/cslib/blob/86d560b6cbb379bd82512424cbcd2a915a1565e7/Cslib/Computability/Machines/Turing/MultiTape/Plumbing/InputFromTape.lean)

@@ -199,10 +199,6 @@ lemma join_sign_timeContract {φs : List 𝓕.FieldOp} (φsΛ : WickContraction 
 
 - [Join of contractions](wickcontraction-join.md)
 
-## Proof depends on
-
-- [Sign on inserting and not contracting](wickcontraction-sign-insertnone.md)
-
 ## Sources
 
 - [Physlib/QFT/PerturbationTheory/WickContraction/Sign/Join.lean at 2a1dfe43](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/QFT/PerturbationTheory/WickContraction/Sign/Join.lean)

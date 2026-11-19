@@ -65,10 +65,6 @@ lemma theorem_2_5_2_iv_imp_v {f : ℝ → ℝ} (hiv : CondIVAll.{u} f)
 
 - [`2 × 2` block operators on a Hilbert sum](traceinequality-blockdiagonal.md)
 
-## Proof depends on
-
-- [QuantumInfo.ForMathlib.HayataGroup.TraceInequality.JensenOperatorInequalityIImpIV](traceinequality-jensenoperatorinequalityiimpiv.md)
-
 ## Sources
 
 - [QuantumInfo/ForMathlib/HayataGroup/TraceInequality/JensenOperatorInequalityIVtoV.lean at 2a1dfe43](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/QuantumInfo/ForMathlib/HayataGroup/TraceInequality/JensenOperatorInequalityIVtoV.lean)

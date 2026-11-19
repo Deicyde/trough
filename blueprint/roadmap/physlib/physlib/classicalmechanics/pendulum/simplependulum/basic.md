@@ -845,7 +845,7 @@ lemma IsSolution.energy_eq {S : SimplePendulum} {θ : Time → EuclideanSpace �
 
 ## Proof depends on
 
-- [The Classical Harmonic Oscillator](../../harmonicoscillator/basic.md)
+- [Elementary rules for the gradient](../../../mathematics/calculus/gradient.md)
 
 ## Sources
 
