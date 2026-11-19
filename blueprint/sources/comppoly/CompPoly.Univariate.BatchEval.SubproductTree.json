@@ -1,0 +1,23 @@
+{
+ "schema": "trough-ledger/v1",
+ "library": "CompPoly",
+ "repo": "Verified-zkEVM/CompPoly",
+ "rev": "afb9b1363984a70f10e24bd597f6ff40ebc8afbb",
+ "module": "CompPoly.Univariate.BatchEval.SubproductTree",
+ "file": "CompPoly/Univariate/BatchEval/SubproductTree.lean",
+ "public": [
+  {"name": "CompPoly.CPolynomial.SubproductTree", "kind": "inductive", "line": 26},
+  {"name": "CompPoly.CPolynomial.SubproductTree.poly", "kind": "def", "line": 35},
+  {"name": "CompPoly.CPolynomial.SubproductTree.leafFor", "kind": "def", "line": 40},
+  {"name": "CompPoly.CPolynomial.SubproductTree.combine", "kind": "def", "line": 44},
+  {"name": "CompPoly.CPolynomial.SubproductTree.combinePairs", "kind": "def", "line": 49},
+  {"name": "CompPoly.CPolynomial.SubproductTree.buildFromTrees", "kind": "def", "line": 56},
+  {"name": "CompPoly.CPolynomial.SubproductTree.buildList", "kind": "def", "line": 65},
+  {"name": "CompPoly.CPolynomial.SubproductTree.buildArray", "kind": "def", "line": 71},
+  {"name": "CompPoly.CPolynomial.SubproductTree.evalList", "kind": "def", "line": 76},
+  {"name": "CompPoly.CPolynomial.evalBatchSubproduct", "kind": "def", "line": 88}
+ ],
+ "private": [],
+ "missing": [],
+ "unread": "Unnamed instances, the names an `alias ⟨…⟩` command gives, and the names Lean generates for a declaration (constructors, recursors, derived instances) are not read from the source, so they are not listed."
+}

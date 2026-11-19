@@ -1,0 +1,25 @@
+{
+ "schema": "trough-ledger/v1",
+ "library": "CompPoly",
+ "repo": "Verified-zkEVM/CompPoly",
+ "rev": "afb9b1363984a70f10e24bd597f6ff40ebc8afbb",
+ "module": "CompPoly.Bivariate.GuruswamiSudan.Root.FieldRoots.KoalaBear",
+ "file": "CompPoly/Bivariate/GuruswamiSudan/Root/FieldRoots/KoalaBear.lean",
+ "public": [
+  {"name": "CompPoly.GuruswamiSudan.koalaBearFiniteFieldContext", "kind": "def", "line": 28},
+  {"name": "CompPoly.GuruswamiSudan.koalaBearSmoothCyclicRootContext", "kind": "def", "line": 39},
+  {"name": "CompPoly.GuruswamiSudan.koalaBearFieldRootContext", "kind": "def", "line": 86},
+  {"name": "CompPoly.GuruswamiSudan.koalaBearNttFieldRootContext", "kind": "def", "line": 95},
+  {"name": "CompPoly.GuruswamiSudan.koalaBearNttFastFieldRootContext", "kind": "def", "line": 108},
+  {"name": "CompPoly.GuruswamiSudan.fastKoalaBearFiniteFieldContext", "kind": "def", "line": 121},
+  {"name": "CompPoly.GuruswamiSudan.fastKoalaBearPrimitiveRoot", "kind": "def", "line": 138},
+  {"name": "CompPoly.GuruswamiSudan.fastKoalaBearPrimitiveRoot_order", "kind": "lemma", "line": 142},
+  {"name": "CompPoly.GuruswamiSudan.fastKoalaBearSmoothCyclicRootContext", "kind": "def", "line": 152},
+  {"name": "CompPoly.GuruswamiSudan.fastKoalaBearFieldRootContext", "kind": "def", "line": 208},
+  {"name": "CompPoly.GuruswamiSudan.fastKoalaBearNttFieldRootContext", "kind": "def", "line": 220},
+  {"name": "CompPoly.GuruswamiSudan.fastKoalaBearNttFastFieldRootContext", "kind": "def", "line": 236}
+ ],
+ "private": [],
+ "missing": [],
+ "unread": "Unnamed instances, the names an `alias ⟨…⟩` command gives, and the names Lean generates for a declaration (constructors, recursors, derived instances) are not read from the source, so they are not listed."
+}

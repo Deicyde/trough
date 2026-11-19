@@ -1,0 +1,21 @@
+{
+ "schema": "trough-ledger/v1",
+ "library": "CompPoly",
+ "repo": "Verified-zkEVM/CompPoly",
+ "rev": "afb9b1363984a70f10e24bd597f6ff40ebc8afbb",
+ "module": "CompPoly.Univariate.NTT.Inverse",
+ "file": "CompPoly/Univariate/NTT/Inverse.lean",
+ "public": [
+  {"name": "CompPoly.CPolynomial.NTT.Inverse.inttAt", "kind": "def", "line": 29},
+  {"name": "CompPoly.CPolynomial.NTT.Inverse.inverseSpec", "kind": "def", "line": 33},
+  {"name": "CompPoly.CPolynomial.NTT.Inverse.normalize", "kind": "def", "line": 37},
+  {"name": "CompPoly.CPolynomial.NTT.Inverse.size_inverseSpec", "kind": "theorem", "line": 40},
+  {"name": "CompPoly.CPolynomial.NTT.Inverse.size_normalize", "kind": "theorem", "line": 44},
+  {"name": "CompPoly.CPolynomial.NTT.Inverse.normalize_forwardSpec_inverse_eq_inverseSpec", "kind": "theorem", "line": 48},
+  {"name": "CompPoly.CPolynomial.NTT.Inverse.inverseImpl", "kind": "def", "line": 59},
+  {"name": "CompPoly.CPolynomial.NTT.Inverse.inverseImpl_correct", "kind": "theorem", "line": 62}
+ ],
+ "private": [],
+ "missing": [],
+ "unread": "Unnamed instances, the names an `alias ⟨…⟩` command gives, and the names Lean generates for a declaration (constructors, recursors, derived instances) are not read from the source, so they are not listed."
+}

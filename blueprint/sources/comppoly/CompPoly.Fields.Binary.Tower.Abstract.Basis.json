@@ -1,0 +1,20 @@
+{
+ "schema": "trough-ledger/v1",
+ "library": "CompPoly",
+ "repo": "Verified-zkEVM/CompPoly",
+ "rev": "afb9b1363984a70f10e24bd597f6ff40ebc8afbb",
+ "module": "CompPoly.Fields.Binary.Tower.Abstract.Basis",
+ "file": "CompPoly/Fields/Binary/Tower/Abstract/Basis.lean",
+ "public": [
+  {"name": "BinaryTower.hli_level_diff_0", "kind": "def", "line": 27},
+  {"name": "BinaryTower.BTField.isScalarTower_succ_right", "kind": "def", "line": 59},
+  {"name": "BinaryTower.multilinearBasis", "kind": "def", "line": 68},
+  {"name": "BinaryTower.BTField.PowerBasis.dim_of_eq_rec", "kind": "theorem", "line": 120},
+  {"name": "BinaryTower.PowerBasis.cast_basis_succ_of_eq_rec_apply", "kind": "theorem", "line": 137},
+  {"name": "BinaryTower.algebraMap_𝕏_eq_of_index_eq", "kind": "lemma", "line": 179},
+  {"name": "BinaryTower.multilinearBasis_apply", "kind": "theorem", "line": 193}
+ ],
+ "private": [],
+ "missing": [],
+ "unread": "Unnamed instances, the names an `alias ⟨…⟩` command gives, and the names Lean generates for a declaration (constructors, recursors, derived instances) are not read from the source, so they are not listed."
+}

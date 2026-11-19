@@ -1,0 +1,19 @@
+{
+ "schema": "trough-ledger/v1",
+ "library": "CompPoly",
+ "repo": "Verified-zkEVM/CompPoly",
+ "rev": "afb9b1363984a70f10e24bd597f6ff40ebc8afbb",
+ "module": "CompPoly.Univariate.NTTFast.Correctness.DIF",
+ "file": "CompPoly/Univariate/NTTFast/Correctness/DIF.lean",
+ "public": [
+  {"name": "CompPoly.CPolynomial.NTTFast.Plan.difMathValueAt", "kind": "def", "line": 27},
+  {"name": "CompPoly.CPolynomial.NTTFast.Plan.difMathStageSpec", "kind": "def", "line": 37},
+  {"name": "CompPoly.CPolynomial.NTTFast.Plan.difMathStageSpec_zero", "kind": "theorem", "line": 71},
+  {"name": "CompPoly.CPolynomial.NTTFast.Plan.difMathStageSpec_final", "kind": "theorem", "line": 83},
+  {"name": "CompPoly.CPolynomial.NTTFast.Plan.butterflyStageDIFWithTwiddles_difMathStageSpec_succ", "kind": "theorem", "line": 689},
+  {"name": "CompPoly.CPolynomial.NTTFast.Plan.runStagesDIFWithTwiddles_correct", "kind": "theorem", "line": 744}
+ ],
+ "private": [],
+ "missing": [],
+ "unread": "Unnamed instances, the names an `alias ⟨…⟩` command gives, and the names Lean generates for a declaration (constructors, recursors, derived instances) are not read from the source, so they are not listed."
+}

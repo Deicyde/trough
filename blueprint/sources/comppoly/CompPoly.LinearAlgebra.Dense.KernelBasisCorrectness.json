@@ -1,0 +1,27 @@
+{
+ "schema": "trough-ledger/v1",
+ "library": "CompPoly",
+ "repo": "Verified-zkEVM/CompPoly",
+ "rev": "afb9b1363984a70f10e24bd597f6ff40ebc8afbb",
+ "module": "CompPoly.LinearAlgebra.Dense.KernelBasisCorrectness",
+ "file": "CompPoly/LinearAlgebra/Dense/KernelBasisCorrectness.lean",
+ "public": [
+  {"name": "CompPoly.DenseMatrix.toRows_size", "kind": "theorem", "line": 37},
+  {"name": "CompPoly.DenseMatrix.toRows_getD", "kind": "theorem", "line": 41},
+  {"name": "CompPoly.DenseMatrix.normalizeAndEliminate_get", "kind": "theorem", "line": 169},
+  {"name": "CompPoly.DenseMatrix.rref_pivots_eq_scalarRrefRows", "kind": "theorem", "line": 279},
+  {"name": "CompPoly.DenseMatrix.homogeneousKernelBasis_eq_homogeneousKernelBasisRows", "kind": "theorem", "line": 288},
+  {"name": "CompPoly.DenseMatrix.dotRow_eq_sum", "kind": "theorem", "line": 322},
+  {"name": "CompPoly.DenseMatrix.homogeneousKernelBasis_width", "kind": "theorem", "line": 343},
+  {"name": "CompPoly.DenseMatrix.homogeneousKernelBasis_isHomogeneousSolution", "kind": "theorem", "line": 351},
+  {"name": "CompPoly.DenseMatrix.homogeneousKernelBasis_complete", "kind": "theorem", "line": 365},
+  {"name": "CompPoly.DenseMatrix.homogeneousKernelBasis_size", "kind": "theorem", "line": 381},
+  {"name": "CompPoly.DenseMatrix.freeColumns_size_add_pivots_size", "kind": "theorem", "line": 398},
+  {"name": "CompPoly.DenseMatrix.homogeneousKernelBasis_size_add_rank", "kind": "theorem", "line": 431},
+  {"name": "CompPoly.DenseMatrix.homogeneousKernelBasis_getD_freeColumn", "kind": "theorem", "line": 439},
+  {"name": "CompPoly.DenseMatrix.homogeneousKernelBasis_linearIndependent", "kind": "theorem", "line": 454}
+ ],
+ "private": [],
+ "missing": [],
+ "unread": "Unnamed instances, the names an `alias ⟨…⟩` command gives, and the names Lean generates for a declaration (constructors, recursors, derived instances) are not read from the source, so they are not listed."
+}

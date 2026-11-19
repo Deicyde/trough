@@ -1,0 +1,26 @@
+{
+ "schema": "trough-ledger/v1",
+ "library": "CompPoly",
+ "repo": "Verified-zkEVM/CompPoly",
+ "rev": "afb9b1363984a70f10e24bd597f6ff40ebc8afbb",
+ "module": "CompPoly.Univariate.Roots.LasVegas.Correctness.EvenTrace",
+ "file": "CompPoly/Univariate/Roots/LasVegas/Correctness/EvenTrace.lean",
+ "public": [
+  {"name": "CompPoly.CPolynomial.Roots.FiniteField.cantorZassenhausEvenTraceAttemptWith_child_proper", "kind": "theorem", "line": 74},
+  {"name": "CompPoly.CPolynomial.Roots.FiniteField.cantorZassenhausEvenTraceAttemptWith_stackWork_le", "kind": "theorem", "line": 94},
+  {"name": "CompPoly.CPolynomial.Roots.FiniteField.cantorZassenhausEvenTraceAttemptWith_child_normSplitWork_pos", "kind": "theorem", "line": 160},
+  {"name": "CompPoly.CPolynomial.Roots.FiniteField.cantorZassenhausEvenTraceAttemptWith_probe_congr", "kind": "theorem", "line": 238},
+  {"name": "CompPoly.CPolynomial.Roots.FiniteField.tryEvenTraceSplitAttemptsWith_probe_congr", "kind": "theorem", "line": 253},
+  {"name": "CompPoly.CPolynomial.Roots.FiniteField.tryEvenTraceSplitAttemptsWith_eq_some_exists_attempt", "kind": "theorem", "line": 285},
+  {"name": "CompPoly.CPolynomial.Roots.FiniteField.tryEvenTraceSplitAttemptsWith_root", "kind": "theorem", "line": 314},
+  {"name": "CompPoly.CPolynomial.Roots.FiniteField.tryEvenTraceSplitAttemptsWith_stackWork_le", "kind": "theorem", "line": 370},
+  {"name": "CompPoly.CPolynomial.Roots.FiniteField.tryEvenTraceSplitAttemptsWith_child_normSplitWork_pos", "kind": "theorem", "line": 398},
+  {"name": "CompPoly.CPolynomial.Roots.FiniteField.eval_tracePowerSumPolynomialWith_eq", "kind": "theorem", "line": 463},
+  {"name": "CompPoly.CPolynomial.Roots.FiniteField.cantorZassenhausEvenTraceAttemptWith_size_ge_two", "kind": "theorem", "line": 487},
+  {"name": "CompPoly.CPolynomial.Roots.FiniteField.cantorZassenhausEvenTraceAttemptWith_child_dvd_input", "kind": "theorem", "line": 506},
+  {"name": "CompPoly.CPolynomial.Roots.FiniteField.cantorZassenhausEvenTraceAttemptWith_success_of_trace_separated", "kind": "theorem", "line": 552}
+ ],
+ "private": [],
+ "missing": [],
+ "unread": "Unnamed instances, the names an `alias ⟨…⟩` command gives, and the names Lean generates for a declaration (constructors, recursors, derived instances) are not read from the source, so they are not listed."
+}

@@ -26,7 +26,7 @@ from pathlib import Path
 
 from collections import Counter
 
-from trough import aesop, anthropic_flt, atlas, batteries, blueprints, catalog, cfsg, cslib, ff, formal_conjectures, lean_pool, links, mathlib, openai_math, physlib, stacks, tauceti, wiki
+from trough import aesop, anthropic_flt, atlas, batteries, blueprints, catalog, cfsg, comppoly, cslib, ff, formal_conjectures, lean_pool, links, mathlib, openai_math, physlib, stacks, tauceti, wiki
 from trough.vault import Leaf, assign_paths, render_tree, walk
 
 ROOT = Path(__file__).resolve().parent.parent
@@ -287,9 +287,9 @@ def generate() -> dict[Path, str]:
             f"{cs['statement_edges']} statement and {cs['proof_edges']} proof edges",
             file=sys.stderr,
         )
-    # The libraries trough.library reads with their modules that declare nothing public listed: Batteries, Aesop.
+    # The libraries trough.library reads with their modules that declare nothing public listed.
     readers = []
-    for reader in (batteries, aesop):
+    for reader in (batteries, aesop, comppoly):
         lib = reader.LIBRARY
         reader_data = reader.load(DATA)
         if not reader_data:

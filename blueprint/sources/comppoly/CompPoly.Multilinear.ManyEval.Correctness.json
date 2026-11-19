@@ -1,0 +1,16 @@
+{
+ "schema": "trough-ledger/v1",
+ "library": "CompPoly",
+ "repo": "Verified-zkEVM/CompPoly",
+ "rev": "afb9b1363984a70f10e24bd597f6ff40ebc8afbb",
+ "module": "CompPoly.Multilinear.ManyEval.Correctness",
+ "file": "CompPoly/Multilinear/ManyEval/Correctness.lean",
+ "public": [
+  {"name": "CompPoly.CMlPolynomialEval.evalManyMle_eq_map_evalMle", "kind": "theorem", "line": 256},
+  {"name": "CompPoly.CMlPolynomialEval.evalManyMleByLayers_eq_map_evalMle", "kind": "theorem", "line": 263},
+  {"name": "CompPoly.CMlPolynomialEval.evalManyMleByLayers_eq_evalManyMle", "kind": "theorem", "line": 290}
+ ],
+ "private": [],
+ "missing": [],
+ "unread": "Unnamed instances, the names an `alias ⟨…⟩` command gives, and the names Lean generates for a declaration (constructors, recursors, derived instances) are not read from the source, so they are not listed."
+}

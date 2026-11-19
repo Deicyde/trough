@@ -1,0 +1,23 @@
+{
+ "schema": "trough-ledger/v1",
+ "library": "CompPoly",
+ "repo": "Verified-zkEVM/CompPoly",
+ "rev": "afb9b1363984a70f10e24bd597f6ff40ebc8afbb",
+ "module": "CompPoly.Fields.Secp256k1.Fast",
+ "file": "CompPoly/Fields/Secp256k1/Fast.lean",
+ "public": [
+  {"name": "Secp256k1.Fast.instScalarGcdData", "kind": "instance", "line": 29},
+  {"name": "Secp256k1.Fast.instScalarMont64x8Field", "kind": "instance", "line": 37},
+  {"name": "Secp256k1.Fast.ScalarField", "kind": "abbrev", "line": 50},
+  {"name": "Secp256k1.Fast.ofScalarField", "kind": "def", "line": 54},
+  {"name": "Secp256k1.Fast.scalarRingEquiv", "kind": "def", "line": 59},
+  {"name": "Secp256k1.Fast.instBaseGcdData", "kind": "instance", "line": 65},
+  {"name": "Secp256k1.Fast.instBaseMont64x8Field", "kind": "instance", "line": 71},
+  {"name": "Secp256k1.Fast.BaseField", "kind": "abbrev", "line": 81},
+  {"name": "Secp256k1.Fast.ofBaseField", "kind": "def", "line": 85},
+  {"name": "Secp256k1.Fast.baseRingEquiv", "kind": "def", "line": 90}
+ ],
+ "private": [],
+ "missing": [],
+ "unread": "Unnamed instances, the names an `alias ⟨…⟩` command gives, and the names Lean generates for a declaration (constructors, recursors, derived instances) are not read from the source, so they are not listed."
+}

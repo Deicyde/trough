@@ -1,0 +1,17 @@
+{
+ "schema": "trough-ledger/v1",
+ "library": "CompPoly",
+ "repo": "Verified-zkEVM/CompPoly",
+ "rev": "afb9b1363984a70f10e24bd597f6ff40ebc8afbb",
+ "module": "CompPoly.Data.Polynomial.Rabin",
+ "file": "CompPoly/Data/Polynomial/Rabin.lean",
+ "public": [
+  {"name": "Nat.exists_primeFactor_dvd_div_of_dvd", "kind": "theorem", "line": 57},
+  {"name": "Polynomial.irreducible_of_rabin", "kind": "theorem", "line": 113},
+  {"name": "Polynomial.rabin_of_irreducible", "kind": "theorem", "line": 141},
+  {"name": "Polynomial.irreducible_iff_rabin", "kind": "theorem", "line": 162}
+ ],
+ "private": [],
+ "missing": [],
+ "unread": "Unnamed instances, the names an `alias ⟨…⟩` command gives, and the names Lean generates for a declaration (constructors, recursors, derived instances) are not read from the source, so they are not listed."
+}

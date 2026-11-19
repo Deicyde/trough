@@ -1,0 +1,18 @@
+{
+ "schema": "trough-ledger/v1",
+ "library": "CompPoly",
+ "repo": "Verified-zkEVM/CompPoly",
+ "rev": "afb9b1363984a70f10e24bd597f6ff40ebc8afbb",
+ "module": "CompPoly.Bivariate.GuruswamiSudan.Root.RothRuckenstein.Correctness",
+ "file": "CompPoly/Bivariate/GuruswamiSudan/Root/RothRuckenstein/Correctness.lean",
+ "public": [
+  {"name": "CompPoly.GuruswamiSudan.rothRuckensteinRootsYDegreeLt_sound", "kind": "theorem", "line": 24},
+  {"name": "CompPoly.GuruswamiSudan.initialCoefficientPolynomial_stripXAdicFactor_ne_zero", "kind": "theorem", "line": 36},
+  {"name": "CompPoly.GuruswamiSudan.rothRuckensteinRootsYDegreeLt_complete", "kind": "theorem", "line": 870},
+  {"name": "CompPoly.GuruswamiSudan.rothRuckensteinRootContext", "kind": "def", "line": 888},
+  {"name": "CompPoly.GuruswamiSudan.transformedRothRuckensteinRootContext", "kind": "def", "line": 901}
+ ],
+ "private": [],
+ "missing": [],
+ "unread": "Unnamed instances, the names an `alias ⟨…⟩` command gives, and the names Lean generates for a declaration (constructors, recursors, derived instances) are not read from the source, so they are not listed."
+}

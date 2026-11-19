@@ -1,0 +1,25 @@
+{
+ "schema": "trough-ledger/v1",
+ "library": "CompPoly",
+ "repo": "Verified-zkEVM/CompPoly",
+ "rev": "afb9b1363984a70f10e24bd597f6ff40ebc8afbb",
+ "module": "CompPoly.LinearAlgebra.PolynomialMatrix.Approximant.PMBasis.KernelLeafSoundness",
+ "file": "CompPoly/LinearAlgebra/PolynomialMatrix/Approximant/PMBasis/KernelLeafSoundness.lean",
+ "public": [
+  {"name": "CompPoly.PolynomialMatrix.Approximant.rowScaleCoeffX_size", "kind": "theorem", "line": 41},
+  {"name": "CompPoly.PolynomialMatrix.Approximant.pivotRows_invariant", "kind": "theorem", "line": 114},
+  {"name": "CompPoly.PolynomialMatrix.Approximant.reduceKernelLeafRowsByPivots_invariant", "kind": "theorem", "line": 130},
+  {"name": "CompPoly.PolynomialMatrix.Approximant.mem_matrixRows_push", "kind": "theorem", "line": 175},
+  {"name": "CompPoly.PolynomialMatrix.Approximant.reduceKernelLeafRowsIncremental_invariant", "kind": "theorem", "line": 185},
+  {"name": "CompPoly.PolynomialMatrix.Approximant.rowGet_vectorToPolynomialRow_coeff", "kind": "theorem", "line": 295},
+  {"name": "CompPoly.PolynomialMatrix.Approximant.vectorToPolynomialRow_approximates", "kind": "theorem", "line": 317},
+  {"name": "CompPoly.PolynomialMatrix.Approximant.pm_pack_index", "kind": "theorem", "line": 376},
+  {"name": "CompPoly.PolynomialMatrix.Approximant.rowToCoefficientVector", "kind": "def", "line": 393},
+  {"name": "CompPoly.PolynomialMatrix.Approximant.vectorToPolynomialRow_rowToCoefficientVector", "kind": "theorem", "line": 414},
+  {"name": "CompPoly.PolynomialMatrix.Approximant.coefficientMatrixRows_dot_eq_zero_of_approximates", "kind": "theorem", "line": 478},
+  {"name": "CompPoly.PolynomialMatrix.Approximant.kernelLeafBasis_rows", "kind": "theorem", "line": 570}
+ ],
+ "private": [],
+ "missing": [],
+ "unread": "Unnamed instances, the names an `alias ⟨…⟩` command gives, and the names Lean generates for a declaration (constructors, recursors, derived instances) are not read from the source, so they are not listed."
+}

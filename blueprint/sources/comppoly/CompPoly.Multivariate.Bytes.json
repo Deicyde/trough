@@ -1,0 +1,22 @@
+{
+ "schema": "trough-ledger/v1",
+ "library": "CompPoly",
+ "repo": "Verified-zkEVM/CompPoly",
+ "rev": "afb9b1363984a70f10e24bd597f6ff40ebc8afbb",
+ "module": "CompPoly.Multivariate.Bytes",
+ "file": "CompPoly/Multivariate/Bytes.lean",
+ "public": [
+  {"name": "CPoly.CMvMonomial.instDelimitedCodec", "kind": "instance", "line": 34},
+  {"name": "CPoly.CMvMonomial.instDelimitedCodecVector", "kind": "instance", "line": 39},
+  {"name": "CPoly.CMvMonomial.valid_iff", "kind": "theorem", "line": 42},
+  {"name": "CPoly.CMvMonomial.encode_eq", "kind": "theorem", "line": 45},
+  {"name": "CPoly.CMvMonomial.instLawfulBEqCmp", "kind": "instance", "line": 53},
+  {"name": "CPoly.Unlawful.ofList_toList", "kind": "theorem", "line": 63},
+  {"name": "CPoly.CMvPolynomial.instDelimitedCodec", "kind": "instance", "line": 87},
+  {"name": "CPoly.CMvPolynomial.valid_iff", "kind": "theorem", "line": 97},
+  {"name": "CPoly.CMvPolynomial.encode_eq", "kind": "theorem", "line": 101}
+ ],
+ "private": [],
+ "missing": [],
+ "unread": "Unnamed instances, the names an `alias ⟨…⟩` command gives, and the names Lean generates for a declaration (constructors, recursors, derived instances) are not read from the source, so they are not listed."
+}

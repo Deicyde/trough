@@ -1,0 +1,24 @@
+{
+ "schema": "trough-ledger/v1",
+ "library": "CompPoly",
+ "repo": "Verified-zkEVM/CompPoly",
+ "rev": "afb9b1363984a70f10e24bd597f6ff40ebc8afbb",
+ "module": "CompPoly.Bivariate.GuruswamiSudan.Interpolation.LeeOSullivan.Correctness.Common",
+ "file": "CompPoly/Bivariate/GuruswamiSudan/Interpolation/LeeOSullivan/Correctness/Common.lean",
+ "public": [
+  {"name": "CompPoly.GuruswamiSudan.LeeOSullivan.distinctXCoordinatesBool_iff", "kind": "theorem", "line": 30},
+  {"name": "CompPoly.GuruswamiSudan.LeeOSullivan.leeCoefficientForm_eval_point", "kind": "theorem", "line": 48},
+  {"name": "CompPoly.GuruswamiSudan.LeeOSullivan.leeVanishing_eval_point", "kind": "theorem", "line": 60},
+  {"name": "CompPoly.GuruswamiSudan.LeeOSullivan.leeOSullivanBasisRows_size", "kind": "theorem", "line": 70},
+  {"name": "CompPoly.GuruswamiSudan.LeeOSullivan.leeOSullivanBasisRowsWithRG_wellFormed", "kind": "theorem", "line": 78},
+  {"name": "CompPoly.GuruswamiSudan.LeeOSullivan.leeOSullivanBasisRowsWithRG_width", "kind": "theorem", "line": 94},
+  {"name": "CompPoly.GuruswamiSudan.LeeOSullivan.leeOSullivanBasisRows_wellFormed", "kind": "theorem", "line": 102},
+  {"name": "CompPoly.GuruswamiSudan.LeeOSullivan.leeOSullivanBasisPolynomials", "kind": "def", "line": 111},
+  {"name": "CompPoly.GuruswamiSudan.LeeOSullivan.leeOSullivanBasisPolynomials_size", "kind": "theorem", "line": 117},
+  {"name": "CompPoly.GuruswamiSudan.LeeOSullivan.leeOSullivanBasisPolynomials_getD_of_lt", "kind": "theorem", "line": 124},
+  {"name": "CompPoly.GuruswamiSudan.LeeOSullivan.rowGet_leeOSullivanBasisRowsWithRG_getD", "kind": "theorem", "line": 133}
+ ],
+ "private": [],
+ "missing": [],
+ "unread": "Unnamed instances, the names an `alias ⟨…⟩` command gives, and the names Lean generates for a declaration (constructors, recursors, derived instances) are not read from the source, so they are not listed."
+}

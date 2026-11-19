@@ -1,0 +1,16 @@
+{
+ "schema": "trough-ledger/v1",
+ "library": "CompPoly",
+ "repo": "Verified-zkEVM/CompPoly",
+ "rev": "afb9b1363984a70f10e24bd597f6ff40ebc8afbb",
+ "module": "CompPoly.Multilinear.Bytes",
+ "file": "CompPoly/Multilinear/Bytes.lean",
+ "public": [
+  {"name": "CompPoly.CMlPolynomial.width", "kind": "theorem", "line": 26},
+  {"name": "CompPoly.CMlPolynomialEval.width", "kind": "theorem", "line": 29},
+  {"name": "CompPoly.CMlPolynomial.toBytes_eq", "kind": "theorem", "line": 32}
+ ],
+ "private": [],
+ "missing": [],
+ "unread": "Unnamed instances, the names an `alias ⟨…⟩` command gives, and the names Lean generates for a declaration (constructors, recursors, derived instances) are not read from the source, so they are not listed."
+}

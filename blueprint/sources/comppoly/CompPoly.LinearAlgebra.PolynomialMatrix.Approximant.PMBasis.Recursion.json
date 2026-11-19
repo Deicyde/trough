@@ -1,0 +1,25 @@
+{
+ "schema": "trough-ledger/v1",
+ "library": "CompPoly",
+ "repo": "Verified-zkEVM/CompPoly",
+ "rev": "afb9b1363984a70f10e24bd597f6ff40ebc8afbb",
+ "module": "CompPoly.LinearAlgebra.PolynomialMatrix.Approximant.PMBasis.Recursion",
+ "file": "CompPoly/LinearAlgebra/PolynomialMatrix/Approximant/PMBasis/Recursion.lean",
+ "public": [
+  {"name": "CompPoly.PolynomialMatrix.Approximant.PMBasisRuntime", "kind": "structure", "line": 37},
+  {"name": "CompPoly.PolynomialMatrix.Approximant.kernelLeafRuntimeWithLowAndCompose", "kind": "def", "line": 48},
+  {"name": "CompPoly.PolynomialMatrix.Approximant.kernelLeafRuntimeWithLow", "kind": "def", "line": 62},
+  {"name": "CompPoly.PolynomialMatrix.Approximant.kernelLeafRuntime", "kind": "def", "line": 69},
+  {"name": "CompPoly.PolynomialMatrix.Approximant.pmBasisWithFuelCore", "kind": "def", "line": 82},
+  {"name": "CompPoly.PolynomialMatrix.Approximant.pmBasisNormalizeRoot", "kind": "def", "line": 108},
+  {"name": "CompPoly.PolynomialMatrix.Approximant.pmBasisWithFuel", "kind": "def", "line": 114},
+  {"name": "CompPoly.PolynomialMatrix.Approximant.pmBasisFuel", "kind": "def", "line": 121},
+  {"name": "CompPoly.PolynomialMatrix.Approximant.pmBasis", "kind": "def", "line": 125},
+  {"name": "CompPoly.PolynomialMatrix.Approximant.completeMissingPivotRows_size_pos", "kind": "theorem", "line": 132},
+  {"name": "CompPoly.PolynomialMatrix.Approximant.pmBasisNormalizeRoot_size_pos", "kind": "theorem", "line": 148},
+  {"name": "CompPoly.PolynomialMatrix.Approximant.PMBasisContext", "kind": "structure", "line": 156}
+ ],
+ "private": [],
+ "missing": [],
+ "unread": "Unnamed instances, the names an `alias ⟨…⟩` command gives, and the names Lean generates for a declaration (constructors, recursors, derived instances) are not read from the source, so they are not listed."
+}

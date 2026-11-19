@@ -1,0 +1,18 @@
+{
+ "schema": "trough-ledger/v1",
+ "library": "CompPoly",
+ "repo": "Verified-zkEVM/CompPoly",
+ "rev": "afb9b1363984a70f10e24bd597f6ff40ebc8afbb",
+ "module": "CompPoly.Univariate.Vanishing",
+ "file": "CompPoly/Univariate/Vanishing.lean",
+ "public": [
+  {"name": "CompPoly.CPolynomial.vanishingPolynomialArray", "kind": "def", "line": 26},
+  {"name": "CompPoly.CPolynomial.VanishingPolynomialContext", "kind": "structure", "line": 116},
+  {"name": "CompPoly.CPolynomial.VanishingPolynomialContext.direct", "kind": "def", "line": 125},
+  {"name": "CompPoly.CPolynomial.VanishingPolynomialContext.subproduct", "kind": "def", "line": 132},
+  {"name": "CompPoly.CPolynomial.eval_vanishingPolynomialArray_eq_zero_of_mem", "kind": "theorem", "line": 191}
+ ],
+ "private": [],
+ "missing": [],
+ "unread": "Unnamed instances, the names an `alias ⟨…⟩` command gives, and the names Lean generates for a declaration (constructors, recursors, derived instances) are not read from the source, so they are not listed."
+}

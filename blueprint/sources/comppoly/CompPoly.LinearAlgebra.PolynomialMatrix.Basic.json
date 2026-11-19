@@ -1,0 +1,30 @@
+{
+ "schema": "trough-ledger/v1",
+ "library": "CompPoly",
+ "repo": "Verified-zkEVM/CompPoly",
+ "rev": "afb9b1363984a70f10e24bd597f6ff40ebc8afbb",
+ "module": "CompPoly.LinearAlgebra.PolynomialMatrix.Basic",
+ "file": "CompPoly/LinearAlgebra/PolynomialMatrix/Basic.lean",
+ "public": [
+  {"name": "CompPoly.PolynomialRow", "kind": "abbrev", "line": 21},
+  {"name": "CompPoly.PolynomialMatrix", "kind": "abbrev", "line": 24},
+  {"name": "CompPoly.PolynomialMatrixShape", "kind": "structure", "line": 27},
+  {"name": "CompPoly.PolynomialMatrix.RowWidth", "kind": "def", "line": 37},
+  {"name": "CompPoly.PolynomialMatrix.MatrixWidth", "kind": "def", "line": 41},
+  {"name": "CompPoly.PolynomialMatrix.MatrixShape", "kind": "def", "line": 47},
+  {"name": "CompPoly.PolynomialMatrix.MatrixRows", "kind": "def", "line": 51},
+  {"name": "CompPoly.PolynomialMatrix.WellFormed", "kind": "def", "line": 55},
+  {"name": "CompPoly.PolynomialMatrix.rowGet", "kind": "def", "line": 59},
+  {"name": "CompPoly.PolynomialMatrix.zeroRow", "kind": "def", "line": 63},
+  {"name": "CompPoly.PolynomialMatrix.rowAdd", "kind": "def", "line": 67},
+  {"name": "CompPoly.PolynomialMatrix.rowNeg", "kind": "def", "line": 73},
+  {"name": "CompPoly.PolynomialMatrix.rowSub", "kind": "def", "line": 78},
+  {"name": "CompPoly.PolynomialMatrix.rowScalePolynomial", "kind": "def", "line": 83},
+  {"name": "CompPoly.PolynomialMatrix.rowScaleMonomial", "kind": "def", "line": 88},
+  {"name": "CompPoly.PolynomialMatrix.rowSubScaledShift", "kind": "def", "line": 95},
+  {"name": "CompPoly.PolynomialMatrix.replaceRow", "kind": "def", "line": 102}
+ ],
+ "private": [],
+ "missing": [],
+ "unread": "Unnamed instances, the names an `alias ⟨…⟩` command gives, and the names Lean generates for a declaration (constructors, recursors, derived instances) are not read from the source, so they are not listed."
+}

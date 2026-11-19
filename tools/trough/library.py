@@ -300,10 +300,17 @@ def at(library: Library, rev: str) -> str:
     return f"[{rev[:8]}]({folder_url(library, rev)})"
 
 
-def pinned(library: Library, text: str, rev: str) -> str:
-    """Quoted text whose links into the repository's master branch point at the pinned commit."""
-    return re.sub(rf"{GITHUB}/{re.escape(library.repo)}/(blob|tree)/master/",
+def pinned(library: Library, text: str, rev: str, base: str | None = None) -> str:
+    """Quoted text whose links into the repository's master branch point at the pinned commit. With *base*, the
+    folder the text was read from, a relative Markdown link points at its target in the repository at that commit,
+    as it would not resolve on the site."""
+    text = re.sub(rf"{GITHUB}/{re.escape(library.repo)}/(blob|tree)/master/",
                   lambda match: f"{GITHUB}/{library.repo}/{match.group(1)}/{rev}/", text)
+    if base is None:
+        return text
+    return re.sub(r"\]\((?![a-zA-Z][a-zA-Z0-9+.-]*:|#)([^)\s]+)\)",
+                  lambda match: f"]({blob(library, rev, posixpath.normpath(posixpath.join(base, match.group(1))).lstrip('/'))})",
+                  text)
 
 
 def plural(count: int, word: str, words: str | None = None) -> str:
@@ -587,7 +594,7 @@ def chapter(library: Library, data: dict) -> tuple[Built, dict[str, str]]:
             lines.append(listed_line(listed))
             stats["listed"] += len(listed)
         if path in data["folders"]:
-            lines.append(f"Its [README]({blob(library, rev, path + '/README.md')}) opens:\n\n{quote(pinned(library, data['folders'][path], rev))}")
+            lines.append(f"Its [README]({blob(library, rev, path + '/README.md')}) opens:\n\n{quote(pinned(library, data['folders'][path], rev, path))}")
         if part:
             lines.append(credit(library, rev))
         container.prose = "\n\n".join(lines)
@@ -645,12 +652,17 @@ def edges(library: Library, data: dict, leaves: dict[str, Leaf], stats: Counter)
     reach_all: dict[str, set[str]] = {}
 
     def walk_from(module: str) -> None:
-        # Modules import one another without cycles, so a depth-first walk ends; each set is its node's closure.
+        # Modules import one another without cycles, so a depth-first walk ends; each set is its node's closure. A
+        # node met again before its closure is done is on a cycle, which a dump that reads imports cannot give.
         stack = [(module, False)]
+        open_nodes: set[str] = set()
         while stack:
             node, done = stack.pop()
             if node in reach_all:
                 continue
+            if not done and node in open_nodes:
+                raise ValueError(f"data/{library.id}/deps.json has a cycle of module dependencies through {node}")
+            open_nodes.add(node)
             if done:
                 reach_stmt[node] = set().union(*(reach_stmt[child] | {child} for child in stmt[node]))
                 reach_all[node] = set().union(*(reach_all[child] | {child} for child in stmt[node] | proof[node]))

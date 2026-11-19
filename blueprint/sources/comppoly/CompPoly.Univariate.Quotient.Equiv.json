@@ -1,0 +1,19 @@
+{
+ "schema": "trough-ledger/v1",
+ "library": "CompPoly",
+ "repo": "Verified-zkEVM/CompPoly",
+ "rev": "afb9b1363984a70f10e24bd597f6ff40ebc8afbb",
+ "module": "CompPoly.Univariate.Quotient.Equiv",
+ "file": "CompPoly/Univariate/Quotient/Equiv.lean",
+ "public": [
+  {"name": "CompPoly.CPolynomial.QuotientCPolynomial.toPoly_resp", "kind": "theorem", "line": 42},
+  {"name": "CompPoly.CPolynomial.QuotientCPolynomial.toPoly", "kind": "def", "line": 52},
+  {"name": "CompPoly.CPolynomial.QuotientCPolynomial.ofPoly", "kind": "def", "line": 59},
+  {"name": "CompPoly.CPolynomial.QuotientCPolynomial.toPoly_ofPoly", "kind": "theorem", "line": 64},
+  {"name": "CompPoly.CPolynomial.QuotientCPolynomial.ofPoly_toPoly", "kind": "theorem", "line": 69},
+  {"name": "CompPoly.CPolynomial.QuotientCPolynomial.ringEquiv", "kind": "def", "line": 85}
+ ],
+ "private": [],
+ "missing": [],
+ "unread": "Unnamed instances, the names an `alias ⟨…⟩` command gives, and the names Lean generates for a declaration (constructors, recursors, derived instances) are not read from the source, so they are not listed."
+}

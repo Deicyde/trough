@@ -1,0 +1,31 @@
+{
+ "schema": "trough-ledger/v1",
+ "library": "CompPoly",
+ "repo": "Verified-zkEVM/CompPoly",
+ "rev": "afb9b1363984a70f10e24bd597f6ff40ebc8afbb",
+ "module": "CompPoly.Univariate.Roots.Shoup.Correctness",
+ "file": "CompPoly/Univariate/Roots/Shoup/Correctness.lean",
+ "public": [
+  {"name": "CompPoly.CPolynomial.Roots.FiniteField.eval_shoupModularXPowerWith_eq_pow", "kind": "theorem", "line": 43},
+  {"name": "CompPoly.CPolynomial.Roots.FiniteField.eval_traceCoordinatePolynomialWith", "kind": "theorem", "line": 52},
+  {"name": "CompPoly.CPolynomial.Roots.FiniteField.traceValue_sub", "kind": "theorem", "line": 104},
+  {"name": "CompPoly.CPolynomial.Roots.FiniteField.traceValue_mul_sub_eq_zero_of_eq", "kind": "theorem", "line": 133},
+  {"name": "CompPoly.CPolynomial.Roots.FiniteField.eq_of_traceValue_eq_on_basis", "kind": "theorem", "line": 141},
+  {"name": "CompPoly.CPolynomial.Roots.FiniteField.shoup_gcdBucket_root", "kind": "theorem", "line": 152},
+  {"name": "CompPoly.CPolynomial.Roots.FiniteField.shoup_gcdBucket_root_iff", "kind": "theorem", "line": 171},
+  {"name": "CompPoly.CPolynomial.Roots.FiniteField.shoupSplitCandidatesWith_root", "kind": "theorem", "line": 806},
+  {"name": "CompPoly.CPolynomial.Roots.FiniteField.shoupSplitCandidatesWith_dvd_input", "kind": "theorem", "line": 837},
+  {"name": "CompPoly.CPolynomial.Roots.FiniteField.shoupSplitLinearFactorsWith_complete", "kind": "theorem", "line": 922},
+  {"name": "CompPoly.CPolynomial.Roots.FiniteField.shoupLinearFactorProductSplitterWith", "kind": "def", "line": 941},
+  {"name": "CompPoly.CPolynomial.Roots.FiniteField.shoupLinearFactorProductSplitter", "kind": "def", "line": 956},
+  {"name": "CompPoly.CPolynomial.Roots.FiniteField.shoupLinearFactorProductSplitterWith_sound", "kind": "theorem", "line": 964},
+  {"name": "CompPoly.CPolynomial.Roots.FiniteField.shoupLinearFactorProductSplitterWith_complete", "kind": "theorem", "line": 974},
+  {"name": "CompPoly.CPolynomial.Roots.FiniteField.finiteFieldRootProductWith_dvd_frobenius", "kind": "theorem", "line": 1325},
+  {"name": "CompPoly.CPolynomial.Roots.FiniteField.finiteFieldRootProductWith_shoupSplitterInput", "kind": "theorem", "line": 1379},
+  {"name": "CompPoly.CPolynomial.Roots.FiniteField.finiteFieldRootProduct_shoupSplitterInput", "kind": "theorem", "line": 1388},
+  {"name": "CompPoly.CPolynomial.Roots.FiniteField.rootProduct_satisfies_shoupSplitterInput", "kind": "theorem", "line": 1396}
+ ],
+ "private": [],
+ "missing": [],
+ "unread": "Unnamed instances, the names an `alias ⟨…⟩` command gives, and the names Lean generates for a declaration (constructors, recursors, derived instances) are not read from the source, so they are not listed."
+}

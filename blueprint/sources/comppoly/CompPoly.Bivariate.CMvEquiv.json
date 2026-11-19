@@ -1,0 +1,26 @@
+{
+ "schema": "trough-ledger/v1",
+ "library": "CompPoly",
+ "repo": "Verified-zkEVM/CompPoly",
+ "rev": "afb9b1363984a70f10e24bd597f6ff40ebc8afbb",
+ "module": "CompPoly.Bivariate.CMvEquiv",
+ "file": "CompPoly/Bivariate/CMvEquiv.lean",
+ "public": [
+  {"name": "CMvPolynomial.isEmptyRingEquiv_symm_apply", "kind": "lemma", "line": 58},
+  {"name": "CMvPolynomial.finSuccEquiv_symm_C", "kind": "lemma", "line": 67},
+  {"name": "CMvPolynomial.finSuccEquiv_symm_X", "kind": "lemma", "line": 97},
+  {"name": "CompPoly.CBivariate.bivariateEquiv", "kind": "def", "line": 128},
+  {"name": "CompPoly.CBivariate.bivariateEquiv_add", "kind": "lemma", "line": 142},
+  {"name": "CompPoly.CBivariate.bivariateEquiv_mul", "kind": "lemma", "line": 149},
+  {"name": "CompPoly.CBivariate.bivariateEquiv_zero", "kind": "lemma", "line": 156},
+  {"name": "CompPoly.CBivariate.bivariateEquiv_CC", "kind": "lemma", "line": 162},
+  {"name": "CompPoly.CBivariate.bivariateEquiv_X", "kind": "lemma", "line": 171},
+  {"name": "CompPoly.CBivariate.bivariateEquiv_Y", "kind": "lemma", "line": 179},
+  {"name": "CompPoly.CBivariate.bivariateEquiv_symm_C", "kind": "lemma", "line": 187},
+  {"name": "CompPoly.CBivariate.bivariateEquiv_symm_X0", "kind": "lemma", "line": 195},
+  {"name": "CompPoly.CBivariate.bivariateEquiv_symm_X1", "kind": "lemma", "line": 203}
+ ],
+ "private": [],
+ "missing": [],
+ "unread": "Unnamed instances, the names an `alias ⟨…⟩` command gives, and the names Lean generates for a declaration (constructors, recursors, derived instances) are not read from the source, so they are not listed."
+}

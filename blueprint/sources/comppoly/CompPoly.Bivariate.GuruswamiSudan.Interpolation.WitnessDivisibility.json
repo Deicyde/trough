@@ -1,0 +1,17 @@
+{
+ "schema": "trough-ledger/v1",
+ "library": "CompPoly",
+ "repo": "Verified-zkEVM/CompPoly",
+ "rev": "afb9b1363984a70f10e24bd597f6ff40ebc8afbb",
+ "module": "CompPoly.Bivariate.GuruswamiSudan.Interpolation.WitnessDivisibility",
+ "file": "CompPoly/Bivariate/GuruswamiSudan/Interpolation/WitnessDivisibility.lean",
+ "public": [
+  {"name": "CompPoly.CBivariate.divByLinearYWith", "kind": "def", "line": 52},
+  {"name": "CompPoly.CBivariate.divByLinearYWith_eq_divByLinearY", "kind": "theorem", "line": 70},
+  {"name": "CompPoly.GuruswamiSudan.satisfiesMultiplicityConstraintsViaDivisibilityBool", "kind": "def", "line": 90},
+  {"name": "CompPoly.GuruswamiSudan.interpolationWitnessIsValidViaDivisibilityBool", "kind": "def", "line": 103}
+ ],
+ "private": [],
+ "missing": [],
+ "unread": "Unnamed instances, the names an `alias ⟨…⟩` command gives, and the names Lean generates for a declaration (constructors, recursors, derived instances) are not read from the source, so they are not listed."
+}

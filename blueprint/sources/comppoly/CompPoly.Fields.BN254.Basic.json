@@ -1,0 +1,16 @@
+{
+ "schema": "trough-ledger/v1",
+ "library": "CompPoly",
+ "repo": "Verified-zkEVM/CompPoly",
+ "rev": "afb9b1363984a70f10e24bd597f6ff40ebc8afbb",
+ "module": "CompPoly.Fields.BN254.Basic",
+ "file": "CompPoly/Fields/BN254/Basic.lean",
+ "public": [
+  {"name": "BN254.scalarFieldSize", "kind": "def", "line": 23},
+  {"name": "BN254.ScalarField", "kind": "abbrev", "line": 26},
+  {"name": "BN254.ScalarField_is_prime", "kind": "theorem", "line": 28}
+ ],
+ "private": [],
+ "missing": [],
+ "unread": "Unnamed instances, the names an `alias ⟨…⟩` command gives, and the names Lean generates for a declaration (constructors, recursors, derived instances) are not read from the source, so they are not listed."
+}

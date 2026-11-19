@@ -1,0 +1,25 @@
+{
+ "schema": "trough-ledger/v1",
+ "library": "CompPoly",
+ "repo": "Verified-zkEVM/CompPoly",
+ "rev": "afb9b1363984a70f10e24bd597f6ff40ebc8afbb",
+ "module": "CompPoly.Univariate.ReedSolomon.GaoNTT",
+ "file": "CompPoly/Univariate/ReedSolomon/GaoNTT.lean",
+ "public": [
+  {"name": "CompPoly.ReedSolomon.Gao.decodeFrom", "kind": "def", "line": 48},
+  {"name": "CompPoly.ReedSolomon.Gao.decode_eq_decodeFrom", "kind": "theorem", "line": 56},
+  {"name": "CompPoly.ReedSolomon.Gao.vanishingRaw", "kind": "def", "line": 61},
+  {"name": "CompPoly.ReedSolomon.Gao.vanishingNTT", "kind": "def", "line": 66},
+  {"name": "CompPoly.ReedSolomon.Gao.toPoly_vanishingNTT", "kind": "theorem", "line": 70},
+  {"name": "CompPoly.ReedSolomon.Gao.castToRS", "kind": "def", "line": 89},
+  {"name": "CompPoly.ReedSolomon.Gao.nodalPoly_nttDomainToRS", "kind": "theorem", "line": 100},
+  {"name": "CompPoly.ReedSolomon.Gao.receivedInterpolant_nttDomainToRS", "kind": "theorem", "line": 109},
+  {"name": "CompPoly.ReedSolomon.Gao.decodeNTT", "kind": "def", "line": 130},
+  {"name": "CompPoly.ReedSolomon.Gao.decodeNTT_eq_decode", "kind": "theorem", "line": 135},
+  {"name": "CompPoly.ReedSolomon.Gao.decodePlan", "kind": "def", "line": 142},
+  {"name": "CompPoly.ReedSolomon.Gao.decodePlan_eq_decode", "kind": "theorem", "line": 147}
+ ],
+ "private": [],
+ "missing": [],
+ "unread": "Unnamed instances, the names an `alias ⟨…⟩` command gives, and the names Lean generates for a declaration (constructors, recursors, derived instances) are not read from the source, so they are not listed."
+}

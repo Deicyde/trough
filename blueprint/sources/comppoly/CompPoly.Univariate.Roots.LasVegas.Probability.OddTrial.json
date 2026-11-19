@@ -1,0 +1,28 @@
+{
+ "schema": "trough-ledger/v1",
+ "library": "CompPoly",
+ "repo": "Verified-zkEVM/CompPoly",
+ "rev": "afb9b1363984a70f10e24bd597f6ff40ebc8afbb",
+ "module": "CompPoly.Univariate.Roots.LasVegas.Probability.OddTrial",
+ "file": "CompPoly/Univariate/Roots/LasVegas/Probability/OddTrial.lean",
+ "public": [
+  {"name": "CompPoly.CPolynomial.Roots.FiniteField.HasTwoDistinctRoots", "kind": "def", "line": 38},
+  {"name": "CompPoly.CPolynomial.Roots.FiniteField.RootProductProbabilityInput", "kind": "structure", "line": 49},
+  {"name": "CompPoly.CPolynomial.Roots.FiniteField.RootProductProbabilityInput.hasTwoDistinctRoots", "kind": "theorem", "line": 60},
+  {"name": "CompPoly.CPolynomial.Roots.FiniteField.rootProductProbabilityInput_of_lasVegasSplitterInput", "kind": "theorem", "line": 95},
+  {"name": "CompPoly.CPolynomial.Roots.FiniteField.finiteFieldRootProductWith_rootProductProbabilityInput", "kind": "theorem", "line": 126},
+  {"name": "CompPoly.CPolynomial.Roots.FiniteField.finiteFieldRootProduct_rootProductProbabilityInput", "kind": "theorem", "line": 137},
+  {"name": "CompPoly.CPolynomial.Roots.FiniteField.IsProperRootPreservingSplit", "kind": "def", "line": 148},
+  {"name": "CompPoly.CPolynomial.Roots.FiniteField.oddSplitTrialPMF", "kind": "def", "line": 158},
+  {"name": "CompPoly.CPolynomial.Roots.FiniteField.oddSplitTrialPMF_support_success_valid", "kind": "theorem", "line": 171},
+  {"name": "CompPoly.CPolynomial.Roots.FiniteField.OddSplitTrialHalfSuccessModel", "kind": "def", "line": 205},
+  {"name": "CompPoly.CPolynomial.Roots.FiniteField.oddSplitTrial_success_probability_ge_half_of_two_le", "kind": "theorem", "line": 227},
+  {"name": "CompPoly.CPolynomial.Roots.FiniteField.oddSplitTrial_success_probability_ge_half_linear", "kind": "theorem", "line": 279},
+  {"name": "CompPoly.CPolynomial.Roots.FiniteField.oddSplitTrialHalfSuccessModel_of_uniformProbe", "kind": "theorem", "line": 301},
+  {"name": "CompPoly.CPolynomial.Roots.FiniteField.oddSplitTrial_success_probability_ge_half", "kind": "theorem", "line": 327},
+  {"name": "CompPoly.CPolynomial.Roots.FiniteField.oddSplitTrial_success_probability_ge_half_of_model", "kind": "theorem", "line": 348}
+ ],
+ "private": [],
+ "missing": [],
+ "unread": "Unnamed instances, the names an `alias ⟨…⟩` command gives, and the names Lean generates for a declaration (constructors, recursors, derived instances) are not read from the source, so they are not listed."
+}

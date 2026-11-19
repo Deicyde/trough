@@ -12,7 +12,8 @@ A module's statements are the types of its declarations, the values of its defin
 constructors of its structures and inductive types. Its proofs are the values of its theorems and instances,
 and everything that the declarations Lean generates for it (matchers, auxiliary proofs) or that its private
 declarations use. A constant belongs to the module that declares it, so the walk stops at the first constant
-of another module: every module has its own record.
+of another module: every module has its own record. When several modules' data hold a name, the one the using
+module imports declares it there.
 
 Of the names in `$TROUGH_NAMES`, one per line, the declarations read from the source, it lists under `private`
 each one Lean has only as a private declaration of a module under a root (in a `module` file, a declaration outside
@@ -76,6 +77,36 @@ def run : MetaM Unit := do
     let idx ← env.getModuleIdxFor? name
     let module := moduleNames[idx.toNat]!
     if underRoot module then some module else none
+  let mut indexOf : Std.HashMap Name Nat := {}
+  for i in [0:moduleNames.size] do
+    indexOf := indexOf.insert moduleNames[i]! i
+  -- The library's modules whose data hold each name: a name can be in several modules' data, and the environment
+  -- then gives it to one of them, which need not be one the module using it imports.
+  let mut declaredIn : Std.HashMap Name (Array Name) := {}
+  for i in [0:moduleNames.size] do
+    let module := moduleNames[i]!
+    unless underRoot module do continue
+    for name in env.header.moduleData[i]!.constNames do
+      declaredIn := declaredIn.insert name ((declaredIn.getD name #[]).push module)
+  -- The library's modules a module imports, directly or through others of them.
+  let importsOf (i : Nat) : Std.HashSet Name := Id.run do
+    let mut seen : Std.HashSet Name := {}
+    let mut todo := #[i]
+    while !todo.isEmpty do
+      let j := todo.back!
+      todo := todo.pop
+      for imp in env.header.moduleData[j]!.imports do
+        if underRoot imp.module && !seen.contains imp.module then
+          seen := seen.insert imp.module
+          if let some k := indexOf[imp.module]? then todo := todo.push k
+    return seen
+  -- A name a module uses belongs to the module itself, when its data hold the name, or else to a module it imports
+  -- whose data do.
+  let ownerOf (module : Name) (imported : Std.HashSet Name) (used : Name) : Option Name :=
+    let owners := declaredIn.getD used #[]
+    if owners.contains module then some module else owners.find? imported.contains
+  let mut reassigned := 0
+  let mut reassignedExamples : Array Name := #[]
   let mut records : Array (String × Json) := #[]
   -- The names private declarations of the library's modules are written with.
   let mut privateNames : Std.HashSet Name := {}
@@ -86,6 +117,7 @@ def run : MetaM Unit := do
   for i in [0:moduleNames.size] do
     let module := moduleNames[i]!
     unless underRoot module do continue
+    let imported := importsOf i
     let mut statement : Std.HashSet Name := {}
     let mut proof : Std.HashSet Name := {}
     for name in env.header.moduleData[i]!.constNames do
@@ -97,13 +129,14 @@ def run : MetaM Unit := do
         unless proved.isEmpty do withProof := withProof + 1
       -- What Lean generates for a declaration, or a private helper, serves the module's proofs.
       let helper := name.isInternalDetail || isPrivateName name
-      for used in stated do
-        if let some other := moduleOf used then
+      for (used, isStatement) in stated.map (·, !helper) ++ proved.map (·, false) do
+        let owner := ownerOf module imported used
+        if owner != moduleOf used then
+          reassigned := reassigned + 1
+          if reassignedExamples.size < 5 then reassignedExamples := reassignedExamples.push used
+        if let some other := owner then
           if other != module then
-            if helper then proof := proof.insert other else statement := statement.insert other
-      for used in proved do
-        if let some other := moduleOf used then
-          if other != module then proof := proof.insert other
+            if isStatement then statement := statement.insert other else proof := proof.insert other
     let proofOnly := proof.fold (init := ({} : Std.HashSet Name)) fun acc other =>
       if statement.contains other then acc else acc.insert other
     statementEdges := statementEdges + statement.size
@@ -141,6 +174,7 @@ def run : MetaM Unit := do
       ("private", toJson privateOnly.length),
       ("missing", toJson missing.length)])]
   IO.FS.writeFile outPath (out.pretty 100 ++ "\n")
+  IO.println s!"{reassigned} uses of a name the environment gives to a module the user does not import, such as {reassignedExamples}"
   IO.println s!"{records.size} modules, {theorems} theorems ({withProof} with a proof), {statementEdges} statement and {proofEdges} proof edges before reduction; of {requested.length} names read from the source, {privateOnly.length} private, {missing.length} missing"
 
 end TroughLibrary

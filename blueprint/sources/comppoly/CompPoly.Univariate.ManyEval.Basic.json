@@ -1,0 +1,21 @@
+{
+ "schema": "trough-ledger/v1",
+ "library": "CompPoly",
+ "repo": "Verified-zkEVM/CompPoly",
+ "rev": "afb9b1363984a70f10e24bd597f6ff40ebc8afbb",
+ "module": "CompPoly.Univariate.ManyEval.Basic",
+ "file": "CompPoly/Univariate/ManyEval/Basic.lean",
+ "public": [
+  {"name": "CompPoly.CPolynomial.ManyEval.maxCoeffSize", "kind": "def", "line": 26},
+  {"name": "CompPoly.CPolynomial.ManyEval.powerTableLoop", "kind": "def", "line": 31},
+  {"name": "CompPoly.CPolynomial.ManyEval.powerTable", "kind": "def", "line": 42},
+  {"name": "CompPoly.CPolynomial.ManyEval.evalWithPowersLoop", "kind": "def", "line": 47},
+  {"name": "CompPoly.CPolynomial.ManyEval.evalWithPowers", "kind": "def", "line": 61},
+  {"name": "CompPoly.CPolynomial.evalManyHorner", "kind": "def", "line": 69},
+  {"name": "CompPoly.CPolynomial.ManyEval.evalManyWithPowersLoop", "kind": "def", "line": 74},
+  {"name": "CompPoly.CPolynomial.evalManySharedPowers", "kind": "def", "line": 92}
+ ],
+ "private": [],
+ "missing": [],
+ "unread": "Unnamed instances, the names an `alias ⟨…⟩` command gives, and the names Lean generates for a declaration (constructors, recursors, derived instances) are not read from the source, so they are not listed."
+}

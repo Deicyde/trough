@@ -1,0 +1,15 @@
+{
+ "schema": "trough-ledger/v1",
+ "library": "CompPoly",
+ "repo": "Verified-zkEVM/CompPoly",
+ "rev": "afb9b1363984a70f10e24bd597f6ff40ebc8afbb",
+ "module": "CompPoly.Multilinear.TransformEquiv",
+ "file": "CompPoly/Multilinear/TransformEquiv.lean",
+ "public": [
+  {"name": "CompPoly.CMlPolynomial.lagrangeToMono_eq_lagrangeToMonoSpec", "kind": "theorem", "line": 532},
+  {"name": "CompPoly.CMlPolynomial.monoToLagrange_eq_monoToLagrangeSpec", "kind": "theorem", "line": 785}
+ ],
+ "private": [],
+ "missing": [],
+ "unread": "Unnamed instances, the names an `alias ⟨…⟩` command gives, and the names Lean generates for a declaration (constructors, recursors, derived instances) are not read from the source, so they are not listed."
+}

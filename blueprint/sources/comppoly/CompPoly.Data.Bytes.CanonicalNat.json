@@ -1,0 +1,28 @@
+{
+ "schema": "trough-ledger/v1",
+ "library": "CompPoly",
+ "repo": "Verified-zkEVM/CompPoly",
+ "rev": "afb9b1363984a70f10e24bd597f6ff40ebc8afbb",
+ "module": "CompPoly.Data.Bytes.CanonicalNat",
+ "file": "CompPoly/Data/Bytes/CanonicalNat.lean",
+ "public": [
+  {"name": "CompPoly.ByteCodec.ofCanonicalNat", "kind": "def", "line": 42},
+  {"name": "CompPoly.CanonicalNat.ofBytesModOrder", "kind": "def", "line": 57},
+  {"name": "CompPoly.CanonicalNat.ofByteArrayModOrder", "kind": "def", "line": 60},
+  {"name": "CompPoly.CanonicalNat.deserialize_vector_eq", "kind": "theorem", "line": 66},
+  {"name": "CompPoly.CanonicalNat.deserialize_byteArray_eq", "kind": "theorem", "line": 69},
+  {"name": "CompPoly.CanonicalNat.ofBytesModOrder_toVecLE_toNat", "kind": "theorem", "line": 73},
+  {"name": "CompPoly.CanonicalNat.ofByteArrayModOrder_toByteArrayLE_toNat", "kind": "theorem", "line": 79},
+  {"name": "CompPoly.ByteCodec.ofBytesModOrder_toBytes", "kind": "theorem", "line": 88},
+  {"name": "CompPoly.instByteCodecZMod", "kind": "instance", "line": 95},
+  {"name": "CompPoly.ByteCodec.width_zmod", "kind": "theorem", "line": 97},
+  {"name": "CompPoly.ByteCodec.toBytes_zmod", "kind": "theorem", "line": 100},
+  {"name": "CompPoly.ByteCodec.ofBytes?_zmod", "kind": "theorem", "line": 103},
+  {"name": "CompPoly.CanonicalNat.deserialize_serialize", "kind": "theorem", "line": 119},
+  {"name": "CompPoly.CanonicalNat.deserialize_serialize_byteArray", "kind": "theorem", "line": 125},
+  {"name": "CompPoly.deserialize_serialize_zmod", "kind": "theorem", "line": 132}
+ ],
+ "private": [],
+ "missing": [],
+ "unread": "Unnamed instances, the names an `alias ⟨…⟩` command gives, and the names Lean generates for a declaration (constructors, recursors, derived instances) are not read from the source, so they are not listed."
+}

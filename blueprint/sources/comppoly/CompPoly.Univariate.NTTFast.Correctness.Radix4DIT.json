@@ -1,0 +1,18 @@
+{
+ "schema": "trough-ledger/v1",
+ "library": "CompPoly",
+ "repo": "Verified-zkEVM/CompPoly",
+ "rev": "afb9b1363984a70f10e24bd597f6ff40ebc8afbb",
+ "module": "CompPoly.Univariate.NTTFast.Correctness.Radix4DIT",
+ "file": "CompPoly/Univariate/NTTFast/Correctness/Radix4DIT.lean",
+ "public": [
+  {"name": "CompPoly.CPolynomial.NTTFast.Plan.radix4Cell", "kind": "def", "line": 180},
+  {"name": "CompPoly.CPolynomial.NTTFast.Plan.size_radix4Cell", "kind": "theorem", "line": 196},
+  {"name": "CompPoly.CPolynomial.NTTFast.Plan.butterflyStageWithTwiddles_eq_ntt", "kind": "theorem", "line": 612},
+  {"name": "CompPoly.CPolynomial.NTTFast.Plan.runStagesWithTwiddles_eq_ntt", "kind": "theorem", "line": 636},
+  {"name": "CompPoly.CPolynomial.NTTFast.Plan.runStagesRadix4WithTwiddles_eq_ntt", "kind": "theorem", "line": 650}
+ ],
+ "private": [],
+ "missing": [],
+ "unread": "Unnamed instances, the names an `alias ⟨…⟩` command gives, and the names Lean generates for a declaration (constructors, recursors, derived instances) are not read from the source, so they are not listed."
+}

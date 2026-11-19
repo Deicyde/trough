@@ -1,0 +1,21 @@
+{
+ "schema": "trough-ledger/v1",
+ "library": "CompPoly",
+ "repo": "Verified-zkEVM/CompPoly",
+ "rev": "afb9b1363984a70f10e24bd597f6ff40ebc8afbb",
+ "module": "CompPoly.Bivariate.CoeffRows",
+ "file": "CompPoly/Bivariate/CoeffRows.lean",
+ "public": [
+  {"name": "CompPoly.CBivariate.ofCoeffRow", "kind": "def", "line": 27},
+  {"name": "CompPoly.CBivariate.toCoeffRow", "kind": "def", "line": 32},
+  {"name": "CompPoly.CBivariate.toCoeffRow_size", "kind": "theorem", "line": 37},
+  {"name": "CompPoly.CBivariate.weightedDegreeShift", "kind": "def", "line": 42},
+  {"name": "CompPoly.CBivariate.coeff_ofCoeffRow_of_lt", "kind": "theorem", "line": 46},
+  {"name": "CompPoly.CBivariate.coeff_ofCoeffRow_of_size_le", "kind": "theorem", "line": 55},
+  {"name": "CompPoly.CBivariate.rowShiftedDegree?_eq_natWeightedDegree_ofCoeffRow", "kind": "theorem", "line": 65},
+  {"name": "CompPoly.CBivariate.natWeightedDegree_ofCoeffRow_le_of_rowShiftedDegree?_le", "kind": "theorem", "line": 143}
+ ],
+ "private": [],
+ "missing": [],
+ "unread": "Unnamed instances, the names an `alias ⟨…⟩` command gives, and the names Lean generates for a declaration (constructors, recursors, derived instances) are not read from the source, so they are not listed."
+}

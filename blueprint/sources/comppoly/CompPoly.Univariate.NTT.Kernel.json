@@ -1,0 +1,19 @@
+{
+ "schema": "trough-ledger/v1",
+ "library": "CompPoly",
+ "repo": "Verified-zkEVM/CompPoly",
+ "rev": "afb9b1363984a70f10e24bd597f6ff40ebc8afbb",
+ "module": "CompPoly.Univariate.NTT.Kernel",
+ "file": "CompPoly/Univariate/NTT/Kernel.lean",
+ "public": [
+  {"name": "CompPoly.CPolynomial.NTT.omegaInv_pow_mul_eq", "kind": "theorem", "line": 29},
+  {"name": "CompPoly.CPolynomial.NTT.kernel_term_eq", "kind": "theorem", "line": 43},
+  {"name": "CompPoly.CPolynomial.NTT.omega_sum_pow_mul_eq_if_dvd", "kind": "theorem", "line": 52},
+  {"name": "CompPoly.CPolynomial.NTT.dvd_add_sub_iff_fin_eq", "kind": "theorem", "line": 87},
+  {"name": "CompPoly.CPolynomial.NTT.kernel_sum_eq_if", "kind": "theorem", "line": 111},
+  {"name": "CompPoly.CPolynomial.NTT.kernel_sum_forward_inverse_eq_if", "kind": "theorem", "line": 130}
+ ],
+ "private": [],
+ "missing": [],
+ "unread": "Unnamed instances, the names an `alias ⟨…⟩` command gives, and the names Lean generates for a declaration (constructors, recursors, derived instances) are not read from the source, so they are not listed."
+}

@@ -1,0 +1,19 @@
+{
+ "schema": "trough-ledger/v1",
+ "library": "CompPoly",
+ "repo": "Verified-zkEVM/CompPoly",
+ "rev": "afb9b1363984a70f10e24bd597f6ff40ebc8afbb",
+ "module": "CompPoly.Bivariate.GuruswamiSudan.Root.Common",
+ "file": "CompPoly/Bivariate/GuruswamiSudan/Root/Common.lean",
+ "public": [
+  {"name": "CompPoly.GuruswamiSudan.initialCoefficientPolynomial", "kind": "def", "line": 24},
+  {"name": "CompPoly.GuruswamiSudan.isRootYDegreeLtBool", "kind": "def", "line": 32},
+  {"name": "CompPoly.GuruswamiSudan.rootsYDegreeLtFromCandidates", "kind": "def", "line": 38},
+  {"name": "CompPoly.GuruswamiSudan.extendPrefix", "kind": "def", "line": 45},
+  {"name": "CompPoly.GuruswamiSudan.polynomialPrefix", "kind": "def", "line": 51},
+  {"name": "CompPoly.GuruswamiSudan.rootsInFieldForNonzeroEquation", "kind": "def", "line": 61}
+ ],
+ "private": [],
+ "missing": [],
+ "unread": "Unnamed instances, the names an `alias ⟨…⟩` command gives, and the names Lean generates for a declaration (constructors, recursors, derived instances) are not read from the source, so they are not listed."
+}

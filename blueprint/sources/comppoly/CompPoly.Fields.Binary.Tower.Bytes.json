@@ -1,0 +1,31 @@
+{
+ "schema": "trough-ledger/v1",
+ "library": "CompPoly",
+ "repo": "Verified-zkEVM/CompPoly",
+ "rev": "afb9b1363984a70f10e24bd597f6ff40ebc8afbb",
+ "module": "CompPoly.Fields.Binary.Tower.Bytes",
+ "file": "CompPoly/Fields/Binary/Tower/Bytes.lean",
+ "public": [
+  {"name": "ConcreteBinaryTower.ConcreteBTField.canonicalNat_bound", "kind": "theorem", "line": 38},
+  {"name": "ConcreteBinaryTower.ConcreteBTField.canonicalNat_toNat", "kind": "theorem", "line": 41},
+  {"name": "ConcreteBinaryTower.ConcreteBTField.byteCodec_width", "kind": "theorem", "line": 44},
+  {"name": "ConcreteBinaryTower.ConcreteBTField.byteCodec_width_eq", "kind": "theorem", "line": 49},
+  {"name": "ConcreteBinaryTower.ConcreteBTField.byteCodec_width_three", "kind": "theorem", "line": 53},
+  {"name": "ConcreteBinaryTower.ConcreteBTField.byteCodec_width_seven", "kind": "theorem", "line": 57},
+  {"name": "ConcreteBinaryTower.Fast.FastBT128.toBitVec", "kind": "def", "line": 67},
+  {"name": "ConcreteBinaryTower.Fast.FastBT128.ofBitVec", "kind": "def", "line": 70},
+  {"name": "ConcreteBinaryTower.Fast.FastBT128.toNat_lt", "kind": "theorem", "line": 72},
+  {"name": "ConcreteBinaryTower.Fast.FastBT128.toNat_ofNat", "kind": "theorem", "line": 78},
+  {"name": "ConcreteBinaryTower.Fast.FastBT128.ofNat_toNat", "kind": "theorem", "line": 82},
+  {"name": "ConcreteBinaryTower.Fast.FastBT128.ofBitVec_toBitVec", "kind": "theorem", "line": 93},
+  {"name": "ConcreteBinaryTower.Fast.FastBT128.toBitVec_ofBitVec", "kind": "theorem", "line": 96},
+  {"name": "ConcreteBinaryTower.Fast.FastBT128.canonicalNat_bound", "kind": "theorem", "line": 105},
+  {"name": "ConcreteBinaryTower.Fast.FastBT128.canonicalNat_toNat", "kind": "theorem", "line": 107},
+  {"name": "ConcreteBinaryTower.Fast.FastBT128.byteCodec_width", "kind": "theorem", "line": 111},
+  {"name": "ConcreteBinaryTower.Fast.FastBT128.toList_toBytes_toConcrete", "kind": "theorem", "line": 122},
+  {"name": "ConcreteBinaryTower.Fast.FastBT128.toByteArray_toConcrete", "kind": "theorem", "line": 133}
+ ],
+ "private": [],
+ "missing": [],
+ "unread": "Unnamed instances, the names an `alias ⟨…⟩` command gives, and the names Lean generates for a declaration (constructors, recursors, derived instances) are not read from the source, so they are not listed."
+}

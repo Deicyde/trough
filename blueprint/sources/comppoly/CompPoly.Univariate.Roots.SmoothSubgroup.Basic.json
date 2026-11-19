@@ -1,0 +1,23 @@
+{
+ "schema": "trough-ledger/v1",
+ "library": "CompPoly",
+ "repo": "Verified-zkEVM/CompPoly",
+ "rev": "afb9b1363984a70f10e24bd597f6ff40ebc8afbb",
+ "module": "CompPoly.Univariate.Roots.SmoothSubgroup.Basic",
+ "file": "CompPoly/Univariate/Roots/SmoothSubgroup/Basic.lean",
+ "public": [
+  {"name": "CompPoly.CPolynomial.Roots.FiniteField.smoothSplitterInput", "kind": "def", "line": 46},
+  {"name": "CompPoly.CPolynomial.Roots.FiniteField.SmoothCyclicRootContext", "kind": "structure", "line": 51},
+  {"name": "CompPoly.CPolynomial.Roots.FiniteField.smoothCosetPoints", "kind": "def", "line": 79},
+  {"name": "CompPoly.CPolynomial.Roots.FiniteField.linearFactorsFromLeafValues", "kind": "def", "line": 84},
+  {"name": "CompPoly.CPolynomial.Roots.FiniteField.smoothLeafLinearFactors", "kind": "def", "line": 95},
+  {"name": "CompPoly.CPolynomial.Roots.FiniteField.smoothCosetLinearFactorsWithSchedule", "kind": "def", "line": 102},
+  {"name": "CompPoly.CPolynomial.Roots.FiniteField.smoothNonzeroLinearFactorsWith", "kind": "def", "line": 143},
+  {"name": "CompPoly.CPolynomial.Roots.FiniteField.smoothLinearFactorsAlgorithmWith", "kind": "def", "line": 152},
+  {"name": "CompPoly.CPolynomial.Roots.FiniteField.smoothCyclicRootContextOf", "kind": "def", "line": 170},
+  {"name": "CompPoly.CPolynomial.Roots.FiniteField.smoothLinearFactorProductSplitterWith", "kind": "def", "line": 208}
+ ],
+ "private": [],
+ "missing": [],
+ "unread": "Unnamed instances, the names an `alias ⟨…⟩` command gives, and the names Lean generates for a declaration (constructors, recursors, derived instances) are not read from the source, so they are not listed."
+}
