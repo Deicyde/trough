@@ -1,7 +1,7 @@
 from pathlib import Path
 
 import refresh_library
-from trough import comppoly
+from trough import comppoly, library
 from trough.vault import Container, Leaf, walk
 
 ROOT = Path(__file__).resolve().parent.parent
@@ -24,6 +24,15 @@ def test_the_readme_description_is_its_first_sentence():
         "A formally verified library for computable polynomial operations over finite fields and general rings, "
         "supporting univariate, multivariate, multilinear, and bivariate polynomials."]
     assert refresh_library.LIBRARIES["comppoly"] is comppoly.COMPPOLY
+
+
+def test_a_folder_readme_s_relative_links_point_into_the_repository_at_the_pin():
+    rev = "a" * 40
+    text = "See [the wiki](../../docs/wiki/coding-theory.md), [Mathlib](https://example.org/x) and [below](#use)."
+    assert library.pinned(comppoly.COMPPOLY, text, rev, "CompPoly/LinearAlgebra") == (
+        f"See [the wiki](https://github.com/Verified-zkEVM/CompPoly/blob/{rev}/docs/wiki/coding-theory.md), "
+        "[Mathlib](https://example.org/x) and [below](#use).")
+    assert library.pinned(comppoly.COMPPOLY, text, rev) == text
 
 
 def test_the_committed_data_build_the_chapter():
