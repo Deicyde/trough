@@ -690,6 +690,7 @@ def test_macro_glue_keeps_control_words_apart():
 def test_formulas_lose_what_mathjax_does_not_define():
     assert tex.math_text(r"\mathsf{V}^{\textsc{Compr}} = b. \qedhere", True) == r"\mathsf{V}^{\text{Compr}} = b."
     assert tex.math_text(r"\sum\displaylimits_{x} {\larger[2] f} \qed", False) == r"\sum\limits_{x} { f}"
+    assert tex.math_text(r"\mathop{\vcenter{\hbox{\larger[4]$\mathbb{E}$}}}", False) == r"\mathop{\vcenter{{\mathbb{E}}}}"
 
 
 def test_a_page_ends_before_its_articles_pass_the_budget(tmp_path, monkeypatch):

@@ -407,6 +407,8 @@ def math_text(tex: str, display: bool) -> str:
     tex = re.sub(r"\\textsc(?![A-Za-z])", r"\\text", tex)
     tex = re.sub(r"\\displaylimits(?![A-Za-z])", r"\\limits", tex)
     tex = re.sub(r"\\(?:qedhere|qed)(?![A-Za-z])|\\larger(?![A-Za-z])(?:\s*\[[^\]]*\])?", "", tex)
+    # A box that holds only a formula is that formula: the site would end the formula at its inner dollar.
+    tex = re.sub(r"\\[hm]box\s*\{\s*\$((?:[^{}$]|\{[^{}$]*\})*)\$\s*\}", r"{\1}", tex)
     lines = [line.strip() for line in tex.splitlines()]
     lines = [line for line in lines if line]
     return "\n".join(lines) if display else " ".join(lines).strip()
