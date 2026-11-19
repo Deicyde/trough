@@ -6,7 +6,7 @@ This module declares nothing public by name, so it has no article: [`CompPoly.Bi
 
 Its [README](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Bivariate/README.md) opens:
 
-> Formally verified computable bivariate polynomials for [CompPoly\](../../README.md), represented as `CPolynomial (CPolynomial R)` — polynomials in Y whose coefficients are univariate polynomials in X. Matches Mathlib's `R[X][Y]` and is compatible with [ArkLib](https://github.com/Verified-zkEVM/ArkLib)'s `Polynomial.Bivariate` interface.
+> Formally verified computable bivariate polynomials for [CompPoly](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/README.md), represented as `CPolynomial (CPolynomial R)` — polynomials in Y whose coefficients are univariate polynomials in X. Matches Mathlib's `R[X][Y]` and is compatible with [ArkLib](https://github.com/Verified-zkEVM/ArkLib)'s `Polynomial.Bivariate` interface.
 
 The docstrings, Lean statements and README text are quoted from [Verified-zkEVM/CompPoly](https://github.com/Verified-zkEVM/CompPoly) at commit [afb9b136](https://github.com/Verified-zkEVM/CompPoly/tree/afb9b1363984a70f10e24bd597f6ff40ebc8afbb), under its Apache-2.0 license.
 

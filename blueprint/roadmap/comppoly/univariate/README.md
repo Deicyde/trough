@@ -6,7 +6,7 @@ These modules declare nothing public by name, so they have no article: [`CompPol
 
 Its [README](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Univariate/README.md) opens:
 
-> Formally verified computable univariate polynomials for [CompPoly\](../../README.md), built on array-backed coefficient representation.
+> Formally verified computable univariate polynomials for [CompPoly](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/README.md), built on array-backed coefficient representation.
 
 The docstrings, Lean statements and README text are quoted from [Verified-zkEVM/CompPoly](https://github.com/Verified-zkEVM/CompPoly) at commit [afb9b136](https://github.com/Verified-zkEVM/CompPoly/tree/afb9b1363984a70f10e24bd597f6ff40ebc8afbb), under its Apache-2.0 license.
 
