@@ -12,6 +12,7 @@ statement is its type; a definition's value, an opaque constant's and a structur
 type's constructors count as its statement too, and a theorem's value is its proof. Every constant
 a module adds counts, the ones Lean generates included, since the auxiliary definitions made for a
 proof are where much of its use is; a constant Lean marks as an internal detail counts as proof.
+When several modules' data hold a name, the one the using module imports declares it there.
 Of the names in `$TROUGH_NAMES`, one per line, the declarations read from the source, it lists
 under `missing` each one that is not a public declaration of a module of the three libraries:
 the map shows only what Lean has under the name the source gives.
@@ -69,6 +70,38 @@ def run : MetaM Unit := do
   let moduleOf (name : Name) : Option Name :=
     (env.getModuleIdxFor? name).map fun idx => moduleNames[idx.toNat]!
   let inLibraries (module : Name) : Bool := libraries.any (·.isPrefixOf module)
+  let mut indexOf : Std.HashMap Name Nat := {}
+  for i in [0:moduleNames.size] do
+    indexOf := indexOf.insert moduleNames[i]! i
+  -- The modules of the three whose data hold each name: a name can be in several modules' data, and the
+  -- environment then gives it to one of them, which need not be one the module using it imports.
+  let mut declaredIn : Std.HashMap Name (Array Name) := {}
+  for i in [0:moduleNames.size] do
+    let module := moduleNames[i]!
+    unless inLibraries module do continue
+    for name in env.header.moduleData[i]!.constNames do
+      declaredIn := declaredIn.insert name ((declaredIn.getD name #[]).push module)
+  -- The modules of the three each of them imports, directly or through others of them.
+  let mut importsOf : Std.HashMap Name (Std.HashSet Name) := {}
+  for i in [0:moduleNames.size] do
+    unless inLibraries moduleNames[i]! do continue
+    let mut seen : Std.HashSet Name := {}
+    let mut todo := #[i]
+    while !todo.isEmpty do
+      let j := todo.back!
+      todo := todo.pop
+      for imp in env.header.moduleData[j]!.imports do
+        if inLibraries imp.module && !seen.contains imp.module then
+          seen := seen.insert imp.module
+          if let some k := indexOf[imp.module]? then todo := todo.push k
+    importsOf := importsOf.insert moduleNames[i]! seen
+  -- A name a module uses belongs to the module itself, when its data hold the name, or else to a module it imports
+  -- whose data do; as lean/library/LibraryDeps.lean gives it.
+  let ownerOf (module : Name) (used : Name) : Option Name :=
+    let owners := declaredIn.getD used #[]
+    if owners.contains module then some module else owners.find? (importsOf.getD module {}).contains
+  let mut reassigned := 0
+  let mut reassignedExamples : Array Name := #[]
   let mut statement : Std.HashMap Name (Std.HashSet Name) := {}
   let mut proof : Std.HashMap Name (Std.HashSet Name) := {}
   let mut constants := 0
@@ -87,17 +120,17 @@ def run : MetaM Unit := do
       theorems := theorems + 1
       unless p.isEmpty do withProof := withProof + 1
     let internal := name.isInternalDetail
-    for used in s do
-      let some target := moduleOf used | continue
-      if target != module && inLibraries target then
-        if internal then
-          proof := proof.modify module (·.insert target)
-        else
+    for (used, isStatement) in s.map (·, !internal) ++ p.map (·, false) do
+      let owner := ownerOf module used
+      if owner != (moduleOf used).filter inLibraries then
+        reassigned := reassigned + 1
+        if reassignedExamples.size < 5 then reassignedExamples := reassignedExamples.push used
+      let some target := owner | continue
+      if target != module then
+        if isStatement then
           statement := statement.modify module (·.insert target)
-    for used in p do
-      let some target := moduleOf used | continue
-      if target != module && inLibraries target then
-        proof := proof.modify module (·.insert target)
+        else
+          proof := proof.modify module (·.insert target)
   -- Without a module's private data its theorems import as axioms.
   if theorems == 0 || withProof == 0 then
     throwError "{theorems} theorems, {withProof} with a readable proof: private module data is missing"
@@ -125,6 +158,7 @@ def run : MetaM Unit := do
       ("missing", toJson missing.length)])]
   IO.FS.writeFile outPath (out.pretty 100 ++ "\n")
   let finished ← IO.monoMsNow
+  IO.println s!"{reassigned} uses of a name the environment gives to a module the user does not import, such as {reassignedExamples}"
   IO.println s!"{modules.size} modules, {constants} constants ({withProof} of {theorems} theorems with a proof); {missing.length} of {requested.length} names missing; {finished - started} ms"
 
 end TroughPhyslib

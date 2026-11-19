@@ -4,7 +4,7 @@ A library is configured by a Library value: its repository, the folder its modul
 files it reads besides its modules. The reader takes each module's title, docstrings, the authors its header names
 and its declarations, as trough.leansource reads them, and the chapter quotes the docstrings without their TODO notes
 and their text about plans (doc_text, doc_markdown); a Lean run
-over the built library (for CSLib, lean/cslib/CslibDeps.lean) says which names are public and which modules each
+over the built library (lean/library/LibraryDeps.lean) says which names are public and which modules each
 module's statements and proofs use. The chapter has a part per folder under the library's root, a page per folder
 below and an article per module, with a block per public declaration in file order.
 

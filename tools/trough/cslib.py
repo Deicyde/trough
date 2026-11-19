@@ -5,7 +5,7 @@ Languages, Logics, Algorithms, Crypto and smaller ones), and documents each modu
 docstring with a `#` title, its main definitions and statements, and a docstring on each definition.
 tools/refresh_cslib.py reads a checkout at a pinned commit into data/cslib/ without Lean: each module's title,
 docstrings, the authors its header names and its public declarations, as trough.leansource reads them, with the
-area READMEs' descriptions. lean/cslib/CslibDeps.lean then reads, with Lean, the modules each module's statements
+area READMEs' descriptions. lean/library/LibraryDeps.lean then reads, with Lean, the modules each module's statements
 and proofs use, and which of those names Lean has only as private declarations: in a `module` file, a declaration
 outside a `public section` and not marked `public` is private, which the source reading does not follow. The chapter
 has a part per area, a page per folder and an article per module, with a block per public declaration in file order.

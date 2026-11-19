@@ -586,10 +586,11 @@ not publish JSON from `sources/`; it links each ledger in the repository.
    `private`, unnamed instances and the names an `alias ⟨…⟩` command gives
    left out; the opening of each folder's README, unless it speaks of plans;
    the README's description; and the maintainers GOVERNANCE.md names.
-2. The **CSLib data** workflow (`.github/workflows/cslib-data.yml`) fetches
-   CSLib at the commit `source.json` pins, runs the refresh, builds CSLib on
-   Mathlib's cache and runs `lean/cslib/CslibDeps.lean` below an import of
-   every module, which writes `data/cslib/deps.json`: for each module, the
+2. The **CSLib data** workflow (`.github/workflows/cslib-data.yml`) calls the
+   reusable Library data workflow, which fetches CSLib at the commit
+   `source.json` pins, runs the refresh, builds CSLib on Mathlib's cache and
+   runs `lean/library/LibraryDeps.lean` below an import of every module that
+   built, which writes `data/cslib/deps.json`: for each module, the
    other modules whose declarations its statements use and those only its
    proofs use, where what Lean generates for a declaration, and private
    helpers, serve its proofs; and which of the names the refresh read Lean has

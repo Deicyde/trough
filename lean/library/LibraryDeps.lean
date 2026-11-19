@@ -21,8 +21,7 @@ a `public section` and not marked `public` is private), and under `missing` each
 as a private declaration there: the map shows only what Lean has as public under the name the source gives.
 
 This is a plain file, not a `module`, so it sees each module's private part, where theorem proofs live under
-the module system; without it the run stops rather than give partial data. It is CSLib's
-`lean/cslib/CslibDeps.lean` with the roots read from the environment.
+the module system; without it the run stops rather than give partial data.
 
     TROUGH_ROOTS=Batteries TROUGH_NAMES=names.txt TROUGH_OUT=deps.json TROUGH_REV=<commit> lake env lean Deps.lean
 -/
