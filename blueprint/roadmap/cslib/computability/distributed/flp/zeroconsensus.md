@@ -174,10 +174,6 @@ theorem consensus_zero : (alg npos).Consensus 0
 - [Fault-tolerant consensus](consensus.md)
 - [Temporal reasoning over infinite sequences](../../../foundations/data/omegasequence/temporal.md)
 
-## Proof depends on
-
-- [1-tolerant pseudo-consensus](onepseudoconsensus.md)
-
 ## Sources
 
 - [Cslib/Computability/Distributed/FLP/ZeroConsensus.lean at 86d560b6](https://github.com/leanprover/cslib/blob/86d560b6cbb379bd82512424cbcd2a915a1565e7/Cslib/Computability/Distributed/FLP/ZeroConsensus.lean)

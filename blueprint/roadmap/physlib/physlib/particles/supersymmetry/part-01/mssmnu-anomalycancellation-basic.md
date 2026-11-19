@@ -436,10 +436,6 @@ def dot : BiLinearSymm MSSMCharges.Charges
 
 - [Anomaly cancellation conditions](../../../qft/anomalycancellation/basic.md)
 
-## Proof depends on
-
-- [Anomaly cancellation conditions for the n-family SM.](../../standardmodel/anomalycancellation-basic.md)
-
 ## Sources
 
 - [Physlib/Particles/SuperSymmetry/MSSMNu/AnomalyCancellation/Basic.lean at 2a1dfe43](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/Particles/SuperSymmetry/MSSMNu/AnomalyCancellation/Basic.lean)

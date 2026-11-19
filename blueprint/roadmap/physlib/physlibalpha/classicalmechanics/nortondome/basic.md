@@ -656,7 +656,7 @@ lemma IsSolution.energy_eq {S : NortonDome} {r : Time → EuclideanSpace ℝ (Fi
 
 ## Proof depends on
 
-- [The Classical Harmonic Oscillator](../../../physlib/classicalmechanics/harmonicoscillator/basic.md)
+- [Elementary rules for the gradient](../../../physlib/mathematics/calculus/gradient.md)
 - [Calculus of the real square root near zero](sqrt.md)
 
 ## Sources

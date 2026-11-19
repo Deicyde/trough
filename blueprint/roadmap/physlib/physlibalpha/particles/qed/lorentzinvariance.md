@@ -369,7 +369,6 @@ lemma lorentzAction_lagrangian (M : SL(2,ℂ)) (e m : ℝ) :
 ## Proof depends on
 
 - [Properties of the γ matrices](gammamatrices.md)
-- [Gauge invariance of quantum electrodynamics](gaugeinvariance.md)
 - [Conjugation and the kernel of the covering map](../../relativity/sl2c/basic.md)
 
 ## Sources

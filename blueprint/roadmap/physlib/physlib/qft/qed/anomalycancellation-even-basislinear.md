@@ -709,7 +709,6 @@ lemma span_basis_swap! {S : (PureU1 (2 * n.succ)).LinSols} (j : Fin n)
 
 ## Proof depends on
 
-- [Anomaly cancellation conditions for the n-family SM.](../../particles/standardmodel/anomalycancellation-basic.md)
 - [Basis of `LinSols`](anomalycancellation-basislinear.md)
 
 ## Sources
