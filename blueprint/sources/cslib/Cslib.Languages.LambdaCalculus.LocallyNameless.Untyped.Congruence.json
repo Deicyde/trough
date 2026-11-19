@@ -1,0 +1,16 @@
+{
+ "schema": "trough-ledger/v1",
+ "library": "CSLib",
+ "repo": "leanprover/cslib",
+ "rev": "86d560b6cbb379bd82512424cbcd2a915a1565e7",
+ "module": "Cslib.Languages.LambdaCalculus.LocallyNameless.Untyped.Congruence",
+ "file": "Cslib/Languages/LambdaCalculus/LocallyNameless/Untyped/Congruence.lean",
+ "public": [
+  {"name": "Cslib.LambdaCalculus.LocallyNameless.Untyped.Term.Xi", "kind": "inductive", "line": 24},
+  {"name": "Cslib.LambdaCalculus.LocallyNameless.Untyped.Term.Xi.step_lc_r", "kind": "lemma", "line": 42},
+  {"name": "Cslib.LambdaCalculus.LocallyNameless.Untyped.Term.Xi.step_lc_l", "kind": "lemma", "line": 51}
+ ],
+ "private": [],
+ "missing": [],
+ "unread": "Unnamed instances, the names an `alias ⟨…⟩` command gives, and the names Lean generates for a declaration (constructors, recursors, derived instances) are not read from the source, so they are not listed."
+}

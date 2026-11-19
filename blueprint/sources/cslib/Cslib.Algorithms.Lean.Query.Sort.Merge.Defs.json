@@ -1,0 +1,21 @@
+{
+ "schema": "trough-ledger/v1",
+ "library": "CSLib",
+ "repo": "leanprover/cslib",
+ "rev": "86d560b6cbb379bd82512424cbcd2a915a1565e7",
+ "module": "Cslib.Algorithms.Lean.Query.Sort.Merge.Defs",
+ "file": "Cslib/Algorithms/Lean/Query/Sort/Merge/Defs.lean",
+ "public": [
+  {"name": "List.split", "kind": "def", "line": 34},
+  {"name": "List.split_fst_length_eq", "kind": "theorem", "line": 37},
+  {"name": "List.split_snd_length_eq", "kind": "theorem", "line": 42},
+  {"name": "List.split_fst_append_split_snd", "kind": "theorem", "line": 47},
+  {"name": "List.splitInTwo_fst", "kind": "theorem", "line": 52},
+  {"name": "List.splitInTwo_snd", "kind": "theorem", "line": 56},
+  {"name": "Cslib.Query.merge", "kind": "abbrev", "line": 65},
+  {"name": "Cslib.Query.mergeSort", "kind": "abbrev", "line": 69}
+ ],
+ "private": [],
+ "missing": [],
+ "unread": "Unnamed instances, the names an `alias ⟨…⟩` command gives, and the names Lean generates for a declaration (constructors, recursors, derived instances) are not read from the source, so they are not listed."
+}

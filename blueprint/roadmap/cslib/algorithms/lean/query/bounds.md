@@ -61,3 +61,4 @@ theorem LowerBound.le_upperBound {prog : α → FreeM Q β} {size : α → Nat} 
 ## Sources
 
 - [Cslib/Algorithms/Lean/Query/Bounds.lean at 86d560b6](https://github.com/leanprover/cslib/blob/86d560b6cbb379bd82512424cbcd2a915a1565e7/Cslib/Algorithms/Lean/Query/Bounds.lean)
+- [Declaration ledger](../../../../../sources/cslib/Cslib.Algorithms.Lean.Query.Bounds.json)

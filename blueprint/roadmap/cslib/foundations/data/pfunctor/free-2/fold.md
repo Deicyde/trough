@@ -102,3 +102,4 @@ theorem liftM_eq_foldFreeM {m : Type uB → Type v} [Monad m] {α : Type uB}
 ## Sources
 
 - [Cslib/Foundations/Data/PFunctor/Free/Fold.lean at 86d560b6](https://github.com/leanprover/cslib/blob/86d560b6cbb379bd82512424cbcd2a915a1565e7/Cslib/Foundations/Data/PFunctor/Free/Fold.lean)
+- [Declaration ledger](../../../../../../sources/cslib/Cslib.Foundations.Data.PFunctor.Free.Fold.json)

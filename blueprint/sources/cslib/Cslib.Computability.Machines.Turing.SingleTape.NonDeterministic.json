@@ -1,0 +1,20 @@
+{
+ "schema": "trough-ledger/v1",
+ "library": "CSLib",
+ "repo": "leanprover/cslib",
+ "rev": "86d560b6cbb379bd82512424cbcd2a915a1565e7",
+ "module": "Cslib.Computability.Machines.Turing.SingleTape.NonDeterministic",
+ "file": "Cslib/Computability/Machines/Turing/SingleTape/NonDeterministic.lean",
+ "public": [
+  {"name": "Cslib.Computability.Turing.SingleTape.SingleTapeNTM", "kind": "structure", "line": 32},
+  {"name": "Cslib.Computability.Turing.SingleTape.SingleTapeNTM.Yields", "kind": "def", "line": 47},
+  {"name": "Cslib.Computability.Turing.SingleTape.SingleTapeNTM.yields_tr", "kind": "theorem", "line": 52},
+  {"name": "Cslib.Computability.Turing.SingleTape.SingleTapeNTM.MYields", "kind": "def", "line": 58},
+  {"name": "Cslib.Computability.Turing.SingleTape.SingleTapeNTM.mYields_mTr", "kind": "theorem", "line": 64},
+  {"name": "Cslib.Computability.Turing.SingleTape.SingleTapeNTM.AcceptsInSteps", "kind": "def", "line": 101},
+  {"name": "Cslib.Computability.Turing.SingleTape.SingleTapeNTM.AcceptsInAtMostSteps", "kind": "def", "line": 105}
+ ],
+ "private": [],
+ "missing": [],
+ "unread": "Unnamed instances, the names an `alias ⟨…⟩` command gives, and the names Lean generates for a declaration (constructors, recursors, derived instances) are not read from the source, so they are not listed."
+}

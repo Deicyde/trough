@@ -1,0 +1,26 @@
+{
+ "schema": "trough-ledger/v1",
+ "library": "CSLib",
+ "repo": "leanprover/cslib",
+ "rev": "86d560b6cbb379bd82512424cbcd2a915a1565e7",
+ "module": "Cslib.Logics.Modal.Lean.Basic",
+ "file": "Cslib/Logics/Modal/Lean/Basic.lean",
+ "public": [
+  {"name": "Cslib.Logic.Modal.Model.ofPredicates", "kind": "abbrev", "line": 29},
+  {"name": "Cslib.Logic.Modal.Model.ofContainers", "kind": "abbrev", "line": 38},
+  {"name": "Cslib.Logic.Modal.Model.ofSets", "kind": "abbrev", "line": 43},
+  {"name": "Cslib.Logic.Modal.Model.ofSets_v_eq_ofPredicates_v", "kind": "theorem", "line": 51},
+  {"name": "Cslib.Logic.Modal.Satisfies.ofPredicates_atom_iff", "kind": "theorem", "line": 61},
+  {"name": "Cslib.Logic.Modal.Satisfies.ofPredicates_preservesMap_iff", "kind": "theorem", "line": 67},
+  {"name": "Cslib.Logic.Modal.Satisfies.ofContainers_atom_iff", "kind": "theorem", "line": 86},
+  {"name": "Cslib.Logic.Modal.Proposition.Equiv.OfPredicates", "kind": "abbrev", "line": 91},
+  {"name": "Cslib.Logic.Modal.Proposition.Equiv.OfContainers", "kind": "abbrev", "line": 95},
+  {"name": "Cslib.Logic.Modal.Proposition.equivOfPredicates_denotation_eq", "kind": "theorem", "line": 101},
+  {"name": "Cslib.Logic.Modal.Proposition.equivOfContainers_denotation_eq", "kind": "theorem", "line": 110},
+  {"name": "Cslib.Logic.Modal.Proposition.equivOfPredicates_and", "kind": "theorem", "line": 119},
+  {"name": "Cslib.Logic.Modal.Proposition.ofContainers_inf_equiv", "kind": "theorem", "line": 127}
+ ],
+ "private": [],
+ "missing": [],
+ "unread": "Unnamed instances, the names an `alias ⟨…⟩` command gives, and the names Lean generates for a declaration (constructors, recursors, derived instances) are not read from the source, so they are not listed."
+}

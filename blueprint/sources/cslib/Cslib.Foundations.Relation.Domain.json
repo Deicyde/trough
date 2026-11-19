@@ -1,0 +1,29 @@
+{
+ "schema": "trough-ledger/v1",
+ "library": "CSLib",
+ "repo": "leanprover/cslib",
+ "rev": "86d560b6cbb379bd82512424cbcd2a915a1565e7",
+ "module": "Cslib.Foundations.Relation.Domain",
+ "file": "Cslib/Foundations/Relation/Domain.lean",
+ "public": [
+  {"name": "Relation.emptyHRelation_emptyRelation", "kind": "theorem", "line": 27},
+  {"name": "Relation.emptyHrelation_apply", "kind": "theorem", "line": 30},
+  {"name": "Relation.mem_dom", "kind": "lemma", "line": 34},
+  {"name": "Relation.mem_cod", "kind": "lemma", "line": 35},
+  {"name": "Relation.of_dom", "kind": "theorem", "line": 37},
+  {"name": "Relation.of_cod", "kind": "theorem", "line": 38},
+  {"name": "Relation.dom_mono", "kind": "lemma", "line": 40},
+  {"name": "Relation.cod_mono", "kind": "lemma", "line": 41},
+  {"name": "Relation.dom_empty", "kind": "lemma", "line": 44},
+  {"name": "Relation.cod_empty", "kind": "lemma", "line": 47},
+  {"name": "Relation.dom_eq_empty_iff", "kind": "lemma", "line": 50},
+  {"name": "Relation.cod_eq_empty_iff", "kind": "lemma", "line": 57},
+  {"name": "Relation.cod_inv", "kind": "lemma", "line": 64},
+  {"name": "Relation.dom_inv", "kind": "lemma", "line": 67},
+  {"name": "Std.Trichotomous.subsingleton_cod", "kind": "theorem", "line": 69},
+  {"name": "Std.Trichotomous.subsingleton_dom", "kind": "theorem", "line": 76}
+ ],
+ "private": [],
+ "missing": [],
+ "unread": "Unnamed instances, the names an `alias ⟨…⟩` command gives, and the names Lean generates for a declaration (constructors, recursors, derived instances) are not read from the source, so they are not listed."
+}

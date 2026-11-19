@@ -188,3 +188,4 @@ theorem time_tick (c : T) : (tick c).time = c
 ## Sources
 
 - [Cslib/Algorithms/Lean/TimeM.lean at 86d560b6](https://github.com/leanprover/cslib/blob/86d560b6cbb379bd82512424cbcd2a915a1565e7/Cslib/Algorithms/Lean/TimeM.lean)
+- [Declaration ledger](../../../../sources/cslib/Cslib.Algorithms.Lean.TimeM.json)

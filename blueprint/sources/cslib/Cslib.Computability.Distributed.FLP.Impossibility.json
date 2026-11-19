@@ -1,0 +1,24 @@
+{
+ "schema": "trough-ledger/v1",
+ "library": "CSLib",
+ "repo": "leanprover/cslib",
+ "rev": "86d560b6cbb379bd82512424cbcd2a915a1565e7",
+ "module": "Cslib.Computability.Distributed.FLP.Impossibility",
+ "file": "Cslib/Computability/Distributed/FLP/Impossibility.lean",
+ "public": [
+  {"name": "Cslib.FLP.Algorithm.ReachableNonUniform", "kind": "abbrev", "line": 30},
+  {"name": "Cslib.FLP.Algorithm.nonUniformInp", "kind": "def", "line": 35},
+  {"name": "Cslib.FLP.OnePseudoConsensus.nonUniform_init", "kind": "theorem", "line": 41},
+  {"name": "Cslib.FLP.OnePseudoConsensus.nonUniform_step_exists", "kind": "theorem", "line": 50},
+  {"name": "Cslib.FLP.OnePseudoConsensus.nonUniform_step_aux", "kind": "lemma", "line": 77},
+  {"name": "Cslib.FLP.Algorithm.nonUniformStep", "kind": "def", "line": 92},
+  {"name": "Cslib.FLP.OnePseudoConsensus.fair_nonUniform_step", "kind": "theorem", "line": 98},
+  {"name": "Cslib.FLP.OnePseudoConsensus.fair_nonUniform", "kind": "theorem", "line": 107},
+  {"name": "Cslib.FLP.OnePseudoConsensus.not_terminating", "kind": "theorem", "line": 125},
+  {"name": "Cslib.FLP.Consensus.one_not_exists", "kind": "theorem", "line": 154},
+  {"name": "Cslib.FLP.Consensus.ge_one_not_exists", "kind": "theorem", "line": 166}
+ ],
+ "private": [],
+ "missing": [],
+ "unread": "Unnamed instances, the names an `alias ⟨…⟩` command gives, and the names Lean generates for a declaration (constructors, recursors, derived instances) are not read from the source, so they are not listed."
+}

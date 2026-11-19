@@ -1,0 +1,25 @@
+{
+ "schema": "trough-ledger/v1",
+ "library": "CSLib",
+ "repo": "leanprover/cslib",
+ "rev": "86d560b6cbb379bd82512424cbcd2a915a1565e7",
+ "module": "Cslib.Computability.Machines.Turing.MultiTape.Plumbing.WordsCfg",
+ "file": "Cslib/Computability/Machines/Turing/MultiTape/Plumbing/WordsCfg.lean",
+ "public": [
+  {"name": "Turing.tapeOfList", "kind": "def", "line": 31},
+  {"name": "Turing.tapeOfList_ofNat", "kind": "lemma", "line": 36},
+  {"name": "Turing.tapeOfList_negSucc", "kind": "lemma", "line": 39},
+  {"name": "Turing.tapeOfList_append_single", "kind": "lemma", "line": 43},
+  {"name": "Turing.tapeOfList_eq_none_iff", "kind": "lemma", "line": 51},
+  {"name": "Turing.tapeOfList_nil", "kind": "lemma", "line": 57},
+  {"name": "Turing.tapeOfList_zero", "kind": "lemma", "line": 62},
+  {"name": "Turing.wordsCfg", "kind": "def", "line": 70},
+  {"name": "Turing.mapState_wordsCfg", "kind": "lemma", "line": 76},
+  {"name": "Turing.withState_wordsCfg", "kind": "lemma", "line": 82},
+  {"name": "Turing.prependOutput_wordsCfg", "kind": "lemma", "line": 88},
+  {"name": "Turing.Cfg.init_eq_wordsCfg", "kind": "lemma", "line": 93}
+ ],
+ "private": [],
+ "missing": [],
+ "unread": "Unnamed instances, the names an `alias ⟨…⟩` command gives, and the names Lean generates for a declaration (constructors, recursors, derived instances) are not read from the source, so they are not listed."
+}

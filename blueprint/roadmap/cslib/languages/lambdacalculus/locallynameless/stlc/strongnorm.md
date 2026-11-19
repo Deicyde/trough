@@ -117,3 +117,4 @@ theorem strong_norm {t : Term Var} {τ : Ty Base} (der : Γ ⊢ t ∶ τ) : SN F
 ## Sources
 
 - [Cslib/Languages/LambdaCalculus/LocallyNameless/Stlc/StrongNorm.lean at 86d560b6](https://github.com/leanprover/cslib/blob/86d560b6cbb379bd82512424cbcd2a915a1565e7/Cslib/Languages/LambdaCalculus/LocallyNameless/Stlc/StrongNorm.lean)
+- [Declaration ledger](../../../../../../sources/cslib/Cslib.Languages.LambdaCalculus.LocallyNameless.Stlc.StrongNorm.json)

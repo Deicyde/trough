@@ -1,0 +1,25 @@
+{
+ "schema": "trough-ledger/v1",
+ "library": "CSLib",
+ "repo": "leanprover/cslib",
+ "rev": "86d560b6cbb379bd82512424cbcd2a915a1565e7",
+ "module": "Cslib.Foundations.Data.OmegaSequence.Defs",
+ "file": "Cslib/Foundations/Data/OmegaSequence/Defs.lean",
+ "public": [
+  {"name": "Cslib.ωSequence", "kind": "structure", "line": 34},
+  {"name": "Cslib.ωSequence.head", "kind": "abbrev", "line": 49},
+  {"name": "Cslib.ωSequence.tail", "kind": "def", "line": 52},
+  {"name": "Cslib.ωSequence.drop", "kind": "def", "line": 55},
+  {"name": "Cslib.ωSequence.take", "kind": "def", "line": 58},
+  {"name": "Cslib.ωSequence.extract", "kind": "def", "line": 63},
+  {"name": "Cslib.ωSequence.cons", "kind": "def", "line": 67},
+  {"name": "Cslib.ωSequence.appendωSequence", "kind": "def", "line": 74},
+  {"name": "Cslib.ωSequence.const", "kind": "def", "line": 81},
+  {"name": "Cslib.ωSequence.map", "kind": "def", "line": 84},
+  {"name": "Cslib.ωSequence.zip", "kind": "def", "line": 88},
+  {"name": "Cslib.ωSequence.iterate", "kind": "def", "line": 92}
+ ],
+ "private": [],
+ "missing": [],
+ "unread": "Unnamed instances, the names an `alias ⟨…⟩` command gives, and the names Lean generates for a declaration (constructors, recursors, derived instances) are not read from the source, so they are not listed."
+}

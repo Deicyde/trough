@@ -618,6 +618,22 @@ def test_lean_decides_which_declarations_are_public(tmp_path):
             ) in pages["README.md"]
 
 
+def test_each_article_links_its_declaration_ledger(tmp_path):
+    # An article is a module catalog, whose Sources link a declaration ledger under blueprint/sources/.
+    loaded, result, links, pages = built(tmp_path, {}, private=["Cslib.LTS.IsTerminal"], missing=["elabLts"])
+    basic = pages["foundations/semantics/lts/basic.md"]
+    assert "- [Declaration ledger](../../../../../sources/cslib/Cslib.Foundations.Semantics.LTS.Basic.json)" in basic
+    assert len(result.files) == len(loaded["modules"])
+    ledger = json.loads(result.files["sources/cslib/Cslib.Foundations.Semantics.LTS.Basic.json"])
+    assert ledger["schema"] == "trough-ledger/v1" and ledger["rev"] == loaded["rev"]
+    assert ledger["file"] == "Cslib/Foundations/Semantics/LTS/Basic.lean"
+    # Public, as the article's lean: names, private to the module, or not in Lean, each with its kind and line.
+    assert [entry["name"] for entry in ledger["public"]] == ["Cslib.LTS", "Cslib.LTS.terminal_iff", "Cslib.LTS.steps"]
+    assert ledger["private"] == [{"name": "Cslib.LTS.IsTerminal", "kind": "def", "line": 40}]
+    assert ledger["missing"] == [{"name": "elabLts", "kind": "def", "line": 67}]
+    assert "lean: Cslib.LTS, Cslib.LTS.terminal_iff, Cslib.LTS.steps\n" in basic
+
+
 def test_a_dump_of_another_commit_gives_no_edges(tmp_path):
     out = tmp_path / "data" / "cslib"
     assert refresh_cslib.refresh(checkout(tmp_path / "cslib"), out) == []

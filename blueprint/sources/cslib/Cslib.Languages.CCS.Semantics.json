@@ -1,0 +1,21 @@
+{
+ "schema": "trough-ledger/v1",
+ "library": "CSLib",
+ "repo": "leanprover/cslib",
+ "rev": "86d560b6cbb379bd82512424cbcd2a915a1565e7",
+ "module": "Cslib.Languages.CCS.Semantics",
+ "file": "Cslib/Languages/CCS/Semantics.lean",
+ "public": [
+  {"name": "Cslib.CCS.Tr", "kind": "inductive", "line": 35},
+  {"name": "Cslib.CCS.Terminated", "kind": "inductive", "line": 50},
+  {"name": "Cslib.CCS.not_tr_of_terminated", "kind": "theorem", "line": 60},
+  {"name": "Cslib.CCS.pre_tr", "kind": "theorem", "line": 66},
+  {"name": "Cslib.CCS.const_tr", "kind": "theorem", "line": 72},
+  {"name": "Cslib.CCS.pre_deterministicState", "kind": "theorem", "line": 80},
+  {"name": "Cslib.CCS.const_deterministicStateLabel", "kind": "theorem", "line": 85},
+  {"name": "Cslib.CCS.res_deterministicStateLabel", "kind": "theorem", "line": 100}
+ ],
+ "private": [],
+ "missing": [],
+ "unread": "Unnamed instances, the names an `alias ⟨…⟩` command gives, and the names Lean generates for a declaration (constructors, recursors, derived instances) are not read from the source, so they are not listed."
+}

@@ -1,0 +1,29 @@
+{
+ "schema": "trough-ledger/v1",
+ "library": "CSLib",
+ "repo": "leanprover/cslib",
+ "rev": "86d560b6cbb379bd82512424cbcd2a915a1565e7",
+ "module": "Cslib.Computability.Distributed.FLP.Consensus",
+ "file": "Cslib/Computability/Distributed/FLP/Consensus.lean",
+ "public": [
+  {"name": "Cslib.FLP.ProcFaulty", "kind": "def", "line": 30},
+  {"name": "Cslib.FLP.ProcFair", "kind": "def", "line": 35},
+  {"name": "Cslib.FLP.not_procFaulty_and_procFair", "kind": "theorem", "line": 41},
+  {"name": "Cslib.FLP.FairRun", "kind": "def", "line": 48},
+  {"name": "Cslib.FLP.numProcFaulty", "kind": "def", "line": 52},
+  {"name": "Cslib.FLP.not_procFaulty_of_numProcFaulty", "kind": "theorem", "line": 57},
+  {"name": "Cslib.FLP.numProcFaulty_le_not_procFair", "kind": "theorem", "line": 65},
+  {"name": "Cslib.FLP.Algorithm.AdmissibleRun", "kind": "def", "line": 76},
+  {"name": "Cslib.FLP.ProcTermination", "kind": "def", "line": 83},
+  {"name": "Cslib.FLP.Algorithm.Termination", "kind": "def", "line": 88},
+  {"name": "Cslib.FLP.Algorithm.Consensus", "kind": "def", "line": 94},
+  {"name": "Cslib.FLP.AdmissibleRun.fault_zero", "kind": "theorem", "line": 100},
+  {"name": "Cslib.FLP.AdmissibleRun.fault_mono", "kind": "theorem", "line": 116},
+  {"name": "Cslib.FLP.Consensus.fault_mono", "kind": "theorem", "line": 123},
+  {"name": "Cslib.FLP.Algorithm.not_fair_stay_enabled", "kind": "theorem", "line": 132},
+  {"name": "Cslib.FLP.Algorithm.drop_procFair_iff", "kind": "theorem", "line": 141}
+ ],
+ "private": [],
+ "missing": [],
+ "unread": "Unnamed instances, the names an `alias ⟨…⟩` command gives, and the names Lean generates for a declaration (constructors, recursors, derived instances) are not read from the source, so they are not listed."
+}

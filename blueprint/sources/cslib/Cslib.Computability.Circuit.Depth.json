@@ -1,0 +1,31 @@
+{
+ "schema": "trough-ledger/v1",
+ "library": "CSLib",
+ "repo": "leanprover/cslib",
+ "rev": "86d560b6cbb379bd82512424cbcd2a915a1565e7",
+ "module": "Cslib.Computability.Circuit.Depth",
+ "file": "Cslib/Computability/Circuit/Depth.lean",
+ "public": [
+  {"name": "Cslib.Circuits.Line.depth_le_add_one_iff", "kind": "theorem", "line": 43},
+  {"name": "Cslib.Circuits.Line.depth_pos", "kind": "theorem", "line": 49},
+  {"name": "Cslib.Circuits.Program.depths_gate_last", "kind": "theorem", "line": 52},
+  {"name": "Cslib.Circuits.Program.depths_gate_castSucc", "kind": "theorem", "line": 56},
+  {"name": "Cslib.Circuits.Program.wireDepths_input", "kind": "theorem", "line": 60},
+  {"name": "Cslib.Circuits.Program.wireDepths_gateWire", "kind": "theorem", "line": 63},
+  {"name": "Cslib.Circuits.Program.wireDepths_gate_castSucc", "kind": "theorem", "line": 66},
+  {"name": "Cslib.Circuits.Program.depth_empty", "kind": "theorem", "line": 70},
+  {"name": "Cslib.Circuits.Program.depth_gate", "kind": "theorem", "line": 72},
+  {"name": "Cslib.Circuits.Program.depth_le_iff", "kind": "theorem", "line": 77},
+  {"name": "Cslib.Circuits.Program.depths_le_depth", "kind": "theorem", "line": 82},
+  {"name": "Cslib.Circuits.Program.wireDepths_le_depth", "kind": "theorem", "line": 86},
+  {"name": "Cslib.Circuits.Program.depth_le_gateCount", "kind": "theorem", "line": 93},
+  {"name": "Cslib.Circuits.Circuit.depth_le_iff", "kind": "theorem", "line": 102},
+  {"name": "Cslib.Circuits.Circuit.outputDepths_le_depth", "kind": "theorem", "line": 107},
+  {"name": "Cslib.Circuits.Circuit.depth_le_program_depth", "kind": "theorem", "line": 111},
+  {"name": "Cslib.Circuits.Circuit.depth_le_size", "kind": "theorem", "line": 115},
+  {"name": "Cslib.Circuits.Circuit.depth_zero_outputs", "kind": "theorem", "line": 118}
+ ],
+ "private": [],
+ "missing": [],
+ "unread": "Unnamed instances, the names an `alias ⟨…⟩` command gives, and the names Lean generates for a declaration (constructors, recursors, derived instances) are not read from the source, so they are not listed."
+}

@@ -1,0 +1,25 @@
+{
+ "schema": "trough-ledger/v1",
+ "library": "CSLib",
+ "repo": "leanprover/cslib",
+ "rev": "86d560b6cbb379bd82512424cbcd2a915a1565e7",
+ "module": "Cslib.Computability.Languages.SyntacticMonoid",
+ "file": "Cslib/Computability/Languages/SyntacticMonoid.lean",
+ "public": [
+  {"name": "Language.Congruence.toCon", "kind": "def", "line": 34},
+  {"name": "Language.SyntacticMonoid", "kind": "abbrev", "line": 46},
+  {"name": "Language.homSyntacticMonoid", "kind": "abbrev", "line": 50},
+  {"name": "Language.syntacticMonoidEquivMyhillQuotient", "kind": "def", "line": 54},
+  {"name": "Language.IsRegular.iff_finite_syntacticMonoid", "kind": "theorem", "line": 59},
+  {"name": "Language.homSyntacticMonoid_iff_myhillCongruence", "kind": "theorem", "line": 65},
+  {"name": "Language.IsRegular.exists_finite_monoid", "kind": "theorem", "line": 73},
+  {"name": "Language.inducedCongr", "kind": "def", "line": 94},
+  {"name": "Language.inducedCongr_ofList", "kind": "theorem", "line": 104},
+  {"name": "Language.IsRegular.of_finite_monoid_singleton", "kind": "theorem", "line": 111},
+  {"name": "Language.IsRegular.of_finite_monoid", "kind": "theorem", "line": 122},
+  {"name": "Language.IsRegular.iff_finite_monoid", "kind": "theorem", "line": 134}
+ ],
+ "private": [],
+ "missing": [],
+ "unread": "Unnamed instances, the names an `alias ⟨…⟩` command gives, and the names Lean generates for a declaration (constructors, recursors, derived instances) are not read from the source, so they are not listed."
+}

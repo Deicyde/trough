@@ -304,6 +304,9 @@ def sources_readme(libraries: list[dict], mathlib_rev: str, thousand_plus: dict 
             "the source that Lean has only as private declarations or not at all, written by "
             "`lean/cslib/CslibDeps.lean` in GitHub Actions. `data/cslib/source.json` records the commit, its Lean "
             "toolchain and Mathlib.",
+            "- `blueprint/sources/cslib/`: a declaration ledger for each module, which its article's Sources links: "
+            "every declaration read from the module's source, with its kind and line, as public (the article's `lean:` "
+            "names), private to the module, or not in Lean.",
         ]
     if physlib:
         lines += [

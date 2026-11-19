@@ -72,3 +72,4 @@ theorem LEQuery.cardResponse_le_two {ι : Type} (op : LEQuery α ι) : #ι ≤ 2
 ## Sources
 
 - [Cslib/Algorithms/Lean/Query/Sort/LEQuery.lean at 86d560b6](https://github.com/leanprover/cslib/blob/86d560b6cbb379bd82512424cbcd2a915a1565e7/Cslib/Algorithms/Lean/Query/Sort/LEQuery.lean)
+- [Declaration ledger](../../../../../../sources/cslib/Cslib.Algorithms.Lean.Query.Sort.LEQuery.json)

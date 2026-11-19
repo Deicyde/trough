@@ -1,0 +1,29 @@
+{
+ "schema": "trough-ledger/v1",
+ "library": "CSLib",
+ "repo": "leanprover/cslib",
+ "rev": "86d560b6cbb379bd82512424cbcd2a915a1565e7",
+ "module": "Cslib.Logics.HML.Basic",
+ "file": "Cslib/Logics/HML/Basic.lean",
+ "public": [
+  {"name": "Cslib.Logic.Modal.HML.Proposition", "kind": "abbrev", "line": 58},
+  {"name": "Cslib.Logic.Modal.HML.Model", "kind": "structure", "line": 61},
+  {"name": "Cslib.Logic.Modal.HML.Model.toModal", "kind": "def", "line": 68},
+  {"name": "Cslib.Logic.Modal.HML.Model.toModal_toFrame", "kind": "theorem", "line": 71},
+  {"name": "Cslib.Logic.Modal.Satisfies.hml_atom_iff", "kind": "theorem", "line": 85},
+  {"name": "Cslib.Logic.Modal.Satisfies.hml_dynDiamond_iff_exists", "kind": "theorem", "line": 87},
+  {"name": "Cslib.Logic.Modal.Satisfies.hml_dynBox_iff_forall", "kind": "theorem", "line": 92},
+  {"name": "Cslib.Logic.Modal.Satisfies.hml_dynDiamond_intro", "kind": "theorem", "line": 98},
+  {"name": "Cslib.Logic.Modal.Satisfies.hml_dynBox_elim", "kind": "theorem", "line": 102},
+  {"name": "Cslib.Logic.Modal.propositions", "kind": "def", "line": 112},
+  {"name": "Cslib.Logic.Modal.propositions_complete", "kind": "theorem", "line": 115},
+  {"name": "Cslib.Logic.Modal.propositions_satisfies_conjunction", "kind": "theorem", "line": 119},
+  {"name": "Cslib.Logic.Modal.theoryEq_isBisimulation", "kind": "theorem", "line": 131},
+  {"name": "Cslib.Logic.Modal.bisimulation_satisfies", "kind": "lemma", "line": 170},
+  {"name": "Cslib.Logic.Modal.bisimulation_theoryEq", "kind": "lemma", "line": 179},
+  {"name": "Cslib.Logic.Modal.theoryEq_eq_bisimilarity", "kind": "theorem", "line": 184}
+ ],
+ "private": [],
+ "missing": [],
+ "unread": "Unnamed instances, the names an `alias ⟨…⟩` command gives, and the names Lean generates for a declaration (constructors, recursors, derived instances) are not read from the source, so they are not listed."
+}

@@ -455,3 +455,4 @@ theorem Normal.sup_iff (x : α) : Normal (r₁ ⊔ r₂) x ↔ Normal r₁ x ∧
 ## Sources
 
 - [Cslib/Foundations/Relation/Confluence.lean at 86d560b6](https://github.com/leanprover/cslib/blob/86d560b6cbb379bd82512424cbcd2a915a1565e7/Cslib/Foundations/Relation/Confluence.lean)
+- [Declaration ledger](../../../../sources/cslib/Cslib.Foundations.Relation.Confluence.json)

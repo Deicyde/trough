@@ -45,3 +45,4 @@ theorem redex_app_r_cong (redex : M ↠βηᶠ M') (lc_N : LC N) : app N M ↠β
 ## Sources
 
 - [Cslib/Languages/LambdaCalculus/LocallyNameless/Untyped/FullBetaEta.lean at 86d560b6](https://github.com/leanprover/cslib/blob/86d560b6cbb379bd82512424cbcd2a915a1565e7/Cslib/Languages/LambdaCalculus/LocallyNameless/Untyped/FullBetaEta.lean)
+- [Declaration ledger](../../../../../../sources/cslib/Cslib.Languages.LambdaCalculus.LocallyNameless.Untyped.FullBetaEta.json)

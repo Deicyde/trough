@@ -45,3 +45,4 @@ theorem iSum_language_eq {na : (i : I) â†’ NA (State i) Symbol} {acc : (i : I) â
 ## Sources
 
 - [Cslib/Computability/Automata/NA/Sum.lean at 86d560b6](https://github.com/leanprover/cslib/blob/86d560b6cbb379bd82512424cbcd2a915a1565e7/Cslib/Computability/Automata/NA/Sum.lean)
+- [Declaration ledger](../../../../../sources/cslib/Cslib.Computability.Automata.NA.Sum.json)

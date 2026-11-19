@@ -1,0 +1,17 @@
+{
+ "schema": "trough-ledger/v1",
+ "library": "CSLib",
+ "repo": "leanprover/cslib",
+ "rev": "86d560b6cbb379bd82512424cbcd2a915a1565e7",
+ "module": "Cslib.Logics.Modal.Unimodal.Lean.Basic",
+ "file": "Cslib/Logics/Modal/Unimodal/Lean/Basic.lean",
+ "public": [
+  {"name": "Cslib.Logic.Modal.Model.unimodalOfPredicates", "kind": "abbrev", "line": 23},
+  {"name": "Cslib.Logic.Modal.Model.unimodalOfContainers", "kind": "abbrev", "line": 27},
+  {"name": "Cslib.Logic.Modal.Satisfies.unimodalOfPredicates_preserves_iff", "kind": "theorem", "line": 34},
+  {"name": "Cslib.Logic.Modal.Satisfies.unimodalOfPredicates_preserves_reflTransGen", "kind": "theorem", "line": 50}
+ ],
+ "private": [],
+ "missing": [],
+ "unread": "Unnamed instances, the names an `alias ⟨…⟩` command gives, and the names Lean generates for a declaration (constructors, recursors, derived instances) are not read from the source, so they are not listed."
+}

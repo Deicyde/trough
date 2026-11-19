@@ -572,7 +572,12 @@ values of its definitions, and "Proof depends on" those only its proofs use; a
 dependency reached through another is left out. `tools/trough/library.py`
 reads the modules and builds the chapter, as it will for other Lean libraries;
 `tools/trough/cslib.py` holds what is CSLib's own: its README's description,
-the maintainers GOVERNANCE.md names and the chapter's intro.
+the maintainers GOVERNANCE.md names and the chapter's intro. Each article is an
+AutoformBot module catalog (`catalog: module`), so its Sources link the
+module's declaration ledger, `blueprint/sources/cslib/<module>.json`: every
+declaration read from the source, with its kind and line, as public (the
+article's `lean:` names), private to the module or not in Lean. The site does
+not publish JSON from `sources/`; it links each ledger in the repository.
 
 1. `tools/refresh_cslib.py CHECKOUT` reads a checkout and writes
    `data/cslib/source.json`, the commit, its date, toolchain and Mathlib, and

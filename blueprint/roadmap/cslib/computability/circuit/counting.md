@@ -123,3 +123,4 @@ theorem card_computableFunctions_mul_factorial_le_of_arity_le
 ## Sources
 
 - [Cslib/Computability/Circuit/Counting.lean at 86d560b6](https://github.com/leanprover/cslib/blob/86d560b6cbb379bd82512424cbcd2a915a1565e7/Cslib/Computability/Circuit/Counting.lean)
+- [Declaration ledger](../../../../sources/cslib/Cslib.Computability.Circuit.Counting.json)

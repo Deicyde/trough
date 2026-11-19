@@ -1,0 +1,20 @@
+{
+ "schema": "trough-ledger/v1",
+ "library": "CSLib",
+ "repo": "leanprover/cslib",
+ "rev": "86d560b6cbb379bd82512424cbcd2a915a1565e7",
+ "module": "Cslib.Computability.Circuit.Boolean.Synthesis",
+ "file": "Cslib/Computability/Circuit/Boolean/Synthesis.lean",
+ "public": [
+  {"name": "Cslib.Circuits.Synthesis.const", "kind": "theorem", "line": 34},
+  {"name": "Cslib.Circuits.Synthesis.not", "kind": "theorem", "line": 38},
+  {"name": "Cslib.Circuits.Synthesis.and", "kind": "theorem", "line": 43},
+  {"name": "Cslib.Circuits.Synthesis.or", "kind": "theorem", "line": 48},
+  {"name": "Cslib.Circuits.Synthesis.exists_mem", "kind": "theorem", "line": 53},
+  {"name": "Cslib.Circuits.Synthesis.forall_mem", "kind": "theorem", "line": 68},
+  {"name": "Cslib.Circuits.Boolean.synthesis_minterm", "kind": "theorem", "line": 87}
+ ],
+ "private": [],
+ "missing": [],
+ "unread": "Unnamed instances, the names an `alias ⟨…⟩` command gives, and the names Lean generates for a declaration (constructors, recursors, derived instances) are not read from the source, so they are not listed."
+}

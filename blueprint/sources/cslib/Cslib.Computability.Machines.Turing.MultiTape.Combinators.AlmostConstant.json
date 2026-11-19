@@ -1,0 +1,42 @@
+{
+ "schema": "trough-ledger/v1",
+ "library": "CSLib",
+ "repo": "leanprover/cslib",
+ "rev": "86d560b6cbb379bd82512424cbcd2a915a1565e7",
+ "module": "Cslib.Computability.Machines.Turing.MultiTape.Combinators.AlmostConstant",
+ "file": "Cslib/Computability/Machines/Turing/MultiTape/Combinators/AlmostConstant.lean",
+ "public": [
+  {"name": "Turing.MultiTapeTM.almostConstTime", "kind": "def", "line": 252},
+  {"name": "Turing.MultiTapeTM.computableInTimeAndSpace_almostConstTime", "kind": "theorem", "line": 346},
+  {"name": "Turing.MultiTapeTM.computableInTimeAndSpace_of_exists_finite_ne", "kind": "theorem", "line": 354},
+  {"name": "Turing.MultiTapeTM.computableInTimeAndSpace_of_const", "kind": "theorem", "line": 364},
+  {"name": "Turing.MultiTapeTM.finiteFunTime", "kind": "def", "line": 372},
+  {"name": "Turing.MultiTapeTM.computableInTimeAndSpace_finiteFunTime", "kind": "theorem", "line": 378},
+  {"name": "Turing.MultiTapeTM.computableInTimeAndSpace_of_finite", "kind": "theorem", "line": 386}
+ ],
+ "private": [
+  {"name": "Turing.MultiTapeTM.encPrefixes", "kind": "def", "line": 55},
+  {"name": "Turing.MultiTapeTM.mem_encPrefixes", "kind": "lemma", "line": 58},
+  {"name": "Turing.MultiTapeTM.prefix_mem_encPrefixes", "kind": "lemma", "line": 64},
+  {"name": "Turing.MultiTapeTM.outSuffixes", "kind": "def", "line": 73},
+  {"name": "Turing.MultiTapeTM.suffix_out_mem_outSuffixes", "kind": "lemma", "line": 77},
+  {"name": "Turing.MultiTapeTM.mem_outSuffixes", "kind": "lemma", "line": 82},
+  {"name": "Turing.MultiTapeTM.suffix_mem_outSuffixes", "kind": "lemma", "line": 88},
+  {"name": "Turing.MultiTapeTM.tail_mem_outSuffixes", "kind": "lemma", "line": 96},
+  {"name": "Turing.MultiTapeTM.encOut_mem_outSuffixes", "kind": "lemma", "line": 102},
+  {"name": "Turing.MultiTapeTM.AlmostConstState", "kind": "abbrev", "line": 111},
+  {"name": "Turing.MultiTapeTM.encodedFun", "kind": "def", "line": 119},
+  {"name": "Turing.MultiTapeTM.encodedFun_enc", "kind": "lemma", "line": 124},
+  {"name": "Turing.MultiTapeTM.encodedFun_enc_of_notMem", "kind": "lemma", "line": 130},
+  {"name": "Turing.MultiTapeTM.encodedFun_mem_outSuffixes", "kind": "lemma", "line": 137},
+  {"name": "Turing.MultiTapeTM.almostConstTM", "kind": "def", "line": 151},
+  {"name": "Turing.MultiTapeTM.runFrom_read", "kind": "lemma", "line": 174},
+  {"name": "Turing.MultiTapeTM.runFrom_write", "kind": "lemma", "line": 208},
+  {"name": "Turing.MultiTapeTM.runFrom_write_halted", "kind": "lemma", "line": 234},
+  {"name": "Turing.MultiTapeTM.length_le_sup_of_mem_encPrefixes", "kind": "lemma", "line": 256},
+  {"name": "Turing.MultiTapeTM.reaches_write", "kind": "lemma", "line": 270},
+  {"name": "Turing.MultiTapeTM.computesFunInTimeAndSpace_almostConstTM", "kind": "lemma", "line": 326}
+ ],
+ "missing": [],
+ "unread": "Unnamed instances, the names an `alias ⟨…⟩` command gives, and the names Lean generates for a declaration (constructors, recursors, derived instances) are not read from the source, so they are not listed."
+}

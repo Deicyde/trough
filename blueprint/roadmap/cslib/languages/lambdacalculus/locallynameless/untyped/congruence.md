@@ -40,3 +40,4 @@ lemma step_lc_l (hR : ∀ {M' N'}, R M' N' → LC M') (step : Xi R M N) : LC M
 ## Sources
 
 - [Cslib/Languages/LambdaCalculus/LocallyNameless/Untyped/Congruence.lean at 86d560b6](https://github.com/leanprover/cslib/blob/86d560b6cbb379bd82512424cbcd2a915a1565e7/Cslib/Languages/LambdaCalculus/LocallyNameless/Untyped/Congruence.lean)
+- [Declaration ledger](../../../../../../sources/cslib/Cslib.Languages.LambdaCalculus.LocallyNameless.Untyped.Congruence.json)

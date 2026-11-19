@@ -1,0 +1,21 @@
+{
+ "schema": "trough-ledger/v1",
+ "library": "CSLib",
+ "repo": "leanprover/cslib",
+ "rev": "86d560b6cbb379bd82512424cbcd2a915a1565e7",
+ "module": "Cslib.Foundations.Semantics.LTS.ExampleTermination",
+ "file": "Cslib/Foundations/Semantics/LTS/ExampleTermination.lean",
+ "public": [
+  {"name": "Cslib.LTS.Example.countdownLTS", "kind": "def", "line": 24},
+  {"name": "Cslib.LTS.Example.countdownLTS_terminating", "kind": "instance", "line": 27},
+  {"name": "Cslib.LTS.Example.countdownLTS_not_bounded", "kind": "theorem", "line": 44},
+  {"name": "Cslib.LTS.Example.successorLTS", "kind": "def", "line": 49},
+  {"name": "Cslib.LTS.Example.successorLTS_acyclic", "kind": "instance", "line": 60},
+  {"name": "Cslib.LTS.Example.successorLTS_not_terminating", "kind": "theorem", "line": 64},
+  {"name": "Cslib.LTS.Example.selfLoopLTS", "kind": "def", "line": 70},
+  {"name": "Cslib.LTS.Example.selfLoopLTS_not_acyclic", "kind": "theorem", "line": 74}
+ ],
+ "private": [],
+ "missing": [],
+ "unread": "Unnamed instances, the names an `alias ⟨…⟩` command gives, and the names Lean generates for a declaration (constructors, recursors, derived instances) are not read from the source, so they are not listed."
+}

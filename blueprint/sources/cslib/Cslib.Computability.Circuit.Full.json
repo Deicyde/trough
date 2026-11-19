@@ -1,0 +1,20 @@
+{
+ "schema": "trough-ledger/v1",
+ "library": "CSLib",
+ "repo": "leanprover/cslib",
+ "rev": "86d560b6cbb379bd82512424cbcd2a915a1565e7",
+ "module": "Cslib.Computability.Circuit.Full",
+ "file": "Cslib/Computability/Circuit/Full.lean",
+ "public": [
+  {"name": "Cslib.Circuits.Synthesis.full_const", "kind": "theorem", "line": 48},
+  {"name": "Cslib.Circuits.Synthesis.full_gate", "kind": "theorem", "line": 54},
+  {"name": "Cslib.Circuits.Synthesis.full_gate_of_syntheses", "kind": "theorem", "line": 68},
+  {"name": "Cslib.Circuits.Synthesis.full_binary", "kind": "theorem", "line": 76},
+  {"name": "Cslib.Circuits.fullInterpretation_simulatesWithCost", "kind": "theorem", "line": 86},
+  {"name": "Cslib.Circuits.fullInterpretation_simulates", "kind": "theorem", "line": 94},
+  {"name": "Cslib.Circuits.fullInterpretation_isComplete", "kind": "theorem", "line": 144}
+ ],
+ "private": [],
+ "missing": [],
+ "unread": "Unnamed instances, the names an `alias ⟨…⟩` command gives, and the names Lean generates for a declaration (constructors, recursors, derived instances) are not read from the source, so they are not listed."
+}

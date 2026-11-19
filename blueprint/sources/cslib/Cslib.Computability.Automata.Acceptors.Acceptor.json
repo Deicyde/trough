@@ -1,0 +1,16 @@
+{
+ "schema": "trough-ledger/v1",
+ "library": "CSLib",
+ "repo": "leanprover/cslib",
+ "rev": "86d560b6cbb379bd82512424cbcd2a915a1565e7",
+ "module": "Cslib.Computability.Automata.Acceptors.Acceptor",
+ "file": "Cslib/Computability/Automata/Acceptors/Acceptor.lean",
+ "public": [
+  {"name": "Cslib.Automata.Acceptor", "kind": "class", "line": 19},
+  {"name": "Cslib.Automata.Acceptor.language", "kind": "def", "line": 29},
+  {"name": "Cslib.Automata.Acceptor.mem_language", "kind": "theorem", "line": 34}
+ ],
+ "private": [],
+ "missing": [],
+ "unread": "Unnamed instances, the names an `alias ⟨…⟩` command gives, and the names Lean generates for a declaration (constructors, recursors, derived instances) are not read from the source, so they are not listed."
+}

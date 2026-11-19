@@ -174,3 +174,4 @@ def Proof.cutFreeToMLL {Γ : Sequent Atom} (p : ⇓Γ) (hΓ : Γ.IsMLL) (hp : p.
 ## Sources
 
 - [Cslib/Logics/LinearLogic/CLL/MLL.lean at 86d560b6](https://github.com/leanprover/cslib/blob/86d560b6cbb379bd82512424cbcd2a915a1565e7/Cslib/Logics/LinearLogic/CLL/MLL.lean)
+- [Declaration ledger](../../../../../sources/cslib/Cslib.Logics.LinearLogic.CLL.MLL.json)

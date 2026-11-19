@@ -1,0 +1,17 @@
+{
+ "schema": "trough-ledger/v1",
+ "library": "CSLib",
+ "repo": "leanprover/cslib",
+ "rev": "86d560b6cbb379bd82512424cbcd2a915a1565e7",
+ "module": "Cslib.Computability.Automata.DA.Congr",
+ "file": "Cslib/Computability/Automata/DA/Congr.lean",
+ "public": [
+  {"name": "Language.RightCongruence.toDA", "kind": "def", "line": 27},
+  {"name": "Cslib.Automata.DA.congr_mtr_eq", "kind": "theorem", "line": 47},
+  {"name": "Cslib.Automata.DA.congr_mtr_append", "kind": "theorem", "line": 58},
+  {"name": "Cslib.Automata.DA.FinAcc.congr_language_eq", "kind": "theorem", "line": 70}
+ ],
+ "private": [],
+ "missing": [],
+ "unread": "Unnamed instances, the names an `alias ⟨…⟩` command gives, and the names Lean generates for a declaration (constructors, recursors, derived instances) are not read from the source, so they are not listed."
+}

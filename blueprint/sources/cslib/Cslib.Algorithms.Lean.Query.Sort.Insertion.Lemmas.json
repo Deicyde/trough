@@ -1,0 +1,20 @@
+{
+ "schema": "trough-ledger/v1",
+ "library": "CSLib",
+ "repo": "leanprover/cslib",
+ "rev": "86d560b6cbb379bd82512424cbcd2a915a1565e7",
+ "module": "Cslib.Algorithms.Lean.Query.Sort.Insertion.Lemmas",
+ "file": "Cslib/Algorithms/Lean/Query/Sort/Insertion/Lemmas.lean",
+ "public": [
+  {"name": "Cslib.Query.eval_orderedInsert", "kind": "theorem", "line": 32},
+  {"name": "Cslib.Query.eval_insertionSort", "kind": "theorem", "line": 44},
+  {"name": "Cslib.Query.orderedInsert_countQueries_le", "kind": "theorem", "line": 51},
+  {"name": "Cslib.Query.insertionSort_countQueries_le", "kind": "theorem", "line": 65},
+  {"name": "Cslib.Query.insertionSort_countQueries_le_sq", "kind": "theorem", "line": 86},
+  {"name": "Cslib.Query.insertionSort_upperBound", "kind": "theorem", "line": 97},
+  {"name": "Cslib.Query.insertionSort_isSort", "kind": "theorem", "line": 102}
+ ],
+ "private": [],
+ "missing": [],
+ "unread": "Unnamed instances, the names an `alias ⟨…⟩` command gives, and the names Lean generates for a declaration (constructors, recursors, derived instances) are not read from the source, so they are not listed."
+}

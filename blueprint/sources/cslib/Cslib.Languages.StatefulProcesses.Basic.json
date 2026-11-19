@@ -1,0 +1,20 @@
+{
+ "schema": "trough-ledger/v1",
+ "library": "CSLib",
+ "repo": "leanprover/cslib",
+ "rev": "86d560b6cbb379bd82512424cbcd2a915a1565e7",
+ "module": "Cslib.Languages.StatefulProcesses.Basic",
+ "file": "Cslib/Languages/StatefulProcesses/Basic.lean",
+ "public": [
+  {"name": "Cslib.StatefulProcesses.Prefix", "kind": "inductive", "line": 54},
+  {"name": "Cslib.StatefulProcesses.Process", "kind": "inductive", "line": 65},
+  {"name": "Cslib.StatefulProcesses.Act", "kind": "inductive", "line": 138},
+  {"name": "Cslib.StatefulProcesses.Act.isInternal", "kind": "def", "line": 155},
+  {"name": "Cslib.StatefulProcesses.Prefix.toAct", "kind": "abbrev", "line": 160},
+  {"name": "Cslib.StatefulProcesses.Process.Tr", "kind": "inductive", "line": 168},
+  {"name": "Cslib.StatefulProcesses.Process.lts", "kind": "def", "line": 177}
+ ],
+ "private": [],
+ "missing": [],
+ "unread": "Unnamed instances, the names an `alias ⟨…⟩` command gives, and the names Lean generates for a declaration (constructors, recursors, derived instances) are not read from the source, so they are not listed."
+}

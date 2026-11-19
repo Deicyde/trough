@@ -129,3 +129,4 @@ theorem confluent_fullBeta : Confluent ((· ⭢βᶠ ·) : Term Var → Term Var
 ## Sources
 
 - [Cslib/Languages/LambdaCalculus/LocallyNameless/Untyped/FullBetaConfluence.lean at 86d560b6](https://github.com/leanprover/cslib/blob/86d560b6cbb379bd82512424cbcd2a915a1565e7/Cslib/Languages/LambdaCalculus/LocallyNameless/Untyped/FullBetaConfluence.lean)
+- [Declaration ledger](../../../../../../sources/cslib/Cslib.Languages.LambdaCalculus.LocallyNameless.Untyped.FullBetaConfluence.json)

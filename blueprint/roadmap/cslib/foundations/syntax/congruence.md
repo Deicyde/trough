@@ -64,3 +64,4 @@ class LawfulCongruence (r : α → α → Prop) [Congruence r] [HasContext α] e
 ## Sources
 
 - [Cslib/Foundations/Syntax/Congruence.lean at 86d560b6](https://github.com/leanprover/cslib/blob/86d560b6cbb379bd82512424cbcd2a915a1565e7/Cslib/Foundations/Syntax/Congruence.lean)
+- [Declaration ledger](../../../../sources/cslib/Cslib.Foundations.Syntax.Congruence.json)

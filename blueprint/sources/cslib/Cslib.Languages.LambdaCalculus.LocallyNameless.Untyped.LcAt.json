@@ -1,0 +1,28 @@
+{
+ "schema": "trough-ledger/v1",
+ "library": "CSLib",
+ "repo": "leanprover/cslib",
+ "rev": "86d560b6cbb379bd82512424cbcd2a915a1565e7",
+ "module": "Cslib.Languages.LambdaCalculus.LocallyNameless.Untyped.LcAt",
+ "file": "Cslib/Languages/LambdaCalculus/LocallyNameless/Untyped/LcAt.lean",
+ "public": [
+  {"name": "Cslib.LambdaCalculus.LocallyNameless.Untyped.Term.LcAt", "kind": "def", "line": 30},
+  {"name": "Cslib.LambdaCalculus.LocallyNameless.Untyped.Term.depth", "kind": "def", "line": 38},
+  {"name": "Cslib.LambdaCalculus.LocallyNameless.Untyped.Term.ind_on_depth", "kind": "lemma", "line": 46},
+  {"name": "Cslib.LambdaCalculus.LocallyNameless.Untyped.Term.depth_openRec_fvar_eq_depth", "kind": "lemma", "line": 59},
+  {"name": "Cslib.LambdaCalculus.LocallyNameless.Untyped.Term.depth_open_fvar_eq_depth", "kind": "theorem", "line": 64},
+  {"name": "Cslib.LambdaCalculus.LocallyNameless.Untyped.Term.lcAt_le", "kind": "lemma", "line": 67},
+  {"name": "Cslib.LambdaCalculus.LocallyNameless.Untyped.Term.lcAt_openRec_iff_lcAt", "kind": "theorem", "line": 71},
+  {"name": "Cslib.LambdaCalculus.LocallyNameless.Untyped.Term.lcAt_open_fvar_iff_lcAt", "kind": "theorem", "line": 80},
+  {"name": "Cslib.LambdaCalculus.LocallyNameless.Untyped.Term.LC", "kind": "inductive", "line": 84},
+  {"name": "Cslib.LambdaCalculus.LocallyNameless.Untyped.Term.Value", "kind": "inductive", "line": 92},
+  {"name": "Cslib.LambdaCalculus.LocallyNameless.Untyped.Term.IsAbs", "kind": "inductive", "line": 97},
+  {"name": "Cslib.LambdaCalculus.LocallyNameless.Untyped.Term.lcAt_iff_LC", "kind": "theorem", "line": 107},
+  {"name": "Cslib.LambdaCalculus.LocallyNameless.Untyped.Term.lcAt_openRec_lcAt", "kind": "lemma", "line": 130},
+  {"name": "Cslib.LambdaCalculus.LocallyNameless.Untyped.Term.open_abs_lc", "kind": "lemma", "line": 136},
+  {"name": "Cslib.LambdaCalculus.LocallyNameless.Untyped.Term.lcAt_openRec_above_lcAt", "kind": "lemma", "line": 140}
+ ],
+ "private": [],
+ "missing": [],
+ "unread": "Unnamed instances, the names an `alias ⟨…⟩` command gives, and the names Lean generates for a declaration (constructors, recursors, derived instances) are not read from the source, so they are not listed."
+}

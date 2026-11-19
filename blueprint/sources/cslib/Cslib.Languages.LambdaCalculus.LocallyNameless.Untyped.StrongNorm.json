@@ -1,0 +1,25 @@
+{
+ "schema": "trough-ledger/v1",
+ "library": "CSLib",
+ "repo": "leanprover/cslib",
+ "rev": "86d560b6cbb379bd82512424cbcd2a915a1565e7",
+ "module": "Cslib.Languages.LambdaCalculus.LocallyNameless.Untyped.StrongNorm",
+ "file": "Cslib/Languages/LambdaCalculus/LocallyNameless/Untyped/StrongNorm.lean",
+ "public": [
+  {"name": "Cslib.LambdaCalculus.LocallyNameless.Untyped.Term.sn_step", "kind": "lemma", "line": 31},
+  {"name": "Cslib.LambdaCalculus.LocallyNameless.Untyped.Term.sn_steps", "kind": "lemma", "line": 35},
+  {"name": "Cslib.LambdaCalculus.LocallyNameless.Untyped.Term.sn_fvar", "kind": "lemma", "line": 40},
+  {"name": "Cslib.LambdaCalculus.LocallyNameless.Untyped.Term.sn_app", "kind": "lemma", "line": 46},
+  {"name": "Cslib.LambdaCalculus.LocallyNameless.Untyped.Term.sn_app_left", "kind": "lemma", "line": 62},
+  {"name": "Cslib.LambdaCalculus.LocallyNameless.Untyped.Term.sn_app_right", "kind": "lemma", "line": 68},
+  {"name": "Cslib.LambdaCalculus.LocallyNameless.Untyped.Term.Neutral", "kind": "inductive", "line": 76},
+  {"name": "Cslib.LambdaCalculus.LocallyNameless.Untyped.Term.neutral_step", "kind": "lemma", "line": 87},
+  {"name": "Cslib.LambdaCalculus.LocallyNameless.Untyped.Term.neutral_steps", "kind": "lemma", "line": 91},
+  {"name": "Cslib.LambdaCalculus.LocallyNameless.Untyped.Term.sn_neutral", "kind": "lemma", "line": 96},
+  {"name": "Cslib.LambdaCalculus.LocallyNameless.Untyped.Term.sn_abs", "kind": "lemma", "line": 104},
+  {"name": "Cslib.LambdaCalculus.LocallyNameless.Untyped.Term.sn_abs_app_multiApp", "kind": "lemma", "line": 120}
+ ],
+ "private": [],
+ "missing": [],
+ "unread": "Unnamed instances, the names an `alias ⟨…⟩` command gives, and the names Lean generates for a declaration (constructors, recursors, derived instances) are not read from the source, so they are not listed."
+}

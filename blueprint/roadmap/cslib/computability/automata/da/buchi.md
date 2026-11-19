@@ -26,3 +26,4 @@ theorem buchi_eq_finAcc_omegaLim {da : DA State Symbol} {acc : Set State} :
 ## Sources
 
 - [Cslib/Computability/Automata/DA/Buchi.lean at 86d560b6](https://github.com/leanprover/cslib/blob/86d560b6cbb379bd82512424cbcd2a915a1565e7/Cslib/Computability/Automata/DA/Buchi.lean)
+- [Declaration ledger](../../../../../sources/cslib/Cslib.Computability.Automata.DA.Buchi.json)

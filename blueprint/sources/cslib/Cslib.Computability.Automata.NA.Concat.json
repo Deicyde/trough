@@ -1,0 +1,23 @@
+{
+ "schema": "trough-ledger/v1",
+ "library": "CSLib",
+ "repo": "leanprover/cslib",
+ "rev": "86d560b6cbb379bd82512424cbcd2a915a1565e7",
+ "module": "Cslib.Computability.Automata.NA.Concat",
+ "file": "Cslib/Computability/Automata/NA/Concat.lean",
+ "public": [
+  {"name": "Cslib.Automata.NA.concat", "kind": "def", "line": 26},
+  {"name": "Cslib.Automata.NA.concat_start_right", "kind": "lemma", "line": 36},
+  {"name": "Cslib.Automata.NA.concat_run_left", "kind": "lemma", "line": 40},
+  {"name": "Cslib.Automata.NA.concat_run_left_right", "kind": "lemma", "line": 53},
+  {"name": "Cslib.Automata.NA.concat_run_right", "kind": "lemma", "line": 62},
+  {"name": "Cslib.Automata.NA.concat_run_proj", "kind": "theorem", "line": 79},
+  {"name": "Cslib.Automata.NA.concat_run_exists", "kind": "theorem", "line": 101},
+  {"name": "Cslib.Automata.NA.Buchi.concat_language_eq", "kind": "theorem", "line": 134},
+  {"name": "Cslib.Automata.NA.FinAcc.finConcat", "kind": "def", "line": 156},
+  {"name": "Cslib.Automata.NA.FinAcc.finConcat_language_eq", "kind": "theorem", "line": 169}
+ ],
+ "private": [],
+ "missing": [],
+ "unread": "Unnamed instances, the names an `alias ⟨…⟩` command gives, and the names Lean generates for a declaration (constructors, recursors, derived instances) are not read from the source, so they are not listed."
+}

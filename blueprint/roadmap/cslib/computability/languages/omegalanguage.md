@@ -555,3 +555,4 @@ theorem map_map (g : β → γ) (f : α → β) (p : ωLanguage α) : map g (map
 ## Sources
 
 - [Cslib/Computability/Languages/OmegaLanguage.lean at 86d560b6](https://github.com/leanprover/cslib/blob/86d560b6cbb379bd82512424cbcd2a915a1565e7/Cslib/Computability/Languages/OmegaLanguage.lean)
+- [Declaration ledger](../../../../sources/cslib/Cslib.Computability.Languages.OmegaLanguage.json)

@@ -1,0 +1,21 @@
+{
+ "schema": "trough-ledger/v1",
+ "library": "CSLib",
+ "repo": "leanprover/cslib",
+ "rev": "86d560b6cbb379bd82512424cbcd2a915a1565e7",
+ "module": "Cslib.Foundations.Data.FinFun.Update",
+ "file": "Cslib/Foundations/Data/FinFun/Update.lean",
+ "public": [
+  {"name": "Cslib.FinFun.update", "kind": "def", "line": 27},
+  {"name": "Cslib.FinFun.update_coe", "kind": "theorem", "line": 37},
+  {"name": "Cslib.FinFun.update_apply", "kind": "theorem", "line": 42},
+  {"name": "Cslib.FinFun.update_support", "kind": "theorem", "line": 47},
+  {"name": "Cslib.FinFun.update_idem", "kind": "theorem", "line": 52},
+  {"name": "Cslib.FinFun.update_comm", "kind": "theorem", "line": 56},
+  {"name": "Cslib.FinFun.update_self", "kind": "theorem", "line": 62},
+  {"name": "Cslib.FinFun.update_support_subseteq", "kind": "theorem", "line": 66}
+ ],
+ "private": [],
+ "missing": [],
+ "unread": "Unnamed instances, the names an `alias ⟨…⟩` command gives, and the names Lean generates for a declaration (constructors, recursors, derived instances) are not read from the source, so they are not listed."
+}

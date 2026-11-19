@@ -1,0 +1,33 @@
+{
+ "schema": "trough-ledger/v1",
+ "library": "CSLib",
+ "repo": "leanprover/cslib",
+ "rev": "86d560b6cbb379bd82512424cbcd2a915a1565e7",
+ "module": "Cslib.Computability.Circuit.Composition",
+ "file": "Cslib/Computability/Circuit/Composition.lean",
+ "public": [
+  {"name": "Fin.append_comp_castAdd", "kind": "theorem", "line": 28},
+  {"name": "Fin.append_comp_natAdd", "kind": "theorem", "line": 32},
+  {"name": "Cslib.Circuits.Program.appendedWire", "kind": "def", "line": 50},
+  {"name": "Cslib.Circuits.Program.appendedWire_input", "kind": "theorem", "line": 54},
+  {"name": "Cslib.Circuits.Program.appendedWire_gate", "kind": "theorem", "line": 57},
+  {"name": "Cslib.Circuits.Program.append", "kind": "def", "line": 61},
+  {"name": "Cslib.Circuits.Program.trace_append_castAdd", "kind": "theorem", "line": 71},
+  {"name": "Cslib.Circuits.Program.trace_append_appendedWire", "kind": "theorem", "line": 79},
+  {"name": "Cslib.Circuits.Circuit.comp", "kind": "def", "line": 105},
+  {"name": "Cslib.Circuits.Circuit.size_comp", "kind": "theorem", "line": 108},
+  {"name": "Cslib.Circuits.Circuit.program_comp", "kind": "theorem", "line": 112},
+  {"name": "Cslib.Circuits.Circuit.outputs_comp", "kind": "theorem", "line": 117},
+  {"name": "Cslib.Circuits.Circuit.eval_comp", "kind": "theorem", "line": 121},
+  {"name": "Cslib.Circuits.Circuit.append", "kind": "def", "line": 127},
+  {"name": "Cslib.Circuits.Circuit.size_append", "kind": "theorem", "line": 132},
+  {"name": "Cslib.Circuits.Circuit.eval_append", "kind": "theorem", "line": 135},
+  {"name": "Cslib.Circuits.Circuit.Computes.comp", "kind": "theorem", "line": 147},
+  {"name": "Cslib.Circuits.Circuit.Computes.append", "kind": "theorem", "line": 154},
+  {"name": "Cslib.Circuits.Circuit.ComputesOn.comp", "kind": "theorem", "line": 162},
+  {"name": "Cslib.Circuits.Circuit.ComputesOn.append", "kind": "theorem", "line": 170}
+ ],
+ "private": [],
+ "missing": [],
+ "unread": "Unnamed instances, the names an `alias ⟨…⟩` command gives, and the names Lean generates for a declaration (constructors, recursors, derived instances) are not read from the source, so they are not listed."
+}

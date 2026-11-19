@@ -117,3 +117,4 @@ theorem versionSpaces_ncard_le {C : ConceptClass α β} (hC : C.Finite) :
 ## Sources
 
 - [Cslib/MachineLearning/PACLearning/VersionSpaceLattice.lean at 86d560b6](https://github.com/leanprover/cslib/blob/86d560b6cbb379bd82512424cbcd2a915a1565e7/Cslib/MachineLearning/PACLearning/VersionSpaceLattice.lean)
+- [Declaration ledger](../../../../sources/cslib/Cslib.MachineLearning.PACLearning.VersionSpaceLattice.json)

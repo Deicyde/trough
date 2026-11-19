@@ -111,3 +111,4 @@ public lemma space_map_outCfgHom_le (tm : MultiTapeTM k Symbol State) (p : tm.Ru
 ## Sources
 
 - [Cslib/Computability/Machines/Turing/MultiTape/Plumbing/OutputToTape.lean at 86d560b6](https://github.com/leanprover/cslib/blob/86d560b6cbb379bd82512424cbcd2a915a1565e7/Cslib/Computability/Machines/Turing/MultiTape/Plumbing/OutputToTape.lean)
+- [Declaration ledger](../../../../../../../sources/cslib/Cslib.Computability.Machines.Turing.MultiTape.Plumbing.OutputToTape.json)

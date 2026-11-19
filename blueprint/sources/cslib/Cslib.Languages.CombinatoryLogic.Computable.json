@@ -1,0 +1,18 @@
+{
+ "schema": "trough-ledger/v1",
+ "library": "CSLib",
+ "repo": "leanprover/cslib",
+ "rev": "86d560b6cbb379bd82512424cbcd2a915a1565e7",
+ "module": "Cslib.Languages.CombinatoryLogic.Computable",
+ "file": "Cslib/Languages/CombinatoryLogic/Computable.lean",
+ "public": [
+  {"name": "Cslib.SKI.Computes", "kind": "def", "line": 42},
+  {"name": "Cslib.SKI.Computable", "kind": "def", "line": 47},
+  {"name": "Cslib.SKI.computes_of_total", "kind": "theorem", "line": 52},
+  {"name": "Cslib.SKI.comp_computes", "kind": "theorem", "line": 60},
+  {"name": "Cslib.SKI.pair_computes", "kind": "theorem", "line": 69}
+ ],
+ "private": [],
+ "missing": [],
+ "unread": "Unnamed instances, the names an `alias ⟨…⟩` command gives, and the names Lean generates for a declaration (constructors, recursors, derived instances) are not read from the source, so they are not listed."
+}

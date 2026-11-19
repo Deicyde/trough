@@ -1,0 +1,30 @@
+{
+ "schema": "trough-ledger/v1",
+ "library": "CSLib",
+ "repo": "leanprover/cslib",
+ "rev": "86d560b6cbb379bd82512424cbcd2a915a1565e7",
+ "module": "Cslib.Computability.Languages.OmegaRegularLanguage",
+ "file": "Cslib/Computability/Languages/OmegaRegularLanguage.lean",
+ "public": [
+  {"name": "Cslib.ωLanguage.IsRegular", "kind": "def", "line": 37},
+  {"name": "Cslib.ωLanguage.isRegular_iff", "kind": "theorem", "line": 51},
+  {"name": "Cslib.ωLanguage.IsRegular.of_da_buchi", "kind": "theorem", "line": 56},
+  {"name": "Cslib.ωLanguage.IsRegular.not_da_buchi", "kind": "theorem", "line": 62},
+  {"name": "Cslib.ωLanguage.IsRegular.regular_omegaLim", "kind": "theorem", "line": 74},
+  {"name": "Cslib.ωLanguage.IsRegular.bot", "kind": "theorem", "line": 82},
+  {"name": "Cslib.ωLanguage.IsRegular.top", "kind": "theorem", "line": 94},
+  {"name": "Cslib.ωLanguage.IsRegular.sup", "kind": "theorem", "line": 110},
+  {"name": "Cslib.ωLanguage.IsRegular.inf", "kind": "theorem", "line": 131},
+  {"name": "Cslib.ωLanguage.IsRegular.iSup", "kind": "theorem", "line": 151},
+  {"name": "Cslib.ωLanguage.IsRegular.iInf", "kind": "theorem", "line": 165},
+  {"name": "Cslib.ωLanguage.IsRegular.hmul", "kind": "theorem", "line": 179},
+  {"name": "Cslib.ωLanguage.IsRegular.omegaPow", "kind": "theorem", "line": 188},
+  {"name": "Cslib.ωLanguage.IsRegular.eq_fin_iSup_hmul_omegaPow", "kind": "theorem", "line": 196},
+  {"name": "Cslib.ωLanguage.IsRegular.fin_cover_saturates", "kind": "theorem", "line": 225},
+  {"name": "Cslib.ωLanguage.IsRegular.fin_cover_saturates_compl", "kind": "theorem", "line": 241},
+  {"name": "Cslib.ωLanguage.IsRegular.compl", "kind": "theorem", "line": 250}
+ ],
+ "private": [],
+ "missing": [],
+ "unread": "Unnamed instances, the names an `alias ⟨…⟩` command gives, and the names Lean generates for a declaration (constructors, recursors, derived instances) are not read from the source, so they are not listed."
+}

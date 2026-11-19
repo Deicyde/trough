@@ -1,0 +1,32 @@
+{
+ "schema": "trough-ledger/v1",
+ "library": "CSLib",
+ "repo": "leanprover/cslib",
+ "rev": "86d560b6cbb379bd82512424cbcd2a915a1565e7",
+ "module": "Cslib.Computability.URM.Defs",
+ "file": "Cslib/Computability/URM/Defs.lean",
+ "public": [
+  {"name": "Cslib.URM.Instr", "kind": "inductive", "line": 44},
+  {"name": "Cslib.URM.Instr.readsFrom", "kind": "def", "line": 55},
+  {"name": "Cslib.URM.Instr.writesTo", "kind": "def", "line": 63},
+  {"name": "Cslib.URM.Instr.maxRegister", "kind": "def", "line": 71},
+  {"name": "Cslib.URM.Instr.shiftJumps", "kind": "def", "line": 80},
+  {"name": "Cslib.URM.Instr.shiftRegisters", "kind": "def", "line": 89},
+  {"name": "Cslib.URM.Regs", "kind": "abbrev", "line": 103},
+  {"name": "Cslib.URM.Regs.zero", "kind": "def", "line": 109},
+  {"name": "Cslib.URM.Regs.read", "kind": "def", "line": 113},
+  {"name": "Cslib.URM.Regs.write", "kind": "def", "line": 117},
+  {"name": "Cslib.URM.Regs.ofInputs", "kind": "def", "line": 122},
+  {"name": "Cslib.URM.Regs.output", "kind": "def", "line": 126},
+  {"name": "Cslib.URM.Program", "kind": "abbrev", "line": 133},
+  {"name": "Cslib.URM.Program.maxRegister", "kind": "def", "line": 139},
+  {"name": "Cslib.URM.Program.shiftJumps", "kind": "def", "line": 146},
+  {"name": "Cslib.URM.Program.shiftRegisters", "kind": "def", "line": 152},
+  {"name": "Cslib.URM.State", "kind": "structure", "line": 160},
+  {"name": "Cslib.URM.State.init", "kind": "def", "line": 171},
+  {"name": "Cslib.URM.State.isHalted", "kind": "def", "line": 175}
+ ],
+ "private": [],
+ "missing": [],
+ "unread": "Unnamed instances, the names an `alias ⟨…⟩` command gives, and the names Lean generates for a declaration (constructors, recursors, derived instances) are not read from the source, so they are not listed."
+}

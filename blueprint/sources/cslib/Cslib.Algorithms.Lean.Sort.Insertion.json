@@ -1,0 +1,25 @@
+{
+ "schema": "trough-ledger/v1",
+ "library": "CSLib",
+ "repo": "leanprover/cslib",
+ "rev": "86d560b6cbb379bd82512424cbcd2a915a1565e7",
+ "module": "Cslib.Algorithms.Lean.Sort.Insertion",
+ "file": "Cslib/Algorithms/Lean/Sort/Insertion.lean",
+ "public": [
+  {"name": "List.orderedInsertM", "kind": "def", "line": 27},
+  {"name": "List.orderedInsertM_nil", "kind": "theorem", "line": 31},
+  {"name": "List.orderedInsertM_cons", "kind": "theorem", "line": 33},
+  {"name": "List.orderedInsertM_pure", "kind": "theorem", "line": 39},
+  {"name": "List.idRun_orderedInsertM", "kind": "theorem", "line": 45},
+  {"name": "Cslib.IsMonadHom.map_orderedInsertM", "kind": "theorem", "line": 50},
+  {"name": "List.insertionSortM", "kind": "def", "line": 56},
+  {"name": "List.insertionSortM_nil", "kind": "theorem", "line": 60},
+  {"name": "List.insertionSortM_cons", "kind": "theorem", "line": 62},
+  {"name": "List.insertionSortM_pure", "kind": "theorem", "line": 67},
+  {"name": "List.idRun_insertionSortM", "kind": "theorem", "line": 72},
+  {"name": "Cslib.IsMonadHom.map_listInsertionSortM", "kind": "theorem", "line": 77}
+ ],
+ "private": [],
+ "missing": [],
+ "unread": "Unnamed instances, the names an `alias ⟨…⟩` command gives, and the names Lean generates for a declaration (constructors, recursors, derived instances) are not read from the source, so they are not listed."
+}
