@@ -678,6 +678,9 @@ def test_a_proof_that_is_only_notes_is_no_proof(tmp_path):
         "\\end{document}\n")
     built, leaves = build(leanblueprint.read(tmp_path, "web.tex"), tmp_path)
     assert "Proof" not in dict(leaves["a"].notes) and "Proof" not in dict(leaves["b"].notes)
+    for placeholder in ("Omitted for now. …", "Test.", ".", "To do"):
+        assert blueprints.PLACEHOLDER.fullmatch(placeholder)
+    assert not blueprints.PLACEHOLDER.fullmatch("Trivial.") and not blueprints.PLACEHOLDER.fullmatch("To do so, use C.")
     assert dict(leaves["c"].notes)["Proof"] == "One proof is by induction. …"
     assert dict(leaves["d"].notes)["Proof"] == "To do so, use C."
 

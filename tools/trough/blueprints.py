@@ -234,7 +234,9 @@ TODO_ASIDE = re.compile(r"[ \t]*\([^()]*?\bTODOs?\b(?:[^()]|\([^()]*\))*\)")
 # A list item, bulleted or numbered.
 ITEM = re.compile(r"^[ \t]*(?:[-*+]|\d+\.)[ \t]+")
 # A text that is only a note that it is still to be written.
-TO_DO = re.compile(r"\s*(?:TODO|To do)\.?\s*")
+# A text that only holds the place of a proof: punctuation and cut marks, around at most a note that it is still
+# to be written, such as "To do.", "Omitted for now." or "Test.".
+PLACEHOLDER = re.compile(r"[\W_]*(?:(?:TODO|To do|Omitted for now|Test)[\W_]*)?")
 NO_PLANS = re.compile(r"(?!)")
 # The bytes of article Markdown a page folds in before its next node starts a part, as in the other chapters.
 PAGE_BUDGET = 300_000
@@ -658,7 +660,7 @@ def leaf(project: Project, node: Node, caption: str, title: str, writer: Writer,
         if node.proof is not None:
             # A proof the blueprint does not mark formalized may say what is planned; one that is only notes is none.
             proof = without_notes(writer.statement(node.proof.body), plans=not proof_ok)
-            if proof.strip("… ") and not TO_DO.fullmatch(proof):
+            if not PLACEHOLDER.fullmatch(proof):
                 notes.insert(0, ("Proof", run_in(proof_head(node.proof, writer), proof) if node.proof.title else proof))
     else:
         body = (f"The blueprint of {project.name} states this {caption.lower()} at [{place}]({source}). The "
