@@ -8,7 +8,7 @@ proof: formalized
 
 # The Lorentz action on the fermionic algebra
 
-The module `PhyslibAlpha.Particles.StandardModel.Matter.Fermionic.LorentzAction`, [PhyslibAlpha/Particles/StandardModel/Matter/Fermionic/LorentzAction.lean](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/Matter/Fermionic/LorentzAction.lean): 10 declarations, 7 with a docstring.
+The module `PhyslibAlpha.Particles.StandardModel.Matter.Fermionic.LorentzAction`, [PhyslibAlpha/Particles/StandardModel/Matter/Fermionic/LorentzAction.lean](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/Matter/Fermionic/LorentzAction.lean): 10 declarations, 7 with a docstring.
 
 ## i. Overview
 
@@ -36,7 +36,7 @@ The module `PhyslibAlpha.Particles.StandardModel.Matter.Fermionic.LorentzAction`
 
 ## A. The action of the Lorentz group
 
-**`StandardModel.FermionicAlgebra.repLorentzGroup`**, a def, [line 65](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/Matter/Fermionic/LorentzAction.lean#L65).
+**`StandardModel.FermionicAlgebra.repLorentzGroup`**, a def, [line 65](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/Matter/Fermionic/LorentzAction.lean#L65).
 
 > **The Lorentz action on the fermionic algebra** of the matter field `M`, induced
 > from a representation `M.repLorentz` of `SL(2,ℂ)` on `V`: the exterior-algebra functor applied to
@@ -47,7 +47,7 @@ noncomputable def repLorentzGroup :
     Representation ℂ SL(2,ℂ) (FermionicAlgebra M)
 ```
 
-**`StandardModel.FermionicAlgebra.repLorentzGroup_apply`**, a lemma, [line 75](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/Matter/Fermionic/LorentzAction.lean#L75).
+**`StandardModel.FermionicAlgebra.repLorentzGroup_apply`**, a lemma, [line 75](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/Matter/Fermionic/LorentzAction.lean#L75).
 
 ```lean
 lemma repLorentzGroup_apply (Λ : SL(2,ℂ))
@@ -56,14 +56,14 @@ lemma repLorentzGroup_apply (Λ : SL(2,ℂ))
       ExteriorAlgebra.map (JetComponentSpace.repLorentzGroup M Λ) x
 ```
 
-**`StandardModel.FermionicAlgebra.repLorentzGroup_apply_one`**, a lemma, [line 81](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/Matter/Fermionic/LorentzAction.lean#L81).
+**`StandardModel.FermionicAlgebra.repLorentzGroup_apply_one`**, a lemma, [line 81](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/Matter/Fermionic/LorentzAction.lean#L81).
 
 ```lean
 lemma repLorentzGroup_apply_one (Λ : SL(2,ℂ)) :
     repLorentzGroup M Λ (1 : FermionicAlgebra M) = 1
 ```
 
-**`StandardModel.FermionicAlgebra.repLorentzGroup_apply_mul`**, a lemma, [line 85](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/Matter/Fermionic/LorentzAction.lean#L85).
+**`StandardModel.FermionicAlgebra.repLorentzGroup_apply_mul`**, a lemma, [line 85](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/Matter/Fermionic/LorentzAction.lean#L85).
 
 ```lean
 lemma repLorentzGroup_apply_mul (Λ : SL(2,ℂ))
@@ -72,7 +72,7 @@ lemma repLorentzGroup_apply_mul (Λ : SL(2,ℂ))
       = repLorentzGroup M Λ x * repLorentzGroup M Λ y
 ```
 
-**`StandardModel.FermionicAlgebra.repLorentzGroup_ι`**, a lemma, [line 93](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/Matter/Fermionic/LorentzAction.lean#L93).
+**`StandardModel.FermionicAlgebra.repLorentzGroup_ι`**, a lemma, [line 93](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/Matter/Fermionic/LorentzAction.lean#L93).
 
 > On a component function the Lorentz action is the action on the component space.
 
@@ -83,7 +83,7 @@ lemma repLorentzGroup_ι (Λ : SL(2,ℂ))
       ExteriorAlgebra.ι ℂ (JetComponentSpace.repLorentzGroup M Λ v)
 ```
 
-**`StandardModel.FermionicAlgebra.repLorentzGroupAlgHom`**, a def, [line 101](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/Matter/Fermionic/LorentzAction.lean#L101).
+**`StandardModel.FermionicAlgebra.repLorentzGroupAlgHom`**, a def, [line 101](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/Matter/Fermionic/LorentzAction.lean#L101).
 
 > The Lorentz action as an algebra homomorphism: it preserves the exterior product, so a
 > Lorentz transformation acts on a Lagrangian term factor by factor.
@@ -95,7 +95,7 @@ noncomputable def repLorentzGroupAlgHom (Λ : SL(2,ℂ)) :
 
 ### A.1. Equivariance of the field and its conjugate
 
-**`StandardModel.FermionicAlgebra.repLorentzGroup_ofField`**, a lemma, [line 121](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/Matter/Fermionic/LorentzAction.lean#L121).
+**`StandardModel.FermionicAlgebra.repLorentzGroup_ofField`**, a lemma, [line 121](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/Matter/Fermionic/LorentzAction.lean#L121).
 
 > **`ofField` is `SL(2,ℂ)`-equivariant.** The undifferentiated component functions carry
 > the contragredient of the representation on the target space, and no derivative labels
@@ -108,7 +108,7 @@ lemma repLorentzGroup_ofField (Λ : SL(2,ℂ))
     repLorentzGroup M Λ (ofField φ) = ofField (M.repLorentz.dual Λ φ)
 ```
 
-**`StandardModel.FermionicAlgebra.repLorentzGroup_ofConjField`**, a lemma, [line 137](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/Matter/Fermionic/LorentzAction.lean#L137).
+**`StandardModel.FermionicAlgebra.repLorentzGroup_ofConjField`**, a lemma, [line 137](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/Matter/Fermionic/LorentzAction.lean#L137).
 
 > **`ofConjField` is `SL(2,ℂ)`-equivariant**, for the conjugate of the representation on
 > the target space: the conjugate component functions transform by `star` of the spinor
@@ -122,7 +122,7 @@ lemma repLorentzGroup_ofConjField (Λ : SL(2,ℂ))
 
 ## B. Lorentz covariance of the total derivative
 
-**`StandardModel.FermionicAlgebra.repLorentzGroup_jetDeriv`**, a lemma, [line 159](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/Matter/Fermionic/LorentzAction.lean#L159).
+**`StandardModel.FermionicAlgebra.repLorentzGroup_jetDeriv`**, a lemma, [line 159](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/Matter/Fermionic/LorentzAction.lean#L159).
 
 > **The total derivative on the fermionic algebra is a Lorentz vector.** The four
 > derivations `∂_μ` transform into each other by the columns of the Lorentz matrix of `Λ`,
@@ -136,7 +136,7 @@ lemma repLorentzGroup_jetDeriv (Λ : SL(2,ℂ))
         jetDeriv a (repLorentzGroup M Λ x)
 ```
 
-**`StandardModel.FermionicAlgebra.instIsLorentzDeriv`**, an instance, [line 185](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/Matter/Fermionic/LorentzAction.lean#L185).
+**`StandardModel.FermionicAlgebra.instIsLorentzDeriv`**, an instance, [line 185](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/Matter/Fermionic/LorentzAction.lean#L185).
 
 > The total derivatives on the fermionic algebra form a Lorentz derivative, giving access
 > to the boost-weight machinery of `PhyslibAlpha.Relativity.IsLorentzDeriv`.
@@ -152,4 +152,4 @@ instance instIsLorentzDeriv :
 
 ## Sources
 
-- [PhyslibAlpha/Particles/StandardModel/Matter/Fermionic/LorentzAction.lean at 2a1dfe43](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/Matter/Fermionic/LorentzAction.lean)
+- [PhyslibAlpha/Particles/StandardModel/Matter/Fermionic/LorentzAction.lean at 8c87bdfb](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/Matter/Fermionic/LorentzAction.lean)

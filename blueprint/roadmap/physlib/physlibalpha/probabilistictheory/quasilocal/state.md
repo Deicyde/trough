@@ -1,14 +1,14 @@
 ---
 declaration: module
 origin: cited
-lean: ProbabilisticTheory.QuasiLocal.LocalStateFamily, ProbabilisticTheory.QuasiLocal.LocalStateFamily.lift, ProbabilisticTheory.QuasiLocal.LocalStateFamily.lift_of, ProbabilisticTheory.QuasiLocal.LocalStateFamily.toAlgState, ProbabilisticTheory.QuasiLocal.LocalStateFamily.toAlgState_of
+lean: PhyslibAlpha.ProbabilisticTheory.QuasiLocal.LocalStateFamily, PhyslibAlpha.ProbabilisticTheory.QuasiLocal.LocalStateFamily.lift, PhyslibAlpha.ProbabilisticTheory.QuasiLocal.LocalStateFamily.lift_of, PhyslibAlpha.ProbabilisticTheory.QuasiLocal.LocalStateFamily.toAlgState, PhyslibAlpha.ProbabilisticTheory.QuasiLocal.LocalStateFamily.toAlgState_of
 statement: formalized
 proof: formalized
 ---
 
 # States of the quasi-local algebra from compatible local states
 
-The module `PhyslibAlpha.ProbabilisticTheory.QuasiLocal.State`, [PhyslibAlpha/ProbabilisticTheory/QuasiLocal/State.lean](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ProbabilisticTheory/QuasiLocal/State.lean): 5 declarations, 4 with a docstring.
+The module `PhyslibAlpha.ProbabilisticTheory.QuasiLocal.State`, [PhyslibAlpha/ProbabilisticTheory/QuasiLocal/State.lean](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/QuasiLocal/State.lean): 5 declarations, 4 with a docstring.
 
 > A family of local states, each the restriction of the next, is a state of the quasi-local algebra.
 
@@ -34,7 +34,7 @@ The module `PhyslibAlpha.ProbabilisticTheory.QuasiLocal.State`, [PhyslibAlpha/Pr
 
 ## A. Compatible families
 
-**`ProbabilisticTheory.QuasiLocal.LocalStateFamily`**, a structure, [line 59](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ProbabilisticTheory/QuasiLocal/State.lean#L59).
+**`PhyslibAlpha.ProbabilisticTheory.QuasiLocal.LocalStateFamily`**, a structure, [line 59](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/QuasiLocal/State.lean#L59).
 
 > A compatible family of local states of a net of algebras.
 
@@ -54,7 +54,7 @@ structure LocalStateFamily where
 
 ## B. The state of the quasi-local algebra
 
-**`ProbabilisticTheory.QuasiLocal.LocalStateFamily.lift`**, a def, [line 76](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ProbabilisticTheory/QuasiLocal/State.lean#L76).
+**`PhyslibAlpha.ProbabilisticTheory.QuasiLocal.LocalStateFamily.lift`**, a def, [line 76](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/QuasiLocal/State.lean#L76).
 
 > The linear functional on the quasi-local algebra defined by a compatible family.
 
@@ -62,14 +62,14 @@ structure LocalStateFamily where
 def LocalStateFamily.lift (ω : LocalStateFamily N) : N.Quasilocal →ₗ[ℂ] ℂ
 ```
 
-**`ProbabilisticTheory.QuasiLocal.LocalStateFamily.lift_of`**, a lemma, [line 81](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ProbabilisticTheory/QuasiLocal/State.lean#L81).
+**`PhyslibAlpha.ProbabilisticTheory.QuasiLocal.LocalStateFamily.lift_of`**, a lemma, [line 81](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/QuasiLocal/State.lean#L81).
 
 ```lean
 lemma LocalStateFamily.lift_of (ω : LocalStateFamily N) (X : Finset S) (a : N.A X) :
     ω.lift (N.of X a) = ω.state X a
 ```
 
-**`ProbabilisticTheory.QuasiLocal.LocalStateFamily.toAlgState`**, a def, [line 85](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ProbabilisticTheory/QuasiLocal/State.lean#L85).
+**`PhyslibAlpha.ProbabilisticTheory.QuasiLocal.LocalStateFamily.toAlgState`**, a def, [line 85](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/QuasiLocal/State.lean#L85).
 
 > **The state of the quasi-local algebra** defined by a compatible family.
 
@@ -77,7 +77,7 @@ lemma LocalStateFamily.lift_of (ω : LocalStateFamily N) (X : Finset S) (a : N.A
 def LocalStateFamily.toAlgState (ω : LocalStateFamily N) : AlgState N.Quasilocal
 ```
 
-**`ProbabilisticTheory.QuasiLocal.LocalStateFamily.toAlgState_of`**, a lemma, [line 101](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ProbabilisticTheory/QuasiLocal/State.lean#L101).
+**`PhyslibAlpha.ProbabilisticTheory.QuasiLocal.LocalStateFamily.toAlgState_of`**, a lemma, [line 101](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/QuasiLocal/State.lean#L101).
 
 > The state of a compatible family on a local observable is the local expectation.
 
@@ -93,4 +93,4 @@ lemma LocalStateFamily.toAlgState_of (ω : LocalStateFamily N) (X : Finset S) (a
 
 ## Sources
 
-- [PhyslibAlpha/ProbabilisticTheory/QuasiLocal/State.lean at 2a1dfe43](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ProbabilisticTheory/QuasiLocal/State.lean)
+- [PhyslibAlpha/ProbabilisticTheory/QuasiLocal/State.lean at 8c87bdfb](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/QuasiLocal/State.lean)

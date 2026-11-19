@@ -6,20 +6,21 @@ statement: formalized
 proof: formalized
 ---
 
-# Effects
+# Effects (Physlib)
 
-The module `Physlib.ProbabilisticTheory.Effect.Basic`, [Physlib/ProbabilisticTheory/Effect/Basic.lean](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/ProbabilisticTheory/Effect/Basic.lean): 8 declarations, 3 with a docstring.
+The module `Physlib.ProbabilisticTheory.Effect.Basic`, [Physlib/ProbabilisticTheory/Effect/Basic.lean](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/ProbabilisticTheory/Effect/Basic.lean): 8 declarations, 3 with a docstring.
 
 ## i. Overview
 
 > An effect models a yes/no measurement outcome, ranging continuously between the impossible
 > outcome `0` and the certain outcome `1`. Formally, it is a point of the order interval `[0, 1]`
-> inside `E`. For self-adjoint matrices, effects are exactly the operators `0 ≤ M ≤ 1` — the
-> elements of a POVM.
+> inside `P.Observables`. For self-adjoint matrices, effects are exactly the operators
+> `0 ≤ M ≤ 1` — the elements of a POVM.
 
 ## ii. Key results
 
-> - `Effect` : a bounded measurement outcome, the order interval `[0, 1]`.
+> - `ProbabilisticTheory.Effect` : a bounded measurement outcome, the
+>   order interval `[0, 1]` of its observables.
 > - `Effect.mem_iff_mem_posCone_and_one_sub_mem_posCone` : an effect is exactly a positive element
 >   whose complement from the order unit is also positive.
 > - `Effect.exists_pos_smul_mem` : every positive observable becomes an effect after scaling it down
@@ -32,67 +33,67 @@ The module `Physlib.ProbabilisticTheory.Effect.Basic`, [Physlib/ProbabilisticThe
 
 ## A. Effects
 
-**`ProbabilisticTheory.Effect`**, an abbrev, [line 51](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/ProbabilisticTheory/Effect/Basic.lean#L51).
+**`ProbabilisticTheory.Effect`**, an abbrev, [line 52](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/ProbabilisticTheory/Effect/Basic.lean#L52).
 
 > A bounded measurement outcome.
 
 ```lean
-abbrev Effect (E : Type*) [PartialOrder E] [One E] [Zero E]
+abbrev ProbabilisticTheory.Effect (P : ProbabilisticTheory)
 ```
 
-**`ProbabilisticTheory.Effect.mem_iff_mem_posCone_and_one_sub_mem_posCone`**, a lemma, [line 60](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/ProbabilisticTheory/Effect/Basic.lean#L60).
+**`ProbabilisticTheory.Effect.mem_iff_mem_posCone_and_one_sub_mem_posCone`**, a lemma, [line 59](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/ProbabilisticTheory/Effect/Basic.lean#L59).
 
 > An effect is a positive element whose complement from the order unit is positive.
 
 ```lean
-lemma mem_iff_mem_posCone_and_one_sub_mem_posCone {A : E} :
-    A ∈ Effect E ↔ A ∈ PosCone E ∧ 1 - A ∈ PosCone E
+lemma mem_iff_mem_posCone_and_one_sub_mem_posCone {A : P.Observables} :
+    A ∈ P.Effect ↔ A ∈ PosCone P ∧ 1 - A ∈ PosCone P
 ```
 
-**`ProbabilisticTheory.Effect.instZero`**, an instance, [line 70](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/ProbabilisticTheory/Effect/Basic.lean#L70).
+**`ProbabilisticTheory.Effect.instZero`**, an instance, [line 63](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/ProbabilisticTheory/Effect/Basic.lean#L63).
 
 ```lean
-instance instZero : Zero (Effect E)
+instance instZero : Zero P.Effect
 ```
 
-**`ProbabilisticTheory.Effect.instOne`**, an instance, [line 72](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/ProbabilisticTheory/Effect/Basic.lean#L72).
+**`ProbabilisticTheory.Effect.instOne`**, an instance, [line 65](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/ProbabilisticTheory/Effect/Basic.lean#L65).
 
 ```lean
-instance instOne : One (Effect E)
+instance instOne : One P.Effect
 ```
 
-**`ProbabilisticTheory.Effect.instNonempty`**, an instance, [line 74](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/ProbabilisticTheory/Effect/Basic.lean#L74).
+**`ProbabilisticTheory.Effect.instNonempty`**, an instance, [line 67](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/ProbabilisticTheory/Effect/Basic.lean#L67).
 
 ```lean
-instance instNonempty : Nonempty (Effect E)
+instance instNonempty : Nonempty P.Effect
 ```
 
-**`ProbabilisticTheory.Effect.coe_zero`**, a lemma, [line 76](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/ProbabilisticTheory/Effect/Basic.lean#L76).
+**`ProbabilisticTheory.Effect.coe_zero`**, a lemma, [line 69](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/ProbabilisticTheory/Effect/Basic.lean#L69).
 
 ```lean
-lemma coe_zero : ((0 : Effect E) : E) = 0
+lemma coe_zero : ((0 : P.Effect) : P.Observables) = 0
 ```
 
-**`ProbabilisticTheory.Effect.coe_one`**, a lemma, [line 78](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/ProbabilisticTheory/Effect/Basic.lean#L78).
+**`ProbabilisticTheory.Effect.coe_one`**, a lemma, [line 71](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/ProbabilisticTheory/Effect/Basic.lean#L71).
 
 ```lean
-lemma coe_one : ((1 : Effect E) : E) = 1
+lemma coe_one : ((1 : P.Effect) : P.Observables) = 1
 ```
 
-**`ProbabilisticTheory.Effect.exists_pos_smul_mem`**, a lemma, [line 82](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/ProbabilisticTheory/Effect/Basic.lean#L82).
+**`ProbabilisticTheory.Effect.exists_pos_smul_mem`**, a lemma, [line 75](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/ProbabilisticTheory/Effect/Basic.lean#L75).
 
 > Every nonnegative observable becomes an effect after scaling it down by a large enough
 > positive real: the effect interval reaches in every direction the positive cone does.
 
 ```lean
-lemma exists_pos_smul_mem {B : E} (hB : 0 ≤ B) :
-    ∃ r : ℝ, 0 < r ∧ r • B ∈ Effect E
+lemma exists_pos_smul_mem {B : P.Observables} (hB : 0 ≤ B) :
+    ∃ r : ℝ, 0 < r ∧ r • B ∈ P.Effect
 ```
 
 ## Depends on
 
-- [Ordered positive cones](../orderunit/cone.md)
+- [Ordered positive cones (Physlib)](../orderunit/cone.md)
 
 ## Sources
 
-- [Physlib/ProbabilisticTheory/Effect/Basic.lean at 2a1dfe43](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/ProbabilisticTheory/Effect/Basic.lean)
+- [Physlib/ProbabilisticTheory/Effect/Basic.lean at 8c87bdfb](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/ProbabilisticTheory/Effect/Basic.lean)

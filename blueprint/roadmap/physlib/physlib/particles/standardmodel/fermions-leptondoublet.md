@@ -8,7 +8,7 @@ proof: formalized
 
 # Lepton doublets (Physlib)
 
-The module `Physlib.Particles.StandardModel.Fermions.LeptonDoublet`, [Physlib/Particles/StandardModel/Fermions/LeptonDoublet.lean](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/Particles/StandardModel/Fermions/LeptonDoublet.lean): 18 declarations (2 instances with no name), 12 with a docstring.
+The module `Physlib.Particles.StandardModel.Fermions.LeptonDoublet`, [Physlib/Particles/StandardModel/Fermions/LeptonDoublet.lean](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Particles/StandardModel/Fermions/LeptonDoublet.lean): 18 declarations (2 instances with no name), 12 with a docstring.
 
 ## i. Overview
 
@@ -39,7 +39,7 @@ The module `Physlib.Particles.StandardModel.Fermions.LeptonDoublet`, [Physlib/Pa
 > The Weyl factor carries the left-handed Lorentz index, while
 > `EuclideanSpace ℂ (Fin 2)` carries the weak index.
 
-**`StandardModel.LeptonDoublet`**, a structure, [line 65](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/Particles/StandardModel/Fermions/LeptonDoublet.lean#L65).
+**`StandardModel.LeptonDoublet`**, a structure, [line 65](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Particles/StandardModel/Fermions/LeptonDoublet.lean#L65).
 
 > The target vector space of one Standard Model lepton doublet.
 > It carries the `(1, 2)_{-3}` representation of the gauge group.
@@ -56,7 +56,7 @@ structure LeptonDoublet where
 > The following equivalences transfer the linear structure of the tensor product and expose
 > that model when defining representations.
 
-**`StandardModel.LeptonDoublet.valEquiv`**, a def, [line 81](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/Particles/StandardModel/Fermions/LeptonDoublet.lean#L81).
+**`StandardModel.LeptonDoublet.valEquiv`**, a def, [line 81](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Particles/StandardModel/Fermions/LeptonDoublet.lean#L81).
 
 > Identifies a lepton doublet with its underlying tensor-product value.
 
@@ -64,19 +64,19 @@ structure LeptonDoublet where
 def valEquiv : LeptonDoublet ≃ Fermion.LeftHandedWeyl ⊗[ℂ] EuclideanSpace ℂ (Fin 2)
 ```
 
-**An instance with no name**, [line 85](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/Particles/StandardModel/Fermions/LeptonDoublet.lean#L85).
+**An instance with no name**, [line 85](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Particles/StandardModel/Fermions/LeptonDoublet.lean#L85).
 
 ```lean
 instance : AddCommGroup LeptonDoublet
 ```
 
-**An instance with no name**, [line 87](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/Particles/StandardModel/Fermions/LeptonDoublet.lean#L87).
+**An instance with no name**, [line 87](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Particles/StandardModel/Fermions/LeptonDoublet.lean#L87).
 
 ```lean
 instance : Module ℂ LeptonDoublet
 ```
 
-**`StandardModel.LeptonDoublet.valLinEquiv`**, a def, [line 90](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/Particles/StandardModel/Fermions/LeptonDoublet.lean#L90).
+**`StandardModel.LeptonDoublet.valLinEquiv`**, a def, [line 90](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Particles/StandardModel/Fermions/LeptonDoublet.lean#L90).
 
 > The linear identification with the underlying tensor product.
 
@@ -85,13 +85,13 @@ def valLinEquiv : LeptonDoublet ≃ₗ[ℂ]
     Fermion.LeftHandedWeyl ⊗[ℂ] EuclideanSpace ℂ (Fin 2)
 ```
 
-**`StandardModel.LeptonDoublet.valLinEquiv_apply`**, a lemma, [line 98](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/Particles/StandardModel/Fermions/LeptonDoublet.lean#L98).
+**`StandardModel.LeptonDoublet.valLinEquiv_apply`**, a lemma, [line 98](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Particles/StandardModel/Fermions/LeptonDoublet.lean#L98).
 
 ```lean
 lemma valLinEquiv_apply (l : LeptonDoublet) : valLinEquiv l = l.val
 ```
 
-**`StandardModel.LeptonDoublet.valLinEquiv_symm_apply`**, a lemma, [line 100](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/Particles/StandardModel/Fermions/LeptonDoublet.lean#L100).
+**`StandardModel.LeptonDoublet.valLinEquiv_symm_apply`**, a lemma, [line 100](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Particles/StandardModel/Fermions/LeptonDoublet.lean#L100).
 
 ```lean
 lemma valLinEquiv_symm_apply
@@ -99,13 +99,13 @@ lemma valLinEquiv_symm_apply
     valLinEquiv.symm m = ⟨m⟩
 ```
 
-**`StandardModel.LeptonDoublet.val_add`**, a lemma, [line 105](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/Particles/StandardModel/Fermions/LeptonDoublet.lean#L105).
+**`StandardModel.LeptonDoublet.val_add`**, a lemma, [line 105](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Particles/StandardModel/Fermions/LeptonDoublet.lean#L105).
 
 ```lean
 lemma val_add (l₁ l₂ : LeptonDoublet) : (l₁ + l₂).val = l₁.val + l₂.val
 ```
 
-**`StandardModel.LeptonDoublet.val_smul`**, a lemma, [line 108](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/Particles/StandardModel/Fermions/LeptonDoublet.lean#L108).
+**`StandardModel.LeptonDoublet.val_smul`**, a lemma, [line 108](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Particles/StandardModel/Fermions/LeptonDoublet.lean#L108).
 
 ```lean
 lemma val_smul (r : ℂ) (l : LeptonDoublet) : (r • l).val = r • l.val
@@ -115,7 +115,7 @@ lemma val_smul (r : ℂ) (l : LeptonDoublet) : (r • l).val = r • l.val
 
 > The Lorentz group acts on the left-handed Weyl factor and leaves the weak index fixed.
 
-**`StandardModel.LeptonDoublet.repLorentzGroup`**, a def, [line 121](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/Particles/StandardModel/Fermions/LeptonDoublet.lean#L121).
+**`StandardModel.LeptonDoublet.repLorentzGroup`**, a def, [line 121](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Particles/StandardModel/Fermions/LeptonDoublet.lean#L121).
 
 > The left-handed Lorentz representation on lepton doublets.
 
@@ -131,7 +131,7 @@ noncomputable def repLorentzGroup : Representation ℂ (SL(2,ℂ)) LeptonDoublet
 > The tensor and basis formulas below expose the coefficients used to compare actions and
 > compute the kernel.
 
-**`StandardModel.LeptonDoublet.repGaugeGroupI`**, a def, [line 145](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/Particles/StandardModel/Fermions/LeptonDoublet.lean#L145).
+**`StandardModel.LeptonDoublet.repGaugeGroupI`**, a def, [line 145](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Particles/StandardModel/Fermions/LeptonDoublet.lean#L145).
 
 > The `(1, 2)_{-3}` action of the unquotiented Standard Model gauge group.
 
@@ -139,7 +139,7 @@ noncomputable def repLorentzGroup : Representation ℂ (SL(2,ℂ)) LeptonDoublet
 noncomputable def repGaugeGroupI : Representation ℂ GaugeGroupI LeptonDoublet
 ```
 
-**`StandardModel.LeptonDoublet.repGaugeGroupI_tmul`**, a lemma, [line 161](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/Particles/StandardModel/Fermions/LeptonDoublet.lean#L161).
+**`StandardModel.LeptonDoublet.repGaugeGroupI_tmul`**, a lemma, [line 161](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Particles/StandardModel/Fermions/LeptonDoublet.lean#L161).
 
 > The gauge action on a pure spinor–weak tensor.
 
@@ -150,7 +150,7 @@ lemma repGaugeGroupI_tmul (g : GaugeGroupI) (v : Fermion.LeftHandedWeyl)
       ⟨(star g.toU1.1 ^ 3) • v ⊗ₜ (g.toSU2.1.toEuclideanLin w)⟩
 ```
 
-**`StandardModel.LeptonDoublet.repGaugeGroupI_tmul_basis_eq_sum`**, a lemma, [line 168](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/Particles/StandardModel/Fermions/LeptonDoublet.lean#L168).
+**`StandardModel.LeptonDoublet.repGaugeGroupI_tmul_basis_eq_sum`**, a lemma, [line 168](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Particles/StandardModel/Fermions/LeptonDoublet.lean#L168).
 
 > Expands the gauge action in the spinor–weak basis.
 
@@ -163,7 +163,7 @@ lemma repGaugeGroupI_tmul_basis_eq_sum (g : GaugeGroupI) (k j : Fin 2) :
           EuclideanSpace.basisFun (Fin 2) ℂ j'⟩ : LeptonDoublet)
 ```
 
-**`StandardModel.LeptonDoublet.repGaugeGroupI_eq_iff_mul_eq`**, a lemma, [line 189](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/Particles/StandardModel/Fermions/LeptonDoublet.lean#L189).
+**`StandardModel.LeptonDoublet.repGaugeGroupI_eq_iff_mul_eq`**, a lemma, [line 189](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Particles/StandardModel/Fermions/LeptonDoublet.lean#L189).
 
 > Two gauge elements induce the same action exactly when their weak-basis coefficients agree.
 
@@ -180,7 +180,7 @@ lemma repGaugeGroupI_eq_iff_mul_eq {g₁ g₂ : GaugeGroupI} :
 > `U(1)` phase. Its colour component is unrestricted because the lepton doublet is an
 > `SU(3)` singlet.
 
-**`StandardModel.LeptonDoublet.mem_repGaugeGroupI_ker_iff_eq`**, a lemma, [line 227](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/Particles/StandardModel/Fermions/LeptonDoublet.lean#L227).
+**`StandardModel.LeptonDoublet.mem_repGaugeGroupI_ker_iff_eq`**, a lemma, [line 227](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Particles/StandardModel/Fermions/LeptonDoublet.lean#L227).
 
 > Characterizes the full-group elements acting trivially on the lepton doublet.
 
@@ -196,7 +196,7 @@ lemma mem_repGaugeGroupI_ker_iff_eq {g : GaugeGroupI} :
 > kernel. For the central `ℤ₆`, the weak central phase and charge `-3` phase combine to a
 > sixth power and therefore act trivially.
 
-**`StandardModel.LeptonDoublet.gaugeGroup_subgroup_ℤ₆_le_ker_repGaugeGroupI`**, a lemma, [line 269](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/Particles/StandardModel/Fermions/LeptonDoublet.lean#L269).
+**`StandardModel.LeptonDoublet.gaugeGroup_subgroup_ℤ₆_le_ker_repGaugeGroupI`**, a lemma, [line 269](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Particles/StandardModel/Fermions/LeptonDoublet.lean#L269).
 
 > The central `ℤ₆` subgroup acts trivially on `(1, 2)_{-3}`.
 
@@ -205,7 +205,7 @@ lemma gaugeGroup_subgroup_ℤ₆_le_ker_repGaugeGroupI :
     GaugeGroupQuot.subgroup .ℤ₆ ≤ repGaugeGroupI.ker
 ```
 
-**`StandardModel.LeptonDoublet.gaugeGroup_subgroup_le_ker_repGaugeGroupI`**, a lemma, [line 283](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/Particles/StandardModel/Fermions/LeptonDoublet.lean#L283).
+**`StandardModel.LeptonDoublet.gaugeGroup_subgroup_le_ker_repGaugeGroupI`**, a lemma, [line 283](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Particles/StandardModel/Fermions/LeptonDoublet.lean#L283).
 
 > Every supported quotient subgroup acts trivially on the lepton doublet.
 
@@ -214,7 +214,7 @@ lemma gaugeGroup_subgroup_le_ker_repGaugeGroupI (Q : GaugeGroupQuot) :
     Q.subgroup ≤ repGaugeGroupI.ker
 ```
 
-**`StandardModel.LeptonDoublet.repGaugeGroup`**, a def, [line 289](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/Particles/StandardModel/Fermions/LeptonDoublet.lean#L289).
+**`StandardModel.LeptonDoublet.repGaugeGroup`**, a def, [line 289](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Particles/StandardModel/Fermions/LeptonDoublet.lean#L289).
 
 > The `(1, 2)_{-3}` representation for every supported global form of the
 > Standard Model gauge group.
@@ -231,4 +231,4 @@ noncomputable def repGaugeGroup : (Q : GaugeGroupQuot) →
 
 ## Sources
 
-- [Physlib/Particles/StandardModel/Fermions/LeptonDoublet.lean at 2a1dfe43](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/Particles/StandardModel/Fermions/LeptonDoublet.lean)
+- [Physlib/Particles/StandardModel/Fermions/LeptonDoublet.lean at 8c87bdfb](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Particles/StandardModel/Fermions/LeptonDoublet.lean)

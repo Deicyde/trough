@@ -8,7 +8,7 @@ proof: formalized
 
 # The transformation law of the bosonic generators
 
-The module `PhyslibAlpha.Particles.StandardModel.Matter.Bosonic.TransformsIn`, [PhyslibAlpha/Particles/StandardModel/Matter/Bosonic/TransformsIn.lean](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/Matter/Bosonic/TransformsIn.lean): 4 declarations, 4 with a docstring; 2 private, not shown.
+The module `PhyslibAlpha.Particles.StandardModel.Matter.Bosonic.TransformsIn`, [PhyslibAlpha/Particles/StandardModel/Matter/Bosonic/TransformsIn.lean](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/Matter/Bosonic/TransformsIn.lean): 4 declarations, 4 with a docstring; 2 private, not shown.
 
 ## i. Overview
 
@@ -50,7 +50,7 @@ The module `PhyslibAlpha.Particles.StandardModel.Matter.Bosonic.TransformsIn`, [
 
 ### B.1. The field
 
-**`StandardModel.BosonicAlgebra.repJetGaugeGroupI_iteratedJetDeriv_ofField`**, a lemma, [line 119](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/Matter/Bosonic/TransformsIn.lean#L119).
+**`StandardModel.BosonicAlgebra.repJetGaugeGroupI_iteratedJetDeriv_ofField`**, a lemma, [line 119](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/Matter/Bosonic/TransformsIn.lean#L119).
 
 > The transformation law of the derivative generators of a matter field: a jet of gauge
 > transformations mixes `∂_s ψ_φ` with the lower generators, each splitting `s = s₁ + s₂` of
@@ -67,7 +67,7 @@ lemma repJetGaugeGroupI_iteratedJetDeriv_ofField
           (ofField (GaugeAlgebraRealization.repDualCoeff M.repJet U⁻¹ p.1 φ))).sum
 ```
 
-**`StandardModel.BosonicAlgebra.transformsIn_iteratedJetDeriv_ofField`**, a lemma, [line 139](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/Matter/Bosonic/TransformsIn.lean#L139).
+**`StandardModel.BosonicAlgebra.transformsIn_iteratedJetDeriv_ofField`**, a lemma, [line 139](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/Matter/Bosonic/TransformsIn.lean#L139).
 
 > The derivative generators of a matter field transform in the representation `rep`
 > carried by its jets, in the sense demanded by `LocalGaugeData.TransformsIn`.
@@ -80,7 +80,7 @@ lemma transformsIn_iteratedJetDeriv_ofField :
 
 ### B.2. The conjugate field
 
-**`StandardModel.BosonicAlgebra.repJetGaugeGroupI_iteratedJetDeriv_ofConjField`**, a lemma, [line 154](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/Matter/Bosonic/TransformsIn.lean#L154).
+**`StandardModel.BosonicAlgebra.repJetGaugeGroupI_iteratedJetDeriv_ofConjField`**, a lemma, [line 154](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/Matter/Bosonic/TransformsIn.lean#L154).
 
 > The transformation law of the derivative generators of the conjugate matter field. It
 > is the law of the field itself for the conjugate action `JetComponentSpace.repConj M.repJet` on
@@ -99,7 +99,7 @@ lemma repJetGaugeGroupI_iteratedJetDeriv_ofConjField
               φ))).sum
 ```
 
-**`StandardModel.BosonicAlgebra.transformsIn_iteratedJetDeriv_ofConjField`**, a lemma, [line 179](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/Matter/Bosonic/TransformsIn.lean#L179).
+**`StandardModel.BosonicAlgebra.transformsIn_iteratedJetDeriv_ofConjField`**, a lemma, [line 179](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/Matter/Bosonic/TransformsIn.lean#L179).
 
 > The derivative generators of the conjugate matter field transform in the conjugate
 > representation `JetComponentSpace.repConj M.repJet`, in the sense demanded by
@@ -122,4 +122,4 @@ lemma transformsIn_iteratedJetDeriv_ofConjField :
 
 ## Sources
 
-- [PhyslibAlpha/Particles/StandardModel/Matter/Bosonic/TransformsIn.lean at 2a1dfe43](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/Matter/Bosonic/TransformsIn.lean)
+- [PhyslibAlpha/Particles/StandardModel/Matter/Bosonic/TransformsIn.lean at 8c87bdfb](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/Matter/Bosonic/TransformsIn.lean)

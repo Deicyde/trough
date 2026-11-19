@@ -8,9 +8,9 @@ proof: formalized
 
 # QuantumInfo.States.Mixed.Fidelity
 
-The module `QuantumInfo.States.Mixed.Fidelity`, [QuantumInfo/States/Mixed/Fidelity.lean](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/QuantumInfo/States/Mixed/Fidelity.lean): 8 declarations, 6 with a docstring, 4 listed as significant.
+The module `QuantumInfo.States.Mixed.Fidelity`, [QuantumInfo/States/Mixed/Fidelity.lean](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/QuantumInfo/States/Mixed/Fidelity.lean): 8 declarations, 6 with a docstring, 4 listed as significant.
 
-**`MState.fidelity`**, a def, [line 25](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/QuantumInfo/States/Mixed/Fidelity.lean#L25).
+**`MState.fidelity`**, a def, [line 25](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/QuantumInfo/States/Mixed/Fidelity.lean#L25).
 
 > The fidelity of two quantum states. This is the quantum version of the Bhattacharyya
 > coefficient.
@@ -19,19 +19,19 @@ The module `QuantumInfo.States.Mixed.Fidelity`, [QuantumInfo/States/Mixed/Fideli
 def fidelity (ρ σ : MState d) : ℝ
 ```
 
-**`MState.fidelity_ge_zero`**, a lemma, [line 28](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/QuantumInfo/States/Mixed/Fidelity.lean#L28).
+**`MState.fidelity_ge_zero`**, a lemma, [line 28](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/QuantumInfo/States/Mixed/Fidelity.lean#L28).
 
 ```lean
 lemma fidelity_ge_zero : 0 ≤ fidelity ρ σ
 ```
 
-**`MState.fidelity_le_one`**, a lemma, [line 32](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/QuantumInfo/States/Mixed/Fidelity.lean#L32).
+**`MState.fidelity_le_one`**, a lemma, [line 32](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/QuantumInfo/States/Mixed/Fidelity.lean#L32).
 
 ```lean
 lemma fidelity_le_one : fidelity ρ σ ≤ 1
 ```
 
-**`MState.fidelity_prob`**, a def, [line 51](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/QuantumInfo/States/Mixed/Fidelity.lean#L51).
+**`MState.fidelity_prob`**, a def, [line 51](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/QuantumInfo/States/Mixed/Fidelity.lean#L51).
 
 > The fidelity, as a `Prob` probability with value between 0 and 1.
 
@@ -39,7 +39,7 @@ lemma fidelity_le_one : fidelity ρ σ ≤ 1
 def fidelity_prob : Prob
 ```
 
-**`MState.fidelity_self_eq_one`**, a theorem, [line 55](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/QuantumInfo/States/Mixed/Fidelity.lean#L55). Listed as a significant result in [Theorems.txt](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/scripts/lint/exemptions/Theorems.txt).
+**`MState.fidelity_self_eq_one`**, a theorem, [line 55](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/QuantumInfo/States/Mixed/Fidelity.lean#L55). Listed as a significant result in [Theorems.txt](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/scripts/lint/exemptions/Theorems.txt).
 
 > A state has perfect fidelity with itself.
 
@@ -47,7 +47,7 @@ def fidelity_prob : Prob
 theorem fidelity_self_eq_one : fidelity ρ ρ = 1
 ```
 
-**`MState.fidelity_eq_traceNorm_sqrt_mul_sqrt`**, a theorem, [line 70](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/QuantumInfo/States/Mixed/Fidelity.lean#L70). Listed as a significant result in [Theorems.txt](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/scripts/lint/exemptions/Theorems.txt).
+**`MState.fidelity_eq_traceNorm_sqrt_mul_sqrt`**, a theorem, [line 70](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/QuantumInfo/States/Mixed/Fidelity.lean#L70). Listed as a significant result in [Theorems.txt](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/scripts/lint/exemptions/Theorems.txt).
 
 > Fidelity can be rewritten as the trace norm of the product of square roots.
 
@@ -56,7 +56,7 @@ theorem fidelity_eq_traceNorm_sqrt_mul_sqrt (ρ σ : MState d) :
     fidelity ρ σ = (σ.M.sqrt.mat * ρ.M.sqrt.mat).traceNorm
 ```
 
-**`MState.fidelity_eq_one_iff_self`**, a theorem, [line 82](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/QuantumInfo/States/Mixed/Fidelity.lean#L82). Listed as a significant result in [Theorems.txt](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/scripts/lint/exemptions/Theorems.txt).
+**`MState.fidelity_eq_one_iff_self`**, a theorem, [line 82](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/QuantumInfo/States/Mixed/Fidelity.lean#L82). Listed as a significant result in [Theorems.txt](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/scripts/lint/exemptions/Theorems.txt).
 
 > The fidelity is 1 if and only if the two states are the same.
 
@@ -64,7 +64,7 @@ theorem fidelity_eq_traceNorm_sqrt_mul_sqrt (ρ σ : MState d) :
 theorem fidelity_eq_one_iff_self : fidelity ρ σ = 1 ↔ ρ = σ
 ```
 
-**`MState.fidelity_symm`**, a theorem, [line 116](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/QuantumInfo/States/Mixed/Fidelity.lean#L116). Listed as a significant result in [Theorems.txt](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/scripts/lint/exemptions/Theorems.txt).
+**`MState.fidelity_symm`**, a theorem, [line 116](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/QuantumInfo/States/Mixed/Fidelity.lean#L116). Listed as a significant result in [Theorems.txt](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/scripts/lint/exemptions/Theorems.txt).
 
 > The fidelity is a symmetric quantity.
 
@@ -83,4 +83,4 @@ theorem fidelity_symm : fidelity ρ σ = fidelity σ ρ
 
 ## Sources
 
-- [QuantumInfo/States/Mixed/Fidelity.lean at 2a1dfe43](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/QuantumInfo/States/Mixed/Fidelity.lean)
+- [QuantumInfo/States/Mixed/Fidelity.lean at 8c87bdfb](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/QuantumInfo/States/Mixed/Fidelity.lean)

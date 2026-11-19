@@ -8,7 +8,7 @@ proof: formalized
 
 # The invariants below mass weight eight (IsGaugeSector/MassWeight/MassDimLTEight)
 
-The module `PhyslibAlpha.Particles.StandardModel.IsGaugeSector.MassWeight.MassDimLTEight`, [PhyslibAlpha/Particles/StandardModel/IsGaugeSector/MassWeight/MassDimLTEight.lean](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/IsGaugeSector/MassWeight/MassDimLTEight.lean): 18 declarations, 18 with a docstring.
+The module `PhyslibAlpha.Particles.StandardModel.IsGaugeSector.MassWeight.MassDimLTEight`, [PhyslibAlpha/Particles/StandardModel/IsGaugeSector/MassWeight/MassDimLTEight.lean](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/IsGaugeSector/MassWeight/MassDimLTEight.lean): 18 declarations, 18 with a docstring.
 
 ## i. Overview
 
@@ -58,7 +58,7 @@ The module `PhyslibAlpha.Particles.StandardModel.IsGaugeSector.MassWeight.MassDi
 > symbol evaluated on an arbitrary covector is therefore a combination of the twelve
 > symbols evaluated on those coordinates.
 
-**`StandardModel.IsGaugeSector.F_mem_iSup_span_coord`**, a lemma, [line 102](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/IsGaugeSector/MassWeight/MassDimLTEight.lean#L102).
+**`StandardModel.IsGaugeSector.F_mem_iSup_span_coord`**, a lemma, [line 102](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/IsGaugeSector/MassWeight/MassDimLTEight.lean#L102).
 
 > A field-strength symbol lies in the span of the twelve symbols evaluated on the
 > coordinates of the standard basis of the gauge algebra.
@@ -77,7 +77,7 @@ lemma F_mem_iSup_span_coord {n : ℕ} (l : Fin n → Fin 1 ⊕ Fin 3) (μ ν : F
 > `Lorentz.sum_pi_fin_two` for two indices, turn a sum over tuples into an iterated sum and
 > back.
 
-**`StandardModel.IsGaugeSector.sum_cov_one`**, a lemma, [line 129](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/IsGaugeSector/MassWeight/MassDimLTEight.lean#L129).
+**`StandardModel.IsGaugeSector.sum_cov_one`**, a lemma, [line 129](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/IsGaugeSector/MassWeight/MassDimLTEight.lean#L129).
 
 > A sum over families of one covector index is a single sum.
 
@@ -86,7 +86,7 @@ lemma sum_cov_one {M : Type*} [AddCommMonoid M] (f : (Fin 1 → Fin 1 ⊕ Fin 3)
     ∑ d : Fin 1 → Fin 1 ⊕ Fin 3, f d = ∑ x : Fin 1 ⊕ Fin 3, f ![x]
 ```
 
-**`StandardModel.IsGaugeSector.sum_cov_three`**, a lemma, [line 138](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/IsGaugeSector/MassWeight/MassDimLTEight.lean#L138).
+**`StandardModel.IsGaugeSector.sum_cov_three`**, a lemma, [line 138](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/IsGaugeSector/MassWeight/MassDimLTEight.lean#L138).
 
 > A sum over families of three covector indices is a triple sum.
 
@@ -103,7 +103,7 @@ lemma sum_cov_three {M : Type*} [AddCommMonoid M] (f : (Fin 3 → Fin 1 ⊕ Fin 
 > those indices they are a bi-Lorentz and a triple Lorentz tensor, the transformation law
 > of `IsGaugeSector` moving every index by the Lorentz matrix of the `SL(2,ℂ)` element.
 
-**`StandardModel.IsGaugeSector.isLorentzCovariant_F_underived`**, a lemma, [line 168](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/IsGaugeSector/MassWeight/MassDimLTEight.lean#L168).
+**`StandardModel.IsGaugeSector.isLorentzCovariant_F_underived`**, a lemma, [line 168](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/IsGaugeSector/MassWeight/MassDimLTEight.lean#L168).
 
 > An underived field-strength symbol, viewed as a family indexed by its two covector
 > indices, is a bi-Lorentz tensor.
@@ -114,7 +114,7 @@ lemma isLorentzCovariant_F_underived (φ : Module.Dual ℝ GaugeAlgebra) :
       (ofComponents fun d : Fin 2 → Fin 1 ⊕ Fin 3 => F ![] (d 0) (d 1) φ)
 ```
 
-**`StandardModel.IsGaugeSector.isLorentzCovariant_F_deriv_one`**, a lemma, [line 186](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/IsGaugeSector/MassWeight/MassDimLTEight.lean#L186).
+**`StandardModel.IsGaugeSector.isLorentzCovariant_F_deriv_one`**, a lemma, [line 186](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/IsGaugeSector/MassWeight/MassDimLTEight.lean#L186).
 
 > A once-derived field-strength symbol, viewed as a family indexed by its derivative
 > slot and its two covector indices, is a triple Lorentz tensor.
@@ -132,7 +132,7 @@ lemma isLorentzCovariant_F_deriv_one (φ : Module.Dual ℝ GaugeAlgebra) :
 > antisymmetric in its two indices has every diagonal component equal to its own negative,
 > hence zero, and the trace vanishes with them.
 
-**`StandardModel.IsGaugeSector.ofComponents_metric_eq_zero_of_antisymm`**, a lemma, [line 213](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/IsGaugeSector/MassWeight/MassDimLTEight.lean#L213).
+**`StandardModel.IsGaugeSector.ofComponents_metric_eq_zero_of_antisymm`**, a lemma, [line 213](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/IsGaugeSector/MassWeight/MassDimLTEight.lean#L213).
 
 > The metric trace of a bi-Lorentz family antisymmetric in its two indices vanishes:
 > the metric is diagonal, and the diagonal components of such a family are zero.
@@ -152,7 +152,7 @@ lemma ofComponents_metric_eq_zero_of_antisymm {T : (Fin 2 → Fin 1 ⊕ Fin 3) �
 > Lorentz stable, so `ReducesInvariantsTo.biSup` combines these reductions over a finite
 > join of them.
 
-**`StandardModel.IsGaugeSector.mem_of_lorentz_invariant_biSup_rankTwo_span`**, a lemma, [line 249](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/IsGaugeSector/MassWeight/MassDimLTEight.lean#L249).
+**`StandardModel.IsGaugeSector.mem_of_lorentz_invariant_biSup_rankTwo_span`**, a lemma, [line 249](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/IsGaugeSector/MassWeight/MassDimLTEight.lean#L249).
 
 > A finite join of the spans of bi-Lorentz families with vanishing metric traces carries
 > no Lorentz invariant modulo a Lorentz-stable submodule: a Lorentz invariant of the join
@@ -169,7 +169,7 @@ lemma mem_of_lorentz_invariant_biSup_rankTwo_span {ι : Type} [DecidableEq ι]
     (hinv : ∀ g : SL(2,ℂ), repLorentz g x = x) : x ∈ S
 ```
 
-**`StandardModel.IsGaugeSector.mem_of_lorentz_invariant_biSup_rankThree_span`**, a lemma, [line 266](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/IsGaugeSector/MassWeight/MassDimLTEight.lean#L266).
+**`StandardModel.IsGaugeSector.mem_of_lorentz_invariant_biSup_rankThree_span`**, a lemma, [line 266](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/IsGaugeSector/MassWeight/MassDimLTEight.lean#L266).
 
 > A finite join of the spans of triple Lorentz families carries no Lorentz invariant
 > modulo a Lorentz-stable submodule: three covector indices carry no invariant contraction
@@ -185,7 +185,7 @@ lemma mem_of_lorentz_invariant_biSup_rankThree_span {ι : Type} [DecidableEq ι]
     (hinv : ∀ g : SL(2,ℂ), repLorentz g x = x) : x ∈ S
 ```
 
-**`StandardModel.IsGaugeSector.iSup_eq_biSup_univ`**, a lemma, [line 277](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/IsGaugeSector/MassWeight/MassDimLTEight.lean#L277).
+**`StandardModel.IsGaugeSector.iSup_eq_biSup_univ`**, a lemma, [line 277](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/IsGaugeSector/MassWeight/MassDimLTEight.lean#L277).
 
 > A join over a finite index type is the join over its universal finite set.
 
@@ -202,7 +202,7 @@ lemma iSup_eq_biSup_univ {ι : Type} [Fintype ι] (f : ι → Submodule ℂ B) :
 > the twelve spans off and leaves nothing behind. No gauge hypothesis enters: the vanishing
 > holds at the colour and isospin directions just as at the hypercharge one.
 
-**`StandardModel.IsGaugeSector.ofComponents_F_underived_metric_eq_zero`**, a lemma, [line 295](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/IsGaugeSector/MassWeight/MassDimLTEight.lean#L295).
+**`StandardModel.IsGaugeSector.ofComponents_F_underived_metric_eq_zero`**, a lemma, [line 295](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/IsGaugeSector/MassWeight/MassDimLTEight.lean#L295).
 
 > The metric trace of the underived field-strength symbols at a fixed direction of the
 > gauge algebra vanishes, the symbol being antisymmetric in its two covector indices.
@@ -212,7 +212,7 @@ lemma ofComponents_F_underived_metric_eq_zero (φ : Module.Dual ℝ GaugeAlgebra
     ofComponents (fun d : Fin 2 → Fin 1 ⊕ Fin 3 => F ![] (d 0) (d 1) φ) RankTwo.metric = 0
 ```
 
-**`StandardModel.IsGaugeSector.derivSubmodule_zero_le_iSup_span`**, a lemma, [line 305](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/IsGaugeSector/MassWeight/MassDimLTEight.lean#L305).
+**`StandardModel.IsGaugeSector.derivSubmodule_zero_le_iSup_span`**, a lemma, [line 305](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/IsGaugeSector/MassWeight/MassDimLTEight.lean#L305).
 
 > The underived field strengths lie in the join, over the twelve directions of the
 > standard basis of the gauge algebra, of the spans of the bi-Lorentz families they
@@ -225,7 +225,7 @@ lemma derivSubmodule_zero_le_iSup_span :
         F ![] (d 0) (d 1) (GaugeAlgebra.stdBasis.coord c))
 ```
 
-**`StandardModel.IsGaugeSector.mem_of_lorentz_invariant_massWeightSubmodule_four_sup`**, a lemma, [line 327](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/IsGaugeSector/MassWeight/MassDimLTEight.lean#L327).
+**`StandardModel.IsGaugeSector.mem_of_lorentz_invariant_massWeightSubmodule_four_sup`**, a lemma, [line 327](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/IsGaugeSector/MassWeight/MassDimLTEight.lean#L327).
 
 > Mass weight four carries no Lorentz invariant modulo a Lorentz-stable submodule: a
 > Lorentz invariant of `massWeightSubmodule 4 ⊔ S` lies in `S`.
@@ -244,7 +244,7 @@ lemma mem_of_lorentz_invariant_massWeightSubmodule_four_sup (S : Submodule ℂ B
 > all, so the rank-three classification needs no antisymmetry and no gauge input either: the
 > twelve spans peel off and the invariant is left in `S`.
 
-**`StandardModel.IsGaugeSector.etaExpand_cov_one`**, a lemma, [line 351](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/IsGaugeSector/MassWeight/MassDimLTEight.lean#L351).
+**`StandardModel.IsGaugeSector.etaExpand_cov_one`**, a lemma, [line 351](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/IsGaugeSector/MassWeight/MassDimLTEight.lean#L351).
 
 > A family of one covector index is the tuple of its own entry.
 
@@ -252,7 +252,7 @@ lemma mem_of_lorentz_invariant_massWeightSubmodule_four_sup (S : Submodule ℂ B
 lemma etaExpand_cov_one (l : Fin 1 → Fin 1 ⊕ Fin 3) : ![l 0] = l
 ```
 
-**`StandardModel.IsGaugeSector.derivSubmodule_one_le_iSup_span`**, a lemma, [line 360](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/IsGaugeSector/MassWeight/MassDimLTEight.lean#L360).
+**`StandardModel.IsGaugeSector.derivSubmodule_one_le_iSup_span`**, a lemma, [line 360](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/IsGaugeSector/MassWeight/MassDimLTEight.lean#L360).
 
 > The once-derived field strengths lie in the join, over the twelve directions of the
 > standard basis of the gauge algebra, of the spans of the triple Lorentz families they
@@ -265,7 +265,7 @@ lemma derivSubmodule_one_le_iSup_span :
         F ![d 0] (d 1) (d 2) (GaugeAlgebra.stdBasis.coord c))
 ```
 
-**`StandardModel.IsGaugeSector.mem_of_lorentz_invariant_massWeightSubmodule_six_sup`**, a lemma, [line 384](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/IsGaugeSector/MassWeight/MassDimLTEight.lean#L384).
+**`StandardModel.IsGaugeSector.mem_of_lorentz_invariant_massWeightSubmodule_six_sup`**, a lemma, [line 384](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/IsGaugeSector/MassWeight/MassDimLTEight.lean#L384).
 
 > Mass weight six carries no Lorentz invariant modulo a Lorentz-stable submodule: a
 > Lorentz invariant of `massWeightSubmodule 6 ⊔ S` lies in `S`.
@@ -288,7 +288,7 @@ lemma mem_of_lorentz_invariant_massWeightSubmodule_six_sup (S : Submodule ℂ B)
 > `one_le_massWeightSubmodule_zero`, and `1` is fixed by both groups, the two
 > representations being multiplicative, without lying in any given `S`.
 
-**`StandardModel.IsGaugeSector.mem_of_lorentz_invariant_massWeightSubmodule_lt_eight_sup`**, a lemma, [line 416](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/IsGaugeSector/MassWeight/MassDimLTEight.lean#L416).
+**`StandardModel.IsGaugeSector.mem_of_lorentz_invariant_massWeightSubmodule_lt_eight_sup`**, a lemma, [line 416](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/IsGaugeSector/MassWeight/MassDimLTEight.lean#L416).
 
 > Between mass weight zero and mass weight eight there is no Lorentz invariant: a
 > Lorentz invariant of `massWeightSubmodule w ⊔ S` for `0 < w < 8` lies in `S`. The five
@@ -303,7 +303,7 @@ lemma mem_of_lorentz_invariant_massWeightSubmodule_lt_eight_sup (w : ℕ) (hw0 :
     (hinv : ∀ g : SL(2,ℂ), repLorentz g x = x) : x ∈ S
 ```
 
-**`StandardModel.IsGaugeSector.mem_massWeightSubmodule_lt_eight_sup_and_gauge_lorentz_invariant_iff`**, a lemma, [line 439](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/IsGaugeSector/MassWeight/MassDimLTEight.lean#L439).
+**`StandardModel.IsGaugeSector.mem_massWeightSubmodule_lt_eight_sup_and_gauge_lorentz_invariant_iff`**, a lemma, [line 439](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/IsGaugeSector/MassWeight/MassDimLTEight.lean#L439).
 
 > The classification below mass weight eight as an equivalence, in the shape of
 > `mem_massWeightSubmodule_eight_sup_and_gauge_lorentz_invariant_iff`: an element of
@@ -326,7 +326,7 @@ lemma mem_massWeightSubmodule_lt_eight_sup_and_gauge_lorentz_invariant_iff (w : 
           ∧ x = y
 ```
 
-**`StandardModel.IsGaugeSector.mem_massWeightSubmodule_lt_eight_sup_and_gauge_lorentz_invariant_iff_mem`**, a lemma, [line 457](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/IsGaugeSector/MassWeight/MassDimLTEight.lean#L457).
+**`StandardModel.IsGaugeSector.mem_massWeightSubmodule_lt_eight_sup_and_gauge_lorentz_invariant_iff_mem`**, a lemma, [line 457](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/IsGaugeSector/MassWeight/MassDimLTEight.lean#L457).
 
 > The same classification without the existential: below mass weight eight an element
 > of `massWeightSubmodule w ⊔ S` fixed by both groups is an element of `S` fixed by both
@@ -353,4 +353,4 @@ lemma mem_massWeightSubmodule_lt_eight_sup_and_gauge_lorentz_invariant_iff_mem (
 
 ## Sources
 
-- [PhyslibAlpha/Particles/StandardModel/IsGaugeSector/MassWeight/MassDimLTEight.lean at 2a1dfe43](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/IsGaugeSector/MassWeight/MassDimLTEight.lean)
+- [PhyslibAlpha/Particles/StandardModel/IsGaugeSector/MassWeight/MassDimLTEight.lean at 8c87bdfb](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/IsGaugeSector/MassWeight/MassDimLTEight.lean)

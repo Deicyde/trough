@@ -8,7 +8,7 @@ proof: formalized
 
 # Canonical Ensemble: Thermodynamic Identities and Relations
 
-The module `Physlib.StatisticalMechanics.CanonicalEnsemble.Lemmas`, [Physlib/StatisticalMechanics/CanonicalEnsemble/Lemmas.lean](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/StatisticalMechanics/CanonicalEnsemble/Lemmas.lean): 26 declarations, 25 with a docstring, 5 listed as significant.
+The module `Physlib.StatisticalMechanics.CanonicalEnsemble.Lemmas`, [Physlib/StatisticalMechanics/CanonicalEnsemble/Lemmas.lean](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/StatisticalMechanics/CanonicalEnsemble/Lemmas.lean): 26 declarations, 25 with a docstring, 5 listed as significant.
 
 > This file develops relations between the *mathematical* objects defined in
 > `Basic.lean` and the *physical* thermodynamic quantities, together with
@@ -52,7 +52,7 @@ The module `Physlib.StatisticalMechanics.CanonicalEnsemble.Lemmas`, [Physlib/Sta
 > * Same references as `Basic.lean`, especially the identities `F = U - T S` and
 >   `U = -∂_β log Z`. [ref: tong\_statistical\_physics]
 
-**`CanonicalEnsemble.mathematicalHelmholtzFreeEnergy`**, a def, [line 71](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/StatisticalMechanics/CanonicalEnsemble/Lemmas.lean#L71).
+**`CanonicalEnsemble.mathematicalHelmholtzFreeEnergy`**, a def, [line 71](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/StatisticalMechanics/CanonicalEnsemble/Lemmas.lean#L71).
 
 > An intermediate potential defined from the mathematical partition function. See
 > `helmholtzFreeEnergy` for the physical thermodynamic quantity.
@@ -61,7 +61,7 @@ The module `Physlib.StatisticalMechanics.CanonicalEnsemble.Lemmas`, [Physlib/Sta
 noncomputable def mathematicalHelmholtzFreeEnergy (T : Temperature) : ℝ
 ```
 
-**`CanonicalEnsemble.helmholtzFreeEnergy_eq_helmholtzMathematicalFreeEnergy_add_correction`**, a lemma, [line 75](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/StatisticalMechanics/CanonicalEnsemble/Lemmas.lean#L75).
+**`CanonicalEnsemble.helmholtzFreeEnergy_eq_helmholtzMathematicalFreeEnergy_add_correction`**, a lemma, [line 75](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/StatisticalMechanics/CanonicalEnsemble/Lemmas.lean#L75).
 
 > The relationship between the physical Helmholtz Free Energy and the Helmholtz Potential.
 
@@ -72,7 +72,7 @@ lemma helmholtzFreeEnergy_eq_helmholtzMathematicalFreeEnergy_add_correction (T :
       (kB : ℝ) * T.val * 𝓒.dof * Real.log (𝓒.phaseSpaceunit)
 ```
 
-**`CanonicalEnsemble.differentialEntropy_eq_kB_beta_meanEnergy_add_kB_log_mathZ`**, a lemma, [line 85](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/StatisticalMechanics/CanonicalEnsemble/Lemmas.lean#L85).
+**`CanonicalEnsemble.differentialEntropy_eq_kB_beta_meanEnergy_add_kB_log_mathZ`**, a lemma, [line 85](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/StatisticalMechanics/CanonicalEnsemble/Lemmas.lean#L85).
 
 > General identity: S\_diff = kB β ⟨E⟩ + kB log Z\_math.
 > This connects the differential entropy to the mean energy and the mathematical partition function.
@@ -86,7 +86,7 @@ lemma differentialEntropy_eq_kB_beta_meanEnergy_add_kB_log_mathZ
       (kB : ℝ) * Real.log (𝓒.mathematicalPartitionFunction kB T)
 ```
 
-**`CanonicalEnsemble.log_probability`**, a lemma, [line 101](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/StatisticalMechanics/CanonicalEnsemble/Lemmas.lean#L101).
+**`CanonicalEnsemble.log_probability`**, a lemma, [line 101](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/StatisticalMechanics/CanonicalEnsemble/Lemmas.lean#L101).
 
 > Pointwise logarithm of the Boltzmann probability.
 
@@ -98,7 +98,7 @@ lemma log_probability
       = - (β kB T) * 𝓒.energy i - Real.log (𝓒.mathematicalPartitionFunction kB T)
 ```
 
-**`CanonicalEnsemble.kB_mul_beta`**, a lemma, [line 112](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/StatisticalMechanics/CanonicalEnsemble/Lemmas.lean#L112).
+**`CanonicalEnsemble.kB_mul_beta`**, a lemma, [line 112](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/StatisticalMechanics/CanonicalEnsemble/Lemmas.lean#L112).
 
 > Auxiliary identity: `kB · β = 1 / T`.
 > `β` is defined as `1 / (kB · T)` (see `Temperature.β`).
@@ -108,7 +108,7 @@ lemma kB_mul_beta (T : Temperature) (hT : 0 < T.val) :
     (kB : ℝ) * (T.β kB : ℝ) = 1 / T.val
 ```
 
-**`CanonicalEnsemble.thermodynamicEntropy_eq_differentialEntropy_sub_correction`**, a lemma, [line 121](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/StatisticalMechanics/CanonicalEnsemble/Lemmas.lean#L121).
+**`CanonicalEnsemble.thermodynamicEntropy_eq_differentialEntropy_sub_correction`**, a lemma, [line 121](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/StatisticalMechanics/CanonicalEnsemble/Lemmas.lean#L121).
 
 > Fundamental relation between thermodynamic and differential entropy:
 > `S_thermo = S_diff - kB * dof * log h`.
@@ -123,7 +123,7 @@ lemma thermodynamicEntropy_eq_differentialEntropy_sub_correction
         - (kB : ℝ) * 𝓒.dof * Real.log 𝓒.phaseSpaceunit
 ```
 
-**`CanonicalEnsemble.thermodynamicEntropy_eq_differentialEntropy_of_dof_zero`**, a lemma, [line 142](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/StatisticalMechanics/CanonicalEnsemble/Lemmas.lean#L142).
+**`CanonicalEnsemble.thermodynamicEntropy_eq_differentialEntropy_of_dof_zero`**, a lemma, [line 142](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/StatisticalMechanics/CanonicalEnsemble/Lemmas.lean#L142).
 
 > No semiclassical correction when `dof = 0`.
 
@@ -135,7 +135,7 @@ lemma thermodynamicEntropy_eq_differentialEntropy_of_dof_zero
     𝓒.thermodynamicEntropy kB T = 𝓒.differentialEntropy kB T
 ```
 
-**`CanonicalEnsemble.thermodynamicEntropy_eq_differentialEntropy_of_phase_space_unit_one`**, a lemma, [line 151](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/StatisticalMechanics/CanonicalEnsemble/Lemmas.lean#L151).
+**`CanonicalEnsemble.thermodynamicEntropy_eq_differentialEntropy_of_phase_space_unit_one`**, a lemma, [line 151](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/StatisticalMechanics/CanonicalEnsemble/Lemmas.lean#L151).
 
 > No semiclassical correction when `phase_space_unit = 1`.
 
@@ -149,7 +149,7 @@ lemma thermodynamicEntropy_eq_differentialEntropy_of_phase_space_unit_one
 
 ## The Fundamental Thermodynamic Identity
 
-**`CanonicalEnsemble.helmholtzFreeEnergy_eq_meanEnergy_sub_temp_mul_thermodynamicEntropy`**, a theorem, [line 174](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/StatisticalMechanics/CanonicalEnsemble/Lemmas.lean#L174). Listed as a significant result in [Theorems.txt](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/scripts/lint/exemptions/Theorems.txt).
+**`CanonicalEnsemble.helmholtzFreeEnergy_eq_meanEnergy_sub_temp_mul_thermodynamicEntropy`**, a theorem, [line 174](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/StatisticalMechanics/CanonicalEnsemble/Lemmas.lean#L174). Listed as a significant result in [Theorems.txt](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/scripts/lint/exemptions/Theorems.txt).
 
 > The Helmholtz free energy `F` is related to the mean energy `U` and the absolute
 > thermodynamic entropy `S` by the identity `F = U - TS`. This theorem shows that the
@@ -165,7 +165,7 @@ theorem helmholtzFreeEnergy_eq_meanEnergy_sub_temp_mul_thermodynamicEntropy
       = 𝓒.meanEnergy kB T - T.val * 𝓒.thermodynamicEntropy kB T
 ```
 
-**`CanonicalEnsemble.differentialEntropy_eq_meanEnergy_sub_helmholtz_div_temp_add_correction`**, a theorem, [line 198](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/StatisticalMechanics/CanonicalEnsemble/Lemmas.lean#L198). Listed as a significant result in [Theorems.txt](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/scripts/lint/exemptions/Theorems.txt).
+**`CanonicalEnsemble.differentialEntropy_eq_meanEnergy_sub_helmholtz_div_temp_add_correction`**, a theorem, [line 198](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/StatisticalMechanics/CanonicalEnsemble/Lemmas.lean#L198). Listed as a significant result in [Theorems.txt](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/scripts/lint/exemptions/Theorems.txt).
 
 > **Theorem: Helmholtz identity with semi–classical correction term**.
 > Physical identity (always true for `T > 0`) :
@@ -189,7 +189,7 @@ theorem differentialEntropy_eq_meanEnergy_sub_helmholtz_div_temp_add_correction
         + (kB : ℝ) * 𝓒.dof * Real.log 𝓒.phaseSpaceunit
 ```
 
-**`CanonicalEnsemble.differentialEntropy_eq_meanEnergy_sub_helmholtz_div_temp`**, a lemma, [line 216](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/StatisticalMechanics/CanonicalEnsemble/Lemmas.lean#L216).
+**`CanonicalEnsemble.differentialEntropy_eq_meanEnergy_sub_helmholtz_div_temp`**, a lemma, [line 216](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/StatisticalMechanics/CanonicalEnsemble/Lemmas.lean#L216).
 
 > Discrete / normalized specialization of the previous theorem.
 > If either `dof = 0` (no semiclassical correction) or `phaseSpaceUnit = 1`
@@ -207,7 +207,7 @@ lemma differentialEntropy_eq_meanEnergy_sub_helmholtz_div_temp
       = (𝓒.meanEnergy kB T - 𝓒.helmholtzFreeEnergy kB T) / T.val
 ```
 
-**`CanonicalEnsemble.hasDerivWithinAt_log_comp`**, a lemma, [line 230](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/StatisticalMechanics/CanonicalEnsemble/Lemmas.lean#L230).
+**`CanonicalEnsemble.hasDerivWithinAt_log_comp`**, a lemma, [line 230](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/StatisticalMechanics/CanonicalEnsemble/Lemmas.lean#L230).
 
 > Chain rule convenience lemma for `log ∘ f` on a set.
 
@@ -218,7 +218,7 @@ lemma hasDerivWithinAt_log_comp
     HasDerivWithinAt (fun t => Real.log (f t)) ((f x)⁻¹ * f') s x
 ```
 
-**`CanonicalEnsemble.hasDerivWithinAt_log_comp'`**, a lemma, [line 237](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/StatisticalMechanics/CanonicalEnsemble/Lemmas.lean#L237).
+**`CanonicalEnsemble.hasDerivWithinAt_log_comp'`**, a lemma, [line 237](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/StatisticalMechanics/CanonicalEnsemble/Lemmas.lean#L237).
 
 > A version rewriting the derivative value with `1 / f x`.
 
@@ -230,7 +230,7 @@ lemma hasDerivWithinAt_log_comp'
       ((1 / f x) * f') s x
 ```
 
-**`CanonicalEnsemble.integral_bolt_eq_integral_mul_exp`**, a lemma, [line 244](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/StatisticalMechanics/CanonicalEnsemble/Lemmas.lean#L244).
+**`CanonicalEnsemble.integral_bolt_eq_integral_mul_exp`**, a lemma, [line 244](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/StatisticalMechanics/CanonicalEnsemble/Lemmas.lean#L244).
 
 ```lean
 lemma integral_bolt_eq_integral_mul_exp
@@ -240,7 +240,7 @@ lemma integral_bolt_eq_integral_mul_exp
       = ∫ x, φ x * Real.exp (-T.β kB * 𝓒.energy x) ∂ 𝓒.μ
 ```
 
-**`CanonicalEnsemble.integral_energy_bolt`**, a lemma, [line 259](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/StatisticalMechanics/CanonicalEnsemble/Lemmas.lean#L259).
+**`CanonicalEnsemble.integral_energy_bolt`**, a lemma, [line 259](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/StatisticalMechanics/CanonicalEnsemble/Lemmas.lean#L259).
 
 > A specialization of `integral_bolt_eq_integral_mul_exp`
 > to the energy observable.
@@ -252,7 +252,7 @@ lemma integral_energy_bolt
       = ∫ x, 𝓒.energy x * Real.exp (-T.β kB * 𝓒.energy x) ∂ 𝓒.μ
 ```
 
-**`CanonicalEnsemble.meanEnergy_eq_ratio_of_integrals`**, a lemma, [line 266](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/StatisticalMechanics/CanonicalEnsemble/Lemmas.lean#L266).
+**`CanonicalEnsemble.meanEnergy_eq_ratio_of_integrals`**, a lemma, [line 266](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/StatisticalMechanics/CanonicalEnsemble/Lemmas.lean#L266).
 
 > The mean energy can be expressed as a ratio of integrals.
 
@@ -264,7 +264,7 @@ lemma meanEnergy_eq_ratio_of_integrals
         (∫ i, Real.exp (- T.β kB * 𝓒.energy i) ∂ 𝓒.μ)
 ```
 
-**`CanonicalEnsemble.meanEnergy_eq_neg_deriv_log_mathZ_of_beta`**, a lemma, [line 282](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/StatisticalMechanics/CanonicalEnsemble/Lemmas.lean#L282).
+**`CanonicalEnsemble.meanEnergy_eq_neg_deriv_log_mathZ_of_beta`**, a lemma, [line 282](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/StatisticalMechanics/CanonicalEnsemble/Lemmas.lean#L282).
 
 > The mean energy is the negative derivative of the logarithm of the
 > (mathematical) partition function with respect to β = 1/(kB T).
@@ -287,7 +287,7 @@ lemma meanEnergy_eq_neg_deriv_log_mathZ_of_beta
           (Set.Ioi 0) (T.β kB : ℝ))
 ```
 
-**`CanonicalEnsemble.log_phys_eq_log_math_sub_const_on_Ioi`**, a lemma, [line 321](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/StatisticalMechanics/CanonicalEnsemble/Lemmas.lean#L321).
+**`CanonicalEnsemble.log_phys_eq_log_math_sub_const_on_Ioi`**, a lemma, [line 321](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/StatisticalMechanics/CanonicalEnsemble/Lemmas.lean#L321).
 
 > Helper: equality (on `Set.Ioi 0`) between the β–parametrized logarithm of the
 > physical partition function and the β–parametrized logarithm of the *mathematical*
@@ -311,7 +311,7 @@ lemma log_phys_eq_log_math_sub_const_on_Ioi
       (Set.Ioi (0 : ℝ))
 ```
 
-**`CanonicalEnsemble.derivWithin_log_phys_eq_derivWithin_log_math`**, a lemma, [line 342](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/StatisticalMechanics/CanonicalEnsemble/Lemmas.lean#L342).
+**`CanonicalEnsemble.derivWithin_log_phys_eq_derivWithin_log_math`**, a lemma, [line 342](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/StatisticalMechanics/CanonicalEnsemble/Lemmas.lean#L342).
 
 > Derivative equality needed in `meanEnergy_eq_neg_deriv_log_Z_of_beta`.
 > Adds `h_fin` (finiteness of the Boltzmann measure for every β > 0).
@@ -332,7 +332,7 @@ lemma derivWithin_log_phys_eq_derivWithin_log_math
       (Set.Ioi 0) (T.β kB : ℝ)
 ```
 
-**`CanonicalEnsemble.meanEnergy_eq_neg_deriv_log_Z_of_beta`**, a theorem, [line 362](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/StatisticalMechanics/CanonicalEnsemble/Lemmas.lean#L362). Listed as a significant result in [Theorems.txt](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/scripts/lint/exemptions/Theorems.txt).
+**`CanonicalEnsemble.meanEnergy_eq_neg_deriv_log_Z_of_beta`**, a theorem, [line 362](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/StatisticalMechanics/CanonicalEnsemble/Lemmas.lean#L362). Listed as a significant result in [Theorems.txt](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/scripts/lint/exemptions/Theorems.txt).
 
 > The mean energy can also be expressed as the negative derivative of the logarithm of the
 > *physical* partition function with respect to β. This follows from the fact that the physical and
@@ -359,7 +359,7 @@ theorem meanEnergy_eq_neg_deriv_log_Z_of_beta
 
 ## Fluctuations: variance identity
 
-**`CanonicalEnsemble.energyVariance_eq_meanSquareEnergy_sub_meanEnergy_sq`**, a theorem, [line 387](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/StatisticalMechanics/CanonicalEnsemble/Lemmas.lean#L387). Listed as a significant result in [Theorems.txt](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/scripts/lint/exemptions/Theorems.txt).
+**`CanonicalEnsemble.energyVariance_eq_meanSquareEnergy_sub_meanEnergy_sq`**, a theorem, [line 387](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/StatisticalMechanics/CanonicalEnsemble/Lemmas.lean#L387). Listed as a significant result in [Theorems.txt](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/scripts/lint/exemptions/Theorems.txt).
 
 > The identity Var(E) = ⟨E²⟩ - ⟨E⟩².
 
@@ -373,7 +373,7 @@ theorem energyVariance_eq_meanSquareEnergy_sub_meanEnergy_sq
 
 ## Heat capacity and parametric FDT
 
-**`CanonicalEnsemble.meanEnergyT`**, a def, [line 410](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/StatisticalMechanics/CanonicalEnsemble/Lemmas.lean#L410).
+**`CanonicalEnsemble.meanEnergyT`**, a def, [line 410](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/StatisticalMechanics/CanonicalEnsemble/Lemmas.lean#L410).
 
 > The mean energy as a function of the real-valued temperature t.
 
@@ -381,7 +381,7 @@ theorem energyVariance_eq_meanSquareEnergy_sub_meanEnergy_sq
 noncomputable def meanEnergyT (𝓒 : CanonicalEnsemble ι) (t : ℝ) : ℝ
 ```
 
-**`CanonicalEnsemble.meanEnergyBeta`**, a def, [line 414](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/StatisticalMechanics/CanonicalEnsemble/Lemmas.lean#L414).
+**`CanonicalEnsemble.meanEnergyBeta`**, a def, [line 414](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/StatisticalMechanics/CanonicalEnsemble/Lemmas.lean#L414).
 
 > The mean energy as a function of the real-valued inverse temperature b.
 
@@ -389,7 +389,7 @@ noncomputable def meanEnergyT (𝓒 : CanonicalEnsemble ι) (t : ℝ) : ℝ
 noncomputable def meanEnergyBeta (𝓒 : CanonicalEnsemble ι) (b : ℝ) : ℝ
 ```
 
-**`CanonicalEnsemble.heatCapacity`**, a def, [line 418](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/StatisticalMechanics/CanonicalEnsemble/Lemmas.lean#L418).
+**`CanonicalEnsemble.heatCapacity`**, a def, [line 418](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/StatisticalMechanics/CanonicalEnsemble/Lemmas.lean#L418).
 
 > The heat capacity (at constant volume) C\_V = ∂U/∂T (as a derivWithin on T > 0).
 
@@ -397,7 +397,7 @@ noncomputable def meanEnergyBeta (𝓒 : CanonicalEnsemble ι) (b : ℝ) : ℝ
 noncomputable def heatCapacity (𝓒 : CanonicalEnsemble ι) (T : Temperature) : ℝ
 ```
 
-**`CanonicalEnsemble.heatCapacity_eq_deriv_meanEnergyBeta`**, a lemma, [line 422](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/StatisticalMechanics/CanonicalEnsemble/Lemmas.lean#L422).
+**`CanonicalEnsemble.heatCapacity_eq_deriv_meanEnergyBeta`**, a lemma, [line 422](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/StatisticalMechanics/CanonicalEnsemble/Lemmas.lean#L422).
 
 > Relates C\_V = dU/dT to dU/dβ. C\_V = dU/dβ * (-1/(kB T²)).
 
@@ -413,7 +413,7 @@ lemma heatCapacity_eq_deriv_meanEnergyBeta
         * (-1 / ((kB : ℝ) * (T.val : ℝ)^2))
 ```
 
-**`CanonicalEnsemble.fluctuation_dissipation_energy_parametric`**, a theorem, [line 442](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/StatisticalMechanics/CanonicalEnsemble/Lemmas.lean#L442). Listed as a significant result in [Theorems.txt](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/scripts/lint/exemptions/Theorems.txt).
+**`CanonicalEnsemble.fluctuation_dissipation_energy_parametric`**, a theorem, [line 442](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/StatisticalMechanics/CanonicalEnsemble/Lemmas.lean#L442). Listed as a significant result in [Theorems.txt](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/scripts/lint/exemptions/Theorems.txt).
 
 > Parametric FDT: C\_V = Var(E)/(kB T²), assuming Var(E) = - dU/dβ.
 
@@ -433,4 +433,4 @@ theorem fluctuation_dissipation_energy_parametric
 
 ## Sources
 
-- [Physlib/StatisticalMechanics/CanonicalEnsemble/Lemmas.lean at 2a1dfe43](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/StatisticalMechanics/CanonicalEnsemble/Lemmas.lean)
+- [Physlib/StatisticalMechanics/CanonicalEnsemble/Lemmas.lean at 8c87bdfb](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/StatisticalMechanics/CanonicalEnsemble/Lemmas.lean)

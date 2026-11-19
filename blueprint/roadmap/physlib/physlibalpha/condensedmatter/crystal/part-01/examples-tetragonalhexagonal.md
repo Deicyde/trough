@@ -8,7 +8,7 @@ proof: formalized
 
 # Tetragonal and hexagonal lattices
 
-The module `PhyslibAlpha.CondensedMatter.Crystal.Examples.TetragonalHexagonal`, [PhyslibAlpha/CondensedMatter/Crystal/Examples/TetragonalHexagonal.lean](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/CondensedMatter/Crystal/Examples/TetragonalHexagonal.lean): 15 declarations, 15 with a docstring.
+The module `PhyslibAlpha.CondensedMatter.Crystal.Examples.TetragonalHexagonal`, [PhyslibAlpha/CondensedMatter/Crystal/Examples/TetragonalHexagonal.lean](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/CondensedMatter/Crystal/Examples/TetragonalHexagonal.lean): 15 declarations, 15 with a docstring.
 
 > The primitive and body-centred tetragonal lattices and the primitive hexagonal lattice, with
 > their embeddings and the bonds of their first neighbour shells.
@@ -44,7 +44,7 @@ The module `PhyslibAlpha.CondensedMatter.Crystal.Examples.TetragonalHexagonal`, 
 
 ## A. Primitive tetragonal lattice
 
-**`CondensedMatter.Crystal.tetragonal`**, a def, [line 63](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/CondensedMatter/Crystal/Examples/TetragonalHexagonal.lean#L63).
+**`CondensedMatter.Crystal.tetragonal`**, a def, [line 63](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/CondensedMatter/Crystal/Examples/TetragonalHexagonal.lean#L63).
 
 > One site per primitive cell of the primitive tetragonal lattice.
 
@@ -52,7 +52,7 @@ The module `PhyslibAlpha.CondensedMatter.Crystal.Examples.TetragonalHexagonal`, 
 def tetragonal
 ```
 
-**`CondensedMatter.Crystal.tetragonalGeometry`**, a def, [line 66](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/CondensedMatter/Crystal/Examples/TetragonalHexagonal.lean#L66).
+**`CondensedMatter.Crystal.tetragonalGeometry`**, a def, [line 66](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/CondensedMatter/Crystal/Examples/TetragonalHexagonal.lean#L66).
 
 > The primitive tetragonal lattice embedded with in-plane length `a` and period `c`.
 
@@ -61,7 +61,7 @@ noncomputable def tetragonalGeometry (a c : ℝ) (ha : 0 < a) (hc : 0 < c) :
     Geometry tetragonal (EuclideanSpace ℝ (Fin 3))
 ```
 
-**`CondensedMatter.Crystal.tetragonalBonds`**, a def, [line 72](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/CondensedMatter/Crystal/Examples/TetragonalHexagonal.lean#L72).
+**`CondensedMatter.Crystal.tetragonalBonds`**, a def, [line 72](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/CondensedMatter/Crystal/Examples/TetragonalHexagonal.lean#L72).
 
 > The bonds of the first three shells for `a < c < a √2`, up to sign: the two in-plane axes,
 > the period, and the two in-plane diagonals.
@@ -70,7 +70,7 @@ noncomputable def tetragonalGeometry (a c : ℝ) (ha : 0 < a) (hc : 0 < c) :
 def tetragonalBonds : List (Bond (Fin 3 → ℤ) Unit)
 ```
 
-**`CondensedMatter.Crystal.tetragonalGraph`**, a def, [line 77](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/CondensedMatter/Crystal/Examples/TetragonalHexagonal.lean#L77).
+**`CondensedMatter.Crystal.tetragonalGraph`**, a def, [line 77](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/CondensedMatter/Crystal/Examples/TetragonalHexagonal.lean#L77).
 
 > The ten-neighbour primitive tetragonal graph.
 
@@ -80,7 +80,7 @@ def tetragonalGraph : PeriodicGraph tetragonal
 
 ## B. Body-centred tetragonal lattice
 
-**`CondensedMatter.Crystal.bodyCentredTetragonal`**, a def, [line 83](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/CondensedMatter/Crystal/Examples/TetragonalHexagonal.lean#L83).
+**`CondensedMatter.Crystal.bodyCentredTetragonal`**, a def, [line 83](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/CondensedMatter/Crystal/Examples/TetragonalHexagonal.lean#L83).
 
 > One site per primitive cell of the body-centred tetragonal lattice.
 
@@ -88,7 +88,7 @@ def tetragonalGraph : PeriodicGraph tetragonal
 def bodyCentredTetragonal
 ```
 
-**`CondensedMatter.Crystal.bodyCentredTetragonalGeometry`**, a def, [line 87](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/CondensedMatter/Crystal/Examples/TetragonalHexagonal.lean#L87).
+**`CondensedMatter.Crystal.bodyCentredTetragonalGeometry`**, a def, [line 87](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/CondensedMatter/Crystal/Examples/TetragonalHexagonal.lean#L87).
 
 > The body-centred tetragonal lattice embedded with in-plane length `a` and period `c`, with
 > the primitive vectors `bccVectors a a c`.
@@ -98,7 +98,7 @@ noncomputable def bodyCentredTetragonalGeometry (a c : ℝ) (ha : 0 < a) (hc : 0
     Geometry bodyCentredTetragonal (EuclideanSpace ℝ (Fin 3))
 ```
 
-**`CondensedMatter.Crystal.bodyCentredTetragonalBonds`**, a def, [line 94](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/CondensedMatter/Crystal/Examples/TetragonalHexagonal.lean#L94).
+**`CondensedMatter.Crystal.bodyCentredTetragonalBonds`**, a def, [line 94](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/CondensedMatter/Crystal/Examples/TetragonalHexagonal.lean#L94).
 
 > The bonds of the first three shells for `a √2 < c < a √6`, up to sign: the four body
 > diagonals, the two in-plane axes and the two in-plane diagonals. In the basis `bccVectors a a c`
@@ -108,7 +108,7 @@ noncomputable def bodyCentredTetragonalGeometry (a c : ℝ) (ha : 0 < a) (hc : 0
 def bodyCentredTetragonalBonds : List (Bond (Fin 3 → ℤ) Unit)
 ```
 
-**`CondensedMatter.Crystal.bodyCentredTetragonalGraph`**, a def, [line 99](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/CondensedMatter/Crystal/Examples/TetragonalHexagonal.lean#L99).
+**`CondensedMatter.Crystal.bodyCentredTetragonalGraph`**, a def, [line 99](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/CondensedMatter/Crystal/Examples/TetragonalHexagonal.lean#L99).
 
 > The sixteen-neighbour body-centred tetragonal graph.
 
@@ -118,7 +118,7 @@ def bodyCentredTetragonalGraph : PeriodicGraph bodyCentredTetragonal
 
 ## C. Primitive hexagonal lattice
 
-**`CondensedMatter.Crystal.hexagonal`**, a def, [line 106](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/CondensedMatter/Crystal/Examples/TetragonalHexagonal.lean#L106).
+**`CondensedMatter.Crystal.hexagonal`**, a def, [line 106](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/CondensedMatter/Crystal/Examples/TetragonalHexagonal.lean#L106).
 
 > One site per primitive cell of the primitive hexagonal lattice.
 
@@ -126,7 +126,7 @@ def bodyCentredTetragonalGraph : PeriodicGraph bodyCentredTetragonal
 def hexagonal
 ```
 
-**`CondensedMatter.Crystal.hexagonalGeometry`**, a def, [line 110](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/CondensedMatter/Crystal/Examples/TetragonalHexagonal.lean#L110).
+**`CondensedMatter.Crystal.hexagonalGeometry`**, a def, [line 110](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/CondensedMatter/Crystal/Examples/TetragonalHexagonal.lean#L110).
 
 > The primitive hexagonal lattice embedded with in-plane length `a` and period `c`, with the
 > primitive vectors `hcpVectors a c`.
@@ -136,7 +136,7 @@ noncomputable def hexagonalGeometry (a c : ℝ) (ha : 0 < a) (hc : 0 < c) :
     Geometry hexagonal (EuclideanSpace ℝ (Fin 3))
 ```
 
-**`CondensedMatter.Crystal.hexagonalBonds`**, a def, [line 117](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/CondensedMatter/Crystal/Examples/TetragonalHexagonal.lean#L117).
+**`CondensedMatter.Crystal.hexagonalBonds`**, a def, [line 117](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/CondensedMatter/Crystal/Examples/TetragonalHexagonal.lean#L117).
 
 > The bonds of the first shells for `c < a √3`, up to sign: three in the plane, at `120°`
 > from each other, and the period.
@@ -145,7 +145,7 @@ noncomputable def hexagonalGeometry (a c : ℝ) (ha : 0 < a) (hc : 0 < c) :
 def hexagonalBonds : List (Bond (Fin 3 → ℤ) Unit)
 ```
 
-**`CondensedMatter.Crystal.hexagonalGraph`**, a def, [line 121](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/CondensedMatter/Crystal/Examples/TetragonalHexagonal.lean#L121).
+**`CondensedMatter.Crystal.hexagonalGraph`**, a def, [line 121](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/CondensedMatter/Crystal/Examples/TetragonalHexagonal.lean#L121).
 
 > The eight-neighbour primitive hexagonal graph.
 
@@ -155,7 +155,7 @@ def hexagonalGraph : PeriodicGraph hexagonal
 
 ## D. Coordination numbers
 
-**`CondensedMatter.Crystal.tetragonal_neighbors_card`**, a lemma, [line 126](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/CondensedMatter/Crystal/Examples/TetragonalHexagonal.lean#L126).
+**`CondensedMatter.Crystal.tetragonal_neighbors_card`**, a lemma, [line 126](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/CondensedMatter/Crystal/Examples/TetragonalHexagonal.lean#L126).
 
 > Each site of the primitive tetragonal lattice has ten neighbours.
 
@@ -164,7 +164,7 @@ lemma tetragonal_neighbors_card (x : tetragonal.Site) :
     (tetragonalGraph.neighbors x).card = 10
 ```
 
-**`CondensedMatter.Crystal.bodyCentredTetragonal_neighbors_card`**, a lemma, [line 134](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/CondensedMatter/Crystal/Examples/TetragonalHexagonal.lean#L134).
+**`CondensedMatter.Crystal.bodyCentredTetragonal_neighbors_card`**, a lemma, [line 134](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/CondensedMatter/Crystal/Examples/TetragonalHexagonal.lean#L134).
 
 > Each site of the body-centred tetragonal lattice has sixteen neighbours.
 
@@ -173,7 +173,7 @@ lemma bodyCentredTetragonal_neighbors_card (x : bodyCentredTetragonal.Site) :
     (bodyCentredTetragonalGraph.neighbors x).card = 16
 ```
 
-**`CondensedMatter.Crystal.hexagonal_neighbors_card`**, a lemma, [line 142](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/CondensedMatter/Crystal/Examples/TetragonalHexagonal.lean#L142).
+**`CondensedMatter.Crystal.hexagonal_neighbors_card`**, a lemma, [line 142](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/CondensedMatter/Crystal/Examples/TetragonalHexagonal.lean#L142).
 
 > Each site of the primitive hexagonal lattice has eight neighbours.
 
@@ -188,4 +188,4 @@ lemma hexagonal_neighbors_card (x : hexagonal.Site) :
 
 ## Sources
 
-- [PhyslibAlpha/CondensedMatter/Crystal/Examples/TetragonalHexagonal.lean at 2a1dfe43](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/CondensedMatter/Crystal/Examples/TetragonalHexagonal.lean)
+- [PhyslibAlpha/CondensedMatter/Crystal/Examples/TetragonalHexagonal.lean at 8c87bdfb](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/CondensedMatter/Crystal/Examples/TetragonalHexagonal.lean)

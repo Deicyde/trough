@@ -8,7 +8,7 @@ proof: formalized
 
 # Iterated Laplacians of norm distributions
 
-The module `Physlib.SpaceAndTime.Space.Norm.IteratedLaplacian`, [Physlib/SpaceAndTime/Space/Norm/IteratedLaplacian.lean](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/SpaceAndTime/Space/Norm/IteratedLaplacian.lean): 3 declarations, 3 with a docstring; 3 private, not shown.
+The module `Physlib.SpaceAndTime.Space.Norm.IteratedLaplacian`, [Physlib/SpaceAndTime/Space/Norm/IteratedLaplacian.lean](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/SpaceAndTime/Space/Norm/IteratedLaplacian.lean): 3 declarations, 3 with a docstring; 3 private, not shown.
 
 ## i. Overview
 
@@ -27,7 +27,7 @@ The module `Physlib.SpaceAndTime.Space.Norm.IteratedLaplacian`, [Physlib/SpaceAn
 
 ## A. The odd-dimensional iterated Laplacian of the norm
 
-**`Space.oddNormIteratedLaplacianCoeff`**, a def, [line 50](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/SpaceAndTime/Space/Norm/IteratedLaplacian.lean#L50).
+**`Space.oddNormIteratedLaplacianCoeff`**, a def, [line 50](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/SpaceAndTime/Space/Norm/IteratedLaplacian.lean#L50).
 
 > The scalar factor in the odd-dimensional iterated Laplacian of the norm.
 
@@ -35,7 +35,7 @@ The module `Physlib.SpaceAndTime.Space.Norm.IteratedLaplacian`, [Physlib/SpaceAn
 noncomputable def oddNormIteratedLaplacianCoeff (m : ℕ) : ℝ
 ```
 
-**`Space.oddNormIteratedLaplacianCoeff_ne_zero`**, a lemma, [line 67](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/SpaceAndTime/Space/Norm/IteratedLaplacian.lean#L67).
+**`Space.oddNormIteratedLaplacianCoeff_ne_zero`**, a lemma, [line 67](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/SpaceAndTime/Space/Norm/IteratedLaplacian.lean#L67).
 
 > The scalar factor in the odd-dimensional iterated Laplacian of the norm is nonzero.
 
@@ -44,7 +44,7 @@ lemma oddNormIteratedLaplacianCoeff_ne_zero (m : ℕ) :
     oddNormIteratedLaplacianCoeff m ≠ 0
 ```
 
-**`Space.iterated_distLaplacian_norm_zpow_odd_eq_smul_diracDelta`**, a lemma, [line 145](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/SpaceAndTime/Space/Norm/IteratedLaplacian.lean#L145).
+**`Space.iterated_distLaplacian_norm_zpow_odd_eq_smul_diracDelta`**, a lemma, [line 145](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/SpaceAndTime/Space/Norm/IteratedLaplacian.lean#L145).
 
 > In dimension `2 * m + 1`, the `(m + 1)`-fold distributional Laplacian of the
 > distribution induced by the norm is a nonzero multiple of the Dirac delta at the origin.
@@ -67,4 +67,4 @@ lemma iterated_distLaplacian_norm_zpow_odd_eq_smul_diracDelta (m : ℕ) :
 
 ## Sources
 
-- [Physlib/SpaceAndTime/Space/Norm/IteratedLaplacian.lean at 2a1dfe43](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/SpaceAndTime/Space/Norm/IteratedLaplacian.lean)
+- [Physlib/SpaceAndTime/Space/Norm/IteratedLaplacian.lean at 8c87bdfb](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/SpaceAndTime/Space/Norm/IteratedLaplacian.lean)

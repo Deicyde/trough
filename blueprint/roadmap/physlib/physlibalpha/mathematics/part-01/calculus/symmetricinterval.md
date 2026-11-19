@@ -8,7 +8,7 @@ proof: formalized
 
 # Integrals over a symmetric interval
 
-The module `PhyslibAlpha.Mathematics.Calculus.SymmetricInterval`, [PhyslibAlpha/Mathematics/Calculus/SymmetricInterval.lean](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Mathematics/Calculus/SymmetricInterval.lean): 2 declarations, 2 with a docstring.
+The module `PhyslibAlpha.Mathematics.Calculus.SymmetricInterval`, [PhyslibAlpha/Mathematics/Calculus/SymmetricInterval.lean](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Mathematics/Calculus/SymmetricInterval.lean): 2 declarations, 2 with a docstring.
 
 > An even function integrates over `[-τ, τ]` to twice its integral over `[0, τ]`. A convolution with
 > a continuous weight over `[-τ, τ]` is differentiated under the integral.
@@ -35,7 +35,7 @@ The module `PhyslibAlpha.Mathematics.Calculus.SymmetricInterval`, [PhyslibAlpha/
 
 > - `SymmetricInterval.hasDerivAt_convolution` : differentiation of a convolution over `[-τ, τ]`.
 
-**`SymmetricInterval.integral_symm_even`**, a lemma, [line 55](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Mathematics/Calculus/SymmetricInterval.lean#L55).
+**`SymmetricInterval.integral_symm_even`**, a lemma, [line 55](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Mathematics/Calculus/SymmetricInterval.lean#L55).
 
 > The integral of an even continuous function over a symmetric interval.
 
@@ -44,7 +44,7 @@ lemma integral_symm_even {f : ℝ → ℂ} (hf : Continuous f) (he : ∀ x, f (-
     ∫ x in (-τ)..τ, f x = 2 * ∫ x in (0 : ℝ)..τ, f x
 ```
 
-**`SymmetricInterval.hasDerivAt_convolution`**, a lemma, [line 67](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Mathematics/Calculus/SymmetricInterval.lean#L67).
+**`SymmetricInterval.hasDerivAt_convolution`**, a lemma, [line 67](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Mathematics/Calculus/SymmetricInterval.lean#L67).
 
 > **Differentiation of a convolution over a bounded interval.**
 
@@ -61,4 +61,4 @@ Its declarations' statements use no declaration of another module with an articl
 
 ## Sources
 
-- [PhyslibAlpha/Mathematics/Calculus/SymmetricInterval.lean at 2a1dfe43](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Mathematics/Calculus/SymmetricInterval.lean)
+- [PhyslibAlpha/Mathematics/Calculus/SymmetricInterval.lean at 8c87bdfb](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Mathematics/Calculus/SymmetricInterval.lean)

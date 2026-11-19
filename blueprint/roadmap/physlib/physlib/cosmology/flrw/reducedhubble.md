@@ -8,7 +8,7 @@ proof: formalized
 
 # The reduced Hubble function of the standard cosmological model
 
-The module `Physlib.Cosmology.FLRW.ReducedHubble`, [Physlib/Cosmology/FLRW/ReducedHubble.lean](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/Cosmology/FLRW/ReducedHubble.lean): 8 declarations, 8 with a docstring.
+The module `Physlib.Cosmology.FLRW.ReducedHubble`, [Physlib/Cosmology/FLRW/ReducedHubble.lean](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Cosmology/FLRW/ReducedHubble.lean): 8 declarations, 8 with a docstring.
 
 ## i. Overview
 
@@ -40,7 +40,7 @@ The module `Physlib.Cosmology.FLRW.ReducedHubble`, [Physlib/Cosmology/FLRW/Reduc
 
 ## A. The reduced Hubble function
 
-**`Cosmology.FLRW.FriedmannEquation.reducedHubble`**, a def, [line 66](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/Cosmology/FLRW/ReducedHubble.lean#L66).
+**`Cosmology.FLRW.FriedmannEquation.reducedHubble`**, a def, [line 66](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Cosmology/FLRW/ReducedHubble.lean#L66).
 
 > The reduced Hubble function `E(x) = √(Ω_Λ + Ω_m x⁻³ + Ω_r x⁻⁴ + Ω_K x⁻²)` of the standard
 > cosmological model: the Hubble parameter in units of its value `H₀` at the reference time,
@@ -54,7 +54,7 @@ noncomputable def reducedHubble (ΩΛ Ωm Ωr ΩK x : ℝ) : ℝ
 
 ## B. The equality scale factors
 
-**`Cosmology.FLRW.FriedmannEquation.equalityScaleFactorRadiationMatter`**, a def, [line 77](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/Cosmology/FLRW/ReducedHubble.lean#L77).
+**`Cosmology.FLRW.FriedmannEquation.equalityScaleFactorRadiationMatter`**, a def, [line 77](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Cosmology/FLRW/ReducedHubble.lean#L77).
 
 > The radiation-matter equality scale factor `a_eq = Ω_r / Ω_m`: the value of `x = a / a₀`
 > at which the matter and radiation terms of `E²` are equal; radiation dominates before it.
@@ -63,7 +63,7 @@ noncomputable def reducedHubble (ΩΛ Ωm Ωr ΩK x : ℝ) : ℝ
 noncomputable def equalityScaleFactorRadiationMatter (Ωr Ωm : ℝ) : ℝ
 ```
 
-**`Cosmology.FLRW.FriedmannEquation.equalityScaleFactorMatterLambda`**, a def, [line 82](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/Cosmology/FLRW/ReducedHubble.lean#L82).
+**`Cosmology.FLRW.FriedmannEquation.equalityScaleFactorMatterLambda`**, a def, [line 82](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Cosmology/FLRW/ReducedHubble.lean#L82).
 
 > The matter-Λ equality scale factor `a_Λ = (Ω_m / Ω_Λ)^(1/3)`: the value of `x = a / a₀`
 > at which the matter term of `E²` equals `Ω_Λ`; the cosmological constant dominates after
@@ -73,7 +73,7 @@ noncomputable def equalityScaleFactorRadiationMatter (Ωr Ωm : ℝ) : ℝ
 noncomputable def equalityScaleFactorMatterLambda (Ωm ΩΛ : ℝ) : ℝ
 ```
 
-**`Cosmology.FLRW.FriedmannEquation.equalityScaleFactorRadiationMatter_spec`**, a lemma, [line 85](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/Cosmology/FLRW/ReducedHubble.lean#L85).
+**`Cosmology.FLRW.FriedmannEquation.equalityScaleFactorRadiationMatter_spec`**, a lemma, [line 85](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Cosmology/FLRW/ReducedHubble.lean#L85).
 
 > At `a_eq`, the matter and radiation terms of `E²` are equal.
 
@@ -83,7 +83,7 @@ lemma equalityScaleFactorRadiationMatter_spec {Ωr Ωm : ℝ} (hr : 0 < Ωr) (hm
       = Ωr * equalityScaleFactorRadiationMatter Ωr Ωm ^ (-4 : ℝ)
 ```
 
-**`Cosmology.FLRW.FriedmannEquation.equalityScaleFactorMatterLambda_spec`**, a lemma, [line 97](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/Cosmology/FLRW/ReducedHubble.lean#L97).
+**`Cosmology.FLRW.FriedmannEquation.equalityScaleFactorMatterLambda_spec`**, a lemma, [line 97](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Cosmology/FLRW/ReducedHubble.lean#L97).
 
 > At `a_Λ`, the matter term of `E²` equals `Ω_Λ`.
 
@@ -94,7 +94,7 @@ lemma equalityScaleFactorMatterLambda_spec {Ωm ΩΛ : ℝ} (hm : 0 < Ωm) (hL :
 
 ## C. The Hubble parameter of a solution of the Friedmann equations
 
-**`Cosmology.FLRW.FriedmannSolution.sq_hubbleConstant_eq_mul_densityParameters`**, a lemma, [line 123](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/Cosmology/FLRW/ReducedHubble.lean#L123).
+**`Cosmology.FLRW.FriedmannSolution.sq_hubbleConstant_eq_mul_densityParameters`**, a lemma, [line 123](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Cosmology/FLRW/ReducedHubble.lean#L123).
 
 > For a solution of the Friedmann equations whose density is that of matter plus that of
 > radiation, take two times `t` and `t₀` of the interval of the model with `H(t₀) ≠ 0` at which
@@ -113,7 +113,7 @@ lemma sq_hubbleConstant_eq_mul_densityParameters (h : U.FriedmannSolution F Λ G
         + U.curvatureDensityParameter c t₀ * (U.a t / U.a t₀) ^ (-2 : ℝ))
 ```
 
-**`Cosmology.FLRW.FriedmannSolution.sq_hubbleConstant_eq_reducedHubble`**, a lemma, [line 153](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/Cosmology/FLRW/ReducedHubble.lean#L153).
+**`Cosmology.FLRW.FriedmannSolution.sq_hubbleConstant_eq_reducedHubble`**, a lemma, [line 153](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Cosmology/FLRW/ReducedHubble.lean#L153).
 
 > `H² = H₀² E(a / a₀)²`, under the hypotheses of
 > `sq_hubbleConstant_eq_mul_densityParameters`.
@@ -128,7 +128,7 @@ lemma sq_hubbleConstant_eq_reducedHubble (h : U.FriedmannSolution F Λ G c)
         (U.densityParameter Fr G t₀) (U.curvatureDensityParameter c t₀) (U.a t / U.a t₀) ^ 2
 ```
 
-**`Cosmology.FLRW.FriedmannSolution.hubbleConstant_eq_reducedHubble`**, a lemma, [line 175](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/Cosmology/FLRW/ReducedHubble.lean#L175).
+**`Cosmology.FLRW.FriedmannSolution.hubbleConstant_eq_reducedHubble`**, a lemma, [line 175](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Cosmology/FLRW/ReducedHubble.lean#L175).
 
 > `H = H₀ E(a / a₀)` for `0 < H₀` and `0 ≤ H`, under the hypotheses of
 > `sq_hubbleConstant_eq_reducedHubble`.
@@ -149,4 +149,4 @@ lemma hubbleConstant_eq_reducedHubble (h : U.FriedmannSolution F Λ G c)
 
 ## Sources
 
-- [Physlib/Cosmology/FLRW/ReducedHubble.lean at 2a1dfe43](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/Cosmology/FLRW/ReducedHubble.lean)
+- [Physlib/Cosmology/FLRW/ReducedHubble.lean at 8c87bdfb](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Cosmology/FLRW/ReducedHubble.lean)

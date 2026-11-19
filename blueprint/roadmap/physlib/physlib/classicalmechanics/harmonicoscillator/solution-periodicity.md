@@ -8,7 +8,7 @@ proof: formalized
 
 # Periodicity and recurrence
 
-The module `Physlib.ClassicalMechanics.HarmonicOscillator.Solution.Periodicity`, [Physlib/ClassicalMechanics/HarmonicOscillator/Solution/Periodicity.lean](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/ClassicalMechanics/HarmonicOscillator/Solution/Periodicity.lean): 5 declarations, 3 with a docstring.
+The module `Physlib.ClassicalMechanics.HarmonicOscillator.Solution.Periodicity`, [Physlib/ClassicalMechanics/HarmonicOscillator/Solution/Periodicity.lean](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/ClassicalMechanics/HarmonicOscillator/Solution/Periodicity.lean): 5 declarations, 3 with a docstring.
 
 ## i. Overview
 
@@ -36,7 +36,7 @@ The module `Physlib.ClassicalMechanics.HarmonicOscillator.Solution.Periodicity`,
 
 > The period `T = 2π / ω` is the time for one complete oscillation; it is positive since `ω > 0`.
 
-**`ClassicalMechanics.HarmonicOscillator.period`**, a def, [line 64](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/ClassicalMechanics/HarmonicOscillator/Solution/Periodicity.lean#L64).
+**`ClassicalMechanics.HarmonicOscillator.period`**, a def, [line 64](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/ClassicalMechanics/HarmonicOscillator/Solution/Periodicity.lean#L64).
 
 > The period of a harmonic oscillator is `2 * π / ω`.
 
@@ -44,13 +44,13 @@ The module `Physlib.ClassicalMechanics.HarmonicOscillator.Solution.Periodicity`,
 noncomputable def period (S : HarmonicOscillator) : ℝ
 ```
 
-**`ClassicalMechanics.HarmonicOscillator.period_eq`**, a lemma, [line 69](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/ClassicalMechanics/HarmonicOscillator/Solution/Periodicity.lean#L69).
+**`ClassicalMechanics.HarmonicOscillator.period_eq`**, a lemma, [line 69](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/ClassicalMechanics/HarmonicOscillator/Solution/Periodicity.lean#L69).
 
 ```lean
 lemma period_eq : T S = 2 * π / S.ω
 ```
 
-**`ClassicalMechanics.HarmonicOscillator.period_pos`**, a lemma, [line 71](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/ClassicalMechanics/HarmonicOscillator/Solution/Periodicity.lean#L71).
+**`ClassicalMechanics.HarmonicOscillator.period_pos`**, a lemma, [line 71](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/ClassicalMechanics/HarmonicOscillator/Solution/Periodicity.lean#L71).
 
 ```lean
 lemma period_pos : 0 < T S
@@ -61,7 +61,7 @@ lemma period_pos : 0 < T S
 > The trajectory satisfies `x(t + T) = x(t)`: advancing time by one period shifts the phase `ω t`
 > by `2π`, leaving `cos` and `sin` unchanged.
 
-**`ClassicalMechanics.HarmonicOscillator.trajectory_periodic`**, a lemma, [line 85](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/ClassicalMechanics/HarmonicOscillator/Solution/Periodicity.lean#L85).
+**`ClassicalMechanics.HarmonicOscillator.trajectory_periodic`**, a lemma, [line 85](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/ClassicalMechanics/HarmonicOscillator/Solution/Periodicity.lean#L85).
 
 > The trajectory of the harmonic oscillator is periodic with period of `2 * π / ω`.
 
@@ -75,7 +75,7 @@ lemma trajectory_periodic (IC : InitialConditions) :
 > For non-trivial initial data, the trajectory returns to its initial position and velocity only at
 > integer multiples of the period.
 
-**`ClassicalMechanics.HarmonicOscillator.return_time`**, a lemma, [line 107](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/ClassicalMechanics/HarmonicOscillator/Solution/Periodicity.lean#L107).
+**`ClassicalMechanics.HarmonicOscillator.return_time`**, a lemma, [line 107](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/ClassicalMechanics/HarmonicOscillator/Solution/Periodicity.lean#L107).
 
 > Assuming that the initial coordinate and velocity are not simultaneously zero,
 > the time stamps when the harmonic oscillator returns to its initial coordinate and velocity is
@@ -93,4 +93,4 @@ lemma return_time (IC : InitialConditions) (non_trivial : IC.x₀ ≠ 0 ∨ IC.v
 
 ## Sources
 
-- [Physlib/ClassicalMechanics/HarmonicOscillator/Solution/Periodicity.lean at 2a1dfe43](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/ClassicalMechanics/HarmonicOscillator/Solution/Periodicity.lean)
+- [Physlib/ClassicalMechanics/HarmonicOscillator/Solution/Periodicity.lean at 8c87bdfb](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/ClassicalMechanics/HarmonicOscillator/Solution/Periodicity.lean)

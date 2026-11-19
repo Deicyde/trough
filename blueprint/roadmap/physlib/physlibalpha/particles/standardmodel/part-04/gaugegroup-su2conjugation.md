@@ -8,7 +8,7 @@ proof: formalized
 
 # The antisymmetric symbol and complex conjugation in `SU(2)`
 
-The module `PhyslibAlpha.Particles.StandardModel.GaugeGroup.SU2Conjugation`, [PhyslibAlpha/Particles/StandardModel/GaugeGroup/SU2Conjugation.lean](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/GaugeGroup/SU2Conjugation.lean): 12 declarations, 12 with a docstring.
+The module `PhyslibAlpha.Particles.StandardModel.GaugeGroup.SU2Conjugation`, [PhyslibAlpha/Particles/StandardModel/GaugeGroup/SU2Conjugation.lean](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/GaugeGroup/SU2Conjugation.lean): 12 declarations, 12 with a docstring.
 
 ## i. Overview
 
@@ -34,7 +34,7 @@ The module `PhyslibAlpha.Particles.StandardModel.GaugeGroup.SU2Conjugation`, [Ph
 
 ## A. The antisymmetric symbol
 
-**`StandardModel.su2Epsilon`**, a def, [line 56](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/GaugeGroup/SU2Conjugation.lean#L56).
+**`StandardModel.su2Epsilon`**, a def, [line 56](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/GaugeGroup/SU2Conjugation.lean#L56).
 
 > The antisymmetric symbol `ε_{ab}` on two `su(2)` fundamental indices: the Levi-Civita
 > symbol of `Fin 2`, normalized by `ε 0 1 = 1`.
@@ -43,7 +43,7 @@ The module `PhyslibAlpha.Particles.StandardModel.GaugeGroup.SU2Conjugation`, [Ph
 def su2Epsilon (a b : Fin 2) : ℂ
 ```
 
-**`StandardModel.su2Epsilon_zero_zero`**, a lemma, [line 59](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/GaugeGroup/SU2Conjugation.lean#L59).
+**`StandardModel.su2Epsilon_zero_zero`**, a lemma, [line 59](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/GaugeGroup/SU2Conjugation.lean#L59).
 
 > The antisymmetric symbol vanishes when both indices are zero.
 
@@ -51,7 +51,7 @@ def su2Epsilon (a b : Fin 2) : ℂ
 lemma su2Epsilon_zero_zero : su2Epsilon 0 0 = 0
 ```
 
-**`StandardModel.su2Epsilon_zero_one`**, a lemma, [line 64](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/GaugeGroup/SU2Conjugation.lean#L64).
+**`StandardModel.su2Epsilon_zero_one`**, a lemma, [line 64](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/GaugeGroup/SU2Conjugation.lean#L64).
 
 > The antisymmetric symbol on the increasing pair.
 
@@ -59,7 +59,7 @@ lemma su2Epsilon_zero_zero : su2Epsilon 0 0 = 0
 lemma su2Epsilon_zero_one : su2Epsilon 0 1 = 1
 ```
 
-**`StandardModel.su2Epsilon_one_zero`**, a lemma, [line 71](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/GaugeGroup/SU2Conjugation.lean#L71).
+**`StandardModel.su2Epsilon_one_zero`**, a lemma, [line 71](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/GaugeGroup/SU2Conjugation.lean#L71).
 
 > The antisymmetric symbol on the decreasing pair.
 
@@ -67,7 +67,7 @@ lemma su2Epsilon_zero_one : su2Epsilon 0 1 = 1
 lemma su2Epsilon_one_zero : su2Epsilon 1 0 = -1
 ```
 
-**`StandardModel.su2Epsilon_one_one`**, a lemma, [line 78](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/GaugeGroup/SU2Conjugation.lean#L78).
+**`StandardModel.su2Epsilon_one_one`**, a lemma, [line 78](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/GaugeGroup/SU2Conjugation.lean#L78).
 
 > The antisymmetric symbol vanishes when both indices are one.
 
@@ -75,7 +75,7 @@ lemma su2Epsilon_one_zero : su2Epsilon 1 0 = -1
 lemma su2Epsilon_one_one : su2Epsilon 1 1 = 0
 ```
 
-**`StandardModel.sum_su2Epsilon_mul`**, a lemma, [line 84](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/GaugeGroup/SU2Conjugation.lean#L84).
+**`StandardModel.sum_su2Epsilon_mul`**, a lemma, [line 84](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/GaugeGroup/SU2Conjugation.lean#L84).
 
 > Every element of `SU(2)` fixes the antisymmetric symbol: contracted against two rows of
 > `U` it gives `det U` times itself (`sum_leviCivitaSymbol_mul_prod`), and `det U = 1`.
@@ -91,7 +91,7 @@ lemma sum_su2Epsilon_mul (U : specialUnitaryGroup (Fin 2) ℂ) (b c : Fin 2) :
 > its conjugate transpose. Reading the adjugate of a `2 × 2` matrix entry by entry gives the four
 > identities.
 
-**`StandardModel.su2_star_eq_adjugate`**, a lemma, [line 102](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/GaugeGroup/SU2Conjugation.lean#L102).
+**`StandardModel.su2_star_eq_adjugate`**, a lemma, [line 102](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/GaugeGroup/SU2Conjugation.lean#L102).
 
 > The conjugate transpose of an `SU(2)` matrix is its adjugate.
 
@@ -100,7 +100,7 @@ lemma su2_star_eq_adjugate (U : specialUnitaryGroup (Fin 2) ℂ) :
     star U.1 = Matrix.adjugate U.1
 ```
 
-**`StandardModel.su2_conj_apply`**, a lemma, [line 113](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/GaugeGroup/SU2Conjugation.lean#L113).
+**`StandardModel.su2_conj_apply`**, a lemma, [line 113](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/GaugeGroup/SU2Conjugation.lean#L113).
 
 > The conjugate of an entry of an `SU(2)` matrix is the transposed entry of its
 > adjugate.
@@ -110,7 +110,7 @@ lemma su2_conj_apply (U : specialUnitaryGroup (Fin 2) ℂ) (i j : Fin 2) :
     conj (U.1 i j) = Matrix.adjugate U.1 j i
 ```
 
-**`StandardModel.su2_conj_apply_zero_zero`**, a lemma, [line 119](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/GaugeGroup/SU2Conjugation.lean#L119).
+**`StandardModel.su2_conj_apply_zero_zero`**, a lemma, [line 119](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/GaugeGroup/SU2Conjugation.lean#L119).
 
 > Conjugating the upper left entry of an `SU(2)` matrix gives the lower right one.
 
@@ -119,7 +119,7 @@ lemma su2_conj_apply_zero_zero (U : specialUnitaryGroup (Fin 2) ℂ) :
     conj (U.1 0 0) = U.1 1 1
 ```
 
-**`StandardModel.su2_conj_apply_one_one`**, a lemma, [line 125](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/GaugeGroup/SU2Conjugation.lean#L125).
+**`StandardModel.su2_conj_apply_one_one`**, a lemma, [line 125](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/GaugeGroup/SU2Conjugation.lean#L125).
 
 > Conjugating the lower right entry of an `SU(2)` matrix gives the upper left one.
 
@@ -128,7 +128,7 @@ lemma su2_conj_apply_one_one (U : specialUnitaryGroup (Fin 2) ℂ) :
     conj (U.1 1 1) = U.1 0 0
 ```
 
-**`StandardModel.su2_conj_apply_zero_one`**, a lemma, [line 132](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/GaugeGroup/SU2Conjugation.lean#L132).
+**`StandardModel.su2_conj_apply_zero_one`**, a lemma, [line 132](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/GaugeGroup/SU2Conjugation.lean#L132).
 
 > Conjugating the upper right entry of an `SU(2)` matrix gives minus the lower left
 > one.
@@ -138,7 +138,7 @@ lemma su2_conj_apply_zero_one (U : specialUnitaryGroup (Fin 2) ℂ) :
     conj (U.1 0 1) = -U.1 1 0
 ```
 
-**`StandardModel.su2_conj_apply_one_zero`**, a lemma, [line 139](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/GaugeGroup/SU2Conjugation.lean#L139).
+**`StandardModel.su2_conj_apply_one_zero`**, a lemma, [line 139](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/GaugeGroup/SU2Conjugation.lean#L139).
 
 > Conjugating the lower left entry of an `SU(2)` matrix gives minus the upper right
 > one.
@@ -158,4 +158,4 @@ lemma su2_conj_apply_one_zero (U : specialUnitaryGroup (Fin 2) ℂ) :
 
 ## Sources
 
-- [PhyslibAlpha/Particles/StandardModel/GaugeGroup/SU2Conjugation.lean at 2a1dfe43](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/GaugeGroup/SU2Conjugation.lean)
+- [PhyslibAlpha/Particles/StandardModel/GaugeGroup/SU2Conjugation.lean at 8c87bdfb](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/GaugeGroup/SU2Conjugation.lean)

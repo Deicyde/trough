@@ -8,7 +8,7 @@ proof: formalized
 
 # The uncertainty of a localized electron
 
-The module `PhyslibAlpha.CondensedMatter.TightBindingChain.Open.LocalizedUncertainty`, [PhyslibAlpha/CondensedMatter/TightBindingChain/Open/LocalizedUncertainty.lean](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/CondensedMatter/TightBindingChain/Open/LocalizedUncertainty.lean): 9 declarations, 8 with a docstring.
+The module `PhyslibAlpha.CondensedMatter.TightBindingChain.Open.LocalizedUncertainty`, [PhyslibAlpha/CondensedMatter/TightBindingChain/Open/LocalizedUncertainty.lean](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/CondensedMatter/TightBindingChain/Open/LocalizedUncertainty.lean): 9 declarations, 8 with a docstring.
 
 ## i. Overview
 
@@ -39,7 +39,7 @@ The module `PhyslibAlpha.CondensedMatter.TightBindingChain.Open.LocalizedUncerta
 
 ## A. Eigenvectors
 
-**`CondensedMatter.TightBindingChain.flucOf_eq_zero_of_eigen`**, a lemma, [line 62](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/CondensedMatter/TightBindingChain/Open/LocalizedUncertainty.lean#L62).
+**`CondensedMatter.TightBindingChain.flucOf_eq_zero_of_eigen`**, a lemma, [line 62](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/CondensedMatter/TightBindingChain/Open/LocalizedUncertainty.lean#L62).
 
 > A unit eigenvector of `A` with real eigenvalue has no fluctuation in `A`.
 
@@ -48,7 +48,7 @@ lemma flucOf_eq_zero_of_eigen {A : T.HilbertSpace →ₗ[ℂ] T.HilbertSpace} {�
     (hψ : ‖ψ‖ = 1) {c : ℝ} (h : A ψ = (c : ℂ) • ψ) : T.flucOf A ψ = 0
 ```
 
-**`CondensedMatter.TightBindingChain.fluc_ne_zero_of_defectOf_pos`**, a lemma, [line 70](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/CondensedMatter/TightBindingChain/Open/LocalizedUncertainty.lean#L70).
+**`CondensedMatter.TightBindingChain.fluc_ne_zero_of_defectOf_pos`**, a lemma, [line 70](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/CondensedMatter/TightBindingChain/Open/LocalizedUncertainty.lean#L70).
 
 > A positive defect forces fluctuations in both `H` and `X`.
 
@@ -57,7 +57,7 @@ lemma fluc_ne_zero_of_defectOf_pos {ψ : T.HilbertSpace} (h : 0 < T.defectOf ψ)
     T.flucOf T.openHamiltonian ψ ≠ 0 ∧ T.flucOf T.position ψ ≠ 0
 ```
 
-**`CondensedMatter.TightBindingChain.not_eigen_of_defectOf_pos`**, a lemma, [line 75](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/CondensedMatter/TightBindingChain/Open/LocalizedUncertainty.lean#L75).
+**`CondensedMatter.TightBindingChain.not_eigen_of_defectOf_pos`**, a lemma, [line 75](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/CondensedMatter/TightBindingChain/Open/LocalizedUncertainty.lean#L75).
 
 > A vector with positive defect is an eigenvector of neither `H` nor `X`.
 
@@ -69,14 +69,14 @@ lemma not_eigen_of_defectOf_pos {ψ : T.HilbertSpace} (hψ : ‖ψ‖ = 1)
 
 ## B. The localized electron
 
-**`CondensedMatter.TightBindingChain.norm_localizedState`**, a lemma, [line 87](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/CondensedMatter/TightBindingChain/Open/LocalizedUncertainty.lean#L87).
+**`CondensedMatter.TightBindingChain.norm_localizedState`**, a lemma, [line 87](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/CondensedMatter/TightBindingChain/Open/LocalizedUncertainty.lean#L87).
 
 ```lean
 lemma norm_localizedState (n : Fin T.N) : ‖(|n⟩ : T.HilbertSpace)‖ = 1 :=
   (localizedState (T := T)).orthonormal.1 n
 ```
 
-**`CondensedMatter.TightBindingChain.flucOf_position_localizedState`**, a lemma, [line 91](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/CondensedMatter/TightBindingChain/Open/LocalizedUncertainty.lean#L91).
+**`CondensedMatter.TightBindingChain.flucOf_position_localizedState`**, a lemma, [line 91](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/CondensedMatter/TightBindingChain/Open/LocalizedUncertainty.lean#L91).
 
 > A localized electron has no fluctuation in position.
 
@@ -85,7 +85,7 @@ lemma flucOf_position_localizedState (n : Fin T.N) : T.flucOf T.position |n⟩ =
   T.flucOf_eq_zero_of_eigen (T.norm_localizedState n) (T.position_apply_localizedState n)
 ```
 
-**`CondensedMatter.TightBindingChain.exists_neighbour`**, a lemma, [line 95](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/CondensedMatter/TightBindingChain/Open/LocalizedUncertainty.lean#L95).
+**`CondensedMatter.TightBindingChain.exists_neighbour`**, a lemma, [line 95](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/CondensedMatter/TightBindingChain/Open/LocalizedUncertainty.lean#L95).
 
 > Every site of a chain with two sites has a neighbour.
 
@@ -94,7 +94,7 @@ lemma exists_neighbour (hN : 2 ≤ T.N) (n : Fin T.N) :
     ∃ m : Fin T.N, (m : ℕ) + 1 = n ∨ (n : ℕ) + 1 = m
 ```
 
-**`CondensedMatter.TightBindingChain.flucOf_openHamiltonian_localizedState_ne_zero`**, a lemma, [line 103](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/CondensedMatter/TightBindingChain/Open/LocalizedUncertainty.lean#L103).
+**`CondensedMatter.TightBindingChain.flucOf_openHamiltonian_localizedState_ne_zero`**, a lemma, [line 103](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/CondensedMatter/TightBindingChain/Open/LocalizedUncertainty.lean#L103).
 
 > **A localized electron fluctuates in energy.** If the chain hops and has two sites,
 > `H |n⟩ - ⟨H⟩ |n⟩ ≠ 0`: its overlap with a neighbour is `-t`.
@@ -112,7 +112,7 @@ lemma flucOf_openHamiltonian_localizedState_ne_zero (ht : T.t ≠ 0) (hN : 2 ≤
   exact ht h'
 ```
 
-**`CondensedMatter.TightBindingChain.inner_bracket_localizedState`**, a lemma, [line 115](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/CondensedMatter/TightBindingChain/Open/LocalizedUncertainty.lean#L115).
+**`CondensedMatter.TightBindingChain.inner_bracket_localizedState`**, a lemma, [line 115](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/CondensedMatter/TightBindingChain/Open/LocalizedUncertainty.lean#L115).
 
 > The bracket `⁅H, X⁆` vanishes in a localized electron.
 
@@ -124,7 +124,7 @@ lemma inner_bracket_localizedState (n : Fin T.N) :
   simp
 ```
 
-**`CondensedMatter.TightBindingChain.robertson_schrodinger_localizedState`**, a lemma, [line 124](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/CondensedMatter/TightBindingChain/Open/LocalizedUncertainty.lean#L124).
+**`CondensedMatter.TightBindingChain.robertson_schrodinger_localizedState`**, a lemma, [line 124](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/CondensedMatter/TightBindingChain/Open/LocalizedUncertainty.lean#L124).
 
 > **Robertson–Schrödinger is empty in a localized electron.** In `|n⟩`, `Var X = 0` and the
 > centered Gram defect is `0`: both sides of the relation vanish. The energy does not:
@@ -144,4 +144,4 @@ lemma robertson_schrodinger_localizedState (ht : T.t ≠ 0) (hN : 2 ≤ T.N) (n 
 
 ## Sources
 
-- [PhyslibAlpha/CondensedMatter/TightBindingChain/Open/LocalizedUncertainty.lean at 2a1dfe43](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/CondensedMatter/TightBindingChain/Open/LocalizedUncertainty.lean)
+- [PhyslibAlpha/CondensedMatter/TightBindingChain/Open/LocalizedUncertainty.lean at 8c87bdfb](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/CondensedMatter/TightBindingChain/Open/LocalizedUncertainty.lean)

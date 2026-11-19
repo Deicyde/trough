@@ -8,7 +8,7 @@ proof: formalized
 
 # Smoothness of parametric integrals
 
-The module `PhyslibAlpha.Mathematics.Calculus.ParametricIntegral`, [PhyslibAlpha/Mathematics/Calculus/ParametricIntegral.lean](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Mathematics/Calculus/ParametricIntegral.lean): 3 declarations, 2 with a docstring.
+The module `PhyslibAlpha.Mathematics.Calculus.ParametricIntegral`, [PhyslibAlpha/Mathematics/Calculus/ParametricIntegral.lean](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Mathematics/Calculus/ParametricIntegral.lean): 3 declarations, 2 with a docstring.
 
 ## i. Overview
 
@@ -31,7 +31,7 @@ The module `PhyslibAlpha.Mathematics.Calculus.ParametricIntegral`, [PhyslibAlpha
 > Lemmas: `contDiffOn_integral`, `norm_iteratedFDeriv_integral_le`,
 > `continuous_iteratedFDeriv_partial`.
 
-**`ParametricIntegral.contDiffOn_integral`**, a lemma, [line 52](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Mathematics/Calculus/ParametricIntegral.lean#L52).
+**`ParametricIntegral.contDiffOn_integral`**, a lemma, [line 52](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Mathematics/Calculus/ParametricIntegral.lean#L52).
 
 ```lean
 lemma contDiffOn_integral {P α : Type u} [NormedAddCommGroup P] [NormedSpace ℝ P]
@@ -46,7 +46,7 @@ lemma contDiffOn_integral {P α : Type u} [NormedAddCommGroup P] [NormedSpace �
     ContDiffOn ℝ n (fun p => ∫ a, H p a ∂μ) U
 ```
 
-**`ParametricIntegral.norm_iteratedFDeriv_integral_le`**, a lemma, [line 121](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Mathematics/Calculus/ParametricIntegral.lean#L121).
+**`ParametricIntegral.norm_iteratedFDeriv_integral_le`**, a lemma, [line 121](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Mathematics/Calculus/ParametricIntegral.lean#L121).
 
 > Uniform integrable domination bounds every derivative of a parametric integral.
 
@@ -62,7 +62,7 @@ lemma norm_iteratedFDeriv_integral_le {P α : Type u} [NormedAddCommGroup P] [No
     ∀ p, ‖iteratedFDeriv ℝ n (fun q => ∫ a, H q a ∂μ) p‖ ≤ ∫ a, b n a ∂μ
 ```
 
-**`ParametricIntegral.continuous_iteratedFDeriv_partial`**, a lemma, [line 170](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Mathematics/Calculus/ParametricIntegral.lean#L170).
+**`ParametricIntegral.continuous_iteratedFDeriv_partial`**, a lemma, [line 170](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Mathematics/Calculus/ParametricIntegral.lean#L170).
 
 > The derivatives in the first variable of a jointly smooth function are jointly continuous.
 
@@ -79,4 +79,4 @@ Its declarations' statements use no declaration of another module with an articl
 
 ## Sources
 
-- [PhyslibAlpha/Mathematics/Calculus/ParametricIntegral.lean at 2a1dfe43](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Mathematics/Calculus/ParametricIntegral.lean)
+- [PhyslibAlpha/Mathematics/Calculus/ParametricIntegral.lean at 8c87bdfb](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Mathematics/Calculus/ParametricIntegral.lean)

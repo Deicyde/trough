@@ -8,7 +8,7 @@ proof: formalized
 
 # Complex Lorentz tensors from real Lorentz tensors
 
-The module `Physlib.Relativity.Tensors.RealTensor.ToComplex`, [Physlib/Relativity/Tensors/RealTensor/ToComplex.lean](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/Relativity/Tensors/RealTensor/ToComplex.lean): 44 declarations, 28 with a docstring; 2 private, not shown.
+The module `Physlib.Relativity.Tensors.RealTensor.ToComplex`, [Physlib/Relativity/Tensors/RealTensor/ToComplex.lean](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Relativity/Tensors/RealTensor/ToComplex.lean): 44 declarations, 28 with a docstring; 2 private, not shown.
 
 ## i. Overview
 
@@ -50,7 +50,7 @@ The module `Physlib.Relativity.Tensors.RealTensor.ToComplex`, [Physlib/Relativit
 > We first explain how the Lorentz colour data and component indices for real
 > tensors are transported to the complex setting.
 
-**`realLorentzTensor.colorToComplex`**, a def, [line 79](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/Relativity/Tensors/RealTensor/ToComplex.lean#L79).
+**`realLorentzTensor.colorToComplex`**, a def, [line 79](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Relativity/Tensors/RealTensor/ToComplex.lean#L79).
 
 > The map from colors of real Lorentz tensors to complex Lorentz tensors.
 
@@ -58,7 +58,7 @@ The module `Physlib.Relativity.Tensors.RealTensor.ToComplex`, [Physlib/Relativit
 def colorToComplex (c : realLorentzTensor.Color) : complexLorentzTensor.Color
 ```
 
-**`realLorentzTensor.basisIdxColorToComplex`**, a def, [line 86](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/Relativity/Tensors/RealTensor/ToComplex.lean#L86).
+**`realLorentzTensor.basisIdxColorToComplex`**, a def, [line 86](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Relativity/Tensors/RealTensor/ToComplex.lean#L86).
 
 > The basis index type of a complexified real color is `Fin 1 ⊕ Fin 3`, the basis index type
 > of the real color.
@@ -68,7 +68,7 @@ def basisIdxColorToComplex : (c : realLorentzTensor.Color) →
     complexLorentzTensor.basisIdx (colorToComplex c) ≃ Fin 1 ⊕ Fin 3
 ```
 
-**`realLorentzTensor.colorToComplex_match_up`**, a lemma, [line 93](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/Relativity/Tensors/RealTensor/ToComplex.lean#L93).
+**`realLorentzTensor.colorToComplex_match_up`**, a lemma, [line 93](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Relativity/Tensors/RealTensor/ToComplex.lean#L93).
 
 > `simp` helper: reduce `match c j` after a case split on `c j`
 > (avoids dependent `rw` / `Pi.smul_apply`).
@@ -82,7 +82,7 @@ lemma colorToComplex_match_up {n} {c : Fin n → realLorentzTensor.Color} {j}
       = complexLorentzTensor.Color.up
 ```
 
-**`realLorentzTensor.colorToComplex_match_down`**, a lemma, [line 101](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/Relativity/Tensors/RealTensor/ToComplex.lean#L101).
+**`realLorentzTensor.colorToComplex_match_down`**, a lemma, [line 101](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Relativity/Tensors/RealTensor/ToComplex.lean#L101).
 
 ```lean
 lemma colorToComplex_match_down {n} {c : Fin n → realLorentzTensor.Color} {j}
@@ -93,7 +93,7 @@ lemma colorToComplex_match_down {n} {c : Fin n → realLorentzTensor.Color} {j}
       = complexLorentzTensor.Color.down
 ```
 
-**`realLorentzTensor.colorToComplex_comp_eq_match`**, a lemma, [line 109](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/Relativity/Tensors/RealTensor/ToComplex.lean#L109).
+**`realLorentzTensor.colorToComplex_comp_eq_match`**, a lemma, [line 109](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Relativity/Tensors/RealTensor/ToComplex.lean#L109).
 
 ```lean
 lemma colorToComplex_comp_eq_match {n} (c : Fin n → realLorentzTensor.Color) (j : Fin n) :
@@ -103,7 +103,7 @@ lemma colorToComplex_comp_eq_match {n} (c : Fin n → realLorentzTensor.Color) (
         | .down => complexLorentzTensor.Color.down)
 ```
 
-**`TensorSpecies.Tensor.ComponentIdx.complexify`**, a def, [line 118](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/Relativity/Tensors/RealTensor/ToComplex.lean#L118).
+**`TensorSpecies.Tensor.ComponentIdx.complexify`**, a def, [line 118](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Relativity/Tensors/RealTensor/ToComplex.lean#L118).
 
 > The complexification of the component index of a real Lorentz tensor to
 > a complex Lorentz tensor.
@@ -115,7 +115,7 @@ noncomputable def _root_.TensorSpecies.Tensor.ComponentIdx.complexify {n}
       ComponentIdx (S := complexLorentzTensor) (colorToComplex ∘ c)
 ```
 
-**`realLorentzTensor.ComponentIdx.complexify_apply`**, a lemma, [line 128](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/Relativity/Tensors/RealTensor/ToComplex.lean#L128).
+**`realLorentzTensor.ComponentIdx.complexify_apply`**, a lemma, [line 128](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Relativity/Tensors/RealTensor/ToComplex.lean#L128).
 
 ```lean
 lemma ComponentIdx.complexify_apply {n} {c : Fin n → realLorentzTensor.Color}
@@ -123,7 +123,7 @@ lemma ComponentIdx.complexify_apply {n} {c : Fin n → realLorentzTensor.Color}
     (ComponentIdx.complexify f) j = (basisIdxColorToComplex (c j)).symm (f j)
 ```
 
-**`realLorentzTensor.ComponentIdx.complexify_toFun_apply`**, a lemma, [line 134](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/Relativity/Tensors/RealTensor/ToComplex.lean#L134).
+**`realLorentzTensor.ComponentIdx.complexify_toFun_apply`**, a lemma, [line 134](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Relativity/Tensors/RealTensor/ToComplex.lean#L134).
 
 ```lean
 lemma ComponentIdx.complexify_toFun_apply {n} {c : Fin n → realLorentzTensor.Color}
@@ -131,7 +131,7 @@ lemma ComponentIdx.complexify_toFun_apply {n} {c : Fin n → realLorentzTensor.C
     (ComponentIdx.complexify.toFun f) j = (ComponentIdx.complexify f) j
 ```
 
-**`realLorentzTensor.basisIdxCongr_basisIdxColorToComplex_symm`**, a lemma, [line 140](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/Relativity/Tensors/RealTensor/ToComplex.lean#L140).
+**`realLorentzTensor.basisIdxCongr_basisIdxColorToComplex_symm`**, a lemma, [line 140](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Relativity/Tensors/RealTensor/ToComplex.lean#L140).
 
 ```lean
 lemma basisIdxCongr_basisIdxColorToComplex_symm {c c' : realLorentzTensor.Color}
@@ -140,7 +140,7 @@ lemma basisIdxCongr_basisIdxColorToComplex_symm {c c' : realLorentzTensor.Color}
       ((basisIdxColorToComplex c).symm x) = (basisIdxColorToComplex c').symm x
 ```
 
-**`realLorentzTensor.basisIdxTauEquiv_basisIdxCongr_basisIdxColorToComplex_symm`**, a lemma, [line 147](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/Relativity/Tensors/RealTensor/ToComplex.lean#L147).
+**`realLorentzTensor.basisIdxTauEquiv_basisIdxCongr_basisIdxColorToComplex_symm`**, a lemma, [line 147](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Relativity/Tensors/RealTensor/ToComplex.lean#L147).
 
 ```lean
 lemma basisIdxTauEquiv_basisIdxCongr_basisIdxColorToComplex_symm
@@ -157,7 +157,7 @@ lemma basisIdxTauEquiv_basisIdxCongr_basisIdxColorToComplex_symm
 > the real side to the corresponding basis on the complex side, and is therefore
 > determined by the behaviour on components.
 
-**`realLorentzTensor.toComplex`**, a def, [line 167](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/Relativity/Tensors/RealTensor/ToComplex.lean#L167).
+**`realLorentzTensor.toComplex`**, a def, [line 167](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Relativity/Tensors/RealTensor/ToComplex.lean#L167).
 
 > The semilinear map from real Lorentz tensors to complex Lorentz tensors,
 > defined through basis.
@@ -167,7 +167,7 @@ noncomputable def toComplex {n} {c : Fin n → realLorentzTensor.Color} :
     ℝT(3, c) →ₛₗ[Complex.ofRealHom] ℂT(colorToComplex ∘ c)
 ```
 
-**`realLorentzTensor.toComplex_eq_sum_basis`**, a lemma, [line 185](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/Relativity/Tensors/RealTensor/ToComplex.lean#L185).
+**`realLorentzTensor.toComplex_eq_sum_basis`**, a lemma, [line 185](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Relativity/Tensors/RealTensor/ToComplex.lean#L185).
 
 ```lean
 lemma toComplex_eq_sum_basis {n} (c : Fin n → realLorentzTensor.Color) (v : ℝT(3, c)) :
@@ -176,7 +176,7 @@ lemma toComplex_eq_sum_basis {n} (c : Fin n → realLorentzTensor.Color) (v : �
       Tensor.basis (S := complexLorentzTensor) (colorToComplex ∘ c) i
 ```
 
-**`realLorentzTensor.toComplex_repr`**, a lemma, [line 194](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/Relativity/Tensors/RealTensor/ToComplex.lean#L194).
+**`realLorentzTensor.toComplex_repr`**, a lemma, [line 194](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Relativity/Tensors/RealTensor/ToComplex.lean#L194).
 
 > The representation of `toComplex v` in the complexified basis equals
 > the real representation coerced to complex.
@@ -189,7 +189,7 @@ lemma toComplex_repr {n} {c : Fin n → realLorentzTensor.Color}
     ↑((Tensor.basis (S := realLorentzTensor) c).repr v i)
 ```
 
-**`realLorentzTensor.toComplex_basis`**, a lemma, [line 206](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/Relativity/Tensors/RealTensor/ToComplex.lean#L206).
+**`realLorentzTensor.toComplex_basis`**, a lemma, [line 206](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Relativity/Tensors/RealTensor/ToComplex.lean#L206).
 
 > `toComplex` sends basis elements to basis elements.
 
@@ -200,7 +200,7 @@ lemma toComplex_basis {n} {c : Fin n → realLorentzTensor.Color}
       (Tensor.basis (S := complexLorentzTensor) (colorToComplex ∘ c)) i.complexify
 ```
 
-**`realLorentzTensor.toComplex_pure_basisVector`**, a lemma, [line 215](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/Relativity/Tensors/RealTensor/ToComplex.lean#L215).
+**`realLorentzTensor.toComplex_pure_basisVector`**, a lemma, [line 215](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Relativity/Tensors/RealTensor/ToComplex.lean#L215).
 
 > `toComplex` on a pure basis vector.
 
@@ -212,21 +212,21 @@ lemma toComplex_pure_basisVector {n} {c : Fin n → realLorentzTensor.Color}
     (Pure.basisVector (colorToComplex ∘ c) b.complexify).toTensor
 ```
 
-**`realLorentzTensor.toComplex_map_smul`**, a lemma, [line 222](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/Relativity/Tensors/RealTensor/ToComplex.lean#L222).
+**`realLorentzTensor.toComplex_map_smul`**, a lemma, [line 222](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Relativity/Tensors/RealTensor/ToComplex.lean#L222).
 
 ```lean
 lemma toComplex_map_smul {n} (c : Fin n → realLorentzTensor.Color) (r : ℝ) (t : ℝT(3, c)) :
     toComplex (c := c) (r • t) = (Complex.ofReal r) • toComplex (c := c) t
 ```
 
-**`realLorentzTensor.toComplex_eq_zero_iff`**, a lemma, [line 227](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/Relativity/Tensors/RealTensor/ToComplex.lean#L227).
+**`realLorentzTensor.toComplex_eq_zero_iff`**, a lemma, [line 227](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Relativity/Tensors/RealTensor/ToComplex.lean#L227).
 
 ```lean
 lemma toComplex_eq_zero_iff {n} (c : Fin n → realLorentzTensor.Color) (v : ℝT(3, c)) :
     toComplex v = 0 ↔ v = 0
 ```
 
-**`realLorentzTensor.toComplex_injective`**, a lemma, [line 238](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/Relativity/Tensors/RealTensor/ToComplex.lean#L238).
+**`realLorentzTensor.toComplex_injective`**, a lemma, [line 238](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Relativity/Tensors/RealTensor/ToComplex.lean#L238).
 
 > The map `toComplex` is injective.
 
@@ -237,7 +237,7 @@ lemma toComplex_injective {n} (c : Fin n → realLorentzTensor.Color) :
 
 ## pure
 
-**`realLorentzTensor.toComplexVector`**, a def, [line 254](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/Relativity/Tensors/RealTensor/ToComplex.lean#L254).
+**`realLorentzTensor.toComplexVector`**, a def, [line 254](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Relativity/Tensors/RealTensor/ToComplex.lean#L254).
 
 > For a given color, the map turning a real Lorentz vector into a complex one.
 
@@ -247,21 +247,21 @@ noncomputable def toComplexVector (c : realLorentzTensor.Color) :
     (colorToComplex c)
 ```
 
-**`realLorentzTensor.toComplexVector_up_eq_inclCongrRealLorentz`**, a lemma, [line 289](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/Relativity/Tensors/RealTensor/ToComplex.lean#L289).
+**`realLorentzTensor.toComplexVector_up_eq_inclCongrRealLorentz`**, a lemma, [line 289](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Relativity/Tensors/RealTensor/ToComplex.lean#L289).
 
 ```lean
 lemma toComplexVector_up_eq_inclCongrRealLorentz (v : Lorentz.ContrMod 3) :
     toComplexVector Color.up v = Lorentz.inclCongrRealLorentz v
 ```
 
-**`realLorentzTensor.toComplexVector_down_eq_inclCoRealLorentz`**, a lemma, [line 298](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/Relativity/Tensors/RealTensor/ToComplex.lean#L298).
+**`realLorentzTensor.toComplexVector_down_eq_inclCoRealLorentz`**, a lemma, [line 298](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Relativity/Tensors/RealTensor/ToComplex.lean#L298).
 
 ```lean
 lemma toComplexVector_down_eq_inclCoRealLorentz (v : Lorentz.CoMod 3) :
     toComplexVector Color.down v = Lorentz.inclCoRealLorentz v
 ```
 
-**`realLorentzTensor.toComplexPure`**, a def, [line 309](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/Relativity/Tensors/RealTensor/ToComplex.lean#L309).
+**`realLorentzTensor.toComplexPure`**, a def, [line 309](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Relativity/Tensors/RealTensor/ToComplex.lean#L309).
 
 > The function which turns a real pure tensor into a complex one.
 
@@ -270,7 +270,7 @@ noncomputable def toComplexPure {c : Fin n → Color} (p : Pure realLorentzTenso
     Pure complexLorentzTensor (colorToComplex ∘ c)
 ```
 
-**`realLorentzTensor.toComplexPure_component`**, a lemma, [line 313](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/Relativity/Tensors/RealTensor/ToComplex.lean#L313).
+**`realLorentzTensor.toComplexPure_component`**, a lemma, [line 313](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Relativity/Tensors/RealTensor/ToComplex.lean#L313).
 
 ```lean
 lemma toComplexPure_component {c : Fin n → Color} (p : Pure realLorentzTensor c)
@@ -278,7 +278,7 @@ lemma toComplexPure_component {c : Fin n → Color} (p : Pure realLorentzTensor 
       p.component φ
 ```
 
-**`realLorentzTensor.actionP_toComplexPure`**, a lemma, [line 343](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/Relativity/Tensors/RealTensor/ToComplex.lean#L343).
+**`realLorentzTensor.actionP_toComplexPure`**, a lemma, [line 343](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Relativity/Tensors/RealTensor/ToComplex.lean#L343).
 
 ```lean
 lemma actionP_toComplexPure {n : ℕ} (c : Fin n → Color) (p : Pure realLorentzTensor c)
@@ -286,7 +286,7 @@ lemma actionP_toComplexPure {n : ℕ} (c : Fin n → Color) (p : Pure realLorent
     Λ • toComplexPure p = toComplexPure (toLorentzGroup Λ • p)
 ```
 
-**`realLorentzTensor.toComplex_pure`**, a lemma, [line 377](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/Relativity/Tensors/RealTensor/ToComplex.lean#L377).
+**`realLorentzTensor.toComplex_pure`**, a lemma, [line 377](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Relativity/Tensors/RealTensor/ToComplex.lean#L377).
 
 ```lean
 lemma toComplex_pure {n : ℕ} (c : Fin n → Color) (p : Pure realLorentzTensor c) :
@@ -298,7 +298,7 @@ lemma toComplex_pure {n : ℕ} (c : Fin n → Color) (p : Pure realLorentzTensor
 > Finally we record that `toComplex` is equivariant for the natural action of
 > `SL(2, ℂ)` (and hence the induced Lorentz action) on tensors.
 
-**`realLorentzTensor.toComplex_equivariant`**, a lemma, [line 394](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/Relativity/Tensors/RealTensor/ToComplex.lean#L394).
+**`realLorentzTensor.toComplex_equivariant`**, a lemma, [line 394](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Relativity/Tensors/RealTensor/ToComplex.lean#L394).
 
 > The map `toComplex` is equivariant.
 
@@ -314,7 +314,7 @@ lemma toComplex_equivariant {n} {c : Fin n → realLorentzTensor.Color}
 > slots. On colours this is encoded in the `IsReindexing` predicate, and on tensors
 > by the operator `permT`.
 
-**`realLorentzTensor.isReindexing_colorToComplex`**, a lemma, [line 413](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/Relativity/Tensors/RealTensor/ToComplex.lean#L413).
+**`realLorentzTensor.isReindexing_colorToComplex`**, a lemma, [line 413](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Relativity/Tensors/RealTensor/ToComplex.lean#L413).
 
 > The `IsReindexing` condition is preserved under `colorToComplex`.
 
@@ -325,7 +325,7 @@ lemma isReindexing_colorToComplex {n m : ℕ}
     IsReindexing (colorToComplex ∘ c) (colorToComplex ∘ c1) σ
 ```
 
-**`realLorentzTensor.permT_basis_real`**, a lemma, [line 420](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/Relativity/Tensors/RealTensor/ToComplex.lean#L420).
+**`realLorentzTensor.permT_basis_real`**, a lemma, [line 420](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Relativity/Tensors/RealTensor/ToComplex.lean#L420).
 
 > `permT` sends basis vectors to basis vectors.
 
@@ -339,7 +339,7 @@ lemma permT_basis_real {n m : ℕ}
       (fun j => b (σ j))
 ```
 
-**`realLorentzTensor.permT_basis_complex`**, a lemma, [line 429](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/Relativity/Tensors/RealTensor/ToComplex.lean#L429).
+**`realLorentzTensor.permT_basis_complex`**, a lemma, [line 429](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Relativity/Tensors/RealTensor/ToComplex.lean#L429).
 
 ```lean
 lemma permT_basis_complex {n m : ℕ}
@@ -352,7 +352,7 @@ lemma permT_basis_complex {n m : ℕ}
       (fun j => basisIdxCongr (h.2 j) (b (σ j)))
 ```
 
-**`realLorentzTensor.permT_toComplex`**, a lemma, [line 441](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/Relativity/Tensors/RealTensor/ToComplex.lean#L441).
+**`realLorentzTensor.permT_toComplex`**, a lemma, [line 441](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Relativity/Tensors/RealTensor/ToComplex.lean#L441).
 
 > The map `toComplex` commutes with permT.
 
@@ -369,7 +369,7 @@ lemma permT_toComplex {n m : ℕ}
 
 ### D. Compatibility with tensor products: `prodT`
 
-**`realLorentzTensor.colorToComplex_append`**, a lemma, [line 467](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/Relativity/Tensors/RealTensor/ToComplex.lean#L467).
+**`realLorentzTensor.colorToComplex_append`**, a lemma, [line 467](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Relativity/Tensors/RealTensor/ToComplex.lean#L467).
 
 > `colorToComplex` commutes with `Fin.append` (as functions).
 
@@ -379,7 +379,7 @@ lemma colorToComplex_append {n m : ℕ}
     (colorToComplex ∘ Fin.append c c1) = Fin.append (colorToComplex ∘ c) (colorToComplex ∘ c1)
 ```
 
-**`realLorentzTensor.isReindexing_prodTColorToComplex`**, a lemma, [line 473](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/Relativity/Tensors/RealTensor/ToComplex.lean#L473).
+**`realLorentzTensor.isReindexing_prodTColorToComplex`**, a lemma, [line 473](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Relativity/Tensors/RealTensor/ToComplex.lean#L473).
 
 ```lean
 lemma isReindexing_prodTColorToComplex {n m : ℕ}
@@ -389,7 +389,7 @@ lemma isReindexing_prodTColorToComplex {n m : ℕ}
       (id : Fin (n + m) → Fin (n + m))
 ```
 
-**`realLorentzTensor.prodTColorToComplex`**, a def, [line 482](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/Relativity/Tensors/RealTensor/ToComplex.lean#L482).
+**`realLorentzTensor.prodTColorToComplex`**, a def, [line 482](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Relativity/Tensors/RealTensor/ToComplex.lean#L482).
 
 > `prodT` on the complex side, with colors written as `colorToComplex ∘ Fin.append ...`.
 > This is `prodT` followed by a cast using `colorToComplex_append`.
@@ -400,7 +400,7 @@ noncomputable def prodTColorToComplex {n m : ℕ}
     ℂT(colorToComplex ∘ c) → ℂT(colorToComplex ∘ c1) → ℂT(colorToComplex ∘ Fin.append c c1)
 ```
 
-**`realLorentzTensor.complexify_prod`**, a lemma, [line 506](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/Relativity/Tensors/RealTensor/ToComplex.lean#L506).
+**`realLorentzTensor.complexify_prod`**, a lemma, [line 506](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Relativity/Tensors/RealTensor/ToComplex.lean#L506).
 
 > `complexify` commutes with `prod` of component indices.
 
@@ -416,7 +416,7 @@ lemma complexify_prod {n m : ℕ}
         ComponentIdx.complexify (c := c1) b1))
 ```
 
-**`realLorentzTensor.prodT_toComplex`**, a lemma, [line 523](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/Relativity/Tensors/RealTensor/ToComplex.lean#L523).
+**`realLorentzTensor.prodT_toComplex`**, a lemma, [line 523](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Relativity/Tensors/RealTensor/ToComplex.lean#L523).
 
 > The map `toComplex` commutes with prodT.
 
@@ -433,7 +433,7 @@ lemma prodT_toComplex {n m : ℕ}
 
 ### E. Compatibility with contraction: `contrT`
 
-**`realLorentzTensor.tau_colorToComplex`**, a lemma, [line 555](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/Relativity/Tensors/RealTensor/ToComplex.lean#L555).
+**`realLorentzTensor.tau_colorToComplex`**, a lemma, [line 555](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Relativity/Tensors/RealTensor/ToComplex.lean#L555).
 
 > `τ` commutes with `colorToComplex` on the Lorentz `up/down` colors.
 
@@ -442,7 +442,7 @@ lemma tau_colorToComplex (x : realLorentzTensor.Color) :
     (complexLorentzTensor).τ (colorToComplex x) = colorToComplex ((realLorentzTensor).τ x)
 ```
 
-**`realLorentzTensor.ComponentIdx.complexify_comp_succSuccAbove`**, a lemma, [line 564](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/Relativity/Tensors/RealTensor/ToComplex.lean#L564).
+**`realLorentzTensor.ComponentIdx.complexify_comp_succSuccAbove`**, a lemma, [line 564](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Relativity/Tensors/RealTensor/ToComplex.lean#L564).
 
 > `complexify` commutes with precomposition by `succSuccAbove`.
 > We use `fun k => b (Fin.succSuccAbove i j k)` and direct application
@@ -458,7 +458,7 @@ lemma ComponentIdx.complexify_comp_succSuccAbove
     (ComponentIdx.complexify (c := c) b) (Fin.succSuccAbove i j m)
 ```
 
-**`realLorentzTensor.toComplex_contrP_basisVector`**, a lemma, [line 574](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/Relativity/Tensors/RealTensor/ToComplex.lean#L574).
+**`realLorentzTensor.toComplex_contrP_basisVector`**, a lemma, [line 574](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Relativity/Tensors/RealTensor/ToComplex.lean#L574).
 
 > For a real basis vector, `toComplex(contrP(basisVector c b))` equals
 > `contrP(basisVector (colorToComplex ∘ c) (complexify b))` (complex species).
@@ -477,7 +477,7 @@ lemma toComplex_contrP_basisVector {n : ℕ} {c : Fin (n + 1 + 1) → realLorent
       (Pure.basisVector (colorToComplex ∘ c) (ComponentIdx.complexify b))
 ```
 
-**`realLorentzTensor.contrT_toComplex`**, a lemma, [line 602](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/Relativity/Tensors/RealTensor/ToComplex.lean#L602).
+**`realLorentzTensor.contrT_toComplex`**, a lemma, [line 602](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Relativity/Tensors/RealTensor/ToComplex.lean#L602).
 
 > The map `toComplex` commutes with `contrT`.
 
@@ -496,7 +496,7 @@ lemma contrT_toComplex {n : ℕ}
 
 ### F. Compatibility with evaluation: `evalT`
 
-**`realLorentzTensor.ComponentIdx.complexify_comp_succAbove`**, a lemma, [line 632](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/Relativity/Tensors/RealTensor/ToComplex.lean#L632).
+**`realLorentzTensor.ComponentIdx.complexify_comp_succAbove`**, a lemma, [line 632](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Relativity/Tensors/RealTensor/ToComplex.lean#L632).
 
 > `complexify` commutes with precomposition by `succAbove`.
 
@@ -508,7 +508,7 @@ lemma ComponentIdx.complexify_comp_succAbove
     (ComponentIdx.complexify (c := c) b) (i.succAbove m)
 ```
 
-**`realLorentzTensor.evalIdxToComplex`**, a def, [line 640](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/Relativity/Tensors/RealTensor/ToComplex.lean#L640).
+**`realLorentzTensor.evalIdxToComplex`**, a def, [line 640](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Relativity/Tensors/RealTensor/ToComplex.lean#L640).
 
 > Convert an evaluation index from the real basis index to the complex basis index.
 
@@ -518,7 +518,7 @@ noncomputable def evalIdxToComplex {n : ℕ}
     (b : Fin 1 ⊕ Fin 3) : complexLorentzTensor.basisIdx ((colorToComplex ∘ c) i)
 ```
 
-**`realLorentzTensor.evalTColorToComplex`**, a def, [line 647](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/Relativity/Tensors/RealTensor/ToComplex.lean#L647).
+**`realLorentzTensor.evalTColorToComplex`**, a def, [line 647](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Relativity/Tensors/RealTensor/ToComplex.lean#L647).
 
 > `evalT` on the complex side, but with output colors as `colorToComplex ∘ (c ∘ i.succAbove)`.
 > Implemented via `permT (σ := id) (by simp)` as a transport.
@@ -530,7 +530,7 @@ noncomputable def evalTColorToComplex {n : ℕ}
     ℂT(colorToComplex ∘ c) → ℂT(colorToComplex ∘ (c ∘ i.succAbove))
 ```
 
-**`realLorentzTensor.toComplex_evalP_basisVector`**, a lemma, [line 662](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/Relativity/Tensors/RealTensor/ToComplex.lean#L662).
+**`realLorentzTensor.toComplex_evalP_basisVector`**, a lemma, [line 662](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Relativity/Tensors/RealTensor/ToComplex.lean#L662).
 
 > For a real basis vector, `toComplex(evalP(basisVector c b))` equals
 > `evalP(basisVector (colorToComplex ∘ c) (complexify b))` (complex species).
@@ -548,7 +548,7 @@ lemma toComplex_evalP_basisVector {n : ℕ} {c : Fin (n + 1) → realLorentzTens
         (Pure.basisVector (colorToComplex ∘ c) (ComponentIdx.complexify b')))
 ```
 
-**`realLorentzTensor.evalT_toComplex`**, a lemma, [line 693](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/Relativity/Tensors/RealTensor/ToComplex.lean#L693).
+**`realLorentzTensor.evalT_toComplex`**, a lemma, [line 693](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Relativity/Tensors/RealTensor/ToComplex.lean#L693).
 
 > The map `toComplex` commutes with `evalT`.
 
@@ -568,4 +568,4 @@ lemma evalT_toComplex {n : ℕ}
 
 ## Sources
 
-- [Physlib/Relativity/Tensors/RealTensor/ToComplex.lean at 2a1dfe43](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/Relativity/Tensors/RealTensor/ToComplex.lean)
+- [Physlib/Relativity/Tensors/RealTensor/ToComplex.lean at 8c87bdfb](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Relativity/Tensors/RealTensor/ToComplex.lean)

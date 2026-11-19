@@ -1,14 +1,14 @@
 ---
 declaration: module
 origin: cited
-lean: ProbabilisticTheory.QuantumMechanics.starHomCommutant, ProbabilisticTheory.QuantumMechanics.mem_starHomCommutant_iff, ProbabilisticTheory.QuantumMechanics.starHomCommutant_isClosed, ProbabilisticTheory.QuantumMechanics.starHomSpectralOperator_commute_of_commute, ProbabilisticTheory.QuantumMechanics.starHomSpectralMeasure_commute_of_commute
+lean: PhyslibAlpha.ProbabilisticTheory.QuantumMechanics.starHomCommutant, PhyslibAlpha.ProbabilisticTheory.QuantumMechanics.mem_starHomCommutant_iff, PhyslibAlpha.ProbabilisticTheory.QuantumMechanics.starHomCommutant_isClosed, PhyslibAlpha.ProbabilisticTheory.QuantumMechanics.starHomSpectralOperator_commute_of_commute, PhyslibAlpha.ProbabilisticTheory.QuantumMechanics.starHomSpectralMeasure_commute_of_commute
 statement: formalized
 proof: formalized
 ---
 
 # The commutant of a representation of continuous functions
 
-The module `PhyslibAlpha.ProbabilisticTheory.HilbertSpace.Unbounded.StarHomSpec.Commutant`, [PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/StarHomSpec/Commutant.lean](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/StarHomSpec/Commutant.lean): 5 declarations, 3 with a docstring.
+The module `PhyslibAlpha.ProbabilisticTheory.HilbertSpace.Unbounded.StarHomSpec.Commutant`, [PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/StarHomSpec/Commutant.lean](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/StarHomSpec/Commutant.lean): 5 declarations, 3 with a docstring.
 
 > Every bounded operator commuting with the range of `Φ` commutes with its spectral measure.
 
@@ -28,7 +28,7 @@ The module `PhyslibAlpha.ProbabilisticTheory.HilbertSpace.Unbounded.StarHomSpec.
 
 > * None.
 
-**`ProbabilisticTheory.QuantumMechanics.starHomCommutant`**, a def, [line 57](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/StarHomSpec/Commutant.lean#L57).
+**`PhyslibAlpha.ProbabilisticTheory.QuantumMechanics.starHomCommutant`**, a def, [line 57](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/StarHomSpec/Commutant.lean#L57).
 
 > The commutant of the range of `Φ`, a ⋆-subalgebra of the bounded operators.
 
@@ -36,14 +36,14 @@ The module `PhyslibAlpha.ProbabilisticTheory.HilbertSpace.Unbounded.StarHomSpec.
 def starHomCommutant : StarSubalgebra ℂ (H →L[ℂ] H)
 ```
 
-**`ProbabilisticTheory.QuantumMechanics.mem_starHomCommutant_iff`**, a lemma, [line 61](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/StarHomSpec/Commutant.lean#L61).
+**`PhyslibAlpha.ProbabilisticTheory.QuantumMechanics.mem_starHomCommutant_iff`**, a lemma, [line 61](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/StarHomSpec/Commutant.lean#L61).
 
 ```lean
 lemma mem_starHomCommutant_iff {T : H →L[ℂ] H} :
     T ∈ starHomCommutant Φ ↔ ∀ f : C(X, ℂ), Commute (Φ f) T
 ```
 
-**`ProbabilisticTheory.QuantumMechanics.starHomCommutant_isClosed`**, an instance, [line 72](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/StarHomSpec/Commutant.lean#L72).
+**`PhyslibAlpha.ProbabilisticTheory.QuantumMechanics.starHomCommutant_isClosed`**, an instance, [line 72](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/StarHomSpec/Commutant.lean#L72).
 
 ```lean
 instance starHomCommutant_isClosed : IsClosed (starHomCommutant Φ : Set (H →L[ℂ] H))
@@ -51,7 +51,7 @@ instance starHomCommutant_isClosed : IsClosed (starHomCommutant Φ : Set (H →L
 
 ## A. Arbitrary operators in the commutant
 
-**`ProbabilisticTheory.QuantumMechanics.starHomSpectralOperator_commute_of_commute`**, a lemma, [line 82](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/StarHomSpec/Commutant.lean#L82).
+**`PhyslibAlpha.ProbabilisticTheory.QuantumMechanics.starHomSpectralOperator_commute_of_commute`**, a lemma, [line 82](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/StarHomSpec/Commutant.lean#L82).
 
 > **The spectral operators commute with the commutant**: every bounded operator commuting with
 > the range of `Φ` commutes with each spectral operator of `Φ`. A bounded operator commuting with the
@@ -64,7 +64,7 @@ lemma starHomSpectralOperator_commute_of_commute {T : H →L[ℂ] H}
     starHomSpectralOperator Φ S * T = T * starHomSpectralOperator Φ S
 ```
 
-**`ProbabilisticTheory.QuantumMechanics.starHomSpectralMeasure_commute_of_commute`**, a lemma, [line 104](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/StarHomSpec/Commutant.lean#L104).
+**`PhyslibAlpha.ProbabilisticTheory.QuantumMechanics.starHomSpectralMeasure_commute_of_commute`**, a lemma, [line 104](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/StarHomSpec/Commutant.lean#L104).
 
 > **The spectral measure commutes with the commutant**: every bounded operator commuting with
 > the range of `Φ` commutes with each spectral projection of `Φ`.
@@ -82,4 +82,4 @@ lemma starHomSpectralMeasure_commute_of_commute {T : H →L[ℂ] H}
 
 ## Sources
 
-- [PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/StarHomSpec/Commutant.lean at 2a1dfe43](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/StarHomSpec/Commutant.lean)
+- [PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/StarHomSpec/Commutant.lean at 8c87bdfb](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/StarHomSpec/Commutant.lean)

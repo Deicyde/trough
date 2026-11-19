@@ -8,7 +8,7 @@ proof: formalized
 
 # A crystal in space
 
-The module `Physlib.CondensedMatter.Crystal.Embedding`, [Physlib/CondensedMatter/Crystal/Embedding.lean](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/CondensedMatter/Crystal/Embedding.lean): 10 declarations, 10 with a docstring.
+The module `Physlib.CondensedMatter.Crystal.Embedding`, [Physlib/CondensedMatter/Crystal/Embedding.lean](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/CondensedMatter/Crystal/Embedding.lean): 10 declarations, 10 with a docstring.
 
 > Embedding of a crystal into a space.
 
@@ -41,7 +41,7 @@ The module `Physlib.CondensedMatter.Crystal.Embedding`, [Physlib/CondensedMatter
 
 ## A. Vectors and positions
 
-**`Physlib.CondensedMatter.Crystal.Embedding`**, a structure, [line 63](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/CondensedMatter/Crystal/Embedding.lean#L63).
+**`Physlib.CondensedMatter.Crystal.Embedding`**, a structure, [line 63](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/CondensedMatter/Crystal/Embedding.lean#L63).
 
 > An embedding of a crystal in a normed group `E`. It assigns a vector to each translation and a
 > position to each site of the reference cell.
@@ -54,7 +54,7 @@ structure Embedding (C : Crystal G) (E : Type*) [NormedAddCommGroup E] where
   basis : C.UnitCell → E
 ```
 
-**`Physlib.CondensedMatter.Crystal.Embedding.position`**, a def, [line 74](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/CondensedMatter/Crystal/Embedding.lean#L74).
+**`Physlib.CondensedMatter.Crystal.Embedding.position`**, a def, [line 74](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/CondensedMatter/Crystal/Embedding.lean#L74).
 
 > The site `(n, i)` sits at the vector of `n` plus the position of the label `i`.
 
@@ -62,7 +62,7 @@ structure Embedding (C : Crystal G) (E : Type*) [NormedAddCommGroup E] where
 def position (x : C.Site) : E
 ```
 
-**`Physlib.CondensedMatter.Crystal.Embedding.position_vadd`**, a lemma, [line 77](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/CondensedMatter/Crystal/Embedding.lean#L77).
+**`Physlib.CondensedMatter.Crystal.Embedding.position_vadd`**, a lemma, [line 77](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/CondensedMatter/Crystal/Embedding.lean#L77).
 
 > Translating a site by `a` translates its position by the vector of `a`.
 
@@ -70,7 +70,7 @@ def position (x : C.Site) : E
 lemma position_vadd (a : G) (x : C.Site) : R.position (a +ᵥ x) = R.vector a + R.position x
 ```
 
-**`Physlib.CondensedMatter.Crystal.Embedding.action`**, an abbrev, [line 81](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/CondensedMatter/Crystal/Embedding.lean#L81).
+**`Physlib.CondensedMatter.Crystal.Embedding.action`**, an abbrev, [line 81](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/CondensedMatter/Crystal/Embedding.lean#L81).
 
 > The translation group acts on the space by its vectors.
 
@@ -78,7 +78,7 @@ lemma position_vadd (a : G) (x : C.Site) : R.position (a +ᵥ x) = R.vector a + 
 abbrev action : AddAction G E
 ```
 
-**`Physlib.CondensedMatter.Crystal.Embedding.positionHom`**, a def, [line 84](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/CondensedMatter/Crystal/Embedding.lean#L84).
+**`Physlib.CondensedMatter.Crystal.Embedding.positionHom`**, a def, [line 84](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/CondensedMatter/Crystal/Embedding.lean#L84).
 
 > The positions commute with the translations.
 
@@ -86,7 +86,7 @@ abbrev action : AddAction G E
 def positionHom : letI := R.action; AddActionHom (id : G → G) C.Site E
 ```
 
-**`Physlib.CondensedMatter.Crystal.Embedding.dist_position_vadd`**, a lemma, [line 90](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/CondensedMatter/Crystal/Embedding.lean#L90).
+**`Physlib.CondensedMatter.Crystal.Embedding.dist_position_vadd`**, a lemma, [line 90](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/CondensedMatter/Crystal/Embedding.lean#L90).
 
 > Translating two sites does not change the distance between their positions.
 
@@ -98,7 +98,7 @@ lemma dist_position_vadd (a : G) (x y : C.Site) :
 
 ## B. Filling the space
 
-**`Physlib.CondensedMatter.Crystal.Embedding.IsSpaceFilling`**, a def, [line 101](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/CondensedMatter/Crystal/Embedding.lean#L101).
+**`Physlib.CondensedMatter.Crystal.Embedding.IsSpaceFilling`**, a def, [line 101](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/CondensedMatter/Crystal/Embedding.lean#L101).
 
 > The embedding is space filling if the vectors of the translations span the space, so that the
 > crystal repeats in every direction.
@@ -107,7 +107,7 @@ lemma dist_position_vadd (a : G) (x y : C.Site) :
 def IsSpaceFilling : Prop
 ```
 
-**`Physlib.CondensedMatter.Crystal.Embedding.isSpaceFilling_iff`**, a lemma, [line 105](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/CondensedMatter/Crystal/Embedding.lean#L105).
+**`Physlib.CondensedMatter.Crystal.Embedding.isSpaceFilling_iff`**, a lemma, [line 105](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/CondensedMatter/Crystal/Embedding.lean#L105).
 
 > An embedding fills the space exactly when the vectors of a generating set of the translation
 > group span it.
@@ -117,7 +117,7 @@ lemma isSpaceFilling_iff {S : Set G} (hS : AddSubgroup.closure S = ⊤) :
     R.IsSpaceFilling ↔ Submodule.span ℝ (R.vector '' S) = ⊤
 ```
 
-**`Physlib.CondensedMatter.Crystal.Embedding.IsSpaceFilling.finiteDimensional`**, a lemma, [line 118](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/CondensedMatter/Crystal/Embedding.lean#L118).
+**`Physlib.CondensedMatter.Crystal.Embedding.IsSpaceFilling.finiteDimensional`**, a lemma, [line 118](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/CondensedMatter/Crystal/Embedding.lean#L118).
 
 > A space-filling embedding is in a finite-dimensional space.
 
@@ -125,7 +125,7 @@ lemma isSpaceFilling_iff {S : Set G} (hS : AddSubgroup.closure S = ⊤) :
 lemma IsSpaceFilling.finiteDimensional (h : R.IsSpaceFilling) : FiniteDimensional ℝ E
 ```
 
-**`Physlib.CondensedMatter.Crystal.Embedding.IsSpaceFilling.finrank_eq_rank`**, a lemma, [line 124](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/CondensedMatter/Crystal/Embedding.lean#L124).
+**`Physlib.CondensedMatter.Crystal.Embedding.IsSpaceFilling.finrank_eq_rank`**, a lemma, [line 124](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/CondensedMatter/Crystal/Embedding.lean#L124).
 
 > The dimension equals the rank of the translation group when the vectors of a basis of the
 > group are linearly independent over `ℝ`.
@@ -142,4 +142,4 @@ lemma IsSpaceFilling.finrank_eq_rank (h : R.IsSpaceFilling) {ι : Type*} [Fintyp
 
 ## Sources
 
-- [Physlib/CondensedMatter/Crystal/Embedding.lean at 2a1dfe43](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/CondensedMatter/Crystal/Embedding.lean)
+- [Physlib/CondensedMatter/Crystal/Embedding.lean at 8c87bdfb](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/CondensedMatter/Crystal/Embedding.lean)

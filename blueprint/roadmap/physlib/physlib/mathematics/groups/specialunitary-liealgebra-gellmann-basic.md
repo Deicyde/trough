@@ -8,7 +8,7 @@ proof: formalized
 
 # The generalized Gell-Mann matrices (Physlib)
 
-The module `Physlib.Mathematics.Groups.SpecialUnitary.LieAlgebra.GellMann.Basic`, [Physlib/Mathematics/Groups/SpecialUnitary/LieAlgebra/GellMann/Basic.lean](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/Mathematics/Groups/SpecialUnitary/LieAlgebra/GellMann/Basic.lean): 32 declarations, 17 with a docstring.
+The module `Physlib.Mathematics.Groups.SpecialUnitary.LieAlgebra.GellMann.Basic`, [Physlib/Mathematics/Groups/SpecialUnitary/LieAlgebra/GellMann/Basic.lean](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Mathematics/Groups/SpecialUnitary/LieAlgebra/GellMann/Basic.lean): 32 declarations, 17 with a docstring.
 
 > The generalized Gell-Mann matrices, orthogonality, the basis and the structure constants they form.
 
@@ -45,7 +45,7 @@ The module `Physlib.Mathematics.Groups.SpecialUnitary.LieAlgebra.GellMann.Basic`
 
 ## A. The indexing type of the Gell-Mann matrices
 
-**`SULieAlgebra.GellMannIndex`**, an inductive, [line 80](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/Mathematics/Groups/SpecialUnitary/LieAlgebra/GellMann/Basic.lean#L80).
+**`SULieAlgebra.GellMannIndex`**, an inductive, [line 80](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Mathematics/Groups/SpecialUnitary/LieAlgebra/GellMann/Basic.lean#L80).
 
 > The indexing type of the Gell-Mann matrices.
 
@@ -59,7 +59,7 @@ deriving DecidableEq, Repr, Fintype
 
 ### A.1. The cardinality of `GellMannIndex`
 
-**`SULieAlgebra.gellMannIndex_card`**, a lemma, [line 94](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/Mathematics/Groups/SpecialUnitary/LieAlgebra/GellMann/Basic.lean#L94).
+**`SULieAlgebra.gellMannIndex_card`**, a lemma, [line 94](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Mathematics/Groups/SpecialUnitary/LieAlgebra/GellMann/Basic.lean#L94).
 
 > There are `n² - 1` generalized Gell-Mann matrices: `n (n - 1) / 2` symmetric ones, as many
 > antisymmetric ones, and `n - 1` diagonal ones.
@@ -70,7 +70,7 @@ lemma gellMannIndex_card {n : ℕ} : Fintype.card (GellMannIndex n) = n ^ 2 - 1
 
 ## B. The generalized Gell-Mann matrices
 
-**`SULieAlgebra.gellMannMatrices`**, a def, [line 143](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/Mathematics/Groups/SpecialUnitary/LieAlgebra/GellMann/Basic.lean#L143).
+**`SULieAlgebra.gellMannMatrices`**, a def, [line 143](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Mathematics/Groups/SpecialUnitary/LieAlgebra/GellMann/Basic.lean#L143).
 
 > The generalized Gell-Mann matrices, as elements of `su(n)`:
 >
@@ -85,7 +85,7 @@ noncomputable def gellMannMatrices {n : ℕ} : GellMannIndex n → SULieAlgebra 
 
 ### B.1. Symmetry properties
 
-**`SULieAlgebra.gellMannMatrices_symm_isSymm`**, a lemma, [line 178](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/Mathematics/Groups/SpecialUnitary/LieAlgebra/GellMann/Basic.lean#L178).
+**`SULieAlgebra.gellMannMatrices_symm_isSymm`**, a lemma, [line 178](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Mathematics/Groups/SpecialUnitary/LieAlgebra/GellMann/Basic.lean#L178).
 
 > The symmetric generalized Gell-Mann matrices are symmetric.
 
@@ -94,7 +94,7 @@ lemma gellMannMatrices_symm_isSymm {n : ℕ} (p q : Fin n) (h : p < q) :
     Matrix.IsSymm (gellMannMatrices (.symm p q h)).1
 ```
 
-**`SULieAlgebra.gellMannMatrices_antisymm_transpose`**, a lemma, [line 183](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/Mathematics/Groups/SpecialUnitary/LieAlgebra/GellMann/Basic.lean#L183).
+**`SULieAlgebra.gellMannMatrices_antisymm_transpose`**, a lemma, [line 183](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Mathematics/Groups/SpecialUnitary/LieAlgebra/GellMann/Basic.lean#L183).
 
 > The antisymmetric generalized Gell-Mann matrices are antisymmetric.
 
@@ -103,7 +103,7 @@ lemma gellMannMatrices_antisymm_transpose {n : ℕ} (p q : Fin n) (h : p < q) :
     (gellMannMatrices (.antisymm p q h)).1ᵀ = -(gellMannMatrices (.antisymm p q h)).1
 ```
 
-**`SULieAlgebra.gellMannMatrices_diag_isDiag`**, a lemma, [line 189](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/Mathematics/Groups/SpecialUnitary/LieAlgebra/GellMann/Basic.lean#L189).
+**`SULieAlgebra.gellMannMatrices_diag_isDiag`**, a lemma, [line 189](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Mathematics/Groups/SpecialUnitary/LieAlgebra/GellMann/Basic.lean#L189).
 
 > The diagonal generalized Gell-Mann matrices are diagonal.
 
@@ -114,21 +114,21 @@ lemma gellMannMatrices_diag_isDiag {n : ℕ} (l : Fin (n - 1)) :
 
 ### B.2. Explicit forms
 
-**`SULieAlgebra.gellMannMatrices_symm_val_eq`**, a lemma, [line 199](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/Mathematics/Groups/SpecialUnitary/LieAlgebra/GellMann/Basic.lean#L199).
+**`SULieAlgebra.gellMannMatrices_symm_val_eq`**, a lemma, [line 199](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Mathematics/Groups/SpecialUnitary/LieAlgebra/GellMann/Basic.lean#L199).
 
 ```lean
 lemma gellMannMatrices_symm_val_eq {n : ℕ} (p q : Fin n) (h : p < q) :
     (gellMannMatrices (.symm p q h)).1 = single p q 1 + single q p 1
 ```
 
-**`SULieAlgebra.gellMannMatrices_antisymm_val_eq`**, a lemma, [line 202](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/Mathematics/Groups/SpecialUnitary/LieAlgebra/GellMann/Basic.lean#L202).
+**`SULieAlgebra.gellMannMatrices_antisymm_val_eq`**, a lemma, [line 202](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Mathematics/Groups/SpecialUnitary/LieAlgebra/GellMann/Basic.lean#L202).
 
 ```lean
 lemma gellMannMatrices_antisymm_val_eq {n : ℕ} (p q : Fin n) (h : p < q) :
     (gellMannMatrices (.antisymm p q h)).1 = single p q (-Complex.I) + single q p Complex.I
 ```
 
-**`SULieAlgebra.gellMannMatrices_diag_val_eq`**, a lemma, [line 206](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/Mathematics/Groups/SpecialUnitary/LieAlgebra/GellMann/Basic.lean#L206).
+**`SULieAlgebra.gellMannMatrices_diag_val_eq`**, a lemma, [line 206](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Mathematics/Groups/SpecialUnitary/LieAlgebra/GellMann/Basic.lean#L206).
 
 ```lean
 lemma gellMannMatrices_diag_val_eq {n : ℕ} (l : Fin (n - 1)) :
@@ -140,7 +140,7 @@ lemma gellMannMatrices_diag_val_eq {n : ℕ} (l : Fin (n - 1)) :
 
 #### B.3.1. Between different types
 
-**`SULieAlgebra.adjointContr_gellMannMatrices_symm_antisymm_eq_zero`**, a lemma, [line 223](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/Mathematics/Groups/SpecialUnitary/LieAlgebra/GellMann/Basic.lean#L223).
+**`SULieAlgebra.adjointContr_gellMannMatrices_symm_antisymm_eq_zero`**, a lemma, [line 223](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Mathematics/Groups/SpecialUnitary/LieAlgebra/GellMann/Basic.lean#L223).
 
 ```lean
 lemma adjointContr_gellMannMatrices_symm_antisymm_eq_zero {n : ℕ} (p q : Fin n) (h : p < q)
@@ -148,7 +148,7 @@ lemma adjointContr_gellMannMatrices_symm_antisymm_eq_zero {n : ℕ} (p q : Fin n
     adjointContr (gellMannMatrices (.symm p q h) ⊗ₜ gellMannMatrices (.antisymm p' q' h')) = 0
 ```
 
-**`SULieAlgebra.adjointContr_gellMannMatrices_symm_diag_eq_zero`**, a lemma, [line 231](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/Mathematics/Groups/SpecialUnitary/LieAlgebra/GellMann/Basic.lean#L231).
+**`SULieAlgebra.adjointContr_gellMannMatrices_symm_diag_eq_zero`**, a lemma, [line 231](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Mathematics/Groups/SpecialUnitary/LieAlgebra/GellMann/Basic.lean#L231).
 
 ```lean
 lemma adjointContr_gellMannMatrices_symm_diag_eq_zero {n : ℕ} (p q : Fin n) (h : p < q)
@@ -156,7 +156,7 @@ lemma adjointContr_gellMannMatrices_symm_diag_eq_zero {n : ℕ} (p q : Fin n) (h
     adjointContr (gellMannMatrices (.symm p q h) ⊗ₜ gellMannMatrices (.diag l)) = 0
 ```
 
-**`SULieAlgebra.adjointContr_gellMannMatrices_antisymm_symm_eq_zero`**, a lemma, [line 237](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/Mathematics/Groups/SpecialUnitary/LieAlgebra/GellMann/Basic.lean#L237).
+**`SULieAlgebra.adjointContr_gellMannMatrices_antisymm_symm_eq_zero`**, a lemma, [line 237](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Mathematics/Groups/SpecialUnitary/LieAlgebra/GellMann/Basic.lean#L237).
 
 ```lean
 lemma adjointContr_gellMannMatrices_antisymm_symm_eq_zero {n : ℕ} (p q : Fin n) (h : p < q)
@@ -164,7 +164,7 @@ lemma adjointContr_gellMannMatrices_antisymm_symm_eq_zero {n : ℕ} (p q : Fin n
     adjointContr (gellMannMatrices (.antisymm p q h) ⊗ₜ gellMannMatrices (.symm p' q' h')) = 0
 ```
 
-**`SULieAlgebra.adjointContr_gellMannMatrices_antisymm_diag_eq_zero`**, a lemma, [line 245](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/Mathematics/Groups/SpecialUnitary/LieAlgebra/GellMann/Basic.lean#L245).
+**`SULieAlgebra.adjointContr_gellMannMatrices_antisymm_diag_eq_zero`**, a lemma, [line 245](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Mathematics/Groups/SpecialUnitary/LieAlgebra/GellMann/Basic.lean#L245).
 
 ```lean
 lemma adjointContr_gellMannMatrices_antisymm_diag_eq_zero {n : ℕ} (p q : Fin n) (h : p < q)
@@ -172,7 +172,7 @@ lemma adjointContr_gellMannMatrices_antisymm_diag_eq_zero {n : ℕ} (p q : Fin n
     adjointContr (gellMannMatrices (.antisymm p q h) ⊗ₜ gellMannMatrices (.diag l)) = 0
 ```
 
-**`SULieAlgebra.adjointContr_gellMannMatrices_diag_symm_eq_zero`**, a lemma, [line 251](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/Mathematics/Groups/SpecialUnitary/LieAlgebra/GellMann/Basic.lean#L251).
+**`SULieAlgebra.adjointContr_gellMannMatrices_diag_symm_eq_zero`**, a lemma, [line 251](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Mathematics/Groups/SpecialUnitary/LieAlgebra/GellMann/Basic.lean#L251).
 
 ```lean
 lemma adjointContr_gellMannMatrices_diag_symm_eq_zero {n : ℕ} (l : Fin (n - 1)) (p q : Fin n)
@@ -180,7 +180,7 @@ lemma adjointContr_gellMannMatrices_diag_symm_eq_zero {n : ℕ} (l : Fin (n - 1)
     adjointContr (gellMannMatrices (.diag l) ⊗ₜ gellMannMatrices (.symm p q h)) = 0
 ```
 
-**`SULieAlgebra.adjointContr_gellMannMatrices_diag_antisymm_eq_zero`**, a lemma, [line 257](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/Mathematics/Groups/SpecialUnitary/LieAlgebra/GellMann/Basic.lean#L257).
+**`SULieAlgebra.adjointContr_gellMannMatrices_diag_antisymm_eq_zero`**, a lemma, [line 257](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Mathematics/Groups/SpecialUnitary/LieAlgebra/GellMann/Basic.lean#L257).
 
 ```lean
 lemma adjointContr_gellMannMatrices_diag_antisymm_eq_zero {n : ℕ} (l : Fin (n - 1)) (p q : Fin n)
@@ -190,7 +190,7 @@ lemma adjointContr_gellMannMatrices_diag_antisymm_eq_zero {n : ℕ} (l : Fin (n 
 
 #### B.3.2. Between the same type
 
-**`SULieAlgebra.adjointContr_gellMannMatrices_symm_orthogonal`**, a lemma, [line 269](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/Mathematics/Groups/SpecialUnitary/LieAlgebra/GellMann/Basic.lean#L269).
+**`SULieAlgebra.adjointContr_gellMannMatrices_symm_orthogonal`**, a lemma, [line 269](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Mathematics/Groups/SpecialUnitary/LieAlgebra/GellMann/Basic.lean#L269).
 
 ```lean
 lemma adjointContr_gellMannMatrices_symm_orthogonal {n : ℕ} (p q : Fin n) (h : p < q)
@@ -199,7 +199,7 @@ lemma adjointContr_gellMannMatrices_symm_orthogonal {n : ℕ} (p q : Fin n) (h :
       if p = p' ∧ q = q' then 2 else 0
 ```
 
-**`SULieAlgebra.adjointContr_gellMannMatrices_antisymm_orthogonal`**, a lemma, [line 279](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/Mathematics/Groups/SpecialUnitary/LieAlgebra/GellMann/Basic.lean#L279).
+**`SULieAlgebra.adjointContr_gellMannMatrices_antisymm_orthogonal`**, a lemma, [line 279](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Mathematics/Groups/SpecialUnitary/LieAlgebra/GellMann/Basic.lean#L279).
 
 ```lean
 lemma adjointContr_gellMannMatrices_antisymm_orthogonal {n : ℕ} (p q : Fin n) (h : p < q)
@@ -208,7 +208,7 @@ lemma adjointContr_gellMannMatrices_antisymm_orthogonal {n : ℕ} (p q : Fin n) 
       if p = p' ∧ q = q' then 2 else 0
 ```
 
-**`SULieAlgebra.adjointContr_gellMannMatrices_diag_self`**, a lemma, [line 290](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/Mathematics/Groups/SpecialUnitary/LieAlgebra/GellMann/Basic.lean#L290).
+**`SULieAlgebra.adjointContr_gellMannMatrices_diag_self`**, a lemma, [line 290](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Mathematics/Groups/SpecialUnitary/LieAlgebra/GellMann/Basic.lean#L290).
 
 > The diagonal Gell-Mann matrices are normalized, `tr (λ_l λ_l) = 2`.
 
@@ -217,7 +217,7 @@ lemma adjointContr_gellMannMatrices_diag_self {n : ℕ} (l : Fin (n - 1)) :
     adjointContr (gellMannMatrices (.diag l) ⊗ₜ gellMannMatrices (.diag l)) = 2
 ```
 
-**`SULieAlgebra.adjointContr_gellMannMatrices_diag_orthogonal`**, a lemma, [line 316](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/Mathematics/Groups/SpecialUnitary/LieAlgebra/GellMann/Basic.lean#L316).
+**`SULieAlgebra.adjointContr_gellMannMatrices_diag_orthogonal`**, a lemma, [line 316](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Mathematics/Groups/SpecialUnitary/LieAlgebra/GellMann/Basic.lean#L316).
 
 ```lean
 lemma adjointContr_gellMannMatrices_diag_orthogonal {n : ℕ} (l l' : Fin (n - 1)) :
@@ -227,7 +227,7 @@ lemma adjointContr_gellMannMatrices_diag_orthogonal {n : ℕ} (l l' : Fin (n - 1
 
 #### B.3.3. The full orthogonality relation
 
-**`SULieAlgebra.adjointContr_gellMannMatrices`**, a lemma, [line 345](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/Mathematics/Groups/SpecialUnitary/LieAlgebra/GellMann/Basic.lean#L345).
+**`SULieAlgebra.adjointContr_gellMannMatrices`**, a lemma, [line 345](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Mathematics/Groups/SpecialUnitary/LieAlgebra/GellMann/Basic.lean#L345).
 
 > The generalized Gell-Mann matrices are orthogonal under the trace pairing,
 > with normalization `tr (λ_i λ_j) = 2 δ_ij`.
@@ -239,7 +239,7 @@ lemma adjointContr_gellMannMatrices {n : ℕ} (i j : GellMannIndex n) :
 
 ### B.4. Linear independence
 
-**`SULieAlgebra.linearIndependent_gellMannMatrices`**, a lemma, [line 367](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/Mathematics/Groups/SpecialUnitary/LieAlgebra/GellMann/Basic.lean#L367).
+**`SULieAlgebra.linearIndependent_gellMannMatrices`**, a lemma, [line 367](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Mathematics/Groups/SpecialUnitary/LieAlgebra/GellMann/Basic.lean#L367).
 
 > The generalized Gell-Mann matrices are linearly independent over `ℝ`, being orthogonal under
 > the contraction.
@@ -253,7 +253,7 @@ lemma linearIndependent_gellMannMatrices {n : ℕ} :
 
 ### C.1. The basis of `su(n)`
 
-**`SULieAlgebra.gellMannBasis`**, a def, [line 386](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/Mathematics/Groups/SpecialUnitary/LieAlgebra/GellMann/Basic.lean#L386).
+**`SULieAlgebra.gellMannBasis`**, a def, [line 386](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Mathematics/Groups/SpecialUnitary/LieAlgebra/GellMann/Basic.lean#L386).
 
 > The generalized Gell-Mann basis of `su(n)`.
 
@@ -261,13 +261,13 @@ lemma linearIndependent_gellMannMatrices {n : ℕ} :
 noncomputable def gellMannBasis {n : ℕ} : Module.Basis (GellMannIndex n) ℝ (SULieAlgebra n ℂ)
 ```
 
-**`SULieAlgebra.gellMannBasis_apply`**, a lemma, [line 391](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/Mathematics/Groups/SpecialUnitary/LieAlgebra/GellMann/Basic.lean#L391).
+**`SULieAlgebra.gellMannBasis_apply`**, a lemma, [line 391](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Mathematics/Groups/SpecialUnitary/LieAlgebra/GellMann/Basic.lean#L391).
 
 ```lean
 lemma gellMannBasis_apply {n : ℕ} (i : GellMannIndex n) : gellMannBasis i = gellMannMatrices i
 ```
 
-**`SULieAlgebra.gellMannBasis_repr_apply`**, a lemma, [line 396](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/Mathematics/Groups/SpecialUnitary/LieAlgebra/GellMann/Basic.lean#L396).
+**`SULieAlgebra.gellMannBasis_repr_apply`**, a lemma, [line 396](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Mathematics/Groups/SpecialUnitary/LieAlgebra/GellMann/Basic.lean#L396).
 
 > The coordinates in the Gell-Mann basis are the contractions with the Gell-Mann matrices,
 > `x = ∑ (adjointContr (λ_i ⊗ x) / 2) λ_i`.
@@ -279,7 +279,7 @@ lemma gellMannBasis_repr_apply {n : ℕ} (x : SULieAlgebra n ℂ) (i : GellMannI
 
 ### C.2. The basis of the complexification
 
-**`SULieAlgebra.gellMannBasisℂ`**, a def, [line 411](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/Mathematics/Groups/SpecialUnitary/LieAlgebra/GellMann/Basic.lean#L411).
+**`SULieAlgebra.gellMannBasisℂ`**, a def, [line 411](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Mathematics/Groups/SpecialUnitary/LieAlgebra/GellMann/Basic.lean#L411).
 
 > The generalized Gell-Mann basis `1 ⊗ λ_i` of the complexification `ℂ ⊗[ℝ] su(n)`.
 
@@ -287,21 +287,21 @@ lemma gellMannBasis_repr_apply {n : ℕ} (x : SULieAlgebra n ℂ) (i : GellMannI
 noncomputable def gellMannBasisℂ {n : ℕ} : Module.Basis (GellMannIndex n) ℂ (Complexification n)
 ```
 
-**`SULieAlgebra.gellMannBasisℂ_apply`**, a lemma, [line 414](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/Mathematics/Groups/SpecialUnitary/LieAlgebra/GellMann/Basic.lean#L414).
+**`SULieAlgebra.gellMannBasisℂ_apply`**, a lemma, [line 414](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Mathematics/Groups/SpecialUnitary/LieAlgebra/GellMann/Basic.lean#L414).
 
 ```lean
 lemma gellMannBasisℂ_apply {n : ℕ} (i : GellMannIndex n) :
     gellMannBasisℂ i = 1 ⊗ₜ gellMannMatrices i
 ```
 
-**`SULieAlgebra.toMatrixℂ_gellMannBasisℂ`**, a lemma, [line 419](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/Mathematics/Groups/SpecialUnitary/LieAlgebra/GellMann/Basic.lean#L419).
+**`SULieAlgebra.toMatrixℂ_gellMannBasisℂ`**, a lemma, [line 419](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Mathematics/Groups/SpecialUnitary/LieAlgebra/GellMann/Basic.lean#L419).
 
 ```lean
 lemma toMatrixℂ_gellMannBasisℂ {n : ℕ} (i : GellMannIndex n) :
     toMatrixℂ (gellMannBasisℂ i) = (gellMannMatrices i).1
 ```
 
-**`SULieAlgebra.gellMannBasisℂ_repr_apply`**, a lemma, [line 425](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/Mathematics/Groups/SpecialUnitary/LieAlgebra/GellMann/Basic.lean#L425).
+**`SULieAlgebra.gellMannBasisℂ_repr_apply`**, a lemma, [line 425](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Mathematics/Groups/SpecialUnitary/LieAlgebra/GellMann/Basic.lean#L425).
 
 > The coordinates in the complex Gell-Mann basis are the contractions with the Gell-Mann
 > matrices, `A = ∑ (adjointℂContr (λ_i ⊗ A) / 2) λ_i`.
@@ -313,7 +313,7 @@ lemma gellMannBasisℂ_repr_apply {n : ℕ} (A : Complexification n) (i : GellMa
 
 ## D. The structure constants
 
-**`SULieAlgebra.gellMannStructureConst`**, a def, [line 443](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/Mathematics/Groups/SpecialUnitary/LieAlgebra/GellMann/Basic.lean#L443).
+**`SULieAlgebra.gellMannStructureConst`**, a def, [line 443](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Mathematics/Groups/SpecialUnitary/LieAlgebra/GellMann/Basic.lean#L443).
 
 > The structure constants of `su(n)` in the Gell-Mann basis, with the physics normalisation
 > `[λ_a, λ_b] = 2 i ∑ c, f_abc λ_c`, read off by the contraction:
@@ -323,7 +323,7 @@ lemma gellMannBasisℂ_repr_apply {n : ℕ} (A : Complexification n) (i : GellMa
 noncomputable def gellMannStructureConst {n : ℕ} (a b c : GellMannIndex n) : ℝ
 ```
 
-**`SULieAlgebra.lie_gellMannMatrices`**, a lemma, [line 448](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/Mathematics/Groups/SpecialUnitary/LieAlgebra/GellMann/Basic.lean#L448).
+**`SULieAlgebra.lie_gellMannMatrices`**, a lemma, [line 448](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Mathematics/Groups/SpecialUnitary/LieAlgebra/GellMann/Basic.lean#L448).
 
 > The bracket of two Gell-Mann matrices in terms of the structure constants,
 > `⁅λ_a, λ_b⁆ = -2 ∑ c, f_abc λ_c`, the bracket `⁅x, y⁆ = i (x y - y x)` carrying a factor `i`.
@@ -334,7 +334,7 @@ lemma lie_gellMannMatrices {n : ℕ} (a b : GellMannIndex n) :
       ∑ c, (-2 * gellMannStructureConst a b c) • gellMannMatrices c
 ```
 
-**`SULieAlgebra.gellMannStructureConst_swap`**, a lemma, [line 457](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/Mathematics/Groups/SpecialUnitary/LieAlgebra/GellMann/Basic.lean#L457).
+**`SULieAlgebra.gellMannStructureConst_swap`**, a lemma, [line 457](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Mathematics/Groups/SpecialUnitary/LieAlgebra/GellMann/Basic.lean#L457).
 
 > The structure constants are antisymmetric in their first two indices.
 
@@ -343,7 +343,7 @@ lemma gellMannStructureConst_swap {n : ℕ} (a b c : GellMannIndex n) :
     gellMannStructureConst b a c = -gellMannStructureConst a b c
 ```
 
-**`SULieAlgebra.gellMannStructureConst_cycle`**, a lemma, [line 466](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/Mathematics/Groups/SpecialUnitary/LieAlgebra/GellMann/Basic.lean#L466).
+**`SULieAlgebra.gellMannStructureConst_cycle`**, a lemma, [line 466](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Mathematics/Groups/SpecialUnitary/LieAlgebra/GellMann/Basic.lean#L466).
 
 > The structure constants are invariant under cyclic permutations of their indices, the
 > contraction being invariant under the bracket. With `gellMannStructureConst_swap`, they are
@@ -360,4 +360,4 @@ lemma gellMannStructureConst_cycle {n : ℕ} (a b c : GellMannIndex n) :
 
 ## Sources
 
-- [Physlib/Mathematics/Groups/SpecialUnitary/LieAlgebra/GellMann/Basic.lean at 2a1dfe43](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/Mathematics/Groups/SpecialUnitary/LieAlgebra/GellMann/Basic.lean)
+- [Physlib/Mathematics/Groups/SpecialUnitary/LieAlgebra/GellMann/Basic.lean at 8c87bdfb](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Mathematics/Groups/SpecialUnitary/LieAlgebra/GellMann/Basic.lean)

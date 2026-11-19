@@ -1,15 +1,15 @@
 # LorentzGroup
 
-The folder [PhyslibAlpha/Relativity/LorentzGroup/](https://github.com/leanprover-community/physlib/tree/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Relativity/LorentzGroup): 15 modules, an article each, in path order with Basic.lean first in its folder.
+The folder [PhyslibAlpha/Relativity/LorentzGroup/](https://github.com/leanprover-community/physlib/tree/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Relativity/LorentzGroup): 15 modules, an article each, in path order with Basic.lean first in its folder.
 
 - [The defining relation of the Lorentz group on its entries](basic.md)
 - [Fermionic parity](fermionicparity.md)
 
-Modules in [Boosts/](https://github.com/leanprover-community/physlib/tree/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Relativity/LorentzGroup/Boosts):
+Modules in [Boosts/](https://github.com/leanprover-community/physlib/tree/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Relativity/LorentzGroup/Boosts):
 
 - [Entries of an axis boost](boosts-axis.md)
 
-Modules in [Invariants/](https://github.com/leanprover-community/physlib/tree/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Relativity/LorentzGroup/Invariants):
+Modules in [Invariants/](https://github.com/leanprover-community/physlib/tree/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Relativity/LorentzGroup/Invariants):
 
 - [Invariant coefficient tensors on spacetime indices](invariants-basic.md)
 - [The colours of complex Lorentz tensors are closed under adjoints](invariants-adjointclosed.md)

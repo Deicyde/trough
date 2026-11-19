@@ -4,11 +4,11 @@ navigation: transparent
 
 # The gauge-boson field of a… to The gauge law on brackets and…
 
-Modules in [GaugeBoson/](https://github.com/leanprover-community/physlib/tree/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/GaugeBoson):
+Modules in [GaugeBoson/](https://github.com/leanprover-community/physlib/tree/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/GaugeBoson):
 
 - [The gauge-boson field of a gauge theory](gaugeboson-basic.md)
 
-Modules in [GaugeBoson/LocalGauge/](https://github.com/leanprover-community/physlib/tree/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/GaugeBoson/LocalGauge):
+Modules in [GaugeBoson/LocalGauge/](https://github.com/leanprover-community/physlib/tree/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/GaugeBoson/LocalGauge):
 
 - [The local gauge field algebra of a gauge theory](gaugeboson-localgauge-basic.md)
 - [The field strength in the local gauge field algebra](gaugeboson-localgauge-fieldstrength.md)
@@ -20,12 +20,12 @@ Modules in [GaugeBoson/LocalGauge/](https://github.com/leanprover-community/phys
 - [The mass-weight polynomial on the gauge-boson jet algebra](gaugeboson-localgauge-massweightpoly.md)
 - [Realizations of the local gauge field algebra](gaugeboson-localgauge-realization.md)
 
-Modules in [GaugeBoson/LocalGaugeCov/](https://github.com/leanprover-community/physlib/tree/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/GaugeBoson/LocalGaugeCov):
+Modules in [GaugeBoson/LocalGaugeCov/](https://github.com/leanprover-community/physlib/tree/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/GaugeBoson/LocalGaugeCov):
 
 - [The covariant field algebra of the gauge bosons](gaugeboson-localgaugecov-basic.md)
 - [Realizations of the covariant field algebra (LocalGaugeCov/Realization)](gaugeboson-localgaugecov-realization.md)
 
-Modules in [GaugeBoson/Realization/](https://github.com/leanprover-community/physlib/tree/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/GaugeBoson/Realization):
+Modules in [GaugeBoson/Realization/](https://github.com/leanprover-community/physlib/tree/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/GaugeBoson/Realization):
 
 - [Realizations of the gauge-boson jet algebra](gaugeboson-realization-basic.md)
 - [The field strength](gaugeboson-realization-fieldstrength.md)

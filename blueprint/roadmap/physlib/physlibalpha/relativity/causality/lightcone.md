@@ -8,7 +8,7 @@ proof: formalized
 
 # Light cones in time and space
 
-The module `PhyslibAlpha.Relativity.Causality.LightCone`, [PhyslibAlpha/Relativity/Causality/LightCone.lean](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Relativity/Causality/LightCone.lean): 17 declarations, 17 with a docstring.
+The module `PhyslibAlpha.Relativity.Causality.LightCone`, [PhyslibAlpha/Relativity/Causality/LightCone.lean](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Relativity/Causality/LightCone.lean): 17 declarations, 17 with a docstring.
 
 > Causal future and past of sets in time and space and in Minkowski spacetime.
 
@@ -46,7 +46,7 @@ The module `PhyslibAlpha.Relativity.Causality.LightCone`, [PhyslibAlpha/Relativi
 >
 > Lemmas: `isClosed_causalFuture`.
 
-**`Minkowski.causallyFollows_iff_displacement`**, a lemma, [line 74](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Relativity/Causality/LightCone.lean#L74).
+**`Minkowski.causallyFollows_iff_displacement`**, a lemma, [line 74](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Relativity/Causality/LightCone.lean#L74).
 
 > Causal precedence depends only on the displacement between events.
 
@@ -55,7 +55,7 @@ lemma causallyFollows_iff_displacement (p q : SpaceTime d) :
     causallyFollows p q ↔ causallyFollows 0 (q - p)
 ```
 
-**`Minkowski.causallyFollows_iff_norm`**, a lemma, [line 81](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Relativity/Causality/LightCone.lean#L81).
+**`Minkowski.causallyFollows_iff_norm`**, a lemma, [line 81](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Relativity/Causality/LightCone.lean#L81).
 
 > The existing Lorentzian causal order is equivalently the spatial norm bounded by elapsed
 > Lorentz time. Nonnegative elapsed time follows from this inequality.
@@ -65,7 +65,7 @@ lemma causallyFollows_iff_norm (p q : SpaceTime d) :
     causallyFollows p q ↔ ‖(q - p).spatialPart‖ ≤ (q - p).timeComponent
 ```
 
-**`Minkowski.causalRelation`**, a def, [line 94](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Relativity/Causality/LightCone.lean#L94).
+**`Minkowski.causalRelation`**, a def, [line 94](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Relativity/Causality/LightCone.lean#L94).
 
 > Minkowski causal geometry reuses the existing Lorentzian future relation.
 
@@ -73,7 +73,7 @@ lemma causallyFollows_iff_norm (p q : SpaceTime d) :
 def causalRelation (d : ℕ) : CausalRelation (SpaceTime d)
 ```
 
-**`Minkowski.norm_space_eq_spatialPart`**, a lemma, [line 110](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Relativity/Causality/LightCone.lean#L110).
+**`Minkowski.norm_space_eq_spatialPart`**, a lemma, [line 110](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Relativity/Causality/LightCone.lean#L110).
 
 > Physlib's physical-space norm agrees with the Euclidean norm of the Lorentz spatial part.
 
@@ -81,7 +81,7 @@ def causalRelation (d : ℕ) : CausalRelation (SpaceTime d)
 lemma norm_space_eq_spatialPart (p : SpaceTime d) : ‖p.space‖ = ‖p.spatialPart‖
 ```
 
-**`Minkowski.precedes_iff_time_space`**, a lemma, [line 117](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Relativity/Causality/LightCone.lean#L117).
+**`Minkowski.precedes_iff_time_space`**, a lemma, [line 117](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Relativity/Causality/LightCone.lean#L117).
 
 > In any speed-of-light units the existing geometric causal relation has the familiar
 > elapsed-time and spatial-distance characterization. This is an application representation.
@@ -93,7 +93,7 @@ lemma precedes_iff_time_space (c : SpeedOfLight) (p q : SpaceTime d) :
         ‖q.space - p.space‖ ≤ (c : ℝ) * ((q.time c).val - (p.time c).val)
 ```
 
-**`Minkowski.isClosed_causalFuture_zero`**, a lemma, [line 136](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Relativity/Causality/LightCone.lean#L136).
+**`Minkowski.isClosed_causalFuture_zero`**, a lemma, [line 136](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Relativity/Causality/LightCone.lean#L136).
 
 > The future causal cone at the origin is closed.
 
@@ -101,7 +101,7 @@ lemma precedes_iff_time_space (c : SpeedOfLight) (p q : SpaceTime d) :
 lemma isClosed_causalFuture_zero : IsClosed ((causalRelation d).causalFuture {0})
 ```
 
-**`Minkowski.causalFuture_eq_add`**, a lemma, [line 147](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Relativity/Causality/LightCone.lean#L147).
+**`Minkowski.causalFuture_eq_add`**, a lemma, [line 147](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Relativity/Causality/LightCone.lean#L147).
 
 > Futures are translations of the existing future cone, combined over the source set.
 
@@ -110,7 +110,7 @@ lemma causalFuture_eq_add (K : Set (SpaceTime d)) :
     (causalRelation d).causalFuture K = K + (causalRelation d).causalFuture {0}
 ```
 
-**`Minkowski.isClosed_causalFuture`**, a lemma, [line 163](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Relativity/Causality/LightCone.lean#L163).
+**`Minkowski.isClosed_causalFuture`**, a lemma, [line 163](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Relativity/Causality/LightCone.lean#L163).
 
 > Causal futures of compact source sets are closed.
 
@@ -119,7 +119,7 @@ lemma isClosed_causalFuture {K : Set (SpaceTime d)} (hK : IsCompact K) :
     IsClosed ((causalRelation d).causalFuture K)
 ```
 
-**`Minkowski.causalPast_eq_add_neg`**, a lemma, [line 169](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Relativity/Causality/LightCone.lean#L169).
+**`Minkowski.causalPast_eq_add_neg`**, a lemma, [line 169](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Relativity/Causality/LightCone.lean#L169).
 
 > Causal pasts are translations of the negated future cone.
 
@@ -128,7 +128,7 @@ lemma causalPast_eq_add_neg (K : Set (SpaceTime d)) :
     (causalRelation d).causalPast K = K + -((causalRelation d).causalFuture {0})
 ```
 
-**`Minkowski.isClosed_causalPast`**, a lemma, [line 192](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Relativity/Causality/LightCone.lean#L192).
+**`Minkowski.isClosed_causalPast`**, a lemma, [line 192](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Relativity/Causality/LightCone.lean#L192).
 
 > Causal pasts of compact source sets are closed.
 
@@ -137,7 +137,7 @@ lemma isClosed_causalPast {K : Set (SpaceTime d)} (hK : IsCompact K) :
     IsClosed ((causalRelation d).causalPast K)
 ```
 
-**`Minkowski.component_bound_of_causalDiamond`**, a lemma, [line 198](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Relativity/Causality/LightCone.lean#L198).
+**`Minkowski.component_bound_of_causalDiamond`**, a lemma, [line 198](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Relativity/Causality/LightCone.lean#L198).
 
 > Every component in a causal diamond is bounded by the bounds on its endpoint sets.
 
@@ -148,7 +148,7 @@ lemma component_bound_of_causalDiamond {A B : ℝ} (hA : 0 ≤ A) (hB : 0 ≤ B)
     (i : Fin 1 ⊕ Fin d) : |x i| ≤ 2 * A + B
 ```
 
-**`Minkowski.hasCompactCausalDiamonds`**, a lemma, [line 232](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Relativity/Causality/LightCone.lean#L232).
+**`Minkowski.hasCompactCausalDiamonds`**, a lemma, [line 232](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Relativity/Causality/LightCone.lean#L232).
 
 > Minkowski causal diamonds between compact endpoint sets are compact in every spatial
 > dimension.
@@ -157,7 +157,7 @@ lemma component_bound_of_causalDiamond {A B : ℝ} (hA : 0 ≤ A) (hB : 0 ≤ B)
 lemma hasCompactCausalDiamonds (d : ℕ) : (causalRelation d).HasCompactCausalDiamonds
 ```
 
-**`Minkowski.local_causalPast_bound`**, a lemma, [line 252](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Relativity/Causality/LightCone.lean#L252).
+**`Minkowski.local_causalPast_bound`**, a lemma, [line 252](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Relativity/Causality/LightCone.lean#L252).
 
 > Each event has a compact future observation bound whose causal past is a neighborhood.
 
@@ -166,7 +166,7 @@ lemma local_causalPast_bound (p : SpaceTime d) :
     ∃ K : Set (SpaceTime d), IsCompact K ∧ (causalRelation d).causalPast K ∈ 𝓝 p
 ```
 
-**`Minkowski.local_causalFuture_bound`**, a lemma, [line 273](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Relativity/Causality/LightCone.lean#L273).
+**`Minkowski.local_causalFuture_bound`**, a lemma, [line 273](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Relativity/Causality/LightCone.lean#L273).
 
 > Each event has a compact past observation bound whose causal future is a neighborhood.
 
@@ -175,7 +175,7 @@ lemma local_causalFuture_bound (p : SpaceTime d) :
     ∃ K : Set (SpaceTime d), IsCompact K ∧ (causalRelation d).causalFuture K ∈ 𝓝 p
 ```
 
-**`TimeSpace.causalFuture`**, a def, [line 303](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Relativity/Causality/LightCone.lean#L303).
+**`TimeSpace.causalFuture`**, a def, [line 303](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Relativity/Causality/LightCone.lean#L303).
 
 > The causal future of a set of spacetime points, in units where the speed of light is `1`.
 
@@ -183,7 +183,7 @@ lemma local_causalFuture_bound (p : SpaceTime d) :
 def causalFuture (K : Set (ℝ × E)) : Set (ℝ × E)
 ```
 
-**`TimeSpace.isClosed_causalFuture`**, a lemma, [line 308](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Relativity/Causality/LightCone.lean#L308).
+**`TimeSpace.isClosed_causalFuture`**, a lemma, [line 308](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Relativity/Causality/LightCone.lean#L308).
 
 > The causal future of a compact source region is closed.
 
@@ -192,7 +192,7 @@ lemma isClosed_causalFuture {K : Set (ℝ × E)} (hK : IsCompact K) :
     IsClosed (causalFuture K)
 ```
 
-**`TimeSpace.causalPast`**, a def, [line 325](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Relativity/Causality/LightCone.lean#L325).
+**`TimeSpace.causalPast`**, a def, [line 325](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Relativity/Causality/LightCone.lean#L325).
 
 > The causal past of a set of spacetime points.
 
@@ -212,4 +212,4 @@ def causalPast (K : Set (ℝ × E)) : Set (ℝ × E)
 
 ## Sources
 
-- [PhyslibAlpha/Relativity/Causality/LightCone.lean at 2a1dfe43](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Relativity/Causality/LightCone.lean)
+- [PhyslibAlpha/Relativity/Causality/LightCone.lean at 8c87bdfb](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Relativity/Causality/LightCone.lean)

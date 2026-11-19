@@ -8,7 +8,7 @@ proof: formalized
 
 # Fundamental lemma on an interval
 
-The module `Physlib.Mathematics.VariationalCalculus.Interval`, [Physlib/Mathematics/VariationalCalculus/Interval.lean](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/Mathematics/VariationalCalculus/Interval.lean): 1 declaration, 1 with a docstring.
+The module `Physlib.Mathematics.VariationalCalculus.Interval`, [Physlib/Mathematics/VariationalCalculus/Interval.lean](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Mathematics/VariationalCalculus/Interval.lean): 1 declaration, 1 with a docstring.
 
 > The fundamental lemma of variational calculus on `[a, b]`.
 
@@ -29,7 +29,7 @@ The module `Physlib.Mathematics.VariationalCalculus.Interval`, [Physlib/Mathemat
 
 ## A. The fundamental lemma
 
-**`eqOn_Icc_zero_of_integral_contDiff_smul_eq_zero`**, a lemma, [line 47](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/Mathematics/VariationalCalculus/Interval.lean#L47).
+**`eqOn_Icc_zero_of_integral_contDiff_smul_eq_zero`**, a lemma, [line 47](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Mathematics/VariationalCalculus/Interval.lean#L47).
 
 > If `f : ℝ → V →L[ℝ] ℝ` is continuous on `[a, b]` and `∫ x in a..b, f x (ψ x • v) = 0` for
 > every smooth `ψ` supported in `(a, b)` and every `v : V`, then `f = 0` on `[a, b]`.
@@ -48,4 +48,4 @@ Its declarations' statements use no declaration of another module with an articl
 
 ## Sources
 
-- [Physlib/Mathematics/VariationalCalculus/Interval.lean at 2a1dfe43](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/Mathematics/VariationalCalculus/Interval.lean)
+- [Physlib/Mathematics/VariationalCalculus/Interval.lean at 8c87bdfb](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Mathematics/VariationalCalculus/Interval.lean)

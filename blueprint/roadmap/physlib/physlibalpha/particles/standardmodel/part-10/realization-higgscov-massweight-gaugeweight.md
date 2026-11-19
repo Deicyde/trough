@@ -8,7 +8,7 @@ proof: formalized
 
 # The gauge weight decomposition of the Higgs mass-weight submodules
 
-The module `PhyslibAlpha.Particles.StandardModel.Realization.HiggsCov.MassWeight.GaugeWeight`, [PhyslibAlpha/Particles/StandardModel/Realization/HiggsCov/MassWeight/GaugeWeight.lean](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/Realization/HiggsCov/MassWeight/GaugeWeight.lean): 69 declarations, 69 with a docstring; 3 private, not shown.
+The module `PhyslibAlpha.Particles.StandardModel.Realization.HiggsCov.MassWeight.GaugeWeight`, [PhyslibAlpha/Particles/StandardModel/Realization/HiggsCov/MassWeight/GaugeWeight.lean](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/Realization/HiggsCov/MassWeight/GaugeWeight.lean): 69 declarations, 69 with a docstring; 3 private, not shown.
 
 ## i. Overview
 
@@ -63,7 +63,7 @@ The module `PhyslibAlpha.Particles.StandardModel.Realization.HiggsCov.MassWeight
 > derivative submodule, and the higher weights add the products which distribute the mass
 > weight over several towers.
 
-**`StandardModel.HiggsAlgebraCovRealization.massWeightSubmoduleGaugeWeightOdd`**, a def, [line 104](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/Realization/HiggsCov/MassWeight/GaugeWeight.lean#L104).
+**`StandardModel.HiggsAlgebraCovRealization.massWeightSubmoduleGaugeWeightOdd`**, a def, [line 104](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/Realization/HiggsCov/MassWeight/GaugeWeight.lean#L104).
 
 > The odd mass-weight submodules are trivial, so they carry the empty decomposition.
 
@@ -72,7 +72,7 @@ noncomputable def massWeightSubmoduleGaugeWeightOdd (n : ℕ) (hn : Odd n) :
     GaugeWeightDecomposition rep (h.massWeightSubmodule n)
 ```
 
-**`StandardModel.HiggsAlgebraCovRealization.massWeightSubmoduleGaugeWeightOne`**, a def, [line 111](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/Realization/HiggsCov/MassWeight/GaugeWeight.lean#L111).
+**`StandardModel.HiggsAlgebraCovRealization.massWeightSubmoduleGaugeWeightOne`**, a def, [line 111](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/Realization/HiggsCov/MassWeight/GaugeWeight.lean#L111).
 
 > Weight one is trivial.
 
@@ -81,7 +81,7 @@ noncomputable def massWeightSubmoduleGaugeWeightOne :
     GaugeWeightDecomposition rep (h.massWeightSubmodule 1)
 ```
 
-**`StandardModel.HiggsAlgebraCovRealization.massWeightSubmoduleGaugeWeightTwo`**, a def, [line 117](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/Realization/HiggsCov/MassWeight/GaugeWeight.lean#L117).
+**`StandardModel.HiggsAlgebraCovRealization.massWeightSubmoduleGaugeWeightTwo`**, a def, [line 117](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/Realization/HiggsCov/MassWeight/GaugeWeight.lean#L117).
 
 > Weight two is the underived Higgs tower.
 
@@ -90,7 +90,7 @@ noncomputable def massWeightSubmoduleGaugeWeightTwo :
     GaugeWeightDecomposition rep (h.massWeightSubmodule 2)
 ```
 
-**`StandardModel.HiggsAlgebraCovRealization.massWeightSubmoduleGaugeWeightThree`**, a def, [line 124](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/Realization/HiggsCov/MassWeight/GaugeWeight.lean#L124).
+**`StandardModel.HiggsAlgebraCovRealization.massWeightSubmoduleGaugeWeightThree`**, a def, [line 124](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/Realization/HiggsCov/MassWeight/GaugeWeight.lean#L124).
 
 > Weight three is trivial.
 
@@ -99,7 +99,7 @@ noncomputable def massWeightSubmoduleGaugeWeightThree :
     GaugeWeightDecomposition rep (h.massWeightSubmodule 3)
 ```
 
-**`StandardModel.HiggsAlgebraCovRealization.massWeightSubmoduleGaugeWeightFour`**, a def, [line 131](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/Realization/HiggsCov/MassWeight/GaugeWeight.lean#L131).
+**`StandardModel.HiggsAlgebraCovRealization.massWeightSubmoduleGaugeWeightFour`**, a def, [line 131](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/Realization/HiggsCov/MassWeight/GaugeWeight.lean#L131).
 
 > Weight four is the once-derived tower together with the products of two underived
 > ones.
@@ -109,7 +109,7 @@ noncomputable def massWeightSubmoduleGaugeWeightFour :
     GaugeWeightDecomposition rep (h.massWeightSubmodule 4)
 ```
 
-**`StandardModel.HiggsAlgebraCovRealization.massWeightSubmoduleGaugeWeightFive`**, a def, [line 141](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/Realization/HiggsCov/MassWeight/GaugeWeight.lean#L141).
+**`StandardModel.HiggsAlgebraCovRealization.massWeightSubmoduleGaugeWeightFive`**, a def, [line 141](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/Realization/HiggsCov/MassWeight/GaugeWeight.lean#L141).
 
 > Weight five is trivial.
 
@@ -118,7 +118,7 @@ noncomputable def massWeightSubmoduleGaugeWeightFive :
     GaugeWeightDecomposition rep (h.massWeightSubmodule 5)
 ```
 
-**`StandardModel.HiggsAlgebraCovRealization.massWeightSubmoduleGaugeWeightSix`**, a def, [line 148](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/Realization/HiggsCov/MassWeight/GaugeWeight.lean#L148).
+**`StandardModel.HiggsAlgebraCovRealization.massWeightSubmoduleGaugeWeightSix`**, a def, [line 148](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/Realization/HiggsCov/MassWeight/GaugeWeight.lean#L148).
 
 > Weight six is the twice-derived tower, the once-derived tower against an underived
 > one, and the products of three underived ones.
@@ -128,7 +128,7 @@ noncomputable def massWeightSubmoduleGaugeWeightSix :
     GaugeWeightDecomposition rep (h.massWeightSubmodule 6)
 ```
 
-**`StandardModel.HiggsAlgebraCovRealization.massWeightSubmoduleGaugeWeightSeven`**, a def, [line 163](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/Realization/HiggsCov/MassWeight/GaugeWeight.lean#L163).
+**`StandardModel.HiggsAlgebraCovRealization.massWeightSubmoduleGaugeWeightSeven`**, a def, [line 163](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/Realization/HiggsCov/MassWeight/GaugeWeight.lean#L163).
 
 > Weight seven is trivial.
 
@@ -137,7 +137,7 @@ noncomputable def massWeightSubmoduleGaugeWeightSeven :
     GaugeWeightDecomposition rep (h.massWeightSubmodule 7)
 ```
 
-**`StandardModel.HiggsAlgebraCovRealization.massWeightSubmoduleGaugeWeightEight`**, a def, [line 171](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/Realization/HiggsCov/MassWeight/GaugeWeight.lean#L171).
+**`StandardModel.HiggsAlgebraCovRealization.massWeightSubmoduleGaugeWeightEight`**, a def, [line 171](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/Realization/HiggsCov/MassWeight/GaugeWeight.lean#L171).
 
 > Weight eight: the thrice-derived tower, the two ways of splitting the derivatives over
 > two towers, the once-derived tower against two underived ones, and the products of four
@@ -155,7 +155,7 @@ noncomputable def massWeightSubmoduleGaugeWeightEight :
 > join is the span of one of the four families of symbols, and every other weight — the zero
 > weight in particular — has vanishing piece.
 
-**`StandardModel.HiggsAlgebraCovRealization.derivSubmoduleGaugeWeight_piece_eq`**, a lemma, [line 207](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/Realization/HiggsCov/MassWeight/GaugeWeight.lean#L207).
+**`StandardModel.HiggsAlgebraCovRealization.derivSubmoduleGaugeWeight_piece_eq`**, a lemma, [line 207](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/Realization/HiggsCov/MassWeight/GaugeWeight.lean#L207).
 
 > The weight-`w` piece of a derivative submodule, as the join of the Higgs and
 > conjugate-Higgs pieces.
@@ -175,7 +175,7 @@ lemma derivSubmoduleGaugeWeight_piece_eq (n : ℕ) (w : GaugeWeight) :
           else ⊥)
 ```
 
-**`StandardModel.HiggsAlgebraCovRealization.derivSubmoduleGaugeWeight_piece_higgs_zero`**, a lemma, [line 221](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/Realization/HiggsCov/MassWeight/GaugeWeight.lean#L221).
+**`StandardModel.HiggsAlgebraCovRealization.derivSubmoduleGaugeWeight_piece_higgs_zero`**, a lemma, [line 221](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/Realization/HiggsCov/MassWeight/GaugeWeight.lean#L221).
 
 > The piece at the weight of the upper Higgs component.
 
@@ -185,7 +185,7 @@ lemma derivSubmoduleGaugeWeight_piece_higgs_zero (n : ℕ) :
       = ⨆ d : Fin n → (Fin 1 ⊕ Fin 3), ℂ ∙ h.higgs d 0
 ```
 
-**`StandardModel.HiggsAlgebraCovRealization.derivSubmoduleGaugeWeight_piece_higgs_one`**, a lemma, [line 228](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/Realization/HiggsCov/MassWeight/GaugeWeight.lean#L228).
+**`StandardModel.HiggsAlgebraCovRealization.derivSubmoduleGaugeWeight_piece_higgs_one`**, a lemma, [line 228](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/Realization/HiggsCov/MassWeight/GaugeWeight.lean#L228).
 
 > The piece at the weight of the lower Higgs component.
 
@@ -195,7 +195,7 @@ lemma derivSubmoduleGaugeWeight_piece_higgs_one (n : ℕ) :
       = ⨆ d : Fin n → (Fin 1 ⊕ Fin 3), ℂ ∙ h.higgs d 1
 ```
 
-**`StandardModel.HiggsAlgebraCovRealization.derivSubmoduleGaugeWeight_piece_barHiggs_zero`**, a lemma, [line 235](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/Realization/HiggsCov/MassWeight/GaugeWeight.lean#L235).
+**`StandardModel.HiggsAlgebraCovRealization.derivSubmoduleGaugeWeight_piece_barHiggs_zero`**, a lemma, [line 235](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/Realization/HiggsCov/MassWeight/GaugeWeight.lean#L235).
 
 > The piece at the weight of the upper conjugate-Higgs component.
 
@@ -205,7 +205,7 @@ lemma derivSubmoduleGaugeWeight_piece_barHiggs_zero (n : ℕ) :
       = ⨆ d : Fin n → (Fin 1 ⊕ Fin 3), ℂ ∙ h.barHiggs d 0
 ```
 
-**`StandardModel.HiggsAlgebraCovRealization.derivSubmoduleGaugeWeight_piece_barHiggs_one`**, a lemma, [line 242](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/Realization/HiggsCov/MassWeight/GaugeWeight.lean#L242).
+**`StandardModel.HiggsAlgebraCovRealization.derivSubmoduleGaugeWeight_piece_barHiggs_one`**, a lemma, [line 242](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/Realization/HiggsCov/MassWeight/GaugeWeight.lean#L242).
 
 > The piece at the weight of the lower conjugate-Higgs component.
 
@@ -215,7 +215,7 @@ lemma derivSubmoduleGaugeWeight_piece_barHiggs_one (n : ℕ) :
       = ⨆ d : Fin n → (Fin 1 ⊕ Fin 3), ℂ ∙ h.barHiggs d 1
 ```
 
-**`StandardModel.HiggsAlgebraCovRealization.derivSubmoduleGaugeWeight_piece_zero`**, a lemma, [line 250](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/Realization/HiggsCov/MassWeight/GaugeWeight.lean#L250).
+**`StandardModel.HiggsAlgebraCovRealization.derivSubmoduleGaugeWeight_piece_zero`**, a lemma, [line 250](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/Realization/HiggsCov/MassWeight/GaugeWeight.lean#L250).
 
 > A derivative submodule has no weight-zero content: every Higgs symbol carries
 > hypercharge.
@@ -234,7 +234,7 @@ lemma derivSubmoduleGaugeWeight_piece_zero (n : ℕ) :
 > number of factors leaves an odd multiple of three.  Four of them reach weight zero on the
 > three quartic monomials.
 
-**`StandardModel.HiggsAlgebraCovRealization.higgsBarHiggsSpan`**, a def, [line 270](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/Realization/HiggsCov/MassWeight/GaugeWeight.lean#L270).
+**`StandardModel.HiggsAlgebraCovRealization.higgsBarHiggsSpan`**, a def, [line 270](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/Realization/HiggsCov/MassWeight/GaugeWeight.lean#L270).
 
 > The span of the isospin-diagonal pairings of a Higgs symbol carrying `n` derivatives
 > with a conjugate-Higgs symbol carrying `m` derivatives, at isospin component `i`.
@@ -244,7 +244,7 @@ noncomputable def higgsBarHiggsSpan (h : HiggsAlgebraCovRealization B rep repLor
     (n m : ℕ) (i : Fin 2) : Submodule ℂ B
 ```
 
-**`StandardModel.HiggsAlgebraCovRealization.quarticSpan`**, a def, [line 277](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/Realization/HiggsCov/MassWeight/GaugeWeight.lean#L277).
+**`StandardModel.HiggsAlgebraCovRealization.quarticSpan`**, a def, [line 277](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/Realization/HiggsCov/MassWeight/GaugeWeight.lean#L277).
 
 > The span of the underived quartic monomial pairing the isospin components `i` and
 > `j`.
@@ -254,7 +254,7 @@ noncomputable def quarticSpan (h : HiggsAlgebraCovRealization B rep repLorentz m
     (i j : Fin 2) : Submodule ℂ B
 ```
 
-**`StandardModel.HiggsAlgebraCovRealization.derivSubmodule_mul_piece_zero`**, a lemma, [line 283](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/Realization/HiggsCov/MassWeight/GaugeWeight.lean#L283).
+**`StandardModel.HiggsAlgebraCovRealization.derivSubmodule_mul_piece_zero`**, a lemma, [line 283](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/Realization/HiggsCov/MassWeight/GaugeWeight.lean#L283).
 
 > The weight-zero piece of a product of two derivative submodules: the isospin-diagonal
 > pairings, taken in both orders of the two towers.
@@ -266,7 +266,7 @@ lemma derivSubmodule_mul_piece_zero (n m : ℕ) :
         ⊔ h.higgsBarHiggsSpan m n 0 ⊔ h.higgsBarHiggsSpan m n 1
 ```
 
-**`StandardModel.HiggsAlgebraCovRealization.derivSubmodule_mul_mul_piece_zero`**, a lemma, [line 307](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/Realization/HiggsCov/MassWeight/GaugeWeight.lean#L307).
+**`StandardModel.HiggsAlgebraCovRealization.derivSubmodule_mul_mul_piece_zero`**, a lemma, [line 307](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/Realization/HiggsCov/MassWeight/GaugeWeight.lean#L307).
 
 > A product of three derivative submodules has no weight-zero content: the hypercharge of
 > three Higgs generators is an odd multiple of three.
@@ -277,7 +277,7 @@ lemma derivSubmodule_mul_mul_piece_zero (n m k : ℕ) :
       (h.derivSubmodule n * h.derivSubmodule m * h.derivSubmodule k) 0 = ⊥
 ```
 
-**`StandardModel.HiggsAlgebraCovRealization.derivSubmodule_zero_pow_four_piece_zero`**, a lemma, [line 320](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/Realization/HiggsCov/MassWeight/GaugeWeight.lean#L320).
+**`StandardModel.HiggsAlgebraCovRealization.derivSubmodule_zero_pow_four_piece_zero`**, a lemma, [line 320](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/Realization/HiggsCov/MassWeight/GaugeWeight.lean#L320).
 
 > The weight-zero piece of the product of four underived derivative submodules: the three
 > quartic monomials, the ones pairing two Higgs symbols against two conjugate ones with
@@ -299,7 +299,7 @@ lemma derivSubmodule_zero_pow_four_piece_zero :
 > either factor, and weight eight adds the pairings with two derivatives, those with one
 > derivative on each factor, and the three quartic monomials.
 
-**`StandardModel.HiggsAlgebraCovRealization.massWeightSubmoduleGaugeWeightOdd_piece_zero`**, a lemma, [line 366](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/Realization/HiggsCov/MassWeight/GaugeWeight.lean#L366).
+**`StandardModel.HiggsAlgebraCovRealization.massWeightSubmoduleGaugeWeightOdd_piece_zero`**, a lemma, [line 366](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/Realization/HiggsCov/MassWeight/GaugeWeight.lean#L366).
 
 > The weight-zero piece at an odd mass weight: the submodule itself is trivial.
 
@@ -308,7 +308,7 @@ lemma massWeightSubmoduleGaugeWeightOdd_piece_zero (n : ℕ) (hn : Odd n) :
     (h.massWeightSubmoduleGaugeWeightOdd n hn).piece 0 = ⊥
 ```
 
-**`StandardModel.HiggsAlgebraCovRealization.massWeightSubmoduleGaugeWeightTwo_piece_zero`**, a lemma, [line 371](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/Realization/HiggsCov/MassWeight/GaugeWeight.lean#L371).
+**`StandardModel.HiggsAlgebraCovRealization.massWeightSubmoduleGaugeWeightTwo_piece_zero`**, a lemma, [line 371](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/Realization/HiggsCov/MassWeight/GaugeWeight.lean#L371).
 
 > The weight-zero piece at mass weight two: a single Higgs symbol carries
 > hypercharge.
@@ -318,7 +318,7 @@ lemma massWeightSubmoduleGaugeWeightTwo_piece_zero :
     (h.massWeightSubmoduleGaugeWeightTwo).piece 0 = ⊥
 ```
 
-**`StandardModel.HiggsAlgebraCovRealization.massWeightSubmoduleGaugeWeightFour_piece_zero`**, a lemma, [line 376](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/Realization/HiggsCov/MassWeight/GaugeWeight.lean#L376).
+**`StandardModel.HiggsAlgebraCovRealization.massWeightSubmoduleGaugeWeightFour_piece_zero`**, a lemma, [line 376](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/Realization/HiggsCov/MassWeight/GaugeWeight.lean#L376).
 
 > The weight-zero piece at mass weight four: the underived isospin-diagonal pairings.
 
@@ -328,7 +328,7 @@ lemma massWeightSubmoduleGaugeWeightFour_piece_zero :
       = h.higgsBarHiggsSpan 0 0 0 ⊔ h.higgsBarHiggsSpan 0 0 1
 ```
 
-**`StandardModel.HiggsAlgebraCovRealization.massWeightSubmoduleGaugeWeightSix_piece_zero`**, a lemma, [line 387](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/Realization/HiggsCov/MassWeight/GaugeWeight.lean#L387).
+**`StandardModel.HiggsAlgebraCovRealization.massWeightSubmoduleGaugeWeightSix_piece_zero`**, a lemma, [line 387](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/Realization/HiggsCov/MassWeight/GaugeWeight.lean#L387).
 
 > The weight-zero piece at mass weight six: the isospin-diagonal pairings carrying one
 > derivative, on either of the two factors.
@@ -340,7 +340,7 @@ lemma massWeightSubmoduleGaugeWeightSix_piece_zero :
         ⊔ h.higgsBarHiggsSpan 0 1 0 ⊔ h.higgsBarHiggsSpan 0 1 1
 ```
 
-**`StandardModel.HiggsAlgebraCovRealization.massWeightSubmoduleGaugeWeightEight_piece_zero`**, a lemma, [line 400](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/Realization/HiggsCov/MassWeight/GaugeWeight.lean#L400).
+**`StandardModel.HiggsAlgebraCovRealization.massWeightSubmoduleGaugeWeightEight_piece_zero`**, a lemma, [line 400](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/Realization/HiggsCov/MassWeight/GaugeWeight.lean#L400).
 
 > The weight-zero piece at mass weight eight: the isospin-diagonal pairings carrying two
 > derivatives on one factor or one on each, together with the three quartic monomials.
@@ -362,7 +362,7 @@ lemma massWeightSubmoduleGaugeWeightEight_piece_zero :
 > characterisation: the gauge torus cannot separate the isospin singlet from the neutral
 > component of the isospin triplet, and that separation needs the Weyl element of `SU(2)`.
 
-**`StandardModel.HiggsAlgebraCovRealization.eq_zero_of_invariant_massWeightSubmodule_odd`**, a lemma, [line 433](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/Realization/HiggsCov/MassWeight/GaugeWeight.lean#L433).
+**`StandardModel.HiggsAlgebraCovRealization.eq_zero_of_invariant_massWeightSubmodule_odd`**, a lemma, [line 433](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/Realization/HiggsCov/MassWeight/GaugeWeight.lean#L433).
 
 > A gauge-invariant term of odd mass weight vanishes.
 
@@ -371,7 +371,7 @@ lemma eq_zero_of_invariant_massWeightSubmodule_odd (n : ℕ) (hn : Odd n) {x : B
     (hx : x ∈ h.massWeightSubmodule n) : x = 0
 ```
 
-**`StandardModel.HiggsAlgebraCovRealization.eq_zero_of_invariant_massWeightSubmodule_two`**, a lemma, [line 439](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/Realization/HiggsCov/MassWeight/GaugeWeight.lean#L439).
+**`StandardModel.HiggsAlgebraCovRealization.eq_zero_of_invariant_massWeightSubmodule_two`**, a lemma, [line 439](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/Realization/HiggsCov/MassWeight/GaugeWeight.lean#L439).
 
 > A gauge-invariant term of mass weight two vanishes: a single Higgs symbol carries
 > hypercharge, so nothing at that weight is neutral.
@@ -381,7 +381,7 @@ lemma eq_zero_of_invariant_massWeightSubmodule_two {x : B}
     (hx : x ∈ h.massWeightSubmodule 2) (hg : ∀ g : GaugeGroupI, rep g x = x) : x = 0
 ```
 
-**`StandardModel.HiggsAlgebraCovRealization.mem_of_invariant_massWeightSubmodule_four`**, a lemma, [line 447](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/Realization/HiggsCov/MassWeight/GaugeWeight.lean#L447).
+**`StandardModel.HiggsAlgebraCovRealization.mem_of_invariant_massWeightSubmodule_four`**, a lemma, [line 447](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/Realization/HiggsCov/MassWeight/GaugeWeight.lean#L447).
 
 > A gauge-invariant term of mass weight four is a combination of the two underived
 > isospin-diagonal pairings.
@@ -392,7 +392,7 @@ lemma mem_of_invariant_massWeightSubmodule_four {x : B}
     x ∈ h.higgsBarHiggsSpan 0 0 0 ⊔ h.higgsBarHiggsSpan 0 0 1
 ```
 
-**`StandardModel.HiggsAlgebraCovRealization.mem_of_invariant_massWeightSubmodule_six`**, a lemma, [line 455](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/Realization/HiggsCov/MassWeight/GaugeWeight.lean#L455).
+**`StandardModel.HiggsAlgebraCovRealization.mem_of_invariant_massWeightSubmodule_six`**, a lemma, [line 455](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/Realization/HiggsCov/MassWeight/GaugeWeight.lean#L455).
 
 > A gauge-invariant term of mass weight six is a combination of the isospin-diagonal
 > pairings carrying one derivative, on either factor.
@@ -404,7 +404,7 @@ lemma mem_of_invariant_massWeightSubmodule_six {x : B}
       ⊔ h.higgsBarHiggsSpan 0 1 0 ⊔ h.higgsBarHiggsSpan 0 1 1
 ```
 
-**`StandardModel.HiggsAlgebraCovRealization.mem_of_invariant_massWeightSubmodule_eight`**, a lemma, [line 464](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/Realization/HiggsCov/MassWeight/GaugeWeight.lean#L464).
+**`StandardModel.HiggsAlgebraCovRealization.mem_of_invariant_massWeightSubmodule_eight`**, a lemma, [line 464](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/Realization/HiggsCov/MassWeight/GaugeWeight.lean#L464).
 
 > A gauge-invariant term of mass weight eight is a combination of the isospin-diagonal
 > pairings carrying two derivatives and of the three quartic monomials.
@@ -446,7 +446,7 @@ lemma mem_of_invariant_massWeightSubmodule_eight {x : B}
 > the second pairs the two conjugate symbols with each other and the two Higgs symbols with
 > each other, and an antisymmetric contraction of two commuting factors vanishes.
 
-**`StandardModel.HiggsAlgebraCovRealization.su2_inv_apply`**, a lemma, [line 507](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/Realization/HiggsCov/MassWeight/GaugeWeight.lean#L507).
+**`StandardModel.HiggsAlgebraCovRealization.su2_inv_apply`**, a lemma, [line 507](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/Realization/HiggsCov/MassWeight/GaugeWeight.lean#L507).
 
 > The entries of the inverse of an `SU(2)` element are the conjugated transposed
 > entries, the inverse of a unitary matrix being its conjugate transpose.
@@ -456,7 +456,7 @@ lemma su2_inv_apply (V : specialUnitaryGroup (Fin 2) ℂ) (a b : Fin 2) :
     (V⁻¹).1 a b = conj (V.1 b a)
 ```
 
-**`StandardModel.HiggsAlgebraCovRealization.rep_su2_higgs`**, a lemma, [line 515](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/Realization/HiggsCov/MassWeight/GaugeWeight.lean#L515).
+**`StandardModel.HiggsAlgebraCovRealization.rep_su2_higgs`**, a lemma, [line 515](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/Realization/HiggsCov/MassWeight/GaugeWeight.lean#L515).
 
 > An isospin transformation moves the isospin index of a Higgs symbol by the conjugate
 > matrix: the index of a Higgs symbol is anti-fundamental.
@@ -468,7 +468,7 @@ lemma rep_su2_higgs (V : specialUnitaryGroup (Fin 2) ℂ) {n : ℕ}
       = ∑ a, conj (V.1 a i) • h.higgs d a
 ```
 
-**`StandardModel.HiggsAlgebraCovRealization.rep_su2_barHiggs`**, a lemma, [line 529](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/Realization/HiggsCov/MassWeight/GaugeWeight.lean#L529).
+**`StandardModel.HiggsAlgebraCovRealization.rep_su2_barHiggs`**, a lemma, [line 529](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/Realization/HiggsCov/MassWeight/GaugeWeight.lean#L529).
 
 > An isospin transformation moves the isospin index of a conjugate Higgs symbol by the
 > matrix itself: the index of a conjugate Higgs symbol is fundamental.
@@ -480,7 +480,7 @@ lemma rep_su2_barHiggs (V : specialUnitaryGroup (Fin 2) ℂ) {n : ℕ}
       = ∑ a, V.1 a i • h.barHiggs d a
 ```
 
-**`StandardModel.HiggsAlgebraCovRealization.rep_mul_pair`**, a lemma, [line 543](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/Realization/HiggsCov/MassWeight/GaugeWeight.lean#L543).
+**`StandardModel.HiggsAlgebraCovRealization.rep_mul_pair`**, a lemma, [line 543](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/Realization/HiggsCov/MassWeight/GaugeWeight.lean#L543).
 
 > A product of two symbols each moving by given coefficients moves by the product of
 > those coefficients.
@@ -492,7 +492,7 @@ lemma rep_mul_pair (g : GaugeGroupI) {ι κ : Type} [Fintype ι] [Fintype κ]
     rep g (X x₀ * Y y₀) = ∑ x, ∑ y, (cX x * cY y) • (X x * Y y)
 ```
 
-**`StandardModel.HiggsAlgebraCovRealization.higgs_mul_barHiggs_comm`**, a lemma, [line 552](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/Realization/HiggsCov/MassWeight/GaugeWeight.lean#L552).
+**`StandardModel.HiggsAlgebraCovRealization.higgs_mul_barHiggs_comm`**, a lemma, [line 552](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/Realization/HiggsCov/MassWeight/GaugeWeight.lean#L552).
 
 > A Higgs symbol commutes with a conjugate Higgs symbol, in the components.
 
@@ -502,7 +502,7 @@ lemma higgs_mul_barHiggs_comm {n m : ℕ} (d : Fin n → (Fin 1 ⊕ Fin 3))
     h.higgs d i * h.barHiggs d' j = h.barHiggs d' j * h.higgs d i
 ```
 
-**`StandardModel.HiggsAlgebraCovRealization.higgs_mul_higgs_comm`**, a lemma, [line 559](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/Realization/HiggsCov/MassWeight/GaugeWeight.lean#L559).
+**`StandardModel.HiggsAlgebraCovRealization.higgs_mul_higgs_comm`**, a lemma, [line 559](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/Realization/HiggsCov/MassWeight/GaugeWeight.lean#L559).
 
 > Two Higgs symbols commute, in the components.
 
@@ -512,7 +512,7 @@ lemma higgs_mul_higgs_comm {n m : ℕ} (d : Fin n → (Fin 1 ⊕ Fin 3))
     h.higgs d i * h.higgs d' j = h.higgs d' j * h.higgs d i
 ```
 
-**`StandardModel.HiggsAlgebraCovRealization.barHiggs_mul_barHiggs_comm`**, a lemma, [line 566](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/Realization/HiggsCov/MassWeight/GaugeWeight.lean#L566).
+**`StandardModel.HiggsAlgebraCovRealization.barHiggs_mul_barHiggs_comm`**, a lemma, [line 566](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/Realization/HiggsCov/MassWeight/GaugeWeight.lean#L566).
 
 > Two conjugate Higgs symbols commute, in the components.
 
@@ -522,7 +522,7 @@ lemma barHiggs_mul_barHiggs_comm {n m : ℕ} (d : Fin n → (Fin 1 ⊕ Fin 3))
     h.barHiggs d i * h.barHiggs d' j = h.barHiggs d' j * h.barHiggs d i
 ```
 
-**`StandardModel.HiggsAlgebraCovRealization.isoFamily`**, a def, [line 574](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/Realization/HiggsCov/MassWeight/GaugeWeight.lean#L574).
+**`StandardModel.HiggsAlgebraCovRealization.isoFamily`**, a def, [line 574](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/Realization/HiggsCov/MassWeight/GaugeWeight.lean#L574).
 
 > The isospin family of a Higgs tower carrying `n` derivatives against a conjugate tower
 > carrying `m`: the conjugate symbol supplies the fundamental index and so goes in the
@@ -534,7 +534,7 @@ noncomputable def isoFamily (h : HiggsAlgebraCovRealization B rep repLorentz mas
     (d' : Fin m → (Fin 1 ⊕ Fin 3)) : (Fin 2 → Fin 2) → B
 ```
 
-**`StandardModel.HiggsAlgebraCovRealization.isSU2FundamentalAntiFundamental_isoFamily`**, a lemma, [line 581](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/Realization/HiggsCov/MassWeight/GaugeWeight.lean#L581).
+**`StandardModel.HiggsAlgebraCovRealization.isSU2FundamentalAntiFundamental_isoFamily`**, a lemma, [line 581](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/Realization/HiggsCov/MassWeight/GaugeWeight.lean#L581).
 
 > The isospin family carries one fundamental and one anti-fundamental isospin index.
 
@@ -543,7 +543,7 @@ lemma isSU2FundamentalAntiFundamental_isoFamily {n m : ℕ} (d : Fin n → (Fin 
     (d' : Fin m → (Fin 1 ⊕ Fin 3)) : IsSU2FundamentalAntiFundamental B rep (h.isoFamily d d')
 ```
 
-**`StandardModel.HiggsAlgebraCovRealization.deltaContraction_isoFamily`**, a lemma, [line 590](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/Realization/HiggsCov/MassWeight/GaugeWeight.lean#L590).
+**`StandardModel.HiggsAlgebraCovRealization.deltaContraction_isoFamily`**, a lemma, [line 590](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/Realization/HiggsCov/MassWeight/GaugeWeight.lean#L590).
 
 > The delta contraction of the isospin family, which spans its isospin invariants, is the
 > isospin contraction: the Higgs mass term of the two towers.
@@ -554,7 +554,7 @@ lemma deltaContraction_isoFamily {n m : ℕ} (d : Fin n → (Fin 1 ⊕ Fin 3))
     IsSU2FundamentalAntiFundamental.deltaContraction (h.isoFamily d d') = h.dotGaugeHiggs d d'
 ```
 
-**`StandardModel.HiggsAlgebraCovRealization.dotSpan`**, a def, [line 600](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/Realization/HiggsCov/MassWeight/GaugeWeight.lean#L600).
+**`StandardModel.HiggsAlgebraCovRealization.dotSpan`**, a def, [line 600](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/Realization/HiggsCov/MassWeight/GaugeWeight.lean#L600).
 
 > The span of the isospin contractions of a Higgs tower carrying `n` derivatives against
 > a conjugate tower carrying `m`: the gauge invariants the isospin classification leaves
@@ -565,7 +565,7 @@ noncomputable def dotSpan (h : HiggsAlgebraCovRealization B rep repLorentz massW
     (n m : ℕ) : Submodule ℂ B
 ```
 
-**`StandardModel.HiggsAlgebraCovRealization.isoFamily_span_stable`**, a lemma, [line 607](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/Realization/HiggsCov/MassWeight/GaugeWeight.lean#L607).
+**`StandardModel.HiggsAlgebraCovRealization.isoFamily_span_stable`**, a lemma, [line 607](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/Realization/HiggsCov/MassWeight/GaugeWeight.lean#L607).
 
 > The span of the isospin family is stable under the whole gauge group: each factor of a
 > component goes to a combination of the factors of components.
@@ -577,7 +577,7 @@ lemma isoFamily_span_stable {n m : ℕ} (d : Fin n → (Fin 1 ⊕ Fin 3))
     rep g y ∈ Submodule.span ℂ (Set.range (h.isoFamily d d'))
 ```
 
-**`StandardModel.HiggsAlgebraCovRealization.higgsBarHiggsSpan_le_isoFamily_span`**, a lemma, [line 623](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/Realization/HiggsCov/MassWeight/GaugeWeight.lean#L623).
+**`StandardModel.HiggsAlgebraCovRealization.higgsBarHiggsSpan_le_isoFamily_span`**, a lemma, [line 623](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/Realization/HiggsCov/MassWeight/GaugeWeight.lean#L623).
 
 > The isospin-diagonal pairing spans of section C sit inside the span of the isospin
 > family: a diagonal pairing is one of the four components, the two factors commuting.
@@ -589,7 +589,7 @@ lemma higgsBarHiggsSpan_le_isoFamily_span (n m : ℕ) :
         Submodule.span ℂ (Set.range (h.isoFamily d d'))
 ```
 
-**`StandardModel.HiggsAlgebraCovRealization.tildeHiggs`**, a def, [line 642](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/Realization/HiggsCov/MassWeight/GaugeWeight.lean#L642).
+**`StandardModel.HiggsAlgebraCovRealization.tildeHiggs`**, a def, [line 642](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/Realization/HiggsCov/MassWeight/GaugeWeight.lean#L642).
 
 > The re-index of an underived Higgs symbol by the antisymmetric symbol, `H̃⁰ = H¹` and
 > `H̃¹ = -H⁰`.  `SU(2)` is pseudo-real, so this turns the anti-fundamental index of a Higgs
@@ -600,7 +600,7 @@ noncomputable def tildeHiggs (h : HiggsAlgebraCovRealization B rep repLorentz ma
   (i : Fin 2) : B
 ```
 
-**`StandardModel.HiggsAlgebraCovRealization.tildeHiggs_zero`**, a lemma, [line 647](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/Realization/HiggsCov/MassWeight/GaugeWeight.lean#L647).
+**`StandardModel.HiggsAlgebraCovRealization.tildeHiggs_zero`**, a lemma, [line 647](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/Realization/HiggsCov/MassWeight/GaugeWeight.lean#L647).
 
 > The re-index at isospin zero is the Higgs symbol of isospin one.
 
@@ -609,7 +609,7 @@ lemma tildeHiggs_zero :
     h.tildeHiggs 0 = h.higgs (![] : Fin 0 → (Fin 1 ⊕ Fin 3)) 1
 ```
 
-**`StandardModel.HiggsAlgebraCovRealization.tildeHiggs_one`**, a lemma, [line 652](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/Realization/HiggsCov/MassWeight/GaugeWeight.lean#L652).
+**`StandardModel.HiggsAlgebraCovRealization.tildeHiggs_one`**, a lemma, [line 652](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/Realization/HiggsCov/MassWeight/GaugeWeight.lean#L652).
 
 > The re-index at isospin one is minus the Higgs symbol of isospin zero.
 
@@ -618,7 +618,7 @@ lemma tildeHiggs_one :
     h.tildeHiggs 1 = -h.higgs (![] : Fin 0 → (Fin 1 ⊕ Fin 3)) 0
 ```
 
-**`StandardModel.HiggsAlgebraCovRealization.rep_su2_tildeHiggs`**, a lemma, [line 659](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/Realization/HiggsCov/MassWeight/GaugeWeight.lean#L659).
+**`StandardModel.HiggsAlgebraCovRealization.rep_su2_tildeHiggs`**, a lemma, [line 659](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/Realization/HiggsCov/MassWeight/GaugeWeight.lean#L659).
 
 > The re-indexed Higgs symbol carries a fundamental isospin index: the four entry
 > identities of `GaugeGroup.SU2Conjugation` remove every complex conjugate.
@@ -629,7 +629,7 @@ lemma rep_su2_tildeHiggs (V : specialUnitaryGroup (Fin 2) ℂ) (i : Fin 2) :
       = ∑ a, V.1 a i • h.tildeHiggs a
 ```
 
-**`StandardModel.HiggsAlgebraCovRealization.quadFamily`**, a def, [line 677](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/Realization/HiggsCov/MassWeight/GaugeWeight.lean#L677).
+**`StandardModel.HiggsAlgebraCovRealization.quadFamily`**, a def, [line 677](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/Realization/HiggsCov/MassWeight/GaugeWeight.lean#L677).
 
 > The quartic isospin family: two conjugate Higgs symbols against two re-indexed Higgs
 > symbols, each of the four carrying a fundamental isospin index.
@@ -639,7 +639,7 @@ noncomputable def quadFamily (h : HiggsAlgebraCovRealization B rep repLorentz ma
     (Fin 4 → Fin 2) → B
 ```
 
-**`StandardModel.HiggsAlgebraCovRealization.isSU2QuadFundamental_quadFamily`**, a lemma, [line 685](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/Realization/HiggsCov/MassWeight/GaugeWeight.lean#L685).
+**`StandardModel.HiggsAlgebraCovRealization.isSU2QuadFundamental_quadFamily`**, a lemma, [line 685](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/Realization/HiggsCov/MassWeight/GaugeWeight.lean#L685).
 
 > The quartic family carries four fundamental isospin indices.
 
@@ -647,7 +647,7 @@ noncomputable def quadFamily (h : HiggsAlgebraCovRealization B rep repLorentz ma
 lemma isSU2QuadFundamental_quadFamily : IsSU2QuadFundamental B rep h.quadFamily
 ```
 
-**`StandardModel.HiggsAlgebraCovRealization.epsilonContraction₁₂_quadFamily`**, a lemma, [line 721](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/Realization/HiggsCov/MassWeight/GaugeWeight.lean#L721).
+**`StandardModel.HiggsAlgebraCovRealization.epsilonContraction₁₂_quadFamily`**, a lemma, [line 721](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/Realization/HiggsCov/MassWeight/GaugeWeight.lean#L721).
 
 > The first epsilon contraction of the quartic family is the square of the isospin
 > contraction: pairing the first conjugate symbol with the first Higgs symbol, and the
@@ -659,7 +659,7 @@ lemma epsilonContraction₁₂_quadFamily :
       = h.dotGaugeHiggs ![] ![] * h.dotGaugeHiggs ![] ![]
 ```
 
-**`StandardModel.HiggsAlgebraCovRealization.epsilonContraction₁₃_quadFamily`**, a lemma, [line 735](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/Realization/HiggsCov/MassWeight/GaugeWeight.lean#L735).
+**`StandardModel.HiggsAlgebraCovRealization.epsilonContraction₁₃_quadFamily`**, a lemma, [line 735](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/Realization/HiggsCov/MassWeight/GaugeWeight.lean#L735).
 
 > The second epsilon contraction of the quartic family vanishes: it pairs the two
 > conjugate symbols with each other and the two Higgs symbols with each other, and an
@@ -670,7 +670,7 @@ lemma epsilonContraction₁₃_quadFamily :
     IsSU2QuadFundamental.epsilonContraction₁₃ h.quadFamily = 0
 ```
 
-**`StandardModel.HiggsAlgebraCovRealization.quarticSpan_le_quadFamily_span`**, a lemma, [line 746](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/Realization/HiggsCov/MassWeight/GaugeWeight.lean#L746).
+**`StandardModel.HiggsAlgebraCovRealization.quarticSpan_le_quadFamily_span`**, a lemma, [line 746](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/Realization/HiggsCov/MassWeight/GaugeWeight.lean#L746).
 
 > The three quartic monomials of section C lie in the span of the components of the
 > quartic family, each being one of those components up to a sign.
@@ -696,7 +696,7 @@ lemma quarticSpan_le_quadFamily_span :
 > components and a gauge transformation does not. It asks the target to be gauge stable too,
 > and the isospin contractions are gauge invariant.
 
-**`StandardModel.HiggsAlgebraCovRealization.isoSpan`**, a def, [line 796](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/Realization/HiggsCov/MassWeight/GaugeWeight.lean#L796).
+**`StandardModel.HiggsAlgebraCovRealization.isoSpan`**, a def, [line 796](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/Realization/HiggsCov/MassWeight/GaugeWeight.lean#L796).
 
 > The span of the components of all the isospin families of a Higgs tower carrying `n`
 > derivatives against a conjugate tower carrying `m`.  This is the gauge-stable
@@ -707,7 +707,7 @@ noncomputable def isoSpan (h : HiggsAlgebraCovRealization B rep repLorentz massW
     (n m : ℕ) : Submodule ℂ B
 ```
 
-**`StandardModel.HiggsAlgebraCovRealization.isStableUnder_isoSpan`**, a lemma, [line 803](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/Realization/HiggsCov/MassWeight/GaugeWeight.lean#L803).
+**`StandardModel.HiggsAlgebraCovRealization.isStableUnder_isoSpan`**, a lemma, [line 803](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/Realization/HiggsCov/MassWeight/GaugeWeight.lean#L803).
 
 > The isospin span is stable under the gauge group.
 
@@ -716,7 +716,7 @@ lemma isStableUnder_isoSpan (n m : ℕ) :
     IsStableUnder (fun g : GaugeGroupI => rep g) (h.isoSpan n m)
 ```
 
-**`StandardModel.HiggsAlgebraCovRealization.isFixedBy_dotSpan`**, a lemma, [line 810](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/Realization/HiggsCov/MassWeight/GaugeWeight.lean#L810).
+**`StandardModel.HiggsAlgebraCovRealization.isFixedBy_dotSpan`**, a lemma, [line 810](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/Realization/HiggsCov/MassWeight/GaugeWeight.lean#L810).
 
 > The span of the isospin contractions is fixed pointwise by the gauge group.
 
@@ -725,7 +725,7 @@ lemma isFixedBy_dotSpan (n m : ℕ) :
     IsFixedBy (fun g : GaugeGroupI => rep g) (h.dotSpan n m)
 ```
 
-**`StandardModel.HiggsAlgebraCovRealization.higgsBarHiggsSpan_le_isoSpan'`**, a lemma, [line 816](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/Realization/HiggsCov/MassWeight/GaugeWeight.lean#L816).
+**`StandardModel.HiggsAlgebraCovRealization.higgsBarHiggsSpan_le_isoSpan'`**, a lemma, [line 816](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/Realization/HiggsCov/MassWeight/GaugeWeight.lean#L816).
 
 > Each isospin-diagonal pairing span of section C sits inside the isospin span.
 
@@ -734,7 +734,7 @@ lemma higgsBarHiggsSpan_le_isoSpan' (n m : ℕ) (i : Fin 2) :
     h.higgsBarHiggsSpan n m i ≤ h.isoSpan n m
 ```
 
-**`StandardModel.HiggsAlgebraCovRealization.higgsBarHiggsSpan_le_isoSpan`**, a lemma, [line 826](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/Realization/HiggsCov/MassWeight/GaugeWeight.lean#L826).
+**`StandardModel.HiggsAlgebraCovRealization.higgsBarHiggsSpan_le_isoSpan`**, a lemma, [line 826](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/Realization/HiggsCov/MassWeight/GaugeWeight.lean#L826).
 
 > The pairing span of section C sits inside the isospin span.
 
@@ -743,7 +743,7 @@ lemma higgsBarHiggsSpan_le_isoSpan (n m : ℕ) :
     h.higgsBarHiggsSpan n m 0 ⊔ h.higgsBarHiggsSpan n m 1 ≤ h.isoSpan n m
 ```
 
-**`StandardModel.HiggsAlgebraCovRealization.reducesInvariantsTo_isoSpan`**, a lemma, [line 834](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/Realization/HiggsCov/MassWeight/GaugeWeight.lean#L834).
+**`StandardModel.HiggsAlgebraCovRealization.reducesInvariantsTo_isoSpan`**, a lemma, [line 834](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/Realization/HiggsCov/MassWeight/GaugeWeight.lean#L834).
 
 > The isospin span reduces, for the gauge group, to the span of the isospin contractions:
 > each family's span reduces to the line through its delta contraction, which is the
@@ -768,7 +768,7 @@ lemma reducesInvariantsTo_isoSpan (n m : ℕ) :
 > zero. The quartic span is joined with the three isospin spans by `ReducesInvariantsTo.sup`,
 > which asks stability of the isospin spans only, not of the quartic span.
 
-**`StandardModel.HiggsAlgebraCovRealization.reducesInvariantsTo_massWeightSubmodule_two`**, a lemma, [line 872](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/Realization/HiggsCov/MassWeight/GaugeWeight.lean#L872).
+**`StandardModel.HiggsAlgebraCovRealization.reducesInvariantsTo_massWeightSubmodule_two`**, a lemma, [line 872](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/Realization/HiggsCov/MassWeight/GaugeWeight.lean#L872).
 
 > Mass weight two reduces to `⊥` for the gauge group: a single Higgs symbol carries
 > hypercharge, so the weight-zero piece is trivial.
@@ -778,7 +778,7 @@ lemma reducesInvariantsTo_massWeightSubmodule_two :
     ReducesInvariantsTo (fun g : GaugeGroupI => rep g) (h.massWeightSubmodule 2) ⊥
 ```
 
-**`StandardModel.HiggsAlgebraCovRealization.reducesInvariantsTo_massWeightSubmodule_four`**, a lemma, [line 881](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/Realization/HiggsCov/MassWeight/GaugeWeight.lean#L881).
+**`StandardModel.HiggsAlgebraCovRealization.reducesInvariantsTo_massWeightSubmodule_four`**, a lemma, [line 881](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/Realization/HiggsCov/MassWeight/GaugeWeight.lean#L881).
 
 > Mass weight four reduces, for the gauge group, to the underived isospin contraction,
 > the Higgs mass term.
@@ -789,7 +789,7 @@ lemma reducesInvariantsTo_massWeightSubmodule_four :
       (h.dotSpan 0 0)
 ```
 
-**`StandardModel.HiggsAlgebraCovRealization.reducesInvariantsTo_massWeightSubmodule_six`**, a lemma, [line 893](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/Realization/HiggsCov/MassWeight/GaugeWeight.lean#L893).
+**`StandardModel.HiggsAlgebraCovRealization.reducesInvariantsTo_massWeightSubmodule_six`**, a lemma, [line 893](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/Realization/HiggsCov/MassWeight/GaugeWeight.lean#L893).
 
 > Mass weight six reduces, for the gauge group, to the isospin contractions carrying one
 > derivative, on either factor.
@@ -800,7 +800,7 @@ lemma reducesInvariantsTo_massWeightSubmodule_six :
       (h.dotSpan 1 0 ⊔ h.dotSpan 0 1)
 ```
 
-**`StandardModel.HiggsAlgebraCovRealization.reducesInvariantsTo_massWeightSubmodule_eight`**, a lemma, [line 909](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/Realization/HiggsCov/MassWeight/GaugeWeight.lean#L909).
+**`StandardModel.HiggsAlgebraCovRealization.reducesInvariantsTo_massWeightSubmodule_eight`**, a lemma, [line 909](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/Realization/HiggsCov/MassWeight/GaugeWeight.lean#L909).
 
 > Mass weight eight reduces, for the gauge group, to the isospin contractions carrying two
 > derivatives and the square of the underived one, the quartic potential.
@@ -821,7 +821,7 @@ lemma reducesInvariantsTo_massWeightSubmodule_eight :
 > the gauge-invariant part of each mass-weight submodule up to weight eight is exactly
 > described.
 
-**`StandardModel.HiggsAlgebraCovRealization.mem_dotSpan_of_invariant_massWeightSubmodule_four`**, a lemma, [line 967](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/Realization/HiggsCov/MassWeight/GaugeWeight.lean#L967).
+**`StandardModel.HiggsAlgebraCovRealization.mem_dotSpan_of_invariant_massWeightSubmodule_four`**, a lemma, [line 967](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/Realization/HiggsCov/MassWeight/GaugeWeight.lean#L967).
 
 > A gauge-invariant term of mass weight four is a multiple of the underived isospin
 > contraction.
@@ -832,7 +832,7 @@ lemma mem_dotSpan_of_invariant_massWeightSubmodule_four {x : B}
     x ∈ h.dotSpan 0 0
 ```
 
-**`StandardModel.HiggsAlgebraCovRealization.mem_dotSpan_of_invariant_massWeightSubmodule_six`**, a lemma, [line 976](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/Realization/HiggsCov/MassWeight/GaugeWeight.lean#L976).
+**`StandardModel.HiggsAlgebraCovRealization.mem_dotSpan_of_invariant_massWeightSubmodule_six`**, a lemma, [line 976](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/Realization/HiggsCov/MassWeight/GaugeWeight.lean#L976).
 
 > A gauge-invariant term of mass weight six is a combination of the isospin contractions
 > carrying one derivative, on either factor.
@@ -843,7 +843,7 @@ lemma mem_dotSpan_of_invariant_massWeightSubmodule_six {x : B}
     x ∈ h.dotSpan 1 0 ⊔ h.dotSpan 0 1
 ```
 
-**`StandardModel.HiggsAlgebraCovRealization.mem_dotSpan_of_invariant_massWeightSubmodule_eight`**, a lemma, [line 985](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/Realization/HiggsCov/MassWeight/GaugeWeight.lean#L985).
+**`StandardModel.HiggsAlgebraCovRealization.mem_dotSpan_of_invariant_massWeightSubmodule_eight`**, a lemma, [line 985](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/Realization/HiggsCov/MassWeight/GaugeWeight.lean#L985).
 
 > A gauge-invariant term of mass weight eight is a combination of the isospin
 > contractions carrying two derivatives and of the square of the underived contraction.
@@ -855,7 +855,7 @@ lemma mem_dotSpan_of_invariant_massWeightSubmodule_eight {x : B}
       ⊔ ℂ ∙ (h.dotGaugeHiggs ![] ![] * h.dotGaugeHiggs ![] ![])
 ```
 
-**`StandardModel.HiggsAlgebraCovRealization.dotGaugeHiggs_mem_massWeightSubmodule`**, a lemma, [line 994](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/Realization/HiggsCov/MassWeight/GaugeWeight.lean#L994).
+**`StandardModel.HiggsAlgebraCovRealization.dotGaugeHiggs_mem_massWeightSubmodule`**, a lemma, [line 994](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/Realization/HiggsCov/MassWeight/GaugeWeight.lean#L994).
 
 > An isospin contraction has the mass weight of its two towers together.
 
@@ -865,7 +865,7 @@ lemma dotGaugeHiggs_mem_massWeightSubmodule {n1 n2 : ℕ} (d1 : Fin n1 → (Fin 
     h.dotGaugeHiggs d1 d2 ∈ h.massWeightSubmodule (2 * (1 + n1) + 2 * (1 + n2))
 ```
 
-**`StandardModel.HiggsAlgebraCovRealization.gaugeInvariantOfMassDim_four_eq_dotSpan`**, a lemma, [line 1008](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/Realization/HiggsCov/MassWeight/GaugeWeight.lean#L1008).
+**`StandardModel.HiggsAlgebraCovRealization.gaugeInvariantOfMassDim_four_eq_dotSpan`**, a lemma, [line 1008](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/Realization/HiggsCov/MassWeight/GaugeWeight.lean#L1008).
 
 > The gauge invariants of mass weight four: the underived isospin contraction.
 
@@ -874,7 +874,7 @@ lemma gaugeInvariantOfMassDim_four_eq_dotSpan :
     h.gaugeInvariantOfMassDim 4 = h.dotSpan 0 0
 ```
 
-**`StandardModel.HiggsAlgebraCovRealization.gaugeInvariantOfMassDim_six_eq_dotSpan`**, a lemma, [line 1020](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/Realization/HiggsCov/MassWeight/GaugeWeight.lean#L1020).
+**`StandardModel.HiggsAlgebraCovRealization.gaugeInvariantOfMassDim_six_eq_dotSpan`**, a lemma, [line 1020](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/Realization/HiggsCov/MassWeight/GaugeWeight.lean#L1020).
 
 > The gauge invariants of mass weight six: the isospin contractions with one derivative
 > on either factor.
@@ -884,7 +884,7 @@ lemma gaugeInvariantOfMassDim_six_eq_dotSpan :
     h.gaugeInvariantOfMassDim 6 = h.dotSpan 1 0 ⊔ h.dotSpan 0 1
 ```
 
-**`StandardModel.HiggsAlgebraCovRealization.gaugeInvariantOfMassDim_eight_eq_dotSpan`**, a lemma, [line 1034](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/Realization/HiggsCov/MassWeight/GaugeWeight.lean#L1034).
+**`StandardModel.HiggsAlgebraCovRealization.gaugeInvariantOfMassDim_eight_eq_dotSpan`**, a lemma, [line 1034](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/Realization/HiggsCov/MassWeight/GaugeWeight.lean#L1034).
 
 > The gauge invariants of mass weight eight: the isospin contractions with two
 > derivatives distributed over the two factors, together with the square of the underived
@@ -905,4 +905,4 @@ lemma gaugeInvariantOfMassDim_eight_eq_dotSpan :
 
 ## Sources
 
-- [PhyslibAlpha/Particles/StandardModel/Realization/HiggsCov/MassWeight/GaugeWeight.lean at 2a1dfe43](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/Realization/HiggsCov/MassWeight/GaugeWeight.lean)
+- [PhyslibAlpha/Particles/StandardModel/Realization/HiggsCov/MassWeight/GaugeWeight.lean at 8c87bdfb](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/Realization/HiggsCov/MassWeight/GaugeWeight.lean)

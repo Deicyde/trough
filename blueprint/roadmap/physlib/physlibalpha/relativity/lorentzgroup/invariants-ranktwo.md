@@ -8,7 +8,7 @@ proof: formalized
 
 # Lorentz invariants among two four-vector indices
 
-The module `PhyslibAlpha.Relativity.LorentzGroup.Invariants.RankTwo`, [PhyslibAlpha/Relativity/LorentzGroup/Invariants/RankTwo.lean](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Relativity/LorentzGroup/Invariants/RankTwo.lean): 12 declarations, 12 with a docstring.
+The module `PhyslibAlpha.Relativity.LorentzGroup.Invariants.RankTwo`, [PhyslibAlpha/Relativity/LorentzGroup/Invariants/RankTwo.lean](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Relativity/LorentzGroup/Invariants/RankTwo.lean): 12 declarations, 12 with a docstring.
 
 ## i. Overview
 
@@ -41,7 +41,7 @@ The module `PhyslibAlpha.Relativity.LorentzGroup.Invariants.RankTwo`, [PhyslibAl
 
 ## A. The metric
 
-**`Lorentz.RankTwo.metric`**, a def, [line 70](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Relativity/LorentzGroup/Invariants/RankTwo.lean#L70).
+**`Lorentz.RankTwo.metric`**, a def, [line 70](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Relativity/LorentzGroup/Invariants/RankTwo.lean#L70).
 
 > The metric `η` on two contravariant indices, with its colours relabelled from
 > `![.up, .up]` to `fun _ => .up`.
@@ -50,7 +50,7 @@ The module `PhyslibAlpha.Relativity.LorentzGroup.Invariants.RankTwo`, [PhyslibAl
 noncomputable def metric : ℂT(fun _ : Fin 2 => Color.up)
 ```
 
-**`Lorentz.RankTwo.metric_invariant`**, a lemma, [line 75](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Relativity/LorentzGroup/Invariants/RankTwo.lean#L75).
+**`Lorentz.RankTwo.metric_invariant`**, a lemma, [line 75](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Relativity/LorentzGroup/Invariants/RankTwo.lean#L75).
 
 > The metric is Lorentz invariant.
 
@@ -58,7 +58,7 @@ noncomputable def metric : ℂT(fun _ : Fin 2 => Color.up)
 lemma metric_invariant (g : SL(2,ℂ)) : g • metric = metric
 ```
 
-**`Lorentz.RankTwo.coeffEquiv_symm_minkowskiMatrixZ`**, a lemma, [line 79](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Relativity/LorentzGroup/Invariants/RankTwo.lean#L79).
+**`Lorentz.RankTwo.coeffEquiv_symm_minkowskiMatrixZ`**, a lemma, [line 79](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Relativity/LorentzGroup/Invariants/RankTwo.lean#L79).
 
 > The coefficient tensor of the metric is the Minkowski metric.
 
@@ -67,7 +67,7 @@ lemma coeffEquiv_symm_minkowskiMatrixZ :
     (coeffEquiv 2).symm (fun d => ((minkowskiMatrixZ (d 0) (d 1) : ℤ) : ℂ)) = metric
 ```
 
-**`Lorentz.RankTwo.ofComponents_metric`**, a lemma, [line 91](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Relativity/LorentzGroup/Invariants/RankTwo.lean#L91).
+**`Lorentz.RankTwo.ofComponents_metric`**, a lemma, [line 91](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Relativity/LorentzGroup/Invariants/RankTwo.lean#L91).
 
 > `ofComponents T` sends the metric to the contraction `η_{μν} T^{μν}`.
 
@@ -83,7 +83,7 @@ lemma ofComponents_metric (T : (Fin 2 → Fin 1 ⊕ Fin 3) → B) :
 > spatial diagonal ones, and the boost along `z` relates the spatial diagonal to the time
 > diagonal. Together these leave `c_tt` times the metric.
 
-**`Lorentz.RankTwo.exists_halfTurnSign_mul_ne_one`**, a lemma, [line 108](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Relativity/LorentzGroup/Invariants/RankTwo.lean#L108).
+**`Lorentz.RankTwo.exists_halfTurnSign_mul_ne_one`**, a lemma, [line 108](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Relativity/LorentzGroup/Invariants/RankTwo.lean#L108).
 
 > Two distinct directions are told apart by the half turn about some axis: it keeps one and
 > negates the other, a finite check.
@@ -93,7 +93,7 @@ lemma exists_halfTurnSign_mul_ne_one :
     ∀ μ ν : Fin 1 ⊕ Fin 3, μ ≠ ν → ∃ k, halfTurnSign k μ * halfTurnSign k ν ≠ 1
 ```
 
-**`Lorentz.RankTwo.eq_zero_of_ne`**, a lemma, [line 114](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Relativity/LorentzGroup/Invariants/RankTwo.lean#L114).
+**`Lorentz.RankTwo.eq_zero_of_ne`**, a lemma, [line 114](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Relativity/LorentzGroup/Invariants/RankTwo.lean#L114).
 
 > An invariant coefficient tensor has no off-diagonal coefficients: for `μ ≠ ν` some half
 > turn multiplies `c_{μν}` by `-1`.
@@ -103,7 +103,7 @@ lemma eq_zero_of_ne {c : (Fin 2 → Fin 1 ⊕ Fin 3) → ℂ} (hc : IsInvariantC
     {d : Fin 2 → Fin 1 ⊕ Fin 3} (hd : d 0 ≠ d 1) : c d = 0
 ```
 
-**`Lorentz.RankTwo.apply_inr_inr_eq`**, a lemma, [line 121](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Relativity/LorentzGroup/Invariants/RankTwo.lean#L121).
+**`Lorentz.RankTwo.apply_inr_inr_eq`**, a lemma, [line 121](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Relativity/LorentzGroup/Invariants/RankTwo.lean#L121).
 
 > The three spatial diagonal coefficients of an invariant coefficient tensor agree: the
 > cyclic rotation carries `c_xx` to `c_yy` to `c_zz`.
@@ -113,7 +113,7 @@ lemma apply_inr_inr_eq {c : (Fin 2 → Fin 1 ⊕ Fin 3) → ℂ} (hc : IsInvaria
     (j : Fin 3) : c ![Sum.inr j, Sum.inr j] = c ![Sum.inr 2, Sum.inr 2]
 ```
 
-**`Lorentz.RankTwo.apply_inl_inl_add_apply_inr_inr`**, a lemma, [line 135](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Relativity/LorentzGroup/Invariants/RankTwo.lean#L135).
+**`Lorentz.RankTwo.apply_inl_inl_add_apply_inr_inr`**, a lemma, [line 135](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Relativity/LorentzGroup/Invariants/RankTwo.lean#L135).
 
 > The time and spatial diagonal coefficients of an invariant coefficient tensor are opposite.
 > The boost along `z` scales the light-cone component along `D₀ - D_z` in both slots by `t⁴`, so
@@ -124,7 +124,7 @@ lemma apply_inl_inl_add_apply_inr_inr {c : (Fin 2 → Fin 1 ⊕ Fin 3) → ℂ}
     (hc : IsInvariantCoeff c) : c ![Sum.inl 0, Sum.inl 0] + c ![Sum.inr 2, Sum.inr 2] = 0
 ```
 
-**`Lorentz.RankTwo.eq_smul_minkowskiMatrixZ`**, a lemma, [line 145](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Relativity/LorentzGroup/Invariants/RankTwo.lean#L145).
+**`Lorentz.RankTwo.eq_smul_minkowskiMatrixZ`**, a lemma, [line 145](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Relativity/LorentzGroup/Invariants/RankTwo.lean#L145).
 
 > An invariant coefficient tensor is `c_tt` times the Minkowski metric.
 
@@ -136,7 +136,7 @@ lemma eq_smul_minkowskiMatrixZ {c : (Fin 2 → Fin 1 ⊕ Fin 3) → ℂ} (hc : I
 
 ## C. The invariants of an equivariant map
 
-**`Lorentz.RankTwo.reducesInvariantsTo_span_metric`**, a lemma, [line 175](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Relativity/LorentzGroup/Invariants/RankTwo.lean#L175).
+**`Lorentz.RankTwo.reducesInvariantsTo_span_metric`**, a lemma, [line 175](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Relativity/LorentzGroup/Invariants/RankTwo.lean#L175).
 
 > The invariants of the range of `f` reduce to the line through the image `f metric` of the
 > metric: a Lorentz invariant of `LinearMap.range f ⊔ S`, for `S` a Lorentz-stable submodule, is
@@ -148,7 +148,7 @@ lemma reducesInvariantsTo_span_metric (hf : IsLorentzCovariant 2 B repLorentz f)
       (ℂ ∙ f metric)
 ```
 
-**`Lorentz.RankTwo.exists_smul_map_metric_add_of_invariant`**, a lemma, [line 186](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Relativity/LorentzGroup/Invariants/RankTwo.lean#L186).
+**`Lorentz.RankTwo.exists_smul_map_metric_add_of_invariant`**, a lemma, [line 186](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Relativity/LorentzGroup/Invariants/RankTwo.lean#L186).
 
 > Every Lorentz invariant of `LinearMap.range f ⊔ S`, for `S` a Lorentz-stable submodule, is a
 > multiple of the image `f metric` of the metric plus an element of `S`.
@@ -160,7 +160,7 @@ lemma exists_smul_map_metric_add_of_invariant (hf : IsLorentzCovariant 2 B repLo
     ∃ a : ℂ, ∃ y ∈ S, x = a • f metric + y
 ```
 
-**`Lorentz.RankTwo.exists_smul_map_metric_of_invariant`**, a lemma, [line 197](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Relativity/LorentzGroup/Invariants/RankTwo.lean#L197).
+**`Lorentz.RankTwo.exists_smul_map_metric_of_invariant`**, a lemma, [line 197](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Relativity/LorentzGroup/Invariants/RankTwo.lean#L197).
 
 > Every Lorentz invariant in the range of `f` is a multiple of the image `f metric` of the
 > metric.
@@ -179,4 +179,4 @@ lemma exists_smul_map_metric_of_invariant (hf : IsLorentzCovariant 2 B repLorent
 
 ## Sources
 
-- [PhyslibAlpha/Relativity/LorentzGroup/Invariants/RankTwo.lean at 2a1dfe43](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Relativity/LorentzGroup/Invariants/RankTwo.lean)
+- [PhyslibAlpha/Relativity/LorentzGroup/Invariants/RankTwo.lean at 8c87bdfb](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Relativity/LorentzGroup/Invariants/RankTwo.lean)

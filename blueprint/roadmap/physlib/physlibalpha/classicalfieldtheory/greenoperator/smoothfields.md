@@ -8,7 +8,7 @@ proof: formalized
 
 # Smooth spacetime fields as Green operator input
 
-The module `PhyslibAlpha.ClassicalFieldTheory.GreenOperator.SmoothFields`, [PhyslibAlpha/ClassicalFieldTheory/GreenOperator/SmoothFields.lean](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/GreenOperator/SmoothFields.lean): 10 declarations, 8 with a docstring.
+The module `PhyslibAlpha.ClassicalFieldTheory.GreenOperator.SmoothFields`, [PhyslibAlpha/ClassicalFieldTheory/GreenOperator/SmoothFields.lean](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/GreenOperator/SmoothFields.lean): 10 declarations, 8 with a docstring.
 
 ## i. Overview
 
@@ -50,7 +50,7 @@ The module `PhyslibAlpha.ClassicalFieldTheory.GreenOperator.SmoothFields`, [Phys
 > Lemmas: `isCompact_causalPast_inter`, `isCompact_causalFuture_inter`, `tsupport_cutoff_subset`,
 > `tsupport_cutoff_sub_subset`, `smoothHasCausalCutoffs`.
 
-**`GreenOperator.Minkowski.pastLocalization`**, a def, [line 78](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/GreenOperator/SmoothFields.lean#L78).
+**`GreenOperator.Minkowski.pastLocalization`**, a def, [line 78](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/GreenOperator/SmoothFields.lean#L78).
 
 > Retarded localization for every admissible field space with local gluing and bump stability.
 
@@ -60,7 +60,7 @@ def pastLocalization (hlocal : IsLocalFieldSpace S)
     PastLocalization (causalRelation d) P
 ```
 
-**`GreenOperator.Minkowski.futureLocalization`**, a def, [line 86](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/GreenOperator/SmoothFields.lean#L86).
+**`GreenOperator.Minkowski.futureLocalization`**, a def, [line 86](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/GreenOperator/SmoothFields.lean#L86).
 
 > Advanced localization uses the same field hypotheses and the reversed verified causal
 > geometry.
@@ -71,7 +71,7 @@ def futureLocalization (hlocal : IsLocalFieldSpace S)
     PastLocalization (causalRelation d).reverse P
 ```
 
-**`GreenOperator.Minkowski.smoothFields_bumpStable`**, a lemma, [line 97](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/GreenOperator/SmoothFields.lean#L97).
+**`GreenOperator.Minkowski.smoothFields_bumpStable`**, a lemma, [line 97](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/GreenOperator/SmoothFields.lean#L97).
 
 > Smooth scalar bump multiplication preserves the smooth admissible field space.
 
@@ -80,7 +80,7 @@ lemma smoothFields_bumpStable (b : ContDiffBump (0 : SpaceTime d)) (u : smoothFi
     (fun x => b x • u.val x) ∈ smoothFields d V
 ```
 
-**`GreenOperator.Minkowski.smoothPastLocalization`**, a def, [line 103](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/GreenOperator/SmoothFields.lean#L103).
+**`GreenOperator.Minkowski.smoothPastLocalization`**, a def, [line 103](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/GreenOperator/SmoothFields.lean#L103).
 
 > All past-compact smooth fields admit the compact truncations required by the general theory.
 
@@ -89,7 +89,7 @@ def smoothPastLocalization (P : LocalOperator (smoothFields d V)) :
     PastLocalization (causalRelation d) P
 ```
 
-**`GreenOperator.Minkowski.smoothFutureLocalization`**, a def, [line 108](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/GreenOperator/SmoothFields.lean#L108).
+**`GreenOperator.Minkowski.smoothFutureLocalization`**, a def, [line 108](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/GreenOperator/SmoothFields.lean#L108).
 
 > The same analytic field class supplies advanced localization after causal reversal.
 
@@ -98,7 +98,7 @@ def smoothFutureLocalization (P : LocalOperator (smoothFields d V)) :
     PastLocalization (causalRelation d).reverse P
 ```
 
-**`GreenOperator.Minkowski.isCompact_causalPast_inter`**, a lemma, [line 117](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/GreenOperator/SmoothFields.lean#L117).
+**`GreenOperator.Minkowski.isCompact_causalPast_inter`**, a lemma, [line 117](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/GreenOperator/SmoothFields.lean#L117).
 
 > The part of the causal past of a compact set with nonnegative time is compact.
 
@@ -107,7 +107,7 @@ lemma isCompact_causalPast_inter {K : Set (SpaceTime d)} (hK : IsCompact K) :
     IsCompact ((causalRelation d).causalPast K ∩ {x | 0 ≤ x.timeComponent})
 ```
 
-**`GreenOperator.Minkowski.isCompact_causalFuture_inter`**, a lemma, [line 153](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/GreenOperator/SmoothFields.lean#L153).
+**`GreenOperator.Minkowski.isCompact_causalFuture_inter`**, a lemma, [line 153](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/GreenOperator/SmoothFields.lean#L153).
 
 > The part of the causal future of a compact set with time at most one is compact.
 
@@ -116,7 +116,7 @@ lemma isCompact_causalFuture_inter {K : Set (SpaceTime d)} (hK : IsCompact K) :
     IsCompact ((causalRelation d).causalFuture K ∩ {x | x.timeComponent ≤ 1})
 ```
 
-**`GreenOperator.Minkowski.tsupport_cutoff_subset`**, a lemma, [line 194](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/GreenOperator/SmoothFields.lean#L194).
+**`GreenOperator.Minkowski.tsupport_cutoff_subset`**, a lemma, [line 194](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/GreenOperator/SmoothFields.lean#L194).
 
 ```lean
 lemma tsupport_cutoff_subset (u : SpaceTime d → V) :
@@ -124,7 +124,7 @@ lemma tsupport_cutoff_subset (u : SpaceTime d → V) :
       {x | 0 ≤ x.timeComponent} ∩ tsupport u
 ```
 
-**`GreenOperator.Minkowski.tsupport_cutoff_sub_subset`**, a lemma, [line 203](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/GreenOperator/SmoothFields.lean#L203).
+**`GreenOperator.Minkowski.tsupport_cutoff_sub_subset`**, a lemma, [line 203](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/GreenOperator/SmoothFields.lean#L203).
 
 ```lean
 lemma tsupport_cutoff_sub_subset (u : SpaceTime d → V) :
@@ -132,7 +132,7 @@ lemma tsupport_cutoff_sub_subset (u : SpaceTime d → V) :
       {x | x.timeComponent ≤ 1} ∩ tsupport u
 ```
 
-**`GreenOperator.Minkowski.smoothHasCausalCutoffs`**, a lemma, [line 213](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/GreenOperator/SmoothFields.lean#L213).
+**`GreenOperator.Minkowski.smoothHasCausalCutoffs`**, a lemma, [line 213](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/GreenOperator/SmoothFields.lean#L213).
 
 > Every smooth field space has the temporal cutoff splitting of spacelike-compact fields.
 
@@ -150,4 +150,4 @@ lemma smoothHasCausalCutoffs (P : LocalOperator (smoothFields d V)) :
 
 ## Sources
 
-- [PhyslibAlpha/ClassicalFieldTheory/GreenOperator/SmoothFields.lean at 2a1dfe43](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/GreenOperator/SmoothFields.lean)
+- [PhyslibAlpha/ClassicalFieldTheory/GreenOperator/SmoothFields.lean at 8c87bdfb](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/GreenOperator/SmoothFields.lean)

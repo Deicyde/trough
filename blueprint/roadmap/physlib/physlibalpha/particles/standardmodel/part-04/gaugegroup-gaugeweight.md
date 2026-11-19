@@ -8,7 +8,7 @@ proof: formalized
 
 # Gauge weight decompositions
 
-The module `PhyslibAlpha.Particles.StandardModel.GaugeGroup.GaugeWeight`, [PhyslibAlpha/Particles/StandardModel/GaugeGroup/GaugeWeight.lean](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/GaugeGroup/GaugeWeight.lean): 61 declarations, 49 with a docstring.
+The module `PhyslibAlpha.Particles.StandardModel.GaugeGroup.GaugeWeight`, [PhyslibAlpha/Particles/StandardModel/GaugeGroup/GaugeWeight.lean](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/GaugeGroup/GaugeWeight.lean): 61 declarations, 49 with a docstring.
 
 ## i. Overview
 
@@ -72,7 +72,7 @@ The module `PhyslibAlpha.Particles.StandardModel.GaugeGroup.GaugeWeight`, [Physl
 > The generators are elements of the group, and the purity of a weight space is recorded by a
 > character equation `rep g x = c • x`.
 
-**`StandardModel.expI`**, a def, [line 101](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/GaugeGroup/GaugeWeight.lean#L101).
+**`StandardModel.expI`**, a def, [line 101](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/GaugeGroup/GaugeWeight.lean#L101).
 
 > The unitary scalar `exp i`, a point of the unit circle of infinite order.
 
@@ -80,7 +80,7 @@ The module `PhyslibAlpha.Particles.StandardModel.GaugeGroup.GaugeWeight`, [Physl
 noncomputable def expI : unitary ℂ
 ```
 
-**`StandardModel.expI_zpow_injective`**, a lemma, [line 112](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/GaugeGroup/GaugeWeight.lean#L112).
+**`StandardModel.expI_zpow_injective`**, a lemma, [line 112](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/GaugeGroup/GaugeWeight.lean#L112).
 
 > The powers of `exp i` are pairwise distinct, by the irrationality of `π`.
 
@@ -88,7 +88,7 @@ noncomputable def expI : unitary ℂ
 lemma expI_zpow_injective : Function.Injective fun n : ℤ => ((expI : ℂ) ^ n)
 ```
 
-**`StandardModel.expI_ne_zero`**, a lemma, [line 135](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/GaugeGroup/GaugeWeight.lean#L135).
+**`StandardModel.expI_ne_zero`**, a lemma, [line 135](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/GaugeGroup/GaugeWeight.lean#L135).
 
 > `exp i` is nonzero.
 
@@ -96,7 +96,7 @@ lemma expI_zpow_injective : Function.Injective fun n : ℤ => ((expI : ℂ) ^ n)
 lemma expI_ne_zero : ((expI : ℂ)) ≠ 0
 ```
 
-**`StandardModel.expI_inv_eq_star`**, a lemma, [line 141](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/GaugeGroup/GaugeWeight.lean#L141).
+**`StandardModel.expI_inv_eq_star`**, a lemma, [line 141](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/GaugeGroup/GaugeWeight.lean#L141).
 
 > The inverse of `exp i` is its star.
 
@@ -104,7 +104,7 @@ lemma expI_ne_zero : ((expI : ℂ)) ≠ 0
 lemma expI_inv_eq_star : ((expI : ℂ))⁻¹ = star (expI : ℂ)
 ```
 
-**`StandardModel.expI_mul_conj`**, a lemma, [line 145](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/GaugeGroup/GaugeWeight.lean#L145).
+**`StandardModel.expI_mul_conj`**, a lemma, [line 145](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/GaugeGroup/GaugeWeight.lean#L145).
 
 > `exp i` times its conjugate is one.
 
@@ -112,7 +112,7 @@ lemma expI_inv_eq_star : ((expI : ℂ))⁻¹ = star (expI : ℂ)
 lemma expI_mul_conj : (expI : ℂ) * (starRingEnd ℂ) (expI : ℂ) = 1
 ```
 
-**`StandardModel.conj_mul_expI`**, a lemma, [line 149](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/GaugeGroup/GaugeWeight.lean#L149).
+**`StandardModel.conj_mul_expI`**, a lemma, [line 149](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/GaugeGroup/GaugeWeight.lean#L149).
 
 > The conjugate of `exp i` times `exp i` is one.
 
@@ -120,7 +120,7 @@ lemma expI_mul_conj : (expI : ℂ) * (starRingEnd ℂ) (expI : ℂ) = 1
 lemma conj_mul_expI : (starRingEnd ℂ) (expI : ℂ) * (expI : ℂ) = 1
 ```
 
-**`Matrix.mem_specialUnitaryGroup_diagonal`**, a lemma, [line 154](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/GaugeGroup/GaugeWeight.lean#L154).
+**`Matrix.mem_specialUnitaryGroup_diagonal`**, a lemma, [line 154](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/GaugeGroup/GaugeWeight.lean#L154).
 
 > A diagonal matrix whose entries are unit scalars with product one lies in the special
 > unitary group.
@@ -131,7 +131,7 @@ lemma _root_.Matrix.mem_specialUnitaryGroup_diagonal {n : Type*} [Fintype n] [De
     Matrix.diagonal d ∈ Matrix.specialUnitaryGroup n ℂ
 ```
 
-**`StandardModel.su3ExpIOne`**, a def, [line 166](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/GaugeGroup/GaugeWeight.lean#L166).
+**`StandardModel.su3ExpIOne`**, a def, [line 166](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/GaugeGroup/GaugeWeight.lean#L166).
 
 > The first colour torus generator, `diag (exp i, exp (-i), 1)`.
 
@@ -139,7 +139,7 @@ lemma _root_.Matrix.mem_specialUnitaryGroup_diagonal {n : Type*} [Fintype n] [De
 noncomputable def su3ExpIOne : specialUnitaryGroup (Fin 3) ℂ
 ```
 
-**`StandardModel.su3ExpITwo`**, a def, [line 173](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/GaugeGroup/GaugeWeight.lean#L173).
+**`StandardModel.su3ExpITwo`**, a def, [line 173](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/GaugeGroup/GaugeWeight.lean#L173).
 
 > The second colour torus generator, `diag (1, exp i, exp (-i))`.
 
@@ -147,7 +147,7 @@ noncomputable def su3ExpIOne : specialUnitaryGroup (Fin 3) ℂ
 noncomputable def su3ExpITwo : specialUnitaryGroup (Fin 3) ℂ
 ```
 
-**`StandardModel.su2ExpI`**, a def, [line 180](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/GaugeGroup/GaugeWeight.lean#L180).
+**`StandardModel.su2ExpI`**, a def, [line 180](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/GaugeGroup/GaugeWeight.lean#L180).
 
 > The `SU(2)` torus element, `diag (exp i, exp (-i))`.
 
@@ -155,7 +155,7 @@ noncomputable def su3ExpITwo : specialUnitaryGroup (Fin 3) ℂ
 noncomputable def su2ExpI : specialUnitaryGroup (Fin 2) ℂ
 ```
 
-**`StandardModel.su2ExpI_coe`**, a lemma, [line 187](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/GaugeGroup/GaugeWeight.lean#L187).
+**`StandardModel.su2ExpI_coe`**, a lemma, [line 187](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/GaugeGroup/GaugeWeight.lean#L187).
 
 > The underlying matrix of the `SU(2)` torus element.
 
@@ -165,7 +165,7 @@ lemma su2ExpI_coe :
       = !![(expI : ℂ), 0; 0, star (expI : ℂ)]
 ```
 
-**`StandardModel.su2ExpI_inv_coe`**, a lemma, [line 195](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/GaugeGroup/GaugeWeight.lean#L195).
+**`StandardModel.su2ExpI_inv_coe`**, a lemma, [line 195](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/GaugeGroup/GaugeWeight.lean#L195).
 
 > The inverse torus element is `diag (exp (-i), exp i)`, so on a doublet the two components
 > are scaled by the reciprocal characters.
@@ -191,7 +191,7 @@ lemma su2ExpI_inv_coe :
 > add when operators are multiplied, and injective, so a weight can be recovered from the four
 > characters by which the torus acts.
 
-**`StandardModel.gaugeTorusGen`**, a def, [line 220](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/GaugeGroup/GaugeWeight.lean#L220).
+**`StandardModel.gaugeTorusGen`**, a def, [line 220](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/GaugeGroup/GaugeWeight.lean#L220).
 
 > The four commuting generators of the maximal torus of the gauge group.
 
@@ -199,7 +199,7 @@ lemma su2ExpI_inv_coe :
 noncomputable def gaugeTorusGen : Fin 4 → GaugeGroupI
 ```
 
-**`StandardModel.GaugeWeight`**, an abbrev, [line 225](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/GaugeGroup/GaugeWeight.lean#L225).
+**`StandardModel.GaugeWeight`**, an abbrev, [line 225](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/GaugeGroup/GaugeWeight.lean#L225).
 
 > A **gauge weight**, the four exponents `(colour₁, colour₂, isospin, hypercharge)`
 > recording how a vector scales under `gaugeTorusGen`.
@@ -208,7 +208,7 @@ noncomputable def gaugeTorusGen : Fin 4 → GaugeGroupI
 abbrev GaugeWeight : Type
 ```
 
-**`StandardModel.GaugeWeight.coord`**, a def, [line 228](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/GaugeGroup/GaugeWeight.lean#L228).
+**`StandardModel.GaugeWeight.coord`**, a def, [line 228](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/GaugeGroup/GaugeWeight.lean#L228).
 
 > The exponent of a gauge weight against the `i`-th torus generator.
 
@@ -216,7 +216,7 @@ abbrev GaugeWeight : Type
 def GaugeWeight.coord (w : GaugeWeight) : Fin 4 → ℤ
 ```
 
-**`StandardModel.GaugeWeight.coord_zero`**, a lemma, [line 231](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/GaugeGroup/GaugeWeight.lean#L231).
+**`StandardModel.GaugeWeight.coord_zero`**, a lemma, [line 231](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/GaugeGroup/GaugeWeight.lean#L231).
 
 > The exponent at the first colour generator.
 
@@ -224,7 +224,7 @@ def GaugeWeight.coord (w : GaugeWeight) : Fin 4 → ℤ
 lemma GaugeWeight.coord_zero (w : GaugeWeight) : w.coord 0 = w.1
 ```
 
-**`StandardModel.GaugeWeight.coord_one`**, a lemma, [line 234](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/GaugeGroup/GaugeWeight.lean#L234).
+**`StandardModel.GaugeWeight.coord_one`**, a lemma, [line 234](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/GaugeGroup/GaugeWeight.lean#L234).
 
 > The exponent at the second colour generator.
 
@@ -232,7 +232,7 @@ lemma GaugeWeight.coord_zero (w : GaugeWeight) : w.coord 0 = w.1
 lemma GaugeWeight.coord_one (w : GaugeWeight) : w.coord 1 = w.2.1
 ```
 
-**`StandardModel.GaugeWeight.coord_two`**, a lemma, [line 237](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/GaugeGroup/GaugeWeight.lean#L237).
+**`StandardModel.GaugeWeight.coord_two`**, a lemma, [line 237](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/GaugeGroup/GaugeWeight.lean#L237).
 
 > The exponent at the isospin generator, normalized as `2T₃`.
 
@@ -240,7 +240,7 @@ lemma GaugeWeight.coord_one (w : GaugeWeight) : w.coord 1 = w.2.1
 lemma GaugeWeight.coord_two (w : GaugeWeight) : w.coord 2 = w.2.2.1
 ```
 
-**`StandardModel.GaugeWeight.coord_three`**, a lemma, [line 240](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/GaugeGroup/GaugeWeight.lean#L240).
+**`StandardModel.GaugeWeight.coord_three`**, a lemma, [line 240](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/GaugeGroup/GaugeWeight.lean#L240).
 
 > The exponent at the hypercharge generator, normalized as `6Y`.
 
@@ -248,7 +248,7 @@ lemma GaugeWeight.coord_two (w : GaugeWeight) : w.coord 2 = w.2.2.1
 lemma GaugeWeight.coord_three (w : GaugeWeight) : w.coord 3 = w.2.2.2
 ```
 
-**`StandardModel.GaugeWeight.coord_neg`**, a lemma, [line 243](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/GaugeGroup/GaugeWeight.lean#L243).
+**`StandardModel.GaugeWeight.coord_neg`**, a lemma, [line 243](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/GaugeGroup/GaugeWeight.lean#L243).
 
 > The zero gauge weight has vanishing exponent against every torus generator.
 
@@ -257,13 +257,13 @@ lemma GaugeWeight.coord_neg (w : GaugeWeight) (i : Fin 4) :
     (-w).coord i = -(w.coord i)
 ```
 
-**`StandardModel.GaugeWeight.zero_coord`**, a lemma, [line 247](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/GaugeGroup/GaugeWeight.lean#L247).
+**`StandardModel.GaugeWeight.zero_coord`**, a lemma, [line 247](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/GaugeGroup/GaugeWeight.lean#L247).
 
 ```lean
 lemma GaugeWeight.zero_coord (i : Fin 4) : (0 : GaugeWeight).coord i = 0
 ```
 
-**`StandardModel.GaugeWeight.coord_add`**, a lemma, [line 252](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/GaugeGroup/GaugeWeight.lean#L252).
+**`StandardModel.GaugeWeight.coord_add`**, a lemma, [line 252](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/GaugeGroup/GaugeWeight.lean#L252).
 
 > Weights add coordinatewise. With `zero_coord` this says `coord` is additive, which is
 > what makes gauge weights add under multiplication.
@@ -273,7 +273,7 @@ lemma GaugeWeight.coord_add (w w' : GaugeWeight) (i : Fin 4) :
     (w + w').coord i = w.coord i + w'.coord i
 ```
 
-**`StandardModel.GaugeWeight.coord_injective`**, a lemma, [line 258](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/GaugeGroup/GaugeWeight.lean#L258).
+**`StandardModel.GaugeWeight.coord_injective`**, a lemma, [line 258](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/GaugeGroup/GaugeWeight.lean#L258).
 
 > A gauge weight is determined by its four exponents. This is what lets a weight be
 > recovered from the characters by which the torus acts; see `piece_eq_inf`.
@@ -296,7 +296,7 @@ lemma GaugeWeight.coord_injective : Function.Injective GaugeWeight.coord
 > because a submodule arising in practice is usually only propositionally the one for which a
 > decomposition was recorded.
 
-**`StandardModel.IsMulRep`**, an abbrev, [line 292](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/GaugeGroup/GaugeWeight.lean#L292).
+**`StandardModel.IsMulRep`**, an abbrev, [line 292](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/GaugeGroup/GaugeWeight.lean#L292).
 
 > A representation acts by algebra maps, respecting multiplication. This is the
 > hypothesis under which charges are additive.
@@ -305,7 +305,7 @@ lemma GaugeWeight.coord_injective : Function.Injective GaugeWeight.coord
 abbrev IsMulRep (rep : Representation ℂ GaugeGroupI B) : Prop
 ```
 
-**`StandardModel.IsMulRep.map_one`**, a lemma, [line 297](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/GaugeGroup/GaugeWeight.lean#L297).
+**`StandardModel.IsMulRep.map_one`**, a lemma, [line 297](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/GaugeGroup/GaugeWeight.lean#L297).
 
 > A representation that respects multiplication respects the unit, since `g` is invertible
 > and so `rep g 1` is cancellable.
@@ -317,21 +317,21 @@ lemma IsMulRep.map_one {rep : Representation ℂ GaugeGroupI B} (hmul : IsMulRep
 
 ## D. Powers of `expI` under conjugation
 
-**`StandardModel.starRingEnd_expI_pow`**, a lemma, [line 309](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/GaugeGroup/GaugeWeight.lean#L309).
+**`StandardModel.starRingEnd_expI_pow`**, a lemma, [line 309](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/GaugeGroup/GaugeWeight.lean#L309).
 
 ```lean
 lemma starRingEnd_expI_pow (n : ℕ) :
     ((starRingEnd ℂ) (expI : ℂ)) ^ n = ((expI : ℂ) ^ n)⁻¹
 ```
 
-**`StandardModel.starRingEnd_expI_zpow`**, a lemma, [line 314](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/GaugeGroup/GaugeWeight.lean#L314).
+**`StandardModel.starRingEnd_expI_zpow`**, a lemma, [line 314](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/GaugeGroup/GaugeWeight.lean#L314).
 
 ```lean
 lemma starRingEnd_expI_zpow (z : ℤ) :
     (starRingEnd ℂ) ((expI : ℂ) ^ z) = (expI : ℂ) ^ (-z)
 ```
 
-**`StandardModel.expI_zpow_ne_zero`**, a lemma, [line 321](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/GaugeGroup/GaugeWeight.lean#L321).
+**`StandardModel.expI_zpow_ne_zero`**, a lemma, [line 321](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/GaugeGroup/GaugeWeight.lean#L321).
 
 ```lean
 lemma expI_zpow_ne_zero (z : ℤ) : ((expI : ℂ) ^ z) ≠ 0
@@ -343,7 +343,7 @@ lemma expI_zpow_ne_zero (z : ℤ) : ((expI : ℂ) ^ z) ≠ 0
 > `SU(2)` against the torus generators.  They are the building blocks of the gauge
 > weights of the matter representations.
 
-**`StandardModel.colourWeight`**, a def, [line 336](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/GaugeGroup/GaugeWeight.lean#L336).
+**`StandardModel.colourWeight`**, a def, [line 336](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/GaugeGroup/GaugeWeight.lean#L336).
 
 > The colour weights of the fundamental of `SU(3)` against the two colour torus
 > generators.
@@ -352,7 +352,7 @@ lemma expI_zpow_ne_zero (z : ℤ) : ((expI : ℂ) ^ z) ≠ 0
 def colourWeight (c : Fin 3) : ℤ × ℤ
 ```
 
-**`StandardModel.isoWeight`**, a def, [line 340](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/GaugeGroup/GaugeWeight.lean#L340).
+**`StandardModel.isoWeight`**, a def, [line 340](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/GaugeGroup/GaugeWeight.lean#L340).
 
 > The isospin weight of the fundamental of `SU(2)` against the isospin torus
 > generator.
@@ -367,7 +367,7 @@ def isoWeight (s : Fin 2) : ℤ
 > the negated weights, and on the conjugate basis with the negated weights as well — so
 > the conjugate-dual action carries the original weights back.
 
-**`StandardModel.dual_gaugeTorusGen_coord`**, a lemma, [line 357](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/GaugeGroup/GaugeWeight.lean#L357).
+**`StandardModel.dual_gaugeTorusGen_coord`**, a lemma, [line 357](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/GaugeGroup/GaugeWeight.lean#L357).
 
 ```lean
 lemma dual_gaugeTorusGen_coord (ρ : Representation ℂ GaugeGroupI V)
@@ -376,7 +376,7 @@ lemma dual_gaugeTorusGen_coord (ρ : Representation ℂ GaugeGroupI V)
     ρ.dual g (b.coord j) = ((expI : ℂ) ^ (-(w j))) • b.coord j
 ```
 
-**`StandardModel.conj_gaugeTorusGen_basis`**, a lemma, [line 379](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/GaugeGroup/GaugeWeight.lean#L379).
+**`StandardModel.conj_gaugeTorusGen_basis`**, a lemma, [line 379](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/GaugeGroup/GaugeWeight.lean#L379).
 
 ```lean
 lemma conj_gaugeTorusGen_basis (ρ : Representation ℂ GaugeGroupI V)
@@ -386,7 +386,7 @@ lemma conj_gaugeTorusGen_basis (ρ : Representation ℂ GaugeGroupI V)
       = ((expI : ℂ) ^ (-(w j))) • Basis.conj b j
 ```
 
-**`StandardModel.GaugeWeightDecomposition`**, a class, [line 392](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/GaugeGroup/GaugeWeight.lean#L392).
+**`StandardModel.GaugeWeightDecomposition`**, a class, [line 392](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/GaugeGroup/GaugeWeight.lean#L392).
 
 > A **gauge weight decomposition** of a submodule `V`, a finitely supported family of
 > subspaces of pure gauge weight whose supremum is `V`. Purity is recorded against the four
@@ -410,7 +410,7 @@ class GaugeWeightDecomposition (rep : Representation ℂ GaugeGroupI B)
   iSup_piece : (⨆ w, piece w) = V
 ```
 
-**`StandardModel.GaugeWeightDecomposition.piece_le_eigenspace`**, a lemma, [line 415](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/GaugeGroup/GaugeWeight.lean#L415).
+**`StandardModel.GaugeWeightDecomposition.piece_le_eigenspace`**, a lemma, [line 415](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/GaugeGroup/GaugeWeight.lean#L415).
 
 > The weight-`w` piece lies in the eigenspace of the `i`-th torus generator at the
 > eigenvalue `(exp i) ^ (w.coord i)`. This is `piece_le` phrased as an inequality of
@@ -421,7 +421,7 @@ lemma piece_le_eigenspace (d : GaugeWeightDecomposition rep V) (w : GaugeWeight)
     d.piece w ≤ Module.End.eigenspace (rep (gaugeTorusGen i)) ((expI : ℂ) ^ w.coord i)
 ```
 
-**`StandardModel.GaugeWeightDecomposition.piece_eq_zero_of_not_mem_supp`**, a lemma, [line 421](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/GaugeGroup/GaugeWeight.lean#L421).
+**`StandardModel.GaugeWeightDecomposition.piece_eq_zero_of_not_mem_supp`**, a lemma, [line 421](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/GaugeGroup/GaugeWeight.lean#L421).
 
 > A weight outside the support has vanishing piece. This is the `piece_eq_bot` field, in
 > the form a `simp` set can use to discard the absent weights of a computed product.
@@ -431,7 +431,7 @@ lemma piece_eq_zero_of_not_mem_supp (d : GaugeWeightDecomposition rep V) (w : Ga
     (hw : w ∉ d.supp) : d.piece w = ⊥
 ```
 
-**`StandardModel.GaugeWeightDecomposition.piece_le_self`**, a lemma, [line 425](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/GaugeGroup/GaugeWeight.lean#L425).
+**`StandardModel.GaugeWeightDecomposition.piece_le_self`**, a lemma, [line 425](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/GaugeGroup/GaugeWeight.lean#L425).
 
 > A weight piece lies inside the submodule it decomposes.
 
@@ -440,7 +440,7 @@ lemma piece_le_self (d : GaugeWeightDecomposition rep V) (w : GaugeWeight) :
     d.piece w ≤ V
 ```
 
-**`StandardModel.GaugeWeightDecomposition.copy`**, a def, [line 430](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/GaugeGroup/GaugeWeight.lean#L430).
+**`StandardModel.GaugeWeightDecomposition.copy`**, a def, [line 430](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/GaugeGroup/GaugeWeight.lean#L430).
 
 > Transport a decomposition along an equality of submodules.
 
@@ -449,7 +449,7 @@ def copy (d : GaugeWeightDecomposition rep V) (W : Submodule ℂ B) (hW : W = V)
     GaugeWeightDecomposition rep W
 ```
 
-**`StandardModel.GaugeWeightDecomposition.copy_piece`**, a lemma, [line 440](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/GaugeGroup/GaugeWeight.lean#L440).
+**`StandardModel.GaugeWeightDecomposition.copy_piece`**, a lemma, [line 440](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/GaugeGroup/GaugeWeight.lean#L440).
 
 ```lean
 lemma copy_piece (d : GaugeWeightDecomposition rep V) (W : Submodule ℂ B) (hW : W = V) :
@@ -468,7 +468,7 @@ lemma copy_piece (d : GaugeWeightDecomposition rep V) (W : Submodule ℂ B) (hW 
 > from a summand where there is one and supplied as an argument where there is not, since `bot`
 > decomposes the zero submodule and the indexed forms may range over an empty family.
 
-**`StandardModel.GaugeWeightDecomposition.sup`**, an instance, [line 460](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/GaugeGroup/GaugeWeight.lean#L460).
+**`StandardModel.GaugeWeightDecomposition.sup`**, an instance, [line 460](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/GaugeGroup/GaugeWeight.lean#L460).
 
 > The join of two gauge weight decompositions, decomposing `V ⊔ V'`. Pieces and supports
 > combine one weight at a time.
@@ -478,14 +478,14 @@ noncomputable instance sup [d : GaugeWeightDecomposition rep V]
     [d' : GaugeWeightDecomposition rep V'] : GaugeWeightDecomposition rep (V ⊔ V')
 ```
 
-**`StandardModel.GaugeWeightDecomposition.sup_piece`**, a lemma, [line 475](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/GaugeGroup/GaugeWeight.lean#L475).
+**`StandardModel.GaugeWeightDecomposition.sup_piece`**, a lemma, [line 475](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/GaugeGroup/GaugeWeight.lean#L475).
 
 ```lean
 lemma sup_piece [GaugeWeightDecomposition rep V] [GaugeWeightDecomposition rep V']
     (w : GaugeWeight) : piece rep (V ⊔ V') w = piece rep V w ⊔ piece rep V' w
 ```
 
-**`StandardModel.GaugeWeightDecomposition.bot`**, a def, [line 480](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/GaugeGroup/GaugeWeight.lean#L480).
+**`StandardModel.GaugeWeightDecomposition.bot`**, a def, [line 480](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/GaugeGroup/GaugeWeight.lean#L480).
 
 > The zero submodule carries the empty decomposition.
 
@@ -494,21 +494,21 @@ def bot (hmul : IsMulRep rep) :
     GaugeWeightDecomposition rep (⊥ : Submodule ℂ B)
 ```
 
-**`StandardModel.GaugeWeightDecomposition.bot_piece`**, a lemma, [line 493](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/GaugeGroup/GaugeWeight.lean#L493).
+**`StandardModel.GaugeWeightDecomposition.bot_piece`**, a lemma, [line 493](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/GaugeGroup/GaugeWeight.lean#L493).
 
 ```lean
 lemma bot_piece (hmul : IsMulRep rep)
     (w : GaugeWeight) : (bot hmul).piece w = ⊥
 ```
 
-**`StandardModel.GaugeWeightDecomposition.bot_supp`**, a lemma, [line 497](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/GaugeGroup/GaugeWeight.lean#L497).
+**`StandardModel.GaugeWeightDecomposition.bot_supp`**, a lemma, [line 497](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/GaugeGroup/GaugeWeight.lean#L497).
 
 ```lean
 lemma bot_supp (hmul : IsMulRep rep) :
     (bot hmul).supp = ∅
 ```
 
-**`StandardModel.GaugeWeightDecomposition.spanSingleton`**, a def, [line 504](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/GaugeGroup/GaugeWeight.lean#L504).
+**`StandardModel.GaugeWeightDecomposition.spanSingleton`**, a def, [line 504](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/GaugeGroup/GaugeWeight.lean#L504).
 
 > The span of a single simultaneous eigenvector of the gauge torus, as a
 > decomposition concentrated in its one weight. This is the base case from which the
@@ -520,7 +520,7 @@ noncomputable def spanSingleton (hmul : IsMulRep rep) (x : B) (w : GaugeWeight)
     GaugeWeightDecomposition rep (Submodule.span ℂ {x})
 ```
 
-**`StandardModel.GaugeWeightDecomposition.spanSingleton_piece`**, a lemma, [line 529](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/GaugeGroup/GaugeWeight.lean#L529).
+**`StandardModel.GaugeWeightDecomposition.spanSingleton_piece`**, a lemma, [line 529](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/GaugeGroup/GaugeWeight.lean#L529).
 
 ```lean
 lemma spanSingleton_piece (hmul : IsMulRep rep) (x : B) (w : GaugeWeight)
@@ -530,7 +530,7 @@ lemma spanSingleton_piece (hmul : IsMulRep rep) (x : B) (w : GaugeWeight)
       = if w' = w then Submodule.span ℂ {x} else ⊥
 ```
 
-**`StandardModel.GaugeWeightDecomposition.iSup`**, a def, [line 539](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/GaugeGroup/GaugeWeight.lean#L539).
+**`StandardModel.GaugeWeightDecomposition.iSup`**, a def, [line 539](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/GaugeGroup/GaugeWeight.lean#L539).
 
 > An indexed join of decompositions. A family of decompositions indexed by a finite type
 > decomposes the join, its pieces joined and its supports united one weight at a time. This is
@@ -543,7 +543,7 @@ noncomputable def iSup {ι : Type*} [Fintype ι] {V : ι → Submodule ℂ B}
     GaugeWeightDecomposition rep (⨆ a, V a)
 ```
 
-**`StandardModel.GaugeWeightDecomposition.piece_iSup`**, a lemma, [line 557](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/GaugeGroup/GaugeWeight.lean#L557).
+**`StandardModel.GaugeWeightDecomposition.piece_iSup`**, a lemma, [line 557](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/GaugeGroup/GaugeWeight.lean#L557).
 
 ```lean
 lemma piece_iSup {ι : Type*} [Fintype ι] {V : ι → Submodule ℂ B}
@@ -552,7 +552,7 @@ lemma piece_iSup {ι : Type*} [Fintype ι] {V : ι → Submodule ℂ B}
     (iSup hmul d).piece w = ⨆ a, (d a).piece w
 ```
 
-**`StandardModel.GaugeWeightDecomposition.iSup_supp`**, a lemma, [line 563](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/GaugeGroup/GaugeWeight.lean#L563).
+**`StandardModel.GaugeWeightDecomposition.iSup_supp`**, a lemma, [line 563](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/GaugeGroup/GaugeWeight.lean#L563).
 
 > The support of an indexed join is the union of the supports.
 
@@ -563,7 +563,7 @@ lemma iSup_supp {ι : Type*} [Fintype ι] {V : ι → Submodule ℂ B}
     (iSup hmul d).supp = Finset.univ.biUnion fun a => (d a).supp
 ```
 
-**`StandardModel.GaugeWeightDecomposition.iSupProp`**, a def, [line 572](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/GaugeGroup/GaugeWeight.lean#L572).
+**`StandardModel.GaugeWeightDecomposition.iSupProp`**, a def, [line 572](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/GaugeGroup/GaugeWeight.lean#L572).
 
 > A join over a proposition. `⨆ _ : p, V` is `V` when `p` holds and `⊥` otherwise, so
 > it is decomposed by the given decomposition or by `bot`. The argument is a function of the
@@ -590,7 +590,7 @@ noncomputable def iSupProp {p : Prop} [Decidable p]
 > `mul_piece_eq_sub` and `mul_piece_eq_sub'` do this against the left and the right factor. The
 > resulting finite joins are what make the weight pieces of a product computable.
 
-**`StandardModel.GaugeWeightDecomposition.mul`**, an instance, [line 596](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/GaugeGroup/GaugeWeight.lean#L596).
+**`StandardModel.GaugeWeightDecomposition.mul`**, an instance, [line 596](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/GaugeGroup/GaugeWeight.lean#L596).
 
 > The product of two gauge weight decompositions, decomposing `V * V'`.
 
@@ -600,7 +600,7 @@ noncomputable instance mul [d : GaugeWeightDecomposition rep V]
     GaugeWeightDecomposition rep (V * V')
 ```
 
-**`StandardModel.GaugeWeightDecomposition.mul_supp`**, a lemma, [line 633](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/GaugeGroup/GaugeWeight.lean#L633).
+**`StandardModel.GaugeWeightDecomposition.mul_supp`**, a lemma, [line 633](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/GaugeGroup/GaugeWeight.lean#L633).
 
 > The support of a product is the pointwise sum of the supports.
 
@@ -609,7 +609,7 @@ lemma mul_supp [GaugeWeightDecomposition rep V] [GaugeWeightDecomposition rep V'
     supp rep (V * V') = supp rep V + supp rep V'
 ```
 
-**`StandardModel.GaugeWeightDecomposition.mul_piece`**, a lemma, [line 638](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/GaugeGroup/GaugeWeight.lean#L638).
+**`StandardModel.GaugeWeightDecomposition.mul_piece`**, a lemma, [line 638](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/GaugeGroup/GaugeWeight.lean#L638).
 
 > Weights add under multiplication. The weight-`w` piece of a product is spanned by the
 > products of pieces whose weights sum to `w`.
@@ -621,7 +621,7 @@ lemma mul_piece [GaugeWeightDecomposition rep V] [GaugeWeightDecomposition rep V
       = ⨆ w₁, ⨆ w₂, ⨆ _ : w₁ + w₂ = w, piece rep V w₁ * piece rep V' w₂
 ```
 
-**`StandardModel.GaugeWeightDecomposition.mul_piece_eq_sub`**, a lemma, [line 645](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/GaugeGroup/GaugeWeight.lean#L645).
+**`StandardModel.GaugeWeightDecomposition.mul_piece_eq_sub`**, a lemma, [line 645](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/GaugeGroup/GaugeWeight.lean#L645).
 
 > The product formula with the second weight eliminated against the support of the left
 > factor, the right factor being read at the complement `w - w₁`.
@@ -632,7 +632,7 @@ lemma mul_piece_eq_sub [d : GaugeWeightDecomposition rep V]
     piece rep (V * V') w = ⨆ w₁ ∈ supp rep V, piece rep V w₁ * piece rep V' (w - w₁)
 ```
 
-**`StandardModel.GaugeWeightDecomposition.mul_piece_eq_sub'`**, a lemma, [line 659](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/GaugeGroup/GaugeWeight.lean#L659).
+**`StandardModel.GaugeWeightDecomposition.mul_piece_eq_sub'`**, a lemma, [line 659](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/GaugeGroup/GaugeWeight.lean#L659).
 
 > The mirror of `mul_piece_eq_sub`, joining over the weights of the right factor.
 
@@ -662,7 +662,7 @@ lemma mul_piece_eq_sub' [d : GaugeWeightDecomposition rep V]
 > group; no grading closes that gap, since a grading sees only the abelian subgroup generated by
 > the elements it uses. The `Invariants` files do that check representation by representation.
 
-**`StandardModel.GaugeWeightDecomposition.mem_iSup_of_eigenvector`**, a lemma, [line 697](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/GaugeGroup/GaugeWeight.lean#L697).
+**`StandardModel.GaugeWeightDecomposition.mem_iSup_of_eigenvector`**, a lemma, [line 697](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/GaugeGroup/GaugeWeight.lean#L697).
 
 > The one-generator refinement step. A vector in the span of a family graded along a
 > single operator, and an eigenvector of that operator at exponent `n`, lies in the span of
@@ -675,7 +675,7 @@ lemma mem_iSup_of_eigenvector {ι : Type*} {T : Module.End ℂ B} {p : ι → Su
     x ∈ ⨆ j, ⨆ _ : f j = n, p j
 ```
 
-**`StandardModel.GaugeWeightDecomposition.mem_iSup_of_forall_eigenvector`**, a lemma, [line 722](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/GaugeGroup/GaugeWeight.lean#L722).
+**`StandardModel.GaugeWeightDecomposition.mem_iSup_of_forall_eigenvector`**, a lemma, [line 722](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/GaugeGroup/GaugeWeight.lean#L722).
 
 > The many-generator refinement. The same for a finite family of operators. A vector in
 > the span of the family and an eigenvector of every operator lies in the span of just those
@@ -690,7 +690,7 @@ lemma mem_iSup_of_forall_eigenvector {ι κ : Type*} [Fintype κ] [DecidableEq �
     x ∈ ⨆ j, ⨆ _ : f j = n, p j
 ```
 
-**`StandardModel.GaugeWeightDecomposition.piece_eq_inf`**, a lemma, [line 753](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/GaugeGroup/GaugeWeight.lean#L753).
+**`StandardModel.GaugeWeightDecomposition.piece_eq_inf`**, a lemma, [line 753](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/GaugeGroup/GaugeWeight.lean#L753).
 
 > The pieces are canonical. The weight-`w` piece is exactly the part of `V` on which the
 > four torus generators act by the weight-`w` characters. See `piece_congr`.
@@ -701,7 +701,7 @@ lemma piece_eq_inf (d : GaugeWeightDecomposition rep V) (w : GaugeWeight) :
       = V ⊓ ⨅ i, Module.End.eigenspace (rep (gaugeTorusGen i)) ((expI : ℂ) ^ w.coord i)
 ```
 
-**`StandardModel.GaugeWeightDecomposition.piece_congr`**, a lemma, [line 773](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/GaugeGroup/GaugeWeight.lean#L773).
+**`StandardModel.GaugeWeightDecomposition.piece_congr`**, a lemma, [line 773](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/GaugeGroup/GaugeWeight.lean#L773).
 
 > The pieces depend only on the submodule. Two decompositions of equal submodules have
 > the same pieces, so a computation of `piece` may be carried along any equality of
@@ -713,7 +713,7 @@ lemma piece_congr {W : Submodule ℂ B} [d : GaugeWeightDecomposition rep V]
     d.piece w = d'.piece w
 ```
 
-**`StandardModel.GaugeWeightDecomposition.mem_zero_of_invariant`**, a lemma, [line 780](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/GaugeGroup/GaugeWeight.lean#L780).
+**`StandardModel.GaugeWeightDecomposition.mem_zero_of_invariant`**, a lemma, [line 780](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/GaugeGroup/GaugeWeight.lean#L780).
 
 > A gauge-invariant element sits in the zero-weight piece. Only invariance under the
 > four torus generators is used. The converse is false; see the warning in section F.
@@ -723,7 +723,7 @@ lemma mem_zero_of_invariant (d : GaugeWeightDecomposition rep V) {x : B} (hx : x
     (hV : ∀ g : GaugeGroupI, rep g x = x) : x ∈ d.piece 0
 ```
 
-**`StandardModel.GaugeWeightDecomposition.reducesInvariantsTo_piece_zero`**, a lemma, [line 792](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/GaugeGroup/GaugeWeight.lean#L792).
+**`StandardModel.GaugeWeightDecomposition.reducesInvariantsTo_piece_zero`**, a lemma, [line 792](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/GaugeGroup/GaugeWeight.lean#L792).
 
 > The torus sieve as a reduction for the four torus generators: modulo a torus-stable
 > submodule, their invariants in `V` lie in the weight-zero piece. Every other weight in the
@@ -736,7 +736,7 @@ lemma reducesInvariantsTo_piece_zero (dV : GaugeWeightDecomposition rep V) :
     ReducesInvariantsTo (fun i => rep (gaugeTorusGen i)) V (dV.piece 0)
 ```
 
-**`StandardModel.GaugeWeightDecomposition.mem_piece_zero_sup_of_invariant`**, a lemma, [line 825](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/GaugeGroup/GaugeWeight.lean#L825).
+**`StandardModel.GaugeWeightDecomposition.mem_piece_zero_sup_of_invariant`**, a lemma, [line 825](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/GaugeGroup/GaugeWeight.lean#L825).
 
 > An element of `V ⊔ S` fixed by the four torus generators, for `S` closed under them,
 > lies in the weight-zero piece joined with `S`. This is `reducesInvariantsTo_piece_zero`
@@ -760,4 +760,4 @@ lemma mem_piece_zero_sup_of_invariant {S : Submodule ℂ B}
 
 ## Sources
 
-- [PhyslibAlpha/Particles/StandardModel/GaugeGroup/GaugeWeight.lean at 2a1dfe43](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/GaugeGroup/GaugeWeight.lean)
+- [PhyslibAlpha/Particles/StandardModel/GaugeGroup/GaugeWeight.lean at 8c87bdfb](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/GaugeGroup/GaugeWeight.lean)

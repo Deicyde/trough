@@ -1,14 +1,14 @@
 ---
 declaration: module
 origin: cited
-lean: ProbabilisticTheory.Observable.nonneg_iff_exists_observable_sq, ProbabilisticTheory.Observable.posPart, ProbabilisticTheory.Observable.negPart, ProbabilisticTheory.Observable.posPart_sub_negPart, ProbabilisticTheory.Observable.posPart_mul_negPart, ProbabilisticTheory.Observable.negPart_mul_posPart, ProbabilisticTheory.Observable.posPart_negPart_unique
+lean: PhyslibAlpha.ProbabilisticTheory.Observable.nonneg_iff_exists_observable_sq, PhyslibAlpha.ProbabilisticTheory.Observable.posPart, PhyslibAlpha.ProbabilisticTheory.Observable.negPart, PhyslibAlpha.ProbabilisticTheory.Observable.posPart_sub_negPart, PhyslibAlpha.ProbabilisticTheory.Observable.posPart_mul_negPart, PhyslibAlpha.ProbabilisticTheory.Observable.negPart_mul_posPart, PhyslibAlpha.ProbabilisticTheory.Observable.posPart_negPart_unique
 statement: formalized
 proof: formalized
 ---
 
 # Positive and negative parts of observables
 
-The module `PhyslibAlpha.ProbabilisticTheory.CStarAlgebra.JordanDecomposition`, [PhyslibAlpha/ProbabilisticTheory/CStarAlgebra/JordanDecomposition.lean](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ProbabilisticTheory/CStarAlgebra/JordanDecomposition.lean): 7 declarations, 7 with a docstring.
+The module `PhyslibAlpha.ProbabilisticTheory.CStarAlgebra.JordanDecomposition`, [PhyslibAlpha/ProbabilisticTheory/CStarAlgebra/JordanDecomposition.lean](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/CStarAlgebra/JordanDecomposition.lean): 7 declarations, 7 with a docstring.
 
 > Every observable of a C⋆-algebra splits uniquely into orthogonal positive and negative parts.
 
@@ -32,7 +32,7 @@ The module `PhyslibAlpha.ProbabilisticTheory.CStarAlgebra.JordanDecomposition`, 
 
 ## A. Positive observables
 
-**`ProbabilisticTheory.Observable.nonneg_iff_exists_observable_sq`**, a lemma, [line 53](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ProbabilisticTheory/CStarAlgebra/JordanDecomposition.lean#L53).
+**`PhyslibAlpha.ProbabilisticTheory.Observable.nonneg_iff_exists_observable_sq`**, a lemma, [line 53](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/CStarAlgebra/JordanDecomposition.lean#L53).
 
 > An observable is positive exactly when it is the square of an observable.
 
@@ -43,7 +43,7 @@ lemma nonneg_iff_exists_observable_sq (a : Observable A) :
 
 ## B. Positive and negative parts
 
-**`ProbabilisticTheory.Observable.posPart`**, a def, [line 67](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ProbabilisticTheory/CStarAlgebra/JordanDecomposition.lean#L67).
+**`PhyslibAlpha.ProbabilisticTheory.Observable.posPart`**, a def, [line 67](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/CStarAlgebra/JordanDecomposition.lean#L67).
 
 > The positive part of an observable.
 
@@ -51,7 +51,7 @@ lemma nonneg_iff_exists_observable_sq (a : Observable A) :
 noncomputable def posPart (a : Observable A) : PositiveObservable A
 ```
 
-**`ProbabilisticTheory.Observable.negPart`**, a def, [line 71](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ProbabilisticTheory/CStarAlgebra/JordanDecomposition.lean#L71).
+**`PhyslibAlpha.ProbabilisticTheory.Observable.negPart`**, a def, [line 71](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/CStarAlgebra/JordanDecomposition.lean#L71).
 
 > The negative part of an observable.
 
@@ -59,7 +59,7 @@ noncomputable def posPart (a : Observable A) : PositiveObservable A
 noncomputable def negPart (a : Observable A) : PositiveObservable A
 ```
 
-**`ProbabilisticTheory.Observable.posPart_sub_negPart`**, a lemma, [line 75](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ProbabilisticTheory/CStarAlgebra/JordanDecomposition.lean#L75).
+**`PhyslibAlpha.ProbabilisticTheory.Observable.posPart_sub_negPart`**, a lemma, [line 75](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/CStarAlgebra/JordanDecomposition.lean#L75).
 
 > Every observable is the difference of its positive and negative parts.
 
@@ -68,7 +68,7 @@ lemma posPart_sub_negPart (a : Observable A) :
     (posPart a).1 - (negPart a).1 = a
 ```
 
-**`ProbabilisticTheory.Observable.posPart_mul_negPart`**, a lemma, [line 81](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ProbabilisticTheory/CStarAlgebra/JordanDecomposition.lean#L81).
+**`PhyslibAlpha.ProbabilisticTheory.Observable.posPart_mul_negPart`**, a lemma, [line 81](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/CStarAlgebra/JordanDecomposition.lean#L81).
 
 > The positive and negative parts of an observable are orthogonal.
 
@@ -77,7 +77,7 @@ lemma posPart_mul_negPart (a : Observable A) :
     ((posPart a).1 : A) * (negPart a).1 = 0
 ```
 
-**`ProbabilisticTheory.Observable.negPart_mul_posPart`**, a lemma, [line 86](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ProbabilisticTheory/CStarAlgebra/JordanDecomposition.lean#L86).
+**`PhyslibAlpha.ProbabilisticTheory.Observable.negPart_mul_posPart`**, a lemma, [line 86](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/CStarAlgebra/JordanDecomposition.lean#L86).
 
 > The negative and positive parts are orthogonal in the opposite order as well.
 
@@ -86,7 +86,7 @@ lemma negPart_mul_posPart (a : Observable A) :
     ((negPart a).1 : A) * (posPart a).1 = 0
 ```
 
-**`ProbabilisticTheory.Observable.posPart_negPart_unique`**, a lemma, [line 92](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ProbabilisticTheory/CStarAlgebra/JordanDecomposition.lean#L92).
+**`PhyslibAlpha.ProbabilisticTheory.Observable.posPart_negPart_unique`**, a lemma, [line 92](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/CStarAlgebra/JordanDecomposition.lean#L92).
 
 > The positive/negative decomposition is the unique decomposition into orthogonal positive
 > observables: this is the Jordan decomposition theorem.
@@ -104,4 +104,4 @@ lemma posPart_negPart_unique (a : Observable A) (b c : PositiveObservable A)
 
 ## Sources
 
-- [PhyslibAlpha/ProbabilisticTheory/CStarAlgebra/JordanDecomposition.lean at 2a1dfe43](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ProbabilisticTheory/CStarAlgebra/JordanDecomposition.lean)
+- [PhyslibAlpha/ProbabilisticTheory/CStarAlgebra/JordanDecomposition.lean at 8c87bdfb](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/CStarAlgebra/JordanDecomposition.lean)

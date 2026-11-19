@@ -8,7 +8,7 @@ proof: formalized
 
 # The variances of the maximal current state
 
-The module `PhyslibAlpha.CondensedMatter.TightBindingChain.MaxCurrentState.Variances`, [PhyslibAlpha/CondensedMatter/TightBindingChain/MaxCurrentState/Variances.lean](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/CondensedMatter/TightBindingChain/MaxCurrentState/Variances.lean): 3 declarations, 3 with a docstring; 5 private, not shown.
+The module `PhyslibAlpha.CondensedMatter.TightBindingChain.MaxCurrentState.Variances`, [PhyslibAlpha/CondensedMatter/TightBindingChain/MaxCurrentState/Variances.lean](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/CondensedMatter/TightBindingChain/MaxCurrentState/Variances.lean): 3 declarations, 3 with a docstring; 5 private, not shown.
 
 ## i. Overview
 
@@ -37,7 +37,7 @@ The module `PhyslibAlpha.CondensedMatter.TightBindingChain.MaxCurrentState.Varia
 
 ## B. The energy variance
 
-**`CondensedMatter.TightBindingChain.variance_openHamiltonian_maxCurrentState`**, a lemma, [line 168](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/CondensedMatter/TightBindingChain/MaxCurrentState/Variances.lean#L168).
+**`CondensedMatter.TightBindingChain.variance_openHamiltonian_maxCurrentState`**, a lemma, [line 168](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/CondensedMatter/TightBindingChain/MaxCurrentState/Variances.lean#L168).
 
 > The energy variance of the maximal current state, `Var H = 4 t² sin² θ (N - 1) / (N + 1)`.
 
@@ -49,7 +49,7 @@ lemma variance_openHamiltonian_maxCurrentState :
 
 ## C. The position variance
 
-**`CondensedMatter.TightBindingChain.variance_position_maxCurrentState`**, a lemma, [line 188](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/CondensedMatter/TightBindingChain/MaxCurrentState/Variances.lean#L188).
+**`CondensedMatter.TightBindingChain.variance_position_maxCurrentState`**, a lemma, [line 188](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/CondensedMatter/TightBindingChain/MaxCurrentState/Variances.lean#L188).
 
 > The position variance of the maximal current state,
 > `Var X = a² (((N + 1)² + 2) / 12 - 1 / (2 sin² θ))`.
@@ -62,7 +62,7 @@ lemma variance_position_maxCurrentState :
 
 ## D. The closed form of `C`
 
-**`CondensedMatter.TightBindingChain.uncertaintyRatio_sq_eq`**, a lemma, [line 231](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/CondensedMatter/TightBindingChain/MaxCurrentState/Variances.lean#L231).
+**`CondensedMatter.TightBindingChain.uncertaintyRatio_sq_eq`**, a lemma, [line 231](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/CondensedMatter/TightBindingChain/MaxCurrentState/Variances.lean#L231).
 
 > The closed form of `C²` in the maximal current state, with `θ = π / (N + 1)`:
 > `C² = 2 (N - 1) / ((N + 1) cos² θ) · (((N + 1)² + 2) / 6 · sin² θ - 1)`.
@@ -79,4 +79,4 @@ lemma uncertaintyRatio_sq_eq (ht : T.t ≠ 0) (hN : 2 ≤ T.N) :
 
 ## Sources
 
-- [PhyslibAlpha/CondensedMatter/TightBindingChain/MaxCurrentState/Variances.lean at 2a1dfe43](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/CondensedMatter/TightBindingChain/MaxCurrentState/Variances.lean)
+- [PhyslibAlpha/CondensedMatter/TightBindingChain/MaxCurrentState/Variances.lean at 8c87bdfb](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/CondensedMatter/TightBindingChain/MaxCurrentState/Variances.lean)

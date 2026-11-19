@@ -8,7 +8,7 @@ proof: formalized
 
 # The Euclidean group action on Schwartz maps over `TimeAndSpace`
 
-The module `Physlib.SpaceAndTime.TimeAndSpace.EuclideanGroup.SchwartzAction`, [Physlib/SpaceAndTime/TimeAndSpace/EuclideanGroup/SchwartzAction.lean](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/SpaceAndTime/TimeAndSpace/EuclideanGroup/SchwartzAction.lean): 7 declarations, 7 with a docstring.
+The module `Physlib.SpaceAndTime.TimeAndSpace.EuclideanGroup.SchwartzAction`, [Physlib/SpaceAndTime/TimeAndSpace/EuclideanGroup/SchwartzAction.lean](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/SpaceAndTime/TimeAndSpace/EuclideanGroup/SchwartzAction.lean): 7 declarations, 7 with a docstring.
 
 ## i. Overview
 
@@ -29,7 +29,7 @@ The module `Physlib.SpaceAndTime.TimeAndSpace.EuclideanGroup.SchwartzAction`, [P
 
 ## A. The pullback action on Schwartz maps
 
-**`TimeAndSpace.schwartzEuclideanAction`**, a def, [line 61](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/SpaceAndTime/TimeAndSpace/EuclideanGroup/SchwartzAction.lean#L61).
+**`TimeAndSpace.schwartzEuclideanAction`**, a def, [line 61](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/SpaceAndTime/TimeAndSpace/EuclideanGroup/SchwartzAction.lean#L61).
 
 > The Euclidean-group pullback action on Schwartz maps over `TimeAndSpace d`, as a continuous
 > representation `ContRepresentation ℝ (EuclideanGroup d) 𝓢(TimeAndSpace d, F)`.
@@ -45,7 +45,7 @@ noncomputable def schwartzEuclideanAction {d : ℕ} :
     ContRepresentation ℝ (EuclideanGroup d) 𝓢(TimeAndSpace d, F)
 ```
 
-**`TimeAndSpace.schwartzEuclideanAction_apply`**, a lemma, [line 81](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/SpaceAndTime/TimeAndSpace/EuclideanGroup/SchwartzAction.lean#L81).
+**`TimeAndSpace.schwartzEuclideanAction_apply`**, a lemma, [line 81](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/SpaceAndTime/TimeAndSpace/EuclideanGroup/SchwartzAction.lean#L81).
 
 > Pointwise formula for the monoid-homomorphism form of the Schwartz-map pullback action.
 
@@ -55,7 +55,7 @@ lemma schwartzEuclideanAction_apply {d : ℕ} (g : EuclideanGroup d) (η : 𝓢(
     (schwartzEuclideanAction g η) tx = η (g⁻¹ • tx)
 ```
 
-**`TimeAndSpace.instMulActionSchwartzMap`**, an instance, [line 86](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/SpaceAndTime/TimeAndSpace/EuclideanGroup/SchwartzAction.lean#L86).
+**`TimeAndSpace.instMulActionSchwartzMap`**, an instance, [line 86](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/SpaceAndTime/TimeAndSpace/EuclideanGroup/SchwartzAction.lean#L86).
 
 > The Euclidean group acts on Schwartz maps over `TimeAndSpace d` by pullback.
 
@@ -64,7 +64,7 @@ noncomputable instance instMulActionSchwartzMap {d : ℕ} :
     MulAction (EuclideanGroup d) 𝓢(TimeAndSpace d, F)
 ```
 
-**`TimeAndSpace.smul_schwartzMap_apply`**, a lemma, [line 103](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/SpaceAndTime/TimeAndSpace/EuclideanGroup/SchwartzAction.lean#L103).
+**`TimeAndSpace.smul_schwartzMap_apply`**, a lemma, [line 103](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/SpaceAndTime/TimeAndSpace/EuclideanGroup/SchwartzAction.lean#L103).
 
 > Pointwise formula for the `MulAction` instance on Schwartz maps.
 
@@ -74,7 +74,7 @@ lemma smul_schwartzMap_apply {d : ℕ} (g : EuclideanGroup d) (η : 𝓢(TimeAnd
     (g • η) tx = η (g⁻¹ • tx)
 ```
 
-**`TimeAndSpace.schwartzEuclideanAction_mul_apply`**, a lemma, [line 108](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/SpaceAndTime/TimeAndSpace/EuclideanGroup/SchwartzAction.lean#L108).
+**`TimeAndSpace.schwartzEuclideanAction_mul_apply`**, a lemma, [line 108](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/SpaceAndTime/TimeAndSpace/EuclideanGroup/SchwartzAction.lean#L108).
 
 > Applying `g` and then `h` to a Schwartz map is the pullback action of `h * g`.
 
@@ -85,7 +85,7 @@ lemma schwartzEuclideanAction_mul_apply {d : ℕ} (g h : EuclideanGroup d)
       schwartzEuclideanAction (h * g) η
 ```
 
-**`TimeAndSpace.schwartzEuclideanAction_injective`**, a lemma, [line 117](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/SpaceAndTime/TimeAndSpace/EuclideanGroup/SchwartzAction.lean#L117).
+**`TimeAndSpace.schwartzEuclideanAction_injective`**, a lemma, [line 117](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/SpaceAndTime/TimeAndSpace/EuclideanGroup/SchwartzAction.lean#L117).
 
 > Each Euclidean-group pullback action on Schwartz maps is injective.
 
@@ -94,7 +94,7 @@ lemma schwartzEuclideanAction_injective {d : ℕ} (g : EuclideanGroup d) :
     Function.Injective (schwartzEuclideanAction (F := F) g)
 ```
 
-**`TimeAndSpace.schwartzEuclideanAction_surjective`**, a lemma, [line 125](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/SpaceAndTime/TimeAndSpace/EuclideanGroup/SchwartzAction.lean#L125).
+**`TimeAndSpace.schwartzEuclideanAction_surjective`**, a lemma, [line 125](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/SpaceAndTime/TimeAndSpace/EuclideanGroup/SchwartzAction.lean#L125).
 
 > Each Euclidean-group pullback action on Schwartz maps is surjective.
 
@@ -109,4 +109,4 @@ lemma schwartzEuclideanAction_surjective {d : ℕ} (g : EuclideanGroup d) :
 
 ## Sources
 
-- [Physlib/SpaceAndTime/TimeAndSpace/EuclideanGroup/SchwartzAction.lean at 2a1dfe43](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/SpaceAndTime/TimeAndSpace/EuclideanGroup/SchwartzAction.lean)
+- [Physlib/SpaceAndTime/TimeAndSpace/EuclideanGroup/SchwartzAction.lean at 8c87bdfb](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/SpaceAndTime/TimeAndSpace/EuclideanGroup/SchwartzAction.lean)

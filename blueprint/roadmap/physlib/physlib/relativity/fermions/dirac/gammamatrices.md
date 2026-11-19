@@ -8,7 +8,7 @@ proof: formalized
 
 # Gamma endomorphisms of Dirac fermions
 
-The module `Physlib.Relativity.Fermions.Dirac.GammaMatrices`, [Physlib/Relativity/Fermions/Dirac/GammaMatrices.lean](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/Relativity/Fermions/Dirac/GammaMatrices.lean): 29 declarations, 29 with a docstring, 2 listed as significant.
+The module `Physlib.Relativity.Fermions.Dirac.GammaMatrices`, [Physlib/Relativity/Fermions/Dirac/GammaMatrices.lean](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Relativity/Fermions/Dirac/GammaMatrices.lean): 29 declarations, 29 with a docstring, 2 listed as significant.
 
 > The basis `chiralBasis` orders the coordinates as
 > `(left 0, left 1, dualRight 0, dualRight 1)`. The Weyl bases are the standard
@@ -33,7 +33,7 @@ The module `Physlib.Relativity.Fermions.Dirac.GammaMatrices`, [Physlib/Relativit
 
 ## A. Clifford multiplication by Lorentz vectors
 
-**`Fermion.Dirac.gammaMatrix`**, a def, [line 49](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/Relativity/Fermions/Dirac/GammaMatrices.lean#L49).
+**`Fermion.Dirac.gammaMatrix`**, a def, [line 49](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Relativity/Fermions/Dirac/GammaMatrices.lean#L49).
 
 > Clifford multiplication by a Lorentz vector on `Dirac`, defined using its chiral basis.
 > This map is real linear because `Lorentz.Vector` is a real vector space. Each value is
@@ -43,7 +43,7 @@ The module `Physlib.Relativity.Fermions.Dirac.GammaMatrices`, [Physlib/Relativit
 def gammaMatrix : Lorentz.Vector →ₗ[ℝ] Module.End ℂ Dirac
 ```
 
-**`Fermion.Dirac.gammaMatrix_toMatrix`**, a lemma, [line 74](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/Relativity/Fermions/Dirac/GammaMatrices.lean#L74).
+**`Fermion.Dirac.gammaMatrix_toMatrix`**, a lemma, [line 74](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Relativity/Fermions/Dirac/GammaMatrices.lean#L74).
 
 > The chiral matrix of Clifford multiplication has blocks `[0, v_μ σ^μ; v^μ σ^μ, 0]`.
 
@@ -55,7 +55,7 @@ lemma gammaMatrix_toMatrix (v : Lorentz.Vector) :
         finSumFinEquiv.symm finSumFinEquiv.symm
 ```
 
-**`Fermion.Dirac.gammaMatrix_basis_toMatrix`**, a lemma, [line 82](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/Relativity/Fermions/Dirac/GammaMatrices.lean#L82).
+**`Fermion.Dirac.gammaMatrix_basis_toMatrix`**, a lemma, [line 82](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Relativity/Fermions/Dirac/GammaMatrices.lean#L82).
 
 > The chiral matrices of Clifford multiplication on the Lorentz basis vectors.
 
@@ -69,7 +69,7 @@ lemma gammaMatrix_basis_toMatrix (μ : Fin 1 ⊕ Fin 3) :
       | Sum.inr 2 => !![0, 0, -1, 0; 0, 0, 0, 1; 1, 0, 0, 0; 0, -1, 0, 0]
 ```
 
-**`Fermion.Dirac.gammaMatrix_basis_anticomm`**, a lemma, [line 100](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/Relativity/Fermions/Dirac/GammaMatrices.lean#L100).
+**`Fermion.Dirac.gammaMatrix_basis_anticomm`**, a lemma, [line 100](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Relativity/Fermions/Dirac/GammaMatrices.lean#L100).
 
 > The Clifford anticommutator on pairs of Lorentz basis vectors.
 
@@ -81,7 +81,7 @@ lemma gammaMatrix_basis_anticomm (μ ν : Fin 1 ⊕ Fin 3) :
         (1 : Module.End ℂ Dirac)
 ```
 
-**`Fermion.Dirac.gammaMatrix_anticomm`**, a theorem, [line 114](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/Relativity/Fermions/Dirac/GammaMatrices.lean#L114). Listed as a significant result in [Theorems.txt](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/scripts/lint/exemptions/Theorems.txt).
+**`Fermion.Dirac.gammaMatrix_anticomm`**, a theorem, [line 114](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Relativity/Fermions/Dirac/GammaMatrices.lean#L114). Listed as a significant result in [Theorems.txt](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/scripts/lint/exemptions/Theorems.txt).
 
 > Clifford multiplication satisfies the anticommutator relation for the Minkowski product.
 
@@ -91,7 +91,7 @@ theorem gammaMatrix_anticomm (v w : Lorentz.Vector) :
       (2 * ⟪v, w⟫ₘ) • (1 : Module.End ℂ Dirac)
 ```
 
-**`Fermion.Dirac.gammaMatrix_mul_self`**, a lemma, [line 133](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/Relativity/Fermions/Dirac/GammaMatrices.lean#L133).
+**`Fermion.Dirac.gammaMatrix_mul_self`**, a lemma, [line 133](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Relativity/Fermions/Dirac/GammaMatrices.lean#L133).
 
 > Clifford multiplication squares to the Minkowski norm squared times the identity.
 
@@ -102,7 +102,7 @@ lemma gammaMatrix_mul_self (v : Lorentz.Vector) :
 
 ## B. Upper-index gamma components
 
-**`Fermion.Dirac.gamma`**, a def, [line 142](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/Relativity/Fermions/Dirac/GammaMatrices.lean#L142).
+**`Fermion.Dirac.gamma`**, a def, [line 142](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Relativity/Fermions/Dirac/GammaMatrices.lean#L142).
 
 > The upper-index gamma components `γ^μ`, obtained by raising the index of
 > Clifford multiplication on the Lorentz basis. Their chiral blocks are `[0, σ^μ; bar σ^μ, 0]`.
@@ -111,7 +111,7 @@ lemma gammaMatrix_mul_self (v : Lorentz.Vector) :
 def gamma (μ : Fin 1 ⊕ Fin 3) : Module.End ℂ Dirac
 ```
 
-**`Fermion.Dirac.gammaMatrix_basis`**, a lemma, [line 146](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/Relativity/Fermions/Dirac/GammaMatrices.lean#L146).
+**`Fermion.Dirac.gammaMatrix_basis`**, a lemma, [line 146](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Relativity/Fermions/Dirac/GammaMatrices.lean#L146).
 
 > Clifford multiplication on a Lorentz basis vector is the corresponding lower-index gamma.
 
@@ -120,7 +120,7 @@ lemma gammaMatrix_basis (μ : Fin 1 ⊕ Fin 3) :
     gammaMatrix (Lorentz.Vector.basis μ) = minkowskiMatrix μ μ • gamma μ
 ```
 
-**`Fermion.Dirac.gammaMatrix_eq_sum`**, a lemma, [line 151](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/Relativity/Fermions/Dirac/GammaMatrices.lean#L151).
+**`Fermion.Dirac.gammaMatrix_eq_sum`**, a lemma, [line 151](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Relativity/Fermions/Dirac/GammaMatrices.lean#L151).
 
 > Clifford multiplication contracts the lower-index vector coordinates with `γ^μ`.
 
@@ -129,7 +129,7 @@ lemma gammaMatrix_eq_sum (v : Lorentz.Vector) :
     gammaMatrix v = ∑ μ, (minkowskiMatrix μ μ * v μ) • gamma μ
 ```
 
-**`Fermion.Dirac.gamma_toMatrix`**, a lemma, [line 162](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/Relativity/Fermions/Dirac/GammaMatrices.lean#L162).
+**`Fermion.Dirac.gamma_toMatrix`**, a lemma, [line 162](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Relativity/Fermions/Dirac/GammaMatrices.lean#L162).
 
 > The matrix of a gamma endomorphism in the chiral basis.
 
@@ -143,7 +143,7 @@ lemma gamma_toMatrix (μ : Fin 1 ⊕ Fin 3) :
       | Sum.inr 2 => !![0, 0, 1, 0; 0, 0, 0, -1; -1, 0, 0, 0; 0, 1, 0, 0]
 ```
 
-**`Fermion.Dirac.gamma_anticomm`**, a theorem, [line 174](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/Relativity/Fermions/Dirac/GammaMatrices.lean#L174). Listed as a significant result in [Theorems.txt](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/scripts/lint/exemptions/Theorems.txt).
+**`Fermion.Dirac.gamma_anticomm`**, a theorem, [line 174](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Relativity/Fermions/Dirac/GammaMatrices.lean#L174). Listed as a significant result in [Theorems.txt](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/scripts/lint/exemptions/Theorems.txt).
 
 > The Clifford anticommutator for gamma endomorphisms, with signature `(+,-,-,-)`.
 
@@ -153,7 +153,7 @@ theorem gamma_anticomm (μ ν : Fin 1 ⊕ Fin 3) :
       (2 * (minkowskiMatrix μ ν : ℂ)) • (1 : Module.End ℂ Dirac)
 ```
 
-**`Fermion.Dirac.gamma_mul_self`**, a lemma, [line 184](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/Relativity/Fermions/Dirac/GammaMatrices.lean#L184).
+**`Fermion.Dirac.gamma_mul_self`**, a lemma, [line 184](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Relativity/Fermions/Dirac/GammaMatrices.lean#L184).
 
 > A gamma endomorphism squares to the corresponding diagonal metric sign.
 
@@ -162,7 +162,7 @@ lemma gamma_mul_self (μ : Fin 1 ⊕ Fin 3) :
     gamma μ * gamma μ = (minkowskiMatrix μ μ : ℂ) • (1 : Module.End ℂ Dirac)
 ```
 
-**`Fermion.Dirac.gamma_inl_zero_mul_self`**, a lemma, [line 191](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/Relativity/Fermions/Dirac/GammaMatrices.lean#L191).
+**`Fermion.Dirac.gamma_inl_zero_mul_self`**, a lemma, [line 191](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Relativity/Fermions/Dirac/GammaMatrices.lean#L191).
 
 > The time gamma endomorphism squares to the identity.
 
@@ -170,7 +170,7 @@ lemma gamma_mul_self (μ : Fin 1 ⊕ Fin 3) :
 lemma gamma_inl_zero_mul_self : gamma (Sum.inl 0) * gamma (Sum.inl 0) = 1
 ```
 
-**`Fermion.Dirac.gamma_inr_mul_self`**, a lemma, [line 196](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/Relativity/Fermions/Dirac/GammaMatrices.lean#L196).
+**`Fermion.Dirac.gamma_inr_mul_self`**, a lemma, [line 196](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Relativity/Fermions/Dirac/GammaMatrices.lean#L196).
 
 > Each spatial gamma endomorphism squares to minus the identity.
 
@@ -178,7 +178,7 @@ lemma gamma_inl_zero_mul_self : gamma (Sum.inl 0) * gamma (Sum.inl 0) = 1
 lemma gamma_inr_mul_self (i : Fin 3) : gamma (Sum.inr i) * gamma (Sum.inr i) = -1
 ```
 
-**`Fermion.Dirac.gamma_mul_gamma_of_ne`**, a lemma, [line 200](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/Relativity/Fermions/Dirac/GammaMatrices.lean#L200).
+**`Fermion.Dirac.gamma_mul_gamma_of_ne`**, a lemma, [line 200](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Relativity/Fermions/Dirac/GammaMatrices.lean#L200).
 
 > Gamma endomorphisms with distinct Lorentz indices anticommute.
 
@@ -189,7 +189,7 @@ lemma gamma_mul_gamma_of_ne {μ ν : Fin 1 ⊕ Fin 3} (h : μ ≠ ν) :
 
 ## C. Chirality
 
-**`Fermion.Dirac.gamma5`**, a def, [line 209](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/Relativity/Fermions/Dirac/GammaMatrices.lean#L209).
+**`Fermion.Dirac.gamma5`**, a def, [line 209](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Relativity/Fermions/Dirac/GammaMatrices.lean#L209).
 
 > The chirality endomorphism `γ⁵ = i γ⁰ γ¹ γ² γ³`.
 
@@ -197,7 +197,7 @@ lemma gamma_mul_gamma_of_ne {μ ν : Fin 1 ⊕ Fin 3} (h : μ ≠ ν) :
 def gamma5 : Module.End ℂ Dirac
 ```
 
-**`Fermion.Dirac.gamma5_toMatrix`**, a lemma, [line 215](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/Relativity/Fermions/Dirac/GammaMatrices.lean#L215).
+**`Fermion.Dirac.gamma5_toMatrix`**, a lemma, [line 215](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Relativity/Fermions/Dirac/GammaMatrices.lean#L215).
 
 > In the chiral basis, `γ⁵` is negative on the left-handed coordinates and positive
 > on the dual-right-handed coordinates.
@@ -207,7 +207,7 @@ lemma gamma5_toMatrix :
     LinearMap.toMatrix chiralBasis chiralBasis gamma5 = diagonal ![-1, -1, 1, 1]
 ```
 
-**`Fermion.Dirac.gamma5_mul_self`**, a lemma, [line 224](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/Relativity/Fermions/Dirac/GammaMatrices.lean#L224).
+**`Fermion.Dirac.gamma5_mul_self`**, a lemma, [line 224](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Relativity/Fermions/Dirac/GammaMatrices.lean#L224).
 
 > The chirality endomorphism squares to the identity.
 
@@ -215,7 +215,7 @@ lemma gamma5_toMatrix :
 lemma gamma5_mul_self : gamma5 * gamma5 = 1
 ```
 
-**`Fermion.Dirac.gamma5_mul_gamma`**, a lemma, [line 233](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/Relativity/Fermions/Dirac/GammaMatrices.lean#L233).
+**`Fermion.Dirac.gamma5_mul_gamma`**, a lemma, [line 233](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Relativity/Fermions/Dirac/GammaMatrices.lean#L233).
 
 > The chirality endomorphism anticommutes with every gamma endomorphism.
 
@@ -223,7 +223,7 @@ lemma gamma5_mul_self : gamma5 * gamma5 = 1
 lemma gamma5_mul_gamma (μ : Fin 1 ⊕ Fin 3) : gamma5 * gamma μ = -(gamma μ * gamma5)
 ```
 
-**`Fermion.Dirac.gamma5_mul_gammaMatrix`**, a lemma, [line 242](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/Relativity/Fermions/Dirac/GammaMatrices.lean#L242).
+**`Fermion.Dirac.gamma5_mul_gammaMatrix`**, a lemma, [line 242](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Relativity/Fermions/Dirac/GammaMatrices.lean#L242).
 
 > Chirality anticommutes with Clifford multiplication by every Lorentz vector.
 
@@ -234,7 +234,7 @@ lemma gamma5_mul_gammaMatrix (v : Lorentz.Vector) :
 
 ## D. Chiral projectors
 
-**`Fermion.Dirac.leftChiralProjector`**, a def, [line 251](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/Relativity/Fermions/Dirac/GammaMatrices.lean#L251).
+**`Fermion.Dirac.leftChiralProjector`**, a def, [line 251](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Relativity/Fermions/Dirac/GammaMatrices.lean#L251).
 
 > The projector `(1 - γ⁵) / 2` onto the left-handed Weyl component.
 
@@ -242,7 +242,7 @@ lemma gamma5_mul_gammaMatrix (v : Lorentz.Vector) :
 def leftChiralProjector : Module.End ℂ Dirac
 ```
 
-**`Fermion.Dirac.rightChiralProjector`**, a def, [line 254](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/Relativity/Fermions/Dirac/GammaMatrices.lean#L254).
+**`Fermion.Dirac.rightChiralProjector`**, a def, [line 254](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Relativity/Fermions/Dirac/GammaMatrices.lean#L254).
 
 > The projector `(1 + γ⁵) / 2` onto the dual-right-handed Weyl component.
 
@@ -250,7 +250,7 @@ def leftChiralProjector : Module.End ℂ Dirac
 def rightChiralProjector : Module.End ℂ Dirac
 ```
 
-**`Fermion.Dirac.leftChiralProjector_toMatrix`**, a lemma, [line 258](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/Relativity/Fermions/Dirac/GammaMatrices.lean#L258).
+**`Fermion.Dirac.leftChiralProjector_toMatrix`**, a lemma, [line 258](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Relativity/Fermions/Dirac/GammaMatrices.lean#L258).
 
 > The left chiral projector retains the first two chiral coordinates.
 
@@ -259,7 +259,7 @@ lemma leftChiralProjector_toMatrix :
     LinearMap.toMatrix chiralBasis chiralBasis leftChiralProjector = diagonal ![1, 1, 0, 0]
 ```
 
-**`Fermion.Dirac.rightChiralProjector_toMatrix`**, a lemma, [line 267](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/Relativity/Fermions/Dirac/GammaMatrices.lean#L267).
+**`Fermion.Dirac.rightChiralProjector_toMatrix`**, a lemma, [line 267](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Relativity/Fermions/Dirac/GammaMatrices.lean#L267).
 
 > The right chiral projector retains the last two chiral coordinates.
 
@@ -268,7 +268,7 @@ lemma rightChiralProjector_toMatrix :
     LinearMap.toMatrix chiralBasis chiralBasis rightChiralProjector = diagonal ![0, 0, 1, 1]
 ```
 
-**`Fermion.Dirac.leftChiralProjector_mul_self`**, a lemma, [line 276](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/Relativity/Fermions/Dirac/GammaMatrices.lean#L276).
+**`Fermion.Dirac.leftChiralProjector_mul_self`**, a lemma, [line 276](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Relativity/Fermions/Dirac/GammaMatrices.lean#L276).
 
 > The left chiral projector is idempotent.
 
@@ -277,7 +277,7 @@ lemma leftChiralProjector_mul_self : leftChiralProjector * leftChiralProjector =
     leftChiralProjector
 ```
 
-**`Fermion.Dirac.rightChiralProjector_mul_self`**, a lemma, [line 284](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/Relativity/Fermions/Dirac/GammaMatrices.lean#L284).
+**`Fermion.Dirac.rightChiralProjector_mul_self`**, a lemma, [line 284](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Relativity/Fermions/Dirac/GammaMatrices.lean#L284).
 
 > The right chiral projector is idempotent.
 
@@ -286,7 +286,7 @@ lemma rightChiralProjector_mul_self : rightChiralProjector * rightChiralProjecto
     rightChiralProjector
 ```
 
-**`Fermion.Dirac.leftChiralProjector_mul_rightChiralProjector`**, a lemma, [line 292](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/Relativity/Fermions/Dirac/GammaMatrices.lean#L292).
+**`Fermion.Dirac.leftChiralProjector_mul_rightChiralProjector`**, a lemma, [line 292](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Relativity/Fermions/Dirac/GammaMatrices.lean#L292).
 
 > The chiral projectors are orthogonal.
 
@@ -295,7 +295,7 @@ lemma leftChiralProjector_mul_rightChiralProjector :
     leftChiralProjector * rightChiralProjector = 0
 ```
 
-**`Fermion.Dirac.rightChiralProjector_mul_leftChiralProjector`**, a lemma, [line 300](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/Relativity/Fermions/Dirac/GammaMatrices.lean#L300).
+**`Fermion.Dirac.rightChiralProjector_mul_leftChiralProjector`**, a lemma, [line 300](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Relativity/Fermions/Dirac/GammaMatrices.lean#L300).
 
 > The chiral projectors are orthogonal in the reverse order as well.
 
@@ -304,7 +304,7 @@ lemma rightChiralProjector_mul_leftChiralProjector :
     rightChiralProjector * leftChiralProjector = 0
 ```
 
-**`Fermion.Dirac.leftChiralProjector_add_rightChiralProjector`**, a lemma, [line 308](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/Relativity/Fermions/Dirac/GammaMatrices.lean#L308).
+**`Fermion.Dirac.leftChiralProjector_add_rightChiralProjector`**, a lemma, [line 308](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Relativity/Fermions/Dirac/GammaMatrices.lean#L308).
 
 > The two chiral projectors resolve the identity on `Dirac`.
 
@@ -320,4 +320,4 @@ lemma leftChiralProjector_add_rightChiralProjector :
 
 ## Sources
 
-- [Physlib/Relativity/Fermions/Dirac/GammaMatrices.lean at 2a1dfe43](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/Relativity/Fermions/Dirac/GammaMatrices.lean)
+- [Physlib/Relativity/Fermions/Dirac/GammaMatrices.lean at 8c87bdfb](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Relativity/Fermions/Dirac/GammaMatrices.lean)

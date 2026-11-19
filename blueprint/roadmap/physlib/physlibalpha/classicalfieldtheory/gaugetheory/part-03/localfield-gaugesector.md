@@ -8,7 +8,7 @@ proof: formalized
 
 # The gauge sector as the complexified gauge-only algebra
 
-The module `PhyslibAlpha.ClassicalFieldTheory.GaugeTheory.LocalField.GaugeSector`, [PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/LocalField/GaugeSector.lean](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/LocalField/GaugeSector.lean): 16 declarations, 13 with a docstring.
+The module `PhyslibAlpha.ClassicalFieldTheory.GaugeTheory.LocalField.GaugeSector`, [PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/LocalField/GaugeSector.lean](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/LocalField/GaugeSector.lean): 16 declarations, 13 with a docstring.
 
 ## i. Overview
 
@@ -41,7 +41,7 @@ The module `PhyslibAlpha.ClassicalFieldTheory.GaugeTheory.LocalField.GaugeSector
 
 ## A. The retraction onto the connection factor
 
-**`GaugeFieldData.connectionAssignment`**, a def, [line 70](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/LocalField/GaugeSector.lean#L70).
+**`GaugeFieldData.connectionAssignment`**, a def, [line 70](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/LocalField/GaugeSector.lean#L70).
 
 > The assignment sending every matter generator to zero and keeping the connection
 > generators. Its relations hold in the commutative target.
@@ -51,7 +51,7 @@ noncomputable def connectionAssignment :
     T.Assignment (ℂ ⊗[ℝ] LocalGaugeFieldAlgebra 𝔤)
 ```
 
-**`GaugeFieldData.connectionRetraction`**, a def, [line 88](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/LocalField/GaugeSector.lean#L88).
+**`GaugeFieldData.connectionRetraction`**, a def, [line 88](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/LocalField/GaugeSector.lean#L88).
 
 > The retraction of the local field algebra onto the complexified gauge-only algebra: it
 > forgets the matter symbols.
@@ -61,7 +61,7 @@ noncomputable def connectionRetraction :
     T.LocalFieldAlgebra →ₐ[ℂ] ℂ ⊗[ℝ] LocalGaugeFieldAlgebra 𝔤
 ```
 
-**`GaugeFieldData.connectionRetraction_ιConnection`**, a lemma, [line 95](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/LocalField/GaugeSector.lean#L95).
+**`GaugeFieldData.connectionRetraction_ιConnection`**, a lemma, [line 95](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/LocalField/GaugeSector.lean#L95).
 
 ```lean
 lemma connectionRetraction_ιConnection (v : GaugeBoson.JetComponentSpace 𝔤) :
@@ -71,7 +71,7 @@ lemma connectionRetraction_ιConnection (v : GaugeBoson.JetComponentSpace 𝔤) 
 
 ### A.1. Injectivity of the inclusion
 
-**`GaugeFieldData.connectionRetraction_comp_includeConnection`**, a lemma, [line 107](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/LocalField/GaugeSector.lean#L107).
+**`GaugeFieldData.connectionRetraction_comp_includeConnection`**, a lemma, [line 107](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/LocalField/GaugeSector.lean#L107).
 
 > The retraction is a left inverse of the connection inclusion.
 
@@ -81,14 +81,14 @@ lemma connectionRetraction_comp_includeConnection :
       = AlgHom.id ℂ (ℂ ⊗[ℝ] LocalGaugeFieldAlgebra 𝔤)
 ```
 
-**`GaugeFieldData.connectionRetraction_includeConnection`**, a lemma, [line 115](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/LocalField/GaugeSector.lean#L115).
+**`GaugeFieldData.connectionRetraction_includeConnection`**, a lemma, [line 115](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/LocalField/GaugeSector.lean#L115).
 
 ```lean
 lemma connectionRetraction_includeConnection (y : ℂ ⊗[ℝ] LocalGaugeFieldAlgebra 𝔤) :
     T.connectionRetraction (T.includeConnection y) = y
 ```
 
-**`GaugeFieldData.includeConnection_injective`**, a lemma, [line 120](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/LocalField/GaugeSector.lean#L120).
+**`GaugeFieldData.includeConnection_injective`**, a lemma, [line 120](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/LocalField/GaugeSector.lean#L120).
 
 > The complexified gauge-only algebra embeds in the local field algebra.
 
@@ -98,7 +98,7 @@ lemma includeConnection_injective : Function.Injective T.includeConnection
 
 ## B. The range of the inclusion
 
-**`GaugeFieldData.range_includeConnection`**, a lemma, [line 132](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/LocalField/GaugeSector.lean#L132).
+**`GaugeFieldData.range_includeConnection`**, a lemma, [line 132](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/LocalField/GaugeSector.lean#L132).
 
 > The range of the connection inclusion is the gauge sector.
 
@@ -107,7 +107,7 @@ lemma range_includeConnection :
     T.includeConnection.range = T.SectorAlgebra {FieldCategory.gauge}
 ```
 
-**`GaugeFieldData.includeConnection_mem_gaugeSector`**, a lemma, [line 146](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/LocalField/GaugeSector.lean#L146).
+**`GaugeFieldData.includeConnection_mem_gaugeSector`**, a lemma, [line 146](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/LocalField/GaugeSector.lean#L146).
 
 ```lean
 lemma includeConnection_mem_gaugeSector (y : ℂ ⊗[ℝ] LocalGaugeFieldAlgebra 𝔤) :
@@ -116,7 +116,7 @@ lemma includeConnection_mem_gaugeSector (y : ℂ ⊗[ℝ] LocalGaugeFieldAlgebra
 
 ## C. The equivalence with the gauge sector
 
-**`GaugeFieldData.gaugeSectorEquiv`**, a def, [line 160](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/LocalField/GaugeSector.lean#L160).
+**`GaugeFieldData.gaugeSectorEquiv`**, a def, [line 160](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/LocalField/GaugeSector.lean#L160).
 
 > The gauge sector is the complexification of the gauge-only algebra: the connection
 > inclusion, corestricted to its range. The source is complexified because the gauge-only
@@ -127,7 +127,7 @@ noncomputable def gaugeSectorEquiv :
     (ℂ ⊗[ℝ] LocalGaugeFieldAlgebra 𝔤) ≃ₐ[ℂ] ↥(T.SectorAlgebra {FieldCategory.gauge})
 ```
 
-**`GaugeFieldData.coe_gaugeSectorEquiv`**, a lemma, [line 169](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/LocalField/GaugeSector.lean#L169).
+**`GaugeFieldData.coe_gaugeSectorEquiv`**, a lemma, [line 169](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/LocalField/GaugeSector.lean#L169).
 
 > In the local field algebra the equivalence is the canonical inclusion.
 
@@ -136,7 +136,7 @@ lemma coe_gaugeSectorEquiv (y : ℂ ⊗[ℝ] LocalGaugeFieldAlgebra 𝔤) :
     (T.gaugeSectorEquiv y : T.LocalFieldAlgebra) = T.includeConnection y
 ```
 
-**`GaugeFieldData.gaugeSectorEquiv_symm_includeConnection`**, a lemma, [line 173](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/LocalField/GaugeSector.lean#L173).
+**`GaugeFieldData.gaugeSectorEquiv_symm_includeConnection`**, a lemma, [line 173](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/LocalField/GaugeSector.lean#L173).
 
 > The inverse recovers an element from its inclusion.
 
@@ -148,7 +148,7 @@ lemma gaugeSectorEquiv_symm_includeConnection (y : ℂ ⊗[ℝ] LocalGaugeFieldA
 
 ### C.1. Computation on generators and symbols
 
-**`GaugeFieldData.coe_gaugeSectorEquiv_one_tmul_ι`**, a lemma, [line 187](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/LocalField/GaugeSector.lean#L187).
+**`GaugeFieldData.coe_gaugeSectorEquiv_one_tmul_ι`**, a lemma, [line 187](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/LocalField/GaugeSector.lean#L187).
 
 > A real gauge-only generator, embedded with the scalar `1`, is the corresponding
 > connection symbol.
@@ -160,7 +160,7 @@ lemma coe_gaugeSectorEquiv_one_tmul_ι (v : GaugeBoson.JetComponentSpace 𝔤) :
       = T.ιConnection v
 ```
 
-**`GaugeFieldData.coe_gaugeSectorEquiv_tmul`**, a lemma, [line 193](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/LocalField/GaugeSector.lean#L193).
+**`GaugeFieldData.coe_gaugeSectorEquiv_tmul`**, a lemma, [line 193](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/LocalField/GaugeSector.lean#L193).
 
 > `z ⊗ₜ x` maps to `z` times the image of `1 ⊗ₜ x`.
 
@@ -170,7 +170,7 @@ lemma coe_gaugeSectorEquiv_tmul (z : ℂ) (x : LocalGaugeFieldAlgebra 𝔤) :
       = z • (T.gaugeSectorEquiv ((1 : ℂ) ⊗ₜ[ℝ] x) : T.LocalFieldAlgebra)
 ```
 
-**`GaugeFieldData.coe_gaugeSectorEquiv_gaugeField`**, a lemma, [line 204](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/LocalField/GaugeSector.lean#L204).
+**`GaugeFieldData.coe_gaugeSectorEquiv_gaugeField`**, a lemma, [line 204](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/LocalField/GaugeSector.lean#L204).
 
 > The gauge-field symbol `∂_s A_μ^φ`, for any derivative multiset, spacetime index and
 > adjoint covector, is the connection symbol with the same labels.
@@ -184,7 +184,7 @@ lemma coe_gaugeSectorEquiv_gaugeField (s : Multiset (Fin 1 ⊕ Fin 3)) (μ : Fin
 
 ## D. Compatibility with the symmetries
 
-**`GaugeFieldData.gaugeSectorEquiv_complexRepJet`**, a lemma, [line 217](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/LocalField/GaugeSector.lean#L217).
+**`GaugeFieldData.gaugeSectorEquiv_complexRepJet`**, a lemma, [line 217](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/LocalField/GaugeSector.lean#L217).
 
 > The equivalence intertwines the complexified gauge-only jet action with the restricted
 > jet action of the gauge sector.
@@ -195,7 +195,7 @@ lemma gaugeSectorEquiv_complexRepJet (U : GJ) (y : ℂ ⊗[ℝ] LocalGaugeFieldA
       = SectorAlgebra.repJet T {FieldCategory.gauge} U (T.gaugeSectorEquiv y)
 ```
 
-**`GaugeFieldData.gaugeSectorEquiv_complexRepLorentzGroup`**, a lemma, [line 224](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/LocalField/GaugeSector.lean#L224).
+**`GaugeFieldData.gaugeSectorEquiv_complexRepLorentzGroup`**, a lemma, [line 224](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/LocalField/GaugeSector.lean#L224).
 
 > The equivalence intertwines the complexified gauge-only Lorentz action with the
 > restricted Lorentz action of the gauge sector.
@@ -213,4 +213,4 @@ lemma gaugeSectorEquiv_complexRepLorentzGroup (Λ : SL(2,ℂ))
 
 ## Sources
 
-- [PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/LocalField/GaugeSector.lean at 2a1dfe43](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/LocalField/GaugeSector.lean)
+- [PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/LocalField/GaugeSector.lean at 8c87bdfb](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/LocalField/GaugeSector.lean)

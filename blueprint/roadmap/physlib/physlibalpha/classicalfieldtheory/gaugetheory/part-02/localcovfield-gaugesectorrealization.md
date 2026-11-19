@@ -8,7 +8,7 @@ proof: formalized
 
 # Realizations of the covariant gauge sector
 
-The module `PhyslibAlpha.ClassicalFieldTheory.GaugeTheory.LocalCovField.GaugeSectorRealization`, [PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/LocalCovField/GaugeSectorRealization.lean](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/LocalCovField/GaugeSectorRealization.lean): 8 declarations, 4 with a docstring.
+The module `PhyslibAlpha.ClassicalFieldTheory.GaugeTheory.LocalCovField.GaugeSectorRealization`, [PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/LocalCovField/GaugeSectorRealization.lean](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/LocalCovField/GaugeSectorRealization.lean): 8 declarations, 4 with a docstring.
 
 ## i. Overview
 
@@ -40,7 +40,7 @@ The module `PhyslibAlpha.ClassicalFieldTheory.GaugeTheory.LocalCovField.GaugeSec
 
 ## A. The correspondence
 
-**`GaugeFieldData.covGaugeSectorRealizationEquiv`**, a def, [line 71](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/LocalCovField/GaugeSectorRealization.lean#L71).
+**`GaugeFieldData.covGaugeSectorRealizationEquiv`**, a def, [line 71](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/LocalCovField/GaugeSectorRealization.lean#L71).
 
 > Realizations of the covariant gauge sector are the real realizations of the covariant
 > gauge-only algebra, the target keeping its complex actions restricted to `ℝ`.
@@ -54,7 +54,7 @@ noncomputable def covGaugeSectorRealizationEquiv (hGL : T.GaugeLorentzCompatible
 
 ## B. Computation
 
-**`GaugeFieldData.covGaugeSectorRealizationEquiv_toAlgHom`**, a lemma, [line 90](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/LocalCovField/GaugeSectorRealization.lean#L90).
+**`GaugeFieldData.covGaugeSectorRealizationEquiv_toAlgHom`**, a lemma, [line 90](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/LocalCovField/GaugeSectorRealization.lean#L90).
 
 ```lean
 lemma covGaugeSectorRealizationEquiv_toAlgHom
@@ -64,7 +64,7 @@ lemma covGaugeSectorRealizationEquiv_toAlgHom
           Algebra.TensorProduct.includeRight
 ```
 
-**`GaugeFieldData.covGaugeSectorRealizationEquiv_toAlgHom_apply`**, a lemma, [line 97](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/LocalCovField/GaugeSectorRealization.lean#L97).
+**`GaugeFieldData.covGaugeSectorRealizationEquiv_toAlgHom_apply`**, a lemma, [line 97](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/LocalCovField/GaugeSectorRealization.lean#L97).
 
 ```lean
 lemma covGaugeSectorRealizationEquiv_toAlgHom_apply
@@ -74,7 +74,7 @@ lemma covGaugeSectorRealizationEquiv_toAlgHom_apply
       = k.toAlgHom (T.covGaugeSectorEquiv ((1 : ℂ) ⊗ₜ[ℝ] x))
 ```
 
-**`GaugeFieldData.covGaugeSectorRealizationEquiv_F`**, a lemma, [line 105](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/LocalCovField/GaugeSectorRealization.lean#L105).
+**`GaugeFieldData.covGaugeSectorRealizationEquiv_F`**, a lemma, [line 105](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/LocalCovField/GaugeSectorRealization.lean#L105).
 
 > The field-strength tower of the corresponding real realization is the sector tower,
 > with the same derivative labels, spacetime indices and adjoint covector.
@@ -88,7 +88,7 @@ lemma covGaugeSectorRealizationEquiv_F
           (T.covGaugeSectorEquiv ((1 : ℂ) ⊗ₜ[ℝ] LocalGaugeCovFieldAlgebra.covF 𝔤 l μ ν φ))
 ```
 
-**`GaugeFieldData.covGaugeSectorRealizationEquiv_symm_toAlgHom`**, a lemma, [line 113](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/LocalCovField/GaugeSectorRealization.lean#L113).
+**`GaugeFieldData.covGaugeSectorRealizationEquiv_symm_toAlgHom`**, a lemma, [line 113](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/LocalCovField/GaugeSectorRealization.lean#L113).
 
 ```lean
 lemma covGaugeSectorRealizationEquiv_symm_toAlgHom
@@ -99,7 +99,7 @@ lemma covGaugeSectorRealizationEquiv_symm_toAlgHom
           T.covGaugeSectorEquiv.symm.toAlgHom
 ```
 
-**`GaugeFieldData.covGaugeSectorRealizationEquiv_symm_toAlgHom_apply`**, a lemma, [line 121](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/LocalCovField/GaugeSectorRealization.lean#L121).
+**`GaugeFieldData.covGaugeSectorRealizationEquiv_symm_toAlgHom_apply`**, a lemma, [line 121](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/LocalCovField/GaugeSectorRealization.lean#L121).
 
 ```lean
 lemma covGaugeSectorRealizationEquiv_symm_toAlgHom_apply
@@ -110,7 +110,7 @@ lemma covGaugeSectorRealizationEquiv_symm_toAlgHom_apply
           (T.covGaugeSectorEquiv.symm x)
 ```
 
-**`GaugeFieldData.covGaugeSectorRealizationEquiv_symm_toAlgHom_covF`**, a lemma, [line 130](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/LocalCovField/GaugeSectorRealization.lean#L130).
+**`GaugeFieldData.covGaugeSectorRealizationEquiv_symm_toAlgHom_covF`**, a lemma, [line 130](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/LocalCovField/GaugeSectorRealization.lean#L130).
 
 > The sector towers of the corresponding sector realization are the tower of the real
 > realization; at `l = []` this is the field strength.
@@ -127,7 +127,7 @@ lemma covGaugeSectorRealizationEquiv_symm_toAlgHom_covF
 
 ## C. Compatibility with restriction
 
-**`GaugeFieldData.covGaugeSectorRealizationEquiv_restrictCovSector`**, a lemma, [line 155](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/LocalCovField/GaugeSectorRealization.lean#L155).
+**`GaugeFieldData.covGaugeSectorRealizationEquiv_restrictCovSector`**, a lemma, [line 155](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/LocalCovField/GaugeSectorRealization.lean#L155).
 
 > Restricting a realization of the local field algebra to the covariant gauge sector and
 > passing to the gauge-only side gives the covariant restriction of its ordinary gauge-only
@@ -149,4 +149,4 @@ lemma covGaugeSectorRealizationEquiv_restrictCovSector
 
 ## Sources
 
-- [PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/LocalCovField/GaugeSectorRealization.lean at 2a1dfe43](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/LocalCovField/GaugeSectorRealization.lean)
+- [PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/LocalCovField/GaugeSectorRealization.lean at 8c87bdfb](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/LocalCovField/GaugeSectorRealization.lean)

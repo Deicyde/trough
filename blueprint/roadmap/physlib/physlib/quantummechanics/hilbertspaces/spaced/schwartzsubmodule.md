@@ -8,7 +8,7 @@ proof: formalized
 
 # Schwartz submodule
 
-The module `Physlib.QuantumMechanics.HilbertSpaces.SpaceD.SchwartzSubmodule`, [Physlib/QuantumMechanics/HilbertSpaces/SpaceD/SchwartzSubmodule.lean](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/QuantumMechanics/HilbertSpaces/SpaceD/SchwartzSubmodule.lean): 15 declarations (1 instance with no name), 4 with a docstring.
+The module `Physlib.QuantumMechanics.HilbertSpaces.SpaceD.SchwartzSubmodule`, [Physlib/QuantumMechanics/HilbertSpaces/SpaceD/SchwartzSubmodule.lean](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/QuantumMechanics/HilbertSpaces/SpaceD/SchwartzSubmodule.lean): 15 declarations (1 instance with no name), 4 with a docstring.
 
 ## i. Overview
 
@@ -32,7 +32,7 @@ The module `Physlib.QuantumMechanics.HilbertSpaces.SpaceD.SchwartzSubmodule`, [P
 
 ## A. SchwartzSubmodule
 
-**`QuantumMechanics.SpaceDHilbertSpace.schwartzIncl`**, a def, [line 57](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/QuantumMechanics/HilbertSpaces/SpaceD/SchwartzSubmodule.lean#L57).
+**`QuantumMechanics.SpaceDHilbertSpace.schwartzIncl`**, a def, [line 57](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/QuantumMechanics/HilbertSpaces/SpaceD/SchwartzSubmodule.lean#L57).
 
 > The continuous linear map including Schwartz maps into `SpaceDHilbertSpace d μ`.
 
@@ -41,7 +41,7 @@ def schwartzIncl {d : ℕ} (μ : Measure (Space d)) [μ.HasTemperateGrowth] :
     𝓢(Space d, ℂ) →L[ℂ] SpaceDHilbertSpace d μ
 ```
 
-**`QuantumMechanics.SpaceDHilbertSpace.SchwartzSubmodule`**, an abbrev, [line 62](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/QuantumMechanics/HilbertSpaces/SpaceD/SchwartzSubmodule.lean#L62).
+**`QuantumMechanics.SpaceDHilbertSpace.SchwartzSubmodule`**, an abbrev, [line 62](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/QuantumMechanics/HilbertSpaces/SpaceD/SchwartzSubmodule.lean#L62).
 
 > The submodule of `SpaceDHilbertSpace d` corresponding to Schwartz maps.
 
@@ -50,7 +50,7 @@ abbrev SchwartzSubmodule (d : ℕ) (μ : Measure (Space d) := volume) [μ.HasTem
     Submodule ℂ (SpaceDHilbertSpace d μ)
 ```
 
-**`QuantumMechanics.SpaceDHilbertSpace.schwartzEquiv`**, a def, [line 68](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/QuantumMechanics/HilbertSpaces/SpaceD/SchwartzSubmodule.lean#L68).
+**`QuantumMechanics.SpaceDHilbertSpace.schwartzEquiv`**, a def, [line 68](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/QuantumMechanics/HilbertSpaces/SpaceD/SchwartzSubmodule.lean#L68).
 
 > The linear equivalence between the Schwartz maps `𝓢(Space d, ℂ)` and the Schwartz submodule
 > of `SpaceDHilbertSpace d μ`.
@@ -63,31 +63,31 @@ def schwartzEquiv
 
 ### A.1. Coercions
 
-**An instance with no name**, [line 83](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/QuantumMechanics/HilbertSpaces/SpaceD/SchwartzSubmodule.lean#L83).
+**An instance with no name**, [line 83](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/QuantumMechanics/HilbertSpaces/SpaceD/SchwartzSubmodule.lean#L83).
 
 ```lean
 instance : CoeFun (SchwartzSubmodule d μ) fun _ ↦ Space d → ℂ
 ```
 
-**`QuantumMechanics.SpaceDHilbertSpace.SchwartzSubmodule.schwartzEquiv_apply_coe`**, a lemma, [line 86](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/QuantumMechanics/HilbertSpaces/SpaceD/SchwartzSubmodule.lean#L86).
+**`QuantumMechanics.SpaceDHilbertSpace.SchwartzSubmodule.schwartzEquiv_apply_coe`**, a lemma, [line 86](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/QuantumMechanics/HilbertSpaces/SpaceD/SchwartzSubmodule.lean#L86).
 
 ```lean
 lemma schwartzEquiv_apply_coe : ↑(schwartzEquiv μ f) = schwartzIncl μ f
 ```
 
-**`QuantumMechanics.SpaceDHilbertSpace.SchwartzSubmodule.schwartzEquiv_coe_ae`**, a lemma, [line 88](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/QuantumMechanics/HilbertSpaces/SpaceD/SchwartzSubmodule.lean#L88).
+**`QuantumMechanics.SpaceDHilbertSpace.SchwartzSubmodule.schwartzEquiv_coe_ae`**, a lemma, [line 88](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/QuantumMechanics/HilbertSpaces/SpaceD/SchwartzSubmodule.lean#L88).
 
 ```lean
 lemma schwartzEquiv_coe_ae : schwartzEquiv μ f =ᵐ[μ] f
 ```
 
-**`QuantumMechanics.SpaceDHilbertSpace.SchwartzSubmodule.schwartzEquiv_symm_coe_ae`**, a lemma, [line 90](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/QuantumMechanics/HilbertSpaces/SpaceD/SchwartzSubmodule.lean#L90).
+**`QuantumMechanics.SpaceDHilbertSpace.SchwartzSubmodule.schwartzEquiv_symm_coe_ae`**, a lemma, [line 90](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/QuantumMechanics/HilbertSpaces/SpaceD/SchwartzSubmodule.lean#L90).
 
 ```lean
 lemma schwartzEquiv_symm_coe_ae : (schwartzEquiv μ).symm ψ =ᵐ[μ] ψ
 ```
 
-**`QuantumMechanics.SpaceDHilbertSpace.SchwartzSubmodule.schwartzEquiv_ae_eq`**, a lemma, [line 94](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/QuantumMechanics/HilbertSpaces/SpaceD/SchwartzSubmodule.lean#L94).
+**`QuantumMechanics.SpaceDHilbertSpace.SchwartzSubmodule.schwartzEquiv_ae_eq`**, a lemma, [line 94](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/QuantumMechanics/HilbertSpaces/SpaceD/SchwartzSubmodule.lean#L94).
 
 ```lean
 lemma schwartzEquiv_ae_eq (h : schwartzEquiv μ f =ᵐ[μ] schwartzEquiv μ g) : f = g
@@ -95,34 +95,34 @@ lemma schwartzEquiv_ae_eq (h : schwartzEquiv μ f =ᵐ[μ] schwartzEquiv μ g) :
 
 ### A.2. Misc.
 
-**`QuantumMechanics.SpaceDHilbertSpace.SchwartzSubmodule.zero_eq_top`**, a lemma, [line 102](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/QuantumMechanics/HilbertSpaces/SpaceD/SchwartzSubmodule.lean#L102).
+**`QuantumMechanics.SpaceDHilbertSpace.SchwartzSubmodule.zero_eq_top`**, a lemma, [line 102](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/QuantumMechanics/HilbertSpaces/SpaceD/SchwartzSubmodule.lean#L102).
 
 ```lean
 lemma zero_eq_top (μ : Measure (Space 0)) [μ.HasTemperateGrowth] [μ.IsOpenPosMeasure] :
     SchwartzSubmodule 0 μ = ⊤
 ```
 
-**`QuantumMechanics.SpaceDHilbertSpace.SchwartzSubmodule.dense`**, a lemma, [line 125](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/QuantumMechanics/HilbertSpaces/SpaceD/SchwartzSubmodule.lean#L125).
+**`QuantumMechanics.SpaceDHilbertSpace.SchwartzSubmodule.dense`**, a lemma, [line 125](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/QuantumMechanics/HilbertSpaces/SpaceD/SchwartzSubmodule.lean#L125).
 
 ```lean
 lemma dense [IsFiniteMeasureOnCompacts μ] :
     Dense (SchwartzSubmodule d μ : Set (SpaceDHilbertSpace d μ))
 ```
 
-**`QuantumMechanics.SpaceDHilbertSpace.SchwartzSubmodule.schwartzEquiv_inner`**, a lemma, [line 129](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/QuantumMechanics/HilbertSpaces/SpaceD/SchwartzSubmodule.lean#L129).
+**`QuantumMechanics.SpaceDHilbertSpace.SchwartzSubmodule.schwartzEquiv_inner`**, a lemma, [line 129](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/QuantumMechanics/HilbertSpaces/SpaceD/SchwartzSubmodule.lean#L129).
 
 ```lean
 lemma schwartzEquiv_inner :
     ⟪schwartzEquiv μ f, schwartzEquiv μ g⟫_ℂ = ∫ x, starRingEnd ℂ (f x) * g x ∂μ
 ```
 
-**`QuantumMechanics.SpaceDHilbertSpace.SchwartzSubmodule.schwartzIncl_ker`**, a lemma, [line 136](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/QuantumMechanics/HilbertSpaces/SpaceD/SchwartzSubmodule.lean#L136).
+**`QuantumMechanics.SpaceDHilbertSpace.SchwartzSubmodule.schwartzIncl_ker`**, a lemma, [line 136](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/QuantumMechanics/HilbertSpaces/SpaceD/SchwartzSubmodule.lean#L136).
 
 ```lean
 lemma schwartzIncl_ker : (schwartzIncl μ).ker = (⊥ : Submodule ℂ 𝓢(Space d, ℂ))
 ```
 
-**`QuantumMechanics.SpaceDHilbertSpace.SchwartzSubmodule.toTemperedDistribution_schwartzIncl_eq`**, a lemma, [line 140](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/QuantumMechanics/HilbertSpaces/SpaceD/SchwartzSubmodule.lean#L140).
+**`QuantumMechanics.SpaceDHilbertSpace.SchwartzSubmodule.toTemperedDistribution_schwartzIncl_eq`**, a lemma, [line 140](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/QuantumMechanics/HilbertSpaces/SpaceD/SchwartzSubmodule.lean#L140).
 
 ```lean
 lemma toTemperedDistribution_schwartzIncl_eq :
@@ -131,7 +131,7 @@ lemma toTemperedDistribution_schwartzIncl_eq :
 
 ## B. SchwartzSubmoduleOn
 
-**`QuantumMechanics.SpaceDHilbertSpaceOn.SchwartzSubmoduleOn`**, an abbrev, [line 156](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/QuantumMechanics/HilbertSpaces/SpaceD/SchwartzSubmodule.lean#L156).
+**`QuantumMechanics.SpaceDHilbertSpaceOn.SchwartzSubmoduleOn`**, an abbrev, [line 156](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/QuantumMechanics/HilbertSpaces/SpaceD/SchwartzSubmodule.lean#L156).
 
 > The projection of `SchwartzSubmodule d μ` onto `SpaceDHilbertSpaceOn Ω μ`.
 
@@ -141,7 +141,7 @@ abbrev SchwartzSubmoduleOn
     Submodule ℂ (SpaceDHilbertSpaceOn Ω μ)
 ```
 
-**`QuantumMechanics.SpaceDHilbertSpaceOn.SchwartzSubmoduleOn.mem_iff`**, a lemma, [line 166](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/QuantumMechanics/HilbertSpaces/SpaceD/SchwartzSubmodule.lean#L166).
+**`QuantumMechanics.SpaceDHilbertSpaceOn.SchwartzSubmoduleOn.mem_iff`**, a lemma, [line 166](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/QuantumMechanics/HilbertSpaces/SpaceD/SchwartzSubmodule.lean#L166).
 
 ```lean
 lemma mem_iff {ψ : SpaceDHilbertSpaceOn Ω μ} :
@@ -154,4 +154,4 @@ lemma mem_iff {ψ : SpaceDHilbertSpaceOn Ω μ} :
 
 ## Sources
 
-- [Physlib/QuantumMechanics/HilbertSpaces/SpaceD/SchwartzSubmodule.lean at 2a1dfe43](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/QuantumMechanics/HilbertSpaces/SpaceD/SchwartzSubmodule.lean)
+- [Physlib/QuantumMechanics/HilbertSpaces/SpaceD/SchwartzSubmodule.lean at 8c87bdfb](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/QuantumMechanics/HilbertSpaces/SpaceD/SchwartzSubmodule.lean)

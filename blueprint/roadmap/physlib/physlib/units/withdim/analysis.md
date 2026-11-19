@@ -8,7 +8,7 @@ proof: formalized
 
 # A. Analysis of dimension-tagged quantities
 
-The module `Physlib.Units.WithDim.Analysis`, [Physlib/Units/WithDim/Analysis.lean](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/Units/WithDim/Analysis.lean): 13 declarations, 8 with a docstring.
+The module `Physlib.Units.WithDim.Analysis`, [Physlib/Units/WithDim/Analysis.lean](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Units/WithDim/Analysis.lean): 13 declarations, 8 with a docstring.
 
 > The numerical value of `WithDim d M` identifies it with `M`. We use that explicit
 > identification to induce a norm on the existing additive group, not to replace
@@ -26,7 +26,7 @@ The module `Physlib.Units.WithDim.Analysis`, [Physlib/Units/WithDim/Analysis.lea
 
 ## A.1. Coordinates and the induced norm
 
-**`WithDim.toValueAddEquiv`**, a def, [line 43](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/Units/WithDim/Analysis.lean#L43).
+**`WithDim.toValueAddEquiv`**, a def, [line 43](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Units/WithDim/Analysis.lean#L43).
 
 > Forget the dimension tag by an explicit additive equivalence of numerical values.
 
@@ -35,7 +35,7 @@ def toValueAddEquiv (d : Dimension B) (M : Type) [AddCommMonoid M] :
     WithDim d M ≃+ M
 ```
 
-**`WithDim.instNormedAddCommGroup`**, an instance, [line 52](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/Units/WithDim/Analysis.lean#L52).
+**`WithDim.instNormedAddCommGroup`**, an instance, [line 52](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Units/WithDim/Analysis.lean#L52).
 
 > The existing additive group carries the norm of its numerical representation.
 
@@ -44,7 +44,7 @@ instance instNormedAddCommGroup (d : Dimension B) (M : Type) [NormedAddCommGroup
     NormedAddCommGroup (WithDim d M)
 ```
 
-**`WithDim.toValueLinearEquiv`**, a def, [line 58](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/Units/WithDim/Analysis.lean#L58).
+**`WithDim.toValueLinearEquiv`**, a def, [line 58](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Units/WithDim/Analysis.lean#L58).
 
 > The numerical-value coordinates are linear over dimensionless real scalars.
 
@@ -53,7 +53,7 @@ def toValueLinearEquiv (d : Dimension B) (M : Type) [AddCommMonoid M] [Module �
     WithDim d M ≃ₗ[ℝ] M
 ```
 
-**`WithDim.instNormedSpace`**, an instance, [line 68](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/Units/WithDim/Analysis.lean#L68).
+**`WithDim.instNormedSpace`**, an instance, [line 68](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Units/WithDim/Analysis.lean#L68).
 
 > The induced norm is compatible with the existing real scalar multiplication.
 
@@ -62,14 +62,14 @@ instance instNormedSpace (d : Dimension B) (M : Type) [NormedAddCommGroup M]
     [NormedSpace ℝ M] : NormedSpace ℝ (WithDim d M)
 ```
 
-**`WithDim.norm_eq`**, a lemma, [line 73](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/Units/WithDim/Analysis.lean#L73).
+**`WithDim.norm_eq`**, a lemma, [line 73](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Units/WithDim/Analysis.lean#L73).
 
 ```lean
 lemma norm_eq {d : Dimension B} {M : Type} [NormedAddCommGroup M] (x : WithDim d M) :
     ‖x‖ = ‖x.val‖
 ```
 
-**`WithDim.toValueLinearIsometryEquiv`**, a def, [line 77](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/Units/WithDim/Analysis.lean#L77).
+**`WithDim.toValueLinearIsometryEquiv`**, a def, [line 77](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Units/WithDim/Analysis.lean#L77).
 
 > Numerical-value coordinates form a linear isometry for a fixed unit representation.
 
@@ -78,7 +78,7 @@ def toValueLinearIsometryEquiv (d : Dimension B) (M : Type) [NormedAddCommGroup 
     [NormedSpace ℝ M] : WithDim d M ≃ₗᵢ[ℝ] M
 ```
 
-**`WithDim.toValueLinearIsometryEquiv_apply`**, a lemma, [line 82](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/Units/WithDim/Analysis.lean#L82).
+**`WithDim.toValueLinearIsometryEquiv_apply`**, a lemma, [line 82](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Units/WithDim/Analysis.lean#L82).
 
 ```lean
 lemma toValueLinearIsometryEquiv_apply (d : Dimension B) (M : Type)
@@ -86,7 +86,7 @@ lemma toValueLinearIsometryEquiv_apply (d : Dimension B) (M : Type)
     toValueLinearIsometryEquiv d M x = x.val
 ```
 
-**`WithDim.toValueLinearIsometryEquiv_symm_apply`**, a lemma, [line 87](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/Units/WithDim/Analysis.lean#L87).
+**`WithDim.toValueLinearIsometryEquiv_symm_apply`**, a lemma, [line 87](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Units/WithDim/Analysis.lean#L87).
 
 ```lean
 lemma toValueLinearIsometryEquiv_symm_apply (d : Dimension B) (M : Type)
@@ -96,7 +96,7 @@ lemma toValueLinearIsometryEquiv_symm_apply (d : Dimension B) (M : Type)
 
 ## A.2. Transport of existing functions and derivatives
 
-**`WithDim.transport`**, a def, [line 97](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/Units/WithDim/Analysis.lean#L97).
+**`WithDim.transport`**, a def, [line 97](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Units/WithDim/Analysis.lean#L97).
 
 > Express a numerical function in explicitly chosen input and output dimensions.
 > This definition by itself makes no claim of dimensional correctness.
@@ -106,14 +106,14 @@ def transport {M N : Type} (d e : Dimension B) (f : M → N) :
     WithDim d M → WithDim e N
 ```
 
-**`WithDim.transport_val`**, a lemma, [line 101](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/Units/WithDim/Analysis.lean#L101).
+**`WithDim.transport_val`**, a lemma, [line 101](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Units/WithDim/Analysis.lean#L101).
 
 ```lean
 lemma transport_val {M N : Type} (d e : Dimension B) (f : M → N) (x : WithDim d M) :
     (transport d e f x).val = f x.val
 ```
 
-**`WithDim.transportLinearMap`**, a def, [line 105](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/Units/WithDim/Analysis.lean#L105).
+**`WithDim.transportLinearMap`**, a def, [line 105](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Units/WithDim/Analysis.lean#L105).
 
 > Express a continuous linear map between tagged numerical coordinates.
 
@@ -123,7 +123,7 @@ def transportLinearMap {M N : Type} [NormedAddCommGroup M] [NormedSpace ℝ M]
     WithDim d M →L[ℝ] WithDim e N
 ```
 
-**`WithDim.transportLinearMap_val`**, a lemma, [line 112](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/Units/WithDim/Analysis.lean#L112).
+**`WithDim.transportLinearMap_val`**, a lemma, [line 112](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Units/WithDim/Analysis.lean#L112).
 
 ```lean
 lemma transportLinearMap_val {M N : Type} [NormedAddCommGroup M] [NormedSpace ℝ M]
@@ -131,7 +131,7 @@ lemma transportLinearMap_val {M N : Type} [NormedAddCommGroup M] [NormedSpace �
     (x : WithDim d M) : (transportLinearMap d e f x).val = f x.val
 ```
 
-**`WithDim.hasFDerivAt_transport`**, a lemma, [line 117](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/Units/WithDim/Analysis.lean#L117).
+**`WithDim.hasFDerivAt_transport`**, a lemma, [line 117](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Units/WithDim/Analysis.lean#L117).
 
 > Reuse a derivative in numerical coordinates for the corresponding tagged function.
 
@@ -148,4 +148,4 @@ lemma hasFDerivAt_transport {M N : Type} [NormedAddCommGroup M] [NormedSpace ℝ
 
 ## Sources
 
-- [Physlib/Units/WithDim/Analysis.lean at 2a1dfe43](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/Units/WithDim/Analysis.lean)
+- [Physlib/Units/WithDim/Analysis.lean at 8c87bdfb](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Units/WithDim/Analysis.lean)

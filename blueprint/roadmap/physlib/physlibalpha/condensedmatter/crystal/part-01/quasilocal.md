@@ -8,7 +8,7 @@ proof: formalized
 
 # The quasi-local algebra of an infinite crystal
 
-The module `PhyslibAlpha.CondensedMatter.Crystal.QuasiLocal`, [PhyslibAlpha/CondensedMatter/Crystal/QuasiLocal.lean](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/CondensedMatter/Crystal/QuasiLocal.lean): 5 declarations, 5 with a docstring.
+The module `PhyslibAlpha.CondensedMatter.Crystal.QuasiLocal`, [PhyslibAlpha/CondensedMatter/Crystal/QuasiLocal.lean](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/CondensedMatter/Crystal/QuasiLocal.lean): 5 declarations, 5 with a docstring.
 
 > The quasi-local algebra of a crystal carries an action of its cell symmetries, the translations
 > among them.
@@ -41,7 +41,7 @@ The module `PhyslibAlpha.CondensedMatter.Crystal.QuasiLocal`, [PhyslibAlpha/Cond
 
 ## A. The quasi-local algebra of a crystal
 
-**`CondensedMatter.Crystal.crystalAlgebra`**, an abbrev, [line 66](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/CondensedMatter/Crystal/QuasiLocal.lean#L66).
+**`CondensedMatter.Crystal.crystalAlgebra`**, an abbrev, [line 66](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/CondensedMatter/Crystal/QuasiLocal.lean#L66).
 
 > **The quasi-local algebra of an infinite crystal** whose sites all carry the finite
 > configuration space `Ω₀`.
@@ -52,7 +52,7 @@ abbrev crystalAlgebra (G F : Type*) [DecidableEq (CellSite G F)]
 
 ## B. The symmetries and the translations
 
-**`CondensedMatter.Crystal.cellSymmetryAction`**, a def, [line 72](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/CondensedMatter/Crystal/QuasiLocal.lean#L72).
+**`CondensedMatter.Crystal.cellSymmetryAction`**, a def, [line 72](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/CondensedMatter/Crystal/QuasiLocal.lean#L72).
 
 > **The cell symmetries of a crystal act on its quasi-local algebra** by `*`-automorphisms.
 
@@ -60,7 +60,7 @@ abbrev crystalAlgebra (G F : Type*) [DecidableEq (CellSite G F)]
 def cellSymmetryAction : CellSymmetry G F →* (crystalAlgebra Ω₀ G F ≃⋆ₐ[ℂ] crystalAlgebra Ω₀ G F)
 ```
 
-**`CondensedMatter.Crystal.translationHom`**, a def, [line 76](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/CondensedMatter/Crystal/QuasiLocal.lean#L76).
+**`CondensedMatter.Crystal.translationHom`**, a def, [line 76](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/CondensedMatter/Crystal/QuasiLocal.lean#L76).
 
 > The translations as cell symmetries.
 
@@ -68,7 +68,7 @@ def cellSymmetryAction : CellSymmetry G F →* (crystalAlgebra Ω₀ G F ≃⋆�
 def translationHom (G F : Type*) [AddCommGroup G] : Multiplicative G →* CellSymmetry G F
 ```
 
-**`CondensedMatter.Crystal.translationAction`**, a def, [line 85](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/CondensedMatter/Crystal/QuasiLocal.lean#L85).
+**`CondensedMatter.Crystal.translationAction`**, a def, [line 85](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/CondensedMatter/Crystal/QuasiLocal.lean#L85).
 
 > **The translations act on the quasi-local algebra** by `*`-automorphisms.
 
@@ -76,7 +76,7 @@ def translationHom (G F : Type*) [AddCommGroup G] : Multiplicative G →* CellSy
 def translationAction : Multiplicative G →* (crystalAlgebra Ω₀ G F ≃⋆ₐ[ℂ] crystalAlgebra Ω₀ G F)
 ```
 
-**`CondensedMatter.Crystal.cellSymmetryAction_translation_conj`**, a lemma, [line 89](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/CondensedMatter/Crystal/QuasiLocal.lean#L89).
+**`CondensedMatter.Crystal.cellSymmetryAction_translation_conj`**, a lemma, [line 89](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/CondensedMatter/Crystal/QuasiLocal.lean#L89).
 
 > **Covariance**: a cell symmetry carries the translation by `a` to the translation by `A a`.
 
@@ -94,4 +94,4 @@ lemma cellSymmetryAction_translation_conj (s : CellSymmetry G F) (a : G) :
 
 ## Sources
 
-- [PhyslibAlpha/CondensedMatter/Crystal/QuasiLocal.lean at 2a1dfe43](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/CondensedMatter/Crystal/QuasiLocal.lean)
+- [PhyslibAlpha/CondensedMatter/Crystal/QuasiLocal.lean at 8c87bdfb](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/CondensedMatter/Crystal/QuasiLocal.lean)

@@ -8,7 +8,7 @@ proof: formalized
 
 # The mass-weight filtration and the constant term
 
-The module `PhyslibAlpha.Particles.StandardModel.CovRealization.MassWeight.Filtration`, [PhyslibAlpha/Particles/StandardModel/CovRealization/MassWeight/Filtration.lean](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/CovRealization/MassWeight/Filtration.lean): 24 declarations, 24 with a docstring.
+The module `PhyslibAlpha.Particles.StandardModel.CovRealization.MassWeight.Filtration`, [PhyslibAlpha/Particles/StandardModel/CovRealization/MassWeight/Filtration.lean](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/CovRealization/MassWeight/Filtration.lean): 24 declarations, 24 with a docstring.
 
 ## i. Overview
 
@@ -57,7 +57,7 @@ The module `PhyslibAlpha.Particles.StandardModel.CovRealization.MassWeight.Filtr
 
 ## A. The mass-weight filtration
 
-**`StandardModel.CovAlgebraRealization.massWeightSubmoduleLE`**, a def, [line 91](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/CovRealization/MassWeight/Filtration.lean#L91).
+**`StandardModel.CovAlgebraRealization.massWeightSubmoduleLE`**, a def, [line 91](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/CovRealization/MassWeight/Filtration.lean#L91).
 
 > The elements of the field algebra of mass weight at most `w`: the join of the
 > mass-weight submodules of weight `0` through `w`. This is where a Lagrangian lives, a
@@ -67,7 +67,7 @@ The module `PhyslibAlpha.Particles.StandardModel.CovRealization.MassWeight.Filtr
 noncomputable def massWeightSubmoduleLE (w : ℕ) : Submodule ℂ B
 ```
 
-**`StandardModel.CovAlgebraRealization.massWeightSubmodule_le_massWeightSubmoduleLE`**, a lemma, [line 95](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/CovRealization/MassWeight/Filtration.lean#L95).
+**`StandardModel.CovAlgebraRealization.massWeightSubmodule_le_massWeightSubmoduleLE`**, a lemma, [line 95](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/CovRealization/MassWeight/Filtration.lean#L95).
 
 > Each graded piece of weight at most `w` sits inside the filtration at `w`.
 
@@ -76,7 +76,7 @@ lemma massWeightSubmodule_le_massWeightSubmoduleLE {k w : ℕ} (hk : k ≤ w) :
     h.massWeightSubmodule k ≤ h.massWeightSubmoduleLE w
 ```
 
-**`StandardModel.CovAlgebraRealization.mem_massWeightSubmoduleLE`**, a lemma, [line 100](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/CovRealization/MassWeight/Filtration.lean#L100).
+**`StandardModel.CovAlgebraRealization.mem_massWeightSubmoduleLE`**, a lemma, [line 100](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/CovRealization/MassWeight/Filtration.lean#L100).
 
 > An element of a graded piece of weight at most `w` lies in the filtration at `w`.
 
@@ -85,7 +85,7 @@ lemma mem_massWeightSubmoduleLE {k w : ℕ} (hk : k ≤ w) {x : B}
     (hx : x ∈ h.massWeightSubmodule k) : x ∈ h.massWeightSubmoduleLE w
 ```
 
-**`StandardModel.CovAlgebraRealization.massWeightSubmoduleLE_le`**, a lemma, [line 106](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/CovRealization/MassWeight/Filtration.lean#L106).
+**`StandardModel.CovAlgebraRealization.massWeightSubmoduleLE_le`**, a lemma, [line 106](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/CovRealization/MassWeight/Filtration.lean#L106).
 
 > A submodule containing every graded piece of weight at most `w` contains the
 > filtration at `w`: the join is taken over exactly those pieces.
@@ -95,7 +95,7 @@ lemma massWeightSubmoduleLE_le {w : ℕ} {V : Submodule ℂ B}
     (hV : ∀ k ≤ w, h.massWeightSubmodule k ≤ V) : h.massWeightSubmoduleLE w ≤ V
 ```
 
-**`StandardModel.CovAlgebraRealization.massWeightSubmoduleLE_mono`**, a lemma, [line 111](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/CovRealization/MassWeight/Filtration.lean#L111).
+**`StandardModel.CovAlgebraRealization.massWeightSubmoduleLE_mono`**, a lemma, [line 111](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/CovRealization/MassWeight/Filtration.lean#L111).
 
 > The filtration grows with the bound.
 
@@ -104,7 +104,7 @@ lemma massWeightSubmoduleLE_mono {w w' : ℕ} (hw : w ≤ w') :
     h.massWeightSubmoduleLE w ≤ h.massWeightSubmoduleLE w'
 ```
 
-**`StandardModel.CovAlgebraRealization.massWeightSubmoduleLE_eq_iSup`**, a lemma, [line 118](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/CovRealization/MassWeight/Filtration.lean#L118).
+**`StandardModel.CovAlgebraRealization.massWeightSubmoduleLE_eq_iSup`**, a lemma, [line 118](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/CovRealization/MassWeight/Filtration.lean#L118).
 
 > The filtration as a join over a finite index type, which is the form in which the
 > reduction of a join consumes it.
@@ -114,7 +114,7 @@ lemma massWeightSubmoduleLE_eq_iSup (w : ℕ) :
     h.massWeightSubmoduleLE w = ⨆ k : Fin (w + 1), h.massWeightSubmodule (k : ℕ)
 ```
 
-**`StandardModel.CovAlgebraRealization.isStableUnder_massWeightSubmoduleLE`**, a lemma, [line 128](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/CovRealization/MassWeight/Filtration.lean#L128).
+**`StandardModel.CovAlgebraRealization.isStableUnder_massWeightSubmoduleLE`**, a lemma, [line 128](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/CovRealization/MassWeight/Filtration.lean#L128).
 
 > The filtration is carried into itself by both groups: each graded piece is, and a
 > join of stable submodules is stable.
@@ -126,7 +126,7 @@ lemma isStableUnder_massWeightSubmoduleLE (w : ℕ) :
 
 ## B. The constant term at weight zero
 
-**`StandardModel.CovAlgebraRealization.massWeightSubmodule_zero`**, a lemma, [line 145](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/CovRealization/MassWeight/Filtration.lean#L145).
+**`StandardModel.CovAlgebraRealization.massWeightSubmodule_zero`**, a lemma, [line 145](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/CovRealization/MassWeight/Filtration.lean#L145).
 
 > The weight-zero part of the field algebra is the scalars. Every covariant generator
 > carries positive mass weight, so the only word of total weight zero is the empty one,
@@ -137,7 +137,7 @@ lemma isStableUnder_massWeightSubmoduleLE (w : ℕ) :
 lemma massWeightSubmodule_zero : h.massWeightSubmodule 0 = 1
 ```
 
-**`StandardModel.CovAlgebraRealization.isFixedBy_massWeightSubmodule_zero`**, a lemma, [line 160](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/CovRealization/MassWeight/Filtration.lean#L160).
+**`StandardModel.CovAlgebraRealization.isFixedBy_massWeightSubmodule_zero`**, a lemma, [line 160](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/CovRealization/MassWeight/Filtration.lean#L160).
 
 > The scalars are fixed by both groups: each acts by an algebra map, so each fixes the
 > unit. This is what makes the constant term an invariant, and it is what the backward
@@ -150,7 +150,7 @@ lemma isFixedBy_massWeightSubmodule_zero :
 
 ## C. The span of the filtration
 
-**`StandardModel.CovAlgebraRealization.standardModelSpanLE`**, a def, [line 177](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/CovRealization/MassWeight/Filtration.lean#L177).
+**`StandardModel.CovAlgebraRealization.standardModelSpanLE`**, a def, [line 177](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/CovRealization/MassWeight/Filtration.lean#L177).
 
 > The gauge- and Lorentz-invariant content of the Standard Model up to mass weight `w`:
 > the weight-zero part of the field algebra, which is the constant term, joined with the
@@ -160,7 +160,7 @@ lemma isFixedBy_massWeightSubmodule_zero :
 noncomputable def standardModelSpanLE (w : ℕ) : Submodule ℂ B
 ```
 
-**`StandardModel.CovAlgebraRealization.massWeightSubmodule_zero_le_standardModelSpanLE`**, a lemma, [line 181](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/CovRealization/MassWeight/Filtration.lean#L181).
+**`StandardModel.CovAlgebraRealization.massWeightSubmodule_zero_le_standardModelSpanLE`**, a lemma, [line 181](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/CovRealization/MassWeight/Filtration.lean#L181).
 
 > The constant term lies in the span of the filtration, at every bound.
 
@@ -169,7 +169,7 @@ lemma massWeightSubmodule_zero_le_standardModelSpanLE (w : ℕ) :
     h.massWeightSubmodule 0 ≤ h.standardModelSpanLE w
 ```
 
-**`StandardModel.CovAlgebraRealization.standardModelSpan_le_standardModelSpanLE`**, a lemma, [line 187](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/CovRealization/MassWeight/Filtration.lean#L187).
+**`StandardModel.CovAlgebraRealization.standardModelSpan_le_standardModelSpanLE`**, a lemma, [line 187](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/CovRealization/MassWeight/Filtration.lean#L187).
 
 > The graded span of a weight at most `w` lies in the span of the filtration at `w`.
 
@@ -178,7 +178,7 @@ lemma standardModelSpan_le_standardModelSpanLE {k w : ℕ} (hk : k ≤ w) :
     h.standardModelSpan k ≤ h.standardModelSpanLE w
 ```
 
-**`StandardModel.CovAlgebraRealization.standardModelSpanLE_le_massWeightSubmoduleLE`**, a lemma, [line 194](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/CovRealization/MassWeight/Filtration.lean#L194).
+**`StandardModel.CovAlgebraRealization.standardModelSpanLE_le_massWeightSubmoduleLE`**, a lemma, [line 194](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/CovRealization/MassWeight/Filtration.lean#L194).
 
 > The span of the filtration at `w` has mass weight at most `w`: the constant term has
 > weight zero and each graded span has its own weight.
@@ -188,7 +188,7 @@ lemma standardModelSpanLE_le_massWeightSubmoduleLE (w : ℕ) :
     h.standardModelSpanLE w ≤ h.massWeightSubmoduleLE w
 ```
 
-**`StandardModel.CovAlgebraRealization.isFixedBy_standardModelSpanLE`**, a lemma, [line 204](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/CovRealization/MassWeight/Filtration.lean#L204).
+**`StandardModel.CovAlgebraRealization.isFixedBy_standardModelSpanLE`**, a lemma, [line 204](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/CovRealization/MassWeight/Filtration.lean#L204).
 
 > The span of the filtration is fixed pointwise by the gauge and Lorentz groups
 > together. At positive weight this is the fixedness of the graded spans; at weight zero
@@ -199,7 +199,7 @@ lemma isFixedBy_standardModelSpanLE (w : ℕ) :
     IsFixedBy (gaugeLorentzMaps repGauge repLorentz) (h.standardModelSpanLE w)
 ```
 
-**`StandardModel.CovAlgebraRealization.repGauge_of_mem_standardModelSpanLE`**, a lemma, [line 210](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/CovRealization/MassWeight/Filtration.lean#L210).
+**`StandardModel.CovAlgebraRealization.repGauge_of_mem_standardModelSpanLE`**, a lemma, [line 210](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/CovRealization/MassWeight/Filtration.lean#L210).
 
 > Every element of the span of the filtration is a gauge invariant.
 
@@ -208,7 +208,7 @@ lemma repGauge_of_mem_standardModelSpanLE (w : ℕ) (g : GaugeGroupI) {y : B}
     (hy : y ∈ h.standardModelSpanLE w) : repGauge g y = y
 ```
 
-**`StandardModel.CovAlgebraRealization.repLorentz_of_mem_standardModelSpanLE`**, a lemma, [line 215](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/CovRealization/MassWeight/Filtration.lean#L215).
+**`StandardModel.CovAlgebraRealization.repLorentz_of_mem_standardModelSpanLE`**, a lemma, [line 215](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/CovRealization/MassWeight/Filtration.lean#L215).
 
 > Every element of the span of the filtration is a Lorentz invariant.
 
@@ -217,7 +217,7 @@ lemma repLorentz_of_mem_standardModelSpanLE (w : ℕ) (Λ : SL(2,ℂ)) {y : B}
     (hy : y ∈ h.standardModelSpanLE w) : repLorentz Λ y = y
 ```
 
-**`StandardModel.CovAlgebraRealization.standardModelSpanLE_eight`**, a lemma, [line 223](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/CovRealization/MassWeight/Filtration.lean#L223).
+**`StandardModel.CovAlgebraRealization.standardModelSpanLE_eight`**, a lemma, [line 223](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/CovRealization/MassWeight/Filtration.lean#L223).
 
 > The span of the filtration at bound eight in reduced form. Of the nine graded spans
 > only two are non-trivial, the Higgs mass term at weight four and the dimension-four
@@ -234,7 +234,7 @@ lemma standardModelSpanLE_eight :
 
 ## D. Reducing the filtration
 
-**`StandardModel.CovAlgebraRealization.reducesInvariantsTo_massWeightSubmoduleLE`**, a lemma, [line 256](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/CovRealization/MassWeight/Filtration.lean#L256).
+**`StandardModel.CovAlgebraRealization.reducesInvariantsTo_massWeightSubmoduleLE`**, a lemma, [line 256](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/CovRealization/MassWeight/Filtration.lean#L256).
 
 > The filtration reduces to its span, at every bound up to eight. The filtration is a
 > join of the graded pieces, each of them stable under both groups, and `ReducesInvariantsTo` is
@@ -251,7 +251,7 @@ lemma reducesInvariantsTo_massWeightSubmoduleLE {w : ℕ} (hw : w ≤ 8) :
 
 ## E. The classification up to mass dimension four
 
-**`StandardModel.CovAlgebraRealization.mem_massWeightSubmoduleLE_sup_and_gauge_lorentz_invariant_iff`**, a lemma, [line 283](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/CovRealization/MassWeight/Filtration.lean#L283).
+**`StandardModel.CovAlgebraRealization.mem_massWeightSubmoduleLE_sup_and_gauge_lorentz_invariant_iff`**, a lemma, [line 283](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/CovRealization/MassWeight/Filtration.lean#L283).
 
 > The classification of the Standard Model up to mass weight `w ≤ 8` as an equivalence,
 > in the shape every sector uses: an element of `massWeightSubmoduleLE w ⊔ S`, with `S`
@@ -271,7 +271,7 @@ lemma mem_massWeightSubmoduleLE_sup_and_gauge_lorentz_invariant_iff (w : ℕ) (h
           ∧ x - y ∈ h.standardModelSpanLE w
 ```
 
-**`StandardModel.CovAlgebraRealization.exists_mem_standardModelSpanLE_of_gauge_and_lorentz_invariant`**, a lemma, [line 302](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/CovRealization/MassWeight/Filtration.lean#L302).
+**`StandardModel.CovAlgebraRealization.exists_mem_standardModelSpanLE_of_gauge_and_lorentz_invariant`**, a lemma, [line 302](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/CovRealization/MassWeight/Filtration.lean#L302).
 
 > The gauge and Lorentz invariants of mass weight at most `w`, for `w ≤ 8`, modulo a
 > submodule `S` stable under both groups: such an invariant is a combination of the
@@ -292,7 +292,7 @@ lemma exists_mem_standardModelSpanLE_of_gauge_and_lorentz_invariant (w : ℕ) (h
       ∧ x - y ∈ h.standardModelSpanLE w
 ```
 
-**`StandardModel.CovAlgebraRealization.mem_massWeightSubmoduleLE_sup_and_gauge_lorentz_invariant_iff_mem`**, a lemma, [line 318](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/CovRealization/MassWeight/Filtration.lean#L318).
+**`StandardModel.CovAlgebraRealization.mem_massWeightSubmoduleLE_sup_and_gauge_lorentz_invariant_iff_mem`**, a lemma, [line 318](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/CovRealization/MassWeight/Filtration.lean#L318).
 
 > The same classification without the existential: at every bound up to eight an element
 > of `massWeightSubmoduleLE w ⊔ S` fixed by both groups is an element of the span of the
@@ -311,7 +311,7 @@ lemma mem_massWeightSubmoduleLE_sup_and_gauge_lorentz_invariant_iff_mem (w : ℕ
 
 ## F. The Standard Model Lagrangian with its constant and mass terms
 
-**`StandardModel.CovAlgebraRealization.mem_massWeightSubmoduleLE_eight_sup_and_gauge_lorentz_invariant_iff`**, a lemma, [line 342](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/CovRealization/MassWeight/Filtration.lean#L342).
+**`StandardModel.CovAlgebraRealization.mem_massWeightSubmoduleLE_eight_sup_and_gauge_lorentz_invariant_iff`**, a lemma, [line 342](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/CovRealization/MassWeight/Filtration.lean#L342).
 
 > The classification at bound eight, that is at mass dimension at most four, as an
 > equivalence: an element of `massWeightSubmoduleLE 8 ⊔ S`, with `S` stable under both
@@ -329,7 +329,7 @@ lemma mem_massWeightSubmoduleLE_eight_sup_and_gauge_lorentz_invariant_iff
           ∧ x - y ∈ h.standardModelSpanLE 8
 ```
 
-**`StandardModel.CovAlgebraRealization.mem_massWeightSubmoduleLE_eight_sup_and_gauge_lorentz_invariant_iff_mem`**, a lemma, [line 353](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/CovRealization/MassWeight/Filtration.lean#L353).
+**`StandardModel.CovAlgebraRealization.mem_massWeightSubmoduleLE_eight_sup_and_gauge_lorentz_invariant_iff_mem`**, a lemma, [line 353](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/CovRealization/MassWeight/Filtration.lean#L353).
 
 > The same at bound eight without the existential.
 
@@ -343,7 +343,7 @@ lemma mem_massWeightSubmoduleLE_eight_sup_and_gauge_lorentz_invariant_iff_mem
           ∧ ∀ g : SL(2,ℂ), repLorentz g x = x)
 ```
 
-**`StandardModel.CovAlgebraRealization.mem_massWeightSubmoduleLE_eight_sup_and_gauge_lorentz_invariant_iff_lagrangian`**, a lemma, [line 376](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/CovRealization/MassWeight/Filtration.lean#L376).
+**`StandardModel.CovAlgebraRealization.mem_massWeightSubmoduleLE_eight_sup_and_gauge_lorentz_invariant_iff_lagrangian`**, a lemma, [line 376](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/CovRealization/MassWeight/Filtration.lean#L376).
 
 > The invariant content of the Standard Model up to mass dimension four. An element of
 > `massWeightSubmoduleLE 8 ⊔ S`, for `S` a submodule stable under both groups, is fixed by
@@ -380,4 +380,4 @@ lemma mem_massWeightSubmoduleLE_eight_sup_and_gauge_lorentz_invariant_iff_lagran
 
 ## Sources
 
-- [PhyslibAlpha/Particles/StandardModel/CovRealization/MassWeight/Filtration.lean at 2a1dfe43](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/CovRealization/MassWeight/Filtration.lean)
+- [PhyslibAlpha/Particles/StandardModel/CovRealization/MassWeight/Filtration.lean at 8c87bdfb](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/CovRealization/MassWeight/Filtration.lean)

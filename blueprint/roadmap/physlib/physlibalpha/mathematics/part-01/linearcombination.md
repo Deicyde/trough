@@ -8,7 +8,7 @@ proof: formalized
 
 # Finite linear combinations under a linear map
 
-The module `PhyslibAlpha.Mathematics.LinearCombination`, [PhyslibAlpha/Mathematics/LinearCombination.lean](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Mathematics/LinearCombination.lean): 9 declarations, 9 with a docstring.
+The module `PhyslibAlpha.Mathematics.LinearCombination`, [PhyslibAlpha/Mathematics/LinearCombination.lean](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Mathematics/LinearCombination.lean): 9 declarations, 9 with a docstring.
 
 ## i. Overview
 
@@ -48,7 +48,7 @@ The module `PhyslibAlpha.Mathematics.LinearCombination`, [PhyslibAlpha/Mathemati
 
 ## A. The image of the span of a family
 
-**`Submodule.map_span_range`**, a lemma, [line 66](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Mathematics/LinearCombination.lean#L66).
+**`Submodule.map_span_range`**, a lemma, [line 66](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Mathematics/LinearCombination.lean#L66).
 
 > The image of the span of a family is the span of the images.
 
@@ -60,7 +60,7 @@ lemma Submodule.map_span_range {R B B' : Type*} [Semiring R] [AddCommMonoid B] [
 
 ## B. Combinations moved by linear maps
 
-**`Fintype.sum_sum_mul_smul`**, a lemma, [line 82](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Mathematics/LinearCombination.lean#L82).
+**`Fintype.sum_sum_mul_smul`**, a lemma, [line 82](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Mathematics/LinearCombination.lean#L82).
 
 > Contracting the components against coefficients moved by a matrix is the original
 > combination of the matrix-moved components.
@@ -70,7 +70,7 @@ lemma Fintype.sum_sum_mul_smul (M : ι → κ → R) (c : κ → R) (T : ι → 
     ∑ a, (∑ d, c d * M a d) • T a = ∑ d, c d • ∑ a, M a d • T a
 ```
 
-**`LinearMap.map_sum_smul_of_forall_eq`**, a lemma, [line 89](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Mathematics/LinearCombination.lean#L89).
+**`LinearMap.map_sum_smul_of_forall_eq`**, a lemma, [line 89](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Mathematics/LinearCombination.lean#L89).
 
 > A linear map that moves each component of a family by a matrix moves a combination of the
 > components by that matrix acting on the coefficients, with the free index first.
@@ -81,7 +81,7 @@ lemma LinearMap.map_sum_smul_of_forall_eq (φ : B →ₗ[R] B') (T : ι → B) (
     φ (∑ l, c l • T l) = ∑ a, (∑ l, c l * M a l) • T' a
 ```
 
-**`LinearMap.map_sum_smul_eq_sum_mulVec_smul`**, a lemma, [line 99](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Mathematics/LinearCombination.lean#L99).
+**`LinearMap.map_sum_smul_eq_sum_mulVec_smul`**, a lemma, [line 99](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Mathematics/LinearCombination.lean#L99).
 
 > The matrix form of `LinearMap.map_sum_smul_of_forall_eq`: a linear map moving `T l` to
 > `∑ a, M a l • T' a` moves the combination with coefficients `c` to the combination with
@@ -95,7 +95,7 @@ lemma LinearMap.map_sum_smul_eq_sum_mulVec_smul (φ : B →ₗ[R] B') (T : ι �
 
 ## C. Fixed vectors of the span
 
-**`Fintype.exists_invariant_coeff_of_adjoint_mem`**, a lemma, [line 120](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Mathematics/LinearCombination.lean#L120).
+**`Fintype.exists_invariant_coeff_of_adjoint_mem`**, a lemma, [line 120](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Mathematics/LinearCombination.lean#L120).
 
 > A vector of the span of `T` fixed by every `φ g` is the combination of coefficients fixed
 > by every `A g`, where `φ g` moves combinations by moving their coefficients with `A g`. The
@@ -116,7 +116,7 @@ lemma Fintype.exists_invariant_coeff_of_adjoint_mem {ι G B : Type*} [Fintype ι
     ∃ c : ι → ℂ, x = ∑ i, c i • T i ∧ ∀ g, A g c = c
 ```
 
-**`Fintype.exists_mulVec_eq_of_conjTranspose_mem`**, a lemma, [line 160](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Mathematics/LinearCombination.lean#L160).
+**`Fintype.exists_mulVec_eq_of_conjTranspose_mem`**, a lemma, [line 160](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Mathematics/LinearCombination.lean#L160).
 
 > The matrix form of `Fintype.exists_invariant_coeff_of_adjoint_mem`: when each `φ g` moves
 > the family by a matrix `M g`, and the conjugate transpose of each `M g` is some `M g'`, a
@@ -133,7 +133,7 @@ lemma Fintype.exists_mulVec_eq_of_conjTranspose_mem {ι G B : Type*} [Fintype ι
 
 ## D. Spans bounded through their members
 
-**`LinearMap.range_eq_span_range_basis`**, a lemma, [line 182](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Mathematics/LinearCombination.lean#L182).
+**`LinearMap.range_eq_span_range_basis`**, a lemma, [line 182](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Mathematics/LinearCombination.lean#L182).
 
 > The range of a linear map is the span of the images of a basis.
 
@@ -143,7 +143,7 @@ lemma LinearMap.range_eq_span_range_basis {ι R M N : Type*} [Semiring R] [AddCo
     LinearMap.range f = Submodule.span R (Set.range fun i => f (b i))
 ```
 
-**`Submodule.mul_le_of_le_span_range`**, a lemma, [line 189](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Mathematics/LinearCombination.lean#L189).
+**`Submodule.mul_le_of_le_span_range`**, a lemma, [line 189](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Mathematics/LinearCombination.lean#L189).
 
 > A product of two submodules, each inside the span of a family, lies in any submodule
 > containing the products of the members of the two families.
@@ -155,7 +155,7 @@ lemma Submodule.mul_le_of_le_span_range {ι κ R A : Type*} [CommSemiring R] [Se
     (hX : ∀ i j, a i * b j ∈ X) : V * V' ≤ X
 ```
 
-**`Submodule.mul_mul_le_of_le_span_range`**, a lemma, [line 199](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Mathematics/LinearCombination.lean#L199).
+**`Submodule.mul_mul_le_of_le_span_range`**, a lemma, [line 199](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Mathematics/LinearCombination.lean#L199).
 
 > The three-factor form of `Submodule.mul_le_of_le_span_range`.
 
@@ -173,4 +173,4 @@ Its declarations' statements use no declaration of another module with an articl
 
 ## Sources
 
-- [PhyslibAlpha/Mathematics/LinearCombination.lean at 2a1dfe43](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Mathematics/LinearCombination.lean)
+- [PhyslibAlpha/Mathematics/LinearCombination.lean at 8c87bdfb](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Mathematics/LinearCombination.lean)

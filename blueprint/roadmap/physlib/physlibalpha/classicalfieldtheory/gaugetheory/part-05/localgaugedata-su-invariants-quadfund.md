@@ -8,7 +8,7 @@ proof: formalized
 
 # Invariants of four fundamental indices of `SU(2)`
 
-The module `PhyslibAlpha.ClassicalFieldTheory.GaugeTheory.LocalGaugeData.SU.Invariants.QuadFund`, [PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/LocalGaugeData/SU/Invariants/QuadFund.lean](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/LocalGaugeData/SU/Invariants/QuadFund.lean): 20 declarations, 18 with a docstring.
+The module `PhyslibAlpha.ClassicalFieldTheory.GaugeTheory.LocalGaugeData.SU.Invariants.QuadFund`, [PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/LocalGaugeData/SU/Invariants/QuadFund.lean](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/LocalGaugeData/SU/Invariants/QuadFund.lean): 20 declarations, 18 with a docstring.
 
 ## i. Overview
 
@@ -41,7 +41,7 @@ The module `PhyslibAlpha.ClassicalFieldTheory.GaugeTheory.LocalGaugeData.SU.Inva
 
 ## A. The two pairings
 
-**`suTensor.epsilon`**, a def, [line 62](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/LocalGaugeData/SU/Invariants/QuadFund.lean#L62).
+**`suTensor.epsilon`**, a def, [line 62](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/LocalGaugeData/SU/Invariants/QuadFund.lean#L62).
 
 > The antisymmetric symbol of `SU(2)` as a function of two labels.
 
@@ -49,7 +49,7 @@ The module `PhyslibAlpha.ClassicalFieldTheory.GaugeTheory.LocalGaugeData.SU.Inva
 def epsilon (a b : Fin 2) : ℂ
 ```
 
-**`suTensor.sum_mul_epsilon`**, a lemma, [line 65](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/LocalGaugeData/SU/Invariants/QuadFund.lean#L65).
+**`suTensor.sum_mul_epsilon`**, a lemma, [line 65](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/LocalGaugeData/SU/Invariants/QuadFund.lean#L65).
 
 > The antisymmetric symbol is invariant: `∑ g a x g b y ε x y = det g ε a b`.
 
@@ -58,7 +58,7 @@ lemma sum_mul_epsilon (g : SU 2) (a b : Fin 2) :
     ∑ x, ∑ y, g.1 a x * g.1 b y * epsilon x y = epsilon a b
 ```
 
-**`suTensor.epsilonPair₁₂`**, a def, [line 74](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/LocalGaugeData/SU/Invariants/QuadFund.lean#L74).
+**`suTensor.epsilonPair₁₂`**, a def, [line 74](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/LocalGaugeData/SU/Invariants/QuadFund.lean#L74).
 
 > The pairing `ε^{ab} ε^{cd}` of the first index with the second and the third with the
 > fourth.
@@ -67,7 +67,7 @@ lemma sum_mul_epsilon (g : SU 2) (a b : Fin 2) :
 noncomputable def epsilonPair₁₂ : (suTensor 2).Tensor fun _ : Fin 4 => .fund
 ```
 
-**`suTensor.epsilonPair₁₃`**, a def, [line 80](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/LocalGaugeData/SU/Invariants/QuadFund.lean#L80).
+**`suTensor.epsilonPair₁₃`**, a def, [line 80](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/LocalGaugeData/SU/Invariants/QuadFund.lean#L80).
 
 > The pairing `ε^{ac} ε^{bd}` of the first index with the third and the second with the
 > fourth.
@@ -76,21 +76,21 @@ noncomputable def epsilonPair₁₂ : (suTensor 2).Tensor fun _ : Fin 4 => .fund
 noncomputable def epsilonPair₁₃ : (suTensor 2).Tensor fun _ : Fin 4 => .fund
 ```
 
-**`suTensor.basis_repr_epsilonPair₁₂`**, a lemma, [line 84](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/LocalGaugeData/SU/Invariants/QuadFund.lean#L84).
+**`suTensor.basis_repr_epsilonPair₁₂`**, a lemma, [line 84](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/LocalGaugeData/SU/Invariants/QuadFund.lean#L84).
 
 ```lean
 lemma basis_repr_epsilonPair₁₂ (l : Fin 4 → Fin 2) :
     (Tensor.basis _).repr epsilonPair₁₂ l = epsilon (l 0) (l 1) * epsilon (l 2) (l 3)
 ```
 
-**`suTensor.basis_repr_epsilonPair₁₃`**, a lemma, [line 88](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/LocalGaugeData/SU/Invariants/QuadFund.lean#L88).
+**`suTensor.basis_repr_epsilonPair₁₃`**, a lemma, [line 88](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/LocalGaugeData/SU/Invariants/QuadFund.lean#L88).
 
 ```lean
 lemma basis_repr_epsilonPair₁₃ (l : Fin 4 → Fin 2) :
     (Tensor.basis _).repr epsilonPair₁₃ l = epsilon (l 0) (l 2) * epsilon (l 1) (l 3)
 ```
 
-**`suTensor.sum_fin_four_arrow`**, a lemma, [line 93](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/LocalGaugeData/SU/Invariants/QuadFund.lean#L93).
+**`suTensor.sum_fin_four_arrow`**, a lemma, [line 93](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/LocalGaugeData/SU/Invariants/QuadFund.lean#L93).
 
 > A sum over four labels is a fourfold sum.
 
@@ -99,7 +99,7 @@ lemma sum_fin_four_arrow {M : Type*} [AddCommMonoid M] (F : (Fin 4 → Fin 2) �
     ∑ ψ : Fin 4 → Fin 2, F ψ = ∑ x, ∑ y, ∑ z, ∑ w, F ![x, y, z, w]
 ```
 
-**`suTensor.sum_mul_epsilon_mul_epsilon`**, a lemma, [line 108](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/LocalGaugeData/SU/Invariants/QuadFund.lean#L108).
+**`suTensor.sum_mul_epsilon_mul_epsilon`**, a lemma, [line 108](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/LocalGaugeData/SU/Invariants/QuadFund.lean#L108).
 
 > A product of two invariant pairings of labels is invariant.
 
@@ -114,7 +114,7 @@ lemma sum_mul_epsilon_mul_epsilon (g : SU 2) (l : Fin 4 → Fin 2) (i j k m : Fi
       = epsilon (l i) (l j) * epsilon (l k) (l m)
 ```
 
-**`suTensor.epsilonPair₁₂_invariant`**, a lemma, [line 128](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/LocalGaugeData/SU/Invariants/QuadFund.lean#L128).
+**`suTensor.epsilonPair₁₂_invariant`**, a lemma, [line 128](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/LocalGaugeData/SU/Invariants/QuadFund.lean#L128).
 
 > The pairing `ε^{ab} ε^{cd}` is invariant.
 
@@ -122,7 +122,7 @@ lemma sum_mul_epsilon_mul_epsilon (g : SU 2) (l : Fin 4 → Fin 2) (i j k m : Fi
 lemma epsilonPair₁₂_invariant (g : SU 2) : g • epsilonPair₁₂ = epsilonPair₁₂
 ```
 
-**`suTensor.epsilonPair₁₃_invariant`**, a lemma, [line 136](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/LocalGaugeData/SU/Invariants/QuadFund.lean#L136).
+**`suTensor.epsilonPair₁₃_invariant`**, a lemma, [line 136](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/LocalGaugeData/SU/Invariants/QuadFund.lean#L136).
 
 > The pairing `ε^{ac} ε^{bd}` is invariant.
 
@@ -132,7 +132,7 @@ lemma epsilonPair₁₃_invariant (g : SU 2) : g • epsilonPair₁₃ = epsilon
 
 ## B. The invariant tensors
 
-**`suTensor.eq_zero_of_not_dvd`**, a lemma, [line 161](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/LocalGaugeData/SU/Invariants/QuadFund.lean#L161).
+**`suTensor.eq_zero_of_not_dvd`**, a lemma, [line 161](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/LocalGaugeData/SU/Invariants/QuadFund.lean#L161).
 
 > The phase `diag (ω, ω̄)`, with `ω` a primitive eighth root of unity, scales the component at
 > `l` by `ω` to the power of the number of zeros of `l` plus seven times the number of ones, so
@@ -142,7 +142,7 @@ lemma epsilonPair₁₃_invariant (g : SU 2) : g • epsilonPair₁₃ = epsilon
 lemma eq_zero_of_not_dvd (l : Fin 4 → Fin 2) (hl : ¬ 8 ∣ ∑ i, ![1, 7] (l i)) : c l = 0
 ```
 
-**`suTensor.quarterTurn_relations`**, a lemma, [line 187](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/LocalGaugeData/SU/Invariants/QuadFund.lean#L187).
+**`suTensor.quarterTurn_relations`**, a lemma, [line 187](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/LocalGaugeData/SU/Invariants/QuadFund.lean#L187).
 
 > The quarter turn equates each balanced component with its complement.
 
@@ -152,7 +152,7 @@ lemma quarterTurn_relations :
       c ![0, 1, 1, 0] = c ![1, 0, 0, 1]
 ```
 
-**`suTensor.unbalanced_eq_zero`**, a lemma, [line 200](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/LocalGaugeData/SU/Invariants/QuadFund.lean#L200).
+**`suTensor.unbalanced_eq_zero`**, a lemma, [line 200](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/LocalGaugeData/SU/Invariants/QuadFund.lean#L200).
 
 > The ten unbalanced components vanish.
 
@@ -163,7 +163,7 @@ lemma unbalanced_eq_zero :
       c ![1, 1, 1, 0] = 0 ∧ c ![1, 1, 1, 1] = 0
 ```
 
-**`suTensor.sum_balanced_eq_zero`**, a lemma, [line 210](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/LocalGaugeData/SU/Invariants/QuadFund.lean#L210).
+**`suTensor.sum_balanced_eq_zero`**, a lemma, [line 210](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/LocalGaugeData/SU/Invariants/QuadFund.lean#L210).
 
 > The eighth turn carries the component at `![0, 0, 0, 0]` to a quarter of the sum of the
 > balanced components, so that sum vanishes.
@@ -174,7 +174,7 @@ lemma sum_balanced_eq_zero :
       + c ![1, 1, 0, 0] = 0
 ```
 
-**`suTensor.eq_add_of_pairings`**, a lemma, [line 224](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/LocalGaugeData/SU/Invariants/QuadFund.lean#L224).
+**`suTensor.eq_add_of_pairings`**, a lemma, [line 224](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/LocalGaugeData/SU/Invariants/QuadFund.lean#L224).
 
 > An invariant function of four labels is a combination of the two pairings, with the
 > components at `![0, 1, 0, 1]` and `![0, 0, 1, 1]` as coefficients.
@@ -185,7 +185,7 @@ lemma eq_add_of_pairings (l : Fin 4 → Fin 2) :
       + c ![0, 0, 1, 1] * (epsilon (l 0) (l 2) * epsilon (l 1) (l 3))
 ```
 
-**`suTensor.mem_span_epsilonPairs_of_invariant`**, a lemma, [line 243](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/LocalGaugeData/SU/Invariants/QuadFund.lean#L243).
+**`suTensor.mem_span_epsilonPairs_of_invariant`**, a lemma, [line 243](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/LocalGaugeData/SU/Invariants/QuadFund.lean#L243).
 
 > An invariant tensor with four fundamental indices of `SU(2)` is a combination of the two
 > pairings of its indices by the antisymmetric symbol.
@@ -198,7 +198,7 @@ lemma mem_span_epsilonPairs_of_invariant (t : (suTensor 2).Tensor fun _ : Fin 4 
 
 ## C. The invariants of the span of a family
 
-**`suTensor.reducesInvariantsTo_span_map_epsilonPairs`**, a lemma, [line 266](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/LocalGaugeData/SU/Invariants/QuadFund.lean#L266).
+**`suTensor.reducesInvariantsTo_span_map_epsilonPairs`**, a lemma, [line 266](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/LocalGaugeData/SU/Invariants/QuadFund.lean#L266).
 
 > For an equivariant map `f` out of the tensors with four fundamental indices of `SU(2)`, the
 > invariants of the range reduce to the span of the images of the two pairings.
@@ -211,7 +211,7 @@ lemma reducesInvariantsTo_span_map_epsilonPairs
       (Submodule.span ℂ {f epsilonPair₁₂, f epsilonPair₁₃})
 ```
 
-**`suTensor.fundMap_epsilonPair₁₂`**, a lemma, [line 277](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/LocalGaugeData/SU/Invariants/QuadFund.lean#L277).
+**`suTensor.fundMap_epsilonPair₁₂`**, a lemma, [line 277](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/LocalGaugeData/SU/Invariants/QuadFund.lean#L277).
 
 > The map of a family sends the first pairing to the contraction pairing the first label with
 > the second and the third with the fourth.
@@ -222,7 +222,7 @@ lemma fundMap_epsilonPair₁₂ (T : (Fin 4 → Fin 2) → B) :
       = T ![0, 1, 0, 1] - T ![0, 1, 1, 0] - T ![1, 0, 0, 1] + T ![1, 0, 1, 0]
 ```
 
-**`suTensor.fundMap_epsilonPair₁₃`**, a lemma, [line 290](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/LocalGaugeData/SU/Invariants/QuadFund.lean#L290).
+**`suTensor.fundMap_epsilonPair₁₃`**, a lemma, [line 290](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/LocalGaugeData/SU/Invariants/QuadFund.lean#L290).
 
 > The map of a family sends the second pairing to the contraction pairing the first label with
 > the third and the second with the fourth.
@@ -233,7 +233,7 @@ lemma fundMap_epsilonPair₁₃ (T : (Fin 4 → Fin 2) → B) :
       = T ![0, 0, 1, 1] - T ![0, 1, 1, 0] - T ![1, 0, 0, 1] + T ![1, 1, 0, 0]
 ```
 
-**`suTensor.reducesInvariantsTo_span_epsilonContractions`**, a lemma, [line 303](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/LocalGaugeData/SU/Invariants/QuadFund.lean#L303).
+**`suTensor.reducesInvariantsTo_span_epsilonContractions`**, a lemma, [line 303](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/LocalGaugeData/SU/Invariants/QuadFund.lean#L303).
 
 > For a family with four fundamental labels of `SU(2)` whose map is equivariant, the invariants
 > of the span of the family reduce to the span of its two epsilon contractions.
@@ -253,4 +253,4 @@ lemma reducesInvariantsTo_span_epsilonContractions {T : (Fin 4 → Fin 2) → B}
 
 ## Sources
 
-- [PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/LocalGaugeData/SU/Invariants/QuadFund.lean at 2a1dfe43](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/LocalGaugeData/SU/Invariants/QuadFund.lean)
+- [PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/LocalGaugeData/SU/Invariants/QuadFund.lean at 8c87bdfb](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/LocalGaugeData/SU/Invariants/QuadFund.lean)

@@ -1,8 +1,8 @@
 # SpaceTime
 
-The folder [Physlib/SpaceAndTime/SpaceTime/](https://github.com/leanprover-community/physlib/tree/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/SpaceAndTime/SpaceTime): 10 modules, an article each, in path order with Basic.lean first in its folder.
+The folder [Physlib/SpaceAndTime/SpaceTime/](https://github.com/leanprover-community/physlib/tree/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/SpaceAndTime/SpaceTime): 10 modules, an article each, in path order with Basic.lean first in its folder.
 
-The repository's API map for this folder, *SpaceTime* ([Physlib/SpaceAndTime/SpaceTime/API-map.md](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/SpaceAndTime/SpaceTime/API-map.md)): its Content section, with the sentences it marks as not yet formalized left out (…). A citation \[n\] links the module its n-th Lean reference names.
+The repository's API map for this folder, *SpaceTime* ([Physlib/SpaceAndTime/SpaceTime/API-map.md](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/SpaceAndTime/SpaceTime/API-map.md)): its Content section, with the sentences it marks as not yet formalized left out (…). A citation \[n\] links the module its n-th Lean reference names.
 
 *Content (Alpha)*
 
@@ -33,13 +33,13 @@ Its references:
 - [Lorentz group actions related to SpaceTime](lorentzaction.md)
 - [Time slice](timeslice.md)
 
-Modules in [SpaceTimeAlgebra/](https://github.com/leanprover-community/physlib/tree/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/SpaceAndTime/SpaceTime/SpaceTimeAlgebra):
+Modules in [SpaceTimeAlgebra/](https://github.com/leanprover-community/physlib/tree/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/SpaceAndTime/SpaceTime/SpaceTimeAlgebra):
 
 - [The spacetime algebra](spacetimealgebra-basic.md)
 - [Complex conjugation in the spacetime algebra](spacetimealgebra-star.md)
 - [Taylor series of functions on spacetime](spacetimealgebra-taylorseries.md)
 
-Modules in [SpaceTimeDerivAlgebra/](https://github.com/leanprover-community/physlib/tree/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/SpaceAndTime/SpaceTime/SpaceTimeDerivAlgebra):
+Modules in [SpaceTimeDerivAlgebra/](https://github.com/leanprover-community/physlib/tree/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/SpaceAndTime/SpaceTime/SpaceTimeDerivAlgebra):
 
 - [The spacetime derivative algebra](spacetimederivalgebra-basic.md)
 - [The action of spacetime series on derivative symbols](spacetimederivalgebra-action.md)

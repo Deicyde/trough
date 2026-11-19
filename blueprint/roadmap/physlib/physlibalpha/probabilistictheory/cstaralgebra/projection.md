@@ -1,14 +1,14 @@
 ---
 declaration: module
 origin: cited
-lean: ProbabilisticTheory.Projection, ProbabilisticTheory.Projection.ext, ProbabilisticTheory.Projection.isSharp, ProbabilisticTheory.Projection.complement, ProbabilisticTheory.Projection.complement_complement, ProbabilisticTheory.Projection.spectrum_subset_zero_one
+lean: PhyslibAlpha.ProbabilisticTheory.Projection, PhyslibAlpha.ProbabilisticTheory.Projection.ext, PhyslibAlpha.ProbabilisticTheory.Projection.isSharp, PhyslibAlpha.ProbabilisticTheory.Projection.complement, PhyslibAlpha.ProbabilisticTheory.Projection.complement_complement, PhyslibAlpha.ProbabilisticTheory.Projection.spectrum_subset_zero_one
 statement: formalized
 proof: formalized
 ---
 
 # Projections
 
-The module `PhyslibAlpha.ProbabilisticTheory.CStarAlgebra.Projection`, [PhyslibAlpha/ProbabilisticTheory/CStarAlgebra/Projection.lean](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ProbabilisticTheory/CStarAlgebra/Projection.lean): 7 declarations (1 instance with no name), 6 with a docstring.
+The module `PhyslibAlpha.ProbabilisticTheory.CStarAlgebra.Projection`, [PhyslibAlpha/ProbabilisticTheory/CStarAlgebra/Projection.lean](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/CStarAlgebra/Projection.lean): 7 declarations (1 instance with no name), 6 with a docstring.
 
 > Projections of a C⋆-algebra: sharp idempotent effects with complements and spectrum in \{0, 1}.
 
@@ -30,7 +30,7 @@ The module `PhyslibAlpha.ProbabilisticTheory.CStarAlgebra.Projection`, [PhyslibA
 
 ## A. Projections
 
-**`ProbabilisticTheory.Projection`**, a def, [line 53](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ProbabilisticTheory/CStarAlgebra/Projection.lean#L53).
+**`PhyslibAlpha.ProbabilisticTheory.Projection`**, a def, [line 53](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/CStarAlgebra/Projection.lean#L53).
 
 > A projection: an idempotent effect in the self-adjoint part of a C⋆-algebra.
 
@@ -38,7 +38,7 @@ The module `PhyslibAlpha.ProbabilisticTheory.CStarAlgebra.Projection`, [PhyslibA
 def Projection (A : Type*) [CStarAlgebra A] [PartialOrder A]
 ```
 
-**An instance with no name**, [line 59](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ProbabilisticTheory/CStarAlgebra/Projection.lean#L59).
+**An instance with no name**, [line 59](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/CStarAlgebra/Projection.lean#L59).
 
 > A projection, viewed as an effect, forgetting idempotence.
 
@@ -46,7 +46,7 @@ def Projection (A : Type*) [CStarAlgebra A] [PartialOrder A]
 instance : CoeOut (Projection A) (Effect (selfAdjoint A))
 ```
 
-**`ProbabilisticTheory.Projection.ext`**, a lemma, [line 63](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ProbabilisticTheory/CStarAlgebra/Projection.lean#L63).
+**`PhyslibAlpha.ProbabilisticTheory.Projection.ext`**, a lemma, [line 63](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/CStarAlgebra/Projection.lean#L63).
 
 ```lean
 lemma ext {p q : Projection A} (h : (p : Effect (selfAdjoint A)) = (q : Effect (selfAdjoint A))) :
@@ -55,7 +55,7 @@ lemma ext {p q : Projection A} (h : (p : Effect (selfAdjoint A)) = (q : Effect (
 
 ## B. Sharpness, complements and spectrum
 
-**`ProbabilisticTheory.Projection.isSharp`**, a lemma, [line 74](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ProbabilisticTheory/CStarAlgebra/Projection.lean#L74).
+**`PhyslibAlpha.ProbabilisticTheory.Projection.isSharp`**, a lemma, [line 74](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/CStarAlgebra/Projection.lean#L74).
 
 > Every projection is a sharp effect.
 
@@ -63,7 +63,7 @@ lemma ext {p q : Projection A} (h : (p : Effect (selfAdjoint A)) = (q : Effect (
 lemma isSharp (p : Projection A) : Effect.IsSharp (p : Effect (selfAdjoint A))
 ```
 
-**`ProbabilisticTheory.Projection.complement`**, a def, [line 78](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ProbabilisticTheory/CStarAlgebra/Projection.lean#L78).
+**`PhyslibAlpha.ProbabilisticTheory.Projection.complement`**, a def, [line 78](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/CStarAlgebra/Projection.lean#L78).
 
 > The complementary projection `1 - p`.
 
@@ -71,7 +71,7 @@ lemma isSharp (p : Projection A) : Effect.IsSharp (p : Effect (selfAdjoint A))
 noncomputable def complement (p : Projection A) : Projection A
 ```
 
-**`ProbabilisticTheory.Projection.complement_complement`**, a lemma, [line 83](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ProbabilisticTheory/CStarAlgebra/Projection.lean#L83).
+**`PhyslibAlpha.ProbabilisticTheory.Projection.complement_complement`**, a lemma, [line 83](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/CStarAlgebra/Projection.lean#L83).
 
 > Taking the complement twice returns the original projection.
 
@@ -79,7 +79,7 @@ noncomputable def complement (p : Projection A) : Projection A
 lemma complement_complement (p : Projection A) : complement (complement p) = p
 ```
 
-**`ProbabilisticTheory.Projection.spectrum_subset_zero_one`**, a lemma, [line 88](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ProbabilisticTheory/CStarAlgebra/Projection.lean#L88).
+**`PhyslibAlpha.ProbabilisticTheory.Projection.spectrum_subset_zero_one`**, a lemma, [line 88](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/CStarAlgebra/Projection.lean#L88).
 
 > The real spectrum of a projection is contained in `{0, 1}`.
 
@@ -90,8 +90,8 @@ lemma spectrum_subset_zero_one (p : Projection A) :
 
 ## Depends on
 
-- [The observables of a C⋆-algebra](../../../physlib/probabilistictheory/cstaralgebra/orderunit.md)
-- [Sharp effects](../../../physlib/probabilistictheory/effect/sharp.md)
+- [The observables of a C⋆-algebra (PhyslibAlpha)](orderunit.md)
+- [Sharp effects (PhyslibAlpha)](../effect/sharp.md)
 
 ## Proof depends on
 
@@ -99,4 +99,4 @@ lemma spectrum_subset_zero_one (p : Projection A) :
 
 ## Sources
 
-- [PhyslibAlpha/ProbabilisticTheory/CStarAlgebra/Projection.lean at 2a1dfe43](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ProbabilisticTheory/CStarAlgebra/Projection.lean)
+- [PhyslibAlpha/ProbabilisticTheory/CStarAlgebra/Projection.lean at 8c87bdfb](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/CStarAlgebra/Projection.lean)

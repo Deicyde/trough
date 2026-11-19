@@ -8,7 +8,7 @@ proof: formalized
 
 # Duals for fermions
 
-The module `Physlib.Relativity.Fermions.Weyl.Duals`, [Physlib/Relativity/Fermions/Weyl/Duals.lean](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/Relativity/Fermions/Weyl/Duals.lean): 7 declarations, 5 with a docstring.
+The module `Physlib.Relativity.Fermions.Weyl.Duals`, [Physlib/Relativity/Fermions/Weyl/Duals.lean](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Relativity/Fermions/Weyl/Duals.lean): 7 declarations, 5 with a docstring.
 
 > In this file we give the relationship between Weyl fermions
 > and their duals.
@@ -18,7 +18,7 @@ The module `Physlib.Relativity.Fermions.Weyl.Duals`, [Physlib/Relativity/Fermion
 > The dual of `LeftHandedWeyl` is `DualLeftHandedWeyl`, and the dual of `RightHandedWeyl` is
 > `DualRightHandedWeyl`.
 
-**`Fermion.LeftHandedWeyl.dual`**, a def, [line 45](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/Relativity/Fermions/Weyl/Duals.lean#L45).
+**`Fermion.LeftHandedWeyl.dual`**, a def, [line 45](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Relativity/Fermions/Weyl/Duals.lean#L45).
 
 > The morphism between the representation `leftHanded` and the representation
 > `dualLeftHanded` defined by multiplying an element of
@@ -28,7 +28,7 @@ The module `Physlib.Relativity.Fermions.Weyl.Duals`, [Physlib/Relativity/Fermion
 def LeftHandedWeyl.dual : LeftHandedWeyl.rep.IntertwiningMap DualLeftHandedWeyl.rep
 ```
 
-**`Fermion.LeftHandedWeyl.dual_hom_apply`**, a lemma, [line 66](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/Relativity/Fermions/Weyl/Duals.lean#L66).
+**`Fermion.LeftHandedWeyl.dual_hom_apply`**, a lemma, [line 66](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Relativity/Fermions/Weyl/Duals.lean#L66).
 
 ```lean
 lemma LeftHandedWeyl.dual_hom_apply (ψ : LeftHandedWeyl) :
@@ -36,7 +36,7 @@ lemma LeftHandedWeyl.dual_hom_apply (ψ : LeftHandedWeyl) :
     DualLeftHandedWeyl.toFin2ℂEquiv.symm (!![0, 1; -1, 0] *ᵥ ψ.toFin2ℂ)
 ```
 
-**`Fermion.DualLeftHandedWeyl.dual`**, a def, [line 73](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/Relativity/Fermions/Weyl/Duals.lean#L73).
+**`Fermion.DualLeftHandedWeyl.dual`**, a def, [line 73](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Relativity/Fermions/Weyl/Duals.lean#L73).
 
 > The morphism from `dualLeftHanded` to
 > `leftHanded` defined by multiplying an element of
@@ -46,7 +46,7 @@ lemma LeftHandedWeyl.dual_hom_apply (ψ : LeftHandedWeyl) :
 def DualLeftHandedWeyl.dual : DualLeftHandedWeyl.rep.IntertwiningMap LeftHandedWeyl.rep
 ```
 
-**`Fermion.DualLeftHandedWeyl.dual_hom_apply`**, a lemma, [line 97](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/Relativity/Fermions/Weyl/Duals.lean#L97).
+**`Fermion.DualLeftHandedWeyl.dual_hom_apply`**, a lemma, [line 97](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Relativity/Fermions/Weyl/Duals.lean#L97).
 
 ```lean
 lemma DualLeftHandedWeyl.dual_hom_apply (ψ : DualLeftHandedWeyl) :
@@ -54,7 +54,7 @@ lemma DualLeftHandedWeyl.dual_hom_apply (ψ : DualLeftHandedWeyl) :
     LeftHandedWeyl.toFin2ℂEquiv.symm (!![0, -1; 1, 0] *ᵥ ψ.toFin2ℂ)
 ```
 
-**`Fermion.LeftHandedWeyl.dualEquiv`**, a def, [line 104](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/Relativity/Fermions/Weyl/Duals.lean#L104).
+**`Fermion.LeftHandedWeyl.dualEquiv`**, a def, [line 104](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Relativity/Fermions/Weyl/Duals.lean#L104).
 
 > The equivalence between the representation `leftHanded` and the representation
 > `dualLeftHanded` defined by multiplying an element of
@@ -64,7 +64,7 @@ lemma DualLeftHandedWeyl.dual_hom_apply (ψ : DualLeftHandedWeyl) :
 def LeftHandedWeyl.dualEquiv : LeftHandedWeyl.rep.Equiv DualLeftHandedWeyl.rep
 ```
 
-**`Fermion.LeftHandedWeyl.dualEquiv_hom_hom_apply`**, a lemma, [line 125](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/Relativity/Fermions/Weyl/Duals.lean#L125).
+**`Fermion.LeftHandedWeyl.dualEquiv_hom_hom_apply`**, a lemma, [line 125](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Relativity/Fermions/Weyl/Duals.lean#L125).
 
 > `leftHandedDualEquiv` acting on an element `ψ : leftHanded` corresponds
 > to multiplying `ψ` by the matrix `!![0, 1; -1, 0]`.
@@ -75,7 +75,7 @@ lemma LeftHandedWeyl.dualEquiv_hom_hom_apply (ψ : LeftHandedWeyl) :
     DualLeftHandedWeyl.toFin2ℂEquiv.symm (!![0, 1; -1, 0] *ᵥ ψ.toFin2ℂ)
 ```
 
-**`Fermion.LeftHandedWeyl.dualEquiv_inv_hom_apply`**, a lemma, [line 131](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/Relativity/Fermions/Weyl/Duals.lean#L131).
+**`Fermion.LeftHandedWeyl.dualEquiv_inv_hom_apply`**, a lemma, [line 131](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Relativity/Fermions/Weyl/Duals.lean#L131).
 
 > The inverse of `leftHandedDualEquiv` acting on an element`ψ : dualLeftHanded` corresponds
 > to multiplying `ψ` by the matrix `!![0, -1; 1, 0]`.
@@ -98,4 +98,4 @@ lemma LeftHandedWeyl.dualEquiv_inv_hom_apply (ψ : DualLeftHandedWeyl) :
 
 ## Sources
 
-- [Physlib/Relativity/Fermions/Weyl/Duals.lean at 2a1dfe43](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/Relativity/Fermions/Weyl/Duals.lean)
+- [Physlib/Relativity/Fermions/Weyl/Duals.lean at 8c87bdfb](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Relativity/Fermions/Weyl/Duals.lean)

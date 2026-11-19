@@ -8,7 +8,7 @@ proof: formalized
 
 # Symmetry reduction of a many-body dynamics on an infinite crystal
 
-The module `PhyslibAlpha.CondensedMatter.Crystal.ManyBody`, [PhyslibAlpha/CondensedMatter/Crystal/ManyBody.lean](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/CondensedMatter/Crystal/ManyBody.lean): 9 declarations, 8 with a docstring.
+The module `PhyslibAlpha.CondensedMatter.Crystal.ManyBody`, [PhyslibAlpha/CondensedMatter/Crystal/ManyBody.lean](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/CondensedMatter/Crystal/ManyBody.lean): 9 declarations, 8 with a docstring.
 
 > The dynamics of an infinite crystal in a symmetric state is reduced by the sectors of total
 > momentum, and the point symmetries relate the sectors in an orbit.
@@ -44,7 +44,7 @@ The module `PhyslibAlpha.CondensedMatter.Crystal.ManyBody`, [PhyslibAlpha/Conden
 
 ## A. The representation on the GNS space
 
-**`CondensedMatter.Crystal.manyBodyRep`**, a def, [line 76](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/CondensedMatter/Crystal/ManyBody.lean#L76).
+**`CondensedMatter.Crystal.manyBodyRep`**, a def, [line 77](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/CondensedMatter/Crystal/ManyBody.lean#L77).
 
 > **The unitary representation of the symmetries on the GNS space** of an invariant state.
 
@@ -52,7 +52,7 @@ The module `PhyslibAlpha.CondensedMatter.Crystal.ManyBody`, [PhyslibAlpha/Conden
 def manyBodyRep : H →* unitary (ω.GNS →L[ℂ] ω.GNS)
 ```
 
-**`CondensedMatter.Crystal.translationIn`**, a def, [line 82](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/CondensedMatter/Crystal/ManyBody.lean#L82).
+**`CondensedMatter.Crystal.translationIn`**, a def, [line 83](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/CondensedMatter/Crystal/ManyBody.lean#L83).
 
 > The translations as elements of the symmetry subgroup.
 
@@ -60,7 +60,7 @@ def manyBodyRep : H →* unitary (ω.GNS →L[ℂ] ω.GNS)
 def translationIn : Multiplicative G →* H
 ```
 
-**`CondensedMatter.Crystal.manyBodyTranslation`**, a def, [line 87](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/CondensedMatter/Crystal/ManyBody.lean#L87).
+**`CondensedMatter.Crystal.manyBodyTranslation`**, a def, [line 88](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/CondensedMatter/Crystal/ManyBody.lean#L88).
 
 > The translation representation on the GNS space.
 
@@ -68,14 +68,14 @@ def translationIn : Multiplicative G →* H
 def manyBodyTranslation : Multiplicative G →* unitary (ω.GNS →L[ℂ] ω.GNS)
 ```
 
-**`CondensedMatter.Crystal.manyBodyTranslation_apply`**, a lemma, [line 95](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/CondensedMatter/Crystal/ManyBody.lean#L95).
+**`CondensedMatter.Crystal.manyBodyTranslation_apply`**, a lemma, [line 96](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/CondensedMatter/Crystal/ManyBody.lean#L96).
 
 ```lean
 lemma manyBodyTranslation_apply (a : Multiplicative G) :
     manyBodyTranslation H ω hω htrans a = manyBodyRep H ω hω (translationIn H htrans a)
 ```
 
-**`CondensedMatter.Crystal.linearAut`**, a def, [line 99](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/CondensedMatter/Crystal/ManyBody.lean#L99).
+**`CondensedMatter.Crystal.linearAut`**, a def, [line 100](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/CondensedMatter/Crystal/ManyBody.lean#L100).
 
 > The action of a symmetry on the lattice of translations, through its linear part.
 
@@ -83,7 +83,7 @@ lemma manyBodyTranslation_apply (a : Multiplicative G) :
 def linearAut : H →* MulAut (Multiplicative G)
 ```
 
-**`CondensedMatter.Crystal.manyBodyRep_covariant`**, a lemma, [line 110](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/CondensedMatter/Crystal/ManyBody.lean#L110).
+**`CondensedMatter.Crystal.manyBodyRep_covariant`**, a lemma, [line 111](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/CondensedMatter/Crystal/ManyBody.lean#L111).
 
 > **The translations and the symmetries are covariant on the GNS space.**
 
@@ -95,7 +95,7 @@ lemma manyBodyRep_covariant :
 
 ## B. The symmetry reduction
 
-**`CondensedMatter.Crystal.commute_manyBodyRep`**, a lemma, [line 136](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/CondensedMatter/Crystal/ManyBody.lean#L136).
+**`CondensedMatter.Crystal.commute_manyBodyRep`**, a lemma, [line 137](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/CondensedMatter/Crystal/ManyBody.lean#L137).
 
 > A dynamics commuting with a symmetry is implemented by an operator commuting with the
 > unitary implementing the symmetry.
@@ -106,7 +106,7 @@ lemma commute_manyBodyRep (s : H) :
       (AlgState.gnsAut τ hτ)
 ```
 
-**`CondensedMatter.Crystal.commute_manyBodyTranslation`**, a lemma, [line 147](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/CondensedMatter/Crystal/ManyBody.lean#L147).
+**`CondensedMatter.Crystal.commute_manyBodyTranslation`**, a lemma, [line 148](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/CondensedMatter/Crystal/ManyBody.lean#L148).
 
 > A dynamics commuting with the symmetries commutes with the translation representation.
 
@@ -116,7 +116,7 @@ lemma commute_manyBodyTranslation (a : Multiplicative G) :
       ω.GNS →L[ℂ] ω.GNS) (AlgState.gnsAut τ hτ)
 ```
 
-**`CondensedMatter.Crystal.spectrum_sectorOp_eq_manyBody`**, a lemma, [line 161](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/CondensedMatter/Crystal/ManyBody.lean#L161).
+**`CondensedMatter.Crystal.spectrum_sectorOp_eq_manyBody`**, a lemma, [line 162](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/CondensedMatter/Crystal/ManyBody.lean#L162).
 
 > **Symmetry reduction of a many-body dynamics on an infinite crystal.** Let `ω` be a state of the
 > quasi-local algebra invariant under a group `H` of cell symmetries containing the translations,
@@ -143,4 +143,4 @@ lemma spectrum_sectorOp_eq_manyBody (s : H)
 
 ## Sources
 
-- [PhyslibAlpha/CondensedMatter/Crystal/ManyBody.lean at 2a1dfe43](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/CondensedMatter/Crystal/ManyBody.lean)
+- [PhyslibAlpha/CondensedMatter/Crystal/ManyBody.lean at 8c87bdfb](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/CondensedMatter/Crystal/ManyBody.lean)

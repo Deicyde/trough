@@ -8,7 +8,7 @@ proof: formalized
 
 # `2 × 2` block operators on a Hilbert sum
 
-The module `QuantumInfo.ForMathlib.HayataGroup.TraceInequality.BlockDiagonal`, [QuantumInfo/ForMathlib/HayataGroup/TraceInequality/BlockDiagonal.lean](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/QuantumInfo/ForMathlib/HayataGroup/TraceInequality/BlockDiagonal.lean): 22 declarations, 7 with a docstring.
+The module `QuantumInfo.ForMathlib.HayataGroup.TraceInequality.BlockDiagonal`, [QuantumInfo/ForMathlib/HayataGroup/TraceInequality/BlockDiagonal.lean](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/QuantumInfo/ForMathlib/HayataGroup/TraceInequality/BlockDiagonal.lean): 22 declarations, 7 with a docstring.
 
 > This file develops the operator-matrix ("block operator") calculus on the two-fold Hilbert
 > sum `ℋ ⊕ ℋ`, the main tool in the block-operator proof of the Jensen operator inequality.
@@ -27,7 +27,7 @@ The module `QuantumInfo.ForMathlib.HayataGroup.TraceInequality.BlockDiagonal`, [
 > representing a pair of observables as a block-diagonal operator on `ℋ ⊕ ℋ` is the dilation
 > trick underlying the operator inequalities used throughout quantum information theory.
 
-**`JensenOperatorInequality.HSum`**, an abbrev, [line 47](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/QuantumInfo/ForMathlib/HayataGroup/TraceInequality/BlockDiagonal.lean#L47).
+**`JensenOperatorInequality.HSum`**, an abbrev, [line 47](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/QuantumInfo/ForMathlib/HayataGroup/TraceInequality/BlockDiagonal.lean#L47).
 
 > A two-fold Hilbert sum used for the block-operator proof of Jensen's inequality.
 > The inner-product instance on `ℋ` is unused by the underlying type synonym but kept to
@@ -37,7 +37,7 @@ The module `QuantumInfo.ForMathlib.HayataGroup.TraceInequality.BlockDiagonal`, [
 abbrev HSum (ℋ : Type u) [NormedAddCommGroup ℋ] [InnerProductSpace ℂ ℋ] : Type u
 ```
 
-**`JensenOperatorInequality.hsumEquiv`**, a def, [line 52](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/QuantumInfo/ForMathlib/HayataGroup/TraceInequality/BlockDiagonal.lean#L52).
+**`JensenOperatorInequality.hsumEquiv`**, a def, [line 52](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/QuantumInfo/ForMathlib/HayataGroup/TraceInequality/BlockDiagonal.lean#L52).
 
 > The continuous linear equivalence between the Hilbert sum `HSum ℋ` and the plain
 > function space `Fin 2 → ℋ`, forgetting the `ℓ²` inner-product structure on the index.
@@ -47,7 +47,7 @@ noncomputable def hsumEquiv (ℋ : Type u) [NormedAddCommGroup ℋ] [InnerProduc
     HSum ℋ ≃L[ℂ] (Fin 2 → ℋ)
 ```
 
-**`JensenOperatorInequality.hsumProj`**, a def, [line 58](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/QuantumInfo/ForMathlib/HayataGroup/TraceInequality/BlockDiagonal.lean#L58).
+**`JensenOperatorInequality.hsumProj`**, a def, [line 58](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/QuantumInfo/ForMathlib/HayataGroup/TraceInequality/BlockDiagonal.lean#L58).
 
 > The `i`-th coordinate projection `HSum ℋ →L[ℂ] ℋ` of the Hilbert sum onto its
 > `i`-th summand.
@@ -57,7 +57,7 @@ noncomputable def hsumProj (ℋ : Type u) [NormedAddCommGroup ℋ] [InnerProduct
     (i : Fin 2) : HSum ℋ →L[ℂ] ℋ
 ```
 
-**`JensenOperatorInequality.hsumIncl`**, a def, [line 65](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/QuantumInfo/ForMathlib/HayataGroup/TraceInequality/BlockDiagonal.lean#L65).
+**`JensenOperatorInequality.hsumIncl`**, a def, [line 65](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/QuantumInfo/ForMathlib/HayataGroup/TraceInequality/BlockDiagonal.lean#L65).
 
 > The `i`-th coordinate inclusion `ℋ →L[ℂ] HSum ℋ`, embedding `ℋ` as the `i`-th summand
 > of the Hilbert sum and placing `0` in the other summand.
@@ -67,42 +67,42 @@ noncomputable def hsumIncl (ℋ : Type u) [NormedAddCommGroup ℋ] [InnerProduct
     (i : Fin 2) : ℋ →L[ℂ] HSum ℋ
 ```
 
-**`JensenOperatorInequality.hsumProj_hsumIncl_apply`**, a lemma, [line 71](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/QuantumInfo/ForMathlib/HayataGroup/TraceInequality/BlockDiagonal.lean#L71).
+**`JensenOperatorInequality.hsumProj_hsumIncl_apply`**, a lemma, [line 71](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/QuantumInfo/ForMathlib/HayataGroup/TraceInequality/BlockDiagonal.lean#L71).
 
 ```lean
 lemma hsumProj_hsumIncl_apply (i j : Fin 2) (x : ℋ) :
     hsumProj ℋ i (hsumIncl ℋ j x) = if i = j then x else 0
 ```
 
-**`JensenOperatorInequality.inner_hsumIncl_hsumIncl`**, a lemma, [line 76](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/QuantumInfo/ForMathlib/HayataGroup/TraceInequality/BlockDiagonal.lean#L76).
+**`JensenOperatorInequality.inner_hsumIncl_hsumIncl`**, a lemma, [line 76](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/QuantumInfo/ForMathlib/HayataGroup/TraceInequality/BlockDiagonal.lean#L76).
 
 ```lean
 lemma inner_hsumIncl_hsumIncl (i j : Fin 2) (x y : ℋ) :
     inner ℂ (hsumIncl ℋ i x) (hsumIncl ℋ j y) = if i = j then inner ℂ x y else 0
 ```
 
-**`JensenOperatorInequality.hsumIncl_adjoint`**, a lemma, [line 81](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/QuantumInfo/ForMathlib/HayataGroup/TraceInequality/BlockDiagonal.lean#L81).
+**`JensenOperatorInequality.hsumIncl_adjoint`**, a lemma, [line 81](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/QuantumInfo/ForMathlib/HayataGroup/TraceInequality/BlockDiagonal.lean#L81).
 
 ```lean
 lemma hsumIncl_adjoint (i : Fin 2) :
     (hsumIncl ℋ i).adjoint = hsumProj ℋ i
 ```
 
-**`JensenOperatorInequality.hsumProj_adjoint`**, a lemma, [line 94](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/QuantumInfo/ForMathlib/HayataGroup/TraceInequality/BlockDiagonal.lean#L94).
+**`JensenOperatorInequality.hsumProj_adjoint`**, a lemma, [line 94](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/QuantumInfo/ForMathlib/HayataGroup/TraceInequality/BlockDiagonal.lean#L94).
 
 ```lean
 lemma hsumProj_adjoint (i : Fin 2) :
     (hsumProj ℋ i).adjoint = hsumIncl ℋ i
 ```
 
-**`JensenOperatorInequality.hsumIncl_proj_sum`**, a lemma, [line 102](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/QuantumInfo/ForMathlib/HayataGroup/TraceInequality/BlockDiagonal.lean#L102).
+**`JensenOperatorInequality.hsumIncl_proj_sum`**, a lemma, [line 102](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/QuantumInfo/ForMathlib/HayataGroup/TraceInequality/BlockDiagonal.lean#L102).
 
 ```lean
 lemma hsumIncl_proj_sum (z : HSum ℋ) :
     hsumIncl ℋ 0 (hsumProj ℋ 0 z) + hsumIncl ℋ 1 (hsumProj ℋ 1 z) = z
 ```
 
-**`JensenOperatorInequality.blockDiagonal`**, a def, [line 108](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/QuantumInfo/ForMathlib/HayataGroup/TraceInequality/BlockDiagonal.lean#L108).
+**`JensenOperatorInequality.blockDiagonal`**, a def, [line 108](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/QuantumInfo/ForMathlib/HayataGroup/TraceInequality/BlockDiagonal.lean#L108).
 
 > The block diagonal operator `diag(A, B)` on the two-fold Hilbert sum.
 
@@ -110,7 +110,7 @@ lemma hsumIncl_proj_sum (z : HSum ℋ) :
 noncomputable def blockDiagonal (A B : L ℋ) : L (HSum ℋ)
 ```
 
-**`JensenOperatorInequality.blockOp`**, a def, [line 112](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/QuantumInfo/ForMathlib/HayataGroup/TraceInequality/BlockDiagonal.lean#L112).
+**`JensenOperatorInequality.blockOp`**, a def, [line 112](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/QuantumInfo/ForMathlib/HayataGroup/TraceInequality/BlockDiagonal.lean#L112).
 
 > A general `2 × 2` block operator on `HSum ℋ`.
 
@@ -118,7 +118,7 @@ noncomputable def blockDiagonal (A B : L ℋ) : L (HSum ℋ)
 noncomputable def blockOp (A00 A01 A10 A11 : L ℋ) : L (HSum ℋ)
 ```
 
-**`JensenOperatorInequality.blockOp_ext`**, a lemma, [line 119](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/QuantumInfo/ForMathlib/HayataGroup/TraceInequality/BlockDiagonal.lean#L119).
+**`JensenOperatorInequality.blockOp_ext`**, a lemma, [line 119](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/QuantumInfo/ForMathlib/HayataGroup/TraceInequality/BlockDiagonal.lean#L119).
 
 ```lean
 lemma blockOp_ext {T S : L (HSum ℋ)}
@@ -127,14 +127,14 @@ lemma blockOp_ext {T S : L (HSum ℋ)}
     T = S
 ```
 
-**`JensenOperatorInequality.blockDiagonal_star`**, a lemma, [line 129](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/QuantumInfo/ForMathlib/HayataGroup/TraceInequality/BlockDiagonal.lean#L129).
+**`JensenOperatorInequality.blockDiagonal_star`**, a lemma, [line 129](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/QuantumInfo/ForMathlib/HayataGroup/TraceInequality/BlockDiagonal.lean#L129).
 
 ```lean
 lemma blockDiagonal_star (A B : L ℋ) :
     star (blockDiagonal (ℋ := ℋ) A B) = blockDiagonal (ℋ := ℋ) (star A) (star B)
 ```
 
-**`JensenOperatorInequality.blockDiagonalHom`**, a def, [line 138](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/QuantumInfo/ForMathlib/HayataGroup/TraceInequality/BlockDiagonal.lean#L138).
+**`JensenOperatorInequality.blockDiagonalHom`**, a def, [line 138](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/QuantumInfo/ForMathlib/HayataGroup/TraceInequality/BlockDiagonal.lean#L138).
 
 > The `ℝ`-`⋆`-algebra homomorphism sending a pair of operators `(A, B)` to the
 > block-diagonal operator `diag(A, B)` on the Hilbert sum.
@@ -143,42 +143,42 @@ lemma blockDiagonal_star (A B : L ℋ) :
 noncomputable def blockDiagonalHom : (L ℋ × L ℋ) →⋆ₐ[ℝ] L (HSum ℋ)
 ```
 
-**`JensenOperatorInequality.blockDiagonalHom_apply`**, a lemma, [line 167](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/QuantumInfo/ForMathlib/HayataGroup/TraceInequality/BlockDiagonal.lean#L167).
+**`JensenOperatorInequality.blockDiagonalHom_apply`**, a lemma, [line 167](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/QuantumInfo/ForMathlib/HayataGroup/TraceInequality/BlockDiagonal.lean#L167).
 
 ```lean
 lemma blockDiagonalHom_apply (p : L ℋ × L ℋ) :
     blockDiagonalHom (ℋ := ℋ) p = blockDiagonal (ℋ := ℋ) p.1 p.2
 ```
 
-**`JensenOperatorInequality.hsumProj_blockDiagonal_zero`**, a lemma, [line 172](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/QuantumInfo/ForMathlib/HayataGroup/TraceInequality/BlockDiagonal.lean#L172).
+**`JensenOperatorInequality.hsumProj_blockDiagonal_zero`**, a lemma, [line 172](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/QuantumInfo/ForMathlib/HayataGroup/TraceInequality/BlockDiagonal.lean#L172).
 
 ```lean
 lemma hsumProj_blockDiagonal_zero (A B : L ℋ) (z : HSum ℋ) :
     hsumProj ℋ 0 (blockDiagonal A B z) = A (hsumProj ℋ 0 z)
 ```
 
-**`JensenOperatorInequality.hsumProj_blockDiagonal_one`**, a lemma, [line 177](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/QuantumInfo/ForMathlib/HayataGroup/TraceInequality/BlockDiagonal.lean#L177).
+**`JensenOperatorInequality.hsumProj_blockDiagonal_one`**, a lemma, [line 177](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/QuantumInfo/ForMathlib/HayataGroup/TraceInequality/BlockDiagonal.lean#L177).
 
 ```lean
 lemma hsumProj_blockDiagonal_one (A B : L ℋ) (z : HSum ℋ) :
     hsumProj ℋ 1 (blockDiagonal A B z) = B (hsumProj ℋ 1 z)
 ```
 
-**`JensenOperatorInequality.blockDiagonal_one`**, a lemma, [line 182](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/QuantumInfo/ForMathlib/HayataGroup/TraceInequality/BlockDiagonal.lean#L182).
+**`JensenOperatorInequality.blockDiagonal_one`**, a lemma, [line 182](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/QuantumInfo/ForMathlib/HayataGroup/TraceInequality/BlockDiagonal.lean#L182).
 
 ```lean
 lemma blockDiagonal_one :
     blockDiagonal (ℋ := ℋ) (1 : L ℋ) (1 : L ℋ) = (1 : L (HSum ℋ))
 ```
 
-**`JensenOperatorInequality.blockDiagonal_nonneg`**, a lemma, [line 188](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/QuantumInfo/ForMathlib/HayataGroup/TraceInequality/BlockDiagonal.lean#L188).
+**`JensenOperatorInequality.blockDiagonal_nonneg`**, a lemma, [line 188](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/QuantumInfo/ForMathlib/HayataGroup/TraceInequality/BlockDiagonal.lean#L188).
 
 ```lean
 lemma blockDiagonal_nonneg {A B : L ℋ} (hA : 0 ≤ A) (hB : 0 ≤ B) :
     0 ≤ blockDiagonal (ℋ := ℋ) A B
 ```
 
-**`JensenOperatorInequality.hsumProj_blockOp_zero`**, a lemma, [line 233](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/QuantumInfo/ForMathlib/HayataGroup/TraceInequality/BlockDiagonal.lean#L233).
+**`JensenOperatorInequality.hsumProj_blockOp_zero`**, a lemma, [line 233](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/QuantumInfo/ForMathlib/HayataGroup/TraceInequality/BlockDiagonal.lean#L233).
 
 ```lean
 lemma hsumProj_blockOp_zero (A00 A01 A10 A11 : L ℋ) (z : HSum ℋ) :
@@ -186,7 +186,7 @@ lemma hsumProj_blockOp_zero (A00 A01 A10 A11 : L ℋ) (z : HSum ℋ) :
       A00 (hsumProj ℋ 0 z) + A01 (hsumProj ℋ 1 z)
 ```
 
-**`JensenOperatorInequality.hsumProj_blockOp_one`**, a lemma, [line 239](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/QuantumInfo/ForMathlib/HayataGroup/TraceInequality/BlockDiagonal.lean#L239).
+**`JensenOperatorInequality.hsumProj_blockOp_one`**, a lemma, [line 239](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/QuantumInfo/ForMathlib/HayataGroup/TraceInequality/BlockDiagonal.lean#L239).
 
 ```lean
 lemma hsumProj_blockOp_one (A00 A01 A10 A11 : L ℋ) (z : HSum ℋ) :
@@ -194,7 +194,7 @@ lemma hsumProj_blockOp_one (A00 A01 A10 A11 : L ℋ) (z : HSum ℋ) :
       A10 (hsumProj ℋ 0 z) + A11 (hsumProj ℋ 1 z)
 ```
 
-**`JensenOperatorInequality.blockOp_star`**, a lemma, [line 245](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/QuantumInfo/ForMathlib/HayataGroup/TraceInequality/BlockDiagonal.lean#L245).
+**`JensenOperatorInequality.blockOp_star`**, a lemma, [line 245](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/QuantumInfo/ForMathlib/HayataGroup/TraceInequality/BlockDiagonal.lean#L245).
 
 ```lean
 lemma blockOp_star (A00 A01 A10 A11 : L ℋ) :
@@ -208,4 +208,4 @@ lemma blockOp_star (A00 A01 A10 A11 : L ℋ) :
 
 ## Sources
 
-- [QuantumInfo/ForMathlib/HayataGroup/TraceInequality/BlockDiagonal.lean at 2a1dfe43](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/QuantumInfo/ForMathlib/HayataGroup/TraceInequality/BlockDiagonal.lean)
+- [QuantumInfo/ForMathlib/HayataGroup/TraceInequality/BlockDiagonal.lean at 8c87bdfb](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/QuantumInfo/ForMathlib/HayataGroup/TraceInequality/BlockDiagonal.lean)

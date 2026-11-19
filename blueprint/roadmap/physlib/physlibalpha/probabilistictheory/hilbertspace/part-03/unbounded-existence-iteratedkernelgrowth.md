@@ -1,14 +1,14 @@
 ---
 declaration: module
 origin: cited
-lean: ProbabilisticTheory.QuantumMechanics.hermite_aeval_le_poly_growth, ProbabilisticTheory.QuantumMechanics.gaussianKernel_iteratedDeriv_shift_bound, ProbabilisticTheory.QuantumMechanics.integrable_abs_pow_mul_exp_neg_mul_sq, ProbabilisticTheory.QuantumMechanics.integrable_one_add_abs_pow_mul_exp_neg_mul_sq, ProbabilisticTheory.QuantumMechanics.gaussianKernel_contDiff, ProbabilisticTheory.QuantumMechanics.gaussianKernel_iteratedDeriv_continuous, ProbabilisticTheory.QuantumMechanics.gaussianKernel_iteratedDeriv_hasDerivAt, ProbabilisticTheory.QuantumMechanics.gaussianKernel_iteratedDeriv_smul_integrable
+lean: PhyslibAlpha.ProbabilisticTheory.QuantumMechanics.hermite_aeval_le_poly_growth, PhyslibAlpha.ProbabilisticTheory.QuantumMechanics.gaussianKernel_iteratedDeriv_shift_bound, PhyslibAlpha.ProbabilisticTheory.QuantumMechanics.integrable_abs_pow_mul_exp_neg_mul_sq, PhyslibAlpha.ProbabilisticTheory.QuantumMechanics.integrable_one_add_abs_pow_mul_exp_neg_mul_sq, PhyslibAlpha.ProbabilisticTheory.QuantumMechanics.gaussianKernel_contDiff, PhyslibAlpha.ProbabilisticTheory.QuantumMechanics.gaussianKernel_iteratedDeriv_continuous, PhyslibAlpha.ProbabilisticTheory.QuantumMechanics.gaussianKernel_iteratedDeriv_hasDerivAt, PhyslibAlpha.ProbabilisticTheory.QuantumMechanics.gaussianKernel_iteratedDeriv_smul_integrable
 statement: formalized
 proof: formalized
 ---
 
 # Pointwise bounds on the derivatives of the heat kernel
 
-The module `PhyslibAlpha.ProbabilisticTheory.HilbertSpace.Unbounded.Existence.IteratedKernelGrowth`, [PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/Existence/IteratedKernelGrowth.lean](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/Existence/IteratedKernelGrowth.lean): 9 declarations, 9 with a docstring.
+The module `PhyslibAlpha.ProbabilisticTheory.HilbertSpace.Unbounded.Existence.IteratedKernelGrowth`, [PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/Existence/IteratedKernelGrowth.lean](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/Existence/IteratedKernelGrowth.lean): 9 declarations, 9 with a docstring.
 
 > Pointwise domination of the shifted derivatives of the heat kernel.
 
@@ -31,7 +31,7 @@ The module `PhyslibAlpha.ProbabilisticTheory.HilbertSpace.Unbounded.Existence.It
 
 ## A. Polynomial growth of the Hermite polynomials
 
-**`ProbabilisticTheory.QuantumMechanics.hermite_aeval_le_poly_growth`**, a lemma, [line 61](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/Existence/IteratedKernelGrowth.lean#L61).
+**`PhyslibAlpha.ProbabilisticTheory.QuantumMechanics.hermite_aeval_le_poly_growth`**, a lemma, [line 61](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/Existence/IteratedKernelGrowth.lean#L61).
 
 > `|Hₙ(y)| ≤ Cₙ (1 + |y|)ⁿ`, with `Cₙ` the sum of the absolute values of the coefficients of `Hₙ`.
 
@@ -42,7 +42,7 @@ lemma hermite_aeval_le_poly_growth (n : ℕ) :
 
 ## B. Local domination of the kernel derivatives
 
-**`ProbabilisticTheory.QuantumMechanics.gaussianKernel_iteratedDeriv_shift_bound`**, a lemma, [line 95](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/Existence/IteratedKernelGrowth.lean#L95).
+**`PhyslibAlpha.ProbabilisticTheory.QuantumMechanics.gaussianKernel_iteratedDeriv_shift_bound`**, a lemma, [line 95](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/Existence/IteratedKernelGrowth.lean#L95).
 
 > For `x² ≤ 1`, the `(n + 1)`-th derivative of the heat kernel at `u - x` is dominated by `C (1 +
 > |u|)ⁿ⁺¹ exp(-c u²)`, uniformly in `x`.
@@ -56,7 +56,7 @@ lemma gaussianKernel_iteratedDeriv_shift_bound (n : ℕ) {ε : ℝ} (hε : 0 < �
 
 ## C. Integrability of the dominating functions
 
-**`ProbabilisticTheory.QuantumMechanics.integrable_abs_pow_mul_exp_neg_mul_sq`**, a lemma, [line 164](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/Existence/IteratedKernelGrowth.lean#L164).
+**`PhyslibAlpha.ProbabilisticTheory.QuantumMechanics.integrable_abs_pow_mul_exp_neg_mul_sq`**, a lemma, [line 164](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/Existence/IteratedKernelGrowth.lean#L164).
 
 > `|u|^n` times a Gaussian weight is integrable — the `abs`-of-argument variant of
 > `integrable_pow_mul_exp_neg_mul_sq`, obtained via `Integrable.abs` since `|u^n * exp(-cu²)| =
@@ -67,7 +67,7 @@ lemma integrable_abs_pow_mul_exp_neg_mul_sq (n : ℕ) {c : ℝ} (hc : 0 < c) :
     Integrable (fun u : ℝ => |u| ^ n * Real.exp (-(c * u ^ 2)))
 ```
 
-**`ProbabilisticTheory.QuantumMechanics.integrable_one_add_abs_pow_mul_exp_neg_mul_sq`**, a lemma, [line 174](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/Existence/IteratedKernelGrowth.lean#L174).
+**`PhyslibAlpha.ProbabilisticTheory.QuantumMechanics.integrable_one_add_abs_pow_mul_exp_neg_mul_sq`**, a lemma, [line 174](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/Existence/IteratedKernelGrowth.lean#L174).
 
 > `(1 + |u|)ⁿ exp(-c u²)` is integrable.
 
@@ -78,7 +78,7 @@ lemma integrable_one_add_abs_pow_mul_exp_neg_mul_sq (n : ℕ) {c : ℝ} (hc : 0 
 
 ## D. Smoothness of the heat kernel
 
-**`ProbabilisticTheory.QuantumMechanics.gaussianKernel_contDiff`**, a lemma, [line 205](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/Existence/IteratedKernelGrowth.lean#L205).
+**`PhyslibAlpha.ProbabilisticTheory.QuantumMechanics.gaussianKernel_contDiff`**, a lemma, [line 205](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/Existence/IteratedKernelGrowth.lean#L205).
 
 > `gaussianKernel ε` is smooth to every order (used to get `Continuous`/`Differentiable` facts
 > about its iterated derivatives via the generic `ContDiff.continuous_iteratedDeriv`/
@@ -88,7 +88,7 @@ lemma integrable_one_add_abs_pow_mul_exp_neg_mul_sq (n : ℕ) {c : ℝ} (hc : 0 
 lemma gaussianKernel_contDiff {ε : ℝ} (_hε : 0 < ε) : ContDiff ℝ (⊤ : ℕ∞) (gaussianKernel ε)
 ```
 
-**`ProbabilisticTheory.QuantumMechanics.gaussianKernel_iteratedDeriv_continuous`**, a lemma, [line 210](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/Existence/IteratedKernelGrowth.lean#L210).
+**`PhyslibAlpha.ProbabilisticTheory.QuantumMechanics.gaussianKernel_iteratedDeriv_continuous`**, a lemma, [line 210](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/Existence/IteratedKernelGrowth.lean#L210).
 
 > `iteratedDeriv n (gaussianKernel ε)` is continuous, for every `n`.
 
@@ -97,7 +97,7 @@ lemma gaussianKernel_iteratedDeriv_continuous (n : ℕ) {ε : ℝ} (hε : 0 < ε
     Continuous (iteratedDeriv n (gaussianKernel ε))
 ```
 
-**`ProbabilisticTheory.QuantumMechanics.gaussianKernel_iteratedDeriv_hasDerivAt`**, a lemma, [line 216](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/Existence/IteratedKernelGrowth.lean#L216).
+**`PhyslibAlpha.ProbabilisticTheory.QuantumMechanics.gaussianKernel_iteratedDeriv_hasDerivAt`**, a lemma, [line 216](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/Existence/IteratedKernelGrowth.lean#L216).
 
 > The `n`-th derivative of the heat kernel has derivative the `(n + 1)`-th.
 
@@ -109,7 +109,7 @@ lemma gaussianKernel_iteratedDeriv_hasDerivAt (n : ℕ) {ε : ℝ} (hε : 0 < ε
 
 ## E. Differentiable orbits of iterated-kernel Gårding vectors
 
-**`ProbabilisticTheory.QuantumMechanics.gaussianKernel_iteratedDeriv_smul_integrable`**, a lemma, [line 236](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/Existence/IteratedKernelGrowth.lean#L236).
+**`PhyslibAlpha.ProbabilisticTheory.QuantumMechanics.gaussianKernel_iteratedDeriv_smul_integrable`**, a lemma, [line 236](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/Existence/IteratedKernelGrowth.lean#L236).
 
 > The `n`-th derivative of the heat kernel is integrable against `t ↦ U t ψ`.
 
@@ -121,7 +121,7 @@ lemma gaussianKernel_iteratedDeriv_smul_integrable {H : Type*} [NormedAddCommGro
     Integrable (fun t : ℝ => ((iteratedDeriv n (gaussianKernel ε) t : ℝ) : ℂ) • U t ψ)
 ```
 
-**`ProbabilisticTheory.QuantumMechanics.gardingVectorAt_iteratedKernel_hasDerivAt`**, a lemma, [line 258](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/Existence/IteratedKernelGrowth.lean#L258).
+**`PhyslibAlpha.ProbabilisticTheory.QuantumMechanics.gardingVectorAt_iteratedKernel_hasDerivAt`**, a lemma, [line 258](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/Existence/IteratedKernelGrowth.lean#L258).
 
 > The orbit of the Gårding vector of the `n`-th derivative of the heat kernel is differentiable at
 > `0`.
@@ -146,4 +146,4 @@ lemma gardingVectorAt_iteratedKernel_hasDerivAt {H : Type*} [NormedAddCommGroup 
 
 ## Sources
 
-- [PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/Existence/IteratedKernelGrowth.lean at 2a1dfe43](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/Existence/IteratedKernelGrowth.lean)
+- [PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/Existence/IteratedKernelGrowth.lean at 8c87bdfb](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/Existence/IteratedKernelGrowth.lean)

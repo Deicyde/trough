@@ -1,6 +1,6 @@
 # Relativity
 
-The folder [Physlib/Relativity/](https://github.com/leanprover-community/physlib/tree/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/Relativity): 3 modules, an article each, in path order; then 9 folders below it, a page each, 114 modules in all.
+The folder [Physlib/Relativity/](https://github.com/leanprover-community/physlib/tree/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Relativity): 3 modules, an article each, in path order; then 9 folders below it, a page each, 114 modules in all.
 
 - [The Clifford algebra of the gamma matrices](cliffordalgebra.md)
 - [The Minkowski matrix](minkowskimatrix.md)

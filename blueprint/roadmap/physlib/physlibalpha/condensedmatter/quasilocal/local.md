@@ -8,7 +8,7 @@ proof: formalized
 
 # Local algebras of a system with a finite configuration space at each site
 
-The module `PhyslibAlpha.CondensedMatter.QuasiLocal.Local`, [PhyslibAlpha/CondensedMatter/QuasiLocal/Local.lean](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/CondensedMatter/QuasiLocal/Local.lean): 24 declarations (1 instance with no name), 7 with a docstring.
+The module `PhyslibAlpha.CondensedMatter.QuasiLocal.Local`, [PhyslibAlpha/CondensedMatter/QuasiLocal/Local.lean](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/CondensedMatter/QuasiLocal/Local.lean): 24 declarations (1 instance with no name), 7 with a docstring.
 
 > The algebra of operators of a finite region is the algebra of matrices on the configurations of
 > its sites, and a larger region contains it through `M ↦ M ⊗ 1`.
@@ -42,7 +42,7 @@ The module `PhyslibAlpha.CondensedMatter.QuasiLocal.Local`, [PhyslibAlpha/Conden
 
 ## A. Configurations of a region and gluing
 
-**`CondensedMatter.QuasiLocal.Cfg`**, an abbrev, [line 71](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/CondensedMatter/QuasiLocal/Local.lean#L71).
+**`CondensedMatter.QuasiLocal.Cfg`**, an abbrev, [line 71](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/CondensedMatter/QuasiLocal/Local.lean#L71).
 
 > The configurations of a region: a value of the local configuration space at each of its
 > sites.
@@ -51,7 +51,7 @@ The module `PhyslibAlpha.CondensedMatter.QuasiLocal.Local`, [PhyslibAlpha/Conden
 abbrev Cfg (X : Finset S) : Type _
 ```
 
-**`CondensedMatter.QuasiLocal.restr`**, an abbrev, [line 76](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/CondensedMatter/QuasiLocal/Local.lean#L76).
+**`CondensedMatter.QuasiLocal.restr`**, an abbrev, [line 76](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/CondensedMatter/QuasiLocal/Local.lean#L76).
 
 > The restriction of a configuration of a region to a subregion.
 
@@ -59,7 +59,7 @@ abbrev Cfg (X : Finset S) : Type _
 abbrev restr {X Y : Finset S} (h : X ≤ Y) (c : Cfg Ω Y) : Cfg Ω X
 ```
 
-**`CondensedMatter.QuasiLocal.Agree`**, a def, [line 79](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/CondensedMatter/QuasiLocal/Local.lean#L79).
+**`CondensedMatter.QuasiLocal.Agree`**, a def, [line 79](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/CondensedMatter/QuasiLocal/Local.lean#L79).
 
 > Two configurations of a region agree outside a subregion.
 
@@ -67,13 +67,13 @@ abbrev restr {X Y : Finset S} (h : X ≤ Y) (c : Cfg Ω Y) : Cfg Ω X
 def Agree {X Y : Finset S} (_h : X ≤ Y) (c c' : Cfg Ω Y) : Prop
 ```
 
-**An instance with no name**, [line 81](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/CondensedMatter/QuasiLocal/Local.lean#L81).
+**An instance with no name**, [line 81](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/CondensedMatter/QuasiLocal/Local.lean#L81).
 
 ```lean
 instance {X Y : Finset S} (h : X ≤ Y) (c c' : Cfg Ω Y) : Decidable (Agree h c c')
 ```
 
-**`CondensedMatter.QuasiLocal.glue`**, a def, [line 85](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/CondensedMatter/QuasiLocal/Local.lean#L85).
+**`CondensedMatter.QuasiLocal.glue`**, a def, [line 85](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/CondensedMatter/QuasiLocal/Local.lean#L85).
 
 > Replace the values of `c` inside the subregion `X` by those of `a`.
 
@@ -81,48 +81,48 @@ instance {X Y : Finset S} (h : X ≤ Y) (c c' : Cfg Ω Y) : Decidable (Agree h c
 def glue {X Y : Finset S} (_h : X ≤ Y) (c : Cfg Ω Y) (a : Cfg Ω X) : Cfg Ω Y
 ```
 
-**`CondensedMatter.QuasiLocal.restr_glue`**, a lemma, [line 90](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/CondensedMatter/QuasiLocal/Local.lean#L90).
+**`CondensedMatter.QuasiLocal.restr_glue`**, a lemma, [line 90](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/CondensedMatter/QuasiLocal/Local.lean#L90).
 
 ```lean
 lemma restr_glue {X Y : Finset S} (h : X ≤ Y) (c : Cfg Ω Y) (a : Cfg Ω X) :
     restr h (glue h c a) = a
 ```
 
-**`CondensedMatter.QuasiLocal.agree_glue`**, a lemma, [line 96](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/CondensedMatter/QuasiLocal/Local.lean#L96).
+**`CondensedMatter.QuasiLocal.agree_glue`**, a lemma, [line 96](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/CondensedMatter/QuasiLocal/Local.lean#L96).
 
 ```lean
 lemma agree_glue {X Y : Finset S} (h : X ≤ Y) (c : Cfg Ω Y) (a : Cfg Ω X) :
     Agree h c (glue h c a)
 ```
 
-**`CondensedMatter.QuasiLocal.agree_iff_glue`**, a lemma, [line 102](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/CondensedMatter/QuasiLocal/Local.lean#L102).
+**`CondensedMatter.QuasiLocal.agree_iff_glue`**, a lemma, [line 102](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/CondensedMatter/QuasiLocal/Local.lean#L102).
 
 ```lean
 lemma agree_iff_glue {X Y : Finset S} (h : X ≤ Y) {c c' : Cfg Ω Y} :
     Agree h c c' ↔ glue h c (restr h c') = c'
 ```
 
-**`CondensedMatter.QuasiLocal.agree_refl`**, a lemma, [line 116](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/CondensedMatter/QuasiLocal/Local.lean#L116).
+**`CondensedMatter.QuasiLocal.agree_refl`**, a lemma, [line 116](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/CondensedMatter/QuasiLocal/Local.lean#L116).
 
 ```lean
 lemma agree_refl {X Y : Finset S} (h : X ≤ Y) (c : Cfg Ω Y) : Agree h c c
 ```
 
-**`CondensedMatter.QuasiLocal.Agree.symm`**, a lemma, [line 121](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/CondensedMatter/QuasiLocal/Local.lean#L121).
+**`CondensedMatter.QuasiLocal.Agree.symm`**, a lemma, [line 121](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/CondensedMatter/QuasiLocal/Local.lean#L121).
 
 ```lean
 lemma Agree.symm {X Y : Finset S} {h : X ≤ Y} {c c' : Cfg Ω Y} (hc : Agree h c c') :
     Agree h c' c
 ```
 
-**`CondensedMatter.QuasiLocal.Agree.trans`**, a lemma, [line 127](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/CondensedMatter/QuasiLocal/Local.lean#L127).
+**`CondensedMatter.QuasiLocal.Agree.trans`**, a lemma, [line 127](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/CondensedMatter/QuasiLocal/Local.lean#L127).
 
 ```lean
 lemma Agree.trans {X Y : Finset S} {h : X ≤ Y} {c c' c'' : Cfg Ω Y} (hc : Agree h c c')
     (hc' : Agree h c' c'') : Agree h c c''
 ```
 
-**`CondensedMatter.QuasiLocal.eq_of_agree_of_restr_eq`**, a lemma, [line 132](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/CondensedMatter/QuasiLocal/Local.lean#L132).
+**`CondensedMatter.QuasiLocal.eq_of_agree_of_restr_eq`**, a lemma, [line 132](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/CondensedMatter/QuasiLocal/Local.lean#L132).
 
 ```lean
 lemma eq_of_agree_of_restr_eq {X Y : Finset S} {h : X ≤ Y} {c c' : Cfg Ω Y} (hc : Agree h c c')
@@ -131,7 +131,7 @@ lemma eq_of_agree_of_restr_eq {X Y : Finset S} {h : X ≤ Y} {c c' : Cfg Ω Y} (
 
 ## B. The operator `M ⊗ 1`
 
-**`CondensedMatter.QuasiLocal.Alg`**, an abbrev, [line 147](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/CondensedMatter/QuasiLocal/Local.lean#L147).
+**`CondensedMatter.QuasiLocal.Alg`**, an abbrev, [line 147](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/CondensedMatter/QuasiLocal/Local.lean#L147).
 
 > The operators on the sites of a region: matrices indexed by configurations.
 
@@ -139,7 +139,7 @@ lemma eq_of_agree_of_restr_eq {X Y : Finset S} {h : X ≤ Y} {c c' : Cfg Ω Y} (
 abbrev Alg (X : Finset S) : Type _
 ```
 
-**`CondensedMatter.QuasiLocal.inclMat`**, a def, [line 151](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/CondensedMatter/QuasiLocal/Local.lean#L151).
+**`CondensedMatter.QuasiLocal.inclMat`**, a def, [line 151](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/CondensedMatter/QuasiLocal/Local.lean#L151).
 
 > The operator `M ⊗ 1` on a larger region: `M` on the sites of `X` and the identity on the other
 > sites.
@@ -148,68 +148,68 @@ abbrev Alg (X : Finset S) : Type _
 def inclMat {X Y : Finset S} (h : X ≤ Y) (M : Alg Ω X) : Alg Ω Y
 ```
 
-**`CondensedMatter.QuasiLocal.inclMat_apply`**, a lemma, [line 155](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/CondensedMatter/QuasiLocal/Local.lean#L155).
+**`CondensedMatter.QuasiLocal.inclMat_apply`**, a lemma, [line 155](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/CondensedMatter/QuasiLocal/Local.lean#L155).
 
 ```lean
 lemma inclMat_apply {X Y : Finset S} (h : X ≤ Y) (M : Alg Ω X) (c c' : Cfg Ω Y) :
     inclMat h M c c' = if Agree h c c' then M (restr h c) (restr h c') else 0
 ```
 
-**`CondensedMatter.QuasiLocal.inclMat_one`**, a lemma, [line 159](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/CondensedMatter/QuasiLocal/Local.lean#L159).
+**`CondensedMatter.QuasiLocal.inclMat_one`**, a lemma, [line 159](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/CondensedMatter/QuasiLocal/Local.lean#L159).
 
 ```lean
 lemma inclMat_one {X Y : Finset S} (h : X ≤ Y) : inclMat h (1 : Alg Ω X) = 1
 ```
 
-**`CondensedMatter.QuasiLocal.inclMat_add`**, a lemma, [line 172](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/CondensedMatter/QuasiLocal/Local.lean#L172).
+**`CondensedMatter.QuasiLocal.inclMat_add`**, a lemma, [line 172](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/CondensedMatter/QuasiLocal/Local.lean#L172).
 
 ```lean
 lemma inclMat_add {X Y : Finset S} (h : X ≤ Y) (M N : Alg Ω X) :
     inclMat h (M + N) = inclMat h M + inclMat h N
 ```
 
-**`CondensedMatter.QuasiLocal.inclMat_smul`**, a lemma, [line 177](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/CondensedMatter/QuasiLocal/Local.lean#L177).
+**`CondensedMatter.QuasiLocal.inclMat_smul`**, a lemma, [line 177](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/CondensedMatter/QuasiLocal/Local.lean#L177).
 
 ```lean
 lemma inclMat_smul {X Y : Finset S} (h : X ≤ Y) (r : ℂ) (M : Alg Ω X) :
     inclMat h (r • M) = r • inclMat h M
 ```
 
-**`CondensedMatter.QuasiLocal.inclMat_conjTranspose`**, a lemma, [line 182](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/CondensedMatter/QuasiLocal/Local.lean#L182).
+**`CondensedMatter.QuasiLocal.inclMat_conjTranspose`**, a lemma, [line 182](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/CondensedMatter/QuasiLocal/Local.lean#L182).
 
 ```lean
 lemma inclMat_conjTranspose {X Y : Finset S} (h : X ≤ Y) (M : Alg Ω X) :
     inclMat h Mᴴ = (inclMat h M)ᴴ
 ```
 
-**`CondensedMatter.QuasiLocal.inclMat_mul`**, a lemma, [line 191](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/CondensedMatter/QuasiLocal/Local.lean#L191).
+**`CondensedMatter.QuasiLocal.inclMat_mul`**, a lemma, [line 191](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/CondensedMatter/QuasiLocal/Local.lean#L191).
 
 ```lean
 lemma inclMat_mul {X Y : Finset S} (h : X ≤ Y) (M N : Alg Ω X) :
     inclMat h (M * N) = inclMat h M * inclMat h N
 ```
 
-**`CondensedMatter.QuasiLocal.inclMat_refl`**, a lemma, [line 227](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/CondensedMatter/QuasiLocal/Local.lean#L227).
+**`CondensedMatter.QuasiLocal.inclMat_refl`**, a lemma, [line 227](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/CondensedMatter/QuasiLocal/Local.lean#L227).
 
 ```lean
 lemma inclMat_refl {X : Finset S} (M : Alg Ω X) : inclMat (le_refl X) M = M
 ```
 
-**`CondensedMatter.QuasiLocal.agree_trans_iff`**, a lemma, [line 234](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/CondensedMatter/QuasiLocal/Local.lean#L234).
+**`CondensedMatter.QuasiLocal.agree_trans_iff`**, a lemma, [line 234](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/CondensedMatter/QuasiLocal/Local.lean#L234).
 
 ```lean
 lemma agree_trans_iff {X Y Z : Finset S} (h₁ : X ≤ Y) (h₂ : Y ≤ Z) (c c' : Cfg Ω Z) :
     Agree (h₁.trans h₂) c c' ↔ Agree h₂ c c' ∧ Agree h₁ (restr h₂ c) (restr h₂ c')
 ```
 
-**`CondensedMatter.QuasiLocal.inclMat_trans`**, a lemma, [line 245](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/CondensedMatter/QuasiLocal/Local.lean#L245).
+**`CondensedMatter.QuasiLocal.inclMat_trans`**, a lemma, [line 245](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/CondensedMatter/QuasiLocal/Local.lean#L245).
 
 ```lean
 lemma inclMat_trans {X Y Z : Finset S} (h₁ : X ≤ Y) (h₂ : Y ≤ Z) (M : Alg Ω X) :
     inclMat (h₁.trans h₂) M = inclMat h₂ (inclMat h₁ M)
 ```
 
-**`CondensedMatter.QuasiLocal.inclStarAlg`**, a def, [line 258](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/CondensedMatter/QuasiLocal/Local.lean#L258).
+**`CondensedMatter.QuasiLocal.inclStarAlg`**, a def, [line 258](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/CondensedMatter/QuasiLocal/Local.lean#L258).
 
 > The operator `M ⊗ 1` as a unital `*`-homomorphism.
 
@@ -223,4 +223,4 @@ Its declarations' statements use no declaration of another module with an articl
 
 ## Sources
 
-- [PhyslibAlpha/CondensedMatter/QuasiLocal/Local.lean at 2a1dfe43](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/CondensedMatter/QuasiLocal/Local.lean)
+- [PhyslibAlpha/CondensedMatter/QuasiLocal/Local.lean at 8c87bdfb](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/CondensedMatter/QuasiLocal/Local.lean)

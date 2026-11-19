@@ -8,7 +8,7 @@ proof: formalized
 
 # The local field algebra of a gauge theory and its universal property
 
-The module `PhyslibAlpha.ClassicalFieldTheory.GaugeTheory.LocalField.Basic`, [PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/LocalField/Basic.lean](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/LocalField/Basic.lean): 79 declarations (1 instance with no name), 58 with a docstring.
+The module `PhyslibAlpha.ClassicalFieldTheory.GaugeTheory.LocalField.Basic`, [PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/LocalField/Basic.lean](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/LocalField/Basic.lean): 79 declarations (1 instance with no name), 58 with a docstring.
 
 ## i. Overview
 
@@ -79,7 +79,7 @@ The module `PhyslibAlpha.ClassicalFieldTheory.GaugeTheory.LocalField.Basic`, [Ph
 
 ## A. The local field algebra of a field datum
 
-**`GaugeFieldData.LocalFieldAlgebra`**, an abbrev, [line 125](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/LocalField/Basic.lean#L125).
+**`GaugeFieldData.LocalFieldAlgebra`**, an abbrev, [line 125](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/LocalField/Basic.lean#L125).
 
 > The local field algebra `J(T)` of a gauge-field datum, in which the local expressions
 > of the theory, such as Lagrangian terms, currents and field strengths, live before any of
@@ -97,7 +97,7 @@ abbrev LocalFieldAlgebra : Type
 
 ### A.1. The factor inclusions and the generators
 
-**`GaugeFieldData.includeFermion`**, a def, [line 136](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/LocalField/Basic.lean#L136).
+**`GaugeFieldData.includeFermion`**, a def, [line 136](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/LocalField/Basic.lean#L136).
 
 > The inclusion of the fermionic factor.
 
@@ -106,7 +106,7 @@ noncomputable def includeFermion :
     ExteriorAlgebra ℂ T.FermionGenerators →ₐ[ℂ] T.LocalFieldAlgebra
 ```
 
-**`GaugeFieldData.includeBoson`**, a def, [line 143](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/LocalField/Basic.lean#L143).
+**`GaugeFieldData.includeBoson`**, a def, [line 143](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/LocalField/Basic.lean#L143).
 
 > The inclusion of the bosonic factor.
 
@@ -115,7 +115,7 @@ noncomputable def includeBoson :
     SymmetricAlgebra ℂ T.BosonGenerators →ₐ[ℂ] T.LocalFieldAlgebra
 ```
 
-**`GaugeFieldData.includeConnection`**, a def, [line 150](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/LocalField/Basic.lean#L150).
+**`GaugeFieldData.includeConnection`**, a def, [line 150](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/LocalField/Basic.lean#L150).
 
 > The inclusion of the complexified connection factor.
 
@@ -125,7 +125,7 @@ noncomputable def includeConnection :
       T.LocalFieldAlgebra
 ```
 
-**`GaugeFieldData.MatterAlgebra`**, an abbrev, [line 157](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/LocalField/Basic.lean#L157).
+**`GaugeFieldData.MatterAlgebra`**, an abbrev, [line 157](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/LocalField/Basic.lean#L157).
 
 > The matter factor of the local field algebra, on which the two matter inclusions
 > land.
@@ -134,7 +134,7 @@ noncomputable def includeConnection :
 abbrev MatterAlgebra : Type
 ```
 
-**`GaugeFieldData.one_matterAlgebra`**, a lemma, [line 165](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/LocalField/Basic.lean#L165).
+**`GaugeFieldData.one_matterAlgebra`**, a lemma, [line 165](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/LocalField/Basic.lean#L165).
 
 > The unit of the matter factor is the tensor of the two units. It is recorded here, at
 > an abstract datum, because unfolding it at a concrete one has to see through the
@@ -147,7 +147,7 @@ lemma one_matterAlgebra :
         (1 : SymmetricAlgebra ℂ T.BosonGenerators)
 ```
 
-**`GaugeFieldData.includeFermion_apply`**, a lemma, [line 173](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/LocalField/Basic.lean#L173).
+**`GaugeFieldData.includeFermion_apply`**, a lemma, [line 173](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/LocalField/Basic.lean#L173).
 
 > The fermionic inclusion, written out as a pure tensor with units in the other two
 > factors. Recorded at an abstract datum for the same reason.
@@ -160,7 +160,7 @@ lemma includeFermion_apply (a : ExteriorAlgebra ℂ T.FermionGenerators) :
         T.LocalFieldAlgebra)
 ```
 
-**`GaugeFieldData.includeBoson_apply`**, a lemma, [line 180](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/LocalField/Basic.lean#L180).
+**`GaugeFieldData.includeBoson_apply`**, a lemma, [line 180](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/LocalField/Basic.lean#L180).
 
 > The bosonic inclusion, written out as a pure tensor.
 
@@ -172,7 +172,7 @@ lemma includeBoson_apply (b : SymmetricAlgebra ℂ T.BosonGenerators) :
         T.LocalFieldAlgebra)
 ```
 
-**`GaugeFieldData.includeConnection_apply`**, a lemma, [line 187](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/LocalField/Basic.lean#L187).
+**`GaugeFieldData.includeConnection_apply`**, a lemma, [line 187](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/LocalField/Basic.lean#L187).
 
 > The connection inclusion, written out as a pure tensor.
 
@@ -183,7 +183,7 @@ lemma includeConnection_apply
       = ((1 : T.MatterAlgebra) ⊗ₜ[ℂ] c : T.LocalFieldAlgebra)
 ```
 
-**`GaugeFieldData.ιFermionTotal`**, a def, [line 198](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/LocalField/Basic.lean#L198).
+**`GaugeFieldData.ιFermionTotal`**, a def, [line 198](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/LocalField/Basic.lean#L198).
 
 > All the fermionic generators of the datum at once, the whole fermionic generator space
 > inside the algebra. Fermi statistics is a condition on this map, not on the species maps
@@ -193,7 +193,7 @@ lemma includeConnection_apply
 noncomputable def ιFermionTotal : T.FermionGenerators →ₗ[ℂ] T.LocalFieldAlgebra
 ```
 
-**`GaugeFieldData.ιBosonTotal`**, a def, [line 202](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/LocalField/Basic.lean#L202).
+**`GaugeFieldData.ιBosonTotal`**, a def, [line 202](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/LocalField/Basic.lean#L202).
 
 > All the bosonic generators of the datum at once.
 
@@ -201,7 +201,7 @@ noncomputable def ιFermionTotal : T.FermionGenerators →ₗ[ℂ] T.LocalFieldA
 noncomputable def ιBosonTotal : T.BosonGenerators →ₗ[ℂ] T.LocalFieldAlgebra
 ```
 
-**`GaugeFieldData.ιConnection`**, a def, [line 208](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/LocalField/Basic.lean#L208).
+**`GaugeFieldData.ιConnection`**, a def, [line 208](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/LocalField/Basic.lean#L208).
 
 > The connection generators inside the local field algebra. They are only real-linear,
 > the connection generator space being a real vector space, complexified inside the
@@ -212,7 +212,7 @@ noncomputable def ιConnection :
     GaugeBoson.JetComponentSpace 𝔤 →ₗ[ℝ] T.LocalFieldAlgebra
 ```
 
-**`GaugeFieldData.ιFermion`**, a def, [line 216](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/LocalField/Basic.lean#L216).
+**`GaugeFieldData.ιFermion`**, a def, [line 216](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/LocalField/Basic.lean#L216).
 
 > The generators of one fermionic species inside the local field algebra.
 
@@ -221,7 +221,7 @@ noncomputable def ιFermion (i : T.FermionSpecies) :
     JetComponentSpace (T.fermion i) →ₗ[ℂ] T.LocalFieldAlgebra
 ```
 
-**`GaugeFieldData.ιBoson`**, a def, [line 221](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/LocalField/Basic.lean#L221).
+**`GaugeFieldData.ιBoson`**, a def, [line 221](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/LocalField/Basic.lean#L221).
 
 > The generators of one bosonic species inside the local field algebra.
 
@@ -230,7 +230,7 @@ noncomputable def ιBoson (j : T.BosonSpecies) :
     JetComponentSpace (T.boson j) →ₗ[ℂ] T.LocalFieldAlgebra
 ```
 
-**`GaugeFieldData.ιFermionTotal_apply`**, a lemma, [line 227](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/LocalField/Basic.lean#L227).
+**`GaugeFieldData.ιFermionTotal_apply`**, a lemma, [line 227](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/LocalField/Basic.lean#L227).
 
 ```lean
 lemma ιFermionTotal_apply (v : T.FermionGenerators) :
@@ -239,7 +239,7 @@ lemma ιFermionTotal_apply (v : T.FermionGenerators) :
           ⊗ₜ[ℂ] (1 : ℂ ⊗[ℝ] SymmetricAlgebra ℝ (GaugeBoson.JetComponentSpace 𝔤))
 ```
 
-**`GaugeFieldData.ιBosonTotal_apply`**, a lemma, [line 232](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/LocalField/Basic.lean#L232).
+**`GaugeFieldData.ιBosonTotal_apply`**, a lemma, [line 232](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/LocalField/Basic.lean#L232).
 
 ```lean
 lemma ιBosonTotal_apply (v : T.BosonGenerators) :
@@ -249,7 +249,7 @@ lemma ιBosonTotal_apply (v : T.BosonGenerators) :
           ⊗ₜ[ℂ] (1 : ℂ ⊗[ℝ] SymmetricAlgebra ℝ (GaugeBoson.JetComponentSpace 𝔤))
 ```
 
-**`GaugeFieldData.ιConnection_apply`**, a lemma, [line 238](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/LocalField/Basic.lean#L238).
+**`GaugeFieldData.ιConnection_apply`**, a lemma, [line 238](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/LocalField/Basic.lean#L238).
 
 ```lean
 lemma ιConnection_apply (v : GaugeBoson.JetComponentSpace 𝔤) :
@@ -259,14 +259,14 @@ lemma ιConnection_apply (v : GaugeBoson.JetComponentSpace 𝔤) :
             SymmetricAlgebra.ι ℝ (GaugeBoson.JetComponentSpace 𝔤) v)
 ```
 
-**`GaugeFieldData.ιFermion_apply`**, a lemma, [line 244](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/LocalField/Basic.lean#L244).
+**`GaugeFieldData.ιFermion_apply`**, a lemma, [line 244](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/LocalField/Basic.lean#L244).
 
 ```lean
 lemma ιFermion_apply (i : T.FermionSpecies) (x : JetComponentSpace (T.fermion i)) :
     T.ιFermion i x = T.ιFermionTotal (T.inclFermion i x)
 ```
 
-**`GaugeFieldData.ιBoson_apply`**, a lemma, [line 247](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/LocalField/Basic.lean#L247).
+**`GaugeFieldData.ιBoson_apply`**, a lemma, [line 247](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/LocalField/Basic.lean#L247).
 
 ```lean
 lemma ιBoson_apply (j : T.BosonSpecies) (y : JetComponentSpace (T.boson j)) :
@@ -280,7 +280,7 @@ lemma ιBoson_apply (j : T.BosonSpecies) (y : JetComponentSpace (T.boson j)) :
 > first for the whole generator spaces, which is where Fermi statistics belongs, and then
 > read one species at a time.
 
-**`GaugeFieldData.ιFermionTotal_mul_self`**, a lemma, [line 264](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/LocalField/Basic.lean#L264).
+**`GaugeFieldData.ιFermionTotal_mul_self`**, a lemma, [line 264](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/LocalField/Basic.lean#L264).
 
 > A fermionic generator squares to zero. This is Fermi statistics, in the form that
 > implies anticommutation across the whole fermionic generator space by polarization.
@@ -290,7 +290,7 @@ lemma ιFermionTotal_mul_self (v : T.FermionGenerators) :
     T.ιFermionTotal v * T.ιFermionTotal v = 0
 ```
 
-**`GaugeFieldData.ιFermionTotal_mul_swap`**, a lemma, [line 271](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/LocalField/Basic.lean#L271).
+**`GaugeFieldData.ιFermionTotal_mul_swap`**, a lemma, [line 271](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/LocalField/Basic.lean#L271).
 
 > Two fermionic generators anticommute, including generators of two different species,
 > which share the one exterior algebra. This is not an extra relation, being
@@ -301,7 +301,7 @@ lemma ιFermionTotal_mul_swap (v w : T.FermionGenerators) :
     T.ιFermionTotal v * T.ιFermionTotal w = -(T.ιFermionTotal w * T.ιFermionTotal v)
 ```
 
-**`GaugeFieldData.ιBosonTotal_commute`**, a lemma, [line 279](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/LocalField/Basic.lean#L279).
+**`GaugeFieldData.ιBosonTotal_commute`**, a lemma, [line 279](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/LocalField/Basic.lean#L279).
 
 > Two bosonic generators commute.
 
@@ -310,7 +310,7 @@ lemma ιBosonTotal_commute (v w : T.BosonGenerators) :
     Commute (T.ιBosonTotal v) (T.ιBosonTotal w)
 ```
 
-**`GaugeFieldData.ιConnection_commute`**, a lemma, [line 284](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/LocalField/Basic.lean#L284).
+**`GaugeFieldData.ιConnection_commute`**, a lemma, [line 284](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/LocalField/Basic.lean#L284).
 
 > Two connection generators commute.
 
@@ -319,7 +319,7 @@ lemma ιConnection_commute (v w : GaugeBoson.JetComponentSpace 𝔤) :
     Commute (T.ιConnection v) (T.ιConnection w)
 ```
 
-**`GaugeFieldData.ιBosonTotal_commute_ιConnection`**, a lemma, [line 290](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/LocalField/Basic.lean#L290).
+**`GaugeFieldData.ιBosonTotal_commute_ιConnection`**, a lemma, [line 290](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/LocalField/Basic.lean#L290).
 
 > A bosonic generator commutes with a connection generator.
 
@@ -329,7 +329,7 @@ lemma ιBosonTotal_commute_ιConnection (v : T.BosonGenerators)
     Commute (T.ιBosonTotal v) (T.ιConnection w)
 ```
 
-**`GaugeFieldData.ιBosonTotal_commute_ιFermionTotal`**, a lemma, [line 297](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/LocalField/Basic.lean#L297).
+**`GaugeFieldData.ιBosonTotal_commute_ιFermionTotal`**, a lemma, [line 297](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/LocalField/Basic.lean#L297).
 
 > A bosonic generator commutes with a fermionic generator, bosons being even.
 
@@ -338,7 +338,7 @@ lemma ιBosonTotal_commute_ιFermionTotal (v : T.BosonGenerators) (w : T.Fermion
     Commute (T.ιBosonTotal v) (T.ιFermionTotal w)
 ```
 
-**`GaugeFieldData.ιConnection_commute_ιFermionTotal`**, a lemma, [line 304](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/LocalField/Basic.lean#L304).
+**`GaugeFieldData.ιConnection_commute_ιFermionTotal`**, a lemma, [line 304](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/LocalField/Basic.lean#L304).
 
 > A connection generator commutes with a fermionic generator, the connection being
 > even.
@@ -348,7 +348,7 @@ lemma ιConnection_commute_ιFermionTotal (v : GaugeBoson.JetComponentSpace 𝔤
     (w : T.FermionGenerators) : Commute (T.ιConnection v) (T.ιFermionTotal w)
 ```
 
-**`GaugeFieldData.includeConnection_commute`**, a lemma, [line 311](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/LocalField/Basic.lean#L311).
+**`GaugeFieldData.includeConnection_commute`**, a lemma, [line 311](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/LocalField/Basic.lean#L311).
 
 > The connection factor is central: its elements commute with the whole algebra, the
 > factor being commutative and tensored in as the right factor.
@@ -359,7 +359,7 @@ lemma includeConnection_commute
     Commute (T.includeConnection c) x
 ```
 
-**`GaugeFieldData.ιFermion_mul_self`**, a lemma, [line 318](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/LocalField/Basic.lean#L318).
+**`GaugeFieldData.ιFermion_mul_self`**, a lemma, [line 318](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/LocalField/Basic.lean#L318).
 
 > A fermionic generator of a species squares to zero.
 
@@ -368,7 +368,7 @@ lemma ιFermion_mul_self (i : T.FermionSpecies) (x : JetComponentSpace (T.fermio
     T.ιFermion i x * T.ιFermion i x = 0
 ```
 
-**`GaugeFieldData.ιFermion_mul_swap`**, a lemma, [line 326](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/LocalField/Basic.lean#L326).
+**`GaugeFieldData.ιFermion_mul_swap`**, a lemma, [line 326](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/LocalField/Basic.lean#L326).
 
 > The generators of two fermionic species of the datum anticommute. The species enter
 > one exterior algebra through different summands of the fermionic generator space, so this
@@ -381,7 +381,7 @@ lemma ιFermion_mul_swap (i j : T.FermionSpecies) (x : JetComponentSpace (T.ferm
     T.ιFermion i x * T.ιFermion j y = -(T.ιFermion j y * T.ιFermion i x)
 ```
 
-**`GaugeFieldData.ιBoson_commute`**, a lemma, [line 332](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/LocalField/Basic.lean#L332).
+**`GaugeFieldData.ιBoson_commute`**, a lemma, [line 332](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/LocalField/Basic.lean#L332).
 
 > Bosonic generators commute, across species as well as within one.
 
@@ -391,7 +391,7 @@ lemma ιBoson_commute (i j : T.BosonSpecies) (x : JetComponentSpace (T.boson i))
     Commute (T.ιBoson i x) (T.ιBoson j y)
 ```
 
-**`GaugeFieldData.ιBoson_commute_ιFermion`**, a lemma, [line 338](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/LocalField/Basic.lean#L338).
+**`GaugeFieldData.ιBoson_commute_ιFermion`**, a lemma, [line 338](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/LocalField/Basic.lean#L338).
 
 > A bosonic generator commutes with a fermionic one, bosons being even.
 
@@ -401,7 +401,7 @@ lemma ιBoson_commute_ιFermion (j : T.BosonSpecies) (i : T.FermionSpecies)
     Commute (T.ιBoson j y) (T.ιFermion i x)
 ```
 
-**`GaugeFieldData.ιBoson_commute_ιConnection`**, a lemma, [line 344](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/LocalField/Basic.lean#L344).
+**`GaugeFieldData.ιBoson_commute_ιConnection`**, a lemma, [line 344](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/LocalField/Basic.lean#L344).
 
 > A bosonic generator commutes with a connection generator.
 
@@ -411,7 +411,7 @@ lemma ιBoson_commute_ιConnection (j : T.BosonSpecies)
     Commute (T.ιBoson j y) (T.ιConnection v)
 ```
 
-**`GaugeFieldData.ιConnection_commute_ιFermion`**, a lemma, [line 350](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/LocalField/Basic.lean#L350).
+**`GaugeFieldData.ιConnection_commute_ιFermion`**, a lemma, [line 350](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/LocalField/Basic.lean#L350).
 
 > A connection generator commutes with a fermionic one, the connection being even.
 
@@ -423,7 +423,7 @@ lemma ιConnection_commute_ιFermion (v : GaugeBoson.JetComponentSpace 𝔤)
 
 ### A.3. Generation by the three families
 
-**`GaugeFieldData.generators`**, a def, [line 364](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/LocalField/Basic.lean#L364).
+**`GaugeFieldData.generators`**, a def, [line 364](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/LocalField/Basic.lean#L364).
 
 > The generators of the local field algebra, the images of the three generator spaces.
 
@@ -431,7 +431,7 @@ lemma ιConnection_commute_ιFermion (v : GaugeBoson.JetComponentSpace 𝔤)
 noncomputable def generators : Set T.LocalFieldAlgebra
 ```
 
-**`GaugeFieldData.adjoin_matter_generators_eq_top`**, a lemma, [line 369](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/LocalField/Basic.lean#L369).
+**`GaugeFieldData.adjoin_matter_generators_eq_top`**, a lemma, [line 369](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/LocalField/Basic.lean#L369).
 
 > The matter factor `Λ_ℂ E_f(T) ⊗[ℂ] Sym_ℂ E_b(T)` is generated by the images of the
 > fermionic and bosonic generators.
@@ -446,7 +446,7 @@ lemma adjoin_matter_generators_eq_top :
               SymmetricAlgebra.ι ℂ T.BosonGenerators v)) = ⊤
 ```
 
-**`GaugeFieldData.adjoin_generators_eq_top`**, a lemma, [line 390](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/LocalField/Basic.lean#L390).
+**`GaugeFieldData.adjoin_generators_eq_top`**, a lemma, [line 390](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/LocalField/Basic.lean#L390).
 
 > The local field algebra is generated by its three families of generators. Every
 > element is a polynomial in the fermionic, bosonic and connection symbols; this is the
@@ -457,7 +457,7 @@ lemma adjoin_matter_generators_eq_top :
 lemma adjoin_generators_eq_top : Algebra.adjoin ℂ T.generators = ⊤
 ```
 
-**`GaugeFieldData.algHom_ext_generators`**, a lemma, [line 411](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/LocalField/Basic.lean#L411).
+**`GaugeFieldData.algHom_ext_generators`**, a lemma, [line 411](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/LocalField/Basic.lean#L411).
 
 > Two algebra maps out of the local field algebra agreeing on the whole of the three
 > generator spaces are equal. The target is not assumed commutative, so this cannot be
@@ -471,7 +471,7 @@ lemma algHom_ext_generators {B : Type*} [Semiring B] [Algebra ℂ B]
     (ha : ∀ v, Φ (T.ιConnection v) = Ψ (T.ιConnection v)) : Φ = Ψ
 ```
 
-**`GaugeFieldData.algHom_ext`**, a lemma, [line 426](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/LocalField/Basic.lean#L426).
+**`GaugeFieldData.algHom_ext`**, a lemma, [line 426](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/LocalField/Basic.lean#L426).
 
 > Two algebra maps out of `J(T)` are equal as soon as they agree on the generators of
 > every species and on the connection generators. A linear map out of the fermionic
@@ -487,7 +487,7 @@ lemma algHom_ext {B : Type*} [Semiring B] [Algebra ℂ B] {Φ Ψ : T.LocalFieldA
 
 ## B. Compatible generator assignments
 
-**`GaugeFieldData.Assignment`**, a structure, [line 460](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/LocalField/Basic.lean#L460).
+**`GaugeFieldData.Assignment`**, a structure, [line 460](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/LocalField/Basic.lean#L460).
 
 > A compatible assignment of the generators of the local field algebra of a datum in a
 > complex algebra `B`, given by one linear map per fermionic species, one per bosonic
@@ -527,7 +527,7 @@ structure Assignment (B : Type*) [Ring B] [Algebra ℂ B] where
   connection_commute_fermion : ∀ v i x, Commute (connection v) (fermion i x)
 ```
 
-**`GaugeFieldData.assemble_mul_self_iff`**, a lemma, [line 489](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/LocalField/Basic.lean#L489).
+**`GaugeFieldData.assemble_mul_self_iff`**, a lemma, [line 489](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/LocalField/Basic.lean#L489).
 
 > Species-wise square-zero is not square-zero. The condition the local field algebra
 > imposes on the assembled fermionic map is equivalent to the two fields
@@ -549,7 +549,7 @@ lemma assemble_mul_self_iff {B : Type*} [Ring B] [Algebra ℂ B]
 > `PhyslibAlpha.Mathematics.AlgebraGeneration` supply that, the summands of the direct sum playing
 > the role of the generators.
 
-**`GaugeFieldData.Assignment.fermionTotal`**, a def, [line 514](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/LocalField/Basic.lean#L514).
+**`GaugeFieldData.Assignment.fermionTotal`**, a def, [line 514](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/LocalField/Basic.lean#L514).
 
 > The images of all the fermionic generators at once, assembled from the species.
 
@@ -557,7 +557,7 @@ lemma assemble_mul_self_iff {B : Type*} [Ring B] [Algebra ℂ B]
 def fermionTotal : T.FermionGenerators →ₗ[ℂ] B
 ```
 
-**`GaugeFieldData.Assignment.bosonTotal`**, a def, [line 518](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/LocalField/Basic.lean#L518).
+**`GaugeFieldData.Assignment.bosonTotal`**, a def, [line 518](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/LocalField/Basic.lean#L518).
 
 > The images of all the bosonic generators at once.
 
@@ -565,7 +565,7 @@ def fermionTotal : T.FermionGenerators →ₗ[ℂ] B
 def bosonTotal : T.BosonGenerators →ₗ[ℂ] B
 ```
 
-**`GaugeFieldData.Assignment.fermionTotal_inclFermion`**, a lemma, [line 522](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/LocalField/Basic.lean#L522).
+**`GaugeFieldData.Assignment.fermionTotal_inclFermion`**, a lemma, [line 522](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/LocalField/Basic.lean#L522).
 
 ```lean
 lemma fermionTotal_inclFermion (i : T.FermionSpecies)
@@ -573,14 +573,14 @@ lemma fermionTotal_inclFermion (i : T.FermionSpecies)
     d.fermionTotal (T.inclFermion i x) = d.fermion i x
 ```
 
-**`GaugeFieldData.Assignment.bosonTotal_inclBoson`**, a lemma, [line 528](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/LocalField/Basic.lean#L528).
+**`GaugeFieldData.Assignment.bosonTotal_inclBoson`**, a lemma, [line 528](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/LocalField/Basic.lean#L528).
 
 ```lean
 lemma bosonTotal_inclBoson (j : T.BosonSpecies) (y : JetComponentSpace (T.boson j)) :
     d.bosonTotal (T.inclBoson j y) = d.boson j y
 ```
 
-**`GaugeFieldData.Assignment.fermionTotal_mul_self`**, a lemma, [line 534](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/LocalField/Basic.lean#L534).
+**`GaugeFieldData.Assignment.fermionTotal_mul_self`**, a lemma, [line 534](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/LocalField/Basic.lean#L534).
 
 > The assembled fermionic images square to zero, which is more than the species-wise
 > condition and needs the cross-species anticommutation as well.
@@ -590,7 +590,7 @@ lemma fermionTotal_mul_self (v : T.FermionGenerators) :
     d.fermionTotal v * d.fermionTotal v = 0
 ```
 
-**`GaugeFieldData.Assignment.fermionTotal_mul_swap`**, a lemma, [line 542](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/LocalField/Basic.lean#L542).
+**`GaugeFieldData.Assignment.fermionTotal_mul_swap`**, a lemma, [line 542](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/LocalField/Basic.lean#L542).
 
 > The images of two fermionic generators anticommute. Only `fermion_mul_self` and
 > `fermion_mul_swap` are assumed, and only species by species; because their conjunction is
@@ -602,7 +602,7 @@ lemma fermionTotal_mul_swap (v w : T.FermionGenerators) :
     d.fermionTotal v * d.fermionTotal w = -(d.fermionTotal w * d.fermionTotal v)
 ```
 
-**`GaugeFieldData.Assignment.bosonTotal_commute`**, a lemma, [line 547](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/LocalField/Basic.lean#L547).
+**`GaugeFieldData.Assignment.bosonTotal_commute`**, a lemma, [line 547](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/LocalField/Basic.lean#L547).
 
 > The assembled bosonic images commute pairwise.
 
@@ -611,7 +611,7 @@ lemma bosonTotal_commute (v w : T.BosonGenerators) :
     Commute (d.bosonTotal v) (d.bosonTotal w)
 ```
 
-**`GaugeFieldData.Assignment.bosonTotal_commute_connection`**, a lemma, [line 554](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/LocalField/Basic.lean#L554).
+**`GaugeFieldData.Assignment.bosonTotal_commute_connection`**, a lemma, [line 554](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/LocalField/Basic.lean#L554).
 
 > The assembled bosonic images commute with the connection images.
 
@@ -620,7 +620,7 @@ lemma bosonTotal_commute_connection (v : T.BosonGenerators)
     (w : GaugeBoson.JetComponentSpace 𝔤) : Commute (d.bosonTotal v) (d.connection w)
 ```
 
-**`GaugeFieldData.Assignment.bosonTotal_commute_fermionTotal`**, a lemma, [line 561](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/LocalField/Basic.lean#L561).
+**`GaugeFieldData.Assignment.bosonTotal_commute_fermionTotal`**, a lemma, [line 561](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/LocalField/Basic.lean#L561).
 
 > The assembled bosonic images commute with the assembled fermionic images.
 
@@ -629,7 +629,7 @@ lemma bosonTotal_commute_fermionTotal (v : T.BosonGenerators) (w : T.FermionGene
     Commute (d.bosonTotal v) (d.fermionTotal w)
 ```
 
-**`GaugeFieldData.Assignment.connection_commute_fermionTotal`**, a lemma, [line 568](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/LocalField/Basic.lean#L568).
+**`GaugeFieldData.Assignment.connection_commute_fermionTotal`**, a lemma, [line 568](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/LocalField/Basic.lean#L568).
 
 > The connection images commute with the assembled fermionic images.
 
@@ -640,7 +640,7 @@ lemma connection_commute_fermionTotal (v : GaugeBoson.JetComponentSpace 𝔤)
 
 ### B.2. The commutative subalgebra of even images
 
-**`GaugeFieldData.Assignment.evenGenerators`**, a def, [line 581](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/LocalField/Basic.lean#L581).
+**`GaugeFieldData.Assignment.evenGenerators`**, a def, [line 581](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/LocalField/Basic.lean#L581).
 
 > The even generator images, the bosonic and connection images together.
 
@@ -648,7 +648,7 @@ lemma connection_commute_fermionTotal (v : GaugeBoson.JetComponentSpace 𝔤)
 def evenGenerators : Set B
 ```
 
-**`GaugeFieldData.Assignment.evenSubalgebra`**, a def, [line 586](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/LocalField/Basic.lean#L586).
+**`GaugeFieldData.Assignment.evenSubalgebra`**, a def, [line 586](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/LocalField/Basic.lean#L586).
 
 > The commutative subalgebra of `B` generated by the even images. The bosonic and
 > connection assignments are lifted into it, because `SymmetricAlgebra.lift` requires a
@@ -658,13 +658,13 @@ def evenGenerators : Set B
 def evenSubalgebra : Subalgebra ℂ B
 ```
 
-**An instance with no name**, [line 588](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/LocalField/Basic.lean#L588).
+**An instance with no name**, [line 588](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/LocalField/Basic.lean#L588).
 
 ```lean
 instance : IsMulCommutative d.evenSubalgebra
 ```
 
-**`GaugeFieldData.Assignment.bosonGenerator`**, a def, [line 599](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/LocalField/Basic.lean#L599).
+**`GaugeFieldData.Assignment.bosonGenerator`**, a def, [line 599](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/LocalField/Basic.lean#L599).
 
 > The bosonic assignment, corestricted to the commutative subalgebra of even images.
 
@@ -672,7 +672,7 @@ instance : IsMulCommutative d.evenSubalgebra
 def bosonGenerator : T.BosonGenerators →ₗ[ℂ] d.evenSubalgebra
 ```
 
-**`GaugeFieldData.Assignment.connectionGenerator`**, a def, [line 606](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/LocalField/Basic.lean#L606).
+**`GaugeFieldData.Assignment.connectionGenerator`**, a def, [line 606](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/LocalField/Basic.lean#L606).
 
 > The connection assignment, corestricted to the commutative subalgebra of even
 > images.
@@ -684,7 +684,7 @@ noncomputable def connectionGenerator :
 
 ### B.3. The three factor maps
 
-**`GaugeFieldData.Assignment.fermionHom`**, a def, [line 621](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/LocalField/Basic.lean#L621).
+**`GaugeFieldData.Assignment.fermionHom`**, a def, [line 621](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/LocalField/Basic.lean#L621).
 
 > The algebra map out of the fermionic factor, the exterior lift of the assembled
 > fermionic images, which already accepts an associative, possibly noncommutative,
@@ -694,7 +694,7 @@ noncomputable def connectionGenerator :
 noncomputable def fermionHom : ExteriorAlgebra ℂ T.FermionGenerators →ₐ[ℂ] B
 ```
 
-**`GaugeFieldData.Assignment.bosonHom`**, a def, [line 626](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/LocalField/Basic.lean#L626).
+**`GaugeFieldData.Assignment.bosonHom`**, a def, [line 626](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/LocalField/Basic.lean#L626).
 
 > The algebra map out of the bosonic factor, the symmetric lift into the commutative
 > subalgebra of even images, followed by its inclusion.
@@ -703,7 +703,7 @@ noncomputable def fermionHom : ExteriorAlgebra ℂ T.FermionGenerators →ₐ[�
 noncomputable def bosonHom : SymmetricAlgebra ℂ T.BosonGenerators →ₐ[ℂ] B
 ```
 
-**`GaugeFieldData.Assignment.connectionHomReal`**, a def, [line 630](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/LocalField/Basic.lean#L630).
+**`GaugeFieldData.Assignment.connectionHomReal`**, a def, [line 630](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/LocalField/Basic.lean#L630).
 
 > The real algebra map out of the real connection factor.
 
@@ -712,7 +712,7 @@ noncomputable def connectionHomReal :
     SymmetricAlgebra ℝ (GaugeBoson.JetComponentSpace 𝔤) →ₐ[ℝ] B
 ```
 
-**`GaugeFieldData.Assignment.connectionHom`**, a def, [line 638](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/LocalField/Basic.lean#L638).
+**`GaugeFieldData.Assignment.connectionHom`**, a def, [line 638](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/LocalField/Basic.lean#L638).
 
 > The algebra map out of the complexified connection factor, obtained from
 > `connectionHomReal` by the universal property of extension of scalars, which, unlike the
@@ -723,21 +723,21 @@ noncomputable def connectionHom :
     (ℂ ⊗[ℝ] SymmetricAlgebra ℝ (GaugeBoson.JetComponentSpace 𝔤)) →ₐ[ℂ] B
 ```
 
-**`GaugeFieldData.Assignment.fermionHom_ι`**, a lemma, [line 643](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/LocalField/Basic.lean#L643).
+**`GaugeFieldData.Assignment.fermionHom_ι`**, a lemma, [line 643](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/LocalField/Basic.lean#L643).
 
 ```lean
 lemma fermionHom_ι (v : T.FermionGenerators) :
     d.fermionHom (ExteriorAlgebra.ι ℂ v) = d.fermionTotal v
 ```
 
-**`GaugeFieldData.Assignment.bosonHom_ι`**, a lemma, [line 648](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/LocalField/Basic.lean#L648).
+**`GaugeFieldData.Assignment.bosonHom_ι`**, a lemma, [line 648](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/LocalField/Basic.lean#L648).
 
 ```lean
 lemma bosonHom_ι (v : T.BosonGenerators) :
     d.bosonHom (SymmetricAlgebra.ι ℂ T.BosonGenerators v) = d.bosonTotal v
 ```
 
-**`GaugeFieldData.Assignment.connectionHomReal_ι`**, a lemma, [line 653](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/LocalField/Basic.lean#L653).
+**`GaugeFieldData.Assignment.connectionHomReal_ι`**, a lemma, [line 653](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/LocalField/Basic.lean#L653).
 
 ```lean
 lemma connectionHomReal_ι (v : GaugeBoson.JetComponentSpace 𝔤) :
@@ -745,7 +745,7 @@ lemma connectionHomReal_ι (v : GaugeBoson.JetComponentSpace 𝔤) :
       = d.connection v
 ```
 
-**`GaugeFieldData.Assignment.connectionHom_tmul`**, a lemma, [line 659](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/LocalField/Basic.lean#L659).
+**`GaugeFieldData.Assignment.connectionHom_tmul`**, a lemma, [line 659](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/LocalField/Basic.lean#L659).
 
 ```lean
 lemma connectionHom_tmul (z : ℂ)
@@ -758,7 +758,7 @@ lemma connectionHom_tmul (z : ℂ)
 > The tensor-product lifts need commutation between whole factor images, which the
 > hypotheses supply only on generators. `Algebra.commute_of_adjoin_eq_top` propagates it.
 
-**`GaugeFieldData.Assignment.fermionHom_commute_bosonHom`**, a lemma, [line 672](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/LocalField/Basic.lean#L672).
+**`GaugeFieldData.Assignment.fermionHom_commute_bosonHom`**, a lemma, [line 672](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/LocalField/Basic.lean#L672).
 
 ```lean
 lemma fermionHom_commute_bosonHom (x : ExteriorAlgebra ℂ T.FermionGenerators)
@@ -766,7 +766,7 @@ lemma fermionHom_commute_bosonHom (x : ExteriorAlgebra ℂ T.FermionGenerators)
     Commute (d.fermionHom x) (d.bosonHom y)
 ```
 
-**`GaugeFieldData.Assignment.fermionHom_commute_connectionHom`**, a lemma, [line 682](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/LocalField/Basic.lean#L682).
+**`GaugeFieldData.Assignment.fermionHom_commute_connectionHom`**, a lemma, [line 682](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/LocalField/Basic.lean#L682).
 
 ```lean
 lemma fermionHom_commute_connectionHom (x : ExteriorAlgebra ℂ T.FermionGenerators)
@@ -774,7 +774,7 @@ lemma fermionHom_commute_connectionHom (x : ExteriorAlgebra ℂ T.FermionGenerat
     Commute (d.fermionHom x) (d.connectionHom y)
 ```
 
-**`GaugeFieldData.Assignment.bosonHom_commute_connectionHom`**, a lemma, [line 697](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/LocalField/Basic.lean#L697).
+**`GaugeFieldData.Assignment.bosonHom_commute_connectionHom`**, a lemma, [line 697](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/LocalField/Basic.lean#L697).
 
 ```lean
 lemma bosonHom_commute_connectionHom (x : SymmetricAlgebra ℂ T.BosonGenerators)
@@ -786,7 +786,7 @@ lemma bosonHom_commute_connectionHom (x : SymmetricAlgebra ℂ T.BosonGenerators
 
 ### C.1. The induced algebra homomorphism
 
-**`GaugeFieldData.Assignment.matterHom`**, a def, [line 725](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/LocalField/Basic.lean#L725).
+**`GaugeFieldData.Assignment.matterHom`**, a def, [line 725](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/LocalField/Basic.lean#L725).
 
 > The algebra map out of the matter factor `Λ_ℂ E_f(T) ⊗[ℂ] Sym_ℂ E_b(T)`.
 
@@ -796,7 +796,7 @@ noncomputable def matterHom :
       B
 ```
 
-**`GaugeFieldData.Assignment.matterHom_commute_connectionHom`**, a lemma, [line 730](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/LocalField/Basic.lean#L730).
+**`GaugeFieldData.Assignment.matterHom_commute_connectionHom`**, a lemma, [line 730](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/LocalField/Basic.lean#L730).
 
 ```lean
 lemma matterHom_commute_connectionHom
@@ -805,7 +805,7 @@ lemma matterHom_commute_connectionHom
     Commute (d.matterHom x) (d.connectionHom y)
 ```
 
-**`GaugeFieldData.Assignment.lift`**, a def, [line 743](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/LocalField/Basic.lean#L743).
+**`GaugeFieldData.Assignment.lift`**, a def, [line 743](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/LocalField/Basic.lean#L743).
 
 > The realization arrow of the datum: the algebra homomorphism `J(T) →ₐ[ℂ] B` induced by
 > a compatible assignment.
@@ -814,35 +814,35 @@ lemma matterHom_commute_connectionHom
 noncomputable def lift : T.LocalFieldAlgebra →ₐ[ℂ] B
 ```
 
-**`GaugeFieldData.Assignment.lift_ιFermionTotal`**, a lemma, [line 747](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/LocalField/Basic.lean#L747).
+**`GaugeFieldData.Assignment.lift_ιFermionTotal`**, a lemma, [line 747](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/LocalField/Basic.lean#L747).
 
 ```lean
 lemma lift_ιFermionTotal (v : T.FermionGenerators) :
     d.lift (T.ιFermionTotal v) = d.fermionTotal v
 ```
 
-**`GaugeFieldData.Assignment.lift_ιBosonTotal`**, a lemma, [line 752](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/LocalField/Basic.lean#L752).
+**`GaugeFieldData.Assignment.lift_ιBosonTotal`**, a lemma, [line 752](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/LocalField/Basic.lean#L752).
 
 ```lean
 lemma lift_ιBosonTotal (v : T.BosonGenerators) :
     d.lift (T.ιBosonTotal v) = d.bosonTotal v
 ```
 
-**`GaugeFieldData.Assignment.lift_ιConnection`**, a lemma, [line 757](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/LocalField/Basic.lean#L757).
+**`GaugeFieldData.Assignment.lift_ιConnection`**, a lemma, [line 757](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/LocalField/Basic.lean#L757).
 
 ```lean
 lemma lift_ιConnection (v : GaugeBoson.JetComponentSpace 𝔤) :
     d.lift (T.ιConnection v) = d.connection v
 ```
 
-**`GaugeFieldData.Assignment.lift_ιFermion`**, a lemma, [line 762](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/LocalField/Basic.lean#L762).
+**`GaugeFieldData.Assignment.lift_ιFermion`**, a lemma, [line 762](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/LocalField/Basic.lean#L762).
 
 ```lean
 lemma lift_ιFermion (i : T.FermionSpecies) (x : JetComponentSpace (T.fermion i)) :
     d.lift (T.ιFermion i x) = d.fermion i x
 ```
 
-**`GaugeFieldData.Assignment.lift_ιBoson`**, a lemma, [line 767](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/LocalField/Basic.lean#L767).
+**`GaugeFieldData.Assignment.lift_ιBoson`**, a lemma, [line 767](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/LocalField/Basic.lean#L767).
 
 ```lean
 lemma lift_ιBoson (j : T.BosonSpecies) (y : JetComponentSpace (T.boson j)) :
@@ -851,7 +851,7 @@ lemma lift_ιBoson (j : T.BosonSpecies) (y : JetComponentSpace (T.boson j)) :
 
 ### C.2. Uniqueness
 
-**`GaugeFieldData.Assignment.existsUnique_algHom`**, a lemma, [line 782](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/LocalField/Basic.lean#L782).
+**`GaugeFieldData.Assignment.existsUnique_algHom`**, a lemma, [line 782](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/LocalField/Basic.lean#L782).
 
 > The mapping-out universal property of the local field algebra of a datum. A compatible
 > assignment of the generators of every species, and of the connection, in an arbitrary, in
@@ -869,7 +869,7 @@ lemma existsUnique_algHom :
 
 ### C.3. Assignments are the same thing as algebra maps
 
-**`GaugeFieldData.Assignment.comp`**, a def, [line 800](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/LocalField/Basic.lean#L800).
+**`GaugeFieldData.Assignment.comp`**, a def, [line 800](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/LocalField/Basic.lean#L800).
 
 > The compatible assignment obtained by pushing one forward along an algebra map, every
 > relation being preserved by an algebra homomorphism.
@@ -879,7 +879,7 @@ noncomputable def comp {C : Type*} [Ring C] [Algebra ℂ C] (φ : B →ₐ[ℂ] 
     T.Assignment C
 ```
 
-**`GaugeFieldData.canonicalAssignment`**, a def, [line 819](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/LocalField/Basic.lean#L819).
+**`GaugeFieldData.canonicalAssignment`**, a def, [line 819](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/LocalField/Basic.lean#L819).
 
 > The tautological assignment, with the generators of the local field algebra assigned to
 > themselves. Its relations are those of section A.2.
@@ -888,7 +888,7 @@ noncomputable def comp {C : Type*} [Ring C] [Algebra ℂ C] (φ : B →ₐ[ℂ] 
 noncomputable def canonicalAssignment : T.Assignment T.LocalFieldAlgebra
 ```
 
-**`GaugeFieldData.liftEquiv`**, a def, [line 834](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/LocalField/Basic.lean#L834).
+**`GaugeFieldData.liftEquiv`**, a def, [line 834](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/LocalField/Basic.lean#L834).
 
 > Compatible assignments in `B` are the same thing as algebra maps into `B`. This is the
 > universal property as an equivalence of types rather than a linear equivalence, neither
@@ -901,7 +901,7 @@ noncomputable def liftEquiv (B : Type*) [Ring B] [Algebra ℂ B] :
 
 ### C.4. The range of the induced map
 
-**`GaugeFieldData.Assignment.range_lift`**, a lemma, [line 862](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/LocalField/Basic.lean#L862).
+**`GaugeFieldData.Assignment.range_lift`**, a lemma, [line 862](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/LocalField/Basic.lean#L862).
 
 > The range of the induced map is the complex subalgebra generated by the images of the
 > species and of the connection. No injectivity is claimed or required, since a realization
@@ -926,4 +926,4 @@ lemma range_lift :
 
 ## Sources
 
-- [PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/LocalField/Basic.lean at 2a1dfe43](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/LocalField/Basic.lean)
+- [PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/LocalField/Basic.lean at 8c87bdfb](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/LocalField/Basic.lean)

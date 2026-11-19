@@ -8,7 +8,7 @@ proof: formalized
 
 # The invariant content of the Standard Model
 
-The module `PhyslibAlpha.Particles.StandardModel.CovRealization.MassWeight.Invariants`, [PhyslibAlpha/Particles/StandardModel/CovRealization/MassWeight/Invariants.lean](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/CovRealization/MassWeight/Invariants.lean): 33 declarations, 33 with a docstring.
+The module `PhyslibAlpha.Particles.StandardModel.CovRealization.MassWeight.Invariants`, [PhyslibAlpha/Particles/StandardModel/CovRealization/MassWeight/Invariants.lean](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/CovRealization/MassWeight/Invariants.lean): 33 declarations, 33 with a docstring.
 
 ## i. Overview
 
@@ -73,7 +73,7 @@ The module `PhyslibAlpha.Particles.StandardModel.CovRealization.MassWeight.Invar
 
 ## A. The span of the Standard Model Lagrangian
 
-**`StandardModel.CovAlgebraRealization.standardModelSpan`**, a def, [line 122](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/CovRealization/MassWeight/Invariants.lean#L122).
+**`StandardModel.CovAlgebraRealization.standardModelSpan`**, a def, [line 122](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/CovRealization/MassWeight/Invariants.lean#L122).
 
 > The gauge- and Lorentz-invariant content of the Standard Model at mass weight `w`:
 > the join of the surviving spans of the eight sectors. At weight eight it is the gauge
@@ -91,7 +91,7 @@ The module `PhyslibAlpha.Particles.StandardModel.CovRealization.MassWeight.Invar
 noncomputable def standardModelSpan (w : ℕ) : Submodule ℂ B
 ```
 
-**`StandardModel.CovAlgebraRealization.standardModelSpan_eight`**, a lemma, [line 131](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/CovRealization/MassWeight/Invariants.lean#L131).
+**`StandardModel.CovAlgebraRealization.standardModelSpan_eight`**, a lemma, [line 131](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/CovRealization/MassWeight/Invariants.lean#L131).
 
 > At mass weight eight the span is the gauge, Higgs, fermion and Yukawa spans
 > together.
@@ -103,7 +103,7 @@ lemma standardModelSpan_eight :
       ⊔ (h.isFermionSector.kineticSpan ⊔ h.yukawaSpan)
 ```
 
-**`StandardModel.CovAlgebraRealization.standardModelSpan_four`**, a lemma, [line 139](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/CovRealization/MassWeight/Invariants.lean#L139).
+**`StandardModel.CovAlgebraRealization.standardModelSpan_four`**, a lemma, [line 139](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/CovRealization/MassWeight/Invariants.lean#L139).
 
 > At mass weight four the span is the line through the Higgs mass term `H† H`, the one
 > invariant of the Standard Model below mass dimension four.
@@ -112,7 +112,7 @@ lemma standardModelSpan_eight :
 lemma standardModelSpan_four : h.standardModelSpan 4 = h.isHiggsSector.dotSpan 0 0
 ```
 
-**`StandardModel.CovAlgebraRealization.standardModelSpan_eq_bot`**, a lemma, [line 146](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/CovRealization/MassWeight/Invariants.lean#L146).
+**`StandardModel.CovAlgebraRealization.standardModelSpan_eq_bot`**, a lemma, [line 146](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/CovRealization/MassWeight/Invariants.lean#L146).
 
 > At every mass weight other than four and eight the span is trivial: apart from the
 > Higgs mass term there is no Standard-Model term below mass dimension four.
@@ -140,7 +140,7 @@ lemma standardModelSpan_eq_bot {w : ℕ} (hw : w ≠ 8) (hw4 : w ≠ 4) :
 > realization through `AlgebraRealization.toCovAlgebraRealization`. Nothing is said about the
 > gluon and `W` components, whose covariant derivatives do not commute.
 
-**`StandardModel.CovAlgebraRealization.hyperchargeDeriv_comp_swap_zero_one`**, a lemma, [line 175](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/CovRealization/MassWeight/Invariants.lean#L175).
+**`StandardModel.CovAlgebraRealization.hyperchargeDeriv_comp_swap_zero_one`**, a lemma, [line 175](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/CovRealization/MassWeight/Invariants.lean#L175).
 
 > The twice-derived hypercharge field strengths are symmetric in their two derivative
 > slots.
@@ -150,7 +150,7 @@ lemma hyperchargeDeriv_comp_swap_zero_one (d : IsGaugeSector.EightIdx) :
     h.isGaugeSector.hyperchargeDeriv (d ∘ Equiv.swap 0 1) = h.isGaugeSector.hyperchargeDeriv d
 ```
 
-**`StandardModel.CovAlgebraRealization.hyperchargeDeriv_contractionTensor_one`**, a lemma, [line 189](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/CovRealization/MassWeight/Invariants.lean#L189).
+**`StandardModel.CovAlgebraRealization.hyperchargeDeriv_contractionTensor_one`**, a lemma, [line 189](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/CovRealization/MassWeight/Invariants.lean#L189).
 
 > `η^{μρ} η^{νσ} ∇_μ ∇_ν B_{ρσ} = 0`: a symmetric pair of derivatives contracted against the
 > antisymmetric pair of field-strength indices.
@@ -160,7 +160,7 @@ lemma hyperchargeDeriv_contractionTensor_one :
     ofComponents h.isGaugeSector.hyperchargeDeriv (RankFour.contractionTensor 1) = 0
 ```
 
-**`StandardModel.CovAlgebraRealization.hyperchargeDeriv_contractionTensor_three`**, a lemma, [line 197](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/CovRealization/MassWeight/Invariants.lean#L197).
+**`StandardModel.CovAlgebraRealization.hyperchargeDeriv_contractionTensor_three`**, a lemma, [line 197](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/CovRealization/MassWeight/Invariants.lean#L197).
 
 > `ε^{μνρσ} ∇_μ ∇_ν B_{ρσ} = 0`: a symmetric pair of derivatives contracted against the
 > antisymmetric symbol.
@@ -170,7 +170,7 @@ lemma hyperchargeDeriv_contractionTensor_three :
     ofComponents h.isGaugeSector.hyperchargeDeriv (RankFour.contractionTensor 3) = 0
 ```
 
-**`StandardModel.CovAlgebraRealization.isGaugeSector_lorentzContractionEightSpan_eq_traceFamilies`**, a lemma, [line 209](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/CovRealization/MassWeight/Invariants.lean#L209).
+**`StandardModel.CovAlgebraRealization.isGaugeSector_lorentzContractionEightSpan_eq_traceFamilies`**, a lemma, [line 209](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/CovRealization/MassWeight/Invariants.lean#L209).
 
 > The gauge contribution at mass weight eight is spanned by the Lorentz contractions of the
 > three trace families alone: for each of `gluonTrace`, `wTrace` and `hyperchargeTrace`, the
@@ -192,7 +192,7 @@ lemma isGaugeSector_lorentzContractionEightSpan_eq_traceFamilies :
 
 ## B. The span is made of invariants of the right weight
 
-**`StandardModel.CovAlgebraRealization.isGaugeSector_massWeightSubmodule_le`**, a lemma, [line 229](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/CovRealization/MassWeight/Invariants.lean#L229).
+**`StandardModel.CovAlgebraRealization.isGaugeSector_massWeightSubmodule_le`**, a lemma, [line 229](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/CovRealization/MassWeight/Invariants.lean#L229).
 
 > At a non-zero weight the gauge sector's mass-weight submodule sits inside the
 > covariant model's, being the `{gauge}` piece of the sector decomposition there.
@@ -202,7 +202,7 @@ lemma isGaugeSector_massWeightSubmodule_le {w : ℕ} (hw : w ≠ 0) :
     h.isGaugeSector.massWeightSubmodule w ≤ h.massWeightSubmodule w
 ```
 
-**`StandardModel.CovAlgebraRealization.isHiggsSector_massWeightSubmodule_le`**, a lemma, [line 236](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/CovRealization/MassWeight/Invariants.lean#L236).
+**`StandardModel.CovAlgebraRealization.isHiggsSector_massWeightSubmodule_le`**, a lemma, [line 236](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/CovRealization/MassWeight/Invariants.lean#L236).
 
 > At a non-zero weight the Higgs sector's mass-weight submodule sits inside the
 > covariant model's.
@@ -212,7 +212,7 @@ lemma isHiggsSector_massWeightSubmodule_le {w : ℕ} (hw : w ≠ 0) :
     h.isHiggsSector.massWeightSubmodule w ≤ h.massWeightSubmodule w
 ```
 
-**`StandardModel.CovAlgebraRealization.isFermionSector_massWeightSubmodule_le`**, a lemma, [line 243](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/CovRealization/MassWeight/Invariants.lean#L243).
+**`StandardModel.CovAlgebraRealization.isFermionSector_massWeightSubmodule_le`**, a lemma, [line 243](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/CovRealization/MassWeight/Invariants.lean#L243).
 
 > At a non-zero weight the fermion sector's mass-weight submodule sits inside the
 > covariant model's.
@@ -222,7 +222,7 @@ lemma isFermionSector_massWeightSubmodule_le {w : ℕ} (hw : w ≠ 0) :
     h.isFermionSector.massWeightSubmodule w ≤ h.massWeightSubmodule w
 ```
 
-**`StandardModel.CovAlgebraRealization.standardModelSpan_le_massWeightSubmodule`**, a lemma, [line 250](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/CovRealization/MassWeight/Invariants.lean#L250).
+**`StandardModel.CovAlgebraRealization.standardModelSpan_le_massWeightSubmodule`**, a lemma, [line 250](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/CovRealization/MassWeight/Invariants.lean#L250).
 
 > The span at weight `w` has mass weight `w`: each of its contributions is a
 > combination of words of that weight.
@@ -232,7 +232,7 @@ lemma standardModelSpan_le_massWeightSubmodule (w : ℕ) :
     h.standardModelSpan w ≤ h.massWeightSubmodule w
 ```
 
-**`StandardModel.CovAlgebraRealization.isFixedBy_standardModelSpan`**, a lemma, [line 275](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/CovRealization/MassWeight/Invariants.lean#L275).
+**`StandardModel.CovAlgebraRealization.isFixedBy_standardModelSpan`**, a lemma, [line 275](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/CovRealization/MassWeight/Invariants.lean#L275).
 
 > The span at weight `w` is fixed pointwise by the gauge and Lorentz groups together:
 > every one of its contributions is a span of invariants. This is the easy direction of
@@ -244,7 +244,7 @@ lemma isFixedBy_standardModelSpan (w : ℕ) :
     IsFixedBy (gaugeLorentzMaps repGauge repLorentz) (h.standardModelSpan w)
 ```
 
-**`StandardModel.CovAlgebraRealization.repGauge_of_mem_standardModelSpan`**, a lemma, [line 285](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/CovRealization/MassWeight/Invariants.lean#L285).
+**`StandardModel.CovAlgebraRealization.repGauge_of_mem_standardModelSpan`**, a lemma, [line 285](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/CovRealization/MassWeight/Invariants.lean#L285).
 
 > Every element of the span at weight `w` is a gauge invariant.
 
@@ -253,7 +253,7 @@ lemma repGauge_of_mem_standardModelSpan (w : ℕ) (g : GaugeGroupI) {y : B}
     (hy : y ∈ h.standardModelSpan w) : repGauge g y = y
 ```
 
-**`StandardModel.CovAlgebraRealization.repLorentz_of_mem_standardModelSpan`**, a lemma, [line 290](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/CovRealization/MassWeight/Invariants.lean#L290).
+**`StandardModel.CovAlgebraRealization.repLorentz_of_mem_standardModelSpan`**, a lemma, [line 290](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/CovRealization/MassWeight/Invariants.lean#L290).
 
 > Every element of the span at weight `w` is a Lorentz invariant.
 
@@ -264,7 +264,7 @@ lemma repLorentz_of_mem_standardModelSpan (w : ℕ) (Λ : SL(2,ℂ)) {y : B}
 
 ## C. Each sector reduces to the span
 
-**`StandardModel.CovAlgebraRealization.reducesInvariantsTo_sectorMassWeight_empty`**, a lemma, [line 302](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/CovRealization/MassWeight/Invariants.lean#L302).
+**`StandardModel.CovAlgebraRealization.reducesInvariantsTo_sectorMassWeight_empty`**, a lemma, [line 302](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/CovRealization/MassWeight/Invariants.lean#L302).
 
 > The empty sector reduces to the span: away from weight zero it is trivial, its only word
 > being the empty one.
@@ -275,7 +275,7 @@ lemma reducesInvariantsTo_sectorMassWeight_empty {w : ℕ} (hw : w ≠ 0) :
       (h.standardModelSpan w)
 ```
 
-**`StandardModel.CovAlgebraRealization.reducesInvariantsTo_sectorMassWeight_gauge`**, a lemma, [line 310](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/CovRealization/MassWeight/Invariants.lean#L310).
+**`StandardModel.CovAlgebraRealization.reducesInvariantsTo_sectorMassWeight_gauge`**, a lemma, [line 310](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/CovRealization/MassWeight/Invariants.lean#L310).
 
 > The gauge sector reduces to the span: at weight eight to the four Lorentz contractions of
 > its four families, two of each spanning, below it to nothing at all.
@@ -286,7 +286,7 @@ lemma reducesInvariantsTo_sectorMassWeight_gauge {w : ℕ} (hw0 : 0 < w) (hw : w
       (h.sectorMassWeight {GeneratorClass.gauge} w) (h.standardModelSpan w)
 ```
 
-**`StandardModel.CovAlgebraRealization.reducesInvariantsTo_sectorMassWeight_higgs`**, a lemma, [line 325](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/CovRealization/MassWeight/Invariants.lean#L325).
+**`StandardModel.CovAlgebraRealization.reducesInvariantsTo_sectorMassWeight_higgs`**, a lemma, [line 325](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/CovRealization/MassWeight/Invariants.lean#L325).
 
 > The Higgs sector reduces to the span: at weight eight to the two box terms, the kinetic
 > term and the quartic potential, at weight four to the Higgs mass term, and elsewhere to
@@ -298,7 +298,7 @@ lemma reducesInvariantsTo_sectorMassWeight_higgs {w : ℕ} (hw0 : 0 < w) (hw : w
       (h.sectorMassWeight {GeneratorClass.higgs} w) (h.standardModelSpan w)
 ```
 
-**`StandardModel.CovAlgebraRealization.reducesInvariantsTo_sectorMassWeight_fermion`**, a lemma, [line 338](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/CovRealization/MassWeight/Invariants.lean#L338).
+**`StandardModel.CovAlgebraRealization.reducesInvariantsTo_sectorMassWeight_fermion`**, a lemma, [line 338](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/CovRealization/MassWeight/Invariants.lean#L338).
 
 > The fermion sector reduces to the span: at weight eight to the ten kinetic terms over the
 > nine family pairs, below it to nothing — there is no Dirac mass term.
@@ -309,7 +309,7 @@ lemma reducesInvariantsTo_sectorMassWeight_fermion {w : ℕ} (hw0 : 0 < w) (hw :
       (h.sectorMassWeight {GeneratorClass.fermion} w) (h.standardModelSpan w)
 ```
 
-**`StandardModel.CovAlgebraRealization.reducesInvariantsTo_sectorMassWeight_higgs_fermion`**, a lemma, [line 355](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/CovRealization/MassWeight/Invariants.lean#L355).
+**`StandardModel.CovAlgebraRealization.reducesInvariantsTo_sectorMassWeight_higgs_fermion`**, a lemma, [line 355](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/CovRealization/MassWeight/Invariants.lean#L355).
 
 > The Yukawa sector reduces to the span: at weight eight to the six Yukawa couplings over the
 > nine family pairs, below it to nothing.
@@ -321,7 +321,7 @@ lemma reducesInvariantsTo_sectorMassWeight_higgs_fermion {w : ℕ} (hw : w ≤ 8
       (h.standardModelSpan w)
 ```
 
-**`StandardModel.CovAlgebraRealization.reducesInvariantsTo_sectorMassWeight_gauge_higgs`**, a lemma, [line 369](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/CovRealization/MassWeight/Invariants.lean#L369).
+**`StandardModel.CovAlgebraRealization.reducesInvariantsTo_sectorMassWeight_gauge_higgs`**, a lemma, [line 369](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/CovRealization/MassWeight/Invariants.lean#L369).
 
 > The gauge-Higgs sector reduces to nothing: it carries no Lorentz invariant below weight
 > nine.
@@ -333,7 +333,7 @@ lemma reducesInvariantsTo_sectorMassWeight_gauge_higgs {w : ℕ} (hw : w ≤ 8) 
       (h.standardModelSpan w)
 ```
 
-**`StandardModel.CovAlgebraRealization.reducesInvariantsTo_sectorMassWeight_gauge_fermion`**, a lemma, [line 379](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/CovRealization/MassWeight/Invariants.lean#L379).
+**`StandardModel.CovAlgebraRealization.reducesInvariantsTo_sectorMassWeight_gauge_fermion`**, a lemma, [line 379](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/CovRealization/MassWeight/Invariants.lean#L379).
 
 > The gauge-fermion sector reduces to nothing: it carries no Lorentz invariant below weight
 > nine.
@@ -345,7 +345,7 @@ lemma reducesInvariantsTo_sectorMassWeight_gauge_fermion {w : ℕ} (hw : w ≤ 8
       (h.standardModelSpan w)
 ```
 
-**`StandardModel.CovAlgebraRealization.reducesInvariantsTo_sectorMassWeight_mixed`**, a lemma, [line 388](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/CovRealization/MassWeight/Invariants.lean#L388).
+**`StandardModel.CovAlgebraRealization.reducesInvariantsTo_sectorMassWeight_mixed`**, a lemma, [line 388](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/CovRealization/MassWeight/Invariants.lean#L388).
 
 > The mixed sector reduces to nothing: it is trivial below weight nine.
 
@@ -359,7 +359,7 @@ lemma reducesInvariantsTo_sectorMassWeight_mixed {w : ℕ} (hw : w ≤ 8) :
 
 ## D. Joining the eight sectors
 
-**`StandardModel.CovAlgebraRealization.isStableUnder_sectorMassWeight`**, a lemma, [line 404](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/CovRealization/MassWeight/Invariants.lean#L404).
+**`StandardModel.CovAlgebraRealization.isStableUnder_sectorMassWeight`**, a lemma, [line 404](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/CovRealization/MassWeight/Invariants.lean#L404).
 
 > Every weight part of every sector is carried into itself by both groups: the stability
 > the join of the reductions asks of its summands.
@@ -369,7 +369,7 @@ lemma isStableUnder_sectorMassWeight (T : Finset GeneratorClass) (w : ℕ) :
     IsStableUnder (gaugeLorentzMaps repGauge repLorentz) (h.sectorMassWeight T w)
 ```
 
-**`StandardModel.CovAlgebraRealization.reducesInvariantsTo_sectorMassWeight`**, a lemma, [line 412](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/CovRealization/MassWeight/Invariants.lean#L412).
+**`StandardModel.CovAlgebraRealization.reducesInvariantsTo_sectorMassWeight`**, a lemma, [line 412](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/CovRealization/MassWeight/Invariants.lean#L412).
 
 > Every sector reduces to the span, at every weight from one to eight. The three
 > constructors of `GeneratorClass` give eight class sets, and section C treats each.
@@ -381,7 +381,7 @@ lemma reducesInvariantsTo_sectorMassWeight {w : ℕ} (hw0 : 0 < w) (hw : w ≤ 8
       (h.standardModelSpan w)
 ```
 
-**`StandardModel.CovAlgebraRealization.reducesInvariantsTo_massWeightSubmodule`**, a lemma, [line 438](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/CovRealization/MassWeight/Invariants.lean#L438).
+**`StandardModel.CovAlgebraRealization.reducesInvariantsTo_massWeightSubmodule`**, a lemma, [line 438](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/CovRealization/MassWeight/Invariants.lean#L438).
 
 > The whole weight-`w` submodule reduces to the span, for `w` from one to eight. The
 > mass-weight submodule is the join of the eight sectors' weight-`w` parts, each of them
@@ -397,7 +397,7 @@ lemma reducesInvariantsTo_massWeightSubmodule {w : ℕ} (hw0 : 0 < w) (hw : w �
 
 ## E. The classification at mass dimension at most four
 
-**`StandardModel.CovAlgebraRealization.mem_massWeightSubmodule_sup_and_gauge_lorentz_invariant_iff`**, a lemma, [line 460](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/CovRealization/MassWeight/Invariants.lean#L460).
+**`StandardModel.CovAlgebraRealization.mem_massWeightSubmodule_sup_and_gauge_lorentz_invariant_iff`**, a lemma, [line 460](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/CovRealization/MassWeight/Invariants.lean#L460).
 
 > The classification of the Standard Model at mass dimension at most four as an
 > equivalence, in the shape every sector uses: an element of `massWeightSubmodule w ⊔ S`
@@ -420,7 +420,7 @@ lemma mem_massWeightSubmodule_sup_and_gauge_lorentz_invariant_iff (w : ℕ) (hw0
           ∧ x - y ∈ h.standardModelSpan w
 ```
 
-**`StandardModel.CovAlgebraRealization.exists_mem_standardModelSpan_of_gauge_and_lorentz_invariant`**, a lemma, [line 477](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/CovRealization/MassWeight/Invariants.lean#L477).
+**`StandardModel.CovAlgebraRealization.exists_mem_standardModelSpan_of_gauge_and_lorentz_invariant`**, a lemma, [line 477](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/CovRealization/MassWeight/Invariants.lean#L477).
 
 > The gauge and Lorentz invariants of mass weight `w` for `0 < w ≤ 8`, modulo a
 > submodule `S` stable under both groups: such an invariant is a combination of the
@@ -440,7 +440,7 @@ lemma exists_mem_standardModelSpan_of_gauge_and_lorentz_invariant (w : ℕ)
       ∧ x - y ∈ h.standardModelSpan w
 ```
 
-**`StandardModel.CovAlgebraRealization.mem_massWeightSubmodule_sup_and_gauge_lorentz_invariant_iff_mem`**, a lemma, [line 493](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/CovRealization/MassWeight/Invariants.lean#L493).
+**`StandardModel.CovAlgebraRealization.mem_massWeightSubmodule_sup_and_gauge_lorentz_invariant_iff_mem`**, a lemma, [line 493](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/CovRealization/MassWeight/Invariants.lean#L493).
 
 > The same classification without the existential: at every weight from one to eight an
 > element of `massWeightSubmodule w ⊔ S` fixed by both groups is an element of the
@@ -459,7 +459,7 @@ lemma mem_massWeightSubmodule_sup_and_gauge_lorentz_invariant_iff_mem (w : ℕ)
 
 ## F. The Standard Model Lagrangian
 
-**`StandardModel.CovAlgebraRealization.mem_massWeightSubmodule_eight_sup_and_gauge_lorentz_invariant_iff_lagrangian`**, a lemma, [line 528](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/CovRealization/MassWeight/Invariants.lean#L528).
+**`StandardModel.CovAlgebraRealization.mem_massWeightSubmodule_eight_sup_and_gauge_lorentz_invariant_iff_lagrangian`**, a lemma, [line 528](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/CovRealization/MassWeight/Invariants.lean#L528).
 
 > The invariant content of the Standard Model at mass dimension four. An element of
 > `massWeightSubmodule 8 ⊔ S`, for `S` a submodule stable under both groups, is fixed by
@@ -491,7 +491,7 @@ lemma mem_massWeightSubmodule_eight_sup_and_gauge_lorentz_invariant_iff_lagrangi
               ⊔ (h.isFermionSector.kineticSpan ⊔ h.yukawaSpan)
 ```
 
-**`StandardModel.CovAlgebraRealization.mem_massWeightSubmodule_eight_sup_and_gauge_lorentz_invariant_iff_lagrangian_traceFamilies`**, a lemma, [line 550](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/CovRealization/MassWeight/Invariants.lean#L550).
+**`StandardModel.CovAlgebraRealization.mem_massWeightSubmodule_eight_sup_and_gauge_lorentz_invariant_iff_lagrangian_traceFamilies`**, a lemma, [line 550](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/CovRealization/MassWeight/Invariants.lean#L550).
 
 > The invariant content of the Standard Model at mass dimension four with the gauge
 > contribution written through the Lorentz contractions of the three trace families alone:
@@ -521,7 +521,7 @@ lemma mem_massWeightSubmodule_eight_sup_and_gauge_lorentz_invariant_iff_lagrangi
               ⊔ (h.isFermionSector.kineticSpan ⊔ h.yukawaSpan)
 ```
 
-**`StandardModel.CovAlgebraRealization.mem_of_gauge_and_lorentz_invariant_massWeightSubmodule_sup`**, a lemma, [line 573](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/CovRealization/MassWeight/Invariants.lean#L573).
+**`StandardModel.CovAlgebraRealization.mem_of_gauge_and_lorentz_invariant_massWeightSubmodule_sup`**, a lemma, [line 573](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/CovRealization/MassWeight/Invariants.lean#L573).
 
 > Below mass dimension two there is nothing at all, and at mass dimension two only the
 > Higgs mass term: at every weight from one to seven other than four an element of
@@ -537,7 +537,7 @@ lemma mem_of_gauge_and_lorentz_invariant_massWeightSubmodule_sup (w : ℕ) (hw0 
     (hL : ∀ g : SL(2,ℂ), repLorentz g x = x) : x ∈ S
 ```
 
-**`StandardModel.CovAlgebraRealization.mem_massWeightSubmodule_four_sup_and_gauge_lorentz_invariant_iff_higgsMass`**, a lemma, [line 587](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/CovRealization/MassWeight/Invariants.lean#L587).
+**`StandardModel.CovAlgebraRealization.mem_massWeightSubmodule_four_sup_and_gauge_lorentz_invariant_iff_higgsMass`**, a lemma, [line 587](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/CovRealization/MassWeight/Invariants.lean#L587).
 
 > At mass dimension two the only invariant of the Standard Model is the Higgs mass term
 > `H† H`: an element of `massWeightSubmodule 4 ⊔ S` fixed by both groups is a multiple of
@@ -572,4 +572,4 @@ lemma mem_massWeightSubmodule_four_sup_and_gauge_lorentz_invariant_iff_higgsMass
 
 ## Sources
 
-- [PhyslibAlpha/Particles/StandardModel/CovRealization/MassWeight/Invariants.lean at 2a1dfe43](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/CovRealization/MassWeight/Invariants.lean)
+- [PhyslibAlpha/Particles/StandardModel/CovRealization/MassWeight/Invariants.lean at 8c87bdfb](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/CovRealization/MassWeight/Invariants.lean)

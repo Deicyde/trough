@@ -8,7 +8,7 @@ proof: formalized
 
 # The gauge weight decomposition of the Higgs sector
 
-The module `PhyslibAlpha.Particles.StandardModel.Realization.HiggsCov.DerivSubmodule.GaugeWeight`, [PhyslibAlpha/Particles/StandardModel/Realization/HiggsCov/DerivSubmodule/GaugeWeight.lean](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/Realization/HiggsCov/DerivSubmodule/GaugeWeight.lean): 2 declarations, 2 with a docstring.
+The module `PhyslibAlpha.Particles.StandardModel.Realization.HiggsCov.DerivSubmodule.GaugeWeight`, [PhyslibAlpha/Particles/StandardModel/Realization/HiggsCov/DerivSubmodule/GaugeWeight.lean](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/Realization/HiggsCov/DerivSubmodule/GaugeWeight.lean): 2 declarations, 2 with a docstring.
 
 ## i. Overview
 
@@ -29,7 +29,7 @@ The module `PhyslibAlpha.Particles.StandardModel.Realization.HiggsCov.DerivSubmo
 
 ## A. The gauge weight decomposition
 
-**`StandardModel.HiggsAlgebraCovRealization.derivSubmoduleGaugeWeight`**, an instance, [line 64](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/Realization/HiggsCov/DerivSubmodule/GaugeWeight.lean#L64).
+**`StandardModel.HiggsAlgebraCovRealization.derivSubmoduleGaugeWeight`**, an instance, [line 64](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/Realization/HiggsCov/DerivSubmodule/GaugeWeight.lean#L64).
 
 > **The gauge weight decomposition of the Higgs derivative submodules**: the join of
 > the decompositions of the Higgs and conjugate-Higgs submodules, whose weights are
@@ -43,7 +43,7 @@ noncomputable instance derivSubmoduleGaugeWeight (n : ℕ) :
     GaugeWeightDecomposition rep (h.derivSubmodule n)
 ```
 
-**`StandardModel.HiggsAlgebraCovRealization.derivSubmoduleGaugeWeight_supp`**, a lemma, [line 73](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/Realization/HiggsCov/DerivSubmodule/GaugeWeight.lean#L73).
+**`StandardModel.HiggsAlgebraCovRealization.derivSubmoduleGaugeWeight_supp`**, a lemma, [line 73](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/Realization/HiggsCov/DerivSubmodule/GaugeWeight.lean#L73).
 
 > The gauge weights occurring in the Higgs derivative submodules: the two Higgs
 > weights `(0, 0, ∓1, -3)` and the two conjugate-Higgs weights `(0, 0, ±1, 3)`.
@@ -60,4 +60,4 @@ lemma derivSubmoduleGaugeWeight_supp (n : ℕ) :
 
 ## Sources
 
-- [PhyslibAlpha/Particles/StandardModel/Realization/HiggsCov/DerivSubmodule/GaugeWeight.lean at 2a1dfe43](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/Realization/HiggsCov/DerivSubmodule/GaugeWeight.lean)
+- [PhyslibAlpha/Particles/StandardModel/Realization/HiggsCov/DerivSubmodule/GaugeWeight.lean at 8c87bdfb](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/Realization/HiggsCov/DerivSubmodule/GaugeWeight.lean)

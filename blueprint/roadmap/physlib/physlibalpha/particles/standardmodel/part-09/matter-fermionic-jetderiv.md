@@ -8,7 +8,7 @@ proof: formalized
 
 # The formal total derivative on the fermionic algebra
 
-The module `PhyslibAlpha.Particles.StandardModel.Matter.Fermionic.JetDeriv`, [PhyslibAlpha/Particles/StandardModel/Matter/Fermionic/JetDeriv.lean](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/Matter/Fermionic/JetDeriv.lean): 29 declarations, 19 with a docstring.
+The module `PhyslibAlpha.Particles.StandardModel.Matter.Fermionic.JetDeriv`, [PhyslibAlpha/Particles/StandardModel/Matter/Fermionic/JetDeriv.lean](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/Matter/Fermionic/JetDeriv.lean): 29 declarations, 19 with a docstring.
 
 ## i. Overview
 
@@ -45,7 +45,7 @@ The module `PhyslibAlpha.Particles.StandardModel.Matter.Fermionic.JetDeriv`, [Ph
 > fermionic algebra as an even derivation: `∂_μ (x y) = (∂_μ x) y + x (∂_μ y)`, with no
 > Koszul signs.
 
-**`StandardModel.FermionicAlgebra.jetDerivGen`**, a def, [line 74](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/Matter/Fermionic/JetDeriv.lean#L74).
+**`StandardModel.FermionicAlgebra.jetDerivGen`**, a def, [line 74](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/Matter/Fermionic/JetDeriv.lean#L74).
 
 > The generator map of the total derivative into the trivial square-zero extension of the
 > fermionic algebra: `ι x ↦ (ι x, ι (∂_μ x))`.
@@ -55,21 +55,21 @@ noncomputable def jetDerivGen (μ : Fin 1 ⊕ Fin 3) :
     JetComponentSpace M →ₗ[ℂ] TrivSqZeroExt (FermionicAlgebra M) (FermionicAlgebra M)
 ```
 
-**`StandardModel.FermionicAlgebra.jetDerivGen_fst`**, a lemma, [line 86](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/Matter/Fermionic/JetDeriv.lean#L86).
+**`StandardModel.FermionicAlgebra.jetDerivGen_fst`**, a lemma, [line 86](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/Matter/Fermionic/JetDeriv.lean#L86).
 
 ```lean
 lemma jetDerivGen_fst (μ : Fin 1 ⊕ Fin 3) (x : JetComponentSpace M) :
     (jetDerivGen μ x).fst = ExteriorAlgebra.ι ℂ x
 ```
 
-**`StandardModel.FermionicAlgebra.jetDerivGen_snd`**, a lemma, [line 90](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/Matter/Fermionic/JetDeriv.lean#L90).
+**`StandardModel.FermionicAlgebra.jetDerivGen_snd`**, a lemma, [line 90](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/Matter/Fermionic/JetDeriv.lean#L90).
 
 ```lean
 lemma jetDerivGen_snd (μ : Fin 1 ⊕ Fin 3) (x : JetComponentSpace M) :
     (jetDerivGen μ x).snd = ExteriorAlgebra.ι ℂ (JetComponentSpace.jetDeriv μ x)
 ```
 
-**`StandardModel.FermionicAlgebra.jetDerivGen_mul_self`**, a lemma, [line 95](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/Matter/Fermionic/JetDeriv.lean#L95).
+**`StandardModel.FermionicAlgebra.jetDerivGen_mul_self`**, a lemma, [line 95](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/Matter/Fermionic/JetDeriv.lean#L95).
 
 > The generator map squares to zero: degree-one elements of the exterior algebra
 > anticommute.
@@ -79,7 +79,7 @@ lemma jetDerivGen_mul_self (μ : Fin 1 ⊕ Fin 3) (x : JetComponentSpace M) :
     jetDerivGen μ x * jetDerivGen μ x = 0
 ```
 
-**`StandardModel.FermionicAlgebra.jetDerivHom`**, a def, [line 106](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/Matter/Fermionic/JetDeriv.lean#L106).
+**`StandardModel.FermionicAlgebra.jetDerivHom`**, a def, [line 106](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/Matter/Fermionic/JetDeriv.lean#L106).
 
 > The lift of the total derivative to the trivial square-zero extension of the fermionic
 > algebra: the algebra homomorphism `x ↦ (x, ∂_μ x)`.
@@ -89,14 +89,14 @@ noncomputable def jetDerivHom (μ : Fin 1 ⊕ Fin 3) :
     FermionicAlgebra M →ₐ[ℂ] TrivSqZeroExt (FermionicAlgebra M) (FermionicAlgebra M)
 ```
 
-**`StandardModel.FermionicAlgebra.jetDerivHom_ι`**, a lemma, [line 111](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/Matter/Fermionic/JetDeriv.lean#L111).
+**`StandardModel.FermionicAlgebra.jetDerivHom_ι`**, a lemma, [line 111](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/Matter/Fermionic/JetDeriv.lean#L111).
 
 ```lean
 lemma jetDerivHom_ι (μ : Fin 1 ⊕ Fin 3) (x : JetComponentSpace M) :
     jetDerivHom μ (ExteriorAlgebra.ι ℂ x) = jetDerivGen μ x
 ```
 
-**`StandardModel.FermionicAlgebra.jetDerivHom_fst`**, a lemma, [line 117](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/Matter/Fermionic/JetDeriv.lean#L117).
+**`StandardModel.FermionicAlgebra.jetDerivHom_fst`**, a lemma, [line 117](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/Matter/Fermionic/JetDeriv.lean#L117).
 
 > The first component of the square-zero lift is the identity.
 
@@ -105,7 +105,7 @@ lemma jetDerivHom_fst (μ : Fin 1 ⊕ Fin 3) (x : FermionicAlgebra M) :
     (jetDerivHom μ x).fst = x
 ```
 
-**`StandardModel.FermionicAlgebra.jetDeriv`**, a def, [line 128](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/Matter/Fermionic/JetDeriv.lean#L128).
+**`StandardModel.FermionicAlgebra.jetDeriv`**, a def, [line 128](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/Matter/Fermionic/JetDeriv.lean#L128).
 
 > The formal total spacetime derivative on the fermionic algebra of a `V`-valued matter
 > field in the direction `μ`: the even derivation extending the shift
@@ -116,14 +116,14 @@ noncomputable def jetDeriv (μ : Fin 1 ⊕ Fin 3) :
     FermionicAlgebra M →ₗ[ℂ] FermionicAlgebra M
 ```
 
-**`StandardModel.FermionicAlgebra.jetDeriv_apply`**, a lemma, [line 134](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/Matter/Fermionic/JetDeriv.lean#L134).
+**`StandardModel.FermionicAlgebra.jetDeriv_apply`**, a lemma, [line 134](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/Matter/Fermionic/JetDeriv.lean#L134).
 
 ```lean
 lemma jetDeriv_apply (μ : Fin 1 ⊕ Fin 3) (x : FermionicAlgebra M) :
     jetDeriv μ x = (jetDerivHom μ x).snd
 ```
 
-**`StandardModel.FermionicAlgebra.jetDeriv_ι`**, a lemma, [line 139](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/Matter/Fermionic/JetDeriv.lean#L139).
+**`StandardModel.FermionicAlgebra.jetDeriv_ι`**, a lemma, [line 139](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/Matter/Fermionic/JetDeriv.lean#L139).
 
 > On a component function the total derivative is the shift of the derivative label.
 
@@ -133,20 +133,20 @@ lemma jetDeriv_ι (μ : Fin 1 ⊕ Fin 3) (x : JetComponentSpace M) :
       ExteriorAlgebra.ι ℂ (JetComponentSpace.jetDeriv μ x)
 ```
 
-**`StandardModel.FermionicAlgebra.jetDeriv_one`**, a lemma, [line 145](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/Matter/Fermionic/JetDeriv.lean#L145).
+**`StandardModel.FermionicAlgebra.jetDeriv_one`**, a lemma, [line 145](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/Matter/Fermionic/JetDeriv.lean#L145).
 
 ```lean
 lemma jetDeriv_one (μ : Fin 1 ⊕ Fin 3) : jetDeriv (M := M) μ (1 : FermionicAlgebra M) = 0
 ```
 
-**`StandardModel.FermionicAlgebra.jetDeriv_algebraMap`**, a lemma, [line 149](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/Matter/Fermionic/JetDeriv.lean#L149).
+**`StandardModel.FermionicAlgebra.jetDeriv_algebraMap`**, a lemma, [line 149](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/Matter/Fermionic/JetDeriv.lean#L149).
 
 ```lean
 lemma jetDeriv_algebraMap (μ : Fin 1 ⊕ Fin 3) (r : ℂ) :
     jetDeriv (M := M) μ (algebraMap ℂ (FermionicAlgebra M) r) = 0
 ```
 
-**`StandardModel.FermionicAlgebra.jetDeriv_mul`**, a lemma, [line 155](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/Matter/Fermionic/JetDeriv.lean#L155).
+**`StandardModel.FermionicAlgebra.jetDeriv_mul`**, a lemma, [line 155](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/Matter/Fermionic/JetDeriv.lean#L155).
 
 > The total derivative is an even derivation: the Leibniz rule holds on the fermionic
 > algebra with no Koszul signs.
@@ -156,7 +156,7 @@ lemma jetDeriv_mul (μ : Fin 1 ⊕ Fin 3) (x y : FermionicAlgebra M) :
     jetDeriv μ (x * y) = jetDeriv μ x * y + x * jetDeriv μ y
 ```
 
-**`StandardModel.FermionicAlgebra.jetDeriv_comm_apply`**, a lemma, [line 165](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/Matter/Fermionic/JetDeriv.lean#L165).
+**`StandardModel.FermionicAlgebra.jetDeriv_comm_apply`**, a lemma, [line 165](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/Matter/Fermionic/JetDeriv.lean#L165).
 
 > **Mixed partials agree.** The derivative labels live in a *symmetric* algebra, so the
 > total derivatives in different directions commute.
@@ -166,7 +166,7 @@ lemma jetDeriv_comm_apply (μ ν : Fin 1 ⊕ Fin 3) (x : FermionicAlgebra M) :
     jetDeriv μ (jetDeriv ν x) = jetDeriv ν (jetDeriv μ x)
 ```
 
-**`StandardModel.FermionicAlgebra.jetDeriv_comm`**, a lemma, [line 178](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/Matter/Fermionic/JetDeriv.lean#L178).
+**`StandardModel.FermionicAlgebra.jetDeriv_comm`**, a lemma, [line 178](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/Matter/Fermionic/JetDeriv.lean#L178).
 
 ```lean
 lemma jetDeriv_comm (μ ν : Fin 1 ⊕ Fin 3) :
@@ -175,7 +175,7 @@ lemma jetDeriv_comm (μ ν : Fin 1 ⊕ Fin 3) :
 
 ## B. The iterated total derivative
 
-**`StandardModel.FermionicAlgebra.iteratedJetDeriv`**, a def, [line 191](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/Matter/Fermionic/JetDeriv.lean#L191).
+**`StandardModel.FermionicAlgebra.iteratedJetDeriv`**, a def, [line 191](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/Matter/Fermionic/JetDeriv.lean#L191).
 
 > The iterated total derivative `∂_s = ∂_{ν₁} ⋯ ∂_{νₙ}` along a multiset `s` of
 > directions. It is well defined on a multiset — i.e. independent of the order in which the
@@ -186,7 +186,7 @@ noncomputable def iteratedJetDeriv (s : Multiset (Fin 1 ⊕ Fin 3)) :
     FermionicAlgebra M →ₗ[ℂ] FermionicAlgebra M
 ```
 
-**`StandardModel.FermionicAlgebra.iteratedJetDeriv_zero`**, a lemma, [line 196](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/Matter/Fermionic/JetDeriv.lean#L196).
+**`StandardModel.FermionicAlgebra.iteratedJetDeriv_zero`**, a lemma, [line 196](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/Matter/Fermionic/JetDeriv.lean#L196).
 
 ```lean
 lemma iteratedJetDeriv_zero :
@@ -194,14 +194,14 @@ lemma iteratedJetDeriv_zero :
       = LinearMap.id (R := ℂ) (M := FermionicAlgebra M)
 ```
 
-**`StandardModel.FermionicAlgebra.iteratedJetDeriv_cons`**, a lemma, [line 201](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/Matter/Fermionic/JetDeriv.lean#L201).
+**`StandardModel.FermionicAlgebra.iteratedJetDeriv_cons`**, a lemma, [line 201](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/Matter/Fermionic/JetDeriv.lean#L201).
 
 ```lean
 lemma iteratedJetDeriv_cons (μ : Fin 1 ⊕ Fin 3) (s : Multiset (Fin 1 ⊕ Fin 3)) :
     iteratedJetDeriv (M := M) (μ ::ₘ s) = (jetDeriv μ).comp (iteratedJetDeriv s)
 ```
 
-**`StandardModel.FermionicAlgebra.iteratedJetDeriv_cons'`**, a lemma, [line 206](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/Matter/Fermionic/JetDeriv.lean#L206).
+**`StandardModel.FermionicAlgebra.iteratedJetDeriv_cons'`**, a lemma, [line 206](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/Matter/Fermionic/JetDeriv.lean#L206).
 
 > The companion of `iteratedJetDeriv_cons`, peeling the extra derivative on the inside.
 
@@ -210,14 +210,14 @@ lemma iteratedJetDeriv_cons' (μ : Fin 1 ⊕ Fin 3) (s : Multiset (Fin 1 ⊕ Fin
     iteratedJetDeriv (M := M) (μ ::ₘ s) = (iteratedJetDeriv s).comp (jetDeriv μ)
 ```
 
-**`StandardModel.FermionicAlgebra.iteratedJetDeriv_singleton`**, a lemma, [line 211](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/Matter/Fermionic/JetDeriv.lean#L211).
+**`StandardModel.FermionicAlgebra.iteratedJetDeriv_singleton`**, a lemma, [line 211](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/Matter/Fermionic/JetDeriv.lean#L211).
 
 ```lean
 lemma iteratedJetDeriv_singleton (μ : Fin 1 ⊕ Fin 3) :
     iteratedJetDeriv (M := M) {μ} = jetDeriv μ
 ```
 
-**`StandardModel.FermionicAlgebra.iteratedJetDeriv_add`**, a lemma, [line 217](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/Matter/Fermionic/JetDeriv.lean#L217).
+**`StandardModel.FermionicAlgebra.iteratedJetDeriv_add`**, a lemma, [line 217](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/Matter/Fermionic/JetDeriv.lean#L217).
 
 > The iterated derivative is additive in the multiset of directions: differentiating
 > along `s + t` is differentiating along `t` and then along `s`.
@@ -228,7 +228,7 @@ lemma iteratedJetDeriv_add (s t : Multiset (Fin 1 ⊕ Fin 3)) :
       = (iteratedJetDeriv s).comp (iteratedJetDeriv t)
 ```
 
-**`StandardModel.FermionicAlgebra.iteratedJetDeriv_mul`**, a lemma, [line 225](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/Matter/Fermionic/JetDeriv.lean#L225).
+**`StandardModel.FermionicAlgebra.iteratedJetDeriv_mul`**, a lemma, [line 225](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/Matter/Fermionic/JetDeriv.lean#L225).
 
 > **The all-orders Leibniz rule.** The iterated derivative of a product distributes over
 > the antidiagonal of the multiset of directions: each way of splitting the derivatives
@@ -241,7 +241,7 @@ lemma iteratedJetDeriv_mul (s : Multiset (Fin 1 ⊕ Fin 3)) (x y : FermionicAlge
         iteratedJetDeriv p.1 x * iteratedJetDeriv p.2 y).sum
 ```
 
-**`StandardModel.FermionicAlgebra.iteratedJetDeriv_one_of_ne_zero`**, a lemma, [line 232](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/Matter/Fermionic/JetDeriv.lean#L232).
+**`StandardModel.FermionicAlgebra.iteratedJetDeriv_one_of_ne_zero`**, a lemma, [line 232](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/Matter/Fermionic/JetDeriv.lean#L232).
 
 > A nonempty iterated derivative kills the constants.
 
@@ -250,7 +250,7 @@ lemma iteratedJetDeriv_one_of_ne_zero {s : Multiset (Fin 1 ⊕ Fin 3)} (hs : s �
     iteratedJetDeriv (M := M) s (1 : FermionicAlgebra M) = 0
 ```
 
-**`StandardModel.FermionicAlgebra.iteratedJetDeriv_ι`**, a lemma, [line 242](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/Matter/Fermionic/JetDeriv.lean#L242).
+**`StandardModel.FermionicAlgebra.iteratedJetDeriv_ι`**, a lemma, [line 242](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/Matter/Fermionic/JetDeriv.lean#L242).
 
 > **On a component function the iterated derivative is the derivative symbol `∂_s`.**
 > Both halves of the component space — the field and its conjugate — are multiplied by the
@@ -269,7 +269,7 @@ lemma iteratedJetDeriv_ι (s : Multiset (Fin 1 ⊕ Fin 3)) (x : JetComponentSpac
 
 ## C. Generation by the field and its derivatives
 
-**`StandardModel.FermionicAlgebra.iteratedJetDeriv_ofField`**, a lemma, [line 284](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/Matter/Fermionic/JetDeriv.lean#L284).
+**`StandardModel.FermionicAlgebra.iteratedJetDeriv_ofField`**, a lemma, [line 284](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/Matter/Fermionic/JetDeriv.lean#L284).
 
 > The iterated derivative of the field is the generator carrying the derivative symbol
 > `∂_s`: applying `∂_s` to `ψ_φ` writes the label `s` into the derivative factor.
@@ -280,7 +280,7 @@ lemma iteratedJetDeriv_ofField (s : Multiset (Fin 1 ⊕ Fin 3)) (φ : Module.Dua
       ExteriorAlgebra.ι ℂ ((SpaceTimeDerivAlgebraℂ.basis s ⊗ₜ[ℂ] φ, 0) : JetComponentSpace M)
 ```
 
-**`StandardModel.FermionicAlgebra.iteratedJetDeriv_ofConjField`**, a lemma, [line 296](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/Matter/Fermionic/JetDeriv.lean#L296).
+**`StandardModel.FermionicAlgebra.iteratedJetDeriv_ofConjField`**, a lemma, [line 296](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/Matter/Fermionic/JetDeriv.lean#L296).
 
 > The iterated derivative of the conjugate field is the conjugate generator carrying the
 > derivative symbol `∂_s`.
@@ -292,7 +292,7 @@ lemma iteratedJetDeriv_ofConjField (s : Multiset (Fin 1 ⊕ Fin 3))
       ExteriorAlgebra.ι ℂ ((0, SpaceTimeDerivAlgebraℂ.basis s ⊗ₜ[ℂ] φ) : JetComponentSpace M)
 ```
 
-**`StandardModel.FermionicAlgebra.adjoin_iteratedJetDeriv_eq_top`**, a lemma, [line 316](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/Matter/Fermionic/JetDeriv.lean#L316).
+**`StandardModel.FermionicAlgebra.adjoin_iteratedJetDeriv_eq_top`**, a lemma, [line 316](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/Matter/Fermionic/JetDeriv.lean#L316).
 
 > **The fermionic algebra is generated by the field, its conjugate, and their
 > derivatives.** As a `ℂ`-algebra, `FermionicAlgebra M` is the algebra adjoined by the
@@ -317,7 +317,7 @@ lemma adjoin_iteratedJetDeriv_eq_top :
 
 ## D. Compatibility with the inclusion of a species
 
-**`StandardModel.FermionicAlgebra.comap_jetDeriv`**, a lemma, [line 389](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/Matter/Fermionic/JetDeriv.lean#L389).
+**`StandardModel.FermionicAlgebra.comap_jetDeriv`**, a lemma, [line 389](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/Matter/Fermionic/JetDeriv.lean#L389).
 
 > **The inclusion of a species is a map of differential algebras.** Pulling back along a
 > map of target spaces commutes with the total derivative: the two act on different labels
@@ -328,7 +328,7 @@ lemma comap_jetDeriv (f : M.V →ₗ[ℂ] N.V) (μ : Fin 1 ⊕ Fin 3) (x : Fermi
     comap f (jetDeriv μ x) = jetDeriv μ (comap f x)
 ```
 
-**`StandardModel.FermionicAlgebra.comap_iteratedJetDeriv`**, a lemma, [line 402](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/Matter/Fermionic/JetDeriv.lean#L402).
+**`StandardModel.FermionicAlgebra.comap_iteratedJetDeriv`**, a lemma, [line 402](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/Matter/Fermionic/JetDeriv.lean#L402).
 
 > The inclusion of a species commutes with the iterated total derivative.
 
@@ -344,4 +344,4 @@ lemma comap_iteratedJetDeriv (f : M.V →ₗ[ℂ] N.V) (s : Multiset (Fin 1 ⊕ 
 
 ## Sources
 
-- [PhyslibAlpha/Particles/StandardModel/Matter/Fermionic/JetDeriv.lean at 2a1dfe43](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/Matter/Fermionic/JetDeriv.lean)
+- [PhyslibAlpha/Particles/StandardModel/Matter/Fermionic/JetDeriv.lean at 8c87bdfb](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/Matter/Fermionic/JetDeriv.lean)

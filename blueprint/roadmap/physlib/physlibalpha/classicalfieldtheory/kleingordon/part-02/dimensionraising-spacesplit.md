@@ -8,7 +8,7 @@ proof: formalized
 
 # Splitting off two space dimensions
 
-The module `PhyslibAlpha.ClassicalFieldTheory.KleinGordon.DimensionRaising.SpaceSplit`, [PhyslibAlpha/ClassicalFieldTheory/KleinGordon/DimensionRaising/SpaceSplit.lean](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/KleinGordon/DimensionRaising/SpaceSplit.lean): 10 declarations, 8 with a docstring.
+The module `PhyslibAlpha.ClassicalFieldTheory.KleinGordon.DimensionRaising.SpaceSplit`, [PhyslibAlpha/ClassicalFieldTheory/KleinGordon/DimensionRaising/SpaceSplit.lean](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/KleinGordon/DimensionRaising/SpaceSplit.lean): 10 declarations, 8 with a docstring.
 
 > `Space (d + 2)` is isometric to the Euclidean product of `Space d` and the plane.
 
@@ -49,7 +49,7 @@ The module `PhyslibAlpha.ClassicalFieldTheory.KleinGordon.DimensionRaising.Space
 > - `Eucl3` : the Euclidean three-space as a product of the line and the plane.
 > - `spaceThree` : `Space 3` is isometric to the Euclidean three-space.
 
-**`KleinGordon.transportSource`**, a def, [line 76](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/KleinGordon/DimensionRaising/SpaceSplit.lean#L76).
+**`KleinGordon.transportSource`**, a def, [line 76](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/KleinGordon/DimensionRaising/SpaceSplit.lean#L76).
 
 > A source on time and `W` pulled back along an isometry `V ≃ W` of space.
 
@@ -58,14 +58,14 @@ def transportSource (A : V ≃ₗᵢ[ℝ] W) :
     𝓓((⊤ : Opens (ℝ × W)), ℂ) →L[ℝ] 𝓓((⊤ : Opens (ℝ × V)), ℂ)
 ```
 
-**`KleinGordon.transportSource_apply`**, a lemma, [line 83](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/KleinGordon/DimensionRaising/SpaceSplit.lean#L83).
+**`KleinGordon.transportSource_apply`**, a lemma, [line 83](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/KleinGordon/DimensionRaising/SpaceSplit.lean#L83).
 
 ```lean
 lemma transportSource_apply (A : V ≃ₗᵢ[ℝ] W) (ψ : 𝓓((⊤ : Opens (ℝ × W)), ℂ)) (s : ℝ) (x : V) :
     transportSource A ψ (s, x) = ψ (s, A x)
 ```
 
-**`KleinGordon.slice_transportSource`**, a lemma, [line 88](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/KleinGordon/DimensionRaising/SpaceSplit.lean#L88).
+**`KleinGordon.slice_transportSource`**, a lemma, [line 88](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/KleinGordon/DimensionRaising/SpaceSplit.lean#L88).
 
 ```lean
 lemma slice_transportSource (A : V ≃ₗᵢ[ℝ] W) (ψ : 𝓓((⊤ : Opens (ℝ × W)), ℂ)) (s : ℝ) :
@@ -73,7 +73,7 @@ lemma slice_transportSource (A : V ≃ₗᵢ[ℝ] W) (ψ : 𝓓((⊤ : Opens (�
       SchwartzMap.compCLMOfContinuousLinearEquiv ℂ A.toContinuousLinearEquiv (slice ℂ ψ s)
 ```
 
-**`KleinGordon.solution_transportSource`**, a lemma, [line 93](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/KleinGordon/DimensionRaising/SpaceSplit.lean#L93).
+**`KleinGordon.solution_transportSource`**, a lemma, [line 93](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/KleinGordon/DimensionRaising/SpaceSplit.lean#L93).
 
 > **The retarded solution commutes with isometries of space.**
 
@@ -83,7 +83,7 @@ lemma solution_transportSource {μ : ℝ} (hμ : 0 ≤ μ) (A : V ≃ₗᵢ[ℝ]
     solution ℂ (transportSource A ψ) μ t x = solution ℂ ψ μ t (A x)
 ```
 
-**`KleinGordon.spaceSplit`**, a def, [line 104](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/KleinGordon/DimensionRaising/SpaceSplit.lean#L104).
+**`KleinGordon.spaceSplit`**, a def, [line 104](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/KleinGordon/DimensionRaising/SpaceSplit.lean#L104).
 
 > `Space (d + 2)` is isometric to the Euclidean product of `Space d` and the plane.
 
@@ -92,7 +92,7 @@ def spaceSplit (d : ℕ) :
     Space (d + 2) ≃ₗᵢ[ℝ] WithLp 2 (Space d × EuclideanSpace ℝ (Fin 2))
 ```
 
-**`KleinGordon.hasDerivAt_solution_radial_space`**, a lemma, [line 116](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/KleinGordon/DimensionRaising/SpaceSplit.lean#L116).
+**`KleinGordon.hasDerivAt_solution_radial_space`**, a lemma, [line 116](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/KleinGordon/DimensionRaising/SpaceSplit.lean#L116).
 
 > **Dimension raising on `Space (d + 2)`.** Let `ψ'` be a source on time and `Space (d + 2)` that
 > is radial in space at each time and let `ψb` be its integral over the plane. The massive retarded
@@ -111,7 +111,7 @@ lemma hasDerivAt_solution_radial_space {μ : ℝ} (hμ : 0 ≤ μ) (d : ℕ)
         solution ℂ ψ' μ t ((spaceSplit d).symm (WithLp.toLp 2 (ρ • e, 0)))) ρ
 ```
 
-**`KleinGordon.hasDerivAt_sineEvolution_radial_space`**, a lemma, [line 135](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/KleinGordon/DimensionRaising/SpaceSplit.lean#L135).
+**`KleinGordon.hasDerivAt_sineEvolution_radial_space`**, a lemma, [line 135](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/KleinGordon/DimensionRaising/SpaceSplit.lean#L135).
 
 > **Dimension raising on the slices of `Space (d + 2)`.**
 
@@ -126,7 +126,7 @@ lemma hasDerivAt_sineEvolution_radial_space {μ : ℝ} (hμ : 0 ≤ μ) (d : ℕ
         sineEvolution ℂ r μ g' ((spaceSplit d).symm (WithLp.toLp 2 (ρ • e, 0)))) ρ
 ```
 
-**`KleinGordon.hasDerivAt_retardedResponse_radial`**, a lemma, [line 154](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/KleinGordon/DimensionRaising/SpaceSplit.lean#L154).
+**`KleinGordon.hasDerivAt_retardedResponse_radial`**, a lemma, [line 154](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/KleinGordon/DimensionRaising/SpaceSplit.lean#L154).
 
 > **Dimension raising for the retarded response on spacetime.** The sources are transported to
 > time and space by `sourceEquiv`.
@@ -143,7 +143,7 @@ lemma hasDerivAt_retardedResponse_radial {μ : ℝ} (hμ : 0 ≤ μ) (d : ℕ)
         ((coordinates (d + 2)).symm (t, (spaceSplit d).symm (WithLp.toLp 2 (ρ • e, 0))))) ρ
 ```
 
-**`KleinGordon.Eucl3`**, an abbrev, [line 167](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/KleinGordon/DimensionRaising/SpaceSplit.lean#L167).
+**`KleinGordon.Eucl3`**, an abbrev, [line 167](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/KleinGordon/DimensionRaising/SpaceSplit.lean#L167).
 
 > The Euclidean three-space.
 
@@ -151,7 +151,7 @@ lemma hasDerivAt_retardedResponse_radial {μ : ℝ} (hμ : 0 ≤ μ) (d : ℕ)
 abbrev Eucl3 : Type
 ```
 
-**`KleinGordon.spaceThree`**, a def, [line 170](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/KleinGordon/DimensionRaising/SpaceSplit.lean#L170).
+**`KleinGordon.spaceThree`**, a def, [line 170](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/KleinGordon/DimensionRaising/SpaceSplit.lean#L170).
 
 > `Space 3` is isometric to the Euclidean three-space.
 
@@ -169,4 +169,4 @@ def spaceThree : Space 3 ≃ₗᵢ[ℝ] Eucl3
 
 ## Sources
 
-- [PhyslibAlpha/ClassicalFieldTheory/KleinGordon/DimensionRaising/SpaceSplit.lean at 2a1dfe43](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/KleinGordon/DimensionRaising/SpaceSplit.lean)
+- [PhyslibAlpha/ClassicalFieldTheory/KleinGordon/DimensionRaising/SpaceSplit.lean at 8c87bdfb](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/KleinGordon/DimensionRaising/SpaceSplit.lean)

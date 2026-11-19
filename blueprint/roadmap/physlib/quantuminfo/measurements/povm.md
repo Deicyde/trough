@@ -8,7 +8,7 @@ proof: formalized
 
 # Positive Operator-Valued Measures
 
-The module `QuantumInfo.Measurements.POVM`, [QuantumInfo/Measurements/POVM.lean](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/QuantumInfo/Measurements/POVM.lean): 10 declarations, 6 with a docstring, 1 listed as significant.
+The module `QuantumInfo.Measurements.POVM`, [QuantumInfo/Measurements/POVM.lean](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/QuantumInfo/Measurements/POVM.lean): 10 declarations, 6 with a docstring, 1 listed as significant.
 
 > A Positive Operator-Valued Measures, or POVM, is the most general notion of a quantum "measurement":
 > a collection of positive semidefinite (PSD) operators that sum to the identity. These induce a distribution,
@@ -20,7 +20,7 @@ The module `QuantumInfo.Measurements.POVM`, [QuantumInfo/Measurements/POVM.lean]
 >
 > …
 
-**`POVM`**, a structure, [line 41](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/QuantumInfo/Measurements/POVM.lean#L41).
+**`POVM`**, a structure, [line 41](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/QuantumInfo/Measurements/POVM.lean#L41).
 
 > A POVM is a (finite) collection of PSD matrices on the same Hilbert space
 > that sum to the identity. Here `X` indexes the matrices, and `d` is the space
@@ -40,7 +40,7 @@ structure POVM (X : Type*) (d : Type*) [Fintype X] [Fintype d] [DecidableEq d] w
   normalized : ∑ x, mats x = 1
 ```
 
-**`POVM.measurementMap`**, a def, [line 52](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/QuantumInfo/Measurements/POVM.lean#L52).
+**`POVM.measurementMap`**, a def, [line 52](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/QuantumInfo/Measurements/POVM.lean#L52).
 
 > The act of measuring is a quantum channel, that maps a `d`-dimensional quantum
 > state to an `d × X`-dimensional quantum-classical state.
@@ -49,7 +49,7 @@ structure POVM (X : Type*) (d : Type*) [Fintype X] [Fintype d] [DecidableEq d] w
 def measurementMap (Λ : POVM X d) : CPTPMap d (d × X)
 ```
 
-**`POVM.measurementMap_apply_matrix`**, a lemma, [line 99](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/QuantumInfo/Measurements/POVM.lean#L99).
+**`POVM.measurementMap_apply_matrix`**, a lemma, [line 99](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/QuantumInfo/Measurements/POVM.lean#L99).
 
 ```lean
 lemma measurementMap_apply_matrix (Λ : POVM X d) (m : Matrix d d ℂ) :
@@ -57,7 +57,7 @@ lemma measurementMap_apply_matrix (Λ : POVM X d) (m : Matrix d d ℂ) :
     ((((Λ.mats x) ^ (1/2:ℝ)).mat * m * ((Λ.mats x)^(1/2:ℝ)).mat) ⊗ₖ Matrix.single x x 1)
 ```
 
-**`POVM.measurementMap_apply_hermitianMat`**, a lemma, [line 108](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/QuantumInfo/Measurements/POVM.lean#L108).
+**`POVM.measurementMap_apply_hermitianMat`**, a lemma, [line 108](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/QuantumInfo/Measurements/POVM.lean#L108).
 
 ```lean
 lemma measurementMap_apply_hermitianMat (Λ : POVM X d) (m : HermitianMat d ℂ) :
@@ -66,7 +66,7 @@ lemma measurementMap_apply_hermitianMat (Λ : POVM X d) (m : HermitianMat d ℂ)
     ((m.conj ((Λ.mats x)^(1/2:ℝ)).mat : HermitianMat d ℂ) ⊗ₖ HermitianMat.diagonal ℂ (fun y ↦ ite (x = y) 1 0))
 ```
 
-**`POVM.measure`**, a def, [line 122](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/QuantumInfo/Measurements/POVM.lean#L122).
+**`POVM.measure`**, a def, [line 122](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/QuantumInfo/Measurements/POVM.lean#L122).
 
 > A POVM leads to a distribution of outcomes on any given mixed state ρ.
 
@@ -74,7 +74,7 @@ lemma measurementMap_apply_hermitianMat (Λ : POVM X d) (m : HermitianMat d ℂ)
 def measure (Λ : POVM X d) (ρ : MState d) : ProbDistribution X
 ```
 
-**`POVM.traceLeft_measurementMap_eq_measure`**, a theorem, [line 130](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/QuantumInfo/Measurements/POVM.lean#L130). Listed as a significant result in [Theorems.txt](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/scripts/lint/exemptions/Theorems.txt).
+**`POVM.traceLeft_measurementMap_eq_measure`**, a theorem, [line 130](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/QuantumInfo/Measurements/POVM.lean#L130). Listed as a significant result in [Theorems.txt](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/scripts/lint/exemptions/Theorems.txt).
 
 > The quantum-classical `POVM.measurement_map`, gives a marginal on the right equal to `POVM.measure`.
 
@@ -83,7 +83,7 @@ theorem traceLeft_measurementMap_eq_measure (Λ : POVM X d) (ρ : MState d) :
     (Λ.measurementMap ρ).traceLeft = MState.ofClassical (Λ.measure ρ)
 ```
 
-**`POVM.measureDiscard`**, a def, [line 157](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/QuantumInfo/Measurements/POVM.lean#L157).
+**`POVM.measureDiscard`**, a def, [line 157](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/QuantumInfo/Measurements/POVM.lean#L157).
 
 > The action of measuring a state with the POVM `Λ`, discarding the resulting state, and keeping
 > the mixed state recording the outcome. This resulting state is purely diagonal, as given in
@@ -93,14 +93,14 @@ theorem traceLeft_measurementMap_eq_measure (Λ : POVM X d) (ρ : MState d) :
 noncomputable def measureDiscard (Λ : POVM X d) : CPTPMap d X
 ```
 
-**`POVM.measureDiscard_apply`**, a lemma, [line 160](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/QuantumInfo/Measurements/POVM.lean#L160).
+**`POVM.measureDiscard_apply`**, a lemma, [line 160](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/QuantumInfo/Measurements/POVM.lean#L160).
 
 ```lean
 lemma measureDiscard_apply (Λ : POVM X d) (ρ : MState d) :
     Λ.measureDiscard ρ = MState.ofClassical (Λ.measure ρ)
 ```
 
-**`POVM.measureForget`**, a def, [line 166](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/QuantumInfo/Measurements/POVM.lean#L166).
+**`POVM.measureForget`**, a def, [line 166](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/QuantumInfo/Measurements/POVM.lean#L166).
 
 > The action of measuring a state with the POVM `Λ`, forgetting the measurement outcome, and
 > keeping the disturbed state.
@@ -109,7 +109,7 @@ lemma measureDiscard_apply (Λ : POVM X d) (ρ : MState d) :
 noncomputable def measureForget (Λ : POVM X d) : CPTPMap d d
 ```
 
-**`POVM.measureForget_eq_kraus`**, a lemma, [line 169](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/QuantumInfo/Measurements/POVM.lean#L169).
+**`POVM.measureForget_eq_kraus`**, a lemma, [line 169](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/QuantumInfo/Measurements/POVM.lean#L169).
 
 ```lean
 lemma measureForget_eq_kraus (Λ : POVM X d) :
@@ -125,4 +125,4 @@ lemma measureForget_eq_kraus (Λ : POVM X d) :
 
 ## Sources
 
-- [QuantumInfo/Measurements/POVM.lean at 2a1dfe43](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/QuantumInfo/Measurements/POVM.lean)
+- [QuantumInfo/Measurements/POVM.lean at 8c87bdfb](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/QuantumInfo/Measurements/POVM.lean)

@@ -1,14 +1,14 @@
 ---
 declaration: module
 origin: cited
-lean: ProbabilisticTheory.QuantumMechanics.WOTSpectralMeasure.boundedIntegralOfUniformApprox_inner, ProbabilisticTheory.QuantumMechanics.WOTSpectralMeasure.weakIntegral, ProbabilisticTheory.QuantumMechanics.WOTSpectralMeasure.complexWeakIntegral, ProbabilisticTheory.QuantumMechanics.WOTSpectralMeasure.weakIntegral_map, ProbabilisticTheory.QuantumMechanics.WOTSpectralMeasure.complexWeakIntegral_map, ProbabilisticTheory.QuantumMechanics.WOTSpectralMeasure.unitaryConjSpectralMeasure_weakIntegral
+lean: PhyslibAlpha.ProbabilisticTheory.QuantumMechanics.WOTSpectralMeasure.boundedIntegralOfUniformApprox_inner, PhyslibAlpha.ProbabilisticTheory.QuantumMechanics.WOTSpectralMeasure.weakIntegral, PhyslibAlpha.ProbabilisticTheory.QuantumMechanics.WOTSpectralMeasure.complexWeakIntegral, PhyslibAlpha.ProbabilisticTheory.QuantumMechanics.WOTSpectralMeasure.weakIntegral_map, PhyslibAlpha.ProbabilisticTheory.QuantumMechanics.WOTSpectralMeasure.complexWeakIntegral_map, PhyslibAlpha.ProbabilisticTheory.QuantumMechanics.WOTSpectralMeasure.unitaryConjSpectralMeasure_weakIntegral
 statement: formalized
 proof: formalized
 ---
 
 # The vector-measure integral against a scalar matrix coefficient
 
-The module `PhyslibAlpha.ProbabilisticTheory.HilbertSpace.Unbounded.WeakIntegral`, [PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/WeakIntegral.lean](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/WeakIntegral.lean): 6 declarations, 2 with a docstring.
+The module `PhyslibAlpha.ProbabilisticTheory.HilbertSpace.Unbounded.WeakIntegral`, [PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/WeakIntegral.lean](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/WeakIntegral.lean): 6 declarations, 2 with a docstring.
 
 > Weak integrals `∫ f d⟪y, μS(·) x⟫` of possibly unbounded functions against a spectral measure.
 
@@ -34,7 +34,7 @@ The module `PhyslibAlpha.ProbabilisticTheory.HilbertSpace.Unbounded.WeakIntegral
 
 ## A. Bounded integrals agree with the vector-measure integral
 
-**`ProbabilisticTheory.QuantumMechanics.WOTSpectralMeasure.boundedIntegralOfUniformApprox_inner`**, a lemma, [line 64](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/WeakIntegral.lean#L64).
+**`PhyslibAlpha.ProbabilisticTheory.QuantumMechanics.WOTSpectralMeasure.boundedIntegralOfUniformApprox_inner`**, a lemma, [line 64](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/WeakIntegral.lean#L64).
 
 ```lean
 lemma boundedIntegralOfUniformApprox_inner
@@ -51,7 +51,7 @@ lemma boundedIntegralOfUniformApprox_inner
 
 ## B. The weak integral of a possibly-unbounded multiplier
 
-**`ProbabilisticTheory.QuantumMechanics.WOTSpectralMeasure.weakIntegral`**, a def, [line 133](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/WeakIntegral.lean#L133).
+**`PhyslibAlpha.ProbabilisticTheory.QuantumMechanics.WOTSpectralMeasure.weakIntegral`**, a def, [line 133](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/WeakIntegral.lean#L133).
 
 > The pairing is real-scalar multiplication on the complex scalar measure.
 
@@ -59,7 +59,7 @@ lemma boundedIntegralOfUniformApprox_inner
 def weakIntegral (f : α → ℝ) (x y : H) : ℂ
 ```
 
-**`ProbabilisticTheory.QuantumMechanics.WOTSpectralMeasure.complexWeakIntegral`**, a def, [line 140](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/WeakIntegral.lean#L140).
+**`PhyslibAlpha.ProbabilisticTheory.QuantumMechanics.WOTSpectralMeasure.complexWeakIntegral`**, a def, [line 140](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/WeakIntegral.lean#L140).
 
 > The complex weak integral of a complex-valued spectral multiplier. The real-valued integral
 > above is retained for the self-adjoint reconstruction API; this companion is the bounded-unitary
@@ -69,7 +69,7 @@ def weakIntegral (f : α → ℝ) (x y : H) : ℂ
 def complexWeakIntegral (f : α → ℂ) (x y : H) : ℂ
 ```
 
-**`ProbabilisticTheory.QuantumMechanics.WOTSpectralMeasure.weakIntegral_map`**, a lemma, [line 144](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/WeakIntegral.lean#L144).
+**`PhyslibAlpha.ProbabilisticTheory.QuantumMechanics.WOTSpectralMeasure.weakIntegral_map`**, a lemma, [line 144](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/WeakIntegral.lean#L144).
 
 ```lean
 lemma weakIntegral_map {β : Type*} [MeasurableSpace β]
@@ -79,7 +79,7 @@ lemma weakIntegral_map {β : Type*} [MeasurableSpace β]
     (μS.map f hf).weakIntegral g x y = μS.weakIntegral (g ∘ f) x y
 ```
 
-**`ProbabilisticTheory.QuantumMechanics.WOTSpectralMeasure.complexWeakIntegral_map`**, a lemma, [line 153](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/WeakIntegral.lean#L153).
+**`PhyslibAlpha.ProbabilisticTheory.QuantumMechanics.WOTSpectralMeasure.complexWeakIntegral_map`**, a lemma, [line 153](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/WeakIntegral.lean#L153).
 
 ```lean
 lemma complexWeakIntegral_map {β : Type*} [MeasurableSpace β]
@@ -90,7 +90,7 @@ lemma complexWeakIntegral_map {β : Type*} [MeasurableSpace β]
       μS.complexWeakIntegral (g ∘ f) x y
 ```
 
-**`ProbabilisticTheory.QuantumMechanics.WOTSpectralMeasure.unitaryConjSpectralMeasure_weakIntegral`**, a lemma, [line 163](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/WeakIntegral.lean#L163).
+**`PhyslibAlpha.ProbabilisticTheory.QuantumMechanics.WOTSpectralMeasure.unitaryConjSpectralMeasure_weakIntegral`**, a lemma, [line 163](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/WeakIntegral.lean#L163).
 
 ```lean
 lemma unitaryConjSpectralMeasure_weakIntegral
@@ -107,4 +107,4 @@ lemma unitaryConjSpectralMeasure_weakIntegral
 
 ## Sources
 
-- [PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/WeakIntegral.lean at 2a1dfe43](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/WeakIntegral.lean)
+- [PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/WeakIntegral.lean at 8c87bdfb](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/WeakIntegral.lean)

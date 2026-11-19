@@ -8,7 +8,7 @@ proof: formalized
 
 # Classification of irreducible sl₂ modules
 
-The module `PhyslibAlpha.Mathematics.RepresentationTheory.Sl2.Classification`, [PhyslibAlpha/Mathematics/RepresentationTheory/Sl2/Classification.lean](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Mathematics/RepresentationTheory/Sl2/Classification.lean): 32 declarations, 32 with a docstring.
+The module `PhyslibAlpha.Mathematics.RepresentationTheory.Sl2.Classification`, [PhyslibAlpha/Mathematics/RepresentationTheory/Sl2/Classification.lean](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Mathematics/RepresentationTheory/Sl2/Classification.lean): 32 declarations, 32 with a docstring.
 
 > Constructs the primitive-vector string basis and classifies finite-dimensional irreducible modules.
 
@@ -31,7 +31,7 @@ The module `PhyslibAlpha.Mathematics.RepresentationTheory.Sl2.Classification`, [
 
 ## A. Primitive strings and classification
 
-**`PhyslibAlpha.Sl2.stringVecs`**, a def, [line 50](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Mathematics/RepresentationTheory/Sl2/Classification.lean#L50).
+**`PhyslibAlpha.Sl2.stringVecs`**, a def, [line 50](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Mathematics/RepresentationTheory/Sl2/Classification.lean#L50).
 
 > The vectors `m, fm, …, fⁿm` of the primitive-vector string, indexed by `Fin (n+1)`.
 
@@ -39,7 +39,7 @@ The module `PhyslibAlpha.Mathematics.RepresentationTheory.Sl2.Classification`, [
 def stringVecs (f : L) (m : M) (n : ℕ) (k : Fin (n + 1)) : M
 ```
 
-**`PhyslibAlpha.Sl2.string_hasEigenvector`**, a lemma, [line 54](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Mathematics/RepresentationTheory/Sl2/Classification.lean#L54).
+**`PhyslibAlpha.Sl2.string_hasEigenvector`**, a lemma, [line 54](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Mathematics/RepresentationTheory/Sl2/Classification.lean#L54).
 
 > Each vector in a primitive lowering string is a nonzero eigenvector of `h`.
 
@@ -50,7 +50,7 @@ lemma string_hasEigenvector [CharZero K] {t : IsSl2Triple h e f}
       (stringVecs (K := K) f m n k)
 ```
 
-**`PhyslibAlpha.Sl2.string_weight_injective`**, a lemma, [line 64](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Mathematics/RepresentationTheory/Sl2/Classification.lean#L64).
+**`PhyslibAlpha.Sl2.string_weight_injective`**, a lemma, [line 64](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Mathematics/RepresentationTheory/Sl2/Classification.lean#L64).
 
 > The weights `n - 2k` of a lowering string are pairwise distinct in characteristic zero.
 
@@ -59,7 +59,7 @@ lemma string_weight_injective [CharZero K] {n : ℕ} :
     Function.Injective (fun k : Fin (n + 1) => (n : K) - 2 * (k : ℕ))
 ```
 
-**`PhyslibAlpha.Sl2.string_linearIndependent`**, a lemma, [line 73](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Mathematics/RepresentationTheory/Sl2/Classification.lean#L73).
+**`PhyslibAlpha.Sl2.string_linearIndependent`**, a lemma, [line 73](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Mathematics/RepresentationTheory/Sl2/Classification.lean#L73).
 
 > The lowering string is linearly independent because its weights are distinct.
 
@@ -69,7 +69,7 @@ lemma string_linearIndependent [CharZero K] {t : IsSl2Triple h e f}
     LinearIndependent K (stringVecs (K := K) f m n)
 ```
 
-**`PhyslibAlpha.Sl2.stringSpan`**, a def, [line 81](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Mathematics/RepresentationTheory/Sl2/Classification.lean#L81).
+**`PhyslibAlpha.Sl2.stringSpan`**, a def, [line 81](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Mathematics/RepresentationTheory/Sl2/Classification.lean#L81).
 
 > The span of the primitive-vector string, as a plain `K`-submodule.
 
@@ -77,7 +77,7 @@ lemma string_linearIndependent [CharZero K] {t : IsSl2Triple h e f}
 def stringSpan (f : L) (m : M) (n : ℕ) : Submodule K M
 ```
 
-**`PhyslibAlpha.Sl2.stringPow_mem_span`**, a lemma, [line 85](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Mathematics/RepresentationTheory/Sl2/Classification.lean#L85).
+**`PhyslibAlpha.Sl2.stringPow_mem_span`**, a lemma, [line 85](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Mathematics/RepresentationTheory/Sl2/Classification.lean#L85).
 
 > Every power of the lowering operator lies in the truncated string span.
 
@@ -87,7 +87,7 @@ lemma stringPow_mem_span [CharZero K] [FiniteDimensional K M] {t : IsSl2Triple h
     (LieModule.toEnd K L M f ^ k) m ∈ stringSpan (K := K) f m n
 ```
 
-**`PhyslibAlpha.Sl2.lie_e_string_mem`**, a lemma, [line 101](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Mathematics/RepresentationTheory/Sl2/Classification.lean#L101).
+**`PhyslibAlpha.Sl2.lie_e_string_mem`**, a lemma, [line 101](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Mathematics/RepresentationTheory/Sl2/Classification.lean#L101).
 
 > The raising operator preserves the span of a primitive lowering string.
 
@@ -97,7 +97,7 @@ lemma lie_e_string_mem [CharZero K] [FiniteDimensional K M] {t : IsSl2Triple h e
     ⁅e, stringVecs (K := K) f m n k⁆ ∈ stringSpan (K := K) f m n
 ```
 
-**`PhyslibAlpha.Sl2.lie_f_string_mem`**, a lemma, [line 116](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Mathematics/RepresentationTheory/Sl2/Classification.lean#L116).
+**`PhyslibAlpha.Sl2.lie_f_string_mem`**, a lemma, [line 116](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Mathematics/RepresentationTheory/Sl2/Classification.lean#L116).
 
 > The raising operator preserves the string span on `f`-powers.
 
@@ -107,7 +107,7 @@ lemma lie_f_string_mem [CharZero K] [FiniteDimensional K M] {t : IsSl2Triple h e
     ⁅f, stringVecs (K := K) f m n k⁆ ∈ stringSpan (K := K) f m n
 ```
 
-**`PhyslibAlpha.Sl2.lie_h_string_mem`**, a lemma, [line 124](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Mathematics/RepresentationTheory/Sl2/Classification.lean#L124).
+**`PhyslibAlpha.Sl2.lie_h_string_mem`**, a lemma, [line 124](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Mathematics/RepresentationTheory/Sl2/Classification.lean#L124).
 
 > The Cartan operator preserves the string span.
 
@@ -117,7 +117,7 @@ lemma lie_h_string_mem {t : IsSl2Triple h e f}
     ⁅h, stringVecs (K := K) f m n k⁆ ∈ stringSpan (K := K) f m n
 ```
 
-**`PhyslibAlpha.Sl2.lie_generator_string_mem`**, a lemma, [line 132](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Mathematics/RepresentationTheory/Sl2/Classification.lean#L132).
+**`PhyslibAlpha.Sl2.lie_generator_string_mem`**, a lemma, [line 132](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Mathematics/RepresentationTheory/Sl2/Classification.lean#L132).
 
 > Each generator of the triple preserves the lowering-string span.
 
@@ -128,7 +128,7 @@ lemma lie_generator_string_mem [CharZero K] [FiniteDimensional K M] {t : IsSl2Tr
     ⁅x, stringVecs (K := K) f m n k⁆ ∈ stringSpan (K := K) f m n
 ```
 
-**`PhyslibAlpha.Sl2.exists_stringLieSubmodule`**, a lemma, [line 146](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Mathematics/RepresentationTheory/Sl2/Classification.lean#L146).
+**`PhyslibAlpha.Sl2.exists_stringLieSubmodule`**, a lemma, [line 146](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Mathematics/RepresentationTheory/Sl2/Classification.lean#L146).
 
 > The lowering string spans a submodule for the Lie subalgebra generated by `t`.
 > The finite-dimensional hypothesis supplies the relation that closes the string after `n + 1`
@@ -141,7 +141,7 @@ lemma exists_stringLieSubmodule [CharZero K] [FiniteDimensional K M] {t : IsSl2T
       (N : Submodule K M) = stringSpan f m n
 ```
 
-**`PhyslibAlpha.Sl2.stringSpan_eq_top`**, a lemma, [line 161](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Mathematics/RepresentationTheory/Sl2/Classification.lean#L161).
+**`PhyslibAlpha.Sl2.stringSpan_eq_top`**, a lemma, [line 161](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Mathematics/RepresentationTheory/Sl2/Classification.lean#L161).
 
 > Irreducibility makes the nonzero lowering-string submodule equal to the whole module.
 
@@ -152,7 +152,7 @@ lemma stringSpan_eq_top {t : IsSl2Triple h e f}
     (hN : (N : Submodule K M) = stringSpan f m n) : N = ⊤
 ```
 
-**`PhyslibAlpha.Sl2.string_isBasis`**, a lemma, [line 176](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Mathematics/RepresentationTheory/Sl2/Classification.lean#L176).
+**`PhyslibAlpha.Sl2.string_isBasis`**, a lemma, [line 176](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Mathematics/RepresentationTheory/Sl2/Classification.lean#L176).
 
 > In an irreducible module, the lowering string is independent and spans.
 
@@ -164,7 +164,7 @@ lemma string_isBasis [CharZero K] [FiniteDimensional K M] {t : IsSl2Triple h e f
       Submodule.span K (Set.range (stringVecs (K := K) f m n)) = ⊤
 ```
 
-**`PhyslibAlpha.Sl2.finrank_eq_succ`**, a lemma, [line 188](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Mathematics/RepresentationTheory/Sl2/Classification.lean#L188).
+**`PhyslibAlpha.Sl2.finrank_eq_succ`**, a lemma, [line 188](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Mathematics/RepresentationTheory/Sl2/Classification.lean#L188).
 
 > Basis theorem, dimension count.
 
@@ -175,7 +175,7 @@ lemma finrank_eq_succ [CharZero K] [FiniteDimensional K M] {t : IsSl2Triple h e 
     Module.finrank K M = n + 1
 ```
 
-**`PhyslibAlpha.Sl2.stringBasis`**, a def, [line 197](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Mathematics/RepresentationTheory/Sl2/Classification.lean#L197).
+**`PhyslibAlpha.Sl2.stringBasis`**, a def, [line 197](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Mathematics/RepresentationTheory/Sl2/Classification.lean#L197).
 
 > The basis of an irreducible module obtained by lowering a primitive vector.
 
@@ -186,7 +186,7 @@ noncomputable def stringBasis [CharZero K] [FiniteDimensional K M]
     (P : t.HasPrimitiveVectorWith m (n : K)) : Module.Basis (Fin (n + 1)) K M
 ```
 
-**`PhyslibAlpha.Sl2.stringEquiv`**, a def, [line 204](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Mathematics/RepresentationTheory/Sl2/Classification.lean#L204).
+**`PhyslibAlpha.Sl2.stringEquiv`**, a def, [line 204](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Mathematics/RepresentationTheory/Sl2/Classification.lean#L204).
 
 > The linear equivalence sending the lowering-string basis to the coordinate basis.
 
@@ -197,7 +197,7 @@ noncomputable def stringEquiv [CharZero K] [FiniteDimensional K M]
     (P : t.HasPrimitiveVectorWith m (n : K)) : M ≃ₗ[K] StandardSl2Module K n
 ```
 
-**`PhyslibAlpha.Sl2.stringEquiv_apply`**, a lemma, [line 212](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Mathematics/RepresentationTheory/Sl2/Classification.lean#L212).
+**`PhyslibAlpha.Sl2.stringEquiv_apply`**, a lemma, [line 212](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Mathematics/RepresentationTheory/Sl2/Classification.lean#L212).
 
 > The linear equivalence sends each lowering-string vector to the corresponding
 > coordinate vector.
@@ -210,7 +210,7 @@ lemma stringEquiv_apply [CharZero K] [FiniteDimensional K M]
     stringEquiv P (stringVecs (K := K) f m n i) = StandardSl2Module.v i
 ```
 
-**`PhyslibAlpha.Sl2.stringEquiv_e_zero`**, a lemma, [line 230](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Mathematics/RepresentationTheory/Sl2/Classification.lean#L230).
+**`PhyslibAlpha.Sl2.stringEquiv_e_zero`**, a lemma, [line 230](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Mathematics/RepresentationTheory/Sl2/Classification.lean#L230).
 
 > The raising operators agree at the primitive vector.
 
@@ -221,7 +221,7 @@ lemma stringEquiv_e_zero :
       ⁅eSub (K := K) t, StandardSl2Module.v (K := K) (n := n) 0⁆
 ```
 
-**`PhyslibAlpha.Sl2.stringEquiv_e_succ`**, a lemma, [line 240](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Mathematics/RepresentationTheory/Sl2/Classification.lean#L240).
+**`PhyslibAlpha.Sl2.stringEquiv_e_succ`**, a lemma, [line 240](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Mathematics/RepresentationTheory/Sl2/Classification.lean#L240).
 
 > The raising operators agree at the string vector with index `j + 1`.
 
@@ -232,7 +232,7 @@ lemma stringEquiv_e_succ (j : ℕ) (hj : j < n) :
       ⁅eSub (K := K) t, StandardSl2Module.v (K := K) (n := n) ⟨j + 1, by omega⟩⁆
 ```
 
-**`PhyslibAlpha.Sl2.stringEquiv_e_pos`**, a lemma, [line 254](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Mathematics/RepresentationTheory/Sl2/Classification.lean#L254).
+**`PhyslibAlpha.Sl2.stringEquiv_e_pos`**, a lemma, [line 254](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Mathematics/RepresentationTheory/Sl2/Classification.lean#L254).
 
 > The raising operators agree at every positive string index.
 
@@ -243,7 +243,7 @@ lemma stringEquiv_e_pos (i : Fin (n + 1)) (hi : 0 < (i : ℕ)) :
       ⁅eSub (K := K) t, StandardSl2Module.v (K := K) (n := n) i⁆
 ```
 
-**`PhyslibAlpha.Sl2.equiv_comm_of_basis`**, a lemma, [line 264](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Mathematics/RepresentationTheory/Sl2/Classification.lean#L264).
+**`PhyslibAlpha.Sl2.equiv_comm_of_basis`**, a lemma, [line 264](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Mathematics/RepresentationTheory/Sl2/Classification.lean#L264).
 
 > A linear equivalence intertwines two endomorphisms if it does so on a basis.
 
@@ -253,7 +253,7 @@ lemma equiv_comm_of_basis {ι V : Type*} [AddCommGroup V] [Module K V]
     (hb : ∀ i, Ψ (A (b i)) = B (Ψ (b i))) (w : M) : Ψ (A w) = B (Ψ w)
 ```
 
-**`PhyslibAlpha.Sl2.stringEquiv_lie_of_basis`**, a lemma, [line 271](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Mathematics/RepresentationTheory/Sl2/Classification.lean#L271).
+**`PhyslibAlpha.Sl2.stringEquiv_lie_of_basis`**, a lemma, [line 271](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Mathematics/RepresentationTheory/Sl2/Classification.lean#L271).
 
 > The coordinate equivalence intertwines `x` once it does so on the string basis.
 
@@ -266,7 +266,7 @@ lemma stringEquiv_lie_of_basis (x : ↥(t.toLieSubalgebra (R := K)))
     stringEquiv P ⁅x, w⁆ = ⁅x, stringEquiv P w⁆
 ```
 
-**`PhyslibAlpha.Sl2.stringEquiv_e`**, a lemma, [line 284](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Mathematics/RepresentationTheory/Sl2/Classification.lean#L284).
+**`PhyslibAlpha.Sl2.stringEquiv_e`**, a lemma, [line 284](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Mathematics/RepresentationTheory/Sl2/Classification.lean#L284).
 
 > The coordinate equivalence intertwines the raising operator.
 
@@ -276,7 +276,7 @@ lemma stringEquiv_e (w : M) :
     stringEquiv P ⁅eSub (K := K) t, w⁆ = ⁅eSub (K := K) t, stringEquiv P w⁆
 ```
 
-**`PhyslibAlpha.Sl2.stringEquiv_f_last`**, a lemma, [line 295](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Mathematics/RepresentationTheory/Sl2/Classification.lean#L295).
+**`PhyslibAlpha.Sl2.stringEquiv_f_last`**, a lemma, [line 295](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Mathematics/RepresentationTheory/Sl2/Classification.lean#L295).
 
 > The lowering operators agree at the last string vector.
 
@@ -287,7 +287,7 @@ lemma stringEquiv_f_last :
       ⁅fSub (K := K) t, StandardSl2Module.v (K := K) (n := n) (Fin.last n)⁆
 ```
 
-**`PhyslibAlpha.Sl2.stringEquiv_f_lt`**, a lemma, [line 305](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Mathematics/RepresentationTheory/Sl2/Classification.lean#L305).
+**`PhyslibAlpha.Sl2.stringEquiv_f_lt`**, a lemma, [line 305](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Mathematics/RepresentationTheory/Sl2/Classification.lean#L305).
 
 > The lowering operators agree before the last string vector.
 
@@ -298,7 +298,7 @@ lemma stringEquiv_f_lt (i : Fin (n + 1)) (hi : (i : ℕ) < n) :
       ⁅fSub (K := K) t, StandardSl2Module.v (K := K) (n := n) i⁆
 ```
 
-**`PhyslibAlpha.Sl2.stringEquiv_f`**, a lemma, [line 316](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Mathematics/RepresentationTheory/Sl2/Classification.lean#L316).
+**`PhyslibAlpha.Sl2.stringEquiv_f`**, a lemma, [line 316](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Mathematics/RepresentationTheory/Sl2/Classification.lean#L316).
 
 > The coordinate equivalence intertwines the lowering operator.
 
@@ -308,7 +308,7 @@ lemma stringEquiv_f (w : M) :
     stringEquiv P ⁅fSub (K := K) t, w⁆ = ⁅fSub (K := K) t, stringEquiv P w⁆
 ```
 
-**`PhyslibAlpha.Sl2.stringEquiv_h_basis`**, a lemma, [line 327](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Mathematics/RepresentationTheory/Sl2/Classification.lean#L327).
+**`PhyslibAlpha.Sl2.stringEquiv_h_basis`**, a lemma, [line 327](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Mathematics/RepresentationTheory/Sl2/Classification.lean#L327).
 
 > The Cartan operators agree on every string vector.
 
@@ -319,7 +319,7 @@ lemma stringEquiv_h_basis (i : Fin (n + 1)) :
       ⁅hSub (K := K) t, StandardSl2Module.v (K := K) (n := n) i⁆
 ```
 
-**`PhyslibAlpha.Sl2.stringEquiv_h`**, a lemma, [line 338](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Mathematics/RepresentationTheory/Sl2/Classification.lean#L338).
+**`PhyslibAlpha.Sl2.stringEquiv_h`**, a lemma, [line 338](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Mathematics/RepresentationTheory/Sl2/Classification.lean#L338).
 
 > The coordinate equivalence intertwines the Cartan operator.
 
@@ -329,7 +329,7 @@ lemma stringEquiv_h (w : M) :
     stringEquiv P ⁅hSub (K := K) t, w⁆ = ⁅hSub (K := K) t, stringEquiv P w⁆
 ```
 
-**`PhyslibAlpha.Sl2.exists_decomp`**, a lemma, [line 345](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Mathematics/RepresentationTheory/Sl2/Classification.lean#L345).
+**`PhyslibAlpha.Sl2.exists_decomp`**, a lemma, [line 345](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Mathematics/RepresentationTheory/Sl2/Classification.lean#L345).
 
 > Every element of the generated subalgebra is a combination of `e`, `f`, `h`.
 
@@ -338,7 +338,7 @@ lemma exists_decomp (x : ↥(t.toLieSubalgebra (R := K))) :
     ∃ c₁ c₂ c₃ : K, x = c₁ • eSub (K := K) t + c₂ • fSub (K := K) t + c₃ • hSub (K := K) t
 ```
 
-**`PhyslibAlpha.Sl2.stringEquiv_lie`**, a lemma, [line 353](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Mathematics/RepresentationTheory/Sl2/Classification.lean#L353).
+**`PhyslibAlpha.Sl2.stringEquiv_lie`**, a lemma, [line 353](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Mathematics/RepresentationTheory/Sl2/Classification.lean#L353).
 
 > The coordinate equivalence intertwines every element of the generated subalgebra.
 
@@ -348,7 +348,7 @@ lemma stringEquiv_lie (x : ↥(t.toLieSubalgebra (R := K))) (w : M) :
     stringEquiv P ⁅x, w⁆ = ⁅x, stringEquiv P w⁆
 ```
 
-**`PhyslibAlpha.Sl2.classification`**, a lemma, [line 366](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Mathematics/RepresentationTheory/Sl2/Classification.lean#L366).
+**`PhyslibAlpha.Sl2.classification`**, a lemma, [line 366](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Mathematics/RepresentationTheory/Sl2/Classification.lean#L366).
 
 > A finite-dimensional irreducible module for the generated `sl₂` subalgebra is
 > equivalent to a standard highest-weight module.
@@ -360,7 +360,7 @@ lemma classification [IsAlgClosed K] [CharZero K] [FiniteDimensional K M] (t : I
       Nonempty (M ≃ₗ⁅K, ↥(t.toLieSubalgebra (R := K))⁆ StandardSl2Module K n)
 ```
 
-**`PhyslibAlpha.Sl2.classification_n_eq_finrank_sub_one`**, a lemma, [line 385](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Mathematics/RepresentationTheory/Sl2/Classification.lean#L385).
+**`PhyslibAlpha.Sl2.classification_n_eq_finrank_sub_one`**, a lemma, [line 385](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Mathematics/RepresentationTheory/Sl2/Classification.lean#L385).
 
 > Uniqueness of the highest weight: the `n` produced by
 > `classification` is determined by `M` alone, namely `n = finrank K M - 1`.
@@ -383,4 +383,4 @@ lemma classification_n_eq_finrank_sub_one [CharZero K]
 
 ## Sources
 
-- [PhyslibAlpha/Mathematics/RepresentationTheory/Sl2/Classification.lean at 2a1dfe43](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Mathematics/RepresentationTheory/Sl2/Classification.lean)
+- [PhyslibAlpha/Mathematics/RepresentationTheory/Sl2/Classification.lean at 8c87bdfb](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Mathematics/RepresentationTheory/Sl2/Classification.lean)

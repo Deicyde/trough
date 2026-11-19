@@ -8,7 +8,7 @@ proof: formalized
 
 # Dirichlet submodule
 
-The module `Physlib.QuantumMechanics.HilbertSpaces.SpaceD.DirichletSubmodule`, [Physlib/QuantumMechanics/HilbertSpaces/SpaceD/DirichletSubmodule.lean](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/QuantumMechanics/HilbertSpaces/SpaceD/DirichletSubmodule.lean): 4 declarations, 2 with a docstring.
+The module `Physlib.QuantumMechanics.HilbertSpaces.SpaceD.DirichletSubmodule`, [Physlib/QuantumMechanics/HilbertSpaces/SpaceD/DirichletSubmodule.lean](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/QuantumMechanics/HilbertSpaces/SpaceD/DirichletSubmodule.lean): 4 declarations, 2 with a docstring.
 
 ## i. Overview
 
@@ -30,7 +30,7 @@ The module `Physlib.QuantumMechanics.HilbertSpaces.SpaceD.DirichletSubmodule`, [
 
 ## A. Definitions
 
-**`QuantumMechanics.SpaceDHilbertSpaceOn.DirichletSchwartzMap`**, a def, [line 54](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/QuantumMechanics/HilbertSpaces/SpaceD/DirichletSubmodule.lean#L54).
+**`QuantumMechanics.SpaceDHilbertSpaceOn.DirichletSchwartzMap`**, a def, [line 54](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/QuantumMechanics/HilbertSpaces/SpaceD/DirichletSubmodule.lean#L54).
 
 > The Schwartz maps which vanish on `frontier Ω`.
 
@@ -38,7 +38,7 @@ The module `Physlib.QuantumMechanics.HilbertSpaces.SpaceD.DirichletSubmodule`, [
 def DirichletSchwartzMap : Submodule ℂ 𝓢(Space d, ℂ)
 ```
 
-**`QuantumMechanics.SpaceDHilbertSpaceOn.DirichletSubmoduleOn`**, an abbrev, [line 62](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/QuantumMechanics/HilbertSpaces/SpaceD/DirichletSubmodule.lean#L62).
+**`QuantumMechanics.SpaceDHilbertSpaceOn.DirichletSubmoduleOn`**, an abbrev, [line 62](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/QuantumMechanics/HilbertSpaces/SpaceD/DirichletSubmodule.lean#L62).
 
 > The submodule of the Hilbert space on `Ω` consisting of the equivalence classes
 > of Schwartz maps which vanish on `frontier Ω`.
@@ -47,7 +47,7 @@ def DirichletSchwartzMap : Submodule ℂ 𝓢(Space d, ℂ)
 abbrev DirichletSubmoduleOn : Submodule ℂ (SpaceDHilbertSpaceOn Ω μ)
 ```
 
-**`QuantumMechanics.SpaceDHilbertSpaceOn.DirichletSubmoduleOn.mem_iff`**, a lemma, [line 68](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/QuantumMechanics/HilbertSpaces/SpaceD/DirichletSubmodule.lean#L68).
+**`QuantumMechanics.SpaceDHilbertSpaceOn.DirichletSubmoduleOn.mem_iff`**, a lemma, [line 68](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/QuantumMechanics/HilbertSpaces/SpaceD/DirichletSubmodule.lean#L68).
 
 ```lean
 lemma mem_iff {ψ : SpaceDHilbertSpaceOn Ω μ} :
@@ -57,7 +57,7 @@ lemma mem_iff {ψ : SpaceDHilbertSpaceOn Ω μ} :
 
 ## B. Contained in SchwartzSubmoduleOn
 
-**`QuantumMechanics.SpaceDHilbertSpaceOn.DirichletSubmoduleOn.le_schwartzSubmoduleOn`**, a lemma, [line 77](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/QuantumMechanics/HilbertSpaces/SpaceD/DirichletSubmodule.lean#L77).
+**`QuantumMechanics.SpaceDHilbertSpaceOn.DirichletSubmoduleOn.le_schwartzSubmoduleOn`**, a lemma, [line 77](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/QuantumMechanics/HilbertSpaces/SpaceD/DirichletSubmodule.lean#L77).
 
 ```lean
 lemma le_schwartzSubmoduleOn : DirichletSubmoduleOn Ω μ ≤ SchwartzSubmoduleOn Ω μ
@@ -71,4 +71,4 @@ lemma le_schwartzSubmoduleOn : DirichletSubmoduleOn Ω μ ≤ SchwartzSubmoduleO
 
 ## Sources
 
-- [Physlib/QuantumMechanics/HilbertSpaces/SpaceD/DirichletSubmodule.lean at 2a1dfe43](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/QuantumMechanics/HilbertSpaces/SpaceD/DirichletSubmodule.lean)
+- [Physlib/QuantumMechanics/HilbertSpaces/SpaceD/DirichletSubmodule.lean at 8c87bdfb](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/QuantumMechanics/HilbertSpaces/SpaceD/DirichletSubmodule.lean)

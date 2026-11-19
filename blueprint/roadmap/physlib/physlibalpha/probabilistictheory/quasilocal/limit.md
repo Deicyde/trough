@@ -1,14 +1,14 @@
 ---
 declaration: module
 origin: cited
-lean: ProbabilisticTheory.QuasiLocal.sumSq, ProbabilisticTheory.AlgState.normSq_le, ProbabilisticTheory.QuasiLocal.AlgebraNet.IsLocallyBounded, ProbabilisticTheory.AlgState.nonneg_of_mem_sumSq, ProbabilisticTheory.QuasiLocal.AlgebraNet.norm_sq_le, ProbabilisticTheory.QuasiLocal.localSeq, ProbabilisticTheory.QuasiLocal.localSeq_eq, ProbabilisticTheory.QuasiLocal.exists_tendsto_localSeq
+lean: PhyslibAlpha.ProbabilisticTheory.QuasiLocal.sumSq, PhyslibAlpha.ProbabilisticTheory.AlgState.normSq_le, PhyslibAlpha.ProbabilisticTheory.QuasiLocal.AlgebraNet.IsLocallyBounded, PhyslibAlpha.ProbabilisticTheory.AlgState.nonneg_of_mem_sumSq, PhyslibAlpha.ProbabilisticTheory.QuasiLocal.AlgebraNet.norm_sq_le, PhyslibAlpha.ProbabilisticTheory.QuasiLocal.localSeq, PhyslibAlpha.ProbabilisticTheory.QuasiLocal.localSeq_eq, PhyslibAlpha.ProbabilisticTheory.QuasiLocal.exists_tendsto_localSeq
 statement: formalized
 proof: formalized
 ---
 
 # Limit states of the quasi-local algebra
 
-The module `PhyslibAlpha.ProbabilisticTheory.QuasiLocal.Limit`, [PhyslibAlpha/ProbabilisticTheory/QuasiLocal/Limit.lean](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ProbabilisticTheory/QuasiLocal/Limit.lean): 13 declarations, 11 with a docstring.
+The module `PhyslibAlpha.ProbabilisticTheory.QuasiLocal.Limit`, [PhyslibAlpha/ProbabilisticTheory/QuasiLocal/Limit.lean](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/QuasiLocal/Limit.lean): 13 declarations, 11 with a docstring.
 
 > A net of local states, one for each finite region, has limit points that are states of the
 > quasi-local algebra.
@@ -46,7 +46,7 @@ The module `PhyslibAlpha.ProbabilisticTheory.QuasiLocal.Limit`, [PhyslibAlpha/Pr
 
 ## A. The Cauchy–Schwarz inequality and sums of squares
 
-**`ProbabilisticTheory.QuasiLocal.sumSq`**, a def, [line 74](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ProbabilisticTheory/QuasiLocal/Limit.lean#L74).
+**`PhyslibAlpha.ProbabilisticTheory.QuasiLocal.sumSq`**, a def, [line 74](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/QuasiLocal/Limit.lean#L74).
 
 > The sums of squares `∑ s_i* s_i` of a `*`-algebra.
 
@@ -54,18 +54,18 @@ The module `PhyslibAlpha.ProbabilisticTheory.QuasiLocal.Limit`, [PhyslibAlpha/Pr
 def sumSq (A : Type*) [Ring A] [StarRing A] : AddSubmonoid A
 ```
 
-**`ProbabilisticTheory.AlgState.normSq_le`**, a lemma, [line 78](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ProbabilisticTheory/QuasiLocal/Limit.lean#L78).
+**`PhyslibAlpha.ProbabilisticTheory.AlgState.normSq_le`**, a lemma, [line 78](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/QuasiLocal/Limit.lean#L78).
 
 > **The Cauchy–Schwarz inequality for states**: `|ω(a)|² ≤ ω(a* a)`.
 
 ```lean
-lemma _root_.ProbabilisticTheory.AlgState.normSq_le (ω : AlgState A) (a : A) :
+lemma _root_.PhyslibAlpha.ProbabilisticTheory.AlgState.normSq_le (ω : AlgState A) (a : A) :
     ((‖ω a‖ ^ 2 : ℝ) : ℂ) ≤ ω (star a * a)
 ```
 
 ## B. Local boundedness
 
-**`ProbabilisticTheory.QuasiLocal.AlgebraNet.IsLocallyBounded`**, a def, [line 111](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ProbabilisticTheory/QuasiLocal/Limit.lean#L111).
+**`PhyslibAlpha.ProbabilisticTheory.QuasiLocal.AlgebraNet.IsLocallyBounded`**, a def, [line 111](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/QuasiLocal/Limit.lean#L111).
 
 > **Local boundedness**: for every local observable `a` some multiple `c · 1` of the identity
 > exceeds `a* a` by a sum of squares.
@@ -74,17 +74,17 @@ lemma _root_.ProbabilisticTheory.AlgState.normSq_le (ω : AlgState A) (a : A) :
 def AlgebraNet.IsLocallyBounded : Prop
 ```
 
-**`ProbabilisticTheory.AlgState.nonneg_of_mem_sumSq`**, a lemma, [line 118](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ProbabilisticTheory/QuasiLocal/Limit.lean#L118).
+**`PhyslibAlpha.ProbabilisticTheory.AlgState.nonneg_of_mem_sumSq`**, a lemma, [line 118](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/QuasiLocal/Limit.lean#L118).
 
 > A state is nonnegative on sums of squares.
 
 ```lean
-lemma _root_.ProbabilisticTheory.AlgState.nonneg_of_mem_sumSq
+lemma _root_.PhyslibAlpha.ProbabilisticTheory.AlgState.nonneg_of_mem_sumSq
     {A : Type*} [Ring A] [Algebra ℂ A] [StarRing A] [StarModule ℂ A] (ω : AlgState A)
     {p : A} (hp : p ∈ sumSq A) : 0 ≤ ω p
 ```
 
-**`ProbabilisticTheory.QuasiLocal.AlgebraNet.norm_sq_le`**, a lemma, [line 128](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ProbabilisticTheory/QuasiLocal/Limit.lean#L128).
+**`PhyslibAlpha.ProbabilisticTheory.QuasiLocal.AlgebraNet.norm_sq_le`**, a lemma, [line 128](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/QuasiLocal/Limit.lean#L128).
 
 > **The expectation of a locally bounded observable in any larger region is bounded.**
 
@@ -97,7 +97,7 @@ lemma AlgebraNet.norm_sq_le (hb : N.IsLocallyBounded) {X Λ : Finset S} (h : X �
 
 ## C. The ultrafilter limit
 
-**`ProbabilisticTheory.QuasiLocal.localSeq`**, a def, [line 165](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ProbabilisticTheory/QuasiLocal/Limit.lean#L165).
+**`PhyslibAlpha.ProbabilisticTheory.QuasiLocal.localSeq`**, a def, [line 165](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/QuasiLocal/Limit.lean#L165).
 
 > The expectation of a local observable `a` of the region `X` in the region `Λ`, zero if `Λ`
 > does not contain `X`.
@@ -106,14 +106,14 @@ lemma AlgebraNet.norm_sq_le (hb : N.IsLocallyBounded) {X Λ : Finset S} (h : X �
 def localSeq (X : Finset S) (a : N.A X) (Λ : Finset S) : ℂ
 ```
 
-**`ProbabilisticTheory.QuasiLocal.localSeq_eq`**, a lemma, [line 168](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ProbabilisticTheory/QuasiLocal/Limit.lean#L168).
+**`PhyslibAlpha.ProbabilisticTheory.QuasiLocal.localSeq_eq`**, a lemma, [line 168](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/QuasiLocal/Limit.lean#L168).
 
 ```lean
 lemma localSeq_eq (X : Finset S) (a : N.A X) {Λ : Finset S} (h : X ≤ Λ) :
     localSeq ω X a Λ = ω Λ (N.incl h a)
 ```
 
-**`ProbabilisticTheory.QuasiLocal.exists_tendsto_localSeq`**, a lemma, [line 174](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ProbabilisticTheory/QuasiLocal/Limit.lean#L174).
+**`PhyslibAlpha.ProbabilisticTheory.QuasiLocal.exists_tendsto_localSeq`**, a lemma, [line 174](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/QuasiLocal/Limit.lean#L174).
 
 > The expectations of a local observable have a limit along a fine ultrafilter.
 
@@ -122,7 +122,7 @@ lemma exists_tendsto_localSeq (hb : N.IsLocallyBounded) (h𝒰 : (𝒰 : Filter 
     (X : Finset S) (a : N.A X) : ∃ z, Tendsto (localSeq ω X a) 𝒰 (𝓝 z)
 ```
 
-**`ProbabilisticTheory.QuasiLocal.limitValue`**, a def, [line 191](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ProbabilisticTheory/QuasiLocal/Limit.lean#L191).
+**`PhyslibAlpha.ProbabilisticTheory.QuasiLocal.limitValue`**, a def, [line 191](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/QuasiLocal/Limit.lean#L191).
 
 > The limit along the ultrafilter of the expectations of a local observable.
 
@@ -130,14 +130,14 @@ lemma exists_tendsto_localSeq (hb : N.IsLocallyBounded) (h𝒰 : (𝒰 : Filter 
 def limitValue (X : Finset S) (a : N.A X) : ℂ
 ```
 
-**`ProbabilisticTheory.QuasiLocal.tendsto_limitValue`**, a lemma, [line 194](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ProbabilisticTheory/QuasiLocal/Limit.lean#L194).
+**`PhyslibAlpha.ProbabilisticTheory.QuasiLocal.tendsto_limitValue`**, a lemma, [line 194](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/QuasiLocal/Limit.lean#L194).
 
 ```lean
 lemma tendsto_limitValue (X : Finset S) (a : N.A X) :
     Tendsto (localSeq ω X a) 𝒰 (𝓝 (limitValue ω hb h𝒰 X a))
 ```
 
-**`ProbabilisticTheory.QuasiLocal.limitFamily`**, a def, [line 200](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ProbabilisticTheory/QuasiLocal/Limit.lean#L200).
+**`PhyslibAlpha.ProbabilisticTheory.QuasiLocal.limitFamily`**, a def, [line 200](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/QuasiLocal/Limit.lean#L200).
 
 > **The limit of a net of local states along an ultrafilter** is a compatible family of local
 > states.
@@ -146,7 +146,7 @@ lemma tendsto_limitValue (X : Finset S) (a : N.A X) :
 def limitFamily : LocalStateFamily N
 ```
 
-**`ProbabilisticTheory.QuasiLocal.limitState`**, a def, [line 242](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ProbabilisticTheory/QuasiLocal/Limit.lean#L242).
+**`PhyslibAlpha.ProbabilisticTheory.QuasiLocal.limitState`**, a def, [line 242](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/QuasiLocal/Limit.lean#L242).
 
 > **The limit state** of a net of local states along an ultrafilter: a state of the
 > quasi-local algebra.
@@ -155,7 +155,7 @@ def limitFamily : LocalStateFamily N
 def limitState : AlgState N.Quasilocal
 ```
 
-**`ProbabilisticTheory.QuasiLocal.limitState_of`**, a lemma, [line 245](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ProbabilisticTheory/QuasiLocal/Limit.lean#L245).
+**`PhyslibAlpha.ProbabilisticTheory.QuasiLocal.limitState_of`**, a lemma, [line 245](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/QuasiLocal/Limit.lean#L245).
 
 > The limit state on a local observable is the limit of the local expectations.
 
@@ -170,4 +170,4 @@ lemma limitState_of (X : Finset S) (a : N.A X) :
 
 ## Sources
 
-- [PhyslibAlpha/ProbabilisticTheory/QuasiLocal/Limit.lean at 2a1dfe43](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ProbabilisticTheory/QuasiLocal/Limit.lean)
+- [PhyslibAlpha/ProbabilisticTheory/QuasiLocal/Limit.lean at 8c87bdfb](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/QuasiLocal/Limit.lean)

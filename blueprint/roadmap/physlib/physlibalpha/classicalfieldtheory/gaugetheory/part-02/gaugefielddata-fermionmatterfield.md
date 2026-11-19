@@ -8,7 +8,7 @@ proof: formalized
 
 # The fermionic matter field of a gauge theory
 
-The module `PhyslibAlpha.ClassicalFieldTheory.GaugeTheory.GaugeFieldData.FermionMatterField`, [PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/GaugeFieldData/FermionMatterField.lean](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/GaugeFieldData/FermionMatterField.lean): 19 declarations, 17 with a docstring.
+The module `PhyslibAlpha.ClassicalFieldTheory.GaugeTheory.GaugeFieldData.FermionMatterField`, [PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/GaugeFieldData/FermionMatterField.lean](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/GaugeFieldData/FermionMatterField.lean): 19 declarations, 17 with a docstring.
 
 ## i. Overview
 
@@ -53,7 +53,7 @@ The module `PhyslibAlpha.ClassicalFieldTheory.GaugeTheory.GaugeFieldData.Fermion
 
 ## A. The fermionic matter field
 
-**`GaugeFieldData.fermionMatterField`**, a def, [line 84](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/GaugeFieldData/FermionMatterField.lean#L84).
+**`GaugeFieldData.fermionMatterField`**, a def, [line 84](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/GaugeFieldData/FermionMatterField.lean#L84).
 
 > **The fermionic matter field of a gauge theory**: the direct sum of the fermionic
 > species, valued in `T.FermionModule`, with the Lorentz group, the jets of gauge
@@ -67,14 +67,14 @@ noncomputable def fermionMatterField (w : ℕ) (h : ∀ i, (T.fermion i).massWei
     MatterField jets
 ```
 
-**`GaugeFieldData.fermionMatterField_V`**, a lemma, [line 90](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/GaugeFieldData/FermionMatterField.lean#L90).
+**`GaugeFieldData.fermionMatterField_V`**, a lemma, [line 90](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/GaugeFieldData/FermionMatterField.lean#L90).
 
 ```lean
 lemma fermionMatterField_V (w : ℕ) (h : ∀ i, (T.fermion i).massWeight = w) :
     (T.fermionMatterField w h).V = T.FermionModule
 ```
 
-**`GaugeFieldData.fermionMatterField_massWeight`**, a lemma, [line 95](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/GaugeFieldData/FermionMatterField.lean#L95).
+**`GaugeFieldData.fermionMatterField_massWeight`**, a lemma, [line 95](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/GaugeFieldData/FermionMatterField.lean#L95).
 
 > The fermionic matter field carries the common mass weight of the species.
 
@@ -83,7 +83,7 @@ lemma fermionMatterField_massWeight (w : ℕ) (h : ∀ i, (T.fermion i).massWeig
     (T.fermionMatterField w h).massWeight = w
 ```
 
-**`GaugeFieldData.fermionMatterField_statistic`**, a lemma, [line 100](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/GaugeFieldData/FermionMatterField.lean#L100).
+**`GaugeFieldData.fermionMatterField_statistic`**, a lemma, [line 100](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/GaugeFieldData/FermionMatterField.lean#L100).
 
 > The fermionic matter field is fermionic, as every fermionic species is declared to be.
 
@@ -94,7 +94,7 @@ lemma fermionMatterField_statistic (w : ℕ) (h : ∀ i, (T.fermion i).massWeigh
 
 ### A.1. The transformation data species by species
 
-**`GaugeFieldData.repLorentzFermionModule`**, a def, [line 114](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/GaugeFieldData/FermionMatterField.lean#L114).
+**`GaugeFieldData.repLorentzFermionModule`**, a def, [line 114](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/GaugeFieldData/FermionMatterField.lean#L114).
 
 > **The Lorentz action on the fermionic module**, acting species by species. This is the
 > Lorentz representation of the fermionic matter field, typed on `T.FermionModule` itself so
@@ -104,14 +104,14 @@ lemma fermionMatterField_statistic (w : ℕ) (h : ∀ i, (T.fermion i).massWeigh
 noncomputable def repLorentzFermionModule : Representation ℂ SL(2,ℂ) T.FermionModule
 ```
 
-**`GaugeFieldData.repLorentzFermionModule_apply`**, a lemma, [line 120](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/GaugeFieldData/FermionMatterField.lean#L120).
+**`GaugeFieldData.repLorentzFermionModule_apply`**, a lemma, [line 120](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/GaugeFieldData/FermionMatterField.lean#L120).
 
 ```lean
 lemma repLorentzFermionModule_apply (Λ : SL(2,ℂ)) (v : T.FermionModule) (i : T.FermionSpecies) :
     T.repLorentzFermionModule Λ v i = (T.fermion i).repLorentz Λ (v i)
 ```
 
-**`GaugeFieldData.repJetFermionModule`**, a def, [line 130](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/GaugeFieldData/FermionMatterField.lean#L130).
+**`GaugeFieldData.repJetFermionModule`**, a def, [line 130](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/GaugeFieldData/FermionMatterField.lean#L130).
 
 > The action of the jets of gauge transformations on the jets of the fermionic
 > module, acting species by species. Like `repLorentzFermionModule` it is typed on
@@ -124,7 +124,7 @@ noncomputable def repJetFermionModule :
     Representation ℂ GJ (SpaceTimeAlgebra ⊗[ℂ] T.FermionModule)
 ```
 
-**`GaugeFieldData.repJetFermionModule_smul`**, a lemma, [line 137](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/GaugeFieldData/FermionMatterField.lean#L137).
+**`GaugeFieldData.repJetFermionModule_smul`**, a lemma, [line 137](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/GaugeFieldData/FermionMatterField.lean#L137).
 
 > The jet gauge action on the fermionic module is fibrewise, as each species is.
 
@@ -134,7 +134,7 @@ lemma repJetFermionModule_smul (U : GJ) (χ : SpaceTimeAlgebra)
     T.repJetFermionModule U (χ • z) = χ • T.repJetFermionModule U z
 ```
 
-**`GaugeFieldData.lTensor_projFermionValue_repJetFermionModule`**, a lemma, [line 144](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/GaugeFieldData/FermionMatterField.lean#L144).
+**`GaugeFieldData.lTensor_projFermionValue_repJetFermionModule`**, a lemma, [line 144](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/GaugeFieldData/FermionMatterField.lean#L144).
 
 > A fermionic species is a subrepresentation of the jet gauge action on the fermionic
 > module: the projection onto its value space intertwines the two actions on the jets.
@@ -146,7 +146,7 @@ lemma lTensor_projFermionValue_repJetFermionModule (i : T.FermionSpecies) (U : G
         (LinearMap.lTensor SpaceTimeAlgebra (T.projFermionValue i))
 ```
 
-**`GaugeFieldData.fermionMatterField_repJet`**, a lemma, [line 151](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/GaugeFieldData/FermionMatterField.lean#L151).
+**`GaugeFieldData.fermionMatterField_repJet`**, a lemma, [line 151](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/GaugeFieldData/FermionMatterField.lean#L151).
 
 > The jet gauge action of the fermionic matter field is that of the fermionic module.
 
@@ -155,7 +155,7 @@ lemma fermionMatterField_repJet (w : ℕ) (h : ∀ i, (T.fermion i).massWeight =
     (T.fermionMatterField w h).repJet = T.repJetFermionModule
 ```
 
-**`GaugeFieldData.fermionMatterField_repLorentz`**, a lemma, [line 155](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/GaugeFieldData/FermionMatterField.lean#L155).
+**`GaugeFieldData.fermionMatterField_repLorentz`**, a lemma, [line 155](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/GaugeFieldData/FermionMatterField.lean#L155).
 
 > The Lorentz action of the fermionic matter field is that of the fermionic module.
 
@@ -164,7 +164,7 @@ lemma fermionMatterField_repLorentz (w : ℕ) (h : ∀ i, (T.fermion i).massWeig
     (T.fermionMatterField w h).repLorentz = T.repLorentzFermionModule
 ```
 
-**`GaugeFieldData.fermionMatterField_repLorentz_apply`**, a lemma, [line 160](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/GaugeFieldData/FermionMatterField.lean#L160).
+**`GaugeFieldData.fermionMatterField_repLorentz_apply`**, a lemma, [line 160](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/GaugeFieldData/FermionMatterField.lean#L160).
 
 > The Lorentz group acts on a fermionic configuration species by species.
 
@@ -175,7 +175,7 @@ lemma fermionMatterField_repLorentz_apply (w : ℕ)
     (T.fermionMatterField w h).repLorentz Λ v i = (T.fermion i).repLorentz Λ (v i)
 ```
 
-**`GaugeFieldData.fermionMatterField_repAlgebra_apply`**, a lemma, [line 167](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/GaugeFieldData/FermionMatterField.lean#L167).
+**`GaugeFieldData.fermionMatterField_repAlgebra_apply`**, a lemma, [line 167](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/GaugeFieldData/FermionMatterField.lean#L167).
 
 > The gauge algebra acts on a fermionic configuration species by species.
 
@@ -186,7 +186,7 @@ lemma fermionMatterField_repAlgebra_apply (w : ℕ)
     (T.fermionMatterField w h).repAlgebra c v i = (T.fermion i).repAlgebra c (v i)
 ```
 
-**`GaugeFieldData.fermionMatterField_repJet_apply`**, a lemma, [line 175](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/GaugeFieldData/FermionMatterField.lean#L175).
+**`GaugeFieldData.fermionMatterField_repJet_apply`**, a lemma, [line 175](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/GaugeFieldData/FermionMatterField.lean#L175).
 
 > The jets of gauge transformations act on the jets of the fermionic field species by
 > species, through the identification `jetPiEquiv` of the jets of the fermionic module
@@ -201,7 +201,7 @@ lemma fermionMatterField_repJet_apply (w : ℕ)
         (fun i => (T.fermion i).repJet U (jetPiEquiv T.FermionValue z i))
 ```
 
-**`GaugeFieldData.repCoeff_fermionMatterField`**, a lemma, [line 184](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/GaugeFieldData/FermionMatterField.lean#L184).
+**`GaugeFieldData.repCoeff_fermionMatterField`**, a lemma, [line 184](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/GaugeFieldData/FermionMatterField.lean#L184).
 
 > The base-point Taylor coefficients of the fermionic jet action are those of the
 > species, index by index.
@@ -216,7 +216,7 @@ lemma repCoeff_fermionMatterField (w : ℕ) (h : ∀ i, (T.fermion i).massWeight
 
 ### A.2. The species as subrepresentations
 
-**`GaugeFieldData.fermionMatterField_repLorentz_inclFermionValue`**, a lemma, [line 201](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/GaugeFieldData/FermionMatterField.lean#L201).
+**`GaugeFieldData.fermionMatterField_repLorentz_inclFermionValue`**, a lemma, [line 201](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/GaugeFieldData/FermionMatterField.lean#L201).
 
 > **A fermionic species is a Lorentz subrepresentation of the fermionic matter field**:
 > including a value of one species and then transforming is transforming and then
@@ -231,7 +231,7 @@ lemma fermionMatterField_repLorentz_inclFermionValue (w : ℕ)
       = T.inclFermionValue i ((T.fermion i).repLorentz Λ x)
 ```
 
-**`GaugeFieldData.fermionMatterField_repAlgebra_inclFermionValue`**, a lemma, [line 212](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/GaugeFieldData/FermionMatterField.lean#L212).
+**`GaugeFieldData.fermionMatterField_repAlgebra_inclFermionValue`**, a lemma, [line 212](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/GaugeFieldData/FermionMatterField.lean#L212).
 
 > **A fermionic species is a subrepresentation of the gauge algebra action** on the
 > fermionic matter field, for the same reason: the gauge algebra does not mix the
@@ -245,7 +245,7 @@ lemma fermionMatterField_repAlgebra_inclFermionValue (w : ℕ)
       = T.inclFermionValue i ((T.fermion i).repAlgebra c x)
 ```
 
-**`GaugeFieldData.finrank_fermionMatterField`**, a lemma, [line 222](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/GaugeFieldData/FermionMatterField.lean#L222).
+**`GaugeFieldData.finrank_fermionMatterField`**, a lemma, [line 222](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/GaugeFieldData/FermionMatterField.lean#L222).
 
 > The dimension of the fermionic matter field is the sum of the dimensions of the
 > species.
@@ -256,7 +256,7 @@ lemma finrank_fermionMatterField (w : ℕ) (h : ∀ i, (T.fermion i).massWeight 
       = ∑ i, Module.finrank ℂ (T.FermionValue i)
 ```
 
-**`GaugeFieldData.projFermionField`**, an abbrev, [line 231](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/GaugeFieldData/FermionMatterField.lean#L231).
+**`GaugeFieldData.projFermionField`**, an abbrev, [line 231](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/GaugeFieldData/FermionMatterField.lean#L231).
 
 > The projection of the fermionic matter field onto one species, typed as a map out of
 > `(T.fermionMatterField w h).V` rather than out of `T.FermionModule`. The two are the same
@@ -275,4 +275,4 @@ noncomputable abbrev projFermionField (w : ℕ) (h : ∀ i, (T.fermion i).massWe
 
 ## Sources
 
-- [PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/GaugeFieldData/FermionMatterField.lean at 2a1dfe43](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/GaugeFieldData/FermionMatterField.lean)
+- [PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/GaugeFieldData/FermionMatterField.lean at 8c87bdfb](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/GaugeFieldData/FermionMatterField.lean)

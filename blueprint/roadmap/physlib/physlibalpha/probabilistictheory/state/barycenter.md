@@ -1,14 +1,14 @@
 ---
 declaration: module
 origin: cited
-lean: ProbabilisticTheory.UnitalPositiveLinearMap.integrable_apply, ProbabilisticTheory.UnitalPositiveLinearMap.barycenter, ProbabilisticTheory.UnitalPositiveLinearMap.barycenter_apply
+lean: PhyslibAlpha.ProbabilisticTheory.UnitalPositiveLinearMap.integrable_apply, PhyslibAlpha.ProbabilisticTheory.UnitalPositiveLinearMap.barycenter, PhyslibAlpha.ProbabilisticTheory.UnitalPositiveLinearMap.barycenter_apply
 statement: formalized
 proof: formalized
 ---
 
 # Barycenters of random states
 
-The module `PhyslibAlpha.ProbabilisticTheory.State.Barycenter`, [PhyslibAlpha/ProbabilisticTheory/State/Barycenter.lean](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ProbabilisticTheory/State/Barycenter.lean): 3 declarations, 2 with a docstring.
+The module `PhyslibAlpha.ProbabilisticTheory.State.Barycenter`, [PhyslibAlpha/ProbabilisticTheory/State/Barycenter.lean](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/State/Barycenter.lean): 3 declarations, 2 with a docstring.
 
 > The barycenter of a probability measure on states: the state a random preparation produces.
 
@@ -28,7 +28,7 @@ The module `PhyslibAlpha.ProbabilisticTheory.State.Barycenter`, [PhyslibAlpha/Pr
 
 ## A. Integrability of expectation values
 
-**`ProbabilisticTheory.UnitalPositiveLinearMap.integrable_apply`**, a lemma, [line 56](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ProbabilisticTheory/State/Barycenter.lean#L56).
+**`PhyslibAlpha.ProbabilisticTheory.UnitalPositiveLinearMap.integrable_apply`**, a lemma, [line 56](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/State/Barycenter.lean#L56).
 
 > An expectation value is integrable against every probability measure on states.
 
@@ -39,7 +39,7 @@ lemma integrable_apply (μ : ProbabilityMeasure (stateSpace E)) (A : E) :
 
 ## B. Barycenters
 
-**`ProbabilisticTheory.UnitalPositiveLinearMap.barycenter`**, a def, [line 69](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ProbabilisticTheory/State/Barycenter.lean#L69).
+**`PhyslibAlpha.ProbabilisticTheory.UnitalPositiveLinearMap.barycenter`**, a def, [line 69](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/State/Barycenter.lean#L69).
 
 > The barycenter of `μ`: the state predicting, for every observable, the `μ`-average of the
 > predictions.
@@ -48,7 +48,7 @@ lemma integrable_apply (μ : ProbabilityMeasure (stateSpace E)) (A : E) :
 noncomputable def barycenter (μ : ProbabilityMeasure (stateSpace E)) : 𝓢[ℝ, E]
 ```
 
-**`ProbabilisticTheory.UnitalPositiveLinearMap.barycenter_apply`**, a lemma, [line 82](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ProbabilisticTheory/State/Barycenter.lean#L82).
+**`PhyslibAlpha.ProbabilisticTheory.UnitalPositiveLinearMap.barycenter_apply`**, a lemma, [line 82](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/State/Barycenter.lean#L82).
 
 ```lean
 lemma barycenter_apply (μ : ProbabilityMeasure (stateSpace E)) (A : E) :
@@ -61,4 +61,4 @@ lemma barycenter_apply (μ : ProbabilityMeasure (stateSpace E)) (A : E) :
 
 ## Sources
 
-- [PhyslibAlpha/ProbabilisticTheory/State/Barycenter.lean at 2a1dfe43](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ProbabilisticTheory/State/Barycenter.lean)
+- [PhyslibAlpha/ProbabilisticTheory/State/Barycenter.lean at 8c87bdfb](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/State/Barycenter.lean)

@@ -1,6 +1,6 @@
 # MicroCanonicalEnsemble
 
-The folder [Physlib/StatisticalMechanics/MicroCanonicalEnsemble/](https://github.com/leanprover-community/physlib/tree/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/StatisticalMechanics/MicroCanonicalEnsemble): 3 modules, an article each, in path order with Basic.lean first in its folder.
+The folder [Physlib/StatisticalMechanics/MicroCanonicalEnsemble/](https://github.com/leanprover-community/physlib/tree/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/StatisticalMechanics/MicroCanonicalEnsemble): 3 modules, an article each, in path order with Basic.lean first in its folder.
 
 - [The Microcanonical Ensemble](basic.md)
 - [Ideal gas as a Micro Canonical Ensemble](idealgas.md)

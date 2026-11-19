@@ -8,7 +8,7 @@ proof: formalized
 
 # Energy–position uncertainty in the open tight binding chain
 
-The module `PhyslibAlpha.CondensedMatter.TightBindingChain.Open.Uncertainty`, [PhyslibAlpha/CondensedMatter/TightBindingChain/Open/Uncertainty.lean](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/CondensedMatter/TightBindingChain/Open/Uncertainty.lean): 6 declarations, 6 with a docstring.
+The module `PhyslibAlpha.CondensedMatter.TightBindingChain.Open.Uncertainty`, [PhyslibAlpha/CondensedMatter/TightBindingChain/Open/Uncertainty.lean](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/CondensedMatter/TightBindingChain/Open/Uncertainty.lean): 6 declarations, 6 with a docstring.
 
 > The energy–position uncertainty relation for the tight binding chain with open boundaries.
 
@@ -34,7 +34,7 @@ The module `PhyslibAlpha.CondensedMatter.TightBindingChain.Open.Uncertainty`, [P
 
 ## A. The Hamiltonian and position as observables
 
-**`CondensedMatter.TightBindingChain.toObservable`**, a def, [line 63](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/CondensedMatter/TightBindingChain/Open/Uncertainty.lean#L63).
+**`CondensedMatter.TightBindingChain.toObservable`**, a def, [line 63](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/CondensedMatter/TightBindingChain/Open/Uncertainty.lean#L63).
 
 > A hermitian operator of the chain as an observable.
 
@@ -43,7 +43,7 @@ noncomputable def toObservable (A : T.HilbertSpace →ₗ[ℂ] T.HilbertSpace) (
     Observable (T.HilbertSpace →L[ℂ] T.HilbertSpace)
 ```
 
-**`CondensedMatter.TightBindingChain.openHamiltonianObservable`**, an abbrev, [line 68](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/CondensedMatter/TightBindingChain/Open/Uncertainty.lean#L68).
+**`CondensedMatter.TightBindingChain.openHamiltonianObservable`**, an abbrev, [line 68](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/CondensedMatter/TightBindingChain/Open/Uncertainty.lean#L68).
 
 > The Hamiltonian with open boundary conditions as an observable.
 
@@ -51,7 +51,7 @@ noncomputable def toObservable (A : T.HilbertSpace →ₗ[ℂ] T.HilbertSpace) (
 noncomputable abbrev openHamiltonianObservable
 ```
 
-**`CondensedMatter.TightBindingChain.positionObservable`**, an abbrev, [line 72](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/CondensedMatter/TightBindingChain/Open/Uncertainty.lean#L72).
+**`CondensedMatter.TightBindingChain.positionObservable`**, an abbrev, [line 72](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/CondensedMatter/TightBindingChain/Open/Uncertainty.lean#L72).
 
 > The position operator as an observable.
 
@@ -61,7 +61,7 @@ noncomputable abbrev positionObservable
 
 ## B. The bracket of the Hamiltonian and position
 
-**`CondensedMatter.TightBindingChain.inner_bracket_openHamiltonian_position`**, a lemma, [line 81](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/CondensedMatter/TightBindingChain/Open/Uncertainty.lean#L81).
+**`CondensedMatter.TightBindingChain.inner_bracket_openHamiltonian_position`**, a lemma, [line 81](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/CondensedMatter/TightBindingChain/Open/Uncertainty.lean#L81).
 
 > The bracket `⁅H, X⁆` only connects sites joined by hopping, weighted by their distance.
 
@@ -76,7 +76,7 @@ lemma inner_bracket_openHamiltonian_position (m n : Fin T.N) :
   rfl
 ```
 
-**`CondensedMatter.TightBindingChain.inner_bracket_openHamiltonian_position_eq`**, a lemma, [line 92](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/CondensedMatter/TightBindingChain/Open/Uncertainty.lean#L92).
+**`CondensedMatter.TightBindingChain.inner_bracket_openHamiltonian_position_eq`**, a lemma, [line 92](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/CondensedMatter/TightBindingChain/Open/Uncertainty.lean#L92).
 
 > The bracket `⁅H, X⁆` moves the particle exactly one site, a distance `a`, with amplitude
 > `± i a t / 2`; every other matrix element vanishes.
@@ -103,7 +103,7 @@ lemma inner_bracket_openHamiltonian_position_eq (m n : Fin T.N) :
 
 ## C. The uncertainty relation
 
-**`CondensedMatter.TightBindingChain.robertson_schrodinger_openHamiltonian_position`**, a lemma, [line 118](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/CondensedMatter/TightBindingChain/Open/Uncertainty.lean#L118).
+**`CondensedMatter.TightBindingChain.robertson_schrodinger_openHamiltonian_position`**, a lemma, [line 118](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/CondensedMatter/TightBindingChain/Open/Uncertainty.lean#L118).
 
 > **Energy–position uncertainty of the open tight binding chain.** In every state `ω`,
 > `Cov(H, X)² + ⟨⁅H, X⁆⟩² ≤ Var H · Var X`.
@@ -129,4 +129,4 @@ lemma robertson_schrodinger_openHamiltonian_position
 
 ## Sources
 
-- [PhyslibAlpha/CondensedMatter/TightBindingChain/Open/Uncertainty.lean at 2a1dfe43](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/CondensedMatter/TightBindingChain/Open/Uncertainty.lean)
+- [PhyslibAlpha/CondensedMatter/TightBindingChain/Open/Uncertainty.lean at 8c87bdfb](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/CondensedMatter/TightBindingChain/Open/Uncertainty.lean)

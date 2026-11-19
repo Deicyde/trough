@@ -8,7 +8,7 @@ proof: formalized
 
 # Vectors in the causal future of the origin
 
-The module `Physlib.Relativity.Causality.CausallyFollows`, [Physlib/Relativity/Causality/CausallyFollows.lean](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/Relativity/Causality/CausallyFollows.lean): 8 declarations, 8 with a docstring.
+The module `Physlib.Relativity.Causality.CausallyFollows`, [Physlib/Relativity/Causality/CausallyFollows.lean](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Relativity/Causality/CausallyFollows.lean): 8 declarations, 8 with a docstring.
 
 ## i. Overview
 
@@ -36,7 +36,7 @@ The module `Physlib.Relativity.Causality.CausallyFollows`, [Physlib/Relativity/C
 
 ## A. The causal future of the origin
 
-**`Lorentz.Vector.causallyFollows_zero_iff`**, a lemma, [line 63](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/Relativity/Causality/CausallyFollows.lean#L63).
+**`Lorentz.Vector.causallyFollows_zero_iff`**, a lemma, [line 63](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Relativity/Causality/CausallyFollows.lean#L63).
 
 > A vector is in the causal future of the origin if and only if it is time-like or light-like
 > (`0 ≤ ⟪u, u⟫ₘ`) with a nonnegative time component.
@@ -46,7 +46,7 @@ lemma causallyFollows_zero_iff {d : ℕ} {u : Vector d} :
     causallyFollows 0 u ↔ 0 ≤ ⟪u, u⟫ₘ ∧ 0 ≤ u.timeComponent
 ```
 
-**`Lorentz.Vector.causallyFollows_zero_sub`**, a lemma, [line 85](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/Relativity/Causality/CausallyFollows.lean#L85).
+**`Lorentz.Vector.causallyFollows_zero_sub`**, a lemma, [line 85](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Relativity/Causality/CausallyFollows.lean#L85).
 
 > The vector from `p` to `q` is in the causal future of the origin when `q` causally
 > follows `p`.
@@ -58,7 +58,7 @@ lemma causallyFollows_zero_sub {d : ℕ} {p q : Vector d} (h : causallyFollows p
 
 ## B. The reverse Cauchy-Schwarz inequality
 
-**`Lorentz.Vector.norm_spatialPart_le_timeComponent_of_causallyFollows`**, a lemma, [line 98](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/Relativity/Causality/CausallyFollows.lean#L98).
+**`Lorentz.Vector.norm_spatialPart_le_timeComponent_of_causallyFollows`**, a lemma, [line 98](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Relativity/Causality/CausallyFollows.lean#L98).
 
 > For a vector in the causal future of the origin, the Euclidean norm of the spatial part is at
 > most the time component.
@@ -68,7 +68,7 @@ lemma norm_spatialPart_le_timeComponent_of_causallyFollows {d : ℕ} {u : Vector
     (hu : causallyFollows 0 u) : ‖u.spatialPart‖ ≤ u.timeComponent
 ```
 
-**`Lorentz.Vector.sqrt_mul_sqrt_le_minkowskiProduct_of_causallyFollows`**, a lemma, [line 106](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/Relativity/Causality/CausallyFollows.lean#L106).
+**`Lorentz.Vector.sqrt_mul_sqrt_le_minkowskiProduct_of_causallyFollows`**, a lemma, [line 106](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Relativity/Causality/CausallyFollows.lean#L106).
 
 > The reverse Cauchy-Schwarz inequality: for `u`, `v` in the causal future of the origin,
 > `√⟪u, u⟫ₘ √⟪v, v⟫ₘ ≤ ⟪u, v⟫ₘ`.
@@ -80,7 +80,7 @@ lemma sqrt_mul_sqrt_le_minkowskiProduct_of_causallyFollows {d : ℕ} {u v : Vect
 
 ## C. The reverse triangle inequality
 
-**`Lorentz.Vector.sqrt_add_sqrt_le_sqrt_add_of_causallyFollows`**, a lemma, [line 138](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/Relativity/Causality/CausallyFollows.lean#L138).
+**`Lorentz.Vector.sqrt_add_sqrt_le_sqrt_add_of_causallyFollows`**, a lemma, [line 138](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Relativity/Causality/CausallyFollows.lean#L138).
 
 > The reverse triangle inequality: for `u`, `v` in the causal future of the origin,
 > `√⟪u, u⟫ₘ + √⟪v, v⟫ₘ ≤ √⟪u + v, u + v⟫ₘ`.
@@ -91,7 +91,7 @@ lemma sqrt_add_sqrt_le_sqrt_add_of_causallyFollows {d : ℕ} {u v : Vector d}
     √⟪u, u⟫ₘ + √⟪v, v⟫ₘ ≤ √⟪u + v, u + v⟫ₘ
 ```
 
-**`Lorentz.Vector.causallyFollows_zero_add_of_causallyFollows`**, a lemma, [line 151](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/Relativity/Causality/CausallyFollows.lean#L151).
+**`Lorentz.Vector.causallyFollows_zero_add_of_causallyFollows`**, a lemma, [line 151](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Relativity/Causality/CausallyFollows.lean#L151).
 
 > The sum of two vectors in the causal future of the origin is in the causal future of the
 > origin.
@@ -103,7 +103,7 @@ lemma causallyFollows_zero_add_of_causallyFollows {d : ℕ} {u v : Vector d}
 
 ## D. The equality cases
 
-**`Lorentz.Vector.minkowskiProduct_eq_iff_of_causallyFollows`**, a lemma, [line 174](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/Relativity/Causality/CausallyFollows.lean#L174).
+**`Lorentz.Vector.minkowskiProduct_eq_iff_of_causallyFollows`**, a lemma, [line 174](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Relativity/Causality/CausallyFollows.lean#L174).
 
 > Equality in the reverse Cauchy-Schwarz inequality: for `u`, `v` in the causal future of the
 > origin, `⟪u, v⟫ₘ = √⟪u, u⟫ₘ √⟪v, v⟫ₘ` if and only if one of the vectors is a nonnegative
@@ -115,7 +115,7 @@ lemma minkowskiProduct_eq_iff_of_causallyFollows {d : ℕ} {u v : Vector d} (hu 
     ⟪u, v⟫ₘ = √⟪u, u⟫ₘ * √⟪v, v⟫ₘ ↔ ∃ μ : ℝ, 0 ≤ μ ∧ (v = μ • u ∨ u = μ • v)
 ```
 
-**`Lorentz.Vector.sqrt_add_eq_iff_of_causallyFollows`**, a lemma, [line 255](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/Relativity/Causality/CausallyFollows.lean#L255).
+**`Lorentz.Vector.sqrt_add_eq_iff_of_causallyFollows`**, a lemma, [line 255](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Relativity/Causality/CausallyFollows.lean#L255).
 
 > Equality in the reverse triangle inequality holds if and only if equality holds in the
 > reverse Cauchy-Schwarz inequality.
@@ -137,4 +137,4 @@ lemma sqrt_add_eq_iff_of_causallyFollows {d : ℕ} {u v : Vector d} (hu : causal
 
 ## Sources
 
-- [Physlib/Relativity/Causality/CausallyFollows.lean at 2a1dfe43](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/Relativity/Causality/CausallyFollows.lean)
+- [Physlib/Relativity/Causality/CausallyFollows.lean at 8c87bdfb](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Relativity/Causality/CausallyFollows.lean)

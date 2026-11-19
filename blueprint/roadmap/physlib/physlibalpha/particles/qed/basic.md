@@ -8,7 +8,7 @@ proof: formalized
 
 # The jet algebras of quantum electrodynamics
 
-The module `PhyslibAlpha.Particles.QED.Basic`, [PhyslibAlpha/Particles/QED/Basic.lean](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/QED/Basic.lean): 150 declarations (5 instances with no name), 74 with a docstring.
+The module `PhyslibAlpha.Particles.QED.Basic`, [PhyslibAlpha/Particles/QED/Basic.lean](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/QED/Basic.lean): 150 declarations (5 instances with no name), 74 with a docstring.
 
 ## i. Overview
 
@@ -98,7 +98,7 @@ The module `PhyslibAlpha.Particles.QED.Basic`, [PhyslibAlpha/Particles/QED/Basic
 > functions on a multiset, the transport recurses along the *canonical sorted
 > list* of the multiset, threading the chosen indices through a continuation.
 
-**`QED.indexList`**, a def, [line 149](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/QED/Basic.lean#L149).
+**`QED.indexList`**, a def, [line 149](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/QED/Basic.lean#L149).
 
 > The canonical sorted list of a multiset of spacetime directions, sorted
 > through `Fin 1 ⊕ Fin 3 ≃ Fin 4`.
@@ -107,33 +107,33 @@ The module `PhyslibAlpha.Particles.QED.Basic`, [PhyslibAlpha/Particles/QED/Basic
 noncomputable def indexList (s : Multiset (Fin 1 ⊕ Fin 3)) : List (Fin 1 ⊕ Fin 3)
 ```
 
-**`QED.indexList_zero`**, a lemma, [line 154](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/QED/Basic.lean#L154).
+**`QED.indexList_zero`**, a lemma, [line 154](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/QED/Basic.lean#L154).
 
 ```lean
 lemma indexList_zero : indexList 0 = []
 ```
 
-**`QED.indexList_singleton`**, a lemma, [line 158](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/QED/Basic.lean#L158).
+**`QED.indexList_singleton`**, a lemma, [line 158](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/QED/Basic.lean#L158).
 
 ```lean
 lemma indexList_singleton (μ : Fin 1 ⊕ Fin 3) : indexList {μ} = [μ]
 ```
 
-**`QED.mem_indexList`**, a lemma, [line 161](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/QED/Basic.lean#L161).
+**`QED.mem_indexList`**, a lemma, [line 161](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/QED/Basic.lean#L161).
 
 ```lean
 lemma mem_indexList {t : Multiset (Fin 1 ⊕ Fin 3)} {a : Fin 1 ⊕ Fin 3} :
     a ∈ indexList t ↔ a ∈ t
 ```
 
-**`QED.indexList_length`**, a lemma, [line 170](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/QED/Basic.lean#L170).
+**`QED.indexList_length`**, a lemma, [line 170](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/QED/Basic.lean#L170).
 
 ```lean
 lemma indexList_length (t : Multiset (Fin 1 ⊕ Fin 3)) :
     (indexList t).length = Multiset.card t
 ```
 
-**`QED.classRep`**, a def, [line 176](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/QED/Basic.lean#L176).
+**`QED.classRep`**, a def, [line 176](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/QED/Basic.lean#L176).
 
 > The canonical representative of a nonempty multiset of spacetime
 > directions: the head of its canonical sorted list.
@@ -142,13 +142,13 @@ lemma indexList_length (t : Multiset (Fin 1 ⊕ Fin 3)) :
 noncomputable def classRep (t : Multiset (Fin 1 ⊕ Fin 3)) : Fin 1 ⊕ Fin 3
 ```
 
-**`QED.classRep_mem`**, a lemma, [line 179](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/QED/Basic.lean#L179).
+**`QED.classRep_mem`**, a lemma, [line 179](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/QED/Basic.lean#L179).
 
 ```lean
 lemma classRep_mem {t : Multiset (Fin 1 ⊕ Fin 3)} (ht : t ≠ 0) : classRep t ∈ t
 ```
 
-**`QED.derivSum`**, a def, [line 195](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/QED/Basic.lean#L195).
+**`QED.derivSum`**, a def, [line 195](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/QED/Basic.lean#L195).
 
 > The Lorentz transport of a family indexed by derivative multisets along a
 > list of derivative directions: each direction in the list is summed against
@@ -161,7 +161,7 @@ noncomputable def derivSum {M : Type*} [AddCommMonoid M] [Module ℝ M]
     List (Fin 1 ⊕ Fin 3) → (Multiset (Fin 1 ⊕ Fin 3) → M) → M
 ```
 
-**`QED.derivSum_nil`**, a lemma, [line 202](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/QED/Basic.lean#L202).
+**`QED.derivSum_nil`**, a lemma, [line 202](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/QED/Basic.lean#L202).
 
 ```lean
 lemma derivSum_nil {M : Type*} [AddCommMonoid M] [Module ℝ M]
@@ -169,7 +169,7 @@ lemma derivSum_nil {M : Type*} [AddCommMonoid M] [Module ℝ M]
     derivSum Λ [] k = k 0
 ```
 
-**`QED.derivSum_cons`**, a lemma, [line 207](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/QED/Basic.lean#L207).
+**`QED.derivSum_cons`**, a lemma, [line 207](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/QED/Basic.lean#L207).
 
 ```lean
 lemma derivSum_cons {M : Type*} [AddCommMonoid M] [Module ℝ M]
@@ -188,7 +188,7 @@ lemma derivSum_cons {M : Type*} [AddCommMonoid M] [Module ℝ M]
 > so only the number of times each direction occurs matters.  The jet algebra is
 > the algebra of real polynomials in these symbols.
 
-**`QED.Photon.JetGenerators`**, an inductive, [line 230](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/QED/Basic.lean#L230).
+**`QED.Photon.JetGenerators`**, an inductive, [line 230](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/QED/Basic.lean#L230).
 
 > The jet coordinates of the electromagnetic potential: the symbol `∂_s A_μ`,
 > the `s`-th derivative of the `μ`-th covariant component.
@@ -200,7 +200,7 @@ inductive JetGenerators where
   deriving DecidableEq
 ```
 
-**`QED.Photon.JetGenerators.massWeight`**, a def, [line 237](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/QED/Basic.lean#L237).
+**`QED.Photon.JetGenerators.massWeight`**, a def, [line 237](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/QED/Basic.lean#L237).
 
 > The mass weight (twice the mass dimension) of a photon jet coordinate:
 > the potential has mass dimension one and each derivative adds one.
@@ -209,7 +209,7 @@ inductive JetGenerators where
 def JetGenerators.massWeight : JetGenerators → ℕ
 ```
 
-**`QED.Photon.JetGenerators.indexClass`**, a def, [line 243](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/QED/Basic.lean#L243).
+**`QED.Photon.JetGenerators.indexClass`**, a def, [line 243](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/QED/Basic.lean#L243).
 
 > The symmetrized-index class of a photon jet coordinate: under a gauge
 > transformation `∂_s A_μ` shifts by `∂_s ∂_μ χ`, which depends only on the
@@ -219,7 +219,7 @@ def JetGenerators.massWeight : JetGenerators → ℕ
 def JetGenerators.indexClass : JetGenerators → Multiset (Fin 1 ⊕ Fin 3)
 ```
 
-**`QED.Photon.JetGenerators.classProj`**, a def, [line 248](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/QED/Basic.lean#L248).
+**`QED.Photon.JetGenerators.classProj`**, a def, [line 248](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/QED/Basic.lean#L248).
 
 > The canonical jet coordinate of a symmetrized-index class: the coordinate
 > whose Lorentz index is the canonical representative of the class.
@@ -228,7 +228,7 @@ def JetGenerators.indexClass : JetGenerators → Multiset (Fin 1 ⊕ Fin 3)
 noncomputable def JetGenerators.classProj (j : JetGenerators) : JetGenerators
 ```
 
-**`QED.Photon.JetAlgebra`**, an abbrev, [line 252](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/QED/Basic.lean#L252).
+**`QED.Photon.JetAlgebra`**, an abbrev, [line 252](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/QED/Basic.lean#L252).
 
 > The jet algebra of the photon: real polynomials in the jet coordinates.
 
@@ -236,7 +236,7 @@ noncomputable def JetGenerators.classProj (j : JetGenerators) : JetGenerators
 abbrev JetAlgebra : Type
 ```
 
-**`QED.Photon.JetAlgebra.coord`**, a def, [line 257](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/QED/Basic.lean#L257).
+**`QED.Photon.JetAlgebra.coord`**, a def, [line 257](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/QED/Basic.lean#L257).
 
 > The jet coordinate `∂_s A_μ` as an element of the jet algebra.
 
@@ -252,7 +252,7 @@ noncomputable def coord (s : Multiset (Fin 1 ⊕ Fin 3)) (μ : Fin 1 ⊕ Fin 3) 
 > the base point, which is what `GaugeJet` records; the shift of `∂_s A_μ` is
 > then the value of that family at `s + {μ}`.
 
-**`QED.Photon.JetAlgebra.GaugeJet`**, an abbrev, [line 275](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/QED/Basic.lean#L275).
+**`QED.Photon.JetAlgebra.GaugeJet`**, an abbrev, [line 275](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/QED/Basic.lean#L275).
 
 > A photon gauge jet: the family `s ↦ ∂_s χ` of symmetrised derivatives of a
 > gauge function at the base point.  This is all the photon jet algebra sees of
@@ -262,7 +262,7 @@ noncomputable def coord (s : Multiset (Fin 1 ⊕ Fin 3)) (μ : Fin 1 ⊕ Fin 3) 
 abbrev GaugeJet : Type
 ```
 
-**`QED.Photon.JetAlgebra.gaugeAction`**, a def, [line 279](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/QED/Basic.lean#L279).
+**`QED.Photon.JetAlgebra.gaugeAction`**, a def, [line 279](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/QED/Basic.lean#L279).
 
 > The gauge action on the photon jet algebra: the algebra map determined by
 > `∂_s A_μ ↦ ∂_s A_μ + ∂_s ∂_μ χ`.
@@ -271,14 +271,14 @@ abbrev GaugeJet : Type
 noncomputable def gaugeAction (c : GaugeJet) : JetAlgebra →ₐ[ℝ] JetAlgebra
 ```
 
-**`QED.Photon.JetAlgebra.gaugeAction_coord`**, a lemma, [line 284](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/QED/Basic.lean#L284).
+**`QED.Photon.JetAlgebra.gaugeAction_coord`**, a lemma, [line 284](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/QED/Basic.lean#L284).
 
 ```lean
 lemma gaugeAction_coord (c : GaugeJet) (s : Multiset (Fin 1 ⊕ Fin 3)) (μ : Fin 1 ⊕ Fin 3) :
     gaugeAction c (coord s μ) = coord s μ + MvPolynomial.C (c (s + {μ}))
 ```
 
-**`QED.Photon.JetAlgebra.gaugeAction_C`**, a lemma, [line 289](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/QED/Basic.lean#L289).
+**`QED.Photon.JetAlgebra.gaugeAction_C`**, a lemma, [line 289](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/QED/Basic.lean#L289).
 
 ```lean
 lemma gaugeAction_C (c : GaugeJet) (r : ℝ) :
@@ -292,7 +292,7 @@ lemma gaugeAction_C (c : GaugeJet) (r : ℝ) :
 > one, sorting `s` through `Fin 1 ⊕ Fin 3 ≃ Fin 4`.  For a `C^∞` potential the
 > choice is immaterial, by Clairaut's theorem (`SpaceTime.deriv_commute`).
 
-**`QED.Photon.JetAlgebra.derivMultiset`**, a def, [line 306](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/QED/Basic.lean#L306).
+**`QED.Photon.JetAlgebra.derivMultiset`**, a def, [line 306](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/QED/Basic.lean#L306).
 
 > The iterated partial derivative `∂_s f` along a multiset `s` of spacetime
 > directions, taken in the canonical order obtained by sorting `s`.
@@ -302,13 +302,13 @@ noncomputable def derivMultiset (s : Multiset (Fin 1 ⊕ Fin 3)) (f : SpaceTime 
     SpaceTime 3 → ℝ
 ```
 
-**`QED.Photon.JetAlgebra.derivMultiset_zero`**, a lemma, [line 312](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/QED/Basic.lean#L312).
+**`QED.Photon.JetAlgebra.derivMultiset_zero`**, a lemma, [line 312](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/QED/Basic.lean#L312).
 
 ```lean
 lemma derivMultiset_zero (f : SpaceTime 3 → ℝ) : derivMultiset 0 f = f
 ```
 
-**`QED.Photon.JetAlgebra.derivMultiset_singleton`**, a lemma, [line 316](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/QED/Basic.lean#L316).
+**`QED.Photon.JetAlgebra.derivMultiset_singleton`**, a lemma, [line 316](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/QED/Basic.lean#L316).
 
 ```lean
 lemma derivMultiset_singleton (μ : Fin 1 ⊕ Fin 3) (f : SpaceTime 3 → ℝ) :
@@ -321,7 +321,7 @@ lemma derivMultiset_singleton (μ : Fin 1 ⊕ Fin 3) (f : SpaceTime 3 → ℝ) :
 > a gauge potential carries a lower index, so the jet coordinate `∂_s A_μ`
 > evaluates to the `s`-th derivative of `A_μ = η_{μμ} A^μ`.
 
-**`QED.Photon.JetAlgebra.coPotential`**, a def, [line 331](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/QED/Basic.lean#L331).
+**`QED.Photon.JetAlgebra.coPotential`**, a def, [line 331](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/QED/Basic.lean#L331).
 
 > The covariant components `A_μ = η_{μμ} A^μ` of an electromagnetic potential.
 
@@ -330,7 +330,7 @@ noncomputable def coPotential (A : ElectromagneticPotential 3) (μ : Fin 1 ⊕ F
     SpaceTime 3 → ℝ
 ```
 
-**`QED.Photon.JetAlgebra.evalPotential`**, a def, [line 337](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/QED/Basic.lean#L337).
+**`QED.Photon.JetAlgebra.evalPotential`**, a def, [line 337](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/QED/Basic.lean#L337).
 
 > The evaluation of the photon jet algebra at an electromagnetic potential `A`:
 > the algebra map sending the formal jet coordinate `∂_s A_μ` to the honest
@@ -341,7 +341,7 @@ noncomputable def evalPotential (A : ElectromagneticPotential 3) :
     JetAlgebra →ₐ[ℝ] (SpaceTime 3 → ℝ)
 ```
 
-**`QED.Photon.JetAlgebra.evalPotential_coord`**, a lemma, [line 343](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/QED/Basic.lean#L343).
+**`QED.Photon.JetAlgebra.evalPotential_coord`**, a lemma, [line 343](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/QED/Basic.lean#L343).
 
 ```lean
 lemma evalPotential_coord (A : ElectromagneticPotential 3) (s : Multiset (Fin 1 ⊕ Fin 3))
@@ -356,7 +356,7 @@ lemma evalPotential_coord (A : ElectromagneticPotential 3) (s : Multiset (Fin 1 
 > `∂_s A_μ` — the index `μ` and each derivative index in `s` — is summed
 > against a row of `Λ⁻¹`.
 
-**`QED.Photon.JetAlgebra.lorentzAction`**, a def, [line 361](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/QED/Basic.lean#L361).
+**`QED.Photon.JetAlgebra.lorentzAction`**, a def, [line 361](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/QED/Basic.lean#L361).
 
 > The Lorentz action on the photon jet algebra: the algebra map transporting
 > every lower index of `∂_s A_μ` with `Λ⁻¹`.
@@ -365,7 +365,7 @@ lemma evalPotential_coord (A : ElectromagneticPotential 3) (s : Multiset (Fin 1 
 noncomputable def lorentzAction (Λ : LorentzGroup 3) : JetAlgebra →ₐ[ℝ] JetAlgebra
 ```
 
-**`QED.Photon.JetAlgebra.lorentzAction_coord`**, a lemma, [line 367](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/QED/Basic.lean#L367).
+**`QED.Photon.JetAlgebra.lorentzAction_coord`**, a lemma, [line 367](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/QED/Basic.lean#L367).
 
 ```lean
 lemma lorentzAction_coord (Λ : LorentzGroup 3) (s : Multiset (Fin 1 ⊕ Fin 3))
@@ -374,14 +374,14 @@ lemma lorentzAction_coord (Λ : LorentzGroup 3) (s : Multiset (Fin 1 ⊕ Fin 3))
       derivSum Λ (indexList s) fun t => ∑ ν, (Λ⁻¹).1 ν μ • coord t ν
 ```
 
-**`QED.Photon.JetAlgebra.lorentzAction_coord_zero`**, a lemma, [line 373](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/QED/Basic.lean#L373).
+**`QED.Photon.JetAlgebra.lorentzAction_coord_zero`**, a lemma, [line 373](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/QED/Basic.lean#L373).
 
 ```lean
 lemma lorentzAction_coord_zero (Λ : LorentzGroup 3) (μ : Fin 1 ⊕ Fin 3) :
     lorentzAction Λ (coord 0 μ) = ∑ ν, (Λ⁻¹).1 ν μ • coord 0 ν
 ```
 
-**`QED.Photon.JetAlgebra.lorentzAction_coord_singleton`**, a lemma, [line 377](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/QED/Basic.lean#L377).
+**`QED.Photon.JetAlgebra.lorentzAction_coord_singleton`**, a lemma, [line 377](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/QED/Basic.lean#L377).
 
 ```lean
 lemma lorentzAction_coord_singleton (Λ : LorentzGroup 3) (σ μ : Fin 1 ⊕ Fin 3) :
@@ -391,7 +391,7 @@ lemma lorentzAction_coord_singleton (Λ : LorentzGroup 3) (σ μ : Fin 1 ⊕ Fin
 
 ### B.6. The mass-weight scaling on the photon jet algebra
 
-**`QED.Photon.JetAlgebra.massScale`**, a def, [line 394](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/QED/Basic.lean#L394).
+**`QED.Photon.JetAlgebra.massScale`**, a def, [line 394](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/QED/Basic.lean#L394).
 
 > The mass-weight scaling on the photon jet algebra: the algebra map
 > multiplying each jet coordinate by `c` to the power of its mass weight.
@@ -400,7 +400,7 @@ lemma lorentzAction_coord_singleton (Λ : LorentzGroup 3) (σ μ : Fin 1 ⊕ Fin
 noncomputable def massScale (c : ℝ) : JetAlgebra →ₐ[ℝ] JetAlgebra
 ```
 
-**`QED.Photon.JetAlgebra.massScale_coord`**, a lemma, [line 398](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/QED/Basic.lean#L398).
+**`QED.Photon.JetAlgebra.massScale_coord`**, a lemma, [line 398](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/QED/Basic.lean#L398).
 
 ```lean
 lemma massScale_coord (c : ℝ) (s : Multiset (Fin 1 ⊕ Fin 3)) (μ : Fin 1 ⊕ Fin 3) :
@@ -409,7 +409,7 @@ lemma massScale_coord (c : ℝ) (s : Multiset (Fin 1 ⊕ Fin 3)) (μ : Fin 1 ⊕
 
 ### B.7. The formal total derivative on the photon jet algebra
 
-**`QED.Photon.JetAlgebra.jetDeriv`**, a def, [line 412](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/QED/Basic.lean#L412).
+**`QED.Photon.JetAlgebra.jetDeriv`**, a def, [line 412](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/QED/Basic.lean#L412).
 
 > The formal total spacetime derivative on the photon jet algebra in the
 > direction `ρ`: the derivation appending the derivative index,
@@ -419,7 +419,7 @@ lemma massScale_coord (c : ℝ) (s : Multiset (Fin 1 ⊕ Fin 3)) (μ : Fin 1 ⊕
 noncomputable def jetDeriv (ρ : Fin 1 ⊕ Fin 3) : JetAlgebra →ₗ[ℝ] JetAlgebra
 ```
 
-**`QED.Photon.JetAlgebra.jetDeriv_coord`**, a lemma, [line 417](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/QED/Basic.lean#L417).
+**`QED.Photon.JetAlgebra.jetDeriv_coord`**, a lemma, [line 417](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/QED/Basic.lean#L417).
 
 ```lean
 lemma jetDeriv_coord (ρ : Fin 1 ⊕ Fin 3) (s : Multiset (Fin 1 ⊕ Fin 3))
@@ -427,13 +427,13 @@ lemma jetDeriv_coord (ρ : Fin 1 ⊕ Fin 3) (s : Multiset (Fin 1 ⊕ Fin 3))
     jetDeriv ρ (coord s μ) = coord (s + {ρ}) μ
 ```
 
-**`QED.Photon.JetAlgebra.jetDeriv_one`**, a lemma, [line 424](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/QED/Basic.lean#L424).
+**`QED.Photon.JetAlgebra.jetDeriv_one`**, a lemma, [line 424](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/QED/Basic.lean#L424).
 
 ```lean
 lemma jetDeriv_one (ρ : Fin 1 ⊕ Fin 3) : jetDeriv ρ (1 : JetAlgebra) = 0
 ```
 
-**`QED.Photon.JetAlgebra.jetDeriv_mul`**, a lemma, [line 428](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/QED/Basic.lean#L428).
+**`QED.Photon.JetAlgebra.jetDeriv_mul`**, a lemma, [line 428](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/QED/Basic.lean#L428).
 
 > The total derivative is a derivation on the photon jet algebra.
 
@@ -442,7 +442,7 @@ lemma jetDeriv_mul (ρ : Fin 1 ⊕ Fin 3) (x y : JetAlgebra) :
     jetDeriv ρ (x * y) = jetDeriv ρ x * y + x * jetDeriv ρ y
 ```
 
-**`QED.Photon.JetAlgebra.jetDeriv_baseChange_mul`**, a lemma, [line 436](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/QED/Basic.lean#L436).
+**`QED.Photon.JetAlgebra.jetDeriv_baseChange_mul`**, a lemma, [line 436](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/QED/Basic.lean#L436).
 
 > The Leibniz rule for the complexified total derivative.
 
@@ -465,7 +465,7 @@ lemma jetDeriv_baseChange_mul (ρ : Fin 1 ⊕ Fin 3) (x y : ℂ ⊗[ℝ] JetAlge
 > `Multiset.antidiagonal` counts each splitting with its multiplicity, which is
 > exactly the multinomial weight of the Leibniz rule.
 
-**`QED.sum_map_antidiagonal_ite`**, a lemma, [line 476](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/QED/Basic.lean#L476).
+**`QED.sum_map_antidiagonal_ite`**, a lemma, [line 476](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/QED/Basic.lean#L476).
 
 > Summing an indicator supported on the splittings `(0, t)` over the
 > antidiagonal of `t` picks out `f t`: the splitting `(0, t)` occurs exactly
@@ -477,7 +477,7 @@ lemma sum_map_antidiagonal_ite {M : Type*} [AddCommMonoid M]
     ((t.antidiagonal).map fun p => if p.1 = 0 then f p.2 else 0).sum = f t
 ```
 
-**`QED.phaseAct`**, a def, [line 487](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/QED/Basic.lean#L487).
+**`QED.phaseAct`**, a def, [line 487](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/QED/Basic.lean#L487).
 
 > The Leibniz convolution of a phase family against a module-valued family
 > of jets, over the antidiagonal of the derivative multiset: the formal
@@ -491,13 +491,13 @@ noncomputable def phaseAct {M : Type*} [AddCommMonoid M] [Module ℂ M]
     Multiset (Fin 1 ⊕ Fin 3) → M
 ```
 
-**`QED.phaseAct_zero_arg`**, a lemma, [line 499](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/QED/Basic.lean#L499).
+**`QED.phaseAct_zero_arg`**, a lemma, [line 499](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/QED/Basic.lean#L499).
 
 ```lean
 lemma phaseAct_zero_arg : phaseAct u f 0 = u 0 • f 0
 ```
 
-**`QED.phaseAct_eq_sum`**, a lemma, [line 504](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/QED/Basic.lean#L504).
+**`QED.phaseAct_eq_sum`**, a lemma, [line 504](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/QED/Basic.lean#L504).
 
 > The convolution as a literal antidiagonal sum of products, for
 > scalar-valued families.
@@ -507,7 +507,7 @@ lemma phaseAct_eq_sum (s : Multiset (Fin 1 ⊕ Fin 3)) :
     phaseAct u v s = (s.antidiagonal.map fun p => u p.1 * v p.2).sum
 ```
 
-**`QED.phaseAct_add_singleton`**, a lemma, [line 509](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/QED/Basic.lean#L509).
+**`QED.phaseAct_add_singleton`**, a lemma, [line 509](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/QED/Basic.lean#L509).
 
 > The Leibniz rule of the convolution: differentiating a convolution
 > differentiates one factor at a time.
@@ -519,35 +519,35 @@ lemma phaseAct_add_singleton (a : Fin 1 ⊕ Fin 3) (s : Multiset (Fin 1 ⊕ Fin 
         phaseAct (fun t => u (t + {a})) f s
 ```
 
-**`QED.phaseAct_add_left`**, a lemma, [line 525](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/QED/Basic.lean#L525).
+**`QED.phaseAct_add_left`**, a lemma, [line 525](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/QED/Basic.lean#L525).
 
 ```lean
 lemma phaseAct_add_left (s : Multiset (Fin 1 ⊕ Fin 3)) :
     phaseAct (fun t => u₁ t + u₂ t) f s = phaseAct u₁ f s + phaseAct u₂ f s
 ```
 
-**`QED.phaseAct_add_right`**, a lemma, [line 530](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/QED/Basic.lean#L530).
+**`QED.phaseAct_add_right`**, a lemma, [line 530](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/QED/Basic.lean#L530).
 
 ```lean
 lemma phaseAct_add_right (s : Multiset (Fin 1 ⊕ Fin 3)) :
     phaseAct u (fun t => f t + g t) s = phaseAct u f s + phaseAct u g s
 ```
 
-**`QED.phaseAct_smul_left`**, a lemma, [line 535](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/QED/Basic.lean#L535).
+**`QED.phaseAct_smul_left`**, a lemma, [line 535](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/QED/Basic.lean#L535).
 
 ```lean
 lemma phaseAct_smul_left (c : ℂ) (s : Multiset (Fin 1 ⊕ Fin 3)) :
     phaseAct (fun t => c * u t) f s = c • phaseAct u f s
 ```
 
-**`QED.phaseAct_smul_right`**, a lemma, [line 542](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/QED/Basic.lean#L542).
+**`QED.phaseAct_smul_right`**, a lemma, [line 542](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/QED/Basic.lean#L542).
 
 ```lean
 lemma phaseAct_smul_right (c : ℂ) (s : Multiset (Fin 1 ⊕ Fin 3)) :
     phaseAct u (fun t => c • f t) s = c • phaseAct u f s
 ```
 
-**`QED.phaseAct_assoc`**, a lemma, [line 551](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/QED/Basic.lean#L551).
+**`QED.phaseAct_assoc`**, a lemma, [line 551](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/QED/Basic.lean#L551).
 
 > Associativity of the convolution: acting by `u` after `v` is acting by
 > the convolution `u ⋆ v`.
@@ -557,7 +557,7 @@ lemma phaseAct_assoc (s : Multiset (Fin 1 ⊕ Fin 3)) :
     phaseAct u (phaseAct v f) s = phaseAct (phaseAct u v) f s
 ```
 
-**`QED.phaseAct_comm`**, a lemma, [line 558](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/QED/Basic.lean#L558).
+**`QED.phaseAct_comm`**, a lemma, [line 558](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/QED/Basic.lean#L558).
 
 > Commutativity of the scalar convolution.
 
@@ -566,7 +566,7 @@ lemma phaseAct_comm (s : Multiset (Fin 1 ⊕ Fin 3)) :
     phaseAct u v s = phaseAct v u s
 ```
 
-**`QED.map_phaseAct`**, a lemma, [line 571](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/QED/Basic.lean#L571).
+**`QED.map_phaseAct`**, a lemma, [line 571](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/QED/Basic.lean#L571).
 
 > A linear map passes through the convolution.
 
@@ -576,7 +576,7 @@ lemma map_phaseAct {N : Type*} [AddCommMonoid N] [Module ℂ N] (L : M →ₗ[�
     L (phaseAct u f s) = phaseAct u (fun t => L (f t)) s
 ```
 
-**`QED.phaseAct_indicator`**, a lemma, [line 580](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/QED/Basic.lean#L580).
+**`QED.phaseAct_indicator`**, a lemma, [line 580](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/QED/Basic.lean#L580).
 
 > The convolution against the indicator of the empty multiset is the
 > identity: the splitting `(0, t)` occurs exactly once in the
@@ -587,7 +587,7 @@ lemma phaseAct_indicator (s : Multiset (Fin 1 ⊕ Fin 3)) :
     phaseAct (fun t => if t = 0 then 1 else 0) f s = f s
 ```
 
-**`QED.star_phaseAct`**, a lemma, [line 590](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/QED/Basic.lean#L590).
+**`QED.star_phaseAct`**, a lemma, [line 590](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/QED/Basic.lean#L590).
 
 > The star of a convolution is the convolution of the stars.
 
@@ -597,7 +597,7 @@ lemma star_phaseAct (s : Multiset (Fin 1 ⊕ Fin 3)) :
       phaseAct (fun t => star (u t)) (fun t => star (v t)) s
 ```
 
-**`QED.GaugeJet`**, a structure, [line 606](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/QED/Basic.lean#L606).
+**`QED.GaugeJet`**, a structure, [line 606](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/QED/Basic.lean#L606).
 
 > The jets of a `U(1)_em` gauge transformation with coupling `e`: the
 > derivative jets `χjet s = ∂_s χ` of the real gauge function and
@@ -626,13 +626,13 @@ structure GaugeJet (e : ℝ) where
 > one, so its gauge invariance only uses the Leibniz identity at order zero,
 > together with unitarity at the base point.
 
-**`QED.GaugeJet.star_phase_zero_unitary`**, a lemma, [line 632](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/QED/Basic.lean#L632).
+**`QED.GaugeJet.star_phase_zero_unitary`**, a lemma, [line 632](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/QED/Basic.lean#L632).
 
 ```lean
 lemma star_phase_zero_unitary : star (g.phase 0) * g.phase 0 = 1
 ```
 
-**`QED.GaugeJet.phase_singleton`**, a lemma, [line 638](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/QED/Basic.lean#L638).
+**`QED.GaugeJet.phase_singleton`**, a lemma, [line 638](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/QED/Basic.lean#L638).
 
 > The first derivative of the phase: the `s = 0` case of the Leibniz
 > identity, `∂_μ u = I e (∂_μ χ) u` at the base point.
@@ -642,7 +642,7 @@ lemma phase_singleton (μ : Fin 1 ⊕ Fin 3) :
     g.phase {μ} = Complex.I * e * (g.χjet {μ} * g.phase 0)
 ```
 
-**`QED.GaugeJet.star_phase_singleton`**, a lemma, [line 644](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/QED/Basic.lean#L644).
+**`QED.GaugeJet.star_phase_singleton`**, a lemma, [line 644](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/QED/Basic.lean#L644).
 
 > The first derivative of the conjugate phase,
 > `∂_μ ū = -I e (∂_μ χ) ū` at the base point.
@@ -652,7 +652,7 @@ lemma star_phase_singleton (μ : Fin 1 ⊕ Fin 3) :
     star (g.phase {μ}) = -(Complex.I * e * (g.χjet {μ} * star (g.phase 0)))
 ```
 
-**`QED.GaugeJet.trivial`**, a def, [line 651](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/QED/Basic.lean#L651).
+**`QED.GaugeJet.trivial`**, a def, [line 651](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/QED/Basic.lean#L651).
 
 > The trivial gauge jet: the jets of the constant gauge function `χ = 0`.
 
@@ -666,14 +666,14 @@ noncomputable def trivial (e : ℝ) : GaugeJet e
 > Leibniz rule.  Closure of the two axioms under this product is a consistency
 > check on the axiomatisation of `GaugeJet`.
 
-**`QED.GaugeJet.ext`**, a lemma, [line 675](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/QED/Basic.lean#L675).
+**`QED.GaugeJet.ext`**, a lemma, [line 675](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/QED/Basic.lean#L675).
 
 ```lean
 lemma ext {g₁ g₂ : GaugeJet e} (h1 : g₁.χjet = g₂.χjet)
     (h2 : g₁.phase = g₂.phase) : g₁ = g₂
 ```
 
-**An instance with no name**, [line 683](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/QED/Basic.lean#L683).
+**An instance with no name**, [line 683](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/QED/Basic.lean#L683).
 
 > The composite of two gauge jets: the gauge functions add and the phases
 > convolve by the Leibniz rule.
@@ -682,39 +682,39 @@ lemma ext {g₁ g₂ : GaugeJet e} (h1 : g₁.χjet = g₂.χjet)
 noncomputable instance : Mul (GaugeJet e)
 ```
 
-**`QED.GaugeJet.mul_χjet`**, a lemma, [line 726](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/QED/Basic.lean#L726).
+**`QED.GaugeJet.mul_χjet`**, a lemma, [line 726](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/QED/Basic.lean#L726).
 
 ```lean
 lemma mul_χjet (g₁ g₂ : GaugeJet e) : (g₁ * g₂).χjet = g₁.χjet + g₂.χjet
 ```
 
-**`QED.GaugeJet.mul_phase`**, a lemma, [line 729](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/QED/Basic.lean#L729).
+**`QED.GaugeJet.mul_phase`**, a lemma, [line 729](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/QED/Basic.lean#L729).
 
 ```lean
 lemma mul_phase (g₁ g₂ : GaugeJet e) :
     (g₁ * g₂).phase = phaseAct g₁.phase g₂.phase
 ```
 
-**An instance with no name**, [line 732](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/QED/Basic.lean#L732).
+**An instance with no name**, [line 732](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/QED/Basic.lean#L732).
 
 ```lean
 noncomputable instance : One (GaugeJet e)
 ```
 
-**`QED.GaugeJet.one_χjet`**, a lemma, [line 735](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/QED/Basic.lean#L735).
+**`QED.GaugeJet.one_χjet`**, a lemma, [line 735](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/QED/Basic.lean#L735).
 
 ```lean
 lemma one_χjet : (1 : GaugeJet e).χjet = 0
 ```
 
-**`QED.GaugeJet.one_phase`**, a lemma, [line 738](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/QED/Basic.lean#L738).
+**`QED.GaugeJet.one_phase`**, a lemma, [line 738](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/QED/Basic.lean#L738).
 
 ```lean
 lemma one_phase :
     (1 : GaugeJet e).phase = fun s => if s = 0 then (1 : ℂ) else 0
 ```
 
-**An instance with no name**, [line 743](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/QED/Basic.lean#L743).
+**An instance with no name**, [line 743](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/QED/Basic.lean#L743).
 
 > **The gauge jets form a commutative monoid**: the gauge symmetry data of
 > QED composes associatively, with the trivial gauge jet as the unit.
@@ -733,7 +733,7 @@ noncomputable instance : CommMonoid (GaugeJet e)
 > representation: `Sum.inl` indexes the left-handed and `Sum.inr` the
 > right-handed Weyl component.
 
-**`QED.Electron.JetGenerators`**, an inductive, [line 780](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/QED/Basic.lean#L780).
+**`QED.Electron.JetGenerators`**, an inductive, [line 780](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/QED/Basic.lean#L780).
 
 > The jet coordinates of the Dirac electron: the symbols `∂_s ψ_α` and
 > `∂_s ψ̄_α`, the `s`-th derivatives of the Dirac components and their
@@ -749,7 +749,7 @@ inductive JetGenerators where
   deriving DecidableEq
 ```
 
-**`QED.Electron.JetGenerators.massWeight`**, a def, [line 789](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/QED/Basic.lean#L789).
+**`QED.Electron.JetGenerators.massWeight`**, a def, [line 789](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/QED/Basic.lean#L789).
 
 > The mass weight (twice the mass dimension) of an electron jet coordinate:
 > a fermion has mass dimension `3/2` and each derivative adds one.
@@ -758,7 +758,7 @@ inductive JetGenerators where
 def JetGenerators.massWeight : JetGenerators → ℕ
 ```
 
-**`QED.Electron.JetComponentSpace`**, an abbrev, [line 795](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/QED/Basic.lean#L795).
+**`QED.Electron.JetComponentSpace`**, an abbrev, [line 795](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/QED/Basic.lean#L795).
 
 > The jet component space of the electron: the free complex module on the
 > jet coordinates.
@@ -767,7 +767,7 @@ def JetGenerators.massWeight : JetGenerators → ℕ
 abbrev JetComponentSpace : Type
 ```
 
-**`QED.Electron.JetAlgebra`**, an abbrev, [line 800](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/QED/Basic.lean#L800).
+**`QED.Electron.JetAlgebra`**, an abbrev, [line 800](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/QED/Basic.lean#L800).
 
 > The jet algebra of the electron: the exterior algebra on the free module
 > over the jet coordinates.  The exterior product implements the fermionic
@@ -777,7 +777,7 @@ abbrev JetComponentSpace : Type
 abbrev JetAlgebra : Type
 ```
 
-**`QED.Electron.JetAlgebra.ofGenerator`**, a def, [line 806](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/QED/Basic.lean#L806).
+**`QED.Electron.JetAlgebra.ofGenerator`**, a def, [line 806](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/QED/Basic.lean#L806).
 
 > The jet coordinate `∂_s ψ_α` or `∂_s ψ̄_α` as an element of the jet
 > algebra.
@@ -799,7 +799,7 @@ noncomputable def ofGenerator (j : JetGenerators) : JetAlgebra
 > component space and extends functorially to an algebra map of the exterior
 > algebra.
 
-**`QED.Electron.JetAlgebra.gaugeActionGenerator`**, a def, [line 828](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/QED/Basic.lean#L828).
+**`QED.Electron.JetAlgebra.gaugeActionGenerator`**, a def, [line 828](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/QED/Basic.lean#L828).
 
 > The gauge action on a single electron jet coordinate: the Leibniz
 > expansion of `∂_s (ū ψ_α)` and `∂_s (u ψ̄_α)` over the splittings of `s`.
@@ -809,7 +809,7 @@ noncomputable def gaugeActionGenerator {e : ℝ} (g : GaugeJet e) :
     JetGenerators → JetComponentSpace
 ```
 
-**`QED.Electron.JetAlgebra.gaugeActionCS`**, a def, [line 837](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/QED/Basic.lean#L837).
+**`QED.Electron.JetAlgebra.gaugeActionCS`**, a def, [line 837](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/QED/Basic.lean#L837).
 
 > The gauge action on the jet component space: the linear extension of the
 > Leibniz expansion on the jet coordinates.
@@ -819,14 +819,14 @@ noncomputable def gaugeActionCS {e : ℝ} (g : GaugeJet e) :
     JetComponentSpace →ₗ[ℂ] JetComponentSpace
 ```
 
-**`QED.Electron.JetAlgebra.gaugeActionCS_single`**, a lemma, [line 842](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/QED/Basic.lean#L842).
+**`QED.Electron.JetAlgebra.gaugeActionCS_single`**, a lemma, [line 842](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/QED/Basic.lean#L842).
 
 ```lean
 lemma gaugeActionCS_single {e : ℝ} (g : GaugeJet e) (j : JetGenerators) :
     gaugeActionCS g (Finsupp.single j 1) = gaugeActionGenerator g j
 ```
 
-**`QED.Electron.JetAlgebra.gaugeAction`**, a def, [line 848](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/QED/Basic.lean#L848).
+**`QED.Electron.JetAlgebra.gaugeAction`**, a def, [line 848](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/QED/Basic.lean#L848).
 
 > The gauge action on the electron jet algebra: the algebra map induced by
 > the Leibniz expansion on the jet coordinates.
@@ -836,7 +836,7 @@ noncomputable def gaugeAction {e : ℝ} (g : GaugeJet e) :
     JetAlgebra →ₐ[ℂ] JetAlgebra
 ```
 
-**`QED.Electron.JetAlgebra.gaugeAction_ofGenerator_dψ`**, a lemma, [line 852](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/QED/Basic.lean#L852).
+**`QED.Electron.JetAlgebra.gaugeAction_ofGenerator_dψ`**, a lemma, [line 852](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/QED/Basic.lean#L852).
 
 ```lean
 lemma gaugeAction_ofGenerator_dψ {e : ℝ} (g : GaugeJet e)
@@ -846,7 +846,7 @@ lemma gaugeAction_ofGenerator_dψ {e : ℝ} (g : GaugeJet e)
         star (g.phase p.1) • ofGenerator (.dψ p.2 α)).sum
 ```
 
-**`QED.Electron.JetAlgebra.gaugeAction_ofGenerator_dbarψ`**, a lemma, [line 863](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/QED/Basic.lean#L863).
+**`QED.Electron.JetAlgebra.gaugeAction_ofGenerator_dbarψ`**, a lemma, [line 863](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/QED/Basic.lean#L863).
 
 ```lean
 lemma gaugeAction_ofGenerator_dbarψ {e : ℝ} (g : GaugeJet e)
@@ -863,14 +863,14 @@ lemma gaugeAction_ofGenerator_dbarψ {e : ℝ} (g : GaugeJet e)
 > single splitting `(0, 0)`, and `antidiagonal {μ}` the two splittings
 > `(0, {μ})` and `({μ}, 0)`.
 
-**`QED.Electron.JetAlgebra.antidiagonal_singleton`**, a lemma, [line 885](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/QED/Basic.lean#L885).
+**`QED.Electron.JetAlgebra.antidiagonal_singleton`**, a lemma, [line 885](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/QED/Basic.lean#L885).
 
 ```lean
 lemma antidiagonal_singleton (μ : Fin 1 ⊕ Fin 3) :
     ({μ} : Multiset (Fin 1 ⊕ Fin 3)).antidiagonal = {(0, {μ}), ({μ}, 0)}
 ```
 
-**`QED.Electron.JetAlgebra.gaugeAction_ofGenerator_dψ_zero`**, a lemma, [line 893](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/QED/Basic.lean#L893).
+**`QED.Electron.JetAlgebra.gaugeAction_ofGenerator_dψ_zero`**, a lemma, [line 893](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/QED/Basic.lean#L893).
 
 ```lean
 lemma gaugeAction_ofGenerator_dψ_zero {e : ℝ} (g : GaugeJet e) (α : Fin 2 ⊕ Fin 2) :
@@ -878,7 +878,7 @@ lemma gaugeAction_ofGenerator_dψ_zero {e : ℝ} (g : GaugeJet e) (α : Fin 2 �
       star (g.phase 0) • ofGenerator (.dψ 0 α)
 ```
 
-**`QED.Electron.JetAlgebra.gaugeAction_ofGenerator_dbarψ_zero`**, a lemma, [line 900](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/QED/Basic.lean#L900).
+**`QED.Electron.JetAlgebra.gaugeAction_ofGenerator_dbarψ_zero`**, a lemma, [line 900](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/QED/Basic.lean#L900).
 
 ```lean
 lemma gaugeAction_ofGenerator_dbarψ_zero {e : ℝ} (g : GaugeJet e) (α : Fin 2 ⊕ Fin 2) :
@@ -886,7 +886,7 @@ lemma gaugeAction_ofGenerator_dbarψ_zero {e : ℝ} (g : GaugeJet e) (α : Fin 2
       g.phase 0 • ofGenerator (.dbarψ 0 α)
 ```
 
-**`QED.Electron.JetAlgebra.gaugeAction_ofGenerator_dψ_singleton`**, a lemma, [line 906](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/QED/Basic.lean#L906).
+**`QED.Electron.JetAlgebra.gaugeAction_ofGenerator_dψ_singleton`**, a lemma, [line 906](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/QED/Basic.lean#L906).
 
 ```lean
 lemma gaugeAction_ofGenerator_dψ_singleton {e : ℝ} (g : GaugeJet e)
@@ -896,7 +896,7 @@ lemma gaugeAction_ofGenerator_dψ_singleton {e : ℝ} (g : GaugeJet e)
         star (g.phase {μ}) • ofGenerator (.dψ 0 α)
 ```
 
-**`QED.Electron.JetAlgebra.gaugeAction_ofGenerator_dbarψ_singleton`**, a lemma, [line 914](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/QED/Basic.lean#L914).
+**`QED.Electron.JetAlgebra.gaugeAction_ofGenerator_dbarψ_singleton`**, a lemma, [line 914](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/QED/Basic.lean#L914).
 
 ```lean
 lemma gaugeAction_ofGenerator_dbarψ_singleton {e : ℝ} (g : GaugeJet e)
@@ -914,7 +914,7 @@ lemma gaugeAction_ofGenerator_dbarψ_singleton {e : ℝ} (g : GaugeJet e)
 > `Λ(M)` is the image of `M` under the covering map
 > `Lorentz.SL2C.toLorentzGroup`.
 
-**`QED.Electron.JetAlgebra.spinorRep`**, a def, [line 938](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/QED/Basic.lean#L938).
+**`QED.Electron.JetAlgebra.spinorRep`**, a def, [line 938](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/QED/Basic.lean#L938).
 
 > The Dirac spinor representation of `SL(2,ℂ)` in the chiral basis: the two
 > Weyl components transform in the two conjugate-dual fundamental
@@ -926,7 +926,7 @@ noncomputable def spinorRep (M : SL(2,ℂ)) :
     Matrix (Fin 2 ⊕ Fin 2) (Fin 2 ⊕ Fin 2) ℂ
 ```
 
-**`QED.Electron.JetAlgebra.lorentzActionGenerator`**, a def, [line 945](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/QED/Basic.lean#L945).
+**`QED.Electron.JetAlgebra.lorentzActionGenerator`**, a def, [line 945](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/QED/Basic.lean#L945).
 
 > The Lorentz action on a single electron jet coordinate: the spinor index
 > is rotated by the spinor representation (its conjugate for `∂_s ψ̄`) and the
@@ -937,7 +937,7 @@ noncomputable def lorentzActionGenerator (M : SL(2,ℂ)) :
     JetGenerators → JetComponentSpace
 ```
 
-**`QED.Electron.JetAlgebra.lorentzActionCS`**, a def, [line 953](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/QED/Basic.lean#L953).
+**`QED.Electron.JetAlgebra.lorentzActionCS`**, a def, [line 953](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/QED/Basic.lean#L953).
 
 > The Lorentz action on the jet component space.
 
@@ -946,14 +946,14 @@ noncomputable def lorentzActionCS (M : SL(2,ℂ)) :
     JetComponentSpace →ₗ[ℂ] JetComponentSpace
 ```
 
-**`QED.Electron.JetAlgebra.lorentzActionCS_single`**, a lemma, [line 958](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/QED/Basic.lean#L958).
+**`QED.Electron.JetAlgebra.lorentzActionCS_single`**, a lemma, [line 958](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/QED/Basic.lean#L958).
 
 ```lean
 lemma lorentzActionCS_single (M : SL(2,ℂ)) (j : JetGenerators) :
     lorentzActionCS M (Finsupp.single j 1) = lorentzActionGenerator M j
 ```
 
-**`QED.Electron.JetAlgebra.lorentzAction`**, a def, [line 964](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/QED/Basic.lean#L964).
+**`QED.Electron.JetAlgebra.lorentzAction`**, a def, [line 964](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/QED/Basic.lean#L964).
 
 > The Lorentz action on the electron jet algebra: the algebra map induced by
 > the action on the jet coordinates.
@@ -962,7 +962,7 @@ lemma lorentzActionCS_single (M : SL(2,ℂ)) (j : JetGenerators) :
 noncomputable def lorentzAction (M : SL(2,ℂ)) : JetAlgebra →ₐ[ℂ] JetAlgebra
 ```
 
-**`QED.Electron.JetAlgebra.lorentzAction_ofGenerator_dψ_zero`**, a lemma, [line 968](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/QED/Basic.lean#L968).
+**`QED.Electron.JetAlgebra.lorentzAction_ofGenerator_dψ_zero`**, a lemma, [line 968](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/QED/Basic.lean#L968).
 
 ```lean
 lemma lorentzAction_ofGenerator_dψ_zero (M : SL(2,ℂ)) (α : Fin 2 ⊕ Fin 2) :
@@ -970,7 +970,7 @@ lemma lorentzAction_ofGenerator_dψ_zero (M : SL(2,ℂ)) (α : Fin 2 ⊕ Fin 2) 
       ∑ β, spinorRep M α β • ofGenerator (.dψ 0 β)
 ```
 
-**`QED.Electron.JetAlgebra.lorentzAction_ofGenerator_dbarψ_zero`**, a lemma, [line 978](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/QED/Basic.lean#L978).
+**`QED.Electron.JetAlgebra.lorentzAction_ofGenerator_dbarψ_zero`**, a lemma, [line 978](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/QED/Basic.lean#L978).
 
 ```lean
 lemma lorentzAction_ofGenerator_dbarψ_zero (M : SL(2,ℂ)) (α : Fin 2 ⊕ Fin 2) :
@@ -978,7 +978,7 @@ lemma lorentzAction_ofGenerator_dbarψ_zero (M : SL(2,ℂ)) (α : Fin 2 ⊕ Fin 
       ∑ β, star (spinorRep M α β) • ofGenerator (.dbarψ 0 β)
 ```
 
-**`QED.Electron.JetAlgebra.lorentzAction_ofGenerator_dψ_singleton`**, a lemma, [line 987](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/QED/Basic.lean#L987).
+**`QED.Electron.JetAlgebra.lorentzAction_ofGenerator_dψ_singleton`**, a lemma, [line 987](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/QED/Basic.lean#L987).
 
 ```lean
 lemma lorentzAction_ofGenerator_dψ_singleton (M : SL(2,ℂ)) (σ : Fin 1 ⊕ Fin 3)
@@ -988,7 +988,7 @@ lemma lorentzAction_ofGenerator_dψ_singleton (M : SL(2,ℂ)) (σ : Fin 1 ⊕ Fi
         ofGenerator (.dψ {τ} β)
 ```
 
-**`QED.Electron.JetAlgebra.lorentzAction_ofGenerator_dbarψ_singleton`**, a lemma, [line 1003](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/QED/Basic.lean#L1003).
+**`QED.Electron.JetAlgebra.lorentzAction_ofGenerator_dbarψ_singleton`**, a lemma, [line 1003](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/QED/Basic.lean#L1003).
 
 ```lean
 lemma lorentzAction_ofGenerator_dbarψ_singleton (M : SL(2,ℂ)) (σ : Fin 1 ⊕ Fin 3)
@@ -1000,7 +1000,7 @@ lemma lorentzAction_ofGenerator_dbarψ_singleton (M : SL(2,ℂ)) (σ : Fin 1 ⊕
 
 ### D.5. The mass-weight scaling on the electron jet algebra
 
-**`QED.Electron.JetAlgebra.massScaleCS`**, a def, [line 1028](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/QED/Basic.lean#L1028).
+**`QED.Electron.JetAlgebra.massScaleCS`**, a def, [line 1028](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/QED/Basic.lean#L1028).
 
 > The mass-weight scaling on the jet component space: the diagonal map
 > multiplying each jet coordinate by `c` to the power of its mass weight.
@@ -1009,7 +1009,7 @@ lemma lorentzAction_ofGenerator_dbarψ_singleton (M : SL(2,ℂ)) (σ : Fin 1 ⊕
 noncomputable def massScaleCS (c : ℝ) : JetComponentSpace →ₗ[ℂ] JetComponentSpace
 ```
 
-**`QED.Electron.JetAlgebra.massScale`**, a def, [line 1033](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/QED/Basic.lean#L1033).
+**`QED.Electron.JetAlgebra.massScale`**, a def, [line 1033](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/QED/Basic.lean#L1033).
 
 > The mass-weight scaling on the electron jet algebra.
 
@@ -1017,7 +1017,7 @@ noncomputable def massScaleCS (c : ℝ) : JetComponentSpace →ₗ[ℂ] JetCompo
 noncomputable def massScale (c : ℝ) : JetAlgebra →ₐ[ℂ] JetAlgebra
 ```
 
-**`QED.Electron.JetAlgebra.massScale_ofGenerator`**, a lemma, [line 1037](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/QED/Basic.lean#L1037).
+**`QED.Electron.JetAlgebra.massScale_ofGenerator`**, a lemma, [line 1037](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/QED/Basic.lean#L1037).
 
 ```lean
 lemma massScale_ofGenerator (c : ℝ) (j : JetGenerators) :
@@ -1033,7 +1033,7 @@ lemma massScale_ofGenerator (c : ℝ) (j : JetGenerators) :
 > algebra, following
 > `Physlib.Particles.StandardModel.Fermions.LeptonSinglet.JetAlgebra.JetDeriv`.
 
-**`QED.Electron.JetGenerators.shift`**, a def, [line 1058](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/QED/Basic.lean#L1058).
+**`QED.Electron.JetGenerators.shift`**, a def, [line 1058](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/QED/Basic.lean#L1058).
 
 > The jet coordinate with one further derivative in the direction `ρ`.
 
@@ -1041,7 +1041,7 @@ lemma massScale_ofGenerator (c : ℝ) (j : JetGenerators) :
 def JetGenerators.shift (ρ : Fin 1 ⊕ Fin 3) : JetGenerators → JetGenerators
 ```
 
-**`QED.Electron.JetAlgebra.jetDerivCS`**, a def, [line 1066](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/QED/Basic.lean#L1066).
+**`QED.Electron.JetAlgebra.jetDerivCS`**, a def, [line 1066](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/QED/Basic.lean#L1066).
 
 > The total derivative on the jet component space: the shift of the
 > derivative multi-index.
@@ -1051,7 +1051,7 @@ noncomputable def jetDerivCS (ρ : Fin 1 ⊕ Fin 3) :
     JetComponentSpace →ₗ[ℂ] JetComponentSpace
 ```
 
-**`QED.Electron.JetAlgebra.jetDerivCS_single`**, a lemma, [line 1072](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/QED/Basic.lean#L1072).
+**`QED.Electron.JetAlgebra.jetDerivCS_single`**, a lemma, [line 1072](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/QED/Basic.lean#L1072).
 
 ```lean
 lemma jetDerivCS_single (ρ : Fin 1 ⊕ Fin 3) (j : JetGenerators) :
@@ -1059,7 +1059,7 @@ lemma jetDerivCS_single (ρ : Fin 1 ⊕ Fin 3) (j : JetGenerators) :
       Finsupp.single (JetGenerators.shift ρ j) 1
 ```
 
-**`QED.Electron.JetAlgebra.jetDerivGen`**, a def, [line 1079](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/QED/Basic.lean#L1079).
+**`QED.Electron.JetAlgebra.jetDerivGen`**, a def, [line 1079](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/QED/Basic.lean#L1079).
 
 > The generator map of the total derivative into the trivial square-zero
 > extension of the jet algebra: `ι x ↦ (ι x, ι (∂_ρ x))`.
@@ -1069,21 +1069,21 @@ noncomputable def jetDerivGen (ρ : Fin 1 ⊕ Fin 3) :
     JetComponentSpace →ₗ[ℂ] TrivSqZeroExt JetAlgebra JetAlgebra
 ```
 
-**`QED.Electron.JetAlgebra.jetDerivGen_fst`**, a lemma, [line 1090](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/QED/Basic.lean#L1090).
+**`QED.Electron.JetAlgebra.jetDerivGen_fst`**, a lemma, [line 1090](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/QED/Basic.lean#L1090).
 
 ```lean
 lemma jetDerivGen_fst (ρ : Fin 1 ⊕ Fin 3) (x : JetComponentSpace) :
     (jetDerivGen ρ x).fst = ExteriorAlgebra.ι ℂ x
 ```
 
-**`QED.Electron.JetAlgebra.jetDerivGen_snd`**, a lemma, [line 1094](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/QED/Basic.lean#L1094).
+**`QED.Electron.JetAlgebra.jetDerivGen_snd`**, a lemma, [line 1094](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/QED/Basic.lean#L1094).
 
 ```lean
 lemma jetDerivGen_snd (ρ : Fin 1 ⊕ Fin 3) (x : JetComponentSpace) :
     (jetDerivGen ρ x).snd = ExteriorAlgebra.ι ℂ (jetDerivCS ρ x)
 ```
 
-**`QED.Electron.JetAlgebra.jetDerivGen_mul_self`**, a lemma, [line 1099](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/QED/Basic.lean#L1099).
+**`QED.Electron.JetAlgebra.jetDerivGen_mul_self`**, a lemma, [line 1099](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/QED/Basic.lean#L1099).
 
 > The generator map squares to zero: degree-one elements of the exterior
 > algebra anticommute.
@@ -1093,7 +1093,7 @@ lemma jetDerivGen_mul_self (ρ : Fin 1 ⊕ Fin 3) (x : JetComponentSpace) :
     jetDerivGen ρ x * jetDerivGen ρ x = 0
 ```
 
-**`QED.Electron.JetAlgebra.jetDerivHom`**, a def, [line 1110](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/QED/Basic.lean#L1110).
+**`QED.Electron.JetAlgebra.jetDerivHom`**, a def, [line 1110](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/QED/Basic.lean#L1110).
 
 > The lift of the total derivative to the trivial square-zero extension of
 > the jet algebra: the algebra homomorphism `x ↦ (x, ∂_ρ x)`.
@@ -1103,14 +1103,14 @@ noncomputable def jetDerivHom (ρ : Fin 1 ⊕ Fin 3) :
     JetAlgebra →ₐ[ℂ] TrivSqZeroExt JetAlgebra JetAlgebra
 ```
 
-**`QED.Electron.JetAlgebra.jetDerivHom_ι`**, a lemma, [line 1115](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/QED/Basic.lean#L1115).
+**`QED.Electron.JetAlgebra.jetDerivHom_ι`**, a lemma, [line 1115](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/QED/Basic.lean#L1115).
 
 ```lean
 lemma jetDerivHom_ι (ρ : Fin 1 ⊕ Fin 3) (x : JetComponentSpace) :
     jetDerivHom ρ (ExteriorAlgebra.ι ℂ x) = jetDerivGen ρ x
 ```
 
-**`QED.Electron.JetAlgebra.jetDerivHom_fst`**, a lemma, [line 1121](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/QED/Basic.lean#L1121).
+**`QED.Electron.JetAlgebra.jetDerivHom_fst`**, a lemma, [line 1121](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/QED/Basic.lean#L1121).
 
 > The first component of the square-zero lift is the identity.
 
@@ -1119,7 +1119,7 @@ lemma jetDerivHom_fst (ρ : Fin 1 ⊕ Fin 3) (x : JetAlgebra) :
     (jetDerivHom ρ x).fst = x
 ```
 
-**`QED.Electron.JetAlgebra.jetDeriv`**, a def, [line 1132](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/QED/Basic.lean#L1132).
+**`QED.Electron.JetAlgebra.jetDeriv`**, a def, [line 1132](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/QED/Basic.lean#L1132).
 
 > The formal total spacetime derivative on the electron jet algebra in the
 > direction `ρ`: the even derivation extending the shift
@@ -1129,14 +1129,14 @@ lemma jetDerivHom_fst (ρ : Fin 1 ⊕ Fin 3) (x : JetAlgebra) :
 noncomputable def jetDeriv (ρ : Fin 1 ⊕ Fin 3) : JetAlgebra →ₗ[ℂ] JetAlgebra
 ```
 
-**`QED.Electron.JetAlgebra.jetDeriv_apply`**, a lemma, [line 1137](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/QED/Basic.lean#L1137).
+**`QED.Electron.JetAlgebra.jetDeriv_apply`**, a lemma, [line 1137](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/QED/Basic.lean#L1137).
 
 ```lean
 lemma jetDeriv_apply (ρ : Fin 1 ⊕ Fin 3) (x : JetAlgebra) :
     jetDeriv ρ x = (jetDerivHom ρ x).snd
 ```
 
-**`QED.Electron.JetAlgebra.jetDeriv_ι`**, a lemma, [line 1141](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/QED/Basic.lean#L1141).
+**`QED.Electron.JetAlgebra.jetDeriv_ι`**, a lemma, [line 1141](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/QED/Basic.lean#L1141).
 
 ```lean
 lemma jetDeriv_ι (ρ : Fin 1 ⊕ Fin 3) (x : JetComponentSpace) :
@@ -1144,7 +1144,7 @@ lemma jetDeriv_ι (ρ : Fin 1 ⊕ Fin 3) (x : JetComponentSpace) :
       ExteriorAlgebra.ι ℂ (jetDerivCS ρ x)
 ```
 
-**`QED.Electron.JetAlgebra.jetDeriv_ofGenerator`**, a lemma, [line 1149](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/QED/Basic.lean#L1149).
+**`QED.Electron.JetAlgebra.jetDeriv_ofGenerator`**, a lemma, [line 1149](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/QED/Basic.lean#L1149).
 
 > The total derivative appends the derivative index to each jet
 > coordinate.
@@ -1154,13 +1154,13 @@ lemma jetDeriv_ofGenerator (ρ : Fin 1 ⊕ Fin 3) (j : JetGenerators) :
     jetDeriv ρ (ofGenerator j) = ofGenerator (JetGenerators.shift ρ j)
 ```
 
-**`QED.Electron.JetAlgebra.jetDeriv_one`**, a lemma, [line 1155](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/QED/Basic.lean#L1155).
+**`QED.Electron.JetAlgebra.jetDeriv_one`**, a lemma, [line 1155](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/QED/Basic.lean#L1155).
 
 ```lean
 lemma jetDeriv_one (ρ : Fin 1 ⊕ Fin 3) : jetDeriv ρ (1 : JetAlgebra) = 0
 ```
 
-**`QED.Electron.JetAlgebra.jetDeriv_mul`**, a lemma, [line 1160](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/QED/Basic.lean#L1160).
+**`QED.Electron.JetAlgebra.jetDeriv_mul`**, a lemma, [line 1160](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/QED/Basic.lean#L1160).
 
 > The total derivative is an even derivation: the Leibniz rule holds on the
 > electron jet algebra with no Koszul signs.
@@ -1172,7 +1172,7 @@ lemma jetDeriv_mul (ρ : Fin 1 ⊕ Fin 3) (x y : JetAlgebra) :
 
 ## E. The jet algebra of QED
 
-**`QED.JetAlgebra`**, a def, [line 1190](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/QED/Basic.lean#L1190).
+**`QED.JetAlgebra`**, a def, [line 1190](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/QED/Basic.lean#L1190).
 
 > The jet algebra of quantum electrodynamics: the tensor product of the
 > complexified photon jet algebra with the electron jet algebra.
@@ -1191,13 +1191,13 @@ lemma jetDeriv_mul (ρ : Fin 1 ⊕ Fin 3) (x y : JetAlgebra) :
 def JetAlgebra : Type
 ```
 
-**An instance with no name**, [line 1192](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/QED/Basic.lean#L1192).
+**An instance with no name**, [line 1192](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/QED/Basic.lean#L1192).
 
 ```lean
 noncomputable instance : Ring JetAlgebra
 ```
 
-**An instance with no name**, [line 1195](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/QED/Basic.lean#L1195).
+**An instance with no name**, [line 1195](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/QED/Basic.lean#L1195).
 
 ```lean
 noncomputable instance : Algebra ℂ JetAlgebra
@@ -1205,7 +1205,7 @@ noncomputable instance : Algebra ℂ JetAlgebra
 
 ### E.1. Pure tensors and their arithmetic
 
-**`QED.JetAlgebra.tmul`**, a def, [line 1213](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/QED/Basic.lean#L1213).
+**`QED.JetAlgebra.tmul`**, a def, [line 1213](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/QED/Basic.lean#L1213).
 
 > A pure tensor, as an element of the jet algebra.
 >
@@ -1220,7 +1220,7 @@ noncomputable def tmul (a : ℂ ⊗[ℝ] Photon.JetAlgebra) (b : Electron.JetAlg
     JetAlgebra
 ```
 
-**`QED.JetAlgebra.tmul_eq`**, a lemma, [line 1220](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/QED/Basic.lean#L1220).
+**`QED.JetAlgebra.tmul_eq`**, a lemma, [line 1220](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/QED/Basic.lean#L1220).
 
 > `tmul` is the pure tensor of the underlying tensor product; use this to
 > move between the jet algebra and lemmas stated for the tensor product.
@@ -1230,13 +1230,13 @@ lemma tmul_eq (a : ℂ ⊗[ℝ] Photon.JetAlgebra) (b : Electron.JetAlgebra) :
     a ⊗ⱼ b = a ⊗ₜ[ℂ] b
 ```
 
-**`QED.JetAlgebra.one_eq_tmul`**, a lemma, [line 1223](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/QED/Basic.lean#L1223).
+**`QED.JetAlgebra.one_eq_tmul`**, a lemma, [line 1223](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/QED/Basic.lean#L1223).
 
 ```lean
 lemma one_eq_tmul : (1 : JetAlgebra) = (1 : ℂ ⊗[ℝ] Photon.JetAlgebra) ⊗ⱼ 1
 ```
 
-**`QED.JetAlgebra.tmul_mul_tmul`**, a lemma, [line 1228](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/QED/Basic.lean#L1228).
+**`QED.JetAlgebra.tmul_mul_tmul`**, a lemma, [line 1228](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/QED/Basic.lean#L1228).
 
 > Multiplication of pure tensors. `Algebra.TensorProduct.tmul_mul_tmul` does
 > not rewrite here, even though it is definitionally the same statement.
@@ -1247,91 +1247,91 @@ lemma tmul_mul_tmul (a₁ a₂ : ℂ ⊗[ℝ] Photon.JetAlgebra)
     (a₁ ⊗ⱼ b₁) * (a₂ ⊗ⱼ b₂) = (a₁ * a₂) ⊗ⱼ (b₁ * b₂)
 ```
 
-**`QED.JetAlgebra.zero_tmul`**, a lemma, [line 1234](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/QED/Basic.lean#L1234).
+**`QED.JetAlgebra.zero_tmul`**, a lemma, [line 1234](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/QED/Basic.lean#L1234).
 
 ```lean
 lemma zero_tmul (b : Electron.JetAlgebra) :
     (0 : ℂ ⊗[ℝ] Photon.JetAlgebra) ⊗ⱼ b = 0
 ```
 
-**`QED.JetAlgebra.tmul_zero`**, a lemma, [line 1238](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/QED/Basic.lean#L1238).
+**`QED.JetAlgebra.tmul_zero`**, a lemma, [line 1238](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/QED/Basic.lean#L1238).
 
 ```lean
 lemma tmul_zero (a : ℂ ⊗[ℝ] Photon.JetAlgebra) :
     a ⊗ⱼ (0 : Electron.JetAlgebra) = 0
 ```
 
-**`QED.JetAlgebra.add_tmul`**, a lemma, [line 1242](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/QED/Basic.lean#L1242).
+**`QED.JetAlgebra.add_tmul`**, a lemma, [line 1242](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/QED/Basic.lean#L1242).
 
 ```lean
 lemma add_tmul (a₁ a₂ : ℂ ⊗[ℝ] Photon.JetAlgebra) (b : Electron.JetAlgebra) :
     (a₁ + a₂) ⊗ⱼ b = a₁ ⊗ⱼ b + a₂ ⊗ⱼ b
 ```
 
-**`QED.JetAlgebra.tmul_add`**, a lemma, [line 1246](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/QED/Basic.lean#L1246).
+**`QED.JetAlgebra.tmul_add`**, a lemma, [line 1246](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/QED/Basic.lean#L1246).
 
 ```lean
 lemma tmul_add (a : ℂ ⊗[ℝ] Photon.JetAlgebra) (b₁ b₂ : Electron.JetAlgebra) :
     a ⊗ⱼ (b₁ + b₂) = a ⊗ⱼ b₁ + a ⊗ⱼ b₂
 ```
 
-**`QED.JetAlgebra.sub_tmul`**, a lemma, [line 1250](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/QED/Basic.lean#L1250).
+**`QED.JetAlgebra.sub_tmul`**, a lemma, [line 1250](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/QED/Basic.lean#L1250).
 
 ```lean
 lemma sub_tmul (a₁ a₂ : ℂ ⊗[ℝ] Photon.JetAlgebra) (b : Electron.JetAlgebra) :
     (a₁ - a₂) ⊗ⱼ b = a₁ ⊗ⱼ b - a₂ ⊗ⱼ b
 ```
 
-**`QED.JetAlgebra.tmul_sub`**, a lemma, [line 1254](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/QED/Basic.lean#L1254).
+**`QED.JetAlgebra.tmul_sub`**, a lemma, [line 1254](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/QED/Basic.lean#L1254).
 
 ```lean
 lemma tmul_sub (a : ℂ ⊗[ℝ] Photon.JetAlgebra) (b₁ b₂ : Electron.JetAlgebra) :
     a ⊗ⱼ (b₁ - b₂) = a ⊗ⱼ b₁ - a ⊗ⱼ b₂
 ```
 
-**`QED.JetAlgebra.neg_tmul`**, a lemma, [line 1258](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/QED/Basic.lean#L1258).
+**`QED.JetAlgebra.neg_tmul`**, a lemma, [line 1258](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/QED/Basic.lean#L1258).
 
 ```lean
 lemma neg_tmul (a : ℂ ⊗[ℝ] Photon.JetAlgebra) (b : Electron.JetAlgebra) :
     (-a) ⊗ⱼ b = -(a ⊗ⱼ b)
 ```
 
-**`QED.JetAlgebra.tmul_neg`**, a lemma, [line 1262](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/QED/Basic.lean#L1262).
+**`QED.JetAlgebra.tmul_neg`**, a lemma, [line 1262](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/QED/Basic.lean#L1262).
 
 ```lean
 lemma tmul_neg (a : ℂ ⊗[ℝ] Photon.JetAlgebra) (b : Electron.JetAlgebra) :
     a ⊗ⱼ (-b) = -(a ⊗ⱼ b)
 ```
 
-**`QED.JetAlgebra.tmul_sum`**, a lemma, [line 1265](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/QED/Basic.lean#L1265).
+**`QED.JetAlgebra.tmul_sum`**, a lemma, [line 1265](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/QED/Basic.lean#L1265).
 
 ```lean
 lemma tmul_sum {ι : Type*} (a : ℂ ⊗[ℝ] Photon.JetAlgebra) (s : Finset ι)
     (f : ι → Electron.JetAlgebra) : a ⊗ⱼ (∑ i ∈ s, f i) = ∑ i ∈ s, a ⊗ⱼ f i
 ```
 
-**`QED.JetAlgebra.sum_tmul`**, a lemma, [line 1269](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/QED/Basic.lean#L1269).
+**`QED.JetAlgebra.sum_tmul`**, a lemma, [line 1269](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/QED/Basic.lean#L1269).
 
 ```lean
 lemma sum_tmul {ι : Type*} (s : Finset ι) (f : ι → ℂ ⊗[ℝ] Photon.JetAlgebra)
     (b : Electron.JetAlgebra) : (∑ i ∈ s, f i) ⊗ⱼ b = ∑ i ∈ s, f i ⊗ⱼ b
 ```
 
-**`QED.JetAlgebra.tmul_smul`**, a lemma, [line 1274](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/QED/Basic.lean#L1274).
+**`QED.JetAlgebra.tmul_smul`**, a lemma, [line 1274](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/QED/Basic.lean#L1274).
 
 ```lean
 lemma tmul_smul (r : ℂ) (a : ℂ ⊗[ℝ] Photon.JetAlgebra) (b : Electron.JetAlgebra) :
     a ⊗ⱼ (r • b) = r • (a ⊗ⱼ b)
 ```
 
-**`QED.JetAlgebra.smul_tmul'`**, a lemma, [line 1278](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/QED/Basic.lean#L1278).
+**`QED.JetAlgebra.smul_tmul'`**, a lemma, [line 1278](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/QED/Basic.lean#L1278).
 
 ```lean
 lemma smul_tmul' (r : ℂ) (a : ℂ ⊗[ℝ] Photon.JetAlgebra) (b : Electron.JetAlgebra) :
     (r • a) ⊗ⱼ b = r • (a ⊗ⱼ b)
 ```
 
-**`QED.JetAlgebra.real_smul_tmul`**, a lemma, [line 1282](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/QED/Basic.lean#L1282).
+**`QED.JetAlgebra.real_smul_tmul`**, a lemma, [line 1282](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/QED/Basic.lean#L1282).
 
 > An `ℝ`-scalar on the photon factor is a `ℂ`-scalar of the jet algebra.
 
@@ -1341,7 +1341,7 @@ lemma real_smul_tmul (r : ℝ) (a : ℂ ⊗[ℝ] Photon.JetAlgebra)
     (r • a) ⊗ⱼ b = (r : ℂ) • (a ⊗ⱼ b)
 ```
 
-**`QED.JetAlgebra.tmul_C_eq_smul_one`**, a lemma, [line 1289](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/QED/Basic.lean#L1289).
+**`QED.JetAlgebra.tmul_C_eq_smul_one`**, a lemma, [line 1289](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/QED/Basic.lean#L1289).
 
 > A constant of the photon factor is a scalar of the jet algebra.
 
@@ -1351,7 +1351,7 @@ lemma tmul_C_eq_smul_one (r : ℝ) :
         (1 : Electron.JetAlgebra) = (r : ℂ) • (1 : JetAlgebra)
 ```
 
-**`QED.JetAlgebra.induction_on`**, a lemma, [line 1306](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/QED/Basic.lean#L1306).
+**`QED.JetAlgebra.induction_on`**, a lemma, [line 1306](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/QED/Basic.lean#L1306).
 
 > Induction on the jet algebra, stated for `JetAlgebra` itself.  Using
 > `TensorProduct.inductionOn` directly leaves the sum and the pure tensors in
@@ -1367,7 +1367,7 @@ lemma induction_on {motive : JetAlgebra → Prop} (x : JetAlgebra)
 
 ### E.2. The inclusions of the two factors
 
-**`QED.JetAlgebra.inclA`**, an abbrev, [line 1319](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/QED/Basic.lean#L1319).
+**`QED.JetAlgebra.inclA`**, an abbrev, [line 1319](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/QED/Basic.lean#L1319).
 
 > The photon factor included into the QED jet algebra.
 
@@ -1375,7 +1375,7 @@ lemma induction_on {motive : JetAlgebra → Prop} (x : JetAlgebra)
 noncomputable abbrev inclA : (ℂ ⊗[ℝ] Photon.JetAlgebra) →ₐ[ℂ] JetAlgebra
 ```
 
-**`QED.JetAlgebra.inclE`**, an abbrev, [line 1323](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/QED/Basic.lean#L1323).
+**`QED.JetAlgebra.inclE`**, an abbrev, [line 1323](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/QED/Basic.lean#L1323).
 
 > The electron factor included into the QED jet algebra.
 
@@ -1383,13 +1383,13 @@ noncomputable abbrev inclA : (ℂ ⊗[ℝ] Photon.JetAlgebra) →ₐ[ℂ] JetAlg
 noncomputable abbrev inclE : Electron.JetAlgebra →ₐ[ℂ] JetAlgebra
 ```
 
-**`QED.JetAlgebra.inclA_apply`**, a lemma, [line 1326](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/QED/Basic.lean#L1326).
+**`QED.JetAlgebra.inclA_apply`**, a lemma, [line 1326](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/QED/Basic.lean#L1326).
 
 ```lean
 lemma inclA_apply (a : ℂ ⊗[ℝ] Photon.JetAlgebra) : inclA a = a ⊗ⱼ 1
 ```
 
-**`QED.JetAlgebra.inclE_apply`**, a lemma, [line 1328](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/QED/Basic.lean#L1328).
+**`QED.JetAlgebra.inclE_apply`**, a lemma, [line 1328](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/QED/Basic.lean#L1328).
 
 ```lean
 lemma inclE_apply (b : Electron.JetAlgebra) : inclE b = 1 ⊗ⱼ b
@@ -1402,7 +1402,7 @@ lemma inclE_apply (b : Electron.JetAlgebra) : inclE b = 1 ⊗ⱼ b
 > the Leibniz expansion of `∂_s (ū ψ)` and `∂_s (u ψ̄)`; the action on the full
 > jet algebra is the tensor product of the two, an algebra map.
 
-**`QED.JetAlgebra.gaugeActionPhoton`**, a def, [line 1343](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/QED/Basic.lean#L1343).
+**`QED.JetAlgebra.gaugeActionPhoton`**, a def, [line 1343](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/QED/Basic.lean#L1343).
 
 > The gauge action on the complexified photon jet algebra: the
 > complexification of the affine action `∂_s A_μ ↦ ∂_s A_μ + ∂_s ∂_μ χ`.
@@ -1412,7 +1412,7 @@ noncomputable def gaugeActionPhoton (c : Photon.JetAlgebra.GaugeJet) :
     (ℂ ⊗[ℝ] Photon.JetAlgebra) →ₐ[ℂ] ℂ ⊗[ℝ] Photon.JetAlgebra
 ```
 
-**`QED.JetAlgebra.gaugeActionPhoton_tmul`**, a lemma, [line 1348](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/QED/Basic.lean#L1348).
+**`QED.JetAlgebra.gaugeActionPhoton_tmul`**, a lemma, [line 1348](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/QED/Basic.lean#L1348).
 
 ```lean
 lemma gaugeActionPhoton_tmul (c : Photon.JetAlgebra.GaugeJet) (x : ℂ)
@@ -1420,7 +1420,7 @@ lemma gaugeActionPhoton_tmul (c : Photon.JetAlgebra.GaugeJet) (x : ℂ)
     gaugeActionPhoton c (x ⊗ₜ[ℝ] p) = x ⊗ₜ[ℝ] Photon.JetAlgebra.gaugeAction c p
 ```
 
-**`QED.JetAlgebra.gaugeAction`**, a def, [line 1356](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/QED/Basic.lean#L1356).
+**`QED.JetAlgebra.gaugeAction`**, a def, [line 1356](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/QED/Basic.lean#L1356).
 
 > The gauge action on the QED jet algebra: the tensor product of the affine
 > action on the photon factor with the Leibniz phase rotation on the electron
@@ -1431,7 +1431,7 @@ noncomputable def gaugeAction {e : ℝ} (g : GaugeJet e) :
     JetAlgebra →ₐ[ℂ] JetAlgebra
 ```
 
-**`QED.JetAlgebra.gaugeAction_tmul`**, a lemma, [line 1361](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/QED/Basic.lean#L1361).
+**`QED.JetAlgebra.gaugeAction_tmul`**, a lemma, [line 1361](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/QED/Basic.lean#L1361).
 
 ```lean
 lemma gaugeAction_tmul {e : ℝ} (g : GaugeJet e) (a : ℂ ⊗[ℝ] Photon.JetAlgebra)
@@ -1447,7 +1447,7 @@ lemma gaugeAction_tmul {e : ℝ} (g : GaugeJet e) (a : ℂ ⊗[ℝ] Photon.JetAl
 > representation; the action on the full jet algebra is the tensor product of
 > the two.
 
-**`QED.JetAlgebra.lorentzActionPhoton`**, a def, [line 1379](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/QED/Basic.lean#L1379).
+**`QED.JetAlgebra.lorentzActionPhoton`**, a def, [line 1379](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/QED/Basic.lean#L1379).
 
 > The Lorentz action on the complexified photon jet algebra.
 
@@ -1456,14 +1456,14 @@ noncomputable def lorentzActionPhoton (Λ : LorentzGroup 3) :
     (ℂ ⊗[ℝ] Photon.JetAlgebra) →ₐ[ℂ] ℂ ⊗[ℝ] Photon.JetAlgebra
 ```
 
-**`QED.JetAlgebra.lorentzActionPhoton_tmul`**, a lemma, [line 1384](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/QED/Basic.lean#L1384).
+**`QED.JetAlgebra.lorentzActionPhoton_tmul`**, a lemma, [line 1384](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/QED/Basic.lean#L1384).
 
 ```lean
 lemma lorentzActionPhoton_tmul (Λ : LorentzGroup 3) (x : ℂ) (p : Photon.JetAlgebra) :
     lorentzActionPhoton Λ (x ⊗ₜ[ℝ] p) = x ⊗ₜ[ℝ] Photon.JetAlgebra.lorentzAction Λ p
 ```
 
-**`QED.JetAlgebra.lorentzAction`**, a def, [line 1390](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/QED/Basic.lean#L1390).
+**`QED.JetAlgebra.lorentzAction`**, a def, [line 1390](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/QED/Basic.lean#L1390).
 
 > The Lorentz action on the QED jet algebra: the tensor product of the
 > photon action through the covering map with the electron spinor action.
@@ -1472,7 +1472,7 @@ lemma lorentzActionPhoton_tmul (Λ : LorentzGroup 3) (x : ℂ) (p : Photon.JetAl
 noncomputable def lorentzAction (M : SL(2,ℂ)) : JetAlgebra →ₐ[ℂ] JetAlgebra
 ```
 
-**`QED.JetAlgebra.lorentzAction_tmul`**, a lemma, [line 1394](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/QED/Basic.lean#L1394).
+**`QED.JetAlgebra.lorentzAction_tmul`**, a lemma, [line 1394](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/QED/Basic.lean#L1394).
 
 ```lean
 lemma lorentzAction_tmul (M : SL(2,ℂ)) (a : ℂ ⊗[ℝ] Photon.JetAlgebra)
@@ -1486,7 +1486,7 @@ lemma lorentzAction_tmul (M : SL(2,ℂ)) (a : ℂ ⊗[ℝ] Photon.JetAlgebra)
 
 ### E.5. The mass-weight scaling on the QED jet algebra
 
-**`QED.JetAlgebra.massScalePhoton`**, a def, [line 1414](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/QED/Basic.lean#L1414).
+**`QED.JetAlgebra.massScalePhoton`**, a def, [line 1414](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/QED/Basic.lean#L1414).
 
 > The mass-weight scaling on the complexified photon jet algebra.
 
@@ -1495,14 +1495,14 @@ noncomputable def massScalePhoton (c : ℝ) :
     (ℂ ⊗[ℝ] Photon.JetAlgebra) →ₐ[ℂ] ℂ ⊗[ℝ] Photon.JetAlgebra
 ```
 
-**`QED.JetAlgebra.massScalePhoton_tmul`**, a lemma, [line 1419](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/QED/Basic.lean#L1419).
+**`QED.JetAlgebra.massScalePhoton_tmul`**, a lemma, [line 1419](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/QED/Basic.lean#L1419).
 
 ```lean
 lemma massScalePhoton_tmul (c : ℝ) (x : ℂ) (p : Photon.JetAlgebra) :
     massScalePhoton c (x ⊗ₜ[ℝ] p) = x ⊗ₜ[ℝ] Photon.JetAlgebra.massScale c p
 ```
 
-**`QED.JetAlgebra.massScale`**, a def, [line 1426](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/QED/Basic.lean#L1426).
+**`QED.JetAlgebra.massScale`**, a def, [line 1426](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/QED/Basic.lean#L1426).
 
 > The mass-weight scaling on the QED jet algebra: the algebra map
 > multiplying each jet coordinate by `c` to the power of its mass weight,
@@ -1512,7 +1512,7 @@ lemma massScalePhoton_tmul (c : ℝ) (x : ℂ) (p : Photon.JetAlgebra) :
 noncomputable def massScale (c : ℝ) : JetAlgebra →ₐ[ℂ] JetAlgebra
 ```
 
-**`QED.JetAlgebra.massScale_tmul`**, a lemma, [line 1429](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/QED/Basic.lean#L1429).
+**`QED.JetAlgebra.massScale_tmul`**, a lemma, [line 1429](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/QED/Basic.lean#L1429).
 
 ```lean
 lemma massScale_tmul (c : ℝ) (a : ℂ ⊗[ℝ] Photon.JetAlgebra)
@@ -1523,7 +1523,7 @@ lemma massScale_tmul (c : ℝ) (a : ℂ ⊗[ℝ] Photon.JetAlgebra)
 
 ### E.6. The formal total derivative on the QED jet algebra
 
-**`QED.JetAlgebra.jetDeriv`**, a def, [line 1444](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/QED/Basic.lean#L1444).
+**`QED.JetAlgebra.jetDeriv`**, a def, [line 1444](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/QED/Basic.lean#L1444).
 
 > The formal total spacetime derivative on the QED jet algebra in the
 > direction `ρ`: the Leibniz extension of the total derivatives of the photon
@@ -1533,7 +1533,7 @@ lemma massScale_tmul (c : ℝ) (a : ℂ ⊗[ℝ] Photon.JetAlgebra)
 noncomputable def jetDeriv (ρ : Fin 1 ⊕ Fin 3) : JetAlgebra →ₗ[ℂ] JetAlgebra
 ```
 
-**`QED.JetAlgebra.jetDeriv_tmul`**, a lemma, [line 1449](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/QED/Basic.lean#L1449).
+**`QED.JetAlgebra.jetDeriv_tmul`**, a lemma, [line 1449](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/QED/Basic.lean#L1449).
 
 ```lean
 lemma jetDeriv_tmul (ρ : Fin 1 ⊕ Fin 3) (a : ℂ ⊗[ℝ] Photon.JetAlgebra)
@@ -1543,13 +1543,13 @@ lemma jetDeriv_tmul (ρ : Fin 1 ⊕ Fin 3) (a : ℂ ⊗[ℝ] Photon.JetAlgebra)
         a ⊗ⱼ Electron.JetAlgebra.jetDeriv ρ b
 ```
 
-**`QED.JetAlgebra.jetDeriv_one`**, a lemma, [line 1456](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/QED/Basic.lean#L1456).
+**`QED.JetAlgebra.jetDeriv_one`**, a lemma, [line 1456](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/QED/Basic.lean#L1456).
 
 ```lean
 lemma jetDeriv_one (ρ : Fin 1 ⊕ Fin 3) : jetDeriv ρ (1 : JetAlgebra) = 0
 ```
 
-**`QED.JetAlgebra.jetDeriv_mul`**, a lemma, [line 1468](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/QED/Basic.lean#L1468).
+**`QED.JetAlgebra.jetDeriv_mul`**, a lemma, [line 1468](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/QED/Basic.lean#L1468).
 
 > The total derivative is an even derivation on the QED jet algebra: the
 > Leibniz rule holds with no Koszul signs.
@@ -1570,4 +1570,4 @@ lemma jetDeriv_mul (ρ : Fin 1 ⊕ Fin 3) (x y : JetAlgebra) :
 
 ## Sources
 
-- [PhyslibAlpha/Particles/QED/Basic.lean at 2a1dfe43](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/QED/Basic.lean)
+- [PhyslibAlpha/Particles/QED/Basic.lean at 8c87bdfb](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/QED/Basic.lean)

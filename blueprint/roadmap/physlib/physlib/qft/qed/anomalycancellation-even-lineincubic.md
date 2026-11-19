@@ -8,7 +8,7 @@ proof: formalized
 
 # Line In Cubic Even case
 
-The module `Physlib.QFT.QED.AnomalyCancellation.Even.LineInCubic`, [Physlib/QFT/QED/AnomalyCancellation/Even/LineInCubic.lean](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/QFT/QED/AnomalyCancellation/Even/LineInCubic.lean): 13 declarations, 5 with a docstring.
+The module `Physlib.QFT.QED.AnomalyCancellation.Even.LineInCubic`, [Physlib/QFT/QED/AnomalyCancellation/Even/LineInCubic.lean](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/QFT/QED/AnomalyCancellation/Even/LineInCubic.lean): 13 declarations, 5 with a docstring.
 
 > We say that a linear solution satisfies the `lineInCubic` property
 > if the line through that point and through the two different planes formed by the basis of
@@ -21,7 +21,7 @@ The module `Physlib.QFT.QED.AnomalyCancellation.Even.LineInCubic`, [Physlib/QFT/
 
 > * The main reference for this file is https://arxiv.org/pdf/1912.04804.pdf. [ref: arxiv\_1912\_04804]
 
-**`PureU1.Even.LineInCubic`**, a def, [line 38](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/QFT/QED/AnomalyCancellation/Even/LineInCubic.lean#L38).
+**`PureU1.Even.LineInCubic`**, a def, [line 38](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/QFT/QED/AnomalyCancellation/Even/LineInCubic.lean#L38).
 
 > A property on `LinSols`, satisfied if every point on the line between the two planes
 > in the basis through that point is in the cubic.
@@ -30,7 +30,7 @@ The module `Physlib.QFT.QED.AnomalyCancellation.Even.LineInCubic`, [Physlib/QFT/
 def LineInCubic (S : (PureU1 (2 * n.succ)).LinSols) : Prop
 ```
 
-**`PureU1.Even.lineInCubic_expand`**, a lemma, [line 43](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/QFT/QED/AnomalyCancellation/Even/LineInCubic.lean#L43).
+**`PureU1.Even.lineInCubic_expand`**, a lemma, [line 43](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/QFT/QED/AnomalyCancellation/Even/LineInCubic.lean#L43).
 
 ```lean
 lemma lineInCubic_expand {S : (PureU1 (2 * n.succ)).LinSols} (h : LineInCubic S) :
@@ -42,7 +42,7 @@ lemma lineInCubic_expand {S : (PureU1 (2 * n.succ)).LinSols} (h : LineInCubic S)
           (Shifted.planeCharges f) (Unshifted.planeCharges g)) = 0
 ```
 
-**`PureU1.Even.line_in_cubic_unshifted_unshifted_shifted`**, a lemma, [line 72](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/QFT/QED/AnomalyCancellation/Even/LineInCubic.lean#L72).
+**`PureU1.Even.line_in_cubic_unshifted_unshifted_shifted`**, a lemma, [line 72](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/QFT/QED/AnomalyCancellation/Even/LineInCubic.lean#L72).
 
 > This lemma states that for a given `S` of type `(PureU1 (2 * n.succ)).AnomalyFreeLinear` and
 > a proof `h` that the line through `S` lies on a cubic curve,
@@ -61,7 +61,7 @@ lemma line_in_cubic_unshifted_unshifted_shifted
       (Shifted.planeCharges f) = 0
 ```
 
-**`PureU1.Even.LineInCubicPerm`**, a def, [line 83](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/QFT/QED/AnomalyCancellation/Even/LineInCubic.lean#L83).
+**`PureU1.Even.LineInCubicPerm`**, a def, [line 83](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/QFT/QED/AnomalyCancellation/Even/LineInCubic.lean#L83).
 
 > A `LinSol` satisfies `LineInCubicPerm` if all its permutations satisfy `lineInCubic`.
 
@@ -69,7 +69,7 @@ lemma line_in_cubic_unshifted_unshifted_shifted
 def LineInCubicPerm (S : (PureU1 (2 * n.succ)).LinSols) : Prop
 ```
 
-**`PureU1.Even.lineInCubicPerm_self`**, a lemma, [line 88](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/QFT/QED/AnomalyCancellation/Even/LineInCubic.lean#L88).
+**`PureU1.Even.lineInCubicPerm_self`**, a lemma, [line 88](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/QFT/QED/AnomalyCancellation/Even/LineInCubic.lean#L88).
 
 > If `lineInCubicPerm S` then `lineInCubic S`.
 
@@ -78,7 +78,7 @@ lemma lineInCubicPerm_self {S : (PureU1 (2 * n.succ)).LinSols}
     (hS : LineInCubicPerm S) : LineInCubic S
 ```
 
-**`PureU1.Even.lineInCubicPerm_permute`**, a lemma, [line 92](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/QFT/QED/AnomalyCancellation/Even/LineInCubic.lean#L92).
+**`PureU1.Even.lineInCubicPerm_permute`**, a lemma, [line 92](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/QFT/QED/AnomalyCancellation/Even/LineInCubic.lean#L92).
 
 > If `lineInCubicPerm S` then `lineInCubicPerm (M S)` for all permutations `M`.
 
@@ -88,7 +88,7 @@ lemma lineInCubicPerm_permute {S : (PureU1 (2 * n.succ)).LinSols}
     LineInCubicPerm ((FamilyPermutations (2 * n.succ)).linSolRep M' S)
 ```
 
-**`PureU1.Even.lineInCubicPerm_swap`**, a lemma, [line 101](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/QFT/QED/AnomalyCancellation/Even/LineInCubic.lean#L101).
+**`PureU1.Even.lineInCubicPerm_swap`**, a lemma, [line 101](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/QFT/QED/AnomalyCancellation/Even/LineInCubic.lean#L101).
 
 ```lean
 lemma lineInCubicPerm_swap {S : (PureU1 (2 * n.succ)).LinSols}
@@ -99,7 +99,7 @@ lemma lineInCubicPerm_swap {S : (PureU1 (2 * n.succ)).LinSols}
         (Shifted.basisAsCharges j) = 0
 ```
 
-**`PureU1.Even.unshifted_unshifted_shifted_accCube'`**, a lemma, [line 116](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/QFT/QED/AnomalyCancellation/Even/LineInCubic.lean#L116).
+**`PureU1.Even.unshifted_unshifted_shifted_accCube'`**, a lemma, [line 116](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/QFT/QED/AnomalyCancellation/Even/LineInCubic.lean#L116).
 
 ```lean
 lemma unshifted_unshifted_shifted_accCube' {S : (PureU1 (2 * n.succ.succ)).LinSols}
@@ -111,7 +111,7 @@ lemma unshifted_unshifted_shifted_accCube' {S : (PureU1 (2 * n.succ.succ)).LinSo
     S.val (evenShiftSnd (Fin.last n)) + S.val (evenShiftFst (Fin.last n)))
 ```
 
-**`PureU1.Even.lineInCubicPerm_last_cond`**, a lemma, [line 127](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/QFT/QED/AnomalyCancellation/Even/LineInCubic.lean#L127).
+**`PureU1.Even.lineInCubicPerm_last_cond`**, a lemma, [line 127](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/QFT/QED/AnomalyCancellation/Even/LineInCubic.lean#L127).
 
 ```lean
 lemma lineInCubicPerm_last_cond {S : (PureU1 (2 * n.succ.succ)).LinSols}
@@ -121,28 +121,28 @@ lemma lineInCubicPerm_last_cond {S : (PureU1 (2 * n.succ.succ)).LinSols}
       (S.val evenShiftLast)))
 ```
 
-**`PureU1.Even.lineInCubicPerm_last_perm`**, a lemma, [line 141](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/QFT/QED/AnomalyCancellation/Even/LineInCubic.lean#L141).
+**`PureU1.Even.lineInCubicPerm_last_perm`**, a lemma, [line 141](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/QFT/QED/AnomalyCancellation/Even/LineInCubic.lean#L141).
 
 ```lean
 lemma lineInCubicPerm_last_perm {S : (PureU1 (2 * n.succ.succ)).LinSols}
     (LIC : LineInCubicPerm S) : LineInPlaneCond S
 ```
 
-**`PureU1.Even.lineInCubicPerm_constAbs`**, a lemma, [line 152](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/QFT/QED/AnomalyCancellation/Even/LineInCubic.lean#L152).
+**`PureU1.Even.lineInCubicPerm_constAbs`**, a lemma, [line 152](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/QFT/QED/AnomalyCancellation/Even/LineInCubic.lean#L152).
 
 ```lean
 lemma lineInCubicPerm_constAbs {S : (PureU1 (2 * n.succ.succ)).Sols}
     (LIC : LineInCubicPerm S.1.1) : ConstAbs S.val
 ```
 
-**`PureU1.Even.lineInCubicPerm_vectorLike`**, a lemma, [line 156](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/QFT/QED/AnomalyCancellation/Even/LineInCubic.lean#L156).
+**`PureU1.Even.lineInCubicPerm_vectorLike`**, a lemma, [line 156](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/QFT/QED/AnomalyCancellation/Even/LineInCubic.lean#L156).
 
 ```lean
 lemma lineInCubicPerm_vectorLike {S : (PureU1 (2 * n.succ.succ)).Sols}
     (LIC : LineInCubicPerm S.1.1) : VectorLikeEven S.val
 ```
 
-**`PureU1.Even.lineInCubicPerm_in_plane`**, a lemma, [line 160](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/QFT/QED/AnomalyCancellation/Even/LineInCubic.lean#L160).
+**`PureU1.Even.lineInCubicPerm_in_plane`**, a lemma, [line 160](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/QFT/QED/AnomalyCancellation/Even/LineInCubic.lean#L160).
 
 ```lean
 lemma lineInCubicPerm_in_plane (S : (PureU1 (2 * n.succ.succ)).Sols)
@@ -158,4 +158,4 @@ lemma lineInCubicPerm_in_plane (S : (PureU1 (2 * n.succ.succ)).Sols)
 
 ## Sources
 
-- [Physlib/QFT/QED/AnomalyCancellation/Even/LineInCubic.lean at 2a1dfe43](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/QFT/QED/AnomalyCancellation/Even/LineInCubic.lean)
+- [Physlib/QFT/QED/AnomalyCancellation/Even/LineInCubic.lean at 8c87bdfb](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/QFT/QED/AnomalyCancellation/Even/LineInCubic.lean)

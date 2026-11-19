@@ -8,9 +8,9 @@ proof: formalized
 
 # Contraction of Lorentz vectors
 
-The module `Physlib.Relativity.Tensors.ComplexTensor.Vector.Contraction`, [Physlib/Relativity/Tensors/ComplexTensor/Vector/Contraction.lean](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/Relativity/Tensors/ComplexTensor/Vector/Contraction.lean): 12 declarations, 4 with a docstring.
+The module `Physlib.Relativity.Tensors.ComplexTensor.Vector.Contraction`, [Physlib/Relativity/Tensors/ComplexTensor/Vector/Contraction.lean](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Relativity/Tensors/ComplexTensor/Vector/Contraction.lean): 12 declarations, 4 with a docstring.
 
-**`Lorentz.ComplexVector.contrBi`**, a def, [line 29](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/Relativity/Tensors/ComplexTensor/Vector/Contraction.lean#L29).
+**`Lorentz.ComplexVector.contrBi`**, a def, [line 29](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Relativity/Tensors/ComplexTensor/Vector/Contraction.lean#L29).
 
 > The bi-linear map corresponding to contraction of a contravariant Lorentz vector with a
 > covariant Lorentz vector.
@@ -19,7 +19,7 @@ The module `Physlib.Relativity.Tensors.ComplexTensor.Vector.Contraction`, [Physl
 def ComplexVector.contrBi : ComplexVector →ₗ[ℂ] ComplexCoVector →ₗ[ℂ] ℂ
 ```
 
-**`Lorentz.ComplexCoVector.contrBi`**, a def, [line 53](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/Relativity/Tensors/ComplexTensor/Vector/Contraction.lean#L53).
+**`Lorentz.ComplexCoVector.contrBi`**, a def, [line 53](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Relativity/Tensors/ComplexTensor/Vector/Contraction.lean#L53).
 
 > The bi-linear map corresponding to contraction of a covariant Lorentz vector with a
 > contravariant Lorentz vector.
@@ -28,7 +28,7 @@ def ComplexVector.contrBi : ComplexVector →ₗ[ℂ] ComplexCoVector →ₗ[ℂ
 def ComplexCoVector.contrBi : ComplexCoVector →ₗ[ℂ] ComplexVector →ₗ[ℂ] ℂ
 ```
 
-**`Lorentz.ComplexVector.contr`**, a def, [line 80](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/Relativity/Tensors/ComplexTensor/Vector/Contraction.lean#L80).
+**`Lorentz.ComplexVector.contr`**, a def, [line 80](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Relativity/Tensors/ComplexTensor/Vector/Contraction.lean#L80).
 
 > The linear map from complexContr ⊗ complexCo to ℂ given by
 > summing over components of contravariant Lorentz vector and
@@ -41,14 +41,14 @@ def ComplexVector.contr : (ComplexVector.SL2CRep.tprod ComplexCoVector.SL2CRep).
     (Representation.trivial ℂ SL(2,ℂ) ℂ)
 ```
 
-**`Lorentz.ComplexVector.contr_tmul`**, a lemma, [line 91](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/Relativity/Tensors/ComplexTensor/Vector/Contraction.lean#L91).
+**`Lorentz.ComplexVector.contr_tmul`**, a lemma, [line 91](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Relativity/Tensors/ComplexTensor/Vector/Contraction.lean#L91).
 
 ```lean
 lemma ComplexVector.contr_tmul (ψ : ComplexVector) (φ : ComplexCoVector) :
     ComplexVector.contr (ψ ⊗ₜ φ) = ψ.toFin13ℂ ⬝ᵥ φ.toFin13ℂ
 ```
 
-**`Lorentz.ComplexVector.contr_basis`**, a lemma, [line 95](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/Relativity/Tensors/ComplexTensor/Vector/Contraction.lean#L95).
+**`Lorentz.ComplexVector.contr_basis`**, a lemma, [line 95](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Relativity/Tensors/ComplexTensor/Vector/Contraction.lean#L95).
 
 ```lean
 lemma ComplexVector.contr_basis (i j : Fin 4) :
@@ -56,7 +56,7 @@ lemma ComplexVector.contr_basis (i j : Fin 4) :
     if i.1 = j.1 then (1 : ℂ) else 0
 ```
 
-**`Lorentz.ComplexVector.contr_basis'`**, a lemma, [line 106](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/Relativity/Tensors/ComplexTensor/Vector/Contraction.lean#L106).
+**`Lorentz.ComplexVector.contr_basis'`**, a lemma, [line 106](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Relativity/Tensors/ComplexTensor/Vector/Contraction.lean#L106).
 
 ```lean
 lemma ComplexVector.contr_basis' (i j : Fin 1 ⊕ Fin 3) :
@@ -64,7 +64,7 @@ lemma ComplexVector.contr_basis' (i j : Fin 1 ⊕ Fin 3) :
     if i = j then (1 : ℂ) else 0
 ```
 
-**`Lorentz.ComplexCoVector.contr`**, a def, [line 121](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/Relativity/Tensors/ComplexTensor/Vector/Contraction.lean#L121).
+**`Lorentz.ComplexCoVector.contr`**, a def, [line 121](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Relativity/Tensors/ComplexTensor/Vector/Contraction.lean#L121).
 
 > The linear map from complexCo ⊗ complexContr to ℂ given by
 > summing over components of covariant Lorentz vector and
@@ -77,14 +77,14 @@ def ComplexCoVector.contr : (ComplexCoVector.SL2CRep.tprod ComplexVector.SL2CRep
     (Representation.trivial ℂ SL(2,ℂ) ℂ)
 ```
 
-**`Lorentz.ComplexCoVector.contr_tmul`**, a lemma, [line 131](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/Relativity/Tensors/ComplexTensor/Vector/Contraction.lean#L131).
+**`Lorentz.ComplexCoVector.contr_tmul`**, a lemma, [line 131](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Relativity/Tensors/ComplexTensor/Vector/Contraction.lean#L131).
 
 ```lean
 lemma ComplexCoVector.contr_tmul (φ : ComplexCoVector) (ψ : ComplexVector) :
     ComplexCoVector.contr (φ ⊗ₜ ψ) = φ.toFin13ℂ ⬝ᵥ ψ.toFin13ℂ
 ```
 
-**`Lorentz.ComplexCoVector.contr_basis`**, a lemma, [line 135](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/Relativity/Tensors/ComplexTensor/Vector/Contraction.lean#L135).
+**`Lorentz.ComplexCoVector.contr_basis`**, a lemma, [line 135](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Relativity/Tensors/ComplexTensor/Vector/Contraction.lean#L135).
 
 ```lean
 lemma ComplexCoVector.contr_basis (i j : Fin 4) :
@@ -92,7 +92,7 @@ lemma ComplexCoVector.contr_basis (i j : Fin 4) :
     if i.1 = j.1 then (1 : ℂ) else 0
 ```
 
-**`Lorentz.ComplexCoVector.contr_basis'`**, a lemma, [line 146](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/Relativity/Tensors/ComplexTensor/Vector/Contraction.lean#L146).
+**`Lorentz.ComplexCoVector.contr_basis'`**, a lemma, [line 146](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Relativity/Tensors/ComplexTensor/Vector/Contraction.lean#L146).
 
 ```lean
 lemma ComplexCoVector.contr_basis' (i j : Fin 1 ⊕ Fin 3) :
@@ -102,14 +102,14 @@ lemma ComplexCoVector.contr_basis' (i j : Fin 1 ⊕ Fin 3) :
 
 ## Symmetry
 
-**`Lorentz.ComplexVector.contr_tmul_symm`**, a lemma, [line 168](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/Relativity/Tensors/ComplexTensor/Vector/Contraction.lean#L168).
+**`Lorentz.ComplexVector.contr_tmul_symm`**, a lemma, [line 168](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Relativity/Tensors/ComplexTensor/Vector/Contraction.lean#L168).
 
 ```lean
 lemma ComplexVector.contr_tmul_symm (φ : ComplexVector) (ψ : ComplexCoVector) :
     ComplexVector.contr (φ ⊗ₜ ψ) = ComplexCoVector.contr (ψ ⊗ₜ φ)
 ```
 
-**`Lorentz.ComplexCoVector.contr_tmul_symm`**, a lemma, [line 172](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/Relativity/Tensors/ComplexTensor/Vector/Contraction.lean#L172).
+**`Lorentz.ComplexCoVector.contr_tmul_symm`**, a lemma, [line 172](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Relativity/Tensors/ComplexTensor/Vector/Contraction.lean#L172).
 
 ```lean
 lemma ComplexCoVector.contr_tmul_symm (φ : ComplexCoVector) (ψ : ComplexVector) :
@@ -122,4 +122,4 @@ lemma ComplexCoVector.contr_tmul_symm (φ : ComplexCoVector) (ψ : ComplexVector
 
 ## Sources
 
-- [Physlib/Relativity/Tensors/ComplexTensor/Vector/Contraction.lean at 2a1dfe43](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/Relativity/Tensors/ComplexTensor/Vector/Contraction.lean)
+- [Physlib/Relativity/Tensors/ComplexTensor/Vector/Contraction.lean at 8c87bdfb](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Relativity/Tensors/ComplexTensor/Vector/Contraction.lean)

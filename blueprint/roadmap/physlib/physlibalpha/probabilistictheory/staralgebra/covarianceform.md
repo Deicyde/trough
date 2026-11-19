@@ -1,14 +1,14 @@
 ---
 declaration: module
 origin: cited
-lean: ProbabilisticTheory.AlgState.fluctuationMap, ProbabilisticTheory.AlgState.fluctuationMap_apply, ProbabilisticTheory.AlgState.covarianceForm, ProbabilisticTheory.AlgState.covarianceForm_apply, ProbabilisticTheory.AlgState.covarianceForm_smul_left, ProbabilisticTheory.AlgState.covarianceForm_smul_right, ProbabilisticTheory.AlgState.covarianceForm_sum_left, ProbabilisticTheory.AlgState.covarianceForm_sum_right
+lean: PhyslibAlpha.ProbabilisticTheory.AlgState.fluctuationMap, PhyslibAlpha.ProbabilisticTheory.AlgState.fluctuationMap_apply, PhyslibAlpha.ProbabilisticTheory.AlgState.covarianceForm, PhyslibAlpha.ProbabilisticTheory.AlgState.covarianceForm_apply, PhyslibAlpha.ProbabilisticTheory.AlgState.covarianceForm_smul_left, PhyslibAlpha.ProbabilisticTheory.AlgState.covarianceForm_smul_right, PhyslibAlpha.ProbabilisticTheory.AlgState.covarianceForm_sum_left, PhyslibAlpha.ProbabilisticTheory.AlgState.covarianceForm_sum_right
 statement: formalized
 proof: formalized
 ---
 
 # The covariance form of a state and its symmetries
 
-The module `PhyslibAlpha.ProbabilisticTheory.StarAlgebra.CovarianceForm`, [PhyslibAlpha/ProbabilisticTheory/StarAlgebra/CovarianceForm.lean](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ProbabilisticTheory/StarAlgebra/CovarianceForm.lean): 18 declarations, 12 with a docstring.
+The module `PhyslibAlpha.ProbabilisticTheory.StarAlgebra.CovarianceForm`, [PhyslibAlpha/ProbabilisticTheory/StarAlgebra/CovarianceForm.lean](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/StarAlgebra/CovarianceForm.lean): 18 declarations, 12 with a docstring.
 
 ## i. Overview
 
@@ -48,7 +48,7 @@ The module `PhyslibAlpha.ProbabilisticTheory.StarAlgebra.CovarianceForm`, [Physl
 
 ## A. The covariance form
 
-**`ProbabilisticTheory.AlgState.fluctuationMap`**, a def, [line 74](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ProbabilisticTheory/StarAlgebra/CovarianceForm.lean#L74).
+**`PhyslibAlpha.ProbabilisticTheory.AlgState.fluctuationMap`**, a def, [line 74](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/StarAlgebra/CovarianceForm.lean#L74).
 
 > The fluctuation `a - ω(a)` of an element, as a linear map.
 
@@ -56,13 +56,13 @@ The module `PhyslibAlpha.ProbabilisticTheory.StarAlgebra.CovarianceForm`, [Physl
 def fluctuationMap : A →ₗ[ℂ] A
 ```
 
-**`ProbabilisticTheory.AlgState.fluctuationMap_apply`**, a lemma, [line 79](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ProbabilisticTheory/StarAlgebra/CovarianceForm.lean#L79).
+**`PhyslibAlpha.ProbabilisticTheory.AlgState.fluctuationMap_apply`**, a lemma, [line 79](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/StarAlgebra/CovarianceForm.lean#L79).
 
 ```lean
 lemma fluctuationMap_apply (a : A) : ω.fluctuationMap a = a - ω a • 1
 ```
 
-**`ProbabilisticTheory.AlgState.covarianceForm`**, a def, [line 83](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ProbabilisticTheory/StarAlgebra/CovarianceForm.lean#L83).
+**`PhyslibAlpha.ProbabilisticTheory.AlgState.covarianceForm`**, a def, [line 83](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/StarAlgebra/CovarianceForm.lean#L83).
 
 > The covariance form `C(a, b) = ω(a⋆ b) - conj (ω a) ω(b)`, the inner product of the
 > fluctuations in the pre-Hilbert space of the state.
@@ -71,42 +71,42 @@ lemma fluctuationMap_apply (a : A) : ω.fluctuationMap a = a - ω a • 1
 noncomputable def covarianceForm (a b : A) : ℂ
 ```
 
-**`ProbabilisticTheory.AlgState.covarianceForm_apply`**, a lemma, [line 86](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ProbabilisticTheory/StarAlgebra/CovarianceForm.lean#L86).
+**`PhyslibAlpha.ProbabilisticTheory.AlgState.covarianceForm_apply`**, a lemma, [line 86](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/StarAlgebra/CovarianceForm.lean#L86).
 
 ```lean
 lemma covarianceForm_apply (a b : A) :
     ω.covarianceForm a b = ω (star a * b) - star (ω a) * ω b
 ```
 
-**`ProbabilisticTheory.AlgState.covarianceForm_smul_left`**, a lemma, [line 98](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ProbabilisticTheory/StarAlgebra/CovarianceForm.lean#L98).
+**`PhyslibAlpha.ProbabilisticTheory.AlgState.covarianceForm_smul_left`**, a lemma, [line 98](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/StarAlgebra/CovarianceForm.lean#L98).
 
 ```lean
 lemma covarianceForm_smul_left (c : ℂ) (a b : A) :
     ω.covarianceForm (c • a) b = star c * ω.covarianceForm a b
 ```
 
-**`ProbabilisticTheory.AlgState.covarianceForm_smul_right`**, a lemma, [line 103](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ProbabilisticTheory/StarAlgebra/CovarianceForm.lean#L103).
+**`PhyslibAlpha.ProbabilisticTheory.AlgState.covarianceForm_smul_right`**, a lemma, [line 103](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/StarAlgebra/CovarianceForm.lean#L103).
 
 ```lean
 lemma covarianceForm_smul_right (c : ℂ) (a b : A) :
     ω.covarianceForm a (c • b) = c * ω.covarianceForm a b
 ```
 
-**`ProbabilisticTheory.AlgState.covarianceForm_sum_left`**, a lemma, [line 107](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ProbabilisticTheory/StarAlgebra/CovarianceForm.lean#L107).
+**`PhyslibAlpha.ProbabilisticTheory.AlgState.covarianceForm_sum_left`**, a lemma, [line 107](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/StarAlgebra/CovarianceForm.lean#L107).
 
 ```lean
 lemma covarianceForm_sum_left {ι : Type*} (s : Finset ι) (a : ι → A) (b : A) :
     ω.covarianceForm (∑ i ∈ s, a i) b = ∑ i ∈ s, ω.covarianceForm (a i) b
 ```
 
-**`ProbabilisticTheory.AlgState.covarianceForm_sum_right`**, a lemma, [line 111](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ProbabilisticTheory/StarAlgebra/CovarianceForm.lean#L111).
+**`PhyslibAlpha.ProbabilisticTheory.AlgState.covarianceForm_sum_right`**, a lemma, [line 111](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/StarAlgebra/CovarianceForm.lean#L111).
 
 ```lean
 lemma covarianceForm_sum_right {ι : Type*} (s : Finset ι) (a : A) (b : ι → A) :
     ω.covarianceForm a (∑ i ∈ s, b i) = ∑ i ∈ s, ω.covarianceForm a (b i)
 ```
 
-**`ProbabilisticTheory.AlgState.covarianceForm_selfAdjoint`**, a lemma, [line 116](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ProbabilisticTheory/StarAlgebra/CovarianceForm.lean#L116).
+**`PhyslibAlpha.ProbabilisticTheory.AlgState.covarianceForm_selfAdjoint`**, a lemma, [line 116](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/StarAlgebra/CovarianceForm.lean#L116).
 
 > For observables, `C(a, b) = Cov(a, b) + i ω⟨⁅a, b⁆⟩`.
 
@@ -117,7 +117,7 @@ lemma covarianceForm_selfAdjoint (a b : selfAdjoint A) :
 
 ## B. Symmetries
 
-**`ProbabilisticTheory.AlgState.covarianceForm_map`**, a lemma, [line 132](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ProbabilisticTheory/StarAlgebra/CovarianceForm.lean#L132).
+**`PhyslibAlpha.ProbabilisticTheory.AlgState.covarianceForm_map`**, a lemma, [line 132](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/StarAlgebra/CovarianceForm.lean#L132).
 
 > **A symmetry of the state preserves the covariance form**: `C(σ a, σ b) = C(a, b)`.
 
@@ -125,7 +125,7 @@ lemma covarianceForm_selfAdjoint (a b : selfAdjoint A) :
 lemma covarianceForm_map (a b : A) : ω.covarianceForm (σ a) (σ b) = ω.covarianceForm a b
 ```
 
-**`ProbabilisticTheory.AlgState.covarianceForm_eq_zero_of_smul`**, a lemma, [line 138](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ProbabilisticTheory/StarAlgebra/CovarianceForm.lean#L138).
+**`PhyslibAlpha.ProbabilisticTheory.AlgState.covarianceForm_eq_zero_of_smul`**, a lemma, [line 138](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/StarAlgebra/CovarianceForm.lean#L138).
 
 > Elements multiplied by `χ` and `χ'` under a symmetry, with `conj χ · χ' ≠ 1`, have
 > covariance zero.
@@ -135,7 +135,7 @@ lemma covarianceForm_eq_zero_of_smul {a b : A} {χ χ' : ℂ} (ha : σ a = χ �
     (h : star χ * χ' ≠ 1) : ω.covarianceForm a b = 0
 ```
 
-**`ProbabilisticTheory.AlgState.covarianceForm_eq_zero_of_neg`**, a lemma, [line 146](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ProbabilisticTheory/StarAlgebra/CovarianceForm.lean#L146).
+**`PhyslibAlpha.ProbabilisticTheory.AlgState.covarianceForm_eq_zero_of_neg`**, a lemma, [line 146](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/StarAlgebra/CovarianceForm.lean#L146).
 
 > **An even and an odd element have covariance zero.**
 
@@ -144,7 +144,7 @@ lemma covarianceForm_eq_zero_of_neg {a b : A} (ha : σ a = a) (hb : σ b = -b) :
     ω.covarianceForm a b = 0
 ```
 
-**`ProbabilisticTheory.AlgState.covarianceForm_eq_zero_of_character`**, a lemma, [line 160](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ProbabilisticTheory/StarAlgebra/CovarianceForm.lean#L160).
+**`PhyslibAlpha.ProbabilisticTheory.AlgState.covarianceForm_eq_zero_of_character`**, a lemma, [line 160](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/StarAlgebra/CovarianceForm.lean#L160).
 
 > **Elements transforming with different unitary characters have covariance zero.** If
 > `α g a = χ g • a` and `α g b = χ' g • b` with `|χ g| = 1` and `χ ≠ χ'`, then `C(a, b) = 0`.
@@ -157,7 +157,7 @@ lemma covarianceForm_eq_zero_of_character {a b : A} {χ χ' : Γ → ℂ} (hχ :
 
 ## C. Matrices of covariances
 
-**`ProbabilisticTheory.AlgState.covarianceMatrixForm`**, a def, [line 179](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ProbabilisticTheory/StarAlgebra/CovarianceForm.lean#L179).
+**`PhyslibAlpha.ProbabilisticTheory.AlgState.covarianceMatrixForm`**, a def, [line 179](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/StarAlgebra/CovarianceForm.lean#L179).
 
 > The matrix `M_ik = C(a_i, b_k)` of covariances of two families.
 
@@ -165,7 +165,7 @@ lemma covarianceForm_eq_zero_of_character {a b : A} {χ χ' : Γ → ℂ} (hχ :
 noncomputable def covarianceMatrixForm (a : ι → A) (b : κ → A) : Matrix ι κ ℂ
 ```
 
-**`ProbabilisticTheory.AlgState.posSemidef_covarianceMatrixForm`**, a lemma, [line 185](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ProbabilisticTheory/StarAlgebra/CovarianceForm.lean#L185).
+**`PhyslibAlpha.ProbabilisticTheory.AlgState.posSemidef_covarianceMatrixForm`**, a lemma, [line 185](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/StarAlgebra/CovarianceForm.lean#L185).
 
 > **The matrix of covariances of a family is positive semidefinite**, being a Gram matrix.
 
@@ -173,7 +173,7 @@ noncomputable def covarianceMatrixForm (a : ι → A) (b : κ → A) : Matrix ι
 lemma posSemidef_covarianceMatrixForm (a : ι → A) : (ω.covarianceMatrixForm a a).PosSemidef
 ```
 
-**`ProbabilisticTheory.AlgState.conjTranspose_mul_covarianceMatrixForm_mul`**, a lemma, [line 195](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ProbabilisticTheory/StarAlgebra/CovarianceForm.lean#L195).
+**`PhyslibAlpha.ProbabilisticTheory.AlgState.conjTranspose_mul_covarianceMatrixForm_mul`**, a lemma, [line 195](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/StarAlgebra/CovarianceForm.lean#L195).
 
 > **A symmetry of the state preserves the matrix of covariances**: if `σ` acts on the two
 > families by the matrices `R` and `S`, then `Rᴴ M S = M`.
@@ -187,7 +187,7 @@ lemma conjTranspose_mul_covarianceMatrixForm_mul (σ : A ≃⋆ₐ[ℂ] A) (hω 
 
 ## D. Schur's lemma
 
-**`ProbabilisticTheory.AlgState.covarianceMatrixForm_isIntertwining`**, a lemma, [line 221](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ProbabilisticTheory/StarAlgebra/CovarianceForm.lean#L221).
+**`PhyslibAlpha.ProbabilisticTheory.AlgState.covarianceMatrixForm_isIntertwining`**, a lemma, [line 221](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/StarAlgebra/CovarianceForm.lean#L221).
 
 > If `α` acts on the families `a` and `b` by `ρ` and `π`, with `ρ` unitary, then the matrix of
 > covariances intertwines `π` with `ρ`.
@@ -201,7 +201,7 @@ lemma covarianceMatrixForm_isIntertwining {a : ι → A} {b : κ → A}
       ρ g ∘ₗ toLin' (ω.covarianceMatrixForm a b)
 ```
 
-**`ProbabilisticTheory.AlgState.covarianceMatrixForm_eq_zero_of_irreducible`**, a lemma, [line 246](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ProbabilisticTheory/StarAlgebra/CovarianceForm.lean#L246).
+**`PhyslibAlpha.ProbabilisticTheory.AlgState.covarianceMatrixForm_eq_zero_of_irreducible`**, a lemma, [line 246](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/StarAlgebra/CovarianceForm.lean#L246).
 
 > **Schur's lemma for covariances.** If a group of symmetries of the state acts on the family
 > `a` by the irreducible unitary representation `ρ` and on the family `b` by the irreducible
@@ -222,4 +222,4 @@ lemma covarianceMatrixForm_eq_zero_of_irreducible [ρ.IsIrreducible] [π.IsIrred
 
 ## Sources
 
-- [PhyslibAlpha/ProbabilisticTheory/StarAlgebra/CovarianceForm.lean at 2a1dfe43](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ProbabilisticTheory/StarAlgebra/CovarianceForm.lean)
+- [PhyslibAlpha/ProbabilisticTheory/StarAlgebra/CovarianceForm.lean at 8c87bdfb](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/StarAlgebra/CovarianceForm.lean)

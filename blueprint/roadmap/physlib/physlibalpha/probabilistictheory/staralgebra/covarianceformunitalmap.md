@@ -1,14 +1,14 @@
 ---
 declaration: module
 origin: cited
-lean: ProbabilisticTheory.AlgState.apply_nonneg, ProbabilisticTheory.AlgState.star_dotProduct_covarianceMatrixForm_mulVec, ProbabilisticTheory.AlgState.covarianceForm_sub_covarianceForm_map, ProbabilisticTheory.AlgState.covarianceForm_map_le, ProbabilisticTheory.AlgState.covarianceMatrixForm_map_le, Matrix.sq_sum_le_sum_sq, Matrix.kadison, ProbabilisticTheory.AlgState.covarianceForm_map_le_of_positive
+lean: PhyslibAlpha.ProbabilisticTheory.AlgState.apply_nonneg, PhyslibAlpha.ProbabilisticTheory.AlgState.star_dotProduct_covarianceMatrixForm_mulVec, PhyslibAlpha.ProbabilisticTheory.AlgState.covarianceForm_sub_covarianceForm_map, PhyslibAlpha.ProbabilisticTheory.AlgState.covarianceForm_map_le, PhyslibAlpha.ProbabilisticTheory.AlgState.covarianceMatrixForm_map_le, Matrix.sq_sum_le_sum_sq, Matrix.kadison, PhyslibAlpha.ProbabilisticTheory.AlgState.covarianceForm_map_le_of_positive
 statement: formalized
 proof: formalized
 ---
 
 # Covariances do not decrease under unital maps
 
-The module `PhyslibAlpha.ProbabilisticTheory.StarAlgebra.CovarianceFormUnitalMap`, [PhyslibAlpha/ProbabilisticTheory/StarAlgebra/CovarianceFormUnitalMap.lean](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ProbabilisticTheory/StarAlgebra/CovarianceFormUnitalMap.lean): 15 declarations, 13 with a docstring.
+The module `PhyslibAlpha.ProbabilisticTheory.StarAlgebra.CovarianceFormUnitalMap`, [PhyslibAlpha/ProbabilisticTheory/StarAlgebra/CovarianceFormUnitalMap.lean](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/StarAlgebra/CovarianceFormUnitalMap.lean): 15 declarations, 13 with a docstring.
 
 ## i. Overview
 
@@ -50,7 +50,7 @@ The module `PhyslibAlpha.ProbabilisticTheory.StarAlgebra.CovarianceFormUnitalMap
 
 ## A. Positivity of a state
 
-**`ProbabilisticTheory.AlgState.apply_nonneg`**, a lemma, [line 78](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ProbabilisticTheory/StarAlgebra/CovarianceFormUnitalMap.lean#L78).
+**`PhyslibAlpha.ProbabilisticTheory.AlgState.apply_nonneg`**, a lemma, [line 78](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/StarAlgebra/CovarianceFormUnitalMap.lean#L78).
 
 > On a star-ordered ring a state is nonnegative on every nonnegative element.
 
@@ -60,7 +60,7 @@ lemma apply_nonneg {a : A} (ha : 0 ≤ a) : 0 ≤ ω a
 
 ## B. Schwarz maps
 
-**`ProbabilisticTheory.AlgState.star_dotProduct_covarianceMatrixForm_mulVec`**, a lemma, [line 100](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ProbabilisticTheory/StarAlgebra/CovarianceFormUnitalMap.lean#L100).
+**`PhyslibAlpha.ProbabilisticTheory.AlgState.star_dotProduct_covarianceMatrixForm_mulVec`**, a lemma, [line 100](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/StarAlgebra/CovarianceFormUnitalMap.lean#L100).
 
 > The quadratic form of the matrix of covariances at `c` is the covariance form of `∑ cⱼ aⱼ`
 > with itself.
@@ -72,7 +72,7 @@ lemma star_dotProduct_covarianceMatrixForm_mulVec {ι : Type*} [Fintype ι] (ω 
       ω.covarianceForm (∑ j, c j • a j) (∑ j, c j • a j)
 ```
 
-**`ProbabilisticTheory.AlgState.covarianceForm_sub_covarianceForm_map`**, a lemma, [line 114](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ProbabilisticTheory/StarAlgebra/CovarianceFormUnitalMap.lean#L114).
+**`PhyslibAlpha.ProbabilisticTheory.AlgState.covarianceForm_sub_covarianceForm_map`**, a lemma, [line 114](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/StarAlgebra/CovarianceFormUnitalMap.lean#L114).
 
 > Pulling the observable through `Φ` and pushing the state differ by the value of `ω` on
 > `Φ(X⋆ X) - Φ(X)⋆ Φ(X)`.
@@ -83,7 +83,7 @@ lemma covarianceForm_sub_covarianceForm_map (hω' : ∀ x, ω' x = ω (Φ x)) (X
       ω (Φ (star X * X) - star (Φ X) * Φ X)
 ```
 
-**`ProbabilisticTheory.AlgState.covarianceForm_map_le`**, a lemma, [line 126](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ProbabilisticTheory/StarAlgebra/CovarianceFormUnitalMap.lean#L126).
+**`PhyslibAlpha.ProbabilisticTheory.AlgState.covarianceForm_map_le`**, a lemma, [line 126](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/StarAlgebra/CovarianceFormUnitalMap.lean#L126).
 
 > **A Schwarz inequality for `Φ` bounds the covariance form**: if
 > `Φ(X)⋆ Φ(X) ≤ Φ(X⋆ X)`, then `C_ω(Φ X, Φ X) ≤ C_ω'(X, X)`.
@@ -94,7 +94,7 @@ lemma covarianceForm_map_le (hω' : ∀ x, ω' x = ω (Φ x)) {X : A}
     ω.covarianceForm (Φ X) (Φ X) ≤ ω'.covarianceForm X X
 ```
 
-**`ProbabilisticTheory.AlgState.covarianceMatrixForm_map_le`**, a lemma, [line 134](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ProbabilisticTheory/StarAlgebra/CovarianceFormUnitalMap.lean#L134).
+**`PhyslibAlpha.ProbabilisticTheory.AlgState.covarianceMatrixForm_map_le`**, a lemma, [line 134](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/StarAlgebra/CovarianceFormUnitalMap.lean#L134).
 
 > **Maps satisfying the Schwarz inequality do not decrease the matrix of covariances.** The
 > hypothesis holds for completely positive unital maps.
@@ -108,7 +108,7 @@ lemma covarianceMatrixForm_map_le {ι : Type*} [Fintype ι] (hω' : ∀ x, ω' x
 
 ## C. Kadison's inequality
 
-**`Matrix.sq_sum_le_sum_sq`**, a lemma, [line 157](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ProbabilisticTheory/StarAlgebra/CovarianceFormUnitalMap.lean#L157).
+**`Matrix.sq_sum_le_sum_sq`**, a lemma, [line 157](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/StarAlgebra/CovarianceFormUnitalMap.lean#L157).
 
 > With positive `Qₖ` summing to `1`, `(∑ λₖ Qₖ)² ≤ ∑ λₖ² Qₖ`.
 
@@ -118,7 +118,7 @@ lemma sq_sum_le_sum_sq {ι : Type*} [Fintype ι] (Q : ι → Matrix m m ℂ)
     (∑ k, (c k : ℂ) • Q k) * ∑ k, (c k : ℂ) • Q k ≤ ∑ k, ((c k : ℂ) * c k) • Q k
 ```
 
-**`Matrix.kadison`**, a lemma, [line 184](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ProbabilisticTheory/StarAlgebra/CovarianceFormUnitalMap.lean#L184).
+**`Matrix.kadison`**, a lemma, [line 184](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/StarAlgebra/CovarianceFormUnitalMap.lean#L184).
 
 > **Kadison's inequality**: for a positive unital map and Hermitian `A`,
 > `Φ(A)² ≤ Φ(A²)`.
@@ -130,7 +130,7 @@ lemma kadison (Φ : Matrix n n ℂ →ₚ₁[ℂ] Matrix m m ℂ) {A : Matrix n 
 
 ## D. Positive maps of matrices
 
-**`ProbabilisticTheory.AlgState.covarianceForm_map_le_of_positive`**, a lemma, [line 243](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ProbabilisticTheory/StarAlgebra/CovarianceFormUnitalMap.lean#L243).
+**`PhyslibAlpha.ProbabilisticTheory.AlgState.covarianceForm_map_le_of_positive`**, a lemma, [line 243](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/StarAlgebra/CovarianceFormUnitalMap.lean#L243).
 
 > **Positive unital maps do not decrease the covariance form of Hermitian matrices.**
 
@@ -139,7 +139,7 @@ lemma covarianceForm_map_le_of_positive (hω' : ∀ x, ω' x = ω (Φ x)) {X : M
     (hX : X.IsHermitian) : ω.covarianceForm (Φ X) (Φ X) ≤ ω'.covarianceForm X X
 ```
 
-**`ProbabilisticTheory.AlgState.covarianceMatrixForm_map_le_of_positive`**, a lemma, [line 249](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ProbabilisticTheory/StarAlgebra/CovarianceFormUnitalMap.lean#L249).
+**`PhyslibAlpha.ProbabilisticTheory.AlgState.covarianceMatrixForm_map_le_of_positive`**, a lemma, [line 249](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/StarAlgebra/CovarianceFormUnitalMap.lean#L249).
 
 > **Positive unital maps do not decrease the matrix of covariances** of Hermitian matrices at
 > real coefficients.
@@ -154,21 +154,21 @@ lemma covarianceMatrixForm_map_le_of_positive {ι : Type*} [Fintype ι]
 
 ## E. The transpose
 
-**`Matrix.stateZero`**, a def, [line 270](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ProbabilisticTheory/StarAlgebra/CovarianceFormUnitalMap.lean#L270).
+**`Matrix.stateZero`**, a def, [line 270](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/StarAlgebra/CovarianceFormUnitalMap.lean#L270).
 
 > The state `X ↦ X₀₀` of `2 × 2` matrices, the vector state of `|0⟩`.
 
 ```lean
-def stateZero : ProbabilisticTheory.AlgState (Matrix (Fin 2) (Fin 2) ℂ)
+def stateZero : PhyslibAlpha.ProbabilisticTheory.AlgState (Matrix (Fin 2) (Fin 2) ℂ)
 ```
 
-**`Matrix.stateZero_apply`**, a lemma, [line 281](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ProbabilisticTheory/StarAlgebra/CovarianceFormUnitalMap.lean#L281).
+**`Matrix.stateZero_apply`**, a lemma, [line 281](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/StarAlgebra/CovarianceFormUnitalMap.lean#L281).
 
 ```lean
 lemma stateZero_apply (X : Matrix (Fin 2) (Fin 2) ℂ) : stateZero X = X 0 0
 ```
 
-**`Matrix.transposeMap`**, a def, [line 284](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ProbabilisticTheory/StarAlgebra/CovarianceFormUnitalMap.lean#L284).
+**`Matrix.transposeMap`**, a def, [line 284](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/StarAlgebra/CovarianceFormUnitalMap.lean#L284).
 
 > The transpose of `2 × 2` matrices.
 
@@ -176,13 +176,13 @@ lemma stateZero_apply (X : Matrix (Fin 2) (Fin 2) ℂ) : stateZero X = X 0 0
 noncomputable def transposeMap : Matrix (Fin 2) (Fin 2) ℂ →ₚ₁[ℂ] Matrix (Fin 2) (Fin 2) ℂ
 ```
 
-**`Matrix.transposeMap_apply`**, a lemma, [line 290](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ProbabilisticTheory/StarAlgebra/CovarianceFormUnitalMap.lean#L290).
+**`Matrix.transposeMap_apply`**, a lemma, [line 290](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/StarAlgebra/CovarianceFormUnitalMap.lean#L290).
 
 ```lean
 lemma transposeMap_apply (X : Matrix (Fin 2) (Fin 2) ℂ) : transposeMap X = Xᵀ
 ```
 
-**`Matrix.stateZero_transposeMap`**, a lemma, [line 293](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ProbabilisticTheory/StarAlgebra/CovarianceFormUnitalMap.lean#L293).
+**`Matrix.stateZero_transposeMap`**, a lemma, [line 293](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/StarAlgebra/CovarianceFormUnitalMap.lean#L293).
 
 > The state `X ↦ X₀₀` is unchanged by the transpose.
 
@@ -191,7 +191,7 @@ lemma stateZero_transposeMap (X : Matrix (Fin 2) (Fin 2) ℂ) :
     stateZero X = stateZero (transposeMap X)
 ```
 
-**`Matrix.transposeMap_gap`**, a lemma, [line 298](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ProbabilisticTheory/StarAlgebra/CovarianceFormUnitalMap.lean#L298).
+**`Matrix.transposeMap_gap`**, a lemma, [line 298](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/StarAlgebra/CovarianceFormUnitalMap.lean#L298).
 
 > **The transpose is positive and unital, but the bound fails for `E₀₁`**: for positive maps
 > it holds only on Hermitian matrices.
@@ -208,4 +208,4 @@ lemma transposeMap_gap :
 
 ## Sources
 
-- [PhyslibAlpha/ProbabilisticTheory/StarAlgebra/CovarianceFormUnitalMap.lean at 2a1dfe43](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ProbabilisticTheory/StarAlgebra/CovarianceFormUnitalMap.lean)
+- [PhyslibAlpha/ProbabilisticTheory/StarAlgebra/CovarianceFormUnitalMap.lean at 8c87bdfb](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/StarAlgebra/CovarianceFormUnitalMap.lean)

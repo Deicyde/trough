@@ -8,7 +8,7 @@ proof: formalized
 
 # The ordinary sector algebras of the local field algebra
 
-The module `PhyslibAlpha.ClassicalFieldTheory.GaugeTheory.LocalField.Sector`, [PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/LocalField/Sector.lean](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/LocalField/Sector.lean): 35 declarations (1 instance with no name), 12 with a docstring.
+The module `PhyslibAlpha.ClassicalFieldTheory.GaugeTheory.LocalField.Sector`, [PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/LocalField/Sector.lean](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/LocalField/Sector.lean): 35 declarations (1 instance with no name), 12 with a docstring.
 
 ## i. Overview
 
@@ -39,7 +39,7 @@ The module `PhyslibAlpha.ClassicalFieldTheory.GaugeTheory.LocalField.Sector`, [P
 
 ## A. Field categories and their ordinary generators
 
-**`GaugeFieldData.FieldCategory`**, an inductive, [line 65](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/LocalField/Sector.lean#L65).
+**`GaugeFieldData.FieldCategory`**, an inductive, [line 65](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/LocalField/Sector.lean#L65).
 
 > The categories of fields a sector may select.
 
@@ -54,7 +54,7 @@ inductive FieldCategory where
 deriving DecidableEq
 ```
 
-**An instance with no name**, [line 75](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/LocalField/Sector.lean#L75).
+**An instance with no name**, [line 75](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/LocalField/Sector.lean#L75).
 
 > The three categories exhaust `FieldCategory`.
 
@@ -62,7 +62,7 @@ deriving DecidableEq
 instance : Fintype FieldCategory
 ```
 
-**`GaugeFieldData.categoryGenerators`**, a def, [line 84](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/LocalField/Sector.lean#L84).
+**`GaugeFieldData.categoryGenerators`**, a def, [line 84](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/LocalField/Sector.lean#L84).
 
 > The ordinary generators of one field category.
 
@@ -70,7 +70,7 @@ instance : Fintype FieldCategory
 def categoryGenerators : FieldCategory → Set T.LocalFieldAlgebra
 ```
 
-**`GaugeFieldData.sectorGenerators`**, a def, [line 90](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/LocalField/Sector.lean#L90).
+**`GaugeFieldData.sectorGenerators`**, a def, [line 90](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/LocalField/Sector.lean#L90).
 
 > The ordinary generators selected by a sector.
 
@@ -78,27 +78,27 @@ def categoryGenerators : FieldCategory → Set T.LocalFieldAlgebra
 def sectorGenerators (S : Finset FieldCategory) : Set T.LocalFieldAlgebra
 ```
 
-**`GaugeFieldData.sectorGenerators_mono`**, a lemma, [line 93](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/LocalField/Sector.lean#L93).
+**`GaugeFieldData.sectorGenerators_mono`**, a lemma, [line 93](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/LocalField/Sector.lean#L93).
 
 ```lean
 lemma sectorGenerators_mono {S S' : Finset FieldCategory} (h : S ⊆ S') :
     T.sectorGenerators S ⊆ T.sectorGenerators S'
 ```
 
-**`GaugeFieldData.sectorGenerators_empty`**, a lemma, [line 98](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/LocalField/Sector.lean#L98).
+**`GaugeFieldData.sectorGenerators_empty`**, a lemma, [line 98](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/LocalField/Sector.lean#L98).
 
 ```lean
 lemma sectorGenerators_empty : T.sectorGenerators ∅ = ∅
 ```
 
-**`GaugeFieldData.sectorGenerators_union`**, a lemma, [line 101](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/LocalField/Sector.lean#L101).
+**`GaugeFieldData.sectorGenerators_union`**, a lemma, [line 101](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/LocalField/Sector.lean#L101).
 
 ```lean
 lemma sectorGenerators_union (S S' : Finset FieldCategory) :
     T.sectorGenerators (S ∪ S') = T.sectorGenerators S ∪ T.sectorGenerators S'
 ```
 
-**`GaugeFieldData.sectorGenerators_univ`**, a lemma, [line 106](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/LocalField/Sector.lean#L106).
+**`GaugeFieldData.sectorGenerators_univ`**, a lemma, [line 106](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/LocalField/Sector.lean#L106).
 
 > The full sector selects the generators of the local field algebra.
 
@@ -108,7 +108,7 @@ lemma sectorGenerators_univ : T.sectorGenerators Finset.univ = T.generators
 
 ## B. The ordinary sector algebra
 
-**`GaugeFieldData.SectorAlgebra`**, a def, [line 126](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/LocalField/Sector.lean#L126).
+**`GaugeFieldData.SectorAlgebra`**, a def, [line 126](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/LocalField/Sector.lean#L126).
 
 > The ordinary sector algebra of a sector `S`: the subalgebra of the local field algebra
 > generated by the ordinary generators of the selected categories.
@@ -119,21 +119,21 @@ noncomputable def SectorAlgebra (S : Finset FieldCategory) : Subalgebra ℂ T.Lo
 
 ### B.1. Membership of the selected families
 
-**`GaugeFieldData.SectorAlgebra.ιFermionTotal_mem`**, a lemma, [line 139](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/LocalField/Sector.lean#L139).
+**`GaugeFieldData.SectorAlgebra.ιFermionTotal_mem`**, a lemma, [line 139](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/LocalField/Sector.lean#L139).
 
 ```lean
 lemma ιFermionTotal_mem (hS : FieldCategory.fermion ∈ S) (v : T.FermionGenerators) :
     T.ιFermionTotal v ∈ T.SectorAlgebra S
 ```
 
-**`GaugeFieldData.SectorAlgebra.ιFermion_mem`**, a lemma, [line 144](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/LocalField/Sector.lean#L144).
+**`GaugeFieldData.SectorAlgebra.ιFermion_mem`**, a lemma, [line 144](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/LocalField/Sector.lean#L144).
 
 ```lean
 lemma ιFermion_mem (hS : FieldCategory.fermion ∈ S) (i : T.FermionSpecies)
     (x : JetComponentSpace (T.fermion i)) : T.ιFermion i x ∈ T.SectorAlgebra S
 ```
 
-**`GaugeFieldData.SectorAlgebra.fermionSymbol_mem`**, a lemma, [line 148](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/LocalField/Sector.lean#L148).
+**`GaugeFieldData.SectorAlgebra.fermionSymbol_mem`**, a lemma, [line 148](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/LocalField/Sector.lean#L148).
 
 ```lean
 lemma fermionSymbol_mem (hS : FieldCategory.fermion ∈ S) (i : T.FermionSpecies)
@@ -141,7 +141,7 @@ lemma fermionSymbol_mem (hS : FieldCategory.fermion ∈ S) (i : T.FermionSpecies
     T.fermionSymbol i s φ ∈ T.SectorAlgebra S
 ```
 
-**`GaugeFieldData.SectorAlgebra.conjFermionSymbol_mem`**, a lemma, [line 153](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/LocalField/Sector.lean#L153).
+**`GaugeFieldData.SectorAlgebra.conjFermionSymbol_mem`**, a lemma, [line 153](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/LocalField/Sector.lean#L153).
 
 ```lean
 lemma conjFermionSymbol_mem (hS : FieldCategory.fermion ∈ S) (i : T.FermionSpecies)
@@ -149,21 +149,21 @@ lemma conjFermionSymbol_mem (hS : FieldCategory.fermion ∈ S) (i : T.FermionSpe
     T.conjFermionSymbol i s φ ∈ T.SectorAlgebra S
 ```
 
-**`GaugeFieldData.SectorAlgebra.ιBosonTotal_mem`**, a lemma, [line 158](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/LocalField/Sector.lean#L158).
+**`GaugeFieldData.SectorAlgebra.ιBosonTotal_mem`**, a lemma, [line 158](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/LocalField/Sector.lean#L158).
 
 ```lean
 lemma ιBosonTotal_mem (hS : FieldCategory.scalar ∈ S) (v : T.BosonGenerators) :
     T.ιBosonTotal v ∈ T.SectorAlgebra S
 ```
 
-**`GaugeFieldData.SectorAlgebra.ιBoson_mem`**, a lemma, [line 163](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/LocalField/Sector.lean#L163).
+**`GaugeFieldData.SectorAlgebra.ιBoson_mem`**, a lemma, [line 163](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/LocalField/Sector.lean#L163).
 
 ```lean
 lemma ιBoson_mem (hS : FieldCategory.scalar ∈ S) (j : T.BosonSpecies)
     (y : JetComponentSpace (T.boson j)) : T.ιBoson j y ∈ T.SectorAlgebra S
 ```
 
-**`GaugeFieldData.SectorAlgebra.bosonSymbol_mem`**, a lemma, [line 167](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/LocalField/Sector.lean#L167).
+**`GaugeFieldData.SectorAlgebra.bosonSymbol_mem`**, a lemma, [line 167](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/LocalField/Sector.lean#L167).
 
 ```lean
 lemma bosonSymbol_mem (hS : FieldCategory.scalar ∈ S) (j : T.BosonSpecies)
@@ -171,7 +171,7 @@ lemma bosonSymbol_mem (hS : FieldCategory.scalar ∈ S) (j : T.BosonSpecies)
     T.bosonSymbol j s φ ∈ T.SectorAlgebra S
 ```
 
-**`GaugeFieldData.SectorAlgebra.conjBosonSymbol_mem`**, a lemma, [line 172](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/LocalField/Sector.lean#L172).
+**`GaugeFieldData.SectorAlgebra.conjBosonSymbol_mem`**, a lemma, [line 172](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/LocalField/Sector.lean#L172).
 
 ```lean
 lemma conjBosonSymbol_mem (hS : FieldCategory.scalar ∈ S) (j : T.BosonSpecies)
@@ -179,7 +179,7 @@ lemma conjBosonSymbol_mem (hS : FieldCategory.scalar ∈ S) (j : T.BosonSpecies)
     T.conjBosonSymbol j s φ ∈ T.SectorAlgebra S
 ```
 
-**`GaugeFieldData.SectorAlgebra.ιConnection_mem`**, a lemma, [line 177](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/LocalField/Sector.lean#L177).
+**`GaugeFieldData.SectorAlgebra.ιConnection_mem`**, a lemma, [line 177](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/LocalField/Sector.lean#L177).
 
 ```lean
 lemma ιConnection_mem (hS : FieldCategory.gauge ∈ S) (v : GaugeBoson.JetComponentSpace 𝔤) :
@@ -188,7 +188,7 @@ lemma ιConnection_mem (hS : FieldCategory.gauge ∈ S) (v : GaugeBoson.JetCompo
 
 ### B.2. Generation
 
-**`GaugeFieldData.SectorAlgebra.sectorGenerators_cases`**, a lemma, [line 189](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/LocalField/Sector.lean#L189).
+**`GaugeFieldData.SectorAlgebra.sectorGenerators_cases`**, a lemma, [line 189](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/LocalField/Sector.lean#L189).
 
 > Case analysis on the generators of a sector.
 
@@ -200,7 +200,7 @@ lemma sectorGenerators_cases {P : T.LocalFieldAlgebra → Prop} {b : T.LocalFiel
     (hg : FieldCategory.gauge ∈ S → ∀ v, P (T.ιConnection v)) : P b
 ```
 
-**`GaugeFieldData.SectorAlgebra.induction`**, a lemma, [line 203](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/LocalField/Sector.lean#L203).
+**`GaugeFieldData.SectorAlgebra.induction`**, a lemma, [line 203](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/LocalField/Sector.lean#L203).
 
 > A property holding on the selected generators and the scalars and closed under sums
 > and products holds on the sector algebra.
@@ -216,7 +216,7 @@ lemma induction {P : T.LocalFieldAlgebra → Prop} {x : T.LocalFieldAlgebra}
     (hmul : ∀ x y, P x → P y → P (x * y)) : P x
 ```
 
-**`GaugeFieldData.SectorAlgebra.algHom_ext`**, a lemma, [line 221](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/LocalField/Sector.lean#L221).
+**`GaugeFieldData.SectorAlgebra.algHom_ext`**, a lemma, [line 221](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/LocalField/Sector.lean#L221).
 
 > Two algebra maps out of a sector algebra agreeing on the selected generators are
 > equal. This is uniqueness only: a sector algebra is not free on its generators.
@@ -235,14 +235,14 @@ lemma algHom_ext {B : Type} [Semiring B] [Algebra ℂ B]
 
 ### B.3. The lattice laws of the selection
 
-**`GaugeFieldData.SectorAlgebra.mono`**, a lemma, [line 248](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/LocalField/Sector.lean#L248).
+**`GaugeFieldData.SectorAlgebra.mono`**, a lemma, [line 248](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/LocalField/Sector.lean#L248).
 
 ```lean
 lemma mono {S S' : Finset FieldCategory} (h : S ⊆ S') :
     T.SectorAlgebra S ≤ T.SectorAlgebra S'
 ```
 
-**`GaugeFieldData.SectorAlgebra.empty`**, a lemma, [line 254](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/LocalField/Sector.lean#L254).
+**`GaugeFieldData.SectorAlgebra.empty`**, a lemma, [line 254](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/LocalField/Sector.lean#L254).
 
 > The empty sector algebra is the image of the scalars.
 
@@ -250,13 +250,13 @@ lemma mono {S S' : Finset FieldCategory} (h : S ⊆ S') :
 lemma empty : T.SectorAlgebra ∅ = ⊥
 ```
 
-**`GaugeFieldData.SectorAlgebra.univ`**, a lemma, [line 259](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/LocalField/Sector.lean#L259).
+**`GaugeFieldData.SectorAlgebra.univ`**, a lemma, [line 259](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/LocalField/Sector.lean#L259).
 
 ```lean
 lemma univ : T.SectorAlgebra Finset.univ = ⊤
 ```
 
-**`GaugeFieldData.SectorAlgebra.union`**, a lemma, [line 263](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/LocalField/Sector.lean#L263).
+**`GaugeFieldData.SectorAlgebra.union`**, a lemma, [line 263](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/LocalField/Sector.lean#L263).
 
 ```lean
 lemma union (S S' : Finset FieldCategory) :
@@ -268,14 +268,14 @@ lemma union (S S' : Finset FieldCategory) :
 > Each generator law of `J(T)` stays inside the family of the generator it acts on, the
 > connection law up to a scalar shift, so both actions preserve every sector algebra.
 
-**`GaugeFieldData.SectorAlgebra.repJet_mem`**, a lemma, [line 284](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/LocalField/Sector.lean#L284).
+**`GaugeFieldData.SectorAlgebra.repJet_mem`**, a lemma, [line 284](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/LocalField/Sector.lean#L284).
 
 ```lean
 lemma repJet_mem (U : GJ) {x : T.LocalFieldAlgebra} (hx : x ∈ T.SectorAlgebra S) :
     T.repJet U x ∈ T.SectorAlgebra S
 ```
 
-**`GaugeFieldData.SectorAlgebra.repLorentzGroup_mem`**, a lemma, [line 302](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/LocalField/Sector.lean#L302).
+**`GaugeFieldData.SectorAlgebra.repLorentzGroup_mem`**, a lemma, [line 302](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/LocalField/Sector.lean#L302).
 
 ```lean
 lemma repLorentzGroup_mem (Λ : SL(2,ℂ)) {x : T.LocalFieldAlgebra} (hx : x ∈ T.SectorAlgebra S) :
@@ -286,7 +286,7 @@ lemma repLorentzGroup_mem (Λ : SL(2,ℂ)) {x : T.LocalFieldAlgebra} (hx : x ∈
 
 > The restricted actions of two nested sectors agree along `Subalgebra.inclusion`.
 
-**`GaugeFieldData.SectorAlgebra.repJet`**, a def, [line 331](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/LocalField/Sector.lean#L331).
+**`GaugeFieldData.SectorAlgebra.repJet`**, a def, [line 331](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/LocalField/Sector.lean#L331).
 
 > The jet gauge group acting on a sector algebra, by restriction.
 
@@ -294,7 +294,7 @@ lemma repLorentzGroup_mem (Λ : SL(2,ℂ)) {x : T.LocalFieldAlgebra} (hx : x ∈
 noncomputable def repJet : Representation ℂ GJ (T.SectorAlgebra S)
 ```
 
-**`GaugeFieldData.SectorAlgebra.repLorentzGroup`**, a def, [line 335](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/LocalField/Sector.lean#L335).
+**`GaugeFieldData.SectorAlgebra.repLorentzGroup`**, a def, [line 335](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/LocalField/Sector.lean#L335).
 
 > The Lorentz group acting on a sector algebra, by restriction.
 
@@ -302,35 +302,35 @@ noncomputable def repJet : Representation ℂ GJ (T.SectorAlgebra S)
 noncomputable def repLorentzGroup : Representation ℂ SL(2,ℂ) (T.SectorAlgebra S)
 ```
 
-**`GaugeFieldData.SectorAlgebra.coe_repJet`**, a lemma, [line 341](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/LocalField/Sector.lean#L341).
+**`GaugeFieldData.SectorAlgebra.coe_repJet`**, a lemma, [line 341](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/LocalField/Sector.lean#L341).
 
 ```lean
 lemma coe_repJet (U : GJ) (x : T.SectorAlgebra S) :
     (repJet T S U x : T.LocalFieldAlgebra) = T.repJet U x
 ```
 
-**`GaugeFieldData.SectorAlgebra.repJet_apply_mul`**, a lemma, [line 344](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/LocalField/Sector.lean#L344).
+**`GaugeFieldData.SectorAlgebra.repJet_apply_mul`**, a lemma, [line 344](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/LocalField/Sector.lean#L344).
 
 ```lean
 lemma repJet_apply_mul (U : GJ) (x y : T.SectorAlgebra S) :
     repJet T S U (x * y) = repJet T S U x * repJet T S U y
 ```
 
-**`GaugeFieldData.SectorAlgebra.coe_repLorentzGroup`**, a lemma, [line 349](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/LocalField/Sector.lean#L349).
+**`GaugeFieldData.SectorAlgebra.coe_repLorentzGroup`**, a lemma, [line 349](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/LocalField/Sector.lean#L349).
 
 ```lean
 lemma coe_repLorentzGroup (Λ : SL(2,ℂ)) (x : T.SectorAlgebra S) :
     (repLorentzGroup T S Λ x : T.LocalFieldAlgebra) = T.repLorentzGroup Λ x
 ```
 
-**`GaugeFieldData.SectorAlgebra.repLorentzGroup_apply_mul`**, a lemma, [line 352](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/LocalField/Sector.lean#L352).
+**`GaugeFieldData.SectorAlgebra.repLorentzGroup_apply_mul`**, a lemma, [line 352](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/LocalField/Sector.lean#L352).
 
 ```lean
 lemma repLorentzGroup_apply_mul (Λ : SL(2,ℂ)) (x y : T.SectorAlgebra S) :
     repLorentzGroup T S Λ (x * y) = repLorentzGroup T S Λ x * repLorentzGroup T S Λ y
 ```
 
-**`GaugeFieldData.SectorAlgebra.inclusion_repJet`**, a lemma, [line 356](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/LocalField/Sector.lean#L356).
+**`GaugeFieldData.SectorAlgebra.inclusion_repJet`**, a lemma, [line 356](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/LocalField/Sector.lean#L356).
 
 ```lean
 lemma inclusion_repJet {S' : Finset FieldCategory} (h : S ⊆ S') (U : GJ) (x : T.SectorAlgebra S) :
@@ -338,7 +338,7 @@ lemma inclusion_repJet {S' : Finset FieldCategory} (h : S ⊆ S') (U : GJ) (x : 
       = repJet T S' U (Subalgebra.inclusion (mono T h) x)
 ```
 
-**`GaugeFieldData.SectorAlgebra.inclusion_repLorentzGroup`**, a lemma, [line 363](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/LocalField/Sector.lean#L363).
+**`GaugeFieldData.SectorAlgebra.inclusion_repLorentzGroup`**, a lemma, [line 363](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/LocalField/Sector.lean#L363).
 
 ```lean
 lemma inclusion_repLorentzGroup {S' : Finset FieldCategory} (h : S ⊆ S') (Λ : SL(2,ℂ))
@@ -354,4 +354,4 @@ lemma inclusion_repLorentzGroup {S' : Finset FieldCategory} (h : S ⊆ S') (Λ :
 
 ## Sources
 
-- [PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/LocalField/Sector.lean at 2a1dfe43](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/LocalField/Sector.lean)
+- [PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/LocalField/Sector.lean at 8c87bdfb](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/LocalField/Sector.lean)

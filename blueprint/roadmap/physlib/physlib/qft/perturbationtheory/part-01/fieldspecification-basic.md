@@ -8,7 +8,7 @@ proof: formalized
 
 # Field specification
 
-The module `Physlib.QFT.PerturbationTheory.FieldSpecification.Basic`, [Physlib/QFT/PerturbationTheory/FieldSpecification/Basic.lean](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/QFT/PerturbationTheory/FieldSpecification/Basic.lean): 5 declarations, 5 with a docstring.
+The module `Physlib.QFT.PerturbationTheory.FieldSpecification.Basic`, [Physlib/QFT/PerturbationTheory/FieldSpecification/Basic.lean](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/QFT/PerturbationTheory/FieldSpecification/Basic.lean): 5 declarations, 5 with a docstring.
 
 > In this module is the definition of a field specification.
 > A field specification is a structure consisting of a type of fields and a
@@ -26,7 +26,7 @@ The module `Physlib.QFT.PerturbationTheory.FieldSpecification.Basic`, [Physlib/Q
 > * https://particle.physics.ucdavis.edu/modernsusy/slides/slideimages/spinorfeynrules.pdf.
 >   [ref: ucdavis\_spinorfeynrules]
 
-**`FieldSpecification`**, a structure, [line 59](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/QFT/PerturbationTheory/FieldSpecification/Basic.lean#L59).
+**`FieldSpecification`**, a structure, [line 59](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/QFT/PerturbationTheory/FieldSpecification/Basic.lean#L59).
 
 > The structure `FieldSpecification` is defined to have the following content:
 >   - A type `Field` whose elements are the constituent fields of the theory.
@@ -66,7 +66,7 @@ structure FieldSpecification where
   statistic : Field → FieldStatistic
 ```
 
-**`FieldSpecification.FieldOp`**, an inductive, [line 101](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/QFT/PerturbationTheory/FieldSpecification/Basic.lean#L101).
+**`FieldSpecification.FieldOp`**, an inductive, [line 101](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/QFT/PerturbationTheory/FieldSpecification/Basic.lean#L101).
 
 > For a field specification `𝓕`, the inductive type `𝓕.FieldOp` is defined
 >   to contain the following elements:
@@ -100,7 +100,7 @@ inductive FieldOp (𝓕 : FieldSpecification) where
   | outAsymp : (Σ f, 𝓕.AsymptoticLabel f) × (Momentum 3) → 𝓕.FieldOp
 ```
 
-**`FieldSpecification.statesIsPosition`**, a def, [line 107](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/QFT/PerturbationTheory/FieldSpecification/Basic.lean#L107).
+**`FieldSpecification.statesIsPosition`**, a def, [line 107](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/QFT/PerturbationTheory/FieldSpecification/Basic.lean#L107).
 
 > The bool on `FieldOp` which is true only for position field operator.
 
@@ -108,7 +108,7 @@ inductive FieldOp (𝓕 : FieldSpecification) where
 def statesIsPosition : 𝓕.FieldOp → Bool
 ```
 
-**`FieldSpecification.fieldOpToField`**, a def, [line 113](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/QFT/PerturbationTheory/FieldSpecification/Basic.lean#L113).
+**`FieldSpecification.fieldOpToField`**, a def, [line 113](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/QFT/PerturbationTheory/FieldSpecification/Basic.lean#L113).
 
 > For a field specification `𝓕`, `𝓕.fieldOpToField` is defined to take field operators
 > to their underlying field.
@@ -117,7 +117,7 @@ def statesIsPosition : 𝓕.FieldOp → Bool
 def fieldOpToField : 𝓕.FieldOp → 𝓕.Field
 ```
 
-**`FieldSpecification.fieldOpStatistic`**, a def, [line 128](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/QFT/PerturbationTheory/FieldSpecification/Basic.lean#L128).
+**`FieldSpecification.fieldOpStatistic`**, a def, [line 128](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/QFT/PerturbationTheory/FieldSpecification/Basic.lean#L128).
 
 > For a field specification `𝓕`, and an element `φ` of `𝓕.FieldOp`.
 >   The field statistic `fieldOpStatistic φ` is defined to be the statistic associated with
@@ -142,4 +142,4 @@ def fieldOpStatistic : 𝓕.FieldOp → FieldStatistic
 
 ## Sources
 
-- [Physlib/QFT/PerturbationTheory/FieldSpecification/Basic.lean at 2a1dfe43](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/QFT/PerturbationTheory/FieldSpecification/Basic.lean)
+- [Physlib/QFT/PerturbationTheory/FieldSpecification/Basic.lean at 8c87bdfb](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/QFT/PerturbationTheory/FieldSpecification/Basic.lean)

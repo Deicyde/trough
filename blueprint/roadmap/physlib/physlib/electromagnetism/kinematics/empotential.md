@@ -8,7 +8,7 @@ proof: formalized
 
 # The Electromagnetic Potential (EMPotential)
 
-The module `Physlib.Electromagnetism.Kinematics.EMPotential`, [Physlib/Electromagnetism/Kinematics/EMPotential.lean](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/Electromagnetism/Kinematics/EMPotential.lean): 59 declarations (10 instances with no name), 14 with a docstring.
+The module `Physlib.Electromagnetism.Kinematics.EMPotential`, [Physlib/Electromagnetism/Kinematics/EMPotential.lean](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Electromagnetism/Kinematics/EMPotential.lean): 59 declarations (10 instances with no name), 14 with a docstring.
 
 ## i. Overview
 
@@ -38,7 +38,7 @@ The module `Physlib.Electromagnetism.Kinematics.EMPotential`, [Physlib/Electroma
 > We define the electromagnetic potential as a function from spacetime to
 > contravariant Lorentz vectors, and prove some simple results about it.
 
-**`Electromagnetism.ElectromagneticPotential`**, a structure, [line 72](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/Electromagnetism/Kinematics/EMPotential.lean#L72).
+**`Electromagnetism.ElectromagneticPotential`**, a structure, [line 72](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Electromagnetism/Kinematics/EMPotential.lean#L72).
 
 > The electromagnetic potential is a tensor `A^μ`.
 
@@ -49,7 +49,7 @@ structure ElectromagneticPotential (d : ℕ := 3) where
   val : SpaceTime d → Lorentz.Vector d
 ```
 
-**`Electromagnetism.ElectromagneticPotential.eq_of_val_eq`**, a lemma, [line 88](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/Electromagnetism/Kinematics/EMPotential.lean#L88).
+**`Electromagnetism.ElectromagneticPotential.eq_of_val_eq`**, a lemma, [line 88](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Electromagnetism/Kinematics/EMPotential.lean#L88).
 
 ```lean
 lemma eq_of_val_eq (A B : ElectromagneticPotential d) (h : A.val = B.val) : A = B
@@ -57,111 +57,111 @@ lemma eq_of_val_eq (A B : ElectromagneticPotential d) (h : A.val = B.val) : A = 
 
 ## A.1. Basic instances on the type of electromagnetic potentials
 
-**An instance with no name**, [line 97](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/Electromagnetism/Kinematics/EMPotential.lean#L97).
+**An instance with no name**, [line 97](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Electromagnetism/Kinematics/EMPotential.lean#L97).
 
 ```lean
 instance {d} : CoeFun (ElectromagneticPotential d)
     (fun _ => SpaceTime d → Lorentz.Vector d)
 ```
 
-**An instance with no name**, [line 101](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/Electromagnetism/Kinematics/EMPotential.lean#L101).
+**An instance with no name**, [line 101](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Electromagnetism/Kinematics/EMPotential.lean#L101).
 
 ```lean
 instance {d} : Zero (ElectromagneticPotential d)
 ```
 
-**`Electromagnetism.ElectromagneticPotential.zero_val`**, a lemma, [line 105](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/Electromagnetism/Kinematics/EMPotential.lean#L105).
+**`Electromagnetism.ElectromagneticPotential.zero_val`**, a lemma, [line 105](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Electromagnetism/Kinematics/EMPotential.lean#L105).
 
 ```lean
 lemma zero_val {d} : (0 : ElectromagneticPotential d).val = 0
 ```
 
-**`Electromagnetism.ElectromagneticPotential.zero_apply`**, a lemma, [line 108](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/Electromagnetism/Kinematics/EMPotential.lean#L108).
+**`Electromagnetism.ElectromagneticPotential.zero_apply`**, a lemma, [line 108](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Electromagnetism/Kinematics/EMPotential.lean#L108).
 
 ```lean
 lemma zero_apply {d} (x : SpaceTime d) : (0 : ElectromagneticPotential d) x = 0
 ```
 
-**An instance with no name**, [line 110](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/Electromagnetism/Kinematics/EMPotential.lean#L110).
+**An instance with no name**, [line 110](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Electromagnetism/Kinematics/EMPotential.lean#L110).
 
 ```lean
 instance {d} : Add (ElectromagneticPotential d)
 ```
 
-**`Electromagnetism.ElectromagneticPotential.add_val`**, a lemma, [line 114](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/Electromagnetism/Kinematics/EMPotential.lean#L114).
+**`Electromagnetism.ElectromagneticPotential.add_val`**, a lemma, [line 114](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Electromagnetism/Kinematics/EMPotential.lean#L114).
 
 ```lean
 lemma add_val {d} (A B : ElectromagneticPotential d) :
     (A + B).val = A.val + B.val
 ```
 
-**`Electromagnetism.ElectromagneticPotential.add_apply`**, a lemma, [line 118](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/Electromagnetism/Kinematics/EMPotential.lean#L118).
+**`Electromagnetism.ElectromagneticPotential.add_apply`**, a lemma, [line 118](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Electromagnetism/Kinematics/EMPotential.lean#L118).
 
 ```lean
 lemma add_apply {d} (A B : ElectromagneticPotential d) (x : SpaceTime d) :
     (A + B) x = A x + B x
 ```
 
-**An instance with no name**, [line 121](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/Electromagnetism/Kinematics/EMPotential.lean#L121).
+**An instance with no name**, [line 121](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Electromagnetism/Kinematics/EMPotential.lean#L121).
 
 ```lean
 instance {d} : Neg (ElectromagneticPotential d)
 ```
 
-**`Electromagnetism.ElectromagneticPotential.neg_val`**, a lemma, [line 125](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/Electromagnetism/Kinematics/EMPotential.lean#L125).
+**`Electromagnetism.ElectromagneticPotential.neg_val`**, a lemma, [line 125](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Electromagnetism/Kinematics/EMPotential.lean#L125).
 
 ```lean
 lemma neg_val {d} (A : ElectromagneticPotential d) :
     (- A).val = - A.val
 ```
 
-**`Electromagnetism.ElectromagneticPotential.neg_apply`**, a lemma, [line 129](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/Electromagnetism/Kinematics/EMPotential.lean#L129).
+**`Electromagnetism.ElectromagneticPotential.neg_apply`**, a lemma, [line 129](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Electromagnetism/Kinematics/EMPotential.lean#L129).
 
 ```lean
 lemma neg_apply {d} (A : ElectromagneticPotential d) (x : SpaceTime d) :
     (- A) x = - A x
 ```
 
-**An instance with no name**, [line 132](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/Electromagnetism/Kinematics/EMPotential.lean#L132).
+**An instance with no name**, [line 132](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Electromagnetism/Kinematics/EMPotential.lean#L132).
 
 ```lean
 instance {d} : Sub (ElectromagneticPotential d)
 ```
 
-**`Electromagnetism.ElectromagneticPotential.sub_val`**, a lemma, [line 136](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/Electromagnetism/Kinematics/EMPotential.lean#L136).
+**`Electromagnetism.ElectromagneticPotential.sub_val`**, a lemma, [line 136](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Electromagnetism/Kinematics/EMPotential.lean#L136).
 
 ```lean
 lemma sub_val {d} (A B : ElectromagneticPotential d) :
     (A - B).val = A.val - B.val
 ```
 
-**`Electromagnetism.ElectromagneticPotential.sub_apply`**, a lemma, [line 140](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/Electromagnetism/Kinematics/EMPotential.lean#L140).
+**`Electromagnetism.ElectromagneticPotential.sub_apply`**, a lemma, [line 140](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Electromagnetism/Kinematics/EMPotential.lean#L140).
 
 ```lean
 lemma sub_apply {d} (A B : ElectromagneticPotential d) (x : SpaceTime d) :
     (A - B) x = A x - B x
 ```
 
-**An instance with no name**, [line 143](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/Electromagnetism/Kinematics/EMPotential.lean#L143).
+**An instance with no name**, [line 143](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Electromagnetism/Kinematics/EMPotential.lean#L143).
 
 ```lean
 instance {d} : AddCommGroup (ElectromagneticPotential d)
 ```
 
-**An instance with no name**, [line 162](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/Electromagnetism/Kinematics/EMPotential.lean#L162).
+**An instance with no name**, [line 162](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Electromagnetism/Kinematics/EMPotential.lean#L162).
 
 ```lean
 noncomputable instance {d} : SMul ℝ (ElectromagneticPotential d)
 ```
 
-**`Electromagnetism.ElectromagneticPotential.smul_val`**, a lemma, [line 166](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/Electromagnetism/Kinematics/EMPotential.lean#L166).
+**`Electromagnetism.ElectromagneticPotential.smul_val`**, a lemma, [line 166](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Electromagnetism/Kinematics/EMPotential.lean#L166).
 
 ```lean
 lemma smul_val {d} (r : ℝ) (A : ElectromagneticPotential d) :
     (r • A).val = r • A.val
 ```
 
-**`Electromagnetism.ElectromagneticPotential.smul_apply`**, a lemma, [line 170](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/Electromagnetism/Kinematics/EMPotential.lean#L170).
+**`Electromagnetism.ElectromagneticPotential.smul_apply`**, a lemma, [line 170](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Electromagnetism/Kinematics/EMPotential.lean#L170).
 
 ```lean
 lemma smul_apply {d} (r : ℝ) (A : ElectromagneticPotential d) (x : SpaceTime d) :
@@ -170,7 +170,7 @@ lemma smul_apply {d} (r : ℝ) (A : ElectromagneticPotential d) (x : SpaceTime d
 
 ## A.2. Basic constructors of the electromagnetic potential
 
-**`Electromagnetism.ElectromagneticPotential.ofScalarPotential`**, a def, [line 181](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/Electromagnetism/Kinematics/EMPotential.lean#L181).
+**`Electromagnetism.ElectromagneticPotential.ofScalarPotential`**, a def, [line 181](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Electromagnetism/Kinematics/EMPotential.lean#L181).
 
 > The electromagnetic potential from a scalar potential, where
 > the vector potential is set to zero.
@@ -180,7 +180,7 @@ noncomputable def ofScalarPotential {d} (c : SpeedOfLight)
     (ϕ : Time → Space d → ℝ) : ElectromagneticPotential d
 ```
 
-**`Electromagnetism.ElectromagneticPotential.ofStaticScalarPotential`**, a def, [line 189](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/Electromagnetism/Kinematics/EMPotential.lean#L189).
+**`Electromagnetism.ElectromagneticPotential.ofStaticScalarPotential`**, a def, [line 189](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Electromagnetism/Kinematics/EMPotential.lean#L189).
 
 > The creation of an electromagnetic potential from a static scalar potential.
 
@@ -189,7 +189,7 @@ noncomputable def ofStaticScalarPotential {d} (c : SpeedOfLight)
     (ϕ : Space d → ℝ) : ElectromagneticPotential d
 ```
 
-**`Electromagnetism.ElectromagneticPotential.ofVectorPotential`**, a def, [line 195](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/Electromagnetism/Kinematics/EMPotential.lean#L195).
+**`Electromagnetism.ElectromagneticPotential.ofVectorPotential`**, a def, [line 195](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Electromagnetism/Kinematics/EMPotential.lean#L195).
 
 > The electromagnetic potential from a vector potential, where
 > the scalar potential is set equal to zero.
@@ -200,7 +200,7 @@ noncomputable def ofVectorPotential {d} (c : SpeedOfLight)
     ElectromagneticPotential d
 ```
 
-**`Electromagnetism.ElectromagneticPotential.ofStaticVectorPotential`**, a def, [line 204](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/Electromagnetism/Kinematics/EMPotential.lean#L204).
+**`Electromagnetism.ElectromagneticPotential.ofStaticVectorPotential`**, a def, [line 204](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Electromagnetism/Kinematics/EMPotential.lean#L204).
 
 > The creation of an electromagnetic potential from a static vector potential.
 
@@ -209,7 +209,7 @@ noncomputable def ofStaticVectorPotential {d} (c : SpeedOfLight)
     (A : Space d → EuclideanSpace ℝ (Fin d)) : ElectromagneticPotential d
 ```
 
-**`Electromagnetism.ElectromagneticPotential.ofPotentials`**, a def, [line 209](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/Electromagnetism/Kinematics/EMPotential.lean#L209).
+**`Electromagnetism.ElectromagneticPotential.ofPotentials`**, a def, [line 209](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Electromagnetism/Kinematics/EMPotential.lean#L209).
 
 > The creation of an electromagnetic potential from the non-relativistic potentials.
 
@@ -219,7 +219,7 @@ noncomputable def ofPotentials {d} (c : SpeedOfLight) (ϕ : Time → Space d →
     ElectromagneticPotential d
 ```
 
-**`Electromagnetism.ElectromagneticPotential.ofPotentials_eq_add`**, a lemma, [line 217](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/Electromagnetism/Kinematics/EMPotential.lean#L217).
+**`Electromagnetism.ElectromagneticPotential.ofPotentials_eq_add`**, a lemma, [line 217](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Electromagnetism/Kinematics/EMPotential.lean#L217).
 
 ```lean
 lemma ofPotentials_eq_add {d} (c : SpeedOfLight) (ϕ : Time → Space d → ℝ)
@@ -227,7 +227,7 @@ lemma ofPotentials_eq_add {d} (c : SpeedOfLight) (ϕ : Time → Space d → ℝ)
     ofPotentials c ϕ A = ofScalarPotential c ϕ + ofVectorPotential c A
 ```
 
-**`Electromagnetism.ElectromagneticPotential.ofStaticPotentials`**, a def, [line 227](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/Electromagnetism/Kinematics/EMPotential.lean#L227).
+**`Electromagnetism.ElectromagneticPotential.ofStaticPotentials`**, a def, [line 227](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Electromagnetism/Kinematics/EMPotential.lean#L227).
 
 > The creation of of an electromagnetic potential from static potentials.
 
@@ -236,7 +236,7 @@ noncomputable def ofStaticPotentials {d} (c : SpeedOfLight) (ϕ : Space d → �
     (A : Space d → EuclideanSpace ℝ (Fin d)) : ElectromagneticPotential d
 ```
 
-**`Electromagnetism.ElectromagneticPotential.ofStaticPotentials_eq_ofPotentials`**, a lemma, [line 231](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/Electromagnetism/Kinematics/EMPotential.lean#L231).
+**`Electromagnetism.ElectromagneticPotential.ofStaticPotentials_eq_ofPotentials`**, a lemma, [line 231](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Electromagnetism/Kinematics/EMPotential.lean#L231).
 
 ```lean
 lemma ofStaticPotentials_eq_ofPotentials {d} (c : SpeedOfLight) (ϕ : Space d → ℝ)
@@ -244,7 +244,7 @@ lemma ofStaticPotentials_eq_ofPotentials {d} (c : SpeedOfLight) (ϕ : Space d �
     ofStaticPotentials c ϕ A = ofPotentials c (fun _ => ϕ) (fun _ => A)
 ```
 
-**`Electromagnetism.ElectromagneticPotential.ofElectromagneticField`**, a def, [line 239](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/Electromagnetism/Kinematics/EMPotential.lean#L239).
+**`Electromagnetism.ElectromagneticPotential.ofElectromagneticField`**, a def, [line 239](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Electromagnetism/Kinematics/EMPotential.lean#L239).
 
 > The electromagnetic potential from an electric and a magnetic field.
 > This defines the electromagnetic potential in the Poincare gauge.
@@ -258,20 +258,20 @@ noncomputable def ofElectromagneticField (c : SpeedOfLight)
 
 ## A.3. The group action on the ElectromagneticPotential
 
-**An instance with no name**, [line 256](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/Electromagnetism/Kinematics/EMPotential.lean#L256).
+**An instance with no name**, [line 256](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Electromagnetism/Kinematics/EMPotential.lean#L256).
 
 ```lean
 noncomputable instance {d} : SMul (LorentzGroup d) (ElectromagneticPotential d)
 ```
 
-**`Electromagnetism.ElectromagneticPotential.action_val`**, a lemma, [line 259](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/Electromagnetism/Kinematics/EMPotential.lean#L259).
+**`Electromagnetism.ElectromagneticPotential.action_val`**, a lemma, [line 259](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Electromagnetism/Kinematics/EMPotential.lean#L259).
 
 ```lean
 lemma action_val {d} (Λ : LorentzGroup d) (A : ElectromagneticPotential d) :
     (Λ • A).val = fun x => Λ • A (Λ⁻¹ • x)
 ```
 
-**`Electromagnetism.ElectromagneticPotential.action_apply`**, a lemma, [line 263](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/Electromagnetism/Kinematics/EMPotential.lean#L263).
+**`Electromagnetism.ElectromagneticPotential.action_apply`**, a lemma, [line 263](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Electromagnetism/Kinematics/EMPotential.lean#L263).
 
 ```lean
 lemma action_apply {d} (Λ : LorentzGroup d) (A : ElectromagneticPotential d)
@@ -279,13 +279,13 @@ lemma action_apply {d} (Λ : LorentzGroup d) (A : ElectromagneticPotential d)
     (Λ • A) x = Λ • A (Λ⁻¹ • x)
 ```
 
-**An instance with no name**, [line 267](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/Electromagnetism/Kinematics/EMPotential.lean#L267).
+**An instance with no name**, [line 267](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Electromagnetism/Kinematics/EMPotential.lean#L267).
 
 ```lean
 noncomputable instance {d} : MulAction (LorentzGroup d) (ElectromagneticPotential d)
 ```
 
-**An instance with no name**, [line 275](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/Electromagnetism/Kinematics/EMPotential.lean#L275).
+**An instance with no name**, [line 275](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Electromagnetism/Kinematics/EMPotential.lean#L275).
 
 ```lean
 noncomputable instance {d} :
@@ -298,21 +298,21 @@ noncomputable instance {d} :
 > is, in the forms `fun_prop` cannot derive on its own. Differentiability of a component
 > `fun x => A x μ` of a differentiable potential is found by `fun_prop` directly.
 
-**`Electromagnetism.ElectromagneticPotential.differentiable_action`**, a lemma, [line 296](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/Electromagnetism/Kinematics/EMPotential.lean#L296).
+**`Electromagnetism.ElectromagneticPotential.differentiable_action`**, a lemma, [line 296](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Electromagnetism/Kinematics/EMPotential.lean#L296).
 
 ```lean
 lemma differentiable_action {d} (Λ : LorentzGroup d) (A : ElectromagneticPotential d)
     (hA : Differentiable ℝ A) : Differentiable ℝ (fun x => Λ • A (Λ⁻¹ • x))
 ```
 
-**`Electromagnetism.ElectromagneticPotential.contDiff_action`**, a lemma, [line 302](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/Electromagnetism/Kinematics/EMPotential.lean#L302).
+**`Electromagnetism.ElectromagneticPotential.contDiff_action`**, a lemma, [line 302](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Electromagnetism/Kinematics/EMPotential.lean#L302).
 
 ```lean
 lemma contDiff_action {d} (Λ : LorentzGroup d) (A : ElectromagneticPotential d)
     (hA : ContDiff ℝ n A) : ContDiff ℝ n (fun x => Λ • A (Λ⁻¹ • x))
 ```
 
-**`Electromagnetism.ElectromagneticPotential.differentiable_deriv_component_of_smooth`**, a lemma, [line 308](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/Electromagnetism/Kinematics/EMPotential.lean#L308).
+**`Electromagnetism.ElectromagneticPotential.differentiable_deriv_component_of_smooth`**, a lemma, [line 308](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Electromagnetism/Kinematics/EMPotential.lean#L308).
 
 ```lean
 lemma differentiable_deriv_component_of_smooth {d} {A : ElectromagneticPotential d}
@@ -320,7 +320,7 @@ lemma differentiable_deriv_component_of_smooth {d} {A : ElectromagneticPotential
     Differentiable ℝ (fun x => ∂_ μ A x ν)
 ```
 
-**`Electromagnetism.ElectromagneticPotential.contDiff_deriv_component_of_smooth`**, a lemma, [line 315](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/Electromagnetism/Kinematics/EMPotential.lean#L315).
+**`Electromagnetism.ElectromagneticPotential.contDiff_deriv_component_of_smooth`**, a lemma, [line 315](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Electromagnetism/Kinematics/EMPotential.lean#L315).
 
 ```lean
 lemma contDiff_deriv_component_of_smooth {n : ℕ} {d} {A : ElectromagneticPotential d}
@@ -343,7 +343,7 @@ lemma contDiff_deriv_component_of_smooth {n : ℕ} {d} {A : ElectromagneticPoten
 > The differentiability of the first-derivative components `∂_ μ A x ν` for a `C^2` (or
 > `C^{n+1}`) potential is found by `fun_prop` directly, so only the smooth variants are stated.
 
-**`Electromagnetism.ElectromagneticPotential.contDiff_deriv_deriv_component`**, a lemma, [line 342](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/Electromagnetism/Kinematics/EMPotential.lean#L342).
+**`Electromagnetism.ElectromagneticPotential.contDiff_deriv_deriv_component`**, a lemma, [line 342](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Electromagnetism/Kinematics/EMPotential.lean#L342).
 
 > The second derivatives `∂_ μ ∂_ ν A^ρ` of a `C^{n+2}` potential are `C^n`.
 
@@ -353,7 +353,7 @@ lemma contDiff_deriv_deriv_component {n} {d} {A : ElectromagneticPotential d}
     ContDiff ℝ n (fun x => ∂_ μ (fun x => ∂_ ν A x ρ) x)
 ```
 
-**`Electromagnetism.ElectromagneticPotential.contDiff_deriv_deriv_apply`**, a lemma, [line 350](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/Electromagnetism/Kinematics/EMPotential.lean#L350).
+**`Electromagnetism.ElectromagneticPotential.contDiff_deriv_deriv_apply`**, a lemma, [line 350](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Electromagnetism/Kinematics/EMPotential.lean#L350).
 
 > The `ρ` component of `∂_ μ (∂_ ν A)` is `C^n` for a `C^{n+2}` potential.
 
@@ -363,7 +363,7 @@ lemma contDiff_deriv_deriv_apply {n} {d} {A : ElectromagneticPotential d}
     ContDiff ℝ n (fun x => ∂_ μ (∂_ ν A) x ρ)
 ```
 
-**`Electromagnetism.ElectromagneticPotential.differentiable_deriv_deriv_apply_of_smooth`**, a lemma, [line 360](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/Electromagnetism/Kinematics/EMPotential.lean#L360).
+**`Electromagnetism.ElectromagneticPotential.differentiable_deriv_deriv_apply_of_smooth`**, a lemma, [line 360](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Electromagnetism/Kinematics/EMPotential.lean#L360).
 
 ```lean
 lemma differentiable_deriv_deriv_apply_of_smooth {d} {A : ElectromagneticPotential d}
@@ -373,21 +373,21 @@ lemma differentiable_deriv_deriv_apply_of_smooth {d} {A : ElectromagneticPotenti
 
 ### A.5. Differentiability in terms of constructors
 
-**`Electromagnetism.ElectromagneticPotential.differentiable_ofScalarPotential`**, a lemma, [line 372](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/Electromagnetism/Kinematics/EMPotential.lean#L372).
+**`Electromagnetism.ElectromagneticPotential.differentiable_ofScalarPotential`**, a lemma, [line 372](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Electromagnetism/Kinematics/EMPotential.lean#L372).
 
 ```lean
 lemma differentiable_ofScalarPotential {d} (c : SpeedOfLight) (φ : Time → Space d → ℝ)
     (hϕ : Differentiable ℝ ↿φ) : Differentiable ℝ (ofScalarPotential c φ)
 ```
 
-**`Electromagnetism.ElectromagneticPotential.contDiff_ofScalarPotential`**, a lemma, [line 380](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/Electromagnetism/Kinematics/EMPotential.lean#L380).
+**`Electromagnetism.ElectromagneticPotential.contDiff_ofScalarPotential`**, a lemma, [line 380](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Electromagnetism/Kinematics/EMPotential.lean#L380).
 
 ```lean
 lemma contDiff_ofScalarPotential {n} {d} (c : SpeedOfLight) (φ : Time → Space d → ℝ)
     (hϕ : ContDiff ℝ n ↿φ) : ContDiff ℝ n (ofScalarPotential c φ)
 ```
 
-**`Electromagnetism.ElectromagneticPotential.differentiable_ofVectorPotential`**, a lemma, [line 388](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/Electromagnetism/Kinematics/EMPotential.lean#L388).
+**`Electromagnetism.ElectromagneticPotential.differentiable_ofVectorPotential`**, a lemma, [line 388](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Electromagnetism/Kinematics/EMPotential.lean#L388).
 
 ```lean
 lemma differentiable_ofVectorPotential {d} (c : SpeedOfLight)
@@ -395,7 +395,7 @@ lemma differentiable_ofVectorPotential {d} (c : SpeedOfLight)
     (hA : Differentiable ℝ ↿A) : Differentiable ℝ (ofVectorPotential c A)
 ```
 
-**`Electromagnetism.ElectromagneticPotential.contDiff_ofVectorPotential`**, a lemma, [line 397](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/Electromagnetism/Kinematics/EMPotential.lean#L397).
+**`Electromagnetism.ElectromagneticPotential.contDiff_ofVectorPotential`**, a lemma, [line 397](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Electromagnetism/Kinematics/EMPotential.lean#L397).
 
 ```lean
 lemma contDiff_ofVectorPotential {n} {d} (c : SpeedOfLight)
@@ -403,7 +403,7 @@ lemma contDiff_ofVectorPotential {n} {d} (c : SpeedOfLight)
     (hA : ContDiff ℝ n ↿A) : ContDiff ℝ n (ofVectorPotential c A)
 ```
 
-**`Electromagnetism.ElectromagneticPotential.differentiable_ofPotentials`**, a lemma, [line 406](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/Electromagnetism/Kinematics/EMPotential.lean#L406).
+**`Electromagnetism.ElectromagneticPotential.differentiable_ofPotentials`**, a lemma, [line 406](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Electromagnetism/Kinematics/EMPotential.lean#L406).
 
 ```lean
 lemma differentiable_ofPotentials {d} (c : SpeedOfLight) (φ : Time → Space d → ℝ)
@@ -411,7 +411,7 @@ lemma differentiable_ofPotentials {d} (c : SpeedOfLight) (φ : Time → Space d 
     (hA : Differentiable ℝ ↿A) : Differentiable ℝ (ofPotentials c φ A)
 ```
 
-**`Electromagnetism.ElectromagneticPotential.contDiff_ofPotentials`**, a lemma, [line 415](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/Electromagnetism/Kinematics/EMPotential.lean#L415).
+**`Electromagnetism.ElectromagneticPotential.contDiff_ofPotentials`**, a lemma, [line 415](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Electromagnetism/Kinematics/EMPotential.lean#L415).
 
 ```lean
 lemma contDiff_ofPotentials {n} {d} (c : SpeedOfLight) (φ : Time → Space d → ℝ)
@@ -419,7 +419,7 @@ lemma contDiff_ofPotentials {n} {d} (c : SpeedOfLight) (φ : Time → Space d �
     (hA : ContDiff ℝ n ↿A) : ContDiff ℝ n (ofPotentials c φ A)
 ```
 
-**`Electromagnetism.ElectromagneticPotential.contDiff_ofElectromagneticField`**, a lemma, [line 425](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/Electromagnetism/Kinematics/EMPotential.lean#L425).
+**`Electromagnetism.ElectromagneticPotential.contDiff_ofElectromagneticField`**, a lemma, [line 425](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Electromagnetism/Kinematics/EMPotential.lean#L425).
 
 ```lean
 lemma contDiff_ofElectromagneticField {n : ℕ} (c : SpeedOfLight)
@@ -435,7 +435,7 @@ lemma contDiff_ofElectromagneticField {n : ℕ} (c : SpeedOfLight)
 > `∂_ μ (Λ • A)`, we write an expression for this in terms of the tensor.
 > `∂_ ρ A (Λ⁻¹ • x) κ`.
 
-**`Electromagnetism.ElectromagneticPotential.spaceTime_deriv_action_eq_sum`**, a lemma, [line 473](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/Electromagnetism/Kinematics/EMPotential.lean#L473).
+**`Electromagnetism.ElectromagneticPotential.spaceTime_deriv_action_eq_sum`**, a lemma, [line 473](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Electromagnetism/Kinematics/EMPotential.lean#L473).
 
 ```lean
 lemma spaceTime_deriv_action_eq_sum {d} {μ ν : Fin 1 ⊕ Fin d} {x : SpaceTime d}
@@ -449,7 +449,7 @@ lemma spaceTime_deriv_action_eq_sum {d} {μ ν : Fin 1 ⊕ Fin d} {x : SpaceTime
 > This will be used to find e.g. the variational derivative of the kinetic term,
 > and derive the equations of motion.
 
-**`Electromagnetism.ElectromagneticPotential.hasVarAdjDerivAt_component`**, a lemma, [line 494](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/Electromagnetism/Kinematics/EMPotential.lean#L494).
+**`Electromagnetism.ElectromagneticPotential.hasVarAdjDerivAt_component`**, a lemma, [line 494](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Electromagnetism/Kinematics/EMPotential.lean#L494).
 
 ```lean
 lemma hasVarAdjDerivAt_component {d : ℕ} (μ : Fin 1 ⊕ Fin d) (A : SpaceTime d → Lorentz.Vector d)
@@ -464,7 +464,7 @@ lemma hasVarAdjDerivAt_component {d : ℕ} (μ : Fin 1 ⊕ Fin d) (A : SpaceTime
 > This will again be used to find the variational derivative of the kinetic term,
 > and derive the equations of motion (Maxwell's equations).
 
-**`Electromagnetism.ElectromagneticPotential.deriv_hasVarAdjDerivAt`**, a lemma, [line 523](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/Electromagnetism/Kinematics/EMPotential.lean#L523).
+**`Electromagnetism.ElectromagneticPotential.deriv_hasVarAdjDerivAt`**, a lemma, [line 523](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Electromagnetism/Kinematics/EMPotential.lean#L523).
 
 ```lean
 lemma deriv_hasVarAdjDerivAt {d} (μ ν : Fin 1 ⊕ Fin d) (A : SpaceTime d → Lorentz.Vector d)
@@ -479,7 +479,7 @@ lemma deriv_hasVarAdjDerivAt {d} (μ ν : Fin 1 ⊕ Fin d) (A : SpaceTime d → 
 > electromagnetic potential `A^μ`. We then prove that this tensor transforms correctly
 > under Lorentz transformations.
 
-**`Electromagnetism.ElectromagneticPotential.deriv`**, a def, [line 547](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/Electromagnetism/Kinematics/EMPotential.lean#L547).
+**`Electromagnetism.ElectromagneticPotential.deriv`**, a def, [line 547](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Electromagnetism/Kinematics/EMPotential.lean#L547).
 
 > The derivative of the electric potential, `∂_μ A^ν`.
 
@@ -488,7 +488,7 @@ noncomputable def deriv {d} (A : ElectromagneticPotential d) :
     SpaceTime d → Lorentz.CoVector d ⊗[ℝ] Lorentz.Vector d
 ```
 
-**`Electromagnetism.ElectromagneticPotential.deriv_eq_tensorDeriv`**, a lemma, [line 551](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/Electromagnetism/Kinematics/EMPotential.lean#L551).
+**`Electromagnetism.ElectromagneticPotential.deriv_eq_tensorDeriv`**, a lemma, [line 551](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Electromagnetism/Kinematics/EMPotential.lean#L551).
 
 ```lean
 lemma deriv_eq_tensorDeriv {d} (A : ElectromagneticPotential d)
@@ -503,7 +503,7 @@ lemma deriv_eq_tensorDeriv {d} (A : ElectromagneticPotential d)
 > applying the Lorentz transformation to the potential and then taking the derivative is the same
 > as taking the derivative and then applying the Lorentz transformation to the resulting tensor.
 
-**`Electromagnetism.ElectromagneticPotential.deriv_equivariant`**, a lemma, [line 585](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/Electromagnetism/Kinematics/EMPotential.lean#L585).
+**`Electromagnetism.ElectromagneticPotential.deriv_equivariant`**, a lemma, [line 585](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Electromagnetism/Kinematics/EMPotential.lean#L585).
 
 ```lean
 lemma deriv_equivariant {d} {x : SpaceTime d} (A : ElectromagneticPotential d)
@@ -516,7 +516,7 @@ lemma deriv_equivariant {d} {x : SpaceTime d} (A : ElectromagneticPotential d)
 > We show that in the standard basis, the elements of the derivative tensor
 > are just equal to `∂_ μ A x ν`.
 
-**`Electromagnetism.ElectromagneticPotential.tensorDeriv_eval_eq`**, a lemma, [line 602](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/Electromagnetism/Kinematics/EMPotential.lean#L602).
+**`Electromagnetism.ElectromagneticPotential.tensorDeriv_eval_eq`**, a lemma, [line 602](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Electromagnetism/Kinematics/EMPotential.lean#L602).
 
 > Evaluation of the tensor components of `∂_ μ A x ν`.
 
@@ -526,7 +526,7 @@ lemma tensorDeriv_eval_eq {d} {A : ElectromagneticPotential d} (hA : Differentia
     toScalar {tensorDeriv A.val x | [μ] [ν]}ᵀ = ∂_ μ A x ν
 ```
 
-**`Electromagnetism.ElectromagneticPotential.deriv_basis_repr_apply`**, a lemma, [line 632](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/Electromagnetism/Kinematics/EMPotential.lean#L632).
+**`Electromagnetism.ElectromagneticPotential.deriv_basis_repr_apply`**, a lemma, [line 632](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Electromagnetism/Kinematics/EMPotential.lean#L632).
 
 ```lean
 lemma deriv_basis_repr_apply {d} {μν : (Fin 1 ⊕ Fin d) × (Fin 1 ⊕ Fin d)}
@@ -536,7 +536,7 @@ lemma deriv_basis_repr_apply {d} {μν : (Fin 1 ⊕ Fin d) × (Fin 1 ⊕ Fin d)}
     ∂_ μν.1 A x μν.2
 ```
 
-**`Electromagnetism.ElectromagneticPotential.toTensor_deriv_basis_repr_apply`**, a lemma, [line 640](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/Electromagnetism/Kinematics/EMPotential.lean#L640).
+**`Electromagnetism.ElectromagneticPotential.toTensor_deriv_basis_repr_apply`**, a lemma, [line 640](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Electromagnetism/Kinematics/EMPotential.lean#L640).
 
 ```lean
 lemma toTensor_deriv_basis_repr_apply {d} (A : ElectromagneticPotential d)
@@ -551,7 +551,7 @@ lemma toTensor_deriv_basis_repr_apply {d} (A : ElectromagneticPotential d)
 > We show that the derivative tensor `∂_μ A^ν`, as a function on spacetime, is differentiable
 > (or `C^n`) if the potential is `C^2` (or `C^{n+1}`).
 
-**`Electromagnetism.ElectromagneticPotential.differentiable_deriv`**, a lemma, [line 670](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/Electromagnetism/Kinematics/EMPotential.lean#L670).
+**`Electromagnetism.ElectromagneticPotential.differentiable_deriv`**, a lemma, [line 670](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Electromagnetism/Kinematics/EMPotential.lean#L670).
 
 > The derivative tensor of a `C^2` potential is differentiable.
 
@@ -560,14 +560,14 @@ lemma differentiable_deriv {d} {A : ElectromagneticPotential d} (hA : ContDiff �
     Differentiable ℝ A.deriv
 ```
 
-**`Electromagnetism.ElectromagneticPotential.differentiable_deriv_of_smooth`**, a lemma, [line 676](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/Electromagnetism/Kinematics/EMPotential.lean#L676).
+**`Electromagnetism.ElectromagneticPotential.differentiable_deriv_of_smooth`**, a lemma, [line 676](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Electromagnetism/Kinematics/EMPotential.lean#L676).
 
 ```lean
 lemma differentiable_deriv_of_smooth {d} {A : ElectromagneticPotential d}
     (hA : ContDiff ℝ ∞ A) : Differentiable ℝ A.deriv
 ```
 
-**`Electromagnetism.ElectromagneticPotential.contDiff_deriv`**, a lemma, [line 682](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/Electromagnetism/Kinematics/EMPotential.lean#L682).
+**`Electromagnetism.ElectromagneticPotential.contDiff_deriv`**, a lemma, [line 682](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Electromagnetism/Kinematics/EMPotential.lean#L682).
 
 > The derivative tensor of a `C^{n+1}` potential is `C^n`.
 
@@ -587,4 +587,4 @@ lemma contDiff_deriv {n} {d} {A : ElectromagneticPotential d} (hA : ContDiff ℝ
 
 ## Sources
 
-- [Physlib/Electromagnetism/Kinematics/EMPotential.lean at 2a1dfe43](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/Electromagnetism/Kinematics/EMPotential.lean)
+- [Physlib/Electromagnetism/Kinematics/EMPotential.lean at 8c87bdfb](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Electromagnetism/Kinematics/EMPotential.lean)

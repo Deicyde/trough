@@ -8,7 +8,7 @@ proof: formalized
 
 # Calculus of the real square root near zero
 
-The module `PhyslibAlpha.ClassicalMechanics.NortonDome.Sqrt`, [PhyslibAlpha/ClassicalMechanics/NortonDome/Sqrt.lean](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalMechanics/NortonDome/Sqrt.lean): 2 declarations, 2 with a docstring.
+The module `PhyslibAlpha.ClassicalMechanics.NortonDome.Sqrt`, [PhyslibAlpha/ClassicalMechanics/NortonDome/Sqrt.lean](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalMechanics/NortonDome/Sqrt.lean): 2 declarations, 2 with a docstring.
 
 > The derivative of `√y ^ 3` everywhere, and the failure of the Lipschitz property of `√` at 0.
 
@@ -34,7 +34,7 @@ The module `PhyslibAlpha.ClassicalMechanics.NortonDome.Sqrt`, [PhyslibAlpha/Clas
 > To the left of zero the square root vanishes, to the right the chain rule applies, and at zero
 > the difference quotient of `√t ^ 3 = t √t` is `√t`, which tends to zero.
 
-**`hasDerivAt_sqrt_pow_three`**, a lemma, [line 55](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalMechanics/NortonDome/Sqrt.lean#L55).
+**`hasDerivAt_sqrt_pow_three`**, a lemma, [line 55](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalMechanics/NortonDome/Sqrt.lean#L55).
 
 > The cube of the real square root, `√y ^ 3`, has derivative `(3/2) √x` at every real `x`. It
 > is differentiable at `0`, with derivative `0`, even though `√` is not.
@@ -49,7 +49,7 @@ lemma hasDerivAt_sqrt_pow_three (x : ℝ) :
 > A bound `√y ≤ K y` on `[0, ε]` gives `1 ≤ K √y` for every positive `y ≤ ε`, which fails at
 > `y = min ε (1 / (2K + 1)²)`.
 
-**`not_lipschitzOnWith_sqrt`**, a lemma, [line 89](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalMechanics/NortonDome/Sqrt.lean#L89).
+**`not_lipschitzOnWith_sqrt`**, a lemma, [line 89](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalMechanics/NortonDome/Sqrt.lean#L89).
 
 > The real square root is not Lipschitz on any interval `[0, ε]` with `ε > 0`, for any
 > Lipschitz constant.
@@ -65,4 +65,4 @@ Its declarations' statements use no declaration of another module with an articl
 
 ## Sources
 
-- [PhyslibAlpha/ClassicalMechanics/NortonDome/Sqrt.lean at 2a1dfe43](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalMechanics/NortonDome/Sqrt.lean)
+- [PhyslibAlpha/ClassicalMechanics/NortonDome/Sqrt.lean at 8c87bdfb](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalMechanics/NortonDome/Sqrt.lean)

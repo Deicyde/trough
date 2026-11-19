@@ -8,7 +8,7 @@ proof: formalized
 
 # Families with two `u(1)` adjoint indices
 
-The module `PhyslibAlpha.Particles.StandardModel.GaugeGroup.Invariants.IsU1BiAdjoint`, [PhyslibAlpha/Particles/StandardModel/GaugeGroup/Invariants/IsU1BiAdjoint.lean](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/GaugeGroup/Invariants/IsU1BiAdjoint.lean): 8 declarations, 8 with a docstring.
+The module `PhyslibAlpha.Particles.StandardModel.GaugeGroup.Invariants.IsU1BiAdjoint`, [PhyslibAlpha/Particles/StandardModel/GaugeGroup/Invariants/IsU1BiAdjoint.lean](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/GaugeGroup/Invariants/IsU1BiAdjoint.lean): 8 declarations, 8 with a docstring.
 
 ## i. Overview
 
@@ -31,7 +31,7 @@ The module `PhyslibAlpha.Particles.StandardModel.GaugeGroup.Invariants.IsU1BiAdj
 
 ## A. The adjoint matrix and the transformation law
 
-**`StandardModel.u1AdjointMatrix`**, a def, [line 52](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/GaugeGroup/Invariants/IsU1BiAdjoint.lean#L52).
+**`StandardModel.u1AdjointMatrix`**, a def, [line 52](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/GaugeGroup/Invariants/IsU1BiAdjoint.lean#L52).
 
 > The adjoint matrix of an element of `U(1)`: the one by one matrix `1`, the `u(1)`
 > factor being abelian and so acting trivially on its own algebra.
@@ -40,7 +40,7 @@ The module `PhyslibAlpha.Particles.StandardModel.GaugeGroup.Invariants.IsU1BiAdj
 def u1AdjointMatrix (_u : unitary ℂ) : Matrix (Fin 1) (Fin 1) ℝ
 ```
 
-**`StandardModel.u1AdjointMatrix_apply`**, a lemma, [line 56](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/GaugeGroup/Invariants/IsU1BiAdjoint.lean#L56).
+**`StandardModel.u1AdjointMatrix_apply`**, a lemma, [line 56](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/GaugeGroup/Invariants/IsU1BiAdjoint.lean#L56).
 
 > The single entry of the adjoint matrix of an element of `U(1)` is `1`.
 
@@ -49,7 +49,7 @@ lemma u1AdjointMatrix_apply (u : unitary ℂ) (i j : Fin 1) :
     u1AdjointMatrix u i j = 1
 ```
 
-**`StandardModel.IsU1BiAdjointMat`**, a def, [line 62](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/GaugeGroup/Invariants/IsU1BiAdjoint.lean#L62).
+**`StandardModel.IsU1BiAdjointMat`**, a def, [line 62](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/GaugeGroup/Invariants/IsU1BiAdjoint.lean#L62).
 
 > The linear map `f` moves the components of `T` as `u ∈ U(1)` moves a tensor with two
 > adjoint indices: one factor of `u1AdjointMatrix u` per index, with the summed index in
@@ -61,7 +61,7 @@ def IsU1BiAdjointMat {B : Type*} [AddCommMonoid B] [Module ℂ B]
     (T : (Fin 2 → Fin 1) → B) : Prop
 ```
 
-**`StandardModel.isU1BiAdjointMat_iff`**, a lemma, [line 71](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/GaugeGroup/Invariants/IsU1BiAdjoint.lean#L71).
+**`StandardModel.isU1BiAdjointMat_iff`**, a lemma, [line 71](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/GaugeGroup/Invariants/IsU1BiAdjoint.lean#L71).
 
 > The `u(1)` transformation law says exactly that the map fixes every component: the
 > adjoint matrix is `1`, and there is a single family of two `u(1)` indices to sum over.
@@ -72,7 +72,7 @@ lemma isU1BiAdjointMat_iff {B : Type*} [AddCommMonoid B] [Module ℂ B]
     IsU1BiAdjointMat u f T ↔ ∀ l : Fin 2 → Fin 1, f (T l) = T l
 ```
 
-**`StandardModel.IsU1BiAdjointMat.map_T`**, a lemma, [line 79](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/GaugeGroup/Invariants/IsU1BiAdjoint.lean#L79).
+**`StandardModel.IsU1BiAdjointMat.map_T`**, a lemma, [line 79](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/GaugeGroup/Invariants/IsU1BiAdjoint.lean#L79).
 
 > A linear map obeying the `u(1)` transformation law fixes every component.
 
@@ -82,7 +82,7 @@ lemma IsU1BiAdjointMat.map_T {B : Type*} [AddCommMonoid B] [Module ℂ B] {u : u
     (l : Fin 2 → Fin 1) : f (T l) = T l
 ```
 
-**`StandardModel.IsU1BiAdjoint`**, a structure, [line 87](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/GaugeGroup/Invariants/IsU1BiAdjoint.lean#L87).
+**`StandardModel.IsU1BiAdjoint`**, a structure, [line 87](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/GaugeGroup/Invariants/IsU1BiAdjoint.lean#L87).
 
 > A family `T` of elements of `B`, indexed by two `u(1)` adjoint indices, transforms as a
 > tensor `T^{a b}` under the hypercharge factor of the gauge group. Nothing is asked of the
@@ -97,7 +97,7 @@ structure IsU1BiAdjoint (B : Type*) [AddCommMonoid B] [Module ℂ B]
 
 ## B. The trace contraction
 
-**`StandardModel.IsU1BiAdjoint.traceContraction`**, a def, [line 105](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/GaugeGroup/Invariants/IsU1BiAdjoint.lean#L105).
+**`StandardModel.IsU1BiAdjoint.traceContraction`**, a def, [line 105](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/GaugeGroup/Invariants/IsU1BiAdjoint.lean#L105).
 
 > The trace contraction: the Kronecker contraction of the two `u(1)` indices, which is
 > the one component of the family.
@@ -106,7 +106,7 @@ structure IsU1BiAdjoint (B : Type*) [AddCommMonoid B] [Module ℂ B]
 def traceContraction (T : (Fin 2 → Fin 1) → B) : B
 ```
 
-**`StandardModel.IsU1BiAdjoint.map_traceContraction`**, a lemma, [line 108](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/GaugeGroup/Invariants/IsU1BiAdjoint.lean#L108).
+**`StandardModel.IsU1BiAdjoint.map_traceContraction`**, a lemma, [line 108](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/GaugeGroup/Invariants/IsU1BiAdjoint.lean#L108).
 
 > Any map obeying the `u(1)` law fixes the trace contraction.
 
@@ -121,4 +121,4 @@ lemma map_traceContraction {u : unitary ℂ} {f : B →ₗ[ℂ] B} (hf : IsU1BiA
 
 ## Sources
 
-- [PhyslibAlpha/Particles/StandardModel/GaugeGroup/Invariants/IsU1BiAdjoint.lean at 2a1dfe43](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/GaugeGroup/Invariants/IsU1BiAdjoint.lean)
+- [PhyslibAlpha/Particles/StandardModel/GaugeGroup/Invariants/IsU1BiAdjoint.lean at 8c87bdfb](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/GaugeGroup/Invariants/IsU1BiAdjoint.lean)

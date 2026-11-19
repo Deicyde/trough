@@ -8,7 +8,7 @@ proof: formalized
 
 # Nearest-neighbour hopping on the hypercubic lattice
 
-The module `PhyslibAlpha.CondensedMatter.Bloch.Hypercubic`, [PhyslibAlpha/CondensedMatter/Bloch/Hypercubic.lean](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/CondensedMatter/Bloch/Hypercubic.lean): 17 declarations, 14 with a docstring; 3 private, not shown.
+The module `PhyslibAlpha.CondensedMatter.Bloch.Hypercubic`, [PhyslibAlpha/CondensedMatter/Bloch/Hypercubic.lean](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/CondensedMatter/Bloch/Hypercubic.lean): 17 declarations, 14 with a docstring; 3 private, not shown.
 
 > The band of nearest-neighbour hopping on the hypercubic lattice, and the irreducible zone modulo
 > the hyperoctahedral group.
@@ -41,7 +41,7 @@ The module `PhyslibAlpha.CondensedMatter.Bloch.Hypercubic`, [PhyslibAlpha/Conden
 
 ## A. The irreducible zone
 
-**`CondensedMatter.Bloch.hypercubicCone`**, a def, [line 64](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/CondensedMatter/Bloch/Hypercubic.lean#L64).
+**`CondensedMatter.Bloch.hypercubicCone`**, a def, [line 64](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/CondensedMatter/Bloch/Hypercubic.lean#L64).
 
 > The cone `0 ≤ k_{d-1} ≤ … ≤ k_0 ≤ 1/2` of coordinates.
 
@@ -49,7 +49,7 @@ The module `PhyslibAlpha.CondensedMatter.Bloch.Hypercubic`, [PhyslibAlpha/Conden
 def hypercubicCone (d : ℕ) : Set (Fin d → ℝ)
 ```
 
-**`CondensedMatter.Bloch.hypercubicZone`**, a def, [line 68](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/CondensedMatter/Bloch/Hypercubic.lean#L68).
+**`CondensedMatter.Bloch.hypercubicZone`**, a def, [line 68](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/CondensedMatter/Bloch/Hypercubic.lean#L68).
 
 > The irreducible zone of the hypercubic lattice: the momenta with coordinates in the cone.
 
@@ -57,7 +57,7 @@ def hypercubicCone (d : ℕ) : Set (Fin d → ℝ)
 def hypercubicZone (d : ℕ) : Set (BrillouinZone (Fin d → ℤ))
 ```
 
-**`CondensedMatter.Bloch.signedPerm_mem_symmetries`**, a lemma, [line 72](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/CondensedMatter/Bloch/Hypercubic.lean#L72).
+**`CondensedMatter.Bloch.signedPerm_mem_symmetries`**, a lemma, [line 72](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/CondensedMatter/Bloch/Hypercubic.lean#L72).
 
 > **A signed permutation is a bond-preserving symmetry of the hypercubic lattice.**
 
@@ -67,7 +67,7 @@ lemma signedPerm_mem_symmetries (π : Equiv.Perm (Fin d)) (ε : Fin d → Bool) 
       (hypercubicGraph d).symmetries
 ```
 
-**`CondensedMatter.Bloch.smul_brillouinPoint_of_linear`**, a lemma, [line 82](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/CondensedMatter/Bloch/Hypercubic.lean#L82).
+**`CondensedMatter.Bloch.smul_brillouinPoint_of_linear`**, a lemma, [line 82](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/CondensedMatter/Bloch/Hypercubic.lean#L82).
 
 > The coordinates of the image of a momentum under a symmetry whose linear part is a signed
 > permutation.
@@ -79,7 +79,7 @@ lemma smul_brillouinPoint_of_linear {F : Type*} (s : CellSymmetry (Fin d → ℤ
     s • brillouinPoint k = brillouinPoint (fun j => (signOf (ε j) : ℝ) * k (π.symm j))
 ```
 
-**`CondensedMatter.Bloch.smul_brillouinPoint_signedPerm`**, a lemma, [line 105](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/CondensedMatter/Bloch/Hypercubic.lean#L105).
+**`CondensedMatter.Bloch.smul_brillouinPoint_signedPerm`**, a lemma, [line 105](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/CondensedMatter/Bloch/Hypercubic.lean#L105).
 
 > The coordinates of the image of a momentum under a signed permutation.
 
@@ -89,7 +89,7 @@ lemma smul_brillouinPoint_signedPerm (π : Equiv.Perm (Fin d)) (ε : Fin d → B
       brillouinPoint (fun j => (signOf (ε j) : ℝ) * k (π.symm j))
 ```
 
-**`CondensedMatter.Bloch.exists_signedPerm_to_cone`**, a lemma, [line 111](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/CondensedMatter/Bloch/Hypercubic.lean#L111).
+**`CondensedMatter.Bloch.exists_signedPerm_to_cone`**, a lemma, [line 111](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/CondensedMatter/Bloch/Hypercubic.lean#L111).
 
 > **Every momentum is carried into the irreducible zone by a signed permutation.**
 
@@ -100,7 +100,7 @@ lemma exists_signedPerm_to_cone (k : Fin d → ℝ) :
         brillouinPoint k'
 ```
 
-**`CondensedMatter.Bloch.coversOrbits_hypercubic`**, a lemma, [line 146](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/CondensedMatter/Bloch/Hypercubic.lean#L146).
+**`CondensedMatter.Bloch.coversOrbits_hypercubic`**, a lemma, [line 146](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/CondensedMatter/Bloch/Hypercubic.lean#L146).
 
 > **The hypercubic zone covers the orbits of the point group.**
 
@@ -111,7 +111,7 @@ lemma coversOrbits_hypercubic :
 
 ## B. The nearest-neighbour band
 
-**`CondensedMatter.Bloch.hypercubicBand`**, a def, [line 158](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/CondensedMatter/Bloch/Hypercubic.lean#L158).
+**`CondensedMatter.Bloch.hypercubicBand`**, a def, [line 158](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/CondensedMatter/Bloch/Hypercubic.lean#L158).
 
 > The band of nearest-neighbour hopping with amplitude `t` on the hypercubic lattice, at the
 > momentum with coordinates `k`: `2 t ∑_j cos (2π k_j)`.
@@ -120,7 +120,7 @@ lemma coversOrbits_hypercubic :
 noncomputable def hypercubicBand (t : ℝ) (k : Fin d → ℝ) : ℝ
 ```
 
-**`CondensedMatter.Bloch.hoppingSymbol_hypercubic`**, a lemma, [line 181](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/CondensedMatter/Bloch/Hypercubic.lean#L181).
+**`CondensedMatter.Bloch.hoppingSymbol_hypercubic`**, a lemma, [line 181](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/CondensedMatter/Bloch/Hypercubic.lean#L181).
 
 > **The Bloch matrix of nearest-neighbour hopping on the hypercubic lattice** is the `1 × 1`
 > matrix with the entry `2 t ∑_j cos (2π k_j)`.
@@ -131,7 +131,7 @@ lemma hoppingSymbol_hypercubic (t : ℝ) (k : Fin d → ℝ) :
       Matrix.of fun _ _ => ((hypercubicBand t k : ℝ) : ℂ)
 ```
 
-**`CondensedMatter.Bloch.iUnion_spectrum_hypercubic`**, a lemma, [line 249](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/CondensedMatter/Bloch/Hypercubic.lean#L249).
+**`CondensedMatter.Bloch.iUnion_spectrum_hypercubic`**, a lemma, [line 249](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/CondensedMatter/Bloch/Hypercubic.lean#L249).
 
 > **The spectrum of nearest-neighbour hopping on the hypercubic lattice** is the set of values
 > of the band `2 t ∑_j cos (2π k_j)` on the irreducible zone `0 ≤ k_{d-1} ≤ … ≤ k_0 ≤ 1/2`, which is
@@ -146,26 +146,26 @@ lemma iUnion_spectrum_hypercubic (t : ℝ) :
 
 ## C. The spectrum is an interval
 
-**`CondensedMatter.Bloch.convex_hypercubicCone`**, a lemma, [line 268](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/CondensedMatter/Bloch/Hypercubic.lean#L268).
+**`CondensedMatter.Bloch.convex_hypercubicCone`**, a lemma, [line 268](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/CondensedMatter/Bloch/Hypercubic.lean#L268).
 
 ```lean
 lemma convex_hypercubicCone : Convex ℝ (hypercubicCone d)
 ```
 
-**`CondensedMatter.Bloch.continuous_hypercubicBand`**, a lemma, [line 278](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/CondensedMatter/Bloch/Hypercubic.lean#L278).
+**`CondensedMatter.Bloch.continuous_hypercubicBand`**, a lemma, [line 278](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/CondensedMatter/Bloch/Hypercubic.lean#L278).
 
 ```lean
 lemma continuous_hypercubicBand (t : ℝ) : Continuous (hypercubicBand (d := d) t)
 ```
 
-**`CondensedMatter.Bloch.abs_hypercubicBand_le`**, a lemma, [line 282](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/CondensedMatter/Bloch/Hypercubic.lean#L282).
+**`CondensedMatter.Bloch.abs_hypercubicBand_le`**, a lemma, [line 282](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/CondensedMatter/Bloch/Hypercubic.lean#L282).
 
 ```lean
 lemma abs_hypercubicBand_le (t : ℝ) (k : Fin d → ℝ) :
     |hypercubicBand t k| ≤ 2 * d * |t|
 ```
 
-**`CondensedMatter.Bloch.hypercubicBand_image`**, a lemma, [line 296](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/CondensedMatter/Bloch/Hypercubic.lean#L296).
+**`CondensedMatter.Bloch.hypercubicBand_image`**, a lemma, [line 296](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/CondensedMatter/Bloch/Hypercubic.lean#L296).
 
 > **The band of nearest-neighbour hopping takes exactly the values in `[-2 d |t|, 2 d |t|]` on
 > the irreducible zone.**
@@ -175,7 +175,7 @@ lemma hypercubicBand_image (t : ℝ) :
     hypercubicBand t '' hypercubicCone d = Set.Icc (-(2 * d * |t|)) (2 * d * |t|)
 ```
 
-**`CondensedMatter.Bloch.iUnion_spectrum_hypercubic_eq_Icc`**, a lemma, [line 328](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/CondensedMatter/Bloch/Hypercubic.lean#L328).
+**`CondensedMatter.Bloch.iUnion_spectrum_hypercubic_eq_Icc`**, a lemma, [line 328](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/CondensedMatter/Bloch/Hypercubic.lean#L328).
 
 > **The spectrum of nearest-neighbour hopping on the hypercubic lattice is the interval
 > `[-2 d |t|, 2 d |t|]`.**
@@ -189,7 +189,7 @@ lemma iUnion_spectrum_hypercubic_eq_Icc (t : ℝ) :
 
 ## D. The fully symmetric momenta
 
-**`CondensedMatter.Bloch.littleGroup_gamma`**, a lemma, [line 342](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/CondensedMatter/Bloch/Hypercubic.lean#L342).
+**`CondensedMatter.Bloch.littleGroup_gamma`**, a lemma, [line 342](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/CondensedMatter/Bloch/Hypercubic.lean#L342).
 
 > **The centre `Γ` of the Brillouin zone is fixed by every symmetry.**
 
@@ -198,7 +198,7 @@ lemma littleGroup_gamma (d : ℕ) :
     (hypercubicGraph d).littleGroup (brillouinPoint (0 : Fin d → ℝ)) = ⊤
 ```
 
-**`CondensedMatter.Bloch.littleGroup_corner`**, a lemma, [line 354](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/CondensedMatter/Bloch/Hypercubic.lean#L354).
+**`CondensedMatter.Bloch.littleGroup_corner`**, a lemma, [line 354](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/CondensedMatter/Bloch/Hypercubic.lean#L354).
 
 > **The corner `R = (1/2, …, 1/2)` of the Brillouin zone is fixed by every symmetry**: its
 > little group is the whole group.
@@ -216,4 +216,4 @@ lemma littleGroup_corner (d : ℕ) :
 
 ## Sources
 
-- [PhyslibAlpha/CondensedMatter/Bloch/Hypercubic.lean at 2a1dfe43](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/CondensedMatter/Bloch/Hypercubic.lean)
+- [PhyslibAlpha/CondensedMatter/Bloch/Hypercubic.lean at 8c87bdfb](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/CondensedMatter/Bloch/Hypercubic.lean)

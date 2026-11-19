@@ -1,14 +1,14 @@
 ---
 declaration: module
 origin: cited
-lean: ProbabilisticTheory.sqrt_abs_diagonal_eq_norm_sq, ProbabilisticTheory.isHilbertSchmidt_sqrt_abs_of_isTraceClass, ProbabilisticTheory.summable_trace_diagonal_of_isTraceClass, ProbabilisticTheory.tsum_diagonal_eq_of_isTraceClass, ProbabilisticTheory.trace_eq_of_hilbertBasis_unconditional, ProbabilisticTheory.trace_eq_of_hilbertBasis
+lean: PhyslibAlpha.ProbabilisticTheory.sqrt_abs_diagonal_eq_norm_sq, PhyslibAlpha.ProbabilisticTheory.isHilbertSchmidt_sqrt_abs_of_isTraceClass, PhyslibAlpha.ProbabilisticTheory.summable_trace_diagonal_of_isTraceClass, PhyslibAlpha.ProbabilisticTheory.tsum_diagonal_eq_of_isTraceClass, PhyslibAlpha.ProbabilisticTheory.trace_eq_of_hilbertBasis_unconditional, PhyslibAlpha.ProbabilisticTheory.trace_eq_of_hilbertBasis
 statement: formalized
 proof: formalized
 ---
 
 # Basis independence of the trace
 
-The module `PhyslibAlpha.ProbabilisticTheory.HilbertSpace.TraceClass.GeneralIdeal`, [PhyslibAlpha/ProbabilisticTheory/HilbertSpace/TraceClass/GeneralIdeal.lean](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/TraceClass/GeneralIdeal.lean): 6 declarations, 1 with a docstring.
+The module `PhyslibAlpha.ProbabilisticTheory.HilbertSpace.TraceClass.GeneralIdeal`, [PhyslibAlpha/ProbabilisticTheory/HilbertSpace/TraceClass/GeneralIdeal.lean](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/TraceClass/GeneralIdeal.lean): 6 declarations, 1 with a docstring.
 
 > The trace of every trace-class operator is an absolutely summable, basis-independent sum.
 
@@ -31,7 +31,7 @@ The module `PhyslibAlpha.ProbabilisticTheory.HilbertSpace.TraceClass.GeneralIdea
 
 ## A. The Hilbert–Schmidt square root of `|T|`
 
-**`ProbabilisticTheory.sqrt_abs_diagonal_eq_norm_sq`**, a lemma, [line 58](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/TraceClass/GeneralIdeal.lean#L58).
+**`PhyslibAlpha.ProbabilisticTheory.sqrt_abs_diagonal_eq_norm_sq`**, a lemma, [line 58](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/TraceClass/GeneralIdeal.lean#L58).
 
 ```lean
 lemma sqrt_abs_diagonal_eq_norm_sq {T : H →L[ℂ] H} {w : Set H} (b : HilbertBasis w ℂ H)
@@ -39,7 +39,7 @@ lemma sqrt_abs_diagonal_eq_norm_sq {T : H →L[ℂ] H} {w : Set H} (b : HilbertB
     (⟪b i, CFC.abs T (b i)⟫_ℂ).re = ‖(CFC.sqrt (CFC.abs T)) (b i)‖ ^ 2
 ```
 
-**`ProbabilisticTheory.isHilbertSchmidt_sqrt_abs_of_isTraceClass`**, a lemma, [line 76](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/TraceClass/GeneralIdeal.lean#L76).
+**`PhyslibAlpha.ProbabilisticTheory.isHilbertSchmidt_sqrt_abs_of_isTraceClass`**, a lemma, [line 76](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/TraceClass/GeneralIdeal.lean#L76).
 
 ```lean
 lemma isHilbertSchmidt_sqrt_abs_of_isTraceClass {T : H →L[ℂ] H} (hT : IsTraceClass T) :
@@ -48,7 +48,7 @@ lemma isHilbertSchmidt_sqrt_abs_of_isTraceClass {T : H →L[ℂ] H} (hT : IsTrac
 
 ## B. Basis independence of the trace
 
-**`ProbabilisticTheory.summable_trace_diagonal_of_isTraceClass`**, a lemma, [line 89](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/TraceClass/GeneralIdeal.lean#L89).
+**`PhyslibAlpha.ProbabilisticTheory.summable_trace_diagonal_of_isTraceClass`**, a lemma, [line 89](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/TraceClass/GeneralIdeal.lean#L89).
 
 ```lean
 lemma summable_trace_diagonal_of_isTraceClass {T : H →L[ℂ] H} (hT : IsTraceClass T)
@@ -56,7 +56,7 @@ lemma summable_trace_diagonal_of_isTraceClass {T : H →L[ℂ] H} (hT : IsTraceC
     Summable (fun i : w => ⟪b i, T (b i)⟫_ℂ)
 ```
 
-**`ProbabilisticTheory.tsum_diagonal_eq_of_isTraceClass`**, a lemma, [line 103](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/TraceClass/GeneralIdeal.lean#L103).
+**`PhyslibAlpha.ProbabilisticTheory.tsum_diagonal_eq_of_isTraceClass`**, a lemma, [line 103](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/TraceClass/GeneralIdeal.lean#L103).
 
 ```lean
 lemma tsum_diagonal_eq_of_isTraceClass {T : H →L[ℂ] H} (hT : IsTraceClass T)
@@ -64,7 +64,7 @@ lemma tsum_diagonal_eq_of_isTraceClass {T : H →L[ℂ] H} (hT : IsTraceClass T)
     (∑' i : w, ⟪b i, T (b i)⟫_ℂ) = ∑' j : w', ⟪c j, T (c j)⟫_ℂ
 ```
 
-**`ProbabilisticTheory.trace_eq_of_hilbertBasis_unconditional`**, a lemma, [line 121](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/TraceClass/GeneralIdeal.lean#L121).
+**`PhyslibAlpha.ProbabilisticTheory.trace_eq_of_hilbertBasis_unconditional`**, a lemma, [line 121](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/TraceClass/GeneralIdeal.lean#L121).
 
 ```lean
 lemma trace_eq_of_hilbertBasis_unconditional {T : H →L[ℂ] H} (hT : IsTraceClass T) {w : Set H}
@@ -72,7 +72,7 @@ lemma trace_eq_of_hilbertBasis_unconditional {T : H →L[ℂ] H} (hT : IsTraceCl
     trace T hT = ∑' i : w, ⟪b i, T (b i)⟫_ℂ
 ```
 
-**`ProbabilisticTheory.trace_eq_of_hilbertBasis`**, a lemma, [line 131](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/TraceClass/GeneralIdeal.lean#L131).
+**`PhyslibAlpha.ProbabilisticTheory.trace_eq_of_hilbertBasis`**, a lemma, [line 131](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/TraceClass/GeneralIdeal.lean#L131).
 
 > **Basis-independent trace evaluation for an arbitrary trace-class operator.** Unlike the
 > witness-basis definition, this requires no self-adjointness/positivity hypothesis.
@@ -93,4 +93,4 @@ lemma trace_eq_of_hilbertBasis {T : H →L[ℂ] H} (hT : IsTraceClass T) {w : Se
 
 ## Sources
 
-- [PhyslibAlpha/ProbabilisticTheory/HilbertSpace/TraceClass/GeneralIdeal.lean at 2a1dfe43](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/TraceClass/GeneralIdeal.lean)
+- [PhyslibAlpha/ProbabilisticTheory/HilbertSpace/TraceClass/GeneralIdeal.lean at 8c87bdfb](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/TraceClass/GeneralIdeal.lean)

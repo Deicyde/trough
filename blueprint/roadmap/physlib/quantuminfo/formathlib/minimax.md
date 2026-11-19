@@ -8,9 +8,9 @@ proof: formalized
 
 # QuantumInfo.ForMathlib.Minimax
 
-The module `QuantumInfo.ForMathlib.Minimax`, [QuantumInfo/ForMathlib/Minimax.lean](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/QuantumInfo/ForMathlib/Minimax.lean): 8 declarations, 3 with a docstring, 3 listed as significant.
+The module `QuantumInfo.ForMathlib.Minimax`, [QuantumInfo/ForMathlib/Minimax.lean](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/QuantumInfo/ForMathlib/Minimax.lean): 8 declarations, 3 with a docstring, 3 listed as significant.
 
-**`IsCompact.exists_isMinOn_lowerSemicontinuousOn`**, a lemma, [line 32](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/QuantumInfo/ForMathlib/Minimax.lean#L32).
+**`IsCompact.exists_isMinOn_lowerSemicontinuousOn`**, a lemma, [line 32](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/QuantumInfo/ForMathlib/Minimax.lean#L32).
 
 ```lean
 lemma _root_.IsCompact.exists_isMinOn_lowerSemicontinuousOn {α β : Type*}
@@ -19,7 +19,7 @@ lemma _root_.IsCompact.exists_isMinOn_lowerSemicontinuousOn {α β : Type*}
     ∃ x ∈ s, IsMinOn f s x
 ```
 
-**`LinearMap.quasilinearOn`**, a lemma, [line 74](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/QuantumInfo/ForMathlib/Minimax.lean#L74).
+**`LinearMap.quasilinearOn`**, a lemma, [line 74](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/QuantumInfo/ForMathlib/Minimax.lean#L74).
 
 ```lean
 lemma LinearMap.quasilinearOn {E β 𝕜 : Type*} [Semiring 𝕜] [PartialOrder 𝕜]
@@ -29,7 +29,7 @@ lemma LinearMap.quasilinearOn {E β 𝕜 : Type*} [Semiring 𝕜] [PartialOrder 
     QuasilinearOn 𝕜 s f
 ```
 
-**`LinearMap.quasiconvexOn`**, a lemma, [line 88](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/QuantumInfo/ForMathlib/Minimax.lean#L88).
+**`LinearMap.quasiconvexOn`**, a lemma, [line 88](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/QuantumInfo/ForMathlib/Minimax.lean#L88).
 
 ```lean
 lemma LinearMap.quasiconvexOn {E β 𝕜 : Type*} [Semiring 𝕜] [PartialOrder 𝕜]
@@ -39,7 +39,7 @@ lemma LinearMap.quasiconvexOn {E β 𝕜 : Type*} [Semiring 𝕜] [PartialOrder 
     QuasiconvexOn 𝕜 s f
 ```
 
-**`LinearMap.quasiconcaveOn`**, a lemma, [line 96](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/QuantumInfo/ForMathlib/Minimax.lean#L96).
+**`LinearMap.quasiconcaveOn`**, a lemma, [line 96](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/QuantumInfo/ForMathlib/Minimax.lean#L96).
 
 ```lean
 lemma LinearMap.quasiconcaveOn {E β 𝕜 : Type*} [Semiring 𝕜] [PartialOrder 𝕜]
@@ -49,7 +49,7 @@ lemma LinearMap.quasiconcaveOn {E β 𝕜 : Type*} [Semiring 𝕜] [PartialOrder
     QuasiconcaveOn 𝕜 s f
 ```
 
-**`continuous_stupid`**, a lemma, [line 104](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/QuantumInfo/ForMathlib/Minimax.lean#L104).
+**`continuous_stupid`**, a lemma, [line 104](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/QuantumInfo/ForMathlib/Minimax.lean#L104).
 
 ```lean
 lemma continuous_stupid.{u_2, u_1} {M : Type u_1} [inst : NormedAddCommGroup M] [inst_1 : Module ℝ M]
@@ -60,7 +60,7 @@ lemma continuous_stupid.{u_2, u_1} {M : Type u_1} [inst : NormedAddCommGroup M] 
     Continuous fun (x : N × M) ↦ (f x.1) x.2
 ```
 
-**`minimax`**, a theorem, [line 123](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/QuantumInfo/ForMathlib/Minimax.lean#L123). Listed as a significant result in [Theorems.txt](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/scripts/lint/exemptions/Theorems.txt).
+**`minimax`**, a theorem, [line 123](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/QuantumInfo/ForMathlib/Minimax.lean#L123). Listed as a significant result in [Theorems.txt](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/scripts/lint/exemptions/Theorems.txt).
 
 > The minimax theorem, at the level of generality we need. For convex, compact, nonempty sets `S`
 > and `T`in a real topological vector space `M`, and a bilinear function `f` on M, we can exchange
@@ -76,7 +76,7 @@ theorem minimax
     : ⨅ x : T, ⨆ y : S, f x y = ⨆ y : S, ⨅ x : T, f x y
 ```
 
-**`LinearMap.BilinForm.minimax`**, a theorem, [line 157](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/QuantumInfo/ForMathlib/Minimax.lean#L157). Listed as a significant result in [Theorems.txt](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/scripts/lint/exemptions/Theorems.txt).
+**`LinearMap.BilinForm.minimax`**, a theorem, [line 157](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/QuantumInfo/ForMathlib/Minimax.lean#L157). Listed as a significant result in [Theorems.txt](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/scripts/lint/exemptions/Theorems.txt).
 
 > **Von-Neumann's Minimax Theorem**, specialized to bilinear forms.
 
@@ -89,7 +89,7 @@ theorem LinearMap.BilinForm.minimax
     : ⨅ x : T, ⨆ y : S, f x y = ⨆ y : S, ⨅ x : T, f x y
 ```
 
-**`LinearMap.BilinForm.minimax'`**, a theorem, [line 168](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/QuantumInfo/ForMathlib/Minimax.lean#L168). Listed as a significant result in [Theorems.txt](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/scripts/lint/exemptions/Theorems.txt).
+**`LinearMap.BilinForm.minimax'`**, a theorem, [line 168](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/QuantumInfo/ForMathlib/Minimax.lean#L168). Listed as a significant result in [Theorems.txt](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/scripts/lint/exemptions/Theorems.txt).
 
 > Convenience form of `LinearMap.BilinForm.minimax` with the order inf/sup arguments supplied to f flipped.
 
@@ -112,4 +112,4 @@ Its declarations' statements use no declaration of another module with an articl
 
 ## Sources
 
-- [QuantumInfo/ForMathlib/Minimax.lean at 2a1dfe43](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/QuantumInfo/ForMathlib/Minimax.lean)
+- [QuantumInfo/ForMathlib/Minimax.lean at 8c87bdfb](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/QuantumInfo/ForMathlib/Minimax.lean)

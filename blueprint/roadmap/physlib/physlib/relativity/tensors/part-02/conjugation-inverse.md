@@ -8,7 +8,7 @@ proof: formalized
 
 # The inverse of a rank-two tensor
 
-The module `Physlib.Relativity.Tensors.Conjugation.Inverse`, [Physlib/Relativity/Tensors/Conjugation/Inverse.lean](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/Relativity/Tensors/Conjugation/Inverse.lean): 11 declarations, 11 with a docstring.
+The module `Physlib.Relativity.Tensors.Conjugation.Inverse`, [Physlib/Relativity/Tensors/Conjugation/Inverse.lean](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Relativity/Tensors/Conjugation/Inverse.lean): 11 declarations, 11 with a docstring.
 
 > The inverse `g^{J̄I}` of a tensor `g_{IJ̄}` with one index and one conjugate index, such as a
 > Hermitian metric, and the linear equivalence that contracts an index with `g`.
@@ -48,7 +48,7 @@ The module `Physlib.Relativity.Tensors.Conjugation.Inverse`, [Physlib/Relativity
 
 ## A. The inverse
 
-**`ConjTensorSpecies.inverseT`**, a def, [line 84](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/Relativity/Tensors/Conjugation/Inverse.lean#L84).
+**`ConjTensorSpecies.inverseT`**, a def, [line 84](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Relativity/Tensors/Conjugation/Inverse.lean#L84).
 
 > The inverse `g^{J̄I}` of a tensor `g_{IJ̄}`. Its matrix, with row `J` and column `I`, is
 > `(g_{IJ̄})⁻¹`, and it is zero when `(g_{IJ̄})` is not invertible.
@@ -58,7 +58,7 @@ def inverseT {c : Fin 2 → C} (M : S.Tensor c) (hbar : S.bar (c 0) = c 1 := by 
     S.Tensor ![S.τ (c 1), S.τ (c 0)]
 ```
 
-**`ConjTensorSpecies.toMatrix_inverseT`**, a lemma, [line 93](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/Relativity/Tensors/Conjugation/Inverse.lean#L93).
+**`ConjTensorSpecies.toMatrix_inverseT`**, a lemma, [line 93](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Relativity/Tensors/Conjugation/Inverse.lean#L93).
 
 > The component `g^{J̄I}` is the entry `(J, I)` of `(g_{IJ̄})⁻¹`. The upper indices `J̄` and `I`
 > are labelled by the lower indices `J` and `I` they contract with.
@@ -72,7 +72,7 @@ lemma toMatrix_inverseT {c : Fin 2 → C} (hbar : S.bar (c 0) = c 1) (M : S.Tens
         (dualIdxEquiv (S.τ_τ_apply (c 0)))
 ```
 
-**`ConjTensorSpecies.toSquareMatrix_inverseT`**, a lemma, [line 103](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/Relativity/Tensors/Conjugation/Inverse.lean#L103).
+**`ConjTensorSpecies.toSquareMatrix_inverseT`**, a lemma, [line 103](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Relativity/Tensors/Conjugation/Inverse.lean#L103).
 
 > The matrix `(g^{J̄I})`, row `J` from the first, barred index and column `I` from the second, is
 > `(g_{IJ̄})⁻¹`.
@@ -87,7 +87,7 @@ lemma toSquareMatrix_inverseT {c : Fin 2 → C} (hbar : S.bar (c 0) = c 1) (M : 
           (dualIdxEquiv (rfl : S.τ (c 1) = S.τ (c 1))).symm)
 ```
 
-**`ConjTensorSpecies.isSymm_toSesqForm_inverseT`**, a lemma, [line 121](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/Relativity/Tensors/Conjugation/Inverse.lean#L121).
+**`ConjTensorSpecies.isSymm_toSesqForm_inverseT`**, a lemma, [line 121](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Relativity/Tensors/Conjugation/Inverse.lean#L121).
 
 > The inverse of a Hermitian tensor is Hermitian. If `(g_{IJ̄})* = g_{JĪ}`, then
 > `(g^{J̄I})* = g^{ĪJ}`.
@@ -105,7 +105,7 @@ lemma isSymm_toSesqForm_inverseT {x y : C} {c : Fin 2 → C} (hbar : S.bar (c 0)
 > (`isUnit_det_toSquareMatrix_of_isPosDef`), so `g` has a true inverse and the contraction laws of C
 > hold for it. That inverse is again positive-definite (`isPosDef_toSesqForm_inverseT`).
 
-**`ConjTensorSpecies.isPosDef_toSesqForm_inverseT`**, a lemma, [line 149](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/Relativity/Tensors/Conjugation/Inverse.lean#L149).
+**`ConjTensorSpecies.isPosDef_toSesqForm_inverseT`**, a lemma, [line 149](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Relativity/Tensors/Conjugation/Inverse.lean#L149).
 
 > The inverse of a positive-definite tensor is positive-definite, so `g^{J̄I} t_J̄ t̄_I > 0` for
 > every covector `t ≠ 0`.
@@ -123,7 +123,7 @@ lemma isPosDef_toSesqForm_inverseT {x y : C} {c : Fin 2 → C} (hbar : S.bar (c 
 > only tensor that satisfies the first. The unit tensor `δ` is defined over `RCLike` scalars, so
 > sections C and D use them.
 
-**`ConjTensorSpecies.contractInnerT_inverseT`**, a lemma, [line 180](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/Relativity/Tensors/Conjugation/Inverse.lean#L180).
+**`ConjTensorSpecies.contractInnerT_inverseT`**, a lemma, [line 180](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Relativity/Tensors/Conjugation/Inverse.lean#L180).
 
 > If the matrix `(g_{IJ̄})` is invertible, `g_{IJ̄} g^{J̄K} = δ_I^K`. The first colour of the unit
 > tensor is renamed from `τ (τ (cs 0))` to `cs 0`.
@@ -136,7 +136,7 @@ lemma contractInnerT_inverseT {cs : Fin 2 → C} (hbar : S.bar (cs 0) = cs 1) (M
         (unitTensor (S := S.toTensorSpecies) (S.τ (cs 0)))
 ```
 
-**`ConjTensorSpecies.inverseT_contractInnerT`**, a lemma, [line 199](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/Relativity/Tensors/Conjugation/Inverse.lean#L199).
+**`ConjTensorSpecies.inverseT_contractInnerT`**, a lemma, [line 199](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Relativity/Tensors/Conjugation/Inverse.lean#L199).
 
 > If the matrix `(g_{IJ̄})` is invertible, `g^{J̄I} g_{IK̄} = δ^J̄_K̄`.
 
@@ -147,7 +147,7 @@ lemma inverseT_contractInnerT {cs : Fin 2 → C} (hbar : S.bar (cs 0) = cs 1) (M
       unitTensor (S := S.toTensorSpecies) (cs 1)
 ```
 
-**`ConjTensorSpecies.eq_inverseT_of_contractInnerT_eq_unitTensor`**, a lemma, [line 208](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/Relativity/Tensors/Conjugation/Inverse.lean#L208).
+**`ConjTensorSpecies.eq_inverseT_of_contractInnerT_eq_unitTensor`**, a lemma, [line 208](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Relativity/Tensors/Conjugation/Inverse.lean#L208).
 
 > If `(g_{IJ̄})` is invertible and `g_{IJ̄} t^{J̄K} = δ_I^K`, then `t` is the inverse
 > `g^{J̄K}`.
@@ -169,7 +169,7 @@ lemma eq_inverseT_of_contractInnerT_eq_unitTensor {cs : Fin 2 → C} (hbar : S.b
 > of C make these mutually inverse. For a metric `g_{IJ̄}` with lower indices this lowers an index.
 > If `g` has upper indices, the same map raises one.
 
-**`ConjTensorSpecies.toConjDualAtIndex`**, a def, [line 233](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/Relativity/Tensors/Conjugation/Inverse.lean#L233).
+**`ConjTensorSpecies.toConjDualAtIndex`**, a def, [line 233](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Relativity/Tensors/Conjugation/Inverse.lean#L233).
 
 > The linear equivalence that contracts slot `i` of a tensor with the first index of `M`, when
 > the matrix `(M_{IJ̄})` is invertible. Slot `i` changes from `τ (cs 0)` to its conjugate dual
@@ -183,7 +183,7 @@ def toConjDualAtIndex {cs : Fin 2 → C} (M : S.Tensor cs) (hbar : S.bar (cs 0) 
       S.Tensor c ≃ₗ[k] S.Tensor (Function.update c i (cs 1))
 ```
 
-**`ConjTensorSpecies.toConjDualAtIndex_apply`**, a lemma, [line 245](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/Relativity/Tensors/Conjugation/Inverse.lean#L245).
+**`ConjTensorSpecies.toConjDualAtIndex_apply`**, a lemma, [line 245](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Relativity/Tensors/Conjugation/Inverse.lean#L245).
 
 > `toConjDualAtIndex` is the contraction `crossToSlot` of slot `i` with the first index of `M`.
 
@@ -195,7 +195,7 @@ lemma toConjDualAtIndex_apply {nA : ℕ} {c : Fin (nA + 1) → C} {cs : Fin 2 �
       crossToSlot i 0 ((congrArg S.τ he).trans (S.τ_τ_apply (cs 0))) M t
 ```
 
-**`ConjTensorSpecies.toConjDualAtIndex_symm_apply`**, a lemma, [line 255](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/Relativity/Tensors/Conjugation/Inverse.lean#L255).
+**`ConjTensorSpecies.toConjDualAtIndex_symm_apply`**, a lemma, [line 255](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Relativity/Tensors/Conjugation/Inverse.lean#L255).
 
 > The inverse of `toConjDualAtIndex` is the contraction `crossToSlotInv` of slot `i` with the
 > first index of `inverseT M`.
@@ -215,4 +215,4 @@ lemma toConjDualAtIndex_symm_apply {nA : ℕ} {c : Fin (nA + 1) → C} {cs : Fin
 
 ## Sources
 
-- [Physlib/Relativity/Tensors/Conjugation/Inverse.lean at 2a1dfe43](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/Relativity/Tensors/Conjugation/Inverse.lean)
+- [Physlib/Relativity/Tensors/Conjugation/Inverse.lean at 8c87bdfb](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Relativity/Tensors/Conjugation/Inverse.lean)

@@ -8,7 +8,7 @@ proof: formalized
 
 # Mandelstam–Tamm and Cramér–Rao on the open tight binding cube
 
-The module `PhyslibAlpha.CondensedMatter.TightBindingChain.Cube.MandelstamTamm`, [PhyslibAlpha/CondensedMatter/TightBindingChain/Cube/MandelstamTamm.lean](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/CondensedMatter/TightBindingChain/Cube/MandelstamTamm.lean): 3 declarations, 3 with a docstring.
+The module `PhyslibAlpha.CondensedMatter.TightBindingChain.Cube.MandelstamTamm`, [PhyslibAlpha/CondensedMatter/TightBindingChain/Cube/MandelstamTamm.lean](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/CondensedMatter/TightBindingChain/Cube/MandelstamTamm.lean): 3 declarations, 3 with a docstring.
 
 ## i. Overview
 
@@ -26,7 +26,7 @@ The module `PhyslibAlpha.CondensedMatter.TightBindingChain.Cube.MandelstamTamm`,
 
 ## A. The Mandelstam–Tamm ratio along each axis
 
-**`CondensedMatter.TightBindingChain.mandelstamTammRatio_alongX`**, a lemma, [line 50](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/CondensedMatter/TightBindingChain/Cube/MandelstamTamm.lean#L50).
+**`CondensedMatter.TightBindingChain.mandelstamTammRatio_alongX`**, a lemma, [line 50](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/CondensedMatter/TightBindingChain/Cube/MandelstamTamm.lean#L50).
 
 > Along `x`, the maximal current state of the cube has the ratio `1 / C²` of `Tx`.
 
@@ -39,7 +39,7 @@ lemma mandelstamTammRatio_alongX :
           (Tx.alongX Ty Tz Tx.positionObservable))) = 1 / Tx.uncertaintyRatio ^ 2
 ```
 
-**`CondensedMatter.TightBindingChain.mandelstamTammRatio_alongY`**, a lemma, [line 64](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/CondensedMatter/TightBindingChain/Cube/MandelstamTamm.lean#L64).
+**`CondensedMatter.TightBindingChain.mandelstamTammRatio_alongY`**, a lemma, [line 64](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/CondensedMatter/TightBindingChain/Cube/MandelstamTamm.lean#L64).
 
 > Along `y`, the maximal current state of the cube has the ratio `1 / C²` of `Ty`.
 
@@ -52,7 +52,7 @@ lemma mandelstamTammRatio_alongY :
           (Tx.alongY Ty Tz Ty.positionObservable))) = 1 / Ty.uncertaintyRatio ^ 2
 ```
 
-**`CondensedMatter.TightBindingChain.mandelstamTammRatio_alongZ`**, a lemma, [line 79](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/CondensedMatter/TightBindingChain/Cube/MandelstamTamm.lean#L79).
+**`CondensedMatter.TightBindingChain.mandelstamTammRatio_alongZ`**, a lemma, [line 79](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/CondensedMatter/TightBindingChain/Cube/MandelstamTamm.lean#L79).
 
 > Along `z`, the maximal current state of the cube has the ratio `1 / C²` of `Tz`.
 
@@ -76,4 +76,4 @@ lemma mandelstamTammRatio_alongZ :
 
 ## Sources
 
-- [PhyslibAlpha/CondensedMatter/TightBindingChain/Cube/MandelstamTamm.lean at 2a1dfe43](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/CondensedMatter/TightBindingChain/Cube/MandelstamTamm.lean)
+- [PhyslibAlpha/CondensedMatter/TightBindingChain/Cube/MandelstamTamm.lean at 8c87bdfb](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/CondensedMatter/TightBindingChain/Cube/MandelstamTamm.lean)

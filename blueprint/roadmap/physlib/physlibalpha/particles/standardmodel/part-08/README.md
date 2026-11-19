@@ -8,18 +8,18 @@ navigation: transparent
 - [The jet algebra of the Standard Model is a Standard Model (Realization)](jetalgebra-realization.md)
 - [The transformation laws of the field symbols of the jet algebra](jetalgebra-transformsin.md)
 
-Modules in [JetAlgebra/CovJetAlgebra/](https://github.com/leanprover-community/physlib/tree/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/JetAlgebra/CovJetAlgebra):
+Modules in [JetAlgebra/CovJetAlgebra/](https://github.com/leanprover-community/physlib/tree/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/JetAlgebra/CovJetAlgebra):
 
 - [The covariant jet algebra](jetalgebra-covjetalgebra-basic.md)
 - [The covariant jet algebra of the Higgs field](jetalgebra-covjetalgebra-higgs.md)
 - [The sectors of the covariant jet algebra](jetalgebra-covjetalgebra-sectors.md)
 
-Modules in [JetAlgebra/SectorEquiv/](https://github.com/leanprover-community/physlib/tree/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/JetAlgebra/SectorEquiv):
+Modules in [JetAlgebra/SectorEquiv/](https://github.com/leanprover-community/physlib/tree/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/JetAlgebra/SectorEquiv):
 
 - [The sector algebras of the Standard Model inside its local field algebra](jetalgebra-sectorequiv-basic.md)
 - [The generator identifications respect the transformation data](jetalgebra-sectorequiv-structure.md)
 
-Modules in [Matter/Bosonic/](https://github.com/leanprover-community/physlib/tree/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/Matter/Bosonic):
+Modules in [Matter/Bosonic/](https://github.com/leanprover-community/physlib/tree/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/Matter/Bosonic):
 
 - [The bosonic algebra of a matter field](matter-bosonic-basic.md)
 - [The gauge action on the bosonic algebra](matter-bosonic-gaugeaction.md)

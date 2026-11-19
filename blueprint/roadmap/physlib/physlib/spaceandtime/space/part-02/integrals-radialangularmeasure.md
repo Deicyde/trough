@@ -8,7 +8,7 @@ proof: formalized
 
 # The radial angular measure on Space
 
-The module `Physlib.SpaceAndTime.Space.Integrals.RadialAngularMeasure`, [Physlib/SpaceAndTime/Space/Integrals/RadialAngularMeasure.lean](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/SpaceAndTime/Space/Integrals/RadialAngularMeasure.lean): 13 declarations (2 instances with no name), 1 with a docstring; 1 private, not shown.
+The module `Physlib.SpaceAndTime.Space.Integrals.RadialAngularMeasure`, [Physlib/SpaceAndTime/Space/Integrals/RadialAngularMeasure.lean](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/SpaceAndTime/Space/Integrals/RadialAngularMeasure.lean): 13 declarations (2 instances with no name), 1 with a docstring; 1 private, not shown.
 
 ## i. Overview
 
@@ -29,7 +29,7 @@ The module `Physlib.SpaceAndTime.Space.Integrals.RadialAngularMeasure`, [Physlib
 
 ## A. The definition of the radial angular measure
 
-**`Space.radialAngularMeasure`**, a def, [line 63](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/SpaceAndTime/Space/Integrals/RadialAngularMeasure.lean#L63).
+**`Space.radialAngularMeasure`**, a def, [line 63](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/SpaceAndTime/Space/Integrals/RadialAngularMeasure.lean#L63).
 
 > The measure on `Space d` weighted by `1 / ‖x‖ ^ (d - 1)`.
 
@@ -39,14 +39,14 @@ def radialAngularMeasure {d : ℕ} : Measure (Space d)
 
 ### A.1. Basic equalities
 
-**`Space.radialAngularMeasure_eq_volume_withDensity`**, a lemma, [line 72](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/SpaceAndTime/Space/Integrals/RadialAngularMeasure.lean#L72).
+**`Space.radialAngularMeasure_eq_volume_withDensity`**, a lemma, [line 72](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/SpaceAndTime/Space/Integrals/RadialAngularMeasure.lean#L72).
 
 ```lean
 lemma radialAngularMeasure_eq_volume_withDensity {d : ℕ} : radialAngularMeasure =
     volume.withDensity (fun x : Space d => ENNReal.ofReal (1 / ‖x‖ ^ (d - 1)))
 ```
 
-**`Space.radialAngularMeasure_zero_eq_volume`**, a lemma, [line 77](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/SpaceAndTime/Space/Integrals/RadialAngularMeasure.lean#L77).
+**`Space.radialAngularMeasure_zero_eq_volume`**, a lemma, [line 77](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/SpaceAndTime/Space/Integrals/RadialAngularMeasure.lean#L77).
 
 ```lean
 lemma radialAngularMeasure_zero_eq_volume :
@@ -55,7 +55,7 @@ lemma radialAngularMeasure_zero_eq_volume :
 
 ### A.2. SFinite property
 
-**An instance with no name**, [line 87](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/SpaceAndTime/Space/Integrals/RadialAngularMeasure.lean#L87).
+**An instance with no name**, [line 87](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/SpaceAndTime/Space/Integrals/RadialAngularMeasure.lean#L87).
 
 ```lean
 instance (d : ℕ) : SFinite (radialAngularMeasure (d := d))
@@ -63,21 +63,21 @@ instance (d : ℕ) : SFinite (radialAngularMeasure (d := d))
 
 ## B. Integrals with respect to radialAngularMeasure
 
-**`Space.integral_radialAngularMeasure`**, a lemma, [line 97](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/SpaceAndTime/Space/Integrals/RadialAngularMeasure.lean#L97).
+**`Space.integral_radialAngularMeasure`**, a lemma, [line 97](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/SpaceAndTime/Space/Integrals/RadialAngularMeasure.lean#L97).
 
 ```lean
 lemma integral_radialAngularMeasure {d : ℕ} (f : Space d → F) :
     ∫ x, f x ∂radialAngularMeasure = ∫ x, (1 / ‖x‖ ^ (d - 1)) • f x
 ```
 
-**`Space.lintegral_radialMeasure`**, a lemma, [line 104](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/SpaceAndTime/Space/Integrals/RadialAngularMeasure.lean#L104).
+**`Space.lintegral_radialMeasure`**, a lemma, [line 104](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/SpaceAndTime/Space/Integrals/RadialAngularMeasure.lean#L104).
 
 ```lean
 lemma lintegral_radialMeasure {d : ℕ} (f : Space d → ENNReal) (hf : Measurable f) :
     ∫⁻ x, f x ∂radialAngularMeasure = ∫⁻ x, ENNReal.ofReal (1 / ‖x‖ ^ (d - 1)) * f x
 ```
 
-**`Space.lintegral_radialMeasure_eq_spherical_mul`**, a lemma, [line 111](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/SpaceAndTime/Space/Integrals/RadialAngularMeasure.lean#L111).
+**`Space.lintegral_radialMeasure_eq_spherical_mul`**, a lemma, [line 111](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/SpaceAndTime/Space/Integrals/RadialAngularMeasure.lean#L111).
 
 ```lean
 lemma lintegral_radialMeasure_eq_spherical_mul (d : ℕ) [NeZero d]
@@ -88,14 +88,14 @@ lemma lintegral_radialMeasure_eq_spherical_mul (d : ℕ) [NeZero d]
 
 ## C. The radialAngularMeasure on balls
 
-**`Space.radialAngularMeasure_closedBall`**, a lemma, [line 133](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/SpaceAndTime/Space/Integrals/RadialAngularMeasure.lean#L133).
+**`Space.radialAngularMeasure_closedBall`**, a lemma, [line 133](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/SpaceAndTime/Space/Integrals/RadialAngularMeasure.lean#L133).
 
 ```lean
 lemma radialAngularMeasure_closedBall (r : ℝ) :
     radialAngularMeasure (Metric.closedBall (0 : Space 3) r) = ENNReal.ofReal (4 * π * r)
 ```
 
-**`Space.radialAngularMeasure_real_closedBall`**, a lemma, [line 163](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/SpaceAndTime/Space/Integrals/RadialAngularMeasure.lean#L163).
+**`Space.radialAngularMeasure_real_closedBall`**, a lemma, [line 163](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/SpaceAndTime/Space/Integrals/RadialAngularMeasure.lean#L163).
 
 ```lean
 lemma radialAngularMeasure_real_closedBall (r : ℝ) (hr : 0 < r) :
@@ -104,7 +104,7 @@ lemma radialAngularMeasure_real_closedBall (r : ℝ) (hr : 0 < r) :
 
 ## D. Integrability conditions
 
-**`Space.integrable_radialAngularMeasure_iff`**, a lemma, [line 175](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/SpaceAndTime/Space/Integrals/RadialAngularMeasure.lean#L175).
+**`Space.integrable_radialAngularMeasure_iff`**, a lemma, [line 175](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/SpaceAndTime/Space/Integrals/RadialAngularMeasure.lean#L175).
 
 ```lean
 lemma integrable_radialAngularMeasure_iff {d : ℕ} {f : Space d → F} :
@@ -112,7 +112,7 @@ lemma integrable_radialAngularMeasure_iff {d : ℕ} {f : Space d → F} :
       Integrable (fun x => (1 / ‖x‖ ^ (d - 1)) • f x) volume
 ```
 
-**`Space.integrable_radialAngularMeasure_of_spherical`**, a lemma, [line 185](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/SpaceAndTime/Space/Integrals/RadialAngularMeasure.lean#L185).
+**`Space.integrable_radialAngularMeasure_of_spherical`**, a lemma, [line 185](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/SpaceAndTime/Space/Integrals/RadialAngularMeasure.lean#L185).
 
 ```lean
 lemma integrable_radialAngularMeasure_of_spherical {d : ℕ} [NeZero d] (f : Space d → F)
@@ -126,7 +126,7 @@ lemma integrable_radialAngularMeasure_of_spherical {d : ℕ} [NeZero d] (f : Spa
 
 ### E.1. Integrability of powers
 
-**`Space.radialAngularMeasure_integrable_pow_neg_two`**, a lemma, [line 222](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/SpaceAndTime/Space/Integrals/RadialAngularMeasure.lean#L222).
+**`Space.radialAngularMeasure_integrable_pow_neg_two`**, a lemma, [line 222](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/SpaceAndTime/Space/Integrals/RadialAngularMeasure.lean#L222).
 
 ```lean
 lemma radialAngularMeasure_integrable_pow_neg_two {d : ℕ} :
@@ -136,7 +136,7 @@ lemma radialAngularMeasure_integrable_pow_neg_two {d : ℕ} :
 
 ### E.2. radialAngularMeasure has temperate growth
 
-**An instance with no name**, [line 249](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/SpaceAndTime/Space/Integrals/RadialAngularMeasure.lean#L249).
+**An instance with no name**, [line 249](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/SpaceAndTime/Space/Integrals/RadialAngularMeasure.lean#L249).
 
 ```lean
 instance (d : ℕ) : Measure.HasTemperateGrowth (radialAngularMeasure (d := d))
@@ -152,4 +152,4 @@ instance (d : ℕ) : Measure.HasTemperateGrowth (radialAngularMeasure (d := d))
 
 ## Sources
 
-- [Physlib/SpaceAndTime/Space/Integrals/RadialAngularMeasure.lean at 2a1dfe43](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/SpaceAndTime/Space/Integrals/RadialAngularMeasure.lean)
+- [Physlib/SpaceAndTime/Space/Integrals/RadialAngularMeasure.lean at 8c87bdfb](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/SpaceAndTime/Space/Integrals/RadialAngularMeasure.lean)

@@ -8,7 +8,7 @@ proof: formalized
 
 # The centre of `SL(2,ℂ)` on the Higgs sector
 
-The module `PhyslibAlpha.Particles.StandardModel.Realization.HiggsCov.DerivSubmodule.Centre`, [PhyslibAlpha/Particles/StandardModel/Realization/HiggsCov/DerivSubmodule/Centre.lean](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/Realization/HiggsCov/DerivSubmodule/Centre.lean): 3 declarations, 3 with a docstring.
+The module `PhyslibAlpha.Particles.StandardModel.Realization.HiggsCov.DerivSubmodule.Centre`, [PhyslibAlpha/Particles/StandardModel/Realization/HiggsCov/DerivSubmodule/Centre.lean](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/Realization/HiggsCov/DerivSubmodule/Centre.lean): 3 declarations, 3 with a docstring.
 
 ## i. Overview
 
@@ -43,7 +43,7 @@ The module `PhyslibAlpha.Particles.StandardModel.Realization.HiggsCov.DerivSubmo
 > value space, which is `+1` for both: the value space of the Higgs tower carries the trivial
 > representation and that of the conjugate tower its conjugate.
 
-**`StandardModel.HiggsAlgebraCovRealization.range_covH_le_centreEigenspace`**, a lemma, [line 73](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/Realization/HiggsCov/DerivSubmodule/Centre.lean#L73).
+**`StandardModel.HiggsAlgebraCovRealization.range_covH_le_centreEigenspace`**, a lemma, [line 73](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/Realization/HiggsCov/DerivSubmodule/Centre.lean#L73).
 
 > The Higgs symbols carry the sign `+1`: their value space is a Lorentz scalar.
 
@@ -52,7 +52,7 @@ lemma range_covH_le_centreEigenspace (n : ℕ) (l : Fin n → Fin 1 ⊕ Fin 3) :
     LinearMap.range (h.covH n l) ≤ centreEigenspace repLorentz 1
 ```
 
-**`StandardModel.HiggsAlgebraCovRealization.range_covBarH_le_centreEigenspace`**, a lemma, [line 79](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/Realization/HiggsCov/DerivSubmodule/Centre.lean#L79).
+**`StandardModel.HiggsAlgebraCovRealization.range_covBarH_le_centreEigenspace`**, a lemma, [line 79](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/Realization/HiggsCov/DerivSubmodule/Centre.lean#L79).
 
 > The conjugate Higgs symbols carry the sign `+1`, for the same reason.
 
@@ -66,7 +66,7 @@ lemma range_covBarH_le_centreEigenspace (n : ℕ) (l : Fin n → Fin 1 ⊕ Fin 3
 > The derivative submodule is the join of the two towers over the derivative slots, and an
 > eigenspace is closed under joins.
 
-**`StandardModel.HiggsAlgebraCovRealization.derivSubmodule_le_centreEigenspace`**, a lemma, [line 96](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/Realization/HiggsCov/DerivSubmodule/Centre.lean#L96).
+**`StandardModel.HiggsAlgebraCovRealization.derivSubmodule_le_centreEigenspace`**, a lemma, [line 96](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/Realization/HiggsCov/DerivSubmodule/Centre.lean#L96).
 
 > **The centre of `SL(2,ℂ)` acts on the Higgs derivative submodules by `+1`**, for any
 > number of covariant derivatives: the Higgs is a Lorentz scalar and the derivative slots are
@@ -84,4 +84,4 @@ lemma derivSubmodule_le_centreEigenspace (n : ℕ) :
 
 ## Sources
 
-- [PhyslibAlpha/Particles/StandardModel/Realization/HiggsCov/DerivSubmodule/Centre.lean at 2a1dfe43](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/Realization/HiggsCov/DerivSubmodule/Centre.lean)
+- [PhyslibAlpha/Particles/StandardModel/Realization/HiggsCov/DerivSubmodule/Centre.lean at 8c87bdfb](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/Realization/HiggsCov/DerivSubmodule/Centre.lean)

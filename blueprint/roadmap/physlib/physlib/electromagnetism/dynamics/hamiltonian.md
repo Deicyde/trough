@@ -8,7 +8,7 @@ proof: formalized
 
 # The Hamiltonian in electromagnetism
 
-The module `Physlib.Electromagnetism.Dynamics.Hamiltonian`, [Physlib/Electromagnetism/Dynamics/Hamiltonian.lean](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/Electromagnetism/Dynamics/Hamiltonian.lean): 8 declarations, 2 with a docstring.
+The module `Physlib.Electromagnetism.Dynamics.Hamiltonian`, [Physlib/Electromagnetism/Dynamics/Hamiltonian.lean](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Electromagnetism/Dynamics/Hamiltonian.lean): 8 declarations, 2 with a docstring.
 
 ## i. Overview
 
@@ -37,7 +37,7 @@ The module `Physlib.Electromagnetism.Dynamics.Hamiltonian`, [Physlib/Electromagn
 > `L(A, ∂ A)` as gradient of `v ↦ L(A + t v, ∂ (A + t v)) - t * L(A + v, ∂(A + v))` at `v = 0`
 > This is equivalent to `∂ L/∂ (∂_0 A)`.
 
-**`Electromagnetism.ElectromagneticPotential.canonicalMomentum`**, a def, [line 78](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/Electromagnetism/Dynamics/Hamiltonian.lean#L78).
+**`Electromagnetism.ElectromagneticPotential.canonicalMomentum`**, a def, [line 78](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Electromagnetism/Dynamics/Hamiltonian.lean#L78).
 
 > The canonical momentum associated with the lagrangian of an electromagnetic potential
 > and a Lorentz current density.
@@ -50,7 +50,7 @@ noncomputable def canonicalMomentum (𝓕 : FreeSpace) (A : ElectromagneticPoten
 
 ### A.1. The canonical momentum in terms of the kinetic term
 
-**`Electromagnetism.ElectromagneticPotential.canonicalMomentum_eq_gradient_kineticTerm`**, a lemma, [line 91](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/Electromagnetism/Dynamics/Hamiltonian.lean#L91).
+**`Electromagnetism.ElectromagneticPotential.canonicalMomentum_eq_gradient_kineticTerm`**, a lemma, [line 91](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Electromagnetism/Dynamics/Hamiltonian.lean#L91).
 
 ```lean
 lemma canonicalMomentum_eq_gradient_kineticTerm {d}
@@ -63,7 +63,7 @@ lemma canonicalMomentum_eq_gradient_kineticTerm {d}
 
 ### A.2. The canonical momentum in terms of the field strength tensor
 
-**`Electromagnetism.ElectromagneticPotential.canonicalMomentum_eq`**, a lemma, [line 129](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/Electromagnetism/Dynamics/Hamiltonian.lean#L129).
+**`Electromagnetism.ElectromagneticPotential.canonicalMomentum_eq`**, a lemma, [line 129](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Electromagnetism/Dynamics/Hamiltonian.lean#L129).
 
 ```lean
 lemma canonicalMomentum_eq {d} {𝓕 : FreeSpace} (A : ElectromagneticPotential d)
@@ -74,7 +74,7 @@ lemma canonicalMomentum_eq {d} {𝓕 : FreeSpace} (A : ElectromagneticPotential 
 
 ### A.3. The canonical momentum in terms of the electric field
 
-**`Electromagnetism.ElectromagneticPotential.canonicalMomentum_eq_electricField`**, a lemma, [line 159](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/Electromagnetism/Dynamics/Hamiltonian.lean#L159).
+**`Electromagnetism.ElectromagneticPotential.canonicalMomentum_eq_electricField`**, a lemma, [line 159](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Electromagnetism/Dynamics/Hamiltonian.lean#L159).
 
 ```lean
 lemma canonicalMomentum_eq_electricField {d} {𝓕 : FreeSpace} (A : ElectromagneticPotential d)
@@ -87,7 +87,7 @@ lemma canonicalMomentum_eq_electricField {d} {𝓕 : FreeSpace} (A : Electromagn
 
 ## B. The Hamiltonian
 
-**`Electromagnetism.ElectromagneticPotential.hamiltonian`**, a def, [line 184](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/Electromagnetism/Dynamics/Hamiltonian.lean#L184).
+**`Electromagnetism.ElectromagneticPotential.hamiltonian`**, a def, [line 184](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Electromagnetism/Dynamics/Hamiltonian.lean#L184).
 
 > The Hamiltonian associated with an electromagnetic potential
 > and a Lorentz current density.
@@ -99,7 +99,7 @@ noncomputable def hamiltonian (𝓕 : FreeSpace) (A : ElectromagneticPotential d
 
 ### B.1. The hamiltonian in terms of the vector potential
 
-**`Electromagnetism.ElectromagneticPotential.hamiltonian_eq_electricField_vectorPotential`**, a lemma, [line 195](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/Electromagnetism/Dynamics/Hamiltonian.lean#L195).
+**`Electromagnetism.ElectromagneticPotential.hamiltonian_eq_electricField_vectorPotential`**, a lemma, [line 195](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Electromagnetism/Dynamics/Hamiltonian.lean#L195).
 
 ```lean
 lemma hamiltonian_eq_electricField_vectorPotential {d} {𝓕 : FreeSpace}
@@ -110,7 +110,7 @@ lemma hamiltonian_eq_electricField_vectorPotential {d} {𝓕 : FreeSpace}
       (∂ₜ (A.vectorPotential 𝓕.c · x.space) (x.time 𝓕.c) i) - lagrangian 𝓕 A J x
 ```
 
-**`Electromagnetism.ElectromagneticPotential.hamiltonian_eq_electricField_scalarPotential`**, a lemma, [line 218](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/Electromagnetism/Dynamics/Hamiltonian.lean#L218).
+**`Electromagnetism.ElectromagneticPotential.hamiltonian_eq_electricField_scalarPotential`**, a lemma, [line 218](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Electromagnetism/Dynamics/Hamiltonian.lean#L218).
 
 ```lean
 lemma hamiltonian_eq_electricField_scalarPotential {d} {𝓕 : FreeSpace}
@@ -125,7 +125,7 @@ lemma hamiltonian_eq_electricField_scalarPotential {d} {𝓕 : FreeSpace}
 
 ### B.2. The hamiltonian in terms of the electric and magnetic fields
 
-**`Electromagnetism.ElectromagneticPotential.hamiltonian_eq_electricField_magneticField`**, a lemma, [line 247](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/Electromagnetism/Dynamics/Hamiltonian.lean#L247).
+**`Electromagnetism.ElectromagneticPotential.hamiltonian_eq_electricField_magneticField`**, a lemma, [line 247](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Electromagnetism/Dynamics/Hamiltonian.lean#L247).
 
 ```lean
 lemma hamiltonian_eq_electricField_magneticField (A : ElectromagneticPotential d)
@@ -145,4 +145,4 @@ lemma hamiltonian_eq_electricField_magneticField (A : ElectromagneticPotential d
 
 ## Sources
 
-- [Physlib/Electromagnetism/Dynamics/Hamiltonian.lean at 2a1dfe43](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/Electromagnetism/Dynamics/Hamiltonian.lean)
+- [Physlib/Electromagnetism/Dynamics/Hamiltonian.lean at 8c87bdfb](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Electromagnetism/Dynamics/Hamiltonian.lean)

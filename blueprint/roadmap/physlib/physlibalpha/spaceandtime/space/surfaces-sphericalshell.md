@@ -8,7 +8,7 @@ proof: formalized
 
 # Spherical surfaces on Space
 
-The module `PhyslibAlpha.SpaceAndTime.Space.Surfaces.SphericalShell`, [PhyslibAlpha/SpaceAndTime/Space/Surfaces/SphericalShell.lean](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/SpaceAndTime/Space/Surfaces/SphericalShell.lean): 10 declarations, 3 with a docstring.
+The module `PhyslibAlpha.SpaceAndTime.Space.Surfaces.SphericalShell`, [PhyslibAlpha/SpaceAndTime/Space/Surfaces/SphericalShell.lean](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/SpaceAndTime/Space/Surfaces/SphericalShell.lean): 10 declarations, 3 with a docstring.
 
 > The unit sphere in `Space d` with its measure and the distribution of integration over it.
 
@@ -31,7 +31,7 @@ The module `PhyslibAlpha.SpaceAndTime.Space.Surfaces.SphericalShell`, [PhyslibAl
 
 ## A. The definition of the spherical shell surface
 
-**`Space.sphericalShell`**, a def, [line 58](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/SpaceAndTime/Space/Surfaces/SphericalShell.lean#L58).
+**`Space.sphericalShell`**, a def, [line 58](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/SpaceAndTime/Space/Surfaces/SphericalShell.lean#L58).
 
 > The inclusion into `Space d` of its unit sphere `S^{d-1}` (the subtype coercion `x ↦ x.1`).
 
@@ -39,25 +39,25 @@ The module `PhyslibAlpha.SpaceAndTime.Space.Surfaces.SphericalShell`, [PhyslibAl
 def sphericalShell (d : ℕ) : Metric.sphere (0 : Space d) 1 → Space d
 ```
 
-**`Space.sphericalShell_injective`**, a lemma, [line 60](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/SpaceAndTime/Space/Surfaces/SphericalShell.lean#L60).
+**`Space.sphericalShell_injective`**, a lemma, [line 60](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/SpaceAndTime/Space/Surfaces/SphericalShell.lean#L60).
 
 ```lean
 lemma sphericalShell_injective (d : ℕ) : Function.Injective (sphericalShell d)
 ```
 
-**`Space.sphericalShell_continuous`**, a lemma, [line 65](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/SpaceAndTime/Space/Surfaces/SphericalShell.lean#L65).
+**`Space.sphericalShell_continuous`**, a lemma, [line 65](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/SpaceAndTime/Space/Surfaces/SphericalShell.lean#L65).
 
 ```lean
 lemma sphericalShell_continuous (d : ℕ) : Continuous (sphericalShell d)
 ```
 
-**`Space.sphericalShell_measurableEmbedding`**, a lemma, [line 67](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/SpaceAndTime/Space/Surfaces/SphericalShell.lean#L67).
+**`Space.sphericalShell_measurableEmbedding`**, a lemma, [line 67](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/SpaceAndTime/Space/Surfaces/SphericalShell.lean#L67).
 
 ```lean
 lemma sphericalShell_measurableEmbedding (d : ℕ) : MeasurableEmbedding (sphericalShell d)
 ```
 
-**`Space.norm_sphericalShell`**, a lemma, [line 73](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/SpaceAndTime/Space/Surfaces/SphericalShell.lean#L73).
+**`Space.norm_sphericalShell`**, a lemma, [line 73](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/SpaceAndTime/Space/Surfaces/SphericalShell.lean#L73).
 
 ```lean
 lemma norm_sphericalShell (d : ℕ) (x : Metric.sphere (0 : Space d) 1) :
@@ -66,7 +66,7 @@ lemma norm_sphericalShell (d : ℕ) (x : Metric.sphere (0 : Space d) 1) :
 
 ## B. The measure associated with the spherical shell
 
-**`Space.sphericalShellMeasure`**, a def, [line 84](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/SpaceAndTime/Space/Surfaces/SphericalShell.lean#L84).
+**`Space.sphericalShellMeasure`**, a def, [line 84](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/SpaceAndTime/Space/Surfaces/SphericalShell.lean#L84).
 
 > The measure on `Space d` corresponding to integration around a spherical shell.
 
@@ -74,7 +74,7 @@ lemma norm_sphericalShell (d : ℕ) (x : Metric.sphere (0 : Space d) 1) :
 def sphericalShellMeasure (d : ℕ) : Measure (Space d)
 ```
 
-**`Space.sphericalShellMeasure_hasTemperateGrowth`**, an instance, [line 87](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/SpaceAndTime/Space/Surfaces/SphericalShell.lean#L87).
+**`Space.sphericalShellMeasure_hasTemperateGrowth`**, an instance, [line 87](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/SpaceAndTime/Space/Surfaces/SphericalShell.lean#L87).
 
 ```lean
 instance sphericalShellMeasure_hasTemperateGrowth (d : ℕ) :
@@ -83,7 +83,7 @@ instance sphericalShellMeasure_hasTemperateGrowth (d : ℕ) :
 
 ## C. The distribution associated with the spherical shell
 
-**`Space.sphericalShellDist`**, a def, [line 104](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/SpaceAndTime/Space/Surfaces/SphericalShell.lean#L104).
+**`Space.sphericalShellDist`**, a def, [line 104](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/SpaceAndTime/Space/Surfaces/SphericalShell.lean#L104).
 
 > The distribution associated with a spherical shell.
 > One can roughly think of this distribution as the distribution which
@@ -94,14 +94,14 @@ instance sphericalShellMeasure_hasTemperateGrowth (d : ℕ) :
 def sphericalShellDist (d : ℕ) : (Space d) →d[ℝ] ℝ
 ```
 
-**`Space.sphericalShellDist_apply_eq_integral_sphericalShellMeasure`**, a lemma, [line 108](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/SpaceAndTime/Space/Surfaces/SphericalShell.lean#L108).
+**`Space.sphericalShellDist_apply_eq_integral_sphericalShellMeasure`**, a lemma, [line 108](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/SpaceAndTime/Space/Surfaces/SphericalShell.lean#L108).
 
 ```lean
 lemma sphericalShellDist_apply_eq_integral_sphericalShellMeasure (d : ℕ) (f : 𝓢(Space d, ℝ)) :
     sphericalShellDist d f = ∫ x, f x ∂sphericalShellMeasure d
 ```
 
-**`Space.sphericalShellDist_apply_eq_integral_sphere_volume`**, a lemma, [line 112](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/SpaceAndTime/Space/Surfaces/SphericalShell.lean#L112).
+**`Space.sphericalShellDist_apply_eq_integral_sphere_volume`**, a lemma, [line 112](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/SpaceAndTime/Space/Surfaces/SphericalShell.lean#L112).
 
 ```lean
 lemma sphericalShellDist_apply_eq_integral_sphere_volume (d : ℕ) (f : 𝓢(Space d, ℝ)) :
@@ -116,4 +116,4 @@ lemma sphericalShellDist_apply_eq_integral_sphere_volume (d : ℕ) (f : 𝓢(Spa
 
 ## Sources
 
-- [PhyslibAlpha/SpaceAndTime/Space/Surfaces/SphericalShell.lean at 2a1dfe43](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/SpaceAndTime/Space/Surfaces/SphericalShell.lean)
+- [PhyslibAlpha/SpaceAndTime/Space/Surfaces/SphericalShell.lean at 8c87bdfb](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/SpaceAndTime/Space/Surfaces/SphericalShell.lean)

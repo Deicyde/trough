@@ -1,6 +1,6 @@
 # ClassicalMechanics
 
-The folder [Physlib/ClassicalMechanics/](https://github.com/leanprover-community/physlib/tree/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/ClassicalMechanics): 2 modules, an article each, in path order; then 12 folders below it, a page each, 50 modules in all.
+The folder [Physlib/ClassicalMechanics/](https://github.com/leanprover-community/physlib/tree/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/ClassicalMechanics): 2 modules, an article each, in path order; then 13 folders below it, a page each, 53 modules in all.
 
 - [A. Euler–Lagrange equations](eulerlagrange.md)
 - [Forces](force.md)
@@ -13,6 +13,7 @@ The folder [Physlib/ClassicalMechanics/](https://github.com/leanprover-community
 - [Mass](mass/README.md)
 - [OrbitalMechanics](orbitalmechanics/README.md)
 - [Pendulum](pendulum/README.md)
+- [PhaseSpace](phasespace/README.md)
 - [PointParticle](pointparticle/README.md)
 - [RigidBody](rigidbody/README.md)
 - [WaveEquation](waveequation/README.md)

@@ -8,11 +8,11 @@ proof: formalized
 
 # Physlib.Meta.AllFilePaths
 
-The module `Physlib.Meta.AllFilePaths`, [Physlib/Meta/AllFilePaths.lean](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/Meta/AllFilePaths.lean): 4 declarations, 4 with a docstring.
+The module `Physlib.Meta.AllFilePaths`, [Physlib/Meta/AllFilePaths.lean](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Meta/AllFilePaths.lean): 4 declarations, 4 with a docstring.
 
 ## Getting an array of all file paths in Physlib.
 
-**`allFilePaths.go`**, a def, [line 19](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/Meta/AllFilePaths.lean#L19).
+**`allFilePaths.go`**, a def, [line 19](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Meta/AllFilePaths.lean#L19).
 
 > The recursive function underlying `allFilePaths`.
 
@@ -21,7 +21,7 @@ partial def allFilePaths.go (prev : Array FilePath)
   (root : String) (path : FilePath) : IO (Array FilePath)
 ```
 
-**`getFilePaths`**, a def, [line 30](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/Meta/AllFilePaths.lean#L30).
+**`getFilePaths`**, a def, [line 30](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Meta/AllFilePaths.lean#L30).
 
 > Gets an array of all file paths in the supplied directory.
 
@@ -29,7 +29,7 @@ partial def allFilePaths.go (prev : Array FilePath)
 partial def getFilePaths (moduleName : String) : IO (Array FilePath)
 ```
 
-**`allFilePaths`**, a def, [line 34](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/Meta/AllFilePaths.lean#L34).
+**`allFilePaths`**, a def, [line 34](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Meta/AllFilePaths.lean#L34).
 
 > Gets an array of all file paths in `Physlib`.
 
@@ -37,7 +37,7 @@ partial def getFilePaths (moduleName : String) : IO (Array FilePath)
 partial def allFilePaths : IO (Array FilePath)
 ```
 
-**`allPhyslibModules`**, a def, [line 38](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/Meta/AllFilePaths.lean#L38).
+**`allPhyslibModules`**, a def, [line 38](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Meta/AllFilePaths.lean#L38).
 
 > Gets an array of all module names in `Physlib`.
 
@@ -51,4 +51,4 @@ Its declarations' statements use no declaration of another module with an articl
 
 ## Sources
 
-- [Physlib/Meta/AllFilePaths.lean at 2a1dfe43](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/Meta/AllFilePaths.lean)
+- [Physlib/Meta/AllFilePaths.lean at 8c87bdfb](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Meta/AllFilePaths.lean)

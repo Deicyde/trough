@@ -8,7 +8,7 @@ proof: formalized
 
 # Geometric kinetic energy of the harmonic oscillator
 
-The module `Physlib.ClassicalMechanics.HarmonicOscillator.Geometric.KineticEnergy`, [Physlib/ClassicalMechanics/HarmonicOscillator/Geometric/KineticEnergy.lean](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/ClassicalMechanics/HarmonicOscillator/Geometric/KineticEnergy.lean): 12 declarations, 12 with a docstring.
+The module `Physlib.ClassicalMechanics.HarmonicOscillator.Geometric.KineticEnergy`, [Physlib/ClassicalMechanics/HarmonicOscillator/Geometric/KineticEnergy.lean](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/ClassicalMechanics/HarmonicOscillator/Geometric/KineticEnergy.lean): 12 declarations, 12 with a docstring.
 
 ## i. Overview
 
@@ -48,7 +48,7 @@ The module `Physlib.ClassicalMechanics.HarmonicOscillator.Geometric.KineticEnerg
 > coordinates. Its positivity, boundedness, and smoothness properties are established here
 > before assembling the Riemannian metric.
 
-**`ClassicalMechanics.HarmonicOscillator.massMetricVal`**, a def, [line 82](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/ClassicalMechanics/HarmonicOscillator/Geometric/KineticEnergy.lean#L82).
+**`ClassicalMechanics.HarmonicOscillator.massMetricVal`**, a def, [line 82](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/ClassicalMechanics/HarmonicOscillator/Geometric/KineticEnergy.lean#L82).
 
 > The value of the oscillator mass metric at `q`. It is the mass-scaled pullback of the
 > Euclidean inner product along `tangentCoord q`, so
@@ -60,7 +60,7 @@ noncomputable def massMetricVal (S : HarmonicOscillator) (q : ConfigurationSpace
       TangentSpace 𝓘(ℝ, EuclideanSpace ℝ (Fin 1)) q →L[ℝ] ℝ
 ```
 
-**`ClassicalMechanics.HarmonicOscillator.massMetricVal_apply`**, a lemma, [line 90](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/ClassicalMechanics/HarmonicOscillator/Geometric/KineticEnergy.lean#L90).
+**`ClassicalMechanics.HarmonicOscillator.massMetricVal_apply`**, a lemma, [line 90](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/ClassicalMechanics/HarmonicOscillator/Geometric/KineticEnergy.lean#L90).
 
 > Applying the mass metric value to two tangent vectors gives the mass-scaled Euclidean
 > inner product of their coordinate representatives.
@@ -72,7 +72,7 @@ lemma massMetricVal_apply
     massMetricVal S q v w = S.m * ⟪tangentCoord q v, tangentCoord q w⟫_ℝ
 ```
 
-**`ClassicalMechanics.HarmonicOscillator.tangentCoord_ne_zero`**, a lemma, [line 97](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/ClassicalMechanics/HarmonicOscillator/Geometric/KineticEnergy.lean#L97).
+**`ClassicalMechanics.HarmonicOscillator.tangentCoord_ne_zero`**, a lemma, [line 97](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/ClassicalMechanics/HarmonicOscillator/Geometric/KineticEnergy.lean#L97).
 
 > A nonzero tangent vector has nonzero coordinate representative under `tangentCoord`.
 
@@ -82,7 +82,7 @@ lemma tangentCoord_ne_zero {q : ConfigurationSpace}
     (hv : v ≠ 0) : tangentCoord q v ≠ 0
 ```
 
-**`ClassicalMechanics.HarmonicOscillator.massMetricVal_pos`**, a lemma, [line 105](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/ClassicalMechanics/HarmonicOscillator/Geometric/KineticEnergy.lean#L105).
+**`ClassicalMechanics.HarmonicOscillator.massMetricVal_pos`**, a lemma, [line 105](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/ClassicalMechanics/HarmonicOscillator/Geometric/KineticEnergy.lean#L105).
 
 > The oscillator mass metric is positive on nonzero tangent vectors.
 
@@ -93,7 +93,7 @@ lemma massMetricVal_pos
     0 < massMetricVal S q v v
 ```
 
-**`ClassicalMechanics.HarmonicOscillator.massMetricVal_isVonNBounded`**, a lemma, [line 113](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/ClassicalMechanics/HarmonicOscillator/Geometric/KineticEnergy.lean#L113).
+**`ClassicalMechanics.HarmonicOscillator.massMetricVal_isVonNBounded`**, a lemma, [line 113](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/ClassicalMechanics/HarmonicOscillator/Geometric/KineticEnergy.lean#L113).
 
 > The mass metric unit ball is bounded in the model norm.
 
@@ -104,7 +104,7 @@ lemma massMetricVal_isVonNBounded
       {v : TangentSpace 𝓘(ℝ, EuclideanSpace ℝ (Fin 1)) q | massMetricVal S q v v < 1}
 ```
 
-**`ClassicalMechanics.HarmonicOscillator.massMetricVal_contMDiff`**, a lemma, [line 133](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/ClassicalMechanics/HarmonicOscillator/Geometric/KineticEnergy.lean#L133).
+**`ClassicalMechanics.HarmonicOscillator.massMetricVal_contMDiff`**, a lemma, [line 133](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/ClassicalMechanics/HarmonicOscillator/Geometric/KineticEnergy.lean#L133).
 
 > The oscillator mass metric is constant in the global tangent-bundle chart.
 
@@ -128,7 +128,7 @@ lemma massMetricVal_contMDiff (S : HarmonicOscillator) :
 > The pointwise bilinear forms assemble into a `ContMDiffRiemannianMetric` on the oscillator
 > configuration space.
 
-**`ClassicalMechanics.HarmonicOscillator.massRiemannianMetric`**, a def, [line 161](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/ClassicalMechanics/HarmonicOscillator/Geometric/KineticEnergy.lean#L161).
+**`ClassicalMechanics.HarmonicOscillator.massRiemannianMetric`**, a def, [line 161](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/ClassicalMechanics/HarmonicOscillator/Geometric/KineticEnergy.lean#L161).
 
 > The mass-scaled Euclidean inner product as a Riemannian metric on the oscillator
 > configuration space.
@@ -145,7 +145,7 @@ noncomputable def massRiemannianMetric (S : HarmonicOscillator) :
 > The geometric kinetic energy is defined directly from the oscillator's mass Riemannian
 > metric.
 
-**`ClassicalMechanics.HarmonicOscillator.geometricKineticEnergy`**, a def, [line 180](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/ClassicalMechanics/HarmonicOscillator/Geometric/KineticEnergy.lean#L180).
+**`ClassicalMechanics.HarmonicOscillator.geometricKineticEnergy`**, a def, [line 180](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/ClassicalMechanics/HarmonicOscillator/Geometric/KineticEnergy.lean#L180).
 
 > The defining formula for the oscillator geometric kinetic energy.
 
@@ -155,7 +155,7 @@ noncomputable def geometricKineticEnergy
     (v : TangentSpace 𝓘(ℝ, EuclideanSpace ℝ (Fin 1)) q) : ℝ
 ```
 
-**`ClassicalMechanics.HarmonicOscillator.geometricKineticEnergy_eq`**, a lemma, [line 187](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/ClassicalMechanics/HarmonicOscillator/Geometric/KineticEnergy.lean#L187).
+**`ClassicalMechanics.HarmonicOscillator.geometricKineticEnergy_eq`**, a lemma, [line 187](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/ClassicalMechanics/HarmonicOscillator/Geometric/KineticEnergy.lean#L187).
 
 > The geometric kinetic energy is one half the mass Riemannian metric applied to `v`
 > twice.
@@ -172,7 +172,7 @@ lemma geometricKineticEnergy_eq
 
 > The coordinate identities below recover the usual mass-scaled formula for kinetic energy.
 
-**`ClassicalMechanics.HarmonicOscillator.massRiemannianMetric_pos`**, a lemma, [line 201](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/ClassicalMechanics/HarmonicOscillator/Geometric/KineticEnergy.lean#L201).
+**`ClassicalMechanics.HarmonicOscillator.massRiemannianMetric_pos`**, a lemma, [line 201](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/ClassicalMechanics/HarmonicOscillator/Geometric/KineticEnergy.lean#L201).
 
 > The oscillator mass Riemannian metric is positive definite.
 
@@ -184,7 +184,7 @@ lemma massRiemannianMetric_pos
     0 < S.massRiemannianMetric.inner q v v
 ```
 
-**`ClassicalMechanics.HarmonicOscillator.massRiemannianMetric_inner_apply`**, a lemma, [line 210](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/ClassicalMechanics/HarmonicOscillator/Geometric/KineticEnergy.lean#L210).
+**`ClassicalMechanics.HarmonicOscillator.massRiemannianMetric_inner_apply`**, a lemma, [line 210](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/ClassicalMechanics/HarmonicOscillator/Geometric/KineticEnergy.lean#L210).
 
 > In the global coordinate, the oscillator mass metric is the mass-scaled Euclidean inner
 > product of coordinate representatives.
@@ -197,7 +197,7 @@ lemma massRiemannianMetric_inner_apply
       S.m * ⟪tangentCoord q v, tangentCoord q w⟫_ℝ
 ```
 
-**`ClassicalMechanics.HarmonicOscillator.geometricKineticEnergy_massMetric_eq`**, a lemma, [line 219](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/ClassicalMechanics/HarmonicOscillator/Geometric/KineticEnergy.lean#L219).
+**`ClassicalMechanics.HarmonicOscillator.geometricKineticEnergy_massMetric_eq`**, a lemma, [line 219](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/ClassicalMechanics/HarmonicOscillator/Geometric/KineticEnergy.lean#L219).
 
 > The metric-induced kinetic energy for the mass metric has the standard
 > harmonic-oscillator coordinate form.
@@ -217,4 +217,4 @@ lemma geometricKineticEnergy_massMetric_eq
 
 ## Sources
 
-- [Physlib/ClassicalMechanics/HarmonicOscillator/Geometric/KineticEnergy.lean at 2a1dfe43](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/ClassicalMechanics/HarmonicOscillator/Geometric/KineticEnergy.lean)
+- [Physlib/ClassicalMechanics/HarmonicOscillator/Geometric/KineticEnergy.lean at 8c87bdfb](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/ClassicalMechanics/HarmonicOscillator/Geometric/KineticEnergy.lean)

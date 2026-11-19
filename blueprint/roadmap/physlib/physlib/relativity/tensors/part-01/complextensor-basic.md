@@ -8,11 +8,11 @@ proof: formalized
 
 # Physlib.Relativity.Tensors.ComplexTensor.Basic
 
-The module `Physlib.Relativity.Tensors.ComplexTensor.Basic`, [Physlib/Relativity/Tensors/ComplexTensor/Basic.lean](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/Relativity/Tensors/ComplexTensor/Basic.lean): 21 declarations (2 instances with no name), 15 with a docstring.
+The module `Physlib.Relativity.Tensors.ComplexTensor.Basic`, [Physlib/Relativity/Tensors/ComplexTensor/Basic.lean](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Relativity/Tensors/ComplexTensor/Basic.lean): 21 declarations (2 instances with no name), 15 with a docstring.
 
 ## Complex Lorentz tensors
 
-**`complexLorentzTensor.Color`**, an inductive, [line 27](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/Relativity/Tensors/ComplexTensor/Basic.lean#L27).
+**`complexLorentzTensor.Color`**, an inductive, [line 27](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Relativity/Tensors/ComplexTensor/Basic.lean#L27).
 
 > The colors associated with complex representations of SL(2, ℂ) of interest to physics.
 
@@ -33,7 +33,7 @@ inductive Color
 deriving Fintype
 ```
 
-**An instance with no name**, [line 43](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/Relativity/Tensors/ComplexTensor/Basic.lean#L43).
+**An instance with no name**, [line 43](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Relativity/Tensors/ComplexTensor/Basic.lean#L43).
 
 > Color for complex Lorentz tensors is decidable.
 
@@ -41,7 +41,7 @@ deriving Fintype
 instance : DecidableEq Color
 ```
 
-**`complexLorentzTensor.repDim`**, an abbrev, [line 84](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/Relativity/Tensors/ComplexTensor/Basic.lean#L84).
+**`complexLorentzTensor.repDim`**, an abbrev, [line 84](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Relativity/Tensors/ComplexTensor/Basic.lean#L84).
 
 > The dimensions of each of the different types of complex Lorentz vector space.
 
@@ -49,7 +49,7 @@ instance : DecidableEq Color
 abbrev repDim (c : Color) : ℕ
 ```
 
-**`complexLorentzTensor.basisIdx`**, an abbrev, [line 95](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/Relativity/Tensors/ComplexTensor/Basic.lean#L95).
+**`complexLorentzTensor.basisIdx`**, an abbrev, [line 95](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Relativity/Tensors/ComplexTensor/Basic.lean#L95).
 
 > The type indexing the standard basis of each complex Lorentz vector space: `Fin 2` for the
 > Weyl colors and `Fin 1 ⊕ Fin 3` for the vector colors.
@@ -58,19 +58,19 @@ abbrev repDim (c : Color) : ℕ
 abbrev basisIdx : Color → Type
 ```
 
-**`complexLorentzTensor.basisIdxFintype`**, an instance, [line 103](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/Relativity/Tensors/ComplexTensor/Basic.lean#L103).
+**`complexLorentzTensor.basisIdxFintype`**, an instance, [line 103](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Relativity/Tensors/ComplexTensor/Basic.lean#L103).
 
 ```lean
 instance basisIdxFintype : ∀ c, Fintype (basisIdx c)
 ```
 
-**`complexLorentzTensor.basisIdxDecidableEq`**, an instance, [line 111](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/Relativity/Tensors/ComplexTensor/Basic.lean#L111).
+**`complexLorentzTensor.basisIdxDecidableEq`**, an instance, [line 111](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Relativity/Tensors/ComplexTensor/Basic.lean#L111).
 
 ```lean
 instance basisIdxDecidableEq : ∀ c, DecidableEq (basisIdx c)
 ```
 
-**`complexLorentzTensor.modules`**, an abbrev, [line 120](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/Relativity/Tensors/ComplexTensor/Basic.lean#L120).
+**`complexLorentzTensor.modules`**, an abbrev, [line 120](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Relativity/Tensors/ComplexTensor/Basic.lean#L120).
 
 > The modules associated with each of the different types of complex Lorentz vector space.
 
@@ -78,19 +78,19 @@ instance basisIdxDecidableEq : ∀ c, DecidableEq (basisIdx c)
 abbrev modules : Color → Type
 ```
 
-**`complexLorentzTensor.modulesAddCommGroup`**, an instance, [line 128](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/Relativity/Tensors/ComplexTensor/Basic.lean#L128).
+**`complexLorentzTensor.modulesAddCommGroup`**, an instance, [line 128](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Relativity/Tensors/ComplexTensor/Basic.lean#L128).
 
 ```lean
 instance modulesAddCommGroup : ∀ c, AddCommGroup (modules c)
 ```
 
-**`complexLorentzTensor.modulesModule`**, an instance, [line 136](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/Relativity/Tensors/ComplexTensor/Basic.lean#L136).
+**`complexLorentzTensor.modulesModule`**, an instance, [line 136](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Relativity/Tensors/ComplexTensor/Basic.lean#L136).
 
 ```lean
 noncomputable instance modulesModule : ∀ c, Module ℂ (modules c)
 ```
 
-**`complexLorentzTensor`**, a def, [line 150](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/Relativity/Tensors/ComplexTensor/Basic.lean#L150).
+**`complexLorentzTensor`**, a def, [line 150](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Relativity/Tensors/ComplexTensor/Basic.lean#L150).
 
 > The tensor structure for complex Lorentz tensors.
 
@@ -120,7 +120,7 @@ def complexLorentzTensor : TensorSpecies ℂ complexLorentzTensor.Color SL(2, �
     | Color.down => Lorentz.ComplexCoVector.basis)
 ```
 
-**`complexLorentzTensor.instWithMetric`**, an instance, [line 235](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/Relativity/Tensors/ComplexTensor/Basic.lean#L235).
+**`complexLorentzTensor.instWithMetric`**, an instance, [line 235](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Relativity/Tensors/ComplexTensor/Basic.lean#L235).
 
 > The metrics of the complex Lorentz tensors: `ε` on the four Weyl colors and `η` on the two
 > vector colors.
@@ -129,7 +129,7 @@ def complexLorentzTensor : TensorSpecies ℂ complexLorentzTensor.Color SL(2, �
 instance instWithMetric : complexLorentzTensor.WithMetric
 ```
 
-**`complexLorentzTensor.basis`**, an abbrev, [line 257](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/Relativity/Tensors/ComplexTensor/Basic.lean#L257).
+**`complexLorentzTensor.basis`**, an abbrev, [line 257](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Relativity/Tensors/ComplexTensor/Basic.lean#L257).
 
 > The basis associated with each of the different types of complex Lorentz vector space.
 
@@ -137,7 +137,7 @@ instance instWithMetric : complexLorentzTensor.WithMetric
 abbrev basis (c : Color) : Module.Basis (basisIdx c) ℂ (modules c)
 ```
 
-**`complexLorentzTensor.rep`**, an abbrev, [line 267](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/Relativity/Tensors/ComplexTensor/Basic.lean#L267).
+**`complexLorentzTensor.rep`**, an abbrev, [line 267](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Relativity/Tensors/ComplexTensor/Basic.lean#L267).
 
 > The reps associated with each of the different types of complex Lorentz vector space.
 
@@ -145,14 +145,14 @@ abbrev basis (c : Color) : Module.Basis (basisIdx c) ℂ (modules c)
 abbrev rep (c : Color) : Representation ℂ SL(2, ℂ) (modules c)
 ```
 
-**`complexLorentzTensor.repDim_tau`**, a lemma, [line 287](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/Relativity/Tensors/ComplexTensor/Basic.lean#L287).
+**`complexLorentzTensor.repDim_tau`**, a lemma, [line 287](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Relativity/Tensors/ComplexTensor/Basic.lean#L287).
 
 ```lean
 lemma repDim_tau {c : complexLorentzTensor.Color} :
     repDim (complexLorentzTensor.τ c) = repDim c
 ```
 
-**`complexLorentzTensor.basisIdxTauEquiv`**, a def, [line 292](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/Relativity/Tensors/ComplexTensor/Basic.lean#L292).
+**`complexLorentzTensor.basisIdxTauEquiv`**, a def, [line 292](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Relativity/Tensors/ComplexTensor/Basic.lean#L292).
 
 > A color and its dual carry the same basis index type.
 
@@ -161,7 +161,7 @@ def basisIdxTauEquiv : (c : complexLorentzTensor.Color) →
     basisIdx (complexLorentzTensor.τ c) ≃ basisIdx c
 ```
 
-**`complexLorentzTensor.isContrDualMatching_basisIdxTauEquiv`**, a lemma, [line 303](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/Relativity/Tensors/ComplexTensor/Basic.lean#L303).
+**`complexLorentzTensor.isContrDualMatching_basisIdxTauEquiv`**, a lemma, [line 303](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Relativity/Tensors/ComplexTensor/Basic.lean#L303).
 
 > At every complex Lorentz color, the bases at the color and its dual are dual bases, with
 > labels matched by the identity.
@@ -171,7 +171,7 @@ lemma isContrDualMatching_basisIdxTauEquiv (c : complexLorentzTensor.Color) :
     IsContrDualMatching complexLorentzTensor c (basisIdxTauEquiv c)
 ```
 
-**An instance with no name**, [line 316](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/Relativity/Tensors/ComplexTensor/Basic.lean#L316).
+**An instance with no name**, [line 316](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Relativity/Tensors/ComplexTensor/Basic.lean#L316).
 
 > Complex Lorentz tensors have dual bases under contraction, with the identity matching.
 
@@ -179,7 +179,7 @@ lemma isContrDualMatching_basisIdxTauEquiv (c : complexLorentzTensor.Color) :
 instance : HasContrDualBases complexLorentzTensor
 ```
 
-**`complexLorentzTensor.contrDualIdxEquiv_eq_basisIdxTauEquiv`**, a lemma, [line 321](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/Relativity/Tensors/ComplexTensor/Basic.lean#L321).
+**`complexLorentzTensor.contrDualIdxEquiv_eq_basisIdxTauEquiv`**, a lemma, [line 321](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Relativity/Tensors/ComplexTensor/Basic.lean#L321).
 
 > The dual-label matching of complex Lorentz tensors is the identity.
 
@@ -188,7 +188,7 @@ lemma contrDualIdxEquiv_eq_basisIdxTauEquiv (c : complexLorentzTensor.Color) :
     HasContrDualBases.contrDualIdxEquiv complexLorentzTensor c = basisIdxTauEquiv c
 ```
 
-**`complexLorentzTensor.contrPCoeff_basis`**, a lemma, [line 326](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/Relativity/Tensors/ComplexTensor/Basic.lean#L326).
+**`complexLorentzTensor.contrPCoeff_basis`**, a lemma, [line 326](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Relativity/Tensors/ComplexTensor/Basic.lean#L326).
 
 ```lean
 lemma contrPCoeff_basis {n : ℕ} {c : Fin n → complexLorentzTensor.Color} (i j : Fin n)
@@ -198,7 +198,7 @@ lemma contrPCoeff_basis {n : ℕ} {c : Fin n → complexLorentzTensor.Color} (i 
       if b i = basisIdxTauEquiv (c i) (basisIdxCongr hij.2.symm (b j)) then 1 else 0
 ```
 
-**`complexLorentzTensor.Color.bar`**, a def, [line 334](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/Relativity/Tensors/ComplexTensor/Basic.lean#L334).
+**`complexLorentzTensor.Color.bar`**, a def, [line 334](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Relativity/Tensors/ComplexTensor/Basic.lean#L334).
 
 > Complex conjugation of colours: it swaps handedness and fixes the vector colours.
 
@@ -206,7 +206,7 @@ lemma contrPCoeff_basis {n : ℕ} {c : Fin n → complexLorentzTensor.Color} (i 
 def Color.bar : Color → Color
 ```
 
-**`complexLorentzConjTensor`**, a def, [line 347](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/Relativity/Tensors/ComplexTensor/Basic.lean#L347).
+**`complexLorentzConjTensor`**, a def, [line 347](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Relativity/Tensors/ComplexTensor/Basic.lean#L347).
 
 > The complex Lorentz tensors as a conjugation species: conjugation swaps left- and
 > right-handed Weyl colours and fixes the vector colours.
@@ -223,4 +223,4 @@ def complexLorentzConjTensor : ConjTensorSpecies ℂ Color SL(2, ℂ) modules
 
 ## Sources
 
-- [Physlib/Relativity/Tensors/ComplexTensor/Basic.lean at 2a1dfe43](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/Relativity/Tensors/ComplexTensor/Basic.lean)
+- [Physlib/Relativity/Tensors/ComplexTensor/Basic.lean at 8c87bdfb](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Relativity/Tensors/ComplexTensor/Basic.lean)

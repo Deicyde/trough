@@ -1,8 +1,8 @@
 # Operators
 
-The folder [Physlib/QuantumMechanics/Operators/](https://github.com/leanprover-community/physlib/tree/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/QuantumMechanics/Operators): 17 modules, an article each, in path order; then 1 folder below it, a page each, 21 modules in all.
+The folder [Physlib/QuantumMechanics/Operators/](https://github.com/leanprover-community/physlib/tree/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/QuantumMechanics/Operators): 17 modules, an article each, in path order; then 1 folder below it, a page each, 21 modules in all.
 
-The repository's API map for this folder, *Operator algebra* ([Physlib/QuantumMechanics/Operators/API-map.md](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/QuantumMechanics/Operators/API-map.md)): its Content section, with the sentences it marks as not yet formalized left out (…). A citation \[n\] links the module its n-th Lean reference names.
+The repository's API map for this folder, *Operator algebra* ([Physlib/QuantumMechanics/Operators/API-map.md](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/QuantumMechanics/Operators/API-map.md)): its Content section, with the sentences it marks as not yet formalized left out (…). A citation \[n\] links the module its n-th Lean reference names.
 
 *Content (Alpha)*
 
@@ -62,11 +62,11 @@ Its references:
 - [Unbounded operators (Operators/Unbounded)](unbounded.md)
 - [Uncertainty bounds for partial linear maps](uncertainty.md)
 
-Modules in [AngularMomentum/](https://github.com/leanprover-community/physlib/tree/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/QuantumMechanics/Operators/AngularMomentum):
+Modules in [AngularMomentum/](https://github.com/leanprover-community/physlib/tree/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/QuantumMechanics/Operators/AngularMomentum):
 
 - [Three-dimensional angular momentum](angularmomentum-dimthree.md)
 
-Modules in [OneDimension/](https://github.com/leanprover-community/physlib/tree/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/QuantumMechanics/Operators/OneDimension):
+Modules in [OneDimension/](https://github.com/leanprover-community/physlib/tree/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/QuantumMechanics/Operators/OneDimension):
 
 - [Commutation relations (OneDimension/Commutation)](onedimension-commutation.md)
 - [Momentum operator](onedimension-momentum.md)
@@ -74,7 +74,7 @@ Modules in [OneDimension/](https://github.com/leanprover-community/physlib/tree/
 - [Position operator](onedimension-position.md)
 - [Unbounded operators (OneDimension/Unbounded)](onedimension-unbounded.md)
 
-Modules in [StateObservables/](https://github.com/leanprover-community/physlib/tree/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/QuantumMechanics/Operators/StateObservables):
+Modules in [StateObservables/](https://github.com/leanprover-community/physlib/tree/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/QuantumMechanics/Operators/StateObservables):
 
 - [Expectation values and centered vectors](stateobservables-expectedvalue.md)
 - [Eigenvectors of partial linear maps](stateobservables-iseigenvector.md)

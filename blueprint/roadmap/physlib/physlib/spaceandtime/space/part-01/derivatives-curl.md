@@ -8,7 +8,7 @@ proof: formalized
 
 # Curl on Space
 
-The module `Physlib.SpaceAndTime.Space.Derivatives.Curl`, [Physlib/SpaceAndTime/Space/Derivatives/Curl.lean](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/SpaceAndTime/Space/Derivatives/Curl.lean): 25 declarations, 7 with a docstring; 10 private, not shown.
+The module `Physlib.SpaceAndTime.Space.Derivatives.Curl`, [Physlib/SpaceAndTime/Space/Derivatives/Curl.lean](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/SpaceAndTime/Space/Derivatives/Curl.lean): 25 declarations, 7 with a docstring; 10 private, not shown.
 
 ## i. Overview
 
@@ -32,7 +32,7 @@ The module `Physlib.SpaceAndTime.Space.Derivatives.Curl`, [Physlib/SpaceAndTime/
 
 ## A. The curl on functions
 
-**`Space.curl`**, a def, [line 72](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/SpaceAndTime/Space/Derivatives/Curl.lean#L72).
+**`Space.curl`**, a def, [line 72](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/SpaceAndTime/Space/Derivatives/Curl.lean#L72).
 
 > The vector calculus operator `curl`.
 
@@ -43,7 +43,7 @@ noncomputable def curl (f : Space → EuclideanSpace ℝ (Fin 3)) :
 
 ### A.1. The curl on the zero function
 
-**`Space.curl_zero`**, a lemma, [line 90](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/SpaceAndTime/Space/Derivatives/Curl.lean#L90).
+**`Space.curl_zero`**, a lemma, [line 90](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/SpaceAndTime/Space/Derivatives/Curl.lean#L90).
 
 ```lean
 lemma curl_zero : ∇ ⨯ (0 : Space → EuclideanSpace ℝ (Fin 3)) = 0
@@ -51,7 +51,7 @@ lemma curl_zero : ∇ ⨯ (0 : Space → EuclideanSpace ℝ (Fin 3)) = 0
 
 ### A.2. The curl on a constant function
 
-**`Space.curl_const`**, a lemma, [line 103](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/SpaceAndTime/Space/Derivatives/Curl.lean#L103).
+**`Space.curl_const`**, a lemma, [line 103](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/SpaceAndTime/Space/Derivatives/Curl.lean#L103).
 
 ```lean
 lemma curl_const : ∇ ⨯ (fun _ : Space => v₃) = 0
@@ -59,7 +59,7 @@ lemma curl_const : ∇ ⨯ (fun _ : Space => v₃) = 0
 
 ### A.3. Basic operations on curl
 
-**`Space.curl_add`**, a lemma, [line 116](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/SpaceAndTime/Space/Derivatives/Curl.lean#L116).
+**`Space.curl_add`**, a lemma, [line 116](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/SpaceAndTime/Space/Derivatives/Curl.lean#L116).
 
 ```lean
 lemma curl_add (f1 f2 : Space → EuclideanSpace ℝ (Fin 3))
@@ -67,7 +67,7 @@ lemma curl_add (f1 f2 : Space → EuclideanSpace ℝ (Fin 3))
     ∇ ⨯ (f1 + f2) = ∇ ⨯ f1 + ∇ ⨯ f2
 ```
 
-**`Space.curl_smul`**, a lemma, [line 129](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/SpaceAndTime/Space/Derivatives/Curl.lean#L129).
+**`Space.curl_smul`**, a lemma, [line 129](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/SpaceAndTime/Space/Derivatives/Curl.lean#L129).
 
 ```lean
 lemma curl_smul (f : Space → EuclideanSpace ℝ (Fin 3)) (k : ℝ)
@@ -75,14 +75,14 @@ lemma curl_smul (f : Space → EuclideanSpace ℝ (Fin 3)) (k : ℝ)
     ∇ ⨯ (k • f) = k • ∇ ⨯ f
 ```
 
-**`Space.curl_neg`**, a lemma, [line 139](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/SpaceAndTime/Space/Derivatives/Curl.lean#L139).
+**`Space.curl_neg`**, a lemma, [line 139](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/SpaceAndTime/Space/Derivatives/Curl.lean#L139).
 
 ```lean
 lemma curl_neg (f : Space → EuclideanSpace ℝ (Fin 3)) (hf : Differentiable ℝ f) :
     ∇ ⨯ (-f) = -∇ ⨯ f
 ```
 
-**`Space.curl_sub`**, a lemma, [line 144](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/SpaceAndTime/Space/Derivatives/Curl.lean#L144).
+**`Space.curl_sub`**, a lemma, [line 144](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/SpaceAndTime/Space/Derivatives/Curl.lean#L144).
 
 ```lean
 lemma curl_sub (f1 f2 : Space → EuclideanSpace ℝ (Fin 3))
@@ -92,7 +92,7 @@ lemma curl_sub (f1 f2 : Space → EuclideanSpace ℝ (Fin 3))
 
 ### A.4. The curl of a linear map is a linear map
 
-**`Space.curl_linear_map`**, a lemma, [line 158](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/SpaceAndTime/Space/Derivatives/Curl.lean#L158).
+**`Space.curl_linear_map`**, a lemma, [line 158](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/SpaceAndTime/Space/Derivatives/Curl.lean#L158).
 
 ```lean
 lemma curl_linear_map (f : W → Space 3 → EuclideanSpace ℝ (Fin 3))
@@ -103,7 +103,7 @@ lemma curl_linear_map (f : W → Space 3 → EuclideanSpace ℝ (Fin 3))
 
 ### A.5. Preliminary lemmas about second derivatives
 
-**`Space.deriv_coord_2nd_add`**, a lemma, [line 177](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/SpaceAndTime/Space/Derivatives/Curl.lean#L177).
+**`Space.deriv_coord_2nd_add`**, a lemma, [line 177](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/SpaceAndTime/Space/Derivatives/Curl.lean#L177).
 
 > Second derivatives distribute coordinate-wise over addition (all three components for div).
 
@@ -114,7 +114,7 @@ lemma deriv_coord_2nd_add (f : Space → EuclideanSpace ℝ (Fin 3)) (hf : ContD
     (∂[i] (∂[w] (fun x => f x w)))
 ```
 
-**`Space.deriv_coord_2nd_sub`**, a lemma, [line 189](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/SpaceAndTime/Space/Derivatives/Curl.lean#L189).
+**`Space.deriv_coord_2nd_sub`**, a lemma, [line 189](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/SpaceAndTime/Space/Derivatives/Curl.lean#L189).
 
 > Second derivatives distribute coordinate-wise over subtraction (two components for curl).
 
@@ -126,7 +126,7 @@ lemma deriv_coord_2nd_sub (f : Space → EuclideanSpace ℝ (Fin 3)) (hf : ContD
 
 ### A.6. The div of a curl is zero
 
-**`Space.div_of_curl_eq_zero`**, a lemma, [line 205](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/SpaceAndTime/Space/Derivatives/Curl.lean#L205).
+**`Space.div_of_curl_eq_zero`**, a lemma, [line 205](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/SpaceAndTime/Space/Derivatives/Curl.lean#L205).
 
 ```lean
 lemma div_of_curl_eq_zero (f : Space → EuclideanSpace ℝ (Fin 3)) (hf : ContDiff ℝ 2 f) :
@@ -135,7 +135,7 @@ lemma div_of_curl_eq_zero (f : Space → EuclideanSpace ℝ (Fin 3)) (hf : ContD
 
 ### A.7. The curl of a grad is zero
 
-**`Space.curl_of_grad_eq_zero`**, a lemma, [line 227](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/SpaceAndTime/Space/Derivatives/Curl.lean#L227).
+**`Space.curl_of_grad_eq_zero`**, a lemma, [line 227](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/SpaceAndTime/Space/Derivatives/Curl.lean#L227).
 
 ```lean
 lemma curl_of_grad_eq_zero (f : Space → ℝ) (hf : ContDiff ℝ 2 f) :
@@ -144,7 +144,7 @@ lemma curl_of_grad_eq_zero (f : Space → ℝ) (hf : ContDiff ℝ 2 f) :
 
 ### A.8. The curl of a curl
 
-**`Space.curl_of_curl`**, a lemma, [line 241](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/SpaceAndTime/Space/Derivatives/Curl.lean#L241).
+**`Space.curl_of_curl`**, a lemma, [line 241](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/SpaceAndTime/Space/Derivatives/Curl.lean#L241).
 
 ```lean
 lemma curl_of_curl (f : Space → EuclideanSpace ℝ (Fin 3)) (hf : ContDiff ℝ 2 f) :
@@ -167,7 +167,7 @@ lemma curl_of_curl (f : Space → EuclideanSpace ℝ (Fin 3)) (hf : ContDiff ℝ
 > We call the integrand of this function the `homotopyOperatorIntegrand`.
 > We build API around this to help in our proof.
 
-**`Space.eq_neg_curl_of_div_zero`**, a lemma, [line 484](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/SpaceAndTime/Space/Derivatives/Curl.lean#L484).
+**`Space.eq_neg_curl_of_div_zero`**, a lemma, [line 484](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/SpaceAndTime/Space/Derivatives/Curl.lean#L484).
 
 ```lean
 lemma eq_neg_curl_of_div_zero (f : Space → EuclideanSpace ℝ (Fin 3)) (hf : ContDiff ℝ 1 f)
@@ -175,7 +175,7 @@ lemma eq_neg_curl_of_div_zero (f : Space → EuclideanSpace ℝ (Fin 3)) (hf : C
     f = - curl (fun x => ∫ (t : ℝ) in 0..1, (t • basis.repr x) ⨯ₑ₃ f (t • x) ∂(volume))
 ```
 
-**`Space.exists_curl_of_div_zero`**, a lemma, [line 532](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/SpaceAndTime/Space/Derivatives/Curl.lean#L532).
+**`Space.exists_curl_of_div_zero`**, a lemma, [line 532](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/SpaceAndTime/Space/Derivatives/Curl.lean#L532).
 
 ```lean
 lemma exists_curl_of_div_zero (f : Space → EuclideanSpace ℝ (Fin 3)) (hf : ContDiff ℝ 1 f)
@@ -191,7 +191,7 @@ lemma exists_curl_of_div_zero (f : Space → EuclideanSpace ℝ (Fin 3)) (hf : C
 > a more general version of this result in Mathlib. We turn this here into something
 > more familiar, to the physicists via `deriv_comm_of_curl_zero`.
 
-**`Space.deriv_comm_of_curl_zero`**, a lemma, [line 561](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/SpaceAndTime/Space/Derivatives/Curl.lean#L561).
+**`Space.deriv_comm_of_curl_zero`**, a lemma, [line 561](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/SpaceAndTime/Space/Derivatives/Curl.lean#L561).
 
 ```lean
 lemma deriv_comm_of_curl_zero (f : Space → EuclideanSpace ℝ (Fin 3)) (hf : Differentiable ℝ f)
@@ -199,14 +199,14 @@ lemma deriv_comm_of_curl_zero (f : Space → EuclideanSpace ℝ (Fin 3)) (hf : D
     ∂[i] f x j = ∂[j] f x i
 ```
 
-**`Space.exists_grad_of_curl_zero`**, a lemma, [line 590](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/SpaceAndTime/Space/Derivatives/Curl.lean#L590).
+**`Space.exists_grad_of_curl_zero`**, a lemma, [line 590](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/SpaceAndTime/Space/Derivatives/Curl.lean#L590).
 
 ```lean
 lemma exists_grad_of_curl_zero (f : Space → EuclideanSpace ℝ (Fin 3)) (hf : Differentiable ℝ f)
     (hcurl : curl f = 0) : ∃ g : Space → ℝ, f = grad g ∧ Differentiable ℝ g
 ```
 
-**`Space.eq_grad_integral_of_curl_zero`**, a lemma, [line 644](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/SpaceAndTime/Space/Derivatives/Curl.lean#L644).
+**`Space.eq_grad_integral_of_curl_zero`**, a lemma, [line 644](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/SpaceAndTime/Space/Derivatives/Curl.lean#L644).
 
 > A constructive form of the statement that if the curl of a function is zero,
 > then it is equal to the grad of another function.
@@ -223,7 +223,7 @@ lemma eq_grad_integral_of_curl_zero (f : Space → EuclideanSpace ℝ (Fin 3)) (
 
 ### A.11. The curl in terms of the Levi-Civita symbol
 
-**`Space.curl_eq_sum_leviCivitaSymbol`**, a lemma, [line 669](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/SpaceAndTime/Space/Derivatives/Curl.lean#L669).
+**`Space.curl_eq_sum_leviCivitaSymbol`**, a lemma, [line 669](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/SpaceAndTime/Space/Derivatives/Curl.lean#L669).
 
 > The components of the curl as a contraction with the Levi-Civita symbol,
 > `(∇ ⨯ f) x i = ∑ j k, ε_{ijk} ∂[j] fₖ x`.
@@ -236,7 +236,7 @@ lemma curl_eq_sum_leviCivitaSymbol (f : Space → EuclideanSpace ℝ (Fin 3))
 
 ## B. The curl on distributions
 
-**`Space.distCurl`**, a def, [line 690](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/SpaceAndTime/Space/Derivatives/Curl.lean#L690).
+**`Space.distCurl`**, a def, [line 690](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/SpaceAndTime/Space/Derivatives/Curl.lean#L690).
 
 > The curl of a distribution `Space →d[ℝ] (EuclideanSpace ℝ (Fin 3))` as a distribution
 > `Space →d[ℝ] (EuclideanSpace ℝ (Fin 3))`.
@@ -248,7 +248,7 @@ noncomputable def distCurl : (Space →d[ℝ] (EuclideanSpace ℝ (Fin 3))) →�
 
 ### B.1. The components of the curl
 
-**`Space.distCurl_coord_apply`**, a lemma, [line 723](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/SpaceAndTime/Space/Derivatives/Curl.lean#L723).
+**`Space.distCurl_coord_apply`**, a lemma, [line 723](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/SpaceAndTime/Space/Derivatives/Curl.lean#L723).
 
 ```lean
 lemma distCurl_coord_apply {i : Fin 3}
@@ -257,7 +257,7 @@ lemma distCurl_coord_apply {i : Fin 3}
     + f (SchwartzMap.evalCLM ℝ Space ℝ (basis (i+1)) (fderivCLM ℝ Space ℝ η)) (i+2)
 ```
 
-**`Space.distCurl_apply_one`**, a lemma, [line 729](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/SpaceAndTime/Space/Derivatives/Curl.lean#L729).
+**`Space.distCurl_apply_one`**, a lemma, [line 729](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/SpaceAndTime/Space/Derivatives/Curl.lean#L729).
 
 ```lean
 lemma distCurl_apply_one (f : Space →d[ℝ] (EuclideanSpace ℝ (Fin 3))) (η : 𝓢(Space, ℝ)) :
@@ -265,7 +265,7 @@ lemma distCurl_apply_one (f : Space →d[ℝ] (EuclideanSpace ℝ (Fin 3))) (η 
     + f (SchwartzMap.evalCLM ℝ Space ℝ (basis 2) (fderivCLM ℝ Space ℝ η)) 0
 ```
 
-**`Space.distCurl_apply_two`**, a lemma, [line 734](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/SpaceAndTime/Space/Derivatives/Curl.lean#L734).
+**`Space.distCurl_apply_two`**, a lemma, [line 734](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/SpaceAndTime/Space/Derivatives/Curl.lean#L734).
 
 ```lean
 lemma distCurl_apply_two (f : Space →d[ℝ] (EuclideanSpace ℝ (Fin 3))) (η : 𝓢(Space, ℝ)) :
@@ -275,7 +275,7 @@ lemma distCurl_apply_two (f : Space →d[ℝ] (EuclideanSpace ℝ (Fin 3))) (η 
 
 ### B.2. Basic equalities
 
-**`Space.distCurl_apply`**, a lemma, [line 745](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/SpaceAndTime/Space/Derivatives/Curl.lean#L745).
+**`Space.distCurl_apply`**, a lemma, [line 745](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/SpaceAndTime/Space/Derivatives/Curl.lean#L745).
 
 ```lean
 lemma distCurl_apply (f : Space →d[ℝ] (EuclideanSpace ℝ (Fin 3))) (η : 𝓢(Space, ℝ)) :
@@ -286,7 +286,7 @@ lemma distCurl_apply (f : Space →d[ℝ] (EuclideanSpace ℝ (Fin 3))) (η : �
 
 ### B.3. The curl of a grad is zero
 
-**`Space.distCurl_distGrad_eq_zero`**, a lemma, [line 760](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/SpaceAndTime/Space/Derivatives/Curl.lean#L760).
+**`Space.distCurl_distGrad_eq_zero`**, a lemma, [line 760](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/SpaceAndTime/Space/Derivatives/Curl.lean#L760).
 
 > The curl of a grad is equal to zero.
 
@@ -302,4 +302,4 @@ lemma distCurl_distGrad_eq_zero (f : (Space) →d[ℝ] ℝ) :
 
 ## Sources
 
-- [Physlib/SpaceAndTime/Space/Derivatives/Curl.lean at 2a1dfe43](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/SpaceAndTime/Space/Derivatives/Curl.lean)
+- [Physlib/SpaceAndTime/Space/Derivatives/Curl.lean at 8c87bdfb](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/SpaceAndTime/Space/Derivatives/Curl.lean)

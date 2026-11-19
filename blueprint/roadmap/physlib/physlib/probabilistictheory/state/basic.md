@@ -1,69 +1,89 @@
 ---
 declaration: module
 origin: cited
-lean: UnitalPositiveLinearMap.comap, UnitalPositiveLinearMap.comap_apply, Channel.comap, Channel.comap_apply
+lean: ProbabilisticTheory.State, ProbabilisticTheory.State.toPositiveLinearMap, ProbabilisticTheory.State.toLinearMap, ProbabilisticTheory.State.toPositiveLinearMap_apply, ProbabilisticTheory.State.comap, ProbabilisticTheory.State.comap_apply
 statement: formalized
 proof: formalized
 ---
 
 # States
 
-The module `Physlib.ProbabilisticTheory.State.Basic`, [Physlib/ProbabilisticTheory/State/Basic.lean](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/ProbabilisticTheory/State/Basic.lean): 4 declarations, 2 with a docstring.
+The module `Physlib.ProbabilisticTheory.State.Basic`, [Physlib/ProbabilisticTheory/State/Basic.lean](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/ProbabilisticTheory/State/Basic.lean): 7 declarations (1 instance with no name), 4 with a docstring.
 
 ## i. Overview
 
-> A state assigns each observable its expectation value: a positive linear functional
-> (`0 ≤ A ⟹ 0 ≤ ω A`), normalized so the certain outcome reads `ω 1 = 1`. In quantum mechanics,
-> `ω A = tr(ρA)` for a density matrix `ρ`.
+> A state assigns each observable its expectation value. It is a channel into the real numbers:
+> positive (`0 ≤ A ⟹ 0 ≤ ω A`) and normalized so the certain outcome reads `ω 1 = 1`. In quantum
+> mechanics, `ω A = tr(ρA)` for a density matrix `ρ`.
 
 ## ii. Key results
 
-> - `𝓢[𝕜, A]` : states on an ordered `𝕜`-vector space with a distinguished unit.
-> - `UnitalPositiveLinearMap.comap` : the state on the input of a channel that evaluates an
->   observable by first sending it through the channel.
-> - `Channel.comap` : the same pullback of states along a channel between probabilistic theories.
+> - `ProbabilisticTheory.State` : normalized real expectation functionals on observables.
+> - `ProbabilisticTheory.State.comap` : pull back a state by evaluating observables through a
+>   channel.
 
 ## iv. References
 
-## A. Notation for positive functionals and states
+## A. States
+
+**`ProbabilisticTheory.State`**, an abbrev, [line 43](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/ProbabilisticTheory/State/Basic.lean#L43).
+
+> States assign normalized real expectation values to observables.
+
+```lean
+abbrev ProbabilisticTheory.State (P : ProbabilisticTheory)
+```
+
+**An instance with no name**, [line 49](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/ProbabilisticTheory/State/Basic.lean#L49).
+
+```lean
+instance : FunLike P.State P.Observables ℝ
+```
+
+**`ProbabilisticTheory.State.toPositiveLinearMap`**, an abbrev, [line 53](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/ProbabilisticTheory/State/Basic.lean#L53).
+
+> The real positive functional underlying a state.
+
+```lean
+abbrev toPositiveLinearMap (ω : P.State) : P.Observables →ₚ[ℝ] ℝ
+```
+
+**`ProbabilisticTheory.State.toLinearMap`**, an abbrev, [line 57](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/ProbabilisticTheory/State/Basic.lean#L57).
+
+> The real linear functional underlying a state.
+
+```lean
+abbrev toLinearMap (ω : P.State) : P.Observables →ₗ[ℝ] ℝ
+```
+
+**`ProbabilisticTheory.State.toPositiveLinearMap_apply`**, a lemma, [line 61](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/ProbabilisticTheory/State/Basic.lean#L61).
+
+```lean
+lemma toPositiveLinearMap_apply (ω : P.State) (A : P.Observables) :
+    ω.toPositiveLinearMap A = ω A
+```
 
 ## B. Transporting states along channels
 
-**`UnitalPositiveLinearMap.comap`**, a def, [line 64](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/ProbabilisticTheory/State/Basic.lean#L64).
-
-> The state on `E` that evaluates an observable by first sending it through a channel `f` and
-> then evaluating the state `ω` on the result.
-
-```lean
-def comap (f : E →ₚ₁[ℝ] F) (ω : 𝓢[ℝ, F]) : 𝓢[ℝ, E]
-```
-
-**`UnitalPositiveLinearMap.comap_apply`**, a lemma, [line 69](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/ProbabilisticTheory/State/Basic.lean#L69).
-
-```lean
-lemma comap_apply (f : E →ₚ₁[ℝ] F) (ω : 𝓢[ℝ, F]) (x : E) : comap f ω x = ω (f x)
-```
-
-**`Channel.comap`**, a def, [line 78](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/ProbabilisticTheory/State/Basic.lean#L78).
+**`ProbabilisticTheory.State.comap`**, a def, [line 71](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/ProbabilisticTheory/State/Basic.lean#L71).
 
 > Pull back a state by applying the channel before evaluating each observable.
 
 ```lean
-def comap (f : Channel P Q) (ω : 𝓢[ℝ, Q.Observables]) : 𝓢[ℝ, P.Observables]
+def comap (ω : Q.State) (f : Channel P Q) : P.State
 ```
 
-**`Channel.comap_apply`**, a lemma, [line 83](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/ProbabilisticTheory/State/Basic.lean#L83).
+**`ProbabilisticTheory.State.comap_apply`**, a lemma, [line 74](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/ProbabilisticTheory/State/Basic.lean#L74).
 
 ```lean
-lemma comap_apply (f : Channel P Q) (ω : 𝓢[ℝ, Q.Observables]) (x : P.Observables) :
-    comap f ω x = ω (f x)
+lemma comap_apply (ω : Q.State) (f : Channel P Q) (x : P.Observables) :
+    ω.comap f x = ω (f x)
 ```
 
 ## Depends on
 
-- [Positive unital maps](../channel/basic.md)
-- [Ordered vector spaces and order units](../orderunit/basic.md)
+- [Channels between observable spaces](../channel/basic.md)
 
 ## Sources
 
-- [Physlib/ProbabilisticTheory/State/Basic.lean at 2a1dfe43](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/ProbabilisticTheory/State/Basic.lean)
+- [Physlib/ProbabilisticTheory/State/Basic.lean at 8c87bdfb](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/ProbabilisticTheory/State/Basic.lean)

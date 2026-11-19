@@ -1,14 +1,14 @@
 ---
 declaration: module
 origin: cited
-lean: ProbabilisticTheory.IsSchurBlock, ProbabilisticTheory.exists_scalar_of_isSchurBlock, ProbabilisticTheory.UnitalPositiveLinearMap.IsCovariant.exists_scalar_of_isSchurBlock
+lean: PhyslibAlpha.ProbabilisticTheory.IsSchurBlock, PhyslibAlpha.ProbabilisticTheory.exists_scalar_of_isSchurBlock, PhyslibAlpha.ProbabilisticTheory.UnitalPositiveLinearMap.IsCovariant.exists_scalar_of_isSchurBlock
 statement: formalized
 proof: formalized
 ---
 
 # Schur's lemma for covariant channels
 
-The module `PhyslibAlpha.ProbabilisticTheory.Representation.Schur`, [PhyslibAlpha/ProbabilisticTheory/Representation/Schur.lean](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ProbabilisticTheory/Representation/Schur.lean): 3 declarations, 3 with a docstring.
+The module `PhyslibAlpha.ProbabilisticTheory.Representation.Schur`, [PhyslibAlpha/ProbabilisticTheory/Representation/Schur.lean](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/Representation/Schur.lean): 3 declarations, 3 with a docstring.
 
 > Schur's lemma as a hypothesis: equivariant maps and covariant channels are scalar on blocks.
 
@@ -35,7 +35,7 @@ The module `PhyslibAlpha.ProbabilisticTheory.Representation.Schur`, [PhyslibAlph
 
 ## A. The Schur hypothesis on a single block
 
-**`ProbabilisticTheory.IsSchurBlock`**, a def, [line 62](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ProbabilisticTheory/Representation/Schur.lean#L62).
+**`PhyslibAlpha.ProbabilisticTheory.IsSchurBlock`**, a def, [line 62](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/Representation/Schur.lean#L62).
 
 > The **Schur hypothesis** for a submodule `W`, relative to an action `smul : G → E → E`: every
 > linear endomorphism of `E` that is `G`-equivariant on `W` (`f (smul g x) = smul g (f x)` for
@@ -50,7 +50,7 @@ def IsSchurBlock (smul : G → E → E) (W : Submodule ℝ E) : Prop
 
 ## B. The multiplicity-free classification theorem
 
-**`ProbabilisticTheory.exists_scalar_of_isSchurBlock`**, a lemma, [line 77](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ProbabilisticTheory/Representation/Schur.lean#L77).
+**`PhyslibAlpha.ProbabilisticTheory.exists_scalar_of_isSchurBlock`**, a lemma, [line 77](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/Representation/Schur.lean#L77).
 
 > **Equivariant maps are scalars on Schur blocks.** If `E = ⨁ᵢ Wᵢ` with invariant Schur blocks
 > `Wᵢ`, every equivariant linear map preserving the blocks acts on each `Wᵢ` as a real scalar.
@@ -67,7 +67,7 @@ lemma exists_scalar_of_isSchurBlock (smul : G → E → E) (W : ι → Submodule
 
 > A channel intertwining a symmetry action with itself is a `G`-equivariant endomorphism.
 
-**`ProbabilisticTheory.UnitalPositiveLinearMap.IsCovariant.exists_scalar_of_isSchurBlock`**, a lemma, [line 100](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ProbabilisticTheory/Representation/Schur.lean#L100).
+**`PhyslibAlpha.ProbabilisticTheory.UnitalPositiveLinearMap.IsCovariant.exists_scalar_of_isSchurBlock`**, a lemma, [line 100](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/Representation/Schur.lean#L100).
 
 > **Schur's lemma for covariant channels.** A channel covariant for a symmetry action `ρ` acts as
 > a real scalar on each block of a finite decomposition of `E` into invariant Schur blocks that it
@@ -89,4 +89,4 @@ lemma UnitalPositiveLinearMap.IsCovariant.exists_scalar_of_isSchurBlock
 
 ## Sources
 
-- [PhyslibAlpha/ProbabilisticTheory/Representation/Schur.lean at 2a1dfe43](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ProbabilisticTheory/Representation/Schur.lean)
+- [PhyslibAlpha/ProbabilisticTheory/Representation/Schur.lean at 8c87bdfb](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/Representation/Schur.lean)

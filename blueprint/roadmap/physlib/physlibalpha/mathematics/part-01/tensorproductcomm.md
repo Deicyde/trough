@@ -8,7 +8,7 @@ proof: formalized
 
 # Commuting tensor-factor endomorphisms
 
-The module `PhyslibAlpha.Mathematics.TensorProductComm`, [PhyslibAlpha/Mathematics/TensorProductComm.lean](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Mathematics/TensorProductComm.lean): 2 declarations, 2 with a docstring.
+The module `PhyslibAlpha.Mathematics.TensorProductComm`, [PhyslibAlpha/Mathematics/TensorProductComm.lean](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Mathematics/TensorProductComm.lean): 2 declarations, 2 with a docstring.
 
 ## i. Overview
 
@@ -29,7 +29,7 @@ The module `PhyslibAlpha.Mathematics.TensorProductComm`, [PhyslibAlpha/Mathemati
 
 ## A. Commuting tensor-factor endomorphisms
 
-**`lTensor_map_id_comm`**, a lemma, [line 45](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Mathematics/TensorProductComm.lean#L45).
+**`lTensor_map_id_comm`**, a lemma, [line 45](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Mathematics/TensorProductComm.lean#L45).
 
 > An endomorphism of the second tensor factor commutes with one of the first.
 
@@ -41,7 +41,7 @@ lemma lTensor_map_id_comm {k : Type} [CommSemiring k] {W X : Type} [AddCommMonoi
       TensorProduct.map g LinearMap.id ((LinearMap.lTensor W f) t)
 ```
 
-**`congr_assoc_map_id_comm`**, a lemma, [line 56](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Mathematics/TensorProductComm.lean#L56).
+**`congr_assoc_map_id_comm`**, a lemma, [line 56](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Mathematics/TensorProductComm.lean#L56).
 
 > Reassociating and recombining the last two tensor factors commutes with an
 > endomorphism of the first.
@@ -63,4 +63,4 @@ Its declarations' statements use no declaration of another module with an articl
 
 ## Sources
 
-- [PhyslibAlpha/Mathematics/TensorProductComm.lean at 2a1dfe43](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Mathematics/TensorProductComm.lean)
+- [PhyslibAlpha/Mathematics/TensorProductComm.lean at 8c87bdfb](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Mathematics/TensorProductComm.lean)

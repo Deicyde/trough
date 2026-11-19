@@ -1,14 +1,14 @@
 ---
 declaration: module
 origin: cited
-lean: ProbabilisticTheory.QuantumMechanics.UnitaryRep.sector, ProbabilisticTheory.QuantumMechanics.UnitaryRep.mem_sector_iff, ProbabilisticTheory.QuantumMechanics.UnitaryRep.dualAct_image_image, ProbabilisticTheory.QuantumMechanics.UnitaryRep.measurableSet_dualAct_image, ProbabilisticTheory.QuantumMechanics.UnitaryRep.rho_inv_rho, ProbabilisticTheory.QuantumMechanics.UnitaryRep.rho_rho_inv, ProbabilisticTheory.QuantumMechanics.UnitaryRep.norm_rho, ProbabilisticTheory.QuantumMechanics.UnitaryRep.rho_projection_apply
+lean: PhyslibAlpha.ProbabilisticTheory.QuantumMechanics.UnitaryRep.sector, PhyslibAlpha.ProbabilisticTheory.QuantumMechanics.UnitaryRep.mem_sector_iff, PhyslibAlpha.ProbabilisticTheory.QuantumMechanics.UnitaryRep.dualAct_image_image, PhyslibAlpha.ProbabilisticTheory.QuantumMechanics.UnitaryRep.measurableSet_dualAct_image, PhyslibAlpha.ProbabilisticTheory.QuantumMechanics.UnitaryRep.rho_inv_rho, PhyslibAlpha.ProbabilisticTheory.QuantumMechanics.UnitaryRep.rho_rho_inv, PhyslibAlpha.ProbabilisticTheory.QuantumMechanics.UnitaryRep.norm_rho, PhyslibAlpha.ProbabilisticTheory.QuantumMechanics.UnitaryRep.rho_projection_apply
 statement: formalized
 proof: formalized
 ---
 
 # Symmetry reduction of translation-invariant operators to momentum sectors
 
-The module `PhyslibAlpha.ProbabilisticTheory.Representation.SectorReduction`, [PhyslibAlpha/ProbabilisticTheory/Representation/SectorReduction.lean](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ProbabilisticTheory/Representation/SectorReduction.lean): 16 declarations, 5 with a docstring.
+The module `PhyslibAlpha.ProbabilisticTheory.Representation.SectorReduction`, [PhyslibAlpha/ProbabilisticTheory/Representation/SectorReduction.lean](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/Representation/SectorReduction.lean): 16 declarations, 5 with a docstring.
 
 > A bounded operator commuting with the translations and a covariant point group is reduced by the
 > momentum sectors, and the symmetry relates its restrictions to sectors in one orbit.
@@ -42,7 +42,7 @@ The module `PhyslibAlpha.ProbabilisticTheory.Representation.SectorReduction`, [P
 
 ## A. Sectors
 
-**`ProbabilisticTheory.QuantumMechanics.UnitaryRep.sector`**, a def, [line 77](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ProbabilisticTheory/Representation/SectorReduction.lean#L77).
+**`PhyslibAlpha.ProbabilisticTheory.QuantumMechanics.UnitaryRep.sector`**, a def, [line 77](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/Representation/SectorReduction.lean#L77).
 
 > The sector of a set of characters: the vectors of total momentum in the set, the range of the
 > spectral projection.
@@ -51,7 +51,7 @@ The module `PhyslibAlpha.ProbabilisticTheory.Representation.SectorReduction`, [P
 def sector (S : Set (PontryaginDual (Multiplicative G))) : Submodule ℂ H
 ```
 
-**`ProbabilisticTheory.QuantumMechanics.UnitaryRep.mem_sector_iff`**, a lemma, [line 81](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ProbabilisticTheory/Representation/SectorReduction.lean#L81).
+**`PhyslibAlpha.ProbabilisticTheory.QuantumMechanics.UnitaryRep.mem_sector_iff`**, a lemma, [line 81](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/Representation/SectorReduction.lean#L81).
 
 ```lean
 lemma mem_sector_iff (S : Set (PontryaginDual (Multiplicative G))) (x : H) :
@@ -60,39 +60,39 @@ lemma mem_sector_iff (S : Set (PontryaginDual (Multiplicative G))) (x : H) :
 
 ## B. The equivalence of sectors
 
-**`ProbabilisticTheory.QuantumMechanics.UnitaryRep.dualAct_image_image`**, a lemma, [line 89](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ProbabilisticTheory/Representation/SectorReduction.lean#L89).
+**`PhyslibAlpha.ProbabilisticTheory.QuantumMechanics.UnitaryRep.dualAct_image_image`**, a lemma, [line 89](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/Representation/SectorReduction.lean#L89).
 
 ```lean
 lemma dualAct_image_image (p : P) (S : Set (PontryaginDual (Multiplicative G))) :
     dualAct φ p⁻¹ '' (dualAct φ p '' S) = S
 ```
 
-**`ProbabilisticTheory.QuantumMechanics.UnitaryRep.measurableSet_dualAct_image`**, a lemma, [line 97](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ProbabilisticTheory/Representation/SectorReduction.lean#L97).
+**`PhyslibAlpha.ProbabilisticTheory.QuantumMechanics.UnitaryRep.measurableSet_dualAct_image`**, a lemma, [line 97](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/Representation/SectorReduction.lean#L97).
 
 ```lean
 lemma measurableSet_dualAct_image (p : P) {S : Set (PontryaginDual (Multiplicative G))}
     (hS : MeasurableSet S) : MeasurableSet (dualAct φ p '' S)
 ```
 
-**`ProbabilisticTheory.QuantumMechanics.UnitaryRep.rho_inv_rho`**, a lemma, [line 112](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ProbabilisticTheory/Representation/SectorReduction.lean#L112).
+**`PhyslibAlpha.ProbabilisticTheory.QuantumMechanics.UnitaryRep.rho_inv_rho`**, a lemma, [line 112](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/Representation/SectorReduction.lean#L112).
 
 ```lean
 lemma rho_inv_rho (p : P) (x : H) : (𝓡 p⁻¹) ((𝓡 p) x) = x
 ```
 
-**`ProbabilisticTheory.QuantumMechanics.UnitaryRep.rho_rho_inv`**, a lemma, [line 117](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ProbabilisticTheory/Representation/SectorReduction.lean#L117).
+**`PhyslibAlpha.ProbabilisticTheory.QuantumMechanics.UnitaryRep.rho_rho_inv`**, a lemma, [line 117](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/Representation/SectorReduction.lean#L117).
 
 ```lean
 lemma rho_rho_inv (p : P) (x : H) : (𝓡 p) ((𝓡 p⁻¹) x) = x
 ```
 
-**`ProbabilisticTheory.QuantumMechanics.UnitaryRep.norm_rho`**, a lemma, [line 120](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ProbabilisticTheory/Representation/SectorReduction.lean#L120).
+**`PhyslibAlpha.ProbabilisticTheory.QuantumMechanics.UnitaryRep.norm_rho`**, a lemma, [line 120](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/Representation/SectorReduction.lean#L120).
 
 ```lean
 lemma norm_rho (p : P) (x : H) : ‖(𝓡 p) x‖ = ‖x‖
 ```
 
-**`ProbabilisticTheory.QuantumMechanics.UnitaryRep.rho_projection_apply`**, a lemma, [line 138](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ProbabilisticTheory/Representation/SectorReduction.lean#L138).
+**`PhyslibAlpha.ProbabilisticTheory.QuantumMechanics.UnitaryRep.rho_projection_apply`**, a lemma, [line 138](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/Representation/SectorReduction.lean#L138).
 
 ```lean
 lemma rho_projection_apply (p : P) {S : Set (PontryaginDual (Multiplicative G))}
@@ -100,7 +100,7 @@ lemma rho_projection_apply (p : P) {S : Set (PontryaginDual (Multiplicative G))}
     (𝓡 p) (projection π S y) = projection π (dualAct φ p '' S) ((𝓡 p) y)
 ```
 
-**`ProbabilisticTheory.QuantumMechanics.UnitaryRep.rho_mem_sector`**, a lemma, [line 144](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ProbabilisticTheory/Representation/SectorReduction.lean#L144).
+**`PhyslibAlpha.ProbabilisticTheory.QuantumMechanics.UnitaryRep.rho_mem_sector`**, a lemma, [line 144](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/Representation/SectorReduction.lean#L144).
 
 ```lean
 lemma rho_mem_sector (p : P) {S : Set (PontryaginDual (Multiplicative G))}
@@ -108,7 +108,7 @@ lemma rho_mem_sector (p : P) {S : Set (PontryaginDual (Multiplicative G))}
     (𝓡 p) x ∈ sector π (dualAct φ p '' S)
 ```
 
-**`ProbabilisticTheory.QuantumMechanics.UnitaryRep.rho_inv_mem_sector`**, a lemma, [line 151](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ProbabilisticTheory/Representation/SectorReduction.lean#L151).
+**`PhyslibAlpha.ProbabilisticTheory.QuantumMechanics.UnitaryRep.rho_inv_mem_sector`**, a lemma, [line 151](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/Representation/SectorReduction.lean#L151).
 
 ```lean
 lemma rho_inv_mem_sector (p : P) {S : Set (PontryaginDual (Multiplicative G))}
@@ -116,7 +116,7 @@ lemma rho_inv_mem_sector (p : P) {S : Set (PontryaginDual (Multiplicative G))}
     (𝓡 p⁻¹) y ∈ sector π S
 ```
 
-**`ProbabilisticTheory.QuantumMechanics.UnitaryRep.sectorEquiv`**, a def, [line 161](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ProbabilisticTheory/Representation/SectorReduction.lean#L161).
+**`PhyslibAlpha.ProbabilisticTheory.QuantumMechanics.UnitaryRep.sectorEquiv`**, a def, [line 161](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/Representation/SectorReduction.lean#L161).
 
 > **The equivalence of sectors**: `ρ(p)` is an isometric equivalence of the sector of `S` onto
 > the sector of `p • S`.
@@ -126,7 +126,7 @@ def sectorEquiv (p : P) {S : Set (PontryaginDual (Multiplicative G))} (hS : Meas
     sector π S ≃ₗᵢ[ℂ] sector π (dualAct φ p '' S)
 ```
 
-**`ProbabilisticTheory.QuantumMechanics.UnitaryRep.coe_sectorEquiv`**, a lemma, [line 171](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ProbabilisticTheory/Representation/SectorReduction.lean#L171).
+**`PhyslibAlpha.ProbabilisticTheory.QuantumMechanics.UnitaryRep.coe_sectorEquiv`**, a lemma, [line 171](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/Representation/SectorReduction.lean#L171).
 
 ```lean
 lemma coe_sectorEquiv (p : P) {S : Set (PontryaginDual (Multiplicative G))}
@@ -136,7 +136,7 @@ lemma coe_sectorEquiv (p : P) {S : Set (PontryaginDual (Multiplicative G))}
 
 ## C. Invariant operators
 
-**`ProbabilisticTheory.QuantumMechanics.UnitaryRep.sectorOp`**, a def, [line 184](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ProbabilisticTheory/Representation/SectorReduction.lean#L184).
+**`PhyslibAlpha.ProbabilisticTheory.QuantumMechanics.UnitaryRep.sectorOp`**, a def, [line 184](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/Representation/SectorReduction.lean#L184).
 
 > An operator commuting with the translations restricts to each sector.
 
@@ -145,7 +145,7 @@ def sectorOp (hT : ∀ g, Commute ((π g : unitary (H →L[ℂ] H)) : H →L[ℂ
     (S : Set (PontryaginDual (Multiplicative G))) : Module.End ℂ (sector π S)
 ```
 
-**`ProbabilisticTheory.QuantumMechanics.UnitaryRep.coe_sectorOp`**, a lemma, [line 193](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ProbabilisticTheory/Representation/SectorReduction.lean#L193).
+**`PhyslibAlpha.ProbabilisticTheory.QuantumMechanics.UnitaryRep.coe_sectorOp`**, a lemma, [line 193](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/Representation/SectorReduction.lean#L193).
 
 ```lean
 lemma coe_sectorOp (hT : ∀ g, Commute ((π g : unitary (H →L[ℂ] H)) : H →L[ℂ] H) T)
@@ -153,7 +153,7 @@ lemma coe_sectorOp (hT : ∀ g, Commute ((π g : unitary (H →L[ℂ] H)) : H �
     ((sectorOp hT S x : sector π S) : H) = T x.1
 ```
 
-**`ProbabilisticTheory.QuantumMechanics.UnitaryRep.sectorEquiv_sectorOp`**, a lemma, [line 203](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ProbabilisticTheory/Representation/SectorReduction.lean#L203).
+**`PhyslibAlpha.ProbabilisticTheory.QuantumMechanics.UnitaryRep.sectorEquiv_sectorOp`**, a lemma, [line 203](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/Representation/SectorReduction.lean#L203).
 
 > **The equivalence of sectors intertwines the restrictions of an invariant operator.**
 
@@ -164,7 +164,7 @@ lemma sectorEquiv_sectorOp (p : P) {S : Set (PontryaginDual (Multiplicative G))}
       (sectorEquiv hcov p hS x)
 ```
 
-**`ProbabilisticTheory.QuantumMechanics.UnitaryRep.spectrum_sectorOp_eq`**, a lemma, [line 215](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ProbabilisticTheory/Representation/SectorReduction.lean#L215).
+**`PhyslibAlpha.ProbabilisticTheory.QuantumMechanics.UnitaryRep.spectrum_sectorOp_eq`**, a lemma, [line 215](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/Representation/SectorReduction.lean#L215).
 
 > **Symmetry reduction.** The spectrum of an operator invariant under the translations and the
 > covariant point group, restricted to the sector of the characters in `S`, is its spectrum on the
@@ -182,4 +182,4 @@ lemma spectrum_sectorOp_eq (p : P) {S : Set (PontryaginDual (Multiplicative G))}
 
 ## Sources
 
-- [PhyslibAlpha/ProbabilisticTheory/Representation/SectorReduction.lean at 2a1dfe43](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ProbabilisticTheory/Representation/SectorReduction.lean)
+- [PhyslibAlpha/ProbabilisticTheory/Representation/SectorReduction.lean at 8c87bdfb](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/Representation/SectorReduction.lean)

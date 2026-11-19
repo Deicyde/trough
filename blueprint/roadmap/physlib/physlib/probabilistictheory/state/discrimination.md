@@ -1,14 +1,14 @@
 ---
 declaration: module
 origin: cited
-lean: UnitalPositiveLinearMap.successProb, UnitalPositiveLinearMap.advantage, UnitalPositiveLinearMap.successProb_eq_add_advantage, UnitalPositiveLinearMap.advantage_le, UnitalPositiveLinearMap.bddAbove_advantage, UnitalPositiveLinearMap.optimalSuccessProb, UnitalPositiveLinearMap.optimalSuccessProb_eq, UnitalPositiveLinearMap.sub_complement_eq_neg_sub
+lean: ProbabilisticTheory.State.successProb, ProbabilisticTheory.State.advantage, ProbabilisticTheory.State.successProb_eq_add_advantage, ProbabilisticTheory.State.advantage_le, ProbabilisticTheory.State.bddAbove_advantage, ProbabilisticTheory.State.optimalSuccessProb, ProbabilisticTheory.State.optimalSuccessProb_eq, ProbabilisticTheory.State.sub_complement_eq_neg_sub
 statement: formalized
 proof: formalized
 ---
 
 # State discrimination (Physlib)
 
-The module `Physlib.ProbabilisticTheory.State.Discrimination`, [Physlib/ProbabilisticTheory/State/Discrimination.lean](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/ProbabilisticTheory/State/Discrimination.lean): 14 declarations, 14 with a docstring.
+The module `Physlib.ProbabilisticTheory.State.Discrimination`, [Physlib/ProbabilisticTheory/State/Discrimination.lean](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/ProbabilisticTheory/State/Discrimination.lean): 14 declarations, 14 with a docstring.
 
 > Optimal binary discrimination probabilities and their relation to the state distance.
 
@@ -29,8 +29,8 @@ The module `Physlib.ProbabilisticTheory.State.Discrimination`, [Physlib/Probabil
 
 ## ii. Key results
 
-> - `UnitalPositiveLinearMap.optimalSuccessProb_eq` : the Helstrom bound.
-> - `UnitalPositiveLinearMap.optimalSuccessProb_half_half_eq` : for equal priors, the bound is the
+> - `ProbabilisticTheory.State.optimalSuccessProb_eq` : the Helstrom bound.
+> - `ProbabilisticTheory.State.optimalSuccessProb_half_half_eq` : for equal priors, the bound is the
 >   state distance.
 
 ## iv. References
@@ -39,142 +39,142 @@ The module `Physlib.ProbabilisticTheory.State.Discrimination`, [Physlib/Probabil
 
 ## A. Success probability and the advantage of a test
 
-**`UnitalPositiveLinearMap.successProb`**, a def, [line 64](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/ProbabilisticTheory/State/Discrimination.lean#L64).
+**`ProbabilisticTheory.State.successProb`**, a def, [line 62](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/ProbabilisticTheory/State/Discrimination.lean#L62).
 
 > Probability of guessing right between `ω₀` (prior `p`) and `ω₁` (prior `1 - p`) using test
 > `e`: guess `ω₀` on a click, `ω₁` otherwise.
 
 ```lean
-def successProb (ω₀ ω₁ : 𝓢[ℝ, E]) (p : unitInterval) (e : Effect E) : ℝ
+def successProb (ω₀ ω₁ : P.State) (p : unitInterval) (e : P.Effect) : ℝ
 ```
 
-**`UnitalPositiveLinearMap.advantage`**, a def, [line 68](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/ProbabilisticTheory/State/Discrimination.lean#L68).
+**`ProbabilisticTheory.State.advantage`**, a def, [line 66](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/ProbabilisticTheory/State/Discrimination.lean#L66).
 
 > How much test `e` improves on the baseline of always guessing `ω₁`.
 
 ```lean
-def advantage (ω₀ ω₁ : 𝓢[ℝ, E]) (p : unitInterval) (e : Effect E) : ℝ
+def advantage (ω₀ ω₁ : P.State) (p : unitInterval) (e : P.Effect) : ℝ
 ```
 
-**`UnitalPositiveLinearMap.successProb_eq_add_advantage`**, a lemma, [line 72](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/ProbabilisticTheory/State/Discrimination.lean#L72).
+**`ProbabilisticTheory.State.successProb_eq_add_advantage`**, a lemma, [line 70](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/ProbabilisticTheory/State/Discrimination.lean#L70).
 
 > Success probability equals the baseline `1 - p` plus the advantage of test `e`.
 
 ```lean
-lemma successProb_eq_add_advantage (ω₀ ω₁ : 𝓢[ℝ, E]) (p : unitInterval) (e : Effect E) :
+lemma successProb_eq_add_advantage (ω₀ ω₁ : P.State) (p : unitInterval) (e : P.Effect) :
     successProb ω₀ ω₁ p e = (1 - p) + advantage ω₀ ω₁ p e
 ```
 
 ## B. The Helstrom bound
 
-**`UnitalPositiveLinearMap.advantage_le`**, a lemma, [line 80](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/ProbabilisticTheory/State/Discrimination.lean#L80).
+**`ProbabilisticTheory.State.advantage_le`**, a lemma, [line 78](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/ProbabilisticTheory/State/Discrimination.lean#L78).
 
 > No test's advantage beats the prior weight `p` of the state it favors.
 
 ```lean
-lemma advantage_le (ω₀ ω₁ : 𝓢[ℝ, E]) (p : unitInterval) (e : Effect E) :
+lemma advantage_le (ω₀ ω₁ : P.State) (p : unitInterval) (e : P.Effect) :
     advantage ω₀ ω₁ p e ≤ p
 ```
 
-**`UnitalPositiveLinearMap.bddAbove_advantage`**, a lemma, [line 86](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/ProbabilisticTheory/State/Discrimination.lean#L86).
+**`ProbabilisticTheory.State.bddAbove_advantage`**, a lemma, [line 84](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/ProbabilisticTheory/State/Discrimination.lean#L84).
 
 > Advantages of tests are bounded above.
 
 ```lean
-lemma bddAbove_advantage (ω₀ ω₁ : 𝓢[ℝ, E]) (p : unitInterval) :
+lemma bddAbove_advantage (ω₀ ω₁ : P.State) (p : unitInterval) :
     BddAbove (Set.range (advantage ω₀ ω₁ p))
 ```
 
-**`UnitalPositiveLinearMap.optimalSuccessProb`**, a def, [line 91](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/ProbabilisticTheory/State/Discrimination.lean#L91).
+**`ProbabilisticTheory.State.optimalSuccessProb`**, a def, [line 89](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/ProbabilisticTheory/State/Discrimination.lean#L89).
 
 > The best a single test can do.
 
 ```lean
-noncomputable def optimalSuccessProb (ω₀ ω₁ : 𝓢[ℝ, E]) (p : unitInterval) : ℝ
+noncomputable def optimalSuccessProb (ω₀ ω₁ : P.State) (p : unitInterval) : ℝ
 ```
 
-**`UnitalPositiveLinearMap.optimalSuccessProb_eq`**, a lemma, [line 96](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/ProbabilisticTheory/State/Discrimination.lean#L96).
+**`ProbabilisticTheory.State.optimalSuccessProb_eq`**, a lemma, [line 94](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/ProbabilisticTheory/State/Discrimination.lean#L94).
 
 > The Helstrom bound: optimal success probability is the baseline `1 - p` plus the best
 > advantage any test can give.
 
 ```lean
-lemma optimalSuccessProb_eq (ω₀ ω₁ : 𝓢[ℝ, E]) (p : unitInterval) :
-    optimalSuccessProb ω₀ ω₁ p = (1 - p) + ⨆ e : Effect E, advantage ω₀ ω₁ p e
+lemma optimalSuccessProb_eq (ω₀ ω₁ : P.State) (p : unitInterval) :
+    optimalSuccessProb ω₀ ω₁ p = (1 - p) + ⨆ e : P.Effect, advantage ω₀ ω₁ p e
 ```
 
 ## C. Equal priors: the bound is the state distance
 
-**`UnitalPositiveLinearMap.sub_complement_eq_neg_sub`**, a lemma, [line 104](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/ProbabilisticTheory/State/Discrimination.lean#L104).
+**`ProbabilisticTheory.State.sub_complement_eq_neg_sub`**, a lemma, [line 102](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/ProbabilisticTheory/State/Discrimination.lean#L102).
 
 > Complementing an effect negates `ω₀ e - ω₁ e`.
 
 ```lean
-lemma sub_complement_eq_neg_sub (ω₀ ω₁ : 𝓢[ℝ, E]) (e : Effect E) :
+lemma sub_complement_eq_neg_sub (ω₀ ω₁ : P.State) (e : P.Effect) :
     ω₀ (complement e) - ω₁ (complement e) = -(ω₀ e - ω₁ e)
 ```
 
-**`UnitalPositiveLinearMap.bddAbove_abs_sub`**, a lemma, [line 109](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/ProbabilisticTheory/State/Discrimination.lean#L109).
+**`ProbabilisticTheory.State.bddAbove_abs_sub`**, a lemma, [line 107](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/ProbabilisticTheory/State/Discrimination.lean#L107).
 
 > The differences `|ω₀ e - ω₁ e|` over effects are bounded above.
 
 ```lean
-lemma bddAbove_abs_sub (ω₀ ω₁ : 𝓢[ℝ, E]) :
-    BddAbove (Set.range fun e : Effect E => |ω₀ e - ω₁ e|)
+lemma bddAbove_abs_sub (ω₀ ω₁ : P.State) :
+    BddAbove (Set.range fun e : P.Effect => |ω₀ e - ω₁ e|)
 ```
 
-**`UnitalPositiveLinearMap.bddAbove_sub`**, a lemma, [line 117](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/ProbabilisticTheory/State/Discrimination.lean#L117).
+**`ProbabilisticTheory.State.bddAbove_sub`**, a lemma, [line 115](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/ProbabilisticTheory/State/Discrimination.lean#L115).
 
 > The differences `ω₀ e - ω₁ e` over effects are bounded above.
 
 ```lean
-lemma bddAbove_sub (ω₀ ω₁ : 𝓢[ℝ, E]) :
-    BddAbove (Set.range fun e : Effect E => ω₀ e - ω₁ e)
+lemma bddAbove_sub (ω₀ ω₁ : P.State) :
+    BddAbove (Set.range fun e : P.Effect => ω₀ e - ω₁ e)
 ```
 
-**`UnitalPositiveLinearMap.ciSup_sub_eq_ciSup_abs_sub`**, a lemma, [line 125](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/ProbabilisticTheory/State/Discrimination.lean#L125).
+**`ProbabilisticTheory.State.ciSup_sub_eq_ciSup_abs_sub`**, a lemma, [line 123](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/ProbabilisticTheory/State/Discrimination.lean#L123).
 
 > The supremum of the state-value difference equals that of its absolute value: complementing
 > an effect flips the sign.
 
 ```lean
-lemma ciSup_sub_eq_ciSup_abs_sub (ω₀ ω₁ : 𝓢[ℝ, E]) :
-    (⨆ e : Effect E, (ω₀ e - ω₁ e)) = ⨆ e : Effect E, |ω₀ e - ω₁ e|
+lemma ciSup_sub_eq_ciSup_abs_sub (ω₀ ω₁ : P.State) :
+    (⨆ e : P.Effect, (ω₀ e - ω₁ e)) = ⨆ e : P.Effect, |ω₀ e - ω₁ e|
 ```
 
-**`UnitalPositiveLinearMap.dist_eq_ciSup_abs_sub`**, a lemma, [line 142](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/ProbabilisticTheory/State/Discrimination.lean#L142).
+**`ProbabilisticTheory.State.dist_eq_ciSup_abs_sub`**, a lemma, [line 132](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/ProbabilisticTheory/State/Discrimination.lean#L132).
 
 > The state distance is the supremum of the differences on recentered effects.
 
 ```lean
-lemma dist_eq_ciSup_abs_sub (ω₀ ω₁ : 𝓢[ℝ, E]) :
+lemma dist_eq_ciSup_abs_sub (ω₀ ω₁ : P.State) :
     dist ω₀ ω₁ =
-      ⨆ e : Effect E, |ω₀ (effectEquiv e) - ω₁ (effectEquiv e)|
+      ⨆ e : P.Effect, |ω₀ (effectEquiv e) - ω₁ (effectEquiv e)|
 ```
 
-**`UnitalPositiveLinearMap.dist_eq_two_mul_ciSup_sub`**, a lemma, [line 148](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/ProbabilisticTheory/State/Discrimination.lean#L148).
+**`ProbabilisticTheory.State.dist_eq_two_mul_ciSup_sub`**, a lemma, [line 138](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/ProbabilisticTheory/State/Discrimination.lean#L138).
 
 > The state distance is twice the largest state-value difference over all effects.
 
 ```lean
-lemma dist_eq_two_mul_ciSup_sub (ω₀ ω₁ : 𝓢[ℝ, E]) :
-    dist ω₀ ω₁ = 2 * ⨆ e : Effect E, (ω₀ e - ω₁ e)
+lemma dist_eq_two_mul_ciSup_sub (ω₀ ω₁ : P.State) :
+    dist ω₀ ω₁ = 2 * ⨆ e : P.Effect, (ω₀ e - ω₁ e)
 ```
 
-**`UnitalPositiveLinearMap.optimalSuccessProb_half_half_eq`**, a lemma, [line 154](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/ProbabilisticTheory/State/Discrimination.lean#L154).
+**`ProbabilisticTheory.State.optimalSuccessProb_half_half_eq`**, a lemma, [line 144](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/ProbabilisticTheory/State/Discrimination.lean#L144).
 
 > For equal priors, the Helstrom bound is `1/2` plus a quarter of the state distance.
 
 ```lean
-lemma optimalSuccessProb_half_half_eq (ω₀ ω₁ : 𝓢[ℝ, E]) :
+lemma optimalSuccessProb_half_half_eq (ω₀ ω₁ : P.State) :
     optimalSuccessProb ω₀ ω₁ ⟨1 / 2, by norm_num, by norm_num⟩ = 1 / 2 + dist ω₀ ω₁ / 4
 ```
 
 ## Depends on
 
-- [Complementary effects](../effect/complement.md)
+- [Complementary effects (Physlib)](../effect/complement.md)
 - [The metric space of states (Physlib)](metric.md)
 
 ## Sources
 
-- [Physlib/ProbabilisticTheory/State/Discrimination.lean at 2a1dfe43](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/ProbabilisticTheory/State/Discrimination.lean)
+- [Physlib/ProbabilisticTheory/State/Discrimination.lean at 8c87bdfb](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/ProbabilisticTheory/State/Discrimination.lean)

@@ -1,14 +1,14 @@
 ---
 declaration: module
 origin: cited
-lean: ProbabilisticTheory.QuantumMechanics.rationalCircle, ProbabilisticTheory.QuantumMechanics.rationalCircle_eq_zero, ProbabilisticTheory.QuantumMechanics.exists_character_apply_ne_one, ProbabilisticTheory.QuantumMechanics.dualHaar, ProbabilisticTheory.QuantumMechanics.integral_character_dualHaar
+lean: PhyslibAlpha.ProbabilisticTheory.QuantumMechanics.rationalCircle, PhyslibAlpha.ProbabilisticTheory.QuantumMechanics.rationalCircle_eq_zero, PhyslibAlpha.ProbabilisticTheory.QuantumMechanics.exists_character_apply_ne_one, PhyslibAlpha.ProbabilisticTheory.QuantumMechanics.dualHaar, PhyslibAlpha.ProbabilisticTheory.QuantumMechanics.integral_character_dualHaar
 statement: formalized
 proof: formalized
 ---
 
 # Orthogonality of characters
 
-The module `PhyslibAlpha.ProbabilisticTheory.Representation.Orthogonality`, [PhyslibAlpha/ProbabilisticTheory/Representation/Orthogonality.lean](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ProbabilisticTheory/Representation/Orthogonality.lean): 7 declarations (2 instances with no name), 4 with a docstring.
+The module `PhyslibAlpha.ProbabilisticTheory.Representation.Orthogonality`, [PhyslibAlpha/ProbabilisticTheory/Representation/Orthogonality.lean](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/Representation/Orthogonality.lean): 7 declarations (2 instances with no name), 4 with a docstring.
 
 > Characters separate the points of a discrete abelian group, and the normalized Haar measure of the
 > dual group makes the characters orthogonal.
@@ -34,7 +34,7 @@ The module `PhyslibAlpha.ProbabilisticTheory.Representation.Orthogonality`, [Phy
 
 ## A. Characters separate points
 
-**`ProbabilisticTheory.QuantumMechanics.rationalCircle`**, a def, [line 58](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ProbabilisticTheory/Representation/Orthogonality.lean#L58).
+**`PhyslibAlpha.ProbabilisticTheory.QuantumMechanics.rationalCircle`**, a def, [line 58](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/Representation/Orthogonality.lean#L58).
 
 > The injection of `ℚ/ℤ` into the circle, `q ↦ e^{2πi q}`.
 
@@ -42,13 +42,13 @@ The module `PhyslibAlpha.ProbabilisticTheory.Representation.Orthogonality`, [Phy
 def rationalCircle : AddCircle (1 : ℚ) →+ Additive Circle
 ```
 
-**`ProbabilisticTheory.QuantumMechanics.rationalCircle_eq_zero`**, a lemma, [line 71](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ProbabilisticTheory/Representation/Orthogonality.lean#L71).
+**`PhyslibAlpha.ProbabilisticTheory.QuantumMechanics.rationalCircle_eq_zero`**, a lemma, [line 71](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/Representation/Orthogonality.lean#L71).
 
 ```lean
 lemma rationalCircle_eq_zero {x : AddCircle (1 : ℚ)} (h : rationalCircle x = 0) : x = 0
 ```
 
-**`ProbabilisticTheory.QuantumMechanics.exists_character_apply_ne_one`**, a lemma, [line 89](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ProbabilisticTheory/Representation/Orthogonality.lean#L89).
+**`PhyslibAlpha.ProbabilisticTheory.QuantumMechanics.exists_character_apply_ne_one`**, a lemma, [line 89](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/Representation/Orthogonality.lean#L89).
 
 > **Characters separate the points of a discrete abelian group.**
 
@@ -59,7 +59,7 @@ lemma exists_character_apply_ne_one [TopologicalSpace G] [DiscreteTopology G] {g
 
 ## B. The Haar measure of the dual group
 
-**`ProbabilisticTheory.QuantumMechanics.dualHaar`**, a def, [line 111](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ProbabilisticTheory/Representation/Orthogonality.lean#L111).
+**`PhyslibAlpha.ProbabilisticTheory.QuantumMechanics.dualHaar`**, a def, [line 111](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/Representation/Orthogonality.lean#L111).
 
 > The normalized Haar measure of the compact dual group.
 
@@ -67,19 +67,19 @@ lemma exists_character_apply_ne_one [TopologicalSpace G] [DiscreteTopology G] {g
 def dualHaar : Measure (PontryaginDual (Multiplicative G))
 ```
 
-**An instance with no name**, [line 114](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ProbabilisticTheory/Representation/Orthogonality.lean#L114).
+**An instance with no name**, [line 114](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/Representation/Orthogonality.lean#L114).
 
 ```lean
 instance : (dualHaar (G := G)).IsHaarMeasure
 ```
 
-**An instance with no name**, [line 117](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ProbabilisticTheory/Representation/Orthogonality.lean#L117).
+**An instance with no name**, [line 117](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/Representation/Orthogonality.lean#L117).
 
 ```lean
 instance : IsProbabilityMeasure (dualHaar (G := G))
 ```
 
-**`ProbabilisticTheory.QuantumMechanics.integral_character_dualHaar`**, a lemma, [line 126](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ProbabilisticTheory/Representation/Orthogonality.lean#L126).
+**`PhyslibAlpha.ProbabilisticTheory.QuantumMechanics.integral_character_dualHaar`**, a lemma, [line 126](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/Representation/Orthogonality.lean#L126).
 
 > **Orthogonality of characters**: the evaluation characters are orthonormal for the Haar
 > probability measure of the dual group.
@@ -96,4 +96,4 @@ Its declarations' statements use no declaration of another module with an articl
 
 ## Sources
 
-- [PhyslibAlpha/ProbabilisticTheory/Representation/Orthogonality.lean at 2a1dfe43](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ProbabilisticTheory/Representation/Orthogonality.lean)
+- [PhyslibAlpha/ProbabilisticTheory/Representation/Orthogonality.lean at 8c87bdfb](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/Representation/Orthogonality.lean)

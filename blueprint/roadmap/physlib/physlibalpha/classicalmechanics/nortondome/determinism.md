@@ -8,7 +8,7 @@ proof: formalized
 
 # The Norton dome and the determinism of Newtonian mechanics
 
-The module `PhyslibAlpha.ClassicalMechanics.NortonDome.Determinism`, [PhyslibAlpha/ClassicalMechanics/NortonDome/Determinism.lean](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalMechanics/NortonDome/Determinism.lean): 10 declarations, 10 with a docstring.
+The module `PhyslibAlpha.ClassicalMechanics.NortonDome.Determinism`, [PhyslibAlpha/ClassicalMechanics/NortonDome/Determinism.lean](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalMechanics/NortonDome/Determinism.lean): 10 declarations, 10 with a docstring.
 
 > The Norton dome is a Newtonian system with continuous force that is not deterministic.
 
@@ -61,7 +61,7 @@ The module `PhyslibAlpha.ClassicalMechanics.NortonDome.Determinism`, [PhyslibAlp
 > The dome has a differentiable potential, so it is a Newtonian system whose force, equation of
 > motion and solutions are by definition those of `NortonDome.Basic`.
 
-**`ClassicalMechanics.NortonDome.toNewtonianSystem`**, a def, [line 89](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalMechanics/NortonDome/Determinism.lean#L89).
+**`ClassicalMechanics.NortonDome.toNewtonianSystem`**, a def, [line 89](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalMechanics/NortonDome/Determinism.lean#L89).
 
 > The Norton dome as a conservative Newtonian system on the Euclidean lift of the arc
 > length.
@@ -70,7 +70,7 @@ The module `PhyslibAlpha.ClassicalMechanics.NortonDome.Determinism`, [PhyslibAlp
 noncomputable def toNewtonianSystem : NewtonianSystem (EuclideanSpace ℝ (Fin 1))
 ```
 
-**`ClassicalMechanics.NortonDome.toNewtonianSystem_force`**, a lemma, [line 96](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalMechanics/NortonDome/Determinism.lean#L96).
+**`ClassicalMechanics.NortonDome.toNewtonianSystem_force`**, a lemma, [line 96](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalMechanics/NortonDome/Determinism.lean#L96).
 
 > The force of the dome as a Newtonian system is its force.
 
@@ -78,7 +78,7 @@ noncomputable def toNewtonianSystem : NewtonianSystem (EuclideanSpace ℝ (Fin 1
 lemma toNewtonianSystem_force : S.toNewtonianSystem.force = S.force
 ```
 
-**`ClassicalMechanics.NortonDome.toNewtonianSystem_equationOfMotion_iff`**, a lemma, [line 99](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalMechanics/NortonDome/Determinism.lean#L99).
+**`ClassicalMechanics.NortonDome.toNewtonianSystem_equationOfMotion_iff`**, a lemma, [line 99](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalMechanics/NortonDome/Determinism.lean#L99).
 
 > The equation of motion of the dome as a Newtonian system is its equation of motion.
 
@@ -87,7 +87,7 @@ lemma toNewtonianSystem_equationOfMotion_iff (r : Time → EuclideanSpace ℝ (F
     S.toNewtonianSystem.EquationOfMotion r ↔ S.EquationOfMotion r
 ```
 
-**`ClassicalMechanics.NortonDome.toNewtonianSystem_isSolution_iff`**, a lemma, [line 103](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalMechanics/NortonDome/Determinism.lean#L103).
+**`ClassicalMechanics.NortonDome.toNewtonianSystem_isSolution_iff`**, a lemma, [line 103](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalMechanics/NortonDome/Determinism.lean#L103).
 
 > The solutions of the dome as a Newtonian system are its solutions.
 
@@ -104,7 +104,7 @@ lemma toNewtonianSystem_isSolution_iff (r : Time → EuclideanSpace ℝ (Fin 1))
 > along the motion leaving the apex at the instant `1`: at the instant `0` it is at rest at the
 > apex, where the force vanishes, and at the instant `2` it is off the apex.
 
-**`ClassicalMechanics.NortonDome.not_isDeterministic`**, a lemma, [line 123](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalMechanics/NortonDome/Determinism.lean#L123).
+**`ClassicalMechanics.NortonDome.not_isDeterministic`**, a lemma, [line 123](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalMechanics/NortonDome/Determinism.lean#L123).
 
 > The Norton dome is not deterministic.
 
@@ -112,7 +112,7 @@ lemma toNewtonianSystem_isSolution_iff (r : Time → EuclideanSpace ℝ (Fin 1))
 lemma not_isDeterministic : ¬ S.toNewtonianSystem.IsDeterministic
 ```
 
-**`ClassicalMechanics.NortonDome.not_satisfiesFirstLaw`**, a lemma, [line 130](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalMechanics/NortonDome/Determinism.lean#L130).
+**`ClassicalMechanics.NortonDome.not_satisfiesFirstLaw`**, a lemma, [line 130](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalMechanics/NortonDome/Determinism.lean#L130).
 
 > The Norton dome violates Newton's first law, read as a statement about intervals of time:
 > a particle at rest at the apex, where the force vanishes, need not stay there.
@@ -127,7 +127,7 @@ lemma not_satisfiesFirstLaw : ¬ S.toNewtonianSystem.SatisfiesFirstLaw
 > hence not locally Lipschitz; the two stronger conditions imply a locally Lipschitz force, so
 > they fail too.
 
-**`ClassicalMechanics.NortonDome.not_hasLocallyLipschitzForce`**, a lemma, [line 151](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalMechanics/NortonDome/Determinism.lean#L151).
+**`ClassicalMechanics.NortonDome.not_hasLocallyLipschitzForce`**, a lemma, [line 151](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalMechanics/NortonDome/Determinism.lean#L151).
 
 > The force of the Norton dome is not locally Lipschitz: it is not Lipschitz on any
 > neighbourhood of the apex.
@@ -136,7 +136,7 @@ lemma not_satisfiesFirstLaw : ¬ S.toNewtonianSystem.SatisfiesFirstLaw
 lemma not_hasLocallyLipschitzForce : ¬ S.toNewtonianSystem.HasLocallyLipschitzForce
 ```
 
-**`ClassicalMechanics.NortonDome.not_hasLipschitzForce`**, a lemma, [line 159](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalMechanics/NortonDome/Determinism.lean#L159).
+**`ClassicalMechanics.NortonDome.not_hasLipschitzForce`**, a lemma, [line 159](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalMechanics/NortonDome/Determinism.lean#L159).
 
 > The force of the Norton dome is not Lipschitz.
 
@@ -144,7 +144,7 @@ lemma not_hasLocallyLipschitzForce : ¬ S.toNewtonianSystem.HasLocallyLipschitzF
 lemma not_hasLipschitzForce : ¬ S.toNewtonianSystem.HasLipschitzForce
 ```
 
-**`ClassicalMechanics.NortonDome.not_hasC2Potential`**, a lemma, [line 163](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalMechanics/NortonDome/Determinism.lean#L163).
+**`ClassicalMechanics.NortonDome.not_hasC2Potential`**, a lemma, [line 163](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalMechanics/NortonDome/Determinism.lean#L163).
 
 > The potential of the Norton dome is not `C²`.
 
@@ -154,7 +154,7 @@ lemma not_hasC2Potential : ¬ S.toNewtonianSystem.HasC2Potential
 
 ## C. Norton's claim
 
-**`ClassicalMechanics.NortonDome.exists_continuous_force_not_isDeterministic`**, a lemma, [line 175](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalMechanics/NortonDome/Determinism.lean#L175).
+**`ClassicalMechanics.NortonDome.exists_continuous_force_not_isDeterministic`**, a lemma, [line 175](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalMechanics/NortonDome/Determinism.lean#L175).
 
 > Norton's claim: there is a conservative Newtonian system, with a continuous force,
 > which is not deterministic. The witness is the dome with unit mass and unit gravitational
@@ -183,4 +183,4 @@ lemma exists_continuous_force_not_isDeterministic :
 
 ## Sources
 
-- [PhyslibAlpha/ClassicalMechanics/NortonDome/Determinism.lean at 2a1dfe43](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalMechanics/NortonDome/Determinism.lean)
+- [PhyslibAlpha/ClassicalMechanics/NortonDome/Determinism.lean at 8c87bdfb](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalMechanics/NortonDome/Determinism.lean)

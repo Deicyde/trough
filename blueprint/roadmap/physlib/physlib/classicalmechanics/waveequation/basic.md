@@ -8,7 +8,7 @@ proof: formalized
 
 # Wave equation
 
-The module `Physlib.ClassicalMechanics.WaveEquation.Basic`, [Physlib/ClassicalMechanics/WaveEquation/Basic.lean](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/ClassicalMechanics/WaveEquation/Basic.lean): 21 declarations, 4 with a docstring, 1 listed as significant.
+The module `Physlib.ClassicalMechanics.WaveEquation.Basic`, [Physlib/ClassicalMechanics/WaveEquation/Basic.lean](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/ClassicalMechanics/WaveEquation/Basic.lean): 21 declarations, 4 with a docstring, 1 listed as significant.
 
 ## i. Overview
 
@@ -30,7 +30,7 @@ The module `Physlib.ClassicalMechanics.WaveEquation.Basic`, [Physlib/ClassicalMe
 
 ## A. The wave equation
 
-**`ClassicalMechanics.WaveEquation`**, a def, [line 60](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/ClassicalMechanics/WaveEquation/Basic.lean#L60).
+**`ClassicalMechanics.WaveEquation`**, a def, [line 60](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/ClassicalMechanics/WaveEquation/Basic.lean#L60).
 
 > The general form of the wave equation where `c` is the propagation speed.
 
@@ -43,7 +43,7 @@ def WaveEquation {d} (f : Time → Space d → EuclideanSpace ℝ (Fin d))
 
 ### B.1. Definition of a plane wave
 
-**`ClassicalMechanics.planeWave`**, a def, [line 77](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/ClassicalMechanics/WaveEquation/Basic.lean#L77).
+**`ClassicalMechanics.planeWave`**, a def, [line 77](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/ClassicalMechanics/WaveEquation/Basic.lean#L77).
 
 > A vector-valued plane wave travelling in the direction of `s` with propagation speed `c`.
 
@@ -52,7 +52,7 @@ noncomputable def planeWave (f₀ : ℝ → EuclideanSpace ℝ (Fin d))
     (c : ℝ) (s : Direction d) : Time → Space d → EuclideanSpace ℝ (Fin d)
 ```
 
-**`ClassicalMechanics.planeWave_eq`**, a lemma, [line 81](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/ClassicalMechanics/WaveEquation/Basic.lean#L81).
+**`ClassicalMechanics.planeWave_eq`**, a lemma, [line 81](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/ClassicalMechanics/WaveEquation/Basic.lean#L81).
 
 ```lean
 lemma planeWave_eq {d f₀ c x} {s : Direction d} :
@@ -61,7 +61,7 @@ lemma planeWave_eq {d f₀ c x} {s : Direction d} :
 
 ### B.2. Differentiablity conditions
 
-**`ClassicalMechanics.planeWave_differentiable_time`**, a lemma, [line 92](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/ClassicalMechanics/WaveEquation/Basic.lean#L92).
+**`ClassicalMechanics.planeWave_differentiable_time`**, a lemma, [line 92](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/ClassicalMechanics/WaveEquation/Basic.lean#L92).
 
 ```lean
 lemma planeWave_differentiable_time {d f₀ c x} {s : Direction d}
@@ -69,7 +69,7 @@ lemma planeWave_differentiable_time {d f₀ c x} {s : Direction d}
     Differentiable ℝ (fun t => planeWave f₀ c s t x)
 ```
 
-**`ClassicalMechanics.planeWave_differentiable_space`**, a lemma, [line 99](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/ClassicalMechanics/WaveEquation/Basic.lean#L99).
+**`ClassicalMechanics.planeWave_differentiable_space`**, a lemma, [line 99](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/ClassicalMechanics/WaveEquation/Basic.lean#L99).
 
 ```lean
 lemma planeWave_differentiable_space {d f₀ c t} {s : Direction d}
@@ -77,7 +77,7 @@ lemma planeWave_differentiable_space {d f₀ c t} {s : Direction d}
     Differentiable ℝ (fun x => planeWave f₀ c s t x)
 ```
 
-**`ClassicalMechanics.planeWave_differentiable`**, a lemma, [line 112](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/ClassicalMechanics/WaveEquation/Basic.lean#L112).
+**`ClassicalMechanics.planeWave_differentiable`**, a lemma, [line 112](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/ClassicalMechanics/WaveEquation/Basic.lean#L112).
 
 ```lean
 lemma planeWave_differentiable {s : Direction d}
@@ -87,7 +87,7 @@ lemma planeWave_differentiable {s : Direction d}
 
 ### B.3. Time derivatives of plane waves
 
-**`ClassicalMechanics.planeWave_time_deriv`**, a lemma, [line 130](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/ClassicalMechanics/WaveEquation/Basic.lean#L130).
+**`ClassicalMechanics.planeWave_time_deriv`**, a lemma, [line 130](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/ClassicalMechanics/WaveEquation/Basic.lean#L130).
 
 ```lean
 lemma planeWave_time_deriv {d f₀ c x} {s : Direction d}
@@ -95,7 +95,7 @@ lemma planeWave_time_deriv {d f₀ c x} {s : Direction d}
     ∂ₜ (planeWave f₀ c s · x) = -c • fun t => planeWave (fderiv ℝ f₀ · 1) c s t x
 ```
 
-**`ClassicalMechanics.planeWave_time_deriv_time_deriv`**, a lemma, [line 146](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/ClassicalMechanics/WaveEquation/Basic.lean#L146).
+**`ClassicalMechanics.planeWave_time_deriv_time_deriv`**, a lemma, [line 146](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/ClassicalMechanics/WaveEquation/Basic.lean#L146).
 
 ```lean
 lemma planeWave_time_deriv_time_deriv {d f₀ c x} {s : Direction d}
@@ -105,7 +105,7 @@ lemma planeWave_time_deriv_time_deriv {d f₀ c x} {s : Direction d}
 
 ### B.4. Space derivatives of plane waves
 
-**`ClassicalMechanics.planeWave_space_deriv`**, a lemma, [line 173](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/ClassicalMechanics/WaveEquation/Basic.lean#L173).
+**`ClassicalMechanics.planeWave_space_deriv`**, a lemma, [line 173](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/ClassicalMechanics/WaveEquation/Basic.lean#L173).
 
 ```lean
 lemma planeWave_space_deriv {d f₀ c} {s : Direction d}
@@ -114,7 +114,7 @@ lemma planeWave_space_deriv {d f₀ c} {s : Direction d}
     s.unit i • fun x => planeWave (fderiv ℝ f₀ · 1) c s t x
 ```
 
-**`ClassicalMechanics.planeWave_apply_space_deriv`**, a lemma, [line 192](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/ClassicalMechanics/WaveEquation/Basic.lean#L192).
+**`ClassicalMechanics.planeWave_apply_space_deriv`**, a lemma, [line 192](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/ClassicalMechanics/WaveEquation/Basic.lean#L192).
 
 ```lean
 lemma planeWave_apply_space_deriv {d f₀ c} {s : Direction d}
@@ -123,7 +123,7 @@ lemma planeWave_apply_space_deriv {d f₀ c} {s : Direction d}
     s.unit i • fun x => planeWave (fderiv ℝ f₀ · 1) c s t x j
 ```
 
-**`ClassicalMechanics.planeWave_space_deriv_space_deriv`**, a lemma, [line 208](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/ClassicalMechanics/WaveEquation/Basic.lean#L208).
+**`ClassicalMechanics.planeWave_space_deriv_space_deriv`**, a lemma, [line 208](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/ClassicalMechanics/WaveEquation/Basic.lean#L208).
 
 ```lean
 lemma planeWave_space_deriv_space_deriv {d f₀ c} {s : Direction d}
@@ -132,7 +132,7 @@ lemma planeWave_space_deriv_space_deriv {d f₀ c} {s : Direction d}
     s.unit i ^ 2 • fun x => planeWave (iteratedDeriv 2 f₀ ·) c s t x
 ```
 
-**`ClassicalMechanics.planeWave_apply_space_deriv_space_deriv`**, a lemma, [line 230](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/ClassicalMechanics/WaveEquation/Basic.lean#L230).
+**`ClassicalMechanics.planeWave_apply_space_deriv_space_deriv`**, a lemma, [line 230](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/ClassicalMechanics/WaveEquation/Basic.lean#L230).
 
 ```lean
 lemma planeWave_apply_space_deriv_space_deriv {d f₀ c} {s : Direction d}
@@ -143,7 +143,7 @@ lemma planeWave_apply_space_deriv_space_deriv {d f₀ c} {s : Direction d}
 
 ### B.5. Laplacian of plane waves
 
-**`ClassicalMechanics.planeWave_laplacian`**, a lemma, [line 257](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/ClassicalMechanics/WaveEquation/Basic.lean#L257).
+**`ClassicalMechanics.planeWave_laplacian`**, a lemma, [line 257](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/ClassicalMechanics/WaveEquation/Basic.lean#L257).
 
 ```lean
 lemma planeWave_laplacian {d f₀ c} {s : Direction d} (h' : ContDiff ℝ 2 f₀) :
@@ -152,7 +152,7 @@ lemma planeWave_laplacian {d f₀ c} {s : Direction d} (h' : ContDiff ℝ 2 f₀
 
 ### B.6. Plane waves satisfy the wave equation
 
-**`ClassicalMechanics.planeWave_waveEquation`**, a theorem, [line 277](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/ClassicalMechanics/WaveEquation/Basic.lean#L277). Listed as a significant result in [Theorems.txt](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/scripts/lint/exemptions/Theorems.txt).
+**`ClassicalMechanics.planeWave_waveEquation`**, a theorem, [line 277](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/ClassicalMechanics/WaveEquation/Basic.lean#L277). Listed as a significant result in [Theorems.txt](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/scripts/lint/exemptions/Theorems.txt).
 
 > The plane wave satisfies the wave equation.
 
@@ -166,14 +166,14 @@ theorem planeWave_waveEquation (c : ℝ) (s : Direction d)
 
 > …
 
-**`ClassicalMechanics.wave_differentiable`**, a lemma, [line 292](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/ClassicalMechanics/WaveEquation/Basic.lean#L292).
+**`ClassicalMechanics.wave_differentiable`**, a lemma, [line 292](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/ClassicalMechanics/WaveEquation/Basic.lean#L292).
 
 ```lean
 lemma wave_differentiable {s : Direction d} {c : ℝ} {x : Space d} :
     DifferentiableAt ℝ (fun x => inner ℝ x s.unit - c * t) x
 ```
 
-**`ClassicalMechanics.wave_dx2`**, a lemma, [line 298](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/ClassicalMechanics/WaveEquation/Basic.lean#L298).
+**`ClassicalMechanics.wave_dx2`**, a lemma, [line 298](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/ClassicalMechanics/WaveEquation/Basic.lean#L298).
 
 ```lean
 lemma wave_dx2 {u v : Fin d} {s : Direction d}
@@ -185,7 +185,7 @@ lemma wave_dx2 {u v : Fin d} {s : Direction d}
     inner ℝ ((s.unit u) ^ 2 • f₀'' (inner ℝ x s.unit - c * t) 1) (EuclideanSpace.single v 1)
 ```
 
-**`ClassicalMechanics.space_fderiv_of_inner_product_wave_eq_space_fderiv`**, a lemma, [line 350](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/ClassicalMechanics/WaveEquation/Basic.lean#L350).
+**`ClassicalMechanics.space_fderiv_of_inner_product_wave_eq_space_fderiv`**, a lemma, [line 350](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/ClassicalMechanics/WaveEquation/Basic.lean#L350).
 
 > If `f₀` is a function of `(inner ℝ x s - c * t)`, the fderiv of its components
 > with respect to spatial coordinates is equal to the corresponding component of
@@ -201,7 +201,7 @@ lemma space_fderiv_of_inner_product_wave_eq_space_fderiv
     - s.unit u * ∂ₜ (fun t => f₀ (inner ℝ x s.unit - c * t)) t v
 ```
 
-**`ClassicalMechanics.time_differentiable_of_eq_planewave`**, a lemma, [line 367](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/ClassicalMechanics/WaveEquation/Basic.lean#L367).
+**`ClassicalMechanics.time_differentiable_of_eq_planewave`**, a lemma, [line 367](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/ClassicalMechanics/WaveEquation/Basic.lean#L367).
 
 ```lean
 lemma time_differentiable_of_eq_planewave {s : Direction d}
@@ -210,7 +210,7 @@ lemma time_differentiable_of_eq_planewave {s : Direction d}
     Differentiable ℝ fun t => f t x
 ```
 
-**`ClassicalMechanics.crossProduct_time_differentiable_of_right_eq_planewave`**, a lemma, [line 377](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/ClassicalMechanics/WaveEquation/Basic.lean#L377).
+**`ClassicalMechanics.crossProduct_time_differentiable_of_right_eq_planewave`**, a lemma, [line 377](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/ClassicalMechanics/WaveEquation/Basic.lean#L377).
 
 ```lean
 lemma crossProduct_time_differentiable_of_right_eq_planewave {s : Direction}
@@ -219,7 +219,7 @@ lemma crossProduct_time_differentiable_of_right_eq_planewave {s : Direction}
     DifferentiableAt ℝ (fun t => Space.basis.repr s.unit ⨯ₑ₃ (f t x)) t
 ```
 
-**`ClassicalMechanics.crossProduct_differentiable_of_right_eq_planewave`**, a lemma, [line 390](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/ClassicalMechanics/WaveEquation/Basic.lean#L390).
+**`ClassicalMechanics.crossProduct_differentiable_of_right_eq_planewave`**, a lemma, [line 390](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/ClassicalMechanics/WaveEquation/Basic.lean#L390).
 
 ```lean
 lemma crossProduct_differentiable_of_right_eq_planewave {s : Direction}
@@ -227,7 +227,7 @@ lemma crossProduct_differentiable_of_right_eq_planewave {s : Direction}
     DifferentiableAt ℝ (fun u => Space.basis.repr s.unit ⨯ₑ₃ (f₀ u)) u
 ```
 
-**`ClassicalMechanics.wave_fderiv_inner_eq_inner_fderiv_proj`**, a lemma, [line 408](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/ClassicalMechanics/WaveEquation/Basic.lean#L408).
+**`ClassicalMechanics.wave_fderiv_inner_eq_inner_fderiv_proj`**, a lemma, [line 408](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/ClassicalMechanics/WaveEquation/Basic.lean#L408).
 
 ```lean
 lemma wave_fderiv_inner_eq_inner_fderiv_proj {f₀ : ℝ → EuclideanSpace ℝ (Fin d)}
@@ -249,4 +249,4 @@ lemma wave_fderiv_inner_eq_inner_fderiv_proj {f₀ : ℝ → EuclideanSpace ℝ 
 
 ## Sources
 
-- [Physlib/ClassicalMechanics/WaveEquation/Basic.lean at 2a1dfe43](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/ClassicalMechanics/WaveEquation/Basic.lean)
+- [Physlib/ClassicalMechanics/WaveEquation/Basic.lean at 8c87bdfb](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/ClassicalMechanics/WaveEquation/Basic.lean)

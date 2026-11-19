@@ -8,7 +8,7 @@ proof: formalized
 
 # The integral of a Fourier transform is bounded by Schwartz seminorms
 
-The module `PhyslibAlpha.Mathematics.Fourier.SchwartzDecay`, [PhyslibAlpha/Mathematics/Fourier/SchwartzDecay.lean](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Mathematics/Fourier/SchwartzDecay.lean): 1 declaration, 1 with a docstring.
+The module `PhyslibAlpha.Mathematics.Fourier.SchwartzDecay`, [PhyslibAlpha/Mathematics/Fourier/SchwartzDecay.lean](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Mathematics/Fourier/SchwartzDecay.lean): 1 declaration, 1 with a docstring.
 
 > The `L¹` norm of the Fourier transform of a Schwartz function is bounded by finitely many
 > Schwartz seminorms of the function.
@@ -32,7 +32,7 @@ The module `PhyslibAlpha.Mathematics.Fourier.SchwartzDecay`, [PhyslibAlpha/Mathe
 
 > - `exists_integral_norm_fourier_le` : the bound of `∫ ‖𝓕 g‖` by seminorms of `g`.
 
-**`SchwartzMap.exists_integral_norm_fourier_le`**, a lemma, [line 56](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Mathematics/Fourier/SchwartzDecay.lean#L56).
+**`SchwartzMap.exists_integral_norm_fourier_le`**, a lemma, [line 56](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Mathematics/Fourier/SchwartzDecay.lean#L56).
 
 > **The `L¹` norm of a Fourier transform.** The integral of `‖𝓕 g‖` is bounded by a constant
 > times a finite supremum of Schwartz seminorms of `g`.
@@ -53,4 +53,4 @@ Its declarations' statements use no declaration of another module with an articl
 
 ## Sources
 
-- [PhyslibAlpha/Mathematics/Fourier/SchwartzDecay.lean at 2a1dfe43](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Mathematics/Fourier/SchwartzDecay.lean)
+- [PhyslibAlpha/Mathematics/Fourier/SchwartzDecay.lean at 8c87bdfb](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Mathematics/Fourier/SchwartzDecay.lean)

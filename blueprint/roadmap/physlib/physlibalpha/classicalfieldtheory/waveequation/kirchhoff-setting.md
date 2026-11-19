@@ -8,7 +8,7 @@ proof: formalized
 
 # Waves propagating along spheres
 
-The module `PhyslibAlpha.ClassicalFieldTheory.WaveEquation.Kirchhoff.Setting`, [PhyslibAlpha/ClassicalFieldTheory/WaveEquation/Kirchhoff/Setting.lean](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/WaveEquation/Kirchhoff/Setting.lean): 5 declarations, 5 with a docstring.
+The module `PhyslibAlpha.ClassicalFieldTheory.WaveEquation.Kirchhoff.Setting`, [PhyslibAlpha/ClassicalFieldTheory/WaveEquation/Kirchhoff/Setting.lean](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/WaveEquation/Kirchhoff/Setting.lean): 5 declarations, 5 with a docstring.
 
 > In three spatial dimensions, solutions of the scalar wave equation `∂ₜ²u - c² Δu = f` propagate
 > along expanding spheres.
@@ -47,7 +47,7 @@ The module `PhyslibAlpha.ClassicalFieldTheory.WaveEquation.Kirchhoff.Setting`, [
 
 ## A. Spherical integrals and the wave propagator
 
-**`WaveEquation.Kirchhoff.sphericalIntegral`**, a def, [line 65](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/WaveEquation/Kirchhoff/Setting.lean#L65).
+**`WaveEquation.Kirchhoff.sphericalIntegral`**, a def, [line 65](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/WaveEquation/Kirchhoff/Setting.lean#L65).
 
 > The integral of `f` over the sphere of radius `r` about `x` with respect to the surface measure.
 > The total mass of the unit sphere is `4π`, so the average is `1 / (4π)` times this integral. For
@@ -57,7 +57,7 @@ The module `PhyslibAlpha.ClassicalFieldTheory.WaveEquation.Kirchhoff.Setting`, [
 noncomputable def sphericalIntegral (r : ℝ) (f : Space 3 → ℂ) (x : Space 3) : ℂ
 ```
 
-**`WaveEquation.Kirchhoff.sphericalMean`**, a def, [line 70](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/WaveEquation/Kirchhoff/Setting.lean#L70).
+**`WaveEquation.Kirchhoff.sphericalMean`**, a def, [line 70](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/WaveEquation/Kirchhoff/Setting.lean#L70).
 
 > The normalized spherical mean `M_r f(x) = (1/(4π)) ∫_{S²} f(x + r n) dσ(n)`.
 > It reads only the sphere of radius `|r|` about `x`.
@@ -66,7 +66,7 @@ noncomputable def sphericalIntegral (r : ℝ) (f : Space 3 → ℂ) (x : Space 3
 noncomputable def sphericalMean (r : ℝ) (f : Space 3 → ℂ) (x : Space 3) : ℂ
 ```
 
-**`WaveEquation.Kirchhoff.wavePropagator`**, a def, [line 77](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/WaveEquation/Kirchhoff/Setting.lean#L77).
+**`WaveEquation.Kirchhoff.wavePropagator`**, a def, [line 77](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/WaveEquation/Kirchhoff/Setting.lean#L77).
 
 > The wave propagator `S_c(t) f (x) = (t / 4π) ∫_{S²} f (x + c t n) dσ(n)`: Kirchhoff's sine
 > propagator `sin(c t √(-Δ)) / (c √(-Δ))` of `∂ₜ²u = c² Δu`. It maps an initial velocity `f` to the
@@ -79,7 +79,7 @@ noncomputable def wavePropagator (c t : ℝ) (f : Space 3 → ℂ) (x : Space 3)
 
 ## B. Sources and initial data
 
-**`WaveEquation.Kirchhoff.retardedPotential`**, a def, [line 87](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/WaveEquation/Kirchhoff/Setting.lean#L87).
+**`WaveEquation.Kirchhoff.retardedPotential`**, a def, [line 87](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/WaveEquation/Kirchhoff/Setting.lean#L87).
 
 > The retarded potential of a source `f(s, y)`: the source emitted at time `s ∈ [0, t]` propagates
 > for the time `t - s`. This is Duhamel's integral `∫₀ᵗ S_c(t - s) f(s) ds`. It is the part of the
@@ -91,7 +91,7 @@ noncomputable def wavePropagator (c t : ℝ) (f : Space 3 → ℂ) (x : Space 3)
 noncomputable def retardedPotential (c : ℝ) (f : ℝ → Space 3 → ℂ) (t : ℝ) (x : Space 3) : ℂ
 ```
 
-**`WaveEquation.Kirchhoff.waveEvolution`**, a def, [line 94](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/WaveEquation/Kirchhoff/Setting.lean#L94).
+**`WaveEquation.Kirchhoff.waveEvolution`**, a def, [line 94](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/WaveEquation/Kirchhoff/Setting.lean#L94).
 
 > The solution `u(t) = ∂ₜ S_c(t) a + S_c(t) b` of the homogeneous wave equation with initial
 > displacement `a` and initial velocity `b`, so that `u(0) = a` and `∂ₜu(0) = b`. The derivative is
@@ -108,4 +108,4 @@ noncomputable def waveEvolution (c : ℝ) (a b : Space 3 → ℂ) (t : ℝ) (x :
 
 ## Sources
 
-- [PhyslibAlpha/ClassicalFieldTheory/WaveEquation/Kirchhoff/Setting.lean at 2a1dfe43](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/WaveEquation/Kirchhoff/Setting.lean)
+- [PhyslibAlpha/ClassicalFieldTheory/WaveEquation/Kirchhoff/Setting.lean at 8c87bdfb](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/WaveEquation/Kirchhoff/Setting.lean)

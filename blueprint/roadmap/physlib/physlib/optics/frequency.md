@@ -8,7 +8,7 @@ proof: formalized
 
 # Frequency
 
-The module `Physlib.Optics.Frequency`, [Physlib/Optics/Frequency.lean](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/Optics/Frequency.lean): 1 declaration, 1 with a docstring.
+The module `Physlib.Optics.Frequency`, [Physlib/Optics/Frequency.lean](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Optics/Frequency.lean): 1 declaration, 1 with a docstring.
 
 > In this module we define the type `Frequency`, corresponding to the frequency of a wave
 > carrying the dimension of inverse time.
@@ -29,7 +29,7 @@ The module `Physlib.Optics.Frequency`, [Physlib/Optics/Frequency.lean](https://g
 
 ## A. The Frequency type
 
-**`Frequency`**, an abbrev, [line 50](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/Optics/Frequency.lean#L50).
+**`Frequency`**, an abbrev, [line 50](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Optics/Frequency.lean#L50).
 
 > The type `Frequency` represents the measure of of how often sinusodial components
 > of a wave repeat per unit time, i.e. a nonnegative real number carrying the dimension
@@ -45,4 +45,4 @@ abbrev Frequency : Type
 
 ## Sources
 
-- [Physlib/Optics/Frequency.lean at 2a1dfe43](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/Optics/Frequency.lean)
+- [Physlib/Optics/Frequency.lean at 8c87bdfb](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Optics/Frequency.lean)

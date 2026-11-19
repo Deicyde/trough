@@ -8,7 +8,7 @@ proof: formalized
 
 # Component indices for two-index tensors
 
-The module `Physlib.Relativity.Tensors.ComponentIdx.Pair`, [Physlib/Relativity/Tensors/ComponentIdx/Pair.lean](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/Relativity/Tensors/ComponentIdx/Pair.lean): 4 declarations, 1 with a docstring.
+The module `Physlib.Relativity.Tensors.ComponentIdx.Pair`, [Physlib/Relativity/Tensors/ComponentIdx/Pair.lean](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Relativity/Tensors/ComponentIdx/Pair.lean): 4 declarations, 1 with a docstring.
 
 > Component indices of two-index tensors as pairs of basis indices.
 
@@ -28,7 +28,7 @@ The module `Physlib.Relativity.Tensors.ComponentIdx.Pair`, [Physlib/Relativity/T
 
 ## A. The two-index equivalence
 
-**`TensorSpecies.Tensor.ComponentIdx.pair`**, a def, [line 56](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/Relativity/Tensors/ComponentIdx/Pair.lean#L56).
+**`TensorSpecies.Tensor.ComponentIdx.pair`**, a def, [line 56](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Relativity/Tensors/ComponentIdx/Pair.lean#L56).
 
 > The equivalence between component indices for two colors and pairs of basis indices of
 > those colors.
@@ -38,14 +38,14 @@ def ComponentIdx.pair {cs : Fin 2 → C} :
     ComponentIdx (S := S) cs ≃ basisIdx (cs 0) × basisIdx (cs 1)
 ```
 
-**`TensorSpecies.Tensor.ComponentIdx.pair_apply`**, a lemma, [line 60](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/Relativity/Tensors/ComponentIdx/Pair.lean#L60).
+**`TensorSpecies.Tensor.ComponentIdx.pair_apply`**, a lemma, [line 60](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Relativity/Tensors/ComponentIdx/Pair.lean#L60).
 
 ```lean
 lemma ComponentIdx.pair_apply {cs : Fin 2 → C} (b : ComponentIdx (S := S) cs) :
     ComponentIdx.pair (S := S) b = (b 0, b 1)
 ```
 
-**`TensorSpecies.Tensor.ComponentIdx.pair_symm_apply_zero`**, a lemma, [line 64](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/Relativity/Tensors/ComponentIdx/Pair.lean#L64).
+**`TensorSpecies.Tensor.ComponentIdx.pair_symm_apply_zero`**, a lemma, [line 64](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Relativity/Tensors/ComponentIdx/Pair.lean#L64).
 
 ```lean
 lemma ComponentIdx.pair_symm_apply_zero {cs : Fin 2 → C}
@@ -53,7 +53,7 @@ lemma ComponentIdx.pair_symm_apply_zero {cs : Fin 2 → C}
     (ComponentIdx.pair (S := S) (cs := cs)).symm x 0 = x.1
 ```
 
-**`TensorSpecies.Tensor.ComponentIdx.pair_symm_apply_one`**, a lemma, [line 69](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/Relativity/Tensors/ComponentIdx/Pair.lean#L69).
+**`TensorSpecies.Tensor.ComponentIdx.pair_symm_apply_one`**, a lemma, [line 69](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Relativity/Tensors/ComponentIdx/Pair.lean#L69).
 
 ```lean
 lemma ComponentIdx.pair_symm_apply_one {cs : Fin 2 → C}
@@ -67,4 +67,4 @@ lemma ComponentIdx.pair_symm_apply_one {cs : Fin 2 → C}
 
 ## Sources
 
-- [Physlib/Relativity/Tensors/ComponentIdx/Pair.lean at 2a1dfe43](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/Relativity/Tensors/ComponentIdx/Pair.lean)
+- [Physlib/Relativity/Tensors/ComponentIdx/Pair.lean at 8c87bdfb](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Relativity/Tensors/ComponentIdx/Pair.lean)

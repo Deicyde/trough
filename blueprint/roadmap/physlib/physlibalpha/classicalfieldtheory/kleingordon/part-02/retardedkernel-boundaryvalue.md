@@ -8,7 +8,7 @@ proof: formalized
 
 # The retarded kernel as a boundary value in the spacetime Fourier variables
 
-The module `PhyslibAlpha.ClassicalFieldTheory.KleinGordon.RetardedKernel.BoundaryValue`, [PhyslibAlpha/ClassicalFieldTheory/KleinGordon/RetardedKernel/BoundaryValue.lean](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/KleinGordon/RetardedKernel/BoundaryValue.lean): 23 declarations, 17 with a docstring.
+The module `PhyslibAlpha.ClassicalFieldTheory.KleinGordon.RetardedKernel.BoundaryValue`, [PhyslibAlpha/ClassicalFieldTheory/KleinGordon/RetardedKernel/BoundaryValue.lean](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/KleinGordon/RetardedKernel/BoundaryValue.lean): 23 declarations, 17 with a docstring.
 
 > The retarded kernel tested against a test function is the limit of an integral of the spacetime
 > Fourier transform against `1 / (ω_ξ² - (2π w + i ε)²)`.
@@ -54,7 +54,7 @@ The module `PhyslibAlpha.ClassicalFieldTheory.KleinGordon.RetardedKernel.Boundar
 > - `retardedGreen_eq_advancedGreen_of_avoidsShell` : the causal propagator vanishes at the origin
 >   for sources whose transform avoids the mass shell.
 
-**`KleinGordon.dampedKernel`**, a def, [line 80](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/KleinGordon/RetardedKernel/BoundaryValue.lean#L80).
+**`KleinGordon.dampedKernel`**, a def, [line 80](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/KleinGordon/RetardedKernel/BoundaryValue.lean#L80).
 
 > The damped time integral of the sine evolution at the origin.
 
@@ -62,7 +62,7 @@ The module `PhyslibAlpha.ClassicalFieldTheory.KleinGordon.RetardedKernel.Boundar
 def dampedKernel (μ ε : ℝ) (ψ : 𝓓((⊤ : Opens (ℝ × E)), ℂ)) : ℂ
 ```
 
-**`KleinGordon.sineEvolution_zero_eq`**, a lemma, [line 84](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/KleinGordon/RetardedKernel/BoundaryValue.lean#L84).
+**`KleinGordon.sineEvolution_zero_eq`**, a lemma, [line 84](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/KleinGordon/RetardedKernel/BoundaryValue.lean#L84).
 
 > The sine evolution at the origin is the integral of the multiplier against the transform.
 
@@ -71,7 +71,7 @@ lemma sineEvolution_zero_eq {μ : ℝ} (hμ : 0 ≤ μ) (ψ : 𝓓((⊤ : Opens 
     sineEvolution ℂ s μ (slice ℂ ψ s) 0 = ∫ ξ : E, multiplier s μ ξ * spaceFourier ψ ξ s
 ```
 
-**`KleinGordon.integrable_dampedIntegrand`**, a lemma, [line 90](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/KleinGordon/RetardedKernel/BoundaryValue.lean#L90).
+**`KleinGordon.integrable_dampedIntegrand`**, a lemma, [line 90](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/KleinGordon/RetardedKernel/BoundaryValue.lean#L90).
 
 > The integrand of the damped kernel is integrable in time and frequency.
 
@@ -82,7 +82,7 @@ lemma integrable_dampedIntegrand {μ : ℝ} (ε : ℝ) (ψ : 𝓓((⊤ : Opens (
       ((volume.restrict (Set.Ioi (0 : ℝ))).prod volume)
 ```
 
-**`KleinGordon.dampedKernel_eq`**, a lemma, [line 148](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/KleinGordon/RetardedKernel/BoundaryValue.lean#L148).
+**`KleinGordon.dampedKernel_eq`**, a lemma, [line 148](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/KleinGordon/RetardedKernel/BoundaryValue.lean#L148).
 
 > **The damped kernel in the spacetime Fourier variables.** The damped time integral of the
 > sine evolution at the origin is the integral of the transform against
@@ -95,7 +95,7 @@ lemma dampedKernel_eq {μ ε : ℝ} (hμ : 0 ≤ μ) (hε : 0 < ε)
       (1 / ((dispersion μ ξ : ℂ) ^ 2 - (2 * Real.pi * w + ε * Complex.I) ^ 2))
 ```
 
-**`KleinGordon.tendsto_dampedKernel`**, a lemma, [line 167](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/KleinGordon/RetardedKernel/BoundaryValue.lean#L167).
+**`KleinGordon.tendsto_dampedKernel`**, a lemma, [line 167](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/KleinGordon/RetardedKernel/BoundaryValue.lean#L167).
 
 > **The damping can be removed.** The damped kernel converges to the undamped one.
 
@@ -105,7 +105,7 @@ lemma tendsto_dampedKernel {μ : ℝ} (hμ : 0 ≤ μ) (ψ : 𝓓((⊤ : Opens (
       (nhds (dampedKernel μ 0 ψ))
 ```
 
-**`KleinGordon.dampedKernel_zero_eq`**, a lemma, [line 237](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/KleinGordon/RetardedKernel/BoundaryValue.lean#L237).
+**`KleinGordon.dampedKernel_zero_eq`**, a lemma, [line 237](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/KleinGordon/RetardedKernel/BoundaryValue.lean#L237).
 
 > The damped kernel without damping is the advanced solution at the origin.
 
@@ -114,7 +114,7 @@ lemma dampedKernel_zero_eq {μ : ℝ} (hμ : 0 ≤ μ) (ψ : 𝓓((⊤ : Opens (
     dampedKernel μ 0 ψ = advancedSolution ℂ ψ μ 0 0
 ```
 
-**`KleinGordon.solution_zero_eq`**, a lemma, [line 244](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/KleinGordon/RetardedKernel/BoundaryValue.lean#L244).
+**`KleinGordon.solution_zero_eq`**, a lemma, [line 244](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/KleinGordon/RetardedKernel/BoundaryValue.lean#L244).
 
 > The retarded solution at the origin is the undamped kernel of the reflected source.
 
@@ -123,7 +123,7 @@ lemma solution_zero_eq {μ : ℝ} (hμ : 0 ≤ μ) (ψ : 𝓓((⊤ : Opens (ℝ 
     solution ℂ ψ μ 0 0 = dampedKernel μ 0 (reflect ℂ ψ)
 ```
 
-**`KleinGordon.resolvent`**, a def, [line 252](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/KleinGordon/RetardedKernel/BoundaryValue.lean#L252).
+**`KleinGordon.resolvent`**, a def, [line 252](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/KleinGordon/RetardedKernel/BoundaryValue.lean#L252).
 
 > The resolvent of the Klein–Gordon operator at the complexified frequency `2π w + i ε`.
 
@@ -131,7 +131,7 @@ lemma solution_zero_eq {μ : ℝ} (hμ : 0 ≤ μ) (ψ : 𝓓((⊤ : Opens (ℝ 
 def resolvent (μ ε w : ℝ) (ξ : E) : ℂ
 ```
 
-**`KleinGordon.AvoidsShell`**, a def, [line 256](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/KleinGordon/RetardedKernel/BoundaryValue.lean#L256).
+**`KleinGordon.AvoidsShell`**, a def, [line 256](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/KleinGordon/RetardedKernel/BoundaryValue.lean#L256).
 
 > The test function has no Fourier support within `δ` of the mass shell.
 
@@ -139,7 +139,7 @@ def resolvent (μ ε w : ℝ) (ξ : E) : ℂ
 def AvoidsShell (μ δ : ℝ) (χ : 𝓓((⊤ : Opens (ℝ × E)), ℂ)) : Prop
 ```
 
-**`KleinGordon.norm_mul_resolvent_le`**, a lemma, [line 259](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/KleinGordon/RetardedKernel/BoundaryValue.lean#L259).
+**`KleinGordon.norm_mul_resolvent_le`**, a lemma, [line 259](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/KleinGordon/RetardedKernel/BoundaryValue.lean#L259).
 
 ```lean
 lemma norm_mul_resolvent_le {μ δ : ℝ} (hδ : 0 < δ) {χ : 𝓓((⊤ : Opens (ℝ × E)), ℂ)}
@@ -148,13 +148,13 @@ lemma norm_mul_resolvent_le {μ δ : ℝ} (hδ : 0 < δ) {χ : 𝓓((⊤ : Opens
     ‖timeFourier χ w ξ * resolvent μ ε w ξ‖ ≤ ‖timeFourier χ w ξ‖ * (2 / δ)
 ```
 
-**`KleinGordon.measurable_resolvent`**, a lemma, [line 273](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/KleinGordon/RetardedKernel/BoundaryValue.lean#L273).
+**`KleinGordon.measurable_resolvent`**, a lemma, [line 273](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/KleinGordon/RetardedKernel/BoundaryValue.lean#L273).
 
 ```lean
 lemma measurable_resolvent (μ ε : ℝ) : Measurable fun p : ℝ × E => resolvent μ ε p.1 p.2
 ```
 
-**`KleinGordon.aestronglyMeasurable_timeFourier_mul_resolvent`**, a lemma, [line 283](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/KleinGordon/RetardedKernel/BoundaryValue.lean#L283).
+**`KleinGordon.aestronglyMeasurable_timeFourier_mul_resolvent`**, a lemma, [line 283](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/KleinGordon/RetardedKernel/BoundaryValue.lean#L283).
 
 ```lean
 lemma aestronglyMeasurable_timeFourier_mul_resolvent (χ : 𝓓((⊤ : Opens (ℝ × E)), ℂ))
@@ -162,7 +162,7 @@ lemma aestronglyMeasurable_timeFourier_mul_resolvent (χ : 𝓓((⊤ : Opens (�
     AEStronglyMeasurable (fun w : ℝ => timeFourier χ w ξ * resolvent μ ε w ξ) volume
 ```
 
-**`KleinGordon.tendsto_integral_resolvent`**, a lemma, [line 296](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/KleinGordon/RetardedKernel/BoundaryValue.lean#L296).
+**`KleinGordon.tendsto_integral_resolvent`**, a lemma, [line 296](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/KleinGordon/RetardedKernel/BoundaryValue.lean#L296).
 
 > Inner dominated convergence: the resolvent integral converges off the mass shell.
 
@@ -173,7 +173,7 @@ lemma tendsto_integral_resolvent {μ δ : ℝ} (hδ : 0 < δ) {χ : 𝓓((⊤ : 
       (nhdsWithin 0 (Set.Ioi 0)) (nhds (∫ w : ℝ, timeFourier χ w ξ * resolvent μ 0 w ξ))
 ```
 
-**`KleinGordon.aestronglyMeasurable_integral_timeFourier_mul_resolvent`**, a lemma, [line 329](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/KleinGordon/RetardedKernel/BoundaryValue.lean#L329).
+**`KleinGordon.aestronglyMeasurable_integral_timeFourier_mul_resolvent`**, a lemma, [line 329](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/KleinGordon/RetardedKernel/BoundaryValue.lean#L329).
 
 ```lean
 lemma aestronglyMeasurable_integral_timeFourier_mul_resolvent
@@ -182,7 +182,7 @@ lemma aestronglyMeasurable_integral_timeFourier_mul_resolvent
       volume
 ```
 
-**`KleinGordon.norm_integral_timeFourier_mul_resolvent_le`**, a lemma, [line 344](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/KleinGordon/RetardedKernel/BoundaryValue.lean#L344).
+**`KleinGordon.norm_integral_timeFourier_mul_resolvent_le`**, a lemma, [line 344](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/KleinGordon/RetardedKernel/BoundaryValue.lean#L344).
 
 ```lean
 lemma norm_integral_timeFourier_mul_resolvent_le {μ δ : ℝ} (hδ : 0 < δ)
@@ -193,7 +193,7 @@ lemma norm_integral_timeFourier_mul_resolvent_le {μ δ : ℝ} (hδ : 0 < δ)
       (2 / δ) * (C * (1 + ‖ξ‖) ^ (-(n : ℝ)))
 ```
 
-**`KleinGordon.dampedKernel_zero_eq_of_avoidsShell`**, a lemma, [line 364](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/KleinGordon/RetardedKernel/BoundaryValue.lean#L364).
+**`KleinGordon.dampedKernel_zero_eq_of_avoidsShell`**, a lemma, [line 364](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/KleinGordon/RetardedKernel/BoundaryValue.lean#L364).
 
 > **The kernel off the mass shell.** If the transform of the source vanishes near the mass shell
 > then the undamped kernel is the integral of the transform against the unregularised resolvent.
@@ -204,14 +204,14 @@ lemma dampedKernel_zero_eq_of_avoidsShell {μ δ : ℝ} (hμ : 0 ≤ μ) (hδ : 
     dampedKernel μ 0 χ = ∫ ξ : E, ∫ w : ℝ, timeFourier χ w ξ * resolvent μ 0 w ξ
 ```
 
-**`KleinGordon.avoidsShell_reflect`**, a lemma, [line 390](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/KleinGordon/RetardedKernel/BoundaryValue.lean#L390).
+**`KleinGordon.avoidsShell_reflect`**, a lemma, [line 390](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/KleinGordon/RetardedKernel/BoundaryValue.lean#L390).
 
 ```lean
 lemma avoidsShell_reflect {μ δ : ℝ} {χ : 𝓓((⊤ : Opens (ℝ × E)), ℂ)} (h : AvoidsShell μ δ χ) :
     AvoidsShell μ δ (reflect ℂ χ)
 ```
 
-**`KleinGordon.solution_zero_eq_advancedSolution_zero`**, a lemma, [line 398](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/KleinGordon/RetardedKernel/BoundaryValue.lean#L398).
+**`KleinGordon.solution_zero_eq_advancedSolution_zero`**, a lemma, [line 398](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/KleinGordon/RetardedKernel/BoundaryValue.lean#L398).
 
 > **The retarded and the advanced solution agree off the mass shell.** If the transform of the
 > source vanishes within `δ` of the mass shell then the retarded and the advanced solution have the
@@ -223,7 +223,7 @@ lemma solution_zero_eq_advancedSolution_zero {μ δ : ℝ} (hμ : 0 ≤ μ) (hδ
     solution ℂ χ μ 0 0 = advancedSolution ℂ χ μ 0 0
 ```
 
-**`KleinGordon.Spacetime.retardedPointSource_zero_eq`**, a lemma, [line 419](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/KleinGordon/RetardedKernel/BoundaryValue.lean#L419).
+**`KleinGordon.Spacetime.retardedPointSource_zero_eq`**, a lemma, [line 419](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/KleinGordon/RetardedKernel/BoundaryValue.lean#L419).
 
 > The retarded kernel is the real part of the undamped kernel of the transported source.
 
@@ -234,7 +234,7 @@ lemma retardedPointSource_zero_eq (m : ℝ) (φ : 𝓓((⊤ : Opens (SpaceTime d
         (sourceEquiv ℂ (TestFunction.postcompCLM Complex.ofRealCLM φ))).re
 ```
 
-**`KleinGordon.Spacetime.advancedPointSource_zero_eq`**, a lemma, [line 432](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/KleinGordon/RetardedKernel/BoundaryValue.lean#L432).
+**`KleinGordon.Spacetime.advancedPointSource_zero_eq`**, a lemma, [line 432](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/KleinGordon/RetardedKernel/BoundaryValue.lean#L432).
 
 > The advanced kernel is the real part of the retarded solution of the transported source.
 
@@ -245,7 +245,7 @@ lemma advancedPointSource_zero_eq (m : ℝ) (φ : 𝓓((⊤ : Opens (SpaceTime d
         0).re
 ```
 
-**`KleinGordon.Spacetime.advancedPointSource_eq_retardedPointSource_of_avoidsShell`**, a lemma, [line 443](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/KleinGordon/RetardedKernel/BoundaryValue.lean#L443).
+**`KleinGordon.Spacetime.advancedPointSource_eq_retardedPointSource_of_avoidsShell`**, a lemma, [line 443](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/KleinGordon/RetardedKernel/BoundaryValue.lean#L443).
 
 > **On the mass shell.** If the spacetime Fourier transform of a test function vanishes within
 > `δ` of the mass shell then the retarded and the advanced kernel give the same value. So the
@@ -258,7 +258,7 @@ lemma advancedPointSource_eq_retardedPointSource_of_avoidsShell (m δ : ℝ) (h�
     advancedPointSource m (0 : SpaceTime d) φ = retardedPointSource m (0 : SpaceTime d) φ
 ```
 
-**`KleinGordon.Spacetime.tendsto_retardedPointSource`**, a lemma, [line 453](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/KleinGordon/RetardedKernel/BoundaryValue.lean#L453).
+**`KleinGordon.Spacetime.tendsto_retardedPointSource`**, a lemma, [line 453](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/KleinGordon/RetardedKernel/BoundaryValue.lean#L453).
 
 > **The retarded kernel is the boundary value of the resolvent.** The retarded kernel tested
 > against a real test function `φ` is the limit for `ε → 0+` of the integral of the spacetime Fourier
@@ -272,7 +272,7 @@ lemma tendsto_retardedPointSource (m : ℝ) (φ : 𝓓((⊤ : Opens (SpaceTime d
       (nhdsWithin 0 (Set.Ioi 0)) (nhds (retardedPointSource m (0 : SpaceTime d) φ))
 ```
 
-**`KleinGordon.Spacetime.retardedGreen_eq_advancedGreen_of_avoidsShell`**, a lemma, [line 477](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/KleinGordon/RetardedKernel/BoundaryValue.lean#L477).
+**`KleinGordon.Spacetime.retardedGreen_eq_advancedGreen_of_avoidsShell`**, a lemma, [line 477](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/KleinGordon/RetardedKernel/BoundaryValue.lean#L477).
 
 > **The causal propagator vanishes off the mass shell.** If the Fourier transform of a real
 > test source vanishes within `δ` of the mass shell then the retarded and the advanced solution
@@ -298,4 +298,4 @@ lemma retardedGreen_eq_advancedGreen_of_avoidsShell (m δ : ℝ) (hδ : 0 < δ) 
 
 ## Sources
 
-- [PhyslibAlpha/ClassicalFieldTheory/KleinGordon/RetardedKernel/BoundaryValue.lean at 2a1dfe43](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/KleinGordon/RetardedKernel/BoundaryValue.lean)
+- [PhyslibAlpha/ClassicalFieldTheory/KleinGordon/RetardedKernel/BoundaryValue.lean at 8c87bdfb](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/KleinGordon/RetardedKernel/BoundaryValue.lean)

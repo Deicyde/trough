@@ -8,7 +8,7 @@ proof: formalized
 
 # The transformation law of a derivative symbol
 
-The module `PhyslibAlpha.ClassicalFieldTheory.GaugeTheory.MatterField.JetComponent.TransformsIn`, [PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/MatterField/JetComponent/TransformsIn.lean](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/MatterField/JetComponent/TransformsIn.lean): 7 declarations, 7 with a docstring; 3 private, not shown.
+The module `PhyslibAlpha.ClassicalFieldTheory.GaugeTheory.MatterField.JetComponent.TransformsIn`, [PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/MatterField/JetComponent/TransformsIn.lean](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/MatterField/JetComponent/TransformsIn.lean): 7 declarations, 7 with a docstring; 3 private, not shown.
 
 ## i. Overview
 
@@ -51,7 +51,7 @@ The module `PhyslibAlpha.ClassicalFieldTheory.GaugeTheory.MatterField.JetCompone
 
 ### A.1. Iterated derivatives of a pure tensor
 
-**`jetIteratedDeriv_tmul`**, a lemma, [line 82](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/MatterField/JetComponent/TransformsIn.lean#L82).
+**`jetIteratedDeriv_tmul`**, a lemma, [line 82](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/MatterField/JetComponent/TransformsIn.lean#L82).
 
 > The iterated formal derivative of a `V`-valued jet acts on the jet-ring factor of a
 > pure tensor: the value factor carries no spacetime dependence.
@@ -63,7 +63,7 @@ lemma jetIteratedDeriv_tmul (x : Multiset (Fin 1 ⊕ Fin 3)) (f : SpaceTimeAlgeb
 
 ### A.2. The coefficient at a multiset of directions
 
-**`JetComponentSpace.jetCoeffAt`**, a def, [line 102](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/MatterField/JetComponent/TransformsIn.lean#L102).
+**`JetComponentSpace.jetCoeffAt`**, a def, [line 102](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/MatterField/JetComponent/TransformsIn.lean#L102).
 
 > The base-point Taylor coefficient at `x` derivatives of a jet of endomorphisms of `V`:
 > differentiate `x` times and evaluate at the base point. It is the `V`-valued jet toolkit
@@ -75,7 +75,7 @@ noncomputable def jetCoeffAt (x : Multiset (Fin 1 ⊕ Fin 3)) :
     SpaceTimeAlgebra ⊗[ℂ] Module.End ℂ V →ₗ[ℂ] Module.End ℂ V
 ```
 
-**`JetComponentSpace.jetCoeffAt_tmul`**, a lemma, [line 109](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/MatterField/JetComponent/TransformsIn.lean#L109).
+**`JetComponentSpace.jetCoeffAt_tmul`**, a lemma, [line 109](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/MatterField/JetComponent/TransformsIn.lean#L109).
 
 > On a pure coefficient `f ⊗ T` the Taylor coefficient is the base-point Taylor
 > coefficient of `f` times `T`.
@@ -86,7 +86,7 @@ lemma jetCoeffAt_tmul (x : Multiset (Fin 1 ⊕ Fin 3)) (f : SpaceTimeAlgebra) (T
       = constantCoeff (SpaceTimeAlgebra.iteratedPDeriv x f) • T
 ```
 
-**`JetComponentSpace.jetCoeffAt_apply`**, a lemma, [line 116](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/MatterField/JetComponent/TransformsIn.lean#L116).
+**`JetComponentSpace.jetCoeffAt_apply`**, a lemma, [line 116](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/MatterField/JetComponent/TransformsIn.lean#L116).
 
 > The Taylor coefficient of a jet of endomorphisms, evaluated at a vector, is the Taylor
 > coefficient of the `V`-valued jet obtained by feeding that vector to the coefficient.
@@ -99,7 +99,7 @@ lemma jetCoeffAt_apply (x : Multiset (Fin 1 ⊕ Fin 3))
         (TensorProduct.mk ℂ SpaceTimeAlgebra V)) c v))
 ```
 
-**`JetComponentSpace.jetCoeffAt_jetCoeff`**, a lemma, [line 134](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/MatterField/JetComponent/TransformsIn.lean#L134).
+**`JetComponentSpace.jetCoeffAt_jetCoeff`**, a lemma, [line 134](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/MatterField/JetComponent/TransformsIn.lean#L134).
 
 > The Taylor coefficients of the gauge coefficient are the Taylor coefficients of the
 > representation: `jetCoeff rep U` reproduces `rep U` on constant jets, and both sides of
@@ -118,7 +118,7 @@ lemma jetCoeffAt_jetCoeff [Module.Free ℂ V] [Module.Finite ℂ V]
 
 ### B.2. The action of a coefficient on a derivative monomial
 
-**`JetComponentSpace.symbolAction_basis_tmul`**, a lemma, [line 188](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/MatterField/JetComponent/TransformsIn.lean#L188).
+**`JetComponentSpace.symbolAction_basis_tmul`**, a lemma, [line 188](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/MatterField/JetComponent/TransformsIn.lean#L188).
 
 > A coefficient acts on the derivative symbol `∂_s ψ_φ` by the all-orders Leibniz
 > convolution of its base-point Taylor coefficients: each splitting `s = s₁ + s₂` of the
@@ -139,7 +139,7 @@ lemma symbolAction_basis_tmul (c : SpaceTimeAlgebra ⊗[ℂ] Module.End ℂ V)
 
 ### B.3. The gauge action on a derivative symbol
 
-**`JetComponentSpace.repDual_basis_tmul`**, a lemma, [line 218](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/MatterField/JetComponent/TransformsIn.lean#L218).
+**`JetComponentSpace.repDual_basis_tmul`**, a lemma, [line 218](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/MatterField/JetComponent/TransformsIn.lean#L218).
 
 > The transformation law of the derivative symbol `∂_s ψ_φ` under the jet gauge group:
 > the all-orders Leibniz convolution of the dual representation coefficients
@@ -167,4 +167,4 @@ lemma repDual_basis_tmul [Module.Free ℂ V] [Module.Finite ℂ V]
 
 ## Sources
 
-- [PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/MatterField/JetComponent/TransformsIn.lean at 2a1dfe43](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/MatterField/JetComponent/TransformsIn.lean)
+- [PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/MatterField/JetComponent/TransformsIn.lean at 8c87bdfb](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/MatterField/JetComponent/TransformsIn.lean)

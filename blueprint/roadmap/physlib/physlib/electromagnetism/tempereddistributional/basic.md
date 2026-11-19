@@ -8,7 +8,7 @@ proof: formalized
 
 # The Electromagnetic Potential (TemperedDistributional/Basic)
 
-The module `Physlib.Electromagnetism.TemperedDistributional.Basic`, [Physlib/Electromagnetism/TemperedDistributional/Basic.lean](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/Electromagnetism/TemperedDistributional/Basic.lean): 11 declarations, 6 with a docstring.
+The module `Physlib.Electromagnetism.TemperedDistributional.Basic`, [Physlib/Electromagnetism/TemperedDistributional/Basic.lean](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Electromagnetism/TemperedDistributional/Basic.lean): 11 declarations, 6 with a docstring.
 
 ## i. Overview
 
@@ -30,7 +30,7 @@ The module `Physlib.Electromagnetism.TemperedDistributional.Basic`, [Physlib/Ele
 
 ## A. The electromagnetic potential as a distribution
 
-**`Electromagnetism.TempDistElectromagneticPotential`**, an abbrev, [line 55](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/Electromagnetism/TemperedDistributional/Basic.lean#L55).
+**`Electromagnetism.TempDistElectromagneticPotential`**, an abbrev, [line 55](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Electromagnetism/TemperedDistributional/Basic.lean#L55).
 
 > The electromagnetic potential as a distribution and as a tensor `A^μ`.
 
@@ -40,7 +40,7 @@ noncomputable abbrev TempDistElectromagneticPotential (d : ℕ := 3)
 
 ### A.1. Constructors
 
-**`Electromagnetism.TempDistElectromagneticPotential.ofScalarPotential`**, a def, [line 74](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/Electromagnetism/TemperedDistributional/Basic.lean#L74).
+**`Electromagnetism.TempDistElectromagneticPotential.ofScalarPotential`**, a def, [line 74](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Electromagnetism/TemperedDistributional/Basic.lean#L74).
 
 > The creation of an electromagnetic potential from a scalar potential.
 
@@ -49,7 +49,7 @@ noncomputable def ofScalarPotential {d} (c : SpeedOfLight) :
     ((Time × Space d) →d[ℝ] ℝ) →ₗ[ℝ] TempDistElectromagneticPotential d
 ```
 
-**`Electromagnetism.TempDistElectromagneticPotential.ofStaticScalarPotential`**, a def, [line 88](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/Electromagnetism/TemperedDistributional/Basic.lean#L88).
+**`Electromagnetism.TempDistElectromagneticPotential.ofStaticScalarPotential`**, a def, [line 89](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Electromagnetism/TemperedDistributional/Basic.lean#L89).
 
 > The creation of an electromagnetic potential from a static scalar potential.
 
@@ -58,7 +58,7 @@ noncomputable def ofStaticScalarPotential {d} (c : SpeedOfLight) :
     ((Space d) →d[ℝ] ℝ) →ₗ[ℝ] TempDistElectromagneticPotential d
 ```
 
-**`Electromagnetism.TempDistElectromagneticPotential.ofStaticScalarPotentialFunction`**, a def, [line 96](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/Electromagnetism/TemperedDistributional/Basic.lean#L96).
+**`Electromagnetism.TempDistElectromagneticPotential.ofStaticScalarPotentialFunction`**, a def, [line 97](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Electromagnetism/TemperedDistributional/Basic.lean#L97).
 
 > The creation of an electromagnetic potential from a static scalar-potential function.
 >
@@ -70,7 +70,7 @@ noncomputable def ofStaticScalarPotentialFunction {d} (c : SpeedOfLight)
     (φ : Space d → ℝ) : TempDistElectromagneticPotential d
 ```
 
-**`Electromagnetism.TempDistElectromagneticPotential.ofStaticScalarPotentialFunction_of_isDistBounded`**, a lemma, [line 103](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/Electromagnetism/TemperedDistributional/Basic.lean#L103).
+**`Electromagnetism.TempDistElectromagneticPotential.ofStaticScalarPotentialFunction_of_isDistBounded`**, a lemma, [line 104](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Electromagnetism/TemperedDistributional/Basic.lean#L104).
 
 ```lean
 lemma ofStaticScalarPotentialFunction_of_isDistBounded {d} (c : SpeedOfLight)
@@ -79,7 +79,7 @@ lemma ofStaticScalarPotentialFunction_of_isDistBounded {d} (c : SpeedOfLight)
       ofStaticScalarPotential c (Space.distOfFunction φ hφ)
 ```
 
-**`Electromagnetism.TempDistElectromagneticPotential.ofStaticScalarPotentialFunction_eq_zero_of_not_isDistBounded`**, a lemma, [line 111](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/Electromagnetism/TemperedDistributional/Basic.lean#L111).
+**`Electromagnetism.TempDistElectromagneticPotential.ofStaticScalarPotentialFunction_eq_zero_of_not_isDistBounded`**, a lemma, [line 112](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Electromagnetism/TemperedDistributional/Basic.lean#L112).
 
 ```lean
 lemma ofStaticScalarPotentialFunction_eq_zero_of_not_isDistBounded {d}
@@ -87,7 +87,7 @@ lemma ofStaticScalarPotentialFunction_eq_zero_of_not_isDistBounded {d}
     ofStaticScalarPotentialFunction c φ = 0
 ```
 
-**`Electromagnetism.TempDistElectromagneticPotential.ofVectorPotential`**, a def, [line 118](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/Electromagnetism/TemperedDistributional/Basic.lean#L118).
+**`Electromagnetism.TempDistElectromagneticPotential.ofVectorPotential`**, a def, [line 119](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Electromagnetism/TemperedDistributional/Basic.lean#L119).
 
 > The creation of an electromagnetic potential from a vector potential.
 
@@ -97,7 +97,7 @@ noncomputable def ofVectorPotential {d} (c : SpeedOfLight) :
     TempDistElectromagneticPotential d
 ```
 
-**`Electromagnetism.TempDistElectromagneticPotential.ofStaticVectorPotential`**, a def, [line 130](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/Electromagnetism/TemperedDistributional/Basic.lean#L130).
+**`Electromagnetism.TempDistElectromagneticPotential.ofStaticVectorPotential`**, a def, [line 131](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Electromagnetism/TemperedDistributional/Basic.lean#L131).
 
 > The creation of an electromagnetic potential from a static vector potential.
 
@@ -108,7 +108,7 @@ noncomputable def ofStaticVectorPotential {d} (c : SpeedOfLight) :
 
 ### A.2. The derivative of the electromagnetic potential as a distribution
 
-**`Electromagnetism.TempDistElectromagneticPotential.distTensorDeriv_eq_sum_sum`**, a lemma, [line 143](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/Electromagnetism/TemperedDistributional/Basic.lean#L143).
+**`Electromagnetism.TempDistElectromagneticPotential.distTensorDeriv_eq_sum_sum`**, a lemma, [line 144](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Electromagnetism/TemperedDistributional/Basic.lean#L144).
 
 ```lean
 lemma distTensorDeriv_eq_sum_sum {d} (A : TempDistElectromagneticPotential d)
@@ -119,7 +119,7 @@ lemma distTensorDeriv_eq_sum_sum {d} (A : TempDistElectromagneticPotential d)
 
 ### A.3. The derivative in terms of the basis
 
-**`Electromagnetism.TempDistElectromagneticPotential.distTensorDeriv_basis_repr_apply`**, a lemma, [line 164](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/Electromagnetism/TemperedDistributional/Basic.lean#L164).
+**`Electromagnetism.TempDistElectromagneticPotential.distTensorDeriv_basis_repr_apply`**, a lemma, [line 165](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Electromagnetism/TemperedDistributional/Basic.lean#L165).
 
 ```lean
 lemma distTensorDeriv_basis_repr_apply {d} {μν : (Fin 1 ⊕ Fin d) × (Fin 1 ⊕ Fin d)}
@@ -129,7 +129,7 @@ lemma distTensorDeriv_basis_repr_apply {d} {μν : (Fin 1 ⊕ Fin d) × (Fin 1 �
     distDeriv μν.1 A ε μν.2
 ```
 
-**`Electromagnetism.TempDistElectromagneticPotential.toTensor_distTensorDeriv_basis_repr_apply`**, a lemma, [line 183](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/Electromagnetism/TemperedDistributional/Basic.lean#L183).
+**`Electromagnetism.TempDistElectromagneticPotential.toTensor_distTensorDeriv_basis_repr_apply`**, a lemma, [line 184](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Electromagnetism/TemperedDistributional/Basic.lean#L184).
 
 ```lean
 lemma toTensor_distTensorDeriv_basis_repr_apply {d} (A : TempDistElectromagneticPotential d)
@@ -146,4 +146,4 @@ lemma toTensor_distTensorDeriv_basis_repr_apply {d} (A : TempDistElectromagnetic
 
 ## Sources
 
-- [Physlib/Electromagnetism/TemperedDistributional/Basic.lean at 2a1dfe43](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/Electromagnetism/TemperedDistributional/Basic.lean)
+- [Physlib/Electromagnetism/TemperedDistributional/Basic.lean at 8c87bdfb](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Electromagnetism/TemperedDistributional/Basic.lean)

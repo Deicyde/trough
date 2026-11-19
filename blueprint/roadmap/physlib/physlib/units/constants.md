@@ -8,7 +8,7 @@ proof: formalized
 
 # Physical constants
 
-The module `Physlib.Units.Constants`, [Physlib/Units/Constants.lean](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/Units/Constants.lean): 1 declaration, 1 with a docstring.
+The module `Physlib.Units.Constants`, [Physlib/Units/Constants.lean](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Units/Constants.lean): 1 declaration, 1 with a docstring.
 
 > An index of the physical constants in Physlib, and the format of their files.
 
@@ -65,7 +65,7 @@ The module `Physlib.Units.Constants`, [Physlib/Units/Constants.lean](https://git
 > with dependent dimensions can only if their dimensionless ratios are `1`. So the lemma does not
 > extend to every constant: `h` cannot join `ℏ`, and the electron mass cannot join `c`, `ℏ` and `G`.
 
-**`exists_units_constants_eq_one`**, a lemma, [line 100](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/Units/Constants.lean#L100).
+**`exists_units_constants_eq_one`**, a lemma, [line 100](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Units/Constants.lean#L100).
 
 > There are units in which the speed of light and the Boltzmann constant are `1`.
 
@@ -81,4 +81,4 @@ lemma exists_units_constants_eq_one : ∃ u : LTMCTUnitChoices,
 
 ## Sources
 
-- [Physlib/Units/Constants.lean at 2a1dfe43](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/Units/Constants.lean)
+- [Physlib/Units/Constants.lean at 8c87bdfb](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Units/Constants.lean)

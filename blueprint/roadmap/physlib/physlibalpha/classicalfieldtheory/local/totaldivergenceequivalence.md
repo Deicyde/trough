@@ -8,7 +8,7 @@ proof: formalized
 
 # Lagrangian equivalence up to total divergences
 
-The module `PhyslibAlpha.ClassicalFieldTheory.Local.TotalDivergenceEquivalence`, [PhyslibAlpha/ClassicalFieldTheory/Local/TotalDivergenceEquivalence.lean](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/Local/TotalDivergenceEquivalence.lean): 17 declarations, 3 with a docstring.
+The module `PhyslibAlpha.ClassicalFieldTheory.Local.TotalDivergenceEquivalence`, [PhyslibAlpha/ClassicalFieldTheory/Local/TotalDivergenceEquivalence.lean](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/Local/TotalDivergenceEquivalence.lean): 17 declarations, 3 with a docstring.
 
 > Lagrangians differing by a total divergence have the same Euler-Lagrange equations.
 
@@ -44,7 +44,7 @@ The module `PhyslibAlpha.ClassicalFieldTheory.Local.TotalDivergenceEquivalence`,
 
 ## A. Equivalence predicates
 
-**`ClassicalFieldTheory.Local.HasTotalDivergenceDifference`**, a def, [line 65](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/Local/TotalDivergenceEquivalence.lean#L65).
+**`ClassicalFieldTheory.Local.HasTotalDivergenceDifference`**, a def, [line 65](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/Local/TotalDivergenceEquivalence.lean#L65).
 
 > A lagrangian `target` differs from `source` by the density of a packaged total divergence.
 >
@@ -56,7 +56,7 @@ def HasTotalDivergenceDifference (source target : Lagrangian d m (k + 1))
     (T : TotalDivergence d m k) : Prop
 ```
 
-**`ClassicalFieldTheory.Local.IsEulerLagrangeEquivalent`**, a def, [line 73](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/Local/TotalDivergenceEquivalence.lean#L73).
+**`ClassicalFieldTheory.Local.IsEulerLagrangeEquivalent`**, a def, [line 73](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/Local/TotalDivergenceEquivalence.lean#L73).
 
 > Two local lagrangians are Euler-Lagrange equivalent when they determine the same local
 > Euler-Lagrange operator along every field.
@@ -67,20 +67,20 @@ def IsEulerLagrangeEquivalent (source target : Lagrangian d m k) : Prop
 
 ## B. Euler-Lagrange equivalence API
 
-**`ClassicalFieldTheory.Local.IsEulerLagrangeEquivalent.refl`**, a lemma, [line 86](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/Local/TotalDivergenceEquivalence.lean#L86).
+**`ClassicalFieldTheory.Local.IsEulerLagrangeEquivalent.refl`**, a lemma, [line 86](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/Local/TotalDivergenceEquivalence.lean#L86).
 
 ```lean
 lemma refl (L : Lagrangian d m k) : IsEulerLagrangeEquivalent L L
 ```
 
-**`ClassicalFieldTheory.Local.IsEulerLagrangeEquivalent.symm`**, a lemma, [line 90](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/Local/TotalDivergenceEquivalence.lean#L90).
+**`ClassicalFieldTheory.Local.IsEulerLagrangeEquivalent.symm`**, a lemma, [line 90](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/Local/TotalDivergenceEquivalence.lean#L90).
 
 ```lean
 lemma symm {L1 L2 : Lagrangian d m k} (h : IsEulerLagrangeEquivalent L1 L2) :
     IsEulerLagrangeEquivalent L2 L1
 ```
 
-**`ClassicalFieldTheory.Local.IsEulerLagrangeEquivalent.trans`**, a lemma, [line 95](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/Local/TotalDivergenceEquivalence.lean#L95).
+**`ClassicalFieldTheory.Local.IsEulerLagrangeEquivalent.trans`**, a lemma, [line 95](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/Local/TotalDivergenceEquivalence.lean#L95).
 
 ```lean
 lemma trans {L1 L2 L3 : Lagrangian d m k}
@@ -88,7 +88,7 @@ lemma trans {L1 L2 L3 : Lagrangian d m k}
     IsEulerLagrangeEquivalent L1 L3
 ```
 
-**`ClassicalFieldTheory.Local.IsEulerLagrangeEquivalent.eulerLagrangeOp_eq`**, a lemma, [line 101](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/Local/TotalDivergenceEquivalence.lean#L101).
+**`ClassicalFieldTheory.Local.IsEulerLagrangeEquivalent.eulerLagrangeOp_eq`**, a lemma, [line 101](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/Local/TotalDivergenceEquivalence.lean#L101).
 
 ```lean
 lemma eulerLagrangeOp_eq {source target : Lagrangian d m k}
@@ -97,7 +97,7 @@ lemma eulerLagrangeOp_eq {source target : Lagrangian d m k}
     eulerLagrangeOp target f = eulerLagrangeOp source f
 ```
 
-**`ClassicalFieldTheory.Local.IsEulerLagrangeEquivalent.eulerLagrangeOp_eq_zero_iff`**, a lemma, [line 107](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/Local/TotalDivergenceEquivalence.lean#L107).
+**`ClassicalFieldTheory.Local.IsEulerLagrangeEquivalent.eulerLagrangeOp_eq_zero_iff`**, a lemma, [line 107](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/Local/TotalDivergenceEquivalence.lean#L107).
 
 ```lean
 lemma eulerLagrangeOp_eq_zero_iff {source target : Lagrangian d m k}
@@ -106,7 +106,7 @@ lemma eulerLagrangeOp_eq_zero_iff {source target : Lagrangian d m k}
     eulerLagrangeOp target f = 0 ↔ eulerLagrangeOp source f = 0
 ```
 
-**`ClassicalFieldTheory.Local.IsEulerLagrangeEquivalent.isCritical_iff`**, a lemma, [line 113](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/Local/TotalDivergenceEquivalence.lean#L113).
+**`ClassicalFieldTheory.Local.IsEulerLagrangeEquivalent.isCritical_iff`**, a lemma, [line 113](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/Local/TotalDivergenceEquivalence.lean#L113).
 
 ```lean
 lemma isCritical_iff {source target : Lagrangian d m k}
@@ -119,7 +119,7 @@ lemma isCritical_iff {source target : Lagrangian d m k}
     IsCritical target f ↔ IsCritical source f
 ```
 
-**`ClassicalFieldTheory.Local.IsEulerLagrangeEquivalent.isCritical_target_of_source`**, a lemma, [line 127](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/Local/TotalDivergenceEquivalence.lean#L127).
+**`ClassicalFieldTheory.Local.IsEulerLagrangeEquivalent.isCritical_target_of_source`**, a lemma, [line 127](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/Local/TotalDivergenceEquivalence.lean#L127).
 
 ```lean
 lemma isCritical_target_of_source {source target : Lagrangian d m k}
@@ -133,7 +133,7 @@ lemma isCritical_target_of_source {source target : Lagrangian d m k}
     IsCritical target f
 ```
 
-**`ClassicalFieldTheory.Local.IsEulerLagrangeEquivalent.isCritical_source_of_target`**, a lemma, [line 138](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/Local/TotalDivergenceEquivalence.lean#L138).
+**`ClassicalFieldTheory.Local.IsEulerLagrangeEquivalent.isCritical_source_of_target`**, a lemma, [line 138](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/Local/TotalDivergenceEquivalence.lean#L138).
 
 ```lean
 lemma isCritical_source_of_target {source target : Lagrangian d m k}
@@ -149,7 +149,7 @@ lemma isCritical_source_of_target {source target : Lagrangian d m k}
 
 ## C. Packaged total-divergence equivalences
 
-**`ClassicalFieldTheory.Local.TotalDivergenceEquivalence`**, a structure, [line 162](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/Local/TotalDivergenceEquivalence.lean#L162).
+**`ClassicalFieldTheory.Local.TotalDivergenceEquivalence`**, a structure, [line 162](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/Local/TotalDivergenceEquivalence.lean#L162).
 
 > A packaged equivalence between two local lagrangians whose densities differ by a total
 > divergence.
@@ -173,7 +173,7 @@ structure TotalDivergenceEquivalence (d m k : ℕ) where
   sameEulerLagrangeOp : IsEulerLagrangeEquivalent source target
 ```
 
-**`ClassicalFieldTheory.Local.TotalDivergenceEquivalence.actionDensity_eq`**, a lemma, [line 180](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/Local/TotalDivergenceEquivalence.lean#L180).
+**`ClassicalFieldTheory.Local.TotalDivergenceEquivalence.actionDensity_eq`**, a lemma, [line 180](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/Local/TotalDivergenceEquivalence.lean#L180).
 
 ```lean
 lemma actionDensity_eq (E : TotalDivergenceEquivalence d m k)
@@ -182,7 +182,7 @@ lemma actionDensity_eq (E : TotalDivergenceEquivalence d m k)
       fun x => actionDensity E.source f x + actionDensity E.divergence.lagrangian f x
 ```
 
-**`ClassicalFieldTheory.Local.TotalDivergenceEquivalence.eulerLagrangeOp_eq`**, a lemma, [line 186](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/Local/TotalDivergenceEquivalence.lean#L186).
+**`ClassicalFieldTheory.Local.TotalDivergenceEquivalence.eulerLagrangeOp_eq`**, a lemma, [line 186](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/Local/TotalDivergenceEquivalence.lean#L186).
 
 ```lean
 lemma eulerLagrangeOp_eq (E : TotalDivergenceEquivalence d m k)
@@ -190,7 +190,7 @@ lemma eulerLagrangeOp_eq (E : TotalDivergenceEquivalence d m k)
     eulerLagrangeOp E.target f = eulerLagrangeOp E.source f
 ```
 
-**`ClassicalFieldTheory.Local.TotalDivergenceEquivalence.eulerLagrangeOp_eq_zero_iff`**, a lemma, [line 191](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/Local/TotalDivergenceEquivalence.lean#L191).
+**`ClassicalFieldTheory.Local.TotalDivergenceEquivalence.eulerLagrangeOp_eq_zero_iff`**, a lemma, [line 191](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/Local/TotalDivergenceEquivalence.lean#L191).
 
 ```lean
 lemma eulerLagrangeOp_eq_zero_iff (E : TotalDivergenceEquivalence d m k)
@@ -198,7 +198,7 @@ lemma eulerLagrangeOp_eq_zero_iff (E : TotalDivergenceEquivalence d m k)
     eulerLagrangeOp E.target f = 0 ↔ eulerLagrangeOp E.source f = 0
 ```
 
-**`ClassicalFieldTheory.Local.TotalDivergenceEquivalence.isCritical_iff`**, a lemma, [line 196](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/Local/TotalDivergenceEquivalence.lean#L196).
+**`ClassicalFieldTheory.Local.TotalDivergenceEquivalence.isCritical_iff`**, a lemma, [line 196](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/Local/TotalDivergenceEquivalence.lean#L196).
 
 ```lean
 lemma isCritical_iff (E : TotalDivergenceEquivalence d m k)
@@ -210,7 +210,7 @@ lemma isCritical_iff (E : TotalDivergenceEquivalence d m k)
     IsCritical E.target f ↔ IsCritical E.source f
 ```
 
-**`ClassicalFieldTheory.Local.TotalDivergenceEquivalence.isCritical_target_of_source`**, a lemma, [line 205](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/Local/TotalDivergenceEquivalence.lean#L205).
+**`ClassicalFieldTheory.Local.TotalDivergenceEquivalence.isCritical_target_of_source`**, a lemma, [line 205](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/Local/TotalDivergenceEquivalence.lean#L205).
 
 ```lean
 lemma isCritical_target_of_source (E : TotalDivergenceEquivalence d m k)
@@ -223,7 +223,7 @@ lemma isCritical_target_of_source (E : TotalDivergenceEquivalence d m k)
     IsCritical E.target f
 ```
 
-**`ClassicalFieldTheory.Local.TotalDivergenceEquivalence.isCritical_source_of_target`**, a lemma, [line 215](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/Local/TotalDivergenceEquivalence.lean#L215).
+**`ClassicalFieldTheory.Local.TotalDivergenceEquivalence.isCritical_source_of_target`**, a lemma, [line 215](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/Local/TotalDivergenceEquivalence.lean#L215).
 
 ```lean
 lemma isCritical_source_of_target (E : TotalDivergenceEquivalence d m k)
@@ -242,4 +242,4 @@ lemma isCritical_source_of_target (E : TotalDivergenceEquivalence d m k)
 
 ## Sources
 
-- [PhyslibAlpha/ClassicalFieldTheory/Local/TotalDivergenceEquivalence.lean at 2a1dfe43](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/Local/TotalDivergenceEquivalence.lean)
+- [PhyslibAlpha/ClassicalFieldTheory/Local/TotalDivergenceEquivalence.lean at 8c87bdfb](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/Local/TotalDivergenceEquivalence.lean)

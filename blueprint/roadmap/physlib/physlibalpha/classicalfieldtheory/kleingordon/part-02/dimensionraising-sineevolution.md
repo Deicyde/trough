@@ -8,7 +8,7 @@ proof: formalized
 
 # Dimension raising for the sine evolution
 
-The module `PhyslibAlpha.ClassicalFieldTheory.KleinGordon.DimensionRaising.SineEvolution`, [PhyslibAlpha/ClassicalFieldTheory/KleinGordon/DimensionRaising/SineEvolution.lean](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/KleinGordon/DimensionRaising/SineEvolution.lean): 1 declaration, 1 with a docstring.
+The module `PhyslibAlpha.ClassicalFieldTheory.KleinGordon.DimensionRaising.SineEvolution`, [PhyslibAlpha/ClassicalFieldTheory/KleinGordon/DimensionRaising/SineEvolution.lean](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/KleinGordon/DimensionRaising/SineEvolution.lean): 1 declaration, 1 with a docstring.
 
 > The sine evolution in `d + 2` space dimensions is `-(1 / (2π ρ)) ∂ρ` of the one in `d` dimensions.
 
@@ -36,7 +36,7 @@ The module `PhyslibAlpha.ClassicalFieldTheory.KleinGordon.DimensionRaising.SineE
 
 > - `hasDerivAt_sineEvolution_radial` : dimension raising on the slices for every `d` and every mass.
 
-**`KleinGordon.hasDerivAt_sineEvolution_radial`**, a lemma, [line 62](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/KleinGordon/DimensionRaising/SineEvolution.lean#L62).
+**`KleinGordon.hasDerivAt_sineEvolution_radial`**, a lemma, [line 62](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/KleinGordon/DimensionRaising/SineEvolution.lean#L62).
 
 > **Dimension raising on the slices.** Let `g'` be a radial Schwartz function on `E × ℝ²` and let
 > `gb` be its integral over the plane. The sine evolution of `gb` along a ray has the derivative
@@ -64,4 +64,4 @@ lemma hasDerivAt_sineEvolution_radial {μ : ℝ} (hμ : 0 ≤ μ) (r : ℝ)
 
 ## Sources
 
-- [PhyslibAlpha/ClassicalFieldTheory/KleinGordon/DimensionRaising/SineEvolution.lean at 2a1dfe43](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/KleinGordon/DimensionRaising/SineEvolution.lean)
+- [PhyslibAlpha/ClassicalFieldTheory/KleinGordon/DimensionRaising/SineEvolution.lean at 8c87bdfb](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/KleinGordon/DimensionRaising/SineEvolution.lean)

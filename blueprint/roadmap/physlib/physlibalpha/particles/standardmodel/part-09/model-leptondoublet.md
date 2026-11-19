@@ -8,7 +8,7 @@ proof: formalized
 
 # The lepton doublet of the Standard Model table
 
-The module `PhyslibAlpha.Particles.StandardModel.Model.LeptonDoublet`, [PhyslibAlpha/Particles/StandardModel/Model/LeptonDoublet.lean](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/Model/LeptonDoublet.lean): 1 declaration, 1 with a docstring.
+The module `PhyslibAlpha.Particles.StandardModel.Model.LeptonDoublet`, [PhyslibAlpha/Particles/StandardModel/Model/LeptonDoublet.lean](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/Model/LeptonDoublet.lean): 1 declaration, 1 with a docstring.
 
 ## i. Overview
 
@@ -35,7 +35,7 @@ The module `PhyslibAlpha.Particles.StandardModel.Model.LeptonDoublet`, [PhyslibA
 
 ## A. The lepton doublet of the table
 
-**`StandardModel.Model.leptonDoublet_toMatterField_eq`**, a lemma, [line 72](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/Model/LeptonDoublet.lean#L72).
+**`StandardModel.Model.leptonDoublet_toMatterField_eq`**, a lemma, [line 72](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/Model/LeptonDoublet.lean#L72).
 
 > **The matter field of the datum is the matter field of the species**: the table's
 > description and the species' description of the lepton doublet are one definition.
@@ -51,4 +51,4 @@ lemma leptonDoublet_toMatterField_eq :
 
 ## Sources
 
-- [PhyslibAlpha/Particles/StandardModel/Model/LeptonDoublet.lean at 2a1dfe43](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/Model/LeptonDoublet.lean)
+- [PhyslibAlpha/Particles/StandardModel/Model/LeptonDoublet.lean at 8c87bdfb](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/Model/LeptonDoublet.lean)

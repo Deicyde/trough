@@ -1,6 +1,6 @@
 {
  "schema": "trough-physlib/v1",
- "rev": "2a1dfe43134b49b643642f13d33031754021bb5d",
+ "rev": "8c87bdfb015de47e82da811567aaa7a2a05353f4",
  "modules": [
   {
    "file": "PhyslibAlpha/CondensedMatter/Bloch/Algebraic.lean",
@@ -1028,15 +1028,15 @@
    "copyright": "2026 Tom Ole Diem",
    "sections": [
     {
-     "line": 64,
+     "line": 65,
      "text": "## A. Counting measure on the sites"
     },
     {
-     "line": 92,
+     "line": 93,
      "text": "## B. The representations"
     },
     {
-     "line": 173,
+     "line": 174,
      "text": "## C. Symmetry reduction"
     }
    ],
@@ -1044,7 +1044,7 @@
     {
      "name": "",
      "kind": "instance",
-     "line": 67,
+     "line": 68,
      "doc": "Every set of sites is measurable.",
      "statement": "instance : MeasurableSpace (CellSite G F)",
      "sorry": false
@@ -1052,7 +1052,7 @@
     {
      "name": "",
      "kind": "instance",
-     "line": 69,
+     "line": 70,
      "doc": "",
      "statement": "instance : MeasurableSingletonClass (CellSite G F)",
      "sorry": false
@@ -1060,7 +1060,7 @@
     {
      "name": "",
      "kind": "instance",
-     "line": 71,
+     "line": 72,
      "doc": "",
      "statement": "instance [Countable G] [Countable F] : Countable (CellSite G F)",
      "sorry": false
@@ -1068,7 +1068,7 @@
     {
      "name": "CondensedMatter.measurePreserving_count",
      "kind": "lemma",
-     "line": 76,
+     "line": 77,
      "doc": "A permutation of a countable set preserves the counting measure.",
      "statement": "lemma measurePreserving_count {X : Type*} [MeasurableSpace X] [MeasurableSingletonClass X]\n    [Countable X] (e : Equiv.Perm X) :\n    MeasurePreserving e (Measure.count : Measure X) Measure.count",
      "sorry": false
@@ -1076,7 +1076,7 @@
     {
      "name": "CondensedMatter.SiteSpace",
      "kind": "abbrev",
-     "line": 97,
+     "line": 98,
      "doc": "The square-summable functions on the sites of a crystal built from a unit cell.",
      "statement": "abbrev SiteSpace (G F : Type*)",
      "sorry": false
@@ -1084,7 +1084,7 @@
     {
      "name": "CondensedMatter.siteTranslationPerm",
      "kind": "def",
-     "line": 101,
+     "line": 102,
      "doc": "The translations act on the sites by permutations.",
      "statement": "def siteTranslationPerm (G F : Type*) [AddCommGroup G] :\n    Multiplicative G →* Equiv.Perm (CellSite G F)",
      "sorry": false
@@ -1092,7 +1092,7 @@
     {
      "name": "CondensedMatter.siteTranslation",
      "kind": "def",
-     "line": 106,
+     "line": 107,
      "doc": "**The translation representation** on `ℓ²` of the sites: `(U_a ψ)(x) = ψ(-a + x)`.",
      "statement": "def siteTranslation (G F : Type*) [AddCommGroup G] [Countable G] [Countable F] :\n    Multiplicative G →* unitary (SiteSpace G F →L[ℂ] SiteSpace G F)",
      "sorry": false
@@ -1100,7 +1100,7 @@
     {
      "name": "CondensedMatter.siteSymmetryPerm",
      "kind": "def",
-     "line": 114,
+     "line": 115,
      "doc": "The bond-preserving symmetries act on the sites by permutations.",
      "statement": "def siteSymmetryPerm : g.symmetries →* Equiv.Perm (CellSite G F)",
      "sorry": false
@@ -1108,7 +1108,7 @@
     {
      "name": "CondensedMatter.siteSymmetry",
      "kind": "def",
-     "line": 118,
+     "line": 119,
      "doc": "**The symmetry representation** on `ℓ²` of the sites: `(U_s ψ)(x) = ψ(s⁻¹ • x)`.",
      "statement": "def siteSymmetry : g.symmetries →* unitary (SiteSpace G F →L[ℂ] SiteSpace G F)",
      "sorry": false
@@ -1116,7 +1116,7 @@
     {
      "name": "CondensedMatter.latticeAut",
      "kind": "def",
-     "line": 123,
+     "line": 124,
      "doc": "The action of a symmetry on the lattice of translations, through its linear part.",
      "statement": "def latticeAut : g.symmetries →* MulAut (Multiplicative G)",
      "sorry": false
@@ -1124,7 +1124,7 @@
     {
      "name": "CondensedMatter.siteSymmetryPerm_translation",
      "kind": "lemma",
-     "line": 133,
+     "line": 134,
      "doc": "A symmetry moves a translated site to the correspondingly translated image: the permutations\nof the sites satisfy `s ∘ τ_a = τ_{A a} ∘ s`.",
      "statement": "lemma siteSymmetryPerm_translation (s : g.symmetries) (a : Multiplicative G) :\n    siteSymmetryPerm g s * siteTranslationPerm G F a =\n      siteTranslationPerm G F (latticeAut g s a) * siteSymmetryPerm g s",
      "sorry": false
@@ -1132,7 +1132,7 @@
     {
      "name": "CondensedMatter.siteTranslation_covariant",
      "kind": "lemma",
-     "line": 149,
+     "line": 150,
      "doc": "**The translations and the bond-preserving symmetries form a covariant representation on\n`ℓ²` of the sites.**",
      "statement": "lemma siteTranslation_covariant :\n    UnitaryRep.IsCovariantRep (latticeAut g) (siteTranslation G F) (siteSymmetry g)",
      "sorry": false
@@ -1140,7 +1140,7 @@
     {
      "name": "CondensedMatter.spectrum_sectorOp_eq_site",
      "kind": "lemma",
-     "line": 183,
+     "line": 184,
      "doc": "**Symmetry reduction on a crystal.** Let `T` be a bounded operator on `ℓ²` of the sites of a\ncrystal, commuting with the translations and with the bond-preserving symmetries. Its restriction\nto the sector of total momenta in a set `S` of characters is unitarily equivalent to its restriction\nto the sector of momenta in the image of `S` under any symmetry, by the symmetry itself. In\nparticular their spectra agree.",
      "statement": "lemma spectrum_sectorOp_eq_site {T : SiteSpace G F →L[ℂ] SiteSpace G F}\n    (hTπ : ∀ a, Commute ((siteTranslation G F a : unitary _) : SiteSpace G F →L[ℂ] SiteSpace G F) T)\n    (hTρ : ∀ s, Commute ((siteSymmetry g s : unitary _) : SiteSpace G F →L[ℂ] SiteSpace G F) T)\n    (s : g.symmetries) {S : Set (PontryaginDual (Multiplicative G))} (hS : MeasurableSet S) :\n    spectrum ℂ (UnitaryRep.sectorOp hTπ S) =\n      spectrum ℂ (UnitaryRep.sectorOp hTπ (UnitaryRep.dualAct (latticeAut g) s '' S))",
      "sorry": false
@@ -3170,15 +3170,15 @@
    "file": "PhyslibAlpha/CondensedMatter/Crystal/Folner.lean",
    "module": "PhyslibAlpha.CondensedMatter.Crystal.Folner",
    "title": "Boxes of a lattice are asymptotically translation invariant",
-   "doc": "The cubes `{0, …, n-1}^d` of the lattice `ℤ^d` satisfy the Følner condition for the translations.\n\n## i. Overview\n\nA translation by `h` moves the cube `B_n = {0, …, n-1}^d` to a cube that overlaps `B_n` in\n`∏_j (n - |h_j|)` points, so the fraction of points not shared is `1 - ∏_j (1 - |h_j|/n)`, which\ntends to zero. This is the Følner condition (`ProbabilisticTheory.IsRightFolner`) that makes the\naverages of a state over the translations by the elements of `B_n` invariant in the limit.\n\n## ii. Key results\n\n- `box` : the cube `{0, …, m-1}^d` of `ℤ^d`.\n- `card_box` : it has `m ^ d` points.\n- `isRightFolner_boxes` : the cubes are asymptotically invariant under translations along any\n  ultrafilter finer than the filter of large cubes.\n\n## iii. Table of contents\n\n- A. Cubes and their translates\n- B. The Følner property\n\n## iv. References\n\n* F. Greenleaf, Invariant Means on Topological Groups.",
+   "doc": "The cubes `{0, …, n-1}^d` of the lattice `ℤ^d` satisfy the Følner condition for the translations.\n\n## i. Overview\n\nA translation by `h` moves the cube `B_n = {0, …, n-1}^d` to a cube that overlaps `B_n` in\n`∏_j (n - |h_j|)` points, so the fraction of points not shared is `1 - ∏_j (1 - |h_j|/n)`, which\ntends to zero. This is the Følner condition (`PhyslibAlpha.ProbabilisticTheory.IsRightFolner`)\nthat makes the averages of a state over the translations by the elements of `B_n` invariant\nin the limit.\n\n## ii. Key results\n\n- `box` : the cube `{0, …, m-1}^d` of `ℤ^d`.\n- `card_box` : it has `m ^ d` points.\n- `isRightFolner_boxes` : the cubes are asymptotically invariant under translations along any\n  ultrafilter finer than the filter of large cubes.\n\n## iii. Table of contents\n\n- A. Cubes and their translates\n- B. The Følner property\n\n## iv. References\n\n* F. Greenleaf, Invariant Means on Topological Groups.",
    "copyright": "2026 Tom Ole Diem",
    "sections": [
     {
-     "line": 51,
+     "line": 52,
      "text": "## A. Cubes and their translates"
     },
     {
-     "line": 83,
+     "line": 84,
      "text": "## B. The Følner property"
     }
    ],
@@ -3186,7 +3186,7 @@
     {
      "name": "CondensedMatter.Crystal.box",
      "kind": "def",
-     "line": 54,
+     "line": 55,
      "doc": "The cube `{0, …, m-1}^d` of the lattice `ℤ^d`.",
      "statement": "def box (d m : ℕ) : Finset (Fin d → ℤ)",
      "sorry": false
@@ -3194,7 +3194,7 @@
     {
      "name": "CondensedMatter.Crystal.card_box",
      "kind": "lemma",
-     "line": 56,
+     "line": 57,
      "doc": "",
      "statement": "lemma card_box (d m : ℕ) : (box d m).card = m ^ d",
      "sorry": false
@@ -3202,7 +3202,7 @@
     {
      "name": "CondensedMatter.Crystal.image_add_box",
      "kind": "lemma",
-     "line": 59,
+     "line": 60,
      "doc": "",
      "statement": "lemma image_add_box (d m : ℕ) (h : Fin d → ℤ) :\n    (box d m).image (· + h) = Fintype.piFinset fun j => Finset.Ico (h j) (m + h j)",
      "sorry": false
@@ -3210,7 +3210,7 @@
     {
      "name": "CondensedMatter.Crystal.card_image_add_box",
      "kind": "lemma",
-     "line": 74,
+     "line": 75,
      "doc": "",
      "statement": "lemma card_image_add_box (d m : ℕ) (h : Fin d → ℤ) : ((box d m).image (· + h)).card = m ^ d",
      "sorry": false
@@ -3218,7 +3218,7 @@
     {
      "name": "CondensedMatter.Crystal.card_inter_box",
      "kind": "lemma",
-     "line": 78,
+     "line": 79,
      "doc": "The overlap of the cube with its translate.",
      "statement": "lemma card_inter_box (d m : ℕ) (h : Fin d → ℤ) :\n    ((box d m).image (· + h) ∩ box d m).card =\n      ∏ j, (Finset.Ico (h j) (m + h j) ∩ Finset.Ico (0 : ℤ) m).card",
      "sorry": false
@@ -3226,7 +3226,7 @@
     {
      "name": "CondensedMatter.Crystal.card_Ico_inter",
      "kind": "lemma",
-     "line": 85,
+     "line": 86,
      "doc": "",
      "statement": "lemma card_Ico_inter (m : ℕ) (a : ℤ) (ha : |a| ≤ m) :\n    (Finset.Ico a (m + a) ∩ Finset.Ico (0 : ℤ) m).card = m - a.natAbs",
      "sorry": false
@@ -3234,7 +3234,7 @@
     {
      "name": "CondensedMatter.Crystal.card_sdiff_add_card_sdiff",
      "kind": "lemma",
-     "line": 92,
+     "line": 93,
      "doc": "The number of points of the cube not shared with its translate.",
      "statement": "lemma card_sdiff_add_card_sdiff (d m : ℕ) (h : Fin d → ℤ) :\n    (((box d m).image (· + h) \\ box d m).card + (box d m \\ (box d m).image (· + h)).card : ℝ) =\n      2 * ((m : ℝ) ^ d - ∏ j, ((Finset.Ico (h j) (m + h j) ∩ Finset.Ico (0 : ℤ) m).card : ℝ))",
      "sorry": false
@@ -3242,7 +3242,7 @@
     {
      "name": "CondensedMatter.Crystal.tendsto_box_sdiff",
      "kind": "lemma",
-     "line": 108,
+     "line": 109,
      "doc": "**The cubes are asymptotically invariant under translation**: the fraction of the points of\n`{0, …, n}^d` that are not shared with a fixed translate tends to zero.",
      "statement": "lemma tendsto_box_sdiff (d : ℕ) (h : Fin d → ℤ) :\n    Tendsto (fun n : ℕ => (((box d (n + 1)).image (· + h) \\ box d (n + 1)).card +\n      (box d (n + 1) \\ (box d (n + 1)).image (· + h)).card : ℝ) / ((n + 1 : ℕ) : ℝ) ^ d)\n      atTop (𝓝 0)",
      "sorry": false
@@ -3250,7 +3250,7 @@
     {
      "name": "CondensedMatter.Crystal.boxes",
      "kind": "def",
-     "line": 143,
+     "line": 144,
      "doc": "The cubes `{0, …, n}^d`, as finite sets of the translation group.",
      "statement": "def boxes (d n : ℕ) : Finset (Multiplicative (Fin d → ℤ))",
      "sorry": false
@@ -3258,7 +3258,7 @@
     {
      "name": "CondensedMatter.Crystal.image_mul_boxes",
      "kind": "lemma",
-     "line": 146,
+     "line": 147,
      "doc": "",
      "statement": "lemma image_mul_boxes (d n : ℕ) (h : Multiplicative (Fin d → ℤ)) :\n    (boxes d n).image (· * h) =\n      ((box d (n + 1)).image (· + Multiplicative.toAdd h)).map\n        Multiplicative.ofAdd.toEmbedding",
      "sorry": false
@@ -3266,7 +3266,7 @@
     {
      "name": "CondensedMatter.Crystal.isRightFolner_boxes",
      "kind": "lemma",
-     "line": 160,
+     "line": 161,
      "doc": "**The cubes are a Følner family** for the translations of `ℤ^d`, along any ultrafilter on\n`ℕ` finer than the filter of large cubes.",
      "statement": "lemma isRightFolner_boxes (d : ℕ) (𝒰 : Ultrafilter ℕ) (h𝒰 : (𝒰 : Filter ℕ) ≤ atTop) :\n    IsRightFolner (boxes d) 𝒰",
      "sorry": false
@@ -3804,11 +3804,11 @@
    "copyright": "2026 Tom Ole Diem",
    "sections": [
     {
-     "line": 73,
+     "line": 74,
      "text": "## A. The representation on the GNS space"
     },
     {
-     "line": 121,
+     "line": 122,
      "text": "## B. The symmetry reduction"
     }
    ],
@@ -3816,7 +3816,7 @@
     {
      "name": "CondensedMatter.Crystal.manyBodyRep",
      "kind": "def",
-     "line": 76,
+     "line": 77,
      "doc": "**The unitary representation of the symmetries on the GNS space** of an invariant state.",
      "statement": "def manyBodyRep : H →* unitary (ω.GNS →L[ℂ] ω.GNS)",
      "sorry": false
@@ -3824,7 +3824,7 @@
     {
      "name": "CondensedMatter.Crystal.translationIn",
      "kind": "def",
-     "line": 82,
+     "line": 83,
      "doc": "The translations as elements of the symmetry subgroup.",
      "statement": "def translationIn : Multiplicative G →* H",
      "sorry": false
@@ -3832,7 +3832,7 @@
     {
      "name": "CondensedMatter.Crystal.manyBodyTranslation",
      "kind": "def",
-     "line": 87,
+     "line": 88,
      "doc": "The translation representation on the GNS space.",
      "statement": "def manyBodyTranslation : Multiplicative G →* unitary (ω.GNS →L[ℂ] ω.GNS)",
      "sorry": false
@@ -3840,7 +3840,7 @@
     {
      "name": "CondensedMatter.Crystal.manyBodyTranslation_apply",
      "kind": "lemma",
-     "line": 95,
+     "line": 96,
      "doc": "",
      "statement": "lemma manyBodyTranslation_apply (a : Multiplicative G) :\n    manyBodyTranslation H ω hω htrans a = manyBodyRep H ω hω (translationIn H htrans a)",
      "sorry": false
@@ -3848,7 +3848,7 @@
     {
      "name": "CondensedMatter.Crystal.linearAut",
      "kind": "def",
-     "line": 99,
+     "line": 100,
      "doc": "The action of a symmetry on the lattice of translations, through its linear part.",
      "statement": "def linearAut : H →* MulAut (Multiplicative G)",
      "sorry": false
@@ -3856,7 +3856,7 @@
     {
      "name": "CondensedMatter.Crystal.manyBodyRep_covariant",
      "kind": "lemma",
-     "line": 110,
+     "line": 111,
      "doc": "**The translations and the symmetries are covariant on the GNS space.**",
      "statement": "lemma manyBodyRep_covariant :\n    UnitaryRep.IsCovariantRep (linearAut H) (manyBodyTranslation H ω hω htrans)\n      (manyBodyRep H ω hω)",
      "sorry": false
@@ -3864,7 +3864,7 @@
     {
      "name": "CondensedMatter.Crystal.commute_manyBodyRep",
      "kind": "lemma",
-     "line": 136,
+     "line": 137,
      "doc": "A dynamics commuting with a symmetry is implemented by an operator commuting with the\nunitary implementing the symmetry.",
      "statement": "lemma commute_manyBodyRep (s : H) :\n    Commute ((manyBodyRep H ω hω s : unitary (ω.GNS →L[ℂ] ω.GNS)) : ω.GNS →L[ℂ] ω.GNS)\n      (AlgState.gnsAut τ hτ)",
      "sorry": false
@@ -3872,7 +3872,7 @@
     {
      "name": "CondensedMatter.Crystal.commute_manyBodyTranslation",
      "kind": "lemma",
-     "line": 147,
+     "line": 148,
      "doc": "A dynamics commuting with the symmetries commutes with the translation representation.",
      "statement": "lemma commute_manyBodyTranslation (a : Multiplicative G) :\n    Commute ((manyBodyTranslation H ω hω htrans a : unitary (ω.GNS →L[ℂ] ω.GNS)) :\n      ω.GNS →L[ℂ] ω.GNS) (AlgState.gnsAut τ hτ)",
      "sorry": false
@@ -3880,7 +3880,7 @@
     {
      "name": "CondensedMatter.Crystal.spectrum_sectorOp_eq_manyBody",
      "kind": "lemma",
-     "line": 161,
+     "line": 162,
      "doc": "**Symmetry reduction of a many-body dynamics on an infinite crystal.** Let `ω` be a state of the\nquasi-local algebra invariant under a group `H` of cell symmetries containing the translations,\nand `τ` an automorphism preserving `ω` and commuting with `H`: a time evolution. Then the unitary\nimplementing `τ` is reduced by the sectors of total momentum, and its restriction to the sector of\nthe momenta in a set `S` has the same spectrum as its restriction to the sector of the momenta in\nthe image of `S` under any symmetry `s` in `H`.",
      "statement": "lemma spectrum_sectorOp_eq_manyBody (s : H)\n    {S : Set (PontryaginDual (Multiplicative G))} (hS : MeasurableSet S) :\n    spectrum ℂ (UnitaryRep.sectorOp\n        (commute_manyBodyTranslation H ω hω htrans τ hτ hcomm) S) =\n      spectrum ℂ (UnitaryRep.sectorOp\n        (commute_manyBodyTranslation H ω hω htrans τ hτ hcomm)\n        (UnitaryRep.dualAct (linearAut H) s '' S))",
      "sorry": false
@@ -9032,27 +9032,27 @@
    "file": "PhyslibAlpha/CondensedMatter/TightBindingChain/Open/Basic.lean",
    "module": "PhyslibAlpha.CondensedMatter.TightBindingChain.Open.Basic",
    "title": "The tight binding chain with open boundary conditions",
-   "doc": "The position operator and the Hamiltonian of the tight binding chain with open boundaries.\n\n## i. Overview\n\nA finite piece of a 1d solid has two ends: the electron cannot hop from the last site back to\nthe first. This is the tight binding chain with open boundary conditions. It also carries a\nposition operator, which the periodic chain lacks, since there the site `N` is identified\nwith the site `0`.\n\n## ii. Key results\n\n- `position` : the position operator `X = ∑ n, a n |n⟩⟨n|`.\n- `openHamiltonian` : the Hamiltonian with open boundary conditions.\n- `inner_openHamiltonian` : the open chain only hops between neighbouring sites.\n- `inner_commutator_position` : `⟨m|(A X - X A)|n⟩ = a (n - m) ⟨m|A|n⟩`.\n\n## iii. Table of contents\n\n- A. The position operator\n- B. The Hamiltonian with open boundary conditions\n  - B.1. Hermiticity\n  - B.2. Matrix elements\n- C. Commutators with the position operator\n\n## iv. References\n\n* https://www.damtp.cam.ac.uk/user/tong/aqm/aqmtwo.pdf. [ref: tong_statistical_physics]",
+   "doc": "The position operator and the Hamiltonian of the tight binding chain with open boundaries.\n\n## i. Overview\n\nA finite piece of a 1d solid has two ends: the electron cannot hop from the last site back to\nthe first. This is the tight binding chain with open boundary conditions. It also carries a\nposition operator, which the periodic chain lacks, since there the site `N` is identified\nwith the site `0`.\n\n## ii. Key results\n\n- `position` : the position operator `X = ∑ n, a n |n⟩⟨n|`.\n- `openHamiltonian` : the Hamiltonian with open boundary conditions.\n- `inner_openHamiltonian` : the open chain only hops between neighbouring sites.\n- `inner_openHamiltonian_eq_adjMatrix` : its matrix elements are `E0` times the identity minus `t`\n  times the adjacency matrix of the path graph.\n- `inner_commutator_position` : `⟨m|(A X - X A)|n⟩ = a (n - m) ⟨m|A|n⟩`.\n\n## iii. Table of contents\n\n- A. The position operator\n- B. The Hamiltonian with open boundary conditions\n  - B.1. Hermiticity\n  - B.2. Matrix elements\n- C. Commutators with the position operator\n\n## iv. References\n\n* https://www.damtp.cam.ac.uk/user/tong/aqm/aqmtwo.pdf. [ref: tong_statistical_physics]",
    "copyright": "2026 Eduardo Nava-Hernandez",
    "sections": [
     {
-     "line": 49,
+     "line": 53,
      "text": "## A. The position operator"
     },
     {
-     "line": 70,
+     "line": 74,
      "text": "## B. The Hamiltonian with open boundary conditions"
     },
     {
-     "line": 82,
+     "line": 86,
      "text": "### B.1. Hermiticity"
     },
     {
-     "line": 96,
+     "line": 100,
      "text": "### B.2. Matrix elements"
     },
     {
-     "line": 129,
+     "line": 146,
      "text": "## C. Commutators with the position operator"
     }
    ],
@@ -9060,7 +9060,7 @@
     {
      "name": "CondensedMatter.TightBindingChain.position",
      "kind": "def",
-     "line": 56,
+     "line": 60,
      "doc": "The position operator `X = ∑ n, a n |n⟩⟨n|`, measuring from the site `0`.",
      "statement": "noncomputable def position : T.HilbertSpace →ₗ[ℂ] T.HilbertSpace",
      "sorry": false
@@ -9068,7 +9068,7 @@
     {
      "name": "CondensedMatter.TightBindingChain.position_apply_localizedState",
      "kind": "lemma",
-     "line": 60,
+     "line": 64,
      "doc": "The localized states are the eigenstates of the position operator.",
      "statement": "lemma position_apply_localizedState (n : Fin T.N) :\n    T.position |n⟩ = ((T.a * (n : ℕ) : ℝ) : ℂ) • |n⟩ := by\n  simp [position, localizedComp_apply_localizedState]",
      "sorry": false
@@ -9076,7 +9076,7 @@
     {
      "name": "CondensedMatter.TightBindingChain.position_hermitian",
      "kind": "lemma",
-     "line": 65,
+     "line": 69,
      "doc": "The position operator is hermitian.",
      "statement": "lemma position_hermitian (ψ φ : T.HilbertSpace) :\n    ⟪T.position ψ, φ⟫_ℂ = ⟪ψ, T.position φ⟫_ℂ",
      "sorry": false
@@ -9084,7 +9084,7 @@
     {
      "name": "CondensedMatter.TightBindingChain.openHamiltonian",
      "kind": "def",
-     "line": 79,
+     "line": 83,
      "doc": "The Hamiltonian of the tight binding chain with open boundary conditions: the periodic\n`hamiltonian` with one hopping between the end sites `0` and `N - 1` removed. For `N = 2` the\nperiodic chain counts the single bond twice, and one copy remains.",
      "statement": "noncomputable def openHamiltonian : T.HilbertSpace →ₗ[ℂ] T.HilbertSpace",
      "sorry": false
@@ -9092,7 +9092,7 @@
     {
      "name": "CondensedMatter.TightBindingChain.openHamiltonian_hermitian",
      "kind": "lemma",
-     "line": 89,
+     "line": 93,
      "doc": "The Hamiltonian with open boundary conditions is hermitian.",
      "statement": "lemma openHamiltonian_hermitian (ψ φ : T.HilbertSpace) :\n    ⟪T.openHamiltonian ψ, φ⟫_ℂ = ⟪ψ, T.openHamiltonian φ⟫_ℂ",
      "sorry": false
@@ -9100,15 +9100,23 @@
     {
      "name": "CondensedMatter.TightBindingChain.inner_openHamiltonian",
      "kind": "lemma",
-     "line": 111,
+     "line": 115,
      "doc": "The open chain hops only between neighbouring sites, with amplitude `-t`.",
      "statement": "lemma inner_openHamiltonian (m n : Fin T.N) :\n    ⟪|m⟩, T.openHamiltonian |n⟩⟫_ℂ =\n      if m = n then (T.E0 : ℂ)\n      else if (m : ℕ) + 1 = n ∨ (n : ℕ) + 1 = m then -(T.t : ℂ) else 0 := by\n  simp only [openHamiltonian, LinearMap.add_apply, LinearMap.smul_apply,\n    hamiltonian_apply_localizedState, localizedComp_apply_localizedState, inner_add_right,\n    inner_sub_right, inner_smul_right, localizedState_orthonormal_eq_ite]\n  rw [apply_ite (inner ℂ _), apply_ite (inner ℂ _)]\n  simp only [inner_zero_right, localizedState_orthonormal_eq_ite]\n  have h (k l : Fin T.N) : k = l - 1 ↔ l = k + 1 := by rw [eq_sub_iff_add_eq, eq_comm]\n  have hl (k : Fin T.N) : -1 = k ↔ (k : ℕ) + 1 = T.N := by\n    rw [neg_eq_iff_add_eq_zero, add_comm, eq_comm, eq_add_one_iff_val]\n    simp\n  simp only [h m n, hl n, eq_comm (a := m) (b := -1), hl m, eq_add_one_iff_val m n,\n    eq_add_one_iff_val n m]\n  simp only [Fin.ext_iff, Fin.val_zero]\n  split_ifs <;> first | omega | ring",
      "sorry": false
     },
     {
+     "name": "CondensedMatter.TightBindingChain.inner_openHamiltonian_eq_adjMatrix",
+     "kind": "lemma",
+     "line": 135,
+     "doc": "The open chain is the hopping Hamiltonian of the path graph: the matrix element between\ntwo sites is `E0` times the identity minus `t` times the adjacency matrix of `pathGraph N`.",
+     "statement": "lemma inner_openHamiltonian_eq_adjMatrix (m n : Fin T.N) :\n    ⟪|m⟩, T.openHamiltonian |n⟩⟫_ℂ =\n      (T.E0 : ℂ) * (1 : Matrix (Fin T.N) (Fin T.N) ℂ) m n -\n        (T.t : ℂ) * (SimpleGraph.pathGraph T.N).adjMatrix ℂ m n := by\n  rw [inner_openHamiltonian]\n  by_cases h : m = n\n  · subst h\n    simp\n  · simp [h, Matrix.one_apply_ne h, SimpleGraph.adjMatrix_apply, SimpleGraph.pathGraph_adj]\n    split_ifs <;> simp_all",
+     "sorry": false
+    },
+    {
      "name": "CondensedMatter.TightBindingChain.inner_commutator_position",
      "kind": "lemma",
-     "line": 137,
+     "line": 154,
      "doc": "Commuting with the position operator weighs each matrix element by the hopping distance:\n`⟨m|(A X - X A)|n⟩ = a (n - m) ⟨m|A|n⟩`.",
      "statement": "lemma inner_commutator_position (A : T.HilbertSpace →ₗ[ℂ] T.HilbertSpace) (m n : Fin T.N) :\n    ⟪|m⟩, (A ∘ₗ T.position - T.position ∘ₗ A) |n⟩⟫_ℂ =\n      ((T.a * ((n : ℕ) - (m : ℕ)) : ℝ) : ℂ) * ⟪|m⟩, A |n⟩⟫_ℂ := by\n  rw [LinearMap.sub_apply, LinearMap.comp_apply, LinearMap.comp_apply, inner_sub_right,\n    ← position_hermitian, position_apply_localizedState, position_apply_localizedState,\n    map_smul, inner_smul_left, inner_smul_right, Complex.conj_ofReal]\n  push_cast\n  ring",
      "sorry": false

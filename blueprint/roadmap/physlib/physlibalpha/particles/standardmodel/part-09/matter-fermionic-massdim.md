@@ -8,7 +8,7 @@ proof: formalized
 
 # Mass dimension on the fermionic algebra
 
-The module `PhyslibAlpha.Particles.StandardModel.Matter.Fermionic.MassDim`, [PhyslibAlpha/Particles/StandardModel/Matter/Fermionic/MassDim.lean](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/Matter/Fermionic/MassDim.lean): 6 declarations, 5 with a docstring.
+The module `PhyslibAlpha.Particles.StandardModel.Matter.Fermionic.MassDim`, [PhyslibAlpha/Particles/StandardModel/Matter/Fermionic/MassDim.lean](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/Matter/Fermionic/MassDim.lean): 6 declarations, 5 with a docstring.
 
 ## i. Overview
 
@@ -34,7 +34,7 @@ The module `PhyslibAlpha.Particles.StandardModel.Matter.Fermionic.MassDim`, [Phy
 
 ## A. The mass-weight scaling
 
-**`StandardModel.FermionicAlgebra.massWeightScale`**, a def, [line 62](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/Matter/Fermionic/MassDim.lean#L62).
+**`StandardModel.FermionicAlgebra.massWeightScale`**, a def, [line 62](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/Matter/Fermionic/MassDim.lean#L62).
 
 > **The mass-weight scaling on the fermionic algebra** of a field of mass weight `w`:
 > the algebra endomorphism scaling the generator `∂_s ψ_α` by `c ^ (w + 2 |s|)`, the
@@ -45,7 +45,7 @@ noncomputable def massWeightScale (w : ℕ) (c : ℂ) :
     FermionicAlgebra M →ₐ[ℂ] FermionicAlgebra M
 ```
 
-**`StandardModel.FermionicAlgebra.massWeightScale_ι`**, a lemma, [line 67](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/Matter/Fermionic/MassDim.lean#L67).
+**`StandardModel.FermionicAlgebra.massWeightScale_ι`**, a lemma, [line 67](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/Matter/Fermionic/MassDim.lean#L67).
 
 ```lean
 lemma massWeightScale_ι (w : ℕ) (c : ℂ) (x : JetComponentSpace M) :
@@ -55,7 +55,7 @@ lemma massWeightScale_ι (w : ℕ) (c : ℂ) (x : JetComponentSpace M) :
 
 ## B. The mass weight of the field and its derivatives
 
-**`StandardModel.FermionicAlgebra.massWeightScale_ofField`**, a lemma, [line 80](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/Matter/Fermionic/MassDim.lean#L80).
+**`StandardModel.FermionicAlgebra.massWeightScale_ofField`**, a lemma, [line 80](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/Matter/Fermionic/MassDim.lean#L80).
 
 > The undifferentiated field carries its own mass weight.
 
@@ -64,7 +64,7 @@ lemma massWeightScale_ofField (w : ℕ) (c : ℂ) (φ : Module.Dual ℂ M.V) :
     massWeightScale w c (ofField φ) = c ^ w • ofField φ
 ```
 
-**`StandardModel.FermionicAlgebra.massWeightScale_ofConjField`**, a lemma, [line 93](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/Matter/Fermionic/MassDim.lean#L93).
+**`StandardModel.FermionicAlgebra.massWeightScale_ofConjField`**, a lemma, [line 93](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/Matter/Fermionic/MassDim.lean#L93).
 
 > The undifferentiated conjugate field carries the same mass weight as the field.
 
@@ -73,7 +73,7 @@ lemma massWeightScale_ofConjField (w : ℕ) (c : ℂ) (φ : Module.Dual ℂ (Con
     massWeightScale w c (ofConjField φ) = c ^ w • ofConjField φ
 ```
 
-**`StandardModel.FermionicAlgebra.massWeightScale_jetDeriv`**, a lemma, [line 106](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/Matter/Fermionic/MassDim.lean#L106).
+**`StandardModel.FermionicAlgebra.massWeightScale_jetDeriv`**, a lemma, [line 106](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/Matter/Fermionic/MassDim.lean#L106).
 
 > **A total derivative adds mass weight two**: the scaling intertwines the total
 > derivative up to a factor `c ^ 2`.
@@ -84,7 +84,7 @@ lemma massWeightScale_jetDeriv (w : ℕ) (c : ℂ) (μ : Fin 1 ⊕ Fin 3)
     massWeightScale w c (jetDeriv μ x) = c ^ 2 • jetDeriv μ (massWeightScale w c x)
 ```
 
-**`StandardModel.FermionicAlgebra.massWeightScale_iteratedJetDeriv`**, a lemma, [line 122](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/Matter/Fermionic/MassDim.lean#L122).
+**`StandardModel.FermionicAlgebra.massWeightScale_iteratedJetDeriv`**, a lemma, [line 122](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/Matter/Fermionic/MassDim.lean#L122).
 
 > **The iterated derivative `∂_s` adds mass weight `2 |s|`.**
 
@@ -101,4 +101,4 @@ lemma massWeightScale_iteratedJetDeriv (w : ℕ) (c : ℂ) (s : Multiset (Fin 1 
 
 ## Sources
 
-- [PhyslibAlpha/Particles/StandardModel/Matter/Fermionic/MassDim.lean at 2a1dfe43](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/Matter/Fermionic/MassDim.lean)
+- [PhyslibAlpha/Particles/StandardModel/Matter/Fermionic/MassDim.lean at 8c87bdfb](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/Matter/Fermionic/MassDim.lean)

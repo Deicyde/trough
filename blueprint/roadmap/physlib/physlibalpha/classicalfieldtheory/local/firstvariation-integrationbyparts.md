@@ -8,7 +8,7 @@ proof: formalized
 
 # First variation integration by parts
 
-The module `PhyslibAlpha.ClassicalFieldTheory.Local.FirstVariation.IntegrationByParts`, [PhyslibAlpha/ClassicalFieldTheory/Local/FirstVariation/IntegrationByParts.lean](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/Local/FirstVariation/IntegrationByParts.lean): 6 declarations, 4 with a docstring; 4 private, not shown.
+The module `PhyslibAlpha.ClassicalFieldTheory.Local.FirstVariation.IntegrationByParts`, [PhyslibAlpha/ClassicalFieldTheory/Local/FirstVariation/IntegrationByParts.lean](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/Local/FirstVariation/IntegrationByParts.lean): 6 declarations, 4 with a docstring; 4 private, not shown.
 
 > Repeated integration by parts for the local first-variation formula.
 
@@ -31,7 +31,7 @@ The module `PhyslibAlpha.ClassicalFieldTheory.Local.FirstVariation.IntegrationBy
 
 ## A. Repeated integration by parts
 
-**`ClassicalFieldTheory.Local.HasIntegratedByPartsFormula`**, a def, [line 53](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/Local/FirstVariation/IntegrationByParts.lean#L53).
+**`ClassicalFieldTheory.Local.HasIntegratedByPartsFormula`**, a def, [line 53](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/Local/FirstVariation/IntegrationByParts.lean#L53).
 
 > The integration-by-parts step sending the linearized density to the Euler-Lagrange pairing.
 
@@ -40,7 +40,7 @@ def HasIntegratedByPartsFormula (L : Lagrangian d m k)
     (f : Space d → EuclideanSpace ℝ (Fin m)) : Prop
 ```
 
-**`ClassicalFieldTheory.Local.HasTermwiseIntegratedByPartsFormula`**, a def, [line 59](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/Local/FirstVariation/IntegrationByParts.lean#L59).
+**`ClassicalFieldTheory.Local.HasTermwiseIntegratedByPartsFormula`**, a def, [line 59](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/Local/FirstVariation/IntegrationByParts.lean#L59).
 
 > Termwise integration-by-parts data for the linearized first-variation density.
 
@@ -49,7 +49,7 @@ def HasTermwiseIntegratedByPartsFormula (L : Lagrangian d m k)
     (f : Space d → EuclideanSpace ℝ (Fin m)) : Prop
 ```
 
-**`ClassicalFieldTheory.Local.integral_mul_iteratedDeriv_eq_sign`**, a lemma, [line 123](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/Local/FirstVariation/IntegrationByParts.lean#L123).
+**`ClassicalFieldTheory.Local.integral_mul_iteratedDeriv_eq_sign`**, a lemma, [line 123](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/Local/FirstVariation/IntegrationByParts.lean#L123).
 
 > Repeated integration by parts for iterated coordinate derivatives against a test function.
 
@@ -62,7 +62,7 @@ lemma integral_mul_iteratedDeriv_eq_sign {g h : Space d → ℝ} (I : MultiIndex
 
 ## B. Termwise formulas
 
-**`ClassicalFieldTheory.Local.hasTermwiseIntegratedByPartsFormula_of_contDiff_coordDeriv`**, a lemma, [line 137](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/Local/FirstVariation/IntegrationByParts.lean#L137).
+**`ClassicalFieldTheory.Local.hasTermwiseIntegratedByPartsFormula_of_contDiff_coordDeriv`**, a lemma, [line 137](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/Local/FirstVariation/IntegrationByParts.lean#L137).
 
 > Concrete termwise integration by parts for the first-variation density, assuming the jet
 > coordinate coefficient functions are smooth along the field.
@@ -75,7 +75,7 @@ lemma hasTermwiseIntegratedByPartsFormula_of_contDiff_coordDeriv
     HasTermwiseIntegratedByPartsFormula L f
 ```
 
-**`ClassicalFieldTheory.Local.hasTermwiseIntegratedByPartsFormula_of_regular`**, a lemma, [line 165](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/Local/FirstVariation/IntegrationByParts.lean#L165).
+**`ClassicalFieldTheory.Local.hasTermwiseIntegratedByPartsFormula_of_regular`**, a lemma, [line 165](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/Local/FirstVariation/IntegrationByParts.lean#L165).
 
 ```lean
 lemma hasTermwiseIntegratedByPartsFormula_of_regular
@@ -84,7 +84,7 @@ lemma hasTermwiseIntegratedByPartsFormula_of_regular
     HasTermwiseIntegratedByPartsFormula L f
 ```
 
-**`ClassicalFieldTheory.Local.hasIntegratedByPartsFormula_of_termwise`**, a lemma, [line 234](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/Local/FirstVariation/IntegrationByParts.lean#L234).
+**`ClassicalFieldTheory.Local.hasIntegratedByPartsFormula_of_termwise`**, a lemma, [line 234](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/Local/FirstVariation/IntegrationByParts.lean#L234).
 
 ```lean
 lemma hasIntegratedByPartsFormula_of_termwise (L : Lagrangian d m k)
@@ -103,4 +103,4 @@ lemma hasIntegratedByPartsFormula_of_termwise (L : Lagrangian d m k)
 
 ## Sources
 
-- [PhyslibAlpha/ClassicalFieldTheory/Local/FirstVariation/IntegrationByParts.lean at 2a1dfe43](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/Local/FirstVariation/IntegrationByParts.lean)
+- [PhyslibAlpha/ClassicalFieldTheory/Local/FirstVariation/IntegrationByParts.lean at 8c87bdfb](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/Local/FirstVariation/IntegrationByParts.lean)

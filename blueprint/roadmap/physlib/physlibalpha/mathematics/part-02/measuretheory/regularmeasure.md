@@ -8,7 +8,7 @@ proof: formalized
 
 # Regular measures
 
-The module `PhyslibAlpha.Mathematics.MeasureTheory.RegularMeasure`, [PhyslibAlpha/Mathematics/MeasureTheory/RegularMeasure.lean](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Mathematics/MeasureTheory/RegularMeasure.lean): 5 declarations, 5 with a docstring.
+The module `PhyslibAlpha.Mathematics.MeasureTheory.RegularMeasure`, [PhyslibAlpha/Mathematics/MeasureTheory/RegularMeasure.lean](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Mathematics/MeasureTheory/RegularMeasure.lean): 5 declarations, 5 with a docstring.
 
 > Inner regularity and regularity pass to smaller measures, continuous images and subsets.
 
@@ -36,7 +36,7 @@ The module `PhyslibAlpha.Mathematics.MeasureTheory.RegularMeasure`, [PhyslibAlph
 
 ## A. Measures below inner regular measures
 
-**`MeasureTheory.Measure.InnerRegular.of_le`**, a lemma, [line 60](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Mathematics/MeasureTheory/RegularMeasure.lean#L60).
+**`MeasureTheory.Measure.InnerRegular.of_le`**, a lemma, [line 60](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Mathematics/MeasureTheory/RegularMeasure.lean#L60).
 
 > A measure below a finite inner regular measure is inner regular.
 
@@ -47,7 +47,7 @@ lemma InnerRegular.of_le [OpensMeasurableSpace α] [T2Space α] [IsFiniteMeasure
 
 ## B. Regularity from inner regularity
 
-**`MeasureTheory.Measure.Regular.of_innerRegular`**, a lemma, [line 76](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Mathematics/MeasureTheory/RegularMeasure.lean#L76).
+**`MeasureTheory.Measure.Regular.of_innerRegular`**, a lemma, [line 76](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Mathematics/MeasureTheory/RegularMeasure.lean#L76).
 
 > A finite inner regular measure on a Hausdorff space is regular.
 
@@ -56,7 +56,7 @@ lemma Regular.of_innerRegular [T2Space α] [BorelSpace α] [IsFiniteMeasure μ] 
     Regular μ
 ```
 
-**`MeasureTheory.Measure.Regular.of_le`**, a lemma, [line 83](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Mathematics/MeasureTheory/RegularMeasure.lean#L83).
+**`MeasureTheory.Measure.Regular.of_le`**, a lemma, [line 83](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Mathematics/MeasureTheory/RegularMeasure.lean#L83).
 
 > A measure below a finite inner regular measure on a Hausdorff space is regular.
 
@@ -65,7 +65,7 @@ lemma Regular.of_le [T2Space α] [BorelSpace α] [IsFiniteMeasure μ] [InnerRegu
     Regular ν
 ```
 
-**`MeasureTheory.Measure.Regular.map_of_continuous`**, a lemma, [line 91](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Mathematics/MeasureTheory/RegularMeasure.lean#L91).
+**`MeasureTheory.Measure.Regular.map_of_continuous`**, a lemma, [line 91](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Mathematics/MeasureTheory/RegularMeasure.lean#L91).
 
 > A finite regular measure pushes forward to a regular measure along a continuous map into a
 > Hausdorff space.
@@ -76,7 +76,7 @@ lemma Regular.map_of_continuous {β : Type*} [TopologicalSpace β] [MeasurableSp
     (hf : Continuous f) : Regular (μ.map f)
 ```
 
-**`MeasureTheory.Measure.InnerRegular.comap_subtype`**, a lemma, [line 98](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Mathematics/MeasureTheory/RegularMeasure.lean#L98).
+**`MeasureTheory.Measure.InnerRegular.comap_subtype`**, a lemma, [line 98](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Mathematics/MeasureTheory/RegularMeasure.lean#L98).
 
 > An inner regular measure stays inner regular on a measurable subset.
 
@@ -91,4 +91,4 @@ Its declarations' statements use no declaration of another module with an articl
 
 ## Sources
 
-- [PhyslibAlpha/Mathematics/MeasureTheory/RegularMeasure.lean at 2a1dfe43](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Mathematics/MeasureTheory/RegularMeasure.lean)
+- [PhyslibAlpha/Mathematics/MeasureTheory/RegularMeasure.lean at 8c87bdfb](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Mathematics/MeasureTheory/RegularMeasure.lean)

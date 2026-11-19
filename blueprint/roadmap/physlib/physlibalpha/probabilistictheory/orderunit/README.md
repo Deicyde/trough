@@ -1,8 +1,11 @@
 # OrderUnit
 
-The folder [PhyslibAlpha/ProbabilisticTheory/OrderUnit/](https://github.com/leanprover-community/physlib/tree/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ProbabilisticTheory/OrderUnit): 6 modules, an article each, in path order.
+The folder [PhyslibAlpha/ProbabilisticTheory/OrderUnit/](https://github.com/leanprover-community/physlib/tree/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/OrderUnit): 9 modules, an article each, in path order with Basic.lean first in its folder.
 
+- [Ordered vector spaces and order units (PhyslibAlpha)](basic.md)
+- [Archimedean order-unit spaces (PhyslibAlpha)](archimedean.md)
 - [The bidual of a system](bidual.md)
+- [Ordered positive cones (PhyslibAlpha)](cone.md)
 - [Interpolation of complete observables](interpolation.md)
 - [Lattice-ordered observables (Lattice)](lattice.md)
 - [Monotone-complete ordered spaces](monotonecomplete.md)

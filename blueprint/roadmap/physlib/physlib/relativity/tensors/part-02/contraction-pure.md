@@ -8,13 +8,13 @@ proof: formalized
 
 # Contractions on pure tensors
 
-The module `Physlib.Relativity.Tensors.Contraction.Pure`, [Physlib/Relativity/Tensors/Contraction/Pure.lean](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/Relativity/Tensors/Contraction/Pure.lean): 28 declarations, 7 with a docstring.
+The module `Physlib.Relativity.Tensors.Contraction.Pure`, [Physlib/Relativity/Tensors/Contraction/Pure.lean](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Relativity/Tensors/Contraction/Pure.lean): 28 declarations, 7 with a docstring.
 
 ## Pure.contrPCoeff
 
 ## dropPair
 
-**`TensorSpecies.Tensor.Pure.dropPair`**, a def, [line 46](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/Relativity/Tensors/Contraction/Pure.lean#L46).
+**`TensorSpecies.Tensor.Pure.dropPair`**, a def, [line 46](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Relativity/Tensors/Contraction/Pure.lean#L46).
 
 > Given `i j : Fin (n + 1 + 1)`, `c : Fin (n + 1 + 1) → C` and a pure tensor `p : Pure S c`,
 > `dropPair i j _ p` is the tensor formed by dropping the `i`th and `j`th parts of `p`.
@@ -24,7 +24,7 @@ def dropPair (i j : Fin (n + 1 + 1)) (hij : i ≠ j) (p : Pure S c) :
     Pure S (c ∘ succSuccAbove i j)
 ```
 
-**`TensorSpecies.Tensor.Pure.dropPair_equivariant`**, a lemma, [line 51](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/Relativity/Tensors/Contraction/Pure.lean#L51).
+**`TensorSpecies.Tensor.Pure.dropPair_equivariant`**, a lemma, [line 51](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Relativity/Tensors/Contraction/Pure.lean#L51).
 
 ```lean
 lemma dropPair_equivariant {n : ℕ} {c : Fin (n + 1 + 1) → C}
@@ -32,7 +32,7 @@ lemma dropPair_equivariant {n : ℕ} {c : Fin (n + 1 + 1) → C}
     dropPair i j hij (g • p) = g • dropPair i j hij p
 ```
 
-**`TensorSpecies.Tensor.Pure.dropPair_symm`**, a lemma, [line 58](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/Relativity/Tensors/Contraction/Pure.lean#L58).
+**`TensorSpecies.Tensor.Pure.dropPair_symm`**, a lemma, [line 58](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Relativity/Tensors/Contraction/Pure.lean#L58).
 
 ```lean
 lemma dropPair_symm (i j : Fin (n + 1 + 1)) (hij : i ≠ j)
@@ -40,7 +40,7 @@ lemma dropPair_symm (i j : Fin (n + 1 + 1)) (hij : i ≠ j)
     permP id (by simp) (dropPair j i hij.symm p)
 ```
 
-**`TensorSpecies.Tensor.Pure.dropPair_comm`**, a lemma, [line 66](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/Relativity/Tensors/Contraction/Pure.lean#L66).
+**`TensorSpecies.Tensor.Pure.dropPair_comm`**, a lemma, [line 66](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Relativity/Tensors/Contraction/Pure.lean#L66).
 
 ```lean
 lemma dropPair_comm {n : ℕ} {c : Fin (n + 1 + 1 + 1 + 1) → C}
@@ -56,7 +56,7 @@ lemma dropPair_comm {n : ℕ} {c : Fin (n + 1 + 1 + 1 + 1) → C}
     ((dropPair i1' j1' (by simp [i1', j1', hij1]) (dropPair i2' j2' hi2j2' p)))
 ```
 
-**`TensorSpecies.Tensor.Pure.dropPair_update_fst`**, a lemma, [line 85](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/Relativity/Tensors/Contraction/Pure.lean#L85).
+**`TensorSpecies.Tensor.Pure.dropPair_update_fst`**, a lemma, [line 85](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Relativity/Tensors/Contraction/Pure.lean#L85).
 
 ```lean
 lemma dropPair_update_fst {n : ℕ} [inst : DecidableEq (Fin (n + 1 +1))] {c : Fin (n + 1 + 1) → C}
@@ -65,7 +65,7 @@ lemma dropPair_update_fst {n : ℕ} [inst : DecidableEq (Fin (n + 1 +1))] {c : F
     dropPair i j hij (p.update i x) = dropPair i j hij p
 ```
 
-**`TensorSpecies.Tensor.Pure.dropPair_update_snd`**, a lemma, [line 95](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/Relativity/Tensors/Contraction/Pure.lean#L95).
+**`TensorSpecies.Tensor.Pure.dropPair_update_snd`**, a lemma, [line 95](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Relativity/Tensors/Contraction/Pure.lean#L95).
 
 ```lean
 lemma dropPair_update_snd {n : ℕ} [inst : DecidableEq (Fin (n + 1 +1))] {c : Fin (n + 1 + 1) → C}
@@ -74,7 +74,7 @@ lemma dropPair_update_snd {n : ℕ} [inst : DecidableEq (Fin (n + 1 +1))] {c : F
     dropPair i j hij (p.update j x) = dropPair i j hij p
 ```
 
-**`TensorSpecies.Tensor.Pure.dropPair_update_succSuccAbove`**, a lemma, [line 104](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/Relativity/Tensors/Contraction/Pure.lean#L104).
+**`TensorSpecies.Tensor.Pure.dropPair_update_succSuccAbove`**, a lemma, [line 104](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Relativity/Tensors/Contraction/Pure.lean#L104).
 
 ```lean
 lemma dropPair_update_succSuccAbove {n : ℕ} [inst : DecidableEq (Fin (n + 1 +1))]
@@ -86,7 +86,7 @@ lemma dropPair_update_succSuccAbove {n : ℕ} [inst : DecidableEq (Fin (n + 1 +1
     (dropPair i j hij p).update m x
 ```
 
-**`TensorSpecies.Tensor.Pure.dropPair_permP`**, a lemma, [line 124](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/Relativity/Tensors/Contraction/Pure.lean#L124).
+**`TensorSpecies.Tensor.Pure.dropPair_permP`**, a lemma, [line 124](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Relativity/Tensors/Contraction/Pure.lean#L124).
 
 ```lean
 lemma dropPair_permP {n n1 : ℕ} {c : Fin (n + 1 + 1) → C}
@@ -96,7 +96,7 @@ lemma dropPair_permP {n n1 : ℕ} {c : Fin (n + 1 + 1) → C}
     (dropPair (σ i) (σ j) (by simp [hσ.1.injective.eq_iff, hij]) p)
 ```
 
-**`TensorSpecies.Tensor.Pure.permP_dropPair_dropPair_congr`**, a lemma, [line 140](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/Relativity/Tensors/Contraction/Pure.lean#L140).
+**`TensorSpecies.Tensor.Pure.permP_dropPair_dropPair_congr`**, a lemma, [line 140](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Relativity/Tensors/Contraction/Pure.lean#L140).
 
 > Two `permP`–`dropPair`–`dropPair` towers over a common pure tensor agree once their composite
 > slot maps agree pointwise. Comparing two orders of dropping two pairs of slots this way keeps
@@ -121,7 +121,7 @@ lemma permP_dropPair_dropPair_congr {nP nOut : ℕ}
     permP σ1R h1R (dropPair a2R b2R hab2R (dropPair aR bR habR p))
 ```
 
-**`TensorSpecies.Tensor.Pure.permP_dropPair_permP_congr`**, a lemma, [line 163](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/Relativity/Tensors/Contraction/Pure.lean#L163).
+**`TensorSpecies.Tensor.Pure.permP_dropPair_permP_congr`**, a lemma, [line 163](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Relativity/Tensors/Contraction/Pure.lean#L163).
 
 > Two `permP`–`dropPair`–`permP` towers over a common pure tensor agree once their composite
 > slot maps agree pointwise. The one-contraction, inner-relabelled sibling of
@@ -147,7 +147,7 @@ lemma permP_dropPair_permP_congr {nP nOut mL mR : ℕ}
 
 ## Contraction coefficient
 
-**`TensorSpecies.Tensor.Pure.contrPCoeff`**, a def, [line 199](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/Relativity/Tensors/Contraction/Pure.lean#L199).
+**`TensorSpecies.Tensor.Pure.contrPCoeff`**, a def, [line 199](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Relativity/Tensors/Contraction/Pure.lean#L199).
 
 > Given a pure tensor `p : Pure S c` and a `i j : Fin n`
 > corresponding to dual colors in `c`, `contrPCoeff i j _ p` is the
@@ -158,7 +158,7 @@ noncomputable def contrPCoeff {n : ℕ} {c : Fin n → C}
     (i j : Fin n) (hij : i ≠ j ∧ S.τ (c i) = c j) (p : Pure S c) : k
 ```
 
-**`TensorSpecies.Tensor.Pure.contrPCoeff_congr`**, a lemma, [line 205](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/Relativity/Tensors/Contraction/Pure.lean#L205).
+**`TensorSpecies.Tensor.Pure.contrPCoeff_congr`**, a lemma, [line 205](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Relativity/Tensors/Contraction/Pure.lean#L205).
 
 > `contrPCoeff` is insensitive to its proof arguments once the two contracted slots agree. Lets a
 > coefficient comparison rewrite the slots without a `congr` search through the proof fields.
@@ -170,7 +170,7 @@ lemma contrPCoeff_congr {n : ℕ} {c : Fin n → C} (p : Pure S c)
     p.contrPCoeff i j hij = p.contrPCoeff i' j' hij'
 ```
 
-**`TensorSpecies.Tensor.Pure.contrPCoeff_permP`**, a lemma, [line 216](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/Relativity/Tensors/Contraction/Pure.lean#L216).
+**`TensorSpecies.Tensor.Pure.contrPCoeff_permP`**, a lemma, [line 216](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Relativity/Tensors/Contraction/Pure.lean#L216).
 
 ```lean
 lemma contrPCoeff_permP {n n1 : ℕ} {c : Fin n → C}
@@ -180,7 +180,7 @@ lemma contrPCoeff_permP {n n1 : ℕ} {c : Fin n → C}
     contrPCoeff (σ i) (σ j) (by simp [hσ.1.injective.eq_iff, hij, hσ.2]) p
 ```
 
-**`TensorSpecies.Tensor.Pure.contrPCoeff_update_succSuccAbove`**, a lemma, [line 232](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/Relativity/Tensors/Contraction/Pure.lean#L232).
+**`TensorSpecies.Tensor.Pure.contrPCoeff_update_succSuccAbove`**, a lemma, [line 232](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Relativity/Tensors/Contraction/Pure.lean#L232).
 
 ```lean
 lemma contrPCoeff_update_succSuccAbove {n : ℕ} [inst : DecidableEq (Fin (n + 1 +1))]
@@ -191,7 +191,7 @@ lemma contrPCoeff_update_succSuccAbove {n : ℕ} [inst : DecidableEq (Fin (n + 1
     contrPCoeff i j hij p
 ```
 
-**`TensorSpecies.Tensor.Pure.contrPCoeff_update_fst_add`**, a lemma, [line 245](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/Relativity/Tensors/Contraction/Pure.lean#L245).
+**`TensorSpecies.Tensor.Pure.contrPCoeff_update_fst_add`**, a lemma, [line 245](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Relativity/Tensors/Contraction/Pure.lean#L245).
 
 ```lean
 lemma contrPCoeff_update_fst_add {n : ℕ} [inst : DecidableEq (Fin n)] {c : Fin n → C}
@@ -201,7 +201,7 @@ lemma contrPCoeff_update_fst_add {n : ℕ} [inst : DecidableEq (Fin n)] {c : Fin
     contrPCoeff i j hij (p.update i x) + contrPCoeff i j hij (p.update i y)
 ```
 
-**`TensorSpecies.Tensor.Pure.contrPCoeff_update_snd_add`**, a lemma, [line 255](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/Relativity/Tensors/Contraction/Pure.lean#L255).
+**`TensorSpecies.Tensor.Pure.contrPCoeff_update_snd_add`**, a lemma, [line 255](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Relativity/Tensors/Contraction/Pure.lean#L255).
 
 ```lean
 lemma contrPCoeff_update_snd_add {n : ℕ} [inst : DecidableEq (Fin n)] {c : Fin n → C}
@@ -211,7 +211,7 @@ lemma contrPCoeff_update_snd_add {n : ℕ} [inst : DecidableEq (Fin n)] {c : Fin
     contrPCoeff i j hij (p.update j x) + contrPCoeff i j hij (p.update j y)
 ```
 
-**`TensorSpecies.Tensor.Pure.contrPCoeff_update_fst_smul`**, a lemma, [line 265](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/Relativity/Tensors/Contraction/Pure.lean#L265).
+**`TensorSpecies.Tensor.Pure.contrPCoeff_update_fst_smul`**, a lemma, [line 265](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Relativity/Tensors/Contraction/Pure.lean#L265).
 
 ```lean
 lemma contrPCoeff_update_fst_smul {n : ℕ} [inst : DecidableEq (Fin n)] {c : Fin n → C}
@@ -221,7 +221,7 @@ lemma contrPCoeff_update_fst_smul {n : ℕ} [inst : DecidableEq (Fin n)] {c : Fi
     r * contrPCoeff i j hij (p.update i x)
 ```
 
-**`TensorSpecies.Tensor.Pure.contrPCoeff_update_snd_smul`**, a lemma, [line 276](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/Relativity/Tensors/Contraction/Pure.lean#L276).
+**`TensorSpecies.Tensor.Pure.contrPCoeff_update_snd_smul`**, a lemma, [line 276](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Relativity/Tensors/Contraction/Pure.lean#L276).
 
 ```lean
 lemma contrPCoeff_update_snd_smul {n : ℕ} [inst : DecidableEq (Fin n)] {c : Fin n → C}
@@ -231,7 +231,7 @@ lemma contrPCoeff_update_snd_smul {n : ℕ} [inst : DecidableEq (Fin n)] {c : Fi
     r * contrPCoeff i j hij (p.update j x)
 ```
 
-**`TensorSpecies.Tensor.Pure.contrPCoeff_dropPair`**, a lemma, [line 286](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/Relativity/Tensors/Contraction/Pure.lean#L286).
+**`TensorSpecies.Tensor.Pure.contrPCoeff_dropPair`**, a lemma, [line 286](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Relativity/Tensors/Contraction/Pure.lean#L286).
 
 ```lean
 lemma contrPCoeff_dropPair {n : ℕ} {c : Fin (n + 1 + 1) → C}
@@ -242,7 +242,7 @@ lemma contrPCoeff_dropPair {n : ℕ} {c : Fin (n + 1 + 1) → C}
       (by simpa using hij)
 ```
 
-**`TensorSpecies.Tensor.Pure.contrPCoeff_symm`**, a lemma, [line 293](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/Relativity/Tensors/Contraction/Pure.lean#L293).
+**`TensorSpecies.Tensor.Pure.contrPCoeff_symm`**, a lemma, [line 293](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Relativity/Tensors/Contraction/Pure.lean#L293).
 
 ```lean
 lemma contrPCoeff_symm {n : ℕ} {c : Fin n → C} {i j : Fin n} {hij : i ≠ j ∧ S.τ (c i) = c j}
@@ -250,7 +250,7 @@ lemma contrPCoeff_symm {n : ℕ} {c : Fin n → C} {i j : Fin n} {hij : i ≠ j 
     p.contrPCoeff i j hij = p.contrPCoeff j i ⟨hij.1.symm, by simp [← hij.2]⟩
 ```
 
-**`TensorSpecies.Tensor.Pure.contrPCoeff_mul_dropPair`**, a lemma, [line 305](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/Relativity/Tensors/Contraction/Pure.lean#L305).
+**`TensorSpecies.Tensor.Pure.contrPCoeff_mul_dropPair`**, a lemma, [line 305](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Relativity/Tensors/Contraction/Pure.lean#L305).
 
 ```lean
 lemma contrPCoeff_mul_dropPair {n : ℕ} {c : Fin (n + 1 + 1 + 1 + 1) → C}
@@ -269,7 +269,7 @@ lemma contrPCoeff_mul_dropPair {n : ℕ} {c : Fin (n + 1 + 1 + 1 + 1) → C}
       (by simp [i1', j1', hij1])
 ```
 
-**`TensorSpecies.Tensor.Pure.contrPCoeff_invariant`**, a lemma, [line 323](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/Relativity/Tensors/Contraction/Pure.lean#L323).
+**`TensorSpecies.Tensor.Pure.contrPCoeff_invariant`**, a lemma, [line 323](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Relativity/Tensors/Contraction/Pure.lean#L323).
 
 ```lean
 lemma contrPCoeff_invariant {n : ℕ} {c : Fin n → C} {i j : Fin n}
@@ -279,7 +279,7 @@ lemma contrPCoeff_invariant {n : ℕ} {c : Fin n → C} {i j : Fin n}
 
 ## Contractions
 
-**`TensorSpecies.Tensor.Pure.contrP`**, a def, [line 347](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/Relativity/Tensors/Contraction/Pure.lean#L347).
+**`TensorSpecies.Tensor.Pure.contrP`**, a def, [line 347](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Relativity/Tensors/Contraction/Pure.lean#L347).
 
 > For `c : Fin (n + 1 + 1) → C`, `i j : Fin (n + 1 + 1)` with dual color, and a pure tensor
 > `p : Pure S c`, `contrP i j _ p` is the tensor (not pure due to the `n = 0` case)
@@ -292,7 +292,7 @@ noncomputable def contrP {n : ℕ} {c : Fin (n + 1 + 1) → C}
     S.Tensor (c ∘ succSuccAbove i j)
 ```
 
-**`TensorSpecies.Tensor.Pure.contrP_update_add`**, a lemma, [line 353](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/Relativity/Tensors/Contraction/Pure.lean#L353).
+**`TensorSpecies.Tensor.Pure.contrP_update_add`**, a lemma, [line 353](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Relativity/Tensors/Contraction/Pure.lean#L353).
 
 ```lean
 lemma contrP_update_add {n : ℕ} [inst : DecidableEq (Fin (n + 1 +1))] {c : Fin (n + 1 + 1) → C}
@@ -302,7 +302,7 @@ lemma contrP_update_add {n : ℕ} [inst : DecidableEq (Fin (n + 1 +1))] {c : Fin
     contrP i j hij (p.update m x) + contrP i j hij (p.update m y)
 ```
 
-**`TensorSpecies.Tensor.Pure.contrP_update_smul`**, a lemma, [line 364](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/Relativity/Tensors/Contraction/Pure.lean#L364).
+**`TensorSpecies.Tensor.Pure.contrP_update_smul`**, a lemma, [line 364](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Relativity/Tensors/Contraction/Pure.lean#L364).
 
 ```lean
 lemma contrP_update_smul {n : ℕ} [inst : DecidableEq (Fin (n + 1 +1))] {c : Fin (n + 1 + 1) → C}
@@ -312,7 +312,7 @@ lemma contrP_update_smul {n : ℕ} [inst : DecidableEq (Fin (n + 1 +1))] {c : Fi
     r • contrP i j hij (p.update m x)
 ```
 
-**`TensorSpecies.Tensor.Pure.contrP_equivariant`**, a lemma, [line 375](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/Relativity/Tensors/Contraction/Pure.lean#L375).
+**`TensorSpecies.Tensor.Pure.contrP_equivariant`**, a lemma, [line 375](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Relativity/Tensors/Contraction/Pure.lean#L375).
 
 ```lean
 lemma contrP_equivariant {n : ℕ} {c : Fin (n + 1 + 1) → C}
@@ -320,7 +320,7 @@ lemma contrP_equivariant {n : ℕ} {c : Fin (n + 1 + 1) → C}
     contrP i j hij (g • p) = g • contrP i j hij p
 ```
 
-**`TensorSpecies.Tensor.Pure.contrP_symm`**, a lemma, [line 380](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/Relativity/Tensors/Contraction/Pure.lean#L380).
+**`TensorSpecies.Tensor.Pure.contrP_symm`**, a lemma, [line 380](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Relativity/Tensors/Contraction/Pure.lean#L380).
 
 ```lean
 lemma contrP_symm {n : ℕ} {c : Fin (n + 1 + 1) → C}
@@ -331,7 +331,7 @@ lemma contrP_symm {n : ℕ} {c : Fin (n + 1 + 1) → C}
 
 ## contrP as a multilinear map
 
-**`TensorSpecies.Tensor.Pure.contrPMultilinear`**, a def, [line 394](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/Relativity/Tensors/Contraction/Pure.lean#L394).
+**`TensorSpecies.Tensor.Pure.contrPMultilinear`**, a def, [line 394](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Relativity/Tensors/Contraction/Pure.lean#L394).
 
 > The multi-linear map formed by contracting a pair of indices of pure tensors.
 
@@ -348,4 +348,4 @@ noncomputable def contrPMultilinear {n : ℕ} {c : Fin (n + 1 + 1) → C}
 
 ## Sources
 
-- [Physlib/Relativity/Tensors/Contraction/Pure.lean at 2a1dfe43](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/Relativity/Tensors/Contraction/Pure.lean)
+- [Physlib/Relativity/Tensors/Contraction/Pure.lean at 8c87bdfb](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Relativity/Tensors/Contraction/Pure.lean)

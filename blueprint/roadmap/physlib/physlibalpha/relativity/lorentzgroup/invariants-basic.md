@@ -8,7 +8,7 @@ proof: formalized
 
 # Invariant coefficient tensors on spacetime indices
 
-The module `PhyslibAlpha.Relativity.LorentzGroup.Invariants.Basic`, [PhyslibAlpha/Relativity/LorentzGroup/Invariants/Basic.lean](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Relativity/LorentzGroup/Invariants/Basic.lean): 21 declarations, 21 with a docstring.
+The module `PhyslibAlpha.Relativity.LorentzGroup.Invariants.Basic`, [PhyslibAlpha/Relativity/LorentzGroup/Invariants/Basic.lean](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Relativity/LorentzGroup/Invariants/Basic.lean): 21 declarations, 21 with a docstring.
 
 ## i. Overview
 
@@ -49,7 +49,7 @@ The module `PhyslibAlpha.Relativity.LorentzGroup.Invariants.Basic`, [PhyslibAlph
 > `actMat M` scales by that scalar, so an invariant coefficient function has no such component
 > unless the scalar is `1`.
 
-**`Lorentz.Invariants.actMat`**, a def, [line 79](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Relativity/LorentzGroup/Invariants/Basic.lean#L79).
+**`Lorentz.Invariants.actMat`**, a def, [line 79](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Relativity/LorentzGroup/Invariants/Basic.lean#L79).
 
 > The action on coefficient functions of a matrix moving the components:
 > `(actMat M c) a = ∑_d c_d M_{a d}`, with `a` free and `d` summed.
@@ -58,7 +58,7 @@ The module `PhyslibAlpha.Relativity.LorentzGroup.Invariants.Basic`, [PhyslibAlph
 def actMat (M : ι → ι → ℂ) (c : ι → ℂ) (a : ι) : ℂ
 ```
 
-**`Lorentz.Invariants.sum_mul_actMat`**, a lemma, [line 83](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Relativity/LorentzGroup/Invariants/Basic.lean#L83).
+**`Lorentz.Invariants.sum_mul_actMat`**, a lemma, [line 83](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Relativity/LorentzGroup/Invariants/Basic.lean#L83).
 
 > A covector `P` that the transposed matrix reproduces up to a scalar `k` reads off a
 > component of the coefficients that `actMat M` scales by `k`.
@@ -69,7 +69,7 @@ lemma sum_mul_actMat (M : ι → ι → ℂ) (P c : ι → ℂ) (k : ℂ)
     ∑ a, P a * actMat M c a = k * ∑ a, P a * c a
 ```
 
-**`Lorentz.Invariants.sum_mul_eq_zero_of_actMat_eq`**, a lemma, [line 94](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Relativity/LorentzGroup/Invariants/Basic.lean#L94).
+**`Lorentz.Invariants.sum_mul_eq_zero_of_actMat_eq`**, a lemma, [line 94](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Relativity/LorentzGroup/Invariants/Basic.lean#L94).
 
 > A coefficient function fixed by `actMat M` has no component along a covector that the
 > transposed matrix scales by an eigenvalue other than `1`.
@@ -80,7 +80,7 @@ lemma sum_mul_eq_zero_of_actMat_eq (M : ι → ι → ℂ) {P c : ι → ℂ} (h
     ∑ a, P a * c a = 0
 ```
 
-**`Lorentz.Invariants.two_zpow_ne_one`**, a lemma, [line 102](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Relativity/LorentzGroup/Invariants/Basic.lean#L102).
+**`Lorentz.Invariants.two_zpow_ne_one`**, a lemma, [line 102](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Relativity/LorentzGroup/Invariants/Basic.lean#L102).
 
 > The boost with parameter `2` distinguishes every nonzero weight: `2 ^ w ≠ 1` for `w ≠ 0`.
 
@@ -90,7 +90,7 @@ lemma two_zpow_ne_one {w : ℤ} (hw : w ≠ 0) : ((2 : ℝ) : ℂ) ^ w ≠ 1
 
 ## B. Coefficient tensors on spacetime indices
 
-**`Lorentz.Invariants.dagger`**, a def, [line 120](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Relativity/LorentzGroup/Invariants/Basic.lean#L120).
+**`Lorentz.Invariants.dagger`**, a def, [line 120](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Relativity/LorentzGroup/Invariants/Basic.lean#L120).
 
 > The conjugate transpose `g†` of an element of `SL(2,ℂ)`, again in `SL(2,ℂ)`.
 
@@ -98,7 +98,7 @@ lemma two_zpow_ne_one {w : ℤ} (hw : w ≠ 0) : ((2 : ℝ) : ℂ) ^ w ≠ 1
 def dagger (g : SL(2,ℂ)) : SL(2,ℂ)
 ```
 
-**`Lorentz.Invariants.toLorentzGroup_dagger`**, a lemma, [line 124](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Relativity/LorentzGroup/Invariants/Basic.lean#L124).
+**`Lorentz.Invariants.toLorentzGroup_dagger`**, a lemma, [line 124](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Relativity/LorentzGroup/Invariants/Basic.lean#L124).
 
 > The Lorentz matrix of `g†` is the transpose of that of `g`, so these matrices are closed
 > under transposition.
@@ -108,7 +108,7 @@ lemma toLorentzGroup_dagger (g : SL(2,ℂ)) :
     (SL2C.toLorentzGroup (dagger g)).1 = (SL2C.toLorentzGroup g).1ᵀ
 ```
 
-**`Lorentz.Invariants.act`**, a def, [line 130](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Relativity/LorentzGroup/Invariants/Basic.lean#L130).
+**`Lorentz.Invariants.act`**, a def, [line 130](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Relativity/LorentzGroup/Invariants/Basic.lean#L130).
 
 > The action of a real `4 × 4` matrix on coefficient tensors, one factor per slot:
 > `(act Λ c) a = ∑_d c_d Λ_{a₀ d₀} ⋯`, with `a` free and `d` summed.
@@ -118,7 +118,7 @@ def act (Λ : Matrix (Fin 1 ⊕ Fin 3) (Fin 1 ⊕ Fin 3) ℝ)
     (c : (Fin n → Fin 1 ⊕ Fin 3) → ℂ) (a : Fin n → Fin 1 ⊕ Fin 3) : ℂ
 ```
 
-**`Lorentz.Invariants.act_eq_actMat`**, a lemma, [line 135](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Relativity/LorentzGroup/Invariants/Basic.lean#L135).
+**`Lorentz.Invariants.act_eq_actMat`**, a lemma, [line 135](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Relativity/LorentzGroup/Invariants/Basic.lean#L135).
 
 > The action on coefficient tensors is that of the matrix of products, one factor per slot.
 
@@ -128,7 +128,7 @@ lemma act_eq_actMat (Λ : Matrix (Fin 1 ⊕ Fin 3) (Fin 1 ⊕ Fin 3) ℝ)
     act Λ c = actMat (fun a d => ∏ i, ((Λ (a i) (d i) : ℝ) : ℂ)) c
 ```
 
-**`Lorentz.Invariants.IsInvariantCoeff`**, a def, [line 140](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Relativity/LorentzGroup/Invariants/Basic.lean#L140).
+**`Lorentz.Invariants.IsInvariantCoeff`**, a def, [line 140](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Relativity/LorentzGroup/Invariants/Basic.lean#L140).
 
 > A coefficient tensor fixed by `act` of the Lorentz matrix of every `g : SL(2,ℂ)`.
 
@@ -136,7 +136,7 @@ lemma act_eq_actMat (Λ : Matrix (Fin 1 ⊕ Fin 3) (Fin 1 ⊕ Fin 3) ℝ)
 def IsInvariantCoeff (c : (Fin n → Fin 1 ⊕ Fin 3) → ℂ) : Prop
 ```
 
-**`Lorentz.Invariants.lightConeComponent`**, a def, [line 145](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Relativity/LorentzGroup/Invariants/Basic.lean#L145).
+**`Lorentz.Invariants.lightConeComponent`**, a def, [line 145](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Relativity/LorentzGroup/Invariants/Basic.lean#L145).
 
 > A light-cone component of a coefficient tensor along axis `i`: the multi-index `κ` picks
 > one light-cone direction per slot and `c` is contracted against that choice.
@@ -145,7 +145,7 @@ def IsInvariantCoeff (c : (Fin n → Fin 1 ⊕ Fin 3) → ℂ) : Prop
 def lightConeComponent (i : Fin 3) (c : (Fin n → Fin 1 ⊕ Fin 3) → ℂ) (κ : Fin n → Fin 4) : ℂ
 ```
 
-**`Lorentz.Invariants.lightConeComponent_act`**, a lemma, [line 154](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Relativity/LorentzGroup/Invariants/Basic.lean#L154).
+**`Lorentz.Invariants.lightConeComponent_act`**, a lemma, [line 154](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Relativity/LorentzGroup/Invariants/Basic.lean#L154).
 
 > A light-cone multi-index that `Λ` reproduces up to a scalar `k` has its light-cone
 > component scaled by `k`. The hypothesis is the eigenvector equation for the covector
@@ -164,7 +164,7 @@ lemma lightConeComponent_act (i : Fin 3) (Λ : Matrix (Fin 1 ⊕ Fin 3) (Fin 1 �
     lightConeComponent i (act Λ c) κ = k * lightConeComponent i c κ
 ```
 
-**`Lorentz.Invariants.toLorentzGroup_boostAxis_symm`**, a lemma, [line 164](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Relativity/LorentzGroup/Invariants/Basic.lean#L164).
+**`Lorentz.Invariants.toLorentzGroup_boostAxis_symm`**, a lemma, [line 164](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Relativity/LorentzGroup/Invariants/Basic.lean#L164).
 
 > The Lorentz matrix of a boost is symmetric.
 
@@ -174,7 +174,7 @@ lemma toLorentzGroup_boostAxis_symm (i : Fin 3) {t : ℝ} (ht : t ≠ 0) (a b : 
       = (SL2C.toLorentzGroup (SL2C.boostAxis i t ht)).1 b a
 ```
 
-**`Lorentz.Invariants.IsInvariantCoeff.lightConeComponent_eq_zero`**, a lemma, [line 172](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Relativity/LorentzGroup/Invariants/Basic.lean#L172).
+**`Lorentz.Invariants.IsInvariantCoeff.lightConeComponent_eq_zero`**, a lemma, [line 172](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Relativity/LorentzGroup/Invariants/Basic.lean#L172).
 
 > An invariant coefficient tensor has no light-cone component of nonzero weight: the boost at
 > `t = 2` would rescale such a component by a factor other than `1`.
@@ -186,7 +186,7 @@ lemma IsInvariantCoeff.lightConeComponent_eq_zero {c : (Fin n → Fin 1 ⊕ Fin 
     lightConeComponent i c κ = 0
 ```
 
-**`Lorentz.Invariants.eq_sum_lightConeComponent`**, a lemma, [line 183](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Relativity/LorentzGroup/Invariants/Basic.lean#L183).
+**`Lorentz.Invariants.eq_sum_lightConeComponent`**, a lemma, [line 183](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Relativity/LorentzGroup/Invariants/Basic.lean#L183).
 
 > A coefficient tensor is recovered from its light-cone components.
 
@@ -206,7 +206,7 @@ lemma eq_sum_lightConeComponent (i : Fin 3) (c : (Fin n → Fin 1 ⊕ Fin 3) →
 > coefficients rather than rescaling them, and invariance says that a coefficient tensor takes
 > the same value at `d` and at `cycIdx d`, the index vector with every slot rotated.
 
-**`Lorentz.Invariants.act_halfTurn`**, a lemma, [line 207](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Relativity/LorentzGroup/Invariants/Basic.lean#L207).
+**`Lorentz.Invariants.act_halfTurn`**, a lemma, [line 207](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Relativity/LorentzGroup/Invariants/Basic.lean#L207).
 
 > The half turn about the axis `k` multiplies the coefficient at `a` by the product of the
 > signs `halfTurnSign k` of the slots of `a`.
@@ -217,7 +217,7 @@ lemma act_halfTurn (k : Fin 3) (c : (Fin n → Fin 1 ⊕ Fin 3) → ℂ) (a : Fi
       = ((∏ s, halfTurnSign k (a s) : ℤ) : ℂ) * c a
 ```
 
-**`Lorentz.Invariants.prod_halfTurnSign_eq_one_or`**, a lemma, [line 224](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Relativity/LorentzGroup/Invariants/Basic.lean#L224).
+**`Lorentz.Invariants.prod_halfTurnSign_eq_one_or`**, a lemma, [line 224](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Relativity/LorentzGroup/Invariants/Basic.lean#L224).
 
 > The sign a half turn attaches to a coefficient is `1` or `-1`, being a product of such
 > signs.
@@ -227,7 +227,7 @@ lemma prod_halfTurnSign_eq_one_or (k : Fin 3) (d : Fin n → Fin 1 ⊕ Fin 3) :
     ∏ s, halfTurnSign k (d s) = 1 ∨ ∏ s, halfTurnSign k (d s) = -1
 ```
 
-**`Lorentz.Invariants.IsInvariantCoeff.eq_zero_of_prod_halfTurnSign_ne_one`**, a lemma, [line 233](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Relativity/LorentzGroup/Invariants/Basic.lean#L233).
+**`Lorentz.Invariants.IsInvariantCoeff.eq_zero_of_prod_halfTurnSign_ne_one`**, a lemma, [line 233](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Relativity/LorentzGroup/Invariants/Basic.lean#L233).
 
 > An invariant coefficient tensor vanishes at every index vector that some half turn
 > negates.
@@ -238,7 +238,7 @@ lemma IsInvariantCoeff.eq_zero_of_prod_halfTurnSign_ne_one {c : (Fin n → Fin 1
     (hd : ∏ s, halfTurnSign k (d s) ≠ 1) : c d = 0
 ```
 
-**`Lorentz.Invariants.cycIdx`**, a def, [line 243](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Relativity/LorentzGroup/Invariants/Basic.lean#L243).
+**`Lorentz.Invariants.cycIdx`**, a def, [line 243](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Relativity/LorentzGroup/Invariants/Basic.lean#L243).
 
 > The relabelling `cycDir`, which fixes time and sends `x → y → z → x`, applied in every
 > slot.
@@ -247,7 +247,7 @@ lemma IsInvariantCoeff.eq_zero_of_prod_halfTurnSign_ne_one {c : (Fin n → Fin 1
 def cycIdx (d : Fin n → Fin 1 ⊕ Fin 3) : Fin n → Fin 1 ⊕ Fin 3
 ```
 
-**`Lorentz.Invariants.cycIdx_cycIdx_cycIdx`**, a lemma, [line 246](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Relativity/LorentzGroup/Invariants/Basic.lean#L246).
+**`Lorentz.Invariants.cycIdx_cycIdx_cycIdx`**, a lemma, [line 246](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Relativity/LorentzGroup/Invariants/Basic.lean#L246).
 
 > Cycling the axes three times is the identity.
 
@@ -255,7 +255,7 @@ def cycIdx (d : Fin n → Fin 1 ⊕ Fin 3) : Fin n → Fin 1 ⊕ Fin 3
 lemma cycIdx_cycIdx_cycIdx (d : Fin n → Fin 1 ⊕ Fin 3) : cycIdx (cycIdx (cycIdx d)) = d
 ```
 
-**`Lorentz.Invariants.act_rotationCycle`**, a lemma, [line 251](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Relativity/LorentzGroup/Invariants/Basic.lean#L251).
+**`Lorentz.Invariants.act_rotationCycle`**, a lemma, [line 251](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Relativity/LorentzGroup/Invariants/Basic.lean#L251).
 
 > The cyclic rotation permutes coefficients: the new coefficient at `a` is the old one at `a`
 > cycled back.
@@ -265,7 +265,7 @@ lemma act_rotationCycle (c : (Fin n → Fin 1 ⊕ Fin 3) → ℂ) (a : Fin n →
     act (SL2C.toLorentzGroup SL2C.rotationCycle).1 c a = c (cycIdx (cycIdx a))
 ```
 
-**`Lorentz.Invariants.IsInvariantCoeff.apply_cycIdx`**, a lemma, [line 266](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Relativity/LorentzGroup/Invariants/Basic.lean#L266).
+**`Lorentz.Invariants.IsInvariantCoeff.apply_cycIdx`**, a lemma, [line 266](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Relativity/LorentzGroup/Invariants/Basic.lean#L266).
 
 > An invariant coefficient tensor is constant on the orbits of the cyclic rotation.
 
@@ -285,4 +285,4 @@ lemma IsInvariantCoeff.apply_cycIdx {c : (Fin n → Fin 1 ⊕ Fin 3) → ℂ} (h
 
 ## Sources
 
-- [PhyslibAlpha/Relativity/LorentzGroup/Invariants/Basic.lean at 2a1dfe43](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Relativity/LorentzGroup/Invariants/Basic.lean)
+- [PhyslibAlpha/Relativity/LorentzGroup/Invariants/Basic.lean at 8c87bdfb](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Relativity/LorentzGroup/Invariants/Basic.lean)

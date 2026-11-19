@@ -8,9 +8,9 @@ proof: formalized
 
 # Time Ordering on Field operator algebra
 
-The module `Physlib.QFT.PerturbationTheory.WickAlgebra.TimeOrder`, [Physlib/QFT/PerturbationTheory/WickAlgebra/TimeOrder.lean](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/QFT/PerturbationTheory/WickAlgebra/TimeOrder.lean): 23 declarations, 4 with a docstring.
+The module `Physlib.QFT.PerturbationTheory.WickAlgebra.TimeOrder`, [Physlib/QFT/PerturbationTheory/WickAlgebra/TimeOrder.lean](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/QFT/PerturbationTheory/WickAlgebra/TimeOrder.lean): 23 declarations, 4 with a docstring.
 
-**`FieldSpecification.WickAlgebra.ι_timeOrderF_superCommuteF_superCommuteF_eq_time_ofCrAnListF`**, a lemma, [line 26](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/QFT/PerturbationTheory/WickAlgebra/TimeOrder.lean#L26).
+**`FieldSpecification.WickAlgebra.ι_timeOrderF_superCommuteF_superCommuteF_eq_time_ofCrAnListF`**, a lemma, [line 26](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/QFT/PerturbationTheory/WickAlgebra/TimeOrder.lean#L26).
 
 ```lean
 lemma ι_timeOrderF_superCommuteF_superCommuteF_eq_time_ofCrAnListF {φ1 φ2 φ3 : 𝓕.CrAnFieldOp}
@@ -22,7 +22,7 @@ lemma ι_timeOrderF_superCommuteF_superCommuteF_eq_time_ofCrAnListF {φ1 φ2 φ3
     ofCrAnListF φs2) = 0
 ```
 
-**`FieldSpecification.WickAlgebra.ι_timeOrderF_superCommuteF_superCommuteF_ofCrAnListF`**, a lemma, [line 120](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/QFT/PerturbationTheory/WickAlgebra/TimeOrder.lean#L120).
+**`FieldSpecification.WickAlgebra.ι_timeOrderF_superCommuteF_superCommuteF_ofCrAnListF`**, a lemma, [line 120](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/QFT/PerturbationTheory/WickAlgebra/TimeOrder.lean#L120).
 
 ```lean
 lemma ι_timeOrderF_superCommuteF_superCommuteF_ofCrAnListF {φ1 φ2 φ3 : 𝓕.CrAnFieldOp}
@@ -31,7 +31,7 @@ lemma ι_timeOrderF_superCommuteF_superCommuteF_ofCrAnListF {φ1 φ2 φ3 : 𝓕.
     = 0
 ```
 
-**`FieldSpecification.WickAlgebra.ι_timeOrderF_superCommuteF_superCommuteF`**, a lemma, [line 133](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/QFT/PerturbationTheory/WickAlgebra/TimeOrder.lean#L133).
+**`FieldSpecification.WickAlgebra.ι_timeOrderF_superCommuteF_superCommuteF`**, a lemma, [line 133](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/QFT/PerturbationTheory/WickAlgebra/TimeOrder.lean#L133).
 
 ```lean
 lemma ι_timeOrderF_superCommuteF_superCommuteF {φ1 φ2 φ3 : 𝓕.CrAnFieldOp}
@@ -39,7 +39,7 @@ lemma ι_timeOrderF_superCommuteF_superCommuteF {φ1 φ2 φ3 : 𝓕.CrAnFieldOp}
     ι 𝓣ᶠ(a * [ofCrAnOpF φ1, [ofCrAnOpF φ2, ofCrAnOpF φ3]ₛF]ₛF * b) = 0
 ```
 
-**`FieldSpecification.WickAlgebra.ι_timeOrderF_superCommuteF_eq_time`**, a lemma, [line 162](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/QFT/PerturbationTheory/WickAlgebra/TimeOrder.lean#L162).
+**`FieldSpecification.WickAlgebra.ι_timeOrderF_superCommuteF_eq_time`**, a lemma, [line 162](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/QFT/PerturbationTheory/WickAlgebra/TimeOrder.lean#L162).
 
 ```lean
 lemma ι_timeOrderF_superCommuteF_eq_time {φ ψ : 𝓕.CrAnFieldOp}
@@ -48,7 +48,7 @@ lemma ι_timeOrderF_superCommuteF_eq_time {φ ψ : 𝓕.CrAnFieldOp}
     ι ([ofCrAnOpF φ, ofCrAnOpF ψ]ₛF * 𝓣ᶠ(a * b))
 ```
 
-**`FieldSpecification.WickAlgebra.ι_timeOrderF_superCommuteF_ne_time`**, a lemma, [line 280](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/QFT/PerturbationTheory/WickAlgebra/TimeOrder.lean#L280).
+**`FieldSpecification.WickAlgebra.ι_timeOrderF_superCommuteF_ne_time`**, a lemma, [line 280](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/QFT/PerturbationTheory/WickAlgebra/TimeOrder.lean#L280).
 
 ```lean
 lemma ι_timeOrderF_superCommuteF_ne_time {φ ψ : 𝓕.CrAnFieldOp}
@@ -58,21 +58,21 @@ lemma ι_timeOrderF_superCommuteF_ne_time {φ ψ : 𝓕.CrAnFieldOp}
 
 ## Defining time order for `FieldOpFreeAlgebra`.
 
-**`FieldSpecification.WickAlgebra.ι_timeOrderF_zero_of_mem_ideal`**, a lemma, [line 295](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/QFT/PerturbationTheory/WickAlgebra/TimeOrder.lean#L295).
+**`FieldSpecification.WickAlgebra.ι_timeOrderF_zero_of_mem_ideal`**, a lemma, [line 295](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/QFT/PerturbationTheory/WickAlgebra/TimeOrder.lean#L295).
 
 ```lean
 lemma ι_timeOrderF_zero_of_mem_ideal (a : 𝓕.FieldOpFreeAlgebra)
     (h : a ∈ TwoSidedIdeal.span 𝓕.fieldOpIdealSet) : ι 𝓣ᶠ(a) = 0
 ```
 
-**`FieldSpecification.WickAlgebra.ι_timeOrderF_eq_of_equiv`**, a lemma, [line 326](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/QFT/PerturbationTheory/WickAlgebra/TimeOrder.lean#L326).
+**`FieldSpecification.WickAlgebra.ι_timeOrderF_eq_of_equiv`**, a lemma, [line 326](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/QFT/PerturbationTheory/WickAlgebra/TimeOrder.lean#L326).
 
 ```lean
 lemma ι_timeOrderF_eq_of_equiv (a b : 𝓕.FieldOpFreeAlgebra) (h : a ≈ b) :
     ι 𝓣ᶠ(a) = ι 𝓣ᶠ(b)
 ```
 
-**`FieldSpecification.WickAlgebra.timeOrder`**, a def, [line 341](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/QFT/PerturbationTheory/WickAlgebra/TimeOrder.lean#L341).
+**`FieldSpecification.WickAlgebra.timeOrder`**, a def, [line 341](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/QFT/PerturbationTheory/WickAlgebra/TimeOrder.lean#L341).
 
 > For a field specification `𝓕`, `timeOrder` is the linear map
 >
@@ -90,28 +90,28 @@ noncomputable def timeOrder : WickAlgebra 𝓕 →ₗ[ℂ] WickAlgebra 𝓕
 
 ## Properties of time ordering
 
-**`FieldSpecification.WickAlgebra.timeOrder_eq_ι_timeOrderF`**, a lemma, [line 365](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/QFT/PerturbationTheory/WickAlgebra/TimeOrder.lean#L365).
+**`FieldSpecification.WickAlgebra.timeOrder_eq_ι_timeOrderF`**, a lemma, [line 365](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/QFT/PerturbationTheory/WickAlgebra/TimeOrder.lean#L365).
 
 ```lean
 lemma timeOrder_eq_ι_timeOrderF (a : 𝓕.FieldOpFreeAlgebra) :
     𝓣(ι a) = ι 𝓣ᶠ(a)
 ```
 
-**`FieldSpecification.WickAlgebra.timeOrder_ofFieldOp_ofFieldOp_ordered`**, a lemma, [line 368](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/QFT/PerturbationTheory/WickAlgebra/TimeOrder.lean#L368).
+**`FieldSpecification.WickAlgebra.timeOrder_ofFieldOp_ofFieldOp_ordered`**, a lemma, [line 368](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/QFT/PerturbationTheory/WickAlgebra/TimeOrder.lean#L368).
 
 ```lean
 lemma timeOrder_ofFieldOp_ofFieldOp_ordered {φ ψ : 𝓕.FieldOp} (h : timeOrderRel φ ψ) :
     𝓣(ofFieldOp φ * ofFieldOp ψ) = ofFieldOp φ * ofFieldOp ψ
 ```
 
-**`FieldSpecification.WickAlgebra.timeOrder_ofFieldOp_ofFieldOp_not_ordered`**, a lemma, [line 373](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/QFT/PerturbationTheory/WickAlgebra/TimeOrder.lean#L373).
+**`FieldSpecification.WickAlgebra.timeOrder_ofFieldOp_ofFieldOp_not_ordered`**, a lemma, [line 373](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/QFT/PerturbationTheory/WickAlgebra/TimeOrder.lean#L373).
 
 ```lean
 lemma timeOrder_ofFieldOp_ofFieldOp_not_ordered {φ ψ : 𝓕.FieldOp} (h : ¬ timeOrderRel φ ψ) :
     𝓣(ofFieldOp φ * ofFieldOp ψ) = 𝓢(𝓕 |>ₛ φ, 𝓕 |>ₛ ψ) • ofFieldOp ψ * ofFieldOp φ
 ```
 
-**`FieldSpecification.WickAlgebra.timeOrder_ofFieldOp_ofFieldOp_not_ordered_eq_timeOrder`**, a lemma, [line 379](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/QFT/PerturbationTheory/WickAlgebra/TimeOrder.lean#L379).
+**`FieldSpecification.WickAlgebra.timeOrder_ofFieldOp_ofFieldOp_not_ordered_eq_timeOrder`**, a lemma, [line 379](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/QFT/PerturbationTheory/WickAlgebra/TimeOrder.lean#L379).
 
 ```lean
 lemma timeOrder_ofFieldOp_ofFieldOp_not_ordered_eq_timeOrder {φ ψ : 𝓕.FieldOp}
@@ -119,20 +119,20 @@ lemma timeOrder_ofFieldOp_ofFieldOp_not_ordered_eq_timeOrder {φ ψ : 𝓕.Field
     𝓣(ofFieldOp φ * ofFieldOp ψ) = 𝓢(𝓕 |>ₛ φ, 𝓕 |>ₛ ψ) • 𝓣(ofFieldOp ψ * ofFieldOp φ)
 ```
 
-**`FieldSpecification.WickAlgebra.timeOrder_ofFieldOpList_nil`**, a lemma, [line 386](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/QFT/PerturbationTheory/WickAlgebra/TimeOrder.lean#L386).
+**`FieldSpecification.WickAlgebra.timeOrder_ofFieldOpList_nil`**, a lemma, [line 386](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/QFT/PerturbationTheory/WickAlgebra/TimeOrder.lean#L386).
 
 ```lean
 lemma timeOrder_ofFieldOpList_nil : 𝓣(ofFieldOpList (𝓕 := 𝓕) []) = 1
 ```
 
-**`FieldSpecification.WickAlgebra.timeOrder_ofFieldOpList_singleton`**, a lemma, [line 390](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/QFT/PerturbationTheory/WickAlgebra/TimeOrder.lean#L390).
+**`FieldSpecification.WickAlgebra.timeOrder_ofFieldOpList_singleton`**, a lemma, [line 390](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/QFT/PerturbationTheory/WickAlgebra/TimeOrder.lean#L390).
 
 ```lean
 lemma timeOrder_ofFieldOpList_singleton (φ : 𝓕.FieldOp) :
     𝓣(ofFieldOpList [φ]) = ofFieldOpList [φ]
 ```
 
-**`FieldSpecification.WickAlgebra.timeOrder_eq_maxTimeField_mul_finset`**, a lemma, [line 400](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/QFT/PerturbationTheory/WickAlgebra/TimeOrder.lean#L400).
+**`FieldSpecification.WickAlgebra.timeOrder_eq_maxTimeField_mul_finset`**, a lemma, [line 400](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/QFT/PerturbationTheory/WickAlgebra/TimeOrder.lean#L400).
 
 > For a field specification `𝓕`, the time order operator acting on a
 > list of `𝓕.FieldOp`, `𝓣(φ₀…φₙ)`, is equal to
@@ -149,7 +149,7 @@ lemma timeOrder_eq_maxTimeField_mul_finset (φ : 𝓕.FieldOp) (φs : List 𝓕.
       ofFieldOp (maxTimeField φ φs) * 𝓣(ofFieldOpList (eraseMaxTimeField φ φs))
 ```
 
-**`FieldSpecification.WickAlgebra.timeOrder_superCommute_eq_time_mid`**, a lemma, [line 408](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/QFT/PerturbationTheory/WickAlgebra/TimeOrder.lean#L408).
+**`FieldSpecification.WickAlgebra.timeOrder_superCommute_eq_time_mid`**, a lemma, [line 408](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/QFT/PerturbationTheory/WickAlgebra/TimeOrder.lean#L408).
 
 ```lean
 lemma timeOrder_superCommute_eq_time_mid {φ ψ : 𝓕.CrAnFieldOp}
@@ -158,7 +158,7 @@ lemma timeOrder_superCommute_eq_time_mid {φ ψ : 𝓕.CrAnFieldOp}
     [ofCrAnOp φ, ofCrAnOp ψ]ₛ * 𝓣(a * b)
 ```
 
-**`FieldSpecification.WickAlgebra.timeOrder_superCommute_eq_time_left`**, a lemma, [line 418](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/QFT/PerturbationTheory/WickAlgebra/TimeOrder.lean#L418).
+**`FieldSpecification.WickAlgebra.timeOrder_superCommute_eq_time_left`**, a lemma, [line 418](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/QFT/PerturbationTheory/WickAlgebra/TimeOrder.lean#L418).
 
 ```lean
 lemma timeOrder_superCommute_eq_time_left {φ ψ : 𝓕.CrAnFieldOp}
@@ -167,7 +167,7 @@ lemma timeOrder_superCommute_eq_time_left {φ ψ : 𝓕.CrAnFieldOp}
     [ofCrAnOp φ, ofCrAnOp ψ]ₛ * 𝓣(b)
 ```
 
-**`FieldSpecification.WickAlgebra.timeOrder_superCommute_ne_time`**, a lemma, [line 424](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/QFT/PerturbationTheory/WickAlgebra/TimeOrder.lean#L424).
+**`FieldSpecification.WickAlgebra.timeOrder_superCommute_ne_time`**, a lemma, [line 424](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/QFT/PerturbationTheory/WickAlgebra/TimeOrder.lean#L424).
 
 ```lean
 lemma timeOrder_superCommute_ne_time {φ ψ : 𝓕.CrAnFieldOp}
@@ -175,7 +175,7 @@ lemma timeOrder_superCommute_ne_time {φ ψ : 𝓕.CrAnFieldOp}
     𝓣([ofCrAnOp φ, ofCrAnOp ψ]ₛ) = 0
 ```
 
-**`FieldSpecification.WickAlgebra.timeOrder_superCommute_anPart_ofFieldOp_ne_time`**, a lemma, [line 430](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/QFT/PerturbationTheory/WickAlgebra/TimeOrder.lean#L430).
+**`FieldSpecification.WickAlgebra.timeOrder_superCommute_anPart_ofFieldOp_ne_time`**, a lemma, [line 430](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/QFT/PerturbationTheory/WickAlgebra/TimeOrder.lean#L430).
 
 ```lean
 lemma timeOrder_superCommute_anPart_ofFieldOp_ne_time {φ ψ : 𝓕.FieldOp}
@@ -183,7 +183,7 @@ lemma timeOrder_superCommute_anPart_ofFieldOp_ne_time {φ ψ : 𝓕.FieldOp}
     𝓣([anPart φ,ofFieldOp ψ]ₛ) = 0
 ```
 
-**`FieldSpecification.WickAlgebra.timeOrder_timeOrder_mid`**, a lemma, [line 445](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/QFT/PerturbationTheory/WickAlgebra/TimeOrder.lean#L445).
+**`FieldSpecification.WickAlgebra.timeOrder_timeOrder_mid`**, a lemma, [line 445](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/QFT/PerturbationTheory/WickAlgebra/TimeOrder.lean#L445).
 
 > For a field specification `𝓕`, and `a`, `b`, `c` in `𝓕.WickAlgebra`, then
 > `𝓣(a * b * c) = 𝓣(a * 𝓣(b) * c)`.
@@ -193,21 +193,21 @@ lemma timeOrder_timeOrder_mid (a b c : 𝓕.WickAlgebra) :
     𝓣(a * b * c) = 𝓣(a * 𝓣(b) * c)
 ```
 
-**`FieldSpecification.WickAlgebra.timeOrder_timeOrder_left`**, a lemma, [line 453](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/QFT/PerturbationTheory/WickAlgebra/TimeOrder.lean#L453).
+**`FieldSpecification.WickAlgebra.timeOrder_timeOrder_left`**, a lemma, [line 453](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/QFT/PerturbationTheory/WickAlgebra/TimeOrder.lean#L453).
 
 ```lean
 lemma timeOrder_timeOrder_left (b c : 𝓕.WickAlgebra) :
     𝓣(b * c) = 𝓣(𝓣(b) * c)
 ```
 
-**`FieldSpecification.WickAlgebra.timeOrder_timeOrder_right`**, a lemma, [line 457](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/QFT/PerturbationTheory/WickAlgebra/TimeOrder.lean#L457).
+**`FieldSpecification.WickAlgebra.timeOrder_timeOrder_right`**, a lemma, [line 457](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/QFT/PerturbationTheory/WickAlgebra/TimeOrder.lean#L457).
 
 ```lean
 lemma timeOrder_timeOrder_right (a b : 𝓕.WickAlgebra) :
     𝓣(a * b) = 𝓣(a * 𝓣(b))
 ```
 
-**`FieldSpecification.WickAlgebra.timeOrder_timeOrder`**, a lemma, [line 462](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/QFT/PerturbationTheory/WickAlgebra/TimeOrder.lean#L462).
+**`FieldSpecification.WickAlgebra.timeOrder_timeOrder`**, a lemma, [line 462](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/QFT/PerturbationTheory/WickAlgebra/TimeOrder.lean#L462).
 
 > Time ordering is a projection.
 
@@ -223,4 +223,4 @@ lemma timeOrder_timeOrder (a : 𝓕.WickAlgebra) :
 
 ## Sources
 
-- [Physlib/QFT/PerturbationTheory/WickAlgebra/TimeOrder.lean at 2a1dfe43](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/QFT/PerturbationTheory/WickAlgebra/TimeOrder.lean)
+- [Physlib/QFT/PerturbationTheory/WickAlgebra/TimeOrder.lean at 8c87bdfb](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/QFT/PerturbationTheory/WickAlgebra/TimeOrder.lean)

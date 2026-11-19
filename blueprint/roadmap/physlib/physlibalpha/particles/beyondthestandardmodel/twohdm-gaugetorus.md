@@ -8,7 +8,7 @@ proof: formalized
 
 # The gauge torus acting on Higgs vectors
 
-The module `PhyslibAlpha.Particles.BeyondTheStandardModel.TwoHDM.GaugeTorus`, [PhyslibAlpha/Particles/BeyondTheStandardModel/TwoHDM/GaugeTorus.lean](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/BeyondTheStandardModel/TwoHDM/GaugeTorus.lean): 4 declarations, 2 with a docstring.
+The module `PhyslibAlpha.Particles.BeyondTheStandardModel.TwoHDM.GaugeTorus`, [PhyslibAlpha/Particles/BeyondTheStandardModel/TwoHDM/GaugeTorus.lean](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/BeyondTheStandardModel/TwoHDM/GaugeTorus.lean): 4 declarations, 2 with a docstring.
 
 > The SU(2) Cartan element diag(a, ā), which with the electromagnetic U(1) realises the gauge torus.
 
@@ -34,7 +34,7 @@ The module `PhyslibAlpha.Particles.BeyondTheStandardModel.TwoHDM.GaugeTorus`, [P
 
 ## A. The Cartan gauge element
 
-**`StandardModel.GaugeGroupI.gaugeCartan`**, a def, [line 56](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/BeyondTheStandardModel/TwoHDM/GaugeTorus.lean#L56).
+**`StandardModel.GaugeGroupI.gaugeCartan`**, a def, [line 56](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/BeyondTheStandardModel/TwoHDM/GaugeTorus.lean#L56).
 
 > The Cartan `SU(2)` gauge element `diag(a, ā)`, for `a` a phase.
 
@@ -42,20 +42,20 @@ The module `PhyslibAlpha.Particles.BeyondTheStandardModel.TwoHDM.GaugeTorus`, [P
 noncomputable def gaugeCartan (a : unitary ℂ) : GaugeGroupI
 ```
 
-**`StandardModel.GaugeGroupI.gaugeCartan_toU1`**, a lemma, [line 72](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/BeyondTheStandardModel/TwoHDM/GaugeTorus.lean#L72).
+**`StandardModel.GaugeGroupI.gaugeCartan_toU1`**, a lemma, [line 72](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/BeyondTheStandardModel/TwoHDM/GaugeTorus.lean#L72).
 
 ```lean
 lemma gaugeCartan_toU1 (a : unitary ℂ) : (gaugeCartan a).toU1 = 1
 ```
 
-**`StandardModel.GaugeGroupI.gaugeCartan_toSU2_coe`**, a lemma, [line 75](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/BeyondTheStandardModel/TwoHDM/GaugeTorus.lean#L75).
+**`StandardModel.GaugeGroupI.gaugeCartan_toSU2_coe`**, a lemma, [line 75](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/BeyondTheStandardModel/TwoHDM/GaugeTorus.lean#L75).
 
 ```lean
 lemma gaugeCartan_toSU2_coe (a : unitary ℂ) :
     ((gaugeCartan a).toSU2 : Matrix (Fin 2) (Fin 2) ℂ) = !![(a : ℂ), 0; 0, (star a : ℂ)]
 ```
 
-**`StandardModel.GaugeGroupI.gaugeCartan_smul_eq`**, a lemma, [line 79](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/BeyondTheStandardModel/TwoHDM/GaugeTorus.lean#L79).
+**`StandardModel.GaugeGroupI.gaugeCartan_smul_eq`**, a lemma, [line 79](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/BeyondTheStandardModel/TwoHDM/GaugeTorus.lean#L79).
 
 > The Cartan element acts as the diagonal matrix `diag(a, ā)`.
 
@@ -71,4 +71,4 @@ lemma gaugeCartan_smul_eq (a : unitary ℂ) (φ : HiggsVec) :
 
 ## Sources
 
-- [PhyslibAlpha/Particles/BeyondTheStandardModel/TwoHDM/GaugeTorus.lean at 2a1dfe43](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/BeyondTheStandardModel/TwoHDM/GaugeTorus.lean)
+- [PhyslibAlpha/Particles/BeyondTheStandardModel/TwoHDM/GaugeTorus.lean at 8c87bdfb](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/BeyondTheStandardModel/TwoHDM/GaugeTorus.lean)

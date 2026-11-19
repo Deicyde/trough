@@ -8,7 +8,7 @@ proof: formalized
 
 # Potential of the SU(5) + U(1) GUT
 
-The module `Physlib.Particles.SuperSymmetry.SU5.Potential`, [Physlib/Particles/SuperSymmetry/SU5/Potential.lean](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/Particles/SuperSymmetry/SU5/Potential.lean): 10 declarations (1 instance with no name), 7 with a docstring.
+The module `Physlib.Particles.SuperSymmetry.SU5.Potential`, [Physlib/Particles/SuperSymmetry/SU5/Potential.lean](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Particles/SuperSymmetry/SU5/Potential.lean): 10 declarations (1 instance with no name), 7 with a docstring.
 
 ## i. Overview
 
@@ -43,7 +43,7 @@ The module `Physlib.Particles.SuperSymmetry.SU5.Potential`, [Physlib/Particles/S
 > We define an inductive type with a term for each of the potential terms we are interested in,
 > present in both the super-potential and Kahler potential.
 
-**`SuperSymmetry.SU5.PotentialTerm`**, an inductive, [line 70](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/Particles/SuperSymmetry/SU5/Potential.lean#L70).
+**`SuperSymmetry.SU5.PotentialTerm`**, an inductive, [line 70](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Particles/SuperSymmetry/SU5/Potential.lean#L70).
 
 > Relevant terms part of the superpotential and Kahler potential of the `SU(5)` SUSY GUT.
 
@@ -80,7 +80,7 @@ deriving DecidableEq, Fintype
 > This allows us to define various properties of the potential term in a safe way, based
 > solely on the field content.
 
-**`SuperSymmetry.SU5.PotentialTerm.toFieldLabel`**, a def, [line 108](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/Particles/SuperSymmetry/SU5/Potential.lean#L108).
+**`SuperSymmetry.SU5.PotentialTerm.toFieldLabel`**, a def, [line 108](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Particles/SuperSymmetry/SU5/Potential.lean#L108).
 
 > The fields contained within a given term of the potential.
 
@@ -93,7 +93,7 @@ def toFieldLabel : PotentialTerm → List FieldLabel
 > We define a predicate which is true on those terms which are members of the super-potential.
 > We will also prove that this predicate is decidable.
 
-**`SuperSymmetry.SU5.PotentialTerm.InSuperPotential`**, a def, [line 132](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/Particles/SuperSymmetry/SU5/Potential.lean#L132).
+**`SuperSymmetry.SU5.PotentialTerm.InSuperPotential`**, a def, [line 132](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Particles/SuperSymmetry/SU5/Potential.lean#L132).
 
 > The proposition which is true on those terms which are members of the
 > super potential.
@@ -102,7 +102,7 @@ def toFieldLabel : PotentialTerm → List FieldLabel
 def InSuperPotential : PotentialTerm → Prop
 ```
 
-**An instance with no name**, [line 145](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/Particles/SuperSymmetry/SU5/Potential.lean#L145).
+**An instance with no name**, [line 145](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Particles/SuperSymmetry/SU5/Potential.lean#L145).
 
 ```lean
 instance : (T : PotentialTerm) → Decidable (InSuperPotential T)
@@ -112,7 +112,7 @@ instance : (T : PotentialTerm) → Decidable (InSuperPotential T)
 
 > Been in the super potential implies that the term contains no conjugate fields.
 
-**`SuperSymmetry.SU5.PotentialTerm.no_conjugate_in_toFieldLabel_of_inSuperPotential`**, a lemma, [line 167](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/Particles/SuperSymmetry/SU5/Potential.lean#L167).
+**`SuperSymmetry.SU5.PotentialTerm.no_conjugate_in_toFieldLabel_of_inSuperPotential`**, a lemma, [line 167](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Particles/SuperSymmetry/SU5/Potential.lean#L167).
 
 > The terms within the super-potential contain no conjugate fields.
 
@@ -127,7 +127,7 @@ lemma no_conjugate_in_toFieldLabel_of_inSuperPotential {T : PotentialTerm}
 > We define the degree of a term in the potential to be the number of fields it contains.
 > The degree of all terms present is less than or equal to four.
 
-**`SuperSymmetry.SU5.PotentialTerm.degree`**, a def, [line 183](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/Particles/SuperSymmetry/SU5/Potential.lean#L183).
+**`SuperSymmetry.SU5.PotentialTerm.degree`**, a def, [line 183](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Particles/SuperSymmetry/SU5/Potential.lean#L183).
 
 > The degree of a term in the potential.
 
@@ -135,7 +135,7 @@ lemma no_conjugate_in_toFieldLabel_of_inSuperPotential {T : PotentialTerm}
 def degree (T : PotentialTerm) : ℕ
 ```
 
-**`SuperSymmetry.SU5.PotentialTerm.degree_le_four`**, a lemma, [line 185](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/Particles/SuperSymmetry/SU5/Potential.lean#L185).
+**`SuperSymmetry.SU5.PotentialTerm.degree_le_four`**, a lemma, [line 185](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Particles/SuperSymmetry/SU5/Potential.lean#L185).
 
 ```lean
 lemma degree_le_four (T : PotentialTerm) : T.degree ≤ 4
@@ -147,7 +147,7 @@ lemma degree_le_four (T : PotentialTerm) : T.degree ≤ 4
 > in the potential. We show that those terms which violate R-parity are exactly those
 > which are `β`, `Λ`, `W2`, `W4`, `K1`, or `K2`.
 
-**`SuperSymmetry.SU5.PotentialTerm.RParity`**, a def, [line 199](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/Particles/SuperSymmetry/SU5/Potential.lean#L199).
+**`SuperSymmetry.SU5.PotentialTerm.RParity`**, a def, [line 199](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Particles/SuperSymmetry/SU5/Potential.lean#L199).
 
 > The R-parity of a term in the potential.
 
@@ -155,7 +155,7 @@ lemma degree_le_four (T : PotentialTerm) : T.degree ≤ 4
 def RParity (T : PotentialTerm) : Fin 2
 ```
 
-**`SuperSymmetry.SU5.PotentialTerm.violates_RParity_iff_mem`**, a lemma, [line 203](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/Particles/SuperSymmetry/SU5/Potential.lean#L203).
+**`SuperSymmetry.SU5.PotentialTerm.violates_RParity_iff_mem`**, a lemma, [line 203](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Particles/SuperSymmetry/SU5/Potential.lean#L203).
 
 ```lean
 lemma violates_RParity_iff_mem {T : PotentialTerm} :
@@ -167,7 +167,7 @@ lemma violates_RParity_iff_mem {T : PotentialTerm} :
 > We write down the finite set of terms which contribute to proton decay.
 > We do not at this point prove this result.
 
-**`SuperSymmetry.SU5.PotentialTerm.causeProtonDecay`**, a def, [line 224](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/Particles/SuperSymmetry/SU5/Potential.lean#L224).
+**`SuperSymmetry.SU5.PotentialTerm.causeProtonDecay`**, a def, [line 224](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Particles/SuperSymmetry/SU5/Potential.lean#L224).
 
 > The finite set of terms in the superpotential and Kahler potential which are involved in
 >   proton decay.
@@ -186,4 +186,4 @@ def causeProtonDecay : Finset PotentialTerm
 
 ## Sources
 
-- [Physlib/Particles/SuperSymmetry/SU5/Potential.lean at 2a1dfe43](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/Particles/SuperSymmetry/SU5/Potential.lean)
+- [Physlib/Particles/SuperSymmetry/SU5/Potential.lean at 8c87bdfb](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Particles/SuperSymmetry/SU5/Potential.lean)

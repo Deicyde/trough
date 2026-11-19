@@ -8,7 +8,7 @@ proof: formalized
 
 # The Higgs invariants below mass weight eight
 
-The module `PhyslibAlpha.Particles.StandardModel.Realization.HiggsCov.MassWeight.MassDimLTEight`, [PhyslibAlpha/Particles/StandardModel/Realization/HiggsCov/MassWeight/MassDimLTEight.lean](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/Realization/HiggsCov/MassWeight/MassDimLTEight.lean): 19 declarations, 19 with a docstring.
+The module `PhyslibAlpha.Particles.StandardModel.Realization.HiggsCov.MassWeight.MassDimLTEight`, [PhyslibAlpha/Particles/StandardModel/Realization/HiggsCov/MassWeight/MassDimLTEight.lean](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/Realization/HiggsCov/MassWeight/MassDimLTEight.lean): 19 declarations, 19 with a docstring.
 
 ## i. Overview
 
@@ -58,7 +58,7 @@ The module `PhyslibAlpha.Particles.StandardModel.Realization.HiggsCov.MassWeight
 > derivative indices has a single term and the product of Lorentz matrix entries over its
 > slots is empty.  Both collapses are this one lemma.
 
-**`StandardModel.HiggsAlgebraCovRealization.sum_cov_zero`**, a lemma, [line 93](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/Realization/HiggsCov/MassWeight/MassDimLTEight.lean#L93).
+**`StandardModel.HiggsAlgebraCovRealization.sum_cov_zero`**, a lemma, [line 93](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/Realization/HiggsCov/MassWeight/MassDimLTEight.lean#L93).
 
 > A sum over families of no covector indices is its single term.
 
@@ -77,7 +77,7 @@ lemma sum_cov_zero {M : Type*} [AddCommMonoid M] (f : (Fin 0 → Fin 1 ⊕ Fin 3
 > (`RankOne.reducesInvariantsTo_bot`); the spans are themselves stable, so
 > `ReducesInvariantsTo.sup` joins the two.
 
-**`StandardModel.HiggsAlgebraCovRealization.isLorentzCovariant_rankOne_dotGaugeHiggs_left`**, a lemma, [line 116](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/Realization/HiggsCov/MassWeight/MassDimLTEight.lean#L116).
+**`StandardModel.HiggsAlgebraCovRealization.isLorentzCovariant_rankOne_dotGaugeHiggs_left`**, a lemma, [line 116](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/Realization/HiggsCov/MassWeight/MassDimLTEight.lean#L116).
 
 > The isospin contraction of a once-derived Higgs tower against an underived conjugate
 > tower, read as a family indexed by its derivative slot, is a Lorentz vector.
@@ -88,7 +88,7 @@ lemma isLorentzCovariant_rankOne_dotGaugeHiggs_left :
       (ofComponents fun d : Fin 1 → Fin 1 ⊕ Fin 3 => h.dotGaugeHiggs d ![])
 ```
 
-**`StandardModel.HiggsAlgebraCovRealization.isLorentzCovariant_rankOne_dotGaugeHiggs_right`**, a lemma, [line 127](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/Realization/HiggsCov/MassWeight/MassDimLTEight.lean#L127).
+**`StandardModel.HiggsAlgebraCovRealization.isLorentzCovariant_rankOne_dotGaugeHiggs_right`**, a lemma, [line 127](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/Realization/HiggsCov/MassWeight/MassDimLTEight.lean#L127).
 
 > The isospin contraction of an underived Higgs tower against a once-derived conjugate
 > tower is a Lorentz vector in the same way.
@@ -99,7 +99,7 @@ lemma isLorentzCovariant_rankOne_dotGaugeHiggs_right :
       (ofComponents fun d : Fin 1 → Fin 1 ⊕ Fin 3 => h.dotGaugeHiggs ![] d)
 ```
 
-**`StandardModel.HiggsAlgebraCovRealization.dotSpan_one_zero_eq`**, a lemma, [line 137](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/Realization/HiggsCov/MassWeight/MassDimLTEight.lean#L137).
+**`StandardModel.HiggsAlgebraCovRealization.dotSpan_one_zero_eq`**, a lemma, [line 137](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/Realization/HiggsCov/MassWeight/MassDimLTEight.lean#L137).
 
 > The span of the isospin contractions with one derivative on the Higgs tower is the
 > span of the components of the corresponding Lorentz vector.
@@ -110,7 +110,7 @@ lemma dotSpan_one_zero_eq :
       = Submodule.span ℂ (Set.range fun d : Fin 1 → Fin 1 ⊕ Fin 3 => h.dotGaugeHiggs d ![])
 ```
 
-**`StandardModel.HiggsAlgebraCovRealization.dotSpan_zero_one_eq`**, a lemma, [line 146](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/Realization/HiggsCov/MassWeight/MassDimLTEight.lean#L146).
+**`StandardModel.HiggsAlgebraCovRealization.dotSpan_zero_one_eq`**, a lemma, [line 146](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/Realization/HiggsCov/MassWeight/MassDimLTEight.lean#L146).
 
 > The span of the isospin contractions with one derivative on the conjugate tower is the
 > span of the components of the corresponding Lorentz vector.
@@ -128,7 +128,7 @@ lemma dotSpan_zero_one_eq :
 > of Lorentz matrix entries, that is not at all, and the contraction and the whole line
 > through it are fixed.  Nothing peels off here; the line is the answer.
 
-**`StandardModel.HiggsAlgebraCovRealization.repLorentz_dotGaugeHiggs_zero`**, a lemma, [line 167](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/Realization/HiggsCov/MassWeight/MassDimLTEight.lean#L167).
+**`StandardModel.HiggsAlgebraCovRealization.repLorentz_dotGaugeHiggs_zero`**, a lemma, [line 167](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/Realization/HiggsCov/MassWeight/MassDimLTEight.lean#L167).
 
 > The underived isospin contraction is a Lorentz scalar.
 
@@ -138,7 +138,7 @@ lemma repLorentz_dotGaugeHiggs_zero (g : SL(2,ℂ)) :
       = h.dotGaugeHiggs ![] ![]
 ```
 
-**`StandardModel.HiggsAlgebraCovRealization.dotSpan_zero_zero_eq`**, a lemma, [line 174](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/Realization/HiggsCov/MassWeight/MassDimLTEight.lean#L174).
+**`StandardModel.HiggsAlgebraCovRealization.dotSpan_zero_zero_eq`**, a lemma, [line 174](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/Realization/HiggsCov/MassWeight/MassDimLTEight.lean#L174).
 
 > The span of the underived isospin contractions is the line through the mass term.
 
@@ -147,7 +147,7 @@ lemma dotSpan_zero_zero_eq :
     h.dotSpan 0 0 = ℂ ∙ h.dotGaugeHiggs (![] : Fin 0 → Fin 1 ⊕ Fin 3) ![]
 ```
 
-**`StandardModel.HiggsAlgebraCovRealization.repLorentz_of_mem_dotSpan_zero_zero`**, a lemma, [line 185](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/Realization/HiggsCov/MassWeight/MassDimLTEight.lean#L185).
+**`StandardModel.HiggsAlgebraCovRealization.repLorentz_of_mem_dotSpan_zero_zero`**, a lemma, [line 185](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/Realization/HiggsCov/MassWeight/MassDimLTEight.lean#L185).
 
 > Every element of the line through the underived isospin contraction is a Lorentz
 > invariant.
@@ -157,7 +157,7 @@ lemma repLorentz_of_mem_dotSpan_zero_zero (g : SL(2,ℂ)) {y : B} (hy : y ∈ h.
     repLorentz g y = y
 ```
 
-**`StandardModel.HiggsAlgebraCovRealization.rep_of_mem_dotSpan`**, a lemma, [line 193](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/Realization/HiggsCov/MassWeight/MassDimLTEight.lean#L193).
+**`StandardModel.HiggsAlgebraCovRealization.rep_of_mem_dotSpan`**, a lemma, [line 193](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/Realization/HiggsCov/MassWeight/MassDimLTEight.lean#L193).
 
 > Every element of a span of isospin contractions is a gauge invariant.
 
@@ -166,7 +166,7 @@ lemma rep_of_mem_dotSpan {n m : ℕ} (g : GaugeGroupI) {y : B} (hy : y ∈ h.dot
     rep g y = y
 ```
 
-**`StandardModel.HiggsAlgebraCovRealization.dotSpan_zero_zero_le_massWeightSubmodule`**, a lemma, [line 199](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/Realization/HiggsCov/MassWeight/MassDimLTEight.lean#L199).
+**`StandardModel.HiggsAlgebraCovRealization.dotSpan_zero_zero_le_massWeightSubmodule`**, a lemma, [line 199](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/Realization/HiggsCov/MassWeight/MassDimLTEight.lean#L199).
 
 > The line through the underived isospin contraction lies in mass weight four.
 
@@ -182,7 +182,7 @@ lemma dotSpan_zero_zero_le_massWeightSubmodule :
 > for the Lorentz group, since a single covector index carries no invariant contraction, and
 > `ReducesInvariantsTo.sup` joins them: nothing is left behind.
 
-**`StandardModel.HiggsAlgebraCovRealization.reducesInvariantsTo_dotSpan_one_zero_sup_zero_one`**, a lemma, [line 220](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/Realization/HiggsCov/MassWeight/MassDimLTEight.lean#L220).
+**`StandardModel.HiggsAlgebraCovRealization.reducesInvariantsTo_dotSpan_one_zero_sup_zero_one`**, a lemma, [line 220](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/Realization/HiggsCov/MassWeight/MassDimLTEight.lean#L220).
 
 > The once-derived isospin contractions reduce to `⊥` for the Lorentz group: each span is
 > spanned by a Lorentz vector, and a single covector index carries no invariant.
@@ -202,7 +202,7 @@ lemma reducesInvariantsTo_dotSpan_one_zero_sup_zero_one :
 > statement has the shape of the weight-eight one and of the other sectors' below-eight ones,
 > whose spans happen to be trivial.
 
-**`StandardModel.HiggsAlgebraCovRealization.lorentzContractionLTEightSpan`**, a def, [line 244](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/Realization/HiggsCov/MassWeight/MassDimLTEight.lean#L244).
+**`StandardModel.HiggsAlgebraCovRealization.lorentzContractionLTEightSpan`**, a def, [line 244](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/Realization/HiggsCov/MassWeight/MassDimLTEight.lean#L244).
 
 > The gauge and Lorentz invariants of the Higgs sector at mass weight `w` for
 > `0 < w < 8`: the line through the Higgs mass term at weight four, and nothing at any
@@ -214,7 +214,7 @@ noncomputable def lorentzContractionLTEightSpan
     (w : ℕ) : Submodule ℂ B
 ```
 
-**`StandardModel.HiggsAlgebraCovRealization.lorentzContractionLTEightSpan_le_massWeightSubmodule`**, a lemma, [line 251](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/Realization/HiggsCov/MassWeight/MassDimLTEight.lean#L251).
+**`StandardModel.HiggsAlgebraCovRealization.lorentzContractionLTEightSpan_le_massWeightSubmodule`**, a lemma, [line 251](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/Realization/HiggsCov/MassWeight/MassDimLTEight.lean#L251).
 
 > The surviving span at weight `w` lies in the mass-weight submodule of weight `w`.
 
@@ -223,7 +223,7 @@ lemma lorentzContractionLTEightSpan_le_massWeightSubmodule (w : ℕ) :
     h.lorentzContractionLTEightSpan w ≤ h.massWeightSubmodule w
 ```
 
-**`StandardModel.HiggsAlgebraCovRealization.rep_of_mem_lorentzContractionLTEightSpan`**, a lemma, [line 261](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/Realization/HiggsCov/MassWeight/MassDimLTEight.lean#L261).
+**`StandardModel.HiggsAlgebraCovRealization.rep_of_mem_lorentzContractionLTEightSpan`**, a lemma, [line 261](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/Realization/HiggsCov/MassWeight/MassDimLTEight.lean#L261).
 
 > Every element of the surviving span is a gauge invariant.
 
@@ -232,7 +232,7 @@ lemma rep_of_mem_lorentzContractionLTEightSpan (w : ℕ) (g : GaugeGroupI) {y : 
     (hy : y ∈ h.lorentzContractionLTEightSpan w) : rep g y = y
 ```
 
-**`StandardModel.HiggsAlgebraCovRealization.repLorentz_of_mem_lorentzContractionLTEightSpan`**, a lemma, [line 271](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/Realization/HiggsCov/MassWeight/MassDimLTEight.lean#L271).
+**`StandardModel.HiggsAlgebraCovRealization.repLorentz_of_mem_lorentzContractionLTEightSpan`**, a lemma, [line 271](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/Realization/HiggsCov/MassWeight/MassDimLTEight.lean#L271).
 
 > Every element of the surviving span is a Lorentz invariant.
 
@@ -241,7 +241,7 @@ lemma repLorentz_of_mem_lorentzContractionLTEightSpan (w : ℕ) (g : SL(2,ℂ)) 
     (hy : y ∈ h.lorentzContractionLTEightSpan w) : repLorentz g y = y
 ```
 
-**`StandardModel.HiggsAlgebraCovRealization.isFixedBy_lorentzContractionLTEightSpan`**, a lemma, [line 281](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/Realization/HiggsCov/MassWeight/MassDimLTEight.lean#L281).
+**`StandardModel.HiggsAlgebraCovRealization.isFixedBy_lorentzContractionLTEightSpan`**, a lemma, [line 281](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/Realization/HiggsCov/MassWeight/MassDimLTEight.lean#L281).
 
 > The surviving span below weight eight is fixed pointwise by both groups.
 
@@ -250,7 +250,7 @@ lemma isFixedBy_lorentzContractionLTEightSpan (w : ℕ) :
     IsFixedBy (gaugeLorentzMaps rep repLorentz) (h.lorentzContractionLTEightSpan w)
 ```
 
-**`StandardModel.HiggsAlgebraCovRealization.reducesInvariantsTo_lorentzContractionLTEightSpan`**, a lemma, [line 293](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/Realization/HiggsCov/MassWeight/MassDimLTEight.lean#L293).
+**`StandardModel.HiggsAlgebraCovRealization.reducesInvariantsTo_lorentzContractionLTEightSpan`**, a lemma, [line 293](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/Realization/HiggsCov/MassWeight/MassDimLTEight.lean#L293).
 
 > Below mass weight eight the Higgs sector reduces, for the gauge and Lorentz groups
 > together, to the surviving span. The four odd weights are trivial submodules, weight two
@@ -264,7 +264,7 @@ lemma reducesInvariantsTo_lorentzContractionLTEightSpan {w : ℕ} (hw0 : 0 < w) 
       (h.lorentzContractionLTEightSpan w)
 ```
 
-**`StandardModel.HiggsAlgebraCovRealization.mem_massWeightSubmodule_lt_eight_sup_and_gauge_lorentz_invariant_iff`**, a lemma, [line 320](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/Realization/HiggsCov/MassWeight/MassDimLTEight.lean#L320).
+**`StandardModel.HiggsAlgebraCovRealization.mem_massWeightSubmodule_lt_eight_sup_and_gauge_lorentz_invariant_iff`**, a lemma, [line 320](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/Realization/HiggsCov/MassWeight/MassDimLTEight.lean#L320).
 
 > The classification below mass weight eight as an equivalence, in the shape of
 > `mem_massWeightSubmodule_eight_sup_and_gauge_lorentz_invariant_iff`: an element of
@@ -285,7 +285,7 @@ lemma mem_massWeightSubmodule_lt_eight_sup_and_gauge_lorentz_invariant_iff (w : 
           ∧ x - y ∈ h.lorentzContractionLTEightSpan w
 ```
 
-**`StandardModel.HiggsAlgebraCovRealization.mem_massWeightSubmodule_lt_eight_sup_and_gauge_lorentz_invariant_iff_mem`**, a lemma, [line 338](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/Realization/HiggsCov/MassWeight/MassDimLTEight.lean#L338).
+**`StandardModel.HiggsAlgebraCovRealization.mem_massWeightSubmodule_lt_eight_sup_and_gauge_lorentz_invariant_iff_mem`**, a lemma, [line 338](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/Realization/HiggsCov/MassWeight/MassDimLTEight.lean#L338).
 
 > The same classification without the existential: below mass weight eight an element of
 > `massWeightSubmodule w ⊔ S` fixed by both groups is an element of the surviving span
@@ -314,4 +314,4 @@ lemma mem_massWeightSubmodule_lt_eight_sup_and_gauge_lorentz_invariant_iff_mem (
 
 ## Sources
 
-- [PhyslibAlpha/Particles/StandardModel/Realization/HiggsCov/MassWeight/MassDimLTEight.lean at 2a1dfe43](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/Realization/HiggsCov/MassWeight/MassDimLTEight.lean)
+- [PhyslibAlpha/Particles/StandardModel/Realization/HiggsCov/MassWeight/MassDimLTEight.lean at 8c87bdfb](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/Realization/HiggsCov/MassWeight/MassDimLTEight.lean)

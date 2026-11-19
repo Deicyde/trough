@@ -8,7 +8,7 @@ proof: formalized
 
 # Walsh characters
 
-The module `PhyslibAlpha.Mathematics.SpecialFunctions.Walsh`, [PhyslibAlpha/Mathematics/SpecialFunctions/Walsh.lean](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Mathematics/SpecialFunctions/Walsh.lean): 22 declarations, 22 with a docstring.
+The module `PhyslibAlpha.Mathematics.SpecialFunctions.Walsh`, [PhyslibAlpha/Mathematics/SpecialFunctions/Walsh.lean](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Mathematics/SpecialFunctions/Walsh.lean): 22 declarations, 22 with a docstring.
 
 > The Walsh characters on `Fin n → Fin 2` and the orthonormal basis of rescaled Walsh vectors.
 
@@ -41,7 +41,7 @@ The module `PhyslibAlpha.Mathematics.SpecialFunctions.Walsh`, [PhyslibAlpha/Math
 
 ## A. Signs on `Fin 2`
 
-**`walshSign`**, a def, [line 63](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Mathematics/SpecialFunctions/Walsh.lean#L63).
+**`walshSign`**, a def, [line 63](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Mathematics/SpecialFunctions/Walsh.lean#L63).
 
 > The sign `(-1) ^ (j * k)` for `j k : Fin 2`, as a complex number.
 
@@ -49,7 +49,7 @@ The module `PhyslibAlpha.Mathematics.SpecialFunctions.Walsh`, [PhyslibAlpha/Math
 def walshSign (j k : Fin 2) : ℂ
 ```
 
-**`walshSign_zero_left`**, a lemma, [line 67](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Mathematics/SpecialFunctions/Walsh.lean#L67).
+**`walshSign_zero_left`**, a lemma, [line 67](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Mathematics/SpecialFunctions/Walsh.lean#L67).
 
 > The sign `walshSign 0 k` is `1`.
 
@@ -57,7 +57,7 @@ def walshSign (j k : Fin 2) : ℂ
 lemma walshSign_zero_left (k : Fin 2) : walshSign 0 k = 1
 ```
 
-**`walshSign_zero_right`**, a lemma, [line 72](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Mathematics/SpecialFunctions/Walsh.lean#L72).
+**`walshSign_zero_right`**, a lemma, [line 72](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Mathematics/SpecialFunctions/Walsh.lean#L72).
 
 > The sign `walshSign j 0` is `1`.
 
@@ -65,7 +65,7 @@ lemma walshSign_zero_left (k : Fin 2) : walshSign 0 k = 1
 lemma walshSign_zero_right (j : Fin 2) : walshSign j 0 = 1
 ```
 
-**`walshSign_one_one`**, a lemma, [line 77](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Mathematics/SpecialFunctions/Walsh.lean#L77).
+**`walshSign_one_one`**, a lemma, [line 77](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Mathematics/SpecialFunctions/Walsh.lean#L77).
 
 > The sign `walshSign 1 1` is `-1`.
 
@@ -73,7 +73,7 @@ lemma walshSign_zero_right (j : Fin 2) : walshSign j 0 = 1
 lemma walshSign_one_one : walshSign 1 1 = -1
 ```
 
-**`walshSign_comm`**, a lemma, [line 81](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Mathematics/SpecialFunctions/Walsh.lean#L81).
+**`walshSign_comm`**, a lemma, [line 81](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Mathematics/SpecialFunctions/Walsh.lean#L81).
 
 > The sign `(-1) ^ (j * k)` is symmetric in `j` and `k`.
 
@@ -81,7 +81,7 @@ lemma walshSign_one_one : walshSign 1 1 = -1
 lemma walshSign_comm (j k : Fin 2) : walshSign j k = walshSign k j
 ```
 
-**`walshSign_mul_self`**, a lemma, [line 85](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Mathematics/SpecialFunctions/Walsh.lean#L85).
+**`walshSign_mul_self`**, a lemma, [line 85](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Mathematics/SpecialFunctions/Walsh.lean#L85).
 
 > A sign squares to one.
 
@@ -89,7 +89,7 @@ lemma walshSign_comm (j k : Fin 2) : walshSign j k = walshSign k j
 lemma walshSign_mul_self (j k : Fin 2) : walshSign j k * walshSign j k = 1
 ```
 
-**`conj_walshSign`**, a lemma, [line 89](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Mathematics/SpecialFunctions/Walsh.lean#L89).
+**`conj_walshSign`**, a lemma, [line 89](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Mathematics/SpecialFunctions/Walsh.lean#L89).
 
 > A sign equals its complex conjugate.
 
@@ -97,7 +97,7 @@ lemma walshSign_mul_self (j k : Fin 2) : walshSign j k * walshSign j k = 1
 lemma conj_walshSign (j k : Fin 2) : starRingEnd ℂ (walshSign j k) = walshSign j k
 ```
 
-**`norm_walshSign`**, a lemma, [line 93](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Mathematics/SpecialFunctions/Walsh.lean#L93).
+**`norm_walshSign`**, a lemma, [line 93](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Mathematics/SpecialFunctions/Walsh.lean#L93).
 
 > A sign has unit norm.
 
@@ -105,7 +105,7 @@ lemma conj_walshSign (j k : Fin 2) : starRingEnd ℂ (walshSign j k) = walshSign
 lemma norm_walshSign (j k : Fin 2) : ‖walshSign j k‖ = 1
 ```
 
-**`sum_walshSign_mul_walshSign`**, a lemma, [line 97](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Mathematics/SpecialFunctions/Walsh.lean#L97).
+**`sum_walshSign_mul_walshSign`**, a lemma, [line 97](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Mathematics/SpecialFunctions/Walsh.lean#L97).
 
 > Orthogonality of the signs on `Fin 2`.
 
@@ -116,7 +116,7 @@ lemma sum_walshSign_mul_walshSign (a b : Fin 2) :
 
 ## B. Walsh characters
 
-**`walsh`**, a def, [line 109](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Mathematics/SpecialFunctions/Walsh.lean#L109).
+**`walsh`**, a def, [line 109](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Mathematics/SpecialFunctions/Walsh.lean#L109).
 
 > The Walsh character `∏ i, (-1) ^ (x i * z i)` on `Fin n → Fin 2`.
 
@@ -124,7 +124,7 @@ lemma sum_walshSign_mul_walshSign (a b : Fin 2) :
 def walsh (x z : Fin n → Fin 2) : ℂ
 ```
 
-**`walsh_eq`**, a lemma, [line 112](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Mathematics/SpecialFunctions/Walsh.lean#L112).
+**`walsh_eq`**, a lemma, [line 112](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Mathematics/SpecialFunctions/Walsh.lean#L112).
 
 > The Walsh character is the product of the signs of the components.
 
@@ -132,7 +132,7 @@ def walsh (x z : Fin n → Fin 2) : ℂ
 lemma walsh_eq (x z : Fin n → Fin 2) : walsh x z = ∏ i, walshSign (x i) (z i)
 ```
 
-**`walsh_comm`**, a lemma, [line 115](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Mathematics/SpecialFunctions/Walsh.lean#L115).
+**`walsh_comm`**, a lemma, [line 115](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Mathematics/SpecialFunctions/Walsh.lean#L115).
 
 > The Walsh character `walsh x z` is symmetric in `x` and `z`.
 
@@ -140,7 +140,7 @@ lemma walsh_eq (x z : Fin n → Fin 2) : walsh x z = ∏ i, walshSign (x i) (z i
 lemma walsh_comm (x z : Fin n → Fin 2) : walsh x z = walsh z x
 ```
 
-**`walsh_mul_self`**, a lemma, [line 119](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Mathematics/SpecialFunctions/Walsh.lean#L119).
+**`walsh_mul_self`**, a lemma, [line 119](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Mathematics/SpecialFunctions/Walsh.lean#L119).
 
 > A Walsh character squares to one.
 
@@ -148,7 +148,7 @@ lemma walsh_comm (x z : Fin n → Fin 2) : walsh x z = walsh z x
 lemma walsh_mul_self (x z : Fin n → Fin 2) : walsh x z * walsh x z = 1
 ```
 
-**`conj_walsh`**, a lemma, [line 123](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Mathematics/SpecialFunctions/Walsh.lean#L123).
+**`conj_walsh`**, a lemma, [line 123](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Mathematics/SpecialFunctions/Walsh.lean#L123).
 
 > A Walsh character equals its complex conjugate.
 
@@ -156,7 +156,7 @@ lemma walsh_mul_self (x z : Fin n → Fin 2) : walsh x z * walsh x z = 1
 lemma conj_walsh (x z : Fin n → Fin 2) : starRingEnd ℂ (walsh x z) = walsh x z
 ```
 
-**`norm_walsh`**, a lemma, [line 127](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Mathematics/SpecialFunctions/Walsh.lean#L127).
+**`norm_walsh`**, a lemma, [line 127](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Mathematics/SpecialFunctions/Walsh.lean#L127).
 
 > A Walsh character has unit norm.
 
@@ -164,7 +164,7 @@ lemma conj_walsh (x z : Fin n → Fin 2) : starRingEnd ℂ (walsh x z) = walsh x
 lemma norm_walsh (x z : Fin n → Fin 2) : ‖walsh x z‖ = 1
 ```
 
-**`sum_walsh_mul_walsh`**, a lemma, [line 131](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Mathematics/SpecialFunctions/Walsh.lean#L131).
+**`sum_walsh_mul_walsh`**, a lemma, [line 131](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Mathematics/SpecialFunctions/Walsh.lean#L131).
 
 > Orthogonality of the Walsh characters.
 
@@ -177,7 +177,7 @@ lemma sum_walsh_mul_walsh (x y : Fin n → Fin 2) :
 
 ### C.1. Rescaled Walsh vectors
 
-**`walshVec`**, a def, [line 151](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Mathematics/SpecialFunctions/Walsh.lean#L151).
+**`walshVec`**, a def, [line 151](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Mathematics/SpecialFunctions/Walsh.lean#L151).
 
 > The rescaled Walsh vector `z ↦ (√(2 ^ n))⁻¹ * walsh x z` in
 > `EuclideanSpace ℂ (Fin n → Fin 2)`.
@@ -186,7 +186,7 @@ lemma sum_walsh_mul_walsh (x y : Fin n → Fin 2) :
 def walshVec (x : Fin n → Fin 2) : EuclideanSpace ℂ (Fin n → Fin 2)
 ```
 
-**`walshVec_apply`**, a lemma, [line 156](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Mathematics/SpecialFunctions/Walsh.lean#L156).
+**`walshVec_apply`**, a lemma, [line 156](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Mathematics/SpecialFunctions/Walsh.lean#L156).
 
 > The component `z` of `walshVec x` is `(√(2 ^ n))⁻¹ * walsh x z`.
 
@@ -195,7 +195,7 @@ lemma walshVec_apply (x z : Fin n → Fin 2) :
     walshVec x z = (Real.sqrt (2 ^ n))⁻¹ * walsh x z
 ```
 
-**`orthonormal_walshVec`**, a lemma, [line 160](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Mathematics/SpecialFunctions/Walsh.lean#L160).
+**`orthonormal_walshVec`**, a lemma, [line 160](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Mathematics/SpecialFunctions/Walsh.lean#L160).
 
 > The rescaled Walsh vectors are orthonormal.
 
@@ -205,7 +205,7 @@ lemma orthonormal_walshVec : Orthonormal ℂ (walshVec (n := n))
 
 ### C.2. The orthonormal basis
 
-**`walshBasis`**, a def, [line 185](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Mathematics/SpecialFunctions/Walsh.lean#L185).
+**`walshBasis`**, a def, [line 185](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Mathematics/SpecialFunctions/Walsh.lean#L185).
 
 > The orthonormal basis of `EuclideanSpace ℂ (Fin n → Fin 2)` formed by the rescaled Walsh
 > vectors `walshVec x`.
@@ -215,7 +215,7 @@ def walshBasis (n : ℕ) :
     OrthonormalBasis (Fin n → Fin 2) ℂ (EuclideanSpace ℂ (Fin n → Fin 2))
 ```
 
-**`coe_walshBasis`**, a lemma, [line 193](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Mathematics/SpecialFunctions/Walsh.lean#L193).
+**`coe_walshBasis`**, a lemma, [line 193](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Mathematics/SpecialFunctions/Walsh.lean#L193).
 
 > The vectors of `walshBasis n` are the rescaled Walsh vectors.
 
@@ -225,7 +225,7 @@ lemma coe_walshBasis (n : ℕ) : ⇑(walshBasis n) = walshVec
 
 ### C.3. Parseval's identity
 
-**`sum_norm_sq_sum_mul_inv_sqrt_mul_walsh`**, a lemma, [line 203](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Mathematics/SpecialFunctions/Walsh.lean#L203).
+**`sum_norm_sq_sum_mul_inv_sqrt_mul_walsh`**, a lemma, [line 203](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Mathematics/SpecialFunctions/Walsh.lean#L203).
 
 > Parseval's identity for the rescaled Walsh vectors. The vector
 > `x ↦ ∑ z, β z * (√(2 ^ n))⁻¹ * walsh x z` has the same squared norm as `β`.
@@ -242,4 +242,4 @@ Its declarations' statements use no declaration of another module with an articl
 
 ## Sources
 
-- [PhyslibAlpha/Mathematics/SpecialFunctions/Walsh.lean at 2a1dfe43](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Mathematics/SpecialFunctions/Walsh.lean)
+- [PhyslibAlpha/Mathematics/SpecialFunctions/Walsh.lean at 8c87bdfb](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Mathematics/SpecialFunctions/Walsh.lean)

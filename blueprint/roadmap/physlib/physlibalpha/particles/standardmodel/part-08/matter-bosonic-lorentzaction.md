@@ -8,7 +8,7 @@ proof: formalized
 
 # The Lorentz action on the bosonic algebra
 
-The module `PhyslibAlpha.Particles.StandardModel.Matter.Bosonic.LorentzAction`, [PhyslibAlpha/Particles/StandardModel/Matter/Bosonic/LorentzAction.lean](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/Matter/Bosonic/LorentzAction.lean): 10 declarations, 7 with a docstring.
+The module `PhyslibAlpha.Particles.StandardModel.Matter.Bosonic.LorentzAction`, [PhyslibAlpha/Particles/StandardModel/Matter/Bosonic/LorentzAction.lean](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/Matter/Bosonic/LorentzAction.lean): 10 declarations, 7 with a docstring.
 
 ## i. Overview
 
@@ -36,7 +36,7 @@ The module `PhyslibAlpha.Particles.StandardModel.Matter.Bosonic.LorentzAction`, 
 
 ## A. The action of the Lorentz group
 
-**`StandardModel.BosonicAlgebra.repLorentzGroup`**, a def, [line 65](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/Matter/Bosonic/LorentzAction.lean#L65).
+**`StandardModel.BosonicAlgebra.repLorentzGroup`**, a def, [line 65](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/Matter/Bosonic/LorentzAction.lean#L65).
 
 > **The Lorentz action on the bosonic algebra** of the matter field `M`, induced
 > from a representation `M.repLorentz` of `SL(2,ℂ)` on `V`: the symmetric-algebra functor applied
@@ -47,7 +47,7 @@ noncomputable def repLorentzGroup :
     Representation ℂ SL(2,ℂ) (BosonicAlgebra M)
 ```
 
-**`StandardModel.BosonicAlgebra.repLorentzGroup_apply`**, a lemma, [line 74](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/Matter/Bosonic/LorentzAction.lean#L74).
+**`StandardModel.BosonicAlgebra.repLorentzGroup_apply`**, a lemma, [line 74](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/Matter/Bosonic/LorentzAction.lean#L74).
 
 ```lean
 lemma repLorentzGroup_apply (Λ : SL(2,ℂ))
@@ -56,14 +56,14 @@ lemma repLorentzGroup_apply (Λ : SL(2,ℂ))
       SymmetricAlgebra.map (JetComponentSpace.repLorentzGroup M Λ) x
 ```
 
-**`StandardModel.BosonicAlgebra.repLorentzGroup_apply_one`**, a lemma, [line 80](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/Matter/Bosonic/LorentzAction.lean#L80).
+**`StandardModel.BosonicAlgebra.repLorentzGroup_apply_one`**, a lemma, [line 80](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/Matter/Bosonic/LorentzAction.lean#L80).
 
 ```lean
 lemma repLorentzGroup_apply_one (Λ : SL(2,ℂ)) :
     repLorentzGroup M Λ (1 : BosonicAlgebra M) = 1
 ```
 
-**`StandardModel.BosonicAlgebra.repLorentzGroup_apply_mul`**, a lemma, [line 84](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/Matter/Bosonic/LorentzAction.lean#L84).
+**`StandardModel.BosonicAlgebra.repLorentzGroup_apply_mul`**, a lemma, [line 84](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/Matter/Bosonic/LorentzAction.lean#L84).
 
 ```lean
 lemma repLorentzGroup_apply_mul (Λ : SL(2,ℂ))
@@ -72,7 +72,7 @@ lemma repLorentzGroup_apply_mul (Λ : SL(2,ℂ))
       = repLorentzGroup M Λ x * repLorentzGroup M Λ y
 ```
 
-**`StandardModel.BosonicAlgebra.repLorentzGroup_ι`**, a lemma, [line 92](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/Matter/Bosonic/LorentzAction.lean#L92).
+**`StandardModel.BosonicAlgebra.repLorentzGroup_ι`**, a lemma, [line 92](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/Matter/Bosonic/LorentzAction.lean#L92).
 
 > On a component function the Lorentz action is the action on the component space.
 
@@ -83,7 +83,7 @@ lemma repLorentzGroup_ι (Λ : SL(2,ℂ))
       SymmetricAlgebra.ι ℂ _ (JetComponentSpace.repLorentzGroup M Λ v)
 ```
 
-**`StandardModel.BosonicAlgebra.repLorentzGroupAlgHom`**, a def, [line 100](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/Matter/Bosonic/LorentzAction.lean#L100).
+**`StandardModel.BosonicAlgebra.repLorentzGroupAlgHom`**, a def, [line 100](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/Matter/Bosonic/LorentzAction.lean#L100).
 
 > The Lorentz action as an algebra homomorphism: it preserves the symmetric product, so a
 > Lorentz transformation acts on a Lagrangian term factor by factor.
@@ -95,7 +95,7 @@ noncomputable def repLorentzGroupAlgHom (Λ : SL(2,ℂ)) :
 
 ### A.1. Equivariance of the field and its conjugate
 
-**`StandardModel.BosonicAlgebra.repLorentzGroup_ofField`**, a lemma, [line 120](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/Matter/Bosonic/LorentzAction.lean#L120).
+**`StandardModel.BosonicAlgebra.repLorentzGroup_ofField`**, a lemma, [line 120](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/Matter/Bosonic/LorentzAction.lean#L120).
 
 > **`ofField` is `SL(2,ℂ)`-equivariant.** The undifferentiated component functions carry
 > the contragredient of the representation on the target space, and no derivative labels
@@ -108,7 +108,7 @@ lemma repLorentzGroup_ofField (Λ : SL(2,ℂ))
     repLorentzGroup M Λ (ofField φ) = ofField (M.repLorentz.dual Λ φ)
 ```
 
-**`StandardModel.BosonicAlgebra.repLorentzGroup_ofConjField`**, a lemma, [line 136](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/Matter/Bosonic/LorentzAction.lean#L136).
+**`StandardModel.BosonicAlgebra.repLorentzGroup_ofConjField`**, a lemma, [line 136](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/Matter/Bosonic/LorentzAction.lean#L136).
 
 > **`ofConjField` is `SL(2,ℂ)`-equivariant**, for the conjugate of the representation on
 > the target space: the conjugate component functions transform by `star` of the spinor
@@ -122,7 +122,7 @@ lemma repLorentzGroup_ofConjField (Λ : SL(2,ℂ))
 
 ## B. Lorentz covariance of the total derivative
 
-**`StandardModel.BosonicAlgebra.repLorentzGroup_jetDeriv`**, a lemma, [line 158](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/Matter/Bosonic/LorentzAction.lean#L158).
+**`StandardModel.BosonicAlgebra.repLorentzGroup_jetDeriv`**, a lemma, [line 158](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/Matter/Bosonic/LorentzAction.lean#L158).
 
 > **The total derivative on the bosonic algebra is a Lorentz vector.** The four
 > derivations `∂_μ` transform into each other by the columns of the Lorentz matrix of `Λ`,
@@ -136,7 +136,7 @@ lemma repLorentzGroup_jetDeriv (Λ : SL(2,ℂ))
         jetDeriv a (repLorentzGroup M Λ x)
 ```
 
-**`StandardModel.BosonicAlgebra.instIsLorentzDeriv`**, an instance, [line 184](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/Matter/Bosonic/LorentzAction.lean#L184).
+**`StandardModel.BosonicAlgebra.instIsLorentzDeriv`**, an instance, [line 184](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/Matter/Bosonic/LorentzAction.lean#L184).
 
 > The total derivatives on the bosonic algebra form a Lorentz derivative, giving access
 > to the boost-weight machinery of `PhyslibAlpha.Relativity.IsLorentzDeriv`.
@@ -152,4 +152,4 @@ instance instIsLorentzDeriv :
 
 ## Sources
 
-- [PhyslibAlpha/Particles/StandardModel/Matter/Bosonic/LorentzAction.lean at 2a1dfe43](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/Matter/Bosonic/LorentzAction.lean)
+- [PhyslibAlpha/Particles/StandardModel/Matter/Bosonic/LorentzAction.lean at 8c87bdfb](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/Matter/Bosonic/LorentzAction.lean)

@@ -8,7 +8,7 @@ proof: formalized
 
 # The fermionic algebra of a direct sum
 
-The module `PhyslibAlpha.Particles.StandardModel.Matter.Fermionic.Prod`, [PhyslibAlpha/Particles/StandardModel/Matter/Fermionic/Prod.lean](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/Matter/Fermionic/Prod.lean): 2 declarations, 2 with a docstring.
+The module `PhyslibAlpha.Particles.StandardModel.Matter.Fermionic.Prod`, [PhyslibAlpha/Particles/StandardModel/Matter/Fermionic/Prod.lean](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/Matter/Fermionic/Prod.lean): 2 declarations, 2 with a docstring.
 
 ## i. Overview
 
@@ -45,7 +45,7 @@ The module `PhyslibAlpha.Particles.StandardModel.Matter.Fermionic.Prod`, [Physli
 
 ## B. The Fermi-parity grading
 
-**`StandardModel.FermionicAlgebra.evenOdd`**, an abbrev, [line 80](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/Matter/Fermionic/Prod.lean#L80).
+**`StandardModel.FermionicAlgebra.evenOdd`**, an abbrev, [line 80](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/Matter/Fermionic/Prod.lean#L80).
 
 > **The Fermi-parity grading** of the fermionic algebra: the `ZMod 2` grading of the
 > exterior algebra by the number of component functions in a monomial. An even element
@@ -58,7 +58,7 @@ abbrev FermionicAlgebra.evenOdd (M : MatterField jets) :
 
 ## C. The exterior product decomposition
 
-**`StandardModel.FermionicAlgebra.prodEquiv`**, a def, [line 97](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/Matter/Fermionic/Prod.lean#L97).
+**`StandardModel.FermionicAlgebra.prodEquiv`**, a def, [line 97](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/Matter/Fermionic/Prod.lean#L97).
 
 > **The fermionic algebra of a direct sum is the exterior product of the fermionic
 > algebras.** Two matter fields taken together are one field valued in the direct sum of
@@ -83,4 +83,4 @@ noncomputable def FermionicAlgebra.prodEquiv (M N : MatterField jets)
 
 ## Sources
 
-- [PhyslibAlpha/Particles/StandardModel/Matter/Fermionic/Prod.lean at 2a1dfe43](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/Matter/Fermionic/Prod.lean)
+- [PhyslibAlpha/Particles/StandardModel/Matter/Fermionic/Prod.lean at 8c87bdfb](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/Matter/Fermionic/Prod.lean)

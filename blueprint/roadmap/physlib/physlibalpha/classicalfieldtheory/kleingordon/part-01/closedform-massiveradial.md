@@ -8,7 +8,7 @@ proof: formalized
 
 # The retarded Green function with mass in three space dimensions
 
-The module `PhyslibAlpha.ClassicalFieldTheory.KleinGordon.ClosedForm.MassiveRadial`, [PhyslibAlpha/ClassicalFieldTheory/KleinGordon/ClosedForm/MassiveRadial.lean](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/KleinGordon/ClosedForm/MassiveRadial.lean): 4 declarations, 4 with a docstring.
+The module `PhyslibAlpha.ClassicalFieldTheory.KleinGordon.ClosedForm.MassiveRadial`, [PhyslibAlpha/ClassicalFieldTheory/KleinGordon/ClosedForm/MassiveRadial.lean](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/KleinGordon/ClosedForm/MassiveRadial.lean): 4 declarations, 4 with a docstring.
 
 > The retarded Green function in three space dimensions is
 > `δ(t - r) / (4π r) - m J₁(m √(t² - r²)) / (4π √(t² - r²)) Θ(t - r)`.
@@ -40,7 +40,7 @@ The module `PhyslibAlpha.ClassicalFieldTheory.KleinGordon.ClosedForm.MassiveRadi
 >   `Space 3`.
 > - `solution_origin_radialSource_besselJ1` : the same formula with `J₁`.
 
-**`KleinGordon.sineEvolution_origin_radialSource`**, a lemma, [line 67](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/KleinGordon/ClosedForm/MassiveRadial.lean#L67).
+**`KleinGordon.sineEvolution_origin_radialSource`**, a lemma, [line 67](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/KleinGordon/ClosedForm/MassiveRadial.lean#L67).
 
 > **The Kirchhoff–Bessel formula for the sine evolution at the origin.** For a radial source with
 > the profile `Φ` the massive sine evolution at the origin is
@@ -55,7 +55,7 @@ lemma sineEvolution_origin_radialSource (m : ℝ) {τ : ℝ} (hτ : 0 ≤ τ)
           liftProfile P (s, u ^ 2)
 ```
 
-**`KleinGordon.solution_origin_radialSource`**, a lemma, [line 244](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/KleinGordon/ClosedForm/MassiveRadial.lean#L244).
+**`KleinGordon.solution_origin_radialSource`**, a lemma, [line 244](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/KleinGordon/ClosedForm/MassiveRadial.lean#L244).
 
 > **The Kirchhoff–Bessel formula for the retarded solution at the origin.** For a radial source
 > `ψ'(s, x) = Q(s, ‖x‖²)` in three space dimensions the massive retarded solution at `(t, 0)` is
@@ -72,7 +72,7 @@ lemma solution_origin_radialSource (m : ℝ)
             liftProfile P (s, u ^ 2))
 ```
 
-**`KleinGordon.solution_origin_radialSource_space`**, a lemma, [line 256](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/KleinGordon/ClosedForm/MassiveRadial.lean#L256).
+**`KleinGordon.solution_origin_radialSource_space`**, a lemma, [line 256](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/KleinGordon/ClosedForm/MassiveRadial.lean#L256).
 
 > **The Kirchhoff–Bessel formula on `Space 3`.**
 
@@ -86,7 +86,7 @@ lemma solution_origin_radialSource_space (m : ℝ)
             liftProfile P (s, u ^ 2))
 ```
 
-**`KleinGordon.solution_origin_radialSource_besselJ1`**, a lemma, [line 268](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/KleinGordon/ClosedForm/MassiveRadial.lean#L268).
+**`KleinGordon.solution_origin_radialSource_besselJ1`**, a lemma, [line 268](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/KleinGordon/ClosedForm/MassiveRadial.lean#L268).
 
 > **The Kirchhoff–Bessel formula with `J₁`.** For `m ≠ 0` the retarded solution at the origin of
 > a radial source is `∫_{s ≤ t} [τ Φ(τ) - m ∫₀^τ u² J₁(m √(τ² - u²)) / √(τ² - u²) Φ(u) du] ds`.
@@ -113,4 +113,4 @@ lemma solution_origin_radialSource_besselJ1 {m : ℝ} (hm : m ≠ 0)
 
 ## Sources
 
-- [PhyslibAlpha/ClassicalFieldTheory/KleinGordon/ClosedForm/MassiveRadial.lean at 2a1dfe43](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/KleinGordon/ClosedForm/MassiveRadial.lean)
+- [PhyslibAlpha/ClassicalFieldTheory/KleinGordon/ClosedForm/MassiveRadial.lean at 8c87bdfb](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/KleinGordon/ClosedForm/MassiveRadial.lean)

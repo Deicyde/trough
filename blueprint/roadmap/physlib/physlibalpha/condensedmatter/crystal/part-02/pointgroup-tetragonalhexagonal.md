@@ -8,7 +8,7 @@ proof: formalized
 
 # The point groups of the tetragonal and hexagonal lattices
 
-The module `PhyslibAlpha.CondensedMatter.Crystal.PointGroup.TetragonalHexagonal`, [PhyslibAlpha/CondensedMatter/Crystal/PointGroup/TetragonalHexagonal.lean](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/CondensedMatter/Crystal/PointGroup/TetragonalHexagonal.lean): 17 declarations, 15 with a docstring.
+The module `PhyslibAlpha.CondensedMatter.Crystal.PointGroup.TetragonalHexagonal`, [PhyslibAlpha/CondensedMatter/Crystal/PointGroup/TetragonalHexagonal.lean](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/CondensedMatter/Crystal/PointGroup/TetragonalHexagonal.lean): 17 declarations, 15 with a docstring.
 
 > The point groups of the primitive and body-centred tetragonal lattices have order sixteen, and
 > the point group of the primitive hexagonal lattice has order twenty-four.
@@ -40,7 +40,7 @@ The module `PhyslibAlpha.CondensedMatter.Crystal.PointGroup.TetragonalHexagonal`
 
 ## A. Powers from admissible triples
 
-**`CondensedMatter.Crystal.PeriodicGraph.toAdd_pow_apply`**, a lemma, [line 59](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/CondensedMatter/Crystal/PointGroup/TetragonalHexagonal.lean#L59).
+**`CondensedMatter.Crystal.PeriodicGraph.toAdd_pow_apply`**, a lemma, [line 59](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/CondensedMatter/Crystal/PointGroup/TetragonalHexagonal.lean#L59).
 
 ```lean
 lemma toAdd_pow_apply {G : Type*} [AddCommGroup G] (A : Multiplicative (AddAut G)) (n : ℕ)
@@ -48,7 +48,7 @@ lemma toAdd_pow_apply {G : Type*} [AddCommGroup G] (A : Multiplicative (AddAut G
       (Multiplicative.toAdd A : AddAut G)^[n] x
 ```
 
-**`CondensedMatter.Crystal.PeriodicGraph.toVec3_act_iterate`**, a lemma, [line 69](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/CondensedMatter/Crystal/PointGroup/TetragonalHexagonal.lean#L69).
+**`CondensedMatter.Crystal.PeriodicGraph.toVec3_act_iterate`**, a lemma, [line 69](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/CondensedMatter/Crystal/PointGroup/TetragonalHexagonal.lean#L69).
 
 > The powers of the map determined by a tuple of columns, in components.
 
@@ -58,7 +58,7 @@ lemma toVec3_act_iterate (v : Fin 3 → Fin 3 → ℤ) (n : ℕ) (d : Fin 3 → 
       (act3 (toVec3 (v 0)) (toVec3 (v 1)) (toVec3 (v 2)))^[n] (toVec3 d)
 ```
 
-**`CondensedMatter.Crystal.PeriodicGraph.basis3`**, a def, [line 77](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/CondensedMatter/Crystal/PointGroup/TetragonalHexagonal.lean#L77).
+**`CondensedMatter.Crystal.PeriodicGraph.basis3`**, a def, [line 77](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/CondensedMatter/Crystal/PointGroup/TetragonalHexagonal.lean#L77).
 
 > The three basis vectors, as triples.
 
@@ -66,13 +66,13 @@ lemma toVec3_act_iterate (v : Fin 3 → Fin 3 → ℤ) (n : ℕ) (d : Fin 3 → 
 def basis3 : List Vec3
 ```
 
-**`CondensedMatter.Crystal.PeriodicGraph.toVec3_single_mem_basis3`**, a lemma, [line 79](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/CondensedMatter/Crystal/PointGroup/TetragonalHexagonal.lean#L79).
+**`CondensedMatter.Crystal.PeriodicGraph.toVec3_single_mem_basis3`**, a lemma, [line 79](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/CondensedMatter/Crystal/PointGroup/TetragonalHexagonal.lean#L79).
 
 ```lean
 lemma toVec3_single_mem_basis3 (j : Fin 3) : toVec3 (Pi.single j 1) ∈ basis3
 ```
 
-**`CondensedMatter.Crystal.PeriodicGraph.powFixesBasisB`**, a def, [line 84](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/CondensedMatter/Crystal/PointGroup/TetragonalHexagonal.lean#L84).
+**`CondensedMatter.Crystal.PeriodicGraph.powFixesBasisB`**, a def, [line 84](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/CondensedMatter/Crystal/PointGroup/TetragonalHexagonal.lean#L84).
 
 > Whether the `n`-th power of every admissible triple of the neighbour list `l` fixes the
 > three basis vectors.
@@ -81,7 +81,7 @@ lemma toVec3_single_mem_basis3 (j : Fin 3) : toVec3 (Pi.single j 1) ∈ basis3
 def powFixesBasisB (l : List Vec3) (n : ℕ) : Bool
 ```
 
-**`CondensedMatter.Crystal.PeriodicGraph.iterate_act_single_eq_of_powFixesBasisB`**, a lemma, [line 88](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/CondensedMatter/Crystal/PointGroup/TetragonalHexagonal.lean#L88).
+**`CondensedMatter.Crystal.PeriodicGraph.iterate_act_single_eq_of_powFixesBasisB`**, a lemma, [line 88](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/CondensedMatter/Crystal/PointGroup/TetragonalHexagonal.lean#L88).
 
 > If the Boolean test passes, the `n`-th power of every admissible tuple fixes the basis.
 
@@ -92,7 +92,7 @@ lemma iterate_act_single_eq_of_powFixesBasisB {N : Finset (Fin 3 → ℤ)} {l : 
     (act v)^[n] (Pi.single j 1) = Pi.single j 1
 ```
 
-**`CondensedMatter.Crystal.PeriodicGraph.pow_eq_one_of_admissible`**, a lemma, [line 108](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/CondensedMatter/Crystal/PointGroup/TetragonalHexagonal.lean#L108).
+**`CondensedMatter.Crystal.PeriodicGraph.pow_eq_one_of_admissible`**, a lemma, [line 108](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/CondensedMatter/Crystal/PointGroup/TetragonalHexagonal.lean#L108).
 
 > If the `n`-th power of every admissible triple fixes the basis, then every element of the
 > point stabilizer satisfies `A ^ n = 1`.
@@ -108,7 +108,7 @@ lemma pow_eq_one_of_admissible (n : ℕ)
 > The neighbour lists are written out with the neighbours that are not basis vectors first, so
 > that the Boolean test fails early on most candidate tuples.
 
-**`CondensedMatter.Crystal.tetragonalNeighbors`**, a def, [line 135](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/CondensedMatter/Crystal/PointGroup/TetragonalHexagonal.lean#L135).
+**`CondensedMatter.Crystal.tetragonalNeighbors`**, a def, [line 135](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/CondensedMatter/Crystal/PointGroup/TetragonalHexagonal.lean#L135).
 
 > The ten neighbours of the primitive tetragonal lattice.
 
@@ -116,7 +116,7 @@ lemma pow_eq_one_of_admissible (n : ℕ)
 def tetragonalNeighbors : List PeriodicGraph.Vec3
 ```
 
-**`CondensedMatter.Crystal.tetragonal_card_pointGroup`**, a lemma, [line 140](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/CondensedMatter/Crystal/PointGroup/TetragonalHexagonal.lean#L140).
+**`CondensedMatter.Crystal.tetragonal_card_pointGroup`**, a lemma, [line 140](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/CondensedMatter/Crystal/PointGroup/TetragonalHexagonal.lean#L140).
 
 > **The point group of the primitive tetragonal lattice has order `16`.**
 
@@ -124,7 +124,7 @@ def tetragonalNeighbors : List PeriodicGraph.Vec3
 lemma tetragonal_card_pointGroup : Nat.card tetragonalGraph.pointGroup = 16
 ```
 
-**`CondensedMatter.Crystal.bodyCentredTetragonalNeighbors`**, a def, [line 150](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/CondensedMatter/Crystal/PointGroup/TetragonalHexagonal.lean#L150).
+**`CondensedMatter.Crystal.bodyCentredTetragonalNeighbors`**, a def, [line 150](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/CondensedMatter/Crystal/PointGroup/TetragonalHexagonal.lean#L150).
 
 > The sixteen neighbours of the body-centred tetragonal lattice.
 
@@ -132,7 +132,7 @@ lemma tetragonal_card_pointGroup : Nat.card tetragonalGraph.pointGroup = 16
 def bodyCentredTetragonalNeighbors : List PeriodicGraph.Vec3
 ```
 
-**`CondensedMatter.Crystal.bodyCentredTetragonal_card_pointGroup`**, a lemma, [line 156](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/CondensedMatter/Crystal/PointGroup/TetragonalHexagonal.lean#L156).
+**`CondensedMatter.Crystal.bodyCentredTetragonal_card_pointGroup`**, a lemma, [line 156](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/CondensedMatter/Crystal/PointGroup/TetragonalHexagonal.lean#L156).
 
 > **The point group of the body-centred tetragonal lattice has order `16`.**
 
@@ -141,7 +141,7 @@ lemma bodyCentredTetragonal_card_pointGroup :
     Nat.card bodyCentredTetragonalGraph.pointGroup = 16
 ```
 
-**`CondensedMatter.Crystal.hexagonalNeighbors`**, a def, [line 169](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/CondensedMatter/Crystal/PointGroup/TetragonalHexagonal.lean#L169).
+**`CondensedMatter.Crystal.hexagonalNeighbors`**, a def, [line 169](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/CondensedMatter/Crystal/PointGroup/TetragonalHexagonal.lean#L169).
 
 > The eight neighbours of the primitive hexagonal lattice.
 
@@ -149,7 +149,7 @@ lemma bodyCentredTetragonal_card_pointGroup :
 def hexagonalNeighbors : List PeriodicGraph.Vec3
 ```
 
-**`CondensedMatter.Crystal.hexagonal_card_pointGroup`**, a lemma, [line 173](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/CondensedMatter/Crystal/PointGroup/TetragonalHexagonal.lean#L173).
+**`CondensedMatter.Crystal.hexagonal_card_pointGroup`**, a lemma, [line 173](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/CondensedMatter/Crystal/PointGroup/TetragonalHexagonal.lean#L173).
 
 > **The point group of the primitive hexagonal lattice has order `24`.**
 
@@ -157,7 +157,7 @@ def hexagonalNeighbors : List PeriodicGraph.Vec3
 lemma hexagonal_card_pointGroup : Nat.card hexagonalGraph.pointGroup = 24
 ```
 
-**`CondensedMatter.Crystal.firstShellNeighbors`**, a def, [line 183](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/CondensedMatter/Crystal/PointGroup/TetragonalHexagonal.lean#L183).
+**`CondensedMatter.Crystal.firstShellNeighbors`**, a def, [line 183](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/CondensedMatter/Crystal/PointGroup/TetragonalHexagonal.lean#L183).
 
 > The six neighbours of the first shell, `±x, ±y, ±z`.
 
@@ -165,7 +165,7 @@ lemma hexagonal_card_pointGroup : Nat.card hexagonalGraph.pointGroup = 24
 def firstShellNeighbors : List PeriodicGraph.Vec3
 ```
 
-**`CondensedMatter.Crystal.tetragonal_firstShell_card_pointGroup`**, a lemma, [line 188](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/CondensedMatter/Crystal/PointGroup/TetragonalHexagonal.lean#L188).
+**`CondensedMatter.Crystal.tetragonal_firstShell_card_pointGroup`**, a lemma, [line 188](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/CondensedMatter/Crystal/PointGroup/TetragonalHexagonal.lean#L188).
 
 > With the bonds of the first shell only, `±x, ±y, ±z`, a tetragonal lattice has the point
 > group of the simple cubic lattice, of order `48`.
@@ -178,7 +178,7 @@ lemma tetragonal_firstShell_card_pointGroup :
 
 ## C. The exponents
 
-**`CondensedMatter.Crystal.tetragonal_pow_four`**, a lemma, [line 204](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/CondensedMatter/Crystal/PointGroup/TetragonalHexagonal.lean#L204).
+**`CondensedMatter.Crystal.tetragonal_pow_four`**, a lemma, [line 204](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/CondensedMatter/Crystal/PointGroup/TetragonalHexagonal.lean#L204).
 
 > Every element of the point group of the primitive tetragonal lattice satisfies `A ^ 4 = 1`.
 
@@ -187,7 +187,7 @@ lemma tetragonal_pow_four (A : Multiplicative (AddAut (Fin 3 → ℤ)))
     (hA : A ∈ tetragonalGraph.pointStabilizer) : A ^ 4 = 1
 ```
 
-**`CondensedMatter.Crystal.hexagonal_pow_six`**, a lemma, [line 213](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/CondensedMatter/Crystal/PointGroup/TetragonalHexagonal.lean#L213).
+**`CondensedMatter.Crystal.hexagonal_pow_six`**, a lemma, [line 213](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/CondensedMatter/Crystal/PointGroup/TetragonalHexagonal.lean#L213).
 
 > Every element of the point group of the primitive hexagonal lattice satisfies `A ^ 6 = 1`.
 
@@ -203,4 +203,4 @@ lemma hexagonal_pow_six (A : Multiplicative (AddAut (Fin 3 → ℤ)))
 
 ## Sources
 
-- [PhyslibAlpha/CondensedMatter/Crystal/PointGroup/TetragonalHexagonal.lean at 2a1dfe43](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/CondensedMatter/Crystal/PointGroup/TetragonalHexagonal.lean)
+- [PhyslibAlpha/CondensedMatter/Crystal/PointGroup/TetragonalHexagonal.lean at 8c87bdfb](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/CondensedMatter/Crystal/PointGroup/TetragonalHexagonal.lean)

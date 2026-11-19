@@ -1,14 +1,14 @@
 ---
 declaration: module
 origin: cited
-lean: ProbabilisticTheory.QuantumMechanics.WOTSpectralMeasure.expFunction_hasDerivAt, ProbabilisticTheory.QuantumMechanics.WOTSpectralMeasure.expFunction_slope_tendsto, ProbabilisticTheory.QuantumMechanics.WOTSpectralMeasure.expFunction_sub_one_norm_le, ProbabilisticTheory.QuantumMechanics.WOTSpectralMeasure.expFunction_slope_norm_le, ProbabilisticTheory.QuantumMechanics.WOTSpectralMeasure.expFunction_slope_sub_derivative_norm_le, ProbabilisticTheory.QuantumMechanics.WOTSpectralMeasure.expSlope, ProbabilisticTheory.QuantumMechanics.WOTSpectralMeasure.expSlope_measurable, ProbabilisticTheory.QuantumMechanics.WOTSpectralMeasure.expSlope_tendsto
+lean: PhyslibAlpha.ProbabilisticTheory.QuantumMechanics.WOTSpectralMeasure.expFunction_hasDerivAt, PhyslibAlpha.ProbabilisticTheory.QuantumMechanics.WOTSpectralMeasure.expFunction_slope_tendsto, PhyslibAlpha.ProbabilisticTheory.QuantumMechanics.WOTSpectralMeasure.expFunction_sub_one_norm_le, PhyslibAlpha.ProbabilisticTheory.QuantumMechanics.WOTSpectralMeasure.expFunction_slope_norm_le, PhyslibAlpha.ProbabilisticTheory.QuantumMechanics.WOTSpectralMeasure.expFunction_slope_sub_derivative_norm_le, PhyslibAlpha.ProbabilisticTheory.QuantumMechanics.WOTSpectralMeasure.expSlope, PhyslibAlpha.ProbabilisticTheory.QuantumMechanics.WOTSpectralMeasure.expSlope_measurable, PhyslibAlpha.ProbabilisticTheory.QuantumMechanics.WOTSpectralMeasure.expSlope_tendsto
 statement: formalized
 proof: formalized
 ---
 
 # Differentiating the exponential multiplier
 
-The module `PhyslibAlpha.ProbabilisticTheory.HilbertSpace.Unbounded.Stone`, [PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/Stone.lean](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/Stone.lean): 16 declarations, 1 with a docstring.
+The module `PhyslibAlpha.ProbabilisticTheory.HilbertSpace.Unbounded.Stone`, [PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/Stone.lean](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/Stone.lean): 16 declarations, 1 with a docstring.
 
 > Difference quotients of `exp(i t T) x` converge to `i T x` for `x` of finite second moment.
 
@@ -33,14 +33,14 @@ The module `PhyslibAlpha.ProbabilisticTheory.HilbertSpace.Unbounded.Stone`, [Phy
 
 ## A. The exponential function and its difference quotients
 
-**`ProbabilisticTheory.QuantumMechanics.WOTSpectralMeasure.expFunction_hasDerivAt`**, a lemma, [line 63](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/Stone.lean#L63).
+**`PhyslibAlpha.ProbabilisticTheory.QuantumMechanics.WOTSpectralMeasure.expFunction_hasDerivAt`**, a lemma, [line 63](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/Stone.lean#L63).
 
 ```lean
 lemma expFunction_hasDerivAt (r : ℝ) :
     HasDerivAt (fun t : ℝ => expFunction t r) (Complex.I * (r : ℂ)) 0
 ```
 
-**`ProbabilisticTheory.QuantumMechanics.WOTSpectralMeasure.expFunction_slope_tendsto`**, a lemma, [line 92](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/Stone.lean#L92).
+**`PhyslibAlpha.ProbabilisticTheory.QuantumMechanics.WOTSpectralMeasure.expFunction_slope_tendsto`**, a lemma, [line 92](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/Stone.lean#L92).
 
 ```lean
 lemma expFunction_slope_tendsto (r : ℝ) :
@@ -49,21 +49,21 @@ lemma expFunction_slope_tendsto (r : ℝ) :
       (𝓝[≠] (0 : ℝ)) (𝓝 (Complex.I * (r : ℂ)))
 ```
 
-**`ProbabilisticTheory.QuantumMechanics.WOTSpectralMeasure.expFunction_sub_one_norm_le`**, a lemma, [line 98](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/Stone.lean#L98).
+**`PhyslibAlpha.ProbabilisticTheory.QuantumMechanics.WOTSpectralMeasure.expFunction_sub_one_norm_le`**, a lemma, [line 98](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/Stone.lean#L98).
 
 ```lean
 lemma expFunction_sub_one_norm_le (t r : ℝ) (ht : |t * r| ≤ 1) :
     ‖expFunction t r - 1‖ ≤ 2 * |t * r|
 ```
 
-**`ProbabilisticTheory.QuantumMechanics.WOTSpectralMeasure.expFunction_slope_norm_le`**, a lemma, [line 106](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/Stone.lean#L106).
+**`PhyslibAlpha.ProbabilisticTheory.QuantumMechanics.WOTSpectralMeasure.expFunction_slope_norm_le`**, a lemma, [line 106](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/Stone.lean#L106).
 
 ```lean
 lemma expFunction_slope_norm_le {t r : ℝ} (ht : t ≠ 0) (_htsmall : |t| ≤ 1) :
     ‖t⁻¹ • (expFunction t r - 1)‖ ≤ 2 * |r|
 ```
 
-**`ProbabilisticTheory.QuantumMechanics.WOTSpectralMeasure.expFunction_slope_sub_derivative_norm_le`**, a lemma, [line 137](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/Stone.lean#L137).
+**`PhyslibAlpha.ProbabilisticTheory.QuantumMechanics.WOTSpectralMeasure.expFunction_slope_sub_derivative_norm_le`**, a lemma, [line 137](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/Stone.lean#L137).
 
 ```lean
 lemma expFunction_slope_sub_derivative_norm_le {t r : ℝ} (ht : t ≠ 0)
@@ -71,7 +71,7 @@ lemma expFunction_slope_sub_derivative_norm_le {t r : ℝ} (ht : t ≠ 0)
     ‖t⁻¹ • (expFunction t r - 1) - Complex.I * (r : ℂ)‖ ≤ 3 * |r|
 ```
 
-**`ProbabilisticTheory.QuantumMechanics.WOTSpectralMeasure.expSlope`**, a def, [line 150](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/Stone.lean#L150).
+**`PhyslibAlpha.ProbabilisticTheory.QuantumMechanics.WOTSpectralMeasure.expSlope`**, a def, [line 150](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/Stone.lean#L150).
 
 > The difference quotient `t⁻¹(exp(itr) - 1)` of `expFunction`.
 
@@ -79,13 +79,13 @@ lemma expFunction_slope_sub_derivative_norm_le {t r : ℝ} (ht : t ≠ 0)
 def expSlope (t r : ℝ) : ℂ
 ```
 
-**`ProbabilisticTheory.QuantumMechanics.WOTSpectralMeasure.expSlope_measurable`**, a lemma, [line 153](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/Stone.lean#L153).
+**`PhyslibAlpha.ProbabilisticTheory.QuantumMechanics.WOTSpectralMeasure.expSlope_measurable`**, a lemma, [line 153](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/Stone.lean#L153).
 
 ```lean
 lemma expSlope_measurable (t : ℝ) : Measurable (expSlope t)
 ```
 
-**`ProbabilisticTheory.QuantumMechanics.WOTSpectralMeasure.expSlope_tendsto`**, a lemma, [line 158](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/Stone.lean#L158).
+**`PhyslibAlpha.ProbabilisticTheory.QuantumMechanics.WOTSpectralMeasure.expSlope_tendsto`**, a lemma, [line 158](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/Stone.lean#L158).
 
 ```lean
 lemma expSlope_tendsto (r : ℝ) :
@@ -93,14 +93,14 @@ lemma expSlope_tendsto (r : ℝ) :
       (𝓝 (Complex.I * (r : ℂ)))
 ```
 
-**`ProbabilisticTheory.QuantumMechanics.WOTSpectralMeasure.expSlope_sub_derivative_measurable`**, a lemma, [line 163](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/Stone.lean#L163).
+**`PhyslibAlpha.ProbabilisticTheory.QuantumMechanics.WOTSpectralMeasure.expSlope_sub_derivative_measurable`**, a lemma, [line 163](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/Stone.lean#L163).
 
 ```lean
 lemma expSlope_sub_derivative_measurable (t : ℝ) :
     Measurable (fun r : ℝ => expSlope t r - Complex.I * (r : ℂ))
 ```
 
-**`ProbabilisticTheory.QuantumMechanics.WOTSpectralMeasure.expSlope_sub_derivative_norm_le`**, a lemma, [line 168](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/Stone.lean#L168).
+**`PhyslibAlpha.ProbabilisticTheory.QuantumMechanics.WOTSpectralMeasure.expSlope_sub_derivative_norm_le`**, a lemma, [line 168](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/Stone.lean#L168).
 
 ```lean
 lemma expSlope_sub_derivative_norm_le {t r : ℝ} (ht : t ≠ 0)
@@ -108,7 +108,7 @@ lemma expSlope_sub_derivative_norm_le {t r : ℝ} (ht : t ≠ 0)
     ‖expSlope t r - Complex.I * (r : ℂ)‖ ≤ 3 * |r|
 ```
 
-**`ProbabilisticTheory.QuantumMechanics.WOTSpectralMeasure.vectorMeasure_expSlope_sub_derivative_tendsto`**, a lemma, [line 173](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/Stone.lean#L173).
+**`PhyslibAlpha.ProbabilisticTheory.QuantumMechanics.WOTSpectralMeasure.vectorMeasure_expSlope_sub_derivative_tendsto`**, a lemma, [line 173](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/Stone.lean#L173).
 
 ```lean
 lemma vectorMeasure_expSlope_sub_derivative_tendsto
@@ -121,7 +121,7 @@ lemma vectorMeasure_expSlope_sub_derivative_tendsto
 
 ## B. Weak convergence of the difference quotients
 
-**`ProbabilisticTheory.QuantumMechanics.WOTSpectralMeasure.maximalSpectralIntegral_inner_eq_complexWeakIntegral`**, a lemma, [line 218](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/Stone.lean#L218).
+**`PhyslibAlpha.ProbabilisticTheory.QuantumMechanics.WOTSpectralMeasure.maximalSpectralIntegral_inner_eq_complexWeakIntegral`**, a lemma, [line 218](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/Stone.lean#L218).
 
 ```lean
 lemma maximalSpectralIntegral_inner_eq_complexWeakIntegral
@@ -132,7 +132,7 @@ lemma maximalSpectralIntegral_inner_eq_complexWeakIntegral
       μS.complexWeakIntegral (fun r : ℝ => (r : ℂ)) x y
 ```
 
-**`ProbabilisticTheory.QuantumMechanics.WOTSpectralMeasure.expIntegral_inner_slope_tendsto_complexWeakIntegral`**, a lemma, [line 228](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/Stone.lean#L228).
+**`PhyslibAlpha.ProbabilisticTheory.QuantumMechanics.WOTSpectralMeasure.expIntegral_inner_slope_tendsto_complexWeakIntegral`**, a lemma, [line 228](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/Stone.lean#L228).
 
 ```lean
 lemma expIntegral_inner_slope_tendsto_complexWeakIntegral
@@ -147,7 +147,7 @@ lemma expIntegral_inner_slope_tendsto_complexWeakIntegral
 
 ## C. Strong convergence of the difference quotients
 
-**`ProbabilisticTheory.QuantumMechanics.WOTSpectralMeasure.boundedIntegral_sub_maximal_norm_sq`**, a lemma, [line 383](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/Stone.lean#L383).
+**`PhyslibAlpha.ProbabilisticTheory.QuantumMechanics.WOTSpectralMeasure.boundedIntegral_sub_maximal_norm_sq`**, a lemma, [line 383](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/Stone.lean#L383).
 
 ```lean
 lemma boundedIntegral_sub_maximal_norm_sq
@@ -160,7 +160,7 @@ lemma boundedIntegral_sub_maximal_norm_sq
         ∂μS.diagonalMeasure x
 ```
 
-**`ProbabilisticTheory.QuantumMechanics.WOTSpectralMeasure.expIntegral_slope_eq_boundedIntegral`**, a lemma, [line 518](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/Stone.lean#L518).
+**`PhyslibAlpha.ProbabilisticTheory.QuantumMechanics.WOTSpectralMeasure.expIntegral_slope_eq_boundedIntegral`**, a lemma, [line 518](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/Stone.lean#L518).
 
 ```lean
 lemma expIntegral_slope_eq_boundedIntegral
@@ -170,7 +170,7 @@ lemma expIntegral_slope_eq_boundedIntegral
       boundedIntegral μS (expSlope t) (expSlope_measurable t) hgb x
 ```
 
-**`ProbabilisticTheory.QuantumMechanics.WOTSpectralMeasure.expIntegral_strong_slope_tendsto`**, a lemma, [line 555](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/Stone.lean#L555).
+**`PhyslibAlpha.ProbabilisticTheory.QuantumMechanics.WOTSpectralMeasure.expIntegral_strong_slope_tendsto`**, a lemma, [line 555](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/Stone.lean#L555).
 
 ```lean
 lemma expIntegral_strong_slope_tendsto
@@ -188,4 +188,4 @@ lemma expIntegral_strong_slope_tendsto
 
 ## Sources
 
-- [PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/Stone.lean at 2a1dfe43](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/Stone.lean)
+- [PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/Stone.lean at 8c87bdfb](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/Stone.lean)

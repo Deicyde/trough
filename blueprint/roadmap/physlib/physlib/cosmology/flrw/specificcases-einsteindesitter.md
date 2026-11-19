@@ -8,7 +8,7 @@ proof: formalized
 
 # The Einstein-de Sitter model
 
-The module `Physlib.Cosmology.FLRW.SpecificCases.EinsteinDeSitter`, [Physlib/Cosmology/FLRW/SpecificCases/EinsteinDeSitter.lean](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/Cosmology/FLRW/SpecificCases/EinsteinDeSitter.lean): 3 declarations, 3 with a docstring.
+The module `Physlib.Cosmology.FLRW.SpecificCases.EinsteinDeSitter`, [Physlib/Cosmology/FLRW/SpecificCases/EinsteinDeSitter.lean](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Cosmology/FLRW/SpecificCases/EinsteinDeSitter.lean): 3 declarations, 3 with a docstring.
 
 ## i. Overview
 
@@ -32,7 +32,7 @@ The module `Physlib.Cosmology.FLRW.SpecificCases.EinsteinDeSitter`, [Physlib/Cos
 
 ## A. The Einstein-de Sitter model
 
-**`Cosmology.FLRW.einsteinDeSitter`**, a def, [line 52](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/Cosmology/FLRW/SpecificCases/EinsteinDeSitter.lean#L52).
+**`Cosmology.FLRW.einsteinDeSitter`**, a def, [line 52](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Cosmology/FLRW/SpecificCases/EinsteinDeSitter.lean#L52).
 
 > The Einstein-de Sitter model, the flat power-law model with `n = 2/3`.
 
@@ -40,7 +40,7 @@ The module `Physlib.Cosmology.FLRW.SpecificCases.EinsteinDeSitter`, [Physlib/Cos
 noncomputable def FLRW.einsteinDeSitter (t₀ : Time) (ht₀ : 0 < t₀.val) : FLRW
 ```
 
-**`Cosmology.FLRW.einsteinDeSitter_a`**, a lemma, [line 56](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/Cosmology/FLRW/SpecificCases/EinsteinDeSitter.lean#L56).
+**`Cosmology.FLRW.einsteinDeSitter_a`**, a lemma, [line 56](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Cosmology/FLRW/SpecificCases/EinsteinDeSitter.lean#L56).
 
 > The scale factor of the Einstein-de Sitter model is `einsteinDeSitterScaleFactor t₀`.
 
@@ -49,7 +49,7 @@ lemma FLRW.einsteinDeSitter_a {t₀ : Time} (ht₀ : 0 < t₀.val) :
     (FLRW.einsteinDeSitter t₀ ht₀).a = einsteinDeSitterScaleFactor t₀
 ```
 
-**`Cosmology.FLRW.friedmannSolution_einsteinDeSitter`**, a lemma, [line 62](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/Cosmology/FLRW/SpecificCases/EinsteinDeSitter.lean#L62).
+**`Cosmology.FLRW.friedmannSolution_einsteinDeSitter`**, a lemma, [line 62](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Cosmology/FLRW/SpecificCases/EinsteinDeSitter.lean#L62).
 
 > The Einstein-de Sitter model, filled with dust of density `3 n² / (8 π G t²)` with `n = 2/3`,
 > that is `1 / (6 π G t²)`, and zero pressure, solves the Friedmann equations without cosmological
@@ -69,4 +69,4 @@ lemma FLRW.friedmannSolution_einsteinDeSitter {t₀ : Time} (ht₀ : 0 < t₀.va
 
 ## Sources
 
-- [Physlib/Cosmology/FLRW/SpecificCases/EinsteinDeSitter.lean at 2a1dfe43](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/Cosmology/FLRW/SpecificCases/EinsteinDeSitter.lean)
+- [Physlib/Cosmology/FLRW/SpecificCases/EinsteinDeSitter.lean at 8c87bdfb](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Cosmology/FLRW/SpecificCases/EinsteinDeSitter.lean)

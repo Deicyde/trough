@@ -8,7 +8,7 @@ proof: formalized
 
 # Bochner's theorem on locally compact abelian groups
 
-The module `PhyslibAlpha.Mathematics.TauCeti.Analysis.Bochner.LocallyCompactGroup`, [PhyslibAlpha/Mathematics/TauCeti/Analysis/Bochner/LocallyCompactGroup.lean](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Mathematics/TauCeti/Analysis/Bochner/LocallyCompactGroup.lean): 4 declarations, 4 with a docstring.
+The module `PhyslibAlpha.Mathematics.TauCeti.Analysis.Bochner.LocallyCompactGroup`, [PhyslibAlpha/Mathematics/TauCeti/Analysis/Bochner/LocallyCompactGroup.lean](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Mathematics/TauCeti/Analysis/Bochner/LocallyCompactGroup.lean): 4 declarations, 4 with a docstring.
 
 > A positive-definite function `φ` on a locally compact abelian group `G` that is continuous at `0` is
 > the Fourier–Stieltjes transform `φ(g) = ∫ χ(g) dμ(χ)` of a finite inner regular positive measure `μ`
@@ -55,7 +55,7 @@ The module `PhyslibAlpha.Mathematics.TauCeti.Analysis.Bochner.LocallyCompactGrou
 
 ## A. Development
 
-**`TauCeti.IsPositiveDefiniteSub.exists_pontryaginMeasureTransform_eq_of_continuousAt`**, a lemma, [line 82](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Mathematics/TauCeti/Analysis/Bochner/LocallyCompactGroup.lean#L82).
+**`TauCeti.IsPositiveDefiniteSub.exists_pontryaginMeasureTransform_eq_of_continuousAt`**, a lemma, [line 82](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Mathematics/TauCeti/Analysis/Bochner/LocallyCompactGroup.lean#L82).
 
 > **Bochner's theorem on a locally compact abelian group**, existence half.
 > A positive-definite function that is continuous at `0` is the Fourier–Stieltjes transform of a
@@ -68,7 +68,7 @@ lemma IsPositiveDefiniteSub.exists_pontryaginMeasureTransform_eq_of_continuousAt
       μ.toMeasure.InnerRegular ∧ μ.pontryaginMeasureTransform = φ
 ```
 
-**`TauCeti.IsPositiveDefiniteSub.existsUnique_innerRegular_pontryaginMeasureTransform_eq_of_continuousAt`**, a lemma, [line 107](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Mathematics/TauCeti/Analysis/Bochner/LocallyCompactGroup.lean#L107).
+**`TauCeti.IsPositiveDefiniteSub.existsUnique_innerRegular_pontryaginMeasureTransform_eq_of_continuousAt`**, a lemma, [line 107](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Mathematics/TauCeti/Analysis/Bochner/LocallyCompactGroup.lean#L107).
 
 > **Unique inner regular form of Bochner's theorem.** A positive-definite function continuous at
 > `0` has a unique finite inner regular representing measure on the Pontryagin dual. No countability
@@ -82,7 +82,7 @@ lemma
       μ.toMeasure.InnerRegular ∧ μ.pontryaginMeasureTransform = φ
 ```
 
-**`TauCeti.continuous_and_isPositiveDefiniteSub_iff_existsUnique_innerRegular_pontryaginMeasureTransform_eq`**, a lemma, [line 120](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Mathematics/TauCeti/Analysis/Bochner/LocallyCompactGroup.lean#L120).
+**`TauCeti.continuous_and_isPositiveDefiniteSub_iff_existsUnique_innerRegular_pontryaginMeasureTransform_eq`**, a lemma, [line 120](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Mathematics/TauCeti/Analysis/Bochner/LocallyCompactGroup.lean#L120).
 
 > **Bochner's characterization without countability assumptions.** A function on a locally
 > compact abelian group is continuous and positive definite if and only if it is the
@@ -97,7 +97,7 @@ lemma
         μ.toMeasure.InnerRegular ∧ μ.pontryaginMeasureTransform = φ
 ```
 
-**`TauCeti.continuous_and_isPositiveDefiniteSub_iff_existsUnique_pontryaginMeasureTransform_eq`**, a lemma, [line 140](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Mathematics/TauCeti/Analysis/Bochner/LocallyCompactGroup.lean#L140).
+**`TauCeti.continuous_and_isPositiveDefiniteSub_iff_existsUnique_pontryaginMeasureTransform_eq`**, a lemma, [line 140](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Mathematics/TauCeti/Analysis/Bochner/LocallyCompactGroup.lean#L140).
 
 > **Bochner's characterization on a locally compact abelian group with Polish dual.** A
 > function is continuous and positive definite if and only if it is the Fourier–Stieltjes
@@ -127,4 +127,4 @@ lemma continuous_and_isPositiveDefiniteSub_iff_existsUnique_pontryaginMeasureTra
 
 ## Sources
 
-- [PhyslibAlpha/Mathematics/TauCeti/Analysis/Bochner/LocallyCompactGroup.lean at 2a1dfe43](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Mathematics/TauCeti/Analysis/Bochner/LocallyCompactGroup.lean)
+- [PhyslibAlpha/Mathematics/TauCeti/Analysis/Bochner/LocallyCompactGroup.lean at 8c87bdfb](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Mathematics/TauCeti/Analysis/Bochner/LocallyCompactGroup.lean)

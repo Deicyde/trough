@@ -1,8 +1,8 @@
 # Space
 
-The folder [PhyslibAlpha/SpaceAndTime/Space/](https://github.com/leanprover-community/physlib/tree/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/SpaceAndTime/Space): 7 modules, an article each, in path order.
+The folder [PhyslibAlpha/SpaceAndTime/Space/](https://github.com/leanprover-community/physlib/tree/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/SpaceAndTime/Space): 7 modules, an article each, in path order.
 
-Modules in [Surfaces/](https://github.com/leanprover-community/physlib/tree/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/SpaceAndTime/Space/Surfaces):
+Modules in [Surfaces/](https://github.com/leanprover-community/physlib/tree/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/SpaceAndTime/Space/Surfaces):
 
 - [Half-plane surface in `Space 3`](surfaces-halfplane.md)
 - [Line surfaces in `Space d`](surfaces-line.md)

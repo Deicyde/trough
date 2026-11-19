@@ -1,14 +1,14 @@
 ---
 declaration: module
 origin: cited
-lean: ProbabilisticTheory.QuantumMechanics.UnitaryRep.calculus, ProbabilisticTheory.QuantumMechanics.UnitaryRep.calculus_character, ProbabilisticTheory.QuantumMechanics.UnitaryRep.calculus_commute, ProbabilisticTheory.QuantumMechanics.UnitaryRep.entry, ProbabilisticTheory.QuantumMechanics.UnitaryRep.entry_apply, ProbabilisticTheory.QuantumMechanics.UnitaryRep.calculus_commute_ι, ProbabilisticTheory.QuantumMechanics.UnitaryRep.blochOp, ProbabilisticTheory.QuantumMechanics.UnitaryRep.entry_add
+lean: PhyslibAlpha.ProbabilisticTheory.QuantumMechanics.UnitaryRep.calculus, PhyslibAlpha.ProbabilisticTheory.QuantumMechanics.UnitaryRep.calculus_character, PhyslibAlpha.ProbabilisticTheory.QuantumMechanics.UnitaryRep.calculus_commute, PhyslibAlpha.ProbabilisticTheory.QuantumMechanics.UnitaryRep.entry, PhyslibAlpha.ProbabilisticTheory.QuantumMechanics.UnitaryRep.entry_apply, PhyslibAlpha.ProbabilisticTheory.QuantumMechanics.UnitaryRep.calculus_commute_ι, PhyslibAlpha.ProbabilisticTheory.QuantumMechanics.UnitaryRep.blochOp, PhyslibAlpha.ProbabilisticTheory.QuantumMechanics.UnitaryRep.entry_add
 statement: formalized
 proof: formalized
 ---
 
 # Bloch–Floquet theory for representations with a finite-dimensional internal space
 
-The module `PhyslibAlpha.ProbabilisticTheory.Representation.Floquet`, [PhyslibAlpha/ProbabilisticTheory/Representation/Floquet.lean](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ProbabilisticTheory/Representation/Floquet.lean): 25 declarations (1 instance with no name), 11 with a docstring.
+The module `PhyslibAlpha.ProbabilisticTheory.Representation.Floquet`, [PhyslibAlpha/ProbabilisticTheory/Representation/Floquet.lean](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/Representation/Floquet.lean): 25 declarations (1 instance with no name), 11 with a docstring.
 
 > Operators built from a unitary representation of an abelian group and an internal matrix algebra
 > are integrals of a matrix-valued symbol over the dual group.
@@ -39,7 +39,7 @@ The module `PhyslibAlpha.ProbabilisticTheory.Representation.Floquet`, [PhyslibAl
 
 > * None.
 
-**An instance with no name**, [line 73](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ProbabilisticTheory/Representation/Floquet.lean#L73).
+**An instance with no name**, [line 73](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/Representation/Floquet.lean#L73).
 
 ```lean
 instance : Nonempty (PontryaginDual (Multiplicative G))
@@ -47,7 +47,7 @@ instance : Nonempty (PontryaginDual (Multiplicative G))
 
 ## A. The functional calculus of the representation
 
-**`ProbabilisticTheory.QuantumMechanics.UnitaryRep.calculus`**, a def, [line 79](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ProbabilisticTheory/Representation/Floquet.lean#L79).
+**`PhyslibAlpha.ProbabilisticTheory.QuantumMechanics.UnitaryRep.calculus`**, a def, [line 79](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/Representation/Floquet.lean#L79).
 
 > **The functional calculus of a unitary representation**: `f ↦ ∫ f dP` is a unital
 > ⋆-homomorphism from the continuous functions on the Pontryagin dual to the bounded operators.
@@ -56,7 +56,7 @@ instance : Nonempty (PontryaginDual (Multiplicative G))
 def calculus : C(PontryaginDual (Multiplicative G), ℂ) →⋆ₐ[ℂ] (H →L[ℂ] H)
 ```
 
-**`ProbabilisticTheory.QuantumMechanics.UnitaryRep.calculus_character`**, a lemma, [line 83](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ProbabilisticTheory/Representation/Floquet.lean#L83).
+**`PhyslibAlpha.ProbabilisticTheory.QuantumMechanics.UnitaryRep.calculus_character`**, a lemma, [line 83](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/Representation/Floquet.lean#L83).
 
 > The functional calculus sends the character `χ ↦ χ(g)` to the operator `π(g)`.
 
@@ -67,7 +67,7 @@ lemma calculus_character (g : Multiplicative G) :
       ((π g : unitary (H →L[ℂ] H)) : H →L[ℂ] H)
 ```
 
-**`ProbabilisticTheory.QuantumMechanics.UnitaryRep.calculus_commute`**, a lemma, [line 90](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ProbabilisticTheory/Representation/Floquet.lean#L90).
+**`PhyslibAlpha.ProbabilisticTheory.QuantumMechanics.UnitaryRep.calculus_commute`**, a lemma, [line 90](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/Representation/Floquet.lean#L90).
 
 > An operator commuting with the representation commutes with its functional calculus.
 
@@ -79,7 +79,7 @@ lemma calculus_commute {T : H →L[ℂ] H}
 
 ## B. Matrix-valued functions
 
-**`ProbabilisticTheory.QuantumMechanics.UnitaryRep.entry`**, a def, [line 109](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ProbabilisticTheory/Representation/Floquet.lean#L109).
+**`PhyslibAlpha.ProbabilisticTheory.QuantumMechanics.UnitaryRep.entry`**, a def, [line 109](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/Representation/Floquet.lean#L109).
 
 > The `(i, j)` entry of a continuous matrix-valued function.
 
@@ -88,21 +88,21 @@ def entry (f : C(PontryaginDual (Multiplicative G), Matrix (Fin N) (Fin N) ℂ))
     C(PontryaginDual (Multiplicative G), ℂ)
 ```
 
-**`ProbabilisticTheory.QuantumMechanics.UnitaryRep.entry_apply`**, a lemma, [line 116](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ProbabilisticTheory/Representation/Floquet.lean#L116).
+**`PhyslibAlpha.ProbabilisticTheory.QuantumMechanics.UnitaryRep.entry_apply`**, a lemma, [line 116](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/Representation/Floquet.lean#L116).
 
 ```lean
 lemma entry_apply (f : C(PontryaginDual (Multiplicative G), Matrix (Fin N) (Fin N) ℂ))
     (i j : Fin N) (χ : PontryaginDual (Multiplicative G)) : entry f i j χ = f χ i j
 ```
 
-**`ProbabilisticTheory.QuantumMechanics.UnitaryRep.calculus_commute_ι`**, a lemma, [line 124](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ProbabilisticTheory/Representation/Floquet.lean#L124).
+**`PhyslibAlpha.ProbabilisticTheory.QuantumMechanics.UnitaryRep.calculus_commute_ι`**, a lemma, [line 124](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/Representation/Floquet.lean#L124).
 
 ```lean
 lemma calculus_commute_ι (f : C(PontryaginDual (Multiplicative G), ℂ))
     (M : Matrix (Fin N) (Fin N) ℂ) : calculus π f * ι M = ι M * calculus π f
 ```
 
-**`ProbabilisticTheory.QuantumMechanics.UnitaryRep.blochOp`**, a def, [line 131](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ProbabilisticTheory/Representation/Floquet.lean#L131).
+**`PhyslibAlpha.ProbabilisticTheory.QuantumMechanics.UnitaryRep.blochOp`**, a def, [line 131](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/Representation/Floquet.lean#L131).
 
 > The operator `∑_{ij} (∫ f_{ij} dP) ι(E_{ij})` of a continuous matrix-valued function.
 
@@ -110,42 +110,42 @@ lemma calculus_commute_ι (f : C(PontryaginDual (Multiplicative G), ℂ))
 def blochOp (f : C(PontryaginDual (Multiplicative G), Matrix (Fin N) (Fin N) ℂ)) : H →L[ℂ] H
 ```
 
-**`ProbabilisticTheory.QuantumMechanics.UnitaryRep.entry_add`**, a lemma, [line 137](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ProbabilisticTheory/Representation/Floquet.lean#L137).
+**`PhyslibAlpha.ProbabilisticTheory.QuantumMechanics.UnitaryRep.entry_add`**, a lemma, [line 137](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/Representation/Floquet.lean#L137).
 
 ```lean
 lemma entry_add (f g : C(PontryaginDual (Multiplicative G), Matrix (Fin N) (Fin N) ℂ))
     (i j : Fin N) : entry (f + g) i j = entry f i j + entry g i j
 ```
 
-**`ProbabilisticTheory.QuantumMechanics.UnitaryRep.entry_smul`**, a lemma, [line 143](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ProbabilisticTheory/Representation/Floquet.lean#L143).
+**`PhyslibAlpha.ProbabilisticTheory.QuantumMechanics.UnitaryRep.entry_smul`**, a lemma, [line 143](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/Representation/Floquet.lean#L143).
 
 ```lean
 lemma entry_smul (c : ℂ) (f : C(PontryaginDual (Multiplicative G), Matrix (Fin N) (Fin N) ℂ))
     (i j : Fin N) : entry (c • f) i j = c • entry f i j
 ```
 
-**`ProbabilisticTheory.QuantumMechanics.UnitaryRep.entry_zero`**, a lemma, [line 149](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ProbabilisticTheory/Representation/Floquet.lean#L149).
+**`PhyslibAlpha.ProbabilisticTheory.QuantumMechanics.UnitaryRep.entry_zero`**, a lemma, [line 149](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/Representation/Floquet.lean#L149).
 
 ```lean
 lemma entry_zero (i j : Fin N) :
     entry (0 : C(PontryaginDual (Multiplicative G), Matrix (Fin N) (Fin N) ℂ)) i j = 0
 ```
 
-**`ProbabilisticTheory.QuantumMechanics.UnitaryRep.entry_mul`**, a lemma, [line 155](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ProbabilisticTheory/Representation/Floquet.lean#L155).
+**`PhyslibAlpha.ProbabilisticTheory.QuantumMechanics.UnitaryRep.entry_mul`**, a lemma, [line 155](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/Representation/Floquet.lean#L155).
 
 ```lean
 lemma entry_mul (f g : C(PontryaginDual (Multiplicative G), Matrix (Fin N) (Fin N) ℂ))
     (i j : Fin N) : entry (f * g) i j = ∑ k, entry f i k * entry g k j
 ```
 
-**`ProbabilisticTheory.QuantumMechanics.UnitaryRep.entry_star`**, a lemma, [line 163](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ProbabilisticTheory/Representation/Floquet.lean#L163).
+**`PhyslibAlpha.ProbabilisticTheory.QuantumMechanics.UnitaryRep.entry_star`**, a lemma, [line 163](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/Representation/Floquet.lean#L163).
 
 ```lean
 lemma entry_star (f : C(PontryaginDual (Multiplicative G), Matrix (Fin N) (Fin N) ℂ))
     (i j : Fin N) : entry (star f) i j = star (entry f j i)
 ```
 
-**`ProbabilisticTheory.QuantumMechanics.UnitaryRep.entry_one`**, a lemma, [line 171](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ProbabilisticTheory/Representation/Floquet.lean#L171).
+**`PhyslibAlpha.ProbabilisticTheory.QuantumMechanics.UnitaryRep.entry_one`**, a lemma, [line 171](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/Representation/Floquet.lean#L171).
 
 ```lean
 lemma entry_one (i j : Fin N) :
@@ -153,14 +153,14 @@ lemma entry_one (i j : Fin N) :
       if i = j then 1 else 0
 ```
 
-**`ProbabilisticTheory.QuantumMechanics.UnitaryRep.blochOp_add`**, a lemma, [line 180](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ProbabilisticTheory/Representation/Floquet.lean#L180).
+**`PhyslibAlpha.ProbabilisticTheory.QuantumMechanics.UnitaryRep.blochOp_add`**, a lemma, [line 180](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/Representation/Floquet.lean#L180).
 
 ```lean
 lemma blochOp_add (f g : C(PontryaginDual (Multiplicative G), Matrix (Fin N) (Fin N) ℂ)) :
     blochOp π ι (f + g) = blochOp π ι f + blochOp π ι g
 ```
 
-**`ProbabilisticTheory.QuantumMechanics.UnitaryRep.blochOp_smul`**, a lemma, [line 185](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ProbabilisticTheory/Representation/Floquet.lean#L185).
+**`PhyslibAlpha.ProbabilisticTheory.QuantumMechanics.UnitaryRep.blochOp_smul`**, a lemma, [line 185](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/Representation/Floquet.lean#L185).
 
 ```lean
 lemma blochOp_smul (c : ℂ)
@@ -168,28 +168,28 @@ lemma blochOp_smul (c : ℂ)
     blochOp π ι (c • f) = c • blochOp π ι f
 ```
 
-**`ProbabilisticTheory.QuantumMechanics.UnitaryRep.blochOp_one`**, a lemma, [line 191](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ProbabilisticTheory/Representation/Floquet.lean#L191).
+**`PhyslibAlpha.ProbabilisticTheory.QuantumMechanics.UnitaryRep.blochOp_one`**, a lemma, [line 191](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/Representation/Floquet.lean#L191).
 
 ```lean
 lemma blochOp_one : blochOp π ι (1 : C(PontryaginDual (Multiplicative G),
     Matrix (Fin N) (Fin N) ℂ)) = 1
 ```
 
-**`ProbabilisticTheory.QuantumMechanics.UnitaryRep.blochOp_mul`**, a lemma, [line 203](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ProbabilisticTheory/Representation/Floquet.lean#L203).
+**`PhyslibAlpha.ProbabilisticTheory.QuantumMechanics.UnitaryRep.blochOp_mul`**, a lemma, [line 203](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/Representation/Floquet.lean#L203).
 
 ```lean
 lemma blochOp_mul (f g : C(PontryaginDual (Multiplicative G), Matrix (Fin N) (Fin N) ℂ)) :
     blochOp π ι (f * g) = blochOp π ι f * blochOp π ι g
 ```
 
-**`ProbabilisticTheory.QuantumMechanics.UnitaryRep.blochOp_star`**, a lemma, [line 250](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ProbabilisticTheory/Representation/Floquet.lean#L250).
+**`PhyslibAlpha.ProbabilisticTheory.QuantumMechanics.UnitaryRep.blochOp_star`**, a lemma, [line 250](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/Representation/Floquet.lean#L250).
 
 ```lean
 lemma blochOp_star (f : C(PontryaginDual (Multiplicative G), Matrix (Fin N) (Fin N) ℂ)) :
     blochOp π ι (star f) = star (blochOp π ι f)
 ```
 
-**`ProbabilisticTheory.QuantumMechanics.UnitaryRep.blochHom`**, a def, [line 270](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ProbabilisticTheory/Representation/Floquet.lean#L270).
+**`PhyslibAlpha.ProbabilisticTheory.QuantumMechanics.UnitaryRep.blochHom`**, a def, [line 270](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/Representation/Floquet.lean#L270).
 
 > **Bloch–Floquet**: the map `f ↦ ∑_{ij} (∫ f_{ij} dP) ι(E_{ij})` is a unital ⋆-homomorphism from
 > the continuous matrix-valued functions on the Brillouin zone to the bounded operators.
@@ -201,7 +201,7 @@ def blochHom : C(PontryaginDual (Multiplicative G), Matrix (Fin N) (Fin N) ℂ) 
 
 ## C. The spectrum
 
-**`ProbabilisticTheory.QuantumMechanics.UnitaryRep.spectrum_blochHom_subset`**, a lemma, [line 293](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ProbabilisticTheory/Representation/Floquet.lean#L293).
+**`PhyslibAlpha.ProbabilisticTheory.QuantumMechanics.UnitaryRep.spectrum_blochHom_subset`**, a lemma, [line 293](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/Representation/Floquet.lean#L293).
 
 > **The spectrum of the operator of a symbol is contained in the union of the spectra of the
 > symbol's values**: a translation-invariant operator has no spectrum outside its Bloch bands.
@@ -215,7 +215,7 @@ lemma spectrum_blochHom_subset
 
 ## D. Faithful representations
 
-**`ProbabilisticTheory.QuantumMechanics.UnitaryRep.HasFullSupport`**, a def, [line 315](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ProbabilisticTheory/Representation/Floquet.lean#L315).
+**`PhyslibAlpha.ProbabilisticTheory.QuantumMechanics.UnitaryRep.HasFullSupport`**, a def, [line 315](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/Representation/Floquet.lean#L315).
 
 > A representation has **full support** relative to the internal space when the spectral
 > projection of every nonempty open set of crystal momenta is nonzero on every internal state:
@@ -225,7 +225,7 @@ lemma spectrum_blochHom_subset
 def HasFullSupport : Prop
 ```
 
-**`ProbabilisticTheory.QuantumMechanics.UnitaryRep.compress_blochOp`**, a lemma, [line 323](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ProbabilisticTheory/Representation/Floquet.lean#L323).
+**`PhyslibAlpha.ProbabilisticTheory.QuantumMechanics.UnitaryRep.compress_blochOp`**, a lemma, [line 323](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/Representation/Floquet.lean#L323).
 
 > Compressing the image of a matrix-valued function to the `(i, j)` orbitals isolates the
 > `(i, j)` entry.
@@ -237,7 +237,7 @@ lemma compress_blochOp (f : C(PontryaginDual (Multiplicative G), Matrix (Fin N) 
       calculus π (entry f i j) * ι (Matrix.single i i 1)
 ```
 
-**`ProbabilisticTheory.QuantumMechanics.UnitaryRep.entry_eq_zero_of_blochOp_eq_zero`**, a lemma, [line 360](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ProbabilisticTheory/Representation/Floquet.lean#L360).
+**`PhyslibAlpha.ProbabilisticTheory.QuantumMechanics.UnitaryRep.entry_eq_zero_of_blochOp_eq_zero`**, a lemma, [line 360](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/Representation/Floquet.lean#L360).
 
 > An entry of the image vanishes only if the entry function vanishes: this is the content of
 > full support.
@@ -248,7 +248,7 @@ lemma entry_eq_zero_of_blochOp_eq_zero (hfull : HasFullSupport π ι)
     (hf : blochOp π ι f = 0) : f = 0
 ```
 
-**`ProbabilisticTheory.QuantumMechanics.UnitaryRep.blochHom_injective`**, a lemma, [line 429](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ProbabilisticTheory/Representation/Floquet.lean#L429).
+**`PhyslibAlpha.ProbabilisticTheory.QuantumMechanics.UnitaryRep.blochHom_injective`**, a lemma, [line 429](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/Representation/Floquet.lean#L429).
 
 > Under full support the map `f ↦ ∫ f dP` is injective.
 
@@ -264,4 +264,4 @@ lemma blochHom_injective (hfull : HasFullSupport π ι) :
 
 ## Sources
 
-- [PhyslibAlpha/ProbabilisticTheory/Representation/Floquet.lean at 2a1dfe43](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ProbabilisticTheory/Representation/Floquet.lean)
+- [PhyslibAlpha/ProbabilisticTheory/Representation/Floquet.lean at 8c87bdfb](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/Representation/Floquet.lean)

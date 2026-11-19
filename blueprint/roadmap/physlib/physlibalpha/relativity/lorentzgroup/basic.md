@@ -8,7 +8,7 @@ proof: formalized
 
 # The defining relation of the Lorentz group on its entries
 
-The module `PhyslibAlpha.Relativity.LorentzGroup.Basic`, [PhyslibAlpha/Relativity/LorentzGroup/Basic.lean](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Relativity/LorentzGroup/Basic.lean): 1 declaration, 1 with a docstring.
+The module `PhyslibAlpha.Relativity.LorentzGroup.Basic`, [PhyslibAlpha/Relativity/LorentzGroup/Basic.lean](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Relativity/LorentzGroup/Basic.lean): 1 declaration, 1 with a docstring.
 
 > The relation `Λ η Λᵀ = η` over `ℂ`, read on a single entry and with integer metric entries.
 
@@ -32,7 +32,7 @@ The module `PhyslibAlpha.Relativity.LorentzGroup.Basic`, [PhyslibAlpha/Relativit
 
 ## A. The defining relation on an entry
 
-**`LorentzGroup.sum_minkowskiMatrixZ_mul`**, a lemma, [line 61](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Relativity/LorentzGroup/Basic.lean#L61).
+**`LorentzGroup.sum_minkowskiMatrixZ_mul`**, a lemma, [line 61](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Relativity/LorentzGroup/Basic.lean#L61).
 
 > The defining relation `Λ η Λᵀ = η` over `ℂ`, read on the entry `(a, b)` and with the
 > integer Minkowski matrix in place of `minkowskiMatrix`. This is the form the invariant
@@ -52,4 +52,4 @@ lemma sum_minkowskiMatrixZ_mul (Λ : LorentzGroup d) (a b : Fin 1 ⊕ Fin d) :
 
 ## Sources
 
-- [PhyslibAlpha/Relativity/LorentzGroup/Basic.lean at 2a1dfe43](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Relativity/LorentzGroup/Basic.lean)
+- [PhyslibAlpha/Relativity/LorentzGroup/Basic.lean at 8c87bdfb](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Relativity/LorentzGroup/Basic.lean)

@@ -8,7 +8,7 @@ proof: formalized
 
 # The sectors of the field algebra
 
-The module `PhyslibAlpha.Particles.StandardModel.CovRealization.Sectors`, [PhyslibAlpha/Particles/StandardModel/CovRealization/Sectors.lean](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/CovRealization/Sectors.lean): 49 declarations, 46 with a docstring.
+The module `PhyslibAlpha.Particles.StandardModel.CovRealization.Sectors`, [PhyslibAlpha/Particles/StandardModel/CovRealization/Sectors.lean](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/CovRealization/Sectors.lean): 49 declarations, 46 with a docstring.
 
 ## i. Overview
 
@@ -44,7 +44,7 @@ The module `PhyslibAlpha.Particles.StandardModel.CovRealization.Sectors`, [Physl
 > `S ∪ S = S`: it is a non-unital subalgebra. The seven non-empty class sets give the
 > seven sectors below.
 
-**`StandardModel.CovAlgebraRealization.sectorSubmodule`**, a def, [line 78](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/CovRealization/Sectors.lean#L78).
+**`StandardModel.CovAlgebraRealization.sectorSubmodule`**, a def, [line 78](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/CovRealization/Sectors.lean#L78).
 
 > The span of the words in the covariant generators realising exactly the classes
 > `S`.
@@ -53,7 +53,7 @@ The module `PhyslibAlpha.Particles.StandardModel.CovRealization.Sectors`, [Physl
 def sectorSubmodule (S : Finset GeneratorClass) : Submodule ℂ B
 ```
 
-**`StandardModel.CovAlgebraRealization.mul_mem_sectorSubmodule`**, a lemma, [line 83](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/CovRealization/Sectors.lean#L83).
+**`StandardModel.CovAlgebraRealization.mul_mem_sectorSubmodule`**, a lemma, [line 83](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/CovRealization/Sectors.lean#L83).
 
 > Multiplication carries the class spans of `S` and `T` into that of `S ∪ T`.
 
@@ -63,7 +63,7 @@ lemma mul_mem_sectorSubmodule {S T : Finset GeneratorClass} {x y : B}
     x * y ∈ h.sectorSubmodule (S ∪ T)
 ```
 
-**`StandardModel.CovAlgebraRealization.sector`**, a def, [line 106](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/CovRealization/Sectors.lean#L106).
+**`StandardModel.CovAlgebraRealization.sector`**, a def, [line 106](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/CovRealization/Sectors.lean#L106).
 
 > The sector realising exactly the classes `S`: the span of the words whose
 > generators realise `S`. It is a non-unital subalgebra — closed under multiplication
@@ -74,14 +74,14 @@ lemma mul_mem_sectorSubmodule {S T : Finset GeneratorClass} {x y : B}
 def sector (S : Finset GeneratorClass) : NonUnitalSubalgebra ℂ B
 ```
 
-**`StandardModel.CovAlgebraRealization.mem_sector`**, a lemma, [line 112](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/CovRealization/Sectors.lean#L112).
+**`StandardModel.CovAlgebraRealization.mem_sector`**, a lemma, [line 112](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/CovRealization/Sectors.lean#L112).
 
 ```lean
 lemma mem_sector {S : Finset GeneratorClass} {x : B} :
     x ∈ h.sector S ↔ x ∈ h.sectorSubmodule S
 ```
 
-**`StandardModel.CovAlgebraRealization.list_prod_mem_sector`**, a lemma, [line 116](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/CovRealization/Sectors.lean#L116).
+**`StandardModel.CovAlgebraRealization.list_prod_mem_sector`**, a lemma, [line 116](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/CovRealization/Sectors.lean#L116).
 
 > A word lies in the sector of the classes it realises.
 
@@ -90,7 +90,7 @@ lemma list_prod_mem_sector (gl : List Generators) :
     (gl.map h.generatorVal).prod ∈ h.sector (wordClasses gl)
 ```
 
-**`StandardModel.CovAlgebraRealization.mul_mem_sector`**, a lemma, [line 121](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/CovRealization/Sectors.lean#L121).
+**`StandardModel.CovAlgebraRealization.mul_mem_sector`**, a lemma, [line 121](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/CovRealization/Sectors.lean#L121).
 
 > Multiplication carries the sectors of `S` and `T` into the sector of `S ∪ T`.
 
@@ -99,7 +99,7 @@ lemma mul_mem_sector {S T : Finset GeneratorClass} {x y : B}
     (hx : x ∈ h.sector S) (hy : y ∈ h.sector T) : x * y ∈ h.sector (S ∪ T)
 ```
 
-**`StandardModel.CovAlgebraRealization.mem_fieldAlgebra_of_mem_sector`**, a lemma, [line 126](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/CovRealization/Sectors.lean#L126).
+**`StandardModel.CovAlgebraRealization.mem_fieldAlgebra_of_mem_sector`**, a lemma, [line 126](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/CovRealization/Sectors.lean#L126).
 
 > Every sector sits inside the field algebra.
 
@@ -108,7 +108,7 @@ lemma mem_fieldAlgebra_of_mem_sector {S : Finset GeneratorClass} {x : B}
     (hx : x ∈ h.sector S) : x ∈ h.fieldAlgebra
 ```
 
-**`StandardModel.CovAlgebraRealization.fieldAlgebra_eq_iSup_sector`**, a lemma, [line 144](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/CovRealization/Sectors.lean#L144).
+**`StandardModel.CovAlgebraRealization.fieldAlgebra_eq_iSup_sector`**, a lemma, [line 144](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/CovRealization/Sectors.lean#L144).
 
 > **The sectors exhaust the field algebra**: every element of the field algebra is a
 > sum of elements of the sectors, since every word realises exactly one class set. The
@@ -127,7 +127,7 @@ lemma fieldAlgebra_eq_iSup_sector :
 > species, hence each generator into the sector of its own class, hence — word by
 > word — each sector into itself.
 
-**`StandardModel.CovAlgebraRealization.H_mem_sector`**, a lemma, [line 174](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/CovRealization/Sectors.lean#L174).
+**`StandardModel.CovAlgebraRealization.H_mem_sector`**, a lemma, [line 174](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/CovRealization/Sectors.lean#L174).
 
 > Any Higgs tower symbol lies in the Higgs sector.
 
@@ -136,7 +136,7 @@ lemma H_mem_sector {n : ℕ} (l : Fin n → Fin 1 ⊕ Fin 3)
     (φ : Module.Dual ℂ HiggsVec) : h.covH l φ ∈ h.sector {GeneratorClass.higgs}
 ```
 
-**`StandardModel.CovAlgebraRealization.barH_mem_sector`**, a lemma, [line 183](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/CovRealization/Sectors.lean#L183).
+**`StandardModel.CovAlgebraRealization.barH_mem_sector`**, a lemma, [line 183](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/CovRealization/Sectors.lean#L183).
 
 > Any conjugate-Higgs tower symbol lies in the Higgs sector.
 
@@ -146,7 +146,7 @@ lemma barH_mem_sector {n : ℕ} (l : Fin n → Fin 1 ⊕ Fin 3)
     h.covBarH l φ ∈ h.sector {GeneratorClass.higgs}
 ```
 
-**`StandardModel.CovAlgebraRealization.F_mem_sector`**, a lemma, [line 193](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/CovRealization/Sectors.lean#L193).
+**`StandardModel.CovAlgebraRealization.F_mem_sector`**, a lemma, [line 193](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/CovRealization/Sectors.lean#L193).
 
 > Any field-strength tower symbol lies in the gauge sector.
 
@@ -155,7 +155,7 @@ lemma F_mem_sector {n : ℕ} (l : Fin n → Fin 1 ⊕ Fin 3) (μ ν : Fin 1 ⊕ 
     (φ : Module.Dual ℝ GaugeAlgebra) : h.covF l μ ν φ ∈ h.sector {GeneratorClass.gauge}
 ```
 
-**`StandardModel.CovAlgebraRealization.d_mem_sector`**, a lemma, [line 204](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/CovRealization/Sectors.lean#L204).
+**`StandardModel.CovAlgebraRealization.d_mem_sector`**, a lemma, [line 204](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/CovRealization/Sectors.lean#L204).
 
 > Any `d` tower symbol lies in the fermion sector.
 
@@ -164,7 +164,7 @@ lemma d_mem_sector (i : Fin 3) {n : ℕ} (l : Fin n → Fin 1 ⊕ Fin 3)
     (φ : Module.Dual ℂ DownSinglet) : h.covD i l φ ∈ h.sector {GeneratorClass.fermion}
 ```
 
-**`StandardModel.CovAlgebraRealization.bard_mem_sector`**, a lemma, [line 213](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/CovRealization/Sectors.lean#L213).
+**`StandardModel.CovAlgebraRealization.bard_mem_sector`**, a lemma, [line 213](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/CovRealization/Sectors.lean#L213).
 
 > Any `bard` tower symbol lies in the fermion sector.
 
@@ -174,7 +174,7 @@ lemma bard_mem_sector (i : Fin 3) {n : ℕ} (l : Fin n → Fin 1 ⊕ Fin 3)
       {GeneratorClass.fermion}
 ```
 
-**`StandardModel.CovAlgebraRealization.u_mem_sector`**, a lemma, [line 223](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/CovRealization/Sectors.lean#L223).
+**`StandardModel.CovAlgebraRealization.u_mem_sector`**, a lemma, [line 223](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/CovRealization/Sectors.lean#L223).
 
 > Any `u` tower symbol lies in the fermion sector.
 
@@ -183,7 +183,7 @@ lemma u_mem_sector (i : Fin 3) {n : ℕ} (l : Fin n → Fin 1 ⊕ Fin 3)
     (φ : Module.Dual ℂ UpSinglet) : h.covU i l φ ∈ h.sector {GeneratorClass.fermion}
 ```
 
-**`StandardModel.CovAlgebraRealization.baru_mem_sector`**, a lemma, [line 232](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/CovRealization/Sectors.lean#L232).
+**`StandardModel.CovAlgebraRealization.baru_mem_sector`**, a lemma, [line 232](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/CovRealization/Sectors.lean#L232).
 
 > Any `baru` tower symbol lies in the fermion sector.
 
@@ -193,7 +193,7 @@ lemma baru_mem_sector (i : Fin 3) {n : ℕ} (l : Fin n → Fin 1 ⊕ Fin 3)
     h.covBarU i l φ ∈ h.sector {GeneratorClass.fermion}
 ```
 
-**`StandardModel.CovAlgebraRealization.Q_mem_sector`**, a lemma, [line 242](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/CovRealization/Sectors.lean#L242).
+**`StandardModel.CovAlgebraRealization.Q_mem_sector`**, a lemma, [line 242](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/CovRealization/Sectors.lean#L242).
 
 > Any `Q` tower symbol lies in the fermion sector.
 
@@ -202,7 +202,7 @@ lemma Q_mem_sector (i : Fin 3) {n : ℕ} (l : Fin n → Fin 1 ⊕ Fin 3)
     (φ : Module.Dual ℂ QuarkDoublet) : h.covQ i l φ ∈ h.sector {GeneratorClass.fermion}
 ```
 
-**`StandardModel.CovAlgebraRealization.barQ_mem_sector`**, a lemma, [line 251](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/CovRealization/Sectors.lean#L251).
+**`StandardModel.CovAlgebraRealization.barQ_mem_sector`**, a lemma, [line 251](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/CovRealization/Sectors.lean#L251).
 
 > Any `barQ` tower symbol lies in the fermion sector.
 
@@ -212,7 +212,7 @@ lemma barQ_mem_sector (i : Fin 3) {n : ℕ} (l : Fin n → Fin 1 ⊕ Fin 3)
       {GeneratorClass.fermion}
 ```
 
-**`StandardModel.CovAlgebraRealization.L_mem_sector`**, a lemma, [line 261](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/CovRealization/Sectors.lean#L261).
+**`StandardModel.CovAlgebraRealization.L_mem_sector`**, a lemma, [line 261](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/CovRealization/Sectors.lean#L261).
 
 > Any `L` tower symbol lies in the fermion sector.
 
@@ -221,7 +221,7 @@ lemma L_mem_sector (i : Fin 3) {n : ℕ} (l : Fin n → Fin 1 ⊕ Fin 3)
     (φ : Module.Dual ℂ LeptonDoubletV) : h.covL i l φ ∈ h.sector {GeneratorClass.fermion}
 ```
 
-**`StandardModel.CovAlgebraRealization.barL_mem_sector`**, a lemma, [line 270](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/CovRealization/Sectors.lean#L270).
+**`StandardModel.CovAlgebraRealization.barL_mem_sector`**, a lemma, [line 270](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/CovRealization/Sectors.lean#L270).
 
 > Any `barL` tower symbol lies in the fermion sector.
 
@@ -231,7 +231,7 @@ lemma barL_mem_sector (i : Fin 3) {n : ℕ} (l : Fin n → Fin 1 ⊕ Fin 3)
       {GeneratorClass.fermion}
 ```
 
-**`StandardModel.CovAlgebraRealization.e_mem_sector`**, a lemma, [line 280](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/CovRealization/Sectors.lean#L280).
+**`StandardModel.CovAlgebraRealization.e_mem_sector`**, a lemma, [line 280](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/CovRealization/Sectors.lean#L280).
 
 > Any `e` tower symbol lies in the fermion sector.
 
@@ -240,7 +240,7 @@ lemma e_mem_sector (i : Fin 3) {n : ℕ} (l : Fin n → Fin 1 ⊕ Fin 3)
     (φ : Module.Dual ℂ LeptonSinglet) : h.covE i l φ ∈ h.sector {GeneratorClass.fermion}
 ```
 
-**`StandardModel.CovAlgebraRealization.bare_mem_sector`**, a lemma, [line 289](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/CovRealization/Sectors.lean#L289).
+**`StandardModel.CovAlgebraRealization.bare_mem_sector`**, a lemma, [line 289](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/CovRealization/Sectors.lean#L289).
 
 > Any `bare` tower symbol lies in the fermion sector.
 
@@ -250,7 +250,7 @@ lemma bare_mem_sector (i : Fin 3) {n : ℕ} (l : Fin n → Fin 1 ⊕ Fin 3)
       {GeneratorClass.fermion}
 ```
 
-**`StandardModel.CovAlgebraRealization.repGauge_generatorVal_mem_sector`**, a lemma, [line 299](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/CovRealization/Sectors.lean#L299).
+**`StandardModel.CovAlgebraRealization.repGauge_generatorVal_mem_sector`**, a lemma, [line 299](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/CovRealization/Sectors.lean#L299).
 
 > The gauge action carries a covariant generator into the sector of its class.
 
@@ -259,7 +259,7 @@ lemma repGauge_generatorVal_mem_sector (g : GaugeGroupI) (a : Generators) :
     repGauge g (h.generatorVal a) ∈ h.sector {a.kind}
 ```
 
-**`StandardModel.CovAlgebraRealization.repLorentz_generatorVal_mem_sector`**, a lemma, [line 357](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/CovRealization/Sectors.lean#L357).
+**`StandardModel.CovAlgebraRealization.repLorentz_generatorVal_mem_sector`**, a lemma, [line 357](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/CovRealization/Sectors.lean#L357).
 
 > The Lorentz action carries a covariant generator into the sector of its
 > class.
@@ -269,7 +269,7 @@ lemma repLorentz_generatorVal_mem_sector (Λ : SL(2,ℂ)) (a : Generators) :
     repLorentz Λ (h.generatorVal a) ∈ h.sector {a.kind}
 ```
 
-**`StandardModel.CovAlgebraRealization.repGauge_mem_sector`**, a lemma, [line 416](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/CovRealization/Sectors.lean#L416).
+**`StandardModel.CovAlgebraRealization.repGauge_mem_sector`**, a lemma, [line 416](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/CovRealization/Sectors.lean#L416).
 
 > The action `repGauge` preserves every sector.
 
@@ -278,7 +278,7 @@ lemma repGauge_mem_sector {S : Finset GeneratorClass} {x : B} (g : GaugeGroupI)
     (hx : x ∈ h.sector S) : repGauge g x ∈ h.sector S
 ```
 
-**`StandardModel.CovAlgebraRealization.repLorentz_mem_sector`**, a lemma, [line 437](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/CovRealization/Sectors.lean#L437).
+**`StandardModel.CovAlgebraRealization.repLorentz_mem_sector`**, a lemma, [line 437](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/CovRealization/Sectors.lean#L437).
 
 > The action `repLorentz` preserves every sector.
 
@@ -289,7 +289,7 @@ lemma repLorentz_mem_sector {S : Finset GeneratorClass} {x : B} (Λ : SL(2,ℂ))
 
 ## B. Sectors at a fixed mass weight
 
-**`StandardModel.CovAlgebraRealization.sectorMassWeight`**, a def, [line 465](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/CovRealization/Sectors.lean#L465).
+**`StandardModel.CovAlgebraRealization.sectorMassWeight`**, a def, [line 465](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/CovRealization/Sectors.lean#L465).
 
 > The span of the words realising exactly the classes `S` of total mass weight
 > `w`.
@@ -298,21 +298,21 @@ lemma repLorentz_mem_sector {S : Finset GeneratorClass} {x : B} (Λ : SL(2,ℂ))
 def sectorMassWeight (S : Finset GeneratorClass) (w : ℕ) : Submodule ℂ B
 ```
 
-**`StandardModel.CovAlgebraRealization.sectorMassWeight_le_sectorSubmodule`**, a lemma, [line 470](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/CovRealization/Sectors.lean#L470).
+**`StandardModel.CovAlgebraRealization.sectorMassWeight_le_sectorSubmodule`**, a lemma, [line 470](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/CovRealization/Sectors.lean#L470).
 
 ```lean
 lemma sectorMassWeight_le_sectorSubmodule (S : Finset GeneratorClass) (w : ℕ) :
     h.sectorMassWeight S w ≤ h.sectorSubmodule S
 ```
 
-**`StandardModel.CovAlgebraRealization.sectorMassWeight_le_massWeightSubmodule`**, a lemma, [line 476](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/CovRealization/Sectors.lean#L476).
+**`StandardModel.CovAlgebraRealization.sectorMassWeight_le_massWeightSubmodule`**, a lemma, [line 476](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/CovRealization/Sectors.lean#L476).
 
 ```lean
 lemma sectorMassWeight_le_massWeightSubmodule (S : Finset GeneratorClass) (w : ℕ) :
     h.sectorMassWeight S w ≤ h.massWeightSubmodule w
 ```
 
-**`StandardModel.CovAlgebraRealization.list_prod_mem_sectorMassWeight`**, a lemma, [line 483](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/CovRealization/Sectors.lean#L483).
+**`StandardModel.CovAlgebraRealization.list_prod_mem_sectorMassWeight`**, a lemma, [line 483](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/CovRealization/Sectors.lean#L483).
 
 > A word lies in the weight part of its sector given by its total weight.
 
@@ -322,7 +322,7 @@ lemma list_prod_mem_sectorMassWeight (gl : List Generators) :
       ∈ h.sectorMassWeight (wordClasses gl) ((gl.map Generators.weight).sum)
 ```
 
-**`StandardModel.CovAlgebraRealization.mul_mem_sectorMassWeight`**, a lemma, [line 491](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/CovRealization/Sectors.lean#L491).
+**`StandardModel.CovAlgebraRealization.mul_mem_sectorMassWeight`**, a lemma, [line 491](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/CovRealization/Sectors.lean#L491).
 
 > Multiplication carries the weight-`w` part of the sector of `S` and the
 > weight-`w'` part of the sector of `T` into the weight-`w + w'` part of the sector
@@ -334,7 +334,7 @@ lemma mul_mem_sectorMassWeight {S T : Finset GeneratorClass} {w w' : ℕ} {x y :
     x * y ∈ h.sectorMassWeight (S ∪ T) (w + w')
 ```
 
-**`StandardModel.CovAlgebraRealization.coeff_massWeightPoly_mem_sectorMassWeight`**, a lemma, [line 514](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/CovRealization/Sectors.lean#L514).
+**`StandardModel.CovAlgebraRealization.coeff_massWeightPoly_mem_sectorMassWeight`**, a lemma, [line 514](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/CovRealization/Sectors.lean#L514).
 
 > Reading off the `X ^ w` coefficient of `massWeightPoly` sends the sector of `S`
 > into its weight-`w` part — the projection onto the weight-`w` component, with no
@@ -346,7 +346,7 @@ lemma coeff_massWeightPoly_mem_sectorMassWeight {S : Finset GeneratorClass} {x :
     (massWeightPoly x).coeff w ∈ h.sectorMassWeight S w
 ```
 
-**`StandardModel.CovAlgebraRealization.sectorMassWeight_eq_inf`**, a lemma, [line 539](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/CovRealization/Sectors.lean#L539).
+**`StandardModel.CovAlgebraRealization.sectorMassWeight_eq_inf`**, a lemma, [line 539](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/CovRealization/Sectors.lean#L539).
 
 > The weight-`w` part of the sector of `S` is exactly the intersection of the
 > sector with the mass-weight submodule.
@@ -356,7 +356,7 @@ lemma sectorMassWeight_eq_inf (S : Finset GeneratorClass) (w : ℕ) :
     h.sectorMassWeight S w = h.sectorSubmodule S ⊓ h.massWeightSubmodule w
 ```
 
-**`StandardModel.CovAlgebraRealization.massWeightSubmodule_eq_iSup_sectorMassWeight`**, a lemma, [line 553](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/CovRealization/Sectors.lean#L553).
+**`StandardModel.CovAlgebraRealization.massWeightSubmodule_eq_iSup_sectorMassWeight`**, a lemma, [line 553](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/CovRealization/Sectors.lean#L553).
 
 > **The decomposition of the mass-weight submodule into sectors**: the weight-`w`
 > component of the field algebra is the join over the class sets `S` of the
@@ -368,7 +368,7 @@ lemma massWeightSubmodule_eq_iSup_sectorMassWeight (w : ℕ) :
     h.massWeightSubmodule w = ⨆ S : Finset GeneratorClass, h.sectorMassWeight S w
 ```
 
-**`StandardModel.CovAlgebraRealization.repGauge_mem_sectorMassWeight`**, a lemma, [line 562](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/CovRealization/Sectors.lean#L562).
+**`StandardModel.CovAlgebraRealization.repGauge_mem_sectorMassWeight`**, a lemma, [line 562](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/CovRealization/Sectors.lean#L562).
 
 > The action `repGauge` preserves the weight parts of every sector.
 
@@ -378,7 +378,7 @@ lemma repGauge_mem_sectorMassWeight {S : Finset GeneratorClass} {w : ℕ} {x : B
     repGauge g x ∈ h.sectorMassWeight S w
 ```
 
-**`StandardModel.CovAlgebraRealization.repLorentz_mem_sectorMassWeight`**, a lemma, [line 572](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/CovRealization/Sectors.lean#L572).
+**`StandardModel.CovAlgebraRealization.repLorentz_mem_sectorMassWeight`**, a lemma, [line 572](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/CovRealization/Sectors.lean#L572).
 
 > The action `repLorentz` preserves the weight parts of every sector.
 
@@ -396,7 +396,7 @@ lemma repLorentz_mem_sectorMassWeight {S : Finset GeneratorClass} {w : ℕ} {x :
 > submodule contains (through the unit of `higgsAlgebra`) while the `{higgs}` sector,
 > being spanned by non-empty words, does not — the scalars are the `∅` sector.
 
-**`StandardModel.CovAlgebraRealization.sectorMassWeight_empty_of_ne_zero`**, a lemma, [line 596](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/CovRealization/Sectors.lean#L596).
+**`StandardModel.CovAlgebraRealization.sectorMassWeight_empty_of_ne_zero`**, a lemma, [line 596](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/CovRealization/Sectors.lean#L596).
 
 > At a non-zero weight the `∅` sector has no weight part: its only word is the
 > empty word, of weight zero.
@@ -406,7 +406,7 @@ lemma sectorMassWeight_empty_of_ne_zero {w : ℕ} (hw : w ≠ 0) :
     h.sectorMassWeight ∅ w = ⊥
 ```
 
-**`StandardModel.CovAlgebraRealization.higgsAlgebra_le_sup_sectorSubmodule`**, a lemma, [line 607](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/CovRealization/Sectors.lean#L607).
+**`StandardModel.CovAlgebraRealization.higgsAlgebra_le_sup_sectorSubmodule`**, a lemma, [line 607](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/CovRealization/Sectors.lean#L607).
 
 > The algebra generated by the Higgs towers decomposes into the `{higgs}` sector
 > and the scalar `∅` sector.
@@ -417,7 +417,7 @@ lemma higgsAlgebra_le_sup_sectorSubmodule :
       ≤ h.sectorSubmodule {GeneratorClass.higgs} ⊔ h.sectorSubmodule ∅
 ```
 
-**`StandardModel.CovAlgebraRealization.sectorMassWeight_higgs_le`**, a lemma, [line 636](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/CovRealization/Sectors.lean#L636).
+**`StandardModel.CovAlgebraRealization.sectorMassWeight_higgs_le`**, a lemma, [line 636](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/CovRealization/Sectors.lean#L636).
 
 > The weight-`w` part of the `{higgs}` sector lies in the Higgs-sector mass-weight
 > submodule: its words are products of Higgs towers of total weight `w`.
@@ -428,7 +428,7 @@ lemma sectorMassWeight_higgs_le (w : ℕ) :
       ≤ h.isHiggsSector.massWeightSubmodule w
 ```
 
-**`StandardModel.CovAlgebraRealization.sectorMassWeight_higgs_eq`**, a lemma, [line 679](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/CovRealization/Sectors.lean#L679).
+**`StandardModel.CovAlgebraRealization.sectorMassWeight_higgs_eq`**, a lemma, [line 679](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/CovRealization/Sectors.lean#L679).
 
 > **The Higgs-sector mass-weight submodules are the weight parts of the `{higgs}`
 > sector**, at any non-zero weight. (At weight zero the Higgs-sector submodule also
@@ -447,7 +447,7 @@ lemma sectorMassWeight_higgs_eq {w : ℕ} (hw : w ≠ 0) :
 > submodules of `h.isGaugeSector` and `h.isFermionSector`; at weight zero the sector
 > submodules also contain the scalars, which the decomposition files under `∅`.
 
-**`StandardModel.CovAlgebraRealization.gaugeAlgebra_le_sup_sectorSubmodule`**, a lemma, [line 710](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/CovRealization/Sectors.lean#L710).
+**`StandardModel.CovAlgebraRealization.gaugeAlgebra_le_sup_sectorSubmodule`**, a lemma, [line 710](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/CovRealization/Sectors.lean#L710).
 
 > The algebra generated by the field-strength towers decomposes into the `{gauge}` sector
 > and the scalar `∅` sector.
@@ -458,7 +458,7 @@ lemma gaugeAlgebra_le_sup_sectorSubmodule :
       ≤ h.sectorSubmodule {GeneratorClass.gauge} ⊔ h.sectorSubmodule ∅
 ```
 
-**`StandardModel.CovAlgebraRealization.sectorMassWeight_gauge_le`**, a lemma, [line 738](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/CovRealization/Sectors.lean#L738).
+**`StandardModel.CovAlgebraRealization.sectorMassWeight_gauge_le`**, a lemma, [line 738](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/CovRealization/Sectors.lean#L738).
 
 > The weight-`w` part of the `{gauge}` sector lies in the gauge sector's
 > mass-weight submodule.
@@ -469,7 +469,7 @@ lemma sectorMassWeight_gauge_le (w : ℕ) :
       ≤ h.isGaugeSector.massWeightSubmodule w
 ```
 
-**`StandardModel.CovAlgebraRealization.sectorMassWeight_gauge_eq`**, a lemma, [line 780](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/CovRealization/Sectors.lean#L780).
+**`StandardModel.CovAlgebraRealization.sectorMassWeight_gauge_eq`**, a lemma, [line 780](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/CovRealization/Sectors.lean#L780).
 
 > **The gauge sector's mass-weight submodules are the weight parts of the
 > `{gauge}` sector**, at any non-zero weight. (At weight zero the sector's
@@ -482,7 +482,7 @@ lemma sectorMassWeight_gauge_eq {w : ℕ} (hw : w ≠ 0) :
       = h.isGaugeSector.massWeightSubmodule w
 ```
 
-**`StandardModel.CovAlgebraRealization.fermionAlgebra_le_sup_sectorSubmodule`**, a lemma, [line 799](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/CovRealization/Sectors.lean#L799).
+**`StandardModel.CovAlgebraRealization.fermionAlgebra_le_sup_sectorSubmodule`**, a lemma, [line 799](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/CovRealization/Sectors.lean#L799).
 
 > The algebra generated by the fermion towers decomposes into the `{fermion}` sector
 > and the scalar `∅` sector.
@@ -493,7 +493,7 @@ lemma fermionAlgebra_le_sup_sectorSubmodule :
       ≤ h.sectorSubmodule {GeneratorClass.fermion} ⊔ h.sectorSubmodule ∅
 ```
 
-**`StandardModel.CovAlgebraRealization.sectorMassWeight_fermion_le`**, a lemma, [line 837](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/CovRealization/Sectors.lean#L837).
+**`StandardModel.CovAlgebraRealization.sectorMassWeight_fermion_le`**, a lemma, [line 837](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/CovRealization/Sectors.lean#L837).
 
 > The weight-`w` part of the `{fermion}` sector lies in the fermion sector's
 > mass-weight submodule.
@@ -504,7 +504,7 @@ lemma sectorMassWeight_fermion_le (w : ℕ) :
       ≤ h.isFermionSector.massWeightSubmodule w
 ```
 
-**`StandardModel.CovAlgebraRealization.sectorMassWeight_fermion_eq`**, a lemma, [line 909](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/CovRealization/Sectors.lean#L909).
+**`StandardModel.CovAlgebraRealization.sectorMassWeight_fermion_eq`**, a lemma, [line 909](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/CovRealization/Sectors.lean#L909).
 
 > **The fermion sector's mass-weight submodules are the weight parts of the
 > `{fermion}` sector**, at any non-zero weight. (At weight zero the sector's
@@ -526,7 +526,7 @@ lemma sectorMassWeight_fermion_eq {w : ℕ} (hw : w ≠ 0) :
 > into two non-zero parts.  The hypotheses are stated abstractly so that the three
 > pairs of sectors can each instantiate them.
 
-**`StandardModel.CovAlgebraRealization.generatorVal_mem_of_kind`**, a lemma, [line 941](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/CovRealization/Sectors.lean#L941).
+**`StandardModel.CovAlgebraRealization.generatorVal_mem_of_kind`**, a lemma, [line 941](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/CovRealization/Sectors.lean#L941).
 
 > A single generator's value lies in any family of submodules dominating its own
 > class's sector.
@@ -537,7 +537,7 @@ lemma generatorVal_mem_of_kind {c : GeneratorClass} {M : ℕ → Submodule ℂ B
     h.generatorVal g ∈ M g.weight
 ```
 
-**`StandardModel.CovAlgebraRealization.list_prod_mem_mul_of_forall_kind`**, a lemma, [line 951](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/CovRealization/Sectors.lean#L951).
+**`StandardModel.CovAlgebraRealization.list_prod_mem_mul_of_forall_kind`**, a lemma, [line 951](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/CovRealization/Sectors.lean#L951).
 
 > **The two-class word decomposition.** A word all of whose generators lie in one of
 > two classes is a product of an element of weight `classWeight c₁` from the first
@@ -557,7 +557,7 @@ lemma list_prod_mem_mul_of_forall_kind {c₁ c₂ : GeneratorClass} (hne : c₁ 
       ∈ M₁ (classWeight c₁ gl) * M₂ (classWeight c₂ gl)
 ```
 
-**`StandardModel.CovAlgebraRealization.sectorMassWeight_pair_le`**, a lemma, [line 999](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/CovRealization/Sectors.lean#L999).
+**`StandardModel.CovAlgebraRealization.sectorMassWeight_pair_le`**, a lemma, [line 999](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/CovRealization/Sectors.lean#L999).
 
 > **The two-class sector decomposition.** The weight-`w` piece of the sector of two
 > classes is contained in the join, over the splittings of `w` into two non-zero
@@ -590,7 +590,7 @@ lemma sectorMassWeight_pair_le {c₁ c₂ : GeneratorClass} (hne : c₁ ≠ c₂
 > `CovAlgebraRealization`, and the classification of the invariants in
 > `MassWeight/Invariants.lean` does not use it: it joins reductions of the sectors instead.
 
-**`StandardModel.CovAlgebraRealization.sector_invariant_of_iSupIndep`**, a lemma, [line 1047](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/CovRealization/Sectors.lean#L1047).
+**`StandardModel.CovAlgebraRealization.sector_invariant_of_iSupIndep`**, a lemma, [line 1047](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/CovRealization/Sectors.lean#L1047).
 
 > An element of the weight-`w` submodule fixed by both actions is a sum of
 > weight-`w` sector pieces, each of them fixed by both actions, provided the weight
@@ -617,4 +617,4 @@ lemma sector_invariant_of_iSupIndep {w : ℕ}
 
 ## Sources
 
-- [PhyslibAlpha/Particles/StandardModel/CovRealization/Sectors.lean at 2a1dfe43](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/CovRealization/Sectors.lean)
+- [PhyslibAlpha/Particles/StandardModel/CovRealization/Sectors.lean at 8c87bdfb](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/CovRealization/Sectors.lean)

@@ -8,7 +8,7 @@ proof: formalized
 
 # Rigid bodies
 
-The module `Physlib.ClassicalMechanics.RigidBody.Basic`, [Physlib/ClassicalMechanics/RigidBody/Basic.lean](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/ClassicalMechanics/RigidBody/Basic.lean): 14 declarations, 13 with a docstring, 1 listed as significant.
+The module `Physlib.ClassicalMechanics.RigidBody.Basic`, [Physlib/ClassicalMechanics/RigidBody/Basic.lean](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/ClassicalMechanics/RigidBody/Basic.lean): 14 declarations, 13 with a docstring, 1 listed as significant.
 
 > A rigid body is one where the distance and relative orientation between particles does not change.
 > In other words, the body remains undeformed.
@@ -27,7 +27,7 @@ The module `Physlib.ClassicalMechanics.RigidBody.Basic`, [Physlib/ClassicalMecha
 
 > * Landau and Lifshitz, Mechanics, page 100, Section 32. [ref: landau\_mechanics]
 
-**`RigidBody`**, a structure, [line 44](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/ClassicalMechanics/RigidBody/Basic.lean#L44).
+**`RigidBody`**, a structure, [line 44](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/ClassicalMechanics/RigidBody/Basic.lean#L44).
 
 > A Rigid body defined by its mass distribution.
 
@@ -37,7 +37,7 @@ structure RigidBody (d : ℕ) where
   ρ : C^⊤⟮𝓘(ℝ, Space d), Space d; 𝓘(ℝ, ℝ), ℝ⟯ →ₗ[ℝ] ℝ
 ```
 
-**`RigidBody.mass`**, a def, [line 51](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/ClassicalMechanics/RigidBody/Basic.lean#L51).
+**`RigidBody.mass`**, a def, [line 51](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/ClassicalMechanics/RigidBody/Basic.lean#L51).
 
 > The total mass of the rigid body.
 
@@ -45,7 +45,7 @@ structure RigidBody (d : ℕ) where
 noncomputable def mass {d : ℕ} (R : RigidBody d) : ℝ
 ```
 
-**`RigidBody.rho_one`**, a lemma, [line 55](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/ClassicalMechanics/RigidBody/Basic.lean#L55).
+**`RigidBody.rho_one`**, a lemma, [line 55](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/ClassicalMechanics/RigidBody/Basic.lean#L55).
 
 > The mass distribution applied to the constant function `1` is the total mass.
 
@@ -54,7 +54,7 @@ lemma rho_one {d : ℕ} (R : RigidBody d) :
     R.ρ (1 : C^⊤⟮𝓘(ℝ, Space d), Space d; 𝓘(ℝ, ℝ), ℝ⟯) = R.mass
 ```
 
-**`RigidBody.centerOfMass`**, a def, [line 59](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/ClassicalMechanics/RigidBody/Basic.lean#L59).
+**`RigidBody.centerOfMass`**, a def, [line 59](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/ClassicalMechanics/RigidBody/Basic.lean#L59).
 
 > The center of mass of the rigid body.
 
@@ -62,7 +62,7 @@ lemma rho_one {d : ℕ} (R : RigidBody d) :
 noncomputable def centerOfMass {d : ℕ} (R : RigidBody d) : Space d
 ```
 
-**`RigidBody.inertiaTensor`**, a def, [line 63](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/ClassicalMechanics/RigidBody/Basic.lean#L63).
+**`RigidBody.inertiaTensor`**, a def, [line 63](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/ClassicalMechanics/RigidBody/Basic.lean#L63).
 
 > The inertia tensor of the rigid body.
 
@@ -71,14 +71,14 @@ noncomputable def inertiaTensor {d : ℕ} (R : RigidBody d) :
     Matrix (Fin d) (Fin d) ℝ
 ```
 
-**`RigidBody.inertiaTensor_symmetric`**, a lemma, [line 68](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/ClassicalMechanics/RigidBody/Basic.lean#L68).
+**`RigidBody.inertiaTensor_symmetric`**, a lemma, [line 68](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/ClassicalMechanics/RigidBody/Basic.lean#L68).
 
 ```lean
 lemma inertiaTensor_symmetric {d : ℕ} (R : RigidBody d) (i j : Fin d) :
     R.inertiaTensor i j = R.inertiaTensor j i
 ```
 
-**`RigidBody.rho_coord_sub_centerOfMass`**, a lemma, [line 74](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/ClassicalMechanics/RigidBody/Basic.lean#L74).
+**`RigidBody.rho_coord_sub_centerOfMass`**, a lemma, [line 74](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/ClassicalMechanics/RigidBody/Basic.lean#L74).
 
 > The first moment of the mass distribution about its own centre of mass vanishes:
 > for nonzero mass, `ρ` of the centred `j`-th coordinate function is zero.
@@ -88,7 +88,7 @@ lemma rho_coord_sub_centerOfMass {d : ℕ} (R : RigidBody d) (h : R.mass ≠ 0) 
     R.ρ (cmap (fun y => y j - R.centerOfMass j) (by fun_prop)) = 0
 ```
 
-**`RigidBody.inertiaTensorAbout`**, a def, [line 91](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/ClassicalMechanics/RigidBody/Basic.lean#L91).
+**`RigidBody.inertiaTensorAbout`**, a def, [line 91](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/ClassicalMechanics/RigidBody/Basic.lean#L91).
 
 > The inertia tensor of the rigid body about the point `p`, that is with the moments taken
 > about `p` rather than about the origin of the reference frame. Taking `p` to be the origin
@@ -99,7 +99,7 @@ noncomputable def inertiaTensorAbout {d : ℕ} (R : RigidBody d) (p : Space d) :
     Matrix (Fin d) (Fin d) ℝ
 ```
 
-**`RigidBody.inertiaTensorAbout_apply`**, a lemma, [line 97](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/ClassicalMechanics/RigidBody/Basic.lean#L97).
+**`RigidBody.inertiaTensorAbout_apply`**, a lemma, [line 97](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/ClassicalMechanics/RigidBody/Basic.lean#L97).
 
 > The `(i, j)` entry of the inertia tensor about `p` as a moment of the mass distribution.
 
@@ -109,7 +109,7 @@ lemma inertiaTensorAbout_apply {d : ℕ} (R : RigidBody d) (p : Space d) (i j : 
       ∑ k : Fin d, (y k - p k) ^ 2 - (y i - p i) * (y j - p j)) (by fun_prop))
 ```
 
-**`RigidBody.inertiaTensorAbout_zero`**, a lemma, [line 103](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/ClassicalMechanics/RigidBody/Basic.lean#L103).
+**`RigidBody.inertiaTensorAbout_zero`**, a lemma, [line 103](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/ClassicalMechanics/RigidBody/Basic.lean#L103).
 
 > The inertia tensor about the origin is the inertia tensor.
 
@@ -118,7 +118,7 @@ lemma inertiaTensorAbout_zero {d : ℕ} (R : RigidBody d) :
     R.inertiaTensorAbout 0 = R.inertiaTensor
 ```
 
-**`RigidBody.inertiaTensorAbout_symmetric`**, a lemma, [line 109](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/ClassicalMechanics/RigidBody/Basic.lean#L109).
+**`RigidBody.inertiaTensorAbout_symmetric`**, a lemma, [line 109](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/ClassicalMechanics/RigidBody/Basic.lean#L109).
 
 > The inertia tensor about any point is symmetric.
 
@@ -127,7 +127,7 @@ lemma inertiaTensorAbout_symmetric {d : ℕ} (R : RigidBody d) (p : Space d) (i 
     R.inertiaTensorAbout p i j = R.inertiaTensorAbout p j i
 ```
 
-**`RigidBody.inertiaTensorAbout_integrand_split`**, a lemma, [line 116](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/ClassicalMechanics/RigidBody/Basic.lean#L116).
+**`RigidBody.inertiaTensorAbout_integrand_split`**, a lemma, [line 116](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/ClassicalMechanics/RigidBody/Basic.lean#L116).
 
 > The integrand of the inertia tensor about `p` splits into the integrand about the centre of
 > mass, terms linear in the centred coordinates `y − c`, and a constant built from the
@@ -148,7 +148,7 @@ lemma inertiaTensorAbout_integrand_split {d : ℕ} (R : RigidBody d) (p : Space 
           (1 : C^⊤⟮𝓘(ℝ, Space d), Space d; 𝓘(ℝ, ℝ), ℝ⟯)
 ```
 
-**`RigidBody.inertiaTensorAbout_eq_centerOfMass_add_pointMass`**, a theorem, [line 148](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/ClassicalMechanics/RigidBody/Basic.lean#L148). Listed as a significant result in [Theorems.txt](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/scripts/lint/exemptions/Theorems.txt).
+**`RigidBody.inertiaTensorAbout_eq_centerOfMass_add_pointMass`**, a theorem, [line 148](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/ClassicalMechanics/RigidBody/Basic.lean#L148). Listed as a significant result in [Theorems.txt](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/scripts/lint/exemptions/Theorems.txt).
 
 > **The parallel-axis theorem**: the inertia tensor about a point `p` is the inertia tensor
 > about the centre of mass `c` plus the inertia tensor about `p` of a point particle carrying the
@@ -162,7 +162,7 @@ theorem inertiaTensorAbout_eq_centerOfMass_add_pointMass {d : ℕ} (R : RigidBod
         - Matrix.vecMulVec ⇑(R.centerOfMass - p) ⇑(R.centerOfMass - p))
 ```
 
-**`RigidBody.inertiaTensor_eq_centerOfMass_add_pointMass`**, a lemma, [line 163](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/ClassicalMechanics/RigidBody/Basic.lean#L163).
+**`RigidBody.inertiaTensor_eq_centerOfMass_add_pointMass`**, a lemma, [line 163](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/ClassicalMechanics/RigidBody/Basic.lean#L163).
 
 > The inertia tensor about the origin is the inertia tensor about the centre of mass `c` plus
 > `M (|c|² 1 − c ⊗ c)`.
@@ -181,4 +181,4 @@ lemma inertiaTensor_eq_centerOfMass_add_pointMass {d : ℕ} (R : RigidBody d) (h
 
 ## Sources
 
-- [Physlib/ClassicalMechanics/RigidBody/Basic.lean at 2a1dfe43](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/ClassicalMechanics/RigidBody/Basic.lean)
+- [Physlib/ClassicalMechanics/RigidBody/Basic.lean at 8c87bdfb](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/ClassicalMechanics/RigidBody/Basic.lean)

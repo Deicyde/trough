@@ -1,14 +1,14 @@
 ---
 declaration: module
 origin: cited
-lean: ProbabilisticTheory.QuantumMechanics.WOTSpectralMeasure.unitaryConj, ProbabilisticTheory.QuantumMechanics.WOTSpectralMeasure.unitaryConjAddHom, ProbabilisticTheory.QuantumMechanics.WOTSpectralMeasure.continuous_unitaryConjAddHom, ProbabilisticTheory.QuantumMechanics.WOTSpectralMeasure.unitaryConj_mul, ProbabilisticTheory.QuantumMechanics.WOTSpectralMeasure.unitaryConj_star, ProbabilisticTheory.QuantumMechanics.WOTSpectralMeasure.unitaryConj_one, ProbabilisticTheory.QuantumMechanics.WOTSpectralMeasure.unitaryConjSpectralMeasure, ProbabilisticTheory.QuantumMechanics.WOTSpectralMeasure.unitaryConjSpectralMeasure_apply
+lean: PhyslibAlpha.ProbabilisticTheory.QuantumMechanics.WOTSpectralMeasure.unitaryConj, PhyslibAlpha.ProbabilisticTheory.QuantumMechanics.WOTSpectralMeasure.unitaryConjAddHom, PhyslibAlpha.ProbabilisticTheory.QuantumMechanics.WOTSpectralMeasure.continuous_unitaryConjAddHom, PhyslibAlpha.ProbabilisticTheory.QuantumMechanics.WOTSpectralMeasure.unitaryConj_mul, PhyslibAlpha.ProbabilisticTheory.QuantumMechanics.WOTSpectralMeasure.unitaryConj_star, PhyslibAlpha.ProbabilisticTheory.QuantumMechanics.WOTSpectralMeasure.unitaryConj_one, PhyslibAlpha.ProbabilisticTheory.QuantumMechanics.WOTSpectralMeasure.unitaryConjSpectralMeasure, PhyslibAlpha.ProbabilisticTheory.QuantumMechanics.WOTSpectralMeasure.unitaryConjSpectralMeasure_apply
 statement: formalized
 proof: formalized
 ---
 
 # Transporting spectral measures along unitaries
 
-The module `PhyslibAlpha.ProbabilisticTheory.HilbertSpace.Unbounded.Conjugation`, [PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/Conjugation.lean](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/Conjugation.lean): 11 declarations, 3 with a docstring.
+The module `PhyslibAlpha.ProbabilisticTheory.HilbertSpace.Unbounded.Conjugation`, [PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/Conjugation.lean](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/Conjugation.lean): 11 declarations, 3 with a docstring.
 
 > Conjugating operators and spectral measures by a unitary.
 
@@ -32,7 +32,7 @@ The module `PhyslibAlpha.ProbabilisticTheory.HilbertSpace.Unbounded.Conjugation`
 
 ## A. Conjugation of a single operator
 
-**`ProbabilisticTheory.QuantumMechanics.WOTSpectralMeasure.unitaryConj`**, a def, [line 62](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/Conjugation.lean#L62).
+**`PhyslibAlpha.ProbabilisticTheory.QuantumMechanics.WOTSpectralMeasure.unitaryConj`**, a def, [line 62](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/Conjugation.lean#L62).
 
 > Conjugation of a bounded operator by a Hilbert-space unitary, viewed in the WOT type.
 
@@ -41,7 +41,7 @@ def unitaryConj {H' : Type*} [NormedAddCommGroup H'] [InnerProductSpace ℂ H']
     [CompleteSpace H'] (u : H ≃ₗᵢ[ℂ] H') (A : H →WOT[ℂ] H) : H' →WOT[ℂ] H'
 ```
 
-**`ProbabilisticTheory.QuantumMechanics.WOTSpectralMeasure.unitaryConjAddHom`**, a def, [line 69](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/Conjugation.lean#L69).
+**`PhyslibAlpha.ProbabilisticTheory.QuantumMechanics.WOTSpectralMeasure.unitaryConjAddHom`**, a def, [line 69](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/Conjugation.lean#L69).
 
 > Unitary conjugation is additive on WOT operators.
 
@@ -51,7 +51,7 @@ def unitaryConjAddHom {H' : Type*} [NormedAddCommGroup H'] [InnerProductSpace �
     (H →WOT[ℂ] H) →+ (H' →WOT[ℂ] H')
 ```
 
-**`ProbabilisticTheory.QuantumMechanics.WOTSpectralMeasure.continuous_unitaryConjAddHom`**, a lemma, [line 80](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/Conjugation.lean#L80).
+**`PhyslibAlpha.ProbabilisticTheory.QuantumMechanics.WOTSpectralMeasure.continuous_unitaryConjAddHom`**, a lemma, [line 80](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/Conjugation.lean#L80).
 
 ```lean
 lemma continuous_unitaryConjAddHom {H' : Type*} [NormedAddCommGroup H']
@@ -59,7 +59,7 @@ lemma continuous_unitaryConjAddHom {H' : Type*} [NormedAddCommGroup H']
     Continuous (unitaryConjAddHom u)
 ```
 
-**`ProbabilisticTheory.QuantumMechanics.WOTSpectralMeasure.unitaryConj_mul`**, a lemma, [line 99](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/Conjugation.lean#L99).
+**`PhyslibAlpha.ProbabilisticTheory.QuantumMechanics.WOTSpectralMeasure.unitaryConj_mul`**, a lemma, [line 99](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/Conjugation.lean#L99).
 
 ```lean
 lemma unitaryConj_mul {H' : Type*} [NormedAddCommGroup H'] [InnerProductSpace ℂ H']
@@ -67,7 +67,7 @@ lemma unitaryConj_mul {H' : Type*} [NormedAddCommGroup H'] [InnerProductSpace �
     unitaryConj u (A * B) = unitaryConj u A * unitaryConj u B
 ```
 
-**`ProbabilisticTheory.QuantumMechanics.WOTSpectralMeasure.unitaryConj_star`**, a lemma, [line 106](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/Conjugation.lean#L106).
+**`PhyslibAlpha.ProbabilisticTheory.QuantumMechanics.WOTSpectralMeasure.unitaryConj_star`**, a lemma, [line 106](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/Conjugation.lean#L106).
 
 ```lean
 lemma unitaryConj_star {H' : Type*} [NormedAddCommGroup H'] [InnerProductSpace ℂ H']
@@ -75,7 +75,7 @@ lemma unitaryConj_star {H' : Type*} [NormedAddCommGroup H'] [InnerProductSpace �
     unitaryConj u (star A) = star (unitaryConj u A)
 ```
 
-**`ProbabilisticTheory.QuantumMechanics.WOTSpectralMeasure.unitaryConj_one`**, a lemma, [line 128](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/Conjugation.lean#L128).
+**`PhyslibAlpha.ProbabilisticTheory.QuantumMechanics.WOTSpectralMeasure.unitaryConj_one`**, a lemma, [line 128](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/Conjugation.lean#L128).
 
 ```lean
 lemma unitaryConj_one {H' : Type*} [NormedAddCommGroup H'] [InnerProductSpace ℂ H']
@@ -85,7 +85,7 @@ lemma unitaryConj_one {H' : Type*} [NormedAddCommGroup H'] [InnerProductSpace �
 
 ## B. Conjugation of a spectral measure
 
-**`ProbabilisticTheory.QuantumMechanics.WOTSpectralMeasure.unitaryConjSpectralMeasure`**, a def, [line 138](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/Conjugation.lean#L138).
+**`PhyslibAlpha.ProbabilisticTheory.QuantumMechanics.WOTSpectralMeasure.unitaryConjSpectralMeasure`**, a def, [line 138](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/Conjugation.lean#L138).
 
 > Transport a WOT spectral measure through a Hilbert-space unitary.
 
@@ -95,7 +95,7 @@ def unitaryConjSpectralMeasure {H' : Type*} [NormedAddCommGroup H']
     WOTSpectralMeasure α H → WOTSpectralMeasure α H'
 ```
 
-**`ProbabilisticTheory.QuantumMechanics.WOTSpectralMeasure.unitaryConjSpectralMeasure_apply`**, a lemma, [line 157](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/Conjugation.lean#L157).
+**`PhyslibAlpha.ProbabilisticTheory.QuantumMechanics.WOTSpectralMeasure.unitaryConjSpectralMeasure_apply`**, a lemma, [line 157](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/Conjugation.lean#L157).
 
 ```lean
 lemma unitaryConjSpectralMeasure_apply {H' : Type*} [NormedAddCommGroup H']
@@ -106,7 +106,7 @@ lemma unitaryConjSpectralMeasure_apply {H' : Type*} [NormedAddCommGroup H']
 
 ## C. Interaction with the scalar and diagonal measures
 
-**`ProbabilisticTheory.QuantumMechanics.WOTSpectralMeasure.unitaryConjSpectralMeasure_scalarMeasure_apply`**, a lemma, [line 165](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/Conjugation.lean#L165).
+**`PhyslibAlpha.ProbabilisticTheory.QuantumMechanics.WOTSpectralMeasure.unitaryConjSpectralMeasure_scalarMeasure_apply`**, a lemma, [line 165](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/Conjugation.lean#L165).
 
 ```lean
 lemma unitaryConjSpectralMeasure_scalarMeasure_apply
@@ -116,7 +116,7 @@ lemma unitaryConjSpectralMeasure_scalarMeasure_apply
       μS.scalarMeasure (u.symm x) (u.symm y) S
 ```
 
-**`ProbabilisticTheory.QuantumMechanics.WOTSpectralMeasure.unitaryConjSpectralMeasure_scalarMeasure`**, a lemma, [line 174](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/Conjugation.lean#L174).
+**`PhyslibAlpha.ProbabilisticTheory.QuantumMechanics.WOTSpectralMeasure.unitaryConjSpectralMeasure_scalarMeasure`**, a lemma, [line 174](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/Conjugation.lean#L174).
 
 ```lean
 lemma unitaryConjSpectralMeasure_scalarMeasure
@@ -126,7 +126,7 @@ lemma unitaryConjSpectralMeasure_scalarMeasure
       μS.scalarMeasure (u.symm x) (u.symm y)
 ```
 
-**`ProbabilisticTheory.QuantumMechanics.WOTSpectralMeasure.unitaryConjSpectralMeasure_diagonalMeasure`**, a lemma, [line 183](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/Conjugation.lean#L183).
+**`PhyslibAlpha.ProbabilisticTheory.QuantumMechanics.WOTSpectralMeasure.unitaryConjSpectralMeasure_diagonalMeasure`**, a lemma, [line 183](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/Conjugation.lean#L183).
 
 ```lean
 lemma unitaryConjSpectralMeasure_diagonalMeasure
@@ -142,4 +142,4 @@ lemma unitaryConjSpectralMeasure_diagonalMeasure
 
 ## Sources
 
-- [PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/Conjugation.lean at 2a1dfe43](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/Conjugation.lean)
+- [PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/Conjugation.lean at 8c87bdfb](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/Conjugation.lean)

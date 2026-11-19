@@ -8,7 +8,7 @@ proof: formalized
 
 # Bochner's theorem on discrete abelian groups
 
-The module `PhyslibAlpha.Mathematics.TauCeti.Analysis.Bochner.DiscreteGroup`, [PhyslibAlpha/Mathematics/TauCeti/Analysis/Bochner/DiscreteGroup.lean](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Mathematics/TauCeti/Analysis/Bochner/DiscreteGroup.lean): 1 declaration, 1 with a docstring.
+The module `PhyslibAlpha.Mathematics.TauCeti.Analysis.Bochner.DiscreteGroup`, [PhyslibAlpha/Mathematics/TauCeti/Analysis/Bochner/DiscreteGroup.lean](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Mathematics/TauCeti/Analysis/Bochner/DiscreteGroup.lean): 1 declaration, 1 with a docstring.
 
 > A function `φ` on a discrete abelian group `G` is positive definite, `∑ᵢ ∑ⱼ cᵢ conj(cⱼ) φ(gᵢ - gⱼ) ≥
 > 0` for every finite family, if and only if it is the Fourier–Stieltjes transform `φ(g) = ∫ χ(g)
@@ -42,7 +42,7 @@ The module `PhyslibAlpha.Mathematics.TauCeti.Analysis.Bochner.DiscreteGroup`, [P
 
 ## A. Development
 
-**`TauCeti.isPositiveDefiniteSub_iff_exists_pontryaginMeasureTransform_eq`**, a lemma, [line 64](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Mathematics/TauCeti/Analysis/Bochner/DiscreteGroup.lean#L64).
+**`TauCeti.isPositiveDefiniteSub_iff_exists_pontryaginMeasureTransform_eq`**, a lemma, [line 64](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Mathematics/TauCeti/Analysis/Bochner/DiscreteGroup.lean#L64).
 
 > **Bochner's theorem on a discrete abelian group.** A function on a discrete abelian group is
 > positive definite if and only if it is the Fourier–Stieltjes transform of a finite inner regular
@@ -66,4 +66,4 @@ lemma isPositiveDefiniteSub_iff_exists_pontryaginMeasureTransform_eq (φ : G →
 
 ## Sources
 
-- [PhyslibAlpha/Mathematics/TauCeti/Analysis/Bochner/DiscreteGroup.lean at 2a1dfe43](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Mathematics/TauCeti/Analysis/Bochner/DiscreteGroup.lean)
+- [PhyslibAlpha/Mathematics/TauCeti/Analysis/Bochner/DiscreteGroup.lean at 8c87bdfb](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Mathematics/TauCeti/Analysis/Bochner/DiscreteGroup.lean)

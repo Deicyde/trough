@@ -8,7 +8,7 @@ proof: formalized
 
 # Lorentz invariants of a left-handed and a right-handed Weyl index
 
-The module `PhyslibAlpha.Relativity.LorentzGroup.Invariants.IsLeftRightWeyl`, [PhyslibAlpha/Relativity/LorentzGroup/Invariants/IsLeftRightWeyl.lean](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Relativity/LorentzGroup/Invariants/IsLeftRightWeyl.lean): 7 declarations, 7 with a docstring.
+The module `PhyslibAlpha.Relativity.LorentzGroup.Invariants.IsLeftRightWeyl`, [PhyslibAlpha/Relativity/LorentzGroup/Invariants/IsLeftRightWeyl.lean](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Relativity/LorentzGroup/Invariants/IsLeftRightWeyl.lean): 7 declarations, 7 with a docstring.
 
 ## i. Overview
 
@@ -40,7 +40,7 @@ The module `PhyslibAlpha.Relativity.LorentzGroup.Invariants.IsLeftRightWeyl`, [P
 
 ## A. Left-right families as equivariant maps
 
-**`Lorentz.IsLeftRightWeyl`**, an abbrev, [line 62](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Relativity/LorentzGroup/Invariants/IsLeftRightWeyl.lean#L62).
+**`Lorentz.IsLeftRightWeyl`**, an abbrev, [line 62](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Relativity/LorentzGroup/Invariants/IsLeftRightWeyl.lean#L62).
 
 > A family with a left- and a right-handed Weyl index `T^{α α'}`: an equivariant linear map
 > out of `ℂT[.upL, .upR]`.
@@ -50,7 +50,7 @@ abbrev IsLeftRightWeyl (B : Type*) [AddCommMonoid B] [Module ℂ B]
     (repLorentz : Representation ℂ SL(2,ℂ) B) (f : ℂT[.upL, .upR] →ₗ[ℂ] B) : Prop
 ```
 
-**`Lorentz.IsDualLeftRightWeyl`**, an abbrev, [line 68](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Relativity/LorentzGroup/Invariants/IsLeftRightWeyl.lean#L68).
+**`Lorentz.IsDualLeftRightWeyl`**, an abbrev, [line 68](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Relativity/LorentzGroup/Invariants/IsLeftRightWeyl.lean#L68).
 
 > A family with a dual left- and a dual right-handed Weyl index `T_{α α'}`: an equivariant
 > linear map out of `ℂT[.downL, .downR]`.
@@ -62,7 +62,7 @@ abbrev IsDualLeftRightWeyl (B : Type*) [AddCommMonoid B] [Module ℂ B]
 
 ## B. The invariant tensors vanish
 
-**`Lorentz.eq_zero_of_invariant_leftRight`**, a lemma, [line 82](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Relativity/LorentzGroup/Invariants/IsLeftRightWeyl.lean#L82).
+**`Lorentz.eq_zero_of_invariant_leftRight`**, a lemma, [line 82](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Relativity/LorentzGroup/Invariants/IsLeftRightWeyl.lean#L82).
 
 > An invariant tensor with a left- and a right-handed Weyl index, or with their duals, is
 > zero. The inverse boost along `z` scales the two diagonal components by `4⁻¹` and `4`, and the
@@ -77,7 +77,7 @@ lemma eq_zero_of_invariant_leftRight {k k' : complexLorentzTensor.Color}
 
 ## C. The classification of the invariants
 
-**`Lorentz.IsLeftRightWeyl.reducesInvariantsTo_bot`**, a lemma, [line 122](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Relativity/LorentzGroup/Invariants/IsLeftRightWeyl.lean#L122).
+**`Lorentz.IsLeftRightWeyl.reducesInvariantsTo_bot`**, a lemma, [line 122](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Relativity/LorentzGroup/Invariants/IsLeftRightWeyl.lean#L122).
 
 > The invariants of the range of a left-right family reduce to `⊥`: a Lorentz invariant of
 > `LinearMap.range f ⊔ S`, for `S` a Lorentz-stable submodule, lies in `S`.
@@ -88,7 +88,7 @@ lemma IsLeftRightWeyl.reducesInvariantsTo_bot {f : ℂT[.upL, .upR] →ₗ[ℂ] 
     ReducesInvariantsTo (fun g : SL(2,ℂ) => repLorentz g) (LinearMap.range f) ⊥
 ```
 
-**`Lorentz.IsLeftRightWeyl.eq_zero_of_invariant`**, a lemma, [line 129](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Relativity/LorentzGroup/Invariants/IsLeftRightWeyl.lean#L129).
+**`Lorentz.IsLeftRightWeyl.eq_zero_of_invariant`**, a lemma, [line 129](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Relativity/LorentzGroup/Invariants/IsLeftRightWeyl.lean#L129).
 
 > Every Lorentz invariant in the range of a left-right family is zero.
 
@@ -98,7 +98,7 @@ lemma IsLeftRightWeyl.eq_zero_of_invariant {f : ℂT[.upL, .upR] →ₗ[ℂ] B}
     (hinv : ∀ g : SL(2,ℂ), repLorentz g x = x) : x = 0
 ```
 
-**`Lorentz.IsDualLeftRightWeyl.reducesInvariantsTo_bot`**, a lemma, [line 137](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Relativity/LorentzGroup/Invariants/IsLeftRightWeyl.lean#L137).
+**`Lorentz.IsDualLeftRightWeyl.reducesInvariantsTo_bot`**, a lemma, [line 137](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Relativity/LorentzGroup/Invariants/IsLeftRightWeyl.lean#L137).
 
 > The invariants of the range of a dual left-right family reduce to `⊥`: a Lorentz invariant
 > of `LinearMap.range f ⊔ S`, for `S` a Lorentz-stable submodule, lies in `S`.
@@ -109,7 +109,7 @@ lemma IsDualLeftRightWeyl.reducesInvariantsTo_bot {f : ℂT[.downL, .downR] →�
     ReducesInvariantsTo (fun g : SL(2,ℂ) => repLorentz g) (LinearMap.range f) ⊥
 ```
 
-**`Lorentz.IsDualLeftRightWeyl.eq_zero_of_invariant`**, a lemma, [line 144](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Relativity/LorentzGroup/Invariants/IsLeftRightWeyl.lean#L144).
+**`Lorentz.IsDualLeftRightWeyl.eq_zero_of_invariant`**, a lemma, [line 144](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Relativity/LorentzGroup/Invariants/IsLeftRightWeyl.lean#L144).
 
 > Every Lorentz invariant in the range of a dual left-right family is zero.
 
@@ -130,4 +130,4 @@ lemma IsDualLeftRightWeyl.eq_zero_of_invariant {f : ℂT[.downL, .downR] →ₗ[
 
 ## Sources
 
-- [PhyslibAlpha/Relativity/LorentzGroup/Invariants/IsLeftRightWeyl.lean at 2a1dfe43](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Relativity/LorentzGroup/Invariants/IsLeftRightWeyl.lean)
+- [PhyslibAlpha/Relativity/LorentzGroup/Invariants/IsLeftRightWeyl.lean at 8c87bdfb](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Relativity/LorentzGroup/Invariants/IsLeftRightWeyl.lean)

@@ -8,9 +8,9 @@ proof: formalized
 
 # Time contractions (StaticContract)
 
-The module `Physlib.QFT.PerturbationTheory.WickContraction.StaticContract`, [Physlib/QFT/PerturbationTheory/WickContraction/StaticContract.lean](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/QFT/PerturbationTheory/WickContraction/StaticContract.lean): 5 declarations, 3 with a docstring.
+The module `Physlib.QFT.PerturbationTheory.WickContraction.StaticContract`, [Physlib/QFT/PerturbationTheory/WickContraction/StaticContract.lean](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/QFT/PerturbationTheory/WickContraction/StaticContract.lean): 5 declarations, 3 with a docstring.
 
-**`WickContraction.staticContract`**, a def, [line 30](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/QFT/PerturbationTheory/WickContraction/StaticContract.lean#L30).
+**`WickContraction.staticContract`**, a def, [line 30](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/QFT/PerturbationTheory/WickContraction/StaticContract.lean#L30).
 
 > For a list `φs` of `𝓕.FieldOp` and a Wick contraction `φsΛ`, the
 > element of the center of `𝓕.WickAlgebra`, `φsΛ.staticContract` is defined as the product
@@ -23,7 +23,7 @@ noncomputable def staticContract {φs : List 𝓕.FieldOp}
     Subalgebra.center ℂ 𝓕.WickAlgebra
 ```
 
-**`WickContraction.staticContract_insert_none`**, a lemma, [line 45](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/QFT/PerturbationTheory/WickContraction/StaticContract.lean#L45).
+**`WickContraction.staticContract_insert_none`**, a lemma, [line 45](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/QFT/PerturbationTheory/WickContraction/StaticContract.lean#L45).
 
 > For a list `φs = φ₀…φₙ` of `𝓕.FieldOp`, a Wick contraction `φsΛ` of `φs`, an element `φ` of
 > `𝓕.FieldOp`, and a `i ≤ φs.length`, then the following relation holds:
@@ -38,7 +38,7 @@ lemma staticContract_insert_none (φ : 𝓕.FieldOp) (φs : List 𝓕.FieldOp)
     (φsΛ ↩Λ φ i none).staticContract = φsΛ.staticContract
 ```
 
-**`WickContraction.staticContract_insert_some`**, a lemma, [line 61](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/QFT/PerturbationTheory/WickContraction/StaticContract.lean#L61).
+**`WickContraction.staticContract_insert_some`**, a lemma, [line 61](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/QFT/PerturbationTheory/WickContraction/StaticContract.lean#L61).
 
 > For a list `φs = φ₀…φₙ` of `𝓕.FieldOp`, a Wick contraction `φsΛ` of `φs`, an element `φ` of
 > `𝓕.FieldOp`, a `i ≤ φs.length` and a `k` in `φsΛ.uncontracted`, then
@@ -59,7 +59,7 @@ lemma staticContract_insert_some
     φsΛ.staticContract
 ```
 
-**`WickContraction.staticContract_insert_some_of_lt`**, a lemma, [line 80](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/QFT/PerturbationTheory/WickContraction/StaticContract.lean#L80).
+**`WickContraction.staticContract_insert_some_of_lt`**, a lemma, [line 80](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/QFT/PerturbationTheory/WickContraction/StaticContract.lean#L80).
 
 ```lean
 lemma staticContract_insert_some_of_lt
@@ -72,7 +72,7 @@ lemma staticContract_insert_some_of_lt
       φsΛ.staticContract)
 ```
 
-**`WickContraction.staticContract_of_not_gradingCompliant`**, a lemma, [line 105](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/QFT/PerturbationTheory/WickContraction/StaticContract.lean#L105).
+**`WickContraction.staticContract_of_not_gradingCompliant`**, a lemma, [line 105](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/QFT/PerturbationTheory/WickContraction/StaticContract.lean#L105).
 
 ```lean
 lemma staticContract_of_not_gradingCompliant (φs : List 𝓕.FieldOp)
@@ -87,4 +87,4 @@ lemma staticContract_of_not_gradingCompliant (φs : List 𝓕.FieldOp)
 
 ## Sources
 
-- [Physlib/QFT/PerturbationTheory/WickContraction/StaticContract.lean at 2a1dfe43](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/QFT/PerturbationTheory/WickContraction/StaticContract.lean)
+- [Physlib/QFT/PerturbationTheory/WickContraction/StaticContract.lean at 8c87bdfb](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/QFT/PerturbationTheory/WickContraction/StaticContract.lean)

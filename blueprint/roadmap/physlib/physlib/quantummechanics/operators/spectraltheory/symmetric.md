@@ -8,7 +8,7 @@ proof: formalized
 
 # Spectral theory for symmetric operators
 
-The module `Physlib.QuantumMechanics.Operators.SpectralTheory.Symmetric`, [Physlib/QuantumMechanics/Operators/SpectralTheory/Symmetric.lean](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/QuantumMechanics/Operators/SpectralTheory/Symmetric.lean): 16 declarations, 13 with a docstring.
+The module `Physlib.QuantumMechanics.Operators.SpectralTheory.Symmetric`, [Physlib/QuantumMechanics/Operators/SpectralTheory/Symmetric.lean](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/QuantumMechanics/Operators/SpectralTheory/Symmetric.lean): 16 declarations, 13 with a docstring.
 
 ## i. Overview
 
@@ -36,7 +36,7 @@ The module `Physlib.QuantumMechanics.Operators.SpectralTheory.Symmetric`, [Physl
 
 ## A. Numerical range
 
-**`LinearPMap.IsSymmetric.realNumericalRange`**, a def, [line 61](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/QuantumMechanics/Operators/SpectralTheory/Symmetric.lean#L61).
+**`LinearPMap.IsSymmetric.realNumericalRange`**, a def, [line 61](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/QuantumMechanics/Operators/SpectralTheory/Symmetric.lean#L61).
 
 > The projection of the numerical range onto the real axis.
 
@@ -44,19 +44,19 @@ The module `Physlib.QuantumMechanics.Operators.SpectralTheory.Symmetric`, [Physl
 def realNumericalRange (T : H →ₗ.[ℂ] H) : Set ℝ
 ```
 
-**`LinearPMap.IsSymmetric.realNumericalRange_eq`**, a lemma, [line 66](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/QuantumMechanics/Operators/SpectralTheory/Symmetric.lean#L66).
+**`LinearPMap.IsSymmetric.realNumericalRange_eq`**, a lemma, [line 66](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/QuantumMechanics/Operators/SpectralTheory/Symmetric.lean#L66).
 
 ```lean
 lemma realNumericalRange_eq (T : H →ₗ.[ℂ] H) : Θᵣₑ T = re '' Θ T
 ```
 
-**`LinearPMap.IsSymmetric.realNumericalRange_neg`**, a lemma, [line 69](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/QuantumMechanics/Operators/SpectralTheory/Symmetric.lean#L69).
+**`LinearPMap.IsSymmetric.realNumericalRange_neg`**, a lemma, [line 69](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/QuantumMechanics/Operators/SpectralTheory/Symmetric.lean#L69).
 
 ```lean
 lemma realNumericalRange_neg (T : H →ₗ.[ℂ] H) : Θᵣₑ (-T) = -Θᵣₑ T
 ```
 
-**`LinearPMap.IsSymmetric.im_eq_zero_of_mem_numericalRange`**, a lemma, [line 77](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/QuantumMechanics/Operators/SpectralTheory/Symmetric.lean#L77).
+**`LinearPMap.IsSymmetric.im_eq_zero_of_mem_numericalRange`**, a lemma, [line 77](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/QuantumMechanics/Operators/SpectralTheory/Symmetric.lean#L77).
 
 > The numerical range of a symmetric operator is contained in the real axis.
 
@@ -64,7 +64,7 @@ lemma realNumericalRange_neg (T : H →ₗ.[ℂ] H) : Θᵣₑ (-T) = -Θᵣₑ 
 lemma im_eq_zero_of_mem_numericalRange {z : ℂ} (hz : z ∈ Θ T) : z.im = 0
 ```
 
-**`LinearPMap.IsSymmetric.numericalRange_subset`**, a lemma, [line 83](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/QuantumMechanics/Operators/SpectralTheory/Symmetric.lean#L83).
+**`LinearPMap.IsSymmetric.numericalRange_subset`**, a lemma, [line 83](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/QuantumMechanics/Operators/SpectralTheory/Symmetric.lean#L83).
 
 > The numerical range of a symmetric operator is contained in the real axis.
 
@@ -72,7 +72,7 @@ lemma im_eq_zero_of_mem_numericalRange {z : ℂ} (hz : z ∈ Θ T) : z.im = 0
 lemma numericalRange_subset : Θ T ⊆ range ofReal
 ```
 
-**`LinearPMap.IsSymmetric.numericalRange_eq`**, a lemma, [line 87](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/QuantumMechanics/Operators/SpectralTheory/Symmetric.lean#L87).
+**`LinearPMap.IsSymmetric.numericalRange_eq`**, a lemma, [line 87](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/QuantumMechanics/Operators/SpectralTheory/Symmetric.lean#L87).
 
 > The numerical range of a symmetric operator is equal to its projection onto the real axis.
 
@@ -80,7 +80,7 @@ lemma numericalRange_subset : Θ T ⊆ range ofReal
 lemma numericalRange_eq : Θ T = ofReal '' Θᵣₑ T
 ```
 
-**`LinearPMap.IsSymmetric.closure_numericalRange_subset`**, a lemma, [line 92](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/QuantumMechanics/Operators/SpectralTheory/Symmetric.lean#L92).
+**`LinearPMap.IsSymmetric.closure_numericalRange_subset`**, a lemma, [line 92](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/QuantumMechanics/Operators/SpectralTheory/Symmetric.lean#L92).
 
 ```lean
 lemma closure_numericalRange_subset : _root_.closure (Θ T) ⊆ range ofReal
@@ -88,7 +88,7 @@ lemma closure_numericalRange_subset : _root_.closure (Θ T) ⊆ range ofReal
 
 ## B. Regularity domain
 
-**`LinearPMap.IsSymmetric.mem_regularityDomain_of_im_ne_zero`**, a lemma, [line 102](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/QuantumMechanics/Operators/SpectralTheory/Symmetric.lean#L102).
+**`LinearPMap.IsSymmetric.mem_regularityDomain_of_im_ne_zero`**, a lemma, [line 102](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/QuantumMechanics/Operators/SpectralTheory/Symmetric.lean#L102).
 
 > The regularity domain of a symmetric operator contains all complex numbers with non-zero
 > imaginary part.
@@ -97,7 +97,7 @@ lemma closure_numericalRange_subset : _root_.closure (Θ T) ⊆ range ofReal
 lemma mem_regularityDomain_of_im_ne_zero {z : ℂ} (hz : z.im ≠ 0) : z ∈ T.regularityDomain
 ```
 
-**`LinearPMap.IsSymmetric.compl_ofReal_subset_regularityDomain`**, a lemma, [line 110](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/QuantumMechanics/Operators/SpectralTheory/Symmetric.lean#L110).
+**`LinearPMap.IsSymmetric.compl_ofReal_subset_regularityDomain`**, a lemma, [line 110](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/QuantumMechanics/Operators/SpectralTheory/Symmetric.lean#L110).
 
 > The regularity domain of a symmetric operator contains all complex numbers with non-zero
 > imaginary part.
@@ -106,7 +106,7 @@ lemma mem_regularityDomain_of_im_ne_zero {z : ℂ} (hz : z.im ≠ 0) : z ∈ T.r
 lemma compl_ofReal_subset_regularityDomain : (range ofReal)ᶜ ⊆ T.regularityDomain
 ```
 
-**`LinearPMap.IsSymmetric.Iio_subset_regularityDomain`**, a lemma, [line 114](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/QuantumMechanics/Operators/SpectralTheory/Symmetric.lean#L114).
+**`LinearPMap.IsSymmetric.Iio_subset_regularityDomain`**, a lemma, [line 114](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/QuantumMechanics/Operators/SpectralTheory/Symmetric.lean#L114).
 
 > If `m` is a lower bound on the numerical range then the regularity domain contains `(-∞,m)`.
 
@@ -115,7 +115,7 @@ lemma Iio_subset_regularityDomain {m : ℝ} (h : m ∈ lowerBounds (Θᵣₑ T))
     ofReal '' Iio m ⊆ T.regularityDomain
 ```
 
-**`LinearPMap.IsSymmetric.Ioi_subset_regularityDomain`**, a lemma, [line 134](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/QuantumMechanics/Operators/SpectralTheory/Symmetric.lean#L134).
+**`LinearPMap.IsSymmetric.Ioi_subset_regularityDomain`**, a lemma, [line 134](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/QuantumMechanics/Operators/SpectralTheory/Symmetric.lean#L134).
 
 > If `m` is an upper bound on the numerical range then the regularity domain contains `(m,∞)`.
 
@@ -124,7 +124,7 @@ lemma Ioi_subset_regularityDomain {m : ℝ} (h : m ∈ upperBounds (Θᵣₑ T))
     ofReal '' Ioi m ⊆ T.regularityDomain
 ```
 
-**`LinearPMap.IsSymmetric.regularityDomain_isConnected_iff`**, a lemma, [line 143](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/QuantumMechanics/Operators/SpectralTheory/Symmetric.lean#L143).
+**`LinearPMap.IsSymmetric.regularityDomain_isConnected_iff`**, a lemma, [line 143](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/QuantumMechanics/Operators/SpectralTheory/Symmetric.lean#L143).
 
 > The regularity domain of a symmetric operator is connected iff it contains a real number.
 
@@ -133,7 +133,7 @@ lemma regularityDomain_isConnected_iff :
     IsConnected T.regularityDomain ↔ (ofReal ⁻¹' T.regularityDomain).Nonempty
 ```
 
-**`LinearPMap.IsSymmetric.regularityDomain_isConnected_of_bddBelow`**, a lemma, [line 191](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/QuantumMechanics/Operators/SpectralTheory/Symmetric.lean#L191).
+**`LinearPMap.IsSymmetric.regularityDomain_isConnected_of_bddBelow`**, a lemma, [line 191](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/QuantumMechanics/Operators/SpectralTheory/Symmetric.lean#L191).
 
 > The regularity domain of a lower semibounded symmetric operator is connected.
 
@@ -142,7 +142,7 @@ lemma regularityDomain_isConnected_of_bddBelow (h : BddBelow (Θᵣₑ T)) :
     IsConnected T.regularityDomain
 ```
 
-**`LinearPMap.IsSymmetric.regularityDomain_isConnected_of_bddAbove`**, a lemma, [line 198](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/QuantumMechanics/Operators/SpectralTheory/Symmetric.lean#L198).
+**`LinearPMap.IsSymmetric.regularityDomain_isConnected_of_bddAbove`**, a lemma, [line 198](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/QuantumMechanics/Operators/SpectralTheory/Symmetric.lean#L198).
 
 > The regularity domain of an upper semibounded symmetric operator is connected.
 
@@ -153,7 +153,7 @@ lemma regularityDomain_isConnected_of_bddAbove (h : BddAbove (Θᵣₑ T)) :
 
 ## C. Point spectrum
 
-**`LinearPMap.IsSymmetric.pointSpectrum_real`**, a lemma, [line 209](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/QuantumMechanics/Operators/SpectralTheory/Symmetric.lean#L209).
+**`LinearPMap.IsSymmetric.pointSpectrum_real`**, a lemma, [line 209](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/QuantumMechanics/Operators/SpectralTheory/Symmetric.lean#L209).
 
 > Eigenvalues of a symmetric unbounded operator are real.
 
@@ -163,7 +163,7 @@ lemma pointSpectrum_real : σᵖ T ⊆ range ofReal
 
 ## D. Essential self-adjointness
 
-**`LinearPMap.IsSymmetric.isEssentiallySelfAdjoint_of_defectNumber_eq_zero`**, a lemma, [line 230](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/QuantumMechanics/Operators/SpectralTheory/Symmetric.lean#L230).
+**`LinearPMap.IsSymmetric.isEssentiallySelfAdjoint_of_defectNumber_eq_zero`**, a lemma, [line 230](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/QuantumMechanics/Operators/SpectralTheory/Symmetric.lean#L230).
 
 > The basic criterion for essential self-adjointness: a symmetric, densely-defined operator
 > whose defect numbers at `I` and `-I` both vanish is essentially self-adjoint.
@@ -180,4 +180,4 @@ lemma isEssentiallySelfAdjoint_of_defectNumber_eq_zero
 
 ## Sources
 
-- [Physlib/QuantumMechanics/Operators/SpectralTheory/Symmetric.lean at 2a1dfe43](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/QuantumMechanics/Operators/SpectralTheory/Symmetric.lean)
+- [Physlib/QuantumMechanics/Operators/SpectralTheory/Symmetric.lean at 8c87bdfb](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/QuantumMechanics/Operators/SpectralTheory/Symmetric.lean)

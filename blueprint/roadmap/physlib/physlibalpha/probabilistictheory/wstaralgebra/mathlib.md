@@ -1,14 +1,14 @@
 ---
 declaration: module
 origin: cited
-lean: ProbabilisticTheory.PhiLM, ProbabilisticTheory.Phi, ProbabilisticTheory.Phi_apply, ProbabilisticTheory.PsiLM, ProbabilisticTheory.Psi, ProbabilisticTheory.Psi_apply, ProbabilisticTheory.Psi_Phi, ProbabilisticTheory.Phi_Psi
+lean: PhyslibAlpha.ProbabilisticTheory.PhiLM, PhyslibAlpha.ProbabilisticTheory.Phi, PhyslibAlpha.ProbabilisticTheory.Phi_apply, PhyslibAlpha.ProbabilisticTheory.PsiLM, PhyslibAlpha.ProbabilisticTheory.Psi, PhyslibAlpha.ProbabilisticTheory.Psi_apply, PhyslibAlpha.ProbabilisticTheory.Psi_Phi, PhyslibAlpha.ProbabilisticTheory.Phi_Psi
 statement: formalized
 proof: formalized
 ---
 
 # W⋆-algebra structures are W⋆-algebras
 
-The module `PhyslibAlpha.ProbabilisticTheory.WStarAlgebra.Mathlib`, [PhyslibAlpha/ProbabilisticTheory/WStarAlgebra/Mathlib.lean](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ProbabilisticTheory/WStarAlgebra/Mathlib.lean): 15 declarations, 13 with a docstring.
+The module `PhyslibAlpha.ProbabilisticTheory.WStarAlgebra.Mathlib`, [PhyslibAlpha/ProbabilisticTheory/WStarAlgebra/Mathlib.lean](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/WStarAlgebra/Mathlib.lean): 15 declarations, 13 with a docstring.
 
 > A W⋆-algebra structure with a chosen predual gives a W⋆-algebra in Mathlib's sense.
 
@@ -32,7 +32,7 @@ The module `PhyslibAlpha.ProbabilisticTheory.WStarAlgebra.Mathlib`, [PhyslibAlph
 
 ## A. The conjugate-linear self-duality `Phi` of the strong dual, via `ConjSpace`
 
-**`ProbabilisticTheory.PhiLM`**, a def, [line 57](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ProbabilisticTheory/WStarAlgebra/Mathlib.lean#L57).
+**`PhyslibAlpha.ProbabilisticTheory.PhiLM`**, a def, [line 57](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/WStarAlgebra/Mathlib.lean#L57).
 
 > The map `f ↦ (x ↦ conj (f x))` from the dual of `X` to linear functionals on `ConjSpace X`.
 
@@ -40,7 +40,7 @@ The module `PhyslibAlpha.ProbabilisticTheory.WStarAlgebra.Mathlib`, [PhyslibAlph
 def PhiLM (f : StrongDual ℂ X) : ConjSpace X →ₗ[ℂ] ℂ
 ```
 
-**`ProbabilisticTheory.Phi`**, a def, [line 66](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ProbabilisticTheory/WStarAlgebra/Mathlib.lean#L66).
+**`PhyslibAlpha.ProbabilisticTheory.Phi`**, a def, [line 66](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/WStarAlgebra/Mathlib.lean#L66).
 
 > `Phi f`, as a continuous linear functional on `ConjSpace X`: the same bound `‖f‖` works, since
 > `conj` is an isometry of `ℂ`.
@@ -49,14 +49,14 @@ def PhiLM (f : StrongDual ℂ X) : ConjSpace X →ₗ[ℂ] ℂ
 def Phi (f : StrongDual ℂ X) : StrongDual ℂ (ConjSpace X)
 ```
 
-**`ProbabilisticTheory.Phi_apply`**, a lemma, [line 72](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ProbabilisticTheory/WStarAlgebra/Mathlib.lean#L72).
+**`PhyslibAlpha.ProbabilisticTheory.Phi_apply`**, a lemma, [line 72](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/WStarAlgebra/Mathlib.lean#L72).
 
 ```lean
 lemma Phi_apply (f : StrongDual ℂ X) (x : ConjSpace X) :
     Phi f x = starRingEnd ℂ (f (ofConj x))
 ```
 
-**`ProbabilisticTheory.PsiLM`**, a def, [line 77](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ProbabilisticTheory/WStarAlgebra/Mathlib.lean#L77).
+**`PhyslibAlpha.ProbabilisticTheory.PsiLM`**, a def, [line 77](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/WStarAlgebra/Mathlib.lean#L77).
 
 > The linear part of `Psi`, the same construction the other way around:
 > `g ↦ (x ↦ conj (g (toConj x)))`.
@@ -65,7 +65,7 @@ lemma Phi_apply (f : StrongDual ℂ X) (x : ConjSpace X) :
 def PsiLM (g : StrongDual ℂ (ConjSpace X)) : X →ₗ[ℂ] ℂ
 ```
 
-**`ProbabilisticTheory.Psi`**, a def, [line 88](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ProbabilisticTheory/WStarAlgebra/Mathlib.lean#L88).
+**`PhyslibAlpha.ProbabilisticTheory.Psi`**, a def, [line 88](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/WStarAlgebra/Mathlib.lean#L88).
 
 > `Psi g`, as a continuous linear functional on `X`.
 
@@ -73,14 +73,14 @@ def PsiLM (g : StrongDual ℂ (ConjSpace X)) : X →ₗ[ℂ] ℂ
 def Psi (g : StrongDual ℂ (ConjSpace X)) : StrongDual ℂ X
 ```
 
-**`ProbabilisticTheory.Psi_apply`**, a lemma, [line 94](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ProbabilisticTheory/WStarAlgebra/Mathlib.lean#L94).
+**`PhyslibAlpha.ProbabilisticTheory.Psi_apply`**, a lemma, [line 94](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/WStarAlgebra/Mathlib.lean#L94).
 
 ```lean
 lemma Psi_apply (g : StrongDual ℂ (ConjSpace X)) (x : X) :
     Psi g x = starRingEnd ℂ (g (toConj x))
 ```
 
-**`ProbabilisticTheory.Psi_Phi`**, a lemma, [line 98](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ProbabilisticTheory/WStarAlgebra/Mathlib.lean#L98).
+**`PhyslibAlpha.ProbabilisticTheory.Psi_Phi`**, a lemma, [line 98](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/WStarAlgebra/Mathlib.lean#L98).
 
 > `Psi` undoes `Phi`: `conj (conj (f x)) = f x`.
 
@@ -88,7 +88,7 @@ lemma Psi_apply (g : StrongDual ℂ (ConjSpace X)) (x : X) :
 lemma Psi_Phi (f : StrongDual ℂ X) : Psi (Phi f) = f
 ```
 
-**`ProbabilisticTheory.Phi_Psi`**, a lemma, [line 102](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ProbabilisticTheory/WStarAlgebra/Mathlib.lean#L102).
+**`PhyslibAlpha.ProbabilisticTheory.Phi_Psi`**, a lemma, [line 102](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/WStarAlgebra/Mathlib.lean#L102).
 
 > `Phi` undoes `Psi`, the same computation run the other way.
 
@@ -96,7 +96,7 @@ lemma Psi_Phi (f : StrongDual ℂ X) : Psi (Phi f) = f
 lemma Phi_Psi (g : StrongDual ℂ (ConjSpace X)) : Phi (Psi g) = g
 ```
 
-**`ProbabilisticTheory.PhiLM'`**, a def, [line 110](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ProbabilisticTheory/WStarAlgebra/Mathlib.lean#L110).
+**`PhyslibAlpha.ProbabilisticTheory.PhiLM'`**, a def, [line 110](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/WStarAlgebra/Mathlib.lean#L110).
 
 > `Phi`, bundled as a (conjugate-)linear map `StrongDual ℂ X →ₛₗ[starRingEnd ℂ]
 > StrongDual ℂ (ConjSpace X)`: additive since `conj` and evaluation both are, and conjugate-linear
@@ -106,7 +106,7 @@ lemma Phi_Psi (g : StrongDual ℂ (ConjSpace X)) : Phi (Psi g) = g
 def PhiLM' : StrongDual ℂ X →ₛₗ[starRingEnd ℂ] StrongDual ℂ (ConjSpace X)
 ```
 
-**`ProbabilisticTheory.norm_Phi_le`**, a lemma, [line 116](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ProbabilisticTheory/WStarAlgebra/Mathlib.lean#L116).
+**`PhyslibAlpha.ProbabilisticTheory.norm_Phi_le`**, a lemma, [line 116](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/WStarAlgebra/Mathlib.lean#L116).
 
 > `‖Phi f‖ ≤ ‖f‖`, from the bound used to build `Phi f` via `LinearMap.mkContinuous`.
 
@@ -114,7 +114,7 @@ def PhiLM' : StrongDual ℂ X →ₛₗ[starRingEnd ℂ] StrongDual ℂ (ConjSpa
 lemma norm_Phi_le (f : StrongDual ℂ X) : ‖Phi f‖ ≤ ‖f‖
 ```
 
-**`ProbabilisticTheory.norm_Psi_le`**, a lemma, [line 120](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ProbabilisticTheory/WStarAlgebra/Mathlib.lean#L120).
+**`PhyslibAlpha.ProbabilisticTheory.norm_Psi_le`**, a lemma, [line 120](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/WStarAlgebra/Mathlib.lean#L120).
 
 > `‖Psi g‖ ≤ ‖g‖`, the mirror-image bound for `Psi`.
 
@@ -122,7 +122,7 @@ lemma norm_Phi_le (f : StrongDual ℂ X) : ‖Phi f‖ ≤ ‖f‖
 lemma norm_Psi_le (g : StrongDual ℂ (ConjSpace X)) : ‖Psi g‖ ≤ ‖g‖
 ```
 
-**`ProbabilisticTheory.norm_Phi_eq`**, a lemma, [line 125](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ProbabilisticTheory/WStarAlgebra/Mathlib.lean#L125).
+**`PhyslibAlpha.ProbabilisticTheory.norm_Phi_eq`**, a lemma, [line 125](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/WStarAlgebra/Mathlib.lean#L125).
 
 > `Phi` is isometric: `≤` from `norm_Phi_le` directly, `≥` from applying `norm_Psi_le` to
 > `Phi f` and using that `Psi` undoes `Phi`.
@@ -131,7 +131,7 @@ lemma norm_Psi_le (g : StrongDual ℂ (ConjSpace X)) : ‖Psi g‖ ≤ ‖g‖
 lemma norm_Phi_eq (f : StrongDual ℂ X) : ‖Phi f‖ = ‖f‖
 ```
 
-**`ProbabilisticTheory.PhiLI`**, a def, [line 131](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ProbabilisticTheory/WStarAlgebra/Mathlib.lean#L131).
+**`PhyslibAlpha.ProbabilisticTheory.PhiLI`**, a def, [line 131](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/WStarAlgebra/Mathlib.lean#L131).
 
 > `Phi`, bundled as a conjugate-linear *isometric embedding*.
 
@@ -139,7 +139,7 @@ lemma norm_Phi_eq (f : StrongDual ℂ X) : ‖Phi f‖ = ‖f‖
 def PhiLI : StrongDual ℂ X →ₛₗᵢ[starRingEnd ℂ] StrongDual ℂ (ConjSpace X)
 ```
 
-**`ProbabilisticTheory.PhiEquiv`**, a def, [line 137](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ProbabilisticTheory/WStarAlgebra/Mathlib.lean#L137).
+**`PhyslibAlpha.ProbabilisticTheory.PhiEquiv`**, a def, [line 137](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/WStarAlgebra/Mathlib.lean#L137).
 
 > **`Phi`, bundled as a conjugate-linear isometric equivalence.** Surjective because `Psi` is a
 > two-sided inverse (`Phi_Psi`); an isometric embedding is automatically injective, so this is
@@ -151,7 +151,7 @@ def PhiEquiv : StrongDual ℂ X ≃ₗᵢ⋆[ℂ] StrongDual ℂ (ConjSpace X)
 
 ## B. Closing the connection to Mathlib's `WStarAlgebra`
 
-**`ProbabilisticTheory.WStarAlgebraStructure.toWStarAlgebra`**, a lemma, [line 146](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ProbabilisticTheory/WStarAlgebra/Mathlib.lean#L146).
+**`PhyslibAlpha.ProbabilisticTheory.WStarAlgebraStructure.toWStarAlgebra`**, a lemma, [line 146](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/WStarAlgebra/Mathlib.lean#L146).
 
 > **A W⋆-algebra structure gives a W⋆-algebra** in Mathlib's sense, when the predual lives in the
 > universe of `A`.
@@ -168,4 +168,4 @@ lemma WStarAlgebraStructure.toWStarAlgebra
 
 ## Sources
 
-- [PhyslibAlpha/ProbabilisticTheory/WStarAlgebra/Mathlib.lean at 2a1dfe43](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ProbabilisticTheory/WStarAlgebra/Mathlib.lean)
+- [PhyslibAlpha/ProbabilisticTheory/WStarAlgebra/Mathlib.lean at 8c87bdfb](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/WStarAlgebra/Mathlib.lean)

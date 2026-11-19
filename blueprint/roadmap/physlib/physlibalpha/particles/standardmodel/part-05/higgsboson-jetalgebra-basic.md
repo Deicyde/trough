@@ -8,7 +8,7 @@ proof: formalized
 
 # The jet algebra of the Higgs field (Basic)
 
-The module `PhyslibAlpha.Particles.StandardModel.HiggsBoson.JetAlgebra.Basic`, [PhyslibAlpha/Particles/StandardModel/HiggsBoson/JetAlgebra/Basic.lean](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/HiggsBoson/JetAlgebra/Basic.lean): 11 declarations, 6 with a docstring.
+The module `PhyslibAlpha.Particles.StandardModel.HiggsBoson.JetAlgebra.Basic`, [PhyslibAlpha/Particles/StandardModel/HiggsBoson/JetAlgebra/Basic.lean](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/HiggsBoson/JetAlgebra/Basic.lean): 11 declarations, 6 with a docstring.
 
 ## i. Overview
 
@@ -44,7 +44,7 @@ The module `PhyslibAlpha.Particles.StandardModel.HiggsBoson.JetAlgebra.Basic`, [
 
 ### A.1. The jets of the Higgs field
 
-**`StandardModel.HiggsVec.jetValLinEquiv`**, a def, [line 81](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/HiggsBoson/JetAlgebra/Basic.lean#L81).
+**`StandardModel.HiggsVec.jetValLinEquiv`**, a def, [line 81](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/HiggsBoson/JetAlgebra/Basic.lean#L81).
 
 > Absorbs the jet ring into the weak index: a jet of the Higgs field is the same thing
 > as a `SpaceTimeAlgebra`-valued weak doublet,
@@ -56,14 +56,14 @@ noncomputable def jetValLinEquiv :
     SpaceTimeAlgebra ⊗[ℂ] HiggsVec ≃ₗ[ℂ] EuclideanSpace SpaceTimeAlgebra (Fin 2)
 ```
 
-**`StandardModel.HiggsVec.jetValLinEquiv_tmul`**, a lemma, [line 88](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/HiggsBoson/JetAlgebra/Basic.lean#L88).
+**`StandardModel.HiggsVec.jetValLinEquiv_tmul`**, a lemma, [line 88](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/HiggsBoson/JetAlgebra/Basic.lean#L88).
 
 ```lean
 lemma jetValLinEquiv_tmul (f : SpaceTimeAlgebra) (v : HiggsVec) :
     jetValLinEquiv (f ⊗ₜ[ℂ] v) = WithLp.toLp 2 fun i => v.ofLp i • f
 ```
 
-**`StandardModel.HiggsVec.jetValLinEquiv_smul`**, a lemma, [line 93](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/HiggsBoson/JetAlgebra/Basic.lean#L93).
+**`StandardModel.HiggsVec.jetValLinEquiv_smul`**, a lemma, [line 93](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/HiggsBoson/JetAlgebra/Basic.lean#L93).
 
 > The identification of the jets of the Higgs field is `SpaceTimeAlgebra`-linear: multiplying a
 > jet by a scalar jet multiplies each of its weak components.
@@ -73,7 +73,7 @@ lemma jetValLinEquiv_smul (χ : SpaceTimeAlgebra) (z : SpaceTimeAlgebra ⊗[ℂ]
     jetValLinEquiv (χ • z) = χ • jetValLinEquiv z
 ```
 
-**`StandardModel.HiggsVec.jetValLinEquiv_symm_smul`**, a lemma, [line 104](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/HiggsBoson/JetAlgebra/Basic.lean#L104).
+**`StandardModel.HiggsVec.jetValLinEquiv_symm_smul`**, a lemma, [line 104](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/HiggsBoson/JetAlgebra/Basic.lean#L104).
 
 ```lean
 lemma jetValLinEquiv_symm_smul (χ : SpaceTimeAlgebra)
@@ -83,7 +83,7 @@ lemma jetValLinEquiv_symm_smul (χ : SpaceTimeAlgebra)
 
 ### A.2. The action of the jet gauge group
 
-**`StandardModel.HiggsVec.jetGaugeMatrix`**, a def, [line 119](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/HiggsBoson/JetAlgebra/Basic.lean#L119).
+**`StandardModel.HiggsVec.jetGaugeMatrix`**, a def, [line 119](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/HiggsBoson/JetAlgebra/Basic.lean#L119).
 
 > The matrix of jets through which a jet of gauge transformations acts on the Higgs
 > doublet: the `SU(2)` power-series matrix scaled by the hypercharge power series
@@ -93,20 +93,20 @@ lemma jetValLinEquiv_symm_smul (χ : SpaceTimeAlgebra)
 noncomputable def jetGaugeMatrix (U : JetGaugeGroupI) : Matrix (Fin 2) (Fin 2) SpaceTimeAlgebra
 ```
 
-**`StandardModel.HiggsVec.jetGaugeMatrix_one`**, a lemma, [line 124](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/HiggsBoson/JetAlgebra/Basic.lean#L124).
+**`StandardModel.HiggsVec.jetGaugeMatrix_one`**, a lemma, [line 124](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/HiggsBoson/JetAlgebra/Basic.lean#L124).
 
 ```lean
 lemma jetGaugeMatrix_one : jetGaugeMatrix 1 = 1
 ```
 
-**`StandardModel.HiggsVec.jetGaugeMatrix_mul`**, a lemma, [line 127](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/HiggsBoson/JetAlgebra/Basic.lean#L127).
+**`StandardModel.HiggsVec.jetGaugeMatrix_mul`**, a lemma, [line 127](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/HiggsBoson/JetAlgebra/Basic.lean#L127).
 
 ```lean
 lemma jetGaugeMatrix_mul (U₁ U₂ : JetGaugeGroupI) :
     jetGaugeMatrix (U₁ * U₂) = jetGaugeMatrix U₁ * jetGaugeMatrix U₂
 ```
 
-**`StandardModel.HiggsVec.repJetGaugeGroupI`**, a def, [line 145](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/HiggsBoson/JetAlgebra/Basic.lean#L145).
+**`StandardModel.HiggsVec.repJetGaugeGroupI`**, a def, [line 145](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/HiggsBoson/JetAlgebra/Basic.lean#L145).
 
 > The `2_{3}` action of the jet gauge group on the jets of the Higgs field. Through
 > `jetValLinEquiv` the weak matrix of the gauge jet, carrying the `3` hypercharge phase
@@ -117,7 +117,7 @@ noncomputable def repJetGaugeGroupI :
     Representation ℂ JetGaugeGroupI (SpaceTimeAlgebra ⊗[ℂ] HiggsVec)
 ```
 
-**`StandardModel.HiggsVec.repJetGaugeGroupI_apply`**, a lemma, [line 168](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/HiggsBoson/JetAlgebra/Basic.lean#L168).
+**`StandardModel.HiggsVec.repJetGaugeGroupI_apply`**, a lemma, [line 168](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/HiggsBoson/JetAlgebra/Basic.lean#L168).
 
 ```lean
 lemma repJetGaugeGroupI_apply (U : JetGaugeGroupI) (z : SpaceTimeAlgebra ⊗[ℂ] HiggsVec) :
@@ -128,7 +128,7 @@ lemma repJetGaugeGroupI_apply (U : JetGaugeGroupI) (z : SpaceTimeAlgebra ⊗[ℂ
 
 ### A.3. Fibrewise linearity
 
-**`StandardModel.HiggsVec.repJetGaugeGroupI_smul`**, a lemma, [line 183](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/HiggsBoson/JetAlgebra/Basic.lean#L183).
+**`StandardModel.HiggsVec.repJetGaugeGroupI_smul`**, a lemma, [line 183](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/HiggsBoson/JetAlgebra/Basic.lean#L183).
 
 > **The jet gauge action on the jets of the Higgs field is fibrewise**: it commutes
 > with multiplication by scalar jets, acting on the values of the field over the identity
@@ -143,7 +143,7 @@ lemma repJetGaugeGroupI_smul (U : JetGaugeGroupI) (χ : SpaceTimeAlgebra)
 
 ### A.4. Constant jets act by the global gauge action
 
-**`StandardModel.HiggsVec.repJetGaugeGroupI_ofConstant`**, a lemma, [line 198](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/HiggsBoson/JetAlgebra/Basic.lean#L198).
+**`StandardModel.HiggsVec.repJetGaugeGroupI_ofConstant`**, a lemma, [line 198](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/HiggsBoson/JetAlgebra/Basic.lean#L198).
 
 > On jets of constant gauge transformations the jet action reduces to the global gauge
 > action on the fibre: the action `HiggsVec.repGaugeGroupI` on the Higgs factor, and the
@@ -162,4 +162,4 @@ lemma repJetGaugeGroupI_ofConstant (g : GaugeGroupI) :
 
 ## Sources
 
-- [PhyslibAlpha/Particles/StandardModel/HiggsBoson/JetAlgebra/Basic.lean at 2a1dfe43](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/HiggsBoson/JetAlgebra/Basic.lean)
+- [PhyslibAlpha/Particles/StandardModel/HiggsBoson/JetAlgebra/Basic.lean at 8c87bdfb](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/HiggsBoson/JetAlgebra/Basic.lean)

@@ -8,7 +8,7 @@ proof: formalized
 
 # Crystal geometry
 
-The module `PhyslibAlpha.CondensedMatter.Crystal.Geometry`, [PhyslibAlpha/CondensedMatter/Crystal/Geometry.lean](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/CondensedMatter/Crystal/Geometry.lean): 15 declarations, 15 with a docstring.
+The module `PhyslibAlpha.CondensedMatter.Crystal.Geometry`, [PhyslibAlpha/CondensedMatter/Crystal/Geometry.lean](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/CondensedMatter/Crystal/Geometry.lean): 15 declarations, 15 with a docstring.
 
 ## i. Overview
 
@@ -40,7 +40,7 @@ The module `PhyslibAlpha.CondensedMatter.Crystal.Geometry`, [PhyslibAlpha/Conden
 
 ## A. Positions and translations
 
-**`CondensedMatter.Crystal.Geometry`**, a structure, [line 60](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/CondensedMatter/Crystal/Geometry.lean#L60).
+**`CondensedMatter.Crystal.Geometry`**, a structure, [line 60](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/CondensedMatter/Crystal/Geometry.lean#L60).
 
 > An embedding of a crystal into physical space, compatible with translations.
 
@@ -59,7 +59,7 @@ structure Geometry {G : Type*} [AddGroup G] (C : Crystal G) (A : Type*)
 
 ## B. Physical distances
 
-**`CondensedMatter.Crystal.Geometry.distance`**, a def, [line 79](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/CondensedMatter/Crystal/Geometry.lean#L79).
+**`CondensedMatter.Crystal.Geometry.distance`**, a def, [line 79](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/CondensedMatter/Crystal/Geometry.lean#L79).
 
 > Physical distance between two sites.
 
@@ -67,7 +67,7 @@ structure Geometry {G : Type*} [AddGroup G] (C : Crystal G) (A : Type*)
 noncomputable def distance (R : Geometry C A) (x y : C.Site) : ℝ
 ```
 
-**`CondensedMatter.Crystal.Geometry.distance_vadd`**, a lemma, [line 83](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/CondensedMatter/Crystal/Geometry.lean#L83).
+**`CondensedMatter.Crystal.Geometry.distance_vadd`**, a lemma, [line 83](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/CondensedMatter/Crystal/Geometry.lean#L83).
 
 > A common cell translation preserves the distance between sites.
 
@@ -76,7 +76,7 @@ lemma distance_vadd (R : Geometry C A) (a : G) (x y : C.Site) :
     R.distance (a +ᵥ x) (a +ᵥ y) = R.distance x y
 ```
 
-**`CondensedMatter.Crystal.Geometry.distance_eq_zero`**, a lemma, [line 91](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/CondensedMatter/Crystal/Geometry.lean#L91).
+**`CondensedMatter.Crystal.Geometry.distance_eq_zero`**, a lemma, [line 91](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/CondensedMatter/Crystal/Geometry.lean#L91).
 
 > Zero physical distance identifies the same site.
 
@@ -85,7 +85,7 @@ lemma distance_eq_zero (R : Geometry C A) (x y : C.Site) :
     R.distance x y = 0 ↔ x = y
 ```
 
-**`CondensedMatter.Crystal.Geometry.metricSpace`**, a def, [line 97](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/CondensedMatter/Crystal/Geometry.lean#L97).
+**`CondensedMatter.Crystal.Geometry.metricSpace`**, a def, [line 97](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/CondensedMatter/Crystal/Geometry.lean#L97).
 
 > The metric on crystal sites inherited from their physical positions.
 
@@ -93,7 +93,7 @@ lemma distance_eq_zero (R : Geometry C A) (x y : C.Site) :
 noncomputable def metricSpace (R : Geometry C A) : MetricSpace C.Site
 ```
 
-**`CondensedMatter.Crystal.Geometry.isometry_position`**, a lemma, [line 101](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/CondensedMatter/Crystal/Geometry.lean#L101).
+**`CondensedMatter.Crystal.Geometry.isometry_position`**, a lemma, [line 101](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/CondensedMatter/Crystal/Geometry.lean#L101).
 
 > The position embedding preserves the induced physical metric.
 
@@ -109,7 +109,7 @@ lemma isometry_position (R : Geometry C A) :
 > cell `n` is the translate `n +ᵥ basisPositions i`. These positions must distinguish all
 > sites, including copies in different cells.
 
-**`CondensedMatter.Crystal.Geometry.ofUnitCell`**, a def, [line 116](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/CondensedMatter/Crystal/Geometry.lean#L116).
+**`CondensedMatter.Crystal.Geometry.ofUnitCell`**, a def, [line 116](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/CondensedMatter/Crystal/Geometry.lean#L116).
 
 > Embed a repeated unit cell by translating its reference positions.
 > The injectivity condition ensures that no two site addresses occupy the same point.
@@ -122,7 +122,7 @@ def ofUnitCell (G F : Type*) [AddGroup G] [Finite F] (A : Type*)
     Geometry (Crystal.ofUnitCell G F) A
 ```
 
-**`CondensedMatter.Crystal.Geometry.ofDisplacements`**, a def, [line 131](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/CondensedMatter/Crystal/Geometry.lean#L131).
+**`CondensedMatter.Crystal.Geometry.ofDisplacements`**, a def, [line 131](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/CondensedMatter/Crystal/Geometry.lean#L131).
 
 > Embed a unit cell using physical displacements and reference positions.
 > The translation map specifies the displacement of each cell; the injectivity condition
@@ -136,7 +136,7 @@ def ofDisplacements {G F A : Type*} [AddGroup G] [Finite F] [NormedAddCommGroup 
     Geometry (Crystal.ofUnitCell G F) A
 ```
 
-**`CondensedMatter.Crystal.Geometry.position_ofDisplacements`**, a lemma, [line 141](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/CondensedMatter/Crystal/Geometry.lean#L141).
+**`CondensedMatter.Crystal.Geometry.position_ofDisplacements`**, a lemma, [line 141](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/CondensedMatter/Crystal/Geometry.lean#L141).
 
 > A site's position is its cell displacement plus its position within the reference cell.
 
@@ -150,7 +150,7 @@ lemma position_ofDisplacements {G F A : Type*} [AddGroup G] [Finite F]
       displacement x.cell + basisPositions x.label
 ```
 
-**`CondensedMatter.Crystal.Geometry.ofLattice`**, a def, [line 150](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/CondensedMatter/Crystal/Geometry.lean#L150).
+**`CondensedMatter.Crystal.Geometry.ofLattice`**, a def, [line 150](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/CondensedMatter/Crystal/Geometry.lean#L150).
 
 > A one-site unit cell embedded by an injective physical translation map.
 
@@ -160,7 +160,7 @@ def ofLattice {G A : Type*} [AddGroup G] [NormedAddCommGroup A]
     Geometry (Crystal.ofUnitCell G Unit) A
 ```
 
-**`CondensedMatter.Crystal.Geometry.position_ofLattice`**, a lemma, [line 160](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/CondensedMatter/Crystal/Geometry.lean#L160).
+**`CondensedMatter.Crystal.Geometry.position_ofLattice`**, a lemma, [line 160](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/CondensedMatter/Crystal/Geometry.lean#L160).
 
 > In a one-site cell, the site's position is its cell displacement.
 
@@ -176,7 +176,7 @@ lemma position_ofLattice {G A : Type*} [AddGroup G] [NormedAddCommGroup A]
 > Translations preserve bond lengths. It therefore suffices to check the bonds starting
 > in the reference cell to determine the lengths of all graph edges.
 
-**`CondensedMatter.Crystal.Geometry.distance_of_links`**, a lemma, [line 174](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/CondensedMatter/Crystal/Geometry.lean#L174).
+**`CondensedMatter.Crystal.Geometry.distance_of_links`**, a lemma, [line 174](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/CondensedMatter/Crystal/Geometry.lean#L174).
 
 > Every translated copy of a bond has its reference-cell length.
 
@@ -187,7 +187,7 @@ lemma distance_of_links {G F A : Type*} [AddGroup G] [Finite F] [MetricSpace A]
     R.distance x y = R.distance ⟨0, b.source⟩ ⟨b.displacement, b.target⟩
 ```
 
-**`CondensedMatter.Crystal.Geometry.distance_eq_of_adj`**, a lemma, [line 186](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/CondensedMatter/Crystal/Geometry.lean#L186).
+**`CondensedMatter.Crystal.Geometry.distance_eq_of_adj`**, a lemma, [line 186](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/CondensedMatter/Crystal/Geometry.lean#L186).
 
 > A common reference bond length gives the length of every generated graph edge.
 
@@ -203,7 +203,7 @@ lemma distance_eq_of_adj {G F A : Type*} [AddGroup G] [Finite F] [MetricSpace A]
 > Primitive vectors specify the physical displacement of an integer cell index. Their
 > linear independence ensures that distinct cells have distinct displacements.
 
-**`CondensedMatter.Crystal.latticeMap`**, a def, [line 205](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/CondensedMatter/Crystal/Geometry.lean#L205).
+**`CondensedMatter.Crystal.latticeMap`**, a def, [line 205](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/CondensedMatter/Crystal/Geometry.lean#L205).
 
 > Convert integer cell coordinates into physical displacements along primitive vectors.
 
@@ -212,7 +212,7 @@ noncomputable def latticeMap {d D : ℕ} (vectors : Fin d → EuclideanSpace ℝ
     (Fin d → ℤ) →+ EuclideanSpace ℝ (Fin D)
 ```
 
-**`CondensedMatter.Crystal.latticeMap_injective`**, a lemma, [line 212](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/CondensedMatter/Crystal/Geometry.lean#L212).
+**`CondensedMatter.Crystal.latticeMap_injective`**, a lemma, [line 212](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/CondensedMatter/Crystal/Geometry.lean#L212).
 
 > Independent primitive vectors separate the displacements of different cells.
 
@@ -227,4 +227,4 @@ lemma latticeMap_injective {d D : ℕ} {vectors : Fin d → EuclideanSpace ℝ (
 
 ## Sources
 
-- [PhyslibAlpha/CondensedMatter/Crystal/Geometry.lean at 2a1dfe43](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/CondensedMatter/Crystal/Geometry.lean)
+- [PhyslibAlpha/CondensedMatter/Crystal/Geometry.lean at 8c87bdfb](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/CondensedMatter/Crystal/Geometry.lean)

@@ -1,14 +1,14 @@
 ---
 declaration: module
 origin: cited
-lean: ProbabilisticTheory.Effect.Orthogonal, ProbabilisticTheory.Effect.addOfOrthogonal, ProbabilisticTheory.Effect.coe_addOfOrthogonal
+lean: PhyslibAlpha.ProbabilisticTheory.Effect.Orthogonal, PhyslibAlpha.ProbabilisticTheory.Effect.addOfOrthogonal, PhyslibAlpha.ProbabilisticTheory.Effect.coe_addOfOrthogonal
 statement: formalized
 proof: formalized
 ---
 
 # Orthogonal effects
 
-The module `PhyslibAlpha.ProbabilisticTheory.Effect.Basic`, [PhyslibAlpha/ProbabilisticTheory/Effect/Basic.lean](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ProbabilisticTheory/Effect/Basic.lean): 3 declarations, 3 with a docstring.
+The module `PhyslibAlpha.ProbabilisticTheory.Effect.Basic`, [PhyslibAlpha/ProbabilisticTheory/Effect/Basic.lean](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/Effect/Basic.lean): 3 declarations, 3 with a docstring.
 
 > Effects: the order interval `[0, 1]` of an ordered space, modelling yes/no measurement outcomes.
 
@@ -29,7 +29,7 @@ The module `PhyslibAlpha.ProbabilisticTheory.Effect.Basic`, [PhyslibAlpha/Probab
 
 ## A. Orthogonal effects
 
-**`ProbabilisticTheory.Effect.Orthogonal`**, a def, [line 51](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ProbabilisticTheory/Effect/Basic.lean#L51).
+**`PhyslibAlpha.ProbabilisticTheory.Effect.Orthogonal`**, a def, [line 51](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/Effect/Basic.lean#L51).
 
 > Two effects are orthogonal when their sum is still bounded by the order unit.
 
@@ -37,7 +37,7 @@ The module `PhyslibAlpha.ProbabilisticTheory.Effect.Basic`, [PhyslibAlpha/Probab
 def Orthogonal (e f : Effect E) : Prop
 ```
 
-**`ProbabilisticTheory.Effect.addOfOrthogonal`**, a def, [line 54](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ProbabilisticTheory/Effect/Basic.lean#L54).
+**`PhyslibAlpha.ProbabilisticTheory.Effect.addOfOrthogonal`**, a def, [line 54](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/Effect/Basic.lean#L54).
 
 > The partial sum of two orthogonal effects.
 
@@ -45,7 +45,7 @@ def Orthogonal (e f : Effect E) : Prop
 def addOfOrthogonal (e f : Effect E) (h : Orthogonal e f) : Effect E
 ```
 
-**`ProbabilisticTheory.Effect.coe_addOfOrthogonal`**, a lemma, [line 59](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ProbabilisticTheory/Effect/Basic.lean#L59).
+**`PhyslibAlpha.ProbabilisticTheory.Effect.coe_addOfOrthogonal`**, a lemma, [line 59](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/Effect/Basic.lean#L59).
 
 > The underlying observable of an orthogonal effect sum is the ordinary sum.
 
@@ -56,8 +56,8 @@ lemma coe_addOfOrthogonal (e f : Effect E) (h : Orthogonal e f) :
 
 ## Depends on
 
-- [Effects](../../../physlib/probabilistictheory/effect/basic.md)
+- [Effects (PhyslibAlpha)](interval.md)
 
 ## Sources
 
-- [PhyslibAlpha/ProbabilisticTheory/Effect/Basic.lean at 2a1dfe43](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ProbabilisticTheory/Effect/Basic.lean)
+- [PhyslibAlpha/ProbabilisticTheory/Effect/Basic.lean at 8c87bdfb](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/Effect/Basic.lean)

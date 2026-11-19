@@ -8,7 +8,7 @@ proof: formalized
 
 # Matter fields of a gauge theory
 
-The module `PhyslibAlpha.ClassicalFieldTheory.GaugeTheory.MatterField.Basic`, [PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/MatterField/Basic.lean](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/MatterField/Basic.lean): 3 declarations, 3 with a docstring.
+The module `PhyslibAlpha.ClassicalFieldTheory.GaugeTheory.MatterField.Basic`, [PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/MatterField/Basic.lean](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/MatterField/Basic.lean): 3 declarations, 3 with a docstring.
 
 ## i. Overview
 
@@ -46,7 +46,7 @@ The module `PhyslibAlpha.ClassicalFieldTheory.GaugeTheory.MatterField.Basic`, [P
 
 ## A. The data of a matter field
 
-**`MatterField`**, a structure, [line 70](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/MatterField/Basic.lean#L70).
+**`MatterField`**, a structure, [line 70](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/MatterField/Basic.lean#L70).
 
 > **A matter field** of a gauge theory over the gauge context `jets : LocalGaugeData G₀ 𝔤 GJ 𝔤J`:
 > a finite-dimensional complex target space `V`, the Lorentz representation on `V`, a
@@ -98,7 +98,7 @@ structure MatterField {G₀ : Type} [Group G₀] {𝔤 : Type} [LieRing 𝔤] [L
 > theory needs them: the first for the factorization of the jet action through evaluation,
 > the second for the Lorentz law of the covariant derivatives.
 
-**`MatterField.PureJetsActTrivially`**, a def, [line 128](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/MatterField/Basic.lean#L128).
+**`MatterField.PureJetsActTrivially`**, a def, [line 128](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/MatterField/Basic.lean#L128).
 
 > Pure gauge jets act trivially at the base point: a jet with trivial value has identity
 > zeroth Taylor coefficient on the value space. With the fibrewise law, the base-point
@@ -108,7 +108,7 @@ structure MatterField {G₀ : Type} [Group G₀] {𝔤 : Type} [LieRing 𝔤] [L
 def PureJetsActTrivially : Prop
 ```
 
-**`MatterField.GaugeLorentzCompatible`**, a def, [line 133](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/MatterField/Basic.lean#L133).
+**`MatterField.GaugeLorentzCompatible`**, a def, [line 133](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/MatterField/Basic.lean#L133).
 
 > The infinitesimal gauge action commutes with the Lorentz representation on the value
 > space.
@@ -124,4 +124,4 @@ def GaugeLorentzCompatible : Prop
 
 ## Sources
 
-- [PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/MatterField/Basic.lean at 2a1dfe43](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/MatterField/Basic.lean)
+- [PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/MatterField/Basic.lean at 8c87bdfb](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/MatterField/Basic.lean)

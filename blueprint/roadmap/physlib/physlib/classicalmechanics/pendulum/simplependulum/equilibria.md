@@ -8,7 +8,7 @@ proof: formalized
 
 # Equilibria and energy regimes of the simple pendulum
 
-The module `Physlib.ClassicalMechanics.Pendulum.SimplePendulum.Equilibria`, [Physlib/ClassicalMechanics/Pendulum/SimplePendulum/Equilibria.lean](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/ClassicalMechanics/Pendulum/SimplePendulum/Equilibria.lean): 15 declarations, 15 with a docstring.
+The module `Physlib.ClassicalMechanics.Pendulum.SimplePendulum.Equilibria`, [Physlib/ClassicalMechanics/Pendulum/SimplePendulum/Equilibria.lean](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/ClassicalMechanics/Pendulum/SimplePendulum/Equilibria.lean): 15 declarations, 15 with a docstring.
 
 ## i. Overview
 
@@ -70,7 +70,7 @@ The module `Physlib.ClassicalMechanics.Pendulum.SimplePendulum.Equilibria`, [Phy
 > angular momentum does not change, and the torque vanishes with `sin 0`: both sides of the
 > equation of motion are zero.
 
-**`ClassicalMechanics.SimplePendulum.equationOfMotion_const_zero`**, a lemma, [line 106](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/ClassicalMechanics/Pendulum/SimplePendulum/Equilibria.lean#L106).
+**`ClassicalMechanics.SimplePendulum.equationOfMotion_const_zero`**, a lemma, [line 106](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/ClassicalMechanics/Pendulum/SimplePendulum/Equilibria.lean#L106).
 
 > The constant lift at the angle `0` — the bob hanging at rest at the bottom of its swing —
 > satisfies the equation of motion of the simple pendulum.
@@ -80,7 +80,7 @@ lemma equationOfMotion_const_zero :
     S.EquationOfMotion (fun _ => (0 : EuclideanSpace ℝ (Fin 1)))
 ```
 
-**`ClassicalMechanics.SimplePendulum.isSolution_const_zero`**, a lemma, [line 118](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/ClassicalMechanics/Pendulum/SimplePendulum/Equilibria.lean#L118).
+**`ClassicalMechanics.SimplePendulum.isSolution_const_zero`**, a lemma, [line 118](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/ClassicalMechanics/Pendulum/SimplePendulum/Equilibria.lean#L118).
 
 > The hanging equilibrium is a solution of the simple pendulum: the constant lift at the angle
 > `0` is smooth and satisfies the equation of motion. It is the simplest explicit solution of the
@@ -96,7 +96,7 @@ lemma isSolution_const_zero : S.IsSolution (fun _ => 0)
 > `sin π`; the pendulum stays there. That this balance is unstable — neighbouring solutions run
 > away from it — is a statement about non-constant solutions, and is not proved here.
 
-**`ClassicalMechanics.SimplePendulum.equationOfMotion_const_pi`**, a lemma, [line 133](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/ClassicalMechanics/Pendulum/SimplePendulum/Equilibria.lean#L133).
+**`ClassicalMechanics.SimplePendulum.equationOfMotion_const_pi`**, a lemma, [line 133](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/ClassicalMechanics/Pendulum/SimplePendulum/Equilibria.lean#L133).
 
 > The constant lift at the angle `π` — the bob balanced directly above the pivot — satisfies
 > the equation of motion of the simple pendulum.
@@ -106,7 +106,7 @@ lemma equationOfMotion_const_pi :
     S.EquationOfMotion (fun _ => EuclideanSpace.single 0 Real.pi)
 ```
 
-**`ClassicalMechanics.SimplePendulum.isSolution_const_pi`**, a lemma, [line 144](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/ClassicalMechanics/Pendulum/SimplePendulum/Equilibria.lean#L144).
+**`ClassicalMechanics.SimplePendulum.isSolution_const_pi`**, a lemma, [line 144](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/ClassicalMechanics/Pendulum/SimplePendulum/Equilibria.lean#L144).
 
 > The inverted equilibrium is a solution of the simple pendulum: the constant lift at the
 > angle `π` is smooth and satisfies the equation of motion.
@@ -122,7 +122,7 @@ lemma isSolution_const_pi : S.IsSolution (fun _ => EuclideanSpace.single 0 Real.
 > `π`. The constant solutions are therefore exactly the equilibria: the hanging equilibrium, the
 > inverted equilibrium, and their copies shifted by whole turns.
 
-**`ClassicalMechanics.SimplePendulum.equationOfMotion_const_iff`**, a lemma, [line 161](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/ClassicalMechanics/Pendulum/SimplePendulum/Equilibria.lean#L161).
+**`ClassicalMechanics.SimplePendulum.equationOfMotion_const_iff`**, a lemma, [line 161](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/ClassicalMechanics/Pendulum/SimplePendulum/Equilibria.lean#L161).
 
 > A constant lift satisfies the equation of motion of the simple pendulum if and only if the
 > sine of its angle vanishes — classically, the angles straight down and straight up: the
@@ -157,7 +157,7 @@ lemma equationOfMotion_const_iff (x : EuclideanSpace ℝ (Fin 1)) :
 > used in this file: the separatrix motions themselves — the non-constant solutions asymptotic to
 > the inverted equilibrium — are not constructed here.
 
-**`ClassicalMechanics.SimplePendulum.separatrixEnergy`**, a def, [line 208](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/ClassicalMechanics/Pendulum/SimplePendulum/Equilibria.lean#L208).
+**`ClassicalMechanics.SimplePendulum.separatrixEnergy`**, a def, [line 208](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/ClassicalMechanics/Pendulum/SimplePendulum/Equilibria.lean#L208).
 
 > The separatrix energy of the simple pendulum is `2 m g ℓ`, the energy of the inverted
 > equilibrium. It is the threshold separating the two regimes of the motion, libration below it
@@ -167,7 +167,7 @@ lemma equationOfMotion_const_iff (x : EuclideanSpace ℝ (Fin 1)) :
 def separatrixEnergy : ℝ
 ```
 
-**`ClassicalMechanics.SimplePendulum.separatrixEnergy_eq`**, a lemma, [line 211](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/ClassicalMechanics/Pendulum/SimplePendulum/Equilibria.lean#L211).
+**`ClassicalMechanics.SimplePendulum.separatrixEnergy_eq`**, a lemma, [line 211](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/ClassicalMechanics/Pendulum/SimplePendulum/Equilibria.lean#L211).
 
 > The separatrix energy of the simple pendulum, written out.
 
@@ -175,7 +175,7 @@ def separatrixEnergy : ℝ
 lemma separatrixEnergy_eq : S.separatrixEnergy = 2 * (S.m * S.g * S.ℓ)
 ```
 
-**`ClassicalMechanics.SimplePendulum.separatrixEnergy_pos`**, a lemma, [line 214](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/ClassicalMechanics/Pendulum/SimplePendulum/Equilibria.lean#L214).
+**`ClassicalMechanics.SimplePendulum.separatrixEnergy_pos`**, a lemma, [line 214](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/ClassicalMechanics/Pendulum/SimplePendulum/Equilibria.lean#L214).
 
 > The separatrix energy of the simple pendulum is positive.
 
@@ -183,7 +183,7 @@ lemma separatrixEnergy_eq : S.separatrixEnergy = 2 * (S.m * S.g * S.ℓ)
 lemma separatrixEnergy_pos : 0 < S.separatrixEnergy
 ```
 
-**`ClassicalMechanics.SimplePendulum.energy_const_pi`**, a lemma, [line 219](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/ClassicalMechanics/Pendulum/SimplePendulum/Equilibria.lean#L219).
+**`ClassicalMechanics.SimplePendulum.energy_const_pi`**, a lemma, [line 219](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/ClassicalMechanics/Pendulum/SimplePendulum/Equilibria.lean#L219).
 
 > The energy of the simple pendulum along the inverted equilibrium is the separatrix energy:
 > the bob balanced at the top has no kinetic energy and the full potential energy `2 m g ℓ`.
@@ -200,7 +200,7 @@ lemma energy_const_pi :
 > `I θ̇²` is at most twice the total energy. None of the bounds of this subsection uses the
 > equation of motion — they hold along every lift of the angle.
 
-**`ClassicalMechanics.SimplePendulum.kineticEnergy_nonneg`**, a lemma, [line 238](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/ClassicalMechanics/Pendulum/SimplePendulum/Equilibria.lean#L238).
+**`ClassicalMechanics.SimplePendulum.kineticEnergy_nonneg`**, a lemma, [line 238](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/ClassicalMechanics/Pendulum/SimplePendulum/Equilibria.lean#L238).
 
 > The kinetic energy of the simple pendulum is non-negative along every lift of the angle.
 
@@ -209,7 +209,7 @@ lemma kineticEnergy_nonneg (θ : Time → EuclideanSpace ℝ (Fin 1)) (t : Time)
     0 ≤ S.kineticEnergy θ t
 ```
 
-**`ClassicalMechanics.SimplePendulum.inertia_mul_inner_deriv_le`**, a lemma, [line 245](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/ClassicalMechanics/Pendulum/SimplePendulum/Equilibria.lean#L245).
+**`ClassicalMechanics.SimplePendulum.inertia_mul_inner_deriv_le`**, a lemma, [line 245](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/ClassicalMechanics/Pendulum/SimplePendulum/Equilibria.lean#L245).
 
 > The moment of inertia times the square of the angular speed, `I θ̇²`, is at most twice the
 > total energy, along every lift of the angle.
@@ -219,7 +219,7 @@ lemma inertia_mul_inner_deriv_le (θ : Time → EuclideanSpace ℝ (Fin 1)) (t :
     S.inertia * ⟪∂ₜ θ t, ∂ₜ θ t⟫_ℝ ≤ 2 * S.energy θ t
 ```
 
-**`ClassicalMechanics.SimplePendulum.potentialEnergy_le_energy`**, a lemma, [line 255](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/ClassicalMechanics/Pendulum/SimplePendulum/Equilibria.lean#L255).
+**`ClassicalMechanics.SimplePendulum.potentialEnergy_le_energy`**, a lemma, [line 255](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/ClassicalMechanics/Pendulum/SimplePendulum/Equilibria.lean#L255).
 
 > The potential energy of the simple pendulum is at most the total energy along every lift of
 > the angle.
@@ -240,7 +240,7 @@ lemma potentialEnergy_le_energy (θ : Time → EuclideanSpace ℝ (Fin 1)) (t : 
 > `2 m g ℓ`; the velocity being continuous, it keeps a fixed sign, and the motion is a rotation
 > over the top — though only the non-vanishing is proved here.
 
-**`ClassicalMechanics.SimplePendulum.neg_one_lt_cos_of_energy_lt`**, a lemma, [line 280](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/ClassicalMechanics/Pendulum/SimplePendulum/Equilibria.lean#L280).
+**`ClassicalMechanics.SimplePendulum.neg_one_lt_cos_of_energy_lt`**, a lemma, [line 280](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/ClassicalMechanics/Pendulum/SimplePendulum/Equilibria.lean#L280).
 
 > Libration: along a smooth lift of the angle satisfying the equation of motion, with energy
 > below the separatrix energy, the cosine of the angle stays strictly above `-1` — the bob
@@ -252,7 +252,7 @@ lemma neg_one_lt_cos_of_energy_lt (θ : Time → EuclideanSpace ℝ (Fin 1))
     (hE : S.energy θ 0 < S.separatrixEnergy) (t : Time) : -1 < Real.cos (θ t 0)
 ```
 
-**`ClassicalMechanics.SimplePendulum.deriv_ne_zero_of_energy_gt`**, a lemma, [line 293](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/ClassicalMechanics/Pendulum/SimplePendulum/Equilibria.lean#L293).
+**`ClassicalMechanics.SimplePendulum.deriv_ne_zero_of_energy_gt`**, a lemma, [line 293](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/ClassicalMechanics/Pendulum/SimplePendulum/Equilibria.lean#L293).
 
 > Rotation: along a smooth lift of the angle satisfying the equation of motion, with energy
 > above the separatrix energy, the angular velocity never vanishes — the bob never halts.
@@ -270,7 +270,7 @@ lemma deriv_ne_zero_of_energy_gt (θ : Time → EuclideanSpace ℝ (Fin 1))
 > librating bob halts at the extremes of its arc before swinging back; by the rotation theorem of
 > B.3 they can occur only at energies not above the separatrix energy.
 
-**`ClassicalMechanics.SimplePendulum.potentialEnergy_eq_energy_of_deriv_eq_zero`**, a lemma, [line 321](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/ClassicalMechanics/Pendulum/SimplePendulum/Equilibria.lean#L321).
+**`ClassicalMechanics.SimplePendulum.potentialEnergy_eq_energy_of_deriv_eq_zero`**, a lemma, [line 321](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/ClassicalMechanics/Pendulum/SimplePendulum/Equilibria.lean#L321).
 
 > Turning points: along a smooth lift of the angle satisfying the equation of motion, at an
 > instant where the angular velocity vanishes, the potential energy equals the conserved total
@@ -288,4 +288,4 @@ lemma potentialEnergy_eq_energy_of_deriv_eq_zero (θ : Time → EuclideanSpace �
 
 ## Sources
 
-- [Physlib/ClassicalMechanics/Pendulum/SimplePendulum/Equilibria.lean at 2a1dfe43](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/ClassicalMechanics/Pendulum/SimplePendulum/Equilibria.lean)
+- [Physlib/ClassicalMechanics/Pendulum/SimplePendulum/Equilibria.lean at 8c87bdfb](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/ClassicalMechanics/Pendulum/SimplePendulum/Equilibria.lean)

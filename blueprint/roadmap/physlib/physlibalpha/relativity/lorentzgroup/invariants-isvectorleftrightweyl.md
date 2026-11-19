@@ -8,7 +8,7 @@ proof: formalized
 
 # Lorentz invariants of a four-vector index and a left-right Weyl pair
 
-The module `PhyslibAlpha.Relativity.LorentzGroup.Invariants.IsVectorLeftRightWeyl`, [PhyslibAlpha/Relativity/LorentzGroup/Invariants/IsVectorLeftRightWeyl.lean](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Relativity/LorentzGroup/Invariants/IsVectorLeftRightWeyl.lean): 31 declarations, 30 with a docstring.
+The module `PhyslibAlpha.Relativity.LorentzGroup.Invariants.IsVectorLeftRightWeyl`, [PhyslibAlpha/Relativity/LorentzGroup/Invariants/IsVectorLeftRightWeyl.lean](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Relativity/LorentzGroup/Invariants/IsVectorLeftRightWeyl.lean): 31 declarations, 30 with a docstring.
 
 ## i. Overview
 
@@ -50,7 +50,7 @@ The module `PhyslibAlpha.Relativity.LorentzGroup.Invariants.IsVectorLeftRightWey
 
 ## A. Vector-Weyl families as equivariant maps
 
-**`Lorentz.IsVectorLeftRightWeyl`**, an abbrev, [line 77](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Relativity/LorentzGroup/Invariants/IsVectorLeftRightWeyl.lean#L77).
+**`Lorentz.IsVectorLeftRightWeyl`**, an abbrev, [line 77](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Relativity/LorentzGroup/Invariants/IsVectorLeftRightWeyl.lean#L77).
 
 > A family with a four-vector index and a left- and a right-handed Weyl index `T^{μ α α'}`:
 > an equivariant linear map out of `ℂT[.up, .upL, .upR]`.
@@ -66,7 +66,7 @@ abbrev IsVectorLeftRightWeyl (B : Type*) [AddCommMonoid B] [Module ℂ B]
 > the vector index, by the matrix of `g` on the left Weyl index and by its complex conjugate on
 > the right one.
 
-**`Lorentz.IsVectorLeftRightWeyl.repLorentz_map_indexBasis`**, a lemma, [line 102](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Relativity/LorentzGroup/Invariants/IsVectorLeftRightWeyl.lean#L102).
+**`Lorentz.IsVectorLeftRightWeyl.repLorentz_map_indexBasis`**, a lemma, [line 102](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Relativity/LorentzGroup/Invariants/IsVectorLeftRightWeyl.lean#L102).
 
 > The components of an equivariant map are moved as `T^{μ α α'}`, the summed index first in
 > each factor.
@@ -78,7 +78,7 @@ lemma repLorentz_map_indexBasis (g : SL(2,ℂ)) (d : (Fin 1 ⊕ Fin 3) × Fin 2 
         * (g.1 e.2.1 d.2.1 * star (g.1 e.2.2 d.2.2))) • f (indexBasis e)
 ```
 
-**`Lorentz.IsVectorLeftRightWeyl.repLorentz_sum_smul`**, a lemma, [line 118](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Relativity/LorentzGroup/Invariants/IsVectorLeftRightWeyl.lean#L118).
+**`Lorentz.IsVectorLeftRightWeyl.repLorentz_sum_smul`**, a lemma, [line 118](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Relativity/LorentzGroup/Invariants/IsVectorLeftRightWeyl.lean#L118).
 
 > Moving a contraction of the Weyl pair at vector index `μ`: the vector index moves by the
 > Lorentz matrix and the coefficients of the Weyl pair by the matrix of `g` and its complex
@@ -99,7 +99,7 @@ lemma repLorentz_sum_smul (g : SL(2,ℂ)) (μ : Fin 1 ⊕ Fin 3) (c : Fin 2 × F
 > rank-two Lorentz family. By Fierz completeness the contraction is invertible, so its span is the
 > range of `f`, and the image of the metric under its map is `f σ^^^`.
 
-**`Lorentz.IsVectorLeftRightWeyl.vectorPair`**, a def, [line 147](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Relativity/LorentzGroup/Invariants/IsVectorLeftRightWeyl.lean#L147).
+**`Lorentz.IsVectorLeftRightWeyl.vectorPair`**, a def, [line 147](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Relativity/LorentzGroup/Invariants/IsVectorLeftRightWeyl.lean#L147).
 
 > The family of two four-vector indices obtained by contracting the Weyl pair of the
 > components of `f` against the covariant Pauli matrices.
@@ -109,7 +109,7 @@ noncomputable def vectorPair (f : ℂT[.up, .upL, .upR] →ₗ[ℂ] B) :
     (Fin 2 → Fin 1 ⊕ Fin 3) → B
 ```
 
-**`Lorentz.IsVectorLeftRightWeyl.isLorentzCovariant_vectorPair`**, a lemma, [line 154](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Relativity/LorentzGroup/Invariants/IsVectorLeftRightWeyl.lean#L154).
+**`Lorentz.IsVectorLeftRightWeyl.isLorentzCovariant_vectorPair`**, a lemma, [line 154](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Relativity/LorentzGroup/Invariants/IsVectorLeftRightWeyl.lean#L154).
 
 > The reduced family is a rank-two Lorentz family: the intertwining identity
 > `SL2C.sum_pauliLower_mul_sl2c` carries the Weyl pair into a second vector index.
@@ -119,7 +119,7 @@ lemma isLorentzCovariant_vectorPair :
     IsLorentzCovariant 2 B repLorentz (ofComponents (vectorPair f))
 ```
 
-**`Lorentz.IsVectorLeftRightWeyl.map_indexBasis_eq_sum_vectorPair`**, a lemma, [line 170](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Relativity/LorentzGroup/Invariants/IsVectorLeftRightWeyl.lean#L170).
+**`Lorentz.IsVectorLeftRightWeyl.map_indexBasis_eq_sum_vectorPair`**, a lemma, [line 170](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Relativity/LorentzGroup/Invariants/IsVectorLeftRightWeyl.lean#L170).
 
 > The reduction is invertible: by the Fierz completeness relation each component of `f` is
 > recovered from the reduced family.
@@ -131,7 +131,7 @@ lemma map_indexBasis_eq_sum_vectorPair (f : ℂT[.up, .upL, .upR] →ₗ[ℂ] B)
       ((2 : ℂ)⁻¹ * PauliMatrix.pauliLower ρ b.2 b.1) • vectorPair f ![μ, ρ]
 ```
 
-**`Lorentz.IsVectorLeftRightWeyl.span_range_vectorPair`**, a lemma, [line 199](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Relativity/LorentzGroup/Invariants/IsVectorLeftRightWeyl.lean#L199).
+**`Lorentz.IsVectorLeftRightWeyl.span_range_vectorPair`**, a lemma, [line 199](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Relativity/LorentzGroup/Invariants/IsVectorLeftRightWeyl.lean#L199).
 
 > The reduction does not change the span: the reduced family spans the range of `f`.
 
@@ -140,7 +140,7 @@ lemma span_range_vectorPair (f : ℂT[.up, .upL, .upR] →ₗ[ℂ] B) :
     Submodule.span ℂ (Set.range (vectorPair f)) = LinearMap.range f
 ```
 
-**`Lorentz.IsVectorLeftRightWeyl.ofComponents_vectorPair_metric`**, a lemma, [line 210](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Relativity/LorentzGroup/Invariants/IsVectorLeftRightWeyl.lean#L210).
+**`Lorentz.IsVectorLeftRightWeyl.ofComponents_vectorPair_metric`**, a lemma, [line 210](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Relativity/LorentzGroup/Invariants/IsVectorLeftRightWeyl.lean#L210).
 
 > The image of the metric under the map of the reduced family is the image `f σ^^^` of the
 > Pauli tensor: the two lowerings of the vector index cancel, so no sign and no scalar appear.
@@ -155,7 +155,7 @@ lemma ofComponents_vectorPair_metric (f : ℂT[.up, .upL, .upR] →ₗ[ℂ] B) :
 > `RankTwo` classifies the invariants of the range of `ofComponents (vectorPair f)`, which is the
 > range of `f`, and the image of the metric under it is `f σ^^^`.
 
-**`Lorentz.IsVectorLeftRightWeyl.repLorentz_map_pauliMatrix`**, a lemma, [line 238](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Relativity/LorentzGroup/Invariants/IsVectorLeftRightWeyl.lean#L238).
+**`Lorentz.IsVectorLeftRightWeyl.repLorentz_map_pauliMatrix`**, a lemma, [line 238](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Relativity/LorentzGroup/Invariants/IsVectorLeftRightWeyl.lean#L238).
 
 > The image `f σ^^^` of the Pauli tensor is Lorentz invariant.
 
@@ -163,7 +163,7 @@ lemma ofComponents_vectorPair_metric (f : ℂT[.up, .upL, .upR] →ₗ[ℂ] B) :
 lemma repLorentz_map_pauliMatrix (g : SL(2,ℂ)) : repLorentz g (f σ^^^) = f σ^^^
 ```
 
-**`Lorentz.IsVectorLeftRightWeyl.exists_smul_map_pauliMatrix_add_of_invariant`**, a lemma, [line 245](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Relativity/LorentzGroup/Invariants/IsVectorLeftRightWeyl.lean#L245).
+**`Lorentz.IsVectorLeftRightWeyl.exists_smul_map_pauliMatrix_add_of_invariant`**, a lemma, [line 245](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Relativity/LorentzGroup/Invariants/IsVectorLeftRightWeyl.lean#L245).
 
 > Every Lorentz invariant of `LinearMap.range f ⊔ S`, for `S` a Lorentz-stable submodule, is a
 > multiple of the image `f σ^^^` of the Pauli tensor plus an element of `S`: the shape of the
@@ -176,7 +176,7 @@ lemma exists_smul_map_pauliMatrix_add_of_invariant (S : Submodule ℂ B)
     ∃ a : ℂ, ∃ y ∈ S, x = a • f σ^^^ + y
 ```
 
-**`Lorentz.IsVectorLeftRightWeyl.invariantReductionToSpan`**, a def, [line 257](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Relativity/LorentzGroup/Invariants/IsVectorLeftRightWeyl.lean#L257).
+**`Lorentz.IsVectorLeftRightWeyl.invariantReductionToSpan`**, a def, [line 257](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Relativity/LorentzGroup/Invariants/IsVectorLeftRightWeyl.lean#L257).
 
 > The Lorentz invariants of the range of `f` reduce to the span of the image `f σ^^^` of the
 > Pauli tensor.
@@ -192,7 +192,7 @@ noncomputable def invariantReductionToSpan :
 > `e_μ ⊗ e_α ⊗ e_α'` to `T (μ, α, α')`, and it is equivariant when the vectors are moved as the
 > basis tensors are.
 
-**`Lorentz.ofVectorComponents`**, a def, [line 284](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Relativity/LorentzGroup/Invariants/IsVectorLeftRightWeyl.lean#L284).
+**`Lorentz.ofVectorComponents`**, a def, [line 284](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Relativity/LorentzGroup/Invariants/IsVectorLeftRightWeyl.lean#L284).
 
 > The linear map out of `ℂT[.up, .upL, .upR]` sending `e_μ ⊗ e_α ⊗ e_α'` to
 > `T (μ, α, α')`.
@@ -202,14 +202,14 @@ noncomputable def ofVectorComponents (T : (Fin 1 ⊕ Fin 3) × Fin 2 × Fin 2 �
     ℂT[.up, .upL, .upR] →ₗ[ℂ] B
 ```
 
-**`Lorentz.ofVectorComponents_indexBasis`**, a lemma, [line 289](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Relativity/LorentzGroup/Invariants/IsVectorLeftRightWeyl.lean#L289).
+**`Lorentz.ofVectorComponents_indexBasis`**, a lemma, [line 289](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Relativity/LorentzGroup/Invariants/IsVectorLeftRightWeyl.lean#L289).
 
 ```lean
 lemma ofVectorComponents_indexBasis (T : (Fin 1 ⊕ Fin 3) × Fin 2 × Fin 2 → B)
     (d : (Fin 1 ⊕ Fin 3) × Fin 2 × Fin 2) : ofVectorComponents T (indexBasis d) = T d
 ```
 
-**`Lorentz.range_ofVectorComponents`**, a lemma, [line 294](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Relativity/LorentzGroup/Invariants/IsVectorLeftRightWeyl.lean#L294).
+**`Lorentz.range_ofVectorComponents`**, a lemma, [line 294](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Relativity/LorentzGroup/Invariants/IsVectorLeftRightWeyl.lean#L294).
 
 > The range of `ofVectorComponents T` is the span of the vectors `T d`.
 
@@ -218,7 +218,7 @@ lemma range_ofVectorComponents (T : (Fin 1 ⊕ Fin 3) × Fin 2 × Fin 2 → B) :
     LinearMap.range (ofVectorComponents T) = Submodule.span ℂ (Set.range T)
 ```
 
-**`Lorentz.isVectorLeftRightWeyl_ofVectorComponents`**, a lemma, [line 301](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Relativity/LorentzGroup/Invariants/IsVectorLeftRightWeyl.lean#L301).
+**`Lorentz.isVectorLeftRightWeyl_ofVectorComponents`**, a lemma, [line 301](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Relativity/LorentzGroup/Invariants/IsVectorLeftRightWeyl.lean#L301).
 
 > `ofVectorComponents T` is equivariant when `T (μ, α, α')` is moved as `T^{μ α α'}`: the
 > vector index by the Lorentz matrix, the left index by the matrix of `g` and the right index by
@@ -242,7 +242,7 @@ lemma isVectorLeftRightWeyl_ofVectorComponents {repLorentz : Representation ℂ 
 > `ℂT[.up, .upL, .upR]` which carries `σ^^^` to `σ^__`, so composing with it turns such a family
 > into an `IsVectorLeftRightWeyl` family with the same range, and section D applies.
 
-**`Lorentz.IsVectorDualLeftRightWeyl`**, an abbrev, [line 339](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Relativity/LorentzGroup/Invariants/IsVectorLeftRightWeyl.lean#L339).
+**`Lorentz.IsVectorDualLeftRightWeyl`**, an abbrev, [line 339](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Relativity/LorentzGroup/Invariants/IsVectorLeftRightWeyl.lean#L339).
 
 > A family with a four-vector index and a dual right- and a dual left-handed Weyl index
 > `T^μ{}_{α' α}`: an equivariant linear map out of `ℂT[.up, .downR, .downL]`.
@@ -252,7 +252,7 @@ abbrev IsVectorDualLeftRightWeyl (B : Type*) [AddCommMonoid B] [Module ℂ B]
     (repLorentz : Representation ℂ SL(2,ℂ) B) (f : ℂT[.up, .downR, .downL] →ₗ[ℂ] B) : Prop
 ```
 
-**`Lorentz.dualWeylMap`**, a def, [line 346](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Relativity/LorentzGroup/Invariants/IsVectorLeftRightWeyl.lean#L346).
+**`Lorentz.dualWeylMap`**, a def, [line 346](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Relativity/LorentzGroup/Invariants/IsVectorLeftRightWeyl.lean#L346).
 
 > Dualising the two Weyl indices of a tensor with a four-vector index and a left-right Weyl
 > pair, the dual indices listed in the order of `σ^__`.
@@ -261,7 +261,7 @@ abbrev IsVectorDualLeftRightWeyl (B : Type*) [AddCommMonoid B] [Module ℂ B]
 noncomputable def dualWeylMap : ℂT[.up, .upL, .upR] →ₗ[ℂ] ℂT[.up, .downR, .downL]
 ```
 
-**`Lorentz.dualWeylMap_equivariant`**, a lemma, [line 352](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Relativity/LorentzGroup/Invariants/IsVectorLeftRightWeyl.lean#L352).
+**`Lorentz.dualWeylMap_equivariant`**, a lemma, [line 352](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Relativity/LorentzGroup/Invariants/IsVectorLeftRightWeyl.lean#L352).
 
 > Dualising the Weyl indices commutes with the action of `SL(2,ℂ)`.
 
@@ -270,7 +270,7 @@ lemma dualWeylMap_equivariant (g : SL(2,ℂ)) (t : ℂT[.up, .upL, .upR]) :
     dualWeylMap (g • t) = g • dualWeylMap t
 ```
 
-**`Lorentz.dualWeylMap_pauliMatrix`**, a lemma, [line 360](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Relativity/LorentzGroup/Invariants/IsVectorLeftRightWeyl.lean#L360).
+**`Lorentz.dualWeylMap_pauliMatrix`**, a lemma, [line 360](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Relativity/LorentzGroup/Invariants/IsVectorLeftRightWeyl.lean#L360).
 
 > Dualising the Weyl indices of `σ^^^` gives `σ^__`.
 
@@ -278,7 +278,7 @@ lemma dualWeylMap_equivariant (g : SL(2,ℂ)) (t : ℂT[.up, .upL, .upR]) :
 lemma dualWeylMap_pauliMatrix : dualWeylMap σ^^^ = σ^__
 ```
 
-**`Lorentz.dualWeylMap_surjective`**, a lemma, [line 368](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Relativity/LorentzGroup/Invariants/IsVectorLeftRightWeyl.lean#L368).
+**`Lorentz.dualWeylMap_surjective`**, a lemma, [line 368](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Relativity/LorentzGroup/Invariants/IsVectorLeftRightWeyl.lean#L368).
 
 > Dualising the Weyl indices is surjective: the dualisations are inverted by raising the
 > indices again, and the relabelling by its inverse.
@@ -287,7 +287,7 @@ lemma dualWeylMap_pauliMatrix : dualWeylMap σ^^^ = σ^__
 lemma dualWeylMap_surjective : Function.Surjective dualWeylMap
 ```
 
-**`Lorentz.IsVectorDualLeftRightWeyl.isVectorLeftRightWeyl_comp_dualWeylMap`**, a lemma, [line 387](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Relativity/LorentzGroup/Invariants/IsVectorLeftRightWeyl.lean#L387).
+**`Lorentz.IsVectorDualLeftRightWeyl.isVectorLeftRightWeyl_comp_dualWeylMap`**, a lemma, [line 387](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Relativity/LorentzGroup/Invariants/IsVectorLeftRightWeyl.lean#L387).
 
 > Composing with the dualisation of the Weyl indices gives a family with a four-vector index
 > and a left-right Weyl pair.
@@ -297,7 +297,7 @@ lemma isVectorLeftRightWeyl_comp_dualWeylMap :
     IsVectorLeftRightWeyl B repLorentz (f ∘ₗ dualWeylMap)
 ```
 
-**`Lorentz.IsVectorDualLeftRightWeyl.range_comp_dualWeylMap`**, a lemma, [line 393](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Relativity/LorentzGroup/Invariants/IsVectorLeftRightWeyl.lean#L393).
+**`Lorentz.IsVectorDualLeftRightWeyl.range_comp_dualWeylMap`**, a lemma, [line 393](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Relativity/LorentzGroup/Invariants/IsVectorLeftRightWeyl.lean#L393).
 
 > Composing with the dualisation of the Weyl indices does not change the range.
 
@@ -305,7 +305,7 @@ lemma isVectorLeftRightWeyl_comp_dualWeylMap :
 lemma range_comp_dualWeylMap : LinearMap.range (f ∘ₗ dualWeylMap) = LinearMap.range f
 ```
 
-**`Lorentz.IsVectorDualLeftRightWeyl.exists_smul_map_pauliContrDown_add_of_invariant`**, a lemma, [line 400](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Relativity/LorentzGroup/Invariants/IsVectorLeftRightWeyl.lean#L400).
+**`Lorentz.IsVectorDualLeftRightWeyl.exists_smul_map_pauliContrDown_add_of_invariant`**, a lemma, [line 400](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Relativity/LorentzGroup/Invariants/IsVectorLeftRightWeyl.lean#L400).
 
 > Every Lorentz invariant of `LinearMap.range f ⊔ S`, for `S` a Lorentz-stable submodule, is a
 > multiple of the image `f σ^__` of the Pauli tensor with dual Weyl indices plus an element of
@@ -318,7 +318,7 @@ lemma exists_smul_map_pauliContrDown_add_of_invariant (S : Submodule ℂ B)
     ∃ a : ℂ, ∃ y ∈ S, x = a • f σ^__ + y
 ```
 
-**`Lorentz.IsVectorDualLeftRightWeyl.invariantReductionToSpan`**, a def, [line 411](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Relativity/LorentzGroup/Invariants/IsVectorLeftRightWeyl.lean#L411).
+**`Lorentz.IsVectorDualLeftRightWeyl.invariantReductionToSpan`**, a def, [line 411](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Relativity/LorentzGroup/Invariants/IsVectorLeftRightWeyl.lean#L411).
 
 > The Lorentz invariants of the range of `f` reduce to the span of the image `f σ^__` of the
 > Pauli tensor with dual Weyl indices.
@@ -335,7 +335,7 @@ noncomputable def invariantReductionToSpan :
 > `e_μ ⊗ e_α' ⊗ e_α` to `T (μ, α, α')`, and it is equivariant when the vectors are moved as the
 > basis tensors are.
 
-**`Lorentz.dualIndexEquiv`**, a def, [line 440](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Relativity/LorentzGroup/Invariants/IsVectorLeftRightWeyl.lean#L440).
+**`Lorentz.dualIndexEquiv`**, a def, [line 440](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Relativity/LorentzGroup/Invariants/IsVectorLeftRightWeyl.lean#L440).
 
 > The component indices of a tensor of `ℂT[.up, .downR, .downL]`, as a four-vector index, a
 > dual left-handed and a dual right-handed Weyl index.
@@ -345,7 +345,7 @@ def dualIndexEquiv : ComponentIdx (S := complexLorentzTensor) ![.up, .downR, .do
     (Fin 1 ⊕ Fin 3) × Fin 2 × Fin 2
 ```
 
-**`Lorentz.ofDualVectorComponents`**, a def, [line 451](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Relativity/LorentzGroup/Invariants/IsVectorLeftRightWeyl.lean#L451).
+**`Lorentz.ofDualVectorComponents`**, a def, [line 451](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Relativity/LorentzGroup/Invariants/IsVectorLeftRightWeyl.lean#L451).
 
 > The linear map out of `ℂT[.up, .downR, .downL]` sending `e_μ ⊗ e_α' ⊗ e_α` to
 > `T (μ, α, α')`.
@@ -355,7 +355,7 @@ noncomputable def ofDualVectorComponents (T : (Fin 1 ⊕ Fin 3) × Fin 2 × Fin 
     ℂT[.up, .downR, .downL] →ₗ[ℂ] B
 ```
 
-**`Lorentz.range_ofDualVectorComponents`**, a lemma, [line 456](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Relativity/LorentzGroup/Invariants/IsVectorLeftRightWeyl.lean#L456).
+**`Lorentz.range_ofDualVectorComponents`**, a lemma, [line 456](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Relativity/LorentzGroup/Invariants/IsVectorLeftRightWeyl.lean#L456).
 
 > The range of `ofDualVectorComponents T` is the span of the vectors `T d`.
 
@@ -364,7 +364,7 @@ lemma range_ofDualVectorComponents (T : (Fin 1 ⊕ Fin 3) × Fin 2 × Fin 2 → 
     LinearMap.range (ofDualVectorComponents T) = Submodule.span ℂ (Set.range T)
 ```
 
-**`Lorentz.ofDualVectorComponents_mem_span`**, a lemma, [line 462](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Relativity/LorentzGroup/Invariants/IsVectorLeftRightWeyl.lean#L462).
+**`Lorentz.ofDualVectorComponents_mem_span`**, a lemma, [line 462](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Relativity/LorentzGroup/Invariants/IsVectorLeftRightWeyl.lean#L462).
 
 > The image of `ofDualVectorComponents T` lies in the span of the vectors `T d`.
 
@@ -374,7 +374,7 @@ lemma ofDualVectorComponents_mem_span (T : (Fin 1 ⊕ Fin 3) × Fin 2 × Fin 2 �
     ofDualVectorComponents T t ∈ Submodule.span ℂ (Set.range T)
 ```
 
-**`Lorentz.ofDualVectorComponents_sum`**, a lemma, [line 469](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Relativity/LorentzGroup/Invariants/IsVectorLeftRightWeyl.lean#L469).
+**`Lorentz.ofDualVectorComponents_sum`**, a lemma, [line 469](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Relativity/LorentzGroup/Invariants/IsVectorLeftRightWeyl.lean#L469).
 
 > `ofDualVectorComponents` of a sum of families is the sum of the maps.
 
@@ -384,7 +384,7 @@ lemma ofDualVectorComponents_sum {ι : Type*} (s : Finset ι)
     ofDualVectorComponents (fun d => ∑ i ∈ s, T i d) = ∑ i ∈ s, ofDualVectorComponents (T i)
 ```
 
-**`Lorentz.isVectorDualLeftRightWeyl_ofDualVectorComponents`**, a lemma, [line 477](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Relativity/LorentzGroup/Invariants/IsVectorLeftRightWeyl.lean#L477).
+**`Lorentz.isVectorDualLeftRightWeyl_ofDualVectorComponents`**, a lemma, [line 477](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Relativity/LorentzGroup/Invariants/IsVectorLeftRightWeyl.lean#L477).
 
 > `ofDualVectorComponents T` is equivariant when `T (μ, α, α')` is moved as `T^μ{}_{α α'}`: the
 > vector index by the Lorentz matrix, the dual left index by `(g⁻¹)ᵀ` and the dual right index
@@ -400,7 +400,7 @@ lemma isVectorDualLeftRightWeyl_ofDualVectorComponents
     IsVectorDualLeftRightWeyl B repLorentz (ofDualVectorComponents T)
 ```
 
-**`Lorentz.IsVectorDualLeftRightWeyl.invariantReductionToComponentSpan`**, a def, [line 497](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Relativity/LorentzGroup/Invariants/IsVectorLeftRightWeyl.lean#L497).
+**`Lorentz.IsVectorDualLeftRightWeyl.invariantReductionToComponentSpan`**, a def, [line 497](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Relativity/LorentzGroup/Invariants/IsVectorLeftRightWeyl.lean#L497).
 
 > For a family whose map is equivariant, the Lorentz invariants of the span of the family
 > reduce to the span of the image `ofDualVectorComponents T σ^__` of the Pauli tensor with dual
@@ -422,4 +422,4 @@ noncomputable def IsVectorDualLeftRightWeyl.invariantReductionToComponentSpan
 
 ## Sources
 
-- [PhyslibAlpha/Relativity/LorentzGroup/Invariants/IsVectorLeftRightWeyl.lean at 2a1dfe43](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Relativity/LorentzGroup/Invariants/IsVectorLeftRightWeyl.lean)
+- [PhyslibAlpha/Relativity/LorentzGroup/Invariants/IsVectorLeftRightWeyl.lean at 8c87bdfb](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Relativity/LorentzGroup/Invariants/IsVectorLeftRightWeyl.lean)

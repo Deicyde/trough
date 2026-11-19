@@ -8,7 +8,7 @@ proof: formalized
 
 # The Free Particle
 
-The module `Physlib.ClassicalMechanics.FreeParticle.Basic`, [Physlib/ClassicalMechanics/FreeParticle/Basic.lean](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/ClassicalMechanics/FreeParticle/Basic.lean): 11 declarations, 11 with a docstring, 2 listed as significant.
+The module `Physlib.ClassicalMechanics.FreeParticle.Basic`, [Physlib/ClassicalMechanics/FreeParticle/Basic.lean](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/ClassicalMechanics/FreeParticle/Basic.lean): 11 declarations, 11 with a docstring, 2 listed as significant.
 
 ## i. Overview
 
@@ -39,7 +39,7 @@ The module `Physlib.ClassicalMechanics.FreeParticle.Basic`, [Physlib/ClassicalMe
 
 > * None.
 
-**`ClassicalMechanics.FreeParticle`**, a structure, [line 75](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/ClassicalMechanics/FreeParticle/Basic.lean#L75).
+**`ClassicalMechanics.FreeParticle`**, a structure, [line 75](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/ClassicalMechanics/FreeParticle/Basic.lean#L75).
 
 > A classical free particle with positive mass.
 >
@@ -63,7 +63,7 @@ structure FreeParticle where
   mass_pos : 0 < mass
 ```
 
-**`ClassicalMechanics.FreeParticle.Trajectory`**, an abbrev, [line 91](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/ClassicalMechanics/FreeParticle/Basic.lean#L91).
+**`ClassicalMechanics.FreeParticle.Trajectory`**, an abbrev, [line 91](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/ClassicalMechanics/FreeParticle/Basic.lean#L91).
 
 > A trajectory is a time-dependent position function describing the motion
 > of the particle in one spatial dimension. Defining the trajectory.
@@ -72,7 +72,7 @@ structure FreeParticle where
 abbrev Trajectory
 ```
 
-**`ClassicalMechanics.FreeParticle.velocity`**, a def, [line 100](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/ClassicalMechanics/FreeParticle/Basic.lean#L100).
+**`ClassicalMechanics.FreeParticle.velocity`**, a def, [line 100](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/ClassicalMechanics/FreeParticle/Basic.lean#L100).
 
 > The velocity of a trajectory at a given time.
 > This is defined as the time derivative of the position function.
@@ -81,7 +81,7 @@ abbrev Trajectory
 def velocity (s : FreeParticle) (q : Trajectory) (t : Time) : ℝ
 ```
 
-**`ClassicalMechanics.FreeParticle.linearMomentum`**, a def, [line 110](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/ClassicalMechanics/FreeParticle/Basic.lean#L110).
+**`ClassicalMechanics.FreeParticle.linearMomentum`**, a def, [line 110](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/ClassicalMechanics/FreeParticle/Basic.lean#L110).
 
 > The linear momentum of the free particle along a trajectory.
 >
@@ -92,7 +92,7 @@ def velocity (s : FreeParticle) (q : Trajectory) (t : Time) : ℝ
 def linearMomentum (s : FreeParticle) (q : Trajectory) (t : Time) : ℝ
 ```
 
-**`ClassicalMechanics.FreeParticle.kineticEnergy`**, a def, [line 120](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/ClassicalMechanics/FreeParticle/Basic.lean#L120).
+**`ClassicalMechanics.FreeParticle.kineticEnergy`**, a def, [line 120](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/ClassicalMechanics/FreeParticle/Basic.lean#L120).
 
 > The kinetic energy of the free particle along a trajectory.
 >
@@ -103,7 +103,7 @@ def linearMomentum (s : FreeParticle) (q : Trajectory) (t : Time) : ℝ
 def kineticEnergy (s : FreeParticle) (q : Trajectory) (t : Time) : ℝ
 ```
 
-**`ClassicalMechanics.FreeParticle.NewtonsSecondLaw`**, a def, [line 130](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/ClassicalMechanics/FreeParticle/Basic.lean#L130).
+**`ClassicalMechanics.FreeParticle.NewtonsSecondLaw`**, a def, [line 130](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/ClassicalMechanics/FreeParticle/Basic.lean#L130).
 
 > Newton's second law for the free particle.
 >
@@ -115,7 +115,7 @@ def kineticEnergy (s : FreeParticle) (q : Trajectory) (t : Time) : ℝ
 def NewtonsSecondLaw (s : FreeParticle) (q : Trajectory) (t : Time) : Prop
 ```
 
-**`ClassicalMechanics.FreeParticle.accel_zero`**, a lemma, [line 141](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/ClassicalMechanics/FreeParticle/Basic.lean#L141).
+**`ClassicalMechanics.FreeParticle.accel_zero`**, a lemma, [line 141](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/ClassicalMechanics/FreeParticle/Basic.lean#L141).
 
 > Newton's second law for a free particle implies that the acceleration
 > vanishes identically.
@@ -129,7 +129,7 @@ lemma accel_zero (s : FreeParticle) (q : Trajectory) (h : ∀ t, s.NewtonsSecond
     ∀ t, deriv (deriv q) t = 0
 ```
 
-**`ClassicalMechanics.FreeParticle.velocity_const_of_zero_acc`**, a lemma, [line 157](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/ClassicalMechanics/FreeParticle/Basic.lean#L157).
+**`ClassicalMechanics.FreeParticle.velocity_const_of_zero_acc`**, a lemma, [line 157](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/ClassicalMechanics/FreeParticle/Basic.lean#L157).
 
 > If the acceleration of a trajectory vanishes everywhere, then the
 > velocity is constant.
@@ -147,7 +147,7 @@ lemma velocity_const_of_zero_acc (q : Time → ℝ) (h : ∀ t, deriv (deriv q) 
     (hcont : ContDiff ℝ 2 q) : ∃ v₀, ∀ t, deriv q t = v₀
 ```
 
-**`ClassicalMechanics.FreeParticle.linearMomentum_conserved_of_velocity_const`**, a lemma, [line 171](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/ClassicalMechanics/FreeParticle/Basic.lean#L171).
+**`ClassicalMechanics.FreeParticle.linearMomentum_conserved_of_velocity_const`**, a lemma, [line 171](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/ClassicalMechanics/FreeParticle/Basic.lean#L171).
 
 > If a free-particle trajectory has constant velocity, then its linear momentum is constant.
 
@@ -157,7 +157,7 @@ lemma linearMomentum_conserved_of_velocity_const (s : FreeParticle) (q : Traject
     ∃ p, ∀ t, s.linearMomentum q t = p
 ```
 
-**`ClassicalMechanics.FreeParticle.linearMomentum_conserved`**, a theorem, [line 183](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/ClassicalMechanics/FreeParticle/Basic.lean#L183). Listed as a significant result in [Theorems.txt](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/scripts/lint/exemptions/Theorems.txt).
+**`ClassicalMechanics.FreeParticle.linearMomentum_conserved`**, a theorem, [line 183](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/ClassicalMechanics/FreeParticle/Basic.lean#L183). Listed as a significant result in [Theorems.txt](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/scripts/lint/exemptions/Theorems.txt).
 
 > A free particle satisfying the equation of motion conserves linear momentum.
 >
@@ -170,7 +170,7 @@ theorem linearMomentum_conserved (s : FreeParticle) (q : Trajectory)
     ∃ p, ∀ t, s.linearMomentum q t = p
 ```
 
-**`ClassicalMechanics.FreeParticle.kineticEnergy_conserved`**, a theorem, [line 198](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/ClassicalMechanics/FreeParticle/Basic.lean#L198). Listed as a significant result in [Theorems.txt](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/scripts/lint/exemptions/Theorems.txt).
+**`ClassicalMechanics.FreeParticle.kineticEnergy_conserved`**, a theorem, [line 198](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/ClassicalMechanics/FreeParticle/Basic.lean#L198). Listed as a significant result in [Theorems.txt](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/scripts/lint/exemptions/Theorems.txt).
 
 > A free particle satisfying the equation of motion conserves kinetic energy.
 >
@@ -192,4 +192,4 @@ theorem kineticEnergy_conserved (s : FreeParticle) (q : Trajectory)
 
 ## Sources
 
-- [Physlib/ClassicalMechanics/FreeParticle/Basic.lean at 2a1dfe43](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/ClassicalMechanics/FreeParticle/Basic.lean)
+- [Physlib/ClassicalMechanics/FreeParticle/Basic.lean at 8c87bdfb](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/ClassicalMechanics/FreeParticle/Basic.lean)

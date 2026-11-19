@@ -8,7 +8,7 @@ proof: formalized
 
 # Charged-lepton singlets (PhyslibAlpha)
 
-The module `PhyslibAlpha.Particles.StandardModel.Fermions.LeptonSinglet.Basic`, [PhyslibAlpha/Particles/StandardModel/Fermions/LeptonSinglet/Basic.lean](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/Fermions/LeptonSinglet/Basic.lean): 22 declarations (2 instances with no name), 20 with a docstring.
+The module `PhyslibAlpha.Particles.StandardModel.Fermions.LeptonSinglet.Basic`, [PhyslibAlpha/Particles/StandardModel/Fermions/LeptonSinglet/Basic.lean](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/Fermions/LeptonSinglet/Basic.lean): 22 declarations (2 instances with no name), 20 with a docstring.
 
 ## i. Overview
 
@@ -50,7 +50,7 @@ The module `PhyslibAlpha.Particles.StandardModel.Fermions.LeptonSinglet.Basic`, 
 
 ### B.1. The basis of the charged-lepton-singlet space
 
-**`StandardModel.LeptonSinglet.basis`**, a def, [line 88](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/Fermions/LeptonSinglet/Basic.lean#L88).
+**`StandardModel.LeptonSinglet.basis`**, a def, [line 88](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/Fermions/LeptonSinglet/Basic.lean#L88).
 
 > A basis on the charged-lepton singlets.
 
@@ -58,13 +58,13 @@ The module `PhyslibAlpha.Particles.StandardModel.Fermions.LeptonSinglet.Basic`, 
 noncomputable def basis : Module.Basis (Fin 2) ℂ LeptonSinglet
 ```
 
-**An instance with no name**, [line 91](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/Fermions/LeptonSinglet/Basic.lean#L91).
+**An instance with no name**, [line 91](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/Fermions/LeptonSinglet/Basic.lean#L91).
 
 ```lean
 instance : Module.Finite ℂ LeptonSinglet
 ```
 
-**An instance with no name**, [line 93](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/Fermions/LeptonSinglet/Basic.lean#L93).
+**An instance with no name**, [line 93](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/Fermions/LeptonSinglet/Basic.lean#L93).
 
 ```lean
 instance : Module.Free ℂ LeptonSinglet
@@ -75,7 +75,7 @@ instance : Module.Free ℂ LeptonSinglet
 > The Lorentz group acts through the right-handed Weyl representation, transported along the
 > identification of a charged-lepton singlet with its spinor.
 
-**`StandardModel.LeptonSinglet.repLorentzGroup_apply_basis`**, a lemma, [line 107](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/Fermions/LeptonSinglet/Basic.lean#L107).
+**`StandardModel.LeptonSinglet.repLorentzGroup_apply_basis`**, a lemma, [line 107](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/Fermions/LeptonSinglet/Basic.lean#L107).
 
 > The Lorentz action on the lepton-singlet basis: the right-handed Weyl
 > action by the entrywise conjugate matrix.
@@ -85,7 +85,7 @@ lemma repLorentzGroup_apply_basis (Λ : SL(2,ℂ)) (α : Fin 2) :
     repLorentzGroup Λ (basis α) = ∑ β, star (Λ.1 β α) • basis β
 ```
 
-**`StandardModel.LeptonSinglet.repLorentzGroup_dual_dualBasis`**, a lemma, [line 116](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/Fermions/LeptonSinglet/Basic.lean#L116).
+**`StandardModel.LeptonSinglet.repLorentzGroup_dual_dualBasis`**, a lemma, [line 116](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/Fermions/LeptonSinglet/Basic.lean#L116).
 
 > The lepton jet coordinates transform contragrediently, by the entrywise
 > conjugate of the inverse matrix.
@@ -96,7 +96,7 @@ lemma repLorentzGroup_dual_dualBasis (Λ : SL(2,ℂ)) (α : Fin 2) :
       ∑ β, star ((Λ⁻¹).1 α β) • basis.dualBasis β
 ```
 
-**`StandardModel.LeptonSinglet.repLorentzGroup_conj_apply_basis`**, a lemma, [line 125](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/Fermions/LeptonSinglet/Basic.lean#L125).
+**`StandardModel.LeptonSinglet.repLorentzGroup_conj_apply_basis`**, a lemma, [line 125](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/Fermions/LeptonSinglet/Basic.lean#L125).
 
 > The Lorentz action on the conjugate lepton basis: the coefficients are the
 > conjugates of those of the lepton action, that is, the matrix itself.
@@ -106,7 +106,7 @@ lemma repLorentzGroup_conj_apply_basis (Λ : SL(2,ℂ)) (α : Fin 2) :
     repLorentzGroup.conj Λ ((Basis.conj basis) α) = ∑ β, Λ.1 β α • (Basis.conj basis) β
 ```
 
-**`StandardModel.LeptonSinglet.repLorentzGroup_conj_dual_dualBasis`**, a lemma, [line 133](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/Fermions/LeptonSinglet/Basic.lean#L133).
+**`StandardModel.LeptonSinglet.repLorentzGroup_conj_dual_dualBasis`**, a lemma, [line 133](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/Fermions/LeptonSinglet/Basic.lean#L133).
 
 > The conjugate lepton jet coordinates transform by the inverse matrix.
 
@@ -116,7 +116,7 @@ lemma repLorentzGroup_conj_dual_dualBasis (Λ : SL(2,ℂ)) (α : Fin 2) :
       ∑ β, (Λ⁻¹).1 α β • (Basis.conj basis).dualBasis β
 ```
 
-**`StandardModel.LeptonSinglet.repLorentzGroup_neg_one`**, a lemma, [line 143](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/Fermions/LeptonSinglet/Basic.lean#L143).
+**`StandardModel.LeptonSinglet.repLorentzGroup_neg_one`**, a lemma, [line 143](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/Fermions/LeptonSinglet/Basic.lean#L143).
 
 > **The centre of `SL(2,ℂ)` acts on the charged-lepton-singlet space by `-1`**: the value
 > space carries a single Weyl-spinor index, and `-1` is not the identity on a half-integer
@@ -126,7 +126,7 @@ lemma repLorentzGroup_conj_dual_dualBasis (Λ : SL(2,ℂ)) (α : Fin 2) :
 lemma repLorentzGroup_neg_one : repLorentzGroup (-1) = -LinearMap.id
 ```
 
-**`StandardModel.LeptonSinglet.repLorentzGroup_conj_neg_one`**, a lemma, [line 151](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/Fermions/LeptonSinglet/Basic.lean#L151).
+**`StandardModel.LeptonSinglet.repLorentzGroup_conj_neg_one`**, a lemma, [line 151](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/Fermions/LeptonSinglet/Basic.lean#L151).
 
 > The centre acts on the conjugate charged-lepton-singlet space by `-1` as well:
 > conjugation does not move a real sign.
@@ -143,7 +143,7 @@ lemma repLorentzGroup_conj_neg_one : repLorentzGroup.conj (-1) = -LinearMap.id
 >
 > The formulas below expose the scalar used to compare actions and compute the kernel.
 
-**`StandardModel.LeptonSinglet.repGaugeGroupI_apply_basis`**, a lemma, [line 170](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/Fermions/LeptonSinglet/Basic.lean#L170).
+**`StandardModel.LeptonSinglet.repGaugeGroupI_apply_basis`**, a lemma, [line 170](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/Fermions/LeptonSinglet/Basic.lean#L170).
 
 > The gauge action on the lepton-singlet basis: multiplication by the hypercharge
 > scalar, the colour and weak factors acting trivially.
@@ -153,7 +153,7 @@ lemma repGaugeGroupI_apply_basis (g : GaugeGroupI) (α : Fin 2) :
     repGaugeGroupI g (basis α) = (star g.toU1.1 ^ 6 : ℂ) • basis α
 ```
 
-**`StandardModel.LeptonSinglet.repGaugeGroupI_dual_dualBasis`**, a lemma, [line 179](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/Fermions/LeptonSinglet/Basic.lean#L179).
+**`StandardModel.LeptonSinglet.repGaugeGroupI_dual_dualBasis`**, a lemma, [line 179](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/Fermions/LeptonSinglet/Basic.lean#L179).
 
 > The lepton-singlet coordinate functionals carry the contragredient gauge action: the
 > hypercharge scalar of the inverse group element.
@@ -164,7 +164,7 @@ lemma repGaugeGroupI_dual_dualBasis (g : GaugeGroupI) (α : Fin 2) :
       (star (g⁻¹).toU1.1 ^ 6 : ℂ) • basis.dualBasis α
 ```
 
-**`StandardModel.LeptonSinglet.repGaugeGroupI_conj_apply_basis`**, a lemma, [line 190](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/Fermions/LeptonSinglet/Basic.lean#L190).
+**`StandardModel.LeptonSinglet.repGaugeGroupI_conj_apply_basis`**, a lemma, [line 190](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/Fermions/LeptonSinglet/Basic.lean#L190).
 
 > The gauge action on the conjugate lepton-singlet basis: the hypercharge scalar,
 > conjugated.
@@ -175,7 +175,7 @@ lemma repGaugeGroupI_conj_apply_basis (g : GaugeGroupI) (α : Fin 2) :
       star (star g.toU1.1 ^ 6 : ℂ) • (Basis.conj basis) α
 ```
 
-**`StandardModel.LeptonSinglet.repGaugeGroupI_conj_dual_dualBasis`**, a lemma, [line 198](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/Fermions/LeptonSinglet/Basic.lean#L198).
+**`StandardModel.LeptonSinglet.repGaugeGroupI_conj_dual_dualBasis`**, a lemma, [line 198](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/Fermions/LeptonSinglet/Basic.lean#L198).
 
 > The conjugate lepton-singlet coordinate functionals carry the conjugate of the
 > contragredient gauge action.
@@ -203,7 +203,7 @@ lemma repGaugeGroupI_conj_dual_dualBasis (g : GaugeGroupI) (α : Fin 2) :
 > transformations acts on its jets purely through the hypercharge power series
 > `(star u) ^ 6`, multiplying the jet-ring factor and leaving the Weyl factor untouched.
 
-**`StandardModel.LeptonSinglet.repJetGaugeGroupI`**, a def, [line 238](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/Fermions/LeptonSinglet/Basic.lean#L238).
+**`StandardModel.LeptonSinglet.repJetGaugeGroupI`**, a def, [line 238](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/Fermions/LeptonSinglet/Basic.lean#L238).
 
 > The `(1, 1)_{-6}` action of the jet gauge group on the jet space of the charged-lepton
 > singlet: multiplication of the jet-ring factor by the hypercharge power series
@@ -214,7 +214,7 @@ noncomputable def repJetGaugeGroupI :
     Representation ℂ JetGaugeGroupI (SpaceTimeAlgebra ⊗[ℂ] LeptonSinglet)
 ```
 
-**`StandardModel.LeptonSinglet.repJetGaugeGroupI_tmul`**, a lemma, [line 268](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/Fermions/LeptonSinglet/Basic.lean#L268).
+**`StandardModel.LeptonSinglet.repJetGaugeGroupI_tmul`**, a lemma, [line 268](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/Fermions/LeptonSinglet/Basic.lean#L268).
 
 > The jet gauge action on a pure tensor of the jet space of the charged-lepton
 > singlet.
@@ -225,7 +225,7 @@ lemma repJetGaugeGroupI_tmul (U : JetGaugeGroupI) (f : SpaceTimeAlgebra) (ψ : L
       = ((star ((U.2.2 : unitary SpaceTimeAlgebra) : SpaceTimeAlgebra)) ^ 6 * f) ⊗ₜ[ℂ] ψ
 ```
 
-**`StandardModel.LeptonSinglet.repJetGaugeGroupI_smul`**, a lemma, [line 276](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/Fermions/LeptonSinglet/Basic.lean#L276).
+**`StandardModel.LeptonSinglet.repJetGaugeGroupI_smul`**, a lemma, [line 276](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/Fermions/LeptonSinglet/Basic.lean#L276).
 
 > **The jet gauge action on the jets of the charged-lepton singlet is fibrewise**: it
 > commutes with multiplication by scalar jets.
@@ -236,7 +236,7 @@ lemma repJetGaugeGroupI_smul (U : JetGaugeGroupI) (χ : SpaceTimeAlgebra)
     repJetGaugeGroupI U (χ • z) = χ • repJetGaugeGroupI U z
 ```
 
-**`StandardModel.LeptonSinglet.repJetGaugeGroupI_ofConstant`**, a lemma, [line 289](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/Fermions/LeptonSinglet/Basic.lean#L289).
+**`StandardModel.LeptonSinglet.repJetGaugeGroupI_ofConstant`**, a lemma, [line 289](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/Fermions/LeptonSinglet/Basic.lean#L289).
 
 > On jets of constant gauge transformations the jet action reduces to the global
 > gauge action on the fibre: the `(1, 1)_{-6}` action on the lepton-singlet factor, and
@@ -254,7 +254,7 @@ lemma repJetGaugeGroupI_ofConstant (g : GaugeGroupI) :
 > `LeptonSinglet.valueGaugeWeight`, and pass to the dual and conjugate-dual coordinate
 > functionals with the expected signs.
 
-**`StandardModel.LeptonSinglet.valueGaugeWeight`**, a def, [line 319](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/Fermions/LeptonSinglet/Basic.lean#L319).
+**`StandardModel.LeptonSinglet.valueGaugeWeight`**, a def, [line 319](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/Fermions/LeptonSinglet/Basic.lean#L319).
 
 > The gauge weight of the lepton-singlet basis: hypercharge `-6`.
 
@@ -262,7 +262,7 @@ lemma repJetGaugeGroupI_ofConstant (g : GaugeGroupI) :
 def LeptonSinglet.valueGaugeWeight (_ : Fin 2) : GaugeWeight
 ```
 
-**`StandardModel.LeptonSinglet.repGaugeGroupI_gaugeTorusGen_basis`**, a lemma, [line 324](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/Fermions/LeptonSinglet/Basic.lean#L324).
+**`StandardModel.LeptonSinglet.repGaugeGroupI_gaugeTorusGen_basis`**, a lemma, [line 324](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/Fermions/LeptonSinglet/Basic.lean#L324).
 
 > The gauge torus acts diagonally on the basis of `LeptonSinglet`, with the weights
 > `LeptonSinglet.valueGaugeWeight`.
@@ -274,7 +274,7 @@ lemma LeptonSinglet.repGaugeGroupI_gaugeTorusGen_basis (i : Fin 4) (j : Fin 2) :
         LeptonSinglet.basis j
 ```
 
-**`StandardModel.LeptonSinglet.repGaugeGroupI_dual_gaugeTorusGen_coord`**, a lemma, [line 339](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/Fermions/LeptonSinglet/Basic.lean#L339).
+**`StandardModel.LeptonSinglet.repGaugeGroupI_dual_gaugeTorusGen_coord`**, a lemma, [line 339](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/Fermions/LeptonSinglet/Basic.lean#L339).
 
 > The dual action of the gauge torus on the coordinate functionals of
 > `LeptonSinglet`: the weights are negated.
@@ -286,7 +286,7 @@ lemma LeptonSinglet.repGaugeGroupI_dual_gaugeTorusGen_coord (i : Fin 4) (j : Fin
         LeptonSinglet.basis.coord j
 ```
 
-**`StandardModel.LeptonSinglet.repGaugeGroupI_conj_dual_gaugeTorusGen_coord`**, a lemma, [line 349](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/Fermions/LeptonSinglet/Basic.lean#L349).
+**`StandardModel.LeptonSinglet.repGaugeGroupI_conj_dual_gaugeTorusGen_coord`**, a lemma, [line 349](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/Fermions/LeptonSinglet/Basic.lean#L349).
 
 > The dual of the conjugate action of the gauge torus on the coordinate functionals
 > of the conjugate of `LeptonSinglet`: the two negations cancel and the weights are those of
@@ -302,7 +302,7 @@ lemma LeptonSinglet.repGaugeGroupI_conj_dual_gaugeTorusGen_coord (i : Fin 4) (j 
 
 ## I. The boost weight of the LeptonSinglet components
 
-**`StandardModel.leptonSinglet_repLorentzGroup_boostAxis_two_basis`**, a lemma, [line 369](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/Fermions/LeptonSinglet/Basic.lean#L369).
+**`StandardModel.leptonSinglet_repLorentzGroup_boostAxis_two_basis`**, a lemma, [line 369](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/Fermions/LeptonSinglet/Basic.lean#L369).
 
 > The charged-lepton-singlet basis diagonalises the `z`-boost.
 
@@ -325,4 +325,4 @@ lemma leptonSinglet_repLorentzGroup_boostAxis_two_basis (t : ℝ) (ht : t ≠ 0)
 
 ## Sources
 
-- [PhyslibAlpha/Particles/StandardModel/Fermions/LeptonSinglet/Basic.lean at 2a1dfe43](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/Fermions/LeptonSinglet/Basic.lean)
+- [PhyslibAlpha/Particles/StandardModel/Fermions/LeptonSinglet/Basic.lean at 8c87bdfb](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/Fermions/LeptonSinglet/Basic.lean)

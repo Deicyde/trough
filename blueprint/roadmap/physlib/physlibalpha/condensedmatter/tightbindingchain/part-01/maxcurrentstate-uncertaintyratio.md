@@ -8,7 +8,7 @@ proof: formalized
 
 # The elemental uncertainty of the open tight binding chain
 
-The module `PhyslibAlpha.CondensedMatter.TightBindingChain.MaxCurrentState.UncertaintyRatio`, [PhyslibAlpha/CondensedMatter/TightBindingChain/MaxCurrentState/UncertaintyRatio.lean](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/CondensedMatter/TightBindingChain/MaxCurrentState/UncertaintyRatio.lean): 8 declarations, 8 with a docstring.
+The module `PhyslibAlpha.CondensedMatter.TightBindingChain.MaxCurrentState.UncertaintyRatio`, [PhyslibAlpha/CondensedMatter/TightBindingChain/MaxCurrentState/UncertaintyRatio.lean](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/CondensedMatter/TightBindingChain/MaxCurrentState/UncertaintyRatio.lean): 8 declarations, 8 with a docstring.
 
 ## i. Overview
 
@@ -32,7 +32,7 @@ The module `PhyslibAlpha.CondensedMatter.TightBindingChain.MaxCurrentState.Uncer
 
 ## A. No correlation
 
-**`CondensedMatter.TightBindingChain.covariance_maxCurrentState`**, a lemma, [line 55](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/CondensedMatter/TightBindingChain/MaxCurrentState/UncertaintyRatio.lean#L55).
+**`CondensedMatter.TightBindingChain.covariance_maxCurrentState`**, a lemma, [line 55](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/CondensedMatter/TightBindingChain/MaxCurrentState/UncertaintyRatio.lean#L55).
 
 > The energy and position fluctuations of the maximal current state are uncorrelated.
 
@@ -41,7 +41,7 @@ lemma covariance_maxCurrentState :
     covariance T.maxCurrentVectorState T.openHamiltonianObservable T.positionObservable = 0
 ```
 
-**`CondensedMatter.TightBindingChain.variance_mul_variance_maxCurrentState`**, a lemma, [line 79](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/CondensedMatter/TightBindingChain/MaxCurrentState/UncertaintyRatio.lean#L79).
+**`CondensedMatter.TightBindingChain.variance_mul_variance_maxCurrentState`**, a lemma, [line 79](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/CondensedMatter/TightBindingChain/MaxCurrentState/UncertaintyRatio.lean#L79).
 
 > The uncertainty identity of the maximal current state:
 > `Var H · Var X = (a t cos (π / (N + 1)))² + defect`.
@@ -57,7 +57,7 @@ lemma variance_mul_variance_maxCurrentState :
 
 ## B. The uncertainty ratio `C`
 
-**`CondensedMatter.TightBindingChain.uncertaintyRatio`**, a def, [line 98](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/CondensedMatter/TightBindingChain/MaxCurrentState/UncertaintyRatio.lean#L98).
+**`CondensedMatter.TightBindingChain.uncertaintyRatio`**, a def, [line 98](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/CondensedMatter/TightBindingChain/MaxCurrentState/UncertaintyRatio.lean#L98).
 
 > The uncertainty ratio `C = √(Var H · Var X) / |a t cos (π / (N + 1))|` of the maximal current
 > state: the uncertainty product over its Robertson bound.
@@ -66,7 +66,7 @@ lemma variance_mul_variance_maxCurrentState :
 noncomputable def uncertaintyRatio : ℝ
 ```
 
-**`CondensedMatter.TightBindingChain.bound_ne_zero`**, a lemma, [line 104](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/CondensedMatter/TightBindingChain/MaxCurrentState/UncertaintyRatio.lean#L104).
+**`CondensedMatter.TightBindingChain.bound_ne_zero`**, a lemma, [line 104](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/CondensedMatter/TightBindingChain/MaxCurrentState/UncertaintyRatio.lean#L104).
 
 > The bound `a t cos (π / (N + 1))` is nonzero for `t ≠ 0` and `N ≥ 2`.
 
@@ -75,7 +75,7 @@ lemma bound_ne_zero (ht : T.t ≠ 0) (hN : 2 ≤ T.N) :
     T.a * T.t * Real.cos (Real.pi / (T.N + 1)) ≠ 0
 ```
 
-**`CondensedMatter.TightBindingChain.one_le_uncertaintyRatio`**, a lemma, [line 113](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/CondensedMatter/TightBindingChain/MaxCurrentState/UncertaintyRatio.lean#L113).
+**`CondensedMatter.TightBindingChain.one_le_uncertaintyRatio`**, a lemma, [line 113](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/CondensedMatter/TightBindingChain/MaxCurrentState/UncertaintyRatio.lean#L113).
 
 > `C` is at least one.
 
@@ -83,7 +83,7 @@ lemma bound_ne_zero (ht : T.t ≠ 0) (hN : 2 ≤ T.N) :
 lemma one_le_uncertaintyRatio (ht : T.t ≠ 0) (hN : 2 ≤ T.N) : 1 ≤ T.uncertaintyRatio
 ```
 
-**`CondensedMatter.TightBindingChain.uncertaintyRatio_eq_one_iff`**, a lemma, [line 119](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/CondensedMatter/TightBindingChain/MaxCurrentState/UncertaintyRatio.lean#L119).
+**`CondensedMatter.TightBindingChain.uncertaintyRatio_eq_one_iff`**, a lemma, [line 119](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/CondensedMatter/TightBindingChain/MaxCurrentState/UncertaintyRatio.lean#L119).
 
 > `C` equals one exactly for `N = 2` and `N = 3`.
 
@@ -92,7 +92,7 @@ lemma uncertaintyRatio_eq_one_iff (ht : T.t ≠ 0) (hN : 2 ≤ T.N) :
     T.uncertaintyRatio = 1 ↔ T.N = 2 ∨ T.N = 3
 ```
 
-**`CondensedMatter.TightBindingChain.one_lt_uncertaintyRatio`**, a lemma, [line 127](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/CondensedMatter/TightBindingChain/MaxCurrentState/UncertaintyRatio.lean#L127).
+**`CondensedMatter.TightBindingChain.one_lt_uncertaintyRatio`**, a lemma, [line 127](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/CondensedMatter/TightBindingChain/MaxCurrentState/UncertaintyRatio.lean#L127).
 
 > From four sites on, `C` is strictly larger than one.
 
@@ -100,7 +100,7 @@ lemma uncertaintyRatio_eq_one_iff (ht : T.t ≠ 0) (hN : 2 ≤ T.N) :
 lemma one_lt_uncertaintyRatio (ht : T.t ≠ 0) (hN : 4 ≤ T.N) : 1 < T.uncertaintyRatio
 ```
 
-**`CondensedMatter.TightBindingChain.robertson_schrodinger_uncertaintyRatio`**, a lemma, [line 134](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/CondensedMatter/TightBindingChain/MaxCurrentState/UncertaintyRatio.lean#L134).
+**`CondensedMatter.TightBindingChain.robertson_schrodinger_uncertaintyRatio`**, a lemma, [line 134](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/CondensedMatter/TightBindingChain/MaxCurrentState/UncertaintyRatio.lean#L134).
 
 > The Robertson–Schrödinger relation through the uncertainty ratio. In the maximal
 > current state, `Var H · Var X = (a t cos (π / (N + 1)))² + defect`, `C` is at least one, and
@@ -128,4 +128,4 @@ lemma robertson_schrodinger_uncertaintyRatio (ht : T.t ≠ 0)
 
 ## Sources
 
-- [PhyslibAlpha/CondensedMatter/TightBindingChain/MaxCurrentState/UncertaintyRatio.lean at 2a1dfe43](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/CondensedMatter/TightBindingChain/MaxCurrentState/UncertaintyRatio.lean)
+- [PhyslibAlpha/CondensedMatter/TightBindingChain/MaxCurrentState/UncertaintyRatio.lean at 8c87bdfb](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/CondensedMatter/TightBindingChain/MaxCurrentState/UncertaintyRatio.lean)

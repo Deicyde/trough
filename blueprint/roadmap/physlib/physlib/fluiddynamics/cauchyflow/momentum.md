@@ -8,7 +8,7 @@ proof: formalized
 
 # Cauchy momentum equations
 
-The module `Physlib.FluidDynamics.CauchyFlow.Momentum`, [Physlib/FluidDynamics/CauchyFlow/Momentum.lean](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/FluidDynamics/CauchyFlow/Momentum.lean): 3 declarations, 3 with a docstring.
+The module `Physlib.FluidDynamics.CauchyFlow.Momentum`, [Physlib/FluidDynamics/CauchyFlow/Momentum.lean](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/FluidDynamics/CauchyFlow/Momentum.lean): 3 declarations, 3 with a docstring.
 
 ## i. Overview
 
@@ -31,7 +31,7 @@ The module `Physlib.FluidDynamics.CauchyFlow.Momentum`, [Physlib/FluidDynamics/C
 
 ## A. Cauchy momentum equations
 
-**`FluidDynamics.CauchyFlow.CauchyMomentumEquation`**, a def, [line 62](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/FluidDynamics/CauchyFlow/Momentum.lean#L62).
+**`FluidDynamics.CauchyFlow.CauchyMomentumEquation`**, a def, [line 62](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/FluidDynamics/CauchyFlow/Momentum.lean#L62).
 
 > Conservation of momentum in conservative matrix-divergence form.
 >
@@ -45,7 +45,7 @@ The module `Physlib.FluidDynamics.CauchyFlow.Momentum`, [Physlib/FluidDynamics/C
 def CauchyMomentumEquation (d : ℕ) (flow : CauchyFlow d) : Prop
 ```
 
-**`FluidDynamics.CauchyFlow.ConvectiveCauchyMomentumEquation`**, a def, [line 76](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/FluidDynamics/CauchyFlow/Momentum.lean#L76).
+**`FluidDynamics.CauchyFlow.ConvectiveCauchyMomentumEquation`**, a def, [line 76](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/FluidDynamics/CauchyFlow/Momentum.lean#L76).
 
 > Conservation of momentum in convective form.
 >
@@ -61,7 +61,7 @@ def ConvectiveCauchyMomentumEquation (d : ℕ) (flow : CauchyFlow d) : Prop
 
 ## B. Equivalence of conservative and convective Cauchy momentum
 
-**`FluidDynamics.CauchyFlow.cauchyMomentumEquation_iff_convectiveCauchyMomentumEquation`**, a lemma, [line 93](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/FluidDynamics/CauchyFlow/Momentum.lean#L93).
+**`FluidDynamics.CauchyFlow.cauchyMomentumEquation_iff_convectiveCauchyMomentumEquation`**, a lemma, [line 93](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/FluidDynamics/CauchyFlow/Momentum.lean#L93).
 
 > The conservative and convective Cauchy momentum equations are equivalent when the classical
 > continuity equation holds.
@@ -87,4 +87,4 @@ lemma cauchyMomentumEquation_iff_convectiveCauchyMomentumEquation
 
 ## Sources
 
-- [Physlib/FluidDynamics/CauchyFlow/Momentum.lean at 2a1dfe43](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/FluidDynamics/CauchyFlow/Momentum.lean)
+- [Physlib/FluidDynamics/CauchyFlow/Momentum.lean at 8c87bdfb](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/FluidDynamics/CauchyFlow/Momentum.lean)

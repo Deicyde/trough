@@ -8,7 +8,7 @@ proof: formalized
 
 # The Taylor coefficients of the adjoint action
 
-The module `PhyslibAlpha.ClassicalFieldTheory.GaugeTheory.LocalGaugeData.AdjointCoeff`, [PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/LocalGaugeData/AdjointCoeff.lean](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/LocalGaugeData/AdjointCoeff.lean): 19 declarations, 17 with a docstring.
+The module `PhyslibAlpha.ClassicalFieldTheory.GaugeTheory.LocalGaugeData.AdjointCoeff`, [PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/LocalGaugeData/AdjointCoeff.lean](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/LocalGaugeData/AdjointCoeff.lean): 19 declarations, 17 with a docstring.
 
 ## i. Overview
 
@@ -47,7 +47,7 @@ The module `PhyslibAlpha.ClassicalFieldTheory.GaugeTheory.LocalGaugeData.Adjoint
 
 ## A. The adjoint Taylor coefficients
 
-**`LocalGaugeData.adjointCoeff`**, a def, [line 75](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/LocalGaugeData/AdjointCoeff.lean#L75).
+**`LocalGaugeData.adjointCoeff`**, a def, [line 75](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/LocalGaugeData/AdjointCoeff.lean#L75).
 
 > The physicists' `∂_x (Ad_U)^a_b|₀`: include a constant gauge algebra element into
 > jets, act by the adjoint of `U`, differentiate `x` times, and evaluate at the base
@@ -58,7 +58,7 @@ The module `PhyslibAlpha.ClassicalFieldTheory.GaugeTheory.LocalGaugeData.Adjoint
 noncomputable def adjointCoeff (U : GJ) (x : Multiset (Fin 1 ⊕ Fin 3)) : 𝔤 →ₗ[ℝ] 𝔤
 ```
 
-**`LocalGaugeData.adjointCoeff_apply`**, a lemma, [line 78](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/LocalGaugeData/AdjointCoeff.lean#L78).
+**`LocalGaugeData.adjointCoeff_apply`**, a lemma, [line 78](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/LocalGaugeData/AdjointCoeff.lean#L78).
 
 ```lean
 lemma adjointCoeff_apply (U : GJ) (x : Multiset (Fin 1 ⊕ Fin 3)) (a : 𝔤) :
@@ -66,7 +66,7 @@ lemma adjointCoeff_apply (U : GJ) (x : Multiset (Fin 1 ⊕ Fin 3)) (a : 𝔤) :
       jets.evalLie (jets.iteratedDeriv x (jets.adjointJ U (jets.ofConstantLie a)))
 ```
 
-**`LocalGaugeData.adjointCoeff_zero`**, a lemma, [line 84](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/LocalGaugeData/AdjointCoeff.lean#L84).
+**`LocalGaugeData.adjointCoeff_zero`**, a lemma, [line 84](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/LocalGaugeData/AdjointCoeff.lean#L84).
 
 > The zeroth coefficient is the adjoint action of the value of the jet.
 
@@ -74,7 +74,7 @@ lemma adjointCoeff_apply (U : GJ) (x : Multiset (Fin 1 ⊕ Fin 3)) (a : 𝔤) :
 lemma adjointCoeff_zero (U : GJ) : jets.adjointCoeff U 0 = jets.adjoint (jets.eval U)
 ```
 
-**`LocalGaugeData.adjointCoeff_zero_of_eval_eq_one`**, a lemma, [line 89](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/LocalGaugeData/AdjointCoeff.lean#L89).
+**`LocalGaugeData.adjointCoeff_zero_of_eval_eq_one`**, a lemma, [line 89](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/LocalGaugeData/AdjointCoeff.lean#L89).
 
 > A jet with trivial value has trivial zeroth coefficient.
 
@@ -83,7 +83,7 @@ lemma adjointCoeff_zero_of_eval_eq_one {U : GJ} (hU : jets.eval U = 1) :
     jets.adjointCoeff U 0 = LinearMap.id
 ```
 
-**`LocalGaugeData.adjointCoeff_one`**, a lemma, [line 94](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/LocalGaugeData/AdjointCoeff.lean#L94).
+**`LocalGaugeData.adjointCoeff_one`**, a lemma, [line 94](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/LocalGaugeData/AdjointCoeff.lean#L94).
 
 > The coefficients of the identity jet: only the base point survives.
 
@@ -92,7 +92,7 @@ lemma adjointCoeff_one (p : Multiset (Fin 1 ⊕ Fin 3)) :
     jets.adjointCoeff (1 : GJ) p = if p = 0 then LinearMap.id else 0
 ```
 
-**`LocalGaugeData.adjointCoeff_lie`**, a lemma, [line 106](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/LocalGaugeData/AdjointCoeff.lean#L106).
+**`LocalGaugeData.adjointCoeff_lie`**, a lemma, [line 106](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/LocalGaugeData/AdjointCoeff.lean#L106).
 
 > The coefficients are derivations of the bracket up to convolution, by the iterated
 > Leibniz rule for the jet bracket.
@@ -105,7 +105,7 @@ lemma adjointCoeff_lie (U : GJ) (x : Multiset (Fin 1 ⊕ Fin 3)) (a b : 𝔤) :
 
 ## B. The recursion through the Maurer–Cartan form
 
-**`LocalGaugeData.deriv_adjoint_ofConstantLie`**, a lemma, [line 124](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/LocalGaugeData/AdjointCoeff.lean#L124).
+**`LocalGaugeData.deriv_adjoint_ofConstantLie`**, a lemma, [line 124](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/LocalGaugeData/AdjointCoeff.lean#L124).
 
 > One derivative of the adjoint action on a constant is minus the bracket with the
 > Maurer–Cartan form: the Leibniz rule `deriv_adjoint` with the constant's derivative
@@ -117,7 +117,7 @@ lemma deriv_adjoint_ofConstantLie (U : GJ) (μ : Fin 1 ⊕ Fin 3) (a : 𝔤) :
       -⁅jets.maurerCartan U μ, jets.adjointJ U (jets.ofConstantLie a)⁆
 ```
 
-**`LocalGaugeData.adjointCoeff_cons`**, a lemma, [line 132](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/LocalGaugeData/AdjointCoeff.lean#L132).
+**`LocalGaugeData.adjointCoeff_cons`**, a lemma, [line 132](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/LocalGaugeData/AdjointCoeff.lean#L132).
 
 > One more derivative of a coefficient: differentiating the adjoint once produces minus
 > `ad` of the Maurer–Cartan form, and the remaining derivatives distribute over the bracket
@@ -133,7 +133,7 @@ lemma adjointCoeff_cons (U : GJ) (μ : Fin 1 ⊕ Fin 3) (x : Multiset (Fin 1 ⊕
 
 ## C. The Taylor–Leibniz theorem
 
-**`LocalGaugeData.evalLie_iteratedDeriv_adjoint_cons`**, a lemma, [line 157](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/LocalGaugeData/AdjointCoeff.lean#L157).
+**`LocalGaugeData.evalLie_iteratedDeriv_adjoint_cons`**, a lemma, [line 157](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/LocalGaugeData/AdjointCoeff.lean#L157).
 
 > The inductive step of the Taylor–Leibniz theorem: the rule for `μ ::ₘ s` derivatives
 > follows from the rule for every sub-multiset of `s`. Peeling off `∂_μ` by the Leibniz
@@ -153,7 +153,7 @@ lemma evalLie_iteratedDeriv_adjoint_cons (U : GJ) (μ : Fin 1 ⊕ Fin 3)
         jets.adjointCoeff U p.1 (jets.evalLie (jets.iteratedDeriv p.2 Y))).sum
 ```
 
-**`LocalGaugeData.evalLie_iteratedDeriv_adjointJ`**, a lemma, [line 207](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/LocalGaugeData/AdjointCoeff.lean#L207).
+**`LocalGaugeData.evalLie_iteratedDeriv_adjointJ`**, a lemma, [line 207](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/LocalGaugeData/AdjointCoeff.lean#L207).
 
 > The Taylor–Leibniz theorem for the adjoint action: the base-point Taylor coefficients
 > of `Ad_U Y` are the antidiagonal convolution of the coefficients `adjointCoeff U` of
@@ -168,7 +168,7 @@ lemma evalLie_iteratedDeriv_adjointJ (U : GJ) (x : Multiset (Fin 1 ⊕ Fin 3)) (
         jets.adjointCoeff U p.1 (jets.evalLie (jets.iteratedDeriv p.2 Y))).sum
 ```
 
-**`LocalGaugeData.evalLie_iteratedDeriv_adjoint_eq_zero`**, a lemma, [line 232](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/LocalGaugeData/AdjointCoeff.lean#L232).
+**`LocalGaugeData.evalLie_iteratedDeriv_adjoint_eq_zero`**, a lemma, [line 232](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/LocalGaugeData/AdjointCoeff.lean#L232).
 
 > The base-point Taylor data of `Ad_U Y` vanish up to a given order whenever those of
 > `Y` do.
@@ -179,7 +179,7 @@ lemma evalLie_iteratedDeriv_adjoint_eq_zero (U : GJ) {Y : 𝔤J} {s : Multiset (
     jets.evalLie (jets.iteratedDeriv s (jets.adjointJ U Y)) = 0
 ```
 
-**`LocalGaugeData.adjointCoeff_mul`**, a lemma, [line 242](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/LocalGaugeData/AdjointCoeff.lean#L242).
+**`LocalGaugeData.adjointCoeff_mul`**, a lemma, [line 242](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/LocalGaugeData/AdjointCoeff.lean#L242).
 
 > The coefficients are multiplicative up to convolution: the coefficient of a product of
 > jets is the antidiagonal convolution of the coefficients of the factors.
@@ -192,7 +192,7 @@ lemma adjointCoeff_mul (U V : GJ) (x : Multiset (Fin 1 ⊕ Fin 3)) :
 
 ## D. The dual coefficients
 
-**`LocalGaugeData.adjointDualCoeff`**, a def, [line 260](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/LocalGaugeData/AdjointCoeff.lean#L260).
+**`LocalGaugeData.adjointDualCoeff`**, a def, [line 260](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/LocalGaugeData/AdjointCoeff.lean#L260).
 
 > The physicists' `∂_x (Ad_U)^a_b|₀` acting on the dual adjoint index of a gauge-field
 > symbol: the transpose of `adjointCoeff U x`.
@@ -202,14 +202,14 @@ noncomputable def adjointDualCoeff (U : GJ) (x : Multiset (Fin 1 ⊕ Fin 3)) :
     Module.Dual ℝ 𝔤 →ₗ[ℝ] Module.Dual ℝ 𝔤
 ```
 
-**`LocalGaugeData.adjointDualCoeff_apply`**, a lemma, [line 264](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/LocalGaugeData/AdjointCoeff.lean#L264).
+**`LocalGaugeData.adjointDualCoeff_apply`**, a lemma, [line 264](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/LocalGaugeData/AdjointCoeff.lean#L264).
 
 ```lean
 lemma adjointDualCoeff_apply (U : GJ) (x : Multiset (Fin 1 ⊕ Fin 3)) (φ : Module.Dual ℝ 𝔤)
     (a : 𝔤) : jets.adjointDualCoeff U x φ a = φ (jets.adjointCoeff U x a)
 ```
 
-**`LocalGaugeData.adjointDualCoeff_zero`**, a lemma, [line 269](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/LocalGaugeData/AdjointCoeff.lean#L269).
+**`LocalGaugeData.adjointDualCoeff_zero`**, a lemma, [line 269](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/LocalGaugeData/AdjointCoeff.lean#L269).
 
 > The zeroth dual coefficient is the dual of the adjoint action of the value of the
 > jet.
@@ -219,7 +219,7 @@ lemma adjointDualCoeff_zero (U : GJ) :
     jets.adjointDualCoeff U 0 = (jets.adjoint (jets.eval U)).dualMap
 ```
 
-**`LocalGaugeData.adjointDualCoeff_zero_of_eval_eq_one`**, a lemma, [line 274](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/LocalGaugeData/AdjointCoeff.lean#L274).
+**`LocalGaugeData.adjointDualCoeff_zero_of_eval_eq_one`**, a lemma, [line 274](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/LocalGaugeData/AdjointCoeff.lean#L274).
 
 > A jet with trivial value has trivial zeroth dual coefficient.
 
@@ -228,7 +228,7 @@ lemma adjointDualCoeff_zero_of_eval_eq_one {U : GJ} (hU : jets.eval U = 1) :
     jets.adjointDualCoeff U 0 = LinearMap.id
 ```
 
-**`LocalGaugeData.adjointDualCoeff_cons`**, a lemma, [line 281](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/LocalGaugeData/AdjointCoeff.lean#L281).
+**`LocalGaugeData.adjointDualCoeff_cons`**, a lemma, [line 281](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/LocalGaugeData/AdjointCoeff.lean#L281).
 
 > The dual form of `adjointCoeff_cons`: one more derivative of a dual coefficient is
 > minus the antidiagonal convolution of lower dual coefficients against `ad` of the derived
@@ -243,7 +243,7 @@ lemma adjointDualCoeff_cons (U : GJ) (μ : Fin 1 ⊕ Fin 3) (x : Multiset (Fin 1
           (jets.evalLie (jets.iteratedDeriv p.1 (jets.maurerCartan U μ))))).sum)
 ```
 
-**`LocalGaugeData.adjointDualCoeff_singleton`**, a lemma, [line 298](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/LocalGaugeData/AdjointCoeff.lean#L298).
+**`LocalGaugeData.adjointDualCoeff_singleton`**, a lemma, [line 298](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/LocalGaugeData/AdjointCoeff.lean#L298).
 
 > The dual coefficient at a single derivative is minus the underived coefficient
 > precomposed with `ad` of the base-point Maurer–Cartan form. This is what cancels the
@@ -257,7 +257,7 @@ lemma adjointDualCoeff_singleton (U : GJ) (μ : Fin 1 ⊕ Fin 3) (φ : Module.Du
         (jets.evalLie (jets.maurerCartan U μ)))
 ```
 
-**`LocalGaugeData.adjointDualCoeff_pair`**, a lemma, [line 308](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/LocalGaugeData/AdjointCoeff.lean#L308).
+**`LocalGaugeData.adjointDualCoeff_pair`**, a lemma, [line 308](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/LocalGaugeData/AdjointCoeff.lean#L308).
 
 > The dual coefficient at two derivatives: the underived coefficient against `ad` of the
 > derived Maurer–Cartan form, and the once-derived coefficient against `ad` of the
@@ -282,4 +282,4 @@ lemma adjointDualCoeff_pair (U : GJ) (ρ μ : Fin 1 ⊕ Fin 3) (φ : Module.Dual
 
 ## Sources
 
-- [PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/LocalGaugeData/AdjointCoeff.lean at 2a1dfe43](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/LocalGaugeData/AdjointCoeff.lean)
+- [PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/LocalGaugeData/AdjointCoeff.lean at 8c87bdfb](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/LocalGaugeData/AdjointCoeff.lean)

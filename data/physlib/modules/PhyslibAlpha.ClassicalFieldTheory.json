@@ -1,6 +1,6 @@
 {
  "schema": "trough-physlib/v1",
- "rev": "2a1dfe43134b49b643642f13d33031754021bb5d",
+ "rev": "8c87bdfb015de47e82da811567aaa7a2a05353f4",
  "modules": [
   {
    "file": "PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/GaugeBoson/Basic.lean",
@@ -4771,6 +4771,410 @@
      "line": 140,
      "doc": "**The dimension of the fermionic module is the sum of the dimensions of the\nspecies**, each species contributing the number of complex components of its\nmultiplet.",
      "statement": "lemma finrank_fermionModule :\n    Module.finrank ℂ T.FermionModule = ∑ i, Module.finrank ℂ (T.FermionValue i)",
+     "sorry": false
+    }
+   ],
+   "private": 0,
+   "aliases": 0,
+   "informal": 0
+  },
+  {
+   "file": "PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/GlobalGaugeGroup/Basic.lean",
+   "module": "PhyslibAlpha.ClassicalFieldTheory.GaugeTheory.GlobalGaugeGroup.Basic",
+   "title": "Global gauge groups",
+   "doc": "A global gauge group as a closed group of invertible matrices, with its Lie algebra.\n\n## i. Overview\n\nThe global gauge group of a gauge theory is presented here as a closed subgroup `G` of the\ngeneral linear group `GL(κ, ℂ)`. These are the matrix Lie groups. They include every compact\nLie group, so every gauge group of the Standard Model and its extensions, as well as\nnon-compact groups such as `Sp(2n, ℝ)`, `SO(p, q)`, `SL(n, ℝ)` and the Lorentz group,\ndisconnected groups such as `O(n)`, and finite groups, whose Lie algebra is zero. A real\ngroup sits inside `GL(κ, ℂ)` as the real matrices it contains. Lie groups with no faithful\nfinite-dimensional representation, such as the metaplectic group, are not covered.\n\nThe Lie algebra `𝔤` is determined by the group: it is the real subspace of matrices `X`\nwhose one-parameter subgroup `t ↦ exp (t X)` lies in `G`, `Matrix.lieAlgebraOfIsClosed`.\nThat this is a subspace closed under the commutator, and invariant under conjugation by `G`,\nis proved there. For a compact group inside the unitary group the generators `X` are\nanti-hermitian, and the hermitian generators of physics are `−i X`.\n\n## ii. Key results\n\n- `GlobalGaugeGroup` : a closed subgroup of a general linear group.\n- `GlobalGaugeGroup.lieAlgebra` : its Lie algebra.\n- `GlobalGaugeGroup.lieSubalgebra` : the Lie algebra as a Lie subalgebra of matrices.\n\n## iii. Table of contents\n\n- A. The structure\n- B. The Lie algebra\n\n## iv. References\n\n* yang-mills-group, *OpenAI-YM-20261028*, `PublicTheory.lean`, the structure `GaugeGroup`,\n  https://github.com/yang-mills-group/OpenAI-YM-20261028/blob/3456e5e75cf8d4cd558955a5c7638fba2d68f464/PublicTheory.lean#L22-L33",
+   "copyright": "2026 Joseph Tooby-Smith",
+   "sections": [
+    {
+     "line": 56,
+     "text": "## A. The structure"
+    },
+    {
+     "line": 73,
+     "text": "## B. The Lie algebra"
+    }
+   ],
+   "declarations": [
+    {
+     "name": "GlobalGaugeGroup",
+     "kind": "structure",
+     "line": 63,
+     "doc": "A global gauge group: a closed subgroup of the general linear group `GL(κ, ℂ)`.",
+     "statement": "structure GlobalGaugeGroup (κ : Type) [Fintype κ] [DecidableEq κ] where\n  /-- The group, as a subgroup of the general linear group. -/\n  group : Subgroup (GeneralLinearGroup κ ℂ)\n  /-- The group is closed in the general linear group. -/\n  isClosed : IsClosed (group : Set (GeneralLinearGroup κ ℂ))",
+     "sorry": false
+    },
+    {
+     "name": "GlobalGaugeGroup.lieAlgebra",
+     "kind": "def",
+     "line": 80,
+     "doc": "The Lie algebra: the generators of the one-parameter subgroups of the group.",
+     "statement": "def lieAlgebra : Submodule ℝ (Matrix κ κ ℂ)",
+     "sorry": false
+    },
+    {
+     "name": "GlobalGaugeGroup.mem_lieAlgebra_iff",
+     "kind": "lemma",
+     "line": 83,
+     "doc": "",
+     "statement": "lemma mem_lieAlgebra_iff (X : Matrix κ κ ℂ) : X ∈ G.lieAlgebra ↔\n    ∀ t : ℝ, exp (t • X) ∈ Set.range fun g : G.group => (g.1 : Matrix κ κ ℂ)",
+     "sorry": false
+    },
+    {
+     "name": "GlobalGaugeGroup.lieSubalgebra",
+     "kind": "def",
+     "line": 87,
+     "doc": "The Lie algebra, as a Lie subalgebra of matrices under the commutator.",
+     "statement": "def lieSubalgebra : LieSubalgebra ℝ (Matrix κ κ ℂ)",
+     "sorry": false
+    },
+    {
+     "name": "GlobalGaugeGroup.mem_lieSubalgebra",
+     "kind": "lemma",
+     "line": 94,
+     "doc": "",
+     "statement": "lemma mem_lieSubalgebra {X : Matrix κ κ ℂ} : X ∈ G.lieSubalgebra ↔ X ∈ G.lieAlgebra",
+     "sorry": false
+    },
+    {
+     "name": "",
+     "kind": "instance",
+     "line": 96,
+     "doc": "",
+     "statement": "noncomputable instance : LieRing G.lieSubalgebra",
+     "sorry": false
+    },
+    {
+     "name": "",
+     "kind": "instance",
+     "line": 98,
+     "doc": "",
+     "statement": "noncomputable instance : LieAlgebra ℝ G.lieSubalgebra",
+     "sorry": false
+    }
+   ],
+   "private": 0,
+   "aliases": 0,
+   "informal": 0
+  },
+  {
+   "file": "PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/GlobalGaugeGroup/GaugeJetGroup.lean",
+   "module": "PhyslibAlpha.ClassicalFieldTheory.GaugeTheory.GlobalGaugeGroup.GaugeJetGroup",
+   "title": "The gauge jets of a global gauge group",
+   "doc": "The Taylor series at a point of the gauge transformations.\n\n## i. Overview\n\nA gauge transformation with global gauge group `G` is a smooth map from spacetime into `G`.\nIts jet at the base point is an invertible matrix of jets `U` with value `U (0)` in `G`.\nSince a map into `GL(κ, ℂ)` starting in `G` stays in `G` exactly when its Maurer–Cartan\nform takes values in the Lie algebra, the gauge jets are the invertible matrices of jets\nwith value in `G` and Maurer–Cartan form `(∂_μ U) U⁻¹` a Lie algebra jet.\n\nThat the gauge jets form a group rests on conjugation `A ↦ U⁻¹ A U` preserving the Lie\nalgebra jets. Its derivative is `U⁻¹ (∂_μ A − [ω_μ, A]) U` with `ω_μ = (∂_μ U) U⁻¹`, again\nof the same form, so every base-point derivative reduces to a value `g⁻¹ a g` with `g ∈ G`\nand `a ∈ 𝔤`.\n\n## ii. Key results\n\n- `GlobalGaugeGroup.IsGaugeJet` : the condition for an invertible matrix of jets to be a\n  gauge jet.\n- `GlobalGaugeGroup.inv_mul_mul_mem_jetLieAlgebra` : conjugation by a gauge jet preserves\n  the Lie algebra jets.\n- `GlobalGaugeGroup.gaugeJetGroup` : the group of gauge jets.\n\n## iii. Table of contents\n\n- A. Gauge jets\n- B. Conjugation of Lie algebra jets\n- C. The group of gauge jets\n\n## iv. References\n\n* None.",
+   "copyright": "2026 Joseph Tooby-Smith",
+   "sections": [
+    {
+     "line": 55,
+     "text": "## A. Gauge jets"
+    },
+    {
+     "line": 67,
+     "text": "## B. Conjugation of Lie algebra jets"
+    },
+    {
+     "line": 111,
+     "text": "## C. The group of gauge jets"
+    }
+   ],
+   "declarations": [
+    {
+     "name": "GlobalGaugeGroup.IsGaugeJet",
+     "kind": "def",
+     "line": 63,
+     "doc": "An invertible matrix of jets is a gauge jet when its value lies in the group and its\nMaurer–Cartan form `(∂_μ U) U⁻¹` is a Lie algebra jet.",
+     "statement": "def IsGaugeJet (U : GeneralLinearGroup κ SpaceTimeAlgebra) : Prop",
+     "sorry": false
+    },
+    {
+     "name": "GlobalGaugeGroup.inv_mul_mul_mem_jetLieAlgebra",
+     "kind": "lemma",
+     "line": 76,
+     "doc": "Conjugation `A ↦ U⁻¹ A U` by a gauge jet preserves the Lie algebra jets. At the base\npoint it is the adjoint action of the group, and the derivative of `U⁻¹ A U` is again of\nthis form, `U⁻¹ (∂_μ A − [ω_μ, A]) U`.",
+     "statement": "lemma inv_mul_mul_mem_jetLieAlgebra {U : GeneralLinearGroup κ SpaceTimeAlgebra}\n    (hU : G.IsGaugeJet U) {A : Matrix κ κ SpaceTimeAlgebra} (hA : A ∈ G.jetLieAlgebra) :\n    (↑U⁻¹ : Matrix κ κ SpaceTimeAlgebra) * A * U ∈ G.jetLieAlgebra",
+     "sorry": false
+    },
+    {
+     "name": "GlobalGaugeGroup.isGaugeJet_inv",
+     "kind": "lemma",
+     "line": 96,
+     "doc": "The inverse of a gauge jet is a gauge jet: its Maurer–Cartan form is\n`−U⁻¹ ((∂_μ U) U⁻¹) U`.",
+     "statement": "lemma isGaugeJet_inv {U : GeneralLinearGroup κ SpaceTimeAlgebra} (hU : G.IsGaugeJet U) :\n    G.IsGaugeJet U⁻¹",
+     "sorry": false
+    },
+    {
+     "name": "GlobalGaugeGroup.mul_mul_inv_mem_jetLieAlgebra",
+     "kind": "lemma",
+     "line": 104,
+     "doc": "Conjugation `A ↦ U A U⁻¹` by a gauge jet preserves the Lie algebra jets.",
+     "statement": "lemma mul_mul_inv_mem_jetLieAlgebra {U : GeneralLinearGroup κ SpaceTimeAlgebra}\n    (hU : G.IsGaugeJet U) {A : Matrix κ κ SpaceTimeAlgebra} (hA : A ∈ G.jetLieAlgebra) :\n    (U : Matrix κ κ SpaceTimeAlgebra) * A * (↑U⁻¹ : Matrix κ κ SpaceTimeAlgebra)\n      ∈ G.jetLieAlgebra",
+     "sorry": false
+    },
+    {
+     "name": "GlobalGaugeGroup.isGaugeJet_mul",
+     "kind": "lemma",
+     "line": 118,
+     "doc": "The product of gauge jets is a gauge jet, by the cocycle law of the Maurer–Cartan form.",
+     "statement": "lemma isGaugeJet_mul {U V : GeneralLinearGroup κ SpaceTimeAlgebra} (hU : G.IsGaugeJet U)\n    (hV : G.IsGaugeJet V) : G.IsGaugeJet (U * V)",
+     "sorry": false
+    },
+    {
+     "name": "GlobalGaugeGroup.isGaugeJet_unitsOfConstant",
+     "kind": "lemma",
+     "line": 125,
+     "doc": "The jet of a constant gauge transformation is a gauge jet.",
+     "statement": "lemma isGaugeJet_unitsOfConstant {g : GeneralLinearGroup κ ℂ} (hg : g ∈ G.group) :\n    G.IsGaugeJet (unitsOfConstant g)",
+     "sorry": false
+    },
+    {
+     "name": "GlobalGaugeGroup.gaugeJetGroup",
+     "kind": "def",
+     "line": 135,
+     "doc": "The group of gauge jets: the invertible matrices of jets with value in the group and\nMaurer–Cartan form a Lie algebra jet. These are the Taylor series of smooth maps from\nspacetime into the group, the analogue of `JetSU` and `JetU1`, and not the jet group of\ndiffeomorphisms of differential geometry.",
+     "statement": "def gaugeJetGroup : Subgroup (GeneralLinearGroup κ SpaceTimeAlgebra)",
+     "sorry": false
+    },
+    {
+     "name": "GlobalGaugeGroup.mem_gaugeJetGroup",
+     "kind": "lemma",
+     "line": 142,
+     "doc": "",
+     "statement": "lemma mem_gaugeJetGroup {U : GeneralLinearGroup κ SpaceTimeAlgebra} :\n    U ∈ G.gaugeJetGroup ↔ G.IsGaugeJet U",
+     "sorry": false
+    }
+   ],
+   "private": 0,
+   "aliases": 0,
+   "informal": 0
+  },
+  {
+   "file": "PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/GlobalGaugeGroup/JetLieAlgebra.lean",
+   "module": "PhyslibAlpha.ClassicalFieldTheory.GaugeTheory.GlobalGaugeGroup.JetLieAlgebra",
+   "title": "The Lie algebra jets of a global gauge group",
+   "doc": "The Taylor series at a point of the infinitesimal gauge transformations.\n\n## i. Overview\n\nAn infinitesimal gauge transformation of a global gauge group `G` with Lie algebra `𝔤` is a\nsmooth map from spacetime into `𝔤`. Its jet at the base point is a matrix of formal power\nseries in the spacetime coordinates, all of whose base-point derivatives `∂_s A (0)` lie in\n`𝔤`. These Lie algebra jets form a Lie algebra under the commutator, since by the Leibniz\nrule each base-point derivative of a commutator is a sum of commutators of base-point\nderivatives.\n\nMembership is checked through `mem_jetLieAlgebra_of`: a property of matrices of jets that is\npreserved by every derivative, and that places the value in `𝔤`, places every base-point\nderivative in `𝔤`. This is how the gauge jets are shown to act on the Lie algebra jets in\n`PhyslibAlpha.ClassicalFieldTheory.GaugeTheory.GlobalGaugeGroup.GaugeJetGroup`.\n\n## ii. Key results\n\n- `GlobalGaugeGroup.jetLieAlgebra` : the Lie algebra jets, as a real subspace.\n- `GlobalGaugeGroup.mem_jetLieAlgebra_iff` : a matrix of jets is a Lie algebra jet exactly\n  when its value lies in the Lie algebra and its derivatives are Lie algebra jets.\n- `GlobalGaugeGroup.mem_jetLieAlgebra_of` : the induction principle for Lie algebra jets.\n- `GlobalGaugeGroup.jetLieSubalgebra` : the Lie algebra jets, as a Lie subalgebra.\n\n## iii. Table of contents\n\n- A. The Lie algebra jets\n- B. Closure properties\n\n## iv. References\n\n* None.",
+   "copyright": "2026 Joseph Tooby-Smith",
+   "sections": [
+    {
+     "line": 59,
+     "text": "## A. The Lie algebra jets"
+    },
+    {
+     "line": 106,
+     "text": "## B. Closure properties"
+    }
+   ],
+   "declarations": [
+    {
+     "name": "GlobalGaugeGroup.jetLieAlgebra",
+     "kind": "def",
+     "line": 67,
+     "doc": "The real subspace of matrices of jets all of whose base-point derivatives lie in the\nLie algebra.",
+     "statement": "def jetLieAlgebra : Submodule ℝ (Matrix κ κ SpaceTimeAlgebra)",
+     "sorry": false
+    },
+    {
+     "name": "GlobalGaugeGroup.mem_jetLieAlgebra",
+     "kind": "lemma",
+     "line": 79,
+     "doc": "",
+     "statement": "lemma mem_jetLieAlgebra {A : Matrix κ κ SpaceTimeAlgebra} :\n    A ∈ G.jetLieAlgebra ↔ ∀ s, derivValueMatrix s A ∈ G.lieAlgebra",
+     "sorry": false
+    },
+    {
+     "name": "GlobalGaugeGroup.mem_jetLieAlgebra_iff",
+     "kind": "lemma",
+     "line": 84,
+     "doc": "A matrix of jets is a Lie algebra jet exactly when its value lies in the Lie algebra and\nits derivatives are Lie algebra jets.",
+     "statement": "lemma mem_jetLieAlgebra_iff {A : Matrix κ κ SpaceTimeAlgebra} :\n    A ∈ G.jetLieAlgebra ↔\n      (constantCoeff : SpaceTimeAlgebra →+* ℂ).mapMatrix A ∈ G.lieAlgebra ∧\n        ∀ μ, A.map (pderiv μ) ∈ G.jetLieAlgebra",
+     "sorry": false
+    },
+    {
+     "name": "GlobalGaugeGroup.mem_jetLieAlgebra_of",
+     "kind": "lemma",
+     "line": 97,
+     "doc": "An induction principle for Lie algebra jets: a property of matrices of jets that is\npreserved by every derivative, and that forces the value into the Lie algebra, forces\nevery base-point derivative into the Lie algebra.",
+     "statement": "lemma mem_jetLieAlgebra_of {P : Matrix κ κ SpaceTimeAlgebra → Prop}\n    (h0 : ∀ A, P A → (constantCoeff : SpaceTimeAlgebra →+* ℂ).mapMatrix A ∈ G.lieAlgebra)\n    (hd : ∀ A, P A → ∀ μ, P (A.map (pderiv μ))) {A : Matrix κ κ SpaceTimeAlgebra}\n    (hA : P A) : A ∈ G.jetLieAlgebra",
+     "sorry": false
+    },
+    {
+     "name": "GlobalGaugeGroup.map_pderiv_mem_jetLieAlgebra",
+     "kind": "lemma",
+     "line": 112,
+     "doc": "",
+     "statement": "lemma map_pderiv_mem_jetLieAlgebra {A : Matrix κ κ SpaceTimeAlgebra}\n    (hA : A ∈ G.jetLieAlgebra) (μ : Fin 1 ⊕ Fin 3) : A.map (pderiv μ) ∈ G.jetLieAlgebra",
+     "sorry": false
+    },
+    {
+     "name": "GlobalGaugeGroup.commutator_mem_jetLieAlgebra",
+     "kind": "lemma",
+     "line": 118,
+     "doc": "The Lie algebra jets are closed under the commutator: by the Leibniz rule each\nbase-point derivative of a commutator is a sum of commutators of base-point derivatives.",
+     "statement": "lemma commutator_mem_jetLieAlgebra {A B : Matrix κ κ SpaceTimeAlgebra}\n    (hA : A ∈ G.jetLieAlgebra) (hB : B ∈ G.jetLieAlgebra) : A * B - B * A ∈ G.jetLieAlgebra",
+     "sorry": false
+    },
+    {
+     "name": "GlobalGaugeGroup.jetLieSubalgebra",
+     "kind": "def",
+     "line": 131,
+     "doc": "The Lie algebra jets, as a Lie subalgebra of matrices of jets under the commutator.",
+     "statement": "def jetLieSubalgebra : LieSubalgebra ℝ (Matrix κ κ SpaceTimeAlgebra)",
+     "sorry": false
+    },
+    {
+     "name": "GlobalGaugeGroup.mem_jetLieSubalgebra",
+     "kind": "lemma",
+     "line": 138,
+     "doc": "",
+     "statement": "lemma mem_jetLieSubalgebra {A : Matrix κ κ SpaceTimeAlgebra} :\n    A ∈ G.jetLieSubalgebra ↔ A ∈ G.jetLieAlgebra",
+     "sorry": false
+    },
+    {
+     "name": "",
+     "kind": "instance",
+     "line": 141,
+     "doc": "",
+     "statement": "noncomputable instance : LieRing G.jetLieSubalgebra",
+     "sorry": false
+    },
+    {
+     "name": "",
+     "kind": "instance",
+     "line": 143,
+     "doc": "",
+     "statement": "noncomputable instance : LieAlgebra ℝ G.jetLieSubalgebra",
+     "sorry": false
+    },
+    {
+     "name": "GlobalGaugeGroup.mapMatrix_C_mem_jetLieAlgebra",
+     "kind": "lemma",
+     "line": 146,
+     "doc": "A constant matrix in the Lie algebra is a Lie algebra jet.",
+     "statement": "lemma mapMatrix_C_mem_jetLieAlgebra {a : Matrix κ κ ℂ} (ha : a ∈ G.lieAlgebra) :\n    (C : ℂ →+* SpaceTimeAlgebra).mapMatrix a ∈ G.jetLieAlgebra",
+     "sorry": false
+    },
+    {
+     "name": "GlobalGaugeGroup.X_smul_mem_jetLieAlgebra",
+     "kind": "lemma",
+     "line": 156,
+     "doc": "The Lie algebra jets are closed under multiplication by a coordinate.",
+     "statement": "lemma X_smul_mem_jetLieAlgebra (μ : Fin 1 ⊕ Fin 3) {A : Matrix κ κ SpaceTimeAlgebra}\n    (hA : A ∈ G.jetLieAlgebra) : (X μ : SpaceTimeAlgebra) • A ∈ G.jetLieAlgebra",
+     "sorry": false
+    }
+   ],
+   "private": 0,
+   "aliases": 0,
+   "informal": 0
+  },
+  {
+   "file": "PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/GlobalGaugeGroup/LocalGaugeData.lean",
+   "module": "PhyslibAlpha.ClassicalFieldTheory.GaugeTheory.GlobalGaugeGroup.LocalGaugeData",
+   "title": "The local gauge data of a global gauge group",
+   "doc": "The jets of gauge transformations valued in a global gauge group, as local gauge data.\n\n## i. Overview\n\nA global gauge group `G` with Lie algebra `𝔤` gives local gauge data\n`LocalGaugeData G 𝔤 GJ 𝔤J`, with `GJ` the gauge jets and `𝔤J` the Lie algebra jets.\nEvaluation is the entrywise constant coefficient, constants embed entrywise, the derivative\nand the coordinates act entrywise, the adjoint actions are conjugation `U A U⁻¹`, and the\nMaurer–Cartan form is `−(∂_μ U) U⁻¹`.\n\nEvery structure map is the matrix one, so the package is a presentation by matrices of jets,\n`GlobalGaugeGroup.matrixJets`, and the laws of `LocalGaugeData` and its faithfulness come\nfrom `PhyslibAlpha.ClassicalFieldTheory.GaugeTheory.LocalGaugeData.MatrixJets`. The\npresentation sends a generator `X` to `−i X`, so that the commutator becomes the bracket\n`i (a b − b a)` used throughout the gauge theory, and the Maurer–Cartan form `−(∂_μ U) U⁻¹`\nbecomes `i (∂_μ U) U⁻¹`. For a compact group inside the unitary group these are the\nhermitian generators and the hermitian Maurer–Cartan form of physics.\n\n## ii. Key results\n\n- `GlobalGaugeGroup.matrixJets` : the presentation of the jets by matrices of jets.\n- `GlobalGaugeGroup.localGaugeData` : the local gauge data of a global gauge group.\n\n## iii. Table of contents\n\n- A. The presentation by matrices of jets\n- B. The local gauge data\n\n## iv. References\n\n* None.",
+   "copyright": "2026 Joseph Tooby-Smith",
+   "sections": [
+    {
+     "line": 57,
+     "text": "## A. The presentation by matrices of jets"
+    },
+    {
+     "line": 146,
+     "text": "## B. The local gauge data"
+    }
+   ],
+   "declarations": [
+    {
+     "name": "GlobalGaugeGroup.matrixJets",
+     "kind": "def",
+     "line": 66,
+     "doc": "The presentation of the jets of a global gauge group by matrices of jets. A generator\n`X` of the Lie algebra is sent to `−i X`, so that the commutator becomes the bracket\n`i (a b − b a)`, and the Maurer–Cartan form `−(∂_μ U) U⁻¹` becomes `i (∂_μ U) U⁻¹`.",
+     "statement": "noncomputable def matrixJets :\n    LocalGaugeData.MatrixJets κ G.group G.lieSubalgebra G.gaugeJetGroup G.jetLieSubalgebra",
+     "sorry": false
+    },
+    {
+     "name": "GlobalGaugeGroup.localGaugeData",
+     "kind": "def",
+     "line": 156,
+     "doc": "The local gauge data of a global gauge group. The gauge jets are the invertible matrices\nof jets with value in the group and Maurer–Cartan form a Lie algebra jet, the Lie algebra\njets are the matrices of jets with every base-point derivative in the Lie algebra, and\nevery structure map is the matrix one.",
+     "statement": "noncomputable def localGaugeData :\n    LocalGaugeData G.group G.lieSubalgebra G.gaugeJetGroup G.jetLieSubalgebra",
+     "sorry": false
+    },
+    {
+     "name": "GlobalGaugeGroup.localGaugeData_eval_val",
+     "kind": "lemma",
+     "line": 161,
+     "doc": "",
+     "statement": "lemma localGaugeData_eval_val (U : G.gaugeJetGroup) :\n    ((G.localGaugeData.eval U).1 : Matrix κ κ ℂ) =\n      (constantCoeff : SpaceTimeAlgebra →+* ℂ).mapMatrix U.1",
+     "sorry": false
+    },
+    {
+     "name": "GlobalGaugeGroup.localGaugeData_ofConstant_val",
+     "kind": "lemma",
+     "line": 166,
+     "doc": "",
+     "statement": "lemma localGaugeData_ofConstant_val (g : G.group) :\n    ((G.localGaugeData.ofConstant g).1 : Matrix κ κ SpaceTimeAlgebra) =\n      (C : ℂ →+* SpaceTimeAlgebra).mapMatrix g.1",
+     "sorry": false
+    },
+    {
+     "name": "GlobalGaugeGroup.localGaugeData_evalLie_val",
+     "kind": "lemma",
+     "line": 171,
+     "doc": "",
+     "statement": "lemma localGaugeData_evalLie_val (A : G.jetLieSubalgebra) :\n    (G.localGaugeData.evalLie A).1 = (constantCoeff : SpaceTimeAlgebra →+* ℂ).mapMatrix A.1",
+     "sorry": false
+    },
+    {
+     "name": "GlobalGaugeGroup.localGaugeData_ofConstantLie_val",
+     "kind": "lemma",
+     "line": 176,
+     "doc": "",
+     "statement": "lemma localGaugeData_ofConstantLie_val (a : G.lieSubalgebra) :\n    (G.localGaugeData.ofConstantLie a).1 = (C : ℂ →+* SpaceTimeAlgebra).mapMatrix a.1",
+     "sorry": false
+    },
+    {
+     "name": "GlobalGaugeGroup.localGaugeData_deriv_val",
+     "kind": "lemma",
+     "line": 180,
+     "doc": "",
+     "statement": "lemma localGaugeData_deriv_val (μ : Fin 1 ⊕ Fin 3) (A : G.jetLieSubalgebra) :\n    (G.localGaugeData.deriv μ A).1 = A.1.map (pderiv μ)",
+     "sorry": false
+    },
+    {
+     "name": "GlobalGaugeGroup.localGaugeData_mulCoord_val",
+     "kind": "lemma",
+     "line": 184,
+     "doc": "",
+     "statement": "lemma localGaugeData_mulCoord_val (μ : Fin 1 ⊕ Fin 3) (A : G.jetLieSubalgebra) :\n    (G.localGaugeData.mulCoord μ A).1 = (X μ : SpaceTimeAlgebra) • A.1",
+     "sorry": false
+    },
+    {
+     "name": "GlobalGaugeGroup.localGaugeData_adjointJ_val",
+     "kind": "lemma",
+     "line": 188,
+     "doc": "",
+     "statement": "lemma localGaugeData_adjointJ_val (U : G.gaugeJetGroup) (A : G.jetLieSubalgebra) :\n    (G.localGaugeData.adjointJ U A).1 = U.1.1 * A.1 * (U.1⁻¹).1",
+     "sorry": false
+    },
+    {
+     "name": "GlobalGaugeGroup.localGaugeData_adjoint_val",
+     "kind": "lemma",
+     "line": 192,
+     "doc": "",
+     "statement": "lemma localGaugeData_adjoint_val (g : G.group) (a : G.lieSubalgebra) :\n    (G.localGaugeData.adjoint g a).1 = g.1.1 * a.1 * (g.1⁻¹).1",
+     "sorry": false
+    },
+    {
+     "name": "GlobalGaugeGroup.localGaugeData_maurerCartan_val",
+     "kind": "lemma",
+     "line": 197,
+     "doc": "The Maurer–Cartan form of a gauge jet is `−(∂_μ U) U⁻¹`.",
+     "statement": "lemma localGaugeData_maurerCartan_val (U : G.gaugeJetGroup) (μ : Fin 1 ⊕ Fin 3) :\n    (G.localGaugeData.maurerCartan U μ).1 = -(U.1.1.map (pderiv μ) * (U.1⁻¹).1)",
+     "sorry": false
+    },
+    {
+     "name": "",
+     "kind": "instance",
+     "line": 201,
+     "doc": "The local gauge data of a global gauge group is faithful.",
+     "statement": "instance : G.localGaugeData.Faithful",
      "sorry": false
     }
    ],
@@ -10326,27 +10730,27 @@
    "file": "PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/LocalGaugeData/MatrixJets.lean",
    "module": "PhyslibAlpha.ClassicalFieldTheory.GaugeTheory.LocalGaugeData.MatrixJets",
    "title": "Matrix jet groups",
-   "doc": "## i. Overview\n\n`U(1)` and `SU(n)` present their local gauge data in the same way: the gauge jets are\nunitary matrices of jets, the Lie algebra jets are hermitian matrices of jets, evaluation is\nthe entrywise constant coefficient, constants embed entrywise, the derivative and the\ncoordinates act entrywise, the adjoint action is conjugation `U a U†` and the Maurer–Cartan\nform is `i (∂_μ U) U†`. Every law of `LocalGaugeData` then follows from matrix identities\nover the jet ring.\n\n`MatrixJets` records such a presentation: injective maps of the four carriers into matrices,\nand what each structure map is in matrices. From it, `MatrixJets.toLocalGaugeData` proves\nthe laws once, `MatrixJets.faithful` shows the package is faithful, `MatrixJets.free`\nreduces its freeness to three conditions on the carriers, and `MatrixJets.suFactor` is its\ncanonical `SU`-type factor. The concrete packages `u1` and\n`su n` are instances.\n\n## ii. Key results\n\n- `LocalGaugeData.MatrixJets` : a presentation of gauge jets by matrices of jets.\n- `LocalGaugeData.MatrixJets.toLocalGaugeData` : the local gauge data it presents.\n- `LocalGaugeData.MatrixJets.faithful` : that local gauge data is faithful.\n- `LocalGaugeData.MatrixJets.suFactor` : its canonical `SU`-type factor.\n- `LocalGaugeData.MatrixJets.free` : a criterion for that local gauge data to be free.\n\n## iii. Table of contents\n\n- A. The presentation\n- B. The local gauge data\n- C. The iterated derivative and faithfulness\n- D. The canonical factor\n- E. Freeness\n\n## iv. References\n\n* None.",
+   "doc": "## i. Overview\n\nMatrix gauge groups present their local gauge data in the same way: the gauge jets are\ninvertible matrices of jets, the Lie algebra jets are matrices of jets, evaluation is the\nentrywise constant coefficient, constants embed entrywise, the derivative and the\ncoordinates act entrywise, the adjoint action is conjugation `U a U⁻¹` and the\nMaurer–Cartan form is `i (∂_μ U) U⁻¹`. Every law of `LocalGaugeData` then follows from\nmatrix identities over the jet ring. For `U(1)` and `SU(n)` the gauge jets are unitary, so\n`U⁻¹ = U†`, and the Lie algebra jets are hermitian.\n\n`MatrixJets` records such a presentation: injective maps of the four carriers into matrices,\nand what each structure map is in matrices. From it, `MatrixJets.toLocalGaugeData` proves\nthe laws once, `MatrixJets.faithful` shows the package is faithful, `MatrixJets.free`\nreduces its freeness to three conditions on the carriers, and `MatrixJets.suFactor` is its\ncanonical `SU`-type factor when the presentation is unitary. The concrete packages `u1`,\n`su n` and the local gauge data of a `GlobalGaugeGroup` are instances.\n\n## ii. Key results\n\n- `LocalGaugeData.MatrixJets` : a presentation of gauge jets by matrices of jets.\n- `LocalGaugeData.MatrixJets.toLocalGaugeData` : the local gauge data it presents.\n- `LocalGaugeData.MatrixJets.faithful` : that local gauge data is faithful.\n- `LocalGaugeData.MatrixJets.suFactor` : its canonical `SU`-type factor.\n- `LocalGaugeData.MatrixJets.free` : a criterion for that local gauge data to be free.\n\n## iii. Table of contents\n\n- A. The presentation\n- B. The local gauge data\n- C. The iterated derivative and faithfulness\n- D. The canonical factor\n- E. Freeness\n\n## iv. References\n\n* None.",
    "copyright": "2026 Jinzheng Li",
    "sections": [
     {
-     "line": 59,
+     "line": 60,
      "text": "## A. The presentation"
     },
     {
-     "line": 125,
+     "line": 132,
      "text": "## B. The local gauge data\n\nEvery law is an identity of matrices, read through the injective maps `lieJ` and `toMat₀`."
     },
     {
-     "line": 336,
+     "line": 343,
      "text": "## C. The iterated derivative and faithfulness"
     },
     {
-     "line": 394,
+     "line": 400,
      "text": "## D. The canonical factor"
     },
     {
-     "line": 412,
+     "line": 419,
      "text": "## E. Freeness\n\nA presentation by matrices is free when its carriers are large enough: the Lie algebra\njets contain every matrix of jets with Taylor data in the Lie algebra, and the gauge jets\ncontain the unitary fundamental solution `V` of the radial system `E V = −i P V` for every\nLie algebra jet `P`. Taylor completeness and radial integrability then hold because they\nhold for matrices of jets."
     }
    ],
@@ -10354,15 +10758,31 @@
     {
      "name": "LocalGaugeData.MatrixJets",
      "kind": "structure",
-     "line": 73,
-     "doc": "**A presentation of gauge jets by matrices**: the value group, its Lie algebra, the jet\ngroup and its Lie algebra of jets embed into `κ × κ` matrices, and every structure map of\nthe local gauge data is what it is for matrices: the entrywise constant coefficient,\ninclusion of constants, derivative and coordinate multiplication, conjugation for the\nadjoint actions and `i (∂_μ U) U†` for the Maurer–Cartan form.",
-     "statement": "structure MatrixJets (κ : Type) [Fintype κ] [DecidableEq κ] (G₀ : Type) [Group G₀]\n    (𝔤 : Type) [LieRing 𝔤] [LieAlgebra ℝ 𝔤] (GJ : Type) [Group GJ]\n    (𝔤J : Type) [LieRing 𝔤J] [LieAlgebra ℝ 𝔤J] where\n  /-- The matrix of a value. -/\n  toMat₀ : G₀ →* Matrix κ κ ℂ\n  toMat₀_injective : Function.Injective toMat₀\n  /-- The matrix of jets of a gauge jet. -/\n  toMatJ : GJ →* Matrix κ κ SpaceTimeAlgebra\n  toMatJ_injective : Function.Injective toMatJ\n  toMatJ_mul_star : ∀ U, toMatJ U * star (toMatJ U) = 1\n  star_toMatJ_mul : ∀ U, star (toMatJ U) * toMatJ U = 1\n  /-- The matrix of a Lie algebra element. -/\n  lie₀ : 𝔤 →ₗ[ℝ] Matrix κ κ ℂ\n  lie₀_injective : Function.Injective lie₀\n  lie₀_bracket : ∀ a b, lie₀ ⁅a, b⁆ = Complex.I • (lie₀ a * lie₀ b - lie₀ b * lie₀ a)\n  /-- The matrix of jets of a Lie algebra jet. -/\n  lieJ : 𝔤J →ₗ[ℝ] Matrix κ κ SpaceTimeAlgebra\n  lieJ_injective : Function.Injective lieJ\n  lieJ_bracket : ∀ a b, lieJ ⁅a, b⁆ = Complex.I • (lieJ a * lieJ b - lieJ b * lieJ a)\n  /-- Evaluation of a gauge jet at the base point. -/\n  eval : GJ →* G₀\n  toMat₀_eval : ∀ U, toMat₀ (eval U) = (constantCoeff : SpaceTimeAlgebra →+* ℂ).mapMatrix (toMatJ U)\n  /-- A constant gauge transformation as a jet. -/\n  ofConstant : G₀ →* GJ\n  toMatJ_ofConstant : ∀ g, toMatJ (ofConstant g) = (C : ℂ →+* SpaceTimeAlgebra).mapMatrix (toMat₀ g)\n  /-- Evaluation of a Lie algebra jet at the base point. -/\n  evalLie : 𝔤J →ₗ[ℝ] 𝔤\n  lie₀_evalLie : ∀ a, lie₀ (evalLie a) = (constantCoeff : SpaceTimeAlgebra →+* ℂ).mapMatrix (lieJ a)\n  /-- A constant Lie algebra element as a jet. -/\n  ofConstantLie : 𝔤 →ₗ[ℝ] 𝔤J\n  lieJ_ofConstantLie : ∀ a, lieJ (ofConstantLie a) = (C : ℂ →+* SpaceTimeAlgebra).mapMatrix (lie₀ a)\n  /-- The formal derivative in the direction `μ`. -/\n  deriv : (Fin 1 ⊕ Fin 3) → 𝔤J →ₗ[ℝ] 𝔤J\n  lieJ_deriv : ∀ μ a, lieJ (deriv μ a) = (lieJ a).map (pderiv μ)\n  /-- Multiplication of a jet by the spacetime coordinate `x_μ`. -/\n  coord : (Fin 1 ⊕ Fin 3) → 𝔤J →ₗ[ℝ] 𝔤J\n  lieJ_coord : ∀ μ a, lieJ (coord μ a) = (X μ : SpaceTimeAlgebra) • lieJ a\n  /-- The adjoint action of the jet group on the jet Lie algebra. -/\n  adjoint : Representation ℝ GJ 𝔤J\n  lieJ_adjoint : ∀ U a, lieJ (adjoint U a) = toMatJ U * lieJ a * star (toMatJ U)\n  /-- The adjoint representation of the value group on its Lie algebra. -/\n  adjointValue : Representation ℝ G₀ 𝔤\n  lie₀_adjointValue : ∀ g a, lie₀ (adjointValue g a) = toMat₀ g * lie₀ a * star (toMat₀ g)\n  /-- The Maurer–Cartan form `i (∂_μ U) U⁻¹` of a gauge jet. -/\n  maurerCartan : GJ → (Fin 1 ⊕ Fin 3) → 𝔤J\n  lieJ_maurerCartan : ∀ U μ, lieJ (maurerCartan U μ)\n    = Complex.I • ((toMatJ U).map (pderiv μ) * star (toMatJ U))",
+     "line": 74,
+     "doc": "**A presentation of gauge jets by matrices**: the value group, its Lie algebra, the jet\ngroup and its Lie algebra of jets embed into `κ × κ` matrices, and every structure map of\nthe local gauge data is what it is for matrices: the entrywise constant coefficient,\ninclusion of constants, derivative and coordinate multiplication, conjugation for the\nadjoint actions and `i (∂_μ U) U⁻¹` for the Maurer–Cartan form.",
+     "statement": "structure MatrixJets (κ : Type) [Fintype κ] [DecidableEq κ] (G₀ : Type) [Group G₀]\n    (𝔤 : Type) [LieRing 𝔤] [LieAlgebra ℝ 𝔤] (GJ : Type) [Group GJ]\n    (𝔤J : Type) [LieRing 𝔤J] [LieAlgebra ℝ 𝔤J] where\n  /-- The matrix of a value. -/\n  toMat₀ : G₀ →* Matrix κ κ ℂ\n  toMat₀_injective : Function.Injective toMat₀\n  /-- The matrix of jets of a gauge jet. -/\n  toMatJ : GJ →* Matrix κ κ SpaceTimeAlgebra\n  toMatJ_injective : Function.Injective toMatJ\n  /-- The matrix of a Lie algebra element. -/\n  lie₀ : 𝔤 →ₗ[ℝ] Matrix κ κ ℂ\n  lie₀_injective : Function.Injective lie₀\n  lie₀_bracket : ∀ a b, lie₀ ⁅a, b⁆ = Complex.I • (lie₀ a * lie₀ b - lie₀ b * lie₀ a)\n  /-- The matrix of jets of a Lie algebra jet. -/\n  lieJ : 𝔤J →ₗ[ℝ] Matrix κ κ SpaceTimeAlgebra\n  lieJ_injective : Function.Injective lieJ\n  lieJ_bracket : ∀ a b, lieJ ⁅a, b⁆ = Complex.I • (lieJ a * lieJ b - lieJ b * lieJ a)\n  /-- Evaluation of a gauge jet at the base point. -/\n  eval : GJ →* G₀\n  toMat₀_eval : ∀ U, toMat₀ (eval U) = (constantCoeff : SpaceTimeAlgebra →+* ℂ).mapMatrix (toMatJ U)\n  /-- A constant gauge transformation as a jet. -/\n  ofConstant : G₀ →* GJ\n  toMatJ_ofConstant : ∀ g, toMatJ (ofConstant g) = (C : ℂ →+* SpaceTimeAlgebra).mapMatrix (toMat₀ g)\n  /-- Evaluation of a Lie algebra jet at the base point. -/\n  evalLie : 𝔤J →ₗ[ℝ] 𝔤\n  lie₀_evalLie : ∀ a, lie₀ (evalLie a) = (constantCoeff : SpaceTimeAlgebra →+* ℂ).mapMatrix (lieJ a)\n  /-- A constant Lie algebra element as a jet. -/\n  ofConstantLie : 𝔤 →ₗ[ℝ] 𝔤J\n  lieJ_ofConstantLie : ∀ a, lieJ (ofConstantLie a) = (C : ℂ →+* SpaceTimeAlgebra).mapMatrix (lie₀ a)\n  /-- The formal derivative in the direction `μ`. -/\n  deriv : (Fin 1 ⊕ Fin 3) → 𝔤J →ₗ[ℝ] 𝔤J\n  lieJ_deriv : ∀ μ a, lieJ (deriv μ a) = (lieJ a).map (pderiv μ)\n  /-- Multiplication of a jet by the spacetime coordinate `x_μ`. -/\n  coord : (Fin 1 ⊕ Fin 3) → 𝔤J →ₗ[ℝ] 𝔤J\n  lieJ_coord : ∀ μ a, lieJ (coord μ a) = (X μ : SpaceTimeAlgebra) • lieJ a\n  /-- The adjoint action of the jet group on the jet Lie algebra. -/\n  adjoint : Representation ℝ GJ 𝔤J\n  lieJ_adjoint : ∀ U a, lieJ (adjoint U a) = toMatJ U * lieJ a * toMatJ U⁻¹\n  /-- The adjoint representation of the value group on its Lie algebra. -/\n  adjointValue : Representation ℝ G₀ 𝔤\n  lie₀_adjointValue : ∀ g a, lie₀ (adjointValue g a) = toMat₀ g * lie₀ a * toMat₀ g⁻¹\n  /-- The Maurer–Cartan form `i (∂_μ U) U⁻¹` of a gauge jet. -/\n  maurerCartan : GJ → (Fin 1 ⊕ Fin 3) → 𝔤J\n  lieJ_maurerCartan : ∀ U μ, lieJ (maurerCartan U μ)\n    = Complex.I • ((toMatJ U).map (pderiv μ) * toMatJ U⁻¹)",
+     "sorry": false
+    },
+    {
+     "name": "LocalGaugeData.MatrixJets.toMatJ_mul_inv",
+     "kind": "lemma",
+     "line": 125,
+     "doc": "",
+     "statement": "lemma toMatJ_mul_inv (U : GJ) : M.toMatJ U * M.toMatJ U⁻¹ = 1",
+     "sorry": false
+    },
+    {
+     "name": "LocalGaugeData.MatrixJets.toMatJ_inv_mul",
+     "kind": "lemma",
+     "line": 129,
+     "doc": "",
+     "statement": "lemma toMatJ_inv_mul (U : GJ) : M.toMatJ U⁻¹ * M.toMatJ U = 1",
      "sorry": false
     },
     {
      "name": "LocalGaugeData.MatrixJets.eval_ofConstant",
      "kind": "lemma",
-     "line": 133,
+     "line": 140,
      "doc": "",
      "statement": "lemma eval_ofConstant (g : G₀) : M.eval (M.ofConstant g) = g",
      "sorry": false
@@ -10370,7 +10790,7 @@
     {
      "name": "LocalGaugeData.MatrixJets.evalLie_lie",
      "kind": "lemma",
-     "line": 139,
+     "line": 146,
      "doc": "",
      "statement": "lemma evalLie_lie (a b : 𝔤J) : M.evalLie ⁅a, b⁆ = ⁅M.evalLie a, M.evalLie b⁆",
      "sorry": false
@@ -10378,7 +10798,7 @@
     {
      "name": "LocalGaugeData.MatrixJets.ofConstantLie_lie",
      "kind": "lemma",
-     "line": 144,
+     "line": 151,
      "doc": "",
      "statement": "lemma ofConstantLie_lie (a b : 𝔤) :\n    M.ofConstantLie ⁅a, b⁆ = ⁅M.ofConstantLie a, M.ofConstantLie b⁆",
      "sorry": false
@@ -10386,7 +10806,7 @@
     {
      "name": "LocalGaugeData.MatrixJets.evalLie_ofConstantLie",
      "kind": "lemma",
-     "line": 150,
+     "line": 157,
      "doc": "",
      "statement": "lemma evalLie_ofConstantLie (a : 𝔤) : M.evalLie (M.ofConstantLie a) = a",
      "sorry": false
@@ -10394,7 +10814,7 @@
     {
      "name": "LocalGaugeData.MatrixJets.deriv_comm",
      "kind": "lemma",
-     "line": 156,
+     "line": 163,
      "doc": "",
      "statement": "lemma deriv_comm (μ ν : Fin 1 ⊕ Fin 3) (a : 𝔤J) :\n    M.deriv μ (M.deriv ν a) = M.deriv ν (M.deriv μ a)",
      "sorry": false
@@ -10402,7 +10822,7 @@
     {
      "name": "LocalGaugeData.MatrixJets.deriv_bracket",
      "kind": "lemma",
-     "line": 163,
+     "line": 170,
      "doc": "",
      "statement": "lemma deriv_bracket (μ : Fin 1 ⊕ Fin 3) (x y : 𝔤J) :\n    M.deriv μ ⁅x, y⁆ = ⁅M.deriv μ x, y⁆ + ⁅x, M.deriv μ y⁆",
      "sorry": false
@@ -10410,7 +10830,7 @@
     {
      "name": "LocalGaugeData.MatrixJets.deriv_ofConstantLie",
      "kind": "lemma",
-     "line": 173,
+     "line": 180,
      "doc": "",
      "statement": "lemma deriv_ofConstantLie (μ : Fin 1 ⊕ Fin 3) (a : 𝔤) : M.deriv μ (M.ofConstantLie a) = 0",
      "sorry": false
@@ -10418,7 +10838,7 @@
     {
      "name": "LocalGaugeData.MatrixJets.deriv_coord",
      "kind": "lemma",
-     "line": 179,
+     "line": 186,
      "doc": "",
      "statement": "lemma deriv_coord (μ ν : Fin 1 ⊕ Fin 3) (a : 𝔤J) :\n    M.deriv μ (M.coord ν a) = M.coord ν (M.deriv μ a) + if μ = ν then a else 0",
      "sorry": false
@@ -10426,7 +10846,7 @@
     {
      "name": "LocalGaugeData.MatrixJets.evalLie_coord",
      "kind": "lemma",
-     "line": 194,
+     "line": 201,
      "doc": "",
      "statement": "lemma evalLie_coord (μ : Fin 1 ⊕ Fin 3) (a : 𝔤J) : M.evalLie (M.coord μ a) = 0",
      "sorry": false
@@ -10434,7 +10854,7 @@
     {
      "name": "LocalGaugeData.MatrixJets.coord_lie",
      "kind": "lemma",
-     "line": 200,
+     "line": 207,
      "doc": "",
      "statement": "lemma coord_lie (μ : Fin 1 ⊕ Fin 3) (a b : 𝔤J) : ⁅M.coord μ a, b⁆ = M.coord μ ⁅a, b⁆",
      "sorry": false
@@ -10442,15 +10862,15 @@
     {
      "name": "LocalGaugeData.MatrixJets.conj_mul_conj",
      "kind": "lemma",
-     "line": 207,
-     "doc": "Conjugation by a unitary matrix respects products.",
-     "statement": "lemma conj_mul_conj (U : GJ) (A B : Matrix κ κ SpaceTimeAlgebra) :\n    (M.toMatJ U * A * star (M.toMatJ U)) * (M.toMatJ U * B * star (M.toMatJ U))\n      = M.toMatJ U * (A * B) * star (M.toMatJ U)",
+     "line": 214,
+     "doc": "Conjugation by an invertible matrix respects products.",
+     "statement": "lemma conj_mul_conj (U : GJ) (A B : Matrix κ κ SpaceTimeAlgebra) :\n    (M.toMatJ U * A * M.toMatJ U⁻¹) * (M.toMatJ U * B * M.toMatJ U⁻¹)\n      = M.toMatJ U * (A * B) * M.toMatJ U⁻¹",
      "sorry": false
     },
     {
      "name": "LocalGaugeData.MatrixJets.adjoint_lie",
      "kind": "lemma",
-     "line": 214,
+     "line": 221,
      "doc": "",
      "statement": "lemma adjoint_lie (U : GJ) (x y : 𝔤J) :\n    M.adjoint U ⁅x, y⁆ = ⁅M.adjoint U x, M.adjoint U y⁆",
      "sorry": false
@@ -10458,7 +10878,7 @@
     {
      "name": "LocalGaugeData.MatrixJets.evalLie_adjoint",
      "kind": "lemma",
-     "line": 221,
+     "line": 228,
      "doc": "",
      "statement": "lemma evalLie_adjoint (U : GJ) (x : 𝔤J) :\n    M.evalLie (M.adjoint U x) = M.adjointValue (M.eval U) (M.evalLie x)",
      "sorry": false
@@ -10466,7 +10886,7 @@
     {
      "name": "LocalGaugeData.MatrixJets.maurerCartan_ofConstant",
      "kind": "lemma",
-     "line": 227,
+     "line": 234,
      "doc": "",
      "statement": "lemma maurerCartan_ofConstant (g : G₀) (μ : Fin 1 ⊕ Fin 3) :\n    M.maurerCartan (M.ofConstant g) μ = 0",
      "sorry": false
@@ -10474,7 +10894,7 @@
     {
      "name": "LocalGaugeData.MatrixJets.maurerCartan_cocycle",
      "kind": "lemma",
-     "line": 234,
+     "line": 241,
      "doc": "",
      "statement": "lemma maurerCartan_cocycle (U V : GJ) (μ : Fin 1 ⊕ Fin 3) :\n    M.maurerCartan (U * V) μ = M.maurerCartan U μ + M.adjoint U (M.maurerCartan V μ)",
      "sorry": false
@@ -10482,7 +10902,7 @@
     {
      "name": "LocalGaugeData.MatrixJets.maurerCartan_structure",
      "kind": "lemma",
-     "line": 244,
+     "line": 249,
      "doc": "",
      "statement": "lemma maurerCartan_structure (U : GJ) (μ ν : Fin 1 ⊕ Fin 3) :\n    M.deriv μ (M.maurerCartan U ν) - M.deriv ν (M.maurerCartan U μ)\n      + ⁅M.maurerCartan U μ, M.maurerCartan U ν⁆ = 0",
      "sorry": false
@@ -10490,7 +10910,7 @@
     {
      "name": "LocalGaugeData.MatrixJets.deriv_adjoint",
      "kind": "lemma",
-     "line": 270,
+     "line": 276,
      "doc": "",
      "statement": "lemma deriv_adjoint (U : GJ) (μ : Fin 1 ⊕ Fin 3) (x : 𝔤J) :\n    M.deriv μ (M.adjoint U x) = M.adjoint U (M.deriv μ x)\n      - ⁅M.maurerCartan U μ, M.adjoint U x⁆",
      "sorry": false
@@ -10498,7 +10918,7 @@
     {
      "name": "LocalGaugeData.MatrixJets.evalLieHom",
      "kind": "def",
-     "line": 287,
+     "line": 294,
      "doc": "Evaluation of Lie algebra jets, as a morphism of Lie algebras.",
      "statement": "noncomputable def evalLieHom : 𝔤J →ₗ⁅ℝ⁆ 𝔤",
      "sorry": false
@@ -10506,7 +10926,7 @@
     {
      "name": "LocalGaugeData.MatrixJets.evalLieHom_apply",
      "kind": "lemma",
-     "line": 292,
+     "line": 299,
      "doc": "",
      "statement": "lemma evalLieHom_apply (a : 𝔤J) : M.evalLieHom a = M.evalLie a",
      "sorry": false
@@ -10514,7 +10934,7 @@
     {
      "name": "LocalGaugeData.MatrixJets.toLocalGaugeData",
      "kind": "def",
-     "line": 295,
+     "line": 302,
      "doc": "**The local gauge data presented by matrices of jets.**",
      "statement": "noncomputable def toLocalGaugeData : LocalGaugeData G₀ 𝔤 GJ 𝔤J",
      "sorry": false
@@ -10522,7 +10942,7 @@
     {
      "name": "LocalGaugeData.MatrixJets.toLocalGaugeData_eval",
      "kind": "lemma",
-     "line": 320,
+     "line": 327,
      "doc": "",
      "statement": "lemma toLocalGaugeData_eval : M.toLocalGaugeData.eval = M.eval",
      "sorry": false
@@ -10530,7 +10950,7 @@
     {
      "name": "LocalGaugeData.MatrixJets.toLocalGaugeData_ofConstant",
      "kind": "lemma",
-     "line": 321,
+     "line": 328,
      "doc": "",
      "statement": "lemma toLocalGaugeData_ofConstant : M.toLocalGaugeData.ofConstant = M.ofConstant",
      "sorry": false
@@ -10538,7 +10958,7 @@
     {
      "name": "LocalGaugeData.MatrixJets.toLocalGaugeData_evalLie_apply",
      "kind": "lemma",
-     "line": 322,
+     "line": 329,
      "doc": "",
      "statement": "lemma toLocalGaugeData_evalLie_apply (a : 𝔤J) :\n    M.toLocalGaugeData.evalLie a = M.evalLie a",
      "sorry": false
@@ -10546,7 +10966,7 @@
     {
      "name": "LocalGaugeData.MatrixJets.toLocalGaugeData_ofConstantLie",
      "kind": "lemma",
-     "line": 324,
+     "line": 331,
      "doc": "",
      "statement": "lemma toLocalGaugeData_ofConstantLie :\n    M.toLocalGaugeData.ofConstantLie = M.ofConstantLie",
      "sorry": false
@@ -10554,7 +10974,7 @@
     {
      "name": "LocalGaugeData.MatrixJets.toLocalGaugeData_deriv",
      "kind": "lemma",
-     "line": 326,
+     "line": 333,
      "doc": "",
      "statement": "lemma toLocalGaugeData_deriv (μ : Fin 1 ⊕ Fin 3) :\n    M.toLocalGaugeData.deriv μ = M.deriv μ",
      "sorry": false
@@ -10562,7 +10982,7 @@
     {
      "name": "LocalGaugeData.MatrixJets.toLocalGaugeData_mulCoord",
      "kind": "lemma",
-     "line": 328,
+     "line": 335,
      "doc": "",
      "statement": "lemma toLocalGaugeData_mulCoord (μ : Fin 1 ⊕ Fin 3) :\n    M.toLocalGaugeData.mulCoord μ = M.coord μ",
      "sorry": false
@@ -10570,7 +10990,7 @@
     {
      "name": "LocalGaugeData.MatrixJets.toLocalGaugeData_adjointJ",
      "kind": "lemma",
-     "line": 330,
+     "line": 337,
      "doc": "",
      "statement": "lemma toLocalGaugeData_adjointJ : M.toLocalGaugeData.adjointJ = M.adjoint",
      "sorry": false
@@ -10578,7 +10998,7 @@
     {
      "name": "LocalGaugeData.MatrixJets.toLocalGaugeData_adjoint",
      "kind": "lemma",
-     "line": 331,
+     "line": 338,
      "doc": "",
      "statement": "lemma toLocalGaugeData_adjoint :\n    M.toLocalGaugeData.adjoint = M.adjointValue",
      "sorry": false
@@ -10586,7 +11006,7 @@
     {
      "name": "LocalGaugeData.MatrixJets.toLocalGaugeData_maurerCartan",
      "kind": "lemma",
-     "line": 333,
+     "line": 340,
      "doc": "",
      "statement": "lemma toLocalGaugeData_maurerCartan :\n    M.toLocalGaugeData.maurerCartan = M.maurerCartan",
      "sorry": false
@@ -10594,7 +11014,7 @@
     {
      "name": "LocalGaugeData.MatrixJets.lieJ_iteratedDeriv",
      "kind": "lemma",
-     "line": 343,
+     "line": 350,
      "doc": "The iterated derivative is the entrywise iterated formal derivative.",
      "statement": "lemma lieJ_iteratedDeriv (s : Multiset (Fin 1 ⊕ Fin 3)) (a : 𝔤J) :\n    M.lieJ (M.toLocalGaugeData.iteratedDeriv s a)\n      = (M.lieJ a).map fun f => SpaceTimeAlgebra.iteratedPDeriv s f",
      "sorry": false
@@ -10602,7 +11022,7 @@
     {
      "name": "LocalGaugeData.MatrixJets.lie₀_evalLie_iteratedDeriv",
      "kind": "lemma",
-     "line": 359,
+     "line": 366,
      "doc": "The base-point value of the iterated derivative, entrywise.",
      "statement": "lemma lie₀_evalLie_iteratedDeriv (s : Multiset (Fin 1 ⊕ Fin 3)) (a : 𝔤J) :\n    M.lie₀ (M.toLocalGaugeData.evalLie (M.toLocalGaugeData.iteratedDeriv s a))\n      = (M.lieJ a).map fun f => constantCoeff (SpaceTimeAlgebra.iteratedPDeriv s f)",
      "sorry": false
@@ -10610,7 +11030,7 @@
     {
      "name": "LocalGaugeData.MatrixJets.faithful",
      "kind": "lemma",
-     "line": 369,
+     "line": 376,
      "doc": "**A package presented by matrices is faithful**: a jet is determined entrywise by the\nconstant coefficients of its derivatives, and a jet with vanishing Maurer–Cartan form has\nconstant entries.",
      "statement": "lemma faithful : M.toLocalGaugeData.Faithful",
      "sorry": false
@@ -10618,23 +11038,23 @@
     {
      "name": "LocalGaugeData.MatrixJets.suFactor",
      "kind": "def",
-     "line": 402,
-     "doc": "**The canonical `SU`-type factor** of a package presented by matrices: the matrices of\njets themselves.",
-     "statement": "noncomputable def suFactor : SUFactor M.toLocalGaugeData κ",
+     "line": 408,
+     "doc": "**The canonical `SU`-type factor** of a package presented by unitary matrices, those\nwhose inverse is the conjugate transpose: the matrices of jets themselves.",
+     "statement": "noncomputable def suFactor (hstar : ∀ U, star (M.toMatJ U) = M.toMatJ U⁻¹) :\n    SUFactor M.toLocalGaugeData κ",
      "sorry": false
     },
     {
      "name": "LocalGaugeData.MatrixJets.lieJ_radial",
      "kind": "lemma",
-     "line": 426,
-     "doc": "The radial component of the Maurer–Cartan form, in matrices:\n`∑_μ x_μ · i (∂_μ U) U†`.",
-     "statement": "lemma lieJ_radial (U : GJ) :\n    M.lieJ (M.toLocalGaugeData.radial U) =\n      ∑ μ, (X μ : SpaceTimeAlgebra) •\n          (Complex.I • ((M.toMatJ U).map (pderiv μ) * star (M.toMatJ U)))",
+     "line": 433,
+     "doc": "The radial component of the Maurer–Cartan form, in matrices:\n`∑_μ x_μ · i (∂_μ U) U⁻¹`.",
+     "statement": "lemma lieJ_radial (U : GJ) :\n    M.lieJ (M.toLocalGaugeData.radial U) =\n      ∑ μ, (X μ : SpaceTimeAlgebra) •\n          (Complex.I • ((M.toMatJ U).map (pderiv μ) * M.toMatJ U⁻¹))",
      "sorry": false
     },
     {
      "name": "LocalGaugeData.MatrixJets.mem_truncationKer_zero_iff",
      "kind": "lemma",
-     "line": 434,
+     "line": 441,
      "doc": "A gauge jet is pure exactly when its matrix is the identity at the base point.",
      "statement": "lemma mem_truncationKer_zero_iff (U : GJ) :\n    U ∈ M.toLocalGaugeData.truncationKer 0 ↔\n      (constantCoeff : SpaceTimeAlgebra →+* ℂ).mapMatrix (M.toMatJ U) = 1",
      "sorry": false
@@ -10642,7 +11062,7 @@
     {
      "name": "LocalGaugeData.MatrixJets.free",
      "kind": "lemma",
-     "line": 445,
+     "line": 452,
      "doc": "**A criterion for freeness.** A presentation by matrices is free when every matrix of\njets built entrywise from Taylor data in `𝔤` is a Lie algebra jet, the Lie algebra jets\nare hermitian, and every unitary solution `V` of `E V = −i P V`, `V(0) = 1`, for a Lie\nalgebra jet `P`, is a gauge jet.",
      "statement": "lemma free\n    (hTaylor : ∀ c : Multiset (Fin 1 ⊕ Fin 3) → 𝔤,\n      ∃ Y, M.lieJ Y = SpaceTimeAlgebra.taylorMatrix fun s => M.lie₀ (c s))\n    (hherm : ∀ a, star (M.lieJ a) = M.lieJ a)\n    (hlift : ∀ (ρ : 𝔤J) (V : Matrix κ κ SpaceTimeAlgebra),\n      (constantCoeff : SpaceTimeAlgebra →+* ℂ).mapMatrix V = 1 → V * star V = 1 →\n      ∑ μ, (X μ : SpaceTimeAlgebra) • V.map (pderiv μ) = ((-Complex.I) • M.lieJ ρ) * V →\n      ∃ U, M.toMatJ U = V) :\n    M.toLocalGaugeData.Free",
      "sorry": false
@@ -11994,7 +12414,7 @@
     {
      "name": "LocalGaugeData.su",
      "kind": "def",
-     "line": 323,
+     "line": 321,
      "doc": "**The local gauge data of `SU(n)`**: special unitary jets, traceless hermitian jets\nwith the bracket `i (a b − b a)` and the conjugation action, and the Maurer–Cartan form\n`i (∂_μ U) U⁻¹`.",
      "statement": "noncomputable def su (n : ℕ) : LocalGaugeData (SU n) (SUAlgebra n) (JetSU n) (JetSUAlgebra n)",
      "sorry": false
@@ -12002,7 +12422,7 @@
     {
      "name": "LocalGaugeData.su_eval",
      "kind": "lemma",
-     "line": 328,
+     "line": 326,
      "doc": "",
      "statement": "lemma su_eval : (su n).eval = JetSU.eval",
      "sorry": false
@@ -12010,7 +12430,7 @@
     {
      "name": "LocalGaugeData.su_ofConstant",
      "kind": "lemma",
-     "line": 329,
+     "line": 327,
      "doc": "",
      "statement": "lemma su_ofConstant : (su n).ofConstant = JetSU.ofConstant",
      "sorry": false
@@ -12018,7 +12438,7 @@
     {
      "name": "LocalGaugeData.su_evalLie_apply",
      "kind": "lemma",
-     "line": 330,
+     "line": 328,
      "doc": "",
      "statement": "lemma su_evalLie_apply (a : JetSUAlgebra n) : (su n).evalLie a = JetSUAlgebra.evalLie a",
      "sorry": false
@@ -12026,7 +12446,7 @@
     {
      "name": "LocalGaugeData.su_ofConstantLie",
      "kind": "lemma",
-     "line": 332,
+     "line": 330,
      "doc": "",
      "statement": "lemma su_ofConstantLie :\n    ((su n).ofConstantLie : SUAlgebra n →ₗ[ℝ] JetSUAlgebra n) = JetSUAlgebra.ofConstantLie",
      "sorry": false
@@ -12034,7 +12454,7 @@
     {
      "name": "LocalGaugeData.su_deriv",
      "kind": "lemma",
-     "line": 334,
+     "line": 332,
      "doc": "",
      "statement": "lemma su_deriv (μ : Fin 1 ⊕ Fin 3) : (su n).deriv μ = JetSUAlgebra.deriv μ",
      "sorry": false
@@ -12042,7 +12462,7 @@
     {
      "name": "LocalGaugeData.su_adjointJ",
      "kind": "lemma",
-     "line": 335,
+     "line": 333,
      "doc": "",
      "statement": "lemma su_adjointJ : (su n).adjointJ = JetSUAlgebra.adjoint",
      "sorry": false
@@ -12050,7 +12470,7 @@
     {
      "name": "LocalGaugeData.su_maurerCartan",
      "kind": "lemma",
-     "line": 336,
+     "line": 334,
      "doc": "",
      "statement": "lemma su_maurerCartan : (su n).maurerCartan = JetSUAlgebra.mc",
      "sorry": false
@@ -12058,7 +12478,7 @@
     {
      "name": "LocalGaugeData.suFactor",
      "kind": "def",
-     "line": 339,
+     "line": 337,
      "doc": "The canonical `SU(n)` factor of the local gauge data of `SU(n)`.",
      "statement": "noncomputable def suFactor (n : ℕ) : SUFactor (su n) (Fin n)",
      "sorry": false
@@ -12066,7 +12486,7 @@
     {
      "name": "LocalGaugeData.instFaithfulSU",
      "kind": "instance",
-     "line": 342,
+     "line": 341,
      "doc": "The local gauge data of `SU(n)` is faithful.",
      "statement": "instance instFaithfulSU : (su n).Faithful",
      "sorry": false
@@ -12074,7 +12494,7 @@
     {
      "name": "LocalGaugeData.instFreeSU",
      "kind": "instance",
-     "line": 347,
+     "line": 346,
      "doc": "The local gauge data of `SU(n)` is free. Traceless hermitian Taylor data give a\ntraceless hermitian matrix of jets, and the unitary Euler transport of a traceless\nhermitian jet has unit determinant by Jacobi's formula.",
      "statement": "instance instFreeSU : (su n).Free",
      "sorry": false
@@ -14312,7 +14732,7 @@
      "text": "## D. The presentation and the local gauge data"
     },
     {
-     "line": 330,
+     "line": 332,
      "text": "## E. The canonical factor"
     }
    ],
@@ -14528,7 +14948,7 @@
     {
      "name": "LocalGaugeData.u1",
      "kind": "def",
-     "line": 286,
+     "line": 288,
      "doc": "**The local gauge data of `U(1)`**: unitary jets, self-adjoint scalar jets with\nvanishing bracket and trivial adjoint action, and the Maurer–Cartan form\n`i (∂_μ u) u⁻¹`.",
      "statement": "noncomputable def u1 : LocalGaugeData U1 U1Algebra JetU1 JetU1Algebra",
      "sorry": false
@@ -14536,7 +14956,7 @@
     {
      "name": "LocalGaugeData.u1_eval",
      "kind": "lemma",
-     "line": 289,
+     "line": 291,
      "doc": "",
      "statement": "lemma u1_eval : u1.eval = JetU1.eval",
      "sorry": false
@@ -14544,7 +14964,7 @@
     {
      "name": "LocalGaugeData.u1_ofConstant",
      "kind": "lemma",
-     "line": 290,
+     "line": 292,
      "doc": "",
      "statement": "lemma u1_ofConstant : u1.ofConstant = JetU1.ofConstant",
      "sorry": false
@@ -14552,7 +14972,7 @@
     {
      "name": "LocalGaugeData.u1_evalLie_apply",
      "kind": "lemma",
-     "line": 291,
+     "line": 293,
      "doc": "",
      "statement": "lemma u1_evalLie_apply (a : JetU1Algebra) : u1.evalLie a = JetU1.evalLie a",
      "sorry": false
@@ -14560,7 +14980,7 @@
     {
      "name": "LocalGaugeData.u1_ofConstantLie",
      "kind": "lemma",
-     "line": 292,
+     "line": 294,
      "doc": "",
      "statement": "lemma u1_ofConstantLie : u1.ofConstantLie = JetU1.ofConstantLie",
      "sorry": false
@@ -14568,7 +14988,7 @@
     {
      "name": "LocalGaugeData.u1_deriv",
      "kind": "lemma",
-     "line": 293,
+     "line": 295,
      "doc": "",
      "statement": "lemma u1_deriv (μ : Fin 1 ⊕ Fin 3) : u1.deriv μ = JetU1.deriv μ",
      "sorry": false
@@ -14576,7 +14996,7 @@
     {
      "name": "LocalGaugeData.u1_maurerCartan",
      "kind": "lemma",
-     "line": 294,
+     "line": 296,
      "doc": "",
      "statement": "lemma u1_maurerCartan : u1.maurerCartan = JetU1.mc",
      "sorry": false
@@ -14584,7 +15004,7 @@
     {
      "name": "LocalGaugeData.u1_adjointJ",
      "kind": "lemma",
-     "line": 295,
+     "line": 297,
      "doc": "",
      "statement": "lemma u1_adjointJ (u : JetU1) (a : JetU1Algebra) : u1.adjointJ u a = a",
      "sorry": false
@@ -14592,7 +15012,7 @@
     {
      "name": "LocalGaugeData.u1_iteratedDeriv_val",
      "kind": "lemma",
-     "line": 298,
+     "line": 300,
      "doc": "The iterated derivative on `u(1)` jets is the iterated formal derivative.",
      "statement": "lemma u1_iteratedDeriv_val (s : Multiset (Fin 1 ⊕ Fin 3)) (a : JetU1Algebra) :\n    (u1.iteratedDeriv s a : SpaceTimeAlgebra) =\n      SpaceTimeAlgebra.iteratedPDeriv s (a : SpaceTimeAlgebra)",
      "sorry": false
@@ -14600,7 +15020,7 @@
     {
      "name": "LocalGaugeData.instFaithfulU1",
      "kind": "instance",
-     "line": 309,
+     "line": 311,
      "doc": "The local gauge data of `U(1)` is faithful.",
      "statement": "instance instFaithfulU1 : u1.Faithful",
      "sorry": false
@@ -14608,7 +15028,7 @@
     {
      "name": "LocalGaugeData.instFreeU1",
      "kind": "instance",
-     "line": 313,
+     "line": 315,
      "doc": "The local gauge data of `U(1)` is free. Real Taylor data give a self-adjoint jet, and\nthe unitary Euler transport of a `1 × 1` matrix is a unitary jet.",
      "statement": "instance instFreeU1 : u1.Free",
      "sorry": false
@@ -14616,7 +15036,7 @@
     {
      "name": "LocalGaugeData.u1Factor",
      "kind": "def",
-     "line": 337,
+     "line": 339,
      "doc": "The canonical `U(1)` factor of the local gauge data of `U(1)`.",
      "statement": "noncomputable def u1Factor : U1Factor u1",
      "sorry": false

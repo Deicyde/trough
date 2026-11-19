@@ -8,7 +8,7 @@ proof: formalized
 
 # Position operators
 
-The module `Physlib.QuantumMechanics.Operators.Position`, [Physlib/QuantumMechanics/Operators/Position.lean](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/QuantumMechanics/Operators/Position.lean): 36 declarations (1 instance with no name), 14 with a docstring; 1 private, not shown.
+The module `Physlib.QuantumMechanics.Operators.Position`, [Physlib/QuantumMechanics/Operators/Position.lean](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/QuantumMechanics/Operators/Position.lean): 36 declarations (1 instance with no name), 14 with a docstring; 1 private, not shown.
 
 ## i. Overview
 
@@ -37,7 +37,7 @@ The module `Physlib.QuantumMechanics.Operators.Position`, [Physlib/QuantumMechan
 
 ### A.1. Position vector
 
-**`QuantumMechanics.positionCLM`**, a def, [line 79](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/QuantumMechanics/Operators/Position.lean#L79).
+**`QuantumMechanics.positionCLM`**, a def, [line 79](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/QuantumMechanics/Operators/Position.lean#L79).
 
 > Component `i` of the position operator is the continuous linear map
 > from `𝓢(Space d, ℂ)` to itself which maps `ψ` to `xᵢψ`.
@@ -46,19 +46,19 @@ The module `Physlib.QuantumMechanics.Operators.Position`, [Physlib/QuantumMechan
 def positionCLM : 𝓢(Space d, ℂ) →L[ℂ] 𝓢(Space d, ℂ)
 ```
 
-**`QuantumMechanics.positionCLM_apply_fun`**, a lemma, [line 88](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/QuantumMechanics/Operators/Position.lean#L88).
+**`QuantumMechanics.positionCLM_apply_fun`**, a lemma, [line 88](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/QuantumMechanics/Operators/Position.lean#L88).
 
 ```lean
 lemma positionCLM_apply_fun (ψ : 𝓢(Space d, ℂ)) : 𝐱 i ψ = (fun x : Space d ↦ x i) • ⇑ψ
 ```
 
-**`QuantumMechanics.positionCLM_apply`**, a lemma, [line 95](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/QuantumMechanics/Operators/Position.lean#L95).
+**`QuantumMechanics.positionCLM_apply`**, a lemma, [line 95](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/QuantumMechanics/Operators/Position.lean#L95).
 
 ```lean
 lemma positionCLM_apply (ψ : 𝓢(Space d, ℂ)) (x : Space d) : 𝐱 i ψ x = x i * ψ x
 ```
 
-**`QuantumMechanics.positionCLM_inner`**, a lemma, [line 100](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/QuantumMechanics/Operators/Position.lean#L100).
+**`QuantumMechanics.positionCLM_inner`**, a lemma, [line 100](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/QuantumMechanics/Operators/Position.lean#L100).
 
 > The position operator is symmetric on Schwartz maps, in terms of `positionCLM`.
 
@@ -72,7 +72,7 @@ lemma positionCLM_inner (f g : 𝓢(Space d, ℂ)) :
 
 ### A.2. Radius powers (regularized)
 
-**`QuantumMechanics.radiusRegPowCLM`**, a def, [line 117](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/QuantumMechanics/Operators/Position.lean#L117).
+**`QuantumMechanics.radiusRegPowCLM`**, a def, [line 117](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/QuantumMechanics/Operators/Position.lean#L117).
 
 > The radius operator to power `s`, regularized by `ε ≠ 0`, is the continuous linear map
 > from `𝓢(Space d, ℂ)` to itself which maps `ψ` to `(‖x‖² + ε²)^(s/2) • ψ`.
@@ -81,35 +81,35 @@ lemma positionCLM_inner (f g : 𝓢(Space d, ℂ)) :
 def radiusRegPowCLM {d : ℕ} (ε : ℝˣ) (s : ℝ) : 𝓢(Space d, ℂ) →L[ℂ] 𝓢(Space d, ℂ)
 ```
 
-**`QuantumMechanics.radiusRegPowCLM_apply_fun`**, a lemma, [line 126](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/QuantumMechanics/Operators/Position.lean#L126).
+**`QuantumMechanics.radiusRegPowCLM_apply_fun`**, a lemma, [line 126](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/QuantumMechanics/Operators/Position.lean#L126).
 
 ```lean
 lemma radiusRegPowCLM_apply_fun {d : ℕ} (ε : ℝˣ) (s : ℝ) (ψ : 𝓢(Space d, ℂ)) :
     𝐫₀ ε s ψ = fun x ↦ (‖x‖ ^ 2 + ε ^ 2) ^ (s / 2) • ψ x
 ```
 
-**`QuantumMechanics.radiusRegPowCLM_apply`**, a lemma, [line 134](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/QuantumMechanics/Operators/Position.lean#L134).
+**`QuantumMechanics.radiusRegPowCLM_apply`**, a lemma, [line 134](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/QuantumMechanics/Operators/Position.lean#L134).
 
 ```lean
 lemma radiusRegPowCLM_apply {d : ℕ} (ε : ℝˣ) (s : ℝ) (ψ : 𝓢(Space d, ℂ)) (x : Space d) :
     𝐫₀ ε s ψ x = (‖x‖ ^ 2 + ε ^ 2) ^ (s / 2) • ψ x
 ```
 
-**`QuantumMechanics.radiusRegPowCLM_comp_eq`**, a lemma, [line 139](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/QuantumMechanics/Operators/Position.lean#L139).
+**`QuantumMechanics.radiusRegPowCLM_comp_eq`**, a lemma, [line 139](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/QuantumMechanics/Operators/Position.lean#L139).
 
 ```lean
 lemma radiusRegPowCLM_comp_eq {d : ℕ} (ε : ℝˣ) (s t : ℝ) :
     𝐫₀[d] ε s ∘L 𝐫₀ ε t = 𝐫₀ ε (s+t)
 ```
 
-**`QuantumMechanics.radiusRegPowCLM_zero`**, a lemma, [line 145](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/QuantumMechanics/Operators/Position.lean#L145).
+**`QuantumMechanics.radiusRegPowCLM_zero`**, a lemma, [line 145](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/QuantumMechanics/Operators/Position.lean#L145).
 
 ```lean
 lemma radiusRegPowCLM_zero {d : ℕ} (ε : ℝˣ) :
     𝐫₀ ε 0 = ContinuousLinearMap.id ℂ 𝓢(Space d, ℂ)
 ```
 
-**`QuantumMechanics.positionSqCLM_eq`**, a lemma, [line 150](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/QuantumMechanics/Operators/Position.lean#L150).
+**`QuantumMechanics.positionSqCLM_eq`**, a lemma, [line 150](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/QuantumMechanics/Operators/Position.lean#L150).
 
 ```lean
 lemma positionSqCLM_eq {d : ℕ} (ε : ℝˣ) :
@@ -118,7 +118,7 @@ lemma positionSqCLM_eq {d : ℕ} (ε : ℝˣ) :
 
 ### A.3. Radius powers
 
-**`QuantumMechanics.radiusPowLM`**, a def, [line 161](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/QuantumMechanics/Operators/Position.lean#L161).
+**`QuantumMechanics.radiusPowLM`**, a def, [line 161](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/QuantumMechanics/Operators/Position.lean#L161).
 
 > The radius operator to power `s` is the linear map from `𝓢(Space d, ℂ)` to `Space d → ℂ` that
 > maps `ψ` to `x ↦ ‖x‖ˢψ(x)` (which is 'nearly' Schwartz for general `s`).
@@ -127,21 +127,21 @@ lemma positionSqCLM_eq {d : ℕ} (ε : ℝˣ) :
 def radiusPowLM {d : ℕ} (s : ℝ) : 𝓢(Space d, ℂ) →ₗ[ℂ] Space d → ℂ
 ```
 
-**`QuantumMechanics.radiusPowLM_apply_fun`**, a lemma, [line 172](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/QuantumMechanics/Operators/Position.lean#L172).
+**`QuantumMechanics.radiusPowLM_apply_fun`**, a lemma, [line 172](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/QuantumMechanics/Operators/Position.lean#L172).
 
 ```lean
 lemma radiusPowLM_apply_fun {d : ℕ} (s : ℝ) (ψ : 𝓢(Space d, ℂ)) :
     𝐫 s ψ = fun x ↦ ‖x‖ ^ s • ψ x
 ```
 
-**`QuantumMechanics.radiusPowLM_apply`**, a lemma, [line 176](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/QuantumMechanics/Operators/Position.lean#L176).
+**`QuantumMechanics.radiusPowLM_apply`**, a lemma, [line 176](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/QuantumMechanics/Operators/Position.lean#L176).
 
 ```lean
 lemma radiusPowLM_apply {d : ℕ} (s : ℝ) (ψ : 𝓢(Space d, ℂ)) (x : Space d) :
     𝐫 s ψ x = ‖x‖ ^ s • ψ x
 ```
 
-**`QuantumMechanics.radiusPowLM_apply_contDiffAt`**, a lemma, [line 182](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/QuantumMechanics/Operators/Position.lean#L182).
+**`QuantumMechanics.radiusPowLM_apply_contDiffAt`**, a lemma, [line 182](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/QuantumMechanics/Operators/Position.lean#L182).
 
 > `x ↦ ‖x‖ˢψ(x)` is smooth away from `x = 0`.
 
@@ -150,7 +150,7 @@ lemma radiusPowLM_apply_contDiffAt {d : ℕ} (s : ℝ) (n : ℕ∞) (ψ : 𝓢(S
     (hx : x ≠ 0) : ContDiffAt ℝ n (𝐫 s ψ) x
 ```
 
-**`QuantumMechanics.radiusPowLM_apply_stronglyMeasurable`**, a lemma, [line 192](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/QuantumMechanics/Operators/Position.lean#L192).
+**`QuantumMechanics.radiusPowLM_apply_stronglyMeasurable`**, a lemma, [line 192](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/QuantumMechanics/Operators/Position.lean#L192).
 
 > `x ↦ ‖x‖ˢψ(x)` is strongly measurable.
 
@@ -159,7 +159,7 @@ lemma radiusPowLM_apply_stronglyMeasurable {d : ℕ} (s : ℝ) (ψ : 𝓢(Space 
     StronglyMeasurable (𝐫 s ψ)
 ```
 
-**`QuantumMechanics.radiusPowLM_apply_memHS`**, a lemma, [line 199](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/QuantumMechanics/Operators/Position.lean#L199).
+**`QuantumMechanics.radiusPowLM_apply_memHS`**, a lemma, [line 199](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/QuantumMechanics/Operators/Position.lean#L199).
 
 > `x ↦ ‖x‖ˢψ(x)` is square-integrable provided `s` is not too negative.
 
@@ -171,7 +171,7 @@ lemma radiusPowLM_apply_memHS {d : ℕ} (s : ℝ) (ψ : 𝓢(Space d, ℂ)) (a :
 
 #### A.3.1. As limit of regularized operators
 
-**`QuantumMechanics.nhdsZeroUnits`**, an abbrev, [line 276](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/QuantumMechanics/Operators/Position.lean#L276).
+**`QuantumMechanics.nhdsZeroUnits`**, an abbrev, [line 276](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/QuantumMechanics/Operators/Position.lean#L276).
 
 > Neighborhoods of "0" in the non-zero reals, i.e. those sets containing `(-ε,0) ∪ (0,ε) ⊆ ℝˣ`
 > for some `ε > 0`.
@@ -180,13 +180,13 @@ lemma radiusPowLM_apply_memHS {d : ℕ} (s : ℝ) (ψ : 𝓢(Space d, ℂ)) (a :
 abbrev nhdsZeroUnits : Filter ℝˣ
 ```
 
-**An instance with no name**, [line 278](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/QuantumMechanics/Operators/Position.lean#L278).
+**An instance with no name**, [line 278](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/QuantumMechanics/Operators/Position.lean#L278).
 
 ```lean
 instance : NeBot nhdsZeroUnits
 ```
 
-**`QuantumMechanics.radiusRegPow_tendsto_radiusPow`**, a lemma, [line 285](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/QuantumMechanics/Operators/Position.lean#L285).
+**`QuantumMechanics.radiusRegPow_tendsto_radiusPow`**, a lemma, [line 285](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/QuantumMechanics/Operators/Position.lean#L285).
 
 > `𝐫[ε,s] ψ` converges pointwise to `𝐫[s] ψ` as `ε → 0` except perhaps at `x = 0`.
 
@@ -195,7 +195,7 @@ lemma radiusRegPow_tendsto_radiusPow {d : ℕ} (s : ℝ) (ψ : 𝓢(Space d, ℂ
     (hx : x ≠ 0) : Tendsto (fun ε ↦ 𝐫₀ ε s ψ x) nhdsZeroUnits (nhds (𝐫 s ψ x))
 ```
 
-**`QuantumMechanics.radiusRegPow_tendsto_radiusPow'`**, a lemma, [line 295](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/QuantumMechanics/Operators/Position.lean#L295).
+**`QuantumMechanics.radiusRegPow_tendsto_radiusPow'`**, a lemma, [line 295](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/QuantumMechanics/Operators/Position.lean#L295).
 
 > `𝐫[ε,s] ψ` converges pointwise to `𝐫[s] ψ` as `ε → 0` provided `𝐫[ε,s] ψ 0` is bounded.
 
@@ -204,7 +204,7 @@ lemma radiusRegPow_tendsto_radiusPow' {d : ℕ} (s : ℝ) (ψ : 𝓢(Space d, �
     Tendsto (fun ε ↦ ⇑(𝐫₀ ε s ψ)) nhdsZeroUnits (nhds (𝐫 s ψ))
 ```
 
-**`QuantumMechanics.radiusRegPow_ae_tendsto_radiusPow`**, a lemma, [line 311](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/QuantumMechanics/Operators/Position.lean#L311).
+**`QuantumMechanics.radiusRegPow_ae_tendsto_radiusPow`**, a lemma, [line 311](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/QuantumMechanics/Operators/Position.lean#L311).
 
 > a.e. version of `radiusRegPow_tendsto_radiusPow`
 
@@ -213,7 +213,7 @@ lemma radiusRegPow_ae_tendsto_radiusPow {d : ℕ} [NeZero d] (s : ℝ) (ψ : �
     ∀ᵐ x, Tendsto (fun ε ↦ 𝐫₀ ε s ψ x) nhdsZeroUnits (nhds (𝐫 s ψ x))
 ```
 
-**`QuantumMechanics.radiusRegPow_ae_tendsto_iff`**, a lemma, [line 320](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/QuantumMechanics/Operators/Position.lean#L320).
+**`QuantumMechanics.radiusRegPow_ae_tendsto_iff`**, a lemma, [line 320](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/QuantumMechanics/Operators/Position.lean#L320).
 
 ```lean
 lemma radiusRegPow_ae_tendsto_iff {d : ℕ} [NeZero d] {s : ℝ} {ψ : 𝓢(Space d, ℂ)}
@@ -225,7 +225,7 @@ lemma radiusRegPow_ae_tendsto_iff {d : ℕ} [NeZero d] {s : ℝ} {ψ : 𝓢(Spac
 
 ### B.1. Position vector
 
-**`QuantumMechanics.positionOperator`**, a def, [line 351](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/QuantumMechanics/Operators/Position.lean#L351).
+**`QuantumMechanics.positionOperator`**, a def, [line 351](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/QuantumMechanics/Operators/Position.lean#L351).
 
 > The operator on `SpaceDHilbertSpace d` acting by multiplication by `fun x ↦ xᵢ`.
 
@@ -233,19 +233,19 @@ lemma radiusRegPow_ae_tendsto_iff {d : ℕ} [NeZero d] {s : ℝ} {ψ : 𝓢(Spac
 def positionOperator : SpaceDHilbertSpace d μ →ₗ.[ℂ] SpaceDHilbertSpace d μ
 ```
 
-**`QuantumMechanics.positionOperator_hasDenseDomain`**, a lemma, [line 357](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/QuantumMechanics/Operators/Position.lean#L357).
+**`QuantumMechanics.positionOperator_hasDenseDomain`**, a lemma, [line 357](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/QuantumMechanics/Operators/Position.lean#L357).
 
 ```lean
 lemma positionOperator_hasDenseDomain : (𝓧 μ i).HasDenseDomain
 ```
 
-**`QuantumMechanics.positionOperator_isSelfAdjoint`**, a lemma, [line 360](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/QuantumMechanics/Operators/Position.lean#L360).
+**`QuantumMechanics.positionOperator_isSelfAdjoint`**, a lemma, [line 360](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/QuantumMechanics/Operators/Position.lean#L360).
 
 ```lean
 lemma positionOperator_isSelfAdjoint [IsFiniteMeasureOnCompacts μ] : IsSelfAdjoint (𝓧 μ i)
 ```
 
-**`QuantumMechanics.positionOperator_isUnbounded`**, a lemma, [line 363](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/QuantumMechanics/Operators/Position.lean#L363).
+**`QuantumMechanics.positionOperator_isUnbounded`**, a lemma, [line 363](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/QuantumMechanics/Operators/Position.lean#L363).
 
 ```lean
 lemma positionOperator_isUnbounded [IsFiniteMeasureOnCompacts μ] : (𝓧 μ i).IsUnbounded
@@ -253,7 +253,7 @@ lemma positionOperator_isUnbounded [IsFiniteMeasureOnCompacts μ] : (𝓧 μ i).
 
 ### B.2. Radius powers (regularized)
 
-**`QuantumMechanics.radiusRegPowOperator`**, a def, [line 372](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/QuantumMechanics/Operators/Position.lean#L372).
+**`QuantumMechanics.radiusRegPowOperator`**, a def, [line 372](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/QuantumMechanics/Operators/Position.lean#L372).
 
 > The operator on `SpaceDHilbertSpace d` acting by multiplication by
 > `fun x ↦ (‖x‖² + ε²)^(s/2)`.
@@ -263,20 +263,20 @@ def radiusRegPowOperator (ε : ℝˣ) (s : ℝ) :
     SpaceDHilbertSpace d μ →ₗ.[ℂ] SpaceDHilbertSpace d μ
 ```
 
-**`QuantumMechanics.radiusRegPowOperator_hasDenseDomain`**, a lemma, [line 379](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/QuantumMechanics/Operators/Position.lean#L379).
+**`QuantumMechanics.radiusRegPowOperator_hasDenseDomain`**, a lemma, [line 379](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/QuantumMechanics/Operators/Position.lean#L379).
 
 ```lean
 lemma radiusRegPowOperator_hasDenseDomain (ε : ℝˣ) (s : ℝ) : (𝓡₀ μ ε s).HasDenseDomain
 ```
 
-**`QuantumMechanics.radiusRegPowOperator_isSelfAdjoint`**, a lemma, [line 382](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/QuantumMechanics/Operators/Position.lean#L382).
+**`QuantumMechanics.radiusRegPowOperator_isSelfAdjoint`**, a lemma, [line 382](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/QuantumMechanics/Operators/Position.lean#L382).
 
 ```lean
 lemma radiusRegPowOperator_isSelfAdjoint [IsFiniteMeasureOnCompacts μ] (ε : ℝˣ) (s : ℝ) :
     IsSelfAdjoint (𝓡₀ μ ε s)
 ```
 
-**`QuantumMechanics.radiusRegPowOperator_isUnbounded`**, a lemma, [line 386](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/QuantumMechanics/Operators/Position.lean#L386).
+**`QuantumMechanics.radiusRegPowOperator_isUnbounded`**, a lemma, [line 386](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/QuantumMechanics/Operators/Position.lean#L386).
 
 ```lean
 lemma radiusRegPowOperator_isUnbounded [IsFiniteMeasureOnCompacts μ] (ε : ℝˣ) (s : ℝ) :
@@ -285,7 +285,7 @@ lemma radiusRegPowOperator_isUnbounded [IsFiniteMeasureOnCompacts μ] (ε : ℝ�
 
 ### B.3. Radius powers
 
-**`QuantumMechanics.radiusPowOperator`**, a def, [line 395](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/QuantumMechanics/Operators/Position.lean#L395).
+**`QuantumMechanics.radiusPowOperator`**, a def, [line 395](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/QuantumMechanics/Operators/Position.lean#L395).
 
 > The operator on `SpaceDHilbertSpace d` acting by multiplication by `fun x ↦ ‖x‖ˢ`.
 
@@ -293,26 +293,26 @@ lemma radiusRegPowOperator_isUnbounded [IsFiniteMeasureOnCompacts μ] (ε : ℝ�
 def radiusPowOperator (s : ℝ) : SpaceDHilbertSpace d μ →ₗ.[ℂ] SpaceDHilbertSpace d μ
 ```
 
-**`QuantumMechanics.radiusPowOperator_hasDenseDomain`**, a lemma, [line 401](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/QuantumMechanics/Operators/Position.lean#L401).
+**`QuantumMechanics.radiusPowOperator_hasDenseDomain`**, a lemma, [line 401](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/QuantumMechanics/Operators/Position.lean#L401).
 
 ```lean
 lemma radiusPowOperator_hasDenseDomain (s : ℝ) : (𝓡 μ s).HasDenseDomain
 ```
 
-**`QuantumMechanics.radiusPowOperator_isSelfAdjoint`**, a lemma, [line 404](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/QuantumMechanics/Operators/Position.lean#L404).
+**`QuantumMechanics.radiusPowOperator_isSelfAdjoint`**, a lemma, [line 404](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/QuantumMechanics/Operators/Position.lean#L404).
 
 ```lean
 lemma radiusPowOperator_isSelfAdjoint [IsFiniteMeasureOnCompacts μ] (s : ℝ) :
     IsSelfAdjoint (𝓡 μ s)
 ```
 
-**`QuantumMechanics.radiusPowOperator_isUnbounded`**, a lemma, [line 408](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/QuantumMechanics/Operators/Position.lean#L408).
+**`QuantumMechanics.radiusPowOperator_isUnbounded`**, a lemma, [line 408](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/QuantumMechanics/Operators/Position.lean#L408).
 
 ```lean
 lemma radiusPowOperator_isUnbounded [IsFiniteMeasureOnCompacts μ] (s : ℝ) : (𝓡 μ s).IsUnbounded
 ```
 
-**`QuantumMechanics.radiusPowLM_apply_polyBddSchwartz_memHS`**, a lemma, [line 420](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/QuantumMechanics/Operators/Position.lean#L420).
+**`QuantumMechanics.radiusPowLM_apply_polyBddSchwartz_memHS`**, a lemma, [line 420](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/QuantumMechanics/Operators/Position.lean#L420).
 
 ```lean
 lemma radiusPowLM_apply_polyBddSchwartz_memHS
@@ -320,7 +320,7 @@ lemma radiusPowLM_apply_polyBddSchwartz_memHS
     MemHS (𝐫[d] s ((polyBddSchwartzEquiv volume).symm ψ))
 ```
 
-**`QuantumMechanics.radiusPowOperator_domain_ge`**, a lemma, [line 426](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/QuantumMechanics/Operators/Position.lean#L426).
+**`QuantumMechanics.radiusPowOperator_domain_ge`**, a lemma, [line 426](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/QuantumMechanics/Operators/Position.lean#L426).
 
 ```lean
 lemma radiusPowOperator_domain_ge {d : ℕ} (s : ℝ) :
@@ -340,4 +340,4 @@ lemma radiusPowOperator_domain_ge {d : ℕ} (s : ℝ) :
 
 ## Sources
 
-- [Physlib/QuantumMechanics/Operators/Position.lean at 2a1dfe43](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/QuantumMechanics/Operators/Position.lean)
+- [Physlib/QuantumMechanics/Operators/Position.lean at 8c87bdfb](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/QuantumMechanics/Operators/Position.lean)

@@ -8,7 +8,7 @@ proof: formalized
 
 # Sobolev submodules of `SpaceDHilbertSpace`
 
-The module `Physlib.QuantumMechanics.HilbertSpaces.SpaceD.SobolevSubmodule`, [Physlib/QuantumMechanics/HilbertSpaces/SpaceD/SobolevSubmodule.lean](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/QuantumMechanics/HilbertSpaces/SpaceD/SobolevSubmodule.lean): 6 declarations, 6 with a docstring.
+The module `Physlib.QuantumMechanics.HilbertSpaces.SpaceD.SobolevSubmodule`, [Physlib/QuantumMechanics/HilbertSpaces/SpaceD/SobolevSubmodule.lean](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/QuantumMechanics/HilbertSpaces/SpaceD/SobolevSubmodule.lean): 6 declarations, 6 with a docstring.
 
 ## i. Overview
 
@@ -27,7 +27,7 @@ The module `Physlib.QuantumMechanics.HilbertSpaces.SpaceD.SobolevSubmodule`, [Ph
 
 ## A. The Sobolev submodule `H^s`
 
-**`QuantumMechanics.SpaceDHilbertSpace.SobolevSubmodule`**, a def, [line 50](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/QuantumMechanics/HilbertSpaces/SpaceD/SobolevSubmodule.lean#L50).
+**`QuantumMechanics.SpaceDHilbertSpace.SobolevSubmodule`**, a def, [line 50](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/QuantumMechanics/HilbertSpaces/SpaceD/SobolevSubmodule.lean#L50).
 
 > The Sobolev space `H^s` as a submodule of `SpaceDHilbertSpace d`: the L² classes whose
 > associated tempered distribution satisfies `MemSobolev s 2`.
@@ -36,7 +36,7 @@ The module `Physlib.QuantumMechanics.HilbertSpaces.SpaceD.SobolevSubmodule`, [Ph
 def SobolevSubmodule (d : ℕ) (s : ℝ) : Submodule ℂ (SpaceDHilbertSpace d)
 ```
 
-**`QuantumMechanics.SpaceDHilbertSpace.mem_sobolevSubmodule_iff`**, a lemma, [line 57](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/QuantumMechanics/HilbertSpaces/SpaceD/SobolevSubmodule.lean#L57).
+**`QuantumMechanics.SpaceDHilbertSpace.mem_sobolevSubmodule_iff`**, a lemma, [line 57](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/QuantumMechanics/HilbertSpaces/SpaceD/SobolevSubmodule.lean#L57).
 
 > Membership in `H^s` is the Sobolev condition on the associated tempered distribution.
 
@@ -45,7 +45,7 @@ lemma mem_sobolevSubmodule_iff {s : ℝ} {ψ : SpaceDHilbertSpace d} :
     ψ ∈ SobolevSubmodule d s ↔ MemSobolev s 2 (toTemperedDistribution ψ)
 ```
 
-**`QuantumMechanics.SpaceDHilbertSpace.SobolevSubmodule.schwartzIncl_mem`**, a lemma, [line 61](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/QuantumMechanics/HilbertSpaces/SpaceD/SobolevSubmodule.lean#L61).
+**`QuantumMechanics.SpaceDHilbertSpace.SobolevSubmodule.schwartzIncl_mem`**, a lemma, [line 61](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/QuantumMechanics/HilbertSpaces/SpaceD/SobolevSubmodule.lean#L61).
 
 > Schwartz maps lie in every Sobolev space `H^s`.
 
@@ -54,7 +54,7 @@ lemma SobolevSubmodule.schwartzIncl_mem (s : ℝ) (g : 𝓢(Space d, ℂ)) :
     schwartzIncl volume g ∈ SobolevSubmodule d s
 ```
 
-**`QuantumMechanics.SpaceDHilbertSpace.schwartzSubmodule_le_sobolevSubmodule`**, a lemma, [line 67](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/QuantumMechanics/HilbertSpaces/SpaceD/SobolevSubmodule.lean#L67).
+**`QuantumMechanics.SpaceDHilbertSpace.schwartzSubmodule_le_sobolevSubmodule`**, a lemma, [line 67](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/QuantumMechanics/HilbertSpaces/SpaceD/SobolevSubmodule.lean#L67).
 
 > The Schwartz submodule is contained in every Sobolev space `H^s`.
 
@@ -63,7 +63,7 @@ lemma schwartzSubmodule_le_sobolevSubmodule (s : ℝ) :
     SchwartzSubmodule d ≤ SobolevSubmodule d s
 ```
 
-**`QuantumMechanics.SpaceDHilbertSpace.SobolevSubmodule.dense`**, a lemma, [line 74](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/QuantumMechanics/HilbertSpaces/SpaceD/SobolevSubmodule.lean#L74).
+**`QuantumMechanics.SpaceDHilbertSpace.SobolevSubmodule.dense`**, a lemma, [line 74](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/QuantumMechanics/HilbertSpaces/SpaceD/SobolevSubmodule.lean#L74).
 
 > Every Sobolev space `H^s` is dense in `SpaceDHilbertSpace d`, containing the dense Schwartz
 > submodule.
@@ -73,7 +73,7 @@ lemma SobolevSubmodule.dense (s : ℝ) :
     Dense (SobolevSubmodule d s : Set (SpaceDHilbertSpace d))
 ```
 
-**`QuantumMechanics.SpaceDHilbertSpace.SobolevSubmodule.antitone`**, a lemma, [line 79](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/QuantumMechanics/HilbertSpaces/SpaceD/SobolevSubmodule.lean#L79).
+**`QuantumMechanics.SpaceDHilbertSpace.SobolevSubmodule.antitone`**, a lemma, [line 79](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/QuantumMechanics/HilbertSpaces/SpaceD/SobolevSubmodule.lean#L79).
 
 > The Sobolev spaces shrink as the regularity index grows: `H^s ≤ H^s'` for `s' ≤ s`.
 
@@ -87,4 +87,4 @@ lemma SobolevSubmodule.antitone (d : ℕ) : Antitone (SobolevSubmodule d)
 
 ## Sources
 
-- [Physlib/QuantumMechanics/HilbertSpaces/SpaceD/SobolevSubmodule.lean at 2a1dfe43](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/QuantumMechanics/HilbertSpaces/SpaceD/SobolevSubmodule.lean)
+- [Physlib/QuantumMechanics/HilbertSpaces/SpaceD/SobolevSubmodule.lean at 8c87bdfb](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/QuantumMechanics/HilbertSpaces/SpaceD/SobolevSubmodule.lean)

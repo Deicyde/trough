@@ -8,7 +8,7 @@ proof: formalized
 
 # Component indices split at a single slot
 
-The module `Physlib.Relativity.Tensors.ComponentIdx.Insert`, [Physlib/Relativity/Tensors/ComponentIdx/Insert.lean](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/Relativity/Tensors/ComponentIdx/Insert.lean): 3 declarations, 1 with a docstring.
+The module `Physlib.Relativity.Tensors.ComponentIdx.Insert`, [Physlib/Relativity/Tensors/ComponentIdx/Insert.lean](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Relativity/Tensors/ComponentIdx/Insert.lean): 3 declarations, 1 with a docstring.
 
 > Component-index insertion and evaluation at a distinguished slot.
 
@@ -39,7 +39,7 @@ The module `Physlib.Relativity.Tensors.ComponentIdx.Insert`, [Physlib/Relativity
 
 ## A. The single-slot equivalence
 
-**`TensorSpecies.Tensor.ComponentIdx.insert`**, a def, [line 70](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/Relativity/Tensors/ComponentIdx/Insert.lean#L70).
+**`TensorSpecies.Tensor.ComponentIdx.insert`**, a def, [line 70](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Relativity/Tensors/ComponentIdx/Insert.lean#L70).
 
 > Splitting a component index at a named slot: the label at slot `i`, together with a component
 > index for the colours of the remaining slots. The dependent counterpart of `Fin.cons`, and the
@@ -50,7 +50,7 @@ def insert {n : ℕ} {c : Fin (n + 1) → C} (i : Fin (n + 1)) :
     basisIdx (c i) × ComponentIdx (S := S) (c ∘ i.succAbove) ≃ ComponentIdx (S := S) c
 ```
 
-**`TensorSpecies.Tensor.ComponentIdx.insert_apply_self`**, a lemma, [line 75](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/Relativity/Tensors/ComponentIdx/Insert.lean#L75).
+**`TensorSpecies.Tensor.ComponentIdx.insert_apply_self`**, a lemma, [line 75](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Relativity/Tensors/ComponentIdx/Insert.lean#L75).
 
 ```lean
 lemma insert_apply_self {n : ℕ} {c : Fin (n + 1) → C} (i : Fin (n + 1))
@@ -58,7 +58,7 @@ lemma insert_apply_self {n : ℕ} {c : Fin (n + 1) → C} (i : Fin (n + 1))
     insert (S := S) i x i = x.1
 ```
 
-**`TensorSpecies.Tensor.ComponentIdx.insert_apply_succAbove`**, a lemma, [line 81](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/Relativity/Tensors/ComponentIdx/Insert.lean#L81).
+**`TensorSpecies.Tensor.ComponentIdx.insert_apply_succAbove`**, a lemma, [line 81](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Relativity/Tensors/ComponentIdx/Insert.lean#L81).
 
 ```lean
 lemma insert_apply_succAbove {n : ℕ} {c : Fin (n + 1) → C} (i : Fin (n + 1))
@@ -72,4 +72,4 @@ lemma insert_apply_succAbove {n : ℕ} {c : Fin (n + 1) → C} (i : Fin (n + 1))
 
 ## Sources
 
-- [Physlib/Relativity/Tensors/ComponentIdx/Insert.lean at 2a1dfe43](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/Relativity/Tensors/ComponentIdx/Insert.lean)
+- [Physlib/Relativity/Tensors/ComponentIdx/Insert.lean at 8c87bdfb](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Relativity/Tensors/ComponentIdx/Insert.lean)

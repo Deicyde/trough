@@ -8,7 +8,7 @@ proof: formalized
 
 # The Lagrangian in electromagnetism (Electromagnetism/Dynamics/Lagrangian)
 
-The module `Physlib.Electromagnetism.Dynamics.Lagrangian`, [Physlib/Electromagnetism/Dynamics/Lagrangian.lean](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/Electromagnetism/Dynamics/Lagrangian.lean): 18 declarations, 5 with a docstring.
+The module `Physlib.Electromagnetism.Dynamics.Lagrangian`, [Physlib/Electromagnetism/Dynamics/Lagrangian.lean](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Electromagnetism/Dynamics/Lagrangian.lean): 18 declarations, 5 with a docstring.
 
 ## i. Overview
 
@@ -39,7 +39,7 @@ The module `Physlib.Electromagnetism.Dynamics.Lagrangian`, [Physlib/Electromagne
 
 ## A. Free current potential
 
-**`Electromagnetism.ElectromagneticPotential.freeCurrentPotential`**, a def, [line 88](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/Electromagnetism/Dynamics/Lagrangian.lean#L88).
+**`Electromagnetism.ElectromagneticPotential.freeCurrentPotential`**, a def, [line 88](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Electromagnetism/Dynamics/Lagrangian.lean#L88).
 
 > The potential energy from the interaction of the electromagnetic potential
 > with the free current `J`.
@@ -52,7 +52,7 @@ noncomputable def freeCurrentPotential (A : ElectromagneticPotential d)
 
 ### A.1. Shifts in the free current potential under shifts in the potential
 
-**`Electromagnetism.ElectromagneticPotential.freeCurrentPotential_add_const`**, a lemma, [line 98](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/Electromagnetism/Dynamics/Lagrangian.lean#L98).
+**`Electromagnetism.ElectromagneticPotential.freeCurrentPotential_add_const`**, a lemma, [line 98](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Electromagnetism/Dynamics/Lagrangian.lean#L98).
 
 ```lean
 lemma freeCurrentPotential_add_const (A : ElectromagneticPotential d)
@@ -62,7 +62,7 @@ lemma freeCurrentPotential_add_const (A : ElectromagneticPotential d)
 
 ### A.2. The free current potential has a variational gradient
 
-**`Electromagnetism.ElectromagneticPotential.freeCurrentPotential_hasVarGradientAt`**, a lemma, [line 109](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/Electromagnetism/Dynamics/Lagrangian.lean#L109).
+**`Electromagnetism.ElectromagneticPotential.freeCurrentPotential_hasVarGradientAt`**, a lemma, [line 109](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Electromagnetism/Dynamics/Lagrangian.lean#L109).
 
 ```lean
 lemma freeCurrentPotential_hasVarGradientAt (A : ElectromagneticPotential d)
@@ -74,7 +74,7 @@ lemma freeCurrentPotential_hasVarGradientAt (A : ElectromagneticPotential d)
 
 ### A.3. The free current potential in terms of the scalar and vector potentials
 
-**`Electromagnetism.ElectromagneticPotential.freeCurrentPotential_eq_sum_scalarPotential_vectorPotential`**, a lemma, [line 137](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/Electromagnetism/Dynamics/Lagrangian.lean#L137).
+**`Electromagnetism.ElectromagneticPotential.freeCurrentPotential_eq_sum_scalarPotential_vectorPotential`**, a lemma, [line 137](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Electromagnetism/Dynamics/Lagrangian.lean#L137).
 
 ```lean
 lemma freeCurrentPotential_eq_sum_scalarPotential_vectorPotential
@@ -88,7 +88,7 @@ lemma freeCurrentPotential_eq_sum_scalarPotential_vectorPotential
 
 ### A.4. The variational gradient of the free current potential
 
-**`Electromagnetism.ElectromagneticPotential.gradFreeCurrentPotential`**, a def, [line 157](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/Electromagnetism/Dynamics/Lagrangian.lean#L157).
+**`Electromagnetism.ElectromagneticPotential.gradFreeCurrentPotential`**, a def, [line 157](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Electromagnetism/Dynamics/Lagrangian.lean#L157).
 
 > The variational gradient of the free current potential.
 
@@ -97,7 +97,7 @@ noncomputable def gradFreeCurrentPotential {d} (A : ElectromagneticPotential d)
     (J : LorentzCurrentDensity d) : SpaceTime d → Lorentz.Vector d
 ```
 
-**`Electromagnetism.ElectromagneticPotential.gradFreeCurrentPotential_eq_sum_basis`**, a lemma, [line 161](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/Electromagnetism/Dynamics/Lagrangian.lean#L161).
+**`Electromagnetism.ElectromagneticPotential.gradFreeCurrentPotential_eq_sum_basis`**, a lemma, [line 161](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Electromagnetism/Dynamics/Lagrangian.lean#L161).
 
 ```lean
 lemma gradFreeCurrentPotential_eq_sum_basis {d} (A : ElectromagneticPotential d)
@@ -106,7 +106,7 @@ lemma gradFreeCurrentPotential_eq_sum_basis {d} (A : ElectromagneticPotential d)
     A.gradFreeCurrentPotential J = (∑ μ, fun x => (η μ μ * J x μ) • Lorentz.Vector.basis μ)
 ```
 
-**`Electromagnetism.ElectromagneticPotential.gradFreeCurrentPotential_eq_chargeDensity_currentDensity`**, a lemma, [line 167](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/Electromagnetism/Dynamics/Lagrangian.lean#L167).
+**`Electromagnetism.ElectromagneticPotential.gradFreeCurrentPotential_eq_chargeDensity_currentDensity`**, a lemma, [line 167](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Electromagnetism/Dynamics/Lagrangian.lean#L167).
 
 ```lean
 lemma gradFreeCurrentPotential_eq_chargeDensity_currentDensity {d}
@@ -118,7 +118,7 @@ lemma gradFreeCurrentPotential_eq_chargeDensity_currentDensity {d}
       (∑ i, - J.currentDensity 𝓕.c (x.time 𝓕.c) x.space i • Lorentz.Vector.basis (Sum.inr i))
 ```
 
-**`Electromagnetism.ElectromagneticPotential.gradFreeCurrentPotential_eq_tensor`**, a lemma, [line 181](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/Electromagnetism/Dynamics/Lagrangian.lean#L181).
+**`Electromagnetism.ElectromagneticPotential.gradFreeCurrentPotential_eq_tensor`**, a lemma, [line 181](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Electromagnetism/Dynamics/Lagrangian.lean#L181).
 
 ```lean
 lemma gradFreeCurrentPotential_eq_tensor {d} (A : ElectromagneticPotential d)
@@ -133,7 +133,7 @@ lemma gradFreeCurrentPotential_eq_tensor {d} (A : ElectromagneticPotential d)
 > The lagrangian density for the electromagnetic field in presence of a current density `J` is
 > `L = -1/(4 μ₀) F_{μν} F^{μν} - A_μ J^μ`
 
-**`Electromagnetism.ElectromagneticPotential.lagrangian`**, a def, [line 205](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/Electromagnetism/Dynamics/Lagrangian.lean#L205).
+**`Electromagnetism.ElectromagneticPotential.lagrangian`**, a def, [line 205](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Electromagnetism/Dynamics/Lagrangian.lean#L205).
 
 > The lagrangian density associated with a electromagnetic potential and a Lorentz
 > current density.
@@ -145,7 +145,7 @@ noncomputable def lagrangian (𝓕 : FreeSpace) (A : ElectromagneticPotential d)
 
 ### B.1. Shifts in the lagrangian under shifts in the potential
 
-**`Electromagnetism.ElectromagneticPotential.lagrangian_add_const`**, a lemma, [line 215](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/Electromagnetism/Dynamics/Lagrangian.lean#L215).
+**`Electromagnetism.ElectromagneticPotential.lagrangian_add_const`**, a lemma, [line 215](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Electromagnetism/Dynamics/Lagrangian.lean#L215).
 
 ```lean
 lemma lagrangian_add_const {d} {𝓕 : FreeSpace} (A : ElectromagneticPotential d)
@@ -155,7 +155,7 @@ lemma lagrangian_add_const {d} {𝓕 : FreeSpace} (A : ElectromagneticPotential 
 
 ### B.2. Lagrangian in terms of electric and magnetic fields
 
-**`Electromagnetism.ElectromagneticPotential.lagrangian_eq_electric_magnetic`**, a lemma, [line 228](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/Electromagnetism/Dynamics/Lagrangian.lean#L228).
+**`Electromagnetism.ElectromagneticPotential.lagrangian_eq_electric_magnetic`**, a lemma, [line 228](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Electromagnetism/Dynamics/Lagrangian.lean#L228).
 
 > The Lagrangian is equal to `1/2 * (ε₀ E^2 - 1/μ₀ B^2) - φρ + A · j`
 
@@ -174,7 +174,7 @@ lemma lagrangian_eq_electric_magnetic {d} {𝓕 : FreeSpace}
 
 ### C.1. The lagrangian density has a variational gradient
 
-**`Electromagnetism.ElectromagneticPotential.lagrangian_hasVarGradientAt_eq_add_gradKineticTerm`**, a lemma, [line 252](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/Electromagnetism/Dynamics/Lagrangian.lean#L252).
+**`Electromagnetism.ElectromagneticPotential.lagrangian_hasVarGradientAt_eq_add_gradKineticTerm`**, a lemma, [line 252](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Electromagnetism/Dynamics/Lagrangian.lean#L252).
 
 ```lean
 lemma lagrangian_hasVarGradientAt_eq_add_gradKineticTerm {𝓕 : FreeSpace}
@@ -186,7 +186,7 @@ lemma lagrangian_hasVarGradientAt_eq_add_gradKineticTerm {𝓕 : FreeSpace}
 
 ### C.2. The definition of, `gradLagrangian`, the variational gradient of the lagrangian density
 
-**`Electromagnetism.ElectromagneticPotential.gradLagrangian`**, a def, [line 273](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/Electromagnetism/Dynamics/Lagrangian.lean#L273).
+**`Electromagnetism.ElectromagneticPotential.gradLagrangian`**, a def, [line 273](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Electromagnetism/Dynamics/Lagrangian.lean#L273).
 
 > The variational gradient of the lagrangian of electromagnetic field.
 
@@ -197,7 +197,7 @@ noncomputable def gradLagrangian {d} (𝓕 : FreeSpace) (A : ElectromagneticPote
 
 ### C.3. The variational gradient in terms of the gradient of the kinetic term
 
-**`Electromagnetism.ElectromagneticPotential.gradLagrangian_eq_kineticTerm_sub`**, a lemma, [line 283](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/Electromagnetism/Dynamics/Lagrangian.lean#L283).
+**`Electromagnetism.ElectromagneticPotential.gradLagrangian_eq_kineticTerm_sub`**, a lemma, [line 283](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Electromagnetism/Dynamics/Lagrangian.lean#L283).
 
 ```lean
 lemma gradLagrangian_eq_kineticTerm_sub {𝓕 : FreeSpace} (A : ElectromagneticPotential d)
@@ -208,7 +208,7 @@ lemma gradLagrangian_eq_kineticTerm_sub {𝓕 : FreeSpace} (A : ElectromagneticP
 
 ### C.4. The lagrangian density has the variational gradient equal to `gradLagrangian`
 
-**`Electromagnetism.ElectromagneticPotential.lagrangian_hasVarGradientAt_gradLagrangian`**, a lemma, [line 294](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/Electromagnetism/Dynamics/Lagrangian.lean#L294).
+**`Electromagnetism.ElectromagneticPotential.lagrangian_hasVarGradientAt_gradLagrangian`**, a lemma, [line 294](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Electromagnetism/Dynamics/Lagrangian.lean#L294).
 
 ```lean
 lemma lagrangian_hasVarGradientAt_gradLagrangian {𝓕 : FreeSpace}
@@ -219,7 +219,7 @@ lemma lagrangian_hasVarGradientAt_gradLagrangian {𝓕 : FreeSpace}
 
 ### C.5. The variational gradient in terms of the field strength tensor
 
-**`Electromagnetism.ElectromagneticPotential.gradLagrangian_eq_sum_toFieldStrength_eval`**, a lemma, [line 307](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/Electromagnetism/Dynamics/Lagrangian.lean#L307).
+**`Electromagnetism.ElectromagneticPotential.gradLagrangian_eq_sum_toFieldStrength_eval`**, a lemma, [line 307](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Electromagnetism/Dynamics/Lagrangian.lean#L307).
 
 ```lean
 lemma gradLagrangian_eq_sum_toFieldStrength_eval {𝓕 : FreeSpace} (A : ElectromagneticPotential d)
@@ -231,7 +231,7 @@ lemma gradLagrangian_eq_sum_toFieldStrength_eval {𝓕 : FreeSpace} (A : Electro
 
 ### C.6. The lagrangian gradient recovering Gauss's and Ampère laws
 
-**`Electromagnetism.ElectromagneticPotential.gradLagrangian_eq_electricField_magneticField`**, a lemma, [line 329](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/Electromagnetism/Dynamics/Lagrangian.lean#L329).
+**`Electromagnetism.ElectromagneticPotential.gradLagrangian_eq_electricField_magneticField`**, a lemma, [line 329](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Electromagnetism/Dynamics/Lagrangian.lean#L329).
 
 ```lean
 lemma gradLagrangian_eq_electricField_magneticField {𝓕 : FreeSpace}
@@ -250,7 +250,7 @@ lemma gradLagrangian_eq_electricField_magneticField {𝓕 : FreeSpace}
 
 ### C.7. The lagrangian gradient in tensor notation
 
-**`Electromagnetism.ElectromagneticPotential.gradLagrangian_eq_tensor`**, a lemma, [line 357](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/Electromagnetism/Dynamics/Lagrangian.lean#L357).
+**`Electromagnetism.ElectromagneticPotential.gradLagrangian_eq_tensor`**, a lemma, [line 357](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Electromagnetism/Dynamics/Lagrangian.lean#L357).
 
 ```lean
 lemma gradLagrangian_eq_tensor {𝓕 : FreeSpace}
@@ -270,4 +270,4 @@ lemma gradLagrangian_eq_tensor {𝓕 : FreeSpace}
 
 ## Sources
 
-- [Physlib/Electromagnetism/Dynamics/Lagrangian.lean at 2a1dfe43](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/Electromagnetism/Dynamics/Lagrangian.lean)
+- [Physlib/Electromagnetism/Dynamics/Lagrangian.lean at 8c87bdfb](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Electromagnetism/Dynamics/Lagrangian.lean)

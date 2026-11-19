@@ -8,7 +8,7 @@ proof: formalized
 
 # Properties of the field strength
 
-The module `PhyslibAlpha.Particles.QED.FieldStrength`, [PhyslibAlpha/Particles/QED/FieldStrength.lean](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/QED/FieldStrength.lean): 11 declarations, 6 with a docstring.
+The module `PhyslibAlpha.Particles.QED.FieldStrength`, [PhyslibAlpha/Particles/QED/FieldStrength.lean](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/QED/FieldStrength.lean): 11 declarations, 6 with a docstring.
 
 ## i. Overview
 
@@ -46,14 +46,14 @@ The module `PhyslibAlpha.Particles.QED.FieldStrength`, [PhyslibAlpha/Particles/Q
 
 ### A.1. Antisymmetry
 
-**`QED.Photon.JetAlgebra.fieldStrength_antisymm`**, a lemma, [line 72](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/QED/FieldStrength.lean#L72).
+**`QED.Photon.JetAlgebra.fieldStrength_antisymm`**, a lemma, [line 72](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/QED/FieldStrength.lean#L72).
 
 ```lean
 lemma fieldStrength_antisymm (s : Multiset (Fin 1 ⊕ Fin 3)) (μ ν : Fin 1 ⊕ Fin 3) :
     fieldStrength s μ ν = -fieldStrength s ν μ
 ```
 
-**`QED.Photon.JetAlgebra.fieldStrength_self`**, a lemma, [line 77](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/QED/FieldStrength.lean#L77).
+**`QED.Photon.JetAlgebra.fieldStrength_self`**, a lemma, [line 77](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/QED/FieldStrength.lean#L77).
 
 ```lean
 lemma fieldStrength_self (s : Multiset (Fin 1 ⊕ Fin 3)) (μ : Fin 1 ⊕ Fin 3) :
@@ -66,7 +66,7 @@ lemma fieldStrength_self (s : Multiset (Fin 1 ⊕ Fin 3)) (μ : Fin 1 ⊕ Fin 3)
 > cyclic sum produces six coordinates which cancel in pairs, because the
 > multisets `s + {μ} + {ν}` and `s + {ν} + {μ}` are equal.
 
-**`QED.Photon.JetAlgebra.fieldStrength_bianchi`**, a lemma, [line 94](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/QED/FieldStrength.lean#L94).
+**`QED.Photon.JetAlgebra.fieldStrength_bianchi`**, a lemma, [line 94](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/QED/FieldStrength.lean#L94).
 
 > **The Bianchi identity** `∂_lam F_{μν} + ∂_μ F_{ν lam} + ∂_ν F_{lam μ} = 0`
 > in the photon jet algebra: the homogeneous Maxwell equations hold exactly,
@@ -84,7 +84,7 @@ lemma fieldStrength_bianchi (s : Multiset (Fin 1 ⊕ Fin 3))
 > The theorems of section A, transported through the inclusion of the photon
 > factor into the QED jet algebra.
 
-**`QED.JetAlgebra.fieldStrength_eq_sub`**, a lemma, [line 121](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/QED/FieldStrength.lean#L121).
+**`QED.JetAlgebra.fieldStrength_eq_sub`**, a lemma, [line 121](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/QED/FieldStrength.lean#L121).
 
 > The field strength is the antisymmetrised derivative of the potential,
 > `∂_s F_{μν} = ∂_s ∂_μ A_ν - ∂_s ∂_ν A_μ`.
@@ -94,21 +94,21 @@ lemma fieldStrength_eq_sub (s : Multiset (Fin 1 ⊕ Fin 3)) (μ ν : Fin 1 ⊕ F
     fieldStrength s μ ν = A (s + {μ}) ν - A (s + {ν}) μ
 ```
 
-**`QED.JetAlgebra.fieldStrength_antisymm`**, a lemma, [line 127](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/QED/FieldStrength.lean#L127).
+**`QED.JetAlgebra.fieldStrength_antisymm`**, a lemma, [line 127](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/QED/FieldStrength.lean#L127).
 
 ```lean
 lemma fieldStrength_antisymm (s : Multiset (Fin 1 ⊕ Fin 3)) (μ ν : Fin 1 ⊕ Fin 3) :
     fieldStrength s μ ν = -fieldStrength s ν μ
 ```
 
-**`QED.JetAlgebra.fieldStrength_self`**, a lemma, [line 133](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/QED/FieldStrength.lean#L133).
+**`QED.JetAlgebra.fieldStrength_self`**, a lemma, [line 133](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/QED/FieldStrength.lean#L133).
 
 ```lean
 lemma fieldStrength_self (s : Multiset (Fin 1 ⊕ Fin 3)) (μ : Fin 1 ⊕ Fin 3) :
     fieldStrength s μ μ = 0
 ```
 
-**`QED.JetAlgebra.fieldStrength_bianchi`**, a lemma, [line 139](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/QED/FieldStrength.lean#L139).
+**`QED.JetAlgebra.fieldStrength_bianchi`**, a lemma, [line 139](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/QED/FieldStrength.lean#L139).
 
 > **The Bianchi identity** in the QED jet algebra.
 
@@ -121,7 +121,7 @@ lemma fieldStrength_bianchi (s : Multiset (Fin 1 ⊕ Fin 3))
 
 ## C. The total derivative on the fields
 
-**`QED.Photon.JetAlgebra.fieldStrength_singleton_eq_jetDeriv`**, a lemma, [line 155](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/QED/FieldStrength.lean#L155).
+**`QED.Photon.JetAlgebra.fieldStrength_singleton_eq_jetDeriv`**, a lemma, [line 155](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/QED/FieldStrength.lean#L155).
 
 > The first-order field-strength jet is the total derivative of the
 > zeroth-order one, in the photon jet algebra.
@@ -133,7 +133,7 @@ lemma _root_.QED.Photon.JetAlgebra.fieldStrength_singleton_eq_jetDeriv
       Photon.JetAlgebra.jetDeriv ρ (Photon.JetAlgebra.fieldStrength 0 μ ν)
 ```
 
-**`QED.JetAlgebra.jetDeriv_A`**, a lemma, [line 170](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/QED/FieldStrength.lean#L170).
+**`QED.JetAlgebra.jetDeriv_A`**, a lemma, [line 170](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/QED/FieldStrength.lean#L170).
 
 > The total derivative appends the derivative index to the photon jet
 > coordinate.
@@ -144,7 +144,7 @@ lemma jetDeriv_A (ρ : Fin 1 ⊕ Fin 3) (s : Multiset (Fin 1 ⊕ Fin 3))
     jetDeriv ρ (A s μ) = A (s + {ρ}) μ
 ```
 
-**`QED.JetAlgebra.jetDeriv_ψ`**, a lemma, [line 180](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/QED/FieldStrength.lean#L180).
+**`QED.JetAlgebra.jetDeriv_ψ`**, a lemma, [line 180](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/QED/FieldStrength.lean#L180).
 
 > The total derivative appends the derivative index to the electron jet
 > coordinate.
@@ -155,7 +155,7 @@ lemma jetDeriv_ψ (ρ : Fin 1 ⊕ Fin 3) (s : Multiset (Fin 1 ⊕ Fin 3))
     jetDeriv ρ (ψ s α) = ψ (s + {ρ}) α
 ```
 
-**`QED.JetAlgebra.jetDeriv_barψ`**, a lemma, [line 191](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/QED/FieldStrength.lean#L191).
+**`QED.JetAlgebra.jetDeriv_barψ`**, a lemma, [line 191](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/QED/FieldStrength.lean#L191).
 
 ```lean
 lemma jetDeriv_barψ (ρ : Fin 1 ⊕ Fin 3) (s : Multiset (Fin 1 ⊕ Fin 3))
@@ -169,4 +169,4 @@ lemma jetDeriv_barψ (ρ : Fin 1 ⊕ Fin 3) (s : Multiset (Fin 1 ⊕ Fin 3))
 
 ## Sources
 
-- [PhyslibAlpha/Particles/QED/FieldStrength.lean at 2a1dfe43](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/QED/FieldStrength.lean)
+- [PhyslibAlpha/Particles/QED/FieldStrength.lean at 8c87bdfb](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/QED/FieldStrength.lean)

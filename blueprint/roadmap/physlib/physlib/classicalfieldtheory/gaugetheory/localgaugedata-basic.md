@@ -8,7 +8,7 @@ proof: formalized
 
 # Local gauge data
 
-The module `Physlib.ClassicalFieldTheory.GaugeTheory.LocalGaugeData.Basic`, [Physlib/ClassicalFieldTheory/GaugeTheory/LocalGaugeData/Basic.lean](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/ClassicalFieldTheory/GaugeTheory/LocalGaugeData/Basic.lean): 23 declarations, 11 with a docstring.
+The module `Physlib.ClassicalFieldTheory.GaugeTheory.LocalGaugeData.Basic`, [Physlib/ClassicalFieldTheory/GaugeTheory/LocalGaugeData/Basic.lean](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/ClassicalFieldTheory/GaugeTheory/LocalGaugeData/Basic.lean): 23 declarations, 11 with a docstring.
 
 > The jets of gauge transformations at a point, as the data a local Lagrangian sees.
 
@@ -64,7 +64,7 @@ The module `Physlib.ClassicalFieldTheory.GaugeTheory.LocalGaugeData.Basic`, [Phy
 >   flatness equation `maurerCartan_structure` and the Leibniz rule `deriv_adjointJ` for the
 >   adjoint action.
 
-**`LocalGaugeData`**, a structure, [line 96](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/ClassicalFieldTheory/GaugeTheory/LocalGaugeData/Basic.lean#L96).
+**`LocalGaugeData`**, a structure, [line 96](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/ClassicalFieldTheory/GaugeTheory/LocalGaugeData/Basic.lean#L96).
 
 > Local gauge data. A gauge group `G₀` with Lie algebra `𝔤`, its group of jets `GJ` with
 > Lie algebra of jets `𝔤J`, evaluation at the base point, formal derivatives, the adjoint
@@ -125,7 +125,7 @@ structure LocalGaugeData (G₀ : Type) [Group G₀] (𝔤 : Type) [LieRing 𝔤]
 
 ## B. Simple derived properties
 
-**`LocalGaugeData.eval_surjective`**, a lemma, [line 165](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/ClassicalFieldTheory/GaugeTheory/LocalGaugeData/Basic.lean#L165).
+**`LocalGaugeData.eval_surjective`**, a lemma, [line 165](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/ClassicalFieldTheory/GaugeTheory/LocalGaugeData/Basic.lean#L165).
 
 > Every global gauge transformation is the value of a jet, namely its constant jet.
 
@@ -133,32 +133,32 @@ structure LocalGaugeData (G₀ : Type) [Group G₀] (𝔤 : Type) [LieRing 𝔤]
 lemma eval_surjective : Function.Surjective jets.eval
 ```
 
-**`LocalGaugeData.ofConstant_injective`**, a lemma, [line 168](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/ClassicalFieldTheory/GaugeTheory/LocalGaugeData/Basic.lean#L168).
+**`LocalGaugeData.ofConstant_injective`**, a lemma, [line 168](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/ClassicalFieldTheory/GaugeTheory/LocalGaugeData/Basic.lean#L168).
 
 ```lean
 lemma ofConstant_injective : Function.Injective jets.ofConstant
 ```
 
-**`LocalGaugeData.evalLie_surjective`**, a lemma, [line 171](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/ClassicalFieldTheory/GaugeTheory/LocalGaugeData/Basic.lean#L171).
+**`LocalGaugeData.evalLie_surjective`**, a lemma, [line 171](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/ClassicalFieldTheory/GaugeTheory/LocalGaugeData/Basic.lean#L171).
 
 ```lean
 lemma evalLie_surjective : Function.Surjective jets.evalLie
 ```
 
-**`LocalGaugeData.ofConstantLie_injective`**, a lemma, [line 174](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/ClassicalFieldTheory/GaugeTheory/LocalGaugeData/Basic.lean#L174).
+**`LocalGaugeData.ofConstantLie_injective`**, a lemma, [line 174](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/ClassicalFieldTheory/GaugeTheory/LocalGaugeData/Basic.lean#L174).
 
 ```lean
 lemma ofConstantLie_injective : Function.Injective jets.ofConstantLie
 ```
 
-**`LocalGaugeData.adjoint_bracket`**, a lemma, [line 177](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/ClassicalFieldTheory/GaugeTheory/LocalGaugeData/Basic.lean#L177).
+**`LocalGaugeData.adjoint_bracket`**, a lemma, [line 177](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/ClassicalFieldTheory/GaugeTheory/LocalGaugeData/Basic.lean#L177).
 
 ```lean
 lemma adjoint_bracket (g : G₀) (a b : 𝔤) :
     jets.adjoint g ⁅a, b⁆ = ⁅jets.adjoint g a, jets.adjoint g b⁆
 ```
 
-**`LocalGaugeData.deriv_adjointJ_ofConstant`**, a lemma, [line 185](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/ClassicalFieldTheory/GaugeTheory/LocalGaugeData/Basic.lean#L185).
+**`LocalGaugeData.deriv_adjointJ_ofConstant`**, a lemma, [line 185](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/ClassicalFieldTheory/GaugeTheory/LocalGaugeData/Basic.lean#L185).
 
 ```lean
 lemma deriv_adjointJ_ofConstant (g : G₀) (μ : Fin 1 ⊕ Fin 3) (x : 𝔤J) :
@@ -170,7 +170,7 @@ lemma deriv_adjointJ_ofConstant (g : G₀) (μ : Fin 1 ⊕ Fin 3) (x : 𝔤J) :
 
 ### C.1. Commutativity of derivatives
 
-**`LocalGaugeData.instRightCommutativeCompDeriv`**, an instance, [line 203](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/ClassicalFieldTheory/GaugeTheory/LocalGaugeData/Basic.lean#L203).
+**`LocalGaugeData.instRightCommutativeCompDeriv`**, an instance, [line 203](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/ClassicalFieldTheory/GaugeTheory/LocalGaugeData/Basic.lean#L203).
 
 > Post-composition with `deriv` is right-commutative.
 
@@ -181,7 +181,7 @@ instance instRightCommutativeCompDeriv : RightCommutative
 
 ### C.2. Definition of the iterated derivative
 
-**`LocalGaugeData.iteratedDeriv`**, a def, [line 216](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/ClassicalFieldTheory/GaugeTheory/LocalGaugeData/Basic.lean#L216).
+**`LocalGaugeData.iteratedDeriv`**, a def, [line 216](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/ClassicalFieldTheory/GaugeTheory/LocalGaugeData/Basic.lean#L216).
 
 > The iterated formal derivative on the jet Lie algebra.
 
@@ -191,20 +191,20 @@ noncomputable def iteratedDeriv (μs : Multiset (Fin 1 ⊕ Fin 3)) : 𝔤J →�
 
 ### C.3. Properties of the iterated derivative
 
-**`LocalGaugeData.iteratedDeriv_zero`**, a lemma, [line 226](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/ClassicalFieldTheory/GaugeTheory/LocalGaugeData/Basic.lean#L226).
+**`LocalGaugeData.iteratedDeriv_zero`**, a lemma, [line 226](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/ClassicalFieldTheory/GaugeTheory/LocalGaugeData/Basic.lean#L226).
 
 ```lean
 lemma iteratedDeriv_zero : jets.iteratedDeriv (0 : Multiset (Fin 1 ⊕ Fin 3)) = LinearMap.id
 ```
 
-**`LocalGaugeData.iteratedDeriv_cons`**, a lemma, [line 229](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/ClassicalFieldTheory/GaugeTheory/LocalGaugeData/Basic.lean#L229).
+**`LocalGaugeData.iteratedDeriv_cons`**, a lemma, [line 229](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/ClassicalFieldTheory/GaugeTheory/LocalGaugeData/Basic.lean#L229).
 
 ```lean
 lemma iteratedDeriv_cons (μ : Fin 1 ⊕ Fin 3) (μs : Multiset (Fin 1 ⊕ Fin 3)) :
     jets.iteratedDeriv (μ ::ₘ μs) = (jets.deriv μ).comp (jets.iteratedDeriv μs)
 ```
 
-**`LocalGaugeData.iteratedDeriv_add`**, a lemma, [line 244](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/ClassicalFieldTheory/GaugeTheory/LocalGaugeData/Basic.lean#L244).
+**`LocalGaugeData.iteratedDeriv_add`**, a lemma, [line 244](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/ClassicalFieldTheory/GaugeTheory/LocalGaugeData/Basic.lean#L244).
 
 > The iterated derivative is additive in the multiset.
 
@@ -213,21 +213,21 @@ lemma iteratedDeriv_add (s t : Multiset (Fin 1 ⊕ Fin 3)) :
     jets.iteratedDeriv (s + t) = (jets.iteratedDeriv s).comp (jets.iteratedDeriv t)
 ```
 
-**`LocalGaugeData.iteratedDeriv_singleton`**, a lemma, [line 253](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/ClassicalFieldTheory/GaugeTheory/LocalGaugeData/Basic.lean#L253).
+**`LocalGaugeData.iteratedDeriv_singleton`**, a lemma, [line 253](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/ClassicalFieldTheory/GaugeTheory/LocalGaugeData/Basic.lean#L253).
 
 ```lean
 lemma iteratedDeriv_singleton (μ : Fin 1 ⊕ Fin 3) :
     jets.iteratedDeriv ({μ} : Multiset (Fin 1 ⊕ Fin 3)) = jets.deriv μ
 ```
 
-**`LocalGaugeData.iteratedDeriv_cons_eq_comp_deriv`**, a lemma, [line 258](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/ClassicalFieldTheory/GaugeTheory/LocalGaugeData/Basic.lean#L258).
+**`LocalGaugeData.iteratedDeriv_cons_eq_comp_deriv`**, a lemma, [line 258](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/ClassicalFieldTheory/GaugeTheory/LocalGaugeData/Basic.lean#L258).
 
 ```lean
 lemma iteratedDeriv_cons_eq_comp_deriv (μ : Fin 1 ⊕ Fin 3) (s : Multiset (Fin 1 ⊕ Fin 3)) :
     jets.iteratedDeriv (μ ::ₘ s) = (jets.iteratedDeriv s).comp (jets.deriv μ)
 ```
 
-**`LocalGaugeData.iteratedDeriv_bracket`**, a lemma, [line 265](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/ClassicalFieldTheory/GaugeTheory/LocalGaugeData/Basic.lean#L265).
+**`LocalGaugeData.iteratedDeriv_bracket`**, a lemma, [line 265](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/ClassicalFieldTheory/GaugeTheory/LocalGaugeData/Basic.lean#L265).
 
 > The iterated Leibniz rule for the bracket.
 
@@ -238,14 +238,14 @@ lemma iteratedDeriv_bracket (s : Multiset (Fin 1 ⊕ Fin 3)) (a b : 𝔤J) :
         ⁅jets.iteratedDeriv p.1 a, jets.iteratedDeriv p.2 b⁆).sum
 ```
 
-**`LocalGaugeData.iteratedDeriv_ofConstantLie_of_ne_zero`**, a lemma, [line 287](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/ClassicalFieldTheory/GaugeTheory/LocalGaugeData/Basic.lean#L287).
+**`LocalGaugeData.iteratedDeriv_ofConstantLie_of_ne_zero`**, a lemma, [line 287](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/ClassicalFieldTheory/GaugeTheory/LocalGaugeData/Basic.lean#L287).
 
 ```lean
 lemma iteratedDeriv_ofConstantLie_of_ne_zero {p : Multiset (Fin 1 ⊕ Fin 3)} (hp : p ≠ 0)
     (a : 𝔤) : jets.iteratedDeriv p (jets.ofConstantLie a) = 0
 ```
 
-**`LocalGaugeData.iteratedDeriv_adjointJ_ofConstant`**, a lemma, [line 297](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/ClassicalFieldTheory/GaugeTheory/LocalGaugeData/Basic.lean#L297).
+**`LocalGaugeData.iteratedDeriv_adjointJ_ofConstant`**, a lemma, [line 297](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/ClassicalFieldTheory/GaugeTheory/LocalGaugeData/Basic.lean#L297).
 
 ```lean
 lemma iteratedDeriv_adjointJ_ofConstant (g : G₀) (s : Multiset (Fin 1 ⊕ Fin 3)) (x : 𝔤J) :
@@ -253,7 +253,7 @@ lemma iteratedDeriv_adjointJ_ofConstant (g : G₀) (s : Multiset (Fin 1 ⊕ Fin 
       jets.adjointJ (jets.ofConstant g) (jets.iteratedDeriv s x)
 ```
 
-**`LocalGaugeData.evalLie_iteratedDeriv_mulCoord`**, a lemma, [line 304](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/ClassicalFieldTheory/GaugeTheory/LocalGaugeData/Basic.lean#L304).
+**`LocalGaugeData.evalLie_iteratedDeriv_mulCoord`**, a lemma, [line 304](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/ClassicalFieldTheory/GaugeTheory/LocalGaugeData/Basic.lean#L304).
 
 ```lean
 lemma evalLie_iteratedDeriv_mulCoord (μ : Fin 1 ⊕ Fin 3) (s : Multiset (Fin 1 ⊕ Fin 3)) (a : 𝔤J) :
@@ -263,7 +263,7 @@ lemma evalLie_iteratedDeriv_mulCoord (μ : Fin 1 ⊕ Fin 3) (s : Multiset (Fin 1
 
 ## D. Morphisms
 
-**`LocalGaugeData.Hom`**, a structure, [line 329](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/ClassicalFieldTheory/GaugeTheory/LocalGaugeData/Basic.lean#L329).
+**`LocalGaugeData.Hom`**, a structure, [line 329](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/ClassicalFieldTheory/GaugeTheory/LocalGaugeData/Basic.lean#L329).
 
 > A morphism of local gauge data.
 >
@@ -291,7 +291,7 @@ structure Hom (jets : LocalGaugeData G₀ 𝔤 GJ 𝔤J) (jets' : LocalGaugeData
 
 ### D.1. The adjoint action
 
-**`LocalGaugeData.Hom.lie_adjoint`**, a lemma, [line 361](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/ClassicalFieldTheory/GaugeTheory/LocalGaugeData/Basic.lean#L361).
+**`LocalGaugeData.Hom.lie_adjoint`**, a lemma, [line 361](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/ClassicalFieldTheory/GaugeTheory/LocalGaugeData/Basic.lean#L361).
 
 > A morphism intertwines the adjoint actions of the gauge groups.
 
@@ -302,7 +302,7 @@ lemma lie_adjoint (g : G₀) (x : 𝔤) :
 
 ### D.2. Relation to iterated derivatives
 
-**`LocalGaugeData.Hom.lieJ_iteratedDeriv`**, a lemma, [line 375](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/ClassicalFieldTheory/GaugeTheory/LocalGaugeData/Basic.lean#L375).
+**`LocalGaugeData.Hom.lieJ_iteratedDeriv`**, a lemma, [line 375](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/ClassicalFieldTheory/GaugeTheory/LocalGaugeData/Basic.lean#L375).
 
 > A morphism commutes with iterated derivatives.
 
@@ -313,7 +313,7 @@ lemma lieJ_iteratedDeriv (s : Multiset (Fin 1 ⊕ Fin 3)) (a : 𝔤J) :
 
 ### D.3. Identity morphisms
 
-**`LocalGaugeData.Hom.id`**, a def, [line 390](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/ClassicalFieldTheory/GaugeTheory/LocalGaugeData/Basic.lean#L390).
+**`LocalGaugeData.Hom.id`**, a def, [line 390](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/ClassicalFieldTheory/GaugeTheory/LocalGaugeData/Basic.lean#L390).
 
 > The identity morphism of local gauge data.
 
@@ -323,7 +323,7 @@ protected def id (jets : LocalGaugeData G₀ 𝔤 GJ 𝔤J) : Hom jets jets
 
 ### D.4. Composition of morphisms
 
-**`LocalGaugeData.Hom.comp`**, a def, [line 415](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/ClassicalFieldTheory/GaugeTheory/LocalGaugeData/Basic.lean#L415).
+**`LocalGaugeData.Hom.comp`**, a def, [line 415](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/ClassicalFieldTheory/GaugeTheory/LocalGaugeData/Basic.lean#L415).
 
 > The composite `g ∘ f` of morphisms of local gauge data.
 
@@ -337,4 +337,4 @@ Its declarations' statements use no declaration of another module with an articl
 
 ## Sources
 
-- [Physlib/ClassicalFieldTheory/GaugeTheory/LocalGaugeData/Basic.lean at 2a1dfe43](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/ClassicalFieldTheory/GaugeTheory/LocalGaugeData/Basic.lean)
+- [Physlib/ClassicalFieldTheory/GaugeTheory/LocalGaugeData/Basic.lean at 8c87bdfb](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/ClassicalFieldTheory/GaugeTheory/LocalGaugeData/Basic.lean)

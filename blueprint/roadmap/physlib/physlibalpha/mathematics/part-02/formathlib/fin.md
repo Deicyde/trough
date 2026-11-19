@@ -8,7 +8,7 @@ proof: formalized
 
 # Peeling the first slot off a sum over tuples
 
-The module `PhyslibAlpha.Mathematics.ForMathlib.Fin`, [PhyslibAlpha/Mathematics/ForMathlib/Fin.lean](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Mathematics/ForMathlib/Fin.lean): 2 declarations, 2 with a docstring.
+The module `PhyslibAlpha.Mathematics.ForMathlib.Fin`, [PhyslibAlpha/Mathematics/ForMathlib/Fin.lean](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Mathematics/ForMathlib/Fin.lean): 2 declarations, 2 with a docstring.
 
 > Sums over tuples of indices, split into the first slot and the remaining ones.
 
@@ -36,7 +36,7 @@ The module `PhyslibAlpha.Mathematics.ForMathlib.Fin`, [PhyslibAlpha/Mathematics/
 
 ## A. Splitting off the first slot
 
-**`Physlib.Fin.sum_pi_succ_prod_smul`**, a lemma, [line 57](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Mathematics/ForMathlib/Fin.lean#L57).
+**`Physlib.Fin.sum_pi_succ_prod_smul`**, a lemma, [line 57](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Mathematics/ForMathlib/Fin.lean#L57).
 
 > A sum over tuples of indices, weighted by one scalar factor per slot, split into the
 > first slot and the remaining ones.
@@ -48,7 +48,7 @@ lemma sum_pi_succ_prod_smul {R M ι : Type*} [CommSemiring R] [AddCommMonoid M] 
       ∑ b : ι, ∑ p : Fin n → ι, (c 0 b * ∏ i, c i.succ (p i)) • X (Fin.cons b p)
 ```
 
-**`Physlib.Fin.sum_filter_weight_succ`**, a lemma, [line 71](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Mathematics/ForMathlib/Fin.lean#L71).
+**`Physlib.Fin.sum_filter_weight_succ`**, a lemma, [line 71](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Mathematics/ForMathlib/Fin.lean#L71).
 
 > Peeling the first slot off a sum over the tuples of a prescribed total weight: the first
 > slot takes its own weight `w b` and the remaining slots make up the rest. Each slot draws its
@@ -70,4 +70,4 @@ Its declarations' statements use no declaration of another module with an articl
 
 ## Sources
 
-- [PhyslibAlpha/Mathematics/ForMathlib/Fin.lean at 2a1dfe43](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Mathematics/ForMathlib/Fin.lean)
+- [PhyslibAlpha/Mathematics/ForMathlib/Fin.lean at 8c87bdfb](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Mathematics/ForMathlib/Fin.lean)

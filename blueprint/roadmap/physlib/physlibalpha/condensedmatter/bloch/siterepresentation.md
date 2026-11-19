@@ -8,7 +8,7 @@ proof: formalized
 
 # The translations and symmetries of a crystal on `ℓ²` of its sites
 
-The module `PhyslibAlpha.CondensedMatter.Bloch.SiteRepresentation`, [PhyslibAlpha/CondensedMatter/Bloch/SiteRepresentation.lean](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/CondensedMatter/Bloch/SiteRepresentation.lean): 13 declarations (3 instances with no name), 11 with a docstring.
+The module `PhyslibAlpha.CondensedMatter.Bloch.SiteRepresentation`, [PhyslibAlpha/CondensedMatter/Bloch/SiteRepresentation.lean](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/CondensedMatter/Bloch/SiteRepresentation.lean): 13 declarations (3 instances with no name), 11 with a docstring.
 
 > The space of square-summable functions on the sites of a crystal carries the translations and the
 > bond-preserving symmetries as a covariant unitary representation.
@@ -41,7 +41,7 @@ The module `PhyslibAlpha.CondensedMatter.Bloch.SiteRepresentation`, [PhyslibAlph
 
 ## A. Counting measure on the sites
 
-**An instance with no name**, [line 67](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/CondensedMatter/Bloch/SiteRepresentation.lean#L67).
+**An instance with no name**, [line 68](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/CondensedMatter/Bloch/SiteRepresentation.lean#L68).
 
 > Every set of sites is measurable.
 
@@ -49,19 +49,19 @@ The module `PhyslibAlpha.CondensedMatter.Bloch.SiteRepresentation`, [PhyslibAlph
 instance : MeasurableSpace (CellSite G F)
 ```
 
-**An instance with no name**, [line 69](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/CondensedMatter/Bloch/SiteRepresentation.lean#L69).
+**An instance with no name**, [line 70](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/CondensedMatter/Bloch/SiteRepresentation.lean#L70).
 
 ```lean
 instance : MeasurableSingletonClass (CellSite G F)
 ```
 
-**An instance with no name**, [line 71](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/CondensedMatter/Bloch/SiteRepresentation.lean#L71).
+**An instance with no name**, [line 72](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/CondensedMatter/Bloch/SiteRepresentation.lean#L72).
 
 ```lean
 instance [Countable G] [Countable F] : Countable (CellSite G F)
 ```
 
-**`CondensedMatter.measurePreserving_count`**, a lemma, [line 76](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/CondensedMatter/Bloch/SiteRepresentation.lean#L76).
+**`CondensedMatter.measurePreserving_count`**, a lemma, [line 77](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/CondensedMatter/Bloch/SiteRepresentation.lean#L77).
 
 > A permutation of a countable set preserves the counting measure.
 
@@ -73,7 +73,7 @@ lemma measurePreserving_count {X : Type*} [MeasurableSpace X] [MeasurableSinglet
 
 ## B. The representations
 
-**`CondensedMatter.SiteSpace`**, an abbrev, [line 97](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/CondensedMatter/Bloch/SiteRepresentation.lean#L97).
+**`CondensedMatter.SiteSpace`**, an abbrev, [line 98](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/CondensedMatter/Bloch/SiteRepresentation.lean#L98).
 
 > The square-summable functions on the sites of a crystal built from a unit cell.
 
@@ -81,7 +81,7 @@ lemma measurePreserving_count {X : Type*} [MeasurableSpace X] [MeasurableSinglet
 abbrev SiteSpace (G F : Type*)
 ```
 
-**`CondensedMatter.siteTranslationPerm`**, a def, [line 101](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/CondensedMatter/Bloch/SiteRepresentation.lean#L101).
+**`CondensedMatter.siteTranslationPerm`**, a def, [line 102](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/CondensedMatter/Bloch/SiteRepresentation.lean#L102).
 
 > The translations act on the sites by permutations.
 
@@ -90,7 +90,7 @@ def siteTranslationPerm (G F : Type*) [AddCommGroup G] :
     Multiplicative G →* Equiv.Perm (CellSite G F)
 ```
 
-**`CondensedMatter.siteTranslation`**, a def, [line 106](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/CondensedMatter/Bloch/SiteRepresentation.lean#L106).
+**`CondensedMatter.siteTranslation`**, a def, [line 107](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/CondensedMatter/Bloch/SiteRepresentation.lean#L107).
 
 > **The translation representation** on `ℓ²` of the sites: `(U_a ψ)(x) = ψ(-a + x)`.
 
@@ -99,7 +99,7 @@ def siteTranslation (G F : Type*) [AddCommGroup G] [Countable G] [Countable F] :
     Multiplicative G →* unitary (SiteSpace G F →L[ℂ] SiteSpace G F)
 ```
 
-**`CondensedMatter.siteSymmetryPerm`**, a def, [line 114](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/CondensedMatter/Bloch/SiteRepresentation.lean#L114).
+**`CondensedMatter.siteSymmetryPerm`**, a def, [line 115](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/CondensedMatter/Bloch/SiteRepresentation.lean#L115).
 
 > The bond-preserving symmetries act on the sites by permutations.
 
@@ -107,7 +107,7 @@ def siteTranslation (G F : Type*) [AddCommGroup G] [Countable G] [Countable F] :
 def siteSymmetryPerm : g.symmetries →* Equiv.Perm (CellSite G F)
 ```
 
-**`CondensedMatter.siteSymmetry`**, a def, [line 118](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/CondensedMatter/Bloch/SiteRepresentation.lean#L118).
+**`CondensedMatter.siteSymmetry`**, a def, [line 119](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/CondensedMatter/Bloch/SiteRepresentation.lean#L119).
 
 > **The symmetry representation** on `ℓ²` of the sites: `(U_s ψ)(x) = ψ(s⁻¹ • x)`.
 
@@ -115,7 +115,7 @@ def siteSymmetryPerm : g.symmetries →* Equiv.Perm (CellSite G F)
 def siteSymmetry : g.symmetries →* unitary (SiteSpace G F →L[ℂ] SiteSpace G F)
 ```
 
-**`CondensedMatter.latticeAut`**, a def, [line 123](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/CondensedMatter/Bloch/SiteRepresentation.lean#L123).
+**`CondensedMatter.latticeAut`**, a def, [line 124](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/CondensedMatter/Bloch/SiteRepresentation.lean#L124).
 
 > The action of a symmetry on the lattice of translations, through its linear part.
 
@@ -123,7 +123,7 @@ def siteSymmetry : g.symmetries →* unitary (SiteSpace G F →L[ℂ] SiteSpace 
 def latticeAut : g.symmetries →* MulAut (Multiplicative G)
 ```
 
-**`CondensedMatter.siteSymmetryPerm_translation`**, a lemma, [line 133](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/CondensedMatter/Bloch/SiteRepresentation.lean#L133).
+**`CondensedMatter.siteSymmetryPerm_translation`**, a lemma, [line 134](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/CondensedMatter/Bloch/SiteRepresentation.lean#L134).
 
 > A symmetry moves a translated site to the correspondingly translated image: the permutations
 > of the sites satisfy `s ∘ τ_a = τ_{A a} ∘ s`.
@@ -134,7 +134,7 @@ lemma siteSymmetryPerm_translation (s : g.symmetries) (a : Multiplicative G) :
       siteTranslationPerm G F (latticeAut g s a) * siteSymmetryPerm g s
 ```
 
-**`CondensedMatter.siteTranslation_covariant`**, a lemma, [line 149](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/CondensedMatter/Bloch/SiteRepresentation.lean#L149).
+**`CondensedMatter.siteTranslation_covariant`**, a lemma, [line 150](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/CondensedMatter/Bloch/SiteRepresentation.lean#L150).
 
 > **The translations and the bond-preserving symmetries form a covariant representation on
 > `ℓ²` of the sites.**
@@ -146,7 +146,7 @@ lemma siteTranslation_covariant :
 
 ## C. Symmetry reduction
 
-**`CondensedMatter.spectrum_sectorOp_eq_site`**, a lemma, [line 183](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/CondensedMatter/Bloch/SiteRepresentation.lean#L183).
+**`CondensedMatter.spectrum_sectorOp_eq_site`**, a lemma, [line 184](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/CondensedMatter/Bloch/SiteRepresentation.lean#L184).
 
 > **Symmetry reduction on a crystal.** Let `T` be a bounded operator on `ℓ²` of the sites of a
 > crystal, commuting with the translations and with the bond-preserving symmetries. Its restriction
@@ -171,4 +171,4 @@ lemma spectrum_sectorOp_eq_site {T : SiteSpace G F →L[ℂ] SiteSpace G F}
 
 ## Sources
 
-- [PhyslibAlpha/CondensedMatter/Bloch/SiteRepresentation.lean at 2a1dfe43](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/CondensedMatter/Bloch/SiteRepresentation.lean)
+- [PhyslibAlpha/CondensedMatter/Bloch/SiteRepresentation.lean at 8c87bdfb](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/CondensedMatter/Bloch/SiteRepresentation.lean)

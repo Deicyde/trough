@@ -1,14 +1,14 @@
 ---
 declaration: module
 origin: cited
-lean: ProbabilisticTheory.inner_rankOne_self_apply, ProbabilisticTheory.inner_sum_rankOne_self_apply, ProbabilisticTheory.isPositive_one_sub_sum_rankOne, ProbabilisticTheory.rankOneObservable, ProbabilisticTheory.coe_rankOneObservable, ProbabilisticTheory.rankOneObservable_nonneg, ProbabilisticTheory.orthonormalObservable, ProbabilisticTheory.coe_orthonormalObservable
+lean: PhyslibAlpha.ProbabilisticTheory.inner_rankOne_self_apply, PhyslibAlpha.ProbabilisticTheory.inner_sum_rankOne_self_apply, PhyslibAlpha.ProbabilisticTheory.isPositive_one_sub_sum_rankOne, PhyslibAlpha.ProbabilisticTheory.rankOneObservable, PhyslibAlpha.ProbabilisticTheory.coe_rankOneObservable, PhyslibAlpha.ProbabilisticTheory.rankOneObservable_nonneg, PhyslibAlpha.ProbabilisticTheory.orthonormalObservable, PhyslibAlpha.ProbabilisticTheory.coe_orthonormalObservable
 statement: formalized
 proof: formalized
 ---
 
 # Measurements in an orthonormal family
 
-The module `PhyslibAlpha.ProbabilisticTheory.HilbertSpace.OrthonormalMeasurement`, [PhyslibAlpha/ProbabilisticTheory/HilbertSpace/OrthonormalMeasurement.lean](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/OrthonormalMeasurement.lean): 15 declarations, 13 with a docstring.
+The module `PhyslibAlpha.ProbabilisticTheory.HilbertSpace.OrthonormalMeasurement`, [PhyslibAlpha/ProbabilisticTheory/HilbertSpace/OrthonormalMeasurement.lean](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/OrthonormalMeasurement.lean): 15 declarations, 13 with a docstring.
 
 > The measurement of a quantum system on a complex Hilbert space in a finite orthonormal family.
 
@@ -36,7 +36,7 @@ The module `PhyslibAlpha.ProbabilisticTheory.HilbertSpace.OrthonormalMeasurement
 
 ## A. Rank-one observables
 
-**`ProbabilisticTheory.inner_rankOne_self_apply`**, a lemma, [line 65](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/OrthonormalMeasurement.lean#L65).
+**`PhyslibAlpha.ProbabilisticTheory.inner_rankOne_self_apply`**, a lemma, [line 65](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/OrthonormalMeasurement.lean#L65).
 
 > `⟪φ, |v⟩⟨v| φ⟫ = ‖⟪v, φ⟫‖ ^ 2`.
 
@@ -45,7 +45,7 @@ lemma inner_rankOne_self_apply (v φ : H) :
     ⟪φ, rankOne ℂ v v φ⟫_ℂ = (‖⟪v, φ⟫_ℂ‖ ^ 2 : ℝ)
 ```
 
-**`ProbabilisticTheory.inner_sum_rankOne_self_apply`**, a lemma, [line 71](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/OrthonormalMeasurement.lean#L71).
+**`PhyslibAlpha.ProbabilisticTheory.inner_sum_rankOne_self_apply`**, a lemma, [line 71](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/OrthonormalMeasurement.lean#L71).
 
 > `⟪φ, ∑ y, |b y⟩⟨b y| φ⟫ = ∑ y, ‖⟪b y, φ⟫‖ ^ 2`.
 
@@ -54,7 +54,7 @@ lemma inner_sum_rankOne_self_apply (b : X → H) (φ : H) :
     ⟪φ, (∑ y, rankOne ℂ (b y) (b y)) φ⟫_ℂ = (∑ y, ‖⟪b y, φ⟫_ℂ‖ ^ 2 : ℝ)
 ```
 
-**`ProbabilisticTheory.isPositive_one_sub_sum_rankOne`**, a lemma, [line 77](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/OrthonormalMeasurement.lean#L77).
+**`PhyslibAlpha.ProbabilisticTheory.isPositive_one_sub_sum_rankOne`**, a lemma, [line 77](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/OrthonormalMeasurement.lean#L77).
 
 > By Bessel's inequality, `1 - ∑ y, |b y⟩⟨b y|` is positive for an orthonormal family `b`.
 
@@ -63,7 +63,7 @@ lemma isPositive_one_sub_sum_rankOne {b : X → H} (hb : Orthonormal ℂ b) :
     (1 - ∑ y, rankOne ℂ (b y) (b y)).IsPositive
 ```
 
-**`ProbabilisticTheory.rankOneObservable`**, a def, [line 94](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/OrthonormalMeasurement.lean#L94).
+**`PhyslibAlpha.ProbabilisticTheory.rankOneObservable`**, a def, [line 94](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/OrthonormalMeasurement.lean#L94).
 
 > The rank-one observable `|v⟩⟨v|`.
 
@@ -71,14 +71,14 @@ lemma isPositive_one_sub_sum_rankOne {b : X → H} (hb : Orthonormal ℂ b) :
 noncomputable def rankOneObservable (v : H) : Observable (H →L[ℂ] H)
 ```
 
-**`ProbabilisticTheory.coe_rankOneObservable`**, a lemma, [line 98](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/OrthonormalMeasurement.lean#L98).
+**`PhyslibAlpha.ProbabilisticTheory.coe_rankOneObservable`**, a lemma, [line 98](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/OrthonormalMeasurement.lean#L98).
 
 ```lean
 lemma coe_rankOneObservable (v : H) :
     (rankOneObservable v : H →L[ℂ] H) = rankOne ℂ v v
 ```
 
-**`ProbabilisticTheory.rankOneObservable_nonneg`**, a lemma, [line 102](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/OrthonormalMeasurement.lean#L102).
+**`PhyslibAlpha.ProbabilisticTheory.rankOneObservable_nonneg`**, a lemma, [line 102](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/OrthonormalMeasurement.lean#L102).
 
 > The rank-one observable `|v⟩⟨v|` is positive.
 
@@ -88,7 +88,7 @@ lemma rankOneObservable_nonneg (v : H) : 0 ≤ rankOneObservable v
 
 ## B. The outcome observables
 
-**`ProbabilisticTheory.orthonormalObservable`**, a def, [line 115](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/OrthonormalMeasurement.lean#L115).
+**`PhyslibAlpha.ProbabilisticTheory.orthonormalObservable`**, a def, [line 115](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/OrthonormalMeasurement.lean#L115).
 
 > The observable of the outcome `x` in the measurement in the family `b`: `|b x⟩⟨b x|`, plus
 > the remainder `1 - ∑ y, |b y⟩⟨b y|` when `x = x₀`.
@@ -97,7 +97,7 @@ lemma rankOneObservable_nonneg (v : H) : 0 ≤ rankOneObservable v
 noncomputable def orthonormalObservable (b : X → H) (x₀ x : X) : Observable (H →L[ℂ] H)
 ```
 
-**`ProbabilisticTheory.coe_orthonormalObservable`**, a lemma, [line 119](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/OrthonormalMeasurement.lean#L119).
+**`PhyslibAlpha.ProbabilisticTheory.coe_orthonormalObservable`**, a lemma, [line 119](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/OrthonormalMeasurement.lean#L119).
 
 > The operator underlying the observable of the outcome `x`.
 
@@ -107,7 +107,7 @@ lemma coe_orthonormalObservable (b : X → H) (x₀ x : X) :
       rankOne ℂ (b x) (b x) + if x = x₀ then 1 - ∑ y, rankOne ℂ (b y) (b y) else 0
 ```
 
-**`ProbabilisticTheory.sum_orthonormalObservable`**, a lemma, [line 125](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/OrthonormalMeasurement.lean#L125).
+**`PhyslibAlpha.ProbabilisticTheory.sum_orthonormalObservable`**, a lemma, [line 125](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/OrthonormalMeasurement.lean#L125).
 
 > The outcome observables add up to `1`.
 
@@ -116,7 +116,7 @@ lemma sum_orthonormalObservable (b : X → H) (x₀ : X) :
     ∑ x, orthonormalObservable b x₀ x = 1
 ```
 
-**`ProbabilisticTheory.orthonormalObservable_nonneg`**, a lemma, [line 130](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/OrthonormalMeasurement.lean#L130).
+**`PhyslibAlpha.ProbabilisticTheory.orthonormalObservable_nonneg`**, a lemma, [line 130](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/OrthonormalMeasurement.lean#L130).
 
 > The outcome observables of an orthonormal family are positive.
 
@@ -125,7 +125,7 @@ lemma orthonormalObservable_nonneg {b : X → H} (hb : Orthonormal ℂ b) (x₀ 
     0 ≤ orthonormalObservable b x₀ x
 ```
 
-**`ProbabilisticTheory.orthonormalEffect`**, a def, [line 141](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/OrthonormalMeasurement.lean#L141).
+**`PhyslibAlpha.ProbabilisticTheory.orthonormalEffect`**, a def, [line 141](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/OrthonormalMeasurement.lean#L141).
 
 > The outcome effects of the measurement in an orthonormal family.
 
@@ -134,7 +134,7 @@ noncomputable def orthonormalEffect {b : X → H} (hb : Orthonormal ℂ b) (x₀
     Effect (Observable (H →L[ℂ] H))
 ```
 
-**`ProbabilisticTheory.coe_orthonormalEffect`**, a lemma, [line 148](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/OrthonormalMeasurement.lean#L148).
+**`PhyslibAlpha.ProbabilisticTheory.coe_orthonormalEffect`**, a lemma, [line 148](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/OrthonormalMeasurement.lean#L148).
 
 ```lean
 lemma coe_orthonormalEffect {b : X → H} (hb : Orthonormal ℂ b) (x₀ x : X) :
@@ -143,7 +143,7 @@ lemma coe_orthonormalEffect {b : X → H} (hb : Orthonormal ℂ b) (x₀ x : X) 
 
 ## C. The measurement and its Born rule
 
-**`ProbabilisticTheory.Measurement.ofOrthonormal`**, a def, [line 164](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/OrthonormalMeasurement.lean#L164).
+**`PhyslibAlpha.ProbabilisticTheory.Measurement.ofOrthonormal`**, a def, [line 164](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/OrthonormalMeasurement.lean#L164).
 
 > The measurement in the orthonormal family `b`: the outcome `x` has effect `|b x⟩⟨b x|`, and
 > the outcome `x₀` also registers the orthogonal complement of the span of the family.
@@ -153,7 +153,7 @@ noncomputable def ofOrthonormal {b : X → H} (hb : Orthonormal ℂ b) (x₀ : X
     Measurement X (Observable (H →L[ℂ] H))
 ```
 
-**`ProbabilisticTheory.Measurement.coe_ofOrthonormal_singleton`**, a lemma, [line 170](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/OrthonormalMeasurement.lean#L170).
+**`PhyslibAlpha.ProbabilisticTheory.Measurement.coe_ofOrthonormal_singleton`**, a lemma, [line 170](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/OrthonormalMeasurement.lean#L170).
 
 > The outcome `x` of the measurement in an orthonormal family has the observable
 > `orthonormalObservable b x₀ x`.
@@ -164,7 +164,7 @@ lemma coe_ofOrthonormal_singleton {b : X → H} (hb : Orthonormal ℂ b) (x₀ x
     (ofOrthonormal hb x₀ {x} hx : Observable (H →L[ℂ] H)) = orthonormalObservable b x₀ x
 ```
 
-**`ProbabilisticTheory.Measurement.expectation_ofOrthonormal_singleton`**, a lemma, [line 177](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/OrthonormalMeasurement.lean#L177).
+**`PhyslibAlpha.ProbabilisticTheory.Measurement.expectation_ofOrthonormal_singleton`**, a lemma, [line 177](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/OrthonormalMeasurement.lean#L177).
 
 > The Born rule for the measurement in an orthonormal family: on a unit vector `φ`, the
 > outcome `x` has probability `‖⟪b x, φ⟫‖ ^ 2`, plus `1 - ∑ y, ‖⟪b y, φ⟫‖ ^ 2` when `x = x₀`.
@@ -178,11 +178,11 @@ lemma expectation_ofOrthonormal_singleton [MeasurableSingletonClass X] {b : X �
 
 ## Depends on
 
-- [The observables of a C⋆-algebra](../../../../physlib/probabilistictheory/cstaralgebra/orderunit.md)
+- [The observables of a C⋆-algebra (PhyslibAlpha)](../../cstaralgebra/orderunit.md)
 - [Vector states](state-vector.md)
 - [Measurements with finitely many outcomes](../../measurement/finite.md)
 - [Expectation, variance and covariance](../../staralgebra/statistics.md)
 
 ## Sources
 
-- [PhyslibAlpha/ProbabilisticTheory/HilbertSpace/OrthonormalMeasurement.lean at 2a1dfe43](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/OrthonormalMeasurement.lean)
+- [PhyslibAlpha/ProbabilisticTheory/HilbertSpace/OrthonormalMeasurement.lean at 8c87bdfb](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/OrthonormalMeasurement.lean)

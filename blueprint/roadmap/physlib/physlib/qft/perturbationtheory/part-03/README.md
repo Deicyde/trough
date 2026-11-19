@@ -16,7 +16,7 @@ navigation: transparent
 - [Uncontracted elements](wickcontraction-uncontracted.md)
 - [List of uncontracted elements of a Wick contraction](wickcontraction-uncontractedlist.md)
 
-Modules in [WickContraction/Sign/](https://github.com/leanprover-community/physlib/tree/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/QFT/PerturbationTheory/WickContraction/Sign):
+Modules in [WickContraction/Sign/](https://github.com/leanprover-community/physlib/tree/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/QFT/PerturbationTheory/WickContraction/Sign):
 
 - [Sign associated with a contraction](wickcontraction-sign-basic.md)
 - [Sign on inserting and not contracting](wickcontraction-sign-insertnone.md)

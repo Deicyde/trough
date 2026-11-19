@@ -8,7 +8,7 @@ proof: formalized
 
 # Analytic bounds for positive-semidefinite matrices
 
-The module `PhyslibAlpha.Mathematics.TauCeti.Analysis.Matrix.PosSemidef`, [PhyslibAlpha/Mathematics/TauCeti/Analysis/Matrix/PosSemidef.lean](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Mathematics/TauCeti/Analysis/Matrix/PosSemidef.lean): 6 declarations, 6 with a docstring; 2 private, not shown.
+The module `PhyslibAlpha.Mathematics.TauCeti.Analysis.Matrix.PosSemidef`, [PhyslibAlpha/Mathematics/TauCeti/Analysis/Matrix/PosSemidef.lean](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Mathematics/TauCeti/Analysis/Matrix/PosSemidef.lean): 6 declarations, 6 with a docstring; 2 private, not shown.
 
 > This file supplements the foundational API in `TauCeti.LinearAlgebra.Matrix.PosSemidef` with scalar
 > Cauchy--Schwarz and vanishing bounds for `RCLike`-valued positive-semidefinite matrices, together
@@ -46,7 +46,7 @@ The module `PhyslibAlpha.Mathematics.TauCeti.Analysis.Matrix.PosSemidef`, [Physl
 
 ## A. Development
 
-**`Matrix.PosSemidef.normSq_le`**, a lemma, [line 82](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Mathematics/TauCeti/Analysis/Matrix/PosSemidef.lean#L82).
+**`Matrix.PosSemidef.normSq_le`**, a lemma, [line 82](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Mathematics/TauCeti/Analysis/Matrix/PosSemidef.lean#L82).
 
 > Scalar Cauchy--Schwarz for an `RCLike`-valued positive-semidefinite matrix.
 
@@ -56,7 +56,7 @@ lemma normSq_le {K : α → α → 𝕜}
     RCLike.normSq (K a b) ≤ RCLike.re (K a a) * RCLike.re (K b b)
 ```
 
-**`Matrix.PosSemidef.eq_zero_of_apply_self_eq_zero_left`**, a lemma, [line 102](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Mathematics/TauCeti/Analysis/Matrix/PosSemidef.lean#L102).
+**`Matrix.PosSemidef.eq_zero_of_apply_self_eq_zero_left`**, a lemma, [line 102](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Mathematics/TauCeti/Analysis/Matrix/PosSemidef.lean#L102).
 
 > A zero diagonal entry forces the corresponding row entry to vanish.
 
@@ -65,7 +65,7 @@ lemma eq_zero_of_apply_self_eq_zero_left {K : α → α → 𝕜}
     (hK : Matrix.PosSemidef K) {a b : α} (ha : K a a = 0) : K a b = 0
 ```
 
-**`Matrix.PosSemidef.eq_zero_of_apply_self_eq_zero_right`**, a lemma, [line 111](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Mathematics/TauCeti/Analysis/Matrix/PosSemidef.lean#L111).
+**`Matrix.PosSemidef.eq_zero_of_apply_self_eq_zero_right`**, a lemma, [line 111](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Mathematics/TauCeti/Analysis/Matrix/PosSemidef.lean#L111).
 
 > A zero diagonal entry forces the corresponding column entry to vanish.
 
@@ -74,7 +74,7 @@ lemma eq_zero_of_apply_self_eq_zero_right {K : α → α → 𝕜}
     (hK : Matrix.PosSemidef K) {a b : α} (hb : K b b = 0) : K a b = 0
 ```
 
-**`Matrix.PosSemidef.norm_le_one_of_apply_self_eq_one`**, a lemma, [line 122](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Mathematics/TauCeti/Analysis/Matrix/PosSemidef.lean#L122).
+**`Matrix.PosSemidef.norm_le_one_of_apply_self_eq_one`**, a lemma, [line 122](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Mathematics/TauCeti/Analysis/Matrix/PosSemidef.lean#L122).
 
 > If two diagonal entries are `1`, then the corresponding off-diagonal entry has norm at most
 > `1`.
@@ -85,7 +85,7 @@ lemma norm_le_one_of_apply_self_eq_one {K : α → α → 𝕜}
     ‖K a b‖ ≤ 1
 ```
 
-**`Matrix.PosSemidef.norm_le_of_norm_apply_self_le`**, a lemma, [line 130](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Mathematics/TauCeti/Analysis/Matrix/PosSemidef.lean#L130).
+**`Matrix.PosSemidef.norm_le_of_norm_apply_self_le`**, a lemma, [line 130](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Mathematics/TauCeti/Analysis/Matrix/PosSemidef.lean#L130).
 
 > **The diagonal of a positive-semidefinite matrix bounds all of its entries.** Cauchy--Schwarz
 > turns a uniform bound on the (nonnegative real) diagonal entries into the same bound everywhere.
@@ -97,7 +97,7 @@ lemma norm_le_of_norm_apply_self_le {K : α → α → 𝕜} {C : ℝ}
 
 ## B. Bounded positive-semidefinite Hankel sequences
 
-**`TauCeti.sub_nonneg_of_posSemidef_hankel`**, a lemma, [line 197](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Mathematics/TauCeti/Analysis/Matrix/PosSemidef.lean#L197).
+**`TauCeti.sub_nonneg_of_posSemidef_hankel`**, a lemma, [line 197](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Mathematics/TauCeti/Analysis/Matrix/PosSemidef.lean#L197).
 
 > **A positive-semidefinite Hankel sequence bounded above does not increase at the first step.**
 > If `(m, n) ↦ a (m + n)` is positive semidefinite and the real parts of `a` are bounded above by `D`
@@ -117,4 +117,4 @@ Its declarations' statements use no declaration of another module with an articl
 
 ## Sources
 
-- [PhyslibAlpha/Mathematics/TauCeti/Analysis/Matrix/PosSemidef.lean at 2a1dfe43](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Mathematics/TauCeti/Analysis/Matrix/PosSemidef.lean)
+- [PhyslibAlpha/Mathematics/TauCeti/Analysis/Matrix/PosSemidef.lean at 8c87bdfb](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Mathematics/TauCeti/Analysis/Matrix/PosSemidef.lean)

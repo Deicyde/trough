@@ -1,14 +1,14 @@
 ---
 declaration: module
 origin: cited
-lean: ProbabilisticTheory.QuantumMechanics.cayley, ProbabilisticTheory.QuantumMechanics.cayleyInverse, ProbabilisticTheory.QuantumMechanics.cayley_ne_one, ProbabilisticTheory.QuantumMechanics.cayley_re, ProbabilisticTheory.QuantumMechanics.cayley_im, ProbabilisticTheory.QuantumMechanics.cayleyInverse_cayley, ProbabilisticTheory.QuantumMechanics.cayley_norm, ProbabilisticTheory.QuantumMechanics.cayley_cayleyInverse
+lean: PhyslibAlpha.ProbabilisticTheory.QuantumMechanics.cayley, PhyslibAlpha.ProbabilisticTheory.QuantumMechanics.cayleyInverse, PhyslibAlpha.ProbabilisticTheory.QuantumMechanics.cayley_ne_one, PhyslibAlpha.ProbabilisticTheory.QuantumMechanics.cayley_re, PhyslibAlpha.ProbabilisticTheory.QuantumMechanics.cayley_im, PhyslibAlpha.ProbabilisticTheory.QuantumMechanics.cayleyInverse_cayley, PhyslibAlpha.ProbabilisticTheory.QuantumMechanics.cayley_norm, PhyslibAlpha.ProbabilisticTheory.QuantumMechanics.cayley_cayleyInverse
 statement: formalized
 proof: formalized
 ---
 
 # The Cayley transform
 
-The module `PhyslibAlpha.ProbabilisticTheory.HilbertSpace.Unbounded.Cayley.Basic`, [PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/Cayley/Basic.lean](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/Cayley/Basic.lean): 26 declarations, 7 with a docstring.
+The module `PhyslibAlpha.ProbabilisticTheory.HilbertSpace.Unbounded.Cayley.Basic`, [PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/Cayley/Basic.lean](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/Cayley/Basic.lean): 26 declarations, 7 with a docstring.
 
 > The Cayley transform of a self-adjoint operator is a unitary.
 
@@ -30,7 +30,7 @@ The module `PhyslibAlpha.ProbabilisticTheory.HilbertSpace.Unbounded.Cayley.Basic
 
 ## A. The scalar Cayley transform
 
-**`ProbabilisticTheory.QuantumMechanics.cayley`**, a def, [line 55](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/Cayley/Basic.lean#L55).
+**`PhyslibAlpha.ProbabilisticTheory.QuantumMechanics.cayley`**, a def, [line 55](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/Cayley/Basic.lean#L55).
 
 > The scalar Cayley transform from the real line to the unit circle.
 
@@ -38,7 +38,7 @@ The module `PhyslibAlpha.ProbabilisticTheory.HilbertSpace.Unbounded.Cayley.Basic
 def cayley (x : ℝ) : ℂ
 ```
 
-**`ProbabilisticTheory.QuantumMechanics.cayleyInverse`**, a def, [line 58](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/Cayley/Basic.lean#L58).
+**`PhyslibAlpha.ProbabilisticTheory.QuantumMechanics.cayleyInverse`**, a def, [line 58](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/Cayley/Basic.lean#L58).
 
 > The inverse Cayley coordinate, with an arbitrary value at the point `1` (infinity).
 
@@ -46,50 +46,50 @@ def cayley (x : ℝ) : ℂ
 def cayleyInverse (z : ℂ) : ℝ
 ```
 
-**`ProbabilisticTheory.QuantumMechanics.cayley_ne_one`**, a lemma, [line 60](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/Cayley/Basic.lean#L60).
+**`PhyslibAlpha.ProbabilisticTheory.QuantumMechanics.cayley_ne_one`**, a lemma, [line 60](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/Cayley/Basic.lean#L60).
 
 ```lean
 lemma cayley_ne_one (x : ℝ) : cayley x ≠ 1
 ```
 
-**`ProbabilisticTheory.QuantumMechanics.cayley_re`**, a lemma, [line 72](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/Cayley/Basic.lean#L72).
+**`PhyslibAlpha.ProbabilisticTheory.QuantumMechanics.cayley_re`**, a lemma, [line 72](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/Cayley/Basic.lean#L72).
 
 ```lean
 lemma cayley_re (x : ℝ) : (cayley x).re = (x ^ 2 - 1) / (x ^ 2 + 1)
 ```
 
-**`ProbabilisticTheory.QuantumMechanics.cayley_im`**, a lemma, [line 77](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/Cayley/Basic.lean#L77).
+**`PhyslibAlpha.ProbabilisticTheory.QuantumMechanics.cayley_im`**, a lemma, [line 77](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/Cayley/Basic.lean#L77).
 
 ```lean
 lemma cayley_im (x : ℝ) : (cayley x).im = (-2 * x) / (x ^ 2 + 1)
 ```
 
-**`ProbabilisticTheory.QuantumMechanics.cayleyInverse_cayley`**, a lemma, [line 82](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/Cayley/Basic.lean#L82).
+**`PhyslibAlpha.ProbabilisticTheory.QuantumMechanics.cayleyInverse_cayley`**, a lemma, [line 82](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/Cayley/Basic.lean#L82).
 
 ```lean
 lemma cayleyInverse_cayley (x : ℝ) : cayleyInverse (cayley x) = x
 ```
 
-**`ProbabilisticTheory.QuantumMechanics.cayley_norm`**, a lemma, [line 88](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/Cayley/Basic.lean#L88).
+**`PhyslibAlpha.ProbabilisticTheory.QuantumMechanics.cayley_norm`**, a lemma, [line 88](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/Cayley/Basic.lean#L88).
 
 ```lean
 lemma cayley_norm (x : ℝ) : ‖cayley x‖ = 1
 ```
 
-**`ProbabilisticTheory.QuantumMechanics.cayley_cayleyInverse`**, a lemma, [line 96](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/Cayley/Basic.lean#L96).
+**`PhyslibAlpha.ProbabilisticTheory.QuantumMechanics.cayley_cayleyInverse`**, a lemma, [line 96](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/Cayley/Basic.lean#L96).
 
 ```lean
 lemma cayley_cayleyInverse {z : ℂ} (hz : ‖z‖ = 1) (hz1 : z ≠ 1) :
     cayley (cayleyInverse z) = z
 ```
 
-**`ProbabilisticTheory.QuantumMechanics.measurable_cayley`**, a lemma, [line 124](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/Cayley/Basic.lean#L124).
+**`PhyslibAlpha.ProbabilisticTheory.QuantumMechanics.measurable_cayley`**, a lemma, [line 124](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/Cayley/Basic.lean#L124).
 
 ```lean
 lemma measurable_cayley : Measurable cayley
 ```
 
-**`ProbabilisticTheory.QuantumMechanics.measurable_cayleyInverse`**, a lemma, [line 128](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/Cayley/Basic.lean#L128).
+**`PhyslibAlpha.ProbabilisticTheory.QuantumMechanics.measurable_cayleyInverse`**, a lemma, [line 128](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/Cayley/Basic.lean#L128).
 
 ```lean
 lemma measurable_cayleyInverse : Measurable cayleyInverse
@@ -97,7 +97,7 @@ lemma measurable_cayleyInverse : Measurable cayleyInverse
 
 ## B. The Cayley transform of a partial operator
 
-**`ProbabilisticTheory.QuantumMechanics.cayleyPMap`**, a def, [line 140](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/Cayley/Basic.lean#L140).
+**`PhyslibAlpha.ProbabilisticTheory.QuantumMechanics.cayleyPMap`**, a def, [line 140](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/Cayley/Basic.lean#L140).
 
 > The Cayley transform before forgetting that it is bounded.
 
@@ -105,14 +105,14 @@ lemma measurable_cayleyInverse : Measurable cayleyInverse
 def cayleyPMap (T : H →ₗ.[ℂ] H) : H →ₗ.[ℂ] H
 ```
 
-**`ProbabilisticTheory.QuantumMechanics.cayleyPMap_domain_top`**, a lemma, [line 143](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/Cayley/Basic.lean#L143).
+**`PhyslibAlpha.ProbabilisticTheory.QuantumMechanics.cayleyPMap_domain_top`**, a lemma, [line 143](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/Cayley/Basic.lean#L143).
 
 ```lean
 lemma cayleyPMap_domain_top {T : H →ₗ.[ℂ] H} (hT : IsSelfAdjoint T) :
     (cayleyPMap T).domain = ⊤
 ```
 
-**`ProbabilisticTheory.QuantumMechanics.topDomainToContinuousLinearMap`**, a def, [line 182](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/Cayley/Basic.lean#L182).
+**`PhyslibAlpha.ProbabilisticTheory.QuantumMechanics.topDomainToContinuousLinearMap`**, a def, [line 182](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/Cayley/Basic.lean#L182).
 
 > Turn a continuous partial linear map with full domain into a bounded operator on `H`.
 
@@ -121,7 +121,7 @@ def topDomainToContinuousLinearMap (A : H →ₗ.[ℂ] H) (hdom : A.domain = ⊤
     (hc : Continuous A.toFun) : H →L[ℂ] H
 ```
 
-**`ProbabilisticTheory.QuantumMechanics.topDomainToContinuousLinearMap_apply`**, a lemma, [line 197](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/Cayley/Basic.lean#L197).
+**`PhyslibAlpha.ProbabilisticTheory.QuantumMechanics.topDomainToContinuousLinearMap_apply`**, a lemma, [line 197](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/Cayley/Basic.lean#L197).
 
 ```lean
 lemma topDomainToContinuousLinearMap_apply (A : H →ₗ.[ℂ] H) (hdom : A.domain = ⊤)
@@ -129,14 +129,14 @@ lemma topDomainToContinuousLinearMap_apply (A : H →ₗ.[ℂ] H) (hdom : A.doma
     topDomainToContinuousLinearMap A hdom hc x = A ⟨x, hdom ▸ Submodule.mem_top⟩
 ```
 
-**`ProbabilisticTheory.QuantumMechanics.cayleyPMap_eq_one_sub`**, a lemma, [line 202](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/Cayley/Basic.lean#L202).
+**`PhyslibAlpha.ProbabilisticTheory.QuantumMechanics.cayleyPMap_eq_one_sub`**, a lemma, [line 202](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/Cayley/Basic.lean#L202).
 
 ```lean
 lemma cayleyPMap_eq_one_sub {T : H →ₗ.[ℂ] H} (hT : IsSelfAdjoint T) :
     cayleyPMap T = 1 - (2 * Complex.I) • (T + Complex.I • 1).inverse
 ```
 
-**`ProbabilisticTheory.QuantumMechanics.cayleyPMap_eq_one_sub_minus`**, a lemma, [line 251](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/Cayley/Basic.lean#L251).
+**`PhyslibAlpha.ProbabilisticTheory.QuantumMechanics.cayleyPMap_eq_one_sub_minus`**, a lemma, [line 251](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/Cayley/Basic.lean#L251).
 
 ```lean
 lemma cayleyPMap_eq_one_sub_minus {T : H →ₗ.[ℂ] H} (hT : IsSelfAdjoint T) :
@@ -145,7 +145,7 @@ lemma cayleyPMap_eq_one_sub_minus {T : H →ₗ.[ℂ] H} (hT : IsSelfAdjoint T) 
 
 ## C. The bounded, unitary Cayley transform
 
-**`ProbabilisticTheory.QuantumMechanics.cayleyContinuousLinearMap`**, a def, [line 263](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/Cayley/Basic.lean#L263).
+**`PhyslibAlpha.ProbabilisticTheory.QuantumMechanics.cayleyContinuousLinearMap`**, a def, [line 263](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/Cayley/Basic.lean#L263).
 
 > The bounded operator represented by the Cayley transform of a self-adjoint `LinearPMap`.
 
@@ -154,7 +154,7 @@ noncomputable def cayleyContinuousLinearMap (T : H →ₗ.[ℂ] H) (hT : IsSelfA
     H →L[ℂ] H
 ```
 
-**`ProbabilisticTheory.QuantumMechanics.continuousLinearMapToPMap`**, a def, [line 273](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/Cayley/Basic.lean#L273).
+**`PhyslibAlpha.ProbabilisticTheory.QuantumMechanics.continuousLinearMapToPMap`**, a def, [line 273](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/Cayley/Basic.lean#L273).
 
 > A bounded operator, viewed as an everywhere-defined `LinearPMap`.
 
@@ -162,7 +162,7 @@ noncomputable def cayleyContinuousLinearMap (T : H →ₗ.[ℂ] H) (hT : IsSelfA
 def continuousLinearMapToPMap (L : H →L[ℂ] H) : H →ₗ.[ℂ] H
 ```
 
-**`ProbabilisticTheory.QuantumMechanics.cayleyPMap_eq_continuousLinearMapToPMap`**, a lemma, [line 276](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/Cayley/Basic.lean#L276).
+**`PhyslibAlpha.ProbabilisticTheory.QuantumMechanics.cayleyPMap_eq_continuousLinearMapToPMap`**, a lemma, [line 276](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/Cayley/Basic.lean#L276).
 
 ```lean
 lemma cayleyPMap_eq_continuousLinearMapToPMap {T : H →ₗ.[ℂ] H}
@@ -170,7 +170,7 @@ lemma cayleyPMap_eq_continuousLinearMapToPMap {T : H →ₗ.[ℂ] H}
     cayleyPMap T = continuousLinearMapToPMap (cayleyContinuousLinearMap T hT)
 ```
 
-**`ProbabilisticTheory.QuantumMechanics.cayleyContinuousLinearMap_norm_shift`**, a lemma, [line 304](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/Cayley/Basic.lean#L304).
+**`PhyslibAlpha.ProbabilisticTheory.QuantumMechanics.cayleyContinuousLinearMap_norm_shift`**, a lemma, [line 304](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/Cayley/Basic.lean#L304).
 
 ```lean
 lemma cayleyContinuousLinearMap_norm_shift {T : H →ₗ.[ℂ] H}
@@ -178,7 +178,7 @@ lemma cayleyContinuousLinearMap_norm_shift {T : H →ₗ.[ℂ] H}
     ‖T y - Complex.I • (y : H)‖ = ‖T y + Complex.I • (y : H)‖
 ```
 
-**`ProbabilisticTheory.QuantumMechanics.cayleyContinuousLinearMap_apply_of_mem_range`**, a lemma, [line 326](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/Cayley/Basic.lean#L326).
+**`PhyslibAlpha.ProbabilisticTheory.QuantumMechanics.cayleyContinuousLinearMap_apply_of_mem_range`**, a lemma, [line 326](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/Cayley/Basic.lean#L326).
 
 ```lean
 lemma cayleyContinuousLinearMap_apply_of_mem_range {T : H →ₗ.[ℂ] H}
@@ -187,7 +187,7 @@ lemma cayleyContinuousLinearMap_apply_of_mem_range {T : H →ₗ.[ℂ] H}
     cayleyContinuousLinearMap T hT x = (T - Complex.I • 1) y
 ```
 
-**`ProbabilisticTheory.QuantumMechanics.cayleyContinuousLinearMap_norm_map`**, a lemma, [line 380](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/Cayley/Basic.lean#L380).
+**`PhyslibAlpha.ProbabilisticTheory.QuantumMechanics.cayleyContinuousLinearMap_norm_map`**, a lemma, [line 380](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/Cayley/Basic.lean#L380).
 
 ```lean
 lemma cayleyContinuousLinearMap_norm_map {T : H →ₗ.[ℂ] H}
@@ -195,21 +195,21 @@ lemma cayleyContinuousLinearMap_norm_map {T : H →ₗ.[ℂ] H}
     ‖cayleyContinuousLinearMap T hT x‖ = ‖x‖
 ```
 
-**`ProbabilisticTheory.QuantumMechanics.cayleyContinuousLinearMap_isometry`**, a lemma, [line 402](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/Cayley/Basic.lean#L402).
+**`PhyslibAlpha.ProbabilisticTheory.QuantumMechanics.cayleyContinuousLinearMap_isometry`**, a lemma, [line 402](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/Cayley/Basic.lean#L402).
 
 ```lean
 lemma cayleyContinuousLinearMap_isometry {T : H →ₗ.[ℂ] H}
     (hT : IsSelfAdjoint T) : Isometry (cayleyContinuousLinearMap T hT)
 ```
 
-**`ProbabilisticTheory.QuantumMechanics.cayleyContinuousLinearMap_surjective`**, a lemma, [line 410](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/Cayley/Basic.lean#L410).
+**`PhyslibAlpha.ProbabilisticTheory.QuantumMechanics.cayleyContinuousLinearMap_surjective`**, a lemma, [line 410](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/Cayley/Basic.lean#L410).
 
 ```lean
 lemma cayleyContinuousLinearMap_surjective {T : H →ₗ.[ℂ] H}
     (hT : IsSelfAdjoint T) : Function.Surjective (cayleyContinuousLinearMap T hT)
 ```
 
-**`ProbabilisticTheory.QuantumMechanics.cayleyUnitary`**, a def, [line 431](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/Cayley/Basic.lean#L431).
+**`PhyslibAlpha.ProbabilisticTheory.QuantumMechanics.cayleyUnitary`**, a def, [line 431](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/Cayley/Basic.lean#L431).
 
 > The unitary Cayley transform of a self-adjoint partial operator.
 
@@ -217,7 +217,7 @@ lemma cayleyContinuousLinearMap_surjective {T : H →ₗ.[ℂ] H}
 noncomputable def cayleyUnitary (T : H →ₗ.[ℂ] H) (hT : IsSelfAdjoint T) : H ≃ₗᵢ[ℂ] H
 ```
 
-**`ProbabilisticTheory.QuantumMechanics.cayleyUnitary_apply`**, a lemma, [line 438](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/Cayley/Basic.lean#L438).
+**`PhyslibAlpha.ProbabilisticTheory.QuantumMechanics.cayleyUnitary_apply`**, a lemma, [line 438](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/Cayley/Basic.lean#L438).
 
 ```lean
 lemma cayleyUnitary_apply (T : H →ₗ.[ℂ] H) (hT : IsSelfAdjoint T) (x : H) :
@@ -234,4 +234,4 @@ lemma cayleyUnitary_apply (T : H →ₗ.[ℂ] H) (hT : IsSelfAdjoint T) (x : H) 
 
 ## Sources
 
-- [PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/Cayley/Basic.lean at 2a1dfe43](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/Cayley/Basic.lean)
+- [PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/Cayley/Basic.lean at 8c87bdfb](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/Cayley/Basic.lean)

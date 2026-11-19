@@ -8,7 +8,7 @@ proof: formalized
 
 # Courant–Fischer min–max theorem and Weyl's inequality
 
-The module `PhyslibAlpha.Mathematics.TauCeti.Analysis.InnerProductSpace.CourantFischer`, [PhyslibAlpha/Mathematics/TauCeti/Analysis/InnerProductSpace/CourantFischer.lean](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Mathematics/TauCeti/Analysis/InnerProductSpace/CourantFischer.lean): 26 declarations, 26 with a docstring; 2 private, not shown.
+The module `PhyslibAlpha.Mathematics.TauCeti.Analysis.InnerProductSpace.CourantFischer`, [PhyslibAlpha/Mathematics/TauCeti/Analysis/InnerProductSpace/CourantFischer.lean](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Mathematics/TauCeti/Analysis/InnerProductSpace/CourantFischer.lean): 26 declarations, 26 with a docstring; 2 private, not shown.
 
 > For a finite-dimensional inner-product space over `ℝ` or `ℂ`, the min–max theorem characterizes the
 > decreasingly sorted eigenvalues of a symmetric endomorphism through its Rayleigh form.
@@ -59,7 +59,7 @@ The module `PhyslibAlpha.Mathematics.TauCeti.Analysis.InnerProductSpace.CourantF
 
 ## A. Development
 
-**`LinearMap.IsSymmetric.re_inner_apply_self_eq_sum_of_eigenbasis`**, a lemma, [line 101](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Mathematics/TauCeti/Analysis/InnerProductSpace/CourantFischer.lean#L101).
+**`LinearMap.IsSymmetric.re_inner_apply_self_eq_sum_of_eigenbasis`**, a lemma, [line 101](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Mathematics/TauCeti/Analysis/InnerProductSpace/CourantFischer.lean#L101).
 
 > Diagonalization of the quadratic form in any orthonormal eigenbasis: if
 > `S (w i) = μ i • w i` for all `i`, then
@@ -72,7 +72,7 @@ lemma re_inner_apply_self_eq_sum_of_eigenbasis
     RCLike.re ⟪S x, x⟫_𝕜 = ∑ i : Fin n, μ i * ‖w.repr x i‖ ^ 2
 ```
 
-**`LinearMap.IsSymmetric.le_re_inner_of_eigenbasis`**, a lemma, [line 121](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Mathematics/TauCeti/Analysis/InnerProductSpace/CourantFischer.lean#L121).
+**`LinearMap.IsSymmetric.le_re_inner_of_eigenbasis`**, a lemma, [line 121](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Mathematics/TauCeti/Analysis/InnerProductSpace/CourantFischer.lean#L121).
 
 > On the span of the eigenvectors selected by `s`, the quadratic form is
 > bounded below by any lower bound on the selected values (general-eigenbasis
@@ -86,7 +86,7 @@ lemma le_re_inner_of_eigenbasis
     c * ‖x‖ ^ 2 ≤ RCLike.re ⟪S x, x⟫_𝕜
 ```
 
-**`LinearMap.IsSymmetric.re_inner_le_of_eigenbasis`**, a lemma, [line 137](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Mathematics/TauCeti/Analysis/InnerProductSpace/CourantFischer.lean#L137).
+**`LinearMap.IsSymmetric.re_inner_le_of_eigenbasis`**, a lemma, [line 137](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Mathematics/TauCeti/Analysis/InnerProductSpace/CourantFischer.lean#L137).
 
 > Dual of `le_re_inner_of_eigenbasis`.
 
@@ -100,7 +100,7 @@ lemma re_inner_le_of_eigenbasis
 
 ### A.1. The quadratic form in the eigenbasis
 
-**`LinearMap.IsSymmetric.re_inner_apply_self_eq_sum_eigenvalues_mul_sq`**, a lemma, [line 159](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Mathematics/TauCeti/Analysis/InnerProductSpace/CourantFischer.lean#L159).
+**`LinearMap.IsSymmetric.re_inner_apply_self_eq_sum_eigenvalues_mul_sq`**, a lemma, [line 159](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Mathematics/TauCeti/Analysis/InnerProductSpace/CourantFischer.lean#L159).
 
 > The quadratic form `re ⟪T x, x⟫` of a symmetric operator `T` expressed in
 > its eigenbasis: it is the eigenvalue-weighted sum of the squared norms of the
@@ -115,7 +115,7 @@ lemma re_inner_apply_self_eq_sum_eigenvalues_mul_sq
       = ∑ i : Fin n, hT.eigenvalues hn i * ‖(hT.eigenvectorBasis hn).repr x i‖ ^ 2
 ```
 
-**`LinearMap.IsSymmetric.re_inner_apply_self_le_of_mem_spanIndices`**, a lemma, [line 170](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Mathematics/TauCeti/Analysis/InnerProductSpace/CourantFischer.lean#L170).
+**`LinearMap.IsSymmetric.re_inner_apply_self_le_of_mem_spanIndices`**, a lemma, [line 170](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Mathematics/TauCeti/Analysis/InnerProductSpace/CourantFischer.lean#L170).
 
 > On the span of a selected subfamily of the eigenbasis, the quadratic form
 > is bounded by any bound on the selected eigenvalues: if
@@ -130,7 +130,7 @@ lemma re_inner_apply_self_le_of_mem_spanIndices
     RCLike.re ⟪T x, x⟫_𝕜 ≤ c * ‖x‖ ^ 2
 ```
 
-**`LinearMap.IsSymmetric.le_re_inner_apply_self_of_mem_spanIndices`**, a lemma, [line 181](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Mathematics/TauCeti/Analysis/InnerProductSpace/CourantFischer.lean#L181).
+**`LinearMap.IsSymmetric.le_re_inner_apply_self_of_mem_spanIndices`**, a lemma, [line 181](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Mathematics/TauCeti/Analysis/InnerProductSpace/CourantFischer.lean#L181).
 
 > Dual of `re_inner_apply_self_le_of_mem_spanIndices`: if
 > `x ∈ b.spanIndices s` and every selected eigenvalue satisfies `c ≤ λᵢ`, then
@@ -146,7 +146,7 @@ lemma le_re_inner_apply_self_of_mem_spanIndices
 
 ### A.2. Discrete Courant–Fischer directional bounds
 
-**`LinearMap.IsSymmetric.exists_unit_vector_re_inner_le_eigenvalue`**, a lemma, [line 195](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Mathematics/TauCeti/Analysis/InnerProductSpace/CourantFischer.lean#L195).
+**`LinearMap.IsSymmetric.exists_unit_vector_re_inner_le_eigenvalue`**, a lemma, [line 195](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Mathematics/TauCeti/Analysis/InnerProductSpace/CourantFischer.lean#L195).
 
 > **Courant–Fischer, upper direction.** On any subspace `V` of dimension
 > `k + 1` there is a unit vector `x` with `re ⟪T x, x⟫ ≤ λₖ(T)`, where `λ` is the
@@ -160,7 +160,7 @@ lemma exists_unit_vector_re_inner_le_eigenvalue
     ∃ x ∈ V, ‖x‖ = 1 ∧ RCLike.re ⟪T x, x⟫_𝕜 ≤ hT.eigenvalues hn k
 ```
 
-**`LinearMap.IsSymmetric.exists_submodule_forall_unit_eigenvalue_le_re_inner`**, a lemma, [line 233](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Mathematics/TauCeti/Analysis/InnerProductSpace/CourantFischer.lean#L233).
+**`LinearMap.IsSymmetric.exists_submodule_forall_unit_eigenvalue_le_re_inner`**, a lemma, [line 233](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Mathematics/TauCeti/Analysis/InnerProductSpace/CourantFischer.lean#L233).
 
 > **Courant–Fischer, lower direction.** There is a subspace `V` of dimension
 > `k + 1` on which every unit vector `x` satisfies `λₖ(T) ≤ re ⟪T x, x⟫`, where
@@ -179,7 +179,7 @@ lemma exists_submodule_forall_unit_eigenvalue_le_re_inner
 
 ### A.3. The Courant–Fischer min-max equality
 
-**`LinearMap.IsSymmetric.eigenvalues_eq_iSup_iInf_re_inner`**, a lemma, [line 258](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Mathematics/TauCeti/Analysis/InnerProductSpace/CourantFischer.lean#L258).
+**`LinearMap.IsSymmetric.eigenvalues_eq_iSup_iInf_re_inner`**, a lemma, [line 258](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Mathematics/TauCeti/Analysis/InnerProductSpace/CourantFischer.lean#L258).
 
 > **Courant–Fischer min-max equality.** The `k`-th (decreasingly sorted)
 > eigenvalue of a symmetric operator on a finite-dimensional inner product space
@@ -205,7 +205,7 @@ lemma eigenvalues_eq_iSup_iInf_re_inner
 > orthonormal basis is *the* sorted eigenvalue list, and the sorted eigenvalues
 > are monotone in the quadratic form (Loewner order).
 
-**`LinearMap.IsSymmetric.eigenvalues_eq_of_eigenbasis`**, a lemma, [line 332](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Mathematics/TauCeti/Analysis/InnerProductSpace/CourantFischer.lean#L332).
+**`LinearMap.IsSymmetric.eigenvalues_eq_of_eigenbasis`**, a lemma, [line 332](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Mathematics/TauCeti/Analysis/InnerProductSpace/CourantFischer.lean#L332).
 
 > **Sorted-eigenvalue uniqueness.**  If an orthonormal basis `w`
 > diagonalizes the symmetric operator `S` with an *antitone* value list `μ`,
@@ -219,7 +219,7 @@ lemma eigenvalues_eq_of_eigenbasis
     hS.eigenvalues hn = μ
 ```
 
-**`LinearMap.IsSymmetric.eigenvalue_mono`**, a lemma, [line 370](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Mathematics/TauCeti/Analysis/InnerProductSpace/CourantFischer.lean#L370).
+**`LinearMap.IsSymmetric.eigenvalue_mono`**, a lemma, [line 370](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Mathematics/TauCeti/Analysis/InnerProductSpace/CourantFischer.lean#L370).
 
 > **Loewner monotonicity of the sorted eigenvalues.**  If the quadratic form
 > of `T` is dominated by that of `S`, then so is every sorted eigenvalue.
@@ -231,7 +231,7 @@ lemma eigenvalue_mono
     hT.eigenvalues hn k ≤ hS.eigenvalues hn k
 ```
 
-**`LinearMap.IsSymmetric.map_mem_spanIndices`**, a lemma, [line 384](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Mathematics/TauCeti/Analysis/InnerProductSpace/CourantFischer.lean#L384).
+**`LinearMap.IsSymmetric.map_mem_spanIndices`**, a lemma, [line 384](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Mathematics/TauCeti/Analysis/InnerProductSpace/CourantFischer.lean#L384).
 
 > The span of a selected subfamily of the eigenbasis of a symmetric operator
 > is invariant under the operator.
@@ -245,7 +245,7 @@ lemma map_mem_spanIndices (hT : T.IsSymmetric) (hn : finrank 𝕜 E = n)
 
 ### A.5. Weyl's inequality
 
-**`LinearMap.IsSymmetric.abs_eigenvalue_sub_eigenvalue_le`**, a lemma, [line 447](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Mathematics/TauCeti/Analysis/InnerProductSpace/CourantFischer.lean#L447).
+**`LinearMap.IsSymmetric.abs_eigenvalue_sub_eigenvalue_le`**, a lemma, [line 447](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Mathematics/TauCeti/Analysis/InnerProductSpace/CourantFischer.lean#L447).
 
 > **Weyl's inequality** for symmetric operators on a finite-dimensional inner
 > product space over `𝕜 = ℝ, ℂ`: the `k`-th (decreasingly sorted) eigenvalues of
@@ -266,7 +266,7 @@ lemma abs_eigenvalue_sub_eigenvalue_le
     |hT.eigenvalues hn k - hS.eigenvalues hn k| ≤ ε
 ```
 
-**`LinearMap.IsSymmetric.abs_eigenvalue_sub_eigenvalue_le_norm`**, a lemma, [line 474](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Mathematics/TauCeti/Analysis/InnerProductSpace/CourantFischer.lean#L474).
+**`LinearMap.IsSymmetric.abs_eigenvalue_sub_eigenvalue_le_norm`**, a lemma, [line 474](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Mathematics/TauCeti/Analysis/InnerProductSpace/CourantFischer.lean#L474).
 
 > **Weyl's inequality**, operator-norm form, for symmetric (equivalently,
 > self-adjoint) continuous linear maps on a finite-dimensional inner product
@@ -287,7 +287,7 @@ lemma abs_eigenvalue_sub_eigenvalue_le_norm
     |hT.eigenvalues hn k - hS.eigenvalues hn k| ≤ ‖T - S‖
 ```
 
-**`LinearMap.IsSymmetric.abs_eigenvalues_sub_le_opNorm`**, a lemma, [line 486](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Mathematics/TauCeti/Analysis/InnerProductSpace/CourantFischer.lean#L486).
+**`LinearMap.IsSymmetric.abs_eigenvalues_sub_le_opNorm`**, a lemma, [line 486](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Mathematics/TauCeti/Analysis/InnerProductSpace/CourantFischer.lean#L486).
 
 > Weyl's inequality for linear maps, using the operator norm of the
 > corresponding continuous linear map.  Unlike the preceding theorem, the symmetry
@@ -301,7 +301,7 @@ lemma abs_eigenvalues_sub_le_opNorm
       ≤ ‖LinearMap.toContinuousLinearMap (T - S)‖
 ```
 
-**`LinearMap.IsSymmetric.eigenvalues_congr`**, a lemma, [line 497](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Mathematics/TauCeti/Analysis/InnerProductSpace/CourantFischer.lean#L497).
+**`LinearMap.IsSymmetric.eigenvalues_congr`**, a lemma, [line 497](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Mathematics/TauCeti/Analysis/InnerProductSpace/CourantFischer.lean#L497).
 
 > Sorted eigenvalues are congruent along an operator equality (the eigenvalue
 > enumeration depends only on the operator, not on the symmetry proof).
@@ -312,7 +312,7 @@ lemma eigenvalues_congr {S₁ S₂ : E →ₗ[𝕜] E} (h : S₁ = S₂)
     hS₁.eigenvalues hn = hS₂.eigenvalues hn
 ```
 
-**`LinearMap.IsSymmetric.eigenvalues_cast`**, a lemma, [line 510](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Mathematics/TauCeti/Analysis/InnerProductSpace/CourantFischer.lean#L510).
+**`LinearMap.IsSymmetric.eigenvalues_cast`**, a lemma, [line 510](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Mathematics/TauCeti/Analysis/InnerProductSpace/CourantFischer.lean#L510).
 
 > The eigenvalue enumeration does not depend on which witness of the dimension indexes
 > it: two witnesses `finrank 𝕜 E = m` and `finrank 𝕜 E = n` enumerate the same eigenvalues,
@@ -331,7 +331,7 @@ lemma eigenvalues_cast {T : E →ₗ[𝕜] E} (hT : T.IsSymmetric) {m : ℕ}
 
 ### A.6. Courant–Fischer on subspaces of larger dimension
 
-**`LinearMap.IsSymmetric.exists_unit_vector_re_inner_le_eigenvalue_of_le`**, a lemma, [line 519](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Mathematics/TauCeti/Analysis/InnerProductSpace/CourantFischer.lean#L519).
+**`LinearMap.IsSymmetric.exists_unit_vector_re_inner_le_eigenvalue_of_le`**, a lemma, [line 519](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Mathematics/TauCeti/Analysis/InnerProductSpace/CourantFischer.lean#L519).
 
 > **Courant–Fischer, upper direction, for large subspaces.** On any subspace `W` of dimension
 > at least `k + 1` there is a unit vector `x` with `re ⟪T x, x⟫ ≤ λₖ(T)`.
@@ -345,7 +345,7 @@ lemma exists_unit_vector_re_inner_le_eigenvalue_of_le
 
 ### A.7. Cauchy interlacing and Rayleigh–Ritz bounds
 
-**`LinearMap.IsSymmetric.eigenvalue_compression_le`**, a lemma, [line 552](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Mathematics/TauCeti/Analysis/InnerProductSpace/CourantFischer.lean#L552).
+**`LinearMap.IsSymmetric.eigenvalue_compression_le`**, a lemma, [line 552](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Mathematics/TauCeti/Analysis/InnerProductSpace/CourantFischer.lean#L552).
 
 > **Upper Cauchy interlacing.** If the quadratic form of the symmetric operator `A` on `V`
 > agrees with that of `T`, then `μₖ(A) ≤ λₖ(T)` for every `k < m`.
@@ -359,7 +359,7 @@ lemma eigenvalue_compression_le
     hA.eigenvalues hm k ≤ hT.eigenvalues hn ⟨k, hk⟩
 ```
 
-**`LinearMap.IsSymmetric.eigenvalue_le_eigenvalue_compression`**, a lemma, [line 570](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Mathematics/TauCeti/Analysis/InnerProductSpace/CourantFischer.lean#L570).
+**`LinearMap.IsSymmetric.eigenvalue_le_eigenvalue_compression`**, a lemma, [line 570](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Mathematics/TauCeti/Analysis/InnerProductSpace/CourantFischer.lean#L570).
 
 > **Lower Cauchy interlacing.** If the quadratic form of the symmetric operator `A` on `V`
 > agrees with that of `T`, then `λ_{k + (n - m)}(T) ≤ μₖ(A)` for every `k < m`.
@@ -373,7 +373,7 @@ lemma eigenvalue_le_eigenvalue_compression
     hT.eigenvalues hn ⟨k + (n - m), by omega⟩ ≤ hA.eigenvalues hm k
 ```
 
-**`LinearMap.IsSymmetric.eigenvalue_ascending_le_ritz`**, a lemma, [line 595](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Mathematics/TauCeti/Analysis/InnerProductSpace/CourantFischer.lean#L595).
+**`LinearMap.IsSymmetric.eigenvalue_ascending_le_ritz`**, a lemma, [line 595](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Mathematics/TauCeti/Analysis/InnerProductSpace/CourantFischer.lean#L595).
 
 > **Hylleraas–Undheim–MacDonald.** In ascending order, the `k`-th lowest Ritz value is an upper
 > bound for the `k`-th lowest exact eigenvalue: `λ↑ₖ(T) ≤ μ↑ₖ(S)` for every `k < m`.
@@ -387,7 +387,7 @@ lemma eigenvalue_ascending_le_ritz
     hT.eigenvalues hn ⟨n - 1 - k, by omega⟩ ≤ hA.eigenvalues hm ⟨m - 1 - k, by omega⟩
 ```
 
-**`LinearMap.IsSymmetric.eigenvalue_min_le_ritz_min`**, a lemma, [line 609](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Mathematics/TauCeti/Analysis/InnerProductSpace/CourantFischer.lean#L609).
+**`LinearMap.IsSymmetric.eigenvalue_min_le_ritz_min`**, a lemma, [line 609](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Mathematics/TauCeti/Analysis/InnerProductSpace/CourantFischer.lean#L609).
 
 > **Variational ground-state bound.** The lowest Ritz value bounds the lowest exact eigenvalue
 > from above.
@@ -403,7 +403,7 @@ lemma eigenvalue_min_le_ritz_min
 
 ### A.8. The orthogonal compression
 
-**`LinearMap.IsSymmetric.compression`**, a def, [line 622](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Mathematics/TauCeti/Analysis/InnerProductSpace/CourantFischer.lean#L622).
+**`LinearMap.IsSymmetric.compression`**, a def, [line 622](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Mathematics/TauCeti/Analysis/InnerProductSpace/CourantFischer.lean#L622).
 
 > The compression `P_V ∘ T ∘ ι_V` of `T` to the subspace `V` (the Ritz operator).
 
@@ -411,7 +411,7 @@ lemma eigenvalue_min_le_ritz_min
 noncomputable def compression (_hT : T.IsSymmetric) (V : Submodule 𝕜 E) : V →ₗ[𝕜] V
 ```
 
-**`LinearMap.IsSymmetric.inner_compression_left`**, a lemma, [line 626](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Mathematics/TauCeti/Analysis/InnerProductSpace/CourantFischer.lean#L626).
+**`LinearMap.IsSymmetric.inner_compression_left`**, a lemma, [line 626](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Mathematics/TauCeti/Analysis/InnerProductSpace/CourantFischer.lean#L626).
 
 > The compression has the inner products of `T` against vectors of `V`.
 
@@ -420,7 +420,7 @@ lemma inner_compression_left (hT : T.IsSymmetric) (V : Submodule 𝕜 E) (y z : 
     ⟪hT.compression V y, z⟫_𝕜 = ⟪T y, z⟫_𝕜
 ```
 
-**`LinearMap.IsSymmetric.compression_isSymmetric`**, a lemma, [line 631](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Mathematics/TauCeti/Analysis/InnerProductSpace/CourantFischer.lean#L631).
+**`LinearMap.IsSymmetric.compression_isSymmetric`**, a lemma, [line 631](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Mathematics/TauCeti/Analysis/InnerProductSpace/CourantFischer.lean#L631).
 
 > The compression of a symmetric operator is symmetric.
 
@@ -429,7 +429,7 @@ lemma compression_isSymmetric (hT : T.IsSymmetric) (V : Submodule 𝕜 E) :
     (hT.compression V).IsSymmetric
 ```
 
-**`LinearMap.IsSymmetric.re_inner_compression`**, a lemma, [line 639](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Mathematics/TauCeti/Analysis/InnerProductSpace/CourantFischer.lean#L639).
+**`LinearMap.IsSymmetric.re_inner_compression`**, a lemma, [line 639](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Mathematics/TauCeti/Analysis/InnerProductSpace/CourantFischer.lean#L639).
 
 > The compression has the quadratic form of `T` on `V`, as required by the interlacing
 > lemmas.
@@ -449,4 +449,4 @@ lemma re_inner_compression (hT : T.IsSymmetric) (V : Submodule 𝕜 E) (y : V) :
 
 ## Sources
 
-- [PhyslibAlpha/Mathematics/TauCeti/Analysis/InnerProductSpace/CourantFischer.lean at 2a1dfe43](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Mathematics/TauCeti/Analysis/InnerProductSpace/CourantFischer.lean)
+- [PhyslibAlpha/Mathematics/TauCeti/Analysis/InnerProductSpace/CourantFischer.lean at 8c87bdfb](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Mathematics/TauCeti/Analysis/InnerProductSpace/CourantFischer.lean)

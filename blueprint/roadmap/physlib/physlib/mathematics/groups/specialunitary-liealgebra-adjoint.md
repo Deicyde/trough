@@ -8,7 +8,7 @@ proof: formalized
 
 # The adjoint representation of `SU(n)`
 
-The module `Physlib.Mathematics.Groups.SpecialUnitary.LieAlgebra.Adjoint`, [Physlib/Mathematics/Groups/SpecialUnitary/LieAlgebra/Adjoint.lean](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/Mathematics/Groups/SpecialUnitary/LieAlgebra/Adjoint.lean): 22 declarations, 20 with a docstring.
+The module `Physlib.Mathematics.Groups.SpecialUnitary.LieAlgebra.Adjoint`, [Physlib/Mathematics/Groups/SpecialUnitary/LieAlgebra/Adjoint.lean](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Mathematics/Groups/SpecialUnitary/LieAlgebra/Adjoint.lean): 22 declarations, 20 with a docstring.
 
 > The adjoint representation of `SU(n)` and its complexification, defined as `x ↦ g x g†`, and
 > the irreducibility of the latter.
@@ -41,7 +41,7 @@ The module `Physlib.Mathematics.Groups.SpecialUnitary.LieAlgebra.Adjoint`, [Phys
 
 ### A.1. The real adjoint representation
 
-**`SULieAlgebra.adjoint`**, a def, [line 76](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/Mathematics/Groups/SpecialUnitary/LieAlgebra/Adjoint.lean#L76).
+**`SULieAlgebra.adjoint`**, a def, [line 76](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Mathematics/Groups/SpecialUnitary/LieAlgebra/Adjoint.lean#L76).
 
 > The adjoint representation `x ↦ g x g†` of `SU(n)` on its real Lie algebra `su(n)`.
 
@@ -50,7 +50,7 @@ noncomputable def adjoint {n : ℕ} :
     Representation ℝ (specialUnitaryGroup (Fin n) ℂ) (SULieAlgebra n ℂ)
 ```
 
-**`SULieAlgebra.adjoint_val`**, a lemma, [line 82](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/Mathematics/Groups/SpecialUnitary/LieAlgebra/Adjoint.lean#L82).
+**`SULieAlgebra.adjoint_val`**, a lemma, [line 82](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Mathematics/Groups/SpecialUnitary/LieAlgebra/Adjoint.lean#L82).
 
 > The underlying matrix of `adjoint g x` is `g x g†`.
 
@@ -59,7 +59,7 @@ lemma adjoint_val {n : ℕ} (g : specialUnitaryGroup (Fin n) ℂ) (x : SULieAlge
     (adjoint g x).1 = g.1 * x.1 * star g.1
 ```
 
-**`SULieAlgebra.adjoint_lie`**, a lemma, [line 87](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/Mathematics/Groups/SpecialUnitary/LieAlgebra/Adjoint.lean#L87).
+**`SULieAlgebra.adjoint_lie`**, a lemma, [line 87](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Mathematics/Groups/SpecialUnitary/LieAlgebra/Adjoint.lean#L87).
 
 > The adjoint representation preserves the bracket, so `SU(n)` acts on `su(n)` by Lie algebra
 > automorphisms.
@@ -69,7 +69,7 @@ lemma adjoint_lie {n : ℕ} (g : specialUnitaryGroup (Fin n) ℂ) (x y : SULieAl
     adjoint g ⁅x, y⁆ = ⁅adjoint g x, adjoint g y⁆
 ```
 
-**`SULieAlgebra.adjoint_eq_one_iff`**, a lemma, [line 93](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/Mathematics/Groups/SpecialUnitary/LieAlgebra/Adjoint.lean#L93).
+**`SULieAlgebra.adjoint_eq_one_iff`**, a lemma, [line 93](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Mathematics/Groups/SpecialUnitary/LieAlgebra/Adjoint.lean#L93).
 
 > The kernel of the adjoint representation is the centre of `SU(n)`: `g` acts trivially exactly
 > when it is a scalar matrix `c 1`.
@@ -79,7 +79,7 @@ lemma adjoint_eq_one_iff {n : ℕ} (g : specialUnitaryGroup (Fin n) ℂ) :
     adjoint g = 1 ↔ ∃ c : ℂ, g.1 = c • 1
 ```
 
-**`SULieAlgebra.adjoint_eq_iff`**, a lemma, [line 118](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/Mathematics/Groups/SpecialUnitary/LieAlgebra/Adjoint.lean#L118).
+**`SULieAlgebra.adjoint_eq_iff`**, a lemma, [line 118](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Mathematics/Groups/SpecialUnitary/LieAlgebra/Adjoint.lean#L118).
 
 > Two elements of `SU(n)` have the same adjoint action exactly when they differ by a scalar:
 > the adjoint representation is faithful on `SU(n)` modulo its centre.
@@ -91,7 +91,7 @@ lemma adjoint_eq_iff {n : ℕ} (g h : specialUnitaryGroup (Fin n) ℂ) :
 
 ### A.2. The complex adjoint representation
 
-**`SULieAlgebra.adjointℂ`**, a def, [line 141](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/Mathematics/Groups/SpecialUnitary/LieAlgebra/Adjoint.lean#L141).
+**`SULieAlgebra.adjointℂ`**, a def, [line 141](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Mathematics/Groups/SpecialUnitary/LieAlgebra/Adjoint.lean#L141).
 
 > The adjoint representation of `SU(n)` on the complexification `ℂ ⊗[ℝ] su(n)`: the
 > complexification of the adjoint representation `adjoint` on `su(n)`.
@@ -101,14 +101,14 @@ noncomputable def adjointℂ {n : ℕ} :
     Representation ℂ (specialUnitaryGroup (Fin n) ℂ) (Complexification n)
 ```
 
-**`SULieAlgebra.adjointℂ_tmul`**, a lemma, [line 147](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/Mathematics/Groups/SpecialUnitary/LieAlgebra/Adjoint.lean#L147).
+**`SULieAlgebra.adjointℂ_tmul`**, a lemma, [line 147](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Mathematics/Groups/SpecialUnitary/LieAlgebra/Adjoint.lean#L147).
 
 ```lean
 lemma adjointℂ_tmul {n : ℕ} (g : specialUnitaryGroup (Fin n) ℂ) (z : ℂ) (x : SULieAlgebra n ℂ) :
     adjointℂ g (z ⊗ₜ x) = z ⊗ₜ adjoint g x
 ```
 
-**`SULieAlgebra.adjointℂ_lie`**, a lemma, [line 152](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/Mathematics/Groups/SpecialUnitary/LieAlgebra/Adjoint.lean#L152).
+**`SULieAlgebra.adjointℂ_lie`**, a lemma, [line 152](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Mathematics/Groups/SpecialUnitary/LieAlgebra/Adjoint.lean#L152).
 
 > The complex adjoint representation preserves the bracket of the complexification, so `SU(n)`
 > acts on `ℂ ⊗[ℝ] su(n)` by Lie algebra automorphisms.
@@ -118,7 +118,7 @@ lemma adjointℂ_lie {n : ℕ} (g : specialUnitaryGroup (Fin n) ℂ) (A B : Comp
     adjointℂ g ⁅A, B⁆ = ⁅adjointℂ g A, adjointℂ g B⁆
 ```
 
-**`SULieAlgebra.adjointℂ_eq_one_iff`**, a lemma, [line 169](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/Mathematics/Groups/SpecialUnitary/LieAlgebra/Adjoint.lean#L169).
+**`SULieAlgebra.adjointℂ_eq_one_iff`**, a lemma, [line 169](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Mathematics/Groups/SpecialUnitary/LieAlgebra/Adjoint.lean#L169).
 
 > The kernel of the complex adjoint representation is the centre of `SU(n)`, as for the real
 > adjoint representation.
@@ -128,7 +128,7 @@ lemma adjointℂ_eq_one_iff {n : ℕ} (g : specialUnitaryGroup (Fin n) ℂ) :
     adjointℂ g = 1 ↔ ∃ c : ℂ, g.1 = c • 1
 ```
 
-**`SULieAlgebra.adjointℂ_eq_iff`**, a lemma, [line 181](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/Mathematics/Groups/SpecialUnitary/LieAlgebra/Adjoint.lean#L181).
+**`SULieAlgebra.adjointℂ_eq_iff`**, a lemma, [line 181](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Mathematics/Groups/SpecialUnitary/LieAlgebra/Adjoint.lean#L181).
 
 > Two elements of `SU(n)` have the same complex adjoint action exactly when they differ by a
 > scalar, as for the real adjoint representation.
@@ -140,7 +140,7 @@ lemma adjointℂ_eq_iff {n : ℕ} (g h : specialUnitaryGroup (Fin n) ℂ) :
 
 ### A.3. The action on the underlying matrices
 
-**`SULieAlgebra.toMatrixℂ_adjointℂ`**, a lemma, [line 198](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/Mathematics/Groups/SpecialUnitary/LieAlgebra/Adjoint.lean#L198).
+**`SULieAlgebra.toMatrixℂ_adjointℂ`**, a lemma, [line 198](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Mathematics/Groups/SpecialUnitary/LieAlgebra/Adjoint.lean#L198).
 
 > The adjoint representation conjugates the matrix, `M ↦ g M g†`.
 
@@ -149,7 +149,7 @@ lemma toMatrixℂ_adjointℂ {n} (g : specialUnitaryGroup (Fin n) ℂ) (A : Comp
     toMatrixℂ (adjointℂ g A) = g.1 * toMatrixℂ A * star g.1
 ```
 
-**`SULieAlgebra.exists_toMatrixℂ_adjointℂ_eq_unitary`**, a lemma, [line 209](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/Mathematics/Groups/SpecialUnitary/LieAlgebra/Adjoint.lean#L209).
+**`SULieAlgebra.exists_toMatrixℂ_adjointℂ_eq_unitary`**, a lemma, [line 209](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Mathematics/Groups/SpecialUnitary/LieAlgebra/Adjoint.lean#L209).
 
 > Conjugation by any unitary matrix is the adjoint action of an element of `SU(n)`: a
 > unitary matrix agrees with an element of `SU(n)` up to a phase, which conjugation does not
@@ -161,7 +161,7 @@ lemma exists_toMatrixℂ_adjointℂ_eq_unitary {n : ℕ} (U : unitaryGroup (Fin 
       toMatrixℂ (adjointℂ g A) = U.1 * toMatrixℂ A * star U.1
 ```
 
-**`SULieAlgebra.exists_toMatrixℂ_adjointℂ_apply_perm`**, a lemma, [line 231](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/Mathematics/Groups/SpecialUnitary/LieAlgebra/Adjoint.lean#L231).
+**`SULieAlgebra.exists_toMatrixℂ_adjointℂ_apply_perm`**, a lemma, [line 231](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Mathematics/Groups/SpecialUnitary/LieAlgebra/Adjoint.lean#L231).
 
 > The adjoint action realises any permutation `σ` of the coordinates: some element of `SU(n)`
 > moves the entry `(x, y)` of every matrix to `(σ x, σ y)`.
@@ -172,7 +172,7 @@ lemma exists_toMatrixℂ_adjointℂ_apply_perm {n : ℕ} (σ : Equiv.Perm (Fin n
       toMatrixℂ (adjointℂ g A) (σ x) (σ y) = toMatrixℂ A x y
 ```
 
-**`SULieAlgebra.toMatrixℂ_adjointℂ_apply_of_diagonal`**, a lemma, [line 248](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/Mathematics/Groups/SpecialUnitary/LieAlgebra/Adjoint.lean#L248).
+**`SULieAlgebra.toMatrixℂ_adjointℂ_apply_of_diagonal`**, a lemma, [line 248](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Mathematics/Groups/SpecialUnitary/LieAlgebra/Adjoint.lean#L248).
 
 > The adjoint action of a diagonal element of `SU(n)` scales the entry at `(x, y)` of the
 > matrix by `d x * star (d y)`.
@@ -183,7 +183,7 @@ lemma toMatrixℂ_adjointℂ_apply_of_diagonal {n} {g : specialUnitaryGroup (Fin
     toMatrixℂ (adjointℂ g A) x y = d x * star (d y) * toMatrixℂ A x y
 ```
 
-**`SULieAlgebra.toMatrixℂ_adjointℂ_trace`**, a lemma, [line 255](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/Mathematics/Groups/SpecialUnitary/LieAlgebra/Adjoint.lean#L255).
+**`SULieAlgebra.toMatrixℂ_adjointℂ_trace`**, a lemma, [line 255](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Mathematics/Groups/SpecialUnitary/LieAlgebra/Adjoint.lean#L255).
 
 ```lean
 lemma toMatrixℂ_adjointℂ_trace {n} (g : specialUnitaryGroup (Fin n) ℂ) (A : Complexification n) :
@@ -192,7 +192,7 @@ lemma toMatrixℂ_adjointℂ_trace {n} (g : specialUnitaryGroup (Fin n) ℂ) (A 
 
 ## B. The relation to single-entry elements
 
-**`SULieAlgebra.exists_adjointℂ_singleℂ_eq_singleℂ`**, a lemma, [line 267](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/Mathematics/Groups/SpecialUnitary/LieAlgebra/Adjoint.lean#L267).
+**`SULieAlgebra.exists_adjointℂ_singleℂ_eq_singleℂ`**, a lemma, [line 267](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Mathematics/Groups/SpecialUnitary/LieAlgebra/Adjoint.lean#L267).
 
 > All the off-diagonal matrix units `singleℂ` lie in one adjoint orbit
 
@@ -201,7 +201,7 @@ lemma exists_adjointℂ_singleℂ_eq_singleℂ {n : ℕ} {i j p q : Fin n} (hij 
     ∃ g : specialUnitaryGroup (Fin n) ℂ, adjointℂ g (singleℂ i j hij) = singleℂ p q hpq
 ```
 
-**`SULieAlgebra.singleℂ_mem_span_range_adjointℂ`**, a lemma, [line 281](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/Mathematics/Groups/SpecialUnitary/LieAlgebra/Adjoint.lean#L281).
+**`SULieAlgebra.singleℂ_mem_span_range_adjointℂ`**, a lemma, [line 281](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Mathematics/Groups/SpecialUnitary/LieAlgebra/Adjoint.lean#L281).
 
 > If the matrix of `A` has a non-zero entry at the off-diagonal position `(p, q)`, then
 > `singleℂ p q h` lies in the span of the adjoint orbit of `A`.
@@ -212,7 +212,7 @@ lemma singleℂ_mem_span_range_adjointℂ {n : ℕ} {p q : Fin n} (h : p ≠ q)
     singleℂ p q h ∈ Submodule.span ℂ (Set.range fun g => adjointℂ g A)
 ```
 
-**`SULieAlgebra.exists_adjointℂ_eq_of_toMatrixℂ_eq_diagonal`**, a lemma, [line 327](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/Mathematics/Groups/SpecialUnitary/LieAlgebra/Adjoint.lean#L327).
+**`SULieAlgebra.exists_adjointℂ_eq_of_toMatrixℂ_eq_diagonal`**, a lemma, [line 327](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Mathematics/Groups/SpecialUnitary/LieAlgebra/Adjoint.lean#L327).
 
 > The adjoint action of some element of `SU(n)` — the rotation by `π / 4` in the `(p, q)`-plane —
 > changes an element whose matrix is the diagonal matrix `d` only in the `(p, q)`-block, by
@@ -225,7 +225,7 @@ lemma exists_adjointℂ_eq_of_toMatrixℂ_eq_diagonal {n : ℕ} {p q : Fin n} (h
       A + ((d p - d q) / 2) • (singleℂ p q h + singleℂ q p h.symm - diagDiffℂ p q)
 ```
 
-**`SULieAlgebra.exists_diagDiffℂ_eq_adjointℂ_singleℂ_add_singleℂ`**, a lemma, [line 358](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/Mathematics/Groups/SpecialUnitary/LieAlgebra/Adjoint.lean#L358).
+**`SULieAlgebra.exists_diagDiffℂ_eq_adjointℂ_singleℂ_add_singleℂ`**, a lemma, [line 358](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Mathematics/Groups/SpecialUnitary/LieAlgebra/Adjoint.lean#L358).
 
 > The difference of two diagonal entries lies in the adjoint orbit of the sum of the two
 > elements supported at the corresponding off-diagonal entries.
@@ -236,7 +236,7 @@ lemma exists_diagDiffℂ_eq_adjointℂ_singleℂ_add_singleℂ {n : ℕ} {p q : 
       diagDiffℂ p q = adjointℂ g (singleℂ p q h + singleℂ q p h.symm)
 ```
 
-**`SULieAlgebra.exists_singleℂ_mem_span_range_adjointℂ`**, a lemma, [line 377](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/Mathematics/Groups/SpecialUnitary/LieAlgebra/Adjoint.lean#L377).
+**`SULieAlgebra.exists_singleℂ_mem_span_range_adjointℂ`**, a lemma, [line 377](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Mathematics/Groups/SpecialUnitary/LieAlgebra/Adjoint.lean#L377).
 
 > The span of the adjoint orbit of a non-zero element contains an element supported at a single
 > off-diagonal entry.
@@ -253,7 +253,7 @@ lemma exists_singleℂ_mem_span_range_adjointℂ {n : ℕ} {A : Complexification
 
 > The complex adjoint representation has no proper non-zero subrepresentations.
 
-**`SULieAlgebra.isIrreducible_adjointℂ`**, a lemma, [line 417](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/Mathematics/Groups/SpecialUnitary/LieAlgebra/Adjoint.lean#L417).
+**`SULieAlgebra.isIrreducible_adjointℂ`**, a lemma, [line 417](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Mathematics/Groups/SpecialUnitary/LieAlgebra/Adjoint.lean#L417).
 
 > The complex adjoint representation of `SU(n)` is irreducible for `2 ≤ n`.
 
@@ -263,7 +263,7 @@ lemma isIrreducible_adjointℂ {n : ℕ} (hn : 2 ≤ n) : (adjointℂ (n := n)).
 
 ### C.2. Schur's lemma
 
-**`SULieAlgebra.end_eq_smul_id_of_commute_adjointℂ`**, a lemma, [line 449](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/Mathematics/Groups/SpecialUnitary/LieAlgebra/Adjoint.lean#L449).
+**`SULieAlgebra.end_eq_smul_id_of_commute_adjointℂ`**, a lemma, [line 449](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Mathematics/Groups/SpecialUnitary/LieAlgebra/Adjoint.lean#L449).
 
 > An endomorphism of the complexification commuting with the adjoint action is a scalar.
 
@@ -278,4 +278,4 @@ lemma end_eq_smul_id_of_commute_adjointℂ {n : ℕ} {T : Module.End ℂ (Comple
 
 ## Sources
 
-- [Physlib/Mathematics/Groups/SpecialUnitary/LieAlgebra/Adjoint.lean at 2a1dfe43](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/Mathematics/Groups/SpecialUnitary/LieAlgebra/Adjoint.lean)
+- [Physlib/Mathematics/Groups/SpecialUnitary/LieAlgebra/Adjoint.lean at 8c87bdfb](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Mathematics/Groups/SpecialUnitary/LieAlgebra/Adjoint.lean)

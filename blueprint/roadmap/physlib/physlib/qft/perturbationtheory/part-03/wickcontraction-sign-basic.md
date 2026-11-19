@@ -8,9 +8,9 @@ proof: formalized
 
 # Sign associated with a contraction
 
-The module `Physlib.QFT.PerturbationTheory.WickContraction.Sign.Basic`, [Physlib/QFT/PerturbationTheory/WickContraction/Sign/Basic.lean](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/QFT/PerturbationTheory/WickContraction/Sign/Basic.lean): 4 declarations, 2 with a docstring.
+The module `Physlib.QFT.PerturbationTheory.WickContraction.Sign.Basic`, [Physlib/QFT/PerturbationTheory/WickContraction/Sign/Basic.lean](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/QFT/PerturbationTheory/WickContraction/Sign/Basic.lean): 4 declarations, 2 with a docstring.
 
-**`WickContraction.signFinset`**, a def, [line 32](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/QFT/PerturbationTheory/WickContraction/Sign/Basic.lean#L32).
+**`WickContraction.signFinset`**, a def, [line 32](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/QFT/PerturbationTheory/WickContraction/Sign/Basic.lean#L32).
 
 > Given a Wick contraction `c : WickContraction n` and `i1 i2 : Fin n` the finite set
 > of elements of `Fin n` between `i1` and `i2` which are either uncontracted
@@ -23,7 +23,7 @@ The module `Physlib.QFT.PerturbationTheory.WickContraction.Sign.Basic`, [Physlib
 def signFinset (c : WickContraction n) (i1 i2 : Fin n) : Finset (Fin n)
 ```
 
-**`WickContraction.sign`**, a def, [line 49](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/QFT/PerturbationTheory/WickContraction/Sign/Basic.lean#L49).
+**`WickContraction.sign`**, a def, [line 49](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/QFT/PerturbationTheory/WickContraction/Sign/Basic.lean#L49).
 
 > For a list `φs` of `𝓕.FieldOp`, and a Wick contraction `φsΛ` of `φs`,
 >   the complex number `φsΛ.sign` is defined to be the sign (`1` or `-1`) corresponding
@@ -42,14 +42,14 @@ def signFinset (c : WickContraction n) (i1 i2 : Fin n) : Finset (Fin n)
 def sign (φs : List 𝓕.FieldOp) (φsΛ : WickContraction φs.length) : ℂ
 ```
 
-**`WickContraction.sign_empty`**, a lemma, [line 54](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/QFT/PerturbationTheory/WickContraction/Sign/Basic.lean#L54).
+**`WickContraction.sign_empty`**, a lemma, [line 54](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/QFT/PerturbationTheory/WickContraction/Sign/Basic.lean#L54).
 
 ```lean
 lemma sign_empty (φs : List 𝓕.FieldOp) :
     sign φs empty = 1
 ```
 
-**`WickContraction.sign_congr`**, a lemma, [line 59](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/QFT/PerturbationTheory/WickContraction/Sign/Basic.lean#L59).
+**`WickContraction.sign_congr`**, a lemma, [line 59](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/QFT/PerturbationTheory/WickContraction/Sign/Basic.lean#L59).
 
 ```lean
 lemma sign_congr {φs φs' : List 𝓕.FieldOp} (h : φs = φs') (φsΛ : WickContraction φs.length) :
@@ -64,4 +64,4 @@ lemma sign_congr {φs φs' : List 𝓕.FieldOp} (h : φs = φs') (φsΛ : WickCo
 
 ## Sources
 
-- [Physlib/QFT/PerturbationTheory/WickContraction/Sign/Basic.lean at 2a1dfe43](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/QFT/PerturbationTheory/WickContraction/Sign/Basic.lean)
+- [Physlib/QFT/PerturbationTheory/WickContraction/Sign/Basic.lean at 8c87bdfb](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/QFT/PerturbationTheory/WickContraction/Sign/Basic.lean)

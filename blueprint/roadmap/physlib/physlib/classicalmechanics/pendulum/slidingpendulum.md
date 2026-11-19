@@ -8,7 +8,7 @@ proof: formalized
 
 # Sliding Pendulum
 
-The module `Physlib.ClassicalMechanics.Pendulum.SlidingPendulum`, [Physlib/ClassicalMechanics/Pendulum/SlidingPendulum.lean](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/ClassicalMechanics/Pendulum/SlidingPendulum.lean): 1 declaration, 1 with a docstring.
+The module `Physlib.ClassicalMechanics.Pendulum.SlidingPendulum`, [Physlib/ClassicalMechanics/Pendulum/SlidingPendulum.lean](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/ClassicalMechanics/Pendulum/SlidingPendulum.lean): 1 declaration, 1 with a docstring.
 
 ### Tag: LnL\_1.5.2
 
@@ -69,7 +69,7 @@ The module `Physlib.ClassicalMechanics.Pendulum.SlidingPendulum`, [Physlib/Class
 
 ## A. Configuration space
 
-**`ClassicalMechanics.SlidingPendulum.ConfigurationSpace`**, a structure, [line 76](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/ClassicalMechanics/Pendulum/SlidingPendulum.lean#L76).
+**`ClassicalMechanics.SlidingPendulum.ConfigurationSpace`**, a structure, [line 76](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/ClassicalMechanics/Pendulum/SlidingPendulum.lean#L76).
 
 > The configuration space of the sliding pendulum system.
 >
@@ -90,4 +90,4 @@ Its declarations' statements use no declaration of another module with an articl
 
 ## Sources
 
-- [Physlib/ClassicalMechanics/Pendulum/SlidingPendulum.lean at 2a1dfe43](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/ClassicalMechanics/Pendulum/SlidingPendulum.lean)
+- [Physlib/ClassicalMechanics/Pendulum/SlidingPendulum.lean at 8c87bdfb](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/ClassicalMechanics/Pendulum/SlidingPendulum.lean)

@@ -8,7 +8,7 @@ proof: formalized
 
 # The mass-weight polynomial on the bosonic algebra
 
-The module `PhyslibAlpha.Particles.StandardModel.Matter.Bosonic.MassWeightPoly`, [PhyslibAlpha/Particles/StandardModel/Matter/Bosonic/MassWeightPoly.lean](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/Matter/Bosonic/MassWeightPoly.lean): 20 declarations, 18 with a docstring.
+The module `PhyslibAlpha.Particles.StandardModel.Matter.Bosonic.MassWeightPoly`, [PhyslibAlpha/Particles/StandardModel/Matter/Bosonic/MassWeightPoly.lean](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/Matter/Bosonic/MassWeightPoly.lean): 20 declarations, 18 with a docstring.
 
 ## i. Overview
 
@@ -41,7 +41,7 @@ The module `PhyslibAlpha.Particles.StandardModel.Matter.Bosonic.MassWeightPoly`,
 
 ## A. The mass-weight polynomial of a component function
 
-**`StandardModel.BosonicAlgebra.monomialₗ`**, a def, [line 70](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/Matter/Bosonic/MassWeightPoly.lean#L70).
+**`StandardModel.BosonicAlgebra.monomialₗ`**, a def, [line 70](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/Matter/Bosonic/MassWeightPoly.lean#L70).
 
 > The monomial map into polynomials over the bosonic algebra, as a map of `ℂ`-modules
 > rather than of `BosonicAlgebra M`-modules.
@@ -51,14 +51,14 @@ noncomputable def monomialₗ (n : ℕ) :
     BosonicAlgebra M →ₗ[ℂ] Polynomial (BosonicAlgebra M)
 ```
 
-**`StandardModel.BosonicAlgebra.monomialₗ_apply`**, a lemma, [line 75](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/Matter/Bosonic/MassWeightPoly.lean#L75).
+**`StandardModel.BosonicAlgebra.monomialₗ_apply`**, a lemma, [line 75](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/Matter/Bosonic/MassWeightPoly.lean#L75).
 
 ```lean
 lemma monomialₗ_apply (n : ℕ) (x : BosonicAlgebra M) :
     monomialₗ n x = Polynomial.monomial n x
 ```
 
-**`StandardModel.BosonicAlgebra.halfPoly`**, a def, [line 82](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/Matter/Bosonic/MassWeightPoly.lean#L82).
+**`StandardModel.BosonicAlgebra.halfPoly`**, a def, [line 82](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/Matter/Bosonic/MassWeightPoly.lean#L82).
 
 > One half of the mass-weight polynomial on the jet component space, for a field of mass
 > weight `w`: the linear map sending the symbol `∂_s φ` to `X ^ (w + 2 |s|)` times its
@@ -71,7 +71,7 @@ noncomputable def halfPoly {W : Type} [AddCommGroup W] [Module ℂ W] (w : ℕ)
     SpaceTimeDerivAlgebraℂ ⊗[ℂ] W →ₗ[ℂ] Polynomial (BosonicAlgebra M)
 ```
 
-**`StandardModel.BosonicAlgebra.halfPoly_basis_tmul`**, a lemma, [line 91](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/Matter/Bosonic/MassWeightPoly.lean#L91).
+**`StandardModel.BosonicAlgebra.halfPoly_basis_tmul`**, a lemma, [line 91](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/Matter/Bosonic/MassWeightPoly.lean#L91).
 
 > On the symbol `∂_s φ` the half mass-weight polynomial is the monomial of degree
 > `w + 2 |s|`: the field contributes `w` and each derivative two.
@@ -85,7 +85,7 @@ lemma halfPoly_basis_tmul {W : Type} [AddCommGroup W] [Module ℂ W] (w : ℕ)
         (k (SpaceTimeDerivAlgebraℂ.basis s ⊗ₜ[ℂ] x))
 ```
 
-**`StandardModel.BosonicAlgebra.ιFst`**, a def, [line 101](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/Matter/Bosonic/MassWeightPoly.lean#L101).
+**`StandardModel.BosonicAlgebra.ιFst`**, a def, [line 101](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/Matter/Bosonic/MassWeightPoly.lean#L101).
 
 > The inclusion of the unconjugated symbols into the bosonic algebra.
 
@@ -93,7 +93,7 @@ lemma halfPoly_basis_tmul {W : Type} [AddCommGroup W] [Module ℂ W] (w : ℕ)
 noncomputable def ιFst : SpaceTimeDerivAlgebraℂ ⊗[ℂ] Module.Dual ℂ M.V →ₗ[ℂ] BosonicAlgebra M
 ```
 
-**`StandardModel.BosonicAlgebra.ιSnd`**, a def, [line 105](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/Matter/Bosonic/MassWeightPoly.lean#L105).
+**`StandardModel.BosonicAlgebra.ιSnd`**, a def, [line 105](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/Matter/Bosonic/MassWeightPoly.lean#L105).
 
 > The inclusion of the conjugate symbols into the bosonic algebra.
 
@@ -102,7 +102,7 @@ noncomputable def ιSnd :
     SpaceTimeDerivAlgebraℂ ⊗[ℂ] Module.Dual ℂ (ConjModule M.V) →ₗ[ℂ] BosonicAlgebra M
 ```
 
-**`StandardModel.BosonicAlgebra.jetComponentPoly`**, a def, [line 111](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/Matter/Bosonic/MassWeightPoly.lean#L111).
+**`StandardModel.BosonicAlgebra.jetComponentPoly`**, a def, [line 111](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/Matter/Bosonic/MassWeightPoly.lean#L111).
 
 > The mass-weight polynomial of a component function of a field of mass weight `w`: the
 > sum of the two half maps, one for the field and one for its conjugate.
@@ -112,14 +112,14 @@ noncomputable def jetComponentPoly (w : ℕ) :
     JetComponentSpace M →ₗ[ℂ] Polynomial (BosonicAlgebra M)
 ```
 
-**`StandardModel.BosonicAlgebra.jetComponentPoly_apply`**, a lemma, [line 116](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/Matter/Bosonic/MassWeightPoly.lean#L116).
+**`StandardModel.BosonicAlgebra.jetComponentPoly_apply`**, a lemma, [line 116](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/Matter/Bosonic/MassWeightPoly.lean#L116).
 
 ```lean
 lemma jetComponentPoly_apply (w : ℕ) (x : JetComponentSpace M) :
     jetComponentPoly w x = halfPoly w ιFst x.1 + halfPoly w ιSnd x.2
 ```
 
-**`StandardModel.BosonicAlgebra.jetComponentPoly_inl`**, a lemma, [line 121](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/Matter/Bosonic/MassWeightPoly.lean#L121).
+**`StandardModel.BosonicAlgebra.jetComponentPoly_inl`**, a lemma, [line 121](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/Matter/Bosonic/MassWeightPoly.lean#L121).
 
 > On an unconjugated derivative monomial the component map is a monomial eigenvector.
 
@@ -131,7 +131,7 @@ lemma jetComponentPoly_inl (w : ℕ) (s : Multiset (Fin 1 ⊕ Fin 3)) (φ : Modu
           ((SpaceTimeDerivAlgebraℂ.basis s ⊗ₜ[ℂ] φ, 0) : JetComponentSpace M))
 ```
 
-**`StandardModel.BosonicAlgebra.jetComponentPoly_inr`**, a lemma, [line 131](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/Matter/Bosonic/MassWeightPoly.lean#L131).
+**`StandardModel.BosonicAlgebra.jetComponentPoly_inr`**, a lemma, [line 131](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/Matter/Bosonic/MassWeightPoly.lean#L131).
 
 > On a conjugate derivative monomial the component map is a monomial eigenvector.
 
@@ -146,7 +146,7 @@ lemma jetComponentPoly_inr (w : ℕ) (s : Multiset (Fin 1 ⊕ Fin 3))
 
 ## B. The mass-weight polynomial on the bosonic algebra
 
-**`StandardModel.BosonicAlgebra.massWeightPoly`**, a def, [line 150](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/Matter/Bosonic/MassWeightPoly.lean#L150).
+**`StandardModel.BosonicAlgebra.massWeightPoly`**, a def, [line 150](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/Matter/Bosonic/MassWeightPoly.lean#L150).
 
 > The mass-weight polynomial on the bosonic algebra of a field of mass weight `w`: the
 > `ℂ`-algebra map sending a generator of mass weight `n` to `X ^ n` times itself. It is
@@ -158,7 +158,7 @@ noncomputable def massWeightPoly (w : ℕ) :
     BosonicAlgebra M →ₐ[ℂ] Polynomial (BosonicAlgebra M)
 ```
 
-**`StandardModel.BosonicAlgebra.massWeightPoly_ι`**, a lemma, [line 156](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/Matter/Bosonic/MassWeightPoly.lean#L156).
+**`StandardModel.BosonicAlgebra.massWeightPoly_ι`**, a lemma, [line 156](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/Matter/Bosonic/MassWeightPoly.lean#L156).
 
 > On a component function the mass-weight polynomial is the component-function map.
 
@@ -170,7 +170,7 @@ lemma massWeightPoly_ι (w : ℕ) (x : JetComponentSpace M) :
 
 ## C. The mass weight of the field and its derivatives
 
-**`StandardModel.BosonicAlgebra.massWeightPoly_iteratedJetDeriv_ofField`**, a lemma, [line 169](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/Matter/Bosonic/MassWeightPoly.lean#L169).
+**`StandardModel.BosonicAlgebra.massWeightPoly_iteratedJetDeriv_ofField`**, a lemma, [line 169](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/Matter/Bosonic/MassWeightPoly.lean#L169).
 
 > The generator `∂_s ψ_φ` is a monomial eigenvector of mass weight `w + 2 |s|`: the field
 > carries its own mass weight and each derivative adds two.
@@ -182,7 +182,7 @@ lemma massWeightPoly_iteratedJetDeriv_ofField (w : ℕ) (s : Multiset (Fin 1 ⊕
       Polynomial.monomial (w + 2 * Multiset.card s) (iteratedJetDeriv s (ofField φ))
 ```
 
-**`StandardModel.BosonicAlgebra.massWeightPoly_iteratedJetDeriv_ofConjField`**, a lemma, [line 177](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/Matter/Bosonic/MassWeightPoly.lean#L177).
+**`StandardModel.BosonicAlgebra.massWeightPoly_iteratedJetDeriv_ofConjField`**, a lemma, [line 177](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/Matter/Bosonic/MassWeightPoly.lean#L177).
 
 > The conjugate generator `∂_s ψ̄_φ` is a monomial eigenvector of the same mass weight
 > `w + 2 |s|` as the generator it conjugates.
@@ -195,7 +195,7 @@ lemma massWeightPoly_iteratedJetDeriv_ofConjField (w : ℕ) (s : Multiset (Fin 1
         (iteratedJetDeriv s (ofConjField φ))
 ```
 
-**`StandardModel.BosonicAlgebra.massWeightPoly_ofField`**, a lemma, [line 185](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/Matter/Bosonic/MassWeightPoly.lean#L185).
+**`StandardModel.BosonicAlgebra.massWeightPoly_ofField`**, a lemma, [line 185](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/Matter/Bosonic/MassWeightPoly.lean#L185).
 
 > The undifferentiated field has mass weight `w`.
 
@@ -204,7 +204,7 @@ lemma massWeightPoly_ofField (w : ℕ) (φ : Module.Dual ℂ M.V) :
     massWeightPoly w (ofField φ) = Polynomial.monomial w (ofField φ)
 ```
 
-**`StandardModel.BosonicAlgebra.massWeightPoly_ofConjField`**, a lemma, [line 192](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/Matter/Bosonic/MassWeightPoly.lean#L192).
+**`StandardModel.BosonicAlgebra.massWeightPoly_ofConjField`**, a lemma, [line 192](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/Matter/Bosonic/MassWeightPoly.lean#L192).
 
 > The undifferentiated conjugate field has mass weight `w`.
 
@@ -215,7 +215,7 @@ lemma massWeightPoly_ofConjField (w : ℕ) (φ : Module.Dual ℂ (ConjModule M.V
 
 ## D. Recovering an element from its mass-weight polynomial
 
-**`StandardModel.BosonicAlgebra.halfPoly_eval_one`**, a lemma, [line 207](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/Matter/Bosonic/MassWeightPoly.lean#L207).
+**`StandardModel.BosonicAlgebra.halfPoly_eval_one`**, a lemma, [line 207](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/Matter/Bosonic/MassWeightPoly.lean#L207).
 
 > Setting the formal variable to one collapses a half mass-weight polynomial back to the
 > symbol it graded. The derivative monomials span, so it is enough to check this on the
@@ -227,7 +227,7 @@ lemma halfPoly_eval_one {W : Type} [AddCommGroup W] [Module ℂ W] (w : ℕ)
     (y : SpaceTimeDerivAlgebraℂ ⊗[ℂ] W) : (halfPoly w k y).eval 1 = k y
 ```
 
-**`StandardModel.BosonicAlgebra.jetComponentPoly_eval_one`**, a lemma, [line 227](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/Matter/Bosonic/MassWeightPoly.lean#L227).
+**`StandardModel.BosonicAlgebra.jetComponentPoly_eval_one`**, a lemma, [line 227](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/Matter/Bosonic/MassWeightPoly.lean#L227).
 
 > Setting the formal variable to one recovers the component function.
 
@@ -236,7 +236,7 @@ lemma jetComponentPoly_eval_one (w : ℕ) (x : JetComponentSpace M) :
     (jetComponentPoly w x).eval 1 = SymmetricAlgebra.ι ℂ (JetComponentSpace M) x
 ```
 
-**`StandardModel.BosonicAlgebra.massWeightPoly_eval_one`**, a lemma, [line 236](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/Matter/Bosonic/MassWeightPoly.lean#L236).
+**`StandardModel.BosonicAlgebra.massWeightPoly_eval_one`**, a lemma, [line 236](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/Matter/Bosonic/MassWeightPoly.lean#L236).
 
 > Setting the formal variable to one recovers the original element: the mass-weight
 > pieces of an element sum back to it.
@@ -246,7 +246,7 @@ lemma massWeightPoly_eval_one (w : ℕ) (a : BosonicAlgebra M) :
     (massWeightPoly w a).eval 1 = a
 ```
 
-**`StandardModel.BosonicAlgebra.massWeightPoly_injective`**, a lemma, [line 252](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/Matter/Bosonic/MassWeightPoly.lean#L252).
+**`StandardModel.BosonicAlgebra.massWeightPoly_injective`**, a lemma, [line 252](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/Matter/Bosonic/MassWeightPoly.lean#L252).
 
 > The mass-weight polynomial is injective: an element is recovered from its graded
 > pieces. It is not surjective, since a monomial of the wrong degree is not the grading of
@@ -263,4 +263,4 @@ lemma massWeightPoly_injective (w : ℕ) :
 
 ## Sources
 
-- [PhyslibAlpha/Particles/StandardModel/Matter/Bosonic/MassWeightPoly.lean at 2a1dfe43](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/Matter/Bosonic/MassWeightPoly.lean)
+- [PhyslibAlpha/Particles/StandardModel/Matter/Bosonic/MassWeightPoly.lean at 8c87bdfb](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/Matter/Bosonic/MassWeightPoly.lean)

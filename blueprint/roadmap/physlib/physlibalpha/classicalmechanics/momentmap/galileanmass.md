@@ -8,7 +8,7 @@ proof: formalized
 
 # The mass as a cohomology class of the Galilean Lie algebra (Souriau)
 
-The module `PhyslibAlpha.ClassicalMechanics.MomentMap.GalileanMass`, [PhyslibAlpha/ClassicalMechanics/MomentMap/GalileanMass.lean](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalMechanics/MomentMap/GalileanMass.lean): 35 declarations (3 instances with no name), 32 with a docstring; 2 private, not shown.
+The module `PhyslibAlpha.ClassicalMechanics.MomentMap.GalileanMass`, [PhyslibAlpha/ClassicalMechanics/MomentMap/GalileanMass.lean](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalMechanics/MomentMap/GalileanMass.lean): 35 declarations (3 instances with no name), 32 with a docstring; 2 private, not shown.
 
 > The total mass as a non-trivial cohomology class of the Galilean Lie algebra (Souriau).
 
@@ -88,7 +88,7 @@ The module `PhyslibAlpha.ClassicalMechanics.MomentMap.GalileanMass`, [PhyslibAlp
 
 ## A. The Galilean Lie algebra
 
-**`ClassicalMechanics.GalileanAlgebra`**, a structure, [line 122](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalMechanics/MomentMap/GalileanMass.lean#L122).
+**`ClassicalMechanics.GalileanAlgebra`**, a structure, [line 122](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalMechanics/MomentMap/GalileanMass.lean#L122).
 
 > An element `Z = (ω, β, γ, ε)` of the Lie algebra of the Galilean group, in Souriau's
 > parametrisation (12.74), (12.118).
@@ -105,19 +105,19 @@ structure GalileanAlgebra where
   ε : ℝ
 ```
 
-**An instance with no name**, [line 134](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalMechanics/MomentMap/GalileanMass.lean#L134).
+**An instance with no name**, [line 134](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalMechanics/MomentMap/GalileanMass.lean#L134).
 
 ```lean
 instance : Zero GalileanAlgebra
 ```
 
-**An instance with no name**, [line 136](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalMechanics/MomentMap/GalileanMass.lean#L136).
+**An instance with no name**, [line 136](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalMechanics/MomentMap/GalileanMass.lean#L136).
 
 ```lean
 instance : Add GalileanAlgebra
 ```
 
-**`ClassicalMechanics.GalileanAlgebra.bracket`**, a def, [line 140](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalMechanics/MomentMap/GalileanMass.lean#L140).
+**`ClassicalMechanics.GalileanAlgebra.bracket`**, a def, [line 140](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalMechanics/MomentMap/GalileanMass.lean#L140).
 
 > Souriau's bracket on the Galilean Lie algebra. It is the bracket of the vector fields (12.119)
 > in the convention (6.12 b), (2.45), see `EvolutionSpace.vectorField_bracket`.
@@ -126,7 +126,7 @@ instance : Add GalileanAlgebra
 def bracket (Z Z' : GalileanAlgebra) : GalileanAlgebra
 ```
 
-**`ClassicalMechanics.GalileanAlgebra.bracket_antisymm`**, a lemma, [line 145](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalMechanics/MomentMap/GalileanMass.lean#L145).
+**`ClassicalMechanics.GalileanAlgebra.bracket_antisymm`**, a lemma, [line 145](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalMechanics/MomentMap/GalileanMass.lean#L145).
 
 > The bracket is antisymmetric.
 
@@ -134,7 +134,7 @@ def bracket (Z Z' : GalileanAlgebra) : GalileanAlgebra
 lemma bracket_antisymm (Z Z' : GalileanAlgebra) : bracket Z Z' + bracket Z' Z = 0
 ```
 
-**`ClassicalMechanics.GalileanAlgebra.bracket_jacobi`**, a lemma, [line 158](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalMechanics/MomentMap/GalileanMass.lean#L158).
+**`ClassicalMechanics.GalileanAlgebra.bracket_jacobi`**, a lemma, [line 158](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalMechanics/MomentMap/GalileanMass.lean#L158).
 
 > The Jacobi identity for Souriau's bracket.
 
@@ -143,7 +143,7 @@ lemma bracket_jacobi (Z Z' Z'' : GalileanAlgebra) :
     bracket Z (bracket Z' Z'') + bracket Z' (bracket Z'' Z) + bracket Z'' (bracket Z Z') = 0
 ```
 
-**`ClassicalMechanics.GalileanAlgebra.bracket_boost_translation`**, a lemma, [line 177](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalMechanics/MomentMap/GalileanMass.lean#L177).
+**`ClassicalMechanics.GalileanAlgebra.bracket_boost_translation`**, a lemma, [line 177](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalMechanics/MomentMap/GalileanMass.lean#L177).
 
 > A change of velocity and a space translation commute.
 
@@ -153,7 +153,7 @@ lemma bracket_boost_translation (β γ : ℝ³) : bracket ⟨0, β, 0, 0⟩ ⟨0
 
 ## B. Torsors
 
-**`ClassicalMechanics.GalileanTorsor`**, a structure, [line 191](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalMechanics/MomentMap/GalileanMass.lean#L191).
+**`ClassicalMechanics.GalileanTorsor`**, a structure, [line 191](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalMechanics/MomentMap/GalileanMass.lean#L191).
 
 > A torsor `μ = {l, g, p, E}`, an element of the dual of the Galilean Lie algebra (12.123).
 
@@ -169,7 +169,7 @@ structure GalileanTorsor where
   E : ℝ
 ```
 
-**`ClassicalMechanics.GalileanTorsor.pair`**, a def, [line 203](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalMechanics/MomentMap/GalileanMass.lean#L203).
+**`ClassicalMechanics.GalileanTorsor.pair`**, a def, [line 203](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalMechanics/MomentMap/GalileanMass.lean#L203).
 
 > The pairing (12.122) of a torsor with an element of the Lie algebra,
 > `μ(Z) = ⟨l, ω⟩ - ⟨g, β⟩ + ⟨p, γ⟩ - E ε`.
@@ -180,7 +180,7 @@ def GalileanTorsor.pair (μ : GalileanTorsor) (Z : GalileanAlgebra) : ℝ
 
 ## C. The cocycle `f₀`
 
-**`ClassicalMechanics.GalileanAlgebra.cocycle`**, a def, [line 215](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalMechanics/MomentMap/GalileanMass.lean#L215).
+**`ClassicalMechanics.GalileanAlgebra.cocycle`**, a def, [line 215](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalMechanics/MomentMap/GalileanMass.lean#L215).
 
 > The 2-form `f₀(Z)(Z') = ⟨β, γ'⟩ - ⟨β', γ⟩` of (12.130).
 
@@ -188,7 +188,7 @@ def GalileanTorsor.pair (μ : GalileanTorsor) (Z : GalileanAlgebra) : ℝ
 def cocycle (Z Z' : GalileanAlgebra) : ℝ
 ```
 
-**`ClassicalMechanics.GalileanAlgebra.cocycle_antisymm`**, a lemma, [line 218](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalMechanics/MomentMap/GalileanMass.lean#L218).
+**`ClassicalMechanics.GalileanAlgebra.cocycle_antisymm`**, a lemma, [line 218](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalMechanics/MomentMap/GalileanMass.lean#L218).
 
 > `f₀` is antisymmetric.
 
@@ -196,7 +196,7 @@ def cocycle (Z Z' : GalileanAlgebra) : ℝ
 lemma cocycle_antisymm (Z Z' : GalileanAlgebra) : cocycle Z Z' = -cocycle Z' Z
 ```
 
-**`ClassicalMechanics.GalileanAlgebra.cocycle_cyclic`**, a lemma, [line 223](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalMechanics/MomentMap/GalileanMass.lean#L223).
+**`ClassicalMechanics.GalileanAlgebra.cocycle_cyclic`**, a lemma, [line 223](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalMechanics/MomentMap/GalileanMass.lean#L223).
 
 > (12.129): `f₀(Z)([Z', Z'']) + f₀(Z')([Z'', Z]) + f₀(Z'')([Z, Z']) = 0`.
 
@@ -205,7 +205,7 @@ lemma cocycle_cyclic (Z Z' Z'' : GalileanAlgebra) :
     cocycle Z (bracket Z' Z'') + cocycle Z' (bracket Z'' Z) + cocycle Z'' (bracket Z Z') = 0
 ```
 
-**`ClassicalMechanics.GalileanAlgebra.cocycle_boost_translation`**, a lemma, [line 238](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalMechanics/MomentMap/GalileanMass.lean#L238).
+**`ClassicalMechanics.GalileanAlgebra.cocycle_boost_translation`**, a lemma, [line 238](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalMechanics/MomentMap/GalileanMass.lean#L238).
 
 > `f₀` is not zero: its value on a change of velocity and a space translation along the same
 > axis is `1`.
@@ -215,7 +215,7 @@ lemma cocycle_boost_translation :
     cocycle ⟨0, ![1, 0, 0], 0, 0⟩ ⟨0, 0, ![1, 0, 0], 0⟩ = 1
 ```
 
-**`ClassicalMechanics.GalileanAlgebra.smul_cocycle_isCoboundary_iff`**, a lemma, [line 246](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalMechanics/MomentMap/GalileanMass.lean#L246).
+**`ClassicalMechanics.GalileanAlgebra.smul_cocycle_isCoboundary_iff`**, a lemma, [line 246](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalMechanics/MomentMap/GalileanMass.lean#L246).
 
 > `M f₀` is a coboundary of the algebra, `M f₀(Z)(Z') = μ₀[Z, Z']` for some torsor `μ₀` ((11.24)
 > with `Z_{g*}(μ) = μ ∘ Ad(Z)` (11.16) and `Ad(Z)(Z') = [Z, Z']` (6.13 b); by p. 116, note (1), this
@@ -227,7 +227,7 @@ lemma smul_cocycle_isCoboundary_iff (M : ℝ) :
       ↔ M = 0
 ```
 
-**`ClassicalMechanics.GalileanAlgebra.cocycle_not_coboundary`**, a lemma, [line 266](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalMechanics/MomentMap/GalileanMass.lean#L266).
+**`ClassicalMechanics.GalileanAlgebra.cocycle_not_coboundary`**, a lemma, [line 266](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalMechanics/MomentMap/GalileanMass.lean#L266).
 
 > `f₀` is not a coboundary of the algebra: no torsor `μ₀` satisfies `f₀(Z)(Z') = μ₀[Z, Z']` for
 > all `Z`, `Z'`.
@@ -239,7 +239,7 @@ lemma cocycle_not_coboundary :
 
 ## D. The evolution space of free material points
 
-**`ClassicalMechanics.EvolutionSpace`**, a structure, [line 283](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalMechanics/MomentMap/GalileanMass.lean#L283).
+**`ClassicalMechanics.EvolutionSpace`**, a structure, [line 283](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalMechanics/MomentMap/GalileanMass.lean#L283).
 
 > A point, or a tangent vector, of the evolution space of `N` material points,
 > `y = (t, r_j, v_j)` (12.76).
@@ -254,13 +254,13 @@ structure EvolutionSpace (N : ℕ) where
   v : Fin N → ℝ³
 ```
 
-**An instance with no name**, [line 295](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalMechanics/MomentMap/GalileanMass.lean#L295).
+**An instance with no name**, [line 295](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalMechanics/MomentMap/GalileanMass.lean#L295).
 
 ```lean
 instance : Sub (EvolutionSpace N)
 ```
 
-**`ClassicalMechanics.EvolutionSpace.vectorField`**, a def, [line 301](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalMechanics/MomentMap/GalileanMass.lean#L301).
+**`ClassicalMechanics.EvolutionSpace.vectorField`**, a def, [line 301](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalMechanics/MomentMap/GalileanMass.lean#L301).
 
 > The vector field `Z_V` of `Z` on the evolution space (12.119): `δt = ε`,
 > `δr_j = ω × r_j + β t + γ`, `δv_j = ω × v_j + β`.
@@ -269,7 +269,7 @@ instance : Sub (EvolutionSpace N)
 def vectorField (Z : GalileanAlgebra) (y : EvolutionSpace N) : EvolutionSpace N
 ```
 
-**`ClassicalMechanics.EvolutionSpace.linearPart`**, a def, [line 306](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalMechanics/MomentMap/GalileanMass.lean#L306).
+**`ClassicalMechanics.EvolutionSpace.linearPart`**, a def, [line 306](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalMechanics/MomentMap/GalileanMass.lean#L306).
 
 > The differential of the affine vector field `Z_V` (its linear part), applied to a tangent vector
 > `w`.
@@ -278,7 +278,7 @@ def vectorField (Z : GalileanAlgebra) (y : EvolutionSpace N) : EvolutionSpace N
 def linearPart (Z : GalileanAlgebra) (w : EvolutionSpace N) : EvolutionSpace N
 ```
 
-**`ClassicalMechanics.EvolutionSpace.vectorField_bracket`**, a lemma, [line 311](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalMechanics/MomentMap/GalileanMass.lean#L311).
+**`ClassicalMechanics.EvolutionSpace.vectorField_bracket`**, a lemma, [line 311](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalMechanics/MomentMap/GalileanMass.lean#L311).
 
 > Souriau's bracket is the bracket of the vector fields in the convention (6.12 b), (2.45):
 > `[Z, Z']_V = DZ'_V(Z_V) - DZ_V(Z'_V)`.
@@ -289,7 +289,7 @@ lemma vectorField_bracket (Z Z' : GalileanAlgebra) (y : EvolutionSpace N) :
       = linearPart Z' (vectorField Z y) - linearPart Z (vectorField Z' y)
 ```
 
-**`ClassicalMechanics.EvolutionSpace.lagrangeForm`**, a def, [line 330](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalMechanics/MomentMap/GalileanMass.lean#L330).
+**`ClassicalMechanics.EvolutionSpace.lagrangeForm`**, a def, [line 330](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalMechanics/MomentMap/GalileanMass.lean#L330).
 
 > The Lagrange form of `N` free material points of masses `m j` at `y`, (12.40) with `F_j = 0`:
 > `σ(dy)(δy) = Σ_j ⟨m_j dv_j, δr_j - v_j δt⟩ - ⟨m_j δv_j, dr_j - v_j dt⟩`.
@@ -298,7 +298,7 @@ lemma vectorField_bracket (Z Z' : GalileanAlgebra) (y : EvolutionSpace N) :
 def lagrangeForm (m : Fin N → ℝ) (y dy δy : EvolutionSpace N) : ℝ
 ```
 
-**`ClassicalMechanics.EvolutionSpace.lagrangeForm_antisymm`**, a lemma, [line 334](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalMechanics/MomentMap/GalileanMass.lean#L334).
+**`ClassicalMechanics.EvolutionSpace.lagrangeForm_antisymm`**, a lemma, [line 334](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalMechanics/MomentMap/GalileanMass.lean#L334).
 
 > `σ` is antisymmetric.
 
@@ -307,7 +307,7 @@ lemma lagrangeForm_antisymm (m : Fin N → ℝ) (y dy δy : EvolutionSpace N) :
     lagrangeForm m y dy δy = -lagrangeForm m y δy dy
 ```
 
-**`ClassicalMechanics.EvolutionSpace.lagrangeForm_motion`**, a lemma, [line 340](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalMechanics/MomentMap/GalileanMass.lean#L340).
+**`ClassicalMechanics.EvolutionSpace.lagrangeForm_motion`**, a lemma, [line 340](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalMechanics/MomentMap/GalileanMass.lean#L340).
 
 > (12.41)-(12.43): the velocity `(1, v_j, 0)` of the free motion through `y` lies in the kernel
 > of `σ` (one direction of (12.48)).
@@ -319,7 +319,7 @@ lemma lagrangeForm_motion (m : Fin N → ℝ) (y δy : EvolutionSpace N) :
 
 ## E. The moment
 
-**`ClassicalMechanics.EvolutionSpace.moment`**, a def, [line 353](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalMechanics/MomentMap/GalileanMass.lean#L353).
+**`ClassicalMechanics.EvolutionSpace.moment`**, a def, [line 353](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalMechanics/MomentMap/GalileanMass.lean#L353).
 
 > The moment of `N` free material points ((12.125) for one point of unit mass; (12.135) for `N`
 > points, with `E_j = 0` in its last line and the additive constant of `E` chosen to be `0`):
@@ -329,7 +329,7 @@ lemma lagrangeForm_motion (m : Fin N → ℝ) (y δy : EvolutionSpace N) :
 def moment (m : Fin N → ℝ) (y : EvolutionSpace N) : GalileanTorsor
 ```
 
-**`ClassicalMechanics.EvolutionSpace.line`**, a def, [line 358](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalMechanics/MomentMap/GalileanMass.lean#L358).
+**`ClassicalMechanics.EvolutionSpace.line`**, a def, [line 358](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalMechanics/MomentMap/GalileanMass.lean#L358).
 
 > The line `s ↦ y + s dy` of the evolution space.
 
@@ -337,7 +337,7 @@ def moment (m : Fin N → ℝ) (y : EvolutionSpace N) : GalileanTorsor
 def line (y dy : EvolutionSpace N) (s : ℝ) : EvolutionSpace N
 ```
 
-**`ClassicalMechanics.EvolutionSpace.motion`**, a def, [line 362](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalMechanics/MomentMap/GalileanMass.lean#L362).
+**`ClassicalMechanics.EvolutionSpace.motion`**, a def, [line 362](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalMechanics/MomentMap/GalileanMass.lean#L362).
 
 > The free motion through `y`: `t + s`, `r_j + s v_j`, `v_j`.
 
@@ -345,7 +345,7 @@ def line (y dy : EvolutionSpace N) (s : ℝ) : EvolutionSpace N
 def motion (y : EvolutionSpace N) (s : ℝ) : EvolutionSpace N
 ```
 
-**`ClassicalMechanics.EvolutionSpace.pair_moment`**, a lemma, [line 366](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalMechanics/MomentMap/GalileanMass.lean#L366).
+**`ClassicalMechanics.EvolutionSpace.pair_moment`**, a lemma, [line 366](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalMechanics/MomentMap/GalileanMass.lean#L366).
 
 > `μ(Z)` as a sum over the material points.
 
@@ -355,7 +355,7 @@ lemma pair_moment (m : Fin N → ℝ) (y : EvolutionSpace N) (Z : GalileanAlgebr
       + y.v j ⬝ᵥ Z.γ - (1 / 2 : ℝ) * Z.ε * (y.v j ⬝ᵥ y.v j))
 ```
 
-**`ClassicalMechanics.EvolutionSpace.hasDerivAt_moment`**, a lemma, [line 397](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalMechanics/MomentMap/GalileanMass.lean#L397).
+**`ClassicalMechanics.EvolutionSpace.hasDerivAt_moment`**, a lemma, [line 397](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalMechanics/MomentMap/GalileanMass.lean#L397).
 
 > (12.124): `σ(dy)(Z_V(y)) = dμ(Z)(dy)`, stated as the derivative at `s = 0` of
 > `s ↦ μ(y + s dy)(Z)`; `μ` is a moment of the action (12.120).
@@ -366,7 +366,7 @@ lemma hasDerivAt_moment (m : Fin N → ℝ) (y dy : EvolutionSpace N) (Z : Galil
       0
 ```
 
-**`ClassicalMechanics.EvolutionSpace.moment_motion`**, a lemma, [line 419](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalMechanics/MomentMap/GalileanMass.lean#L419).
+**`ClassicalMechanics.EvolutionSpace.moment_motion`**, a lemma, [line 419](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalMechanics/MomentMap/GalileanMass.lean#L419).
 
 > (12.121): the moment is constant along every free motion.
 
@@ -377,7 +377,7 @@ lemma moment_motion (m : Fin N → ℝ) (y : EvolutionSpace N) (s : ℝ) :
 
 ## F. The cocycle of the system and the mass
 
-**`ClassicalMechanics.EvolutionSpace.totalMass`**, a def, [line 433](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalMechanics/MomentMap/GalileanMass.lean#L433).
+**`ClassicalMechanics.EvolutionSpace.totalMass`**, a def, [line 433](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalMechanics/MomentMap/GalileanMass.lean#L433).
 
 > The total mass `m = Σ_j m_j` (12.135).
 
@@ -385,7 +385,7 @@ lemma moment_motion (m : Fin N → ℝ) (y : EvolutionSpace N) (s : ℝ) :
 def totalMass (m : Fin N → ℝ) : ℝ
 ```
 
-**`ClassicalMechanics.EvolutionSpace.centerOfMass`**, a def, [line 437](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalMechanics/MomentMap/GalileanMass.lean#L437).
+**`ClassicalMechanics.EvolutionSpace.centerOfMass`**, a def, [line 437](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalMechanics/MomentMap/GalileanMass.lean#L437).
 
 > The centre of gravity `R = (Σ_j m_j r_j) / m`, named in (12.141) (the formula is the usual one,
 > not printed there); for `m = 0` the value is `0`, by the convention `0⁻¹ = 0`.
@@ -394,7 +394,7 @@ def totalMass (m : Fin N → ℝ) : ℝ
 def centerOfMass (m : Fin N → ℝ) (y : EvolutionSpace N) : ℝ³
 ```
 
-**`ClassicalMechanics.EvolutionSpace.lagrangeForm_vectorField`**, a lemma, [line 441](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalMechanics/MomentMap/GalileanMass.lean#L441).
+**`ClassicalMechanics.EvolutionSpace.lagrangeForm_vectorField`**, a lemma, [line 441](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalMechanics/MomentMap/GalileanMass.lean#L441).
 
 > (12.134) with `m = Σ_j m_j` (12.135): `σ(Z_V(y))(Z'_V(y)) = μ[Z, Z'] + m f₀(Z)(Z')`.
 
@@ -404,7 +404,7 @@ lemma lagrangeForm_vectorField (m : Fin N → ℝ) (y : EvolutionSpace N) (Z Z' 
       = (moment m y).pair (bracket Z Z') + totalMass m * cocycle Z Z'
 ```
 
-**`ClassicalMechanics.EvolutionSpace.totalMass_cocycle_not_coboundary`**, a lemma, [line 453](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalMechanics/MomentMap/GalileanMass.lean#L453).
+**`ClassicalMechanics.EvolutionSpace.totalMass_cocycle_not_coboundary`**, a lemma, [line 453](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalMechanics/MomentMap/GalileanMass.lean#L453).
 
 > (12.136) at the level of the algebra: for a non-zero total mass, the cocycle `m f₀` of the
 > system is not a coboundary of the algebra.
@@ -415,7 +415,7 @@ lemma totalMass_cocycle_not_coboundary (m : Fin N → ℝ) (hM : totalMass m ≠
       totalMass m * cocycle Z Z' = μ₀.pair (bracket Z Z')
 ```
 
-**`ClassicalMechanics.EvolutionSpace.moment_g`**, a lemma, [line 459](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalMechanics/MomentMap/GalileanMass.lean#L459).
+**`ClassicalMechanics.EvolutionSpace.moment_g`**, a lemma, [line 459](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalMechanics/MomentMap/GalileanMass.lean#L459).
 
 > (12.141): `g = m R - p t`, with `R` the centre of gravity, for a non-zero total mass.
 
@@ -424,7 +424,7 @@ lemma moment_g (m : Fin N → ℝ) (hM : totalMass m ≠ 0) (y : EvolutionSpace 
     (moment m y).g = totalMass m • centerOfMass m y - y.t • (moment m y).p
 ```
 
-**`ClassicalMechanics.EvolutionSpace.centerOfMass_motion`**, a lemma, [line 471](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalMechanics/MomentMap/GalileanMass.lean#L471).
+**`ClassicalMechanics.EvolutionSpace.centerOfMass_motion`**, a lemma, [line 471](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalMechanics/MomentMap/GalileanMass.lean#L471).
 
 > Along a free motion the centre of gravity moves uniformly with velocity `p / m` (p. 153, after
 > (12.141)). Souriau deduces this for any isolated system from the constancy of `g` and `p`; here it
@@ -441,4 +441,4 @@ Its declarations' statements use no declaration of another module with an articl
 
 ## Sources
 
-- [PhyslibAlpha/ClassicalMechanics/MomentMap/GalileanMass.lean at 2a1dfe43](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalMechanics/MomentMap/GalileanMass.lean)
+- [PhyslibAlpha/ClassicalMechanics/MomentMap/GalileanMass.lean at 8c87bdfb](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalMechanics/MomentMap/GalileanMass.lean)

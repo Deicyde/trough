@@ -8,7 +8,7 @@ proof: formalized
 
 # The Second Partial Derivatives Test
 
-The module `PhyslibAlpha.Mathematics.PartialDerivativeTest`, [PhyslibAlpha/Mathematics/PartialDerivativeTest.lean](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Mathematics/PartialDerivativeTest.lean): 24 declarations, 23 with a docstring, 8 listed as significant.
+The module `PhyslibAlpha.Mathematics.PartialDerivativeTest`, [PhyslibAlpha/Mathematics/PartialDerivativeTest.lean](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Mathematics/PartialDerivativeTest.lean): 24 declarations, 23 with a docstring, 8 listed as significant.
 
 > A positive definite Hessian at a critical point of an analytic function gives a local minimum.
 
@@ -40,7 +40,7 @@ The module `PhyslibAlpha.Mathematics.PartialDerivativeTest`, [PhyslibAlpha/Mathe
 
 ## A. Updating vectors of length two
 
-**`Function.update₀`**, a lemma, [line 62](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Mathematics/PartialDerivativeTest.lean#L62).
+**`Function.update₀`**, a lemma, [line 62](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Mathematics/PartialDerivativeTest.lean#L62).
 
 > Update a vector of length 2 in coordinate 0.
 
@@ -48,7 +48,7 @@ The module `PhyslibAlpha.Mathematics.PartialDerivativeTest`, [PhyslibAlpha/Mathe
 lemma Function.update₀ {α : Type*} {a b c : α} : Function.update ![a,b] 0 c = ![c,b]
 ```
 
-**`Function.update₁`**, a lemma, [line 67](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Mathematics/PartialDerivativeTest.lean#L67).
+**`Function.update₁`**, a lemma, [line 67](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Mathematics/PartialDerivativeTest.lean#L67).
 
 > Update a vector of length 2 in coordinate 1.
 
@@ -58,7 +58,7 @@ lemma Function.update₁ {α : Type*} {a b c : α} : Function.update ![a,b] 1 c 
 
 ## B. Quadratic maps from the second derivative
 
-**`hessianBilinearCompanion`**, a def, [line 80](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Mathematics/PartialDerivativeTest.lean#L80).
+**`hessianBilinearCompanion`**, a def, [line 80](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Mathematics/PartialDerivativeTest.lean#L80).
 
 > The Hessian companion as a bilinear map.
 
@@ -67,7 +67,7 @@ noncomputable def hessianBilinearCompanion {V : Type*} [NormedAddCommGroup V]
     [NormedSpace ℝ V] (f : V → ℝ) (x₀ : V) : V →ₗ[ℝ] V →ₗ[ℝ] ℝ
 ```
 
-**`iteratedFDerivQuadraticMap`**, a def, [line 107](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Mathematics/PartialDerivativeTest.lean#L107).
+**`iteratedFDerivQuadraticMap`**, a def, [line 107](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Mathematics/PartialDerivativeTest.lean#L107).
 
 > The second iterated Frechét derivative as a quadratic map.
 
@@ -76,7 +76,7 @@ noncomputable def iteratedFDerivQuadraticMap {V : Type*} [NormedAddCommGroup V]
     [NormedSpace ℝ V] (f : V → ℝ) (x₀ : V) : QuadraticMap ℝ V ℝ
 ```
 
-**`continuousBilinearMapOfContinuousMultilinearMap`**, a def, [line 130](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Mathematics/PartialDerivativeTest.lean#L130).
+**`continuousBilinearMapOfContinuousMultilinearMap`**, a def, [line 130](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Mathematics/PartialDerivativeTest.lean#L130).
 
 > A continuous multilinear map is bilinear.
 
@@ -88,7 +88,7 @@ noncomputable def continuousBilinearMapOfContinuousMultilinearMap
     (g : ContinuousMultilinearMap 𝕜 (fun _ : Fin 2 => V) 𝕜) : V →L[𝕜] V →L[𝕜] 𝕜
 ```
 
-**`QuadraticMap.toMultilinearMap`**, a def, [line 147](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Mathematics/PartialDerivativeTest.lean#L147).
+**`QuadraticMap.toMultilinearMap`**, a def, [line 147](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Mathematics/PartialDerivativeTest.lean#L147).
 
 > .
 
@@ -97,7 +97,7 @@ def QuadraticMap.toMultilinearMap {V : Type*} [AddCommGroup V] [Module ℝ V]
     (Q : QuadraticMap ℝ V ℝ) : MultilinearMap ℝ (fun _ : Fin 2 => V) ℝ
 ```
 
-**`QuadraticMap.toMultilinearMapHalfPolarBilin`**, a def, [line 155](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Mathematics/PartialDerivativeTest.lean#L155).
+**`QuadraticMap.toMultilinearMapHalfPolarBilin`**, a def, [line 155](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Mathematics/PartialDerivativeTest.lean#L155).
 
 > .
 
@@ -108,7 +108,7 @@ noncomputable def QuadraticMap.toMultilinearMapHalfPolarBilin
     MultilinearMap ℝ (fun _ : Fin 2 => V) ℝ
 ```
 
-**`QuadraticMap.toMultilinearMap_continuous`**, a theorem, [line 185](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Mathematics/PartialDerivativeTest.lean#L185). Listed as a significant result in [Theorems.txt](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/scripts/lint/exemptions/Theorems.txt).
+**`QuadraticMap.toMultilinearMap_continuous`**, a theorem, [line 185](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Mathematics/PartialDerivativeTest.lean#L185). Listed as a significant result in [Theorems.txt](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/scripts/lint/exemptions/Theorems.txt).
 
 > The multilinear map associated to a quadratic map is continuous.
 
@@ -118,7 +118,7 @@ theorem QuadraticMap.toMultilinearMap_continuous {V : Type*}
     [FiniteDimensional ℝ V] (Q : QuadraticMap ℝ V ℝ) : Continuous Q.toMultilinearMap
 ```
 
-**`QuadraticMap.toMultilinearMapHalfPolarBilin_continuous`**, a theorem, [line 214](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Mathematics/PartialDerivativeTest.lean#L214). Listed as a significant result in [Theorems.txt](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/scripts/lint/exemptions/Theorems.txt).
+**`QuadraticMap.toMultilinearMapHalfPolarBilin_continuous`**, a theorem, [line 214](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Mathematics/PartialDerivativeTest.lean#L214). Listed as a significant result in [Theorems.txt](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/scripts/lint/exemptions/Theorems.txt).
 
 > .
 
@@ -129,7 +129,7 @@ theorem QuadraticMap.toMultilinearMapHalfPolarBilin_continuous {V : Type*}
     Continuous Q.toMultilinearMapHalfPolarBilin
 ```
 
-**`QuadraticMap.toContinuousMultilinearMap`**, a def, [line 291](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Mathematics/PartialDerivativeTest.lean#L291).
+**`QuadraticMap.toContinuousMultilinearMap`**, a def, [line 291](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Mathematics/PartialDerivativeTest.lean#L291).
 
 > Construct a continuous multilinear map from a quadratic map on a finite dimensional space.
 
@@ -139,7 +139,7 @@ def QuadraticMap.toContinuousMultilinearMap {V : Type*} [NormedAddCommGroup V] [
     ContinuousMultilinearMap ℝ (fun _ : Fin 2 ↦ V) ℝ
 ```
 
-**`QuadraticMap.toContinuousMultilinearMapHalfPolarBilin`**, a def, [line 298](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Mathematics/PartialDerivativeTest.lean#L298).
+**`QuadraticMap.toContinuousMultilinearMapHalfPolarBilin`**, a def, [line 298](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Mathematics/PartialDerivativeTest.lean#L298).
 
 > .
 
@@ -149,7 +149,7 @@ noncomputable def QuadraticMap.toContinuousMultilinearMapHalfPolarBilin {V : Typ
     ContinuousMultilinearMap ℝ (fun _ : Fin 2 ↦ V) ℝ
 ```
 
-**`QuadraticMap.toContinuousMultilinearMap_apply`**, a theorem, [line 307](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Mathematics/PartialDerivativeTest.lean#L307). Listed as a significant result in [Theorems.txt](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/scripts/lint/exemptions/Theorems.txt).
+**`QuadraticMap.toContinuousMultilinearMap_apply`**, a theorem, [line 307](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Mathematics/PartialDerivativeTest.lean#L307). Listed as a significant result in [Theorems.txt](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/scripts/lint/exemptions/Theorems.txt).
 
 > The constructed continuous multilinear map agrees with the polar bilinear form.
 
@@ -159,7 +159,7 @@ theorem QuadraticMap.toContinuousMultilinearMap_apply {V : Type*} [NormedAddComm
     Q.toContinuousMultilinearMap ![x, y] = Q.polarBilin x y
 ```
 
-**`QuadraticMap.toContinuousMultilinearMap_applyHalf`**, a theorem, [line 313](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Mathematics/PartialDerivativeTest.lean#L313). Listed as a significant result in [Theorems.txt](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/scripts/lint/exemptions/Theorems.txt).
+**`QuadraticMap.toContinuousMultilinearMap_applyHalf`**, a theorem, [line 313](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Mathematics/PartialDerivativeTest.lean#L313). Listed as a significant result in [Theorems.txt](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/scripts/lint/exemptions/Theorems.txt).
 
 > .
 
@@ -171,7 +171,7 @@ theorem QuadraticMap.toContinuousMultilinearMap_applyHalf {V : Type*} [NormedAdd
 
 ## C. Coercivity of positive definite forms
 
-**`coercive_of_posdefHalf`**, a lemma, [line 326](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Mathematics/PartialDerivativeTest.lean#L326).
+**`coercive_of_posdefHalf`**, a lemma, [line 326](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Mathematics/PartialDerivativeTest.lean#L326).
 
 > .
 
@@ -183,7 +183,7 @@ lemma coercive_of_posdefHalf {V : Type*} [NormedAddCommGroup V] [NormedSpace ℝ
         F.toContinuousMultilinearMapHalfPolarBilin)
 ```
 
-**`polarBilin_iteratedFDerivQuadraticMap`**, a lemma, [line 402](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Mathematics/PartialDerivativeTest.lean#L402).
+**`polarBilin_iteratedFDerivQuadraticMap`**, a lemma, [line 402](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Mathematics/PartialDerivativeTest.lean#L402).
 
 > The polar bilinear form of the second-derivative quadratic map is the symmetrized
 > Hessian.
@@ -195,7 +195,7 @@ lemma polarBilin_iteratedFDerivQuadraticMap {V : Type*} [NormedAddCommGroup V] [
       = iteratedFDeriv ℝ 2 f x₀ ![x, y] + iteratedFDeriv ℝ 2 f x₀ ![y, x]
 ```
 
-**`iteratedFDeriv_two_swap`**, a lemma, [line 415](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Mathematics/PartialDerivativeTest.lean#L415).
+**`iteratedFDeriv_two_swap`**, a lemma, [line 415](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Mathematics/PartialDerivativeTest.lean#L415).
 
 > Symmetry of the second iterated Fréchet derivative (Schwarz's theorem).
 
@@ -205,7 +205,7 @@ lemma iteratedFDeriv_two_swap {V : Type*} [NormedAddCommGroup V] [NormedSpace �
     iteratedFDeriv ℝ 2 f x₀ ![y, x] = iteratedFDeriv ℝ 2 f x₀ ![x, y]
 ```
 
-**`coercive_of_posdef_of_contdiff`**, a lemma, [line 432](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Mathematics/PartialDerivativeTest.lean#L432).
+**`coercive_of_posdef_of_contdiff`**, a lemma, [line 432](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Mathematics/PartialDerivativeTest.lean#L432).
 
 > Positive definiteness implies coercivity.
 > The proof uses the general fact `coercive_of_posdefHalf`
@@ -221,7 +221,7 @@ lemma coercive_of_posdef_of_contdiff {V : Type*}
         (iteratedFDeriv ℝ 2 f x₀))
 ```
 
-**`coercive_of_posdef`**, a lemma, [line 455](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Mathematics/PartialDerivativeTest.lean#L455).
+**`coercive_of_posdef`**, a lemma, [line 455](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Mathematics/PartialDerivativeTest.lean#L455).
 
 > Positive definiteness implies coercivity.
 
@@ -235,7 +235,7 @@ lemma coercive_of_posdef {V : Type*} [NormedAddCommGroup V] [NormedSpace ℝ V]
 
 ## D. The second derivative test
 
-**`le_of_littleO`**, a theorem, [line 514](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Mathematics/PartialDerivativeTest.lean#L514). Listed as a significant result in [Theorems.txt](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/scripts/lint/exemptions/Theorems.txt).
+**`le_of_littleO`**, a theorem, [line 514](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Mathematics/PartialDerivativeTest.lean#L514). Listed as a significant result in [Theorems.txt](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/scripts/lint/exemptions/Theorems.txt).
 
 > .
 
@@ -250,7 +250,7 @@ theorem le_of_littleO {V : Type*}
   f x₀ ≤ f x
 ```
 
-**`isLocalMin_of_posDef_of_littleo`**, a theorem, [line 534](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Mathematics/PartialDerivativeTest.lean#L534). Listed as a significant result in [Theorems.txt](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/scripts/lint/exemptions/Theorems.txt).
+**`isLocalMin_of_posDef_of_littleo`**, a theorem, [line 534](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Mathematics/PartialDerivativeTest.lean#L534). Listed as a significant result in [Theorems.txt](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/scripts/lint/exemptions/Theorems.txt).
 
 > Second partial derivative test, "little oh" form.
 
@@ -262,7 +262,7 @@ theorem isLocalMin_of_posDef_of_littleo {V : Type*} [NormedAddCommGroup V]
     (hf : (iteratedFDerivQuadraticMap f x₀).PosDef) : IsLocalMin f x₀
 ```
 
-**`littleO_of_powerseries`**, a lemma, [line 558](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Mathematics/PartialDerivativeTest.lean#L558).
+**`littleO_of_powerseries`**, a lemma, [line 558](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Mathematics/PartialDerivativeTest.lean#L558).
 
 > Having a power series implies quadratic approximation.
 
@@ -273,14 +273,14 @@ lemma littleO_of_powerseries {V : Type*} [NormedAddCommGroup V] [NormedSpace ℝ
     (fun x => f x - p.partialSum 3 (x - x₀)) =o[nhds x₀] fun x => ‖x - x₀‖ ^ 2
 ```
 
-**`isLocalMin.of_subsingleton`**, a lemma, [line 571](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Mathematics/PartialDerivativeTest.lean#L571).
+**`isLocalMin.of_subsingleton`**, a lemma, [line 571](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Mathematics/PartialDerivativeTest.lean#L571).
 
 ```lean
 lemma isLocalMin.of_subsingleton {V : Type*} [TopologicalSpace V]
     [Subsingleton V] {f : V → ℝ} {x₀ : V} : IsLocalMin f x₀
 ```
 
-**`second_derivative_test`**, a theorem, [line 576](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Mathematics/PartialDerivativeTest.lean#L576). Listed as a significant result in [Theorems.txt](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/scripts/lint/exemptions/Theorems.txt).
+**`second_derivative_test`**, a theorem, [line 576](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Mathematics/PartialDerivativeTest.lean#L576). Listed as a significant result in [Theorems.txt](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/scripts/lint/exemptions/Theorems.txt).
 
 > The second partial derivative test.
 
@@ -292,7 +292,7 @@ theorem second_derivative_test {V : Type*} [NormedAddCommGroup V] [InnerProductS
     (hf : (iteratedFDerivQuadraticMap f x₀).PosDef) : IsLocalMin f x₀
 ```
 
-**`second_derivative_test_analyticAt`**, a theorem, [line 600](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Mathematics/PartialDerivativeTest.lean#L600). Listed as a significant result in [Theorems.txt](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/scripts/lint/exemptions/Theorems.txt).
+**`second_derivative_test_analyticAt`**, a theorem, [line 600](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Mathematics/PartialDerivativeTest.lean#L600). Listed as a significant result in [Theorems.txt](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/scripts/lint/exemptions/Theorems.txt).
 
 > A more convenient form of the second partial derivative test: it suffices that `f`
 > is analytic at `x₀` (so that an explicit power series need not be produced by hand).
@@ -310,4 +310,4 @@ Its declarations' statements use no declaration of another module with an articl
 
 ## Sources
 
-- [PhyslibAlpha/Mathematics/PartialDerivativeTest.lean at 2a1dfe43](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Mathematics/PartialDerivativeTest.lean)
+- [PhyslibAlpha/Mathematics/PartialDerivativeTest.lean at 8c87bdfb](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Mathematics/PartialDerivativeTest.lean)

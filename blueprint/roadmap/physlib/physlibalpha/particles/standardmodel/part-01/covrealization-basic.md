@@ -8,7 +8,7 @@ proof: formalized
 
 # The covariant algebra valued Standard Model
 
-The module `PhyslibAlpha.Particles.StandardModel.CovRealization.Basic`, [PhyslibAlpha/Particles/StandardModel/CovRealization/Basic.lean](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/CovRealization/Basic.lean): 93 declarations, 90 with a docstring.
+The module `PhyslibAlpha.Particles.StandardModel.CovRealization.Basic`, [PhyslibAlpha/Particles/StandardModel/CovRealization/Basic.lean](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/CovRealization/Basic.lean): 93 declarations, 90 with a docstring.
 
 ## i. Overview
 
@@ -56,7 +56,7 @@ The module `PhyslibAlpha.Particles.StandardModel.CovRealization.Basic`, [Physlib
 
 > * None.
 
-**`StandardModel.CovAlgebraRealization`**, a structure, [line 93](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/CovRealization/Basic.lean#L93).
+**`StandardModel.CovAlgebraRealization`**, a structure, [line 93](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/CovRealization/Basic.lean#L93).
 
 > The algebra `B`, with a gauge action, a Lorentz action and a mass-weight grading, is a
 > covariant Standard Model when it receives an algebra map from the covariant jet algebra of
@@ -109,7 +109,7 @@ structure CovAlgebraRealization (B : Type) [Ring B] [Algebra ℂ B]
 > multiplicativity laws are the ones the global gauge action and the Lorentz action were
 > shown to satisfy when they were built.
 
-**`StandardModel.CovAlgebraRealization.id`**, a def, [line 138](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/CovRealization/Basic.lean#L138).
+**`StandardModel.CovAlgebraRealization.id`**, a def, [line 138](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/CovRealization/Basic.lean#L138).
 
 > The covariant jet algebra of the Standard Model is a covariant Standard Model: it is one
 > along the identity algebra map.
@@ -128,7 +128,7 @@ noncomputable def id : CovAlgebraRealization CovJetAlgebra CovJetAlgebra.repGaug
 > defining algebra map. The field-strength tower is real-linear in its value index, so the
 > map is restricted to `ℝ` there.
 
-**`StandardModel.CovAlgebraRealization.covF`**, a def, [line 168](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/CovRealization/Basic.lean#L168).
+**`StandardModel.CovAlgebraRealization.covF`**, a def, [line 168](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/CovRealization/Basic.lean#L168).
 
 > The covariant derivatives `∇_l F_{μν}` of the field strength inside `B`.
 
@@ -137,7 +137,7 @@ noncomputable def covF {n : ℕ} (l : Fin n → (Fin 1 ⊕ Fin 3)) (μ ν : Fin 
     Module.Dual ℝ GaugeAlgebra →ₗ[ℝ] B
 ```
 
-**`StandardModel.CovAlgebraRealization.covH`**, a def, [line 173](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/CovRealization/Basic.lean#L173).
+**`StandardModel.CovAlgebraRealization.covH`**, a def, [line 173](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/CovRealization/Basic.lean#L173).
 
 > The covariant derivatives `∇_l H` of the Higgs field inside `B`.
 
@@ -146,7 +146,7 @@ noncomputable def covH {n : ℕ} (l : Fin n → (Fin 1 ⊕ Fin 3)) :
     Module.Dual ℂ HiggsVec →ₗ[ℂ] B
 ```
 
-**`StandardModel.CovAlgebraRealization.covBarH`**, a def, [line 178](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/CovRealization/Basic.lean#L178).
+**`StandardModel.CovAlgebraRealization.covBarH`**, a def, [line 178](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/CovRealization/Basic.lean#L178).
 
 > The covariant derivatives `∇_l H̄` of the conjugate Higgs field inside `B`.
 
@@ -155,7 +155,7 @@ noncomputable def covBarH {n : ℕ} (l : Fin n → (Fin 1 ⊕ Fin 3)) :
     Module.Dual ℂ (ConjModule HiggsVec) →ₗ[ℂ] B
 ```
 
-**`StandardModel.CovAlgebraRealization.covD`**, a def, [line 183](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/CovRealization/Basic.lean#L183).
+**`StandardModel.CovAlgebraRealization.covD`**, a def, [line 183](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/CovRealization/Basic.lean#L183).
 
 > The covariant derivatives of the `i`-th generation down-type quark singlet inside `B`.
 
@@ -164,7 +164,7 @@ noncomputable def covD (i : Fin 3) {n : ℕ} (l : Fin n → (Fin 1 ⊕ Fin 3)) :
     Module.Dual ℂ DownSinglet →ₗ[ℂ] B
 ```
 
-**`StandardModel.CovAlgebraRealization.covBarD`**, a def, [line 189](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/CovRealization/Basic.lean#L189).
+**`StandardModel.CovAlgebraRealization.covBarD`**, a def, [line 189](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/CovRealization/Basic.lean#L189).
 
 > The covariant derivatives of the `i`-th generation conjugate down-type quark singlet
 > inside `B`.
@@ -174,7 +174,7 @@ noncomputable def covBarD (i : Fin 3) {n : ℕ} (l : Fin n → (Fin 1 ⊕ Fin 3)
     Module.Dual ℂ (ConjModule DownSinglet) →ₗ[ℂ] B
 ```
 
-**`StandardModel.CovAlgebraRealization.covU`**, a def, [line 194](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/CovRealization/Basic.lean#L194).
+**`StandardModel.CovAlgebraRealization.covU`**, a def, [line 194](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/CovRealization/Basic.lean#L194).
 
 > The covariant derivatives of the `i`-th generation up-type quark singlet inside `B`.
 
@@ -183,7 +183,7 @@ noncomputable def covU (i : Fin 3) {n : ℕ} (l : Fin n → (Fin 1 ⊕ Fin 3)) :
     Module.Dual ℂ UpSinglet →ₗ[ℂ] B
 ```
 
-**`StandardModel.CovAlgebraRealization.covBarU`**, a def, [line 200](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/CovRealization/Basic.lean#L200).
+**`StandardModel.CovAlgebraRealization.covBarU`**, a def, [line 200](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/CovRealization/Basic.lean#L200).
 
 > The covariant derivatives of the `i`-th generation conjugate up-type quark singlet inside
 > `B`.
@@ -193,7 +193,7 @@ noncomputable def covBarU (i : Fin 3) {n : ℕ} (l : Fin n → (Fin 1 ⊕ Fin 3)
     Module.Dual ℂ (ConjModule UpSinglet) →ₗ[ℂ] B
 ```
 
-**`StandardModel.CovAlgebraRealization.covQ`**, a def, [line 205](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/CovRealization/Basic.lean#L205).
+**`StandardModel.CovAlgebraRealization.covQ`**, a def, [line 205](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/CovRealization/Basic.lean#L205).
 
 > The covariant derivatives of the `i`-th generation quark doublet inside `B`.
 
@@ -202,7 +202,7 @@ noncomputable def covQ (i : Fin 3) {n : ℕ} (l : Fin n → (Fin 1 ⊕ Fin 3)) :
     Module.Dual ℂ QuarkDoublet →ₗ[ℂ] B
 ```
 
-**`StandardModel.CovAlgebraRealization.covBarQ`**, a def, [line 210](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/CovRealization/Basic.lean#L210).
+**`StandardModel.CovAlgebraRealization.covBarQ`**, a def, [line 210](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/CovRealization/Basic.lean#L210).
 
 > The covariant derivatives of the `i`-th generation conjugate quark doublet inside `B`.
 
@@ -211,7 +211,7 @@ noncomputable def covBarQ (i : Fin 3) {n : ℕ} (l : Fin n → (Fin 1 ⊕ Fin 3)
     Module.Dual ℂ (ConjModule QuarkDoublet) →ₗ[ℂ] B
 ```
 
-**`StandardModel.CovAlgebraRealization.covL`**, a def, [line 215](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/CovRealization/Basic.lean#L215).
+**`StandardModel.CovAlgebraRealization.covL`**, a def, [line 215](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/CovRealization/Basic.lean#L215).
 
 > The covariant derivatives of the `i`-th generation lepton doublet inside `B`.
 
@@ -220,7 +220,7 @@ noncomputable def covL (i : Fin 3) {n : ℕ} (l : Fin n → (Fin 1 ⊕ Fin 3)) :
     Module.Dual ℂ LeptonDoubletV →ₗ[ℂ] B
 ```
 
-**`StandardModel.CovAlgebraRealization.covBarL`**, a def, [line 220](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/CovRealization/Basic.lean#L220).
+**`StandardModel.CovAlgebraRealization.covBarL`**, a def, [line 220](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/CovRealization/Basic.lean#L220).
 
 > The covariant derivatives of the `i`-th generation conjugate lepton doublet inside `B`.
 
@@ -229,7 +229,7 @@ noncomputable def covBarL (i : Fin 3) {n : ℕ} (l : Fin n → (Fin 1 ⊕ Fin 3)
     Module.Dual ℂ (ConjModule LeptonDoubletV) →ₗ[ℂ] B
 ```
 
-**`StandardModel.CovAlgebraRealization.covE`**, a def, [line 225](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/CovRealization/Basic.lean#L225).
+**`StandardModel.CovAlgebraRealization.covE`**, a def, [line 225](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/CovRealization/Basic.lean#L225).
 
 > The covariant derivatives of the `i`-th generation charged-lepton singlet inside `B`.
 
@@ -238,7 +238,7 @@ noncomputable def covE (i : Fin 3) {n : ℕ} (l : Fin n → (Fin 1 ⊕ Fin 3)) :
     Module.Dual ℂ LeptonSinglet →ₗ[ℂ] B
 ```
 
-**`StandardModel.CovAlgebraRealization.covBarE`**, a def, [line 231](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/CovRealization/Basic.lean#L231).
+**`StandardModel.CovAlgebraRealization.covBarE`**, a def, [line 231](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/CovRealization/Basic.lean#L231).
 
 > The covariant derivatives of the `i`-th generation conjugate charged-lepton singlet inside
 > `B`.
@@ -256,7 +256,7 @@ noncomputable def covBarE (i : Fin 3) {n : ℕ} (l : Fin n → (Fin 1 ⊕ Fin 3)
 > mass-weight eigenvalue equation and a Lorentz slot-mixing sum. Commutation needs no lemma
 > of its own — it is `Commute.map`.
 
-**`StandardModel.CovAlgebraRealization.map_repGauge_eq`**, a lemma, [line 249](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/CovRealization/Basic.lean#L249).
+**`StandardModel.CovAlgebraRealization.map_repGauge_eq`**, a lemma, [line 249](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/CovRealization/Basic.lean#L249).
 
 > A gauge transformation law transports along the defining map: the map is equivariant for
 > the global gauge group.
@@ -267,7 +267,7 @@ lemma map_repGauge_eq {g : GaugeGroupI} {x y : CovJetAlgebra}
     repGauge g (k.toAlgHom x) = k.toAlgHom y
 ```
 
-**`StandardModel.CovAlgebraRealization.map_anticomm`**, a lemma, [line 256](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/CovRealization/Basic.lean#L256).
+**`StandardModel.CovAlgebraRealization.map_anticomm`**, a lemma, [line 256](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/CovRealization/Basic.lean#L256).
 
 > An anticommutation law transports along the defining map: the map preserves products and
 > negation.
@@ -277,7 +277,7 @@ lemma map_anticomm {x y : CovJetAlgebra} (hxy : x * y = -(y * x)) :
     k.toAlgHom x * k.toAlgHom y = -(k.toAlgHom y * k.toAlgHom x)
 ```
 
-**`StandardModel.CovAlgebraRealization.map_neg_eq`**, a lemma, [line 264](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/CovRealization/Basic.lean#L264).
+**`StandardModel.CovAlgebraRealization.map_neg_eq`**, a lemma, [line 264](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/CovRealization/Basic.lean#L264).
 
 > An antisymmetry transports along the defining map: the map preserves negation.
 
@@ -286,7 +286,7 @@ lemma map_neg_eq {x y : CovJetAlgebra} (hxy : x = -y) :
     k.toAlgHom x = -k.toAlgHom y
 ```
 
-**`StandardModel.CovAlgebraRealization.map_massWeight_monomial`**, a lemma, [line 270](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/CovRealization/Basic.lean#L270).
+**`StandardModel.CovAlgebraRealization.map_massWeight_monomial`**, a lemma, [line 270](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/CovRealization/Basic.lean#L270).
 
 > A mass-weight eigenvalue equation transports along the defining map: the map carries the
 > grading of the covariant jet algebra to that of `B`.
@@ -297,7 +297,7 @@ lemma map_massWeight_monomial {n : ℕ} {x : CovJetAlgebra}
     massWeightPoly (k.toAlgHom x) = Polynomial.monomial n (k.toAlgHom x)
 ```
 
-**`StandardModel.CovAlgebraRealization.map_lorentz`**, a lemma, [line 279](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/CovRealization/Basic.lean#L279).
+**`StandardModel.CovAlgebraRealization.map_lorentz`**, a lemma, [line 279](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/CovRealization/Basic.lean#L279).
 
 > A Lorentz transformation law of a covariant tower transports along the defining map: the
 > slot mixing is a finite sum of scalar multiples, and the map is linear and equivariant.
@@ -321,7 +321,7 @@ lemma map_lorentz {V : Type} [AddCommGroup V] [Module ℂ V]
 > covariant towers generate is here too, together with the centrality of the bosonic towers
 > inside it.
 
-**`StandardModel.CovAlgebraRealization.isHiggsSector`**, a def, [line 308](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/CovRealization/Basic.lean#L308).
+**`StandardModel.CovAlgebraRealization.isHiggsSector`**, a def, [line 308](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/CovRealization/Basic.lean#L308).
 
 > The Higgs sector of a covariant Standard Model: the defining map restricted to the
 > covariant jet algebra of the Higgs field.
@@ -331,7 +331,7 @@ noncomputable def isHiggsSector :
     HiggsAlgebraCovRealization B repGauge repLorentz massWeightPoly
 ```
 
-**`StandardModel.CovAlgebraRealization.isHiggsSector_covH`**, a lemma, [line 326](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/CovRealization/Basic.lean#L326).
+**`StandardModel.CovAlgebraRealization.isHiggsSector_covH`**, a lemma, [line 326](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/CovRealization/Basic.lean#L326).
 
 > The Higgs towers of the Higgs sector of a covariant Standard Model are its own.
 
@@ -340,7 +340,7 @@ lemma isHiggsSector_covH (n : ℕ) (l : Fin n → (Fin 1 ⊕ Fin 3)) :
     k.isHiggsSector.covH n l = k.covH l
 ```
 
-**`StandardModel.CovAlgebraRealization.isHiggsSector_covBarH`**, a lemma, [line 332](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/CovRealization/Basic.lean#L332).
+**`StandardModel.CovAlgebraRealization.isHiggsSector_covBarH`**, a lemma, [line 332](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/CovRealization/Basic.lean#L332).
 
 > The conjugate Higgs towers of the Higgs sector of a covariant Standard Model are its
 > own.
@@ -350,7 +350,7 @@ lemma isHiggsSector_covBarH (n : ℕ) (l : Fin n → (Fin 1 ⊕ Fin 3)) :
     k.isHiggsSector.covBarH n l = k.covBarH l
 ```
 
-**`StandardModel.CovAlgebraRealization.isGaugeSector`**, a lemma, [line 336](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/CovRealization/Basic.lean#L336).
+**`StandardModel.CovAlgebraRealization.isGaugeSector`**, a lemma, [line 336](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/CovRealization/Basic.lean#L336).
 
 > The gauge sector of a covariant Standard Model.
 
@@ -359,7 +359,7 @@ lemma isGaugeSector : IsGaugeSector B repGauge k.repGauge_mul repLorentz k.repLo
     (fun {_n} l μ ν => k.covF l μ ν) massWeightPoly
 ```
 
-**`StandardModel.CovAlgebraRealization.covF_comp_perm_of_map_lie`**, a lemma, [line 363](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/CovRealization/Basic.lean#L363).
+**`StandardModel.CovAlgebraRealization.covF_comp_perm_of_map_lie`**, a lemma, [line 363](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/CovRealization/Basic.lean#L363).
 
 > At a dual vector vanishing on every bracket, such as the hypercharge coordinate, the
 > field-strength tower is symmetric in its derivative slots, at every order: the law of the
@@ -374,7 +374,7 @@ lemma covF_comp_perm_of_map_lie {φ : Module.Dual ℝ GaugeAlgebra}
     k.covF (l ∘ σ) μ ν φ = k.covF l μ ν φ
 ```
 
-**`StandardModel.CovAlgebraRealization.isFermionSector`**, a lemma, [line 370](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/CovRealization/Basic.lean#L370).
+**`StandardModel.CovAlgebraRealization.isFermionSector`**, a lemma, [line 370](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/CovRealization/Basic.lean#L370).
 
 > The fermion sector of a covariant Standard Model.
 
@@ -387,7 +387,7 @@ lemma isFermionSector : IsFermionSector B repGauge k.repGauge_mul repLorentz k.r
     (fun {_n} i l => k.covE i l) (fun {_n} i l => k.covBarE i l) massWeightPoly
 ```
 
-**`StandardModel.CovAlgebraRealization.repGauge_one`**, a lemma, [line 545](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/CovRealization/Basic.lean#L545).
+**`StandardModel.CovAlgebraRealization.repGauge_one`**, a lemma, [line 545](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/CovRealization/Basic.lean#L545).
 
 > The gauge action fixes the unit of the algebra: it is multiplicative, and every element of
 > the group is invertible.
@@ -396,7 +396,7 @@ lemma isFermionSector : IsFermionSector B repGauge k.repGauge_mul repLorentz k.r
 lemma repGauge_one (g : GaugeGroupI) : repGauge g (1 : B) = 1
 ```
 
-**`StandardModel.CovAlgebraRealization.repLorentz_one`**, a lemma, [line 556](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/CovRealization/Basic.lean#L556).
+**`StandardModel.CovAlgebraRealization.repLorentz_one`**, a lemma, [line 556](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/CovRealization/Basic.lean#L556).
 
 > The Lorentz action fixes the unit of the algebra.
 
@@ -406,7 +406,7 @@ lemma repLorentz_one (Λ : SL(2,ℂ)) : repLorentz Λ (1 : B) = 1
 
 ### D.1. The cross-sector commutation rules
 
-**`StandardModel.CovAlgebraRealization.F_comm_H`**, a lemma, [line 572](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/CovRealization/Basic.lean#L572).
+**`StandardModel.CovAlgebraRealization.F_comm_H`**, a lemma, [line 572](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/CovRealization/Basic.lean#L572).
 
 > The cross-sector commutation rule `F_comm_H` of a covariant Standard Model.
 
@@ -417,7 +417,7 @@ lemma F_comm_H {n m : ℕ} (l : Fin n → Fin 1 ⊕ Fin 3) (μ ν : Fin 1 ⊕ Fi
     Commute (k.covF l μ ν ψ) (k.covH l' φ)
 ```
 
-**`StandardModel.CovAlgebraRealization.F_comm_barH`**, a lemma, [line 579](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/CovRealization/Basic.lean#L579).
+**`StandardModel.CovAlgebraRealization.F_comm_barH`**, a lemma, [line 579](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/CovRealization/Basic.lean#L579).
 
 > The cross-sector commutation rule `F_comm_barH` of a covariant Standard Model.
 
@@ -428,7 +428,7 @@ lemma F_comm_barH {n m : ℕ} (l : Fin n → Fin 1 ⊕ Fin 3) (μ ν : Fin 1 ⊕
     Commute (k.covF l μ ν ψ) (k.covBarH l' φ)
 ```
 
-**`StandardModel.CovAlgebraRealization.F_comm_d`**, a lemma, [line 586](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/CovRealization/Basic.lean#L586).
+**`StandardModel.CovAlgebraRealization.F_comm_d`**, a lemma, [line 586](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/CovRealization/Basic.lean#L586).
 
 > The cross-sector commutation rule `F_comm_d` of a covariant Standard Model.
 
@@ -439,7 +439,7 @@ lemma F_comm_d {n m : ℕ} (l : Fin n → Fin 1 ⊕ Fin 3) (μ ν : Fin 1 ⊕ Fi
     Commute (k.covF l μ ν ψ) (k.covD i l' φ)
 ```
 
-**`StandardModel.CovAlgebraRealization.F_comm_bard`**, a lemma, [line 593](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/CovRealization/Basic.lean#L593).
+**`StandardModel.CovAlgebraRealization.F_comm_bard`**, a lemma, [line 593](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/CovRealization/Basic.lean#L593).
 
 > The cross-sector commutation rule `F_comm_bard` of a covariant Standard Model.
 
@@ -450,7 +450,7 @@ lemma F_comm_bard {n m : ℕ} (l : Fin n → Fin 1 ⊕ Fin 3) (μ ν : Fin 1 ⊕
     Commute (k.covF l μ ν ψ) (k.covBarD i l' φ)
 ```
 
-**`StandardModel.CovAlgebraRealization.F_comm_u`**, a lemma, [line 600](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/CovRealization/Basic.lean#L600).
+**`StandardModel.CovAlgebraRealization.F_comm_u`**, a lemma, [line 600](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/CovRealization/Basic.lean#L600).
 
 > The cross-sector commutation rule `F_comm_u` of a covariant Standard Model.
 
@@ -461,7 +461,7 @@ lemma F_comm_u {n m : ℕ} (l : Fin n → Fin 1 ⊕ Fin 3) (μ ν : Fin 1 ⊕ Fi
     Commute (k.covF l μ ν ψ) (k.covU i l' φ)
 ```
 
-**`StandardModel.CovAlgebraRealization.F_comm_baru`**, a lemma, [line 607](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/CovRealization/Basic.lean#L607).
+**`StandardModel.CovAlgebraRealization.F_comm_baru`**, a lemma, [line 607](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/CovRealization/Basic.lean#L607).
 
 > The cross-sector commutation rule `F_comm_baru` of a covariant Standard Model.
 
@@ -472,7 +472,7 @@ lemma F_comm_baru {n m : ℕ} (l : Fin n → Fin 1 ⊕ Fin 3) (μ ν : Fin 1 ⊕
     Commute (k.covF l μ ν ψ) (k.covBarU i l' φ)
 ```
 
-**`StandardModel.CovAlgebraRealization.F_comm_Q`**, a lemma, [line 614](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/CovRealization/Basic.lean#L614).
+**`StandardModel.CovAlgebraRealization.F_comm_Q`**, a lemma, [line 614](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/CovRealization/Basic.lean#L614).
 
 > The cross-sector commutation rule `F_comm_Q` of a covariant Standard Model.
 
@@ -483,7 +483,7 @@ lemma F_comm_Q {n m : ℕ} (l : Fin n → Fin 1 ⊕ Fin 3) (μ ν : Fin 1 ⊕ Fi
     Commute (k.covF l μ ν ψ) (k.covQ i l' φ)
 ```
 
-**`StandardModel.CovAlgebraRealization.F_comm_barQ`**, a lemma, [line 621](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/CovRealization/Basic.lean#L621).
+**`StandardModel.CovAlgebraRealization.F_comm_barQ`**, a lemma, [line 621](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/CovRealization/Basic.lean#L621).
 
 > The cross-sector commutation rule `F_comm_barQ` of a covariant Standard Model.
 
@@ -494,7 +494,7 @@ lemma F_comm_barQ {n m : ℕ} (l : Fin n → Fin 1 ⊕ Fin 3) (μ ν : Fin 1 ⊕
     Commute (k.covF l μ ν ψ) (k.covBarQ i l' φ)
 ```
 
-**`StandardModel.CovAlgebraRealization.F_comm_L`**, a lemma, [line 628](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/CovRealization/Basic.lean#L628).
+**`StandardModel.CovAlgebraRealization.F_comm_L`**, a lemma, [line 628](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/CovRealization/Basic.lean#L628).
 
 > The cross-sector commutation rule `F_comm_L` of a covariant Standard Model.
 
@@ -505,7 +505,7 @@ lemma F_comm_L {n m : ℕ} (l : Fin n → Fin 1 ⊕ Fin 3) (μ ν : Fin 1 ⊕ Fi
     Commute (k.covF l μ ν ψ) (k.covL i l' φ)
 ```
 
-**`StandardModel.CovAlgebraRealization.F_comm_barL`**, a lemma, [line 635](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/CovRealization/Basic.lean#L635).
+**`StandardModel.CovAlgebraRealization.F_comm_barL`**, a lemma, [line 635](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/CovRealization/Basic.lean#L635).
 
 > The cross-sector commutation rule `F_comm_barL` of a covariant Standard Model.
 
@@ -516,7 +516,7 @@ lemma F_comm_barL {n m : ℕ} (l : Fin n → Fin 1 ⊕ Fin 3) (μ ν : Fin 1 ⊕
     Commute (k.covF l μ ν ψ) (k.covBarL i l' φ)
 ```
 
-**`StandardModel.CovAlgebraRealization.F_comm_e`**, a lemma, [line 642](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/CovRealization/Basic.lean#L642).
+**`StandardModel.CovAlgebraRealization.F_comm_e`**, a lemma, [line 642](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/CovRealization/Basic.lean#L642).
 
 > The cross-sector commutation rule `F_comm_e` of a covariant Standard Model.
 
@@ -527,7 +527,7 @@ lemma F_comm_e {n m : ℕ} (l : Fin n → Fin 1 ⊕ Fin 3) (μ ν : Fin 1 ⊕ Fi
     Commute (k.covF l μ ν ψ) (k.covE i l' φ)
 ```
 
-**`StandardModel.CovAlgebraRealization.F_comm_bare`**, a lemma, [line 649](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/CovRealization/Basic.lean#L649).
+**`StandardModel.CovAlgebraRealization.F_comm_bare`**, a lemma, [line 649](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/CovRealization/Basic.lean#L649).
 
 > The cross-sector commutation rule `F_comm_bare` of a covariant Standard Model.
 
@@ -538,7 +538,7 @@ lemma F_comm_bare {n m : ℕ} (l : Fin n → Fin 1 ⊕ Fin 3) (μ ν : Fin 1 ⊕
     Commute (k.covF l μ ν ψ) (k.covBarE i l' φ)
 ```
 
-**`StandardModel.CovAlgebraRealization.H_comm_d`**, a lemma, [line 656](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/CovRealization/Basic.lean#L656).
+**`StandardModel.CovAlgebraRealization.H_comm_d`**, a lemma, [line 656](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/CovRealization/Basic.lean#L656).
 
 > The cross-sector commutation rule `H_comm_d` of a covariant Standard Model.
 
@@ -549,7 +549,7 @@ lemma H_comm_d {n m : ℕ} (l : Fin n → Fin 1 ⊕ Fin 3)
     Commute (k.covH l φ) (k.covD i l' φ')
 ```
 
-**`StandardModel.CovAlgebraRealization.H_comm_bard`**, a lemma, [line 663](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/CovRealization/Basic.lean#L663).
+**`StandardModel.CovAlgebraRealization.H_comm_bard`**, a lemma, [line 663](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/CovRealization/Basic.lean#L663).
 
 > The cross-sector commutation rule `H_comm_bard` of a covariant Standard Model.
 
@@ -560,7 +560,7 @@ lemma H_comm_bard {n m : ℕ} (l : Fin n → Fin 1 ⊕ Fin 3)
     Commute (k.covH l φ) (k.covBarD i l' φ')
 ```
 
-**`StandardModel.CovAlgebraRealization.H_comm_u`**, a lemma, [line 670](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/CovRealization/Basic.lean#L670).
+**`StandardModel.CovAlgebraRealization.H_comm_u`**, a lemma, [line 670](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/CovRealization/Basic.lean#L670).
 
 > The cross-sector commutation rule `H_comm_u` of a covariant Standard Model.
 
@@ -571,7 +571,7 @@ lemma H_comm_u {n m : ℕ} (l : Fin n → Fin 1 ⊕ Fin 3)
     Commute (k.covH l φ) (k.covU i l' φ')
 ```
 
-**`StandardModel.CovAlgebraRealization.H_comm_baru`**, a lemma, [line 677](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/CovRealization/Basic.lean#L677).
+**`StandardModel.CovAlgebraRealization.H_comm_baru`**, a lemma, [line 677](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/CovRealization/Basic.lean#L677).
 
 > The cross-sector commutation rule `H_comm_baru` of a covariant Standard Model.
 
@@ -582,7 +582,7 @@ lemma H_comm_baru {n m : ℕ} (l : Fin n → Fin 1 ⊕ Fin 3)
     Commute (k.covH l φ) (k.covBarU i l' φ')
 ```
 
-**`StandardModel.CovAlgebraRealization.H_comm_Q`**, a lemma, [line 684](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/CovRealization/Basic.lean#L684).
+**`StandardModel.CovAlgebraRealization.H_comm_Q`**, a lemma, [line 684](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/CovRealization/Basic.lean#L684).
 
 > The cross-sector commutation rule `H_comm_Q` of a covariant Standard Model.
 
@@ -593,7 +593,7 @@ lemma H_comm_Q {n m : ℕ} (l : Fin n → Fin 1 ⊕ Fin 3)
     Commute (k.covH l φ) (k.covQ i l' φ')
 ```
 
-**`StandardModel.CovAlgebraRealization.H_comm_barQ`**, a lemma, [line 691](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/CovRealization/Basic.lean#L691).
+**`StandardModel.CovAlgebraRealization.H_comm_barQ`**, a lemma, [line 691](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/CovRealization/Basic.lean#L691).
 
 > The cross-sector commutation rule `H_comm_barQ` of a covariant Standard Model.
 
@@ -604,7 +604,7 @@ lemma H_comm_barQ {n m : ℕ} (l : Fin n → Fin 1 ⊕ Fin 3)
     Commute (k.covH l φ) (k.covBarQ i l' φ')
 ```
 
-**`StandardModel.CovAlgebraRealization.H_comm_L`**, a lemma, [line 698](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/CovRealization/Basic.lean#L698).
+**`StandardModel.CovAlgebraRealization.H_comm_L`**, a lemma, [line 698](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/CovRealization/Basic.lean#L698).
 
 > The cross-sector commutation rule `H_comm_L` of a covariant Standard Model.
 
@@ -615,7 +615,7 @@ lemma H_comm_L {n m : ℕ} (l : Fin n → Fin 1 ⊕ Fin 3)
     Commute (k.covH l φ) (k.covL i l' φ')
 ```
 
-**`StandardModel.CovAlgebraRealization.H_comm_barL`**, a lemma, [line 705](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/CovRealization/Basic.lean#L705).
+**`StandardModel.CovAlgebraRealization.H_comm_barL`**, a lemma, [line 705](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/CovRealization/Basic.lean#L705).
 
 > The cross-sector commutation rule `H_comm_barL` of a covariant Standard Model.
 
@@ -626,7 +626,7 @@ lemma H_comm_barL {n m : ℕ} (l : Fin n → Fin 1 ⊕ Fin 3)
     Commute (k.covH l φ) (k.covBarL i l' φ')
 ```
 
-**`StandardModel.CovAlgebraRealization.H_comm_e`**, a lemma, [line 712](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/CovRealization/Basic.lean#L712).
+**`StandardModel.CovAlgebraRealization.H_comm_e`**, a lemma, [line 712](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/CovRealization/Basic.lean#L712).
 
 > The cross-sector commutation rule `H_comm_e` of a covariant Standard Model.
 
@@ -637,7 +637,7 @@ lemma H_comm_e {n m : ℕ} (l : Fin n → Fin 1 ⊕ Fin 3)
     Commute (k.covH l φ) (k.covE i l' φ')
 ```
 
-**`StandardModel.CovAlgebraRealization.H_comm_bare`**, a lemma, [line 719](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/CovRealization/Basic.lean#L719).
+**`StandardModel.CovAlgebraRealization.H_comm_bare`**, a lemma, [line 719](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/CovRealization/Basic.lean#L719).
 
 > The cross-sector commutation rule `H_comm_bare` of a covariant Standard Model.
 
@@ -648,7 +648,7 @@ lemma H_comm_bare {n m : ℕ} (l : Fin n → Fin 1 ⊕ Fin 3)
     Commute (k.covH l φ) (k.covBarE i l' φ')
 ```
 
-**`StandardModel.CovAlgebraRealization.barH_comm_d`**, a lemma, [line 726](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/CovRealization/Basic.lean#L726).
+**`StandardModel.CovAlgebraRealization.barH_comm_d`**, a lemma, [line 726](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/CovRealization/Basic.lean#L726).
 
 > The cross-sector commutation rule `barH_comm_d` of a covariant Standard Model.
 
@@ -659,7 +659,7 @@ lemma barH_comm_d {n m : ℕ} (l : Fin n → Fin 1 ⊕ Fin 3)
     Commute (k.covBarH l φ) (k.covD i l' φ')
 ```
 
-**`StandardModel.CovAlgebraRealization.barH_comm_bard`**, a lemma, [line 733](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/CovRealization/Basic.lean#L733).
+**`StandardModel.CovAlgebraRealization.barH_comm_bard`**, a lemma, [line 733](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/CovRealization/Basic.lean#L733).
 
 > The cross-sector commutation rule `barH_comm_bard` of a covariant Standard Model.
 
@@ -670,7 +670,7 @@ lemma barH_comm_bard {n m : ℕ} (l : Fin n → Fin 1 ⊕ Fin 3)
     Commute (k.covBarH l φ) (k.covBarD i l' φ')
 ```
 
-**`StandardModel.CovAlgebraRealization.barH_comm_u`**, a lemma, [line 740](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/CovRealization/Basic.lean#L740).
+**`StandardModel.CovAlgebraRealization.barH_comm_u`**, a lemma, [line 740](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/CovRealization/Basic.lean#L740).
 
 > The cross-sector commutation rule `barH_comm_u` of a covariant Standard Model.
 
@@ -681,7 +681,7 @@ lemma barH_comm_u {n m : ℕ} (l : Fin n → Fin 1 ⊕ Fin 3)
     Commute (k.covBarH l φ) (k.covU i l' φ')
 ```
 
-**`StandardModel.CovAlgebraRealization.barH_comm_baru`**, a lemma, [line 747](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/CovRealization/Basic.lean#L747).
+**`StandardModel.CovAlgebraRealization.barH_comm_baru`**, a lemma, [line 747](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/CovRealization/Basic.lean#L747).
 
 > The cross-sector commutation rule `barH_comm_baru` of a covariant Standard Model.
 
@@ -692,7 +692,7 @@ lemma barH_comm_baru {n m : ℕ} (l : Fin n → Fin 1 ⊕ Fin 3)
     Commute (k.covBarH l φ) (k.covBarU i l' φ')
 ```
 
-**`StandardModel.CovAlgebraRealization.barH_comm_Q`**, a lemma, [line 754](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/CovRealization/Basic.lean#L754).
+**`StandardModel.CovAlgebraRealization.barH_comm_Q`**, a lemma, [line 754](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/CovRealization/Basic.lean#L754).
 
 > The cross-sector commutation rule `barH_comm_Q` of a covariant Standard Model.
 
@@ -703,7 +703,7 @@ lemma barH_comm_Q {n m : ℕ} (l : Fin n → Fin 1 ⊕ Fin 3)
     Commute (k.covBarH l φ) (k.covQ i l' φ')
 ```
 
-**`StandardModel.CovAlgebraRealization.barH_comm_barQ`**, a lemma, [line 761](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/CovRealization/Basic.lean#L761).
+**`StandardModel.CovAlgebraRealization.barH_comm_barQ`**, a lemma, [line 761](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/CovRealization/Basic.lean#L761).
 
 > The cross-sector commutation rule `barH_comm_barQ` of a covariant Standard Model.
 
@@ -714,7 +714,7 @@ lemma barH_comm_barQ {n m : ℕ} (l : Fin n → Fin 1 ⊕ Fin 3)
     Commute (k.covBarH l φ) (k.covBarQ i l' φ')
 ```
 
-**`StandardModel.CovAlgebraRealization.barH_comm_L`**, a lemma, [line 768](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/CovRealization/Basic.lean#L768).
+**`StandardModel.CovAlgebraRealization.barH_comm_L`**, a lemma, [line 768](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/CovRealization/Basic.lean#L768).
 
 > The cross-sector commutation rule `barH_comm_L` of a covariant Standard Model.
 
@@ -725,7 +725,7 @@ lemma barH_comm_L {n m : ℕ} (l : Fin n → Fin 1 ⊕ Fin 3)
     Commute (k.covBarH l φ) (k.covL i l' φ')
 ```
 
-**`StandardModel.CovAlgebraRealization.barH_comm_barL`**, a lemma, [line 775](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/CovRealization/Basic.lean#L775).
+**`StandardModel.CovAlgebraRealization.barH_comm_barL`**, a lemma, [line 775](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/CovRealization/Basic.lean#L775).
 
 > The cross-sector commutation rule `barH_comm_barL` of a covariant Standard Model.
 
@@ -736,7 +736,7 @@ lemma barH_comm_barL {n m : ℕ} (l : Fin n → Fin 1 ⊕ Fin 3)
     Commute (k.covBarH l φ) (k.covBarL i l' φ')
 ```
 
-**`StandardModel.CovAlgebraRealization.barH_comm_e`**, a lemma, [line 782](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/CovRealization/Basic.lean#L782).
+**`StandardModel.CovAlgebraRealization.barH_comm_e`**, a lemma, [line 782](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/CovRealization/Basic.lean#L782).
 
 > The cross-sector commutation rule `barH_comm_e` of a covariant Standard Model.
 
@@ -747,7 +747,7 @@ lemma barH_comm_e {n m : ℕ} (l : Fin n → Fin 1 ⊕ Fin 3)
     Commute (k.covBarH l φ) (k.covE i l' φ')
 ```
 
-**`StandardModel.CovAlgebraRealization.barH_comm_bare`**, a lemma, [line 789](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/CovRealization/Basic.lean#L789).
+**`StandardModel.CovAlgebraRealization.barH_comm_bare`**, a lemma, [line 789](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/CovRealization/Basic.lean#L789).
 
 > The cross-sector commutation rule `barH_comm_bare` of a covariant Standard Model.
 
@@ -760,7 +760,7 @@ lemma barH_comm_bare {n m : ℕ} (l : Fin n → Fin 1 ⊕ Fin 3)
 
 ### D.2. The field algebra
 
-**`StandardModel.CovAlgebraRealization.fieldAlgebra`**, a def, [line 804](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/CovRealization/Basic.lean#L804).
+**`StandardModel.CovAlgebraRealization.fieldAlgebra`**, a def, [line 804](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/CovRealization/Basic.lean#L804).
 
 > The algebra generated by all the covariant fields of a covariant Standard Model: the
 > covariant-derivative towers of the field strength, of the Higgs and its conjugate, and of
@@ -770,7 +770,7 @@ lemma barH_comm_bare {n m : ℕ} (l : Fin n → Fin 1 ⊕ Fin 3)
 def fieldAlgebra : Subalgebra ℂ B
 ```
 
-**`StandardModel.CovAlgebraRealization.F_commute_mem_fieldAlgebra`**, a lemma, [line 816](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/CovRealization/Basic.lean#L816).
+**`StandardModel.CovAlgebraRealization.F_commute_mem_fieldAlgebra`**, a lemma, [line 816](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/CovRealization/Basic.lean#L816).
 
 ```lean
 lemma F_commute_mem_fieldAlgebra {n : ℕ} {l : Fin n → Fin 1 ⊕ Fin 3} {μ ν : Fin 1 ⊕ Fin 3}
@@ -778,7 +778,7 @@ lemma F_commute_mem_fieldAlgebra {n : ℕ} {l : Fin n → Fin 1 ⊕ Fin 3} {μ �
     k.covF l μ ν φ * x = x * k.covF l μ ν φ
 ```
 
-**`StandardModel.CovAlgebraRealization.H_commute_mem_fieldAlgebra`**, a lemma, [line 840](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/CovRealization/Basic.lean#L840).
+**`StandardModel.CovAlgebraRealization.H_commute_mem_fieldAlgebra`**, a lemma, [line 840](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/CovRealization/Basic.lean#L840).
 
 ```lean
 lemma H_commute_mem_fieldAlgebra {n : ℕ} {l : Fin n → Fin 1 ⊕ Fin 3}
@@ -786,7 +786,7 @@ lemma H_commute_mem_fieldAlgebra {n : ℕ} {l : Fin n → Fin 1 ⊕ Fin 3}
     k.covH l φ * x = x * k.covH l φ
 ```
 
-**`StandardModel.CovAlgebraRealization.barH_commute_mem_fieldAlgebra`**, a lemma, [line 864](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/CovRealization/Basic.lean#L864).
+**`StandardModel.CovAlgebraRealization.barH_commute_mem_fieldAlgebra`**, a lemma, [line 864](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/CovRealization/Basic.lean#L864).
 
 ```lean
 lemma barH_commute_mem_fieldAlgebra {n : ℕ} {l : Fin n → Fin 1 ⊕ Fin 3}
@@ -804,7 +804,7 @@ lemma barH_commute_mem_fieldAlgebra {n : ℕ} {l : Fin n → Fin 1 ⊕ Fin 3}
 > that is the content of this section: the covariant towers of a Standard Model are the jet
 > algebra's own covariant towers pushed along the defining map.
 
-**`StandardModel.GaugeAlgebraRealization.mapAdj`**, an abbrev, [line 912](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/CovRealization/Basic.lean#L912).
+**`StandardModel.GaugeAlgebraRealization.mapAdj`**, an abbrev, [line 912](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/CovRealization/Basic.lean#L912).
 
 > Composing an adjoint-indexed family with an algebra map.
 
@@ -813,7 +813,7 @@ noncomputable abbrev mapAdj (Φ : B →ₐ[ℂ] B')
     (f : Module.Dual ℝ GaugeAlgebra →ₗ[ℝ] B) : Module.Dual ℝ GaugeAlgebra →ₗ[ℝ] B'
 ```
 
-**`StandardModel.GaugeAlgebraRealization.map_real_smul`**, a lemma, [line 917](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/CovRealization/Basic.lean#L917).
+**`StandardModel.GaugeAlgebraRealization.map_real_smul`**, a lemma, [line 917](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/CovRealization/Basic.lean#L917).
 
 > An algebra map over `ℂ` is real-linear.
 
@@ -821,7 +821,7 @@ noncomputable abbrev mapAdj (Φ : B →ₐ[ℂ] B')
 lemma map_real_smul (Φ : B →ₐ[ℂ] B') (r : ℝ) (b : B) : Φ (r • b) = r • Φ b
 ```
 
-**`StandardModel.GaugeAlgebraRealization.actionFam_map`**, a lemma, [line 922](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/CovRealization/Basic.lean#L922).
+**`StandardModel.GaugeAlgebraRealization.actionFam_map`**, a lemma, [line 922](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/CovRealization/Basic.lean#L922).
 
 > The action pairing commutes with an algebra map: it is a finite double sum of scalar
 > multiples of products of components.
@@ -833,7 +833,7 @@ lemma actionFam_map (Φ : B →ₐ[ℂ] B') (act : GaugeAlgebra →ₗ[ℝ] V �
     Φ (actionFam act f g φ) = actionFam act (mapAdj Φ f) (Φ.toLinearMap ∘ₗ g) φ
 ```
 
-**`StandardModel.GaugeAlgebraRealization.bracketFam_map`**, a lemma, [line 936](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/CovRealization/Basic.lean#L936).
+**`StandardModel.GaugeAlgebraRealization.bracketFam_map`**, a lemma, [line 936](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/CovRealization/Basic.lean#L936).
 
 > The bracket of two adjoint families commutes with an algebra map.
 
@@ -843,7 +843,7 @@ lemma bracketFam_map (Φ : B →ₐ[ℂ] B') (f g : Module.Dual ℝ GaugeAlgebra
     Φ (bracketFam f g φ) = bracketFam (mapAdj Φ f) (mapAdj Φ g) φ
 ```
 
-**`StandardModel.GaugeAlgebraRealization.actionFam_map'`**, a lemma, [line 953](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/CovRealization/Basic.lean#L953).
+**`StandardModel.GaugeAlgebraRealization.actionFam_map'`**, a lemma, [line 953](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/CovRealization/Basic.lean#L953).
 
 > The action pairing of two families related by an algebra map is the pairing of the images.
 
@@ -856,7 +856,7 @@ lemma actionFam_map' (Φ : B →ₐ[ℂ] B')
     Φ (actionFam act f g φ) = actionFam act f' g' φ
 ```
 
-**`StandardModel.GaugeAlgebraRealization.bracketFam_map'`**, a lemma, [line 964](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/CovRealization/Basic.lean#L964).
+**`StandardModel.GaugeAlgebraRealization.bracketFam_map'`**, a lemma, [line 964](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/CovRealization/Basic.lean#L964).
 
 > The bracket of two adjoint families related by an algebra map is the bracket of the
 > images.
@@ -870,7 +870,7 @@ lemma bracketFam_map' (Φ : B →ₐ[ℂ] B')
     Φ (bracketFam f g φ) = bracketFam f' g' φ
 ```
 
-**`StandardModel.GaugeAlgebraRealization.actionFamConv_map'`**, a lemma, [line 974](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/CovRealization/Basic.lean#L974).
+**`StandardModel.GaugeAlgebraRealization.actionFamConv_map'`**, a lemma, [line 974](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/CovRealization/Basic.lean#L974).
 
 > The derived action family commutes with an algebra map.
 
@@ -883,7 +883,7 @@ lemma actionFamConv_map' (Φ : B →ₐ[ℂ] B') (hA : ∀ p ρ ψ, Φ (A p ρ �
     Φ (actionFamConv A act ρ F s φ) = actionFamConv A' act ρ F' s φ
 ```
 
-**`StandardModel.GaugeAlgebraRealization.bracketFamConv_map'`**, a lemma, [line 986](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/CovRealization/Basic.lean#L986).
+**`StandardModel.GaugeAlgebraRealization.bracketFamConv_map'`**, a lemma, [line 986](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/CovRealization/Basic.lean#L986).
 
 > The derived bracket family commutes with an algebra map.
 
@@ -896,7 +896,7 @@ lemma bracketFamConv_map' (Φ : B →ₐ[ℂ] B') (hA : ∀ p ρ ψ, Φ (A p ρ 
     Φ (bracketFamConv A ρ F s φ) = bracketFamConv A' ρ F' s φ
 ```
 
-**`StandardModel.GaugeAlgebraRealization.commutatorFam_map'`**, a lemma, [line 999](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/CovRealization/Basic.lean#L999).
+**`StandardModel.GaugeAlgebraRealization.commutatorFam_map'`**, a lemma, [line 999](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/CovRealization/Basic.lean#L999).
 
 > The derived commutator family commutes with an algebra map.
 
@@ -906,7 +906,7 @@ lemma commutatorFam_map' (Φ : B →ₐ[ℂ] B') (hA : ∀ p ρ ψ, Φ (A p ρ �
     Φ (commutatorFam A μ ν s φ) = commutatorFam A' μ ν s φ
 ```
 
-**`StandardModel.GaugeAlgebraRealization.fieldStrength_map'`**, a lemma, [line 1009](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/CovRealization/Basic.lean#L1009).
+**`StandardModel.GaugeAlgebraRealization.fieldStrength_map'`**, a lemma, [line 1009](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/CovRealization/Basic.lean#L1009).
 
 > The field strength commutes with an algebra map.
 
@@ -916,7 +916,7 @@ lemma fieldStrength_map' (Φ : B →ₐ[ℂ] B') (hA : ∀ p ρ ψ, Φ (A p ρ �
     Φ (fieldStrength A μ ν s φ) = fieldStrength A' μ ν s φ
 ```
 
-**`StandardModel.GaugeAlgebraRealization.covDerivAction_map'`**, a lemma, [line 1016](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/CovRealization/Basic.lean#L1016).
+**`StandardModel.GaugeAlgebraRealization.covDerivAction_map'`**, a lemma, [line 1016](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/CovRealization/Basic.lean#L1016).
 
 > The covariant derivative of a matter family commutes with an algebra map.
 
@@ -929,7 +929,7 @@ lemma covDerivAction_map' (Φ : B →ₐ[ℂ] B') (hA : ∀ p ρ ψ, Φ (A p ρ 
     Φ (covDerivAction A act F ρ s φ) = covDerivAction A' act F' ρ s φ
 ```
 
-**`StandardModel.GaugeAlgebraRealization.covDerivAdjoint_map'`**, a lemma, [line 1025](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/CovRealization/Basic.lean#L1025).
+**`StandardModel.GaugeAlgebraRealization.covDerivAdjoint_map'`**, a lemma, [line 1025](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/CovRealization/Basic.lean#L1025).
 
 > The covariant derivative of an adjoint family commutes with an algebra map.
 
@@ -942,7 +942,7 @@ lemma covDerivAdjoint_map' (Φ : B →ₐ[ℂ] B') (hA : ∀ p ρ ψ, Φ (A p ρ
     Φ (covDerivAdjoint A F ρ s φ) = covDerivAdjoint A' F' ρ s φ
 ```
 
-**`StandardModel.GaugeAlgebraRealization.covDerivIter_map'`**, a lemma, [line 1034](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/CovRealization/Basic.lean#L1034).
+**`StandardModel.GaugeAlgebraRealization.covDerivIter_map'`**, a lemma, [line 1034](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/CovRealization/Basic.lean#L1034).
 
 > The iterated covariant derivative of a matter family commutes with an algebra map.
 
@@ -956,7 +956,7 @@ lemma covDerivIter_map' (Φ : B →ₐ[ℂ] B') (hA : ∀ p ρ ψ, Φ (A p ρ ψ
       Φ (covDerivIter A act F n l s φ) = covDerivIter A' act F' n l s φ
 ```
 
-**`StandardModel.GaugeAlgebraRealization.iteratedCovDerivAdjoint_map'`**, a lemma, [line 1047](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/CovRealization/Basic.lean#L1047).
+**`StandardModel.GaugeAlgebraRealization.iteratedCovDerivAdjoint_map'`**, a lemma, [line 1047](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/CovRealization/Basic.lean#L1047).
 
 > The iterated covariant derivative of an adjoint family commutes with an algebra map.
 
@@ -979,7 +979,7 @@ lemma iteratedCovDerivAdjoint_map' (Φ : B →ₐ[ℂ] B') (hA : ∀ p ρ ψ, Φ
 > towers of the resulting covariant Standard Model are, on the nose, the covariant towers of
 > `AlgebraRealization.CovStandardModel`.
 
-**`StandardModel.AlgebraRealization.toCovAlgebraRealization`**, a def, [line 1084](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/CovRealization/Basic.lean#L1084).
+**`StandardModel.AlgebraRealization.toCovAlgebraRealization`**, a def, [line 1084](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/CovRealization/Basic.lean#L1084).
 
 > A Standard Model is a covariant Standard Model, for the global gauge group: the defining
 > algebra map out of the jet algebra, restricted to the covariant jet algebra.
@@ -991,7 +991,7 @@ noncomputable def toCovAlgebraRealization :
 
 ### F.1. The covariant towers agree
 
-**`StandardModel.AlgebraRealization.toAlgHom_id_A`**, a lemma, [line 1107](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/CovRealization/Basic.lean#L1107).
+**`StandardModel.AlgebraRealization.toAlgHom_id_A`**, a lemma, [line 1107](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/CovRealization/Basic.lean#L1107).
 
 > The defining map of a Standard Model carries the jet algebra's gauge-field symbols to its
 > own: both are the jet algebra's, one of them pushed forward.
@@ -1002,7 +1002,7 @@ lemma toAlgHom_id_A (p : Multiset (Fin 1 ⊕ Fin 3)) (ρ : Fin 1 ⊕ Fin 3)
     h.toAlgHom (AlgebraRealization.id.A p ρ ψ) = h.A p ρ ψ
 ```
 
-**`StandardModel.AlgebraRealization.toCovAlgebraRealization_covF`**, a lemma, [line 1114](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/CovRealization/Basic.lean#L1114).
+**`StandardModel.AlgebraRealization.toCovAlgebraRealization_covF`**, a lemma, [line 1114](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/CovRealization/Basic.lean#L1114).
 
 > The field-strength tower of the covariant Standard Model carried by a Standard Model is
 > its own field-strength tower.
@@ -1013,7 +1013,7 @@ lemma toCovAlgebraRealization_covF {n : ℕ} (l : Fin n → (Fin 1 ⊕ Fin 3))
     h.toCovAlgebraRealization.covF l μ ν = h.covF l μ ν
 ```
 
-**`StandardModel.AlgebraRealization.toCovAlgebraRealization_covH`**, a lemma, [line 1130](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/CovRealization/Basic.lean#L1130).
+**`StandardModel.AlgebraRealization.toCovAlgebraRealization_covH`**, a lemma, [line 1130](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/CovRealization/Basic.lean#L1130).
 
 > The higgs tower of the covariant Standard Model carried by a Standard Model is its own.
 
@@ -1022,7 +1022,7 @@ lemma toCovAlgebraRealization_covH {n : ℕ} (l : Fin n → (Fin 1 ⊕ Fin 3)) :
     h.toCovAlgebraRealization.covH l = h.covDerivH l
 ```
 
-**`StandardModel.AlgebraRealization.toCovAlgebraRealization_covBarH`**, a lemma, [line 1142](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/CovRealization/Basic.lean#L1142).
+**`StandardModel.AlgebraRealization.toCovAlgebraRealization_covBarH`**, a lemma, [line 1142](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/CovRealization/Basic.lean#L1142).
 
 > The conjugate higgs tower of the covariant Standard Model carried by a Standard Model is
 > its own.
@@ -1032,7 +1032,7 @@ lemma toCovAlgebraRealization_covBarH {n : ℕ} (l : Fin n → (Fin 1 ⊕ Fin 3)
     h.toCovAlgebraRealization.covBarH l = h.covDerivBarH l
 ```
 
-**`StandardModel.AlgebraRealization.toCovAlgebraRealization_covD`**, a lemma, [line 1154](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/CovRealization/Basic.lean#L1154).
+**`StandardModel.AlgebraRealization.toCovAlgebraRealization_covD`**, a lemma, [line 1154](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/CovRealization/Basic.lean#L1154).
 
 > The down-type quark tower of the covariant Standard Model carried by a Standard Model is
 > its own.
@@ -1042,7 +1042,7 @@ lemma toCovAlgebraRealization_covD (i : Fin 3) {n : ℕ} (l : Fin n → (Fin 1 �
     h.toCovAlgebraRealization.covD i l = h.covDerivD i l
 ```
 
-**`StandardModel.AlgebraRealization.toCovAlgebraRealization_covBarD`**, a lemma, [line 1166](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/CovRealization/Basic.lean#L1166).
+**`StandardModel.AlgebraRealization.toCovAlgebraRealization_covBarD`**, a lemma, [line 1166](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/CovRealization/Basic.lean#L1166).
 
 > The conjugate down-type quark tower of the covariant Standard Model carried by a Standard
 > Model is its own.
@@ -1052,7 +1052,7 @@ lemma toCovAlgebraRealization_covBarD (i : Fin 3) {n : ℕ} (l : Fin n → (Fin 
     h.toCovAlgebraRealization.covBarD i l = h.covDerivBarD i l
 ```
 
-**`StandardModel.AlgebraRealization.toCovAlgebraRealization_covU`**, a lemma, [line 1178](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/CovRealization/Basic.lean#L1178).
+**`StandardModel.AlgebraRealization.toCovAlgebraRealization_covU`**, a lemma, [line 1178](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/CovRealization/Basic.lean#L1178).
 
 > The up-type quark tower of the covariant Standard Model carried by a Standard Model is its
 > own.
@@ -1062,7 +1062,7 @@ lemma toCovAlgebraRealization_covU (i : Fin 3) {n : ℕ} (l : Fin n → (Fin 1 �
     h.toCovAlgebraRealization.covU i l = h.covDerivU i l
 ```
 
-**`StandardModel.AlgebraRealization.toCovAlgebraRealization_covBarU`**, a lemma, [line 1190](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/CovRealization/Basic.lean#L1190).
+**`StandardModel.AlgebraRealization.toCovAlgebraRealization_covBarU`**, a lemma, [line 1190](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/CovRealization/Basic.lean#L1190).
 
 > The conjugate up-type quark tower of the covariant Standard Model carried by a Standard
 > Model is its own.
@@ -1072,7 +1072,7 @@ lemma toCovAlgebraRealization_covBarU (i : Fin 3) {n : ℕ} (l : Fin n → (Fin 
     h.toCovAlgebraRealization.covBarU i l = h.covDerivBarU i l
 ```
 
-**`StandardModel.AlgebraRealization.toCovAlgebraRealization_covQ`**, a lemma, [line 1202](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/CovRealization/Basic.lean#L1202).
+**`StandardModel.AlgebraRealization.toCovAlgebraRealization_covQ`**, a lemma, [line 1202](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/CovRealization/Basic.lean#L1202).
 
 > The quark doublet tower of the covariant Standard Model carried by a Standard Model is its
 > own.
@@ -1082,7 +1082,7 @@ lemma toCovAlgebraRealization_covQ (i : Fin 3) {n : ℕ} (l : Fin n → (Fin 1 �
     h.toCovAlgebraRealization.covQ i l = h.covDerivQ i l
 ```
 
-**`StandardModel.AlgebraRealization.toCovAlgebraRealization_covBarQ`**, a lemma, [line 1214](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/CovRealization/Basic.lean#L1214).
+**`StandardModel.AlgebraRealization.toCovAlgebraRealization_covBarQ`**, a lemma, [line 1214](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/CovRealization/Basic.lean#L1214).
 
 > The conjugate quark doublet tower of the covariant Standard Model carried by a Standard
 > Model is its own.
@@ -1092,7 +1092,7 @@ lemma toCovAlgebraRealization_covBarQ (i : Fin 3) {n : ℕ} (l : Fin n → (Fin 
     h.toCovAlgebraRealization.covBarQ i l = h.covDerivBarQ i l
 ```
 
-**`StandardModel.AlgebraRealization.toCovAlgebraRealization_covL`**, a lemma, [line 1226](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/CovRealization/Basic.lean#L1226).
+**`StandardModel.AlgebraRealization.toCovAlgebraRealization_covL`**, a lemma, [line 1226](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/CovRealization/Basic.lean#L1226).
 
 > The lepton doublet tower of the covariant Standard Model carried by a Standard Model is
 > its own.
@@ -1102,7 +1102,7 @@ lemma toCovAlgebraRealization_covL (i : Fin 3) {n : ℕ} (l : Fin n → (Fin 1 �
     h.toCovAlgebraRealization.covL i l = h.covDerivL i l
 ```
 
-**`StandardModel.AlgebraRealization.toCovAlgebraRealization_covBarL`**, a lemma, [line 1238](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/CovRealization/Basic.lean#L1238).
+**`StandardModel.AlgebraRealization.toCovAlgebraRealization_covBarL`**, a lemma, [line 1238](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/CovRealization/Basic.lean#L1238).
 
 > The conjugate lepton doublet tower of the covariant Standard Model carried by a Standard
 > Model is its own.
@@ -1112,7 +1112,7 @@ lemma toCovAlgebraRealization_covBarL (i : Fin 3) {n : ℕ} (l : Fin n → (Fin 
     h.toCovAlgebraRealization.covBarL i l = h.covDerivBarL i l
 ```
 
-**`StandardModel.AlgebraRealization.toCovAlgebraRealization_covE`**, a lemma, [line 1250](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/CovRealization/Basic.lean#L1250).
+**`StandardModel.AlgebraRealization.toCovAlgebraRealization_covE`**, a lemma, [line 1250](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/CovRealization/Basic.lean#L1250).
 
 > The charged-lepton singlet tower of the covariant Standard Model carried by a Standard
 > Model is its own.
@@ -1122,7 +1122,7 @@ lemma toCovAlgebraRealization_covE (i : Fin 3) {n : ℕ} (l : Fin n → (Fin 1 �
     h.toCovAlgebraRealization.covE i l = h.covDerivE i l
 ```
 
-**`StandardModel.AlgebraRealization.toCovAlgebraRealization_covBarE`**, a lemma, [line 1262](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/CovRealization/Basic.lean#L1262).
+**`StandardModel.AlgebraRealization.toCovAlgebraRealization_covBarE`**, a lemma, [line 1262](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/CovRealization/Basic.lean#L1262).
 
 > The conjugate charged-lepton singlet tower of the covariant Standard Model carried by a
 > Standard Model is its own.
@@ -1144,4 +1144,4 @@ lemma toCovAlgebraRealization_covBarE (i : Fin 3) {n : ℕ} (l : Fin n → (Fin 
 
 ## Sources
 
-- [PhyslibAlpha/Particles/StandardModel/CovRealization/Basic.lean at 2a1dfe43](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/CovRealization/Basic.lean)
+- [PhyslibAlpha/Particles/StandardModel/CovRealization/Basic.lean at 8c87bdfb](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/CovRealization/Basic.lean)

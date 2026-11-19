@@ -8,14 +8,14 @@ proof: formalized
 
 # Physlib.Relativity.Bispinors.Pauli.Basic
 
-The module `Physlib.Relativity.Bispinors.Pauli.Basic`, [Physlib/Relativity/Bispinors/Pauli/Basic.lean](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/Relativity/Bispinors/Pauli/Basic.lean): 7 declarations, 7 with a docstring.
+The module `Physlib.Relativity.Bispinors.Pauli.Basic`, [Physlib/Relativity/Bispinors/Pauli/Basic.lean](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Relativity/Bispinors/Pauli/Basic.lean): 7 declarations, 7 with a docstring.
 
 ## Pauli matrices as Lorentz tensors
 
 > The results in this file are primarily used to show that
 > the pauli matrices in invariant under the `SL(2,ℂ)` action.
 
-**`Lorentz.ComplexVector.pauliVal`**, a def, [line 37](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/Relativity/Bispinors/Pauli/Basic.lean#L37).
+**`Lorentz.ComplexVector.pauliVal`**, a def, [line 37](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Relativity/Bispinors/Pauli/Basic.lean#L37).
 
 > The tensor `σ^μ^a^{dot a}` based on the Pauli-matrices as an element of
 > `ComplexVector ⊗ LeftHandedWeyl ⊗ RightHandedWeyl`.
@@ -24,7 +24,7 @@ The module `Physlib.Relativity.Bispinors.Pauli.Basic`, [Physlib/Relativity/Bispi
 def pauliVal : ComplexVector ⊗[ℂ] (LeftHandedWeyl ⊗[ℂ] RightHandedWeyl)
 ```
 
-**`Lorentz.ComplexVector.pauliVal_expand_basis`**, a lemma, [line 41](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/Relativity/Bispinors/Pauli/Basic.lean#L41).
+**`Lorentz.ComplexVector.pauliVal_expand_basis`**, a lemma, [line 41](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Relativity/Bispinors/Pauli/Basic.lean#L41).
 
 > The expansion of `ComplexVector.pauliVal` into `ComplexVector.basis` basis vectors.
 
@@ -36,7 +36,7 @@ lemma pauliVal_expand_basis : ComplexVector.pauliVal =
     + ComplexVector.basis (Sum.inr 2) ⊗ₜ leftRightToMatrix.symm (pauliBasis (Sum.inr 2))
 ```
 
-**`Lorentz.ComplexVector.pauliVal_repr`**, a lemma, [line 50](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/Relativity/Bispinors/Pauli/Basic.lean#L50).
+**`Lorentz.ComplexVector.pauliVal_repr`**, a lemma, [line 50](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Relativity/Bispinors/Pauli/Basic.lean#L50).
 
 > The components of `pauliVal` in the basis `e_μ ⊗ e_a ⊗ e_ḃ` are the entries of the
 > Pauli matrices.
@@ -48,7 +48,7 @@ lemma pauliVal_repr (μ : Fin 1 ⊕ Fin 3) (a b : Fin 2) :
       pauliMatrix μ a b
 ```
 
-**`Lorentz.ComplexVector.pauliVal_expand_tmul`**, a lemma, [line 63](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/Relativity/Bispinors/Pauli/Basic.lean#L63).
+**`Lorentz.ComplexVector.pauliVal_expand_tmul`**, a lemma, [line 63](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Relativity/Bispinors/Pauli/Basic.lean#L63).
 
 > The expansion of `ComplexVector.pauliVal` into the basis of tensor product vectors.
 
@@ -64,7 +64,7 @@ lemma pauliVal_expand_tmul : ComplexVector.pauliVal =
     - ComplexVector.basis (Sum.inr 2) ⊗ₜ (LeftHandedWeyl.basis 1 ⊗ₜ RightHandedWeyl.basis 1)
 ```
 
-**`Lorentz.ComplexVector.pauliVal_invariant`**, a lemma, [line 78](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/Relativity/Bispinors/Pauli/Basic.lean#L78).
+**`Lorentz.ComplexVector.pauliVal_invariant`**, a lemma, [line 78](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Relativity/Bispinors/Pauli/Basic.lean#L78).
 
 > The Pauli tensor is invariant under the `SL(2, ℂ)` action.
 
@@ -74,7 +74,7 @@ lemma pauliVal_invariant (Λ : SL(2,ℂ)) :
       (TensorProduct.map (LeftHandedWeyl.rep Λ) (RightHandedWeyl.rep Λ)) pauliVal = pauliVal
 ```
 
-**`Lorentz.ComplexVector.pauli`**, a def, [line 99](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/Relativity/Bispinors/Pauli/Basic.lean#L99).
+**`Lorentz.ComplexVector.pauli`**, a def, [line 99](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Relativity/Bispinors/Pauli/Basic.lean#L99).
 
 > The tensor `σ^μ^a^{dot a}` based on the Pauli-matrices as a morphism,
 > `𝟙_ (Rep ℂ SL(2,ℂ)) ⟶ ComplexVector ⊗ LeftHandedWeyl ⊗ RightHandedWeyl` manifesting
@@ -85,7 +85,7 @@ def pauli :(Representation.trivial ℂ SL(2,ℂ) ℂ).IntertwiningMap
     (ComplexVector.SL2CRep.tprod (LeftHandedWeyl.rep.tprod RightHandedWeyl.rep))
 ```
 
-**`Lorentz.ComplexVector.pauli_apply_one`**, a lemma, [line 117](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/Relativity/Bispinors/Pauli/Basic.lean#L117).
+**`Lorentz.ComplexVector.pauli_apply_one`**, a lemma, [line 117](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Relativity/Bispinors/Pauli/Basic.lean#L117).
 
 > The map `𝟙_ (Rep ℂ SL(2,ℂ)) ⟶ ComplexVector ⊗ LeftHandedWeyl ⊗ RightHandedWeyl`
 > corresponding to Pauli matrices, when evaluated on `1` corresponds to the tensor
@@ -103,4 +103,4 @@ lemma pauli_apply_one :
 
 ## Sources
 
-- [Physlib/Relativity/Bispinors/Pauli/Basic.lean at 2a1dfe43](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/Relativity/Bispinors/Pauli/Basic.lean)
+- [Physlib/Relativity/Bispinors/Pauli/Basic.lean at 8c87bdfb](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Relativity/Bispinors/Pauli/Basic.lean)

@@ -8,7 +8,7 @@ proof: formalized
 
 # Positive-definite functions on an involutive additive monoid
 
-The module `PhyslibAlpha.Mathematics.TauCeti.Analysis.PositiveDefinite.Basic`, [PhyslibAlpha/Mathematics/TauCeti/Analysis/PositiveDefinite/Basic.lean](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Mathematics/TauCeti/Analysis/PositiveDefinite/Basic.lean): 25 declarations, 25 with a docstring.
+The module `PhyslibAlpha.Mathematics.TauCeti.Analysis.PositiveDefinite.Basic`, [PhyslibAlpha/Mathematics/TauCeti/Analysis/PositiveDefinite/Basic.lean](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Mathematics/TauCeti/Analysis/PositiveDefinite/Basic.lean): 25 declarations, 25 with a docstring.
 
 > A complex-valued function `F` on an additive monoid `M` equipped with an involution `star` (an
 > `AddMonoid` with a `StarAddMonoid` structure) is **positive definite** when, for every finite family
@@ -73,7 +73,7 @@ The module `PhyslibAlpha.Mathematics.TauCeti.Analysis.PositiveDefinite.Basic`, [
 
 ## A. Development
 
-**`TauCeti.IsPositiveDefinite`**, a def, [line 94](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Mathematics/TauCeti/Analysis/PositiveDefinite/Basic.lean#L94).
+**`TauCeti.IsPositiveDefinite`**, a def, [line 94](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Mathematics/TauCeti/Analysis/PositiveDefinite/Basic.lean#L94).
 
 > A function `F : M → ℂ` on an involutive additive monoid is **positive definite** when, for
 > every finite family of scalars `c : Fin n → ℂ` and points `v : Fin n → M`, the Hermitian form
@@ -84,7 +84,7 @@ The module `PhyslibAlpha.Mathematics.TauCeti.Analysis.PositiveDefinite.Basic`, [
 def IsPositiveDefinite (F : M → ℂ) : Prop
 ```
 
-**`TauCeti.IsPositiveDefinite.sum_nonneg`**, a lemma, [line 103](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Mathematics/TauCeti/Analysis/PositiveDefinite/Basic.lean#L103).
+**`TauCeti.IsPositiveDefinite.sum_nonneg`**, a lemma, [line 103](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Mathematics/TauCeti/Analysis/PositiveDefinite/Basic.lean#L103).
 
 > Positive-definiteness holds for an arbitrary finite index type, not just `Fin n`: for every
 > finite family of scalars `c : ι → ℂ` and points `v : ι → M`, the Hermitian form
@@ -95,7 +95,7 @@ lemma sum_nonneg (hF : IsPositiveDefinite F) {ι : Type*} [Fintype ι] (c : ι �
     0 ≤ ∑ i, ∑ j, c i * conj (c j) * F (v i + star (v j))
 ```
 
-**`TauCeti.IsPositiveDefinite.quadForm_two_nonneg`**, a lemma, [line 114](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Mathematics/TauCeti/Analysis/PositiveDefinite/Basic.lean#L114).
+**`TauCeti.IsPositiveDefinite.quadForm_two_nonneg`**, a lemma, [line 114](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Mathematics/TauCeti/Analysis/PositiveDefinite/Basic.lean#L114).
 
 > The `2 × 2` Hermitian sub-form of a positive-definite function at the points `a, b` with
 > coefficients `c₀, c₁` is nonnegative.
@@ -106,7 +106,7 @@ lemma quadForm_two_nonneg (hF : IsPositiveDefinite F) (a b : M) (c₀ c₁ : ℂ
       + c₁ * conj c₀ * F (b + star a) + c₁ * conj c₁ * F (b + star b)
 ```
 
-**`TauCeti.IsPositiveDefinite.add_star_self_nonneg`**, a lemma, [line 123](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Mathematics/TauCeti/Analysis/PositiveDefinite/Basic.lean#L123).
+**`TauCeti.IsPositiveDefinite.add_star_self_nonneg`**, a lemma, [line 123](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Mathematics/TauCeti/Analysis/PositiveDefinite/Basic.lean#L123).
 
 > A positive-definite function takes a real, nonnegative value at every "norm point"
 > `a + star a`.
@@ -115,7 +115,7 @@ lemma quadForm_two_nonneg (hF : IsPositiveDefinite F) (a b : M) (c₀ c₁ : ℂ
 lemma add_star_self_nonneg (hF : IsPositiveDefinite F) (a : M) : 0 ≤ F (a + star a)
 ```
 
-**`TauCeti.IsPositiveDefinite.add_star_self_im`**, a lemma, [line 129](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Mathematics/TauCeti/Analysis/PositiveDefinite/Basic.lean#L129).
+**`TauCeti.IsPositiveDefinite.add_star_self_im`**, a lemma, [line 129](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Mathematics/TauCeti/Analysis/PositiveDefinite/Basic.lean#L129).
 
 > The value of a positive-definite function at a "norm point" `a + star a` has zero imaginary
 > part.
@@ -124,7 +124,7 @@ lemma add_star_self_nonneg (hF : IsPositiveDefinite F) (a : M) : 0 ≤ F (a + st
 lemma add_star_self_im (hF : IsPositiveDefinite F) (a : M) : (F (a + star a)).im = 0
 ```
 
-**`TauCeti.IsPositiveDefinite.add_star_self_re_nonneg`**, a lemma, [line 134](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Mathematics/TauCeti/Analysis/PositiveDefinite/Basic.lean#L134).
+**`TauCeti.IsPositiveDefinite.add_star_self_re_nonneg`**, a lemma, [line 134](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Mathematics/TauCeti/Analysis/PositiveDefinite/Basic.lean#L134).
 
 > The value of a positive-definite function at a "norm point" `a + star a` has nonnegative real
 > part.
@@ -133,7 +133,7 @@ lemma add_star_self_im (hF : IsPositiveDefinite F) (a : M) : (F (a + star a)).im
 lemma add_star_self_re_nonneg (hF : IsPositiveDefinite F) (a : M) : 0 ≤ (F (a + star a)).re
 ```
 
-**`TauCeti.IsPositiveDefinite.map_zero_nonneg`**, a lemma, [line 138](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Mathematics/TauCeti/Analysis/PositiveDefinite/Basic.lean#L138).
+**`TauCeti.IsPositiveDefinite.map_zero_nonneg`**, a lemma, [line 138](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Mathematics/TauCeti/Analysis/PositiveDefinite/Basic.lean#L138).
 
 > The value of a positive-definite function at `0` is real and nonnegative.
 
@@ -141,7 +141,7 @@ lemma add_star_self_re_nonneg (hF : IsPositiveDefinite F) (a : M) : 0 ≤ (F (a 
 lemma map_zero_nonneg (hF : IsPositiveDefinite F) : 0 ≤ F 0
 ```
 
-**`TauCeti.IsPositiveDefinite.map_zero_im`**, a lemma, [line 143](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Mathematics/TauCeti/Analysis/PositiveDefinite/Basic.lean#L143).
+**`TauCeti.IsPositiveDefinite.map_zero_im`**, a lemma, [line 143](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Mathematics/TauCeti/Analysis/PositiveDefinite/Basic.lean#L143).
 
 > The value of a positive-definite function at `0` has zero imaginary part.
 
@@ -149,7 +149,7 @@ lemma map_zero_nonneg (hF : IsPositiveDefinite F) : 0 ≤ F 0
 lemma map_zero_im (hF : IsPositiveDefinite F) : (F 0).im = 0
 ```
 
-**`TauCeti.IsPositiveDefinite.map_zero_re_nonneg`**, a lemma, [line 147](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Mathematics/TauCeti/Analysis/PositiveDefinite/Basic.lean#L147).
+**`TauCeti.IsPositiveDefinite.map_zero_re_nonneg`**, a lemma, [line 147](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Mathematics/TauCeti/Analysis/PositiveDefinite/Basic.lean#L147).
 
 > The real part of the value of a positive-definite function at `0` is nonnegative.
 
@@ -157,7 +157,7 @@ lemma map_zero_im (hF : IsPositiveDefinite F) : (F 0).im = 0
 lemma map_zero_re_nonneg (hF : IsPositiveDefinite F) : 0 ≤ (F 0).re
 ```
 
-**`TauCeti.IsPositiveDefinite.map_zero_eq_ofReal_re`**, a lemma, [line 152](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Mathematics/TauCeti/Analysis/PositiveDefinite/Basic.lean#L152).
+**`TauCeti.IsPositiveDefinite.map_zero_eq_ofReal_re`**, a lemma, [line 152](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Mathematics/TauCeti/Analysis/PositiveDefinite/Basic.lean#L152).
 
 > The value at the origin of a positive-definite function is equal to the real number
 > `(F 0).re`, viewed as a complex number.
@@ -166,7 +166,7 @@ lemma map_zero_re_nonneg (hF : IsPositiveDefinite F) : 0 ≤ (F 0).re
 lemma map_zero_eq_ofReal_re (hF : IsPositiveDefinite F) : F 0 = ((F 0).re : ℂ)
 ```
 
-**`TauCeti.IsPositiveDefinite.map_zero_re_pos_of_ne_zero`**, a lemma, [line 159](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Mathematics/TauCeti/Analysis/PositiveDefinite/Basic.lean#L159).
+**`TauCeti.IsPositiveDefinite.map_zero_re_pos_of_ne_zero`**, a lemma, [line 159](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Mathematics/TauCeti/Analysis/PositiveDefinite/Basic.lean#L159).
 
 > If a positive-definite function is nonzero at the origin, then the real part of that value is
 > strictly positive.
@@ -176,7 +176,7 @@ lemma map_zero_re_pos_of_ne_zero (hF : IsPositiveDefinite F) (h0 : F 0 ≠ 0) :
     0 < (F 0).re
 ```
 
-**`TauCeti.IsPositiveDefinite.conj_symm`**, a lemma, [line 171](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Mathematics/TauCeti/Analysis/PositiveDefinite/Basic.lean#L171).
+**`TauCeti.IsPositiveDefinite.conj_symm`**, a lemma, [line 171](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Mathematics/TauCeti/Analysis/PositiveDefinite/Basic.lean#L171).
 
 > A positive-definite function is conjugate symmetric in the involution:
 > `conj (F (b + star a)) = F (a + star b)`.
@@ -186,7 +186,7 @@ lemma conj_symm (hF : IsPositiveDefinite F) (a b : M) :
     conj (F (b + star a)) = F (a + star b)
 ```
 
-**`TauCeti.IsPositiveDefinite.posSemidef`**, a lemma, [line 192](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Mathematics/TauCeti/Analysis/PositiveDefinite/Basic.lean#L192).
+**`TauCeti.IsPositiveDefinite.posSemidef`**, a lemma, [line 192](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Mathematics/TauCeti/Analysis/PositiveDefinite/Basic.lean#L192).
 
 > A positive-definite function `F` induces the positive-definite kernel `K(a, b) = F(a + b⋆)`.
 > This is the forward half of the function ↔ kernel correspondence.
@@ -196,7 +196,7 @@ lemma posSemidef (hF : IsPositiveDefinite F) :
     Matrix.PosSemidef (fun a b => F (a + star b))
 ```
 
-**`TauCeti.IsPositiveDefinite.of_posSemidef`**, a lemma, [line 205](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Mathematics/TauCeti/Analysis/PositiveDefinite/Basic.lean#L205).
+**`TauCeti.IsPositiveDefinite.of_posSemidef`**, a lemma, [line 205](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Mathematics/TauCeti/Analysis/PositiveDefinite/Basic.lean#L205).
 
 > If the kernel `K(a, b) = F(a + b⋆)` is positive definite, then so is the function `F`. This is
 > the reverse half of the function ↔ kernel correspondence.
@@ -206,7 +206,7 @@ lemma of_posSemidef
     (hK : Matrix.PosSemidef (fun a b => F (a + star b))) : IsPositiveDefinite F
 ```
 
-**`TauCeti.IsPositiveDefinite.normSq_le`**, a lemma, [line 217](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Mathematics/TauCeti/Analysis/PositiveDefinite/Basic.lean#L217).
+**`TauCeti.IsPositiveDefinite.normSq_le`**, a lemma, [line 217](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Mathematics/TauCeti/Analysis/PositiveDefinite/Basic.lean#L217).
 
 > The Cauchy–Schwarz inequality for a positive-definite function: the squared norm of an
 > off-diagonal value is bounded by the product of the two diagonal values.
@@ -217,7 +217,7 @@ lemma normSq_le (hF : IsPositiveDefinite F) (a b : M) :
       ≤ (F (a + star a)).re * (F (b + star b)).re
 ```
 
-**`TauCeti.IsPositiveDefinite.norm_apply_le_map_zero_re_of_add_star_eq_zero`**, a lemma, [line 224](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Mathematics/TauCeti/Analysis/PositiveDefinite/Basic.lean#L224).
+**`TauCeti.IsPositiveDefinite.norm_apply_le_map_zero_re_of_add_star_eq_zero`**, a lemma, [line 224](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Mathematics/TauCeti/Analysis/PositiveDefinite/Basic.lean#L224).
 
 > If `a + star a = 0`, then a positive-definite function is bounded at `a` by its value at
 > zero.
@@ -227,7 +227,7 @@ lemma norm_apply_le_map_zero_re_of_add_star_eq_zero (hF : IsPositiveDefinite F)
     (a : M) (ha : a + star a = 0) : ‖F a‖ ≤ (F 0).re
 ```
 
-**`TauCeti.IsPositiveDefinite.apply_eq_zero_of_map_zero_re_eq_zero`**, a lemma, [line 237](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Mathematics/TauCeti/Analysis/PositiveDefinite/Basic.lean#L237).
+**`TauCeti.IsPositiveDefinite.apply_eq_zero_of_map_zero_re_eq_zero`**, a lemma, [line 237](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Mathematics/TauCeti/Analysis/PositiveDefinite/Basic.lean#L237).
 
 > **A positive-definite function with `(F 0).re = 0` vanishes identically.**
 >
@@ -239,7 +239,7 @@ lemma apply_eq_zero_of_map_zero_re_eq_zero (hF : IsPositiveDefinite F)
     (h0 : (F 0).re = 0) (a : M) : F a = 0
 ```
 
-**`TauCeti.IsPositiveDefinite.norm_apply_le_map_zero_re_of_star_eq_neg`**, a lemma, [line 250](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Mathematics/TauCeti/Analysis/PositiveDefinite/Basic.lean#L250).
+**`TauCeti.IsPositiveDefinite.norm_apply_le_map_zero_re_of_star_eq_neg`**, a lemma, [line 250](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Mathematics/TauCeti/Analysis/PositiveDefinite/Basic.lean#L250).
 
 > If the involution negates the point `a`, then a positive-definite function is bounded at `a`
 > by its value at zero. In particular this applies on an additive group whose involution is
@@ -250,7 +250,7 @@ lemma norm_apply_le_map_zero_re_of_star_eq_neg (hH : IsPositiveDefinite H)
     (a : N) (hstar_a : star a = -a) : ‖H a‖ ≤ (H 0).re
 ```
 
-**`TauCeti.IsPositiveDefinite.add`**, a lemma, [line 257](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Mathematics/TauCeti/Analysis/PositiveDefinite/Basic.lean#L257).
+**`TauCeti.IsPositiveDefinite.add`**, a lemma, [line 257](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Mathematics/TauCeti/Analysis/PositiveDefinite/Basic.lean#L257).
 
 > Positive-definite functions are closed under addition.
 
@@ -259,7 +259,7 @@ lemma add (hF : IsPositiveDefinite F) (hG : IsPositiveDefinite G) :
     IsPositiveDefinite (fun x => F x + G x)
 ```
 
-**`TauCeti.IsPositiveDefinite.const_mul`**, a lemma, [line 263](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Mathematics/TauCeti/Analysis/PositiveDefinite/Basic.lean#L263).
+**`TauCeti.IsPositiveDefinite.const_mul`**, a lemma, [line 263](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Mathematics/TauCeti/Analysis/PositiveDefinite/Basic.lean#L263).
 
 > Positive-definite functions are closed under multiplication by a nonnegative complex scalar.
 
@@ -268,7 +268,7 @@ lemma const_mul {k : ℂ} (hk : 0 ≤ k) (hF : IsPositiveDefinite F) :
     IsPositiveDefinite (fun x => k * F x)
 ```
 
-**`TauCeti.IsPositiveDefinite.mul`**, a lemma, [line 269](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Mathematics/TauCeti/Analysis/PositiveDefinite/Basic.lean#L269).
+**`TauCeti.IsPositiveDefinite.mul`**, a lemma, [line 269](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Mathematics/TauCeti/Analysis/PositiveDefinite/Basic.lean#L269).
 
 > Positive-definite functions are closed under pointwise multiplication (Schur product).
 
@@ -277,7 +277,7 @@ lemma mul (hF : IsPositiveDefinite F) (hG : IsPositiveDefinite G) :
     IsPositiveDefinite (fun x => F x * G x)
 ```
 
-**`TauCeti.isPositiveDefinite_const`**, a lemma, [line 277](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Mathematics/TauCeti/Analysis/PositiveDefinite/Basic.lean#L277).
+**`TauCeti.isPositiveDefinite_const`**, a lemma, [line 277](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Mathematics/TauCeti/Analysis/PositiveDefinite/Basic.lean#L277).
 
 > A nonnegative real constant is a positive-definite function.
 
@@ -286,7 +286,7 @@ lemma isPositiveDefinite_const {k : ℂ} (hk : 0 ≤ k) :
     IsPositiveDefinite (fun _ : M => k)
 ```
 
-**`TauCeti.isPositiveDefinite_zero`**, a lemma, [line 283](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Mathematics/TauCeti/Analysis/PositiveDefinite/Basic.lean#L283).
+**`TauCeti.isPositiveDefinite_zero`**, a lemma, [line 283](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Mathematics/TauCeti/Analysis/PositiveDefinite/Basic.lean#L283).
 
 > The zero function is positive definite.
 
@@ -294,7 +294,7 @@ lemma isPositiveDefinite_const {k : ℂ} (hk : 0 ≤ k) :
 lemma isPositiveDefinite_zero : IsPositiveDefinite (fun _ : M => (0 : ℂ))
 ```
 
-**`TauCeti.IsPositiveDefinite.sum`**, a lemma, [line 289](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Mathematics/TauCeti/Analysis/PositiveDefinite/Basic.lean#L289).
+**`TauCeti.IsPositiveDefinite.sum`**, a lemma, [line 289](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Mathematics/TauCeti/Analysis/PositiveDefinite/Basic.lean#L289).
 
 > Positive-definite functions are closed under finite sums.
 
@@ -303,7 +303,7 @@ lemma sum {ι : Type*} {s : Finset ι} {F : ι → M → ℂ} (hF : ∀ i ∈ s,
     IsPositiveDefinite (fun x => ∑ i ∈ s, F i x)
 ```
 
-**`TauCeti.IsPositiveDefinite.prod`**, a lemma, [line 297](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Mathematics/TauCeti/Analysis/PositiveDefinite/Basic.lean#L297).
+**`TauCeti.IsPositiveDefinite.prod`**, a lemma, [line 297](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Mathematics/TauCeti/Analysis/PositiveDefinite/Basic.lean#L297).
 
 > Positive-definite functions are closed under finite products (Schur product).
 
@@ -323,4 +323,4 @@ Its declarations' statements use no declaration of another module with an articl
 
 ## Sources
 
-- [PhyslibAlpha/Mathematics/TauCeti/Analysis/PositiveDefinite/Basic.lean at 2a1dfe43](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Mathematics/TauCeti/Analysis/PositiveDefinite/Basic.lean)
+- [PhyslibAlpha/Mathematics/TauCeti/Analysis/PositiveDefinite/Basic.lean at 8c87bdfb](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Mathematics/TauCeti/Analysis/PositiveDefinite/Basic.lean)

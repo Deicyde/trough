@@ -8,7 +8,7 @@ proof: formalized
 
 # Dual tensors
 
-The module `Physlib.Relativity.Tensors.Dual`, [Physlib/Relativity/Tensors/Dual.lean](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/Relativity/Tensors/Dual.lean): 11 declarations, 7 with a docstring.
+The module `Physlib.Relativity.Tensors.Dual`, [Physlib/Relativity/Tensors/Dual.lean](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Relativity/Tensors/Dual.lean): 11 declarations, 7 with a docstring.
 
 ## i. Overview
 
@@ -43,7 +43,7 @@ The module `Physlib.Relativity.Tensors.Dual`, [Physlib/Relativity/Tensors/Dual.l
 
 ## A. Dualising a named index
 
-**`TensorSpecies.Tensor.toDualMapAtIndex`**, a def, [line 75](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/Relativity/Tensors/Dual.lean#L75).
+**`TensorSpecies.Tensor.toDualMapAtIndex`**, a def, [line 75](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Relativity/Tensors/Dual.lean#L75).
 
 > The linear map between `S.Tensor c` and `S.Tensor (Function.update c i (S.τ (c i)))`
 > formed by contracting the index `i` with the metric tensor.
@@ -55,7 +55,7 @@ noncomputable def toDualMapAtIndex : {n : ℕ} → {c : Fin n → C} → (i : Fi
 
 ## B. Contracting a metric against its dual
 
-**`TensorSpecies.Tensor.contractInnerT_dual_metricTensor_metricTensor`**, a lemma, [line 89](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/Relativity/Tensors/Dual.lean#L89).
+**`TensorSpecies.Tensor.contractInnerT_dual_metricTensor_metricTensor`**, a lemma, [line 89](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Relativity/Tensors/Dual.lean#L89).
 
 > The metric at `τ c` contracted with the metric at `c` is the unit tensor at `c`,
 > `η^{μν} η_{νρ} = δ^μ_ρ`.
@@ -67,7 +67,7 @@ lemma contractInnerT_dual_metricTensor_metricTensor {c : C} :
         (unitTensor (S := S) c)
 ```
 
-**`TensorSpecies.Tensor.contractInnerT_metricTensor_metricTensor_eq_dual_unit`**, a lemma, [line 100](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/Relativity/Tensors/Dual.lean#L100).
+**`TensorSpecies.Tensor.contractInnerT_metricTensor_metricTensor_eq_dual_unit`**, a lemma, [line 100](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Relativity/Tensors/Dual.lean#L100).
 
 > The metric at `c` contracted with the metric at `τ c` is the unit tensor at `τ c`,
 > `η_{μν} η^{νρ} = δ_μ^ρ`.
@@ -81,7 +81,7 @@ lemma contractInnerT_metricTensor_metricTensor_eq_dual_unit {c : C} :
 
 ## C. Dualising twice
 
-**`TensorSpecies.Tensor.toDualMapAtIndex_toDualMapAtIndex`**, a lemma, [line 116](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/Relativity/Tensors/Dual.lean#L116).
+**`TensorSpecies.Tensor.toDualMapAtIndex_toDualMapAtIndex`**, a lemma, [line 116](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Relativity/Tensors/Dual.lean#L116).
 
 > Dualising the index `i` twice returns the original tensor, up to the reindexing of the
 > colors.
@@ -96,7 +96,7 @@ lemma toDualMapAtIndex_toDualMapAtIndex {n : ℕ} {c : Fin n → C}
 
 ## D. The returning contraction
 
-**`TensorSpecies.Tensor.fromDualMapAtIndex`**, a def, [line 148](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/Relativity/Tensors/Dual.lean#L148).
+**`TensorSpecies.Tensor.fromDualMapAtIndex`**, a def, [line 148](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Relativity/Tensors/Dual.lean#L148).
 
 > The linear map between `S.Tensor (Function.update c i (S.τ (c i)))` and `S.Tensor c`
 > formed by contracting the index `i` with the metric tensor. It is the inverse of
@@ -107,14 +107,14 @@ noncomputable def fromDualMapAtIndex : {n : ℕ} → {c : Fin n → C} → (i : 
     S.Tensor (Function.update c i (S.τ (c i))) →ₗ[k] S.Tensor c
 ```
 
-**`TensorSpecies.Tensor.fromDualMapAtIndex_toDualMapAtIndex`**, a lemma, [line 154](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/Relativity/Tensors/Dual.lean#L154).
+**`TensorSpecies.Tensor.fromDualMapAtIndex_toDualMapAtIndex`**, a lemma, [line 154](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Relativity/Tensors/Dual.lean#L154).
 
 ```lean
 lemma fromDualMapAtIndex_toDualMapAtIndex {n : ℕ} {c : Fin n → C} (i : Fin n) (t : S.Tensor c) :
     fromDualMapAtIndex (S := S) i (toDualMapAtIndex (S := S) i t) = t
 ```
 
-**`TensorSpecies.Tensor.toDualMapAtIndex_fromDualMapAtIndex`**, a lemma, [line 164](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/Relativity/Tensors/Dual.lean#L164).
+**`TensorSpecies.Tensor.toDualMapAtIndex_fromDualMapAtIndex`**, a lemma, [line 164](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Relativity/Tensors/Dual.lean#L164).
 
 ```lean
 lemma toDualMapAtIndex_fromDualMapAtIndex {n : ℕ} {c : Fin n → C} (i : Fin n)
@@ -124,7 +124,7 @@ lemma toDualMapAtIndex_fromDualMapAtIndex {n : ℕ} {c : Fin n → C} (i : Fin n
 
 ## E. Equivariance
 
-**`TensorSpecies.Tensor.toDualMapAtIndex_equivariant`**, a lemma, [line 183](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/Relativity/Tensors/Dual.lean#L183).
+**`TensorSpecies.Tensor.toDualMapAtIndex_equivariant`**, a lemma, [line 183](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Relativity/Tensors/Dual.lean#L183).
 
 > Dualising the index `i` commutes with the action of `G`.
 
@@ -135,7 +135,7 @@ lemma toDualMapAtIndex_equivariant {n : ℕ} {c : Fin n → C} (i : Fin n) (g : 
 
 ## F. Raising and lowering as an equivalence
 
-**`TensorSpecies.Tensor.toDualAtIndex`**, a def, [line 200](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/Relativity/Tensors/Dual.lean#L200).
+**`TensorSpecies.Tensor.toDualAtIndex`**, a def, [line 200](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Relativity/Tensors/Dual.lean#L200).
 
 > The linear equivalence between `S.Tensor c` and `S.Tensor (Function.update c i (S.τ (c i)))`
 > formed by contracting the index `i` with the metric tensor.
@@ -145,14 +145,14 @@ noncomputable def toDualAtIndex : {n : ℕ} → {c : Fin n → C} → (i : Fin n
     S.Tensor c ≃ₗ[k] S.Tensor (Function.update c i (S.τ (c i)))
 ```
 
-**`TensorSpecies.Tensor.toDualAtIndex_apply`**, a lemma, [line 209](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/Relativity/Tensors/Dual.lean#L209).
+**`TensorSpecies.Tensor.toDualAtIndex_apply`**, a lemma, [line 209](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Relativity/Tensors/Dual.lean#L209).
 
 ```lean
 lemma toDualAtIndex_apply {n : ℕ} {c : Fin n → C} (i : Fin n) (t : S.Tensor c) :
     toDualAtIndex (S := S) i t = toDualMapAtIndex (S := S) i t
 ```
 
-**`TensorSpecies.Tensor.toDualAtIndex_symm_apply`**, a lemma, [line 216](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/Relativity/Tensors/Dual.lean#L216).
+**`TensorSpecies.Tensor.toDualAtIndex_symm_apply`**, a lemma, [line 216](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Relativity/Tensors/Dual.lean#L216).
 
 ```lean
 lemma toDualAtIndex_symm_apply {n : ℕ} {c : Fin n → C} (i : Fin n)
@@ -167,4 +167,4 @@ lemma toDualAtIndex_symm_apply {n : ℕ} {c : Fin n → C} (i : Fin n)
 
 ## Sources
 
-- [Physlib/Relativity/Tensors/Dual.lean at 2a1dfe43](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/Relativity/Tensors/Dual.lean)
+- [Physlib/Relativity/Tensors/Dual.lean at 8c87bdfb](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Relativity/Tensors/Dual.lean)

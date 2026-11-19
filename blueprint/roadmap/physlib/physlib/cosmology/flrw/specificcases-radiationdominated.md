@@ -8,7 +8,7 @@ proof: formalized
 
 # The radiation-dominated model
 
-The module `Physlib.Cosmology.FLRW.SpecificCases.RadiationDominated`, [Physlib/Cosmology/FLRW/SpecificCases/RadiationDominated.lean](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/Cosmology/FLRW/SpecificCases/RadiationDominated.lean): 3 declarations, 3 with a docstring.
+The module `Physlib.Cosmology.FLRW.SpecificCases.RadiationDominated`, [Physlib/Cosmology/FLRW/SpecificCases/RadiationDominated.lean](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Cosmology/FLRW/SpecificCases/RadiationDominated.lean): 3 declarations, 3 with a docstring.
 
 ## i. Overview
 
@@ -32,7 +32,7 @@ The module `Physlib.Cosmology.FLRW.SpecificCases.RadiationDominated`, [Physlib/C
 
 ## A. The radiation-dominated model
 
-**`Cosmology.FLRW.radiationDominated`**, a def, [line 52](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/Cosmology/FLRW/SpecificCases/RadiationDominated.lean#L52).
+**`Cosmology.FLRW.radiationDominated`**, a def, [line 52](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Cosmology/FLRW/SpecificCases/RadiationDominated.lean#L52).
 
 > The radiation-dominated model, the flat power-law model with `n = 1/2`.
 
@@ -40,7 +40,7 @@ The module `Physlib.Cosmology.FLRW.SpecificCases.RadiationDominated`, [Physlib/C
 noncomputable def FLRW.radiationDominated (t₀ : Time) (ht₀ : 0 < t₀.val) : FLRW
 ```
 
-**`Cosmology.FLRW.radiationDominated_a`**, a lemma, [line 56](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/Cosmology/FLRW/SpecificCases/RadiationDominated.lean#L56).
+**`Cosmology.FLRW.radiationDominated_a`**, a lemma, [line 56](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Cosmology/FLRW/SpecificCases/RadiationDominated.lean#L56).
 
 > The scale factor of the radiation-dominated model is `radiationScaleFactor t₀`.
 
@@ -49,7 +49,7 @@ lemma FLRW.radiationDominated_a {t₀ : Time} (ht₀ : 0 < t₀.val) :
     (FLRW.radiationDominated t₀ ht₀).a = radiationScaleFactor t₀
 ```
 
-**`Cosmology.FLRW.friedmannSolution_radiationDominated`**, a lemma, [line 62](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/Cosmology/FLRW/SpecificCases/RadiationDominated.lean#L62).
+**`Cosmology.FLRW.friedmannSolution_radiationDominated`**, a lemma, [line 62](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Cosmology/FLRW/SpecificCases/RadiationDominated.lean#L62).
 
 > The radiation-dominated model, filled with radiation of density `3 n² / (8 π G t²)` with
 > `n = 1/2`, that is `3 / (32 π G t²)`, and pressure `ρ c² / 3`, solves the Friedmann equations
@@ -69,4 +69,4 @@ lemma FLRW.friedmannSolution_radiationDominated {t₀ : Time} (ht₀ : 0 < t₀.
 
 ## Sources
 
-- [Physlib/Cosmology/FLRW/SpecificCases/RadiationDominated.lean at 2a1dfe43](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/Cosmology/FLRW/SpecificCases/RadiationDominated.lean)
+- [Physlib/Cosmology/FLRW/SpecificCases/RadiationDominated.lean at 8c87bdfb](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Cosmology/FLRW/SpecificCases/RadiationDominated.lean)

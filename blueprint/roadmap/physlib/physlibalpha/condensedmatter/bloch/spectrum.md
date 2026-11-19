@@ -8,7 +8,7 @@ proof: formalized
 
 # The spectrum of a translation-invariant operator is the union of the Bloch bands
 
-The module `PhyslibAlpha.CondensedMatter.Bloch.Spectrum`, [PhyslibAlpha/CondensedMatter/Bloch/Spectrum.lean](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/CondensedMatter/Bloch/Spectrum.lean): 12 declarations, 11 with a docstring.
+The module `PhyslibAlpha.CondensedMatter.Bloch.Spectrum`, [PhyslibAlpha/CondensedMatter/Bloch/Spectrum.lean](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/CondensedMatter/Bloch/Spectrum.lean): 12 declarations, 11 with a docstring.
 
 > For the space `ℓ²(G, ℂ^N)`, the spectrum of the operator of a continuous symbol is exactly the union
 > of the spectra of its values.
@@ -37,7 +37,7 @@ The module `PhyslibAlpha.CondensedMatter.Bloch.Spectrum`, [PhyslibAlpha/Condense
 
 ## A. Norms of spectral components of localized states
 
-**`CondensedMatter.Bloch.RegularRep.norm_sq_calculus_projection_localized`**, a lemma, [line 72](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/CondensedMatter/Bloch/Spectrum.lean#L72).
+**`CondensedMatter.Bloch.RegularRep.norm_sq_calculus_projection_localized`**, a lemma, [line 72](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/CondensedMatter/Bloch/Spectrum.lean#L72).
 
 > The norm of a continuous function of the translations applied to the momentum-`W` component of
 > a localized state: the `L²` norm of the function over `W`, for the Haar measure.
@@ -51,7 +51,7 @@ lemma norm_sq_calculus_projection_localized (g : C(PontryaginDual (Multiplicativ
       ‖e‖ ^ 2 * ∫ χ in W, ‖g χ‖ ^ 2 ∂(dualHaar (G := G))
 ```
 
-**`CondensedMatter.Bloch.RegularRep.toEuclideanCLM_single_apply`**, a lemma, [line 119](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/CondensedMatter/Bloch/Spectrum.lean#L119).
+**`CondensedMatter.Bloch.RegularRep.toEuclideanCLM_single_apply`**, a lemma, [line 119](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/CondensedMatter/Bloch/Spectrum.lean#L119).
 
 > The matrix unit `E_{ij}` acts on a vector as the `j`-th coordinate carried to the `i`-th.
 
@@ -61,7 +61,7 @@ lemma toEuclideanCLM_single_apply (i j : Fin N) (e : EuclideanSpace ℂ (Fin N))
       e j • EuclideanSpace.single i (1 : ℂ)
 ```
 
-**`CondensedMatter.Bloch.RegularRep.internal_single_localized`**, a lemma, [line 137](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/CondensedMatter/Bloch/Spectrum.lean#L137).
+**`CondensedMatter.Bloch.RegularRep.internal_single_localized`**, a lemma, [line 137](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/CondensedMatter/Bloch/Spectrum.lean#L137).
 
 > The internal matrix unit `E_{ij}` acts on a localized state by moving the `j`-th component
 > to the `i`-th.
@@ -72,7 +72,7 @@ lemma internal_single_localized (i j : Fin N) (e : EuclideanSpace ℂ (Fin N)) :
       e j • localized (EuclideanSpace.single i (1 : ℂ))
 ```
 
-**`CondensedMatter.Bloch.RegularRep.blochOperator`**, an abbrev, [line 144](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/CondensedMatter/Bloch/Spectrum.lean#L144).
+**`CondensedMatter.Bloch.RegularRep.blochOperator`**, an abbrev, [line 144](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/CondensedMatter/Bloch/Spectrum.lean#L144).
 
 > The translation-invariant operator `∫ f dP` of a symbol `f` on `ℓ²(G, ℂ^N)`.
 
@@ -81,7 +81,7 @@ abbrev blochOperator (f : C(PontryaginDual (Multiplicative G), Matrix (Fin N) (F
     Space G N →L[ℂ] Space G N
 ```
 
-**`CondensedMatter.Bloch.RegularRep.commute_projection_internal`**, a lemma, [line 149](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/CondensedMatter/Bloch/Spectrum.lean#L149).
+**`CondensedMatter.Bloch.RegularRep.commute_projection_internal`**, a lemma, [line 149](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/CondensedMatter/Bloch/Spectrum.lean#L149).
 
 > The internal matrix units commute with the spectral projections.
 
@@ -91,7 +91,7 @@ lemma commute_projection_internal (W : Set (PontryaginDual (Multiplicative G)))
     Commute (UnitaryRep.projection (translation G N) W) (internal (G := G) M)
 ```
 
-**`CondensedMatter.Bloch.RegularRep.blochOperator_projection_localized`**, a lemma, [line 159](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/CondensedMatter/Bloch/Spectrum.lean#L159).
+**`CondensedMatter.Bloch.RegularRep.blochOperator_projection_localized`**, a lemma, [line 159](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/CondensedMatter/Bloch/Spectrum.lean#L159).
 
 > **Action of a symbol on a spectral component of a localized state**: the operator of a symbol
 > `f` applied to the momentum-`W` component of the state localized at the origin with internal state
@@ -108,7 +108,7 @@ lemma blochOperator_projection_localized
           (localized (EuclideanSpace.single i (1 : ℂ))))
 ```
 
-**`CondensedMatter.Bloch.RegularRep.entry_combination_apply`**, a lemma, [line 193](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/CondensedMatter/Bloch/Spectrum.lean#L193).
+**`CondensedMatter.Bloch.RegularRep.entry_combination_apply`**, a lemma, [line 193](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/CondensedMatter/Bloch/Spectrum.lean#L193).
 
 > The `i`-th component of a symbol applied to a vector is the combination of its entries.
 
@@ -120,7 +120,7 @@ lemma entry_combination_apply
       (Matrix.toEuclideanCLM (n := Fin N) (𝕜 := ℂ) (f χ) e) i
 ```
 
-**`CondensedMatter.Bloch.RegularRep.sum_norm_entry_combination`**, a lemma, [line 208](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/CondensedMatter/Bloch/Spectrum.lean#L208).
+**`CondensedMatter.Bloch.RegularRep.sum_norm_entry_combination`**, a lemma, [line 208](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/CondensedMatter/Bloch/Spectrum.lean#L208).
 
 ```lean
 lemma sum_norm_entry_combination
@@ -130,7 +130,7 @@ lemma sum_norm_entry_combination
       ‖Matrix.toEuclideanCLM (n := Fin N) (𝕜 := ℂ) (f χ) e‖ ^ 2
 ```
 
-**`CondensedMatter.Bloch.RegularRep.norm_blochOperator_projection_localized_le`**, a lemma, [line 220](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/CondensedMatter/Bloch/Spectrum.lean#L220).
+**`CondensedMatter.Bloch.RegularRep.norm_blochOperator_projection_localized_le`**, a lemma, [line 220](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/CondensedMatter/Bloch/Spectrum.lean#L220).
 
 > **The symbol acts on spectral components of a localized state with the size of the symbol on
 > those momenta**: if the symbol moves the internal state `e` by at most `δ` at all crystal momenta
@@ -147,7 +147,7 @@ lemma norm_blochOperator_projection_localized_le
       N * δ ^ 2 * (dualHaar (G := G)).real W
 ```
 
-**`CondensedMatter.Bloch.RegularRep.norm_sq_projection_localized`**, a lemma, [line 269](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/CondensedMatter/Bloch/Spectrum.lean#L269).
+**`CondensedMatter.Bloch.RegularRep.norm_sq_projection_localized`**, a lemma, [line 269](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/CondensedMatter/Bloch/Spectrum.lean#L269).
 
 > The squared norm of the momentum-`W` component of a localized state.
 
@@ -160,7 +160,7 @@ lemma norm_sq_projection_localized {W : Set (PontryaginDual (Multiplicative G))}
 
 ## B. The spectrum
 
-**`CondensedMatter.Bloch.RegularRep.spectrum_blochOperator`**, a lemma, [line 290](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/CondensedMatter/Bloch/Spectrum.lean#L290).
+**`CondensedMatter.Bloch.RegularRep.spectrum_blochOperator`**, a lemma, [line 290](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/CondensedMatter/Bloch/Spectrum.lean#L290).
 
 > **The spectrum of a translation-invariant operator is the union of its Bloch bands.** For
 > every continuous symbol `b` on the Brillouin zone, the spectrum of the operator `∫ b dP` on
@@ -173,7 +173,7 @@ lemma spectrum_blochOperator
       ⋃ χ : PontryaginDual (Multiplicative G), spectrum ℂ (b χ)
 ```
 
-**`CondensedMatter.Bloch.RegularRep.spectrum_blochOperator_eq_bands`**, a lemma, [line 384](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/CondensedMatter/Bloch/Spectrum.lean#L384).
+**`CondensedMatter.Bloch.RegularRep.spectrum_blochOperator_eq_bands`**, a lemma, [line 384](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/CondensedMatter/Bloch/Spectrum.lean#L384).
 
 > **The band structure**: for a Hermitian symbol, the spectrum of the translation-invariant
 > operator on `ℓ²(G, ℂ^N)` is exactly the set of band values `ε_k(χ)`, the ordered eigenvalues of the
@@ -195,4 +195,4 @@ lemma spectrum_blochOperator_eq_bands
 
 ## Sources
 
-- [PhyslibAlpha/CondensedMatter/Bloch/Spectrum.lean at 2a1dfe43](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/CondensedMatter/Bloch/Spectrum.lean)
+- [PhyslibAlpha/CondensedMatter/Bloch/Spectrum.lean at 8c87bdfb](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/CondensedMatter/Bloch/Spectrum.lean)

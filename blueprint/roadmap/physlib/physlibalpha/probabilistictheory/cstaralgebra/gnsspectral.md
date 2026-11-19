@@ -1,14 +1,14 @@
 ---
 declaration: module
 origin: cited
-lean: ProbabilisticTheory.UnitalPositiveLinearMap.gnsStructureFactor, ProbabilisticTheory.UnitalPositiveLinearMap.integral_gnsStructureFactor, ProbabilisticTheory.UnitalPositiveLinearMap.gnsStructureFactor_univ, ProbabilisticTheory.UnitalPositiveLinearMap.gnsCyclicVector_mem_sector, ProbabilisticTheory.UnitalPositiveLinearMap.projection_one_gnsCyclicVector
+lean: PhyslibAlpha.ProbabilisticTheory.UnitalPositiveLinearMap.gnsStructureFactor, PhyslibAlpha.ProbabilisticTheory.UnitalPositiveLinearMap.integral_gnsStructureFactor, PhyslibAlpha.ProbabilisticTheory.UnitalPositiveLinearMap.gnsStructureFactor_univ, PhyslibAlpha.ProbabilisticTheory.UnitalPositiveLinearMap.gnsCyclicVector_mem_sector, PhyslibAlpha.ProbabilisticTheory.UnitalPositiveLinearMap.projection_one_gnsCyclicVector
 statement: formalized
 proof: formalized
 ---
 
 # The momentum decomposition of an invariant state
 
-The module `PhyslibAlpha.ProbabilisticTheory.CStarAlgebra.GNSSpectral`, [PhyslibAlpha/ProbabilisticTheory/CStarAlgebra/GNSSpectral.lean](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ProbabilisticTheory/CStarAlgebra/GNSSpectral.lean): 6 declarations (1 instance with no name), 5 with a docstring.
+The module `PhyslibAlpha.ProbabilisticTheory.CStarAlgebra.GNSSpectral`, [PhyslibAlpha/ProbabilisticTheory/CStarAlgebra/GNSSpectral.lean](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/CStarAlgebra/GNSSpectral.lean): 6 declarations (1 instance with no name), 5 with a docstring.
 
 > The GNS space of a translation-invariant state decomposes over the momenta, and the momentum
 > distribution of a local excitation is its structure factor.
@@ -36,7 +36,7 @@ The module `PhyslibAlpha.ProbabilisticTheory.CStarAlgebra.GNSSpectral`, [Physlib
 
 ## A. The momentum distribution of a local excitation
 
-**`ProbabilisticTheory.UnitalPositiveLinearMap.gnsStructureFactor`**, a def, [line 71](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ProbabilisticTheory/CStarAlgebra/GNSSpectral.lean#L71).
+**`PhyslibAlpha.ProbabilisticTheory.UnitalPositiveLinearMap.gnsStructureFactor`**, a def, [line 71](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/CStarAlgebra/GNSSpectral.lean#L71).
 
 > The momentum distribution of the excitation `π(a) Ω` created by the observable `a` from the
 > invariant state: the distribution of the vector `π(a) Ω` over the characters of the symmetry
@@ -46,13 +46,13 @@ The module `PhyslibAlpha.ProbabilisticTheory.CStarAlgebra.GNSSpectral`, [Physlib
 def gnsStructureFactor (a : A) : Measure (PontryaginDual (Multiplicative G))
 ```
 
-**An instance with no name**, [line 74](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ProbabilisticTheory/CStarAlgebra/GNSSpectral.lean#L74).
+**An instance with no name**, [line 74](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/CStarAlgebra/GNSSpectral.lean#L74).
 
 ```lean
 instance (a : A) : IsFiniteMeasure (gnsStructureFactor hα a)
 ```
 
-**`ProbabilisticTheory.UnitalPositiveLinearMap.integral_gnsStructureFactor`**, a lemma, [line 79](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ProbabilisticTheory/CStarAlgebra/GNSSpectral.lean#L79).
+**`PhyslibAlpha.ProbabilisticTheory.UnitalPositiveLinearMap.integral_gnsStructureFactor`**, a lemma, [line 79](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/CStarAlgebra/GNSSpectral.lean#L79).
 
 > **The Fourier transform of the momentum distribution is the correlation function**:
 > `∫ χ(g) dμ_a(χ) = ω(a⋆ α_g(a))`.
@@ -62,7 +62,7 @@ lemma integral_gnsStructureFactor (a : A) (g : Multiplicative G) :
     ∫ χ, ((χ g : Circle) : ℂ) ∂gnsStructureFactor hα a = ω (star a * α g a)
 ```
 
-**`ProbabilisticTheory.UnitalPositiveLinearMap.gnsStructureFactor_univ`**, a lemma, [line 85](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ProbabilisticTheory/CStarAlgebra/GNSSpectral.lean#L85).
+**`PhyslibAlpha.ProbabilisticTheory.UnitalPositiveLinearMap.gnsStructureFactor_univ`**, a lemma, [line 85](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/CStarAlgebra/GNSSpectral.lean#L85).
 
 > The total momentum weight of the excitation `π(a) Ω` is `ω(a⋆ a)`.
 
@@ -73,18 +73,19 @@ lemma gnsStructureFactor_univ (a : A) :
 
 ## B. The invariant vector
 
-**`ProbabilisticTheory.UnitalPositiveLinearMap.gnsCyclicVector_mem_sector`**, a lemma, [line 99](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ProbabilisticTheory/CStarAlgebra/GNSSpectral.lean#L99).
+**`PhyslibAlpha.ProbabilisticTheory.UnitalPositiveLinearMap.gnsCyclicVector_mem_sector`**, a lemma, [line 99](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/CStarAlgebra/GNSSpectral.lean#L99).
 
 > The cyclic vector of an invariant state has momentum zero: its spectral measure is carried
 > by the trivial character.
 
 ```lean
 lemma gnsCyclicVector_mem_sector :
-    ω.gnsCyclicVector ∈ ProbabilisticTheory.Representation.sector (toEnd (gnsUnitaryRep hα))
+    ω.gnsCyclicVector ∈ PhyslibAlpha.ProbabilisticTheory.Representation.sector
+      (toEnd (gnsUnitaryRep hα))
       (fun g => (((1 : PontryaginDual (Multiplicative G)) g : Circle) : ℂ))
 ```
 
-**`ProbabilisticTheory.UnitalPositiveLinearMap.projection_one_gnsCyclicVector`**, a lemma, [line 110](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ProbabilisticTheory/CStarAlgebra/GNSSpectral.lean#L110).
+**`PhyslibAlpha.ProbabilisticTheory.UnitalPositiveLinearMap.projection_one_gnsCyclicVector`**, a lemma, [line 111](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/CStarAlgebra/GNSSpectral.lean#L111).
 
 > **The vacuum has momentum zero.** For a countable symmetry group the spectral projection of
 > the trivial character fixes the cyclic vector.
@@ -102,4 +103,4 @@ lemma projection_one_gnsCyclicVector [Countable G] :
 
 ## Sources
 
-- [PhyslibAlpha/ProbabilisticTheory/CStarAlgebra/GNSSpectral.lean at 2a1dfe43](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ProbabilisticTheory/CStarAlgebra/GNSSpectral.lean)
+- [PhyslibAlpha/ProbabilisticTheory/CStarAlgebra/GNSSpectral.lean at 8c87bdfb](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/CStarAlgebra/GNSSpectral.lean)

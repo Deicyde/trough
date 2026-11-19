@@ -8,7 +8,7 @@ proof: formalized
 
 # The bosonic generators of a gauge theory
 
-The module `PhyslibAlpha.ClassicalFieldTheory.GaugeTheory.GaugeFieldData.BosonGenerators`, [PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/GaugeFieldData/BosonGenerators.lean](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/GaugeFieldData/BosonGenerators.lean): 27 declarations (2 instances with no name), 21 with a docstring.
+The module `PhyslibAlpha.ClassicalFieldTheory.GaugeTheory.GaugeFieldData.BosonGenerators`, [PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/GaugeFieldData/BosonGenerators.lean](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/GaugeFieldData/BosonGenerators.lean): 27 declarations (2 instances with no name), 21 with a docstring.
 
 ## i. Overview
 
@@ -78,7 +78,7 @@ The module `PhyslibAlpha.ClassicalFieldTheory.GaugeTheory.GaugeFieldData.BosonGe
 
 ## A. The bosonic generator space and its species assembly
 
-**`GaugeFieldData.BosonGenerators`**, a def, [line 123](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/GaugeFieldData/BosonGenerators.lean#L123).
+**`GaugeFieldData.BosonGenerators`**, a def, [line 123](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/GaugeFieldData/BosonGenerators.lean#L123).
 
 > The bosonic generator space of the datum, holding the component functions `∂_s φ_α`
 > and their conjugates of every bosonic species at once, as a direct sum over the species.
@@ -99,19 +99,19 @@ The module `PhyslibAlpha.ClassicalFieldTheory.GaugeTheory.GaugeFieldData.BosonGe
 def BosonGenerators : Type
 ```
 
-**An instance with no name**, [line 125](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/GaugeFieldData/BosonGenerators.lean#L125).
+**An instance with no name**, [line 125](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/GaugeFieldData/BosonGenerators.lean#L125).
 
 ```lean
 instance : AddCommGroup T.BosonGenerators
 ```
 
-**An instance with no name**, [line 128](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/GaugeFieldData/BosonGenerators.lean#L128).
+**An instance with no name**, [line 128](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/GaugeFieldData/BosonGenerators.lean#L128).
 
 ```lean
 instance : Module ℂ T.BosonGenerators
 ```
 
-**`GaugeFieldData.inclBoson`**, a def, [line 133](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/GaugeFieldData/BosonGenerators.lean#L133).
+**`GaugeFieldData.inclBoson`**, a def, [line 133](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/GaugeFieldData/BosonGenerators.lean#L133).
 
 > The inclusion of the component space of one bosonic species into the bosonic generator
 > space.
@@ -121,7 +121,7 @@ def inclBoson (i : T.BosonSpecies) :
     JetComponentSpace (T.boson i) →ₗ[ℂ] T.BosonGenerators
 ```
 
-**`GaugeFieldData.assembleBoson`**, a def, [line 143](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/GaugeFieldData/BosonGenerators.lean#L143).
+**`GaugeFieldData.assembleBoson`**, a def, [line 143](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/GaugeFieldData/BosonGenerators.lean#L143).
 
 > The assembly of a species-wise family of linear maps out of the bosonic generator space
 > into a common target.
@@ -131,7 +131,7 @@ def assembleBoson (f : ∀ i, JetComponentSpace (T.boson i) →ₗ[ℂ] N) :
     T.BosonGenerators →ₗ[ℂ] N
 ```
 
-**`GaugeFieldData.assembleBoson_inclBoson`**, a lemma, [line 150](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/GaugeFieldData/BosonGenerators.lean#L150).
+**`GaugeFieldData.assembleBoson_inclBoson`**, a lemma, [line 150](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/GaugeFieldData/BosonGenerators.lean#L150).
 
 ```lean
 lemma assembleBoson_inclBoson (f : ∀ i, JetComponentSpace (T.boson i) →ₗ[ℂ] N)
@@ -139,7 +139,7 @@ lemma assembleBoson_inclBoson (f : ∀ i, JetComponentSpace (T.boson i) →ₗ[�
     T.assembleBoson f (T.inclBoson i x) = f i x
 ```
 
-**`GaugeFieldData.bosonGenerators_hom_ext`**, a lemma, [line 157](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/GaugeFieldData/BosonGenerators.lean#L157).
+**`GaugeFieldData.bosonGenerators_hom_ext`**, a lemma, [line 157](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/GaugeFieldData/BosonGenerators.lean#L157).
 
 > Two linear maps out of the bosonic generator space agreeing on every species are
 > equal.
@@ -160,7 +160,7 @@ lemma bosonGenerators_hom_ext {F F' : T.BosonGenerators →ₗ[ℂ] N}
 
 ### B.1. The Lorentz action
 
-**`GaugeFieldData.repLorentzBoson`**, a def, [line 182](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/GaugeFieldData/BosonGenerators.lean#L182).
+**`GaugeFieldData.repLorentzBoson`**, a def, [line 182](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/GaugeFieldData/BosonGenerators.lean#L182).
 
 > The Lorentz action on the bosonic generator space, acting on each species through the
 > Lorentz representation of its matter field.
@@ -169,7 +169,7 @@ lemma bosonGenerators_hom_ext {F F' : T.BosonGenerators →ₗ[ℂ] N}
 noncomputable def repLorentzBoson : Representation ℂ SL(2,ℂ) T.BosonGenerators
 ```
 
-**`GaugeFieldData.repLorentzBoson_inclBoson`**, a lemma, [line 191](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/GaugeFieldData/BosonGenerators.lean#L191).
+**`GaugeFieldData.repLorentzBoson_inclBoson`**, a lemma, [line 191](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/GaugeFieldData/BosonGenerators.lean#L191).
 
 ```lean
 lemma repLorentzBoson_inclBoson (Λ : SL(2,ℂ)) (i : T.BosonSpecies)
@@ -180,7 +180,7 @@ lemma repLorentzBoson_inclBoson (Λ : SL(2,ℂ)) (i : T.BosonSpecies)
 
 ### B.2. The jet gauge action
 
-**`GaugeFieldData.repJetBoson`**, a def, [line 209](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/GaugeFieldData/BosonGenerators.lean#L209).
+**`GaugeFieldData.repJetBoson`**, a def, [line 209](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/GaugeFieldData/BosonGenerators.lean#L209).
 
 > The action of the jet gauge group on the bosonic generator space, acting on each
 > species through the fibrewise jet action of its matter field. Both the fibrewise
@@ -191,7 +191,7 @@ lemma repLorentzBoson_inclBoson (Λ : SL(2,ℂ)) (i : T.BosonSpecies)
 noncomputable def repJetBoson : Representation ℂ GJ T.BosonGenerators
 ```
 
-**`GaugeFieldData.repJetBoson_inclBoson`**, a lemma, [line 218](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/GaugeFieldData/BosonGenerators.lean#L218).
+**`GaugeFieldData.repJetBoson_inclBoson`**, a lemma, [line 218](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/GaugeFieldData/BosonGenerators.lean#L218).
 
 ```lean
 lemma repJetBoson_inclBoson (U : GJ) (i : T.BosonSpecies)
@@ -207,7 +207,7 @@ lemma repJetBoson_inclBoson (U : GJ) (i : T.BosonSpecies)
 > `3` and a scalar weight `2`. The generator space records one weight per species, and the
 > scaling acts on the summand of a species through that species' weight alone.
 
-**`GaugeFieldData.massWeightScaleBoson`**, a def, [line 240](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/GaugeFieldData/BosonGenerators.lean#L240).
+**`GaugeFieldData.massWeightScaleBoson`**, a def, [line 240](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/GaugeFieldData/BosonGenerators.lean#L240).
 
 > The mass-weight scaling on the bosonic generator space, with the weight of each species
 > taken from its matter field. Species of different weight scale differently, which is the
@@ -218,7 +218,7 @@ noncomputable def massWeightScaleBoson (c : ℂ) :
     T.BosonGenerators →ₗ[ℂ] T.BosonGenerators
 ```
 
-**`GaugeFieldData.massWeightScaleBoson_inclBoson`**, a lemma, [line 250](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/GaugeFieldData/BosonGenerators.lean#L250).
+**`GaugeFieldData.massWeightScaleBoson_inclBoson`**, a lemma, [line 250](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/GaugeFieldData/BosonGenerators.lean#L250).
 
 > On the summand of a species the scaling is that species' own mass-weight scaling, with
 > the weight recorded in its matter field.
@@ -231,7 +231,7 @@ lemma massWeightScaleBoson_inclBoson (c : ℂ) (i : T.BosonSpecies)
         (JetComponentSpace.massWeightScale (T.boson i).massWeight c x)
 ```
 
-**`GaugeFieldData.massWeightScaleBoson_inclBoson_basis_tmul`**, a lemma, [line 260](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/GaugeFieldData/BosonGenerators.lean#L260).
+**`GaugeFieldData.massWeightScaleBoson_inclBoson_basis_tmul`**, a lemma, [line 260](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/GaugeFieldData/BosonGenerators.lean#L260).
 
 > A component function `∂_s φ_α` of a species scales by `c ^ (w + 2 |s|)`, where `w` is
 > the mass weight of that species. There is one factor of `c` per unit of mass dimension of
@@ -246,7 +246,7 @@ lemma massWeightScaleBoson_inclBoson_basis_tmul (c : ℂ) (i : T.BosonSpecies)
           ((SpaceTimeDerivAlgebraℂ.basis s ⊗ₜ[ℂ] φ, 0) : JetComponentSpace (T.boson i))
 ```
 
-**`GaugeFieldData.massWeightScaleBoson_inclBoson_basis_tmul_conj`**, a lemma, [line 273](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/GaugeFieldData/BosonGenerators.lean#L273).
+**`GaugeFieldData.massWeightScaleBoson_inclBoson_basis_tmul_conj`**, a lemma, [line 273](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/GaugeFieldData/BosonGenerators.lean#L273).
 
 > The conjugate component functions of a species scale with the same weight as its
 > unconjugated ones.
@@ -269,7 +269,7 @@ lemma massWeightScaleBoson_inclBoson_basis_tmul_conj (c : ℂ) (i : T.BosonSpeci
 > species-diagonal and the same assembly serves. It is recorded here so that the generator
 > space carries every operation the local field algebra is built from.
 
-**`GaugeFieldData.jetDerivBoson`**, a def, [line 304](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/GaugeFieldData/BosonGenerators.lean#L304).
+**`GaugeFieldData.jetDerivBoson`**, a def, [line 304](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/GaugeFieldData/BosonGenerators.lean#L304).
 
 > The ordinary derivative shift on the bosonic generator space, acting on each species'
 > component functions by appending `∂_μ` to the derivative label.
@@ -279,7 +279,7 @@ noncomputable def jetDerivBoson (μ : Fin 1 ⊕ Fin 3) :
     T.BosonGenerators →ₗ[ℂ] T.BosonGenerators
 ```
 
-**`GaugeFieldData.jetDerivBoson_inclBoson`**, a lemma, [line 311](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/GaugeFieldData/BosonGenerators.lean#L311).
+**`GaugeFieldData.jetDerivBoson_inclBoson`**, a lemma, [line 311](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/GaugeFieldData/BosonGenerators.lean#L311).
 
 ```lean
 lemma jetDerivBoson_inclBoson (μ : Fin 1 ⊕ Fin 3) (i : T.BosonSpecies)
@@ -288,7 +288,7 @@ lemma jetDerivBoson_inclBoson (μ : Fin 1 ⊕ Fin 3) (i : T.BosonSpecies)
       = T.inclBoson i (JetComponentSpace.jetDeriv μ x)
 ```
 
-**`GaugeFieldData.jetDerivBoson_comm`**, a lemma, [line 319](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/GaugeFieldData/BosonGenerators.lean#L319).
+**`GaugeFieldData.jetDerivBoson_comm`**, a lemma, [line 319](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/GaugeFieldData/BosonGenerators.lean#L319).
 
 > Mixed partials agree on the bosonic generator space, because they do on each
 > species.
@@ -299,7 +299,7 @@ lemma jetDerivBoson_comm (μ ν : Fin 1 ⊕ Fin 3) :
       = (T.jetDerivBoson ν).comp (T.jetDerivBoson μ)
 ```
 
-**`GaugeFieldData.repLorentzBoson_jetDerivBoson`**, a lemma, [line 330](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/GaugeFieldData/BosonGenerators.lean#L330).
+**`GaugeFieldData.repLorentzBoson_jetDerivBoson`**, a lemma, [line 330](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/GaugeFieldData/BosonGenerators.lean#L330).
 
 > The derivative shift is a Lorentz vector on the bosonic generator space: it is one
 > on each species, and both operations are species-diagonal.
@@ -312,7 +312,7 @@ lemma repLorentzBoson_jetDerivBoson (Λ : SL(2,ℂ)) (μ : Fin 1 ⊕ Fin 3)
           T.jetDerivBoson a (T.repLorentzBoson Λ x)
 ```
 
-**`GaugeFieldData.massWeightScaleBoson_jetDerivBoson`**, a lemma, [line 350](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/GaugeFieldData/BosonGenerators.lean#L350).
+**`GaugeFieldData.massWeightScaleBoson_jetDerivBoson`**, a lemma, [line 350](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/GaugeFieldData/BosonGenerators.lean#L350).
 
 > The derivative carries mass weight two on the bosonic generator space, whatever the
 > weights of the species: the shift adds two units of mass dimension to every component
@@ -326,7 +326,7 @@ lemma massWeightScaleBoson_jetDerivBoson (c : ℂ) (μ : Fin 1 ⊕ Fin 3) :
 
 ## C. The bosonic generators as one component space
 
-**`GaugeFieldData.bosonGeneratorsEquiv`**, a def, [line 375](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/GaugeFieldData/BosonGenerators.lean#L375).
+**`GaugeFieldData.bosonGeneratorsEquiv`**, a def, [line 375](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/GaugeFieldData/BosonGenerators.lean#L375).
 
 > **The bosonic generator space is the component space of the bosonic matter field.** The
 > direct sum over the species of their component spaces is, the species type being finite,
@@ -343,7 +343,7 @@ noncomputable def bosonGeneratorsEquiv (w : ℕ) (h : ∀ i, (T.boson i).massWei
 
 ### C.1. The species as pullbacks
 
-**`GaugeFieldData.bosonGeneratorsEquiv_inclBoson`**, a lemma, [line 393](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/GaugeFieldData/BosonGenerators.lean#L393).
+**`GaugeFieldData.bosonGeneratorsEquiv_inclBoson`**, a lemma, [line 393](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/GaugeFieldData/BosonGenerators.lean#L393).
 
 > **A species sits inside the bosonic generators as the pullback along the projection
 > onto it.** A component function of the multiplet `i` becomes the component function of
@@ -357,7 +357,7 @@ lemma bosonGeneratorsEquiv_inclBoson (w : ℕ) (h : ∀ i, (T.boson i).massWeigh
         (T.projBosonField w h i) x
 ```
 
-**`GaugeFieldData.bosonFieldComponents_hom_ext`**, a lemma, [line 411](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/GaugeFieldData/BosonGenerators.lean#L411).
+**`GaugeFieldData.bosonFieldComponents_hom_ext`**, a lemma, [line 411](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/GaugeFieldData/BosonGenerators.lean#L411).
 
 > Two linear maps out of the component space of the bosonic matter field agree as soon as
 > they agree on every species, the species pullbacks spanning it. This is the counterpart,
@@ -375,7 +375,7 @@ lemma bosonFieldComponents_hom_ext {N : Type} [AddCommGroup N] [Module ℂ N]
 
 ### C.2. The identification of the transformation data
 
-**`GaugeFieldData.bosonGeneratorsEquiv_repLorentzBoson`**, a lemma, [line 437](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/GaugeFieldData/BosonGenerators.lean#L437).
+**`GaugeFieldData.bosonGeneratorsEquiv_repLorentzBoson`**, a lemma, [line 437](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/GaugeFieldData/BosonGenerators.lean#L437).
 
 > **The identification is Lorentz-equivariant.** The species-diagonal Lorentz action on
 > the generator space is the Lorentz action on the component functions of the single field:
@@ -390,7 +390,7 @@ lemma bosonGeneratorsEquiv_repLorentzBoson (w : ℕ) (h : ∀ i, (T.boson i).mas
         (T.bosonGeneratorsEquiv w h y)
 ```
 
-**`GaugeFieldData.bosonGeneratorsEquiv_repJetBoson`**, a lemma, [line 460](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/GaugeFieldData/BosonGenerators.lean#L460).
+**`GaugeFieldData.bosonGeneratorsEquiv_repJetBoson`**, a lemma, [line 460](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/GaugeFieldData/BosonGenerators.lean#L460).
 
 > The identification is equivariant for the jet gauge action. The species-diagonal
 > action of the jets of gauge transformations on the generator space is the action on the
@@ -407,7 +407,7 @@ lemma bosonGeneratorsEquiv_repJetBoson (w : ℕ) (h : ∀ i, (T.boson i).massWei
         (T.bosonGeneratorsEquiv w h y)
 ```
 
-**`GaugeFieldData.bosonGeneratorsEquiv_massWeightScaleBoson`**, a lemma, [line 482](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/GaugeFieldData/BosonGenerators.lean#L482).
+**`GaugeFieldData.bosonGeneratorsEquiv_massWeightScaleBoson`**, a lemma, [line 482](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/GaugeFieldData/BosonGenerators.lean#L482).
 
 > **The identification carries the species-wise mass-weight scaling to a single
 > scaling.** With one weight `w` shared by every species, the scaling that acts on each
@@ -422,7 +422,7 @@ lemma bosonGeneratorsEquiv_massWeightScaleBoson (w : ℕ)
       = JetComponentSpace.massWeightScale w c (T.bosonGeneratorsEquiv w h y)
 ```
 
-**`GaugeFieldData.bosonGeneratorsEquiv_jetDerivBoson`**, a lemma, [line 503](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/GaugeFieldData/BosonGenerators.lean#L503).
+**`GaugeFieldData.bosonGeneratorsEquiv_jetDerivBoson`**, a lemma, [line 503](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/GaugeFieldData/BosonGenerators.lean#L503).
 
 > The identification carries the derivative shift across. The species-diagonal shift
 > of the derivative label on the generator space is the shift on the component functions of
@@ -445,4 +445,4 @@ lemma bosonGeneratorsEquiv_jetDerivBoson (w : ℕ) (h : ∀ i, (T.boson i).massW
 
 ## Sources
 
-- [PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/GaugeFieldData/BosonGenerators.lean at 2a1dfe43](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/GaugeFieldData/BosonGenerators.lean)
+- [PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/GaugeFieldData/BosonGenerators.lean at 8c87bdfb](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/GaugeFieldData/BosonGenerators.lean)

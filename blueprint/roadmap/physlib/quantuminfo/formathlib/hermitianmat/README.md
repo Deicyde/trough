@@ -1,6 +1,6 @@
 # HermitianMat
 
-The folder [QuantumInfo/ForMathlib/HermitianMat/](https://github.com/leanprover-community/physlib/tree/2a1dfe43134b49b643642f13d33031754021bb5d/QuantumInfo/ForMathlib/HermitianMat): 17 modules, an article each, in path order with Basic.lean first in its folder.
+The folder [QuantumInfo/ForMathlib/HermitianMat/](https://github.com/leanprover-community/physlib/tree/8c87bdfb015de47e82da811567aaa7a2a05353f4/QuantumInfo/ForMathlib/HermitianMat): 17 modules, an article each, in path order with Basic.lean first in its folder.
 
 - [QuantumInfo.ForMathlib.HermitianMat.Basic](basic.md)
 - [QuantumInfo.ForMathlib.HermitianMat.CFC](cfc.md)

@@ -1,14 +1,14 @@
 ---
 declaration: module
 origin: cited
-lean: ProbabilisticTheory.TraceClass.trace_rankOne_formula, ProbabilisticTheory.TraceClass.tracePairing_rankOne_left
+lean: PhyslibAlpha.ProbabilisticTheory.TraceClass.trace_rankOne_formula, PhyslibAlpha.ProbabilisticTheory.TraceClass.tracePairing_rankOne_left
 statement: formalized
 proof: formalized
 ---
 
 # Rank-one operators in the trace pairing
 
-The module `PhyslibAlpha.ProbabilisticTheory.WStarAlgebra.RankOnePairing`, [PhyslibAlpha/ProbabilisticTheory/WStarAlgebra/RankOnePairing.lean](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ProbabilisticTheory/WStarAlgebra/RankOnePairing.lean): 2 declarations, none with a docstring.
+The module `PhyslibAlpha.ProbabilisticTheory.WStarAlgebra.RankOnePairing`, [PhyslibAlpha/ProbabilisticTheory/WStarAlgebra/RankOnePairing.lean](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/WStarAlgebra/RankOnePairing.lean): 2 declarations, none with a docstring.
 
 > The trace pairing of a rank-one operator `|x⟩⟨y|` with a trace-class `T` is `⟪y, T x⟫`.
 
@@ -28,7 +28,7 @@ The module `PhyslibAlpha.ProbabilisticTheory.WStarAlgebra.RankOnePairing`, [Phys
 
 ## A. The trace of a rank-one operator
 
-**`ProbabilisticTheory.TraceClass.trace_rankOne_formula`**, a lemma, [line 55](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ProbabilisticTheory/WStarAlgebra/RankOnePairing.lean#L55).
+**`PhyslibAlpha.ProbabilisticTheory.TraceClass.trace_rankOne_formula`**, a lemma, [line 55](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/WStarAlgebra/RankOnePairing.lean#L55).
 
 ```lean
 lemma trace_rankOne_formula (x y : H) :
@@ -38,7 +38,7 @@ lemma trace_rankOne_formula (x y : H) :
 
 ## B. The trace pairing with a rank-one operator
 
-**`ProbabilisticTheory.TraceClass.tracePairing_rankOne_left`**, a lemma, [line 75](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ProbabilisticTheory/WStarAlgebra/RankOnePairing.lean#L75).
+**`PhyslibAlpha.ProbabilisticTheory.TraceClass.tracePairing_rankOne_left`**, a lemma, [line 75](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/WStarAlgebra/RankOnePairing.lean#L75).
 
 ```lean
 lemma tracePairing_rankOne_left (T : TraceClass H) (x y : H) :
@@ -52,4 +52,4 @@ lemma tracePairing_rankOne_left (T : TraceClass H) (x y : H) :
 
 ## Sources
 
-- [PhyslibAlpha/ProbabilisticTheory/WStarAlgebra/RankOnePairing.lean at 2a1dfe43](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ProbabilisticTheory/WStarAlgebra/RankOnePairing.lean)
+- [PhyslibAlpha/ProbabilisticTheory/WStarAlgebra/RankOnePairing.lean at 8c87bdfb](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/WStarAlgebra/RankOnePairing.lean)

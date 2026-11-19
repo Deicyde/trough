@@ -1,6 +1,6 @@
 {
  "schema": "trough-physlib/v1",
- "rev": "2a1dfe43134b49b643642f13d33031754021bb5d",
+ "rev": "8c87bdfb015de47e82da811567aaa7a2a05353f4",
  "modules": [
   {
    "file": "PhyslibAlpha/Mathematics/AlgebraGeneration.lean",
@@ -3499,6 +3499,126 @@
      "line": 324,
      "doc": "",
      "statement": "lemma mapEquiv_apply_ι {R M N : Type*} [CommRing R] [AddCommGroup M]\n    [Module R M] [AddCommGroup N] [Module R N] (e : M ≃ₗ[R] N) (x : M) :\n    mapEquiv e (ExteriorAlgebra.ι R x) = ExteriorAlgebra.ι R (e x)",
+     "sorry": false
+    }
+   ],
+   "private": 0,
+   "aliases": 0,
+   "informal": 0
+  },
+  {
+   "file": "PhyslibAlpha/Mathematics/ForMathlib/Analysis/Normed/Algebra/LieProductFormula.lean",
+   "module": "PhyslibAlpha.Mathematics.ForMathlib.Analysis.Normed.Algebra.LieProductFormula",
+   "title": "The Lie product formula",
+   "doc": "The exponential of a sum as a limit of products of exponentials.\n\n## i. Overview\n\nIn a complete normed algebra over `ℝ` with `‖1‖ = 1`,\n`(exp (X / n) exp (Y / n)) ^ n → exp (X + Y)` as `n → ∞`. This is the Lie product formula,\nknown in physics as the Trotter product formula. It is what makes the generators of the\none-parameter subgroups of a closed group of matrices closed under addition.\n\nThe proof compares `a = exp (X / n) exp (Y / n)` with `b = exp ((X + Y) / n)`, whose `n`-th\npower is `exp (X + Y)`. Both have norm at most `M = exp ((‖X‖ + ‖Y‖) / n)`, so telescoping\ngives `‖a ^ n − b ^ n‖ ≤ n M ^ n ‖a − b‖`, with `M ^ n = exp (‖X‖ + ‖Y‖)`. The two curves\n`t ↦ exp (t X) exp (t Y)` and `t ↦ exp (t (X + Y))` agree at `t = 0` together with their\nderivatives, so `‖a − b‖` is small compared with `1 / n`, and `n ‖a − b‖ → 0`.\n\n## ii. Key results\n\n- `NormedSpace.norm_exp_le_exp_norm` : `‖exp x‖ ≤ exp ‖x‖`.\n- `NormedSpace.norm_pow_sub_pow_le` : `‖a ^ n − b ^ n‖ ≤ n M ^ n ‖a − b‖` when `‖a‖, ‖b‖ ≤ M`\n  and `1 ≤ M`.\n- `NormedSpace.tendsto_exp_mul_exp_pow` : the Lie product formula.\n\n## iii. Table of contents\n\n- A. Norm bounds\n- B. The Lie product formula\n\n## iv. References\n\n* B. C. Hall, *Lie Groups, Lie Algebras, and Representations*, 2nd ed., Springer (2015).",
+   "copyright": "2026 Joseph Tooby-Smith",
+   "sections": [
+    {
+     "line": 56,
+     "text": "## A. Norm bounds"
+    },
+    {
+     "line": 94,
+     "text": "## B. The Lie product formula"
+    }
+   ],
+   "declarations": [
+    {
+     "name": "NormedSpace.norm_exp_le_exp_norm",
+     "kind": "lemma",
+     "line": 64,
+     "doc": "The exponential is bounded by the real exponential of the norm, term by term in the\nexponential series.",
+     "statement": "lemma norm_exp_le_exp_norm (x : 𝔸) : ‖exp x‖ ≤ Real.exp ‖x‖",
+     "sorry": false
+    },
+    {
+     "name": "NormedSpace.norm_pow_sub_pow_le",
+     "kind": "lemma",
+     "line": 75,
+     "doc": "The difference of two `n`-th powers, by telescoping:\n`‖a ^ n − b ^ n‖ ≤ n M ^ n ‖a − b‖` when `‖a‖, ‖b‖ ≤ M` and `1 ≤ M`.",
+     "statement": "lemma norm_pow_sub_pow_le {a b : 𝔸} {M : ℝ} (hM : 1 ≤ M) (ha : ‖a‖ ≤ M) (hb : ‖b‖ ≤ M)\n    (n : ℕ) : ‖a ^ n - b ^ n‖ ≤ n * M ^ n * ‖a - b‖",
+     "sorry": false
+    },
+    {
+     "name": "NormedSpace.tendsto_nat_smul_exp_mul_exp_sub_exp",
+     "kind": "lemma",
+     "line": 103,
+     "doc": "The curves `t ↦ exp (t X) exp (t Y)` and `t ↦ exp (t (X + Y))` agree to first order at\n`t = 0`: `n (exp (X / n) exp (Y / n) − exp ((X + Y) / n)) → 0`.",
+     "statement": "lemma tendsto_nat_smul_exp_mul_exp_sub_exp (X Y : 𝔸) :\n    Tendsto (fun n : ℕ => (n : ℝ) • (exp ((n : ℝ)⁻¹ • X) * exp ((n : ℝ)⁻¹ • Y) -\n      exp ((n : ℝ)⁻¹ • (X + Y)))) atTop (𝓝 0)",
+     "sorry": false
+    },
+    {
+     "name": "NormedSpace.tendsto_exp_mul_exp_pow",
+     "kind": "lemma",
+     "line": 120,
+     "doc": "**The Lie product formula**: `(exp (X / n) exp (Y / n)) ^ n → exp (X + Y)`.",
+     "statement": "lemma tendsto_exp_mul_exp_pow (X Y : 𝔸) :\n    Tendsto (fun n : ℕ => (exp ((n : ℝ)⁻¹ • X) * exp ((n : ℝ)⁻¹ • Y)) ^ n) atTop\n      (𝓝 (exp (X + Y)))",
+     "sorry": false
+    }
+   ],
+   "private": 0,
+   "aliases": 0,
+   "informal": 0
+  },
+  {
+   "file": "PhyslibAlpha/Mathematics/ForMathlib/Analysis/Normed/Algebra/MatrixLieAlgebra.lean",
+   "module": "PhyslibAlpha.Mathematics.ForMathlib.Analysis.Normed.Algebra.MatrixLieAlgebra",
+   "title": "The Lie algebra of a closed group of matrices",
+   "doc": "The generators of the one-parameter subgroups of a closed subgroup of `GL(κ, ℂ)`.\n\n## i. Overview\n\nFor a subgroup `H` of `GL(κ, ℂ)`, the generators of its one-parameter subgroups are the\nmatrices `X` with `exp (t X) ∈ H` for every real `t`. When `H` is closed they form a real\nsubspace `lieAlgebraOfIsClosed H hH`, its Lie algebra:\n\n* closure under real multiples is immediate;\n* closure under addition is the Lie product formula: `exp (t (X + Y))` is the limit of\n  `(exp (t X / n) exp (t Y / n)) ^ n`, a sequence in `H` whose inverses also converge, so the\n  limit lies in `H` because `H` is closed.\n\nThe Lie algebra is invariant under conjugation by `H`, and it is closed under the\ncommutator: it is a closed subspace containing the conjugates `exp (t X) Y exp (−t X)`, and\nso their derivative `X Y − Y X` at `t = 0`.\n\n## ii. Key results\n\n- `Matrix.exp_add_mem_of_isClosed` : the one-parameter subgroups of a closed group of\n  matrices are closed under adding generators.\n- `Matrix.lieAlgebraOfIsClosed` : the Lie algebra of a closed group of matrices.\n- `Matrix.conj_mem_lieAlgebraOfIsClosed` : it is invariant under conjugation by the group.\n- `Matrix.commutator_mem_lieAlgebraOfIsClosed` : it is closed under the commutator.\n\n## iii. Table of contents\n\n- A. Closure under addition\n- B. The Lie algebra\n- C. Conjugation and the commutator\n\n## iv. References\n\n* B. C. Hall, *Lie Groups, Lie Algebras, and Representations*, 2nd ed., Springer (2015).",
+   "copyright": "2026 Joseph Tooby-Smith",
+   "sections": [
+    {
+     "line": 61,
+     "text": "## A. Closure under addition"
+    },
+    {
+     "line": 109,
+     "text": "## B. The Lie algebra"
+    },
+    {
+     "line": 137,
+     "text": "## C. Conjugation and the commutator"
+    }
+   ],
+   "declarations": [
+    {
+     "name": "Matrix.exp_add_mem_of_isClosed",
+     "kind": "lemma",
+     "line": 70,
+     "doc": "In a closed group of matrices, if the one-parameter subgroups of `X` and of `Y` lie in\nthe group, then so does `exp (X + Y)`: it is the limit of the products\n`(exp (X / n) exp (Y / n)) ^ n` of group elements, by the Lie product formula.",
+     "statement": "lemma exp_add_mem_of_isClosed {H : Subgroup (GeneralLinearGroup κ ℂ)}\n    (hH : IsClosed (H : Set (GeneralLinearGroup κ ℂ))) {X Y : Matrix κ κ ℂ}\n    (hX : ∀ t : ℝ, exp (t • X) ∈ Set.range fun g : H => (g.1 : Matrix κ κ ℂ))\n    (hY : ∀ t : ℝ, exp (t • Y) ∈ Set.range fun g : H => (g.1 : Matrix κ κ ℂ)) :\n    exp (X + Y) ∈ Set.range fun g : H => (g.1 : Matrix κ κ ℂ)",
+     "sorry": false
+    },
+    {
+     "name": "Matrix.lieAlgebraOfIsClosed",
+     "kind": "def",
+     "line": 117,
+     "doc": "The Lie algebra of a closed subgroup of `GL(κ, ℂ)`: the real subspace of matrices whose\none-parameter subgroups lie in the group.",
+     "statement": "def lieAlgebraOfIsClosed (H : Subgroup (GeneralLinearGroup κ ℂ))\n    (hH : IsClosed (H : Set (GeneralLinearGroup κ ℂ))) : Submodule ℝ (Matrix κ κ ℂ)",
+     "sorry": false
+    },
+    {
+     "name": "Matrix.mem_lieAlgebraOfIsClosed_iff",
+     "kind": "lemma",
+     "line": 132,
+     "doc": "",
+     "statement": "lemma mem_lieAlgebraOfIsClosed_iff {H : Subgroup (GeneralLinearGroup κ ℂ)}\n    {hH : IsClosed (H : Set (GeneralLinearGroup κ ℂ))} {X : Matrix κ κ ℂ} :\n    X ∈ lieAlgebraOfIsClosed H hH ↔\n      ∀ t : ℝ, exp (t • X) ∈ Set.range fun g : H => (g.1 : Matrix κ κ ℂ)",
+     "sorry": false
+    },
+    {
+     "name": "Matrix.conj_mem_lieAlgebraOfIsClosed",
+     "kind": "lemma",
+     "line": 148,
+     "doc": "The Lie algebra is invariant under conjugation by the group: the one-parameter subgroup\nof the conjugate of a generator by a group element is the conjugate of the one-parameter\nsubgroup of the generator.",
+     "statement": "lemma conj_mem_lieAlgebraOfIsClosed (g : H) {X : Matrix κ κ ℂ}\n    (hX : X ∈ lieAlgebraOfIsClosed H hH) :\n    (g.1 : Matrix κ κ ℂ) * X * (↑g.1⁻¹ : Matrix κ κ ℂ) ∈ lieAlgebraOfIsClosed H hH",
+     "sorry": false
+    },
+    {
+     "name": "Matrix.commutator_mem_lieAlgebraOfIsClosed",
+     "kind": "lemma",
+     "line": 163,
+     "doc": "The Lie algebra is closed under the commutator. The conjugates\n`exp (t X) Y exp (−t X)` lie in the Lie algebra, a closed subspace, and so does their\nderivative `X Y − Y X` at `t = 0`.",
+     "statement": "lemma commutator_mem_lieAlgebraOfIsClosed {X Y : Matrix κ κ ℂ}\n    (hX : X ∈ lieAlgebraOfIsClosed H hH) (hY : Y ∈ lieAlgebraOfIsClosed H hH) :\n    X * Y - Y * X ∈ lieAlgebraOfIsClosed H hH",
      "sorry": false
     }
    ],

@@ -8,7 +8,7 @@ proof: formalized
 
 # Boosts on the electric and magnetic fields
 
-The module `Physlib.Electromagnetism.Kinematics.Boosts`, [Physlib/Electromagnetism/Kinematics/Boosts.lean](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/Electromagnetism/Kinematics/Boosts.lean): 4 declarations, none with a docstring.
+The module `Physlib.Electromagnetism.Kinematics.Boosts`, [Physlib/Electromagnetism/Kinematics/Boosts.lean](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Electromagnetism/Kinematics/Boosts.lean): 4 declarations, none with a docstring.
 
 ## i. Overview
 
@@ -35,7 +35,7 @@ The module `Physlib.Electromagnetism.Kinematics.Boosts`, [Physlib/Electromagneti
 
 ### A.1. Boost of the x-component of the electric field
 
-**`Electromagnetism.ElectromagneticPotential.electricField_apply_x_boost_zero`**, a lemma, [line 66](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/Electromagnetism/Kinematics/Boosts.lean#L66).
+**`Electromagnetism.ElectromagneticPotential.electricField_apply_x_boost_zero`**, a lemma, [line 66](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Electromagnetism/Kinematics/Boosts.lean#L66).
 
 ```lean
 lemma electricField_apply_x_boost_zero {d : ℕ} {c : SpeedOfLight} (β : ℝ) (hβ : |β| < 1)
@@ -51,7 +51,7 @@ lemma electricField_apply_x_boost_zero {d : ℕ} {c : SpeedOfLight} (β : ℝ) (
 
 ### A.2. Boost of other components of the electric field
 
-**`Electromagnetism.ElectromagneticPotential.electricField_apply_x_boost_succ`**, a lemma, [line 101](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/Electromagnetism/Kinematics/Boosts.lean#L101).
+**`Electromagnetism.ElectromagneticPotential.electricField_apply_x_boost_succ`**, a lemma, [line 101](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Electromagnetism/Kinematics/Boosts.lean#L101).
 
 ```lean
 lemma electricField_apply_x_boost_succ {d : ℕ} {c : SpeedOfLight} (β : ℝ) (hβ : |β| < 1)
@@ -70,7 +70,7 @@ lemma electricField_apply_x_boost_succ {d : ℕ} {c : SpeedOfLight} (β : ℝ) (
 
 ### B.1. Boost of the 'x-components' of the magnetic field matrix
 
-**`Electromagnetism.ElectromagneticPotential.magneticFieldMatrix_apply_x_boost_zero_succ`**, a lemma, [line 137](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/Electromagnetism/Kinematics/Boosts.lean#L137).
+**`Electromagnetism.ElectromagneticPotential.magneticFieldMatrix_apply_x_boost_zero_succ`**, a lemma, [line 137](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Electromagnetism/Kinematics/Boosts.lean#L137).
 
 ```lean
 lemma magneticFieldMatrix_apply_x_boost_zero_succ {d : ℕ} {c : SpeedOfLight} (β : ℝ) (hβ : |β| < 1)
@@ -87,7 +87,7 @@ lemma magneticFieldMatrix_apply_x_boost_zero_succ {d : ℕ} {c : SpeedOfLight} (
 
 ### B.2. Boost of the other components of the magnetic field matrix
 
-**`Electromagnetism.ElectromagneticPotential.magneticFieldMatrix_apply_x_boost_succ_succ`**, a lemma, [line 165](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/Electromagnetism/Kinematics/Boosts.lean#L165).
+**`Electromagnetism.ElectromagneticPotential.magneticFieldMatrix_apply_x_boost_succ_succ`**, a lemma, [line 165](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Electromagnetism/Kinematics/Boosts.lean#L165).
 
 ```lean
 lemma magneticFieldMatrix_apply_x_boost_succ_succ {d : ℕ} {c : SpeedOfLight} (β : ℝ) (hβ : |β| < 1)
@@ -113,4 +113,4 @@ lemma magneticFieldMatrix_apply_x_boost_succ_succ {d : ℕ} {c : SpeedOfLight} (
 
 ## Sources
 
-- [Physlib/Electromagnetism/Kinematics/Boosts.lean at 2a1dfe43](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/Electromagnetism/Kinematics/Boosts.lean)
+- [Physlib/Electromagnetism/Kinematics/Boosts.lean at 8c87bdfb](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Electromagnetism/Kinematics/Boosts.lean)

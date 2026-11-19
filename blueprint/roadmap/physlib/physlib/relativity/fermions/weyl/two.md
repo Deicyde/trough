@@ -8,11 +8,11 @@ proof: formalized
 
 # Tensor product of two Weyl fermion
 
-The module `Physlib.Relativity.Fermions.Weyl.Two`, [Physlib/Relativity/Fermions/Weyl/Two.lean](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/Relativity/Fermions/Weyl/Two.lean): 42 declarations, 28 with a docstring; 1 private, not shown.
+The module `Physlib.Relativity.Fermions.Weyl.Two`, [Physlib/Relativity/Fermions/Weyl/Two.lean](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Relativity/Fermions/Weyl/Two.lean): 42 declarations, 28 with a docstring; 1 private, not shown.
 
 ## Equivalences to matrices.
 
-**`Fermion.leftLeftToMatrix`**, a def, [line 37](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/Relativity/Fermions/Weyl/Two.lean#L37).
+**`Fermion.leftLeftToMatrix`**, a def, [line 37](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Relativity/Fermions/Weyl/Two.lean#L37).
 
 > Equivalence of `leftHanded ⊗ leftHanded` to `2 x 2` complex matrices.
 
@@ -20,7 +20,7 @@ The module `Physlib.Relativity.Fermions.Weyl.Two`, [Physlib/Relativity/Fermions/
 def leftLeftToMatrix : (LeftHandedWeyl ⊗[ℂ] LeftHandedWeyl) ≃ₗ[ℂ] Matrix (Fin 2) (Fin 2) ℂ
 ```
 
-**`Fermion.leftLeftToMatrix_symm_expand_tmul`**, a lemma, [line 44](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/Relativity/Fermions/Weyl/Two.lean#L44).
+**`Fermion.leftLeftToMatrix_symm_expand_tmul`**, a lemma, [line 44](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Relativity/Fermions/Weyl/Two.lean#L44).
 
 > Expanding `leftLeftToMatrix` in terms of the standard basis.
 
@@ -30,7 +30,7 @@ lemma leftLeftToMatrix_symm_expand_tmul (M : Matrix (Fin 2) (Fin 2) ℂ) :
       (LeftHandedWeyl.basis i ⊗ₜ[ℂ] LeftHandedWeyl.basis j)
 ```
 
-**`Fermion.dualLeftdualLeftToMatrix`**, a def, [line 56](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/Relativity/Fermions/Weyl/Two.lean#L56).
+**`Fermion.dualLeftdualLeftToMatrix`**, a def, [line 56](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Relativity/Fermions/Weyl/Two.lean#L56).
 
 > Equivalence of `dualLeftHanded ⊗ dualLeftHanded` to `2 x 2` complex matrices.
 
@@ -39,7 +39,7 @@ def dualLeftdualLeftToMatrix : (DualLeftHandedWeyl ⊗[ℂ] DualLeftHandedWeyl) 
     Matrix (Fin 2) (Fin 2) ℂ
 ```
 
-**`Fermion.dualLeftdualLeftToMatrix_symm_expand_tmul`**, a lemma, [line 64](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/Relativity/Fermions/Weyl/Two.lean#L64).
+**`Fermion.dualLeftdualLeftToMatrix_symm_expand_tmul`**, a lemma, [line 64](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Relativity/Fermions/Weyl/Two.lean#L64).
 
 > Expanding `dualLeftdualLeftToMatrix` in terms of the standard basis.
 
@@ -49,7 +49,7 @@ lemma dualLeftdualLeftToMatrix_symm_expand_tmul (M : Matrix (Fin 2) (Fin 2) ℂ)
       (DualLeftHandedWeyl.basis i ⊗ₜ[ℂ] DualLeftHandedWeyl.basis j)
 ```
 
-**`Fermion.leftDualLeftToMatrix`**, a def, [line 77](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/Relativity/Fermions/Weyl/Two.lean#L77).
+**`Fermion.leftDualLeftToMatrix`**, a def, [line 77](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Relativity/Fermions/Weyl/Two.lean#L77).
 
 > Equivalence of `leftHanded ⊗ dualLeftHanded` to `2 x 2` complex matrices.
 
@@ -58,7 +58,7 @@ def leftDualLeftToMatrix : (LeftHandedWeyl ⊗[ℂ] DualLeftHandedWeyl) ≃ₗ[�
     Matrix (Fin 2) (Fin 2) ℂ
 ```
 
-**`Fermion.leftDualLeftToMatrix_symm_expand_tmul`**, a lemma, [line 85](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/Relativity/Fermions/Weyl/Two.lean#L85).
+**`Fermion.leftDualLeftToMatrix_symm_expand_tmul`**, a lemma, [line 85](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Relativity/Fermions/Weyl/Two.lean#L85).
 
 > Expanding `leftDualLeftToMatrix` in terms of the standard basis.
 
@@ -68,7 +68,7 @@ lemma leftDualLeftToMatrix_symm_expand_tmul (M : Matrix (Fin 2) (Fin 2) ℂ) :
       (LeftHandedWeyl.basis i ⊗ₜ[ℂ] DualLeftHandedWeyl.basis j)
 ```
 
-**`Fermion.dualLeftLeftToMatrix`**, a def, [line 97](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/Relativity/Fermions/Weyl/Two.lean#L97).
+**`Fermion.dualLeftLeftToMatrix`**, a def, [line 97](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Relativity/Fermions/Weyl/Two.lean#L97).
 
 > Equivalence of `dualLeftHanded ⊗ leftHanded` to `2 x 2` complex matrices.
 
@@ -77,7 +77,7 @@ def dualLeftLeftToMatrix : (DualLeftHandedWeyl ⊗[ℂ] LeftHandedWeyl) ≃ₗ[�
     Matrix (Fin 2) (Fin 2) ℂ
 ```
 
-**`Fermion.dualLeftLeftToMatrix_symm_expand_tmul`**, a lemma, [line 105](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/Relativity/Fermions/Weyl/Two.lean#L105).
+**`Fermion.dualLeftLeftToMatrix_symm_expand_tmul`**, a lemma, [line 105](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Relativity/Fermions/Weyl/Two.lean#L105).
 
 > Expanding `dualLeftLeftToMatrix` in terms of the standard basis.
 
@@ -87,7 +87,7 @@ lemma dualLeftLeftToMatrix_symm_expand_tmul (M : Matrix (Fin 2) (Fin 2) ℂ) :
       (DualLeftHandedWeyl.basis i ⊗ₜ[ℂ] LeftHandedWeyl.basis j)
 ```
 
-**`Fermion.rightRightToMatrix`**, a def, [line 117](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/Relativity/Fermions/Weyl/Two.lean#L117).
+**`Fermion.rightRightToMatrix`**, a def, [line 117](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Relativity/Fermions/Weyl/Two.lean#L117).
 
 > Equivalence of `rightHanded ⊗ rightHanded` to `2 x 2` complex matrices.
 
@@ -96,7 +96,7 @@ def rightRightToMatrix : (RightHandedWeyl ⊗[ℂ] RightHandedWeyl) ≃ₗ[ℂ]
     Matrix (Fin 2) (Fin 2) ℂ
 ```
 
-**`Fermion.rightRightToMatrix_symm_expand_tmul`**, a lemma, [line 125](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/Relativity/Fermions/Weyl/Two.lean#L125).
+**`Fermion.rightRightToMatrix_symm_expand_tmul`**, a lemma, [line 125](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Relativity/Fermions/Weyl/Two.lean#L125).
 
 > Expanding `rightRightToMatrix` in terms of the standard basis.
 
@@ -106,7 +106,7 @@ lemma rightRightToMatrix_symm_expand_tmul (M : Matrix (Fin 2) (Fin 2) ℂ) :
       (RightHandedWeyl.basis i ⊗ₜ[ℂ] RightHandedWeyl.basis j)
 ```
 
-**`Fermion.dualRightDualRightToMatrix`**, a def, [line 137](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/Relativity/Fermions/Weyl/Two.lean#L137).
+**`Fermion.dualRightDualRightToMatrix`**, a def, [line 137](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Relativity/Fermions/Weyl/Two.lean#L137).
 
 > Equivalence of `dualRightHanded ⊗ dualRightHanded` to `2 x 2` complex matrices.
 
@@ -115,7 +115,7 @@ def dualRightDualRightToMatrix : (DualRightHandedWeyl ⊗[ℂ] DualRightHandedWe
     Matrix (Fin 2) (Fin 2) ℂ
 ```
 
-**`Fermion.dualRightDualRightToMatrix_symm_expand_tmul`**, a lemma, [line 145](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/Relativity/Fermions/Weyl/Two.lean#L145).
+**`Fermion.dualRightDualRightToMatrix_symm_expand_tmul`**, a lemma, [line 145](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Relativity/Fermions/Weyl/Two.lean#L145).
 
 > Expanding `dualRightDualRightToMatrix` in terms of the standard basis.
 
@@ -125,7 +125,7 @@ lemma dualRightDualRightToMatrix_symm_expand_tmul (M : Matrix (Fin 2) (Fin 2) �
     ∑ i, ∑ j, M i j • (DualRightHandedWeyl.basis i ⊗ₜ[ℂ] DualRightHandedWeyl.basis j)
 ```
 
-**`Fermion.rightDualRightToMatrix`**, a def, [line 158](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/Relativity/Fermions/Weyl/Two.lean#L158).
+**`Fermion.rightDualRightToMatrix`**, a def, [line 158](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Relativity/Fermions/Weyl/Two.lean#L158).
 
 > Equivalence of `rightHanded ⊗ dualRightHanded` to `2 x 2` complex matrices.
 
@@ -134,7 +134,7 @@ def rightDualRightToMatrix : (RightHandedWeyl ⊗[ℂ] DualRightHandedWeyl) ≃�
     Matrix (Fin 2) (Fin 2) ℂ
 ```
 
-**`Fermion.rightDualRightToMatrix_symm_expand_tmul`**, a lemma, [line 166](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/Relativity/Fermions/Weyl/Two.lean#L166).
+**`Fermion.rightDualRightToMatrix_symm_expand_tmul`**, a lemma, [line 166](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Relativity/Fermions/Weyl/Two.lean#L166).
 
 > Expanding `rightDualRightToMatrix` in terms of the standard basis.
 
@@ -144,7 +144,7 @@ lemma rightDualRightToMatrix_symm_expand_tmul (M : Matrix (Fin 2) (Fin 2) ℂ) :
       (RightHandedWeyl.basis i ⊗ₜ[ℂ] DualRightHandedWeyl.basis j)
 ```
 
-**`Fermion.dualRightRightToMatrix`**, a def, [line 178](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/Relativity/Fermions/Weyl/Two.lean#L178).
+**`Fermion.dualRightRightToMatrix`**, a def, [line 178](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Relativity/Fermions/Weyl/Two.lean#L178).
 
 > Equivalence of `dualRightHanded ⊗ rightHanded` to `2 x 2` complex matrices.
 
@@ -153,7 +153,7 @@ def dualRightRightToMatrix : (DualRightHandedWeyl ⊗[ℂ] RightHandedWeyl) ≃�
     Matrix (Fin 2) (Fin 2) ℂ
 ```
 
-**`Fermion.dualRightRightToMatrix_symm_expand_tmul`**, a lemma, [line 186](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/Relativity/Fermions/Weyl/Two.lean#L186).
+**`Fermion.dualRightRightToMatrix_symm_expand_tmul`**, a lemma, [line 186](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Relativity/Fermions/Weyl/Two.lean#L186).
 
 > Expanding `dualRightRightToMatrix` in terms of the standard basis.
 
@@ -163,7 +163,7 @@ lemma dualRightRightToMatrix_symm_expand_tmul (M : Matrix (Fin 2) (Fin 2) ℂ) :
       (DualRightHandedWeyl.basis i ⊗ₜ[ℂ] RightHandedWeyl.basis j)
 ```
 
-**`Fermion.dualLeftDualRightToMatrix`**, a def, [line 198](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/Relativity/Fermions/Weyl/Two.lean#L198).
+**`Fermion.dualLeftDualRightToMatrix`**, a def, [line 198](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Relativity/Fermions/Weyl/Two.lean#L198).
 
 > Equivalence of `dualLeftHanded ⊗ dualRightHanded` to `2 x 2` complex matrices.
 
@@ -172,7 +172,7 @@ def dualLeftDualRightToMatrix : (DualLeftHandedWeyl ⊗[ℂ] DualRightHandedWeyl
     Matrix (Fin 2) (Fin 2) ℂ
 ```
 
-**`Fermion.dualLeftDualRightToMatrix_symm_expand_tmul`**, a lemma, [line 206](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/Relativity/Fermions/Weyl/Two.lean#L206).
+**`Fermion.dualLeftDualRightToMatrix_symm_expand_tmul`**, a lemma, [line 206](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Relativity/Fermions/Weyl/Two.lean#L206).
 
 > Expanding `dualLeftDualRightToMatrix` in terms of the standard basis.
 
@@ -182,7 +182,7 @@ lemma dualLeftDualRightToMatrix_symm_expand_tmul (M : Matrix (Fin 2) (Fin 2) ℂ
       (DualLeftHandedWeyl.basis i ⊗ₜ[ℂ] DualRightHandedWeyl.basis j)
 ```
 
-**`Fermion.leftRightToMatrix`**, a def, [line 219](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/Relativity/Fermions/Weyl/Two.lean#L219).
+**`Fermion.leftRightToMatrix`**, a def, [line 219](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Relativity/Fermions/Weyl/Two.lean#L219).
 
 > Equivalence of `leftHanded ⊗ rightHanded` to `2 x 2` complex matrices.
 
@@ -190,7 +190,7 @@ lemma dualLeftDualRightToMatrix_symm_expand_tmul (M : Matrix (Fin 2) (Fin 2) ℂ
 def leftRightToMatrix : (LeftHandedWeyl ⊗[ℂ] RightHandedWeyl) ≃ₗ[ℂ] Matrix (Fin 2) (Fin 2) ℂ
 ```
 
-**`Fermion.leftRightToMatrix_symm_expand_tmul`**, a lemma, [line 226](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/Relativity/Fermions/Weyl/Two.lean#L226).
+**`Fermion.leftRightToMatrix_symm_expand_tmul`**, a lemma, [line 226](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Relativity/Fermions/Weyl/Two.lean#L226).
 
 > Expanding `leftRightToMatrix` in terms of the standard basis.
 
@@ -202,7 +202,7 @@ lemma leftRightToMatrix_symm_expand_tmul (M : Matrix (Fin 2) (Fin 2) ℂ) :
 
 ## Group actions
 
-**`Fermion.leftLeftToMatrix_ρ`**, a lemma, [line 251](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/Relativity/Fermions/Weyl/Two.lean#L251).
+**`Fermion.leftLeftToMatrix_ρ`**, a lemma, [line 251](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Relativity/Fermions/Weyl/Two.lean#L251).
 
 > The group action of `SL(2,ℂ)` on `leftHanded ⊗ leftHanded` is equivalent to
 > `M.1 * leftLeftToMatrix v * (M.1)ᵀ`.
@@ -213,7 +213,7 @@ lemma leftLeftToMatrix_ρ (v : (LeftHandedWeyl ⊗[ℂ] LeftHandedWeyl)) (M : SL
     M.1 * leftLeftToMatrix v * (M.1)ᵀ
 ```
 
-**`Fermion.dualLeftdualLeftToMatrix_ρ`**, a lemma, [line 297](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/Relativity/Fermions/Weyl/Two.lean#L297).
+**`Fermion.dualLeftdualLeftToMatrix_ρ`**, a lemma, [line 297](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Relativity/Fermions/Weyl/Two.lean#L297).
 
 > The group action of `SL(2,ℂ)` on `dualLeftHanded ⊗ dualLeftHanded` is equivalent to
 > `(M.1⁻¹)ᵀ * leftLeftToMatrix v * (M.1⁻¹)`.
@@ -225,7 +225,7 @@ lemma dualLeftdualLeftToMatrix_ρ (v : (DualLeftHandedWeyl ⊗[ℂ] DualLeftHand
     (M.1⁻¹)ᵀ * dualLeftdualLeftToMatrix v * (M.1⁻¹)
 ```
 
-**`Fermion.leftDualLeftToMatrix_ρ`**, a lemma, [line 345](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/Relativity/Fermions/Weyl/Two.lean#L345).
+**`Fermion.leftDualLeftToMatrix_ρ`**, a lemma, [line 345](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Relativity/Fermions/Weyl/Two.lean#L345).
 
 > The group action of `SL(2,ℂ)` on `leftHanded ⊗ dualLeftHanded` is equivalent to
 > `M.1 * leftDualLeftToMatrix v * (M.1⁻¹)`.
@@ -236,7 +236,7 @@ lemma leftDualLeftToMatrix_ρ (v : (LeftHandedWeyl ⊗[ℂ] DualLeftHandedWeyl))
     M.1 * leftDualLeftToMatrix v * (M.1⁻¹)
 ```
 
-**`Fermion.dualLeftLeftToMatrix_ρ`**, a lemma, [line 389](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/Relativity/Fermions/Weyl/Two.lean#L389).
+**`Fermion.dualLeftLeftToMatrix_ρ`**, a lemma, [line 389](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Relativity/Fermions/Weyl/Two.lean#L389).
 
 > The group action of `SL(2,ℂ)` on `dualLeftHanded ⊗ leftHanded` is equivalent to
 > `(M.1⁻¹)ᵀ * leftDualLeftToMatrix v * (M.1)ᵀ`.
@@ -247,7 +247,7 @@ lemma dualLeftLeftToMatrix_ρ (v : (DualLeftHandedWeyl ⊗[ℂ] LeftHandedWeyl))
     (M.1⁻¹)ᵀ * dualLeftLeftToMatrix v * (M.1)ᵀ
 ```
 
-**`Fermion.rightRightToMatrix_ρ`**, a lemma, [line 434](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/Relativity/Fermions/Weyl/Two.lean#L434).
+**`Fermion.rightRightToMatrix_ρ`**, a lemma, [line 434](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Relativity/Fermions/Weyl/Two.lean#L434).
 
 > The group action of `SL(2,ℂ)` on `rightHanded ⊗ rightHanded` is equivalent to
 > `(M.1.map star) * rightRightToMatrix v * ((M.1.map star))ᵀ`.
@@ -258,7 +258,7 @@ lemma rightRightToMatrix_ρ (v : (RightHandedWeyl ⊗[ℂ] RightHandedWeyl)) (M 
     (M.1.map star) * rightRightToMatrix v * ((M.1.map star))ᵀ
 ```
 
-**`Fermion.dualRightDualRightToMatrix_ρ`**, a lemma, [line 479](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/Relativity/Fermions/Weyl/Two.lean#L479).
+**`Fermion.dualRightDualRightToMatrix_ρ`**, a lemma, [line 479](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Relativity/Fermions/Weyl/Two.lean#L479).
 
 > The group action of `SL(2,ℂ)` on `dualRightHanded ⊗ dualRightHanded` is equivalent to
 > `((M.1⁻¹).conjTranspose * rightRightToMatrix v * (((M.1⁻¹).conjTranspose)ᵀ`.
@@ -271,7 +271,7 @@ lemma dualRightDualRightToMatrix_ρ (v : (DualRightHandedWeyl ⊗[ℂ] DualRight
     ((M.1⁻¹).conjTranspose) * dualRightDualRightToMatrix v * (((M.1⁻¹).conjTranspose)ᵀ)
 ```
 
-**`Fermion.rightDualRightToMatrix_ρ`**, a lemma, [line 527](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/Relativity/Fermions/Weyl/Two.lean#L527).
+**`Fermion.rightDualRightToMatrix_ρ`**, a lemma, [line 527](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Relativity/Fermions/Weyl/Two.lean#L527).
 
 > The group action of `SL(2,ℂ)` on `rightHanded ⊗ dualRightHanded` is equivalent to
 > `(M.1.map star) * rightDualRightToMatrix v * (((M.1⁻¹).conjTranspose)ᵀ`.
@@ -283,7 +283,7 @@ lemma rightDualRightToMatrix_ρ (v : (RightHandedWeyl ⊗[ℂ] DualRightHandedWe
     (M.1.map star) * rightDualRightToMatrix v * (((M.1⁻¹).conjTranspose)ᵀ)
 ```
 
-**`Fermion.dualRightRightToMatrix_ρ`**, a lemma, [line 574](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/Relativity/Fermions/Weyl/Two.lean#L574).
+**`Fermion.dualRightRightToMatrix_ρ`**, a lemma, [line 574](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Relativity/Fermions/Weyl/Two.lean#L574).
 
 > The group action of `SL(2,ℂ)` on `dualRightHanded ⊗ rightHanded` is equivalent to
 > `((M.1⁻¹).conjTranspose * rightDualRightToMatrix v * ((M.1.map star)).ᵀ`.
@@ -295,7 +295,7 @@ lemma dualRightRightToMatrix_ρ (v : (DualRightHandedWeyl ⊗[ℂ] RightHandedWe
     ((M.1⁻¹).conjTranspose) * dualRightRightToMatrix v * (M.1.map star)ᵀ
 ```
 
-**`Fermion.dualLeftDualRightToMatrix_ρ`**, a lemma, [line 620](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/Relativity/Fermions/Weyl/Two.lean#L620).
+**`Fermion.dualLeftDualRightToMatrix_ρ`**, a lemma, [line 620](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Relativity/Fermions/Weyl/Two.lean#L620).
 
 ```lean
 lemma dualLeftDualRightToMatrix_ρ (v : (DualLeftHandedWeyl ⊗[ℂ] DualRightHandedWeyl))
@@ -305,7 +305,7 @@ lemma dualLeftDualRightToMatrix_ρ (v : (DualLeftHandedWeyl ⊗[ℂ] DualRightHa
     (M.1⁻¹)ᵀ * dualLeftDualRightToMatrix v * ((M.1⁻¹).conjTranspose)ᵀ
 ```
 
-**`Fermion.leftRightToMatrix_ρ`**, a lemma, [line 666](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/Relativity/Fermions/Weyl/Two.lean#L666).
+**`Fermion.leftRightToMatrix_ρ`**, a lemma, [line 666](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Relativity/Fermions/Weyl/Two.lean#L666).
 
 ```lean
 lemma leftRightToMatrix_ρ (v : (LeftHandedWeyl ⊗[ℂ] RightHandedWeyl)) (M : SL(2,ℂ)) :
@@ -315,7 +315,7 @@ lemma leftRightToMatrix_ρ (v : (LeftHandedWeyl ⊗[ℂ] RightHandedWeyl)) (M : 
 
 ## The symm version of the group actions.
 
-**`Fermion.leftLeftToMatrix_ρ_symm`**, a lemma, [line 715](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/Relativity/Fermions/Weyl/Two.lean#L715).
+**`Fermion.leftLeftToMatrix_ρ_symm`**, a lemma, [line 715](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Relativity/Fermions/Weyl/Two.lean#L715).
 
 ```lean
 lemma leftLeftToMatrix_ρ_symm (v : Matrix (Fin 2) (Fin 2) ℂ) (M : SL(2,ℂ)) :
@@ -323,7 +323,7 @@ lemma leftLeftToMatrix_ρ_symm (v : Matrix (Fin 2) (Fin 2) ℂ) (M : SL(2,ℂ)) 
     leftLeftToMatrix.symm (M.1 * v * (M.1)ᵀ)
 ```
 
-**`Fermion.dualLeftdualLeftToMatrix_ρ_symm`**, a lemma, [line 722](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/Relativity/Fermions/Weyl/Two.lean#L722).
+**`Fermion.dualLeftdualLeftToMatrix_ρ_symm`**, a lemma, [line 722](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Relativity/Fermions/Weyl/Two.lean#L722).
 
 ```lean
 lemma dualLeftdualLeftToMatrix_ρ_symm (v : Matrix (Fin 2) (Fin 2) ℂ) (M : SL(2,ℂ)) :
@@ -332,7 +332,7 @@ lemma dualLeftdualLeftToMatrix_ρ_symm (v : Matrix (Fin 2) (Fin 2) ℂ) (M : SL(
     dualLeftdualLeftToMatrix.symm ((M.1⁻¹)ᵀ * v * (M.1⁻¹))
 ```
 
-**`Fermion.leftDualLeftToMatrix_ρ_symm`**, a lemma, [line 730](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/Relativity/Fermions/Weyl/Two.lean#L730).
+**`Fermion.leftDualLeftToMatrix_ρ_symm`**, a lemma, [line 730](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Relativity/Fermions/Weyl/Two.lean#L730).
 
 ```lean
 lemma leftDualLeftToMatrix_ρ_symm (v : Matrix (Fin 2) (Fin 2) ℂ) (M : SL(2,ℂ)) :
@@ -341,7 +341,7 @@ lemma leftDualLeftToMatrix_ρ_symm (v : Matrix (Fin 2) (Fin 2) ℂ) (M : SL(2,�
     leftDualLeftToMatrix.symm (M.1 * v * (M.1⁻¹))
 ```
 
-**`Fermion.dualLeftLeftToMatrix_ρ_symm`**, a lemma, [line 738](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/Relativity/Fermions/Weyl/Two.lean#L738).
+**`Fermion.dualLeftLeftToMatrix_ρ_symm`**, a lemma, [line 738](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Relativity/Fermions/Weyl/Two.lean#L738).
 
 ```lean
 lemma dualLeftLeftToMatrix_ρ_symm (v : Matrix (Fin 2) (Fin 2) ℂ) (M : SL(2,ℂ)) :
@@ -350,7 +350,7 @@ lemma dualLeftLeftToMatrix_ρ_symm (v : Matrix (Fin 2) (Fin 2) ℂ) (M : SL(2,�
     dualLeftLeftToMatrix.symm ((M.1⁻¹)ᵀ * v * (M.1)ᵀ)
 ```
 
-**`Fermion.rightRightToMatrix_ρ_symm`**, a lemma, [line 746](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/Relativity/Fermions/Weyl/Two.lean#L746).
+**`Fermion.rightRightToMatrix_ρ_symm`**, a lemma, [line 746](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Relativity/Fermions/Weyl/Two.lean#L746).
 
 ```lean
 lemma rightRightToMatrix_ρ_symm (v : Matrix (Fin 2) (Fin 2) ℂ) (M : SL(2,ℂ)) :
@@ -358,7 +358,7 @@ lemma rightRightToMatrix_ρ_symm (v : Matrix (Fin 2) (Fin 2) ℂ) (M : SL(2,ℂ)
     rightRightToMatrix.symm ((M.1.map star) * v * ((M.1.map star))ᵀ)
 ```
 
-**`Fermion.dualRightDualRightToMatrix_ρ_symm`**, a lemma, [line 753](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/Relativity/Fermions/Weyl/Two.lean#L753).
+**`Fermion.dualRightDualRightToMatrix_ρ_symm`**, a lemma, [line 753](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Relativity/Fermions/Weyl/Two.lean#L753).
 
 ```lean
 lemma dualRightDualRightToMatrix_ρ_symm (v : Matrix (Fin 2) (Fin 2) ℂ) (M : SL(2,ℂ)) :
@@ -367,7 +367,7 @@ lemma dualRightDualRightToMatrix_ρ_symm (v : Matrix (Fin 2) (Fin 2) ℂ) (M : S
     dualRightDualRightToMatrix.symm (((M.1⁻¹).conjTranspose) * v * ((M.1⁻¹).conjTranspose)ᵀ)
 ```
 
-**`Fermion.rightDualRightToMatrix_ρ_symm`**, a lemma, [line 761](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/Relativity/Fermions/Weyl/Two.lean#L761).
+**`Fermion.rightDualRightToMatrix_ρ_symm`**, a lemma, [line 761](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Relativity/Fermions/Weyl/Two.lean#L761).
 
 ```lean
 lemma rightDualRightToMatrix_ρ_symm (v : Matrix (Fin 2) (Fin 2) ℂ) (M : SL(2,ℂ)) :
@@ -376,7 +376,7 @@ lemma rightDualRightToMatrix_ρ_symm (v : Matrix (Fin 2) (Fin 2) ℂ) (M : SL(2,
     rightDualRightToMatrix.symm ((M.1.map star) * v * (((M.1⁻¹).conjTranspose)ᵀ))
 ```
 
-**`Fermion.dualRightRightToMatrix_ρ_symm`**, a lemma, [line 769](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/Relativity/Fermions/Weyl/Two.lean#L769).
+**`Fermion.dualRightRightToMatrix_ρ_symm`**, a lemma, [line 769](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Relativity/Fermions/Weyl/Two.lean#L769).
 
 ```lean
 lemma dualRightRightToMatrix_ρ_symm (v : Matrix (Fin 2) (Fin 2) ℂ) (M : SL(2,ℂ)) :
@@ -385,7 +385,7 @@ lemma dualRightRightToMatrix_ρ_symm (v : Matrix (Fin 2) (Fin 2) ℂ) (M : SL(2,
     dualRightRightToMatrix.symm (((M.1⁻¹).conjTranspose) * v * (M.1.map star)ᵀ)
 ```
 
-**`Fermion.dualLeftDualRightToMatrix_ρ_symm`**, a lemma, [line 777](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/Relativity/Fermions/Weyl/Two.lean#L777).
+**`Fermion.dualLeftDualRightToMatrix_ρ_symm`**, a lemma, [line 777](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Relativity/Fermions/Weyl/Two.lean#L777).
 
 ```lean
 lemma dualLeftDualRightToMatrix_ρ_symm (v : Matrix (Fin 2) (Fin 2) ℂ) (M : SL(2,ℂ)) :
@@ -394,7 +394,7 @@ lemma dualLeftDualRightToMatrix_ρ_symm (v : Matrix (Fin 2) (Fin 2) ℂ) (M : SL
     dualLeftDualRightToMatrix.symm ((M.1⁻¹)ᵀ * v * ((M.1⁻¹).conjTranspose)ᵀ)
 ```
 
-**`Fermion.leftRightToMatrix_ρ_symm`**, a lemma, [line 785](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/Relativity/Fermions/Weyl/Two.lean#L785).
+**`Fermion.leftRightToMatrix_ρ_symm`**, a lemma, [line 785](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Relativity/Fermions/Weyl/Two.lean#L785).
 
 ```lean
 lemma leftRightToMatrix_ρ_symm (v : Matrix (Fin 2) (Fin 2) ℂ) (M : SL(2,ℂ)) :
@@ -402,7 +402,7 @@ lemma leftRightToMatrix_ρ_symm (v : Matrix (Fin 2) (Fin 2) ℂ) (M : SL(2,ℂ))
     leftRightToMatrix.symm (M.1 * v * (M.1)ᴴ)
 ```
 
-**`Fermion.dualLeftDualRightToMatrix_ρ_symm_selfAdjoint`**, a lemma, [line 794](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/Relativity/Fermions/Weyl/Two.lean#L794).
+**`Fermion.dualLeftDualRightToMatrix_ρ_symm_selfAdjoint`**, a lemma, [line 794](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Relativity/Fermions/Weyl/Two.lean#L794).
 
 ```lean
 lemma dualLeftDualRightToMatrix_ρ_symm_selfAdjoint (v : Matrix (Fin 2) (Fin 2) ℂ)
@@ -412,7 +412,7 @@ lemma dualLeftDualRightToMatrix_ρ_symm_selfAdjoint (v : Matrix (Fin 2) (Fin 2) 
     dualLeftDualRightToMatrix.symm (SL2C.toSelfAdjointMap (M.transpose⁻¹) ⟨v, hv⟩)
 ```
 
-**`Fermion.leftRightToMatrix_ρ_symm_selfAdjoint`**, a lemma, [line 812](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/Relativity/Fermions/Weyl/Two.lean#L812).
+**`Fermion.leftRightToMatrix_ρ_symm_selfAdjoint`**, a lemma, [line 812](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Relativity/Fermions/Weyl/Two.lean#L812).
 
 ```lean
 lemma leftRightToMatrix_ρ_symm_selfAdjoint (v : Matrix (Fin 2) (Fin 2) ℂ)
@@ -431,4 +431,4 @@ lemma leftRightToMatrix_ρ_symm_selfAdjoint (v : Matrix (Fin 2) (Fin 2) ℂ)
 
 ## Sources
 
-- [Physlib/Relativity/Fermions/Weyl/Two.lean at 2a1dfe43](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/Relativity/Fermions/Weyl/Two.lean)
+- [Physlib/Relativity/Fermions/Weyl/Two.lean at 8c87bdfb](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Relativity/Fermions/Weyl/Two.lean)

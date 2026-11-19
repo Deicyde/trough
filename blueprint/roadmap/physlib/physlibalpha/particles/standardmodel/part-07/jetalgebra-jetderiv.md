@@ -8,7 +8,7 @@ proof: formalized
 
 # The total derivative on the jet algebra of the Standard Model
 
-The module `PhyslibAlpha.Particles.StandardModel.JetAlgebra.JetDeriv`, [PhyslibAlpha/Particles/StandardModel/JetAlgebra/JetDeriv.lean](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/JetAlgebra/JetDeriv.lean): 17 declarations, 16 with a docstring; 10 private, not shown.
+The module `PhyslibAlpha.Particles.StandardModel.JetAlgebra.JetDeriv`, [PhyslibAlpha/Particles/StandardModel/JetAlgebra/JetDeriv.lean](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/JetAlgebra/JetDeriv.lean): 17 declarations, 16 with a docstring; 10 private, not shown.
 
 ## i. Overview
 
@@ -43,7 +43,7 @@ The module `PhyslibAlpha.Particles.StandardModel.JetAlgebra.JetDeriv`, [PhyslibA
 
 ## A. The formal total derivative
 
-**`StandardModel.JetAlgebra.jetDerivFermionFactor`**, an abbrev, [line 77](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/JetAlgebra/JetDeriv.lean#L77).
+**`StandardModel.JetAlgebra.jetDerivFermionFactor`**, an abbrev, [line 77](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/JetAlgebra/JetDeriv.lean#L77).
 
 > The total derivative on the fermionic factor: the even derivation of the exterior
 > algebra extending the derivative shift on the fermionic generator space of the datum.
@@ -54,7 +54,7 @@ noncomputable abbrev jetDerivFermionFactor (μ : Fin 1 ⊕ Fin 3) :
       ExteriorAlgebra ℂ fieldData.FermionGenerators
 ```
 
-**`StandardModel.JetAlgebra.jetDerivBosonFactor`**, an abbrev, [line 84](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/JetAlgebra/JetDeriv.lean#L84).
+**`StandardModel.JetAlgebra.jetDerivBosonFactor`**, an abbrev, [line 84](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/JetAlgebra/JetDeriv.lean#L84).
 
 > The total derivative on the bosonic factor: the derivation of the symmetric algebra
 > extending the derivative shift on the bosonic generator space of the datum.
@@ -65,7 +65,7 @@ noncomputable abbrev jetDerivBosonFactor (μ : Fin 1 ⊕ Fin 3) :
       SymmetricAlgebra ℂ fieldData.BosonGenerators
 ```
 
-**`StandardModel.JetAlgebra.jetDeriv`**, a def, [line 91](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/JetAlgebra/JetDeriv.lean#L91).
+**`StandardModel.JetAlgebra.jetDeriv`**, a def, [line 91](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/JetAlgebra/JetDeriv.lean#L91).
 
 > **The formal total derivative on the jet algebra of the Standard Model**: the sum of
 > the total derivatives of the three factors, each acting on its own factor.
@@ -76,7 +76,7 @@ noncomputable def jetDeriv (μ : Fin 1 ⊕ Fin 3) : JetAlgebra →ₗ[ℂ] JetAl
 
 ### A.1. The action on pure tensors
 
-**`StandardModel.JetAlgebra.jetDeriv_tmul`**, a lemma, [line 105](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/JetAlgebra/JetDeriv.lean#L105).
+**`StandardModel.JetAlgebra.jetDeriv_tmul`**, a lemma, [line 105](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/JetAlgebra/JetDeriv.lean#L105).
 
 ```lean
 lemma jetDeriv_tmul (μ : Fin 1 ⊕ Fin 3) (f : ExteriorAlgebra ℂ fieldData.FermionGenerators)
@@ -94,7 +94,7 @@ lemma jetDeriv_tmul (μ : Fin 1 ⊕ Fin 3) (f : ExteriorAlgebra ℂ fieldData.Fe
 > `1`, and the total derivative annihilates `1` in every factor; so only that factor's own
 > derivative survives.
 
-**`StandardModel.JetAlgebra.jetDeriv_includeFermionFactor`**, a lemma, [line 227](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/JetAlgebra/JetDeriv.lean#L227).
+**`StandardModel.JetAlgebra.jetDeriv_includeFermionFactor`**, a lemma, [line 227](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/JetAlgebra/JetDeriv.lean#L227).
 
 > The derivative acts on the fermionic factor through that factor's own derivation. The
 > factor inclusions are unfolded through the generic `GaugeFieldData` rules rather than by
@@ -108,7 +108,7 @@ lemma jetDeriv_includeFermionFactor (μ : Fin 1 ⊕ Fin 3)
       = fieldData.includeFermion (jetDerivFermionFactor μ f)
 ```
 
-**`StandardModel.JetAlgebra.jetDeriv_includeBosonFactor`**, a lemma, [line 237](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/JetAlgebra/JetDeriv.lean#L237).
+**`StandardModel.JetAlgebra.jetDeriv_includeBosonFactor`**, a lemma, [line 237](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/JetAlgebra/JetDeriv.lean#L237).
 
 > The derivative acts on the bosonic factor through that factor's own derivation.
 
@@ -119,7 +119,7 @@ lemma jetDeriv_includeBosonFactor (μ : Fin 1 ⊕ Fin 3)
       = fieldData.includeBoson (jetDerivBosonFactor μ h)
 ```
 
-**`StandardModel.JetAlgebra.jetDeriv_includeConnection`**, a lemma, [line 248](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/JetAlgebra/JetDeriv.lean#L248).
+**`StandardModel.JetAlgebra.jetDeriv_includeConnection`**, a lemma, [line 248](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/JetAlgebra/JetDeriv.lean#L248).
 
 > The derivative acts on the connection factor through the generic gauge-boson
 > derivative.
@@ -138,7 +138,7 @@ lemma jetDeriv_includeConnection (μ : Fin 1 ⊕ Fin 3)
 >   which are maps of differential algebras; so the derivative restricts to each
 > sector's own derivative under its existing name.
 
-**`StandardModel.JetAlgebra.jetDeriv_includeFermion`**, a lemma, [line 279](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/JetAlgebra/JetDeriv.lean#L279).
+**`StandardModel.JetAlgebra.jetDeriv_includeFermion`**, a lemma, [line 279](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/JetAlgebra/JetDeriv.lean#L279).
 
 > The derivative acts on the fermionic sector through the fermionic sector's own
 > derivative.
@@ -148,7 +148,7 @@ lemma jetDeriv_includeFermion (μ : Fin 1 ⊕ Fin 3) (f : FermionJetAlgebra) :
     jetDeriv μ (includeFermion f) = includeFermion (FermionicAlgebra.jetDeriv μ f)
 ```
 
-**`StandardModel.JetAlgebra.jetDeriv_includeHiggs`**, a lemma, [line 287](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/JetAlgebra/JetDeriv.lean#L287).
+**`StandardModel.JetAlgebra.jetDeriv_includeHiggs`**, a lemma, [line 287](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/JetAlgebra/JetDeriv.lean#L287).
 
 > The derivative acts on the Higgs sector through the Higgs sector's own derivative.
 
@@ -157,7 +157,7 @@ lemma jetDeriv_includeHiggs (μ : Fin 1 ⊕ Fin 3) (h : HiggsJetAlgebra) :
     jetDeriv μ (includeHiggs h) = includeHiggs (BosonicAlgebra.jetDeriv μ h)
 ```
 
-**`StandardModel.JetAlgebra.jetDeriv_includeGauge`**, a lemma, [line 297](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/JetAlgebra/JetDeriv.lean#L297).
+**`StandardModel.JetAlgebra.jetDeriv_includeGauge`**, a lemma, [line 297](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/JetAlgebra/JetDeriv.lean#L297).
 
 > The derivative acts on the gauge sector through the gauge sector's own derivative. The
 > gauge sector inclusion is the connection inclusion of the datum, the Standard Model gauge
@@ -172,7 +172,7 @@ lemma jetDeriv_includeGauge (μ : Fin 1 ⊕ Fin 3)
 
 ## B. Derivations on tensor products
 
-**`TensorProduct.map_derivation_left`**, a lemma, [line 310](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/JetAlgebra/JetDeriv.lean#L310).
+**`TensorProduct.map_derivation_left`**, a lemma, [line 310](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/JetAlgebra/JetDeriv.lean#L310).
 
 > A derivation of the left factor extends to a derivation of the tensor product.
 
@@ -185,7 +185,7 @@ lemma _root_.TensorProduct.map_derivation_left {A B : Type*} [Ring A] [Algebra �
         + x * TensorProduct.map D LinearMap.id y
 ```
 
-**`TensorProduct.map_derivation_right`**, a lemma, [line 332](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/JetAlgebra/JetDeriv.lean#L332).
+**`TensorProduct.map_derivation_right`**, a lemma, [line 332](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/JetAlgebra/JetDeriv.lean#L332).
 
 > A derivation of the right factor extends to a derivation of the tensor product.
 
@@ -200,7 +200,7 @@ lemma _root_.TensorProduct.map_derivation_right {A B : Type*} [Ring A] [Algebra 
 
 ## C. The Leibniz rule
 
-**`StandardModel.JetAlgebra.jetDeriv_mul`**, a lemma, [line 372](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/JetAlgebra/JetDeriv.lean#L372).
+**`StandardModel.JetAlgebra.jetDeriv_mul`**, a lemma, [line 372](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/JetAlgebra/JetDeriv.lean#L372).
 
 > **The Leibniz rule** for the total derivative on the jet algebra.
 
@@ -211,7 +211,7 @@ lemma jetDeriv_mul (μ : Fin 1 ⊕ Fin 3) (x y : JetAlgebra) :
 
 ## D. Commutativity
 
-**`StandardModel.JetAlgebra.jetDeriv_comm`**, a lemma, [line 413](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/JetAlgebra/JetDeriv.lean#L413).
+**`StandardModel.JetAlgebra.jetDeriv_comm`**, a lemma, [line 413](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/JetAlgebra/JetDeriv.lean#L413).
 
 > The total derivatives on the jet algebra commute.
 
@@ -226,7 +226,7 @@ lemma jetDeriv_comm (μ ν : Fin 1 ⊕ Fin 3) :
 > iterated total derivative restricts to the sector's own iterated derivative. These are the
 > forms the generator families of each sector consume.
 
-**`StandardModel.JetAlgebra.iteratedD_includeFermion`**, a lemma, [line 489](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/JetAlgebra/JetDeriv.lean#L489).
+**`StandardModel.JetAlgebra.iteratedD_includeFermion`**, a lemma, [line 489](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/JetAlgebra/JetDeriv.lean#L489).
 
 > The iterated total derivative acts on the fermionic sector through the fermionic
 > sector's own iterated derivative.
@@ -237,7 +237,7 @@ lemma iteratedD_includeFermion (s : Multiset (Fin 1 ⊕ Fin 3)) (f : FermionJetA
       = includeFermion (FermionicAlgebra.iteratedJetDeriv s f)
 ```
 
-**`StandardModel.JetAlgebra.iteratedD_includeHiggs`**, a lemma, [line 499](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/JetAlgebra/JetDeriv.lean#L499).
+**`StandardModel.JetAlgebra.iteratedD_includeHiggs`**, a lemma, [line 499](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/JetAlgebra/JetDeriv.lean#L499).
 
 > The iterated total derivative acts on the Higgs sector through the Higgs sector's own
 > iterated derivative.
@@ -248,7 +248,7 @@ lemma iteratedD_includeHiggs (s : Multiset (Fin 1 ⊕ Fin 3)) (h : HiggsJetAlgeb
       = includeHiggs (BosonicAlgebra.iteratedJetDeriv s h)
 ```
 
-**`StandardModel.JetAlgebra.iteratedD_includeGauge`**, a lemma, [line 510](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/JetAlgebra/JetDeriv.lean#L510).
+**`StandardModel.JetAlgebra.iteratedD_includeGauge`**, a lemma, [line 510](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/JetAlgebra/JetDeriv.lean#L510).
 
 > The iterated total derivative acts on the gauge sector through the gauge sector's own
 > iterated derivative. Like its two siblings this instantiates the abstract
@@ -269,4 +269,4 @@ lemma iteratedD_includeGauge (s : Multiset (Fin 1 ⊕ Fin 3))
 
 ## Sources
 
-- [PhyslibAlpha/Particles/StandardModel/JetAlgebra/JetDeriv.lean at 2a1dfe43](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/JetAlgebra/JetDeriv.lean)
+- [PhyslibAlpha/Particles/StandardModel/JetAlgebra/JetDeriv.lean at 8c87bdfb](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/JetAlgebra/JetDeriv.lean)

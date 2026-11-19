@@ -8,7 +8,7 @@ proof: formalized
 
 # Matrix divergence on Space
 
-The module `Physlib.SpaceAndTime.Space.Derivatives.MatrixDiv`, [Physlib/SpaceAndTime/Space/Derivatives/MatrixDiv.lean](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/SpaceAndTime/Space/Derivatives/MatrixDiv.lean): 6 declarations, 1 with a docstring.
+The module `Physlib.SpaceAndTime.Space.Derivatives.MatrixDiv`, [Physlib/SpaceAndTime/Space/Derivatives/MatrixDiv.lean](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/SpaceAndTime/Space/Derivatives/MatrixDiv.lean): 6 declarations, 1 with a docstring.
 
 ## i. Overview
 
@@ -30,7 +30,7 @@ The module `Physlib.SpaceAndTime.Space.Derivatives.MatrixDiv`, [Physlib/SpaceAnd
 
 ## A. The matrix divergence on functions
 
-**`Space.matrixDiv`**, a def, [line 60](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/SpaceAndTime/Space/Derivatives/MatrixDiv.lean#L60).
+**`Space.matrixDiv`**, a def, [line 60](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/SpaceAndTime/Space/Derivatives/MatrixDiv.lean#L60).
 
 > The divergence of a matrix-valued spatial field.
 >
@@ -46,7 +46,7 @@ noncomputable def matrixDiv (d : ℕ) (T : Space d → Matrix (Fin d) (Fin d) �
 
 ### A.1. Basic equalities
 
-**`Space.matrixDiv_apply`**, a lemma, [line 71](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/SpaceAndTime/Space/Derivatives/MatrixDiv.lean#L71).
+**`Space.matrixDiv_apply`**, a lemma, [line 71](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/SpaceAndTime/Space/Derivatives/MatrixDiv.lean#L71).
 
 ```lean
 lemma matrixDiv_apply (d : ℕ) (T : Space d → Matrix (Fin d) (Fin d) ℝ)
@@ -56,7 +56,7 @@ lemma matrixDiv_apply (d : ℕ) (T : Space d → Matrix (Fin d) (Fin d) ℝ)
 
 ### A.2. The matrix divergence on the zero function
 
-**`Space.matrixDiv_zero`**, a lemma, [line 83](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/SpaceAndTime/Space/Derivatives/MatrixDiv.lean#L83).
+**`Space.matrixDiv_zero`**, a lemma, [line 83](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/SpaceAndTime/Space/Derivatives/MatrixDiv.lean#L83).
 
 ```lean
 lemma matrixDiv_zero (d : ℕ) :
@@ -65,7 +65,7 @@ lemma matrixDiv_zero (d : ℕ) :
 
 ### A.3. The matrix divergence on a constant function
 
-**`Space.matrixDiv_const`**, a lemma, [line 96](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/SpaceAndTime/Space/Derivatives/MatrixDiv.lean#L96).
+**`Space.matrixDiv_const`**, a lemma, [line 96](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/SpaceAndTime/Space/Derivatives/MatrixDiv.lean#L96).
 
 ```lean
 lemma matrixDiv_const (d : ℕ) (T : Matrix (Fin d) (Fin d) ℝ) :
@@ -74,7 +74,7 @@ lemma matrixDiv_const (d : ℕ) (T : Matrix (Fin d) (Fin d) ℝ) :
 
 ### A.4. The matrix divergence distributes over addition
 
-**`Space.matrixDiv_add`**, a lemma, [line 108](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/SpaceAndTime/Space/Derivatives/MatrixDiv.lean#L108).
+**`Space.matrixDiv_add`**, a lemma, [line 108](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/SpaceAndTime/Space/Derivatives/MatrixDiv.lean#L108).
 
 ```lean
 lemma matrixDiv_add (d : ℕ) (T1 T2 : Space d → Matrix (Fin d) (Fin d) ℝ)
@@ -84,7 +84,7 @@ lemma matrixDiv_add (d : ℕ) (T1 T2 : Space d → Matrix (Fin d) (Fin d) ℝ)
 
 ### A.5. The matrix divergence distributes over scalar multiplication
 
-**`Space.matrixDiv_smul`**, a lemma, [line 131](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/SpaceAndTime/Space/Derivatives/MatrixDiv.lean#L131).
+**`Space.matrixDiv_smul`**, a lemma, [line 131](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/SpaceAndTime/Space/Derivatives/MatrixDiv.lean#L131).
 
 ```lean
 lemma matrixDiv_smul (d : ℕ) (T : Space d → Matrix (Fin d) (Fin d) ℝ) (k : ℝ)
@@ -98,4 +98,4 @@ lemma matrixDiv_smul (d : ℕ) (T : Space d → Matrix (Fin d) (Fin d) ℝ) (k :
 
 ## Sources
 
-- [Physlib/SpaceAndTime/Space/Derivatives/MatrixDiv.lean at 2a1dfe43](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/SpaceAndTime/Space/Derivatives/MatrixDiv.lean)
+- [Physlib/SpaceAndTime/Space/Derivatives/MatrixDiv.lean at 8c87bdfb](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/SpaceAndTime/Space/Derivatives/MatrixDiv.lean)

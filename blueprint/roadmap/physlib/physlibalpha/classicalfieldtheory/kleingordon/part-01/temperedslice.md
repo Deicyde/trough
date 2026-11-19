@@ -8,7 +8,7 @@ proof: formalized
 
 # The solution as a tempered distribution in space
 
-The module `PhyslibAlpha.ClassicalFieldTheory.KleinGordon.TemperedSlice`, [PhyslibAlpha/ClassicalFieldTheory/KleinGordon/TemperedSlice.lean](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/KleinGordon/TemperedSlice.lean): 8 declarations, 7 with a docstring.
+The module `PhyslibAlpha.ClassicalFieldTheory.KleinGordon.TemperedSlice`, [PhyslibAlpha/ClassicalFieldTheory/KleinGordon/TemperedSlice.lean](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/KleinGordon/TemperedSlice.lean): 8 declarations, 7 with a docstring.
 
 ## i. Overview
 
@@ -40,7 +40,7 @@ The module `PhyslibAlpha.ClassicalFieldTheory.KleinGordon.TemperedSlice`, [Physl
 > `solutionSlice_pairing`, `sineEvolution_apply_eq_delta`, `advancedSolution_eq_integral`,
 > `advancedSolution_eq_dirac`.
 
-**`KleinGordon.hasCompactSupport_solution_slice`**, a lemma, [line 67](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/KleinGordon/TemperedSlice.lean#L67).
+**`KleinGordon.hasCompactSupport_solution_slice`**, a lemma, [line 67](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/KleinGordon/TemperedSlice.lean#L67).
 
 > The spatial slice of the retarded solution has compact support.
 
@@ -49,7 +49,7 @@ lemma hasCompactSupport_solution_slice {μ : ℝ} (hμ : 0 ≤ μ) (t : ℝ) :
     HasCompactSupport fun x : E => solution F f μ t x
 ```
 
-**`KleinGordon.solutionSlice`**, a def, [line 87](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/KleinGordon/TemperedSlice.lean#L87).
+**`KleinGordon.solutionSlice`**, a def, [line 87](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/KleinGordon/TemperedSlice.lean#L87).
 
 > The spatial slice of the retarded solution as a Schwartz function.
 
@@ -57,14 +57,14 @@ lemma hasCompactSupport_solution_slice {μ : ℝ} (hμ : 0 ≤ μ) (t : ℝ) :
 def solutionSlice {μ : ℝ} (hμ : 0 ≤ μ) (t : ℝ) : 𝓢(E, F)
 ```
 
-**`KleinGordon.solutionSlice_apply`**, a lemma, [line 92](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/KleinGordon/TemperedSlice.lean#L92).
+**`KleinGordon.solutionSlice_apply`**, a lemma, [line 92](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/KleinGordon/TemperedSlice.lean#L92).
 
 ```lean
 lemma solutionSlice_apply {μ : ℝ} (hμ : 0 ≤ μ) (t : ℝ) (x : E) :
     solutionSlice F f hμ t x = solution F f μ t x
 ```
 
-**`KleinGordon.integrable_pairing_integrand`**, a lemma, [line 96](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/KleinGordon/TemperedSlice.lean#L96).
+**`KleinGordon.integrable_pairing_integrand`**, a lemma, [line 96](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/KleinGordon/TemperedSlice.lean#L96).
 
 > The integrand of the Duhamel pairing is integrable on the product of space and past times.
 
@@ -74,7 +74,7 @@ lemma integrable_pairing_integrand {μ : ℝ} (hμ : 0 ≤ μ) (t : ℝ) (g : �
       ((volume : Measure E).prod (volume.restrict (Set.Iic t)))
 ```
 
-**`KleinGordon.solutionSlice_pairing`**, a lemma, [line 146](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/KleinGordon/TemperedSlice.lean#L146).
+**`KleinGordon.solutionSlice_pairing`**, a lemma, [line 146](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/KleinGordon/TemperedSlice.lean#L146).
 
 > **The retarded solution as a tempered distribution.** Tested against a Schwartz function `g`
 > the spatial slice of the retarded solution at the time `t` is the integral over the source time
@@ -87,7 +87,7 @@ lemma solutionSlice_pairing {μ : ℝ} (hμ : 0 ≤ μ) (t : ℝ) (g : 𝓢(E, �
       ∫ s in Set.Iic t, sineEvolutionTempered F (t - s) μ (slice F f s : 𝓢'(E, F)) g
 ```
 
-**`KleinGordon.sineEvolution_apply_eq_delta`**, a lemma, [line 160](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/KleinGordon/TemperedSlice.lean#L160).
+**`KleinGordon.sineEvolution_apply_eq_delta`**, a lemma, [line 160](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/KleinGordon/TemperedSlice.lean#L160).
 
 > The propagation of a Schwartz function at a point is the pairing of the propagated Dirac
 > distribution with it.
@@ -98,7 +98,7 @@ lemma sineEvolution_apply_eq_delta {μ : ℝ} (hμ : 0 ≤ μ) (r : ℝ) (g : �
       sineEvolutionTempered ℂ r μ (TemperedDistribution.delta y) g
 ```
 
-**`KleinGordon.advancedSolution_eq_integral`**, a lemma, [line 174](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/KleinGordon/TemperedSlice.lean#L174).
+**`KleinGordon.advancedSolution_eq_integral`**, a lemma, [line 174](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/KleinGordon/TemperedSlice.lean#L174).
 
 > The advanced solution is the integral over the later source times.
 
@@ -108,7 +108,7 @@ lemma advancedSolution_eq_integral {μ : ℝ} (hμ : 0 ≤ μ) (t : ℝ) (y : E)
       ∫ s in Set.Ioi t, sineEvolution F (s - t) μ (slice F f s) y
 ```
 
-**`KleinGordon.advancedSolution_eq_dirac`**, a lemma, [line 194](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/KleinGordon/TemperedSlice.lean#L194).
+**`KleinGordon.advancedSolution_eq_dirac`**, a lemma, [line 194](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/KleinGordon/TemperedSlice.lean#L194).
 
 > **Advanced response at a point.** The advanced solution at the point `(t, y)` is the integral
 > over the later source times of the pairing of the propagated Dirac distribution at `y` with the
@@ -133,4 +133,4 @@ lemma advancedSolution_eq_dirac {μ : ℝ} (hμ : 0 ≤ μ) (f : 𝓓((⊤ : Ope
 
 ## Sources
 
-- [PhyslibAlpha/ClassicalFieldTheory/KleinGordon/TemperedSlice.lean at 2a1dfe43](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/KleinGordon/TemperedSlice.lean)
+- [PhyslibAlpha/ClassicalFieldTheory/KleinGordon/TemperedSlice.lean at 8c87bdfb](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/KleinGordon/TemperedSlice.lean)

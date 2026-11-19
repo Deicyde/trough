@@ -8,7 +8,7 @@ proof: formalized
 
 # The point group of the rhombohedral lattice
 
-The module `PhyslibAlpha.CondensedMatter.Crystal.PointGroup.Rhombohedral`, [PhyslibAlpha/CondensedMatter/Crystal/PointGroup/Rhombohedral.lean](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/CondensedMatter/Crystal/PointGroup/Rhombohedral.lean): 3 declarations, 3 with a docstring.
+The module `PhyslibAlpha.CondensedMatter.Crystal.PointGroup.Rhombohedral`, [PhyslibAlpha/CondensedMatter/Crystal/PointGroup/Rhombohedral.lean](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/CondensedMatter/Crystal/PointGroup/Rhombohedral.lean): 3 declarations, 3 with a docstring.
 
 > The point group of the rhombohedral lattice has order twelve: it permutes the three primitive
 > vectors and may reverse all of them, the holohedry `-3m`.
@@ -33,7 +33,7 @@ The module `PhyslibAlpha.CondensedMatter.Crystal.PointGroup.Rhombohedral`, [Phys
 
 ## A. The admissible triples
 
-**`CondensedMatter.Crystal.rhombohedralPointTriples`**, a def, [line 53](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/CondensedMatter/Crystal/PointGroup/Rhombohedral.lean#L53).
+**`CondensedMatter.Crystal.rhombohedralPointTriples`**, a def, [line 53](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/CondensedMatter/Crystal/PointGroup/Rhombohedral.lean#L53).
 
 > The images of the basis vectors under the twelve point operations of the rhombohedral
 > lattice: the permutations of the primitive vectors, with or without the inversion.
@@ -42,7 +42,7 @@ The module `PhyslibAlpha.CondensedMatter.Crystal.PointGroup.Rhombohedral`, [Phys
 def rhombohedralPointTriples : Finset (Fin 3 → Fin 3 → ℤ)
 ```
 
-**`CondensedMatter.Crystal.rhombohedral_admissible_iff`**, a lemma, [line 63](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/CondensedMatter/Crystal/PointGroup/Rhombohedral.lean#L63).
+**`CondensedMatter.Crystal.rhombohedral_admissible_iff`**, a lemma, [line 63](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/CondensedMatter/Crystal/PointGroup/Rhombohedral.lean#L63).
 
 > The point operations of the rhombohedral lattice are the twelve of
 > `rhombohedralPointTriples`.
@@ -54,7 +54,7 @@ lemma rhombohedral_admissible_iff (v : Fin 3 → Fin 3 → ℤ) :
 
 ## B. The order
 
-**`CondensedMatter.Crystal.rhombohedral_card_pointGroup`**, a lemma, [line 71](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/CondensedMatter/Crystal/PointGroup/Rhombohedral.lean#L71).
+**`CondensedMatter.Crystal.rhombohedral_card_pointGroup`**, a lemma, [line 71](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/CondensedMatter/Crystal/PointGroup/Rhombohedral.lean#L71).
 
 > **The point group of the rhombohedral lattice has order `12`.**
 
@@ -73,4 +73,4 @@ lemma rhombohedral_card_pointGroup : Nat.card rhombohedralGraph.pointGroup = 12
 
 ## Sources
 
-- [PhyslibAlpha/CondensedMatter/Crystal/PointGroup/Rhombohedral.lean at 2a1dfe43](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/CondensedMatter/Crystal/PointGroup/Rhombohedral.lean)
+- [PhyslibAlpha/CondensedMatter/Crystal/PointGroup/Rhombohedral.lean at 8c87bdfb](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/CondensedMatter/Crystal/PointGroup/Rhombohedral.lean)

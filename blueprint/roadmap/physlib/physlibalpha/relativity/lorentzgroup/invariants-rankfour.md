@@ -8,7 +8,7 @@ proof: formalized
 
 # Lorentz invariants of a rank-four tensor
 
-The module `PhyslibAlpha.Relativity.LorentzGroup.Invariants.RankFour`, [PhyslibAlpha/Relativity/LorentzGroup/Invariants/RankFour.lean](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Relativity/LorentzGroup/Invariants/RankFour.lean): 46 declarations (1 instance with no name), 45 with a docstring; 2 private, not shown.
+The module `PhyslibAlpha.Relativity.LorentzGroup.Invariants.RankFour`, [PhyslibAlpha/Relativity/LorentzGroup/Invariants/RankFour.lean](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Relativity/LorentzGroup/Invariants/RankFour.lean): 46 declarations (1 instance with no name), 45 with a docstring; 2 private, not shown.
 
 ## i. Overview
 
@@ -76,7 +76,7 @@ The module `PhyslibAlpha.Relativity.LorentzGroup.Invariants.RankFour`, [PhyslibA
 > `contractionCoeff` holds the four coefficient tensors and `contractionTensor` the four tensors
 > with those coefficients, in that order.
 
-**`Lorentz.RankFour.contractionCoeff`**, a def, [line 119](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Relativity/LorentzGroup/Invariants/RankFour.lean#L119).
+**`Lorentz.RankFour.contractionCoeff`**, a def, [line 119](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Relativity/LorentzGroup/Invariants/RankFour.lean#L119).
 
 > The four coefficient tensors: the three metric pairings, then the Levi-Civita symbol.
 
@@ -84,7 +84,7 @@ The module `PhyslibAlpha.Relativity.LorentzGroup.Invariants.RankFour`, [PhyslibA
 def contractionCoeff : Fin 4 → (Fin 4 → Fin 1 ⊕ Fin 3) → ℤ
 ```
 
-**`Lorentz.RankFour.contractionTensor`**, a def, [line 127](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Relativity/LorentzGroup/Invariants/RankFour.lean#L127).
+**`Lorentz.RankFour.contractionTensor`**, a def, [line 127](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Relativity/LorentzGroup/Invariants/RankFour.lean#L127).
 
 > The four invariant tensors with four contravariant indices: `η_{μν} η_{ρσ}`,
 > `η_{μρ} η_{νσ}`, `η_{μσ} η_{νρ}` and `ε_{μνρσ}`.
@@ -93,7 +93,7 @@ def contractionCoeff : Fin 4 → (Fin 4 → Fin 1 ⊕ Fin 3) → ℤ
 noncomputable def contractionTensor (i : Fin 4) : ℂT(fun _ : Fin 4 => Color.up)
 ```
 
-**`Lorentz.RankFour.ofComponents_contractionTensor`**, a lemma, [line 132](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Relativity/LorentzGroup/Invariants/RankFour.lean#L132).
+**`Lorentz.RankFour.ofComponents_contractionTensor`**, a lemma, [line 132](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Relativity/LorentzGroup/Invariants/RankFour.lean#L132).
 
 > `ofComponents T` sends each invariant tensor to the contraction of `T` with its
 > coefficients.
@@ -113,7 +113,7 @@ lemma ofComponents_contractionTensor (T : (Fin 4 → Fin 1 ⊕ Fin 3) → B) (i 
 > and `det Λ = 1` here: the only use of the determinant, and the reason there are four invariants
 > and not three, a reflection having `det = -1`. `sum_pi_four` is bookkeeping.
 
-**`Lorentz.RankFour.sum_pi_four`**, a lemma, [line 150](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Relativity/LorentzGroup/Invariants/RankFour.lean#L150).
+**`Lorentz.RankFour.sum_pi_four`**, a lemma, [line 150](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Relativity/LorentzGroup/Invariants/RankFour.lean#L150).
 
 > Bookkeeping: a sum over index vectors is a fourfold sum over directions.
 
@@ -124,7 +124,7 @@ lemma sum_pi_four {M : Type*} [AddCommMonoid M] (F : (Fin 4 → Fin 1 ⊕ Fin 3)
         ∑ w : Fin 1 ⊕ Fin 3, F ![x, y, z, w]
 ```
 
-**`Lorentz.RankFour.act_outerPair`**, a lemma, [line 169](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Relativity/LorentzGroup/Invariants/RankFour.lean#L169).
+**`Lorentz.RankFour.act_outerPair`**, a lemma, [line 169](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Relativity/LorentzGroup/Invariants/RankFour.lean#L169).
 
 > The pairing of slots `(0,1)` and `(2,3)` is fixed: two copies of
 > `LorentzGroup.sum_minkowskiMatrixZ_mul`.
@@ -135,7 +135,7 @@ lemma act_outerPair (Λ : LorentzGroup 3) (a : Fin 4 → Fin 1 ⊕ Fin 3) :
       = ((minkowskiMatrixZ (a 0) (a 1) * minkowskiMatrixZ (a 2) (a 3) : ℤ) : ℂ)
 ```
 
-**`Lorentz.RankFour.act_outerPair_comp`**, a lemma, [line 191](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Relativity/LorentzGroup/Invariants/RankFour.lean#L191).
+**`Lorentz.RankFour.act_outerPair_comp`**, a lemma, [line 191](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Relativity/LorentzGroup/Invariants/RankFour.lean#L191).
 
 > The same for the slots permuted by `σ`, by renaming the summation variable.
 
@@ -148,7 +148,7 @@ lemma act_outerPair_comp (σ : Equiv.Perm (Fin 4)) (Λ : LorentzGroup 3)
         * minkowskiMatrixZ (a (σ 2)) (a (σ 3)) : ℤ) : ℂ)
 ```
 
-**`Lorentz.RankFour.act_leviCivitaSymbol`**, a lemma, [line 207](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Relativity/LorentzGroup/Invariants/RankFour.lean#L207).
+**`Lorentz.RankFour.act_leviCivitaSymbol`**, a lemma, [line 207](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Relativity/LorentzGroup/Invariants/RankFour.lean#L207).
 
 > The symbol is fixed by a Lorentz matrix of determinant `1`; in general it picks up `det Λ`,
 > by `sum_leviCivitaSymbol_mul_prod`.
@@ -159,7 +159,7 @@ lemma act_leviCivitaSymbol (Λ : LorentzGroup 3) (hΛ : Λ.1.det = 1) (a : Fin 4
       = ((leviCivitaSymbol fun μ => a (finSumFinEquiv μ) : ℤ) : ℂ)
 ```
 
-**`Lorentz.RankFour.isInvariantCoeff_contractionCoeff`**, a lemma, [line 223](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Relativity/LorentzGroup/Invariants/RankFour.lean#L223).
+**`Lorentz.RankFour.isInvariantCoeff_contractionCoeff`**, a lemma, [line 223](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Relativity/LorentzGroup/Invariants/RankFour.lean#L223).
 
 > The four coefficient tensors are invariant.
 
@@ -170,7 +170,7 @@ lemma isInvariantCoeff_contractionCoeff (i : Fin 4) :
 
 ## E. The four tensors are Lorentz invariant
 
-**`Lorentz.RankFour.contractionTensor_invariant`**, a lemma, [line 242](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Relativity/LorentzGroup/Invariants/RankFour.lean#L242).
+**`Lorentz.RankFour.contractionTensor_invariant`**, a lemma, [line 242](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Relativity/LorentzGroup/Invariants/RankFour.lean#L242).
 
 > Each of the four tensors is Lorentz invariant, its coefficient tensor being invariant.
 
@@ -188,7 +188,7 @@ lemma contractionTensor_invariant (i : Fin 4) (g : SL(2,ℂ)) :
 > span. Neither equivariance of `f` nor any structure on `B` beyond a complex module is used; the
 > two remaining images may still be dependent or zero.
 
-**`Lorentz.RankFour.isReindexing_swap_two_three`**, a lemma, [line 265](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Relativity/LorentzGroup/Invariants/RankFour.lean#L265).
+**`Lorentz.RankFour.isReindexing_swap_two_three`**, a lemma, [line 265](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Relativity/LorentzGroup/Invariants/RankFour.lean#L265).
 
 > Exchanging the last two of four contravariant slots is a reindexing.
 
@@ -198,7 +198,7 @@ lemma isReindexing_swap_two_three :
       ⇑(Equiv.swap (2 : Fin 4) 3)
 ```
 
-**`Lorentz.RankFour.permT_swap_two_three_contractionTensor_zero`**, a lemma, [line 271](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Relativity/LorentzGroup/Invariants/RankFour.lean#L271).
+**`Lorentz.RankFour.permT_swap_two_three_contractionTensor_zero`**, a lemma, [line 271](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Relativity/LorentzGroup/Invariants/RankFour.lean#L271).
 
 > `η_{μν} η_{ρσ}` is unchanged by exchanging its last two slots.
 
@@ -207,7 +207,7 @@ lemma permT_swap_two_three_contractionTensor_zero :
     Tensor.permT _ isReindexing_swap_two_three (contractionTensor 0) = contractionTensor 0
 ```
 
-**`Lorentz.RankFour.permT_swap_two_three_contractionTensor_one`**, a lemma, [line 278](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Relativity/LorentzGroup/Invariants/RankFour.lean#L278).
+**`Lorentz.RankFour.permT_swap_two_three_contractionTensor_one`**, a lemma, [line 278](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Relativity/LorentzGroup/Invariants/RankFour.lean#L278).
 
 > Exchanging the last two slots of `η_{μρ} η_{νσ}` gives `η_{μσ} η_{νρ}`.
 
@@ -216,7 +216,7 @@ lemma permT_swap_two_three_contractionTensor_one :
     Tensor.permT _ isReindexing_swap_two_three (contractionTensor 1) = contractionTensor 2
 ```
 
-**`Lorentz.RankFour.apply_contractionTensor_zero_of_antisymm`**, a lemma, [line 287](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Relativity/LorentzGroup/Invariants/RankFour.lean#L287).
+**`Lorentz.RankFour.apply_contractionTensor_zero_of_antisymm`**, a lemma, [line 287](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Relativity/LorentzGroup/Invariants/RankFour.lean#L287).
 
 > A map antisymmetric in the last two slots sends `η_{μν} η_{ρσ}` to zero.
 
@@ -226,7 +226,7 @@ lemma apply_contractionTensor_zero_of_antisymm
     f (contractionTensor 0) = 0
 ```
 
-**`Lorentz.RankFour.apply_contractionTensor_two_of_antisymm`**, a lemma, [line 300](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Relativity/LorentzGroup/Invariants/RankFour.lean#L300).
+**`Lorentz.RankFour.apply_contractionTensor_two_of_antisymm`**, a lemma, [line 300](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Relativity/LorentzGroup/Invariants/RankFour.lean#L300).
 
 > A map antisymmetric in the last two slots sends `η_{μσ} η_{νρ}` to minus the image of
 > `η_{μρ} η_{νσ}`.
@@ -237,7 +237,7 @@ lemma apply_contractionTensor_two_of_antisymm
     f (contractionTensor 2) = -f (contractionTensor 1)
 ```
 
-**`Lorentz.RankFour.span_range_contractionTensor_of_antisymm`**, a lemma, [line 309](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Relativity/LorentzGroup/Invariants/RankFour.lean#L309).
+**`Lorentz.RankFour.span_range_contractionTensor_of_antisymm`**, a lemma, [line 309](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Relativity/LorentzGroup/Invariants/RankFour.lean#L309).
 
 > For a map antisymmetric in the last two slots, the images of the four invariant tensors
 > span the same as the images of `η_{μρ} η_{νσ}` and `ε_{μνρσ}`.
@@ -257,7 +257,7 @@ lemma span_range_contractionTensor_of_antisymm
 > its last two slots it sends `η_{μρ} η_{νσ}` to zero as well: in both a symmetric pair of slots
 > is contracted against an antisymmetric one. As in B.4 nothing beyond a complex module is used.
 
-**`Lorentz.RankFour.isReindexing_swap_zero_one`**, a lemma, [line 342](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Relativity/LorentzGroup/Invariants/RankFour.lean#L342).
+**`Lorentz.RankFour.isReindexing_swap_zero_one`**, a lemma, [line 342](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Relativity/LorentzGroup/Invariants/RankFour.lean#L342).
 
 > Exchanging the first two of four contravariant slots is a reindexing.
 
@@ -267,7 +267,7 @@ lemma isReindexing_swap_zero_one :
       ⇑(Equiv.swap (0 : Fin 4) 1)
 ```
 
-**`Lorentz.RankFour.permT_swap_zero_one_contractionTensor_one`**, a lemma, [line 348](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Relativity/LorentzGroup/Invariants/RankFour.lean#L348).
+**`Lorentz.RankFour.permT_swap_zero_one_contractionTensor_one`**, a lemma, [line 348](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Relativity/LorentzGroup/Invariants/RankFour.lean#L348).
 
 > Exchanging the first two slots of `η_{μρ} η_{νσ}` gives `η_{μσ} η_{νρ}`.
 
@@ -276,7 +276,7 @@ lemma permT_swap_zero_one_contractionTensor_one :
     Tensor.permT _ isReindexing_swap_zero_one (contractionTensor 1) = contractionTensor 2
 ```
 
-**`Lorentz.RankFour.permT_swap_zero_one_contractionTensor_three`**, a lemma, [line 355](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Relativity/LorentzGroup/Invariants/RankFour.lean#L355).
+**`Lorentz.RankFour.permT_swap_zero_one_contractionTensor_three`**, a lemma, [line 355](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Relativity/LorentzGroup/Invariants/RankFour.lean#L355).
 
 > Exchanging the first two slots negates `ε_{μνρσ}`.
 
@@ -285,7 +285,7 @@ lemma permT_swap_zero_one_contractionTensor_three :
     Tensor.permT _ isReindexing_swap_zero_one (contractionTensor 3) = -contractionTensor 3
 ```
 
-**`Lorentz.RankFour.apply_contractionTensor_one_of_symm_of_antisymm`**, a lemma, [line 370](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Relativity/LorentzGroup/Invariants/RankFour.lean#L370).
+**`Lorentz.RankFour.apply_contractionTensor_one_of_symm_of_antisymm`**, a lemma, [line 370](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Relativity/LorentzGroup/Invariants/RankFour.lean#L370).
 
 > A map symmetric in the first two slots and antisymmetric in the last two sends
 > `η_{μρ} η_{νσ}` to zero.
@@ -297,7 +297,7 @@ lemma apply_contractionTensor_one_of_symm_of_antisymm
     f (contractionTensor 1) = 0
 ```
 
-**`Lorentz.RankFour.apply_contractionTensor_three_of_symm`**, a lemma, [line 383](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Relativity/LorentzGroup/Invariants/RankFour.lean#L383).
+**`Lorentz.RankFour.apply_contractionTensor_three_of_symm`**, a lemma, [line 383](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Relativity/LorentzGroup/Invariants/RankFour.lean#L383).
 
 > A map symmetric in the first two slots sends `ε_{μνρσ}` to zero.
 
@@ -329,7 +329,7 @@ lemma apply_contractionTensor_three_of_symm
 > `{d, cycIdx d, cycIdx (cycIdx d)}`, of three members unless `d` is `tttt`. Both actions are
 > stated for any number of slots in `Invariants.Basic`.
 
-**`Lorentz.RankFour.IsHalfTurnFixed`**, a def, [line 426](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Relativity/LorentzGroup/Invariants/RankFour.lean#L426).
+**`Lorentz.RankFour.IsHalfTurnFixed`**, a def, [line 426](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Relativity/LorentzGroup/Invariants/RankFour.lean#L426).
 
 > All three half turns fix the coefficient at `d`, that is the sign product is `1` for each
 > axis. Equivalently, and not used below, all four directions occur an even number of times
@@ -339,13 +339,13 @@ lemma apply_contractionTensor_three_of_symm
 def IsHalfTurnFixed (d : Fin 4 → Fin 1 ⊕ Fin 3) : Prop
 ```
 
-**An instance with no name**, [line 429](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Relativity/LorentzGroup/Invariants/RankFour.lean#L429).
+**An instance with no name**, [line 429](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Relativity/LorentzGroup/Invariants/RankFour.lean#L429).
 
 ```lean
 instance : DecidablePred IsHalfTurnFixed
 ```
 
-**`Lorentz.RankFour.eq_zero_of_not_isHalfTurnFixed`**, a lemma, [line 433](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Relativity/LorentzGroup/Invariants/RankFour.lean#L433).
+**`Lorentz.RankFour.eq_zero_of_not_isHalfTurnFixed`**, a lemma, [line 433](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Relativity/LorentzGroup/Invariants/RankFour.lean#L433).
 
 > An invariant coefficient tensor vanishes off the half-turn fixed index vectors.
 
@@ -378,7 +378,7 @@ lemma eq_zero_of_not_isHalfTurnFixed {c : (Fin 4 → Fin 1 ⊕ Fin 3) → ℂ}
 > of `lightConeCoeffInvZ`, so at four slots the projection is `2 ^ 4 = 16` times the true one.
 > That is the only place the `16` comes from.
 
-**`Lorentz.RankFour.sixteen_mul_eq_sum_transitionZ`**, a lemma, [line 469](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Relativity/LorentzGroup/Invariants/RankFour.lean#L469).
+**`Lorentz.RankFour.sixteen_mul_eq_sum_transitionZ`**, a lemma, [line 469](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Relativity/LorentzGroup/Invariants/RankFour.lean#L469).
 
 > An invariant coefficient tensor is its own weight-zero projection.
 
@@ -400,7 +400,7 @@ lemma sixteen_mul_eq_sum_transitionZ {c : (Fin 4 → Fin 1 ⊕ Fin 3) → ℂ}
 > vectors that these cover the half-turn fixed ones without overlapping. So an invariant tensor is its
 > `22` values at the representatives, its orbit coordinates, which `ofOrbitCoord` inverts.
 
-**`Lorentz.RankFour.orbitRep`**, a def, [line 502](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Relativity/LorentzGroup/Invariants/RankFour.lean#L502).
+**`Lorentz.RankFour.orbitRep`**, a def, [line 502](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Relativity/LorentzGroup/Invariants/RankFour.lean#L502).
 
 > One index vector from each of the `22` orbits, checked by the two lemmas below.
 
@@ -408,7 +408,7 @@ lemma sixteen_mul_eq_sum_transitionZ {c : (Fin 4 → Fin 1 ⊕ Fin 3) → ℂ}
 def orbitRep : Fin 22 → Fin 4 → Fin 1 ⊕ Fin 3
 ```
 
-**`Lorentz.RankFour.orbit`**, a def, [line 527](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Relativity/LorentzGroup/Invariants/RankFour.lean#L527).
+**`Lorentz.RankFour.orbit`**, a def, [line 527](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Relativity/LorentzGroup/Invariants/RankFour.lean#L527).
 
 > The `k`-th representative and its two cyclings; for `tttt` the three coincide.
 
@@ -416,7 +416,7 @@ def orbitRep : Fin 22 → Fin 4 → Fin 1 ⊕ Fin 3
 def orbit (k : Fin 22) : Finset (Fin 4 → Fin 1 ⊕ Fin 3)
 ```
 
-**`Lorentz.RankFour.isHalfTurnFixed_iff_exists_mem_orbit`**, a lemma, [line 531](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Relativity/LorentzGroup/Invariants/RankFour.lean#L531).
+**`Lorentz.RankFour.isHalfTurnFixed_iff_exists_mem_orbit`**, a lemma, [line 531](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Relativity/LorentzGroup/Invariants/RankFour.lean#L531).
 
 > The vectors in one of the `22` orbits are exactly the half-turn fixed ones, a finite check.
 
@@ -425,7 +425,7 @@ lemma isHalfTurnFixed_iff_exists_mem_orbit :
     ∀ d, IsHalfTurnFixed d ↔ ∃ k, d ∈ orbit k
 ```
 
-**`Lorentz.RankFour.disjoint_orbit`**, a lemma, [line 536](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Relativity/LorentzGroup/Invariants/RankFour.lean#L536).
+**`Lorentz.RankFour.disjoint_orbit`**, a lemma, [line 536](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Relativity/LorentzGroup/Invariants/RankFour.lean#L536).
 
 > Different orbits share no index vector, a finite check.
 
@@ -433,7 +433,7 @@ lemma isHalfTurnFixed_iff_exists_mem_orbit :
 lemma disjoint_orbit : ∀ k l : Fin 22, k ≠ l → Disjoint (orbit k) (orbit l)
 ```
 
-**`Lorentz.RankFour.eq_of_mem_orbit`**, a lemma, [line 540](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Relativity/LorentzGroup/Invariants/RankFour.lean#L540).
+**`Lorentz.RankFour.eq_of_mem_orbit`**, a lemma, [line 540](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Relativity/LorentzGroup/Invariants/RankFour.lean#L540).
 
 > An index vector lies in at most one orbit.
 
@@ -442,7 +442,7 @@ lemma eq_of_mem_orbit {k l : Fin 22} {d : Fin 4 → Fin 1 ⊕ Fin 3}
     (hk : d ∈ orbit k) (hl : d ∈ orbit l) : k = l
 ```
 
-**`Lorentz.RankFour.eq_orbitRep_of_mem_orbit`**, a lemma, [line 545](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Relativity/LorentzGroup/Invariants/RankFour.lean#L545).
+**`Lorentz.RankFour.eq_orbitRep_of_mem_orbit`**, a lemma, [line 545](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Relativity/LorentzGroup/Invariants/RankFour.lean#L545).
 
 > A tensor unchanged by cycling takes, on an orbit, its value at the representative.
 
@@ -452,7 +452,7 @@ lemma eq_orbitRep_of_mem_orbit {c : (Fin 4 → Fin 1 ⊕ Fin 3) → ℂ}
     (h : d ∈ orbit k) : c d = c (orbitRep k)
 ```
 
-**`Lorentz.RankFour.ofOrbitCoord`**, a def, [line 555](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Relativity/LorentzGroup/Invariants/RankFour.lean#L555).
+**`Lorentz.RankFour.ofOrbitCoord`**, a def, [line 555](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Relativity/LorentzGroup/Invariants/RankFour.lean#L555).
 
 > The coefficient tensor with orbit coordinates `b`, and `0` off the orbits.
 
@@ -460,7 +460,7 @@ lemma eq_orbitRep_of_mem_orbit {c : (Fin 4 → Fin 1 ⊕ Fin 3) → ℂ}
 noncomputable def ofOrbitCoord (b : Fin 22 → ℂ) (d : Fin 4 → Fin 1 ⊕ Fin 3) : ℂ
 ```
 
-**`Lorentz.RankFour.eq_ofOrbitCoord`**, a lemma, [line 559](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Relativity/LorentzGroup/Invariants/RankFour.lean#L559).
+**`Lorentz.RankFour.eq_ofOrbitCoord`**, a lemma, [line 559](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Relativity/LorentzGroup/Invariants/RankFour.lean#L559).
 
 > An invariant coefficient tensor is rebuilt from its `22` orbit coordinates.
 
@@ -469,7 +469,7 @@ lemma eq_ofOrbitCoord {c : (Fin 4 → Fin 1 ⊕ Fin 3) → ℂ} (hc : IsInvarian
     c = ofOrbitCoord fun k => c (orbitRep k)
 ```
 
-**`Lorentz.RankFour.sum_mul_ofOrbitCoord`**, a lemma, [line 573](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Relativity/LorentzGroup/Invariants/RankFour.lean#L573).
+**`Lorentz.RankFour.sum_mul_ofOrbitCoord`**, a lemma, [line 573](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Relativity/LorentzGroup/Invariants/RankFour.lean#L573).
 
 > Contracting against such a tensor collects the `256` index vectors into the `22` orbits.
 
@@ -488,7 +488,7 @@ lemma sum_mul_ofOrbitCoord (f : (Fin 4 → Fin 1 ⊕ Fin 3) → ℂ) (b : Fin 22
 > integers are not meant to be read; `M` is not symmetric, a row carrying three cyclings and a
 > column an orbit.
 
-**`Lorentz.RankFour.orbitMatrix`**, a def, [line 596](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Relativity/LorentzGroup/Invariants/RankFour.lean#L596).
+**`Lorentz.RankFour.orbitMatrix`**, a def, [line 596](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Relativity/LorentzGroup/Invariants/RankFour.lean#L596).
 
 > Forty-eight times the weight-zero projection along `z` on the orbit coordinates, the three
 > cyclings summed and not averaged, so `48 = 3 * 16`. Meaningful only through
@@ -498,7 +498,7 @@ lemma sum_mul_ofOrbitCoord (f : (Fin 4 → Fin 1 ⊕ Fin 3) → ℂ) (b : Fin 22
 def orbitMatrix : Matrix (Fin 22) (Fin 22) ℤ
 ```
 
-**`Lorentz.RankFour.orbitMatrix_apply`**, a lemma, [line 633](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Relativity/LorentzGroup/Invariants/RankFour.lean#L633).
+**`Lorentz.RankFour.orbitMatrix_apply`**, a lemma, [line 633](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Relativity/LorentzGroup/Invariants/RankFour.lean#L633).
 
 > Each entry sums the `z`-axis transitions from orbit `k` into orbit `l`, a finite check.
 
@@ -509,7 +509,7 @@ lemma orbitMatrix_apply : ∀ k l : Fin 22,
       + transitionZ 2 (cycIdx (cycIdx (orbitRep k))) e 0)
 ```
 
-**`Lorentz.RankFour.orbitMatrix_mulVec`**, a lemma, [line 640](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Relativity/LorentzGroup/Invariants/RankFour.lean#L640).
+**`Lorentz.RankFour.orbitMatrix_mulVec`**, a lemma, [line 640](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Relativity/LorentzGroup/Invariants/RankFour.lean#L640).
 
 > The orbit coordinates of an invariant coefficient tensor satisfy `M b = 48 b`.
 
@@ -539,7 +539,7 @@ lemma orbitMatrix_mulVec {c : (Fin 4 → Fin 1 ⊕ Fin 3) → ℂ}
 > `λ (3λ - 2) (3λ - 1) (12λ² - 11λ + 1) / 4` at `λ = M / 48` with denominators cleared, but that
 > is only where it came from: the file proves nothing about the spectrum.
 
-**`Lorentz.RankFour.contractionOrbit`**, a def, [line 683](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Relativity/LorentzGroup/Invariants/RankFour.lean#L683).
+**`Lorentz.RankFour.contractionOrbit`**, a def, [line 683](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Relativity/LorentzGroup/Invariants/RankFour.lean#L683).
 
 > The orbit coordinates of the `i`-th coefficient tensor.
 
@@ -547,7 +547,7 @@ lemma orbitMatrix_mulVec {c : (Fin 4 → Fin 1 ⊕ Fin 3) → ℂ}
 def contractionOrbit (i : Fin 4) (k : Fin 22) : ℤ
 ```
 
-**`Lorentz.RankFour.contractionWeight`**, a def, [line 688](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Relativity/LorentzGroup/Invariants/RankFour.lean#L688).
+**`Lorentz.RankFour.contractionWeight`**, a def, [line 688](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Relativity/LorentzGroup/Invariants/RankFour.lean#L688).
 
 > Four rows of `22` integers paired with `contractionOrbit` to build `projector`. Found by
 > computation and characterised by `contractionWeight_mul_contractionOrbit`; unrelated to boost
@@ -557,7 +557,7 @@ def contractionOrbit (i : Fin 4) (k : Fin 22) : ℤ
 def contractionWeight : Fin 4 → Fin 22 → ℤ
 ```
 
-**`Lorentz.RankFour.contractionWeight_mul_contractionOrbit`**, a lemma, [line 695](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Relativity/LorentzGroup/Invariants/RankFour.lean#L695).
+**`Lorentz.RankFour.contractionWeight_mul_contractionOrbit`**, a lemma, [line 695](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Relativity/LorentzGroup/Invariants/RankFour.lean#L695).
 
 > The weight rows and orbit coordinates pair to `24 δᵢⱼ`, a finite check.
 
@@ -566,7 +566,7 @@ lemma contractionWeight_mul_contractionOrbit : ∀ i j : Fin 4,
     ∑ k, contractionWeight i k * contractionOrbit j k = if i = j then 24 else 0
 ```
 
-**`Lorentz.RankFour.projector`**, a def, [line 700](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Relativity/LorentzGroup/Invariants/RankFour.lean#L700).
+**`Lorentz.RankFour.projector`**, a def, [line 700](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Relativity/LorentzGroup/Invariants/RankFour.lean#L700).
 
 > Four rank-one matrices, so it sends any vector to a combination of the `v i`.
 
@@ -574,7 +574,7 @@ lemma contractionWeight_mul_contractionOrbit : ∀ i j : Fin 4,
 def projector : Matrix (Fin 22) (Fin 22) ℤ
 ```
 
-**`Lorentz.RankFour.certificate`**, a lemma, [line 704](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Relativity/LorentzGroup/Invariants/RankFour.lean#L704).
+**`Lorentz.RankFour.certificate`**, a lemma, [line 704](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Relativity/LorentzGroup/Invariants/RankFour.lean#L704).
 
 > An identity between `22 × 22` integer matrices, a finite check over `484` entries.
 
@@ -584,7 +584,7 @@ lemma certificate :
       * (orbitMatrix * orbitMatrix - 44 • orbitMatrix + 192 • 1) = 393216 • projector
 ```
 
-**`Lorentz.RankFour.projector_mulVec`**, a lemma, [line 716](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Relativity/LorentzGroup/Invariants/RankFour.lean#L716).
+**`Lorentz.RankFour.projector_mulVec`**, a lemma, [line 716](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Relativity/LorentzGroup/Invariants/RankFour.lean#L716).
 
 > The integer projector matrix acts on invariant orbit coordinates by multiplication by `24`.
 > The `24` is the normalization of `projector`: each factor of the certificate acts on such a
@@ -598,7 +598,7 @@ lemma projector_mulVec {c : (Fin 4 → Fin 1 ⊕ Fin 3) → ℂ} (hc : IsInvaria
       = (24 : ℂ) • fun k => c (orbitRep k)
 ```
 
-**`Lorentz.RankFour.orbitCoord_eq`**, a lemma, [line 757](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Relativity/LorentzGroup/Invariants/RankFour.lean#L757).
+**`Lorentz.RankFour.orbitCoord_eq`**, a lemma, [line 757](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Relativity/LorentzGroup/Invariants/RankFour.lean#L757).
 
 > `24` times an orbit coordinate of an invariant tensor, read entry by entry off the previous
 > lemma: `projector` is built from the columns `contractionOrbit i` and the rows
@@ -611,7 +611,7 @@ lemma orbitCoord_eq {c : (Fin 4 → Fin 1 ⊕ Fin 3) → ℂ} (hc : IsInvariantC
       = ∑ i, (contractionOrbit i k : ℂ) * ∑ l, (contractionWeight i l : ℂ) * c (orbitRep l)
 ```
 
-**`Lorentz.RankFour.exists_eq_sum`**, a lemma, [line 771](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Relativity/LorentzGroup/Invariants/RankFour.lean#L771).
+**`Lorentz.RankFour.exists_eq_sum`**, a lemma, [line 771](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Relativity/LorentzGroup/Invariants/RankFour.lean#L771).
 
 > An invariant coefficient tensor is a combination of the four.
 
@@ -626,7 +626,7 @@ lemma exists_eq_sum {c : (Fin 4 → Fin 1 ⊕ Fin 3) → ℂ} (hc : IsInvariantC
 > `f (contractionTensor i)`; conversely those images are invariant, so a combination of them plus
 > an invariant of `S` is an invariant of `LinearMap.range f ⊔ S`.
 
-**`Lorentz.RankFour.reducesInvariantsTo_span_contractionTensor`**, a lemma, [line 803](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Relativity/LorentzGroup/Invariants/RankFour.lean#L803).
+**`Lorentz.RankFour.reducesInvariantsTo_span_contractionTensor`**, a lemma, [line 803](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Relativity/LorentzGroup/Invariants/RankFour.lean#L803).
 
 > The invariants of the range of `f` reduce to the span of the images of the four invariant
 > tensors.
@@ -637,7 +637,7 @@ lemma reducesInvariantsTo_span_contractionTensor (hf : IsLorentzCovariant 4 B re
       (Submodule.span ℂ (Set.range fun i => f (contractionTensor i)))
 ```
 
-**`Lorentz.RankFour.mem_range_sup_invariant_iff`**, a lemma, [line 814](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Relativity/LorentzGroup/Invariants/RankFour.lean#L814).
+**`Lorentz.RankFour.mem_range_sup_invariant_iff`**, a lemma, [line 814](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Relativity/LorentzGroup/Invariants/RankFour.lean#L814).
 
 > A vector of `LinearMap.range f ⊔ S`, for `S` a Lorentz-stable submodule, is invariant exactly
 > when it is a combination of the images of the four invariant tensors plus an invariant of
@@ -664,4 +664,4 @@ lemma mem_range_sup_invariant_iff (hf : IsLorentzCovariant 4 B repLorentz f) (x 
 
 ## Sources
 
-- [PhyslibAlpha/Relativity/LorentzGroup/Invariants/RankFour.lean at 2a1dfe43](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Relativity/LorentzGroup/Invariants/RankFour.lean)
+- [PhyslibAlpha/Relativity/LorentzGroup/Invariants/RankFour.lean at 8c87bdfb](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Relativity/LorentzGroup/Invariants/RankFour.lean)

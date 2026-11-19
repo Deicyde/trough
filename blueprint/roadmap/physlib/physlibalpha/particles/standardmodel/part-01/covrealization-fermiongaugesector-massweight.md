@@ -8,7 +8,7 @@ proof: formalized
 
 # The gauge-fermion invariants below mass weight nine
 
-The module `PhyslibAlpha.Particles.StandardModel.CovRealization.FermionGaugeSector.MassWeight`, [PhyslibAlpha/Particles/StandardModel/CovRealization/FermionGaugeSector/MassWeight.lean](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/CovRealization/FermionGaugeSector/MassWeight.lean): 4 declarations, 4 with a docstring; 1 private, not shown.
+The module `PhyslibAlpha.Particles.StandardModel.CovRealization.FermionGaugeSector.MassWeight`, [PhyslibAlpha/Particles/StandardModel/CovRealization/FermionGaugeSector/MassWeight.lean](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/CovRealization/FermionGaugeSector/MassWeight.lean): 4 declarations, 4 with a docstring; 1 private, not shown.
 
 ## i. Overview
 
@@ -64,7 +64,7 @@ The module `PhyslibAlpha.Particles.StandardModel.CovRealization.FermionGaugeSect
 > underived fermion towers. It has exactly one fermion factor, so section A gives it the sign
 > `-1`, and a subspace of sign `-1` carries no invariant modulo a Lorentz-stable submodule.
 
-**`StandardModel.CovAlgebraRealization.mem_of_lorentz_invariant_sectorMassWeight_gauge_fermion_seven_sup`**, a lemma, [line 111](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/CovRealization/FermionGaugeSector/MassWeight.lean#L111).
+**`StandardModel.CovAlgebraRealization.mem_of_lorentz_invariant_sectorMassWeight_gauge_fermion_seven_sup`**, a lemma, [line 111](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/CovRealization/FermionGaugeSector/MassWeight.lean#L111).
 
 > Mass weight seven carries no Lorentz invariant modulo a Lorentz-stable submodule: a
 > Lorentz invariant of `sectorMassWeight {gauge, fermion} 7 ⊔ S` lies in `S`. The weight is
@@ -91,7 +91,7 @@ lemma mem_of_lorentz_invariant_sectorMassWeight_gauge_fermion_seven_sup (S : Sub
 > sector is already trivial at weight zero; the scalars, which force `0 < w` in the
 > gauge-sector statement, never appear.
 
-**`StandardModel.CovAlgebraRealization.mem_of_invariant_sectorMassWeight_gauge_fermion_lt_nine_sup`**, a lemma, [line 140](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/CovRealization/FermionGaugeSector/MassWeight.lean#L140).
+**`StandardModel.CovAlgebraRealization.mem_of_invariant_sectorMassWeight_gauge_fermion_lt_nine_sup`**, a lemma, [line 140](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/CovRealization/FermionGaugeSector/MassWeight.lean#L140).
 
 > Below mass weight nine the gauge-fermion sector carries no Lorentz invariant: a
 > Lorentz invariant of `sectorMassWeight {gauge, fermion} w ⊔ S` for `w < 9` lies in `S`.
@@ -105,7 +105,7 @@ lemma mem_of_invariant_sectorMassWeight_gauge_fermion_lt_nine_sup (w : ℕ) (hw 
     (hL : ∀ g : SL(2,ℂ), repLorentz g x = x) : x ∈ S
 ```
 
-**`StandardModel.CovAlgebraRealization.mem_sectorMassWeight_gauge_fermion_lt_nine_sup_and_gauge_lorentz_invariant_iff`**, a lemma, [line 156](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/CovRealization/FermionGaugeSector/MassWeight.lean#L156).
+**`StandardModel.CovAlgebraRealization.mem_sectorMassWeight_gauge_fermion_lt_nine_sup_and_gauge_lorentz_invariant_iff`**, a lemma, [line 156](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/CovRealization/FermionGaugeSector/MassWeight.lean#L156).
 
 > The classification below mass weight nine as an equivalence, in the shape of the gauge-
 > and Yukawa-sector statements: an element of `sectorMassWeight {gauge, fermion} w ⊔ S` for
@@ -125,7 +125,7 @@ lemma mem_sectorMassWeight_gauge_fermion_lt_nine_sup_and_gauge_lorentz_invariant
           ∧ x = y
 ```
 
-**`StandardModel.CovAlgebraRealization.mem_sectorMassWeight_gauge_fermion_lt_nine_sup_and_gauge_lorentz_invariant_iff_mem`**, a lemma, [line 174](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/CovRealization/FermionGaugeSector/MassWeight.lean#L174).
+**`StandardModel.CovAlgebraRealization.mem_sectorMassWeight_gauge_fermion_lt_nine_sup_and_gauge_lorentz_invariant_iff_mem`**, a lemma, [line 174](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/CovRealization/FermionGaugeSector/MassWeight.lean#L174).
 
 > The same classification without the existential: below mass weight nine an element of
 > `sectorMassWeight {gauge, fermion} w ⊔ S` fixed by both groups is an element of `S` fixed
@@ -153,4 +153,4 @@ lemma mem_sectorMassWeight_gauge_fermion_lt_nine_sup_and_gauge_lorentz_invariant
 
 ## Sources
 
-- [PhyslibAlpha/Particles/StandardModel/CovRealization/FermionGaugeSector/MassWeight.lean at 2a1dfe43](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/CovRealization/FermionGaugeSector/MassWeight.lean)
+- [PhyslibAlpha/Particles/StandardModel/CovRealization/FermionGaugeSector/MassWeight.lean at 8c87bdfb](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/CovRealization/FermionGaugeSector/MassWeight.lean)

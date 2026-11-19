@@ -8,12 +8,12 @@ proof: formalized
 
 # Parametric Integration
 
-The module `Physlib.Mathematics.Calculus.ParametricIntegration`, [Physlib/Mathematics/Calculus/ParametricIntegration.lean](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/Mathematics/Calculus/ParametricIntegration.lean): 7 declarations, 1 with a docstring.
+The module `Physlib.Mathematics.Calculus.ParametricIntegration`, [Physlib/Mathematics/Calculus/ParametricIntegration.lean](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Mathematics/Calculus/ParametricIntegration.lean): 7 declarations, 1 with a docstring.
 
 > In this module we give some lemmas around parametric integration in Lean.
 > These extend some lemmas in Mathlib, and give them in a more physics-friendly way.
 
-**`hasFDerivAt_parametric_intervalIntegral_of_contDiff`**, a lemma, [line 30](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/Mathematics/Calculus/ParametricIntegration.lean#L30).
+**`hasFDerivAt_parametric_intervalIntegral_of_contDiff`**, a lemma, [line 30](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Mathematics/Calculus/ParametricIntegration.lean#L30).
 
 ```lean
 lemma hasFDerivAt_parametric_intervalIntegral_of_contDiff
@@ -22,7 +22,7 @@ lemma hasFDerivAt_parametric_intervalIntegral_of_contDiff
       (∫ (t : ℝ) in 0..1, fderiv ℝ (F · t) x₀ ∂(volume)) x₀
 ```
 
-**`fderiv_apply_parametric_intervalIntegral`**, a lemma, [line 59](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/Mathematics/Calculus/ParametricIntegration.lean#L59).
+**`fderiv_apply_parametric_intervalIntegral`**, a lemma, [line 59](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Mathematics/Calculus/ParametricIntegration.lean#L59).
 
 ```lean
 lemma fderiv_apply_parametric_intervalIntegral
@@ -31,7 +31,7 @@ lemma fderiv_apply_parametric_intervalIntegral
       ∫ (t : ℝ) in 0..1, fderiv ℝ (F · t) x₀ v ∂(volume)
 ```
 
-**`fderiv_parametric_intervalIntegral`**, a lemma, [line 68](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/Mathematics/Calculus/ParametricIntegration.lean#L68).
+**`fderiv_parametric_intervalIntegral`**, a lemma, [line 68](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Mathematics/Calculus/ParametricIntegration.lean#L68).
 
 ```lean
 lemma fderiv_parametric_intervalIntegral
@@ -40,7 +40,7 @@ lemma fderiv_parametric_intervalIntegral
       fun x => ∫ (t : ℝ) in 0..1, fderiv ℝ (F · t) x ∂(volume)
 ```
 
-**`contDiff_one_parametric_intervalIntegral_of_contDiff`**, a lemma, [line 76](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/Mathematics/Calculus/ParametricIntegration.lean#L76).
+**`contDiff_one_parametric_intervalIntegral_of_contDiff`**, a lemma, [line 76](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Mathematics/Calculus/ParametricIntegration.lean#L76).
 
 ```lean
 lemma contDiff_one_parametric_intervalIntegral_of_contDiff
@@ -48,7 +48,7 @@ lemma contDiff_one_parametric_intervalIntegral_of_contDiff
     ContDiff ℝ 1 (fun (x : M) => ∫ (t : ℝ) in 0..1, F x t ∂(volume))
 ```
 
-**`contDiff_succ_parametric_intervalIntegral_of_contDiff`**, a lemma, [line 83](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/Mathematics/Calculus/ParametricIntegration.lean#L83).
+**`contDiff_succ_parametric_intervalIntegral_of_contDiff`**, a lemma, [line 83](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Mathematics/Calculus/ParametricIntegration.lean#L83).
 
 ```lean
 lemma contDiff_succ_parametric_intervalIntegral_of_contDiff {n : ℕ} [FiniteDimensional ℝ M]
@@ -56,7 +56,7 @@ lemma contDiff_succ_parametric_intervalIntegral_of_contDiff {n : ℕ} [FiniteDim
     ContDiff ℝ (n + 1) (fun (x : M) => ∫ (t : ℝ) in 0..1, F x t ∂(volume))
 ```
 
-**`contDiff_parametric_intervalIntegral_of_contDiff`**, a lemma, [line 96](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/Mathematics/Calculus/ParametricIntegration.lean#L96).
+**`contDiff_parametric_intervalIntegral_of_contDiff`**, a lemma, [line 96](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Mathematics/Calculus/ParametricIntegration.lean#L96).
 
 ```lean
 lemma contDiff_parametric_intervalIntegral_of_contDiff {n : ℕ} {M : Type}
@@ -65,7 +65,7 @@ lemma contDiff_parametric_intervalIntegral_of_contDiff {n : ℕ} {M : Type}
     ContDiff ℝ n (fun (x : M) => ∫ (t : ℝ) in 0..1, F x t ∂(volume))
 ```
 
-**`hasDerivAt_intervalIntegral_of_contDiff`**, a lemma, [line 106](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/Mathematics/Calculus/ParametricIntegration.lean#L106).
+**`hasDerivAt_intervalIntegral_of_contDiff`**, a lemma, [line 106](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Mathematics/Calculus/ParametricIntegration.lean#L106).
 
 > Differentiation under the integral sign for a `C¹` integrand.
 
@@ -82,4 +82,4 @@ Its declarations' statements use no declaration of another module with an articl
 
 ## Sources
 
-- [Physlib/Mathematics/Calculus/ParametricIntegration.lean at 2a1dfe43](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/Mathematics/Calculus/ParametricIntegration.lean)
+- [Physlib/Mathematics/Calculus/ParametricIntegration.lean at 8c87bdfb](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Mathematics/Calculus/ParametricIntegration.lean)

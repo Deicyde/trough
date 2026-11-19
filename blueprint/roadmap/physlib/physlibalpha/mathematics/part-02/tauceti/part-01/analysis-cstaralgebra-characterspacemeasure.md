@@ -8,7 +8,7 @@ proof: formalized
 
 # Positive functionals on commutative C⋆-algebras are measures on the character space
 
-The module `PhyslibAlpha.Mathematics.TauCeti.Analysis.CStarAlgebra.CharacterSpaceMeasure`, [PhyslibAlpha/Mathematics/TauCeti/Analysis/CStarAlgebra/CharacterSpaceMeasure.lean](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Mathematics/TauCeti/Analysis/CStarAlgebra/CharacterSpaceMeasure.lean): 4 declarations, 4 with a docstring; 5 private, not shown.
+The module `PhyslibAlpha.Mathematics.TauCeti.Analysis.CStarAlgebra.CharacterSpaceMeasure`, [PhyslibAlpha/Mathematics/TauCeti/Analysis/CStarAlgebra/CharacterSpaceMeasure.lean](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Mathematics/TauCeti/Analysis/CStarAlgebra/CharacterSpaceMeasure.lean): 4 declarations, 4 with a docstring; 5 private, not shown.
 
 > Let `A` be a unital commutative C⋆-algebra, with character space `Δ = characterSpace ℂ A`.
 
@@ -48,7 +48,7 @@ The module `PhyslibAlpha.Mathematics.TauCeti.Analysis.CStarAlgebra.CharacterSpac
 
 ## A. Development
 
-**`LinearMap.exists_isFiniteMeasure_integral_characterSpace_eq`**, a lemma, [line 142](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Mathematics/TauCeti/Analysis/CStarAlgebra/CharacterSpaceMeasure.lean#L142).
+**`LinearMap.exists_isFiniteMeasure_integral_characterSpace_eq`**, a lemma, [line 142](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Mathematics/TauCeti/Analysis/CStarAlgebra/CharacterSpaceMeasure.lean#L142).
 
 > **Positive functionals on a commutative C⋆-algebra are measures on its character space.**
 > A linear functional on a unital commutative C⋆-algebra that is nonnegative on every
@@ -62,7 +62,7 @@ lemma LinearMap.exists_isFiniteMeasure_integral_characterSpace_eq (f : A →ₗ[
       ∀ a, f a = ∫ ω, ω a ∂μ
 ```
 
-**`WeakDual.CharacterSpace.integral_apply_star_mul_self`**, a lemma, [line 174](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Mathematics/TauCeti/Analysis/CStarAlgebra/CharacterSpaceMeasure.lean#L174).
+**`WeakDual.CharacterSpace.integral_apply_star_mul_self`**, a lemma, [line 174](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Mathematics/TauCeti/Analysis/CStarAlgebra/CharacterSpaceMeasure.lean#L174).
 
 > For a measure `μ` on the character space of a unital C⋆-algebra, integrating
 > `ω ↦ ω (star a * a) = |ω a|²` gives the squared `L²` norm of `ω ↦ ω a`. Hence if `μ` represents a
@@ -75,7 +75,7 @@ lemma WeakDual.CharacterSpace.integral_apply_star_mul_self {E : Type*} [CStarAlg
     ∫ ω, ω (star a * a) ∂μ = ((∫ ω, ‖ω a‖ ^ 2 ∂μ : ℝ) : ℂ)
 ```
 
-**`StarSubalgebra.integral_norm_sq_eq_norm_apply_sq`**, a lemma, [line 200](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Mathematics/TauCeti/Analysis/CStarAlgebra/CharacterSpaceMeasure.lean#L200).
+**`StarSubalgebra.integral_norm_sq_eq_norm_apply_sq`**, a lemma, [line 200](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Mathematics/TauCeti/Analysis/CStarAlgebra/CharacterSpaceMeasure.lean#L200).
 
 > For a closed star algebra `B` of operators, if a measure `μ` on the character space
 > represents the positive vector functional of `ξ`, then `∫ |ω a|² dμ(ω) = ‖a ξ‖²` for every
@@ -87,7 +87,7 @@ lemma StarSubalgebra.integral_norm_sq_eq_norm_apply_sq {μ : Measure (characterS
     ∫ ω, ‖ω a‖ ^ 2 ∂μ = ‖(a : H →L[ℂ] H) ξ‖ ^ 2
 ```
 
-**`StarSubalgebra.exists_isFiniteMeasure_integral_characterSpace_eq_inner`**, a lemma, [line 215](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Mathematics/TauCeti/Analysis/CStarAlgebra/CharacterSpaceMeasure.lean#L215).
+**`StarSubalgebra.exists_isFiniteMeasure_integral_characterSpace_eq_inner`**, a lemma, [line 215](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Mathematics/TauCeti/Analysis/CStarAlgebra/CharacterSpaceMeasure.lean#L215).
 
 > **Positive vector functionals are measures on the character space.** For a closed
 > commutative star algebra `B` of operators on a complex Hilbert space and a vector `ξ`, the
@@ -106,4 +106,4 @@ Its declarations' statements use no declaration of another module with an articl
 
 ## Sources
 
-- [PhyslibAlpha/Mathematics/TauCeti/Analysis/CStarAlgebra/CharacterSpaceMeasure.lean at 2a1dfe43](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Mathematics/TauCeti/Analysis/CStarAlgebra/CharacterSpaceMeasure.lean)
+- [PhyslibAlpha/Mathematics/TauCeti/Analysis/CStarAlgebra/CharacterSpaceMeasure.lean at 8c87bdfb](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Mathematics/TauCeti/Analysis/CStarAlgebra/CharacterSpaceMeasure.lean)

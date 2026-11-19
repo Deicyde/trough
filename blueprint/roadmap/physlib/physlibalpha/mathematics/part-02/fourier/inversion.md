@@ -8,7 +8,7 @@ proof: formalized
 
 # Fourier inversion for Schwartz functions on the line
 
-The module `PhyslibAlpha.Mathematics.Fourier.Inversion`, [PhyslibAlpha/Mathematics/Fourier/Inversion.lean](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Mathematics/Fourier/Inversion.lean): 3 declarations, 3 with a docstring.
+The module `PhyslibAlpha.Mathematics.Fourier.Inversion`, [PhyslibAlpha/Mathematics/Fourier/Inversion.lean](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Mathematics/Fourier/Inversion.lean): 3 declarations, 3 with a docstring.
 
 > A Schwartz function on the line is the integral of its transform against the exponential.
 
@@ -34,7 +34,7 @@ The module `PhyslibAlpha.Mathematics.Fourier.Inversion`, [PhyslibAlpha/Mathemati
 > - `SchwartzMap.integral_char_mul_fourier` : the same with the product.
 > - `SchwartzMap.integrable_char_mul_fourier` : the integrand is integrable.
 
-**`SchwartzMap.integral_char_smul_fourier`**, a lemma, [line 53](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Mathematics/Fourier/Inversion.lean#L53).
+**`SchwartzMap.integral_char_smul_fourier`**, a lemma, [line 53](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Mathematics/Fourier/Inversion.lean#L53).
 
 > **Fourier inversion on the line.**
 
@@ -43,7 +43,7 @@ lemma integral_char_smul_fourier (g : 𝓢(ℝ, ℂ)) (y : ℝ) :
     ∫ ξ : ℝ, (𝐞 (y * ξ) : ℂ) • 𝓕 g ξ = g y
 ```
 
-**`SchwartzMap.integral_char_mul_fourier`**, a lemma, [line 62](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Mathematics/Fourier/Inversion.lean#L62).
+**`SchwartzMap.integral_char_mul_fourier`**, a lemma, [line 62](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Mathematics/Fourier/Inversion.lean#L62).
 
 > Fourier inversion on the line with the product in place of the scalar action.
 
@@ -52,7 +52,7 @@ lemma integral_char_mul_fourier (g : 𝓢(ℝ, ℂ)) (y : ℝ) :
     ∫ ξ : ℝ, (𝐞 (y * ξ) : ℂ) * 𝓕 g ξ = g y
 ```
 
-**`SchwartzMap.integrable_char_mul_fourier`**, a lemma, [line 67](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Mathematics/Fourier/Inversion.lean#L67).
+**`SchwartzMap.integrable_char_mul_fourier`**, a lemma, [line 67](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Mathematics/Fourier/Inversion.lean#L67).
 
 > The integrand of Fourier inversion is integrable.
 
@@ -67,4 +67,4 @@ Its declarations' statements use no declaration of another module with an articl
 
 ## Sources
 
-- [PhyslibAlpha/Mathematics/Fourier/Inversion.lean at 2a1dfe43](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Mathematics/Fourier/Inversion.lean)
+- [PhyslibAlpha/Mathematics/Fourier/Inversion.lean at 8c87bdfb](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Mathematics/Fourier/Inversion.lean)

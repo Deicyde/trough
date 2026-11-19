@@ -8,7 +8,7 @@ proof: formalized
 
 # The kinetic term (Electromagnetism/Dynamics/KineticTerm)
 
-The module `Physlib.Electromagnetism.Dynamics.KineticTerm`, [Physlib/Electromagnetism/Dynamics/KineticTerm.lean](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/Electromagnetism/Dynamics/KineticTerm.lean): 23 declarations, 2 with a docstring.
+The module `Physlib.Electromagnetism.Dynamics.KineticTerm`, [Physlib/Electromagnetism/Dynamics/KineticTerm.lean](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Electromagnetism/Dynamics/KineticTerm.lean): 23 declarations, 2 with a docstring.
 
 ## i. Overview
 
@@ -39,7 +39,7 @@ The module `Physlib.Electromagnetism.Dynamics.KineticTerm`, [Physlib/Electromagn
 > The kinetic term is `- 1/(4 μ₀) F_μν F^μν`. We define this and show that it is
 > Lorentz invariant.
 
-**`Electromagnetism.ElectromagneticPotential.kineticTerm`**, a def, [line 87](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/Electromagnetism/Dynamics/KineticTerm.lean#L87).
+**`Electromagnetism.ElectromagneticPotential.kineticTerm`**, a def, [line 87](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Electromagnetism/Dynamics/KineticTerm.lean#L87).
 
 > The kinetic energy from an electromagnetic potential.
 
@@ -52,7 +52,7 @@ noncomputable def kineticTerm {d} (𝓕 : FreeSpace) (A : ElectromagneticPotenti
 
 > We show that the kinetic energy is Lorentz invariant.
 
-**`Electromagnetism.ElectromagneticPotential.kineticTerm_equivariant`**, a lemma, [line 100](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/Electromagnetism/Dynamics/KineticTerm.lean#L100).
+**`Electromagnetism.ElectromagneticPotential.kineticTerm_equivariant`**, a lemma, [line 100](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Electromagnetism/Dynamics/KineticTerm.lean#L100).
 
 ```lean
 lemma kineticTerm_equivariant {d} {𝓕 : FreeSpace} (A : ElectromagneticPotential d)
@@ -63,7 +63,7 @@ lemma kineticTerm_equivariant {d} {𝓕 : FreeSpace} (A : ElectromagneticPotenti
 
 ### A.2. Kinetic term simplified expressions
 
-**`Electromagnetism.ElectromagneticPotential.kineticTerm_eq_sum`**, a lemma, [line 116](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/Electromagnetism/Dynamics/KineticTerm.lean#L116).
+**`Electromagnetism.ElectromagneticPotential.kineticTerm_eq_sum`**, a lemma, [line 116](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Electromagnetism/Dynamics/KineticTerm.lean#L116).
 
 ```lean
 lemma kineticTerm_eq_sum {d} {𝓕 : FreeSpace} (A : ElectromagneticPotential d) (x : SpaceTime d) :
@@ -72,7 +72,7 @@ lemma kineticTerm_eq_sum {d} {𝓕 : FreeSpace} (A : ElectromagneticPotential d)
       toScalar {A.toFieldStrength x | [μ] [ν]}ᵀ * toScalar {A.toFieldStrength x | [μ'] [ν']}ᵀ
 ```
 
-**`Electromagnetism.ElectromagneticPotential.kineticTerm_eq_sum_sq`**, a lemma, [line 162](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/Electromagnetism/Dynamics/KineticTerm.lean#L162).
+**`Electromagnetism.ElectromagneticPotential.kineticTerm_eq_sum_sq`**, a lemma, [line 162](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Electromagnetism/Dynamics/KineticTerm.lean#L162).
 
 ```lean
 lemma kineticTerm_eq_sum_sq {d} {𝓕 : FreeSpace}
@@ -80,7 +80,7 @@ lemma kineticTerm_eq_sum_sq {d} {𝓕 : FreeSpace}
     - 1/(4 * 𝓕.μ₀) * ∑ μ, ∑ ν, η μ μ * η ν ν * ‖toScalar {A.toFieldStrength x | [μ] [ν]}ᵀ‖ ^ 2
 ```
 
-**`Electromagnetism.ElectromagneticPotential.kineticTerm_eq_sum_potential`**, a lemma, [line 174](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/Electromagnetism/Dynamics/KineticTerm.lean#L174).
+**`Electromagnetism.ElectromagneticPotential.kineticTerm_eq_sum_potential`**, a lemma, [line 174](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Electromagnetism/Dynamics/KineticTerm.lean#L174).
 
 ```lean
 lemma kineticTerm_eq_sum_potential {d} {𝓕 : FreeSpace}
@@ -91,7 +91,7 @@ lemma kineticTerm_eq_sum_potential {d} {𝓕 : FreeSpace}
 
 ### A.3. The kinetic term in terms of the electric and magnetic fields
 
-**`Electromagnetism.ElectromagneticPotential.kineticTerm_eq_electric_magnetic`**, a lemma, [line 215](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/Electromagnetism/Dynamics/KineticTerm.lean#L215).
+**`Electromagnetism.ElectromagneticPotential.kineticTerm_eq_electric_magnetic`**, a lemma, [line 215](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Electromagnetism/Dynamics/KineticTerm.lean#L215).
 
 ```lean
 lemma kineticTerm_eq_electric_magnetic {𝓕 : FreeSpace} (A : ElectromagneticPotential) (t : Time)
@@ -100,7 +100,7 @@ lemma kineticTerm_eq_electric_magnetic {𝓕 : FreeSpace} (A : ElectromagneticPo
     1/2 * (𝓕.ε₀ * ‖A.electricField 𝓕.c t x‖ ^ 2 - (1 / 𝓕.μ₀) * ‖A.magneticField 𝓕.c t x‖ ^ 2)
 ```
 
-**`Electromagnetism.ElectromagneticPotential.kineticTerm_eq_electric_magnetic'`**, a lemma, [line 231](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/Electromagnetism/Dynamics/KineticTerm.lean#L231).
+**`Electromagnetism.ElectromagneticPotential.kineticTerm_eq_electric_magnetic'`**, a lemma, [line 231](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Electromagnetism/Dynamics/KineticTerm.lean#L231).
 
 ```lean
 lemma kineticTerm_eq_electric_magnetic' {𝓕 : FreeSpace} {A : ElectromagneticPotential}
@@ -112,7 +112,7 @@ lemma kineticTerm_eq_electric_magnetic' {𝓕 : FreeSpace} {A : ElectromagneticP
 
 ### A.4. The kinetic term in terms of the electric and magnetic matrix
 
-**`Electromagnetism.ElectromagneticPotential.kineticTerm_eq_electricMatrix_magneticFieldMatrix_time_space`**, a lemma, [line 244](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/Electromagnetism/Dynamics/KineticTerm.lean#L244).
+**`Electromagnetism.ElectromagneticPotential.kineticTerm_eq_electricMatrix_magneticFieldMatrix_time_space`**, a lemma, [line 244](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Electromagnetism/Dynamics/KineticTerm.lean#L244).
 
 ```lean
 lemma kineticTerm_eq_electricMatrix_magneticFieldMatrix_time_space {𝓕 : FreeSpace}
@@ -123,7 +123,7 @@ lemma kineticTerm_eq_electricMatrix_magneticFieldMatrix_time_space {𝓕 : FreeS
     (1 / (2 * 𝓕.μ₀)) * ∑ i, ∑ j, ‖A.magneticFieldMatrix 𝓕.c t x (i, j)‖ ^ 2)
 ```
 
-**`Electromagnetism.ElectromagneticPotential.kineticTerm_eq_electricMatrix_magneticFieldMatrix`**, a lemma, [line 278](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/Electromagnetism/Dynamics/KineticTerm.lean#L278).
+**`Electromagnetism.ElectromagneticPotential.kineticTerm_eq_electricMatrix_magneticFieldMatrix`**, a lemma, [line 278](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Electromagnetism/Dynamics/KineticTerm.lean#L278).
 
 ```lean
 lemma kineticTerm_eq_electricMatrix_magneticFieldMatrix {𝓕 : FreeSpace}
@@ -136,14 +136,14 @@ lemma kineticTerm_eq_electricMatrix_magneticFieldMatrix {𝓕 : FreeSpace}
 
 ### A.5. The kinetic term for constant fields
 
-**`Electromagnetism.ElectromagneticPotential.kineticTerm_const`**, a lemma, [line 293](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/Electromagnetism/Dynamics/KineticTerm.lean#L293).
+**`Electromagnetism.ElectromagneticPotential.kineticTerm_const`**, a lemma, [line 293](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Electromagnetism/Dynamics/KineticTerm.lean#L293).
 
 ```lean
 lemma kineticTerm_const {d} {𝓕 : FreeSpace} (A₀ : Lorentz.Vector d) :
     kineticTerm 𝓕 ⟨fun _ : SpaceTime d => A₀⟩ = 0
 ```
 
-**`Electromagnetism.ElectromagneticPotential.kineticTerm_add_const`**, a lemma, [line 298](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/Electromagnetism/Dynamics/KineticTerm.lean#L298).
+**`Electromagnetism.ElectromagneticPotential.kineticTerm_add_const`**, a lemma, [line 298](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Electromagnetism/Dynamics/KineticTerm.lean#L298).
 
 ```lean
 lemma kineticTerm_add_const {d} {𝓕 : FreeSpace} (A : ElectromagneticPotential d)
@@ -153,7 +153,7 @@ lemma kineticTerm_add_const {d} {𝓕 : FreeSpace} (A : ElectromagneticPotential
 
 ### A.6. Smoothness of the kinetic term
 
-**`Electromagnetism.ElectromagneticPotential.kineticTerm_contDiff`**, a lemma, [line 310](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/Electromagnetism/Dynamics/KineticTerm.lean#L310).
+**`Electromagnetism.ElectromagneticPotential.kineticTerm_contDiff`**, a lemma, [line 310](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Electromagnetism/Dynamics/KineticTerm.lean#L310).
 
 ```lean
 lemma kineticTerm_contDiff {d} {n : WithTop ℕ∞} {𝓕 : FreeSpace} (A : ElectromagneticPotential d)
@@ -165,7 +165,7 @@ lemma kineticTerm_contDiff {d} {n : WithTop ℕ∞} {𝓕 : FreeSpace} (A : Elec
 
 > This result is used in finding the canonical momentum.
 
-**`Electromagnetism.ElectromagneticPotential.kineticTerm_add_time_mul_const`**, a lemma, [line 325](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/Electromagnetism/Dynamics/KineticTerm.lean#L325).
+**`Electromagnetism.ElectromagneticPotential.kineticTerm_add_time_mul_const`**, a lemma, [line 325](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Electromagnetism/Dynamics/KineticTerm.lean#L325).
 
 ```lean
 lemma kineticTerm_add_time_mul_const {d} {𝓕 : FreeSpace} (A : ElectromagneticPotential d)
@@ -181,7 +181,7 @@ lemma kineticTerm_add_time_mul_const {d} {𝓕 : FreeSpace} (A : Electromagnetic
 > We define the variational gradient of the kinetic term, which is the left-hand side
 > of Gauss's law and Ampère's law in vacuum.
 
-**`Electromagnetism.ElectromagneticPotential.gradKineticTerm`**, a def, [line 377](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/Electromagnetism/Dynamics/KineticTerm.lean#L377).
+**`Electromagnetism.ElectromagneticPotential.gradKineticTerm`**, a def, [line 377](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Electromagnetism/Dynamics/KineticTerm.lean#L377).
 
 > The variational gradient of the kinetic term of an electromagnetic potential.
 
@@ -196,7 +196,7 @@ noncomputable def gradKineticTerm {d} (𝓕 : FreeSpace) (A : ElectromagneticPot
 > a complicated expression involving `fderiv`. This is not very useful in itself,
 > but acts as a starting point for further simplifications.
 
-**`Electromagnetism.ElectromagneticPotential.gradKineticTerm_eq_sum_fderiv`**, a lemma, [line 390](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/Electromagnetism/Dynamics/KineticTerm.lean#L390).
+**`Electromagnetism.ElectromagneticPotential.gradKineticTerm_eq_sum_fderiv`**, a lemma, [line 390](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Electromagnetism/Dynamics/KineticTerm.lean#L390).
 
 ```lean
 lemma gradKineticTerm_eq_sum_fderiv {d} {𝓕 : FreeSpace} (A : ElectromagneticPotential d)
@@ -221,7 +221,7 @@ lemma gradKineticTerm_eq_sum_fderiv {d} {𝓕 : FreeSpace} (A : ElectromagneticP
 > We rewrite the variational gradient as a simple double sum over
 > second derivatives of the potential.
 
-**`Electromagnetism.ElectromagneticPotential.gradKineticTerm_eq_sum_sum`**, a lemma, [line 441](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/Electromagnetism/Dynamics/KineticTerm.lean#L441).
+**`Electromagnetism.ElectromagneticPotential.gradKineticTerm_eq_sum_sum`**, a lemma, [line 441](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Electromagnetism/Dynamics/KineticTerm.lean#L441).
 
 ```lean
 lemma gradKineticTerm_eq_sum_sum {d} {𝓕 : FreeSpace}
@@ -236,7 +236,7 @@ lemma gradKineticTerm_eq_sum_sum {d} {𝓕 : FreeSpace}
 > We rewrite the variational gradient as a simple double sum over the
 > components of the field strength tensor.
 
-**`Electromagnetism.ElectromagneticPotential.gradKineticTerm_eq_fieldStrength`**, a lemma, [line 502](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/Electromagnetism/Dynamics/KineticTerm.lean#L502).
+**`Electromagnetism.ElectromagneticPotential.gradKineticTerm_eq_fieldStrength`**, a lemma, [line 502](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Electromagnetism/Dynamics/KineticTerm.lean#L502).
 
 ```lean
 lemma gradKineticTerm_eq_fieldStrength {d} {𝓕 : FreeSpace} (A : ElectromagneticPotential d)
@@ -251,7 +251,7 @@ lemma gradKineticTerm_eq_fieldStrength {d} {𝓕 : FreeSpace} (A : Electromagnet
 > We rewrite the variational gradient in terms of the electric and magnetic fields,
 > explicitly relating it to Gauss's law and Ampère's law.
 
-**`Electromagnetism.ElectromagneticPotential.gradKineticTerm_eq_electric_magnetic`**, a lemma, [line 546](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/Electromagnetism/Dynamics/KineticTerm.lean#L546).
+**`Electromagnetism.ElectromagneticPotential.gradKineticTerm_eq_electric_magnetic`**, a lemma, [line 546](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Electromagnetism/Dynamics/KineticTerm.lean#L546).
 
 ```lean
 lemma gradKineticTerm_eq_electric_magnetic {𝓕 : FreeSpace} (A : ElectromagneticPotential d)
@@ -264,7 +264,7 @@ lemma gradKineticTerm_eq_electric_magnetic {𝓕 : FreeSpace} (A : Electromagnet
       Lorentz.Vector.basis (Sum.inr i)
 ```
 
-**`Electromagnetism.ElectromagneticPotential.gradKineticTerm_eq_electric_magnetic_three`**, a lemma, [line 571](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/Electromagnetism/Dynamics/KineticTerm.lean#L571).
+**`Electromagnetism.ElectromagneticPotential.gradKineticTerm_eq_electric_magnetic_three`**, a lemma, [line 571](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Electromagnetism/Dynamics/KineticTerm.lean#L571).
 
 ```lean
 lemma gradKineticTerm_eq_electric_magnetic_three {𝓕 : FreeSpace} (A : ElectromagneticPotential)
@@ -279,7 +279,7 @@ lemma gradKineticTerm_eq_electric_magnetic_three {𝓕 : FreeSpace} (A : Electro
 
 ### B.5. Linearity properties of the variational gradient
 
-**`Electromagnetism.ElectromagneticPotential.gradKineticTerm_add`**, a lemma, [line 587](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/Electromagnetism/Dynamics/KineticTerm.lean#L587).
+**`Electromagnetism.ElectromagneticPotential.gradKineticTerm_add`**, a lemma, [line 587](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Electromagnetism/Dynamics/KineticTerm.lean#L587).
 
 ```lean
 lemma gradKineticTerm_add {d} {𝓕 : FreeSpace} (A1 A2 : ElectromagneticPotential d)
@@ -287,7 +287,7 @@ lemma gradKineticTerm_add {d} {𝓕 : FreeSpace} (A1 A2 : ElectromagneticPotenti
     (A1 + A2).gradKineticTerm 𝓕 = A1.gradKineticTerm 𝓕 + A2.gradKineticTerm 𝓕
 ```
 
-**`Electromagnetism.ElectromagneticPotential.gradKineticTerm_smul`**, a lemma, [line 609](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/Electromagnetism/Dynamics/KineticTerm.lean#L609).
+**`Electromagnetism.ElectromagneticPotential.gradKineticTerm_smul`**, a lemma, [line 609](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Electromagnetism/Dynamics/KineticTerm.lean#L609).
 
 ```lean
 lemma gradKineticTerm_smul {d} {𝓕 : FreeSpace} (A : ElectromagneticPotential d)
@@ -297,7 +297,7 @@ lemma gradKineticTerm_smul {d} {𝓕 : FreeSpace} (A : ElectromagneticPotential 
 
 ### B.6. HasVarGradientAt for the variational gradient
 
-**`Electromagnetism.ElectromagneticPotential.kineticTerm_hasVarGradientAt`**, a lemma, [line 641](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/Electromagnetism/Dynamics/KineticTerm.lean#L641).
+**`Electromagnetism.ElectromagneticPotential.kineticTerm_hasVarGradientAt`**, a lemma, [line 641](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Electromagnetism/Dynamics/KineticTerm.lean#L641).
 
 ```lean
 lemma kineticTerm_hasVarGradientAt {d} {𝓕 : FreeSpace} (A : ElectromagneticPotential d)
@@ -307,7 +307,7 @@ lemma kineticTerm_hasVarGradientAt {d} {𝓕 : FreeSpace} (A : ElectromagneticPo
 
 ### B.7. Gradient of the kinetic term in terms of the tensor derivative
 
-**`Electromagnetism.ElectromagneticPotential.gradKineticTerm_eq_tensorDeriv`**, a lemma, [line 679](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/Electromagnetism/Dynamics/KineticTerm.lean#L679).
+**`Electromagnetism.ElectromagneticPotential.gradKineticTerm_eq_tensorDeriv`**, a lemma, [line 679](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Electromagnetism/Dynamics/KineticTerm.lean#L679).
 
 ```lean
 lemma gradKineticTerm_eq_tensorDeriv {d} {𝓕 : FreeSpace}
@@ -326,4 +326,4 @@ lemma gradKineticTerm_eq_tensorDeriv {d} {𝓕 : FreeSpace}
 
 ## Sources
 
-- [Physlib/Electromagnetism/Dynamics/KineticTerm.lean at 2a1dfe43](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/Electromagnetism/Dynamics/KineticTerm.lean)
+- [Physlib/Electromagnetism/Dynamics/KineticTerm.lean at 8c87bdfb](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Electromagnetism/Dynamics/KineticTerm.lean)

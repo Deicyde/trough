@@ -8,7 +8,7 @@ proof: formalized
 
 # The gamma matrices need four dimensions
 
-The module `PhyslibAlpha.Relativity.Fermions.Dirac.MinimalDimension`, [PhyslibAlpha/Relativity/Fermions/Dirac/MinimalDimension.lean](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Relativity/Fermions/Dirac/MinimalDimension.lean): 11 declarations, 8 with a docstring.
+The module `PhyslibAlpha.Relativity.Fermions.Dirac.MinimalDimension`, [PhyslibAlpha/Relativity/Fermions/Dirac/MinimalDimension.lean](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Relativity/Fermions/Dirac/MinimalDimension.lean): 11 declarations, 8 with a docstring.
 
 ## i. Overview
 
@@ -36,7 +36,7 @@ The module `PhyslibAlpha.Relativity.Fermions.Dirac.MinimalDimension`, [PhyslibAl
 
 ## A. Clifford families
 
-**`Fermion.Dirac.IsCliffordFamily`**, a def, [line 60](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Relativity/Fermions/Dirac/MinimalDimension.lean#L60).
+**`Fermion.Dirac.IsCliffordFamily`**, a def, [line 60](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Relativity/Fermions/Dirac/MinimalDimension.lean#L60).
 
 > A family of `n × n` matrices with `γ^μ γ^ν + γ^ν γ^μ = 2 η^{μν} 1`.
 
@@ -44,19 +44,19 @@ The module `PhyslibAlpha.Relativity.Fermions.Dirac.MinimalDimension`, [PhyslibAl
 def IsCliffordFamily {n : ℕ} (γ : Fin 1 ⊕ Fin 3 → Matrix (Fin n) (Fin n) ℂ) : Prop
 ```
 
-**`Fermion.Dirac.IsCliffordFamily.mul_self`**, a lemma, [line 68](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Relativity/Fermions/Dirac/MinimalDimension.lean#L68).
+**`Fermion.Dirac.IsCliffordFamily.mul_self`**, a lemma, [line 68](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Relativity/Fermions/Dirac/MinimalDimension.lean#L68).
 
 ```lean
 lemma mul_self (μ : Fin 1 ⊕ Fin 3) : γ μ * γ μ = (minkowskiMatrix μ μ : ℂ) • 1
 ```
 
-**`Fermion.Dirac.IsCliffordFamily.mul_comm_of_ne`**, a lemma, [line 73](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Relativity/Fermions/Dirac/MinimalDimension.lean#L73).
+**`Fermion.Dirac.IsCliffordFamily.mul_comm_of_ne`**, a lemma, [line 73](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Relativity/Fermions/Dirac/MinimalDimension.lean#L73).
 
 ```lean
 lemma mul_comm_of_ne {μ ν : Fin 1 ⊕ Fin 3} (h : μ ≠ ν) : γ ν * γ μ = -(γ μ * γ ν)
 ```
 
-**`Fermion.Dirac.IsCliffordFamily.det_ne_zero`**, a lemma, [line 79](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Relativity/Fermions/Dirac/MinimalDimension.lean#L79).
+**`Fermion.Dirac.IsCliffordFamily.det_ne_zero`**, a lemma, [line 79](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Relativity/Fermions/Dirac/MinimalDimension.lean#L79).
 
 > Each member squares to `± 1`, so it is invertible.
 
@@ -66,7 +66,7 @@ lemma det_ne_zero (μ : Fin 1 ⊕ Fin 3) : (γ μ).det ≠ 0
 
 ## B. The size is even
 
-**`Fermion.Dirac.IsCliffordFamily.even`**, a lemma, [line 97](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Relativity/Fermions/Dirac/MinimalDimension.lean#L97).
+**`Fermion.Dirac.IsCliffordFamily.even`**, a lemma, [line 97](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Relativity/Fermions/Dirac/MinimalDimension.lean#L97).
 
 > **A Clifford family has even size.**
 
@@ -76,7 +76,7 @@ lemma even : Even n
 
 ## C. Size two is excluded
 
-**`Fermion.Dirac.IsCliffordFamily.involutions`**, a def, [line 114](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Relativity/Fermions/Dirac/MinimalDimension.lean#L114).
+**`Fermion.Dirac.IsCliffordFamily.involutions`**, a def, [line 114](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Relativity/Fermions/Dirac/MinimalDimension.lean#L114).
 
 > `γ^0, i γ^1, i γ^2, i γ^3`: four involutions that anticommute.
 
@@ -85,7 +85,7 @@ noncomputable def involutions (γ : Fin 1 ⊕ Fin 3 → Matrix (Fin n) (Fin n) �
     (μ : Fin 1 ⊕ Fin 3) : Matrix (Fin n) (Fin n) ℂ
 ```
 
-**`Fermion.Dirac.IsCliffordFamily.involutions_anticomm`**, a lemma, [line 119](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Relativity/Fermions/Dirac/MinimalDimension.lean#L119).
+**`Fermion.Dirac.IsCliffordFamily.involutions_anticomm`**, a lemma, [line 119](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Relativity/Fermions/Dirac/MinimalDimension.lean#L119).
 
 ```lean
 lemma involutions_anticomm (μ ν : Fin 1 ⊕ Fin 3) :
@@ -94,7 +94,7 @@ lemma involutions_anticomm (μ ν : Fin 1 ⊕ Fin 3) :
         (γ μ * γ ν + γ ν * γ μ)
 ```
 
-**`Fermion.Dirac.IsCliffordFamily.ne_two`**, a lemma, [line 127](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Relativity/Fermions/Dirac/MinimalDimension.lean#L127).
+**`Fermion.Dirac.IsCliffordFamily.ne_two`**, a lemma, [line 127](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Relativity/Fermions/Dirac/MinimalDimension.lean#L127).
 
 > **There are no `2 × 2` Clifford families**: they would give four anticommuting `2 × 2`
 > involutions.
@@ -103,7 +103,7 @@ lemma involutions_anticomm (μ ν : Fin 1 ⊕ Fin 3) :
 lemma ne_two : n ≠ 2
 ```
 
-**`Fermion.Dirac.IsCliffordFamily.four_le`**, a lemma, [line 145](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Relativity/Fermions/Dirac/MinimalDimension.lean#L145).
+**`Fermion.Dirac.IsCliffordFamily.four_le`**, a lemma, [line 145](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Relativity/Fermions/Dirac/MinimalDimension.lean#L145).
 
 > **A nonempty Clifford family has size at least four.**
 
@@ -113,7 +113,7 @@ lemma four_le (hn : n ≠ 0) : 4 ≤ n
 
 ## D. Dirac's matrices attain the bound
 
-**`Fermion.Dirac.isCliffordFamily_gamma`**, a lemma, [line 159](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Relativity/Fermions/Dirac/MinimalDimension.lean#L159).
+**`Fermion.Dirac.isCliffordFamily_gamma`**, a lemma, [line 159](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Relativity/Fermions/Dirac/MinimalDimension.lean#L159).
 
 > The Dirac gamma matrices, written as `4 × 4` matrices, are a Clifford family.
 
@@ -121,7 +121,7 @@ lemma four_le (hn : n ≠ 0) : 4 ≤ n
 lemma isCliffordFamily_gamma : IsCliffordFamily fun μ => endEquivMatrix (gamma μ)
 ```
 
-**`Fermion.Dirac.isLeast_size_isCliffordFamily`**, a lemma, [line 164](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Relativity/Fermions/Dirac/MinimalDimension.lean#L164).
+**`Fermion.Dirac.isLeast_size_isCliffordFamily`**, a lemma, [line 164](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Relativity/Fermions/Dirac/MinimalDimension.lean#L164).
 
 > **The gamma matrices need four dimensions (Dirac, 1928).** The smallest size of a nonempty
 > Clifford family is four.
@@ -142,4 +142,4 @@ lemma isLeast_size_isCliffordFamily :
 
 ## Sources
 
-- [PhyslibAlpha/Relativity/Fermions/Dirac/MinimalDimension.lean at 2a1dfe43](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Relativity/Fermions/Dirac/MinimalDimension.lean)
+- [PhyslibAlpha/Relativity/Fermions/Dirac/MinimalDimension.lean at 8c87bdfb](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Relativity/Fermions/Dirac/MinimalDimension.lean)

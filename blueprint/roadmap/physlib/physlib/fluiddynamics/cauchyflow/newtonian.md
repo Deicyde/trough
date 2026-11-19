@@ -8,7 +8,7 @@ proof: formalized
 
 # Newtonian stress law for Cauchy flows
 
-The module `Physlib.FluidDynamics.CauchyFlow.Newtonian`, [Physlib/FluidDynamics/CauchyFlow/Newtonian.lean](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/FluidDynamics/CauchyFlow/Newtonian.lean): 1 declaration, 1 with a docstring.
+The module `Physlib.FluidDynamics.CauchyFlow.Newtonian`, [Physlib/FluidDynamics/CauchyFlow/Newtonian.lean](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/FluidDynamics/CauchyFlow/Newtonian.lean): 1 declaration, 1 with a docstring.
 
 ## i. Overview
 
@@ -24,7 +24,7 @@ The module `Physlib.FluidDynamics.CauchyFlow.Newtonian`, [Physlib/FluidDynamics/
 
 ## A. Newtonian Cauchy flows
 
-**`FluidDynamics.CauchyFlow.IsNewtonian`**, a def, [line 44](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/FluidDynamics/CauchyFlow/Newtonian.lean#L44).
+**`FluidDynamics.CauchyFlow.IsNewtonian`**, a def, [line 44](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/FluidDynamics/CauchyFlow/Newtonian.lean#L44).
 
 > A Cauchy flow is Newtonian when its stress tensor has the Newtonian constitutive form.
 
@@ -41,4 +41,4 @@ def IsNewtonian
 
 ## Sources
 
-- [Physlib/FluidDynamics/CauchyFlow/Newtonian.lean at 2a1dfe43](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/FluidDynamics/CauchyFlow/Newtonian.lean)
+- [Physlib/FluidDynamics/CauchyFlow/Newtonian.lean at 8c87bdfb](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/FluidDynamics/CauchyFlow/Newtonian.lean)

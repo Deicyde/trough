@@ -1,9 +1,10 @@
 # ClassicalMechanics
 
-The folder [PhyslibAlpha/ClassicalMechanics/](https://github.com/leanprover-community/physlib/tree/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalMechanics): 1 module, with an article; then 4 folders below it, a page each, 16 modules in all.
+The folder [PhyslibAlpha/ClassicalMechanics/](https://github.com/leanprover-community/physlib/tree/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalMechanics): 1 module, with an article; then 5 folders below it, a page each, 44 modules in all.
 
 - [Coupled spring potential](coupledspringpotential.md)
 - [CentralForce](centralforce/README.md)
 - [LiouvilleIntegrable](liouvilleintegrable/README.md)
 - [MomentMap](momentmap/README.md)
 - [NortonDome](nortondome/README.md)
+- [OrbitalMechanics](orbitalmechanics/README.md)

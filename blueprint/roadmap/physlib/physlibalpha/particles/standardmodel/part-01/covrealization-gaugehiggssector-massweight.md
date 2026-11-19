@@ -8,7 +8,7 @@ proof: formalized
 
 # The gauge-Higgs invariants below mass weight nine
 
-The module `PhyslibAlpha.Particles.StandardModel.CovRealization.GaugeHiggsSector.MassWeight`, [PhyslibAlpha/Particles/StandardModel/CovRealization/GaugeHiggsSector/MassWeight.lean](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/CovRealization/GaugeHiggsSector/MassWeight.lean): 18 declarations, 18 with a docstring.
+The module `PhyslibAlpha.Particles.StandardModel.CovRealization.GaugeHiggsSector.MassWeight`, [PhyslibAlpha/Particles/StandardModel/CovRealization/GaugeHiggsSector/MassWeight.lean](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/CovRealization/GaugeHiggsSector/MassWeight.lean): 18 declarations, 18 with a docstring.
 
 ## i. Overview
 
@@ -68,7 +68,7 @@ The module `PhyslibAlpha.Particles.StandardModel.CovRealization.GaugeHiggsSector
 > field strength alone. A once-derived Higgs contributes an index of its own, and a
 > rank-two family against a Lorentz vector is a rank-three family.
 
-**`Lorentz.IsLorentzCovariant.mul_fixed`**, a lemma, [line 96](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/CovRealization/GaugeHiggsSector/MassWeight.lean#L96).
+**`Lorentz.IsLorentzCovariant.mul_fixed`**, a lemma, [line 96](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/CovRealization/GaugeHiggsSector/MassWeight.lean#L96).
 
 > Multiplying a Lorentz tensor family by a Lorentz-inert element gives a family of the
 > same rank: the element rides through the transformation law untouched.
@@ -81,7 +81,7 @@ lemma IsLorentzCovariant.mul_fixed {n : ℕ}
     IsLorentzCovariant n B repLorentz (ofComponents fun d => T d * y)
 ```
 
-**`Lorentz.ofComponents_mul_right`**, a lemma, [line 107](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/CovRealization/GaugeHiggsSector/MassWeight.lean#L107).
+**`Lorentz.ofComponents_mul_right`**, a lemma, [line 107](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/CovRealization/GaugeHiggsSector/MassWeight.lean#L107).
 
 > The map of a family multiplied on the right by an element is the map of the family,
 > multiplied by that element.
@@ -92,7 +92,7 @@ lemma ofComponents_mul_right {n : ℕ} (T : (Fin n → Fin 1 ⊕ Fin 3) → B) (
     ofComponents (fun d => T d * y) t = ofComponents T t * y
 ```
 
-**`Lorentz.IsLorentzCovariant.mul_vector`**, a lemma, [line 114](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/CovRealization/GaugeHiggsSector/MassWeight.lean#L114).
+**`Lorentz.IsLorentzCovariant.mul_vector`**, a lemma, [line 114](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/CovRealization/GaugeHiggsSector/MassWeight.lean#L114).
 
 > A rank-two family against a Lorentz vector is a rank-three family: the two covector
 > indices of the first factor and the single index of the second make three.
@@ -118,7 +118,7 @@ lemma IsLorentzCovariant.mul_vector
 > way of `ReducesInvariantsTo.iSup_of_biSup`. The rest of the section collects the
 > stability and the inertness of products and joins that section E consumes.
 
-**`StandardModel.mem_of_lorentz_invariant_iSup_rankTwo_span`**, a lemma, [line 162](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/CovRealization/GaugeHiggsSector/MassWeight.lean#L162).
+**`StandardModel.mem_of_lorentz_invariant_iSup_rankTwo_span`**, a lemma, [line 162](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/CovRealization/GaugeHiggsSector/MassWeight.lean#L162).
 
 > A Lorentz invariant of a join, over an arbitrary index type, of the spans of
 > bi-Lorentz families with vanishing metric traces lies in the stable submodule it is taken
@@ -135,7 +135,7 @@ lemma mem_of_lorentz_invariant_iSup_rankTwo_span {ι : Type}
     (hinv : ∀ g : SL(2,ℂ), repLorentz g x = x) : x ∈ S
 ```
 
-**`StandardModel.mem_of_lorentz_invariant_iSup_rankThree_span`**, a lemma, [line 179](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/CovRealization/GaugeHiggsSector/MassWeight.lean#L179).
+**`StandardModel.mem_of_lorentz_invariant_iSup_rankThree_span`**, a lemma, [line 179](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/CovRealization/GaugeHiggsSector/MassWeight.lean#L179).
 
 > A Lorentz invariant of a join, over an arbitrary index type, of the spans of triple
 > Lorentz families lies in the stable submodule it is taken modulo: three covector indices
@@ -151,7 +151,7 @@ lemma mem_of_lorentz_invariant_iSup_rankThree_span {ι : Type}
     (hinv : ∀ g : SL(2,ℂ), repLorentz g x = x) : x ∈ S
 ```
 
-**`StandardModel.repLorentz_eq_self_of_mem_mul`**, a lemma, [line 190](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/CovRealization/GaugeHiggsSector/MassWeight.lean#L190).
+**`StandardModel.repLorentz_eq_self_of_mem_mul`**, a lemma, [line 190](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/CovRealization/GaugeHiggsSector/MassWeight.lean#L190).
 
 > A product of two pointwise Lorentz-inert submodules is pointwise Lorentz inert.
 
@@ -163,7 +163,7 @@ lemma repLorentz_eq_self_of_mem_mul
     ∀ y ∈ V * W, repLorentz g y = y
 ```
 
-**`StandardModel.repLorentz_mem_mul_of_stable`**, a lemma, [line 201](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/CovRealization/GaugeHiggsSector/MassWeight.lean#L201).
+**`StandardModel.repLorentz_mem_mul_of_stable`**, a lemma, [line 201](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/CovRealization/GaugeHiggsSector/MassWeight.lean#L201).
 
 > A product of two Lorentz-stable submodules is Lorentz stable.
 
@@ -175,7 +175,7 @@ lemma repLorentz_mem_mul_of_stable
     ∀ y ∈ V * W, repLorentz g y ∈ V * W
 ```
 
-**`StandardModel.repLorentz_mem_of_fixed`**, a lemma, [line 214](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/CovRealization/GaugeHiggsSector/MassWeight.lean#L214).
+**`StandardModel.repLorentz_mem_of_fixed`**, a lemma, [line 214](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/CovRealization/GaugeHiggsSector/MassWeight.lean#L214).
 
 > A pointwise Lorentz-inert submodule is Lorentz stable.
 
@@ -185,7 +185,7 @@ lemma repLorentz_mem_of_fixed {V : Submodule ℂ B}
     ∀ y ∈ V, repLorentz g y ∈ V
 ```
 
-**`StandardModel.repLorentz_mem_sup_of_stable`**, a lemma, [line 219](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/CovRealization/GaugeHiggsSector/MassWeight.lean#L219).
+**`StandardModel.repLorentz_mem_sup_of_stable`**, a lemma, [line 219](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/CovRealization/GaugeHiggsSector/MassWeight.lean#L219).
 
 > A join of two Lorentz-stable submodules is Lorentz stable.
 
@@ -202,7 +202,7 @@ lemma repLorentz_mem_sup_of_stable {V W : Submodule ℂ B}
 > Lorentz matrix to act on, so it is fixed outright — and with it every element of the
 > submodule the underived symbols span.
 
-**`StandardModel.CovAlgebraRealization.repLorentz_eq_self_of_mem_higgs_derivSubmodule_zero`**, a lemma, [line 252](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/CovRealization/GaugeHiggsSector/MassWeight.lean#L252).
+**`StandardModel.CovAlgebraRealization.repLorentz_eq_self_of_mem_higgs_derivSubmodule_zero`**, a lemma, [line 252](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/CovRealization/GaugeHiggsSector/MassWeight.lean#L252).
 
 > The underived Higgs and conjugate-Higgs symbols are Lorentz scalars with no derivative
 > slot to rotate, so every element of the weight-two Higgs submodule is fixed by the whole
@@ -221,7 +221,7 @@ lemma repLorentz_eq_self_of_mem_higgs_derivSubmodule_zero (g : SL(2,ℂ)) {y : B
 > against a once-derived Higgs is a triple Lorentz family as well, the Higgs supplying the
 > third index. The last is the only one in which a Higgs index moves at all.
 
-**`StandardModel.CovAlgebraRealization.mem_of_lorentz_invariant_derivSubmodule_zero_mul_fixed_sup`**, a lemma, [line 293](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/CovRealization/GaugeHiggsSector/MassWeight.lean#L293).
+**`StandardModel.CovAlgebraRealization.mem_of_lorentz_invariant_derivSubmodule_zero_mul_fixed_sup`**, a lemma, [line 293](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/CovRealization/GaugeHiggsSector/MassWeight.lean#L293).
 
 > An underived field strength against Lorentz-inert material carries no Lorentz
 > invariant modulo a Lorentz-stable submodule.
@@ -234,7 +234,7 @@ lemma mem_of_lorentz_invariant_derivSubmodule_zero_mul_fixed_sup (C : Submodule 
     (hinv : ∀ g : SL(2,ℂ), repLorentz g x = x) : x ∈ S
 ```
 
-**`StandardModel.CovAlgebraRealization.mem_of_lorentz_invariant_derivSubmodule_one_mul_fixed_sup`**, a lemma, [line 325](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/CovRealization/GaugeHiggsSector/MassWeight.lean#L325).
+**`StandardModel.CovAlgebraRealization.mem_of_lorentz_invariant_derivSubmodule_one_mul_fixed_sup`**, a lemma, [line 325](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/CovRealization/GaugeHiggsSector/MassWeight.lean#L325).
 
 > A once-derived field strength against Lorentz-inert material carries no Lorentz
 > invariant modulo a Lorentz-stable submodule.
@@ -247,7 +247,7 @@ lemma mem_of_lorentz_invariant_derivSubmodule_one_mul_fixed_sup (C : Submodule �
     (hinv : ∀ g : SL(2,ℂ), repLorentz g x = x) : x ∈ S
 ```
 
-**`StandardModel.CovAlgebraRealization.mem_of_lorentz_invariant_derivSubmodule_zero_mul_higgs_one_sup`**, a lemma, [line 352](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/CovRealization/GaugeHiggsSector/MassWeight.lean#L352).
+**`StandardModel.CovAlgebraRealization.mem_of_lorentz_invariant_derivSubmodule_zero_mul_higgs_one_sup`**, a lemma, [line 352](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/CovRealization/GaugeHiggsSector/MassWeight.lean#L352).
 
 > An underived field strength against a once-derived Higgs carries no Lorentz invariant
 > modulo a Lorentz-stable submodule: three covector indices admit no contraction.
@@ -266,7 +266,7 @@ lemma mem_of_lorentz_invariant_derivSubmodule_zero_mul_higgs_one_sup (S : Submod
 > which asks that they be Lorentz stable. The gauge and Higgs derivative submodules are, and
 > so are their products and joins.
 
-**`StandardModel.CovAlgebraRealization.mem_of_lorentz_invariant_sectorMassWeight_gauge_higgs_six_sup`**, a lemma, [line 434](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/CovRealization/GaugeHiggsSector/MassWeight.lean#L434).
+**`StandardModel.CovAlgebraRealization.mem_of_lorentz_invariant_sectorMassWeight_gauge_higgs_six_sup`**, a lemma, [line 434](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/CovRealization/GaugeHiggsSector/MassWeight.lean#L434).
 
 > Mass weight six carries no Lorentz invariant modulo a Lorentz-stable submodule: a
 > Lorentz invariant of `sectorMassWeight {gauge, higgs} 6 ⊔ S` lies in `S`. The weight is
@@ -280,7 +280,7 @@ lemma mem_of_lorentz_invariant_sectorMassWeight_gauge_higgs_six_sup (S : Submodu
     (hinv : ∀ g : SL(2,ℂ), repLorentz g x = x) : x ∈ S
 ```
 
-**`StandardModel.CovAlgebraRealization.mem_of_lorentz_invariant_sectorMassWeight_gauge_higgs_eight_sup`**, a lemma, [line 447](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/CovRealization/GaugeHiggsSector/MassWeight.lean#L447).
+**`StandardModel.CovAlgebraRealization.mem_of_lorentz_invariant_sectorMassWeight_gauge_higgs_eight_sup`**, a lemma, [line 447](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/CovRealization/GaugeHiggsSector/MassWeight.lean#L447).
 
 > Mass weight eight carries no Lorentz invariant modulo a Lorentz-stable submodule: a
 > Lorentz invariant of `sectorMassWeight {gauge, higgs} 8 ⊔ S` lies in `S`. The three
@@ -302,7 +302,7 @@ lemma mem_of_lorentz_invariant_sectorMassWeight_gauge_higgs_eight_sup (S : Submo
 > sector supplies no invariant beyond what `S` already carries, and the equivalences record it
 > in the shape the other sectors carry, so that all of them can be combined.
 
-**`StandardModel.CovAlgebraRealization.mem_of_invariant_sectorMassWeight_gauge_higgs_lt_nine_sup`**, a lemma, [line 486](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/CovRealization/GaugeHiggsSector/MassWeight.lean#L486).
+**`StandardModel.CovAlgebraRealization.mem_of_invariant_sectorMassWeight_gauge_higgs_lt_nine_sup`**, a lemma, [line 486](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/CovRealization/GaugeHiggsSector/MassWeight.lean#L486).
 
 > Below mass weight nine the gauge-Higgs sector carries no Lorentz invariant: a Lorentz
 > invariant of `sectorMassWeight {gauge, higgs} w ⊔ S` for `w < 9` lies in `S`. Weights
@@ -316,7 +316,7 @@ lemma mem_of_invariant_sectorMassWeight_gauge_higgs_lt_nine_sup (w : ℕ) (hw : 
     (hL : ∀ g : SL(2,ℂ), repLorentz g x = x) : x ∈ S
 ```
 
-**`StandardModel.CovAlgebraRealization.mem_sectorMassWeight_gauge_higgs_lt_nine_sup_and_gauge_lorentz_invariant_iff`**, a lemma, [line 502](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/CovRealization/GaugeHiggsSector/MassWeight.lean#L502).
+**`StandardModel.CovAlgebraRealization.mem_sectorMassWeight_gauge_higgs_lt_nine_sup_and_gauge_lorentz_invariant_iff`**, a lemma, [line 502](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/CovRealization/GaugeHiggsSector/MassWeight.lean#L502).
 
 > The classification below mass weight nine as an equivalence, in the shape of the gauge-
 > and Yukawa-sector statements: an element of `sectorMassWeight {gauge, higgs} w ⊔ S` for
@@ -335,7 +335,7 @@ lemma mem_sectorMassWeight_gauge_higgs_lt_nine_sup_and_gauge_lorentz_invariant_i
           ∧ x = y
 ```
 
-**`StandardModel.CovAlgebraRealization.mem_sectorMassWeight_gauge_higgs_lt_nine_sup_and_gauge_lorentz_invariant_iff_mem`**, a lemma, [line 520](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/CovRealization/GaugeHiggsSector/MassWeight.lean#L520).
+**`StandardModel.CovAlgebraRealization.mem_sectorMassWeight_gauge_higgs_lt_nine_sup_and_gauge_lorentz_invariant_iff_mem`**, a lemma, [line 520](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/CovRealization/GaugeHiggsSector/MassWeight.lean#L520).
 
 > The same classification without the existential: below mass weight nine an element of
 > `sectorMassWeight {gauge, higgs} w ⊔ S` fixed by both groups is an element of `S` fixed by
@@ -364,4 +364,4 @@ lemma mem_sectorMassWeight_gauge_higgs_lt_nine_sup_and_gauge_lorentz_invariant_i
 
 ## Sources
 
-- [PhyslibAlpha/Particles/StandardModel/CovRealization/GaugeHiggsSector/MassWeight.lean at 2a1dfe43](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/CovRealization/GaugeHiggsSector/MassWeight.lean)
+- [PhyslibAlpha/Particles/StandardModel/CovRealization/GaugeHiggsSector/MassWeight.lean at 8c87bdfb](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/CovRealization/GaugeHiggsSector/MassWeight.lean)

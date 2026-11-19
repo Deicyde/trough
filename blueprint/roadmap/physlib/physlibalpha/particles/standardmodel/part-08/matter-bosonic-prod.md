@@ -8,7 +8,7 @@ proof: formalized
 
 # The bosonic algebra of a direct sum
 
-The module `PhyslibAlpha.Particles.StandardModel.Matter.Bosonic.Prod`, [PhyslibAlpha/Particles/StandardModel/Matter/Bosonic/Prod.lean](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/Matter/Bosonic/Prod.lean): 1 declaration, 1 with a docstring.
+The module `PhyslibAlpha.Particles.StandardModel.Matter.Bosonic.Prod`, [PhyslibAlpha/Particles/StandardModel/Matter/Bosonic/Prod.lean](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/Matter/Bosonic/Prod.lean): 1 declaration, 1 with a docstring.
 
 ## i. Overview
 
@@ -37,7 +37,7 @@ The module `PhyslibAlpha.Particles.StandardModel.Matter.Bosonic.Prod`, [PhyslibA
 
 ## A. The tensor product decomposition
 
-**`StandardModel.BosonicAlgebra.prodEquiv`**, a def, [line 65](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/Matter/Bosonic/Prod.lean#L65).
+**`StandardModel.BosonicAlgebra.prodEquiv`**, a def, [line 65](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/Matter/Bosonic/Prod.lean#L65).
 
 > **The bosonic algebra of a direct sum is the tensor product of the bosonic algebras.**
 > Two bosonic matter fields taken together are one field valued in the direct sum of their
@@ -58,4 +58,4 @@ noncomputable def BosonicAlgebra.prodEquiv (M N : MatterField jets)
 
 ## Sources
 
-- [PhyslibAlpha/Particles/StandardModel/Matter/Bosonic/Prod.lean at 2a1dfe43](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/Matter/Bosonic/Prod.lean)
+- [PhyslibAlpha/Particles/StandardModel/Matter/Bosonic/Prod.lean at 8c87bdfb](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/Matter/Bosonic/Prod.lean)

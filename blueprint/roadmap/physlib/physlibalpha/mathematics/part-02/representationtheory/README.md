@@ -1,8 +1,8 @@
 # RepresentationTheory
 
-The folder [PhyslibAlpha/Mathematics/RepresentationTheory/](https://github.com/leanprover-community/physlib/tree/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Mathematics/RepresentationTheory): 11 modules, an article each, in path order with Basic.lean first in its folder.
+The folder [PhyslibAlpha/Mathematics/RepresentationTheory/](https://github.com/leanprover-community/physlib/tree/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Mathematics/RepresentationTheory): 11 modules, an article each, in path order with Basic.lean first in its folder.
 
-Modules in [Sl2/](https://github.com/leanprover-community/physlib/tree/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Mathematics/RepresentationTheory/Sl2):
+Modules in [Sl2/](https://github.com/leanprover-community/physlib/tree/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Mathematics/RepresentationTheory/Sl2):
 
 - [The standard sl₂ Lie module](sl2-basic.md)
 - [A basis for two commuting sl₂ actions](sl2-bivariatebasis.md)

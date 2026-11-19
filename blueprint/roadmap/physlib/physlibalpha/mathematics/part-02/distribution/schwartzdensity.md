@@ -8,7 +8,7 @@ proof: formalized
 
 # Test functions are dense in the Schwartz space
 
-The module `PhyslibAlpha.Mathematics.Distribution.SchwartzDensity`, [PhyslibAlpha/Mathematics/Distribution/SchwartzDensity.lean](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Mathematics/Distribution/SchwartzDensity.lean): 9 declarations, 7 with a docstring.
+The module `PhyslibAlpha.Mathematics.Distribution.SchwartzDensity`, [PhyslibAlpha/Mathematics/Distribution/SchwartzDensity.lean](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Mathematics/Distribution/SchwartzDensity.lean): 9 declarations, 7 with a docstring.
 
 > A Schwartz function is the limit of its cutoffs by dilated bump functions.
 
@@ -40,7 +40,7 @@ The module `PhyslibAlpha.Mathematics.Distribution.SchwartzDensity`, [PhyslibAlph
 > - `cutoffTest` : the cutoff of a Schwartz function as a test function.
 > - `denseRange_ofTestFunction` : test functions are dense in the Schwartz space.
 
-**`SchwartzMap.exists_cutoff`**, a lemma, [line 65](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Mathematics/Distribution/SchwartzDensity.lean#L65).
+**`SchwartzMap.exists_cutoff`**, a lemma, [line 65](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Mathematics/Distribution/SchwartzDensity.lean#L65).
 
 > A smooth compactly supported function that equals one on the unit ball.
 
@@ -49,7 +49,7 @@ lemma exists_cutoff : ∃ b : V → ℝ, ContDiff ℝ ∞ b ∧ HasCompactSuppor
     ∀ x : V, ‖x‖ ≤ 1 → b x = 1
 ```
 
-**`SchwartzMap.exists_bound_dilate`**, a lemma, [line 73](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Mathematics/Distribution/SchwartzDensity.lean#L73).
+**`SchwartzMap.exists_bound_dilate`**, a lemma, [line 73](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Mathematics/Distribution/SchwartzDensity.lean#L73).
 
 > The derivatives of the dilated cutoff minus one are bounded uniformly in the dilation.
 
@@ -59,7 +59,7 @@ lemma exists_bound_dilate {b : V → ℝ} (hb : ContDiff ℝ ∞ b) (hs : HasCom
       ‖iteratedFDeriv ℝ j (fun y => b (R⁻¹ • y) - 1) x‖ ≤ B
 ```
 
-**`SchwartzMap.iteratedFDeriv_dilate_eq_zero`**, a lemma, [line 131](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Mathematics/Distribution/SchwartzDensity.lean#L131).
+**`SchwartzMap.iteratedFDeriv_dilate_eq_zero`**, a lemma, [line 131](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Mathematics/Distribution/SchwartzDensity.lean#L131).
 
 > The dilated cutoff minus one vanishes with all its derivatives inside the ball of radius `R`.
 
@@ -69,7 +69,7 @@ lemma iteratedFDeriv_dilate_eq_zero {b : V → ℝ} (hone : ∀ x : V, ‖x‖ �
     iteratedFDeriv ℝ j (fun y => b (R⁻¹ • y) - 1) x = 0
 ```
 
-**`SchwartzMap.exists_bound_cutoff_sub`**, a lemma, [line 150](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Mathematics/Distribution/SchwartzDensity.lean#L150).
+**`SchwartzMap.exists_bound_cutoff_sub`**, a lemma, [line 150](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Mathematics/Distribution/SchwartzDensity.lean#L150).
 
 > **The cutoff approximation estimate.** The weighted derivatives of `(b (R⁻¹ x) - 1) f x` are
 > bounded by a constant times `R⁻¹`.
@@ -81,7 +81,7 @@ lemma exists_bound_cutoff_sub {b : V → ℝ} (hb : ContDiff ℝ ∞ b) (hs : Ha
       ‖x‖ ^ k * ‖iteratedFDeriv ℝ n (fun y => (b (R⁻¹ • y) - 1) * f y) x‖ ≤ C / R
 ```
 
-**`SchwartzMap.ofTestFunction`**, a def, [line 211](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Mathematics/Distribution/SchwartzDensity.lean#L211).
+**`SchwartzMap.ofTestFunction`**, a def, [line 211](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Mathematics/Distribution/SchwartzDensity.lean#L211).
 
 > A real test function is a Schwartz function.
 
@@ -89,20 +89,20 @@ lemma exists_bound_cutoff_sub {b : V → ℝ} (hb : ContDiff ℝ ∞ b) (hs : Ha
 def ofTestFunction : 𝓓((⊤ : Opens V), ℝ) →ₗ[ℝ] 𝓢(V, ℝ)
 ```
 
-**`SchwartzMap.ofTestFunction_injective`**, a lemma, [line 217](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Mathematics/Distribution/SchwartzDensity.lean#L217).
+**`SchwartzMap.ofTestFunction_injective`**, a lemma, [line 217](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Mathematics/Distribution/SchwartzDensity.lean#L217).
 
 ```lean
 lemma ofTestFunction_injective : Function.Injective (ofTestFunction (V := V))
 ```
 
-**`SchwartzMap.ofTestFunction_apply`**, a lemma, [line 222](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Mathematics/Distribution/SchwartzDensity.lean#L222).
+**`SchwartzMap.ofTestFunction_apply`**, a lemma, [line 222](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Mathematics/Distribution/SchwartzDensity.lean#L222).
 
 ```lean
 lemma ofTestFunction_apply (φ : 𝓓((⊤ : Opens V), ℝ)) (x : V) :
     ofTestFunction φ x = φ x
 ```
 
-**`SchwartzMap.cutoffTest`**, a def, [line 226](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Mathematics/Distribution/SchwartzDensity.lean#L226).
+**`SchwartzMap.cutoffTest`**, a def, [line 226](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Mathematics/Distribution/SchwartzDensity.lean#L226).
 
 > The cutoff of a Schwartz function by the dilated bump function, as a test function.
 
@@ -111,7 +111,7 @@ def cutoffTest {b : V → ℝ} (hb : ContDiff ℝ ∞ b) (hs : HasCompactSupport
     {R : ℝ} (hR : 0 < R) : 𝓓((⊤ : Opens V), ℝ)
 ```
 
-**`SchwartzMap.denseRange_ofTestFunction`**, a lemma, [line 237](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Mathematics/Distribution/SchwartzDensity.lean#L237).
+**`SchwartzMap.denseRange_ofTestFunction`**, a lemma, [line 237](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Mathematics/Distribution/SchwartzDensity.lean#L237).
 
 > **Test functions are dense in the Schwartz space.**
 
@@ -125,4 +125,4 @@ Its declarations' statements use no declaration of another module with an articl
 
 ## Sources
 
-- [PhyslibAlpha/Mathematics/Distribution/SchwartzDensity.lean at 2a1dfe43](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Mathematics/Distribution/SchwartzDensity.lean)
+- [PhyslibAlpha/Mathematics/Distribution/SchwartzDensity.lean at 8c87bdfb](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Mathematics/Distribution/SchwartzDensity.lean)

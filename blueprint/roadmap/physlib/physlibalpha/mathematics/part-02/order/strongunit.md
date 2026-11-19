@@ -8,7 +8,7 @@ proof: formalized
 
 # Strong units
 
-The module `PhyslibAlpha.Mathematics.Order.StrongUnit`, [PhyslibAlpha/Mathematics/Order/StrongUnit.lean](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Mathematics/Order/StrongUnit.lean): 9 declarations, 8 with a docstring.
+The module `PhyslibAlpha.Mathematics.Order.StrongUnit`, [PhyslibAlpha/Mathematics/Order/StrongUnit.lean](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Mathematics/Order/StrongUnit.lean): 9 declarations, 8 with a docstring.
 
 > Strong units and order units of ordered abelian groups, and the directed order they induce.
 
@@ -33,7 +33,7 @@ The module `PhyslibAlpha.Mathematics.Order.StrongUnit`, [PhyslibAlpha/Mathematic
 
 ## A. Strong units
 
-**`IsStrongUnit`**, a def, [line 51](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Mathematics/Order/StrongUnit.lean#L51).
+**`IsStrongUnit`**, a def, [line 51](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Mathematics/Order/StrongUnit.lean#L51).
 
 > A strong unit: every element lies below some natural multiple of `u`.
 
@@ -41,7 +41,7 @@ The module `PhyslibAlpha.Mathematics.Order.StrongUnit`, [PhyslibAlpha/Mathematic
 def IsStrongUnit : Prop
 ```
 
-**`IsStrongUnit.exists_two_sided`**, a lemma, [line 56](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Mathematics/Order/StrongUnit.lean#L56).
+**`IsStrongUnit.exists_two_sided`**, a lemma, [line 56](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Mathematics/Order/StrongUnit.lean#L56).
 
 > Every element lies between two opposite multiples of a nonnegative strong unit.
 
@@ -50,7 +50,7 @@ lemma exists_two_sided (hunit : IsStrongUnit u) (hu : 0 ≤ u) (x : G) :
     ∃ n : ℕ, -(n • u) ≤ x ∧ x ≤ n • u
 ```
 
-**`IsStrongUnit.isDirectedOrder`**, a lemma, [line 65](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Mathematics/Order/StrongUnit.lean#L65).
+**`IsStrongUnit.isDirectedOrder`**, a lemma, [line 65](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Mathematics/Order/StrongUnit.lean#L65).
 
 > A nonnegative strong unit makes the order directed.
 
@@ -58,7 +58,7 @@ lemma exists_two_sided (hunit : IsStrongUnit u) (hu : 0 ≤ u) (x : G) :
 lemma isDirectedOrder (hunit : IsStrongUnit u) (hu : 0 ≤ u) : IsDirectedOrder G
 ```
 
-**`IsStrongUnit.ne_zero`**, a lemma, [line 73](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Mathematics/Order/StrongUnit.lean#L73).
+**`IsStrongUnit.ne_zero`**, a lemma, [line 73](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Mathematics/Order/StrongUnit.lean#L73).
 
 > A strong unit of a nontrivial group is nonzero.
 
@@ -68,7 +68,7 @@ lemma ne_zero [Nontrivial G] (hunit : IsStrongUnit u) : u ≠ 0
 
 ## B. Order units
 
-**`IsOrderUnit`**, a structure, [line 86](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Mathematics/Order/StrongUnit.lean#L86).
+**`IsOrderUnit`**, a structure, [line 86](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Mathematics/Order/StrongUnit.lean#L86).
 
 > An order unit: a nonnegative strong unit.
 
@@ -80,7 +80,7 @@ structure IsOrderUnit (u : G) : Prop where
   isStrongUnit : IsStrongUnit u
 ```
 
-**`IsOrderUnit.exists_two_sided`**, a lemma, [line 98](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Mathematics/Order/StrongUnit.lean#L98).
+**`IsOrderUnit.exists_two_sided`**, a lemma, [line 98](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Mathematics/Order/StrongUnit.lean#L98).
 
 > Every element lies between two opposite multiples of an order unit.
 
@@ -88,13 +88,13 @@ structure IsOrderUnit (u : G) : Prop where
 lemma exists_two_sided (x : G) : ∃ n : ℕ, -(n • u) ≤ x ∧ x ≤ n • u
 ```
 
-**`IsOrderUnit.isDirectedOrder`**, a lemma, [line 101](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Mathematics/Order/StrongUnit.lean#L101).
+**`IsOrderUnit.isDirectedOrder`**, a lemma, [line 101](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Mathematics/Order/StrongUnit.lean#L101).
 
 ```lean
 lemma isDirectedOrder : IsDirectedOrder G
 ```
 
-**`IsOrderUnit.exists_forall_le_smul`**, a lemma, [line 108](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Mathematics/Order/StrongUnit.lean#L108).
+**`IsOrderUnit.exists_forall_le_smul`**, a lemma, [line 108](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Mathematics/Order/StrongUnit.lean#L108).
 
 > Finitely many elements lie below a common nonnegative multiple of an order unit.
 
@@ -103,7 +103,7 @@ lemma exists_forall_le_smul {ι : Type*} [Fintype ι] (x : ι → G) :
     ∃ μ : ℝ, 0 ≤ μ ∧ ∀ i, x i ≤ μ • u
 ```
 
-**`IsOrderUnit.nonneg_of_smul_nonneg`**, a lemma, [line 119](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Mathematics/Order/StrongUnit.lean#L119).
+**`IsOrderUnit.nonneg_of_smul_nonneg`**, a lemma, [line 119](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Mathematics/Order/StrongUnit.lean#L119).
 
 > A multiple of an order unit of a nontrivial space is nonnegative only for a nonnegative
 > factor.
@@ -118,4 +118,4 @@ Its declarations' statements use no declaration of another module with an articl
 
 ## Sources
 
-- [PhyslibAlpha/Mathematics/Order/StrongUnit.lean at 2a1dfe43](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Mathematics/Order/StrongUnit.lean)
+- [PhyslibAlpha/Mathematics/Order/StrongUnit.lean at 8c87bdfb](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Mathematics/Order/StrongUnit.lean)

@@ -8,7 +8,7 @@ proof: formalized
 
 # The jet algebra of the Standard Model
 
-The module `PhyslibAlpha.Particles.StandardModel.JetAlgebra.Basic`, [PhyslibAlpha/Particles/StandardModel/JetAlgebra/Basic.lean](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/JetAlgebra/Basic.lean): 12 declarations, 11 with a docstring; 1 private, not shown.
+The module `PhyslibAlpha.Particles.StandardModel.JetAlgebra.Basic`, [PhyslibAlpha/Particles/StandardModel/JetAlgebra/Basic.lean](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/JetAlgebra/Basic.lean): 12 declarations, 11 with a docstring; 1 private, not shown.
 
 ## i. Overview
 
@@ -47,7 +47,7 @@ The module `PhyslibAlpha.Particles.StandardModel.JetAlgebra.Basic`, [PhyslibAlph
 
 ## A. The jet algebra of the Standard Model
 
-**`StandardModel.JetAlgebra`**, an abbrev, [line 75](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/JetAlgebra/Basic.lean#L75).
+**`StandardModel.JetAlgebra`**, an abbrev, [line 75](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/JetAlgebra/Basic.lean#L75).
 
 > The jet algebra of the Standard Model: the local field algebra of the Standard
 > Model field datum. A Standard Model Lagrangian is an element of this algebra.
@@ -58,7 +58,7 @@ abbrev JetAlgebra : Type
 
 ### A.1. The sector inclusions
 
-**`StandardModel.JetAlgebra.includeFermion`**, a def, [line 86](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/JetAlgebra/Basic.lean#L86).
+**`StandardModel.JetAlgebra.includeFermion`**, a def, [line 86](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/JetAlgebra/Basic.lean#L86).
 
 > The inclusion of the fermionic sector.
 
@@ -66,7 +66,7 @@ abbrev JetAlgebra : Type
 noncomputable def includeFermion : FermionJetAlgebra →ₐ[ℂ] JetAlgebra
 ```
 
-**`StandardModel.JetAlgebra.includeHiggs`**, a def, [line 90](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/JetAlgebra/Basic.lean#L90).
+**`StandardModel.JetAlgebra.includeHiggs`**, a def, [line 90](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/JetAlgebra/Basic.lean#L90).
 
 > The inclusion of the Higgs sector.
 
@@ -74,7 +74,7 @@ noncomputable def includeFermion : FermionJetAlgebra →ₐ[ℂ] JetAlgebra
 noncomputable def includeHiggs : HiggsJetAlgebra →ₐ[ℂ] JetAlgebra
 ```
 
-**`StandardModel.JetAlgebra.includeGauge`**, a def, [line 95](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/JetAlgebra/Basic.lean#L95).
+**`StandardModel.JetAlgebra.includeGauge`**, a def, [line 95](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/JetAlgebra/Basic.lean#L95).
 
 > The inclusion of the gauge sector. The Standard Model gauge bosons are the generic
 > ones at `GaugeAlgebra`, so this is the connection inclusion of the datum itself.
@@ -84,14 +84,14 @@ noncomputable def includeGauge :
     (ℂ ⊗[ℝ] (LocalGaugeFieldAlgebra GaugeAlgebra)) →ₐ[ℂ] JetAlgebra
 ```
 
-**`StandardModel.JetAlgebra.includeGauge_apply`**, a lemma, [line 99](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/JetAlgebra/Basic.lean#L99).
+**`StandardModel.JetAlgebra.includeGauge_apply`**, a lemma, [line 99](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/JetAlgebra/Basic.lean#L99).
 
 ```lean
 lemma includeGauge_apply (y : ℂ ⊗[ℝ] (LocalGaugeFieldAlgebra GaugeAlgebra)) :
     includeGauge y = ((1 : fieldData.MatterAlgebra) ⊗ₜ[ℂ] y : JetAlgebra)
 ```
 
-**`StandardModel.JetAlgebra.includeFermion_apply_equiv`**, a lemma, [line 105](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/JetAlgebra/Basic.lean#L105).
+**`StandardModel.JetAlgebra.includeFermion_apply_equiv`**, a lemma, [line 105](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/JetAlgebra/Basic.lean#L105).
 
 > The fermionic sector inclusion factors through the sector equivalence and the generic
 > fermionic factor inclusion.
@@ -101,7 +101,7 @@ lemma includeFermion_apply_equiv (a : FermionJetAlgebra) :
     includeFermion a = fieldData.includeFermion (fermionAlgebraEquiv a)
 ```
 
-**`StandardModel.JetAlgebra.includeHiggs_apply_equiv`**, a lemma, [line 110](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/JetAlgebra/Basic.lean#L110).
+**`StandardModel.JetAlgebra.includeHiggs_apply_equiv`**, a lemma, [line 110](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/JetAlgebra/Basic.lean#L110).
 
 > The Higgs sector inclusion factors through the sector equivalence and the generic
 > bosonic factor inclusion.
@@ -111,7 +111,7 @@ lemma includeHiggs_apply_equiv (h : HiggsJetAlgebra) :
     includeHiggs h = fieldData.includeBoson (higgsAlgebraEquiv h)
 ```
 
-**`StandardModel.JetAlgebra.includeGauge_eq_includeConnection`**, a lemma, [line 114](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/JetAlgebra/Basic.lean#L114).
+**`StandardModel.JetAlgebra.includeGauge_eq_includeConnection`**, a lemma, [line 114](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/JetAlgebra/Basic.lean#L114).
 
 > The gauge sector inclusion is the generic connection factor inclusion.
 
@@ -120,7 +120,7 @@ lemma includeGauge_eq_includeConnection :
     includeGauge = fieldData.includeConnection
 ```
 
-**`StandardModel.JetAlgebra.includeFermion_ι`**, a lemma, [line 119](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/JetAlgebra/Basic.lean#L119).
+**`StandardModel.JetAlgebra.includeFermion_ι`**, a lemma, [line 119](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/JetAlgebra/Basic.lean#L119).
 
 > A degree-one element of the fermionic sector, included, is a total fermionic generator
 > of the field datum, read through the fermionic generator identification.
@@ -131,7 +131,7 @@ lemma includeFermion_ι (v : JetComponentSpace fermionMatterField) :
       = fieldData.ιFermionTotal (fermionGeneratorsEquiv.symm v)
 ```
 
-**`StandardModel.JetAlgebra.includeHiggs_ι`**, a lemma, [line 129](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/JetAlgebra/Basic.lean#L129).
+**`StandardModel.JetAlgebra.includeHiggs_ι`**, a lemma, [line 129](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/JetAlgebra/Basic.lean#L129).
 
 > A degree-one element of the Higgs sector, included, is the generator of the one bosonic
 > species of the field datum.
@@ -142,7 +142,7 @@ lemma includeHiggs_ι (v : JetComponentSpace HiggsVec.matterField) :
       = fieldData.ιBoson () v
 ```
 
-**`StandardModel.JetAlgebra.includeGauge_one_tmul_ι`**, a lemma, [line 143](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/JetAlgebra/Basic.lean#L143).
+**`StandardModel.JetAlgebra.includeGauge_one_tmul_ι`**, a lemma, [line 143](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/JetAlgebra/Basic.lean#L143).
 
 > A real degree-one element of the gauge sector, included, is a connection generator of
 > the field datum: the connection factors of the two presentations are the same type, and
@@ -157,7 +157,7 @@ lemma includeGauge_one_tmul_ι (v : GaugeBoson.JetComponentSpace GaugeAlgebra) :
 
 ### A.2. Centrality of the gauge sector
 
-**`StandardModel.JetAlgebra.includeGauge_commute`**, a lemma, [line 172](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/JetAlgebra/Basic.lean#L172).
+**`StandardModel.JetAlgebra.includeGauge_commute`**, a lemma, [line 172](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/JetAlgebra/Basic.lean#L172).
 
 > The image of the gauge sector is central: gauge-boson symbols commute with
 > everything, as bosons must.
@@ -173,4 +173,4 @@ lemma includeGauge_commute (y : ℂ ⊗[ℝ] (LocalGaugeFieldAlgebra GaugeAlgebr
 
 ## Sources
 
-- [PhyslibAlpha/Particles/StandardModel/JetAlgebra/Basic.lean at 2a1dfe43](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/JetAlgebra/Basic.lean)
+- [PhyslibAlpha/Particles/StandardModel/JetAlgebra/Basic.lean at 8c87bdfb](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/JetAlgebra/Basic.lean)

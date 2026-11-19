@@ -1,14 +1,14 @@
 ---
 declaration: module
 origin: cited
-lean: ProbabilisticTheory.UnitalPositiveLinearMap.apply_eq_zero_of_apply_one_eq_zero, ProbabilisticTheory.UnitalPositiveLinearMap.exists_apply_neg_of_not_nonneg, ProbabilisticTheory.UnitalPositiveLinearMap.nonneg_iff_forall_state_nonneg, ProbabilisticTheory.UnitalPositiveLinearMap.instNonemptyState, ProbabilisticTheory.UnitalPositiveLinearMap.exists_state_apply_gt_of_not_le, ProbabilisticTheory.UnitalPositiveLinearMap.exists_state_abs_apply_gt_of_lt_orderUnitNorm, ProbabilisticTheory.UnitalPositiveLinearMap.sSup_abs_apply_eq_orderUnitNorm, ProbabilisticTheory.UnitalPositiveLinearMap.orderUnitNorm_one
+lean: PhyslibAlpha.ProbabilisticTheory.UnitalPositiveLinearMap.apply_eq_zero_of_apply_one_eq_zero, PhyslibAlpha.ProbabilisticTheory.UnitalPositiveLinearMap.exists_apply_neg_of_not_nonneg, PhyslibAlpha.ProbabilisticTheory.UnitalPositiveLinearMap.nonneg_iff_forall_state_nonneg, PhyslibAlpha.ProbabilisticTheory.UnitalPositiveLinearMap.instNonemptyState, PhyslibAlpha.ProbabilisticTheory.UnitalPositiveLinearMap.exists_state_apply_gt_of_not_le, PhyslibAlpha.ProbabilisticTheory.UnitalPositiveLinearMap.exists_state_abs_apply_gt_of_lt_orderUnitNorm, PhyslibAlpha.ProbabilisticTheory.UnitalPositiveLinearMap.sSup_abs_apply_eq_orderUnitNorm, PhyslibAlpha.ProbabilisticTheory.UnitalPositiveLinearMap.orderUnitNorm_one
 statement: formalized
 proof: formalized
 ---
 
 # Separation by states (PhyslibAlpha)
 
-The module `PhyslibAlpha.ProbabilisticTheory.State.Separation`, [PhyslibAlpha/ProbabilisticTheory/State/Separation.lean](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ProbabilisticTheory/State/Separation.lean): 13 declarations, 12 with a docstring.
+The module `PhyslibAlpha.ProbabilisticTheory.State.Separation`, [PhyslibAlpha/ProbabilisticTheory/State/Separation.lean](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/State/Separation.lean): 13 declarations, 12 with a docstring.
 
 > Via Hahn–Banach, states separate points and determine the positive cone and order-unit norm.
 
@@ -38,7 +38,7 @@ The module `PhyslibAlpha.ProbabilisticTheory.State.Separation`, [PhyslibAlpha/Pr
 
 ## A. Separating points from the cone
 
-**`ProbabilisticTheory.UnitalPositiveLinearMap.apply_eq_zero_of_apply_one_eq_zero`**, a lemma, [line 69](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ProbabilisticTheory/State/Separation.lean#L69).
+**`PhyslibAlpha.ProbabilisticTheory.UnitalPositiveLinearMap.apply_eq_zero_of_apply_one_eq_zero`**, a lemma, [line 69](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/State/Separation.lean#L69).
 
 > A positive functional vanishing at the order unit vanishes everywhere.
 
@@ -48,7 +48,7 @@ lemma apply_eq_zero_of_apply_one_eq_zero {p : E →ₚ[ℝ] ℝ}
     p A = 0
 ```
 
-**`ProbabilisticTheory.UnitalPositiveLinearMap.exists_apply_neg_of_not_nonneg`**, a lemma, [line 77](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ProbabilisticTheory/State/Separation.lean#L77).
+**`PhyslibAlpha.ProbabilisticTheory.UnitalPositiveLinearMap.exists_apply_neg_of_not_nonneg`**, a lemma, [line 77](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/State/Separation.lean#L77).
 
 > Every element outside the positive cone is strictly separated from it by a state.
 
@@ -58,7 +58,7 @@ lemma exists_apply_neg_of_not_nonneg {A : E} (hA : ¬ 0 ≤ A) : ∃ ω : 𝓢[�
 
 ## B. The positive cone
 
-**`ProbabilisticTheory.UnitalPositiveLinearMap.nonneg_iff_forall_state_nonneg`**, a lemma, [line 101](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ProbabilisticTheory/State/Separation.lean#L101).
+**`PhyslibAlpha.ProbabilisticTheory.UnitalPositiveLinearMap.nonneg_iff_forall_state_nonneg`**, a lemma, [line 101](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/State/Separation.lean#L101).
 
 > An element is positive iff every state assigns it a nonnegative value.
 
@@ -68,7 +68,7 @@ lemma nonneg_iff_forall_state_nonneg (A : E) : 0 ≤ A ↔ ∀ ω : 𝓢[ℝ, E]
 
 ## C. The order-unit norm
 
-**`ProbabilisticTheory.UnitalPositiveLinearMap.instNonemptyState`**, an instance, [line 114](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ProbabilisticTheory/State/Separation.lean#L114).
+**`PhyslibAlpha.ProbabilisticTheory.UnitalPositiveLinearMap.instNonemptyState`**, an instance, [line 114](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/State/Separation.lean#L114).
 
 > Every nontrivial Archimedean order-unit space has a state.
 
@@ -76,7 +76,7 @@ lemma nonneg_iff_forall_state_nonneg (A : E) : 0 ≤ A ↔ ∀ ω : 𝓢[ℝ, E]
 instance instNonemptyState [Nontrivial E] : Nonempty (𝓢[ℝ, E])
 ```
 
-**`ProbabilisticTheory.UnitalPositiveLinearMap.exists_state_apply_gt_of_not_le`**, a lemma, [line 124](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ProbabilisticTheory/State/Separation.lean#L124).
+**`PhyslibAlpha.ProbabilisticTheory.UnitalPositiveLinearMap.exists_state_apply_gt_of_not_le`**, a lemma, [line 124](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/State/Separation.lean#L124).
 
 > If `A ≤ r • 1` fails, some state predicts more than `r` for `A`.
 
@@ -85,7 +85,7 @@ lemma exists_state_apply_gt_of_not_le {A : E} {r : ℝ} (h : ¬ A ≤ r • (1 :
     ∃ ω : 𝓢[ℝ, E], r < ω A
 ```
 
-**`ProbabilisticTheory.UnitalPositiveLinearMap.exists_state_abs_apply_gt_of_lt_orderUnitNorm`**, a lemma, [line 130](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ProbabilisticTheory/State/Separation.lean#L130).
+**`PhyslibAlpha.ProbabilisticTheory.UnitalPositiveLinearMap.exists_state_abs_apply_gt_of_lt_orderUnitNorm`**, a lemma, [line 130](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/State/Separation.lean#L130).
 
 > Any scalar below the order-unit norm of `A` is exceeded by `|ω A|` for some state `ω`.
 
@@ -94,7 +94,7 @@ lemma exists_state_abs_apply_gt_of_lt_orderUnitNorm [Nontrivial E] (A : E) {r : 
     (hr : r < orderUnitNorm A) : ∃ ω : 𝓢[ℝ, E], r < |ω A|
 ```
 
-**`ProbabilisticTheory.UnitalPositiveLinearMap.sSup_abs_apply_eq_orderUnitNorm`**, a lemma, [line 143](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ProbabilisticTheory/State/Separation.lean#L143).
+**`PhyslibAlpha.ProbabilisticTheory.UnitalPositiveLinearMap.sSup_abs_apply_eq_orderUnitNorm`**, a lemma, [line 143](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/State/Separation.lean#L143).
 
 > The order-unit norm is the supremum of `|ω A|` over all states `ω`.
 
@@ -103,7 +103,7 @@ lemma sSup_abs_apply_eq_orderUnitNorm [Nontrivial E] (A : E) :
     sSup (Set.range fun ω : 𝓢[ℝ, E] => |ω A|) = orderUnitNorm A
 ```
 
-**`ProbabilisticTheory.UnitalPositiveLinearMap.orderUnitNorm_one`**, a lemma, [line 152](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ProbabilisticTheory/State/Separation.lean#L152).
+**`PhyslibAlpha.ProbabilisticTheory.UnitalPositiveLinearMap.orderUnitNorm_one`**, a lemma, [line 152](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/State/Separation.lean#L152).
 
 > The order unit has norm exactly `1`.
 
@@ -113,7 +113,7 @@ lemma orderUnitNorm_one [Nontrivial E] : orderUnitNorm (1 : E) = 1
 
 ## D. Separation of points
 
-**`ProbabilisticTheory.UnitalPositiveLinearMap.ext_of_forall_apply_eq`**, a lemma, [line 163](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ProbabilisticTheory/State/Separation.lean#L163).
+**`PhyslibAlpha.ProbabilisticTheory.UnitalPositiveLinearMap.ext_of_forall_apply_eq`**, a lemma, [line 163](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/State/Separation.lean#L163).
 
 > States separate points: if `ω A = ω B` for every state `ω`, then `A = B`.
 
@@ -123,7 +123,7 @@ lemma ext_of_forall_apply_eq {A B : E} (h : ∀ ω : 𝓢[ℝ, E], ω A = ω B) 
 
 ## E. Continuous-dual realization
 
-**`ProbabilisticTheory.UnitalPositiveLinearMap.toOrderUnitContinuousLinearMap`**, a def, [line 174](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ProbabilisticTheory/State/Separation.lean#L174).
+**`PhyslibAlpha.ProbabilisticTheory.UnitalPositiveLinearMap.toOrderUnitContinuousLinearMap`**, a def, [line 174](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/State/Separation.lean#L174).
 
 > A state as a continuous functional on the canonical order-unit-norm copy.
 
@@ -132,14 +132,14 @@ noncomputable def toOrderUnitContinuousLinearMap (ω : 𝓢[ℝ, E]) :
     WithOrderUnitNorm E →L[ℝ] ℝ
 ```
 
-**`ProbabilisticTheory.UnitalPositiveLinearMap.toOrderUnitContinuousLinearMap_apply`**, a lemma, [line 179](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ProbabilisticTheory/State/Separation.lean#L179).
+**`PhyslibAlpha.ProbabilisticTheory.UnitalPositiveLinearMap.toOrderUnitContinuousLinearMap_apply`**, a lemma, [line 179](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/State/Separation.lean#L179).
 
 ```lean
 lemma toOrderUnitContinuousLinearMap_apply (ω : 𝓢[ℝ, E]) (A : E) :
     ω.toOrderUnitContinuousLinearMap A = ω A
 ```
 
-**`ProbabilisticTheory.UnitalPositiveLinearMap.toOrderUnitContinuousLinearMap_injective`**, a lemma, [line 183](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ProbabilisticTheory/State/Separation.lean#L183).
+**`PhyslibAlpha.ProbabilisticTheory.UnitalPositiveLinearMap.toOrderUnitContinuousLinearMap_injective`**, a lemma, [line 183](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/State/Separation.lean#L183).
 
 > The continuous-dual realization of states is injective.
 
@@ -149,7 +149,7 @@ lemma toOrderUnitContinuousLinearMap_injective :
       (toOrderUnitContinuousLinearMap : 𝓢[ℝ, E] → WithOrderUnitNorm E →L[ℝ] ℝ)
 ```
 
-**`ProbabilisticTheory.UnitalPositiveLinearMap.norm_toOrderUnitContinuousLinearMap`**, a lemma, [line 193](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ProbabilisticTheory/State/Separation.lean#L193).
+**`PhyslibAlpha.ProbabilisticTheory.UnitalPositiveLinearMap.norm_toOrderUnitContinuousLinearMap`**, a lemma, [line 193](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/State/Separation.lean#L193).
 
 > Every state has continuous-dual norm one for the order-unit norm.
 
@@ -168,4 +168,4 @@ lemma norm_toOrderUnitContinuousLinearMap [Nontrivial E] (ω : 𝓢[ℝ, E]) :
 
 ## Sources
 
-- [PhyslibAlpha/ProbabilisticTheory/State/Separation.lean at 2a1dfe43](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ProbabilisticTheory/State/Separation.lean)
+- [PhyslibAlpha/ProbabilisticTheory/State/Separation.lean at 8c87bdfb](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/State/Separation.lean)

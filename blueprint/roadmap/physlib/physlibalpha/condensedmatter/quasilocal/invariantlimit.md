@@ -8,7 +8,7 @@ proof: formalized
 
 # Symmetric thermodynamic limit states
 
-The module `PhyslibAlpha.CondensedMatter.QuasiLocal.InvariantLimit`, [PhyslibAlpha/CondensedMatter/QuasiLocal/InvariantLimit.lean](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/CondensedMatter/QuasiLocal/InvariantLimit.lean): 5 declarations, 5 with a docstring.
+The module `PhyslibAlpha.CondensedMatter.QuasiLocal.InvariantLimit`, [PhyslibAlpha/CondensedMatter/QuasiLocal/InvariantLimit.lean](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/CondensedMatter/QuasiLocal/InvariantLimit.lean): 5 declarations, 5 with a docstring.
 
 > Averaging the thermodynamic limit state of a lattice system over a group of site symmetries gives
 > a state of the infinite system that is invariant under the group.
@@ -40,7 +40,7 @@ The module `PhyslibAlpha.CondensedMatter.QuasiLocal.InvariantLimit`, [PhyslibAlp
 
 ## A. Invariant states of a uniform lattice system
 
-**`CondensedMatter.QuasiLocal.invariantLimit`**, a def, [line 69](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/CondensedMatter/QuasiLocal/InvariantLimit.lean#L69).
+**`CondensedMatter.QuasiLocal.invariantLimit`**, a def, [line 69](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/CondensedMatter/QuasiLocal/InvariantLimit.lean#L69).
 
 > **The invariant limit of a state of a uniform lattice system**: the Følner limit of its
 > averages over the site symmetries.
@@ -51,7 +51,7 @@ def invariantLimit (φ : AlgState (uniformNet (S := S) Ω₀).Quasilocal) (F : �
     AlgState (uniformNet (S := S) Ω₀).Quasilocal
 ```
 
-**`CondensedMatter.QuasiLocal.invariantLimit_invariant`**, a lemma, [line 76](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/CondensedMatter/QuasiLocal/InvariantLimit.lean#L76).
+**`CondensedMatter.QuasiLocal.invariantLimit_invariant`**, a lemma, [line 76](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/CondensedMatter/QuasiLocal/InvariantLimit.lean#L76).
 
 > **The invariant limit of a state is invariant under the site symmetries.**
 
@@ -62,7 +62,7 @@ lemma invariantLimit_invariant (φ : AlgState (uniformNet (S := S) Ω₀).Quasil
     invariantLimit φ F hne 𝒰 (symAction (Ω₀ := Ω₀) γ a) = invariantLimit φ F hne 𝒰 a
 ```
 
-**`CondensedMatter.QuasiLocal.exists_invariant_state`**, a lemma, [line 84](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/CondensedMatter/QuasiLocal/InvariantLimit.lean#L84).
+**`CondensedMatter.QuasiLocal.exists_invariant_state`**, a lemma, [line 84](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/CondensedMatter/QuasiLocal/InvariantLimit.lean#L84).
 
 > **Existence of invariant states**: if the finite sets of site symmetries are asymptotically
 > invariant, every state of the quasi-local algebra has an invariant limit state.
@@ -77,7 +77,7 @@ lemma exists_invariant_state (φ : AlgState (uniformNet (S := S) Ω₀).Quasiloc
 
 ## B. The ensembles of an interaction
 
-**`CondensedMatter.QuasiLocal.Interaction.invariantLimitState`**, a def, [line 97](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/CondensedMatter/QuasiLocal/InvariantLimit.lean#L97).
+**`CondensedMatter.QuasiLocal.Interaction.invariantLimitState`**, a def, [line 97](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/CondensedMatter/QuasiLocal/InvariantLimit.lean#L97).
 
 > **The symmetric thermodynamic limit state of the canonical ensemble** of an interaction on a
 > uniform lattice system.
@@ -89,7 +89,7 @@ def Interaction.invariantLimitState (I : Interaction (fun _ : S => Ω₀)) (β :
     AlgState (uniformNet (S := S) Ω₀).Quasilocal
 ```
 
-**`CondensedMatter.QuasiLocal.Interaction.invariantLimitState_invariant`**, a lemma, [line 104](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/CondensedMatter/QuasiLocal/InvariantLimit.lean#L104).
+**`CondensedMatter.QuasiLocal.Interaction.invariantLimitState_invariant`**, a lemma, [line 104](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/CondensedMatter/QuasiLocal/InvariantLimit.lean#L104).
 
 > The symmetric limit state of an interaction is invariant under the site symmetries.
 
@@ -110,4 +110,4 @@ lemma Interaction.invariantLimitState_invariant (I : Interaction (fun _ : S => �
 
 ## Sources
 
-- [PhyslibAlpha/CondensedMatter/QuasiLocal/InvariantLimit.lean at 2a1dfe43](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/CondensedMatter/QuasiLocal/InvariantLimit.lean)
+- [PhyslibAlpha/CondensedMatter/QuasiLocal/InvariantLimit.lean at 8c87bdfb](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/CondensedMatter/QuasiLocal/InvariantLimit.lean)

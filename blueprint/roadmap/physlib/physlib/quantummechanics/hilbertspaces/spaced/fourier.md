@@ -8,7 +8,7 @@ proof: formalized
 
 # The Fourier transform on `SpaceDHilbertSpace`
 
-The module `Physlib.QuantumMechanics.HilbertSpaces.SpaceD.Fourier`, [Physlib/QuantumMechanics/HilbertSpaces/SpaceD/Fourier.lean](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/QuantumMechanics/HilbertSpaces/SpaceD/Fourier.lean): 7 declarations, 7 with a docstring.
+The module `Physlib.QuantumMechanics.HilbertSpaces.SpaceD.Fourier`, [Physlib/QuantumMechanics/HilbertSpaces/SpaceD/Fourier.lean](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/QuantumMechanics/HilbertSpaces/SpaceD/Fourier.lean): 7 declarations, 7 with a docstring.
 
 ## i. Overview
 
@@ -33,7 +33,7 @@ The module `Physlib.QuantumMechanics.HilbertSpaces.SpaceD.Fourier`, [Physlib/Qua
 
 ## A. The Fourier unitary
 
-**`QuantumMechanics.SpaceDHilbertSpace.fourierUnitary`**, a def, [line 55](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/QuantumMechanics/HilbertSpaces/SpaceD/Fourier.lean#L55).
+**`QuantumMechanics.SpaceDHilbertSpace.fourierUnitary`**, a def, [line 55](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/QuantumMechanics/HilbertSpaces/SpaceD/Fourier.lean#L55).
 
 > The L² Fourier transform as a unitary on `SpaceDHilbertSpace d`.
 
@@ -42,7 +42,7 @@ noncomputable def fourierUnitary (d : ℕ) :
     SpaceDHilbertSpace d ≃ₗᵢ[ℂ] SpaceDHilbertSpace d
 ```
 
-**`QuantumMechanics.SpaceDHilbertSpace.fourierUnitary_apply`**, a lemma, [line 61](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/QuantumMechanics/HilbertSpaces/SpaceD/Fourier.lean#L61).
+**`QuantumMechanics.SpaceDHilbertSpace.fourierUnitary_apply`**, a lemma, [line 61](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/QuantumMechanics/HilbertSpaces/SpaceD/Fourier.lean#L61).
 
 > `fourierUnitary d` acts as the L² Fourier transform `𝓕`.
 
@@ -50,7 +50,7 @@ noncomputable def fourierUnitary (d : ℕ) :
 lemma fourierUnitary_apply (ψ : SpaceDHilbertSpace d) : fourierUnitary d ψ = 𝓕 ψ
 ```
 
-**`QuantumMechanics.SpaceDHilbertSpace.fourierUnitary_symm_apply`**, a lemma, [line 65](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/QuantumMechanics/HilbertSpaces/SpaceD/Fourier.lean#L65).
+**`QuantumMechanics.SpaceDHilbertSpace.fourierUnitary_symm_apply`**, a lemma, [line 65](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/QuantumMechanics/HilbertSpaces/SpaceD/Fourier.lean#L65).
 
 > `(fourierUnitary d).symm` acts as the inverse L² Fourier transform `𝓕⁻`.
 
@@ -60,7 +60,7 @@ lemma fourierUnitary_symm_apply (ψ : SpaceDHilbertSpace d) : (fourierUnitary d)
 
 ## B. Action on the Schwartz submodule
 
-**`QuantumMechanics.SpaceDHilbertSpace.schwartzIncl_fourier_eq`**, a lemma, [line 71](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/QuantumMechanics/HilbertSpaces/SpaceD/Fourier.lean#L71).
+**`QuantumMechanics.SpaceDHilbertSpace.schwartzIncl_fourier_eq`**, a lemma, [line 71](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/QuantumMechanics/HilbertSpaces/SpaceD/Fourier.lean#L71).
 
 > Applying `fourierUnitary d` to the L² class of a Schwartz map `f` gives the L² class of the
 > Schwartz Fourier transform `𝓕 f`.
@@ -70,7 +70,7 @@ lemma schwartzIncl_fourier_eq (f : 𝓢(Space d, ℂ)) :
     𝓕 (schwartzIncl volume f) = schwartzIncl volume (𝓕 f)
 ```
 
-**`QuantumMechanics.SpaceDHilbertSpace.schwartzIncl_fourierInv_eq`**, a lemma, [line 76](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/QuantumMechanics/HilbertSpaces/SpaceD/Fourier.lean#L76).
+**`QuantumMechanics.SpaceDHilbertSpace.schwartzIncl_fourierInv_eq`**, a lemma, [line 76](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/QuantumMechanics/HilbertSpaces/SpaceD/Fourier.lean#L76).
 
 > Applying `𝓕⁻` to the L² class of a Schwartz map `f` gives the L² class of the inverse
 > Schwartz Fourier transform `𝓕⁻ f`.
@@ -80,7 +80,7 @@ lemma schwartzIncl_fourierInv_eq (f : 𝓢(Space d, ℂ)) :
     𝓕⁻ (schwartzIncl volume f) = schwartzIncl volume (𝓕⁻ f)
 ```
 
-**`QuantumMechanics.SpaceDHilbertSpace.fourierInv_schwartzIncl_fourier`**, a lemma, [line 82](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/QuantumMechanics/HilbertSpaces/SpaceD/Fourier.lean#L82).
+**`QuantumMechanics.SpaceDHilbertSpace.fourierInv_schwartzIncl_fourier`**, a lemma, [line 82](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/QuantumMechanics/HilbertSpaces/SpaceD/Fourier.lean#L82).
 
 > Pulling the L² class of `𝓕 f` back through the Fourier unitary recovers the L² class of `f`.
 
@@ -89,7 +89,7 @@ lemma fourierInv_schwartzIncl_fourier (f : 𝓢(Space d, ℂ)) :
     𝓕⁻ (schwartzIncl volume (𝓕 f)) = schwartzIncl volume f
 ```
 
-**`QuantumMechanics.SpaceDHilbertSpace.fourierUnitary_map_schwartzSubmodule`**, a lemma, [line 87](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/QuantumMechanics/HilbertSpaces/SpaceD/Fourier.lean#L87).
+**`QuantumMechanics.SpaceDHilbertSpace.fourierUnitary_map_schwartzSubmodule`**, a lemma, [line 87](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/QuantumMechanics/HilbertSpaces/SpaceD/Fourier.lean#L87).
 
 > The Fourier unitary maps the Schwartz submodule onto itself.
 
@@ -104,4 +104,4 @@ lemma fourierUnitary_map_schwartzSubmodule :
 
 ## Sources
 
-- [Physlib/QuantumMechanics/HilbertSpaces/SpaceD/Fourier.lean at 2a1dfe43](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/QuantumMechanics/HilbertSpaces/SpaceD/Fourier.lean)
+- [Physlib/QuantumMechanics/HilbertSpaces/SpaceD/Fourier.lean at 8c87bdfb](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/QuantumMechanics/HilbertSpaces/SpaceD/Fourier.lean)

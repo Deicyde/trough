@@ -8,7 +8,7 @@ proof: formalized
 
 # The units of charge
 
-The module `Physlib.Electromagnetism.Charge.ChargeUnit`, [Physlib/Electromagnetism/Charge/ChargeUnit.lean](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/Electromagnetism/Charge/ChargeUnit.lean): 4 declarations (1 instance with no name), 3 with a docstring.
+The module `Physlib.Electromagnetism.Charge.ChargeUnit`, [Physlib/Electromagnetism/Charge/ChargeUnit.lean](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Electromagnetism/Charge/ChargeUnit.lean): 4 declarations (1 instance with no name), 3 with a docstring.
 
 > A unit of charge corresponding to a choice of translationally-invariant
 > metric on the charge manifold (to be defined diffeomorphic to `ℝ`).
@@ -27,7 +27,7 @@ The module `Physlib.Electromagnetism.Charge.ChargeUnit`, [Physlib/Electromagneti
 > We choose to state the
 > existence of the charge unit of the coulomb, and construct all other charge units from that.
 
-**`ChargeUnit`**, a structure, [line 39](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/Electromagnetism/Charge/ChargeUnit.lean#L39).
+**`ChargeUnit`**, a structure, [line 39](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Electromagnetism/Charge/ChargeUnit.lean#L39).
 
 > The choices of translationally-invariant metrics on the charge-manifold.
 > Such a choice corresponds to a choice of units for charge.
@@ -40,7 +40,7 @@ structure ChargeUnit where
   property : 0 < val
 ```
 
-**An instance with no name**, [line 44](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/Electromagnetism/Charge/ChargeUnit.lean#L44).
+**An instance with no name**, [line 44](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Electromagnetism/Charge/ChargeUnit.lean#L44).
 
 ```lean
 instance : PositiveRealUnitCore ChargeUnit
@@ -53,7 +53,7 @@ instance : PositiveRealUnitCore ChargeUnit
 > equal to `1`. This is really down to a choice in the isomorphism between the set of metrics
 > on the charge manifold and the positive reals.
 
-**`ChargeUnit.coulombs`**, a def, [line 68](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/Electromagnetism/Charge/ChargeUnit.lean#L68).
+**`ChargeUnit.coulombs`**, a def, [line 68](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Electromagnetism/Charge/ChargeUnit.lean#L68).
 
 > The definition of a charge unit of coulomb.
 
@@ -61,7 +61,7 @@ instance : PositiveRealUnitCore ChargeUnit
 def coulombs : ChargeUnit
 ```
 
-**`ChargeUnit.elementaryCharge`**, a def, [line 71](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/Electromagnetism/Charge/ChargeUnit.lean#L71).
+**`ChargeUnit.elementaryCharge`**, a def, [line 71](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Electromagnetism/Charge/ChargeUnit.lean#L71).
 
 > The charge unit of a elementryCharge (1.602176634×10−19 coulomb).
 
@@ -75,4 +75,4 @@ noncomputable def elementaryCharge : ChargeUnit
 
 ## Sources
 
-- [Physlib/Electromagnetism/Charge/ChargeUnit.lean at 2a1dfe43](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/Electromagnetism/Charge/ChargeUnit.lean)
+- [Physlib/Electromagnetism/Charge/ChargeUnit.lean at 8c87bdfb](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Electromagnetism/Charge/ChargeUnit.lean)

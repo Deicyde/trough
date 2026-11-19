@@ -8,7 +8,7 @@ proof: formalized
 
 # Classical systems are nuclear
 
-The module `PhyslibAlpha.ProbabilisticTheory.Classical.Nuclear`, [PhyslibAlpha/ProbabilisticTheory/Classical/Nuclear.lean](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ProbabilisticTheory/Classical/Nuclear.lean): 24 declarations, 17 with a docstring.
+The module `PhyslibAlpha.ProbabilisticTheory.Classical.Nuclear`, [PhyslibAlpha/ProbabilisticTheory/Classical/Nuclear.lean](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/Classical/Nuclear.lean): 24 declarations, 17 with a docstring.
 
 > Namioka–Phelps: a system is classical exactly when it is nuclear.
 
@@ -45,7 +45,7 @@ The module `PhyslibAlpha.ProbabilisticTheory.Classical.Nuclear`, [PhyslibAlpha/P
 
 ## A. Monotone suprema and detection
 
-**`Bidual.hasMonotoneSups`**, a lemma, [line 71](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ProbabilisticTheory/Classical/Nuclear.lean#L71).
+**`Bidual.hasMonotoneSups`**, a lemma, [line 71](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/Classical/Nuclear.lean#L71).
 
 > Increasing sequences below the unit have least upper bounds in the bidual.
 
@@ -53,7 +53,7 @@ The module `PhyslibAlpha.ProbabilisticTheory.Classical.Nuclear`, [PhyslibAlpha/P
 lemma hasMonotoneSups : HasMonotoneSups (1 : Bidual E)
 ```
 
-**`Bidual.exists_apply_ge`**, a lemma, [line 76](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ProbabilisticTheory/Classical/Nuclear.lean#L76).
+**`Bidual.exists_apply_ge`**, a lemma, [line 76](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/Classical/Nuclear.lean#L76).
 
 > **Detection.** A nonzero piece of the unit that is disjoint from its complement is detected by
 > a state: some state assigns it probability close to `1`.
@@ -65,7 +65,7 @@ lemma exists_apply_ge {c : Bidual E} (hc0 : 0 ≤ c) (hc : c ⊓ (1 - c) = 0) (h
 
 ## B. Measure and prepare
 
-**`Bidual.exists_detecting`**, a lemma, [line 97](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ProbabilisticTheory/Classical/Nuclear.lean#L97).
+**`Bidual.exists_detecting`**, a lemma, [line 97](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/Classical/Nuclear.lean#L97).
 
 > Every nonzero piece of a partition is detected by a state.
 
@@ -74,7 +74,7 @@ lemma exists_detecting (hs : IsPartition 1 s) {θ : ℝ} (hθ : 0 < θ) :
     ∃ φ : ι → E →ₚ[ℝ] ℝ, ∀ i, s i ≠ 0 → φ i 1 = 1 ∧ 1 - θ ≤ s i (φ i)
 ```
 
-**`Bidual.sum_smul_apply`**, a lemma, [line 106](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ProbabilisticTheory/Classical/Nuclear.lean#L106).
+**`Bidual.sum_smul_apply`**, a lemma, [line 106](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/Classical/Nuclear.lean#L106).
 
 > Evaluating a step function at a state.
 
@@ -83,13 +83,13 @@ lemma sum_smul_apply (c : ι → ℝ) (φ : E →ₚ[ℝ] ℝ) :
     (∑ i, c i • s i) φ = ∑ i, c i * s i φ
 ```
 
-**`Bidual.sum_apply'`**, a lemma, [line 111](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ProbabilisticTheory/Classical/Nuclear.lean#L111).
+**`Bidual.sum_apply'`**, a lemma, [line 111](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/Classical/Nuclear.lean#L111).
 
 ```lean
 lemma sum_apply' (φ : E →ₚ[ℝ] ℝ) : (∑ i, s i) φ = ∑ i, s i φ
 ```
 
-**`Bidual.apply_mem_of_detect`**, a lemma, [line 116](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ProbabilisticTheory/Classical/Nuclear.lean#L116).
+**`Bidual.apply_mem_of_detect`**, a lemma, [line 116](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/Classical/Nuclear.lean#L116).
 
 > If `x` lies between two step functions on a partition, a state that detects the piece `s i`
 > sees `x` between the two levels on that piece, up to `2 * A * θ`.
@@ -101,7 +101,7 @@ lemma apply_mem_of_detect (hs : IsPartition 1 s) {x : Bidual E} {a b : ι → �
     a i - 2 * A * θ ≤ x φ ∧ x φ ≤ b i + 2 * A * θ
 ```
 
-**`Bidual.exists_levels_bound`**, a lemma, [line 132](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ProbabilisticTheory/Classical/Nuclear.lean#L132).
+**`Bidual.exists_levels_bound`**, a lemma, [line 132](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/Classical/Nuclear.lean#L132).
 
 > A common bound for finitely many levels and their shifts.
 
@@ -110,7 +110,7 @@ lemma exists_levels_bound {m n : ℕ} (a : Fin m → Fin n → ℝ) (c : ℝ) :
     ∃ A, 0 ≤ A ∧ ∀ i k, |a i k| ≤ A ∧ |a i k + c| ≤ A
 ```
 
-**`Bidual.exists_error_param`**, a lemma, [line 144](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ProbabilisticTheory/Classical/Nuclear.lean#L144).
+**`Bidual.exists_error_param`**, a lemma, [line 144](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/Classical/Nuclear.lean#L144).
 
 > A detection error `θ` small enough that `2 * A * θ ≤ η / 4`.
 
@@ -119,7 +119,7 @@ lemma exists_error_param {η A : ℝ} (hη : 0 < η) (hA : 0 ≤ A) :
     ∃ θ, 0 < θ ∧ 2 * A * θ ≤ η / 4
 ```
 
-**`Bidual.exists_measure_prepare`**, a lemma, [line 153](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ProbabilisticTheory/Classical/Nuclear.lean#L153).
+**`Bidual.exists_measure_prepare`**, a lemma, [line 153](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/Classical/Nuclear.lean#L153).
 
 > **Measure and prepare.** In the bidual of a classical system, finitely many elements are
 > uniformly close to the result of measuring them with finitely many states `φ i` and preparing the
@@ -133,7 +133,7 @@ lemma exists_measure_prepare {n : ℕ} (x : Fin n → Bidual E) {η : ℝ} (hη 
 
 ## C. Positive functionals on the minimal cone
 
-**`ProbabilisticTheory.Nuclear.slice`**, a def, [line 197](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ProbabilisticTheory/Classical/Nuclear.lean#L197).
+**`PhyslibAlpha.ProbabilisticTheory.Nuclear.slice`**, a def, [line 197](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/Classical/Nuclear.lean#L197).
 
 > The positive functional `x ↦ Λ (x ⊗ y)` on `E`, for `y ≥ 0`.
 
@@ -141,27 +141,27 @@ lemma exists_measure_prepare {n : ℕ} (x : Fin n → Bidual E) {η : ℝ} (hη 
 def slice (y : F) (hy : 0 ≤ y) : E →ₚ[ℝ] ℝ
 ```
 
-**`ProbabilisticTheory.Nuclear.slice_apply`**, a lemma, [line 200](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ProbabilisticTheory/Classical/Nuclear.lean#L200).
+**`PhyslibAlpha.ProbabilisticTheory.Nuclear.slice_apply`**, a lemma, [line 200](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/Classical/Nuclear.lean#L200).
 
 ```lean
 lemma slice_apply (y : F) (hy : 0 ≤ y) (x : E) : slice hΛ y hy x = Λ (x ⊗ₜ[ℝ] y)
 ```
 
-**`ProbabilisticTheory.Nuclear.slice_add`**, a lemma, [line 202](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ProbabilisticTheory/Classical/Nuclear.lean#L202).
+**`PhyslibAlpha.ProbabilisticTheory.Nuclear.slice_add`**, a lemma, [line 202](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/Classical/Nuclear.lean#L202).
 
 ```lean
 lemma slice_add {y y' : F} (hy : 0 ≤ y) (hy' : 0 ≤ y') :
     slice hΛ (y + y') (add_nonneg hy hy') = slice hΛ y hy + slice hΛ y' hy'
 ```
 
-**`ProbabilisticTheory.Nuclear.slice_smul`**, a lemma, [line 206](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ProbabilisticTheory/Classical/Nuclear.lean#L206).
+**`PhyslibAlpha.ProbabilisticTheory.Nuclear.slice_smul`**, a lemma, [line 206](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/Classical/Nuclear.lean#L206).
 
 ```lean
 lemma slice_smul {c : ℝ} (hc : 0 ≤ c) {y : F} (hy : 0 ≤ y) :
     slice hΛ (c • y) (smul_nonneg hc hy) = c.toNNReal • slice hΛ y hy
 ```
 
-**`ProbabilisticTheory.Nuclear.pairing`**, a def, [line 212](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ProbabilisticTheory/Classical/Nuclear.lean#L212).
+**`PhyslibAlpha.ProbabilisticTheory.Nuclear.pairing`**, a def, [line 212](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/Classical/Nuclear.lean#L212).
 
 > A nonnegative element of the bidual of `E`, paired with `F` through `Λ`: a positive functional
 > on `F` with value `p (x ↦ Λ (x ⊗ y))` at `y ≥ 0`.
@@ -170,14 +170,14 @@ lemma slice_smul {c : ℝ} (hc : 0 ≤ c) {y : F} (hy : 0 ≤ y) :
 noncomputable def pairing {p : Bidual E} (hp : 0 ≤ p) : F →ₚ[ℝ] ℝ
 ```
 
-**`ProbabilisticTheory.Nuclear.pairing_apply`**, a lemma, [line 222](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ProbabilisticTheory/Classical/Nuclear.lean#L222).
+**`PhyslibAlpha.ProbabilisticTheory.Nuclear.pairing_apply`**, a lemma, [line 222](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/Classical/Nuclear.lean#L222).
 
 ```lean
 lemma pairing_apply {p : Bidual E} (hp : 0 ≤ p) {y : F} (hy : 0 ≤ y) :
     pairing hΛ hp y = p (slice hΛ y hy)
 ```
 
-**`ProbabilisticTheory.Nuclear.apply_tmul_eq`**, a lemma, [line 231](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ProbabilisticTheory/Classical/Nuclear.lean#L231).
+**`PhyslibAlpha.ProbabilisticTheory.Nuclear.apply_tmul_eq`**, a lemma, [line 231](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/Classical/Nuclear.lean#L231).
 
 > If an observable of `E` is a combination of nonnegative elements `p i` of the bidual plus a
 > remainder `d`, then `Λ (e ⊗ f)` is the corresponding combination of pairings plus the remainder
@@ -193,7 +193,7 @@ lemma apply_tmul_eq {ι : Type*} [Fintype ι] {e : E} {p : ι → Bidual E} (hp 
 
 ## D. Positive functionals on the minimal cone are positive on the maximal cone
 
-**`ProbabilisticTheory.Nuclear.lslice_nonneg`**, a lemma, [line 263](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ProbabilisticTheory/Classical/Nuclear.lean#L263).
+**`PhyslibAlpha.ProbabilisticTheory.Nuclear.lslice_nonneg`**, a lemma, [line 263](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/Classical/Nuclear.lean#L263).
 
 > Measuring the first factor of a maximal-cone observable with a positive functional leaves a
 > nonnegative observable.
@@ -203,7 +203,7 @@ lemma lslice_nonneg {z : E ⊗[ℝ] F} (hz : z ∈ maxTensorCone E F) (φ : E �
     0 ≤ lslice φ z
 ```
 
-**`ProbabilisticTheory.Nuclear.sum_pairing_nonneg`**, a lemma, [line 273](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ProbabilisticTheory/Classical/Nuclear.lean#L273).
+**`PhyslibAlpha.ProbabilisticTheory.Nuclear.sum_pairing_nonneg`**, a lemma, [line 273](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/Classical/Nuclear.lean#L273).
 
 > The measured-and-prepared part of `Λ z` is nonnegative.
 
@@ -214,7 +214,7 @@ lemma sum_pairing_nonneg {n m : ℕ} {e : Fin n → E} {f : Fin n → F} {p : Fi
     0 ≤ ∑ k, ∑ i, Bidual.ofE (e k) (φ i) * pairing hΛ (hp i) (f k)
 ```
 
-**`ProbabilisticTheory.Nuclear.remainder_bound`**, a lemma, [line 288](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ProbabilisticTheory/Classical/Nuclear.lean#L288).
+**`PhyslibAlpha.ProbabilisticTheory.Nuclear.remainder_bound`**, a lemma, [line 288](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/Classical/Nuclear.lean#L288).
 
 > A remainder within `η • 1` changes an evaluation on nonnegative functionals by at most `η`
 > times their weight.
@@ -224,7 +224,7 @@ lemma remainder_bound {d : Bidual E} {η : ℝ} (h₁ : d ≤ η • 1) (h₂ : 
     (ψ₁ ψ₂ : E →ₚ[ℝ] ℝ) : -(η * (ψ₁ 1 + ψ₂ 1)) ≤ d ψ₁ - d ψ₂
 ```
 
-**`ProbabilisticTheory.Nuclear.apply_nonneg_of_mem_maxTensorCone`**, a lemma, [line 298](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ProbabilisticTheory/Classical/Nuclear.lean#L298).
+**`PhyslibAlpha.ProbabilisticTheory.Nuclear.apply_nonneg_of_mem_maxTensorCone`**, a lemma, [line 298](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/Classical/Nuclear.lean#L298).
 
 > **Positive on the minimal cone, positive on the maximal cone.** For a classical system `E`, a
 > functional on `E ⊗ F` that is nonnegative on sums of products of nonnegative observables is
@@ -237,19 +237,19 @@ lemma apply_nonneg_of_mem_maxTensorCone {z : E ⊗[ℝ] F} (hz : z ∈ maxTensor
 
 ## E. Classical systems are nuclear
 
-**`ProbabilisticTheory.eq_zero_of_subsingleton_left`**, a lemma, [line 335](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ProbabilisticTheory/Classical/Nuclear.lean#L335).
+**`PhyslibAlpha.ProbabilisticTheory.eq_zero_of_subsingleton_left`**, a lemma, [line 335](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/Classical/Nuclear.lean#L335).
 
 ```lean
 lemma eq_zero_of_subsingleton_left [Subsingleton E] (w : E ⊗[ℝ] F) : w = 0
 ```
 
-**`ProbabilisticTheory.eq_zero_of_subsingleton_right`**, a lemma, [line 339](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ProbabilisticTheory/Classical/Nuclear.lean#L339).
+**`PhyslibAlpha.ProbabilisticTheory.eq_zero_of_subsingleton_right`**, a lemma, [line 339](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/Classical/Nuclear.lean#L339).
 
 ```lean
 lemma eq_zero_of_subsingleton_right [Subsingleton F] (w : E ⊗[ℝ] F) : w = 0
 ```
 
-**`ProbabilisticTheory.IsClassical.isNuclear`**, a lemma, [line 346](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ProbabilisticTheory/Classical/Nuclear.lean#L346).
+**`PhyslibAlpha.ProbabilisticTheory.IsClassical.isNuclear`**, a lemma, [line 346](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/Classical/Nuclear.lean#L346).
 
 > **Classical systems are nuclear (Namioka–Phelps).** If the positive functionals on `E` form a
 > lattice, then composing `E` with any Archimedean system `F` is unique: every composite observable in
@@ -259,7 +259,7 @@ lemma eq_zero_of_subsingleton_right [Subsingleton F] (w : E ⊗[ℝ] F) : w = 0
 lemma IsClassical.isNuclear (hE : IsClassical E) : IsNuclear E
 ```
 
-**`ProbabilisticTheory.isClassical_iff_isNuclear`**, a lemma, [line 365](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ProbabilisticTheory/Classical/Nuclear.lean#L365).
+**`PhyslibAlpha.ProbabilisticTheory.isClassical_iff_isNuclear`**, a lemma, [line 365](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/Classical/Nuclear.lean#L365).
 
 > **Namioka–Phelps.** An Archimedean order-unit space is classical — its positive functionals
 > form a lattice, its state space is a Choquet simplex — exactly when it is nuclear: it composes
@@ -282,4 +282,4 @@ lemma isClassical_iff_isNuclear : IsClassical E ↔ IsNuclear E
 
 ## Sources
 
-- [PhyslibAlpha/ProbabilisticTheory/Classical/Nuclear.lean at 2a1dfe43](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ProbabilisticTheory/Classical/Nuclear.lean)
+- [PhyslibAlpha/ProbabilisticTheory/Classical/Nuclear.lean at 8c87bdfb](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/Classical/Nuclear.lean)

@@ -8,7 +8,7 @@ proof: formalized
 
 # Gauge tensors in a representation
 
-The module `PhyslibAlpha.ClassicalFieldTheory.GaugeTheory.MatterField.TransformsIn`, [PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/MatterField/TransformsIn.lean](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/MatterField/TransformsIn.lean): 6 declarations, 6 with a docstring.
+The module `PhyslibAlpha.ClassicalFieldTheory.GaugeTheory.MatterField.TransformsIn`, [PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/MatterField/TransformsIn.lean](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/MatterField/TransformsIn.lean): 6 declarations, 6 with a docstring.
 
 ## i. Overview
 
@@ -58,7 +58,7 @@ The module `PhyslibAlpha.ClassicalFieldTheory.GaugeTheory.MatterField.Transforms
 
 ## A. Gauge tensors in a representation
 
-**`LocalGaugeData.TransformsIn`**, a def, [line 92](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/MatterField/TransformsIn.lean#L92).
+**`LocalGaugeData.TransformsIn`**, a def, [line 92](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/MatterField/TransformsIn.lean#L92).
 
 > A component family `F`, valued in `B` and indexed by the complex dual of the
 > representation space `V`, *transforms in* the representation `rep` of the jet gauge
@@ -74,7 +74,7 @@ def TransformsIn (repGauge : Representation ℂ GJ B)
     (F : Multiset (Fin 1 ⊕ Fin 3) → Module.Dual ℂ V →ₗ[ℂ] B) : Prop
 ```
 
-**`LocalGaugeData.TransformsIn.repGauge_zero`**, a lemma, [line 106](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/MatterField/TransformsIn.lean#L106).
+**`LocalGaugeData.TransformsIn.repGauge_zero`**, a lemma, [line 106](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/MatterField/TransformsIn.lean#L106).
 
 > A matter gauge tensor transforms at the base point through the dual coefficient of the
 > base-point value of the gauge jet alone: the antidiagonal of the empty multiset has a
@@ -86,7 +86,7 @@ lemma TransformsIn.repGauge_zero (hF : TransformsIn repGauge rep F) (U : GJ)
     repGauge U (F 0 φ) = F 0 (repDualCoeff rep U⁻¹ 0 φ)
 ```
 
-**`LocalGaugeData.TransformsIn.repGauge_eq_of_eval_eq_one`**, a lemma, [line 116](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/MatterField/TransformsIn.lean#L116).
+**`LocalGaugeData.TransformsIn.repGauge_eq_of_eval_eq_one`**, a lemma, [line 116](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/MatterField/TransformsIn.lean#L116).
 
 > Matter gauge tensors whose zeroth representation coefficient is trivial on pure
 > jets are fixed by pure jets: for a family transforming in `rep`, a gauge jet with
@@ -102,7 +102,7 @@ lemma TransformsIn.repGauge_eq_of_eval_eq_one {𝔤 : Type} [LieRing 𝔤] [LieA
     repGauge U (F 0 φ) = F 0 φ
 ```
 
-**`LocalGaugeData.repCoeff_zero_eq_ofConstant_eval`**, a lemma, [line 131](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/MatterField/TransformsIn.lean#L131).
+**`LocalGaugeData.repCoeff_zero_eq_ofConstant_eval`**, a lemma, [line 131](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/MatterField/TransformsIn.lean#L131).
 
 > If pure jets act trivially at the base point, the zeroth Taylor coefficient of a jet
 > is that of the constant jet of its value: every jet is a pure jet times the constant jet
@@ -119,7 +119,7 @@ lemma repCoeff_zero_eq_ofConstant_eval {𝔤 : Type} [LieRing 𝔤] [LieAlgebra 
     repCoeff rep U 0 = repCoeff rep (jets.ofConstant (jets.eval U)) 0
 ```
 
-**`LocalGaugeData.TransformsIn.repGauge_zero_eq_ofConstant_eval`**, a lemma, [line 149](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/MatterField/TransformsIn.lean#L149).
+**`LocalGaugeData.TransformsIn.repGauge_zero_eq_ofConstant_eval`**, a lemma, [line 149](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/MatterField/TransformsIn.lean#L149).
 
 > If pure jets act trivially at the base point, a matter gauge tensor transforms at the
 > base point as under the constant jet of the value of the gauge jet: the jet action on
@@ -136,7 +136,7 @@ lemma TransformsIn.repGauge_zero_eq_ofConstant_eval {𝔤 : Type} [LieRing 𝔤]
     repGauge U (F 0 φ) = repGauge (jets.ofConstant (jets.eval U)) (F 0 φ)
 ```
 
-**`LocalGaugeData.TransformsIn.repGauge_eq_of_mem_truncationKer_zero`**, a lemma, [line 163](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/MatterField/TransformsIn.lean#L163).
+**`LocalGaugeData.TransformsIn.repGauge_eq_of_mem_truncationKer_zero`**, a lemma, [line 163](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/MatterField/TransformsIn.lean#L163).
 
 > Matter gauge tensors are fixed by pure jets: the members of the zeroth truncation kernel
 > are the jets with trivial base-point value, so `repGauge_eq_of_eval_eq_one` applies.
@@ -157,4 +157,4 @@ lemma TransformsIn.repGauge_eq_of_mem_truncationKer_zero {𝔤 : Type} [LieRing 
 
 ## Sources
 
-- [PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/MatterField/TransformsIn.lean at 2a1dfe43](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/MatterField/TransformsIn.lean)
+- [PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/MatterField/TransformsIn.lean at 8c87bdfb](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/MatterField/TransformsIn.lean)

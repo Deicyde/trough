@@ -8,7 +8,7 @@ proof: formalized
 
 # The algebra valued Standard model
 
-The module `PhyslibAlpha.Particles.StandardModel.Realization.Basic`, [PhyslibAlpha/Particles/StandardModel/Realization/Basic.lean](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/Realization/Basic.lean): 40 declarations, 39 with a docstring; 2 private, not shown.
+The module `PhyslibAlpha.Particles.StandardModel.Realization.Basic`, [PhyslibAlpha/Particles/StandardModel/Realization/Basic.lean](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/Realization/Basic.lean): 40 declarations, 39 with a docstring; 2 private, not shown.
 
 ## i. Overview
 
@@ -50,7 +50,7 @@ The module `PhyslibAlpha.Particles.StandardModel.Realization.Basic`, [PhyslibAlp
 
 > * None.
 
-**`StandardModel.AlgebraRealization`**, a structure, [line 80](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/Realization/Basic.lean#L80).
+**`StandardModel.AlgebraRealization`**, a structure, [line 80](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/Realization/Basic.lean#L80).
 
 > The algebra `B`, with a jet gauge action, a Lorentz action and a mass-weight grading,
 > is a Standard Model when it receives an algebra map from the jet algebra of the Standard
@@ -100,7 +100,7 @@ structure AlgebraRealization (B : Type) [Ring B] [Algebra ℂ B]
 > families of the jet algebra, carried into `B` along the defining algebra map. The gauge
 > family is real-linear in its value index, so the map is restricted to `ℝ` there.
 
-**`StandardModel.AlgebraRealization.A`**, a def, [line 129](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/Realization/Basic.lean#L129).
+**`StandardModel.AlgebraRealization.A`**, a def, [line 129](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/Realization/Basic.lean#L129).
 
 > The derivative symbols `∂_s A_μ^ψ` of the gauge field inside `B`.
 
@@ -109,7 +109,7 @@ noncomputable def A (s : Multiset (Fin 1 ⊕ Fin 3)) (μ : Fin 1 ⊕ Fin 3) :
     Module.Dual ℝ GaugeAlgebra →ₗ[ℝ] B
 ```
 
-**`StandardModel.AlgebraRealization.H`**, a def, [line 134](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/Realization/Basic.lean#L134).
+**`StandardModel.AlgebraRealization.H`**, a def, [line 134](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/Realization/Basic.lean#L134).
 
 > The derivative symbols `∂_s H_φ` of the Higgs field inside `B`.
 
@@ -118,7 +118,7 @@ noncomputable def H (s : Multiset (Fin 1 ⊕ Fin 3)) :
     Module.Dual ℂ HiggsVec →ₗ[ℂ] B
 ```
 
-**`StandardModel.AlgebraRealization.barH`**, a def, [line 139](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/Realization/Basic.lean#L139).
+**`StandardModel.AlgebraRealization.barH`**, a def, [line 139](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/Realization/Basic.lean#L139).
 
 > The derivative symbols `∂_s H̄_φ` of the conjugate Higgs field inside `B`.
 
@@ -127,7 +127,7 @@ noncomputable def barH (s : Multiset (Fin 1 ⊕ Fin 3)) :
     Module.Dual ℂ (ConjModule HiggsVec) →ₗ[ℂ] B
 ```
 
-**`StandardModel.AlgebraRealization.d`**, a def, [line 144](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/Realization/Basic.lean#L144).
+**`StandardModel.AlgebraRealization.d`**, a def, [line 144](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/Realization/Basic.lean#L144).
 
 > The derivative symbols of the `i`-th generation down-type quark singlet inside `B`.
 
@@ -136,7 +136,7 @@ noncomputable def d (i : Fin 3) (s : Multiset (Fin 1 ⊕ Fin 3)) :
     Module.Dual ℂ DownSinglet →ₗ[ℂ] B
 ```
 
-**`StandardModel.AlgebraRealization.bard`**, a def, [line 150](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/Realization/Basic.lean#L150).
+**`StandardModel.AlgebraRealization.bard`**, a def, [line 150](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/Realization/Basic.lean#L150).
 
 > The derivative symbols of the `i`-th generation conjugate down-type quark singlet
 > inside `B`.
@@ -146,7 +146,7 @@ noncomputable def bard (i : Fin 3) (s : Multiset (Fin 1 ⊕ Fin 3)) :
     Module.Dual ℂ (ConjModule DownSinglet) →ₗ[ℂ] B
 ```
 
-**`StandardModel.AlgebraRealization.u`**, a def, [line 155](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/Realization/Basic.lean#L155).
+**`StandardModel.AlgebraRealization.u`**, a def, [line 155](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/Realization/Basic.lean#L155).
 
 > The derivative symbols of the `i`-th generation up-type quark singlet inside `B`.
 
@@ -155,7 +155,7 @@ noncomputable def u (i : Fin 3) (s : Multiset (Fin 1 ⊕ Fin 3)) :
     Module.Dual ℂ UpSinglet →ₗ[ℂ] B
 ```
 
-**`StandardModel.AlgebraRealization.baru`**, a def, [line 161](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/Realization/Basic.lean#L161).
+**`StandardModel.AlgebraRealization.baru`**, a def, [line 161](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/Realization/Basic.lean#L161).
 
 > The derivative symbols of the `i`-th generation conjugate up-type quark singlet
 > inside `B`.
@@ -165,7 +165,7 @@ noncomputable def baru (i : Fin 3) (s : Multiset (Fin 1 ⊕ Fin 3)) :
     Module.Dual ℂ (ConjModule UpSinglet) →ₗ[ℂ] B
 ```
 
-**`StandardModel.AlgebraRealization.Q`**, a def, [line 166](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/Realization/Basic.lean#L166).
+**`StandardModel.AlgebraRealization.Q`**, a def, [line 166](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/Realization/Basic.lean#L166).
 
 > The derivative symbols of the `i`-th generation quark doublet inside `B`.
 
@@ -174,7 +174,7 @@ noncomputable def Q (i : Fin 3) (s : Multiset (Fin 1 ⊕ Fin 3)) :
     Module.Dual ℂ QuarkDoublet →ₗ[ℂ] B
 ```
 
-**`StandardModel.AlgebraRealization.barQ`**, a def, [line 171](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/Realization/Basic.lean#L171).
+**`StandardModel.AlgebraRealization.barQ`**, a def, [line 171](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/Realization/Basic.lean#L171).
 
 > The derivative symbols of the `i`-th generation conjugate quark doublet inside `B`.
 
@@ -183,7 +183,7 @@ noncomputable def barQ (i : Fin 3) (s : Multiset (Fin 1 ⊕ Fin 3)) :
     Module.Dual ℂ (ConjModule QuarkDoublet) →ₗ[ℂ] B
 ```
 
-**`StandardModel.AlgebraRealization.L`**, a def, [line 176](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/Realization/Basic.lean#L176).
+**`StandardModel.AlgebraRealization.L`**, a def, [line 176](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/Realization/Basic.lean#L176).
 
 > The derivative symbols of the `i`-th generation lepton doublet inside `B`.
 
@@ -192,7 +192,7 @@ noncomputable def L (i : Fin 3) (s : Multiset (Fin 1 ⊕ Fin 3)) :
     Module.Dual ℂ LeptonDoubletV →ₗ[ℂ] B
 ```
 
-**`StandardModel.AlgebraRealization.barL`**, a def, [line 181](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/Realization/Basic.lean#L181).
+**`StandardModel.AlgebraRealization.barL`**, a def, [line 181](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/Realization/Basic.lean#L181).
 
 > The derivative symbols of the `i`-th generation conjugate lepton doublet inside `B`.
 
@@ -201,7 +201,7 @@ noncomputable def barL (i : Fin 3) (s : Multiset (Fin 1 ⊕ Fin 3)) :
     Module.Dual ℂ (ConjModule LeptonDoubletV) →ₗ[ℂ] B
 ```
 
-**`StandardModel.AlgebraRealization.e`**, a def, [line 186](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/Realization/Basic.lean#L186).
+**`StandardModel.AlgebraRealization.e`**, a def, [line 186](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/Realization/Basic.lean#L186).
 
 > The derivative symbols of the `i`-th generation charged-lepton singlet inside `B`.
 
@@ -210,7 +210,7 @@ noncomputable def e (i : Fin 3) (s : Multiset (Fin 1 ⊕ Fin 3)) :
     Module.Dual ℂ LeptonSinglet →ₗ[ℂ] B
 ```
 
-**`StandardModel.AlgebraRealization.bare`**, a def, [line 192](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/Realization/Basic.lean#L192).
+**`StandardModel.AlgebraRealization.bare`**, a def, [line 192](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/Realization/Basic.lean#L192).
 
 > The derivative symbols of the `i`-th generation conjugate charged-lepton singlet
 > inside `B`.
@@ -236,7 +236,7 @@ noncomputable def bare (i : Fin 3) (s : Multiset (Fin 1 ⊕ Fin 3)) :
 > each of the twelve matter families transforms in its own jet gauge representation, the
 > barred families in the conjugate of it.
 
-**`StandardModel.AlgebraRealization.gaugeRealization`**, a def, [line 250](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/Realization/Basic.lean#L250).
+**`StandardModel.AlgebraRealization.gaugeRealization`**, a def, [line 250](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/Realization/Basic.lean#L250).
 
 > The gauge-boson part of a Standard Model: the realization of the gauge-boson jet
 > algebra in `B` through the gauge sector of the jet algebra.
@@ -246,13 +246,13 @@ noncomputable def gaugeRealization :
     GaugeAlgebraRealization localGaugeData B repJet repLorentz
 ```
 
-**`StandardModel.AlgebraRealization.gaugeRealization_A`**, a lemma, [line 264](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/Realization/Basic.lean#L264).
+**`StandardModel.AlgebraRealization.gaugeRealization_A`**, a lemma, [line 264](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/Realization/Basic.lean#L264).
 
 ```lean
 lemma gaugeRealization_A : h.gaugeRealization.A = h.A
 ```
 
-**`StandardModel.AlgebraRealization.repJet_H`**, a lemma, [line 268](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/Realization/Basic.lean#L268).
+**`StandardModel.AlgebraRealization.repJet_H`**, a lemma, [line 268](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/Realization/Basic.lean#L268).
 
 > The law `repJet_H` of a Standard Model, obtained from the corresponding law of the
 > jet algebra by pushing it along the defining algebra map.
@@ -261,7 +261,7 @@ lemma gaugeRealization_A : h.gaugeRealization.A = h.A
 lemma repJet_H : LocalGaugeData.TransformsIn repJet HiggsVec.repJetGaugeGroupI h.H
 ```
 
-**`StandardModel.AlgebraRealization.repJet_barH`**, a lemma, [line 273](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/Realization/Basic.lean#L273).
+**`StandardModel.AlgebraRealization.repJet_barH`**, a lemma, [line 273](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/Realization/Basic.lean#L273).
 
 > The law `repJet_barH` of a Standard Model, obtained from the corresponding law of the
 > jet algebra by pushing it along the defining algebra map.
@@ -272,7 +272,7 @@ lemma repJet_barH :
       h.barH
 ```
 
-**`StandardModel.AlgebraRealization.repJet_d`**, a lemma, [line 280](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/Realization/Basic.lean#L280).
+**`StandardModel.AlgebraRealization.repJet_d`**, a lemma, [line 280](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/Realization/Basic.lean#L280).
 
 > The law `repJet_d` of a Standard Model, obtained from the corresponding law of the
 > jet algebra by pushing it along the defining algebra map.
@@ -281,7 +281,7 @@ lemma repJet_barH :
 lemma repJet_d : ∀ i, LocalGaugeData.TransformsIn repJet DownSinglet.repJetGaugeGroupI (h.d i)
 ```
 
-**`StandardModel.AlgebraRealization.repJet_bard`**, a lemma, [line 285](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/Realization/Basic.lean#L285).
+**`StandardModel.AlgebraRealization.repJet_bard`**, a lemma, [line 285](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/Realization/Basic.lean#L285).
 
 > The law `repJet_bard` of a Standard Model, obtained from the corresponding law of the
 > jet algebra by pushing it along the defining algebra map.
@@ -292,7 +292,7 @@ lemma repJet_bard : ∀ i,
       (h.bard i)
 ```
 
-**`StandardModel.AlgebraRealization.repJet_u`**, a lemma, [line 292](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/Realization/Basic.lean#L292).
+**`StandardModel.AlgebraRealization.repJet_u`**, a lemma, [line 292](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/Realization/Basic.lean#L292).
 
 > The law `repJet_u` of a Standard Model, obtained from the corresponding law of the
 > jet algebra by pushing it along the defining algebra map.
@@ -301,7 +301,7 @@ lemma repJet_bard : ∀ i,
 lemma repJet_u : ∀ i, LocalGaugeData.TransformsIn repJet UpSinglet.repJetGaugeGroupI (h.u i)
 ```
 
-**`StandardModel.AlgebraRealization.repJet_baru`**, a lemma, [line 297](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/Realization/Basic.lean#L297).
+**`StandardModel.AlgebraRealization.repJet_baru`**, a lemma, [line 297](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/Realization/Basic.lean#L297).
 
 > The law `repJet_baru` of a Standard Model, obtained from the corresponding law of the
 > jet algebra by pushing it along the defining algebra map.
@@ -312,7 +312,7 @@ lemma repJet_baru : ∀ i,
       (h.baru i)
 ```
 
-**`StandardModel.AlgebraRealization.repJet_Q`**, a lemma, [line 304](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/Realization/Basic.lean#L304).
+**`StandardModel.AlgebraRealization.repJet_Q`**, a lemma, [line 304](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/Realization/Basic.lean#L304).
 
 > The law `repJet_Q` of a Standard Model, obtained from the corresponding law of the
 > jet algebra by pushing it along the defining algebra map.
@@ -321,7 +321,7 @@ lemma repJet_baru : ∀ i,
 lemma repJet_Q : ∀ i, LocalGaugeData.TransformsIn repJet QuarkDoublet.repJetGaugeGroupI (h.Q i)
 ```
 
-**`StandardModel.AlgebraRealization.repJet_barQ`**, a lemma, [line 309](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/Realization/Basic.lean#L309).
+**`StandardModel.AlgebraRealization.repJet_barQ`**, a lemma, [line 309](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/Realization/Basic.lean#L309).
 
 > The law `repJet_barQ` of a Standard Model, obtained from the corresponding law of the
 > jet algebra by pushing it along the defining algebra map.
@@ -332,7 +332,7 @@ lemma repJet_barQ : ∀ i,
       (h.barQ i)
 ```
 
-**`StandardModel.AlgebraRealization.repJet_L`**, a lemma, [line 316](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/Realization/Basic.lean#L316).
+**`StandardModel.AlgebraRealization.repJet_L`**, a lemma, [line 316](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/Realization/Basic.lean#L316).
 
 > The law `repJet_L` of a Standard Model, obtained from the corresponding law of the
 > jet algebra by pushing it along the defining algebra map.
@@ -341,7 +341,7 @@ lemma repJet_barQ : ∀ i,
 lemma repJet_L : ∀ i, LocalGaugeData.TransformsIn repJet LeptonDoubletV.repJetGaugeGroupI (h.L i)
 ```
 
-**`StandardModel.AlgebraRealization.repJet_barL`**, a lemma, [line 321](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/Realization/Basic.lean#L321).
+**`StandardModel.AlgebraRealization.repJet_barL`**, a lemma, [line 321](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/Realization/Basic.lean#L321).
 
 > The law `repJet_barL` of a Standard Model, obtained from the corresponding law of the
 > jet algebra by pushing it along the defining algebra map.
@@ -352,7 +352,7 @@ lemma repJet_barL : ∀ i,
       (h.barL i)
 ```
 
-**`StandardModel.AlgebraRealization.repJet_e`**, a lemma, [line 328](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/Realization/Basic.lean#L328).
+**`StandardModel.AlgebraRealization.repJet_e`**, a lemma, [line 328](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/Realization/Basic.lean#L328).
 
 > The law `repJet_e` of a Standard Model, obtained from the corresponding law of the
 > jet algebra by pushing it along the defining algebra map.
@@ -361,7 +361,7 @@ lemma repJet_barL : ∀ i,
 lemma repJet_e : ∀ i, LocalGaugeData.TransformsIn repJet LeptonSinglet.repJetGaugeGroupI (h.e i)
 ```
 
-**`StandardModel.AlgebraRealization.repJet_bare`**, a lemma, [line 333](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/Realization/Basic.lean#L333).
+**`StandardModel.AlgebraRealization.repJet_bare`**, a lemma, [line 333](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/Realization/Basic.lean#L333).
 
 > The law `repJet_bare` of a Standard Model, obtained from the corresponding law of the
 > jet algebra by pushing it along the defining algebra map.
@@ -378,7 +378,7 @@ lemma repJet_bare : ∀ i,
 > by the contragredient of the species' Lorentz representation: the Higgs is a scalar, the
 > fermions are Weyl spinors, and the barred fields carry the conjugate representations.
 
-**`StandardModel.AlgebraRealization.repLorentz_H`**, a lemma, [line 350](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/Realization/Basic.lean#L350).
+**`StandardModel.AlgebraRealization.repLorentz_H`**, a lemma, [line 350](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/Realization/Basic.lean#L350).
 
 > The law `repLorentz_H` of a Standard Model, obtained from the corresponding law of the
 > jet algebra by pushing it along the defining algebra map.
@@ -388,7 +388,7 @@ lemma repLorentz_H : IsLorentzDerivTransforms repLorentz
     (Representation.trivial ℂ SL(2,ℂ) HiggsVec) h.H
 ```
 
-**`StandardModel.AlgebraRealization.repLorentz_barH`**, a lemma, [line 356](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/Realization/Basic.lean#L356).
+**`StandardModel.AlgebraRealization.repLorentz_barH`**, a lemma, [line 356](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/Realization/Basic.lean#L356).
 
 > The law `repLorentz_barH` of a Standard Model, obtained from the corresponding law of the
 > jet algebra by pushing it along the defining algebra map.
@@ -398,7 +398,7 @@ lemma repLorentz_barH : IsLorentzDerivTransforms repLorentz
     (Representation.trivial ℂ SL(2,ℂ) HiggsVec).conj h.barH
 ```
 
-**`StandardModel.AlgebraRealization.repLorentz_d`**, a lemma, [line 362](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/Realization/Basic.lean#L362).
+**`StandardModel.AlgebraRealization.repLorentz_d`**, a lemma, [line 362](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/Realization/Basic.lean#L362).
 
 > The law `repLorentz_d` of a Standard Model, obtained from the corresponding law of the
 > jet algebra by pushing it along the defining algebra map.
@@ -408,7 +408,7 @@ lemma repLorentz_d : ∀ i, IsLorentzDerivTransforms repLorentz
     DownSinglet.repLorentzGroup (h.d i)
 ```
 
-**`StandardModel.AlgebraRealization.repLorentz_bard`**, a lemma, [line 368](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/Realization/Basic.lean#L368).
+**`StandardModel.AlgebraRealization.repLorentz_bard`**, a lemma, [line 368](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/Realization/Basic.lean#L368).
 
 > The law `repLorentz_bard` of a Standard Model, obtained from the corresponding law of the
 > jet algebra by pushing it along the defining algebra map.
@@ -418,7 +418,7 @@ lemma repLorentz_bard : ∀ i, IsLorentzDerivTransforms repLorentz
     DownSinglet.repLorentzGroup.conj (h.bard i)
 ```
 
-**`StandardModel.AlgebraRealization.repLorentz_u`**, a lemma, [line 374](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/Realization/Basic.lean#L374).
+**`StandardModel.AlgebraRealization.repLorentz_u`**, a lemma, [line 374](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/Realization/Basic.lean#L374).
 
 > The law `repLorentz_u` of a Standard Model, obtained from the corresponding law of the
 > jet algebra by pushing it along the defining algebra map.
@@ -428,7 +428,7 @@ lemma repLorentz_u : ∀ i, IsLorentzDerivTransforms repLorentz
     UpSinglet.repLorentzGroup (h.u i)
 ```
 
-**`StandardModel.AlgebraRealization.repLorentz_baru`**, a lemma, [line 380](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/Realization/Basic.lean#L380).
+**`StandardModel.AlgebraRealization.repLorentz_baru`**, a lemma, [line 380](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/Realization/Basic.lean#L380).
 
 > The law `repLorentz_baru` of a Standard Model, obtained from the corresponding law of the
 > jet algebra by pushing it along the defining algebra map.
@@ -438,7 +438,7 @@ lemma repLorentz_baru : ∀ i, IsLorentzDerivTransforms repLorentz
     UpSinglet.repLorentzGroup.conj (h.baru i)
 ```
 
-**`StandardModel.AlgebraRealization.repLorentz_Q`**, a lemma, [line 386](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/Realization/Basic.lean#L386).
+**`StandardModel.AlgebraRealization.repLorentz_Q`**, a lemma, [line 386](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/Realization/Basic.lean#L386).
 
 > The law `repLorentz_Q` of a Standard Model, obtained from the corresponding law of the
 > jet algebra by pushing it along the defining algebra map.
@@ -448,7 +448,7 @@ lemma repLorentz_Q : ∀ i, IsLorentzDerivTransforms repLorentz
     QuarkDoublet.repLorentzGroup (h.Q i)
 ```
 
-**`StandardModel.AlgebraRealization.repLorentz_barQ`**, a lemma, [line 392](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/Realization/Basic.lean#L392).
+**`StandardModel.AlgebraRealization.repLorentz_barQ`**, a lemma, [line 392](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/Realization/Basic.lean#L392).
 
 > The law `repLorentz_barQ` of a Standard Model, obtained from the corresponding law of the
 > jet algebra by pushing it along the defining algebra map.
@@ -458,7 +458,7 @@ lemma repLorentz_barQ : ∀ i, IsLorentzDerivTransforms repLorentz
     QuarkDoublet.repLorentzGroup.conj (h.barQ i)
 ```
 
-**`StandardModel.AlgebraRealization.repLorentz_L`**, a lemma, [line 398](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/Realization/Basic.lean#L398).
+**`StandardModel.AlgebraRealization.repLorentz_L`**, a lemma, [line 398](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/Realization/Basic.lean#L398).
 
 > The law `repLorentz_L` of a Standard Model, obtained from the corresponding law of the
 > jet algebra by pushing it along the defining algebra map.
@@ -468,7 +468,7 @@ lemma repLorentz_L : ∀ i, IsLorentzDerivTransforms repLorentz
     LeptonDoubletV.repLorentzGroup (h.L i)
 ```
 
-**`StandardModel.AlgebraRealization.repLorentz_barL`**, a lemma, [line 404](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/Realization/Basic.lean#L404).
+**`StandardModel.AlgebraRealization.repLorentz_barL`**, a lemma, [line 404](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/Realization/Basic.lean#L404).
 
 > The law `repLorentz_barL` of a Standard Model, obtained from the corresponding law of the
 > jet algebra by pushing it along the defining algebra map.
@@ -478,7 +478,7 @@ lemma repLorentz_barL : ∀ i, IsLorentzDerivTransforms repLorentz
     LeptonDoubletV.repLorentzGroup.conj (h.barL i)
 ```
 
-**`StandardModel.AlgebraRealization.repLorentz_e`**, a lemma, [line 410](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/Realization/Basic.lean#L410).
+**`StandardModel.AlgebraRealization.repLorentz_e`**, a lemma, [line 410](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/Realization/Basic.lean#L410).
 
 > The law `repLorentz_e` of a Standard Model, obtained from the corresponding law of the
 > jet algebra by pushing it along the defining algebra map.
@@ -488,7 +488,7 @@ lemma repLorentz_e : ∀ i, IsLorentzDerivTransforms repLorentz
     LeptonSinglet.repLorentzGroup (h.e i)
 ```
 
-**`StandardModel.AlgebraRealization.repLorentz_bare`**, a lemma, [line 416](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/Realization/Basic.lean#L416).
+**`StandardModel.AlgebraRealization.repLorentz_bare`**, a lemma, [line 416](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/Realization/Basic.lean#L416).
 
 > The law `repLorentz_bare` of a Standard Model, obtained from the corresponding law of the
 > jet algebra by pushing it along the defining algebra map.
@@ -508,4 +508,4 @@ lemma repLorentz_bare : ∀ i, IsLorentzDerivTransforms repLorentz
 
 ## Sources
 
-- [PhyslibAlpha/Particles/StandardModel/Realization/Basic.lean at 2a1dfe43](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/Realization/Basic.lean)
+- [PhyslibAlpha/Particles/StandardModel/Realization/Basic.lean at 8c87bdfb](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/Realization/Basic.lean)

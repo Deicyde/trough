@@ -8,7 +8,7 @@ proof: formalized
 
 # Contraction identities for the Levi-Civita tensor
 
-The module `Physlib.Relativity.Tensors.LeviCivita.Contractions`, [Physlib/Relativity/Tensors/LeviCivita/Contractions.lean](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/Relativity/Tensors/LeviCivita/Contractions.lean): 11 declarations, 11 with a docstring.
+The module `Physlib.Relativity.Tensors.LeviCivita.Contractions`, [Physlib/Relativity/Tensors/LeviCivita/Contractions.lean](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Relativity/Tensors/LeviCivita/Contractions.lean): 11 declarations, 11 with a docstring.
 
 ## i. Overview
 
@@ -50,7 +50,7 @@ The module `Physlib.Relativity.Tensors.LeviCivita.Contractions`, [Physlib/Relati
 
 ## A. Euclidean epsilon-epsilon contraction identities
 
-**`euclidLeviCivita_symbol_contract_zero`**, a lemma, [line 80](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/Relativity/Tensors/LeviCivita/Contractions.lean#L80).
+**`euclidLeviCivita_symbol_contract_zero`**, a lemma, [line 80](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Relativity/Tensors/LeviCivita/Contractions.lean#L80).
 
 > **Full Euclidean Levi-Civita contraction** `∑_b (ε4)_b · (ε4)_b = 24` at the symbol level:
 > summing the square of every standard-basis component of `ε4` over all four `Fin 4` index slots,
@@ -62,7 +62,7 @@ lemma euclidLeviCivita_symbol_contract_zero :
     ∑ g : (Fin 4 → Fin 4), euclidLeviCivita g * euclidLeviCivita g = 24
 ```
 
-**`euclidLeviCivita_symbol_contract_one`**, a lemma, [line 95](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/Relativity/Tensors/LeviCivita/Contractions.lean#L95).
+**`euclidLeviCivita_symbol_contract_one`**, a lemma, [line 95](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Relativity/Tensors/LeviCivita/Contractions.lean#L95).
 
 > **Triple Euclidean Levi-Civita contraction** `∑_h (ε4)_{a,h} · (ε4)_{b,h} = 6 · δ[a,b]` at
 > the symbol level: contracting three of the four `Fin 4` component slots of `ε4` with the naive
@@ -75,7 +75,7 @@ lemma euclidLeviCivita_symbol_contract_one (a b : Fin 4) :
       = 6 * ((kroneckerDelta a b : ℕ) : ℝ)
 ```
 
-**`euclidLeviCivita_symbol_contract_one_last`**, a lemma, [line 112](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/Relativity/Tensors/LeviCivita/Contractions.lean#L112).
+**`euclidLeviCivita_symbol_contract_one_last`**, a lemma, [line 112](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Relativity/Tensors/LeviCivita/Contractions.lean#L112).
 
 > **Triple Euclidean Levi-Civita contraction with the free index last.** This is the same
 > contraction as `euclidLeviCivita_symbol_contract_one`, in the slot order produced by the tensor
@@ -87,7 +87,7 @@ lemma euclidLeviCivita_symbol_contract_one_last (a b : Fin 4) :
       = 6 * ((kroneckerDelta a b : ℕ) : ℝ)
 ```
 
-**`euclidLeviCivita_symbol_contract_two`**, a lemma, [line 125](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/Relativity/Tensors/LeviCivita/Contractions.lean#L125).
+**`euclidLeviCivita_symbol_contract_two`**, a lemma, [line 125](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Relativity/Tensors/LeviCivita/Contractions.lean#L125).
 
 > **Double Euclidean Levi-Civita contraction**
 > `∑_h (ε4)_{r,s,h} · (ε4)_{t,w,h} = 2 · (δ[r,t]·δ[s,w] - δ[r,w]·δ[s,t])` at the symbol level:
@@ -104,7 +104,7 @@ lemma euclidLeviCivita_symbol_contract_two (r s t w : Fin 4) :
 
 ## B. Lorentzian epsilon-epsilon contraction identities
 
-**`realLorentzTensor.leviCivita_lowered_basis_repr_apply`**, a lemma, [line 159](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/Relativity/Tensors/LeviCivita/Contractions.lean#L159).
+**`realLorentzTensor.leviCivita_lowered_basis_repr_apply`**, a lemma, [line 159](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Relativity/Tensors/LeviCivita/Contractions.lean#L159).
 
 > Lowering all four indices of the Levi-Civita tensor changes the sign of every standard-basis
 > component. This is the tensor-component form of the Lorentzian orientation factor
@@ -118,7 +118,7 @@ lemma leviCivita_lowered_basis_repr_apply
       - (Tensor.basis _).repr ε4 b
 ```
 
-**`realLorentzTensor.leviCivita_basis_contract_self`**, a lemma, [line 178](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/Relativity/Tensors/LeviCivita/Contractions.lean#L178).
+**`realLorentzTensor.leviCivita_basis_contract_self`**, a lemma, [line 178](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Relativity/Tensors/LeviCivita/Contractions.lean#L178).
 
 > The sum of the squared standard-basis components of the contravariant Levi-Civita tensor is
 > `4! = 24`.
@@ -130,7 +130,7 @@ lemma leviCivita_basis_contract_self :
       (Tensor.basis _).repr ε4 b * (Tensor.basis _).repr ε4 b = 24
 ```
 
-**`realLorentzTensor.leviCivita_basis_contract_three`**, a lemma, [line 192](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/Relativity/Tensors/LeviCivita/Contractions.lean#L192).
+**`realLorentzTensor.leviCivita_basis_contract_three`**, a lemma, [line 192](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Relativity/Tensors/LeviCivita/Contractions.lean#L192).
 
 > Contracting the first three standard-basis components of two contravariant Levi-Civita tensors
 > gives `3! = 6` times the Kronecker delta on the remaining components.
@@ -143,7 +143,7 @@ lemma leviCivita_basis_contract_three (a b : Fin 1 ⊕ Fin 3) :
       6 * (if a = b then 1 else 0)
 ```
 
-**`realLorentzTensor.leviCivita_contract_three_basis_repr_apply`**, a lemma, [line 222](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/Relativity/Tensors/LeviCivita/Contractions.lean#L222).
+**`realLorentzTensor.leviCivita_contract_three_basis_repr_apply`**, a lemma, [line 222](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Relativity/Tensors/LeviCivita/Contractions.lean#L222).
 
 > The standard-basis component formula for the tensor contraction
 > `ε^{μνρσ} ε_{μνρτ}`.
@@ -160,7 +160,7 @@ lemma leviCivita_contract_three_basis_repr_apply
 
 ### B.1. The epsilon-epsilon contraction identities
 
-**`realLorentzTensor.leviCivita_contract_three`**, a lemma, [line 272](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/Relativity/Tensors/LeviCivita/Contractions.lean#L272).
+**`realLorentzTensor.leviCivita_contract_three`**, a lemma, [line 272](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Relativity/Tensors/LeviCivita/Contractions.lean#L272).
 
 > Contracting three indices of the Lorentzian Levi-Civita tensor with a fully lowered copy gives
 > `-6` times the mixed-index unit tensor.
@@ -170,7 +170,7 @@ lemma leviCivita_contract_three : {ε4 | μ ν ρ σ ⊗ ε4 | τ(μ) τ(ν) τ(
     (-6) • unitTensor (S := realLorentzTensor) Color.down | σ τ }ᵀ
 ```
 
-**`realLorentzTensor.leviCivita_contract_self_eq_sum`**, a lemma, [line 302](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/Relativity/Tensors/LeviCivita/Contractions.lean#L302).
+**`realLorentzTensor.leviCivita_contract_self_eq_sum`**, a lemma, [line 302](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Relativity/Tensors/LeviCivita/Contractions.lean#L302).
 
 > Fully contracting the tensor product of `ε4` and its fully lowered form is the sum of the
 > products of their matching standard-basis components.
@@ -184,7 +184,7 @@ lemma leviCivita_contract_self_eq_sum :
           (Tensor.basis _).repr ({ε4 | τ(μ) τ(ν) τ(ρ) τ(σ)}ᵀ) b
 ```
 
-**`realLorentzTensor.leviCivita_contract_self`**, a lemma, [line 339](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/Relativity/Tensors/LeviCivita/Contractions.lean#L339).
+**`realLorentzTensor.leviCivita_contract_self`**, a lemma, [line 339](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Relativity/Tensors/LeviCivita/Contractions.lean#L339).
 
 > Fully contracting the Lorentzian Levi-Civita tensor with a lowered copy gives `-24`.
 
@@ -206,4 +206,4 @@ lemma leviCivita_contract_self :
 
 ## Sources
 
-- [Physlib/Relativity/Tensors/LeviCivita/Contractions.lean at 2a1dfe43](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/Relativity/Tensors/LeviCivita/Contractions.lean)
+- [Physlib/Relativity/Tensors/LeviCivita/Contractions.lean at 8c87bdfb](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Relativity/Tensors/LeviCivita/Contractions.lean)

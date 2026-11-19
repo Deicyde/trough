@@ -8,7 +8,7 @@ proof: formalized
 
 # Analytic vectors
 
-The module `PhyslibAlpha.ProbabilisticTheory.HilbertSpace.Unbounded.AnalyticVector.Basic`, [PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/AnalyticVector/Basic.lean](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/AnalyticVector/Basic.lean): 65 declarations, 18 with a docstring.
+The module `PhyslibAlpha.ProbabilisticTheory.HilbertSpace.Unbounded.AnalyticVector.Basic`, [PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/AnalyticVector/Basic.lean](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/AnalyticVector/Basic.lean): 65 declarations, 18 with a docstring.
 
 > Analytic and entire vectors, their exponential series and an essential self-adjointness test.
 
@@ -36,7 +36,7 @@ The module `PhyslibAlpha.ProbabilisticTheory.HilbertSpace.Unbounded.AnalyticVect
 
 ## A. The definition
 
-**`LinearPMap.IteratesSeq`**, a def, [line 69](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/AnalyticVector/Basic.lean#L69).
+**`LinearPMap.IteratesSeq`**, a def, [line 69](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/AnalyticVector/Basic.lean#L69).
 
 > `v` is the sequence of iterates of `x` under `T`: `v 0 = x` and `v (n + 1) = T (v n)`. In
 > particular `x` lies in the domain of every power of `T`.
@@ -45,7 +45,7 @@ The module `PhyslibAlpha.ProbabilisticTheory.HilbertSpace.Unbounded.AnalyticVect
 def IteratesSeq (T : H →ₗ.[ℂ] H) (x : H) (v : ℕ → T.domain) : Prop
 ```
 
-**`LinearPMap.IteratesSeq.ext`**, a lemma, [line 73](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/AnalyticVector/Basic.lean#L73).
+**`LinearPMap.IteratesSeq.ext`**, a lemma, [line 73](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/AnalyticVector/Basic.lean#L73).
 
 ```lean
 lemma IteratesSeq.ext {T : H →ₗ.[ℂ] H} {x : H} {v w : ℕ → T.domain}
@@ -53,7 +53,7 @@ lemma IteratesSeq.ext {T : H →ₗ.[ℂ] H} {x : H} {v w : ℕ → T.domain}
     ∀ n, (v n : H) = (w n : H)
 ```
 
-**`LinearPMap.IsAnalyticVector`**, a def, [line 90](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/AnalyticVector/Basic.lean#L90).
+**`LinearPMap.IsAnalyticVector`**, a def, [line 90](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/AnalyticVector/Basic.lean#L90).
 
 > **Analytic vector** (Reed–Simon Vol. II, §X.6). `x` is an analytic vector for `T` if it lies
 > in the domain of every iterated power `Tⁿ` (witnessed by an iterate sequence `v`, so `v n`
@@ -63,7 +63,7 @@ lemma IteratesSeq.ext {T : H →ₗ.[ℂ] H} {x : H} {v w : ℕ → T.domain}
 def IsAnalyticVector (T : H →ₗ.[ℂ] H) (x : H) : Prop
 ```
 
-**`LinearPMap.AnalyticVectorWitness`**, a structure, [line 97](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/AnalyticVector/Basic.lean#L97).
+**`LinearPMap.AnalyticVectorWitness`**, a structure, [line 97](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/AnalyticVector/Basic.lean#L97).
 
 > The data hidden by `IsAnalyticVector`, retained as a structure for recursive continuation.
 > The proposition is ideal for stating density assumptions; this structure is the corresponding
@@ -82,14 +82,14 @@ structure AnalyticVectorWitness (T : H →ₗ.[ℂ] H) where
   summable : Summable (fun n => ‖(iterates n : H)‖ * radius ^ n / n.factorial)
 ```
 
-**`LinearPMap.AnalyticVectorWitness.isAnalytic`**, a lemma, [line 109](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/AnalyticVector/Basic.lean#L109).
+**`LinearPMap.AnalyticVectorWitness.isAnalytic`**, a lemma, [line 109](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/AnalyticVector/Basic.lean#L109).
 
 ```lean
 lemma AnalyticVectorWitness.isAnalytic {T : H →ₗ.[ℂ] H} (W : AnalyticVectorWitness T) :
     T.IsAnalyticVector W.state
 ```
 
-**`LinearPMap.AnalyticVectorWitness.ofIsAnalytic`**, a def, [line 114](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/AnalyticVector/Basic.lean#L114).
+**`LinearPMap.AnalyticVectorWitness.ofIsAnalytic`**, a def, [line 114](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/AnalyticVector/Basic.lean#L114).
 
 > Extracts an explicit `AnalyticVectorWitness` from a proof that `x` is an analytic vector.
 
@@ -98,7 +98,7 @@ noncomputable def AnalyticVectorWitness.ofIsAnalytic
     {T : H →ₗ.[ℂ] H} {x : H} (h : T.IsAnalyticVector x) : AnalyticVectorWitness T
 ```
 
-**`LinearPMap.IsEntireVector`**, a def, [line 127](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/AnalyticVector/Basic.lean#L127).
+**`LinearPMap.IsEntireVector`**, a def, [line 127](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/AnalyticVector/Basic.lean#L127).
 
 > An entire vector has an iterate witness whose factorial majorant converges at every positive
 > radius.  This is stronger than `IsAnalyticVector`; it is the class on which the local exponential
@@ -110,7 +110,7 @@ def IsEntireVector (T : H →ₗ.[ℂ] H) (x : H) : Prop
 
 ## B. The local exponential series
 
-**`LinearPMap.analyticExpTerm`**, a def, [line 134](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/AnalyticVector/Basic.lean#L134).
+**`LinearPMap.analyticExpTerm`**, a def, [line 134](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/AnalyticVector/Basic.lean#L134).
 
 > The `n`-th term `(I s)ⁿ / n! • Tⁿ x` of the exponential series along the iterates `v`.
 
@@ -118,7 +118,7 @@ def IsEntireVector (T : H →ₗ.[ℂ] H) (x : H) : Prop
 def analyticExpTerm (T : H →ₗ.[ℂ] H) (v : ℕ → T.domain) (s : ℝ) (n : ℕ) : H
 ```
 
-**`LinearPMap.analyticExp`**, a def, [line 138](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/AnalyticVector/Basic.lean#L138).
+**`LinearPMap.analyticExp`**, a def, [line 138](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/AnalyticVector/Basic.lean#L138).
 
 > The exponential series `∑ₙ (I s)ⁿ / n! • Tⁿ x` along the iterates `v`.
 
@@ -126,7 +126,7 @@ def analyticExpTerm (T : H →ₗ.[ℂ] H) (v : ℕ → T.domain) (s : ℝ) (n :
 def analyticExp (T : H →ₗ.[ℂ] H) (v : ℕ → T.domain) (s : ℝ) : H
 ```
 
-**`LinearPMap.analyticExp_congr_iterates`**, a lemma, [line 142](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/AnalyticVector/Basic.lean#L142).
+**`LinearPMap.analyticExp_congr_iterates`**, a lemma, [line 142](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/AnalyticVector/Basic.lean#L142).
 
 ```lean
 lemma analyticExp_congr_iterates {T : H →ₗ.[ℂ] H} {x : H}
@@ -134,14 +134,14 @@ lemma analyticExp_congr_iterates {T : H →ₗ.[ℂ] H} {x : H}
     analyticExp T v s = analyticExp T w s
 ```
 
-**`LinearPMap.norm_analyticExpTerm`**, a lemma, [line 151](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/AnalyticVector/Basic.lean#L151).
+**`LinearPMap.norm_analyticExpTerm`**, a lemma, [line 151](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/AnalyticVector/Basic.lean#L151).
 
 ```lean
 lemma norm_analyticExpTerm (T : H →ₗ.[ℂ] H) (v : ℕ → T.domain) (s : ℝ) (n : ℕ) :
     ‖analyticExpTerm T v s n‖ = ‖(v n : H)‖ * |s| ^ n / n.factorial
 ```
 
-**`LinearPMap.analyticExpDerivTerm`**, a def, [line 161](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/AnalyticVector/Basic.lean#L161).
+**`LinearPMap.analyticExpDerivTerm`**, a def, [line 161](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/AnalyticVector/Basic.lean#L161).
 
 > The formal derivative of an exponential-series term with respect to its real time parameter.
 > The `n - 1` convention makes the definition uniform at `n = 0`, where the leading factor `n`
@@ -151,7 +151,7 @@ lemma norm_analyticExpTerm (T : H →ₗ.[ℂ] H) (v : ℕ → T.domain) (s : �
 def analyticExpDerivTerm (T : H →ₗ.[ℂ] H) (v : ℕ → T.domain) (s : ℝ) (n : ℕ) : H
 ```
 
-**`LinearPMap.analyticExpTerm_hasDerivAt`**, a lemma, [line 165](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/AnalyticVector/Basic.lean#L165).
+**`LinearPMap.analyticExpTerm_hasDerivAt`**, a lemma, [line 165](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/AnalyticVector/Basic.lean#L165).
 
 ```lean
 lemma analyticExpTerm_hasDerivAt (T : H →ₗ.[ℂ] H) (v : ℕ → T.domain) (s : ℝ) (n : ℕ) :
@@ -159,7 +159,7 @@ lemma analyticExpTerm_hasDerivAt (T : H →ₗ.[ℂ] H) (v : ℕ → T.domain) (
       (analyticExpDerivTerm T v s n) s
 ```
 
-**`LinearPMap.norm_analyticExpDerivTerm`**, a lemma, [line 182](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/AnalyticVector/Basic.lean#L182).
+**`LinearPMap.norm_analyticExpDerivTerm`**, a lemma, [line 182](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/AnalyticVector/Basic.lean#L182).
 
 ```lean
 lemma norm_analyticExpDerivTerm (T : H →ₗ.[ℂ] H) (v : ℕ → T.domain) (s : ℝ) (n : ℕ) :
@@ -167,7 +167,7 @@ lemma norm_analyticExpDerivTerm (T : H →ₗ.[ℂ] H) (v : ℕ → T.domain) (s
       ‖(v n : H)‖ * n * |s| ^ (n - 1) / n.factorial
 ```
 
-**`LinearPMap.analyticExp_hasDerivAt_of_mem_half_radius`**, a lemma, [line 190](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/AnalyticVector/Basic.lean#L190).
+**`LinearPMap.analyticExp_hasDerivAt_of_mem_half_radius`**, a lemma, [line 190](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/AnalyticVector/Basic.lean#L190).
 
 ```lean
 lemma analyticExp_hasDerivAt_of_mem_half_radius
@@ -178,7 +178,7 @@ lemma analyticExp_hasDerivAt_of_mem_half_radius
       (∑' n, analyticExpDerivTerm T v s n) s
 ```
 
-**`LinearPMap.analyticExp_hasDerivAt_zero`**, a lemma, [line 261](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/AnalyticVector/Basic.lean#L261).
+**`LinearPMap.analyticExp_hasDerivAt_zero`**, a lemma, [line 261](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/AnalyticVector/Basic.lean#L261).
 
 ```lean
 lemma analyticExp_hasDerivAt_zero {T : H →ₗ.[ℂ] H} {x : H} {v : ℕ → T.domain}
@@ -187,7 +187,7 @@ lemma analyticExp_hasDerivAt_zero {T : H →ₗ.[ℂ] H} {x : H} {v : ℕ → T.
     HasDerivAt (fun s : ℝ => analyticExp T v s) (Complex.I • T (v 0)) 0
 ```
 
-**`LinearPMap.summable_analyticExpDerivTerm_of_mem_half_radius`**, a lemma, [line 280](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/AnalyticVector/Basic.lean#L280).
+**`LinearPMap.summable_analyticExpDerivTerm_of_mem_half_radius`**, a lemma, [line 280](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/AnalyticVector/Basic.lean#L280).
 
 ```lean
 lemma summable_analyticExpDerivTerm_of_mem_half_radius
@@ -197,7 +197,7 @@ lemma summable_analyticExpDerivTerm_of_mem_half_radius
     Summable (fun n => analyticExpDerivTerm T v s n)
 ```
 
-**`LinearPMap.analyticExp_mem_closure_graph`**, a lemma, [line 336](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/AnalyticVector/Basic.lean#L336).
+**`LinearPMap.analyticExp_mem_closure_graph`**, a lemma, [line 336](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/AnalyticVector/Basic.lean#L336).
 
 ```lean
 lemma analyticExp_mem_closure_graph
@@ -209,7 +209,7 @@ lemma analyticExp_mem_closure_graph
       T.closure.graph
 ```
 
-**`LinearPMap.analyticExp_mem_closure_domain`**, a lemma, [line 409](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/AnalyticVector/Basic.lean#L409).
+**`LinearPMap.analyticExp_mem_closure_domain`**, a lemma, [line 409](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/AnalyticVector/Basic.lean#L409).
 
 ```lean
 lemma analyticExp_mem_closure_domain
@@ -220,7 +220,7 @@ lemma analyticExp_mem_closure_domain
     analyticExp T v s ∈ T.closure.domain
 ```
 
-**`LinearPMap.closure_analyticExp_apply`**, a lemma, [line 417](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/AnalyticVector/Basic.lean#L417).
+**`LinearPMap.closure_analyticExp_apply`**, a lemma, [line 417](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/AnalyticVector/Basic.lean#L417).
 
 ```lean
 lemma closure_analyticExp_apply
@@ -232,7 +232,7 @@ lemma closure_analyticExp_apply
       (-Complex.I) • (∑' n, analyticExpDerivTerm T v s n)
 ```
 
-**`LinearPMap.analyticExp_hasDerivAt_eq_smul_closure`**, a lemma, [line 429](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/AnalyticVector/Basic.lean#L429).
+**`LinearPMap.analyticExp_hasDerivAt_eq_smul_closure`**, a lemma, [line 429](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/AnalyticVector/Basic.lean#L429).
 
 ```lean
 lemma analyticExp_hasDerivAt_eq_smul_closure
@@ -245,7 +245,7 @@ lemma analyticExp_hasDerivAt_eq_smul_closure
         analyticExp_mem_closure_domain hv hT hs hsum⟩) s
 ```
 
-**`LinearPMap.IsSymmetric.re_inner_smul_I_apply_self`**, a lemma, [line 444](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/AnalyticVector/Basic.lean#L444).
+**`LinearPMap.IsSymmetric.re_inner_smul_I_apply_self`**, a lemma, [line 444](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/AnalyticVector/Basic.lean#L444).
 
 ```lean
 lemma IsSymmetric.re_inner_smul_I_apply_self
@@ -253,7 +253,7 @@ lemma IsSymmetric.re_inner_smul_I_apply_self
     (⟪(x : H), Complex.I • T x⟫_ℂ).re = 0
 ```
 
-**`LinearPMap.analyticExp_normSq_hasDerivAt_eq_zero`**, a lemma, [line 466](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/AnalyticVector/Basic.lean#L466).
+**`LinearPMap.analyticExp_normSq_hasDerivAt_eq_zero`**, a lemma, [line 466](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/AnalyticVector/Basic.lean#L466).
 
 ```lean
 lemma analyticExp_normSq_hasDerivAt_eq_zero
@@ -265,7 +265,7 @@ lemma analyticExp_normSq_hasDerivAt_eq_zero
     HasDerivAt (fun r : ℝ => ‖analyticExp T v r‖ ^ 2) 0 s
 ```
 
-**`LinearPMap.analyticExp_normSq_eq_normSq_zero`**, a lemma, [line 503](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/AnalyticVector/Basic.lean#L503).
+**`LinearPMap.analyticExp_normSq_eq_normSq_zero`**, a lemma, [line 503](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/AnalyticVector/Basic.lean#L503).
 
 ```lean
 lemma analyticExp_normSq_eq_normSq_zero
@@ -277,7 +277,7 @@ lemma analyticExp_normSq_eq_normSq_zero
     ‖analyticExp T v s‖ ^ 2 = ‖x‖ ^ 2
 ```
 
-**`LinearPMap.analyticExp_norm_eq_norm`**, a lemma, [line 531](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/AnalyticVector/Basic.lean#L531).
+**`LinearPMap.analyticExp_norm_eq_norm`**, a lemma, [line 531](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/AnalyticVector/Basic.lean#L531).
 
 ```lean
 lemma analyticExp_norm_eq_norm
@@ -289,7 +289,7 @@ lemma analyticExp_norm_eq_norm
     ‖analyticExp T v s‖ = ‖x‖
 ```
 
-**`LinearPMap.analyticExp_eq_zero_iff`**, a lemma, [line 541](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/AnalyticVector/Basic.lean#L541).
+**`LinearPMap.analyticExp_eq_zero_iff`**, a lemma, [line 541](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/AnalyticVector/Basic.lean#L541).
 
 ```lean
 lemma analyticExp_eq_zero_iff
@@ -301,14 +301,14 @@ lemma analyticExp_eq_zero_iff
     analyticExp T v s = 0 ↔ x = 0
 ```
 
-**`LinearPMap.IsEntireVector.isAnalyticVector`**, a lemma, [line 553](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/AnalyticVector/Basic.lean#L553).
+**`LinearPMap.IsEntireVector.isAnalyticVector`**, a lemma, [line 553](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/AnalyticVector/Basic.lean#L553).
 
 ```lean
 lemma IsEntireVector.isAnalyticVector
     {T : H →ₗ.[ℂ] H} {x : H} (h : T.IsEntireVector x) : T.IsAnalyticVector x
 ```
 
-**`LinearPMap.analyticExp_mem_closure_domain_of_entire`**, a lemma, [line 558](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/AnalyticVector/Basic.lean#L558).
+**`LinearPMap.analyticExp_mem_closure_domain_of_entire`**, a lemma, [line 558](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/AnalyticVector/Basic.lean#L558).
 
 ```lean
 lemma analyticExp_mem_closure_domain_of_entire
@@ -318,7 +318,7 @@ lemma analyticExp_mem_closure_domain_of_entire
     analyticExp T v s ∈ T.closure.domain
 ```
 
-**`LinearPMap.IsEntireVector.analyticExp_mem_closure_domain`**, a lemma, [line 572](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/AnalyticVector/Basic.lean#L572).
+**`LinearPMap.IsEntireVector.analyticExp_mem_closure_domain`**, a lemma, [line 572](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/AnalyticVector/Basic.lean#L572).
 
 ```lean
 lemma IsEntireVector.analyticExp_mem_closure_domain
@@ -328,7 +328,7 @@ lemma IsEntireVector.analyticExp_mem_closure_domain
       analyticExp T v s ∈ T.closure.domain
 ```
 
-**`LinearPMap.IsEntireVector.analyticExp_norm_eq_norm`**, a lemma, [line 587](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/AnalyticVector/Basic.lean#L587).
+**`LinearPMap.IsEntireVector.analyticExp_norm_eq_norm`**, a lemma, [line 587](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/AnalyticVector/Basic.lean#L587).
 
 ```lean
 lemma IsEntireVector.analyticExp_norm_eq_norm
@@ -339,7 +339,7 @@ lemma IsEntireVector.analyticExp_norm_eq_norm
     ∃ v : ℕ → T.domain, IteratesSeq T x v ∧ ‖analyticExp T v s‖ = ‖x‖
 ```
 
-**`LinearPMap.analyticExp_hasDerivAt_of_entire`**, a lemma, [line 603](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/AnalyticVector/Basic.lean#L603).
+**`LinearPMap.analyticExp_hasDerivAt_of_entire`**, a lemma, [line 603](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/AnalyticVector/Basic.lean#L603).
 
 ```lean
 lemma analyticExp_hasDerivAt_of_entire
@@ -351,7 +351,7 @@ lemma analyticExp_hasDerivAt_of_entire
         analyticExp_mem_closure_domain_of_entire hv hall hT s⟩) s
 ```
 
-**`LinearPMap.analyticExp_inner_deficiency_hasDerivAt`**, a lemma, [line 619](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/AnalyticVector/Basic.lean#L619).
+**`LinearPMap.analyticExp_inner_deficiency_hasDerivAt`**, a lemma, [line 619](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/AnalyticVector/Basic.lean#L619).
 
 ```lean
 lemma analyticExp_inner_deficiency_hasDerivAt
@@ -363,7 +363,7 @@ lemma analyticExp_inner_deficiency_hasDerivAt
       (-⟪y, analyticExp T v s⟫_ℂ) s
 ```
 
-**`LinearPMap.analyticExp_inner_deficiency_eq_zero`**, a lemma, [line 650](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/AnalyticVector/Basic.lean#L650).
+**`LinearPMap.analyticExp_inner_deficiency_eq_zero`**, a lemma, [line 650](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/AnalyticVector/Basic.lean#L650).
 
 ```lean
 lemma analyticExp_inner_deficiency_eq_zero
@@ -376,7 +376,7 @@ lemma analyticExp_inner_deficiency_eq_zero
     ⟪y, x⟫_ℂ = 0
 ```
 
-**`LinearPMap.analyticExp_inner_deficiency_hasDerivAt_neg`**, a lemma, [line 722](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/AnalyticVector/Basic.lean#L722).
+**`LinearPMap.analyticExp_inner_deficiency_hasDerivAt_neg`**, a lemma, [line 722](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/AnalyticVector/Basic.lean#L722).
 
 ```lean
 lemma analyticExp_inner_deficiency_hasDerivAt_neg
@@ -388,7 +388,7 @@ lemma analyticExp_inner_deficiency_hasDerivAt_neg
       (⟪y, analyticExp T v s⟫_ℂ) s
 ```
 
-**`LinearPMap.analyticExp_inner_deficiency_eq_zero_neg`**, a lemma, [line 754](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/AnalyticVector/Basic.lean#L754).
+**`LinearPMap.analyticExp_inner_deficiency_eq_zero_neg`**, a lemma, [line 754](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/AnalyticVector/Basic.lean#L754).
 
 ```lean
 lemma analyticExp_inner_deficiency_eq_zero_neg
@@ -401,7 +401,7 @@ lemma analyticExp_inner_deficiency_eq_zero_neg
     ⟪y, x⟫_ℂ = 0
 ```
 
-**`LinearPMap.analyticExp_continuousAt_of_mem_half_radius`**, a lemma, [line 831](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/AnalyticVector/Basic.lean#L831).
+**`LinearPMap.analyticExp_continuousAt_of_mem_half_radius`**, a lemma, [line 831](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/AnalyticVector/Basic.lean#L831).
 
 ```lean
 lemma analyticExp_continuousAt_of_mem_half_radius
@@ -411,7 +411,7 @@ lemma analyticExp_continuousAt_of_mem_half_radius
     ContinuousAt (fun r : ℝ => analyticExp T v r) s
 ```
 
-**`LinearPMap.IsAnalyticVector.exists_analyticExp_summable`**, a lemma, [line 838](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/AnalyticVector/Basic.lean#L838).
+**`LinearPMap.IsAnalyticVector.exists_analyticExp_summable`**, a lemma, [line 838](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/AnalyticVector/Basic.lean#L838).
 
 ```lean
 lemma IsAnalyticVector.exists_analyticExp_summable
@@ -420,7 +420,7 @@ lemma IsAnalyticVector.exists_analyticExp_summable
       Summable (fun n => analyticExpTerm T v s n)
 ```
 
-**`LinearPMap.IsAnalyticVector.summable_analyticExpTerm`**, a lemma, [line 855](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/AnalyticVector/Basic.lean#L855).
+**`LinearPMap.IsAnalyticVector.summable_analyticExpTerm`**, a lemma, [line 855](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/AnalyticVector/Basic.lean#L855).
 
 ```lean
 lemma IsAnalyticVector.summable_analyticExpTerm
@@ -429,7 +429,7 @@ lemma IsAnalyticVector.summable_analyticExpTerm
     Summable (fun n => analyticExpTerm T v s n)
 ```
 
-**`LinearPMap.IsAnalyticVector.hasSum_analyticExp`**, a lemma, [line 870](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/AnalyticVector/Basic.lean#L870).
+**`LinearPMap.IsAnalyticVector.hasSum_analyticExp`**, a lemma, [line 870](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/AnalyticVector/Basic.lean#L870).
 
 ```lean
 lemma IsAnalyticVector.hasSum_analyticExp
@@ -438,7 +438,7 @@ lemma IsAnalyticVector.hasSum_analyticExp
     HasSum (fun n => analyticExpTerm T v s n) (analyticExp T v s)
 ```
 
-**`LinearPMap.analyticExp_smul_iterates`**, a lemma, [line 877](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/AnalyticVector/Basic.lean#L877).
+**`LinearPMap.analyticExp_smul_iterates`**, a lemma, [line 877](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/AnalyticVector/Basic.lean#L877).
 
 ```lean
 lemma analyticExp_smul_iterates
@@ -448,7 +448,7 @@ lemma analyticExp_smul_iterates
     analyticExp T (fun n => c • v n) s = c • analyticExp T v s
 ```
 
-**`LinearPMap.analyticExp_add_iterates`**, a lemma, [line 904](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/AnalyticVector/Basic.lean#L904).
+**`LinearPMap.analyticExp_add_iterates`**, a lemma, [line 904](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/AnalyticVector/Basic.lean#L904).
 
 ```lean
 lemma analyticExp_add_iterates
@@ -460,14 +460,14 @@ lemma analyticExp_add_iterates
       analyticExp T v s + analyticExp T w s
 ```
 
-**`LinearPMap.analyticExp_zero`**, a lemma, [line 939](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/AnalyticVector/Basic.lean#L939).
+**`LinearPMap.analyticExp_zero`**, a lemma, [line 939](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/AnalyticVector/Basic.lean#L939).
 
 ```lean
 lemma analyticExp_zero {T : H →ₗ.[ℂ] H} {x : H} {v : ℕ → T.domain}
     (hv : IteratesSeq T x v) : analyticExp T v 0 = x
 ```
 
-**`LinearPMap.analyticExpTerm_succ`**, a lemma, [line 947](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/AnalyticVector/Basic.lean#L947).
+**`LinearPMap.analyticExpTerm_succ`**, a lemma, [line 947](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/AnalyticVector/Basic.lean#L947).
 
 ```lean
 lemma analyticExpTerm_succ {T : H →ₗ.[ℂ] H} {v : ℕ → T.domain}
@@ -476,14 +476,14 @@ lemma analyticExpTerm_succ {T : H →ₗ.[ℂ] H} {v : ℕ → T.domain}
       (((Complex.I * (s : ℂ)) ^ (n + 1)) / (n + 1).factorial) • T (v n)
 ```
 
-**`LinearPMap.IsAnalyticVector.mem_domain`**, a lemma, [line 955](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/AnalyticVector/Basic.lean#L955).
+**`LinearPMap.IsAnalyticVector.mem_domain`**, a lemma, [line 955](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/AnalyticVector/Basic.lean#L955).
 
 ```lean
 lemma IsAnalyticVector.mem_domain {T : H →ₗ.[ℂ] H} {x : H} (h : T.IsAnalyticVector x) :
     x ∈ T.domain
 ```
 
-**`LinearPMap.IsAnalyticVector.for_closure`**, a lemma, [line 962](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/AnalyticVector/Basic.lean#L962).
+**`LinearPMap.IsAnalyticVector.for_closure`**, a lemma, [line 962](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/AnalyticVector/Basic.lean#L962).
 
 > An analytic vector of a closable operator is analytic for its closure.
 
@@ -493,7 +493,7 @@ lemma IsAnalyticVector.for_closure {T : H →ₗ.[ℂ] H} {x : H}
     T.closure.IsAnalyticVector x
 ```
 
-**`LinearPMap.IsAnalyticVector.apply`**, a lemma, [line 982](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/AnalyticVector/Basic.lean#L982).
+**`LinearPMap.IsAnalyticVector.apply`**, a lemma, [line 982](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/AnalyticVector/Basic.lean#L982).
 
 > Applying `T` to an analytic vector gives an analytic vector, with a smaller radius.
 
@@ -503,7 +503,7 @@ lemma IsAnalyticVector.apply {T : H →ₗ.[ℂ] H} {x : H}
     T.IsAnalyticVector (T ⟨x, IsAnalyticVector.mem_domain h⟩)
 ```
 
-**`LinearPMap.IsAnalyticVector.closure_apply`**, a lemma, [line 1042](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/AnalyticVector/Basic.lean#L1042).
+**`LinearPMap.IsAnalyticVector.closure_apply`**, a lemma, [line 1042](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/AnalyticVector/Basic.lean#L1042).
 
 > Applying the closure of `T` to an analytic vector gives an analytic vector, with a smaller
 > radius.
@@ -517,13 +517,13 @@ lemma IsAnalyticVector.closure_apply {T : H →ₗ.[ℂ] H} {x : H}
 
 ## C. Structural closure properties
 
-**`LinearPMap.isAnalyticVector_zero`**, a lemma, [line 1051](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/AnalyticVector/Basic.lean#L1051).
+**`LinearPMap.isAnalyticVector_zero`**, a lemma, [line 1051](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/AnalyticVector/Basic.lean#L1051).
 
 ```lean
 lemma isAnalyticVector_zero (T : H →ₗ.[ℂ] H) : T.IsAnalyticVector 0
 ```
 
-**`LinearPMap.IsAnalyticVector.smul`**, a lemma, [line 1061](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/AnalyticVector/Basic.lean#L1061).
+**`LinearPMap.IsAnalyticVector.smul`**, a lemma, [line 1061](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/AnalyticVector/Basic.lean#L1061).
 
 > Analytic vectors are closed under scalar multiplication, with the same radius.
 
@@ -532,7 +532,7 @@ lemma IsAnalyticVector.smul {T : H →ₗ.[ℂ] H} {x : H} (h : T.IsAnalyticVect
     T.IsAnalyticVector (c • x)
 ```
 
-**`LinearPMap.IsAnalyticVector.add`**, a lemma, [line 1077](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/AnalyticVector/Basic.lean#L1077).
+**`LinearPMap.IsAnalyticVector.add`**, a lemma, [line 1077](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/AnalyticVector/Basic.lean#L1077).
 
 > The sum of two analytic vectors is analytic, with the smaller of the two radii.
 
@@ -542,7 +542,7 @@ lemma IsAnalyticVector.add {T : H →ₗ.[ℂ] H} {x y : H}
     T.IsAnalyticVector (x + y)
 ```
 
-**`LinearPMap.analyticVectors`**, a def, [line 1107](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/AnalyticVector/Basic.lean#L1107).
+**`LinearPMap.analyticVectors`**, a def, [line 1107](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/AnalyticVector/Basic.lean#L1107).
 
 > The analytic vectors of `T`, as a submodule.
 
@@ -550,21 +550,21 @@ lemma IsAnalyticVector.add {T : H →ₗ.[ℂ] H} {x y : H}
 def analyticVectors (T : H →ₗ.[ℂ] H) : Submodule ℂ H
 ```
 
-**`LinearPMap.mem_analyticVectors`**, a lemma, [line 1115](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/AnalyticVector/Basic.lean#L1115).
+**`LinearPMap.mem_analyticVectors`**, a lemma, [line 1115](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/AnalyticVector/Basic.lean#L1115).
 
 ```lean
 lemma mem_analyticVectors {T : H →ₗ.[ℂ] H} {x : H} :
     x ∈ T.analyticVectors ↔ T.IsAnalyticVector x
 ```
 
-**`LinearPMap.analyticVectors_le_domain`**, a lemma, [line 1119](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/AnalyticVector/Basic.lean#L1119).
+**`LinearPMap.analyticVectors_le_domain`**, a lemma, [line 1119](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/AnalyticVector/Basic.lean#L1119).
 
 ```lean
 lemma analyticVectors_le_domain {T : H →ₗ.[ℂ] H} :
     T.analyticVectors ≤ T.domain
 ```
 
-**`LinearPMap.dense_analyticVectors_iff`**, a lemma, [line 1125](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/AnalyticVector/Basic.lean#L1125).
+**`LinearPMap.dense_analyticVectors_iff`**, a lemma, [line 1125](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/AnalyticVector/Basic.lean#L1125).
 
 ```lean
 lemma dense_analyticVectors_iff {T : H →ₗ.[ℂ] H} :
@@ -574,7 +574,7 @@ lemma dense_analyticVectors_iff {T : H →ₗ.[ℂ] H} :
 
 ## D. Eigenvectors are analytic
 
-**`LinearPMap.isAnalyticVector_of_eigenvector`**, a lemma, [line 1136](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/AnalyticVector/Basic.lean#L1136).
+**`LinearPMap.isAnalyticVector_of_eigenvector`**, a lemma, [line 1136](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/AnalyticVector/Basic.lean#L1136).
 
 > Every eigenvector is analytic, with every radius.
 
@@ -583,27 +583,27 @@ lemma isAnalyticVector_of_eigenvector {T : H →ₗ.[ℂ] H} {x : H} (hx : x ∈
     (heig : T ⟨x, hx⟩ = μ • x) (t : ℝ) (ht : 0 < t) : T.IsAnalyticVector x
 ```
 
-**`LinearPMap.isEntireVector_of_eigenvector`**, a lemma, [line 1153](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/AnalyticVector/Basic.lean#L1153).
+**`LinearPMap.isEntireVector_of_eigenvector`**, a lemma, [line 1153](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/AnalyticVector/Basic.lean#L1153).
 
 ```lean
 lemma isEntireVector_of_eigenvector {T : H →ₗ.[ℂ] H} {x : H} (hx : x ∈ T.domain) (μ : ℂ)
     (heig : T ⟨x, hx⟩ = μ • x) : T.IsEntireVector x
 ```
 
-**`LinearPMap.isEntireVector_zero`**, a lemma, [line 1171](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/AnalyticVector/Basic.lean#L1171).
+**`LinearPMap.isEntireVector_zero`**, a lemma, [line 1171](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/AnalyticVector/Basic.lean#L1171).
 
 ```lean
 lemma isEntireVector_zero (T : H →ₗ.[ℂ] H) : T.IsEntireVector 0
 ```
 
-**`LinearPMap.IsEntireVector.smul`**, a lemma, [line 1180](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/AnalyticVector/Basic.lean#L1180).
+**`LinearPMap.IsEntireVector.smul`**, a lemma, [line 1180](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/AnalyticVector/Basic.lean#L1180).
 
 ```lean
 lemma IsEntireVector.smul {T : H →ₗ.[ℂ] H} {x : H} (h : T.IsEntireVector x) (c : ℂ) :
     T.IsEntireVector (c • x)
 ```
 
-**`LinearPMap.IsEntireVector.add`**, a lemma, [line 1195](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/AnalyticVector/Basic.lean#L1195).
+**`LinearPMap.IsEntireVector.add`**, a lemma, [line 1195](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/AnalyticVector/Basic.lean#L1195).
 
 ```lean
 lemma IsEntireVector.add {T : H →ₗ.[ℂ] H} {x y : H}
@@ -611,7 +611,7 @@ lemma IsEntireVector.add {T : H →ₗ.[ℂ] H} {x y : H}
     T.IsEntireVector (x + y)
 ```
 
-**`LinearPMap.entireVectors`**, a def, [line 1221](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/AnalyticVector/Basic.lean#L1221).
+**`LinearPMap.entireVectors`**, a def, [line 1221](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/AnalyticVector/Basic.lean#L1221).
 
 > The submodule of entire vectors for `T`.
 
@@ -619,7 +619,7 @@ lemma IsEntireVector.add {T : H →ₗ.[ℂ] H} {x y : H}
 def entireVectors (T : H →ₗ.[ℂ] H) : Submodule ℂ H
 ```
 
-**`LinearPMap.mem_entireVectors`**, a lemma, [line 1229](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/AnalyticVector/Basic.lean#L1229).
+**`LinearPMap.mem_entireVectors`**, a lemma, [line 1229](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/AnalyticVector/Basic.lean#L1229).
 
 ```lean
 lemma mem_entireVectors {T : H →ₗ.[ℂ] H} {x : H} :
@@ -628,7 +628,7 @@ lemma mem_entireVectors {T : H →ₗ.[ℂ] H} {x : H} :
 
 ## E. The global-orbit essential-self-adjointness criterion
 
-**`LinearPMap.IsSymmetric.isEssentiallySelfAdjoint_of_denseEntireVectors`**, a lemma, [line 1237](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/AnalyticVector/Basic.lean#L1237).
+**`LinearPMap.IsSymmetric.isEssentiallySelfAdjoint_of_denseEntireVectors`**, a lemma, [line 1237](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/AnalyticVector/Basic.lean#L1237).
 
 > **A symmetric operator with a dense set of entire vectors is essentially self-adjoint.** Pairing
 > the orbit of an entire vector with a deficiency vector gives a scalar function that is both bounded
@@ -643,7 +643,7 @@ lemma IsSymmetric.isEssentiallySelfAdjoint_of_denseEntireVectors
 
 ## F. Common domain infrastructure for the finite-radius argument
 
-**`LinearPMap.hasDenseDomain_of_denseAnalyticVectors`**, a lemma, [line 1319](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/AnalyticVector/Basic.lean#L1319).
+**`LinearPMap.hasDenseDomain_of_denseAnalyticVectors`**, a lemma, [line 1319](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/AnalyticVector/Basic.lean#L1319).
 
 ```lean
 lemma hasDenseDomain_of_denseAnalyticVectors
@@ -652,7 +652,7 @@ lemma hasDenseDomain_of_denseAnalyticVectors
     T.HasDenseDomain
 ```
 
-**`LinearPMap.IsSymmetric.closure_of_denseAnalyticVectors`**, a lemma, [line 1332](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/AnalyticVector/Basic.lean#L1332).
+**`LinearPMap.IsSymmetric.closure_of_denseAnalyticVectors`**, a lemma, [line 1332](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/AnalyticVector/Basic.lean#L1332).
 
 ```lean
 lemma IsSymmetric.closure_of_denseAnalyticVectors
@@ -663,7 +663,7 @@ lemma IsSymmetric.closure_of_denseAnalyticVectors
 
 ## G. The global-orbit certificate targeted by Nelson continuation
 
-**`LinearPMap.LocalAnalyticOrbit`**, a structure, [line 1342](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/AnalyticVector/Basic.lean#L1342).
+**`LinearPMap.LocalAnalyticOrbit`**, a structure, [line 1342](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/AnalyticVector/Basic.lean#L1342).
 
 > A local norm-preserving orbit on a symmetric operator's analytic radius.  The finite-radius
 > Nelson construction starts with this object and must extend it by overlapping local pieces.
@@ -693,4 +693,4 @@ structure LocalAnalyticOrbit (T : H →ₗ.[ℂ] H) (x : H) where
 
 ## Sources
 
-- [PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/AnalyticVector/Basic.lean at 2a1dfe43](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/AnalyticVector/Basic.lean)
+- [PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/AnalyticVector/Basic.lean at 8c87bdfb](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/AnalyticVector/Basic.lean)

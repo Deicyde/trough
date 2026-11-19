@@ -8,9 +8,9 @@ proof: formalized
 
 # QuantumInfo.ForMathlib.HayataGroup.TraceInequality.GeneralizedPerspectiveFunction
 
-The module `QuantumInfo.ForMathlib.HayataGroup.TraceInequality.GeneralizedPerspectiveFunction`, [QuantumInfo/ForMathlib/HayataGroup/TraceInequality/GeneralizedPerspectiveFunction.lean](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/QuantumInfo/ForMathlib/HayataGroup/TraceInequality/GeneralizedPerspectiveFunction.lean): 13 declarations, 11 with a docstring, 2 listed as significant; 13 private, not shown.
+The module `QuantumInfo.ForMathlib.HayataGroup.TraceInequality.GeneralizedPerspectiveFunction`, [QuantumInfo/ForMathlib/HayataGroup/TraceInequality/GeneralizedPerspectiveFunction.lean](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/QuantumInfo/ForMathlib/HayataGroup/TraceInequality/GeneralizedPerspectiveFunction.lean): 13 declarations, 11 with a docstring, 2 listed as significant; 13 private, not shown.
 
-**`GeneralizedPerspectiveFunction.JointlyConvexOn`**, a def, [line 27](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/QuantumInfo/ForMathlib/HayataGroup/TraceInequality/GeneralizedPerspectiveFunction.lean#L27).
+**`GeneralizedPerspectiveFunction.JointlyConvexOn`**, a def, [line 27](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/QuantumInfo/ForMathlib/HayataGroup/TraceInequality/GeneralizedPerspectiveFunction.lean#L27).
 
 > Joint convexity of a two-variable map on prescribed domains in each argument.
 
@@ -18,7 +18,7 @@ The module `QuantumInfo.ForMathlib.HayataGroup.TraceInequality.GeneralizedPerspe
 def JointlyConvexOn (s : Set E) (t : Set F) (Φ : E → F → G) : Prop
 ```
 
-**`GeneralizedPerspectiveFunction.JointlyConvex`**, a def, [line 35](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/QuantumInfo/ForMathlib/HayataGroup/TraceInequality/GeneralizedPerspectiveFunction.lean#L35).
+**`GeneralizedPerspectiveFunction.JointlyConvex`**, a def, [line 35](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/QuantumInfo/ForMathlib/HayataGroup/TraceInequality/GeneralizedPerspectiveFunction.lean#L35).
 
 > Joint convexity of a two-variable map without domain restrictions.
 
@@ -26,7 +26,7 @@ def JointlyConvexOn (s : Set E) (t : Set F) (Φ : E → F → G) : Prop
 def JointlyConvex (Φ : E → F → G) : Prop
 ```
 
-**`GeneralizedPerspectiveFunction.JointlyConcaveOn`**, a def, [line 39](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/QuantumInfo/ForMathlib/HayataGroup/TraceInequality/GeneralizedPerspectiveFunction.lean#L39).
+**`GeneralizedPerspectiveFunction.JointlyConcaveOn`**, a def, [line 39](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/QuantumInfo/ForMathlib/HayataGroup/TraceInequality/GeneralizedPerspectiveFunction.lean#L39).
 
 > Joint concavity of a two-variable map on prescribed domains in each argument.
 
@@ -34,7 +34,7 @@ def JointlyConvex (Φ : E → F → G) : Prop
 def JointlyConcaveOn (s : Set E) (t : Set F) (Φ : E → F → G) : Prop
 ```
 
-**`GeneralizedPerspectiveFunction.JointlyConcave`**, a def, [line 47](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/QuantumInfo/ForMathlib/HayataGroup/TraceInequality/GeneralizedPerspectiveFunction.lean#L47).
+**`GeneralizedPerspectiveFunction.JointlyConcave`**, a def, [line 47](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/QuantumInfo/ForMathlib/HayataGroup/TraceInequality/GeneralizedPerspectiveFunction.lean#L47).
 
 > Joint concavity of a two-variable map without domain restrictions.
 
@@ -42,7 +42,7 @@ def JointlyConcaveOn (s : Set E) (t : Set F) (Φ : E → F → G) : Prop
 def JointlyConcave (Φ : E → F → G) : Prop
 ```
 
-**`GeneralizedPerspectiveFunction.hSqrt`**, a def, [line 59](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/QuantumInfo/ForMathlib/HayataGroup/TraceInequality/GeneralizedPerspectiveFunction.lean#L59).
+**`GeneralizedPerspectiveFunction.hSqrt`**, a def, [line 59](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/QuantumInfo/ForMathlib/HayataGroup/TraceInequality/GeneralizedPerspectiveFunction.lean#L59).
 
 > The operator `h(B)^(1/2)` defined by real continuous functional calculus.
 
@@ -50,7 +50,7 @@ def JointlyConcave (Φ : E → F → G) : Prop
 noncomputable def hSqrt (h : ℝ → ℝ) (B : L ℋ) : L ℋ
 ```
 
-**`GeneralizedPerspectiveFunction.hInvSqrt`**, a def, [line 63](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/QuantumInfo/ForMathlib/HayataGroup/TraceInequality/GeneralizedPerspectiveFunction.lean#L63).
+**`GeneralizedPerspectiveFunction.hInvSqrt`**, a def, [line 63](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/QuantumInfo/ForMathlib/HayataGroup/TraceInequality/GeneralizedPerspectiveFunction.lean#L63).
 
 > The operator `h(B)^(-1/2)` defined by real continuous functional calculus.
 
@@ -58,7 +58,7 @@ noncomputable def hSqrt (h : ℝ → ℝ) (B : L ℋ) : L ℋ
 noncomputable def hInvSqrt (h : ℝ → ℝ) (B : L ℋ) : L ℋ
 ```
 
-**`GeneralizedPerspectiveFunction.GeneralizedPerspective`**, a def, [line 72](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/QuantumInfo/ForMathlib/HayataGroup/TraceInequality/GeneralizedPerspectiveFunction.lean#L72).
+**`GeneralizedPerspectiveFunction.GeneralizedPerspective`**, a def, [line 72](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/QuantumInfo/ForMathlib/HayataGroup/TraceInequality/GeneralizedPerspectiveFunction.lean#L72).
 
 > The generalized perspective function
 > `(fΔh)(A, B) = h(B)^(1/2) f(h(B)^(-1/2) A h(B)^(-1/2)) h(B)^(1/2)`.
@@ -69,7 +69,7 @@ noncomputable def hInvSqrt (h : ℝ → ℝ) (B : L ℋ) : L ℋ
 noncomputable def GeneralizedPerspective (f h : ℝ → ℝ) (A B : L ℋ) : L ℋ
 ```
 
-**`GeneralizedPerspectiveFunction.psdSet`**, a def, [line 87](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/QuantumInfo/ForMathlib/HayataGroup/TraceInequality/GeneralizedPerspectiveFunction.lean#L87).
+**`GeneralizedPerspectiveFunction.psdSet`**, a def, [line 87](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/QuantumInfo/ForMathlib/HayataGroup/TraceInequality/GeneralizedPerspectiveFunction.lean#L87).
 
 > Positive semidefinite operators.
 
@@ -77,7 +77,7 @@ noncomputable def GeneralizedPerspective (f h : ℝ → ℝ) (A B : L ℋ) : L �
 def psdSet : Set (L ℋ)
 ```
 
-**`GeneralizedPerspectiveFunction.pdSet`**, a def, [line 91](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/QuantumInfo/ForMathlib/HayataGroup/TraceInequality/GeneralizedPerspectiveFunction.lean#L91).
+**`GeneralizedPerspectiveFunction.pdSet`**, a def, [line 91](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/QuantumInfo/ForMathlib/HayataGroup/TraceInequality/GeneralizedPerspectiveFunction.lean#L91).
 
 > Strictly positive operators.
 
@@ -85,7 +85,7 @@ def psdSet : Set (L ℋ)
 def pdSet : Set (L ℋ)
 ```
 
-**`GeneralizedPerspectiveFunction.theorem_2_5_forward_jointlyConvexOn_psd_pd`**, a lemma, [line 451](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/QuantumInfo/ForMathlib/HayataGroup/TraceInequality/GeneralizedPerspectiveFunction.lean#L451).
+**`GeneralizedPerspectiveFunction.theorem_2_5_forward_jointlyConvexOn_psd_pd`**, a lemma, [line 451](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/QuantumInfo/ForMathlib/HayataGroup/TraceInequality/GeneralizedPerspectiveFunction.lean#L451).
 
 ```lean
 lemma theorem_2_5_forward_jointlyConvexOn_psd_pd
@@ -97,7 +97,7 @@ lemma theorem_2_5_forward_jointlyConvexOn_psd_pd
     JointlyConvexOn (psdSet (ℋ := ℋ)) (pdSet (ℋ := ℋ)) (fun A B ↦ (f Δ h) A B)
 ```
 
-**`GeneralizedPerspectiveFunction.theorem_2_5_forward_jointlyConvexOn_psd_pd_Ici`**, a lemma, [line 464](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/QuantumInfo/ForMathlib/HayataGroup/TraceInequality/GeneralizedPerspectiveFunction.lean#L464).
+**`GeneralizedPerspectiveFunction.theorem_2_5_forward_jointlyConvexOn_psd_pd_Ici`**, a lemma, [line 464](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/QuantumInfo/ForMathlib/HayataGroup/TraceInequality/GeneralizedPerspectiveFunction.lean#L464).
 
 ```lean
 lemma theorem_2_5_forward_jointlyConvexOn_psd_pd_Ici
@@ -109,7 +109,7 @@ lemma theorem_2_5_forward_jointlyConvexOn_psd_pd_Ici
     JointlyConvexOn (psdSet (ℋ := ℋ)) (pdSet (ℋ := ℋ)) (fun A B ↦ (f Δ h) A B)
 ```
 
-**`GeneralizedPerspectiveFunction.theorem_2_6_forward_jointlyConcaveOn_psd_pd`**, a theorem, [line 496](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/QuantumInfo/ForMathlib/HayataGroup/TraceInequality/GeneralizedPerspectiveFunction.lean#L496). Listed as a significant result in [Theorems.txt](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/scripts/lint/exemptions/Theorems.txt).
+**`GeneralizedPerspectiveFunction.theorem_2_6_forward_jointlyConcaveOn_psd_pd`**, a theorem, [line 496](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/QuantumInfo/ForMathlib/HayataGroup/TraceInequality/GeneralizedPerspectiveFunction.lean#L496). Listed as a significant result in [Theorems.txt](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/scripts/lint/exemptions/Theorems.txt).
 
 > Restricted forward form of Corollary 2.6 on the positive cone.
 
@@ -124,7 +124,7 @@ theorem theorem_2_6_forward_jointlyConcaveOn_psd_pd
     JointlyConcaveOn (psdSet (ℋ := ℋ)) (pdSet (ℋ := ℋ)) (fun A B ↦ (f Δ h) A B)
 ```
 
-**`GeneralizedPerspectiveFunction.theorem_2_6_forward_jointlyConcaveOn_psd_pd_Ici`**, a theorem, [line 518](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/QuantumInfo/ForMathlib/HayataGroup/TraceInequality/GeneralizedPerspectiveFunction.lean#L518). Listed as a significant result in [Theorems.txt](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/scripts/lint/exemptions/Theorems.txt).
+**`GeneralizedPerspectiveFunction.theorem_2_6_forward_jointlyConcaveOn_psd_pd_Ici`**, a theorem, [line 518](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/QuantumInfo/ForMathlib/HayataGroup/TraceInequality/GeneralizedPerspectiveFunction.lean#L518). Listed as a significant result in [Theorems.txt](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/scripts/lint/exemptions/Theorems.txt).
 
 > Restricted localized forward form of Corollary 2.6 on the positive cone.
 
@@ -150,4 +150,4 @@ theorem theorem_2_6_forward_jointlyConcaveOn_psd_pd_Ici
 
 ## Sources
 
-- [QuantumInfo/ForMathlib/HayataGroup/TraceInequality/GeneralizedPerspectiveFunction.lean at 2a1dfe43](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/QuantumInfo/ForMathlib/HayataGroup/TraceInequality/GeneralizedPerspectiveFunction.lean)
+- [QuantumInfo/ForMathlib/HayataGroup/TraceInequality/GeneralizedPerspectiveFunction.lean at 8c87bdfb](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/QuantumInfo/ForMathlib/HayataGroup/TraceInequality/GeneralizedPerspectiveFunction.lean)

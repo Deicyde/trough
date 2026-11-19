@@ -8,7 +8,7 @@ proof: formalized
 
 # The covariant generators of the field algebra
 
-The module `PhyslibAlpha.Particles.StandardModel.CovRealization.Generators`, [PhyslibAlpha/Particles/StandardModel/CovRealization/Generators.lean](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/CovRealization/Generators.lean): 43 declarations, 35 with a docstring.
+The module `PhyslibAlpha.Particles.StandardModel.CovRealization.Generators`, [PhyslibAlpha/Particles/StandardModel/CovRealization/Generators.lean](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/CovRealization/Generators.lean): 43 declarations, 35 with a docstring.
 
 ## i. Overview
 
@@ -37,7 +37,7 @@ The module `PhyslibAlpha.Particles.StandardModel.CovRealization.Generators`, [Ph
 
 ## A. Derivative collections
 
-**`StandardModel.CovAlgebraRealization.Generators`**, an inductive, [line 75](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/CovRealization/Generators.lean#L75).
+**`StandardModel.CovAlgebraRealization.Generators`**, an inductive, [line 75](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/CovRealization/Generators.lean#L75).
 
 > The abstract index of a single covariant generator of the field algebra: one of
 > the covariant-derivative towers of the field strength, of the Higgs and its
@@ -78,7 +78,7 @@ inductive Generators where
 deriving DecidableEq
 ```
 
-**`StandardModel.CovAlgebraRealization.Generators.IsFermionic`**, a def, [line 108](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/CovRealization/Generators.lean#L108).
+**`StandardModel.CovAlgebraRealization.Generators.IsFermionic`**, a def, [line 108](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/CovRealization/Generators.lean#L108).
 
 > Whether a generator is one of the twenty fermion towers, the barred ones included.
 
@@ -86,7 +86,7 @@ deriving DecidableEq
 def IsFermionic : Generators → Prop
 ```
 
-**`StandardModel.CovAlgebraRealization.Generators.IsHiggs`**, a def, [line 125](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/CovRealization/Generators.lean#L125).
+**`StandardModel.CovAlgebraRealization.Generators.IsHiggs`**, a def, [line 125](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/CovRealization/Generators.lean#L125).
 
 > The Higgs generators: the covariant towers of the Higgs field and of its
 > conjugate.
@@ -95,7 +95,7 @@ def IsFermionic : Generators → Prop
 def IsHiggs : Generators → Prop
 ```
 
-**`StandardModel.CovAlgebraRealization.Generators.IsGaugeField`**, a def, [line 131](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/CovRealization/Generators.lean#L131).
+**`StandardModel.CovAlgebraRealization.Generators.IsGaugeField`**, a def, [line 131](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/CovRealization/Generators.lean#L131).
 
 > Whether a generator is a gauge-field symbol `∇_l F_{μν}^φ`.
 
@@ -103,7 +103,7 @@ def IsHiggs : Generators → Prop
 def IsGaugeField : Generators → Prop
 ```
 
-**`StandardModel.CovAlgebraRealization.Generators.toNumDerivatives`**, a def, [line 136](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/CovRealization/Generators.lean#L136).
+**`StandardModel.CovAlgebraRealization.Generators.toNumDerivatives`**, a def, [line 136](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/CovRealization/Generators.lean#L136).
 
 > The number of derivatives for a given generator.
 
@@ -113,7 +113,7 @@ def toNumDerivatives : Generators → ℕ
 
 ## B. Covariant generators
 
-**`StandardModel.CovAlgebraRealization.GeneratorClass`**, an inductive, [line 159](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/CovRealization/Generators.lean#L159).
+**`StandardModel.CovAlgebraRealization.GeneratorClass`**, an inductive, [line 159](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/CovRealization/Generators.lean#L159).
 
 > The three classes of covariant generator.
 
@@ -128,7 +128,7 @@ inductive GeneratorClass where
 deriving DecidableEq
 ```
 
-**`StandardModel.CovAlgebraRealization.instFintypeGeneratorClass`**, an instance, [line 171](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/CovRealization/Generators.lean#L171).
+**`StandardModel.CovAlgebraRealization.instFintypeGeneratorClass`**, an instance, [line 171](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/CovRealization/Generators.lean#L171).
 
 > The three classes exhaust `GeneratorClass`. The instance is written out rather than
 > derived: the `Fintype` deriving handler builds the enumerating `Finset` with a membership
@@ -138,7 +138,7 @@ deriving DecidableEq
 instance instFintypeGeneratorClass : Fintype GeneratorClass
 ```
 
-**`StandardModel.CovAlgebraRealization.Generators.kind`**, a def, [line 176](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/CovRealization/Generators.lean#L176).
+**`StandardModel.CovAlgebraRealization.Generators.kind`**, a def, [line 176](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/CovRealization/Generators.lean#L176).
 
 > The class of a covariant generator.
 
@@ -146,27 +146,27 @@ instance instFintypeGeneratorClass : Fintype GeneratorClass
 def Generators.kind : Generators → GeneratorClass
 ```
 
-**`StandardModel.CovAlgebraRealization.Generators.isGaugeField_iff_kind`**, a lemma, [line 183](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/CovRealization/Generators.lean#L183).
+**`StandardModel.CovAlgebraRealization.Generators.isGaugeField_iff_kind`**, a lemma, [line 183](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/CovRealization/Generators.lean#L183).
 
 ```lean
 lemma Generators.isGaugeField_iff_kind (g : Generators) :
     g.IsGaugeField ↔ g.kind = .gauge
 ```
 
-**`StandardModel.CovAlgebraRealization.Generators.isHiggs_iff_kind`**, a lemma, [line 188](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/CovRealization/Generators.lean#L188).
+**`StandardModel.CovAlgebraRealization.Generators.isHiggs_iff_kind`**, a lemma, [line 188](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/CovRealization/Generators.lean#L188).
 
 ```lean
 lemma Generators.isHiggs_iff_kind (g : Generators) : g.IsHiggs ↔ g.kind = .higgs
 ```
 
-**`StandardModel.CovAlgebraRealization.Generators.isFermionic_iff_kind`**, a lemma, [line 192](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/CovRealization/Generators.lean#L192).
+**`StandardModel.CovAlgebraRealization.Generators.isFermionic_iff_kind`**, a lemma, [line 192](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/CovRealization/Generators.lean#L192).
 
 ```lean
 lemma Generators.isFermionic_iff_kind (g : Generators) :
     g.IsFermionic ↔ g.kind = .fermion
 ```
 
-**`StandardModel.CovAlgebraRealization.Generators.weight`**, a def, [line 197](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/CovRealization/Generators.lean#L197).
+**`StandardModel.CovAlgebraRealization.Generators.weight`**, a def, [line 197](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/CovRealization/Generators.lean#L197).
 
 > The mass weight (twice the mass dimension) of a covariant generator.
 
@@ -181,7 +181,7 @@ def Generators.weight : Generators → ℕ
 > conjugate-Higgs towers `H`, `barH` are the lightest, at weight `2 * (1 + n) ≥ 2`; and
 > the ten families of fermion towers sit in between, at weight `3 + 2 * n ≥ 3`.
 
-**`StandardModel.CovAlgebraRealization.Generators.four_le_weight_of_gauge`**, a lemma, [line 225](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/CovRealization/Generators.lean#L225).
+**`StandardModel.CovAlgebraRealization.Generators.four_le_weight_of_gauge`**, a lemma, [line 225](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/CovRealization/Generators.lean#L225).
 
 > A gauge-class generator — a field-strength tower symbol — carries mass weight at
 > least four.
@@ -191,7 +191,7 @@ lemma Generators.four_le_weight_of_gauge {g : Generators} (hg : g.kind = Generat
     4 ≤ g.weight
 ```
 
-**`StandardModel.CovAlgebraRealization.Generators.two_le_weight_of_higgs`**, a lemma, [line 232](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/CovRealization/Generators.lean#L232).
+**`StandardModel.CovAlgebraRealization.Generators.two_le_weight_of_higgs`**, a lemma, [line 232](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/CovRealization/Generators.lean#L232).
 
 > A Higgs-class generator — a Higgs or conjugate-Higgs tower symbol — carries mass
 > weight at least two.
@@ -201,7 +201,7 @@ lemma Generators.two_le_weight_of_higgs {g : Generators} (hg : g.kind = Generato
     2 ≤ g.weight
 ```
 
-**`StandardModel.CovAlgebraRealization.Generators.three_le_weight_of_fermion`**, a lemma, [line 238](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/CovRealization/Generators.lean#L238).
+**`StandardModel.CovAlgebraRealization.Generators.three_le_weight_of_fermion`**, a lemma, [line 238](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/CovRealization/Generators.lean#L238).
 
 > A fermion-class generator — any of the ten families of fermion tower symbols —
 > carries mass weight at least three.
@@ -213,7 +213,7 @@ lemma Generators.three_le_weight_of_fermion {g : Generators}
 
 ## D. The classes realised by a word
 
-**`StandardModel.CovAlgebraRealization.wordClasses`**, a def, [line 249](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/CovRealization/Generators.lean#L249).
+**`StandardModel.CovAlgebraRealization.wordClasses`**, a def, [line 249](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/CovRealization/Generators.lean#L249).
 
 > The classes realised by a word in the covariant generators.
 
@@ -221,13 +221,13 @@ lemma Generators.three_le_weight_of_fermion {g : Generators}
 def wordClasses (gl : List Generators) : Finset GeneratorClass
 ```
 
-**`StandardModel.CovAlgebraRealization.wordClasses_nil`**, a lemma, [line 253](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/CovRealization/Generators.lean#L253).
+**`StandardModel.CovAlgebraRealization.wordClasses_nil`**, a lemma, [line 253](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/CovRealization/Generators.lean#L253).
 
 ```lean
 lemma wordClasses_nil : wordClasses [] = ∅
 ```
 
-**`StandardModel.CovAlgebraRealization.wordClasses_append`**, a lemma, [line 256](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/CovRealization/Generators.lean#L256).
+**`StandardModel.CovAlgebraRealization.wordClasses_append`**, a lemma, [line 256](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/CovRealization/Generators.lean#L256).
 
 > Concatenating words unions the classes they realise.
 
@@ -236,7 +236,7 @@ lemma wordClasses_append (gl gl' : List Generators) :
     wordClasses (gl ++ gl') = wordClasses gl ∪ wordClasses gl'
 ```
 
-**`StandardModel.CovAlgebraRealization.wordClasses_cons`**, a lemma, [line 261](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/CovRealization/Generators.lean#L261).
+**`StandardModel.CovAlgebraRealization.wordClasses_cons`**, a lemma, [line 261](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/CovRealization/Generators.lean#L261).
 
 > Prepending a generator inserts its class.
 
@@ -245,7 +245,7 @@ lemma wordClasses_cons (a : Generators) (gl : List Generators) :
     wordClasses (a :: gl) = insert a.kind (wordClasses gl)
 ```
 
-**`StandardModel.CovAlgebraRealization.classWeight`**, a def, [line 266](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/CovRealization/Generators.lean#L266).
+**`StandardModel.CovAlgebraRealization.classWeight`**, a def, [line 266](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/CovRealization/Generators.lean#L266).
 
 > The total mass weight carried by the generators of a given class in a word.
 
@@ -253,13 +253,13 @@ lemma wordClasses_cons (a : Generators) (gl : List Generators) :
 def classWeight (c : GeneratorClass) (gl : List Generators) : ℕ
 ```
 
-**`StandardModel.CovAlgebraRealization.classWeight_nil`**, a lemma, [line 269](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/CovRealization/Generators.lean#L269).
+**`StandardModel.CovAlgebraRealization.classWeight_nil`**, a lemma, [line 269](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/CovRealization/Generators.lean#L269).
 
 ```lean
 lemma classWeight_nil (c : GeneratorClass) : classWeight c [] = 0
 ```
 
-**`StandardModel.CovAlgebraRealization.classWeight_cons_of_eq`**, a lemma, [line 271](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/CovRealization/Generators.lean#L271).
+**`StandardModel.CovAlgebraRealization.classWeight_cons_of_eq`**, a lemma, [line 271](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/CovRealization/Generators.lean#L271).
 
 ```lean
 lemma classWeight_cons_of_eq {c : GeneratorClass} {g : Generators} (hg : g.kind = c)
@@ -267,14 +267,14 @@ lemma classWeight_cons_of_eq {c : GeneratorClass} {g : Generators} (hg : g.kind 
     classWeight c (g :: t) = g.weight + classWeight c t
 ```
 
-**`StandardModel.CovAlgebraRealization.classWeight_cons_of_ne`**, a lemma, [line 276](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/CovRealization/Generators.lean#L276).
+**`StandardModel.CovAlgebraRealization.classWeight_cons_of_ne`**, a lemma, [line 276](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/CovRealization/Generators.lean#L276).
 
 ```lean
 lemma classWeight_cons_of_ne {c : GeneratorClass} {g : Generators} (hg : g.kind ≠ c)
     (t : List Generators) : classWeight c (g :: t) = classWeight c t
 ```
 
-**`StandardModel.CovAlgebraRealization.Generators.weight_pos`**, a lemma, [line 281](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/CovRealization/Generators.lean#L281).
+**`StandardModel.CovAlgebraRealization.Generators.weight_pos`**, a lemma, [line 281](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/CovRealization/Generators.lean#L281).
 
 > Every generator carries a non-zero mass weight.
 
@@ -282,7 +282,7 @@ lemma classWeight_cons_of_ne {c : GeneratorClass} {g : Generators} (hg : g.kind 
 lemma Generators.weight_pos (g : Generators) : 0 < g.weight
 ```
 
-**`StandardModel.CovAlgebraRealization.classWeight_ne_zero`**, a lemma, [line 285](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/CovRealization/Generators.lean#L285).
+**`StandardModel.CovAlgebraRealization.classWeight_ne_zero`**, a lemma, [line 285](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/CovRealization/Generators.lean#L285).
 
 > A class realised by a word carries a non-zero part of its weight.
 
@@ -291,7 +291,7 @@ lemma classWeight_ne_zero {c : GeneratorClass} {gl : List Generators}
     (hc : c ∈ wordClasses gl) : classWeight c gl ≠ 0
 ```
 
-**`StandardModel.CovAlgebraRealization.classWeight_add`**, a lemma, [line 300](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/CovRealization/Generators.lean#L300).
+**`StandardModel.CovAlgebraRealization.classWeight_add`**, a lemma, [line 300](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/CovRealization/Generators.lean#L300).
 
 > Over a word realising only two classes, the two class weights add up to the total
 > weight.
@@ -302,7 +302,7 @@ lemma classWeight_add {c₁ c₂ : GeneratorClass} (hne : c₁ ≠ c₂) {gl : L
     classWeight c₁ gl + classWeight c₂ gl = (gl.map Generators.weight).sum
 ```
 
-**`StandardModel.CovAlgebraRealization.le_classWeight_of_mem`**, a lemma, [line 318](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/CovRealization/Generators.lean#L318).
+**`StandardModel.CovAlgebraRealization.le_classWeight_of_mem`**, a lemma, [line 318](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/CovRealization/Generators.lean#L318).
 
 > A class realised by a word carries at least the minimum weight of that class: the
 > generator witnessing the realisation already contributes that much, and the
@@ -314,7 +314,7 @@ lemma le_classWeight_of_mem {c : GeneratorClass} {gl : List Generators} {m : ℕ
     m ≤ classWeight c gl
 ```
 
-**`StandardModel.CovAlgebraRealization.classWeight_add_three`**, a lemma, [line 334](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/CovRealization/Generators.lean#L334).
+**`StandardModel.CovAlgebraRealization.classWeight_add_three`**, a lemma, [line 334](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/CovRealization/Generators.lean#L334).
 
 > The three class weights exhaust the total weight of a word: every generator has
 > exactly one of the three kinds.
@@ -325,7 +325,7 @@ lemma classWeight_add_three (gl : List Generators) :
       + classWeight GeneratorClass.fermion gl = (gl.map Generators.weight).sum
 ```
 
-**`StandardModel.CovAlgebraRealization.generatorVal`**, a def, [line 363](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/CovRealization/Generators.lean#L363).
+**`StandardModel.CovAlgebraRealization.generatorVal`**, a def, [line 363](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/CovRealization/Generators.lean#L363).
 
 > The value in `B` of a covariant generator: the corresponding covariant tower
 > applied to the indicated dual basis vector of its value space.
@@ -335,7 +335,7 @@ noncomputable def generatorVal
     (h : CovAlgebraRealization B repGauge repLorentz massWeightPoly) : Generators → B
 ```
 
-**`StandardModel.CovAlgebraRealization.massWeightPoly_generatorVal`**, a lemma, [line 380](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/CovRealization/Generators.lean#L380).
+**`StandardModel.CovAlgebraRealization.massWeightPoly_generatorVal`**, a lemma, [line 380](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/CovRealization/Generators.lean#L380).
 
 > Every covariant generator is a `massWeightPoly`-eigenvector of its weight.
 
@@ -344,14 +344,14 @@ lemma massWeightPoly_generatorVal (g : Generators) :
     massWeightPoly (h.generatorVal g) = Polynomial.monomial g.weight (h.generatorVal g)
 ```
 
-**`StandardModel.CovAlgebraRealization.generatorVal_mem_fieldAlgebra`**, a lemma, [line 397](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/CovRealization/Generators.lean#L397).
+**`StandardModel.CovAlgebraRealization.generatorVal_mem_fieldAlgebra`**, a lemma, [line 397](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/CovRealization/Generators.lean#L397).
 
 ```lean
 lemma generatorVal_mem_fieldAlgebra (g : Generators) :
     h.generatorVal g ∈ h.fieldAlgebra
 ```
 
-**`StandardModel.CovAlgebraRealization.fieldAlgebra_le_adjoin_range`**, a lemma, [line 465](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/CovRealization/Generators.lean#L465).
+**`StandardModel.CovAlgebraRealization.fieldAlgebra_le_adjoin_range`**, a lemma, [line 465](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/CovRealization/Generators.lean#L465).
 
 > Expanding every dual vector in the dual basis of its value space: the field
 > algebra is already generated by the countable family of basis generators.
@@ -361,7 +361,7 @@ lemma fieldAlgebra_le_adjoin_range :
     h.fieldAlgebra ≤ Algebra.adjoin ℂ (Set.range h.generatorVal)
 ```
 
-**`StandardModel.CovAlgebraRealization.fieldAlgebra_eq_adjoin_range`**, a lemma, [line 541](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/CovRealization/Generators.lean#L541).
+**`StandardModel.CovAlgebraRealization.fieldAlgebra_eq_adjoin_range`**, a lemma, [line 541](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/CovRealization/Generators.lean#L541).
 
 > The field algebra is generated by the covariant basis generators.
 
@@ -370,7 +370,7 @@ lemma fieldAlgebra_eq_adjoin_range :
     h.fieldAlgebra = Algebra.adjoin ℂ (Set.range h.generatorVal)
 ```
 
-**`StandardModel.CovAlgebraRealization.exists_list_map_eq`**, a lemma, [line 548](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/CovRealization/Generators.lean#L548).
+**`StandardModel.CovAlgebraRealization.exists_list_map_eq`**, a lemma, [line 548](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/CovRealization/Generators.lean#L548).
 
 > A list of generator values is the list of values of a list of generators.
 
@@ -380,7 +380,7 @@ lemma exists_list_map_eq (l₀ : List B) :
     ∃ gl : List Generators, gl.map h.generatorVal = l₀
 ```
 
-**`StandardModel.CovAlgebraRealization.massWeightPoly_generatorVal_list_prod`**, a lemma, [line 561](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/CovRealization/Generators.lean#L561).
+**`StandardModel.CovAlgebraRealization.massWeightPoly_generatorVal_list_prod`**, a lemma, [line 561](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/CovRealization/Generators.lean#L561).
 
 > A word in the covariant generators is a `massWeightPoly`-eigenvector whose
 > weight is the sum of the weights of its factors.
@@ -398,7 +398,7 @@ lemma massWeightPoly_generatorVal_list_prod (gl : List Generators) :
 > up to the sign `(-1) ^ (weight * weight)`, and words of generators up to the sign
 > of the product of their total weights.
 
-**`StandardModel.CovAlgebraRealization.commute_F_generatorVal`**, a lemma, [line 582](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/CovRealization/Generators.lean#L582).
+**`StandardModel.CovAlgebraRealization.commute_F_generatorVal`**, a lemma, [line 582](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/CovRealization/Generators.lean#L582).
 
 > The field-strength symbols commute with the value of every covariant
 > generator.
@@ -409,7 +409,7 @@ lemma commute_F_generatorVal {n : ℕ} (l : Fin n → Fin 1 ⊕ Fin 3) (μ ν : 
     Commute (h.covF l μ ν ψ) (h.generatorVal g)
 ```
 
-**`StandardModel.CovAlgebraRealization.commute_H_generatorVal`**, a lemma, [line 601](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/CovRealization/Generators.lean#L601).
+**`StandardModel.CovAlgebraRealization.commute_H_generatorVal`**, a lemma, [line 601](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/CovRealization/Generators.lean#L601).
 
 > The Higgs symbols commute with the value of every covariant generator.
 
@@ -419,7 +419,7 @@ lemma commute_H_generatorVal {n : ℕ} (l : Fin n → Fin 1 ⊕ Fin 3)
     Commute (h.covH l φ) (h.generatorVal g)
 ```
 
-**`StandardModel.CovAlgebraRealization.commute_barH_generatorVal`**, a lemma, [line 621](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/CovRealization/Generators.lean#L621).
+**`StandardModel.CovAlgebraRealization.commute_barH_generatorVal`**, a lemma, [line 621](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/CovRealization/Generators.lean#L621).
 
 > The conjugate-Higgs symbols commute with the value of every covariant
 > generator.
@@ -430,7 +430,7 @@ lemma commute_barH_generatorVal {n : ℕ} (l : Fin n → Fin 1 ⊕ Fin 3)
     Commute (h.covBarH l φ) (h.generatorVal g)
 ```
 
-**`StandardModel.CovAlgebraRealization.commute_generatorVal_of_even`**, a lemma, [line 641](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/CovRealization/Generators.lean#L641).
+**`StandardModel.CovAlgebraRealization.commute_generatorVal_of_even`**, a lemma, [line 641](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/CovRealization/Generators.lean#L641).
 
 > A covariant generator of even mass weight is bosonic: its value commutes with
 > the value of every covariant generator.
@@ -440,7 +440,7 @@ lemma commute_generatorVal_of_even {g : Generators} (hg : g.weight % 2 = 0)
     (g' : Generators) : Commute (h.generatorVal g) (h.generatorVal g')
 ```
 
-**`StandardModel.CovAlgebraRealization.generatorVal_anticomm_of_odd_of_odd`**, a lemma, [line 660](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/CovRealization/Generators.lean#L660).
+**`StandardModel.CovAlgebraRealization.generatorVal_anticomm_of_odd_of_odd`**, a lemma, [line 660](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/CovRealization/Generators.lean#L660).
 
 > Fermionic generator values anticommute: the values of two covariant generators
 > of odd mass weight exchange with a sign.
@@ -452,7 +452,7 @@ lemma generatorVal_anticomm_of_odd_of_odd {g g' : Generators}
       = -(h.generatorVal g' * h.generatorVal g)
 ```
 
-**`StandardModel.CovAlgebraRealization.generatorVal_mul_generatorVal`**, a lemma, [line 1022](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/CovRealization/Generators.lean#L1022).
+**`StandardModel.CovAlgebraRealization.generatorVal_mul_generatorVal`**, a lemma, [line 1022](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/CovRealization/Generators.lean#L1022).
 
 > Two covariant generators exchange up to the sign determined by their mass
 > weights: the weight is odd exactly on the fermionic generators, so the sign is
@@ -464,7 +464,7 @@ lemma generatorVal_mul_generatorVal (g g' : Generators) :
       ((-1 : ℂ) ^ (g.weight * g'.weight)) • (h.generatorVal g' * h.generatorVal g)
 ```
 
-**`StandardModel.CovAlgebraRealization.generatorVal_mul_list_prod`**, a lemma, [line 1036](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/CovRealization/Generators.lean#L1036).
+**`StandardModel.CovAlgebraRealization.generatorVal_mul_list_prod`**, a lemma, [line 1036](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/CovRealization/Generators.lean#L1036).
 
 > A generator value moves past a word of generators up to the sign of the
 > product of the weights.
@@ -476,7 +476,7 @@ lemma generatorVal_mul_list_prod (g : Generators) (gl : List Generators) :
         ((gl.map h.generatorVal).prod * h.generatorVal g)
 ```
 
-**`StandardModel.CovAlgebraRealization.list_prod_mul_list_prod`**, a lemma, [line 1059](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/CovRealization/Generators.lean#L1059).
+**`StandardModel.CovAlgebraRealization.list_prod_mul_list_prod`**, a lemma, [line 1059](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/CovRealization/Generators.lean#L1059).
 
 > Two words of covariant generators exchange up to the sign of the product of
 > their total weights.
@@ -494,4 +494,4 @@ lemma list_prod_mul_list_prod (gl gl' : List Generators) :
 
 ## Sources
 
-- [PhyslibAlpha/Particles/StandardModel/CovRealization/Generators.lean at 2a1dfe43](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/CovRealization/Generators.lean)
+- [PhyslibAlpha/Particles/StandardModel/CovRealization/Generators.lean at 8c87bdfb](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/CovRealization/Generators.lean)

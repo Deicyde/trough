@@ -8,7 +8,7 @@ proof: formalized
 
 # The simple pendulum in physical space
 
-The module `Physlib.ClassicalMechanics.Pendulum.SimplePendulum.Geometric.PhysicalSpace`, [Physlib/ClassicalMechanics/Pendulum/SimplePendulum/Geometric/PhysicalSpace.lean](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/ClassicalMechanics/Pendulum/SimplePendulum/Geometric/PhysicalSpace.lean): 14 declarations, 14 with a docstring.
+The module `Physlib.ClassicalMechanics.Pendulum.SimplePendulum.Geometric.PhysicalSpace`, [Physlib/ClassicalMechanics/Pendulum/SimplePendulum/Geometric/PhysicalSpace.lean](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/ClassicalMechanics/Pendulum/SimplePendulum/Geometric/PhysicalSpace.lean): 14 declarations, 14 with a docstring.
 
 ## i. Overview
 
@@ -52,7 +52,7 @@ The module `Physlib.ClassicalMechanics.Pendulum.SimplePendulum.Geometric.Physica
 > space for a rod of length `S.ℓ`. Along it the bob is at `(ℓ sin θ, -ℓ cos θ)`, and since the
 > length of the rod is positive the bob stays at distance `ℓ` from the pivot at all times.
 
-**`ClassicalMechanics.SimplePendulum.spaceTrajectory`**, a def, [line 77](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/ClassicalMechanics/Pendulum/SimplePendulum/Geometric/PhysicalSpace.lean#L77).
+**`ClassicalMechanics.SimplePendulum.spaceTrajectory`**, a def, [line 77](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/ClassicalMechanics/Pendulum/SimplePendulum/Geometric/PhysicalSpace.lean#L77).
 
 > The position of the bob in the plane along the trajectory described by a lift `θ` of the
 > angle, for the pendulum `S`.
@@ -61,7 +61,7 @@ The module `Physlib.ClassicalMechanics.Pendulum.SimplePendulum.Geometric.Physica
 noncomputable def spaceTrajectory (θ : Time → EuclideanSpace ℝ (Fin 1)) : Time → Space 2
 ```
 
-**`ClassicalMechanics.SimplePendulum.spaceTrajectory_eq`**, a lemma, [line 82](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/ClassicalMechanics/Pendulum/SimplePendulum/Geometric/PhysicalSpace.lean#L82).
+**`ClassicalMechanics.SimplePendulum.spaceTrajectory_eq`**, a lemma, [line 82](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/ClassicalMechanics/Pendulum/SimplePendulum/Geometric/PhysicalSpace.lean#L82).
 
 > Along the trajectory described by a lift `θ` of the angle the bob of the pendulum `S` is at
 > `(ℓ sin (θ t 0), -ℓ cos (θ t 0))`.
@@ -71,7 +71,7 @@ lemma spaceTrajectory_eq (θ : Time → EuclideanSpace ℝ (Fin 1)) :
     S.spaceTrajectory θ = fun t => ⟨![S.ℓ * Real.sin (θ t 0), -S.ℓ * Real.cos (θ t 0)]⟩
 ```
 
-**`ClassicalMechanics.SimplePendulum.spaceTrajectory_apply_zero`**, a lemma, [line 87](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/ClassicalMechanics/Pendulum/SimplePendulum/Geometric/PhysicalSpace.lean#L87).
+**`ClassicalMechanics.SimplePendulum.spaceTrajectory_apply_zero`**, a lemma, [line 87](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/ClassicalMechanics/Pendulum/SimplePendulum/Geometric/PhysicalSpace.lean#L87).
 
 > The horizontal position of the bob along a lifted trajectory is `ℓ sin (θ t 0)`.
 
@@ -80,7 +80,7 @@ lemma spaceTrajectory_apply_zero (θ : Time → EuclideanSpace ℝ (Fin 1)) (t :
     S.spaceTrajectory θ t 0 = S.ℓ * Real.sin (θ t 0)
 ```
 
-**`ClassicalMechanics.SimplePendulum.spaceTrajectory_apply_one`**, a lemma, [line 93](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/ClassicalMechanics/Pendulum/SimplePendulum/Geometric/PhysicalSpace.lean#L93).
+**`ClassicalMechanics.SimplePendulum.spaceTrajectory_apply_one`**, a lemma, [line 93](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/ClassicalMechanics/Pendulum/SimplePendulum/Geometric/PhysicalSpace.lean#L93).
 
 > The vertical position of the bob along a lifted trajectory is `-ℓ cos (θ t 0)`, the pivot
 > being the origin and the second axis pointing upwards.
@@ -90,7 +90,7 @@ lemma spaceTrajectory_apply_one (θ : Time → EuclideanSpace ℝ (Fin 1)) (t : 
     S.spaceTrajectory θ t 1 = -S.ℓ * Real.cos (θ t 0)
 ```
 
-**`ClassicalMechanics.SimplePendulum.norm_spaceTrajectory`**, a lemma, [line 99](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/ClassicalMechanics/Pendulum/SimplePendulum/Geometric/PhysicalSpace.lean#L99).
+**`ClassicalMechanics.SimplePendulum.norm_spaceTrajectory`**, a lemma, [line 99](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/ClassicalMechanics/Pendulum/SimplePendulum/Geometric/PhysicalSpace.lean#L99).
 
 > The rod-length constraint along a lifted trajectory: the bob of the pendulum `S` stays at
 > distance `ℓ` from the pivot, the length of the rod being positive.
@@ -110,7 +110,7 @@ lemma norm_spaceTrajectory (θ : Time → EuclideanSpace ℝ (Fin 1)) (t : Time)
 > computations for the sine and the cosine of the angle read from a lift are recorded as
 > stand-alone lemmas.
 
-**`ClassicalMechanics.SimplePendulum.deriv_sin_coord`**, a lemma, [line 119](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/ClassicalMechanics/Pendulum/SimplePendulum/Geometric/PhysicalSpace.lean#L119).
+**`ClassicalMechanics.SimplePendulum.deriv_sin_coord`**, a lemma, [line 119](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/ClassicalMechanics/Pendulum/SimplePendulum/Geometric/PhysicalSpace.lean#L119).
 
 > The time derivative of the sine of the angle read from a lift is the cosine of the angle
 > times the angular velocity.
@@ -120,7 +120,7 @@ lemma deriv_sin_coord (θ : Time → EuclideanSpace ℝ (Fin 1)) (hθ : Differen
     (t : Time) : ∂ₜ (fun s => Real.sin (θ s 0)) t = Real.cos (θ t 0) * (∂ₜ θ t) 0
 ```
 
-**`ClassicalMechanics.SimplePendulum.deriv_cos_coord`**, a lemma, [line 126](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/ClassicalMechanics/Pendulum/SimplePendulum/Geometric/PhysicalSpace.lean#L126).
+**`ClassicalMechanics.SimplePendulum.deriv_cos_coord`**, a lemma, [line 126](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/ClassicalMechanics/Pendulum/SimplePendulum/Geometric/PhysicalSpace.lean#L126).
 
 > The time derivative of the cosine of the angle read from a lift is minus the sine of the
 > angle times the angular velocity.
@@ -130,7 +130,7 @@ lemma deriv_cos_coord (θ : Time → EuclideanSpace ℝ (Fin 1)) (hθ : Differen
     (t : Time) : ∂ₜ (fun s => Real.cos (θ s 0)) t = -Real.sin (θ t 0) * (∂ₜ θ t) 0
 ```
 
-**`ClassicalMechanics.SimplePendulum.differentiable_spaceTrajectory`**, a lemma, [line 134](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/ClassicalMechanics/Pendulum/SimplePendulum/Geometric/PhysicalSpace.lean#L134).
+**`ClassicalMechanics.SimplePendulum.differentiable_spaceTrajectory`**, a lemma, [line 134](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/ClassicalMechanics/Pendulum/SimplePendulum/Geometric/PhysicalSpace.lean#L134).
 
 > Along a differentiable lift of the angle the position of the bob is differentiable in
 > time.
@@ -140,7 +140,7 @@ lemma differentiable_spaceTrajectory (θ : Time → EuclideanSpace ℝ (Fin 1))
     (hθ : Differentiable ℝ θ) : Differentiable ℝ (S.spaceTrajectory θ)
 ```
 
-**`ClassicalMechanics.SimplePendulum.deriv_spaceTrajectory`**, a lemma, [line 145](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/ClassicalMechanics/Pendulum/SimplePendulum/Geometric/PhysicalSpace.lean#L145).
+**`ClassicalMechanics.SimplePendulum.deriv_spaceTrajectory`**, a lemma, [line 145](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/ClassicalMechanics/Pendulum/SimplePendulum/Geometric/PhysicalSpace.lean#L145).
 
 > The velocity of the bob along a differentiable lift `θ` of the angle is
 > `(ℓ cos (θ t 0), ℓ sin (θ t 0))` times the angular velocity: the vector tangent to the circle
@@ -153,7 +153,7 @@ lemma deriv_spaceTrajectory (θ : Time → EuclideanSpace ℝ (Fin 1)) (hθ : Di
       !₂[S.ℓ * Real.cos (θ t 0) * (∂ₜ θ t) 0, S.ℓ * Real.sin (θ t 0) * (∂ₜ θ t) 0]
 ```
 
-**`ClassicalMechanics.SimplePendulum.norm_sq_deriv_spaceTrajectory`**, a lemma, [line 161](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/ClassicalMechanics/Pendulum/SimplePendulum/Geometric/PhysicalSpace.lean#L161).
+**`ClassicalMechanics.SimplePendulum.norm_sq_deriv_spaceTrajectory`**, a lemma, [line 161](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/ClassicalMechanics/Pendulum/SimplePendulum/Geometric/PhysicalSpace.lean#L161).
 
 > The square of the speed of the bob along a differentiable lift of the angle is `ℓ² θ̇²`.
 
@@ -174,7 +174,7 @@ lemma norm_sq_deriv_spaceTrajectory (θ : Time → EuclideanSpace ℝ (Fin 1))
 > `T - V` of a point mass moving on the circle of radius `ℓ`, and the chart energy is its total
 > energy `T + V`.
 
-**`ClassicalMechanics.SimplePendulum.kineticEnergy_eq_space`**, a lemma, [line 186](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/ClassicalMechanics/Pendulum/SimplePendulum/Geometric/PhysicalSpace.lean#L186).
+**`ClassicalMechanics.SimplePendulum.kineticEnergy_eq_space`**, a lemma, [line 186](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/ClassicalMechanics/Pendulum/SimplePendulum/Geometric/PhysicalSpace.lean#L186).
 
 > The chart kinetic energy of the pendulum along a differentiable lift of the angle is the
 > kinetic energy of the bob in physical space.
@@ -185,7 +185,7 @@ lemma kineticEnergy_eq_space (θ : Time → EuclideanSpace ℝ (Fin 1)) (hθ : D
     S.kineticEnergy θ t = (1 / (2 : ℝ)) * S.m * ‖∂ₜᵥ (S.spaceTrajectory θ) t‖ ^ 2
 ```
 
-**`ClassicalMechanics.SimplePendulum.potentialEnergy_eq_height`**, a lemma, [line 197](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/ClassicalMechanics/Pendulum/SimplePendulum/Geometric/PhysicalSpace.lean#L197).
+**`ClassicalMechanics.SimplePendulum.potentialEnergy_eq_height`**, a lemma, [line 197](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/ClassicalMechanics/Pendulum/SimplePendulum/Geometric/PhysicalSpace.lean#L197).
 
 > The chart potential energy of the pendulum is the gravitational potential of the bob in
 > physical space, normalized to vanish at the bottom of the swing: the height of the bob above
@@ -196,7 +196,7 @@ lemma potentialEnergy_eq_height (θ : Time → EuclideanSpace ℝ (Fin 1)) (t : 
     S.potentialEnergy (θ t) = S.m * S.g * (S.spaceTrajectory θ t 1 + S.ℓ)
 ```
 
-**`ClassicalMechanics.SimplePendulum.lagrangian_eq_space`**, a lemma, [line 205](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/ClassicalMechanics/Pendulum/SimplePendulum/Geometric/PhysicalSpace.lean#L205).
+**`ClassicalMechanics.SimplePendulum.lagrangian_eq_space`**, a lemma, [line 205](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/ClassicalMechanics/Pendulum/SimplePendulum/Geometric/PhysicalSpace.lean#L205).
 
 > The chart Lagrangian of the pendulum along a differentiable lift of the angle is the
 > constrained Lagrangian of the bob in physical space: the kinetic energy of the point mass
@@ -210,7 +210,7 @@ lemma lagrangian_eq_space (θ : Time → EuclideanSpace ℝ (Fin 1)) (hθ : Diff
         - S.m * S.g * (S.spaceTrajectory θ t 1 + S.ℓ)
 ```
 
-**`ClassicalMechanics.SimplePendulum.energy_eq_space`**, a lemma, [line 216](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/ClassicalMechanics/Pendulum/SimplePendulum/Geometric/PhysicalSpace.lean#L216).
+**`ClassicalMechanics.SimplePendulum.energy_eq_space`**, a lemma, [line 216](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/ClassicalMechanics/Pendulum/SimplePendulum/Geometric/PhysicalSpace.lean#L216).
 
 > The chart energy of the pendulum along a differentiable lift of the angle is the total
 > energy of the bob in physical space: the kinetic energy of the point mass plus its
@@ -231,4 +231,4 @@ lemma energy_eq_space (θ : Time → EuclideanSpace ℝ (Fin 1)) (hθ : Differen
 
 ## Sources
 
-- [Physlib/ClassicalMechanics/Pendulum/SimplePendulum/Geometric/PhysicalSpace.lean at 2a1dfe43](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/ClassicalMechanics/Pendulum/SimplePendulum/Geometric/PhysicalSpace.lean)
+- [Physlib/ClassicalMechanics/Pendulum/SimplePendulum/Geometric/PhysicalSpace.lean at 8c87bdfb](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/ClassicalMechanics/Pendulum/SimplePendulum/Geometric/PhysicalSpace.lean)

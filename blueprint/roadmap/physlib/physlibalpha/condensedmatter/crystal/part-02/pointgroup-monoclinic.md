@@ -8,7 +8,7 @@ proof: formalized
 
 # The point groups of the monoclinic and triclinic lattices
 
-The module `PhyslibAlpha.CondensedMatter.Crystal.PointGroup.Monoclinic`, [PhyslibAlpha/CondensedMatter/Crystal/PointGroup/Monoclinic.lean](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/CondensedMatter/Crystal/PointGroup/Monoclinic.lean): 9 declarations, 9 with a docstring.
+The module `PhyslibAlpha.CondensedMatter.Crystal.PointGroup.Monoclinic`, [PhyslibAlpha/CondensedMatter/Crystal/PointGroup/Monoclinic.lean](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/CondensedMatter/Crystal/PointGroup/Monoclinic.lean): 9 declarations, 9 with a docstring.
 
 > The point groups of the two monoclinic lattices have order four, the holohedry `2/m`, and the
 > point group of the triclinic lattice has order two, the holohedry `-1`.
@@ -34,7 +34,7 @@ The module `PhyslibAlpha.CondensedMatter.Crystal.PointGroup.Monoclinic`, [Physli
 
 ## A. The admissible triples
 
-**`CondensedMatter.Crystal.monoclinicPointTriples`**, a def, [line 54](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/CondensedMatter/Crystal/PointGroup/Monoclinic.lean#L54).
+**`CondensedMatter.Crystal.monoclinicPointTriples`**, a def, [line 54](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/CondensedMatter/Crystal/PointGroup/Monoclinic.lean#L54).
 
 > The four point operations of the primitive monoclinic lattice: the identity, the reflection
 > `b ↦ -b`, the rotation by `π` about `b` and the inversion.
@@ -43,7 +43,7 @@ The module `PhyslibAlpha.CondensedMatter.Crystal.PointGroup.Monoclinic`, [Physli
 def monoclinicPointTriples : Finset (Fin 3 → Fin 3 → ℤ)
 ```
 
-**`CondensedMatter.Crystal.monoclinic_admissible_iff`**, a lemma, [line 60](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/CondensedMatter/Crystal/PointGroup/Monoclinic.lean#L60).
+**`CondensedMatter.Crystal.monoclinic_admissible_iff`**, a lemma, [line 60](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/CondensedMatter/Crystal/PointGroup/Monoclinic.lean#L60).
 
 > The point operations of the primitive monoclinic lattice are the four of
 > `monoclinicPointTriples`.
@@ -53,7 +53,7 @@ lemma monoclinic_admissible_iff (v : Fin 3 → Fin 3 → ℤ) :
     Admissible (bondNeighbors monoclinicBonds) v ↔ v ∈ monoclinicPointTriples
 ```
 
-**`CondensedMatter.Crystal.baseCentredMonoclinicPointTriples`**, a def, [line 67](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/CondensedMatter/Crystal/PointGroup/Monoclinic.lean#L67).
+**`CondensedMatter.Crystal.baseCentredMonoclinicPointTriples`**, a def, [line 67](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/CondensedMatter/Crystal/PointGroup/Monoclinic.lean#L67).
 
 > The four point operations of the base-centred monoclinic lattice, in the basis
 > `baseCentredMonoclinicVectors`.
@@ -62,7 +62,7 @@ lemma monoclinic_admissible_iff (v : Fin 3 → Fin 3 → ℤ) :
 def baseCentredMonoclinicPointTriples : Finset (Fin 3 → Fin 3 → ℤ)
 ```
 
-**`CondensedMatter.Crystal.baseCentredMonoclinic_admissible_iff`**, a lemma, [line 73](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/CondensedMatter/Crystal/PointGroup/Monoclinic.lean#L73).
+**`CondensedMatter.Crystal.baseCentredMonoclinic_admissible_iff`**, a lemma, [line 73](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/CondensedMatter/Crystal/PointGroup/Monoclinic.lean#L73).
 
 > The point operations of the base-centred monoclinic lattice are the four of
 > `baseCentredMonoclinicPointTriples`.
@@ -73,7 +73,7 @@ lemma baseCentredMonoclinic_admissible_iff (v : Fin 3 → Fin 3 → ℤ) :
       v ∈ baseCentredMonoclinicPointTriples
 ```
 
-**`CondensedMatter.Crystal.triclinicPointTriples`**, a def, [line 80](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/CondensedMatter/Crystal/PointGroup/Monoclinic.lean#L80).
+**`CondensedMatter.Crystal.triclinicPointTriples`**, a def, [line 80](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/CondensedMatter/Crystal/PointGroup/Monoclinic.lean#L80).
 
 > The two point operations of the triclinic lattice: the identity and the inversion.
 
@@ -81,7 +81,7 @@ lemma baseCentredMonoclinic_admissible_iff (v : Fin 3 → Fin 3 → ℤ) :
 def triclinicPointTriples : Finset (Fin 3 → Fin 3 → ℤ)
 ```
 
-**`CondensedMatter.Crystal.triclinic_admissible_iff`**, a lemma, [line 84](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/CondensedMatter/Crystal/PointGroup/Monoclinic.lean#L84).
+**`CondensedMatter.Crystal.triclinic_admissible_iff`**, a lemma, [line 84](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/CondensedMatter/Crystal/PointGroup/Monoclinic.lean#L84).
 
 > The point operations of the triclinic lattice are the identity and the inversion.
 
@@ -92,7 +92,7 @@ lemma triclinic_admissible_iff (v : Fin 3 → Fin 3 → ℤ) :
 
 ## B. The orders
 
-**`CondensedMatter.Crystal.monoclinic_card_pointGroup`**, a lemma, [line 93](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/CondensedMatter/Crystal/PointGroup/Monoclinic.lean#L93).
+**`CondensedMatter.Crystal.monoclinic_card_pointGroup`**, a lemma, [line 93](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/CondensedMatter/Crystal/PointGroup/Monoclinic.lean#L93).
 
 > **The point group of the primitive monoclinic lattice has order `4`.**
 
@@ -100,7 +100,7 @@ lemma triclinic_admissible_iff (v : Fin 3 → Fin 3 → ℤ) :
 lemma monoclinic_card_pointGroup : Nat.card monoclinicGraph.pointGroup = 4
 ```
 
-**`CondensedMatter.Crystal.baseCentredMonoclinic_card_pointGroup`**, a lemma, [line 98](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/CondensedMatter/Crystal/PointGroup/Monoclinic.lean#L98).
+**`CondensedMatter.Crystal.baseCentredMonoclinic_card_pointGroup`**, a lemma, [line 98](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/CondensedMatter/Crystal/PointGroup/Monoclinic.lean#L98).
 
 > **The point group of the base-centred monoclinic lattice has order `4`.**
 
@@ -109,7 +109,7 @@ lemma baseCentredMonoclinic_card_pointGroup :
     Nat.card baseCentredMonoclinicGraph.pointGroup = 4
 ```
 
-**`CondensedMatter.Crystal.triclinic_card_pointGroup`**, a lemma, [line 104](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/CondensedMatter/Crystal/PointGroup/Monoclinic.lean#L104).
+**`CondensedMatter.Crystal.triclinic_card_pointGroup`**, a lemma, [line 104](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/CondensedMatter/Crystal/PointGroup/Monoclinic.lean#L104).
 
 > **The point group of the triclinic lattice has order `2`.**
 
@@ -128,4 +128,4 @@ lemma triclinic_card_pointGroup : Nat.card triclinicGraph.pointGroup = 2
 
 ## Sources
 
-- [PhyslibAlpha/CondensedMatter/Crystal/PointGroup/Monoclinic.lean at 2a1dfe43](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/CondensedMatter/Crystal/PointGroup/Monoclinic.lean)
+- [PhyslibAlpha/CondensedMatter/Crystal/PointGroup/Monoclinic.lean at 8c87bdfb](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/CondensedMatter/Crystal/PointGroup/Monoclinic.lean)

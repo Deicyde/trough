@@ -9,7 +9,7 @@ navigation: transparent
 - [Yukawa charges](su5-chargespectrum-yukawa.md)
 - [Charge spectra with values in `ZMod n`](su5-chargespectrum-zmod.md)
 
-Modules in [SU5/ChargeSpectrum/MinimallyAllowsTerm/](https://github.com/leanprover-community/physlib/tree/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/Particles/SuperSymmetry/SU5/ChargeSpectrum/MinimallyAllowsTerm):
+Modules in [SU5/ChargeSpectrum/MinimallyAllowsTerm/](https://github.com/leanprover-community/physlib/tree/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Particles/SuperSymmetry/SU5/ChargeSpectrum/MinimallyAllowsTerm):
 
 - [Charge spectrum which minimally allows terms](su5-chargespectrum-minimallyallowsterm-basic.md)
 - [Minimally allows a set of terms](su5-chargespectrum-minimallyallowsterm-finsetter.md)

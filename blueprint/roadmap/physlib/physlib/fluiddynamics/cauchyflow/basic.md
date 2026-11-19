@@ -8,7 +8,7 @@ proof: formalized
 
 # Basic API for Cauchy flows
 
-The module `Physlib.FluidDynamics.CauchyFlow.Basic`, [Physlib/FluidDynamics/CauchyFlow/Basic.lean](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/FluidDynamics/CauchyFlow/Basic.lean): 1 declaration, 1 with a docstring.
+The module `Physlib.FluidDynamics.CauchyFlow.Basic`, [Physlib/FluidDynamics/CauchyFlow/Basic.lean](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/FluidDynamics/CauchyFlow/Basic.lean): 1 declaration, 1 with a docstring.
 
 ## i. Overview
 
@@ -37,7 +37,7 @@ The module `Physlib.FluidDynamics.CauchyFlow.Basic`, [Physlib/FluidDynamics/Cauc
 
 ## A. Cauchy-flow structure
 
-**`FluidDynamics.CauchyFlow`**, a structure, [line 59](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/FluidDynamics/CauchyFlow/Basic.lean#L59).
+**`FluidDynamics.CauchyFlow`**, a structure, [line 59](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/FluidDynamics/CauchyFlow/Basic.lean#L59).
 
 > A fluid flow equipped with Cauchy stress and specific body-force fields.
 >
@@ -60,4 +60,4 @@ structure CauchyFlow (d : ℕ) extends FluidFlow d where
 
 ## Sources
 
-- [Physlib/FluidDynamics/CauchyFlow/Basic.lean at 2a1dfe43](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/FluidDynamics/CauchyFlow/Basic.lean)
+- [Physlib/FluidDynamics/CauchyFlow/Basic.lean at 8c87bdfb](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/FluidDynamics/CauchyFlow/Basic.lean)

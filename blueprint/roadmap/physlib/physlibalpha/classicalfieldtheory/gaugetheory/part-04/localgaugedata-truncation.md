@@ -8,7 +8,7 @@ proof: formalized
 
 # The truncation filtration of the jet gauge group
 
-The module `PhyslibAlpha.ClassicalFieldTheory.GaugeTheory.LocalGaugeData.Truncation`, [PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/LocalGaugeData/Truncation.lean](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/LocalGaugeData/Truncation.lean): 29 declarations, 26 with a docstring.
+The module `PhyslibAlpha.ClassicalFieldTheory.GaugeTheory.LocalGaugeData.Truncation`, [PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/LocalGaugeData/Truncation.lean](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/LocalGaugeData/Truncation.lean): 29 declarations, 26 with a docstring.
 
 ## i. Overview
 
@@ -58,7 +58,7 @@ The module `PhyslibAlpha.ClassicalFieldTheory.GaugeTheory.LocalGaugeData.Truncat
 
 ## A. The truncation filtration
 
-**`LocalGaugeData.truncationKer`**, a def, [line 88](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/LocalGaugeData/Truncation.lean#L88).
+**`LocalGaugeData.truncationKer`**, a def, [line 88](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/LocalGaugeData/Truncation.lean#L88).
 
 > The jets trivial to order `n`: value the identity, and base-point Taylor coefficients
 > of the Maurer–Cartan form vanishing below order `n`. Closure under products and inverses
@@ -68,7 +68,7 @@ The module `PhyslibAlpha.ClassicalFieldTheory.GaugeTheory.LocalGaugeData.Truncat
 noncomputable def truncationKer (n : ℕ) : Subgroup GJ
 ```
 
-**`LocalGaugeData.mem_truncationKer_zero_iff`**, a lemma, [line 106](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/LocalGaugeData/Truncation.lean#L106).
+**`LocalGaugeData.mem_truncationKer_zero_iff`**, a lemma, [line 106](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/LocalGaugeData/Truncation.lean#L106).
 
 > The zeroth truncation kernel is the group of pure jets, those with identity value.
 
@@ -78,7 +78,7 @@ lemma mem_truncationKer_zero_iff {U : GJ} : U ∈ jets.truncationKer 0 ↔ jets.
 
 ## B. The adjoint coefficients of a deep jet
 
-**`LocalGaugeData.adjointCoeff_eq_zero_of_mem_truncationKer`**, a lemma, [line 118](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/LocalGaugeData/Truncation.lean#L118).
+**`LocalGaugeData.adjointCoeff_eq_zero_of_mem_truncationKer`**, a lemma, [line 118](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/LocalGaugeData/Truncation.lean#L118).
 
 > Deep jets kill the positive adjoint coefficients: for a jet trivial to order `n`, the
 > adjoint coefficients of order between `1` and `n` vanish. One derivative of the adjoint
@@ -90,7 +90,7 @@ lemma adjointCoeff_eq_zero_of_mem_truncationKer {n : ℕ} {U : GJ} (hU : U ∈ j
     jets.adjointCoeff U x = 0
 ```
 
-**`LocalGaugeData.adjointDualCoeff_eq_zero_of_mem_truncationKer`**, a lemma, [line 130](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/LocalGaugeData/Truncation.lean#L130).
+**`LocalGaugeData.adjointDualCoeff_eq_zero_of_mem_truncationKer`**, a lemma, [line 130](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/LocalGaugeData/Truncation.lean#L130).
 
 > The dual form of `adjointCoeff_eq_zero_of_mem_truncationKer`.
 
@@ -100,7 +100,7 @@ lemma adjointDualCoeff_eq_zero_of_mem_truncationKer {n : ℕ} {U : GJ}
     (hxn : x.card ≤ n) : jets.adjointDualCoeff U x = 0
 ```
 
-**`LocalGaugeData.adjointCoeff_mul_of_mem_truncationKer_right`**, a lemma, [line 137](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/LocalGaugeData/Truncation.lean#L137).
+**`LocalGaugeData.adjointCoeff_mul_of_mem_truncationKer_right`**, a lemma, [line 137](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/LocalGaugeData/Truncation.lean#L137).
 
 > Up to order `n`, a jet trivial to order `n` is invisible on the right of a product.
 
@@ -110,7 +110,7 @@ lemma adjointCoeff_mul_of_mem_truncationKer_right (g : GJ) {n : ℕ} {U : GJ}
     jets.adjointCoeff (g * U) x = jets.adjointCoeff g x
 ```
 
-**`LocalGaugeData.adjointCoeff_conj_of_mem_truncationKer`**, a lemma, [line 148](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/LocalGaugeData/Truncation.lean#L148).
+**`LocalGaugeData.adjointCoeff_conj_of_mem_truncationKer`**, a lemma, [line 148](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/LocalGaugeData/Truncation.lean#L148).
 
 > Up to order `n`, a conjugate of a jet trivial to order `n` has the adjoint
 > coefficients of the identity.
@@ -121,7 +121,7 @@ lemma adjointCoeff_conj_of_mem_truncationKer (g : GJ) {n : ℕ} {U : GJ}
     jets.adjointCoeff (g * U * g⁻¹) x = jets.adjointCoeff 1 x
 ```
 
-**`LocalGaugeData.evalLie_iteratedDeriv_adjoint_conj_of_mem_truncationKer`**, a lemma, [line 158](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/LocalGaugeData/Truncation.lean#L158).
+**`LocalGaugeData.evalLie_iteratedDeriv_adjoint_conj_of_mem_truncationKer`**, a lemma, [line 158](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/LocalGaugeData/Truncation.lean#L158).
 
 > Up to order `n`, a conjugate of a jet trivial to order `n` acts trivially on the
 > base-point Taylor data of the jet Lie algebra.
@@ -135,7 +135,7 @@ lemma evalLie_iteratedDeriv_adjoint_conj_of_mem_truncationKer (g : GJ) {n : ℕ}
 
 ## C. Normality
 
-**`LocalGaugeData.maurerCartan_conj`**, a lemma, [line 178](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/LocalGaugeData/Truncation.lean#L178).
+**`LocalGaugeData.maurerCartan_conj`**, a lemma, [line 178](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/LocalGaugeData/Truncation.lean#L178).
 
 > The Maurer–Cartan form of a conjugate, by the cocycle law: the conjugating jet
 > contributes its own form and its transport by the conjugate.
@@ -147,7 +147,7 @@ lemma maurerCartan_conj (g U : GJ) (μ : Fin 1 ⊕ Fin 3) :
         - jets.adjointJ (g * U * g⁻¹) (jets.maurerCartan g μ)
 ```
 
-**`LocalGaugeData.truncationKer_normal`**, an instance, [line 187](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/LocalGaugeData/Truncation.lean#L187).
+**`LocalGaugeData.truncationKer_normal`**, an instance, [line 187](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/LocalGaugeData/Truncation.lean#L187).
 
 > The truncation kernels are normal subgroups: conjugating a jet trivial to order `n`
 > gives a jet trivial to order `n`.
@@ -158,7 +158,7 @@ instance truncationKer_normal (n : ℕ) : (jets.truncationKer n).Normal
 
 ## D. The projection onto the pure jets
 
-**`LocalGaugeData.truncationProjZero`**, a def, [line 205](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/LocalGaugeData/Truncation.lean#L205).
+**`LocalGaugeData.truncationProjZero`**, a def, [line 205](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/LocalGaugeData/Truncation.lean#L205).
 
 > The projection of a jet onto the pure jets, stripping its value: `U ↦ U · (U₀)⁻¹`.
 > This is not a group homomorphism; it is the cocycle of the splitting of `GJ` by the
@@ -168,14 +168,14 @@ instance truncationKer_normal (n : ℕ) : (jets.truncationKer n).Normal
 noncomputable def truncationProjZero (U : GJ) : jets.truncationKer 0
 ```
 
-**`LocalGaugeData.coe_truncationProjZero`**, a lemma, [line 210](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/LocalGaugeData/Truncation.lean#L210).
+**`LocalGaugeData.coe_truncationProjZero`**, a lemma, [line 210](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/LocalGaugeData/Truncation.lean#L210).
 
 ```lean
 lemma coe_truncationProjZero (U : GJ) :
     (jets.truncationProjZero U : GJ) = U * (jets.ofConstant (jets.eval U))⁻¹
 ```
 
-**`LocalGaugeData.eq_truncationProjZero_mul_ofConstant`**, a lemma, [line 214](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/LocalGaugeData/Truncation.lean#L214).
+**`LocalGaugeData.eq_truncationProjZero_mul_ofConstant`**, a lemma, [line 214](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/LocalGaugeData/Truncation.lean#L214).
 
 > Every jet is its pure part times the constant jet of its value.
 
@@ -184,7 +184,7 @@ lemma eq_truncationProjZero_mul_ofConstant (U : GJ) :
     U = jets.truncationProjZero U * jets.ofConstant (jets.eval U)
 ```
 
-**`LocalGaugeData.truncationProjZero_eq_one_iff`**, a lemma, [line 219](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/LocalGaugeData/Truncation.lean#L219).
+**`LocalGaugeData.truncationProjZero_eq_one_iff`**, a lemma, [line 219](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/LocalGaugeData/Truncation.lean#L219).
 
 > The pure part of a jet is trivial exactly when the jet is constant.
 
@@ -193,14 +193,14 @@ lemma truncationProjZero_eq_one_iff {U : GJ} :
     jets.truncationProjZero U = 1 ↔ U = jets.ofConstant (jets.eval U)
 ```
 
-**`LocalGaugeData.truncationProjZero_ofConstant`**, a lemma, [line 224](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/LocalGaugeData/Truncation.lean#L224).
+**`LocalGaugeData.truncationProjZero_ofConstant`**, a lemma, [line 224](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/LocalGaugeData/Truncation.lean#L224).
 
 ```lean
 lemma truncationProjZero_ofConstant (g : G₀) :
     jets.truncationProjZero (jets.ofConstant g) = 1
 ```
 
-**`LocalGaugeData.maurerCartan_truncationProjZero`**, a lemma, [line 230](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/LocalGaugeData/Truncation.lean#L230).
+**`LocalGaugeData.maurerCartan_truncationProjZero`**, a lemma, [line 230](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/LocalGaugeData/Truncation.lean#L230).
 
 > Stripping the value of a jet does not change its Maurer–Cartan form: by the cocycle
 > law, right multiplication by a constant jet drops out.
@@ -212,7 +212,7 @@ lemma maurerCartan_truncationProjZero (U : GJ) (μ : Fin 1 ⊕ Fin 3) :
 
 ## E. Pure jets and their Maurer–Cartan data
 
-**`LocalGaugeData.symmetrizedMaurerCartanCoeff`**, a def, [line 244](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/LocalGaugeData/Truncation.lean#L244).
+**`LocalGaugeData.symmetrizedMaurerCartanCoeff`**, a def, [line 244](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/LocalGaugeData/Truncation.lean#L244).
 
 > The symmetrized Maurer–Cartan data of a pure jet: the base-point values of its
 > symmetrized Maurer–Cartan forms, indexed by nonempty multisets of directions. Total
@@ -223,7 +223,7 @@ noncomputable def symmetrizedMaurerCartanCoeff (U : jets.truncationKer 0)
     (r : {r : Multiset (Fin 1 ⊕ Fin 3) // r ≠ 0}) : 𝔤
 ```
 
-**`LocalGaugeData.symmetrizedMaurerCartanCoeff_apply`**, a lemma, [line 248](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/LocalGaugeData/Truncation.lean#L248).
+**`LocalGaugeData.symmetrizedMaurerCartanCoeff_apply`**, a lemma, [line 248](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/LocalGaugeData/Truncation.lean#L248).
 
 ```lean
 lemma symmetrizedMaurerCartanCoeff_apply (U : jets.truncationKer 0)
@@ -232,7 +232,7 @@ lemma symmetrizedMaurerCartanCoeff_apply (U : jets.truncationKer 0)
       jets.evalLie (jets.symmetrizedMaurerCartanForm U.1 r.1)
 ```
 
-**`LocalGaugeData.mem_truncationKer_of_symmetrizedMaurerCartanCoeff_eq_zero`**, a lemma, [line 256](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/LocalGaugeData/Truncation.lean#L256).
+**`LocalGaugeData.mem_truncationKer_of_symmetrizedMaurerCartanCoeff_eq_zero`**, a lemma, [line 256](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/LocalGaugeData/Truncation.lean#L256).
 
 > Maurer–Cartan triangularity: a pure jet whose symmetrized Maurer–Cartan data vanish
 > up to order `n` is trivial to order `n`. The symmetrized data control the Taylor data of
@@ -245,7 +245,7 @@ lemma mem_truncationKer_of_symmetrizedMaurerCartanCoeff_eq_zero (U : jets.trunca
     U.1 ∈ jets.truncationKer n
 ```
 
-**`LocalGaugeData.symmetrizedMaurerCartanCoeff_eq_zero_of_mem_truncationKer`**, a lemma, [line 265](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/LocalGaugeData/Truncation.lean#L265).
+**`LocalGaugeData.symmetrizedMaurerCartanCoeff_eq_zero_of_mem_truncationKer`**, a lemma, [line 265](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/LocalGaugeData/Truncation.lean#L265).
 
 > Conversely, the symmetrized Maurer–Cartan data of a jet trivial to order `n` vanish
 > up to order `n`: each term of the symmetrized form carries fewer than `n` derivatives.
@@ -256,7 +256,7 @@ lemma symmetrizedMaurerCartanCoeff_eq_zero_of_mem_truncationKer {U : jets.trunca
     (hrn : r.card ≤ n) : jets.symmetrizedMaurerCartanCoeff U ⟨r, hr⟩ = 0
 ```
 
-**`LocalGaugeData.mem_truncationKer_iff_symmetrizedMaurerCartanCoeff_eq_zero`**, a lemma, [line 279](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/LocalGaugeData/Truncation.lean#L279).
+**`LocalGaugeData.mem_truncationKer_iff_symmetrizedMaurerCartanCoeff_eq_zero`**, a lemma, [line 279](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/LocalGaugeData/Truncation.lean#L279).
 
 > The truncation filtration through the symmetrized Maurer–Cartan data: a pure jet is
 > trivial to order `n` exactly when its symmetrized data vanish up to order `n`.
@@ -268,7 +268,7 @@ lemma mem_truncationKer_iff_symmetrizedMaurerCartanCoeff_eq_zero (U : jets.trunc
         jets.symmetrizedMaurerCartanCoeff U ⟨r, hr⟩ = 0
 ```
 
-**`LocalGaugeData.maurerCartan_injOn_truncationKer_zero`**, a lemma, [line 293](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/LocalGaugeData/Truncation.lean#L293).
+**`LocalGaugeData.maurerCartan_injOn_truncationKer_zero`**, a lemma, [line 293](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/LocalGaugeData/Truncation.lean#L293).
 
 > A pure jet of a faithful package is determined by its Maurer–Cartan form. By the
 > cocycle and inverse laws `ω(V⁻¹ U) = Ad_{V⁻¹}(ω(U) − ω(V)) = 0`, so `V⁻¹ U` is the
@@ -280,7 +280,7 @@ lemma maurerCartan_injOn_truncationKer_zero {U V : GJ} (hU : U ∈ jets.truncati
     U = V
 ```
 
-**`LocalGaugeData.symmetrizedMaurerCartanCoeff_injective`**, a lemma, [line 308](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/LocalGaugeData/Truncation.lean#L308).
+**`LocalGaugeData.symmetrizedMaurerCartanCoeff_injective`**, a lemma, [line 308](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/LocalGaugeData/Truncation.lean#L308).
 
 > A pure jet of a faithful package is determined by its symmetrized Maurer–Cartan data.
 > The symmetrized data determine all base-point Taylor data of the Maurer–Cartan form
@@ -299,7 +299,7 @@ lemma symmetrizedMaurerCartanCoeff_injective :
 > `ρ(U) = ∑_μ x_μ ω_μ(U)` of the Maurer–Cartan form. This is the Euler identity applied
 > to each summand.
 
-**`LocalGaugeData.radial`**, a def, [line 335](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/LocalGaugeData/Truncation.lean#L335).
+**`LocalGaugeData.radial`**, a def, [line 335](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/LocalGaugeData/Truncation.lean#L335).
 
 > The radial component `∑_μ x_μ ω_μ(U)` of the Maurer–Cartan form of a jet.
 
@@ -307,7 +307,7 @@ lemma symmetrizedMaurerCartanCoeff_injective :
 noncomputable def radial (U : GJ) : 𝔤J
 ```
 
-**`LocalGaugeData.symmetrizedMaurerCartanCoeff_eq_evalLie_iteratedDeriv_radial`**, a lemma, [line 340](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/LocalGaugeData/Truncation.lean#L340).
+**`LocalGaugeData.symmetrizedMaurerCartanCoeff_eq_evalLie_iteratedDeriv_radial`**, a lemma, [line 340](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/LocalGaugeData/Truncation.lean#L340).
 
 > The symmetrized Maurer–Cartan data are the Taylor data of the radial component:
 > `sym(ω(U))_r|₀ = (1/|r|) (∂_r ρ(U))|₀`.
@@ -321,7 +321,7 @@ lemma symmetrizedMaurerCartanCoeff_eq_evalLie_iteratedDeriv_radial (U : jets.tru
 
 ## G. Free packages
 
-**`LocalGaugeData.Free`**, a class, [line 369](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/LocalGaugeData/Truncation.lean#L369).
+**`LocalGaugeData.Free`**, a class, [line 369](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/LocalGaugeData/Truncation.lean#L369).
 
 > A package is free when it is faithful and its jets are honest formal power series in
 > the coordinates: every family of base-point Taylor data is realized by an element of
@@ -340,7 +340,7 @@ class Free (jets : LocalGaugeData G₀ 𝔤 GJ 𝔤J) : Prop extends Faithful je
   exists_radial_eq : ∀ ρ : 𝔤J, jets.evalLie ρ = 0 → ∃ U : jets.truncationKer 0, jets.radial U.1 = ρ
 ```
 
-**`LocalGaugeData.exists_evalLie_iteratedDeriv_eq`**, a lemma, [line 379](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/LocalGaugeData/Truncation.lean#L379).
+**`LocalGaugeData.exists_evalLie_iteratedDeriv_eq`**, a lemma, [line 379](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/LocalGaugeData/Truncation.lean#L379).
 
 > Taylor completeness of a free package.
 
@@ -349,7 +349,7 @@ lemma exists_evalLie_iteratedDeriv_eq (c : Multiset (Fin 1 ⊕ Fin 3) → 𝔤) 
     ∃ Y : 𝔤J, ∀ s, jets.evalLie (jets.iteratedDeriv s Y) = c s
 ```
 
-**`LocalGaugeData.exists_radial_eq`**, a lemma, [line 384](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/LocalGaugeData/Truncation.lean#L384).
+**`LocalGaugeData.exists_radial_eq`**, a lemma, [line 384](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/LocalGaugeData/Truncation.lean#L384).
 
 > Radial integrability of a free package.
 
@@ -358,7 +358,7 @@ lemma exists_radial_eq {ρ : 𝔤J} (hρ : jets.evalLie ρ = 0) :
     ∃ U : jets.truncationKer 0, jets.radial U.1 = ρ
 ```
 
-**`LocalGaugeData.symmetrizedMaurerCartanCoeff_surjective`**, a lemma, [line 391](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/LocalGaugeData/Truncation.lean#L391).
+**`LocalGaugeData.symmetrizedMaurerCartanCoeff_surjective`**, a lemma, [line 391](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/LocalGaugeData/Truncation.lean#L391).
 
 > Every family of symmetrized Maurer–Cartan data is realized by a pure jet: realize the
 > data, rescaled by the order, as the Taylor data of an element `ρ` vanishing at the base
@@ -369,7 +369,7 @@ lemma symmetrizedMaurerCartanCoeff_surjective :
     Function.Surjective jets.symmetrizedMaurerCartanCoeff
 ```
 
-**`LocalGaugeData.symmetrizedMaurerCartanCoeff_bijective`**, a lemma, [line 406](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/LocalGaugeData/Truncation.lean#L406).
+**`LocalGaugeData.symmetrizedMaurerCartanCoeff_bijective`**, a lemma, [line 406](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/LocalGaugeData/Truncation.lean#L406).
 
 > The symmetrized Maurer–Cartan data are free coordinates on the pure jets of a free
 > package.
@@ -386,4 +386,4 @@ lemma symmetrizedMaurerCartanCoeff_bijective :
 
 ## Sources
 
-- [PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/LocalGaugeData/Truncation.lean at 2a1dfe43](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/LocalGaugeData/Truncation.lean)
+- [PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/LocalGaugeData/Truncation.lean at 8c87bdfb](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/LocalGaugeData/Truncation.lean)

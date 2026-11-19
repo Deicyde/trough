@@ -8,7 +8,7 @@ proof: formalized
 
 # Solutions to the damped harmonic oscillator
 
-The module `Physlib.ClassicalMechanics.DampedHarmonicOscillator.Solution`, [Physlib/ClassicalMechanics/DampedHarmonicOscillator/Solution.lean](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/ClassicalMechanics/DampedHarmonicOscillator/Solution.lean): 18 declarations, 18 with a docstring; 12 private, not shown.
+The module `Physlib.ClassicalMechanics.DampedHarmonicOscillator.Solution`, [Physlib/ClassicalMechanics/DampedHarmonicOscillator/Solution.lean](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/ClassicalMechanics/DampedHarmonicOscillator/Solution.lean): 18 declarations, 18 with a docstring; 12 private, not shown.
 
 ## i. Overview
 
@@ -46,7 +46,7 @@ The module `Physlib.ClassicalMechanics.DampedHarmonicOscillator.Solution`, [Phys
 > We define the type of initial conditions for the damped harmonic oscillator. The initial
 > conditions are the position and velocity at time `0`.
 
-**`ClassicalMechanics.DampedHarmonicOscillator.InitialConditions`**, a structure, [line 82](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/ClassicalMechanics/DampedHarmonicOscillator/Solution.lean#L82).
+**`ClassicalMechanics.DampedHarmonicOscillator.InitialConditions`**, a structure, [line 82](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/ClassicalMechanics/DampedHarmonicOscillator/Solution.lean#L82).
 
 > The initial conditions for the damped harmonic oscillator, specified by an initial
 > position and an initial velocity.
@@ -66,7 +66,7 @@ structure InitialConditions where
 
 ### B.1. Regime-specific base trajectories
 
-**`ClassicalMechanics.DampedHarmonicOscillator.underdampedBase`**, a def, [line 100](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/ClassicalMechanics/DampedHarmonicOscillator/Solution.lean#L100).
+**`ClassicalMechanics.DampedHarmonicOscillator.underdampedBase`**, a def, [line 100](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/ClassicalMechanics/DampedHarmonicOscillator/Solution.lean#L100).
 
 > The oscillatory part of the underdamped trajectory before exponential decay.
 
@@ -75,7 +75,7 @@ noncomputable def underdampedBase
     (IC : InitialConditions) : Time → EuclideanSpace ℝ (Fin 1)
 ```
 
-**`ClassicalMechanics.DampedHarmonicOscillator.criticallyDampedBase`**, a def, [line 107](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/ClassicalMechanics/DampedHarmonicOscillator/Solution.lean#L107).
+**`ClassicalMechanics.DampedHarmonicOscillator.criticallyDampedBase`**, a def, [line 107](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/ClassicalMechanics/DampedHarmonicOscillator/Solution.lean#L107).
 
 > The polynomial part of the critically damped trajectory before exponential decay.
 
@@ -84,7 +84,7 @@ noncomputable def criticallyDampedBase
     (IC : InitialConditions) : Time → EuclideanSpace ℝ (Fin 1)
 ```
 
-**`ClassicalMechanics.DampedHarmonicOscillator.overdampedBase`**, a def, [line 112](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/ClassicalMechanics/DampedHarmonicOscillator/Solution.lean#L112).
+**`ClassicalMechanics.DampedHarmonicOscillator.overdampedBase`**, a def, [line 112](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/ClassicalMechanics/DampedHarmonicOscillator/Solution.lean#L112).
 
 > The hyperbolic part of the overdamped trajectory before exponential decay.
 
@@ -95,7 +95,7 @@ noncomputable def overdampedBase
 
 ### B.2. The selected trajectory
 
-**`ClassicalMechanics.DampedHarmonicOscillator.trajectory`**, a def, [line 126](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/ClassicalMechanics/DampedHarmonicOscillator/Solution.lean#L126).
+**`ClassicalMechanics.DampedHarmonicOscillator.trajectory`**, a def, [line 126](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/ClassicalMechanics/DampedHarmonicOscillator/Solution.lean#L126).
 
 > Given initial conditions, the solution selected from the damping regime of the
 > oscillator.
@@ -105,7 +105,7 @@ noncomputable def trajectory
     (IC : InitialConditions) : Time → EuclideanSpace ℝ (Fin 1)
 ```
 
-**`ClassicalMechanics.DampedHarmonicOscillator.trajectory_eq_of_underdamped`**, a lemma, [line 138](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/ClassicalMechanics/DampedHarmonicOscillator/Solution.lean#L138).
+**`ClassicalMechanics.DampedHarmonicOscillator.trajectory_eq_of_underdamped`**, a lemma, [line 138](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/ClassicalMechanics/DampedHarmonicOscillator/Solution.lean#L138).
 
 > In the underdamped regime, the selected trajectory uses the trigonometric base.
 
@@ -115,7 +115,7 @@ lemma trajectory_eq_of_underdamped (IC : InitialConditions) (hS : S.IsUnderdampe
       fun t : Time => exp (-S.decayRate * t) • S.underdampedBase IC t
 ```
 
-**`ClassicalMechanics.DampedHarmonicOscillator.trajectory_eq_of_criticallyDamped`**, a lemma, [line 145](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/ClassicalMechanics/DampedHarmonicOscillator/Solution.lean#L145).
+**`ClassicalMechanics.DampedHarmonicOscillator.trajectory_eq_of_criticallyDamped`**, a lemma, [line 145](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/ClassicalMechanics/DampedHarmonicOscillator/Solution.lean#L145).
 
 > In the critically damped regime, the selected trajectory uses the polynomial base.
 
@@ -125,7 +125,7 @@ lemma trajectory_eq_of_criticallyDamped (IC : InitialConditions) (hS : S.IsCriti
       fun t : Time => exp (-S.decayRate * t) • S.criticallyDampedBase IC t
 ```
 
-**`ClassicalMechanics.DampedHarmonicOscillator.trajectory_eq_of_overdamped`**, a lemma, [line 155](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/ClassicalMechanics/DampedHarmonicOscillator/Solution.lean#L155).
+**`ClassicalMechanics.DampedHarmonicOscillator.trajectory_eq_of_overdamped`**, a lemma, [line 155](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/ClassicalMechanics/DampedHarmonicOscillator/Solution.lean#L155).
 
 > In the overdamped regime, the selected trajectory uses the hyperbolic base.
 
@@ -135,7 +135,7 @@ lemma trajectory_eq_of_overdamped (IC : InitialConditions) (hS : S.IsOverdamped)
       fun t : Time => exp (-S.decayRate * t) • S.overdampedBase IC t
 ```
 
-**`ClassicalMechanics.DampedHarmonicOscillator.trajectory_eq_of_underdamped_relaxationTime`**, a lemma, [line 170](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/ClassicalMechanics/DampedHarmonicOscillator/Solution.lean#L170).
+**`ClassicalMechanics.DampedHarmonicOscillator.trajectory_eq_of_underdamped_relaxationTime`**, a lemma, [line 170](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/ClassicalMechanics/DampedHarmonicOscillator/Solution.lean#L170).
 
 > In the underdamped regime, the selected trajectory is `exp (-t / τ)` times the
 > trigonometric base, `τ` being the relaxation time.
@@ -147,7 +147,7 @@ lemma trajectory_eq_of_underdamped_relaxationTime (IC : InitialConditions)
       fun t : Time => exp (-(t : ℝ) / S.relaxationTime) • S.underdampedBase IC t
 ```
 
-**`ClassicalMechanics.DampedHarmonicOscillator.trajectory_contDiff`**, a lemma, [line 179](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/ClassicalMechanics/DampedHarmonicOscillator/Solution.lean#L179).
+**`ClassicalMechanics.DampedHarmonicOscillator.trajectory_contDiff`**, a lemma, [line 179](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/ClassicalMechanics/DampedHarmonicOscillator/Solution.lean#L179).
 
 > The selected trajectory is smooth.
 
@@ -156,7 +156,7 @@ lemma trajectory_contDiff (IC : InitialConditions) :
     ContDiff ℝ ∞ (S.trajectory IC)
 ```
 
-**`ClassicalMechanics.DampedHarmonicOscillator.trajectory_apply_zero`**, a lemma, [line 193](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/ClassicalMechanics/DampedHarmonicOscillator/Solution.lean#L193).
+**`ClassicalMechanics.DampedHarmonicOscillator.trajectory_apply_zero`**, a lemma, [line 193](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/ClassicalMechanics/DampedHarmonicOscillator/Solution.lean#L193).
 
 > The selected trajectory has initial position `IC.x₀`.
 
@@ -175,7 +175,7 @@ lemma trajectory_apply_zero (IC : InitialConditions) : S.trajectory IC 0 = IC.x�
 > The remaining private lemmas compute the velocity and acceleration of the trigonometric,
 > polynomial, and hyperbolic base trajectories before the exponential decay factor is applied.
 
-**`ClassicalMechanics.DampedHarmonicOscillator.trajectory_velocity_at_zero`**, a lemma, [line 391](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/ClassicalMechanics/DampedHarmonicOscillator/Solution.lean#L391).
+**`ClassicalMechanics.DampedHarmonicOscillator.trajectory_velocity_at_zero`**, a lemma, [line 391](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/ClassicalMechanics/DampedHarmonicOscillator/Solution.lean#L391).
 
 > The selected trajectory has initial velocity `IC.v₀`.
 
@@ -191,7 +191,7 @@ lemma trajectory_velocity_at_zero (IC : InitialConditions) :
 
 ### C.1. The selected trajectory satisfies the equation of motion
 
-**`ClassicalMechanics.DampedHarmonicOscillator.trajectory_equationOfMotion_of_criticallyDamped`**, a lemma, [line 421](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/ClassicalMechanics/DampedHarmonicOscillator/Solution.lean#L421).
+**`ClassicalMechanics.DampedHarmonicOscillator.trajectory_equationOfMotion_of_criticallyDamped`**, a lemma, [line 421](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/ClassicalMechanics/DampedHarmonicOscillator/Solution.lean#L421).
 
 > In the critically damped regime, the selected trajectory satisfies the damped equation
 > of motion.
@@ -202,7 +202,7 @@ lemma trajectory_equationOfMotion_of_criticallyDamped (IC : InitialConditions)
     S.EquationOfMotion (S.trajectory IC)
 ```
 
-**`ClassicalMechanics.DampedHarmonicOscillator.trajectory_equationOfMotion_of_underdamped`**, a lemma, [line 439](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/ClassicalMechanics/DampedHarmonicOscillator/Solution.lean#L439).
+**`ClassicalMechanics.DampedHarmonicOscillator.trajectory_equationOfMotion_of_underdamped`**, a lemma, [line 439](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/ClassicalMechanics/DampedHarmonicOscillator/Solution.lean#L439).
 
 > In the underdamped regime, the selected trajectory satisfies the damped equation of
 > motion.
@@ -213,7 +213,7 @@ lemma trajectory_equationOfMotion_of_underdamped (IC : InitialConditions)
     S.EquationOfMotion (S.trajectory IC)
 ```
 
-**`ClassicalMechanics.DampedHarmonicOscillator.trajectory_equationOfMotion_of_overdamped`**, a lemma, [line 458](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/ClassicalMechanics/DampedHarmonicOscillator/Solution.lean#L458).
+**`ClassicalMechanics.DampedHarmonicOscillator.trajectory_equationOfMotion_of_overdamped`**, a lemma, [line 458](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/ClassicalMechanics/DampedHarmonicOscillator/Solution.lean#L458).
 
 > In the overdamped regime, the selected trajectory satisfies the damped equation of
 > motion.
@@ -224,7 +224,7 @@ lemma trajectory_equationOfMotion_of_overdamped (IC : InitialConditions)
     S.EquationOfMotion (S.trajectory IC)
 ```
 
-**`ClassicalMechanics.DampedHarmonicOscillator.trajectory_equationOfMotion`**, a lemma, [line 476](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/ClassicalMechanics/DampedHarmonicOscillator/Solution.lean#L476).
+**`ClassicalMechanics.DampedHarmonicOscillator.trajectory_equationOfMotion`**, a lemma, [line 476](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/ClassicalMechanics/DampedHarmonicOscillator/Solution.lean#L476).
 
 > The selected trajectory satisfies the damped equation of motion.
 
@@ -242,7 +242,7 @@ lemma trajectory_equationOfMotion (IC : InitialConditions) :
 > ODE-uniqueness theorem `ODE_solution_unique_univ` (the right-hand side is a continuous
 > linear map, hence Lipschitz).
 
-**`ClassicalMechanics.DampedHarmonicOscillator.equationOfMotion_unique`**, a lemma, [line 524](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/ClassicalMechanics/DampedHarmonicOscillator/Solution.lean#L524).
+**`ClassicalMechanics.DampedHarmonicOscillator.equationOfMotion_unique`**, a lemma, [line 524](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/ClassicalMechanics/DampedHarmonicOscillator/Solution.lean#L524).
 
 > Any two smooth solutions of the damped equation of motion with the same initial position and
 > velocity are equal.
@@ -255,7 +255,7 @@ lemma equationOfMotion_unique (x y : Time → EuclideanSpace ℝ (Fin 1))
     x = y
 ```
 
-**`ClassicalMechanics.DampedHarmonicOscillator.trajectories_unique`**, a lemma, [line 548](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/ClassicalMechanics/DampedHarmonicOscillator/Solution.lean#L548).
+**`ClassicalMechanics.DampedHarmonicOscillator.trajectories_unique`**, a lemma, [line 548](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/ClassicalMechanics/DampedHarmonicOscillator/Solution.lean#L548).
 
 > The selected trajectory is the unique smooth solution of the damped equation of motion with the
 > given initial conditions.
@@ -273,4 +273,4 @@ lemma trajectories_unique (IC : InitialConditions) (x : Time → EuclideanSpace 
 
 ## Sources
 
-- [Physlib/ClassicalMechanics/DampedHarmonicOscillator/Solution.lean at 2a1dfe43](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/ClassicalMechanics/DampedHarmonicOscillator/Solution.lean)
+- [Physlib/ClassicalMechanics/DampedHarmonicOscillator/Solution.lean at 8c87bdfb](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/ClassicalMechanics/DampedHarmonicOscillator/Solution.lean)

@@ -8,7 +8,7 @@ proof: formalized
 
 # Anomaly cancellation
 
-The module `Physlib.StringTheory.FTheory.SU5.Charges.AnomalyFree`, [Physlib/StringTheory/FTheory/SU5/Charges/AnomalyFree.lean](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/StringTheory/FTheory/SU5/Charges/AnomalyFree.lean): 4 declarations (1 instance with no name), 2 with a docstring.
+The module `Physlib.StringTheory.FTheory.SU5.Charges.AnomalyFree`, [Physlib/StringTheory/FTheory/SU5/Charges/AnomalyFree.lean](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/StringTheory/FTheory/SU5/Charges/AnomalyFree.lean): 4 declarations (1 instance with no name), 2 with a docstring.
 
 ## i. Overview
 
@@ -34,7 +34,7 @@ The module `Physlib.StringTheory.FTheory.SU5.Charges.AnomalyFree`, [Physlib/Stri
 
 ## A. Charge spectrum which lift to anomaly free quanta
 
-**`FTheory.SU5.ChargeSpectrum.IsAnomalyFree`**, a def, [line 66](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/StringTheory/FTheory/SU5/Charges/AnomalyFree.lean#L66).
+**`FTheory.SU5.ChargeSpectrum.IsAnomalyFree`**, a def, [line 66](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/StringTheory/FTheory/SU5/Charges/AnomalyFree.lean#L66).
 
 > The condition on a collection of charges `c` that it extends to an anomaly free `Quanta`.
 > That anomaly free `Quanta` is not tracked by this proposition.
@@ -45,7 +45,7 @@ def IsAnomalyFree [DecidableEq 𝓩] [CommRing 𝓩] (c : ChargeSpectrum 𝓩) :
 
 ### A.1. Decidability of the proposition
 
-**An instance with no name**, [line 75](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/StringTheory/FTheory/SU5/Charges/AnomalyFree.lean#L75).
+**An instance with no name**, [line 75](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/StringTheory/FTheory/SU5/Charges/AnomalyFree.lean#L75).
 
 ```lean
 instance [DecidableEq 𝓩] [CommRing 𝓩] {c : ChargeSpectrum 𝓩} : Decidable (IsAnomalyFree c)
@@ -53,7 +53,7 @@ instance [DecidableEq 𝓩] [CommRing 𝓩] {c : ChargeSpectrum 𝓩} : Decidabl
 
 ### A.2. The proposition is preserved under mappings of charge spectra
 
-**`FTheory.SU5.ChargeSpectrum.isAnomalyFree_map`**, a lemma, [line 88](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/StringTheory/FTheory/SU5/Charges/AnomalyFree.lean#L88).
+**`FTheory.SU5.ChargeSpectrum.isAnomalyFree_map`**, a lemma, [line 88](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/StringTheory/FTheory/SU5/Charges/AnomalyFree.lean#L88).
 
 ```lean
 lemma isAnomalyFree_map (f : 𝓩 →+* 𝓩1) {c : ChargeSpectrum 𝓩}
@@ -62,7 +62,7 @@ lemma isAnomalyFree_map (f : 𝓩 →+* 𝓩1) {c : ChargeSpectrum 𝓩}
 
 ## B. The viable charges which lift to anomaly free quanta
 
-**`FTheory.SU5.ChargeSpectrum.viable_anomalyFree`**, a lemma, [line 112](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/StringTheory/FTheory/SU5/Charges/AnomalyFree.lean#L112).
+**`FTheory.SU5.ChargeSpectrum.viable_anomalyFree`**, a lemma, [line 112](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/StringTheory/FTheory/SU5/Charges/AnomalyFree.lean#L112).
 
 > The viable charges which are anomaly free.
 
@@ -89,4 +89,4 @@ lemma viable_anomalyFree (I : CodimensionOneConfig) :
 
 ## Sources
 
-- [Physlib/StringTheory/FTheory/SU5/Charges/AnomalyFree.lean at 2a1dfe43](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/StringTheory/FTheory/SU5/Charges/AnomalyFree.lean)
+- [Physlib/StringTheory/FTheory/SU5/Charges/AnomalyFree.lean at 8c87bdfb](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/StringTheory/FTheory/SU5/Charges/AnomalyFree.lean)

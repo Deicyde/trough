@@ -8,7 +8,7 @@ proof: formalized
 
 # The marginal of a Schwartz function on a Euclidean product
 
-The module `PhyslibAlpha.Mathematics.Fourier.Marginal`, [PhyslibAlpha/Mathematics/Fourier/Marginal.lean](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Mathematics/Fourier/Marginal.lean): 5 declarations, 5 with a docstring.
+The module `PhyslibAlpha.Mathematics.Fourier.Marginal`, [PhyslibAlpha/Mathematics/Fourier/Marginal.lean](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Mathematics/Fourier/Marginal.lean): 5 declarations, 5 with a docstring.
 
 > The integral of a Schwartz function over the second factor is continuous and integrable. Its
 > Fourier transform is the restriction of the transform to the first factor.
@@ -46,7 +46,7 @@ The module `PhyslibAlpha.Mathematics.Fourier.Marginal`, [PhyslibAlpha/Mathematic
 
 > - `EuclideanProd.fourier_eq_integral_integral` : the transform is the iterated transform.
 
-**`EuclideanProd.fourier_marginal`**, a lemma, [line 74](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Mathematics/Fourier/Marginal.lean#L74).
+**`EuclideanProd.fourier_marginal`**, a lemma, [line 74](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Mathematics/Fourier/Marginal.lean#L74).
 
 > **The transform of the marginal.** The Fourier transform of the integral over `F` is the
 > restriction of the transform to the frequencies `(ξ, 0)`.
@@ -57,7 +57,7 @@ lemma fourier_marginal {φ : WithLp 2 (E × F) → ℂ} (hφ : Integrable φ) (�
       ∫ z, (𝐞 (-inner ℝ z (WithLp.toLp 2 (ξ, (0 : F)))) : ℂ) • φ z
 ```
 
-**`EuclideanProd.exists_bound_marginal`**, a lemma, [line 98](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Mathematics/Fourier/Marginal.lean#L98).
+**`EuclideanProd.exists_bound_marginal`**, a lemma, [line 98](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Mathematics/Fourier/Marginal.lean#L98).
 
 > A Schwartz function decays in the extra variables, uniformly in the others.
 
@@ -67,7 +67,7 @@ lemma exists_bound_marginal (h : 𝓢(WithLp 2 (E × F), ℂ)) :
       C * (1 + ‖y‖) ^ (-((Module.finrank ℝ F + 1 : ℕ) : ℝ))
 ```
 
-**`EuclideanProd.continuous_marginal`**, a lemma, [line 108](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Mathematics/Fourier/Marginal.lean#L108).
+**`EuclideanProd.continuous_marginal`**, a lemma, [line 108](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Mathematics/Fourier/Marginal.lean#L108).
 
 > The marginal of a Schwartz function is continuous.
 
@@ -76,7 +76,7 @@ lemma continuous_marginal (h : 𝓢(WithLp 2 (E × F), ℂ)) :
     Continuous fun x : E => ∫ y : F, h (WithLp.toLp 2 (x, y))
 ```
 
-**`EuclideanProd.integrable_marginal`**, a lemma, [line 121](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Mathematics/Fourier/Marginal.lean#L121).
+**`EuclideanProd.integrable_marginal`**, a lemma, [line 121](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Mathematics/Fourier/Marginal.lean#L121).
 
 > The marginal of a Schwartz function is integrable.
 
@@ -85,7 +85,7 @@ lemma integrable_marginal (h : 𝓢(WithLp 2 (E × F), ℂ)) :
     Integrable fun x : E => ∫ y : F, h (WithLp.toLp 2 (x, y))
 ```
 
-**`EuclideanProd.fourier_eq_integral_integral`**, a lemma, [line 128](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Mathematics/Fourier/Marginal.lean#L128).
+**`EuclideanProd.fourier_eq_integral_integral`**, a lemma, [line 128](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Mathematics/Fourier/Marginal.lean#L128).
 
 > **The iterated form of the Fourier transform.** The transform on the Euclidean product is the
 > transform in the first variable of the transform in the second.
@@ -107,4 +107,4 @@ Its declarations' statements use no declaration of another module with an articl
 
 ## Sources
 
-- [PhyslibAlpha/Mathematics/Fourier/Marginal.lean at 2a1dfe43](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Mathematics/Fourier/Marginal.lean)
+- [PhyslibAlpha/Mathematics/Fourier/Marginal.lean at 8c87bdfb](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Mathematics/Fourier/Marginal.lean)

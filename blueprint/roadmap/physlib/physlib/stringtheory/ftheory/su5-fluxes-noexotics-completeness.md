@@ -8,7 +8,7 @@ proof: formalized
 
 # Completeness of `Elems` with regard to the `NoExotics` condition
 
-The module `Physlib.StringTheory.FTheory.SU5.Fluxes.NoExotics.Completeness`, [Physlib/StringTheory/FTheory/SU5/Fluxes/NoExotics/Completeness.lean](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/StringTheory/FTheory/SU5/Fluxes/NoExotics/Completeness.lean): 16 declarations, 4 with a docstring.
+The module `Physlib.StringTheory.FTheory.SU5.Fluxes.NoExotics.Completeness`, [Physlib/StringTheory/FTheory/SU5/Fluxes/NoExotics/Completeness.lean](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/StringTheory/FTheory/SU5/Fluxes/NoExotics/Completeness.lean): 16 declarations, 4 with a docstring.
 
 ## i. Overview
 
@@ -45,7 +45,7 @@ The module `Physlib.StringTheory.FTheory.SU5.Fluxes.NoExotics.Completeness`, [Ph
 
 ### A.1. The allowed fluxes in a `FluxesFive` which obeys `NoExotics` and `HasNoZero`
 
-**`FTheory.SU5.FluxesFive.mem_mem_finset_of_noExotics`**, a lemma, [line 83](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/StringTheory/FTheory/SU5/Fluxes/NoExotics/Completeness.lean#L83).
+**`FTheory.SU5.FluxesFive.mem_mem_finset_of_noExotics`**, a lemma, [line 83](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/StringTheory/FTheory/SU5/Fluxes/NoExotics/Completeness.lean#L83).
 
 ```lean
 lemma mem_mem_finset_of_noExotics (F : FluxesFive) (hF : F.NoExotics)
@@ -56,7 +56,7 @@ lemma mem_mem_finset_of_noExotics (F : FluxesFive) (hF : F.NoExotics)
 
 ### A.2. Sufficient condition for a set to contain allowed subsets of card `n.succ` based on `n`
 
-**`FTheory.SU5.FluxesFive.subset_le_mem_of_card_eq_succ`**, a lemma, [line 112](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/StringTheory/FTheory/SU5/Fluxes/NoExotics/Completeness.lean#L112).
+**`FTheory.SU5.FluxesFive.subset_le_mem_of_card_eq_succ`**, a lemma, [line 112](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/StringTheory/FTheory/SU5/Fluxes/NoExotics/Completeness.lean#L112).
 
 ```lean
 lemma subset_le_mem_of_card_eq_succ {n : ℕ} {F : FluxesFive} (hF : F.NoExotics) (hnZ : F.HasNoZero)
@@ -73,7 +73,7 @@ lemma subset_le_mem_of_card_eq_succ {n : ℕ} {F : FluxesFive} (hF : F.NoExotics
 
 ### A.3. Statement of the allowed subsets of each cardinality
 
-**`FTheory.SU5.FluxesFive.noExoticsSubsets`**, a def, [line 141](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/StringTheory/FTheory/SU5/Fluxes/NoExotics/Completeness.lean#L141).
+**`FTheory.SU5.FluxesFive.noExoticsSubsets`**, a def, [line 141](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/StringTheory/FTheory/SU5/Fluxes/NoExotics/Completeness.lean#L141).
 
 > The allowed subsets of a `FluxesFive` which has no exotics or zeros.
 
@@ -83,7 +83,7 @@ def noExoticsSubsets : (n : ℕ) → Finset (Multiset Fluxes)
 
 ### A.4. Lemma that stated allowed subsets are complete
 
-**`FTheory.SU5.FluxesFive.subset_of_fluxesFive_mem_noExoticsSubsets_of_noExotics`**, a lemma, [line 190](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/StringTheory/FTheory/SU5/Fluxes/NoExotics/Completeness.lean#L190).
+**`FTheory.SU5.FluxesFive.subset_of_fluxesFive_mem_noExoticsSubsets_of_noExotics`**, a lemma, [line 190](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/StringTheory/FTheory/SU5/Fluxes/NoExotics/Completeness.lean#L190).
 
 ```lean
 lemma subset_of_fluxesFive_mem_noExoticsSubsets_of_noExotics {F : FluxesFive} (hF : F.NoExotics)
@@ -93,14 +93,14 @@ lemma subset_of_fluxesFive_mem_noExoticsSubsets_of_noExotics {F : FluxesFive} (h
 
 ### A.5. Terms of `FluxesFive` obeying `NoExotics` and `HasNoZero` have card ≤ 6
 
-**`FTheory.SU5.FluxesFive.card_le_six_of_noExotics`**, a lemma, [line 222](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/StringTheory/FTheory/SU5/Fluxes/NoExotics/Completeness.lean#L222).
+**`FTheory.SU5.FluxesFive.card_le_six_of_noExotics`**, a lemma, [line 222](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/StringTheory/FTheory/SU5/Fluxes/NoExotics/Completeness.lean#L222).
 
 ```lean
 lemma card_le_six_of_noExotics {F : FluxesFive} (hF : F.NoExotics) (hnZ : F.HasNoZero) :
     F.card ≤ 6
 ```
 
-**`FTheory.SU5.FluxesFive.card_mem_range_seven_of_noExotics`**, a lemma, [line 237](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/StringTheory/FTheory/SU5/Fluxes/NoExotics/Completeness.lean#L237).
+**`FTheory.SU5.FluxesFive.card_mem_range_seven_of_noExotics`**, a lemma, [line 237](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/StringTheory/FTheory/SU5/Fluxes/NoExotics/Completeness.lean#L237).
 
 ```lean
 lemma card_mem_range_seven_of_noExotics {F : FluxesFive} (hF : F.NoExotics) (hnZ : F.HasNoZero) :
@@ -109,7 +109,7 @@ lemma card_mem_range_seven_of_noExotics {F : FluxesFive} (hF : F.NoExotics) (hnZ
 
 ### A.6. Terms of `FluxesFive` obeying `NoExotics` and `HasNoZero` are in `elemsNoExotics`
 
-**`FTheory.SU5.FluxesFive.mem_elemsNoExotics_of_noExotics`**, a lemma, [line 248](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/StringTheory/FTheory/SU5/Fluxes/NoExotics/Completeness.lean#L248).
+**`FTheory.SU5.FluxesFive.mem_elemsNoExotics_of_noExotics`**, a lemma, [line 248](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/StringTheory/FTheory/SU5/Fluxes/NoExotics/Completeness.lean#L248).
 
 ```lean
 lemma mem_elemsNoExotics_of_noExotics (F : FluxesFive) (hNE : F.NoExotics) (hnZ : F.HasNoZero) :
@@ -118,7 +118,7 @@ lemma mem_elemsNoExotics_of_noExotics (F : FluxesFive) (hNE : F.NoExotics) (hnZ 
 
 ### A.7. Terms of `FluxesFive` obey `NoExotics` and `HasNoZero` if and only if in `elemsNoExotics`
 
-**`FTheory.SU5.FluxesFive.noExotics_iff_mem_elemsNoExotics`**, a lemma, [line 273](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/StringTheory/FTheory/SU5/Fluxes/NoExotics/Completeness.lean#L273).
+**`FTheory.SU5.FluxesFive.noExotics_iff_mem_elemsNoExotics`**, a lemma, [line 273](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/StringTheory/FTheory/SU5/Fluxes/NoExotics/Completeness.lean#L273).
 
 > Completeness of `elemsNoExotics`, that is, every element of `FluxesFive`
 > which obeys `NoExotics` is an element of `elemsNoExotics`, and every
@@ -133,7 +133,7 @@ lemma noExotics_iff_mem_elemsNoExotics (F : FluxesFive) :
 
 ### B.1. The allowed fluxes in a `FluxesTen` which obeys `NoExotics` and `HasNoZero`
 
-**`FTheory.SU5.FluxesTen.mem_mem_finset_of_noExotics`**, a lemma, [line 295](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/StringTheory/FTheory/SU5/Fluxes/NoExotics/Completeness.lean#L295).
+**`FTheory.SU5.FluxesTen.mem_mem_finset_of_noExotics`**, a lemma, [line 295](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/StringTheory/FTheory/SU5/Fluxes/NoExotics/Completeness.lean#L295).
 
 ```lean
 lemma mem_mem_finset_of_noExotics (F : FluxesTen) (hF : F.NoExotics) (hnZ : F.HasNoZero)
@@ -143,7 +143,7 @@ lemma mem_mem_finset_of_noExotics (F : FluxesTen) (hF : F.NoExotics) (hnZ : F.Ha
 
 ### B.2. Sufficient condition for a set to contain allowed subsets of card `n.succ` based on `n`
 
-**`FTheory.SU5.FluxesTen.subset_le_mem_of_card_eq_succ`**, a lemma, [line 327](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/StringTheory/FTheory/SU5/Fluxes/NoExotics/Completeness.lean#L327).
+**`FTheory.SU5.FluxesTen.subset_le_mem_of_card_eq_succ`**, a lemma, [line 327](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/StringTheory/FTheory/SU5/Fluxes/NoExotics/Completeness.lean#L327).
 
 ```lean
 lemma subset_le_mem_of_card_eq_succ {n : ℕ} {F : FluxesTen} (hF : F.NoExotics) (hnZ : F.HasNoZero)
@@ -160,7 +160,7 @@ lemma subset_le_mem_of_card_eq_succ {n : ℕ} {F : FluxesTen} (hF : F.NoExotics)
 
 ### B.3. Statement of the allowed subsets of each cardinality
 
-**`FTheory.SU5.FluxesTen.noExoticsSubsets`**, a def, [line 357](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/StringTheory/FTheory/SU5/Fluxes/NoExotics/Completeness.lean#L357).
+**`FTheory.SU5.FluxesTen.noExoticsSubsets`**, a def, [line 357](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/StringTheory/FTheory/SU5/Fluxes/NoExotics/Completeness.lean#L357).
 
 > The allowed subsets of a `FluxesTen` which has no exotics or zeros.
 
@@ -170,7 +170,7 @@ def noExoticsSubsets : (n : ℕ) → Finset (Multiset Fluxes)
 
 ### B.4. Lemma that stated allowed subsets are complete
 
-**`FTheory.SU5.FluxesTen.subset_of_fluxesTen_mem_noExoticsSubsets_of_noExotics`**, a lemma, [line 371](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/StringTheory/FTheory/SU5/Fluxes/NoExotics/Completeness.lean#L371).
+**`FTheory.SU5.FluxesTen.subset_of_fluxesTen_mem_noExoticsSubsets_of_noExotics`**, a lemma, [line 371](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/StringTheory/FTheory/SU5/Fluxes/NoExotics/Completeness.lean#L371).
 
 ```lean
 lemma subset_of_fluxesTen_mem_noExoticsSubsets_of_noExotics {F : FluxesTen} (hF : F.NoExotics)
@@ -180,14 +180,14 @@ lemma subset_of_fluxesTen_mem_noExoticsSubsets_of_noExotics {F : FluxesTen} (hF 
 
 ### B.5. Terms of `FluxesTen` obeying `NoExotics` and `HasNoZero` have card ≤ 3
 
-**`FTheory.SU5.FluxesTen.card_le_three_of_noExotics`**, a lemma, [line 397](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/StringTheory/FTheory/SU5/Fluxes/NoExotics/Completeness.lean#L397).
+**`FTheory.SU5.FluxesTen.card_le_three_of_noExotics`**, a lemma, [line 397](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/StringTheory/FTheory/SU5/Fluxes/NoExotics/Completeness.lean#L397).
 
 ```lean
 lemma card_le_three_of_noExotics {F : FluxesTen} (hF : F.NoExotics) (hnZ : F.HasNoZero) :
     F.card ≤ 3
 ```
 
-**`FTheory.SU5.FluxesTen.card_mem_range_four_of_noExotics`**, a lemma, [line 409](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/StringTheory/FTheory/SU5/Fluxes/NoExotics/Completeness.lean#L409).
+**`FTheory.SU5.FluxesTen.card_mem_range_four_of_noExotics`**, a lemma, [line 409](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/StringTheory/FTheory/SU5/Fluxes/NoExotics/Completeness.lean#L409).
 
 ```lean
 lemma card_mem_range_four_of_noExotics {F : FluxesTen} (hF : F.NoExotics) (hnZ : F.HasNoZero) :
@@ -196,7 +196,7 @@ lemma card_mem_range_four_of_noExotics {F : FluxesTen} (hF : F.NoExotics) (hnZ :
 
 ### B.6. Terms of `FluxesTen` obeying `NoExotics` and `HasNoZero` are in `elemsNoExotics`
 
-**`FTheory.SU5.FluxesTen.mem_elemsNoExotics_of_noExotics`**, a lemma, [line 420](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/StringTheory/FTheory/SU5/Fluxes/NoExotics/Completeness.lean#L420).
+**`FTheory.SU5.FluxesTen.mem_elemsNoExotics_of_noExotics`**, a lemma, [line 420](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/StringTheory/FTheory/SU5/Fluxes/NoExotics/Completeness.lean#L420).
 
 ```lean
 lemma mem_elemsNoExotics_of_noExotics (F : FluxesTen) (hNE : F.NoExotics) (hnZ : F.HasNoZero) :
@@ -205,7 +205,7 @@ lemma mem_elemsNoExotics_of_noExotics (F : FluxesTen) (hNE : F.NoExotics) (hnZ :
 
 ### B.7. Terms of `FluxesTen` obey `NoExotics` and `HasNoZero` if and only if in `elemsNoExotics`
 
-**`FTheory.SU5.FluxesTen.noExotics_iff_mem_elemsNoExotics`**, a lemma, [line 445](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/StringTheory/FTheory/SU5/Fluxes/NoExotics/Completeness.lean#L445).
+**`FTheory.SU5.FluxesTen.noExotics_iff_mem_elemsNoExotics`**, a lemma, [line 445](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/StringTheory/FTheory/SU5/Fluxes/NoExotics/Completeness.lean#L445).
 
 > Completeness of `elemsNoExotics`, that is, every element of `FluxesTen`
 > which obeys `NoExotics` is an element of `elemsNoExotics`, and every
@@ -226,4 +226,4 @@ lemma noExotics_iff_mem_elemsNoExotics (F : FluxesTen) :
 
 ## Sources
 
-- [Physlib/StringTheory/FTheory/SU5/Fluxes/NoExotics/Completeness.lean at 2a1dfe43](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/StringTheory/FTheory/SU5/Fluxes/NoExotics/Completeness.lean)
+- [Physlib/StringTheory/FTheory/SU5/Fluxes/NoExotics/Completeness.lean at 8c87bdfb](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/StringTheory/FTheory/SU5/Fluxes/NoExotics/Completeness.lean)

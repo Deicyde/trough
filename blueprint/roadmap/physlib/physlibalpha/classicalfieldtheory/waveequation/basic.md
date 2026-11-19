@@ -8,7 +8,7 @@ proof: formalized
 
 # The wave operator
 
-The module `PhyslibAlpha.ClassicalFieldTheory.WaveEquation.Basic`, [PhyslibAlpha/ClassicalFieldTheory/WaveEquation/Basic.lean](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/WaveEquation/Basic.lean): 7 declarations, 6 with a docstring.
+The module `PhyslibAlpha.ClassicalFieldTheory.WaveEquation.Basic`, [PhyslibAlpha/ClassicalFieldTheory/WaveEquation/Basic.lean](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/WaveEquation/Basic.lean): 7 declarations, 6 with a docstring.
 
 ## i. Overview
 
@@ -43,7 +43,7 @@ The module `PhyslibAlpha.ClassicalFieldTheory.WaveEquation.Basic`, [PhyslibAlpha
 >
 > Lemmas: `distributionWaveOperator_apply`.
 
-**`WaveEquation.smoothWaveOperator`**, a def, [line 66](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/WaveEquation/Basic.lean#L66).
+**`WaveEquation.smoothWaveOperator`**, a def, [line 66](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/WaveEquation/Basic.lean#L66).
 
 > The smooth wave operator as the Minkowski metric trace of the second derivative.
 
@@ -51,7 +51,7 @@ The module `PhyslibAlpha.ClassicalFieldTheory.WaveEquation.Basic`, [PhyslibAlpha
 def smoothWaveOperator : smoothFields d V →ₗ[ℝ] smoothFields d V
 ```
 
-**`WaveEquation.smoothWaveOperator_coe`**, a lemma, [line 69](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/WaveEquation/Basic.lean#L69).
+**`WaveEquation.smoothWaveOperator_coe`**, a lemma, [line 69](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/WaveEquation/Basic.lean#L69).
 
 ```lean
 lemma smoothWaveOperator_coe (u : smoothFields d V) :
@@ -60,7 +60,7 @@ lemma smoothWaveOperator_coe (u : smoothFields d V) :
         (SpaceTime.deriv μ (SpaceTime.deriv μ u.val))
 ```
 
-**`WaveEquation.smoothWaveOperator_support`**, a lemma, [line 77](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/WaveEquation/Basic.lean#L77).
+**`WaveEquation.smoothWaveOperator_support`**, a lemma, [line 77](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/WaveEquation/Basic.lean#L77).
 
 > Taking the metric trace does not enlarge field support.
 
@@ -69,7 +69,7 @@ lemma smoothWaveOperator_support (u : smoothFields d V) :
     tsupport (smoothWaveOperator u : SpaceTime d → V) ⊆ tsupport (u : SpaceTime d → V)
 ```
 
-**`WaveEquation.smoothFiberMap_waveOperator`**, a lemma, [line 86](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/WaveEquation/Basic.lean#L86).
+**`WaveEquation.smoothFiberMap_waveOperator`**, a lemma, [line 86](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/WaveEquation/Basic.lean#L86).
 
 > Constant fibre transformations commute with the metric-trace wave operator.
 
@@ -79,7 +79,7 @@ lemma smoothFiberMap_waveOperator {W : Type} [NormedAddCommGroup W] [NormedSpace
     smoothWaveOperator (smoothFiberMap L u) = smoothFiberMap L (smoothWaveOperator u)
 ```
 
-**`WaveEquation.distributionWaveOperator`**, a def, [line 94](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/WaveEquation/Basic.lean#L94).
+**`WaveEquation.distributionWaveOperator`**, a def, [line 94](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/WaveEquation/Basic.lean#L94).
 
 > The wave operator on all distributions is the metric trace of weak second derivatives.
 
@@ -87,7 +87,7 @@ lemma smoothFiberMap_waveOperator {W : Type} [NormedAddCommGroup W] [NormedSpace
 def distributionWaveOperator : DistributionField d V →L[ℝ] DistributionField d V
 ```
 
-**`WaveEquation.testWaveOperator`**, a def, [line 100](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/WaveEquation/Basic.lean#L100).
+**`WaveEquation.testWaveOperator`**, a def, [line 100](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/WaveEquation/Basic.lean#L100).
 
 > The transpose wave operator on native smooth compact test functions.
 
@@ -97,7 +97,7 @@ def testWaveOperator :
       _root_.TestFunction (⊤ : TopologicalSpace.Opens (SpaceTime d)) ℝ ⊤
 ```
 
-**`WaveEquation.distributionWaveOperator_apply`**, a lemma, [line 108](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/WaveEquation/Basic.lean#L108).
+**`WaveEquation.distributionWaveOperator_apply`**, a lemma, [line 108](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/WaveEquation/Basic.lean#L108).
 
 > Two weak derivatives give the positive transpose wave operator on tests.
 
@@ -113,4 +113,4 @@ lemma distributionWaveOperator_apply (T : DistributionField d V)
 
 ## Sources
 
-- [PhyslibAlpha/ClassicalFieldTheory/WaveEquation/Basic.lean at 2a1dfe43](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/WaveEquation/Basic.lean)
+- [PhyslibAlpha/ClassicalFieldTheory/WaveEquation/Basic.lean at 8c87bdfb](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/WaveEquation/Basic.lean)

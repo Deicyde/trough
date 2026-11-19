@@ -8,7 +8,7 @@ proof: formalized
 
 # Critical points and Euler-Lagrange equations
 
-The module `Physlib.ClassicalMechanics.Lagrangian.CriticalPoint`, [Physlib/ClassicalMechanics/Lagrangian/CriticalPoint.lean](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/ClassicalMechanics/Lagrangian/CriticalPoint.lean): 5 declarations, 5 with a docstring.
+The module `Physlib.ClassicalMechanics.Lagrangian.CriticalPoint`, [Physlib/ClassicalMechanics/Lagrangian/CriticalPoint.lean](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/ClassicalMechanics/Lagrangian/CriticalPoint.lean): 5 declarations, 5 with a docstring.
 
 > Critical points of the action are the solutions of the Euler-Lagrange equations.
 
@@ -39,7 +39,7 @@ The module `Physlib.ClassicalMechanics.Lagrangian.CriticalPoint`, [Physlib/Class
 
 ### A.1. The definition
 
-**`ClassicalMechanics.LagrangianSystem.IsCriticalPoint`**, a def, [line 70](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/ClassicalMechanics/Lagrangian/CriticalPoint.lean#L70).
+**`ClassicalMechanics.LagrangianSystem.IsCriticalPoint`**, a def, [line 70](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/ClassicalMechanics/Lagrangian/CriticalPoint.lean#L70).
 
 > `γ` is smooth and every variation of `γ` fixing the endpoints has zero first variation of the
 > action, i.e. `d/ds S[γ_s]` vanishes at `s = 0` (Hamilton's principle).
@@ -48,7 +48,7 @@ The module `Physlib.ClassicalMechanics.Lagrangian.CriticalPoint`, [Physlib/Class
 def IsCriticalPoint (γ : Time → M) (t₀ t₁ : Time) : Prop
 ```
 
-**`ClassicalMechanics.LagrangianSystem.isCriticalPoint_of_vsub_nonpos`**, a lemma, [line 75](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/ClassicalMechanics/Lagrangian/CriticalPoint.lean#L75).
+**`ClassicalMechanics.LagrangianSystem.isCriticalPoint_of_vsub_nonpos`**, a lemma, [line 75](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/ClassicalMechanics/Lagrangian/CriticalPoint.lean#L75).
 
 > Every smooth curve is critical over an empty or one-point interval.
 
@@ -59,7 +59,7 @@ lemma isCriticalPoint_of_vsub_nonpos (hγ : ContMDiff 𝓘(ℝ, ℝ) I ∞ γ) (
 
 ### A.2. Euler-Lagrange equations
 
-**`ClassicalMechanics.LagrangianSystem.isCriticalPoint_of_eulerLagrange_eq_zero`**, a lemma, [line 89](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/ClassicalMechanics/Lagrangian/CriticalPoint.lean#L89).
+**`ClassicalMechanics.LagrangianSystem.isCriticalPoint_of_eulerLagrange_eq_zero`**, a lemma, [line 89](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/ClassicalMechanics/Lagrangian/CriticalPoint.lean#L89).
 
 > If `q σ = γ (σ +ᵥ t₀)` is smooth and `eulerLagrange S t₀ q = 0` on `(0, t₁ -ᵥ t₀)`, then `γ`
 > is a critical point.
@@ -70,7 +70,7 @@ lemma isCriticalPoint_of_eulerLagrange_eq_zero
       eulerLagrange S t₀ (fun σ ↦ γ (σ +ᵥ t₀)) τ = 0) : S.IsCriticalPoint γ t₀ t₁
 ```
 
-**`ClassicalMechanics.LagrangianSystem.eulerLagrange_eq_zero_of_isCriticalPoint`**, a lemma, [line 111](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/ClassicalMechanics/Lagrangian/CriticalPoint.lean#L111).
+**`ClassicalMechanics.LagrangianSystem.eulerLagrange_eq_zero_of_isCriticalPoint`**, a lemma, [line 111](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/ClassicalMechanics/Lagrangian/CriticalPoint.lean#L111).
 
 > A critical point `γ` has `eulerLagrange S t₀ q = 0` on `[0, t₁ -ᵥ t₀]`, `q σ = γ (σ +ᵥ t₀)`.
 
@@ -80,7 +80,7 @@ lemma eulerLagrange_eq_zero_of_isCriticalPoint (ht : t₁ -ᵥ t₀ ≠ 0)
       eulerLagrange S t₀ (fun σ : ℝ ↦ γ (σ +ᵥ t₀)) τ = 0
 ```
 
-**`ClassicalMechanics.LagrangianSystem.isCriticalPoint_iff_eulerLagrange`**, a lemma, [line 134](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/ClassicalMechanics/Lagrangian/CriticalPoint.lean#L134).
+**`ClassicalMechanics.LagrangianSystem.isCriticalPoint_iff_eulerLagrange`**, a lemma, [line 134](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/ClassicalMechanics/Lagrangian/CriticalPoint.lean#L134).
 
 > For `t₁ -ᵥ t₀ ≠ 0`, `γ` is a critical point iff `q σ = γ (σ +ᵥ t₀)` is smooth and
 > `eulerLagrange S t₀ q = 0` on `[0, t₁ -ᵥ t₀]`.
@@ -103,4 +103,4 @@ lemma isCriticalPoint_iff_eulerLagrange (ht : t₁ -ᵥ t₀ ≠ 0) :
 
 ## Sources
 
-- [Physlib/ClassicalMechanics/Lagrangian/CriticalPoint.lean at 2a1dfe43](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/ClassicalMechanics/Lagrangian/CriticalPoint.lean)
+- [Physlib/ClassicalMechanics/Lagrangian/CriticalPoint.lean at 8c87bdfb](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/ClassicalMechanics/Lagrangian/CriticalPoint.lean)

@@ -8,9 +8,9 @@ proof: formalized
 
 # Sign associated with joining two Wick contractions
 
-The module `Physlib.QFT.PerturbationTheory.WickContraction.Sign.Join`, [Physlib/QFT/PerturbationTheory/WickContraction/Sign/Join.lean](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/QFT/PerturbationTheory/WickContraction/Sign/Join.lean): 15 declarations, 4 with a docstring.
+The module `Physlib.QFT.PerturbationTheory.WickContraction.Sign.Join`, [Physlib/QFT/PerturbationTheory/WickContraction/Sign/Join.lean](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/QFT/PerturbationTheory/WickContraction/Sign/Join.lean): 15 declarations, 4 with a docstring.
 
-**`WickContraction.stat_signFinset_right`**, a lemma, [line 27](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/QFT/PerturbationTheory/WickContraction/Sign/Join.lean#L27).
+**`WickContraction.stat_signFinset_right`**, a lemma, [line 27](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/QFT/PerturbationTheory/WickContraction/Sign/Join.lean#L27).
 
 ```lean
 lemma stat_signFinset_right {φs : List 𝓕.FieldOp} (φsΛ : WickContraction φs.length)
@@ -19,7 +19,7 @@ lemma stat_signFinset_right {φs : List 𝓕.FieldOp} (φsΛ : WickContraction �
     (𝓕 |>ₛ ⟨φs.get, (φsucΛ.signFinset i j).map uncontractedListEmd⟩)
 ```
 
-**`WickContraction.signFinset_right_map_uncontractedListEmd_eq_filter`**, a lemma, [line 39](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/QFT/PerturbationTheory/WickContraction/Sign/Join.lean#L39).
+**`WickContraction.signFinset_right_map_uncontractedListEmd_eq_filter`**, a lemma, [line 39](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/QFT/PerturbationTheory/WickContraction/Sign/Join.lean#L39).
 
 ```lean
 lemma signFinset_right_map_uncontractedListEmd_eq_filter {φs : List 𝓕.FieldOp}
@@ -29,7 +29,7 @@ lemma signFinset_right_map_uncontractedListEmd_eq_filter {φs : List 𝓕.FieldO
     (fun c => c ∈ φsΛ.uncontracted)
 ```
 
-**`WickContraction.sign_right_eq_prod_mul_prod`**, a lemma, [line 97](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/QFT/PerturbationTheory/WickContraction/Sign/Join.lean#L97).
+**`WickContraction.sign_right_eq_prod_mul_prod`**, a lemma, [line 97](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/QFT/PerturbationTheory/WickContraction/Sign/Join.lean#L97).
 
 ```lean
 lemma sign_right_eq_prod_mul_prod {φs : List 𝓕.FieldOp} (φsΛ : WickContraction φs.length)
@@ -43,7 +43,7 @@ lemma sign_right_eq_prod_mul_prod {φs : List 𝓕.FieldOp} (φsΛ : WickContrac
         (uncontractedListEmd (φsucΛ.sndFieldOfContract a)))⟩))
 ```
 
-**`WickContraction.join_singleton_signFinset_eq_filter`**, a lemma, [line 114](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/QFT/PerturbationTheory/WickContraction/Sign/Join.lean#L114).
+**`WickContraction.join_singleton_signFinset_eq_filter`**, a lemma, [line 114](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/QFT/PerturbationTheory/WickContraction/Sign/Join.lean#L114).
 
 ```lean
 lemma join_singleton_signFinset_eq_filter {φs : List 𝓕.FieldOp}
@@ -56,7 +56,7 @@ lemma join_singleton_signFinset_eq_filter {φs : List 𝓕.FieldOp}
     (((join (singleton h) φsucΛ).getDual? c).get h1) < i)))
 ```
 
-**`WickContraction.join_singleton_left_signFinset_eq_filter`**, a lemma, [line 156](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/QFT/PerturbationTheory/WickContraction/Sign/Join.lean#L156).
+**`WickContraction.join_singleton_left_signFinset_eq_filter`**, a lemma, [line 156](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/QFT/PerturbationTheory/WickContraction/Sign/Join.lean#L156).
 
 ```lean
 lemma join_singleton_left_signFinset_eq_filter {φs : List 𝓕.FieldOp}
@@ -70,7 +70,7 @@ lemma join_singleton_left_signFinset_eq_filter {φs : List 𝓕.FieldOp}
       (((join (singleton h) φsucΛ).getDual? c).get h1) < i)))⟩)
 ```
 
-**`WickContraction.joinSignRightExtra`**, a def, [line 173](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/QFT/PerturbationTheory/WickContraction/Sign/Join.lean#L173).
+**`WickContraction.joinSignRightExtra`**, a def, [line 173](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/QFT/PerturbationTheory/WickContraction/Sign/Join.lean#L173).
 
 > The difference in sign between `φsucΛ.sign` and the direct contribution of `φsucΛ` to
 > `(join (singleton h) φsucΛ)`.
@@ -81,7 +81,7 @@ def joinSignRightExtra {φs : List 𝓕.FieldOp}
     (φsucΛ : WickContraction [singleton h]ᵘᶜ.length) : ℂ
 ```
 
-**`WickContraction.joinSignLeftExtra`**, a def, [line 183](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/QFT/PerturbationTheory/WickContraction/Sign/Join.lean#L183).
+**`WickContraction.joinSignLeftExtra`**, a def, [line 183](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/QFT/PerturbationTheory/WickContraction/Sign/Join.lean#L183).
 
 > The difference in sign between `(singleton h).sign` and the direct contribution of
 > `(singleton h)` to `(join (singleton h) φsucΛ)`.
@@ -92,7 +92,7 @@ def joinSignLeftExtra {φs : List 𝓕.FieldOp}
     (φsucΛ : WickContraction [singleton h]ᵘᶜ.length) : ℂ
 ```
 
-**`WickContraction.join_singleton_sign_left`**, a lemma, [line 191](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/QFT/PerturbationTheory/WickContraction/Sign/Join.lean#L191).
+**`WickContraction.join_singleton_sign_left`**, a lemma, [line 191](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/QFT/PerturbationTheory/WickContraction/Sign/Join.lean#L191).
 
 ```lean
 lemma join_singleton_sign_left {φs : List 𝓕.FieldOp}
@@ -102,7 +102,7 @@ lemma join_singleton_sign_left {φs : List 𝓕.FieldOp}
     (𝓕 |>ₛ ⟨φs.get, (join (singleton h) φsucΛ).signFinset i j⟩)) * (joinSignLeftExtra h φsucΛ)
 ```
 
-**`WickContraction.join_singleton_sign_right`**, a lemma, [line 201](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/QFT/PerturbationTheory/WickContraction/Sign/Join.lean#L201).
+**`WickContraction.join_singleton_sign_right`**, a lemma, [line 201](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/QFT/PerturbationTheory/WickContraction/Sign/Join.lean#L201).
 
 ```lean
 lemma join_singleton_sign_right {φs : List 𝓕.FieldOp}
@@ -115,7 +115,7 @@ lemma join_singleton_sign_right {φs : List 𝓕.FieldOp}
         (uncontractedListEmd (φsucΛ.sndFieldOfContract a)))⟩))
 ```
 
-**`WickContraction.joinSignRightExtra_eq_i_j_finset_eq_if`**, a lemma, [line 212](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/QFT/PerturbationTheory/WickContraction/Sign/Join.lean#L212).
+**`WickContraction.joinSignRightExtra_eq_i_j_finset_eq_if`**, a lemma, [line 212](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/QFT/PerturbationTheory/WickContraction/Sign/Join.lean#L212).
 
 ```lean
 lemma joinSignRightExtra_eq_i_j_finset_eq_if {φs : List 𝓕.FieldOp}
@@ -129,7 +129,7 @@ lemma joinSignRightExtra_eq_i_j_finset_eq_if {φs : List 𝓕.FieldOp}
         i < uncontractedListEmd (φsucΛ.sndFieldOfContract a) then {i} else ∅)⟩)
 ```
 
-**`WickContraction.joinSignLeftExtra_eq_joinSignRightExtra`**, a lemma, [line 304](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/QFT/PerturbationTheory/WickContraction/Sign/Join.lean#L304).
+**`WickContraction.joinSignLeftExtra_eq_joinSignRightExtra`**, a lemma, [line 304](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/QFT/PerturbationTheory/WickContraction/Sign/Join.lean#L304).
 
 ```lean
 lemma joinSignLeftExtra_eq_joinSignRightExtra {φs : List 𝓕.FieldOp}
@@ -138,7 +138,7 @@ lemma joinSignLeftExtra_eq_joinSignRightExtra {φs : List 𝓕.FieldOp}
     joinSignLeftExtra h φsucΛ = joinSignRightExtra h φsucΛ
 ```
 
-**`WickContraction.join_sign_singleton`**, a lemma, [line 384](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/QFT/PerturbationTheory/WickContraction/Sign/Join.lean#L384).
+**`WickContraction.join_sign_singleton`**, a lemma, [line 384](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/QFT/PerturbationTheory/WickContraction/Sign/Join.lean#L384).
 
 ```lean
 lemma join_sign_singleton {φs : List 𝓕.FieldOp}
@@ -147,7 +147,7 @@ lemma join_sign_singleton {φs : List 𝓕.FieldOp}
     (join (singleton h) φsucΛ).sign = (singleton h).sign * φsucΛ.sign
 ```
 
-**`WickContraction.join_sign_induction`**, a lemma, [line 402](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/QFT/PerturbationTheory/WickContraction/Sign/Join.lean#L402).
+**`WickContraction.join_sign_induction`**, a lemma, [line 402](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/QFT/PerturbationTheory/WickContraction/Sign/Join.lean#L402).
 
 ```lean
 lemma join_sign_induction {φs : List 𝓕.FieldOp} (φsΛ : WickContraction φs.length)
@@ -164,7 +164,7 @@ lemma join_sign_induction {φs : List 𝓕.FieldOp} (φsΛ : WickContraction φs
     obtain ⟨i, j, hij, φsucΛ', rfl, h1, h2, h3⟩
 ```
 
-**`WickContraction.join_sign`**, a lemma, [line 434](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/QFT/PerturbationTheory/WickContraction/Sign/Join.lean#L434).
+**`WickContraction.join_sign`**, a lemma, [line 434](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/QFT/PerturbationTheory/WickContraction/Sign/Join.lean#L434).
 
 > For a list `φs` of `𝓕.FieldOp`, a grading compliant Wick contraction `φsΛ` of `φs`,
 > and a Wick contraction `φsucΛ` of `[φsΛ]ᵘᶜ`, the following relation holds
@@ -180,7 +180,7 @@ lemma join_sign {φs : List 𝓕.FieldOp} (φsΛ : WickContraction φs.length)
     (join φsΛ φsucΛ).sign = φsΛ.sign * φsucΛ.sign
 ```
 
-**`WickContraction.join_sign_timeContract`**, a lemma, [line 444](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/QFT/PerturbationTheory/WickContraction/Sign/Join.lean#L444).
+**`WickContraction.join_sign_timeContract`**, a lemma, [line 444](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/QFT/PerturbationTheory/WickContraction/Sign/Join.lean#L444).
 
 > For a list `φs` of `𝓕.FieldOp`, a Wick contraction `φsΛ` of `φs`,
 > and a Wick contraction `φsucΛ` of `[φsΛ]ᵘᶜ`,
@@ -201,4 +201,4 @@ lemma join_sign_timeContract {φs : List 𝓕.FieldOp} (φsΛ : WickContraction 
 
 ## Sources
 
-- [Physlib/QFT/PerturbationTheory/WickContraction/Sign/Join.lean at 2a1dfe43](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/QFT/PerturbationTheory/WickContraction/Sign/Join.lean)
+- [Physlib/QFT/PerturbationTheory/WickContraction/Sign/Join.lean at 8c87bdfb](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/QFT/PerturbationTheory/WickContraction/Sign/Join.lean)

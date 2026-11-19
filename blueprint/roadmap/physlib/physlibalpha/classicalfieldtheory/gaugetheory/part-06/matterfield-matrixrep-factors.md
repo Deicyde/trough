@@ -8,7 +8,7 @@ proof: formalized
 
 # The factors of a gauge group as matrix representations
 
-The module `PhyslibAlpha.ClassicalFieldTheory.GaugeTheory.MatterField.MatrixRep.Factors`, [PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/MatterField/MatrixRep/Factors.lean](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/MatterField/MatrixRep/Factors.lean): 4 declarations, 4 with a docstring.
+The module `PhyslibAlpha.ClassicalFieldTheory.GaugeTheory.MatterField.MatrixRep.Factors`, [PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/MatterField/MatrixRep/Factors.lean](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/MatterField/MatrixRep/Factors.lean): 4 declarations, 4 with a docstring.
 
 ## i. Overview
 
@@ -33,7 +33,7 @@ The module `PhyslibAlpha.ClassicalFieldTheory.GaugeTheory.MatterField.MatrixRep.
 
 ## A. Powers of a unitary jet
 
-**`MatterField.pderiv_chargePow`**, a lemma, [line 57](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/MatterField/MatrixRep/Factors.lean#L57).
+**`MatterField.pderiv_chargePow`**, a lemma, [line 57](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/MatterField/MatrixRep/Factors.lean#L57).
 
 > **The derivative of a power of a unitary jet**: `∂_μ (u ^ n) = n · u ^ n · (u⁻¹ ∂_μ u)`,
 > for every integer `n`.
@@ -47,7 +47,7 @@ lemma pderiv_chargePow (n : ℤ) (w : unitary SpaceTimeAlgebra) (μ : Fin 1 ⊕ 
 
 ## B. The charge twist of a `U(1)` factor
 
-**`LocalGaugeData.U1Factor.pderiv_chargePow_u`**, a lemma, [line 105](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/MatterField/MatrixRep/Factors.lean#L105).
+**`LocalGaugeData.U1Factor.pderiv_chargePow_u`**, a lemma, [line 105](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/MatterField/MatrixRep/Factors.lean#L105).
 
 > The derivative of the charge-`n` power of the unitary jet of a gauge jet, in terms of
 > the Maurer–Cartan form: `∂_μ (u ^ n) = -(i n) φJ (ω_μ U) · u ^ n`.
@@ -58,7 +58,7 @@ lemma pderiv_chargePow_u (n : ℤ) (U : GJ) (μ : Fin 1 ⊕ Fin 3) :
       = -(((Complex.I * n) • F.φJ (jets.maurerCartan U μ)) * chargePow n (F.u U))
 ```
 
-**`LocalGaugeData.U1Factor.charge`**, a def, [line 119](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/MatterField/MatrixRep/Factors.lean#L119).
+**`LocalGaugeData.U1Factor.charge`**, a def, [line 119](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/MatterField/MatrixRep/Factors.lean#L119).
 
 > **The charge twist**: a matrix representation twisted by the charge-`n` power of the
 > unitary jet of the `U(1)` factor. The gauge algebra acts by the original action plus
@@ -70,7 +70,7 @@ noncomputable def charge (n : ℤ) (R : MatrixRep jets ι) : MatrixRep jets ι
 
 ## C. The fundamental representation of an `SU(n)` factor
 
-**`LocalGaugeData.SUFactor.fund`**, a def, [line 194](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/MatterField/MatrixRep/Factors.lean#L194).
+**`LocalGaugeData.SUFactor.fund`**, a def, [line 194](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/MatterField/MatrixRep/Factors.lean#L194).
 
 > **The fundamental representation** of an `SU(n)` factor: the gauge jets act by their
 > unitary matrices of jets, the gauge algebra by `i` times its matrix component.
@@ -87,4 +87,4 @@ noncomputable def fund : MatrixRep jets n
 
 ## Sources
 
-- [PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/MatterField/MatrixRep/Factors.lean at 2a1dfe43](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/MatterField/MatrixRep/Factors.lean)
+- [PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/MatterField/MatrixRep/Factors.lean at 8c87bdfb](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/MatterField/MatrixRep/Factors.lean)

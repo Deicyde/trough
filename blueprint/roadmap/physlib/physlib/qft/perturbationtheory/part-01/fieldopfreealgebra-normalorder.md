@@ -8,7 +8,7 @@ proof: formalized
 
 # Normal Ordering in the FieldOpFreeAlgebra
 
-The module `Physlib.QFT.PerturbationTheory.FieldOpFreeAlgebra.NormalOrder`, [Physlib/QFT/PerturbationTheory/FieldOpFreeAlgebra/NormalOrder.lean](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/QFT/PerturbationTheory/FieldOpFreeAlgebra/NormalOrder.lean): 34 declarations, 1 with a docstring.
+The module `Physlib.QFT.PerturbationTheory.FieldOpFreeAlgebra.NormalOrder`, [Physlib/QFT/PerturbationTheory/FieldOpFreeAlgebra/NormalOrder.lean](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/QFT/PerturbationTheory/FieldOpFreeAlgebra/NormalOrder.lean): 34 declarations, 1 with a docstring.
 
 > In the module
 > `Physlib.QFT.PerturbationTheory.FieldSpecification.NormalOrder`
@@ -17,7 +17,7 @@ The module `Physlib.QFT.PerturbationTheory.FieldOpFreeAlgebra.NormalOrder`, [Phy
 >
 > We derive properties of this normal ordering.
 
-**`FieldSpecification.FieldOpFreeAlgebra.normalOrderF`**, a def, [line 46](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/QFT/PerturbationTheory/FieldOpFreeAlgebra/NormalOrder.lean#L46).
+**`FieldSpecification.FieldOpFreeAlgebra.normalOrderF`**, a def, [line 46](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/QFT/PerturbationTheory/FieldOpFreeAlgebra/NormalOrder.lean#L46).
 
 > For a field specification `𝓕`, `normalOrderF` is the linear map
 >
@@ -37,41 +37,41 @@ The module `Physlib.QFT.PerturbationTheory.FieldOpFreeAlgebra.NormalOrder`, [Phy
 def normalOrderF : FieldOpFreeAlgebra 𝓕 →ₗ[ℂ] FieldOpFreeAlgebra 𝓕
 ```
 
-**`FieldSpecification.FieldOpFreeAlgebra.normalOrderF_ofCrAnListF`**, a lemma, [line 53](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/QFT/PerturbationTheory/FieldOpFreeAlgebra/NormalOrder.lean#L53).
+**`FieldSpecification.FieldOpFreeAlgebra.normalOrderF_ofCrAnListF`**, a lemma, [line 53](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/QFT/PerturbationTheory/FieldOpFreeAlgebra/NormalOrder.lean#L53).
 
 ```lean
 lemma normalOrderF_ofCrAnListF (φs : List 𝓕.CrAnFieldOp) :
     𝓝ᶠ(ofCrAnListF φs) = normalOrderSign φs • ofCrAnListF (normalOrderList φs)
 ```
 
-**`FieldSpecification.FieldOpFreeAlgebra.ofCrAnListF_eq_normalOrderF`**, a lemma, [line 57](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/QFT/PerturbationTheory/FieldOpFreeAlgebra/NormalOrder.lean#L57).
+**`FieldSpecification.FieldOpFreeAlgebra.ofCrAnListF_eq_normalOrderF`**, a lemma, [line 57](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/QFT/PerturbationTheory/FieldOpFreeAlgebra/NormalOrder.lean#L57).
 
 ```lean
 lemma ofCrAnListF_eq_normalOrderF (φs : List 𝓕.CrAnFieldOp) :
     ofCrAnListF (normalOrderList φs) = normalOrderSign φs • 𝓝ᶠ(ofCrAnListF φs)
 ```
 
-**`FieldSpecification.FieldOpFreeAlgebra.normalOrderF_one`**, a lemma, [line 62](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/QFT/PerturbationTheory/FieldOpFreeAlgebra/NormalOrder.lean#L62).
+**`FieldSpecification.FieldOpFreeAlgebra.normalOrderF_one`**, a lemma, [line 62](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/QFT/PerturbationTheory/FieldOpFreeAlgebra/NormalOrder.lean#L62).
 
 ```lean
 lemma normalOrderF_one : normalOrderF (𝓕 := 𝓕) 1 = 1
 ```
 
-**`FieldSpecification.FieldOpFreeAlgebra.normalOrderF_normalOrderF_mid`**, a lemma, [line 66](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/QFT/PerturbationTheory/FieldOpFreeAlgebra/NormalOrder.lean#L66).
+**`FieldSpecification.FieldOpFreeAlgebra.normalOrderF_normalOrderF_mid`**, a lemma, [line 66](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/QFT/PerturbationTheory/FieldOpFreeAlgebra/NormalOrder.lean#L66).
 
 ```lean
 lemma normalOrderF_normalOrderF_mid (a b c : 𝓕.FieldOpFreeAlgebra) :
     𝓝ᶠ(a * b * c) = 𝓝ᶠ(a * 𝓝ᶠ(b) * c)
 ```
 
-**`FieldSpecification.FieldOpFreeAlgebra.normalOrderF_normalOrderF_right`**, a lemma, [line 116](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/QFT/PerturbationTheory/FieldOpFreeAlgebra/NormalOrder.lean#L116).
+**`FieldSpecification.FieldOpFreeAlgebra.normalOrderF_normalOrderF_right`**, a lemma, [line 116](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/QFT/PerturbationTheory/FieldOpFreeAlgebra/NormalOrder.lean#L116).
 
 ```lean
 lemma normalOrderF_normalOrderF_right (a b : 𝓕.FieldOpFreeAlgebra) :
     𝓝ᶠ(a * b) = 𝓝ᶠ(a * 𝓝ᶠ(b))
 ```
 
-**`FieldSpecification.FieldOpFreeAlgebra.normalOrderF_normalOrderF_left`**, a lemma, [line 120](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/QFT/PerturbationTheory/FieldOpFreeAlgebra/NormalOrder.lean#L120).
+**`FieldSpecification.FieldOpFreeAlgebra.normalOrderF_normalOrderF_left`**, a lemma, [line 120](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/QFT/PerturbationTheory/FieldOpFreeAlgebra/NormalOrder.lean#L120).
 
 ```lean
 lemma normalOrderF_normalOrderF_left (a b : 𝓕.FieldOpFreeAlgebra) :
@@ -80,7 +80,7 @@ lemma normalOrderF_normalOrderF_left (a b : 𝓕.FieldOpFreeAlgebra) :
 
 ## Normal ordering with a creation operator on the left or annihilation on the right
 
-**`FieldSpecification.FieldOpFreeAlgebra.normalOrderF_ofCrAnListF_cons_create`**, a lemma, [line 130](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/QFT/PerturbationTheory/FieldOpFreeAlgebra/NormalOrder.lean#L130).
+**`FieldSpecification.FieldOpFreeAlgebra.normalOrderF_ofCrAnListF_cons_create`**, a lemma, [line 130](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/QFT/PerturbationTheory/FieldOpFreeAlgebra/NormalOrder.lean#L130).
 
 ```lean
 lemma normalOrderF_ofCrAnListF_cons_create (φ : 𝓕.CrAnFieldOp)
@@ -88,7 +88,7 @@ lemma normalOrderF_ofCrAnListF_cons_create (φ : 𝓕.CrAnFieldOp)
     𝓝ᶠ(ofCrAnListF (φ :: φs)) = ofCrAnOpF φ * 𝓝ᶠ(ofCrAnListF φs)
 ```
 
-**`FieldSpecification.FieldOpFreeAlgebra.normalOrderF_create_mul`**, a lemma, [line 137](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/QFT/PerturbationTheory/FieldOpFreeAlgebra/NormalOrder.lean#L137).
+**`FieldSpecification.FieldOpFreeAlgebra.normalOrderF_create_mul`**, a lemma, [line 137](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/QFT/PerturbationTheory/FieldOpFreeAlgebra/NormalOrder.lean#L137).
 
 ```lean
 lemma normalOrderF_create_mul (φ : 𝓕.CrAnFieldOp)
@@ -96,7 +96,7 @@ lemma normalOrderF_create_mul (φ : 𝓕.CrAnFieldOp)
     𝓝ᶠ(ofCrAnOpF φ * a) = ofCrAnOpF φ * 𝓝ᶠ(a)
 ```
 
-**`FieldSpecification.FieldOpFreeAlgebra.normalOrderF_ofCrAnListF_append_annihilate`**, a lemma, [line 147](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/QFT/PerturbationTheory/FieldOpFreeAlgebra/NormalOrder.lean#L147).
+**`FieldSpecification.FieldOpFreeAlgebra.normalOrderF_ofCrAnListF_append_annihilate`**, a lemma, [line 147](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/QFT/PerturbationTheory/FieldOpFreeAlgebra/NormalOrder.lean#L147).
 
 ```lean
 lemma normalOrderF_ofCrAnListF_append_annihilate (φ : 𝓕.CrAnFieldOp)
@@ -104,7 +104,7 @@ lemma normalOrderF_ofCrAnListF_append_annihilate (φ : 𝓕.CrAnFieldOp)
     𝓝ᶠ(ofCrAnListF (φs ++ [φ])) = 𝓝ᶠ(ofCrAnListF φs) * ofCrAnOpF φ
 ```
 
-**`FieldSpecification.FieldOpFreeAlgebra.normalOrderF_mul_annihilate`**, a lemma, [line 154](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/QFT/PerturbationTheory/FieldOpFreeAlgebra/NormalOrder.lean#L154).
+**`FieldSpecification.FieldOpFreeAlgebra.normalOrderF_mul_annihilate`**, a lemma, [line 154](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/QFT/PerturbationTheory/FieldOpFreeAlgebra/NormalOrder.lean#L154).
 
 ```lean
 lemma normalOrderF_mul_annihilate (φ : 𝓕.CrAnFieldOp)
@@ -112,7 +112,7 @@ lemma normalOrderF_mul_annihilate (φ : 𝓕.CrAnFieldOp)
     (a : FieldOpFreeAlgebra 𝓕) : 𝓝ᶠ(a * ofCrAnOpF φ) = 𝓝ᶠ(a) * ofCrAnOpF φ
 ```
 
-**`FieldSpecification.FieldOpFreeAlgebra.normalOrderF_crPartF_mul`**, a lemma, [line 165](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/QFT/PerturbationTheory/FieldOpFreeAlgebra/NormalOrder.lean#L165).
+**`FieldSpecification.FieldOpFreeAlgebra.normalOrderF_crPartF_mul`**, a lemma, [line 165](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/QFT/PerturbationTheory/FieldOpFreeAlgebra/NormalOrder.lean#L165).
 
 ```lean
 lemma normalOrderF_crPartF_mul (φ : 𝓕.FieldOp) (a : FieldOpFreeAlgebra 𝓕) :
@@ -120,7 +120,7 @@ lemma normalOrderF_crPartF_mul (φ : 𝓕.FieldOp) (a : FieldOpFreeAlgebra 𝓕)
     crPartF φ * 𝓝ᶠ(a)
 ```
 
-**`FieldSpecification.FieldOpFreeAlgebra.normalOrderF_mul_anPartF`**, a lemma, [line 172](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/QFT/PerturbationTheory/FieldOpFreeAlgebra/NormalOrder.lean#L172).
+**`FieldSpecification.FieldOpFreeAlgebra.normalOrderF_mul_anPartF`**, a lemma, [line 172](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/QFT/PerturbationTheory/FieldOpFreeAlgebra/NormalOrder.lean#L172).
 
 ```lean
 lemma normalOrderF_mul_anPartF (φ : 𝓕.FieldOp) (a : FieldOpFreeAlgebra 𝓕) :
@@ -132,7 +132,7 @@ lemma normalOrderF_mul_anPartF (φ : 𝓕.FieldOp) (a : FieldOpFreeAlgebra 𝓕)
 
 > The main result of this section is `normalOrderF_superCommuteF_annihilate_create`.
 
-**`FieldSpecification.FieldOpFreeAlgebra.normalOrderF_swap_create_annihilate_ofCrAnListF_ofCrAnListF`**, a lemma, [line 186](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/QFT/PerturbationTheory/FieldOpFreeAlgebra/NormalOrder.lean#L186).
+**`FieldSpecification.FieldOpFreeAlgebra.normalOrderF_swap_create_annihilate_ofCrAnListF_ofCrAnListF`**, a lemma, [line 186](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/QFT/PerturbationTheory/FieldOpFreeAlgebra/NormalOrder.lean#L186).
 
 ```lean
 lemma normalOrderF_swap_create_annihilate_ofCrAnListF_ofCrAnListF (φc φa : 𝓕.CrAnFieldOp)
@@ -142,7 +142,7 @@ lemma normalOrderF_swap_create_annihilate_ofCrAnListF_ofCrAnListF (φc φa : �
     𝓝ᶠ(ofCrAnListF φs' * ofCrAnOpF φa * ofCrAnOpF φc * ofCrAnListF φs)
 ```
 
-**`FieldSpecification.FieldOpFreeAlgebra.normalOrderF_swap_create_annihilate_ofCrAnListF`**, a lemma, [line 197](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/QFT/PerturbationTheory/FieldOpFreeAlgebra/NormalOrder.lean#L197).
+**`FieldSpecification.FieldOpFreeAlgebra.normalOrderF_swap_create_annihilate_ofCrAnListF`**, a lemma, [line 197](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/QFT/PerturbationTheory/FieldOpFreeAlgebra/NormalOrder.lean#L197).
 
 ```lean
 lemma normalOrderF_swap_create_annihilate_ofCrAnListF (φc φa : 𝓕.CrAnFieldOp)
@@ -152,7 +152,7 @@ lemma normalOrderF_swap_create_annihilate_ofCrAnListF (φc φa : 𝓕.CrAnFieldO
     𝓝ᶠ(ofCrAnListF φs * ofCrAnOpF φa * ofCrAnOpF φc * a)
 ```
 
-**`FieldSpecification.FieldOpFreeAlgebra.normalOrderF_swap_create_annihilate`**, a lemma, [line 211](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/QFT/PerturbationTheory/FieldOpFreeAlgebra/NormalOrder.lean#L211).
+**`FieldSpecification.FieldOpFreeAlgebra.normalOrderF_swap_create_annihilate`**, a lemma, [line 211](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/QFT/PerturbationTheory/FieldOpFreeAlgebra/NormalOrder.lean#L211).
 
 ```lean
 lemma normalOrderF_swap_create_annihilate (φc φa : 𝓕.CrAnFieldOp)
@@ -162,7 +162,7 @@ lemma normalOrderF_swap_create_annihilate (φc φa : 𝓕.CrAnFieldOp)
     𝓝ᶠ(a * ofCrAnOpF φa * ofCrAnOpF φc * b)
 ```
 
-**`FieldSpecification.FieldOpFreeAlgebra.normalOrderF_superCommuteF_create_annihilate`**, a lemma, [line 226](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/QFT/PerturbationTheory/FieldOpFreeAlgebra/NormalOrder.lean#L226).
+**`FieldSpecification.FieldOpFreeAlgebra.normalOrderF_superCommuteF_create_annihilate`**, a lemma, [line 226](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/QFT/PerturbationTheory/FieldOpFreeAlgebra/NormalOrder.lean#L226).
 
 ```lean
 lemma normalOrderF_superCommuteF_create_annihilate (φc φa : 𝓕.CrAnFieldOp)
@@ -171,7 +171,7 @@ lemma normalOrderF_superCommuteF_create_annihilate (φc φa : 𝓕.CrAnFieldOp)
     𝓝ᶠ(a * [ofCrAnOpF φc, ofCrAnOpF φa]ₛF * b) = 0
 ```
 
-**`FieldSpecification.FieldOpFreeAlgebra.normalOrderF_superCommuteF_annihilate_create`**, a lemma, [line 235](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/QFT/PerturbationTheory/FieldOpFreeAlgebra/NormalOrder.lean#L235).
+**`FieldSpecification.FieldOpFreeAlgebra.normalOrderF_superCommuteF_annihilate_create`**, a lemma, [line 235](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/QFT/PerturbationTheory/FieldOpFreeAlgebra/NormalOrder.lean#L235).
 
 ```lean
 lemma normalOrderF_superCommuteF_annihilate_create (φc φa : 𝓕.CrAnFieldOp)
@@ -180,7 +180,7 @@ lemma normalOrderF_superCommuteF_annihilate_create (φc φa : 𝓕.CrAnFieldOp)
     𝓝ᶠ(a * [ofCrAnOpF φa, ofCrAnOpF φc]ₛF * b) = 0
 ```
 
-**`FieldSpecification.FieldOpFreeAlgebra.normalOrderF_swap_crPartF_anPartF`**, a lemma, [line 242](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/QFT/PerturbationTheory/FieldOpFreeAlgebra/NormalOrder.lean#L242).
+**`FieldSpecification.FieldOpFreeAlgebra.normalOrderF_swap_crPartF_anPartF`**, a lemma, [line 242](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/QFT/PerturbationTheory/FieldOpFreeAlgebra/NormalOrder.lean#L242).
 
 ```lean
 lemma normalOrderF_swap_crPartF_anPartF (φ φ' : 𝓕.FieldOp) (a b : FieldOpFreeAlgebra 𝓕) :
@@ -193,7 +193,7 @@ lemma normalOrderF_swap_crPartF_anPartF (φ φ' : 𝓕.FieldOp) (a b : FieldOpFr
 
 > Using the results from above.
 
-**`FieldSpecification.FieldOpFreeAlgebra.normalOrderF_swap_anPartF_crPartF`**, a lemma, [line 261](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/QFT/PerturbationTheory/FieldOpFreeAlgebra/NormalOrder.lean#L261).
+**`FieldSpecification.FieldOpFreeAlgebra.normalOrderF_swap_anPartF_crPartF`**, a lemma, [line 261](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/QFT/PerturbationTheory/FieldOpFreeAlgebra/NormalOrder.lean#L261).
 
 ```lean
 lemma normalOrderF_swap_anPartF_crPartF (φ φ' : 𝓕.FieldOp) (a b : FieldOpFreeAlgebra 𝓕) :
@@ -202,7 +202,7 @@ lemma normalOrderF_swap_anPartF_crPartF (φ φ' : 𝓕.FieldOp) (a b : FieldOpFr
       (anPartF φ) * b)
 ```
 
-**`FieldSpecification.FieldOpFreeAlgebra.normalOrderF_superCommuteF_crPartF_anPartF`**, a lemma, [line 267](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/QFT/PerturbationTheory/FieldOpFreeAlgebra/NormalOrder.lean#L267).
+**`FieldSpecification.FieldOpFreeAlgebra.normalOrderF_superCommuteF_crPartF_anPartF`**, a lemma, [line 267](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/QFT/PerturbationTheory/FieldOpFreeAlgebra/NormalOrder.lean#L267).
 
 ```lean
 lemma normalOrderF_superCommuteF_crPartF_anPartF (φ φ' : 𝓕.FieldOp) (a b : FieldOpFreeAlgebra 𝓕) :
@@ -210,7 +210,7 @@ lemma normalOrderF_superCommuteF_crPartF_anPartF (φ φ' : 𝓕.FieldOp) (a b : 
       (crPartF φ) (anPartF φ') * b) = 0
 ```
 
-**`FieldSpecification.FieldOpFreeAlgebra.normalOrderF_superCommuteF_anPartF_crPartF`**, a lemma, [line 277](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/QFT/PerturbationTheory/FieldOpFreeAlgebra/NormalOrder.lean#L277).
+**`FieldSpecification.FieldOpFreeAlgebra.normalOrderF_superCommuteF_anPartF_crPartF`**, a lemma, [line 277](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/QFT/PerturbationTheory/FieldOpFreeAlgebra/NormalOrder.lean#L277).
 
 ```lean
 lemma normalOrderF_superCommuteF_anPartF_crPartF (φ φ' : 𝓕.FieldOp) (a b : FieldOpFreeAlgebra 𝓕) :
@@ -220,7 +220,7 @@ lemma normalOrderF_superCommuteF_anPartF_crPartF (φ φ' : 𝓕.FieldOp) (a b : 
 
 ## The normal ordering of a product of two states
 
-**`FieldSpecification.FieldOpFreeAlgebra.normalOrderF_crPartF_mul_crPartF`**, a lemma, [line 294](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/QFT/PerturbationTheory/FieldOpFreeAlgebra/NormalOrder.lean#L294).
+**`FieldSpecification.FieldOpFreeAlgebra.normalOrderF_crPartF_mul_crPartF`**, a lemma, [line 294](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/QFT/PerturbationTheory/FieldOpFreeAlgebra/NormalOrder.lean#L294).
 
 ```lean
 lemma normalOrderF_crPartF_mul_crPartF (φ φ' : 𝓕.FieldOp) :
@@ -228,7 +228,7 @@ lemma normalOrderF_crPartF_mul_crPartF (φ φ' : 𝓕.FieldOp) :
     crPartF φ * crPartF φ'
 ```
 
-**`FieldSpecification.FieldOpFreeAlgebra.normalOrderF_anPartF_mul_anPartF`**, a lemma, [line 301](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/QFT/PerturbationTheory/FieldOpFreeAlgebra/NormalOrder.lean#L301).
+**`FieldSpecification.FieldOpFreeAlgebra.normalOrderF_anPartF_mul_anPartF`**, a lemma, [line 301](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/QFT/PerturbationTheory/FieldOpFreeAlgebra/NormalOrder.lean#L301).
 
 ```lean
 lemma normalOrderF_anPartF_mul_anPartF (φ φ' : 𝓕.FieldOp) :
@@ -236,7 +236,7 @@ lemma normalOrderF_anPartF_mul_anPartF (φ φ' : 𝓕.FieldOp) :
     anPartF φ * anPartF φ'
 ```
 
-**`FieldSpecification.FieldOpFreeAlgebra.normalOrderF_crPartF_mul_anPartF`**, a lemma, [line 308](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/QFT/PerturbationTheory/FieldOpFreeAlgebra/NormalOrder.lean#L308).
+**`FieldSpecification.FieldOpFreeAlgebra.normalOrderF_crPartF_mul_anPartF`**, a lemma, [line 308](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/QFT/PerturbationTheory/FieldOpFreeAlgebra/NormalOrder.lean#L308).
 
 ```lean
 lemma normalOrderF_crPartF_mul_anPartF (φ φ' : 𝓕.FieldOp) :
@@ -244,7 +244,7 @@ lemma normalOrderF_crPartF_mul_anPartF (φ φ' : 𝓕.FieldOp) :
     crPartF φ * anPartF φ'
 ```
 
-**`FieldSpecification.FieldOpFreeAlgebra.normalOrderF_anPartF_mul_crPartF`**, a lemma, [line 315](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/QFT/PerturbationTheory/FieldOpFreeAlgebra/NormalOrder.lean#L315).
+**`FieldSpecification.FieldOpFreeAlgebra.normalOrderF_anPartF_mul_crPartF`**, a lemma, [line 315](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/QFT/PerturbationTheory/FieldOpFreeAlgebra/NormalOrder.lean#L315).
 
 ```lean
 lemma normalOrderF_anPartF_mul_crPartF (φ φ' : 𝓕.FieldOp) :
@@ -253,7 +253,7 @@ lemma normalOrderF_anPartF_mul_crPartF (φ φ' : 𝓕.FieldOp) :
     (crPartF φ' * anPartF φ)
 ```
 
-**`FieldSpecification.FieldOpFreeAlgebra.normalOrderF_ofFieldOpF_mul_ofFieldOpF`**, a lemma, [line 321](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/QFT/PerturbationTheory/FieldOpFreeAlgebra/NormalOrder.lean#L321).
+**`FieldSpecification.FieldOpFreeAlgebra.normalOrderF_ofFieldOpF_mul_ofFieldOpF`**, a lemma, [line 321](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/QFT/PerturbationTheory/FieldOpFreeAlgebra/NormalOrder.lean#L321).
 
 ```lean
 lemma normalOrderF_ofFieldOpF_mul_ofFieldOpF (φ φ' : 𝓕.FieldOp) :
@@ -267,7 +267,7 @@ lemma normalOrderF_ofFieldOpF_mul_ofFieldOpF (φ φ' : 𝓕.FieldOp) :
 
 ## Normal order with super commutators
 
-**`FieldSpecification.FieldOpFreeAlgebra.normalOrderF_superCommuteF_ofCrAnListF_create_create_ofCrAnListF`**, a lemma, [line 341](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/QFT/PerturbationTheory/FieldOpFreeAlgebra/NormalOrder.lean#L341).
+**`FieldSpecification.FieldOpFreeAlgebra.normalOrderF_superCommuteF_ofCrAnListF_create_create_ofCrAnListF`**, a lemma, [line 341](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/QFT/PerturbationTheory/FieldOpFreeAlgebra/NormalOrder.lean#L341).
 
 ```lean
 lemma normalOrderF_superCommuteF_ofCrAnListF_create_create_ofCrAnListF
@@ -279,7 +279,7 @@ lemma normalOrderF_superCommuteF_ofCrAnListF_create_create_ofCrAnListF
       ofCrAnListF (createFilter φs') * ofCrAnListF (annihilateFilter (φs ++ φs')))
 ```
 
-**`FieldSpecification.FieldOpFreeAlgebra.normalOrderF_superCommuteF_ofCrAnListF_annihilate_annihilate_ofCrAnListF`**, a lemma, [line 400](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/QFT/PerturbationTheory/FieldOpFreeAlgebra/NormalOrder.lean#L400).
+**`FieldSpecification.FieldOpFreeAlgebra.normalOrderF_superCommuteF_ofCrAnListF_annihilate_annihilate_ofCrAnListF`**, a lemma, [line 400](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/QFT/PerturbationTheory/FieldOpFreeAlgebra/NormalOrder.lean#L400).
 
 ```lean
 lemma normalOrderF_superCommuteF_ofCrAnListF_annihilate_annihilate_ofCrAnListF
@@ -296,7 +296,7 @@ lemma normalOrderF_superCommuteF_ofCrAnListF_annihilate_annihilate_ofCrAnListF
 
 ## Super commutators involving a normal order.
 
-**`FieldSpecification.FieldOpFreeAlgebra.ofCrAnListF_superCommuteF_normalOrderF_ofCrAnListF`**, a lemma, [line 474](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/QFT/PerturbationTheory/FieldOpFreeAlgebra/NormalOrder.lean#L474).
+**`FieldSpecification.FieldOpFreeAlgebra.ofCrAnListF_superCommuteF_normalOrderF_ofCrAnListF`**, a lemma, [line 474](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/QFT/PerturbationTheory/FieldOpFreeAlgebra/NormalOrder.lean#L474).
 
 ```lean
 lemma ofCrAnListF_superCommuteF_normalOrderF_ofCrAnListF (φs φs' : List 𝓕.CrAnFieldOp) :
@@ -305,7 +305,7 @@ lemma ofCrAnListF_superCommuteF_normalOrderF_ofCrAnListF (φs φs' : List 𝓕.C
     𝓢(𝓕 |>ₛ φs, 𝓕 |>ₛ φs') • 𝓝ᶠ(ofCrAnListF φs') * ofCrAnListF φs
 ```
 
-**`FieldSpecification.FieldOpFreeAlgebra.ofCrAnListF_superCommuteF_normalOrderF_ofFieldOpListF`**, a lemma, [line 482](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/QFT/PerturbationTheory/FieldOpFreeAlgebra/NormalOrder.lean#L482).
+**`FieldSpecification.FieldOpFreeAlgebra.ofCrAnListF_superCommuteF_normalOrderF_ofFieldOpListF`**, a lemma, [line 482](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/QFT/PerturbationTheory/FieldOpFreeAlgebra/NormalOrder.lean#L482).
 
 ```lean
 lemma ofCrAnListF_superCommuteF_normalOrderF_ofFieldOpListF (φs : List 𝓕.CrAnFieldOp)
@@ -316,7 +316,7 @@ lemma ofCrAnListF_superCommuteF_normalOrderF_ofFieldOpListF (φs : List 𝓕.CrA
 
 ## Multiplications with normal order written in terms of super commute.
 
-**`FieldSpecification.FieldOpFreeAlgebra.ofCrAnListF_mul_normalOrderF_ofFieldOpListF_eq_superCommuteF`**, a lemma, [line 499](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/QFT/PerturbationTheory/FieldOpFreeAlgebra/NormalOrder.lean#L499).
+**`FieldSpecification.FieldOpFreeAlgebra.ofCrAnListF_mul_normalOrderF_ofFieldOpListF_eq_superCommuteF`**, a lemma, [line 499](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/QFT/PerturbationTheory/FieldOpFreeAlgebra/NormalOrder.lean#L499).
 
 ```lean
 lemma ofCrAnListF_mul_normalOrderF_ofFieldOpListF_eq_superCommuteF (φs : List 𝓕.CrAnFieldOp)
@@ -326,7 +326,7 @@ lemma ofCrAnListF_mul_normalOrderF_ofFieldOpListF_eq_superCommuteF (φs : List �
     + [ofCrAnListF φs, 𝓝ᶠ(ofFieldOpListF φs')]ₛF
 ```
 
-**`FieldSpecification.FieldOpFreeAlgebra.ofCrAnOpF_mul_normalOrderF_ofFieldOpListF_eq_superCommuteF`**, a lemma, [line 506](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/QFT/PerturbationTheory/FieldOpFreeAlgebra/NormalOrder.lean#L506).
+**`FieldSpecification.FieldOpFreeAlgebra.ofCrAnOpF_mul_normalOrderF_ofFieldOpListF_eq_superCommuteF`**, a lemma, [line 506](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/QFT/PerturbationTheory/FieldOpFreeAlgebra/NormalOrder.lean#L506).
 
 ```lean
 lemma ofCrAnOpF_mul_normalOrderF_ofFieldOpListF_eq_superCommuteF (φ : 𝓕.CrAnFieldOp)
@@ -335,7 +335,7 @@ lemma ofCrAnOpF_mul_normalOrderF_ofFieldOpListF_eq_superCommuteF (φ : 𝓕.CrAn
     + [ofCrAnOpF φ, 𝓝ᶠ(ofFieldOpListF φs')]ₛF
 ```
 
-**`FieldSpecification.FieldOpFreeAlgebra.anPartF_mul_normalOrderF_ofFieldOpListF_eq_superCommuteF`**, a lemma, [line 513](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/QFT/PerturbationTheory/FieldOpFreeAlgebra/NormalOrder.lean#L513).
+**`FieldSpecification.FieldOpFreeAlgebra.anPartF_mul_normalOrderF_ofFieldOpListF_eq_superCommuteF`**, a lemma, [line 513](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/QFT/PerturbationTheory/FieldOpFreeAlgebra/NormalOrder.lean#L513).
 
 ```lean
 lemma anPartF_mul_normalOrderF_ofFieldOpListF_eq_superCommuteF (φ : 𝓕.FieldOp)
@@ -352,4 +352,4 @@ lemma anPartF_mul_normalOrderF_ofFieldOpListF_eq_superCommuteF (φ : 𝓕.FieldO
 
 ## Sources
 
-- [Physlib/QFT/PerturbationTheory/FieldOpFreeAlgebra/NormalOrder.lean at 2a1dfe43](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/QFT/PerturbationTheory/FieldOpFreeAlgebra/NormalOrder.lean)
+- [Physlib/QFT/PerturbationTheory/FieldOpFreeAlgebra/NormalOrder.lean at 8c87bdfb](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/QFT/PerturbationTheory/FieldOpFreeAlgebra/NormalOrder.lean)

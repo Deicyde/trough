@@ -8,7 +8,7 @@ proof: formalized
 
 # Vacuum states and creation-operator words
 
-The module `PhyslibAlpha.Mathematics.LadderSystem.Vacuum`, [PhyslibAlpha/Mathematics/LadderSystem/Vacuum.lean](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Mathematics/LadderSystem/Vacuum.lean): 17 declarations, 14 with a docstring.
+The module `PhyslibAlpha.Mathematics.LadderSystem.Vacuum`, [PhyslibAlpha/Mathematics/LadderSystem/Vacuum.lean](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Mathematics/LadderSystem/Vacuum.lean): 17 declarations, 14 with a docstring.
 
 > Vacuum states of a ladder system, creation-operator words, and the `n`-particle sector.
 
@@ -41,7 +41,7 @@ The module `PhyslibAlpha.Mathematics.LadderSystem.Vacuum`, [PhyslibAlpha/Mathema
 
 ## A. Vacuum states
 
-**`LadderSystem.HasVacuum`**, a structure, [line 65](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Mathematics/LadderSystem/Vacuum.lean#L65).
+**`LadderSystem.HasVacuum`**, a structure, [line 65](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Mathematics/LadderSystem/Vacuum.lean#L65).
 
 > A vacuum: a nonzero vector killed by every annihilation operator.
 
@@ -55,7 +55,7 @@ structure HasVacuum (Ω : V) : Prop where
 
 ## B. Words
 
-**`LadderSystem.word`**, a def, [line 80](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Mathematics/LadderSystem/Vacuum.lean#L80).
+**`LadderSystem.word`**, a def, [line 80](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Mathematics/LadderSystem/Vacuum.lean#L80).
 
 > A word of creation operators applied to a fixed vector.
 
@@ -63,14 +63,14 @@ structure HasVacuum (Ω : V) : Prop where
 def word (L : LadderSystem K V d) (v : List (Fin d)) (x : V) : V
 ```
 
-**`LadderSystem.word_cons`**, a lemma, [line 83](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Mathematics/LadderSystem/Vacuum.lean#L83).
+**`LadderSystem.word_cons`**, a lemma, [line 83](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Mathematics/LadderSystem/Vacuum.lean#L83).
 
 ```lean
 lemma word_cons (L : LadderSystem K V d) (i : Fin d) (v : List (Fin d)) (x : V) :
     L.word (i :: v) x = L.ac i (L.word v x)
 ```
 
-**`LadderSystem.word_perm`**, a lemma, [line 88](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Mathematics/LadderSystem/Vacuum.lean#L88).
+**`LadderSystem.word_perm`**, a lemma, [line 88](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Mathematics/LadderSystem/Vacuum.lean#L88).
 
 > A word depends only on the multiset of colors it represents, not their order.
 
@@ -79,7 +79,7 @@ lemma word_perm (L : LadderSystem K V d) {v v' : List (Fin d)} (h : v.Perm v') (
     L.word v x = L.word v' x
 ```
 
-**`LadderSystem.word_peel`**, a lemma, [line 102](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Mathematics/LadderSystem/Vacuum.lean#L102).
+**`LadderSystem.word_peel`**, a lemma, [line 102](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Mathematics/LadderSystem/Vacuum.lean#L102).
 
 > Peeling: `a i` applied to a word removes one occurrence of color `i`, scaled by its count.
 
@@ -88,7 +88,7 @@ lemma word_peel (L : LadderSystem K V d) (i : Fin d) {x : V} (hx : L.a i x = 0) 
     ∀ v : List (Fin d), L.a i (L.word v x) = (v.count i) • L.word (v.erase i) x
 ```
 
-**`LadderSystem.E_word`**, a lemma, [line 132](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Mathematics/LadderSystem/Vacuum.lean#L132).
+**`LadderSystem.E_word`**, a lemma, [line 132](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Mathematics/LadderSystem/Vacuum.lean#L132).
 
 > How `E i j` acts on a word: removes one occurrence of `j`, adds one of `i`, scaled by `j`'s
 > count.
@@ -99,7 +99,7 @@ lemma E_word (L : LadderSystem K V d) {x : V} (hx : ∀ i, L.a i x = 0) (i j : F
     (L.E i j) (L.word v x) = (v.count j) • L.word (i :: v.erase j) x
 ```
 
-**`LadderSystem.N_word`**, a lemma, [line 139](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Mathematics/LadderSystem/Vacuum.lean#L139).
+**`LadderSystem.N_word`**, a lemma, [line 139](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Mathematics/LadderSystem/Vacuum.lean#L139).
 
 > Words are eigenvectors of the number operator, with eigenvalue their own color count.
 
@@ -110,7 +110,7 @@ lemma N_word (L : LadderSystem K V d) {x : V} (hx : ∀ i, L.a i x = 0) (i : Fin
 
 ## C. The excitation-number sector
 
-**`LadderSystem.countWord`**, a def, [line 154](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Mathematics/LadderSystem/Vacuum.lean#L154).
+**`LadderSystem.countWord`**, a def, [line 154](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Mathematics/LadderSystem/Vacuum.lean#L154).
 
 > The canonical word representing a count function `α`: `α c` copies of color `c`, in
 > increasing order.
@@ -119,7 +119,7 @@ lemma N_word (L : LadderSystem K V d) {x : V} (hx : ∀ i, L.a i x = 0) (i : Fin
 def countWord (d : ℕ) (α : Fin d → ℕ) : List (Fin d)
 ```
 
-**`LadderSystem.count_countWord`**, a lemma, [line 158](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Mathematics/LadderSystem/Vacuum.lean#L158).
+**`LadderSystem.count_countWord`**, a lemma, [line 158](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Mathematics/LadderSystem/Vacuum.lean#L158).
 
 > `countWord α` has exactly `α i` copies of color `i`.
 
@@ -128,7 +128,7 @@ lemma count_countWord {d : ℕ} (α : Fin d → ℕ) (i : Fin d) :
     (countWord d α).count i = α i
 ```
 
-**`LadderSystem.sum_count_eq_length`**, a lemma, [line 184](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Mathematics/LadderSystem/Vacuum.lean#L184).
+**`LadderSystem.sum_count_eq_length`**, a lemma, [line 184](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Mathematics/LadderSystem/Vacuum.lean#L184).
 
 > A word's length is the sum of its per-color counts.
 
@@ -136,7 +136,7 @@ lemma count_countWord {d : ℕ} (α : Fin d → ℕ) (i : Fin d) :
 lemma sum_count_eq_length {d : ℕ} : ∀ v : List (Fin d), (∑ c : Fin d, v.count c) = v.length
 ```
 
-**`LadderSystem.vacuumSpan`**, a def, [line 200](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Mathematics/LadderSystem/Vacuum.lean#L200).
+**`LadderSystem.vacuumSpan`**, a def, [line 200](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Mathematics/LadderSystem/Vacuum.lean#L200).
 
 > The `n`-th excitation-number sector generated by a vacuum: the span of all length-`n`
 > creation words.
@@ -145,14 +145,14 @@ lemma sum_count_eq_length {d : ℕ} : ∀ v : List (Fin d), (∑ c : Fin d, v.co
 def vacuumSpan (L : LadderSystem K V d) (Ω : V) (n : ℕ) : Submodule K V
 ```
 
-**`LadderSystem.exists_ofFn_eq_of_length_eq`**, a lemma, [line 203](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Mathematics/LadderSystem/Vacuum.lean#L203).
+**`LadderSystem.exists_ofFn_eq_of_length_eq`**, a lemma, [line 203](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Mathematics/LadderSystem/Vacuum.lean#L203).
 
 ```lean
 lemma exists_ofFn_eq_of_length_eq {l : List (Fin d)} {n : ℕ} (h : l.length = n) :
     ∃ w : Fin n → Fin d, List.ofFn w = l
 ```
 
-**`LadderSystem.word_mem_vacuumSpan_of_length_eq`**, a lemma, [line 211](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Mathematics/LadderSystem/Vacuum.lean#L211).
+**`LadderSystem.word_mem_vacuumSpan_of_length_eq`**, a lemma, [line 211](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Mathematics/LadderSystem/Vacuum.lean#L211).
 
 > Any word of the right length lies in `vacuumSpan`.
 
@@ -163,7 +163,7 @@ lemma word_mem_vacuumSpan_of_length_eq (L : LadderSystem K V d) (Ω : V) {n : �
 
 ### C.1. `gl(d)`-invariance
 
-**`LadderSystem.forall_toGlHomLinear_mem_of_forall_E_mem`**, a lemma, [line 224](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Mathematics/LadderSystem/Vacuum.lean#L224).
+**`LadderSystem.forall_toGlHomLinear_mem_of_forall_E_mem`**, a lemma, [line 224](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Mathematics/LadderSystem/Vacuum.lean#L224).
 
 > `E`-invariance of a submodule extends to full `gl(d)`-invariance, by linearity off the
 > matrix-unit basis.
@@ -174,7 +174,7 @@ lemma forall_toGlHomLinear_mem_of_forall_E_mem (L : LadderSystem K V d) {W : Sub
     (hw : w ∈ W) : L.toGlHomLinear x w ∈ W
 ```
 
-**`LadderSystem.E_mem_vacuumSpan`**, a lemma, [line 240](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Mathematics/LadderSystem/Vacuum.lean#L240).
+**`LadderSystem.E_mem_vacuumSpan`**, a lemma, [line 240](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Mathematics/LadderSystem/Vacuum.lean#L240).
 
 > `vacuumSpan` is closed under every `gl(d)` generator `E i j`. Unconditional: no
 > `FiniteDimensional`/spanning hypothesis on the ambient `V` is used or needed.
@@ -184,7 +184,7 @@ lemma E_mem_vacuumSpan (L : LadderSystem K V d) {Ω : V} (P : L.HasVacuum Ω) (n
     (i j : Fin d) : ∀ v ∈ vacuumSpan L Ω n, (L.E i j) v ∈ vacuumSpan L Ω n
 ```
 
-**`LadderSystem.vacuumSpanLieSubmodule`**, a def, [line 261](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Mathematics/LadderSystem/Vacuum.lean#L261).
+**`LadderSystem.vacuumSpanLieSubmodule`**, a def, [line 261](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Mathematics/LadderSystem/Vacuum.lean#L261).
 
 > `vacuumSpan`, bundled as a genuine `gl(d)` Lie submodule.
 
@@ -194,7 +194,7 @@ def vacuumSpanLieSubmodule (L : LadderSystem K V d) {Ω : V} (P : L.HasVacuum Ω
     LieSubmodule K (Matrix (Fin d) (Fin d) K) V
 ```
 
-**`LadderSystem.coe_vacuumSpanLieSubmodule`**, a lemma, [line 272](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Mathematics/LadderSystem/Vacuum.lean#L272).
+**`LadderSystem.coe_vacuumSpanLieSubmodule`**, a lemma, [line 272](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Mathematics/LadderSystem/Vacuum.lean#L272).
 
 ```lean
 lemma coe_vacuumSpanLieSubmodule (L : LadderSystem K V d) {Ω : V} (P : L.HasVacuum Ω)
@@ -207,4 +207,4 @@ lemma coe_vacuumSpanLieSubmodule (L : LadderSystem K V d) {Ω : V} (P : L.HasVac
 
 ## Sources
 
-- [PhyslibAlpha/Mathematics/LadderSystem/Vacuum.lean at 2a1dfe43](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Mathematics/LadderSystem/Vacuum.lean)
+- [PhyslibAlpha/Mathematics/LadderSystem/Vacuum.lean at 8c87bdfb](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Mathematics/LadderSystem/Vacuum.lean)

@@ -8,7 +8,7 @@ proof: formalized
 
 # Positive-definite transforms of measures on a Pontryagin dual
 
-The module `PhyslibAlpha.Mathematics.TauCeti.Analysis.PositiveDefinite.PontryaginMeasure`, [PhyslibAlpha/Mathematics/TauCeti/Analysis/PositiveDefinite/PontryaginMeasure.lean](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Mathematics/TauCeti/Analysis/PositiveDefinite/PontryaginMeasure.lean): 2 declarations, 2 with a docstring.
+The module `PhyslibAlpha.Mathematics.TauCeti.Analysis.PositiveDefinite.PontryaginMeasure`, [PhyslibAlpha/Mathematics/TauCeti/Analysis/PositiveDefinite/PontryaginMeasure.lean](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Mathematics/TauCeti/Analysis/PositiveDefinite/PontryaginMeasure.lean): 2 declarations, 2 with a docstring.
 
 > Integration of characters against a finite positive measure gives a positive-definite function on an
 > additive topological group.
@@ -29,7 +29,7 @@ The module `PhyslibAlpha.Mathematics.TauCeti.Analysis.PositiveDefinite.Pontryagi
 
 ## A. Development
 
-**`MeasureTheory.FiniteMeasure.isPositiveDefiniteSub_pontryaginMeasureTransform`**, a lemma, [line 51](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Mathematics/TauCeti/Analysis/PositiveDefinite/PontryaginMeasure.lean#L51).
+**`MeasureTheory.FiniteMeasure.isPositiveDefiniteSub_pontryaginMeasureTransform`**, a lemma, [line 51](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Mathematics/TauCeti/Analysis/PositiveDefinite/PontryaginMeasure.lean#L51).
 
 > The transform of a finite positive measure on the dual is positive definite.
 
@@ -39,7 +39,7 @@ lemma _root_.MeasureTheory.FiniteMeasure.isPositiveDefiniteSub_pontryaginMeasure
     IsPositiveDefiniteSub μ.pontryaginMeasureTransform
 ```
 
-**`MeasureTheory.FiniteMeasure.norm_pontryaginMeasureTransform_le`**, a lemma, [line 80](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Mathematics/TauCeti/Analysis/PositiveDefinite/PontryaginMeasure.lean#L80).
+**`MeasureTheory.FiniteMeasure.norm_pontryaginMeasureTransform_le`**, a lemma, [line 80](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Mathematics/TauCeti/Analysis/PositiveDefinite/PontryaginMeasure.lean#L80).
 
 > The absolute value of a measure transform is bounded by the measure's total mass.
 
@@ -60,4 +60,4 @@ lemma _root_.MeasureTheory.FiniteMeasure.norm_pontryaginMeasureTransform_le
 
 ## Sources
 
-- [PhyslibAlpha/Mathematics/TauCeti/Analysis/PositiveDefinite/PontryaginMeasure.lean at 2a1dfe43](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Mathematics/TauCeti/Analysis/PositiveDefinite/PontryaginMeasure.lean)
+- [PhyslibAlpha/Mathematics/TauCeti/Analysis/PositiveDefinite/PontryaginMeasure.lean at 8c87bdfb](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Mathematics/TauCeti/Analysis/PositiveDefinite/PontryaginMeasure.lean)

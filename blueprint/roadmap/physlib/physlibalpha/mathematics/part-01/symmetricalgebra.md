@@ -8,7 +8,7 @@ proof: formalized
 
 # Functoriality of the symmetric algebra
 
-The module `PhyslibAlpha.Mathematics.SymmetricAlgebra`, [PhyslibAlpha/Mathematics/SymmetricAlgebra.lean](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Mathematics/SymmetricAlgebra.lean): 32 declarations, 16 with a docstring.
+The module `PhyslibAlpha.Mathematics.SymmetricAlgebra`, [PhyslibAlpha/Mathematics/SymmetricAlgebra.lean](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Mathematics/SymmetricAlgebra.lean): 32 declarations, 16 with a docstring.
 
 ## i. Overview
 
@@ -46,7 +46,7 @@ The module `PhyslibAlpha.Mathematics.SymmetricAlgebra`, [PhyslibAlpha/Mathematic
 > identifying it with the one a `CommRing`/`AddCommGroup` statement produces is blocked by
 > the unexposed `TensorAlgebra.symRingCon`.
 
-**`SymmetricAlgebra.map`**, a def, [line 74](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Mathematics/SymmetricAlgebra.lean#L74).
+**`SymmetricAlgebra.map`**, a def, [line 74](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Mathematics/SymmetricAlgebra.lean#L74).
 
 > The algebra homomorphism between symmetric algebras induced by a linear map of the
 > underlying modules.
@@ -55,26 +55,26 @@ The module `PhyslibAlpha.Mathematics.SymmetricAlgebra`, [PhyslibAlpha/Mathematic
 def map (f : M →ₗ[R] N) : SymmetricAlgebra R M →ₐ[R] SymmetricAlgebra R N
 ```
 
-**`SymmetricAlgebra.map_apply_ι`**, a lemma, [line 78](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Mathematics/SymmetricAlgebra.lean#L78).
+**`SymmetricAlgebra.map_apply_ι`**, a lemma, [line 78](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Mathematics/SymmetricAlgebra.lean#L78).
 
 ```lean
 lemma map_apply_ι (f : M →ₗ[R] N) (x : M) : map f (ι R M x) = ι R N (f x)
 ```
 
-**`SymmetricAlgebra.map_id`**, a lemma, [line 82](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Mathematics/SymmetricAlgebra.lean#L82).
+**`SymmetricAlgebra.map_id`**, a lemma, [line 82](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Mathematics/SymmetricAlgebra.lean#L82).
 
 ```lean
 lemma map_id : map (LinearMap.id : M →ₗ[R] M) = AlgHom.id R (SymmetricAlgebra R M)
 ```
 
-**`SymmetricAlgebra.map_comp_map`**, a lemma, [line 85](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Mathematics/SymmetricAlgebra.lean#L85).
+**`SymmetricAlgebra.map_comp_map`**, a lemma, [line 85](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Mathematics/SymmetricAlgebra.lean#L85).
 
 ```lean
 lemma map_comp_map (f : N →ₗ[R] P) (g : M →ₗ[R] N) :
     (map f).comp (map g) = map (f ∘ₗ g)
 ```
 
-**`SymmetricAlgebra.congr`**, a def, [line 91](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Mathematics/SymmetricAlgebra.lean#L91).
+**`SymmetricAlgebra.congr`**, a def, [line 91](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Mathematics/SymmetricAlgebra.lean#L91).
 
 > The algebra equivalence between symmetric algebras induced by a linear equivalence of
 > the underlying modules.
@@ -83,7 +83,7 @@ lemma map_comp_map (f : N →ₗ[R] P) (g : M →ₗ[R] N) :
 def congr (e : M ≃ₗ[R] N) : SymmetricAlgebra R M ≃ₐ[R] SymmetricAlgebra R N
 ```
 
-**`SymmetricAlgebra.congr_apply_ι`**, a lemma, [line 97](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Mathematics/SymmetricAlgebra.lean#L97).
+**`SymmetricAlgebra.congr_apply_ι`**, a lemma, [line 97](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Mathematics/SymmetricAlgebra.lean#L97).
 
 ```lean
 lemma congr_apply_ι (e : M ≃ₗ[R] N) (x : M) : congr e (ι R M x) = ι R N (e x)
@@ -91,7 +91,7 @@ lemma congr_apply_ι (e : M ≃ₗ[R] N) (x : M) : congr e (ι R M x) = ι R N (
 
 ## B. Generation by the degree-one elements
 
-**`SymmetricAlgebra.adjoin_range_ι`**, a lemma, [line 120](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Mathematics/SymmetricAlgebra.lean#L120).
+**`SymmetricAlgebra.adjoin_range_ι`**, a lemma, [line 120](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Mathematics/SymmetricAlgebra.lean#L120).
 
 > The symmetric algebra is generated, as an `R`-algebra, by the degree-one elements.
 > Only a commutative semiring of scalars and a module are needed, so that the statement
@@ -109,7 +109,7 @@ lemma adjoin_range_ι :
 > summands. Unlike the exterior-algebra analogue this is the *ordinary* tensor product: the
 > generators of the two factors commute, as bosonic generators must.
 
-**`SymmetricAlgebra.prodToTensor`**, a def, [line 147](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Mathematics/SymmetricAlgebra.lean#L147).
+**`SymmetricAlgebra.prodToTensor`**, a def, [line 147](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Mathematics/SymmetricAlgebra.lean#L147).
 
 > The forward half of `prodEquiv`: a generator `(m, n)` is sent to
 > `ι m ⊗ 1 + 1 ⊗ ι n`.
@@ -119,7 +119,7 @@ noncomputable def prodToTensor :
     SymmetricAlgebra R (M × N) →ₐ[R] SymmetricAlgebra R M ⊗[R] SymmetricAlgebra R N
 ```
 
-**`SymmetricAlgebra.prodToTensor_ι`**, a lemma, [line 154](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Mathematics/SymmetricAlgebra.lean#L154).
+**`SymmetricAlgebra.prodToTensor_ι`**, a lemma, [line 154](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Mathematics/SymmetricAlgebra.lean#L154).
 
 ```lean
 lemma prodToTensor_ι (x : M × N) :
@@ -127,7 +127,7 @@ lemma prodToTensor_ι (x : M × N) :
       = ι R M x.1 ⊗ₜ[R] 1 + (1 : SymmetricAlgebra R M) ⊗ₜ[R] ι R N x.2
 ```
 
-**`SymmetricAlgebra.tensorToProd`**, a def, [line 161](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Mathematics/SymmetricAlgebra.lean#L161).
+**`SymmetricAlgebra.tensorToProd`**, a def, [line 161](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Mathematics/SymmetricAlgebra.lean#L161).
 
 > The backward half of `prodEquiv`: the two inclusions of the factors, multiplied
 > together.
@@ -137,14 +137,14 @@ noncomputable def tensorToProd :
     SymmetricAlgebra R M ⊗[R] SymmetricAlgebra R N →ₐ[R] SymmetricAlgebra R (M × N)
 ```
 
-**`SymmetricAlgebra.tensorToProd_tmul`**, a lemma, [line 167](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Mathematics/SymmetricAlgebra.lean#L167).
+**`SymmetricAlgebra.tensorToProd_tmul`**, a lemma, [line 167](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Mathematics/SymmetricAlgebra.lean#L167).
 
 ```lean
 lemma tensorToProd_tmul (a : SymmetricAlgebra R M) (b : SymmetricAlgebra R N) :
     tensorToProd (a ⊗ₜ[R] b) = map (LinearMap.inl R M N) a * map (LinearMap.inr R M N) b
 ```
 
-**`SymmetricAlgebra.prodEquiv`**, a def, [line 175](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Mathematics/SymmetricAlgebra.lean#L175).
+**`SymmetricAlgebra.prodEquiv`**, a def, [line 175](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Mathematics/SymmetricAlgebra.lean#L175).
 
 > **The symmetric algebra of a direct sum is the tensor product of the symmetric
 > algebras.** Two bosonic fields taken together are one field valued in the direct sum of
@@ -156,7 +156,7 @@ noncomputable def prodEquiv :
     SymmetricAlgebra R (M × N) ≃ₐ[R] SymmetricAlgebra R M ⊗[R] SymmetricAlgebra R N
 ```
 
-**`SymmetricAlgebra.prodEquiv_ι`**, a lemma, [line 197](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Mathematics/SymmetricAlgebra.lean#L197).
+**`SymmetricAlgebra.prodEquiv_ι`**, a lemma, [line 197](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Mathematics/SymmetricAlgebra.lean#L197).
 
 ```lean
 lemma prodEquiv_ι (x : M × N) :
@@ -171,7 +171,7 @@ lemma prodEquiv_ι (x : M × N) :
 > by lifting the generator map `ι x ↦ (ι x, ι (d x))` to an algebra homomorphism into the
 > trivial square-zero extension and taking the second component.
 
-**`SymmetricAlgebra.derivationHom`**, a def, [line 220](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Mathematics/SymmetricAlgebra.lean#L220).
+**`SymmetricAlgebra.derivationHom`**, a def, [line 220](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Mathematics/SymmetricAlgebra.lean#L220).
 
 > The lift of the derivation extending `d` to the trivial square-zero extension of the
 > symmetric algebra: the algebra homomorphism `x ↦ (x, derivationOfLinear d x)`.
@@ -182,14 +182,14 @@ noncomputable def derivationHom :
       TrivSqZeroExt (SymmetricAlgebra R M) (SymmetricAlgebra R M)
 ```
 
-**`SymmetricAlgebra.derivationHom_ι`**, a lemma, [line 229](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Mathematics/SymmetricAlgebra.lean#L229).
+**`SymmetricAlgebra.derivationHom_ι`**, a lemma, [line 229](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Mathematics/SymmetricAlgebra.lean#L229).
 
 ```lean
 lemma derivationHom_ι (x : M) :
     derivationHom d (ι R M x) = (ι R M x, ι R M (d x))
 ```
 
-**`SymmetricAlgebra.derivationHom_fst`**, a lemma, [line 235](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Mathematics/SymmetricAlgebra.lean#L235).
+**`SymmetricAlgebra.derivationHom_fst`**, a lemma, [line 235](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Mathematics/SymmetricAlgebra.lean#L235).
 
 > The first component of the square-zero lift is the identity.
 
@@ -197,7 +197,7 @@ lemma derivationHom_ι (x : M) :
 lemma derivationHom_fst (x : SymmetricAlgebra R M) : (derivationHom d x).fst = x
 ```
 
-**`SymmetricAlgebra.derivationOfLinear`**, a def, [line 243](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Mathematics/SymmetricAlgebra.lean#L243).
+**`SymmetricAlgebra.derivationOfLinear`**, a def, [line 243](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Mathematics/SymmetricAlgebra.lean#L243).
 
 > **The derivation of the symmetric algebra extending a linear endomorphism** `d` of `M`:
 > the map obeying the Leibniz rule whose value on a generator `ι x` is `ι (d x)`.
@@ -206,27 +206,27 @@ lemma derivationHom_fst (x : SymmetricAlgebra R M) : (derivationHom d x).fst = x
 noncomputable def derivationOfLinear : SymmetricAlgebra R M →ₗ[R] SymmetricAlgebra R M
 ```
 
-**`SymmetricAlgebra.derivationOfLinear_ι`**, a lemma, [line 249](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Mathematics/SymmetricAlgebra.lean#L249).
+**`SymmetricAlgebra.derivationOfLinear_ι`**, a lemma, [line 249](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Mathematics/SymmetricAlgebra.lean#L249).
 
 ```lean
 lemma derivationOfLinear_ι (x : M) :
     derivationOfLinear d (ι R M x) = ι R M (d x)
 ```
 
-**`SymmetricAlgebra.derivationOfLinear_one`**, a lemma, [line 256](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Mathematics/SymmetricAlgebra.lean#L256).
+**`SymmetricAlgebra.derivationOfLinear_one`**, a lemma, [line 256](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Mathematics/SymmetricAlgebra.lean#L256).
 
 ```lean
 lemma derivationOfLinear_one : derivationOfLinear d (1 : SymmetricAlgebra R M) = 0
 ```
 
-**`SymmetricAlgebra.derivationOfLinear_algebraMap`**, a lemma, [line 260](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Mathematics/SymmetricAlgebra.lean#L260).
+**`SymmetricAlgebra.derivationOfLinear_algebraMap`**, a lemma, [line 260](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Mathematics/SymmetricAlgebra.lean#L260).
 
 ```lean
 lemma derivationOfLinear_algebraMap (r : R) :
     derivationOfLinear d (algebraMap R (SymmetricAlgebra R M) r) = 0
 ```
 
-**`SymmetricAlgebra.derivationOfLinear_mul`**, a lemma, [line 265](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Mathematics/SymmetricAlgebra.lean#L265).
+**`SymmetricAlgebra.derivationOfLinear_mul`**, a lemma, [line 265](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Mathematics/SymmetricAlgebra.lean#L265).
 
 > The Leibniz rule for the derivation extending `d`.
 
@@ -236,7 +236,7 @@ lemma derivationOfLinear_mul (x y : SymmetricAlgebra R M) :
       = derivationOfLinear d x * y + x * derivationOfLinear d y
 ```
 
-**`SymmetricAlgebra.derivationOfLinear_comm_apply`**, a lemma, [line 276](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Mathematics/SymmetricAlgebra.lean#L276).
+**`SymmetricAlgebra.derivationOfLinear_comm_apply`**, a lemma, [line 276](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Mathematics/SymmetricAlgebra.lean#L276).
 
 > Derivations extending commuting endomorphisms commute.
 
@@ -247,7 +247,7 @@ lemma derivationOfLinear_comm_apply {d₁ d₂ : M →ₗ[R] M} (h : d₁ ∘ₗ
       = derivationOfLinear d₂ (derivationOfLinear d₁ x)
 ```
 
-**`SymmetricAlgebra.algHom_derivationOfLinear`**, a lemma, [line 294](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Mathematics/SymmetricAlgebra.lean#L294).
+**`SymmetricAlgebra.algHom_derivationOfLinear`**, a lemma, [line 294](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Mathematics/SymmetricAlgebra.lean#L294).
 
 > An algebra map carries one derivation to the other when the linear map it is
 > determined by on the generators intertwines the two endomorphisms. The hypotheses are
@@ -264,7 +264,7 @@ lemma algHom_derivationOfLinear
 
 ## E. The representation extending a representation on the generators
 
-**`Representation.symmetricAlgebra`**, a def, [line 328](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Mathematics/SymmetricAlgebra.lean#L328).
+**`Representation.symmetricAlgebra`**, a def, [line 328](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Mathematics/SymmetricAlgebra.lean#L328).
 
 > The representation on the symmetric algebra extending a representation on the
 > generators: the substitution homomorphism determined by the action on the generators.
@@ -278,7 +278,7 @@ noncomputable def symmetricAlgebra (ρ : Representation R G M) :
     Representation R G (SymmetricAlgebra R M)
 ```
 
-**`Representation.symmetricAlgebraAlgHom`**, a def, [line 347](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Mathematics/SymmetricAlgebra.lean#L347).
+**`Representation.symmetricAlgebraAlgHom`**, a def, [line 347](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Mathematics/SymmetricAlgebra.lean#L347).
 
 > The action of a group element, as an algebra homomorphism.
 
@@ -287,7 +287,7 @@ noncomputable def symmetricAlgebraAlgHom (ρ : Representation R G M) (g : G) :
     SymmetricAlgebra R M →ₐ[R] SymmetricAlgebra R M
 ```
 
-**`Representation.symmetricAlgebra_apply`**, a lemma, [line 351](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Mathematics/SymmetricAlgebra.lean#L351).
+**`Representation.symmetricAlgebra_apply`**, a lemma, [line 351](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Mathematics/SymmetricAlgebra.lean#L351).
 
 ```lean
 lemma symmetricAlgebra_apply (ρ : Representation R G M) (g : G)
@@ -295,7 +295,7 @@ lemma symmetricAlgebra_apply (ρ : Representation R G M) (g : G)
     ρ.symmetricAlgebra g x = ρ.symmetricAlgebraAlgHom g x
 ```
 
-**`Representation.symmetricAlgebra_ι`**, a lemma, [line 356](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Mathematics/SymmetricAlgebra.lean#L356).
+**`Representation.symmetricAlgebra_ι`**, a lemma, [line 356](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Mathematics/SymmetricAlgebra.lean#L356).
 
 ```lean
 lemma symmetricAlgebra_ι (ρ : Representation R G M) (g : G) (x : M) :
@@ -303,14 +303,14 @@ lemma symmetricAlgebra_ι (ρ : Representation R G M) (g : G) (x : M) :
       = SymmetricAlgebra.ι R M (ρ g x)
 ```
 
-**`Representation.symmetricAlgebra_apply_one`**, a lemma, [line 362](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Mathematics/SymmetricAlgebra.lean#L362).
+**`Representation.symmetricAlgebra_apply_one`**, a lemma, [line 362](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Mathematics/SymmetricAlgebra.lean#L362).
 
 ```lean
 lemma symmetricAlgebra_apply_one (ρ : Representation R G M) (g : G) :
     ρ.symmetricAlgebra g (1 : SymmetricAlgebra R M) = 1
 ```
 
-**`Representation.symmetricAlgebra_apply_mul`**, a lemma, [line 366](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Mathematics/SymmetricAlgebra.lean#L366).
+**`Representation.symmetricAlgebra_apply_mul`**, a lemma, [line 366](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Mathematics/SymmetricAlgebra.lean#L366).
 
 ```lean
 lemma symmetricAlgebra_apply_mul (ρ : Representation R G M) (g : G)
@@ -319,7 +319,7 @@ lemma symmetricAlgebra_apply_mul (ρ : Representation R G M) (g : G)
       = ρ.symmetricAlgebra g x * ρ.symmetricAlgebra g y
 ```
 
-**`Representation.symmetricAlgebra_algebraMap`**, a lemma, [line 372](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Mathematics/SymmetricAlgebra.lean#L372).
+**`Representation.symmetricAlgebra_algebraMap`**, a lemma, [line 372](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Mathematics/SymmetricAlgebra.lean#L372).
 
 ```lean
 lemma symmetricAlgebra_algebraMap (ρ : Representation R G M) (g : G) (r : R) :
@@ -327,7 +327,7 @@ lemma symmetricAlgebra_algebraMap (ρ : Representation R G M) (g : G) (r : R) :
       = algebraMap R (SymmetricAlgebra R M) r
 ```
 
-**`SymmetricAlgebra.symmetricAlgebra_derivationOfLinear`**, a lemma, [line 389](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Mathematics/SymmetricAlgebra.lean#L389).
+**`SymmetricAlgebra.symmetricAlgebra_derivationOfLinear`**, a lemma, [line 389](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Mathematics/SymmetricAlgebra.lean#L389).
 
 > Covariance of the derivation under the representation. If the representation
 > carries each endomorphism of a family into a combination of the others on the generators,
@@ -344,7 +344,7 @@ lemma symmetricAlgebra_derivationOfLinear {G κ : Type*} [Monoid G] [Fintype κ]
       = ∑ a, c a • derivationOfLinear (d a) (ρ.symmetricAlgebra g y)
 ```
 
-**`SymmetricAlgebra.algHom_symmetricAlgebra`**, a lemma, [line 419](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Mathematics/SymmetricAlgebra.lean#L419).
+**`SymmetricAlgebra.algHom_symmetricAlgebra`**, a lemma, [line 419](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Mathematics/SymmetricAlgebra.lean#L419).
 
 > An algebra map carries one representation to the other when the linear map it is
 > determined by on the generators intertwines the two representations on them. Unlike the
@@ -367,4 +367,4 @@ Its declarations' statements use no declaration of another module with an articl
 
 ## Sources
 
-- [PhyslibAlpha/Mathematics/SymmetricAlgebra.lean at 2a1dfe43](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Mathematics/SymmetricAlgebra.lean)
+- [PhyslibAlpha/Mathematics/SymmetricAlgebra.lean at 8c87bdfb](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Mathematics/SymmetricAlgebra.lean)

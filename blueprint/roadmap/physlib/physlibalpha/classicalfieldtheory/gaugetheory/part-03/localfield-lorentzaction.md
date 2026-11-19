@@ -8,7 +8,7 @@ proof: formalized
 
 # The Lorentz action on the local field algebra
 
-The module `PhyslibAlpha.ClassicalFieldTheory.GaugeTheory.LocalField.LorentzAction`, [PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/LocalField/LorentzAction.lean](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/LocalField/LorentzAction.lean): 20 declarations, 11 with a docstring.
+The module `PhyslibAlpha.ClassicalFieldTheory.GaugeTheory.LocalField.LorentzAction`, [PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/LocalField/LorentzAction.lean](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/LocalField/LorentzAction.lean): 20 declarations, 11 with a docstring.
 
 ## i. Overview
 
@@ -36,7 +36,7 @@ The module `PhyslibAlpha.ClassicalFieldTheory.GaugeTheory.LocalField.LorentzActi
 
 ## A. The Lorentz assignment of a transformation
 
-**`GaugeFieldData.lorentzConnection`**, a def, [line 63](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/LocalField/LorentzAction.lean#L63).
+**`GaugeFieldData.lorentzConnection`**, a def, [line 63](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/LocalField/LorentzAction.lean#L63).
 
 > The connection generators after a Lorentz transformation: the gauge-only action on the
 > degree-one element, included into the local field algebra.
@@ -46,7 +46,7 @@ noncomputable def lorentzConnection (Λ : SL(2,ℂ)) :
     GaugeBoson.JetComponentSpace 𝔤 →ₗ[ℝ] T.LocalFieldAlgebra
 ```
 
-**`GaugeFieldData.lorentzAssignment`**, a def, [line 74](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/LocalField/LorentzAction.lean#L74).
+**`GaugeFieldData.lorentzAssignment`**, a def, [line 74](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/LocalField/LorentzAction.lean#L74).
 
 > The assignment of the generators defining the action of a Lorentz transformation: each
 > matter species acts on its own component functions, the connection generators through
@@ -58,7 +58,7 @@ noncomputable def lorentzAssignment (Λ : SL(2,ℂ)) : T.Assignment T.LocalField
 
 ## B. The action of a transformation
 
-**`GaugeFieldData.repLorentzAlgHom`**, a def, [line 94](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/LocalField/LorentzAction.lean#L94).
+**`GaugeFieldData.repLorentzAlgHom`**, a def, [line 94](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/LocalField/LorentzAction.lean#L94).
 
 > The action of a Lorentz transformation on the local field algebra, as an algebra
 > endomorphism: the lift of its Lorentz assignment.
@@ -68,7 +68,7 @@ noncomputable def repLorentzAlgHom (Λ : SL(2,ℂ)) :
     T.LocalFieldAlgebra →ₐ[ℂ] T.LocalFieldAlgebra
 ```
 
-**`GaugeFieldData.repLorentzAlgHom_ιFermion`**, a lemma, [line 101](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/LocalField/LorentzAction.lean#L101).
+**`GaugeFieldData.repLorentzAlgHom_ιFermion`**, a lemma, [line 101](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/LocalField/LorentzAction.lean#L101).
 
 ```lean
 lemma repLorentzAlgHom_ιFermion (Λ : SL(2,ℂ)) (i : T.FermionSpecies)
@@ -77,7 +77,7 @@ lemma repLorentzAlgHom_ιFermion (Λ : SL(2,ℂ)) (i : T.FermionSpecies)
       = T.ιFermion i (JetComponentSpace.repLorentzGroup (T.fermion i) Λ x)
 ```
 
-**`GaugeFieldData.repLorentzAlgHom_ιBoson`**, a lemma, [line 108](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/LocalField/LorentzAction.lean#L108).
+**`GaugeFieldData.repLorentzAlgHom_ιBoson`**, a lemma, [line 108](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/LocalField/LorentzAction.lean#L108).
 
 ```lean
 lemma repLorentzAlgHom_ιBoson (Λ : SL(2,ℂ)) (j : T.BosonSpecies)
@@ -86,7 +86,7 @@ lemma repLorentzAlgHom_ιBoson (Λ : SL(2,ℂ)) (j : T.BosonSpecies)
       = T.ιBoson j (JetComponentSpace.repLorentzGroup (T.boson j) Λ y)
 ```
 
-**`GaugeFieldData.repLorentzAlgHom_ιConnection`**, a lemma, [line 115](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/LocalField/LorentzAction.lean#L115).
+**`GaugeFieldData.repLorentzAlgHom_ιConnection`**, a lemma, [line 115](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/LocalField/LorentzAction.lean#L115).
 
 ```lean
 lemma repLorentzAlgHom_ιConnection (Λ : SL(2,ℂ)) (v : GaugeBoson.JetComponentSpace 𝔤) :
@@ -97,7 +97,7 @@ lemma repLorentzAlgHom_ιConnection (Λ : SL(2,ℂ)) (v : GaugeBoson.JetComponen
 
 ## C. The action on the connection factor
 
-**`GaugeFieldData.repLorentzAlgHom_comp_includeConnection`**, a lemma, [line 130](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/LocalField/LorentzAction.lean#L130).
+**`GaugeFieldData.repLorentzAlgHom_comp_includeConnection`**, a lemma, [line 130](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/LocalField/LorentzAction.lean#L130).
 
 > The action of a Lorentz transformation restricts to the complexified gauge-only action
 > on the connection factor, as an equation of algebra maps out of the complexified
@@ -109,7 +109,7 @@ lemma repLorentzAlgHom_comp_includeConnection (Λ : SL(2,ℂ)) :
       = T.includeConnection.comp (LocalGaugeFieldAlgebra.complexRepLorentzGroupAlgHom 𝔤 Λ)
 ```
 
-**`GaugeFieldData.repLorentzAlgHom_includeConnection`**, a lemma, [line 140](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/LocalField/LorentzAction.lean#L140).
+**`GaugeFieldData.repLorentzAlgHom_includeConnection`**, a lemma, [line 140](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/LocalField/LorentzAction.lean#L140).
 
 > The action of a Lorentz transformation restricts to the complexified gauge-only action
 > on the connection factor.
@@ -120,7 +120,7 @@ lemma repLorentzAlgHom_includeConnection (Λ : SL(2,ℂ)) (y : ℂ ⊗[ℝ] Loca
       = T.includeConnection (LocalGaugeFieldAlgebra.complexRepLorentzGroup 𝔤 Λ y)
 ```
 
-**`GaugeFieldData.repLorentzAlgHom_includeConnection_one_tmul`**, a lemma, [line 148](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/LocalField/LorentzAction.lean#L148).
+**`GaugeFieldData.repLorentzAlgHom_includeConnection_one_tmul`**, a lemma, [line 148](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/LocalField/LorentzAction.lean#L148).
 
 > On the real gauge-only algebra, included, a Lorentz transformation acts through the
 > gauge-only action.
@@ -133,7 +133,7 @@ lemma repLorentzAlgHom_includeConnection_one_tmul (Λ : SL(2,ℂ)) (x : LocalGau
 
 ## D. The representation
 
-**`GaugeFieldData.repLorentzAlgHom_one`**, a lemma, [line 160](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/LocalField/LorentzAction.lean#L160).
+**`GaugeFieldData.repLorentzAlgHom_one`**, a lemma, [line 160](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/LocalField/LorentzAction.lean#L160).
 
 > The identity transformation acts as the identity.
 
@@ -141,7 +141,7 @@ lemma repLorentzAlgHom_includeConnection_one_tmul (Λ : SL(2,ℂ)) (x : LocalGau
 lemma repLorentzAlgHom_one : T.repLorentzAlgHom 1 = AlgHom.id ℂ T.LocalFieldAlgebra
 ```
 
-**`GaugeFieldData.repLorentzAlgHom_mul`**, a lemma, [line 168](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/LocalField/LorentzAction.lean#L168).
+**`GaugeFieldData.repLorentzAlgHom_mul`**, a lemma, [line 168](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/LocalField/LorentzAction.lean#L168).
 
 > The action of a product of transformations is the composite of the actions.
 
@@ -150,7 +150,7 @@ lemma repLorentzAlgHom_mul (Λ₁ Λ₂ : SL(2,ℂ)) :
     T.repLorentzAlgHom (Λ₁ * Λ₂) = (T.repLorentzAlgHom Λ₁).comp (T.repLorentzAlgHom Λ₂)
 ```
 
-**`GaugeFieldData.repLorentzGroup`**, a def, [line 185](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/LocalField/LorentzAction.lean#L185).
+**`GaugeFieldData.repLorentzGroup`**, a def, [line 185](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/LocalField/LorentzAction.lean#L185).
 
 > The action of the Lorentz group on the local field algebra.
 
@@ -158,28 +158,28 @@ lemma repLorentzAlgHom_mul (Λ₁ Λ₂ : SL(2,ℂ)) :
 noncomputable def repLorentzGroup : Representation ℂ SL(2,ℂ) T.LocalFieldAlgebra
 ```
 
-**`GaugeFieldData.repLorentzGroup_apply`**, a lemma, [line 192](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/LocalField/LorentzAction.lean#L192).
+**`GaugeFieldData.repLorentzGroup_apply`**, a lemma, [line 192](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/LocalField/LorentzAction.lean#L192).
 
 ```lean
 lemma repLorentzGroup_apply (Λ : SL(2,ℂ)) (x : T.LocalFieldAlgebra) :
     T.repLorentzGroup Λ x = T.repLorentzAlgHom Λ x
 ```
 
-**`GaugeFieldData.repLorentzGroup_apply_mul`**, a lemma, [line 195](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/LocalField/LorentzAction.lean#L195).
+**`GaugeFieldData.repLorentzGroup_apply_mul`**, a lemma, [line 195](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/LocalField/LorentzAction.lean#L195).
 
 ```lean
 lemma repLorentzGroup_apply_mul (Λ : SL(2,ℂ)) (x y : T.LocalFieldAlgebra) :
     T.repLorentzGroup Λ (x * y) = T.repLorentzGroup Λ x * T.repLorentzGroup Λ y
 ```
 
-**`GaugeFieldData.repLorentzGroup_apply_one`**, a lemma, [line 199](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/LocalField/LorentzAction.lean#L199).
+**`GaugeFieldData.repLorentzGroup_apply_one`**, a lemma, [line 199](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/LocalField/LorentzAction.lean#L199).
 
 ```lean
 lemma repLorentzGroup_apply_one (Λ : SL(2,ℂ)) :
     T.repLorentzGroup Λ (1 : T.LocalFieldAlgebra) = 1
 ```
 
-**`GaugeFieldData.repLorentzGroup_ιFermion`**, a lemma, [line 204](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/LocalField/LorentzAction.lean#L204).
+**`GaugeFieldData.repLorentzGroup_ιFermion`**, a lemma, [line 204](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/LocalField/LorentzAction.lean#L204).
 
 ```lean
 lemma repLorentzGroup_ιFermion (Λ : SL(2,ℂ)) (i : T.FermionSpecies)
@@ -188,7 +188,7 @@ lemma repLorentzGroup_ιFermion (Λ : SL(2,ℂ)) (i : T.FermionSpecies)
       = T.ιFermion i (JetComponentSpace.repLorentzGroup (T.fermion i) Λ x)
 ```
 
-**`GaugeFieldData.repLorentzGroup_ιBoson`**, a lemma, [line 211](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/LocalField/LorentzAction.lean#L211).
+**`GaugeFieldData.repLorentzGroup_ιBoson`**, a lemma, [line 211](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/LocalField/LorentzAction.lean#L211).
 
 ```lean
 lemma repLorentzGroup_ιBoson (Λ : SL(2,ℂ)) (j : T.BosonSpecies)
@@ -197,7 +197,7 @@ lemma repLorentzGroup_ιBoson (Λ : SL(2,ℂ)) (j : T.BosonSpecies)
       = T.ιBoson j (JetComponentSpace.repLorentzGroup (T.boson j) Λ y)
 ```
 
-**`GaugeFieldData.repLorentzGroup_ιConnection`**, a lemma, [line 218](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/LocalField/LorentzAction.lean#L218).
+**`GaugeFieldData.repLorentzGroup_ιConnection`**, a lemma, [line 218](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/LocalField/LorentzAction.lean#L218).
 
 ```lean
 lemma repLorentzGroup_ιConnection (Λ : SL(2,ℂ)) (v : GaugeBoson.JetComponentSpace 𝔤) :
@@ -206,7 +206,7 @@ lemma repLorentzGroup_ιConnection (Λ : SL(2,ℂ)) (v : GaugeBoson.JetComponent
           LocalGaugeFieldAlgebra.repLorentzGroup 𝔤 Λ (SymmetricAlgebra.ι ℝ _ v))
 ```
 
-**`GaugeFieldData.repLorentzGroup_includeConnection`**, a lemma, [line 226](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/LocalField/LorentzAction.lean#L226).
+**`GaugeFieldData.repLorentzGroup_includeConnection`**, a lemma, [line 226](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/LocalField/LorentzAction.lean#L226).
 
 > The Lorentz action restricts to the complexified gauge-only action on the connection
 > factor.
@@ -217,7 +217,7 @@ lemma repLorentzGroup_includeConnection (Λ : SL(2,ℂ)) (y : ℂ ⊗[ℝ] Local
       = T.includeConnection (LocalGaugeFieldAlgebra.complexRepLorentzGroup 𝔤 Λ y)
 ```
 
-**`GaugeFieldData.repLorentzGroup_ιConnection_eq`**, a lemma, [line 235](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/LocalField/LorentzAction.lean#L235).
+**`GaugeFieldData.repLorentzGroup_ιConnection_eq`**, a lemma, [line 235](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/LocalField/LorentzAction.lean#L235).
 
 > The Lorentz law of the connection generators: a transformation carries a connection
 > generator to the generator of the transformed component, with no shift. This is the
@@ -236,4 +236,4 @@ lemma repLorentzGroup_ιConnection_eq (Λ : SL(2,ℂ)) (v : GaugeBoson.JetCompon
 
 ## Sources
 
-- [PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/LocalField/LorentzAction.lean at 2a1dfe43](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/LocalField/LorentzAction.lean)
+- [PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/LocalField/LorentzAction.lean at 8c87bdfb](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/LocalField/LorentzAction.lean)

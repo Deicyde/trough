@@ -8,7 +8,7 @@ proof: formalized
 
 # The `pseudo` attribute
 
-The module `Physlib.Meta.Linters.Pseudo`, [Physlib/Meta/Linters/Pseudo.lean](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/Meta/Linters/Pseudo.lean): 2 declarations, 2 with a docstring.
+The module `Physlib.Meta.Linters.Pseudo`, [Physlib/Meta/Linters/Pseudo.lean](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Meta/Linters/Pseudo.lean): 2 declarations, 2 with a docstring.
 
 > The attribute marking declarations which depend on the `Lean.ofReduceBool` axiom.
 
@@ -30,7 +30,7 @@ The module `Physlib.Meta.Linters.Pseudo`, [Physlib/Meta/Linters/Pseudo.lean](htt
 
 ## A. The `pseudo` environment extension
 
-**`PseudoInfo`**, a structure, [line 49](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/Meta/Linters/Pseudo.lean#L49).
+**`PseudoInfo`**, a structure, [line 49](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Meta/Linters/Pseudo.lean#L49).
 
 > The information stored for a declaration marked with `pseudo`.
 
@@ -40,7 +40,7 @@ structure PseudoInfo where
   name : Name
 ```
 
-**`addPseudofulEntry`**, a def, [line 63](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/Meta/Linters/Pseudo.lean#L63).
+**`addPseudofulEntry`**, a def, [line 63](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Meta/Linters/Pseudo.lean#L63).
 
 > Adds an entry to `pseudoExtension`.
 
@@ -57,4 +57,4 @@ Its declarations' statements use no declaration of another module with an articl
 
 ## Sources
 
-- [Physlib/Meta/Linters/Pseudo.lean at 2a1dfe43](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/Meta/Linters/Pseudo.lean)
+- [Physlib/Meta/Linters/Pseudo.lean at 8c87bdfb](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Meta/Linters/Pseudo.lean)

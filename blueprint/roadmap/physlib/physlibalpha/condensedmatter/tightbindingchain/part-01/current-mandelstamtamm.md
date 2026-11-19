@@ -8,7 +8,7 @@ proof: formalized
 
 # Mandelstam–Tamm and Cramér–Rao in the open tight binding chain
 
-The module `PhyslibAlpha.CondensedMatter.TightBindingChain.Current.MandelstamTamm`, [PhyslibAlpha/CondensedMatter/TightBindingChain/Current/MandelstamTamm.lean](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/CondensedMatter/TightBindingChain/Current/MandelstamTamm.lean): 8 declarations, 8 with a docstring.
+The module `PhyslibAlpha.CondensedMatter.TightBindingChain.Current.MandelstamTamm`, [PhyslibAlpha/CondensedMatter/TightBindingChain/Current/MandelstamTamm.lean](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/CondensedMatter/TightBindingChain/Current/MandelstamTamm.lean): 8 declarations, 8 with a docstring.
 
 ## i. Overview
 
@@ -39,7 +39,7 @@ The module `PhyslibAlpha.CondensedMatter.TightBindingChain.Current.MandelstamTam
 
 ## A. The current as an observable
 
-**`CondensedMatter.TightBindingChain.currentObservable`**, an abbrev, [line 64](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/CondensedMatter/TightBindingChain/Current/MandelstamTamm.lean#L64).
+**`CondensedMatter.TightBindingChain.currentObservable`**, an abbrev, [line 64](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/CondensedMatter/TightBindingChain/Current/MandelstamTamm.lean#L64).
 
 > The current `J = i (H X - X H)` as an observable.
 
@@ -47,7 +47,7 @@ The module `PhyslibAlpha.CondensedMatter.TightBindingChain.Current.MandelstamTam
 noncomputable abbrev currentObservable
 ```
 
-**`CondensedMatter.TightBindingChain.coe_bracket_openHamiltonian_position`**, a lemma, [line 68](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/CondensedMatter/TightBindingChain/Current/MandelstamTamm.lean#L68).
+**`CondensedMatter.TightBindingChain.coe_bracket_openHamiltonian_position`**, a lemma, [line 68](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/CondensedMatter/TightBindingChain/Current/MandelstamTamm.lean#L68).
 
 > The bracket of the Hamiltonian and the position is minus half the current:
 > `⁅H, X⁆ = -J / 2`.
@@ -59,7 +59,7 @@ lemma coe_bracket_openHamiltonian_position :
       (-(1 / 2) : ℂ) • (T.currentObservable : T.HilbertSpace →L[ℂ] T.HilbertSpace)
 ```
 
-**`CondensedMatter.TightBindingChain.expectation_bracket_openHamiltonian_position`**, a lemma, [line 82](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/CondensedMatter/TightBindingChain/Current/MandelstamTamm.lean#L82).
+**`CondensedMatter.TightBindingChain.expectation_bracket_openHamiltonian_position`**, a lemma, [line 82](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/CondensedMatter/TightBindingChain/Current/MandelstamTamm.lean#L82).
 
 > The expected bracket is minus half the expected current.
 
@@ -71,7 +71,7 @@ lemma expectation_bracket_openHamiltonian_position
 
 ## B. Mandelstam–Tamm and Cramér–Rao
 
-**`CondensedMatter.TightBindingChain.sq_expectation_current_le`**, a lemma, [line 100](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/CondensedMatter/TightBindingChain/Current/MandelstamTamm.lean#L100).
+**`CondensedMatter.TightBindingChain.sq_expectation_current_le`**, a lemma, [line 100](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/CondensedMatter/TightBindingChain/Current/MandelstamTamm.lean#L100).
 
 > In every state, `⟨J⟩² ≤ 4 Var H · Var X`.
 
@@ -81,7 +81,7 @@ lemma sq_expectation_current_le :
       4 * (variance ω T.openHamiltonianObservable * variance ω T.positionObservable)
 ```
 
-**`CondensedMatter.TightBindingChain.mandelstam_tamm`**, a lemma, [line 109](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/CondensedMatter/TightBindingChain/Current/MandelstamTamm.lean#L109).
+**`CondensedMatter.TightBindingChain.mandelstam_tamm`**, a lemma, [line 109](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/CondensedMatter/TightBindingChain/Current/MandelstamTamm.lean#L109).
 
 > **Mandelstam–Tamm.** The position moves no faster than the energy spread allows:
 > `|d⟨X⟩/dt| = |⟨J⟩| ≤ 2 ΔH ΔX`.
@@ -92,7 +92,7 @@ lemma mandelstam_tamm :
       2 * (√(variance ω T.openHamiltonianObservable) * √(variance ω T.positionObservable))
 ```
 
-**`CondensedMatter.TightBindingChain.cramer_rao`**, a lemma, [line 119](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/CondensedMatter/TightBindingChain/Current/MandelstamTamm.lean#L119).
+**`CondensedMatter.TightBindingChain.cramer_rao`**, a lemma, [line 119](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/CondensedMatter/TightBindingChain/Current/MandelstamTamm.lean#L119).
 
 > **Quantum Cramér–Rao.** For a displacement generated by `H`, the error-propagation Fisher
 > information `⟨J⟩² / Var X` of the position is at most `4 Var H`, the quantum Fisher information
@@ -104,7 +104,7 @@ lemma cramer_rao :
       4 * variance ω T.openHamiltonianObservable
 ```
 
-**`CondensedMatter.TightBindingChain.mandelstamTammRatio`**, a def, [line 130](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/CondensedMatter/TightBindingChain/Current/MandelstamTamm.lean#L130).
+**`CondensedMatter.TightBindingChain.mandelstamTammRatio`**, a def, [line 130](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/CondensedMatter/TightBindingChain/Current/MandelstamTamm.lean#L130).
 
 > The Mandelstam–Tamm ratio `⟨J⟩² / (4 Var H · Var X)`: how close a state comes to both
 > Mandelstam–Tamm and Cramér–Rao.
@@ -113,7 +113,7 @@ lemma cramer_rao :
 noncomputable def mandelstamTammRatio : ℝ
 ```
 
-**`CondensedMatter.TightBindingChain.mandelstamTammRatio_le_one`**, a lemma, [line 135](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/CondensedMatter/TightBindingChain/Current/MandelstamTamm.lean#L135).
+**`CondensedMatter.TightBindingChain.mandelstamTammRatio_le_one`**, a lemma, [line 135](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/CondensedMatter/TightBindingChain/Current/MandelstamTamm.lean#L135).
 
 > The Mandelstam–Tamm ratio never exceeds one.
 
@@ -128,4 +128,4 @@ lemma mandelstamTammRatio_le_one : T.mandelstamTammRatio ω ≤ 1
 
 ## Sources
 
-- [PhyslibAlpha/CondensedMatter/TightBindingChain/Current/MandelstamTamm.lean at 2a1dfe43](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/CondensedMatter/TightBindingChain/Current/MandelstamTamm.lean)
+- [PhyslibAlpha/CondensedMatter/TightBindingChain/Current/MandelstamTamm.lean at 8c87bdfb](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/CondensedMatter/TightBindingChain/Current/MandelstamTamm.lean)

@@ -8,7 +8,7 @@ proof: formalized
 
 # The gauge weight decomposition of the gauge mass-weight submodules
 
-The module `PhyslibAlpha.Particles.StandardModel.IsGaugeSector.MassWeight.GaugeWeight`, [PhyslibAlpha/Particles/StandardModel/IsGaugeSector/MassWeight/GaugeWeight.lean](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/IsGaugeSector/MassWeight/GaugeWeight.lean): 25 declarations, 25 with a docstring.
+The module `PhyslibAlpha.Particles.StandardModel.IsGaugeSector.MassWeight.GaugeWeight`, [PhyslibAlpha/Particles/StandardModel/IsGaugeSector/MassWeight/GaugeWeight.lean](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/IsGaugeSector/MassWeight/GaugeWeight.lean): 25 declarations, 25 with a docstring.
 
 ## i. Overview
 
@@ -31,7 +31,7 @@ The module `PhyslibAlpha.Particles.StandardModel.IsGaugeSector.MassWeight.GaugeW
 
 > * None.
 
-**`StandardModel.IsGaugeSector.massWeightSubmoduleGaugeWeightOne`**, a def, [line 64](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/IsGaugeSector/MassWeight/GaugeWeight.lean#L64).
+**`StandardModel.IsGaugeSector.massWeightSubmoduleGaugeWeightOne`**, a def, [line 64](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/IsGaugeSector/MassWeight/GaugeWeight.lean#L64).
 
 > Weight one is trivial.
 
@@ -40,7 +40,7 @@ noncomputable def massWeightSubmoduleGaugeWeightOne :
     GaugeWeightDecomposition repGauge (h.massWeightSubmodule 1)
 ```
 
-**`StandardModel.IsGaugeSector.massWeightSubmoduleGaugeWeightTwo`**, a def, [line 71](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/IsGaugeSector/MassWeight/GaugeWeight.lean#L71).
+**`StandardModel.IsGaugeSector.massWeightSubmoduleGaugeWeightTwo`**, a def, [line 71](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/IsGaugeSector/MassWeight/GaugeWeight.lean#L71).
 
 > Weight two is trivial.
 
@@ -49,7 +49,7 @@ noncomputable def massWeightSubmoduleGaugeWeightTwo :
     GaugeWeightDecomposition repGauge (h.massWeightSubmodule 2)
 ```
 
-**`StandardModel.IsGaugeSector.massWeightSubmoduleGaugeWeightThree`**, a def, [line 78](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/IsGaugeSector/MassWeight/GaugeWeight.lean#L78).
+**`StandardModel.IsGaugeSector.massWeightSubmoduleGaugeWeightThree`**, a def, [line 78](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/IsGaugeSector/MassWeight/GaugeWeight.lean#L78).
 
 > Weight three is trivial.
 
@@ -58,7 +58,7 @@ noncomputable def massWeightSubmoduleGaugeWeightThree :
     GaugeWeightDecomposition repGauge (h.massWeightSubmodule 3)
 ```
 
-**`StandardModel.IsGaugeSector.massWeightSubmoduleGaugeWeightFour`**, a def, [line 85](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/IsGaugeSector/MassWeight/GaugeWeight.lean#L85).
+**`StandardModel.IsGaugeSector.massWeightSubmoduleGaugeWeightFour`**, a def, [line 85](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/IsGaugeSector/MassWeight/GaugeWeight.lean#L85).
 
 > Weight four is the underived field strength.
 
@@ -67,7 +67,7 @@ noncomputable def massWeightSubmoduleGaugeWeightFour :
     GaugeWeightDecomposition repGauge (h.massWeightSubmodule 4)
 ```
 
-**`StandardModel.IsGaugeSector.massWeightSubmoduleGaugeWeightFive`**, a def, [line 92](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/IsGaugeSector/MassWeight/GaugeWeight.lean#L92).
+**`StandardModel.IsGaugeSector.massWeightSubmoduleGaugeWeightFive`**, a def, [line 92](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/IsGaugeSector/MassWeight/GaugeWeight.lean#L92).
 
 > Weight five is trivial.
 
@@ -76,7 +76,7 @@ noncomputable def massWeightSubmoduleGaugeWeightFive :
     GaugeWeightDecomposition repGauge (h.massWeightSubmodule 5)
 ```
 
-**`StandardModel.IsGaugeSector.massWeightSubmoduleGaugeWeightSix`**, a def, [line 99](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/IsGaugeSector/MassWeight/GaugeWeight.lean#L99).
+**`StandardModel.IsGaugeSector.massWeightSubmoduleGaugeWeightSix`**, a def, [line 99](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/IsGaugeSector/MassWeight/GaugeWeight.lean#L99).
 
 > Weight six is the once-derived field strength.
 
@@ -85,7 +85,7 @@ noncomputable def massWeightSubmoduleGaugeWeightSix :
     GaugeWeightDecomposition repGauge (h.massWeightSubmodule 6)
 ```
 
-**`StandardModel.IsGaugeSector.massWeightSubmoduleGaugeWeightSeven`**, a def, [line 106](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/IsGaugeSector/MassWeight/GaugeWeight.lean#L106).
+**`StandardModel.IsGaugeSector.massWeightSubmoduleGaugeWeightSeven`**, a def, [line 106](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/IsGaugeSector/MassWeight/GaugeWeight.lean#L106).
 
 > Weight seven is trivial.
 
@@ -94,7 +94,7 @@ noncomputable def massWeightSubmoduleGaugeWeightSeven :
     GaugeWeightDecomposition repGauge (h.massWeightSubmodule 7)
 ```
 
-**`StandardModel.IsGaugeSector.massWeightSubmoduleGaugeWeightEight`**, a def, [line 114](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/IsGaugeSector/MassWeight/GaugeWeight.lean#L114).
+**`StandardModel.IsGaugeSector.massWeightSubmoduleGaugeWeightEight`**, a def, [line 114](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/IsGaugeSector/MassWeight/GaugeWeight.lean#L114).
 
 > Weight eight is the twice-derived field strength together with the products of two
 > underived ones.
@@ -106,7 +106,7 @@ noncomputable def massWeightSubmoduleGaugeWeightEight :
 
 ## A. The weight-zero pieces
 
-**`StandardModel.IsGaugeSector.rangeGaugeWeight_piece_zero`**, a lemma, [line 131](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/IsGaugeSector/MassWeight/GaugeWeight.lean#L131).
+**`StandardModel.IsGaugeSector.rangeGaugeWeight_piece_zero`**, a lemma, [line 131](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/IsGaugeSector/MassWeight/GaugeWeight.lean#L131).
 
 > The weight-zero piece of one symbol map's decomposition: the Cartan and `u(1)`
 > directions, the only ones the torus fixes.
@@ -118,7 +118,7 @@ lemma rangeGaugeWeight_piece_zero {n : ℕ} (l : Fin n → Fin 1 ⊕ Fin 3)
       = ⨆ c : Fin 4, ℂ ∙ F l μ ν (stdBasis.coord (cartanIdx c))
 ```
 
-**`StandardModel.IsGaugeSector.derivSubmoduleGaugeWeight_piece_zero`**, a lemma, [line 148](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/IsGaugeSector/MassWeight/GaugeWeight.lean#L148).
+**`StandardModel.IsGaugeSector.derivSubmoduleGaugeWeight_piece_zero`**, a lemma, [line 148](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/IsGaugeSector/MassWeight/GaugeWeight.lean#L148).
 
 > **The weight-zero piece of the gauge derivative submodules**: the spans of the
 > field-strength symbols evaluated on the four weight-zero directions of the adjoint —
@@ -133,7 +133,7 @@ lemma derivSubmoduleGaugeWeight_piece_zero (n : ℕ) :
         ℂ ∙ F l μ ν (stdBasis.coord (cartanIdx c))
 ```
 
-**`StandardModel.IsGaugeSector.massWeightSubmoduleGaugeWeightOne_piece_zero`**, a lemma, [line 159](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/IsGaugeSector/MassWeight/GaugeWeight.lean#L159).
+**`StandardModel.IsGaugeSector.massWeightSubmoduleGaugeWeightOne_piece_zero`**, a lemma, [line 159](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/IsGaugeSector/MassWeight/GaugeWeight.lean#L159).
 
 > The weight-zero piece at mass weight 1: the submodule itself is trivial.
 
@@ -142,7 +142,7 @@ lemma massWeightSubmoduleGaugeWeightOne_piece_zero :
     (h.massWeightSubmoduleGaugeWeightOne).piece 0 = ⊥
 ```
 
-**`StandardModel.IsGaugeSector.massWeightSubmoduleGaugeWeightTwo_piece_zero`**, a lemma, [line 163](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/IsGaugeSector/MassWeight/GaugeWeight.lean#L163).
+**`StandardModel.IsGaugeSector.massWeightSubmoduleGaugeWeightTwo_piece_zero`**, a lemma, [line 163](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/IsGaugeSector/MassWeight/GaugeWeight.lean#L163).
 
 > The weight-zero piece at mass weight 2: the submodule itself is trivial.
 
@@ -151,7 +151,7 @@ lemma massWeightSubmoduleGaugeWeightTwo_piece_zero :
     (h.massWeightSubmoduleGaugeWeightTwo).piece 0 = ⊥
 ```
 
-**`StandardModel.IsGaugeSector.massWeightSubmoduleGaugeWeightThree_piece_zero`**, a lemma, [line 167](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/IsGaugeSector/MassWeight/GaugeWeight.lean#L167).
+**`StandardModel.IsGaugeSector.massWeightSubmoduleGaugeWeightThree_piece_zero`**, a lemma, [line 167](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/IsGaugeSector/MassWeight/GaugeWeight.lean#L167).
 
 > The weight-zero piece at mass weight 3: the submodule itself is trivial.
 
@@ -160,7 +160,7 @@ lemma massWeightSubmoduleGaugeWeightThree_piece_zero :
     (h.massWeightSubmoduleGaugeWeightThree).piece 0 = ⊥
 ```
 
-**`StandardModel.IsGaugeSector.massWeightSubmoduleGaugeWeightFive_piece_zero`**, a lemma, [line 171](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/IsGaugeSector/MassWeight/GaugeWeight.lean#L171).
+**`StandardModel.IsGaugeSector.massWeightSubmoduleGaugeWeightFive_piece_zero`**, a lemma, [line 171](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/IsGaugeSector/MassWeight/GaugeWeight.lean#L171).
 
 > The weight-zero piece at mass weight 5: the submodule itself is trivial.
 
@@ -169,7 +169,7 @@ lemma massWeightSubmoduleGaugeWeightFive_piece_zero :
     (h.massWeightSubmoduleGaugeWeightFive).piece 0 = ⊥
 ```
 
-**`StandardModel.IsGaugeSector.massWeightSubmoduleGaugeWeightSeven_piece_zero`**, a lemma, [line 175](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/IsGaugeSector/MassWeight/GaugeWeight.lean#L175).
+**`StandardModel.IsGaugeSector.massWeightSubmoduleGaugeWeightSeven_piece_zero`**, a lemma, [line 175](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/IsGaugeSector/MassWeight/GaugeWeight.lean#L175).
 
 > The weight-zero piece at mass weight 7: the submodule itself is trivial.
 
@@ -178,7 +178,7 @@ lemma massWeightSubmoduleGaugeWeightSeven_piece_zero :
     (h.massWeightSubmoduleGaugeWeightSeven).piece 0 = ⊥
 ```
 
-**`StandardModel.IsGaugeSector.massWeightSubmoduleGaugeWeightFour_piece_zero`**, a lemma, [line 180](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/IsGaugeSector/MassWeight/GaugeWeight.lean#L180).
+**`StandardModel.IsGaugeSector.massWeightSubmoduleGaugeWeightFour_piece_zero`**, a lemma, [line 180](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/IsGaugeSector/MassWeight/GaugeWeight.lean#L180).
 
 > The weight-zero piece at mass weight four: the undifferentiated field strength on
 > the four fixed directions of the adjoint.
@@ -190,7 +190,7 @@ lemma massWeightSubmoduleGaugeWeightFour_piece_zero :
         ℂ ∙ F ![] μ ν (stdBasis.coord (cartanIdx c))
 ```
 
-**`StandardModel.IsGaugeSector.massWeightSubmoduleGaugeWeightSix_piece_zero`**, a lemma, [line 192](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/IsGaugeSector/MassWeight/GaugeWeight.lean#L192).
+**`StandardModel.IsGaugeSector.massWeightSubmoduleGaugeWeightSix_piece_zero`**, a lemma, [line 192](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/IsGaugeSector/MassWeight/GaugeWeight.lean#L192).
 
 > The weight-zero piece at mass weight six: the once-differentiated field strength on
 > the four fixed directions of the adjoint.
@@ -203,7 +203,7 @@ lemma massWeightSubmoduleGaugeWeightSix_piece_zero :
         ℂ ∙ F l μ ν (stdBasis.coord (cartanIdx c))
 ```
 
-**`StandardModel.IsGaugeSector.piece_mul_comm`**, a lemma, [line 201](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/IsGaugeSector/MassWeight/GaugeWeight.lean#L201).
+**`StandardModel.IsGaugeSector.piece_mul_comm`**, a lemma, [line 201](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/IsGaugeSector/MassWeight/GaugeWeight.lean#L201).
 
 > Any two weight pieces of a gauge derivative submodule commute: the gauge sector is
 > bosonic, and every piece sits inside the derivative submodule.
@@ -224,7 +224,7 @@ lemma piece_mul_comm (n : ℕ) (w w' : GaugeWeight) :
 > give the neutral contribution of the two `su(3)` Cartan directions, the `su(2)` Cartan
 > direction and hypercharge.
 
-**`StandardModel.IsGaugeSector.rootRaisingSpan`**, a def, [line 228](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/IsGaugeSector/MassWeight/GaugeWeight.lean#L228).
+**`StandardModel.IsGaugeSector.rootRaisingSpan`**, a def, [line 228](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/IsGaugeSector/MassWeight/GaugeWeight.lean#L228).
 
 > The span of the underived raising vectors along the `r`-th root direction.
 
@@ -232,7 +232,7 @@ lemma piece_mul_comm (n : ℕ) (w w' : GaugeWeight) :
 noncomputable def rootRaisingSpan (r : Fin 4) : Submodule ℂ B
 ```
 
-**`StandardModel.IsGaugeSector.rootLoweringSpan`**, a def, [line 233](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/IsGaugeSector/MassWeight/GaugeWeight.lean#L233).
+**`StandardModel.IsGaugeSector.rootLoweringSpan`**, a def, [line 233](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/IsGaugeSector/MassWeight/GaugeWeight.lean#L233).
 
 > The span of the underived lowering vectors along the `r`-th root direction.
 
@@ -240,7 +240,7 @@ noncomputable def rootRaisingSpan (r : Fin 4) : Submodule ℂ B
 noncomputable def rootLoweringSpan (r : Fin 4) : Submodule ℂ B
 ```
 
-**`StandardModel.IsGaugeSector.cartanSpan`**, a def, [line 239](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/IsGaugeSector/MassWeight/GaugeWeight.lean#L239).
+**`StandardModel.IsGaugeSector.cartanSpan`**, a def, [line 239](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/IsGaugeSector/MassWeight/GaugeWeight.lean#L239).
 
 > The span of the underived weight-zero vectors: the two `su(3)` Cartan directions,
 > the `su(2)` Cartan direction and the `u(1)` direction.
@@ -249,7 +249,7 @@ noncomputable def rootLoweringSpan (r : Fin 4) : Submodule ℂ B
 noncomputable def cartanSpan : Submodule ℂ B
 ```
 
-**`StandardModel.IsGaugeSector.gluonRootPart`**, a def, [line 245](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/IsGaugeSector/MassWeight/GaugeWeight.lean#L245).
+**`StandardModel.IsGaugeSector.gluonRootPart`**, a def, [line 245](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/IsGaugeSector/MassWeight/GaugeWeight.lean#L245).
 
 > The gluon contribution to the weight-zero piece: the three products pairing an
 > `su(3)` raising vector against the matching lowering vector.
@@ -258,7 +258,7 @@ noncomputable def cartanSpan : Submodule ℂ B
 noncomputable def gluonRootPart : Submodule ℂ B
 ```
 
-**`StandardModel.IsGaugeSector.isospinRootPart`**, a def, [line 252](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/IsGaugeSector/MassWeight/GaugeWeight.lean#L252).
+**`StandardModel.IsGaugeSector.isospinRootPart`**, a def, [line 252](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/IsGaugeSector/MassWeight/GaugeWeight.lean#L252).
 
 > The isospin contribution to the weight-zero piece: the single product pairing the
 > `su(2)` raising vector against the matching lowering vector.
@@ -267,7 +267,7 @@ noncomputable def gluonRootPart : Submodule ℂ B
 noncomputable def isospinRootPart : Submodule ℂ B
 ```
 
-**`StandardModel.IsGaugeSector.neutralCartanPart`**, a def, [line 258](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/IsGaugeSector/MassWeight/GaugeWeight.lean#L258).
+**`StandardModel.IsGaugeSector.neutralCartanPart`**, a def, [line 258](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/IsGaugeSector/MassWeight/GaugeWeight.lean#L258).
 
 > The neutral contribution to the weight-zero piece: the products of the weight-zero
 > directions with themselves, namely the two `su(3)` Cartan directions, the `su(2)`
@@ -277,7 +277,7 @@ noncomputable def isospinRootPart : Submodule ℂ B
 noncomputable def neutralCartanPart : Submodule ℂ B
 ```
 
-**`StandardModel.IsGaugeSector.massWeightSubmoduleGaugeWeightEight_piece_zero`**, a lemma, [line 263](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/IsGaugeSector/MassWeight/GaugeWeight.lean#L263).
+**`StandardModel.IsGaugeSector.massWeightSubmoduleGaugeWeightEight_piece_zero`**, a lemma, [line 263](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/IsGaugeSector/MassWeight/GaugeWeight.lean#L263).
 
 > The weight-zero piece at mass weight eight, split into the contributions of the
 > three gauge group factors: the twice-differentiated field strength on the four fixed
@@ -299,4 +299,4 @@ lemma massWeightSubmoduleGaugeWeightEight_piece_zero :
 
 ## Sources
 
-- [PhyslibAlpha/Particles/StandardModel/IsGaugeSector/MassWeight/GaugeWeight.lean at 2a1dfe43](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/IsGaugeSector/MassWeight/GaugeWeight.lean)
+- [PhyslibAlpha/Particles/StandardModel/IsGaugeSector/MassWeight/GaugeWeight.lean at 8c87bdfb](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/IsGaugeSector/MassWeight/GaugeWeight.lean)

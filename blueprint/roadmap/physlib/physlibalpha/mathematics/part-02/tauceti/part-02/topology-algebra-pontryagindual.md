@@ -8,7 +8,7 @@ proof: formalized
 
 # Topology of Pontryagin duals
 
-The module `PhyslibAlpha.Mathematics.TauCeti.Topology.Algebra.PontryaginDual`, [PhyslibAlpha/Mathematics/TauCeti/Topology/Algebra/PontryaginDual.lean](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Mathematics/TauCeti/Topology/Algebra/PontryaginDual.lean): 4 declarations, 4 with a docstring.
+The module `PhyslibAlpha.Mathematics.TauCeti.Topology.Algebra.PontryaginDual`, [PhyslibAlpha/Mathematics/TauCeti/Topology/Algebra/PontryaginDual.lean](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Mathematics/TauCeti/Topology/Algebra/PontryaginDual.lean): 4 declarations, 4 with a docstring.
 
 > The Pontryagin dual of a second-countable locally compact monoid is Polish.
 
@@ -35,7 +35,7 @@ The module `PhyslibAlpha.Mathematics.TauCeti.Topology.Algebra.PontryaginDual`, [
 
 ## A. Development
 
-**`TauCeti.instPolishSpacePontryaginDual`**, an instance, [line 51](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Mathematics/TauCeti/Topology/Algebra/PontryaginDual.lean#L51).
+**`TauCeti.instPolishSpacePontryaginDual`**, an instance, [line 51](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Mathematics/TauCeti/Topology/Algebra/PontryaginDual.lean#L51).
 
 > The Pontryagin dual of a second-countable locally compact monoid is Polish.
 
@@ -44,7 +44,7 @@ instance instPolishSpacePontryaginDual {A : Type*} [Monoid A] [TopologicalSpace 
     [LocallyCompactSpace A] [SecondCountableTopology A] : PolishSpace (PontryaginDual A)
 ```
 
-**`TauCeti.circleEquivPontryaginDualInt`**, a def, [line 57](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Mathematics/TauCeti/Topology/Algebra/PontryaginDual.lean#L57).
+**`TauCeti.circleEquivPontryaginDualInt`**, a def, [line 57](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Mathematics/TauCeti/Topology/Algebra/PontryaginDual.lean#L57).
 
 > The unit circle is the Pontryagin dual of `ℤ`: the point `z` corresponds to the character
 > `n ↦ zⁿ`, and a character corresponds to its value at `1`.
@@ -53,7 +53,7 @@ instance instPolishSpacePontryaginDual {A : Type*} [Monoid A] [TopologicalSpace 
 def circleEquivPontryaginDualInt : Circle ≃ₜ* PontryaginDual (Multiplicative ℤ)
 ```
 
-**`TauCeti.circleEquivPontryaginDualInt_apply_apply`**, a lemma, [line 71](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Mathematics/TauCeti/Topology/Algebra/PontryaginDual.lean#L71).
+**`TauCeti.circleEquivPontryaginDualInt_apply_apply`**, a lemma, [line 71](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Mathematics/TauCeti/Topology/Algebra/PontryaginDual.lean#L71).
 
 > The character attached to `z` sends `n` to `zⁿ`.
 
@@ -62,7 +62,7 @@ lemma circleEquivPontryaginDualInt_apply_apply (z : Circle) (n : Multiplicative 
     circleEquivPontryaginDualInt z n = z ^ n.toAdd
 ```
 
-**`TauCeti.circleEquivPontryaginDualInt_symm_apply`**, a lemma, [line 77](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Mathematics/TauCeti/Topology/Algebra/PontryaginDual.lean#L77).
+**`TauCeti.circleEquivPontryaginDualInt_symm_apply`**, a lemma, [line 77](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Mathematics/TauCeti/Topology/Algebra/PontryaginDual.lean#L77).
 
 > The point of the circle attached to a character of `ℤ` is its value at `1`.
 
@@ -81,4 +81,4 @@ Its declarations' statements use no declaration of another module with an articl
 
 ## Sources
 
-- [PhyslibAlpha/Mathematics/TauCeti/Topology/Algebra/PontryaginDual.lean at 2a1dfe43](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Mathematics/TauCeti/Topology/Algebra/PontryaginDual.lean)
+- [PhyslibAlpha/Mathematics/TauCeti/Topology/Algebra/PontryaginDual.lean at 8c87bdfb](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Mathematics/TauCeti/Topology/Algebra/PontryaginDual.lean)

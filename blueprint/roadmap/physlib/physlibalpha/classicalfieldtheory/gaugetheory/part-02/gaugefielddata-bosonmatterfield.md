@@ -8,7 +8,7 @@ proof: formalized
 
 # The bosonic matter field of a gauge theory
 
-The module `PhyslibAlpha.ClassicalFieldTheory.GaugeTheory.GaugeFieldData.BosonMatterField`, [PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/GaugeFieldData/BosonMatterField.lean](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/GaugeFieldData/BosonMatterField.lean): 19 declarations, 17 with a docstring.
+The module `PhyslibAlpha.ClassicalFieldTheory.GaugeTheory.GaugeFieldData.BosonMatterField`, [PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/GaugeFieldData/BosonMatterField.lean](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/GaugeFieldData/BosonMatterField.lean): 19 declarations, 17 with a docstring.
 
 ## i. Overview
 
@@ -57,7 +57,7 @@ The module `PhyslibAlpha.ClassicalFieldTheory.GaugeTheory.GaugeFieldData.BosonMa
 
 ## A. The bosonic matter field
 
-**`GaugeFieldData.bosonMatterField`**, a def, [line 88](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/GaugeFieldData/BosonMatterField.lean#L88).
+**`GaugeFieldData.bosonMatterField`**, a def, [line 88](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/GaugeFieldData/BosonMatterField.lean#L88).
 
 > **The bosonic matter field of a gauge theory**: the direct sum of the bosonic
 > species, valued in `T.BosonModule`, with the Lorentz group, the jets of gauge
@@ -71,14 +71,14 @@ noncomputable def bosonMatterField (w : ℕ) (h : ∀ i, (T.boson i).massWeight 
     MatterField jets
 ```
 
-**`GaugeFieldData.bosonMatterField_V`**, a lemma, [line 94](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/GaugeFieldData/BosonMatterField.lean#L94).
+**`GaugeFieldData.bosonMatterField_V`**, a lemma, [line 94](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/GaugeFieldData/BosonMatterField.lean#L94).
 
 ```lean
 lemma bosonMatterField_V (w : ℕ) (h : ∀ i, (T.boson i).massWeight = w) :
     (T.bosonMatterField w h).V = T.BosonModule
 ```
 
-**`GaugeFieldData.bosonMatterField_massWeight`**, a lemma, [line 99](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/GaugeFieldData/BosonMatterField.lean#L99).
+**`GaugeFieldData.bosonMatterField_massWeight`**, a lemma, [line 99](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/GaugeFieldData/BosonMatterField.lean#L99).
 
 > The bosonic matter field carries the common mass weight of the species.
 
@@ -87,7 +87,7 @@ lemma bosonMatterField_massWeight (w : ℕ) (h : ∀ i, (T.boson i).massWeight =
     (T.bosonMatterField w h).massWeight = w
 ```
 
-**`GaugeFieldData.bosonMatterField_statistic`**, a lemma, [line 104](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/GaugeFieldData/BosonMatterField.lean#L104).
+**`GaugeFieldData.bosonMatterField_statistic`**, a lemma, [line 104](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/GaugeFieldData/BosonMatterField.lean#L104).
 
 > The bosonic matter field is bosonic, as every bosonic species is declared to be.
 
@@ -98,7 +98,7 @@ lemma bosonMatterField_statistic (w : ℕ) (h : ∀ i, (T.boson i).massWeight = 
 
 ### A.1. The transformation data species by species
 
-**`GaugeFieldData.repLorentzBosonModule`**, a def, [line 118](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/GaugeFieldData/BosonMatterField.lean#L118).
+**`GaugeFieldData.repLorentzBosonModule`**, a def, [line 118](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/GaugeFieldData/BosonMatterField.lean#L118).
 
 > **The Lorentz action on the bosonic module**, acting species by species. This is the
 > Lorentz representation of the bosonic matter field, typed on `T.BosonModule` itself so
@@ -108,14 +108,14 @@ lemma bosonMatterField_statistic (w : ℕ) (h : ∀ i, (T.boson i).massWeight = 
 noncomputable def repLorentzBosonModule : Representation ℂ SL(2,ℂ) T.BosonModule
 ```
 
-**`GaugeFieldData.repLorentzBosonModule_apply`**, a lemma, [line 124](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/GaugeFieldData/BosonMatterField.lean#L124).
+**`GaugeFieldData.repLorentzBosonModule_apply`**, a lemma, [line 124](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/GaugeFieldData/BosonMatterField.lean#L124).
 
 ```lean
 lemma repLorentzBosonModule_apply (Λ : SL(2,ℂ)) (v : T.BosonModule) (i : T.BosonSpecies) :
     T.repLorentzBosonModule Λ v i = (T.boson i).repLorentz Λ (v i)
 ```
 
-**`GaugeFieldData.repJetBosonModule`**, a def, [line 132](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/GaugeFieldData/BosonMatterField.lean#L132).
+**`GaugeFieldData.repJetBosonModule`**, a def, [line 132](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/GaugeFieldData/BosonMatterField.lean#L132).
 
 > The action of the jets of gauge transformations on the jets of the bosonic
 > module, acting species by species, and typed on `T.BosonModule` itself so that it can
@@ -126,7 +126,7 @@ noncomputable def repJetBosonModule :
     Representation ℂ GJ (SpaceTimeAlgebra ⊗[ℂ] T.BosonModule)
 ```
 
-**`GaugeFieldData.repJetBosonModule_smul`**, a lemma, [line 139](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/GaugeFieldData/BosonMatterField.lean#L139).
+**`GaugeFieldData.repJetBosonModule_smul`**, a lemma, [line 139](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/GaugeFieldData/BosonMatterField.lean#L139).
 
 > The jet gauge action on the bosonic module is fibrewise, as each species is.
 
@@ -136,7 +136,7 @@ lemma repJetBosonModule_smul (U : GJ) (χ : SpaceTimeAlgebra)
     T.repJetBosonModule U (χ • z) = χ • T.repJetBosonModule U z
 ```
 
-**`GaugeFieldData.lTensor_projBosonValue_repJetBosonModule`**, a lemma, [line 146](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/GaugeFieldData/BosonMatterField.lean#L146).
+**`GaugeFieldData.lTensor_projBosonValue_repJetBosonModule`**, a lemma, [line 146](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/GaugeFieldData/BosonMatterField.lean#L146).
 
 > A bosonic species is a subrepresentation of the jet gauge action on the bosonic
 > module: the projection onto its value space intertwines the two actions on the jets.
@@ -148,7 +148,7 @@ lemma lTensor_projBosonValue_repJetBosonModule (j : T.BosonSpecies) (U : GJ) :
         (LinearMap.lTensor SpaceTimeAlgebra (T.projBosonValue j))
 ```
 
-**`GaugeFieldData.bosonMatterField_repJet`**, a lemma, [line 153](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/GaugeFieldData/BosonMatterField.lean#L153).
+**`GaugeFieldData.bosonMatterField_repJet`**, a lemma, [line 153](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/GaugeFieldData/BosonMatterField.lean#L153).
 
 > The jet gauge action of the bosonic matter field is that of the bosonic module.
 
@@ -157,7 +157,7 @@ lemma bosonMatterField_repJet (w : ℕ) (h : ∀ i, (T.boson i).massWeight = w) 
     (T.bosonMatterField w h).repJet = T.repJetBosonModule
 ```
 
-**`GaugeFieldData.bosonMatterField_repLorentz`**, a lemma, [line 157](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/GaugeFieldData/BosonMatterField.lean#L157).
+**`GaugeFieldData.bosonMatterField_repLorentz`**, a lemma, [line 157](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/GaugeFieldData/BosonMatterField.lean#L157).
 
 > The Lorentz action of the bosonic matter field is that of the bosonic module.
 
@@ -166,7 +166,7 @@ lemma bosonMatterField_repLorentz (w : ℕ) (h : ∀ i, (T.boson i).massWeight =
     (T.bosonMatterField w h).repLorentz = T.repLorentzBosonModule
 ```
 
-**`GaugeFieldData.bosonMatterField_repLorentz_apply`**, a lemma, [line 162](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/GaugeFieldData/BosonMatterField.lean#L162).
+**`GaugeFieldData.bosonMatterField_repLorentz_apply`**, a lemma, [line 162](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/GaugeFieldData/BosonMatterField.lean#L162).
 
 > The Lorentz group acts on a bosonic configuration species by species.
 
@@ -177,7 +177,7 @@ lemma bosonMatterField_repLorentz_apply (w : ℕ)
     (T.bosonMatterField w h).repLorentz Λ v i = (T.boson i).repLorentz Λ (v i)
 ```
 
-**`GaugeFieldData.bosonMatterField_repAlgebra_apply`**, a lemma, [line 169](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/GaugeFieldData/BosonMatterField.lean#L169).
+**`GaugeFieldData.bosonMatterField_repAlgebra_apply`**, a lemma, [line 169](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/GaugeFieldData/BosonMatterField.lean#L169).
 
 > The gauge algebra acts on a bosonic configuration species by species.
 
@@ -188,7 +188,7 @@ lemma bosonMatterField_repAlgebra_apply (w : ℕ)
     (T.bosonMatterField w h).repAlgebra c v i = (T.boson i).repAlgebra c (v i)
 ```
 
-**`GaugeFieldData.bosonMatterField_repJet_apply`**, a lemma, [line 177](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/GaugeFieldData/BosonMatterField.lean#L177).
+**`GaugeFieldData.bosonMatterField_repJet_apply`**, a lemma, [line 177](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/GaugeFieldData/BosonMatterField.lean#L177).
 
 > The jets of gauge transformations act on the jets of the bosonic field species by
 > species, through the identification `jetPiEquiv` of the jets of the bosonic module
@@ -203,7 +203,7 @@ lemma bosonMatterField_repJet_apply (w : ℕ)
         (fun i => (T.boson i).repJet U (jetPiEquiv T.BosonValue z i))
 ```
 
-**`GaugeFieldData.repCoeff_bosonMatterField`**, a lemma, [line 186](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/GaugeFieldData/BosonMatterField.lean#L186).
+**`GaugeFieldData.repCoeff_bosonMatterField`**, a lemma, [line 186](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/GaugeFieldData/BosonMatterField.lean#L186).
 
 > The base-point Taylor coefficients of the bosonic jet action are those of the
 > species, index by index.
@@ -218,7 +218,7 @@ lemma repCoeff_bosonMatterField (w : ℕ) (h : ∀ i, (T.boson i).massWeight = w
 
 ### A.2. The species as subrepresentations
 
-**`GaugeFieldData.bosonMatterField_repLorentz_inclBosonValue`**, a lemma, [line 203](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/GaugeFieldData/BosonMatterField.lean#L203).
+**`GaugeFieldData.bosonMatterField_repLorentz_inclBosonValue`**, a lemma, [line 203](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/GaugeFieldData/BosonMatterField.lean#L203).
 
 > **A bosonic species is a Lorentz subrepresentation of the bosonic matter field**:
 > including a value of one species and then transforming is transforming and then
@@ -233,7 +233,7 @@ lemma bosonMatterField_repLorentz_inclBosonValue (w : ℕ)
       = T.inclBosonValue i ((T.boson i).repLorentz Λ x)
 ```
 
-**`GaugeFieldData.bosonMatterField_repAlgebra_inclBosonValue`**, a lemma, [line 214](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/GaugeFieldData/BosonMatterField.lean#L214).
+**`GaugeFieldData.bosonMatterField_repAlgebra_inclBosonValue`**, a lemma, [line 214](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/GaugeFieldData/BosonMatterField.lean#L214).
 
 > **A bosonic species is a subrepresentation of the gauge algebra action** on the
 > bosonic matter field, for the same reason: the gauge algebra does not mix the
@@ -247,7 +247,7 @@ lemma bosonMatterField_repAlgebra_inclBosonValue (w : ℕ)
       = T.inclBosonValue i ((T.boson i).repAlgebra c x)
 ```
 
-**`GaugeFieldData.finrank_bosonMatterField`**, a lemma, [line 224](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/GaugeFieldData/BosonMatterField.lean#L224).
+**`GaugeFieldData.finrank_bosonMatterField`**, a lemma, [line 224](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/GaugeFieldData/BosonMatterField.lean#L224).
 
 > The dimension of the bosonic matter field is the sum of the dimensions of the
 > species.
@@ -258,7 +258,7 @@ lemma finrank_bosonMatterField (w : ℕ) (h : ∀ i, (T.boson i).massWeight = w)
       = ∑ i, Module.finrank ℂ (T.BosonValue i)
 ```
 
-**`GaugeFieldData.projBosonField`**, an abbrev, [line 233](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/GaugeFieldData/BosonMatterField.lean#L233).
+**`GaugeFieldData.projBosonField`**, an abbrev, [line 233](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/GaugeFieldData/BosonMatterField.lean#L233).
 
 > The projection of the bosonic matter field onto one species, typed as a map out of
 > `(T.bosonMatterField w h).V` rather than out of `T.BosonModule`. The two are the same
@@ -277,4 +277,4 @@ noncomputable abbrev projBosonField (w : ℕ) (h : ∀ i, (T.boson i).massWeight
 
 ## Sources
 
-- [PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/GaugeFieldData/BosonMatterField.lean at 2a1dfe43](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/GaugeFieldData/BosonMatterField.lean)
+- [PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/GaugeFieldData/BosonMatterField.lean at 8c87bdfb](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/GaugeFieldData/BosonMatterField.lean)

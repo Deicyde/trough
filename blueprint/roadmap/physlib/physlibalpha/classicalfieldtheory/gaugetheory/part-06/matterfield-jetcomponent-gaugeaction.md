@@ -8,7 +8,7 @@ proof: formalized
 
 # The gauge action on the jet component space
 
-The module `PhyslibAlpha.ClassicalFieldTheory.GaugeTheory.MatterField.JetComponent.GaugeAction`, [PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/MatterField/JetComponent/GaugeAction.lean](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/MatterField/JetComponent/GaugeAction.lean): 12 declarations, 9 with a docstring.
+The module `PhyslibAlpha.ClassicalFieldTheory.GaugeTheory.MatterField.JetComponent.GaugeAction`, [PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/MatterField/JetComponent/GaugeAction.lean](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/MatterField/JetComponent/GaugeAction.lean): 12 declarations, 9 with a docstring.
 
 ## i. Overview
 
@@ -51,7 +51,7 @@ The module `PhyslibAlpha.ClassicalFieldTheory.GaugeTheory.MatterField.JetCompone
 
 > * None.
 
-**`JetComponentSpace.symbolAction`**, a def, [line 81](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/MatterField/JetComponent/GaugeAction.lean#L81).
+**`JetComponentSpace.symbolAction`**, a def, [line 81](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/MatterField/JetComponent/GaugeAction.lean#L81).
 
 > **The action of a coefficient on the symbols.** A coefficient `g ⊗ T` acts by
 > `jetRingAction g` on the derivative label — the Leibniz convolution redistributing
@@ -70,7 +70,7 @@ noncomputable def symbolAction :
         (SpaceTimeDerivAlgebraℂ ⊗[ℂ] Module.Dual ℂ V))
 ```
 
-**`JetComponentSpace.symbolAction_tmul`**, a lemma, [line 109](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/MatterField/JetComponent/GaugeAction.lean#L109).
+**`JetComponentSpace.symbolAction_tmul`**, a lemma, [line 109](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/MatterField/JetComponent/GaugeAction.lean#L109).
 
 ```lean
 lemma symbolAction_tmul (g : SpaceTimeAlgebra) (T : V →ₗ[ℂ] W) :
@@ -78,7 +78,7 @@ lemma symbolAction_tmul (g : SpaceTimeAlgebra) (T : V →ₗ[ℂ] W) :
       = TensorProduct.map (SpaceTimeDerivAlgebraℂ.jetRingAction g) (Module.Dual.transpose T)
 ```
 
-**`JetComponentSpace.symbolAction_one_tmul`**, a lemma, [line 118](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/MatterField/JetComponent/GaugeAction.lean#L118).
+**`JetComponentSpace.symbolAction_one_tmul`**, a lemma, [line 118](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/MatterField/JetComponent/GaugeAction.lean#L118).
 
 > **A coefficient acts on the undifferentiated symbol through its value at the base
 > point.** On `1 ⊗ φ` — the symbol `ψ_φ` carrying no derivatives — only the constant term of
@@ -94,7 +94,7 @@ lemma symbolAction_one_tmul (c : SpaceTimeAlgebra ⊗[ℂ] Module.End ℂ V) (φ
             (TensorProduct.mk ℂ SpaceTimeAlgebra V)) c) φ
 ```
 
-**`JetComponentSpace.repDual`**, a def, [line 142](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/MatterField/JetComponent/GaugeAction.lean#L142).
+**`JetComponentSpace.repDual`**, a def, [line 142](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/MatterField/JetComponent/GaugeAction.lean#L142).
 
 > **The gauge action on the symbols.** Given a fibrewise gauge action on the jets of a
 > `V`-valued field, this is the induced (contragredient) action on the derivative symbols
@@ -112,7 +112,7 @@ noncomputable def repDual [Module.Free ℂ V] [Module.Finite ℂ V]
     Representation ℂ GJ (SpaceTimeDerivAlgebraℂ ⊗[ℂ] Module.Dual ℂ V)
 ```
 
-**`JetComponentSpace.repDual_one_tmul`**, a lemma, [line 173](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/MatterField/JetComponent/GaugeAction.lean#L173).
+**`JetComponentSpace.repDual_one_tmul`**, a lemma, [line 173](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/MatterField/JetComponent/GaugeAction.lean#L173).
 
 > **The undifferentiated symbol transforms by the value of the gauge transformation at
 > the base point.** No derivative of the gauge jet contributes: the symbol `ψ_φ` is acted on
@@ -130,7 +130,7 @@ lemma repDual_one_tmul [Module.Free ℂ V] [Module.Finite ℂ V]
         Module.Dual.transpose (jetEval ∘ₗ (rep U⁻¹).comp jetOfConstant) φ
 ```
 
-**`JetComponentSpace.repJet`**, a def, [line 203](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/MatterField/JetComponent/GaugeAction.lean#L203).
+**`JetComponentSpace.repJet`**, a def, [line 203](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/MatterField/JetComponent/GaugeAction.lean#L203).
 
 > **The gauge action on the jet component space.** The induced action of the jets of
 > gauge transformations on the full space of component functions of the matter field `M` —
@@ -152,14 +152,14 @@ noncomputable def repJet (M : MatterField jets) :
     Representation ℂ GJ (JetComponentSpace M)
 ```
 
-**`JetComponentSpace.repJet_fst`**, a lemma, [line 209](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/MatterField/JetComponent/GaugeAction.lean#L209).
+**`JetComponentSpace.repJet_fst`**, a lemma, [line 209](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/MatterField/JetComponent/GaugeAction.lean#L209).
 
 ```lean
 lemma repJet_fst (M : MatterField jets) (U : GJ) (x : JetComponentSpace M) :
     (repJet M U x).1 = repDual M.repJet M.repJet_smul U x.1
 ```
 
-**`JetComponentSpace.repJet_snd`**, a lemma, [line 213](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/MatterField/JetComponent/GaugeAction.lean#L213).
+**`JetComponentSpace.repJet_snd`**, a lemma, [line 213](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/MatterField/JetComponent/GaugeAction.lean#L213).
 
 ```lean
 lemma repJet_snd (M : MatterField jets) (U : GJ) (x : JetComponentSpace M) :
@@ -182,7 +182,7 @@ lemma repJet_snd (M : MatterField jets) (U : GJ) (x : JetComponentSpace M) :
 > symbol carries `star` of the gauge matrix, so nothing about it follows from the
 > unconjugated half.
 
-**`JetComponentSpace.map_transpose_comp_symbolAction`**, a lemma, [line 239](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/MatterField/JetComponent/GaugeAction.lean#L239).
+**`JetComponentSpace.map_transpose_comp_symbolAction`**, a lemma, [line 239](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/MatterField/JetComponent/GaugeAction.lean#L239).
 
 > Pulling back and then acting is acting and then pulling back, on the symbols of a
 > coefficient. Precomposing the symbol action of a coefficient of `W` with the pullback
@@ -194,7 +194,7 @@ lemma map_transpose_comp_symbolAction (f : V →ₗ[ℂ] W) (y : SpaceTimeAlgebr
       = symbolAction (LinearMap.lTensor SpaceTimeAlgebra (LinearMap.lcomp ℂ W f) y)
 ```
 
-**`JetComponentSpace.symbolAction_comp_map_transpose`**, a lemma, [line 252](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/MatterField/JetComponent/GaugeAction.lean#L252).
+**`JetComponentSpace.symbolAction_comp_map_transpose`**, a lemma, [line 252](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/MatterField/JetComponent/GaugeAction.lean#L252).
 
 > The companion of `map_transpose_comp_symbolAction` on the other side: postcomposing
 > the symbol action of a coefficient of `V` with the pullback along `f` is the symbol
@@ -206,7 +206,7 @@ lemma symbolAction_comp_map_transpose (f : V →ₗ[ℂ] W) (x : SpaceTimeAlgebr
       = symbolAction (LinearMap.lTensor SpaceTimeAlgebra (LinearMap.llcomp ℂ V V W f) x)
 ```
 
-**`JetComponentSpace.comap_comp_repDual`**, a lemma, [line 268](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/MatterField/JetComponent/GaugeAction.lean#L268).
+**`JetComponentSpace.comap_comp_repDual`**, a lemma, [line 268](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/MatterField/JetComponent/GaugeAction.lean#L268).
 
 > The gauge action on the unconjugated symbols is natural in the value space. A
 > linear map of value spaces intertwining two fibrewise jet actions makes the pullback of
@@ -232,7 +232,7 @@ lemma comap_comp_repDual [Module.Free ℂ V] [Module.Finite ℂ V]
         (TensorProduct.map LinearMap.id (Module.Dual.transpose f))
 ```
 
-**`JetComponentSpace.comap_comp_repJet`**, a lemma, [line 297](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/MatterField/JetComponent/GaugeAction.lean#L297).
+**`JetComponentSpace.comap_comp_repJet`**, a lemma, [line 297](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/MatterField/JetComponent/GaugeAction.lean#L297).
 
 > The gauge action on the jet component space is natural in the value space. If
 > `f : M.V →ₗ N.V` intertwines the two fields' actions on the jets, then the pullback of component
@@ -254,8 +254,8 @@ lemma comap_comp_repJet {M N : MatterField jets} (f : M.V →ₗ[ℂ] N.V)
 
 ## Depends on
 
-- [The jet component space of a matter field](../part-05/matterfield-jetcomponent-basic.md)
+- [The jet component space of a matter field](matterfield-jetcomponent-basic.md)
 
 ## Sources
 
-- [PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/MatterField/JetComponent/GaugeAction.lean at 2a1dfe43](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/MatterField/JetComponent/GaugeAction.lean)
+- [PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/MatterField/JetComponent/GaugeAction.lean at 8c87bdfb](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/MatterField/JetComponent/GaugeAction.lean)

@@ -8,7 +8,7 @@ proof: formalized
 
 # Harmonic Wave in Vacuum
 
-The module `Physlib.Electromagnetism.Vacuum.HarmonicWave`, [Physlib/Electromagnetism/Vacuum/HarmonicWave.lean](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/Electromagnetism/Vacuum/HarmonicWave.lean): 24 declarations, 1 with a docstring.
+The module `Physlib.Electromagnetism.Vacuum.HarmonicWave`, [Physlib/Electromagnetism/Vacuum/HarmonicWave.lean](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Electromagnetism/Vacuum/HarmonicWave.lean): 24 declarations, 1 with a docstring.
 
 ## i. Overview
 
@@ -33,7 +33,7 @@ The module `Physlib.Electromagnetism.Vacuum.HarmonicWave`, [Physlib/Electromagne
 
 ## A. The electromagnetic potential for a harmonic wave
 
-**`Electromagnetism.ElectromagneticPotential.harmonicWaveX`**, a def, [line 78](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/Electromagnetism/Vacuum/HarmonicWave.lean#L78).
+**`Electromagnetism.ElectromagneticPotential.harmonicWaveX`**, a def, [line 78](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Electromagnetism/Vacuum/HarmonicWave.lean#L78).
 
 > The electromagnetic potential for a Harmonic wave travelling in the `x`-direction
 > with wave number `k`.
@@ -43,7 +43,7 @@ noncomputable def harmonicWaveX (𝓕 : FreeSpace) (k : ℝ) (E₀ : Fin d → �
   (φ : Fin d → ℝ) : ElectromagneticPotential d.succ
 ```
 
-**`Electromagnetism.ElectromagneticPotential.harmonicWaveX_inl_zero`**, a lemma, [line 88](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/Electromagnetism/Vacuum/HarmonicWave.lean#L88).
+**`Electromagnetism.ElectromagneticPotential.harmonicWaveX_inl_zero`**, a lemma, [line 88](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Electromagnetism/Vacuum/HarmonicWave.lean#L88).
 
 ```lean
 lemma harmonicWaveX_inl_zero {d} (𝓕 : FreeSpace) (k : ℝ) (E₀ : Fin d → ℝ) (φ : Fin d → ℝ)
@@ -51,7 +51,7 @@ lemma harmonicWaveX_inl_zero {d} (𝓕 : FreeSpace) (k : ℝ) (E₀ : Fin d → 
     harmonicWaveX 𝓕 k E₀ φ x (Sum.inl 0) = 0
 ```
 
-**`Electromagnetism.ElectromagneticPotential.harmonicWaveX_inr_zero`**, a lemma, [line 94](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/Electromagnetism/Vacuum/HarmonicWave.lean#L94).
+**`Electromagnetism.ElectromagneticPotential.harmonicWaveX_inr_zero`**, a lemma, [line 94](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Electromagnetism/Vacuum/HarmonicWave.lean#L94).
 
 ```lean
 lemma harmonicWaveX_inr_zero {d} (𝓕 : FreeSpace) (k : ℝ) (E₀ : Fin d → ℝ) (φ : Fin d → ℝ)
@@ -61,7 +61,7 @@ lemma harmonicWaveX_inr_zero {d} (𝓕 : FreeSpace) (k : ℝ) (E₀ : Fin d → 
 
 ### A.1. Differentiability of the electromagnetic potential
 
-**`Electromagnetism.ElectromagneticPotential.harmonicWaveX_differentiable`**, a lemma, [line 106](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/Electromagnetism/Vacuum/HarmonicWave.lean#L106).
+**`Electromagnetism.ElectromagneticPotential.harmonicWaveX_differentiable`**, a lemma, [line 106](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Electromagnetism/Vacuum/HarmonicWave.lean#L106).
 
 ```lean
 lemma harmonicWaveX_differentiable {d} (𝓕 : FreeSpace) (k : ℝ)
@@ -71,7 +71,7 @@ lemma harmonicWaveX_differentiable {d} (𝓕 : FreeSpace) (k : ℝ)
 
 ### A.2. Smoothness of the electromagnetic potential
 
-**`Electromagnetism.ElectromagneticPotential.harmonicWaveX_contDiff`**, a lemma, [line 124](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/Electromagnetism/Vacuum/HarmonicWave.lean#L124).
+**`Electromagnetism.ElectromagneticPotential.harmonicWaveX_contDiff`**, a lemma, [line 124](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Electromagnetism/Vacuum/HarmonicWave.lean#L124).
 
 ```lean
 lemma harmonicWaveX_contDiff {d} (n : WithTop ℕ∞) (𝓕 : FreeSpace) (k : ℝ)
@@ -83,7 +83,7 @@ lemma harmonicWaveX_contDiff {d} (n : WithTop ℕ∞) (𝓕 : FreeSpace) (k : �
 
 > The scalar potential of the harmonic wave is zero.
 
-**`Electromagnetism.ElectromagneticPotential.harmonicWaveX_scalarPotential_eq_zero`**, a lemma, [line 145](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/Electromagnetism/Vacuum/HarmonicWave.lean#L145).
+**`Electromagnetism.ElectromagneticPotential.harmonicWaveX_scalarPotential_eq_zero`**, a lemma, [line 145](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Electromagnetism/Vacuum/HarmonicWave.lean#L145).
 
 ```lean
 lemma harmonicWaveX_scalarPotential_eq_zero {d} (𝓕 : FreeSpace) (k : ℝ)
@@ -95,7 +95,7 @@ lemma harmonicWaveX_scalarPotential_eq_zero {d} (𝓕 : FreeSpace) (k : ℝ)
 
 ### C.1. Components of the vector potential
 
-**`Electromagnetism.ElectromagneticPotential.harmonicWaveX_vectorPotential_zero_eq_zero`**, a lemma, [line 165](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/Electromagnetism/Vacuum/HarmonicWave.lean#L165).
+**`Electromagnetism.ElectromagneticPotential.harmonicWaveX_vectorPotential_zero_eq_zero`**, a lemma, [line 165](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Electromagnetism/Vacuum/HarmonicWave.lean#L165).
 
 ```lean
 lemma harmonicWaveX_vectorPotential_zero_eq_zero {d} (𝓕 : FreeSpace) (k : ℝ)
@@ -103,7 +103,7 @@ lemma harmonicWaveX_vectorPotential_zero_eq_zero {d} (𝓕 : FreeSpace) (k : ℝ
     (harmonicWaveX 𝓕 k E₀ φ).vectorPotential 𝓕.c t x 0 = 0
 ```
 
-**`Electromagnetism.ElectromagneticPotential.harmonicWaveX_vectorPotential_succ`**, a lemma, [line 171](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/Electromagnetism/Vacuum/HarmonicWave.lean#L171).
+**`Electromagnetism.ElectromagneticPotential.harmonicWaveX_vectorPotential_succ`**, a lemma, [line 171](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Electromagnetism/Vacuum/HarmonicWave.lean#L171).
 
 ```lean
 lemma harmonicWaveX_vectorPotential_succ {d} (𝓕 : FreeSpace) (k : ℝ)
@@ -112,7 +112,7 @@ lemma harmonicWaveX_vectorPotential_succ {d} (𝓕 : FreeSpace) (k : ℝ)
     - E₀ i * 1 / (𝓕.c * k) * Real.sin (k * (t.val * 𝓕.c - x 0) + φ i)
 ```
 
-**`Electromagnetism.ElectromagneticPotential.harmonicWaveX_vectorPotential_succ'`**, a lemma, [line 179](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/Electromagnetism/Vacuum/HarmonicWave.lean#L179).
+**`Electromagnetism.ElectromagneticPotential.harmonicWaveX_vectorPotential_succ'`**, a lemma, [line 179](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Electromagnetism/Vacuum/HarmonicWave.lean#L179).
 
 ```lean
 lemma harmonicWaveX_vectorPotential_succ' {d} (𝓕 : FreeSpace) (k : ℝ)
@@ -124,7 +124,7 @@ lemma harmonicWaveX_vectorPotential_succ' {d} (𝓕 : FreeSpace) (k : ℝ)
 
 ### C.2. Space derivatives of the vector potential
 
-**`Electromagnetism.ElectromagneticPotential.harmonicWaveX_vectorPotential_space_deriv_succ`**, a lemma, [line 196](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/Electromagnetism/Vacuum/HarmonicWave.lean#L196).
+**`Electromagnetism.ElectromagneticPotential.harmonicWaveX_vectorPotential_space_deriv_succ`**, a lemma, [line 196](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Electromagnetism/Vacuum/HarmonicWave.lean#L196).
 
 ```lean
 lemma harmonicWaveX_vectorPotential_space_deriv_succ {d} (𝓕 : FreeSpace) (k : ℝ)
@@ -134,7 +134,7 @@ lemma harmonicWaveX_vectorPotential_space_deriv_succ {d} (𝓕 : FreeSpace) (k :
     = 0
 ```
 
-**`Electromagnetism.ElectromagneticPotential.harmonicWaveX_vectorPotential_succ_space_deriv_zero`**, a lemma, [line 217](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/Electromagnetism/Vacuum/HarmonicWave.lean#L217).
+**`Electromagnetism.ElectromagneticPotential.harmonicWaveX_vectorPotential_succ_space_deriv_zero`**, a lemma, [line 217](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Electromagnetism/Vacuum/HarmonicWave.lean#L217).
 
 ```lean
 lemma harmonicWaveX_vectorPotential_succ_space_deriv_zero {d} (𝓕 : FreeSpace) (k : ℝ) (hk : k ≠ 0)
@@ -147,7 +147,7 @@ lemma harmonicWaveX_vectorPotential_succ_space_deriv_zero {d} (𝓕 : FreeSpace)
 
 ### D.1. Components of the electric field
 
-**`Electromagnetism.ElectromagneticPotential.harmonicWaveX_electricField_zero`**, a lemma, [line 244](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/Electromagnetism/Vacuum/HarmonicWave.lean#L244).
+**`Electromagnetism.ElectromagneticPotential.harmonicWaveX_electricField_zero`**, a lemma, [line 244](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Electromagnetism/Vacuum/HarmonicWave.lean#L244).
 
 ```lean
 lemma harmonicWaveX_electricField_zero {d} (𝓕 : FreeSpace) (k : ℝ)
@@ -155,7 +155,7 @@ lemma harmonicWaveX_electricField_zero {d} (𝓕 : FreeSpace) (k : ℝ)
     (harmonicWaveX 𝓕 k E₀ φ).electricField 𝓕.c t x 0 = 0
 ```
 
-**`Electromagnetism.ElectromagneticPotential.harmonicWaveX_electricField_succ`**, a lemma, [line 252](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/Electromagnetism/Vacuum/HarmonicWave.lean#L252).
+**`Electromagnetism.ElectromagneticPotential.harmonicWaveX_electricField_succ`**, a lemma, [line 252](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Electromagnetism/Vacuum/HarmonicWave.lean#L252).
 
 ```lean
 lemma harmonicWaveX_electricField_succ {d} (𝓕 : FreeSpace) (k : ℝ) (hk : k ≠ 0)
@@ -166,7 +166,7 @@ lemma harmonicWaveX_electricField_succ {d} (𝓕 : FreeSpace) (k : ℝ) (hk : k 
 
 ### D.2. Spatial derivatives of the electric field
 
-**`Electromagnetism.ElectromagneticPotential.harmonicWaveX_electricField_space_deriv_same`**, a lemma, [line 274](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/Electromagnetism/Vacuum/HarmonicWave.lean#L274).
+**`Electromagnetism.ElectromagneticPotential.harmonicWaveX_electricField_space_deriv_same`**, a lemma, [line 274](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Electromagnetism/Vacuum/HarmonicWave.lean#L274).
 
 ```lean
 lemma harmonicWaveX_electricField_space_deriv_same {d} (𝓕 : FreeSpace) (k : ℝ) (hk : k ≠ 0)
@@ -177,7 +177,7 @@ lemma harmonicWaveX_electricField_space_deriv_same {d} (𝓕 : FreeSpace) (k : �
 
 ### D.3. Time derivatives of the electric field
 
-**`Electromagnetism.ElectromagneticPotential.harmonicWaveX_electricField_succ_time_deriv`**, a lemma, [line 300](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/Electromagnetism/Vacuum/HarmonicWave.lean#L300).
+**`Electromagnetism.ElectromagneticPotential.harmonicWaveX_electricField_succ_time_deriv`**, a lemma, [line 300](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Electromagnetism/Vacuum/HarmonicWave.lean#L300).
 
 ```lean
 lemma harmonicWaveX_electricField_succ_time_deriv {d} (𝓕 : FreeSpace) (k : ℝ) (hk : k ≠ 0)
@@ -188,7 +188,7 @@ lemma harmonicWaveX_electricField_succ_time_deriv {d} (𝓕 : FreeSpace) (k : �
 
 ### D.4. Divergence of the electric field
 
-**`Electromagnetism.ElectromagneticPotential.harmonicWaveX_div_electricField_eq_zero`**, a lemma, [line 324](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/Electromagnetism/Vacuum/HarmonicWave.lean#L324).
+**`Electromagnetism.ElectromagneticPotential.harmonicWaveX_div_electricField_eq_zero`**, a lemma, [line 324](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Electromagnetism/Vacuum/HarmonicWave.lean#L324).
 
 ```lean
 lemma harmonicWaveX_div_electricField_eq_zero {d} (𝓕 : FreeSpace) (k : ℝ) (hk : k ≠ 0)
@@ -200,7 +200,7 @@ lemma harmonicWaveX_div_electricField_eq_zero {d} (𝓕 : FreeSpace) (k : ℝ) (
 
 ### E.1. Components of the magnetic field matrix
 
-**`Electromagnetism.ElectromagneticPotential.harmonicWaveX_magneticFieldMatrix_succ_succ`**, a lemma, [line 343](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/Electromagnetism/Vacuum/HarmonicWave.lean#L343).
+**`Electromagnetism.ElectromagneticPotential.harmonicWaveX_magneticFieldMatrix_succ_succ`**, a lemma, [line 343](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Electromagnetism/Vacuum/HarmonicWave.lean#L343).
 
 ```lean
 lemma harmonicWaveX_magneticFieldMatrix_succ_succ {d} (𝓕 : FreeSpace) (k : ℝ)
@@ -209,7 +209,7 @@ lemma harmonicWaveX_magneticFieldMatrix_succ_succ {d} (𝓕 : FreeSpace) (k : �
     (harmonicWaveX 𝓕 k E₀ φ).magneticFieldMatrix 𝓕.c t x (i.succ, j.succ) = 0
 ```
 
-**`Electromagnetism.ElectromagneticPotential.harmonicWaveX_magneticFieldMatrix_zero_succ`**, a lemma, [line 350](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/Electromagnetism/Vacuum/HarmonicWave.lean#L350).
+**`Electromagnetism.ElectromagneticPotential.harmonicWaveX_magneticFieldMatrix_zero_succ`**, a lemma, [line 350](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Electromagnetism/Vacuum/HarmonicWave.lean#L350).
 
 ```lean
 lemma harmonicWaveX_magneticFieldMatrix_zero_succ {d} (𝓕 : FreeSpace) (k : ℝ) (hk : k ≠ 0)
@@ -219,7 +219,7 @@ lemma harmonicWaveX_magneticFieldMatrix_zero_succ {d} (𝓕 : FreeSpace) (k : �
     (- E₀ i / 𝓕.c.val) * cos (𝓕.c.val * k * t.val - k * x 0 + φ i)
 ```
 
-**`Electromagnetism.ElectromagneticPotential.harmonicWaveX_magneticFieldMatrix_succ_zero`**, a lemma, [line 363](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/Electromagnetism/Vacuum/HarmonicWave.lean#L363).
+**`Electromagnetism.ElectromagneticPotential.harmonicWaveX_magneticFieldMatrix_succ_zero`**, a lemma, [line 363](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Electromagnetism/Vacuum/HarmonicWave.lean#L363).
 
 ```lean
 lemma harmonicWaveX_magneticFieldMatrix_succ_zero {d} (𝓕 : FreeSpace) (k : ℝ) (hk : k ≠ 0)
@@ -231,7 +231,7 @@ lemma harmonicWaveX_magneticFieldMatrix_succ_zero {d} (𝓕 : FreeSpace) (k : �
 
 ### E.2. Space derivatives of the magnetic field matrix
 
-**`Electromagnetism.ElectromagneticPotential.harmonicWaveX_magneticFieldMatrix_space_deriv_succ`**, a lemma, [line 380](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/Electromagnetism/Vacuum/HarmonicWave.lean#L380).
+**`Electromagnetism.ElectromagneticPotential.harmonicWaveX_magneticFieldMatrix_space_deriv_succ`**, a lemma, [line 380](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Electromagnetism/Vacuum/HarmonicWave.lean#L380).
 
 ```lean
 lemma harmonicWaveX_magneticFieldMatrix_space_deriv_succ {d} (𝓕 : FreeSpace) (k : ℝ)
@@ -242,7 +242,7 @@ lemma harmonicWaveX_magneticFieldMatrix_space_deriv_succ {d} (𝓕 : FreeSpace) 
     = 0
 ```
 
-**`Electromagnetism.ElectromagneticPotential.harmonicWaveX_magneticFieldMatrix_zero_succ_space_deriv_zero`**, a lemma, [line 415](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/Electromagnetism/Vacuum/HarmonicWave.lean#L415).
+**`Electromagnetism.ElectromagneticPotential.harmonicWaveX_magneticFieldMatrix_zero_succ_space_deriv_zero`**, a lemma, [line 415](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Electromagnetism/Vacuum/HarmonicWave.lean#L415).
 
 ```lean
 lemma harmonicWaveX_magneticFieldMatrix_zero_succ_space_deriv_zero {d} (𝓕 : FreeSpace) (k : ℝ)
@@ -255,7 +255,7 @@ lemma harmonicWaveX_magneticFieldMatrix_zero_succ_space_deriv_zero {d} (𝓕 : F
 
 ## F. Maxwell's equations for a harmonic wave
 
-**`Electromagnetism.ElectromagneticPotential.harmonicWaveX_isExtrema`**, a lemma, [line 444](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/Electromagnetism/Vacuum/HarmonicWave.lean#L444).
+**`Electromagnetism.ElectromagneticPotential.harmonicWaveX_isExtrema`**, a lemma, [line 444](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Electromagnetism/Vacuum/HarmonicWave.lean#L444).
 
 ```lean
 lemma harmonicWaveX_isExtrema {d} (𝓕 : FreeSpace) (k : ℝ) (hk : k ≠ 0)
@@ -265,7 +265,7 @@ lemma harmonicWaveX_isExtrema {d} (𝓕 : FreeSpace) (k : ℝ) (hk : k ≠ 0)
 
 ## G. The harmonic wave is a plane wave
 
-**`Electromagnetism.ElectromagneticPotential.harmonicWaveX_isPlaneWave`**, a lemma, [line 486](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/Electromagnetism/Vacuum/HarmonicWave.lean#L486).
+**`Electromagnetism.ElectromagneticPotential.harmonicWaveX_isPlaneWave`**, a lemma, [line 486](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Electromagnetism/Vacuum/HarmonicWave.lean#L486).
 
 ```lean
 lemma harmonicWaveX_isPlaneWave {d} (𝓕 : FreeSpace) (k : ℝ) (hk : k ≠ 0)
@@ -275,7 +275,7 @@ lemma harmonicWaveX_isPlaneWave {d} (𝓕 : FreeSpace) (k : ℝ) (hk : k ≠ 0)
 
 ## H. Polarization ellipse of the harmonic wave
 
-**`Electromagnetism.ElectromagneticPotential.harmonicWaveX_polarization_ellipse`**, a lemma, [line 549](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/Electromagnetism/Vacuum/HarmonicWave.lean#L549).
+**`Electromagnetism.ElectromagneticPotential.harmonicWaveX_polarization_ellipse`**, a lemma, [line 549](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Electromagnetism/Vacuum/HarmonicWave.lean#L549).
 
 ```lean
 lemma harmonicWaveX_polarization_ellipse {d} (𝓕 : FreeSpace) (k : ℝ) (hk : k ≠ 0)
@@ -293,4 +293,4 @@ lemma harmonicWaveX_polarization_ellipse {d} (𝓕 : FreeSpace) (k : ℝ) (hk : 
 
 ## Sources
 
-- [Physlib/Electromagnetism/Vacuum/HarmonicWave.lean at 2a1dfe43](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/Electromagnetism/Vacuum/HarmonicWave.lean)
+- [Physlib/Electromagnetism/Vacuum/HarmonicWave.lean at 8c87bdfb](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Electromagnetism/Vacuum/HarmonicWave.lean)

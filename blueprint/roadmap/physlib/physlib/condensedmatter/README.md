@@ -1,6 +1,6 @@
 # CondensedMatter
 
-The folder [Physlib/CondensedMatter/](https://github.com/leanprover-community/physlib/tree/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/CondensedMatter): 3 folders below it, a page each, 7 modules in all.
+The folder [Physlib/CondensedMatter/](https://github.com/leanprover-community/physlib/tree/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/CondensedMatter): 3 folders below it, a page each, 10 modules in all.
 
 - [Crystal](crystal/README.md)
 - [Thermoelectric](thermoelectric/README.md)

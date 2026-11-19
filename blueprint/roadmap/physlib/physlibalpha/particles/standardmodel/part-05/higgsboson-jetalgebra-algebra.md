@@ -8,7 +8,7 @@ proof: formalized
 
 # The jet algebra of the Higgs field (Algebra)
 
-The module `PhyslibAlpha.Particles.StandardModel.HiggsBoson.JetAlgebra.Algebra`, [PhyslibAlpha/Particles/StandardModel/HiggsBoson/JetAlgebra/Algebra.lean](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/HiggsBoson/JetAlgebra/Algebra.lean): 9 declarations, 9 with a docstring.
+The module `PhyslibAlpha.Particles.StandardModel.HiggsBoson.JetAlgebra.Algebra`, [PhyslibAlpha/Particles/StandardModel/HiggsBoson/JetAlgebra/Algebra.lean](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/HiggsBoson/JetAlgebra/Algebra.lean): 9 declarations, 9 with a docstring.
 
 ## i. Overview
 
@@ -38,7 +38,7 @@ The module `PhyslibAlpha.Particles.StandardModel.HiggsBoson.JetAlgebra.Algebra`,
 
 ## A. The jet algebra of the Higgs field
 
-**`StandardModel.HiggsJetAlgebra`**, an abbrev, [line 61](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/HiggsBoson/JetAlgebra/Algebra.lean#L61).
+**`StandardModel.HiggsJetAlgebra`**, an abbrev, [line 61](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/HiggsBoson/JetAlgebra/Algebra.lean#L61).
 
 > **The jet algebra of the Higgs field**: the bosonic algebra of the `HiggsVec`-valued
 > Higgs field. Its generators are the component functions `∂_s H_α` and `∂_s H̄_α`, and
@@ -50,7 +50,7 @@ abbrev HiggsJetAlgebra : Type
 
 ### A.1. The component functions
 
-**`StandardModel.HiggsJetAlgebra.ofHiggs`**, a def, [line 76](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/HiggsBoson/JetAlgebra/Algebra.lean#L76).
+**`StandardModel.HiggsJetAlgebra.ofHiggs`**, a def, [line 76](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/HiggsBoson/JetAlgebra/Algebra.lean#L76).
 
 > The component functions of the Higgs field inside its jet algebra.
 
@@ -58,7 +58,7 @@ abbrev HiggsJetAlgebra : Type
 noncomputable def ofHiggs : Module.Dual ℂ HiggsVec →ₗ[ℂ] HiggsJetAlgebra
 ```
 
-**`StandardModel.HiggsJetAlgebra.ofConjHiggs`**, a def, [line 80](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/HiggsBoson/JetAlgebra/Algebra.lean#L80).
+**`StandardModel.HiggsJetAlgebra.ofConjHiggs`**, a def, [line 80](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/HiggsBoson/JetAlgebra/Algebra.lean#L80).
 
 > The conjugate component functions of the Higgs field inside its jet algebra.
 
@@ -69,7 +69,7 @@ noncomputable def ofConjHiggs :
 
 ### A.2. The Lorentz action
 
-**`StandardModel.HiggsJetAlgebra.repLorentzGroup`**, a def, [line 94](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/HiggsBoson/JetAlgebra/Algebra.lean#L94).
+**`StandardModel.HiggsJetAlgebra.repLorentzGroup`**, a def, [line 94](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/HiggsBoson/JetAlgebra/Algebra.lean#L94).
 
 > The Lorentz action on the jet algebra of the Higgs field: the Higgs is a Lorentz
 > scalar, so the Lorentz group acts on the component functions only through their
@@ -81,7 +81,7 @@ noncomputable def repLorentzGroup : Representation ℂ SL(2,ℂ) HiggsJetAlgebra
 
 ### A.3. The jet gauge action
 
-**`StandardModel.HiggsJetAlgebra.repJetGaugeGroupI`**, a def, [line 105](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/HiggsBoson/JetAlgebra/Algebra.lean#L105).
+**`StandardModel.HiggsJetAlgebra.repJetGaugeGroupI`**, a def, [line 105](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/HiggsBoson/JetAlgebra/Algebra.lean#L105).
 
 > The jet gauge action on the jet algebra of the Higgs field, lifted from the fibrewise
 > action on its jets.
@@ -90,7 +90,7 @@ noncomputable def repLorentzGroup : Representation ℂ SL(2,ℂ) HiggsJetAlgebra
 noncomputable def repJetGaugeGroupI : Representation ℂ JetGaugeGroupI HiggsJetAlgebra
 ```
 
-**`StandardModel.HiggsJetAlgebra.repGaugeGroupI`**, a def, [line 110](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/HiggsBoson/JetAlgebra/Algebra.lean#L110).
+**`StandardModel.HiggsJetAlgebra.repGaugeGroupI`**, a def, [line 110](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/HiggsBoson/JetAlgebra/Algebra.lean#L110).
 
 > The action of the constant — global — gauge transformations on the jet algebra of the
 > Higgs field.
@@ -101,7 +101,7 @@ noncomputable def repGaugeGroupI : Representation ℂ GaugeGroupI HiggsJetAlgebr
 
 ### A.4. The mass-dimension scaling
 
-**`StandardModel.HiggsJetAlgebra.massWeightScale`**, a def, [line 121](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/HiggsBoson/JetAlgebra/Algebra.lean#L121).
+**`StandardModel.HiggsJetAlgebra.massWeightScale`**, a def, [line 121](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/HiggsBoson/JetAlgebra/Algebra.lean#L121).
 
 > The mass-dimension scaling on the jet algebra of the Higgs field: the Higgs has mass
 > dimension one, that is mass weight two, and each derivative adds mass weight two.
@@ -110,7 +110,7 @@ noncomputable def repGaugeGroupI : Representation ℂ GaugeGroupI HiggsJetAlgebr
 noncomputable def massWeightScale (c : ℂ) : HiggsJetAlgebra →ₐ[ℂ] HiggsJetAlgebra
 ```
 
-**`StandardModel.HiggsJetAlgebra.massWeightScale_ofHiggs`**, a lemma, [line 126](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/HiggsBoson/JetAlgebra/Algebra.lean#L126).
+**`StandardModel.HiggsJetAlgebra.massWeightScale_ofHiggs`**, a lemma, [line 126](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/HiggsBoson/JetAlgebra/Algebra.lean#L126).
 
 > The Higgs field carries mass weight two — mass dimension one.
 
@@ -119,7 +119,7 @@ lemma massWeightScale_ofHiggs (c : ℂ) (φ : Module.Dual ℂ HiggsVec) :
     massWeightScale c (ofHiggs φ) = c ^ 2 • ofHiggs φ
 ```
 
-**`StandardModel.HiggsJetAlgebra.massWeightScale_jetDeriv`**, a lemma, [line 131](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/HiggsBoson/JetAlgebra/Algebra.lean#L131).
+**`StandardModel.HiggsJetAlgebra.massWeightScale_jetDeriv`**, a lemma, [line 131](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/HiggsBoson/JetAlgebra/Algebra.lean#L131).
 
 > A derivative of the Higgs field adds mass weight two.
 
@@ -138,4 +138,4 @@ lemma massWeightScale_jetDeriv (c : ℂ) (μ : Fin 1 ⊕ Fin 3) (x : HiggsJetAlg
 
 ## Sources
 
-- [PhyslibAlpha/Particles/StandardModel/HiggsBoson/JetAlgebra/Algebra.lean at 2a1dfe43](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/HiggsBoson/JetAlgebra/Algebra.lean)
+- [PhyslibAlpha/Particles/StandardModel/HiggsBoson/JetAlgebra/Algebra.lean at 8c87bdfb](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/HiggsBoson/JetAlgebra/Algebra.lean)

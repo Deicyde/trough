@@ -8,7 +8,7 @@ proof: formalized
 
 # The Clebsch–Gordan dimension identity
 
-The module `PhyslibAlpha.Mathematics.RepresentationTheory.Sl2.ClebschGordan`, [PhyslibAlpha/Mathematics/RepresentationTheory/Sl2/ClebschGordan.lean](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Mathematics/RepresentationTheory/Sl2/ClebschGordan.lean): 4 declarations, 4 with a docstring.
+The module `PhyslibAlpha.Mathematics.RepresentationTheory.Sl2.ClebschGordan`, [PhyslibAlpha/Mathematics/RepresentationTheory/Sl2/ClebschGordan.lean](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Mathematics/RepresentationTheory/Sl2/ClebschGordan.lean): 4 declarations, 4 with a docstring.
 
 > Computes the dimensions in the tensor-product decomposition of standard `sl₂` modules.
 
@@ -30,7 +30,7 @@ The module `PhyslibAlpha.Mathematics.RepresentationTheory.Sl2.ClebschGordan`, [P
 
 ## A. Dimension counting
 
-**`PhyslibAlpha.Sl2.sum_arithmetic_progression`**, a lemma, [line 50](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Mathematics/RepresentationTheory/Sl2/ClebschGordan.lean#L50).
+**`PhyslibAlpha.Sl2.sum_arithmetic_progression`**, a lemma, [line 50](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Mathematics/RepresentationTheory/Sl2/ClebschGordan.lean#L50).
 
 > The arithmetic progression underlying the Clebsch–Gordan dimension count.
 
@@ -39,7 +39,7 @@ lemma sum_arithmetic_progression (m d : ℕ) :
     ∑ k ∈ Finset.range (m + 1), (d + 2 * k + 1) = (m + 1) * (d + m + 1)
 ```
 
-**`PhyslibAlpha.Sl2.clebsch_gordan_finrank_aux`**, a lemma, [line 61](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Mathematics/RepresentationTheory/Sl2/ClebschGordan.lean#L61).
+**`PhyslibAlpha.Sl2.clebsch_gordan_finrank_aux`**, a lemma, [line 61](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Mathematics/RepresentationTheory/Sl2/ClebschGordan.lean#L61).
 
 > Reindex the dimension sum when `m ≤ n`.
 
@@ -48,7 +48,7 @@ lemma clebsch_gordan_finrank_aux (m n : ℕ) (h : m ≤ n) :
     (m + 1) * (n + 1) = ∑ k ∈ Finset.range (m + 1), (m + n - 2 * k + 1)
 ```
 
-**`PhyslibAlpha.Sl2.clebsch_gordan_finrank`**, a lemma, [line 79](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Mathematics/RepresentationTheory/Sl2/ClebschGordan.lean#L79).
+**`PhyslibAlpha.Sl2.clebsch_gordan_finrank`**, a lemma, [line 79](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Mathematics/RepresentationTheory/Sl2/ClebschGordan.lean#L79).
 
 > Clebsch–Gordan decomposition, dimension form:
 > the numerical shadow `(m+1)(n+1) = ∑_{k=0}^{min(m,n)} (m+n-2k+1)` of the module
@@ -59,7 +59,7 @@ lemma clebsch_gordan_finrank (m n : ℕ) :
     (m + 1) * (n + 1) = ∑ k ∈ Finset.range (min m n + 1), (m + n - 2 * k + 1)
 ```
 
-**`PhyslibAlpha.Sl2.clebsch_gordan`**, a lemma, [line 92](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Mathematics/RepresentationTheory/Sl2/ClebschGordan.lean#L92).
+**`PhyslibAlpha.Sl2.clebsch_gordan`**, a lemma, [line 92](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Mathematics/RepresentationTheory/Sl2/ClebschGordan.lean#L92).
 
 > Clebsch–Gordan decomposition, vector-space form:
 > `V(m) ⊗ V(n)` is linearly isomorphic to `⊕_{k=0}^{min(m,n)} V(m+n-2k)`.
@@ -79,4 +79,4 @@ lemma clebsch_gordan (m n : ℕ) :
 
 ## Sources
 
-- [PhyslibAlpha/Mathematics/RepresentationTheory/Sl2/ClebschGordan.lean at 2a1dfe43](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Mathematics/RepresentationTheory/Sl2/ClebschGordan.lean)
+- [PhyslibAlpha/Mathematics/RepresentationTheory/Sl2/ClebschGordan.lean at 8c87bdfb](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Mathematics/RepresentationTheory/Sl2/ClebschGordan.lean)

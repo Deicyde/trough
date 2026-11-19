@@ -8,7 +8,7 @@ proof: formalized
 
 # The mass-weight polynomial on the jet algebra of the Standard Model
 
-The module `PhyslibAlpha.Particles.StandardModel.JetAlgebra.MassWeightPoly`, [PhyslibAlpha/Particles/StandardModel/JetAlgebra/MassWeightPoly.lean](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/JetAlgebra/MassWeightPoly.lean): 35 declarations, 33 with a docstring; 1 private, not shown.
+The module `PhyslibAlpha.Particles.StandardModel.JetAlgebra.MassWeightPoly`, [PhyslibAlpha/Particles/StandardModel/JetAlgebra/MassWeightPoly.lean](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/JetAlgebra/MassWeightPoly.lean): 35 declarations, 33 with a docstring; 1 private, not shown.
 
 ## i. Overview
 
@@ -63,7 +63,7 @@ The module `PhyslibAlpha.Particles.StandardModel.JetAlgebra.MassWeightPoly`, [Ph
 > known one coefficient at a time — so the work of this section is to promote a commutation
 > of coefficients to a commutation of polynomials, which is an induction over monomials.
 
-**`StandardModel.JetAlgebra.commute_monomial`**, a lemma, [line 100](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/JetAlgebra/MassWeightPoly.lean#L100).
+**`StandardModel.JetAlgebra.commute_monomial`**, a lemma, [line 100](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/JetAlgebra/MassWeightPoly.lean#L100).
 
 > Two monomials with commuting coefficients commute: the variable is central, so the two
 > products are the same monomial.
@@ -73,7 +73,7 @@ lemma commute_monomial {C : Type*} [Semiring C] {a b : C} (h : Commute a b)
     (n m : ℕ) : Commute (Polynomial.monomial n a) (Polynomial.monomial m b)
 ```
 
-**`StandardModel.JetAlgebra.commute_mapAlgHom`**, a lemma, [line 109](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/JetAlgebra/MassWeightPoly.lean#L109).
+**`StandardModel.JetAlgebra.commute_mapAlgHom`**, a lemma, [line 109](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/JetAlgebra/MassWeightPoly.lean#L109).
 
 > Polynomials pushed forward along two algebra maps with commuting images commute: every
 > polynomial is a sum of monomials, and monomials with commuting coefficients commute.
@@ -85,7 +85,7 @@ lemma commute_mapAlgHom {A B C : Type*} [Semiring A] [Algebra ℂ A] [Semiring B
     Commute (Polynomial.mapAlgHom f p) (Polynomial.mapAlgHom g q)
 ```
 
-**`StandardModel.JetAlgebra.commute_mapAlgHom_includeGauge`**, a lemma, [line 125](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/JetAlgebra/MassWeightPoly.lean#L125).
+**`StandardModel.JetAlgebra.commute_mapAlgHom_includeGauge`**, a lemma, [line 125](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/JetAlgebra/MassWeightPoly.lean#L125).
 
 > Every polynomial over the jet algebra commutes with a polynomial whose coefficients lie
 > in the gauge sector: the gauge sector is central, so the commutation holds coefficient by
@@ -104,7 +104,7 @@ lemma commute_mapAlgHom_includeGauge (p : Polynomial JetAlgebra)
 > assembled by the universal property of the tensor product — first over the matter factor,
 > then over the whole algebra.
 
-**`StandardModel.JetAlgebra.fermionMassWeightPoly`**, a def, [line 151](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/JetAlgebra/MassWeightPoly.lean#L151).
+**`StandardModel.JetAlgebra.fermionMassWeightPoly`**, a def, [line 151](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/JetAlgebra/MassWeightPoly.lean#L151).
 
 > The fermionic mass-weight grading, transported into the full jet algebra. The fermionic
 > symbols have mass dimension `3/2`, hence mass weight three.
@@ -114,7 +114,7 @@ noncomputable def fermionMassWeightPoly :
     FermionJetAlgebra →ₐ[ℂ] Polynomial JetAlgebra
 ```
 
-**`StandardModel.JetAlgebra.higgsMassWeightPoly`**, a def, [line 157](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/JetAlgebra/MassWeightPoly.lean#L157).
+**`StandardModel.JetAlgebra.higgsMassWeightPoly`**, a def, [line 157](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/JetAlgebra/MassWeightPoly.lean#L157).
 
 > The Higgs mass-weight grading, transported into the full jet algebra. The Higgs symbols
 > have mass dimension one, hence mass weight two.
@@ -123,7 +123,7 @@ noncomputable def fermionMassWeightPoly :
 noncomputable def higgsMassWeightPoly : HiggsJetAlgebra →ₐ[ℂ] Polynomial JetAlgebra
 ```
 
-**`StandardModel.JetAlgebra.gaugeMassWeightPoly`**, a def, [line 162](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/JetAlgebra/MassWeightPoly.lean#L162).
+**`StandardModel.JetAlgebra.gaugeMassWeightPoly`**, a def, [line 162](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/JetAlgebra/MassWeightPoly.lean#L162).
 
 > The gauge-boson mass-weight grading, transported into the full jet algebra. The gauge
 > symbols have mass dimension one, hence mass weight two.
@@ -133,7 +133,7 @@ noncomputable def gaugeMassWeightPoly :
     (ℂ ⊗[ℝ] (LocalGaugeFieldAlgebra GaugeAlgebra)) →ₐ[ℂ] Polynomial JetAlgebra
 ```
 
-**`StandardModel.JetAlgebra.fermionFactorMassWeightPoly`**, a def, [line 169](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/JetAlgebra/MassWeightPoly.lean#L169).
+**`StandardModel.JetAlgebra.fermionFactorMassWeightPoly`**, a def, [line 169](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/JetAlgebra/MassWeightPoly.lean#L169).
 
 > The fermionic grading read on the fermionic factor of the carrier: the fermionic sector
 > grading, precomposed with the sector equivalence. The sector helper above keeps its own
@@ -144,7 +144,7 @@ noncomputable def fermionFactorMassWeightPoly :
     ExteriorAlgebra ℂ fieldData.FermionGenerators →ₐ[ℂ] Polynomial JetAlgebra
 ```
 
-**`StandardModel.JetAlgebra.bosonFactorMassWeightPoly`**, a def, [line 174](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/JetAlgebra/MassWeightPoly.lean#L174).
+**`StandardModel.JetAlgebra.bosonFactorMassWeightPoly`**, a def, [line 174](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/JetAlgebra/MassWeightPoly.lean#L174).
 
 > The Higgs grading read on the bosonic factor of the carrier.
 
@@ -153,7 +153,7 @@ noncomputable def bosonFactorMassWeightPoly :
     SymmetricAlgebra ℂ fieldData.BosonGenerators →ₐ[ℂ] Polynomial JetAlgebra
 ```
 
-**`StandardModel.JetAlgebra.fermionFactorMassWeightPoly_apply`**, a lemma, [line 178](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/JetAlgebra/MassWeightPoly.lean#L178).
+**`StandardModel.JetAlgebra.fermionFactorMassWeightPoly_apply`**, a lemma, [line 178](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/JetAlgebra/MassWeightPoly.lean#L178).
 
 ```lean
 lemma fermionFactorMassWeightPoly_apply (a : ExteriorAlgebra ℂ fieldData.FermionGenerators) :
@@ -162,7 +162,7 @@ lemma fermionFactorMassWeightPoly_apply (a : ExteriorAlgebra ℂ fieldData.Fermi
         (FermionicAlgebra.massWeightPoly 3 (fermionAlgebraEquiv.symm a))
 ```
 
-**`StandardModel.JetAlgebra.bosonFactorMassWeightPoly_apply`**, a lemma, [line 183](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/JetAlgebra/MassWeightPoly.lean#L183).
+**`StandardModel.JetAlgebra.bosonFactorMassWeightPoly_apply`**, a lemma, [line 183](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/JetAlgebra/MassWeightPoly.lean#L183).
 
 ```lean
 lemma bosonFactorMassWeightPoly_apply (b : SymmetricAlgebra ℂ fieldData.BosonGenerators) :
@@ -171,7 +171,7 @@ lemma bosonFactorMassWeightPoly_apply (b : SymmetricAlgebra ℂ fieldData.BosonG
         (BosonicAlgebra.massWeightPoly 2 (higgsAlgebraEquiv.symm b))
 ```
 
-**`StandardModel.JetAlgebra.matterMassWeightPoly`**, a def, [line 192](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/JetAlgebra/MassWeightPoly.lean#L192).
+**`StandardModel.JetAlgebra.matterMassWeightPoly`**, a def, [line 192](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/JetAlgebra/MassWeightPoly.lean#L192).
 
 > The mass-weight grading on the matter factor of the jet algebra: the fermionic and
 > Higgs gradings, lifted over the tensor product of the two matter factors of the carrier.
@@ -183,7 +183,7 @@ noncomputable def matterMassWeightPoly :
     fieldData.MatterAlgebra →ₐ[ℂ] Polynomial JetAlgebra
 ```
 
-**`StandardModel.JetAlgebra.massWeightPoly`**, a def, [line 208](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/JetAlgebra/MassWeightPoly.lean#L208).
+**`StandardModel.JetAlgebra.massWeightPoly`**, a def, [line 208](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/JetAlgebra/MassWeightPoly.lean#L208).
 
 > The mass-weight polynomial on the jet algebra of the Standard Model: the `ℂ`-algebra
 > map sending a generator of mass weight `n` to `X ^ n` times itself, so that the
@@ -202,7 +202,7 @@ noncomputable def massWeightPoly : JetAlgebra →ₐ[ℂ] Polynomial JetAlgebra
 > own grading, transported. These three lemmas are the whole content of the assembly: every
 > generator computation below is one of them followed by a sector generator lemma.
 
-**`StandardModel.JetAlgebra.massWeightPoly_tmul`**, a lemma, [line 226](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/JetAlgebra/MassWeightPoly.lean#L226).
+**`StandardModel.JetAlgebra.massWeightPoly_tmul`**, a lemma, [line 226](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/JetAlgebra/MassWeightPoly.lean#L226).
 
 > On a pure tensor the grading is the product of the matter and gauge gradings.
 
@@ -212,7 +212,7 @@ lemma massWeightPoly_tmul (x : fieldData.MatterAlgebra)
     massWeightPoly (x ⊗ₜ[ℂ] y) = matterMassWeightPoly x * gaugeMassWeightPoly y
 ```
 
-**`StandardModel.JetAlgebra.matterMassWeightPoly_tmul`**, a lemma, [line 232](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/JetAlgebra/MassWeightPoly.lean#L232).
+**`StandardModel.JetAlgebra.matterMassWeightPoly_tmul`**, a lemma, [line 232](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/JetAlgebra/MassWeightPoly.lean#L232).
 
 > On a pure tensor the matter grading is the product of the fermionic and bosonic factor
 > gradings.
@@ -224,7 +224,7 @@ lemma matterMassWeightPoly_tmul (a : ExteriorAlgebra ℂ fieldData.FermionGenera
       = fermionFactorMassWeightPoly a * bosonFactorMassWeightPoly b
 ```
 
-**`StandardModel.JetAlgebra.massWeightPoly_includeFermionFactor`**, a lemma, [line 240](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/JetAlgebra/MassWeightPoly.lean#L240).
+**`StandardModel.JetAlgebra.massWeightPoly_includeFermionFactor`**, a lemma, [line 240](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/JetAlgebra/MassWeightPoly.lean#L240).
 
 > On the fermionic factor the grading is that factor's own grading. Like every step
 > below it is written as an equation chain, which never abstracts a pattern out of a goal
@@ -236,7 +236,7 @@ lemma massWeightPoly_includeFermionFactor
     massWeightPoly (fieldData.includeFermion a) = fermionFactorMassWeightPoly a
 ```
 
-**`StandardModel.JetAlgebra.massWeightPoly_includeBosonFactor`**, a lemma, [line 254](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/JetAlgebra/MassWeightPoly.lean#L254).
+**`StandardModel.JetAlgebra.massWeightPoly_includeBosonFactor`**, a lemma, [line 254](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/JetAlgebra/MassWeightPoly.lean#L254).
 
 > On the bosonic factor the grading is that factor's own grading.
 
@@ -246,7 +246,7 @@ lemma massWeightPoly_includeBosonFactor
     massWeightPoly (fieldData.includeBoson b) = bosonFactorMassWeightPoly b
 ```
 
-**`StandardModel.JetAlgebra.massWeightPoly_includeConnection`**, a lemma, [line 268](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/JetAlgebra/MassWeightPoly.lean#L268).
+**`StandardModel.JetAlgebra.massWeightPoly_includeConnection`**, a lemma, [line 268](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/JetAlgebra/MassWeightPoly.lean#L268).
 
 > On the connection factor the grading is the generic gauge-boson grading.
 
@@ -255,7 +255,7 @@ lemma massWeightPoly_includeConnection (y : ℂ ⊗[ℝ] (LocalGaugeFieldAlgebra
     massWeightPoly (fieldData.includeConnection y) = gaugeMassWeightPoly y
 ```
 
-**`StandardModel.JetAlgebra.massWeightPoly_includeFermion`**, a lemma, [line 277](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/JetAlgebra/MassWeightPoly.lean#L277).
+**`StandardModel.JetAlgebra.massWeightPoly_includeFermion`**, a lemma, [line 277](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/JetAlgebra/MassWeightPoly.lean#L277).
 
 > On the fermionic sector the grading is the fermionic sector's own grading, pushed
 > forward along the fermionic inclusion.
@@ -266,7 +266,7 @@ lemma massWeightPoly_includeFermion (a : FermionJetAlgebra) :
       = Polynomial.mapAlgHom includeFermion (FermionicAlgebra.massWeightPoly 3 a)
 ```
 
-**`StandardModel.JetAlgebra.massWeightPoly_includeHiggs`**, a lemma, [line 287](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/JetAlgebra/MassWeightPoly.lean#L287).
+**`StandardModel.JetAlgebra.massWeightPoly_includeHiggs`**, a lemma, [line 287](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/JetAlgebra/MassWeightPoly.lean#L287).
 
 > On the Higgs sector the grading is the Higgs sector's own grading, pushed forward along
 > the Higgs inclusion.
@@ -277,7 +277,7 @@ lemma massWeightPoly_includeHiggs (h : HiggsJetAlgebra) :
       = Polynomial.mapAlgHom includeHiggs (BosonicAlgebra.massWeightPoly 2 h)
 ```
 
-**`StandardModel.JetAlgebra.massWeightPoly_includeGauge`**, a lemma, [line 298](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/JetAlgebra/MassWeightPoly.lean#L298).
+**`StandardModel.JetAlgebra.massWeightPoly_includeGauge`**, a lemma, [line 298](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/JetAlgebra/MassWeightPoly.lean#L298).
 
 > On the gauge sector the grading is the gauge sector's own grading, pushed forward along
 > the gauge inclusion. The gauge sector inclusion is the connection inclusion of the datum,
@@ -295,7 +295,7 @@ lemma massWeightPoly_includeGauge (y : ℂ ⊗[ℝ] (LocalGaugeFieldAlgebra Gaug
 > `1 + |s|` and mass weight twice that. The exponent is written in the form
 > `2 * (1 + |s|)` that `AlgebraRealization` asks for.
 
-**`StandardModel.JetAlgebra.massWeightPoly_higgsField`**, a lemma, [line 322](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/JetAlgebra/MassWeightPoly.lean#L322).
+**`StandardModel.JetAlgebra.massWeightPoly_higgsField`**, a lemma, [line 322](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/JetAlgebra/MassWeightPoly.lean#L322).
 
 > The Higgs symbol `∂_s H_φ` is a monomial eigenvector of mass weight `2 * (1 + |s|)`:
 > the Higgs field has mass dimension one and each derivative adds one more.
@@ -307,7 +307,7 @@ lemma massWeightPoly_higgsField (s : Multiset (Fin 1 ⊕ Fin 3))
       = Polynomial.monomial (2 * (1 + Multiset.card s)) (higgsField s φ)
 ```
 
-**`StandardModel.JetAlgebra.massWeightPoly_conjHiggsField`**, a lemma, [line 338](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/JetAlgebra/MassWeightPoly.lean#L338).
+**`StandardModel.JetAlgebra.massWeightPoly_conjHiggsField`**, a lemma, [line 338](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/JetAlgebra/MassWeightPoly.lean#L338).
 
 > The conjugate Higgs symbol `∂_s H̄_φ` is a monomial eigenvector of the same mass weight
 > `2 * (1 + |s|)` as the symbol it conjugates.
@@ -325,7 +325,7 @@ lemma massWeightPoly_conjHiggsField (s : Multiset (Fin 1 ⊕ Fin 3))
 > algebra through the complexification of the real gauge-boson jet algebra, so the
 > computation passes through the complexified grading of that sector.
 
-**`StandardModel.JetAlgebra.massWeightPoly_gaugeField`**, a lemma, [line 365](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/JetAlgebra/MassWeightPoly.lean#L365).
+**`StandardModel.JetAlgebra.massWeightPoly_gaugeField`**, a lemma, [line 365](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/JetAlgebra/MassWeightPoly.lean#L365).
 
 > The gauge-field symbol `∂_s A_μ^φ` is a monomial eigenvector of mass weight
 > `2 * (1 + |s|)`: the gauge field has mass dimension one and each derivative adds one
@@ -349,7 +349,7 @@ lemma massWeightPoly_gaugeField (s : Multiset (Fin 1 ⊕ Fin 3)) (μ : Fin 1 ⊕
 
 ### F.1. The symbols on the total fermionic target space
 
-**`StandardModel.JetAlgebra.massWeightPoly_fermionSymbol`**, a lemma, [line 407](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/JetAlgebra/MassWeightPoly.lean#L407).
+**`StandardModel.JetAlgebra.massWeightPoly_fermionSymbol`**, a lemma, [line 407](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/JetAlgebra/MassWeightPoly.lean#L407).
 
 > A fermionic symbol `∂_s ψ_φ` on the total fermionic target space is a monomial
 > eigenvector of mass weight `3 + 2 |s|`: a fermion has mass dimension `3/2` and each
@@ -362,7 +362,7 @@ lemma massWeightPoly_fermionSymbol (s : Multiset (Fin 1 ⊕ Fin 3))
       = Polynomial.monomial (3 + 2 * Multiset.card s) (fermionSymbol s φ)
 ```
 
-**`StandardModel.JetAlgebra.massWeightPoly_conjFermionSymbol`**, a lemma, [line 422](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/JetAlgebra/MassWeightPoly.lean#L422).
+**`StandardModel.JetAlgebra.massWeightPoly_conjFermionSymbol`**, a lemma, [line 422](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/JetAlgebra/MassWeightPoly.lean#L422).
 
 > A conjugate fermionic symbol `∂_s ψ̄_φ` on the total fermionic target space is a
 > monomial eigenvector of the same mass weight `3 + 2 |s|` as the symbol it conjugates.
@@ -376,7 +376,7 @@ lemma massWeightPoly_conjFermionSymbol (s : Multiset (Fin 1 ⊕ Fin 3))
 
 ### F.2. The ten species families
 
-**`StandardModel.JetAlgebra.massWeightPoly_leptonDoubletField`**, a lemma, [line 443](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/JetAlgebra/MassWeightPoly.lean#L443).
+**`StandardModel.JetAlgebra.massWeightPoly_leptonDoubletField`**, a lemma, [line 443](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/JetAlgebra/MassWeightPoly.lean#L443).
 
 > The symbol `∂_s ψ_φ` of the `i`-th generation lepton doublet is a monomial eigenvector
 > of mass weight `3 + 2 |s|`.
@@ -388,7 +388,7 @@ lemma massWeightPoly_leptonDoubletField (i : Fin 3) (s : Multiset (Fin 1 ⊕ Fin
       = Polynomial.monomial (3 + 2 * Multiset.card s) (leptonDoubletField i s φ)
 ```
 
-**`StandardModel.JetAlgebra.massWeightPoly_conjLeptonDoubletField`**, a lemma, [line 454](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/JetAlgebra/MassWeightPoly.lean#L454).
+**`StandardModel.JetAlgebra.massWeightPoly_conjLeptonDoubletField`**, a lemma, [line 454](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/JetAlgebra/MassWeightPoly.lean#L454).
 
 > The conjugate symbol `∂_s ψ̄_φ` of the `i`-th generation lepton doublet is a monomial
 > eigenvector of mass weight `3 + 2 |s|`.
@@ -400,7 +400,7 @@ lemma massWeightPoly_conjLeptonDoubletField (i : Fin 3) (s : Multiset (Fin 1 ⊕
       = Polynomial.monomial (3 + 2 * Multiset.card s) (conjLeptonDoubletField i s φ)
 ```
 
-**`StandardModel.JetAlgebra.massWeightPoly_leptonSingletField`**, a lemma, [line 465](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/JetAlgebra/MassWeightPoly.lean#L465).
+**`StandardModel.JetAlgebra.massWeightPoly_leptonSingletField`**, a lemma, [line 465](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/JetAlgebra/MassWeightPoly.lean#L465).
 
 > The symbol `∂_s ψ_φ` of the `i`-th generation charged-lepton singlet is a monomial eigenvector
 > of mass weight `3 + 2 |s|`.
@@ -412,7 +412,7 @@ lemma massWeightPoly_leptonSingletField (i : Fin 3) (s : Multiset (Fin 1 ⊕ Fin
       = Polynomial.monomial (3 + 2 * Multiset.card s) (leptonSingletField i s φ)
 ```
 
-**`StandardModel.JetAlgebra.massWeightPoly_conjLeptonSingletField`**, a lemma, [line 476](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/JetAlgebra/MassWeightPoly.lean#L476).
+**`StandardModel.JetAlgebra.massWeightPoly_conjLeptonSingletField`**, a lemma, [line 476](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/JetAlgebra/MassWeightPoly.lean#L476).
 
 > The conjugate symbol `∂_s ψ̄_φ` of the `i`-th generation charged-lepton singlet is a monomial
 > eigenvector of mass weight `3 + 2 |s|`.
@@ -424,7 +424,7 @@ lemma massWeightPoly_conjLeptonSingletField (i : Fin 3) (s : Multiset (Fin 1 ⊕
       = Polynomial.monomial (3 + 2 * Multiset.card s) (conjLeptonSingletField i s φ)
 ```
 
-**`StandardModel.JetAlgebra.massWeightPoly_quarkDoubletField`**, a lemma, [line 487](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/JetAlgebra/MassWeightPoly.lean#L487).
+**`StandardModel.JetAlgebra.massWeightPoly_quarkDoubletField`**, a lemma, [line 487](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/JetAlgebra/MassWeightPoly.lean#L487).
 
 > The symbol `∂_s ψ_φ` of the `i`-th generation quark doublet is a monomial eigenvector
 > of mass weight `3 + 2 |s|`.
@@ -436,7 +436,7 @@ lemma massWeightPoly_quarkDoubletField (i : Fin 3) (s : Multiset (Fin 1 ⊕ Fin 
       = Polynomial.monomial (3 + 2 * Multiset.card s) (quarkDoubletField i s φ)
 ```
 
-**`StandardModel.JetAlgebra.massWeightPoly_conjQuarkDoubletField`**, a lemma, [line 498](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/JetAlgebra/MassWeightPoly.lean#L498).
+**`StandardModel.JetAlgebra.massWeightPoly_conjQuarkDoubletField`**, a lemma, [line 498](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/JetAlgebra/MassWeightPoly.lean#L498).
 
 > The conjugate symbol `∂_s ψ̄_φ` of the `i`-th generation quark doublet is a monomial
 > eigenvector of mass weight `3 + 2 |s|`.
@@ -448,7 +448,7 @@ lemma massWeightPoly_conjQuarkDoubletField (i : Fin 3) (s : Multiset (Fin 1 ⊕ 
       = Polynomial.monomial (3 + 2 * Multiset.card s) (conjQuarkDoubletField i s φ)
 ```
 
-**`StandardModel.JetAlgebra.massWeightPoly_upSingletField`**, a lemma, [line 509](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/JetAlgebra/MassWeightPoly.lean#L509).
+**`StandardModel.JetAlgebra.massWeightPoly_upSingletField`**, a lemma, [line 509](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/JetAlgebra/MassWeightPoly.lean#L509).
 
 > The symbol `∂_s ψ_φ` of the `i`-th generation up-type quark singlet is a monomial eigenvector
 > of mass weight `3 + 2 |s|`.
@@ -460,7 +460,7 @@ lemma massWeightPoly_upSingletField (i : Fin 3) (s : Multiset (Fin 1 ⊕ Fin 3))
       = Polynomial.monomial (3 + 2 * Multiset.card s) (upSingletField i s φ)
 ```
 
-**`StandardModel.JetAlgebra.massWeightPoly_conjUpSingletField`**, a lemma, [line 520](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/JetAlgebra/MassWeightPoly.lean#L520).
+**`StandardModel.JetAlgebra.massWeightPoly_conjUpSingletField`**, a lemma, [line 520](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/JetAlgebra/MassWeightPoly.lean#L520).
 
 > The conjugate symbol `∂_s ψ̄_φ` of the `i`-th generation up-type quark singlet is a monomial
 > eigenvector of mass weight `3 + 2 |s|`.
@@ -472,7 +472,7 @@ lemma massWeightPoly_conjUpSingletField (i : Fin 3) (s : Multiset (Fin 1 ⊕ Fin
       = Polynomial.monomial (3 + 2 * Multiset.card s) (conjUpSingletField i s φ)
 ```
 
-**`StandardModel.JetAlgebra.massWeightPoly_downSingletField`**, a lemma, [line 531](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/JetAlgebra/MassWeightPoly.lean#L531).
+**`StandardModel.JetAlgebra.massWeightPoly_downSingletField`**, a lemma, [line 531](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/JetAlgebra/MassWeightPoly.lean#L531).
 
 > The symbol `∂_s ψ_φ` of the `i`-th generation down-type quark singlet is a monomial eigenvector
 > of mass weight `3 + 2 |s|`.
@@ -484,7 +484,7 @@ lemma massWeightPoly_downSingletField (i : Fin 3) (s : Multiset (Fin 1 ⊕ Fin 3
       = Polynomial.monomial (3 + 2 * Multiset.card s) (downSingletField i s φ)
 ```
 
-**`StandardModel.JetAlgebra.massWeightPoly_conjDownSingletField`**, a lemma, [line 542](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/JetAlgebra/MassWeightPoly.lean#L542).
+**`StandardModel.JetAlgebra.massWeightPoly_conjDownSingletField`**, a lemma, [line 542](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/JetAlgebra/MassWeightPoly.lean#L542).
 
 > The conjugate symbol `∂_s ψ̄_φ` of the `i`-th generation down-type quark singlet is a monomial
 > eigenvector of mass weight `3 + 2 |s|`.
@@ -505,4 +505,4 @@ lemma massWeightPoly_conjDownSingletField (i : Fin 3) (s : Multiset (Fin 1 ⊕ F
 
 ## Sources
 
-- [PhyslibAlpha/Particles/StandardModel/JetAlgebra/MassWeightPoly.lean at 2a1dfe43](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/JetAlgebra/MassWeightPoly.lean)
+- [PhyslibAlpha/Particles/StandardModel/JetAlgebra/MassWeightPoly.lean at 8c87bdfb](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/JetAlgebra/MassWeightPoly.lean)

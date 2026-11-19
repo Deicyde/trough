@@ -8,7 +8,7 @@ proof: formalized
 
 # Crystal bonds and connectivity
 
-The module `PhyslibAlpha.CondensedMatter.Crystal.Graph`, [PhyslibAlpha/CondensedMatter/Crystal/Graph.lean](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/CondensedMatter/Crystal/Graph.lean): 28 declarations (2 instances with no name), 28 with a docstring.
+The module `PhyslibAlpha.CondensedMatter.Crystal.Graph`, [PhyslibAlpha/CondensedMatter/Crystal/Graph.lean](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/CondensedMatter/Crystal/Graph.lean): 28 declarations (2 instances with no name), 28 with a docstring.
 
 ## i. Overview
 
@@ -35,7 +35,7 @@ The module `PhyslibAlpha.CondensedMatter.Crystal.Graph`, [PhyslibAlpha/Condensed
 
 ## A. Connections between finite regions
 
-**`SimpleGraph.bondCountBetween`**, a def, [line 59](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/CondensedMatter/Crystal/Graph.lean#L59).
+**`SimpleGraph.bondCountBetween`**, a def, [line 59](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/CondensedMatter/Crystal/Graph.lean#L59).
 
 > Number of connections from sites in `Λ` to sites in `M`. For disjoint regions,
 > each bond between them is counted once; with `M = Λ`, each internal bond is counted twice.
@@ -44,7 +44,7 @@ The module `PhyslibAlpha.CondensedMatter.Crystal.Graph`, [PhyslibAlpha/Condensed
 def bondCountBetween (g : SimpleGraph X) [DecidableRel g.Adj] (Λ M : Finset X) : ℕ
 ```
 
-**`SimpleGraph.bondCountBetween_le`**, a lemma, [line 63](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/CondensedMatter/Crystal/Graph.lean#L63).
+**`SimpleGraph.bondCountBetween_le`**, a lemma, [line 63](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/CondensedMatter/Crystal/Graph.lean#L63).
 
 > A bound on coordination numbers bounds the number of connections from a finite region.
 
@@ -57,7 +57,7 @@ lemma bondCountBetween_le (g : SimpleGraph X) [DecidableRel g.Adj] [g.LocallyFin
 
 ## B. Translation-invariant connectivity
 
-**`CondensedMatter.Crystal.PeriodicGraph`**, a structure, [line 84](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/CondensedMatter/Crystal/Graph.lean#L84).
+**`CondensedMatter.Crystal.PeriodicGraph`**, a structure, [line 84](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/CondensedMatter/Crystal/Graph.lean#L84).
 
 > A periodic pattern of undirected connections between crystal sites, with finitely many
 > neighbors at each site.
@@ -75,7 +75,7 @@ structure PeriodicGraph {G : Type*} [AddGroup G] (C : Crystal G) where
   [locallyFinite : toSimpleGraph.LocallyFinite]
 ```
 
-**`CondensedMatter.Crystal.PeriodicGraph.connected`**, a def, [line 102](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/CondensedMatter/Crystal/Graph.lean#L102).
+**`CondensedMatter.Crystal.PeriodicGraph.connected`**, a def, [line 102](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/CondensedMatter/Crystal/Graph.lean#L102).
 
 > Check whether two sites are connected by a crystal bond.
 
@@ -83,7 +83,7 @@ structure PeriodicGraph {G : Type*} [AddGroup G] (C : Crystal G) where
 def connected (g : PeriodicGraph C) (x y : C.Site) : Bool
 ```
 
-**`CondensedMatter.Crystal.PeriodicGraph.connected_eq_true`**, a lemma, [line 106](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/CondensedMatter/Crystal/Graph.lean#L106).
+**`CondensedMatter.Crystal.PeriodicGraph.connected_eq_true`**, a lemma, [line 106](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/CondensedMatter/Crystal/Graph.lean#L106).
 
 > The executable connection test agrees with graph adjacency.
 
@@ -92,7 +92,7 @@ lemma connected_eq_true (g : PeriodicGraph C) (x y : C.Site) :
     g.connected x y = true ↔ g.toSimpleGraph.Adj x y
 ```
 
-**`CondensedMatter.Crystal.PeriodicGraph.connected_vadd`**, a lemma, [line 111](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/CondensedMatter/Crystal/Graph.lean#L111).
+**`CondensedMatter.Crystal.PeriodicGraph.connected_vadd`**, a lemma, [line 111](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/CondensedMatter/Crystal/Graph.lean#L111).
 
 > A common cell translation preserves the executable connection test.
 
@@ -101,7 +101,7 @@ lemma connected_vadd (g : PeriodicGraph C) (a : G) (x y : C.Site) :
     g.connected (a +ᵥ x) (a +ᵥ y) = g.connected x y
 ```
 
-**`CondensedMatter.Crystal.PeriodicGraph.neighbors`**, a def, [line 118](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/CondensedMatter/Crystal/Graph.lean#L118).
+**`CondensedMatter.Crystal.PeriodicGraph.neighbors`**, a def, [line 118](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/CondensedMatter/Crystal/Graph.lean#L118).
 
 > The finite set of sites connected to a given site.
 
@@ -109,7 +109,7 @@ lemma connected_vadd (g : PeriodicGraph C) (a : G) (x y : C.Site) :
 def neighbors (g : PeriodicGraph C) (x : C.Site) : Finset C.Site
 ```
 
-**`CondensedMatter.Crystal.PeriodicGraph.mem_neighbors`**, a lemma, [line 122](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/CondensedMatter/Crystal/Graph.lean#L122).
+**`CondensedMatter.Crystal.PeriodicGraph.mem_neighbors`**, a lemma, [line 122](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/CondensedMatter/Crystal/Graph.lean#L122).
 
 > Graph neighbors are exactly the sites connected by an edge.
 
@@ -118,7 +118,7 @@ lemma mem_neighbors (g : PeriodicGraph C) (x y : C.Site) :
     y ∈ g.neighbors x ↔ g.toSimpleGraph.Adj x y
 ```
 
-**`CondensedMatter.Crystal.PeriodicGraph.translateIso`**, a def, [line 127](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/CondensedMatter/Crystal/Graph.lean#L127).
+**`CondensedMatter.Crystal.PeriodicGraph.translateIso`**, a def, [line 127](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/CondensedMatter/Crystal/Graph.lean#L127).
 
 > A cell translation is an automorphism of the bond graph.
 
@@ -126,7 +126,7 @@ lemma mem_neighbors (g : PeriodicGraph C) (x y : C.Site) :
 def translateIso (g : PeriodicGraph C) (a : G) : g.toSimpleGraph ≃g g.toSimpleGraph
 ```
 
-**`CondensedMatter.Crystal.PeriodicGraph.neighbors_vadd`**, a lemma, [line 132](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/CondensedMatter/Crystal/Graph.lean#L132).
+**`CondensedMatter.Crystal.PeriodicGraph.neighbors_vadd`**, a lemma, [line 132](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/CondensedMatter/Crystal/Graph.lean#L132).
 
 > Translating a site translates all of its graph neighbors.
 
@@ -135,7 +135,7 @@ lemma neighbors_vadd (g : PeriodicGraph C) (a : G) (x : C.Site) :
     g.neighbors (a +ᵥ x) = (g.neighbors x).map (AddAction.toPerm a).toEmbedding
 ```
 
-**`CondensedMatter.Crystal.PeriodicGraph.card_neighbors_vadd`**, a lemma, [line 148](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/CondensedMatter/Crystal/Graph.lean#L148).
+**`CondensedMatter.Crystal.PeriodicGraph.card_neighbors_vadd`**, a lemma, [line 148](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/CondensedMatter/Crystal/Graph.lean#L148).
 
 > The coordination number is constant along translated copies of a site.
 
@@ -146,7 +146,7 @@ lemma card_neighbors_vadd (g : PeriodicGraph C) (a : G) (x : C.Site) :
 
 ## C. Bonds between finite regions
 
-**`CondensedMatter.Crystal.PeriodicGraph.bondCountBetween`**, a def, [line 155](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/CondensedMatter/Crystal/Graph.lean#L155).
+**`CondensedMatter.Crystal.PeriodicGraph.bondCountBetween`**, a def, [line 155](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/CondensedMatter/Crystal/Graph.lean#L155).
 
 > Count the crystal bonds between finite regions, using its ordinary graph.
 
@@ -156,7 +156,7 @@ def bondCountBetween (g : PeriodicGraph C) (Λ M : Finset C.Site) : ℕ
 
 ## D. Bonds in a unit cell
 
-**`CondensedMatter.Crystal.Bond`**, a structure, [line 165](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/CondensedMatter/Crystal/Graph.lean#L165).
+**`CondensedMatter.Crystal.Bond`**, a structure, [line 165](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/CondensedMatter/Crystal/Graph.lean#L165).
 
 > A bond from label `source` in a reference cell to label `target` in the cell indexed
 > by `displacement`. Translating both endpoints gives the copies of this bond in other cells.
@@ -172,7 +172,7 @@ structure Bond (G F : Type*) where
   deriving DecidableEq
 ```
 
-**`CondensedMatter.Crystal.Bond.Links`**, a def, [line 179](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/CondensedMatter/Crystal/Graph.lean#L179).
+**`CondensedMatter.Crystal.Bond.Links`**, a def, [line 179](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/CondensedMatter/Crystal/Graph.lean#L179).
 
 > Site `x` is the source and site `y` is the target of a copy of this bond.
 
@@ -180,7 +180,7 @@ structure Bond (G F : Type*) where
 def Links (b : Bond G F) (x y : CellSite G F) : Prop
 ```
 
-**An instance with no name**, [line 183](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/CondensedMatter/Crystal/Graph.lean#L183).
+**An instance with no name**, [line 183](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/CondensedMatter/Crystal/Graph.lean#L183).
 
 > The source and target of a bond can be checked from their site addresses.
 
@@ -188,7 +188,7 @@ def Links (b : Bond G F) (x y : CellSite G F) : Prop
 instance [DecidableEq G] [DecidableEq F] (b : Bond G F) : DecidableRel b.Links
 ```
 
-**`CondensedMatter.Crystal.Bond.endpoints`**, a def, [line 188](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/CondensedMatter/Crystal/Graph.lean#L188).
+**`CondensedMatter.Crystal.Bond.endpoints`**, a def, [line 188](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/CondensedMatter/Crystal/Graph.lean#L188).
 
 > The sites reached by following this bond in either direction.
 
@@ -197,7 +197,7 @@ def endpoints [DecidableEq G] [DecidableEq F] (b : Bond G F) (x : CellSite G F) 
     Finset (CellSite G F)
 ```
 
-**`CondensedMatter.Crystal.Bond.mem_endpoints`**, a lemma, [line 194](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/CondensedMatter/Crystal/Graph.lean#L194).
+**`CondensedMatter.Crystal.Bond.mem_endpoints`**, a lemma, [line 194](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/CondensedMatter/Crystal/Graph.lean#L194).
 
 > A site reached through this bond is connected in one of its two directions.
 
@@ -206,7 +206,7 @@ lemma mem_endpoints [DecidableEq G] [DecidableEq F] (b : Bond G F) (x y : CellSi
     y ∈ b.endpoints x ↔ b.Links x y ∨ b.Links y x
 ```
 
-**`CondensedMatter.Crystal.Bond.links_vadd`**, a lemma, [line 201](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/CondensedMatter/Crystal/Graph.lean#L201).
+**`CondensedMatter.Crystal.Bond.links_vadd`**, a lemma, [line 201](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/CondensedMatter/Crystal/Graph.lean#L201).
 
 > Translating the endpoints gives another copy of the same bond.
 
@@ -217,7 +217,7 @@ lemma links_vadd (b : Bond G F) (a : G) (x y : CellSite G F) :
 
 ## E. Building the graph from bonds
 
-**`CondensedMatter.Crystal.graphFromBonds`**, a def, [line 212](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/CondensedMatter/Crystal/Graph.lean#L212).
+**`CondensedMatter.Crystal.graphFromBonds`**, a def, [line 212](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/CondensedMatter/Crystal/Graph.lean#L212).
 
 > The undirected graph generated by translating every supplied bond.
 
@@ -226,7 +226,7 @@ def graphFromBonds {G F : Type*} [AddGroup G] (bonds : List (Bond G F)) :
     SimpleGraph (CellSite G F)
 ```
 
-**An instance with no name**, [line 219](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/CondensedMatter/Crystal/Graph.lean#L219).
+**An instance with no name**, [line 219](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/CondensedMatter/Crystal/Graph.lean#L219).
 
 > Connections generated by a finite bond list can be decided.
 
@@ -235,7 +235,7 @@ instance {G F : Type*} [AddGroup G] [DecidableEq G] [DecidableEq F]
     (bonds : List (Bond G F)) : DecidableRel (graphFromBonds bonds).Adj
 ```
 
-**`CondensedMatter.Crystal.bondEndpoints`**, a def, [line 225](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/CondensedMatter/Crystal/Graph.lean#L225).
+**`CondensedMatter.Crystal.bondEndpoints`**, a def, [line 225](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/CondensedMatter/Crystal/Graph.lean#L225).
 
 > The sites reached from `x` by following any of the listed bonds in either direction.
 
@@ -244,7 +244,7 @@ def bondEndpoints {G F : Type*} [AddGroup G] [DecidableEq G] [DecidableEq F]
     (bonds : List (Bond G F)) (x : CellSite G F) : Finset (CellSite G F)
 ```
 
-**`CondensedMatter.Crystal.mem_bondEndpoints`**, a lemma, [line 230](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/CondensedMatter/Crystal/Graph.lean#L230).
+**`CondensedMatter.Crystal.mem_bondEndpoints`**, a lemma, [line 230](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/CondensedMatter/Crystal/Graph.lean#L230).
 
 > Every reached site is an endpoint of one of the listed bonds.
 
@@ -254,7 +254,7 @@ lemma mem_bondEndpoints {G F : Type*} [AddGroup G] [DecidableEq G] [DecidableEq 
     y ∈ bondEndpoints bonds x ↔ ∃ b ∈ bonds, b.Links x y ∨ b.Links y x
 ```
 
-**`CondensedMatter.Crystal.graphFromBonds_adj_vadd`**, a lemma, [line 238](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/CondensedMatter/Crystal/Graph.lean#L238).
+**`CondensedMatter.Crystal.graphFromBonds_adj_vadd`**, a lemma, [line 238](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/CondensedMatter/Crystal/Graph.lean#L238).
 
 > Adjacency generated by bonds is unchanged by a common cell translation.
 
@@ -264,7 +264,7 @@ lemma graphFromBonds_adj_vadd {G F : Type*} [AddGroup G]
     (graphFromBonds bonds).Adj (a +ᵥ x) (a +ᵥ y) ↔ (graphFromBonds bonds).Adj x y
 ```
 
-**`CondensedMatter.Crystal.neighborsFromBonds`**, a def, [line 244](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/CondensedMatter/Crystal/Graph.lean#L244).
+**`CondensedMatter.Crystal.neighborsFromBonds`**, a def, [line 244](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/CondensedMatter/Crystal/Graph.lean#L244).
 
 > The distinct neighboring sites connected by the listed bonds, excluding `x` itself.
 
@@ -273,7 +273,7 @@ def neighborsFromBonds {G F : Type*} [AddGroup G] [DecidableEq G] [DecidableEq F
     (bonds : List (Bond G F)) (x : CellSite G F) : Finset (CellSite G F)
 ```
 
-**`CondensedMatter.Crystal.mem_neighborsFromBonds`**, a lemma, [line 249](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/CondensedMatter/Crystal/Graph.lean#L249).
+**`CondensedMatter.Crystal.mem_neighborsFromBonds`**, a lemma, [line 249](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/CondensedMatter/Crystal/Graph.lean#L249).
 
 > Bond enumeration gives exactly the neighbors of the generated simple graph.
 
@@ -283,7 +283,7 @@ lemma mem_neighborsFromBonds {G F : Type*} [AddGroup G]
     y ∈ neighborsFromBonds bonds x ↔ (graphFromBonds bonds).Adj x y
 ```
 
-**`CondensedMatter.Crystal.PeriodicGraph.ofBonds`**, a def, [line 258](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/CondensedMatter/Crystal/Graph.lean#L258).
+**`CondensedMatter.Crystal.PeriodicGraph.ofBonds`**, a def, [line 258](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/CondensedMatter/Crystal/Graph.lean#L258).
 
 > Construct the periodic graph of a repeated unit cell from its bonds.
 > Each bond connects its source label to its target label at the specified cell displacement,
@@ -296,7 +296,7 @@ def PeriodicGraph.ofBonds {G F : Type*} [AddGroup G] [Finite F]
     PeriodicGraph (Crystal.ofUnitCell G F)
 ```
 
-**`CondensedMatter.Crystal.PeriodicGraph.neighbors_ofBonds`**, a lemma, [line 269](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/CondensedMatter/Crystal/Graph.lean#L269).
+**`CondensedMatter.Crystal.PeriodicGraph.neighbors_ofBonds`**, a lemma, [line 269](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/CondensedMatter/Crystal/Graph.lean#L269).
 
 > The neighbors in the graph of a bond list are the endpoints of its bonds, without the site
 > itself.
@@ -307,7 +307,7 @@ lemma PeriodicGraph.neighbors_ofBonds {G F : Type*} [AddGroup G] [Finite F]
     (PeriodicGraph.ofBonds bonds).neighbors x = neighborsFromBonds bonds x
 ```
 
-**`CondensedMatter.Crystal.PeriodicGraph.card_neighbors_cell`**, a lemma, [line 277](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/CondensedMatter/Crystal/Graph.lean#L277).
+**`CondensedMatter.Crystal.PeriodicGraph.card_neighbors_cell`**, a lemma, [line 277](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/CondensedMatter/Crystal/Graph.lean#L277).
 
 > The coordination number of a cell site equals that of its reference-cell copy.
 
@@ -323,4 +323,4 @@ lemma PeriodicGraph.card_neighbors_cell {G F : Type*} [AddGroup G] [Finite F]
 
 ## Sources
 
-- [PhyslibAlpha/CondensedMatter/Crystal/Graph.lean at 2a1dfe43](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/CondensedMatter/Crystal/Graph.lean)
+- [PhyslibAlpha/CondensedMatter/Crystal/Graph.lean at 8c87bdfb](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/CondensedMatter/Crystal/Graph.lean)

@@ -8,7 +8,7 @@ proof: formalized
 
 # The set of charges which minimally allows a potential term
 
-The module `Physlib.Particles.SuperSymmetry.SU5.ChargeSpectrum.MinimallyAllowsTerm.OfFinset`, [Physlib/Particles/SuperSymmetry/SU5/ChargeSpectrum/MinimallyAllowsTerm/OfFinset.lean](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/Particles/SuperSymmetry/SU5/ChargeSpectrum/MinimallyAllowsTerm/OfFinset.lean): 16 declarations, 4 with a docstring.
+The module `Physlib.Particles.SuperSymmetry.SU5.ChargeSpectrum.MinimallyAllowsTerm.OfFinset`, [Physlib/Particles/SuperSymmetry/SU5/ChargeSpectrum/MinimallyAllowsTerm/OfFinset.lean](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Particles/SuperSymmetry/SU5/ChargeSpectrum/MinimallyAllowsTerm/OfFinset.lean): 16 declarations, 4 with a docstring.
 
 ## i. Overview
 
@@ -47,7 +47,7 @@ The module `Physlib.Particles.SuperSymmetry.SU5.ChargeSpectrum.MinimallyAllowsTe
 
 #### A.1.1. Multisets of cardinality `1`
 
-**`SuperSymmetry.SU5.ChargeSpectrum.toMultisetsOne`**, a def, [line 93](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/Particles/SuperSymmetry/SU5/ChargeSpectrum/MinimallyAllowsTerm/OfFinset.lean#L93).
+**`SuperSymmetry.SU5.ChargeSpectrum.toMultisetsOne`**, a def, [line 93](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Particles/SuperSymmetry/SU5/ChargeSpectrum/MinimallyAllowsTerm/OfFinset.lean#L93).
 
 > The multisets of cardinality `1` containing elements from a finite set `s`.
 
@@ -55,7 +55,7 @@ The module `Physlib.Particles.SuperSymmetry.SU5.ChargeSpectrum.MinimallyAllowsTe
 def toMultisetsOne (s : Finset 𝓩) : Multiset (Multiset 𝓩)
 ```
 
-**`SuperSymmetry.SU5.ChargeSpectrum.mem_toMultisetsOne_iff`**, a lemma, [line 98](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/Particles/SuperSymmetry/SU5/ChargeSpectrum/MinimallyAllowsTerm/OfFinset.lean#L98).
+**`SuperSymmetry.SU5.ChargeSpectrum.mem_toMultisetsOne_iff`**, a lemma, [line 98](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Particles/SuperSymmetry/SU5/ChargeSpectrum/MinimallyAllowsTerm/OfFinset.lean#L98).
 
 ```lean
 lemma mem_toMultisetsOne_iff [DecidableEq 𝓩] {s : Finset 𝓩} (X : Multiset 𝓩) :
@@ -64,7 +64,7 @@ lemma mem_toMultisetsOne_iff [DecidableEq 𝓩] {s : Finset 𝓩} (X : Multiset 
 
 #### A.1.2. Multisets of cardinality `2`
 
-**`SuperSymmetry.SU5.ChargeSpectrum.toMultisetsTwo`**, a def, [line 109](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/Particles/SuperSymmetry/SU5/ChargeSpectrum/MinimallyAllowsTerm/OfFinset.lean#L109).
+**`SuperSymmetry.SU5.ChargeSpectrum.toMultisetsTwo`**, a def, [line 109](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Particles/SuperSymmetry/SU5/ChargeSpectrum/MinimallyAllowsTerm/OfFinset.lean#L109).
 
 > The multisets of cardinality `2` containing elements from a finite set `s`.
 
@@ -72,7 +72,7 @@ lemma mem_toMultisetsOne_iff [DecidableEq 𝓩] {s : Finset 𝓩} (X : Multiset 
 def toMultisetsTwo (s : Finset 𝓩) : Multiset (Multiset 𝓩)
 ```
 
-**`SuperSymmetry.SU5.ChargeSpectrum.mem_toMultisetsTwo_iff`**, a lemma, [line 115](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/Particles/SuperSymmetry/SU5/ChargeSpectrum/MinimallyAllowsTerm/OfFinset.lean#L115).
+**`SuperSymmetry.SU5.ChargeSpectrum.mem_toMultisetsTwo_iff`**, a lemma, [line 115](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Particles/SuperSymmetry/SU5/ChargeSpectrum/MinimallyAllowsTerm/OfFinset.lean#L115).
 
 ```lean
 lemma mem_toMultisetsTwo_iff [DecidableEq 𝓩] {s : Finset 𝓩} (X : Multiset 𝓩) :
@@ -81,7 +81,7 @@ lemma mem_toMultisetsTwo_iff [DecidableEq 𝓩] {s : Finset 𝓩} (X : Multiset 
 
 #### A.1.3. Multisets of cardinality `3`
 
-**`SuperSymmetry.SU5.ChargeSpectrum.toMultisetsThree`**, a def, [line 145](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/Particles/SuperSymmetry/SU5/ChargeSpectrum/MinimallyAllowsTerm/OfFinset.lean#L145).
+**`SuperSymmetry.SU5.ChargeSpectrum.toMultisetsThree`**, a def, [line 145](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Particles/SuperSymmetry/SU5/ChargeSpectrum/MinimallyAllowsTerm/OfFinset.lean#L145).
 
 > The multisets of cardinality `3` containing elements from a finite set `s`.
 
@@ -89,7 +89,7 @@ lemma mem_toMultisetsTwo_iff [DecidableEq 𝓩] {s : Finset 𝓩} (X : Multiset 
 def toMultisetsThree [DecidableEq 𝓩] (s : Finset 𝓩) : Multiset (Multiset 𝓩)
 ```
 
-**`SuperSymmetry.SU5.ChargeSpectrum.mem_toMultisetsThree_iff`**, a lemma, [line 152](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/Particles/SuperSymmetry/SU5/ChargeSpectrum/MinimallyAllowsTerm/OfFinset.lean#L152).
+**`SuperSymmetry.SU5.ChargeSpectrum.mem_toMultisetsThree_iff`**, a lemma, [line 152](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Particles/SuperSymmetry/SU5/ChargeSpectrum/MinimallyAllowsTerm/OfFinset.lean#L152).
 
 ```lean
 lemma mem_toMultisetsThree_iff [DecidableEq 𝓩] {s : Finset 𝓩} (X : Multiset 𝓩) :
@@ -103,7 +103,7 @@ lemma mem_toMultisetsThree_iff [DecidableEq 𝓩] {s : Finset 𝓩} (X : Multise
 >
 > We will prove it has the desired properties later in this module.
 
-**`SuperSymmetry.SU5.ChargeSpectrum.minimallyAllowsTermsOfFinset`**, a def, [line 213](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/Particles/SuperSymmetry/SU5/ChargeSpectrum/MinimallyAllowsTerm/OfFinset.lean#L213).
+**`SuperSymmetry.SU5.ChargeSpectrum.minimallyAllowsTermsOfFinset`**, a def, [line 213](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Particles/SuperSymmetry/SU5/ChargeSpectrum/MinimallyAllowsTerm/OfFinset.lean#L213).
 
 > The multiset of all charges within `ofFinset S5 S10` which minimally allow the
 > potential term `T`.
@@ -119,7 +119,7 @@ def minimallyAllowsTermsOfFinset (S5 S10 : Finset 𝓩) :
 > That is every element of `minimallyAllowsTermsOfFinset S5 S10 T` has charges
 > in the sets `S5` and `S10`.
 
-**`SuperSymmetry.SU5.ChargeSpectrum.mem_ofFinset_of_mem_minimallyAllowsTermOfFinset`**, a lemma, [line 296](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/Particles/SuperSymmetry/SU5/ChargeSpectrum/MinimallyAllowsTerm/OfFinset.lean#L296).
+**`SuperSymmetry.SU5.ChargeSpectrum.mem_ofFinset_of_mem_minimallyAllowsTermOfFinset`**, a lemma, [line 296](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Particles/SuperSymmetry/SU5/ChargeSpectrum/MinimallyAllowsTerm/OfFinset.lean#L296).
 
 ```lean
 lemma mem_ofFinset_of_mem_minimallyAllowsTermOfFinset {S5 S10 : Finset 𝓩} {T : PotentialTerm}
@@ -127,7 +127,7 @@ lemma mem_ofFinset_of_mem_minimallyAllowsTermOfFinset {S5 S10 : Finset 𝓩} {T 
     x ∈ ofFinset S5 S10
 ```
 
-**`SuperSymmetry.SU5.ChargeSpectrum.minimallyAllowsTermOfFinset_subset_ofFinset`**, a lemma, [line 338](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/Particles/SuperSymmetry/SU5/ChargeSpectrum/MinimallyAllowsTerm/OfFinset.lean#L338).
+**`SuperSymmetry.SU5.ChargeSpectrum.minimallyAllowsTermOfFinset_subset_ofFinset`**, a lemma, [line 338](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Particles/SuperSymmetry/SU5/ChargeSpectrum/MinimallyAllowsTerm/OfFinset.lean#L338).
 
 ```lean
 lemma minimallyAllowsTermOfFinset_subset_ofFinset {S5 S10 : Finset 𝓩} {T : PotentialTerm} :
@@ -146,7 +146,7 @@ lemma minimallyAllowsTermOfFinset_subset_ofFinset {S5 S10 : Finset 𝓩} {T : Po
 > We show that every element of `minimallyAllowsTermsOfFinset S5 S10 T` is of the form
 > `allowsTermForm a b c T` for some `a`, `b` and `c`.
 
-**`SuperSymmetry.SU5.ChargeSpectrum.eq_allowsTermForm_of_mem_minimallyAllowsTermOfFinset`**, a lemma, [line 361](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/Particles/SuperSymmetry/SU5/ChargeSpectrum/MinimallyAllowsTerm/OfFinset.lean#L361).
+**`SuperSymmetry.SU5.ChargeSpectrum.eq_allowsTermForm_of_mem_minimallyAllowsTermOfFinset`**, a lemma, [line 361](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Particles/SuperSymmetry/SU5/ChargeSpectrum/MinimallyAllowsTerm/OfFinset.lean#L361).
 
 ```lean
 lemma eq_allowsTermForm_of_mem_minimallyAllowsTermOfFinset {S5 S10 : Finset 𝓩} {T : PotentialTerm}
@@ -158,7 +158,7 @@ lemma eq_allowsTermForm_of_mem_minimallyAllowsTermOfFinset {S5 S10 : Finset 𝓩
 
 > We show that every element of `minimallyAllowsTermsOfFinset S5 S10 T` allows the term `T`.
 
-**`SuperSymmetry.SU5.ChargeSpectrum.allowsTerm_of_mem_minimallyAllowsTermOfFinset`**, a lemma, [line 434](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/Particles/SuperSymmetry/SU5/ChargeSpectrum/MinimallyAllowsTerm/OfFinset.lean#L434).
+**`SuperSymmetry.SU5.ChargeSpectrum.allowsTerm_of_mem_minimallyAllowsTermOfFinset`**, a lemma, [line 434](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Particles/SuperSymmetry/SU5/ChargeSpectrum/MinimallyAllowsTerm/OfFinset.lean#L434).
 
 ```lean
 lemma allowsTerm_of_mem_minimallyAllowsTermOfFinset {S5 S10 : Finset 𝓩} {T : PotentialTerm}
@@ -171,7 +171,7 @@ lemma allowsTerm_of_mem_minimallyAllowsTermOfFinset {S5 S10 : Finset 𝓩} {T : 
 > We make the above condition stronger, showing that every element of
 > `minimallyAllowsTermsOfFinset S5 S10 T` minimally allows the term `T`.
 
-**`SuperSymmetry.SU5.ChargeSpectrum.minimallyAllowsTerm_of_mem_minimallyAllowsTermOfFinset`**, a lemma, [line 449](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/Particles/SuperSymmetry/SU5/ChargeSpectrum/MinimallyAllowsTerm/OfFinset.lean#L449).
+**`SuperSymmetry.SU5.ChargeSpectrum.minimallyAllowsTerm_of_mem_minimallyAllowsTermOfFinset`**, a lemma, [line 449](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Particles/SuperSymmetry/SU5/ChargeSpectrum/MinimallyAllowsTerm/OfFinset.lean#L449).
 
 ```lean
 lemma minimallyAllowsTerm_of_mem_minimallyAllowsTermOfFinset {S5 S10 : Finset 𝓩}
@@ -185,7 +185,7 @@ lemma minimallyAllowsTerm_of_mem_minimallyAllowsTermOfFinset {S5 S10 : Finset �
 > We show that every charge spectra which minimally allows term `T` and has charges
 > in the sets `S5` and `S10` is in `minimallyAllowsTermsOfFinset S5 S10 T`.
 
-**`SuperSymmetry.SU5.ChargeSpectrum.mem_minimallyAllowsTermOfFinset_of_minimallyAllowsTerm`**, a lemma, [line 469](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/Particles/SuperSymmetry/SU5/ChargeSpectrum/MinimallyAllowsTerm/OfFinset.lean#L469).
+**`SuperSymmetry.SU5.ChargeSpectrum.mem_minimallyAllowsTermOfFinset_of_minimallyAllowsTerm`**, a lemma, [line 469](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Particles/SuperSymmetry/SU5/ChargeSpectrum/MinimallyAllowsTerm/OfFinset.lean#L469).
 
 ```lean
 lemma mem_minimallyAllowsTermOfFinset_of_minimallyAllowsTerm {S5 S10 : Finset 𝓩}
@@ -200,7 +200,7 @@ lemma mem_minimallyAllowsTermOfFinset_of_minimallyAllowsTerm {S5 S10 : Finset �
 > is in `minimallyAllowsTermsOfFinset S5 S10 T` if and only if
 > it minimally allows the term `T`, provided it is in `ofFinset S5 S10`.
 
-**`SuperSymmetry.SU5.ChargeSpectrum.minimallyAllowsTerm_iff_mem_minimallyAllowsTermOfFinset`**, a lemma, [line 517](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/Particles/SuperSymmetry/SU5/ChargeSpectrum/MinimallyAllowsTerm/OfFinset.lean#L517).
+**`SuperSymmetry.SU5.ChargeSpectrum.minimallyAllowsTerm_iff_mem_minimallyAllowsTermOfFinset`**, a lemma, [line 517](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Particles/SuperSymmetry/SU5/ChargeSpectrum/MinimallyAllowsTerm/OfFinset.lean#L517).
 
 ```lean
 lemma minimallyAllowsTerm_iff_mem_minimallyAllowsTermOfFinset
@@ -215,7 +215,7 @@ lemma minimallyAllowsTerm_iff_mem_minimallyAllowsTermOfFinset
 
 ### C.1. Monotonicity of `minimallyAllowsTermsOfFinset` in allowed sets of charges
 
-**`SuperSymmetry.SU5.ChargeSpectrum.minimallyAllowsTermOfFinset_subset_of_subset`**, a lemma, [line 538](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/Particles/SuperSymmetry/SU5/ChargeSpectrum/MinimallyAllowsTerm/OfFinset.lean#L538).
+**`SuperSymmetry.SU5.ChargeSpectrum.minimallyAllowsTermOfFinset_subset_of_subset`**, a lemma, [line 538](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Particles/SuperSymmetry/SU5/ChargeSpectrum/MinimallyAllowsTerm/OfFinset.lean#L538).
 
 ```lean
 lemma minimallyAllowsTermOfFinset_subset_of_subset {S5 S5' S10 S10' : Finset 𝓩} {T : PotentialTerm}
@@ -228,7 +228,7 @@ lemma minimallyAllowsTermOfFinset_subset_of_subset {S5 S5' S10 S10' : Finset �
 > We show that every term which is in `minimallyAllowsTermsOfFinset S5 S10 topYukawa` is not
 > phenomenologically constrained.
 
-**`SuperSymmetry.SU5.ChargeSpectrum.not_isPhenoConstrained_of_minimallyAllowsTermsOfFinset_topYukawa`**, a lemma, [line 556](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/Particles/SuperSymmetry/SU5/ChargeSpectrum/MinimallyAllowsTerm/OfFinset.lean#L556).
+**`SuperSymmetry.SU5.ChargeSpectrum.not_isPhenoConstrained_of_minimallyAllowsTermsOfFinset_topYukawa`**, a lemma, [line 556](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Particles/SuperSymmetry/SU5/ChargeSpectrum/MinimallyAllowsTerm/OfFinset.lean#L556).
 
 ```lean
 lemma not_isPhenoConstrained_of_minimallyAllowsTermsOfFinset_topYukawa
@@ -244,4 +244,4 @@ lemma not_isPhenoConstrained_of_minimallyAllowsTermsOfFinset_topYukawa
 
 ## Sources
 
-- [Physlib/Particles/SuperSymmetry/SU5/ChargeSpectrum/MinimallyAllowsTerm/OfFinset.lean at 2a1dfe43](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/Particles/SuperSymmetry/SU5/ChargeSpectrum/MinimallyAllowsTerm/OfFinset.lean)
+- [Physlib/Particles/SuperSymmetry/SU5/ChargeSpectrum/MinimallyAllowsTerm/OfFinset.lean at 8c87bdfb](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Particles/SuperSymmetry/SU5/ChargeSpectrum/MinimallyAllowsTerm/OfFinset.lean)

@@ -1,14 +1,14 @@
 ---
 declaration: module
 origin: cited
-lean: ProbabilisticTheory.Weight.comp, ProbabilisticTheory.Weight.comp_apply, ProbabilisticTheory.Weight.comp_id, ProbabilisticTheory.Weight.comp_comp, ProbabilisticTheory.Weight.IsFinite.comp, ProbabilisticTheory.Weight.IsState.comp
+lean: PhyslibAlpha.ProbabilisticTheory.Weight.comp, PhyslibAlpha.ProbabilisticTheory.Weight.comp_apply, PhyslibAlpha.ProbabilisticTheory.Weight.comp_id, PhyslibAlpha.ProbabilisticTheory.Weight.comp_comp, PhyslibAlpha.ProbabilisticTheory.Weight.IsFinite.comp, PhyslibAlpha.ProbabilisticTheory.Weight.IsState.comp
 statement: formalized
 proof: formalized
 ---
 
 # Weight pushforward along a channel
 
-The module `PhyslibAlpha.ProbabilisticTheory.Channel.Weight`, [PhyslibAlpha/ProbabilisticTheory/Channel/Weight.lean](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ProbabilisticTheory/Channel/Weight.lean): 6 declarations, 3 with a docstring.
+The module `PhyslibAlpha.ProbabilisticTheory.Channel.Weight`, [PhyslibAlpha/ProbabilisticTheory/Channel/Weight.lean](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/Channel/Weight.lean): 6 declarations, 3 with a docstring.
 
 > Pushing weights and states forward along a channel, functorially in the channel.
 
@@ -39,7 +39,7 @@ The module `PhyslibAlpha.ProbabilisticTheory.Channel.Weight`, [PhyslibAlpha/Prob
 
 ## A. Pushforward of weights
 
-**`ProbabilisticTheory.Weight.comp`**, a def, [line 64](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ProbabilisticTheory/Channel/Weight.lean#L64).
+**`PhyslibAlpha.ProbabilisticTheory.Weight.comp`**, a def, [line 64](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/Channel/Weight.lean#L64).
 
 > Precompose a weight on `E₁` with the adjoint `φ : Channel E₂ E₁` of a channel `E₁ → E₂`,
 > giving a weight on `E₂`: the Schrödinger-picture pushforward of `w` along the channel.
@@ -48,7 +48,7 @@ The module `PhyslibAlpha.ProbabilisticTheory.Channel.Weight`, [PhyslibAlpha/Prob
 noncomputable def comp (w : Weight E₁) (φ : Channel E₂ E₁) : Weight E₂
 ```
 
-**`ProbabilisticTheory.Weight.comp_apply`**, a lemma, [line 85](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ProbabilisticTheory/Channel/Weight.lean#L85).
+**`PhyslibAlpha.ProbabilisticTheory.Weight.comp_apply`**, a lemma, [line 85](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/Channel/Weight.lean#L85).
 
 ```lean
 lemma comp_apply (w : Weight E₁) (φ : Channel E₂ E₁) (y : PosCone E₂) :
@@ -57,13 +57,13 @@ lemma comp_apply (w : Weight E₁) (φ : Channel E₂ E₁) (y : PosCone E₂) :
 
 ## B. Functoriality
 
-**`ProbabilisticTheory.Weight.comp_id`**, a lemma, [line 91](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ProbabilisticTheory/Channel/Weight.lean#L91).
+**`PhyslibAlpha.ProbabilisticTheory.Weight.comp_id`**, a lemma, [line 91](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/Channel/Weight.lean#L91).
 
 ```lean
 lemma comp_id (w : Weight E₁) : w.comp (.id ℝ E₁) = w
 ```
 
-**`ProbabilisticTheory.Weight.comp_comp`**, a lemma, [line 95](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ProbabilisticTheory/Channel/Weight.lean#L95).
+**`PhyslibAlpha.ProbabilisticTheory.Weight.comp_comp`**, a lemma, [line 95](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/Channel/Weight.lean#L95).
 
 ```lean
 lemma comp_comp (w : Weight E₁) (φ : Channel E₂ E₁) (ψ : Channel E₃ E₂) :
@@ -72,7 +72,7 @@ lemma comp_comp (w : Weight E₁) (φ : Channel E₂ E₁) (ψ : Channel E₃ E�
 
 ## C. Preservation of finite weights and states
 
-**`ProbabilisticTheory.Weight.IsFinite.comp`**, a lemma, [line 104](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ProbabilisticTheory/Channel/Weight.lean#L104).
+**`PhyslibAlpha.ProbabilisticTheory.Weight.IsFinite.comp`**, a lemma, [line 104](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/Channel/Weight.lean#L104).
 
 > Pushing a finite weight forward along a channel's adjoint stays finite: `φ` never sends the
 > cone anywhere `w` is infinite.
@@ -82,7 +82,7 @@ lemma IsFinite.comp {w : Weight E₁} (hw : w.IsFinite) (φ : Channel E₂ E₁)
     (w.comp φ).IsFinite
 ```
 
-**`ProbabilisticTheory.Weight.IsState.comp`**, a lemma, [line 114](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ProbabilisticTheory/Channel/Weight.lean#L114).
+**`PhyslibAlpha.ProbabilisticTheory.Weight.IsState.comp`**, a lemma, [line 114](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/Channel/Weight.lean#L114).
 
 > Pushing a state forward along a channel's adjoint gives a state: finiteness survives
 > (`IsFinite.comp`) and normalization survives because the adjoint is unital.
@@ -99,4 +99,4 @@ lemma IsState.comp {w : Weight F₁} (hw : w.IsState) (φ : Channel F₂ F₁) :
 
 ## Sources
 
-- [PhyslibAlpha/ProbabilisticTheory/Channel/Weight.lean at 2a1dfe43](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ProbabilisticTheory/Channel/Weight.lean)
+- [PhyslibAlpha/ProbabilisticTheory/Channel/Weight.lean at 8c87bdfb](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/Channel/Weight.lean)

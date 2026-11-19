@@ -8,7 +8,7 @@ proof: formalized
 
 # Conjugation structure on a tensor species
 
-The module `Physlib.Relativity.Tensors.Conjugation.Basic`, [Physlib/Relativity/Tensors/Conjugation/Basic.lean](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/Relativity/Tensors/Conjugation/Basic.lean): 36 declarations, 29 with a docstring; 1 private, not shown.
+The module `Physlib.Relativity.Tensors.Conjugation.Basic`, [Physlib/Relativity/Tensors/Conjugation/Basic.lean](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Relativity/Tensors/Conjugation/Basic.lean): 36 declarations, 29 with a docstring; 1 private, not shown.
 
 ## i. Overview
 
@@ -79,7 +79,7 @@ The module `Physlib.Relativity.Tensors.Conjugation.Basic`, [Physlib/Relativity/T
 > coefficients are unchanged by `star`; this is what makes conjugation commute with contraction (§D),
 > and for a real (δ) contraction it is `star δ = δ`.
 
-**`ConjTensorSpecies`**, a structure, [line 112](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/Relativity/Tensors/Conjugation/Basic.lean#L112).
+**`ConjTensorSpecies`**, a structure, [line 112](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Relativity/Tensors/Conjugation/Basic.lean#L112).
 
 > A tensor species bundled with a conjugation. Beyond the `TensorSpecies` it `extends`, it carries
 > the conjugate-colour involution `bar`, the index-set identification `barIdx_eq`, and the
@@ -118,7 +118,7 @@ structure ConjTensorSpecies (k : Type) [CommRing k] [StarRing k] (C : Type) (G :
               ((Equiv.cast (barIdx_eq (toTensorSpecies.τ d))).symm x₂)))
 ```
 
-**`ConjTensorSpecies.bar_tau_of_bar`**, a lemma, [line 153](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/Relativity/Tensors/Conjugation/Basic.lean#L153).
+**`ConjTensorSpecies.bar_tau_of_bar`**, a lemma, [line 153](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Relativity/Tensors/Conjugation/Basic.lean#L153).
 
 > If `bar a = d`, then `bar (τ d) = τ a`.
 
@@ -135,7 +135,7 @@ lemma bar_tau_of_bar {a d : C} (hbar : S.bar a = d) : S.bar (S.τ d) = S.τ a
 > metric slot. Semilinearity is built in via the coordinate `star`; invertibility is `star`'s
 > involutivity together with `bar`'s.
 
-**`ConjTensorSpecies.conjEquiv`**, a def, [line 171](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/Relativity/Tensors/Conjugation/Basic.lean#L171).
+**`ConjTensorSpecies.conjEquiv`**, a def, [line 171](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Relativity/Tensors/Conjugation/Basic.lean#L171).
 
 > The conjugate-linear slot isomorphism `V c ≃ₛₗ[starRingEnd k] V (bar c)`: conjugate the
 > coordinates in the species basis and relabel to the conjugate colour via `barIdx_eq`.
@@ -144,7 +144,7 @@ lemma bar_tau_of_bar {a d : C} (hbar : S.bar a = d) : S.bar (S.τ d) = S.τ a
 def conjEquiv {c : C} : V c ≃ₛₗ[starRingEnd k] V (S.bar c)
 ```
 
-**`ConjTensorSpecies.conjEquiv_basis`**, a lemma, [line 177](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/Relativity/Tensors/Conjugation/Basic.lean#L177).
+**`ConjTensorSpecies.conjEquiv_basis`**, a lemma, [line 177](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Relativity/Tensors/Conjugation/Basic.lean#L177).
 
 > `conjEquiv` on a basis vector: `b c i ↦ b (bar c) i` (relabelled through `barIdx_eq`), since the
 > basis coordinates of `b c i` are the indicator at `i` and `star` fixes `0` and `1`.
@@ -154,7 +154,7 @@ lemma conjEquiv_basis {c : C} (i : basisIdx c) :
     S.conjEquiv (b c i) = b (S.bar c) (Equiv.cast (S.barIdx_eq c).symm i)
 ```
 
-**`ConjTensorSpecies.conjEquiv_basis_repr`**, a lemma, [line 181](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/Relativity/Tensors/Conjugation/Basic.lean#L181).
+**`ConjTensorSpecies.conjEquiv_basis_repr`**, a lemma, [line 181](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Relativity/Tensors/Conjugation/Basic.lean#L181).
 
 ```lean
 lemma conjEquiv_basis_repr {c : C} (v : V c) (φ : basisIdx (S.bar c)) :
@@ -162,7 +162,7 @@ lemma conjEquiv_basis_repr {c : C} (v : V c) (φ : basisIdx (S.bar c)) :
       = star ((b c).repr v (Equiv.cast (S.barIdx_eq c) φ))
 ```
 
-**`ConjTensorSpecies.conjEquiv_equivariant`**, a lemma, [line 189](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/Relativity/Tensors/Conjugation/Basic.lean#L189).
+**`ConjTensorSpecies.conjEquiv_equivariant`**, a lemma, [line 189](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Relativity/Tensors/Conjugation/Basic.lean#L189).
 
 ```lean
 lemma conjEquiv_equivariant {c : C} (g : G) (v : V c) :
@@ -186,7 +186,7 @@ lemma conjEquiv_equivariant {c : C} (g : G) (v : V c) :
 > index first is the standard convention, used throughout; it is a choice, since
 > `∂_I ∂_J̄ K = ∂_J̄ ∂_I K` (Schwarz's theorem).
 
-**`ConjTensorSpecies.componentReindex`**, a def, [line 224](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/Relativity/Tensors/Conjugation/Basic.lean#L224).
+**`ConjTensorSpecies.componentReindex`**, a def, [line 224](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Relativity/Tensors/Conjugation/Basic.lean#L224).
 
 > Reindex component labels of `bar ∘ c` back to `c`, slotwise via the cast `barIdx_eq`.
 
@@ -196,7 +196,7 @@ def componentReindex {n : ℕ} (c : Fin n → C) :
       ComponentIdx (S := S.toTensorSpecies) c
 ```
 
-**`ConjTensorSpecies.conjT`**, a def, [line 231](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/Relativity/Tensors/Conjugation/Basic.lean#L231).
+**`ConjTensorSpecies.conjT`**, a def, [line 231](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Relativity/Tensors/Conjugation/Basic.lean#L231).
 
 > Conjugation of a tensor: conjugate the components and reindex the basis to the conjugate
 > colours.
@@ -206,7 +206,7 @@ def conjT {n : ℕ} {c : Fin n → C} : S.Tensor c →ₛₗ[starRingEnd k]
     S.Tensor (fun i => S.bar (c i))
 ```
 
-**`ConjTensorSpecies.conjT_apply`**, a lemma, [line 245](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/Relativity/Tensors/Conjugation/Basic.lean#L245).
+**`ConjTensorSpecies.conjT_apply`**, a lemma, [line 245](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Relativity/Tensors/Conjugation/Basic.lean#L245).
 
 ```lean
 lemma conjT_apply {n : ℕ} {c : Fin n → C} (t : S.Tensor c) :
@@ -214,7 +214,7 @@ lemma conjT_apply {n : ℕ} {c : Fin n → C} (t : S.Tensor c) :
       (fun b => star (componentMap c t (S.componentReindex c b)))
 ```
 
-**`ConjTensorSpecies.componentMap_conjT`**, a lemma, [line 251](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/Relativity/Tensors/Conjugation/Basic.lean#L251).
+**`ConjTensorSpecies.componentMap_conjT`**, a lemma, [line 251](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Relativity/Tensors/Conjugation/Basic.lean#L251).
 
 > Components of a conjugated tensor: the `star` of the original components, reindexed.
 
@@ -225,7 +225,7 @@ lemma componentMap_conjT {n : ℕ} {c : Fin n → C} (t : S.Tensor c)
       = star (componentMap c t (S.componentReindex c b))
 ```
 
-**`ConjTensorSpecies.toMatrix_conjT`**, a lemma, [line 260](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/Relativity/Tensors/Conjugation/Basic.lean#L260).
+**`ConjTensorSpecies.toMatrix_conjT`**, a lemma, [line 260](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Relativity/Tensors/Conjugation/Basic.lean#L260).
 
 > Conjugating a rank-two tensor conjugates each component and bars both indices:
 > `(T̄)_{ĪJ̄} = (T_{IJ})*`, where barring a barred index removes the bar. For example, `ψ_α χ_β` goes
@@ -237,14 +237,14 @@ lemma toMatrix_conjT {cs : Fin 2 → C} (t : S.Tensor cs) :
       (Equiv.cast (S.barIdx_eq (cs 0))) (Equiv.cast (S.barIdx_eq (cs 1)))
 ```
 
-**`ConjTensorSpecies.conjT_basis`**, a lemma, [line 269](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/Relativity/Tensors/Conjugation/Basic.lean#L269).
+**`ConjTensorSpecies.conjT_basis`**, a lemma, [line 269](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Relativity/Tensors/Conjugation/Basic.lean#L269).
 
 ```lean
 lemma conjT_basis {n : ℕ} {c : Fin n → C} (i : ComponentIdx (S := S.toTensorSpecies) c) :
     S.conjT (basis c i) = basis (fun i => S.bar (c i)) ((S.componentReindex c).symm i)
 ```
 
-**`ConjTensorSpecies.conjSingleT`**, a def, [line 285](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/Relativity/Tensors/Conjugation/Basic.lean#L285).
+**`ConjTensorSpecies.conjSingleT`**, a def, [line 285](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Relativity/Tensors/Conjugation/Basic.lean#L285).
 
 > Conjugation of a vector, `vᴵ ↦ v̄^Ī = (vᴵ)*`, landing at the conjugate colour. For example, a
 > left-handed Weyl spinor `ψ_α` goes to the right-handed `ψ̄_α̇`.
@@ -253,7 +253,7 @@ lemma conjT_basis {n : ℕ} {c : Fin n → C} (i : ComponentIdx (S := S.toTensor
 def conjSingleT (x : C) : S.Tensor ![x] →ₛₗ[starRingEnd k] S.Tensor ![S.bar x]
 ```
 
-**`ConjTensorSpecies.conjSingleT_basis`**, a lemma, [line 291](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/Relativity/Tensors/Conjugation/Basic.lean#L291).
+**`ConjTensorSpecies.conjSingleT_basis`**, a lemma, [line 291](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Relativity/Tensors/Conjugation/Basic.lean#L291).
 
 > Conjugation sends the basis vector `e_I` to `ē_Ī`, the basis vector of the conjugate colour with
 > the same label.
@@ -264,14 +264,14 @@ lemma conjSingleT_basis (x : C) (z : basisIdx x) :
       basis ![S.bar x] (ComponentIdx.single.symm (cast (S.barIdx_eq x).symm z))
 ```
 
-**`ConjTensorSpecies.conjT_pure`**, a lemma, [line 299](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/Relativity/Tensors/Conjugation/Basic.lean#L299).
+**`ConjTensorSpecies.conjT_pure`**, a lemma, [line 299](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Relativity/Tensors/Conjugation/Basic.lean#L299).
 
 ```lean
 lemma conjT_pure {n : ℕ} {c : Fin n → C} (p : Tensor.Pure S.toTensorSpecies c) :
     S.conjT p.toTensor = Pure.toTensor (fun i => S.conjEquiv (p i))
 ```
 
-**`ConjTensorSpecies.conjT_eq_permT_iff`**, a lemma, [line 317](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/Relativity/Tensors/Conjugation/Basic.lean#L317).
+**`ConjTensorSpecies.conjT_eq_permT_iff`**, a lemma, [line 317](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Relativity/Tensors/Conjugation/Basic.lean#L317).
 
 > Componentwise criterion for `conjT t = permT σ h t'`. The conjugate of `t` equals the
 > recolouring `permT σ h t'` exactly when, at every component, the `star`-conjugated reindexed
@@ -290,7 +290,7 @@ lemma conjT_eq_permT_iff {n m : ℕ} {c : Fin n → C} {c' : Fin m → C}
           = (Tensor.basis (fun i => S.bar (c i))).repr (permT σ h t') φ
 ```
 
-**`ConjTensorSpecies.conjT_equivariant`**, a lemma, [line 333](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/Relativity/Tensors/Conjugation/Basic.lean#L333).
+**`ConjTensorSpecies.conjT_equivariant`**, a lemma, [line 333](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Relativity/Tensors/Conjugation/Basic.lean#L333).
 
 ```lean
 lemma conjT_equivariant {n : ℕ} {c : Fin n → C} (g : G) (t : S.Tensor c) :
@@ -302,7 +302,7 @@ lemma conjT_equivariant {n : ℕ} {c : Fin n → C} (g : G) (t : S.Tensor c) :
 > We prove `conjT_conjT`: conjugating a tensor twice returns it, up to the identity recolouring
 > `bar ∘ bar ∘ c = c`. The supporting lemmas reconcile the iterated basis-label casts.
 
-**`ConjTensorSpecies.isReindexing_bar_bar`**, a lemma, [line 360](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/Relativity/Tensors/Conjugation/Basic.lean#L360).
+**`ConjTensorSpecies.isReindexing_bar_bar`**, a lemma, [line 360](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Relativity/Tensors/Conjugation/Basic.lean#L360).
 
 > The identity permutation satisfies `IsReindexing` from `c` to `bar ∘ bar ∘ c`, as `bar` is an
 > involution.
@@ -312,7 +312,7 @@ lemma isReindexing_bar_bar {n : ℕ} (c : Fin n → C) :
     IsReindexing c (fun i => S.bar (S.bar (c i))) (id : Fin n → Fin n)
 ```
 
-**`ConjTensorSpecies.conjT_conjT`**, a lemma, [line 366](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/Relativity/Tensors/Conjugation/Basic.lean#L366).
+**`ConjTensorSpecies.conjT_conjT`**, a lemma, [line 366](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Relativity/Tensors/Conjugation/Basic.lean#L366).
 
 > Conjugation is an involution: conjugating twice returns the original tensor, up to the
 > `bar_involution` recolouring (the identity permutation `permT`).
@@ -329,7 +329,7 @@ lemma conjT_conjT {n : ℕ} {c : Fin n → C} (t : S.Tensor c) :
 > contraction expands as a sum over the contracted index pair, and `conj_contrComm` matches the
 > conjugated coefficients to those on the `bar`-images.
 
-**`ConjTensorSpecies.contrCond_bar`**, a lemma, [line 393](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/Relativity/Tensors/Conjugation/Basic.lean#L393).
+**`ConjTensorSpecies.contrCond_bar`**, a lemma, [line 393](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Relativity/Tensors/Conjugation/Basic.lean#L393).
 
 > Slots with dual colour in `c` have dual colour in `bar ∘ c`, as `bar` commutes with `τ`.
 
@@ -339,7 +339,7 @@ lemma contrCond_bar {n : ℕ} {c : Fin (n + 1 + 1) → C} {i j : Fin (n + 1 + 1)
     i ≠ j ∧ S.τ ((S.bar ∘ c) i) = (S.bar ∘ c) j
 ```
 
-**`ConjTensorSpecies.conjT_contrT`**, a lemma, [line 400](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/Relativity/Tensors/Conjugation/Basic.lean#L400).
+**`ConjTensorSpecies.conjT_contrT`**, a lemma, [line 400](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Relativity/Tensors/Conjugation/Basic.lean#L400).
 
 > Conjugation commutes with contraction: conjugating a contracted tensor equals contracting the
 > conjugate on the `bar`-images of the same two slots.
@@ -366,7 +366,7 @@ lemma conjT_contrT {n : ℕ} {c : Fin (n + 1 + 1) → C} (i j : Fin (n + 1 + 1))
 > positive-definiteness and the inverse are defined only for square matrices. `M` is Hermitian,
 > `(M_{IJ̄})* = M_{JĪ}`, exactly when this matrix is.
 
-**`ConjTensorSpecies.IsHermitian`**, a def, [line 461](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/Relativity/Tensors/Conjugation/Basic.lean#L461).
+**`ConjTensorSpecies.IsHermitian`**, a def, [line 461](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Relativity/Tensors/Conjugation/Basic.lean#L461).
 
 > A pairing `g : V c ⊗ V (bar c) → k` is Hermitian when conjugating and swapping its two slots
 > via `conjEquiv` returns its `star`: `g (x ⊗ y) = star (g (conjEquiv.symm y ⊗ conjEquiv x))`.
@@ -375,7 +375,7 @@ lemma conjT_contrT {n : ℕ} {c : Fin (n + 1 + 1) → C} (i j : Fin (n + 1 + 1))
 def IsHermitian {c : C} (g : V c ⊗[k] V (S.bar c) →ₗ[k] k) : Prop
 ```
 
-**`ConjTensorSpecies.toSquareMatrix`**, a def, [line 471](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/Relativity/Tensors/Conjugation/Basic.lean#L471).
+**`ConjTensorSpecies.toSquareMatrix`**, a def, [line 471](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Relativity/Tensors/Conjugation/Basic.lean#L471).
 
 > The matrix `(M_{IJ̄})`, with entries unchanged, regarded as a square matrix over the labels of
 > `I`. Lean needs this step because the labels of a colour and of its conjugate are different types,
@@ -389,7 +389,7 @@ def toSquareMatrix {c : Fin 2 → C} (M : S.Tensor c) (hbar : S.bar (c 0) = c 1 
     Matrix (basisIdx (c 0)) (basisIdx (c 0)) k
 ```
 
-**`ConjTensorSpecies.toSquareMatrix_apply`**, a lemma, [line 475](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/Relativity/Tensors/Conjugation/Basic.lean#L475).
+**`ConjTensorSpecies.toSquareMatrix_apply`**, a lemma, [line 475](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Relativity/Tensors/Conjugation/Basic.lean#L475).
 
 ```lean
 lemma toSquareMatrix_apply {c : Fin 2 → C} (hbar : S.bar (c 0) = c 1) (M : S.Tensor c)
@@ -398,7 +398,7 @@ lemma toSquareMatrix_apply {c : Fin 2 → C} (hbar : S.bar (c 0) = c 1) (M : S.T
       toMatrix M i ((Equiv.cast (hbar ▸ S.barIdx_eq (c 0))).symm j)
 ```
 
-**`ConjTensorSpecies.toMatrix_eq_submatrix_toSquareMatrix`**, a lemma, [line 482](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/Relativity/Tensors/Conjugation/Basic.lean#L482).
+**`ConjTensorSpecies.toMatrix_eq_submatrix_toSquareMatrix`**, a lemma, [line 482](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Relativity/Tensors/Conjugation/Basic.lean#L482).
 
 > `toMatrix M` is `toSquareMatrix M` with its columns labelled by `J̄` instead of `J`.
 
@@ -409,7 +409,7 @@ lemma toMatrix_eq_submatrix_toSquareMatrix {c : Fin 2 → C} (hbar : S.bar (c 0)
       (S.toSquareMatrix M hbar).submatrix id (Equiv.cast (hbar ▸ S.barIdx_eq (c 0)))
 ```
 
-**`ConjTensorSpecies.conjT_eq_permT_swap_iff_toSquareMatrix_isHermitian`**, a lemma, [line 492](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/Relativity/Tensors/Conjugation/Basic.lean#L492).
+**`ConjTensorSpecies.conjT_eq_permT_swap_iff_toSquareMatrix_isHermitian`**, a lemma, [line 492](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Relativity/Tensors/Conjugation/Basic.lean#L492).
 
 > For `M_{IJ̄}`, the conjugate `(M̄)_{ĪJ} = (M_{IJ̄})*` and the swapped tensor `M_{JĪ}` have the
 > same index types, a barred index then an ordinary one. They are equal, `(M_{IJ̄})* = M_{JĪ}`,
@@ -423,7 +423,7 @@ lemma conjT_eq_permT_swap_iff_toSquareMatrix_isHermitian {c : Fin 2 → C}
     (S.toSquareMatrix M hbar).IsHermitian
 ```
 
-**`ConjTensorSpecies.toMatrix_contractInnerT_eq_toSquareMatrix_mul`**, a lemma, [line 520](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/Relativity/Tensors/Conjugation/Basic.lean#L520).
+**`ConjTensorSpecies.toMatrix_contractInnerT_eq_toSquareMatrix_mul`**, a lemma, [line 520](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Relativity/Tensors/Conjugation/Basic.lean#L520).
 
 > The matrix of `g_{IJ̄} t^{J̄K}` is the product of the square matrix `(g_{IJ̄})` and the matrix
 > `(t^{J̄K})`, with the rows of `(t^{J̄K})` labelled by `J`.
@@ -446,7 +446,7 @@ lemma toMatrix_contractInnerT_eq_toSquareMatrix_mul [HasContrDualBases S.toTenso
 > `(vᴵ w_I)* = v̄^Ī w̄_Ī`: the conjugate contraction pairs the same labels. This follows because
 > contraction commutes with conjugation (`conj_contrComm`).
 
-**`ConjTensorSpecies.isContrDualMatching_bar`**, a lemma, [line 547](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/Relativity/Tensors/Conjugation/Basic.lean#L547).
+**`ConjTensorSpecies.isContrDualMatching_bar`**, a lemma, [line 547](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Relativity/Tensors/Conjugation/Basic.lean#L547).
 
 > The conjugate bases are dual: if `e_α` contracted with `e^β` is `δ_α^β`, then `ē_α̇` contracted
 > with `ē^β̇` is `δ_α̇^β̇`.
@@ -458,7 +458,7 @@ lemma isContrDualMatching_bar [HasContrDualBases S.toTensorSpecies] (d : C) :
         ((contrDualIdxEquiv S.toTensorSpecies d).trans (Equiv.cast (S.barIdx_eq d)).symm)))
 ```
 
-**`ConjTensorSpecies.dualIdxEquiv_bar`**, a lemma, [line 564](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/Relativity/Tensors/Conjugation/Basic.lean#L564).
+**`ConjTensorSpecies.dualIdxEquiv_bar`**, a lemma, [line 564](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Relativity/Tensors/Conjugation/Basic.lean#L564).
 
 > `dualIdxEquiv` sends a lower label `α` to the upper label `α` it contracts with to `1`.
 > Conjugation commutes with this: the dotted label `α̇` pairs with the dotted upper label `α̇`.
@@ -470,7 +470,7 @@ lemma dualIdxEquiv_bar [Nontrivial k] [HasContrDualBases S.toTensorSpecies] {c1 
       cast (hbar ▸ S.barIdx_eq c2).symm (dualIdxEquiv h x)
 ```
 
-**`ConjTensorSpecies.dualIdxEquiv_bar_tau`**, a lemma, [line 585](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/Relativity/Tensors/Conjugation/Basic.lean#L585).
+**`ConjTensorSpecies.dualIdxEquiv_bar_tau`**, a lemma, [line 585](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Relativity/Tensors/Conjugation/Basic.lean#L585).
 
 > Removing a bar and lowering an index commute on labels. From a label of the upper barred index
 > `J̄`, removing the bar and then lowering gives the same label of the lower index `J` as lowering and
@@ -517,7 +517,7 @@ lemma dualIdxEquiv_bar_tau [Nontrivial k] [HasContrDualBases S.toTensorSpecies] 
 > (`LinearMap.IsPosDef`). On a concrete species the colour conditions hold by `rfl`, so the form of
 > `g` on vectors of colour `x` is written `S.toSesqForm x g`.
 
-**`ConjTensorSpecies.toSesqForm`**, a def, [line 640](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/Relativity/Tensors/Conjugation/Basic.lean#L640).
+**`ConjTensorSpecies.toSesqForm`**, a def, [line 640](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Relativity/Tensors/Conjugation/Basic.lean#L640).
 
 > The Hermitian form `⟨s, t⟩ = M(t, s̄) = M_{IJ̄} tᴵ s̄^J̄` of a tensor `M_{IJ̄}`, on vectors
 > `s, t`. Convention: as in Mathlib it is conjugate-linear in its left argument `s`; `s̄` fills the
@@ -528,7 +528,7 @@ def toSesqForm (x : C) {c : Fin 2 → C} (M : S.Tensor c) (hbar : S.bar (c 0) = 
     (hx : S.τ x = c 0 := by rfl) : S.Tensor ![x] →ₗ⋆[k] S.Tensor ![x] →ₗ[k] k
 ```
 
-**`ConjTensorSpecies.toMatrix₂_toSesqForm`**, a lemma, [line 647](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/Relativity/Tensors/Conjugation/Basic.lean#L647).
+**`ConjTensorSpecies.toMatrix₂_toSesqForm`**, a lemma, [line 647](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Relativity/Tensors/Conjugation/Basic.lean#L647).
 
 > Since the left argument of the form fills the second slot of `M` (`toSesqForm`),
 > `⟨e_I, e_J⟩ = M(e_J, ē_I) = M_{JĪ}`: the matrix of the form is the transpose of `(M_{IJ̄})`. For a
@@ -542,7 +542,7 @@ lemma toMatrix₂_toSesqForm [HasContrDualBases S.toTensorSpecies] {x : C} {c : 
         (S.toSesqForm x M hbar hx) = (S.toSquareMatrix M hbar)ᵀ
 ```
 
-**`ConjTensorSpecies.isSymm_toSesqForm_iff_toSquareMatrix_isHermitian`**, a lemma, [line 666](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/Relativity/Tensors/Conjugation/Basic.lean#L666).
+**`ConjTensorSpecies.isSymm_toSesqForm_iff_toSquareMatrix_isHermitian`**, a lemma, [line 666](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Relativity/Tensors/Conjugation/Basic.lean#L666).
 
 > `⟨s, t⟩* = ⟨t, s⟩` for all `s, t` exactly when `(M_{IJ̄})* = M_{JĪ}`.
 
@@ -552,7 +552,7 @@ lemma isSymm_toSesqForm_iff_toSquareMatrix_isHermitian [HasContrDualBases S.toTe
     (S.toSesqForm x M hbar hx).IsSymm ↔ (S.toSquareMatrix M hbar).IsHermitian
 ```
 
-**`ConjTensorSpecies.isSymm_toSesqForm_iff_conjT_eq_permT`**, a lemma, [line 675](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/Relativity/Tensors/Conjugation/Basic.lean#L675).
+**`ConjTensorSpecies.isSymm_toSesqForm_iff_conjT_eq_permT`**, a lemma, [line 675](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Relativity/Tensors/Conjugation/Basic.lean#L675).
 
 > `⟨s, t⟩* = ⟨t, s⟩` for all `s, t` exactly when the conjugate of `M` equals `M` with its two
 > indices swapped, `(M_{IJ̄})* = M_{JĪ}`.
@@ -566,7 +566,7 @@ lemma isSymm_toSesqForm_iff_conjT_eq_permT [HasContrDualBases S.toTensorSpecies]
 
 ## I. Positive-definite tensors
 
-**`ConjTensorSpecies.isPosDef_toSesqForm_iff_toSquareMatrix_posDef`**, a lemma, [line 695](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/Relativity/Tensors/Conjugation/Basic.lean#L695).
+**`ConjTensorSpecies.isPosDef_toSesqForm_iff_toSquareMatrix_posDef`**, a lemma, [line 695](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Relativity/Tensors/Conjugation/Basic.lean#L695).
 
 > The form is positive-definite, Hermitian with `M_{IJ̄} tᴵ t̄^J̄ > 0` for every `t ≠ 0`, exactly
 > when the matrix `(M_{IJ̄})` is. A Kähler metric is positive-definite, which makes kinetic terms
@@ -578,7 +578,7 @@ lemma isPosDef_toSesqForm_iff_toSquareMatrix_posDef [HasContrDualBases S.toTenso
     (S.toSesqForm x M hbar hx).IsPosDef ↔ (S.toSquareMatrix M hbar).PosDef
 ```
 
-**`ConjTensorSpecies.isUnit_det_toSquareMatrix_of_isPosDef`**, a lemma, [line 713](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/Relativity/Tensors/Conjugation/Basic.lean#L713).
+**`ConjTensorSpecies.isUnit_det_toSquareMatrix_of_isPosDef`**, a lemma, [line 713](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Relativity/Tensors/Conjugation/Basic.lean#L713).
 
 > Over a field, the matrix `(M_{IJ̄})` of a positive-definite tensor is invertible.
 
@@ -591,10 +591,10 @@ lemma isUnit_det_toSquareMatrix_of_isPosDef [HasContrDualBases S.toTensorSpecies
 
 ## Depends on
 
-- [Positive-definite sesquilinear forms](../../../mathematics/formathlib/sesquilinearform.md)
+- [Positive-definite sesquilinear forms](../../../mathematics/formathlib/part-01/sesquilinearform.md)
 - [The conjugate module](../../../mathematics/modules/conjmodule.md)
 - [The bilinear map and the product of rank-two tensors](contraction-ranktwo.md)
 
 ## Sources
 
-- [Physlib/Relativity/Tensors/Conjugation/Basic.lean at 2a1dfe43](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/Relativity/Tensors/Conjugation/Basic.lean)
+- [Physlib/Relativity/Tensors/Conjugation/Basic.lean at 8c87bdfb](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Relativity/Tensors/Conjugation/Basic.lean)

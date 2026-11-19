@@ -8,7 +8,7 @@ proof: formalized
 
 # The Pauli and Gell-Mann matrices
 
-The module `Physlib.Mathematics.Groups.SpecialUnitary.LieAlgebra.GellMann.SpecialCases`, [Physlib/Mathematics/Groups/SpecialUnitary/LieAlgebra/GellMann/SpecialCases.lean](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/Mathematics/Groups/SpecialUnitary/LieAlgebra/GellMann/SpecialCases.lean): 4 declarations, 4 with a docstring.
+The module `Physlib.Mathematics.Groups.SpecialUnitary.LieAlgebra.GellMann.SpecialCases`, [Physlib/Mathematics/Groups/SpecialUnitary/LieAlgebra/GellMann/SpecialCases.lean](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Mathematics/Groups/SpecialUnitary/LieAlgebra/GellMann/SpecialCases.lean): 4 declarations, 4 with a docstring.
 
 > The generalized Gell-Mann matrices in the special cases `n = 2` and `n = 3`.
 
@@ -29,7 +29,7 @@ The module `Physlib.Mathematics.Groups.SpecialUnitary.LieAlgebra.GellMann.Specia
 
 ## A. The case `n = 2`
 
-**`SULieAlgebra.GellMannIndex.equivTwo`**, a def, [line 52](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/Mathematics/Groups/SpecialUnitary/LieAlgebra/GellMann/SpecialCases.lean#L52).
+**`SULieAlgebra.GellMannIndex.equivTwo`**, a def, [line 52](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Mathematics/Groups/SpecialUnitary/LieAlgebra/GellMann/SpecialCases.lean#L52).
 
 > For `n = 2`, the labelling of the generalized Gell-Mann matrices as the Pauli matrices
 > `σ₁, σ₂, σ₃` (as `0, 1, 2`): the symmetric, antisymmetric and diagonal matrices.
@@ -38,7 +38,7 @@ The module `Physlib.Mathematics.Groups.SpecialUnitary.LieAlgebra.GellMann.Specia
 def GellMannIndex.equivTwo : GellMannIndex 2 ≃ Fin 3
 ```
 
-**`SULieAlgebra.gellMannMatrices_two`**, a lemma, [line 68](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/Mathematics/Groups/SpecialUnitary/LieAlgebra/GellMann/SpecialCases.lean#L68).
+**`SULieAlgebra.gellMannMatrices_two`**, a lemma, [line 68](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Mathematics/Groups/SpecialUnitary/LieAlgebra/GellMann/SpecialCases.lean#L68).
 
 > For `n = 2` the generalized Gell-Mann matrices are the Pauli matrices `σ₁, σ₂, σ₃`, labelled
 > by `GellMannIndex.equivTwo`.
@@ -50,7 +50,7 @@ lemma gellMannMatrices_two (i : Fin 3) :
 
 ## B. The case `n = 3`
 
-**`SULieAlgebra.GellMannIndex.equivThree`**, a def, [line 83](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/Mathematics/Groups/SpecialUnitary/LieAlgebra/GellMann/SpecialCases.lean#L83).
+**`SULieAlgebra.GellMannIndex.equivThree`**, a def, [line 83](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Mathematics/Groups/SpecialUnitary/LieAlgebra/GellMann/SpecialCases.lean#L83).
 
 > For `n = 3`, the labelling of the Gell-Mann matrices in the standard order `λ₁, …, λ₈`
 > (as `0, …, 7`): `λ₁, λ₂, λ₃` are the symmetric, antisymmetric and diagonal matrices of the first
@@ -61,7 +61,7 @@ lemma gellMannMatrices_two (i : Fin 3) :
 def GellMannIndex.equivThree : GellMannIndex 3 ≃ Fin 8
 ```
 
-**`SULieAlgebra.gellMannMatrices_three`**, a lemma, [line 99](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/Mathematics/Groups/SpecialUnitary/LieAlgebra/GellMann/SpecialCases.lean#L99).
+**`SULieAlgebra.gellMannMatrices_three`**, a lemma, [line 99](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Mathematics/Groups/SpecialUnitary/LieAlgebra/GellMann/SpecialCases.lean#L99).
 
 > For `n = 3` the generalized Gell-Mann matrices are the Gell-Mann matrices `λ₁, …, λ₈`, labelled
 > in the standard order by `GellMannIndex.equivThree`.
@@ -86,4 +86,4 @@ lemma gellMannMatrices_three :
 
 ## Sources
 
-- [Physlib/Mathematics/Groups/SpecialUnitary/LieAlgebra/GellMann/SpecialCases.lean at 2a1dfe43](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/Mathematics/Groups/SpecialUnitary/LieAlgebra/GellMann/SpecialCases.lean)
+- [Physlib/Mathematics/Groups/SpecialUnitary/LieAlgebra/GellMann/SpecialCases.lean at 8c87bdfb](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Mathematics/Groups/SpecialUnitary/LieAlgebra/GellMann/SpecialCases.lean)

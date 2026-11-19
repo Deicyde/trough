@@ -8,7 +8,7 @@ proof: formalized
 
 # Powers of the positive part
 
-The module `PhyslibAlpha.ClassicalMechanics.NortonDome.PosPartPow`, [PhyslibAlpha/ClassicalMechanics/NortonDome/PosPartPow.lean](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalMechanics/NortonDome/PosPartPow.lean): 2 declarations, 2 with a docstring.
+The module `PhyslibAlpha.ClassicalMechanics.NortonDome.PosPartPow`, [PhyslibAlpha/ClassicalMechanics/NortonDome/PosPartPow.lean](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalMechanics/NortonDome/PosPartPow.lean): 2 declarations, 2 with a docstring.
 
 > The derivative and `C^(n+1)` regularity of `y ↦ max (y - c) 0 ^ (n + 2)`.
 
@@ -35,7 +35,7 @@ The module `PhyslibAlpha.ClassicalMechanics.NortonDome.PosPartPow`, [PhyslibAlph
 > the point with `(y - c) ^ (n + 2)`, and at `c` the difference quotient is `max t 0 ^ (n + 1)`,
 > which tends to zero.
 
-**`hasDerivAt_max_sub_pow`**, a lemma, [line 58](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalMechanics/NortonDome/PosPartPow.lean#L58).
+**`hasDerivAt_max_sub_pow`**, a lemma, [line 58](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalMechanics/NortonDome/PosPartPow.lean#L58).
 
 > The power `max (y - c) 0 ^ (n + 2)` of the positive part of `y - c` has derivative
 > `(n + 2) max (x - c) 0 ^ (n + 1)` at every `x`, including the junction `x = c`.
@@ -51,7 +51,7 @@ lemma hasDerivAt_max_sub_pow (c : ℝ) (n : ℕ) (x : ℝ) :
 > By induction on `n`: the derivative of the `(n + 3)`-rd power is a constant multiple of the
 > `(n + 2)`-nd, which is `C^(n+1)` by the induction hypothesis.
 
-**`contDiff_max_sub_pow`**, a lemma, [line 103](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalMechanics/NortonDome/PosPartPow.lean#L103).
+**`contDiff_max_sub_pow`**, a lemma, [line 103](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalMechanics/NortonDome/PosPartPow.lean#L103).
 
 > The power `max (y - c) 0 ^ (n + 2)` of the positive part of `y - c` is `C^(n+1)`.
 
@@ -66,4 +66,4 @@ Its declarations' statements use no declaration of another module with an articl
 
 ## Sources
 
-- [PhyslibAlpha/ClassicalMechanics/NortonDome/PosPartPow.lean at 2a1dfe43](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalMechanics/NortonDome/PosPartPow.lean)
+- [PhyslibAlpha/ClassicalMechanics/NortonDome/PosPartPow.lean at 8c87bdfb](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalMechanics/NortonDome/PosPartPow.lean)

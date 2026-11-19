@@ -8,7 +8,7 @@ proof: formalized
 
 # Charged matter fields under `U(1)` jets
 
-The module `PhyslibAlpha.ClassicalFieldTheory.GaugeTheory.MatterField.Charge`, [PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/MatterField/Charge.lean](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/MatterField/Charge.lean): 8 declarations, 4 with a docstring.
+The module `PhyslibAlpha.ClassicalFieldTheory.GaugeTheory.MatterField.Charge`, [PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/MatterField/Charge.lean](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/MatterField/Charge.lean): 8 declarations, 4 with a docstring.
 
 ## i. Overview
 
@@ -32,7 +32,7 @@ The module `PhyslibAlpha.ClassicalFieldTheory.GaugeTheory.MatterField.Charge`, [
 
 ## A. Powers of a unitary jet
 
-**`MatterField.chargePow`**, a def, [line 55](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/MatterField/Charge.lean#L55).
+**`MatterField.chargePow`**, a def, [line 55](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/MatterField/Charge.lean#L55).
 
 > The unitary power series `U ^ n` of a `U(1)` jet, for an integer charge `n`.
 
@@ -40,13 +40,13 @@ The module `PhyslibAlpha.ClassicalFieldTheory.GaugeTheory.MatterField.Charge`, [
 noncomputable def chargePow (n : ℤ) (U : unitary SpaceTimeAlgebra) : SpaceTimeAlgebra
 ```
 
-**`MatterField.chargePow_one`**, a lemma, [line 58](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/MatterField/Charge.lean#L58).
+**`MatterField.chargePow_one`**, a lemma, [line 58](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/MatterField/Charge.lean#L58).
 
 ```lean
 lemma chargePow_one (n : ℤ) : chargePow n 1 = 1
 ```
 
-**`MatterField.chargePow_mul`**, a lemma, [line 61](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/MatterField/Charge.lean#L61).
+**`MatterField.chargePow_mul`**, a lemma, [line 61](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/MatterField/Charge.lean#L61).
 
 ```lean
 lemma chargePow_mul (n : ℤ) (U W : unitary SpaceTimeAlgebra) :
@@ -55,7 +55,7 @@ lemma chargePow_mul (n : ℤ) (U W : unitary SpaceTimeAlgebra) :
 
 ## B. The charge action on jets
 
-**`MatterField.chargeRep`**, a def, [line 73](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/MatterField/Charge.lean#L73).
+**`MatterField.chargeRep`**, a def, [line 73](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/MatterField/Charge.lean#L73).
 
 > **The charge-`n` action of `U(1)` jets on the jets of a `V`-valued field**:
 > multiplication of the jet-ring factor by `U ^ n`.
@@ -65,14 +65,14 @@ noncomputable def chargeRep (n : ℤ) (V : Type) [AddCommGroup V] [Module ℂ V]
     Representation ℂ (unitary SpaceTimeAlgebra) (SpaceTimeAlgebra ⊗[ℂ] V)
 ```
 
-**`MatterField.chargeRep_tmul`**, a lemma, [line 87](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/MatterField/Charge.lean#L87).
+**`MatterField.chargeRep_tmul`**, a lemma, [line 87](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/MatterField/Charge.lean#L87).
 
 ```lean
 lemma chargeRep_tmul (n : ℤ) (U : unitary SpaceTimeAlgebra) (f : SpaceTimeAlgebra) (v : V) :
     chargeRep n V U (f ⊗ₜ[ℂ] v) = (chargePow n U * f) ⊗ₜ[ℂ] v
 ```
 
-**`MatterField.chargeRep_smul`**, a lemma, [line 92](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/MatterField/Charge.lean#L92).
+**`MatterField.chargeRep_smul`**, a lemma, [line 92](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/MatterField/Charge.lean#L92).
 
 > **The charge action is fibrewise**: it commutes with multiplication by scalar jets.
 
@@ -84,7 +84,7 @@ lemma chargeRep_smul (n : ℤ) (U : unitary SpaceTimeAlgebra) (χ : SpaceTimeAlg
 
 ## C. Charged matter fields
 
-**`MatterField.charged`**, a def, [line 118](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/MatterField/Charge.lean#L118).
+**`MatterField.charged`**, a def, [line 118](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/MatterField/Charge.lean#L118).
 
 > **The charged matter field**: a field with values in `V`, Lorentz representation
 > `repLorentz`, electric charge `n`, mass weight `w` and declared statistic `σ`, as a matter
@@ -107,7 +107,7 @@ noncomputable def charged {𝔤 : Type} [LieRing 𝔤] [LieAlgebra ℝ 𝔤]
     MatterField jets
 ```
 
-**`MatterField.charged_V`**, a lemma, [line 134](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/MatterField/Charge.lean#L134).
+**`MatterField.charged_V`**, a lemma, [line 134](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/MatterField/Charge.lean#L134).
 
 ```lean
 lemma charged_V {𝔤 : Type} [LieRing 𝔤] [LieAlgebra ℝ 𝔤]
@@ -124,4 +124,4 @@ lemma charged_V {𝔤 : Type} [LieRing 𝔤] [LieAlgebra ℝ 𝔤]
 
 ## Sources
 
-- [PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/MatterField/Charge.lean at 2a1dfe43](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/MatterField/Charge.lean)
+- [PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/MatterField/Charge.lean at 8c87bdfb](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/MatterField/Charge.lean)

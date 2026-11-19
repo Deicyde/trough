@@ -1,12 +1,12 @@
 # QuantumInfo
 
-[QuantumInfo/](https://github.com/leanprover-community/physlib/tree/2a1dfe43134b49b643642f13d33031754021bb5d/QuantumInfo), a build target of its own in the repository. Its [README](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/README.md) describes it:
+[QuantumInfo/](https://github.com/leanprover-community/physlib/tree/8c87bdfb015de47e82da811567aaa7a2a05353f4/QuantumInfo), a build target of its own in the repository. Its [README](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/README.md) describes it:
 
 > Quantum information theory. Currently a distinct codebase with its own conventions and review norms; …
 
 Its 77 modules with a declaration are mapped here, an article each, on a page per area and per folder below it.
 
-The docstrings, Lean statements, API maps and README text are quoted from [leanprover-community/physlib](https://github.com/leanprover-community/physlib) at commit [2a1dfe43](https://github.com/leanprover-community/physlib/tree/2a1dfe43134b49b643642f13d33031754021bb5d), under its Apache-2.0 license.
+The docstrings, Lean statements, API maps and README text are quoted from [leanprover-community/physlib](https://github.com/leanprover-community/physlib) at commit [8c87bdfb](https://github.com/leanprover-community/physlib/tree/8c87bdfb015de47e82da811567aaa7a2a05353f4), under its Apache-2.0 license.
 
 - [Capacity](capacity/README.md)
 - [Channels](channels/README.md)

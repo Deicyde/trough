@@ -8,16 +8,16 @@ proof: formalized
 
 # QuantumInfo.ForMathlib.Filter
 
-The module `QuantumInfo.ForMathlib.Filter`, [QuantumInfo/ForMathlib/Filter.lean](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/QuantumInfo/ForMathlib/Filter.lean): 2 declarations, none with a docstring.
+The module `QuantumInfo.ForMathlib.Filter`, [QuantumInfo/ForMathlib/Filter.lean](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/QuantumInfo/ForMathlib/Filter.lean): 2 declarations, none with a docstring.
 
-**`Filter.Tendsto_inv_nat_mul_div_real`**, a lemma, [line 18](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/QuantumInfo/ForMathlib/Filter.lean#L18).
+**`Filter.Tendsto_inv_nat_mul_div_real`**, a lemma, [line 18](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/QuantumInfo/ForMathlib/Filter.lean#L18).
 
 ```lean
 lemma Filter.Tendsto_inv_nat_mul_div_real (m : ℕ)
    : Filter.Tendsto (fun (x : ℕ) => ((↑x)⁻¹ * ↑(x / m) : ℝ)) Filter.atTop (𝓝 (1 / ↑m))
 ```
 
-**`ENNReal.tendsto_toReal_iff_of_eventually_ne_top`**, a lemma, [line 50](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/QuantumInfo/ForMathlib/Filter.lean#L50).
+**`ENNReal.tendsto_toReal_iff_of_eventually_ne_top`**, a lemma, [line 50](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/QuantumInfo/ForMathlib/Filter.lean#L50).
 
 ```lean
 lemma ENNReal.tendsto_toReal_iff_of_eventually_ne_top
@@ -31,4 +31,4 @@ Its declarations' statements use no declaration of another module with an articl
 
 ## Sources
 
-- [QuantumInfo/ForMathlib/Filter.lean at 2a1dfe43](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/QuantumInfo/ForMathlib/Filter.lean)
+- [QuantumInfo/ForMathlib/Filter.lean at 8c87bdfb](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/QuantumInfo/ForMathlib/Filter.lean)

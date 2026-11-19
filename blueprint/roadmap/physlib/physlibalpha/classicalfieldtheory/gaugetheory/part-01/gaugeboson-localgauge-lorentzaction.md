@@ -8,7 +8,7 @@ proof: formalized
 
 # The Lorentz action on the gauge-boson jet algebra
 
-The module `PhyslibAlpha.ClassicalFieldTheory.GaugeTheory.GaugeBoson.LocalGauge.LorentzAction`, [PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/GaugeBoson/LocalGauge/LorentzAction.lean](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/GaugeBoson/LocalGauge/LorentzAction.lean): 19 declarations, 12 with a docstring.
+The module `PhyslibAlpha.ClassicalFieldTheory.GaugeTheory.GaugeBoson.LocalGauge.LorentzAction`, [PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/GaugeBoson/LocalGauge/LorentzAction.lean](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/GaugeBoson/LocalGauge/LorentzAction.lean): 19 declarations, 12 with a docstring.
 
 ## i. Overview
 
@@ -34,7 +34,7 @@ The module `PhyslibAlpha.ClassicalFieldTheory.GaugeTheory.GaugeBoson.LocalGauge.
 
 ## A. The Lorentz action on the component space
 
-**`GaugeBoson.JetComponentSpace.repLorentzGroup`**, a def, [line 69](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/GaugeBoson/LocalGauge/LorentzAction.lean#L69).
+**`GaugeBoson.JetComponentSpace.repLorentzGroup`**, a def, [line 69](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/GaugeBoson/LocalGauge/LorentzAction.lean#L69).
 
 > The Lorentz action on the jet component space of the gauge bosons: the derivative
 > label transforms in `SpaceTimeDerivAlgebraℝ`, the target index contragrediently.
@@ -46,7 +46,7 @@ noncomputable def JetComponentSpace.repLorentzGroup :
 
 ### A.1. Covariance of the derivative shift
 
-**`SpaceTimeDerivAlgebraℝ.repLorentzGroup_basis_singleton`**, a lemma, [line 81](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/GaugeBoson/LocalGauge/LorentzAction.lean#L81).
+**`SpaceTimeDerivAlgebraℝ.repLorentzGroup_basis_singleton`**, a lemma, [line 81](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/GaugeBoson/LocalGauge/LorentzAction.lean#L81).
 
 > The Lorentz action on the singleton derivative symbol: the derivative slot transforms
 > by the columns of the Lorentz matrix.
@@ -60,7 +60,7 @@ lemma _root_.SpaceTimeDerivAlgebraℝ.repLorentzGroup_basis_singleton
         SpaceTimeDerivAlgebraℝ.basisMultiset ({a} : Multiset (Fin 1 ⊕ Fin 3))
 ```
 
-**`GaugeBoson.JetComponentSpace.repLorentzGroup_jetDeriv`**, a lemma, [line 96](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/GaugeBoson/LocalGauge/LorentzAction.lean#L96).
+**`GaugeBoson.JetComponentSpace.repLorentzGroup_jetDeriv`**, a lemma, [line 96](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/GaugeBoson/LocalGauge/LorentzAction.lean#L96).
 
 > **The derivative shift is a Lorentz vector on the component space**: appending `∂_μ`
 > and then acting is acting and then appending the transformed `∂_μ`.
@@ -75,7 +75,7 @@ lemma JetComponentSpace.repLorentzGroup_jetDeriv (Λ : SL(2,ℂ)) (μ : Fin 1 �
 
 ## B. The Lorentz action on the jet algebra
 
-**`LocalGaugeFieldAlgebra.repLorentzGroup`**, a def, [line 137](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/GaugeBoson/LocalGauge/LorentzAction.lean#L137).
+**`LocalGaugeFieldAlgebra.repLorentzGroup`**, a def, [line 137](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/GaugeBoson/LocalGauge/LorentzAction.lean#L137).
 
 > **The Lorentz action on the gauge-boson jet algebra**: the symmetric-algebra functor
 > applied to the Lorentz action on the jet component space.
@@ -84,7 +84,7 @@ lemma JetComponentSpace.repLorentzGroup_jetDeriv (Λ : SL(2,ℂ)) (μ : Fin 1 �
 noncomputable def repLorentzGroup : Representation ℝ SL(2,ℂ) (LocalGaugeFieldAlgebra 𝔤)
 ```
 
-**`LocalGaugeFieldAlgebra.repLorentzGroup_apply`**, a lemma, [line 147](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/GaugeBoson/LocalGauge/LorentzAction.lean#L147).
+**`LocalGaugeFieldAlgebra.repLorentzGroup_apply`**, a lemma, [line 147](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/GaugeBoson/LocalGauge/LorentzAction.lean#L147).
 
 ```lean
 lemma repLorentzGroup_apply (Λ : SL(2,ℂ)) (x : (LocalGaugeFieldAlgebra 𝔤)) :
@@ -92,21 +92,21 @@ lemma repLorentzGroup_apply (Λ : SL(2,ℂ)) (x : (LocalGaugeFieldAlgebra 𝔤))
       SymmetricAlgebra.map ((GaugeBoson.JetComponentSpace.repLorentzGroup 𝔤) Λ) x
 ```
 
-**`LocalGaugeFieldAlgebra.repLorentzGroup_apply_one`**, a lemma, [line 153](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/GaugeBoson/LocalGauge/LorentzAction.lean#L153).
+**`LocalGaugeFieldAlgebra.repLorentzGroup_apply_one`**, a lemma, [line 153](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/GaugeBoson/LocalGauge/LorentzAction.lean#L153).
 
 ```lean
 lemma repLorentzGroup_apply_one (Λ : SL(2,ℂ)) :
     (repLorentzGroup 𝔤) Λ (1 : (LocalGaugeFieldAlgebra 𝔤)) = 1
 ```
 
-**`LocalGaugeFieldAlgebra.repLorentzGroup_apply_mul`**, a lemma, [line 158](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/GaugeBoson/LocalGauge/LorentzAction.lean#L158).
+**`LocalGaugeFieldAlgebra.repLorentzGroup_apply_mul`**, a lemma, [line 158](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/GaugeBoson/LocalGauge/LorentzAction.lean#L158).
 
 ```lean
 lemma repLorentzGroup_apply_mul (Λ : SL(2,ℂ)) (x y : (LocalGaugeFieldAlgebra 𝔤)) :
     (repLorentzGroup 𝔤) Λ (x * y) = (repLorentzGroup 𝔤) Λ x * (repLorentzGroup 𝔤) Λ y
 ```
 
-**`LocalGaugeFieldAlgebra.repLorentzGroup_ι`**, a lemma, [line 164](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/GaugeBoson/LocalGauge/LorentzAction.lean#L164).
+**`LocalGaugeFieldAlgebra.repLorentzGroup_ι`**, a lemma, [line 164](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/GaugeBoson/LocalGauge/LorentzAction.lean#L164).
 
 ```lean
 lemma repLorentzGroup_ι (Λ : SL(2,ℂ)) (v : (GaugeBoson.JetComponentSpace 𝔤)) :
@@ -116,7 +116,7 @@ lemma repLorentzGroup_ι (Λ : SL(2,ℂ)) (v : (GaugeBoson.JetComponentSpace �
 
 ## C. Lorentz covariance of the total derivative
 
-**`LocalGaugeFieldAlgebra.repLorentzGroup_jetDeriv`**, a lemma, [line 177](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/GaugeBoson/LocalGauge/LorentzAction.lean#L177).
+**`LocalGaugeFieldAlgebra.repLorentzGroup_jetDeriv`**, a lemma, [line 177](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/GaugeBoson/LocalGauge/LorentzAction.lean#L177).
 
 > **The total derivative on the gauge-boson jet algebra is a Lorentz vector.**
 
@@ -129,7 +129,7 @@ lemma repLorentzGroup_jetDeriv (Λ : SL(2,ℂ)) (μ : Fin 1 ⊕ Fin 3) (x : (Loc
 
 ## D. The complexified action
 
-**`LocalGaugeFieldAlgebra.complexRepLorentzGroup`**, a def, [line 208](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/GaugeBoson/LocalGauge/LorentzAction.lean#L208).
+**`LocalGaugeFieldAlgebra.complexRepLorentzGroup`**, a def, [line 208](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/GaugeBoson/LocalGauge/LorentzAction.lean#L208).
 
 > The Lorentz action on the complexified gauge-boson jet algebra, by base change.
 
@@ -138,14 +138,14 @@ noncomputable def complexRepLorentzGroup :
     Representation ℂ SL(2,ℂ) (ℂ ⊗[ℝ] (LocalGaugeFieldAlgebra 𝔤))
 ```
 
-**`LocalGaugeFieldAlgebra.complexRepLorentzGroup_tmul`**, a lemma, [line 218](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/GaugeBoson/LocalGauge/LorentzAction.lean#L218).
+**`LocalGaugeFieldAlgebra.complexRepLorentzGroup_tmul`**, a lemma, [line 218](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/GaugeBoson/LocalGauge/LorentzAction.lean#L218).
 
 ```lean
 lemma complexRepLorentzGroup_tmul (Λ : SL(2,ℂ)) (z : ℂ) (x : (LocalGaugeFieldAlgebra 𝔤)) :
     (complexRepLorentzGroup 𝔤) Λ (z ⊗ₜ[ℝ] x) = z ⊗ₜ[ℝ] (repLorentzGroup 𝔤) Λ x
 ```
 
-**`LocalGaugeFieldAlgebra.complexRepLorentzGroupAlgHom`**, a def, [line 225](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/GaugeBoson/LocalGauge/LorentzAction.lean#L225).
+**`LocalGaugeFieldAlgebra.complexRepLorentzGroupAlgHom`**, a def, [line 225](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/GaugeBoson/LocalGauge/LorentzAction.lean#L225).
 
 > The action of a Lorentz transformation on the complexified gauge-boson jet algebra, as
 > an algebra endomorphism: the base change of the symmetric-algebra functor applied to the
@@ -156,14 +156,14 @@ noncomputable def complexRepLorentzGroupAlgHom (Λ : SL(2,ℂ)) :
     ℂ ⊗[ℝ] (LocalGaugeFieldAlgebra 𝔤) →ₐ[ℂ] ℂ ⊗[ℝ] (LocalGaugeFieldAlgebra 𝔤)
 ```
 
-**`LocalGaugeFieldAlgebra.complexRepLorentzGroup_apply`**, a lemma, [line 231](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/GaugeBoson/LocalGauge/LorentzAction.lean#L231).
+**`LocalGaugeFieldAlgebra.complexRepLorentzGroup_apply`**, a lemma, [line 231](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/GaugeBoson/LocalGauge/LorentzAction.lean#L231).
 
 ```lean
 lemma complexRepLorentzGroup_apply (Λ : SL(2,ℂ)) (x : ℂ ⊗[ℝ] (LocalGaugeFieldAlgebra 𝔤)) :
     (complexRepLorentzGroup 𝔤) Λ x = complexRepLorentzGroupAlgHom 𝔤 Λ x
 ```
 
-**`LocalGaugeFieldAlgebra.complexRepLorentzGroup_apply_mul`**, a lemma, [line 238](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/GaugeBoson/LocalGauge/LorentzAction.lean#L238).
+**`LocalGaugeFieldAlgebra.complexRepLorentzGroup_apply_mul`**, a lemma, [line 238](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/GaugeBoson/LocalGauge/LorentzAction.lean#L238).
 
 ```lean
 lemma complexRepLorentzGroup_apply_mul (Λ : SL(2,ℂ)) (x y : ℂ ⊗[ℝ] (LocalGaugeFieldAlgebra 𝔤)) :
@@ -171,7 +171,7 @@ lemma complexRepLorentzGroup_apply_mul (Λ : SL(2,ℂ)) (x y : ℂ ⊗[ℝ] (Loc
       = (complexRepLorentzGroup 𝔤) Λ x * (complexRepLorentzGroup 𝔤) Λ y
 ```
 
-**`LocalGaugeFieldAlgebra.complexRepLorentzGroup_jetDeriv`**, a lemma, [line 253](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/GaugeBoson/LocalGauge/LorentzAction.lean#L253).
+**`LocalGaugeFieldAlgebra.complexRepLorentzGroup_jetDeriv`**, a lemma, [line 253](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/GaugeBoson/LocalGauge/LorentzAction.lean#L253).
 
 > **The complexified total derivative is a Lorentz vector.**
 
@@ -183,7 +183,7 @@ lemma complexRepLorentzGroup_jetDeriv (Λ : SL(2,ℂ)) (μ : Fin 1 ⊕ Fin 3)
         (complexJetDeriv 𝔤) a ((complexRepLorentzGroup 𝔤) Λ x)
 ```
 
-**`LocalGaugeFieldAlgebra.instIsLorentzDeriv`**, an instance, [line 273](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/GaugeBoson/LocalGauge/LorentzAction.lean#L273).
+**`LocalGaugeFieldAlgebra.instIsLorentzDeriv`**, an instance, [line 273](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/GaugeBoson/LocalGauge/LorentzAction.lean#L273).
 
 > The complexified total derivatives form a Lorentz derivative, giving access to the
 > boost-weight machinery.
@@ -195,7 +195,7 @@ instance instIsLorentzDeriv :
 
 ## E. The Lorentz law of the gauge-field generators
 
-**`GaugeBoson.repLorentzGroup_dual_componentDual`**, a lemma, [line 286](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/GaugeBoson/LocalGauge/LorentzAction.lean#L286).
+**`GaugeBoson.repLorentzGroup_dual_componentDual`**, a lemma, [line 286](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/GaugeBoson/LocalGauge/LorentzAction.lean#L286).
 
 > The contragredient Lorentz action passes through a component covector to its spacetime
 > slot: the adjoint index is Lorentz-inert.
@@ -207,7 +207,7 @@ lemma _root_.GaugeBoson.repLorentzGroup_dual_componentDual (Λ : SL(2,ℂ))
       = (GaugeBoson.componentDual 𝔤) (Lorentz.CoVector.sl2Rep.dual Λ ω) φ
 ```
 
-**`LocalGaugeFieldAlgebra.repLorentzGroup_ofA`**, a lemma, [line 306](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/GaugeBoson/LocalGauge/LorentzAction.lean#L306).
+**`LocalGaugeFieldAlgebra.repLorentzGroup_ofA`**, a lemma, [line 306](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/GaugeBoson/LocalGauge/LorentzAction.lean#L306).
 
 > **The gauge field is a Lorentz covector**: the generator `A_μ^φ` mixes into the `A_a^φ`
 > by the columns of the Lorentz matrix, with the adjoint index untouched.
@@ -219,7 +219,7 @@ lemma repLorentzGroup_ofA (Λ : SL(2,ℂ)) (μ : Fin 1 ⊕ Fin 3)
       = ∑ a, ((Lorentz.SL2C.toLorentzGroup Λ).1 a μ) • (ofA 𝔤) a φ
 ```
 
-**`LocalGaugeFieldAlgebra.complexRepLorentzGroup_one_tmul_ofA`**, a lemma, [line 327](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/GaugeBoson/LocalGauge/LorentzAction.lean#L327).
+**`LocalGaugeFieldAlgebra.complexRepLorentzGroup_one_tmul_ofA`**, a lemma, [line 327](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/GaugeBoson/LocalGauge/LorentzAction.lean#L327).
 
 > The Lorentz law of the gauge-field generators on the complexification.
 
@@ -238,4 +238,4 @@ lemma complexRepLorentzGroup_one_tmul_ofA (Λ : SL(2,ℂ)) (μ : Fin 1 ⊕ Fin 3
 
 ## Sources
 
-- [PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/GaugeBoson/LocalGauge/LorentzAction.lean at 2a1dfe43](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/GaugeBoson/LocalGauge/LorentzAction.lean)
+- [PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/GaugeBoson/LocalGauge/LorentzAction.lean at 8c87bdfb](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/GaugeBoson/LocalGauge/LorentzAction.lean)

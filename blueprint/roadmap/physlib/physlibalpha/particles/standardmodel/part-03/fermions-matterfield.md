@@ -8,7 +8,7 @@ proof: formalized
 
 # The Standard Model fermions as matter fields
 
-The module `PhyslibAlpha.Particles.StandardModel.Fermions.MatterField`, [PhyslibAlpha/Particles/StandardModel/Fermions/MatterField.lean](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/Fermions/MatterField.lean): 40 declarations, 15 with a docstring.
+The module `PhyslibAlpha.Particles.StandardModel.Fermions.MatterField`, [PhyslibAlpha/Particles/StandardModel/Fermions/MatterField.lean](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/Fermions/MatterField.lean): 40 declarations, 15 with a docstring.
 
 ## i. Overview
 
@@ -48,7 +48,7 @@ The module `PhyslibAlpha.Particles.StandardModel.Fermions.MatterField`, [Physlib
 
 ### A.1. The lepton doublet
 
-**`StandardModel.LeptonDoubletV.matterField`**, a def, [line 79](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/Fermions/MatterField.lean#L79).
+**`StandardModel.LeptonDoubletV.matterField`**, a def, [line 79](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/Fermions/MatterField.lean#L79).
 
 > The lepton doublet as a matter field of `StandardModel.localGaugeData`, in the `(1, 2)_{-3}`
 > representation with its left-handed Lorentz action: the matter field the general theory
@@ -58,37 +58,37 @@ The module `PhyslibAlpha.Particles.StandardModel.Fermions.MatterField`, [Physlib
 noncomputable def matterField : MatterField localGaugeData
 ```
 
-**`StandardModel.LeptonDoubletV.matterField_V`**, a lemma, [line 97](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/Fermions/MatterField.lean#L97).
+**`StandardModel.LeptonDoubletV.matterField_V`**, a lemma, [line 97](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/Fermions/MatterField.lean#L97).
 
 ```lean
 lemma matterField_V : matterField.V = LeptonDoubletV
 ```
 
-**`StandardModel.LeptonDoubletV.matterField_repLorentz`**, a lemma, [line 100](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/Fermions/MatterField.lean#L100).
+**`StandardModel.LeptonDoubletV.matterField_repLorentz`**, a lemma, [line 100](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/Fermions/MatterField.lean#L100).
 
 ```lean
 lemma matterField_repLorentz : matterField.repLorentz = repLorentzGroup
 ```
 
-**`StandardModel.LeptonDoubletV.matterField_repJet`**, a lemma, [line 103](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/Fermions/MatterField.lean#L103).
+**`StandardModel.LeptonDoubletV.matterField_repJet`**, a lemma, [line 103](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/Fermions/MatterField.lean#L103).
 
 ```lean
 lemma matterField_repJet : matterField.repJet = repJetGaugeGroupI
 ```
 
-**`StandardModel.LeptonDoubletV.matterField_repAlgebra`**, a lemma, [line 106](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/Fermions/MatterField.lean#L106).
+**`StandardModel.LeptonDoubletV.matterField_repAlgebra`**, a lemma, [line 106](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/Fermions/MatterField.lean#L106).
 
 ```lean
 lemma matterField_repAlgebra : matterField.repAlgebra = gaugeAlgebraAction
 ```
 
-**`StandardModel.LeptonDoubletV.matterField_massWeight`**, a lemma, [line 109](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/Fermions/MatterField.lean#L109).
+**`StandardModel.LeptonDoubletV.matterField_massWeight`**, a lemma, [line 109](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/Fermions/MatterField.lean#L109).
 
 ```lean
 lemma matterField_massWeight : matterField.massWeight = 3
 ```
 
-**`StandardModel.LeptonDoubletV.matterField_pureJetsActTrivially`**, a lemma, [line 112](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/Fermions/MatterField.lean#L112).
+**`StandardModel.LeptonDoubletV.matterField_pureJetsActTrivially`**, a lemma, [line 112](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/Fermions/MatterField.lean#L112).
 
 > Pure gauge jets act trivially on the lepton doublet at the base point.
 
@@ -96,7 +96,7 @@ lemma matterField_massWeight : matterField.massWeight = 3
 lemma matterField_pureJetsActTrivially : matterField.PureJetsActTrivially
 ```
 
-**`StandardModel.LeptonDoubletV.matterField_gaugeLorentzCompatible`**, a lemma, [line 116](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/Fermions/MatterField.lean#L116).
+**`StandardModel.LeptonDoubletV.matterField_gaugeLorentzCompatible`**, a lemma, [line 116](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/Fermions/MatterField.lean#L116).
 
 > The gauge and Lorentz actions on the lepton doublet commute.
 
@@ -106,7 +106,7 @@ lemma matterField_gaugeLorentzCompatible : matterField.GaugeLorentzCompatible
 
 ### A.2. The charged-lepton singlet
 
-**`StandardModel.LeptonSinglet.matterField`**, a def, [line 131](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/Fermions/MatterField.lean#L131).
+**`StandardModel.LeptonSinglet.matterField`**, a def, [line 131](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/Fermions/MatterField.lean#L131).
 
 > The charged-lepton singlet as a matter field of `StandardModel.localGaugeData`, in the
 > `(1, 1)_{-6}` representation with its right-handed Lorentz action.
@@ -115,37 +115,37 @@ lemma matterField_gaugeLorentzCompatible : matterField.GaugeLorentzCompatible
 noncomputable def matterField : MatterField localGaugeData
 ```
 
-**`StandardModel.LeptonSinglet.matterField_V`**, a lemma, [line 142](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/Fermions/MatterField.lean#L142).
+**`StandardModel.LeptonSinglet.matterField_V`**, a lemma, [line 142](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/Fermions/MatterField.lean#L142).
 
 ```lean
 lemma matterField_V : matterField.V = LeptonSinglet
 ```
 
-**`StandardModel.LeptonSinglet.matterField_repLorentz`**, a lemma, [line 145](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/Fermions/MatterField.lean#L145).
+**`StandardModel.LeptonSinglet.matterField_repLorentz`**, a lemma, [line 145](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/Fermions/MatterField.lean#L145).
 
 ```lean
 lemma matterField_repLorentz : matterField.repLorentz = repLorentzGroup
 ```
 
-**`StandardModel.LeptonSinglet.matterField_repJet`**, a lemma, [line 148](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/Fermions/MatterField.lean#L148).
+**`StandardModel.LeptonSinglet.matterField_repJet`**, a lemma, [line 148](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/Fermions/MatterField.lean#L148).
 
 ```lean
 lemma matterField_repJet : matterField.repJet = repJetGaugeGroupI
 ```
 
-**`StandardModel.LeptonSinglet.matterField_repAlgebra`**, a lemma, [line 151](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/Fermions/MatterField.lean#L151).
+**`StandardModel.LeptonSinglet.matterField_repAlgebra`**, a lemma, [line 151](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/Fermions/MatterField.lean#L151).
 
 ```lean
 lemma matterField_repAlgebra : matterField.repAlgebra = gaugeAlgebraAction
 ```
 
-**`StandardModel.LeptonSinglet.matterField_massWeight`**, a lemma, [line 154](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/Fermions/MatterField.lean#L154).
+**`StandardModel.LeptonSinglet.matterField_massWeight`**, a lemma, [line 154](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/Fermions/MatterField.lean#L154).
 
 ```lean
 lemma matterField_massWeight : matterField.massWeight = 3
 ```
 
-**`StandardModel.LeptonSinglet.matterField_pureJetsActTrivially`**, a lemma, [line 157](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/Fermions/MatterField.lean#L157).
+**`StandardModel.LeptonSinglet.matterField_pureJetsActTrivially`**, a lemma, [line 157](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/Fermions/MatterField.lean#L157).
 
 > Pure gauge jets act trivially on the charged-lepton singlet at the base point.
 
@@ -153,7 +153,7 @@ lemma matterField_massWeight : matterField.massWeight = 3
 lemma matterField_pureJetsActTrivially : matterField.PureJetsActTrivially
 ```
 
-**`StandardModel.LeptonSinglet.matterField_gaugeLorentzCompatible`**, a lemma, [line 161](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/Fermions/MatterField.lean#L161).
+**`StandardModel.LeptonSinglet.matterField_gaugeLorentzCompatible`**, a lemma, [line 161](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/Fermions/MatterField.lean#L161).
 
 > The gauge and Lorentz actions on the charged-lepton singlet commute.
 
@@ -165,7 +165,7 @@ lemma matterField_gaugeLorentzCompatible : matterField.GaugeLorentzCompatible
 
 ### B.1. The quark doublet
 
-**`StandardModel.QuarkDoublet.matterField`**, a def, [line 178](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/Fermions/MatterField.lean#L178).
+**`StandardModel.QuarkDoublet.matterField`**, a def, [line 178](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/Fermions/MatterField.lean#L178).
 
 > The quark doublet as a matter field of `StandardModel.localGaugeData`, in the `(3, 2)_{1}`
 > representation with its left-handed Lorentz action.
@@ -174,37 +174,37 @@ lemma matterField_gaugeLorentzCompatible : matterField.GaugeLorentzCompatible
 noncomputable def matterField : MatterField localGaugeData
 ```
 
-**`StandardModel.QuarkDoublet.matterField_V`**, a lemma, [line 189](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/Fermions/MatterField.lean#L189).
+**`StandardModel.QuarkDoublet.matterField_V`**, a lemma, [line 189](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/Fermions/MatterField.lean#L189).
 
 ```lean
 lemma matterField_V : matterField.V = QuarkDoublet
 ```
 
-**`StandardModel.QuarkDoublet.matterField_repLorentz`**, a lemma, [line 192](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/Fermions/MatterField.lean#L192).
+**`StandardModel.QuarkDoublet.matterField_repLorentz`**, a lemma, [line 192](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/Fermions/MatterField.lean#L192).
 
 ```lean
 lemma matterField_repLorentz : matterField.repLorentz = repLorentzGroup
 ```
 
-**`StandardModel.QuarkDoublet.matterField_repJet`**, a lemma, [line 195](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/Fermions/MatterField.lean#L195).
+**`StandardModel.QuarkDoublet.matterField_repJet`**, a lemma, [line 195](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/Fermions/MatterField.lean#L195).
 
 ```lean
 lemma matterField_repJet : matterField.repJet = repJetGaugeGroupI
 ```
 
-**`StandardModel.QuarkDoublet.matterField_repAlgebra`**, a lemma, [line 198](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/Fermions/MatterField.lean#L198).
+**`StandardModel.QuarkDoublet.matterField_repAlgebra`**, a lemma, [line 198](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/Fermions/MatterField.lean#L198).
 
 ```lean
 lemma matterField_repAlgebra : matterField.repAlgebra = gaugeAlgebraAction
 ```
 
-**`StandardModel.QuarkDoublet.matterField_massWeight`**, a lemma, [line 201](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/Fermions/MatterField.lean#L201).
+**`StandardModel.QuarkDoublet.matterField_massWeight`**, a lemma, [line 201](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/Fermions/MatterField.lean#L201).
 
 ```lean
 lemma matterField_massWeight : matterField.massWeight = 3
 ```
 
-**`StandardModel.QuarkDoublet.matterField_pureJetsActTrivially`**, a lemma, [line 204](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/Fermions/MatterField.lean#L204).
+**`StandardModel.QuarkDoublet.matterField_pureJetsActTrivially`**, a lemma, [line 204](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/Fermions/MatterField.lean#L204).
 
 > Pure gauge jets act trivially on the quark doublet at the base point.
 
@@ -212,7 +212,7 @@ lemma matterField_massWeight : matterField.massWeight = 3
 lemma matterField_pureJetsActTrivially : matterField.PureJetsActTrivially
 ```
 
-**`StandardModel.QuarkDoublet.matterField_gaugeLorentzCompatible`**, a lemma, [line 208](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/Fermions/MatterField.lean#L208).
+**`StandardModel.QuarkDoublet.matterField_gaugeLorentzCompatible`**, a lemma, [line 208](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/Fermions/MatterField.lean#L208).
 
 > The gauge and Lorentz actions on the quark doublet commute.
 
@@ -222,7 +222,7 @@ lemma matterField_gaugeLorentzCompatible : matterField.GaugeLorentzCompatible
 
 ### B.2. The up-type singlet
 
-**`StandardModel.UpSinglet.matterField`**, a def, [line 223](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/Fermions/MatterField.lean#L223).
+**`StandardModel.UpSinglet.matterField`**, a def, [line 223](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/Fermions/MatterField.lean#L223).
 
 > The up-type quark singlet as a matter field of `StandardModel.localGaugeData`, in the
 > `(3, 1)_{4}` representation with its right-handed Lorentz action.
@@ -231,37 +231,37 @@ lemma matterField_gaugeLorentzCompatible : matterField.GaugeLorentzCompatible
 noncomputable def matterField : MatterField localGaugeData
 ```
 
-**`StandardModel.UpSinglet.matterField_V`**, a lemma, [line 234](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/Fermions/MatterField.lean#L234).
+**`StandardModel.UpSinglet.matterField_V`**, a lemma, [line 234](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/Fermions/MatterField.lean#L234).
 
 ```lean
 lemma matterField_V : matterField.V = UpSinglet
 ```
 
-**`StandardModel.UpSinglet.matterField_repLorentz`**, a lemma, [line 237](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/Fermions/MatterField.lean#L237).
+**`StandardModel.UpSinglet.matterField_repLorentz`**, a lemma, [line 237](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/Fermions/MatterField.lean#L237).
 
 ```lean
 lemma matterField_repLorentz : matterField.repLorentz = repLorentzGroup
 ```
 
-**`StandardModel.UpSinglet.matterField_repJet`**, a lemma, [line 240](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/Fermions/MatterField.lean#L240).
+**`StandardModel.UpSinglet.matterField_repJet`**, a lemma, [line 240](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/Fermions/MatterField.lean#L240).
 
 ```lean
 lemma matterField_repJet : matterField.repJet = repJetGaugeGroupI
 ```
 
-**`StandardModel.UpSinglet.matterField_repAlgebra`**, a lemma, [line 243](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/Fermions/MatterField.lean#L243).
+**`StandardModel.UpSinglet.matterField_repAlgebra`**, a lemma, [line 243](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/Fermions/MatterField.lean#L243).
 
 ```lean
 lemma matterField_repAlgebra : matterField.repAlgebra = gaugeAlgebraAction
 ```
 
-**`StandardModel.UpSinglet.matterField_massWeight`**, a lemma, [line 246](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/Fermions/MatterField.lean#L246).
+**`StandardModel.UpSinglet.matterField_massWeight`**, a lemma, [line 246](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/Fermions/MatterField.lean#L246).
 
 ```lean
 lemma matterField_massWeight : matterField.massWeight = 3
 ```
 
-**`StandardModel.UpSinglet.matterField_pureJetsActTrivially`**, a lemma, [line 249](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/Fermions/MatterField.lean#L249).
+**`StandardModel.UpSinglet.matterField_pureJetsActTrivially`**, a lemma, [line 249](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/Fermions/MatterField.lean#L249).
 
 > Pure gauge jets act trivially on the up-type singlet at the base point.
 
@@ -269,7 +269,7 @@ lemma matterField_massWeight : matterField.massWeight = 3
 lemma matterField_pureJetsActTrivially : matterField.PureJetsActTrivially
 ```
 
-**`StandardModel.UpSinglet.matterField_gaugeLorentzCompatible`**, a lemma, [line 253](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/Fermions/MatterField.lean#L253).
+**`StandardModel.UpSinglet.matterField_gaugeLorentzCompatible`**, a lemma, [line 253](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/Fermions/MatterField.lean#L253).
 
 > The gauge and Lorentz actions on the up-type singlet commute.
 
@@ -279,7 +279,7 @@ lemma matterField_gaugeLorentzCompatible : matterField.GaugeLorentzCompatible
 
 ### B.3. The down-type singlet
 
-**`StandardModel.DownSinglet.matterField`**, a def, [line 268](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/Fermions/MatterField.lean#L268).
+**`StandardModel.DownSinglet.matterField`**, a def, [line 268](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/Fermions/MatterField.lean#L268).
 
 > The down-type quark singlet as a matter field of `StandardModel.localGaugeData`, in the
 > `(3, 1)_{-2}` representation with its right-handed Lorentz action.
@@ -288,37 +288,37 @@ lemma matterField_gaugeLorentzCompatible : matterField.GaugeLorentzCompatible
 noncomputable def matterField : MatterField localGaugeData
 ```
 
-**`StandardModel.DownSinglet.matterField_V`**, a lemma, [line 279](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/Fermions/MatterField.lean#L279).
+**`StandardModel.DownSinglet.matterField_V`**, a lemma, [line 279](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/Fermions/MatterField.lean#L279).
 
 ```lean
 lemma matterField_V : matterField.V = DownSinglet
 ```
 
-**`StandardModel.DownSinglet.matterField_repLorentz`**, a lemma, [line 282](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/Fermions/MatterField.lean#L282).
+**`StandardModel.DownSinglet.matterField_repLorentz`**, a lemma, [line 282](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/Fermions/MatterField.lean#L282).
 
 ```lean
 lemma matterField_repLorentz : matterField.repLorentz = repLorentzGroup
 ```
 
-**`StandardModel.DownSinglet.matterField_repJet`**, a lemma, [line 285](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/Fermions/MatterField.lean#L285).
+**`StandardModel.DownSinglet.matterField_repJet`**, a lemma, [line 285](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/Fermions/MatterField.lean#L285).
 
 ```lean
 lemma matterField_repJet : matterField.repJet = repJetGaugeGroupI
 ```
 
-**`StandardModel.DownSinglet.matterField_repAlgebra`**, a lemma, [line 288](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/Fermions/MatterField.lean#L288).
+**`StandardModel.DownSinglet.matterField_repAlgebra`**, a lemma, [line 288](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/Fermions/MatterField.lean#L288).
 
 ```lean
 lemma matterField_repAlgebra : matterField.repAlgebra = gaugeAlgebraAction
 ```
 
-**`StandardModel.DownSinglet.matterField_massWeight`**, a lemma, [line 291](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/Fermions/MatterField.lean#L291).
+**`StandardModel.DownSinglet.matterField_massWeight`**, a lemma, [line 291](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/Fermions/MatterField.lean#L291).
 
 ```lean
 lemma matterField_massWeight : matterField.massWeight = 3
 ```
 
-**`StandardModel.DownSinglet.matterField_pureJetsActTrivially`**, a lemma, [line 294](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/Fermions/MatterField.lean#L294).
+**`StandardModel.DownSinglet.matterField_pureJetsActTrivially`**, a lemma, [line 294](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/Fermions/MatterField.lean#L294).
 
 > Pure gauge jets act trivially on the down-type singlet at the base point.
 
@@ -326,7 +326,7 @@ lemma matterField_massWeight : matterField.massWeight = 3
 lemma matterField_pureJetsActTrivially : matterField.PureJetsActTrivially
 ```
 
-**`StandardModel.DownSinglet.matterField_gaugeLorentzCompatible`**, a lemma, [line 298](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/Fermions/MatterField.lean#L298).
+**`StandardModel.DownSinglet.matterField_gaugeLorentzCompatible`**, a lemma, [line 298](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/Fermions/MatterField.lean#L298).
 
 > The gauge and Lorentz actions on the down-type singlet commute.
 
@@ -344,4 +344,4 @@ lemma matterField_gaugeLorentzCompatible : matterField.GaugeLorentzCompatible
 
 ## Sources
 
-- [PhyslibAlpha/Particles/StandardModel/Fermions/MatterField.lean at 2a1dfe43](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/Fermions/MatterField.lean)
+- [PhyslibAlpha/Particles/StandardModel/Fermions/MatterField.lean at 8c87bdfb](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/Fermions/MatterField.lean)

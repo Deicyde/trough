@@ -8,7 +8,7 @@ proof: formalized
 
 # Independence of the lift for the simple pendulum
 
-The module `Physlib.ClassicalMechanics.Pendulum.SimplePendulum.LiftInvariance`, [Physlib/ClassicalMechanics/Pendulum/SimplePendulum/LiftInvariance.lean](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/ClassicalMechanics/Pendulum/SimplePendulum/LiftInvariance.lean): 7 declarations, 7 with a docstring.
+The module `Physlib.ClassicalMechanics.Pendulum.SimplePendulum.LiftInvariance`, [Physlib/ClassicalMechanics/Pendulum/SimplePendulum/LiftInvariance.lean](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/ClassicalMechanics/Pendulum/SimplePendulum/LiftInvariance.lean): 7 declarations, 7 with a docstring.
 
 ## i. Overview
 
@@ -62,7 +62,7 @@ The module `Physlib.ClassicalMechanics.Pendulum.SimplePendulum.LiftInvariance`, 
 > and both have period `2π`: neither quantity changes when the angle is shifted by a whole number
 > of turns.
 
-**`ClassicalMechanics.SimplePendulum.potentialEnergy_add_int_mul_two_pi`**, a lemma, [line 95](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/ClassicalMechanics/Pendulum/SimplePendulum/LiftInvariance.lean#L95).
+**`ClassicalMechanics.SimplePendulum.potentialEnergy_add_int_mul_two_pi`**, a lemma, [line 95](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/ClassicalMechanics/Pendulum/SimplePendulum/LiftInvariance.lean#L95).
 
 > The potential energy of the simple pendulum is invariant under shifting the angle by a
 > whole number of turns.
@@ -73,7 +73,7 @@ lemma potentialEnergy_add_int_mul_two_pi (x : EuclideanSpace ℝ (Fin 1)) (n : �
       S.potentialEnergy x
 ```
 
-**`ClassicalMechanics.SimplePendulum.torque_add_int_mul_two_pi`**, a lemma, [line 105](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/ClassicalMechanics/Pendulum/SimplePendulum/LiftInvariance.lean#L105).
+**`ClassicalMechanics.SimplePendulum.torque_add_int_mul_two_pi`**, a lemma, [line 105](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/ClassicalMechanics/Pendulum/SimplePendulum/LiftInvariance.lean#L105).
 
 > The torque of the simple pendulum is invariant under shifting the angle by a whole number
 > of turns.
@@ -90,7 +90,7 @@ lemma torque_add_int_mul_two_pi (x : EuclideanSpace ℝ (Fin 1)) (n : ℤ) :
 > invariance of A.1. Together the two give the invariance of the energy under shifting the lift
 > by a whole number of turns.
 
-**`ClassicalMechanics.SimplePendulum.kineticEnergy_add_const`**, a lemma, [line 125](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/ClassicalMechanics/Pendulum/SimplePendulum/LiftInvariance.lean#L125).
+**`ClassicalMechanics.SimplePendulum.kineticEnergy_add_const`**, a lemma, [line 125](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/ClassicalMechanics/Pendulum/SimplePendulum/LiftInvariance.lean#L125).
 
 > The kinetic energy of the simple pendulum along a lift of the angle is invariant under
 > shifting the lift by any constant: the shift drops out of the velocity.
@@ -101,7 +101,7 @@ lemma kineticEnergy_add_const (θ : Time → EuclideanSpace ℝ (Fin 1))
     S.kineticEnergy (fun t => θ t + c) = S.kineticEnergy θ
 ```
 
-**`ClassicalMechanics.SimplePendulum.energy_add_int_mul_two_pi`**, a lemma, [line 137](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/ClassicalMechanics/Pendulum/SimplePendulum/LiftInvariance.lean#L137).
+**`ClassicalMechanics.SimplePendulum.energy_add_int_mul_two_pi`**, a lemma, [line 137](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/ClassicalMechanics/Pendulum/SimplePendulum/LiftInvariance.lean#L137).
 
 > The energy of the simple pendulum along a lift of the angle is invariant under shifting the
 > lift by a whole number of turns: A.1 supplies the invariance of the potential energy, and the
@@ -119,7 +119,7 @@ lemma energy_add_int_mul_two_pi (θ : Time → EuclideanSpace ℝ (Fin 1)) (n : 
 > because the shift is constant in time, and the torque, by the invariance of A.1. Smoothness is
 > likewise unaffected by adding a constant, so being a solution is invariant as well.
 
-**`ClassicalMechanics.SimplePendulum.equationOfMotion_add_int_mul_two_pi`**, a lemma, [line 155](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/ClassicalMechanics/Pendulum/SimplePendulum/LiftInvariance.lean#L155).
+**`ClassicalMechanics.SimplePendulum.equationOfMotion_add_int_mul_two_pi`**, a lemma, [line 155](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/ClassicalMechanics/Pendulum/SimplePendulum/LiftInvariance.lean#L155).
 
 > A lift of the angle shifted by a whole number of turns satisfies the equation of motion of
 > the simple pendulum if and only if the lift itself does.
@@ -130,7 +130,7 @@ lemma equationOfMotion_add_int_mul_two_pi (θ : Time → EuclideanSpace ℝ (Fin
       S.EquationOfMotion θ
 ```
 
-**`ClassicalMechanics.SimplePendulum.isSolution_add_int_mul_two_pi`**, a lemma, [line 165](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/ClassicalMechanics/Pendulum/SimplePendulum/LiftInvariance.lean#L165).
+**`ClassicalMechanics.SimplePendulum.isSolution_add_int_mul_two_pi`**, a lemma, [line 165](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/ClassicalMechanics/Pendulum/SimplePendulum/LiftInvariance.lean#L165).
 
 > A lift of the angle shifted by a whole number of turns is a solution of the simple pendulum
 > if and only if the lift itself is.
@@ -147,7 +147,7 @@ lemma isSolution_add_int_mul_two_pi (θ : Time → EuclideanSpace ℝ (Fin 1)) (
 > a whole number of turns project to the same point of the configuration space, by the
 > periodicity of the angular lift `ConfigurationSpace.ofAngle` with period `2π`.
 
-**`ClassicalMechanics.SimplePendulum.ofAngle_add_int_mul_two_pi_coord`**, a lemma, [line 189](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/ClassicalMechanics/Pendulum/SimplePendulum/LiftInvariance.lean#L189).
+**`ClassicalMechanics.SimplePendulum.ofAngle_add_int_mul_two_pi_coord`**, a lemma, [line 189](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/ClassicalMechanics/Pendulum/SimplePendulum/LiftInvariance.lean#L189).
 
 > A lift of the angle and its shift by a whole number of turns describe the same
 > configuration of the simple pendulum.
@@ -166,4 +166,4 @@ lemma ofAngle_add_int_mul_two_pi_coord (x : EuclideanSpace ℝ (Fin 1)) (n : ℤ
 
 ## Sources
 
-- [Physlib/ClassicalMechanics/Pendulum/SimplePendulum/LiftInvariance.lean at 2a1dfe43](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/ClassicalMechanics/Pendulum/SimplePendulum/LiftInvariance.lean)
+- [Physlib/ClassicalMechanics/Pendulum/SimplePendulum/LiftInvariance.lean at 8c87bdfb](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/ClassicalMechanics/Pendulum/SimplePendulum/LiftInvariance.lean)

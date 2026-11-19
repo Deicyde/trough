@@ -1,14 +1,14 @@
 ---
 declaration: module
 origin: cited
-lean: ProbabilisticTheory.QuantumMechanics.Essential.essSpectrum, ProbabilisticTheory.QuantumMechanics.Essential.mem_essSpectrum_of_seq
+lean: PhyslibAlpha.ProbabilisticTheory.QuantumMechanics.Essential.essSpectrum, PhyslibAlpha.ProbabilisticTheory.QuantumMechanics.Essential.mem_essSpectrum_of_seq
 statement: formalized
 proof: formalized
 ---
 
 # The essential spectrum
 
-The module `PhyslibAlpha.ProbabilisticTheory.HilbertSpace.Unbounded.EssentialSpectrum.Defs`, [PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/EssentialSpectrum/Defs.lean](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/EssentialSpectrum/Defs.lean): 2 declarations, 2 with a docstring.
+The module `PhyslibAlpha.ProbabilisticTheory.HilbertSpace.Unbounded.EssentialSpectrum.Defs`, [PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/EssentialSpectrum/Defs.lean](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/EssentialSpectrum/Defs.lean): 2 declarations, 2 with a docstring.
 
 > The essential spectrum of a self-adjoint operator, defined by singular sequences.
 
@@ -29,7 +29,7 @@ The module `PhyslibAlpha.ProbabilisticTheory.HilbertSpace.Unbounded.EssentialSpe
 
 ## A. Singular sequences and the essential spectrum
 
-**`ProbabilisticTheory.QuantumMechanics.Essential.essSpectrum`**, a def, [line 59](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/EssentialSpectrum/Defs.lean#L59).
+**`PhyslibAlpha.ProbabilisticTheory.QuantumMechanics.Essential.essSpectrum`**, a def, [line 59](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/EssentialSpectrum/Defs.lean#L59).
 
 > The **essential spectrum** of a self-adjoint operator `A`, defined by singular (Weyl)
 > sequences: `λ ∈ essSpectrum hA` iff there is `ψ : ℕ → A.domain` with `‖ψ n‖ → 1`, `ψ` weakly null,
@@ -39,7 +39,7 @@ The module `PhyslibAlpha.ProbabilisticTheory.HilbertSpace.Unbounded.EssentialSpe
 def essSpectrum {A : H →ₗ.[ℂ] H} (_hA : IsSelfAdjoint A) : Set ℝ
 ```
 
-**`ProbabilisticTheory.QuantumMechanics.Essential.mem_essSpectrum_of_seq`**, a lemma, [line 67](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/EssentialSpectrum/Defs.lean#L67).
+**`PhyslibAlpha.ProbabilisticTheory.QuantumMechanics.Essential.mem_essSpectrum_of_seq`**, a lemma, [line 67](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/EssentialSpectrum/Defs.lean#L67).
 
 > Membership in `essSpectrum` from an `H`-valued Weyl sequence together with a domain-membership
 > witness. This packages the `ℕ → A.domain` data so callers can work with plain vectors.
@@ -59,4 +59,4 @@ Its declarations' statements use no declaration of another module with an articl
 
 ## Sources
 
-- [PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/EssentialSpectrum/Defs.lean at 2a1dfe43](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/EssentialSpectrum/Defs.lean)
+- [PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/EssentialSpectrum/Defs.lean at 8c87bdfb](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/EssentialSpectrum/Defs.lean)

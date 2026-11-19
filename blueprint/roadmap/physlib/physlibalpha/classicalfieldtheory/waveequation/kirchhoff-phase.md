@@ -8,7 +8,7 @@ proof: formalized
 
 # Fourier properties of wave propagation
 
-The module `PhyslibAlpha.ClassicalFieldTheory.WaveEquation.Kirchhoff.Phase`, [PhyslibAlpha/ClassicalFieldTheory/WaveEquation/Kirchhoff/Phase.lean](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/WaveEquation/Kirchhoff/Phase.lean): 10 declarations, 7 with a docstring.
+The module `PhyslibAlpha.ClassicalFieldTheory.WaveEquation.Kirchhoff.Phase`, [PhyslibAlpha/ClassicalFieldTheory/WaveEquation/Kirchhoff/Phase.lean](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/WaveEquation/Kirchhoff/Phase.lean): 10 declarations, 7 with a docstring.
 
 > The spectral description uses the Fourier phase and the sine multiplier of the wave propagator.
 
@@ -31,7 +31,7 @@ The module `PhyslibAlpha.ClassicalFieldTheory.WaveEquation.Kirchhoff.Phase`, [Ph
 
 ## A. Fourier properties of wave propagation
 
-**`WaveEquation.Kirchhoff.phase`**, a def, [line 49](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/WaveEquation/Kirchhoff/Phase.lean#L49).
+**`WaveEquation.Kirchhoff.phase`**, a def, [line 49](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/WaveEquation/Kirchhoff/Phase.lean#L49).
 
 > The Fourier phase as a complex exponential.
 
@@ -39,25 +39,25 @@ The module `PhyslibAlpha.ClassicalFieldTheory.WaveEquation.Kirchhoff.Phase`, [Ph
 noncomputable def phase (t : ℝ) : ℂ
 ```
 
-**`WaveEquation.Kirchhoff.phase_add`**, a lemma, [line 51](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/WaveEquation/Kirchhoff/Phase.lean#L51).
+**`WaveEquation.Kirchhoff.phase_add`**, a lemma, [line 51](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/WaveEquation/Kirchhoff/Phase.lean#L51).
 
 ```lean
 lemma phase_add (s t : ℝ) : phase (s + t) = phase s * phase t
 ```
 
-**`WaveEquation.Kirchhoff.norm_phase`**, a lemma, [line 58](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/WaveEquation/Kirchhoff/Phase.lean#L58).
+**`WaveEquation.Kirchhoff.norm_phase`**, a lemma, [line 58](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/WaveEquation/Kirchhoff/Phase.lean#L58).
 
 ```lean
 lemma norm_phase (t : ℝ) : ‖phase t‖ = 1
 ```
 
-**`WaveEquation.Kirchhoff.continuous_phase`**, a lemma, [line 63](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/WaveEquation/Kirchhoff/Phase.lean#L63).
+**`WaveEquation.Kirchhoff.continuous_phase`**, a lemma, [line 63](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/WaveEquation/Kirchhoff/Phase.lean#L63).
 
 ```lean
 lemma continuous_phase : Continuous phase
 ```
 
-**`WaveEquation.Kirchhoff.phase_eq_fourierChar`**, a lemma, [line 68](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/WaveEquation/Kirchhoff/Phase.lean#L68).
+**`WaveEquation.Kirchhoff.phase_eq_fourierChar`**, a lemma, [line 68](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/WaveEquation/Kirchhoff/Phase.lean#L68).
 
 > The phase is the Fourier character at `-u`.
 
@@ -65,7 +65,7 @@ lemma continuous_phase : Continuous phase
 lemma phase_eq_fourierChar (u : ℝ) : phase u = (𝐞 (-u) : ℂ)
 ```
 
-**`WaveEquation.Kirchhoff.WaveOperator`**, an abbrev, [line 75](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/WaveEquation/Kirchhoff/Phase.lean#L75).
+**`WaveEquation.Kirchhoff.WaveOperator`**, an abbrev, [line 75](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/WaveEquation/Kirchhoff/Phase.lean#L75).
 
 > An operator on scalar fields on `ℝ³`.
 
@@ -73,7 +73,7 @@ lemma phase_eq_fourierChar (u : ℝ) : phase u = (𝐞 (-u) : ℂ)
 abbrev WaveOperator
 ```
 
-**`WaveEquation.Kirchhoff.HasWaveFourierMultiplier`**, a def, [line 79](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/WaveEquation/Kirchhoff/Phase.lean#L79).
+**`WaveEquation.Kirchhoff.HasWaveFourierMultiplier`**, a def, [line 79](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/WaveEquation/Kirchhoff/Phase.lean#L79).
 
 > The operator acts on Schwartz functions as the Fourier multiplier `sin(ω t) / ω` with
 > `ω = 2π c |ξ|`. Frequencies `ξ = 0` are excluded. There the multiplier has the limit `t`.
@@ -82,7 +82,7 @@ abbrev WaveOperator
 def HasWaveFourierMultiplier (c t : ℝ) (T : WaveOperator) : Prop
 ```
 
-**`WaveEquation.Kirchhoff.HasFinitePropagationSpeed`**, a def, [line 87](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/WaveEquation/Kirchhoff/Phase.lean#L87).
+**`WaveEquation.Kirchhoff.HasFinitePropagationSpeed`**, a def, [line 87](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/WaveEquation/Kirchhoff/Phase.lean#L87).
 
 > Finite propagation speed for `c > 0`: if `f` vanishes outside the ball of radius `ρ` about `x₀`,
 > then `T f` vanishes outside the ball of radius `ρ + c |t|`.
@@ -91,7 +91,7 @@ def HasWaveFourierMultiplier (c t : ℝ) (T : WaveOperator) : Prop
 def HasFinitePropagationSpeed (c t : ℝ) (T : WaveOperator) : Prop
 ```
 
-**`WaveEquation.Kirchhoff.SatisfiesHuygensPrinciple`**, a def, [line 94](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/WaveEquation/Kirchhoff/Phase.lean#L94).
+**`WaveEquation.Kirchhoff.SatisfiesHuygensPrinciple`**, a def, [line 94](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/WaveEquation/Kirchhoff/Phase.lean#L94).
 
 > Huygens' principle for `c > 0`: if `f` vanishes outside the ball of radius `ρ` about `x₀`, then
 > `T f` vanishes inside the ball of radius `c |t| - ρ`. The wavefront is a shell of width `2ρ`
@@ -101,7 +101,7 @@ def HasFinitePropagationSpeed (c t : ℝ) (T : WaveOperator) : Prop
 def SatisfiesHuygensPrinciple (c t : ℝ) (T : WaveOperator) : Prop
 ```
 
-**`WaveEquation.Kirchhoff.IsWavePropagator`**, a structure, [line 101](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/WaveEquation/Kirchhoff/Phase.lean#L101).
+**`WaveEquation.Kirchhoff.IsWavePropagator`**, a structure, [line 101](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/WaveEquation/Kirchhoff/Phase.lean#L101).
 
 > The three properties of the free wave propagator in three dimensions: the Fourier multiplier,
 > finite propagation speed and Huygens' principle. This is a bundle of properties of one operator and
@@ -123,4 +123,4 @@ structure IsWavePropagator (c t : ℝ) (T : WaveOperator) : Prop where
 
 ## Sources
 
-- [PhyslibAlpha/ClassicalFieldTheory/WaveEquation/Kirchhoff/Phase.lean at 2a1dfe43](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/WaveEquation/Kirchhoff/Phase.lean)
+- [PhyslibAlpha/ClassicalFieldTheory/WaveEquation/Kirchhoff/Phase.lean at 8c87bdfb](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/WaveEquation/Kirchhoff/Phase.lean)

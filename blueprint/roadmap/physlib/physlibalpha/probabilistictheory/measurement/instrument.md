@@ -1,14 +1,14 @@
 ---
 declaration: module
 origin: cited
-lean: ProbabilisticTheory.Instrument, ProbabilisticTheory.Instrument.measurement, ProbabilisticTheory.Instrument.coe_measurement_effects, ProbabilisticTheory.Instrument.conditionalState, ProbabilisticTheory.Instrument.conditionalState_apply, ProbabilisticTheory.Instrument.conditionalState_isNormal
+lean: PhyslibAlpha.ProbabilisticTheory.Instrument, PhyslibAlpha.ProbabilisticTheory.Instrument.measurement, PhyslibAlpha.ProbabilisticTheory.Instrument.coe_measurement_effects, PhyslibAlpha.ProbabilisticTheory.Instrument.conditionalState, PhyslibAlpha.ProbabilisticTheory.Instrument.conditionalState_apply, PhyslibAlpha.ProbabilisticTheory.Instrument.conditionalState_isNormal
 statement: formalized
 proof: formalized
 ---
 
 # Instruments
 
-The module `PhyslibAlpha.ProbabilisticTheory.Measurement.Instrument`, [PhyslibAlpha/ProbabilisticTheory/Measurement/Instrument.lean](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ProbabilisticTheory/Measurement/Instrument.lean): 6 declarations, 5 with a docstring.
+The module `PhyslibAlpha.ProbabilisticTheory.Measurement.Instrument`, [PhyslibAlpha/ProbabilisticTheory/Measurement/Instrument.lean](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/Measurement/Instrument.lean): 6 declarations, 5 with a docstring.
 
 > Finite-outcome instruments, their induced measurements and post-measurement states.
 
@@ -31,7 +31,7 @@ The module `PhyslibAlpha.ProbabilisticTheory.Measurement.Instrument`, [PhyslibAl
 
 ## A. Instruments
 
-**`ProbabilisticTheory.Instrument`**, a structure, [line 52](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ProbabilisticTheory/Measurement/Instrument.lean#L52).
+**`PhyslibAlpha.ProbabilisticTheory.Instrument`**, a structure, [line 52](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/Measurement/Instrument.lean#L52).
 
 > A finite-outcome instrument: an operation for each outcome, whose images of the certain event
 > exhaust it. The instrument loses no probability overall, even though a single operation may.
@@ -46,7 +46,7 @@ structure Instrument (E : Type*) [OrderUnitSpace E] (ι : Type*) [Fintype ι] wh
 
 ## B. The induced measurement
 
-**`ProbabilisticTheory.Instrument.measurement`**, a def, [line 68](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ProbabilisticTheory/Measurement/Instrument.lean#L68).
+**`PhyslibAlpha.ProbabilisticTheory.Instrument.measurement`**, a def, [line 68](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/Measurement/Instrument.lean#L68).
 
 > The measurement an instrument induces: only the outcome probabilities remain, given by each
 > operation's image of the certain event.
@@ -55,7 +55,7 @@ structure Instrument (E : Type*) [OrderUnitSpace E] (ι : Type*) [Fintype ι] wh
 noncomputable def measurement (𝓘 : Instrument E ι) : Measurement ι E
 ```
 
-**`ProbabilisticTheory.Instrument.coe_measurement_effects`**, a lemma, [line 72](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ProbabilisticTheory/Measurement/Instrument.lean#L72).
+**`PhyslibAlpha.ProbabilisticTheory.Instrument.coe_measurement_effects`**, a lemma, [line 72](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/Measurement/Instrument.lean#L72).
 
 > The effect of an outcome is the value of its operation on the unit.
 
@@ -67,7 +67,7 @@ lemma coe_measurement_effects (𝓘 : Instrument E ι) (i : ι) :
 
 ## C. Conditional states
 
-**`ProbabilisticTheory.Instrument.conditionalState`**, a def, [line 84](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ProbabilisticTheory/Measurement/Instrument.lean#L84).
+**`PhyslibAlpha.ProbabilisticTheory.Instrument.conditionalState`**, a def, [line 84](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/Measurement/Instrument.lean#L84).
 
 > The post-measurement (conditional) state after outcome `i`, given a prior state `ω` for which
 > that outcome has nonzero probability: apply the operation, then renormalize by the outcome's
@@ -78,7 +78,7 @@ noncomputable def conditionalState (𝓘 : Instrument E ι) (i : ι) (ω : 𝓢[
     (hpos : 0 < ω ((𝓘.op i : E → E) 1)) : 𝓢[ℝ, E]
 ```
 
-**`ProbabilisticTheory.Instrument.conditionalState_apply`**, a lemma, [line 89](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ProbabilisticTheory/Measurement/Instrument.lean#L89).
+**`PhyslibAlpha.ProbabilisticTheory.Instrument.conditionalState_apply`**, a lemma, [line 89](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/Measurement/Instrument.lean#L89).
 
 ```lean
 lemma conditionalState_apply (𝓘 : Instrument E ι) (i : ι) (ω : 𝓢[ℝ, E])
@@ -87,7 +87,7 @@ lemma conditionalState_apply (𝓘 : Instrument E ι) (i : ι) (ω : 𝓢[ℝ, E
       (ω ((𝓘.op i : E → E) 1))⁻¹ * ω ((𝓘.op i : E → E) a)
 ```
 
-**`ProbabilisticTheory.Instrument.conditionalState_isNormal`**, a lemma, [line 97](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ProbabilisticTheory/Measurement/Instrument.lean#L97).
+**`PhyslibAlpha.ProbabilisticTheory.Instrument.conditionalState_isNormal`**, a lemma, [line 97](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/Measurement/Instrument.lean#L97).
 
 > A normal instrument operation sends a normal input state to a normal conditional state,
 > whenever its outcome has nonzero probability.
@@ -105,4 +105,4 @@ lemma conditionalState_isNormal (𝓘 : Instrument E ι) (i : ι) (ω : 𝓢[ℝ
 
 ## Sources
 
-- [PhyslibAlpha/ProbabilisticTheory/Measurement/Instrument.lean at 2a1dfe43](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ProbabilisticTheory/Measurement/Instrument.lean)
+- [PhyslibAlpha/ProbabilisticTheory/Measurement/Instrument.lean at 8c87bdfb](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/Measurement/Instrument.lean)

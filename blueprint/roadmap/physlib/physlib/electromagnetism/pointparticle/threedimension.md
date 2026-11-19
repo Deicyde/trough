@@ -8,7 +8,7 @@ proof: formalized
 
 # Electrostatics of a stationary point particle in 3d
 
-The module `Physlib.Electromagnetism.PointParticle.ThreeDimension`, [Physlib/Electromagnetism/PointParticle/ThreeDimension.lean](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/Electromagnetism/PointParticle/ThreeDimension.lean): 13 declarations, 2 with a docstring.
+The module `Physlib.Electromagnetism.PointParticle.ThreeDimension`, [Physlib/Electromagnetism/PointParticle/ThreeDimension.lean](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Electromagnetism/PointParticle/ThreeDimension.lean): 13 declarations, 2 with a docstring.
 
 ## i. Overview
 
@@ -35,7 +35,7 @@ The module `Physlib.Electromagnetism.PointParticle.ThreeDimension`, [Physlib/Ele
 > where $c$ is the speed light, $q$ is the charge of the particle and $r₀$ is the position of the
 > particle in 3d space.
 
-**`Electromagnetism.TempDistElectromagneticPotential.threeDimPointParticleCurrentDensity`**, a def, [line 70](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/Electromagnetism/PointParticle/ThreeDimension.lean#L70).
+**`Electromagnetism.TempDistElectromagneticPotential.threeDimPointParticleCurrentDensity`**, a def, [line 71](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Electromagnetism/PointParticle/ThreeDimension.lean#L71).
 
 > The current density of a point particle stationary at a point `r₀`
 > of 3d space.
@@ -45,12 +45,12 @@ noncomputable def threeDimPointParticleCurrentDensity (c : SpeedOfLight) (q : �
     TempDistLorentzCurrentDensity 3
 ```
 
-**`Electromagnetism.TempDistElectromagneticPotential.threeDimPointParticleCurrentDensity_eq_distTranslate`**, a lemma, [line 74](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/Electromagnetism/PointParticle/ThreeDimension.lean#L74).
+**`Electromagnetism.TempDistElectromagneticPotential.threeDimPointParticleCurrentDensity_eq_distTranslate`**, a lemma, [line 75](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Electromagnetism/PointParticle/ThreeDimension.lean#L75).
 
 ```lean
 lemma threeDimPointParticleCurrentDensity_eq_distTranslate (c : SpeedOfLight) (q : ℝ)
     (r₀ : Space 3) :
-    threeDimPointParticleCurrentDensity c q r₀ = ((SpaceTime.distTimeSlice c).symm <|
+    threeDimPointParticleCurrentDensity c q r₀ = ((tempDistTimeSlice c).symm <|
     constantTime <|
     distTranslate (basis.repr r₀) <|
     ((c * q) • diracDelta' ℝ 0 (Lorentz.Vector.basis (Sum.inl 0))))
@@ -64,7 +64,7 @@ lemma threeDimPointParticleCurrentDensity_eq_distTranslate (c : SpeedOfLight) (q
 >
 > where $q$ is the charge of the particle and $r₀$ is the position of the particle in 3d space.
 
-**`Electromagnetism.TempDistElectromagneticPotential.threeDimPointParticleCurrentDensity_chargeDensity`**, a lemma, [line 97](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/Electromagnetism/PointParticle/ThreeDimension.lean#L97).
+**`Electromagnetism.TempDistElectromagneticPotential.threeDimPointParticleCurrentDensity_chargeDensity`**, a lemma, [line 98](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Electromagnetism/PointParticle/ThreeDimension.lean#L98).
 
 ```lean
 lemma threeDimPointParticleCurrentDensity_chargeDensity (c : SpeedOfLight) (q : ℝ) (r₀ : Space 3) :
@@ -80,7 +80,7 @@ lemma threeDimPointParticleCurrentDensity_chargeDensity (c : SpeedOfLight) (q : 
 >
 > In other words, there is no current flow for a point particle at rest.
 
-**`Electromagnetism.TempDistElectromagneticPotential.threeDimPointParticleCurrentDensity_currentDensity`**, a lemma, [line 121](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/Electromagnetism/PointParticle/ThreeDimension.lean#L121).
+**`Electromagnetism.TempDistElectromagneticPotential.threeDimPointParticleCurrentDensity_currentDensity`**, a lemma, [line 122](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Electromagnetism/PointParticle/ThreeDimension.lean#L122).
 
 ```lean
 lemma threeDimPointParticleCurrentDensity_currentDensity (c : SpeedOfLight) (q : ℝ) (r₀ : Space 3) :
@@ -98,7 +98,7 @@ lemma threeDimPointParticleCurrentDensity_currentDensity (c : SpeedOfLight) (q :
 > where $μ₀$ is the permeability of free space, $c$ is the speed of light,
 > $q$ is the charge of the particle and $r₀$ is the position of the particle in 3d space.
 
-**`Electromagnetism.TempDistElectromagneticPotential.threeDimPointParticle`**, a def, [line 149](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/Electromagnetism/PointParticle/ThreeDimension.lean#L149).
+**`Electromagnetism.TempDistElectromagneticPotential.threeDimPointParticle`**, a def, [line 150](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Electromagnetism/PointParticle/ThreeDimension.lean#L150).
 
 > The electromagnetic potential of a point particle stationary at `r₀`
 > of 3d space.
@@ -108,11 +108,11 @@ noncomputable def threeDimPointParticle (𝓕 : FreeSpace) (q : ℝ) (r₀ : Spa
     TempDistElectromagneticPotential 3
 ```
 
-**`Electromagnetism.TempDistElectromagneticPotential.threeDimPointParticle_eq_distTranslate`**, a lemma, [line 155](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/Electromagnetism/PointParticle/ThreeDimension.lean#L155).
+**`Electromagnetism.TempDistElectromagneticPotential.threeDimPointParticle_eq_distTranslate`**, a lemma, [line 156](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Electromagnetism/PointParticle/ThreeDimension.lean#L156).
 
 ```lean
 lemma threeDimPointParticle_eq_distTranslate (𝓕 : FreeSpace) (q : ℝ) (r₀ : Space 3) :
-    threeDimPointParticle 𝓕 q r₀ = ((SpaceTime.distTimeSlice 𝓕.c).symm <|
+    threeDimPointParticle 𝓕 q r₀ = ((tempDistTimeSlice 𝓕.c).symm <|
     constantTime <|
     distTranslate (basis.repr r₀) <|
     distOfFunction (fun x => (((q * 𝓕.μ₀ * 𝓕.c)/ (4 * π))* ‖x‖⁻¹) •
@@ -127,7 +127,7 @@ lemma threeDimPointParticle_eq_distTranslate (𝓕 : FreeSpace) (q : ℝ) (r₀ 
 >
 > $$V(r) = \frac{q}{4 π \epsilon_0 |r - r_0|}.$$
 
-**`Electromagnetism.TempDistElectromagneticPotential.threeDimPointParticle_scalarPotential`**, a lemma, [line 178](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/Electromagnetism/PointParticle/ThreeDimension.lean#L178).
+**`Electromagnetism.TempDistElectromagneticPotential.threeDimPointParticle_scalarPotential`**, a lemma, [line 179](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Electromagnetism/PointParticle/ThreeDimension.lean#L179).
 
 ```lean
 lemma threeDimPointParticle_scalarPotential (𝓕 : FreeSpace) (q : ℝ) (r₀ : Space 3) :
@@ -143,7 +143,7 @@ lemma threeDimPointParticle_scalarPotential (𝓕 : FreeSpace) (q : ℝ) (r₀ :
 >
 > $$\vec A(r) = 0.$$
 
-**`Electromagnetism.TempDistElectromagneticPotential.threeDimPointParticle_vectorPotential`**, a lemma, [line 209](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/Electromagnetism/PointParticle/ThreeDimension.lean#L209).
+**`Electromagnetism.TempDistElectromagneticPotential.threeDimPointParticle_vectorPotential`**, a lemma, [line 210](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Electromagnetism/PointParticle/ThreeDimension.lean#L210).
 
 ```lean
 lemma threeDimPointParticle_vectorPotential (𝓕 : FreeSpace) (q : ℝ) (r₀ : Space 3) :
@@ -156,7 +156,7 @@ lemma threeDimPointParticle_vectorPotential (𝓕 : FreeSpace) (q : ℝ) (r₀ :
 >
 > $$\vec E(r) = \frac{q}{4 π \epsilon_0} \frac{\vec r - \vec r₀}{|\vec r - \vec r₀|^3}.$$
 
-**`Electromagnetism.TempDistElectromagneticPotential.threeDimPointParticle_electricField`**, a lemma, [line 224](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/Electromagnetism/PointParticle/ThreeDimension.lean#L224).
+**`Electromagnetism.TempDistElectromagneticPotential.threeDimPointParticle_electricField`**, a lemma, [line 225](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Electromagnetism/PointParticle/ThreeDimension.lean#L225).
 
 ```lean
 lemma threeDimPointParticle_electricField (𝓕 : FreeSpace) (q : ℝ) (r₀ : Space 3) :
@@ -168,7 +168,7 @@ lemma threeDimPointParticle_electricField (𝓕 : FreeSpace) (q : ℝ) (r₀ : S
 
 ### C.1. the time derivative of the electric field
 
-**`Electromagnetism.TempDistElectromagneticPotential.threeDimPointParticle_electricField_timeDeriv`**, a lemma, [line 248](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/Electromagnetism/PointParticle/ThreeDimension.lean#L248).
+**`Electromagnetism.TempDistElectromagneticPotential.threeDimPointParticle_electricField_timeDeriv`**, a lemma, [line 249](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Electromagnetism/PointParticle/ThreeDimension.lean#L249).
 
 ```lean
 lemma threeDimPointParticle_electricField_timeDeriv (𝓕 : FreeSpace) (q : ℝ) (r₀ : Space 3) :
@@ -179,7 +179,7 @@ lemma threeDimPointParticle_electricField_timeDeriv (𝓕 : FreeSpace) (q : ℝ)
 
 > Given that the vector potential is zero, the magnetic field is also zero.
 
-**`Electromagnetism.TempDistElectromagneticPotential.threeDimPointParticle_magneticFieldMatrix`**, a lemma, [line 262](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/Electromagnetism/PointParticle/ThreeDimension.lean#L262).
+**`Electromagnetism.TempDistElectromagneticPotential.threeDimPointParticle_magneticFieldMatrix`**, a lemma, [line 263](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Electromagnetism/PointParticle/ThreeDimension.lean#L263).
 
 ```lean
 lemma threeDimPointParticle_magneticFieldMatrix (q : ℝ) (r₀ : Space 3) :
@@ -195,7 +195,7 @@ lemma threeDimPointParticle_magneticFieldMatrix (q : ℝ) (r₀ : Space 3) :
 > From this, it follows that the electromagnetic potential of a point particle in 3d space
 > satisfies Maxwell's equations for a point particle at rest.
 
-**`Electromagnetism.TempDistElectromagneticPotential.threeDimPointParticle_div_electricField`**, a lemma, [line 279](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/Electromagnetism/PointParticle/ThreeDimension.lean#L279).
+**`Electromagnetism.TempDistElectromagneticPotential.threeDimPointParticle_div_electricField`**, a lemma, [line 280](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Electromagnetism/PointParticle/ThreeDimension.lean#L280).
 
 ```lean
 lemma threeDimPointParticle_div_electricField {𝓕} (q : ℝ) (r₀ : Space 3) :
@@ -203,7 +203,7 @@ lemma threeDimPointParticle_div_electricField {𝓕} (q : ℝ) (r₀ : Space 3) 
     (1/𝓕.ε₀) • constantTime (q • diracDelta ℝ r₀)
 ```
 
-**`Electromagnetism.TempDistElectromagneticPotential.threeDimPointParticle_isExterma`**, a lemma, [line 302](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/Electromagnetism/PointParticle/ThreeDimension.lean#L302).
+**`Electromagnetism.TempDistElectromagneticPotential.threeDimPointParticle_isExterma`**, a lemma, [line 303](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Electromagnetism/PointParticle/ThreeDimension.lean#L303).
 
 ```lean
 lemma threeDimPointParticle_isExterma (𝓕 : FreeSpace) (q : ℝ) (r₀ : Space 3) :
@@ -221,4 +221,4 @@ lemma threeDimPointParticle_isExterma (𝓕 : FreeSpace) (q : ℝ) (r₀ : Space
 
 ## Sources
 
-- [Physlib/Electromagnetism/PointParticle/ThreeDimension.lean at 2a1dfe43](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/Electromagnetism/PointParticle/ThreeDimension.lean)
+- [Physlib/Electromagnetism/PointParticle/ThreeDimension.lean at 8c87bdfb](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Electromagnetism/PointParticle/ThreeDimension.lean)

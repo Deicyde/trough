@@ -8,7 +8,7 @@ proof: formalized
 
 # Complete tensor product
 
-The module `Physlib.QuantumMechanics.HilbertSpaces.TensorProducts.CompleteTensorProduct`, [Physlib/QuantumMechanics/HilbertSpaces/TensorProducts/CompleteTensorProduct.lean](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/QuantumMechanics/HilbertSpaces/TensorProducts/CompleteTensorProduct.lean): 33 declarations (1 instance with no name), 17 with a docstring.
+The module `Physlib.QuantumMechanics.HilbertSpaces.TensorProducts.CompleteTensorProduct`, [Physlib/QuantumMechanics/HilbertSpaces/TensorProducts/CompleteTensorProduct.lean](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/QuantumMechanics/HilbertSpaces/TensorProducts/CompleteTensorProduct.lean): 33 declarations (1 instance with no name), 17 with a docstring.
 
 ## i. Overview
 
@@ -44,7 +44,7 @@ The module `Physlib.QuantumMechanics.HilbertSpaces.TensorProducts.CompleteTensor
 
 ## A. Definition
 
-**`CompleteTensorProduct`**, a def, [line 73](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/QuantumMechanics/HilbertSpaces/TensorProducts/CompleteTensorProduct.lean#L73).
+**`CompleteTensorProduct`**, a def, [line 73](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/QuantumMechanics/HilbertSpaces/TensorProducts/CompleteTensorProduct.lean#L73).
 
 > The \_completion\_ of the tensor product of two inner product spaces `E` and `F` over `𝕜`.
 > By construction this produces a Hilbert space. The localized notations are `E ⊗ₕ F`
@@ -58,13 +58,13 @@ def CompleteTensorProduct (𝕜 : Type*) [RCLike 𝕜]
 
 ## B. Nontrivial
 
-**`TensorProduct.instNontrivial`**, an instance, [line 99](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/QuantumMechanics/HilbertSpaces/TensorProducts/CompleteTensorProduct.lean#L99).
+**`TensorProduct.instNontrivial`**, an instance, [line 99](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/QuantumMechanics/HilbertSpaces/TensorProducts/CompleteTensorProduct.lean#L99).
 
 ```lean
 instance _root_.TensorProduct.instNontrivial : Nontrivial (E ⊗[𝕜] F)
 ```
 
-**`CompleteTensorProduct.instNontrivial`**, an instance, [line 105](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/QuantumMechanics/HilbertSpaces/TensorProducts/CompleteTensorProduct.lean#L105).
+**`CompleteTensorProduct.instNontrivial`**, an instance, [line 105](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/QuantumMechanics/HilbertSpaces/TensorProducts/CompleteTensorProduct.lean#L105).
 
 ```lean
 instance instNontrivial : Nontrivial (E ⊗ₕ[𝕜] F)
@@ -72,7 +72,7 @@ instance instNontrivial : Nontrivial (E ⊗ₕ[𝕜] F)
 
 ## C. Coercions
 
-**`CompleteTensorProduct.coe'`**, a def, [line 122](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/QuantumMechanics/HilbertSpaces/TensorProducts/CompleteTensorProduct.lean#L122).
+**`CompleteTensorProduct.coe'`**, a def, [line 122](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/QuantumMechanics/HilbertSpaces/TensorProducts/CompleteTensorProduct.lean#L122).
 
 > The canonical embedding of the tensor product into its completion.
 
@@ -80,7 +80,7 @@ instance instNontrivial : Nontrivial (E ⊗ₕ[𝕜] F)
 def coe' : E ⊗[𝕜] F → E ⊗ₕ[𝕜] F
 ```
 
-**An instance with no name**, [line 125](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/QuantumMechanics/HilbertSpaces/TensorProducts/CompleteTensorProduct.lean#L125).
+**An instance with no name**, [line 125](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/QuantumMechanics/HilbertSpaces/TensorProducts/CompleteTensorProduct.lean#L125).
 
 > Coercion from `E ⊗[𝕜] F` to its completion.
 
@@ -88,61 +88,61 @@ def coe' : E ⊗[𝕜] F → E ⊗ₕ[𝕜] F
 instance : Coe (E ⊗[𝕜] F) (E ⊗ₕ[𝕜] F)
 ```
 
-**`CompleteTensorProduct.denseRange_coe`**, a lemma, [line 127](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/QuantumMechanics/HilbertSpaces/TensorProducts/CompleteTensorProduct.lean#L127).
+**`CompleteTensorProduct.denseRange_coe`**, a lemma, [line 127](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/QuantumMechanics/HilbertSpaces/TensorProducts/CompleteTensorProduct.lean#L127).
 
 ```lean
 lemma denseRange_coe : DenseRange (coe' : E ⊗[𝕜] F → E ⊗ₕ[𝕜] F)
 ```
 
-**`CompleteTensorProduct.coe_zero`**, a lemma, [line 130](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/QuantumMechanics/HilbertSpaces/TensorProducts/CompleteTensorProduct.lean#L130).
+**`CompleteTensorProduct.coe_zero`**, a lemma, [line 130](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/QuantumMechanics/HilbertSpaces/TensorProducts/CompleteTensorProduct.lean#L130).
 
 ```lean
 lemma coe_zero : (0 : E ⊗[𝕜] F) = (0 : E ⊗ₕ[𝕜] F)
 ```
 
-**`CompleteTensorProduct.coe_eq_zero_iff`**, a lemma, [line 134](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/QuantumMechanics/HilbertSpaces/TensorProducts/CompleteTensorProduct.lean#L134).
+**`CompleteTensorProduct.coe_eq_zero_iff`**, a lemma, [line 134](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/QuantumMechanics/HilbertSpaces/TensorProducts/CompleteTensorProduct.lean#L134).
 
 ```lean
 lemma coe_eq_zero_iff : (x : E ⊗ₕ[𝕜] F) = 0 ↔ x = 0
 ```
 
-**`CompleteTensorProduct.coe_neg`**, a lemma, [line 137](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/QuantumMechanics/HilbertSpaces/TensorProducts/CompleteTensorProduct.lean#L137).
+**`CompleteTensorProduct.coe_neg`**, a lemma, [line 137](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/QuantumMechanics/HilbertSpaces/TensorProducts/CompleteTensorProduct.lean#L137).
 
 ```lean
 lemma coe_neg : (-x : E ⊗[𝕜] F) = (-x : E ⊗ₕ[𝕜] F)
 ```
 
-**`CompleteTensorProduct.coe_sub`**, a lemma, [line 140](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/QuantumMechanics/HilbertSpaces/TensorProducts/CompleteTensorProduct.lean#L140).
+**`CompleteTensorProduct.coe_sub`**, a lemma, [line 140](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/QuantumMechanics/HilbertSpaces/TensorProducts/CompleteTensorProduct.lean#L140).
 
 ```lean
 lemma coe_sub : (x - y : E ⊗[𝕜] F) = (x - y : E ⊗ₕ[𝕜] F)
 ```
 
-**`CompleteTensorProduct.coe_add`**, a lemma, [line 143](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/QuantumMechanics/HilbertSpaces/TensorProducts/CompleteTensorProduct.lean#L143).
+**`CompleteTensorProduct.coe_add`**, a lemma, [line 143](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/QuantumMechanics/HilbertSpaces/TensorProducts/CompleteTensorProduct.lean#L143).
 
 ```lean
 lemma coe_add : (x + y : E ⊗[𝕜] F) = (x + y : E ⊗ₕ[𝕜] F)
 ```
 
-**`CompleteTensorProduct.coe_smul`**, a lemma, [line 146](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/QuantumMechanics/HilbertSpaces/TensorProducts/CompleteTensorProduct.lean#L146).
+**`CompleteTensorProduct.coe_smul`**, a lemma, [line 146](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/QuantumMechanics/HilbertSpaces/TensorProducts/CompleteTensorProduct.lean#L146).
 
 ```lean
 lemma coe_smul : (c • x : E ⊗[𝕜] F) = (c • x : E ⊗ₕ[𝕜] F)
 ```
 
-**`CompleteTensorProduct.inner_coe`**, a lemma, [line 149](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/QuantumMechanics/HilbertSpaces/TensorProducts/CompleteTensorProduct.lean#L149).
+**`CompleteTensorProduct.inner_coe`**, a lemma, [line 149](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/QuantumMechanics/HilbertSpaces/TensorProducts/CompleteTensorProduct.lean#L149).
 
 ```lean
 lemma inner_coe : ⟪(x : E ⊗ₕ[𝕜] F), (y : E ⊗ₕ[𝕜] F)⟫_𝕜 = ⟪x, y⟫_𝕜
 ```
 
-**`CompleteTensorProduct.norm_coe`**, a lemma, [line 152](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/QuantumMechanics/HilbertSpaces/TensorProducts/CompleteTensorProduct.lean#L152).
+**`CompleteTensorProduct.norm_coe`**, a lemma, [line 152](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/QuantumMechanics/HilbertSpaces/TensorProducts/CompleteTensorProduct.lean#L152).
 
 ```lean
 lemma norm_coe : ‖(x : E ⊗ₕ[𝕜] F)‖ = ‖x‖
 ```
 
-**`CompleteTensorProduct.tInclₗᵢ`**, a def, [line 155](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/QuantumMechanics/HilbertSpaces/TensorProducts/CompleteTensorProduct.lean#L155).
+**`CompleteTensorProduct.tInclₗᵢ`**, a def, [line 155](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/QuantumMechanics/HilbertSpaces/TensorProducts/CompleteTensorProduct.lean#L155).
 
 > The canonical embedding of the tensor product into its completion as a linear isometry.
 
@@ -150,13 +150,13 @@ lemma norm_coe : ‖(x : E ⊗ₕ[𝕜] F)‖ = ‖x‖
 def tInclₗᵢ : E ⊗[𝕜] F →ₗᵢ[𝕜] E ⊗ₕ[𝕜] F
 ```
 
-**`CompleteTensorProduct.coe_tInclₗᵢ`**, a lemma, [line 158](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/QuantumMechanics/HilbertSpaces/TensorProducts/CompleteTensorProduct.lean#L158).
+**`CompleteTensorProduct.coe_tInclₗᵢ`**, a lemma, [line 158](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/QuantumMechanics/HilbertSpaces/TensorProducts/CompleteTensorProduct.lean#L158).
 
 ```lean
 lemma coe_tInclₗᵢ : ⇑(tInclₗᵢ : E ⊗ F →ₗᵢ[𝕜] E ⊗ₕ F) = coe'
 ```
 
-**`CompleteTensorProduct.tInclL`**, a def, [line 161](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/QuantumMechanics/HilbertSpaces/TensorProducts/CompleteTensorProduct.lean#L161).
+**`CompleteTensorProduct.tInclL`**, a def, [line 161](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/QuantumMechanics/HilbertSpaces/TensorProducts/CompleteTensorProduct.lean#L161).
 
 > The canonical embedding of the tensor product into its completion as a continuous linear map.
 
@@ -164,13 +164,13 @@ lemma coe_tInclₗᵢ : ⇑(tInclₗᵢ : E ⊗ F →ₗᵢ[𝕜] E ⊗ₕ F) = 
 def tInclL : E ⊗[𝕜] F →L[𝕜] E ⊗ₕ[𝕜] F
 ```
 
-**`CompleteTensorProduct.coe_tInclL`**, a lemma, [line 164](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/QuantumMechanics/HilbertSpaces/TensorProducts/CompleteTensorProduct.lean#L164).
+**`CompleteTensorProduct.coe_tInclL`**, a lemma, [line 164](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/QuantumMechanics/HilbertSpaces/TensorProducts/CompleteTensorProduct.lean#L164).
 
 ```lean
 lemma coe_tInclL : ⇑(tInclL : E ⊗ F →L[𝕜] E ⊗ₕ F) = coe'
 ```
 
-**`CompleteTensorProduct.norm_tInclL`**, a lemma, [line 167](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/QuantumMechanics/HilbertSpaces/TensorProducts/CompleteTensorProduct.lean#L167).
+**`CompleteTensorProduct.norm_tInclL`**, a lemma, [line 167](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/QuantumMechanics/HilbertSpaces/TensorProducts/CompleteTensorProduct.lean#L167).
 
 ```lean
 lemma norm_tInclL [Nontrivial E] [Nontrivial F] : ‖(tInclL : E ⊗ F →L[𝕜] E ⊗ₕ F)‖ = 1
@@ -178,7 +178,7 @@ lemma norm_tInclL [Nontrivial E] [Nontrivial F] : ‖(tInclL : E ⊗ F →L[𝕜
 
 ## D. Induction principle
 
-**`CompleteTensorProduct.induction_on`**, a lemma, [line 183](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/QuantumMechanics/HilbertSpaces/TensorProducts/CompleteTensorProduct.lean#L183).
+**`CompleteTensorProduct.induction_on`**, a lemma, [line 183](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/QuantumMechanics/HilbertSpaces/TensorProducts/CompleteTensorProduct.lean#L183).
 
 > An induction principle for `CompleteTensorProduct` combining those of `Completion`
 > and `TensorProduct`.
@@ -192,7 +192,7 @@ lemma induction_on {motive : E ⊗ₕ[𝕜] F → Prop} (z : E ⊗ₕ[𝕜] F)
 
 ## E. Commutative
 
-**`CompleteTensorProduct.comm`**, a def, [line 199](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/QuantumMechanics/HilbertSpaces/TensorProducts/CompleteTensorProduct.lean#L199).
+**`CompleteTensorProduct.comm`**, a def, [line 199](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/QuantumMechanics/HilbertSpaces/TensorProducts/CompleteTensorProduct.lean#L199).
 
 > The complete tensor product of inner product spaces is commutative,
 > up to linear isometric equivalence.
@@ -201,13 +201,13 @@ lemma induction_on {motive : E ⊗ₕ[𝕜] F → Prop} (z : E ⊗ₕ[𝕜] F)
 def comm : E ⊗ₕ[𝕜] F ≃ₗᵢ[𝕜] F ⊗ₕ[𝕜] E
 ```
 
-**`CompleteTensorProduct.comm_symm`**, a lemma, [line 204](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/QuantumMechanics/HilbertSpaces/TensorProducts/CompleteTensorProduct.lean#L204).
+**`CompleteTensorProduct.comm_symm`**, a lemma, [line 204](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/QuantumMechanics/HilbertSpaces/TensorProducts/CompleteTensorProduct.lean#L204).
 
 ```lean
 lemma comm_symm : (comm 𝕜 E F).symm = comm 𝕜 F E
 ```
 
-**`CompleteTensorProduct.comm_coe`**, a lemma, [line 208](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/QuantumMechanics/HilbertSpaces/TensorProducts/CompleteTensorProduct.lean#L208).
+**`CompleteTensorProduct.comm_coe`**, a lemma, [line 208](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/QuantumMechanics/HilbertSpaces/TensorProducts/CompleteTensorProduct.lean#L208).
 
 ```lean
 lemma comm_coe (x : E ⊗[𝕜] F) : comm 𝕜 E F x = TensorProduct.comm 𝕜 E F x
@@ -215,7 +215,7 @@ lemma comm_coe (x : E ⊗[𝕜] F) : comm 𝕜 E F x = TensorProduct.comm 𝕜 E
 
 ## F. Associative
 
-**`TensorProduct.denseRange_map`**, a lemma, [line 220](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/QuantumMechanics/HilbertSpaces/TensorProducts/CompleteTensorProduct.lean#L220).
+**`TensorProduct.denseRange_map`**, a lemma, [line 220](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/QuantumMechanics/HilbertSpaces/TensorProducts/CompleteTensorProduct.lean#L220).
 
 > The tensor product of a pair of linear maps with dense range also has dense range.
 
@@ -229,7 +229,7 @@ lemma _root_.TensorProduct.denseRange_map
     DenseRange (TensorProduct.map f g)
 ```
 
-**`CompleteTensorProduct.assoc`**, a def, [line 247](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/QuantumMechanics/HilbertSpaces/TensorProducts/CompleteTensorProduct.lean#L247).
+**`CompleteTensorProduct.assoc`**, a def, [line 247](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/QuantumMechanics/HilbertSpaces/TensorProducts/CompleteTensorProduct.lean#L247).
 
 > The compete tensor product of inner product spaces is associative,
 > up to linear isometric equivalence.
@@ -240,7 +240,7 @@ def assoc : E ⊗ₕ[𝕜] F ⊗ₕ[𝕜] G ≃ₗᵢ[𝕜] E ⊗ₕ[𝕜] (F �
 
 ### F.1. Associativity on the algebraic tensor product
 
-**`CompleteTensorProduct.tIncl₃ₗᵢ`**, a def, [line 271](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/QuantumMechanics/HilbertSpaces/TensorProducts/CompleteTensorProduct.lean#L271).
+**`CompleteTensorProduct.tIncl₃ₗᵢ`**, a def, [line 271](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/QuantumMechanics/HilbertSpaces/TensorProducts/CompleteTensorProduct.lean#L271).
 
 > The embedding of the algebraic threefold tensor product `E ⊗[𝕜] F ⊗[𝕜] G` into the complete
 > tensor product `E ⊗ₕ[𝕜] F ⊗ₕ[𝕜] G` as a linear isometry: `E ⊗[𝕜] F` is first embedded into
@@ -250,7 +250,7 @@ def assoc : E ⊗ₕ[𝕜] F ⊗ₕ[𝕜] G ≃ₗᵢ[𝕜] E ⊗ₕ[𝕜] (F �
 def tIncl₃ₗᵢ : E ⊗[𝕜] F ⊗[𝕜] G →ₗᵢ[𝕜] E ⊗ₕ[𝕜] F ⊗ₕ[𝕜] G
 ```
 
-**`CompleteTensorProduct.tIncl₃'ₗᵢ`**, a def, [line 277](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/QuantumMechanics/HilbertSpaces/TensorProducts/CompleteTensorProduct.lean#L277).
+**`CompleteTensorProduct.tIncl₃'ₗᵢ`**, a def, [line 277](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/QuantumMechanics/HilbertSpaces/TensorProducts/CompleteTensorProduct.lean#L277).
 
 > The embedding of the algebraic threefold tensor product `E ⊗[𝕜] (F ⊗[𝕜] G)` into the
 > complete tensor product `E ⊗ₕ[𝕜] (F ⊗ₕ[𝕜] G)` as a linear isometry: `F ⊗[𝕜] G` is first
@@ -260,7 +260,7 @@ def tIncl₃ₗᵢ : E ⊗[𝕜] F ⊗[𝕜] G →ₗᵢ[𝕜] E ⊗ₕ[𝕜] F 
 def tIncl₃'ₗᵢ : E ⊗[𝕜] (F ⊗[𝕜] G) →ₗᵢ[𝕜] E ⊗ₕ[𝕜] (F ⊗ₕ[𝕜] G)
 ```
 
-**`CompleteTensorProduct.tIncl₃ₗᵢ_tmul`**, a lemma, [line 282](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/QuantumMechanics/HilbertSpaces/TensorProducts/CompleteTensorProduct.lean#L282).
+**`CompleteTensorProduct.tIncl₃ₗᵢ_tmul`**, a lemma, [line 282](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/QuantumMechanics/HilbertSpaces/TensorProducts/CompleteTensorProduct.lean#L282).
 
 > On a simple tensor `x ⊗ₜ y ⊗ₜ z`, the embedding `tIncl₃ₗᵢ` is the nested coercion.
 
@@ -269,7 +269,7 @@ lemma tIncl₃ₗᵢ_tmul (x : E) (y : F) (z : G) :
     tIncl₃ₗᵢ (x ⊗ₜ[𝕜] y ⊗ₜ[𝕜] z) = (x ⊗ₜ[𝕜] y ⊗ₜ[𝕜] z : (E ⊗ₕ[𝕜] F) ⊗[𝕜] G)
 ```
 
-**`CompleteTensorProduct.tIncl₃'ₗᵢ_tmul`**, a lemma, [line 288](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/QuantumMechanics/HilbertSpaces/TensorProducts/CompleteTensorProduct.lean#L288).
+**`CompleteTensorProduct.tIncl₃'ₗᵢ_tmul`**, a lemma, [line 288](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/QuantumMechanics/HilbertSpaces/TensorProducts/CompleteTensorProduct.lean#L288).
 
 > On a simple tensor `x ⊗ₜ (y ⊗ₜ z)`, the embedding `tIncl₃'ₗᵢ` is the nested coercion.
 
@@ -278,7 +278,7 @@ lemma tIncl₃'ₗᵢ_tmul (x : E) (y : F) (z : G) :
     tIncl₃'ₗᵢ (x ⊗ₜ[𝕜] (y ⊗ₜ[𝕜] z)) = (x ⊗ₜ[𝕜] (y ⊗ₜ[𝕜] z) : E ⊗[𝕜] (F ⊗ₕ[𝕜] G))
 ```
 
-**`CompleteTensorProduct.assoc_tIncl₃ₗᵢ`**, a lemma, [line 295](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/QuantumMechanics/HilbertSpaces/TensorProducts/CompleteTensorProduct.lean#L295).
+**`CompleteTensorProduct.assoc_tIncl₃ₗᵢ`**, a lemma, [line 295](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/QuantumMechanics/HilbertSpaces/TensorProducts/CompleteTensorProduct.lean#L295).
 
 > `CompleteTensorProduct.assoc` acting on an element of the algebraic threefold tensor product
 > reduces to `TensorProduct.assoc`.
@@ -288,7 +288,7 @@ lemma assoc_tIncl₃ₗᵢ (x : E ⊗[𝕜] F ⊗[𝕜] G) :
     assoc 𝕜 E F G (tIncl₃ₗᵢ x) = tIncl₃'ₗᵢ (TensorProduct.assoc 𝕜 E F G x)
 ```
 
-**`CompleteTensorProduct.assoc_symm_tIncl₃'ₗᵢ`**, a lemma, [line 302](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/QuantumMechanics/HilbertSpaces/TensorProducts/CompleteTensorProduct.lean#L302).
+**`CompleteTensorProduct.assoc_symm_tIncl₃'ₗᵢ`**, a lemma, [line 302](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/QuantumMechanics/HilbertSpaces/TensorProducts/CompleteTensorProduct.lean#L302).
 
 > The inverse of `CompleteTensorProduct.assoc` acting on an element of the algebraic threefold
 > tensor product reduces to the inverse of `TensorProduct.assoc`.
@@ -298,7 +298,7 @@ lemma assoc_symm_tIncl₃'ₗᵢ (x : E ⊗[𝕜] (F ⊗[𝕜] G)) :
     (assoc 𝕜 E F G).symm (tIncl₃'ₗᵢ x) = tIncl₃ₗᵢ ((TensorProduct.assoc 𝕜 E F G).symm x)
 ```
 
-**`CompleteTensorProduct.assoc_tmul`**, a lemma, [line 308](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/QuantumMechanics/HilbertSpaces/TensorProducts/CompleteTensorProduct.lean#L308).
+**`CompleteTensorProduct.assoc_tmul`**, a lemma, [line 308](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/QuantumMechanics/HilbertSpaces/TensorProducts/CompleteTensorProduct.lean#L308).
 
 > `CompleteTensorProduct.assoc` on simple tensors (c.f. `TensorProduct.assoc_tmul`).
 
@@ -308,7 +308,7 @@ lemma assoc_tmul (x : E) (y : F) (z : G) :
       (x ⊗ₜ[𝕜] (y ⊗ₜ[𝕜] z) : E ⊗[𝕜] (F ⊗ₕ[𝕜] G))
 ```
 
-**`CompleteTensorProduct.assoc_symm_tmul`**, a lemma, [line 316](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/QuantumMechanics/HilbertSpaces/TensorProducts/CompleteTensorProduct.lean#L316).
+**`CompleteTensorProduct.assoc_symm_tmul`**, a lemma, [line 316](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/QuantumMechanics/HilbertSpaces/TensorProducts/CompleteTensorProduct.lean#L316).
 
 > The inverse of `CompleteTensorProduct.assoc` on simple tensors
 > (c.f. `TensorProduct.assoc_symm_tmul`).
@@ -325,4 +325,4 @@ Its declarations' statements use no declaration of another module with an articl
 
 ## Sources
 
-- [Physlib/QuantumMechanics/HilbertSpaces/TensorProducts/CompleteTensorProduct.lean at 2a1dfe43](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/QuantumMechanics/HilbertSpaces/TensorProducts/CompleteTensorProduct.lean)
+- [Physlib/QuantumMechanics/HilbertSpaces/TensorProducts/CompleteTensorProduct.lean at 8c87bdfb](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/QuantumMechanics/HilbertSpaces/TensorProducts/CompleteTensorProduct.lean)

@@ -8,7 +8,7 @@ proof: formalized
 
 # Green operators on spacetime
 
-The module `PhyslibAlpha.ClassicalFieldTheory.KleinGordon.GreenOperators`, [PhyslibAlpha/ClassicalFieldTheory/KleinGordon/GreenOperators.lean](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/KleinGordon/GreenOperators.lean): 34 declarations, 24 with a docstring.
+The module `PhyslibAlpha.ClassicalFieldTheory.KleinGordon.GreenOperators`, [PhyslibAlpha/ClassicalFieldTheory/KleinGordon/GreenOperators.lean](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/KleinGordon/GreenOperators.lean): 34 declarations, 24 with a docstring.
 
 > Retarded and advanced Green operators of the Klein–Gordon equation on `SpaceTime d` for every mass.
 
@@ -100,7 +100,7 @@ The module `PhyslibAlpha.ClassicalFieldTheory.KleinGordon.GreenOperators`, [Phys
 >
 > Lemmas: `existsUnique_retardedSolution`, `causalGreen_exactSequence`.
 
-**`KleinGordon.Spacetime.retardedResponse`**, a def, [line 132](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/KleinGordon/GreenOperators.lean#L132).
+**`KleinGordon.Spacetime.retardedResponse`**, a def, [line 132](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/KleinGordon/GreenOperators.lean#L132).
 
 > The retarded spatial Fourier response of a compact source on Minkowski spacetime.
 
@@ -108,7 +108,7 @@ The module `PhyslibAlpha.ClassicalFieldTheory.KleinGordon.GreenOperators`, [Phys
 def retardedResponse (μ : ℝ) (f : 𝓓((⊤ : Opens (SpaceTime d)), F)) (p : SpaceTime d) : F
 ```
 
-**`KleinGordon.Spacetime.advancedResponse`**, a def, [line 136](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/KleinGordon/GreenOperators.lean#L136).
+**`KleinGordon.Spacetime.advancedResponse`**, a def, [line 136](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/KleinGordon/GreenOperators.lean#L136).
 
 > The advanced spatial Fourier response of a compact source on Minkowski spacetime.
 
@@ -116,21 +116,21 @@ def retardedResponse (μ : ℝ) (f : 𝓓((⊤ : Opens (SpaceTime d)), F)) (p : 
 def advancedResponse (μ : ℝ) (f : 𝓓((⊤ : Opens (SpaceTime d)), F)) (p : SpaceTime d) : F
 ```
 
-**`KleinGordon.Spacetime.contDiff_retardedResponse`**, a lemma, [line 139](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/KleinGordon/GreenOperators.lean#L139).
+**`KleinGordon.Spacetime.contDiff_retardedResponse`**, a lemma, [line 139](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/KleinGordon/GreenOperators.lean#L139).
 
 ```lean
 lemma contDiff_retardedResponse {μ : ℝ} (hμ : 0 ≤ μ)
     (f : 𝓓((⊤ : Opens (SpaceTime d)), F)) : ContDiff ℝ ∞ (retardedResponse F μ f)
 ```
 
-**`KleinGordon.Spacetime.contDiff_advancedResponse`**, a lemma, [line 143](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/KleinGordon/GreenOperators.lean#L143).
+**`KleinGordon.Spacetime.contDiff_advancedResponse`**, a lemma, [line 143](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/KleinGordon/GreenOperators.lean#L143).
 
 ```lean
 lemma contDiff_advancedResponse {μ : ℝ} (hμ : 0 ≤ μ)
     (f : 𝓓((⊤ : Opens (SpaceTime d)), F)) : ContDiff ℝ ∞ (advancedResponse F μ f)
 ```
 
-**`KleinGordon.Spacetime.tsupport_retardedResponse_subset`**, a lemma, [line 148](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/KleinGordon/GreenOperators.lean#L148).
+**`KleinGordon.Spacetime.tsupport_retardedResponse_subset`**, a lemma, [line 148](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/KleinGordon/GreenOperators.lean#L148).
 
 > The retarded spacetime field has support inside the coordinate light cones of its source.
 
@@ -141,7 +141,7 @@ lemma tsupport_retardedResponse_subset {μ : ℝ} (hμ : 0 ≤ μ)
       causalFuture (coordinates d '' tsupport f)
 ```
 
-**`KleinGordon.Spacetime.tsupport_advancedResponse_subset`**, a lemma, [line 160](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/KleinGordon/GreenOperators.lean#L160).
+**`KleinGordon.Spacetime.tsupport_advancedResponse_subset`**, a lemma, [line 160](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/KleinGordon/GreenOperators.lean#L160).
 
 > The advanced spacetime field has support inside the past coordinate light cones.
 
@@ -152,7 +152,7 @@ lemma tsupport_advancedResponse_subset {μ : ℝ} (hμ : 0 ≤ μ)
       causalPast (coordinates d '' tsupport f)
 ```
 
-**`KleinGordon.Spacetime.retardedResponse_sourceOperator`**, a lemma, [line 172](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/KleinGordon/GreenOperators.lean#L172).
+**`KleinGordon.Spacetime.retardedResponse_sourceOperator`**, a lemma, [line 172](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/KleinGordon/GreenOperators.lean#L172).
 
 > The retarded response recovers a spacetime test field from its compact Klein–Gordon source.
 
@@ -162,7 +162,7 @@ lemma retardedResponse_sourceOperator {μ : ℝ} (hμ : 0 ≤ μ)
     retardedResponse F μ (sourceOperator F μ f) p = f p
 ```
 
-**`KleinGordon.Spacetime.advancedResponse_sourceOperator`**, a lemma, [line 181](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/KleinGordon/GreenOperators.lean#L181).
+**`KleinGordon.Spacetime.advancedResponse_sourceOperator`**, a lemma, [line 181](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/KleinGordon/GreenOperators.lean#L181).
 
 > The advanced response recovers a spacetime test field from its compact Klein–Gordon source.
 
@@ -172,7 +172,7 @@ lemma advancedResponse_sourceOperator {μ : ℝ} (hμ : 0 ≤ μ)
     advancedResponse F μ (sourceOperator F μ f) p = f p
 ```
 
-**`KleinGordon.Spacetime.testFieldEquiv`**, a def, [line 195](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/KleinGordon/GreenOperators.lean#L195).
+**`KleinGordon.Spacetime.testFieldEquiv`**, a def, [line 195](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/KleinGordon/GreenOperators.lean#L195).
 
 > The neighbour's compact smooth fields and Mathlib's bundled test functions have the same data.
 
@@ -180,7 +180,7 @@ lemma advancedResponse_sourceOperator {μ : ℝ} (hμ : 0 ≤ μ)
 def testFieldEquiv : TestField d F ≃ₗ[ℝ] 𝓓((⊤ : Opens (SpaceTime d)), F)
 ```
 
-**`KleinGordon.Spacetime.testFieldEquiv_compactOperator`**, a lemma, [line 212](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/KleinGordon/GreenOperators.lean#L212).
+**`KleinGordon.Spacetime.testFieldEquiv_compactOperator`**, a lemma, [line 212](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/KleinGordon/GreenOperators.lean#L212).
 
 ```lean
 lemma testFieldEquiv_compactOperator (m : ℝ) (f : TestField d F) :
@@ -188,7 +188,7 @@ lemma testFieldEquiv_compactOperator (m : ℝ) (f : TestField d F) :
       sourceOperator F (m ^ 2) (testFieldEquiv F f)
 ```
 
-**`KleinGordon.Spacetime.retardedMap`**, a def, [line 219](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/KleinGordon/GreenOperators.lean#L219).
+**`KleinGordon.Spacetime.retardedMap`**, a def, [line 219](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/KleinGordon/GreenOperators.lean#L219).
 
 > The retarded Fourier response as a real linear map into the existing smooth-field space.
 
@@ -196,7 +196,7 @@ lemma testFieldEquiv_compactOperator (m : ℝ) (f : TestField d F) :
 def retardedMap (m : ℝ) : TestField d F →ₗ[ℝ] smoothFields d F
 ```
 
-**`KleinGordon.Spacetime.advancedMap`**, a def, [line 234](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/KleinGordon/GreenOperators.lean#L234).
+**`KleinGordon.Spacetime.advancedMap`**, a def, [line 234](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/KleinGordon/GreenOperators.lean#L234).
 
 > The advanced Fourier response as a real linear map into the existing smooth-field space.
 
@@ -204,21 +204,21 @@ def retardedMap (m : ℝ) : TestField d F →ₗ[ℝ] smoothFields d F
 def advancedMap (m : ℝ) : TestField d F →ₗ[ℝ] smoothFields d F
 ```
 
-**`KleinGordon.Spacetime.retardedMap_solves`**, a lemma, [line 256](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/KleinGordon/GreenOperators.lean#L256).
+**`KleinGordon.Spacetime.retardedMap_solves`**, a lemma, [line 256](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/KleinGordon/GreenOperators.lean#L256).
 
 ```lean
 lemma retardedMap_solves (m : ℝ) (f : TestField d F) :
     KleinGordon.Spacetime.operator m (retardedMap F m f) = f.val
 ```
 
-**`KleinGordon.Spacetime.advancedMap_solves`**, a lemma, [line 269](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/KleinGordon/GreenOperators.lean#L269).
+**`KleinGordon.Spacetime.advancedMap_solves`**, a lemma, [line 269](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/KleinGordon/GreenOperators.lean#L269).
 
 ```lean
 lemma advancedMap_solves (m : ℝ) (f : TestField d F) :
     KleinGordon.Spacetime.operator m (advancedMap F m f) = f.val
 ```
 
-**`KleinGordon.Spacetime.retardedGreenOperator`**, a def, [line 284](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/KleinGordon/GreenOperators.lean#L284).
+**`KleinGordon.Spacetime.retardedGreenOperator`**, a def, [line 284](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/KleinGordon/GreenOperators.lean#L284).
 
 > The retarded Fourier Green inverse for the existing Minkowski equation in every dimension.
 
@@ -227,7 +227,7 @@ def retardedGreenOperator (m : ℝ) :
     RetardedGreenOperator (causalRelation d) (equation (V := F) m)
 ```
 
-**`KleinGordon.Spacetime.advancedGreenOperator`**, a def, [line 302](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/KleinGordon/GreenOperators.lean#L302).
+**`KleinGordon.Spacetime.advancedGreenOperator`**, a def, [line 302](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/KleinGordon/GreenOperators.lean#L302).
 
 > The advanced Fourier Green inverse for the existing Minkowski equation in every dimension.
 
@@ -236,7 +236,7 @@ def advancedGreenOperator (m : ℝ) :
     AdvancedGreenOperator (causalRelation d) (equation (V := F) m)
 ```
 
-**`KleinGordon.Spacetime.greenOperators`**, a def, [line 320](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/KleinGordon/GreenOperators.lean#L320).
+**`KleinGordon.Spacetime.greenOperators`**, a def, [line 320](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/KleinGordon/GreenOperators.lean#L320).
 
 > The spatial Fourier Green pair for Klein–Gordon fields in arbitrary spatial dimension.
 
@@ -245,7 +245,7 @@ def greenOperators (m : ℝ) :
     GreenOperators (causalRelation d) (equation (V := F) m)
 ```
 
-**`KleinGordon.Spacetime.fiberIntertwiner`**, a def, [line 330](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/KleinGordon/GreenOperators.lean#L330).
+**`KleinGordon.Spacetime.fiberIntertwiner`**, a def, [line 330](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/KleinGordon/GreenOperators.lean#L330).
 
 > A constant fibre transformation intertwines the equal-mass Klein–Gordon equations.
 
@@ -255,7 +255,7 @@ def fiberIntertwiner (m : ℝ) (L : V →L[ℝ] W) :
       (equation (d := d) (V := W) m)
 ```
 
-**`KleinGordon.Spacetime.fiberIntertwiner_compactOperator`**, a lemma, [line 341](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/KleinGordon/GreenOperators.lean#L341).
+**`KleinGordon.Spacetime.fiberIntertwiner_compactOperator`**, a lemma, [line 341](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/KleinGordon/GreenOperators.lean#L341).
 
 ```lean
 lemma fiberIntertwiner_compactOperator (m : ℝ) (L : V →L[ℝ] W) (f : TestField d V) :
@@ -263,7 +263,7 @@ lemma fiberIntertwiner_compactOperator (m : ℝ) (L : V →L[ℝ] W) (f : TestFi
       (equation m).compactOperator ((fiberIntertwiner m L).compactMap f)
 ```
 
-**`KleinGordon.Spacetime.realRetardedGreenOperator`**, a def, [line 348](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/KleinGordon/GreenOperators.lean#L348).
+**`KleinGordon.Spacetime.realRetardedGreenOperator`**, a def, [line 348](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/KleinGordon/GreenOperators.lean#L348).
 
 > The real part of the complex retarded response is a real scalar Green inverse.
 
@@ -273,7 +273,7 @@ def realRetardedGreenOperator (m : ℝ) :
       (equation (V := ℝ) m)
 ```
 
-**`KleinGordon.Spacetime.realAdvancedGreenOperator`**, a def, [line 377](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/KleinGordon/GreenOperators.lean#L377).
+**`KleinGordon.Spacetime.realAdvancedGreenOperator`**, a def, [line 377](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/KleinGordon/GreenOperators.lean#L377).
 
 > The real part of the complex advanced response is a real scalar Green inverse.
 
@@ -283,7 +283,7 @@ def realAdvancedGreenOperator (m : ℝ) :
       (equation (V := ℝ) m)
 ```
 
-**`KleinGordon.Spacetime.realGreenOperators`**, a def, [line 406](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/KleinGordon/GreenOperators.lean#L406).
+**`KleinGordon.Spacetime.realGreenOperators`**, a def, [line 406](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/KleinGordon/GreenOperators.lean#L406).
 
 > The real scalar Klein–Gordon Green pair for transposition in arbitrary spatial dimension.
 
@@ -292,7 +292,7 @@ def realGreenOperators (m : ℝ) :
     GreenOperators (causalRelation d) (equation (V := ℝ) m)
 ```
 
-**`KleinGordon.Spacetime.retardedEvaluation`**, a def, [line 415](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/KleinGordon/GreenOperators.lean#L415).
+**`KleinGordon.Spacetime.retardedEvaluation`**, a def, [line 415](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/KleinGordon/GreenOperators.lean#L415).
 
 > Continuous evaluation of the complex Banach-valued retarded Fourier response.
 
@@ -301,7 +301,7 @@ def retardedEvaluation {μ : ℝ} (hμ : 0 ≤ μ) (p : SpaceTime d) :
     𝓓((⊤ : Opens (SpaceTime d)), F) →L[ℝ] F
 ```
 
-**`KleinGordon.Spacetime.advancedEvaluation`**, a def, [line 421](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/KleinGordon/GreenOperators.lean#L421).
+**`KleinGordon.Spacetime.advancedEvaluation`**, a def, [line 421](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/KleinGordon/GreenOperators.lean#L421).
 
 > Continuous evaluation of the complex Banach-valued advanced Fourier response.
 
@@ -310,7 +310,7 @@ def advancedEvaluation {μ : ℝ} (hμ : 0 ≤ μ) (p : SpaceTime d) :
     𝓓((⊤ : Opens (SpaceTime d)), F) →L[ℝ] F
 ```
 
-**`KleinGordon.Spacetime.retardedEvaluation_apply`**, a lemma, [line 426](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/KleinGordon/GreenOperators.lean#L426).
+**`KleinGordon.Spacetime.retardedEvaluation_apply`**, a lemma, [line 426](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/KleinGordon/GreenOperators.lean#L426).
 
 ```lean
 lemma retardedEvaluation_apply {μ : ℝ} (hμ : 0 ≤ μ) (p : SpaceTime d)
@@ -318,7 +318,7 @@ lemma retardedEvaluation_apply {μ : ℝ} (hμ : 0 ≤ μ) (p : SpaceTime d)
     retardedEvaluation F hμ p f = retardedResponse F μ f p
 ```
 
-**`KleinGordon.Spacetime.advancedEvaluation_apply`**, a lemma, [line 430](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/KleinGordon/GreenOperators.lean#L430).
+**`KleinGordon.Spacetime.advancedEvaluation_apply`**, a lemma, [line 430](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/KleinGordon/GreenOperators.lean#L430).
 
 ```lean
 lemma advancedEvaluation_apply {μ : ℝ} (hμ : 0 ≤ μ) (p : SpaceTime d)
@@ -326,7 +326,7 @@ lemma advancedEvaluation_apply {μ : ℝ} (hμ : 0 ≤ μ) (p : SpaceTime d)
     advancedEvaluation F hμ p f = advancedResponse F μ f p
 ```
 
-**`KleinGordon.Spacetime.realRetardedEvaluation`**, a def, [line 437](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/KleinGordon/GreenOperators.lean#L437).
+**`KleinGordon.Spacetime.realRetardedEvaluation`**, a def, [line 437](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/KleinGordon/GreenOperators.lean#L437).
 
 > Continuous evaluation of the real scalar retarded Green response.
 
@@ -335,7 +335,7 @@ def realRetardedEvaluation (m : ℝ) (p : SpaceTime d) :
     𝓓((⊤ : Opens (SpaceTime d)), ℝ) →L[ℝ] ℝ
 ```
 
-**`KleinGordon.Spacetime.realAdvancedEvaluation`**, a def, [line 443](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/KleinGordon/GreenOperators.lean#L443).
+**`KleinGordon.Spacetime.realAdvancedEvaluation`**, a def, [line 443](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/KleinGordon/GreenOperators.lean#L443).
 
 > Continuous evaluation of the real scalar advanced Green response.
 
@@ -344,7 +344,7 @@ def realAdvancedEvaluation (m : ℝ) (p : SpaceTime d) :
     𝓓((⊤ : Opens (SpaceTime d)), ℝ) →L[ℝ] ℝ
 ```
 
-**`KleinGordon.Spacetime.realRetardedEvaluation_apply`**, a lemma, [line 448](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/KleinGordon/GreenOperators.lean#L448).
+**`KleinGordon.Spacetime.realRetardedEvaluation_apply`**, a lemma, [line 448](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/KleinGordon/GreenOperators.lean#L448).
 
 ```lean
 lemma realRetardedEvaluation_apply (m : ℝ) (p : SpaceTime d) (f : TestField d ℝ) :
@@ -352,7 +352,7 @@ lemma realRetardedEvaluation_apply (m : ℝ) (p : SpaceTime d) (f : TestField d 
       ((realRetardedGreenOperator m).toLinearMap f).val p
 ```
 
-**`KleinGordon.Spacetime.realAdvancedEvaluation_apply`**, a lemma, [line 452](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/KleinGordon/GreenOperators.lean#L452).
+**`KleinGordon.Spacetime.realAdvancedEvaluation_apply`**, a lemma, [line 452](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/KleinGordon/GreenOperators.lean#L452).
 
 ```lean
 lemma realAdvancedEvaluation_apply (m : ℝ) (p : SpaceTime d) (f : TestField d ℝ) :
@@ -360,7 +360,7 @@ lemma realAdvancedEvaluation_apply (m : ℝ) (p : SpaceTime d) (f : TestField d 
       ((realAdvancedGreenOperator m).toLinearMap f).val p
 ```
 
-**`KleinGordon.Spacetime.existsUnique_retardedSolution`**, a lemma, [line 461](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/KleinGordon/GreenOperators.lean#L461).
+**`KleinGordon.Spacetime.existsUnique_retardedSolution`**, a lemma, [line 461](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/KleinGordon/GreenOperators.lean#L461).
 
 > A compact smooth source has exactly one sharply retarded solution of the Klein–Gordon
 > equation, in every spatial dimension.
@@ -374,7 +374,7 @@ lemma existsUnique_retardedSolution (m : ℝ)
         (causalRelation d).causalFuture (tsupport (f.val : SpaceTime d → F))
 ```
 
-**`KleinGordon.Spacetime.causalGreen_exactSequence`**, a lemma, [line 473](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/KleinGordon/GreenOperators.lean#L473).
+**`KleinGordon.Spacetime.causalGreen_exactSequence`**, a lemma, [line 473](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/KleinGordon/GreenOperators.lean#L473).
 
 > The causal Green sequence for the Klein–Gordon equation in every spatial dimension:
 > the equation of motion is injective on compact fields, the causal propagator is exact in the
@@ -390,7 +390,7 @@ lemma causalGreen_exactSequence (m : ℝ) :
       Function.Surjective (P.spacelikeCompactOperator (causalRelation d))
 ```
 
-**`KleinGordon.Spacetime.smoothFieldsAddGroup`**, an instance, [line 485](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/KleinGordon/GreenOperators.lean#L485).
+**`KleinGordon.Spacetime.smoothFieldsAddGroup`**, an instance, [line 485](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/KleinGordon/GreenOperators.lean#L485).
 
 > Fix the inherited field addition for quotient inference.
 
@@ -398,7 +398,7 @@ lemma causalGreen_exactSequence (m : ℝ) :
 local instance smoothFieldsAddGroup : AddCommGroup (smoothFields d F)
 ```
 
-**`KleinGordon.Spacetime.solutionSpaceEquivQuotient`**, a def, [line 490](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/KleinGordon/GreenOperators.lean#L490).
+**`KleinGordon.Spacetime.solutionSpaceEquivQuotient`**, a def, [line 490](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/KleinGordon/GreenOperators.lean#L490).
 
 > Spacelike-compact homogeneous solutions of the Klein–Gordon equation are the compact source
 > classes modulo the equation of motion, in every spatial dimension.
@@ -423,4 +423,4 @@ noncomputable def solutionSpaceEquivQuotient (m : ℝ) :
 
 ## Sources
 
-- [PhyslibAlpha/ClassicalFieldTheory/KleinGordon/GreenOperators.lean at 2a1dfe43](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/KleinGordon/GreenOperators.lean)
+- [PhyslibAlpha/ClassicalFieldTheory/KleinGordon/GreenOperators.lean at 8c87bdfb](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/KleinGordon/GreenOperators.lean)

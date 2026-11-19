@@ -8,7 +8,7 @@ proof: formalized
 
 # Which observables of the open tight binding cube commute
 
-The module `PhyslibAlpha.CondensedMatter.TightBindingChain.Cube.AxisCommutation`, [PhyslibAlpha/CondensedMatter/TightBindingChain/Cube/AxisCommutation.lean](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/CondensedMatter/TightBindingChain/Cube/AxisCommutation.lean): 6 declarations, 6 with a docstring.
+The module `PhyslibAlpha.CondensedMatter.TightBindingChain.Cube.AxisCommutation`, [PhyslibAlpha/CondensedMatter/TightBindingChain/Cube/AxisCommutation.lean](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/CondensedMatter/TightBindingChain/Cube/AxisCommutation.lean): 6 declarations, 6 with a docstring.
 
 ## i. Overview
 
@@ -37,7 +37,7 @@ The module `PhyslibAlpha.CondensedMatter.TightBindingChain.Cube.AxisCommutation`
 
 ## A. One chain: when `H` and `X` commute
 
-**`CondensedMatter.TightBindingChain.hopping_eq_zero_of_degenerate`**, a lemma, [line 63](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/CondensedMatter/TightBindingChain/Cube/AxisCommutation.lean#L63).
+**`CondensedMatter.TightBindingChain.hopping_eq_zero_of_degenerate`**, a lemma, [line 63](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/CondensedMatter/TightBindingChain/Cube/AxisCommutation.lean#L63).
 
 > Without hopping, or with a single site, the hopping operator is zero.
 
@@ -46,7 +46,7 @@ lemma hopping_eq_zero_of_degenerate (T : TightBindingChain) (h : T.t = 0 ∨ T.N
     T.hopping = 0
 ```
 
-**`CondensedMatter.TightBindingChain.bracket_openHamiltonian_position_eq_zero_iff`**, a lemma, [line 78](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/CondensedMatter/TightBindingChain/Cube/AxisCommutation.lean#L78).
+**`CondensedMatter.TightBindingChain.bracket_openHamiltonian_position_eq_zero_iff`**, a lemma, [line 78](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/CondensedMatter/TightBindingChain/Cube/AxisCommutation.lean#L78).
 
 > On one chain, the Hamiltonian and the position commute if and only if there is no hopping or
 > only one site.
@@ -58,7 +58,7 @@ lemma bracket_openHamiltonian_position_eq_zero_iff (T : TightBindingChain) :
 
 ## B. The pair of an axis does not commute
 
-**`CondensedMatter.TightBindingChain.axisBracket_maxCurrentCubeVectorState_ne_zero`**, a lemma, [line 101](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/CondensedMatter/TightBindingChain/Cube/AxisCommutation.lean#L101).
+**`CondensedMatter.TightBindingChain.axisBracket_maxCurrentCubeVectorState_ne_zero`**, a lemma, [line 101](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/CondensedMatter/TightBindingChain/Cube/AxisCommutation.lean#L101).
 
 > In the maximal current state of the cube, the expectation of `⁅H, X⁆` is nonzero on each
 > axis.
@@ -69,7 +69,7 @@ lemma axisBracket_maxCurrentCubeVectorState_ne_zero (hx : Tx.t ≠ 0) (hy : Ty.t
     Tx.axisBracket Ty Tz (Tx.maxCurrentCubeVectorState Ty Tz) k ≠ 0
 ```
 
-**`CondensedMatter.TightBindingChain.bracket_cubePairs_pair_ne_zero`**, a lemma, [line 114](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/CondensedMatter/TightBindingChain/Cube/AxisCommutation.lean#L114).
+**`CondensedMatter.TightBindingChain.bracket_cubePairs_pair_ne_zero`**, a lemma, [line 114](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/CondensedMatter/TightBindingChain/Cube/AxisCommutation.lean#L114).
 
 > The Hamiltonian and the position of one axis of the cube do not commute.
 
@@ -79,7 +79,7 @@ lemma bracket_cubePairs_pair_ne_zero (hx : Tx.t ≠ 0) (hy : Ty.t ≠ 0) (hz : T
     ⁅Tx.cubePairs Ty Tz (0, k), Tx.cubePairs Ty Tz (1, k)⁆ ≠ 0
 ```
 
-**`CondensedMatter.TightBindingChain.variance_mul_variance_cubePairs_pos`**, a lemma, [line 121](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/CondensedMatter/TightBindingChain/Cube/AxisCommutation.lean#L121).
+**`CondensedMatter.TightBindingChain.variance_mul_variance_cubePairs_pos`**, a lemma, [line 121](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/CondensedMatter/TightBindingChain/Cube/AxisCommutation.lean#L121).
 
 > In the maximal current state of the cube, the variances of `H` and `X` of each axis have a
 > positive product.
@@ -93,7 +93,7 @@ lemma variance_mul_variance_cubePairs_pos (hx : Tx.t ≠ 0) (hy : Ty.t ≠ 0) (h
 
 ## C. Commuting and axes
 
-**`CondensedMatter.TightBindingChain.bracket_cubePairs_eq_zero_iff`**, a lemma, [line 137](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/CondensedMatter/TightBindingChain/Cube/AxisCommutation.lean#L137).
+**`CondensedMatter.TightBindingChain.bracket_cubePairs_eq_zero_iff`**, a lemma, [line 137](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/CondensedMatter/TightBindingChain/Cube/AxisCommutation.lean#L137).
 
 > Two distinct observables of the cube commute if and only if they lie on different axes.
 
@@ -113,4 +113,4 @@ lemma bracket_cubePairs_eq_zero_iff (hx : Tx.t ≠ 0) (hy : Ty.t ≠ 0) (hz : Tz
 
 ## Sources
 
-- [PhyslibAlpha/CondensedMatter/TightBindingChain/Cube/AxisCommutation.lean at 2a1dfe43](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/CondensedMatter/TightBindingChain/Cube/AxisCommutation.lean)
+- [PhyslibAlpha/CondensedMatter/TightBindingChain/Cube/AxisCommutation.lean at 8c87bdfb](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/CondensedMatter/TightBindingChain/Cube/AxisCommutation.lean)

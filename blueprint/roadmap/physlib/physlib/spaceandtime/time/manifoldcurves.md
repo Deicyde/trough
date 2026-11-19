@@ -1,14 +1,14 @@
 ---
 declaration: module
 origin: cited
-lean: Time.contMDiffAt_iff_contDiffAt_vadd, Time.mdifferentiableAt_iff_differentiableAt_vadd, Time.contMDiff_iff_contDiff_vadd, Time.mdifferentiableAt_vadd_iff, Time.writtenInExtChartAt_eq_vadd, Time.mfderiv_eq_deriv_vadd, Time.tangentMap_eq_deriv_vadd
+lean: Time.contMDiffAt_iff_contDiffAt_vadd, Time.mdifferentiableAt_iff_differentiableAt_vadd, Time.contMDiff_iff_contDiff_vadd, Time.mdifferentiableAt_vadd_iff, Time.contDiffAt_extChartAt_comp_vadd, Time.writtenInExtChartAt_eq_vadd, Time.mfderiv_eq_deriv_vadd, Time.tangentMap_eq_deriv_vadd
 statement: formalized
 proof: formalized
 ---
 
-# Curves in normed spaces over `Time`
+# Curves over `Time`
 
-The module `Physlib.SpaceAndTime.Time.ManifoldCurves`, [Physlib/SpaceAndTime/Time/ManifoldCurves.lean](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/SpaceAndTime/Time/ManifoldCurves.lean): 7 declarations, 7 with a docstring; 2 private, not shown.
+The module `Physlib.SpaceAndTime.Time.ManifoldCurves`, [Physlib/SpaceAndTime/Time/ManifoldCurves.lean](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/SpaceAndTime/Time/ManifoldCurves.lean): 8 declarations, 8 with a docstring; 2 private, not shown.
 
 > A curve `Time → F` is smooth, or has a given derivative, iff its coordinate curve does.
 
@@ -20,6 +20,7 @@ The module `Physlib.SpaceAndTime.Time.ManifoldCurves`, [Physlib/SpaceAndTime/Tim
 
 > - `Time.contMDiff_iff_contDiff_vadd`: a curve is `C^n` iff its coordinate curve is
 > - `Time.mfderiv_eq_deriv_vadd`: the manifold derivative is the derivative of the coordinate curve
+> - `Time.contDiffAt_extChartAt_comp_vadd`: a curve read in a chart is smooth where it lies in it
 > - `Time.tangentMap_eq_deriv_vadd`: the tangent map of a curve in coordinates
 
 ## iv. References
@@ -28,7 +29,7 @@ The module `Physlib.SpaceAndTime.Time.ManifoldCurves`, [Physlib/SpaceAndTime/Tim
 
 ## A. Smoothness and differentiability of curves
 
-**`Time.contMDiffAt_iff_contDiffAt_vadd`**, a lemma, [line 58](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/SpaceAndTime/Time/ManifoldCurves.lean#L58).
+**`Time.contMDiffAt_iff_contDiffAt_vadd`**, a lemma, [line 61](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/SpaceAndTime/Time/ManifoldCurves.lean#L61).
 
 > A curve into a normed space is `C^n` at `x` iff its coordinate curve is `C^n` at `0`.
 
@@ -37,7 +38,7 @@ lemma contMDiffAt_iff_contDiffAt_vadd (γ : Time → F) (x : Time) (n : ℕ∞ω
     ContMDiffAt 𝓘(ℝ, ℝ) 𝓘(ℝ, F) n γ x ↔ ContDiffAt ℝ n (fun τ : ℝ ↦ γ (τ +ᵥ x)) 0
 ```
 
-**`Time.mdifferentiableAt_iff_differentiableAt_vadd`**, a lemma, [line 65](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/SpaceAndTime/Time/ManifoldCurves.lean#L65).
+**`Time.mdifferentiableAt_iff_differentiableAt_vadd`**, a lemma, [line 68](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/SpaceAndTime/Time/ManifoldCurves.lean#L68).
 
 > A curve into a normed space is differentiable at `x` iff its coordinate curve is at `0`.
 
@@ -46,7 +47,7 @@ lemma mdifferentiableAt_iff_differentiableAt_vadd (γ : Time → F) (x : Time) :
     MDifferentiableAt 𝓘(ℝ, ℝ) 𝓘(ℝ, F) γ x ↔ DifferentiableAt ℝ (fun τ : ℝ ↦ γ (τ +ᵥ x)) 0
 ```
 
-**`Time.contMDiff_iff_contDiff_vadd`**, a lemma, [line 78](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/SpaceAndTime/Time/ManifoldCurves.lean#L78).
+**`Time.contMDiff_iff_contDiff_vadd`**, a lemma, [line 81](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/SpaceAndTime/Time/ManifoldCurves.lean#L81).
 
 > A curve `γ : Time → F` into a normed space is `C^n` iff the coordinate curve
 > `τ ↦ γ (τ +ᵥ t₀)` is `C^n`.
@@ -56,7 +57,7 @@ lemma contMDiff_iff_contDiff_vadd (γ : Time → F) (t₀ : Time) (n : ℕ∞ω)
     ContMDiff 𝓘(ℝ, ℝ) 𝓘(ℝ, F) n γ ↔ ContDiff ℝ n (fun τ : ℝ ↦ γ (τ +ᵥ t₀))
 ```
 
-**`Time.mdifferentiableAt_vadd_iff`**, a lemma, [line 92](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/SpaceAndTime/Time/ManifoldCurves.lean#L92).
+**`Time.mdifferentiableAt_vadd_iff`**, a lemma, [line 95](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/SpaceAndTime/Time/ManifoldCurves.lean#L95).
 
 > A curve into a normed space is differentiable at `s +ᵥ t₀` iff its coordinate curve based
 > at `t₀` is differentiable at `s`.
@@ -67,9 +68,21 @@ lemma mdifferentiableAt_vadd_iff (γ : Time → F) (t₀ : Time) (s : ℝ) :
       DifferentiableAt ℝ (fun τ : ℝ ↦ γ (τ +ᵥ t₀)) s
 ```
 
+**`Time.contDiffAt_extChartAt_comp_vadd`**, a lemma, [line 102](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/SpaceAndTime/Time/ManifoldCurves.lean#L102).
+
+> A curve in a manifold read in a chart is smooth at times at which it lies in the chart.
+
+```lean
+lemma contDiffAt_extChartAt_comp_vadd {E H M : Type*} [NormedAddCommGroup E] [NormedSpace ℝ E]
+    [TopologicalSpace H] {I : ModelWithCorners ℝ E H} [TopologicalSpace M] [ChartedSpace H M]
+    [IsManifold I ∞ M] (x : M) {γ : Time → M} (t₀ : Time) {σ : ℝ}
+    (hγ : ContMDiffAt 𝓘(ℝ, ℝ) I ∞ γ (σ +ᵥ t₀)) (hσ : γ (σ +ᵥ t₀) ∈ (extChartAt I x).source) :
+    ContDiffAt ℝ ∞ (fun σ' : ℝ ↦ extChartAt I x (γ (σ' +ᵥ t₀))) σ
+```
+
 ## B. Derivatives of curves
 
-**`Time.writtenInExtChartAt_eq_vadd`**, a lemma, [line 103](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/SpaceAndTime/Time/ManifoldCurves.lean#L103).
+**`Time.writtenInExtChartAt_eq_vadd`**, a lemma, [line 117](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/SpaceAndTime/Time/ManifoldCurves.lean#L117).
 
 > A curve read in the extended chart at `x` is its coordinate curve based at `x`.
 
@@ -78,7 +91,7 @@ lemma writtenInExtChartAt_eq_vadd (γ : Time → F) (x : Time) :
     writtenInExtChartAt 𝓘(ℝ, ℝ) 𝓘(ℝ, F) x γ = fun τ : ℝ ↦ γ (τ +ᵥ x)
 ```
 
-**`Time.mfderiv_eq_deriv_vadd`**, a lemma, [line 109](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/SpaceAndTime/Time/ManifoldCurves.lean#L109).
+**`Time.mfderiv_eq_deriv_vadd`**, a lemma, [line 123](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/SpaceAndTime/Time/ManifoldCurves.lean#L123).
 
 > The manifold derivative of a curve into a normed space at `s +ᵥ t₀` applied to `1`
 > equals the ordinary derivative of the coordinate curve at `s`.
@@ -88,7 +101,7 @@ lemma mfderiv_eq_deriv_vadd (γ : Time → F) (t₀ : Time) (s : ℝ) :
     mfderiv 𝓘(ℝ, ℝ) 𝓘(ℝ, F) γ (s +ᵥ t₀) (1 : ℝ) = deriv (fun τ : ℝ ↦ γ (τ +ᵥ t₀)) s
 ```
 
-**`Time.tangentMap_eq_deriv_vadd`**, a lemma, [line 125](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/SpaceAndTime/Time/ManifoldCurves.lean#L125).
+**`Time.tangentMap_eq_deriv_vadd`**, a lemma, [line 139](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/SpaceAndTime/Time/ManifoldCurves.lean#L139).
 
 > The tangent map of a curve into a normed space sends `⟨s +ᵥ t₀, 1⟩` to the point and
 > the ordinary derivative of the coordinate curve.
@@ -105,4 +118,4 @@ lemma tangentMap_eq_deriv_vadd (γ : Time → F) (t₀ : Time) (s : ℝ) :
 
 ## Sources
 
-- [Physlib/SpaceAndTime/Time/ManifoldCurves.lean at 2a1dfe43](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/SpaceAndTime/Time/ManifoldCurves.lean)
+- [Physlib/SpaceAndTime/Time/ManifoldCurves.lean at 8c87bdfb](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/SpaceAndTime/Time/ManifoldCurves.lean)

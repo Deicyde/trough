@@ -8,7 +8,7 @@ proof: formalized
 
 # First variation regularity
 
-The module `PhyslibAlpha.ClassicalFieldTheory.Local.FirstVariation.Regularity`, [PhyslibAlpha/ClassicalFieldTheory/Local/FirstVariation/Regularity.lean](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/Local/FirstVariation/Regularity.lean): 6 declarations, 2 with a docstring.
+The module `PhyslibAlpha.ClassicalFieldTheory.Local.FirstVariation.Regularity`, [PhyslibAlpha/ClassicalFieldTheory/Local/FirstVariation/Regularity.lean](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/Local/FirstVariation/Regularity.lean): 6 declarations, 2 with a docstring.
 
 > Continuity of the Euler-Lagrange operator and smooth regularity from coordinate regularity.
 
@@ -30,7 +30,7 @@ The module `PhyslibAlpha.ClassicalFieldTheory.Local.FirstVariation.Regularity`, 
 
 ## A. Continuity of the Euler-Lagrange operator
 
-**`ClassicalFieldTheory.Local.HasEulerLagrangeRegularityAt`**, a def, [line 54](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/Local/FirstVariation/Regularity.lean#L54).
+**`ClassicalFieldTheory.Local.HasEulerLagrangeRegularityAt`**, a def, [line 54](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/Local/FirstVariation/Regularity.lean#L54).
 
 > The combined regularity package currently needed to derive the local Euler-Lagrange
 > criterion for a field `f`: smooth coefficient functions along `f`, and continuity of the
@@ -41,7 +41,7 @@ def HasEulerLagrangeRegularityAt (L : Lagrangian d m k)
     (f : Space d → EuclideanSpace ℝ (Fin m)) : Prop
 ```
 
-**`ClassicalFieldTheory.Local.HasSmoothEulerLagrangeRegularity`**, a def, [line 62](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/Local/FirstVariation/Regularity.lean#L62).
+**`ClassicalFieldTheory.Local.HasSmoothEulerLagrangeRegularity`**, a def, [line 62](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/Local/FirstVariation/Regularity.lean#L62).
 
 > A local Lagrangian has smooth Euler-Lagrange regularity if every smooth field satisfies the
 > regularity package currently needed by the local first-variation proof.
@@ -50,7 +50,7 @@ def HasEulerLagrangeRegularityAt (L : Lagrangian d m k)
 def HasSmoothEulerLagrangeRegularity (L : Lagrangian d m k) : Prop
 ```
 
-**`ClassicalFieldTheory.Local.continuous_eulerLagrangeTerm_of_regular`**, a lemma, [line 66](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/Local/FirstVariation/Regularity.lean#L66).
+**`ClassicalFieldTheory.Local.continuous_eulerLagrangeTerm_of_regular`**, a lemma, [line 66](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/Local/FirstVariation/Regularity.lean#L66).
 
 ```lean
 lemma continuous_eulerLagrangeTerm_of_regular
@@ -60,7 +60,7 @@ lemma continuous_eulerLagrangeTerm_of_regular
     Continuous (eulerLagrangeTerm L I a f)
 ```
 
-**`ClassicalFieldTheory.Local.continuous_eulerLagrangeComponent_of_regular`**, a lemma, [line 80](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/Local/FirstVariation/Regularity.lean#L80).
+**`ClassicalFieldTheory.Local.continuous_eulerLagrangeComponent_of_regular`**, a lemma, [line 80](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/Local/FirstVariation/Regularity.lean#L80).
 
 ```lean
 lemma continuous_eulerLagrangeComponent_of_regular
@@ -70,7 +70,7 @@ lemma continuous_eulerLagrangeComponent_of_regular
     Continuous (eulerLagrangeComponent L a f)
 ```
 
-**`ClassicalFieldTheory.Local.continuous_eulerLagrangeOp_of_regular`**, a lemma, [line 89](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/Local/FirstVariation/Regularity.lean#L89).
+**`ClassicalFieldTheory.Local.continuous_eulerLagrangeOp_of_regular`**, a lemma, [line 89](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/Local/FirstVariation/Regularity.lean#L89).
 
 ```lean
 lemma continuous_eulerLagrangeOp_of_regular
@@ -81,7 +81,7 @@ lemma continuous_eulerLagrangeOp_of_regular
 
 ## B. Smooth regularity in coordinates
 
-**`ClassicalFieldTheory.Local.hasSmoothEulerLagrangeRegularity_of_contDiffCoordDerivInCoordinates`**, a lemma, [line 104](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/Local/FirstVariation/Regularity.lean#L104).
+**`ClassicalFieldTheory.Local.hasSmoothEulerLagrangeRegularity_of_contDiffCoordDerivInCoordinates`**, a lemma, [line 104](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/Local/FirstVariation/Regularity.lean#L104).
 
 ```lean
 lemma hasSmoothEulerLagrangeRegularity_of_contDiffCoordDerivInCoordinates
@@ -100,4 +100,4 @@ lemma hasSmoothEulerLagrangeRegularity_of_contDiffCoordDerivInCoordinates
 
 ## Sources
 
-- [PhyslibAlpha/ClassicalFieldTheory/Local/FirstVariation/Regularity.lean at 2a1dfe43](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/Local/FirstVariation/Regularity.lean)
+- [PhyslibAlpha/ClassicalFieldTheory/Local/FirstVariation/Regularity.lean at 8c87bdfb](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/Local/FirstVariation/Regularity.lean)

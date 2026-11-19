@@ -8,7 +8,7 @@ proof: formalized
 
 # The invariants below mass weight eight (IsFermionSector/MassWeight/MassDimLTEight)
 
-The module `PhyslibAlpha.Particles.StandardModel.IsFermionSector.MassWeight.MassDimLTEight`, [PhyslibAlpha/Particles/StandardModel/IsFermionSector/MassWeight/MassDimLTEight.lean](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/IsFermionSector/MassWeight/MassDimLTEight.lean): 41 declarations, 41 with a docstring.
+The module `PhyslibAlpha.Particles.StandardModel.IsFermionSector.MassWeight.MassDimLTEight`, [PhyslibAlpha/Particles/StandardModel/IsFermionSector/MassWeight/MassDimLTEight.lean](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/IsFermionSector/MassWeight/MassDimLTEight.lean): 41 declarations, 41 with a docstring.
 
 ## i. Overview
 
@@ -71,7 +71,7 @@ The module `PhyslibAlpha.Particles.StandardModel.IsFermionSector.MassWeight.Mass
 > recorded here. Both are contragredient, the symbols eating a covector of their value
 > space; the dotted law carries the extra complex conjugation.
 
-**`StandardModel.IsFermionSector.IsDualLeftWeyl`**, a def, [line 108](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/IsFermionSector/MassWeight/MassDimLTEight.lean#L108).
+**`StandardModel.IsFermionSector.IsDualLeftWeyl`**, a def, [line 108](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/IsFermionSector/MassWeight/MassDimLTEight.lean#L108).
 
 > A two-element family `X` of elements of `B` carries a dual undotted spinor index: it
 > transforms by the contragredient of the left-handed Weyl representation.
@@ -80,7 +80,7 @@ The module `PhyslibAlpha.Particles.StandardModel.IsFermionSector.MassWeight.Mass
 def IsDualLeftWeyl (repLorentz : Representation ℂ SL(2,ℂ) B) (X : Fin 2 → B) : Prop
 ```
 
-**`StandardModel.IsFermionSector.IsDualRightWeyl`**, a def, [line 114](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/IsFermionSector/MassWeight/MassDimLTEight.lean#L114).
+**`StandardModel.IsFermionSector.IsDualRightWeyl`**, a def, [line 114](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/IsFermionSector/MassWeight/MassDimLTEight.lean#L114).
 
 > A two-element family `Y` of elements of `B` carries a dual dotted spinor index: it
 > transforms by the contragredient of the right-handed Weyl representation, which is the
@@ -90,7 +90,7 @@ def IsDualLeftWeyl (repLorentz : Representation ℂ SL(2,ℂ) B) (X : Fin 2 → 
 def IsDualRightWeyl (repLorentz : Representation ℂ SL(2,ℂ) B) (Y : Fin 2 → B) : Prop
 ```
 
-**`StandardModel.IsFermionSector.IsVectorDualLeftWeyl`**, a def, [line 121](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/IsFermionSector/MassWeight/MassDimLTEight.lean#L121).
+**`StandardModel.IsFermionSector.IsVectorDualLeftWeyl`**, a def, [line 121](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/IsFermionSector/MassWeight/MassDimLTEight.lean#L121).
 
 > A family `X` carrying one four-vector index and one dual undotted spinor index: the
 > once-derived form of `IsDualLeftWeyl`, the derivative slot moving by the columns of the
@@ -102,7 +102,7 @@ def IsVectorDualLeftWeyl (repLorentz : Representation ℂ SL(2,ℂ) B)
     (X : (Fin 1 ⊕ Fin 3) → Fin 2 → B) : Prop
 ```
 
-**`StandardModel.IsFermionSector.IsVectorDualRightWeyl`**, a def, [line 128](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/IsFermionSector/MassWeight/MassDimLTEight.lean#L128).
+**`StandardModel.IsFermionSector.IsVectorDualRightWeyl`**, a def, [line 128](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/IsFermionSector/MassWeight/MassDimLTEight.lean#L128).
 
 > A family `Y` carrying one four-vector index and one dual dotted spinor index: the
 > once-derived form of `IsDualRightWeyl`.
@@ -121,7 +121,7 @@ def IsVectorDualRightWeyl (repLorentz : Representation ℂ SL(2,ℂ) B)
 > second factor. The representation being multiplicative is all that is needed, the two
 > factors transforming independently.
 
-**`StandardModel.IsFermionSector.isDualLeftRightWeyl_mul`**, a lemma, [line 152](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/IsFermionSector/MassWeight/MassDimLTEight.lean#L152).
+**`StandardModel.IsFermionSector.isDualLeftRightWeyl_mul`**, a lemma, [line 152](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/IsFermionSector/MassWeight/MassDimLTEight.lean#L152).
 
 > An undotted family times a dotted one is a dual left-right Weyl family.
 
@@ -132,7 +132,7 @@ lemma isDualLeftRightWeyl_mul {X Y : Fin 2 → B} (hX : IsDualLeftWeyl repLorent
       (ofPairComponents (k := .downL) (k' := .downR) fun a b => X a * Y b)
 ```
 
-**`StandardModel.IsFermionSector.isDualLeftRightWeyl_mul_swap`**, a lemma, [line 166](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/IsFermionSector/MassWeight/MassDimLTEight.lean#L166).
+**`StandardModel.IsFermionSector.isDualLeftRightWeyl_mul_swap`**, a lemma, [line 166](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/IsFermionSector/MassWeight/MassDimLTEight.lean#L166).
 
 > A dotted family times an undotted one is a dual left-right Weyl family, the two
 > spinor slots exchanged.
@@ -144,7 +144,7 @@ lemma isDualLeftRightWeyl_mul_swap {X Y : Fin 2 → B} (hX : IsDualRightWeyl rep
       (ofPairComponents (k := .downL) (k' := .downR) fun a b => X b * Y a)
 ```
 
-**`StandardModel.IsFermionSector.isVectorDualLeftRightWeyl_mul`**, a lemma, [line 181](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/IsFermionSector/MassWeight/MassDimLTEight.lean#L181).
+**`StandardModel.IsFermionSector.isVectorDualLeftRightWeyl_mul`**, a lemma, [line 181](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/IsFermionSector/MassWeight/MassDimLTEight.lean#L181).
 
 > An undotted family times a once-derived dotted one is a vector dual left-right Weyl
 > family: the derivative supplies the four-vector index.
@@ -156,7 +156,7 @@ lemma isVectorDualLeftRightWeyl_mul {X : Fin 2 → B} {Y : (Fin 1 ⊕ Fin 3) →
       (ofDualVectorComponents fun p => X p.2.1 * Y p.1 p.2.2)
 ```
 
-**`StandardModel.IsFermionSector.isVectorDualLeftRightWeyl_mul_swap`**, a lemma, [line 199](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/IsFermionSector/MassWeight/MassDimLTEight.lean#L199).
+**`StandardModel.IsFermionSector.isVectorDualLeftRightWeyl_mul_swap`**, a lemma, [line 199](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/IsFermionSector/MassWeight/MassDimLTEight.lean#L199).
 
 > A dotted family times a once-derived undotted one is a vector dual left-right Weyl
 > family, the two spinor slots exchanged.
@@ -175,7 +175,7 @@ lemma isVectorDualLeftRightWeyl_mul_swap {X : Fin 2 → B} {Y : (Fin 1 ⊕ Fin 3
 > group, so `ReducesInvariantsTo.biSup` combines the reductions over a finite family of them,
 > as in the gauge sector, and a whole join is discarded from a Lorentz-stable submodule.
 
-**`StandardModel.IsFermionSector.mem_of_lorentz_invariant_biSup_dualLeftRightWeyl_span`**, a lemma, [line 237](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/IsFermionSector/MassWeight/MassDimLTEight.lean#L237).
+**`StandardModel.IsFermionSector.mem_of_lorentz_invariant_biSup_dualLeftRightWeyl_span`**, a lemma, [line 237](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/IsFermionSector/MassWeight/MassDimLTEight.lean#L237).
 
 > A finite join of the spans of dual left-right Weyl families carries no Lorentz
 > invariant modulo a Lorentz-stable submodule: such a family has no invariant, so each span
@@ -191,7 +191,7 @@ lemma mem_of_lorentz_invariant_biSup_dualLeftRightWeyl_span {ι : Type} [Decidab
     (hinv : ∀ g : SL(2,ℂ), repLorentz g x = x) : x ∈ S
 ```
 
-**`StandardModel.IsFermionSector.mem_of_lorentz_invariant_iSup_dualLeftRightWeyl_span`**, a lemma, [line 252](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/IsFermionSector/MassWeight/MassDimLTEight.lean#L252).
+**`StandardModel.IsFermionSector.mem_of_lorentz_invariant_iSup_dualLeftRightWeyl_span`**, a lemma, [line 252](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/IsFermionSector/MassWeight/MassDimLTEight.lean#L252).
 
 > The version of `mem_of_lorentz_invariant_biSup_dualLeftRightWeyl_span` joining over a
 > whole finite index type.
@@ -215,7 +215,7 @@ lemma mem_of_lorentz_invariant_iSup_dualLeftRightWeyl_span {ι : Type} [Fintype 
 > and `rightComp` present every fermion component as a two-element family in its spinor
 > index, which is the shape section A asks for.
 
-**`StandardModel.IsFermionSector.LeftIdx`**, an inductive, [line 281](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/IsFermionSector/MassWeight/MassDimLTEight.lean#L281).
+**`StandardModel.IsFermionSector.LeftIdx`**, an inductive, [line 281](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/IsFermionSector/MassWeight/MassDimLTEight.lean#L281).
 
 > An index for the components of the five undotted fermion species: the generation
 > together with the colour and isospin the species carries.
@@ -230,7 +230,7 @@ inductive LeftIdx
   deriving DecidableEq, Fintype
 ```
 
-**`StandardModel.IsFermionSector.RightIdx`**, an inductive, [line 291](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/IsFermionSector/MassWeight/MassDimLTEight.lean#L291).
+**`StandardModel.IsFermionSector.RightIdx`**, an inductive, [line 291](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/IsFermionSector/MassWeight/MassDimLTEight.lean#L291).
 
 > An index for the components of the five dotted fermion species: the generation
 > together with the colour and isospin the species carries.
@@ -245,7 +245,7 @@ inductive RightIdx
   deriving DecidableEq, Fintype
 ```
 
-**`StandardModel.IsFermionSector.leftComp`**, a def, [line 328](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/IsFermionSector/MassWeight/MassDimLTEight.lean#L328).
+**`StandardModel.IsFermionSector.leftComp`**, a def, [line 328](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/IsFermionSector/MassWeight/MassDimLTEight.lean#L328).
 
 > The components of the five undotted species at the derivative slots `l`, presented as
 > a two-element family in the spinor index.
@@ -256,7 +256,7 @@ noncomputable def leftComp (h : IsFermionSector B repGauge hrepGauge_mul repLore
     {n : ℕ} (l : Fin n → Fin 1 ⊕ Fin 3) : LeftIdx → Fin 2 → B
 ```
 
-**`StandardModel.IsFermionSector.rightComp`**, a def, [line 340](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/IsFermionSector/MassWeight/MassDimLTEight.lean#L340).
+**`StandardModel.IsFermionSector.rightComp`**, a def, [line 340](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/IsFermionSector/MassWeight/MassDimLTEight.lean#L340).
 
 > The components of the five dotted species at the derivative slots `l`, presented as a
 > two-element family in the spinor index.
@@ -267,7 +267,7 @@ noncomputable def rightComp (h : IsFermionSector B repGauge hrepGauge_mul repLor
     {n : ℕ} (l : Fin n → Fin 1 ⊕ Fin 3) : RightIdx → Fin 2 → B
 ```
 
-**`StandardModel.IsFermionSector.isDualLeftWeyl_leftComp`**, a lemma, [line 351](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/IsFermionSector/MassWeight/MassDimLTEight.lean#L351).
+**`StandardModel.IsFermionSector.isDualLeftWeyl_leftComp`**, a lemma, [line 351](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/IsFermionSector/MassWeight/MassDimLTEight.lean#L351).
 
 > Every undotted component family carries a dual undotted spinor index, at zero
 > covariant derivatives.
@@ -277,7 +277,7 @@ lemma isDualLeftWeyl_leftComp (i : LeftIdx) :
     IsDualLeftWeyl repLorentz (h.leftComp ![] i)
 ```
 
-**`StandardModel.IsFermionSector.isDualRightWeyl_rightComp`**, a lemma, [line 362](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/IsFermionSector/MassWeight/MassDimLTEight.lean#L362).
+**`StandardModel.IsFermionSector.isDualRightWeyl_rightComp`**, a lemma, [line 362](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/IsFermionSector/MassWeight/MassDimLTEight.lean#L362).
 
 > Every dotted component family carries a dual dotted spinor index, at zero covariant
 > derivatives.
@@ -294,7 +294,7 @@ lemma isDualRightWeyl_rightComp (i : RightIdx) :
 > Collecting the ten ranges into the two chirality spans is then a matter of naming the
 > right index.
 
-**`StandardModel.IsFermionSector.leftSpan`**, a def, [line 384](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/IsFermionSector/MassWeight/MassDimLTEight.lean#L384).
+**`StandardModel.IsFermionSector.leftSpan`**, a def, [line 384](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/IsFermionSector/MassWeight/MassDimLTEight.lean#L384).
 
 > The join of the lines through the components of the five undotted species.
 
@@ -304,7 +304,7 @@ noncomputable def leftSpan (h : IsFermionSector B repGauge hrepGauge_mul repLore
     {n : ℕ} (l : Fin n → Fin 1 ⊕ Fin 3) : Submodule ℂ B
 ```
 
-**`StandardModel.IsFermionSector.rightSpan`**, a def, [line 390](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/IsFermionSector/MassWeight/MassDimLTEight.lean#L390).
+**`StandardModel.IsFermionSector.rightSpan`**, a def, [line 390](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/IsFermionSector/MassWeight/MassDimLTEight.lean#L390).
 
 > The join of the lines through the components of the five dotted species.
 
@@ -314,7 +314,7 @@ noncomputable def rightSpan (h : IsFermionSector B repGauge hrepGauge_mul repLor
     {n : ℕ} (l : Fin n → Fin 1 ⊕ Fin 3) : Submodule ℂ B
 ```
 
-**`StandardModel.IsFermionSector.dualBasis_apply`**, a lemma, [line 396](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/IsFermionSector/MassWeight/MassDimLTEight.lean#L396).
+**`StandardModel.IsFermionSector.dualBasis_apply`**, a lemma, [line 396](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/IsFermionSector/MassWeight/MassDimLTEight.lean#L396).
 
 > A basis vector of the dual basis is the matching coordinate functional.
 
@@ -323,7 +323,7 @@ lemma dualBasis_apply {ι M : Type} [AddCommGroup M] [Module ℂ M] [Fintype ι]
     [DecidableEq ι] (b : Module.Basis ι ℂ M) (j : ι) : b.dualBasis j = b.coord j
 ```
 
-**`StandardModel.IsFermionSector.range_bard_le_leftSpan`**, a lemma, [line 401](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/IsFermionSector/MassWeight/MassDimLTEight.lean#L401).
+**`StandardModel.IsFermionSector.range_bard_le_leftSpan`**, a lemma, [line 401](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/IsFermionSector/MassWeight/MassDimLTEight.lean#L401).
 
 > The range of the `bard` symbols lies in the undotted span.
 
@@ -332,7 +332,7 @@ lemma range_bard_le_leftSpan (f : Fin 3) {n : ℕ} (l : Fin n → Fin 1 ⊕ Fin 
     LinearMap.range (bard f l) ≤ h.leftSpan l
 ```
 
-**`StandardModel.IsFermionSector.range_baru_le_leftSpan`**, a lemma, [line 410](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/IsFermionSector/MassWeight/MassDimLTEight.lean#L410).
+**`StandardModel.IsFermionSector.range_baru_le_leftSpan`**, a lemma, [line 410](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/IsFermionSector/MassWeight/MassDimLTEight.lean#L410).
 
 > The range of the `baru` symbols lies in the undotted span.
 
@@ -341,7 +341,7 @@ lemma range_baru_le_leftSpan (f : Fin 3) {n : ℕ} (l : Fin n → Fin 1 ⊕ Fin 
     LinearMap.range (baru f l) ≤ h.leftSpan l
 ```
 
-**`StandardModel.IsFermionSector.range_Q_le_leftSpan`**, a lemma, [line 419](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/IsFermionSector/MassWeight/MassDimLTEight.lean#L419).
+**`StandardModel.IsFermionSector.range_Q_le_leftSpan`**, a lemma, [line 419](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/IsFermionSector/MassWeight/MassDimLTEight.lean#L419).
 
 > The range of the `Q` symbols lies in the undotted span.
 
@@ -350,7 +350,7 @@ lemma range_Q_le_leftSpan (f : Fin 3) {n : ℕ} (l : Fin n → Fin 1 ⊕ Fin 3) 
     LinearMap.range (Q f l) ≤ h.leftSpan l
 ```
 
-**`StandardModel.IsFermionSector.range_L_le_leftSpan`**, a lemma, [line 428](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/IsFermionSector/MassWeight/MassDimLTEight.lean#L428).
+**`StandardModel.IsFermionSector.range_L_le_leftSpan`**, a lemma, [line 428](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/IsFermionSector/MassWeight/MassDimLTEight.lean#L428).
 
 > The range of the `L` symbols lies in the undotted span.
 
@@ -359,7 +359,7 @@ lemma range_L_le_leftSpan (f : Fin 3) {n : ℕ} (l : Fin n → Fin 1 ⊕ Fin 3) 
     LinearMap.range (L f l) ≤ h.leftSpan l
 ```
 
-**`StandardModel.IsFermionSector.range_bare_le_leftSpan`**, a lemma, [line 437](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/IsFermionSector/MassWeight/MassDimLTEight.lean#L437).
+**`StandardModel.IsFermionSector.range_bare_le_leftSpan`**, a lemma, [line 437](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/IsFermionSector/MassWeight/MassDimLTEight.lean#L437).
 
 > The range of the `bare` symbols lies in the undotted span.
 
@@ -368,7 +368,7 @@ lemma range_bare_le_leftSpan (f : Fin 3) {n : ℕ} (l : Fin n → Fin 1 ⊕ Fin 
     LinearMap.range (bare f l) ≤ h.leftSpan l
 ```
 
-**`StandardModel.IsFermionSector.range_d_le_rightSpan`**, a lemma, [line 446](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/IsFermionSector/MassWeight/MassDimLTEight.lean#L446).
+**`StandardModel.IsFermionSector.range_d_le_rightSpan`**, a lemma, [line 446](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/IsFermionSector/MassWeight/MassDimLTEight.lean#L446).
 
 > The range of the `d` symbols lies in the dotted span.
 
@@ -377,7 +377,7 @@ lemma range_d_le_rightSpan (f : Fin 3) {n : ℕ} (l : Fin n → Fin 1 ⊕ Fin 3)
     LinearMap.range (d f l) ≤ h.rightSpan l
 ```
 
-**`StandardModel.IsFermionSector.range_u_le_rightSpan`**, a lemma, [line 455](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/IsFermionSector/MassWeight/MassDimLTEight.lean#L455).
+**`StandardModel.IsFermionSector.range_u_le_rightSpan`**, a lemma, [line 455](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/IsFermionSector/MassWeight/MassDimLTEight.lean#L455).
 
 > The range of the `u` symbols lies in the dotted span.
 
@@ -386,7 +386,7 @@ lemma range_u_le_rightSpan (f : Fin 3) {n : ℕ} (l : Fin n → Fin 1 ⊕ Fin 3)
     LinearMap.range (u f l) ≤ h.rightSpan l
 ```
 
-**`StandardModel.IsFermionSector.range_barQ_le_rightSpan`**, a lemma, [line 464](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/IsFermionSector/MassWeight/MassDimLTEight.lean#L464).
+**`StandardModel.IsFermionSector.range_barQ_le_rightSpan`**, a lemma, [line 464](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/IsFermionSector/MassWeight/MassDimLTEight.lean#L464).
 
 > The range of the `barQ` symbols lies in the dotted span.
 
@@ -395,7 +395,7 @@ lemma range_barQ_le_rightSpan (f : Fin 3) {n : ℕ} (l : Fin n → Fin 1 ⊕ Fin
     LinearMap.range (barQ f l) ≤ h.rightSpan l
 ```
 
-**`StandardModel.IsFermionSector.range_barL_le_rightSpan`**, a lemma, [line 473](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/IsFermionSector/MassWeight/MassDimLTEight.lean#L473).
+**`StandardModel.IsFermionSector.range_barL_le_rightSpan`**, a lemma, [line 473](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/IsFermionSector/MassWeight/MassDimLTEight.lean#L473).
 
 > The range of the `barL` symbols lies in the dotted span.
 
@@ -404,7 +404,7 @@ lemma range_barL_le_rightSpan (f : Fin 3) {n : ℕ} (l : Fin n → Fin 1 ⊕ Fin
     LinearMap.range (barL f l) ≤ h.rightSpan l
 ```
 
-**`StandardModel.IsFermionSector.range_e_le_rightSpan`**, a lemma, [line 482](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/IsFermionSector/MassWeight/MassDimLTEight.lean#L482).
+**`StandardModel.IsFermionSector.range_e_le_rightSpan`**, a lemma, [line 482](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/IsFermionSector/MassWeight/MassDimLTEight.lean#L482).
 
 > The range of the `e` symbols lies in the dotted span.
 
@@ -438,7 +438,7 @@ lemma range_e_le_rightSpan (f : Fin 3) {n : ℕ} (l : Fin n → Fin 1 ⊕ Fin 3)
 > of the same chirality. The fermion masses have to come from somewhere else, and they do —
 > from the Yukawa sector, where the Higgs doublet supplies the missing index.
 
-**`StandardModel.IsFermionSector.mul_le_iSup_span_pair`**, a lemma, [line 526](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/IsFermionSector/MassWeight/MassDimLTEight.lean#L526).
+**`StandardModel.IsFermionSector.mul_le_iSup_span_pair`**, a lemma, [line 526](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/IsFermionSector/MassWeight/MassDimLTEight.lean#L526).
 
 > If `V` lies in the join of the lines through an undotted family and `W` in the join
 > for a dotted one, the product lies in the join of the spans of the pair families.
@@ -450,7 +450,7 @@ lemma mul_le_iSup_span_pair {ι κ : Type} {X : ι → Fin 2 → B} {Y : κ → 
     V * W ≤ ⨆ (p : ι × κ) (l : Fin 2 × Fin 2), ℂ ∙ (X p.1 l.1 * Y p.2 l.2)
 ```
 
-**`StandardModel.IsFermionSector.mul_le_iSup_span_pair_swap`**, a lemma, [line 538](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/IsFermionSector/MassWeight/MassDimLTEight.lean#L538).
+**`StandardModel.IsFermionSector.mul_le_iSup_span_pair_swap`**, a lemma, [line 538](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/IsFermionSector/MassWeight/MassDimLTEight.lean#L538).
 
 > The mirror of `mul_le_iSup_span_pair` with the two spinor slots exchanged, for a
 > product whose left factor is the dotted one.
@@ -462,7 +462,7 @@ lemma mul_le_iSup_span_pair_swap {ι κ : Type} {X : ι → Fin 2 → B} {Y : κ
     V * W ≤ ⨆ (p : ι × κ) (l : Fin 2 × Fin 2), ℂ ∙ (X p.1 l.2 * Y p.2 l.1)
 ```
 
-**`StandardModel.IsFermionSector.sixFamily`**, a def, [line 551](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/IsFermionSector/MassWeight/MassDimLTEight.lean#L551).
+**`StandardModel.IsFermionSector.sixFamily`**, a def, [line 551](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/IsFermionSector/MassWeight/MassDimLTEight.lean#L551).
 
 > The mass-weight six families: a product of two underived components of opposite
 > chirality, in either order.
@@ -473,7 +473,7 @@ noncomputable def sixFamily (h : IsFermionSector B repGauge hrepGauge_mul repLor
     (LeftIdx × RightIdx) ⊕ (RightIdx × LeftIdx) → Fin 2 × Fin 2 → B
 ```
 
-**`StandardModel.IsFermionSector.sixSpan`**, a def, [line 558](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/IsFermionSector/MassWeight/MassDimLTEight.lean#L558).
+**`StandardModel.IsFermionSector.sixSpan`**, a def, [line 558](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/IsFermionSector/MassWeight/MassDimLTEight.lean#L558).
 
 > The join of the spans of the mass-weight six families.
 
@@ -483,7 +483,7 @@ noncomputable def sixSpan (h : IsFermionSector B repGauge hrepGauge_mul repLoren
     Submodule ℂ B
 ```
 
-**`StandardModel.IsFermionSector.isDualLeftRightWeyl_sixFamily`**, a lemma, [line 567](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/IsFermionSector/MassWeight/MassDimLTEight.lean#L567).
+**`StandardModel.IsFermionSector.isDualLeftRightWeyl_sixFamily`**, a lemma, [line 567](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/IsFermionSector/MassWeight/MassDimLTEight.lean#L567).
 
 > Each mass-weight six family carries one dual undotted and one dual dotted spinor
 > index.
@@ -495,7 +495,7 @@ lemma isDualLeftRightWeyl_sixFamily
       (ofPairComponents (k := .downL) (k' := .downR) fun a b => h.sixFamily i (a, b))
 ```
 
-**`StandardModel.IsFermionSector.mul_le_sixSpan_left`**, a lemma, [line 581](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/IsFermionSector/MassWeight/MassDimLTEight.lean#L581).
+**`StandardModel.IsFermionSector.mul_le_sixSpan_left`**, a lemma, [line 581](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/IsFermionSector/MassWeight/MassDimLTEight.lean#L581).
 
 > An undotted range times a dotted one lies in the mass-weight six span.
 
@@ -504,7 +504,7 @@ lemma mul_le_sixSpan_left {V W : Submodule ℂ B} (hV : V ≤ h.leftSpan ![])
     (hW : W ≤ h.rightSpan ![]) : V * W ≤ h.sixSpan
 ```
 
-**`StandardModel.IsFermionSector.mul_le_sixSpan_right`**, a lemma, [line 588](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/IsFermionSector/MassWeight/MassDimLTEight.lean#L588).
+**`StandardModel.IsFermionSector.mul_le_sixSpan_right`**, a lemma, [line 588](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/IsFermionSector/MassWeight/MassDimLTEight.lean#L588).
 
 > A dotted range times an undotted one lies in the mass-weight six span.
 
@@ -513,7 +513,7 @@ lemma mul_le_sixSpan_right {V W : Submodule ℂ B} (hV : V ≤ h.rightSpan ![])
     (hW : W ≤ h.leftSpan ![]) : V * W ≤ h.sixSpan
 ```
 
-**`StandardModel.IsFermionSector.massWeightSubmoduleGaugeWeightSix_piece_zero_le`**, a lemma, [line 597](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/IsFermionSector/MassWeight/MassDimLTEight.lean#L597).
+**`StandardModel.IsFermionSector.massWeightSubmoduleGaugeWeightSix_piece_zero_le`**, a lemma, [line 597](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/IsFermionSector/MassWeight/MassDimLTEight.lean#L597).
 
 > The weight-zero piece at mass weight six lies in the span of the mass-weight six
 > families: each of the ten conjugate pairings is a product of an undotted range with a
@@ -524,7 +524,7 @@ lemma massWeightSubmoduleGaugeWeightSix_piece_zero_le :
     (h.massWeightSubmoduleGaugeWeightSix).piece 0 ≤ h.sixSpan
 ```
 
-**`StandardModel.IsFermionSector.mem_of_invariant_of_mem_massWeightSubmoduleSix_sup`**, a lemma, [line 629](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/IsFermionSector/MassWeight/MassDimLTEight.lean#L629).
+**`StandardModel.IsFermionSector.mem_of_invariant_of_mem_massWeightSubmoduleSix_sup`**, a lemma, [line 629](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/IsFermionSector/MassWeight/MassDimLTEight.lean#L629).
 
 > Mass weight six carries no invariant modulo a stable submodule: there is no Dirac
 > mass term. A gauge- and Lorentz-invariant element of `massWeightSubmodule 6 ⊔ S` lies
@@ -553,7 +553,7 @@ lemma mem_of_invariant_of_mem_massWeightSubmoduleSix_sup {S : Submodule ℂ B}
 > `one_le_massWeightSubmodule_zero`, and `1` is fixed by both groups, the two
 > representations being multiplicative, without lying in any given `S`.
 
-**`StandardModel.IsFermionSector.mem_of_invariant_massWeightSubmodule_lt_eight_sup`**, a lemma, [line 664](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/IsFermionSector/MassWeight/MassDimLTEight.lean#L664).
+**`StandardModel.IsFermionSector.mem_of_invariant_massWeightSubmodule_lt_eight_sup`**, a lemma, [line 664](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/IsFermionSector/MassWeight/MassDimLTEight.lean#L664).
 
 > Between mass weight zero and mass weight eight the fermion sector carries no
 > invariant: an element of `massWeightSubmodule w ⊔ S` for `0 < w < 8` fixed by both
@@ -570,7 +570,7 @@ lemma mem_of_invariant_massWeightSubmodule_lt_eight_sup (w : ℕ) (hw0 : 0 < w)
     (hL : ∀ g : SL(2,ℂ), repLorentz g x = x) : x ∈ S
 ```
 
-**`StandardModel.IsFermionSector.mem_massWeightSubmodule_lt_eight_sup_and_gauge_lorentz_invariant_iff`**, a lemma, [line 687](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/IsFermionSector/MassWeight/MassDimLTEight.lean#L687).
+**`StandardModel.IsFermionSector.mem_massWeightSubmodule_lt_eight_sup_and_gauge_lorentz_invariant_iff`**, a lemma, [line 687](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/IsFermionSector/MassWeight/MassDimLTEight.lean#L687).
 
 > The classification below mass weight eight as an equivalence, in the shape of
 > `mem_massWeightSubmodule_eight_sup_and_gauge_lorentz_invariant_iff`: an element of
@@ -591,7 +591,7 @@ lemma mem_massWeightSubmodule_lt_eight_sup_and_gauge_lorentz_invariant_iff (w : 
           ∧ x = y
 ```
 
-**`StandardModel.IsFermionSector.mem_massWeightSubmodule_lt_eight_sup_and_gauge_lorentz_invariant_iff_mem`**, a lemma, [line 707](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/IsFermionSector/MassWeight/MassDimLTEight.lean#L707).
+**`StandardModel.IsFermionSector.mem_massWeightSubmodule_lt_eight_sup_and_gauge_lorentz_invariant_iff_mem`**, a lemma, [line 707](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/IsFermionSector/MassWeight/MassDimLTEight.lean#L707).
 
 > The same classification without the existential: below mass weight eight an element
 > of `massWeightSubmodule w ⊔ S` fixed by both groups is an element of `S` fixed by both
@@ -618,4 +618,4 @@ lemma mem_massWeightSubmodule_lt_eight_sup_and_gauge_lorentz_invariant_iff_mem (
 
 ## Sources
 
-- [PhyslibAlpha/Particles/StandardModel/IsFermionSector/MassWeight/MassDimLTEight.lean at 2a1dfe43](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/IsFermionSector/MassWeight/MassDimLTEight.lean)
+- [PhyslibAlpha/Particles/StandardModel/IsFermionSector/MassWeight/MassDimLTEight.lean at 8c87bdfb](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/IsFermionSector/MassWeight/MassDimLTEight.lean)

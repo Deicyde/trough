@@ -8,7 +8,7 @@ proof: formalized
 
 # Classical channels
 
-The module `PhyslibAlpha.ProbabilisticTheory.Classical.Channel`, [PhyslibAlpha/ProbabilisticTheory/Classical/Channel.lean](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ProbabilisticTheory/Classical/Channel.lean): 16 declarations (1 instance with no name), 6 with a docstring.
+The module `PhyslibAlpha.ProbabilisticTheory.Classical.Channel`, [PhyslibAlpha/ProbabilisticTheory/Classical/Channel.lean](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/Classical/Channel.lean): 16 declarations (1 instance with no name), 6 with a docstring.
 
 > Normal channels between classical systems of observables are exactly Markov kernels.
 
@@ -38,7 +38,7 @@ The module `PhyslibAlpha.ProbabilisticTheory.Classical.Channel`, [PhyslibAlpha/P
 
 ## A. Relabeling outcomes
 
-**`BoundedMeasurable.comap`**, a def, [line 63](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ProbabilisticTheory/Classical/Channel.lean#L63).
+**`BoundedMeasurable.comap`**, a def, [line 63](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/Classical/Channel.lean#L63).
 
 > Relabeling outcomes along a measurable map `g : Ω' → Ω`: the observable `f` of `Ω` becomes
 > the observable `f ∘ g` of `Ω'`.
@@ -47,14 +47,14 @@ The module `PhyslibAlpha.ProbabilisticTheory.Classical.Channel`, [PhyslibAlpha/P
 def comap (g : Ω' → Ω) (hg : Measurable g) : Channel (BoundedMeasurable Ω) (BoundedMeasurable Ω')
 ```
 
-**`BoundedMeasurable.comap_apply`**, a lemma, [line 68](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ProbabilisticTheory/Classical/Channel.lean#L68).
+**`BoundedMeasurable.comap_apply`**, a lemma, [line 68](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/Classical/Channel.lean#L68).
 
 ```lean
 lemma comap_apply (g : Ω' → Ω) (hg : Measurable g) (f : BoundedMeasurable Ω) (x : Ω') :
     comap g hg f x = f (g x)
 ```
 
-**`BoundedMeasurable.isNormal_comap`**, a lemma, [line 71](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ProbabilisticTheory/Classical/Channel.lean#L71).
+**`BoundedMeasurable.isNormal_comap`**, a lemma, [line 71](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/Classical/Channel.lean#L71).
 
 ```lean
 lemma isNormal_comap (g : Ω' → Ω) (hg : Measurable g) : (comap g hg).IsNormal
@@ -62,7 +62,7 @@ lemma isNormal_comap (g : Ω' → Ω) (hg : Measurable g) : (comap g hg).IsNorma
 
 ## B. The channel of a Markov kernel
 
-**`BoundedMeasurable.kernelAverage`**, a def, [line 81](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ProbabilisticTheory/Classical/Channel.lean#L81).
+**`BoundedMeasurable.kernelAverage`**, a def, [line 81](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/Classical/Channel.lean#L81).
 
 > The average `x ↦ ∫ f d(κ x)` of an observable `f` against a Markov kernel.
 
@@ -70,14 +70,14 @@ lemma isNormal_comap (g : Ω' → Ω) (hg : Measurable g) : (comap g hg).IsNorma
 noncomputable def kernelAverage (f : BoundedMeasurable Ω) : BoundedMeasurable Ω'
 ```
 
-**`BoundedMeasurable.kernelAverage_apply`**, a lemma, [line 85](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ProbabilisticTheory/Classical/Channel.lean#L85).
+**`BoundedMeasurable.kernelAverage_apply`**, a lemma, [line 85](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/Classical/Channel.lean#L85).
 
 ```lean
 lemma kernelAverage_apply (f : BoundedMeasurable Ω) (x : Ω') :
     kernelAverage κ f x = ∫ y, f y ∂(κ x)
 ```
 
-**`BoundedMeasurable.ofKernel`**, a def, [line 90](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ProbabilisticTheory/Classical/Channel.lean#L90).
+**`BoundedMeasurable.ofKernel`**, a def, [line 90](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/Classical/Channel.lean#L90).
 
 > The channel of a Markov kernel `κ` from `Ω'` to `Ω`: the observable `f` becomes its average
 > `x ↦ ∫ f d(κ x)`.
@@ -86,14 +86,14 @@ lemma kernelAverage_apply (f : BoundedMeasurable Ω) (x : Ω') :
 noncomputable def ofKernel : Channel (BoundedMeasurable Ω) (BoundedMeasurable Ω')
 ```
 
-**`BoundedMeasurable.ofKernel_apply`**, a lemma, [line 98](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ProbabilisticTheory/Classical/Channel.lean#L98).
+**`BoundedMeasurable.ofKernel_apply`**, a lemma, [line 98](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/Classical/Channel.lean#L98).
 
 ```lean
 lemma ofKernel_apply (f : BoundedMeasurable Ω) (x : Ω') :
     ofKernel κ f x = ∫ y, f y ∂(κ x)
 ```
 
-**`BoundedMeasurable.isNormal_ofKernel`**, a lemma, [line 101](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ProbabilisticTheory/Classical/Channel.lean#L101).
+**`BoundedMeasurable.isNormal_ofKernel`**, a lemma, [line 101](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/Classical/Channel.lean#L101).
 
 ```lean
 lemma isNormal_ofKernel : (ofKernel κ).IsNormal
@@ -101,13 +101,13 @@ lemma isNormal_ofKernel : (ofKernel κ).IsNormal
 
 ## C. The Markov kernel of a normal channel
 
-**`BoundedMeasurable.isNormal_eval_comp`**, a lemma, [line 114](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ProbabilisticTheory/Classical/Channel.lean#L114).
+**`BoundedMeasurable.isNormal_eval_comp`**, a lemma, [line 114](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/Classical/Channel.lean#L114).
 
 ```lean
 lemma isNormal_eval_comp (x : Ω') : ((eval x).comp K).IsNormal
 ```
 
-**`BoundedMeasurable.toKernel`**, a def, [line 119](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ProbabilisticTheory/Classical/Channel.lean#L119).
+**`BoundedMeasurable.toKernel`**, a def, [line 119](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/Classical/Channel.lean#L119).
 
 > The Markov kernel of a normal channel: at `x`, the outcome distribution of the state
 > `f ↦ K f x`.
@@ -116,20 +116,20 @@ lemma isNormal_eval_comp (x : Ω') : ((eval x).comp K).IsNormal
 noncomputable def toKernel : Kernel Ω' Ω
 ```
 
-**`BoundedMeasurable.toKernel_apply`**, a lemma, [line 125](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ProbabilisticTheory/Classical/Channel.lean#L125).
+**`BoundedMeasurable.toKernel_apply`**, a lemma, [line 125](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/Classical/Channel.lean#L125).
 
 ```lean
 lemma toKernel_apply {s : Set Ω} (hs : MeasurableSet s) (x : Ω') :
     toKernel K hK x s = ENNReal.ofReal (K (indicator s hs) x)
 ```
 
-**An instance with no name**, [line 129](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ProbabilisticTheory/Classical/Channel.lean#L129).
+**An instance with no name**, [line 129](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/Classical/Channel.lean#L129).
 
 ```lean
 instance : IsMarkovKernel (toKernel K hK)
 ```
 
-**`BoundedMeasurable.toMeasure_comp`**, a lemma, [line 133](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ProbabilisticTheory/Classical/Channel.lean#L133).
+**`BoundedMeasurable.toMeasure_comp`**, a lemma, [line 133](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/Classical/Channel.lean#L133).
 
 > A normal channel acts on outcome distributions by composing with its kernel.
 
@@ -141,7 +141,7 @@ lemma toMeasure_comp (σ : 𝓢[ℝ, BoundedMeasurable Ω']) (hσ : σ.IsNormal)
 
 ## D. The correspondence
 
-**`BoundedMeasurable.ofKernel_toKernel`**, a lemma, [line 149](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ProbabilisticTheory/Classical/Channel.lean#L149).
+**`BoundedMeasurable.ofKernel_toKernel`**, a lemma, [line 149](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/Classical/Channel.lean#L149).
 
 ```lean
 lemma ofKernel_toKernel (K : Channel (BoundedMeasurable Ω) (BoundedMeasurable Ω'))
@@ -149,14 +149,14 @@ lemma ofKernel_toKernel (K : Channel (BoundedMeasurable Ω) (BoundedMeasurable �
     ofKernel (toKernel K hK) = K
 ```
 
-**`BoundedMeasurable.toKernel_ofKernel`**, a lemma, [line 155](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ProbabilisticTheory/Classical/Channel.lean#L155).
+**`BoundedMeasurable.toKernel_ofKernel`**, a lemma, [line 155](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/Classical/Channel.lean#L155).
 
 ```lean
 lemma toKernel_ofKernel (κ : Kernel Ω' Ω) [IsMarkovKernel κ] :
     toKernel (ofKernel κ) (isNormal_ofKernel κ) = κ
 ```
 
-**`BoundedMeasurable.kernelEquiv`**, a def, [line 163](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ProbabilisticTheory/Classical/Channel.lean#L163).
+**`BoundedMeasurable.kernelEquiv`**, a def, [line 163](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/Classical/Channel.lean#L163).
 
 > **Normal classical channels are Markov kernels.**
 
@@ -172,4 +172,4 @@ noncomputable def kernelEquiv :
 
 ## Sources
 
-- [PhyslibAlpha/ProbabilisticTheory/Classical/Channel.lean at 2a1dfe43](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ProbabilisticTheory/Classical/Channel.lean)
+- [PhyslibAlpha/ProbabilisticTheory/Classical/Channel.lean at 8c87bdfb](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/Classical/Channel.lean)

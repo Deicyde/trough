@@ -8,7 +8,7 @@ proof: formalized
 
 # Positive-semidefinite matrix algebra
 
-The module `PhyslibAlpha.Mathematics.TauCeti.LinearAlgebra.Matrix.PosSemidef`, [PhyslibAlpha/Mathematics/TauCeti/LinearAlgebra/Matrix/PosSemidef.lean](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Mathematics/TauCeti/LinearAlgebra/Matrix/PosSemidef.lean): 7 declarations, 7 with a docstring; 1 private, not shown.
+The module `PhyslibAlpha.Mathematics.TauCeti.LinearAlgebra.Matrix.PosSemidef`, [PhyslibAlpha/Mathematics/TauCeti/LinearAlgebra/Matrix/PosSemidef.lean](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Mathematics/TauCeti/LinearAlgebra/Matrix/PosSemidef.lean): 7 declarations, 7 with a docstring; 1 private, not shown.
 
 > This file supplements Mathlib's `Matrix.PosSemidef` API for matrices indexed by arbitrary types.
 
@@ -38,7 +38,7 @@ The module `PhyslibAlpha.Mathematics.TauCeti.LinearAlgebra.Matrix.PosSemidef`, [
 
 ## A. Development
 
-**`TauCeti.posSemidef_rankOne`**, a lemma, [line 84](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Mathematics/TauCeti/LinearAlgebra/Matrix/PosSemidef.lean#L84).
+**`TauCeti.posSemidef_rankOne`**, a lemma, [line 84](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Mathematics/TauCeti/LinearAlgebra/Matrix/PosSemidef.lean#L84).
 
 > The rank-one matrix `(a, b) ↦ star (g a) · g b` is positive semidefinite for an arbitrary
 > index type. Such matrices are elementary building blocks for positive-semidefinite matrices;
@@ -50,7 +50,7 @@ lemma posSemidef_rankOne {R : Type u}
     Matrix.PosSemidef (fun a b => star (g a) * g b)
 ```
 
-**`TauCeti.posSemidef_const_one`**, a lemma, [line 94](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Mathematics/TauCeti/LinearAlgebra/Matrix/PosSemidef.lean#L94).
+**`TauCeti.posSemidef_const_one`**, a lemma, [line 94](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Mathematics/TauCeti/LinearAlgebra/Matrix/PosSemidef.lean#L94).
 
 > The constant matrix with value `1` is positive semidefinite.
 
@@ -60,7 +60,7 @@ lemma posSemidef_const_one {R : Type u}
     Matrix.PosSemidef (fun _ _ : α => (1 : R))
 ```
 
-**`TauCeti.posSemidef_const_of_nonneg`**, a lemma, [line 100](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Mathematics/TauCeti/LinearAlgebra/Matrix/PosSemidef.lean#L100).
+**`TauCeti.posSemidef_const_of_nonneg`**, a lemma, [line 100](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Mathematics/TauCeti/LinearAlgebra/Matrix/PosSemidef.lean#L100).
 
 > A nonnegative constant gives a positive-semidefinite constant matrix.
 
@@ -70,7 +70,7 @@ lemma posSemidef_const_of_nonneg {R : Type u}
     {c : R} (hc : 0 ≤ c) : Matrix.PosSemidef (fun _ _ : α => c)
 ```
 
-**`TauCeti.posSemidef_iff_finite_sum`**, a lemma, [line 110](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Mathematics/TauCeti/LinearAlgebra/Matrix/PosSemidef.lean#L110).
+**`TauCeti.posSemidef_iff_finite_sum`**, a lemma, [line 110](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Mathematics/TauCeti/LinearAlgebra/Matrix/PosSemidef.lean#L110).
 
 > The quadratic-form characterization of an arbitrary-index positive-semidefinite matrix:
 > conjugate symmetry and nonnegativity on every finite family, allowing repeated indices.
@@ -84,7 +84,7 @@ lemma posSemidef_iff_finite_sum {R : Type u} [Ring R] [PartialOrder R] [StarRing
           0 ≤ ∑ i, ∑ j, star (x i) * K (v i) (v j) * x j
 ```
 
-**`TauCeti.posSemidef_schur_finset_prod`**, a lemma, [line 147](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Mathematics/TauCeti/LinearAlgebra/Matrix/PosSemidef.lean#L147).
+**`TauCeti.posSemidef_schur_finset_prod`**, a lemma, [line 147](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Mathematics/TauCeti/LinearAlgebra/Matrix/PosSemidef.lean#L147).
 
 > Finite pointwise Schur products of positive-semidefinite matrices are positive semidefinite.
 
@@ -94,7 +94,7 @@ lemma posSemidef_schur_finset_prod {ι : Type w} {s : Finset ι}
     Matrix.PosSemidef (fun a b => ∏ i ∈ s, K i a b)
 ```
 
-**`TauCeti.posSemidef_prod_union`**, a lemma, [line 157](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Mathematics/TauCeti/LinearAlgebra/Matrix/PosSemidef.lean#L157).
+**`TauCeti.posSemidef_prod_union`**, a lemma, [line 157](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Mathematics/TauCeti/LinearAlgebra/Matrix/PosSemidef.lean#L157).
 
 > For weights `w` in `[0, 1]` and finite sets `L i`, the matrix
 > `(i, j) ↦ ∏_{a ∈ L i ∪ L j} w a` is positive semidefinite.
@@ -105,7 +105,7 @@ lemma posSemidef_prod_union {ι : Type w} [DecidableEq α] (L : ι → Finset α
     Matrix.PosSemidef (fun i j => ∏ a ∈ L i ∪ L j, w a)
 ```
 
-**`Matrix.PosSemidef.hadamard_pow`**, a lemma, [line 192](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Mathematics/TauCeti/LinearAlgebra/Matrix/PosSemidef.lean#L192).
+**`Matrix.PosSemidef.hadamard_pow`**, a lemma, [line 192](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Mathematics/TauCeti/LinearAlgebra/Matrix/PosSemidef.lean#L192).
 
 > Schur powers of a positive-semidefinite matrix are positive semidefinite.
 
@@ -121,4 +121,4 @@ Its declarations' statements use no declaration of another module with an articl
 
 ## Sources
 
-- [PhyslibAlpha/Mathematics/TauCeti/LinearAlgebra/Matrix/PosSemidef.lean at 2a1dfe43](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Mathematics/TauCeti/LinearAlgebra/Matrix/PosSemidef.lean)
+- [PhyslibAlpha/Mathematics/TauCeti/LinearAlgebra/Matrix/PosSemidef.lean at 8c87bdfb](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Mathematics/TauCeti/LinearAlgebra/Matrix/PosSemidef.lean)

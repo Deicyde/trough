@@ -8,7 +8,7 @@ proof: formalized
 
 # Local gauge data: further consequences of the laws
 
-The module `PhyslibAlpha.ClassicalFieldTheory.GaugeTheory.LocalGaugeData.Basic`, [PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/LocalGaugeData/Basic.lean](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/LocalGaugeData/Basic.lean): 7 declarations, 7 with a docstring.
+The module `PhyslibAlpha.ClassicalFieldTheory.GaugeTheory.LocalGaugeData.Basic`, [PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/LocalGaugeData/Basic.lean](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/LocalGaugeData/Basic.lean): 7 declarations, 7 with a docstring.
 
 ## i. Overview
 
@@ -43,7 +43,7 @@ The module `PhyslibAlpha.ClassicalFieldTheory.GaugeTheory.LocalGaugeData.Basic`,
 
 ## A. First consequences of the laws
 
-**`LocalGaugeData.maurerCartan_one`**, a lemma, [line 68](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/LocalGaugeData/Basic.lean#L68).
+**`LocalGaugeData.maurerCartan_one`**, a lemma, [line 68](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/LocalGaugeData/Basic.lean#L68).
 
 > The Maurer–Cartan form of the identity vanishes: the cocycle law at `1 * 1 = 1`.
 
@@ -51,7 +51,7 @@ The module `PhyslibAlpha.ClassicalFieldTheory.GaugeTheory.LocalGaugeData.Basic`,
 lemma maurerCartan_one (μ : Fin 1 ⊕ Fin 3) : jets.maurerCartan 1 μ = 0
 ```
 
-**`LocalGaugeData.maurerCartan_inv`**, a lemma, [line 75](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/LocalGaugeData/Basic.lean#L75).
+**`LocalGaugeData.maurerCartan_inv`**, a lemma, [line 75](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/LocalGaugeData/Basic.lean#L75).
 
 > The Maurer–Cartan form of an inverse: `ω_μ(U⁻¹) = − Ad_{U⁻¹} ω_μ(U)`, the cocycle
 > law applied to `U⁻¹ U = 1`.
@@ -61,7 +61,7 @@ lemma maurerCartan_inv (U : GJ) (μ : Fin 1 ⊕ Fin 3) :
     jets.maurerCartan U⁻¹ μ = - jets.adjointJ U⁻¹ (jets.maurerCartan U μ)
 ```
 
-**`LocalGaugeData.evalLie_adjointJ_ofConstantLie`**, a lemma, [line 83](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/LocalGaugeData/Basic.lean#L83).
+**`LocalGaugeData.evalLie_adjointJ_ofConstantLie`**, a lemma, [line 83](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/LocalGaugeData/Basic.lean#L83).
 
 > At the base point, the adjoint action of a jet on a constant is the adjoint action of
 > its value.
@@ -71,7 +71,7 @@ lemma evalLie_adjointJ_ofConstantLie (U : GJ) (a : 𝔤) :
     jets.evalLie (jets.adjointJ U (jets.ofConstantLie a)) = jets.adjoint (jets.eval U) a
 ```
 
-**`LocalGaugeData.maurerCartan_eq_of_deriv_adjointJ`**, a lemma, [line 95](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/LocalGaugeData/Basic.lean#L95).
+**`LocalGaugeData.maurerCartan_eq_of_deriv_adjointJ`**, a lemma, [line 95](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/LocalGaugeData/Basic.lean#L95).
 
 > The Maurer–Cartan form is determined by the Leibniz rule, up to the centre. Since
 > `adjointJ U` is invertible, `deriv_adjointJ` says exactly that the inner derivation
@@ -94,7 +94,7 @@ lemma maurerCartan_eq_of_deriv_adjointJ
 
 ## B. The Taylor data of a bracket
 
-**`LocalGaugeData.evalLie_iteratedDeriv_bracket_congr`**, a lemma, [line 122](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/LocalGaugeData/Basic.lean#L122).
+**`LocalGaugeData.evalLie_iteratedDeriv_bracket_congr`**, a lemma, [line 122](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/LocalGaugeData/Basic.lean#L122).
 
 > The base-point Taylor data of a bracket is determined by that of its arguments.
 > If the base-point values of the iterated derivatives of `a` and `b` along sub-multisets
@@ -119,7 +119,7 @@ lemma evalLie_iteratedDeriv_bracket_congr (w : Multiset (Fin 1 ⊕ Fin 3)) (a b 
 > any matrix group and for its truncations, but are recorded separately from the structure
 > because the covariance theory does not need them.
 
-**`LocalGaugeData.Faithful`**, a class, [line 150](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/LocalGaugeData/Basic.lean#L150).
+**`LocalGaugeData.Faithful`**, a class, [line 150](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/LocalGaugeData/Basic.lean#L150).
 
 > A package is faithful when an element of `𝔤J` is determined by the base-point values
 > of its iterated derivatives (Taylor determinacy) and a jet with vanishing Maurer–Cartan
@@ -134,7 +134,7 @@ class Faithful (jets : LocalGaugeData G₀ 𝔤 GJ 𝔤J) : Prop where
     jets.maurerCartan U = 0 → U = jets.ofConstant (jets.eval U)
 ```
 
-**`LocalGaugeData.ext_of_evalLie_iteratedDeriv`**, a lemma, [line 158](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/LocalGaugeData/Basic.lean#L158).
+**`LocalGaugeData.ext_of_evalLie_iteratedDeriv`**, a lemma, [line 158](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/LocalGaugeData/Basic.lean#L158).
 
 > Taylor determinacy of a faithful package, in the form of an extensionality lemma.
 
@@ -155,4 +155,4 @@ lemma ext_of_evalLie_iteratedDeriv [jets.Faithful] {x y : 𝔤J}
 
 ## Sources
 
-- [PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/LocalGaugeData/Basic.lean at 2a1dfe43](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/LocalGaugeData/Basic.lean)
+- [PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/LocalGaugeData/Basic.lean at 8c87bdfb](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/LocalGaugeData/Basic.lean)

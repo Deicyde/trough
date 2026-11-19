@@ -8,7 +8,7 @@ proof: formalized
 
 # Unit systems, parametrised in a dimension basis
 
-The module `Physlib.Units.UnitSystem`, [Physlib/Units/UnitSystem.lean](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/Units/UnitSystem.lean): 10 declarations (1 instance with no name), 8 with a docstring, 1 listed as significant; 5 private, not shown.
+The module `Physlib.Units.UnitSystem`, [Physlib/Units/UnitSystem.lean](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Units/UnitSystem.lean): 10 declarations (1 instance with no name), 8 with a docstring, 1 listed as significant; 5 private, not shown.
 
 > A **unit system** is the everyday physics object: a rule fixing one concrete unit for
 > each base quantity. SI fixes the metre for length, the second for time, the kilogram for
@@ -51,7 +51,7 @@ The module `Physlib.Units.UnitSystem`, [Physlib/Units/UnitSystem.lean](https://g
 > dimension-parametrisation PR; it is the only design that keeps *both* basis-genericity and
 > typed-unit safety.
 
-**`UnitMagnitudeCatalog`**, a class, [line 66](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/Units/UnitSystem.lean#L66).
+**`UnitMagnitudeCatalog`**, a class, [line 66](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Units/UnitSystem.lean#L66).
 
 > A **menu of typed units** for a basis `B`: for each base dimension `b : B`, a *type*
 > `Unit b` of admissible units (a dimension may offer several — metre, kilometre, …) and a
@@ -69,7 +69,7 @@ class UnitMagnitudeCatalog (B : Type) where
   mag_pos : ∀ {b : B} (u : Unit b), 0 < mag u
 ```
 
-**`UnitSystem`**, a def, [line 78](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/Units/UnitSystem.lean#L78).
+**`UnitSystem`**, a def, [line 78](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Units/UnitSystem.lean#L78).
 
 > A **unit system** over a basis `B` with a `UnitMagnitudeCatalog`: one typed unit chosen
 > per base dimension — the pick off the catalog's menu, and the formal counterpart of SI,
@@ -80,7 +80,7 @@ class UnitMagnitudeCatalog (B : Type) where
 def UnitSystem (B : Type) [UnitMagnitudeCatalog B]
 ```
 
-**`UnitSystem.ext`**, a theorem, [line 87](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/Units/UnitSystem.lean#L87). Listed as a significant result in [Theorems.txt](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/scripts/lint/exemptions/Theorems.txt).
+**`UnitSystem.ext`**, a theorem, [line 87](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Units/UnitSystem.lean#L87). Listed as a significant result in [Theorems.txt](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/scripts/lint/exemptions/Theorems.txt).
 
 > Two unit systems agree once they pick the same unit at every base dimension: `UnitSystem`
 > is extensional, as befits a choice-per-dimension.
@@ -89,7 +89,7 @@ def UnitSystem (B : Type) [UnitMagnitudeCatalog B]
 theorem ext {u v : UnitSystem B} (h : ∀ b, u b = v b) : u = v
 ```
 
-**`UnitSystem.toScale`**, a def, [line 91](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/Units/UnitSystem.lean#L91).
+**`UnitSystem.toScale`**, a def, [line 91](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Units/UnitSystem.lean#L91).
 
 > Forget a unit system to its magnitude layer `UnitScale B`: keep each chosen unit's
 > magnitude, drop its type — the layer where `UnitScale.dimScale` is already proved.
@@ -98,7 +98,7 @@ theorem ext {u v : UnitSystem B} (h : ∀ b, u b = v b) : u = v
 noncomputable def toScale (u : UnitSystem B) : UnitScale B
 ```
 
-**`UnitSystem.toScale_scale`**, a lemma, [line 96](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/Units/UnitSystem.lean#L96).
+**`UnitSystem.toScale_scale`**, a lemma, [line 96](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Units/UnitSystem.lean#L96).
 
 ```lean
 lemma toScale_scale (u : UnitSystem B) (b : B) :
@@ -112,7 +112,7 @@ lemma toScale_scale (u : UnitSystem B) (b : B) :
 > `u .length : LengthUnit`, `LengthUnit.meters`, … all still work — and a `MassUnit` cannot
 > be placed in the length slot.
 
-**An instance with no name**, [line 112](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/Units/UnitSystem.lean#L112).
+**An instance with no name**, [line 112](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Units/UnitSystem.lean#L112).
 
 ```lean
 noncomputable instance : UnitMagnitudeCatalog LTMCTDimensionBase
@@ -123,7 +123,7 @@ noncomputable instance : UnitMagnitudeCatalog LTMCTDimensionBase
 > The bespoke five-field record and the generic unit system over the default basis carry
 > the same data.
 
-**`LTMCTUnitChoices.equivUnitSystem`**, a def, [line 150](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/Units/UnitSystem.lean#L150).
+**`LTMCTUnitChoices.equivUnitSystem`**, a def, [line 150](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Units/UnitSystem.lean#L150).
 
 > The bespoke five-field `LTMCTUnitChoices` and the generic `UnitSystem LTMCTDimensionBase`
 > are the same data.
@@ -132,7 +132,7 @@ noncomputable instance : UnitMagnitudeCatalog LTMCTDimensionBase
 def equivUnitSystem : LTMCTUnitChoices ≃ UnitSystem LTMCTDimensionBase
 ```
 
-**`LTMCTUnitChoices.toScale_equivUnitSystem`**, a lemma, [line 169](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/Units/UnitSystem.lean#L169).
+**`LTMCTUnitChoices.toScale_equivUnitSystem`**, a lemma, [line 169](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Units/UnitSystem.lean#L169).
 
 > The typed generic projection agrees with the bespoke `LTMCTUnitChoices.toScale`: reading
 > `LTMCTUnitChoices` as a `UnitSystem` and forgetting to the magnitude layer is the same as
@@ -151,7 +151,7 @@ lemma toScale_equivUnitSystem (u : LTMCTUnitChoices) :
 > typed layer a *faithful* wrapper rather than a second, independent statement of the
 > scaling law: there is one source of truth, the generic fold on `UnitScale B`.
 
-**`prod_univ_LTMCTDimensionBase`**, a lemma, [line 193](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/Units/UnitSystem.lean#L193).
+**`prod_univ_LTMCTDimensionBase`**, a lemma, [line 193](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Units/UnitSystem.lean#L193).
 
 > The product over the five default base quantities, in canonical enumeration order — a
 > reusable fact about the `Fintype` enumeration of `LTMCTDimensionBase`, for folding
@@ -163,7 +163,7 @@ lemma prod_univ_LTMCTDimensionBase {M : Type} [CommMonoid M]
     ∏ b, f b = f .length * f .time * f .mass * f .charge * f .temperature
 ```
 
-**`LTMCTUnitChoices.dimScale_eq_toScale_dimScale`**, a lemma, [line 227](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/Units/UnitSystem.lean#L227).
+**`LTMCTUnitChoices.dimScale_eq_toScale_dimScale`**, a lemma, [line 227](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Units/UnitSystem.lean#L227).
 
 > The hand-rolled five-factor `LTMCTUnitChoices.dimScale` equals the basis-generic
 > `UnitScale.dimScale` fold at `LTMCTDimensionBase`, applied to `toScale`. The scaling law
@@ -180,4 +180,4 @@ lemma dimScale_eq_toScale_dimScale (u1 u2 : LTMCTUnitChoices) (d : Dimension LTM
 
 ## Sources
 
-- [Physlib/Units/UnitSystem.lean at 2a1dfe43](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/Units/UnitSystem.lean)
+- [Physlib/Units/UnitSystem.lean at 8c87bdfb](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Units/UnitSystem.lean)

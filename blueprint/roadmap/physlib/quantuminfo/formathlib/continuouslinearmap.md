@@ -8,7 +8,7 @@ proof: formalized
 
 # Continuous linear maps
 
-The module `QuantumInfo.ForMathlib.ContinuousLinearMap`, [QuantumInfo/ForMathlib/ContinuousLinearMap.lean](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/QuantumInfo/ForMathlib/ContinuousLinearMap.lean): 2 declarations, 1 with a docstring, 1 listed as significant.
+The module `QuantumInfo.ForMathlib.ContinuousLinearMap`, [QuantumInfo/ForMathlib/ContinuousLinearMap.lean](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/QuantumInfo/ForMathlib/ContinuousLinearMap.lean): 2 declarations, 1 with a docstring, 1 listed as significant.
 
 > This file collects auxiliary results about `ContinuousLinearMap`s that are not (yet) available in
 > Mathlib.
@@ -21,14 +21,14 @@ The module `QuantumInfo.ForMathlib.ContinuousLinearMap`, [QuantumInfo/ForMathlib
 >   linear map on a finite-dimensional Euclidean space is the supremum of its eigenspaces for
 >   nonzero eigenvalues.
 
-**`ContinuousLinearMap.ker_mk`**, a lemma, [line 34](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/QuantumInfo/ForMathlib/ContinuousLinearMap.lean#L34).
+**`ContinuousLinearMap.ker_mk`**, a lemma, [line 34](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/QuantumInfo/ForMathlib/ContinuousLinearMap.lean#L34).
 
 ```lean
 lemma ker_mk (f : M →ₛₗ[σ] M₂) (hf : Continuous f.toFun) :
     (ContinuousLinearMap.mk f hf).ker = LinearMap.ker f
 ```
 
-**`ContinuousLinearMap.support_eq_sup_eigenspace_nonzero`**, a theorem, [line 45](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/QuantumInfo/ForMathlib/ContinuousLinearMap.lean#L45). Listed as a significant result in [Theorems.txt](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/scripts/lint/exemptions/Theorems.txt).
+**`ContinuousLinearMap.support_eq_sup_eigenspace_nonzero`**, a theorem, [line 45](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/QuantumInfo/ForMathlib/ContinuousLinearMap.lean#L45). Listed as a significant result in [Theorems.txt](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/scripts/lint/exemptions/Theorems.txt).
 
 > The support of a Hermitian matrix is the sum of its nonzero eigenspaces.
 
@@ -43,4 +43,4 @@ Its declarations' statements use no declaration of another module with an articl
 
 ## Sources
 
-- [QuantumInfo/ForMathlib/ContinuousLinearMap.lean at 2a1dfe43](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/QuantumInfo/ForMathlib/ContinuousLinearMap.lean)
+- [QuantumInfo/ForMathlib/ContinuousLinearMap.lean at 8c87bdfb](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/QuantumInfo/ForMathlib/ContinuousLinearMap.lean)

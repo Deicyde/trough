@@ -8,7 +8,7 @@ proof: formalized
 
 # The infinitesimal action underlying a matter representation
 
-The module `PhyslibAlpha.ClassicalFieldTheory.GaugeTheory.MatterField.InfinitesimalAction`, [PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/MatterField/InfinitesimalAction.lean](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/MatterField/InfinitesimalAction.lean): 15 declarations, 13 with a docstring.
+The module `PhyslibAlpha.ClassicalFieldTheory.GaugeTheory.MatterField.InfinitesimalAction`, [PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/MatterField/InfinitesimalAction.lean](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/MatterField/InfinitesimalAction.lean): 15 declarations, 13 with a docstring.
 
 ## i. Overview
 
@@ -41,7 +41,7 @@ The module `PhyslibAlpha.ClassicalFieldTheory.GaugeTheory.MatterField.Infinitesi
 
 ## A. The infinitesimal action underlying a representation
 
-**`LocalGaugeData.IsInfinitesimalActionOf`**, a structure, [line 93](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/MatterField/InfinitesimalAction.lean#L93).
+**`LocalGaugeData.IsInfinitesimalActionOf`**, a structure, [line 93](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/MatterField/InfinitesimalAction.lean#L93).
 
 > `act` is the *infinitesimal action* of the gauge algebra underlying the
 > representation `rep` of the jet gauge group, when the base-point Taylor
@@ -75,7 +75,7 @@ structure IsInfinitesimalActionOf (jets : LocalGaugeData G₀ 𝔤 GJ 𝔤J)
         act (jets.adjointCoeff U p.1 c) ∘ₗ repCoeff rep U p.2).sum)
 ```
 
-**`LocalGaugeData.IsInfinitesimalActionOf.repDualCoeff_cons`**, a lemma, [line 110](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/MatterField/InfinitesimalAction.lean#L110).
+**`LocalGaugeData.IsInfinitesimalActionOf.repDualCoeff_cons`**, a lemma, [line 110](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/MatterField/InfinitesimalAction.lean#L110).
 
 > The dual form of the Leibniz law: the once-more-derived dual coefficient is
 > minus the antidiagonal convolution of dual coefficients against `act` of the
@@ -95,7 +95,7 @@ lemma IsInfinitesimalActionOf.repDualCoeff_cons
 
 ## B. The covariant derivative preserves `TransformsIn`
 
-**`LocalGaugeData.IsInfinitesimalActionOf.actionFam_repDualCoeff`**, a lemma, [line 146](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/MatterField/InfinitesimalAction.lean#L146).
+**`LocalGaugeData.IsInfinitesimalActionOf.actionFam_repDualCoeff`**, a lemma, [line 146](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/MatterField/InfinitesimalAction.lean#L146).
 
 > The action of families against the dual representation coefficients: the
 > antidiagonal convolution mixing the adjoint transport on the field slot with the
@@ -114,7 +114,7 @@ lemma IsInfinitesimalActionOf.actionFam_repDualCoeff
           (g ∘ₗ repDualCoeff rep U p.2) φ).sum
 ```
 
-**`LocalGaugeData.TransformsIn.repGauge_cons`**, a lemma, [line 179](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/MatterField/InfinitesimalAction.lean#L179).
+**`LocalGaugeData.TransformsIn.repGauge_cons`**, a lemma, [line 179](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/MatterField/InfinitesimalAction.lean#L179).
 
 > If `F` transforms in `rep`, so do its `κ ::ₘ s`-derived symbols, with the extra
 > derivative traced through `IsInfinitesimalActionOf.repDualCoeff_cons`: the Leibniz
@@ -138,7 +138,7 @@ lemma TransformsIn.repGauge_cons
                 (jets.maurerCartan U⁻¹ κ)))))).sum).sum
 ```
 
-**`LocalGaugeData.TransformsIn.repGauge_actionFamConv`**, a lemma, [line 215](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/MatterField/InfinitesimalAction.lean#L215).
+**`LocalGaugeData.TransformsIn.repGauge_actionFamConv`**, a lemma, [line 215](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/MatterField/InfinitesimalAction.lean#L215).
 
 > The all-orders gauge transformation of the derived action `A_ρ · F` for `F`
 > transforming in `rep`: since `F` transforms homogeneously, only one cross-term
@@ -163,7 +163,7 @@ lemma TransformsIn.repGauge_actionFamConv
                 (jets.maurerCartan U⁻¹ ρ)))))).sum).sum
 ```
 
-**`LocalGaugeData.TransformsIn.covDerivAction`**, a lemma, [line 304](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/MatterField/InfinitesimalAction.lean#L304).
+**`LocalGaugeData.TransformsIn.covDerivAction`**, a lemma, [line 304](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/MatterField/InfinitesimalAction.lean#L304).
 
 > The covariant derivative preserves `TransformsIn`: if `F` transforms in the
 > representation `rep` and `act` is the infinitesimal action underlying `rep`, then
@@ -180,7 +180,7 @@ lemma TransformsIn.covDerivAction
     TransformsIn repGauge rep (GaugeAlgebraRealization.covDerivAction h.A act F ρ)
 ```
 
-**`LocalGaugeData.TransformsIn.covDerivIter`**, a lemma, [line 344](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/MatterField/InfinitesimalAction.lean#L344).
+**`LocalGaugeData.TransformsIn.covDerivIter`**, a lemma, [line 344](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/MatterField/InfinitesimalAction.lean#L344).
 
 > Every iterated covariant derivative preserves `TransformsIn`: if `F` transforms
 > in `rep` and `act` is the infinitesimal action underlying `rep`, then
@@ -198,7 +198,7 @@ lemma TransformsIn.covDerivIter
 
 ## C. The conjugate action and the conjugate representation
 
-**`LocalGaugeData.actionConj`**, a def, [line 367](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/MatterField/InfinitesimalAction.lean#L367).
+**`LocalGaugeData.actionConj`**, a def, [line 367](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/MatterField/InfinitesimalAction.lean#L367).
 
 > The conjugate of an infinitesimal action: the same maps, read on the conjugate
 > module — the generators of the conjugate representation.
@@ -208,14 +208,14 @@ noncomputable def actionConj (act : 𝔤 →ₗ[ℝ] V →ₗ[ℂ] V) :
     𝔤 →ₗ[ℝ] ConjModule V →ₗ[ℂ] ConjModule V
 ```
 
-**`LocalGaugeData.actionConj_apply`**, a lemma, [line 375](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/MatterField/InfinitesimalAction.lean#L375).
+**`LocalGaugeData.actionConj_apply`**, a lemma, [line 375](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/MatterField/InfinitesimalAction.lean#L375).
 
 ```lean
 lemma actionConj_apply (act : 𝔤 →ₗ[ℝ] V →ₗ[ℂ] V) (c : 𝔤) :
     actionConj act c = ConjModule.endConj (act c)
 ```
 
-**`LocalGaugeData.conjJetEquiv`**, a def, [line 382](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/MatterField/InfinitesimalAction.lean#L382).
+**`LocalGaugeData.conjJetEquiv`**, a def, [line 382](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/MatterField/InfinitesimalAction.lean#L382).
 
 > The identification of the jets of a conjugate field with the conjugates of the
 > jets: conjugation is monoidal, and the star of the jet-ring factor absorbs the
@@ -227,7 +227,7 @@ noncomputable def conjJetEquiv :
     ConjModule (SpaceTimeAlgebra ⊗[ℂ] V) ≃ₗ[ℂ] SpaceTimeAlgebra ⊗[ℂ] ConjModule V
 ```
 
-**`LocalGaugeData.conjJetEquiv_conjEquiv_tmul`**, a lemma, [line 387](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/MatterField/InfinitesimalAction.lean#L387).
+**`LocalGaugeData.conjJetEquiv_conjEquiv_tmul`**, a lemma, [line 387](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/MatterField/InfinitesimalAction.lean#L387).
 
 ```lean
 lemma conjJetEquiv_conjEquiv_tmul (g : SpaceTimeAlgebra) (u : V) :
@@ -235,7 +235,7 @@ lemma conjJetEquiv_conjEquiv_tmul (g : SpaceTimeAlgebra) (u : V) :
       = star g ⊗ₜ[ℂ] conjEquiv (k := ℂ) (M := V) u
 ```
 
-**`LocalGaugeData.repConj_conjJetEquiv`**, a lemma, [line 400](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/MatterField/InfinitesimalAction.lean#L400).
+**`LocalGaugeData.repConj_conjJetEquiv`**, a lemma, [line 400](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/MatterField/InfinitesimalAction.lean#L400).
 
 > The conjugate representation acts through `conjJetEquiv` by the original maps.
 
@@ -247,7 +247,7 @@ lemma repConj_conjJetEquiv (rep : Representation ℂ GJ (SpaceTimeAlgebra ⊗[�
       = conjJetEquiv (conjEquiv (k := ℂ) (M := SpaceTimeAlgebra ⊗[ℂ] V) (rep U w))
 ```
 
-**`LocalGaugeData.repCoeff_repConj`**, a lemma, [line 413](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/MatterField/InfinitesimalAction.lean#L413).
+**`LocalGaugeData.repCoeff_repConj`**, a lemma, [line 413](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/MatterField/InfinitesimalAction.lean#L413).
 
 > The base-point Taylor coefficients of the conjugate representation are the
 > conjugated coefficients: the derivative directions are real, so conjugation passes
@@ -260,7 +260,7 @@ lemma repCoeff_repConj (rep : Representation ℂ GJ (SpaceTimeAlgebra ⊗[ℂ] V
       = ConjModule.endConj (repCoeff rep U x)
 ```
 
-**`LocalGaugeData.repCoeff_repConj_zero_eq_id`**, a lemma, [line 461](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/MatterField/InfinitesimalAction.lean#L461).
+**`LocalGaugeData.repCoeff_repConj_zero_eq_id`**, a lemma, [line 461](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/MatterField/InfinitesimalAction.lean#L461).
 
 > The base-point triviality of the zeroth Taylor coefficient passes to the
 > conjugate representation.
@@ -271,7 +271,7 @@ lemma repCoeff_repConj_zero_eq_id {W : GJ}
     repCoeff (JetComponentSpace.repConj rep) W 0 = LinearMap.id
 ```
 
-**`LocalGaugeData.IsInfinitesimalActionOf.conj`**, a lemma, [line 471](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/MatterField/InfinitesimalAction.lean#L471).
+**`LocalGaugeData.IsInfinitesimalActionOf.conj`**, a lemma, [line 471](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/MatterField/InfinitesimalAction.lean#L471).
 
 > The conjugate of an infinitesimal action underlies the conjugate
 > representation: conjugating the Taylor coefficients preserves both the
@@ -290,4 +290,4 @@ lemma IsInfinitesimalActionOf.conj (h : IsInfinitesimalActionOf jets act rep) :
 
 ## Sources
 
-- [PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/MatterField/InfinitesimalAction.lean at 2a1dfe43](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/MatterField/InfinitesimalAction.lean)
+- [PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/MatterField/InfinitesimalAction.lean at 8c87bdfb](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/MatterField/InfinitesimalAction.lean)

@@ -8,7 +8,7 @@ proof: formalized
 
 # The covariant gauge sector as the complexified covariant gauge-only algebra
 
-The module `PhyslibAlpha.ClassicalFieldTheory.GaugeTheory.LocalCovField.GaugeSector`, [PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/LocalCovField/GaugeSector.lean](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/LocalCovField/GaugeSector.lean): 14 declarations, 11 with a docstring.
+The module `PhyslibAlpha.ClassicalFieldTheory.GaugeTheory.LocalCovField.GaugeSector`, [PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/LocalCovField/GaugeSector.lean](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/LocalCovField/GaugeSector.lean): 14 declarations, 11 with a docstring.
 
 ## i. Overview
 
@@ -40,7 +40,7 @@ The module `PhyslibAlpha.ClassicalFieldTheory.GaugeTheory.LocalCovField.GaugeSec
 
 ## A. The inclusion of the complexified covariant gauge-only algebra
 
-**`GaugeFieldData.includeCovConnection`**, a def, [line 72](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/LocalCovField/GaugeSector.lean#L72).
+**`GaugeFieldData.includeCovConnection`**, a def, [line 72](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/LocalCovField/GaugeSector.lean#L72).
 
 > The complexified covariant gauge-only algebra inside the local field algebra: the
 > complexification of the real covariant subalgebra inclusion, followed by the connection
@@ -51,7 +51,7 @@ noncomputable def includeCovConnection :
     (ℂ ⊗[ℝ] LocalGaugeCovFieldAlgebra 𝔤) →ₐ[ℂ] T.LocalFieldAlgebra
 ```
 
-**`GaugeFieldData.includeCovConnection_apply`**, a lemma, [line 79](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/LocalCovField/GaugeSector.lean#L79).
+**`GaugeFieldData.includeCovConnection_apply`**, a lemma, [line 79](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/LocalCovField/GaugeSector.lean#L79).
 
 ```lean
 lemma includeCovConnection_apply (y : ℂ ⊗[ℝ] LocalGaugeCovFieldAlgebra 𝔤) :
@@ -59,7 +59,7 @@ lemma includeCovConnection_apply (y : ℂ ⊗[ℝ] LocalGaugeCovFieldAlgebra �
       = T.includeConnection (LocalGaugeCovFieldAlgebra.complexVal 𝔤 y)
 ```
 
-**`GaugeFieldData.includeCovConnection_one_tmul`**, a lemma, [line 83](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/LocalCovField/GaugeSector.lean#L83).
+**`GaugeFieldData.includeCovConnection_one_tmul`**, a lemma, [line 83](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/LocalCovField/GaugeSector.lean#L83).
 
 ```lean
 lemma includeCovConnection_one_tmul (x : LocalGaugeCovFieldAlgebra 𝔤) :
@@ -69,7 +69,7 @@ lemma includeCovConnection_one_tmul (x : LocalGaugeCovFieldAlgebra 𝔤) :
 
 ### A.1. Injectivity
 
-**`GaugeFieldData.includeCovConnection_injective`**, a lemma, [line 94](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/LocalCovField/GaugeSector.lean#L94).
+**`GaugeFieldData.includeCovConnection_injective`**, a lemma, [line 94](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/LocalCovField/GaugeSector.lean#L94).
 
 > The complexified covariant gauge-only algebra embeds in the local field algebra.
 
@@ -79,7 +79,7 @@ lemma includeCovConnection_injective : Function.Injective T.includeCovConnection
 
 ## B. The range of the inclusion
 
-**`GaugeFieldData.range_includeCovConnection`**, a lemma, [line 106](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/LocalCovField/GaugeSector.lean#L106).
+**`GaugeFieldData.range_includeCovConnection`**, a lemma, [line 106](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/LocalCovField/GaugeSector.lean#L106).
 
 > The range of the inclusion is the covariant gauge sector.
 
@@ -88,7 +88,7 @@ lemma range_includeCovConnection :
     T.includeCovConnection.range = T.CovSectorAlgebra {FieldCategory.gauge}
 ```
 
-**`GaugeFieldData.includeCovConnection_mem_covGaugeSector`**, a lemma, [line 128](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/LocalCovField/GaugeSector.lean#L128).
+**`GaugeFieldData.includeCovConnection_mem_covGaugeSector`**, a lemma, [line 128](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/LocalCovField/GaugeSector.lean#L128).
 
 ```lean
 lemma includeCovConnection_mem_covGaugeSector (y : ℂ ⊗[ℝ] LocalGaugeCovFieldAlgebra 𝔤) :
@@ -97,7 +97,7 @@ lemma includeCovConnection_mem_covGaugeSector (y : ℂ ⊗[ℝ] LocalGaugeCovFie
 
 ## C. The equivalence with the covariant gauge sector
 
-**`GaugeFieldData.covGaugeSectorEquiv`**, a def, [line 141](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/LocalCovField/GaugeSector.lean#L141).
+**`GaugeFieldData.covGaugeSectorEquiv`**, a def, [line 141](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/LocalCovField/GaugeSector.lean#L141).
 
 > The covariant gauge sector is the complexification of the covariant gauge-only algebra:
 > the inclusion, corestricted to its range.
@@ -107,7 +107,7 @@ noncomputable def covGaugeSectorEquiv :
     (ℂ ⊗[ℝ] LocalGaugeCovFieldAlgebra 𝔤) ≃ₐ[ℂ] ↥(T.CovSectorAlgebra {FieldCategory.gauge})
 ```
 
-**`GaugeFieldData.coe_covGaugeSectorEquiv`**, a lemma, [line 150](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/LocalCovField/GaugeSector.lean#L150).
+**`GaugeFieldData.coe_covGaugeSectorEquiv`**, a lemma, [line 150](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/LocalCovField/GaugeSector.lean#L150).
 
 > In the local field algebra the equivalence is the canonical inclusion.
 
@@ -116,7 +116,7 @@ lemma coe_covGaugeSectorEquiv (y : ℂ ⊗[ℝ] LocalGaugeCovFieldAlgebra 𝔤) 
     (T.covGaugeSectorEquiv y : T.LocalFieldAlgebra) = T.includeCovConnection y
 ```
 
-**`GaugeFieldData.covGaugeSectorEquiv_symm_includeCovConnection`**, a lemma, [line 154](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/LocalCovField/GaugeSector.lean#L154).
+**`GaugeFieldData.covGaugeSectorEquiv_symm_includeCovConnection`**, a lemma, [line 154](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/LocalCovField/GaugeSector.lean#L154).
 
 > The inverse recovers an element from its inclusion.
 
@@ -128,7 +128,7 @@ lemma covGaugeSectorEquiv_symm_includeCovConnection (y : ℂ ⊗[ℝ] LocalGauge
 
 ### C.1. Computation on the field-strength tower
 
-**`GaugeFieldData.coe_covGaugeSectorEquiv_one_tmul_covF`**, a lemma, [line 168](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/LocalCovField/GaugeSector.lean#L168).
+**`GaugeFieldData.coe_covGaugeSectorEquiv_one_tmul_covF`**, a lemma, [line 168](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/LocalCovField/GaugeSector.lean#L168).
 
 > A generator, embedded with the scalar `1`, is the included tower element with the same
 > derivative labels, spacetime indices and adjoint covector.
@@ -140,7 +140,7 @@ lemma coe_covGaugeSectorEquiv_one_tmul_covF (l : List (Fin 1 ⊕ Fin 3)) (μ ν 
         T.LocalFieldAlgebra) = T.covDerivFieldStrength l μ ν φ
 ```
 
-**`GaugeFieldData.coe_covGaugeSectorEquiv_one_tmul_covF_nil`**, a lemma, [line 174](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/LocalCovField/GaugeSector.lean#L174).
+**`GaugeFieldData.coe_covGaugeSectorEquiv_one_tmul_covF_nil`**, a lemma, [line 174](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/LocalCovField/GaugeSector.lean#L174).
 
 > Zero covariant derivatives: the included field strength itself.
 
@@ -152,7 +152,7 @@ lemma coe_covGaugeSectorEquiv_one_tmul_covF_nil (μ ν : Fin 1 ⊕ Fin 3)
       = T.includeConnection ((1 : ℂ) ⊗ₜ[ℝ] LocalGaugeFieldAlgebra.fieldStrength 𝔤 μ ν φ)
 ```
 
-**`GaugeFieldData.coe_covGaugeSectorEquiv_tmul`**, a lemma, [line 181](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/LocalCovField/GaugeSector.lean#L181).
+**`GaugeFieldData.coe_covGaugeSectorEquiv_tmul`**, a lemma, [line 181](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/LocalCovField/GaugeSector.lean#L181).
 
 > `z ⊗ₜ x` maps to `z` times the image of `1 ⊗ₜ x`.
 
@@ -164,7 +164,7 @@ lemma coe_covGaugeSectorEquiv_tmul (z : ℂ) (x : LocalGaugeCovFieldAlgebra 𝔤
 
 ## D. Compatibility with the symmetries
 
-**`GaugeFieldData.covGaugeSectorEquiv_complexRepValue`**, a lemma, [line 198](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/LocalCovField/GaugeSector.lean#L198).
+**`GaugeFieldData.covGaugeSectorEquiv_complexRepValue`**, a lemma, [line 198](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/LocalCovField/GaugeSector.lean#L198).
 
 > The equivalence intertwines the complexified gauge-only action of the ordinary gauge
 > group with the value action of the covariant gauge sector.
@@ -175,7 +175,7 @@ lemma covGaugeSectorEquiv_complexRepValue (g : G₀) (y : ℂ ⊗[ℝ] LocalGaug
       = CovSectorAlgebra.repValue T {FieldCategory.gauge} g (T.covGaugeSectorEquiv y)
 ```
 
-**`GaugeFieldData.covGaugeSectorEquiv_complexRepLorentzGroup`**, a lemma, [line 208](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/LocalCovField/GaugeSector.lean#L208).
+**`GaugeFieldData.covGaugeSectorEquiv_complexRepLorentzGroup`**, a lemma, [line 208](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/LocalCovField/GaugeSector.lean#L208).
 
 > The equivalence intertwines the complexified gauge-only Lorentz action with the Lorentz
 > action of the covariant gauge sector.
@@ -199,4 +199,4 @@ lemma covGaugeSectorEquiv_complexRepLorentzGroup (hGL : T.GaugeLorentzCompatible
 
 ## Sources
 
-- [PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/LocalCovField/GaugeSector.lean at 2a1dfe43](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/LocalCovField/GaugeSector.lean)
+- [PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/LocalCovField/GaugeSector.lean at 8c87bdfb](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/LocalCovField/GaugeSector.lean)
