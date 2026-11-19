@@ -39,8 +39,12 @@ on:
           GH_TOKEN set; it should print nothing when no commit qualifies
         type: string
         required: true
+      subdir:
+        description: The folder of the repository its Lake project is in, when not the top (cedar-lean)
+        type: string
+        default: ""
       build:
-        description: Bash that builds the library, run in its checkout
+        description: Bash that builds the library, run in its Lake project's folder
         type: string
         default: lake build
       newest:
@@ -135,7 +139,7 @@ jobs:
         run: uv run --no-dev python tools/refresh_library.py "$ID" "$RUNNER_TEMP/library"
 
       - name: Build the library
-        working-directory: ${{ runner.temp }}/library
+        working-directory: ${{ runner.temp }}/library/${{ inputs.subdir }}
         env:
           BUILD: ${{ inputs.build }}
         run: |
@@ -146,7 +150,7 @@ jobs:
       # that did not build is left unread rather than failing the run; the
       # names read from the source go in too, as Lean says which are public.
       - name: Read which modules each module uses
-        working-directory: ${{ runner.temp }}/library
+        working-directory: ${{ runner.temp }}/library/${{ inputs.subdir }}
         env:
           TROUGH_ROOTS: ${{ inputs.roots }}
           TROUGH_NAMES: ${{ runner.temp }}/names.txt

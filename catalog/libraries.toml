@@ -264,6 +264,21 @@ lean_files = 560
 map_status = "live"
 map_unit = "module"
 map_plan = "One article per module under CompPoly/ that declares something public by name, titled by its module docstring or its file name, in a part per folder and a page per folder below: the module's authors, its docstrings and a block per public declaration with its docstring and Lean statement, read from the source without Lean; a Lean run over the built library gives the edges between modules and decides which declarations are public. A module that declares nothing public by name is listed on its folder's page, and one that does not build on the front page."
+
+[[library]]
+id = "cedar"
+name = "Cedar"
+repo = "cedar-policy/cedar-spec"
+group = "library"
+what = "The Lean formalization of the Cedar policy language, with proofs about it: its data structures, its specification (evaluator, authorizer), validation, partial evaluation, symbolic compilation and the theorems about them, in the Lake project in cedar-lean/, under Cedar/. The repository also holds Cedar's differential testing in Rust."
+informal_layer = "A short module docstring on most modules and docstrings on some definitions and theorems; a README for the repository and one for cedar-lean/. No blueprint."
+formalization_yaml = "absent"
+license = "Apache-2.0"
+toolchain = "v4.36.0"
+lean_files = 389
+map_status = "live"
+map_unit = "module"
+map_plan = "One article per module under cedar-lean/Cedar/ that declares something public by name, titled by its module docstring or its file name, in a part per folder and a page per folder below: its docstrings and a block per public declaration with its docstring and Lean statement, read from the source without Lean; a Lean run over the built library gives the edges between modules and decides which declarations are public. A module that declares nothing public by name is listed on its folder's page, and one that does not build on the front page."
 [[library]]
 id = "foundation"
 name = "Foundation"

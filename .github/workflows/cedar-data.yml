@@ -1,0 +1,72 @@
+# Reads Cedar at the commit data/cedar/source.json pins, through the reusable
+# Library data workflow (library-data.yml). cedar-spec's Lean is the Lake
+# project in cedar-lean/. Its CI builds the Lean only on pull requests, but
+# every push to main builds the documentation, which compiles every module of
+# the Cedar library, so the pin rule takes the newest main commit whose
+# documentation build passed. The build compiles the Cedar and SymCC targets,
+# as cedar-spec's CI does: SymCC's root imports the Cedar modules Cedar's root
+# does not reach. Cedar needs Lean and Batteries only, so there is no cache.
+
+name: Cedar data
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - "tools/refresh_library.py"
+      - "tools/trough/cedar.py"
+      - "tools/trough/library.py"
+      - "tools/trough/stacks.py"
+      - "tools/trough/leansource.py"
+      - "tools/trough/formal_conjectures.py"
+      - "tools/trough/ff.py"
+      - "lean/library/**"
+      - "data/cedar/**"
+      - ".github/workflows/cedar-data.yml"
+      - ".github/workflows/library-data.yml"
+  pull_request:
+    paths:
+      - "tools/refresh_library.py"
+      - "tools/trough/cedar.py"
+      - "tools/trough/library.py"
+      - "tools/trough/stacks.py"
+      - "tools/trough/leansource.py"
+      - "tools/trough/formal_conjectures.py"
+      - "tools/trough/ff.py"
+      - "lean/library/**"
+      - "data/cedar/**"
+      - ".github/workflows/cedar-data.yml"
+      - ".github/workflows/library-data.yml"
+  workflow_dispatch:
+    inputs:
+      newest:
+        description: Pin the newest cedar-spec main commit whose documentation build passed
+        type: boolean
+        default: false
+  schedule:
+    - cron: "53 8 * * 6"
+
+permissions:
+  contents: read
+
+concurrency:
+  group: cedar-data-${{ github.ref }}
+  cancel-in-progress: ${{ github.event_name == 'pull_request' }}
+
+jobs:
+  data:
+    uses: ./.github/workflows/library-data.yml
+    permissions:
+      contents: write
+      actions: write
+    with:
+      id: cedar
+      name: Cedar
+      repo: cedar-policy/cedar-spec
+      roots: Cedar
+      newest: ${{ inputs.newest || false }}
+      subdir: cedar-lean
+      pin: |
+        gh api "repos/cedar-policy/cedar-spec/actions/workflows/deploy_docs.yml/runs?branch=main&event=push&status=success&per_page=1" \
+          --jq '.workflow_runs[0].head_sha'
+      build: lake build Cedar SymCC

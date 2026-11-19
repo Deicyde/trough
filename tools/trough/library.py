@@ -83,6 +83,9 @@ class Library:
     # Whether a module that declares nothing public by name is listed on its folder's page rather than given an
     # article; a folder left with no article has no page, and its modules are listed on the page above.
     list_empty: bool = False
+    # The folder of the repository its Lake project is in, when not the top. Module files, folders and the files in
+    # `required` are named from that folder; links to GitHub add it back.
+    subdir: str = ""
 
     def notes(self, file: str) -> bool:
         """Whether the filter cuts the TODO notes of the module at *file*: not in the folders the library exempts."""
@@ -186,6 +189,9 @@ def read(library: Library, checkout: Path, paths: list[str]) -> tuple[dict, list
     license_file = checkout / "LICENSE"
     if not license_file.is_file() or not is_apache(license_file.read_text(encoding="utf-8")):
         problems.append("not Apache-2.0: its LICENSE is not the Apache License 2.0")
+    if library.subdir:
+        checkout = checkout / library.subdir
+        paths = [path.removeprefix(library.subdir + "/") for path in paths if path.startswith(library.subdir + "/")]
     lean = sorted(path for path in paths if path.startswith(library.root + "/") and path.endswith(".lean"))
     readmes = sorted(path for path in paths if path.startswith(library.root + "/") and path.endswith("/README.md"))
     wanted = lean + readmes + list(library.required)
@@ -243,12 +249,13 @@ def refresh(library: Library, checkout: Path, out: Path) -> list[str]:
             problems.append(f"reads {now} declarations, under half the {before} the last record read")
     if problems:
         return problems
-    manifest = json.loads((checkout / "lake-manifest.json").read_text(encoding="utf-8"))
+    project = checkout / library.subdir if library.subdir else checkout
+    manifest = json.loads((project / "lake-manifest.json").read_text(encoding="utf-8"))
     mathlib = next((package.get("rev", "") for package in manifest.get("packages", []) if package.get("name") == "mathlib"), "")
     source = {"repo": library.repo, "rev": rev,
               # In UTC, as git versions print %cI differently.
               "date": git(checkout, "log", "-1", "--date=format-local:%Y-%m-%dT%H:%M:%SZ", "--format=%cd", "HEAD"),
-              "toolchain": (checkout / "lean-toolchain").read_text(encoding="utf-8").strip().split(":")[-1],
+              "toolchain": (project / "lean-toolchain").read_text(encoding="utf-8").strip().split(":")[-1],
               "mathlib": mathlib, "license": "Apache-2.0"}
     record = {"schema": record.pop("schema"), "rev": rev, **record}
     out.mkdir(parents=True, exist_ok=True)
@@ -288,12 +295,17 @@ def load(library: Library, data: Path) -> dict | None:
 # The chapter, from the data.
 
 
+def repo_path(library: Library, path: str) -> str:
+    """A path the record names from the Lake project's folder, as the repository names it."""
+    return f"{library.subdir}/{path}" if library.subdir else path
+
+
 def blob(library: Library, rev: str, path: str, line: int | None = None) -> str:
-    return f"{GITHUB}/{library.repo}/blob/{rev}/{path}" + (f"#L{line}" if line else "")
+    return f"{GITHUB}/{library.repo}/blob/{rev}/{repo_path(library, path)}" + (f"#L{line}" if line else "")
 
 
 def folder_url(library: Library, rev: str, path: str = "") -> str:
-    return f"{GITHUB}/{library.repo}/tree/{rev}" + (f"/{path}" if path else "")
+    return f"{GITHUB}/{library.repo}/tree/{rev}" + (f"/{repo_path(library, path)}" if path else "")
 
 
 def at(library: Library, rev: str) -> str:
@@ -449,7 +461,7 @@ def ledger(library: Library, module: dict, rev: str, private: set[str], missing:
         group = "private" if item["name"] in private else "missing" if item["name"] in missing else "public"
         entries[group].append({"name": item["name"], "kind": item["kind"], "line": item["line"]})
     head = {"schema": LEDGER_SCHEMA, "library": library.name, "repo": library.repo, "rev": rev,
-            "module": module["module"], "file": module["file"]}
+            "module": module["module"], "file": repo_path(library, module["file"])}
     # An entry a line, so that a change to the module shows as a change to its lines.
     parts = [f" {json.dumps(key)}: {json.dumps(value, ensure_ascii=False)}" for key, value in head.items()]
     parts += [f' "{group}": [' + ",".join(f"\n  {json.dumps(entry, ensure_ascii=False)}" for entry in items)
@@ -488,11 +500,14 @@ def module_intro(library: Library, data: dict, stats: Counter, about: list[str],
         empty = (f" The other {plural(stats['empty'], 'module')} declare nothing public by name; they are listed on "
                  "their folders' pages.")
     mathlib = f" and Mathlib {data['mathlib'][:8]}" if data.get("mathlib") else ""
+    root = repo_path(library, library.root)
+    authors = ("the module's authors as its header names them, its docstrings, and" if any(
+        module["authors"] or module["copyright"] for module in data["modules"]) else "its docstrings and")
     return "\n\n".join(part for part in [
         *about,
         f"This chapter maps {library.name} at commit {at(library, rev)} ({data['date'][:10]}), with Lean toolchain "
         f"{data['toolchain']}{mathlib}. It has an article for each of the {plural(stats['articles'], 'module')} under "
-        f"`{library.root}/` that declare something public by name, in a part per folder of `{library.root}/` and a page "
+        f"`{root}/` that declare something public by name, in a part per folder of `{root}/` and a page "
         f"per folder below. They hold {plural(stats['declarations'], 'public declaration')}, "
         + listing([plural(count, word, words) for count, word, words in (
             (theorems, "theorem", None), (definitions, "definition", None),
@@ -500,8 +515,8 @@ def module_intro(library: Library, data: dict, stats: Counter, about: list[str],
         + f", {stats['documented']:,} of them with a docstring."
         + (empty if stats["empty"] else ""),
         "An article is titled by its module docstring, or by its file name when the docstring has no title; where "
-        "modules share a title, each adds the shortest end of its path that tells them apart. It gives the module's "
-        "authors as its header names them, its docstrings, and a block per public declaration in file order with its "
+        "modules share a title, each adds the shortest end of its path that tells them apart. It gives "
+        f"{authors} a block per public declaration in file order with its "
         "Lean statement: the text up to the `:=` or `where` that starts its value, or the whole text of a structure, "
         "class or inductive type. These are read from the source text, without Lean. Unnamed instances and the names "
         "an `alias ⟨…⟩` command gives are left out, and so are TODO notes and text about plans or inviting future "
@@ -515,7 +530,7 @@ def module_intro(library: Library, data: dict, stats: Counter, about: list[str],
 def unbuilt_line(library: Library, unbuilt: list[dict], rev: str) -> str:
     """The front page's line naming the modules the library's build did not compile, which Lean could not read."""
     names = listing([f"[`{module['module']}`]({blob(library, rev, module['file'])})" for module in unbuilt])
-    return (f"{plural(len(unbuilt), 'module')} under `{library.root}/` did not build in the library's own build, so Lean "
+    return (f"{plural(len(unbuilt), 'module')} under `{repo_path(library, library.root)}/` did not build in the library's own build, so Lean "
             f"could not read {'it' if len(unbuilt) == 1 else 'them'} and {'it has' if len(unbuilt) == 1 else 'they have'} "
             f"no article: {names}.")
 

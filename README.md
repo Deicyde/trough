@@ -6,10 +6,10 @@ vaults, rendered with [AutoformBot](https://github.com/facebookresearch/autoform
 and published at https://trough.jackmccarthy.org/. The book shows no Lean
 progress: the generated `blueprint/roadmap/README.md` sets `tracks_lean: false`.
 
-`catalog/libraries.toml` lists the 65 libraries trough targets: Mathlib, Tau
+`catalog/libraries.toml` lists the 66 libraries trough targets: Mathlib, Tau
 Ceti, ATLAS, the research projects with blueprints (Imperial's FLT, PNT+, PFR,
 Equational Theories, Strong PNT), Formal Conjectures, Physlib, CSLib,
-Batteries, Aesop, CompPoly, Foundation, the Analysis I companion, the large corpora (Anthropic's FLT, Lean
+Batteries, Aesop, CompPoly, Cedar, Foundation, the Analysis I companion, the large corpora (Anthropic's FLT, Lean
 Pool, OpenAI Math, Axiom's CFSG and Stacks Project) and the 44 Formal Frontier
 libraries. Each gets the article unit that suits it, recorded as `map_unit` and
 `map_plan`.
@@ -22,7 +22,7 @@ its project cards, Anthropic's FLT from the landmark theorems of its proof,
 Axiom's CFSG from its proof's case division and its milestones, Axiom's
 Stacks Project formalization from its Stacks tags, ATLAS from the topics of
 its vault, OpenAI Math from its result families, and CSLib, Batteries, Aesop,
-CompPoly and Physlib from their modules.
+CompPoly, Cedar and Physlib from their modules.
 
 ## The Mathlib map
 
@@ -742,6 +742,20 @@ sentence and the opening of its intro. The **CompPoly data** workflow
 workflow; its pin rule takes the newest main commit whose Lean Action CI
 passed, and its build fetches Mathlib's cache, then runs `lake build CompPoly`.
 
+## The Cedar chapter
+
+[cedar-spec](https://github.com/cedar-policy/cedar-spec) holds the Lean
+formalization of the Cedar policy language, with proofs about it. Its Lean is
+the Lake project in `cedar-lean/`, and the chapter, under
+`blueprint/roadmap/cedar/`, maps that project's `Cedar` library, as Aesop's
+chapter is built; `tools/trough/cedar.py` holds the repository README's
+description and the opening of the intro. Its Library value sets `subdir`, so
+the record names files from `cedar-lean/` and links to GitHub add it back. The
+**Cedar data** workflow (`.github/workflows/cedar-data.yml`) calls the reusable
+Library data workflow with `subdir: cedar-lean`; its pin rule takes the newest
+main commit whose documentation build passed, which compiles the library, and
+its build runs `lake build Cedar SymCC`, as cedar-spec's CI does.
+
 ## Working on it
 
     uv run python tools/generate.py           # rewrite blueprint/ from data/ and catalog/
@@ -847,3 +861,5 @@ names its module's authors as the file's header does.
 The docstrings, Lean statements and README text in `data/comppoly/` come from
 [CompPoly](https://github.com/Verified-zkEVM/CompPoly), Apache-2.0; each article
 names its module's authors as the file's header does.
+The docstrings, Lean statements and README text in `data/cedar/` come from
+[cedar-spec](https://github.com/cedar-policy/cedar-spec), Apache-2.0.
