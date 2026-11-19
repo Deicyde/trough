@@ -1,0 +1,23 @@
+{
+ "schema": "trough-ledger/v1",
+ "library": "CompPoly",
+ "repo": "Verified-zkEVM/CompPoly",
+ "rev": "afb9b1363984a70f10e24bd597f6ff40ebc8afbb",
+ "module": "CompPoly.Data.RingTheory.AlgebraTower.Basis",
+ "file": "CompPoly/Data/RingTheory/AlgebraTower/Basis.lean",
+ "public": [
+  {"name": "AlgebraTower.natBasis", "kind": "def", "line": 42},
+  {"name": "AlgebraTower.natBasis_repr", "kind": "theorem", "line": 50},
+  {"name": "AlgebraTower.natBasisVector_eq_natBasis", "kind": "theorem", "line": 56},
+  {"name": "AlgebraTower.natBasis_succ", "kind": "theorem", "line": 67},
+  {"name": "AlgebraTower.natBasisVector_succ", "kind": "theorem", "line": 85},
+  {"name": "AlgebraTower.natBasisOfLE", "kind": "def", "line": 100},
+  {"name": "AlgebraTower.natBasisOfLE_repr", "kind": "theorem", "line": 108},
+  {"name": "AlgebraTower.natBasisVectorOfLE_eq_natBasisOfLE", "kind": "theorem", "line": 115},
+  {"name": "AlgebraTower.natBasisOfLE_apply", "kind": "theorem", "line": 126},
+  {"name": "AlgebraTower.natBasisOfLE_self", "kind": "theorem", "line": 135}
+ ],
+ "private": [],
+ "missing": [],
+ "unread": "Unnamed instances, the names an `alias ⟨…⟩` command gives, and the names Lean generates for a declaration (constructors, recursors, derived instances) are not read from the source, so they are not listed."
+}

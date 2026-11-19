@@ -1,0 +1,24 @@
+{
+ "schema": "trough-ledger/v1",
+ "library": "CompPoly",
+ "repo": "Verified-zkEVM/CompPoly",
+ "rev": "afb9b1363984a70f10e24bd597f6ff40ebc8afbb",
+ "module": "CompPoly.LinearAlgebra.Dense.RowArray",
+ "file": "CompPoly/LinearAlgebra/Dense/RowArray.lean",
+ "public": [
+  {"name": "CompPoly.DenseMatrix.toRows", "kind": "def", "line": 32},
+  {"name": "CompPoly.DenseMatrix.swapScalarRows", "kind": "def", "line": 38},
+  {"name": "CompPoly.DenseMatrix.findScalarPivotRow", "kind": "def", "line": 45},
+  {"name": "CompPoly.DenseMatrix.normalizeScalarRow", "kind": "def", "line": 51},
+  {"name": "CompPoly.DenseMatrix.addScaledScalarRow", "kind": "def", "line": 59},
+  {"name": "CompPoly.DenseMatrix.normalizeAndEliminateScalarRows", "kind": "def", "line": 64},
+  {"name": "CompPoly.DenseMatrix.ScalarRrefResult", "kind": "structure", "line": 86},
+  {"name": "CompPoly.DenseMatrix.scalarRrefRowsLoop", "kind": "def", "line": 91},
+  {"name": "CompPoly.DenseMatrix.scalarRrefRows", "kind": "def", "line": 107},
+  {"name": "CompPoly.DenseMatrix.basisVectorForFreeColumnRows", "kind": "def", "line": 112},
+  {"name": "CompPoly.DenseMatrix.homogeneousKernelBasisRows", "kind": "def", "line": 123}
+ ],
+ "private": [],
+ "missing": [],
+ "unread": "Unnamed instances, the names an `alias ⟨…⟩` command gives, and the names Lean generates for a declaration (constructors, recursors, derived instances) are not read from the source, so they are not listed."
+}

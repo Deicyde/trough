@@ -1,0 +1,16 @@
+{
+ "schema": "trough-ledger/v1",
+ "library": "CompPoly",
+ "repo": "Verified-zkEVM/CompPoly",
+ "rev": "afb9b1363984a70f10e24bd597f6ff40ebc8afbb",
+ "module": "CompPoly.Fields.Mersenne31.Basic",
+ "file": "CompPoly/Fields/Mersenne31/Basic.lean",
+ "public": [
+  {"name": "Mersenne31.fieldSize", "kind": "def", "line": 25},
+  {"name": "Mersenne31.Field", "kind": "abbrev", "line": 29},
+  {"name": "Mersenne31.is_prime", "kind": "theorem", "line": 32}
+ ],
+ "private": [],
+ "missing": [],
+ "unread": "Unnamed instances, the names an `alias ⟨…⟩` command gives, and the names Lean generates for a declaration (constructors, recursors, derived instances) are not read from the source, so they are not listed."
+}

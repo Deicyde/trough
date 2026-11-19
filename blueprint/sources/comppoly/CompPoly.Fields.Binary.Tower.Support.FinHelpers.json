@@ -1,0 +1,18 @@
+{
+ "schema": "trough-ledger/v1",
+ "library": "CompPoly",
+ "repo": "Verified-zkEVM/CompPoly",
+ "rev": "afb9b1363984a70f10e24bd597f6ff40ebc8afbb",
+ "module": "CompPoly.Fields.Binary.Tower.Support.FinHelpers",
+ "file": "CompPoly/Fields/Binary/Tower/Support/FinHelpers.lean",
+ "public": [
+  {"name": "bit_finProdFinEquiv_symm_2_pow_succ", "kind": "theorem", "line": 25},
+  {"name": "leftDivNat", "kind": "def", "line": 49},
+  {"name": "leftModNat", "kind": "def", "line": 54},
+  {"name": "revFinProdFinEquiv", "kind": "def", "line": 60},
+  {"name": "bit_revFinProdFinEquiv_symm_2_pow_succ", "kind": "theorem", "line": 89}
+ ],
+ "private": [],
+ "missing": [],
+ "unread": "Unnamed instances, the names an `alias ⟨…⟩` command gives, and the names Lean generates for a declaration (constructors, recursors, derived instances) are not read from the source, so they are not listed."
+}

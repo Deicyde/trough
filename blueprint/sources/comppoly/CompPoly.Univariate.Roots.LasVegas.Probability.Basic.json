@@ -1,0 +1,26 @@
+{
+ "schema": "trough-ledger/v1",
+ "library": "CompPoly",
+ "repo": "Verified-zkEVM/CompPoly",
+ "rev": "afb9b1363984a70f10e24bd597f6ff40ebc8afbb",
+ "module": "CompPoly.Univariate.Roots.LasVegas.Probability.Basic",
+ "file": "CompPoly/Univariate/Roots/LasVegas/Probability/Basic.lean",
+ "public": [
+  {"name": "CompPoly.CPolynomial.Roots.FiniteField.FieldEnumeration.size_pos", "kind": "theorem", "line": 40},
+  {"name": "CompPoly.CPolynomial.Roots.FiniteField.UniformFieldEnumeration", "kind": "structure", "line": 51},
+  {"name": "CompPoly.CPolynomial.Roots.FiniteField.UniformFieldEnumeration.q_pos", "kind": "theorem", "line": 59},
+  {"name": "CompPoly.CPolynomial.Roots.FiniteField.OddUniformFieldModel", "kind": "structure", "line": 74},
+  {"name": "CompPoly.CPolynomial.Roots.FiniteField.TrialResult", "kind": "inductive", "line": 80},
+  {"name": "CompPoly.CPolynomial.Roots.FiniteField.TrialResult.IsSuccess", "kind": "def", "line": 87},
+  {"name": "CompPoly.CPolynomial.Roots.FiniteField.TrialResult.children", "kind": "def", "line": 92},
+  {"name": "CompPoly.CPolynomial.Roots.FiniteField.TrialResult.allFailed", "kind": "def", "line": 97},
+  {"name": "CompPoly.CPolynomial.Roots.FiniteField.eventProbability", "kind": "def", "line": 104},
+  {"name": "CompPoly.CPolynomial.Roots.FiniteField.trialSuccessProbability", "kind": "def", "line": 108},
+  {"name": "CompPoly.CPolynomial.Roots.FiniteField.trialFailureProbability_eq_failed_mass", "kind": "theorem", "line": 114},
+  {"name": "CompPoly.CPolynomial.Roots.FiniteField.trialSuccessProbability_add_failed_mass", "kind": "theorem", "line": 135},
+  {"name": "CompPoly.CPolynomial.Roots.FiniteField.trialFailureProbability_le_half_of_success", "kind": "theorem", "line": 149}
+ ],
+ "private": [],
+ "missing": [],
+ "unread": "Unnamed instances, the names an `alias ⟨…⟩` command gives, and the names Lean generates for a declaration (constructors, recursors, derived instances) are not read from the source, so they are not listed."
+}

@@ -1,0 +1,17 @@
+{
+ "schema": "trough-ledger/v1",
+ "library": "CompPoly",
+ "repo": "Verified-zkEVM/CompPoly",
+ "rev": "afb9b1363984a70f10e24bd597f6ff40ebc8afbb",
+ "module": "CompPoly.LinearAlgebra.PolynomialMatrix.Approximant.PMBasis.Correctness",
+ "file": "CompPoly/LinearAlgebra/PolynomialMatrix/Approximant/PMBasis/Correctness.lean",
+ "public": [
+  {"name": "CompPoly.PolynomialMatrix.Approximant.pmBasisWithFuelCore_kernelLeaf_rows", "kind": "theorem", "line": 41},
+  {"name": "CompPoly.PolynomialMatrix.Approximant.pmBasis_kernelLeaf_approximates", "kind": "theorem", "line": 165},
+  {"name": "CompPoly.PolynomialMatrix.Approximant.pmBasisWithFuelCore_kernelLeaf_rowSpan_complete", "kind": "theorem", "line": 520},
+  {"name": "CompPoly.PolynomialMatrix.Approximant.pmBasis_kernelLeaf_complete_minimal", "kind": "theorem", "line": 1096}
+ ],
+ "private": [],
+ "missing": [],
+ "unread": "Unnamed instances, the names an `alias ⟨…⟩` command gives, and the names Lean generates for a declaration (constructors, recursors, derived instances) are not read from the source, so they are not listed."
+}

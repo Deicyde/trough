@@ -1,0 +1,30 @@
+{
+ "schema": "trough-ledger/v1",
+ "library": "CompPoly",
+ "repo": "Verified-zkEVM/CompPoly",
+ "rev": "afb9b1363984a70f10e24bd597f6ff40ebc8afbb",
+ "module": "CompPoly.Univariate.NTTFast.Correctness.Pipeline",
+ "file": "CompPoly/Univariate/NTTFast/Correctness/Pipeline.lean",
+ "public": [
+  {"name": "CompPoly.CPolynomial.NTTFast.Plan.forwardImpl_correct", "kind": "theorem", "line": 29},
+  {"name": "CompPoly.CPolynomial.NTTFast.Plan.forwardImpl_ofDomain_correct", "kind": "theorem", "line": 36},
+  {"name": "CompPoly.CPolynomial.NTTFast.Plan.forwardPairImpl_eq_pair", "kind": "theorem", "line": 42},
+  {"name": "CompPoly.CPolynomial.NTTFast.Plan.forwardPairImpl_correct", "kind": "theorem", "line": 50},
+  {"name": "CompPoly.CPolynomial.NTTFast.Plan.normalize_eq_ntt_normalize", "kind": "theorem", "line": 59},
+  {"name": "CompPoly.CPolynomial.NTTFast.Plan.inverseImpl_correct", "kind": "theorem", "line": 65},
+  {"name": "CompPoly.CPolynomial.NTTFast.Plan.pointwiseMul_bitRevPermute_forwardSpec_eq", "kind": "theorem", "line": 84},
+  {"name": "CompPoly.CPolynomial.NTTFast.Plan.Raw.fastMulImpl_correct", "kind": "theorem", "line": 105},
+  {"name": "CompPoly.CPolynomial.NTTFast.Plan.Raw.fastMulImpl_trim_eq_mul", "kind": "theorem", "line": 115},
+  {"name": "CompPoly.CPolynomial.NTTFast.Plan.fastMulImpl_correct", "kind": "theorem", "line": 125},
+  {"name": "CompPoly.CPolynomial.NTTFast.Plan.fastMulImpl_eq_mul", "kind": "theorem", "line": 132},
+  {"name": "CompPoly.CPolynomial.NTTFast.Raw.fastMulImpl_correct", "kind": "theorem", "line": 144},
+  {"name": "CompPoly.CPolynomial.NTTFast.Raw.fastMulImpl_trim_eq_mul", "kind": "theorem", "line": 151},
+  {"name": "CompPoly.CPolynomial.NTTFast.fastMulImpl_correct", "kind": "theorem", "line": 161},
+  {"name": "CompPoly.CPolynomial.NTTFast.fastMulImpl_eq_mul", "kind": "theorem", "line": 168},
+  {"name": "CompPoly.CPolynomial.NTTFast.safeFastMul_eq_mul", "kind": "theorem", "line": 176},
+  {"name": "CompPoly.CPolynomial.NTTFast.withFallback_eq_mul", "kind": "theorem", "line": 183}
+ ],
+ "private": [],
+ "missing": [],
+ "unread": "Unnamed instances, the names an `alias ⟨…⟩` command gives, and the names Lean generates for a declaration (constructors, recursors, derived instances) are not read from the source, so they are not listed."
+}

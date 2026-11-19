@@ -1,0 +1,25 @@
+{
+ "schema": "trough-ledger/v1",
+ "library": "CompPoly",
+ "repo": "Verified-zkEVM/CompPoly",
+ "rev": "afb9b1363984a70f10e24bd597f6ff40ebc8afbb",
+ "module": "CompPoly.Univariate.Roots.LasVegas.Probability.Uniform",
+ "file": "CompPoly/Univariate/Roots/LasVegas/Probability/Uniform.lean",
+ "public": [
+  {"name": "CompPoly.CPolynomial.Roots.FiniteField.uniformFieldIndexPMF", "kind": "def", "line": 41},
+  {"name": "CompPoly.CPolynomial.Roots.FiniteField.uniformFieldElementPMF", "kind": "def", "line": 58},
+  {"name": "CompPoly.CPolynomial.Roots.FiniteField.uniformFieldElementPMF_support_eq_univ", "kind": "theorem", "line": 64},
+  {"name": "CompPoly.CPolynomial.Roots.FiniteField.uniformFieldElementPMF_apply", "kind": "theorem", "line": 72},
+  {"name": "CompPoly.CPolynomial.Roots.FiniteField.uniformCoefficientArrayPMF", "kind": "def", "line": 96},
+  {"name": "CompPoly.CPolynomial.Roots.FiniteField.uniformProbePMF", "kind": "def", "line": 152},
+  {"name": "CompPoly.CPolynomial.Roots.FiniteField.uniformProbePMF_support_natDegree_lt", "kind": "theorem", "line": 162},
+  {"name": "CompPoly.CPolynomial.Roots.FiniteField.uniformProbePMF_eval_pair_apply", "kind": "theorem", "line": 418},
+  {"name": "CompPoly.CPolynomial.Roots.FiniteField.uniformProbeTablePMF", "kind": "def", "line": 434},
+  {"name": "CompPoly.CPolynomial.Roots.FiniteField.uniformFieldElementPMF_pair_apply", "kind": "theorem", "line": 443},
+  {"name": "CompPoly.CPolynomial.Roots.FiniteField.uniformProbePMF_map_eval_pair", "kind": "theorem", "line": 493},
+  {"name": "CompPoly.CPolynomial.Roots.FiniteField.uniformPair_separated_probability_ge_half_of_fiber_card_le", "kind": "theorem", "line": 520}
+ ],
+ "private": [],
+ "missing": [],
+ "unread": "Unnamed instances, the names an `alias ⟨…⟩` command gives, and the names Lean generates for a declaration (constructors, recursors, derived instances) are not read from the source, so they are not listed."
+}

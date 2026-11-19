@@ -1,0 +1,31 @@
+{
+ "schema": "trough-ledger/v1",
+ "library": "CompPoly",
+ "repo": "Verified-zkEVM/CompPoly",
+ "rev": "afb9b1363984a70f10e24bd597f6ff40ebc8afbb",
+ "module": "CompPoly.Fields.Binary.Tower.Concrete.Basis",
+ "file": "CompPoly/Fields/Binary/Tower/Concrete/Basis.lean",
+ "public": [
+  {"name": "ConcreteBinaryTower.Basis_cast_index_eq", "kind": "theorem", "line": 30},
+  {"name": "ConcreteBinaryTower.Basis_cast_dest_eq", "kind": "theorem", "line": 39},
+  {"name": "ConcreteBinaryTower.PowerBasis_cast_dest_eq", "kind": "theorem", "line": 48},
+  {"name": "ConcreteBinaryTower.Basis_cast_index_apply", "kind": "theorem", "line": 61},
+  {"name": "ConcreteBinaryTower.Basis_cast_dest_apply", "kind": "theorem", "line": 73},
+  {"name": "ConcreteBinaryTower.basisSucc", "kind": "def", "line": 87},
+  {"name": "ConcreteBinaryTower.powerBasisSucc", "kind": "def", "line": 167},
+  {"name": "ConcreteBinaryTower.powerBasisSucc_gen", "kind": "lemma", "line": 179},
+  {"name": "ConcreteBinaryTower.minPoly_of_powerBasisSucc_generator", "kind": "theorem", "line": 183},
+  {"name": "ConcreteBinaryTower.powerBasisSucc_dim", "kind": "lemma", "line": 270},
+  {"name": "ConcreteBinaryTower.hli_level_diff_0", "kind": "def", "line": 274},
+  {"name": "ConcreteBinaryTower.isScalarTower_succ_right", "kind": "def", "line": 307},
+  {"name": "ConcreteBinaryTower.multilinearBasis", "kind": "def", "line": 315},
+  {"name": "ConcreteBinaryTower.PowerBasis.dim_of_eq_rec", "kind": "theorem", "line": 367},
+  {"name": "ConcreteBinaryTower.PowerBasis.cast_basis_succ_of_eq_rec_apply", "kind": "theorem", "line": 383},
+  {"name": "ConcreteBinaryTower.coe_basis_apply", "kind": "theorem", "line": 421},
+  {"name": "ConcreteBinaryTower.algebraMap_𝕏_eq_of_index_eq", "kind": "lemma", "line": 426},
+  {"name": "ConcreteBinaryTower.multilinearBasis_apply", "kind": "theorem", "line": 439}
+ ],
+ "private": [],
+ "missing": [],
+ "unread": "Unnamed instances, the names an `alias ⟨…⟩` command gives, and the names Lean generates for a declaration (constructors, recursors, derived instances) are not read from the source, so they are not listed."
+}

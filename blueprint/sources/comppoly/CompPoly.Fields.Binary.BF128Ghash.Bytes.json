@@ -1,0 +1,16 @@
+{
+ "schema": "trough-ledger/v1",
+ "library": "CompPoly",
+ "repo": "Verified-zkEVM/CompPoly",
+ "rev": "afb9b1363984a70f10e24bd597f6ff40ebc8afbb",
+ "module": "CompPoly.Fields.Binary.BF128Ghash.Bytes",
+ "file": "CompPoly/Fields/Binary/BF128Ghash/Bytes.lean",
+ "public": [
+  {"name": "BF128Ghash.ConcreteBF128Ghash.canonicalNat_bound", "kind": "theorem", "line": 34},
+  {"name": "BF128Ghash.ConcreteBF128Ghash.canonicalNat_toNat", "kind": "theorem", "line": 36},
+  {"name": "BF128Ghash.ConcreteBF128Ghash.byteCodec_width", "kind": "theorem", "line": 39}
+ ],
+ "private": [],
+ "missing": [],
+ "unread": "Unnamed instances, the names an `alias ⟨…⟩` command gives, and the names Lean generates for a declaration (constructors, recursors, derived instances) are not read from the source, so they are not listed."
+}

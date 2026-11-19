@@ -1,0 +1,22 @@
+{
+ "schema": "trough-ledger/v1",
+ "library": "CompPoly",
+ "repo": "Verified-zkEVM/CompPoly",
+ "rev": "afb9b1363984a70f10e24bd597f6ff40ebc8afbb",
+ "module": "CompPoly.Fields.Binary.AdditiveNTT.CosetBridge",
+ "file": "CompPoly/Fields/Binary/AdditiveNTT/CosetBridge.lean",
+ "public": [
+  {"name": "AdditiveNTT.Coset.point_eq_sum_getBit", "kind": "theorem", "line": 47},
+  {"name": "AdditiveNTT.Coset.vanishing_eq_eval_W", "kind": "theorem", "line": 56},
+  {"name": "AdditiveNTT.Coset.normalized_eq_eval_normalizedW", "kind": "theorem", "line": 63},
+  {"name": "AdditiveNTT.Coset.novel_eq_eval_Xⱼ", "kind": "theorem", "line": 70},
+  {"name": "AdditiveNTT.Coset.novelEval_eq_eval_polynomialFromNovelCoeffs", "kind": "theorem", "line": 81},
+  {"name": "AdditiveNTT.Coset.independent_of_linearIndependent", "kind": "theorem", "line": 90},
+  {"name": "AdditiveNTT.Coset.evaluationPointω_eq_point", "kind": "theorem", "line": 101},
+  {"name": "AdditiveNTT.Coset.additiveNTT_eq_ntt", "kind": "theorem", "line": 122},
+  {"name": "AdditiveNTT.Coset.inetwork_additiveNTT", "kind": "theorem", "line": 133}
+ ],
+ "private": [],
+ "missing": [],
+ "unread": "Unnamed instances, the names an `alias ⟨…⟩` command gives, and the names Lean generates for a declaration (constructors, recursors, derived instances) are not read from the source, so they are not listed."
+}

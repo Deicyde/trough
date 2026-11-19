@@ -1,0 +1,19 @@
+{
+ "schema": "trough-ledger/v1",
+ "library": "CompPoly",
+ "repo": "Verified-zkEVM/CompPoly",
+ "rev": "afb9b1363984a70f10e24bd597f6ff40ebc8afbb",
+ "module": "CompPoly.ToMathlib.Polynomial.BivariateWeightedDegree",
+ "file": "CompPoly/ToMathlib/Polynomial/BivariateWeightedDegree.lean",
+ "public": [
+  {"name": "Polynomial.Bivariate.monomial", "kind": "def", "line": 35},
+  {"name": "Polynomial.Bivariate.natWeightedDegree_add_le", "kind": "lemma", "line": 39},
+  {"name": "Polynomial.Bivariate.natWeightedDegree_sum_le", "kind": "lemma", "line": 65},
+  {"name": "Polynomial.Bivariate.natWeightedDegree_smul_le", "kind": "lemma", "line": 76},
+  {"name": "Polynomial.Bivariate.degree_eval_le_weightedDegree", "kind": "lemma", "line": 90},
+  {"name": "Polynomial.Bivariate.natWeightedDegree_monomial", "kind": "lemma", "line": 113}
+ ],
+ "private": [],
+ "missing": [],
+ "unread": "Unnamed instances, the names an `alias ⟨…⟩` command gives, and the names Lean generates for a declaration (constructors, recursors, derived instances) are not read from the source, so they are not listed."
+}

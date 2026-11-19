@@ -1,0 +1,22 @@
+{
+ "schema": "trough-ledger/v1",
+ "library": "CompPoly",
+ "repo": "Verified-zkEVM/CompPoly",
+ "rev": "afb9b1363984a70f10e24bd597f6ff40ebc8afbb",
+ "module": "CompPoly.Data.Bytes.Bias",
+ "file": "CompPoly/Data/Bytes/Bias.lean",
+ "public": [
+  {"name": "CompPoly.Bytes.equivFin", "kind": "def", "line": 39},
+  {"name": "CompPoly.Bytes.instFintypeVectorUInt8", "kind": "instance", "line": 46},
+  {"name": "CompPoly.Bytes.card_vector_uint8", "kind": "theorem", "line": 49},
+  {"name": "CompPoly.CanonicalNat.ofNat_eq_iff", "kind": "theorem", "line": 60},
+  {"name": "CompPoly.CanonicalNat.fiberEquiv", "kind": "def", "line": 69},
+  {"name": "CompPoly.CanonicalNat.instFintypeFiber", "kind": "instance", "line": 88},
+  {"name": "CompPoly.CanonicalNat.card_fiber_ofBytesModOrder", "kind": "theorem", "line": 96},
+  {"name": "CompPoly.CanonicalNat.abs_card_fiber_div_sub_le", "kind": "theorem", "line": 105},
+  {"name": "CompPoly.CanonicalNat.tv_ofBytesModOrder_le", "kind": "theorem", "line": 139}
+ ],
+ "private": [],
+ "missing": [],
+ "unread": "Unnamed instances, the names an `alias ⟨…⟩` command gives, and the names Lean generates for a declaration (constructors, recursors, derived instances) are not read from the source, so they are not listed."
+}

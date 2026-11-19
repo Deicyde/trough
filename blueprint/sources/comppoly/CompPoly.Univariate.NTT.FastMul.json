@@ -1,0 +1,30 @@
+{
+ "schema": "trough-ledger/v1",
+ "library": "CompPoly",
+ "repo": "Verified-zkEVM/CompPoly",
+ "rev": "afb9b1363984a70f10e24bd597f6ff40ebc8afbb",
+ "module": "CompPoly.Univariate.NTT.FastMul",
+ "file": "CompPoly/Univariate/NTT/FastMul.lean",
+ "public": [
+  {"name": "CompPoly.CPolynomial.NTT.FastMul.pointwiseMul", "kind": "def", "line": 33},
+  {"name": "CompPoly.CPolynomial.NTT.FastMul.size_pointwiseMul", "kind": "theorem", "line": 36},
+  {"name": "CompPoly.CPolynomial.NTT.FastMul.Raw.fastMulSpec", "kind": "def", "line": 178},
+  {"name": "CompPoly.CPolynomial.NTT.FastMul.Raw.fastMulImpl", "kind": "def", "line": 212},
+  {"name": "CompPoly.CPolynomial.NTT.FastMul.Raw.fastMulImpl_correct", "kind": "theorem", "line": 220},
+  {"name": "CompPoly.CPolynomial.NTT.FastMul.Raw.fastMulSpec_coeff", "kind": "theorem", "line": 224},
+  {"name": "CompPoly.CPolynomial.NTT.FastMul.Raw.fastMulSpec_trim_eq_mul", "kind": "theorem", "line": 264},
+  {"name": "CompPoly.CPolynomial.NTT.FastMul.Raw.fastMulImpl_trim_eq_mul", "kind": "theorem", "line": 275},
+  {"name": "CompPoly.CPolynomial.NTT.FastMul.fastMulSpec", "kind": "def", "line": 284},
+  {"name": "CompPoly.CPolynomial.NTT.FastMul.fastMulImpl", "kind": "def", "line": 295},
+  {"name": "CompPoly.CPolynomial.NTT.FastMul.safeFastMul", "kind": "def", "line": 305},
+  {"name": "CompPoly.CPolynomial.NTT.FastMul.fastMulImpl_correct", "kind": "theorem", "line": 310},
+  {"name": "CompPoly.CPolynomial.NTT.FastMul.fastMulSpec_eq_mul", "kind": "theorem", "line": 315},
+  {"name": "CompPoly.CPolynomial.NTT.FastMul.fastMulImpl_eq_mul", "kind": "theorem", "line": 320},
+  {"name": "CompPoly.CPolynomial.NTT.FastMul.safeFastMul_eq_mul", "kind": "theorem", "line": 331},
+  {"name": "CompPoly.CPolynomial.NTT.FastMul.withFallback", "kind": "def", "line": 342},
+  {"name": "CompPoly.CPolynomial.NTT.FastMul.withFallback_eq_mul", "kind": "theorem", "line": 352}
+ ],
+ "private": [],
+ "missing": [],
+ "unread": "Unnamed instances, the names an `alias ⟨…⟩` command gives, and the names Lean generates for a declaration (constructors, recursors, derived instances) are not read from the source, so they are not listed."
+}

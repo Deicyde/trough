@@ -1,0 +1,28 @@
+{
+ "schema": "trough-ledger/v1",
+ "library": "CompPoly",
+ "repo": "Verified-zkEVM/CompPoly",
+ "rev": "afb9b1363984a70f10e24bd597f6ff40ebc8afbb",
+ "module": "CompPoly.Fields.Binary.Tower.Concrete.Coordinates",
+ "file": "CompPoly/Fields/Binary/Tower/Concrete/Coordinates.lean",
+ "public": [
+  {"name": "ConcreteBinaryTower.Coordinates.low", "kind": "def", "line": 41},
+  {"name": "ConcreteBinaryTower.Coordinates.high", "kind": "def", "line": 45},
+  {"name": "ConcreteBinaryTower.Coordinates.joinSucc", "kind": "def", "line": 49},
+  {"name": "ConcreteBinaryTower.Coordinates.low_joinSucc", "kind": "theorem", "line": 53},
+  {"name": "ConcreteBinaryTower.Coordinates.high_joinSucc", "kind": "theorem", "line": 58},
+  {"name": "ConcreteBinaryTower.Coordinates.joinSucc_low_high", "kind": "theorem", "line": 63},
+  {"name": "ConcreteBinaryTower.Coordinates.low_add", "kind": "theorem", "line": 68},
+  {"name": "ConcreteBinaryTower.Coordinates.high_add", "kind": "theorem", "line": 74},
+  {"name": "ConcreteBinaryTower.Coordinates.joinSucc_eq_map_mul_add", "kind": "theorem", "line": 80},
+  {"name": "ConcreteBinaryTower.Coordinates.smul_joinSucc", "kind": "theorem", "line": 88},
+  {"name": "ConcreteBinaryTower.Coordinates.low_smul", "kind": "theorem", "line": 96},
+  {"name": "ConcreteBinaryTower.Coordinates.high_smul", "kind": "theorem", "line": 103},
+  {"name": "ConcreteBinaryTower.Coordinates.succCoordinates", "kind": "def", "line": 111},
+  {"name": "ConcreteBinaryTower.Coordinates.succCoordinates_apply", "kind": "theorem", "line": 136},
+  {"name": "ConcreteBinaryTower.Coordinates.succCoordinates_symm_apply", "kind": "theorem", "line": 142}
+ ],
+ "private": [],
+ "missing": [],
+ "unread": "Unnamed instances, the names an `alias ⟨…⟩` command gives, and the names Lean generates for a declaration (constructors, recursors, derived instances) are not read from the source, so they are not listed."
+}

@@ -1,0 +1,19 @@
+{
+ "schema": "trough-ledger/v1",
+ "library": "CompPoly",
+ "repo": "Verified-zkEVM/CompPoly",
+ "rev": "afb9b1363984a70f10e24bd597f6ff40ebc8afbb",
+ "module": "CompPoly.Fields.Goldilocks.Bytes",
+ "file": "CompPoly/Fields/Goldilocks/Bytes.lean",
+ "public": [
+  {"name": "Goldilocks.Fast.toNat_lt", "kind": "theorem", "line": 25},
+  {"name": "Goldilocks.Fast.ofField_cast_toNat", "kind": "theorem", "line": 27},
+  {"name": "Goldilocks.Fast.canonicalNat_bound", "kind": "theorem", "line": 35},
+  {"name": "Goldilocks.Fast.canonicalNat_toNat", "kind": "theorem", "line": 37},
+  {"name": "Goldilocks.Fast.byteCodec_width", "kind": "theorem", "line": 39},
+  {"name": "Goldilocks.Fast.toBytes_ofField", "kind": "theorem", "line": 42}
+ ],
+ "private": [],
+ "missing": [],
+ "unread": "Unnamed instances, the names an `alias ⟨…⟩` command gives, and the names Lean generates for a declaration (constructors, recursors, derived instances) are not read from the source, so they are not listed."
+}

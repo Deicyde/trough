@@ -1,0 +1,17 @@
+{
+ "schema": "trough-ledger/v1",
+ "library": "CompPoly",
+ "repo": "Verified-zkEVM/CompPoly",
+ "rev": "afb9b1363984a70f10e24bd597f6ff40ebc8afbb",
+ "module": "CompPoly.Bivariate.GuruswamiSudan.Filter",
+ "file": "CompPoly/Bivariate/GuruswamiSudan/Filter.lean",
+ "public": [
+  {"name": "CompPoly.GuruswamiSudan.candidateMismatchCount", "kind": "def", "line": 23},
+  {"name": "CompPoly.GuruswamiSudan.matchingPointCount", "kind": "def", "line": 31},
+  {"name": "CompPoly.GuruswamiSudan.passesCandidateDistance", "kind": "def", "line": 39},
+  {"name": "CompPoly.GuruswamiSudan.gsFilteredCore", "kind": "def", "line": 45}
+ ],
+ "private": [],
+ "missing": [],
+ "unread": "Unnamed instances, the names an `alias ⟨…⟩` command gives, and the names Lean generates for a declaration (constructors, recursors, derived instances) are not read from the source, so they are not listed."
+}

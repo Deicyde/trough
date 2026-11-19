@@ -1,0 +1,32 @@
+{
+ "schema": "trough-ledger/v1",
+ "library": "CompPoly",
+ "repo": "Verified-zkEVM/CompPoly",
+ "rev": "afb9b1363984a70f10e24bd597f6ff40ebc8afbb",
+ "module": "CompPoly.LinearAlgebra.PolynomialMatrix.MuldersStorjohann",
+ "file": "CompPoly/LinearAlgebra/PolynomialMatrix/MuldersStorjohann.lean",
+ "public": [
+  {"name": "CompPoly.PolynomialMatrix.shiftedLeadingConflictInRowStep?", "kind": "def", "line": 30},
+  {"name": "CompPoly.PolynomialMatrix.shiftedLeadingConflictInRow?", "kind": "def", "line": 43},
+  {"name": "CompPoly.PolynomialMatrix.shiftedLeadingConflictFromStep?", "kind": "def", "line": 51},
+  {"name": "CompPoly.PolynomialMatrix.shiftedLeadingConflictFrom?", "kind": "def", "line": 57},
+  {"name": "CompPoly.PolynomialMatrix.shiftedLeadingConflict?", "kind": "def", "line": 65},
+  {"name": "CompPoly.PolynomialMatrix.cancelShiftedLeadingTerm", "kind": "def", "line": 70},
+  {"name": "CompPoly.PolynomialMatrix.muldersStorjohannStep", "kind": "def", "line": 85},
+  {"name": "CompPoly.PolynomialMatrix.muldersStorjohannReduceWithFuel", "kind": "def", "line": 98},
+  {"name": "CompPoly.PolynomialMatrix.matrixShiftedDegree?", "kind": "def", "line": 109},
+  {"name": "CompPoly.PolynomialMatrix.muldersStorjohannFuel", "kind": "def", "line": 118},
+  {"name": "CompPoly.PolynomialMatrix.muldersStorjohannReduce", "kind": "def", "line": 123},
+  {"name": "CompPoly.PolynomialMatrix.rowLeadingPositions", "kind": "def", "line": 139},
+  {"name": "CompPoly.PolynomialMatrix.cachedLeadingConflictInRowStep?", "kind": "def", "line": 144},
+  {"name": "CompPoly.PolynomialMatrix.cachedLeadingConflictInRow?", "kind": "def", "line": 156},
+  {"name": "CompPoly.PolynomialMatrix.cachedLeadingConflict?", "kind": "def", "line": 164},
+  {"name": "CompPoly.PolynomialMatrix.cancelShiftedLeadingTermFast", "kind": "def", "line": 171},
+  {"name": "CompPoly.PolynomialMatrix.muldersStorjohannStepFast", "kind": "def", "line": 185},
+  {"name": "CompPoly.PolynomialMatrix.muldersStorjohannReduceWithFuelFast", "kind": "def", "line": 198},
+  {"name": "CompPoly.PolynomialMatrix.muldersStorjohannReduceFast", "kind": "def", "line": 210}
+ ],
+ "private": [],
+ "missing": [],
+ "unread": "Unnamed instances, the names an `alias ⟨…⟩` command gives, and the names Lean generates for a declaration (constructors, recursors, derived instances) are not read from the source, so they are not listed."
+}

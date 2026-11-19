@@ -1,0 +1,17 @@
+{
+ "schema": "trough-ledger/v1",
+ "library": "CompPoly",
+ "repo": "Verified-zkEVM/CompPoly",
+ "rev": "afb9b1363984a70f10e24bd597f6ff40ebc8afbb",
+ "module": "CompPoly.Data.Polynomial.MonomialBasis",
+ "file": "CompPoly/Data/Polynomial/MonomialBasis.lean",
+ "public": [
+  {"name": "Polynomial.sum_degreeLT_monomial_eq_subtype", "kind": "theorem", "line": 35},
+  {"name": "Polynomial.monomialBasisOfDegreeLT", "kind": "def", "line": 44},
+  {"name": "Polynomial.finrank_degreeLT_n", "kind": "theorem", "line": 129},
+  {"name": "Polynomial.finiteDimensional_degreeLT", "kind": "theorem", "line": 134}
+ ],
+ "private": [],
+ "missing": [],
+ "unread": "Unnamed instances, the names an `alias ⟨…⟩` command gives, and the names Lean generates for a declaration (constructors, recursors, derived instances) are not read from the source, so they are not listed."
+}

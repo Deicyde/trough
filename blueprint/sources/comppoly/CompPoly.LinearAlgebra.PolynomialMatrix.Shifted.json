@@ -1,0 +1,24 @@
+{
+ "schema": "trough-ledger/v1",
+ "library": "CompPoly",
+ "repo": "Verified-zkEVM/CompPoly",
+ "rev": "afb9b1363984a70f10e24bd597f6ff40ebc8afbb",
+ "module": "CompPoly.LinearAlgebra.PolynomialMatrix.Shifted",
+ "file": "CompPoly/LinearAlgebra/PolynomialMatrix/Shifted.lean",
+ "public": [
+  {"name": "CompPoly.PolynomialMatrix.ShiftedLeadingTerm", "kind": "structure", "line": 23},
+  {"name": "CompPoly.PolynomialMatrix.maxOption", "kind": "def", "line": 31},
+  {"name": "CompPoly.PolynomialMatrix.shiftedEntryDegree?", "kind": "def", "line": 36},
+  {"name": "CompPoly.PolynomialMatrix.rowShiftedDegree?", "kind": "def", "line": 42},
+  {"name": "CompPoly.PolynomialMatrix.rowShiftedLeadingPosition?", "kind": "def", "line": 52},
+  {"name": "CompPoly.PolynomialMatrix.rowShiftedLeadingTerm?", "kind": "def", "line": 63},
+  {"name": "CompPoly.PolynomialMatrix.shiftedEntryDegree?_eq_some_iff", "kind": "theorem", "line": 86},
+  {"name": "CompPoly.PolynomialMatrix.rowShiftedDegree?_eq_none_iff", "kind": "theorem", "line": 238},
+  {"name": "CompPoly.PolynomialMatrix.shiftedEntryDegree?_le_of_rowShiftedDegree?_eq_some", "kind": "theorem", "line": 252},
+  {"name": "CompPoly.PolynomialMatrix.exists_shiftedEntryDegree?_eq_of_rowShiftedDegree?_eq_some", "kind": "theorem", "line": 263},
+  {"name": "CompPoly.PolynomialMatrix.ShiftedWeakPopov", "kind": "def", "line": 276}
+ ],
+ "private": [],
+ "missing": [],
+ "unread": "Unnamed instances, the names an `alias ⟨…⟩` command gives, and the names Lean generates for a declaration (constructors, recursors, derived instances) are not read from the source, so they are not listed."
+}

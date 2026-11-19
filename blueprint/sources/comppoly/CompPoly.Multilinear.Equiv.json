@@ -1,0 +1,26 @@
+{
+ "schema": "trough-ledger/v1",
+ "library": "CompPoly",
+ "repo": "Verified-zkEVM/CompPoly",
+ "rev": "afb9b1363984a70f10e24bd597f6ff40ebc8afbb",
+ "module": "CompPoly.Multilinear.Equiv",
+ "file": "CompPoly/Multilinear/Equiv.lean",
+ "public": [
+  {"name": "CompPoly.CMlPolynomial.monomialOfNat", "kind": "def", "line": 42},
+  {"name": "CompPoly.CMlPolynomial.eq_monomialOfNat_iff_eq_bitRepr", "kind": "theorem", "line": 46},
+  {"name": "CompPoly.CMlPolynomial.toMvPolynomial", "kind": "def", "line": 87},
+  {"name": "CompPoly.CMlPolynomial.toMvPolynomial_is_multilinear", "kind": "theorem", "line": 92},
+  {"name": "CompPoly.CMlPolynomial.coeff_of_toMvPolynomial_eq_coeff_of_CMlPolynomial", "kind": "theorem", "line": 123},
+  {"name": "CompPoly.CMlPolynomial.toMvPolynomialDeg1", "kind": "def", "line": 183},
+  {"name": "CompPoly.CMlPolynomial.ofMvPolynomialDeg1", "kind": "def", "line": 190},
+  {"name": "CompPoly.CMlPolynomial.equivMvPolynomialDeg1", "kind": "def", "line": 200},
+  {"name": "CompPoly.CMlPolynomial.linearEquivMvPolynomialDeg1", "kind": "def", "line": 299},
+  {"name": "CompPoly.CMlPolynomialEval.toMvPolynomial", "kind": "def", "line": 337},
+  {"name": "CompPoly.CMlPolynomialEval.toMvPolynomialDeg1", "kind": "def", "line": 342},
+  {"name": "CompPoly.CMlPolynomialEval.eqPolynomial", "kind": "def", "line": 347},
+  {"name": "CompPoly.CMlPolynomialEval.eqPolynomialDeg1", "kind": "def", "line": 351}
+ ],
+ "private": [],
+ "missing": [],
+ "unread": "Unnamed instances, the names an `alias ⟨…⟩` command gives, and the names Lean generates for a declaration (constructors, recursors, derived instances) are not read from the source, so they are not listed."
+}

@@ -1,0 +1,30 @@
+{
+ "schema": "trough-ledger/v1",
+ "library": "CompPoly",
+ "repo": "Verified-zkEVM/CompPoly",
+ "rev": "afb9b1363984a70f10e24bd597f6ff40ebc8afbb",
+ "module": "CompPoly.Univariate.Roots.SmoothSubgroup.Correctness",
+ "file": "CompPoly/Univariate/Roots/SmoothSubgroup/Correctness.lean",
+ "public": [
+  {"name": "CompPoly.CPolynomial.Roots.FiniteField.finiteFieldRootProductWith_smoothSplitterInput", "kind": "theorem", "line": 33},
+  {"name": "CompPoly.CPolynomial.Roots.FiniteField.smoothLinearFactorProductSplitterWith_sound", "kind": "theorem", "line": 47},
+  {"name": "CompPoly.CPolynomial.Roots.FiniteField.smoothLinearFactorProductSplitterWith_complete", "kind": "theorem", "line": 57},
+  {"name": "CompPoly.CPolynomial.Roots.FiniteField.smooth_zero_root_factor_sound", "kind": "theorem", "line": 70},
+  {"name": "CompPoly.CPolynomial.Roots.FiniteField.smoothLeafLinearFactors_complete", "kind": "theorem", "line": 185},
+  {"name": "CompPoly.CPolynomial.Roots.FiniteField.smoothCosetLinearFactorsWithSchedule_sound", "kind": "theorem", "line": 213},
+  {"name": "CompPoly.CPolynomial.Roots.FiniteField.smoothLinearFactorsAlgorithmWith_sound", "kind": "theorem", "line": 309},
+  {"name": "CompPoly.CPolynomial.Roots.FiniteField.smooth_coset_split_root_partition_mod", "kind": "theorem", "line": 339},
+  {"name": "CompPoly.CPolynomial.Roots.FiniteField.smooth_coset_split_root_partition", "kind": "theorem", "line": 376},
+  {"name": "CompPoly.CPolynomial.Roots.FiniteField.exists_generator_pow_of_order_eq_card_sub_one", "kind": "theorem", "line": 392},
+  {"name": "CompPoly.CPolynomial.Roots.FiniteField.SmoothCosetInvariant", "kind": "def", "line": 432},
+  {"name": "CompPoly.CPolynomial.Roots.FiniteField.smooth_schedule_recursion_preserves_coset_invariant", "kind": "theorem", "line": 441},
+  {"name": "CompPoly.CPolynomial.Roots.FiniteField.SmoothScheduleDivides", "kind": "def", "line": 469},
+  {"name": "CompPoly.CPolynomial.Roots.FiniteField.instDecidableSmoothScheduleDivides", "kind": "instance", "line": 479},
+  {"name": "CompPoly.CPolynomial.Roots.FiniteField.smooth_schedule_reaches_singleton", "kind": "theorem", "line": 498},
+  {"name": "CompPoly.CPolynomial.Roots.FiniteField.smoothCosetLinearFactorsWithSchedule_complete", "kind": "theorem", "line": 505},
+  {"name": "CompPoly.CPolynomial.Roots.FiniteField.smoothLinearFactorsAlgorithmWith_complete", "kind": "theorem", "line": 704}
+ ],
+ "private": [],
+ "missing": [],
+ "unread": "Unnamed instances, the names an `alias ⟨…⟩` command gives, and the names Lean generates for a declaration (constructors, recursors, derived instances) are not read from the source, so they are not listed."
+}

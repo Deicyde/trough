@@ -1,0 +1,33 @@
+{
+ "schema": "trough-ledger/v1",
+ "library": "CompPoly",
+ "repo": "Verified-zkEVM/CompPoly",
+ "rev": "afb9b1363984a70f10e24bd597f6ff40ebc8afbb",
+ "module": "CompPoly.Multivariate.Restrict",
+ "file": "CompPoly/Multivariate/Restrict.lean",
+ "public": [
+  {"name": "CPoly.coeff_restrictBy", "kind": "lemma", "line": 31},
+  {"name": "CPoly.coeff_restrictTotalDegreeOf", "kind": "lemma", "line": 59},
+  {"name": "CPoly.coeff_restrictDegreeOf", "kind": "lemma", "line": 68},
+  {"name": "CPoly.coeff_restrictTotalDegreeOf_eq_self_of_le", "kind": "lemma", "line": 75},
+  {"name": "CPoly.coeff_restrictTotalDegreeOf_eq_zero_of_lt", "kind": "lemma", "line": 81},
+  {"name": "CPoly.coeff_restrictDegreeOf_eq_self_of_le", "kind": "lemma", "line": 87},
+  {"name": "CPoly.coeff_restrictDegreeOf_eq_zero_of_not_le", "kind": "lemma", "line": 93},
+  {"name": "CPoly.totalDegree_le_of_mem_monomials_restrictTotalDegreeOf", "kind": "lemma", "line": 99},
+  {"name": "CPoly.degreeOf_le_of_mem_monomials_restrictDegreeOf", "kind": "lemma", "line": 115},
+  {"name": "CPoly.totalDegree_restrictTotalDegreeOf_le", "kind": "lemma", "line": 180},
+  {"name": "CPoly.degreeOf_restrictDegreeOf_le", "kind": "lemma", "line": 197},
+  {"name": "CPoly.restrictTotalDegreeOf_zero", "kind": "lemma", "line": 207},
+  {"name": "CPoly.restrictDegreeOf_zero", "kind": "lemma", "line": 215},
+  {"name": "CPoly.restrictTotalDegreeOf_restrictTotalDegreeOf", "kind": "lemma", "line": 223},
+  {"name": "CPoly.restrictDegreeOf_restrictDegreeOf", "kind": "lemma", "line": 232},
+  {"name": "CPoly.restrictTotalDegreeOf_restrictDegreeOf_comm", "kind": "lemma", "line": 256},
+  {"name": "CPoly.fromCMvPolynomial_restrictTotalDegreeOf_mem", "kind": "theorem", "line": 267},
+  {"name": "CPoly.fromCMvPolynomial_restrictDegreeOf_mem", "kind": "theorem", "line": 275},
+  {"name": "CPoly.restrictDegree", "kind": "def", "line": 287},
+  {"name": "CPoly.restrictDegree_elem", "kind": "lemma", "line": 320}
+ ],
+ "private": [],
+ "missing": [],
+ "unread": "Unnamed instances, the names an `alias ⟨…⟩` command gives, and the names Lean generates for a declaration (constructors, recursors, derived instances) are not read from the source, so they are not listed."
+}

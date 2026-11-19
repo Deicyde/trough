@@ -1,0 +1,19 @@
+{
+ "schema": "trough-ledger/v1",
+ "library": "CompPoly",
+ "repo": "Verified-zkEVM/CompPoly",
+ "rev": "afb9b1363984a70f10e24bd597f6ff40ebc8afbb",
+ "module": "CompPoly.Fields.Basic",
+ "file": "CompPoly/Fields/Basic.lean",
+ "public": [
+  {"name": "NonBinaryField", "kind": "class", "line": 22},
+  {"name": "two_mul_inv_two", "kind": "lemma", "line": 34},
+  {"name": "inv_two_mul_two", "kind": "lemma", "line": 37},
+  {"name": "coeffs_of_comp_minus_x", "kind": "theorem", "line": 55},
+  {"name": "comp_x_square_coeff", "kind": "theorem", "line": 79},
+  {"name": "eq_poly_deg_one", "kind": "lemma", "line": 90}
+ ],
+ "private": [],
+ "missing": [],
+ "unread": "Unnamed instances, the names an `alias ⟨…⟩` command gives, and the names Lean generates for a declaration (constructors, recursors, derived instances) are not read from the source, so they are not listed."
+}

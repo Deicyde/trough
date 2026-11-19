@@ -1,0 +1,19 @@
+{
+ "schema": "trough-ledger/v1",
+ "library": "CompPoly",
+ "repo": "Verified-zkEVM/CompPoly",
+ "rev": "afb9b1363984a70f10e24bd597f6ff40ebc8afbb",
+ "module": "CompPoly.Fields.Binary.Aes.Certificate",
+ "file": "CompPoly/Fields/Binary/Aes/Certificate.lean",
+ "public": [
+  {"name": "AesField.Certificate.traceSteps", "kind": "def", "line": 40},
+  {"name": "AesField.Certificate.cop4Steps", "kind": "def", "line": 53},
+  {"name": "AesField.Certificate.cop4Rp", "kind": "def", "line": 60},
+  {"name": "AesField.Certificate.cop4W", "kind": "def", "line": 63},
+  {"name": "AesField.Certificate.cop4U", "kind": "def", "line": 66},
+  {"name": "AesField.Certificate.cop4V", "kind": "def", "line": 69}
+ ],
+ "private": [],
+ "missing": [],
+ "unread": "Unnamed instances, the names an `alias ⟨…⟩` command gives, and the names Lean generates for a declaration (constructors, recursors, derived instances) are not read from the source, so they are not listed."
+}

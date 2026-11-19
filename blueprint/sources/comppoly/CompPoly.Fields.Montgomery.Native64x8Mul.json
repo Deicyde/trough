@@ -1,0 +1,23 @@
+{
+ "schema": "trough-ledger/v1",
+ "library": "CompPoly",
+ "repo": "Verified-zkEVM/CompPoly",
+ "rev": "afb9b1363984a70f10e24bd597f6ff40ebc8afbb",
+ "module": "CompPoly.Fields.Montgomery.Native64x8Mul",
+ "file": "CompPoly/Fields/Montgomery/Native64x8Mul.lean",
+ "public": [
+  {"name": "Montgomery.Native64x8.sum8_mul", "kind": "theorem", "line": 40},
+  {"name": "Montgomery.Native64x8.mul_sum8", "kind": "theorem", "line": 48},
+  {"name": "Montgomery.Native64x8.Limbs8.toNat_mod", "kind": "theorem", "line": 56},
+  {"name": "Montgomery.Native64x8.State9.zero_bounded", "kind": "theorem", "line": 95},
+  {"name": "Montgomery.Native64x8.State9.zero_toNat", "kind": "theorem", "line": 99},
+  {"name": "Montgomery.Native64x8.State9.toNat_eq", "kind": "theorem", "line": 103},
+  {"name": "Montgomery.Native64x8.mulAccum_spec", "kind": "theorem", "line": 113},
+  {"name": "Montgomery.Native64x8.mulReduce_spec", "kind": "theorem", "line": 162},
+  {"name": "Montgomery.Native64x8.mulRound_spec", "kind": "theorem", "line": 218},
+  {"name": "Montgomery.Native64x8.mul_spec", "kind": "theorem", "line": 273}
+ ],
+ "private": [],
+ "missing": [],
+ "unread": "Unnamed instances, the names an `alias ⟨…⟩` command gives, and the names Lean generates for a declaration (constructors, recursors, derived instances) are not read from the source, so they are not listed."
+}

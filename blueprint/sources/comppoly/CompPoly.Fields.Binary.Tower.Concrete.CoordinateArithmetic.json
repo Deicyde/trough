@@ -1,0 +1,24 @@
+{
+ "schema": "trough-ledger/v1",
+ "library": "CompPoly",
+ "repo": "Verified-zkEVM/CompPoly",
+ "rev": "afb9b1363984a70f10e24bd597f6ff40ebc8afbb",
+ "module": "CompPoly.Fields.Binary.Tower.Concrete.CoordinateArithmetic",
+ "file": "CompPoly/Fields/Binary/Tower/Concrete/CoordinateArithmetic.lean",
+ "public": [
+  {"name": "ConcreteBinaryTower.Coordinates.joinSucc_mul_joinSucc", "kind": "theorem", "line": 33},
+  {"name": "ConcreteBinaryTower.Coordinates.low_mul", "kind": "theorem", "line": 43},
+  {"name": "ConcreteBinaryTower.Coordinates.high_mul", "kind": "theorem", "line": 49},
+  {"name": "ConcreteBinaryTower.Coordinates.conjugate", "kind": "def", "line": 56},
+  {"name": "ConcreteBinaryTower.Coordinates.norm", "kind": "def", "line": 60},
+  {"name": "ConcreteBinaryTower.Coordinates.conjugate_eq_joinSucc", "kind": "theorem", "line": 64},
+  {"name": "ConcreteBinaryTower.Coordinates.norm_eq", "kind": "theorem", "line": 68},
+  {"name": "ConcreteBinaryTower.Coordinates.mul_conjugate", "kind": "theorem", "line": 72},
+  {"name": "ConcreteBinaryTower.Coordinates.conjugate_conjugate", "kind": "theorem", "line": 86},
+  {"name": "ConcreteBinaryTower.Coordinates.norm_ne_zero", "kind": "theorem", "line": 92},
+  {"name": "ConcreteBinaryTower.Coordinates.inv_eq_joinSucc", "kind": "theorem", "line": 97}
+ ],
+ "private": [],
+ "missing": [],
+ "unread": "Unnamed instances, the names an `alias ⟨…⟩` command gives, and the names Lean generates for a declaration (constructors, recursors, derived instances) are not read from the source, so they are not listed."
+}

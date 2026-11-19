@@ -1,0 +1,24 @@
+{
+ "schema": "trough-ledger/v1",
+ "library": "CompPoly",
+ "repo": "Verified-zkEVM/CompPoly",
+ "rev": "afb9b1363984a70f10e24bd597f6ff40ebc8afbb",
+ "module": "CompPoly.Fields.Extension.Field",
+ "file": "CompPoly/Fields/Extension/Field.lean",
+ "public": [
+  {"name": "CompPoly.Extension.Ext.instNontrivial", "kind": "instance", "line": 53},
+  {"name": "CompPoly.Extension.Ext.four_le_card_pow", "kind": "theorem", "line": 60},
+  {"name": "CompPoly.Extension.Ext.toQuot_surjective", "kind": "theorem", "line": 69},
+  {"name": "CompPoly.Extension.Ext.toQuot_bijective", "kind": "theorem", "line": 89},
+  {"name": "CompPoly.Extension.Ext.ringEquivQuot", "kind": "def", "line": 93},
+  {"name": "CompPoly.Extension.Ext.ringEquivQuot_apply", "kind": "theorem", "line": 96},
+  {"name": "CompPoly.Extension.Ext.instFintypeQuot", "kind": "instance", "line": 99},
+  {"name": "CompPoly.Extension.Ext.card_quot", "kind": "theorem", "line": 102},
+  {"name": "CompPoly.Extension.Ext.inv_zero'", "kind": "theorem", "line": 112},
+  {"name": "CompPoly.Extension.Ext.mul_inv_cancel'", "kind": "theorem", "line": 122},
+  {"name": "CompPoly.Extension.Ext.instField", "kind": "instance", "line": 137}
+ ],
+ "private": [],
+ "missing": [],
+ "unread": "Unnamed instances, the names an `alias ⟨…⟩` command gives, and the names Lean generates for a declaration (constructors, recursors, derived instances) are not read from the source, so they are not listed."
+}

@@ -1,0 +1,21 @@
+{
+ "schema": "trough-ledger/v1",
+ "library": "CompPoly",
+ "repo": "Verified-zkEVM/CompPoly",
+ "rev": "afb9b1363984a70f10e24bd597f6ff40ebc8afbb",
+ "module": "CompPoly.Bivariate.GuruswamiSudan.Interpolation.ApproximantBasis.Multiplicity",
+ "file": "CompPoly/Bivariate/GuruswamiSudan/Interpolation/ApproximantBasis/Multiplicity.lean",
+ "public": [
+  {"name": "CompPoly.GuruswamiSudan.ApproximantBasis.X_sub_C_pow_dvd_iff_hasseDeriv_eval_eq_zero", "kind": "theorem", "line": 53},
+  {"name": "CompPoly.GuruswamiSudan.ApproximantBasis.X_sub_C_pow_dvd_hasseDeriv_eval_of_dvd_sub", "kind": "theorem", "line": 70},
+  {"name": "CompPoly.GuruswamiSudan.ApproximantBasis.X_sub_C_pow_dvd_hasseDeriv_eval_iff_hasMultiplicity", "kind": "theorem", "line": 113},
+  {"name": "CompPoly.GuruswamiSudan.ApproximantBasis.linearFactor_toPoly_eq", "kind": "theorem", "line": 151},
+  {"name": "CompPoly.GuruswamiSudan.ApproximantBasis.vanishingPolynomialArray_toPoly", "kind": "theorem", "line": 173},
+  {"name": "CompPoly.GuruswamiSudan.ApproximantBasis.vanishingPolynomialArray_toPoly_monic", "kind": "theorem", "line": 184},
+  {"name": "CompPoly.GuruswamiSudan.ApproximantBasis.prod_X_sub_C_pow_dvd_of_nodup", "kind": "theorem", "line": 193},
+  {"name": "CompPoly.GuruswamiSudan.ApproximantBasis.vanishing_pow_dvd_hasseDeriv_eval_iff_satisfiesMultiplicityConstraints", "kind": "theorem", "line": 223}
+ ],
+ "private": [],
+ "missing": [],
+ "unread": "Unnamed instances, the names an `alias ⟨…⟩` command gives, and the names Lean generates for a declaration (constructors, recursors, derived instances) are not read from the source, so they are not listed."
+}

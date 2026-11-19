@@ -1,0 +1,22 @@
+{
+ "schema": "trough-ledger/v1",
+ "library": "CompPoly",
+ "repo": "Verified-zkEVM/CompPoly",
+ "rev": "afb9b1363984a70f10e24bd597f6ff40ebc8afbb",
+ "module": "CompPoly.Bivariate.GuruswamiSudan.Interpolation.ApproximantBasis.Basic",
+ "file": "CompPoly/Bivariate/GuruswamiSudan/Interpolation/ApproximantBasis/Basic.lean",
+ "public": [
+  {"name": "CompPoly.GuruswamiSudan.ApproximantBasis.gsModuli", "kind": "def", "line": 43},
+  {"name": "CompPoly.GuruswamiSudan.ApproximantBasis.gsRelationEntry", "kind": "def", "line": 56},
+  {"name": "CompPoly.GuruswamiSudan.ApproximantBasis.gsRelationColumn", "kind": "def", "line": 68},
+  {"name": "CompPoly.GuruswamiSudan.ApproximantBasis.gsRelationMatrixWithModuli", "kind": "def", "line": 82},
+  {"name": "CompPoly.GuruswamiSudan.ApproximantBasis.gsRelationMatrixWithRG", "kind": "def", "line": 94},
+  {"name": "CompPoly.GuruswamiSudan.ApproximantBasis.GSModularData", "kind": "structure", "line": 101},
+  {"name": "CompPoly.GuruswamiSudan.ApproximantBasis.buildGSModularDataWithRG", "kind": "def", "line": 111},
+  {"name": "CompPoly.GuruswamiSudan.ApproximantBasis.buildGSModularData", "kind": "def", "line": 124},
+  {"name": "CompPoly.GuruswamiSudan.ApproximantBasis.modularEquation", "kind": "def", "line": 135}
+ ],
+ "private": [],
+ "missing": [],
+ "unread": "Unnamed instances, the names an `alias ⟨…⟩` command gives, and the names Lean generates for a declaration (constructors, recursors, derived instances) are not read from the source, so they are not listed."
+}

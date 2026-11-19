@@ -1,0 +1,16 @@
+{
+ "schema": "trough-ledger/v1",
+ "library": "CompPoly",
+ "repo": "Verified-zkEVM/CompPoly",
+ "rev": "afb9b1363984a70f10e24bd597f6ff40ebc8afbb",
+ "module": "CompPoly.Fields.Binary.Tower.Support.IrreducibilityAndTraceMapProperty",
+ "file": "CompPoly/Fields/Binary/Tower/Support/IrreducibilityAndTraceMapProperty.lean",
+ "public": [
+  {"name": "irreducible_quadratic_defining_poly_of_traceMap_eq_1", "kind": "theorem", "line": 28},
+  {"name": "traceMapProperty_of_quadratic_extension", "kind": "theorem", "line": 128},
+  {"name": "not_irreducible_of_isRoot_of_degree_gt_one", "kind": "theorem", "line": 218}
+ ],
+ "private": [],
+ "missing": [],
+ "unread": "Unnamed instances, the names an `alias ⟨…⟩` command gives, and the names Lean generates for a declaration (constructors, recursors, derived instances) are not read from the source, so they are not listed."
+}

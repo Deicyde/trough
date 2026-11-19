@@ -1,0 +1,19 @@
+{
+ "schema": "trough-ledger/v1",
+ "library": "CompPoly",
+ "repo": "Verified-zkEVM/CompPoly",
+ "rev": "afb9b1363984a70f10e24bd597f6ff40ebc8afbb",
+ "module": "CompPoly.Univariate.NTTFast.Interpolation",
+ "file": "CompPoly/Univariate/NTTFast/Interpolation.lean",
+ "public": [
+  {"name": "CompPoly.CPolynomial.NTTFast.Plan.inverseImpl_interpolatePow_eq", "kind": "theorem", "line": 32},
+  {"name": "CompPoly.CPolynomial.NTTFast.Plan.inverseImpl_eval_node_eq", "kind": "theorem", "line": 41},
+  {"name": "CompPoly.CPolynomial.NTTFast.Plan.inverseImpl_evalOnDomain_eq", "kind": "theorem", "line": 49},
+  {"name": "CompPoly.CPolynomial.NTTFast.Plan.interpolate", "kind": "def", "line": 60},
+  {"name": "CompPoly.CPolynomial.NTTFast.Plan.interpolate_eq_ntt_interpolate", "kind": "theorem", "line": 66},
+  {"name": "CompPoly.CPolynomial.NTTFast.Plan.interpolate_eq_interpolatePow", "kind": "theorem", "line": 74}
+ ],
+ "private": [],
+ "missing": [],
+ "unread": "Unnamed instances, the names an `alias ⟨…⟩` command gives, and the names Lean generates for a declaration (constructors, recursors, derived instances) are not read from the source, so they are not listed."
+}

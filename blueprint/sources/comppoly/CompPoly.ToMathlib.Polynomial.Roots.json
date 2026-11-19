@@ -1,0 +1,16 @@
+{
+ "schema": "trough-ledger/v1",
+ "library": "CompPoly",
+ "repo": "Verified-zkEVM/CompPoly",
+ "rev": "afb9b1363984a70f10e24bd597f6ff40ebc8afbb",
+ "module": "CompPoly.ToMathlib.Polynomial.Roots",
+ "file": "CompPoly/ToMathlib/Polynomial/Roots.lean",
+ "public": [
+  {"name": "Polynomial.prod_X_sub_C_dvd", "kind": "lemma", "line": 27},
+  {"name": "Polynomial.card_eval_zero_le_natDegree", "kind": "lemma", "line": 37},
+  {"name": "Polynomial.prod_X_sub_C_dvd_prod_mul_sub", "kind": "lemma", "line": 48}
+ ],
+ "private": [],
+ "missing": [],
+ "unread": "Unnamed instances, the names an `alias ⟨…⟩` command gives, and the names Lean generates for a declaration (constructors, recursors, derived instances) are not read from the source, so they are not listed."
+}

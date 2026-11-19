@@ -1,0 +1,25 @@
+{
+ "schema": "trough-ledger/v1",
+ "library": "CompPoly",
+ "repo": "Verified-zkEVM/CompPoly",
+ "rev": "afb9b1363984a70f10e24bd597f6ff40ebc8afbb",
+ "module": "CompPoly.Fields.Extension.Binomial",
+ "file": "CompPoly/Fields/Extension/Binomial.lean",
+ "public": [
+  {"name": "Polynomial.X_pow_sub_C_dvd_X_pow_mul_sub_C_pow", "kind": "theorem", "line": 63},
+  {"name": "Polynomial.not_X_dvd_X_pow_sub_C", "kind": "theorem", "line": 84},
+  {"name": "Polynomial.X_pow_sub_C_dvd_X_pow_sub_X", "kind": "theorem", "line": 96},
+  {"name": "Polynomial.isCoprime_X_pow_sub_C_X_pow_sub_X", "kind": "theorem", "line": 113},
+  {"name": "Polynomial.eq_one_of_X_pow_sub_C_dvd_X_pow_sub_X", "kind": "theorem", "line": 132},
+  {"name": "Polynomial.ne_one_of_isCoprime_X_pow_sub_C_X_pow_sub_X", "kind": "theorem", "line": 140},
+  {"name": "Polynomial.irreducible_X_pow_sub_C_iff", "kind": "theorem", "line": 167},
+  {"name": "Polynomial.irreducible_X_pow_sub_C", "kind": "theorem", "line": 188},
+  {"name": "Polynomial.irreducible_X_pow_four_sub_C_iff", "kind": "theorem", "line": 221},
+  {"name": "Polynomial.irreducible_X_pow_four_sub_C_iff_of_card", "kind": "alias", "line": 233},
+  {"name": "Polynomial.irreducible_X_pow_four_sub_C", "kind": "theorem", "line": 236},
+  {"name": "Polynomial.irreducible_X_pow_four_sub_C_of_card", "kind": "alias", "line": 244}
+ ],
+ "private": [],
+ "missing": [],
+ "unread": "Unnamed instances, the names an `alias ⟨…⟩` command gives, and the names Lean generates for a declaration (constructors, recursors, derived instances) are not read from the source, so they are not listed."
+}

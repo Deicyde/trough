@@ -1,0 +1,18 @@
+{
+ "schema": "trough-ledger/v1",
+ "library": "CompPoly",
+ "repo": "Verified-zkEVM/CompPoly",
+ "rev": "afb9b1363984a70f10e24bd597f6ff40ebc8afbb",
+ "module": "CompPoly.LinearAlgebra.PolynomialMatrix.RowSelection",
+ "file": "CompPoly/LinearAlgebra/PolynomialMatrix/RowSelection.lean",
+ "public": [
+  {"name": "CompPoly.PolynomialMatrix.RowChoiceValid", "kind": "def", "line": 30},
+  {"name": "CompPoly.PolynomialMatrix.leastShiftedDegreeChoice?_some_valid", "kind": "theorem", "line": 333},
+  {"name": "CompPoly.PolynomialMatrix.leastShiftedDegreeChoice?_degree_le", "kind": "theorem", "line": 345},
+  {"name": "CompPoly.PolynomialMatrix.leastShiftedDegreeChoice?_some_of_degree", "kind": "theorem", "line": 360},
+  {"name": "CompPoly.PolynomialMatrix.leastShiftedDegreeRow?_some_valid", "kind": "theorem", "line": 381}
+ ],
+ "private": [],
+ "missing": [],
+ "unread": "Unnamed instances, the names an `alias ⟨…⟩` command gives, and the names Lean generates for a declaration (constructors, recursors, derived instances) are not read from the source, so they are not listed."
+}

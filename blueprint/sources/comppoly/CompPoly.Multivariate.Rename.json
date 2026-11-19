@@ -1,0 +1,33 @@
+{
+ "schema": "trough-ledger/v1",
+ "library": "CompPoly",
+ "repo": "Verified-zkEVM/CompPoly",
+ "rev": "afb9b1363984a70f10e24bd597f6ff40ebc8afbb",
+ "module": "CompPoly.Multivariate.Rename",
+ "file": "CompPoly/Multivariate/Rename.lean",
+ "public": [
+  {"name": "CPoly.list_foldl_add_comm", "kind": "lemma", "line": 40},
+  {"name": "CPoly.foldl_add_comm'", "kind": "lemma", "line": 52},
+  {"name": "CPoly.toFinsupp_apply", "kind": "lemma", "line": 61},
+  {"name": "CPoly.renameMonomial_eq", "kind": "lemma", "line": 66},
+  {"name": "CPoly.fromCMvPolynomial_monomial", "kind": "lemma", "line": 85},
+  {"name": "CPoly.fromCMvPolynomial_finsupp_sum", "kind": "lemma", "line": 112},
+  {"name": "CPoly.fromCMvPolynomial_rename", "kind": "lemma", "line": 125},
+  {"name": "CPoly.C_eq_monomial", "kind": "lemma", "line": 162},
+  {"name": "CPoly.toFinsupp_zero", "kind": "lemma", "line": 183},
+  {"name": "CPoly.fromCMvPolynomial_C", "kind": "lemma", "line": 190},
+  {"name": "CPoly.rename_C", "kind": "lemma", "line": 200},
+  {"name": "CPoly.X_eq_monomial", "kind": "lemma", "line": 210},
+  {"name": "CPoly.toFinsupp_unitMono", "kind": "lemma", "line": 223},
+  {"name": "CPoly.fromCMvPolynomial_X", "kind": "lemma", "line": 235},
+  {"name": "CPoly.rename_X", "kind": "lemma", "line": 244},
+  {"name": "CPoly.rename_add", "kind": "lemma", "line": 254},
+  {"name": "CPoly.rename_mul", "kind": "lemma", "line": 266},
+  {"name": "CPoly.rename_id", "kind": "lemma", "line": 278},
+  {"name": "CPoly.rename_rename", "kind": "lemma", "line": 286},
+  {"name": "CMvPolynomial.renameEquiv", "kind": "def", "line": 305}
+ ],
+ "private": [],
+ "missing": [],
+ "unread": "Unnamed instances, the names an `alias ⟨…⟩` command gives, and the names Lean generates for a declaration (constructors, recursors, derived instances) are not read from the source, so they are not listed."
+}

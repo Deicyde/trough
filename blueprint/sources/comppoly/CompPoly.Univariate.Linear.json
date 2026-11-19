@@ -1,0 +1,26 @@
+{
+ "schema": "trough-ledger/v1",
+ "library": "CompPoly",
+ "repo": "Verified-zkEVM/CompPoly",
+ "rev": "afb9b1363984a70f10e24bd597f6ff40ebc8afbb",
+ "module": "CompPoly.Univariate.Linear",
+ "file": "CompPoly/Univariate/Linear.lean",
+ "public": [
+  {"name": "CompPoly.CPolynomial.lcoeff", "kind": "def", "line": 30},
+  {"name": "CompPoly.CPolynomial.lcoeff_apply", "kind": "theorem", "line": 37},
+  {"name": "CompPoly.CPolynomial.degreeLE", "kind": "def", "line": 47},
+  {"name": "CompPoly.CPolynomial.degreeLT", "kind": "def", "line": 51},
+  {"name": "CompPoly.CPolynomial.mem_degreeLE", "kind": "theorem", "line": 55},
+  {"name": "CompPoly.CPolynomial.mem_degreeLT", "kind": "theorem", "line": 60},
+  {"name": "CompPoly.CPolynomial.mem_degreeLT_iff_size_le", "kind": "theorem", "line": 65},
+  {"name": "CompPoly.CPolynomial.zero_mem_degreeLT", "kind": "theorem", "line": 74},
+  {"name": "CompPoly.CPolynomial.add_mem_degreeLT", "kind": "theorem", "line": 85},
+  {"name": "CompPoly.CPolynomial.nsmul_mem_degreeLT", "kind": "theorem", "line": 96},
+  {"name": "CompPoly.CPolynomial.smul_mem_degreeLT", "kind": "theorem", "line": 107},
+  {"name": "CompPoly.CPolynomial.degreeLTCoeffs", "kind": "def", "line": 189},
+  {"name": "CompPoly.CPolynomial.degreeLTCoeffs_apply", "kind": "theorem", "line": 202}
+ ],
+ "private": [],
+ "missing": [],
+ "unread": "Unnamed instances, the names an `alias ⟨…⟩` command gives, and the names Lean generates for a declaration (constructors, recursors, derived instances) are not read from the source, so they are not listed."
+}

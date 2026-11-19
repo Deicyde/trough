@@ -1,0 +1,23 @@
+{
+ "schema": "trough-ledger/v1",
+ "library": "CompPoly",
+ "repo": "Verified-zkEVM/CompPoly",
+ "rev": "afb9b1363984a70f10e24bd597f6ff40ebc8afbb",
+ "module": "CompPoly.Bivariate.GuruswamiSudan.Root.RothRuckenstein.Algorithm",
+ "file": "CompPoly/Bivariate/GuruswamiSudan/Root/RothRuckenstein/Algorithm.lean",
+ "public": [
+  {"name": "CompPoly.GuruswamiSudan.substituteYRootPlusXY", "kind": "def", "line": 32},
+  {"name": "CompPoly.GuruswamiSudan.transformedRothRuckensteinResidual", "kind": "def", "line": 48},
+  {"name": "CompPoly.GuruswamiSudan.nextCoefficientSlope", "kind": "def", "line": 54},
+  {"name": "CompPoly.GuruswamiSudan.nextCoefficientPolynomial", "kind": "def", "line": 62},
+  {"name": "CompPoly.GuruswamiSudan.rootPrefixExtensionsWithFieldRootContext", "kind": "def", "line": 77},
+  {"name": "CompPoly.GuruswamiSudan.rothRuckensteinRootPrefixes", "kind": "def", "line": 88},
+  {"name": "CompPoly.GuruswamiSudan.transformedRothRuckensteinRootPrefixesWithFuel", "kind": "def", "line": 97},
+  {"name": "CompPoly.GuruswamiSudan.transformedRothRuckensteinRootPrefixes", "kind": "def", "line": 117},
+  {"name": "CompPoly.GuruswamiSudan.transformedRothRuckensteinRootsYDegreeLt", "kind": "def", "line": 124},
+  {"name": "CompPoly.GuruswamiSudan.rothRuckensteinRootsYDegreeLt", "kind": "def", "line": 137}
+ ],
+ "private": [],
+ "missing": [],
+ "unread": "Unnamed instances, the names an `alias ⟨…⟩` command gives, and the names Lean generates for a declaration (constructors, recursors, derived instances) are not read from the source, so they are not listed."
+}

@@ -1,0 +1,23 @@
+{
+ "schema": "trough-ledger/v1",
+ "library": "CompPoly",
+ "repo": "Verified-zkEVM/CompPoly",
+ "rev": "afb9b1363984a70f10e24bd597f6ff40ebc8afbb",
+ "module": "CompPoly.LinearAlgebra.PolynomialMatrix.MuldersStorjohannCorrectness.Combinations",
+ "file": "CompPoly/LinearAlgebra/PolynomialMatrix/MuldersStorjohannCorrectness/Combinations.lean",
+ "public": [
+  {"name": "CompPoly.PolynomialMatrix.rowLinearCombination_range_size", "kind": "theorem", "line": 25},
+  {"name": "CompPoly.PolynomialMatrix.rowLinearCombination_size", "kind": "theorem", "line": 47},
+  {"name": "CompPoly.PolynomialMatrix.rowCombinationTermSupport", "kind": "def", "line": 53},
+  {"name": "CompPoly.PolynomialMatrix.rowCombinationTermDegree", "kind": "def", "line": 60},
+  {"name": "CompPoly.PolynomialMatrix.rowCombinationTermPosition", "kind": "def", "line": 67},
+  {"name": "CompPoly.PolynomialMatrix.rowGet_rowLinearCombination_range_coeff", "kind": "theorem", "line": 72},
+  {"name": "CompPoly.PolynomialMatrix.rowGet_rowLinearCombination_coeff", "kind": "theorem", "line": 97},
+  {"name": "CompPoly.PolynomialMatrix.rowLinearCombination_range_eq_zeroRow_of_forall_zero_or_row_zero", "kind": "theorem", "line": 107},
+  {"name": "CompPoly.PolynomialMatrix.rowLinearCombination_eq_zeroRow_of_forall_zero_or_row_zero", "kind": "theorem", "line": 140},
+  {"name": "CompPoly.PolynomialMatrix.rowCombinationTermSupport_nonempty_of_combination_degree_some", "kind": "theorem", "line": 150}
+ ],
+ "private": [],
+ "missing": [],
+ "unread": "Unnamed instances, the names an `alias ⟨…⟩` command gives, and the names Lean generates for a declaration (constructors, recursors, derived instances) are not read from the source, so they are not listed."
+}

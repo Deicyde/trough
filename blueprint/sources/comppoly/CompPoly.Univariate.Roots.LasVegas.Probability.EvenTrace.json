@@ -1,0 +1,24 @@
+{
+ "schema": "trough-ledger/v1",
+ "library": "CompPoly",
+ "repo": "Verified-zkEVM/CompPoly",
+ "rev": "afb9b1363984a70f10e24bd597f6ff40ebc8afbb",
+ "module": "CompPoly.Univariate.Roots.LasVegas.Probability.EvenTrace",
+ "file": "CompPoly/Univariate/Roots/LasVegas/Probability/EvenTrace.lean",
+ "public": [
+  {"name": "CompPoly.CPolynomial.Roots.FiniteField.EvenTraceUniformFieldModel", "kind": "structure", "line": 42},
+  {"name": "CompPoly.CPolynomial.Roots.FiniteField.tracePowerSum_eq_zero_or_one", "kind": "theorem", "line": 73},
+  {"name": "CompPoly.CPolynomial.Roots.FiniteField.tracePowerSum_pair_separated_probability_ge_half", "kind": "theorem", "line": 155},
+  {"name": "CompPoly.CPolynomial.Roots.FiniteField.evenTraceTrialPMF", "kind": "def", "line": 177},
+  {"name": "CompPoly.CPolynomial.Roots.FiniteField.evenTraceTrial_success_probability_ge_half_of_two_le", "kind": "theorem", "line": 197},
+  {"name": "CompPoly.CPolynomial.Roots.FiniteField.evenTraceTrial_success_probability_ge_half", "kind": "theorem", "line": 286},
+  {"name": "CompPoly.CPolynomial.Roots.FiniteField.repeatedEvenTraceTrialsPMF", "kind": "def", "line": 308},
+  {"name": "CompPoly.CPolynomial.Roots.FiniteField.fallbackAfterEvenTraceAttemptsProbability", "kind": "def", "line": 323},
+  {"name": "CompPoly.CPolynomial.Roots.FiniteField.fallbackAfterEvenTraceAttempts_probability_le_geometric", "kind": "theorem", "line": 390},
+  {"name": "CompPoly.CPolynomial.Roots.FiniteField.fallbackAfterEvenTraceAttempts_probability_le_geometric_of_uniformProbe", "kind": "theorem", "line": 436},
+  {"name": "CompPoly.CPolynomial.Roots.FiniteField.tryEvenTraceSplitAttemptsWith_uniformTable_none_le_geometric", "kind": "theorem", "line": 459}
+ ],
+ "private": [],
+ "missing": [],
+ "unread": "Unnamed instances, the names an `alias ⟨…⟩` command gives, and the names Lean generates for a declaration (constructors, recursors, derived instances) are not read from the source, so they are not listed."
+}

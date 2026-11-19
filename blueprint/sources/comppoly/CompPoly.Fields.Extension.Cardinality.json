@@ -1,0 +1,19 @@
+{
+ "schema": "trough-ledger/v1",
+ "library": "CompPoly",
+ "repo": "Verified-zkEVM/CompPoly",
+ "rev": "afb9b1363984a70f10e24bd597f6ff40ebc8afbb",
+ "module": "CompPoly.Fields.Extension.Cardinality",
+ "file": "CompPoly/Fields/Extension/Cardinality.lean",
+ "public": [
+  {"name": "CompPoly.Extension.ExtensionParams.card_eq", "kind": "theorem", "line": 29},
+  {"name": "CompPoly.Extension.BinomialParams.card_eq", "kind": "theorem", "line": 35},
+  {"name": "CompPoly.Extension.Ext.instFinite", "kind": "instance", "line": 49},
+  {"name": "CompPoly.Extension.Ext.instFintype", "kind": "instance", "line": 52},
+  {"name": "CompPoly.Extension.Ext.card_ext", "kind": "theorem", "line": 55},
+  {"name": "CompPoly.Extension.Ext.nat_card_ext", "kind": "theorem", "line": 59}
+ ],
+ "private": [],
+ "missing": [],
+ "unread": "Unnamed instances, the names an `alias ⟨…⟩` command gives, and the names Lean generates for a declaration (constructors, recursors, derived instances) are not read from the source, so they are not listed."
+}
