@@ -11,9 +11,9 @@
                                         workflow does this on main, before generating)
 
 Everything under blueprint/roadmap/ and blueprint/links/ is generated, and so are
-blueprint/coverage/README.md, blueprint/sources/README.md and
-hooks/lean-links.json; a stale file under blueprint/roadmap/ or blueprint/links/
-is deleted.
+blueprint/coverage/README.md, blueprint/sources/README.md, the declaration
+ledgers under blueprint/sources/ (JSON files) and hooks/lean-links.json; a stale
+file under blueprint/roadmap/ or blueprint/links/, or a stale ledger, is deleted.
 """
 
 from __future__ import annotations
@@ -26,7 +26,7 @@ from pathlib import Path
 
 from collections import Counter
 
-from trough import anthropic_flt, atlas, blueprints, catalog, cfsg, cslib, ff, formal_conjectures, lean_pool, links, mathlib, openai_math, physlib, stacks, tauceti, wiki
+from trough import aesop, anthropic_flt, atlas, batteries, blueprints, catalog, cfsg, comppoly, cslib, ff, formal_conjectures, lean_pool, links, mathlib, openai_math, physlib, stacks, tauceti, wiki
 from trough.vault import Leaf, assign_paths, render_tree, walk
 
 ROOT = Path(__file__).resolve().parent.parent
@@ -274,6 +274,7 @@ def generate() -> dict[Path, str]:
         assign_paths(cslib_built.root, ROADMAP / "cslib")
         blueprints.resolve(cslib_built, VAULT)
         files.update(render_tree(cslib_built.root, VAULT))
+        files.update({VAULT / path: text for path, text in cslib_built.files.items()})
         chapters["cslib"] = "cslib/README.md"
         lean_links["cslib"] = cslib_links
         cs = Counter(cslib_built.stats)
@@ -284,6 +285,36 @@ def generate() -> dict[Path, str]:
             f"cslib: {cs['articles']} module articles in {cs['folders']} folders and {cs['parts']} parts; "
             f"{cs['declarations']} public declarations, {cs['documented']} documented, {cs['sorry']} holding sorry; "
             f"{cs['statement_edges']} statement and {cs['proof_edges']} proof edges",
+            file=sys.stderr,
+        )
+    # The libraries trough.library reads with their modules that declare nothing public listed.
+    readers = []
+    for reader in (batteries, aesop, comppoly):
+        lib = reader.LIBRARY
+        reader_data = reader.load(DATA)
+        if not reader_data:
+            continue
+        reader_built, reader_links = reader.chapter(reader_data)
+        assign_paths(reader_built.root, ROADMAP / lib.id)
+        blueprints.resolve(reader_built, VAULT)
+        files.update(render_tree(reader_built.root, VAULT))
+        files.update({VAULT / path: text for path, text in reader_built.files.items()})
+        chapters[lib.id] = f"{lib.id}/README.md"
+        lean_links[lib.id] = reader_links
+        readers.append((lib.id, lib.name, lib.repo, reader_data["rev"], bool(reader_data.get("mathlib"))))
+        rs = Counter(reader_built.stats)
+        blueprint_rows.append((lib.name, "INVENTORIED",
+                               f"[{rs['articles']:,} modules](../roadmap/{lib.id}/README.md), one article each, with a "
+                               f"block per public declaration; {rs['listed']:,} modules that declare nothing public by "
+                               "name are listed on their folders' pages"
+                               + (f", and {rs['unbuilt']:,} that did not build on the front page" if rs["unbuilt"] else "")
+                               + "."))
+        print(
+            f"{lib.id}: {rs['articles']} module articles in {rs['folders']} folders and {rs['parts']} parts, "
+            f"{rs['listed']} modules listed"
+            + (f", {rs['unbuilt']} unbuilt" if rs["unbuilt"] else "")
+            + f"; {rs['declarations']} public declarations, {rs['documented']} documented, "
+            f"{rs['sorry']} holding sorry; {rs['statement_edges']} statement and {rs['proof_edges']} proof edges",
             file=sys.stderr,
         )
     physlib_data = physlib.load(DATA)
@@ -336,6 +367,7 @@ def generate() -> dict[Path, str]:
         atlas=atlas_data["source"]["rev"] if atlas_data else None,
         openai_math=oai_data["source"]["rev"] if oai_data else None,
         cslib=cslib_data["rev"] if cslib_data else None,
+        readers=readers,
         physlib=physlib_data["source"]["rev"] if physlib_data else None,
         blueprint_revs={project.id: project.rev for project in projects},
     )
@@ -353,7 +385,9 @@ def _list_of(slug: str) -> str:
 
 
 def owned() -> set[Path]:
-    return set(ROADMAP.rglob("*.md")) | {path for path in LINKS.rglob("*") if path.is_file()}
+    # The generated files under sources/ are the module catalogs' declaration ledgers, JSON files.
+    return (set(ROADMAP.rglob("*.md")) | {path for path in LINKS.rglob("*") if path.is_file()}
+            | set((VAULT / "sources").rglob("*.json")))
 
 
 def main() -> int:

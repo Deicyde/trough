@@ -1,0 +1,21 @@
+{
+ "schema": "trough-ledger/v1",
+ "library": "CSLib",
+ "repo": "leanprover/cslib",
+ "rev": "86d560b6cbb379bd82512424cbcd2a915a1565e7",
+ "module": "Cslib.Algorithms.Lean.Query.Arith.Defs",
+ "file": "Cslib/Algorithms/Lean/Query/Arith/Defs.lean",
+ "public": [
+  {"name": "Cslib.Query.ArithQuery", "kind": "inductive", "line": 25},
+  {"name": "Cslib.Query.ArithQuery.doAdd", "kind": "abbrev", "line": 33},
+  {"name": "Cslib.Query.ArithQuery.doSub", "kind": "abbrev", "line": 35},
+  {"name": "Cslib.Query.ArithQuery.doMul", "kind": "abbrev", "line": 37},
+  {"name": "Cslib.Query.ArithQuery.honest", "kind": "def", "line": 40},
+  {"name": "Cslib.Query.ArithQuery.weight", "kind": "def", "line": 47},
+  {"name": "Cslib.Query.complexMulNaive", "kind": "def", "line": 56},
+  {"name": "Cslib.Query.complexMulGauss", "kind": "def", "line": 68}
+ ],
+ "private": [],
+ "missing": [],
+ "unread": "Unnamed instances, the names an `alias ⟨…⟩` command gives, and the names Lean generates for a declaration (constructors, recursors, derived instances) are not read from the source, so they are not listed."
+}

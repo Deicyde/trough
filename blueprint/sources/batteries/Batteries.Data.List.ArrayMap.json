@@ -1,0 +1,16 @@
+{
+ "schema": "trough-ledger/v1",
+ "library": "Batteries",
+ "repo": "leanprover-community/batteries",
+ "rev": "b4b25a3886a16daacaf6615c2eea7170a6e8f458",
+ "module": "Batteries.Data.List.ArrayMap",
+ "file": "Batteries/Data/List/ArrayMap.lean",
+ "public": [
+  {"name": "List.toArrayMap", "kind": "def", "line": 20},
+  {"name": "List.toArrayMap_toList", "kind": "theorem", "line": 27},
+  {"name": "List.toArrayMap_eq_toArray_map", "kind": "theorem", "line": 40}
+ ],
+ "private": [],
+ "missing": [],
+ "unread": "Unnamed instances, the names an `alias ⟨…⟩` command gives, and the names Lean generates for a declaration (constructors, recursors, derived instances) are not read from the source, so they are not listed."
+}

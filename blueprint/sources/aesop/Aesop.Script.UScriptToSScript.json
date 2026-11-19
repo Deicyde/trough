@@ -1,0 +1,22 @@
+{
+ "schema": "trough-ledger/v1",
+ "library": "Aesop",
+ "repo": "leanprover-community/aesop",
+ "rev": "637fdbb8689a3387a82568b07355231f892144d7",
+ "module": "Aesop.Script.UScriptToSScript",
+ "file": "Aesop/Script/UScriptToSScript.lean",
+ "public": [
+  {"name": "Aesop.Script.StepTree", "kind": "inductive", "line": 17},
+  {"name": "Aesop.Script.StepTree.toMessageData?", "kind": "def", "line": 24},
+  {"name": "Aesop.Script.StepTree.toMessageData", "kind": "def", "line": 29},
+  {"name": "Aesop.Script.UScript.toStepTree", "kind": "def", "line": 37},
+  {"name": "Aesop.Script.sortDedupArrays", "kind": "def", "line": 52},
+  {"name": "Aesop.Script.isConsecutiveSequence", "kind": "def", "line": 57},
+  {"name": "Aesop.Script.StepTree.focusableGoals", "kind": "def", "line": 68},
+  {"name": "Aesop.Script.StepTree.numSiblings", "kind": "def", "line": 82},
+  {"name": "Aesop.Script.orderedUScriptToSScript", "kind": "def", "line": 94}
+ ],
+ "private": [],
+ "missing": [],
+ "unread": "Unnamed instances, the names an `alias ⟨…⟩` command gives, and the names Lean generates for a declaration (constructors, recursors, derived instances) are not read from the source, so they are not listed."
+}

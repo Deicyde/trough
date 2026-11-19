@@ -1,0 +1,30 @@
+{
+ "schema": "trough-ledger/v1",
+ "library": "CompPoly",
+ "repo": "Verified-zkEVM/CompPoly",
+ "rev": "afb9b1363984a70f10e24bd597f6ff40ebc8afbb",
+ "module": "CompPoly.Fields.BabyBear.Basic",
+ "file": "CompPoly/Fields/BabyBear/Basic.lean",
+ "public": [
+  {"name": "BabyBear.fieldSize", "kind": "def", "line": 25},
+  {"name": "BabyBear.Field", "kind": "abbrev", "line": 28},
+  {"name": "BabyBear.is_prime", "kind": "theorem", "line": 31},
+  {"name": "BabyBear.pBits", "kind": "def", "line": 45},
+  {"name": "BabyBear.twoAdicity", "kind": "def", "line": 49},
+  {"name": "BabyBear.inv_eq_pow", "kind": "lemma", "line": 59},
+  {"name": "BabyBear.fieldSize_sub_one_factorization", "kind": "lemma", "line": 78},
+  {"name": "BabyBear.twoAdicGenerators", "kind": "def", "line": 89},
+  {"name": "BabyBear.twoAdicGenerators_length", "kind": "lemma", "line": 122},
+  {"name": "BabyBear.twoAdicGenerators_succ_square_eq'", "kind": "lemma", "line": 126},
+  {"name": "BabyBear.twoAdicGenerators_succ_square_eq", "kind": "lemma", "line": 132},
+  {"name": "BabyBear.twoAdicity_maximal", "kind": "lemma", "line": 138},
+  {"name": "BabyBear.twoAdicGenerators_pow_twoPow_eq_one", "kind": "lemma", "line": 191},
+  {"name": "BabyBear.twoAdicGenerators_pow_twoPow_ne_one_of_lt", "kind": "lemma", "line": 226},
+  {"name": "BabyBear.isPrimitiveRoot_twoAdicGenerator", "kind": "lemma", "line": 233},
+  {"name": "BabyBear.twoAdicGenerator_unit_mem_rootsOfUnity", "kind": "lemma", "line": 251},
+  {"name": "BabyBear.twoAdicGenerators_order", "kind": "lemma", "line": 260}
+ ],
+ "private": [],
+ "missing": [],
+ "unread": "Unnamed instances, the names an `alias ⟨…⟩` command gives, and the names Lean generates for a declaration (constructors, recursors, derived instances) are not read from the source, so they are not listed."
+}

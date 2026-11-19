@@ -1,0 +1,27 @@
+{
+ "schema": "trough-ledger/v1",
+ "library": "CompPoly",
+ "repo": "Verified-zkEVM/CompPoly",
+ "rev": "afb9b1363984a70f10e24bd597f6ff40ebc8afbb",
+ "module": "CompPoly.Data.Bytes.Codec",
+ "file": "CompPoly/Data/Bytes/Codec.lean",
+ "public": [
+  {"name": "CompPoly.ByteCodec", "kind": "class", "line": 33},
+  {"name": "CompPoly.ByteCodec.toBytes_injective", "kind": "theorem", "line": 48},
+  {"name": "CompPoly.ByteCodec.toBytes_inj", "kind": "theorem", "line": 54},
+  {"name": "CompPoly.ByteCodec.toByteArray", "kind": "def", "line": 58},
+  {"name": "CompPoly.ByteCodec.data_toByteArray", "kind": "theorem", "line": 60},
+  {"name": "CompPoly.ByteCodec.size_toByteArray", "kind": "theorem", "line": 62},
+  {"name": "CompPoly.ByteCodec.toByteArray_injective", "kind": "theorem", "line": 65},
+  {"name": "CompPoly.ByteCodec.ofByteArray?", "kind": "def", "line": 72},
+  {"name": "CompPoly.ByteCodec.ofByteArray?_toByteArray", "kind": "theorem", "line": 76},
+  {"name": "CompPoly.ByteCodec.serialize_eq_toByteArray", "kind": "theorem", "line": 104},
+  {"name": "CompPoly.ByteCodec.serialize_eq_toBytes", "kind": "theorem", "line": 106},
+  {"name": "CompPoly.ByteCodec.deserialize_byteArray_eq", "kind": "theorem", "line": 109},
+  {"name": "CompPoly.ByteCodec.deserialize_vector_eq", "kind": "theorem", "line": 112},
+  {"name": "CompPoly.ByteCodec.deserialize_serialize", "kind": "theorem", "line": 115}
+ ],
+ "private": [],
+ "missing": [],
+ "unread": "Unnamed instances, the names an `alias ⟨…⟩` command gives, and the names Lean generates for a declaration (constructors, recursors, derived instances) are not read from the source, so they are not listed."
+}

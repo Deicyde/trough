@@ -1,0 +1,25 @@
+{
+ "schema": "trough-ledger/v1",
+ "library": "CompPoly",
+ "repo": "Verified-zkEVM/CompPoly",
+ "rev": "afb9b1363984a70f10e24bd597f6ff40ebc8afbb",
+ "module": "CompPoly.LinearAlgebra.Dense.Basic",
+ "file": "CompPoly/LinearAlgebra/Dense/Basic.lean",
+ "public": [
+  {"name": "CompPoly.DenseMatrix.setD", "kind": "def", "line": 24},
+  {"name": "CompPoly.DenseMatrix", "kind": "structure", "line": 30},
+  {"name": "CompPoly.DenseMatrix.WellFormed", "kind": "def", "line": 40},
+  {"name": "CompPoly.DenseMatrix.index", "kind": "def", "line": 44},
+  {"name": "CompPoly.DenseMatrix.get", "kind": "def", "line": 48},
+  {"name": "CompPoly.DenseMatrix.set", "kind": "def", "line": 52},
+  {"name": "CompPoly.DenseMatrix.ofFn", "kind": "def", "line": 56},
+  {"name": "CompPoly.DenseMatrix.dotRow", "kind": "def", "line": 63},
+  {"name": "CompPoly.DenseMatrix.mulVec", "kind": "def", "line": 69},
+  {"name": "CompPoly.DenseMatrix.VectorWidth", "kind": "def", "line": 73},
+  {"name": "CompPoly.DenseMatrix.NonzeroVector", "kind": "def", "line": 77},
+  {"name": "CompPoly.DenseMatrix.IsHomogeneousSolution", "kind": "def", "line": 81}
+ ],
+ "private": [],
+ "missing": [],
+ "unread": "Unnamed instances, the names an `alias ⟨…⟩` command gives, and the names Lean generates for a declaration (constructors, recursors, derived instances) are not read from the source, so they are not listed."
+}

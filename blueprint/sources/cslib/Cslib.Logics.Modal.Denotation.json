@@ -1,0 +1,19 @@
+{
+ "schema": "trough-ledger/v1",
+ "library": "CSLib",
+ "repo": "leanprover/cslib",
+ "rev": "86d560b6cbb379bd82512424cbcd2a915a1565e7",
+ "module": "Cslib.Logics.Modal.Denotation",
+ "file": "Cslib/Logics/Modal/Denotation.lean",
+ "public": [
+  {"name": "Cslib.Logic.Modal.Proposition.denotation", "kind": "def", "line": 25},
+  {"name": "Cslib.Logic.Modal.satisfies_mem_denotation", "kind": "theorem", "line": 35},
+  {"name": "Cslib.Logic.Modal.not_denotation", "kind": "theorem", "line": 42},
+  {"name": "Cslib.Logic.Modal.theoryEq_denotation_eq", "kind": "theorem", "line": 47},
+  {"name": "Cslib.Logic.Modal.Proposition.equiv_iff_denotation_eq", "kind": "theorem", "line": 54},
+  {"name": "Cslib.Logic.Modal.Proposition.denotation_eq_of_equiv", "kind": "theorem", "line": 66}
+ ],
+ "private": [],
+ "missing": [],
+ "unread": "Unnamed instances, the names an `alias ⟨…⟩` command gives, and the names Lean generates for a declaration (constructors, recursors, derived instances) are not read from the source, so they are not listed."
+}

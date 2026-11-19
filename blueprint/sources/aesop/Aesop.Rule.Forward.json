@@ -1,0 +1,19 @@
+{
+ "schema": "trough-ledger/v1",
+ "library": "Aesop",
+ "repo": "leanprover-community/aesop",
+ "rev": "637fdbb8689a3387a82568b07355231f892144d7",
+ "module": "Aesop.Rule.Forward",
+ "file": "Aesop/Rule/Forward.lean",
+ "public": [
+  {"name": "Aesop.ForwardRulePriority", "kind": "inductive", "line": 21},
+  {"name": "Aesop.ForwardRulePriority.penalty?", "kind": "def", "line": 32},
+  {"name": "Aesop.ForwardRulePriority.successProbability?", "kind": "def", "line": 37},
+  {"name": "Aesop.ForwardRulePriority.compare", "kind": "def", "line": 44},
+  {"name": "Aesop.ForwardRule", "kind": "structure", "line": 61},
+  {"name": "Aesop.ForwardRule.destruct", "kind": "def", "line": 85}
+ ],
+ "private": [],
+ "missing": [],
+ "unread": "Unnamed instances, the names an `alias ⟨…⟩` command gives, and the names Lean generates for a declaration (constructors, recursors, derived instances) are not read from the source, so they are not listed."
+}

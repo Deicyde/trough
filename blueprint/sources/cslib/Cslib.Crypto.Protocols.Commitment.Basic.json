@@ -1,0 +1,19 @@
+{
+ "schema": "trough-ledger/v1",
+ "library": "CSLib",
+ "repo": "leanprover/cslib",
+ "rev": "86d560b6cbb379bd82512424cbcd2a915a1565e7",
+ "module": "Cslib.Crypto.Protocols.Commitment.Basic",
+ "file": "Cslib/Crypto/Protocols/Commitment/Basic.lean",
+ "public": [
+  {"name": "Cslib.Crypto.Protocols.Commitment.Scheme.perfectlyHiding_iff_statisticallyHiding_zero", "kind": "theorem", "line": 47},
+  {"name": "Cslib.Crypto.Protocols.Commitment.Scheme.StatisticallyHiding.mono", "kind": "theorem", "line": 53},
+  {"name": "Cslib.Crypto.Protocols.Commitment.Scheme.PerfectlyBinding.disjoint_support_commitmentDist", "kind": "theorem", "line": 61},
+  {"name": "Cslib.Crypto.Protocols.Commitment.Scheme.PerfectlyBinding.dist_commitmentDist_eq_one", "kind": "theorem", "line": 76},
+  {"name": "Cslib.Crypto.Protocols.Commitment.Scheme.subsingleton_of_statisticallyHiding_of_perfectlyBinding", "kind": "theorem", "line": 88},
+  {"name": "Cslib.Crypto.Protocols.Commitment.Scheme.subsingleton_of_perfectlyHiding_of_perfectlyBinding", "kind": "theorem", "line": 102}
+ ],
+ "private": [],
+ "missing": [],
+ "unread": "Unnamed instances, the names an `alias ⟨…⟩` command gives, and the names Lean generates for a declaration (constructors, recursors, derived instances) are not read from the source, so they are not listed."
+}

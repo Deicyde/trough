@@ -1,0 +1,27 @@
+{
+ "schema": "trough-ledger/v1",
+ "library": "Batteries",
+ "repo": "leanprover-community/batteries",
+ "rev": "b4b25a3886a16daacaf6615c2eea7170a6e8f458",
+ "module": "Batteries.Util.ProofWanted",
+ "file": "Batteries/Util/ProofWanted.lean",
+ "public": [
+  {"name": "ProofWanted", "kind": "structure", "line": 61},
+  {"name": "ProofWanted.Stmt", "kind": "def", "line": 68},
+  {"name": "DefWanted", "kind": "structure", "line": 71},
+  {"name": "DefWanted.Val", "kind": "def", "line": 78},
+  {"name": "DerivedWanted", "kind": "structure", "line": 87},
+  {"name": "elabWantedRef", "kind": "def", "line": 104},
+  {"name": "«theorem_wanted»", "kind": "def", "line": 686},
+  {"name": "«proof_wanted»", "kind": "def", "line": 694},
+  {"name": "«def_wanted»", "kind": "def", "line": 724},
+  {"name": "elabTheoremWanted", "kind": "def", "line": 731},
+  {"name": "elabProofWanted", "kind": "def", "line": 740},
+  {"name": "elabDefWanted", "kind": "def", "line": 748},
+  {"name": "«instance_wanted»", "kind": "def", "line": 783},
+  {"name": "elabInstanceWanted", "kind": "def", "line": 823}
+ ],
+ "private": [],
+ "missing": [],
+ "unread": "Unnamed instances, the names an `alias ⟨…⟩` command gives, and the names Lean generates for a declaration (constructors, recursors, derived instances) are not read from the source, so they are not listed."
+}

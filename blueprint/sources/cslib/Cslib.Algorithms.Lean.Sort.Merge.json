@@ -1,0 +1,26 @@
+{
+ "schema": "trough-ledger/v1",
+ "library": "CSLib",
+ "repo": "leanprover/cslib",
+ "rev": "86d560b6cbb379bd82512424cbcd2a915a1565e7",
+ "module": "Cslib.Algorithms.Lean.Sort.Merge",
+ "file": "Cslib/Algorithms/Lean/Sort/Merge.lean",
+ "public": [
+  {"name": "List.mergeM", "kind": "def", "line": 27},
+  {"name": "List.nil_mergeM", "kind": "theorem", "line": 38},
+  {"name": "List.mergeM_right", "kind": "theorem", "line": 41},
+  {"name": "List.cons_mergeM_cons", "kind": "theorem", "line": 45},
+  {"name": "List.mergeM_pure", "kind": "theorem", "line": 54},
+  {"name": "List.idRun_mergeM", "kind": "theorem", "line": 59},
+  {"name": "Cslib.IsMonadHom.map_listMergeM", "kind": "theorem", "line": 64},
+  {"name": "List.mergeSortM", "kind": "def", "line": 72},
+  {"name": "List.mergeSortM_nil", "kind": "theorem", "line": 81},
+  {"name": "List.mergeSortM_singleton", "kind": "theorem", "line": 83},
+  {"name": "List.mergeSortM_pure", "kind": "theorem", "line": 88},
+  {"name": "List.idRun_mergeSortM", "kind": "theorem", "line": 98},
+  {"name": "Cslib.IsMonadHom.map_listMergeSortM", "kind": "theorem", "line": 103}
+ ],
+ "private": [],
+ "missing": [],
+ "unread": "Unnamed instances, the names an `alias ⟨…⟩` command gives, and the names Lean generates for a declaration (constructors, recursors, derived instances) are not read from the source, so they are not listed."
+}

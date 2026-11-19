@@ -531,3 +531,4 @@ theorem Deterministic.traces_of_tr {lts : LTS State Label} [lts.Deterministic]
 ## Sources
 
 - [Cslib/Foundations/Semantics/LTS/Basic.lean at 86d560b6](https://github.com/leanprover/cslib/blob/86d560b6cbb379bd82512424cbcd2a915a1565e7/Cslib/Foundations/Semantics/LTS/Basic.lean)
+- [Declaration ledger](../../../../../sources/cslib/Cslib.Foundations.Semantics.LTS.Basic.json)

@@ -1,0 +1,32 @@
+{
+ "schema": "trough-ledger/v1",
+ "library": "Batteries",
+ "repo": "leanprover-community/batteries",
+ "rev": "b4b25a3886a16daacaf6615c2eea7170a6e8f458",
+ "module": "Batteries.Tactic.GeneralizeProofs",
+ "file": "Batteries/Tactic/GeneralizeProofs.lean",
+ "public": [
+  {"name": "Batteries.Tactic.GeneralizeProofs.Config", "kind": "structure", "line": 51},
+  {"name": "Batteries.Tactic.GeneralizeProofs.GState", "kind": "structure", "line": 66},
+  {"name": "Batteries.Tactic.GeneralizeProofs.MGen", "kind": "abbrev", "line": 72},
+  {"name": "Batteries.Tactic.GeneralizeProofs.MGen.insertFVar", "kind": "def", "line": 75},
+  {"name": "Batteries.Tactic.GeneralizeProofs.AContext", "kind": "structure", "line": 79},
+  {"name": "Batteries.Tactic.GeneralizeProofs.AState", "kind": "structure", "line": 93},
+  {"name": "Batteries.Tactic.GeneralizeProofs.MAbs", "kind": "abbrev", "line": 106},
+  {"name": "Batteries.Tactic.GeneralizeProofs.MGen.runMAbs", "kind": "def", "line": 109},
+  {"name": "Batteries.Tactic.GeneralizeProofs.MAbs.findProof?", "kind": "def", "line": 119},
+  {"name": "Batteries.Tactic.GeneralizeProofs.MAbs.insertProof", "kind": "def", "line": 128},
+  {"name": "Batteries.Tactic.GeneralizeProofs.MAbs.withLocal", "kind": "def", "line": 144},
+  {"name": "Batteries.Tactic.GeneralizeProofs.MAbs.withRecurse", "kind": "def", "line": 148},
+  {"name": "Batteries.Tactic.GeneralizeProofs.appArgExpectedTypes", "kind": "def", "line": 157},
+  {"name": "Batteries.Tactic.GeneralizeProofs.mkLambdaFVarsUsedOnly", "kind": "def", "line": 199},
+  {"name": "Batteries.Tactic.GeneralizeProofs.abstractProofs", "kind": "def", "line": 230},
+  {"name": "Batteries.Tactic.GeneralizeProofs.initialPropToFVar", "kind": "def", "line": 333},
+  {"name": "Batteries.Tactic.GeneralizeProofs.withGeneralizedProofs", "kind": "def", "line": 352},
+  {"name": "Batteries.Tactic.GeneralizeProofs.generalizeProofsCore", "kind": "def", "line": 385},
+  {"name": "Lean.MVarId.generalizeProofs", "kind": "def", "line": 471}
+ ],
+ "private": [],
+ "missing": [],
+ "unread": "Unnamed instances, the names an `alias ⟨…⟩` command gives, and the names Lean generates for a declaration (constructors, recursors, derived instances) are not read from the source, so they are not listed."
+}

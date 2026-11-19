@@ -1,0 +1,27 @@
+{
+ "schema": "trough-ledger/v1",
+ "library": "CSLib",
+ "repo": "leanprover/cslib",
+ "rev": "86d560b6cbb379bd82512424cbcd2a915a1565e7",
+ "module": "Cslib.Computability.Languages.Language",
+ "file": "Cslib/Computability/Languages/Language.lean",
+ "public": [
+  {"name": "List.eq_nil_ofIsEmpty", "kind": "theorem", "line": 26},
+  {"name": "Language.eq_zero_or_one_ofIsEmpty", "kind": "theorem", "line": 40},
+  {"name": "Language.mem_biInf", "kind": "theorem", "line": 51},
+  {"name": "Language.mem_biSup", "kind": "theorem", "line": 58},
+  {"name": "Language.le_one_iff_eq", "kind": "theorem", "line": 63},
+  {"name": "Language.mem_singleton", "kind": "theorem", "line": 67},
+  {"name": "Language.mem_sub_one", "kind": "theorem", "line": 71},
+  {"name": "Language.reverse_sub", "kind": "theorem", "line": 75},
+  {"name": "Language.sub_one_mul", "kind": "theorem", "line": 81},
+  {"name": "Language.mul_sub_one", "kind": "theorem", "line": 97},
+  {"name": "Language.kstar_sub_one", "kind": "theorem", "line": 107},
+  {"name": "Language.sub_one_kstar", "kind": "theorem", "line": 122},
+  {"name": "Language.kstar_iff_mul_add", "kind": "theorem", "line": 127},
+  {"name": "Language.self_eq_add_mul_iff", "kind": "theorem", "line": 132}
+ ],
+ "private": [],
+ "missing": [],
+ "unread": "Unnamed instances, the names an `alias ⟨…⟩` command gives, and the names Lean generates for a declaration (constructors, recursors, derived instances) are not read from the source, so they are not listed."
+}

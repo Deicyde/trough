@@ -1,0 +1,22 @@
+{
+ "schema": "trough-ledger/v1",
+ "library": "CSLib",
+ "repo": "leanprover/cslib",
+ "rev": "86d560b6cbb379bd82512424cbcd2a915a1565e7",
+ "module": "Cslib.Computability.Circuit.Homomorphism",
+ "file": "Cslib/Computability/Circuit/Homomorphism.lean",
+ "public": [
+  {"name": "Cslib.Circuits.Homomorphism", "kind": "structure", "line": 32},
+  {"name": "Cslib.Circuits.Homomorphism.ext", "kind": "theorem", "line": 42},
+  {"name": "Cslib.Circuits.Homomorphism.id", "kind": "def", "line": 53},
+  {"name": "Cslib.Circuits.Homomorphism.comp", "kind": "def", "line": 61},
+  {"name": "Cslib.Circuits.Homomorphism.id_map", "kind": "theorem", "line": 73},
+  {"name": "Cslib.Circuits.Homomorphism.comp_map", "kind": "theorem", "line": 77},
+  {"name": "Cslib.Circuits.Homomorphism.id_comp", "kind": "theorem", "line": 85},
+  {"name": "Cslib.Circuits.Homomorphism.comp_id", "kind": "theorem", "line": 93},
+  {"name": "Cslib.Circuits.Homomorphism.comp_assoc", "kind": "theorem", "line": 101}
+ ],
+ "private": [],
+ "missing": [],
+ "unread": "Unnamed instances, the names an `alias ⟨…⟩` command gives, and the names Lean generates for a declaration (constructors, recursors, derived instances) are not read from the source, so they are not listed."
+}

@@ -1,0 +1,27 @@
+{
+ "schema": "trough-ledger/v1",
+ "library": "CompPoly",
+ "repo": "Verified-zkEVM/CompPoly",
+ "rev": "afb9b1363984a70f10e24bd597f6ff40ebc8afbb",
+ "module": "CompPoly.Univariate.Lagrange",
+ "file": "CompPoly/Univariate/Lagrange.lean",
+ "public": [
+  {"name": "CompPoly.CPolynomial.CLagrange.basisDivisor", "kind": "def", "line": 32},
+  {"name": "CompPoly.CPolynomial.CLagrange.cbasisDivisor_eq_basisDivisor", "kind": "lemma", "line": 35},
+  {"name": "CompPoly.CPolynomial.CLagrange.basisListRaw", "kind": "def", "line": 51},
+  {"name": "CompPoly.CPolynomial.CLagrange.basisListRaw_trim_perm", "kind": "lemma", "line": 72},
+  {"name": "CompPoly.CPolynomial.CLagrange.basis", "kind": "def", "line": 89},
+  {"name": "CompPoly.CPolynomial.CLagrange.cbasis_eq_basis", "kind": "lemma", "line": 95},
+  {"name": "CompPoly.CPolynomial.CLagrange.interpolateListRaw", "kind": "def", "line": 115},
+  {"name": "CompPoly.CPolynomial.CLagrange.interpolateListRaw_trim_perm", "kind": "lemma", "line": 143},
+  {"name": "CompPoly.CPolynomial.CLagrange.interpolateRaw", "kind": "def", "line": 155},
+  {"name": "CompPoly.CPolynomial.CLagrange.interpolate", "kind": "def", "line": 195},
+  {"name": "CompPoly.CPolynomial.CLagrange.cinterpolate_eq_interpolate", "kind": "lemma", "line": 226},
+  {"name": "CompPoly.CPolynomial.CLagrange.interpolatePow", "kind": "def", "line": 237},
+  {"name": "CompPoly.CPolynomial.CLagrange.eq_of_pow_eq_pow_of_lt_orderOf", "kind": "theorem", "line": 243},
+  {"name": "CompPoly.CPolynomial.CLagrange.eval_interpolatePow_at_node", "kind": "lemma", "line": 255}
+ ],
+ "private": [],
+ "missing": [],
+ "unread": "Unnamed instances, the names an `alias ⟨…⟩` command gives, and the names Lean generates for a declaration (constructors, recursors, derived instances) are not read from the source, so they are not listed."
+}

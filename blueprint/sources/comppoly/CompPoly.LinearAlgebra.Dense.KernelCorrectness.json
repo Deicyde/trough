@@ -1,0 +1,19 @@
+{
+ "schema": "trough-ledger/v1",
+ "library": "CompPoly",
+ "repo": "Verified-zkEVM/CompPoly",
+ "rev": "afb9b1363984a70f10e24bd597f6ff40ebc8afbb",
+ "module": "CompPoly.LinearAlgebra.Dense.KernelCorrectness",
+ "file": "CompPoly/LinearAlgebra/Dense/KernelCorrectness.lean",
+ "public": [
+  {"name": "CompPoly.DenseMatrix.homogeneousWitness_eq_none_iff", "kind": "theorem", "line": 99},
+  {"name": "CompPoly.DenseMatrix.homogeneousWitness_exists_of_rows_lt_cols", "kind": "theorem", "line": 107},
+  {"name": "CompPoly.DenseMatrix.homogeneousWitness_width", "kind": "theorem", "line": 560},
+  {"name": "CompPoly.DenseMatrix.homogeneousWitness_nonzero", "kind": "theorem", "line": 570},
+  {"name": "CompPoly.DenseMatrix.homogeneousWitness_sound", "kind": "theorem", "line": 579},
+  {"name": "CompPoly.DenseMatrix.homogeneousWitness_none_complete", "kind": "theorem", "line": 616}
+ ],
+ "private": [],
+ "missing": [],
+ "unread": "Unnamed instances, the names an `alias ⟨…⟩` command gives, and the names Lean generates for a declaration (constructors, recursors, derived instances) are not read from the source, so they are not listed."
+}

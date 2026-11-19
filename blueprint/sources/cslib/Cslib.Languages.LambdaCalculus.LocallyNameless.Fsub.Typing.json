@@ -1,0 +1,27 @@
+{
+ "schema": "trough-ledger/v1",
+ "library": "CSLib",
+ "repo": "leanprover/cslib",
+ "rev": "86d560b6cbb379bd82512424cbcd2a915a1565e7",
+ "module": "Cslib.Languages.LambdaCalculus.LocallyNameless.Fsub.Typing",
+ "file": "Cslib/Languages/LambdaCalculus/LocallyNameless/Fsub/Typing.lean",
+ "public": [
+  {"name": "Cslib.LambdaCalculus.LocallyNameless.Fsub.Typing", "kind": "inductive", "line": 36},
+  {"name": "Cslib.LambdaCalculus.LocallyNameless.Fsub.Typing.wf", "kind": "lemma", "line": 68},
+  {"name": "Cslib.LambdaCalculus.LocallyNameless.Fsub.Typing.weaken", "kind": "lemma", "line": 86},
+  {"name": "Cslib.LambdaCalculus.LocallyNameless.Fsub.Typing.weaken_head", "kind": "lemma", "line": 98},
+  {"name": "Cslib.LambdaCalculus.LocallyNameless.Fsub.Typing.narrow", "kind": "lemma", "line": 105},
+  {"name": "Cslib.LambdaCalculus.LocallyNameless.Fsub.Typing.subst_tm", "kind": "lemma", "line": 118},
+  {"name": "Cslib.LambdaCalculus.LocallyNameless.Fsub.Typing.subst_ty", "kind": "lemma", "line": 141},
+  {"name": "Cslib.LambdaCalculus.LocallyNameless.Fsub.Typing.abs_inv", "kind": "lemma", "line": 164},
+  {"name": "Cslib.LambdaCalculus.LocallyNameless.Fsub.Typing.tabs_inv", "kind": "lemma", "line": 188},
+  {"name": "Cslib.LambdaCalculus.LocallyNameless.Fsub.Typing.inl_inv", "kind": "lemma", "line": 214},
+  {"name": "Cslib.LambdaCalculus.LocallyNameless.Fsub.Typing.inr_inv", "kind": "lemma", "line": 223},
+  {"name": "Cslib.LambdaCalculus.LocallyNameless.Fsub.Typing.canonical_form_abs", "kind": "lemma", "line": 232},
+  {"name": "Cslib.LambdaCalculus.LocallyNameless.Fsub.Typing.canonical_form_tabs", "kind": "lemma", "line": 242},
+  {"name": "Cslib.LambdaCalculus.LocallyNameless.Fsub.Typing.canonical_form_sum", "kind": "lemma", "line": 252}
+ ],
+ "private": [],
+ "missing": [],
+ "unread": "Unnamed instances, the names an `alias ⟨…⟩` command gives, and the names Lean generates for a declaration (constructors, recursors, derived instances) are not read from the source, so they are not listed."
+}

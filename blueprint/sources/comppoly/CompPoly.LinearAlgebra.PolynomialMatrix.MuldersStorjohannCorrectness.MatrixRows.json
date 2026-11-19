@@ -1,0 +1,27 @@
+{
+ "schema": "trough-ledger/v1",
+ "library": "CompPoly",
+ "repo": "Verified-zkEVM/CompPoly",
+ "rev": "afb9b1363984a70f10e24bd597f6ff40ebc8afbb",
+ "module": "CompPoly.LinearAlgebra.PolynomialMatrix.MuldersStorjohannCorrectness.MatrixRows",
+ "file": "CompPoly/LinearAlgebra/PolynomialMatrix/MuldersStorjohannCorrectness/MatrixRows.lean",
+ "public": [
+  {"name": "CompPoly.PolynomialMatrix.replaceRow_size", "kind": "theorem", "line": 25},
+  {"name": "CompPoly.PolynomialMatrix.replaceRow_matrixWidth", "kind": "theorem", "line": 30},
+  {"name": "CompPoly.PolynomialMatrix.replaceRow_shape", "kind": "theorem", "line": 45},
+  {"name": "CompPoly.PolynomialMatrix.replaceRow_wellFormed", "kind": "theorem", "line": 52},
+  {"name": "CompPoly.PolynomialMatrix.replaceRow_rows_mem_rowSpan", "kind": "theorem", "line": 77},
+  {"name": "CompPoly.PolynomialMatrix.replaceRow_newRow_mem", "kind": "theorem", "line": 100},
+  {"name": "CompPoly.PolynomialMatrix.replaceRow_oldRow_mem", "kind": "theorem", "line": 113},
+  {"name": "CompPoly.PolynomialMatrix.matrix_getD_size_of_wellFormed", "kind": "theorem", "line": 125},
+  {"name": "CompPoly.PolynomialMatrix.matrix_getElem?_getD_size_of_wellFormed", "kind": "theorem", "line": 134},
+  {"name": "CompPoly.PolynomialMatrix.matrix_getD_mem_rowSpan", "kind": "theorem", "line": 139},
+  {"name": "CompPoly.PolynomialMatrix.zeroRow_mem_rowSpan", "kind": "theorem", "line": 149},
+  {"name": "CompPoly.PolynomialMatrix.rowLinearCombination_mem_rowSpan_of_rows_mem", "kind": "theorem", "line": 181},
+  {"name": "CompPoly.PolynomialMatrix.rowSpan_subset_of_rows_mem", "kind": "theorem", "line": 216},
+  {"name": "CompPoly.PolynomialMatrix.cancelShiftedLeadingTerm_size_of_wellFormed", "kind": "theorem", "line": 225}
+ ],
+ "private": [],
+ "missing": [],
+ "unread": "Unnamed instances, the names an `alias ⟨…⟩` command gives, and the names Lean generates for a declaration (constructors, recursors, derived instances) are not read from the source, so they are not listed."
+}

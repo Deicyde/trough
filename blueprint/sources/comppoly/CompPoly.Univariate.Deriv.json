@@ -1,0 +1,25 @@
+{
+ "schema": "trough-ledger/v1",
+ "library": "CompPoly",
+ "repo": "Verified-zkEVM/CompPoly",
+ "rev": "afb9b1363984a70f10e24bd597f6ff40ebc8afbb",
+ "module": "CompPoly.Univariate.Deriv",
+ "file": "CompPoly/Univariate/Deriv.lean",
+ "public": [
+  {"name": "CompPoly.CPolynomial.derivative", "kind": "def", "line": 28},
+  {"name": "CompPoly.CPolynomial.coeff_derivative", "kind": "theorem", "line": 36},
+  {"name": "CompPoly.CPolynomial.derivative_zero", "kind": "theorem", "line": 56},
+  {"name": "CompPoly.CPolynomial.derivative_C", "kind": "theorem", "line": 64},
+  {"name": "CompPoly.CPolynomial.derivative_monomial", "kind": "theorem", "line": 72},
+  {"name": "CompPoly.CPolynomial.derivative_add", "kind": "theorem", "line": 85},
+  {"name": "CompPoly.CPolynomial.derivative_toPoly", "kind": "theorem", "line": 95},
+  {"name": "CompPoly.CPolynomial.derivative_mul", "kind": "theorem", "line": 103},
+  {"name": "CompPoly.CPolynomial.taylor", "kind": "def", "line": 111},
+  {"name": "CompPoly.CPolynomial.taylor_toPoly", "kind": "theorem", "line": 116},
+  {"name": "CompPoly.CPolynomial.taylor_zero", "kind": "theorem", "line": 127},
+  {"name": "CompPoly.CPolynomial.taylor_coeff_zero", "kind": "theorem", "line": 133}
+ ],
+ "private": [],
+ "missing": [],
+ "unread": "Unnamed instances, the names an `alias ⟨…⟩` command gives, and the names Lean generates for a declaration (constructors, recursors, derived instances) are not read from the source, so they are not listed."
+}

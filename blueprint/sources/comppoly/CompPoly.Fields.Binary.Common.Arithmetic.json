@@ -1,0 +1,25 @@
+{
+ "schema": "trough-ledger/v1",
+ "library": "CompPoly",
+ "repo": "Verified-zkEVM/CompPoly",
+ "rev": "afb9b1363984a70f10e24bd597f6ff40ebc8afbb",
+ "module": "CompPoly.Fields.Binary.Common.Arithmetic",
+ "file": "CompPoly/Fields/Binary/Common/Arithmetic.lean",
+ "public": [
+  {"name": "BinaryField.B128", "kind": "abbrev", "line": 32},
+  {"name": "BinaryField.B256", "kind": "abbrev", "line": 33},
+  {"name": "BinaryField.to256", "kind": "def", "line": 36},
+  {"name": "BinaryField.to256_toNat", "kind": "lemma", "line": 38},
+  {"name": "BinaryField.zeroExtendTo", "kind": "def", "line": 65},
+  {"name": "BinaryField.toNat_zeroExtendTo", "kind": "theorem", "line": 67},
+  {"name": "BinaryField.to256_eq_zeroExtendTo", "kind": "theorem", "line": 74},
+  {"name": "BinaryField.carryLessMul", "kind": "def", "line": 78},
+  {"name": "BinaryField.clMul", "kind": "def", "line": 84},
+  {"name": "BinaryField.clMul_eq_carryLessMul", "kind": "theorem", "line": 86},
+  {"name": "BinaryField.clSq", "kind": "def", "line": 89},
+  {"name": "BinaryField.fold_range_xor_eq_foldl", "kind": "lemma", "line": 92}
+ ],
+ "private": [],
+ "missing": [],
+ "unread": "Unnamed instances, the names an `alias ⟨…⟩` command gives, and the names Lean generates for a declaration (constructors, recursors, derived instances) are not read from the source, so they are not listed."
+}

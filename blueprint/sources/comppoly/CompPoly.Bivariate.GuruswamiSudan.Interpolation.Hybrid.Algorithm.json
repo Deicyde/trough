@@ -1,0 +1,15 @@
+{
+ "schema": "trough-ledger/v1",
+ "library": "CompPoly",
+ "repo": "Verified-zkEVM/CompPoly",
+ "rev": "afb9b1363984a70f10e24bd597f6ff40ebc8afbb",
+ "module": "CompPoly.Bivariate.GuruswamiSudan.Interpolation.Hybrid.Algorithm",
+ "file": "CompPoly/Bivariate/GuruswamiSudan/Interpolation/Hybrid/Algorithm.lean",
+ "public": [
+  {"name": "CompPoly.GuruswamiSudan.Hybrid.hybridPositiveInterpolate", "kind": "def", "line": 61},
+  {"name": "CompPoly.GuruswamiSudan.Hybrid.hybridInterpolate", "kind": "def", "line": 96}
+ ],
+ "private": [],
+ "missing": [],
+ "unread": "Unnamed instances, the names an `alias ⟨…⟩` command gives, and the names Lean generates for a declaration (constructors, recursors, derived instances) are not read from the source, so they are not listed."
+}

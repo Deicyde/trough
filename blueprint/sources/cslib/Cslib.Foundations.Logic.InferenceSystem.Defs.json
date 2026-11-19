@@ -1,0 +1,22 @@
+{
+ "schema": "trough-ledger/v1",
+ "library": "CSLib",
+ "repo": "leanprover/cslib",
+ "rev": "86d560b6cbb379bd82512424cbcd2a915a1565e7",
+ "module": "Cslib.Foundations.Logic.InferenceSystem.Defs",
+ "file": "Cslib/Foundations/Logic/InferenceSystem/Defs.lean",
+ "public": [
+  {"name": "Cslib.Logic.InferenceSystem", "kind": "class", "line": 30},
+  {"name": "Cslib.Logic.InferenceSystem.Default", "kind": "opaque", "line": 38},
+  {"name": "Cslib.Logic.HasInferenceSystem", "kind": "abbrev", "line": 41},
+  {"name": "Cslib.Logic.InferenceSystem.rwConclusion", "kind": "def", "line": 49},
+  {"name": "Cslib.Logic.InferenceSystem.DerivableIn", "kind": "def", "line": 53},
+  {"name": "Cslib.Logic.InferenceSystem.Derivable", "kind": "abbrev", "line": 56},
+  {"name": "Cslib.Logic.InferenceSystem.DerivableIn.fromDerivation", "kind": "theorem", "line": 59},
+  {"name": "Cslib.Logic.InferenceSystem.DerivableIn.toDerivation", "kind": "def", "line": 65},
+  {"name": "Cslib.Logic.InferenceSystem.delabInferenceSystem", "kind": "def", "line": 77}
+ ],
+ "private": [],
+ "missing": [],
+ "unread": "Unnamed instances, the names an `alias ⟨…⟩` command gives, and the names Lean generates for a declaration (constructors, recursors, derived instances) are not read from the source, so they are not listed."
+}

@@ -1,0 +1,21 @@
+{
+ "schema": "trough-ledger/v1",
+ "library": "CompPoly",
+ "repo": "Verified-zkEVM/CompPoly",
+ "rev": "afb9b1363984a70f10e24bd597f6ff40ebc8afbb",
+ "module": "CompPoly.Univariate.ReedSolomon",
+ "file": "CompPoly/Univariate/ReedSolomon.lean",
+ "public": [
+  {"name": "CompPoly.ReedSolomon.Domain", "kind": "def", "line": 38},
+  {"name": "CompPoly.ReedSolomon.Domain.n", "kind": "abbrev", "line": 43},
+  {"name": "CompPoly.ReedSolomon.Domain.node_injective", "kind": "lemma", "line": 46},
+  {"name": "CompPoly.ReedSolomon.messagePoly", "kind": "def", "line": 54},
+  {"name": "CompPoly.ReedSolomon.messagePoly_degree_lt", "kind": "lemma", "line": 60},
+  {"name": "CompPoly.ReedSolomon.messagePoly_ofFn_coeff", "kind": "lemma", "line": 67},
+  {"name": "CompPoly.ReedSolomon.encode", "kind": "def", "line": 78},
+  {"name": "CompPoly.ReedSolomon.encode_get", "kind": "lemma", "line": 83}
+ ],
+ "private": [],
+ "missing": [],
+ "unread": "Unnamed instances, the names an `alias ⟨…⟩` command gives, and the names Lean generates for a declaration (constructors, recursors, derived instances) are not read from the source, so they are not listed."
+}

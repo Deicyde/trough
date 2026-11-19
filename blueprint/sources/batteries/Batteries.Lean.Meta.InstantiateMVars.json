@@ -1,0 +1,17 @@
+{
+ "schema": "trough-ledger/v1",
+ "library": "Batteries",
+ "repo": "leanprover-community/batteries",
+ "rev": "b4b25a3886a16daacaf6615c2eea7170a6e8f458",
+ "module": "Batteries.Lean.Meta.InstantiateMVars",
+ "file": "Batteries/Lean/Meta/InstantiateMVars.lean",
+ "public": [
+  {"name": "Lean.MVarId.instantiateMVarsInType", "kind": "def", "line": 20},
+  {"name": "Lean.MVarId.instantiateMVarsInLocalDecl", "kind": "def", "line": 36},
+  {"name": "Lean.MVarId.instantiateMVarsInLocalContext", "kind": "def", "line": 51},
+  {"name": "Lean.MVarId.instantiateMVars", "kind": "def", "line": 62}
+ ],
+ "private": [],
+ "missing": [],
+ "unread": "Unnamed instances, the names an `alias ⟨…⟩` command gives, and the names Lean generates for a declaration (constructors, recursors, derived instances) are not read from the source, so they are not listed."
+}

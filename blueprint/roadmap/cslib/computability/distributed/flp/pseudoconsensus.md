@@ -81,3 +81,4 @@ theorem of_consensus [Fintype P] (f : ℕ) (hf : f < card P)
 ## Sources
 
 - [Cslib/Computability/Distributed/FLP/PseudoConsensus.lean at 86d560b6](https://github.com/leanprover/cslib/blob/86d560b6cbb379bd82512424cbcd2a915a1565e7/Cslib/Computability/Distributed/FLP/PseudoConsensus.lean)
+- [Declaration ledger](../../../../../sources/cslib/Cslib.Computability.Distributed.FLP.PseudoConsensus.json)

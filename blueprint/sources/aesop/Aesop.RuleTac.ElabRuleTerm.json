@@ -1,0 +1,27 @@
+{
+ "schema": "trough-ledger/v1",
+ "library": "Aesop",
+ "repo": "leanprover-community/aesop",
+ "rev": "637fdbb8689a3387a82568b07355231f892144d7",
+ "module": "Aesop.RuleTac.ElabRuleTerm",
+ "file": "Aesop/RuleTac/ElabRuleTerm.lean",
+ "public": [
+  {"name": "Aesop.elabGlobalRuleIdent?", "kind": "def", "line": 19},
+  {"name": "Aesop.matchInductiveTypeSynonym?", "kind": "def", "line": 29},
+  {"name": "Aesop.elabInductiveRuleIdent?", "kind": "def", "line": 46},
+  {"name": "Aesop.runTacticMAsTermElabM", "kind": "def", "line": 60},
+  {"name": "Aesop.runTacticMAsElabM", "kind": "def", "line": 65},
+  {"name": "Aesop.withFullElaboration", "kind": "def", "line": 68},
+  {"name": "Aesop.elabRuleTermForApplyLikeCore", "kind": "def", "line": 71},
+  {"name": "Aesop.elabRuleTermForApplyLikeMetaM", "kind": "def", "line": 75},
+  {"name": "Aesop.elabRuleTermForApplyLike", "kind": "def", "line": 78},
+  {"name": "Aesop.elabSimpTheorems", "kind": "def", "line": 82},
+  {"name": "Aesop.mkSimpArgs", "kind": "def", "line": 96},
+  {"name": "Aesop.elabRuleTermForSimpCore", "kind": "def", "line": 104},
+  {"name": "Aesop.checkElabRuleTermForSimp", "kind": "def", "line": 110},
+  {"name": "Aesop.elabRuleTermForSimpMetaM", "kind": "def", "line": 115}
+ ],
+ "private": [],
+ "missing": [],
+ "unread": "Unnamed instances, the names an `alias ⟨…⟩` command gives, and the names Lean generates for a declaration (constructors, recursors, derived instances) are not read from the source, so they are not listed."
+}

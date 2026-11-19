@@ -1,0 +1,24 @@
+{
+ "schema": "trough-ledger/v1",
+ "library": "Aesop",
+ "repo": "leanprover-community/aesop",
+ "rev": "637fdbb8689a3387a82568b07355231f892144d7",
+ "module": "Aesop.Script.TacticState",
+ "file": "Aesop/Script/TacticState.lean",
+ "public": [
+  {"name": "Aesop.Script.TacticState", "kind": "structure", "line": 20},
+  {"name": "Aesop.Script.TacticState.mkInitial", "kind": "def", "line": 27},
+  {"name": "Aesop.Script.TacticState.getVisibleGoalIndex?", "kind": "def", "line": 36},
+  {"name": "Aesop.Script.TacticState.getVisibleGoalIndex", "kind": "def", "line": 39},
+  {"name": "Aesop.Script.TacticState.getMainGoal?", "kind": "def", "line": 45},
+  {"name": "Aesop.Script.TacticState.visibleGoalsHaveMVars", "kind": "def", "line": 48},
+  {"name": "Aesop.Script.TacticState.solveVisibleGoals", "kind": "def", "line": 51},
+  {"name": "Aesop.Script.TacticState.eraseSolvedGoals", "kind": "def", "line": 66},
+  {"name": "Aesop.Script.TacticState.applyTactic", "kind": "def", "line": 77},
+  {"name": "Aesop.Script.TacticState.focus", "kind": "def", "line": 88},
+  {"name": "Aesop.Script.TacticState.onGoalM", "kind": "def", "line": 98}
+ ],
+ "private": [],
+ "missing": [],
+ "unread": "Unnamed instances, the names an `alias ⟨…⟩` command gives, and the names Lean generates for a declaration (constructors, recursors, derived instances) are not read from the source, so they are not listed."
+}

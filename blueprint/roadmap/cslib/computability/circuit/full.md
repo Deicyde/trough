@@ -107,3 +107,4 @@ theorem fullInterpretation_isComplete [Finite U] (hk : 2 ≤ k) :
 ## Sources
 
 - [Cslib/Computability/Circuit/Full.lean at 86d560b6](https://github.com/leanprover/cslib/blob/86d560b6cbb379bd82512424cbcd2a915a1565e7/Cslib/Computability/Circuit/Full.lean)
+- [Declaration ledger](../../../../sources/cslib/Cslib.Computability.Circuit.Full.json)

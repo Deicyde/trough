@@ -58,3 +58,4 @@ theorem hist_run_exists {xs : ωSequence Symbol} {ss : ωSequence State}
 ## Sources
 
 - [Cslib/Computability/Automata/NA/Hist.lean at 86d560b6](https://github.com/leanprover/cslib/blob/86d560b6cbb379bd82512424cbcd2a915a1565e7/Cslib/Computability/Automata/NA/Hist.lean)
+- [Declaration ledger](../../../../../sources/cslib/Cslib.Computability.Automata.NA.Hist.json)

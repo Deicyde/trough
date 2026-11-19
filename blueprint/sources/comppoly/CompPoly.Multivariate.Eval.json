@@ -1,0 +1,27 @@
+{
+ "schema": "trough-ledger/v1",
+ "library": "CompPoly",
+ "repo": "Verified-zkEVM/CompPoly",
+ "rev": "afb9b1363984a70f10e24bd597f6ff40ebc8afbb",
+ "module": "CompPoly.Multivariate.Eval",
+ "file": "CompPoly/Multivariate/Eval.lean",
+ "public": [
+  {"name": "CPoly.CMvPolynomial.evalHom", "kind": "def", "line": 34},
+  {"name": "CPoly.CMvPolynomial.evalHom_apply", "kind": "theorem", "line": 37},
+  {"name": "CPoly.CMvPolynomial.eval_zero", "kind": "lemma", "line": 40},
+  {"name": "CPoly.CMvPolynomial.eval_one", "kind": "lemma", "line": 44},
+  {"name": "CPoly.CMvPolynomial.eval_C", "kind": "lemma", "line": 48},
+  {"name": "CPoly.CMvPolynomial.eval_X", "kind": "theorem", "line": 52},
+  {"name": "CPoly.CMvPolynomial.eval_add", "kind": "lemma", "line": 56},
+  {"name": "CPoly.CMvPolynomial.eval_mul", "kind": "lemma", "line": 60},
+  {"name": "CPoly.CMvPolynomial.eval_pow", "kind": "lemma", "line": 64},
+  {"name": "CPoly.CMvPolynomial.eval_neg", "kind": "lemma", "line": 78},
+  {"name": "CPoly.CMvPolynomial.eval_sub", "kind": "lemma", "line": 83},
+  {"name": "CPoly.CMvPolynomial.eval_sum", "kind": "theorem", "line": 90},
+  {"name": "CPoly.CMvPolynomial.eval_prod", "kind": "theorem", "line": 95},
+  {"name": "CPoly.CMvPolynomial.eval_ext_univariate", "kind": "theorem", "line": 128}
+ ],
+ "private": [],
+ "missing": [],
+ "unread": "Unnamed instances, the names an `alias ⟨…⟩` command gives, and the names Lean generates for a declaration (constructors, recursors, derived instances) are not read from the source, so they are not listed."
+}

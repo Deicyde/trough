@@ -1,0 +1,26 @@
+{
+ "schema": "trough-ledger/v1",
+ "library": "CompPoly",
+ "repo": "Verified-zkEVM/CompPoly",
+ "rev": "afb9b1363984a70f10e24bd597f6ff40ebc8afbb",
+ "module": "CompPoly.Fields.KoalaBear.Ext6",
+ "file": "CompPoly/Fields/KoalaBear/Ext6.lean",
+ "public": [
+  {"name": "KoalaBear.ext6Params", "kind": "def", "line": 50},
+  {"name": "KoalaBear.ext6Params_d", "kind": "theorem", "line": 59},
+  {"name": "KoalaBear.ext6Params_q", "kind": "theorem", "line": 60},
+  {"name": "KoalaBear.ext6Params_poly", "kind": "theorem", "line": 63},
+  {"name": "KoalaBear.Ext6", "kind": "abbrev", "line": 88},
+  {"name": "KoalaBear.ext6Gen", "kind": "def", "line": 92},
+  {"name": "KoalaBear.ext6Gen_eq_gen", "kind": "theorem", "line": 100},
+  {"name": "KoalaBear.toQuot_ext6Gen", "kind": "theorem", "line": 103},
+  {"name": "KoalaBear.aeval_ext6Gen", "kind": "theorem", "line": 106},
+  {"name": "KoalaBear.ext6Gen_pow_six", "kind": "theorem", "line": 110},
+  {"name": "KoalaBear.ext6Gen_cubed_is_primitive_cube_root", "kind": "theorem", "line": 120},
+  {"name": "KoalaBear.ext6Gen_pow_nine", "kind": "theorem", "line": 126},
+  {"name": "KoalaBear.card_ext6", "kind": "theorem", "line": 132}
+ ],
+ "private": [],
+ "missing": [],
+ "unread": "Unnamed instances, the names an `alias ⟨…⟩` command gives, and the names Lean generates for a declaration (constructors, recursors, derived instances) are not read from the source, so they are not listed."
+}

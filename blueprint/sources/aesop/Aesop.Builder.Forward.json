@@ -1,0 +1,20 @@
+{
+ "schema": "trough-ledger/v1",
+ "library": "Aesop",
+ "repo": "leanprover-community/aesop",
+ "rev": "637fdbb8689a3387a82568b07355231f892144d7",
+ "module": "Aesop.Builder.Forward",
+ "file": "Aesop/Builder/Forward.lean",
+ "public": [
+  {"name": "Aesop.RuleBuilderOptions.forwardTransparency", "kind": "def", "line": 19},
+  {"name": "Aesop.RuleBuilderOptions.forwardIndexTransparency", "kind": "def", "line": 22},
+  {"name": "Aesop.RuleBuilder.getForwardIndexingMode", "kind": "def", "line": 29},
+  {"name": "Aesop.RuleBuilder.getImmediatePremises", "kind": "def", "line": 45},
+  {"name": "Aesop.RuleBuilder.forwardCore₂", "kind": "def", "line": 95},
+  {"name": "Aesop.RuleBuilder.forwardCore", "kind": "def", "line": 124},
+  {"name": "Aesop.RuleBuilder.forward", "kind": "def", "line": 148}
+ ],
+ "private": [],
+ "missing": [],
+ "unread": "Unnamed instances, the names an `alias ⟨…⟩` command gives, and the names Lean generates for a declaration (constructors, recursors, derived instances) are not read from the source, so they are not listed."
+}

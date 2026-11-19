@@ -1,0 +1,20 @@
+{
+ "schema": "trough-ledger/v1",
+ "library": "Batteries",
+ "repo": "leanprover-community/batteries",
+ "rev": "b4b25a3886a16daacaf6615c2eea7170a6e8f458",
+ "module": "Batteries.Lean.Position",
+ "file": "Batteries/Lean/Position.lean",
+ "public": [
+  {"name": "Lean.findLineStart", "kind": "def", "line": 15},
+  {"name": "Lean.findIndentAndIsStart", "kind": "def", "line": 22},
+  {"name": "Lean.Position.getDeclsAfter", "kind": "def", "line": 38},
+  {"name": "String.Pos.Raw.getDeclsAfter", "kind": "def", "line": 52},
+  {"name": "Lean.DeclarationRange.toSyntaxRange", "kind": "def", "line": 58},
+  {"name": "Lean.findDeclarationSyntaxRange?", "kind": "def", "line": 67},
+  {"name": "Lean.withDeclRef?", "kind": "def", "line": 86}
+ ],
+ "private": [],
+ "missing": [],
+ "unread": "Unnamed instances, the names an `alias ⟨…⟩` command gives, and the names Lean generates for a declaration (constructors, recursors, derived instances) are not read from the source, so they are not listed."
+}

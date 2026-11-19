@@ -1,0 +1,15 @@
+{
+ "schema": "trough-ledger/v1",
+ "library": "CSLib",
+ "repo": "leanprover/cslib",
+ "rev": "86d560b6cbb379bd82512424cbcd2a915a1565e7",
+ "module": "Cslib.Computability.Languages.RegularExpressions",
+ "file": "Cslib/Computability/Languages/RegularExpressions.lean",
+ "public": [
+  {"name": "RegularExpression.mem_sum_matches'", "kind": "theorem", "line": 29},
+  {"name": "RegularExpression.iSup_matches'", "kind": "theorem", "line": 36}
+ ],
+ "private": [],
+ "missing": [],
+ "unread": "Unnamed instances, the names an `alias ⟨…⟩` command gives, and the names Lean generates for a declaration (constructors, recursors, derived instances) are not read from the source, so they are not listed."
+}

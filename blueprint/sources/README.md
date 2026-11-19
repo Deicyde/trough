@@ -73,6 +73,22 @@ Trough reads these sources. The catalog of libraries is `catalog/libraries.toml`
 ## CSLib
 
 - `data/cslib/library.json`: each module's title, docstrings and authors, and its public declarations with their kinds, lines, docstrings and Lean statements, read from the source text without Lean, with the opening of each folder's README, the README's description and the maintainers GOVERNANCE.md names, from [leanprover/cslib at 86d560b6](https://github.com/leanprover/cslib/tree/86d560b6cbb379bd82512424cbcd2a915a1565e7), Apache-2.0. `data/cslib/deps.json`: the modules each module's statements and proofs use, and the names read from the source that Lean has only as private declarations or not at all, written by `lean/cslib/CslibDeps.lean` in GitHub Actions. `data/cslib/source.json` records the commit, its Lean toolchain and Mathlib.
+- `blueprint/sources/cslib/`: a declaration ledger for each module, which its article's Sources links: every declaration read from the module's source, with its kind and line, as public (the article's `lean:` names), private to the module, or not in Lean.
+
+## Batteries
+
+- `data/batteries/library.json`: each module's title, docstrings and authors, and its declarations with their kinds, lines, docstrings and Lean statements, read from the source text without Lean, with the README's description, from [leanprover-community/batteries at b4b25a38](https://github.com/leanprover-community/batteries/tree/b4b25a3886a16daacaf6615c2eea7170a6e8f458), Apache-2.0. `data/batteries/deps.json`: the modules each module's statements and proofs use, and the names read from the source that Lean has only as private declarations or not at all, written by `lean/library/LibraryDeps.lean` in GitHub Actions. `data/batteries/source.json` records the commit and its Lean toolchain.
+- `blueprint/sources/batteries/`: a declaration ledger for each module with an article, which the article's Sources links, as for CSLib.
+
+## Aesop
+
+- `data/aesop/library.json`: each module's title, docstrings and authors, and its declarations with their kinds, lines, docstrings and Lean statements, read from the source text without Lean, with the README's description, from [leanprover-community/aesop at 637fdbb8](https://github.com/leanprover-community/aesop/tree/637fdbb8689a3387a82568b07355231f892144d7), Apache-2.0. `data/aesop/deps.json`: the modules each module's statements and proofs use, and the names read from the source that Lean has only as private declarations or not at all, written by `lean/library/LibraryDeps.lean` in GitHub Actions. `data/aesop/source.json` records the commit and its Lean toolchain.
+- `blueprint/sources/aesop/`: a declaration ledger for each module with an article, which the article's Sources links, as for CSLib.
+
+## CompPoly
+
+- `data/comppoly/library.json`: each module's title, docstrings and authors, and its declarations with their kinds, lines, docstrings and Lean statements, read from the source text without Lean, with the README's description, from [Verified-zkEVM/CompPoly at afb9b136](https://github.com/Verified-zkEVM/CompPoly/tree/afb9b1363984a70f10e24bd597f6ff40ebc8afbb), Apache-2.0. `data/comppoly/deps.json`: the modules each module's statements and proofs use, and the names read from the source that Lean has only as private declarations or not at all, written by `lean/library/LibraryDeps.lean` in GitHub Actions. `data/comppoly/source.json` records the commit and its Lean toolchain and Mathlib.
+- `blueprint/sources/comppoly/`: a declaration ledger for each module with an article, which the article's Sources links, as for CSLib.
 
 ## Physlib
 
@@ -119,6 +135,9 @@ Trough reads these sources. The catalog of libraries is `catalog/libraries.toml`
 - [Formal Conjectures](https://github.com/google-deepmind/formal-conjectures) at 5258ab9ac6db: Statements, mostly without proof, of open and solved problems, a file per problem in a folder per source: the Erdős problems, OEIS, Wikipedia, Green's open problems, Written on the Wall II, papers, arXiv, MathOverflow, books and smaller ones.
 - [Physlib](https://github.com/leanprover-community/physlib) at 2a1dfe43134b: Physics in Lean (formerly PhysLean, and HepLean before that), merged with Lean-QuantumInfo: three libraries, the reviewed core Physlib (space and time, relativity, particles, QFT, quantum and classical mechanics, electromagnetism, condensed matter, cosmology and more), PhyslibAlpha under a lighter review, and QuantumInfo.
 - [CSLib](https://github.com/leanprover/cslib) at 86d560b6cbb3: The Lean Computer Science Library: computability (automata, machines, circuits, formal languages), operational semantics and transition systems, programming languages and calculi, logics, algorithms, cryptography and learning theory, documented in Mathlib's style.
+- [Batteries](https://github.com/leanprover-community/batteries) at b4b25a3886a1: The "batteries included" extended library for Lean: data structures, tactics, linters, code actions and other tools for Lean programs and proofs, in folders under Batteries/ (Classes, CodeAction, Control, Data, Lean, Linter, Recycling, Tactic, Util). Mathlib requires it.
+- [Aesop](https://github.com/leanprover-community/aesop) at 637fdbb8689a: Aesop (Automated Extensible Search for Obvious Proofs), a proof search tactic for Lean 4, broadly similar to Isabelle's auto: rule sets, best-first search trees, normalisation, forward reasoning and script generation, in folders under Aesop/. Mathlib requires it.
+- [CompPoly](https://github.com/Verified-zkEVM/CompPoly) at afb9b1363984: A formally verified library of computable polynomial operations over finite fields and general rings: univariate, multivariate, multilinear and bivariate polynomials, with ring equivalences to Mathlib's, finite fields, linear algebra and data structures, in folders under CompPoly/. Built on Mathlib.
 - [Foundation](https://github.com/FormalizedFormalLogic/Foundation) at c3eb37ae896d: Mathematical logic: first-order arithmetic and incompleteness (FirstOrder 177), provability logic (58), propositional and modal logic, second-order.
 - [Analysis I companion](https://github.com/teorth/analysis) at a19a5bfadc61: Lean companion to Tao's Analysis I textbook (section-by-section exercises), plus measure theory.
 

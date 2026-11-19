@@ -1,0 +1,31 @@
+{
+ "schema": "trough-ledger/v1",
+ "library": "CompPoly",
+ "repo": "Verified-zkEVM/CompPoly",
+ "rev": "afb9b1363984a70f10e24bd597f6ff40ebc8afbb",
+ "module": "CompPoly.Univariate.ReedSolomon.GaoCorrectness",
+ "file": "CompPoly/Univariate/ReedSolomon/GaoCorrectness.lean",
+ "public": [
+  {"name": "CompPoly.ReedSolomon.Gao.bezout_solutions_cross_mul", "kind": "theorem", "line": 61},
+  {"name": "CompPoly.ReedSolomon.Gao.disagreement_subset_error_locator_zeros", "kind": "lemma", "line": 80},
+  {"name": "CompPoly.ReedSolomon.Gao.disagreement_card_le_error_locator_natDegree", "kind": "lemma", "line": 92},
+  {"name": "CompPoly.ReedSolomon.Gao.hammingDist_le_error_locator_natDegree", "kind": "lemma", "line": 104},
+  {"name": "CompPoly.ReedSolomon.Gao.receivedInterpolant_eval_node", "kind": "lemma", "line": 126},
+  {"name": "CompPoly.ReedSolomon.Gao.receivedInterpolant_degree_lt", "kind": "lemma", "line": 132},
+  {"name": "CompPoly.ReedSolomon.Gao.toPoly_nodalPoly", "kind": "lemma", "line": 138},
+  {"name": "CompPoly.ReedSolomon.Gao.natDegree_nodalPoly", "kind": "lemma", "line": 147},
+  {"name": "CompPoly.ReedSolomon.Gao.toPoly_nodalPoly_ne_zero", "kind": "lemma", "line": 154},
+  {"name": "CompPoly.ReedSolomon.Gao.degree_nodalPoly", "kind": "lemma", "line": 159},
+  {"name": "CompPoly.ReedSolomon.Gao.nodalPoly_eval_node_eq_zero", "kind": "lemma", "line": 164},
+  {"name": "CompPoly.ReedSolomon.Gao.partialGcd_stopSpec", "kind": "lemma", "line": 173},
+  {"name": "CompPoly.ReedSolomon.Gao.decode_sound", "kind": "theorem", "line": 218},
+  {"name": "CompPoly.ReedSolomon.Gao.decode_eq_none", "kind": "theorem", "line": 242},
+  {"name": "CompPoly.ReedSolomon.Gao.decode_eq_some", "kind": "theorem", "line": 257},
+  {"name": "CompPoly.ReedSolomon.Gao.decode_none_farness", "kind": "theorem", "line": 310},
+  {"name": "CompPoly.ReedSolomon.Gao.decode_eq_none_iff", "kind": "theorem", "line": 322},
+  {"name": "CompPoly.ReedSolomon.Gao.decode_unique", "kind": "theorem", "line": 331}
+ ],
+ "private": [],
+ "missing": [],
+ "unread": "Unnamed instances, the names an `alias ⟨…⟩` command gives, and the names Lean generates for a declaration (constructors, recursors, derived instances) are not read from the source, so they are not listed."
+}

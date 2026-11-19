@@ -1,0 +1,25 @@
+{
+ "schema": "trough-ledger/v1",
+ "library": "CSLib",
+ "repo": "leanprover/cslib",
+ "rev": "86d560b6cbb379bd82512424cbcd2a915a1565e7",
+ "module": "Cslib.Languages.CombinatoryLogic.PartrecToSKI",
+ "file": "Cslib/Languages/CombinatoryLogic/PartrecToSKI.lean",
+ "public": [
+  {"name": "Cslib.SKI.PrecStepPoly", "kind": "def", "line": 44},
+  {"name": "Cslib.SKI.PrecStep", "kind": "def", "line": 48},
+  {"name": "Cslib.SKI.precStep_def", "kind": "theorem", "line": 50},
+  {"name": "Cslib.SKI.PrecTransPoly", "kind": "def", "line": 57},
+  {"name": "Cslib.SKI.PrecTrans", "kind": "def", "line": 63},
+  {"name": "Cslib.SKI.precTrans_def", "kind": "theorem", "line": 65},
+  {"name": "Cslib.SKI.RFindTransPoly", "kind": "def", "line": 75},
+  {"name": "Cslib.SKI.RFindTrans", "kind": "def", "line": 80},
+  {"name": "Cslib.SKI.rfindTrans_def", "kind": "theorem", "line": 82},
+  {"name": "Nat.Partrec.Code.toSKI", "kind": "def", "line": 91},
+  {"name": "Nat.Partrec.Code.toSKI_correct", "kind": "theorem", "line": 219},
+  {"name": "Cslib.SKI.natPartrec_skiComputable", "kind": "theorem", "line": 237}
+ ],
+ "private": [],
+ "missing": [],
+ "unread": "Unnamed instances, the names an `alias ⟨…⟩` command gives, and the names Lean generates for a declaration (constructors, recursors, derived instances) are not read from the source, so they are not listed."
+}

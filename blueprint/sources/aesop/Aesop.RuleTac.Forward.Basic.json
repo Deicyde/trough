@@ -1,0 +1,24 @@
+{
+ "schema": "trough-ledger/v1",
+ "library": "Aesop",
+ "repo": "leanprover-community/aesop",
+ "rev": "637fdbb8689a3387a82568b07355231f892144d7",
+ "module": "Aesop.RuleTac.Forward.Basic",
+ "file": "Aesop/RuleTac/Forward/Basic.lean",
+ "public": [
+  {"name": "Aesop.forwardHypPrefix", "kind": "def", "line": 40},
+  {"name": "Aesop.forwardImplDetailHypPrefix", "kind": "def", "line": 43},
+  {"name": "Aesop.forwardImplDetailHypName", "kind": "def", "line": 47},
+  {"name": "Aesop.matchForwardImplDetailHypName", "kind": "def", "line": 54},
+  {"name": "Aesop.isForwardImplDetailHypName", "kind": "def", "line": 66},
+  {"name": "Aesop.isForwardImplDetailHyp", "kind": "def", "line": 69},
+  {"name": "Aesop.getForwardImplDetailHyps", "kind": "def", "line": 72},
+  {"name": "Aesop.clearForwardImplDetailHyps", "kind": "def", "line": 79},
+  {"name": "Aesop.ForwardHypData", "kind": "structure", "line": 84},
+  {"name": "Aesop.getForwardHypData", "kind": "def", "line": 91},
+  {"name": "Aesop.hideForwardImplDetailHyps", "kind": "def", "line": 106}
+ ],
+ "private": [],
+ "missing": [],
+ "unread": "Unnamed instances, the names an `alias ⟨…⟩` command gives, and the names Lean generates for a declaration (constructors, recursors, derived instances) are not read from the source, so they are not listed."
+}

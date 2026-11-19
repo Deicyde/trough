@@ -1,0 +1,19 @@
+{
+ "schema": "trough-ledger/v1",
+ "library": "CSLib",
+ "repo": "leanprover/cslib",
+ "rev": "86d560b6cbb379bd82512424cbcd2a915a1565e7",
+ "module": "Cslib.Computability.Machines.Turing.MultiTape.TapeLemmas",
+ "file": "Cslib/Computability/Machines/Turing/MultiTape/TapeLemmas.lean",
+ "public": [
+  {"name": "Turing.MultiTapeNTM.Step.workTapePos_le", "kind": "lemma", "line": 30},
+  {"name": "Turing.MultiTapeNTM.Step.workTapes_eq_of_ne", "kind": "lemma", "line": 39},
+  {"name": "Turing.MultiTapeNTM.RunPath.uIcc_workTapePos_subset_visitedByTapeHead", "kind": "lemma", "line": 52},
+  {"name": "Turing.MultiTapeNTM.RunPath.mem_visitedByTapeHead_of_workTapes_ne", "kind": "lemma", "line": 67},
+  {"name": "Turing.MultiTapeNTM.RunPath.natAbs_le_spaceUsedByTape_of_mem_visited", "kind": "lemma", "line": 80},
+  {"name": "Turing.MultiTapeNTM.RunPath.inWindow_of_space_le", "kind": "lemma", "line": 94}
+ ],
+ "private": [],
+ "missing": [],
+ "unread": "Unnamed instances, the names an `alias ⟨…⟩` command gives, and the names Lean generates for a declaration (constructors, recursors, derived instances) are not read from the source, so they are not listed."
+}

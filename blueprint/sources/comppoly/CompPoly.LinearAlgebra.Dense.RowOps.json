@@ -1,0 +1,21 @@
+{
+ "schema": "trough-ledger/v1",
+ "library": "CompPoly",
+ "repo": "Verified-zkEVM/CompPoly",
+ "rev": "afb9b1363984a70f10e24bd597f6ff40ebc8afbb",
+ "module": "CompPoly.LinearAlgebra.Dense.RowOps",
+ "file": "CompPoly/LinearAlgebra/Dense/RowOps.lean",
+ "public": [
+  {"name": "CompPoly.DenseMatrix.RrefResult", "kind": "structure", "line": 25},
+  {"name": "CompPoly.DenseMatrix.swapRows", "kind": "def", "line": 30},
+  {"name": "CompPoly.DenseMatrix.scaleRow", "kind": "def", "line": 44},
+  {"name": "CompPoly.DenseMatrix.addScaledRow", "kind": "def", "line": 53},
+  {"name": "CompPoly.DenseMatrix.findPivotRow", "kind": "def", "line": 63},
+  {"name": "CompPoly.DenseMatrix.normalizeAndEliminate", "kind": "def", "line": 73},
+  {"name": "CompPoly.DenseMatrix.rrefLoop", "kind": "def", "line": 88},
+  {"name": "CompPoly.DenseMatrix.rref", "kind": "def", "line": 103}
+ ],
+ "private": [],
+ "missing": [],
+ "unread": "Unnamed instances, the names an `alias ⟨…⟩` command gives, and the names Lean generates for a declaration (constructors, recursors, derived instances) are not read from the source, so they are not listed."
+}

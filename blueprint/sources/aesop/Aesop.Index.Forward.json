@@ -1,0 +1,20 @@
+{
+ "schema": "trough-ledger/v1",
+ "library": "Aesop",
+ "repo": "leanprover-community/aesop",
+ "rev": "637fdbb8689a3387a82568b07355231f892144d7",
+ "module": "Aesop.Index.Forward",
+ "file": "Aesop/Index/Forward.lean",
+ "public": [
+  {"name": "Aesop.ForwardIndex", "kind": "structure", "line": 20},
+  {"name": "Aesop.ForwardIndex.trace", "kind": "def", "line": 38},
+  {"name": "Aesop.ForwardIndex.merge", "kind": "def", "line": 48},
+  {"name": "Aesop.ForwardIndex.insert", "kind": "def", "line": 54},
+  {"name": "Aesop.ForwardIndex.get", "kind": "def", "line": 74},
+  {"name": "Aesop.ForwardIndex.getRuleWithName?", "kind": "def", "line": 79},
+  {"name": "Aesop.ForwardIndex.getConstRuleMatches", "kind": "def", "line": 85}
+ ],
+ "private": [],
+ "missing": [],
+ "unread": "Unnamed instances, the names an `alias ⟨…⟩` command gives, and the names Lean generates for a declaration (constructors, recursors, derived instances) are not read from the source, so they are not listed."
+}

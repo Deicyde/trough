@@ -1,0 +1,29 @@
+{
+ "schema": "trough-ledger/v1",
+ "library": "CSLib",
+ "repo": "leanprover/cslib",
+ "rev": "86d560b6cbb379bd82512424cbcd2a915a1565e7",
+ "module": "Cslib.Languages.LambdaCalculus.Named.Untyped.Basic",
+ "file": "Cslib/Languages/LambdaCalculus/Named/Untyped/Basic.lean",
+ "public": [
+  {"name": "Cslib.LambdaCalculus.Named.Untyped.Term", "kind": "inductive", "line": 37},
+  {"name": "Cslib.LambdaCalculus.Named.Untyped.Term.fv", "kind": "def", "line": 47},
+  {"name": "Cslib.LambdaCalculus.Named.Untyped.Term.bv", "kind": "def", "line": 54},
+  {"name": "Cslib.LambdaCalculus.Named.Untyped.Term.vars", "kind": "def", "line": 61},
+  {"name": "Cslib.LambdaCalculus.Named.Untyped.Term.rename", "kind": "def", "line": 69},
+  {"name": "Cslib.LambdaCalculus.Named.Untyped.Term.rename_eq_sizeOf", "kind": "theorem", "line": 78},
+  {"name": "Cslib.LambdaCalculus.Named.Untyped.Term.AlphaEquiv", "kind": "inductive", "line": 82},
+  {"name": "Cslib.LambdaCalculus.Named.Untyped.Term.instHasAlphaEquivTerm", "kind": "instance", "line": 89},
+  {"name": "Cslib.LambdaCalculus.Named.Untyped.Term.AlphaEquiv_def", "kind": "theorem", "line": 95},
+  {"name": "Cslib.LambdaCalculus.Named.Untyped.Term.Subst", "kind": "inductive", "line": 99},
+  {"name": "Cslib.LambdaCalculus.Named.Untyped.Term.subst", "kind": "def", "line": 110},
+  {"name": "Cslib.LambdaCalculus.Named.Untyped.Term.instHasSubstitutionTerm", "kind": "instance", "line": 127},
+  {"name": "Cslib.LambdaCalculus.Named.Untyped.Term.subst_def", "kind": "theorem", "line": 133},
+  {"name": "Cslib.LambdaCalculus.Named.Untyped.Term.Context", "kind": "inductive", "line": 137},
+  {"name": "Cslib.LambdaCalculus.Named.Untyped.Term.Context.fill", "kind": "def", "line": 145},
+  {"name": "Cslib.LambdaCalculus.Named.Untyped.Term.Context.vars", "kind": "def", "line": 153}
+ ],
+ "private": [],
+ "missing": [],
+ "unread": "Unnamed instances, the names an `alias ⟨…⟩` command gives, and the names Lean generates for a declaration (constructors, recursors, derived instances) are not read from the source, so they are not listed."
+}

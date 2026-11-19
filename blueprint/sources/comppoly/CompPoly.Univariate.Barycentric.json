@@ -1,0 +1,25 @@
+{
+ "schema": "trough-ledger/v1",
+ "library": "CompPoly",
+ "repo": "Verified-zkEVM/CompPoly",
+ "rev": "afb9b1363984a70f10e24bd597f6ff40ebc8afbb",
+ "module": "CompPoly.Univariate.Barycentric",
+ "file": "CompPoly/Univariate/Barycentric.lean",
+ "public": [
+  {"name": "CompPoly.CPolynomial.CLagrange.BarycentricDomain", "kind": "structure", "line": 50},
+  {"name": "CompPoly.CPolynomial.CLagrange.BarycentricDomain.mk'", "kind": "def", "line": 66},
+  {"name": "CompPoly.CPolynomial.CLagrange.BarycentricDomain.weights_eq_nodalWeight", "kind": "theorem", "line": 81},
+  {"name": "CompPoly.CPolynomial.CLagrange.BarycentricDomain.eval", "kind": "def", "line": 94},
+  {"name": "CompPoly.CPolynomial.CLagrange.BarycentricDomain.evalStep", "kind": "def", "line": 107},
+  {"name": "CompPoly.CPolynomial.CLagrange.BarycentricDomain.evalFast", "kind": "def", "line": 117},
+  {"name": "CompPoly.CPolynomial.CLagrange.BarycentricDomain.eval_eq_evalFast", "kind": "theorem", "line": 141},
+  {"name": "CompPoly.CPolynomial.CLagrange.BarycentricDomain.eval_at_node", "kind": "theorem", "line": 159},
+  {"name": "CompPoly.CPolynomial.CLagrange.BarycentricDomain.eval_eq_interpolate_eval", "kind": "theorem", "line": 191},
+  {"name": "CompPoly.CPolynomial.CLagrange.BarycentricDomain.eval_eq_cinterpolate_eval", "kind": "theorem", "line": 208},
+  {"name": "CompPoly.CPolynomial.CLagrange.BarycentricDomain.ofPow", "kind": "def", "line": 217},
+  {"name": "CompPoly.CPolynomial.CLagrange.BarycentricDomain.ofPow_eval_eq_interpolatePow_eval", "kind": "theorem", "line": 227}
+ ],
+ "private": [],
+ "missing": [],
+ "unread": "Unnamed instances, the names an `alias ⟨…⟩` command gives, and the names Lean generates for a declaration (constructors, recursors, derived instances) are not read from the source, so they are not listed."
+}

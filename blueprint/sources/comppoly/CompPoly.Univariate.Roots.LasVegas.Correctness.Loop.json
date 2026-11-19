@@ -1,0 +1,18 @@
+{
+ "schema": "trough-ledger/v1",
+ "library": "CompPoly",
+ "repo": "Verified-zkEVM/CompPoly",
+ "rev": "afb9b1363984a70f10e24bd597f6ff40ebc8afbb",
+ "module": "CompPoly.Univariate.Roots.LasVegas.Correctness.Loop",
+ "file": "CompPoly/Univariate/Roots/LasVegas/Correctness/Loop.lean",
+ "public": [
+  {"name": "CompPoly.CPolynomial.Roots.FiniteField.lasVegasSplitLinearFactorsWith_complete", "kind": "theorem", "line": 424},
+  {"name": "CompPoly.CPolynomial.Roots.FiniteField.lasVegasSplitLinearFactorsWithTrace_complete", "kind": "theorem", "line": 441},
+  {"name": "CompPoly.CPolynomial.Roots.FiniteField.lasVegasLinearFactorProductSplitterWith", "kind": "def", "line": 458},
+  {"name": "CompPoly.CPolynomial.Roots.FiniteField.lasVegasLinearFactorProductSplitterWithTrace", "kind": "def", "line": 476},
+  {"name": "CompPoly.CPolynomial.Roots.FiniteField.rootProduct_satisfies_lasVegasSplitterInput", "kind": "theorem", "line": 495}
+ ],
+ "private": [],
+ "missing": [],
+ "unread": "Unnamed instances, the names an `alias ⟨…⟩` command gives, and the names Lean generates for a declaration (constructors, recursors, derived instances) are not read from the source, so they are not listed."
+}

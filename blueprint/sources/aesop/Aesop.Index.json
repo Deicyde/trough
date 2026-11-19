@@ -1,0 +1,21 @@
+{
+ "schema": "trough-ledger/v1",
+ "library": "Aesop",
+ "repo": "leanprover-community/aesop",
+ "rev": "637fdbb8689a3387a82568b07355231f892144d7",
+ "module": "Aesop.Index",
+ "file": "Aesop/Index.lean",
+ "public": [
+  {"name": "Aesop.Index", "kind": "structure", "line": 23},
+  {"name": "Aesop.Index.trace", "kind": "def", "line": 33},
+  {"name": "Aesop.Index.merge", "kind": "def", "line": 54},
+  {"name": "Aesop.Index.add", "kind": "def", "line": 60},
+  {"name": "Aesop.Index.unindex", "kind": "def", "line": 73},
+  {"name": "Aesop.Index.foldM", "kind": "def", "line": 84},
+  {"name": "Aesop.Index.fold", "kind": "def", "line": 93},
+  {"name": "Aesop.Index.applicableRules", "kind": "def", "line": 138}
+ ],
+ "private": [],
+ "missing": [],
+ "unread": "Unnamed instances, the names an `alias ⟨…⟩` command gives, and the names Lean generates for a declaration (constructors, recursors, derived instances) are not read from the source, so they are not listed."
+}

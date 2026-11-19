@@ -1,0 +1,24 @@
+{
+ "schema": "trough-ledger/v1",
+ "library": "CompPoly",
+ "repo": "Verified-zkEVM/CompPoly",
+ "rev": "afb9b1363984a70f10e24bd597f6ff40ebc8afbb",
+ "module": "CompPoly.Fields.Montgomery.Native32",
+ "file": "CompPoly/Fields/Montgomery/Native32.lean",
+ "public": [
+  {"name": "Montgomery.Native32.reduceRaw", "kind": "def", "line": 23},
+  {"name": "Montgomery.Native32.reduceQuotient", "kind": "def", "line": 29},
+  {"name": "Montgomery.Native32.conditionalSubtract", "kind": "def", "line": 34},
+  {"name": "Montgomery.Native32.reduceRaw_eq_conditionalSubtract", "kind": "theorem", "line": 39},
+  {"name": "Montgomery.Native32.reduceQuotient_toNat", "kind": "theorem", "line": 44},
+  {"name": "Montgomery.Native32.conditionalSubtract_toNat", "kind": "theorem", "line": 70},
+  {"name": "Montgomery.Native32.reduceRaw_toNat", "kind": "theorem", "line": 82},
+  {"name": "Montgomery.Native32.conditionalSubtract_lt", "kind": "theorem", "line": 95},
+  {"name": "Montgomery.Native32.conditionalSubtract_cast", "kind": "theorem", "line": 107},
+  {"name": "Montgomery.Native32.reduceRaw_lt", "kind": "theorem", "line": 123},
+  {"name": "Montgomery.Native32.reduceRaw_cast", "kind": "theorem", "line": 131}
+ ],
+ "private": [],
+ "missing": [],
+ "unread": "Unnamed instances, the names an `alias ⟨…⟩` command gives, and the names Lean generates for a declaration (constructors, recursors, derived instances) are not read from the source, so they are not listed."
+}

@@ -1,0 +1,28 @@
+{
+ "schema": "trough-ledger/v1",
+ "library": "CompPoly",
+ "repo": "Verified-zkEVM/CompPoly",
+ "rev": "afb9b1363984a70f10e24bd597f6ff40ebc8afbb",
+ "module": "CompPoly.Fields.Goldilocks.FastDefs",
+ "file": "CompPoly/Fields/Goldilocks/FastDefs.lean",
+ "public": [
+  {"name": "Goldilocks.Fast.modulus", "kind": "def", "line": 24},
+  {"name": "Goldilocks.Fast.negModulus", "kind": "def", "line": 28},
+  {"name": "Goldilocks.Fast.wideMul", "kind": "def", "line": 39},
+  {"name": "Goldilocks.Fast.reduceUInt64Raw", "kind": "def", "line": 55},
+  {"name": "Goldilocks.Fast.foldUInt128Borrow", "kind": "def", "line": 60},
+  {"name": "Goldilocks.Fast.foldUInt128Lazy", "kind": "def", "line": 69},
+  {"name": "Goldilocks.Fast.reduceUInt128Raw", "kind": "def", "line": 81},
+  {"name": "Goldilocks.Fast.mulLazy", "kind": "def", "line": 86},
+  {"name": "Goldilocks.Fast.reduceMulRaw", "kind": "def", "line": 92},
+  {"name": "Goldilocks.Fast.addRaw", "kind": "def", "line": 97},
+  {"name": "Goldilocks.Fast.negRaw", "kind": "def", "line": 104},
+  {"name": "Goldilocks.Fast.subRaw", "kind": "def", "line": 109},
+  {"name": "Goldilocks.Fast.powLazy", "kind": "def", "line": 116},
+  {"name": "Goldilocks.Fast.squareNLazy", "kind": "def", "line": 125},
+  {"name": "Goldilocks.Fast.invLazy", "kind": "def", "line": 131}
+ ],
+ "private": [],
+ "missing": [],
+ "unread": "Unnamed instances, the names an `alias ⟨…⟩` command gives, and the names Lean generates for a declaration (constructors, recursors, derived instances) are not read from the source, so they are not listed."
+}

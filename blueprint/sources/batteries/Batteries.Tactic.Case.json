@@ -1,0 +1,16 @@
+{
+ "schema": "trough-ledger/v1",
+ "library": "Batteries",
+ "repo": "leanprover-community/batteries",
+ "rev": "b4b25a3886a16daacaf6615c2eea7170a6e8f458",
+ "module": "Batteries.Tactic.Case",
+ "file": "Batteries/Tactic/Case.lean",
+ "public": [
+  {"name": "Batteries.Tactic.findGoalOfPatt", "kind": "def", "line": 122},
+  {"name": "Batteries.Tactic.processCasePattBody", "kind": "def", "line": 159},
+  {"name": "Batteries.Tactic.evalCase", "kind": "def", "line": 168}
+ ],
+ "private": [],
+ "missing": [],
+ "unread": "Unnamed instances, the names an `alias ⟨…⟩` command gives, and the names Lean generates for a declaration (constructors, recursors, derived instances) are not read from the source, so they are not listed."
+}

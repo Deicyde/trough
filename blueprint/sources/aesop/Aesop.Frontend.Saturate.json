@@ -1,0 +1,27 @@
+{
+ "schema": "trough-ledger/v1",
+ "library": "Aesop",
+ "repo": "leanprover-community/aesop",
+ "rev": "637fdbb8689a3387a82568b07355231f892144d7",
+ "module": "Aesop.Frontend.Saturate",
+ "file": "Aesop/Frontend/Saturate.lean",
+ "public": [
+  {"name": "Aesop.ElabM.runForwardElab", "kind": "def", "line": 27},
+  {"name": "Aesop.Frontend.mkForwardOptions", "kind": "def", "line": 31},
+  {"name": "Aesop.Frontend.elabGlobalRuleSets", "kind": "def", "line": 35},
+  {"name": "Aesop.Frontend.elabForwardRule", "kind": "def", "line": 40},
+  {"name": "Aesop.Frontend.mkHypForwardRule", "kind": "def", "line": 49},
+  {"name": "Aesop.Frontend.isImplication", "kind": "def", "line": 53},
+  {"name": "Aesop.Frontend.mkHypImplicationRule?", "kind": "def", "line": 57},
+  {"name": "Aesop.Frontend.addLocalImplications", "kind": "def", "line": 67},
+  {"name": "Aesop.Frontend.elabAdditionalForwardRules", "kind": "def", "line": 77},
+  {"name": "Aesop.Frontend.elabForwardRuleSetCore", "kind": "def", "line": 90},
+  {"name": "Aesop.Frontend.elabForwardRuleSet", "kind": "def", "line": 97},
+  {"name": "Aesop.Frontend.evalSaturateCore", "kind": "def", "line": 110},
+  {"name": "Aesop.Frontend.evalSaturate", "kind": "def", "line": 129},
+  {"name": "Aesop.Frontend.evalSaturate?", "kind": "def", "line": 135}
+ ],
+ "private": [],
+ "missing": [],
+ "unread": "Unnamed instances, the names an `alias ⟨…⟩` command gives, and the names Lean generates for a declaration (constructors, recursors, derived instances) are not read from the source, so they are not listed."
+}

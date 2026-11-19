@@ -1,0 +1,19 @@
+{
+ "schema": "trough-ledger/v1",
+ "library": "CSLib",
+ "repo": "leanprover/cslib",
+ "rev": "86d560b6cbb379bd82512424cbcd2a915a1565e7",
+ "module": "Cslib.Computability.Languages.Slice",
+ "file": "Cslib/Computability/Languages/Slice.lean",
+ "public": [
+  {"name": "Language.slice", "kind": "def", "line": 31},
+  {"name": "Language.slice_eq_true_iff", "kind": "theorem", "line": 34},
+  {"name": "Language.ofSlices", "kind": "def", "line": 39},
+  {"name": "Language.mem_ofSlices", "kind": "theorem", "line": 42},
+  {"name": "Language.ofFn_mem_ofSlices", "kind": "theorem", "line": 45},
+  {"name": "Language.slice_ofSlices", "kind": "theorem", "line": 50}
+ ],
+ "private": [],
+ "missing": [],
+ "unread": "Unnamed instances, the names an `alias ⟨…⟩` command gives, and the names Lean generates for a declaration (constructors, recursors, derived instances) are not read from the source, so they are not listed."
+}

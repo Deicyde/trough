@@ -1,0 +1,30 @@
+{
+ "schema": "trough-ledger/v1",
+ "library": "CompPoly",
+ "repo": "Verified-zkEVM/CompPoly",
+ "rev": "afb9b1363984a70f10e24bd597f6ff40ebc8afbb",
+ "module": "CompPoly.LinearAlgebra.PolynomialMatrix.MuldersStorjohannCorrectness.Reduction",
+ "file": "CompPoly/LinearAlgebra/PolynomialMatrix/MuldersStorjohannCorrectness/Reduction.lean",
+ "public": [
+  {"name": "CompPoly.PolynomialMatrix.muldersStorjohannStep_shape_preserved", "kind": "theorem", "line": 24},
+  {"name": "CompPoly.PolynomialMatrix.muldersStorjohannStep_rowSpan_subset", "kind": "theorem", "line": 47},
+  {"name": "CompPoly.PolynomialMatrix.muldersStorjohannStep_rowSpan_superset", "kind": "theorem", "line": 84},
+  {"name": "CompPoly.PolynomialMatrix.muldersStorjohannStep_wellFormed", "kind": "theorem", "line": 204},
+  {"name": "CompPoly.PolynomialMatrix.muldersStorjohannReduceWithFuel_shape_preserved", "kind": "theorem", "line": 227},
+  {"name": "CompPoly.PolynomialMatrix.muldersStorjohannReduceWithFuel_wellFormed", "kind": "theorem", "line": 242},
+  {"name": "CompPoly.PolynomialMatrix.muldersStorjohannReduce_wellFormed", "kind": "theorem", "line": 256},
+  {"name": "CompPoly.PolynomialMatrix.muldersStorjohannReduceWithFuel_no_conflict_of_measure_lt", "kind": "theorem", "line": 262},
+  {"name": "CompPoly.PolynomialMatrix.muldersStorjohannReduce_no_conflict", "kind": "theorem", "line": 285},
+  {"name": "CompPoly.PolynomialMatrix.muldersStorjohannReduceWithFuel_eq_of_no_conflict", "kind": "theorem", "line": 295},
+  {"name": "CompPoly.PolynomialMatrix.muldersStorjohannReduceWithFuel_rowSpan_subset", "kind": "theorem", "line": 329},
+  {"name": "CompPoly.PolynomialMatrix.muldersStorjohannReduce_rowSpan_subset", "kind": "theorem", "line": 347},
+  {"name": "CompPoly.PolynomialMatrix.muldersStorjohannReduceWithFuel_rowSpan_superset", "kind": "theorem", "line": 353},
+  {"name": "CompPoly.PolynomialMatrix.muldersStorjohannReduce_rowSpan_superset", "kind": "theorem", "line": 373},
+  {"name": "CompPoly.PolynomialMatrix.muldersStorjohannReduce_shape_preserved", "kind": "theorem", "line": 379},
+  {"name": "CompPoly.PolynomialMatrix.muldersStorjohannReduce_rowSpan_eq", "kind": "theorem", "line": 385},
+  {"name": "CompPoly.PolynomialMatrix.muldersStorjohannReduce_weakPopov", "kind": "theorem", "line": 392}
+ ],
+ "private": [],
+ "missing": [],
+ "unread": "Unnamed instances, the names an `alias ⟨…⟩` command gives, and the names Lean generates for a declaration (constructors, recursors, derived instances) are not read from the source, so they are not listed."
+}

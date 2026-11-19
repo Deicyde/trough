@@ -6,11 +6,11 @@ vaults, rendered with [AutoformBot](https://github.com/facebookresearch/autoform
 and published at https://trough.jackmccarthy.org/. The book shows no Lean
 progress: the generated `blueprint/roadmap/README.md` sets `tracks_lean: false`.
 
-`catalog/libraries.toml` lists the 78 libraries trough targets: Mathlib, Tau
+`catalog/libraries.toml` lists the 81 libraries trough targets: Mathlib, Tau
 Ceti, ATLAS, the research projects with leanblueprints (among them Imperial's
 FLT, PNT+, PFR, Carleson's theorem, sphere packing and MIP* = RE), Formal
-Conjectures, Physlib, CSLib,
-Foundation, the Analysis I companion, the large corpora (Anthropic's FLT, Lean
+Conjectures, Physlib, CSLib, Batteries, Aesop, CompPoly, Foundation, the
+Analysis I companion, the large corpora (Anthropic's FLT, Lean
 Pool, OpenAI Math, Axiom's CFSG and Stacks Project) and the 44 Formal Frontier
 libraries. Each gets the article unit that suits it, recorded as `map_unit` and
 `map_plan`.
@@ -22,8 +22,8 @@ headline results, Formal Conjectures from its problem files, Lean Pool from
 its project cards, Anthropic's FLT from the landmark theorems of its proof,
 Axiom's CFSG from its proof's case division and its milestones, Axiom's
 Stacks Project formalization from its Stacks tags, ATLAS from the topics of
-its vault, OpenAI Math from its result families, CSLib from its modules, and
-Physlib from its modules.
+its vault, OpenAI Math from its result families, and CSLib, Batteries, Aesop,
+CompPoly and Physlib from their modules.
 
 ## The Mathlib map
 
@@ -580,7 +580,12 @@ values of its definitions, and "Proof depends on" those only its proofs use; a
 dependency reached through another is left out. `tools/trough/library.py`
 reads the modules and builds the chapter, as it will for other Lean libraries;
 `tools/trough/cslib.py` holds what is CSLib's own: its README's description,
-the maintainers GOVERNANCE.md names and the chapter's intro.
+the maintainers GOVERNANCE.md names and the chapter's intro. Each article is an
+AutoformBot module catalog (`catalog: module`), so its Sources link the
+module's declaration ledger, `blueprint/sources/cslib/<module>.json`: every
+declaration read from the source, with its kind and line, as public (the
+article's `lean:` names), private to the module or not in Lean. The site does
+not publish JSON from `sources/`; it links each ledger in the repository.
 
 1. `tools/refresh_cslib.py CHECKOUT` reads a checkout and writes
    `data/cslib/source.json`, the commit, its date, toolchain and Mathlib, and
@@ -679,6 +684,72 @@ edges, configured for Physlib.
    README no longer describes each library, or the declarations drop under half
    the last record's.
 
+## The Batteries chapter
+
+[Batteries](https://github.com/leanprover-community/batteries) is, in its
+README's words, the "batteries included" extended library for Lean 4: data
+structures and tactics for both computer-science and mathematics applications
+of Lean. Mathlib requires it. The chapter, under `blueprint/roadmap/batteries/`,
+is built as CSLib's is, by `tools/trough/library.py`, with
+`tools/trough/batteries.py` holding what is Batteries' own, its README's
+description and the chapter's intro: an article per module under `Batteries/`
+that declares something public by name, in a part per folder of `Batteries/`
+(Data, Lean, Tactic, Util and smaller ones) and a page per folder below.
+Tactic, linter and other meta modules are mapped like any others; a module
+that declares nothing public by name, such as one that only imports others, a
+deprecated module or one that only adds syntax, is listed on its folder's page
+instead of having an article, and a folder left without an article lists its
+modules on the page above. Docstrings go through the filter the CSLib and
+Physlib chapters use, and each article links its declaration ledger,
+`blueprint/sources/batteries/<module>.json`, as a CSLib article does.
+
+1. `tools/refresh_library.py batteries CHECKOUT` reads a checkout and writes
+   `data/batteries/source.json`, the commit, its date and toolchain, and
+   `library.json`, as `refresh_cslib.py` does for CSLib (both call
+   `trough.library.refresh`), with the README's description.
+2. The **Batteries data** workflow (`.github/workflows/batteries-data.yml`)
+   fetches Batteries at the commit `source.json` pins, runs the refresh, builds
+   it with `lake build` (it needs only Lean) and runs
+   `lean/library/LibraryDeps.lean` below `import Batteries`, which writes
+   `data/batteries/deps.json` as CSLib's dump does: the modules whose
+   declarations each module's statements and proofs use, and which of the names
+   read are private or missing in Lean. The dump takes the library's roots from
+   `TROUGH_ROOTS`, so a later library can use it as it is. The workflow
+   regenerates the pages, runs the tests and, on a pull request, fails when the
+   committed data differ from what the pin gives; the weekly run, or a dispatch
+   with `newest`, moves the pin to the newest main commit whose CI passed.
+
+## The Aesop chapter
+
+[Aesop](https://github.com/leanprover-community/aesop), Automated Extensible
+Search for Obvious Proofs, is a proof search tactic for Lean 4; Mathlib
+requires it. Its chapter, under `blueprint/roadmap/aesop/`, is built as
+Batteries' is, with `tools/trough/aesop.py` holding its README's description
+and the opening of its intro, and the rest of the intro shared with Batteries
+(`trough.library.module_intro`).
+
+The **Aesop data** workflow (`.github/workflows/aesop-data.yml`) calls the
+reusable **Library data** workflow (`.github/workflows/library-data.yml`),
+which every later library on the reader can call with its own id, repository,
+roots, pin rule and build commands. Aesop's CI runs only on pull requests and
+its merge queue, so the pin rule takes the newest master commit whose
+merge-queue build passed. After `lake build`, the workflow imports every module
+that left an `.olean` above `lean/library/LibraryDeps.lean`, which records them
+under `built`; a module that did not build has no article and is listed on the
+front page, and the generator refuses a dump in which over half the modules
+did not build.
+
+## The CompPoly chapter
+
+[CompPoly](https://github.com/Verified-zkEVM/CompPoly) is a formally verified
+library of computable polynomial operations over finite fields and general
+rings, built on Mathlib. Its chapter, under `blueprint/roadmap/comppoly/`, is
+built as Aesop's is, with `tools/trough/comppoly.py` holding its README's first
+sentence and the opening of its intro. The **CompPoly data** workflow
+(`.github/workflows/comppoly-data.yml`) calls the reusable Library data
+workflow; its pin rule takes the newest main commit whose Lean Action CI
+passed, and its build fetches Mathlib's cache, then runs `lake build CompPoly`.
+
 ## Working on it
 
     uv run python tools/generate.py           # rewrite blueprint/ from data/ and catalog/
@@ -775,3 +846,12 @@ module's authors as the file's header does.
 The docstrings, Lean statements, API maps and README text quoted in
 `data/physlib/` come from
 [Physlib](https://github.com/leanprover-community/physlib), Apache-2.0.
+The docstrings, Lean statements and README text in `data/batteries/` come from
+[Batteries](https://github.com/leanprover-community/batteries), Apache-2.0; each
+article names its module's authors as the file's header does.
+The docstrings, Lean statements and README text in `data/aesop/` come from
+[Aesop](https://github.com/leanprover-community/aesop), Apache-2.0; each article
+names its module's authors as the file's header does.
+The docstrings, Lean statements and README text in `data/comppoly/` come from
+[CompPoly](https://github.com/Verified-zkEVM/CompPoly), Apache-2.0; each article
+names its module's authors as the file's header does.

@@ -755,3 +755,4 @@ theorem natUnpairRight_correct (n : Nat) (cn : SKI) (hcn : IsChurch n cn) :
 ## Sources
 
 - [Cslib/Languages/CombinatoryLogic/Recursion.lean at 86d560b6](https://github.com/leanprover/cslib/blob/86d560b6cbb379bd82512424cbcd2a915a1565e7/Cslib/Languages/CombinatoryLogic/Recursion.lean)
+- [Declaration ledger](../../../../sources/cslib/Cslib.Languages.CombinatoryLogic.Recursion.json)

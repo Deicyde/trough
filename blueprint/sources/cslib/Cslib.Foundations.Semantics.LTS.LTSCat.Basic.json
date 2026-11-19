@@ -1,0 +1,18 @@
+{
+ "schema": "trough-ledger/v1",
+ "library": "CSLib",
+ "repo": "leanprover/cslib",
+ "rev": "86d560b6cbb379bd82512424cbcd2a915a1565e7",
+ "module": "Cslib.Foundations.Semantics.LTS.LTSCat.Basic",
+ "file": "Cslib/Foundations/Semantics/LTS/LTSCat/Basic.lean",
+ "public": [
+  {"name": "Cslib.LTS.withIdle", "kind": "def", "line": 33},
+  {"name": "Cslib.LTSCat", "kind": "structure", "line": 43},
+  {"name": "Cslib.LTS.Morphism", "kind": "structure", "line": 56},
+  {"name": "Cslib.LTS.Morphism.id", "kind": "def", "line": 66},
+  {"name": "Cslib.LTS.Morphism.comp", "kind": "def", "line": 75}
+ ],
+ "private": [],
+ "missing": [],
+ "unread": "Unnamed instances, the names an `alias ⟨…⟩` command gives, and the names Lean generates for a declaration (constructors, recursors, derived instances) are not read from the source, so they are not listed."
+}

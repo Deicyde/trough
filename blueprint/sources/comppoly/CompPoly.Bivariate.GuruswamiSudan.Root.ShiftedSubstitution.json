@@ -1,0 +1,17 @@
+{
+ "schema": "trough-ledger/v1",
+ "library": "CompPoly",
+ "repo": "Verified-zkEVM/CompPoly",
+ "rev": "afb9b1363984a70f10e24bd597f6ff40ebc8afbb",
+ "module": "CompPoly.Bivariate.GuruswamiSudan.Root.ShiftedSubstitution",
+ "file": "CompPoly/Bivariate/GuruswamiSudan/Root/ShiftedSubstitution.lean",
+ "public": [
+  {"name": "CompPoly.GuruswamiSudan.shiftPolynomialByXPower", "kind": "def", "line": 23},
+  {"name": "CompPoly.GuruswamiSudan.shiftedSubstitutionCoeffTerm", "kind": "def", "line": 30},
+  {"name": "CompPoly.GuruswamiSudan.substituteYPolynomialPlusXPowerY", "kind": "def", "line": 37},
+  {"name": "CompPoly.GuruswamiSudan.substituteYPolynomialPlusXPowerYTruncated", "kind": "def", "line": 53}
+ ],
+ "private": [],
+ "missing": [],
+ "unread": "Unnamed instances, the names an `alias ⟨…⟩` command gives, and the names Lean generates for a declaration (constructors, recursors, derived instances) are not read from the source, so they are not listed."
+}

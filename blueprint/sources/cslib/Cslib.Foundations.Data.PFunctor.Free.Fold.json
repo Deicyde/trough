@@ -1,0 +1,22 @@
+{
+ "schema": "trough-ledger/v1",
+ "library": "CSLib",
+ "repo": "leanprover/cslib",
+ "rev": "86d560b6cbb379bd82512424cbcd2a915a1565e7",
+ "module": "Cslib.Foundations.Data.PFunctor.Free.Fold",
+ "file": "Cslib/Foundations/Data/PFunctor/Free/Fold.lean",
+ "public": [
+  {"name": "PFunctor.FreeM.foldFreeM", "kind": "def", "line": 28},
+  {"name": "PFunctor.FreeM.foldFreeM_pure", "kind": "theorem", "line": 33},
+  {"name": "PFunctor.FreeM.foldFreeM_lift_bind", "kind": "theorem", "line": 37},
+  {"name": "PFunctor.FreeM.foldFreeM_lift_bind'", "kind": "theorem", "line": 44},
+  {"name": "PFunctor.FreeM.foldFreeM_lift", "kind": "theorem", "line": 50},
+  {"name": "PFunctor.FreeM.foldFreeM_unique", "kind": "theorem", "line": 55},
+  {"name": "PFunctor.FreeM.foldFreeM_bind", "kind": "theorem", "line": 67},
+  {"name": "PFunctor.FreeM.foldFreeM_map", "kind": "theorem", "line": 75},
+  {"name": "PFunctor.FreeM.liftM_eq_foldFreeM", "kind": "theorem", "line": 82}
+ ],
+ "private": [],
+ "missing": [],
+ "unread": "Unnamed instances, the names an `alias ⟨…⟩` command gives, and the names Lean generates for a declaration (constructors, recursors, derived instances) are not read from the source, so they are not listed."
+}

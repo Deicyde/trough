@@ -1,0 +1,21 @@
+{
+ "schema": "trough-ledger/v1",
+ "library": "Batteries",
+ "repo": "leanprover-community/batteries",
+ "rev": "b4b25a3886a16daacaf6615c2eea7170a6e8f458",
+ "module": "Batteries.Linter.UnreachableTactic",
+ "file": "Batteries/Linter/UnreachableTactic.lean",
+ "public": [
+  {"name": "Batteries.Linter.UnreachableTactic.getLinterUnreachableTactic", "kind": "def", "line": 34},
+  {"name": "Batteries.Linter.UnreachableTactic.M", "kind": "abbrev", "line": 38},
+  {"name": "Batteries.Linter.UnreachableTactic.isIgnoreTacticKind", "kind": "def", "line": 56},
+  {"name": "Batteries.Linter.UnreachableTactic.addIgnoreTacticKind", "kind": "def", "line": 65},
+  {"name": "Batteries.Linter.UnreachableTactic.getTactics", "kind": "def", "line": 70},
+  {"name": "Batteries.Linter.UnreachableTactic.eraseUsedTacticsList", "kind": "def", "line": 81},
+  {"name": "Batteries.Linter.UnreachableTactic.eraseUsedTactics", "kind": "def", "line": 85},
+  {"name": "Batteries.Linter.UnreachableTactic.unreachableTacticLinter", "kind": "def", "line": 97}
+ ],
+ "private": [],
+ "missing": [],
+ "unread": "Unnamed instances, the names an `alias ⟨…⟩` command gives, and the names Lean generates for a declaration (constructors, recursors, derived instances) are not read from the source, so they are not listed."
+}

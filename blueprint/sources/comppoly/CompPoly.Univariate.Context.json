@@ -1,0 +1,23 @@
+{
+ "schema": "trough-ledger/v1",
+ "library": "CompPoly",
+ "repo": "Verified-zkEVM/CompPoly",
+ "rev": "afb9b1363984a70f10e24bd597f6ff40ebc8afbb",
+ "module": "CompPoly.Univariate.Context",
+ "file": "CompPoly/Univariate/Context.lean",
+ "public": [
+  {"name": "CompPoly.CPolynomial.MulContext", "kind": "structure", "line": 30},
+  {"name": "CompPoly.CPolynomial.ModContext", "kind": "structure", "line": 37},
+  {"name": "CompPoly.CPolynomial.MulContext.naive", "kind": "def", "line": 46},
+  {"name": "CompPoly.CPolynomial.MulContext.ntt", "kind": "def", "line": 56},
+  {"name": "CompPoly.CPolynomial.MulContext.nttFast", "kind": "def", "line": 69},
+  {"name": "CompPoly.CPolynomial.ModContext.naive", "kind": "def", "line": 81},
+  {"name": "CompPoly.CPolynomial.ModContext.remainderOnly", "kind": "def", "line": 86},
+  {"name": "CompPoly.CPolynomial.ModContext.reversal", "kind": "def", "line": 91},
+  {"name": "CompPoly.CPolynomial.ModContext.reversalNtt", "kind": "def", "line": 97},
+  {"name": "CompPoly.CPolynomial.ModContext.reversalNttFast", "kind": "def", "line": 104}
+ ],
+ "private": [],
+ "missing": [],
+ "unread": "Unnamed instances, the names an `alias ⟨…⟩` command gives, and the names Lean generates for a declaration (constructors, recursors, derived instances) are not read from the source, so they are not listed."
+}

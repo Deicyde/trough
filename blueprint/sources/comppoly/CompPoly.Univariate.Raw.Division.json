@@ -1,0 +1,25 @@
+{
+ "schema": "trough-ledger/v1",
+ "library": "CompPoly",
+ "repo": "Verified-zkEVM/CompPoly",
+ "rev": "afb9b1363984a70f10e24bd597f6ff40ebc8afbb",
+ "module": "CompPoly.Univariate.Raw.Division",
+ "file": "CompPoly/Univariate/Raw/Division.lean",
+ "public": [
+  {"name": "CompPoly.CPolynomial.Raw.divModByMonicAux", "kind": "def", "line": 31},
+  {"name": "CompPoly.CPolynomial.Raw.divByMonic", "kind": "def", "line": 48},
+  {"name": "CompPoly.CPolynomial.Raw.modByMonic", "kind": "def", "line": 53},
+  {"name": "CompPoly.CPolynomial.Raw.subScaledShift", "kind": "def", "line": 59},
+  {"name": "CompPoly.CPolynomial.Raw.modByMonicRemainderOnly", "kind": "def", "line": 74},
+  {"name": "CompPoly.CPolynomial.Raw.inverseModX", "kind": "def", "line": 90},
+  {"name": "CompPoly.CPolynomial.Raw.modByMonicByReversal", "kind": "def", "line": 118},
+  {"name": "CompPoly.CPolynomial.Raw.div", "kind": "def", "line": 137},
+  {"name": "CompPoly.CPolynomial.Raw.mod", "kind": "def", "line": 141},
+  {"name": "CompPoly.CPolynomial.Raw.monicNormalize", "kind": "def", "line": 148},
+  {"name": "CompPoly.CPolynomial.Raw.gcdMonicWithFuel", "kind": "def", "line": 156},
+  {"name": "CompPoly.CPolynomial.Raw.gcdMonic", "kind": "def", "line": 168}
+ ],
+ "private": [],
+ "missing": [],
+ "unread": "Unnamed instances, the names an `alias ⟨…⟩` command gives, and the names Lean generates for a declaration (constructors, recursors, derived instances) are not read from the source, so they are not listed."
+}

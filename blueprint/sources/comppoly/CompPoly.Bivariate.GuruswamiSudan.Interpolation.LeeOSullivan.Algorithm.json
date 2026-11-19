@@ -1,0 +1,21 @@
+{
+ "schema": "trough-ledger/v1",
+ "library": "CompPoly",
+ "repo": "Verified-zkEVM/CompPoly",
+ "rev": "afb9b1363984a70f10e24bd597f6ff40ebc8afbb",
+ "module": "CompPoly.Bivariate.GuruswamiSudan.Interpolation.LeeOSullivan.Algorithm",
+ "file": "CompPoly/Bivariate/GuruswamiSudan/Interpolation/LeeOSullivan/Algorithm.lean",
+ "public": [
+  {"name": "CompPoly.GuruswamiSudan.LeeOSullivan.RowChoice", "kind": "structure", "line": 36},
+  {"name": "CompPoly.GuruswamiSudan.LeeOSullivan.betterRowChoice", "kind": "def", "line": 42},
+  {"name": "CompPoly.GuruswamiSudan.LeeOSullivan.leastShiftedDegreeRowStep?", "kind": "def", "line": 47},
+  {"name": "CompPoly.GuruswamiSudan.LeeOSullivan.leastShiftedDegreeChoice?", "kind": "def", "line": 61},
+  {"name": "CompPoly.GuruswamiSudan.LeeOSullivan.leastShiftedDegreeRow?", "kind": "def", "line": 66},
+  {"name": "CompPoly.GuruswamiSudan.LeeOSullivan.normalizeLeeCandidate?", "kind": "def", "line": 71},
+  {"name": "CompPoly.GuruswamiSudan.LeeOSullivan.leeOSullivanPositiveInterpolate", "kind": "def", "line": 77},
+  {"name": "CompPoly.GuruswamiSudan.LeeOSullivan.leeOSullivanInterpolate", "kind": "def", "line": 106}
+ ],
+ "private": [],
+ "missing": [],
+ "unread": "Unnamed instances, the names an `alias ⟨…⟩` command gives, and the names Lean generates for a declaration (constructors, recursors, derived instances) are not read from the source, so they are not listed."
+}

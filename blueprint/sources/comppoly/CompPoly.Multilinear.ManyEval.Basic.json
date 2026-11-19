@@ -1,0 +1,20 @@
+{
+ "schema": "trough-ledger/v1",
+ "library": "CompPoly",
+ "repo": "Verified-zkEVM/CompPoly",
+ "rev": "afb9b1363984a70f10e24bd597f6ff40ebc8afbb",
+ "module": "CompPoly.Multilinear.ManyEval.Basic",
+ "file": "CompPoly/Multilinear/ManyEval/Basic.lean",
+ "public": [
+  {"name": "CompPoly.CMlPolynomialEval.evalManyMleLoop", "kind": "def", "line": 26},
+  {"name": "CompPoly.CMlPolynomialEval.evalManyMle", "kind": "def", "line": 38},
+  {"name": "CompPoly.CMlPolynomialEval.valuesByPolynomial", "kind": "def", "line": 43},
+  {"name": "CompPoly.CMlPolynomialEval.foldLayeredPolyLoop", "kind": "def", "line": 52},
+  {"name": "CompPoly.CMlPolynomialEval.foldLayeredLayerLoop", "kind": "def", "line": 66},
+  {"name": "CompPoly.CMlPolynomialEval.evalManyMleByLayersLoop", "kind": "def", "line": 79},
+  {"name": "CompPoly.CMlPolynomialEval.evalManyMleByLayers", "kind": "def", "line": 92}
+ ],
+ "private": [],
+ "missing": [],
+ "unread": "Unnamed instances, the names an `alias ⟨…⟩` command gives, and the names Lean generates for a declaration (constructors, recursors, derived instances) are not read from the source, so they are not listed."
+}

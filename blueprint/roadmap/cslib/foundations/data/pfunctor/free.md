@@ -450,3 +450,4 @@ theorem liftM_comp {m : Type uB → Type v} [Monad m] [LawfulMonad m]
 ## Sources
 
 - [Cslib/Foundations/Data/PFunctor/Free.lean at 86d560b6](https://github.com/leanprover/cslib/blob/86d560b6cbb379bd82512424cbcd2a915a1565e7/Cslib/Foundations/Data/PFunctor/Free.lean)
+- [Declaration ledger](../../../../../sources/cslib/Cslib.Foundations.Data.PFunctor.Free.json)

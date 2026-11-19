@@ -1,0 +1,15 @@
+{
+ "schema": "trough-ledger/v1",
+ "library": "Aesop",
+ "repo": "leanprover-community/aesop",
+ "rev": "637fdbb8689a3387a82568b07355231f892144d7",
+ "module": "Aesop.BuiltinRules.ApplyHyps",
+ "file": "Aesop/BuiltinRules/ApplyHyps.lean",
+ "public": [
+  {"name": "Aesop.BuiltinRules.applyHyp", "kind": "def", "line": 17},
+  {"name": "Aesop.BuiltinRules.applyHyps", "kind": "def", "line": 36}
+ ],
+ "private": [],
+ "missing": [],
+ "unread": "Unnamed instances, the names an `alias ⟨…⟩` command gives, and the names Lean generates for a declaration (constructors, recursors, derived instances) are not read from the source, so they are not listed."
+}

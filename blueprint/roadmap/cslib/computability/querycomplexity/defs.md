@@ -221,3 +221,4 @@ theorem eq_restrict_support {C : PartialAssignment n} {x : BitString n} (h : Agr
 ## Sources
 
 - [Cslib/Computability/QueryComplexity/Defs.lean at 86d560b6](https://github.com/leanprover/cslib/blob/86d560b6cbb379bd82512424cbcd2a915a1565e7/Cslib/Computability/QueryComplexity/Defs.lean)
+- [Declaration ledger](../../../../sources/cslib/Cslib.Computability.QueryComplexity.Defs.json)

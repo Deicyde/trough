@@ -103,3 +103,4 @@ lemma Red.lc {t t' : Term Var} (red : t ⭢βᵛ t') : t.LC ∧ t'.LC
 ## Sources
 
 - [Cslib/Languages/LambdaCalculus/LocallyNameless/Fsub/Reduction.lean at 86d560b6](https://github.com/leanprover/cslib/blob/86d560b6cbb379bd82512424cbcd2a915a1565e7/Cslib/Languages/LambdaCalculus/LocallyNameless/Fsub/Reduction.lean)
+- [Declaration ledger](../../../../../../sources/cslib/Cslib.Languages.LambdaCalculus.LocallyNameless.Fsub.Reduction.json)

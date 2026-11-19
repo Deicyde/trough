@@ -157,3 +157,4 @@ def Cfg.lts [DecidableEq Var] (isTrue : Val → Bool) (Eval : FunCallEval FunId 
 ## Sources
 
 - [Cslib/Languages/StatefulProcesses/Network.lean at 86d560b6](https://github.com/leanprover/cslib/blob/86d560b6cbb379bd82512424cbcd2a915a1565e7/Cslib/Languages/StatefulProcesses/Network.lean)
+- [Declaration ledger](../../../../sources/cslib/Cslib.Languages.StatefulProcesses.Network.json)

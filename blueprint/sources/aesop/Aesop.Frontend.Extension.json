@@ -1,0 +1,28 @@
+{
+ "schema": "trough-ledger/v1",
+ "library": "Aesop",
+ "repo": "leanprover-community/aesop",
+ "rev": "637fdbb8689a3387a82568b07355231f892144d7",
+ "module": "Aesop.Frontend.Extension",
+ "file": "Aesop/Frontend/Extension.lean",
+ "public": [
+  {"name": "Aesop.Frontend.extensionDescr", "kind": "def", "line": 18},
+  {"name": "Aesop.Frontend.declareRuleSetUnchecked", "kind": "def", "line": 24},
+  {"name": "Aesop.Frontend.isRuleSetDeclared", "kind": "def", "line": 42},
+  {"name": "Aesop.Frontend.checkRuleSetNotDeclared", "kind": "def", "line": 48},
+  {"name": "Aesop.Frontend.declareRuleSet", "kind": "def", "line": 52},
+  {"name": "Aesop.Frontend.getGlobalRuleSetData", "kind": "def", "line": 59},
+  {"name": "Aesop.Frontend.getGlobalRuleSetFromData", "kind": "def", "line": 70},
+  {"name": "Aesop.Frontend.getGlobalRuleSet", "kind": "def", "line": 78},
+  {"name": "Aesop.Frontend.getGlobalRuleSets", "kind": "def", "line": 85},
+  {"name": "Aesop.Frontend.getDefaultGlobalRuleSets", "kind": "def", "line": 89},
+  {"name": "Aesop.Frontend.getDeclaredGlobalRuleSets", "kind": "def", "line": 92},
+  {"name": "Aesop.Frontend.modifyGetGlobalRuleSet", "kind": "def", "line": 97},
+  {"name": "Aesop.Frontend.modifyGlobalRuleSet", "kind": "def", "line": 114},
+  {"name": "Aesop.Frontend.addGlobalRule", "kind": "def", "line": 118},
+  {"name": "Aesop.Frontend.eraseGlobalRules", "kind": "def", "line": 135}
+ ],
+ "private": [],
+ "missing": [],
+ "unread": "Unnamed instances, the names an `alias ⟨…⟩` command gives, and the names Lean generates for a declaration (constructors, recursors, derived instances) are not read from the source, so they are not listed."
+}

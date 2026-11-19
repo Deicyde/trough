@@ -1,0 +1,33 @@
+{
+ "schema": "trough-ledger/v1",
+ "library": "CSLib",
+ "repo": "leanprover/cslib",
+ "rev": "86d560b6cbb379bd82512424cbcd2a915a1565e7",
+ "module": "Cslib.Computability.Machines.Turing.MultiTape.ConfigBound",
+ "file": "Cslib/Computability/Machines/Turing/MultiTape/ConfigBound.lean",
+ "public": [
+  {"name": "Turing.Storage", "kind": "structure", "line": 95},
+  {"name": "Turing.BoundedStorage", "kind": "abbrev", "line": 105},
+  {"name": "Turing.Storage.FitsIn", "kind": "structure", "line": 110},
+  {"name": "Turing.Storage.FitsIn_mono", "kind": "lemma", "line": 117},
+  {"name": "Turing.Storage.toBounded", "kind": "def", "line": 127},
+  {"name": "Turing.Storage.toBounded_injOn", "kind": "lemma", "line": 134},
+  {"name": "Turing.storageBound", "kind": "def", "line": 155},
+  {"name": "Turing.card_boundedStorage_le", "kind": "lemma", "line": 162},
+  {"name": "Turing.encard_fitsIn_le", "kind": "theorem", "line": 181},
+  {"name": "Turing.storageBoundBase", "kind": "def", "line": 201},
+  {"name": "Turing.storageBoundExp", "kind": "def", "line": 205},
+  {"name": "Turing.storageBound_le_base_mul_pow", "kind": "lemma", "line": 210},
+  {"name": "Turing.storageBound_le_pow", "kind": "lemma", "line": 231},
+  {"name": "Turing.Cfg.storage", "kind": "def", "line": 242},
+  {"name": "Turing.Cfg.core", "kind": "def", "line": 247},
+  {"name": "Turing.MultiTapeNTM.ComputationPath.storage_fitsIn", "kind": "lemma", "line": 261},
+  {"name": "Turing.MultiTapeTM.encard_storages_le", "kind": "theorem", "line": 279},
+  {"name": "Turing.MultiTapeTM.encard_cores_le", "kind": "theorem", "line": 291},
+  {"name": "Turing.MultiTapeTM.encard_storages_le_pow", "kind": "theorem", "line": 309},
+  {"name": "Turing.MultiTapeTM.encard_cores_le_pow", "kind": "theorem", "line": 322}
+ ],
+ "private": [],
+ "missing": [],
+ "unread": "Unnamed instances, the names an `alias ⟨…⟩` command gives, and the names Lean generates for a declaration (constructors, recursors, derived instances) are not read from the source, so they are not listed."
+}

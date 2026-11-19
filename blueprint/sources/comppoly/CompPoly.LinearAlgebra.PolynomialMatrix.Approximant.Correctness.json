@@ -1,0 +1,15 @@
+{
+ "schema": "trough-ledger/v1",
+ "library": "CompPoly",
+ "repo": "Verified-zkEVM/CompPoly",
+ "rev": "afb9b1363984a70f10e24bd597f6ff40ebc8afbb",
+ "module": "CompPoly.LinearAlgebra.PolynomialMatrix.Approximant.Correctness",
+ "file": "CompPoly/LinearAlgebra/PolynomialMatrix/Approximant/Correctness.lean",
+ "public": [
+  {"name": "CompPoly.PolynomialMatrix.Approximant.modularSolutionBasis_sound", "kind": "theorem", "line": 30},
+  {"name": "CompPoly.PolynomialMatrix.Approximant.modularSolutionBasis_complete_minimal", "kind": "theorem", "line": 42}
+ ],
+ "private": [],
+ "missing": [],
+ "unread": "Unnamed instances, the names an `alias ⟨…⟩` command gives, and the names Lean generates for a declaration (constructors, recursors, derived instances) are not read from the source, so they are not listed."
+}

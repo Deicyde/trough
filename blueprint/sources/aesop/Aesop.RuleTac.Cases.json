@@ -1,0 +1,17 @@
+{
+ "schema": "trough-ledger/v1",
+ "library": "Aesop",
+ "repo": "leanprover-community/aesop",
+ "rev": "637fdbb8689a3387a82568b07355231f892144d7",
+ "module": "Aesop.RuleTac.Cases",
+ "file": "Aesop/RuleTac/Cases.lean",
+ "public": [
+  {"name": "Aesop.CasesPattern.toExpr", "kind": "def", "line": 19},
+  {"name": "Aesop.CasesTarget'", "kind": "inductive", "line": 23},
+  {"name": "Aesop.CasesTarget.toCasesTarget'", "kind": "def", "line": 27},
+  {"name": "Aesop.RuleTac.cases", "kind": "def", "line": 39}
+ ],
+ "private": [],
+ "missing": [],
+ "unread": "Unnamed instances, the names an `alias ⟨…⟩` command gives, and the names Lean generates for a declaration (constructors, recursors, derived instances) are not read from the source, so they are not listed."
+}

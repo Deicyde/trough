@@ -1,0 +1,20 @@
+{
+ "schema": "trough-ledger/v1",
+ "library": "CSLib",
+ "repo": "leanprover/cslib",
+ "rev": "86d560b6cbb379bd82512424cbcd2a915a1565e7",
+ "module": "Cslib.Computability.Distributed.FLP.CanReachVia",
+ "file": "Cslib/Computability/Distributed/FLP/CanReachVia.lean",
+ "public": [
+  {"name": "Cslib.FLP.Algorithm.CanReachVia", "kind": "def", "line": 34},
+  {"name": "Cslib.FLP.CanReachVia.iff_exists_mTr", "kind": "theorem", "line": 42},
+  {"name": "Cslib.FLP.CanReachVia.canReach", "kind": "theorem", "line": 60},
+  {"name": "Cslib.FLP.CanReachVia.refl", "kind": "theorem", "line": 66},
+  {"name": "Cslib.FLP.CanReachVia.stepL", "kind": "theorem", "line": 70},
+  {"name": "Cslib.FLP.CanReachVia.diamond", "kind": "theorem", "line": 75},
+  {"name": "Cslib.FLP.CanReachVia.subset_inp", "kind": "theorem", "line": 88}
+ ],
+ "private": [],
+ "missing": [],
+ "unread": "Unnamed instances, the names an `alias ⟨…⟩` command gives, and the names Lean generates for a declaration (constructors, recursors, derived instances) are not read from the source, so they are not listed."
+}

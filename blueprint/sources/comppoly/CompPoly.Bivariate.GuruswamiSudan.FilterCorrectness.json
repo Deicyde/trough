@@ -1,0 +1,18 @@
+{
+ "schema": "trough-ledger/v1",
+ "library": "CompPoly",
+ "repo": "Verified-zkEVM/CompPoly",
+ "rev": "afb9b1363984a70f10e24bd597f6ff40ebc8afbb",
+ "module": "CompPoly.Bivariate.GuruswamiSudan.FilterCorrectness",
+ "file": "CompPoly/Bivariate/GuruswamiSudan/FilterCorrectness.lean",
+ "public": [
+  {"name": "CompPoly.GuruswamiSudan.passesCandidateDistance_iff", "kind": "theorem", "line": 24},
+  {"name": "CompPoly.GuruswamiSudan.mem_gsFilteredCore_iff", "kind": "theorem", "line": 33},
+  {"name": "CompPoly.GuruswamiSudan.gsFilteredCore_sound", "kind": "theorem", "line": 47},
+  {"name": "CompPoly.GuruswamiSudan.gsFilteredCore_complete_of_roots_all_valid_witnesses", "kind": "theorem", "line": 71},
+  {"name": "CompPoly.GuruswamiSudan.gsFilteredCore_complete_of_enough_matches", "kind": "theorem", "line": 91}
+ ],
+ "private": [],
+ "missing": [],
+ "unread": "Unnamed instances, the names an `alias ⟨…⟩` command gives, and the names Lean generates for a declaration (constructors, recursors, derived instances) are not read from the source, so they are not listed."
+}

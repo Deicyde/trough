@@ -1,0 +1,28 @@
+{
+ "schema": "trough-ledger/v1",
+ "library": "CSLib",
+ "repo": "leanprover/cslib",
+ "rev": "86d560b6cbb379bd82512424cbcd2a915a1565e7",
+ "module": "Cslib.Computability.Distributed.FLP.ZeroConsensus",
+ "file": "Cslib/Computability/Distributed/FLP/ZeroConsensus.lean",
+ "public": [
+  {"name": "Cslib.FLP.ZeroFaultAlg.M", "kind": "abbrev", "line": 37},
+  {"name": "Cslib.FLP.ZeroFaultAlg.S", "kind": "abbrev", "line": 40},
+  {"name": "Cslib.FLP.ZeroFaultAlg.alg", "kind": "def", "line": 45},
+  {"name": "Cslib.FLP.ZeroFaultAlg.Inv", "kind": "def", "line": 57},
+  {"name": "Cslib.FLP.ZeroFaultAlg.inv_start", "kind": "theorem", "line": 62},
+  {"name": "Cslib.FLP.ZeroFaultAlg.inv_tr_left", "kind": "theorem", "line": 67},
+  {"name": "Cslib.FLP.ZeroFaultAlg.inv_tr_right", "kind": "theorem", "line": 77},
+  {"name": "Cslib.FLP.ZeroFaultAlg.trInv_inv", "kind": "theorem", "line": 87},
+  {"name": "Cslib.FLP.ZeroFaultAlg.reachable_inv", "kind": "theorem", "line": 100},
+  {"name": "Cslib.FLP.ZeroFaultAlg.safeConsensus", "kind": "theorem", "line": 107},
+  {"name": "Cslib.FLP.ZeroFaultAlg.always_inv", "kind": "theorem", "line": 112},
+  {"name": "Cslib.FLP.ZeroFaultAlg.init_left", "kind": "theorem", "line": 121},
+  {"name": "Cslib.FLP.ZeroFaultAlg.left_leadsTo_right", "kind": "theorem", "line": 130},
+  {"name": "Cslib.FLP.ZeroFaultAlg.right_leadsTo_out", "kind": "theorem", "line": 148},
+  {"name": "Cslib.FLP.ZeroFaultAlg.consensus_zero", "kind": "theorem", "line": 164}
+ ],
+ "private": [],
+ "missing": [],
+ "unread": "Unnamed instances, the names an `alias ⟨…⟩` command gives, and the names Lean generates for a declaration (constructors, recursors, derived instances) are not read from the source, so they are not listed."
+}

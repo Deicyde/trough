@@ -1,0 +1,28 @@
+{
+ "schema": "trough-ledger/v1",
+ "library": "CompPoly",
+ "repo": "Verified-zkEVM/CompPoly",
+ "rev": "afb9b1363984a70f10e24bd597f6ff40ebc8afbb",
+ "module": "CompPoly.Univariate.Bytes",
+ "file": "CompPoly/Univariate/Bytes.lean",
+ "public": [
+  {"name": "CompPoly.CPolynomial.ofArray_val", "kind": "theorem", "line": 39},
+  {"name": "CompPoly.CPolynomial.ofFn_mem_degreeLT", "kind": "theorem", "line": 43},
+  {"name": "CompPoly.CPolynomial.ofFn_coeff_of_mem_degreeLT", "kind": "theorem", "line": 49},
+  {"name": "CompPoly.CPolynomial.coeffVector", "kind": "def", "line": 63},
+  {"name": "CompPoly.CPolynomial.ofCoeffVector", "kind": "def", "line": 67},
+  {"name": "CompPoly.CPolynomial.ofCoeffVector_coeffVector", "kind": "theorem", "line": 71},
+  {"name": "CompPoly.CPolynomial.instByteCodecDegreeLT", "kind": "instance", "line": 79},
+  {"name": "CompPoly.CPolynomial.width_degreeLT", "kind": "theorem", "line": 86},
+  {"name": "CompPoly.CPolynomial.toBytes_degreeLT", "kind": "theorem", "line": 89},
+  {"name": "CompPoly.CPolynomial.instDelimitedCodec", "kind": "instance", "line": 96},
+  {"name": "CompPoly.CPolynomial.valid_iff", "kind": "theorem", "line": 103},
+  {"name": "CompPoly.CPolynomial.valid_iff_size_lt", "kind": "theorem", "line": 109},
+  {"name": "CompPoly.CPolynomial.encode_eq", "kind": "theorem", "line": 114},
+  {"name": "CompPoly.CPolynomial.toList_val_eq_ofFn", "kind": "theorem", "line": 122},
+  {"name": "CompPoly.CPolynomial.encode_eq_encodeU64_append_toBytes", "kind": "theorem", "line": 134}
+ ],
+ "private": [],
+ "missing": [],
+ "unread": "Unnamed instances, the names an `alias ⟨…⟩` command gives, and the names Lean generates for a declaration (constructors, recursors, derived instances) are not read from the source, so they are not listed."
+}

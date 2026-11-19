@@ -1,0 +1,19 @@
+{
+ "schema": "trough-ledger/v1",
+ "library": "Aesop",
+ "repo": "leanprover-community/aesop",
+ "rev": "637fdbb8689a3387a82568b07355231f892144d7",
+ "module": "Aesop.Script.Tactic",
+ "file": "Aesop/Script/Tactic.lean",
+ "public": [
+  {"name": "Aesop.Script.UTactic", "kind": "abbrev", "line": 16},
+  {"name": "Aesop.Script.STactic", "kind": "structure", "line": 18},
+  {"name": "Aesop.Script.Tactic", "kind": "structure", "line": 22},
+  {"name": "Aesop.Script.Tactic.unstructured", "kind": "def", "line": 31},
+  {"name": "Aesop.Script.Tactic.structured", "kind": "def", "line": 35},
+  {"name": "Aesop.Script.TacticBuilder", "kind": "abbrev", "line": 41}
+ ],
+ "private": [],
+ "missing": [],
+ "unread": "Unnamed instances, the names an `alias ⟨…⟩` command gives, and the names Lean generates for a declaration (constructors, recursors, derived instances) are not read from the source, so they are not listed."
+}

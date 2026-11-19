@@ -1,0 +1,24 @@
+{
+ "schema": "trough-ledger/v1",
+ "library": "CSLib",
+ "repo": "leanprover/cslib",
+ "rev": "86d560b6cbb379bd82512424cbcd2a915a1565e7",
+ "module": "Cslib.Foundations.Data.OmegaSequence.Topology",
+ "file": "Cslib/Foundations/Data/OmegaSequence/Topology.lean",
+ "public": [
+  {"name": "Cslib.ωSequence.homeomorph", "kind": "def", "line": 42},
+  {"name": "Cslib.ωSequence.homeomorph_apply", "kind": "lemma", "line": 45},
+  {"name": "Cslib.ωSequence.homeomorph_symm_apply", "kind": "lemma", "line": 50},
+  {"name": "Cslib.ωSequence.cylinder", "kind": "def", "line": 55},
+  {"name": "Cslib.ωSequence.cylinder_def", "kind": "theorem", "line": 59},
+  {"name": "Cslib.ωSequence.cylinder_eq_prepend_range", "kind": "theorem", "line": 64},
+  {"name": "Cslib.ωSequence.isTopologicalBasis_cylinders", "kind": "theorem", "line": 76},
+  {"name": "Cslib.ωSequence.isOpen_cylinder", "kind": "theorem", "line": 87},
+  {"name": "Cslib.ωSequence.nhds_cylinders", "kind": "theorem", "line": 91},
+  {"name": "Cslib.ωSequence.isOpen_iff", "kind": "theorem", "line": 98},
+  {"name": "Cslib.ωSequence.dense_iff", "kind": "theorem", "line": 110}
+ ],
+ "private": [],
+ "missing": [],
+ "unread": "Unnamed instances, the names an `alias ⟨…⟩` command gives, and the names Lean generates for a declaration (constructors, recursors, derived instances) are not read from the source, so they are not listed."
+}

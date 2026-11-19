@@ -1,0 +1,27 @@
+{
+ "schema": "trough-ledger/v1",
+ "library": "Aesop",
+ "repo": "leanprover-community/aesop",
+ "rev": "637fdbb8689a3387a82568b07355231f892144d7",
+ "module": "Aesop.Tree.Data.ForwardRuleMatches",
+ "file": "Aesop/Tree/Data/ForwardRuleMatches.lean",
+ "public": [
+  {"name": "Aesop.ForwardRuleMatches", "kind": "structure", "line": 20},
+  {"name": "Aesop.ForwardRuleMatches.empty", "kind": "def", "line": 32},
+  {"name": "Aesop.ForwardRuleMatches.insert", "kind": "def", "line": 41},
+  {"name": "Aesop.ForwardRuleMatches.insertMany", "kind": "def", "line": 49},
+  {"name": "Aesop.ForwardRuleMatches.erase", "kind": "def", "line": 54},
+  {"name": "Aesop.ForwardRuleMatches.eraseMany", "kind": "def", "line": 62},
+  {"name": "Aesop.ForwardRuleMatches.ofArray", "kind": "def", "line": 67},
+  {"name": "Aesop.ForwardRuleMatches.eraseHyps", "kind": "def", "line": 71},
+  {"name": "Aesop.ForwardRuleMatches.eraseHyp", "kind": "def", "line": 83},
+  {"name": "Aesop.ForwardRuleMatches.update", "kind": "def", "line": 92},
+  {"name": "Aesop.ForwardRuleMatches.normRules", "kind": "def", "line": 105},
+  {"name": "Aesop.ForwardRuleMatches.safeRules", "kind": "def", "line": 109},
+  {"name": "Aesop.ForwardRuleMatches.unsafeRules", "kind": "def", "line": 113},
+  {"name": "Aesop.ForwardRuleMatches.size", "kind": "def", "line": 117}
+ ],
+ "private": [],
+ "missing": [],
+ "unread": "Unnamed instances, the names an `alias ⟨…⟩` command gives, and the names Lean generates for a declaration (constructors, recursors, derived instances) are not read from the source, so they are not listed."
+}

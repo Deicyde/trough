@@ -1,0 +1,23 @@
+{
+ "schema": "trough-ledger/v1",
+ "library": "CompPoly",
+ "repo": "Verified-zkEVM/CompPoly",
+ "rev": "afb9b1363984a70f10e24bd597f6ff40ebc8afbb",
+ "module": "CompPoly.Fields.Binary.BF128Ghash.Basic",
+ "file": "CompPoly/Fields/Binary/BF128Ghash/Basic.lean",
+ "public": [
+  {"name": "BF128Ghash.irreducible_of_rabin_128_passed_over_GF2", "kind": "lemma", "line": 64},
+  {"name": "BF128Ghash.ghashPoly_irreducible", "kind": "theorem", "line": 128},
+  {"name": "BF128Ghash.BF128Ghash", "kind": "abbrev", "line": 152},
+  {"name": "BF128Ghash.instFieldBF128Ghash", "kind": "instance", "line": 155},
+  {"name": "BF128Ghash.instCommRingBF128Ghash", "kind": "instance", "line": 158},
+  {"name": "BF128Ghash.instNontrivialBF128Ghash", "kind": "instance", "line": 161},
+  {"name": "BF128Ghash.ofGF2", "kind": "def", "line": 175},
+  {"name": "BF128Ghash.root", "kind": "def", "line": 178},
+  {"name": "BF128Ghash.root_satisfies_poly", "kind": "theorem", "line": 182},
+  {"name": "BF128Ghash.BF128Ghash_card", "kind": "theorem", "line": 205}
+ ],
+ "private": [],
+ "missing": [],
+ "unread": "Unnamed instances, the names an `alias ⟨…⟩` command gives, and the names Lean generates for a declaration (constructors, recursors, derived instances) are not read from the source, so they are not listed."
+}

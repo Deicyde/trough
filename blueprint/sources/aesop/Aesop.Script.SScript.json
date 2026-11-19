@@ -1,0 +1,16 @@
+{
+ "schema": "trough-ledger/v1",
+ "library": "Aesop",
+ "repo": "leanprover-community/aesop",
+ "rev": "637fdbb8689a3387a82568b07355231f892144d7",
+ "module": "Aesop.Script.SScript",
+ "file": "Aesop/Script/SScript.lean",
+ "public": [
+  {"name": "Aesop.Script.SScript", "kind": "inductive", "line": 14},
+  {"name": "Aesop.Script.SScript.takeNConsecutiveFocusAndSolve?", "kind": "def", "line": 22},
+  {"name": "Aesop.Script.SScript.render", "kind": "def", "line": 31}
+ ],
+ "private": [],
+ "missing": [],
+ "unread": "Unnamed instances, the names an `alias ⟨…⟩` command gives, and the names Lean generates for a declaration (constructors, recursors, derived instances) are not read from the source, so they are not listed."
+}

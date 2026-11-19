@@ -1,0 +1,17 @@
+{
+ "schema": "trough-ledger/v1",
+ "library": "Aesop",
+ "repo": "leanprover-community/aesop",
+ "rev": "637fdbb8689a3387a82568b07355231f892144d7",
+ "module": "Aesop.Builder.Tactic",
+ "file": "Aesop/Builder/Tactic.lean",
+ "public": [
+  {"name": "Aesop.matchByTactic?", "kind": "def", "line": 18},
+  {"name": "Aesop.RuleBuilder.tacticIMode", "kind": "def", "line": 24},
+  {"name": "Aesop.RuleBuilder.tacticCore", "kind": "def", "line": 27},
+  {"name": "Aesop.RuleBuilder.tactic", "kind": "def", "line": 50}
+ ],
+ "private": [],
+ "missing": [],
+ "unread": "Unnamed instances, the names an `alias ⟨…⟩` command gives, and the names Lean generates for a declaration (constructors, recursors, derived instances) are not read from the source, so they are not listed."
+}

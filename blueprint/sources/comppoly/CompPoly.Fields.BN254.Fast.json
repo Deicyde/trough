@@ -1,0 +1,18 @@
+{
+ "schema": "trough-ledger/v1",
+ "library": "CompPoly",
+ "repo": "Verified-zkEVM/CompPoly",
+ "rev": "afb9b1363984a70f10e24bd597f6ff40ebc8afbb",
+ "module": "CompPoly.Fields.BN254.Fast",
+ "file": "CompPoly/Fields/BN254/Fast.lean",
+ "public": [
+  {"name": "BN254.Fast.instGcdData", "kind": "instance", "line": 29},
+  {"name": "BN254.Fast.instMont64x8Field", "kind": "instance", "line": 37},
+  {"name": "BN254.Fast.ScalarField", "kind": "abbrev", "line": 51},
+  {"name": "BN254.Fast.ofField", "kind": "def", "line": 55},
+  {"name": "BN254.Fast.ringEquiv", "kind": "def", "line": 60}
+ ],
+ "private": [],
+ "missing": [],
+ "unread": "Unnamed instances, the names an `alias ⟨…⟩` command gives, and the names Lean generates for a declaration (constructors, recursors, derived instances) are not read from the source, so they are not listed."
+}

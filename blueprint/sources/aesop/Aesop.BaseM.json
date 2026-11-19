@@ -1,0 +1,16 @@
+{
+ "schema": "trough-ledger/v1",
+ "library": "Aesop",
+ "repo": "leanprover-community/aesop",
+ "rev": "637fdbb8689a3387a82568b07355231f892144d7",
+ "module": "Aesop.BaseM",
+ "file": "Aesop/BaseM.lean",
+ "public": [
+  {"name": "Aesop.BaseM.State", "kind": "structure", "line": 20},
+  {"name": "Aesop.BaseM", "kind": "abbrev", "line": 32},
+  {"name": "Aesop.BaseM.run", "kind": "def", "line": 37}
+ ],
+ "private": [],
+ "missing": [],
+ "unread": "Unnamed instances, the names an `alias ⟨…⟩` command gives, and the names Lean generates for a declaration (constructors, recursors, derived instances) are not read from the source, so they are not listed."
+}

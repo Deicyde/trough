@@ -1,0 +1,18 @@
+{
+ "schema": "trough-ledger/v1",
+ "library": "CompPoly",
+ "repo": "Verified-zkEVM/CompPoly",
+ "rev": "afb9b1363984a70f10e24bd597f6ff40ebc8afbb",
+ "module": "CompPoly.LinearAlgebra.PolynomialMatrix.Degree",
+ "file": "CompPoly/LinearAlgebra/PolynomialMatrix/Degree.lean",
+ "public": [
+  {"name": "CompPoly.PolynomialMatrix.polynomialDegree?", "kind": "def", "line": 23},
+  {"name": "CompPoly.PolynomialMatrix.RowIsZero", "kind": "def", "line": 27},
+  {"name": "CompPoly.PolynomialMatrix.rowIsZero", "kind": "def", "line": 31},
+  {"name": "CompPoly.PolynomialMatrix.rowIsZero_iff", "kind": "theorem", "line": 35},
+  {"name": "CompPoly.PolynomialMatrix.exists_nonzero_entry_of_rowIsZero_false", "kind": "theorem", "line": 52}
+ ],
+ "private": [],
+ "missing": [],
+ "unread": "Unnamed instances, the names an `alias ⟨…⟩` command gives, and the names Lean generates for a declaration (constructors, recursors, derived instances) are not read from the source, so they are not listed."
+}

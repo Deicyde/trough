@@ -1,0 +1,15 @@
+{
+ "schema": "trough-ledger/v1",
+ "library": "Batteries",
+ "repo": "leanprover-community/batteries",
+ "rev": "b4b25a3886a16daacaf6615c2eea7170a6e8f458",
+ "module": "Batteries.Data.Range.Lemmas",
+ "file": "Batteries/Data/Range/Lemmas.lean",
+ "public": [
+  {"name": "Std.Legacy.Range.size_stop_le_start", "kind": "theorem", "line": 12},
+  {"name": "Std.Legacy.Range.size_step_1", "kind": "theorem", "line": 17}
+ ],
+ "private": [],
+ "missing": [],
+ "unread": "Unnamed instances, the names an `alias ⟨…⟩` command gives, and the names Lean generates for a declaration (constructors, recursors, derived instances) are not read from the source, so they are not listed."
+}

@@ -1,0 +1,28 @@
+{
+ "schema": "trough-ledger/v1",
+ "library": "Aesop",
+ "repo": "leanprover-community/aesop",
+ "rev": "637fdbb8689a3387a82568b07355231f892144d7",
+ "module": "Aesop.Search.Main",
+ "file": "Aesop/Search/Main.lean",
+ "public": [
+  {"name": "Aesop.nextActiveGoal", "kind": "def", "line": 30},
+  {"name": "Aesop.expandNextGoal", "kind": "def", "line": 38},
+  {"name": "Aesop.checkGoalLimit", "kind": "def", "line": 88},
+  {"name": "Aesop.checkRappLimit", "kind": "def", "line": 95},
+  {"name": "Aesop.checkRootUnprovable", "kind": "def", "line": 102},
+  {"name": "Aesop.getProof?", "kind": "def", "line": 113},
+  {"name": "Aesop.finalizeProof", "kind": "def", "line": 116},
+  {"name": "Aesop.traceScript", "kind": "def", "line": 128},
+  {"name": "Aesop.traceTree", "kind": "def", "line": 143},
+  {"name": "Aesop.finishIfProven", "kind": "def", "line": 146},
+  {"name": "Aesop.treeHasProgress", "kind": "def", "line": 167},
+  {"name": "Aesop.throwAesopEx", "kind": "def", "line": 190},
+  {"name": "Aesop.handleNonfatalError", "kind": "def", "line": 228},
+  {"name": "Aesop.searchLoop", "kind": "def", "line": 250},
+  {"name": "Aesop.search", "kind": "def", "line": 267}
+ ],
+ "private": [],
+ "missing": [],
+ "unread": "Unnamed instances, the names an `alias ⟨…⟩` command gives, and the names Lean generates for a declaration (constructors, recursors, derived instances) are not read from the source, so they are not listed."
+}

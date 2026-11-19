@@ -1,0 +1,22 @@
+{
+ "schema": "trough-ledger/v1",
+ "library": "Aesop",
+ "repo": "leanprover-community/aesop",
+ "rev": "637fdbb8689a3387a82568b07355231f892144d7",
+ "module": "Aesop.Script.CtorNames",
+ "file": "Aesop/Script/CtorNames.lean",
+ "public": [
+  {"name": "Aesop.CtorNames", "kind": "structure", "line": 12},
+  {"name": "Aesop.CtorNames.toRCasesPat", "kind": "def", "line": 20},
+  {"name": "Aesop.CtorNames.toInductionAltLHS", "kind": "def", "line": 34},
+  {"name": "Aesop.CtorNames.toInductionAlt", "kind": "def", "line": 44},
+  {"name": "Aesop.CtorNames.toAltVarNames", "kind": "def", "line": 48},
+  {"name": "Aesop.CtorNames.mkFreshArgNames", "kind": "def", "line": 52},
+  {"name": "Aesop.ctorNamesToRCasesPats", "kind": "def", "line": 60},
+  {"name": "Aesop.ctorNamesToInductionAlts", "kind": "def", "line": 64},
+  {"name": "Aesop.mkCtorNames", "kind": "def", "line": 69}
+ ],
+ "private": [],
+ "missing": [],
+ "unread": "Unnamed instances, the names an `alias ⟨…⟩` command gives, and the names Lean generates for a declaration (constructors, recursors, derived instances) are not read from the source, so they are not listed."
+}

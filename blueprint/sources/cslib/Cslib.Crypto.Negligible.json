@@ -1,0 +1,23 @@
+{
+ "schema": "trough-ledger/v1",
+ "library": "CSLib",
+ "repo": "leanprover/cslib",
+ "rev": "86d560b6cbb379bd82512424cbcd2a915a1565e7",
+ "module": "Cslib.Crypto.Negligible",
+ "file": "Cslib/Crypto/Negligible.lean",
+ "public": [
+  {"name": "Cslib.Crypto.Negligible", "kind": "def", "line": 33},
+  {"name": "Cslib.Crypto.negligible_iff", "kind": "theorem", "line": 36},
+  {"name": "Cslib.Crypto.negligible_zero", "kind": "theorem", "line": 41},
+  {"name": "Cslib.Crypto.Negligible.congr'", "kind": "theorem", "line": 46},
+  {"name": "Cslib.Crypto.Negligible.add", "kind": "theorem", "line": 51},
+  {"name": "Cslib.Crypto.Negligible.mul", "kind": "theorem", "line": 56},
+  {"name": "Cslib.Crypto.Negligible.sum", "kind": "theorem", "line": 61},
+  {"name": "Cslib.Crypto.negligible_of_eventually_le", "kind": "theorem", "line": 66},
+  {"name": "Cslib.Crypto.negligible_of_le", "kind": "theorem", "line": 71},
+  {"name": "Cslib.Crypto.Negligible.polynomiallyBounded_mul", "kind": "theorem", "line": 76}
+ ],
+ "private": [],
+ "missing": [],
+ "unread": "Unnamed instances, the names an `alias ⟨…⟩` command gives, and the names Lean generates for a declaration (constructors, recursors, derived instances) are not read from the source, so they are not listed."
+}

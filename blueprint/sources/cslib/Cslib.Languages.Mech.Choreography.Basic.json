@@ -1,0 +1,18 @@
+{
+ "schema": "trough-ledger/v1",
+ "library": "CSLib",
+ "repo": "leanprover/cslib",
+ "rev": "86d560b6cbb379bd82512424cbcd2a915a1565e7",
+ "module": "Cslib.Languages.Mech.Choreography.Basic",
+ "file": "Cslib/Languages/Mech/Choreography/Basic.lean",
+ "public": [
+  {"name": "Cslib.Languages.Mech.Expr", "kind": "inductive", "line": 40},
+  {"name": "Cslib.Languages.Mech.Prefix", "kind": "inductive", "line": 57},
+  {"name": "Cslib.Languages.Mech.Choreography", "kind": "inductive", "line": 66},
+  {"name": "Cslib.Languages.Mech.Prefix.pn", "kind": "def", "line": 124},
+  {"name": "Cslib.Languages.Mech.Choreography.pn", "kind": "def", "line": 129}
+ ],
+ "private": [],
+ "missing": [],
+ "unread": "Unnamed instances, the names an `alias ⟨…⟩` command gives, and the names Lean generates for a declaration (constructors, recursors, derived instances) are not read from the source, so they are not listed."
+}

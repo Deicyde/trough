@@ -1,0 +1,22 @@
+{
+ "schema": "trough-ledger/v1",
+ "library": "CompPoly",
+ "repo": "Verified-zkEVM/CompPoly",
+ "rev": "afb9b1363984a70f10e24bd597f6ff40ebc8afbb",
+ "module": "CompPoly.LinearAlgebra.Dense.KernelInPlace",
+ "file": "CompPoly/LinearAlgebra/Dense/KernelInPlace.lean",
+ "public": [
+  {"name": "CompPoly.DenseMatrix.swapRowsData", "kind": "def", "line": 44},
+  {"name": "CompPoly.DenseMatrix.scaleRowData", "kind": "def", "line": 60},
+  {"name": "CompPoly.DenseMatrix.addScaledRowData", "kind": "def", "line": 71},
+  {"name": "CompPoly.DenseMatrix.findPivotRowData", "kind": "def", "line": 82},
+  {"name": "CompPoly.DenseMatrix.normalizeAndEliminateData", "kind": "def", "line": 93},
+  {"name": "CompPoly.DenseMatrix.rrefLoopData", "kind": "def", "line": 108},
+  {"name": "CompPoly.DenseMatrix.rrefInPlace", "kind": "def", "line": 127},
+  {"name": "CompPoly.DenseMatrix.homogeneousKernelBasisInPlace", "kind": "def", "line": 134},
+  {"name": "CompPoly.DenseMatrix.homogeneousWitnessInPlace", "kind": "def", "line": 142}
+ ],
+ "private": [],
+ "missing": [],
+ "unread": "Unnamed instances, the names an `alias ⟨…⟩` command gives, and the names Lean generates for a declaration (constructors, recursors, derived instances) are not read from the source, so they are not listed."
+}

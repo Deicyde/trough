@@ -1,0 +1,25 @@
+{
+ "schema": "trough-ledger/v1",
+ "library": "CSLib",
+ "repo": "leanprover/cslib",
+ "rev": "86d560b6cbb379bd82512424cbcd2a915a1565e7",
+ "module": "Cslib.Computability.URM.StraightLine",
+ "file": "Cslib/Computability/URM/StraightLine.lean",
+ "public": [
+  {"name": "Cslib.URM.Program.IsStraightLine", "kind": "def", "line": 33},
+  {"name": "Cslib.URM.Program.IsStraightLine.append", "kind": "theorem", "line": 40},
+  {"name": "Cslib.URM.Program.IsStraightLine.cons", "kind": "theorem", "line": 48},
+  {"name": "Cslib.URM.Program.IsStraightLine.singleton", "kind": "theorem", "line": 56},
+  {"name": "Cslib.URM.Step.of_nonJump", "kind": "theorem", "line": 65},
+  {"name": "Cslib.URM.straight_line_halts_from_regs", "kind": "theorem", "line": 83},
+  {"name": "Cslib.URM.straight_line_halts", "kind": "theorem", "line": 99},
+  {"name": "Cslib.URM.straightLinefinalState", "kind": "def", "line": 106},
+  {"name": "Cslib.URM.straightLinefinalState_spec", "kind": "theorem", "line": 112},
+  {"name": "Cslib.URM.straightLineFinalRegs", "kind": "def", "line": 118},
+  {"name": "Cslib.URM.straightLineFinalRegs_eq_of_halted", "kind": "theorem", "line": 122},
+  {"name": "Cslib.URM.straight_line_state_at_pc", "kind": "theorem", "line": 130}
+ ],
+ "private": [],
+ "missing": [],
+ "unread": "Unnamed instances, the names an `alias ⟨…⟩` command gives, and the names Lean generates for a declaration (constructors, recursors, derived instances) are not read from the source, so they are not listed."
+}

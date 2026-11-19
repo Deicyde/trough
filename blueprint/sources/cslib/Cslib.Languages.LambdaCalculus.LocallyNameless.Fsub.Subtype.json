@@ -1,0 +1,23 @@
+{
+ "schema": "trough-ledger/v1",
+ "library": "CSLib",
+ "repo": "leanprover/cslib",
+ "rev": "86d560b6cbb379bd82512424cbcd2a915a1565e7",
+ "module": "Cslib.Languages.LambdaCalculus.LocallyNameless.Fsub.Subtype",
+ "file": "Cslib/Languages/LambdaCalculus/LocallyNameless/Fsub/Subtype.lean",
+ "public": [
+  {"name": "Cslib.LambdaCalculus.LocallyNameless.Fsub.Sub", "kind": "inductive", "line": 35},
+  {"name": "Cslib.LambdaCalculus.LocallyNameless.Fsub.Sub.wf", "kind": "lemma", "line": 56},
+  {"name": "Cslib.LambdaCalculus.LocallyNameless.Fsub.Sub.refl", "kind": "lemma", "line": 62},
+  {"name": "Cslib.LambdaCalculus.LocallyNameless.Fsub.Sub.weaken", "kind": "lemma", "line": 68},
+  {"name": "Cslib.LambdaCalculus.LocallyNameless.Fsub.Sub.weaken_head", "kind": "lemma", "line": 76},
+  {"name": "Cslib.LambdaCalculus.LocallyNameless.Fsub.Sub.narrow_aux", "kind": "lemma", "line": 80},
+  {"name": "Cslib.LambdaCalculus.LocallyNameless.Fsub.Sub.trans", "kind": "lemma", "line": 105},
+  {"name": "Cslib.LambdaCalculus.LocallyNameless.Fsub.Sub.narrow", "kind": "lemma", "line": 140},
+  {"name": "Cslib.LambdaCalculus.LocallyNameless.Fsub.Sub.map_subst", "kind": "lemma", "line": 146},
+  {"name": "Cslib.LambdaCalculus.LocallyNameless.Fsub.Sub.strengthen", "kind": "lemma", "line": 163}
+ ],
+ "private": [],
+ "missing": [],
+ "unread": "Unnamed instances, the names an `alias ⟨…⟩` command gives, and the names Lean generates for a declaration (constructors, recursors, derived instances) are not read from the source, so they are not listed."
+}

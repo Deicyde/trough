@@ -1,0 +1,19 @@
+{
+ "schema": "trough-ledger/v1",
+ "library": "Batteries",
+ "repo": "leanprover-community/batteries",
+ "rev": "b4b25a3886a16daacaf6615c2eea7170a6e8f458",
+ "module": "Batteries.CodeAction.Match",
+ "file": "Batteries/CodeAction/Match.lean",
+ "public": [
+  {"name": "Batteries.CodeAction.isMatchTerm", "kind": "def", "line": 22},
+  {"name": "Batteries.CodeAction.getMatchHeaderRange?", "kind": "def", "line": 27},
+  {"name": "Batteries.CodeAction.findAllInfos", "kind": "def", "line": 48},
+  {"name": "Batteries.CodeAction.hasImplicitNonparArg", "kind": "def", "line": 62},
+  {"name": "Batteries.CodeAction.patternFromConstructor", "kind": "def", "line": 73},
+  {"name": "Batteries.CodeAction.matchExpand", "kind": "def", "line": 186}
+ ],
+ "private": [],
+ "missing": [],
+ "unread": "Unnamed instances, the names an `alias ⟨…⟩` command gives, and the names Lean generates for a declaration (constructors, recursors, derived instances) are not read from the source, so they are not listed."
+}

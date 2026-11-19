@@ -1,0 +1,21 @@
+{
+ "schema": "trough-ledger/v1",
+ "library": "CompPoly",
+ "repo": "Verified-zkEVM/CompPoly",
+ "rev": "afb9b1363984a70f10e24bd597f6ff40ebc8afbb",
+ "module": "CompPoly.Multivariate.MvPolyEquiv.Core",
+ "file": "CompPoly/Multivariate/MvPolyEquiv/Core.lean",
+ "public": [
+  {"name": "CPoly.fromCMvPolynomial", "kind": "def", "line": 35},
+  {"name": "CPoly.toCMvPolynomial", "kind": "def", "line": 41},
+  {"name": "CPoly.toCMvPolynomial_fromCMvPolynomial", "kind": "theorem", "line": 73},
+  {"name": "CPoly.fromCMvPolynomial_toCMvPolynomial", "kind": "theorem", "line": 91},
+  {"name": "CPoly.fromCMvPolynomial_injective", "kind": "lemma", "line": 115},
+  {"name": "CPoly.coeff_eq", "kind": "lemma", "line": 121},
+  {"name": "CPoly.eq_iff_fromCMvPolynomial", "kind": "lemma", "line": 126},
+  {"name": "CPoly.polyEquiv", "kind": "def", "line": 134}
+ ],
+ "private": [],
+ "missing": [],
+ "unread": "Unnamed instances, the names an `alias ⟨…⟩` command gives, and the names Lean generates for a declaration (constructors, recursors, derived instances) are not read from the source, so they are not listed."
+}

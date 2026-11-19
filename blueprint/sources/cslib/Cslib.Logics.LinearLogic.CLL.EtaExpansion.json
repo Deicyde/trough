@@ -1,0 +1,17 @@
+{
+ "schema": "trough-ledger/v1",
+ "library": "CSLib",
+ "repo": "leanprover/cslib",
+ "rev": "86d560b6cbb379bd82512424cbcd2a915a1565e7",
+ "module": "Cslib.Logics.LinearLogic.CLL.EtaExpansion",
+ "file": "Cslib/Logics/LinearLogic/CLL/EtaExpansion.lean",
+ "public": [
+  {"name": "Cslib.Logic.CLL.Proposition.expand", "kind": "def", "line": 29},
+  {"name": "Cslib.Logic.CLL.Proof.onlyAtomicAxioms", "kind": "def", "line": 81},
+  {"name": "Cslib.Logic.CLL.Proof.onlyAtomicAxioms_rwConclusion", "kind": "theorem", "line": 99},
+  {"name": "Cslib.Logic.CLL.Proof.expand_onlyAtomicAxioms", "kind": "theorem", "line": 118}
+ ],
+ "private": [],
+ "missing": [],
+ "unread": "Unnamed instances, the names an `alias ⟨…⟩` command gives, and the names Lean generates for a declaration (constructors, recursors, derived instances) are not read from the source, so they are not listed."
+}

@@ -1,0 +1,17 @@
+{
+ "schema": "trough-ledger/v1",
+ "library": "CompPoly",
+ "repo": "Verified-zkEVM/CompPoly",
+ "rev": "afb9b1363984a70f10e24bd597f6ff40ebc8afbb",
+ "module": "CompPoly.Univariate.BatchEval.Interpolation",
+ "file": "CompPoly/Univariate/BatchEval/Interpolation.lean",
+ "public": [
+  {"name": "CompPoly.CPolynomial.SubproductTree.leafCount", "kind": "def", "line": 49},
+  {"name": "CompPoly.CPolynomial.SubproductTree.interpolateAux", "kind": "def", "line": 58},
+  {"name": "CompPoly.CPolynomial.interpolateSubproduct", "kind": "def", "line": 72},
+  {"name": "CompPoly.CPolynomial.interpolateSubproduct_eq_interpolateArrays", "kind": "theorem", "line": 295}
+ ],
+ "private": [],
+ "missing": [],
+ "unread": "Unnamed instances, the names an `alias ⟨…⟩` command gives, and the names Lean generates for a declaration (constructors, recursors, derived instances) are not read from the source, so they are not listed."
+}

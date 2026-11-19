@@ -1,0 +1,30 @@
+{
+ "schema": "trough-ledger/v1",
+ "library": "CSLib",
+ "repo": "leanprover/cslib",
+ "rev": "86d560b6cbb379bd82512424cbcd2a915a1565e7",
+ "module": "Cslib.Languages.CombinatoryLogic.Defs",
+ "file": "Cslib/Languages/CombinatoryLogic/Defs.lean",
+ "public": [
+  {"name": "Cslib.SKI", "kind": "inductive", "line": 43},
+  {"name": "Cslib.SKI.applyList", "kind": "def", "line": 60},
+  {"name": "Cslib.SKI.applyList_concat", "kind": "lemma", "line": 62},
+  {"name": "Cslib.SKI.size", "kind": "def", "line": 67},
+  {"name": "Cslib.SKI.Red", "kind": "inductive", "line": 77},
+  {"name": "Cslib.SKI.Red.ne", "kind": "lemma", "line": 92},
+  {"name": "Cslib.SKI.MRed.S", "kind": "theorem", "line": 99},
+  {"name": "Cslib.SKI.MRed.K", "kind": "theorem", "line": 100},
+  {"name": "Cslib.SKI.MRed.I", "kind": "theorem", "line": 101},
+  {"name": "Cslib.SKI.MRed.head", "kind": "theorem", "line": 103},
+  {"name": "Cslib.SKI.MRed.tail", "kind": "theorem", "line": 106},
+  {"name": "Cslib.SKI.parallel_mRed", "kind": "lemma", "line": 109},
+  {"name": "Cslib.SKI.parallel_red", "kind": "lemma", "line": 113},
+  {"name": "Cslib.SKI.join_mRed_head", "kind": "theorem", "line": 116},
+  {"name": "Cslib.SKI.mJoin_red_head", "kind": "alias", "line": 120},
+  {"name": "Cslib.SKI.join_mRed_tail", "kind": "theorem", "line": 122},
+  {"name": "Cslib.SKI.mJoin_red_tail", "kind": "alias", "line": 126}
+ ],
+ "private": [],
+ "missing": [],
+ "unread": "Unnamed instances, the names an `alias ⟨…⟩` command gives, and the names Lean generates for a declaration (constructors, recursors, derived instances) are not read from the source, so they are not listed."
+}

@@ -17,15 +17,18 @@ no new reading of the library, and its tests and the data check one another.
 from __future__ import annotations
 
 import json
+import os
 import posixpath
 import re
+import subprocess
+import sys
 from collections import Counter
 from collections.abc import Callable
 from dataclasses import dataclass
 from pathlib import Path
 
 from . import leansource
-from .blueprints import Built, escape
+from .blueprints import VAULT_FILE, Built, escape
 from .ff import is_apache
 from .formal_conjectures import OPAQUE, module_name, quote
 from .mathlib import fence
@@ -78,6 +81,9 @@ class Library:
     quotes: str = "The docstrings, Lean statements and README text"
     # The folders whose docstrings keep their TODO notes, as they describe a TODO command.
     todo_exempt: tuple[str, ...] = ()
+    # Whether a module that declares nothing public by name is listed on its folder's page rather than given an
+    # article; a folder left with no article has no page, and its modules are listed on the page above.
+    list_empty: bool = False
 
     def notes(self, file: str) -> bool:
         """Whether the filter cuts the TODO notes of the module at *file*: not in the folders the library exempts."""
@@ -218,6 +224,45 @@ def checked_out(checkout: Path, wanted: list[str]) -> str:
     return f"not checked out: {missing[0]}" + (f" and {len(missing) - 1:,} other files" if len(missing) > 1 else "")
 
 
+def git(checkout: Path, *args: str) -> str:
+    return subprocess.run(["git", "-C", str(checkout), *args], check=True, capture_output=True, text=True,
+                          env={**os.environ, "TZ": "UTC"}).stdout.strip()
+
+
+def refresh(library: Library, checkout: Path, out: Path) -> list[str]:
+    """Write source.json and library.json under *out* from a checkout of the library at the commit to pin, or neither
+    when there is a problem: a license that is not Apache-2.0, a file not checked out, a module whose scopes don't
+    close, or a reading of under half the declarations the last record has. Return the problems."""
+    rev = git(checkout, "rev-parse", "HEAD")
+    paths = git(checkout, "ls-tree", "-r", "--name-only", "HEAD").splitlines()
+    record, problems = read(library, checkout, paths)
+    previous = out / "library.json"
+    last = json.loads(previous.read_text(encoding="utf-8")) if previous.is_file() else None
+    if record and last:
+        now, before = counts(record["modules"])["declarations"], counts(last["modules"])["declarations"]
+        if now * 2 < before:
+            problems.append(f"reads {now} declarations, under half the {before} the last record read")
+    if problems:
+        return problems
+    manifest = json.loads((checkout / "lake-manifest.json").read_text(encoding="utf-8"))
+    mathlib = next((package.get("rev", "") for package in manifest.get("packages", []) if package.get("name") == "mathlib"), "")
+    source = {"repo": library.repo, "rev": rev,
+              # In UTC, as git versions print %cI differently.
+              "date": git(checkout, "log", "-1", "--date=format-local:%Y-%m-%dT%H:%M:%SZ", "--format=%cd", "HEAD"),
+              "toolchain": (checkout / "lean-toolchain").read_text(encoding="utf-8").strip().split(":")[-1],
+              "mathlib": mathlib, "license": "Apache-2.0"}
+    record = {"schema": record.pop("schema"), "rev": rev, **record}
+    out.mkdir(parents=True, exist_ok=True)
+    (out / "source.json").write_text(json.dumps(source, indent=1, ensure_ascii=False) + "\n", encoding="utf-8")
+    previous.write_text(json.dumps(record, indent=1, ensure_ascii=False) + "\n", encoding="utf-8")
+    tally = counts(record["modules"])
+    print(f"{library.repo} {rev[:8]}: {len(record['modules'])} modules, {tally['declarations']} declarations read "
+          f"({tally['documented']} documented, {tally['sorry']} holding sorry), "
+          f"{sum(1 for module in record['modules'] if module['title'])} modules titled by their docstrings, "
+          f"{len(record['folders'])} folder READMEs", file=sys.stderr)
+    return []
+
+
 def counts(modules: list[dict]) -> Counter:
     tally: Counter = Counter()
     for module in modules:
@@ -256,10 +301,17 @@ def at(library: Library, rev: str) -> str:
     return f"[{rev[:8]}]({folder_url(library, rev)})"
 
 
-def pinned(library: Library, text: str, rev: str) -> str:
-    """Quoted text whose links into the repository's master branch point at the pinned commit."""
-    return re.sub(rf"{GITHUB}/{re.escape(library.repo)}/(blob|tree)/master/",
+def pinned(library: Library, text: str, rev: str, base: str | None = None) -> str:
+    """Quoted text whose links into the repository's master branch point at the pinned commit. With *base*, the
+    folder the text was read from, a relative Markdown link points at its target in the repository at that commit,
+    as it would not resolve on the site."""
+    text = re.sub(rf"{GITHUB}/{re.escape(library.repo)}/(blob|tree)/master/",
                   lambda match: f"{GITHUB}/{library.repo}/{match.group(1)}/{rev}/", text)
+    if base is None:
+        return text
+    return re.sub(r"\]\((?![a-zA-Z][a-zA-Z0-9+.-]*:|#)([^)\s]+)\)",
+                  lambda match: f"]({blob(library, rev, posixpath.normpath(posixpath.join(base, match.group(1))).lstrip('/'))})",
+                  text)
 
 
 def plural(count: int, word: str, words: str | None = None) -> str:
@@ -352,7 +404,8 @@ def article(library: Library, module: dict, title: str, rev: str, links: dict[st
     for item in declarations(module):
         links.setdefault(item["name"], blob(library, rev, module["file"], item["line"]))
     leaf = Leaf(title_text(title), slugify(stem(module)), fields, "\n\n".join(parts))
-    leaf.sources = [(f"{module['file']} at {rev[:8]}", blob(library, rev, module["file"]))]
+    leaf.sources = [(f"{module['file']} at {rev[:8]}", blob(library, rev, module["file"])),
+                    ("Declaration ledger", VAULT_FILE + ledger_path(library, module))]
     return leaf
 
 
@@ -376,6 +429,98 @@ def credit(library: Library, rev: str) -> str:
             f"at commit {at(library, rev)}, under its Apache-2.0 license.")
 
 
+LEDGER_SCHEMA = "trough-ledger/v1"
+# What the source reading does not read, which a ledger therefore cannot list.
+UNREAD = ("Unnamed instances, the names an `alias ⟨…⟩` command gives, and the names Lean generates for a declaration "
+          "(constructors, recursors, derived instances) are not read from the source, so they are not listed.")
+
+
+def ledger_path(library: Library, module: dict) -> str:
+    """Where a module catalog's declaration ledger is, below the vault: a JSON file, which the site does not publish
+    and links in the repository instead."""
+    return f"sources/{library.id}/{module['module']}.json"
+
+
+def ledger(library: Library, module: dict, rev: str, private: set[str], missing: set[str]) -> str:
+    """A module catalog's declaration ledger: every declaration read from the module's source, with its kind and line,
+    under `public` when Lean has it as a public declaration (these are the article's `lean:` names), `private` when
+    Lean has it only as a declaration private to the module, and `missing` when Lean does not have it."""
+    entries: dict[str, list[dict]] = {"public": [], "private": [], "missing": []}
+    for item in declarations(module):
+        group = "private" if item["name"] in private else "missing" if item["name"] in missing else "public"
+        entries[group].append({"name": item["name"], "kind": item["kind"], "line": item["line"]})
+    head = {"schema": LEDGER_SCHEMA, "library": library.name, "repo": library.repo, "rev": rev,
+            "module": module["module"], "file": module["file"]}
+    # An entry a line, so that a change to the module shows as a change to its lines.
+    parts = [f" {json.dumps(key)}: {json.dumps(value, ensure_ascii=False)}" for key, value in head.items()]
+    parts += [f' "{group}": [' + ",".join(f"\n  {json.dumps(entry, ensure_ascii=False)}" for entry in items)
+              + ("\n ]" if items else "]") for group, items in entries.items()]
+    parts.append(f' "unread": {json.dumps(UNREAD, ensure_ascii=False)}')
+    return "{\n" + ",\n".join(parts) + "\n}\n"
+
+
+def module_intro(library: Library, data: dict, stats: Counter, about: list[str], empty: str | None = None) -> str:
+    """The front page of a library whose modules that declare nothing public are listed (Library.list_empty): *about*,
+    the paragraphs that say what the library is, then the commit and the counts, how an article reads, where the edges
+    come from, and the credit. *empty* says what the listed modules are, when the library's own words fit better."""
+    rev = data["rev"]
+    theorems = stats["theorem"] + stats["lemma"]
+    definitions = sum(stats[kind] for kind in ("def", "abbrev", "structure", "class", "inductive", "opaque"))
+    others = stats["declarations"] - theorems - definitions
+    if data.get("deps"):
+        lean = (
+            f"Edges come from Lean: a GitHub Actions run builds {library.name} at this commit and reads, for each module, "
+            "which other modules' declarations its own use. “Depends on” lists the modules its statements use, the "
+            "types of its declarations and the values of its definitions, and “Proof depends on” those only its proofs "
+            f"use; a dependency reached through another is left out. That gives "
+            f"{plural(stats['statement_edges'], 'statement edge')} and {plural(stats['proof_edges'], 'proof edge')}."
+            + (f" The run has no record of {plural(stats['unrecorded'], 'module')}, whose dependencies are unknown."
+               if stats["unrecorded"] else "")
+            + " The same run checks the names read from the source"
+            + (f": Lean marks {stats['private']:,} of them as private to their modules (in a `module` file, a "
+               "declaration outside a `public section` and not marked `public` is private), and these are left out"
+               + (f", as {'is' if stats['unresolved'] == 1 else 'are'} {plural(stats['unresolved'], 'name')} Lean does "
+                  "not have" if stats["unresolved"] else "")
+               + "." if stats["private"] or stats["unresolved"] else ", and Lean has each as a public declaration."))
+    else:
+        lean = ("The articles have no edges, and the names read from the source are not checked against Lean: both come "
+                f"from a Lean run over {library.name} at this commit, which the data lack.")
+    if empty is None:
+        empty = (f" The other {plural(stats['empty'], 'module')} declare nothing public by name; they are listed on "
+                 "their folders' pages.")
+    mathlib = f" and Mathlib {data['mathlib'][:8]}" if data.get("mathlib") else ""
+    return "\n\n".join(part for part in [
+        *about,
+        f"This chapter maps {library.name} at commit {at(library, rev)} ({data['date'][:10]}), with Lean toolchain "
+        f"{data['toolchain']}{mathlib}. It has an article for each of the {plural(stats['articles'], 'module')} under "
+        f"`{library.root}/` that declare something public by name, in a part per folder of `{library.root}/` and a page "
+        f"per folder below. They hold {plural(stats['declarations'], 'public declaration')}, "
+        + listing([plural(count, word, words) for count, word, words in (
+            (theorems, "theorem", None), (definitions, "definition", None),
+            (others, "instance or alias", "instances and aliases")) if count])
+        + f", {stats['documented']:,} of them with a docstring."
+        + (empty if stats["empty"] else ""),
+        "An article is titled by its module docstring, or by its file name when the docstring has no title; where "
+        "modules share a title, each adds the shortest end of its path that tells them apart. It gives the module's "
+        "authors as its header names them, its docstrings, and a block per public declaration in file order with its "
+        "Lean statement: the text up to the `:=` or `where` that starts its value, or the whole text of a structure, "
+        "class or inductive type. These are read from the source text, without Lean. Unnamed instances and the names "
+        "an `alias ⟨…⟩` command gives are left out, and so are TODO notes and text about plans or inviting future "
+        "work; an ellipsis marks each cut."
+        + ("" if stats["sorry"] else " No declaration's value holds `sorry`."),
+        lean,
+        credit(library, rev),
+    ] if part)
+
+
+def unbuilt_line(library: Library, unbuilt: list[dict], rev: str) -> str:
+    """The front page's line naming the modules the library's build did not compile, which Lean could not read."""
+    names = listing([f"[`{module['module']}`]({blob(library, rev, module['file'])})" for module in unbuilt])
+    return (f"{plural(len(unbuilt), 'module')} under `{library.root}/` did not build in the library's own build, so Lean "
+            f"could not read {'it' if len(unbuilt) == 1 else 'them'} and {'it has' if len(unbuilt) == 1 else 'they have'} "
+            f"no article: {names}.")
+
+
 def chapter(library: Library, data: dict) -> tuple[Built, dict[str, str]]:
     """The chapter's root, with its articles and counts, and each declaration's source line (for
     hooks/lean-links.json). A part per area, a page per folder below it and an article per module."""
@@ -384,34 +529,61 @@ def chapter(library: Library, data: dict) -> tuple[Built, dict[str, str]]:
     # Lean decides which of the names read from the source are public: one private to its module, or one Lean does not
     # have, is left out.
     private, missing = (set(deps.get("private", [])), set(deps.get("missing", []))) if deps else (set(), set())
-    check_names(library, {item["name"] for module in data["modules"] for item in module["items"] or [] if "name" in item},
+    # A dump that says which modules the library's build compiled (lean/library/LibraryDeps.lean, which imports each
+    # one) leaves the others unread: they are listed on the front page, not mapped. Over half unbuilt is refused, as the
+    # reading, not the library, has gone wrong.
+    built = set(deps["built"]) if deps and "built" in deps else None
+    unbuilt = [module for module in data["modules"] if built is not None and module["module"] not in built]
+    if len(unbuilt) * 2 > len(data["modules"]):
+        raise ValueError(f"data/{library.id}/deps.json says {len(unbuilt):,} of the {len(data['modules']):,} modules "
+                         "did not build, over half")
+    read = [module for module in data["modules"] if module not in unbuilt]
+    check_names(library, {item["name"] for module in read for item in module["items"] or [] if "name" in item},
                 missing)
     modules = []
-    for module in data["modules"]:
+    for module in read:
         stats["private"] += sum(item.get("name") in private for item in module["items"])
         stats["unresolved"] += sum(item.get("name") in missing for item in module["items"])
         modules.append({**module, "items": [item for item in module["items"]
                                             if item.get("name") not in private | missing or "name" not in item]})
-    named = titles(modules)
-    keys = {module["file"]: f"{library.id}-{module['module']}" for module in modules}  # each article's key, by file
+    # The modules with an article, and those listed instead.
+    shown = [module for module in modules if declarations(module) or not library.list_empty]
+    named = titles(shown)
+    keys = {module["file"]: f"{library.id}-{module['module']}" for module in shown}  # each article's key, by file
     targets: dict[str, Leaf | Container] = {}
     links: dict[str, str] = {}
     leaves: dict[str, Leaf] = {}
 
-    def build(name: str, node: dict, path: str, part: bool) -> Container:
-        entries = []
+    def unshown(module: dict) -> bool:
+        return library.list_empty and not declarations(module)
+
+    def listed_line(listed: list[dict]) -> str:
+        """The line naming the modules a page lists, which declare nothing public by name."""
+        names = listing([f"[`{module['module']}`]({blob(library, rev, module['file'])})" for module in listed])
+        return (f"{'This module declares' if len(listed) == 1 else 'These modules declare'} nothing public by name, "
+                f"so {'it has' if len(listed) == 1 else 'they have'} no article: {names}.")
+
+    def build(name: str, node: dict, path: str, part: bool) -> tuple[Container | None, list[dict]]:
+        """The folder's page, or None when it would hold no article, with the modules a page above must list."""
+        entries, listed = [], []
         # By name, as the root module imports them, a module before the folder of the same name.
         children = sorted([(stem(module), 0, module) for module in node["modules"]]
                           + [(folder, 1, child) for folder, child in node["folders"].items()], key=lambda row: row[:2])
         for child_name, is_folder, child in children:
             if is_folder:
-                entries.append(Entry(build(child_name, child, f"{path}/{child_name}", False)))
+                page, below = build(child_name, child, f"{path}/{child_name}", False)
+                entries += [Entry(page)] if page else []
+                listed += below
+            elif unshown(child):
+                listed.append(child)
             else:
                 leaf = article(library, child, named[child["module"]], rev, links, keys)
                 leaves[child["module"]] = leaf
                 targets[f"{library.id}-{child['module']}"] = leaf
                 stats["articles"] += 1
                 entries.append(Entry(leaf))
+        if not entries:
+            return None, listed
         container = Container(escape(name), slugify(name), entries)
         inside = every(node)
         tally = counts(inside)
@@ -419,19 +591,29 @@ def chapter(library: Library, data: dict) -> tuple[Built, dict[str, str]]:
                 ", none of which declares anything public by name." if len(inside) > 1 else
                 ", which declares nothing public by name.")
         lines = [f"{plural(len(inside), 'module')} under `{path}/`{held}"]
+        if listed:
+            lines.append(listed_line(listed))
+            stats["listed"] += len(listed)
         if path in data["folders"]:
-            lines.append(f"Its [README]({blob(library, rev, path + '/README.md')}) opens:\n\n{quote(pinned(library, data['folders'][path], rev))}")
+            lines.append(f"Its [README]({blob(library, rev, path + '/README.md')}) opens:\n\n{quote(pinned(library, data['folders'][path], rev, path))}")
         if part:
             lines.append(credit(library, rev))
         container.prose = "\n\n".join(lines)
         targets[f"{library.id}-{path}"] = container
         stats["folders"] += 1
-        return chunk(container, budget=library.page_budget)
+        return chunk(container, budget=library.page_budget), []
 
     top = tree(modules)
-    parts = [Entry(build(name, child, f"{library.root}/{name}", True)) for name, child in sorted(top["folders"].items())]
+    parts, listed = [], []
+    for name, child in sorted(top["folders"].items()):
+        page, below = build(name, child, f"{library.root}/{name}", True)
+        parts += [Entry(page)] if page else []
+        listed += below
     stats["parts"] = len(parts)
     for module in top["modules"]:
+        if unshown(module):
+            listed.append(module)
+            continue
         leaf = article(library, module, named[module["module"]], rev, links, keys)
         leaves[module["module"]] = leaf
         targets[f"{library.id}-{module['module']}"] = leaf
@@ -440,9 +622,18 @@ def chapter(library: Library, data: dict) -> tuple[Built, dict[str, str]]:
     edges(library, data, leaves, stats)
     stats.update(counts(modules))
     stats["empty"] = sum(1 for module in modules if not declarations(module))
-    root = Container(library.title, library.id, parts)
-    root.prose = library.intro(data, stats)
-    return Built(root, targets, {}, dict(stats), Counter()), dict(sorted(links.items()))
+    if listed:
+        stats["listed"] += len(listed)
+    if unbuilt:
+        stats["unbuilt"] = len(unbuilt)
+    # A root with more parts and articles than a page lists is nested, as a folder's page is.
+    root = chunk(Container(library.title, library.id, parts))
+    root.prose = (library.intro(data, stats) + (f"\n\n{listed_line(listed)}" if listed else "")
+                  + (f"\n\n{unbuilt_line(library, unbuilt, rev)}" if unbuilt else ""))
+    # A declaration ledger for each article, a module catalog; a listed module has no article, so no ledger.
+    ledgers = {ledger_path(library, module): ledger(library, module, rev, private, missing)
+               for module in data["modules"] if module["module"] in leaves}
+    return Built(root, targets, {}, dict(stats), Counter(), ledgers), dict(sorted(links.items()))
 
 
 def edges(library: Library, data: dict, leaves: dict[str, Leaf], stats: Counter) -> None:
@@ -462,12 +653,17 @@ def edges(library: Library, data: dict, leaves: dict[str, Leaf], stats: Counter)
     reach_all: dict[str, set[str]] = {}
 
     def walk_from(module: str) -> None:
-        # Modules import one another without cycles, so a depth-first walk ends; each set is its node's closure.
+        # Modules import one another without cycles, so a depth-first walk ends; each set is its node's closure. A
+        # node met again before its closure is done is on a cycle, which a dump that reads imports cannot give.
         stack = [(module, False)]
+        open_nodes: set[str] = set()
         while stack:
             node, done = stack.pop()
             if node in reach_all:
                 continue
+            if not done and node in open_nodes:
+                raise ValueError(f"data/{library.id}/deps.json has a cycle of module dependencies through {node}")
+            open_nodes.add(node)
             if done:
                 reach_stmt[node] = set().union(*(reach_stmt[child] | {child} for child in stmt[node]))
                 reach_all[node] = set().union(*(reach_all[child] | {child} for child in stmt[node] | proof[node]))

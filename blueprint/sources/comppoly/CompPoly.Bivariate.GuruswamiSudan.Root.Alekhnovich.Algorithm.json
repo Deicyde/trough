@@ -1,0 +1,26 @@
+{
+ "schema": "trough-ledger/v1",
+ "library": "CompPoly",
+ "repo": "Verified-zkEVM/CompPoly",
+ "rev": "afb9b1363984a70f10e24bd597f6ff40ebc8afbb",
+ "module": "CompPoly.Bivariate.GuruswamiSudan.Root.Alekhnovich.Algorithm",
+ "file": "CompPoly/Bivariate/GuruswamiSudan/Root/Alekhnovich/Algorithm.lean",
+ "public": [
+  {"name": "CompPoly.GuruswamiSudan.RootPrefix", "kind": "structure", "line": 34},
+  {"name": "CompPoly.GuruswamiSudan.alekhnovichPrecisionBound", "kind": "def", "line": 43},
+  {"name": "CompPoly.GuruswamiSudan.AlekhnovichResidual", "kind": "structure", "line": 51},
+  {"name": "CompPoly.GuruswamiSudan.shiftedResidualUpTo", "kind": "def", "line": 57},
+  {"name": "CompPoly.GuruswamiSudan.composeRootPrefixes", "kind": "def", "line": 71},
+  {"name": "CompPoly.GuruswamiSudan.normalizeAlekhnovichInput", "kind": "def", "line": 80},
+  {"name": "CompPoly.GuruswamiSudan.alekhnovichRootPrefixesWithFuel", "kind": "def", "line": 92},
+  {"name": "CompPoly.GuruswamiSudan.alekhnovichRootPrefixes", "kind": "def", "line": 128},
+  {"name": "CompPoly.GuruswamiSudan.finishAlekhnovichPrefixWithAlekhnovichWithFuel", "kind": "def", "line": 147},
+  {"name": "CompPoly.GuruswamiSudan.alekhnovichRootCandidatesWithFuel", "kind": "def", "line": 168},
+  {"name": "CompPoly.GuruswamiSudan.finishAlekhnovichPrefixWithAlekhnovich", "kind": "def", "line": 192},
+  {"name": "CompPoly.GuruswamiSudan.alekhnovichRootCandidates", "kind": "def", "line": 199},
+  {"name": "CompPoly.GuruswamiSudan.alekhnovichRootsYDegreeLt", "kind": "def", "line": 208}
+ ],
+ "private": [],
+ "missing": [],
+ "unread": "Unnamed instances, the names an `alias ⟨…⟩` command gives, and the names Lean generates for a declaration (constructors, recursors, derived instances) are not read from the source, so they are not listed."
+}

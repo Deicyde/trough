@@ -1,0 +1,29 @@
+{
+ "schema": "trough-ledger/v1",
+ "library": "CompPoly",
+ "repo": "Verified-zkEVM/CompPoly",
+ "rev": "afb9b1363984a70f10e24bd597f6ff40ebc8afbb",
+ "module": "CompPoly.Fields.KoalaBear.Ext6.SexticIrreducible",
+ "file": "CompPoly/Fields/KoalaBear/Ext6/SexticIrreducible.lean",
+ "public": [
+  {"name": "KoalaBear.sexticPoly", "kind": "def", "line": 55},
+  {"name": "KoalaBear.sexticL", "kind": "def", "line": 59},
+  {"name": "KoalaBear.toPoly_sexticL", "kind": "theorem", "line": 62},
+  {"name": "KoalaBear.sexticPoly_natDegree", "kind": "theorem", "line": 68},
+  {"name": "KoalaBear.sexticPoly_ne_zero", "kind": "theorem", "line": 72},
+  {"name": "KoalaBear.sextic_trace_chain", "kind": "theorem", "line": 88},
+  {"name": "KoalaBear.sextic_trace_exp", "kind": "theorem", "line": 93},
+  {"name": "KoalaBear.sextic_cop3_chain", "kind": "theorem", "line": 99},
+  {"name": "KoalaBear.sextic_cop3_exp", "kind": "theorem", "line": 104},
+  {"name": "KoalaBear.sextic_cop3_w_check", "kind": "theorem", "line": 107},
+  {"name": "KoalaBear.sextic_cop3_bezout_check", "kind": "theorem", "line": 111},
+  {"name": "KoalaBear.sextic_cop2_chain", "kind": "theorem", "line": 120},
+  {"name": "KoalaBear.sextic_cop2_exp", "kind": "theorem", "line": 125},
+  {"name": "KoalaBear.sextic_cop2_w_check", "kind": "theorem", "line": 128},
+  {"name": "KoalaBear.sextic_cop2_bezout_check", "kind": "theorem", "line": 132},
+  {"name": "KoalaBear.sexticPoly_irreducible", "kind": "theorem", "line": 139}
+ ],
+ "private": [],
+ "missing": [],
+ "unread": "Unnamed instances, the names an `alias ⟨…⟩` command gives, and the names Lean generates for a declaration (constructors, recursors, derived instances) are not read from the source, so they are not listed."
+}

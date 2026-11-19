@@ -1,0 +1,29 @@
+{
+ "schema": "trough-ledger/v1",
+ "library": "CompPoly",
+ "repo": "Verified-zkEVM/CompPoly",
+ "rev": "afb9b1363984a70f10e24bd597f6ff40ebc8afbb",
+ "module": "CompPoly.Univariate.NTTFast.Coset",
+ "file": "CompPoly/Univariate/NTTFast/Coset.lean",
+ "public": [
+  {"name": "CompPoly.CPolynomial.NTTFast.powersAux", "kind": "def", "line": 45},
+  {"name": "CompPoly.CPolynomial.NTTFast.powers", "kind": "def", "line": 50},
+  {"name": "CompPoly.CPolynomial.NTTFast.powers_eq_ofFn", "kind": "theorem", "line": 62},
+  {"name": "CompPoly.CPolynomial.NTTFast.scaleWith", "kind": "def", "line": 68},
+  {"name": "CompPoly.CPolynomial.NTTFast.scaleWith_powers", "kind": "theorem", "line": 72},
+  {"name": "CompPoly.CPolynomial.NTTFast.CosetPlan", "kind": "structure", "line": 80},
+  {"name": "CompPoly.CPolynomial.NTTFast.CosetPlan.ofPlan", "kind": "def", "line": 89},
+  {"name": "CompPoly.CPolynomial.NTTFast.CosetPlan.WellFormed", "kind": "def", "line": 96},
+  {"name": "CompPoly.CPolynomial.NTTFast.CosetPlan.ofPlan_wellFormed", "kind": "theorem", "line": 100},
+  {"name": "CompPoly.CPolynomial.NTTFast.CosetPlan.forwardImpl", "kind": "def", "line": 105},
+  {"name": "CompPoly.CPolynomial.NTTFast.CosetPlan.inverseImpl", "kind": "def", "line": 109},
+  {"name": "CompPoly.CPolynomial.NTTFast.CosetPlan.forwardImpl_eq_bitRevPermute_evalOnCoset", "kind": "theorem", "line": 113},
+  {"name": "CompPoly.CPolynomial.NTTFast.CosetPlan.inverseImpl_correct", "kind": "theorem", "line": 127},
+  {"name": "CompPoly.CPolynomial.NTTFast.CosetPlan.interpolate", "kind": "def", "line": 136},
+  {"name": "CompPoly.CPolynomial.NTTFast.CosetPlan.interpolate_eq_coset_interpolate", "kind": "theorem", "line": 142},
+  {"name": "CompPoly.CPolynomial.NTTFast.CosetPlan.interpolate_eq_interpolate", "kind": "theorem", "line": 149}
+ ],
+ "private": [],
+ "missing": [],
+ "unread": "Unnamed instances, the names an `alias ⟨…⟩` command gives, and the names Lean generates for a declaration (constructors, recursors, derived instances) are not read from the source, so they are not listed."
+}

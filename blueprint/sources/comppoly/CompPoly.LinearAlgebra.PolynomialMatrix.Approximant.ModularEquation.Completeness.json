@@ -1,0 +1,20 @@
+{
+ "schema": "trough-ledger/v1",
+ "library": "CompPoly",
+ "repo": "Verified-zkEVM/CompPoly",
+ "rev": "afb9b1363984a70f10e24bd597f6ff40ebc8afbb",
+ "module": "CompPoly.LinearAlgebra.PolynomialMatrix.Approximant.ModularEquation.Completeness",
+ "file": "CompPoly/LinearAlgebra/PolynomialMatrix/Approximant/ModularEquation/Completeness.lean",
+ "public": [
+  {"name": "CompPoly.PolynomialMatrix.Approximant.me_getD_mem_toList", "kind": "theorem", "line": 77},
+  {"name": "CompPoly.PolynomialMatrix.Approximant.me_rowShiftedDegree_isSome", "kind": "theorem", "line": 183},
+  {"name": "CompPoly.PolynomialMatrix.Approximant.me_filterModularSolutionRows_subset", "kind": "theorem", "line": 414},
+  {"name": "CompPoly.PolynomialMatrix.Approximant.me_principalSolutionRows_width", "kind": "theorem", "line": 462},
+  {"name": "CompPoly.PolynomialMatrix.Approximant.me_adaptiveBasis_width", "kind": "theorem", "line": 537},
+  {"name": "CompPoly.PolynomialMatrix.Approximant.me_prodRow_facts", "kind": "theorem", "line": 551},
+  {"name": "CompPoly.PolynomialMatrix.Approximant.me_verification_dominates", "kind": "theorem", "line": 614}
+ ],
+ "private": [],
+ "missing": [],
+ "unread": "Unnamed instances, the names an `alias ⟨…⟩` command gives, and the names Lean generates for a declaration (constructors, recursors, derived instances) are not read from the source, so they are not listed."
+}

@@ -65,3 +65,4 @@ lemma mapVal_mem {x : α} {σ : β} (mem : σ ∈ Γ.dlookup x) (f : β → β) 
 ## Sources
 
 - [Cslib/Languages/LambdaCalculus/LocallyNameless/Context.lean at 86d560b6](https://github.com/leanprover/cslib/blob/86d560b6cbb379bd82512424cbcd2a915a1565e7/Cslib/Languages/LambdaCalculus/LocallyNameless/Context.lean)
+- [Declaration ledger](../../../../../sources/cslib/Cslib.Languages.LambdaCalculus.LocallyNameless.Context.json)

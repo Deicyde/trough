@@ -1,0 +1,23 @@
+{
+ "schema": "trough-ledger/v1",
+ "library": "CompPoly",
+ "repo": "Verified-zkEVM/CompPoly",
+ "rev": "afb9b1363984a70f10e24bd597f6ff40ebc8afbb",
+ "module": "CompPoly.Univariate.NTT.Interpolation",
+ "file": "CompPoly/Univariate/NTT/Interpolation.lean",
+ "public": [
+  {"name": "CompPoly.CPolynomial.NTT.Inverse.inverseSpec_eval_node_eq", "kind": "theorem", "line": 107},
+  {"name": "CompPoly.CPolynomial.NTT.Inverse.inverseSpec_evalOnDomain_eq", "kind": "theorem", "line": 119},
+  {"name": "CompPoly.CPolynomial.NTT.Inverse.inverseSpec_interpolatePow_eq", "kind": "theorem", "line": 128},
+  {"name": "CompPoly.CPolynomial.NTT.Inverse.inverseImpl_interpolatePow_eq", "kind": "theorem", "line": 187},
+  {"name": "CompPoly.CPolynomial.NTT.Inverse.inverseImpl_eval_node_eq", "kind": "theorem", "line": 195},
+  {"name": "CompPoly.CPolynomial.NTT.Inverse.inverseImpl_evalOnDomain_eq", "kind": "theorem", "line": 201},
+  {"name": "CompPoly.CPolynomial.NTT.loadNaturalVector_toArray", "kind": "theorem", "line": 210},
+  {"name": "CompPoly.CPolynomial.NTT.interpolate", "kind": "def", "line": 220},
+  {"name": "CompPoly.CPolynomial.NTT.interpolate_eq_interpolatePow", "kind": "theorem", "line": 226},
+  {"name": "CompPoly.CPolynomial.NTT.eval_interpolate_node", "kind": "theorem", "line": 233}
+ ],
+ "private": [],
+ "missing": [],
+ "unread": "Unnamed instances, the names an `alias ⟨…⟩` command gives, and the names Lean generates for a declaration (constructors, recursors, derived instances) are not read from the source, so they are not listed."
+}

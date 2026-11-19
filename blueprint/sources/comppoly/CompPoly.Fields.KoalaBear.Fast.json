@@ -1,0 +1,20 @@
+{
+ "schema": "trough-ledger/v1",
+ "library": "CompPoly",
+ "repo": "Verified-zkEVM/CompPoly",
+ "rev": "afb9b1363984a70f10e24bd597f6ff40ebc8afbb",
+ "module": "CompPoly.Fields.KoalaBear.Fast",
+ "file": "CompPoly/Fields/KoalaBear/Fast.lean",
+ "public": [
+  {"name": "KoalaBear.Fast.instMont32Field", "kind": "instance", "line": 29},
+  {"name": "KoalaBear.Fast.Field", "kind": "abbrev", "line": 38},
+  {"name": "KoalaBear.Fast.ofUInt32", "kind": "def", "line": 44},
+  {"name": "KoalaBear.Fast.ofField", "kind": "def", "line": 49},
+  {"name": "KoalaBear.Fast.ringEquiv", "kind": "def", "line": 55},
+  {"name": "KoalaBear.Fast.twoAdicGenerators", "kind": "def", "line": 61},
+  {"name": "KoalaBear.Fast.twoAdicGenerators_eq_map", "kind": "theorem", "line": 91}
+ ],
+ "private": [],
+ "missing": [],
+ "unread": "Unnamed instances, the names an `alias ⟨…⟩` command gives, and the names Lean generates for a declaration (constructors, recursors, derived instances) are not read from the source, so they are not listed."
+}
