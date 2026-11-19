@@ -31,4 +31,4 @@ Formalized in Tau Ceti as [`TauCeti.MeasureTheory.lintegral_enorm_condExp_rpow_l
 ## Sources
 
 - [Tau Ceti documentation: `TauCeti.MeasureTheory.lintegral_enorm_condExp_rpow_le`](https://taucetiproject.org/docs/TauCeti/MeasureTheory/Function/ConditionalExpectation.html#TauCeti.MeasureTheory.lintegral_enorm_condExp_rpow_le)
-- [Source of `TauCeti.MeasureTheory.lintegral_enorm_condExp_rpow_le` in TauCeti/MeasureTheory/Function/ConditionalExpectation.lean](https://github.com/TauCetiProject/TauCeti/blob/a6027b1d24fcb935c53bd5b50d11b40991cda418/TauCeti/MeasureTheory/Function/ConditionalExpectation.lean#L283)
+- [Source of `TauCeti.MeasureTheory.lintegral_enorm_condExp_rpow_le` in TauCeti/MeasureTheory/Function/ConditionalExpectation.lean](https://github.com/TauCetiProject/TauCeti/blob/cd41bffcb343151b3e58c89392e206b11fe78c1c/TauCeti/MeasureTheory/Function/ConditionalExpectation.lean#L283)

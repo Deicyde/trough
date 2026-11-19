@@ -1,7 +1,7 @@
 ---
 declaration: section
 origin: cited
-lean: OAI.Percolation.BenjaminiSchramm.full_main, OAI.Percolation.BenjaminiSchramm.cayley_main, OAI.Percolation.BenjaminiSchramm.critical_laws, OAI.Percolation.arbitrary_cayley
+lean: OAI.Percolation.BenjaminiSchramm.full_main, OAI.Percolation.BenjaminiSchramm.critical_laws, OAI.Percolation.arbitrary_cayley, OAI.Percolation.BenjaminiSchramm.cayley_main
 statement: formalized
 ---
 

@@ -30,12 +30,14 @@ TauCeti.LSeries.integral_right_semicircle_add_integral_newmanDetour {R δ : ℝ}
 
 ## Depends on
 
-- [Newman's left detour](newmans-left-detour.md)
+Its statement uses no other declaration mapped here.
 
 ## Proof depends on
 
-- [Holomorphic functions have primitives on a star-shaped set](holomorphic-functions-have-primitives-on-a-star.md)
-- [Truncated Laplace transforms are entire](truncated-laplace-transforms-are-entire.md)
+- [The converse of Cauchy's theorem](../../../analysis/part-03/contour/the-converse-of-cauchys-theorem.md)
+- [Generalized winding number (HW Def 2.1)](../../../analysis/part-01/contour-integration-and-the-hungerbuhler-wasem-g/generalized-winding-number-hw-def-2-1.md)
+- [The homology Cauchy theorem](../../../analysis/part-01/contour-integration-and-the-hungerbuhler-wasem-g/the-homology-cauchy-theorem.md)
+- [Piecewise `C¹` on the interval between `a` and `b`](../../../analysis/part-01/contour-integration-and-the-hungerbuhler-wasem-g/piecewise-c1-on-the-interval-between-a-and-b.md)
 
 ## Lean
 
@@ -57,4 +59,4 @@ TauCeti.LSeries.circleIntegral_intervalIntegral_mul_kernel {f : ℝ → ℂ} {T 
 ## Sources
 
 - [Tau Ceti documentation: `TauCeti.LSeries.integral_right_semicircle_add_integral_newmanDetour`](https://taucetiproject.org/docs/TauCeti/NumberTheory/LSeries/Newman/Detour.html#TauCeti.LSeries.integral_right_semicircle_add_integral_newmanDetour)
-- [Source of `TauCeti.LSeries.integral_right_semicircle_add_integral_newmanDetour` in TauCeti/NumberTheory/LSeries/Newman/Detour.lean](https://github.com/TauCetiProject/TauCeti/blob/a6027b1d24fcb935c53bd5b50d11b40991cda418/TauCeti/NumberTheory/LSeries/Newman/Detour.lean#L253)
+- [Source of `TauCeti.LSeries.integral_right_semicircle_add_integral_newmanDetour` in TauCeti/NumberTheory/LSeries/Newman/Detour.lean](https://github.com/TauCetiProject/TauCeti/blob/cd41bffcb343151b3e58c89392e206b11fe78c1c/TauCeti/NumberTheory/LSeries/Newman/Detour.lean#L252)

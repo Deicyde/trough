@@ -33,8 +33,7 @@ Its statement uses no other declaration mapped here.
 - [Hensel's lemma for the norm](../../../ring-theory/part-02/other-results/part-01/hensels-lemma-for-the-norm.md)
 - [The local square theorem bounds the defect of a unit](../local-field/the-local-square-theorem-bounds-the-defect-of-a.md)
 - [The splitting criterion for quaternion algebras](the-splitting-criterion-for-quaternion-algebras.md)
-- [TauCeti.algebraicExtensionNormedField](../../part-01/local-fields-and-ramification/tauceti-algebraicextensionnormedfield.md)
-- [TauCeti.multiplicativeSquareClassEquiv](../../../linear-algebra/orthogonal-and-spin-groups/tauceti-multiplicativesquareclassequiv.md)
+- [TauCeti.multiplicativeSquareClassEquiv](../../../linear-algebra/part-01/orthogonal-and-spin-groups/tauceti-multiplicativesquareclassequiv.md)
 
 ## Lean
 
@@ -43,5 +42,5 @@ Formalized in Tau Ceti as [`TauCeti.unitFiltration_le_quadraticNormSubgroup_iff`
 ## Sources
 
 - [Tau Ceti documentation: `TauCeti.unitFiltration_le_quadraticNormSubgroup_iff`](https://taucetiproject.org/docs/TauCeti/NumberTheory/LocalField/QuadraticForm/Norm/Conductor.html#TauCeti.unitFiltration_le_quadraticNormSubgroup_iff)
-- [Source of `TauCeti.unitFiltration_le_quadraticNormSubgroup_iff` in TauCeti/NumberTheory/LocalField/QuadraticForm/Norm/Conductor.lean](https://github.com/TauCetiProject/TauCeti/blob/a6027b1d24fcb935c53bd5b50d11b40991cda418/TauCeti/NumberTheory/LocalField/QuadraticForm/Norm/Conductor.lean#L68)
-- [Tau Ceti roadmap status: Quadratic forms and cohomological invariants](https://github.com/TauCetiProject/TauCetiRoadmap/blob/9f7c032adaf1b838e8183d63ff3cfa886d061cb3/TauCetiRoadmap/QuadraticFormInvariants/STATUS.md)
+- [Source of `TauCeti.unitFiltration_le_quadraticNormSubgroup_iff` in TauCeti/NumberTheory/LocalField/QuadraticForm/Norm/Conductor.lean](https://github.com/TauCetiProject/TauCeti/blob/cd41bffcb343151b3e58c89392e206b11fe78c1c/TauCeti/NumberTheory/LocalField/QuadraticForm/Norm/Conductor.lean#L68)
+- [Tau Ceti roadmap status: Quadratic forms and cohomological invariants](https://github.com/TauCetiProject/TauCetiRoadmap/blob/612845ab80fb9c2b9bee724a156756ee78031591/TauCetiRoadmap/QuadraticFormInvariants/STATUS.md)

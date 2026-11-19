@@ -36,5 +36,5 @@ Formalized in Tau Ceti as [`ZLattice.two_pow_div_factorial_mul_covolume_le_prod_
 ## Sources
 
 - [Tau Ceti documentation: `ZLattice.two_pow_div_factorial_mul_covolume_le_prod_successiveMin_mul_measureReal`](https://taucetiproject.org/docs/TauCeti/NumberTheory/GeometryOfNumbers/MinkowskiSecond.html#ZLattice.two_pow_div_factorial_mul_covolume_le_prod_successiveMin_mul_measureReal)
-- [Source of `ZLattice.two_pow_div_factorial_mul_covolume_le_prod_successiveMin_mul_measureReal` in TauCeti/NumberTheory/GeometryOfNumbers/MinkowskiSecond.lean](https://github.com/TauCetiProject/TauCeti/blob/a6027b1d24fcb935c53bd5b50d11b40991cda418/TauCeti/NumberTheory/GeometryOfNumbers/MinkowskiSecond.lean#L755)
-- [Tau Ceti roadmap status: Successive minima and Minkowski's theorems](https://github.com/TauCetiProject/TauCetiRoadmap/blob/9f7c032adaf1b838e8183d63ff3cfa886d061cb3/TauCetiRoadmap/SuccessiveMinima/STATUS.md)
+- [Source of `ZLattice.two_pow_div_factorial_mul_covolume_le_prod_successiveMin_mul_measureReal` in TauCeti/NumberTheory/GeometryOfNumbers/MinkowskiSecond.lean](https://github.com/TauCetiProject/TauCeti/blob/cd41bffcb343151b3e58c89392e206b11fe78c1c/TauCeti/NumberTheory/GeometryOfNumbers/MinkowskiSecond.lean#L754)
+- [Tau Ceti roadmap status: Successive minima and Minkowski's theorems](https://github.com/TauCetiProject/TauCetiRoadmap/blob/612845ab80fb9c2b9bee724a156756ee78031591/TauCetiRoadmap/SuccessiveMinima/STATUS.md)

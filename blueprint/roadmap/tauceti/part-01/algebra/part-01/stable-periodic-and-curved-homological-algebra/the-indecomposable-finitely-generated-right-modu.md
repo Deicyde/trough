@@ -37,5 +37,5 @@ Formalized in Tau Ceti as [`TauCeti.isIndecomposableModule_iff_exists_linearEqui
 ## Sources
 
 - [Tau Ceti documentation: `TauCeti.isIndecomposableModule_iff_exists_linearEquiv_quotient_span_op_root_X_pow_pow`](https://taucetiproject.org/docs/TauCeti/RingTheory/Polynomial/Truncated/Module.html#TauCeti.isIndecomposableModule_iff_exists_linearEquiv_quotient_span_op_root_X_pow_pow)
-- [Source of `TauCeti.isIndecomposableModule_iff_exists_linearEquiv_quotient_span_op_root_X_pow_pow` in TauCeti/RingTheory/Polynomial/Truncated/Module.lean](https://github.com/TauCetiProject/TauCeti/blob/a6027b1d24fcb935c53bd5b50d11b40991cda418/TauCeti/RingTheory/Polynomial/Truncated/Module.lean#L193)
-- [Tau Ceti roadmap status: Stable, periodic, and curved homological algebra](https://github.com/TauCetiProject/TauCetiRoadmap/blob/9f7c032adaf1b838e8183d63ff3cfa886d061cb3/TauCetiRoadmap/StablePeriodicCurved/STATUS.md)
+- [Source of `TauCeti.isIndecomposableModule_iff_exists_linearEquiv_quotient_span_op_root_X_pow_pow` in TauCeti/RingTheory/Polynomial/Truncated/Module.lean](https://github.com/TauCetiProject/TauCeti/blob/cd41bffcb343151b3e58c89392e206b11fe78c1c/TauCeti/RingTheory/Polynomial/Truncated/Module.lean#L193)
+- [Tau Ceti roadmap status: Stable, periodic, and curved homological algebra](https://github.com/TauCetiProject/TauCetiRoadmap/blob/612845ab80fb9c2b9bee724a156756ee78031591/TauCetiRoadmap/StablePeriodicCurved/STATUS.md)

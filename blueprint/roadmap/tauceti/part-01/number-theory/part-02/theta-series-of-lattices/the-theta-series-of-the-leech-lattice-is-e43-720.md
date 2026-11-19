@@ -17,18 +17,16 @@ TauCeti.IntegralLattice.thetaSeries_realModel_leechLattice_eq_E₄_cube_sub_mul_
 
 ## Depends on
 
-- [TauCeti.ConstructionA.lattice](../../../linear-algebra/algebraic-codes-and-code-lattice-constructions/tauceti-constructiona-lattice.md)
+- [TauCeti.ConstructionA.lattice](../../../linear-algebra/part-01/algebraic-codes-and-code-lattice-constructions/tauceti-constructiona-lattice.md)
 - [TauCeti.FiniteQuadraticModule](../../part-01/integral-quadratic-forms-and-lattices/tauceti-finitequadraticmodule.md)
-- [TauCeti.IntegralLattice](../../../linear-algebra/integral-lattices-discriminant-forms-and-overlat/tauceti-integrallattice.md)
-- [TauCeti.IntegralLattice.discriminantQuadraticModule](../../../linear-algebra/integral-lattices-discriminant-forms-and-overlat/tauceti-integrallattice-discriminantquadraticmod.md)
-- [TauCeti.IntegralLattice.realModel](tauceti-integrallattice-realmodel.md)
+- [TauCeti.IntegralLattice](../../../linear-algebra/part-01/integral-lattices-discriminant-forms-and-overlat/tauceti-integrallattice.md)
+- [TauCeti.IntegralLattice.discriminantQuadraticModule](../../../linear-algebra/part-01/integral-lattices-discriminant-forms-and-overlat/tauceti-integrallattice-discriminantquadraticmod.md)
 
 ## Proof depends on
 
-- [Even overlattices correspond to quadratic-isotropic subgroups](../../../linear-algebra/integral-lattices-discriminant-forms-and-overlat/even-overlattices-correspond-to-quadratic-isotro.md)
-- [The Leech lattice has no roots](../../../linear-algebra/niemeier-glue-data-and-explicit-leech-constructi/the-leech-lattice-has-no-roots.md)
+- [Even overlattices correspond to quadratic-isotropic subgroups](../../../linear-algebra/part-01/integral-lattices-discriminant-forms-and-overlat/even-overlattices-correspond-to-quadratic-isotro.md)
+- [The Leech lattice has no roots](../../../linear-algebra/part-01/niemeier-glue-data-and-explicit-leech-constructi/the-leech-lattice-has-no-roots.md)
 - [The theta series of an even unimodular lattice is a level-one modular form](the-theta-series-of-an-even-unimodular-lattice-i.md)
-- [ZLattice.ratModel](zlattice-ratmodel.md)
 
 ## Lean
 
@@ -37,5 +35,5 @@ Formalized in Tau Ceti as [`TauCeti.IntegralLattice.thetaSeries_realModel_leechL
 ## Sources
 
 - [Tau Ceti documentation: `TauCeti.IntegralLattice.thetaSeries_realModel_leechLattice_eq_E₄_cube_sub_mul_discriminant`](https://taucetiproject.org/docs/TauCeti/NumberTheory/ModularForms/ThetaSeries/Leech.html#TauCeti.IntegralLattice.thetaSeries_realModel_leechLattice_eq_E%E2%82%84_cube_sub_mul_discriminant)
-- [Source of `TauCeti.IntegralLattice.thetaSeries_realModel_leechLattice_eq_E₄_cube_sub_mul_discriminant` in TauCeti/NumberTheory/ModularForms/ThetaSeries/Leech.lean](https://github.com/TauCetiProject/TauCeti/blob/a6027b1d24fcb935c53bd5b50d11b40991cda418/TauCeti/NumberTheory/ModularForms/ThetaSeries/Leech.lean#L79)
-- [Tau Ceti roadmap status: Theta series of lattices](https://github.com/TauCetiProject/TauCetiRoadmap/blob/9f7c032adaf1b838e8183d63ff3cfa886d061cb3/TauCetiRoadmap/ThetaSeries/STATUS.md)
+- [Source of `TauCeti.IntegralLattice.thetaSeries_realModel_leechLattice_eq_E₄_cube_sub_mul_discriminant` in TauCeti/NumberTheory/ModularForms/ThetaSeries/Leech.lean](https://github.com/TauCetiProject/TauCeti/blob/cd41bffcb343151b3e58c89392e206b11fe78c1c/TauCeti/NumberTheory/ModularForms/ThetaSeries/Leech.lean#L79)
+- [Tau Ceti roadmap status: Theta series of lattices](https://github.com/TauCetiProject/TauCetiRoadmap/blob/612845ab80fb9c2b9bee724a156756ee78031591/TauCetiRoadmap/ThetaSeries/STATUS.md)

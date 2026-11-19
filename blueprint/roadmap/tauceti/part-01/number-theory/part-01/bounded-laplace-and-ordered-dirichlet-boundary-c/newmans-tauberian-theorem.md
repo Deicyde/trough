@@ -1,7 +1,7 @@
 ---
 declaration: theorem
 origin: cited
-lean: TauCeti.LSeries.newmanLaplace_tendsto_integral, TauCeti.LSeries.newmanLaplace_tendsto_integral_of_analyticAt
+lean: TauCeti.LSeries.newmanLaplace_tendsto_integral
 statement: formalized
 proof: formalized
 ---
@@ -28,27 +28,14 @@ Its statement uses no other declaration mapped here.
 
 ## Proof depends on
 
-- [Holomorphy of the Laplace transform](holomorphy-of-the-laplace-transform.md)
 - [Newman's estimate at a fixed radius](newmans-estimate-at-a-fixed-radius.md)
 
 ## Lean
 
 Formalized in Tau Ceti as [`TauCeti.LSeries.newmanLaplace_tendsto_integral`](https://taucetiproject.org/docs/TauCeti/NumberTheory/LSeries/Newman/Tauberian.html#TauCeti.LSeries.newmanLaplace_tendsto_integral).
 
-## Other forms
-
-**Newman's Tauberian theorem, with a pointwise continuation hypothesis.** Formalized in Tau Ceti as [`TauCeti.LSeries.newmanLaplace_tendsto_integral_of_analyticAt`](https://taucetiproject.org/docs/TauCeti/NumberTheory/LSeries/Newman/Tauberian.html#TauCeti.LSeries.newmanLaplace_tendsto_integral_of_analyticAt).
-
-```lean
-TauCeti.LSeries.newmanLaplace_tendsto_integral_of_analyticAt {f : ℝ → ℂ} {G : ℂ → ℂ} {M : ℝ}
-  (hf : MeasureTheory.AEStronglyMeasurable f (MeasureTheory.volume.restrict (Set.Ici 0)))
-  (hbound : ∀ t ∈ Set.Ici 0, ‖f t‖ ≤ M) (hG : ∀ (z : ℂ), z.re = 0 → AnalyticAt ℂ G z)
-  (hLaplace : ∀ (z : ℂ), 0 < z.re → G z = ∫ (t : ℝ) in Set.Ici 0, f t * Complex.exp (-z * ↑t)) :
-  Filter.Tendsto (fun T => ∫ (t : ℝ) in 0..T, f t) Filter.atTop (nhds (G 0))
-```
-
 ## Sources
 
 - [Tau Ceti documentation: `TauCeti.LSeries.newmanLaplace_tendsto_integral`](https://taucetiproject.org/docs/TauCeti/NumberTheory/LSeries/Newman/Tauberian.html#TauCeti.LSeries.newmanLaplace_tendsto_integral)
-- [Source of `TauCeti.LSeries.newmanLaplace_tendsto_integral` in TauCeti/NumberTheory/LSeries/Newman/Tauberian.lean](https://github.com/TauCetiProject/TauCeti/blob/a6027b1d24fcb935c53bd5b50d11b40991cda418/TauCeti/NumberTheory/LSeries/Newman/Tauberian.lean#L174)
-- [Tau Ceti roadmap status: Bounded Laplace and ordered Dirichlet boundary convergence](https://github.com/TauCetiProject/TauCetiRoadmap/blob/9f7c032adaf1b838e8183d63ff3cfa886d061cb3/TauCetiRoadmap/TauberianBoundaryConvergence/STATUS.md)
+- [Source of `TauCeti.LSeries.newmanLaplace_tendsto_integral` in TauCeti/NumberTheory/LSeries/Newman/Tauberian.lean](https://github.com/TauCetiProject/TauCeti/blob/cd41bffcb343151b3e58c89392e206b11fe78c1c/TauCeti/NumberTheory/LSeries/Newman/Tauberian.lean#L174)
+- [Tau Ceti roadmap status: Bounded Laplace and ordered Dirichlet boundary convergence](https://github.com/TauCetiProject/TauCetiRoadmap/blob/612845ab80fb9c2b9bee724a156756ee78031591/TauCetiRoadmap/TauberianBoundaryConvergence/STATUS.md)

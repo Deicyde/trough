@@ -38,4 +38,4 @@ Formalized in Tau Ceti as [`TauCeti.mem_virtualCharacters_iff_forall_comp_subtyp
 ## Sources
 
 - [Tau Ceti documentation: `TauCeti.mem_virtualCharacters_iff_forall_comp_subtype`](https://taucetiproject.org/docs/TauCeti/RepresentationTheory/Induction/Ideal.html#TauCeti.mem_virtualCharacters_iff_forall_comp_subtype)
-- [Source of `TauCeti.mem_virtualCharacters_iff_forall_comp_subtype` in TauCeti/RepresentationTheory/Induction/Ideal.lean](https://github.com/TauCetiProject/TauCeti/blob/a6027b1d24fcb935c53bd5b50d11b40991cda418/TauCeti/RepresentationTheory/Induction/Ideal.lean#L413)
+- [Source of `TauCeti.mem_virtualCharacters_iff_forall_comp_subtype` in TauCeti/RepresentationTheory/Induction/Ideal.lean](https://github.com/TauCetiProject/TauCeti/blob/cd41bffcb343151b3e58c89392e206b11fe78c1c/TauCeti/RepresentationTheory/Induction/Ideal.lean#L413)

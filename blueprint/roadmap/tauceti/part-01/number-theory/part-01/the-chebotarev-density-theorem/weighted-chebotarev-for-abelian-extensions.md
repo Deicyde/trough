@@ -32,7 +32,7 @@ Its statement uses no other declaration mapped here.
 - [The continued L-function of a unitary weight, defined by partial summation](../arithmetic-dirichlet-series-and-tauberian-method/the-continued-l-function-of-a-unitary-weight-def.md)
 - [The crossing constant](the-crossing-constant.md)
 - [The Dedekind zeta function has no zeros on the line `Re s = 1` away from its pole](../arithmetic-dirichlet-series-and-tauberian-method/the-dedekind-zeta-function-has-no-zeros-on-the-l.md)
-- [Euler's product formula for the elements of order divisible by `f`](../../../group-theory/other-results/eulers-product-formula-for-the-elements-of-order.md)
+- [Euler's product formula for the elements of order divisible by `f`](../../../group-theory/other-results/part-01/eulers-product-formula-for-the-elements-of-order.md)
 - [The fixed-field Frobenius fiber count](the-fixed-field-frobenius-fiber-count.md)
 - [The ideal-theoretic Artin map](../../part-02/number-fields-ramification-frobenius-and-the-lmf/the-ideal-theoretic-artin-map.md)
 - [The primes of `K` with Artin class `C` in `L`](the-primes-of-k-with-artin-class-c-in-l.md)
@@ -45,5 +45,5 @@ Formalized in Tau Ceti as [`NumberField.Chebotarev.frobeniusPsi_asymptotic_of_mu
 ## Sources
 
 - [Tau Ceti documentation: `NumberField.Chebotarev.frobeniusPsi_asymptotic_of_mul_comm`](https://taucetiproject.org/docs/TauCeti/NumberTheory/Chebotarev/PrimeCounting/Chebotarev.html#NumberField.Chebotarev.frobeniusPsi_asymptotic_of_mul_comm)
-- [Source of `NumberField.Chebotarev.frobeniusPsi_asymptotic_of_mul_comm` in TauCeti/NumberTheory/Chebotarev/PrimeCounting/Chebotarev.lean](https://github.com/TauCetiProject/TauCeti/blob/a6027b1d24fcb935c53bd5b50d11b40991cda418/TauCeti/NumberTheory/Chebotarev/PrimeCounting/Chebotarev.lean#L178)
-- [Tau Ceti roadmap status: The Chebotarev density theorem](https://github.com/TauCetiProject/TauCetiRoadmap/blob/9f7c032adaf1b838e8183d63ff3cfa886d061cb3/Completed/Chebotarev/STATUS.md)
+- [Source of `NumberField.Chebotarev.frobeniusPsi_asymptotic_of_mul_comm` in TauCeti/NumberTheory/Chebotarev/PrimeCounting/Chebotarev.lean](https://github.com/TauCetiProject/TauCeti/blob/cd41bffcb343151b3e58c89392e206b11fe78c1c/TauCeti/NumberTheory/Chebotarev/PrimeCounting/Chebotarev.lean#L179)
+- [Tau Ceti roadmap status: The Chebotarev density theorem](https://github.com/TauCetiProject/TauCetiRoadmap/blob/612845ab80fb9c2b9bee724a156756ee78031591/Completed/Chebotarev/STATUS.md)

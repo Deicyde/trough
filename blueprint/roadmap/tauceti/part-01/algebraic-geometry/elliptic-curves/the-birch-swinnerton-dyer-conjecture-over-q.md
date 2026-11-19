@@ -25,5 +25,5 @@ Formalized in Tau Ceti as [`TauCeti.BirchSwinnertonDyerConjecture`](https://tauc
 ## Sources
 
 - [Tau Ceti documentation: `TauCeti.BirchSwinnertonDyerConjecture`](https://taucetiproject.org/docs/TauCeti/AlgebraicGeometry/EllipticCurve/BirchSwinnertonDyer/Statement.html#TauCeti.BirchSwinnertonDyerConjecture)
-- [Source of `TauCeti.BirchSwinnertonDyerConjecture` in TauCeti/AlgebraicGeometry/EllipticCurve/BirchSwinnertonDyer/Statement.lean](https://github.com/TauCetiProject/TauCeti/blob/a6027b1d24fcb935c53bd5b50d11b40991cda418/TauCeti/AlgebraicGeometry/EllipticCurve/BirchSwinnertonDyer/Statement.lean#L126)
-- [Tau Ceti roadmap status: Elliptic curves](https://github.com/TauCetiProject/TauCetiRoadmap/blob/9f7c032adaf1b838e8183d63ff3cfa886d061cb3/TauCetiRoadmap/EllipticCurves/STATUS.md)
+- [Source of `TauCeti.BirchSwinnertonDyerConjecture` in TauCeti/AlgebraicGeometry/EllipticCurve/BirchSwinnertonDyer/Statement.lean](https://github.com/TauCetiProject/TauCeti/blob/cd41bffcb343151b3e58c89392e206b11fe78c1c/TauCeti/AlgebraicGeometry/EllipticCurve/BirchSwinnertonDyer/Statement.lean#L126)
+- [Tau Ceti roadmap status: Elliptic curves](https://github.com/TauCetiProject/TauCetiRoadmap/blob/612845ab80fb9c2b9bee724a156756ee78031591/TauCetiRoadmap/EllipticCurves/STATUS.md)

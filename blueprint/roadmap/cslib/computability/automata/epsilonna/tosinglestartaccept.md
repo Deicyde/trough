@@ -116,3 +116,4 @@ theorem toSingleStartAccept_language_eq : language a.toSingleStartAccept = langu
 ## Sources
 
 - [Cslib/Computability/Automata/EpsilonNA/ToSingleStartAccept.lean at 86d560b6](https://github.com/leanprover/cslib/blob/86d560b6cbb379bd82512424cbcd2a915a1565e7/Cslib/Computability/Automata/EpsilonNA/ToSingleStartAccept.lean)
+- [Declaration ledger](../../../../../sources/cslib/Cslib.Computability.Automata.EpsilonNA.ToSingleStartAccept.json)

@@ -35,4 +35,4 @@ Formalized in Tau Ceti as [`TopPair.singularKronecker_bijective_of_projective_ho
 ## Sources
 
 - [Tau Ceti documentation: `TopPair.singularKronecker_bijective_of_projective_homology_lt`](https://taucetiproject.org/docs/TauCeti/AlgebraicTopology/Cohomology/UniversalCoefficient.html#TopPair.singularKronecker_bijective_of_projective_homology_lt)
-- [Source of `TopPair.singularKronecker_bijective_of_projective_homology_lt` in TauCeti/AlgebraicTopology/Cohomology/UniversalCoefficient.lean](https://github.com/TauCetiProject/TauCeti/blob/a6027b1d24fcb935c53bd5b50d11b40991cda418/TauCeti/AlgebraicTopology/Cohomology/UniversalCoefficient.lean#L348)
+- [Source of `TopPair.singularKronecker_bijective_of_projective_homology_lt` in TauCeti/AlgebraicTopology/Cohomology/UniversalCoefficient.lean](https://github.com/TauCetiProject/TauCeti/blob/cd41bffcb343151b3e58c89392e206b11fe78c1c/TauCeti/AlgebraicTopology/Cohomology/UniversalCoefficient.lean#L373)

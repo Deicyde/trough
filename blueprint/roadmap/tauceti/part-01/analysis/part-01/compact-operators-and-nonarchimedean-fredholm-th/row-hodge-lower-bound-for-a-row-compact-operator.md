@@ -27,7 +27,7 @@ ContinuousLinearMap.IsRowCompact.rowHodgePolygon_rowNorm_le_newtonPolygon_charPo
 ## Depends on
 
 - [ContinuousLinearMap.IsRowCompact](continuouslinearmap-isrowcompact.md)
-- [TauCeti.lowerConvexEnvelope](../../../number-theory/part-01/newton-polygons-of-polynomials-and-power-series/tauceti-lowerconvexenvelope.md)
+- [TauCeti.lowerConvexEnvelope](../../../number-theory/part-02/newton-polygons-of-polynomials-and-power-series/tauceti-lowerconvexenvelope.md)
 
 ## Proof depends on
 
@@ -40,4 +40,4 @@ Formalized in Tau Ceti as [`ContinuousLinearMap.IsRowCompact.rowHodgePolygon_row
 ## Sources
 
 - [Tau Ceti documentation: `ContinuousLinearMap.IsRowCompact.rowHodgePolygon_rowNorm_le_newtonPolygon_charPowerSeries`](https://taucetiproject.org/docs/TauCeti/Analysis/Normed/Operator/Nonarchimedean/RowHodge.html#ContinuousLinearMap.IsRowCompact.rowHodgePolygon_rowNorm_le_newtonPolygon_charPowerSeries)
-- [Source of `ContinuousLinearMap.IsRowCompact.rowHodgePolygon_rowNorm_le_newtonPolygon_charPowerSeries` in TauCeti/Analysis/Normed/Operator/Nonarchimedean/RowHodge.lean](https://github.com/TauCetiProject/TauCeti/blob/a6027b1d24fcb935c53bd5b50d11b40991cda418/TauCeti/Analysis/Normed/Operator/Nonarchimedean/RowHodge.lean#L48)
+- [Source of `ContinuousLinearMap.IsRowCompact.rowHodgePolygon_rowNorm_le_newtonPolygon_charPowerSeries` in TauCeti/Analysis/Normed/Operator/Nonarchimedean/RowHodge.lean](https://github.com/TauCetiProject/TauCeti/blob/cd41bffcb343151b3e58c89392e206b11fe78c1c/TauCeti/Analysis/Normed/Operator/Nonarchimedean/RowHodge.lean#L48)

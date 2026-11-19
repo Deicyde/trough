@@ -1,6 +1,6 @@
 # Function
 
-Results named in Tau Ceti's `TauCeti.MeasureTheory.Function` modules and in no roadmap's section, as Tau Ceti has them at commit [a6027b1d](https://github.com/TauCetiProject/TauCeti/tree/a6027b1d24fcb935c53bd5b50d11b40991cda418).
+Results named in Tau Ceti's `TauCeti.MeasureTheory.Function` modules and in no roadmap's section, as Tau Ceti has them at commit [cd41bffc](https://github.com/TauCetiProject/TauCeti/tree/cd41bffcb343151b3e58c89392e206b11fe78c1c).
 
 ## [Bayes' formula, multiplication… to Pettis' theorem in a separable…](part-01/README.md)
 
@@ -18,7 +18,7 @@ Results named in Tau Ceti's `TauCeti.MeasureTheory.Function` modules and in no r
 - [Fundamental theorem for absolutely continuous curves, integrability](part-01/fundamental-theorem-for-absolutely-continuous-cu.md)
 - [Hardy--Littlewood rearrangement inequality](part-01/hardy-littlewood-rearrangement-inequality.md)
 - [Hölder estimate along a curve](part-01/holder-estimate-along-a-curve.md)
-- [Hölder's inequality for the integral of a product](part-01/holders-inequality-for-the-integral-of-a-product.md)
+- [Hölder's inequality for disjoint pieces](part-01/holders-inequality-for-disjoint-pieces.md)
 - [Jensen's inequality for the conditional expectation, as an inequality of `lintegral`s](part-01/jensens-inequality-for-the-conditional-expectati.md)
 - [The local Campanato estimate](part-01/the-local-campanato-estimate.md)
 - [Lusin's theorem](part-01/lusins-theorem.md)

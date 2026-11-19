@@ -33,5 +33,5 @@ Formalized in Tau Ceti as [`TauCeti.Hodge.HodgeStructureOn.finsum_hodgeNumber_eq
 ## Sources
 
 - [Tau Ceti documentation: `TauCeti.Hodge.HodgeStructureOn.finsum_hodgeNumber_eq_finrank`](https://taucetiproject.org/docs/TauCeti/Geometry/Hodge/Dimension.html#TauCeti.Hodge.HodgeStructureOn.finsum_hodgeNumber_eq_finrank)
-- [Source of `TauCeti.Hodge.HodgeStructureOn.finsum_hodgeNumber_eq_finrank` in TauCeti/Geometry/Hodge/Dimension.lean](https://github.com/TauCetiProject/TauCeti/blob/a6027b1d24fcb935c53bd5b50d11b40991cda418/TauCeti/Geometry/Hodge/Dimension.lean#L95)
-- [Tau Ceti roadmap status: Hodge structures (pure, mixed, and polarized)](https://github.com/TauCetiProject/TauCetiRoadmap/blob/9f7c032adaf1b838e8183d63ff3cfa886d061cb3/Completed/HodgeStructures/STATUS.md)
+- [Source of `TauCeti.Hodge.HodgeStructureOn.finsum_hodgeNumber_eq_finrank` in TauCeti/Geometry/Hodge/Dimension.lean](https://github.com/TauCetiProject/TauCeti/blob/cd41bffcb343151b3e58c89392e206b11fe78c1c/TauCeti/Geometry/Hodge/Dimension.lean#L93)
+- [Tau Ceti roadmap status: Hodge structures (pure, mixed, and polarized)](https://github.com/TauCetiProject/TauCetiRoadmap/blob/612845ab80fb9c2b9bee724a156756ee78031591/Completed/HodgeStructures/STATUS.md)

@@ -27,4 +27,4 @@ Formalized in Tau Ceti as [`TauCeti.AlgorithmicModifiedSzpiroConjecture.algorith
 ## Sources
 
 - [Tau Ceti documentation: `TauCeti.AlgorithmicModifiedSzpiroConjecture.algorithmicSzpiroConjecture`](https://taucetiproject.org/docs/TauCeti/AlgebraicGeometry/EllipticCurve/Szpiro.html#TauCeti.AlgorithmicModifiedSzpiroConjecture.algorithmicSzpiroConjecture)
-- [Source of `TauCeti.AlgorithmicModifiedSzpiroConjecture.algorithmicSzpiroConjecture` in TauCeti/AlgebraicGeometry/EllipticCurve/Szpiro.lean](https://github.com/TauCetiProject/TauCeti/blob/a6027b1d24fcb935c53bd5b50d11b40991cda418/TauCeti/AlgebraicGeometry/EllipticCurve/Szpiro.lean#L190)
+- [Source of `TauCeti.AlgorithmicModifiedSzpiroConjecture.algorithmicSzpiroConjecture` in TauCeti/AlgebraicGeometry/EllipticCurve/Szpiro.lean](https://github.com/TauCetiProject/TauCeti/blob/cd41bffcb343151b3e58c89392e206b11fe78c1c/TauCeti/AlgebraicGeometry/EllipticCurve/Szpiro.lean#L190)

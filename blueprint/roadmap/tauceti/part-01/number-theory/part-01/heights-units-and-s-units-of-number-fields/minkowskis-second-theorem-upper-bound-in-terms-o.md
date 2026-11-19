@@ -113,5 +113,5 @@ ZLattice.prod_successiveMin_le_covolume_of_two_pow_finrank_le.{u_1} {E : Type u_
 ## Sources
 
 - [Tau Ceti documentation: `ZLattice.prod_successiveMin_mul_measure_le_two_pow_mul_covolume`](https://taucetiproject.org/docs/TauCeti/NumberTheory/GeometryOfNumbers/MinkowskiSecond.html#ZLattice.prod_successiveMin_mul_measure_le_two_pow_mul_covolume)
-- [Source of `ZLattice.prod_successiveMin_mul_measure_le_two_pow_mul_covolume` in TauCeti/NumberTheory/GeometryOfNumbers/MinkowskiSecond.lean](https://github.com/TauCetiProject/TauCeti/blob/a6027b1d24fcb935c53bd5b50d11b40991cda418/TauCeti/NumberTheory/GeometryOfNumbers/MinkowskiSecond.lean#L627)
-- [Tau Ceti roadmap status: Heights, units and S-units of number fields](https://github.com/TauCetiProject/TauCetiRoadmap/blob/9f7c032adaf1b838e8183d63ff3cfa886d061cb3/Completed/HeightsAndUnits/STATUS.md)
+- [Source of `ZLattice.prod_successiveMin_mul_measure_le_two_pow_mul_covolume` in TauCeti/NumberTheory/GeometryOfNumbers/MinkowskiSecond.lean](https://github.com/TauCetiProject/TauCeti/blob/cd41bffcb343151b3e58c89392e206b11fe78c1c/TauCeti/NumberTheory/GeometryOfNumbers/MinkowskiSecond.lean#L626)
+- [Tau Ceti roadmap status: Heights, units and S-units of number fields](https://github.com/TauCetiProject/TauCetiRoadmap/blob/612845ab80fb9c2b9bee724a156756ee78031591/Completed/HeightsAndUnits/STATUS.md)

@@ -17,7 +17,7 @@ Then for every `1 < p < 2` and every `f ∈ L²`,
 `‖T f‖_p ≤ (p / (p - 1) · 2 (2ⁿ (4 ‖T‖² + 1) + 4 B) + p / (2 - p) · 4 ‖T‖²) ^ (1 / p) ‖f‖_p`.
 
 ```lean
-ContinuousLinearMap.eLpNorm_le_of_hormander.{u_1, u_2, u_3} {ι : Type u_1} [Fintype ι] [Nonempty ι]
+ContinuousLinearMap.eLpNorm_le_of_hormander.{u_1, u_2, u_3} {ι : Type u_1} [Fintype ι]
   {E : Type u_2} {F : Type u_3} [NormedAddCommGroup E] [NormedSpace ℝ E] [CompleteSpace E]
   [NormedAddCommGroup F] [NormedSpace ℝ F] {p : ENNReal} [CompleteSpace F]
   (T :
@@ -44,7 +44,8 @@ Its statement uses no other declaration mapped here.
 
 ## Proof depends on
 
-- [Hölder's inequality for the integral of a product](../../function/part-01/holders-inequality-for-the-integral-of-a-product.md)
+- [Hölder's inequality for disjoint pieces](../../function/part-01/holders-inequality-for-disjoint-pieces.md)
+- [Jensen's inequality for the square of a mean](../part-02/jensens-inequality-for-the-square-of-a-mean.md)
 - [Lebesgue's differentiation theorem along dyadic cubes](../../measure/lebesgues-differentiation-theorem-along-dyadic-c.md)
 - [Minkowski's integral inequality](../part-02/minkowskis-integral-inequality.md)
 
@@ -58,9 +59,8 @@ Formalized in Tau Ceti as [`ContinuousLinearMap.eLpNorm_le_of_hormander`](https:
 
 ```lean
 ContinuousLinearMap.eLpNorm_le_of_hormander_adjoint.{u_1, u_4, u_5} {ι : Type u_1} [Fintype ι]
-  [Nonempty ι] {p : ENNReal} {H : Type u_4} {K : Type u_5} [NormedAddCommGroup H]
-  [InnerProductSpace ℝ H] [CompleteSpace H] [NormedAddCommGroup K] [InnerProductSpace ℝ K]
-  [CompleteSpace K]
+  {p : ENNReal} {H : Type u_4} {K : Type u_5} [NormedAddCommGroup H] [InnerProductSpace ℝ H]
+  [CompleteSpace H] [NormedAddCommGroup K] [InnerProductSpace ℝ K] [CompleteSpace K]
   (T :
     ↥(MeasureTheory.Lp H 2 MeasureTheory.volume) →L[ℝ] ↥(MeasureTheory.Lp K 2 MeasureTheory.volume))
   {k : (ι → ℝ) → (ι → ℝ) → K →L[ℝ] H} (hk : MeasureTheory.StronglyMeasurable (Function.uncurry k))
@@ -84,9 +84,9 @@ ContinuousLinearMap.eLpNorm_le_of_hormander_adjoint.{u_1, u_4, u_5} {ι : Type u
 
 ```lean
 ContinuousLinearMap.eLpNorm_le_of_setLIntegral_compl_closedBall_adjoint_le.{u_1, u_4, u_5}
-  {ι : Type u_1} [Fintype ι] [Nonempty ι] {p : ENNReal} {H : Type u_4} {K : Type u_5}
-  [NormedAddCommGroup H] [InnerProductSpace ℝ H] [CompleteSpace H] [NormedAddCommGroup K]
-  [InnerProductSpace ℝ K] [CompleteSpace K]
+  {ι : Type u_1} [Fintype ι] {p : ENNReal} {H : Type u_4} {K : Type u_5} [NormedAddCommGroup H]
+  [InnerProductSpace ℝ H] [CompleteSpace H] [NormedAddCommGroup K] [InnerProductSpace ℝ K]
+  [CompleteSpace K]
   (T :
     ↥(MeasureTheory.Lp H 2 MeasureTheory.volume) →L[ℝ] ↥(MeasureTheory.Lp K 2 MeasureTheory.volume))
   {B : ENNReal} {c : ℝ}
@@ -111,8 +111,8 @@ ContinuousLinearMap.eLpNorm_le_of_setLIntegral_compl_closedBall_adjoint_le.{u_1,
 
 ```lean
 ContinuousLinearMap.eLpNorm_le_of_setLIntegral_compl_closedBall_le.{u_1, u_2, u_3} {ι : Type u_1}
-  [Fintype ι] [Nonempty ι] {E : Type u_2} {F : Type u_3} [NormedAddCommGroup E] [NormedSpace ℝ E]
-  [CompleteSpace E] [NormedAddCommGroup F] [NormedSpace ℝ F] {p : ENNReal}
+  [Fintype ι] {E : Type u_2} {F : Type u_3} [NormedAddCommGroup E] [NormedSpace ℝ E]
+  [NormedAddCommGroup F] [NormedSpace ℝ F] {p : ENNReal}
   (T :
     ↥(MeasureTheory.Lp E 2 MeasureTheory.volume) →L[ℝ] ↥(MeasureTheory.Lp F 2 MeasureTheory.volume))
   {B : ENNReal} {c : ℝ}
@@ -137,7 +137,7 @@ ContinuousLinearMap.eLpNorm_le_of_setLIntegral_compl_closedBall_le.{u_1, u_2, u_
 ```lean
 ContinuousLinearMap.mul_volume_lt_enorm_le_of_hormander.{u_1, u_2, u_3} {ι : Type u_1} [Fintype ι]
   {E : Type u_2} {F : Type u_3} [NormedAddCommGroup E] [NormedSpace ℝ E] [CompleteSpace E]
-  [NormedAddCommGroup F] [NormedSpace ℝ F] [Nonempty ι] [CompleteSpace F]
+  [NormedAddCommGroup F] [NormedSpace ℝ F] [CompleteSpace F]
   (T :
     ↥(MeasureTheory.Lp E 2 MeasureTheory.volume) →L[ℝ] ↥(MeasureTheory.Lp F 2 MeasureTheory.volume))
   {K : (ι → ℝ) → (ι → ℝ) → E →L[ℝ] F} (hK : MeasureTheory.StronglyMeasurable (Function.uncurry K))
@@ -182,7 +182,7 @@ ContinuousLinearMap.mul_volume_lt_enorm_le_of_norm_sub_le_mul_rpow.{u_1, u_2, u_
 ```lean
 ContinuousLinearMap.mul_volume_lt_enorm_le_of_setLIntegral_compl_closedBall_le.{u_1, u_2, u_3}
   {ι : Type u_1} [Fintype ι] {E : Type u_2} {F : Type u_3} [NormedAddCommGroup E] [NormedSpace ℝ E]
-  [CompleteSpace E] [NormedAddCommGroup F] [NormedSpace ℝ F] [Nonempty ι]
+  [NormedAddCommGroup F] [NormedSpace ℝ F]
   (T :
     ↥(MeasureTheory.Lp E 2 MeasureTheory.volume) →L[ℝ] ↥(MeasureTheory.Lp F 2 MeasureTheory.volume))
   {B : ENNReal} {c : ℝ}
@@ -202,10 +202,10 @@ ContinuousLinearMap.mul_volume_lt_enorm_le_of_setLIntegral_compl_closedBall_le.{
 
 ```lean
 TauCeti.exists_eLpNorm_le_of_setLIntegral_compl_closedBall_le.{u_1, u_2, u_3} {ι : Type u_1}
-  [Fintype ι] [Nonempty ι] {H : Type u_2} {K : Type u_3} [NormedAddCommGroup H]
-  [InnerProductSpace ℝ H] [CompleteSpace H] [NormedAddCommGroup K] [InnerProductSpace ℝ K]
-  [CompleteSpace K] {p : ENNReal} (c : ℝ) {M B B' : ENNReal} (hM : M ≠ ⊤) (hB : B ≠ ⊤)
-  (hB' : B' ≠ ⊤) (hp : 1 < p) (hp_top : p ≠ ⊤) :
+  [Fintype ι] {H : Type u_2} {K : Type u_3} [NormedAddCommGroup H] [InnerProductSpace ℝ H]
+  [CompleteSpace H] [NormedAddCommGroup K] [InnerProductSpace ℝ K] [CompleteSpace K] {p : ENNReal}
+  (c : ℝ) {M B B' : ENNReal} (hM : M ≠ ⊤) (hB : B ≠ ⊤) (hB' : B' ≠ ⊤) (hp : 1 < p)
+  (hp_top : p ≠ ⊤) :
   ∃ C,
     ∀
       (T :
@@ -235,7 +235,7 @@ ContinuousLinearMap.exists_eLpNorm_le_of_norm_sub_le_mul_rpow.{u_1, u_4, u_5} {V
   [NormedAddCommGroup V] [InnerProductSpace ℝ V] [MeasurableSpace V] [BorelSpace V]
   [FiniteDimensional ℝ V] {H : Type u_4} {K : Type u_5} [NormedAddCommGroup H]
   [InnerProductSpace ℝ H] [CompleteSpace H] [NormedAddCommGroup K] [InnerProductSpace ℝ K]
-  [CompleteSpace K] {p : ENNReal} [Nontrivial V]
+  [CompleteSpace K] {p : ENNReal}
   (T :
     ↥(MeasureTheory.Lp H 2 MeasureTheory.volume) →L[ℝ] ↥(MeasureTheory.Lp K 2 MeasureTheory.volume))
   {k : V → V → H →L[ℝ] K} (hkm : MeasureTheory.StronglyMeasurable (Function.uncurry k))
@@ -274,7 +274,7 @@ ContinuousLinearMap.exists_eLpNorm_le_of_norm_sub_le_mul_rpow.{u_1, u_4, u_5} {V
 ContinuousLinearMap.exists_mul_volume_lt_enorm_le_of_norm_sub_le_mul_rpow.{u_1, u_2, u_3}
   {V : Type u_1} [NormedAddCommGroup V] [InnerProductSpace ℝ V] [MeasurableSpace V] [BorelSpace V]
   [FiniteDimensional ℝ V] {E : Type u_2} {F : Type u_3} [NormedAddCommGroup E] [NormedSpace ℝ E]
-  [CompleteSpace E] [NormedAddCommGroup F] [NormedSpace ℝ F] [CompleteSpace F] [Nontrivial V]
+  [CompleteSpace E] [NormedAddCommGroup F] [NormedSpace ℝ F] [CompleteSpace F]
   (T :
     ↥(MeasureTheory.Lp E 2 MeasureTheory.volume) →L[ℝ] ↥(MeasureTheory.Lp F 2 MeasureTheory.volume))
   {k : V → V → E →L[ℝ] F} (hkm : MeasureTheory.StronglyMeasurable (Function.uncurry k))
@@ -300,8 +300,8 @@ ContinuousLinearMap.exists_mul_volume_lt_enorm_le_of_norm_sub_le_mul_rpow.{u_1, 
 TauCeti.exists_eLpNorm_le_of_hormander.{u_1, u_4, u_5} {V : Type u_1} [NormedAddCommGroup V]
   [InnerProductSpace ℝ V] [MeasurableSpace V] [BorelSpace V] [FiniteDimensional ℝ V] {H : Type u_4}
   {K : Type u_5} [NormedAddCommGroup H] [InnerProductSpace ℝ H] [CompleteSpace H]
-  [NormedAddCommGroup K] [InnerProductSpace ℝ K] [CompleteSpace K] {p : ENNReal} [Nontrivial V]
-  {M B B' : ENNReal} (hM : M ≠ ⊤) (hB : B ≠ ⊤) (hB' : B' ≠ ⊤) (hp : 1 < p) (hp_top : p ≠ ⊤) :
+  [NormedAddCommGroup K] [InnerProductSpace ℝ K] [CompleteSpace K] {p M B B' : ENNReal} (hM : M ≠ ⊤)
+  (hB : B ≠ ⊤) (hB' : B' ≠ ⊤) (hp : 1 < p) (hp_top : p ≠ ⊤) :
   ∃ C,
     ∀
       (T :
@@ -336,8 +336,8 @@ TauCeti.exists_eLpNorm_le_of_hormander.{u_1, u_4, u_5} {V : Type u_1} [NormedAdd
 TauCeti.exists_mul_volume_lt_enorm_le_of_hormander.{u_1, u_2, u_3} {V : Type u_1}
   [NormedAddCommGroup V] [InnerProductSpace ℝ V] [MeasurableSpace V] [BorelSpace V]
   [FiniteDimensional ℝ V] {E : Type u_2} {F : Type u_3} [NormedAddCommGroup E] [NormedSpace ℝ E]
-  [CompleteSpace E] [NormedAddCommGroup F] [NormedSpace ℝ F] [CompleteSpace F] [Nontrivial V]
-  {M B : ENNReal} (hM : M ≠ ⊤) (hB : B ≠ ⊤) :
+  [CompleteSpace E] [NormedAddCommGroup F] [NormedSpace ℝ F] [CompleteSpace F] {M B : ENNReal}
+  (hM : M ≠ ⊤) (hB : B ≠ ⊤) :
   ∃ A,
     ∀
       (T :
@@ -358,4 +358,4 @@ TauCeti.exists_mul_volume_lt_enorm_le_of_hormander.{u_1, u_2, u_3} {V : Type u_1
 ## Sources
 
 - [Tau Ceti documentation: `ContinuousLinearMap.eLpNorm_le_of_hormander`](https://taucetiproject.org/docs/TauCeti/MeasureTheory/Integral/CalderonZygmund/StrongType.html#ContinuousLinearMap.eLpNorm_le_of_hormander)
-- [Source of `ContinuousLinearMap.eLpNorm_le_of_hormander` in TauCeti/MeasureTheory/Integral/CalderonZygmund/StrongType.lean](https://github.com/TauCetiProject/TauCeti/blob/a6027b1d24fcb935c53bd5b50d11b40991cda418/TauCeti/MeasureTheory/Integral/CalderonZygmund/StrongType.lean#L110)
+- [Source of `ContinuousLinearMap.eLpNorm_le_of_hormander` in TauCeti/MeasureTheory/Integral/CalderonZygmund/StrongType.lean](https://github.com/TauCetiProject/TauCeti/blob/cd41bffcb343151b3e58c89392e206b11fe78c1c/TauCeti/MeasureTheory/Integral/CalderonZygmund/StrongType.lean#L111)

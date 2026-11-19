@@ -48,4 +48,4 @@ TauCeti.vanKampenWideEquiv.{u_1, u_2} {X : Type u_1} [TopologicalSpace X] {ι : 
 ## Sources
 
 - [Tau Ceti documentation: `TauCeti.isColimitFundamentalGroupWideCocone`](https://taucetiproject.org/docs/TauCeti/AlgebraicTopology/FundamentalGroup/VanKampen/Basic.html#TauCeti.isColimitFundamentalGroupWideCocone)
-- [Source of `TauCeti.isColimitFundamentalGroupWideCocone` in TauCeti/AlgebraicTopology/FundamentalGroup/VanKampen/Basic.lean](https://github.com/TauCetiProject/TauCeti/blob/a6027b1d24fcb935c53bd5b50d11b40991cda418/TauCeti/AlgebraicTopology/FundamentalGroup/VanKampen/Basic.lean#L709)
+- [Source of `TauCeti.isColimitFundamentalGroupWideCocone` in TauCeti/AlgebraicTopology/FundamentalGroup/VanKampen/Basic.lean](https://github.com/TauCetiProject/TauCeti/blob/cd41bffcb343151b3e58c89392e206b11fe78c1c/TauCeti/AlgebraicTopology/FundamentalGroup/VanKampen/Basic.lean#L709)

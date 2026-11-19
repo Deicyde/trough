@@ -34,4 +34,4 @@ Formalized in Tau Ceti as [`TauCeti.IntegralOrder.det_smul_mem_span`](https://ta
 ## Sources
 
 - [Tau Ceti documentation: `TauCeti.IntegralOrder.det_smul_mem_span`](https://taucetiproject.org/docs/TauCeti/RingTheory/IntegralOrder/Overorder.html#TauCeti.IntegralOrder.det_smul_mem_span)
-- [Source of `TauCeti.IntegralOrder.det_smul_mem_span` in TauCeti/RingTheory/IntegralOrder/Overorder.lean](https://github.com/TauCetiProject/TauCeti/blob/a6027b1d24fcb935c53bd5b50d11b40991cda418/TauCeti/RingTheory/IntegralOrder/Overorder.lean#L50)
+- [Source of `TauCeti.IntegralOrder.det_smul_mem_span` in TauCeti/RingTheory/IntegralOrder/Overorder.lean](https://github.com/TauCetiProject/TauCeti/blob/cd41bffcb343151b3e58c89392e206b11fe78c1c/TauCeti/RingTheory/IntegralOrder/Overorder.lean#L50)

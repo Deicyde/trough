@@ -20,11 +20,11 @@ Representation.finiteType_symmetricAlgebraInvariants.{u_1, u_2, u_3} {R : Type u
 
 ## Depends on
 
-- [Representation.symmetricAlgebraInvariants](../finite-reflection-invariants-degrees-and-weyl-ex/representation-symmetricalgebrainvariants.md)
+Its statement uses no other declaration mapped here.
 
 ## Proof depends on
 
-- [Noether's finiteness theorem (`TauCeti.FixedPoints.finiteType_subalgebra`)](../finite-reflection-invariants-degrees-and-weyl-ex/noethers-finiteness-theorem-tauceti-fixedpoints.md)
+- [Noether's finiteness theorem (`TauCeti.FixedPoints.finiteType_subalgebra`)](../../ring-theory/part-01/invariant/noethers-finiteness-theorem-tauceti-fixedpoints.md)
 
 ## Lean
 
@@ -33,4 +33,4 @@ Formalized in Tau Ceti as [`Representation.finiteType_symmetricAlgebraInvariants
 ## Sources
 
 - [Tau Ceti documentation: `Representation.finiteType_symmetricAlgebraInvariants`](https://taucetiproject.org/docs/TauCeti/RepresentationTheory/SymmetricAlgebra/FiniteType.html#Representation.finiteType_symmetricAlgebraInvariants)
-- [Source of `Representation.finiteType_symmetricAlgebraInvariants` in TauCeti/RepresentationTheory/SymmetricAlgebra/FiniteType.lean](https://github.com/TauCetiProject/TauCeti/blob/a6027b1d24fcb935c53bd5b50d11b40991cda418/TauCeti/RepresentationTheory/SymmetricAlgebra/FiniteType.lean#L73)
+- [Source of `Representation.finiteType_symmetricAlgebraInvariants` in TauCeti/RepresentationTheory/SymmetricAlgebra/FiniteType.lean](https://github.com/TauCetiProject/TauCeti/blob/cd41bffcb343151b3e58c89392e206b11fe78c1c/TauCeti/RepresentationTheory/SymmetricAlgebra/FiniteType.lean#L73)

@@ -41,4 +41,4 @@ Formalized in Tau Ceti as [`TauCeti.mul_measure_le_lintegral_of_forall_exists_ba
 ## Sources
 
 - [Tau Ceti documentation: `TauCeti.mul_measure_le_lintegral_of_forall_exists_ball`](https://taucetiproject.org/docs/TauCeti/MeasureTheory/Covering/Vitali.html#TauCeti.mul_measure_le_lintegral_of_forall_exists_ball)
-- [Source of `TauCeti.mul_measure_le_lintegral_of_forall_exists_ball` in TauCeti/MeasureTheory/Covering/Vitali.lean](https://github.com/TauCetiProject/TauCeti/blob/a6027b1d24fcb935c53bd5b50d11b40991cda418/TauCeti/MeasureTheory/Covering/Vitali.lean#L86)
+- [Source of `TauCeti.mul_measure_le_lintegral_of_forall_exists_ball` in TauCeti/MeasureTheory/Covering/Vitali.lean](https://github.com/TauCetiProject/TauCeti/blob/cd41bffcb343151b3e58c89392e206b11fe78c1c/TauCeti/MeasureTheory/Covering/Vitali.lean#L86)

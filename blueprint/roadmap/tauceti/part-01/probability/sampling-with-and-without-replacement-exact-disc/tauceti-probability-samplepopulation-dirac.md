@@ -30,5 +30,5 @@ Formalized in Tau Ceti as [`TauCeti.Probability.samplePopulation_dirac`](https:/
 ## Sources
 
 - [Tau Ceti documentation: `TauCeti.Probability.samplePopulation_dirac`](https://taucetiproject.org/docs/TauCeti/Probability/PopulationSampling/Basic.html#TauCeti.Probability.samplePopulation_dirac)
-- [Source of `TauCeti.Probability.samplePopulation_dirac` in TauCeti/Probability/PopulationSampling/Basic.lean](https://github.com/TauCetiProject/TauCeti/blob/a6027b1d24fcb935c53bd5b50d11b40991cda418/TauCeti/Probability/PopulationSampling/Basic.lean#L103)
-- [Tau Ceti roadmap status: Sampling with and without replacement, exact discrepancy for finite populations](https://github.com/TauCetiProject/TauCetiRoadmap/blob/9f7c032adaf1b838e8183d63ff3cfa886d061cb3/TauCetiRoadmap/FiniteSamplingDiscrepancy/STATUS.md)
+- [Source of `TauCeti.Probability.samplePopulation_dirac` in TauCeti/Probability/PopulationSampling/Basic.lean](https://github.com/TauCetiProject/TauCeti/blob/cd41bffcb343151b3e58c89392e206b11fe78c1c/TauCeti/Probability/PopulationSampling/Basic.lean#L126)
+- [Tau Ceti roadmap status: Sampling with and without replacement, exact discrepancy for finite populations](https://github.com/TauCetiProject/TauCetiRoadmap/blob/612845ab80fb9c2b9bee724a156756ee78031591/TauCetiRoadmap/FiniteSamplingDiscrepancy/STATUS.md)

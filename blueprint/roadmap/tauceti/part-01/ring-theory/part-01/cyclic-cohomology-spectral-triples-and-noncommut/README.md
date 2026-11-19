@@ -1,6 +1,6 @@
 # Cyclic cohomology, spectral triples and noncommutative tori
 
-The declarations the status of Tau Ceti's [roadmap](https://github.com/TauCetiProject/TauCetiRoadmap/blob/9f7c032adaf1b838e8183d63ff3cfa886d061cb3/TauCetiRoadmap/NoncommutativeGeometry/README.md) names, and the other results named in the modules where only this status names declarations, or in folders below the areas where only it names 2 or more, as Tau Ceti has them at commit [a6027b1d](https://github.com/TauCetiProject/TauCeti/tree/a6027b1d24fcb935c53bd5b50d11b40991cda418).
+The declarations the status of Tau Ceti's [roadmap](https://github.com/TauCetiProject/TauCetiRoadmap/blob/612845ab80fb9c2b9bee724a156756ee78031591/TauCetiRoadmap/NoncommutativeGeometry/README.md) names, and the other results named in the modules where only this status names declarations, or in folders below the areas where only it names 2 or more, as Tau Ceti has them at commit [cd41bffc](https://github.com/TauCetiProject/TauCeti/tree/cd41bffcb343151b3e58c89392e206b11fe78c1c).
 
 - [Exactness of `HH^(m+1) → H^m(Tot) → H^(m+2)(Tot)`](exactness-of-hh-m-1-h-m-tot-h-m-2-tot.md)
 - [Exactness of `H^(m+1)(Tot) → HH^(m+1) → H^m(Tot)`](exactness-of-h-m-1-tot-hh-m-1-h-m-tot.md)

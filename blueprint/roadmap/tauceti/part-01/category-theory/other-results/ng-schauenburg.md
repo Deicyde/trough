@@ -27,4 +27,4 @@ Formalized in Tau Ceti as [`TauCeti.iterate_frobeniusSchurRotate_eq_id`](https:/
 ## Sources
 
 - [Tau Ceti documentation: `TauCeti.iterate_frobeniusSchurRotate_eq_id`](https://taucetiproject.org/docs/TauCeti/CategoryTheory/Monoidal/Pivotal/FrobeniusSchur/Basic.html#TauCeti.iterate_frobeniusSchurRotate_eq_id)
-- [Source of `TauCeti.iterate_frobeniusSchurRotate_eq_id` in TauCeti/CategoryTheory/Monoidal/Pivotal/FrobeniusSchur/Basic.lean](https://github.com/TauCetiProject/TauCeti/blob/a6027b1d24fcb935c53bd5b50d11b40991cda418/TauCeti/CategoryTheory/Monoidal/Pivotal/FrobeniusSchur/Basic.lean#L230)
+- [Source of `TauCeti.iterate_frobeniusSchurRotate_eq_id` in TauCeti/CategoryTheory/Monoidal/Pivotal/FrobeniusSchur/Basic.lean](https://github.com/TauCetiProject/TauCeti/blob/cd41bffcb343151b3e58c89392e206b11fe78c1c/TauCeti/CategoryTheory/Monoidal/Pivotal/FrobeniusSchur/Basic.lean#L230)

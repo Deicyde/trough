@@ -2,9 +2,10 @@
 navigation: transparent
 ---
 
-# Ambient small perturbation… to The method of continuity…
+# Ambient small perturbation… to Grothendieck's trace criterion…
 
 - [Ambient small perturbation theorem](ambient-small-perturbation-theorem.md)
+- [The Aronszajn–Smith theorem](the-aronszajn-smith-theorem.md)
 - [Banach's lemma](banachs-lemma.md)
 - [Banach–Steinhaus theorem (Uniform Boundedness Principle) over a Tate ring](banach-steinhaus-theorem-uniform-boundedness-pri.md)
 - [Bounded Inverse Theorem](bounded-inverse-theorem.md)
@@ -18,9 +19,8 @@ navigation: transparent
 - [Gantmacher's theorem](gantmachers-theorem.md)
 - [The Garling–Gordon theorem](the-garling-gordon-theorem.md)
 - [Gelfand's formula in a nonunital complex Banach algebra](gelfands-formula-in-a-nonunital-complex-banach-a.md)
+- [Grothendieck's dual approximation property theorem](grothendiecks-dual-approximation-property-theore.md)
+- [Grothendieck's lemma](grothendiecks-lemma.md)
+- [Grothendieck's nuclear-series criterion for the approximation property](grothendiecks-nuclear-series-criterion-for-the-a.md)
 - [Grothendieck's theorem](grothendiecks-theorem.md)
-- [Hölder's inequality for weak norms](holders-inequality-for-weak-norms.md)
-- [The Kadec–Snobar theorem](the-kadec-snobar-theorem.md)
-- [Local Neumann formula for the resolvent](local-neumann-formula-for-the-resolvent.md)
-- [Mazur's lemma, in sequential form](mazurs-lemma-in-sequential-form.md)
-- [The method of continuity (Gilbarg–Trudinger, Theorem 5.2)](the-method-of-continuity-gilbarg-trudinger-theor.md)
+- [Grothendieck's trace criterion for the approximation property](grothendiecks-trace-criterion-for-the-approximat.md)

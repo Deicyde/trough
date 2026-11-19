@@ -33,4 +33,4 @@ Formalized in Tau Ceti as [`TauCeti.HolderSpace.norm_le_of_forall_eqOn_ball`](ht
 ## Sources
 
 - [Tau Ceti documentation: `TauCeti.HolderSpace.norm_le_of_forall_eqOn_ball`](https://taucetiproject.org/docs/TauCeti/Analysis/Holder/Patching.html#TauCeti.HolderSpace.norm_le_of_forall_eqOn_ball)
-- [Source of `TauCeti.HolderSpace.norm_le_of_forall_eqOn_ball` in TauCeti/Analysis/Holder/Patching.lean](https://github.com/TauCetiProject/TauCeti/blob/a6027b1d24fcb935c53bd5b50d11b40991cda418/TauCeti/Analysis/Holder/Patching.lean#L46)
+- [Source of `TauCeti.HolderSpace.norm_le_of_forall_eqOn_ball` in TauCeti/Analysis/Holder/Patching.lean](https://github.com/TauCetiProject/TauCeti/blob/cd41bffcb343151b3e58c89392e206b11fe78c1c/TauCeti/Analysis/Holder/Patching.lean#L46)

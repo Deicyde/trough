@@ -38,9 +38,9 @@ Its statement uses no other declaration mapped here.
 
 ## Proof depends on
 
-- [Cauchy-Schwarz against a majorant](../../../../linear-algebra/bilinear-form/cauchy-schwarz-against-a-majorant.md)
+- [Cauchy-Schwarz against a majorant](../../../../linear-algebra/part-01/bilinear-form/cauchy-schwarz-against-a-majorant.md)
 - [The Weyl character formula](the-weyl-character-formula.md)
-- [The Weyl dimension formula (`TauCeti.sum_coeff_mul_prod_coroot'_weylVector_eq`)](../../../../linear-algebra/schubert-geometry-demazure-sections-and-flag-k-t/the-weyl-dimension-formula-tauceti-sum-coeff-mul.md)
+- [The Weyl dimension formula (`TauCeti.sum_coeff_mul_prod_coroot'_weylVector_eq`)](../../../../linear-algebra/part-01/schubert-geometry-demazure-sections-and-flag-k-t/the-weyl-dimension-formula-tauceti-sum-coeff-mul.md)
 
 ## Lean
 
@@ -67,4 +67,4 @@ TauCeti.finrank_mul_prod_coweightPairing_weylVector_eq.{u, v, w} {K : Type u} {L
 ## Sources
 
 - [Tau Ceti documentation: `TauCeti.finrank_eq_prod_coweightPairing_div`](https://taucetiproject.org/docs/TauCeti/Algebra/Lie/HighestWeight/Weyl/Dimension.html#TauCeti.finrank_eq_prod_coweightPairing_div)
-- [Source of `TauCeti.finrank_eq_prod_coweightPairing_div` in TauCeti/Algebra/Lie/HighestWeight/Weyl/Dimension.lean](https://github.com/TauCetiProject/TauCeti/blob/a6027b1d24fcb935c53bd5b50d11b40991cda418/TauCeti/Algebra/Lie/HighestWeight/Weyl/Dimension.lean#L110)
+- [Source of `TauCeti.finrank_eq_prod_coweightPairing_div` in TauCeti/Algebra/Lie/HighestWeight/Weyl/Dimension.lean](https://github.com/TauCetiProject/TauCeti/blob/cd41bffcb343151b3e58c89392e206b11fe78c1c/TauCeti/Algebra/Lie/HighestWeight/Weyl/Dimension.lean#L110)

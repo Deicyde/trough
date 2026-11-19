@@ -42,4 +42,4 @@ TauCeti.isSolvable_of_card_dvd_prime_pow_mul_prime_pow.{u} {G : Type u} [Group G
 ## Sources
 
 - [Tau Ceti documentation: `TauCeti.isSolvable_of_card_eq_prime_pow_mul_prime_pow`](https://taucetiproject.org/docs/TauCeti/RepresentationTheory/CharacterTable/Solvable.html#TauCeti.isSolvable_of_card_eq_prime_pow_mul_prime_pow)
-- [Source of `TauCeti.isSolvable_of_card_eq_prime_pow_mul_prime_pow` in TauCeti/RepresentationTheory/CharacterTable/Solvable.lean](https://github.com/TauCetiProject/TauCeti/blob/a6027b1d24fcb935c53bd5b50d11b40991cda418/TauCeti/RepresentationTheory/CharacterTable/Solvable.lean#L218)
+- [Source of `TauCeti.isSolvable_of_card_eq_prime_pow_mul_prime_pow` in TauCeti/RepresentationTheory/CharacterTable/Solvable.lean](https://github.com/TauCetiProject/TauCeti/blob/cd41bffcb343151b3e58c89392e206b11fe78c1c/TauCeti/RepresentationTheory/CharacterTable/Solvable.lean#L218)

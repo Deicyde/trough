@@ -37,6 +37,7 @@ Its statement uses no other declaration mapped here.
 
 ## Proof depends on
 
+- [Jensen's inequality for the square of a mean](../part-02/jensens-inequality-for-the-square-of-a-mean.md)
 - [Lebesgue's differentiation theorem along dyadic cubes](../../measure/lebesgues-differentiation-theorem-along-dyadic-c.md)
 
 ## Lean
@@ -46,4 +47,4 @@ Formalized in Tau Ceti as [`TauCeti.measure_lt_enorm_sub_setAverage_le_inv_two_p
 ## Sources
 
 - [Tau Ceti documentation: `TauCeti.measure_lt_enorm_sub_setAverage_le_inv_two_pow`](https://taucetiproject.org/docs/TauCeti/MeasureTheory/Integral/JohnNirenberg.html#TauCeti.measure_lt_enorm_sub_setAverage_le_inv_two_pow)
-- [Source of `TauCeti.measure_lt_enorm_sub_setAverage_le_inv_two_pow` in TauCeti/MeasureTheory/Integral/JohnNirenberg.lean](https://github.com/TauCetiProject/TauCeti/blob/a6027b1d24fcb935c53bd5b50d11b40991cda418/TauCeti/MeasureTheory/Integral/JohnNirenberg.lean#L439)
+- [Source of `TauCeti.measure_lt_enorm_sub_setAverage_le_inv_two_pow` in TauCeti/MeasureTheory/Integral/JohnNirenberg.lean](https://github.com/TauCetiProject/TauCeti/blob/cd41bffcb343151b3e58c89392e206b11fe78c1c/TauCeti/MeasureTheory/Integral/JohnNirenberg.lean#L441)

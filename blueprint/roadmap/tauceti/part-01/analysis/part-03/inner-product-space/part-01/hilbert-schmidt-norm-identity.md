@@ -34,4 +34,4 @@ Formalized in Tau Ceti as [`HilbertBasis.hilbertSchmidtNorm_columnOperator`](htt
 ## Sources
 
 - [Tau Ceti documentation: `HilbertBasis.hilbertSchmidtNorm_columnOperator`](https://taucetiproject.org/docs/TauCeti/Analysis/InnerProductSpace/HilbertSchmidt/Columns.html#HilbertBasis.hilbertSchmidtNorm_columnOperator)
-- [Source of `HilbertBasis.hilbertSchmidtNorm_columnOperator` in TauCeti/Analysis/InnerProductSpace/HilbertSchmidt/Columns.lean](https://github.com/TauCetiProject/TauCeti/blob/a6027b1d24fcb935c53bd5b50d11b40991cda418/TauCeti/Analysis/InnerProductSpace/HilbertSchmidt/Columns.lean#L246)
+- [Source of `HilbertBasis.hilbertSchmidtNorm_columnOperator` in TauCeti/Analysis/InnerProductSpace/HilbertSchmidt/Columns.lean](https://github.com/TauCetiProject/TauCeti/blob/cd41bffcb343151b3e58c89392e206b11fe78c1c/TauCeti/Analysis/InnerProductSpace/HilbertSchmidt/Columns.lean#L246)

@@ -27,18 +27,11 @@ TauCeti.IsFreelyIndependentElements.tendsto_law_inv_sqrt_smul_sum_semicircleReal
 
 ## Depends on
 
-- [PositiveLinearMap.law](positivelinearmap-law.md)
-- [TauCeti.IsFreelyIndependent](tauceti-isfreelyindependent.md)
-- [TauCeti.Probability.semicircleReal](../random-matrices/tauceti-probability-semicirclereal.md)
+Its statement uses no other declaration mapped here.
 
 ## Proof depends on
 
-- [TauCeti.apply_prod_ofFn_eq_sum_prod_freeCumulant](tauceti-apply-prod-offn-eq-sum-prod-freecumulant.md)
-- [TauCeti.freeCumulant](tauceti-freecumulant.md)
-- [TauCeti.freeCumulant_eq_sum_mu_mul_partitionMoment](tauceti-freecumulant-eq-sum-mu-mul-partitionmome.md)
-- [TauCeti.freeCumulant_fiberProd_eq_sum_prod](tauceti-freecumulant-fiberprod-eq-sum-prod.md)
-- [TauCeti.NoncrossingPartition.card_isPairing_fin_eq_catalan](tauceti-noncrossingpartition-card-ispairing-fin.md)
-- [TauCeti.partitionCumulant_eq_prod_freeCumulant](tauceti-partitioncumulant-eq-prod-freecumulant.md)
+- [TauCeti.IsFreelyIndependentElements.tendsto_apply_inv_sqrt_smul_sum_pow_semicircleReal](tauceti-isfreelyindependentelements-tendsto-appl.md)
 
 ## Lean
 
@@ -61,4 +54,5 @@ TauCeti.IsFreelyIndependentElements.tendsto_law_inv_sqrt_smul_sum_of_apply_pow_e
 ## Sources
 
 - [Tau Ceti documentation: `TauCeti.IsFreelyIndependentElements.tendsto_law_inv_sqrt_smul_sum_semicircleReal`](https://taucetiproject.org/docs/TauCeti/Probability/FreeProbability/Law/CentralLimit.html#TauCeti.IsFreelyIndependentElements.tendsto_law_inv_sqrt_smul_sum_semicircleReal)
-- [Source of `TauCeti.IsFreelyIndependentElements.tendsto_law_inv_sqrt_smul_sum_semicircleReal` in TauCeti/Probability/FreeProbability/Law/CentralLimit.lean](https://github.com/TauCetiProject/TauCeti/blob/a6027b1d24fcb935c53bd5b50d11b40991cda418/TauCeti/Probability/FreeProbability/Law/CentralLimit.lean#L60)
+- [Source of `TauCeti.IsFreelyIndependentElements.tendsto_law_inv_sqrt_smul_sum_semicircleReal` in TauCeti/Probability/FreeProbability/Law/CentralLimit.lean](https://github.com/TauCetiProject/TauCeti/blob/cd41bffcb343151b3e58c89392e206b11fe78c1c/TauCeti/Probability/FreeProbability/Law/CentralLimit.lean#L60)
+- [Tau Ceti roadmap status: Free probability, free products, and random matrix models](https://github.com/TauCetiProject/TauCetiRoadmap/blob/612845ab80fb9c2b9bee724a156756ee78031591/TauCetiRoadmap/FreeProbability/STATUS.md)

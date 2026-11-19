@@ -33,8 +33,8 @@ Its statement uses no other declaration mapped here.
 
 ## Proof depends on
 
-- [Siegel's lemma over a number field, with rational integer unknowns (Evertse, Theorem 3.20)](../number-field/siegels-lemma-over-a-number-field-with-rational.md)
-- [The Wronskian criterion](../../../ring-theory/part-01/polynomial/the-wronskian-criterion.md)
+- [Siegel's lemma over a number field, with rational integer unknowns (Evertse, Theorem 3.20)](../../part-03/number-field/siegels-lemma-over-a-number-field-with-rational.md)
+- [The Wronskian criterion](../../../ring-theory/part-02/polynomial/the-wronskian-criterion.md)
 
 ## Lean
 
@@ -43,4 +43,4 @@ Formalized in Tau Ceti as [`TauCeti.thue_gap_principle`](https://taucetiproject.
 ## Sources
 
 - [Tau Ceti documentation: `TauCeti.thue_gap_principle`](https://taucetiproject.org/docs/TauCeti/NumberTheory/DiophantineApproximation/Thue/GapPrinciple.html#TauCeti.thue_gap_principle)
-- [Source of `TauCeti.thue_gap_principle` in TauCeti/NumberTheory/DiophantineApproximation/Thue/GapPrinciple.lean](https://github.com/TauCetiProject/TauCeti/blob/a6027b1d24fcb935c53bd5b50d11b40991cda418/TauCeti/NumberTheory/DiophantineApproximation/Thue/GapPrinciple.lean#L86)
+- [Source of `TauCeti.thue_gap_principle` in TauCeti/NumberTheory/DiophantineApproximation/Thue/GapPrinciple.lean](https://github.com/TauCetiProject/TauCeti/blob/cd41bffcb343151b3e58c89392e206b11fe78c1c/TauCeti/NumberTheory/DiophantineApproximation/Thue/GapPrinciple.lean#L87)

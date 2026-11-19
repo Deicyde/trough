@@ -39,5 +39,5 @@ Formalized in Tau Ceti as [`TauCeti.Hodge.exists_isCompl_of_isPolarizable`](http
 ## Sources
 
 - [Tau Ceti documentation: `TauCeti.Hodge.exists_isCompl_of_isPolarizable`](https://taucetiproject.org/docs/TauCeti/Geometry/Hodge/Orthogonal.html#TauCeti.Hodge.exists_isCompl_of_isPolarizable)
-- [Source of `TauCeti.Hodge.exists_isCompl_of_isPolarizable` in TauCeti/Geometry/Hodge/Orthogonal.lean](https://github.com/TauCetiProject/TauCeti/blob/a6027b1d24fcb935c53bd5b50d11b40991cda418/TauCeti/Geometry/Hodge/Orthogonal.lean#L279)
-- [Tau Ceti roadmap status: Hodge structures (pure, mixed, and polarized)](https://github.com/TauCetiProject/TauCetiRoadmap/blob/9f7c032adaf1b838e8183d63ff3cfa886d061cb3/Completed/HodgeStructures/STATUS.md)
+- [Source of `TauCeti.Hodge.exists_isCompl_of_isPolarizable` in TauCeti/Geometry/Hodge/Orthogonal.lean](https://github.com/TauCetiProject/TauCeti/blob/cd41bffcb343151b3e58c89392e206b11fe78c1c/TauCeti/Geometry/Hodge/Orthogonal.lean#L279)
+- [Tau Ceti roadmap status: Hodge structures (pure, mixed, and polarized)](https://github.com/TauCetiProject/TauCetiRoadmap/blob/612845ab80fb9c2b9bee724a156756ee78031591/Completed/HodgeStructures/STATUS.md)

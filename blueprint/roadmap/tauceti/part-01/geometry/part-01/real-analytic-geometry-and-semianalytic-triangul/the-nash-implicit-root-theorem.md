@@ -30,7 +30,7 @@ TauCeti.IsNashAt.exists_isNashAt_eventually_eq_zero_iff.{u_1} {σ : Type u_1} [F
 
 ## Proof depends on
 
-- [The analytic implicit root theorem](../../../analysis/part-02/analytic/the-analytic-implicit-root-theorem.md)
+- [The analytic implicit root theorem](../../../analysis/part-03/analytic/the-analytic-implicit-root-theorem.md)
 - [The local Nash graph criterion](the-local-nash-graph-criterion.md)
 - [The Tarski–Seidenberg theorem](../complex-morse-theory-affine-topology-and-weak-le/the-tarski-seidenberg-theorem.md)
 
@@ -41,4 +41,4 @@ Formalized in Tau Ceti as [`TauCeti.IsNashAt.exists_isNashAt_eventually_eq_zero_
 ## Sources
 
 - [Tau Ceti documentation: `TauCeti.IsNashAt.exists_isNashAt_eventually_eq_zero_iff`](https://taucetiproject.org/docs/TauCeti/Geometry/RealAlgebraic/Nash/Implicit.html#TauCeti.IsNashAt.exists_isNashAt_eventually_eq_zero_iff)
-- [Source of `TauCeti.IsNashAt.exists_isNashAt_eventually_eq_zero_iff` in TauCeti/Geometry/RealAlgebraic/Nash/Implicit.lean](https://github.com/TauCetiProject/TauCeti/blob/a6027b1d24fcb935c53bd5b50d11b40991cda418/TauCeti/Geometry/RealAlgebraic/Nash/Implicit.lean#L98)
+- [Source of `TauCeti.IsNashAt.exists_isNashAt_eventually_eq_zero_iff` in TauCeti/Geometry/RealAlgebraic/Nash/Implicit.lean](https://github.com/TauCetiProject/TauCeti/blob/cd41bffcb343151b3e58c89392e206b11fe78c1c/TauCeti/Geometry/RealAlgebraic/Nash/Implicit.lean#L98)

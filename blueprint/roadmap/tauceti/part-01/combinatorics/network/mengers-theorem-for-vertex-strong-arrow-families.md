@@ -31,7 +31,6 @@ Its statement uses no other declaration mapped here.
 
 ## Proof depends on
 
-- [Max-flow/min-cut theorem](../finite-graph-connectivity-and-network-flows/part-01/max-flow-min-cut-theorem.md)
 - [Max-flow/min-cut theorem between vertex sets](max-flow-min-cut-theorem-between-vertex-sets.md)
 - [Vertex-capacitated Menger's theorem for directed paths](vertex-capacitated-mengers-theorem-for-directed.md)
 
@@ -166,4 +165,4 @@ TauCeti.forall_exists_reachableAvoiding_iff_exists_paths.{u, v} {V : Type u} {Q 
 ## Sources
 
 - [Tau Ceti documentation: `TauCeti.isVertexStrong_iff_exists_paths`](https://taucetiproject.org/docs/TauCeti/Combinatorics/Network/Connectivity/Basic.html#TauCeti.isVertexStrong_iff_exists_paths)
-- [Source of `TauCeti.isVertexStrong_iff_exists_paths` in TauCeti/Combinatorics/Network/Connectivity/Basic.lean](https://github.com/TauCetiProject/TauCeti/blob/a6027b1d24fcb935c53bd5b50d11b40991cda418/TauCeti/Combinatorics/Network/Connectivity/Basic.lean#L285)
+- [Source of `TauCeti.isVertexStrong_iff_exists_paths` in TauCeti/Combinatorics/Network/Connectivity/Basic.lean](https://github.com/TauCetiProject/TauCeti/blob/cd41bffcb343151b3e58c89392e206b11fe78c1c/TauCeti/Combinatorics/Network/Connectivity/Basic.lean#L285)

@@ -49,4 +49,4 @@ Subgroup.indClassFun_mackey.{u_1, u_2} {k : Type u_1} [Semiring k] {G : Type u_2
 ## Sources
 
 - [Tau Ceti documentation: `TauCeti.character_resFDRep_indFDRep_mackey`](https://taucetiproject.org/docs/TauCeti/RepresentationTheory/Induction/Mackey/Basic.html#TauCeti.character_resFDRep_indFDRep_mackey)
-- [Source of `TauCeti.character_resFDRep_indFDRep_mackey` in TauCeti/RepresentationTheory/Induction/Mackey/Basic.lean](https://github.com/TauCetiProject/TauCeti/blob/a6027b1d24fcb935c53bd5b50d11b40991cda418/TauCeti/RepresentationTheory/Induction/Mackey/Basic.lean#L501)
+- [Source of `TauCeti.character_resFDRep_indFDRep_mackey` in TauCeti/RepresentationTheory/Induction/Mackey/Basic.lean](https://github.com/TauCetiProject/TauCeti/blob/cd41bffcb343151b3e58c89392e206b11fe78c1c/TauCeti/RepresentationTheory/Induction/Mackey/Basic.lean#L517)

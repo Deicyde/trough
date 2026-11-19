@@ -27,7 +27,7 @@ Its statement uses no other declaration mapped here.
 
 ## Proof depends on
 
-- [Jacobi's complementary-minor identity](../../../linear-algebra/matrix/jacobis-complementary-minor-identity.md)
+- [Jacobi's complementary-minor identity](../../../linear-algebra/part-01/matrix/jacobis-complementary-minor-identity.md)
 
 ## Lean
 
@@ -36,4 +36,4 @@ Formalized in Tau Ceti as [`TauCeti.det_submatrix_hsymmToeplitz`](https://taucet
 ## Sources
 
 - [Tau Ceti documentation: `TauCeti.det_submatrix_hsymmToeplitz`](https://taucetiproject.org/docs/TauCeti/RingTheory/MvPolynomial/Symmetric/Complete/ToeplitzMinor.html#TauCeti.det_submatrix_hsymmToeplitz)
-- [Source of `TauCeti.det_submatrix_hsymmToeplitz` in TauCeti/RingTheory/MvPolynomial/Symmetric/Complete/ToeplitzMinor.lean](https://github.com/TauCetiProject/TauCeti/blob/a6027b1d24fcb935c53bd5b50d11b40991cda418/TauCeti/RingTheory/MvPolynomial/Symmetric/Complete/ToeplitzMinor.lean#L52)
+- [Source of `TauCeti.det_submatrix_hsymmToeplitz` in TauCeti/RingTheory/MvPolynomial/Symmetric/Complete/ToeplitzMinor.lean](https://github.com/TauCetiProject/TauCeti/blob/cd41bffcb343151b3e58c89392e206b11fe78c1c/TauCeti/RingTheory/MvPolynomial/Symmetric/Complete/ToeplitzMinor.lean#L52)

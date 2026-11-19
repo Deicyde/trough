@@ -29,7 +29,7 @@ Its statement uses no other declaration mapped here.
 
 ## Proof depends on
 
-- [The Gauss–Bonnet formula](../../part-02/complex/part-01/the-gauss-bonnet-formula.md)
+- [The Gauss–Bonnet formula](../../part-03/complex/part-02/the-gauss-bonnet-formula.md)
 - [The Möbius difference formula](../../../algebra/part-02/other-results/the-mobius-difference-formula.md)
 
 ## Lean
@@ -39,5 +39,5 @@ Formalized in Tau Ceti as [`TauCeti.UpperHalfPlane.ConvexPolygon.SidePairing.isC
 ## Sources
 
 - [Tau Ceti documentation: `TauCeti.UpperHalfPlane.ConvexPolygon.SidePairing.isCofinite_of_isParabolic`](https://taucetiproject.org/docs/TauCeti/Analysis/Complex/Fuchsian/Polygon/Poincare.html#TauCeti.UpperHalfPlane.ConvexPolygon.SidePairing.isCofinite_of_isParabolic)
-- [Source of `TauCeti.UpperHalfPlane.ConvexPolygon.SidePairing.isCofinite_of_isParabolic` in TauCeti/Analysis/Complex/Fuchsian/Polygon/Poincare.lean](https://github.com/TauCetiProject/TauCeti/blob/a6027b1d24fcb935c53bd5b50d11b40991cda418/TauCeti/Analysis/Complex/Fuchsian/Polygon/Poincare.lean#L84)
-- [Tau Ceti roadmap status: Fuchsian groups and orbifold Riemann surfaces](https://github.com/TauCetiProject/TauCetiRoadmap/blob/9f7c032adaf1b838e8183d63ff3cfa886d061cb3/TauCetiRoadmap/FuchsianOrbifolds/STATUS.md)
+- [Source of `TauCeti.UpperHalfPlane.ConvexPolygon.SidePairing.isCofinite_of_isParabolic` in TauCeti/Analysis/Complex/Fuchsian/Polygon/Poincare.lean](https://github.com/TauCetiProject/TauCeti/blob/cd41bffcb343151b3e58c89392e206b11fe78c1c/TauCeti/Analysis/Complex/Fuchsian/Polygon/Poincare.lean#L84)
+- [Tau Ceti roadmap status: Fuchsian groups and orbifold Riemann surfaces](https://github.com/TauCetiProject/TauCetiRoadmap/blob/612845ab80fb9c2b9bee724a156756ee78031591/TauCetiRoadmap/FuchsianOrbifolds/STATUS.md)

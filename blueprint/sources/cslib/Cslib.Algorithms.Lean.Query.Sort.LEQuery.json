@@ -1,0 +1,20 @@
+{
+ "schema": "trough-ledger/v1",
+ "library": "CSLib",
+ "repo": "leanprover/cslib",
+ "rev": "86d560b6cbb379bd82512424cbcd2a915a1565e7",
+ "module": "Cslib.Algorithms.Lean.Query.Sort.LEQuery",
+ "file": "Cslib/Algorithms/Lean/Query/Sort/LEQuery.lean",
+ "public": [
+  {"name": "Cslib.Query.LEQuery", "kind": "inductive", "line": 23},
+  {"name": "Cslib.Query.LEQuery.ask", "kind": "abbrev", "line": 27},
+  {"name": "Cslib.Query.LEQuery.eval_ask", "kind": "theorem", "line": 30},
+  {"name": "Cslib.Query.LEQuery.oracleOf", "kind": "def", "line": 34},
+  {"name": "Cslib.Query.LEQuery.oracleOf_le", "kind": "theorem", "line": 37},
+  {"name": "Cslib.Query.LEQuery.cardResponse_eq_two", "kind": "theorem", "line": 41},
+  {"name": "Cslib.Query.LEQuery.cardResponse_le_two", "kind": "theorem", "line": 44}
+ ],
+ "private": [],
+ "missing": [],
+ "unread": "Unnamed instances, the names an `alias ⟨…⟩` command gives, and the names Lean generates for a declaration (constructors, recursors, derived instances) are not read from the source, so they are not listed."
+}

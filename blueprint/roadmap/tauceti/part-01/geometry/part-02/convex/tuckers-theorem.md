@@ -38,11 +38,11 @@ Formalized in Tau Ceti as [`TauCeti.exists_nonneg_sum_smul_eq_zero_and_forall_co
 
 ```lean
 TauCeti.exists_nat_sum_nsmul_eq_zero_and_forall_coeff_add_dual_pos.{u_1, u_4} {ι : Type u_1}
-  {N : Type u_4} [AddCommGroup N] [Module.Free ℤ N] [Module.Finite ℤ N] [Fintype ι] (a : ι → N) :
+  {N : Type u_4} [AddCommGroup N] [Module.Free ℤ N] [Fintype ι] (a : ι → N) :
   ∃ x m, ∑ j, x j • a j = 0 ∧ (∀ (j : ι), 0 ≤ m (a j)) ∧ ∀ (j : ι), 0 < ↑(x j) + m (a j)
 ```
 
 ## Sources
 
 - [Tau Ceti documentation: `TauCeti.exists_nonneg_sum_smul_eq_zero_and_forall_coeff_add_dual_pos`](https://taucetiproject.org/docs/TauCeti/Geometry/Convex/Cone/Alternative.html#TauCeti.exists_nonneg_sum_smul_eq_zero_and_forall_coeff_add_dual_pos)
-- [Source of `TauCeti.exists_nonneg_sum_smul_eq_zero_and_forall_coeff_add_dual_pos` in TauCeti/Geometry/Convex/Cone/Alternative.lean](https://github.com/TauCetiProject/TauCeti/blob/a6027b1d24fcb935c53bd5b50d11b40991cda418/TauCeti/Geometry/Convex/Cone/Alternative.lean#L145)
+- [Source of `TauCeti.exists_nonneg_sum_smul_eq_zero_and_forall_coeff_add_dual_pos` in TauCeti/Geometry/Convex/Cone/Alternative.lean](https://github.com/TauCetiProject/TauCeti/blob/cd41bffcb343151b3e58c89392e206b11fe78c1c/TauCeti/Geometry/Convex/Cone/Alternative.lean#L145)

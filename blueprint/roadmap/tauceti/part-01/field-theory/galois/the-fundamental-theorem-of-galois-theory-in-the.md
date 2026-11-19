@@ -29,4 +29,4 @@ Formalized in Tau Ceti as [`TauCeti.intermediateFieldEquivClosedSubgroup`](https
 ## Sources
 
 - [Tau Ceti documentation: `TauCeti.intermediateFieldEquivClosedSubgroup`](https://taucetiproject.org/docs/TauCeti/FieldTheory/Galois/AbsoluteGaloisGroup/Basic.html#TauCeti.intermediateFieldEquivClosedSubgroup)
-- [Source of `TauCeti.intermediateFieldEquivClosedSubgroup` in TauCeti/FieldTheory/Galois/AbsoluteGaloisGroup/Basic.lean](https://github.com/TauCetiProject/TauCeti/blob/a6027b1d24fcb935c53bd5b50d11b40991cda418/TauCeti/FieldTheory/Galois/AbsoluteGaloisGroup/Basic.lean#L243)
+- [Source of `TauCeti.intermediateFieldEquivClosedSubgroup` in TauCeti/FieldTheory/Galois/AbsoluteGaloisGroup/Basic.lean](https://github.com/TauCetiProject/TauCeti/blob/cd41bffcb343151b3e58c89392e206b11fe78c1c/TauCeti/FieldTheory/Galois/AbsoluteGaloisGroup/Basic.lean#L243)

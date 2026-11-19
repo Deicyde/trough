@@ -1,0 +1,28 @@
+{
+ "schema": "trough-ledger/v1",
+ "library": "CSLib",
+ "repo": "leanprover/cslib",
+ "rev": "86d560b6cbb379bd82512424cbcd2a915a1565e7",
+ "module": "Cslib.Computability.Machines.Turing.MultiTape.Plumbing.InputFromTape",
+ "file": "Cslib/Computability/Machines/Turing/MultiTape/Plumbing/InputFromTape.lean",
+ "public": [
+  {"name": "Turing.MultiTapeTM.clampMove", "kind": "def", "line": 40},
+  {"name": "Turing.MultiTapeTM.inputFromTape", "kind": "def", "line": 51},
+  {"name": "Turing.MultiTapeTM.inCfg", "kind": "def", "line": 67},
+  {"name": "Turing.MultiTapeTM.inCfg_inputPos", "kind": "lemma", "line": 81},
+  {"name": "Turing.MultiTapeTM.inCfg_workTapes_castAdd", "kind": "lemma", "line": 85},
+  {"name": "Turing.MultiTapeTM.inCfg_workTapes_vip", "kind": "lemma", "line": 90},
+  {"name": "Turing.MultiTapeTM.inCfg_workTapes_flag", "kind": "lemma", "line": 95},
+  {"name": "Turing.MultiTapeTM.inCfg_workTapePos_castAdd", "kind": "lemma", "line": 101},
+  {"name": "Turing.MultiTapeTM.inCfg_workTapePos_natAdd", "kind": "lemma", "line": 107},
+  {"name": "Turing.MultiTapeTM.inCfg_workTapeSymbols_castAdd", "kind": "lemma", "line": 112},
+  {"name": "Turing.MultiTapeTM.inCfg_workTapeSymbols_vip", "kind": "lemma", "line": 119},
+  {"name": "Turing.MultiTapeTM.inCfg_workTapeSymbols_flag", "kind": "lemma", "line": 134},
+  {"name": "Turing.MultiTapeTM.val_moveInputPos_sub_one_eq_clampMove", "kind": "lemma", "line": 140},
+  {"name": "Turing.MultiTapeTM.inCfgHom", "kind": "def", "line": 161},
+  {"name": "Turing.MultiTapeTM.space_map_inCfgHom_le", "kind": "lemma", "line": 176}
+ ],
+ "private": [],
+ "missing": [],
+ "unread": "Unnamed instances, the names an `alias ⟨…⟩` command gives, and the names Lean generates for a declaration (constructors, recursors, derived instances) are not read from the source, so they are not listed."
+}

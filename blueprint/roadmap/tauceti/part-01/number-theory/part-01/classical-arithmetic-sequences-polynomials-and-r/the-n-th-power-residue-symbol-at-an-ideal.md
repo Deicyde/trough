@@ -30,5 +30,5 @@ Formalized in Tau Ceti as [`Ideal.powerResidueSymbolIdeal`](https://taucetiproje
 ## Sources
 
 - [Tau Ceti documentation: `Ideal.powerResidueSymbolIdeal`](https://taucetiproject.org/docs/TauCeti/NumberTheory/NumberField/PowerResidueSymbol/Ideal.html#Ideal.powerResidueSymbolIdeal)
-- [Source of `Ideal.powerResidueSymbolIdeal` in TauCeti/NumberTheory/NumberField/PowerResidueSymbol/Ideal.lean](https://github.com/TauCetiProject/TauCeti/blob/a6027b1d24fcb935c53bd5b50d11b40991cda418/TauCeti/NumberTheory/NumberField/PowerResidueSymbol/Ideal.lean#L90)
-- [Tau Ceti roadmap status: Classical arithmetic, sequences, polynomials and reciprocity](https://github.com/TauCetiProject/TauCetiRoadmap/blob/9f7c032adaf1b838e8183d63ff3cfa886d061cb3/TauCetiRoadmap/ClassicalArithmeticCompletion/STATUS.md)
+- [Source of `Ideal.powerResidueSymbolIdeal` in TauCeti/NumberTheory/NumberField/PowerResidueSymbol/Ideal.lean](https://github.com/TauCetiProject/TauCeti/blob/cd41bffcb343151b3e58c89392e206b11fe78c1c/TauCeti/NumberTheory/NumberField/PowerResidueSymbol/Ideal.lean#L90)
+- [Tau Ceti roadmap status: Classical arithmetic, sequences, polynomials and reciprocity](https://github.com/TauCetiProject/TauCetiRoadmap/blob/612845ab80fb9c2b9bee724a156756ee78031591/TauCetiRoadmap/ClassicalArithmeticCompletion/STATUS.md)

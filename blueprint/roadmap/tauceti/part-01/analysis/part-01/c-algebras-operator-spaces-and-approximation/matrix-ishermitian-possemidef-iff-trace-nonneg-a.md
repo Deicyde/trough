@@ -27,5 +27,5 @@ Formalized in Tau Ceti as [`Matrix.IsHermitian.posSemidef_iff_trace_nonneg_and_d
 ## Sources
 
 - [Tau Ceti documentation: `Matrix.IsHermitian.posSemidef_iff_trace_nonneg_and_det_nonneg`](https://taucetiproject.org/docs/TauCeti/Analysis/Matrix/PosSemidef/FinTwo.html#Matrix.IsHermitian.posSemidef_iff_trace_nonneg_and_det_nonneg)
-- [Source of `Matrix.IsHermitian.posSemidef_iff_trace_nonneg_and_det_nonneg` in TauCeti/Analysis/Matrix/PosSemidef/FinTwo.lean](https://github.com/TauCetiProject/TauCeti/blob/a6027b1d24fcb935c53bd5b50d11b40991cda418/TauCeti/Analysis/Matrix/PosSemidef/FinTwo.lean#L44)
-- [Tau Ceti roadmap status: C*-algebras, operator spaces and approximation](https://github.com/TauCetiProject/TauCetiRoadmap/blob/9f7c032adaf1b838e8183d63ff3cfa886d061cb3/TauCetiRoadmap/CStarAlgebras/STATUS.md)
+- [Source of `Matrix.IsHermitian.posSemidef_iff_trace_nonneg_and_det_nonneg` in TauCeti/Analysis/Matrix/PosSemidef/FinTwo.lean](https://github.com/TauCetiProject/TauCeti/blob/cd41bffcb343151b3e58c89392e206b11fe78c1c/TauCeti/Analysis/Matrix/PosSemidef/FinTwo.lean#L44)
+- [Tau Ceti roadmap status: C*-algebras, operator spaces and approximation](https://github.com/TauCetiProject/TauCetiRoadmap/blob/612845ab80fb9c2b9bee724a156756ee78031591/TauCetiRoadmap/CStarAlgebras/STATUS.md)

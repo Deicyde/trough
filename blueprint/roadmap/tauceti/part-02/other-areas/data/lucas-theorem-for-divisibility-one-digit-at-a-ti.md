@@ -28,4 +28,4 @@ Formalized in Tau Ceti as [`Nat.dvd_choose_add_mul_iff`](https://taucetiproject.
 ## Sources
 
 - [Tau Ceti documentation: `Nat.dvd_choose_add_mul_iff`](https://taucetiproject.org/docs/TauCeti/Data/Nat/Choose/Digits.html#Nat.dvd_choose_add_mul_iff)
-- [Source of `Nat.dvd_choose_add_mul_iff` in TauCeti/Data/Nat/Choose/Digits.lean](https://github.com/TauCetiProject/TauCeti/blob/a6027b1d24fcb935c53bd5b50d11b40991cda418/TauCeti/Data/Nat/Choose/Digits.lean#L55)
+- [Source of `Nat.dvd_choose_add_mul_iff` in TauCeti/Data/Nat/Choose/Digits.lean](https://github.com/TauCetiProject/TauCeti/blob/cd41bffcb343151b3e58c89392e206b11fe78c1c/TauCeti/Data/Nat/Choose/Digits.lean#L55)

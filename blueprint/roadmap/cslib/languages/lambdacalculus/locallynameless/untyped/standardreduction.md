@@ -366,3 +366,4 @@ theorem Standard.iff_seq (lc_M : LC M) : M ⭢ₛ N ↔ ∃ n, StandardSeq n M N
 ## Sources
 
 - [Cslib/Languages/LambdaCalculus/LocallyNameless/Untyped/StandardReduction.lean at 86d560b6](https://github.com/leanprover/cslib/blob/86d560b6cbb379bd82512424cbcd2a915a1565e7/Cslib/Languages/LambdaCalculus/LocallyNameless/Untyped/StandardReduction.lean)
+- [Declaration ledger](../../../../../../sources/cslib/Cslib.Languages.LambdaCalculus.LocallyNameless.Untyped.StandardReduction.json)

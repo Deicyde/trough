@@ -18,9 +18,9 @@ TauCeti.InternalGrading.exists_linearIndependent_isCompl_torsion.{u, u_1} {k : T
   {M : Type u} [Field k] [AddCommGroup M] [_root_.Module k M] [_root_.Module (Polynomial k) M]
   [IsScalarTower k (Polynomial k) M] [Module.Finite (Polynomial k) M]
   {G : TauCeti.InternalGrading k M ℤ} {d : ℕ} (hd : d ≠ 0)
-  (hX : ∀ ⦃p : ℤ⦄ ⦃x : M⦄, x ∈ G.piece ℤ p → Polynomial.X • x ∈ G.piece ℤ (p - ↑d)) :
+  (hX : ∀ ⦃p : ℤ⦄ ⦃x : M⦄, x ∈ G.piece p → Polynomial.X • x ∈ G.piece (p - ↑d)) :
   ∃ ι b deg,
-    (∀ (i : ι), b i ∈ G.piece ℤ (deg i)) ∧
+    (∀ (i : ι), b i ∈ G.piece (deg i)) ∧
       LinearIndependent (Polynomial k) b ∧
         IsCompl (Submodule.torsion (Polynomial k) M) (Submodule.span (Polynomial k) (Set.range b))
 ```
@@ -36,4 +36,4 @@ Formalized in Tau Ceti as [`TauCeti.InternalGrading.exists_linearIndependent_isC
 ## Sources
 
 - [Tau Ceti documentation: `TauCeti.InternalGrading.exists_linearIndependent_isCompl_torsion`](https://taucetiproject.org/docs/TauCeti/Algebra/Module/GradedModule/HomogeneousBasis.html#TauCeti.InternalGrading.exists_linearIndependent_isCompl_torsion)
-- [Source of `TauCeti.InternalGrading.exists_linearIndependent_isCompl_torsion` in TauCeti/Algebra/Module/GradedModule/HomogeneousBasis.lean](https://github.com/TauCetiProject/TauCeti/blob/a6027b1d24fcb935c53bd5b50d11b40991cda418/TauCeti/Algebra/Module/GradedModule/HomogeneousBasis.lean#L159)
+- [Source of `TauCeti.InternalGrading.exists_linearIndependent_isCompl_torsion` in TauCeti/Algebra/Module/GradedModule/HomogeneousBasis.lean](https://github.com/TauCetiProject/TauCeti/blob/cd41bffcb343151b3e58c89392e206b11fe78c1c/TauCeti/Algebra/Module/GradedModule/HomogeneousBasis.lean#L159)

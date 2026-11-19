@@ -1,0 +1,20 @@
+{
+ "schema": "trough-ledger/v1",
+ "library": "CSLib",
+ "repo": "leanprover/cslib",
+ "rev": "86d560b6cbb379bd82512424cbcd2a915a1565e7",
+ "module": "Cslib.Foundations.Order.Heyting",
+ "file": "Cslib/Foundations/Order/Heyting.lean",
+ "public": [
+  {"name": "WithBot.himp", "kind": "abbrev", "line": 23},
+  {"name": "WithBot.bot_himp", "kind": "lemma", "line": 27},
+  {"name": "WithBot.coe_himp_bot", "kind": "lemma", "line": 31},
+  {"name": "WithBot.coe_himp", "kind": "lemma", "line": 35},
+  {"name": "WithBot.heytingAlgebra", "kind": "abbrev", "line": 40},
+  {"name": "WithTop.coheytingAlgebra", "kind": "abbrev", "line": 59},
+  {"name": "WithBot.compl_coe", "kind": "lemma", "line": 76}
+ ],
+ "private": [],
+ "missing": [],
+ "unread": "Unnamed instances, the names an `alias ⟨…⟩` command gives, and the names Lean generates for a declaration (constructors, recursors, derived instances) are not read from the source, so they are not listed."
+}

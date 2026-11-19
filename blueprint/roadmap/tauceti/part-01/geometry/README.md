@@ -2,7 +2,7 @@
 
 Results in Tau Ceti's `TauCeti.Geometry` modules, and the roadmaps whose articles are mostly there: by roadmap, then by area.
 
-## [Analytic families and moduli of… to Symplectic geometry and…](part-01/README.md)
+## [Analytic families and moduli of… to Smooth principal bundles…](part-01/README.md)
 
 - [Analytic families and moduli of complex curves](part-01/analytic-families-and-moduli-of-complex-curves/README.md)
 - [Analytic toric geometry](part-01/analytic-toric-geometry/README.md)
@@ -12,6 +12,7 @@ Results in Tau Ceti's `TauCeti.Geometry` modules, and the roadmaps whose article
 - [Curvature, Jacobi fields, submanifolds, and Bochner geometry](part-01/curvature-jacobi-fields-submanifolds-and-bochner/README.md)
 - [Differential geometry — forms, Stokes, flows, de Rham cohomology, degree, planar Green and Riemannian calculus](part-01/differential-geometry-forms-stokes-flows-de-rham/README.md)
 - [Geodesics, the exponential map, and the Hopf–Rinow theorem](part-01/geodesics-the-exponential-map-and-the-hopf-rinow/README.md)
+- [Geometric topology](part-01/geometric-topology/README.md)
 - [Hamiltonian Floer operations: geometric product and multiplicative PSS](part-01/hamiltonian-floer-operations-geometric-product-a/README.md)
 - [Hodge structures (pure, mixed, and polarized)](part-01/hodge-structures-pure-mixed-and-polarized/README.md)
 - [Lie algebroids, Lie groupoids and Poisson geometry](part-01/lie-algebroids-lie-groupoids-and-poisson-geometr/README.md)
@@ -23,12 +24,11 @@ Results in Tau Ceti's `TauCeti.Geometry` modules, and the roadmaps whose article
 - [Scattering diagrams, wall crossing and theta functions](part-01/scattering-diagrams-wall-crossing-and-theta-func/README.md)
 - [Smooth orbifolds with finite isotropy](part-01/smooth-orbifolds-with-finite-isotropy/README.md)
 - [Smooth principal bundles, connections, and holonomy](part-01/smooth-principal-bundles-connections-and-holonom/README.md)
-- [Symplectic geometry and Hamiltonian mechanics](part-01/symplectic-geometry-and-hamiltonian-mechanics/README.md)
 
-## [Three-dimensional Poincaré… to Other results](part-02/README.md)
+## [Symplectic geometry and… to Other results](part-02/README.md)
 
+- [Symplectic geometry and Hamiltonian mechanics](part-02/symplectic-geometry-and-hamiltonian-mechanics/README.md)
 - [Three-dimensional Poincaré through Ricci flow with surgery](part-02/three-dimensional-poincare-through-ricci-flow-wi/README.md)
-- [The Yamabe problem and conformal scalar curvature](part-02/the-yamabe-problem-and-conformal-scalar-curvatur/README.md)
 - [Contact](part-02/contact/README.md)
 - [Convex](part-02/convex/README.md)
 - [Lie](part-02/lie/README.md)

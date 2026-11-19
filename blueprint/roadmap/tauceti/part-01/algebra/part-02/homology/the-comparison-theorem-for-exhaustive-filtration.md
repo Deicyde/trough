@@ -89,4 +89,4 @@ Formalized in Tau Ceti as [`CochainComplex.isIso_homologyMap_of_isIso_spectralSe
 ## Sources
 
 - [Tau Ceti documentation: `CochainComplex.isIso_homologyMap_of_isIso_spectralSequence_page_of_exhaustive`](https://taucetiproject.org/docs/TauCeti/Algebra/Homology/SpectralSequence/Filtered/Exhaustive.html#CochainComplex.isIso_homologyMap_of_isIso_spectralSequence_page_of_exhaustive)
-- [Source of `CochainComplex.isIso_homologyMap_of_isIso_spectralSequence_page_of_exhaustive` in TauCeti/Algebra/Homology/SpectralSequence/Filtered/Exhaustive.lean](https://github.com/TauCetiProject/TauCeti/blob/a6027b1d24fcb935c53bd5b50d11b40991cda418/TauCeti/Algebra/Homology/SpectralSequence/Filtered/Exhaustive.lean#L194)
+- [Source of `CochainComplex.isIso_homologyMap_of_isIso_spectralSequence_page_of_exhaustive` in TauCeti/Algebra/Homology/SpectralSequence/Filtered/Exhaustive.lean](https://github.com/TauCetiProject/TauCeti/blob/cd41bffcb343151b3e58c89392e206b11fe78c1c/TauCeti/Algebra/Homology/SpectralSequence/Filtered/Exhaustive.lean#L194)

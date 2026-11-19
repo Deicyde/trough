@@ -30,4 +30,4 @@ Formalized in Tau Ceti as [`Finset.sum_pow_of_commute_of_mul_self_eq_zero`](http
 ## Sources
 
 - [Tau Ceti documentation: `Finset.sum_pow_of_commute_of_mul_self_eq_zero`](https://taucetiproject.org/docs/TauCeti/Algebra/BigOperators/Ring/SquareZero.html#Finset.sum_pow_of_commute_of_mul_self_eq_zero)
-- [Source of `Finset.sum_pow_of_commute_of_mul_self_eq_zero` in TauCeti/Algebra/BigOperators/Ring/SquareZero.lean](https://github.com/TauCetiProject/TauCeti/blob/a6027b1d24fcb935c53bd5b50d11b40991cda418/TauCeti/Algebra/BigOperators/Ring/SquareZero.lean#L77)
+- [Source of `Finset.sum_pow_of_commute_of_mul_self_eq_zero` in TauCeti/Algebra/BigOperators/Ring/SquareZero.lean](https://github.com/TauCetiProject/TauCeti/blob/cd41bffcb343151b3e58c89392e206b11fe78c1c/TauCeti/Algebra/BigOperators/Ring/SquareZero.lean#L77)

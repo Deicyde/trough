@@ -55,4 +55,4 @@ Formalized in Tau Ceti as [`TauCeti.AlgebraicGeometry.InvertibleSheaf.finrank_co
 ## Sources
 
 - [Tau Ceti documentation: `TauCeti.AlgebraicGeometry.InvertibleSheaf.finrank_cohomology_zero_sub_finrank_cohomology_zero_tensor_dual`](https://taucetiproject.org/docs/TauCeti/AlgebraicGeometry/LineBundle/SerreDuality.html#TauCeti.AlgebraicGeometry.InvertibleSheaf.finrank_cohomology_zero_sub_finrank_cohomology_zero_tensor_dual)
-- [Source of `TauCeti.AlgebraicGeometry.InvertibleSheaf.finrank_cohomology_zero_sub_finrank_cohomology_zero_tensor_dual` in TauCeti/AlgebraicGeometry/LineBundle/SerreDuality.lean](https://github.com/TauCetiProject/TauCeti/blob/a6027b1d24fcb935c53bd5b50d11b40991cda418/TauCeti/AlgebraicGeometry/LineBundle/SerreDuality.lean#L196)
+- [Source of `TauCeti.AlgebraicGeometry.InvertibleSheaf.finrank_cohomology_zero_sub_finrank_cohomology_zero_tensor_dual` in TauCeti/AlgebraicGeometry/LineBundle/SerreDuality.lean](https://github.com/TauCetiProject/TauCeti/blob/cd41bffcb343151b3e58c89392e206b11fe78c1c/TauCeti/AlgebraicGeometry/LineBundle/SerreDuality.lean#L196)

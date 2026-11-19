@@ -37,4 +37,4 @@ Formalized in Tau Ceti as [`TauCeti.nonempty_algEquiv_real_or_quaternion`](https
 ## Sources
 
 - [Tau Ceti documentation: `TauCeti.nonempty_algEquiv_real_or_quaternion`](https://taucetiproject.org/docs/TauCeti/Algebra/CentralSimple/Real.html#TauCeti.nonempty_algEquiv_real_or_quaternion)
-- [Source of `TauCeti.nonempty_algEquiv_real_or_quaternion` in TauCeti/Algebra/CentralSimple/Real.lean](https://github.com/TauCetiProject/TauCeti/blob/a6027b1d24fcb935c53bd5b50d11b40991cda418/TauCeti/Algebra/CentralSimple/Real.lean#L368)
+- [Source of `TauCeti.nonempty_algEquiv_real_or_quaternion` in TauCeti/Algebra/CentralSimple/Real.lean](https://github.com/TauCetiProject/TauCeti/blob/cd41bffcb343151b3e58c89392e206b11fe78c1c/TauCeti/Algebra/CentralSimple/Real.lean#L401)

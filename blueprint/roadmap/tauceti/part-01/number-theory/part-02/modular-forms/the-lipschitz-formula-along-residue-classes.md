@@ -34,4 +34,4 @@ Formalized in Tau Ceti as [`TauCeti.EisensteinSeries.qExpansion_identity_zmod`](
 ## Sources
 
 - [Tau Ceti documentation: `TauCeti.EisensteinSeries.qExpansion_identity_zmod`](https://taucetiproject.org/docs/TauCeti/NumberTheory/ModularForms/EisensteinSeries/QExpansion.html#TauCeti.EisensteinSeries.qExpansion_identity_zmod)
-- [Source of `TauCeti.EisensteinSeries.qExpansion_identity_zmod` in TauCeti/NumberTheory/ModularForms/EisensteinSeries/QExpansion.lean](https://github.com/TauCetiProject/TauCeti/blob/a6027b1d24fcb935c53bd5b50d11b40991cda418/TauCeti/NumberTheory/ModularForms/EisensteinSeries/QExpansion.lean#L125)
+- [Source of `TauCeti.EisensteinSeries.qExpansion_identity_zmod` in TauCeti/NumberTheory/ModularForms/EisensteinSeries/QExpansion.lean](https://github.com/TauCetiProject/TauCeti/blob/cd41bffcb343151b3e58c89392e206b11fe78c1c/TauCeti/NumberTheory/ModularForms/EisensteinSeries/QExpansion.lean#L128)

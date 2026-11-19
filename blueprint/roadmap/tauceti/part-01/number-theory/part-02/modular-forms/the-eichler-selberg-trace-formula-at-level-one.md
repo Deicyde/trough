@@ -34,7 +34,7 @@ Its statement uses no other declaration mapped here.
 
 ## Proof depends on
 
-- [Cayley–Hamilton in size two](../../../linear-algebra/matrix/cayley-hamilton-in-size-two.md)
+- [Cayley–Hamilton in size two](../../../linear-algebra/part-01/matrix/cayley-hamilton-in-size-two.md)
 - [Popa–Zagier's ambient trace identity (Popa–Zagier, §2, Propositions 2 and 3)](popa-zagiers-ambient-trace-identity-popa-zagier.md)
 
 ## Lean
@@ -44,4 +44,4 @@ Formalized in Tau Ceti as [`TauCeti.trace_heckeTCuspLevelOne_eq_neg_hurwitzClass
 ## Sources
 
 - [Tau Ceti documentation: `TauCeti.trace_heckeTCuspLevelOne_eq_neg_hurwitzClassNumber_sub_min`](https://taucetiproject.org/docs/TauCeti/NumberTheory/ModularForms/LevelOne/TraceFormula/EichlerSelberg.html#TauCeti.trace_heckeTCuspLevelOne_eq_neg_hurwitzClassNumber_sub_min)
-- [Source of `TauCeti.trace_heckeTCuspLevelOne_eq_neg_hurwitzClassNumber_sub_min` in TauCeti/NumberTheory/ModularForms/LevelOne/TraceFormula/EichlerSelberg.lean](https://github.com/TauCetiProject/TauCeti/blob/a6027b1d24fcb935c53bd5b50d11b40991cda418/TauCeti/NumberTheory/ModularForms/LevelOne/TraceFormula/EichlerSelberg.lean#L57)
+- [Source of `TauCeti.trace_heckeTCuspLevelOne_eq_neg_hurwitzClassNumber_sub_min` in TauCeti/NumberTheory/ModularForms/LevelOne/TraceFormula/EichlerSelberg.lean](https://github.com/TauCetiProject/TauCeti/blob/cd41bffcb343151b3e58c89392e206b11fe78c1c/TauCeti/NumberTheory/ModularForms/LevelOne/TraceFormula/EichlerSelberg.lean#L57)

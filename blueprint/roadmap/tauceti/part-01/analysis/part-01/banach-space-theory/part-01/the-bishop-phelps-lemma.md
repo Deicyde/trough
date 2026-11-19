@@ -31,4 +31,4 @@ Formalized in Tau Ceti as [`StrongDual.exists_pos_norm_sub_ofReal_smul_le`](http
 ## Sources
 
 - [Tau Ceti documentation: `StrongDual.exists_pos_norm_sub_ofReal_smul_le`](https://taucetiproject.org/docs/TauCeti/Analysis/Normed/Module/Dual/BishopPhelps.html#StrongDual.exists_pos_norm_sub_ofReal_smul_le)
-- [Source of `StrongDual.exists_pos_norm_sub_ofReal_smul_le` in TauCeti/Analysis/Normed/Module/Dual/BishopPhelps.lean](https://github.com/TauCetiProject/TauCeti/blob/a6027b1d24fcb935c53bd5b50d11b40991cda418/TauCeti/Analysis/Normed/Module/Dual/BishopPhelps.lean#L94)
+- [Source of `StrongDual.exists_pos_norm_sub_ofReal_smul_le` in TauCeti/Analysis/Normed/Module/Dual/BishopPhelps.lean](https://github.com/TauCetiProject/TauCeti/blob/cd41bffcb343151b3e58c89392e206b11fe78c1c/TauCeti/Analysis/Normed/Module/Dual/BishopPhelps.lean#L94)

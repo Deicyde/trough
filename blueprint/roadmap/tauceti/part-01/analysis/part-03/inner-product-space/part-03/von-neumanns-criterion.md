@@ -8,9 +8,9 @@ proof: formalized
 
 # Von Neumann's criterion
 
-A symmetric partial linear map is self-adjoint if its
-shifts by `+i` and `-i` are surjective. Density follows from the first shift, so no
-independent density hypothesis is needed.
+A symmetric partial linear map on a complex Hilbert space is
+self-adjoint if its shifts by `+i` and `-i` are surjective. This is the pair-shift criterion at
+`μ = 1`.
 
 ```lean
 LinearPMap.isSelfAdjoint_of_surjective_addSub.{u_3} {H : Type u_3} [NormedAddCommGroup H]
@@ -25,9 +25,9 @@ Its statement uses no other declaration mapped here.
 
 ## Lean
 
-Formalized in Tau Ceti as [`LinearPMap.isSelfAdjoint_of_surjective_addSub`](https://taucetiproject.org/docs/TauCeti/Analysis/InnerProductSpace/LinearPMap/SelfAdjoint.html#LinearPMap.isSelfAdjoint_of_surjective_addSub).
+Formalized in Tau Ceti as [`LinearPMap.isSelfAdjoint_of_surjective_addSub`](https://taucetiproject.org/docs/TauCeti/Analysis/InnerProductSpace/LinearPMap/PairShift.html#LinearPMap.isSelfAdjoint_of_surjective_addSub).
 
 ## Sources
 
-- [Tau Ceti documentation: `LinearPMap.isSelfAdjoint_of_surjective_addSub`](https://taucetiproject.org/docs/TauCeti/Analysis/InnerProductSpace/LinearPMap/SelfAdjoint.html#LinearPMap.isSelfAdjoint_of_surjective_addSub)
-- [Source of `LinearPMap.isSelfAdjoint_of_surjective_addSub` in TauCeti/Analysis/InnerProductSpace/LinearPMap/SelfAdjoint.lean](https://github.com/TauCetiProject/TauCeti/blob/a6027b1d24fcb935c53bd5b50d11b40991cda418/TauCeti/Analysis/InnerProductSpace/LinearPMap/SelfAdjoint.lean#L395)
+- [Tau Ceti documentation: `LinearPMap.isSelfAdjoint_of_surjective_addSub`](https://taucetiproject.org/docs/TauCeti/Analysis/InnerProductSpace/LinearPMap/PairShift.html#LinearPMap.isSelfAdjoint_of_surjective_addSub)
+- [Source of `LinearPMap.isSelfAdjoint_of_surjective_addSub` in TauCeti/Analysis/InnerProductSpace/LinearPMap/PairShift.lean](https://github.com/TauCetiProject/TauCeti/blob/cd41bffcb343151b3e58c89392e206b11fe78c1c/TauCeti/Analysis/InnerProductSpace/LinearPMap/PairShift.lean#L219)

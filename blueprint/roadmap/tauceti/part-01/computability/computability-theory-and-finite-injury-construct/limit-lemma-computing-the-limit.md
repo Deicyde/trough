@@ -33,5 +33,5 @@ Formalized in Tau Ceti as [`TauCeti.Approximation.Converges.computableIn_jump`](
 ## Sources
 
 - [Tau Ceti documentation: `TauCeti.Approximation.Converges.computableIn_jump`](https://taucetiproject.org/docs/TauCeti/Computability/Approximation/Limit.html#TauCeti.Approximation.Converges.computableIn_jump)
-- [Source of `TauCeti.Approximation.Converges.computableIn_jump` in TauCeti/Computability/Approximation/Limit.lean](https://github.com/TauCetiProject/TauCeti/blob/a6027b1d24fcb935c53bd5b50d11b40991cda418/TauCeti/Computability/Approximation/Limit.lean#L68)
-- [Tau Ceti roadmap status: Computability theory and finite-injury constructions](https://github.com/TauCetiProject/TauCetiRoadmap/blob/9f7c032adaf1b838e8183d63ff3cfa886d061cb3/TauCetiRoadmap/ComputabilityTheory/STATUS.md)
+- [Source of `TauCeti.Approximation.Converges.computableIn_jump` in TauCeti/Computability/Approximation/Limit.lean](https://github.com/TauCetiProject/TauCeti/blob/cd41bffcb343151b3e58c89392e206b11fe78c1c/TauCeti/Computability/Approximation/Limit.lean#L68)
+- [Tau Ceti roadmap status: Computability theory and finite-injury constructions](https://github.com/TauCetiProject/TauCetiRoadmap/blob/612845ab80fb9c2b9bee724a156756ee78031591/TauCetiRoadmap/ComputabilityTheory/STATUS.md)

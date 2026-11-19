@@ -48,4 +48,4 @@ TauCeti.eqOn_of_preconnected_of_eventuallyEq_of_contMDiffAt.{u_1, u_2, u_3, u_4,
 ## Sources
 
 - [Tau Ceti documentation: `ContMDiff.eq_of_eventuallyEq`](https://taucetiproject.org/docs/TauCeti/Geometry/Manifold/ContMDiff/Analytic.html#ContMDiff.eq_of_eventuallyEq)
-- [Source of `ContMDiff.eq_of_eventuallyEq` in TauCeti/Geometry/Manifold/ContMDiff/Analytic.lean](https://github.com/TauCetiProject/TauCeti/blob/a6027b1d24fcb935c53bd5b50d11b40991cda418/TauCeti/Geometry/Manifold/ContMDiff/Analytic.lean#L283)
+- [Source of `ContMDiff.eq_of_eventuallyEq` in TauCeti/Geometry/Manifold/ContMDiff/Analytic.lean](https://github.com/TauCetiProject/TauCeti/blob/cd41bffcb343151b3e58c89392e206b11fe78c1c/TauCeti/Geometry/Manifold/ContMDiff/Analytic.lean#L283)

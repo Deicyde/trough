@@ -38,4 +38,4 @@ Formalized in Tau Ceti as [`TauCeti.relativeAlgebraicK1.oddPairing_mk_mk`](https
 ## Sources
 
 - [Tau Ceti documentation: `TauCeti.relativeAlgebraicK1.oddPairing_mk_mk`](https://taucetiproject.org/docs/TauCeti/RingTheory/CyclicCohomology/OddPairing/Relative.html#TauCeti.relativeAlgebraicK1.oddPairing_mk_mk)
-- [Source of `TauCeti.relativeAlgebraicK1.oddPairing_mk_mk` in TauCeti/RingTheory/CyclicCohomology/OddPairing/Relative.lean](https://github.com/TauCetiProject/TauCeti/blob/a6027b1d24fcb935c53bd5b50d11b40991cda418/TauCeti/RingTheory/CyclicCohomology/OddPairing/Relative.lean#L112)
+- [Source of `TauCeti.relativeAlgebraicK1.oddPairing_mk_mk` in TauCeti/RingTheory/CyclicCohomology/OddPairing/Relative.lean](https://github.com/TauCetiProject/TauCeti/blob/cd41bffcb343151b3e58c89392e206b11fe78c1c/TauCeti/RingTheory/CyclicCohomology/OddPairing/Relative.lean#L112)

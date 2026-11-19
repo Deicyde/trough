@@ -9,15 +9,15 @@ proof: formalized
 # The comparison theorem on `E∞`
 
 Let `φ : X ⟶ Y` be a morphism of spectral objects
-indexed by `EInt` and `a ≤ b` such that `H^n(⊥ ≤ a)` and `H^n(b ≤ ⊤)` vanish for `X` and `Y`
-(the filtrations of the abutments in degree `n` start at `a` and end at `b`). If `φ` is an
-isomorphism on `EInfty q n` for `a ≤ q < b`, then it is an isomorphism on the abutment
-`H^n(⊥ ≤ ⊤)`.
+indexed by `EInt` and integers `a`, `b` such that `H^n(⊥ ≤ a)` and `H^n(b ≤ ⊤)` vanish for `X`
+and `Y` (the filtrations of the abutments in degree `n` start at `a` and end at `b`; if `b < a`
+the abutments vanish). If `φ` is an isomorphism on `EInfty q n` for `a ≤ q < b`, then it is an
+isomorphism on the abutment `H^n(⊥ ≤ ⊤)`.
 
 ```lean
 CategoryTheory.Abelian.SpectralObject.isIso_hom_app_abutment.{v_1, u_1} {C : Type u_1}
   [CategoryTheory.Category.{v_1, u_1} C] [CategoryTheory.Abelian C]
-  {X Y : CategoryTheory.Abelian.SpectralObject C EInt} (φ : X ⟶ Y) {a b n : ℤ} (hab : a ≤ b)
+  {X Y : CategoryTheory.Abelian.SpectralObject C EInt} (φ : X ⟶ Y) {a b n : ℤ}
   (hXa :
     CategoryTheory.Limits.IsZero
       ((X.H n).obj (CategoryTheory.ComposableArrows.mk₁ (CategoryTheory.homOfLE ⋯))))
@@ -52,4 +52,4 @@ Formalized in Tau Ceti as [`CategoryTheory.Abelian.SpectralObject.isIso_hom_app_
 ## Sources
 
 - [Tau Ceti documentation: `CategoryTheory.Abelian.SpectralObject.isIso_hom_app_abutment`](https://taucetiproject.org/docs/TauCeti/Algebra/Homology/SpectralObject/Comparison.html#CategoryTheory.Abelian.SpectralObject.isIso_hom_app_abutment)
-- [Source of `CategoryTheory.Abelian.SpectralObject.isIso_hom_app_abutment` in TauCeti/Algebra/Homology/SpectralObject/Comparison.lean](https://github.com/TauCetiProject/TauCeti/blob/a6027b1d24fcb935c53bd5b50d11b40991cda418/TauCeti/Algebra/Homology/SpectralObject/Comparison.lean#L37)
+- [Source of `CategoryTheory.Abelian.SpectralObject.isIso_hom_app_abutment` in TauCeti/Algebra/Homology/SpectralObject/Comparison.lean](https://github.com/TauCetiProject/TauCeti/blob/cd41bffcb343151b3e58c89392e206b11fe78c1c/TauCeti/Algebra/Homology/SpectralObject/Comparison.lean#L37)

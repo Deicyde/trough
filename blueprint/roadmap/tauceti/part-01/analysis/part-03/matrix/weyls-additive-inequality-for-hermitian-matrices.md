@@ -45,4 +45,4 @@ Matrix.IsHermitian.le_eigenvalues₀_add.{u_1, u_2} {𝕜 : Type u_1} {ι : Type
 ## Sources
 
 - [Tau Ceti documentation: `Matrix.IsHermitian.eigenvalues₀_add_le`](https://taucetiproject.org/docs/TauCeti/Analysis/Matrix/Eigenvalues/Basic.html#Matrix.IsHermitian.eigenvalues%E2%82%80_add_le)
-- [Source of `Matrix.IsHermitian.eigenvalues₀_add_le` in TauCeti/Analysis/Matrix/Eigenvalues/Basic.lean](https://github.com/TauCetiProject/TauCeti/blob/a6027b1d24fcb935c53bd5b50d11b40991cda418/TauCeti/Analysis/Matrix/Eigenvalues/Basic.lean#L204)
+- [Source of `Matrix.IsHermitian.eigenvalues₀_add_le` in TauCeti/Analysis/Matrix/Eigenvalues/Basic.lean](https://github.com/TauCetiProject/TauCeti/blob/cd41bffcb343151b3e58c89392e206b11fe78c1c/TauCeti/Analysis/Matrix/Eigenvalues/Basic.lean#L204)

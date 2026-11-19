@@ -1,6 +1,6 @@
 # Homology
 
-Results named in Tau Ceti's `TauCeti.Algebra.Homology` modules and in no roadmap's section, as Tau Ceti has them at commit [a6027b1d](https://github.com/TauCetiProject/TauCeti/tree/a6027b1d24fcb935c53bd5b50d11b40991cda418).
+Results named in Tau Ceti's `TauCeti.Algebra.Homology` modules and in no roadmap's section, as Tau Ceti has them at commit [cd41bffc](https://github.com/TauCetiProject/TauCeti/tree/cd41bffcb343151b3e58c89392e206b11fe78c1c).
 
 - [Auslander–Bridger](auslander-bridger.md)
 - [Buchweitz's theorem](buchweitzs-theorem.md)
@@ -11,7 +11,6 @@ Results named in Tau Ceti's `TauCeti.Algebra.Homology` modules and in no roadmap
 - [The comparison theorem modulo a Serre class](the-comparison-theorem-modulo-a-serre-class.md)
 - [The comparison theorem on `E∞`](the-comparison-theorem-on-e.md)
 - [The differential graded Yoneda lemma](the-differential-graded-yoneda-lemma.md)
-- [Euler–Poincaré for cubes](euler-poincare-for-cubes.md)
 - [Graded Nakayama lemma for free complexes over a polynomial ring](graded-nakayama-lemma-for-free-complexes-over-a.md)
 - [The Künneth theorem for split complexes](the-kunneth-theorem-for-split-complexes.md)
 - [The Morse polynomial identity (`ChainComplex.sum_range_monomial_finrank_X_eq`)](the-morse-polynomial-identity-chaincomplex-sum-r.md)

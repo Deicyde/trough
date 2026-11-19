@@ -48,5 +48,5 @@ Formalized in Tau Ceti as [`HomologicalComplex.reidemeisterTorsion_eq_mul_of_sho
 ## Sources
 
 - [Tau Ceti documentation: `HomologicalComplex.reidemeisterTorsion_eq_mul_of_shortExact`](https://taucetiproject.org/docs/TauCeti/Algebra/Homology/ReidemeisterTorsion/Basic.html#HomologicalComplex.reidemeisterTorsion_eq_mul_of_shortExact)
-- [Source of `HomologicalComplex.reidemeisterTorsion_eq_mul_of_shortExact` in TauCeti/Algebra/Homology/ReidemeisterTorsion/Basic.lean](https://github.com/TauCetiProject/TauCeti/blob/a6027b1d24fcb935c53bd5b50d11b40991cda418/TauCeti/Algebra/Homology/ReidemeisterTorsion/Basic.lean#L664)
-- [Tau Ceti roadmap status: Morse–Novikov homology and dynamical Reidemeister torsion](https://github.com/TauCetiProject/TauCetiRoadmap/blob/9f7c032adaf1b838e8183d63ff3cfa886d061cb3/TauCetiRoadmap/MorseNovikov/STATUS.md)
+- [Source of `HomologicalComplex.reidemeisterTorsion_eq_mul_of_shortExact` in TauCeti/Algebra/Homology/ReidemeisterTorsion/Basic.lean](https://github.com/TauCetiProject/TauCeti/blob/cd41bffcb343151b3e58c89392e206b11fe78c1c/TauCeti/Algebra/Homology/ReidemeisterTorsion/Basic.lean#L765)
+- [Tau Ceti roadmap status: Morse–Novikov homology and dynamical Reidemeister torsion](https://github.com/TauCetiProject/TauCetiRoadmap/blob/612845ab80fb9c2b9bee724a156756ee78031591/TauCetiRoadmap/MorseNovikov/STATUS.md)

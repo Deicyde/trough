@@ -1,6 +1,6 @@
 # Successive minima and Minkowski's theorems
 
-The declarations the status of Tau Ceti's [roadmap](https://github.com/TauCetiProject/TauCetiRoadmap/blob/9f7c032adaf1b838e8183d63ff3cfa886d061cb3/TauCetiRoadmap/SuccessiveMinima/README.md) names as Tau Ceti has them at commit [a6027b1d](https://github.com/TauCetiProject/TauCeti/tree/a6027b1d24fcb935c53bd5b50d11b40991cda418).
+The declarations the status of Tau Ceti's [roadmap](https://github.com/TauCetiProject/TauCetiRoadmap/blob/612845ab80fb9c2b9bee724a156756ee78031591/TauCetiRoadmap/SuccessiveMinima/README.md) names as Tau Ceti has them at commit [cd41bffc](https://github.com/TauCetiProject/TauCeti/tree/cd41bffcb343151b3e58c89392e206b11fe78c1c).
 
 - [Minkowski's second theorem (`ZLattice.two_pow_div_factorial_mul_covolume_le_prod_successiveMin_mul_measureReal`)](minkowskis-second-theorem-zlattice-two-pow-div-f.md)
 - [Equality in the lower bound of Minkowski's second theorem](equality-in-the-lower-bound-of-minkowskis-second.md)

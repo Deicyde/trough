@@ -28,7 +28,9 @@ Its statement uses no other declaration mapped here.
 ## Proof depends on
 
 - [Corestriction through Shapiro's lemma](../../../representation-theory/homological/corestriction-through-shapiros-lemma.md)
-- [The Galois action on the semi-local decomposition](../number-field/the-galois-action-on-the-semi-local-decompositio.md)
+- [Dedekind's different theorem, the tame case](../local-field/dedekinds-different-theorem-the-tame-case.md)
+- [The first half of Dedekind's different theorem](../local-field/the-first-half-of-dedekinds-different-theorem.md)
+- [The Galois action on the semi-local decomposition](../../part-03/number-field/the-galois-action-on-the-semi-local-decompositio.md)
 - [Hensel's lemma for the norm](../../../ring-theory/part-02/other-results/part-01/hensels-lemma-for-the-norm.md)
 - [Ideal.card_stabilizer_eq_ramificationIdxIn_mul_inertiaDegIn](../number-fields-ramification-frobenius-and-the-lmf/ideal-card-stabilizer-eq-ramificationidxin-mul-i.md)
 - [The Kummer case of the second fundamental inequality](the-kummer-case-of-the-second-fundamental-inequa.md)
@@ -72,4 +74,4 @@ TauCeti.ClassFieldTheory.brLocalization_injective_of_subsingleton_h1_globalForma
 ## Sources
 
 - [Tau Ceti documentation: `TauCeti.ClassFieldTheory.brLocalization_injective_of_subsingleton_groupCohomology_one`](https://taucetiproject.org/docs/TauCeti/NumberTheory/ClassFieldTheory/Global/Brauer/LocalizationKernel.html#TauCeti.ClassFieldTheory.brLocalization_injective_of_subsingleton_groupCohomology_one)
-- [Source of `TauCeti.ClassFieldTheory.brLocalization_injective_of_subsingleton_groupCohomology_one` in TauCeti/NumberTheory/ClassFieldTheory/Global/Brauer/LocalizationKernel.lean](https://github.com/TauCetiProject/TauCeti/blob/a6027b1d24fcb935c53bd5b50d11b40991cda418/TauCeti/NumberTheory/ClassFieldTheory/Global/Brauer/LocalizationKernel.lean#L137)
+- [Source of `TauCeti.ClassFieldTheory.brLocalization_injective_of_subsingleton_groupCohomology_one` in TauCeti/NumberTheory/ClassFieldTheory/Global/Brauer/LocalizationKernel.lean](https://github.com/TauCetiProject/TauCeti/blob/cd41bffcb343151b3e58c89392e206b11fe78c1c/TauCeti/NumberTheory/ClassFieldTheory/Global/Brauer/LocalizationKernel.lean#L137)

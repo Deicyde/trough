@@ -29,4 +29,4 @@ Formalized in Tau Ceti as [`MeasureTheory.VectorMeasure.withDensityᵥ_scalarRND
 ## Sources
 
 - [Tau Ceti documentation: `MeasureTheory.VectorMeasure.withDensityᵥ_scalarRNDeriv`](https://taucetiproject.org/docs/TauCeti/MeasureTheory/VectorMeasure/Decomposition/RadonNikodym.html#MeasureTheory.VectorMeasure.withDensity%E1%B5%A5_scalarRNDeriv)
-- [Source of `MeasureTheory.VectorMeasure.withDensityᵥ_scalarRNDeriv` in TauCeti/MeasureTheory/VectorMeasure/Decomposition/RadonNikodym.lean](https://github.com/TauCetiProject/TauCeti/blob/a6027b1d24fcb935c53bd5b50d11b40991cda418/TauCeti/MeasureTheory/VectorMeasure/Decomposition/RadonNikodym.lean#L103)
+- [Source of `MeasureTheory.VectorMeasure.withDensityᵥ_scalarRNDeriv` in TauCeti/MeasureTheory/VectorMeasure/Decomposition/RadonNikodym.lean](https://github.com/TauCetiProject/TauCeti/blob/cd41bffcb343151b3e58c89392e206b11fe78c1c/TauCeti/MeasureTheory/VectorMeasure/Decomposition/RadonNikodym.lean#L103)

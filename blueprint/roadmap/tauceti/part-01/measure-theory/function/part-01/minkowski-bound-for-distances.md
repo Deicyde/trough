@@ -34,4 +34,4 @@ Formalized in Tau Ceti as [`MeasureTheory.eLpNorm_edist_le_add`](https://tauceti
 ## Sources
 
 - [Tau Ceti documentation: `MeasureTheory.eLpNorm_edist_le_add`](https://taucetiproject.org/docs/TauCeti/MeasureTheory/Function/LpSeminorm/EDist.html#MeasureTheory.eLpNorm_edist_le_add)
-- [Source of `MeasureTheory.eLpNorm_edist_le_add` in TauCeti/MeasureTheory/Function/LpSeminorm/EDist.lean](https://github.com/TauCetiProject/TauCeti/blob/a6027b1d24fcb935c53bd5b50d11b40991cda418/TauCeti/MeasureTheory/Function/LpSeminorm/EDist.lean#L64)
+- [Source of `MeasureTheory.eLpNorm_edist_le_add` in TauCeti/MeasureTheory/Function/LpSeminorm/EDist.lean](https://github.com/TauCetiProject/TauCeti/blob/cd41bffcb343151b3e58c89392e206b11fe78c1c/TauCeti/MeasureTheory/Function/LpSeminorm/EDist.lean#L64)

@@ -54,10 +54,6 @@ TauCeti.FarguesFontaine.quotientMap_image_window_mem_affinoidOpens.{u, u_1} {p :
 
 Its statement uses no other declaration mapped here.
 
-## Proof depends on
-
-- [Ideals contained in supports](ideals-contained-in-supports.md)
-
 ## Lean
 
 Formalized in Tau Ceti as [`TauCeti.FarguesFontaine.quotientMap_image_window_mem_affinoidOpens`](https://taucetiproject.org/docs/TauCeti/AlgebraicGeometry/AdicSpace/FarguesFontaine/QuotientChart.html#TauCeti.FarguesFontaine.quotientMap_image_window_mem_affinoidOpens).
@@ -65,5 +61,5 @@ Formalized in Tau Ceti as [`TauCeti.FarguesFontaine.quotientMap_image_window_mem
 ## Sources
 
 - [Tau Ceti documentation: `TauCeti.FarguesFontaine.quotientMap_image_window_mem_affinoidOpens`](https://taucetiproject.org/docs/TauCeti/AlgebraicGeometry/AdicSpace/FarguesFontaine/QuotientChart.html#TauCeti.FarguesFontaine.quotientMap_image_window_mem_affinoidOpens)
-- [Source of `TauCeti.FarguesFontaine.quotientMap_image_window_mem_affinoidOpens` in TauCeti/AlgebraicGeometry/AdicSpace/FarguesFontaine/QuotientChart.lean](https://github.com/TauCetiProject/TauCeti/blob/a6027b1d24fcb935c53bd5b50d11b40991cda418/TauCeti/AlgebraicGeometry/AdicSpace/FarguesFontaine/QuotientChart.lean#L320)
-- [Tau Ceti roadmap status: Foundations of adic spaces](https://github.com/TauCetiProject/TauCetiRoadmap/blob/9f7c032adaf1b838e8183d63ff3cfa886d061cb3/Completed/AdicSpaces/STATUS.md)
+- [Source of `TauCeti.FarguesFontaine.quotientMap_image_window_mem_affinoidOpens` in TauCeti/AlgebraicGeometry/AdicSpace/FarguesFontaine/QuotientChart.lean](https://github.com/TauCetiProject/TauCeti/blob/cd41bffcb343151b3e58c89392e206b11fe78c1c/TauCeti/AlgebraicGeometry/AdicSpace/FarguesFontaine/QuotientChart.lean#L320)
+- [Tau Ceti roadmap status: Foundations of adic spaces](https://github.com/TauCetiProject/TauCetiRoadmap/blob/612845ab80fb9c2b9bee724a156756ee78031591/Completed/AdicSpaces/STATUS.md)

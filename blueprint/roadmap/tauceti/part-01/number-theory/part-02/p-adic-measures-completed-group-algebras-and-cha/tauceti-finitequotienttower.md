@@ -34,5 +34,5 @@ Formalized in Tau Ceti as [`TauCeti.FiniteQuotientTower`](https://taucetiproject
 ## Sources
 
 - [Tau Ceti documentation: `TauCeti.FiniteQuotientTower`](https://taucetiproject.org/docs/TauCeti/Topology/Algebra/Group/Profinite/QuotientTower.html#TauCeti.FiniteQuotientTower)
-- [Source of `TauCeti.FiniteQuotientTower` in TauCeti/Topology/Algebra/Group/Profinite/QuotientTower.lean](https://github.com/TauCetiProject/TauCeti/blob/a6027b1d24fcb935c53bd5b50d11b40991cda418/TauCeti/Topology/Algebra/Group/Profinite/QuotientTower.lean#L82)
-- [Tau Ceti roadmap status: p-adic measures, completed group algebras, and characteristic ideals](https://github.com/TauCetiProject/TauCetiRoadmap/blob/9f7c032adaf1b838e8183d63ff3cfa886d061cb3/TauCetiRoadmap/PadicMeasuresIwasawaAlgebras/STATUS.md)
+- [Source of `TauCeti.FiniteQuotientTower` in TauCeti/Topology/Algebra/Group/Profinite/QuotientTower.lean](https://github.com/TauCetiProject/TauCeti/blob/cd41bffcb343151b3e58c89392e206b11fe78c1c/TauCeti/Topology/Algebra/Group/Profinite/QuotientTower.lean#L82)
+- [Tau Ceti roadmap status: p-adic measures, completed group algebras, and characteristic ideals](https://github.com/TauCetiProject/TauCetiRoadmap/blob/612845ab80fb9c2b9bee724a156756ee78031591/TauCetiRoadmap/PadicMeasuresIwasawaAlgebras/STATUS.md)

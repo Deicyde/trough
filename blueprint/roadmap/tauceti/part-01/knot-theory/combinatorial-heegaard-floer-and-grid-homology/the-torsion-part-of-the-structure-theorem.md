@@ -19,13 +19,13 @@ TauCeti.InternalGrading.exists_iSupIndep_iSup_span_singleton_eq_of_le_torsion.{u
   {k : Type u_1} {M : Type u} [Field k] [AddCommGroup M] [_root_.Module k M]
   [_root_.Module (Polynomial k) M] [IsScalarTower k (Polynomial k) M]
   {G : TauCeti.InternalGrading k M ℤ} {d : ℕ} [Module.Finite (Polynomial k) M] (hd : d ≠ 0)
-  (hX : ∀ ⦃p : ℤ⦄ ⦃x : M⦄, x ∈ G.piece ℤ p → Polynomial.X • x ∈ G.piece ℤ (p - ↑d))
-  (L : Submodule (Polynomial k) M) (hL : DirectSum.SetLike.IsHomogeneous (G.piece ℤ) L)
+  (hX : ∀ ⦃p : ℤ⦄ ⦃x : M⦄, x ∈ G.piece p → Polynomial.X • x ∈ G.piece (p - ↑d))
+  (L : Submodule (Polynomial k) M) (hL : DirectSum.SetLike.IsHomogeneous G.piece L)
   (hLT : L ≤ Submodule.torsion (Polynomial k) M) :
   ∃ ι,
     ∃ (_ : Finite ι),
       ∃ t deg m,
-        (∀ (i : ι), t i ∈ G.piece ℤ (deg i)) ∧
+        (∀ (i : ι), t i ∈ G.piece (deg i)) ∧
           (∀ (i : ι), m i ≠ 0) ∧
             (∀ (i : ι), Ideal.torsionOf (Polynomial k) M (t i) = Ideal.span {Polynomial.X ^ m i}) ∧
               (iSupIndep fun i => Polynomial k ∙ t i) ∧ ⨆ i, Polynomial k ∙ t i = L
@@ -42,4 +42,4 @@ Formalized in Tau Ceti as [`TauCeti.InternalGrading.exists_iSupIndep_iSup_span_s
 ## Sources
 
 - [Tau Ceti documentation: `TauCeti.InternalGrading.exists_iSupIndep_iSup_span_singleton_eq_of_le_torsion`](https://taucetiproject.org/docs/TauCeti/Algebra/Module/GradedModule/CyclicDecomposition.html#TauCeti.InternalGrading.exists_iSupIndep_iSup_span_singleton_eq_of_le_torsion)
-- [Source of `TauCeti.InternalGrading.exists_iSupIndep_iSup_span_singleton_eq_of_le_torsion` in TauCeti/Algebra/Module/GradedModule/CyclicDecomposition.lean](https://github.com/TauCetiProject/TauCeti/blob/a6027b1d24fcb935c53bd5b50d11b40991cda418/TauCeti/Algebra/Module/GradedModule/CyclicDecomposition.lean#L173)
+- [Source of `TauCeti.InternalGrading.exists_iSupIndep_iSup_span_singleton_eq_of_le_torsion` in TauCeti/Algebra/Module/GradedModule/CyclicDecomposition.lean](https://github.com/TauCetiProject/TauCeti/blob/cd41bffcb343151b3e58c89392e206b11fe78c1c/TauCeti/Algebra/Module/GradedModule/CyclicDecomposition.lean#L228)

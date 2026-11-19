@@ -1,0 +1,25 @@
+{
+ "schema": "trough-ledger/v1",
+ "library": "CSLib",
+ "repo": "leanprover/cslib",
+ "rev": "86d560b6cbb379bd82512424cbcd2a915a1565e7",
+ "module": "Cslib.Computability.Automata.NA.Loop",
+ "file": "Cslib/Computability/Automata/NA/Loop.lean",
+ "public": [
+  {"name": "Cslib.Automata.NA.FinAcc.loop", "kind": "def", "line": 27},
+  {"name": "Cslib.Automata.NA.loop_run_left_left", "kind": "lemma", "line": 37},
+  {"name": "Cslib.Automata.NA.loop_run_left_right", "kind": "lemma", "line": 47},
+  {"name": "Cslib.Automata.NA.loop_run_left_right_left", "kind": "lemma", "line": 63},
+  {"name": "Cslib.Automata.NA.loop_run_from_left", "kind": "lemma", "line": 73},
+  {"name": "Cslib.Automata.NA.loop_run_one_iter", "kind": "theorem", "line": 82},
+  {"name": "Cslib.Automata.NA.loop_fin_run_exists", "kind": "theorem", "line": 98},
+  {"name": "Cslib.Automata.NA.loop_fin_run_mtr", "kind": "theorem", "line": 117},
+  {"name": "Cslib.Automata.NA.loop_run_exists", "kind": "theorem", "line": 127},
+  {"name": "Cslib.Automata.NA.Buchi.loop_language_eq", "kind": "theorem", "line": 144},
+  {"name": "Cslib.Automata.NA.FinAcc.finLoop", "kind": "def", "line": 173},
+  {"name": "Cslib.Automata.NA.FinAcc.loop_language_eq", "kind": "theorem", "line": 184}
+ ],
+ "private": [],
+ "missing": [],
+ "unread": "Unnamed instances, the names an `alias ⟨…⟩` command gives, and the names Lean generates for a declaration (constructors, recursors, derived instances) are not read from the source, so they are not listed."
+}

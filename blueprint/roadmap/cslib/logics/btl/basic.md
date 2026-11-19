@@ -206,3 +206,4 @@ theorem Satisfies.btl_past_future : ⇓BTL[m,w ⊨ φ → d[P](d⟨F⟩φ)]
 ## Sources
 
 - [Cslib/Logics/BTL/Basic.lean at 86d560b6](https://github.com/leanprover/cslib/blob/86d560b6cbb379bd82512424cbcd2a915a1565e7/Cslib/Logics/BTL/Basic.lean)
+- [Declaration ledger](../../../../sources/cslib/Cslib.Logics.BTL.Basic.json)

@@ -82,4 +82,4 @@ TauCeti.SkewZigzagParameter.exists_firstCohomologyRelabel_eq_iff_exists_vertexPe
 ## Sources
 
 - [Tau Ceti documentation: `TauCeti.SkewZigzagParameter.cohomologyClass_eq_iff_exists_vertexFixing_algEquiv`](https://taucetiproject.org/docs/TauCeti/RepresentationTheory/Quiver/Zigzag/Cohomology.html#TauCeti.SkewZigzagParameter.cohomologyClass_eq_iff_exists_vertexFixing_algEquiv)
-- [Source of `TauCeti.SkewZigzagParameter.cohomologyClass_eq_iff_exists_vertexFixing_algEquiv` in TauCeti/RepresentationTheory/Quiver/Zigzag/Cohomology.lean](https://github.com/TauCetiProject/TauCeti/blob/a6027b1d24fcb935c53bd5b50d11b40991cda418/TauCeti/RepresentationTheory/Quiver/Zigzag/Cohomology.lean#L247)
+- [Source of `TauCeti.SkewZigzagParameter.cohomologyClass_eq_iff_exists_vertexFixing_algEquiv` in TauCeti/RepresentationTheory/Quiver/Zigzag/Cohomology.lean](https://github.com/TauCetiProject/TauCeti/blob/cd41bffcb343151b3e58c89392e206b11fe78c1c/TauCeti/RepresentationTheory/Quiver/Zigzag/Cohomology.lean#L247)

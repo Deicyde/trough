@@ -46,4 +46,4 @@ Formalized in Tau Ceti as [`TauCeti.yasuiTheorem_iff`](https://taucetiproject.or
 ## Sources
 
 - [Tau Ceti documentation: `TauCeti.yasuiTheorem_iff`](https://taucetiproject.org/docs/TauCeti/LowDimTopology/DehnSurgery/AkbulutKirby.html#TauCeti.yasuiTheorem_iff)
-- [Source of `TauCeti.yasuiTheorem_iff` in TauCeti/LowDimTopology/DehnSurgery/AkbulutKirby.lean](https://github.com/TauCetiProject/TauCeti/blob/a6027b1d24fcb935c53bd5b50d11b40991cda418/TauCeti/LowDimTopology/DehnSurgery/AkbulutKirby.lean#L143)
+- [Source of `TauCeti.yasuiTheorem_iff` in TauCeti/LowDimTopology/DehnSurgery/AkbulutKirby.lean](https://github.com/TauCetiProject/TauCeti/blob/cd41bffcb343151b3e58c89392e206b11fe78c1c/TauCeti/LowDimTopology/DehnSurgery/AkbulutKirby.lean#L143)

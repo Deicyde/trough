@@ -25,7 +25,7 @@ Its statement uses no other declaration mapped here.
 
 ## Proof depends on
 
-- [Riemann--Lebesgue on a vertical line](../../../analysis/part-02/fourier/riemann-lebesgue-on-a-vertical-line.md)
+- [Riemann--Lebesgue on a vertical line](../../../analysis/part-03/fourier/part-01/riemann-lebesgue-on-a-vertical-line.md)
 
 ## Lean
 
@@ -34,4 +34,4 @@ Formalized in Tau Ceti as [`TauCeti.LSeries.isBigO_sum_Icc_norm_id_of_boundary`]
 ## Sources
 
 - [Tau Ceti documentation: `TauCeti.LSeries.isBigO_sum_Icc_norm_id_of_boundary`](https://taucetiproject.org/docs/TauCeti/NumberTheory/LSeries/WienerIkehara/Chebyshev.html#TauCeti.LSeries.isBigO_sum_Icc_norm_id_of_boundary)
-- [Source of `TauCeti.LSeries.isBigO_sum_Icc_norm_id_of_boundary` in TauCeti/NumberTheory/LSeries/WienerIkehara/Chebyshev.lean](https://github.com/TauCetiProject/TauCeti/blob/a6027b1d24fcb935c53bd5b50d11b40991cda418/TauCeti/NumberTheory/LSeries/WienerIkehara/Chebyshev.lean#L159)
+- [Source of `TauCeti.LSeries.isBigO_sum_Icc_norm_id_of_boundary` in TauCeti/NumberTheory/LSeries/WienerIkehara/Chebyshev.lean](https://github.com/TauCetiProject/TauCeti/blob/cd41bffcb343151b3e58c89392e206b11fe78c1c/TauCeti/NumberTheory/LSeries/WienerIkehara/Chebyshev.lean#L159)

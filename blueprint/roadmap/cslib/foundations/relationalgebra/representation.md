@@ -54,3 +54,4 @@ def Representable (α : Type u) [RelationAlgebra α] : Prop
 ## Sources
 
 - [Cslib/Foundations/RelationAlgebra/Representation.lean at 86d560b6](https://github.com/leanprover/cslib/blob/86d560b6cbb379bd82512424cbcd2a915a1565e7/Cslib/Foundations/RelationAlgebra/Representation.lean)
+- [Declaration ledger](../../../../sources/cslib/Cslib.Foundations.RelationAlgebra.Representation.json)

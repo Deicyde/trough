@@ -41,5 +41,5 @@ Formalized in Tau Ceti as [`Bundle.Trivialization.mem_maximalAtlas_contMDiffFibe
 ## Sources
 
 - [Tau Ceti documentation: `Bundle.Trivialization.mem_maximalAtlas_contMDiffFiberwiseLinear_iff`](https://taucetiproject.org/docs/TauCeti/Geometry/Manifold/VectorBundle/MaximalAtlas.html#Bundle.Trivialization.mem_maximalAtlas_contMDiffFiberwiseLinear_iff)
-- [Source of `Bundle.Trivialization.mem_maximalAtlas_contMDiffFiberwiseLinear_iff` in TauCeti/Geometry/Manifold/VectorBundle/MaximalAtlas.lean](https://github.com/TauCetiProject/TauCeti/blob/a6027b1d24fcb935c53bd5b50d11b40991cda418/TauCeti/Geometry/Manifold/VectorBundle/MaximalAtlas.lean#L286)
-- [Tau Ceti roadmap status: Complex manifolds: transport, quotients, bundles, and gluing](https://github.com/TauCetiProject/TauCetiRoadmap/blob/9f7c032adaf1b838e8183d63ff3cfa886d061cb3/TauCetiRoadmap/ComplexManifolds/STATUS.md)
+- [Source of `Bundle.Trivialization.mem_maximalAtlas_contMDiffFiberwiseLinear_iff` in TauCeti/Geometry/Manifold/VectorBundle/MaximalAtlas.lean](https://github.com/TauCetiProject/TauCeti/blob/cd41bffcb343151b3e58c89392e206b11fe78c1c/TauCeti/Geometry/Manifold/VectorBundle/MaximalAtlas.lean#L305)
+- [Tau Ceti roadmap status: Complex manifolds: transport, quotients, bundles, and gluing](https://github.com/TauCetiProject/TauCetiRoadmap/blob/612845ab80fb9c2b9bee724a156756ee78031591/TauCetiRoadmap/ComplexManifolds/STATUS.md)

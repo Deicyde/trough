@@ -21,15 +21,11 @@ ZLattice.IsEven.sum_discriminantQuadraticChar.{u_1} {E : Type u_1} [NormedAddCom
 
 ## Depends on
 
-- [TauCeti.IntegralLattice](../../../linear-algebra/integral-lattices-discriminant-forms-and-overlat/tauceti-integrallattice.md)
-- [TauCeti.IntegralLattice.realModel](tauceti-integrallattice-realmodel.md)
-- [ZLattice.ratModel](zlattice-ratmodel.md)
+- [TauCeti.IntegralLattice](../../../linear-algebra/part-01/integral-lattices-discriminant-forms-and-overlat/tauceti-integrallattice.md)
 
 ## Proof depends on
 
-- [The inversion law of theta series](the-inversion-law-of-theta-series.md)
-- [Poisson's summation formula](../../../analysis/part-02/fourier/poissons-summation-formula.md)
-- [ZLattice.gaussSum](zlattice-gausssum.md)
+- [Poisson's summation formula](../../../analysis/part-03/fourier/part-01/poissons-summation-formula.md)
 
 ## Lean
 
@@ -49,4 +45,4 @@ TauCeti.IntegralLattice.finsum_discriminantQuadraticChar_realModel_typeARootLatt
 ## Sources
 
 - [Tau Ceti documentation: `ZLattice.IsEven.sum_discriminantQuadraticChar`](https://taucetiproject.org/docs/TauCeti/NumberTheory/ModularForms/ThetaSeries/Milgram.html#ZLattice.IsEven.sum_discriminantQuadraticChar)
-- [Source of `ZLattice.IsEven.sum_discriminantQuadraticChar` in TauCeti/NumberTheory/ModularForms/ThetaSeries/Milgram.lean](https://github.com/TauCetiProject/TauCeti/blob/a6027b1d24fcb935c53bd5b50d11b40991cda418/TauCeti/NumberTheory/ModularForms/ThetaSeries/Milgram.lean#L65)
+- [Source of `ZLattice.IsEven.sum_discriminantQuadraticChar` in TauCeti/NumberTheory/ModularForms/ThetaSeries/Milgram.lean](https://github.com/TauCetiProject/TauCeti/blob/cd41bffcb343151b3e58c89392e206b11fe78c1c/TauCeti/NumberTheory/ModularForms/ThetaSeries/Milgram.lean#L65)

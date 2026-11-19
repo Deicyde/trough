@@ -47,4 +47,4 @@ TauCeti.lintegral_mul_setLIntegral_rpow_le.{u_1, u_2} {α : Type u_1} {β : Type
 ## Sources
 
 - [Tau Ceti documentation: `TauCeti.lintegral_Lp_lintegral_le`](https://taucetiproject.org/docs/TauCeti/MeasureTheory/Integral/MinkowskiIntegral.html#TauCeti.lintegral_Lp_lintegral_le)
-- [Source of `TauCeti.lintegral_Lp_lintegral_le` in TauCeti/MeasureTheory/Integral/MinkowskiIntegral.lean](https://github.com/TauCetiProject/TauCeti/blob/a6027b1d24fcb935c53bd5b50d11b40991cda418/TauCeti/MeasureTheory/Integral/MinkowskiIntegral.lean#L149)
+- [Source of `TauCeti.lintegral_Lp_lintegral_le` in TauCeti/MeasureTheory/Integral/MinkowskiIntegral.lean](https://github.com/TauCetiProject/TauCeti/blob/cd41bffcb343151b3e58c89392e206b11fe78c1c/TauCeti/MeasureTheory/Integral/MinkowskiIntegral.lean#L149)

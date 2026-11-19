@@ -107,3 +107,4 @@ theorem _root_.Cslib.IsMonadHom.map_listInsertionSortM {f : {β : Type} → m β
 ## Sources
 
 - [Cslib/Algorithms/Lean/Sort/Insertion.lean at 86d560b6](https://github.com/leanprover/cslib/blob/86d560b6cbb379bd82512424cbcd2a915a1565e7/Cslib/Algorithms/Lean/Sort/Insertion.lean)
+- [Declaration ledger](../../../../../sources/cslib/Cslib.Algorithms.Lean.Sort.Insertion.json)

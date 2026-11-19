@@ -1,7 +1,7 @@
 ---
 declaration: section
 origin: cited
-lean: OAI.ThreeState.regular_supercritical, OAI.ThreeState.poisson_supercritical, OAI.ThreeState.TreeClauses.Tree.regular_reconstructs_above_KS, OAI.ThreeState.TreeClauses.Tree.poisson_reconstructs_above_KS
+lean: OAI.ThreeState.TreeClauses.Tree.regular_reconstructs_above_KS, OAI.ThreeState.TreeClauses.Tree.poisson_reconstructs_above_KS, OAI.ThreeState.regular_supercritical, OAI.ThreeState.poisson_supercritical
 statement: formalized
 ---
 

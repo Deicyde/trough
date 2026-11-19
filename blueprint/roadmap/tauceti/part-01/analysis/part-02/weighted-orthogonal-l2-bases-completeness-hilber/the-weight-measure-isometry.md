@@ -30,5 +30,5 @@ Formalized in Tau Ceti as [`TauCeti.weightL2Isometry`](https://taucetiproject.or
 ## Sources
 
 - [Tau Ceti documentation: `TauCeti.weightL2Isometry`](https://taucetiproject.org/docs/TauCeti/MeasureTheory/Function/WeightL2Isometry.html#TauCeti.weightL2Isometry)
-- [Source of `TauCeti.weightL2Isometry` in TauCeti/MeasureTheory/Function/WeightL2Isometry.lean](https://github.com/TauCetiProject/TauCeti/blob/a6027b1d24fcb935c53bd5b50d11b40991cda418/TauCeti/MeasureTheory/Function/WeightL2Isometry.lean#L91)
-- [Tau Ceti roadmap status: Weighted orthogonal L² bases — completeness, Hilbert-basis structure, and product bases of orthogonal systems](https://github.com/TauCetiProject/TauCetiRoadmap/blob/9f7c032adaf1b838e8183d63ff3cfa886d061cb3/Completed/OrthogonalL2Bases/STATUS.md)
+- [Source of `TauCeti.weightL2Isometry` in TauCeti/MeasureTheory/Function/WeightL2Isometry.lean](https://github.com/TauCetiProject/TauCeti/blob/cd41bffcb343151b3e58c89392e206b11fe78c1c/TauCeti/MeasureTheory/Function/WeightL2Isometry.lean#L91)
+- [Tau Ceti roadmap status: Weighted orthogonal L² bases — completeness, Hilbert-basis structure, and product bases of orthogonal systems](https://github.com/TauCetiProject/TauCetiRoadmap/blob/612845ab80fb9c2b9bee724a156756ee78031591/Completed/OrthogonalL2Bases/STATUS.md)

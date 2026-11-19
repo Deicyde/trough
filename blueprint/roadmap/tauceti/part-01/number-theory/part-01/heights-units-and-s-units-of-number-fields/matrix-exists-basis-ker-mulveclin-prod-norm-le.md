@@ -28,8 +28,9 @@ Matrix.exists_basis_ker_mulVecLin_prod_norm_le.{u_1} {ι : Type u_1} [Fintype ι
 ## Proof depends on
 
 - [A basis of the integral points of small sup norm](a-basis-of-the-integral-points-of-small-sup-norm.md)
-- [The Cauchy–Binet formula](../../../linear-algebra/other-results/the-cauchy-binet-formula.md)
 - [The height of the kernel of an integer matrix](the-height-of-the-kernel-of-an-integer-matrix.md)
+- [Pseudo-bases over a Dedekind domain](../../part-02/roths-theorem-and-the-subspace-theorem-over-numb/pseudo-bases-over-a-dedekind-domain.md)
+- [Schmidt's covolume identity](../diophantine-approximation-and-transcendence/schmidts-covolume-identity.md)
 
 ## Lean
 
@@ -38,5 +39,5 @@ Formalized in Tau Ceti as [`Matrix.exists_basis_ker_mulVecLin_prod_norm_le`](htt
 ## Sources
 
 - [Tau Ceti documentation: `Matrix.exists_basis_ker_mulVecLin_prod_norm_le`](https://taucetiproject.org/docs/TauCeti/NumberTheory/Height/Arakelov/BombieriVaaler.html#Matrix.exists_basis_ker_mulVecLin_prod_norm_le)
-- [Source of `Matrix.exists_basis_ker_mulVecLin_prod_norm_le` in TauCeti/NumberTheory/Height/Arakelov/BombieriVaaler.lean](https://github.com/TauCetiProject/TauCeti/blob/a6027b1d24fcb935c53bd5b50d11b40991cda418/TauCeti/NumberTheory/Height/Arakelov/BombieriVaaler.lean#L182)
-- [Tau Ceti roadmap status: Heights, units and S-units of number fields](https://github.com/TauCetiProject/TauCetiRoadmap/blob/9f7c032adaf1b838e8183d63ff3cfa886d061cb3/Completed/HeightsAndUnits/STATUS.md)
+- [Source of `Matrix.exists_basis_ker_mulVecLin_prod_norm_le` in TauCeti/NumberTheory/Height/Arakelov/BombieriVaaler.lean](https://github.com/TauCetiProject/TauCeti/blob/cd41bffcb343151b3e58c89392e206b11fe78c1c/TauCeti/NumberTheory/Height/Arakelov/BombieriVaaler.lean#L180)
+- [Tau Ceti roadmap status: Heights, units and S-units of number fields](https://github.com/TauCetiProject/TauCetiRoadmap/blob/612845ab80fb9c2b9bee724a156756ee78031591/Completed/HeightsAndUnits/STATUS.md)

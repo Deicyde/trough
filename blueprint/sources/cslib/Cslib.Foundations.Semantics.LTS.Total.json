@@ -1,0 +1,23 @@
+{
+ "schema": "trough-ledger/v1",
+ "library": "CSLib",
+ "repo": "leanprover/cslib",
+ "rev": "86d560b6cbb379bd82512424cbcd2a915a1565e7",
+ "module": "Cslib.Foundations.Semantics.LTS.Total",
+ "file": "Cslib/Foundations/Semantics/LTS/Total.lean",
+ "public": [
+  {"name": "Cslib.LTS.Total", "kind": "class", "line": 28},
+  {"name": "Cslib.LTS.chooseFLTS", "kind": "def", "line": 33},
+  {"name": "Cslib.LTS.Total.chooseFLTS", "kind": "theorem", "line": 37},
+  {"name": "Cslib.LTS.chooseOmegaExecution", "kind": "def", "line": 43},
+  {"name": "Cslib.LTS.Total.omegaExecution_exists", "kind": "theorem", "line": 50},
+  {"name": "Cslib.LTS.Total.extend_omegaExecution", "kind": "theorem", "line": 57},
+  {"name": "Cslib.LTS.totalize", "kind": "def", "line": 65},
+  {"name": "Cslib.LTS.totalize.no_sink_to_nonsink", "kind": "theorem", "line": 78},
+  {"name": "Cslib.LTS.totalize.nonsink_tr_iff", "kind": "theorem", "line": 91},
+  {"name": "Cslib.LTS.totalize.nonsink_mtr_iff", "kind": "theorem", "line": 98}
+ ],
+ "private": [],
+ "missing": [],
+ "unread": "Unnamed instances, the names an `alias ⟨…⟩` command gives, and the names Lean generates for a declaration (constructors, recursors, derived instances) are not read from the source, so they are not listed."
+}

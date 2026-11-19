@@ -77,7 +77,7 @@ TauCeti.Place.exists_restrict_eq_of_irreducible_map_residue.{u, u', v, v'} {k : 
   [Algebra k k'] [Algebra k F] [Algebra k' F'] [Algebra F F'] [Algebra k F'] [IsScalarTower k k' F']
   [IsScalarTower k F F'] [FiniteDimensional F F'] [Algebra.IsIntegral k k']
   (hF : TauCeti.IsFunctionField k F) (P : TauCeti.Place k F) (y : F') {φ g : Polynomial ↥P.integers}
-  (hmin : Polynomial.map (algebraMap (↥P.integers) F) φ = minpoly F y) (hg : g.Monic)
+  (hmin : Polynomial.map (algebraMap (↥P.integers) F) φ = minpoly F y)
   (hirr : Irreducible (Polynomial.map (IsLocalRing.residue ↥P.integers) g))
   (hdvd :
     Polynomial.map (IsLocalRing.residue ↥P.integers) g ∣
@@ -99,7 +99,7 @@ TauCeti.Place.exists_restrict_eq_relativeDegree_eq_and_isSeparable.{u, u', v, v'
   (hF : TauCeti.IsFunctionField k F) (P : TauCeti.Place k F) {y : F'} (hy : F⟮y⟯ = ⊤)
   {φ : Polynomial ↥P.integers} (hmin : Polynomial.map (algebraMap (↥P.integers) F) φ = minpoly F y)
   (hsep : (Polynomial.map (IsLocalRing.residue ↥P.integers) φ).Separable)
-  {γ : Polynomial P.ResidueField} (hmonic : γ.Monic) (hirr : Irreducible γ)
+  {γ : Polynomial P.ResidueField} (hirr : Irreducible γ)
   (hdvd : γ ∣ Polynomial.map (IsLocalRing.residue ↥P.integers) φ) :
   ∃ P',
     TauCeti.Place.restrict k F P' = P ∧
@@ -157,4 +157,4 @@ TauCeti.Place.restrictEquivNormalizedFactors.{u, u', v, v'} (k : Type u) (k' : T
 ## Sources
 
 - [Tau Ceti documentation: `TauCeti.Place.restrictOfPrimeEquivNormalizedFactors`](https://taucetiproject.org/docs/TauCeti/FieldTheory/FunctionField/AffineModel/Kummer.html#TauCeti.Place.restrictOfPrimeEquivNormalizedFactors)
-- [Source of `TauCeti.Place.restrictOfPrimeEquivNormalizedFactors` in TauCeti/FieldTheory/FunctionField/AffineModel/Kummer.lean](https://github.com/TauCetiProject/TauCeti/blob/a6027b1d24fcb935c53bd5b50d11b40991cda418/TauCeti/FieldTheory/FunctionField/AffineModel/Kummer.lean#L100)
+- [Source of `TauCeti.Place.restrictOfPrimeEquivNormalizedFactors` in TauCeti/FieldTheory/FunctionField/AffineModel/Kummer.lean](https://github.com/TauCetiProject/TauCeti/blob/cd41bffcb343151b3e58c89392e206b11fe78c1c/TauCeti/FieldTheory/FunctionField/AffineModel/Kummer.lean#L100)

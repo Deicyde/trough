@@ -29,7 +29,7 @@ Its statement uses no other declaration mapped here.
 ## Proof depends on
 
 - [Kedlaya's estimate (4.9.1) in the normalisation `λ_ρ(p) = ρ`](../../ring-theory/part-02/other-results/part-02/kedlayas-estimate-4-9-1-in-the-normalisation-p.md)
-- [Kedlaya's Hilbert basis theorem for restricted power series](../../ring-theory/part-01/restricted-power-series-and-tate-algebras/part-01/kedlayas-hilbert-basis-theorem-for-restricted-po.md)
+- [Kedlaya's Hilbert basis theorem for restricted power series](../../ring-theory/part-01/restricted-power-series-and-tate-algebras/kedlayas-hilbert-basis-theorem-for-restricted-po.md)
 
 ## Lean
 
@@ -38,5 +38,5 @@ Formalized in Tau Ceti as [`TauCeti.WittVector.isStronglyNoetherian_intervalRing
 ## Sources
 
 - [Tau Ceti documentation: `TauCeti.WittVector.isStronglyNoetherian_intervalRing`](https://taucetiproject.org/docs/TauCeti/RingTheory/WittVector/IntervalRing/StronglyNoetherian.html#TauCeti.WittVector.isStronglyNoetherian_intervalRing)
-- [Source of `TauCeti.WittVector.isStronglyNoetherian_intervalRing` in TauCeti/RingTheory/WittVector/IntervalRing/StronglyNoetherian.lean](https://github.com/TauCetiProject/TauCeti/blob/a6027b1d24fcb935c53bd5b50d11b40991cda418/TauCeti/RingTheory/WittVector/IntervalRing/StronglyNoetherian.lean#L423)
-- [Tau Ceti roadmap status: Foundations of adic spaces](https://github.com/TauCetiProject/TauCetiRoadmap/blob/9f7c032adaf1b838e8183d63ff3cfa886d061cb3/Completed/AdicSpaces/STATUS.md)
+- [Source of `TauCeti.WittVector.isStronglyNoetherian_intervalRing` in TauCeti/RingTheory/WittVector/IntervalRing/StronglyNoetherian.lean](https://github.com/TauCetiProject/TauCeti/blob/cd41bffcb343151b3e58c89392e206b11fe78c1c/TauCeti/RingTheory/WittVector/IntervalRing/StronglyNoetherian.lean#L423)
+- [Tau Ceti roadmap status: Foundations of adic spaces](https://github.com/TauCetiProject/TauCetiRoadmap/blob/612845ab80fb9c2b9bee724a156756ee78031591/Completed/AdicSpaces/STATUS.md)

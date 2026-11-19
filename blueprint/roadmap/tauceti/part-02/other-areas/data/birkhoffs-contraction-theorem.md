@@ -31,4 +31,4 @@ Formalized in Tau Ceti as [`Matrix.hilbertProjectiveDist_mulVec_le`](https://tau
 ## Sources
 
 - [Tau Ceti documentation: `Matrix.hilbertProjectiveDist_mulVec_le`](https://taucetiproject.org/docs/TauCeti/Data/Matrix/BirkhoffContraction.html#Matrix.hilbertProjectiveDist_mulVec_le)
-- [Source of `Matrix.hilbertProjectiveDist_mulVec_le` in TauCeti/Data/Matrix/BirkhoffContraction.lean](https://github.com/TauCetiProject/TauCeti/blob/a6027b1d24fcb935c53bd5b50d11b40991cda418/TauCeti/Data/Matrix/BirkhoffContraction.lean#L430)
+- [Source of `Matrix.hilbertProjectiveDist_mulVec_le` in TauCeti/Data/Matrix/BirkhoffContraction.lean](https://github.com/TauCetiProject/TauCeti/blob/cd41bffcb343151b3e58c89392e206b11fe78c1c/TauCeti/Data/Matrix/BirkhoffContraction.lean#L454)

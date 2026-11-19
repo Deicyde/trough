@@ -27,5 +27,5 @@ Formalized in Tau Ceti as [`TauCeti.IsNashAt`](https://taucetiproject.org/docs/T
 ## Sources
 
 - [Tau Ceti documentation: `TauCeti.IsNashAt`](https://taucetiproject.org/docs/TauCeti/Geometry/RealAlgebraic/Nash/Basic.html#TauCeti.IsNashAt)
-- [Source of `TauCeti.IsNashAt` in TauCeti/Geometry/RealAlgebraic/Nash/Basic.lean](https://github.com/TauCetiProject/TauCeti/blob/a6027b1d24fcb935c53bd5b50d11b40991cda418/TauCeti/Geometry/RealAlgebraic/Nash/Basic.lean#L67)
-- [Tau Ceti roadmap status: Real-analytic geometry and semianalytic triangulation](https://github.com/TauCetiProject/TauCetiRoadmap/blob/9f7c032adaf1b838e8183d63ff3cfa886d061cb3/TauCetiRoadmap/RealAnalyticGeometry/STATUS.md)
+- [Source of `TauCeti.IsNashAt` in TauCeti/Geometry/RealAlgebraic/Nash/Basic.lean](https://github.com/TauCetiProject/TauCeti/blob/cd41bffcb343151b3e58c89392e206b11fe78c1c/TauCeti/Geometry/RealAlgebraic/Nash/Basic.lean#L67)
+- [Tau Ceti roadmap status: Real-analytic geometry and semianalytic triangulation](https://github.com/TauCetiProject/TauCetiRoadmap/blob/612845ab80fb9c2b9bee724a156756ee78031591/TauCetiRoadmap/RealAnalyticGeometry/STATUS.md)

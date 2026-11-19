@@ -1,10 +1,11 @@
 # Optimal Transport
 
-Results named in Tau Ceti's `TauCeti.MeasureTheory.OptimalTransport` modules and in no roadmap's section, as Tau Ceti has them at commit [a6027b1d](https://github.com/TauCetiProject/TauCeti/tree/a6027b1d24fcb935c53bd5b50d11b40991cda418).
+Results named in Tau Ceti's `TauCeti.MeasureTheory.OptimalTransport` modules and in no roadmap's section, as Tau Ceti has them at commit [cd41bffc](https://github.com/TauCetiProject/TauCeti/tree/cd41bffcb343151b3e58c89392e206b11fe78c1c).
 
-## [Approximate Kantorovich duality… to The Schachermayer--Teichmann…](part-01/README.md)
+## [Approximate Kantorovich duality… to Rockafellar's theorem](part-01/README.md)
 
 - [Approximate Kantorovich duality on compact spaces](part-01/approximate-kantorovich-duality-on-compact-space.md)
+- [Beiglböck--Léonard--Schachermayer relaxed Kantorovich duality over integrable potentials](part-01/beiglbock-leonard-schachermayer-relaxed-kantorov.md)
 - [The Benamou–Brenier upper bound](part-01/the-benamou-brenier-upper-bound.md)
 - [The Bonnet–Myers diameter bound under `MCP(K, N)`](part-01/the-bonnet-myers-diameter-bound-under-mcp-k-n.md)
 - [Bounded-Lipschitz duality in supremum form](part-01/bounded-lipschitz-duality-in-supremum-form.md)
@@ -23,11 +24,12 @@ Results named in Tau Ceti's `TauCeti.MeasureTheory.OptimalTransport` modules and
 - [Prokhorov's theorem for multi-couplings](part-01/prokhorovs-theorem-for-multi-couplings.md)
 - [The Pythagorean identity of the Schrödinger problem](part-01/the-pythagorean-identity-of-the-schrodinger-prob.md)
 - [Rockafellar's theorem](part-01/rockafellars-theorem.md)
-- [The Schachermayer--Teichmann theorem](part-01/the-schachermayer-teichmann-theorem.md)
 
-## [Strong Kantorovich duality for… to The twist theorem at a point](part-02/README.md)
+## [The Schachermayer--Teichmann… to Unrelaxed Borel strong…](part-02/README.md)
 
+- [The Schachermayer--Teichmann theorem](part-02/the-schachermayer-teichmann-theorem.md)
 - [Strong Kantorovich duality for probability measures](part-02/strong-kantorovich-duality-for-probability-measu.md)
 - [The theorem of Rockafellar and Rüschendorf](part-02/the-theorem-of-rockafellar-and-ruschendorf.md)
 - [The twist theorem](part-02/the-twist-theorem.md)
 - [The twist theorem at a point](part-02/the-twist-theorem-at-a-point.md)
+- [Unrelaxed Borel strong Kantorovich duality over integrable potentials under an integrable split upper envelope](part-02/unrelaxed-borel-strong-kantorovich-duality-over.md)

@@ -1,0 +1,20 @@
+{
+ "schema": "trough-ledger/v1",
+ "library": "CSLib",
+ "repo": "leanprover/cslib",
+ "rev": "86d560b6cbb379bd82512424cbcd2a915a1565e7",
+ "module": "Cslib.Logics.Modal.Unary.Basic",
+ "file": "Cslib/Logics/Modal/Unary/Basic.lean",
+ "public": [
+  {"name": "Cslib.Logic.Modal.Proposition.Context.dynDiamond", "kind": "def", "line": 27},
+  {"name": "Cslib.Logic.Modal.Proposition.unary_triangle_eq_dynDiamond", "kind": "theorem", "line": 31},
+  {"name": "Cslib.Logic.Modal.Satisfies.dynDiamond_iff_exists", "kind": "theorem", "line": 37},
+  {"name": "Cslib.Logic.Modal.Satisfies.dynBox_iff_forall", "kind": "theorem", "line": 42},
+  {"name": "Cslib.Logic.Modal.Satisfies.dynBox_dynDiamond_diagonalInverse₁", "kind": "theorem", "line": 46},
+  {"name": "Cslib.Logic.Modal.Satisfies.dynBox_dynDiamond_diagonalInverse₂", "kind": "theorem", "line": 52},
+  {"name": "Cslib.Logic.Modal.Satisfies.unary_dual", "kind": "theorem", "line": 59}
+ ],
+ "private": [],
+ "missing": [],
+ "unread": "Unnamed instances, the names an `alias ⟨…⟩` command gives, and the names Lean generates for a declaration (constructors, recursors, derived instances) are not read from the source, so they are not listed."
+}

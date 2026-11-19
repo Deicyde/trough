@@ -63,4 +63,4 @@ TauCeti.differentExponent_eq_sum_range_lowerRamificationGroup.{u_1, u_2} (K : Ty
 ## Sources
 
 - [Tau Ceti documentation: `TauCeti.sum_range_card_lowerRamificationGroup_sub_one_le_differentExponent`](https://taucetiproject.org/docs/TauCeti/NumberTheory/LocalField/Different/Hilbert.html#TauCeti.sum_range_card_lowerRamificationGroup_sub_one_le_differentExponent)
-- [Source of `TauCeti.sum_range_card_lowerRamificationGroup_sub_one_le_differentExponent` in TauCeti/NumberTheory/LocalField/Different/Hilbert.lean](https://github.com/TauCetiProject/TauCeti/blob/a6027b1d24fcb935c53bd5b50d11b40991cda418/TauCeti/NumberTheory/LocalField/Different/Hilbert.lean#L119)
+- [Source of `TauCeti.sum_range_card_lowerRamificationGroup_sub_one_le_differentExponent` in TauCeti/NumberTheory/LocalField/Different/Hilbert.lean](https://github.com/TauCetiProject/TauCeti/blob/cd41bffcb343151b3e58c89392e206b11fe78c1c/TauCeti/NumberTheory/LocalField/Different/Hilbert.lean#L119)

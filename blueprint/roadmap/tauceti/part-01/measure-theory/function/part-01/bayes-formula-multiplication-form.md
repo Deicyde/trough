@@ -61,4 +61,4 @@ MeasureTheory.condExp_withDensity_eq_div.{u_1} {Ω : Type u_1} {m mΩ : Measurab
 ## Sources
 
 - [Tau Ceti documentation: `MeasureTheory.condExp_toReal_smul_condExp_withDensity`](https://taucetiproject.org/docs/TauCeti/MeasureTheory/Function/ConditionalExpectation/WithDensity.html#MeasureTheory.condExp_toReal_smul_condExp_withDensity)
-- [Source of `MeasureTheory.condExp_toReal_smul_condExp_withDensity` in TauCeti/MeasureTheory/Function/ConditionalExpectation/WithDensity.lean](https://github.com/TauCetiProject/TauCeti/blob/a6027b1d24fcb935c53bd5b50d11b40991cda418/TauCeti/MeasureTheory/Function/ConditionalExpectation/WithDensity.lean#L41)
+- [Source of `MeasureTheory.condExp_toReal_smul_condExp_withDensity` in TauCeti/MeasureTheory/Function/ConditionalExpectation/WithDensity.lean](https://github.com/TauCetiProject/TauCeti/blob/cd41bffcb343151b3e58c89392e206b11fe78c1c/TauCeti/MeasureTheory/Function/ConditionalExpectation/WithDensity.lean#L41)

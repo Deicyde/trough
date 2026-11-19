@@ -1,0 +1,23 @@
+{
+ "schema": "trough-ledger/v1",
+ "library": "CSLib",
+ "repo": "leanprover/cslib",
+ "rev": "86d560b6cbb379bd82512424cbcd2a915a1565e7",
+ "module": "Cslib.Languages.LambdaCalculus.LocallyNameless.Untyped.MultiSubst",
+ "file": "Cslib/Languages/LambdaCalculus/LocallyNameless/Untyped/MultiSubst.lean",
+ "public": [
+  {"name": "Cslib.LambdaCalculus.LocallyNameless.Untyped.Term.Env", "kind": "abbrev", "line": 32},
+  {"name": "Cslib.LambdaCalculus.LocallyNameless.Untyped.Term.multiSubst", "kind": "def", "line": 37},
+  {"name": "Cslib.LambdaCalculus.LocallyNameless.Untyped.Term.Env.fv", "kind": "def", "line": 45},
+  {"name": "Cslib.LambdaCalculus.LocallyNameless.Untyped.Term.envLC", "kind": "abbrev", "line": 53},
+  {"name": "Cslib.LambdaCalculus.LocallyNameless.Untyped.Term.envLC_cons", "kind": "lemma", "line": 56},
+  {"name": "Cslib.LambdaCalculus.LocallyNameless.Untyped.Term.multiSubst_fvar_fresh", "kind": "lemma", "line": 60},
+  {"name": "Cslib.LambdaCalculus.LocallyNameless.Untyped.Term.multiSubst_preserves_not_fvar", "kind": "lemma", "line": 65},
+  {"name": "Cslib.LambdaCalculus.LocallyNameless.Untyped.Term.multiSubst_app", "kind": "lemma", "line": 70},
+  {"name": "Cslib.LambdaCalculus.LocallyNameless.Untyped.Term.multiSubst_abs", "kind": "lemma", "line": 75},
+  {"name": "Cslib.LambdaCalculus.LocallyNameless.Untyped.Term.multiSubst_open_var", "kind": "lemma", "line": 82}
+ ],
+ "private": [],
+ "missing": [],
+ "unread": "Unnamed instances, the names an `alias ⟨…⟩` command gives, and the names Lean generates for a declaration (constructors, recursors, derived instances) are not read from the source, so they are not listed."
+}

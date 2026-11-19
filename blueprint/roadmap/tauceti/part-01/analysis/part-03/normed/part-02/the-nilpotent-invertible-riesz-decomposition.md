@@ -17,9 +17,9 @@ is required.
 
 ```lean
 IsCompactOperator.exists_stable_ker_range_restrictions_sub_smul.{u_1, u_2} {𝕜 : Type u_1}
-  {X : Type u_2} [NontriviallyNormedField 𝕜] [CompleteSpace 𝕜] [IsRCLikeNormedField 𝕜]
-  [NormedAddCommGroup X] [NormedSpace 𝕜 X] [CompleteSpace X] {K : X →L[𝕜] X}
-  (hK : IsCompactOperator ⇑K) {μ : 𝕜} (hμ : μ ≠ 0) :
+  {X : Type u_2} [NontriviallyNormedField 𝕜] [CompleteSpace 𝕜] [NormedAddCommGroup X]
+  [NormedSpace 𝕜 X] [CompleteSpace X] {K : X →L[𝕜] X} (hK : IsCompactOperator ⇑K) {μ : 𝕜}
+  (hμ : μ ≠ 0) :
   ∃ p,
     have A := K - μ • 1;
     have f := ↑A;
@@ -47,4 +47,4 @@ Formalized in Tau Ceti as [`IsCompactOperator.exists_stable_ker_range_restrictio
 ## Sources
 
 - [Tau Ceti documentation: `IsCompactOperator.exists_stable_ker_range_restrictions_sub_smul`](https://taucetiproject.org/docs/TauCeti/Analysis/Normed/Operator/Compact/Restriction.html#IsCompactOperator.exists_stable_ker_range_restrictions_sub_smul)
-- [Source of `IsCompactOperator.exists_stable_ker_range_restrictions_sub_smul` in TauCeti/Analysis/Normed/Operator/Compact/Restriction.lean](https://github.com/TauCetiProject/TauCeti/blob/a6027b1d24fcb935c53bd5b50d11b40991cda418/TauCeti/Analysis/Normed/Operator/Compact/Restriction.lean#L42)
+- [Source of `IsCompactOperator.exists_stable_ker_range_restrictions_sub_smul` in TauCeti/Analysis/Normed/Operator/Compact/Restriction.lean](https://github.com/TauCetiProject/TauCeti/blob/cd41bffcb343151b3e58c89392e206b11fe78c1c/TauCeti/Analysis/Normed/Operator/Compact/Restriction.lean#L41)

@@ -29,4 +29,4 @@ Formalized in Tau Ceti as [`Nat.sub_one_mul_sum_div_pow_succ_eq_sub_sum_digits`]
 ## Sources
 
 - [Tau Ceti documentation: `Nat.sub_one_mul_sum_div_pow_succ_eq_sub_sum_digits`](https://taucetiproject.org/docs/TauCeti/Data/Nat/Digits.html#Nat.sub_one_mul_sum_div_pow_succ_eq_sub_sum_digits)
-- [Source of `Nat.sub_one_mul_sum_div_pow_succ_eq_sub_sum_digits` in TauCeti/Data/Nat/Digits.lean](https://github.com/TauCetiProject/TauCeti/blob/a6027b1d24fcb935c53bd5b50d11b40991cda418/TauCeti/Data/Nat/Digits.lean#L135)
+- [Source of `Nat.sub_one_mul_sum_div_pow_succ_eq_sub_sum_digits` in TauCeti/Data/Nat/Digits.lean](https://github.com/TauCetiProject/TauCeti/blob/cd41bffcb343151b3e58c89392e206b11fe78c1c/TauCeti/Data/Nat/Digits.lean#L135)

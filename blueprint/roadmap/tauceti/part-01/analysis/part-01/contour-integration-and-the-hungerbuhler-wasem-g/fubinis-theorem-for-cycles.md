@@ -23,6 +23,7 @@ TauCeti.Contour.Cycle.integral_integral_swap.{u_1} {E : Type u_1} [NormedAddComm
 
 ## Depends on
 
+- [Piecewise `C¹` on the interval between `a` and `b`](piecewise-c1-on-the-interval-between-a-and-b.md)
 - [TauCeti.Contour.Cycle](tauceti-contour-cycle.md)
 
 ## Lean
@@ -32,4 +33,4 @@ Formalized in Tau Ceti as [`TauCeti.Contour.Cycle.integral_integral_swap`](https
 ## Sources
 
 - [Tau Ceti documentation: `TauCeti.Contour.Cycle.integral_integral_swap`](https://taucetiproject.org/docs/TauCeti/Analysis/Contour/Cycle/Fubini.html#TauCeti.Contour.Cycle.integral_integral_swap)
-- [Source of `TauCeti.Contour.Cycle.integral_integral_swap` in TauCeti/Analysis/Contour/Cycle/Fubini.lean](https://github.com/TauCetiProject/TauCeti/blob/a6027b1d24fcb935c53bd5b50d11b40991cda418/TauCeti/Analysis/Contour/Cycle/Fubini.lean#L111)
+- [Source of `TauCeti.Contour.Cycle.integral_integral_swap` in TauCeti/Analysis/Contour/Cycle/Fubini.lean](https://github.com/TauCetiProject/TauCeti/blob/cd41bffcb343151b3e58c89392e206b11fe78c1c/TauCeti/Analysis/Contour/Cycle/Fubini.lean#L111)

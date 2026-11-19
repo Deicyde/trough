@@ -37,4 +37,4 @@ Formalized in Tau Ceti as [`NumberField.Chebotarev.primeCount_primesCongruent_is
 ## Sources
 
 - [Tau Ceti documentation: `NumberField.Chebotarev.primeCount_primesCongruent_isEquivalent_logIntegral`](https://taucetiproject.org/docs/TauCeti/NumberTheory/Chebotarev/PrimeCounting/PrimesCongruent.html#NumberField.Chebotarev.primeCount_primesCongruent_isEquivalent_logIntegral)
-- [Source of `NumberField.Chebotarev.primeCount_primesCongruent_isEquivalent_logIntegral` in TauCeti/NumberTheory/Chebotarev/PrimeCounting/PrimesCongruent.lean](https://github.com/TauCetiProject/TauCeti/blob/a6027b1d24fcb935c53bd5b50d11b40991cda418/TauCeti/NumberTheory/Chebotarev/PrimeCounting/PrimesCongruent.lean#L46)
+- [Source of `NumberField.Chebotarev.primeCount_primesCongruent_isEquivalent_logIntegral` in TauCeti/NumberTheory/Chebotarev/PrimeCounting/PrimesCongruent.lean](https://github.com/TauCetiProject/TauCeti/blob/cd41bffcb343151b3e58c89392e206b11fe78c1c/TauCeti/NumberTheory/Chebotarev/PrimeCounting/PrimesCongruent.lean#L46)

@@ -1,0 +1,24 @@
+{
+ "schema": "trough-ledger/v1",
+ "library": "CSLib",
+ "repo": "leanprover/cslib",
+ "rev": "86d560b6cbb379bd82512424cbcd2a915a1565e7",
+ "module": "Cslib.Crypto.Primitives.PRG.Asymptotic",
+ "file": "Cslib/Crypto/Primitives/PRG/Asymptotic.lean",
+ "public": [
+  {"name": "Cslib.Crypto.PRG.Family", "kind": "abbrev", "line": 39},
+  {"name": "Cslib.Crypto.PRG.Family.Secure", "kind": "def", "line": 49},
+  {"name": "Cslib.Crypto.PRG.Family.Secure.of_admissible", "kind": "theorem", "line": 56},
+  {"name": "Cslib.Crypto.PRG.Family.SecureWithError", "kind": "def", "line": 64},
+  {"name": "Cslib.Crypto.PRG.Family.SecureWithError.secure", "kind": "theorem", "line": 70},
+  {"name": "Cslib.Crypto.PRG.Family.not_secure_of_rangeAdversary", "kind": "theorem", "line": 87},
+  {"name": "Cslib.Crypto.PRG.Family.not_secure_of_two_mul_card_le", "kind": "theorem", "line": 106},
+  {"name": "Cslib.Crypto.PRG.Family.not_secure_of_bitstring_stretch", "kind": "theorem", "line": 130},
+  {"name": "Cslib.Crypto.PRG.Family.not_exists_secure_bitstring_stretch", "kind": "theorem", "line": 145},
+  {"name": "Cslib.Crypto.PRG.Family.not_secure_of_bitVec_stretch", "kind": "theorem", "line": 154},
+  {"name": "Cslib.Crypto.PRG.Family.not_exists_secure_bitVec_stretch", "kind": "theorem", "line": 169}
+ ],
+ "private": [],
+ "missing": [],
+ "unread": "Unnamed instances, the names an `alias ⟨…⟩` command gives, and the names Lean generates for a declaration (constructors, recursors, derived instances) are not read from the source, so they are not listed."
+}

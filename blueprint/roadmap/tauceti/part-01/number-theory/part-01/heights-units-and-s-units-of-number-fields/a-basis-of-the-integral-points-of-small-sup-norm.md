@@ -30,8 +30,9 @@ Its statement uses no other declaration mapped here.
 ## Proof depends on
 
 - [A basis from the successive minima (Cassels, Chapter V, Lemma 8)](a-basis-from-the-successive-minima-cassels-chapt.md)
-- [The Cauchy–Binet formula](../../../linear-algebra/other-results/the-cauchy-binet-formula.md)
 - [Minkowski's second theorem, upper bound, in terms of the successive minima](minkowskis-second-theorem-upper-bound-in-terms-o.md)
+- [Pseudo-bases over a Dedekind domain](../../part-02/roths-theorem-and-the-subspace-theorem-over-numb/pseudo-bases-over-a-dedekind-domain.md)
+- [Schmidt's covolume identity](../diophantine-approximation-and-transcendence/schmidts-covolume-identity.md)
 - [Vaaler's cube-slicing theorem](../../../measure-theory/measure/vaalers-cube-slicing-theorem.md)
 - [ZLattice.successiveMin](zlattice-successivemin.md)
 
@@ -42,5 +43,5 @@ Formalized in Tau Ceti as [`Submodule.exists_basis_intPoints_prod_norm_le_subspa
 ## Sources
 
 - [Tau Ceti documentation: `Submodule.exists_basis_intPoints_prod_norm_le_subspaceHeight`](https://taucetiproject.org/docs/TauCeti/NumberTheory/Height/Arakelov/BombieriVaaler.html#Submodule.exists_basis_intPoints_prod_norm_le_subspaceHeight)
-- [Source of `Submodule.exists_basis_intPoints_prod_norm_le_subspaceHeight` in TauCeti/NumberTheory/Height/Arakelov/BombieriVaaler.lean](https://github.com/TauCetiProject/TauCeti/blob/a6027b1d24fcb935c53bd5b50d11b40991cda418/TauCeti/NumberTheory/Height/Arakelov/BombieriVaaler.lean#L127)
-- [Tau Ceti roadmap status: Heights, units and S-units of number fields](https://github.com/TauCetiProject/TauCetiRoadmap/blob/9f7c032adaf1b838e8183d63ff3cfa886d061cb3/Completed/HeightsAndUnits/STATUS.md)
+- [Source of `Submodule.exists_basis_intPoints_prod_norm_le_subspaceHeight` in TauCeti/NumberTheory/Height/Arakelov/BombieriVaaler.lean](https://github.com/TauCetiProject/TauCeti/blob/cd41bffcb343151b3e58c89392e206b11fe78c1c/TauCeti/NumberTheory/Height/Arakelov/BombieriVaaler.lean#L127)
+- [Tau Ceti roadmap status: Heights, units and S-units of number fields](https://github.com/TauCetiProject/TauCetiRoadmap/blob/612845ab80fb9c2b9bee724a156756ee78031591/Completed/HeightsAndUnits/STATUS.md)

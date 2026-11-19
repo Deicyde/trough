@@ -44,5 +44,5 @@ Formalized in Tau Ceti as [`AnalyticAt.exists_weierstrassPreparation_real`](http
 ## Sources
 
 - [Tau Ceti documentation: `AnalyticAt.exists_weierstrassPreparation_real`](https://taucetiproject.org/docs/TauCeti/Analysis/Analytic/Complexification/Weierstrass.html#AnalyticAt.exists_weierstrassPreparation_real)
-- [Source of `AnalyticAt.exists_weierstrassPreparation_real` in TauCeti/Analysis/Analytic/Complexification/Weierstrass.lean](https://github.com/TauCetiProject/TauCeti/blob/a6027b1d24fcb935c53bd5b50d11b40991cda418/TauCeti/Analysis/Analytic/Complexification/Weierstrass.lean#L173)
-- [Tau Ceti roadmap status: Real-analytic geometry and semianalytic triangulation](https://github.com/TauCetiProject/TauCetiRoadmap/blob/9f7c032adaf1b838e8183d63ff3cfa886d061cb3/TauCetiRoadmap/RealAnalyticGeometry/STATUS.md)
+- [Source of `AnalyticAt.exists_weierstrassPreparation_real` in TauCeti/Analysis/Analytic/Complexification/Weierstrass.lean](https://github.com/TauCetiProject/TauCeti/blob/cd41bffcb343151b3e58c89392e206b11fe78c1c/TauCeti/Analysis/Analytic/Complexification/Weierstrass.lean#L173)
+- [Tau Ceti roadmap status: Real-analytic geometry and semianalytic triangulation](https://github.com/TauCetiProject/TauCetiRoadmap/blob/612845ab80fb9c2b9bee724a156756ee78031591/TauCetiRoadmap/RealAnalyticGeometry/STATUS.md)

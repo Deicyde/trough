@@ -1,14 +1,18 @@
 # Integral
 
-Results named in Tau Ceti's `TauCeti.MeasureTheory.Integral` modules and in no roadmap's section, as Tau Ceti has them at commit [a6027b1d](https://github.com/TauCetiProject/TauCeti/tree/a6027b1d24fcb935c53bd5b50d11b40991cda418).
+Results named in Tau Ceti's `TauCeti.MeasureTheory.Integral` modules and in no roadmap's section, as Tau Ceti has them at commit [cd41bffc](https://github.com/TauCetiProject/TauCeti/tree/cd41bffcb343151b3e58c89392e206b11fe78c1c).
 
-## [Brunn's principle, in… to Jensen's inequality for the…](part-01/README.md)
+## [Arzelà–Ascoli for primitives to The Hardy–Littlewood–Sobolev…](part-01/README.md)
 
+- [Arzelà–Ascoli for primitives](part-01/arzela-ascoli-for-primitives.md)
 - [Brunn's principle, in log-concave form](part-01/brunns-principle-in-log-concave-form.md)
 - [The Calderón–Zygmund theorem](part-01/the-calderon-zygmund-theorem.md)
 - [The Cauchy–Schwarz inequality](part-01/the-cauchy-schwarz-inequality.md)
 - [Cauchy–Schwarz on a circle](part-01/cauchy-schwarz-on-a-circle.md)
 - [Chebyshev's inequality for truncations](part-01/chebyshevs-inequality-for-truncations.md)
+- [The Christ–Kiselev lemma, in bilinear form](part-01/the-christ-kiselev-lemma-in-bilinear-form.md)
+- [The Coifman–Rochberg–Weiss theorem](part-01/the-coifman-rochberg-weiss-theorem.md)
+- [The divergence theorem on a ball](part-01/the-divergence-theorem-on-a-ball.md)
 - [The divergence theorem on a half-space (`TauCeti.setIntegral_setOf_inner_lt_trace_fderiv`)](part-01/the-divergence-theorem-on-a-half-space-tauceti-s.md)
 - [The dyadic John–Nirenberg inequality for any additive Haar measure](part-01/the-dyadic-john-nirenberg-inequality-for-any-add.md)
 - [The Fefferman–Stein inequality](part-01/the-fefferman-stein-inequality.md)
@@ -20,24 +24,26 @@ Results named in Tau Ceti's `TauCeti.MeasureTheory.Integral` modules and in no r
 - [Green's formula on a closed annulus](part-01/greens-formula-on-a-closed-annulus.md)
 - [The Hardy–Littlewood maximal inequality](part-01/the-hardy-littlewood-maximal-inequality.md)
 - [The Hardy–Littlewood–Sobolev inequality](part-01/the-hardy-littlewood-sobolev-inequality.md)
-- [Hedberg's inequality](part-01/hedbergs-inequality.md)
-- [Hölder's bound on an average](part-01/holders-bound-on-an-average.md)
-- [Hölder's inequality for Young's exponents](part-01/holders-inequality-for-youngs-exponents.md)
-- [Jensen's inequality for the square of a mean](part-01/jensens-inequality-for-the-square-of-a-mean.md)
 
-## [The John–Nirenberg inequality… to Young's inequality for integral…](part-02/README.md)
+## [Hedberg's inequality to Young's inequality for integral…](part-02/README.md)
 
+- [Hedberg's inequality](part-02/hedbergs-inequality.md)
+- [Hölder's bound on an average](part-02/holders-bound-on-an-average.md)
+- [Hölder's inequality with a bounded weight](part-02/holders-inequality-with-a-bounded-weight.md)
+- [Jensen's inequality for the square of a mean](part-02/jensens-inequality-for-the-square-of-a-mean.md)
 - [The John–Nirenberg inequality in `Lᵖ` form](part-02/the-john-nirenberg-inequality-in-lp-form.md)
 - [The Krylov–Safonov covering lemma](part-02/the-krylov-safonov-covering-lemma.md)
 - [Minkowski's integral inequality](part-02/minkowskis-integral-inequality.md)
 - [Moser's crossover estimate (`TauCeti.exists_setLIntegral_exp_mul_mul_setLIntegral_exp_neg_mul_ball_le`)](part-02/mosers-crossover-estimate-tauceti-exists-setlint.md)
 - [The off-diagonal Marcinkiewicz interpolation theorem](part-02/the-off-diagonal-marcinkiewicz-interpolation-the.md)
 - [Prékopa–Leindler inequality for the minimum on `ℝ`](part-02/prekopa-leindler-inequality-for-the-minimum-on-r.md)
+- [Prékopa–Leindler with an a.e. measurable majorant](part-02/prekopa-leindler-with-an-a-e-measurable-majorant.md)
 - [The reverse Fatou lemma for integrals over sets](part-02/the-reverse-fatou-lemma-for-integrals-over-sets.md)
 - [Riesz–Markov–Kakutani on a compact Hausdorff space](part-02/riesz-markov-kakutani-on-a-compact-hausdorff-spa.md)
 - [The Riesz–Thorin interpolation theorem](part-02/the-riesz-thorin-interpolation-theorem.md)
 - [Scheffé's lemma](part-02/scheffes-lemma.md)
 - [Tonelli's theorem on the region between two functions](part-02/tonellis-theorem-on-the-region-between-two-funct.md)
 - [The Vitali covering estimate](part-02/the-vitali-covering-estimate.md)
+- [Weighted Young inequality for a pairing](part-02/weighted-young-inequality-for-a-pairing.md)
 - [Wolff's lemma (`TauCeti.exists_circleLIntegral_sq_lt`)](part-02/wolffs-lemma-tauceti-exists-circlelintegral-sq-l.md)
 - [Young's inequality for integral kernels](part-02/youngs-inequality-for-integral-kernels.md)

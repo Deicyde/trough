@@ -32,4 +32,4 @@ Formalized in Tau Ceti as [`lp.tendsto_of_tendsto_toWeakSpace_one`](https://tauc
 ## Sources
 
 - [Tau Ceti documentation: `lp.tendsto_of_tendsto_toWeakSpace_one`](https://taucetiproject.org/docs/TauCeti/Analysis/Normed/Lp/Schur.html#lp.tendsto_of_tendsto_toWeakSpace_one)
-- [Source of `lp.tendsto_of_tendsto_toWeakSpace_one` in TauCeti/Analysis/Normed/Lp/Schur.lean](https://github.com/TauCetiProject/TauCeti/blob/a6027b1d24fcb935c53bd5b50d11b40991cda418/TauCeti/Analysis/Normed/Lp/Schur.lean#L164)
+- [Source of `lp.tendsto_of_tendsto_toWeakSpace_one` in TauCeti/Analysis/Normed/Lp/Schur.lean](https://github.com/TauCetiProject/TauCeti/blob/cd41bffcb343151b3e58c89392e206b11fe78c1c/TauCeti/Analysis/Normed/Lp/Schur.lean#L164)

@@ -1,0 +1,33 @@
+{
+ "schema": "trough-ledger/v1",
+ "library": "CSLib",
+ "repo": "leanprover/cslib",
+ "rev": "86d560b6cbb379bd82512424cbcd2a915a1565e7",
+ "module": "Cslib.Computability.Distributed.FLP.OnePseudoConsensus",
+ "file": "Cslib/Computability/Distributed/FLP/OnePseudoConsensus.lean",
+ "public": [
+  {"name": "Cslib.FLP.Algorithm.CanDecideWithout", "kind": "def", "line": 28},
+  {"name": "Cslib.FLP.Algorithm.Uniform", "kind": "def", "line": 34},
+  {"name": "Cslib.FLP.Algorithm.NonUniform", "kind": "def", "line": 39},
+  {"name": "Cslib.FLP.OnePseudoConsensus.pseudoTermination", "kind": "theorem", "line": 47},
+  {"name": "Cslib.FLP.OnePseudoConsensus.canDecideWithout_exists", "kind": "theorem", "line": 56},
+  {"name": "Cslib.FLP.OnePseudoConsensus.not_uniform_and_nonUniform", "kind": "theorem", "line": 64},
+  {"name": "Cslib.FLP.OnePseudoConsensus.uniform_or_nonUniform", "kind": "theorem", "line": 71},
+  {"name": "Cslib.FLP.OnePseudoConsensus.decided_eq_canDecideWithout", "kind": "theorem", "line": 90},
+  {"name": "Cslib.FLP.OnePseudoConsensus.decided_imp_uniform", "kind": "theorem", "line": 100},
+  {"name": "Cslib.FLP.OnePseudoConsensus.canDecideWithout_dest", "kind": "theorem", "line": 110},
+  {"name": "Cslib.FLP.OnePseudoConsensus.canDecideWithout_nondest", "kind": "theorem", "line": 123},
+  {"name": "Cslib.FLP.OnePseudoConsensus.canDecideWithout_uniform", "kind": "theorem", "line": 134},
+  {"name": "Cslib.FLP.OnePseudoConsensus.nonUniform_step", "kind": "theorem", "line": 154},
+  {"name": "Cslib.FLP.OnePseudoConsensus.inpN", "kind": "def", "line": 186},
+  {"name": "Cslib.FLP.OnePseudoConsensus.inpN_eqOn_except_singleton", "kind": "theorem", "line": 192},
+  {"name": "Cslib.FLP.OnePseudoConsensus.inpN_zero_no_true", "kind": "lemma", "line": 201},
+  {"name": "Cslib.FLP.OnePseudoConsensus.inpN_zero_uniform", "kind": "theorem", "line": 212},
+  {"name": "Cslib.FLP.OnePseudoConsensus.inpN_card_not_false", "kind": "lemma", "line": 220},
+  {"name": "Cslib.FLP.OnePseudoConsensus.inpN_card_uniform", "kind": "theorem", "line": 231},
+  {"name": "Cslib.FLP.OnePseudoConsensus.nonUniform_inp", "kind": "theorem", "line": 241}
+ ],
+ "private": [],
+ "missing": [],
+ "unread": "Unnamed instances, the names an `alias ⟨…⟩` command gives, and the names Lean generates for a declaration (constructors, recursors, derived instances) are not read from the source, so they are not listed."
+}

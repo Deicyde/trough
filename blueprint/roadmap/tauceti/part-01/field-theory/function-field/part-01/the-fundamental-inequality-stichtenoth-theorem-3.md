@@ -40,4 +40,4 @@ Formalized in Tau Ceti as [`TauCeti.Place.sum_ramificationIdx_mul_relativeDegree
 ## Sources
 
 - [Tau Ceti documentation: `TauCeti.Place.sum_ramificationIdx_mul_relativeDegree_le_finrank`](https://taucetiproject.org/docs/TauCeti/FieldTheory/FunctionField/Place/Extension/Fibre.html#TauCeti.Place.sum_ramificationIdx_mul_relativeDegree_le_finrank)
-- [Source of `TauCeti.Place.sum_ramificationIdx_mul_relativeDegree_le_finrank` in TauCeti/FieldTheory/FunctionField/Place/Extension/Fibre.lean](https://github.com/TauCetiProject/TauCeti/blob/a6027b1d24fcb935c53bd5b50d11b40991cda418/TauCeti/FieldTheory/FunctionField/Place/Extension/Fibre.lean#L312)
+- [Source of `TauCeti.Place.sum_ramificationIdx_mul_relativeDegree_le_finrank` in TauCeti/FieldTheory/FunctionField/Place/Extension/Fibre.lean](https://github.com/TauCetiProject/TauCeti/blob/cd41bffcb343151b3e58c89392e206b11fe78c1c/TauCeti/FieldTheory/FunctionField/Place/Extension/Fibre.lean#L312)

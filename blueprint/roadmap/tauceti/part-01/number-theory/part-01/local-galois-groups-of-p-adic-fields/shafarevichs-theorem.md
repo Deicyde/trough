@@ -26,12 +26,12 @@ Its statement uses no other declaration mapped here.
 
 ## Proof depends on
 
-- [Burnside's basis theorem, cardinal form](../../../topology/algebra/part-01/burnsides-basis-theorem-cardinal-form.md)
+- [Burnside's basis theorem, cardinal form](../../../../part-02/topology/algebra/part-01/burnsides-basis-theorem-cardinal-form.md)
 - [Dimension shifting in every positive degree](../../../representation-theory/continuous-cohomology-of-profinite-groups/dimension-shifting-in-every-positive-degree.md)
 - [The Kummer isomorphism](../../../representation-theory/continuous-cohomology-of-profinite-groups/the-kummer-isomorphism.md)
 - [The local invariant](../class-field-theory/the-local-invariant.md)
 - [Local Tate duality in degree one](../../part-02/class-field-theory/local-tate-duality-in-degree-one.md)
-- [Serre's theorem at arbitrary rank, as an equivalence](../../../topology/profinite-and-pro-p-groups/part-01/serres-theorem-at-arbitrary-rank-as-an-equivalen.md)
+- [Serre's theorem at arbitrary rank, as an equivalence](../../../../part-02/topology/profinite-and-pro-p-groups/serres-theorem-at-arbitrary-rank-as-an-equivalen.md)
 - [Shapiro's lemma in degree one](../../../representation-theory/homological/shapiros-lemma-in-degree-one.md)
 - [TauCeti.algebraicExtensionNormedField](../local-fields-and-ramification/tauceti-algebraicextensionnormedfield.md)
 
@@ -42,4 +42,4 @@ Formalized in Tau Ceti as [`TauCeti.nonempty_continuousMulEquiv_freeProP_of_not_
 ## Sources
 
 - [Tau Ceti documentation: `TauCeti.nonempty_continuousMulEquiv_freeProP_of_not_mu`](https://taucetiproject.org/docs/TauCeti/NumberTheory/LocalField/ProP/Free.html#TauCeti.nonempty_continuousMulEquiv_freeProP_of_not_mu)
-- [Source of `TauCeti.nonempty_continuousMulEquiv_freeProP_of_not_mu` in TauCeti/NumberTheory/LocalField/ProP/Free.lean](https://github.com/TauCetiProject/TauCeti/blob/a6027b1d24fcb935c53bd5b50d11b40991cda418/TauCeti/NumberTheory/LocalField/ProP/Free.lean#L152)
+- [Source of `TauCeti.nonempty_continuousMulEquiv_freeProP_of_not_mu` in TauCeti/NumberTheory/LocalField/ProP/Free.lean](https://github.com/TauCetiProject/TauCeti/blob/cd41bffcb343151b3e58c89392e206b11fe78c1c/TauCeti/NumberTheory/LocalField/ProP/Free.lean#L152)

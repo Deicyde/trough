@@ -63,4 +63,4 @@ Formalized in Tau Ceti as [`TauCeti.lintegral_rpow_le_of_rpow_mul_meas_lt_le_rpo
 ## Sources
 
 - [Tau Ceti documentation: `TauCeti.lintegral_rpow_le_of_rpow_mul_meas_lt_le_rpow`](https://taucetiproject.org/docs/TauCeti/MeasureTheory/Integral/Marcinkiewicz/OffDiagonal.html#TauCeti.lintegral_rpow_le_of_rpow_mul_meas_lt_le_rpow)
-- [Source of `TauCeti.lintegral_rpow_le_of_rpow_mul_meas_lt_le_rpow` in TauCeti/MeasureTheory/Integral/Marcinkiewicz/OffDiagonal.lean](https://github.com/TauCetiProject/TauCeti/blob/a6027b1d24fcb935c53bd5b50d11b40991cda418/TauCeti/MeasureTheory/Integral/Marcinkiewicz/OffDiagonal.lean#L530)
+- [Source of `TauCeti.lintegral_rpow_le_of_rpow_mul_meas_lt_le_rpow` in TauCeti/MeasureTheory/Integral/Marcinkiewicz/OffDiagonal.lean](https://github.com/TauCetiProject/TauCeti/blob/cd41bffcb343151b3e58c89392e206b11fe78c1c/TauCeti/MeasureTheory/Integral/Marcinkiewicz/OffDiagonal.lean#L534)

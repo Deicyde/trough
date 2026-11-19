@@ -27,11 +27,11 @@ Subgroup.IsCofinite.compactSpace_compactifiedQuotient
 
 ## Proof depends on
 
-- [The Gauss–Bonnet formula](../../part-02/complex/part-01/the-gauss-bonnet-formula.md)
-- [Jørgensen's inequality](../../part-02/complex/part-02/jrgensens-inequality.md)
-- [The Margulis lemma for Fuchsian groups](../../part-02/complex/part-02/the-margulis-lemma-for-fuchsian-groups.md)
+- [The Gauss–Bonnet formula](../../part-03/complex/part-02/the-gauss-bonnet-formula.md)
+- [Jørgensen's inequality](../../part-03/complex/part-02/jrgensens-inequality.md)
+- [The Margulis lemma for Fuchsian groups](../../part-03/complex/part-03/the-margulis-lemma-for-fuchsian-groups.md)
 - [The Möbius difference formula](../../../algebra/part-02/other-results/the-mobius-difference-formula.md)
-- [Shimizu's inequality at two cusps](../../part-02/complex/part-03/shimizus-inequality-at-two-cusps.md)
+- [Shimizu's inequality at two cusps](../../part-03/complex/part-04/shimizus-inequality-at-two-cusps.md)
 
 ## Lean
 
@@ -40,5 +40,5 @@ Formalized in Tau Ceti as [`Subgroup.IsCofinite.compactSpace_compactifiedQuotien
 ## Sources
 
 - [Tau Ceti documentation: `Subgroup.IsCofinite.compactSpace_compactifiedQuotient`](https://taucetiproject.org/docs/TauCeti/Analysis/Complex/Fuchsian/DirichletDomain/Cofinite.html#Subgroup.IsCofinite.compactSpace_compactifiedQuotient)
-- [Source of `Subgroup.IsCofinite.compactSpace_compactifiedQuotient` in TauCeti/Analysis/Complex/Fuchsian/DirichletDomain/Cofinite.lean](https://github.com/TauCetiProject/TauCeti/blob/a6027b1d24fcb935c53bd5b50d11b40991cda418/TauCeti/Analysis/Complex/Fuchsian/DirichletDomain/Cofinite.lean#L157)
-- [Tau Ceti roadmap status: Fuchsian groups and orbifold Riemann surfaces](https://github.com/TauCetiProject/TauCetiRoadmap/blob/9f7c032adaf1b838e8183d63ff3cfa886d061cb3/TauCetiRoadmap/FuchsianOrbifolds/STATUS.md)
+- [Source of `Subgroup.IsCofinite.compactSpace_compactifiedQuotient` in TauCeti/Analysis/Complex/Fuchsian/DirichletDomain/Cofinite.lean](https://github.com/TauCetiProject/TauCeti/blob/cd41bffcb343151b3e58c89392e206b11fe78c1c/TauCeti/Analysis/Complex/Fuchsian/DirichletDomain/Cofinite.lean#L156)
+- [Tau Ceti roadmap status: Fuchsian groups and orbifold Riemann surfaces](https://github.com/TauCetiProject/TauCetiRoadmap/blob/612845ab80fb9c2b9bee724a156756ee78031591/TauCetiRoadmap/FuchsianOrbifolds/STATUS.md)

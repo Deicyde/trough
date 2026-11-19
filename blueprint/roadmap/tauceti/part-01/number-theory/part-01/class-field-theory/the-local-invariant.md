@@ -36,5 +36,5 @@ Formalized in Tau Ceti as [`TauCeti.ClassFieldTheory.invMap`](https://taucetipro
 ## Sources
 
 - [Tau Ceti documentation: `TauCeti.ClassFieldTheory.invMap`](https://taucetiproject.org/docs/TauCeti/NumberTheory/ClassFieldTheory/Brauer/Invariant.html#TauCeti.ClassFieldTheory.invMap)
-- [Source of `TauCeti.ClassFieldTheory.invMap` in TauCeti/NumberTheory/ClassFieldTheory/Brauer/Invariant.lean](https://github.com/TauCetiProject/TauCeti/blob/a6027b1d24fcb935c53bd5b50d11b40991cda418/TauCeti/NumberTheory/ClassFieldTheory/Brauer/Invariant.lean#L196)
-- [Tau Ceti roadmap status: Class field theory](https://github.com/TauCetiProject/TauCetiRoadmap/blob/9f7c032adaf1b838e8183d63ff3cfa886d061cb3/TauCetiRoadmap/ClassFieldTheory/STATUS.md)
+- [Source of `TauCeti.ClassFieldTheory.invMap` in TauCeti/NumberTheory/ClassFieldTheory/Brauer/Invariant.lean](https://github.com/TauCetiProject/TauCeti/blob/cd41bffcb343151b3e58c89392e206b11fe78c1c/TauCeti/NumberTheory/ClassFieldTheory/Brauer/Invariant.lean#L196)
+- [Tau Ceti roadmap status: Class field theory](https://github.com/TauCetiProject/TauCetiRoadmap/blob/612845ab80fb9c2b9bee724a156756ee78031591/TauCetiRoadmap/ClassFieldTheory/STATUS.md)

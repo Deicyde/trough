@@ -30,4 +30,4 @@ Formalized in Tau Ceti as [`TauCeti.LocalCoefficientSystem.quasiIso_smallTwisted
 ## Sources
 
 - [Tau Ceti documentation: `TauCeti.LocalCoefficientSystem.quasiIso_smallTwistedChainComplexι`](https://taucetiproject.org/docs/TauCeti/AlgebraicTopology/Singular/Twisted/Small/QuasiIso.html#TauCeti.LocalCoefficientSystem.quasiIso_smallTwistedChainComplex%CE%B9)
-- [Source of `TauCeti.LocalCoefficientSystem.quasiIso_smallTwistedChainComplexι` in TauCeti/AlgebraicTopology/Singular/Twisted/Small/QuasiIso.lean](https://github.com/TauCetiProject/TauCeti/blob/a6027b1d24fcb935c53bd5b50d11b40991cda418/TauCeti/AlgebraicTopology/Singular/Twisted/Small/QuasiIso.lean#L44)
+- [Source of `TauCeti.LocalCoefficientSystem.quasiIso_smallTwistedChainComplexι` in TauCeti/AlgebraicTopology/Singular/Twisted/Small/QuasiIso.lean](https://github.com/TauCetiProject/TauCeti/blob/cd41bffcb343151b3e58c89392e206b11fe78c1c/TauCeti/AlgebraicTopology/Singular/Twisted/Small/QuasiIso.lean#L45)

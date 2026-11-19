@@ -22,7 +22,7 @@ TauCeti.ClassificationStatement.{u} : Prop
 ## Proof depends on
 
 - [The ambient group of a valid Lie-type index](the-ambient-group-of-a-valid-lie-type-index.md)
-- [Cauchy--Binet for `2 × 2` minors](../../linear-algebra/matrix/cauchy-binet-for-2-2-minors.md)
+- [Cauchy--Binet for `2 × 2` minors](../../linear-algebra/part-01/matrix/cauchy-binet-for-2-2-minors.md)
 
 ## Lean
 
@@ -31,5 +31,5 @@ Formalized in Tau Ceti as [`TauCeti.ClassificationStatement`](https://taucetipro
 ## Sources
 
 - [Tau Ceti documentation: `TauCeti.ClassificationStatement`](https://taucetiproject.org/docs/TauCeti/GroupTheory/SpecificGroups/CFSG/Classification.html#TauCeti.ClassificationStatement)
-- [Source of `TauCeti.ClassificationStatement` in TauCeti/GroupTheory/SpecificGroups/CFSG/Classification.lean](https://github.com/TauCetiProject/TauCeti/blob/a6027b1d24fcb935c53bd5b50d11b40991cda418/TauCeti/GroupTheory/SpecificGroups/CFSG/Classification.lean#L52)
-- [Tau Ceti roadmap status: Stating the classification of finite simple groups](https://github.com/TauCetiProject/TauCetiRoadmap/blob/9f7c032adaf1b838e8183d63ff3cfa886d061cb3/TauCetiRoadmap/CFSGStatement/STATUS.md)
+- [Source of `TauCeti.ClassificationStatement` in TauCeti/GroupTheory/SpecificGroups/CFSG/Classification.lean](https://github.com/TauCetiProject/TauCeti/blob/cd41bffcb343151b3e58c89392e206b11fe78c1c/TauCeti/GroupTheory/SpecificGroups/CFSG/Classification.lean#L52)
+- [Tau Ceti roadmap status: Stating the classification of finite simple groups](https://github.com/TauCetiProject/TauCetiRoadmap/blob/612845ab80fb9c2b9bee724a156756ee78031591/TauCetiRoadmap/CFSGStatement/STATUS.md)

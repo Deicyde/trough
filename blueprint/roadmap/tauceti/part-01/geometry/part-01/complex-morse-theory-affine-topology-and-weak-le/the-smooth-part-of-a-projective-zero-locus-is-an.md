@@ -37,5 +37,5 @@ Formalized in Tau Ceti as [`TauCeti.isSmoothEmbedding_subtypeVal_complexProjecti
 ## Sources
 
 - [Tau Ceti documentation: `TauCeti.isSmoothEmbedding_subtypeVal_complexProjectiveZeroLocus`](https://taucetiproject.org/docs/TauCeti/Geometry/Manifold/Projectivization/ZeroLocus.html#TauCeti.isSmoothEmbedding_subtypeVal_complexProjectiveZeroLocus)
-- [Source of `TauCeti.isSmoothEmbedding_subtypeVal_complexProjectiveZeroLocus` in TauCeti/Geometry/Manifold/Projectivization/ZeroLocus.lean](https://github.com/TauCetiProject/TauCeti/blob/a6027b1d24fcb935c53bd5b50d11b40991cda418/TauCeti/Geometry/Manifold/Projectivization/ZeroLocus.lean#L470)
-- [Tau Ceti roadmap status: Complex Morse theory, affine topology and weak Lefschetz](https://github.com/TauCetiProject/TauCetiRoadmap/blob/9f7c032adaf1b838e8183d63ff3cfa886d061cb3/TauCetiRoadmap/AffineMorseLefschetz/STATUS.md)
+- [Source of `TauCeti.isSmoothEmbedding_subtypeVal_complexProjectiveZeroLocus` in TauCeti/Geometry/Manifold/Projectivization/ZeroLocus.lean](https://github.com/TauCetiProject/TauCeti/blob/cd41bffcb343151b3e58c89392e206b11fe78c1c/TauCeti/Geometry/Manifold/Projectivization/ZeroLocus.lean#L470)
+- [Tau Ceti roadmap status: Complex Morse theory, affine topology and weak Lefschetz](https://github.com/TauCetiProject/TauCetiRoadmap/blob/612845ab80fb9c2b9bee724a156756ee78031591/TauCetiRoadmap/AffineMorseLefschetz/STATUS.md)

@@ -8,13 +8,13 @@ proof: formalized
 
 # The dimension theorem at the origin
 
-let `K` be an algebraically closed extension of `k`.
-Fewer than `#σ` polynomials in `k[X_σ]` vanishing at the origin have a common zero in `K^σ` other
-than the origin.
+let `K` be an algebraically closed field and an
+algebra over a commutative semiring `k`. Fewer than `#σ` polynomials in `k[X_σ]` vanishing at the
+origin have a common zero in `K^σ` other than the origin.
 
 ```lean
-MvPolynomial.exists_ne_zero_forall_aeval_eq_zero.{u_1, u_2, u_3} {k : Type u_1} {K : Type u_2}
-  {σ : Type u_3} [Field k] [Field K] [Algebra k K] [IsAlgClosed K] [Finite σ]
+MvPolynomial.exists_ne_zero_forall_aeval_eq_zero.{u_2, u_3, u_4} {K : Type u_2} {σ : Type u_3}
+  [Field K] [IsAlgClosed K] [Finite σ] {k : Type u_4} [CommSemiring k] [Algebra k K]
   {s : Finset (MvPolynomial σ k)} (hs : s.card < Nat.card σ)
   (h0 : ∀ p ∈ s, MvPolynomial.constantCoeff p = 0) :
   ∃ x, x ≠ 0 ∧ ∀ p ∈ s, (MvPolynomial.aeval x) p = 0
@@ -31,4 +31,4 @@ Formalized in Tau Ceti as [`MvPolynomial.exists_ne_zero_forall_aeval_eq_zero`](h
 ## Sources
 
 - [Tau Ceti documentation: `MvPolynomial.exists_ne_zero_forall_aeval_eq_zero`](https://taucetiproject.org/docs/TauCeti/RingTheory/MvPolynomial/CommonZero.html#MvPolynomial.exists_ne_zero_forall_aeval_eq_zero)
-- [Source of `MvPolynomial.exists_ne_zero_forall_aeval_eq_zero` in TauCeti/RingTheory/MvPolynomial/CommonZero.lean](https://github.com/TauCetiProject/TauCeti/blob/a6027b1d24fcb935c53bd5b50d11b40991cda418/TauCeti/RingTheory/MvPolynomial/CommonZero.lean#L67)
+- [Source of `MvPolynomial.exists_ne_zero_forall_aeval_eq_zero` in TauCeti/RingTheory/MvPolynomial/CommonZero.lean](https://github.com/TauCetiProject/TauCeti/blob/cd41bffcb343151b3e58c89392e206b11fe78c1c/TauCeti/RingTheory/MvPolynomial/CommonZero.lean#L68)

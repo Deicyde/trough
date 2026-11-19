@@ -53,7 +53,7 @@ TauCeti.CircleSobolev.exists_analyticAt_hardyGraph {s : ℝ} [hs : Fact (1 / 2 <
 ## Proof depends on
 
 - [Hölder's inequality for unconditional sums in `ℝ≥0∞`](../../../../analysis/part-03/mean-inequalities/holders-inequality-for-unconditional-sums-in-r0.md)
-- [Young's inequality](../../../../analysis/part-03/normed/part-02/youngs-inequality.md)
+- [Young's inequality](../../../../analysis/part-03/normed/part-03/youngs-inequality.md)
 
 ## Lean
 
@@ -62,5 +62,5 @@ Formalized in Tau Ceti as [`TauCeti.CircleSobolev.exists_analyticAt_hardyGraph`]
 ## Sources
 
 - [Tau Ceti documentation: `TauCeti.CircleSobolev.exists_analyticAt_hardyGraph`](https://taucetiproject.org/docs/TauCeti/Analysis/Sobolev/Circle/HardyGraph.html#TauCeti.CircleSobolev.exists_analyticAt_hardyGraph)
-- [Source of `TauCeti.CircleSobolev.exists_analyticAt_hardyGraph` in TauCeti/Analysis/Sobolev/Circle/HardyGraph.lean](https://github.com/TauCetiProject/TauCeti/blob/a6027b1d24fcb935c53bd5b50d11b40991cda418/TauCeti/Analysis/Sobolev/Circle/HardyGraph.lean#L176)
-- [Tau Ceti roadmap status: Analytic families and moduli of complex curves](https://github.com/TauCetiProject/TauCetiRoadmap/blob/9f7c032adaf1b838e8183d63ff3cfa886d061cb3/TauCetiRoadmap/ComplexCurveModuli/STATUS.md)
+- [Source of `TauCeti.CircleSobolev.exists_analyticAt_hardyGraph` in TauCeti/Analysis/Sobolev/Circle/HardyGraph.lean](https://github.com/TauCetiProject/TauCeti/blob/cd41bffcb343151b3e58c89392e206b11fe78c1c/TauCeti/Analysis/Sobolev/Circle/HardyGraph.lean#L176)
+- [Tau Ceti roadmap status: Analytic families and moduli of complex curves](https://github.com/TauCetiProject/TauCetiRoadmap/blob/612845ab80fb9c2b9bee724a156756ee78031591/TauCetiRoadmap/ComplexCurveModuli/STATUS.md)

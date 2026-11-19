@@ -32,7 +32,6 @@ TauCeti.Multiquadratic.autCandidateGenusFieldEquivNarrowElementaryTwoQuotient {d
 
 ## Depends on
 
-- [The genus character on the narrow class group](the-genus-character-on-the-narrow-class-group.md)
 - [NumberField.NarrowClassGroup](numberfield-narrowclassgroup.md)
 
 ## Proof depends on
@@ -48,5 +47,5 @@ Formalized in Tau Ceti as [`TauCeti.Multiquadratic.autCandidateGenusFieldEquivNa
 ## Sources
 
 - [Tau Ceti documentation: `TauCeti.Multiquadratic.autCandidateGenusFieldEquivNarrowElementaryTwoQuotient`](https://taucetiproject.org/docs/TauCeti/NumberTheory/Multiquadratic/CandidateGenusField/Relative/GenusCharacter.html#TauCeti.Multiquadratic.autCandidateGenusFieldEquivNarrowElementaryTwoQuotient)
-- [Source of `TauCeti.Multiquadratic.autCandidateGenusFieldEquivNarrowElementaryTwoQuotient` in TauCeti/NumberTheory/Multiquadratic/CandidateGenusField/Relative/GenusCharacter.lean](https://github.com/TauCetiProject/TauCeti/blob/a6027b1d24fcb935c53bd5b50d11b40991cda418/TauCeti/NumberTheory/Multiquadratic/CandidateGenusField/Relative/GenusCharacter.lean#L155)
-- [Tau Ceti roadmap status: Multiquadratic fields and genus theory](https://github.com/TauCetiProject/TauCetiRoadmap/blob/9f7c032adaf1b838e8183d63ff3cfa886d061cb3/Completed/Multiquadratic/STATUS.md)
+- [Source of `TauCeti.Multiquadratic.autCandidateGenusFieldEquivNarrowElementaryTwoQuotient` in TauCeti/NumberTheory/Multiquadratic/CandidateGenusField/Relative/GenusCharacter.lean](https://github.com/TauCetiProject/TauCeti/blob/cd41bffcb343151b3e58c89392e206b11fe78c1c/TauCeti/NumberTheory/Multiquadratic/CandidateGenusField/Relative/GenusCharacter.lean#L155)
+- [Tau Ceti roadmap status: Multiquadratic fields and genus theory](https://github.com/TauCetiProject/TauCetiRoadmap/blob/612845ab80fb9c2b9bee724a156756ee78031591/Completed/Multiquadratic/STATUS.md)

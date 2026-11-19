@@ -30,4 +30,4 @@ Formalized in Tau Ceti as [`AbsolutelyContinuousOnInterval.lintegral_mul_metricD
 ## Sources
 
 - [Tau Ceti documentation: `AbsolutelyContinuousOnInterval.lintegral_mul_metricDerivative_le_dissipation`](https://taucetiproject.org/docs/TauCeti/Analysis/GradientFlow/MaximalSlope/Basic.html#AbsolutelyContinuousOnInterval.lintegral_mul_metricDerivative_le_dissipation)
-- [Source of `AbsolutelyContinuousOnInterval.lintegral_mul_metricDerivative_le_dissipation` in TauCeti/Analysis/GradientFlow/MaximalSlope/Basic.lean](https://github.com/TauCetiProject/TauCeti/blob/a6027b1d24fcb935c53bd5b50d11b40991cda418/TauCeti/Analysis/GradientFlow/MaximalSlope/Basic.lean#L162)
+- [Source of `AbsolutelyContinuousOnInterval.lintegral_mul_metricDerivative_le_dissipation` in TauCeti/Analysis/GradientFlow/MaximalSlope/Basic.lean](https://github.com/TauCetiProject/TauCeti/blob/cd41bffcb343151b3e58c89392e206b11fe78c1c/TauCeti/Analysis/GradientFlow/MaximalSlope/Basic.lean#L162)

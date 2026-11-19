@@ -30,5 +30,5 @@ Formalized in Tau Ceti as [`TauCeti.FiniteCoveringSpace.profiniteCompletionAutFi
 ## Sources
 
 - [Tau Ceti documentation: `TauCeti.FiniteCoveringSpace.profiniteCompletionAutFiberFunctorMulEquiv`](https://taucetiproject.org/docs/TauCeti/AlgebraicTopology/UniversalCover/Classification/ProfiniteFiberFunctor.html#TauCeti.FiniteCoveringSpace.profiniteCompletionAutFiberFunctorMulEquiv)
-- [Source of `TauCeti.FiniteCoveringSpace.profiniteCompletionAutFiberFunctorMulEquiv` in TauCeti/AlgebraicTopology/UniversalCover/Classification/ProfiniteFiberFunctor.lean](https://github.com/TauCetiProject/TauCeti/blob/a6027b1d24fcb935c53bd5b50d11b40991cda418/TauCeti/AlgebraicTopology/UniversalCover/Classification/ProfiniteFiberFunctor.lean#L92)
-- [Tau Ceti roadmap status: Universal covers](https://github.com/TauCetiProject/TauCetiRoadmap/blob/9f7c032adaf1b838e8183d63ff3cfa886d061cb3/Completed/UniversalCovers/STATUS.md)
+- [Source of `TauCeti.FiniteCoveringSpace.profiniteCompletionAutFiberFunctorMulEquiv` in TauCeti/AlgebraicTopology/UniversalCover/Classification/ProfiniteFiberFunctor.lean](https://github.com/TauCetiProject/TauCeti/blob/cd41bffcb343151b3e58c89392e206b11fe78c1c/TauCeti/AlgebraicTopology/UniversalCover/Classification/ProfiniteFiberFunctor.lean#L92)
+- [Tau Ceti roadmap status: Universal covers](https://github.com/TauCetiProject/TauCetiRoadmap/blob/612845ab80fb9c2b9bee724a156756ee78031591/Completed/UniversalCovers/STATUS.md)

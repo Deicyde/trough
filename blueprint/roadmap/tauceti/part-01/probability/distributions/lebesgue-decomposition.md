@@ -33,4 +33,4 @@ Formalized in Tau Ceti as [`TauCeti.Probability.multivariateGaussianMixtureMeasu
 ## Sources
 
 - [Tau Ceti documentation: `TauCeti.Probability.multivariateGaussianMixtureMeasure_eq_add_withDensity`](https://taucetiproject.org/docs/TauCeti/Probability/Distributions/Gaussian/Mixture/Multivariate.html#TauCeti.Probability.multivariateGaussianMixtureMeasure_eq_add_withDensity)
-- [Source of `TauCeti.Probability.multivariateGaussianMixtureMeasure_eq_add_withDensity` in TauCeti/Probability/Distributions/Gaussian/Mixture/Multivariate.lean](https://github.com/TauCetiProject/TauCeti/blob/a6027b1d24fcb935c53bd5b50d11b40991cda418/TauCeti/Probability/Distributions/Gaussian/Mixture/Multivariate.lean#L229)
+- [Source of `TauCeti.Probability.multivariateGaussianMixtureMeasure_eq_add_withDensity` in TauCeti/Probability/Distributions/Gaussian/Mixture/Multivariate.lean](https://github.com/TauCetiProject/TauCeti/blob/cd41bffcb343151b3e58c89392e206b11fe78c1c/TauCeti/Probability/Distributions/Gaussian/Mixture/Multivariate.lean#L229)

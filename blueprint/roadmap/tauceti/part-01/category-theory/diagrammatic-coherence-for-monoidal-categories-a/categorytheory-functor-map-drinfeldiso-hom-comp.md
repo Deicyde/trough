@@ -34,5 +34,5 @@ Formalized in Tau Ceti as [`CategoryTheory.Functor.map_drinfeldIso_hom_comp_mapD
 ## Sources
 
 - [Tau Ceti documentation: `CategoryTheory.Functor.map_drinfeldIso_hom_comp_mapDoubleRightDualIso_hom`](https://taucetiproject.org/docs/TauCeti/CategoryTheory/Monoidal/Pivotal/Functor/Basic.html#CategoryTheory.Functor.map_drinfeldIso_hom_comp_mapDoubleRightDualIso_hom)
-- [Source of `CategoryTheory.Functor.map_drinfeldIso_hom_comp_mapDoubleRightDualIso_hom` in TauCeti/CategoryTheory/Monoidal/Pivotal/Functor/Basic.lean](https://github.com/TauCetiProject/TauCeti/blob/a6027b1d24fcb935c53bd5b50d11b40991cda418/TauCeti/CategoryTheory/Monoidal/Pivotal/Functor/Basic.lean#L196)
-- [Tau Ceti roadmap status: Diagrammatic coherence for monoidal categories and duality](https://github.com/TauCetiProject/TauCetiRoadmap/blob/9f7c032adaf1b838e8183d63ff3cfa886d061cb3/TauCetiRoadmap/DiagrammaticCoherence/STATUS.md)
+- [Source of `CategoryTheory.Functor.map_drinfeldIso_hom_comp_mapDoubleRightDualIso_hom` in TauCeti/CategoryTheory/Monoidal/Pivotal/Functor/Basic.lean](https://github.com/TauCetiProject/TauCeti/blob/cd41bffcb343151b3e58c89392e206b11fe78c1c/TauCeti/CategoryTheory/Monoidal/Pivotal/Functor/Basic.lean#L196)
+- [Tau Ceti roadmap status: Diagrammatic coherence for monoidal categories and duality](https://github.com/TauCetiProject/TauCetiRoadmap/blob/612845ab80fb9c2b9bee724a156756ee78031591/TauCetiRoadmap/DiagrammaticCoherence/STATUS.md)

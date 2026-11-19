@@ -36,4 +36,4 @@ Formalized in Tau Ceti as [`ModularForm.sturm_bound_finiteIndex`](https://taucet
 ## Sources
 
 - [Tau Ceti documentation: `ModularForm.sturm_bound_finiteIndex`](https://taucetiproject.org/docs/TauCeti/NumberTheory/ModularForms/SturmBound.html#ModularForm.sturm_bound_finiteIndex)
-- [Source of `ModularForm.sturm_bound_finiteIndex` in TauCeti/NumberTheory/ModularForms/SturmBound.lean](https://github.com/TauCetiProject/TauCeti/blob/a6027b1d24fcb935c53bd5b50d11b40991cda418/TauCeti/NumberTheory/ModularForms/SturmBound.lean#L54)
+- [Source of `ModularForm.sturm_bound_finiteIndex` in TauCeti/NumberTheory/ModularForms/SturmBound.lean](https://github.com/TauCetiProject/TauCeti/blob/cd41bffcb343151b3e58c89392e206b11fe78c1c/TauCeti/NumberTheory/ModularForms/SturmBound.lean#L55)

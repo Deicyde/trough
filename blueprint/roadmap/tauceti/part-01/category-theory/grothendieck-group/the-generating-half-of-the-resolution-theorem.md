@@ -31,4 +31,4 @@ Formalized in Tau Ceti as [`TauCeti.ExactK0.closure_propClasses_eq_top`](https:/
 ## Sources
 
 - [Tau Ceti documentation: `TauCeti.ExactK0.closure_propClasses_eq_top`](https://taucetiproject.org/docs/TauCeti/CategoryTheory/GrothendieckGroup/Resolution.html#TauCeti.ExactK0.closure_propClasses_eq_top)
-- [Source of `TauCeti.ExactK0.closure_propClasses_eq_top` in TauCeti/CategoryTheory/GrothendieckGroup/Resolution.lean](https://github.com/TauCetiProject/TauCeti/blob/a6027b1d24fcb935c53bd5b50d11b40991cda418/TauCeti/CategoryTheory/GrothendieckGroup/Resolution.lean#L339)
+- [Source of `TauCeti.ExactK0.closure_propClasses_eq_top` in TauCeti/CategoryTheory/GrothendieckGroup/Resolution.lean](https://github.com/TauCetiProject/TauCeti/blob/cd41bffcb343151b3e58c89392e206b11fe78c1c/TauCeti/CategoryTheory/GrothendieckGroup/Resolution.lean#L339)

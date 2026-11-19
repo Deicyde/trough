@@ -42,5 +42,5 @@ Formalized in Tau Ceti as [`LinearIsometry.exists_continuousLinearMap_of_doubleD
 ## Sources
 
 - [Tau Ceti documentation: `LinearIsometry.exists_continuousLinearMap_of_doubleDual`](https://taucetiproject.org/docs/TauCeti/Analysis/Normed/Module/Dual/LocalReflexivity.html#LinearIsometry.exists_continuousLinearMap_of_doubleDual)
-- [Source of `LinearIsometry.exists_continuousLinearMap_of_doubleDual` in TauCeti/Analysis/Normed/Module/Dual/LocalReflexivity.lean](https://github.com/TauCetiProject/TauCeti/blob/a6027b1d24fcb935c53bd5b50d11b40991cda418/TauCeti/Analysis/Normed/Module/Dual/LocalReflexivity.lean#L241)
-- [Tau Ceti roadmap status: Banach space theory](https://github.com/TauCetiProject/TauCetiRoadmap/blob/9f7c032adaf1b838e8183d63ff3cfa886d061cb3/TauCetiRoadmap/BanachSpaceTheory/STATUS.md)
+- [Source of `LinearIsometry.exists_continuousLinearMap_of_doubleDual` in TauCeti/Analysis/Normed/Module/Dual/LocalReflexivity.lean](https://github.com/TauCetiProject/TauCeti/blob/cd41bffcb343151b3e58c89392e206b11fe78c1c/TauCeti/Analysis/Normed/Module/Dual/LocalReflexivity.lean#L241)
+- [Tau Ceti roadmap status: Banach space theory](https://github.com/TauCetiProject/TauCetiRoadmap/blob/612845ab80fb9c2b9bee724a156756ee78031591/TauCetiRoadmap/BanachSpaceTheory/STATUS.md)

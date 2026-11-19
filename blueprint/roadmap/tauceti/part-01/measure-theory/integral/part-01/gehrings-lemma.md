@@ -54,7 +54,7 @@ Its statement uses no other declaration mapped here.
 
 ## Proof depends on
 
-- [Jensen's inequality for the square of a mean](jensens-inequality-for-the-square-of-a-mean.md)
+- [Jensen's inequality for the square of a mean](../part-02/jensens-inequality-for-the-square-of-a-mean.md)
 - [Lebesgue's differentiation theorem](../../other-results/lebesgues-differentiation-theorem.md)
 
 ## Lean
@@ -94,4 +94,4 @@ TauCeti.exists_setLAverage_rpow_add_le_of_rpow.{u_1} {E : Type u_1} [NormedAddCo
 ## Sources
 
 - [Tau Ceti documentation: `TauCeti.exists_setLAverage_rpow_add_le`](https://taucetiproject.org/docs/TauCeti/MeasureTheory/Integral/Gehring.html#TauCeti.exists_setLAverage_rpow_add_le)
-- [Source of `TauCeti.exists_setLAverage_rpow_add_le` in TauCeti/MeasureTheory/Integral/Gehring.lean](https://github.com/TauCetiProject/TauCeti/blob/a6027b1d24fcb935c53bd5b50d11b40991cda418/TauCeti/MeasureTheory/Integral/Gehring.lean#L835)
+- [Source of `TauCeti.exists_setLAverage_rpow_add_le` in TauCeti/MeasureTheory/Integral/Gehring.lean](https://github.com/TauCetiProject/TauCeti/blob/cd41bffcb343151b3e58c89392e206b11fe78c1c/TauCeti/MeasureTheory/Integral/Gehring.lean#L835)

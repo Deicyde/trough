@@ -70,4 +70,4 @@ TauCeti.ClassFieldTheory.dualityMap_bijective_discreteCoind_kummerCoeff {K : Typ
 ## Sources
 
 - [Tau Ceti documentation: `TauCeti.ClassFieldTheory.dualityMap_bijective_of_smul_kummerCoeff_eq_self`](https://taucetiproject.org/docs/TauCeti/NumberTheory/ClassFieldTheory/Local/Duality/FiniteModule.html#TauCeti.ClassFieldTheory.dualityMap_bijective_of_smul_kummerCoeff_eq_self)
-- [Source of `TauCeti.ClassFieldTheory.dualityMap_bijective_of_smul_kummerCoeff_eq_self` in TauCeti/NumberTheory/ClassFieldTheory/Local/Duality/FiniteModule.lean](https://github.com/TauCetiProject/TauCeti/blob/a6027b1d24fcb935c53bd5b50d11b40991cda418/TauCeti/NumberTheory/ClassFieldTheory/Local/Duality/FiniteModule.lean#L131)
+- [Source of `TauCeti.ClassFieldTheory.dualityMap_bijective_of_smul_kummerCoeff_eq_self` in TauCeti/NumberTheory/ClassFieldTheory/Local/Duality/FiniteModule.lean](https://github.com/TauCetiProject/TauCeti/blob/cd41bffcb343151b3e58c89392e206b11fe78c1c/TauCeti/NumberTheory/ClassFieldTheory/Local/Duality/FiniteModule.lean#L131)

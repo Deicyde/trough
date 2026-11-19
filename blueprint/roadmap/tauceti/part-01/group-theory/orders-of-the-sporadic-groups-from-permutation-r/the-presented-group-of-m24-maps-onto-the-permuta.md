@@ -27,5 +27,5 @@ Formalized in Tau Ceti as [`TauCeti.Sporadic.exists_surjective_M24`](https://tau
 ## Sources
 
 - [Tau Ceti documentation: `TauCeti.Sporadic.exists_surjective_M24`](https://taucetiproject.org/docs/TauCeti/GroupTheory/SpecificGroups/CFSG/Sporadic/Mathieu/TwentyFour/PermutationModel.html#TauCeti.Sporadic.exists_surjective_M24)
-- [Source of `TauCeti.Sporadic.exists_surjective_M24` in TauCeti/GroupTheory/SpecificGroups/CFSG/Sporadic/Mathieu/TwentyFour/PermutationModel.lean](https://github.com/TauCetiProject/TauCeti/blob/a6027b1d24fcb935c53bd5b50d11b40991cda418/TauCeti/GroupTheory/SpecificGroups/CFSG/Sporadic/Mathieu/TwentyFour/PermutationModel.lean#L188)
-- [Tau Ceti roadmap status: Orders of the sporadic groups from permutation representations](https://github.com/TauCetiProject/TauCetiRoadmap/blob/9f7c032adaf1b838e8183d63ff3cfa886d061cb3/TauCetiRoadmap/SporadicOrders/STATUS.md)
+- [Source of `TauCeti.Sporadic.exists_surjective_M24` in TauCeti/GroupTheory/SpecificGroups/CFSG/Sporadic/Mathieu/TwentyFour/PermutationModel.lean](https://github.com/TauCetiProject/TauCeti/blob/cd41bffcb343151b3e58c89392e206b11fe78c1c/TauCeti/GroupTheory/SpecificGroups/CFSG/Sporadic/Mathieu/TwentyFour/PermutationModel.lean#L216)
+- [Tau Ceti roadmap status: Orders of the sporadic groups from permutation representations](https://github.com/TauCetiProject/TauCetiRoadmap/blob/612845ab80fb9c2b9bee724a156756ee78031591/TauCetiRoadmap/SporadicOrders/STATUS.md)

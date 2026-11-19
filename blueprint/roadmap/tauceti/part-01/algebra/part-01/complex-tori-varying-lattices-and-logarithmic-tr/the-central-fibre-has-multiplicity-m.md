@@ -16,9 +16,8 @@ vanishes at `u = 0` to order exactly `m`.
 
 ```lean
 TauCeti.analyticOrderAt_torusFamilyAffineQuotientLift_rootsOfUnityBall.{u_1, u_2} {m : ℕ} [NeZero m]
-  {r : ℝ} {Λ : Type u_1} [AddCommGroup Λ] [Module.Free ℤ Λ] [Module.Finite ℤ Λ] {E : Type u_2}
-  [NormedAddCommGroup E] [NormedSpace ℂ E] [FiniteDimensional ℂ E]
-  (P : ↥(TauCeti.rootsOfUnityBall m r) → Λ →ₗ[ℤ] E)
+  {r : ℝ} {Λ : Type u_1} [AddCommGroup Λ] {E : Type u_2} [NormedAddCommGroup E] [NormedSpace ℂ E]
+  [FiniteDimensional ℂ E] (P : ↥(TauCeti.rootsOfUnityBall m r) → Λ →ₗ[ℤ] E)
   [∀ (z : ↥(TauCeti.rootsOfUnityBall m r)), DiscreteTopology ↥(P z).range]
   [∀ (z : ↥(TauCeti.rootsOfUnityBall m r)), IsZLattice ℝ (P z).range]
   (hcont : ∀ (l : Λ), Continuous fun z => (P z) l)
@@ -39,7 +38,6 @@ TauCeti.analyticOrderAt_torusFamilyAffineQuotientLift_rootsOfUnityBall.{u_1, u_2
   (hmul :
     ∀ (g h : ↥(rootsOfUnity m ℂ)) (z : ↥(TauCeti.rootsOfUnityBall m r)) (v : E),
       (R (g * h) z) v = (R g (h • z)) ((R h z) v))
-  (hbone : ∀ (z : ↥(TauCeti.rootsOfUnityBall m r)), b 1 z = ⟦(z, 0)⟧)
   (hbmul :
     ∀ (g h : ↥(rootsOfUnity m ℂ)) (z : ↥(TauCeti.rootsOfUnityBall m r)),
       b (g * h) z = TauCeti.torusFamilyAffineMap R P ρ hequiv b hb g (b h z))
@@ -63,13 +61,12 @@ TauCeti.analyticOrderAt_torusFamilyAffineQuotientLift_rootsOfUnityBall.{u_1, u_2
       (AddAction.orbitRel.Quotient Λ (↥(TauCeti.rootsOfUnityBall m r) × E))}
   (hx : x ∈ e.source)
   (hx0 :
-    TauCeti.torusFamilyAffineQuotientLift P R ρ hequiv b hb hone hmul hbone hbmul (fun z => ↑z ^ m)
-        ⋯ x =
+    TauCeti.torusFamilyAffineQuotientLift P R ρ hequiv b hb hone hmul hbmul (fun z => ↑z ^ m) ⋯ x =
       0) :
   analyticOrderAt
       (fun u =>
-        TauCeti.torusFamilyAffineQuotientLift P R ρ hequiv b hb hone hmul hbone hbmul
-          (fun z => ↑z ^ m) ⋯ (↑e.symm (u, (↑e x).2)))
+        TauCeti.torusFamilyAffineQuotientLift P R ρ hequiv b hb hone hmul hbmul (fun z => ↑z ^ m) ⋯
+          (↑e.symm (u, (↑e x).2)))
       0 =
     ↑m
 ```
@@ -85,5 +82,5 @@ Formalized in Tau Ceti as [`TauCeti.analyticOrderAt_torusFamilyAffineQuotientLif
 ## Sources
 
 - [Tau Ceti documentation: `TauCeti.analyticOrderAt_torusFamilyAffineQuotientLift_rootsOfUnityBall`](https://taucetiproject.org/docs/TauCeti/Algebra/Module/ZLattice/Family/RotatedDisc.html#TauCeti.analyticOrderAt_torusFamilyAffineQuotientLift_rootsOfUnityBall)
-- [Source of `TauCeti.analyticOrderAt_torusFamilyAffineQuotientLift_rootsOfUnityBall` in TauCeti/Algebra/Module/ZLattice/Family/RotatedDisc.lean](https://github.com/TauCetiProject/TauCeti/blob/a6027b1d24fcb935c53bd5b50d11b40991cda418/TauCeti/Algebra/Module/ZLattice/Family/RotatedDisc.lean#L404)
-- [Tau Ceti roadmap status: Complex tori: varying lattices and logarithmic transforms](https://github.com/TauCetiProject/TauCetiRoadmap/blob/9f7c032adaf1b838e8183d63ff3cfa886d061cb3/TauCetiRoadmap/ComplexTori/STATUS.md)
+- [Source of `TauCeti.analyticOrderAt_torusFamilyAffineQuotientLift_rootsOfUnityBall` in TauCeti/Algebra/Module/ZLattice/Family/RotatedDisc.lean](https://github.com/TauCetiProject/TauCeti/blob/cd41bffcb343151b3e58c89392e206b11fe78c1c/TauCeti/Algebra/Module/ZLattice/Family/RotatedDisc.lean#L401)
+- [Tau Ceti roadmap status: Complex tori: varying lattices and logarithmic transforms](https://github.com/TauCetiProject/TauCetiRoadmap/blob/612845ab80fb9c2b9bee724a156756ee78031591/TauCetiRoadmap/ComplexTori/STATUS.md)

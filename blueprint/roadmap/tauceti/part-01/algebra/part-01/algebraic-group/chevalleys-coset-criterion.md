@@ -43,4 +43,4 @@ Formalized in Tau Ceti as [`TauCeti.HopfIdeal.exists_finite_subcomodule_exterior
 ## Sources
 
 - [Tau Ceti documentation: `TauCeti.HopfIdeal.exists_finite_subcomodule_exteriorPower_coset_matrixCoefficient`](https://taucetiproject.org/docs/TauCeti/Algebra/AlgebraicGroup/Representation/ProjectiveOrbit/LineFibers.html#TauCeti.HopfIdeal.exists_finite_subcomodule_exteriorPower_coset_matrixCoefficient)
-- [Source of `TauCeti.HopfIdeal.exists_finite_subcomodule_exteriorPower_coset_matrixCoefficient` in TauCeti/Algebra/AlgebraicGroup/Representation/ProjectiveOrbit/LineFibers.lean](https://github.com/TauCetiProject/TauCeti/blob/a6027b1d24fcb935c53bd5b50d11b40991cda418/TauCeti/Algebra/AlgebraicGroup/Representation/ProjectiveOrbit/LineFibers.lean#L108)
+- [Source of `TauCeti.HopfIdeal.exists_finite_subcomodule_exteriorPower_coset_matrixCoefficient` in TauCeti/Algebra/AlgebraicGroup/Representation/ProjectiveOrbit/LineFibers.lean](https://github.com/TauCetiProject/TauCeti/blob/cd41bffcb343151b3e58c89392e206b11fe78c1c/TauCeti/Algebra/AlgebraicGroup/Representation/ProjectiveOrbit/LineFibers.lean#L108)

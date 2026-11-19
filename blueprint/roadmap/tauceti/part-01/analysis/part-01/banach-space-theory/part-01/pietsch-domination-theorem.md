@@ -45,5 +45,5 @@ Formalized in Tau Ceti as [`ContinuousLinearMap.summingENorm_le_ofReal_iff_exist
 ## Sources
 
 - [Tau Ceti documentation: `ContinuousLinearMap.summingENorm_le_ofReal_iff_exists_isProbabilityMeasure`](https://taucetiproject.org/docs/TauCeti/Analysis/Normed/Operator/AbsolutelySumming/Pietsch.html#ContinuousLinearMap.summingENorm_le_ofReal_iff_exists_isProbabilityMeasure)
-- [Source of `ContinuousLinearMap.summingENorm_le_ofReal_iff_exists_isProbabilityMeasure` in TauCeti/Analysis/Normed/Operator/AbsolutelySumming/Pietsch.lean](https://github.com/TauCetiProject/TauCeti/blob/a6027b1d24fcb935c53bd5b50d11b40991cda418/TauCeti/Analysis/Normed/Operator/AbsolutelySumming/Pietsch.lean#L253)
-- [Tau Ceti roadmap status: Banach space theory](https://github.com/TauCetiProject/TauCetiRoadmap/blob/9f7c032adaf1b838e8183d63ff3cfa886d061cb3/TauCetiRoadmap/BanachSpaceTheory/STATUS.md)
+- [Source of `ContinuousLinearMap.summingENorm_le_ofReal_iff_exists_isProbabilityMeasure` in TauCeti/Analysis/Normed/Operator/AbsolutelySumming/Pietsch.lean](https://github.com/TauCetiProject/TauCeti/blob/cd41bffcb343151b3e58c89392e206b11fe78c1c/TauCeti/Analysis/Normed/Operator/AbsolutelySumming/Pietsch.lean#L253)
+- [Tau Ceti roadmap status: Banach space theory](https://github.com/TauCetiProject/TauCetiRoadmap/blob/612845ab80fb9c2b9bee724a156756ee78031591/TauCetiRoadmap/BanachSpaceTheory/STATUS.md)

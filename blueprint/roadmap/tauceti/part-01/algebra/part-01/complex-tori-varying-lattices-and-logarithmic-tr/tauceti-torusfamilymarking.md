@@ -31,10 +31,10 @@ TauCeti.torusFamilyMarking.{u_1} {Y E : Type} [TopologicalSpace Y] [AddCommGroup
 
 ## Lean
 
-Formalized in Tau Ceti as [`TauCeti.torusFamilyMarking`](https://taucetiproject.org/docs/TauCeti/AlgebraicTopology/Singular/Torus/Family.html#TauCeti.torusFamilyMarking).
+Formalized in Tau Ceti as [`TauCeti.torusFamilyMarking`](https://taucetiproject.org/docs/TauCeti/AlgebraicTopology/Singular/Torus/Family/Basic.html#TauCeti.torusFamilyMarking).
 
 ## Sources
 
-- [Tau Ceti documentation: `TauCeti.torusFamilyMarking`](https://taucetiproject.org/docs/TauCeti/AlgebraicTopology/Singular/Torus/Family.html#TauCeti.torusFamilyMarking)
-- [Source of `TauCeti.torusFamilyMarking` in TauCeti/AlgebraicTopology/Singular/Torus/Family.lean](https://github.com/TauCetiProject/TauCeti/blob/a6027b1d24fcb935c53bd5b50d11b40991cda418/TauCeti/AlgebraicTopology/Singular/Torus/Family.lean#L117)
-- [Tau Ceti roadmap status: Complex tori: varying lattices and logarithmic transforms](https://github.com/TauCetiProject/TauCetiRoadmap/blob/9f7c032adaf1b838e8183d63ff3cfa886d061cb3/TauCetiRoadmap/ComplexTori/STATUS.md)
+- [Tau Ceti documentation: `TauCeti.torusFamilyMarking`](https://taucetiproject.org/docs/TauCeti/AlgebraicTopology/Singular/Torus/Family/Basic.html#TauCeti.torusFamilyMarking)
+- [Source of `TauCeti.torusFamilyMarking` in TauCeti/AlgebraicTopology/Singular/Torus/Family/Basic.lean](https://github.com/TauCetiProject/TauCeti/blob/cd41bffcb343151b3e58c89392e206b11fe78c1c/TauCeti/AlgebraicTopology/Singular/Torus/Family/Basic.lean#L118)
+- [Tau Ceti roadmap status: Complex tori: varying lattices and logarithmic transforms](https://github.com/TauCetiProject/TauCetiRoadmap/blob/612845ab80fb9c2b9bee724a156756ee78031591/TauCetiRoadmap/ComplexTori/STATUS.md)

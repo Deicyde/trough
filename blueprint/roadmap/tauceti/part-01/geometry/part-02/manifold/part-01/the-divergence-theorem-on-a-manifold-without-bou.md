@@ -29,8 +29,8 @@ Its statement uses no other declaration mapped here.
 
 ## Proof depends on
 
-- [Jacobi's formula on a manifold](../part-02/jacobis-formula-on-a-manifold.md)
-- [The Koszul formula](../part-02/the-koszul-formula.md)
+- [Jacobi's formula on a manifold](../../../../analysis/part-02/ricci-flow-preserved-curvature-cones-and-sphere/jacobis-formula-on-a-manifold.md)
+- [The Koszul formula](../part-03/the-koszul-formula.md)
 
 ## Lean
 
@@ -39,4 +39,4 @@ Formalized in Tau Ceti as [`TauCeti.Manifold.integral_divergence_eq_zero`](https
 ## Sources
 
 - [Tau Ceti documentation: `TauCeti.Manifold.integral_divergence_eq_zero`](https://taucetiproject.org/docs/TauCeti/Geometry/Manifold/Riemannian/DivergenceTheorem.html#TauCeti.Manifold.integral_divergence_eq_zero)
-- [Source of `TauCeti.Manifold.integral_divergence_eq_zero` in TauCeti/Geometry/Manifold/Riemannian/DivergenceTheorem.lean](https://github.com/TauCetiProject/TauCeti/blob/a6027b1d24fcb935c53bd5b50d11b40991cda418/TauCeti/Geometry/Manifold/Riemannian/DivergenceTheorem.lean#L223)
+- [Source of `TauCeti.Manifold.integral_divergence_eq_zero` in TauCeti/Geometry/Manifold/Riemannian/DivergenceTheorem.lean](https://github.com/TauCetiProject/TauCeti/blob/cd41bffcb343151b3e58c89392e206b11fe78c1c/TauCeti/Geometry/Manifold/Riemannian/DivergenceTheorem.lean#L223)

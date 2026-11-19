@@ -24,7 +24,7 @@ Matrix.rowHodgePolygon_le_newtonPolygon_charPowerSeries.{u_1, u_2} {ι : Type u_
 
 ## Depends on
 
-- [TauCeti.lowerConvexEnvelope](../../../number-theory/part-01/newton-polygons-of-polynomials-and-power-series/tauceti-lowerconvexenvelope.md)
+- [TauCeti.lowerConvexEnvelope](../../../number-theory/part-02/newton-polygons-of-polynomials-and-power-series/tauceti-lowerconvexenvelope.md)
 
 ## Lean
 
@@ -33,4 +33,4 @@ Formalized in Tau Ceti as [`Matrix.rowHodgePolygon_le_newtonPolygon_charPowerSer
 ## Sources
 
 - [Tau Ceti documentation: `Matrix.rowHodgePolygon_le_newtonPolygon_charPowerSeries`](https://taucetiproject.org/docs/TauCeti/Analysis/Matrix/CharPowerSeries/RowHodge.html#Matrix.rowHodgePolygon_le_newtonPolygon_charPowerSeries)
-- [Source of `Matrix.rowHodgePolygon_le_newtonPolygon_charPowerSeries` in TauCeti/Analysis/Matrix/CharPowerSeries/RowHodge.lean](https://github.com/TauCetiProject/TauCeti/blob/a6027b1d24fcb935c53bd5b50d11b40991cda418/TauCeti/Analysis/Matrix/CharPowerSeries/RowHodge.lean#L213)
+- [Source of `Matrix.rowHodgePolygon_le_newtonPolygon_charPowerSeries` in TauCeti/Analysis/Matrix/CharPowerSeries/RowHodge.lean](https://github.com/TauCetiProject/TauCeti/blob/cd41bffcb343151b3e58c89392e206b11fe78c1c/TauCeti/Analysis/Matrix/CharPowerSeries/RowHodge.lean#L212)

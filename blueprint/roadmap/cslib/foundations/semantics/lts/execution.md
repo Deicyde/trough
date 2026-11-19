@@ -281,3 +281,4 @@ theorem split (he : lts.Execution s μs t ss) {n : ℕ} (hn : n < ss.length) :
 ## Sources
 
 - [Cslib/Foundations/Semantics/LTS/Execution.lean at 86d560b6](https://github.com/leanprover/cslib/blob/86d560b6cbb379bd82512424cbcd2a915a1565e7/Cslib/Foundations/Semantics/LTS/Execution.lean)
+- [Declaration ledger](../../../../../sources/cslib/Cslib.Foundations.Semantics.LTS.Execution.json)

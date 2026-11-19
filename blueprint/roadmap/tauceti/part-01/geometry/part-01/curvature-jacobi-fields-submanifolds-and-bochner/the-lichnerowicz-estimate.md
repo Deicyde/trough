@@ -35,10 +35,10 @@ Its statement uses no other declaration mapped here.
 
 ## Proof depends on
 
-- [The Bochner formula](the-bochner-formula.md)
+- [The Bochner formula](../../part-02/manifold/part-01/the-bochner-formula.md)
 - [The divergence theorem on a manifold without boundary](../../part-02/manifold/part-01/the-divergence-theorem-on-a-manifold-without-bou.md)
-- [Green's first identity on a manifold without boundary](../../part-02/manifold/part-01/greens-first-identity-on-a-manifold-without-boun.md)
-- [The Koszul formula](../../part-02/manifold/part-02/the-koszul-formula.md)
+- [Green's first identity on a manifold without boundary](../../part-02/manifold/part-02/greens-first-identity-on-a-manifold-without-boun.md)
+- [The Koszul formula](../../part-02/manifold/part-03/the-koszul-formula.md)
 
 ## Lean
 
@@ -47,5 +47,5 @@ Formalized in Tau Ceti as [`TauCeti.Manifold.finrank_mul_le_of_laplaceBeltrami_e
 ## Sources
 
 - [Tau Ceti documentation: `TauCeti.Manifold.finrank_mul_le_of_laplaceBeltrami_eq_neg_mul`](https://taucetiproject.org/docs/TauCeti/Geometry/Manifold/Riemannian/Lichnerowicz/Basic.html#TauCeti.Manifold.finrank_mul_le_of_laplaceBeltrami_eq_neg_mul)
-- [Source of `TauCeti.Manifold.finrank_mul_le_of_laplaceBeltrami_eq_neg_mul` in TauCeti/Geometry/Manifold/Riemannian/Lichnerowicz/Basic.lean](https://github.com/TauCetiProject/TauCeti/blob/a6027b1d24fcb935c53bd5b50d11b40991cda418/TauCeti/Geometry/Manifold/Riemannian/Lichnerowicz/Basic.lean#L82)
-- [Tau Ceti roadmap status: Curvature, Jacobi fields, submanifolds, and Bochner geometry](https://github.com/TauCetiProject/TauCetiRoadmap/blob/9f7c032adaf1b838e8183d63ff3cfa886d061cb3/TauCetiRoadmap/RiemannianGeometry/STATUS.md)
+- [Source of `TauCeti.Manifold.finrank_mul_le_of_laplaceBeltrami_eq_neg_mul` in TauCeti/Geometry/Manifold/Riemannian/Lichnerowicz/Basic.lean](https://github.com/TauCetiProject/TauCeti/blob/cd41bffcb343151b3e58c89392e206b11fe78c1c/TauCeti/Geometry/Manifold/Riemannian/Lichnerowicz/Basic.lean#L82)
+- [Tau Ceti roadmap status: Curvature, Jacobi fields, submanifolds, and Bochner geometry](https://github.com/TauCetiProject/TauCetiRoadmap/blob/612845ab80fb9c2b9bee724a156756ee78031591/TauCetiRoadmap/RiemannianGeometry/STATUS.md)

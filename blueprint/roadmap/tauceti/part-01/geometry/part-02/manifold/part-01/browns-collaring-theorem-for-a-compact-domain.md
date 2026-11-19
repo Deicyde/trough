@@ -29,4 +29,4 @@ Formalized in Tau Ceti as [`TauCeti.IsLocallyCollared.isCollared`](https://tauce
 ## Sources
 
 - [Tau Ceti documentation: `TauCeti.IsLocallyCollared.isCollared`](https://taucetiproject.org/docs/TauCeti/Geometry/Manifold/Boundary/Collar/Brown.html#TauCeti.IsLocallyCollared.isCollared)
-- [Source of `TauCeti.IsLocallyCollared.isCollared` in TauCeti/Geometry/Manifold/Boundary/Collar/Brown.lean](https://github.com/TauCetiProject/TauCeti/blob/a6027b1d24fcb935c53bd5b50d11b40991cda418/TauCeti/Geometry/Manifold/Boundary/Collar/Brown.lean#L456)
+- [Source of `TauCeti.IsLocallyCollared.isCollared` in TauCeti/Geometry/Manifold/Boundary/Collar/Brown.lean](https://github.com/TauCetiProject/TauCeti/blob/cd41bffcb343151b3e58c89392e206b11fe78c1c/TauCeti/Geometry/Manifold/Boundary/Collar/Brown.lean#L456)

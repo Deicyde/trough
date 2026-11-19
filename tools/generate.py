@@ -11,9 +11,9 @@
                                         workflow does this on main, before generating)
 
 Everything under blueprint/roadmap/ and blueprint/links/ is generated, and so are
-blueprint/coverage/README.md, blueprint/sources/README.md and
-hooks/lean-links.json; a stale file under blueprint/roadmap/ or blueprint/links/
-is deleted.
+blueprint/coverage/README.md, blueprint/sources/README.md, the declaration
+ledgers under blueprint/sources/ (JSON files) and hooks/lean-links.json; a stale
+file under blueprint/roadmap/ or blueprint/links/, or a stale ledger, is deleted.
 """
 
 from __future__ import annotations
@@ -274,6 +274,7 @@ def generate() -> dict[Path, str]:
         assign_paths(cslib_built.root, ROADMAP / "cslib")
         blueprints.resolve(cslib_built, VAULT)
         files.update(render_tree(cslib_built.root, VAULT))
+        files.update({VAULT / path: text for path, text in cslib_built.files.items()})
         chapters["cslib"] = "cslib/README.md"
         lean_links["cslib"] = cslib_links
         cs = Counter(cslib_built.stats)
@@ -292,6 +293,7 @@ def generate() -> dict[Path, str]:
         assign_paths(batteries_built.root, ROADMAP / "batteries")
         blueprints.resolve(batteries_built, VAULT)
         files.update(render_tree(batteries_built.root, VAULT))
+        files.update({VAULT / path: text for path, text in batteries_built.files.items()})
         chapters["batteries"] = "batteries/README.md"
         lean_links["batteries"] = batteries_links
         bt = Counter(batteries_built.stats)
@@ -372,7 +374,9 @@ def _list_of(slug: str) -> str:
 
 
 def owned() -> set[Path]:
-    return set(ROADMAP.rglob("*.md")) | {path for path in LINKS.rglob("*") if path.is_file()}
+    # The generated files under sources/ are the module catalogs' declaration ledgers, JSON files.
+    return (set(ROADMAP.rglob("*.md")) | {path for path in LINKS.rglob("*") if path.is_file()}
+            | set((VAULT / "sources").rglob("*.json")))
 
 
 def main() -> int:

@@ -31,4 +31,4 @@ Formalized in Tau Ceti as [`LinearMap.IsSymmetric.sum_sq_eigenvalues_sub_le_sum_
 ## Sources
 
 - [Tau Ceti documentation: `LinearMap.IsSymmetric.sum_sq_eigenvalues_sub_le_sum_sq_norm_apply`](https://taucetiproject.org/docs/TauCeti/Analysis/InnerProductSpace/HoffmanWielandt/Basic.html#LinearMap.IsSymmetric.sum_sq_eigenvalues_sub_le_sum_sq_norm_apply)
-- [Source of `LinearMap.IsSymmetric.sum_sq_eigenvalues_sub_le_sum_sq_norm_apply` in TauCeti/Analysis/InnerProductSpace/HoffmanWielandt/Basic.lean](https://github.com/TauCetiProject/TauCeti/blob/a6027b1d24fcb935c53bd5b50d11b40991cda418/TauCeti/Analysis/InnerProductSpace/HoffmanWielandt/Basic.lean#L88)
+- [Source of `LinearMap.IsSymmetric.sum_sq_eigenvalues_sub_le_sum_sq_norm_apply` in TauCeti/Analysis/InnerProductSpace/HoffmanWielandt/Basic.lean](https://github.com/TauCetiProject/TauCeti/blob/cd41bffcb343151b3e58c89392e206b11fe78c1c/TauCeti/Analysis/InnerProductSpace/HoffmanWielandt/Basic.lean#L88)

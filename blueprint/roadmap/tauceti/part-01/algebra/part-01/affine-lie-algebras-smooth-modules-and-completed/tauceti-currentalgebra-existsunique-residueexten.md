@@ -15,8 +15,8 @@ the identity on currents; no condition on its map of kernels is imposed.
 ```lean
 TauCeti.CurrentAlgebra.existsUnique_residueExtensionLift.{u_1, u_2, u_3} {K : Type u_1}
   {L : Type u_2} {Z : Type u_3} [Field K] [CharZero K] [LieRing L] [LieAlgebra K L]
-  [FiniteDimensional K L] [LieAlgebra.IsKilling K L] [AddCommGroup Z] [_root_.Module K Z]
-  {Φ : LinearMap.BilinForm K L} (hΦ : LinearMap.BilinForm.lieInvariant L Φ) (hΦs : Φ.IsSymm)
+  [LieAlgebra.IsKilling K L] [AddCommGroup Z] [_root_.Module K Z] {Φ : LinearMap.BilinForm K L}
+  (hΦ : LinearMap.BilinForm.lieInvariant L Φ) (hΦs : Φ.IsSymm)
   (hspan : ∀ (Ψ : LinearMap.BilinForm K L), LinearMap.BilinForm.lieInvariant L Ψ → ∃ t, Ψ = t • Φ)
   (hΦ0 : Φ ≠ 0)
   (c :
@@ -46,5 +46,5 @@ Formalized in Tau Ceti as [`TauCeti.CurrentAlgebra.existsUnique_residueExtension
 ## Sources
 
 - [Tau Ceti documentation: `TauCeti.CurrentAlgebra.existsUnique_residueExtensionLift`](https://taucetiproject.org/docs/TauCeti/Algebra/Lie/Current/Universal.html#TauCeti.CurrentAlgebra.existsUnique_residueExtensionLift)
-- [Source of `TauCeti.CurrentAlgebra.existsUnique_residueExtensionLift` in TauCeti/Algebra/Lie/Current/Universal.lean](https://github.com/TauCetiProject/TauCeti/blob/a6027b1d24fcb935c53bd5b50d11b40991cda418/TauCeti/Algebra/Lie/Current/Universal.lean#L88)
-- [Tau Ceti roadmap status: Affine Lie algebras, smooth modules and completed centers](https://github.com/TauCetiProject/TauCetiRoadmap/blob/9f7c032adaf1b838e8183d63ff3cfa886d061cb3/TauCetiRoadmap/AffineLieAlgebras/STATUS.md)
+- [Source of `TauCeti.CurrentAlgebra.existsUnique_residueExtensionLift` in TauCeti/Algebra/Lie/Current/Universal.lean](https://github.com/TauCetiProject/TauCeti/blob/cd41bffcb343151b3e58c89392e206b11fe78c1c/TauCeti/Algebra/Lie/Current/Universal.lean#L89)
+- [Tau Ceti roadmap status: Affine Lie algebras, smooth modules and completed centers](https://github.com/TauCetiProject/TauCetiRoadmap/blob/612845ab80fb9c2b9bee724a156756ee78031591/TauCetiRoadmap/AffineLieAlgebras/STATUS.md)

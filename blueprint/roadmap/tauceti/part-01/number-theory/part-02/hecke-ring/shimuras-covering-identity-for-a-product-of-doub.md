@@ -42,4 +42,4 @@ Formalized in Tau Ceti as [`DoubleCoset.doubleCoset_mul_doubleCoset_eq_iUnion_ri
 ## Sources
 
 - [Tau Ceti documentation: `DoubleCoset.doubleCoset_mul_doubleCoset_eq_iUnion_rightCosets`](https://taucetiproject.org/docs/TauCeti/NumberTheory/HeckeRing/Basic.html#DoubleCoset.doubleCoset_mul_doubleCoset_eq_iUnion_rightCosets)
-- [Source of `DoubleCoset.doubleCoset_mul_doubleCoset_eq_iUnion_rightCosets` in TauCeti/NumberTheory/HeckeRing/Basic.lean](https://github.com/TauCetiProject/TauCeti/blob/a6027b1d24fcb935c53bd5b50d11b40991cda418/TauCeti/NumberTheory/HeckeRing/Basic.lean#L637)
+- [Source of `DoubleCoset.doubleCoset_mul_doubleCoset_eq_iUnion_rightCosets` in TauCeti/NumberTheory/HeckeRing/Basic.lean](https://github.com/TauCetiProject/TauCeti/blob/cd41bffcb343151b3e58c89392e206b11fe78c1c/TauCeti/NumberTheory/HeckeRing/Basic.lean#L692)

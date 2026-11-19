@@ -74,5 +74,5 @@ TauCeti.isONable_iff_free_residueModule.{u_4, u} {R : Type u_4} [NormedCommRing 
 ## Sources
 
 - [Tau Ceti documentation: `ContinuousLinearMap.isRowCompact_iff_isCompletelyContinuous`](https://taucetiproject.org/docs/TauCeti/Analysis/Normed/Operator/RowCompact/CompletelyContinuous.html#ContinuousLinearMap.isRowCompact_iff_isCompletelyContinuous)
-- [Source of `ContinuousLinearMap.isRowCompact_iff_isCompletelyContinuous` in TauCeti/Analysis/Normed/Operator/RowCompact/CompletelyContinuous.lean](https://github.com/TauCetiProject/TauCeti/blob/a6027b1d24fcb935c53bd5b50d11b40991cda418/TauCeti/Analysis/Normed/Operator/RowCompact/CompletelyContinuous.lean#L126)
-- [Tau Ceti roadmap status: Compact operators and nonarchimedean Fredholm theory](https://github.com/TauCetiProject/TauCetiRoadmap/blob/9f7c032adaf1b838e8183d63ff3cfa886d061cb3/TauCetiRoadmap/CompactOperators/STATUS.md)
+- [Source of `ContinuousLinearMap.isRowCompact_iff_isCompletelyContinuous` in TauCeti/Analysis/Normed/Operator/RowCompact/CompletelyContinuous.lean](https://github.com/TauCetiProject/TauCeti/blob/cd41bffcb343151b3e58c89392e206b11fe78c1c/TauCeti/Analysis/Normed/Operator/RowCompact/CompletelyContinuous.lean#L126)
+- [Tau Ceti roadmap status: Compact operators and nonarchimedean Fredholm theory](https://github.com/TauCetiProject/TauCetiRoadmap/blob/612845ab80fb9c2b9bee724a156756ee78031591/TauCetiRoadmap/CompactOperators/STATUS.md)

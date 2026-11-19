@@ -1,7 +1,7 @@
 ---
 declaration: theorem
 origin: cited
-lean: TauCeti.Contour.Cycle.classicalResidueTheorem_nullHomologous, TauCeti.Contour.Cycle.classicalResidueTheorem_starConvex, TauCeti.Contour.classicalResidueTheorem_nullHomologous
+lean: TauCeti.Contour.Cycle.classicalResidueTheorem_nullHomologous, TauCeti.Contour.Cycle.classicalResidueTheorem_starConvex, TauCeti.Contour.classicalResidueTheorem_nullHomologous, TauCeti.Contour.classicalResidueTheorem_circle, TauCeti.Contour.classicalResidueTheorem_circle_of_meromorphicOrderAt_neg, TauCeti.Contour.classicalResidueTheorem_starConvex
 statement: formalized
 proof: formalized
 ---
@@ -39,14 +39,15 @@ TauCeti.Contour.Cycle.classicalResidueTheorem_nullHomologous {f : ℂ → ℂ} {
 ## Depends on
 
 - [Generalized winding number (HW Def 2.1)](generalized-winding-number-hw-def-2-1.md)
+- [Piecewise `C¹` on the interval between `a` and `b`](piecewise-c1-on-the-interval-between-a-and-b.md)
 - [TauCeti.Contour.Cycle](tauceti-contour-cycle.md)
 
 ## Proof depends on
 
-- [The canonical Laurent decomposition](../../part-02/contour/the-canonical-laurent-decomposition.md)
-- [The homology Cauchy theorem (roadmap `homologyCauchyTheorem`, Layer 3)](the-homology-cauchy-theorem-roadmap-homologycauc.md)
-- [The residue of the Cauchy kernel](the-residue-of-the-cauchy-kernel.md)
-- [The residue theorem for a fixed polar-part decomposition](the-residue-theorem-for-a-fixed-polar-part-decom.md)
+- [The canonical Laurent decomposition](../../part-03/contour/the-canonical-laurent-decomposition.md)
+- [Cauchy–Goursat for a pole-free meromorphic function](../../part-03/contour/cauchy-goursat-for-a-pole-free-meromorphic-funct.md)
+- [The homology Cauchy theorem](the-homology-cauchy-theorem.md)
+- [The residue theorem for a fixed polar-part decomposition](../../part-03/contour/the-residue-theorem-for-a-fixed-polar-part-decom.md)
 
 ## Lean
 
@@ -79,8 +80,40 @@ TauCeti.Contour.classicalResidueTheorem_nullHomologous {f : ℂ → ℂ} {S : Fi
       ∑ s ∈ S, TauCeti.Contour.windingNumber γ a b s * TauCeti.Contour.residue f s
 ```
 
+**The classical residue theorem on a circle.** Formalized in Tau Ceti as [`TauCeti.Contour.classicalResidueTheorem_circle`](https://taucetiproject.org/docs/TauCeti/Analysis/Contour/Residue/Theorem.html#TauCeti.Contour.classicalResidueTheorem_circle).
+
+```lean
+TauCeti.Contour.classicalResidueTheorem_circle {f : ℂ → ℂ} {c : ℂ} {R : ℝ} (hR : 0 < R)
+  (S : Finset ℂ) (hf : MeromorphicOn f (Metric.closedBall c R)) (hS : ↑S ⊆ Metric.ball c R)
+  (hsupp : ∀ z ∈ Metric.closedBall c R, meromorphicOrderAt f z ≠ 0 → z ∈ S) :
+  circleIntegral f c R = 2 * ↑Real.pi * Complex.I * ∑ s ∈ S, TauCeti.Contour.residue f s
+```
+
+**The classical residue theorem on a circle (sharp support form).** Formalized in Tau Ceti as [`TauCeti.Contour.classicalResidueTheorem_circle_of_meromorphicOrderAt_neg`](https://taucetiproject.org/docs/TauCeti/Analysis/Contour/Residue/Theorem.html#TauCeti.Contour.classicalResidueTheorem_circle_of_meromorphicOrderAt_neg).
+
+```lean
+TauCeti.Contour.classicalResidueTheorem_circle_of_meromorphicOrderAt_neg {f : ℂ → ℂ} {c : ℂ} {R : ℝ}
+  (hR : 0 < R) (S : Finset ℂ) (hf : MeromorphicOn f (Metric.closedBall c R))
+  (hS : ↑S ⊆ Metric.ball c R)
+  (hsupp : ∀ z ∈ Metric.closedBall c R, meromorphicOrderAt f z < 0 → z ∈ S) :
+  circleIntegral f c R = 2 * ↑Real.pi * Complex.I * ∑ s ∈ S, TauCeti.Contour.residue f s
+```
+
+**The classical residue theorem on a star-shaped open set.** Formalized in Tau Ceti as [`TauCeti.Contour.classicalResidueTheorem_starConvex`](https://taucetiproject.org/docs/TauCeti/Analysis/Contour/StarConvex.html#TauCeti.Contour.classicalResidueTheorem_starConvex).
+
+```lean
+TauCeti.Contour.classicalResidueTheorem_starConvex {f : ℂ → ℂ} {Ω : Set ℂ} {γ : ℝ → ℂ} {a b : ℝ}
+  {x : ℂ} {S : Finset ℂ} (hstar : StarConvex ℝ x Ω) (hopen : IsOpen Ω)
+  (hf : DifferentiableOn ℂ f (Ω \ ↑S)) (hmero : ∀ s ∈ S, s ∈ Ω → MeromorphicAt f s)
+  (hγ : TauCeti.IsPiecewiseC1On γ a b) (hγΩ : ∀ t ∈ Set.uIcc a b, γ t ∈ Ω) (hclosed : γ a = γ b)
+  (hoff : ∀ t ∈ Set.uIcc a b, γ t ∉ ↑S) :
+  ∫ (t : ℝ) in a..b, deriv γ t • f (γ t) =
+    2 * ↑Real.pi * Complex.I *
+      ∑ s ∈ S, TauCeti.Contour.windingNumber γ a b s * TauCeti.Contour.residue f s
+```
+
 ## Sources
 
 - [Tau Ceti documentation: `TauCeti.Contour.Cycle.classicalResidueTheorem_nullHomologous`](https://taucetiproject.org/docs/TauCeti/Analysis/Contour/Cycle/Residue.html#TauCeti.Contour.Cycle.classicalResidueTheorem_nullHomologous)
-- [Source of `TauCeti.Contour.Cycle.classicalResidueTheorem_nullHomologous` in TauCeti/Analysis/Contour/Cycle/Residue.lean](https://github.com/TauCetiProject/TauCeti/blob/a6027b1d24fcb935c53bd5b50d11b40991cda418/TauCeti/Analysis/Contour/Cycle/Residue.lean#L121)
-- [Tau Ceti roadmap status: Contour integration and the Hungerbühler–Wasem generalized residue theorem](https://github.com/TauCetiProject/TauCetiRoadmap/blob/9f7c032adaf1b838e8183d63ff3cfa886d061cb3/Completed/ContourIntegration/STATUS.md)
+- [Source of `TauCeti.Contour.Cycle.classicalResidueTheorem_nullHomologous` in TauCeti/Analysis/Contour/Cycle/Residue.lean](https://github.com/TauCetiProject/TauCeti/blob/cd41bffcb343151b3e58c89392e206b11fe78c1c/TauCeti/Analysis/Contour/Cycle/Residue.lean#L121)
+- [Tau Ceti roadmap status: Contour integration and the Hungerbühler–Wasem generalized residue theorem](https://github.com/TauCetiProject/TauCetiRoadmap/blob/612845ab80fb9c2b9bee724a156756ee78031591/Completed/ContourIntegration/STATUS.md)

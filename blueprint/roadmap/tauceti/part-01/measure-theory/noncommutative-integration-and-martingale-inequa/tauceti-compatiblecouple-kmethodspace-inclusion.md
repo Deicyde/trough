@@ -21,7 +21,7 @@ TauCeti.CompatibleCouple.KMethodSpace.inclusion.{u_1, u_2, u_3, u_4} {𝕜 : Typ
 
 ## Depends on
 
-- [TauCeti.CompatibleCouple.KMethodSpace](../../analysis/part-02/pseudodifferential-operators-and-elliptic-analys/tauceti-compatiblecouple-kmethodspace.md)
+Its statement uses no other declaration mapped here.
 
 ## Lean
 
@@ -30,5 +30,5 @@ Formalized in Tau Ceti as [`TauCeti.CompatibleCouple.KMethodSpace.inclusion`](ht
 ## Sources
 
 - [Tau Ceti documentation: `TauCeti.CompatibleCouple.KMethodSpace.inclusion`](https://taucetiproject.org/docs/TauCeti/Analysis/Normed/Interpolation/Exponent.html#TauCeti.CompatibleCouple.KMethodSpace.inclusion)
-- [Source of `TauCeti.CompatibleCouple.KMethodSpace.inclusion` in TauCeti/Analysis/Normed/Interpolation/Exponent.lean](https://github.com/TauCetiProject/TauCeti/blob/a6027b1d24fcb935c53bd5b50d11b40991cda418/TauCeti/Analysis/Normed/Interpolation/Exponent.lean#L120)
-- [Tau Ceti roadmap status: Noncommutative integration and martingale inequalities](https://github.com/TauCetiProject/TauCetiRoadmap/blob/9f7c032adaf1b838e8183d63ff3cfa886d061cb3/TauCetiRoadmap/NoncommutativeIntegration/STATUS.md)
+- [Source of `TauCeti.CompatibleCouple.KMethodSpace.inclusion` in TauCeti/Analysis/Normed/Interpolation/Exponent.lean](https://github.com/TauCetiProject/TauCeti/blob/cd41bffcb343151b3e58c89392e206b11fe78c1c/TauCeti/Analysis/Normed/Interpolation/Exponent.lean#L122)
+- [Tau Ceti roadmap status: Noncommutative integration and martingale inequalities](https://github.com/TauCetiProject/TauCetiRoadmap/blob/612845ab80fb9c2b9bee724a156756ee78031591/TauCetiRoadmap/NoncommutativeIntegration/STATUS.md)

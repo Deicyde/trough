@@ -1,0 +1,28 @@
+{
+ "schema": "trough-ledger/v1",
+ "library": "CSLib",
+ "repo": "leanprover/cslib",
+ "rev": "86d560b6cbb379bd82512424cbcd2a915a1565e7",
+ "module": "Cslib.Languages.LambdaCalculus.LocallyNameless.Untyped.LeftmostReduction",
+ "file": "Cslib/Languages/LambdaCalculus/LocallyNameless/Untyped/LeftmostReduction.lean",
+ "public": [
+  {"name": "Cslib.LambdaCalculus.LocallyNameless.Untyped.Term.BetaNormal", "kind": "def", "line": 33},
+  {"name": "Cslib.LambdaCalculus.LocallyNameless.Untyped.Term.Leftmost", "kind": "abbrev", "line": 37},
+  {"name": "Cslib.LambdaCalculus.LocallyNameless.Untyped.Term.BetaNormal.app_inv", "kind": "lemma", "line": 43},
+  {"name": "Cslib.LambdaCalculus.LocallyNameless.Untyped.Term.BetaNormal.abs_open", "kind": "lemma", "line": 48},
+  {"name": "Cslib.LambdaCalculus.LocallyNameless.Untyped.Term.Leftmost.steps_isAbs_r", "kind": "lemma", "line": 53},
+  {"name": "Cslib.LambdaCalculus.LocallyNameless.Untyped.Term.Leftmost.steps_app_l_cong", "kind": "lemma", "line": 59},
+  {"name": "Cslib.LambdaCalculus.LocallyNameless.Untyped.Term.BetaAt.app_r_cong", "kind": "lemma", "line": 68},
+  {"name": "Cslib.LambdaCalculus.LocallyNameless.Untyped.Term.Leftmost.steps_app_r_cong", "kind": "lemma", "line": 75},
+  {"name": "Cslib.LambdaCalculus.LocallyNameless.Untyped.Term.Leftmost.steps_app_cong", "kind": "lemma", "line": 83},
+  {"name": "Cslib.LambdaCalculus.LocallyNameless.Untyped.Term.Leftmost.of_cbn", "kind": "lemma", "line": 88},
+  {"name": "Cslib.LambdaCalculus.LocallyNameless.Untyped.Term.Leftmost.steps_lc_r", "kind": "lemma", "line": 96},
+  {"name": "Cslib.LambdaCalculus.LocallyNameless.Untyped.Term.Leftmost.steps_abs_close", "kind": "lemma", "line": 102},
+  {"name": "Cslib.LambdaCalculus.LocallyNameless.Untyped.Term.Leftmost.steps_abs_cong", "kind": "lemma", "line": 109},
+  {"name": "Cslib.LambdaCalculus.LocallyNameless.Untyped.Term.Leftmost.of_standard", "kind": "theorem", "line": 119},
+  {"name": "Cslib.LambdaCalculus.LocallyNameless.Untyped.Term.Leftmost.normalization", "kind": "theorem", "line": 137}
+ ],
+ "private": [],
+ "missing": [],
+ "unread": "Unnamed instances, the names an `alias ⟨…⟩` command gives, and the names Lean generates for a declaration (constructors, recursors, derived instances) are not read from the source, so they are not listed."
+}

@@ -74,4 +74,4 @@ Formalized in Tau Ceti as [`CategoryTheory.Abelian.SpectralObject.isIso_hom_app_
 ## Sources
 
 - [Tau Ceti documentation: `CategoryTheory.Abelian.SpectralObject.isIso_hom_app_abutment_of_isIso_page`](https://taucetiproject.org/docs/TauCeti/Algebra/Homology/SpectralObject/Comparison.html#CategoryTheory.Abelian.SpectralObject.isIso_hom_app_abutment_of_isIso_page)
-- [Source of `CategoryTheory.Abelian.SpectralObject.isIso_hom_app_abutment_of_isIso_page` in TauCeti/Algebra/Homology/SpectralObject/Comparison.lean](https://github.com/TauCetiProject/TauCeti/blob/a6027b1d24fcb935c53bd5b50d11b40991cda418/TauCeti/Algebra/Homology/SpectralObject/Comparison.lean#L114)
+- [Source of `CategoryTheory.Abelian.SpectralObject.isIso_hom_app_abutment_of_isIso_page` in TauCeti/Algebra/Homology/SpectralObject/Comparison.lean](https://github.com/TauCetiProject/TauCeti/blob/cd41bffcb343151b3e58c89392e206b11fe78c1c/TauCeti/Algebra/Homology/SpectralObject/Comparison.lean#L119)

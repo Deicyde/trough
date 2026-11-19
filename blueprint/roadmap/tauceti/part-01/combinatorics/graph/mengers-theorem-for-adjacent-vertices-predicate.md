@@ -33,9 +33,9 @@ Its statement uses no other declaration mapped here.
 ## Proof depends on
 
 - [Max-flow/min-cut theorem between vertex sets](../network/max-flow-min-cut-theorem-between-vertex-sets.md)
-- [Menger's theorem for internally vertex-disjoint paths](../finite-graph-connectivity-and-network-flows/part-01/mengers-theorem-for-internally-vertex-disjoint-p.md)
+- [Menger's theorem for internally vertex-disjoint paths](../finite-graph-connectivity-and-network-flows/mengers-theorem-for-internally-vertex-disjoint-p.md)
 - [Menger's theorem for vertex-strong arrow families](../network/mengers-theorem-for-vertex-strong-arrow-families.md)
-- [Vertex-capacitated Menger's theorem for multigraphs](vertex-capacitated-mengers-theorem-for-multigrap.md)
+- [Vertex-capacitated Menger's theorem for multigraphs](../finite-graph-connectivity-and-network-flows/vertex-capacitated-mengers-theorem-for-multigrap.md)
 
 ## Lean
 
@@ -218,4 +218,4 @@ Graph.forall_exists_reachable_deleteVerts_iff_exists_paths.{u, v} {α : Type u} 
 ## Sources
 
 - [Tau Ceti documentation: `Graph.forall_reachable_deleteEdges_deleteVerts_iff_exists_paths`](https://taucetiproject.org/docs/TauCeti/Combinatorics/Graph/Connectivity/Menger/Adjacent.html#Graph.forall_reachable_deleteEdges_deleteVerts_iff_exists_paths)
-- [Source of `Graph.forall_reachable_deleteEdges_deleteVerts_iff_exists_paths` in TauCeti/Combinatorics/Graph/Connectivity/Menger/Adjacent.lean](https://github.com/TauCetiProject/TauCeti/blob/a6027b1d24fcb935c53bd5b50d11b40991cda418/TauCeti/Combinatorics/Graph/Connectivity/Menger/Adjacent.lean#L174)
+- [Source of `Graph.forall_reachable_deleteEdges_deleteVerts_iff_exists_paths` in TauCeti/Combinatorics/Graph/Connectivity/Menger/Adjacent.lean](https://github.com/TauCetiProject/TauCeti/blob/cd41bffcb343151b3e58c89392e206b11fe78c1c/TauCeti/Combinatorics/Graph/Connectivity/Menger/Adjacent.lean#L174)

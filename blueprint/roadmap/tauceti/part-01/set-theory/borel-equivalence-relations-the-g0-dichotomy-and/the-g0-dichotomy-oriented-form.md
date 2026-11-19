@@ -38,5 +38,5 @@ Formalized in Tau Ceti as [`TauCeti.g0_dichotomy_oriented`](https://taucetiproje
 ## Sources
 
 - [Tau Ceti documentation: `TauCeti.g0_dichotomy_oriented`](https://taucetiproject.org/docs/TauCeti/SetTheory/Descriptive/GZeroDichotomy.html#TauCeti.g0_dichotomy_oriented)
-- [Source of `TauCeti.g0_dichotomy_oriented` in TauCeti/SetTheory/Descriptive/GZeroDichotomy.lean](https://github.com/TauCetiProject/TauCeti/blob/a6027b1d24fcb935c53bd5b50d11b40991cda418/TauCeti/SetTheory/Descriptive/GZeroDichotomy.lean#L416)
-- [Tau Ceti roadmap status: Borel equivalence relations, the G₀ dichotomy and Silver's theorem](https://github.com/TauCetiProject/TauCetiRoadmap/blob/9f7c032adaf1b838e8183d63ff3cfa886d061cb3/TauCetiRoadmap/BorelEquivalenceRelations/STATUS.md)
+- [Source of `TauCeti.g0_dichotomy_oriented` in TauCeti/SetTheory/Descriptive/GZeroDichotomy.lean](https://github.com/TauCetiProject/TauCeti/blob/cd41bffcb343151b3e58c89392e206b11fe78c1c/TauCeti/SetTheory/Descriptive/GZeroDichotomy.lean#L416)
+- [Tau Ceti roadmap status: Borel equivalence relations, the G₀ dichotomy and Silver's theorem](https://github.com/TauCetiProject/TauCetiRoadmap/blob/612845ab80fb9c2b9bee724a156756ee78031591/TauCetiRoadmap/BorelEquivalenceRelations/STATUS.md)

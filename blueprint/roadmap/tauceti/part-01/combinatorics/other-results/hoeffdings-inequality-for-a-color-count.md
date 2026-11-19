@@ -28,7 +28,7 @@ Its statement uses no other declaration mapped here.
 
 ## Proof depends on
 
-- [Hoeffding's lemma, oscillation form](../../probability/moments/hoeffdings-lemma-oscillation-form.md)
+- [Hoeffding's lemma, oscillation form](../../probability/moments/part-01/hoeffdings-lemma-oscillation-form.md)
 
 ## Lean
 
@@ -37,4 +37,4 @@ Formalized in Tau Ceti as [`TauCeti.measureReal_le_abs_card_filter_sub_le`](http
 ## Sources
 
 - [Tau Ceti documentation: `TauCeti.measureReal_le_abs_card_filter_sub_le`](https://taucetiproject.org/docs/TauCeti/Combinatorics/Enumerative/RandomColoring.html#TauCeti.measureReal_le_abs_card_filter_sub_le)
-- [Source of `TauCeti.measureReal_le_abs_card_filter_sub_le` in TauCeti/Combinatorics/Enumerative/RandomColoring.lean](https://github.com/TauCetiProject/TauCeti/blob/a6027b1d24fcb935c53bd5b50d11b40991cda418/TauCeti/Combinatorics/Enumerative/RandomColoring.lean#L78)
+- [Source of `TauCeti.measureReal_le_abs_card_filter_sub_le` in TauCeti/Combinatorics/Enumerative/RandomColoring.lean](https://github.com/TauCetiProject/TauCeti/blob/cd41bffcb343151b3e58c89392e206b11fe78c1c/TauCeti/Combinatorics/Enumerative/RandomColoring.lean#L78)

@@ -1,0 +1,24 @@
+{
+ "schema": "trough-ledger/v1",
+ "library": "CSLib",
+ "repo": "leanprover/cslib",
+ "rev": "86d560b6cbb379bd82512424cbcd2a915a1565e7",
+ "module": "Cslib.Computability.Machines.Turing.MultiTape.Plumbing.RewindWork",
+ "file": "Cslib/Computability/Machines/Turing/MultiTape/Plumbing/RewindWork.lean",
+ "public": [
+  {"name": "Turing.MultiTapeTM.RewindWorkState", "kind": "inductive", "line": 46},
+  {"name": "Turing.MultiTapeTM.rewindWork", "kind": "def", "line": 57},
+  {"name": "Turing.MultiTapeTM.runFrom_rewindWork", "kind": "theorem", "line": 128},
+  {"name": "Turing.MultiTapeTM.runFrom_rewindWork_none", "kind": "theorem", "line": 140},
+  {"name": "Turing.MultiTapeTM.runFrom_rewindWork_erase", "kind": "theorem", "line": 148},
+  {"name": "Turing.MultiTapeTM.workTapePos_runFrom_rewindWork", "kind": "theorem", "line": 165}
+ ],
+ "private": [
+  {"name": "Turing.MultiTapeTM.RewindWork.step_start", "kind": "lemma", "line": 71},
+  {"name": "Turing.MultiTapeTM.RewindWork.step_scan_some", "kind": "lemma", "line": 79},
+  {"name": "Turing.MultiTapeTM.RewindWork.step_scan_none", "kind": "lemma", "line": 87},
+  {"name": "Turing.MultiTapeTM.RewindWork.runFrom_scan", "kind": "lemma", "line": 95}
+ ],
+ "missing": [],
+ "unread": "Unnamed instances, the names an `alias ⟨…⟩` command gives, and the names Lean generates for a declaration (constructors, recursors, derived instances) are not read from the source, so they are not listed."
+}

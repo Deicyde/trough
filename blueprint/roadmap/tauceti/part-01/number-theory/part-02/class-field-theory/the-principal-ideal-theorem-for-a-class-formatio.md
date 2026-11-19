@@ -31,7 +31,7 @@ Its statement uses no other declaration mapped here.
 ## Proof depends on
 
 - [Corestriction through Shapiro's lemma](../../../representation-theory/homological/corestriction-through-shapiros-lemma.md)
-- [Furtwängler's theorem, the group-theoretic principal ideal theorem](../../../group-theory/other-results/furtwanglers-theorem-the-group-theoretic-princip.md)
+- [Furtwängler's theorem, the group-theoretic principal ideal theorem](../../../group-theory/other-results/part-01/furtwanglers-theorem-the-group-theoretic-princip.md)
 - [Restriction through Shapiro's lemma](../../../representation-theory/homological/restriction-through-shapiros-lemma.md)
 - [Tate's theorem](../../../representation-theory/homological/tates-theorem.md)
 - [Tate's theorem for a class formation, in every integer degree](../../part-01/class-field-theory/tates-theorem-for-a-class-formation-in-every-int.md)
@@ -44,4 +44,4 @@ Formalized in Tau Ceti as [`TauCeti.ClassFieldTheory.ClassFormation.groundInclus
 ## Sources
 
 - [Tau Ceti documentation: `TauCeti.ClassFieldTheory.ClassFormation.groundInclusion_mem_normSubgroup_of_range_eq_commutator`](https://taucetiproject.org/docs/TauCeti/NumberTheory/ClassFieldTheory/Formation/PrincipalIdeal.html#TauCeti.ClassFieldTheory.ClassFormation.groundInclusion_mem_normSubgroup_of_range_eq_commutator)
-- [Source of `TauCeti.ClassFieldTheory.ClassFormation.groundInclusion_mem_normSubgroup_of_range_eq_commutator` in TauCeti/NumberTheory/ClassFieldTheory/Formation/PrincipalIdeal.lean](https://github.com/TauCetiProject/TauCeti/blob/a6027b1d24fcb935c53bd5b50d11b40991cda418/TauCeti/NumberTheory/ClassFieldTheory/Formation/PrincipalIdeal.lean#L63)
+- [Source of `TauCeti.ClassFieldTheory.ClassFormation.groundInclusion_mem_normSubgroup_of_range_eq_commutator` in TauCeti/NumberTheory/ClassFieldTheory/Formation/PrincipalIdeal.lean](https://github.com/TauCetiProject/TauCeti/blob/cd41bffcb343151b3e58c89392e206b11fe78c1c/TauCeti/NumberTheory/ClassFieldTheory/Formation/PrincipalIdeal.lean#L63)

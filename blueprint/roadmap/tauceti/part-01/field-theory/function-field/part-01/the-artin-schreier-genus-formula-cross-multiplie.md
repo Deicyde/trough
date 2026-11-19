@@ -35,7 +35,7 @@ Its statement uses no other declaration mapped here.
 
 - [The fundamental identity](the-fundamental-identity.md)
 - [The fundamental inequality (Stichtenoth, Theorem 3.1.11)](the-fundamental-inequality-stichtenoth-theorem-3.md)
-- [The Hurwitz genus formula (Stichtenoth, Theorem 3.4.13)](../../../algebraic-geometry/algebraic-curves-function-fields-divisors-and-ri/the-hurwitz-genus-formula-stichtenoth-theorem-3.md)
+- [The Hurwitz genus formula (Stichtenoth, Theorem 3.4.13)](../../algebraic-curves-function-fields-divisors-and-ri/the-hurwitz-genus-formula-stichtenoth-theorem-3.md)
 - [The weak approximation theorem](../part-02/the-weak-approximation-theorem.md)
 
 ## Lean
@@ -45,4 +45,4 @@ Formalized in Tau Ceti as [`TauCeti.artinSchreier_genus_formula`](https://taucet
 ## Sources
 
 - [Tau Ceti documentation: `TauCeti.artinSchreier_genus_formula`](https://taucetiproject.org/docs/TauCeti/FieldTheory/FunctionField/ArtinSchreier/Genus.html#TauCeti.artinSchreier_genus_formula)
-- [Source of `TauCeti.artinSchreier_genus_formula` in TauCeti/FieldTheory/FunctionField/ArtinSchreier/Genus.lean](https://github.com/TauCetiProject/TauCeti/blob/a6027b1d24fcb935c53bd5b50d11b40991cda418/TauCeti/FieldTheory/FunctionField/ArtinSchreier/Genus.lean#L190)
+- [Source of `TauCeti.artinSchreier_genus_formula` in TauCeti/FieldTheory/FunctionField/ArtinSchreier/Genus.lean](https://github.com/TauCetiProject/TauCeti/blob/cd41bffcb343151b3e58c89392e206b11fe78c1c/TauCeti/FieldTheory/FunctionField/ArtinSchreier/Genus.lean#L190)

@@ -55,4 +55,4 @@ TauCeti.Place.residue_eq_residue_mul_derivativeOfSeparating.{u_1, u_2} {k : Type
 ## Sources
 
 - [Tau Ceti documentation: `TauCeti.Place.residueResidueField_eq_residueResidueField_mul_derivativeOfSeparating`](https://taucetiproject.org/docs/TauCeti/FieldTheory/FunctionField/Place/Expansion/Laurent/Derivative.html#TauCeti.Place.residueResidueField_eq_residueResidueField_mul_derivativeOfSeparating)
-- [Source of `TauCeti.Place.residueResidueField_eq_residueResidueField_mul_derivativeOfSeparating` in TauCeti/FieldTheory/FunctionField/Place/Expansion/Laurent/Derivative.lean](https://github.com/TauCetiProject/TauCeti/blob/a6027b1d24fcb935c53bd5b50d11b40991cda418/TauCeti/FieldTheory/FunctionField/Place/Expansion/Laurent/Derivative.lean#L428)
+- [Source of `TauCeti.Place.residueResidueField_eq_residueResidueField_mul_derivativeOfSeparating` in TauCeti/FieldTheory/FunctionField/Place/Expansion/Laurent/Derivative.lean](https://github.com/TauCetiProject/TauCeti/blob/cd41bffcb343151b3e58c89392e206b11fe78c1c/TauCeti/FieldTheory/FunctionField/Place/Expansion/Laurent/Derivative.lean#L428)

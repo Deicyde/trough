@@ -31,9 +31,7 @@ Its statement uses no other declaration mapped here.
 
 ## Proof depends on
 
-- [The inversion law of theta series](the-inversion-law-of-theta-series.md)
-- [Poisson's summation formula](../../../analysis/part-02/fourier/poissons-summation-formula.md)
-- [ZLattice.gaussSum](zlattice-gausssum.md)
+- [Poisson's summation formula](../../../analysis/part-03/fourier/part-01/poissons-summation-formula.md)
 
 ## Lean
 
@@ -42,4 +40,4 @@ Formalized in Tau Ceti as [`TauCeti.sq_sum_range_cexp_two_pi_I_mul_sq_div`](http
 ## Sources
 
 - [Tau Ceti documentation: `TauCeti.sq_sum_range_cexp_two_pi_I_mul_sq_div`](https://taucetiproject.org/docs/TauCeti/NumberTheory/ModularForms/ThetaSeries/SqrtTwoCubic.html#TauCeti.sq_sum_range_cexp_two_pi_I_mul_sq_div)
-- [Source of `TauCeti.sq_sum_range_cexp_two_pi_I_mul_sq_div` in TauCeti/NumberTheory/ModularForms/ThetaSeries/SqrtTwoCubic.lean](https://github.com/TauCetiProject/TauCeti/blob/a6027b1d24fcb935c53bd5b50d11b40991cda418/TauCeti/NumberTheory/ModularForms/ThetaSeries/SqrtTwoCubic.lean#L331)
+- [Source of `TauCeti.sq_sum_range_cexp_two_pi_I_mul_sq_div` in TauCeti/NumberTheory/ModularForms/ThetaSeries/SqrtTwoCubic.lean](https://github.com/TauCetiProject/TauCeti/blob/cd41bffcb343151b3e58c89392e206b11fe78c1c/TauCeti/NumberTheory/ModularForms/ThetaSeries/SqrtTwoCubic.lean#L331)

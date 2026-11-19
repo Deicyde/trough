@@ -13,7 +13,7 @@ Polynomial.abc.{u_1} {k : Type u_1} [Field k] [DecidableEq k] {a b c : Polynomia
 
 ## Depends on
 
-- [$K\[X\]$ is Euclidean](../../../overview/general-algebra/polynomials-and-power-series/k-x-is-euclidean.md)
+- [$K[X]$ is Euclidean](../../../overview/general-algebra/polynomials-and-power-series/k-x-is-euclidean.md)
 - [Coprime element](../../../overview/general-algebra/divisibility-in-integral-domains/coprime-element.md)
 - [Greatest common divisor](../../../overview/general-algebra/divisibility-in-integral-domains/greatest-common-divisor.md)
 - [Least common multiple](../../../overview/general-algebra/divisibility-in-integral-domains/least-common-multiple.md)

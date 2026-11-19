@@ -30,5 +30,5 @@ Formalized in Tau Ceti as [`TauCeti.eisensteinSet`](https://taucetiproject.org/d
 ## Sources
 
 - [Tau Ceti documentation: `TauCeti.eisensteinSet`](https://taucetiproject.org/docs/TauCeti/NumberTheory/LocalField/MassFormula/Eisenstein/Region.html#TauCeti.eisensteinSet)
-- [Source of `TauCeti.eisensteinSet` in TauCeti/NumberTheory/LocalField/MassFormula/Eisenstein/Region.lean](https://github.com/TauCetiProject/TauCeti/blob/a6027b1d24fcb935c53bd5b50d11b40991cda418/TauCeti/NumberTheory/LocalField/MassFormula/Eisenstein/Region.lean#L92)
-- [Tau Ceti roadmap status: Counting totally ramified extensions of a local field, and Serre's mass formula](https://github.com/TauCetiProject/TauCetiRoadmap/blob/9f7c032adaf1b838e8183d63ff3cfa886d061cb3/TauCetiRoadmap/MassFormula/STATUS.md)
+- [Source of `TauCeti.eisensteinSet` in TauCeti/NumberTheory/LocalField/MassFormula/Eisenstein/Region.lean](https://github.com/TauCetiProject/TauCeti/blob/cd41bffcb343151b3e58c89392e206b11fe78c1c/TauCeti/NumberTheory/LocalField/MassFormula/Eisenstein/Region.lean#L94)
+- [Tau Ceti roadmap status: Counting totally ramified extensions of a local field, and Serre's mass formula](https://github.com/TauCetiProject/TauCetiRoadmap/blob/612845ab80fb9c2b9bee724a156756ee78031591/TauCetiRoadmap/MassFormula/STATUS.md)

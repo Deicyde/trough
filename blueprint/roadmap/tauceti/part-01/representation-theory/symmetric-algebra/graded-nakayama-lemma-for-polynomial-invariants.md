@@ -31,7 +31,7 @@ Representation.adjoin_range_eq_top_of_le_span_sup_sq.{u_1, u_3, u_4, u_5} {R : T
 
 ## Depends on
 
-- [Representation.symmetricAlgebraInvariants](../finite-reflection-invariants-degrees-and-weyl-ex/representation-symmetricalgebrainvariants.md)
+Its statement uses no other declaration mapped here.
 
 ## Proof depends on
 
@@ -58,4 +58,4 @@ Representation.span_range_eq_top_of_span_range_mk_eq_top.{u_1, u_2, u_3, u_4} {R
 ## Sources
 
 - [Tau Ceti documentation: `Representation.adjoin_range_eq_top_of_le_span_sup_sq`](https://taucetiproject.org/docs/TauCeti/RepresentationTheory/SymmetricAlgebra/Generators.html#Representation.adjoin_range_eq_top_of_le_span_sup_sq)
-- [Source of `Representation.adjoin_range_eq_top_of_le_span_sup_sq` in TauCeti/RepresentationTheory/SymmetricAlgebra/Generators.lean](https://github.com/TauCetiProject/TauCeti/blob/a6027b1d24fcb935c53bd5b50d11b40991cda418/TauCeti/RepresentationTheory/SymmetricAlgebra/Generators.lean#L73)
+- [Source of `Representation.adjoin_range_eq_top_of_le_span_sup_sq` in TauCeti/RepresentationTheory/SymmetricAlgebra/Generators.lean](https://github.com/TauCetiProject/TauCeti/blob/cd41bffcb343151b3e58c89392e206b11fe78c1c/TauCeti/RepresentationTheory/SymmetricAlgebra/Generators.lean#L73)

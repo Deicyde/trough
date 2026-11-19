@@ -1,11 +1,13 @@
 # Four-dimensional Seiberg–Witten theory
 
-The declarations the status of Tau Ceti's [roadmap](https://github.com/TauCetiProject/TauCetiRoadmap/blob/9f7c032adaf1b838e8183d63ff3cfa886d061cb3/TauCetiRoadmap/SeibergWittenTheory/README.md) names as Tau Ceti has them at commit [a6027b1d](https://github.com/TauCetiProject/TauCeti/tree/a6027b1d24fcb935c53bd5b50d11b40991cda418).
+The declarations the status of Tau Ceti's [roadmap](https://github.com/TauCetiProject/TauCetiRoadmap/blob/612845ab80fb9c2b9bee724a156756ee78031591/TauCetiRoadmap/SeibergWittenTheory/README.md) names as Tau Ceti has them at commit [cd41bffc](https://github.com/TauCetiProject/TauCeti/tree/cd41bffcb343151b3e58c89392e206b11fe78c1c).
 
+- [The determinant of the half-spin representations of `Spinᶜ(4)` is the determinant character](the-determinant-of-the-half-spin-representations.md)
+- [Orientation.realSpinCHalfSpinSmoothHom](orientation-realspinchalfspinsmoothhom.md)
+- [TauCeti.SeibergWitten.norm_quadraticTwoForm_sq](tauceti-seibergwitten-norm-quadratictwoform-sq.md)
 - [TauCeti.SeibergWitten.hasStrictFDerivAt_quadraticEnd](tauceti-seibergwitten-hasstrictfderivat-quadrati.md)
-- [TauCeti.SeibergWitten.trace_quadraticEndPolar_mul_of_mem_traceFreeSelfAdjoint](tauceti-seibergwitten-trace-quadraticendpolar-mu.md)
-- [Frame independence of the chirality element](frame-independence-of-the-chirality-element.md)
-- [The self-duality relation](the-self-duality-relation.md)
-- [The anticommutator of two two-forms in the Clifford algebra of an oriented four-space](the-anticommutator-of-two-two-forms-in-the-cliff.md)
-- [Orientation.hodgeStar](orientation-hodgestar.md)
-- [TauCeti.traceFreeSelfAdjoint](tauceti-tracefreeselfadjoint.md)
+- [The character of `W⁺ - W⁻` on the torus of `Spinᶜ(4)`](the-character-of-w-w-on-the-torus-of-spinc-4.md)
+- [Closed imaginary forms with periods in `2πiℤ` are logarithmic derivatives of circle-valued maps](closed-imaginary-forms-with-periods-in-2iz-are-l.md)
+- [The group `Spinᶜ(Q)`](the-group-spinc-q.md)
+- [TauCeti.SeibergWitten.abelianDeformationOperator](tauceti-seibergwitten-abeliandeformationoperator.md)
+- [The insertion form](the-insertion-form.md)

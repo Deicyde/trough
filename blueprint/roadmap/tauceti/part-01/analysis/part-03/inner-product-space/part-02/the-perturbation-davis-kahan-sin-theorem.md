@@ -30,9 +30,7 @@ Its statement uses no other declaration mapped here.
 
 ## Proof depends on
 
-- [Courant–Fischer, lower direction](../part-01/courant-fischer-lower-direction.md)
 - [The interval/exterior Sylvester bound](the-interval-exterior-sylvester-bound.md)
-- [Ky Fan's maximum principle, attainment](ky-fans-maximum-principle-attainment.md)
 
 ## Lean
 
@@ -56,4 +54,4 @@ TauCeti.UnitarilyInvariantSeminorm.mul_map_starProjection_comp_starProjection_le
 ## Sources
 
 - [Tau Ceti documentation: `TauCeti.UnitarilyInvariantSeminorm.mul_map_starProjection_comp_starProjection_le_map_sub`](https://taucetiproject.org/docs/TauCeti/Analysis/InnerProductSpace/UnitarilyInvariantSeminorm/SinTheta/Basic.html#TauCeti.UnitarilyInvariantSeminorm.mul_map_starProjection_comp_starProjection_le_map_sub)
-- [Source of `TauCeti.UnitarilyInvariantSeminorm.mul_map_starProjection_comp_starProjection_le_map_sub` in TauCeti/Analysis/InnerProductSpace/UnitarilyInvariantSeminorm/SinTheta/Basic.lean](https://github.com/TauCetiProject/TauCeti/blob/a6027b1d24fcb935c53bd5b50d11b40991cda418/TauCeti/Analysis/InnerProductSpace/UnitarilyInvariantSeminorm/SinTheta/Basic.lean#L130)
+- [Source of `TauCeti.UnitarilyInvariantSeminorm.mul_map_starProjection_comp_starProjection_le_map_sub` in TauCeti/Analysis/InnerProductSpace/UnitarilyInvariantSeminorm/SinTheta/Basic.lean](https://github.com/TauCetiProject/TauCeti/blob/cd41bffcb343151b3e58c89392e206b11fe78c1c/TauCeti/Analysis/InnerProductSpace/UnitarilyInvariantSeminorm/SinTheta/Basic.lean#L130)

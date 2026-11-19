@@ -26,6 +26,7 @@ TauCeti.Iwasawa.completedCoordinateEquiv_eq_powerSeriesCoordinate {p : ℕ} [Fac
 ## Proof depends on
 
 - [TauCeti.FiniteQuotientTower](tauceti-finitequotienttower.md)
+- [Van Dantzig's theorem](../../../../part-02/topology/algebra/part-02/van-dantzigs-theorem.md)
 
 ## Lean
 
@@ -34,5 +35,5 @@ Formalized in Tau Ceti as [`TauCeti.Iwasawa.completedCoordinateEquiv_eq_powerSer
 ## Sources
 
 - [Tau Ceti documentation: `TauCeti.Iwasawa.completedCoordinateEquiv_eq_powerSeriesCoordinate`](https://taucetiproject.org/docs/TauCeti/RingTheory/Iwasawa/CompletedCoordinate.html#TauCeti.Iwasawa.completedCoordinateEquiv_eq_powerSeriesCoordinate)
-- [Source of `TauCeti.Iwasawa.completedCoordinateEquiv_eq_powerSeriesCoordinate` in TauCeti/RingTheory/Iwasawa/CompletedCoordinate.lean](https://github.com/TauCetiProject/TauCeti/blob/a6027b1d24fcb935c53bd5b50d11b40991cda418/TauCeti/RingTheory/Iwasawa/CompletedCoordinate.lean#L198)
-- [Tau Ceti roadmap status: p-adic measures, completed group algebras, and characteristic ideals](https://github.com/TauCetiProject/TauCetiRoadmap/blob/9f7c032adaf1b838e8183d63ff3cfa886d061cb3/TauCetiRoadmap/PadicMeasuresIwasawaAlgebras/STATUS.md)
+- [Source of `TauCeti.Iwasawa.completedCoordinateEquiv_eq_powerSeriesCoordinate` in TauCeti/RingTheory/Iwasawa/CompletedCoordinate.lean](https://github.com/TauCetiProject/TauCeti/blob/cd41bffcb343151b3e58c89392e206b11fe78c1c/TauCeti/RingTheory/Iwasawa/CompletedCoordinate.lean#L197)
+- [Tau Ceti roadmap status: p-adic measures, completed group algebras, and characteristic ideals](https://github.com/TauCetiProject/TauCetiRoadmap/blob/612845ab80fb9c2b9bee724a156756ee78031591/TauCetiRoadmap/PadicMeasuresIwasawaAlgebras/STATUS.md)

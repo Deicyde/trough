@@ -27,4 +27,4 @@ Formalized in Tau Ceti as [`TauCeti.SymmetricFunction.esymmAlgEquiv`](https://ta
 ## Sources
 
 - [Tau Ceti documentation: `TauCeti.SymmetricFunction.esymmAlgEquiv`](https://taucetiproject.org/docs/TauCeti/RingTheory/MvPolynomial/Symmetric/Stable/Generators.html#TauCeti.SymmetricFunction.esymmAlgEquiv)
-- [Source of `TauCeti.SymmetricFunction.esymmAlgEquiv` in TauCeti/RingTheory/MvPolynomial/Symmetric/Stable/Generators.lean](https://github.com/TauCetiProject/TauCeti/blob/a6027b1d24fcb935c53bd5b50d11b40991cda418/TauCeti/RingTheory/MvPolynomial/Symmetric/Stable/Generators.lean#L204)
+- [Source of `TauCeti.SymmetricFunction.esymmAlgEquiv` in TauCeti/RingTheory/MvPolynomial/Symmetric/Stable/Generators.lean](https://github.com/TauCetiProject/TauCeti/blob/cd41bffcb343151b3e58c89392e206b11fe78c1c/TauCeti/RingTheory/MvPolynomial/Symmetric/Stable/Generators.lean#L250)

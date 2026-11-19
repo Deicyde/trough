@@ -30,7 +30,7 @@ Its statement uses no other declaration mapped here.
 
 ## Proof depends on
 
-- [Cartan's formula](../../../../analysis/part-02/calculus/part-01/cartans-formula.md)
+- [Cartan's formula](../../../../analysis/part-03/calculus/part-01/cartans-formula.md)
 
 ## Lean
 
@@ -81,4 +81,4 @@ TauCeti.mlieDerivForm_eq_interior_mextDeriv_add_apply.{u_1, u_2, u_3, u_4} {E : 
 ## Sources
 
 - [Tau Ceti documentation: `TauCeti.mlieDerivFormWithin_eq_interior_mextDerivWithin_add`](https://taucetiproject.org/docs/TauCeti/Geometry/Manifold/DifferentialForm/LieDeriv.html#TauCeti.mlieDerivFormWithin_eq_interior_mextDerivWithin_add)
-- [Source of `TauCeti.mlieDerivFormWithin_eq_interior_mextDerivWithin_add` in TauCeti/Geometry/Manifold/DifferentialForm/LieDeriv.lean](https://github.com/TauCetiProject/TauCeti/blob/a6027b1d24fcb935c53bd5b50d11b40991cda418/TauCeti/Geometry/Manifold/DifferentialForm/LieDeriv.lean#L278)
+- [Source of `TauCeti.mlieDerivFormWithin_eq_interior_mextDerivWithin_add` in TauCeti/Geometry/Manifold/DifferentialForm/LieDeriv.lean](https://github.com/TauCetiProject/TauCeti/blob/cd41bffcb343151b3e58c89392e206b11fe78c1c/TauCeti/Geometry/Manifold/DifferentialForm/LieDeriv.lean#L278)

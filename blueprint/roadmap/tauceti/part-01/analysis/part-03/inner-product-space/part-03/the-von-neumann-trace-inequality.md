@@ -30,4 +30,4 @@ Formalized in Tau Ceti as [`LinearMap.IsSymmetric.re_trace_comp_le_sum_eigenvalu
 ## Sources
 
 - [Tau Ceti documentation: `LinearMap.IsSymmetric.re_trace_comp_le_sum_eigenvalues_mul_eigenvalues`](https://taucetiproject.org/docs/TauCeti/Analysis/InnerProductSpace/HoffmanWielandt/Basic.html#LinearMap.IsSymmetric.re_trace_comp_le_sum_eigenvalues_mul_eigenvalues)
-- [Source of `LinearMap.IsSymmetric.re_trace_comp_le_sum_eigenvalues_mul_eigenvalues` in TauCeti/Analysis/InnerProductSpace/HoffmanWielandt/Basic.lean](https://github.com/TauCetiProject/TauCeti/blob/a6027b1d24fcb935c53bd5b50d11b40991cda418/TauCeti/Analysis/InnerProductSpace/HoffmanWielandt/Basic.lean#L76)
+- [Source of `LinearMap.IsSymmetric.re_trace_comp_le_sum_eigenvalues_mul_eigenvalues` in TauCeti/Analysis/InnerProductSpace/HoffmanWielandt/Basic.lean](https://github.com/TauCetiProject/TauCeti/blob/cd41bffcb343151b3e58c89392e206b11fe78c1c/TauCeti/Analysis/InnerProductSpace/HoffmanWielandt/Basic.lean#L76)

@@ -1,0 +1,19 @@
+{
+ "schema": "trough-ledger/v1",
+ "library": "CSLib",
+ "repo": "leanprover/cslib",
+ "rev": "86d560b6cbb379bd82512424cbcd2a915a1565e7",
+ "module": "Cslib.Computability.Automata.DA.ToNA",
+ "file": "Cslib/Computability/Automata/DA/ToNA.lean",
+ "public": [
+  {"name": "Cslib.Automata.DA.toNA", "kind": "def", "line": 27},
+  {"name": "Cslib.Automata.DA.toNA_run", "kind": "theorem", "line": 36},
+  {"name": "Cslib.Automata.DA.FinAcc.toNAFinAcc", "kind": "def", "line": 50},
+  {"name": "Cslib.Automata.DA.FinAcc.toNAFinAcc_language_eq", "kind": "theorem", "line": 57},
+  {"name": "Cslib.Automata.DA.Buchi.toNABuchi", "kind": "def", "line": 68},
+  {"name": "Cslib.Automata.DA.Buchi.toNABuchi_language_eq", "kind": "theorem", "line": 74}
+ ],
+ "private": [],
+ "missing": [],
+ "unread": "Unnamed instances, the names an `alias ⟨…⟩` command gives, and the names Lean generates for a declaration (constructors, recursors, derived instances) are not read from the source, so they are not listed."
+}

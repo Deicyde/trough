@@ -47,4 +47,4 @@ InnerProductSpace.finrank_pointSpectralSubspace_Ioi_continuousLinearMapOfBilin.{
 ## Sources
 
 - [Tau Ceti documentation: `InnerProductSpace.finrank_pointSpectralSubspace_Iio_continuousLinearMapOfBilin`](https://taucetiproject.org/docs/TauCeti/Analysis/InnerProductSpace/Spectral/Inertia.html#InnerProductSpace.finrank_pointSpectralSubspace_Iio_continuousLinearMapOfBilin)
-- [Source of `InnerProductSpace.finrank_pointSpectralSubspace_Iio_continuousLinearMapOfBilin` in TauCeti/Analysis/InnerProductSpace/Spectral/Inertia.lean](https://github.com/TauCetiProject/TauCeti/blob/a6027b1d24fcb935c53bd5b50d11b40991cda418/TauCeti/Analysis/InnerProductSpace/Spectral/Inertia.lean#L131)
+- [Source of `InnerProductSpace.finrank_pointSpectralSubspace_Iio_continuousLinearMapOfBilin` in TauCeti/Analysis/InnerProductSpace/Spectral/Inertia.lean](https://github.com/TauCetiProject/TauCeti/blob/cd41bffcb343151b3e58c89392e206b11fe78c1c/TauCeti/Analysis/InnerProductSpace/Spectral/Inertia.lean#L131)

@@ -29,4 +29,4 @@ Formalized in Tau Ceti as [`MeasureTheory.AnalyticSet.nullMeasurableSet`](https:
 ## Sources
 
 - [Tau Ceti documentation: `MeasureTheory.AnalyticSet.nullMeasurableSet`](https://taucetiproject.org/docs/TauCeti/MeasureTheory/MeasurableSpace/Analytic.html#MeasureTheory.AnalyticSet.nullMeasurableSet)
-- [Source of `MeasureTheory.AnalyticSet.nullMeasurableSet` in TauCeti/MeasureTheory/MeasurableSpace/Analytic.lean](https://github.com/TauCetiProject/TauCeti/blob/a6027b1d24fcb935c53bd5b50d11b40991cda418/TauCeti/MeasureTheory/MeasurableSpace/Analytic.lean#L171)
+- [Source of `MeasureTheory.AnalyticSet.nullMeasurableSet` in TauCeti/MeasureTheory/MeasurableSpace/Analytic.lean](https://github.com/TauCetiProject/TauCeti/blob/cd41bffcb343151b3e58c89392e206b11fe78c1c/TauCeti/MeasureTheory/MeasurableSpace/Analytic.lean#L98)

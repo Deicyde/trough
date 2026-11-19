@@ -326,6 +326,34 @@ def test_a_title_keeps_its_emphasis():
     assert leaf.slug == "017-the-irrationality-exponent-of-is-2"
 
 
+def test_a_titles_literal_asterisks_stay_literal():
+    source = {"source": {"repo": "openai/math", "rev": "a" * 40}}
+    titles = {"C*-algebras and W*-algebras.": "C\\*-algebras and W\\*-algebras",
+              "<i>C</i>*-algebras and <i>W</i>*-algebras.": "*C*\\*-algebras and *W*\\*-algebras",
+              "Norms on $`C^*`$-algebras and <i>x</i> * y.": "Norms on $C^*$-algebras and *x* \\* y"}
+    for raw, title in titles.items():
+        families, problems = openai_math.read_contents(cell(f"**017. {raw}** It is.")
+                                                       + cell("&emsp;[C](preprints/C/paper.pdf)\n\nC."))
+        assert problems == [] and families[0]["title"] == title
+        leaf = openai_math.article(families[0] | {"lean": None}, source, {})
+        assert leaf.title == f"017. {title}"
+    assert leaf.slug == "017-norms-on-c-algebras-and-x-y"
+
+
+def test_the_lean_row_shows_names_with_a_located_proof_first():
+    source = {"repo": "openai/math", "rev": "a" * 40}
+    proof = {"file": "lean/OAI/Many/Main.lean", "line": 9, "sorry": False}
+    statements = ([{"name": f"OAI.Many.open{i}", "line": i + 1, "proof": None} for i in range(8)]
+                  + [{"name": "OAI.Many.proved", "line": 20, "proof": proof}])
+    lean = {"path": "lean/docs/001.md", "papers": [], "scope": "Scope.",
+            "results": [{"challenge": "lean/ComparatorChallenges/Many.lean", "statements": statements}]}
+    links: dict[str, str] = {}
+    leaf = openai_math.article({"number": "001", "title": "Many", "description": "Many.", "manuscripts": [],
+                                "lean": lean}, {"source": source}, links)
+    assert dict(leaf.fields)["lean"].split(", ") == ["OAI.Many.proved"] + [f"OAI.Many.open{i}" for i in range(7)]
+    assert links["OAI.Many.proved"].endswith("/lean/OAI/Many/Main.lean#L9") and "OAI.Many.open7" not in links
+
+
 def test_only_the_statements_formalization_yaml_lists_are_marked_main(tmp_path):
     main = ("    - comparator_config: ComparatorChallenges/Zeta.json\n      declaration: OAI.Zeta.bound\n"
             "      file: OAI/NumberTheory/Zeta/Main.lean\n")
@@ -377,6 +405,8 @@ def test_html_and_character_references_are_found_outside_formulas():
     assert openai_math.markup("a <b>bold</b> and &hellip;") == ["<b>", "</b>", "&hellip;"]
     assert openai_math.markup("$k<n$ and $m>2$, `<b>`, <https://example.org> and x < y > z") == []
     assert openai_math.markup(openai_math.markdown("$`k<n`$ and <i>p</i> &gt; 2")) == []
+    # A numeric reference without its semicolon is refused, not decoded.
+    assert openai_math.markup(openai_math.markdown("1&#8211 2 and 3&#x2013 4")) == ["&#8211", "&#x2013"]
 
 
 def with_cell(after: str, text: str) -> str:
@@ -400,6 +430,8 @@ BROKEN = {
              "CONTENTS.md: family 001 keeps HTML or a character reference: '<b>'"),
     "reference": ({"CONTENTS.md": CONTENTS.replace("Again.", "Again&hellip;")},
                   "CONTENTS.md: family 002 keeps HTML or a character reference: '&hellip;'"),
+    "numeric-reference": ({"CONTENTS.md": CONTENTS.replace("Again.", "Again&#8230")},
+                          "CONTENTS.md: family 002 keeps HTML or a character reference: '&#8230'"),
     "lean-link-form": ({"CONTENTS.md": CONTENTS.replace("(lean/docs/002.md))", "(lean/docs/002.md)).")},
                        "CONTENTS.md: family 002 links its Lean page in a form this chapter does not read"),
     "doc-unlinked": ({"CONTENTS.md": CONTENTS.replace(" ([Lean](lean/docs/002.md))", "")},

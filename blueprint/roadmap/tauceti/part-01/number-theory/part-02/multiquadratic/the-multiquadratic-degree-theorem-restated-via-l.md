@@ -36,4 +36,4 @@ Formalized in Tau Ceti as [`TauCeti.Multiquadratic.finrank_adjoin_range_of_linea
 ## Sources
 
 - [Tau Ceti documentation: `TauCeti.Multiquadratic.finrank_adjoin_range_of_linearIndependent`](https://taucetiproject.org/docs/TauCeti/NumberTheory/Multiquadratic/SquareClass/Independence.html#TauCeti.Multiquadratic.finrank_adjoin_range_of_linearIndependent)
-- [Source of `TauCeti.Multiquadratic.finrank_adjoin_range_of_linearIndependent` in TauCeti/NumberTheory/Multiquadratic/SquareClass/Independence.lean](https://github.com/TauCetiProject/TauCeti/blob/a6027b1d24fcb935c53bd5b50d11b40991cda418/TauCeti/NumberTheory/Multiquadratic/SquareClass/Independence.lean#L38)
+- [Source of `TauCeti.Multiquadratic.finrank_adjoin_range_of_linearIndependent` in TauCeti/NumberTheory/Multiquadratic/SquareClass/Independence.lean](https://github.com/TauCetiProject/TauCeti/blob/cd41bffcb343151b3e58c89392e206b11fe78c1c/TauCeti/NumberTheory/Multiquadratic/SquareClass/Independence.lean#L38)

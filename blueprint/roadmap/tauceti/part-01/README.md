@@ -2,7 +2,7 @@
 navigation: transparent
 ---
 
-# Algebra to Topology
+# Algebra to Set Theory
 
 - [Algebra](algebra/README.md)
 - [Algebraic Geometry](algebraic-geometry/README.md)
@@ -20,7 +20,7 @@ navigation: transparent
 - [Model Theory](model-theory/README.md)
 - [Number Theory](number-theory/README.md)
 - [Probability](probability/README.md)
+- [Quantum Groups](quantum-groups/README.md)
 - [Representation Theory](representation-theory/README.md)
 - [Ring Theory](ring-theory/README.md)
 - [Set Theory](set-theory/README.md)
-- [Topology](topology/README.md)

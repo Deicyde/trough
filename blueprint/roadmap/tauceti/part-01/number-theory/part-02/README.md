@@ -2,8 +2,10 @@
 navigation: transparent
 ---
 
-# Number fields, ramification… to Transcendental
+# Newton polygons of polynomials… to Multiquadratic
 
+- [Newton polygons of polynomials and power series](newton-polygons-of-polynomials-and-power-series/README.md)
+- [Noncongruence subgroups of the modular group and their modular forms](noncongruence-subgroups-of-the-modular-group-and/README.md)
 - [Number fields, ramification, Frobenius, and the LMFDB invariants](number-fields-ramification-frobenius-and-the-lmf/README.md)
 - [P-adic functional analysis](p-adic-functional-analysis/README.md)
 - [p-adic measures, completed group algebras, and characteristic ideals](p-adic-measures-completed-group-algebras-and-cha/README.md)
@@ -13,6 +15,7 @@ navigation: transparent
 - [Successive minima and Minkowski's theorems](successive-minima-and-minkowskis-theorems/README.md)
 - [Theta series of lattices](theta-series-of-lattices/README.md)
 - [Arithmetic Dirichlet Series](arithmetic-dirichlet-series/README.md)
+- [Chebyshev](chebyshev/README.md)
 - [Class Field Theory: other results](class-field-theory/README.md)
 - [Diophantine Approximation](diophantine-approximation/README.md)
 - [Hecke Ring](hecke-ring/README.md)
@@ -21,6 +24,3 @@ navigation: transparent
 - [Local Field](local-field/README.md)
 - [Modular Forms](modular-forms/README.md)
 - [Multiquadratic](multiquadratic/README.md)
-- [Number Field](number-field/README.md)
-- [Padics](padics/README.md)
-- [Transcendental](transcendental/README.md)

@@ -49,4 +49,4 @@ TauCeti.morley_countableModelCount_le_aleph_one_or_hasPerfectlyMany.{u, v, uι}
 ## Sources
 
 - [Tau Ceti documentation: `TauCeti.morley_countableModelCount`](https://taucetiproject.org/docs/TauCeti/ModelTheory/Counting/Morley.html#TauCeti.morley_countableModelCount)
-- [Source of `TauCeti.morley_countableModelCount` in TauCeti/ModelTheory/Counting/Morley.lean](https://github.com/TauCetiProject/TauCeti/blob/a6027b1d24fcb935c53bd5b50d11b40991cda418/TauCeti/ModelTheory/Counting/Morley.lean#L164)
+- [Source of `TauCeti.morley_countableModelCount` in TauCeti/ModelTheory/Counting/Morley.lean](https://github.com/TauCetiProject/TauCeti/blob/cd41bffcb343151b3e58c89392e206b11fe78c1c/TauCeti/ModelTheory/Counting/Morley.lean#L164)

@@ -1,0 +1,20 @@
+{
+ "schema": "trough-ledger/v1",
+ "library": "CSLib",
+ "repo": "leanprover/cslib",
+ "rev": "86d560b6cbb379bd82512424cbcd2a915a1565e7",
+ "module": "Cslib.Logics.Modal.Unimodal.Lean.SMul",
+ "file": "Cslib/Logics/Modal/Unimodal/Lean/SMul.lean",
+ "public": [
+  {"name": "Relation.ofSMul", "kind": "def", "line": 28},
+  {"name": "Relation.ofSMul_diamond", "kind": "theorem", "line": 61},
+  {"name": "Relation.ofSMul_preserves_iff", "kind": "theorem", "line": 67},
+  {"name": "Relation.ofSMul_preserves_mem", "kind": "theorem", "line": 80},
+  {"name": "Relation.ofSMul_mem_of_mem", "kind": "theorem", "line": 86},
+  {"name": "Cslib.Logic.Modal.Proposition.ofSMul_diamond_denotation", "kind": "theorem", "line": 99},
+  {"name": "Cslib.Logic.Modal.Proposition.ofSMul_diamond_and_equiv", "kind": "theorem", "line": 113}
+ ],
+ "private": [],
+ "missing": [],
+ "unread": "Unnamed instances, the names an `alias ⟨…⟩` command gives, and the names Lean generates for a declaration (constructors, recursors, derived instances) are not read from the source, so they are not listed."
+}

@@ -36,5 +36,5 @@ Formalized in Tau Ceti as [`TauCeti.exists_isMeasurableIsometricFrame`](https://
 ## Sources
 
 - [Tau Ceti documentation: `TauCeti.exists_isMeasurableIsometricFrame`](https://taucetiproject.org/docs/TauCeti/MeasureTheory/Function/LpSection/Measurable.html#TauCeti.exists_isMeasurableIsometricFrame)
-- [Source of `TauCeti.exists_isMeasurableIsometricFrame` in TauCeti/MeasureTheory/Function/LpSection/Measurable.lean](https://github.com/TauCetiProject/TauCeti/blob/a6027b1d24fcb935c53bd5b50d11b40991cda418/TauCeti/MeasureTheory/Function/LpSection/Measurable.lean#L410)
-- [Tau Ceti roadmap status: Smooth principal bundles, connections, and holonomy](https://github.com/TauCetiProject/TauCetiRoadmap/blob/9f7c032adaf1b838e8183d63ff3cfa886d061cb3/TauCetiRoadmap/SmoothBundlesConnections/STATUS.md)
+- [Source of `TauCeti.exists_isMeasurableIsometricFrame` in TauCeti/MeasureTheory/Function/LpSection/Measurable.lean](https://github.com/TauCetiProject/TauCeti/blob/cd41bffcb343151b3e58c89392e206b11fe78c1c/TauCeti/MeasureTheory/Function/LpSection/Measurable.lean#L410)
+- [Tau Ceti roadmap status: Smooth principal bundles, connections, and holonomy](https://github.com/TauCetiProject/TauCetiRoadmap/blob/612845ab80fb9c2b9bee724a156756ee78031591/TauCetiRoadmap/SmoothBundlesConnections/STATUS.md)

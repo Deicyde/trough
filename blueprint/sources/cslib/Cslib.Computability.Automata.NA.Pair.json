@@ -1,0 +1,25 @@
+{
+ "schema": "trough-ledger/v1",
+ "library": "CSLib",
+ "repo": "leanprover/cslib",
+ "rev": "86d560b6cbb379bd82512424cbcd2a915a1565e7",
+ "module": "Cslib.Computability.Automata.NA.Pair",
+ "file": "Cslib/Computability/Automata/NA/Pair.lean",
+ "public": [
+  {"name": "Cslib.LTS.pairLang", "kind": "def", "line": 25},
+  {"name": "Cslib.LTS.mem_pairLang", "kind": "theorem", "line": 29},
+  {"name": "Cslib.LTS.pairLang_regular", "kind": "theorem", "line": 34},
+  {"name": "Cslib.LTS.pairViaLang", "kind": "def", "line": 43},
+  {"name": "Cslib.LTS.mem_pairViaLang", "kind": "theorem", "line": 47},
+  {"name": "Cslib.LTS.pairViaLang_regular", "kind": "theorem", "line": 54},
+  {"name": "Cslib.LTS.pairLang_append", "kind": "theorem", "line": 59},
+  {"name": "Cslib.LTS.pairLang_split", "kind": "theorem", "line": 64},
+  {"name": "Cslib.LTS.pairViaLang_append_pairLang", "kind": "theorem", "line": 71},
+  {"name": "Cslib.LTS.pairLang_append_pairViaLang", "kind": "theorem", "line": 80},
+  {"name": "Cslib.LTS.pairViaLang_split", "kind": "theorem", "line": 86},
+  {"name": "Cslib.Automata.NA.Buchi.language_eq_fin_iSup_hmul_omegaPow", "kind": "theorem", "line": 106}
+ ],
+ "private": [],
+ "missing": [],
+ "unread": "Unnamed instances, the names an `alias ⟨…⟩` command gives, and the names Lean generates for a declaration (constructors, recursors, derived instances) are not read from the source, so they are not listed."
+}

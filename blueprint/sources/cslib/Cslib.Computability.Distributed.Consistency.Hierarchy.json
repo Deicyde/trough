@@ -1,0 +1,29 @@
+{
+ "schema": "trough-ledger/v1",
+ "library": "CSLib",
+ "repo": "leanprover/cslib",
+ "rev": "86d560b6cbb379bd82512424cbcd2a915a1565e7",
+ "module": "Cslib.Computability.Distributed.Consistency.Hierarchy",
+ "file": "Cslib/Computability/Distributed/Consistency/Hierarchy.lean",
+ "public": [
+  {"name": "Cslib.DistributedConsistency.isTrans_ar", "kind": "instance", "line": 37},
+  {"name": "Cslib.DistributedConsistency.so_iff_se_rb", "kind": "lemma", "line": 40},
+  {"name": "Cslib.DistributedConsistency.so_le_rb", "kind": "lemma", "line": 45},
+  {"name": "Cslib.DistributedConsistency.se_rval_eq_none", "kind": "lemma", "line": 49},
+  {"name": "Cslib.DistributedConsistency.singleOrder_vis_ar_rval_ne_none", "kind": "lemma", "line": 62},
+  {"name": "Cslib.DistributedConsistency.singleOrder_realTime_imp_readMyWrites", "kind": "lemma", "line": 67},
+  {"name": "Cslib.DistributedConsistency.linearizability_imp_sequentialConsistency", "kind": "theorem", "line": 74},
+  {"name": "Cslib.DistributedConsistency.readMyWrites_imp_hb_le_trans_vis", "kind": "lemma", "line": 78},
+  {"name": "Cslib.DistributedConsistency.singleOrder_readMyWrites_imp_causalArbitration", "kind": "lemma", "line": 86},
+  {"name": "Cslib.DistributedConsistency.causalVisibility_imp_readMyWrites", "kind": "lemma", "line": 97},
+  {"name": "Cslib.DistributedConsistency.causalVisibility_imp_monotonicReads", "kind": "lemma", "line": 102},
+  {"name": "Cslib.DistributedConsistency.causalVisibility_imp_noCircularCausality", "kind": "lemma", "line": 107},
+  {"name": "Cslib.DistributedConsistency.singleOrder_readMyWrites_imp_causalVisibility", "kind": "lemma", "line": 111},
+  {"name": "Cslib.DistributedConsistency.singleOrder_imp_eventualVisibility", "kind": "lemma", "line": 118},
+  {"name": "Cslib.DistributedConsistency.sequentialConsistency_imp_causalConsistency", "kind": "theorem", "line": 140},
+  {"name": "Cslib.DistributedConsistency.causalConsistency_imp_basicEventualConsistency", "kind": "theorem", "line": 145}
+ ],
+ "private": [],
+ "missing": [],
+ "unread": "Unnamed instances, the names an `alias ⟨…⟩` command gives, and the names Lean generates for a declaration (constructors, recursors, derived instances) are not read from the source, so they are not listed."
+}

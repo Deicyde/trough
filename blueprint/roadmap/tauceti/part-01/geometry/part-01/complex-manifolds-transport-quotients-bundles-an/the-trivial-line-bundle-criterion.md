@@ -49,5 +49,5 @@ Formalized in Tau Ceti as [`ContMDiffVectorBundle.exists_trivialization_baseSet_
 ## Sources
 
 - [Tau Ceti documentation: `ContMDiffVectorBundle.exists_trivialization_baseSet_eq_univ_iff_exists_ne_zero`](https://taucetiproject.org/docs/TauCeti/Geometry/Manifold/VectorBundle/FrameTrivialization.html#ContMDiffVectorBundle.exists_trivialization_baseSet_eq_univ_iff_exists_ne_zero)
-- [Source of `ContMDiffVectorBundle.exists_trivialization_baseSet_eq_univ_iff_exists_ne_zero` in TauCeti/Geometry/Manifold/VectorBundle/FrameTrivialization.lean](https://github.com/TauCetiProject/TauCeti/blob/a6027b1d24fcb935c53bd5b50d11b40991cda418/TauCeti/Geometry/Manifold/VectorBundle/FrameTrivialization.lean#L490)
-- [Tau Ceti roadmap status: Complex manifolds: transport, quotients, bundles, and gluing](https://github.com/TauCetiProject/TauCetiRoadmap/blob/9f7c032adaf1b838e8183d63ff3cfa886d061cb3/TauCetiRoadmap/ComplexManifolds/STATUS.md)
+- [Source of `ContMDiffVectorBundle.exists_trivialization_baseSet_eq_univ_iff_exists_ne_zero` in TauCeti/Geometry/Manifold/VectorBundle/FrameTrivialization.lean](https://github.com/TauCetiProject/TauCeti/blob/cd41bffcb343151b3e58c89392e206b11fe78c1c/TauCeti/Geometry/Manifold/VectorBundle/FrameTrivialization.lean#L490)
+- [Tau Ceti roadmap status: Complex manifolds: transport, quotients, bundles, and gluing](https://github.com/TauCetiProject/TauCetiRoadmap/blob/612845ab80fb9c2b9bee724a156756ee78031591/TauCetiRoadmap/ComplexManifolds/STATUS.md)

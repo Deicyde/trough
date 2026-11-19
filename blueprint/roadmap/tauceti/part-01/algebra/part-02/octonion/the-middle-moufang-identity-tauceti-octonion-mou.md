@@ -26,4 +26,4 @@ Formalized in Tau Ceti as [`TauCeti.Octonion.moufang_middle`](https://taucetipro
 ## Sources
 
 - [Tau Ceti documentation: `TauCeti.Octonion.moufang_middle`](https://taucetiproject.org/docs/TauCeti/Algebra/Octonion/Basic.html#TauCeti.Octonion.moufang_middle)
-- [Source of `TauCeti.Octonion.moufang_middle` in TauCeti/Algebra/Octonion/Basic.lean](https://github.com/TauCetiProject/TauCeti/blob/a6027b1d24fcb935c53bd5b50d11b40991cda418/TauCeti/Algebra/Octonion/Basic.lean#L787)
+- [Source of `TauCeti.Octonion.moufang_middle` in TauCeti/Algebra/Octonion/Basic.lean](https://github.com/TauCetiProject/TauCeti/blob/cd41bffcb343151b3e58c89392e206b11fe78c1c/TauCeti/Algebra/Octonion/Basic.lean#L788)

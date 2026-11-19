@@ -34,5 +34,5 @@ Formalized in Tau Ceti as [`TauCeti.ClassFieldTheory.rayClassField`](https://tau
 ## Sources
 
 - [Tau Ceti documentation: `TauCeti.ClassFieldTheory.rayClassField`](https://taucetiproject.org/docs/TauCeti/NumberTheory/ClassFieldTheory/ClassFields/RayClassField.html#TauCeti.ClassFieldTheory.rayClassField)
-- [Source of `TauCeti.ClassFieldTheory.rayClassField` in TauCeti/NumberTheory/ClassFieldTheory/ClassFields/RayClassField.lean](https://github.com/TauCetiProject/TauCeti/blob/a6027b1d24fcb935c53bd5b50d11b40991cda418/TauCeti/NumberTheory/ClassFieldTheory/ClassFields/RayClassField.lean#L122)
-- [Tau Ceti roadmap status: Class field theory](https://github.com/TauCetiProject/TauCetiRoadmap/blob/9f7c032adaf1b838e8183d63ff3cfa886d061cb3/TauCetiRoadmap/ClassFieldTheory/STATUS.md)
+- [Source of `TauCeti.ClassFieldTheory.rayClassField` in TauCeti/NumberTheory/ClassFieldTheory/ClassFields/RayClassField.lean](https://github.com/TauCetiProject/TauCeti/blob/cd41bffcb343151b3e58c89392e206b11fe78c1c/TauCeti/NumberTheory/ClassFieldTheory/ClassFields/RayClassField.lean#L122)
+- [Tau Ceti roadmap status: Class field theory](https://github.com/TauCetiProject/TauCetiRoadmap/blob/612845ab80fb9c2b9bee724a156756ee78031591/TauCetiRoadmap/ClassFieldTheory/STATUS.md)

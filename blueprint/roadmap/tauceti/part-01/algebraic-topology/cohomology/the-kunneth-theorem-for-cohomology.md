@@ -53,4 +53,4 @@ Formalized in Tau Ceti as [`TopCat.singularCohomologyKunneth_bijective`](https:/
 ## Sources
 
 - [Tau Ceti documentation: `TopCat.singularCohomologyKunneth_bijective`](https://taucetiproject.org/docs/TauCeti/AlgebraicTopology/Cohomology/Kunneth.html#TopCat.singularCohomologyKunneth_bijective)
-- [Source of `TopCat.singularCohomologyKunneth_bijective` in TauCeti/AlgebraicTopology/Cohomology/Kunneth.lean](https://github.com/TauCetiProject/TauCeti/blob/a6027b1d24fcb935c53bd5b50d11b40991cda418/TauCeti/AlgebraicTopology/Cohomology/Kunneth.lean#L352)
+- [Source of `TopCat.singularCohomologyKunneth_bijective` in TauCeti/AlgebraicTopology/Cohomology/Kunneth.lean](https://github.com/TauCetiProject/TauCeti/blob/cd41bffcb343151b3e58c89392e206b11fe78c1c/TauCeti/AlgebraicTopology/Cohomology/Kunneth.lean#L352)

@@ -36,4 +36,4 @@ Formalized in Tau Ceti as [`HeckeRing.GL2.Newform.eq_of_forall_notMem_eigenvalue
 ## Sources
 
 - [Tau Ceti documentation: `HeckeRing.GL2.Newform.eq_of_forall_notMem_eigenvalue_eq`](https://taucetiproject.org/docs/TauCeti/NumberTheory/ModularForms/Newforms/StrongMultiplicityOne/Nebentypus.html#HeckeRing.GL2.Newform.eq_of_forall_notMem_eigenvalue_eq)
-- [Source of `HeckeRing.GL2.Newform.eq_of_forall_notMem_eigenvalue_eq` in TauCeti/NumberTheory/ModularForms/Newforms/StrongMultiplicityOne/Nebentypus.lean](https://github.com/TauCetiProject/TauCeti/blob/a6027b1d24fcb935c53bd5b50d11b40991cda418/TauCeti/NumberTheory/ModularForms/Newforms/StrongMultiplicityOne/Nebentypus.lean#L127)
+- [Source of `HeckeRing.GL2.Newform.eq_of_forall_notMem_eigenvalue_eq` in TauCeti/NumberTheory/ModularForms/Newforms/StrongMultiplicityOne/Nebentypus.lean](https://github.com/TauCetiProject/TauCeti/blob/cd41bffcb343151b3e58c89392e206b11fe78c1c/TauCeti/NumberTheory/ModularForms/Newforms/StrongMultiplicityOne/Nebentypus.lean#L129)

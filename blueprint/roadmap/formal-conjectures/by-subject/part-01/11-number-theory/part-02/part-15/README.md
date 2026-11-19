@@ -6,7 +6,7 @@ navigation: transparent
 
 - [$a(n) = 3a(n-1) + a(n-2) - 3a(n-3)$](../../../../../oeis/part-06/a-n-3a-n-1-a-n-2-3a-n-3.md)
 - [Smallest power with base>1 and exponent $n$ without digit 0](../../../../../oeis/part-06/smallest-power-with-base-1-and-exponent-n-withou.md)
-- [$a(n) = \[x^{2n}\] \left(\frac{1 + x}{1 - x}\right)^n$](../../../../../oeis/part-06/a-n-x-2n-left-frac-1-x-1-x-right-n.md)
+- [$a(n) = [x^{2n}] \left(\frac{1 + x}{1 - x}\right)^n$](../../../../../oeis/part-06/a-n-x-2n-left-frac-1-x-1-x-right-n.md)
 - [Number of zeros in ternary representation of $2^n$](../../../../../oeis/part-06/number-of-zeros-in-ternary-representation-of-2-n.md)
 - [Array read by upward antidiagonals](../../../../../oeis/part-06/array-read-by-upward-antidiagonals.md)
 - [Conjectures associated with A105210](../../../../../oeis/part-06/conjectures-associated-with-a105210.md)

@@ -45,4 +45,4 @@ TauCeti.one_le_natDenominator_pow_mul_house_pow_mul_norm_of_mem_rootSet.{u_1} {K
 ## Sources
 
 - [Tau Ceti documentation: `TauCeti.one_le_natDenominator_pow_mul_house_pow_mul_norm`](https://taucetiproject.org/docs/TauCeti/NumberTheory/Height/Denominator.html#TauCeti.one_le_natDenominator_pow_mul_house_pow_mul_norm)
-- [Source of `TauCeti.one_le_natDenominator_pow_mul_house_pow_mul_norm` in TauCeti/NumberTheory/Height/Denominator.lean](https://github.com/TauCetiProject/TauCeti/blob/a6027b1d24fcb935c53bd5b50d11b40991cda418/TauCeti/NumberTheory/Height/Denominator.lean#L131)
+- [Source of `TauCeti.one_le_natDenominator_pow_mul_house_pow_mul_norm` in TauCeti/NumberTheory/Height/Denominator.lean](https://github.com/TauCetiProject/TauCeti/blob/cd41bffcb343151b3e58c89392e206b11fe78c1c/TauCeti/NumberTheory/Height/Denominator.lean#L131)

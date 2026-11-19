@@ -54,5 +54,5 @@ TauCeti.Probability.MarkovExchangeable.mixedMarkovChain_of_ae_initial_eq.{u_1, u
 ## Sources
 
 - [Tau Ceti documentation: `TauCeti.Probability.markovExchangeable_iff_mixedMarkovChain`](https://taucetiproject.org/docs/TauCeti/Probability/Exchangeability/Recurrence/InitialState.html#TauCeti.Probability.markovExchangeable_iff_mixedMarkovChain)
-- [Source of `TauCeti.Probability.markovExchangeable_iff_mixedMarkovChain` in TauCeti/Probability/Exchangeability/Recurrence/InitialState.lean](https://github.com/TauCetiProject/TauCeti/blob/a6027b1d24fcb935c53bd5b50d11b40991cda418/TauCeti/Probability/Exchangeability/Recurrence/InitialState.lean#L90)
-- [Tau Ceti roadmap status: Exchangeability and de Finetti](https://github.com/TauCetiProject/TauCetiRoadmap/blob/9f7c032adaf1b838e8183d63ff3cfa886d061cb3/Completed/Exchangeability/STATUS.md)
+- [Source of `TauCeti.Probability.markovExchangeable_iff_mixedMarkovChain` in TauCeti/Probability/Exchangeability/Recurrence/InitialState.lean](https://github.com/TauCetiProject/TauCeti/blob/cd41bffcb343151b3e58c89392e206b11fe78c1c/TauCeti/Probability/Exchangeability/Recurrence/InitialState.lean#L90)
+- [Tau Ceti roadmap status: Exchangeability and de Finetti](https://github.com/TauCetiProject/TauCetiRoadmap/blob/612845ab80fb9c2b9bee724a156756ee78031591/Completed/Exchangeability/STATUS.md)

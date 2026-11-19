@@ -32,4 +32,4 @@ Formalized in Tau Ceti as [`Convex.exists_forall_one_le_re_apply`](https://tauce
 ## Sources
 
 - [Tau Ceti documentation: `Convex.exists_forall_one_le_re_apply`](https://taucetiproject.org/docs/TauCeti/Analysis/Normed/Module/Dual/KreinSmulian.html#Convex.exists_forall_one_le_re_apply)
-- [Source of `Convex.exists_forall_one_le_re_apply` in TauCeti/Analysis/Normed/Module/Dual/KreinSmulian.lean](https://github.com/TauCetiProject/TauCeti/blob/a6027b1d24fcb935c53bd5b50d11b40991cda418/TauCeti/Analysis/Normed/Module/Dual/KreinSmulian.lean#L219)
+- [Source of `Convex.exists_forall_one_le_re_apply` in TauCeti/Analysis/Normed/Module/Dual/KreinSmulian.lean](https://github.com/TauCetiProject/TauCeti/blob/cd41bffcb343151b3e58c89392e206b11fe78c1c/TauCeti/Analysis/Normed/Module/Dual/KreinSmulian.lean#L215)

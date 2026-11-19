@@ -32,4 +32,4 @@ Formalized in Tau Ceti as [`TauCeti.AlgebraicGeometry.StructureSheaf.toOpenₗ_b
 ## Sources
 
 - [Tau Ceti documentation: `TauCeti.AlgebraicGeometry.StructureSheaf.toOpenₗ_bijective_of_isWeaklyRegular`](https://taucetiproject.org/docs/TauCeti/AlgebraicGeometry/Modules/Tilde/Hartogs.html#TauCeti.AlgebraicGeometry.StructureSheaf.toOpen%E2%82%97_bijective_of_isWeaklyRegular)
-- [Source of `TauCeti.AlgebraicGeometry.StructureSheaf.toOpenₗ_bijective_of_isWeaklyRegular` in TauCeti/AlgebraicGeometry/Modules/Tilde/Hartogs.lean](https://github.com/TauCetiProject/TauCeti/blob/a6027b1d24fcb935c53bd5b50d11b40991cda418/TauCeti/AlgebraicGeometry/Modules/Tilde/Hartogs.lean#L131)
+- [Source of `TauCeti.AlgebraicGeometry.StructureSheaf.toOpenₗ_bijective_of_isWeaklyRegular` in TauCeti/AlgebraicGeometry/Modules/Tilde/Hartogs.lean](https://github.com/TauCetiProject/TauCeti/blob/cd41bffcb343151b3e58c89392e206b11fe78c1c/TauCeti/AlgebraicGeometry/Modules/Tilde/Hartogs.lean#L133)

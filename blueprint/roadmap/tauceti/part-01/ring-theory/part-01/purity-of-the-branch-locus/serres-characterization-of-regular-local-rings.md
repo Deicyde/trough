@@ -46,5 +46,5 @@ Formalized in Tau Ceti as [`TauCeti.isRegularLocalRing_tfae`](https://taucetipro
 ## Sources
 
 - [Tau Ceti documentation: `TauCeti.isRegularLocalRing_tfae`](https://taucetiproject.org/docs/TauCeti/RingTheory/RegularLocalRing/ProjectiveDimension.html#TauCeti.isRegularLocalRing_tfae)
-- [Source of `TauCeti.isRegularLocalRing_tfae` in TauCeti/RingTheory/RegularLocalRing/ProjectiveDimension.lean](https://github.com/TauCetiProject/TauCeti/blob/a6027b1d24fcb935c53bd5b50d11b40991cda418/TauCeti/RingTheory/RegularLocalRing/ProjectiveDimension.lean#L380)
-- [Tau Ceti roadmap status: Purity of the branch locus](https://github.com/TauCetiProject/TauCetiRoadmap/blob/9f7c032adaf1b838e8183d63ff3cfa886d061cb3/TauCetiRoadmap/PurityOfBranchLocus/STATUS.md)
+- [Source of `TauCeti.isRegularLocalRing_tfae` in TauCeti/RingTheory/RegularLocalRing/ProjectiveDimension.lean](https://github.com/TauCetiProject/TauCeti/blob/cd41bffcb343151b3e58c89392e206b11fe78c1c/TauCeti/RingTheory/RegularLocalRing/ProjectiveDimension.lean#L380)
+- [Tau Ceti roadmap status: Purity of the branch locus](https://github.com/TauCetiProject/TauCetiRoadmap/blob/612845ab80fb9c2b9bee724a156756ee78031591/TauCetiRoadmap/PurityOfBranchLocus/STATUS.md)

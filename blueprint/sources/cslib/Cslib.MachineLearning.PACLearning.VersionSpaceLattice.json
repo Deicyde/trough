@@ -1,0 +1,21 @@
+{
+ "schema": "trough-ledger/v1",
+ "library": "CSLib",
+ "repo": "leanprover/cslib",
+ "rev": "86d560b6cbb379bd82512424cbcd2a915a1565e7",
+ "module": "Cslib.MachineLearning.PACLearning.VersionSpaceLattice",
+ "file": "Cslib/MachineLearning/PACLearning/VersionSpaceLattice.lean",
+ "public": [
+  {"name": "Cslib.MachineLearning.PACLearning.versionSpace_append", "kind": "theorem", "line": 51},
+  {"name": "Cslib.MachineLearning.PACLearning.VersionSpaces", "kind": "def", "line": 72},
+  {"name": "Cslib.MachineLearning.PACLearning.mem_versionSpaces_iff", "kind": "theorem", "line": 76},
+  {"name": "Cslib.MachineLearning.PACLearning.self_mem_versionSpaces", "kind": "theorem", "line": 81},
+  {"name": "Cslib.MachineLearning.PACLearning.inter_mem_versionSpaces", "kind": "theorem", "line": 86},
+  {"name": "Cslib.MachineLearning.PACLearning.versionSpaces_subset_powerset", "kind": "theorem", "line": 95},
+  {"name": "Cslib.MachineLearning.PACLearning.versionSpaces_finite", "kind": "theorem", "line": 101},
+  {"name": "Cslib.MachineLearning.PACLearning.versionSpaces_ncard_le", "kind": "theorem", "line": 107}
+ ],
+ "private": [],
+ "missing": [],
+ "unread": "Unnamed instances, the names an `alias ⟨…⟩` command gives, and the names Lean generates for a declaration (constructors, recursors, derived instances) are not read from the source, so they are not listed."
+}

@@ -48,4 +48,4 @@ Digraph.exists_paths_vertexSeparator_card_eq.{u} {V : Type u} {D : Digraph V} {s
 ## Sources
 
 - [Tau Ceti documentation: `Digraph.forall_reachableAvoiding_iff_exists_paths`](https://taucetiproject.org/docs/TauCeti/Combinatorics/Digraph/Menger.html#Digraph.forall_reachableAvoiding_iff_exists_paths)
-- [Source of `Digraph.forall_reachableAvoiding_iff_exists_paths` in TauCeti/Combinatorics/Digraph/Menger.lean](https://github.com/TauCetiProject/TauCeti/blob/a6027b1d24fcb935c53bd5b50d11b40991cda418/TauCeti/Combinatorics/Digraph/Menger.lean#L78)
+- [Source of `Digraph.forall_reachableAvoiding_iff_exists_paths` in TauCeti/Combinatorics/Digraph/Menger.lean](https://github.com/TauCetiProject/TauCeti/blob/cd41bffcb343151b3e58c89392e206b11fe78c1c/TauCeti/Combinatorics/Digraph/Menger.lean#L78)

@@ -42,4 +42,4 @@ Formalized in Tau Ceti as [`TauCeti.Real.pi_eq_four_mul_agm_mul_agm_div_one_sub_
 ## Sources
 
 - [Tau Ceti documentation: `TauCeti.Real.pi_eq_four_mul_agm_mul_agm_div_one_sub_tsum`](https://taucetiproject.org/docs/TauCeti/Analysis/SpecialFunctions/EllipticIntegral/BrentSalamin.html#TauCeti.Real.pi_eq_four_mul_agm_mul_agm_div_one_sub_tsum)
-- [Source of `TauCeti.Real.pi_eq_four_mul_agm_mul_agm_div_one_sub_tsum` in TauCeti/Analysis/SpecialFunctions/EllipticIntegral/BrentSalamin.lean](https://github.com/TauCetiProject/TauCeti/blob/a6027b1d24fcb935c53bd5b50d11b40991cda418/TauCeti/Analysis/SpecialFunctions/EllipticIntegral/BrentSalamin.lean#L49)
+- [Source of `TauCeti.Real.pi_eq_four_mul_agm_mul_agm_div_one_sub_tsum` in TauCeti/Analysis/SpecialFunctions/EllipticIntegral/BrentSalamin.lean](https://github.com/TauCetiProject/TauCeti/blob/cd41bffcb343151b3e58c89392e206b11fe78c1c/TauCeti/Analysis/SpecialFunctions/EllipticIntegral/BrentSalamin.lean#L49)

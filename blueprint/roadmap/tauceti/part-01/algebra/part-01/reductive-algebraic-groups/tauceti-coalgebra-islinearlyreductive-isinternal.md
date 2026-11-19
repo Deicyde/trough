@@ -28,5 +28,5 @@ Formalized in Tau Ceti as [`TauCeti.Coalgebra.IsLinearlyReductive.isInternal_sim
 ## Sources
 
 - [Tau Ceti documentation: `TauCeti.Coalgebra.IsLinearlyReductive.isInternal_simpleCoefficientSubmodules`](https://taucetiproject.org/docs/TauCeti/Algebra/Coalgebra/Comodule/LinearlyReductive/Decomposition.html#TauCeti.Coalgebra.IsLinearlyReductive.isInternal_simpleCoefficientSubmodules)
-- [Source of `TauCeti.Coalgebra.IsLinearlyReductive.isInternal_simpleCoefficientSubmodules` in TauCeti/Algebra/Coalgebra/Comodule/LinearlyReductive/Decomposition.lean](https://github.com/TauCetiProject/TauCeti/blob/a6027b1d24fcb935c53bd5b50d11b40991cda418/TauCeti/Algebra/Coalgebra/Comodule/LinearlyReductive/Decomposition.lean#L54)
-- [Tau Ceti roadmap status: Reductive algebraic groups](https://github.com/TauCetiProject/TauCetiRoadmap/blob/9f7c032adaf1b838e8183d63ff3cfa886d061cb3/TauCetiRoadmap/ReductiveGroups/STATUS.md)
+- [Source of `TauCeti.Coalgebra.IsLinearlyReductive.isInternal_simpleCoefficientSubmodules` in TauCeti/Algebra/Coalgebra/Comodule/LinearlyReductive/Decomposition.lean](https://github.com/TauCetiProject/TauCeti/blob/cd41bffcb343151b3e58c89392e206b11fe78c1c/TauCeti/Algebra/Coalgebra/Comodule/LinearlyReductive/Decomposition.lean#L54)
+- [Tau Ceti roadmap status: Reductive algebraic groups](https://github.com/TauCetiProject/TauCetiRoadmap/blob/612845ab80fb9c2b9bee724a156756ee78031591/TauCetiRoadmap/ReductiveGroups/STATUS.md)

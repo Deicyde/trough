@@ -47,4 +47,4 @@ Formalized in Tau Ceti as [`TauCeti.finrank_preprojectiveCorner_add_two_add_finr
 ## Sources
 
 - [Tau Ceti documentation: `TauCeti.finrank_preprojectiveCorner_add_two_add_finrank_preprojectiveCorner`](https://taucetiproject.org/docs/TauCeti/RepresentationTheory/Quiver/Preprojective/HilbertSeries/Basic.html#TauCeti.finrank_preprojectiveCorner_add_two_add_finrank_preprojectiveCorner)
-- [Source of `TauCeti.finrank_preprojectiveCorner_add_two_add_finrank_preprojectiveCorner` in TauCeti/RepresentationTheory/Quiver/Preprojective/HilbertSeries/Basic.lean](https://github.com/TauCetiProject/TauCeti/blob/a6027b1d24fcb935c53bd5b50d11b40991cda418/TauCeti/RepresentationTheory/Quiver/Preprojective/HilbertSeries/Basic.lean#L497)
+- [Source of `TauCeti.finrank_preprojectiveCorner_add_two_add_finrank_preprojectiveCorner` in TauCeti/RepresentationTheory/Quiver/Preprojective/HilbertSeries/Basic.lean](https://github.com/TauCetiProject/TauCeti/blob/cd41bffcb343151b3e58c89392e206b11fe78c1c/TauCeti/RepresentationTheory/Quiver/Preprojective/HilbertSeries/Basic.lean#L497)

@@ -194,3 +194,4 @@ lemma BetaAt.abs_close {x : Var} (h : BetaAt i M M') (lc : LC M) :
 ## Sources
 
 - [Cslib/Languages/LambdaCalculus/LocallyNameless/Untyped/BetaAt.lean at 86d560b6](https://github.com/leanprover/cslib/blob/86d560b6cbb379bd82512424cbcd2a915a1565e7/Cslib/Languages/LambdaCalculus/LocallyNameless/Untyped/BetaAt.lean)
+- [Declaration ledger](../../../../../../sources/cslib/Cslib.Languages.LambdaCalculus.LocallyNameless.Untyped.BetaAt.json)

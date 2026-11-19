@@ -57,4 +57,4 @@ LipschitzOnWith.exists_measurable_hausdorffMeasure_inter_preimage_le.{u_1, u_2} 
 ## Sources
 
 - [Tau Ceti documentation: `LipschitzOnWith.lintegral_hausdorffMeasure_inter_preimage_le`](https://taucetiproject.org/docs/TauCeti/MeasureTheory/Function/Coarea/Eilenberg.html#LipschitzOnWith.lintegral_hausdorffMeasure_inter_preimage_le)
-- [Source of `LipschitzOnWith.lintegral_hausdorffMeasure_inter_preimage_le` in TauCeti/MeasureTheory/Function/Coarea/Eilenberg.lean](https://github.com/TauCetiProject/TauCeti/blob/a6027b1d24fcb935c53bd5b50d11b40991cda418/TauCeti/MeasureTheory/Function/Coarea/Eilenberg.lean#L216)
+- [Source of `LipschitzOnWith.lintegral_hausdorffMeasure_inter_preimage_le` in TauCeti/MeasureTheory/Function/Coarea/Eilenberg.lean](https://github.com/TauCetiProject/TauCeti/blob/cd41bffcb343151b3e58c89392e206b11fe78c1c/TauCeti/MeasureTheory/Function/Coarea/Eilenberg.lean#L227)

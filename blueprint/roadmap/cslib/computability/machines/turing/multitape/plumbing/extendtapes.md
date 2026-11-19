@@ -318,3 +318,4 @@ public lemma runFrom_noTapes (tm : MultiTapeTM 0 Symbol State) (cfg : Cfg k Symb
 ## Sources
 
 - [Cslib/Computability/Machines/Turing/MultiTape/Plumbing/ExtendTapes.lean at 86d560b6](https://github.com/leanprover/cslib/blob/86d560b6cbb379bd82512424cbcd2a915a1565e7/Cslib/Computability/Machines/Turing/MultiTape/Plumbing/ExtendTapes.lean)
+- [Declaration ledger](../../../../../../../sources/cslib/Cslib.Computability.Machines.Turing.MultiTape.Plumbing.ExtendTapes.json)

@@ -28,5 +28,5 @@ Formalized in Tau Ceti as [`TauCeti.qInt_two_mul_cos_floor_add_one_neg`](https:/
 ## Sources
 
 - [Tau Ceti documentation: `TauCeti.qInt_two_mul_cos_floor_add_one_neg`](https://taucetiproject.org/docs/TauCeti/QuantumGroups/QuantumInteger/Real.html#TauCeti.qInt_two_mul_cos_floor_add_one_neg)
-- [Source of `TauCeti.qInt_two_mul_cos_floor_add_one_neg` in TauCeti/QuantumGroups/QuantumInteger/Real.lean](https://github.com/TauCetiProject/TauCeti/blob/a6027b1d24fcb935c53bd5b50d11b40991cda418/TauCeti/QuantumGroups/QuantumInteger/Real.lean#L84)
-- [Tau Ceti roadmap status: Subfactors, Jones index and planar standard invariants](https://github.com/TauCetiProject/TauCetiRoadmap/blob/9f7c032adaf1b838e8183d63ff3cfa886d061cb3/TauCetiRoadmap/Subfactors/STATUS.md)
+- [Source of `TauCeti.qInt_two_mul_cos_floor_add_one_neg` in TauCeti/QuantumGroups/QuantumInteger/Real.lean](https://github.com/TauCetiProject/TauCeti/blob/cd41bffcb343151b3e58c89392e206b11fe78c1c/TauCeti/QuantumGroups/QuantumInteger/Real.lean#L84)
+- [Tau Ceti roadmap status: Subfactors, Jones index and planar standard invariants](https://github.com/TauCetiProject/TauCetiRoadmap/blob/612845ab80fb9c2b9bee724a156756ee78031591/TauCetiRoadmap/Subfactors/STATUS.md)

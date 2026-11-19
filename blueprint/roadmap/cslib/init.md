@@ -19,3 +19,4 @@ Its statements use no other CSLib module's declarations.
 ## Sources
 
 - [Cslib/Init.lean at 86d560b6](https://github.com/leanprover/cslib/blob/86d560b6cbb379bd82512424cbcd2a915a1565e7/Cslib/Init.lean)
+- [Declaration ledger](../../sources/cslib/Cslib.Init.json)

@@ -27,5 +27,5 @@ Formalized in Tau Ceti as [`TauCeti.RiemannSurface.divisorSheaf`](https://taucet
 ## Sources
 
 - [Tau Ceti documentation: `TauCeti.RiemannSurface.divisorSheaf`](https://taucetiproject.org/docs/TauCeti/Analysis/Complex/RiemannSurface/Divisor/Sheaf.html#TauCeti.RiemannSurface.divisorSheaf)
-- [Source of `TauCeti.RiemannSurface.divisorSheaf` in TauCeti/Analysis/Complex/RiemannSurface/Divisor/Sheaf.lean](https://github.com/TauCetiProject/TauCeti/blob/a6027b1d24fcb935c53bd5b50d11b40991cda418/TauCeti/Analysis/Complex/RiemannSurface/Divisor/Sheaf.lean#L290)
-- [Tau Ceti roadmap status: Modular forms — Hecke theory, newforms, and L-functions](https://github.com/TauCetiProject/TauCetiRoadmap/blob/9f7c032adaf1b838e8183d63ff3cfa886d061cb3/TauCetiRoadmap/ModularForms/STATUS.md)
+- [Source of `TauCeti.RiemannSurface.divisorSheaf` in TauCeti/Analysis/Complex/RiemannSurface/Divisor/Sheaf.lean](https://github.com/TauCetiProject/TauCeti/blob/cd41bffcb343151b3e58c89392e206b11fe78c1c/TauCeti/Analysis/Complex/RiemannSurface/Divisor/Sheaf.lean#L292)
+- [Tau Ceti roadmap status: Modular forms — Hecke theory, newforms, and L-functions](https://github.com/TauCetiProject/TauCetiRoadmap/blob/612845ab80fb9c2b9bee724a156756ee78031591/TauCetiRoadmap/ModularForms/STATUS.md)

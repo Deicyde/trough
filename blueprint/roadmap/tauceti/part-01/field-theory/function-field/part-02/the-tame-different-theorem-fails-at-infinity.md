@@ -34,4 +34,4 @@ Formalized in Tau Ceti as [`TauCeti.ArtinSchreierMonomial.ramificationIdx_le_dif
 ## Sources
 
 - [Tau Ceti documentation: `TauCeti.ArtinSchreierMonomial.ramificationIdx_le_differentExponent_of_restrict_eq_infty`](https://taucetiproject.org/docs/TauCeti/FieldTheory/FunctionField/ArtinSchreier/Monomial.html#TauCeti.ArtinSchreierMonomial.ramificationIdx_le_differentExponent_of_restrict_eq_infty)
-- [Source of `TauCeti.ArtinSchreierMonomial.ramificationIdx_le_differentExponent_of_restrict_eq_infty` in TauCeti/FieldTheory/FunctionField/ArtinSchreier/Monomial.lean](https://github.com/TauCetiProject/TauCeti/blob/a6027b1d24fcb935c53bd5b50d11b40991cda418/TauCeti/FieldTheory/FunctionField/ArtinSchreier/Monomial.lean#L231)
+- [Source of `TauCeti.ArtinSchreierMonomial.ramificationIdx_le_differentExponent_of_restrict_eq_infty` in TauCeti/FieldTheory/FunctionField/ArtinSchreier/Monomial.lean](https://github.com/TauCetiProject/TauCeti/blob/cd41bffcb343151b3e58c89392e206b11fe78c1c/TauCeti/FieldTheory/FunctionField/ArtinSchreier/Monomial.lean#L231)

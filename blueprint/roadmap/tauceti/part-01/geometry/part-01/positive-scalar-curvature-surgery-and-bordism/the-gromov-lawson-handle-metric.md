@@ -30,8 +30,8 @@ TauCeti.hasPositiveScalarCurvature_torpedoMetric_prodTangentSpace_sphereRoundMet
 ## Proof depends on
 
 - [The Christoffel formula of the first kind](../../part-02/manifold/part-01/the-christoffel-formula-of-the-first-kind.md)
-- [The Gauss formula](../../part-02/manifold/part-01/the-gauss-formula.md)
-- [The Koszul formula](../../part-02/manifold/part-02/the-koszul-formula.md)
+- [The Gauss formula](../../part-02/manifold/part-02/the-gauss-formula.md)
+- [The Koszul formula](../../part-02/manifold/part-03/the-koszul-formula.md)
 
 ## Lean
 
@@ -40,5 +40,5 @@ Formalized in Tau Ceti as [`TauCeti.hasPositiveScalarCurvature_torpedoMetric_pro
 ## Sources
 
 - [Tau Ceti documentation: `TauCeti.hasPositiveScalarCurvature_torpedoMetric_prodTangentSpace_sphereRoundMetricOfRadius`](https://taucetiproject.org/docs/TauCeti/Geometry/Manifold/Riemannian/PositiveScalarCurvature/Handle.html#TauCeti.hasPositiveScalarCurvature_torpedoMetric_prodTangentSpace_sphereRoundMetricOfRadius)
-- [Source of `TauCeti.hasPositiveScalarCurvature_torpedoMetric_prodTangentSpace_sphereRoundMetricOfRadius` in TauCeti/Geometry/Manifold/Riemannian/PositiveScalarCurvature/Handle.lean](https://github.com/TauCetiProject/TauCeti/blob/a6027b1d24fcb935c53bd5b50d11b40991cda418/TauCeti/Geometry/Manifold/Riemannian/PositiveScalarCurvature/Handle.lean#L72)
-- [Tau Ceti roadmap status: Positive scalar curvature, surgery and bordism](https://github.com/TauCetiProject/TauCetiRoadmap/blob/9f7c032adaf1b838e8183d63ff3cfa886d061cb3/TauCetiRoadmap/PositiveScalarCurvature/STATUS.md)
+- [Source of `TauCeti.hasPositiveScalarCurvature_torpedoMetric_prodTangentSpace_sphereRoundMetricOfRadius` in TauCeti/Geometry/Manifold/Riemannian/PositiveScalarCurvature/Handle.lean](https://github.com/TauCetiProject/TauCeti/blob/cd41bffcb343151b3e58c89392e206b11fe78c1c/TauCeti/Geometry/Manifold/Riemannian/PositiveScalarCurvature/Handle.lean#L72)
+- [Tau Ceti roadmap status: Positive scalar curvature, surgery and bordism](https://github.com/TauCetiProject/TauCetiRoadmap/blob/612845ab80fb9c2b9bee724a156756ee78031591/TauCetiRoadmap/PositiveScalarCurvature/STATUS.md)

@@ -30,7 +30,7 @@ Its statement uses no other declaration mapped here.
 
 ## Proof depends on
 
-- [Discrete Grönwall bound under coercivity](../specific-limits/discrete-gronwall-bound-under-coercivity.md)
+- [Discrete Grönwall bound under coercivity](../../part-04/specific-limits/discrete-gronwall-bound-under-coercivity.md)
 
 ## Lean
 
@@ -39,4 +39,4 @@ Formalized in Tau Ceti as [`TauCeti.edist_ceil_sq_le_of_forall_mem_moreauYosidaR
 ## Sources
 
 - [Tau Ceti documentation: `TauCeti.edist_ceil_sq_le_of_forall_mem_moreauYosidaResolvent`](https://taucetiproject.org/docs/TauCeti/Analysis/GradientFlow/MinimizingMovement.html#TauCeti.edist_ceil_sq_le_of_forall_mem_moreauYosidaResolvent)
-- [Source of `TauCeti.edist_ceil_sq_le_of_forall_mem_moreauYosidaResolvent` in TauCeti/Analysis/GradientFlow/MinimizingMovement.lean](https://github.com/TauCetiProject/TauCeti/blob/a6027b1d24fcb935c53bd5b50d11b40991cda418/TauCeti/Analysis/GradientFlow/MinimizingMovement.lean#L270)
+- [Source of `TauCeti.edist_ceil_sq_le_of_forall_mem_moreauYosidaResolvent` in TauCeti/Analysis/GradientFlow/MinimizingMovement.lean](https://github.com/TauCetiProject/TauCeti/blob/cd41bffcb343151b3e58c89392e206b11fe78c1c/TauCeti/Analysis/GradientFlow/MinimizingMovement.lean#L264)

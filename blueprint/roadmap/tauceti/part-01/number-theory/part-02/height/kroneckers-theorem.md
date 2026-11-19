@@ -45,4 +45,4 @@ TauCeti.absoluteProjectiveTupleHeight_eq_one_iff.{u_1, u_2} {F : Type u_1} [Fiel
 ## Sources
 
 - [Tau Ceti documentation: `TauCeti.house_eq_one_iff`](https://taucetiproject.org/docs/TauCeti/NumberTheory/Height/House.html#TauCeti.house_eq_one_iff)
-- [Source of `TauCeti.house_eq_one_iff` in TauCeti/NumberTheory/Height/House.lean](https://github.com/TauCetiProject/TauCeti/blob/a6027b1d24fcb935c53bd5b50d11b40991cda418/TauCeti/NumberTheory/Height/House.lean#L294)
+- [Source of `TauCeti.house_eq_one_iff` in TauCeti/NumberTheory/Height/House.lean](https://github.com/TauCetiProject/TauCeti/blob/cd41bffcb343151b3e58c89392e206b11fe78c1c/TauCeti/NumberTheory/Height/House.lean#L294)

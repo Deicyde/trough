@@ -1,7 +1,7 @@
 ---
 declaration: theorem
 origin: cited
-lean: HomologicalComplex.isIso_homologyKunneth_of_isSplitMono_of_isSplitEpi, HomologicalComplex.isIso_homologyKunneth_of_d_eq_zero_of_flat, HomologicalComplex.isIso_homologyKunneth_of_d_eq_zero_of_flat_right
+lean: HomologicalComplex.isIso_homologyKunneth_of_isSplitMono_of_isSplitEpi, HomologicalComplex.isIso_homologyKunneth_of_d_eq_zero_of_flat, HomologicalComplex.isIso_homologyKunneth_of_projective, HomologicalComplex.isIso_homologyKunneth_of_d_eq_zero_of_flat_right, HomologicalComplex.isIso_homologyKunneth_of_projective_right
 statement: formalized
 proof: formalized
 ---
@@ -46,6 +46,15 @@ HomologicalComplex.isIso_homologyKunneth_of_d_eq_zero_of_flat.{u} {R : Type u} [
   CategoryTheory.IsIso (HomologicalComplex.homologyKunneth K L n)
 ```
 
+**The Künneth theorem when one factor is projective with projective homology.** Formalized in Tau Ceti as [`HomologicalComplex.isIso_homologyKunneth_of_projective`](https://taucetiproject.org/docs/TauCeti/Algebra/Homology/Monoidal/Homology/Kunneth/Projective.html#HomologicalComplex.isIso_homologyKunneth_of_projective).
+
+```lean
+HomologicalComplex.isIso_homologyKunneth_of_projective.{u} {R : Type u} [CommRing R]
+  (K L : ChainComplex (ModuleCat R) ℕ) [∀ (p : ℕ), Module.Projective R ↑(K.X p)]
+  [∀ (p : ℕ), Module.Projective R ↑(HomologicalComplex.homology K p)] (n : ℕ) :
+  CategoryTheory.IsIso (HomologicalComplex.homologyKunneth K L n)
+```
+
 **The Künneth theorem when the second factor has zero differentials and flat terms.** Formalized in Tau Ceti as [`HomologicalComplex.isIso_homologyKunneth_of_d_eq_zero_of_flat_right`](https://taucetiproject.org/docs/TauCeti/Algebra/Homology/Monoidal/Homology/Braiding.html#HomologicalComplex.isIso_homologyKunneth_of_d_eq_zero_of_flat_right).
 
 ```lean
@@ -55,7 +64,16 @@ HomologicalComplex.isIso_homologyKunneth_of_d_eq_zero_of_flat_right.{u} {R : Typ
   CategoryTheory.IsIso (HomologicalComplex.homologyKunneth K L n)
 ```
 
+**The Künneth theorem when the second factor is projective with projective homology.** Formalized in Tau Ceti as [`HomologicalComplex.isIso_homologyKunneth_of_projective_right`](https://taucetiproject.org/docs/TauCeti/Algebra/Homology/Monoidal/Homology/Kunneth/Projective.html#HomologicalComplex.isIso_homologyKunneth_of_projective_right).
+
+```lean
+HomologicalComplex.isIso_homologyKunneth_of_projective_right.{u} {R : Type u} [CommRing R]
+  (K L : ChainComplex (ModuleCat R) ℕ) [∀ (p : ℕ), Module.Projective R ↑(K.X p)]
+  [∀ (p : ℕ), Module.Projective R ↑(HomologicalComplex.homology K p)] (n : ℕ) :
+  CategoryTheory.IsIso (HomologicalComplex.homologyKunneth L K n)
+```
+
 ## Sources
 
 - [Tau Ceti documentation: `HomologicalComplex.isIso_homologyKunneth_of_isSplitMono_of_isSplitEpi`](https://taucetiproject.org/docs/TauCeti/Algebra/Homology/Monoidal/Homology/Kunneth/Basic.html#HomologicalComplex.isIso_homologyKunneth_of_isSplitMono_of_isSplitEpi)
-- [Source of `HomologicalComplex.isIso_homologyKunneth_of_isSplitMono_of_isSplitEpi` in TauCeti/Algebra/Homology/Monoidal/Homology/Kunneth/Basic.lean](https://github.com/TauCetiProject/TauCeti/blob/a6027b1d24fcb935c53bd5b50d11b40991cda418/TauCeti/Algebra/Homology/Monoidal/Homology/Kunneth/Basic.lean#L269)
+- [Source of `HomologicalComplex.isIso_homologyKunneth_of_isSplitMono_of_isSplitEpi` in TauCeti/Algebra/Homology/Monoidal/Homology/Kunneth/Basic.lean](https://github.com/TauCetiProject/TauCeti/blob/cd41bffcb343151b3e58c89392e206b11fe78c1c/TauCeti/Algebra/Homology/Monoidal/Homology/Kunneth/Basic.lean#L269)

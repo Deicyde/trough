@@ -29,4 +29,4 @@ Formalized in Tau Ceti as [`Nat.exists_mem_Icc_eq_of_le_succ`](https://taucetipr
 ## Sources
 
 - [Tau Ceti documentation: `Nat.exists_mem_Icc_eq_of_le_succ`](https://taucetiproject.org/docs/TauCeti/Order/SuccPred/IntermediateValue.html#Nat.exists_mem_Icc_eq_of_le_succ)
-- [Source of `Nat.exists_mem_Icc_eq_of_le_succ` in TauCeti/Order/SuccPred/IntermediateValue.lean](https://github.com/TauCetiProject/TauCeti/blob/a6027b1d24fcb935c53bd5b50d11b40991cda418/TauCeti/Order/SuccPred/IntermediateValue.lean#L26)
+- [Source of `Nat.exists_mem_Icc_eq_of_le_succ` in TauCeti/Order/SuccPred/IntermediateValue.lean](https://github.com/TauCetiProject/TauCeti/blob/cd41bffcb343151b3e58c89392e206b11fe78c1c/TauCeti/Order/SuccPred/IntermediateValue.lean#L26)

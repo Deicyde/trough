@@ -32,4 +32,4 @@ Formalized in Tau Ceti as [`Submodule.exists_pos_dotProduct_eq_zero_iff`](https:
 ## Sources
 
 - [Tau Ceti documentation: `Submodule.exists_pos_dotProduct_eq_zero_iff`](https://taucetiproject.org/docs/TauCeti/Geometry/Convex/Cone/Alternative.html#Submodule.exists_pos_dotProduct_eq_zero_iff)
-- [Source of `Submodule.exists_pos_dotProduct_eq_zero_iff` in TauCeti/Geometry/Convex/Cone/Alternative.lean](https://github.com/TauCetiProject/TauCeti/blob/a6027b1d24fcb935c53bd5b50d11b40991cda418/TauCeti/Geometry/Convex/Cone/Alternative.lean#L184)
+- [Source of `Submodule.exists_pos_dotProduct_eq_zero_iff` in TauCeti/Geometry/Convex/Cone/Alternative.lean](https://github.com/TauCetiProject/TauCeti/blob/cd41bffcb343151b3e58c89392e206b11fe78c1c/TauCeti/Geometry/Convex/Cone/Alternative.lean#L184)

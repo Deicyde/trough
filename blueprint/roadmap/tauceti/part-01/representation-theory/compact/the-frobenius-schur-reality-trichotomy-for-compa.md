@@ -38,4 +38,4 @@ Formalized in Tau Ceti as [`ContRepresentation.frobeniusSchurIndicator_trichotom
 ## Sources
 
 - [Tau Ceti documentation: `ContRepresentation.frobeniusSchurIndicator_trichotomy`](https://taucetiproject.org/docs/TauCeti/RepresentationTheory/Compact/FrobeniusSchur/Trichotomy.html#ContRepresentation.frobeniusSchurIndicator_trichotomy)
-- [Source of `ContRepresentation.frobeniusSchurIndicator_trichotomy` in TauCeti/RepresentationTheory/Compact/FrobeniusSchur/Trichotomy.lean](https://github.com/TauCetiProject/TauCeti/blob/a6027b1d24fcb935c53bd5b50d11b40991cda418/TauCeti/RepresentationTheory/Compact/FrobeniusSchur/Trichotomy.lean#L99)
+- [Source of `ContRepresentation.frobeniusSchurIndicator_trichotomy` in TauCeti/RepresentationTheory/Compact/FrobeniusSchur/Trichotomy.lean](https://github.com/TauCetiProject/TauCeti/blob/cd41bffcb343151b3e58c89392e206b11fe78c1c/TauCeti/RepresentationTheory/Compact/FrobeniusSchur/Trichotomy.lean#L98)

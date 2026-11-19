@@ -228,6 +228,10 @@ def test_a_module_that_declares_nothing_public_is_listed_on_its_folders_page(tmp
     root = pages["README.md"]
     assert f"so it has no article: [`Batteries.Linter.UnreachableTactic`]({blob}/Batteries/Linter/UnreachableTactic.lean)." in root
     assert "unreachableTacticLinter" not in links and len(links) == 3
+    # Each article, a module catalog, links its declaration ledger; a listed module has no article and no ledger.
+    assert sorted(result.files) == ["sources/batteries/Batteries.Data.Char.Basic.json",
+                                    "sources/batteries/Batteries.Tactic.Basic.json"]
+    assert "- [Declaration ledger](../../../../sources/batteries/Batteries.Data.Char.Basic.json)" in pages["data/char/basic.md"]
 
 
 def test_an_article_shows_its_authors_its_docstrings_and_a_block_per_public_declaration(tmp_path):

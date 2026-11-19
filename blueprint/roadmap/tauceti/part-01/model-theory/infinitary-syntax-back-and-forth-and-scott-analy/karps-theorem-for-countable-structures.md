@@ -35,5 +35,5 @@ Formalized in Tau Ceti as [`TauCeti.countable_infEquivAt_nat_iff_iso`](https://t
 ## Sources
 
 - [Tau Ceti documentation: `TauCeti.countable_infEquivAt_nat_iff_iso`](https://taucetiproject.org/docs/TauCeti/ModelTheory/BackAndForth/Karp.html#TauCeti.countable_infEquivAt_nat_iff_iso)
-- [Source of `TauCeti.countable_infEquivAt_nat_iff_iso` in TauCeti/ModelTheory/BackAndForth/Karp.lean](https://github.com/TauCetiProject/TauCeti/blob/a6027b1d24fcb935c53bd5b50d11b40991cda418/TauCeti/ModelTheory/BackAndForth/Karp.lean#L363)
-- [Tau Ceti roadmap status: Infinitary syntax, back-and-forth, and Scott analysis](https://github.com/TauCetiProject/TauCetiRoadmap/blob/9f7c032adaf1b838e8183d63ff3cfa886d061cb3/Completed/InfinitaryLogic/STATUS.md)
+- [Source of `TauCeti.countable_infEquivAt_nat_iff_iso` in TauCeti/ModelTheory/BackAndForth/Karp.lean](https://github.com/TauCetiProject/TauCeti/blob/cd41bffcb343151b3e58c89392e206b11fe78c1c/TauCeti/ModelTheory/BackAndForth/Karp.lean#L394)
+- [Tau Ceti roadmap status: Infinitary syntax, back-and-forth, and Scott analysis](https://github.com/TauCetiProject/TauCetiRoadmap/blob/612845ab80fb9c2b9bee724a156756ee78031591/Completed/InfinitaryLogic/STATUS.md)

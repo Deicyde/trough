@@ -28,11 +28,11 @@ TauCeti.exists_isCAD_orderAt_eq_of_isMcCallumWellOriented {n : ℕ}
 
 ## Proof depends on
 
-- [The analytic implicit root theorem](../../../analysis/part-02/analytic/the-analytic-implicit-root-theorem.md)
-- [Hadamard's lemma along a graph](../../../analysis/part-02/analytic/hadamards-lemma-along-a-graph.md)
-- [Identity theorem on the real points](../../../analysis/part-02/analytic/identity-theorem-on-the-real-points.md)
+- [The analytic implicit root theorem](../../../analysis/part-03/analytic/the-analytic-implicit-root-theorem.md)
+- [Hadamard's lemma along a graph](../../../analysis/part-03/analytic/hadamards-lemma-along-a-graph.md)
+- [Identity theorem on the real points](../../../analysis/part-03/analytic/identity-theorem-on-the-real-points.md)
 - [The isomorphism `π₁(S¹) ≃* ℤ` is the degree](../../../algebraic-topology/universal-covers/the-isomorphism-1-s1-z-is-the-degree.md)
-- [The Riemann extension theorem across a coordinate hyperplane](../../../analysis/part-02/complex/part-03/the-riemann-extension-theorem-across-a-coordinat.md)
+- [The Riemann extension theorem across a coordinate hyperplane](../../../analysis/part-03/complex/part-04/the-riemann-extension-theorem-across-a-coordinat.md)
 
 ## Lean
 
@@ -41,5 +41,5 @@ Formalized in Tau Ceti as [`TauCeti.exists_isCAD_orderAt_eq_of_isMcCallumWellOri
 ## Sources
 
 - [Tau Ceti documentation: `TauCeti.exists_isCAD_orderAt_eq_of_isMcCallumWellOriented`](https://taucetiproject.org/docs/TauCeti/Geometry/RealAlgebraic/CAD/McCallum/Basic.html#TauCeti.exists_isCAD_orderAt_eq_of_isMcCallumWellOriented)
-- [Source of `TauCeti.exists_isCAD_orderAt_eq_of_isMcCallumWellOriented` in TauCeti/Geometry/RealAlgebraic/CAD/McCallum/Basic.lean](https://github.com/TauCetiProject/TauCeti/blob/a6027b1d24fcb935c53bd5b50d11b40991cda418/TauCeti/Geometry/RealAlgebraic/CAD/McCallum/Basic.lean#L379)
-- [Tau Ceti roadmap status: Real algebraic geometry: sign determination and cylindrical decomposition](https://github.com/TauCetiProject/TauCetiRoadmap/blob/9f7c032adaf1b838e8183d63ff3cfa886d061cb3/Completed/RealAlgebraicGeometry/STATUS.md)
+- [Source of `TauCeti.exists_isCAD_orderAt_eq_of_isMcCallumWellOriented` in TauCeti/Geometry/RealAlgebraic/CAD/McCallum/Basic.lean](https://github.com/TauCetiProject/TauCeti/blob/cd41bffcb343151b3e58c89392e206b11fe78c1c/TauCeti/Geometry/RealAlgebraic/CAD/McCallum/Basic.lean#L379)
+- [Tau Ceti roadmap status: Real algebraic geometry: sign determination and cylindrical decomposition](https://github.com/TauCetiProject/TauCetiRoadmap/blob/612845ab80fb9c2b9bee724a156756ee78031591/Completed/RealAlgebraicGeometry/STATUS.md)

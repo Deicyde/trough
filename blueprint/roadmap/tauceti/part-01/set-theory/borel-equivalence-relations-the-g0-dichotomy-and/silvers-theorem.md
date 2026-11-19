@@ -54,4 +54,4 @@ Setoid.silver_dichotomy_standardBorel.{u_1} {X : Type u_1} [MeasurableSpace X]
 ## Sources
 
 - [Tau Ceti documentation: `Setoid.silver_dichotomy`](https://taucetiproject.org/docs/TauCeti/SetTheory/Descriptive/Silver.html#Setoid.silver_dichotomy)
-- [Source of `Setoid.silver_dichotomy` in TauCeti/SetTheory/Descriptive/Silver.lean](https://github.com/TauCetiProject/TauCeti/blob/a6027b1d24fcb935c53bd5b50d11b40991cda418/TauCeti/SetTheory/Descriptive/Silver.lean#L127)
+- [Source of `Setoid.silver_dichotomy` in TauCeti/SetTheory/Descriptive/Silver.lean](https://github.com/TauCetiProject/TauCeti/blob/cd41bffcb343151b3e58c89392e206b11fe78c1c/TauCeti/SetTheory/Descriptive/Silver.lean#L127)

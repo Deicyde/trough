@@ -44,7 +44,7 @@ Its statement uses no other declaration mapped here.
 
 ## Proof depends on
 
-- [Rademacher's theorem for locally Lipschitz functions](../../../part-02/calculus/part-02/rademachers-theorem-for-locally-lipschitz-functi.md)
+- [Rademacher's theorem for locally Lipschitz functions](../../calculus/part-02/rademachers-theorem-for-locally-lipschitz-functi.md)
 - [Weyl's lemma for continuous functions](weyls-lemma-for-continuous-functions.md)
 
 ## Lean
@@ -73,4 +73,4 @@ TauCeti.WeaklyHarmonicOn.sub_comp_normalReflection.{u_1} {E : Type u_1} [NormedA
 ## Sources
 
 - [Tau Ceti documentation: `TauCeti.WeaklyHarmonicOn.exists_harmonicOnNhd_ae_eq_of_inf_normalHalfSpace`](https://taucetiproject.org/docs/TauCeti/Analysis/InnerProductSpace/Harmonic/Reflection.html#TauCeti.WeaklyHarmonicOn.exists_harmonicOnNhd_ae_eq_of_inf_normalHalfSpace)
-- [Source of `TauCeti.WeaklyHarmonicOn.exists_harmonicOnNhd_ae_eq_of_inf_normalHalfSpace` in TauCeti/Analysis/InnerProductSpace/Harmonic/Reflection.lean](https://github.com/TauCetiProject/TauCeti/blob/a6027b1d24fcb935c53bd5b50d11b40991cda418/TauCeti/Analysis/InnerProductSpace/Harmonic/Reflection.lean#L227)
+- [Source of `TauCeti.WeaklyHarmonicOn.exists_harmonicOnNhd_ae_eq_of_inf_normalHalfSpace` in TauCeti/Analysis/InnerProductSpace/Harmonic/Reflection.lean](https://github.com/TauCetiProject/TauCeti/blob/cd41bffcb343151b3e58c89392e206b11fe78c1c/TauCeti/Analysis/InnerProductSpace/Harmonic/Reflection.lean#L227)

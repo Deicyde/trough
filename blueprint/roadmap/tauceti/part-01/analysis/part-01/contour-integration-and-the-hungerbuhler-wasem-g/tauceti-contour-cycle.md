@@ -15,7 +15,7 @@ TauCeti.Contour.Cycle : Type
 
 ## Depends on
 
-Its statement uses no other declaration mapped here.
+- [Piecewise `C¹` on the interval between `a` and `b`](piecewise-c1-on-the-interval-between-a-and-b.md)
 
 ## Lean
 
@@ -24,5 +24,5 @@ Formalized in Tau Ceti as [`TauCeti.Contour.Cycle`](https://taucetiproject.org/d
 ## Sources
 
 - [Tau Ceti documentation: `TauCeti.Contour.Cycle`](https://taucetiproject.org/docs/TauCeti/Analysis/Contour/Cycle/Basic.html#TauCeti.Contour.Cycle)
-- [Source of `TauCeti.Contour.Cycle` in TauCeti/Analysis/Contour/Cycle/Basic.lean](https://github.com/TauCetiProject/TauCeti/blob/a6027b1d24fcb935c53bd5b50d11b40991cda418/TauCeti/Analysis/Contour/Cycle/Basic.lean#L193)
-- [Tau Ceti roadmap status: Contour integration and the Hungerbühler–Wasem generalized residue theorem](https://github.com/TauCetiProject/TauCetiRoadmap/blob/9f7c032adaf1b838e8183d63ff3cfa886d061cb3/Completed/ContourIntegration/STATUS.md)
+- [Source of `TauCeti.Contour.Cycle` in TauCeti/Analysis/Contour/Cycle/Basic.lean](https://github.com/TauCetiProject/TauCeti/blob/cd41bffcb343151b3e58c89392e206b11fe78c1c/TauCeti/Analysis/Contour/Cycle/Basic.lean#L193)
+- [Tau Ceti roadmap status: Contour integration and the Hungerbühler–Wasem generalized residue theorem](https://github.com/TauCetiProject/TauCetiRoadmap/blob/612845ab80fb9c2b9bee724a156756ee78031591/Completed/ContourIntegration/STATUS.md)

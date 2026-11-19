@@ -46,4 +46,4 @@ TauCeti.IsIwanagaGorenstein.essSurj_toSingularityCategory.{w, u} {A : Type u} [R
 ## Sources
 
 - [Tau Ceti documentation: `TauCeti.IsIwanagaGorenstein.isEquivalence_toSingularityCategory`](https://taucetiproject.org/docs/TauCeti/Algebra/Homology/GorensteinProjective/Buchweitz.html#TauCeti.IsIwanagaGorenstein.isEquivalence_toSingularityCategory)
-- [Source of `TauCeti.IsIwanagaGorenstein.isEquivalence_toSingularityCategory` in TauCeti/Algebra/Homology/GorensteinProjective/Buchweitz.lean](https://github.com/TauCetiProject/TauCeti/blob/a6027b1d24fcb935c53bd5b50d11b40991cda418/TauCeti/Algebra/Homology/GorensteinProjective/Buchweitz.lean#L70)
+- [Source of `TauCeti.IsIwanagaGorenstein.isEquivalence_toSingularityCategory` in TauCeti/Algebra/Homology/GorensteinProjective/Buchweitz.lean](https://github.com/TauCetiProject/TauCeti/blob/cd41bffcb343151b3e58c89392e206b11fe78c1c/TauCeti/Algebra/Homology/GorensteinProjective/Buchweitz.lean#L73)

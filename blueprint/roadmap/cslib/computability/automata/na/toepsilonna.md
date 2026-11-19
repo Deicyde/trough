@@ -45,3 +45,4 @@ theorem toEpsilonNAFinAcc_language_eq {a : NA.FinAcc State Symbol} :
 ## Sources
 
 - [Cslib/Computability/Automata/NA/ToEpsilonNA.lean at 86d560b6](https://github.com/leanprover/cslib/blob/86d560b6cbb379bd82512424cbcd2a915a1565e7/Cslib/Computability/Automata/NA/ToEpsilonNA.lean)
+- [Declaration ledger](../../../../../sources/cslib/Cslib.Computability.Automata.NA.ToEpsilonNA.json)

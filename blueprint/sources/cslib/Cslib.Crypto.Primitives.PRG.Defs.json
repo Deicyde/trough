@@ -1,0 +1,22 @@
+{
+ "schema": "trough-ledger/v1",
+ "library": "CSLib",
+ "repo": "leanprover/cslib",
+ "rev": "86d560b6cbb379bd82512424cbcd2a915a1565e7",
+ "module": "Cslib.Crypto.Primitives.PRG.Defs",
+ "file": "Cslib/Crypto/Primitives/PRG/Defs.lean",
+ "public": [
+  {"name": "Cslib.Crypto.PRG.Generator", "kind": "structure", "line": 38},
+  {"name": "Cslib.Crypto.PRG.Adversary", "kind": "abbrev", "line": 43},
+  {"name": "Cslib.Crypto.PRG.Generator.coe_mk", "kind": "theorem", "line": 54},
+  {"name": "Cslib.Crypto.PRG.Generator.IsExpanding", "kind": "def", "line": 57},
+  {"name": "Cslib.Crypto.PRG.Generator.outputDist", "kind": "def", "line": 63},
+  {"name": "Cslib.Crypto.PRG.Generator.realExperiment", "kind": "def", "line": 67},
+  {"name": "Cslib.Crypto.PRG.Generator.idealExperiment", "kind": "def", "line": 72},
+  {"name": "Cslib.Crypto.PRG.Generator.advantage", "kind": "def", "line": 77},
+  {"name": "Cslib.Crypto.PRG.Generator.Secure", "kind": "def", "line": 83}
+ ],
+ "private": [],
+ "missing": [],
+ "unread": "Unnamed instances, the names an `alias ⟨…⟩` command gives, and the names Lean generates for a declaration (constructors, recursors, derived instances) are not read from the source, so they are not listed."
+}

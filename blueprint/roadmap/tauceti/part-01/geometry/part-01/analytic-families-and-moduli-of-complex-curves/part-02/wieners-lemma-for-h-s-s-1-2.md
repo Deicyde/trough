@@ -24,7 +24,7 @@ Its statement uses no other declaration mapped here.
 ## Proof depends on
 
 - [Hölder's inequality for unconditional sums in `ℝ≥0∞`](../../../../analysis/part-03/mean-inequalities/holders-inequality-for-unconditional-sums-in-r0.md)
-- [Young's inequality](../../../../analysis/part-03/normed/part-02/youngs-inequality.md)
+- [Young's inequality](../../../../analysis/part-03/normed/part-03/youngs-inequality.md)
 
 ## Lean
 
@@ -44,4 +44,4 @@ TauCeti.CircleSobolev.isUnit_iff_forall_isUnit.{u_1} {s : ℝ} {A : Type u_1} [N
 ## Sources
 
 - [Tau Ceti documentation: `TauCeti.CircleSobolev.isUnit_iff_forall_ne_zero`](https://taucetiproject.org/docs/TauCeti/Analysis/Sobolev/Circle/Spectrum.html#TauCeti.CircleSobolev.isUnit_iff_forall_ne_zero)
-- [Source of `TauCeti.CircleSobolev.isUnit_iff_forall_ne_zero` in TauCeti/Analysis/Sobolev/Circle/Spectrum.lean](https://github.com/TauCetiProject/TauCeti/blob/a6027b1d24fcb935c53bd5b50d11b40991cda418/TauCeti/Analysis/Sobolev/Circle/Spectrum.lean#L305)
+- [Source of `TauCeti.CircleSobolev.isUnit_iff_forall_ne_zero` in TauCeti/Analysis/Sobolev/Circle/Spectrum.lean](https://github.com/TauCetiProject/TauCeti/blob/cd41bffcb343151b3e58c89392e206b11fe78c1c/TauCeti/Analysis/Sobolev/Circle/Spectrum.lean#L305)

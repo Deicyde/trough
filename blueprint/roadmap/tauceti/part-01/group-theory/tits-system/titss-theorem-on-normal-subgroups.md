@@ -48,4 +48,4 @@ TauCeti.TitsSystem.le_normalCore_subgroupOf_or_eq_top_of_normal.{u} {G : Type u}
 ## Sources
 
 - [Tau Ceti documentation: `TauCeti.TitsSystem.exists_standardParabolic_eq_sup_of_normal`](https://taucetiproject.org/docs/TauCeti/GroupTheory/TitsSystem/NormalSubgroup.html#TauCeti.TitsSystem.exists_standardParabolic_eq_sup_of_normal)
-- [Source of `TauCeti.TitsSystem.exists_standardParabolic_eq_sup_of_normal` in TauCeti/GroupTheory/TitsSystem/NormalSubgroup.lean](https://github.com/TauCetiProject/TauCeti/blob/a6027b1d24fcb935c53bd5b50d11b40991cda418/TauCeti/GroupTheory/TitsSystem/NormalSubgroup.lean#L98)
+- [Source of `TauCeti.TitsSystem.exists_standardParabolic_eq_sup_of_normal` in TauCeti/GroupTheory/TitsSystem/NormalSubgroup.lean](https://github.com/TauCetiProject/TauCeti/blob/cd41bffcb343151b3e58c89392e206b11fe78c1c/TauCeti/GroupTheory/TitsSystem/NormalSubgroup.lean#L98)

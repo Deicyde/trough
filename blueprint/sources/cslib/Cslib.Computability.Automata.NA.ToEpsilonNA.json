@@ -1,0 +1,16 @@
+{
+ "schema": "trough-ledger/v1",
+ "library": "CSLib",
+ "repo": "leanprover/cslib",
+ "rev": "86d560b6cbb379bd82512424cbcd2a915a1565e7",
+ "module": "Cslib.Computability.Automata.NA.ToEpsilonNA",
+ "file": "Cslib/Computability/Automata/NA/ToEpsilonNA.lean",
+ "public": [
+  {"name": "Cslib.Automata.NA.toEpsilonNA", "kind": "def", "line": 25},
+  {"name": "Cslib.Automata.NA.FinAcc.toEpsilonNAFinAcc", "kind": "def", "line": 32},
+  {"name": "Cslib.Automata.NA.FinAcc.toEpsilonNAFinAcc_language_eq", "kind": "theorem", "line": 38}
+ ],
+ "private": [],
+ "missing": [],
+ "unread": "Unnamed instances, the names an `alias ⟨…⟩` command gives, and the names Lean generates for a declaration (constructors, recursors, derived instances) are not read from the source, so they are not listed."
+}

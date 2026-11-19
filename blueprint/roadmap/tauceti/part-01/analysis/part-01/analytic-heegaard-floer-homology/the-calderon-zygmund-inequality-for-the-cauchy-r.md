@@ -34,7 +34,7 @@ Its statement uses no other declaration mapped here.
 
 ## Proof depends on
 
-- [The Mihlin–Hörmander multiplier theorem on `Lᵖ`](../partial-differential-equations/the-mihlin-hormander-multiplier-theorem-on-lp.md)
+- [The Mihlin–Hörmander multiplier theorem on `Lᵖ`](../../part-02/partial-differential-equations/the-mihlin-hormander-multiplier-theorem-on-lp.md)
 
 ## Lean
 
@@ -61,6 +61,6 @@ TauCeti.exists_eLpNorm_fderiv_le_eLpNorm_conjWirtingerDeriv_of_hasCompactSupport
 ## Sources
 
 - [Tau Ceti documentation: `TauCeti.exists_eLpNorm_fderiv_le_eLpNorm_conjWirtingerDeriv`](https://taucetiproject.org/docs/TauCeti/Analysis/Complex/Wirtinger/CalderonZygmund.html#TauCeti.exists_eLpNorm_fderiv_le_eLpNorm_conjWirtingerDeriv)
-- [Source of `TauCeti.exists_eLpNorm_fderiv_le_eLpNorm_conjWirtingerDeriv` in TauCeti/Analysis/Complex/Wirtinger/CalderonZygmund.lean](https://github.com/TauCetiProject/TauCeti/blob/a6027b1d24fcb935c53bd5b50d11b40991cda418/TauCeti/Analysis/Complex/Wirtinger/CalderonZygmund.lean#L142)
-- [Tau Ceti roadmap status: Analytic Heegaard Floer homology](https://github.com/TauCetiProject/TauCetiRoadmap/blob/9f7c032adaf1b838e8183d63ff3cfa886d061cb3/TauCetiRoadmap/HeegaardFloer/STATUS.md)
-- [Tau Ceti roadmap status: Elliptic analysis of pseudoholomorphic curves](https://github.com/TauCetiProject/TauCetiRoadmap/blob/9f7c032adaf1b838e8183d63ff3cfa886d061cb3/TauCetiRoadmap/PseudoholomorphicCurveAnalysis/STATUS.md)
+- [Source of `TauCeti.exists_eLpNorm_fderiv_le_eLpNorm_conjWirtingerDeriv` in TauCeti/Analysis/Complex/Wirtinger/CalderonZygmund.lean](https://github.com/TauCetiProject/TauCeti/blob/cd41bffcb343151b3e58c89392e206b11fe78c1c/TauCeti/Analysis/Complex/Wirtinger/CalderonZygmund.lean#L142)
+- [Tau Ceti roadmap status: Analytic Heegaard Floer homology](https://github.com/TauCetiProject/TauCetiRoadmap/blob/612845ab80fb9c2b9bee724a156756ee78031591/TauCetiRoadmap/HeegaardFloer/STATUS.md)
+- [Tau Ceti roadmap status: Elliptic analysis of pseudoholomorphic curves](https://github.com/TauCetiProject/TauCetiRoadmap/blob/612845ab80fb9c2b9bee724a156756ee78031591/TauCetiRoadmap/PseudoholomorphicCurveAnalysis/STATUS.md)

@@ -32,12 +32,11 @@ Formalized in Tau Ceti as [`TauCeti.AlgHom.convPow_eq_one_of_rankAtStalk`](https
 
 ```lean
 TauCeti.AlgHom.convPow_finrank_eq_one.{u_1, u_2, u_3} {R : Type u_1} {H : Type u_2} [CommRing R]
-  [CommRing H] [HopfAlgebra R H] [Coalgebra.IsCocomm R H] [Module.Free R H] [Module.Finite R H]
-  {A : Type u_3} [CommSemiring A] [Algebra R A] (x : WithConv (H →ₐ[R] A)) :
-  x ^ Module.finrank R H = 1
+  [CommRing H] [HopfAlgebra R H] [Coalgebra.IsCocomm R H] [Module.Free R H] {A : Type u_3}
+  [CommSemiring A] [Algebra R A] (x : WithConv (H →ₐ[R] A)) : x ^ Module.finrank R H = 1
 ```
 
 ## Sources
 
 - [Tau Ceti documentation: `TauCeti.AlgHom.convPow_eq_one_of_rankAtStalk`](https://taucetiproject.org/docs/TauCeti/Algebra/AlgebraicGroup/KilledByRank.html#TauCeti.AlgHom.convPow_eq_one_of_rankAtStalk)
-- [Source of `TauCeti.AlgHom.convPow_eq_one_of_rankAtStalk` in TauCeti/Algebra/AlgebraicGroup/KilledByRank.lean](https://github.com/TauCetiProject/TauCeti/blob/a6027b1d24fcb935c53bd5b50d11b40991cda418/TauCeti/Algebra/AlgebraicGroup/KilledByRank.lean#L177)
+- [Source of `TauCeti.AlgHom.convPow_eq_one_of_rankAtStalk` in TauCeti/Algebra/AlgebraicGroup/KilledByRank.lean](https://github.com/TauCetiProject/TauCeti/blob/cd41bffcb343151b3e58c89392e206b11fe78c1c/TauCeti/Algebra/AlgebraicGroup/KilledByRank.lean#L183)

@@ -1,0 +1,24 @@
+{
+ "schema": "trough-ledger/v1",
+ "library": "CSLib",
+ "repo": "leanprover/cslib",
+ "rev": "86d560b6cbb379bd82512424cbcd2a915a1565e7",
+ "module": "Cslib.Computability.Automata.EpsilonNA.ToSingleStartAccept",
+ "file": "Cslib/Computability/Automata/EpsilonNA/ToSingleStartAccept.lean",
+ "public": [
+  {"name": "Cslib.Automata.εNA.FinAcc.toSingleStartAccept", "kind": "def", "line": 30},
+  {"name": "Cslib.Automata.εNA.FinAcc.toSingleStartAccept_start", "kind": "theorem", "line": 41},
+  {"name": "Cslib.Automata.εNA.FinAcc.toSingleStartAccept_accept", "kind": "theorem", "line": 43},
+  {"name": "Cslib.Automata.εNA.FinAcc.toSingleStartAccept_tr_inr_inr", "kind": "theorem", "line": 45},
+  {"name": "Cslib.Automata.εNA.FinAcc.toSingleStartAccept_tr_start", "kind": "theorem", "line": 48},
+  {"name": "Cslib.Automata.εNA.FinAcc.toSingleStartAccept_tr_accept", "kind": "theorem", "line": 51},
+  {"name": "Cslib.Automata.εNA.FinAcc.toSingleStartAccept_tr_inl_false", "kind": "theorem", "line": 55},
+  {"name": "Cslib.Automata.εNA.FinAcc.toSingleStartAccept_not_tr_inl_false", "kind": "theorem", "line": 61},
+  {"name": "Cslib.Automata.εNA.FinAcc.toSingleStartAccept_not_tr_inl_true", "kind": "theorem", "line": 66},
+  {"name": "Cslib.Automata.εNA.FinAcc.toSingleStartAccept_mTr_inr_inl_true", "kind": "theorem", "line": 72},
+  {"name": "Cslib.Automata.εNA.FinAcc.toSingleStartAccept_language_eq", "kind": "theorem", "line": 95}
+ ],
+ "private": [],
+ "missing": [],
+ "unread": "Unnamed instances, the names an `alias ⟨…⟩` command gives, and the names Lean generates for a declaration (constructors, recursors, derived instances) are not read from the source, so they are not listed."
+}

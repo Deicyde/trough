@@ -54,4 +54,4 @@ IsAlgebraic.exists_pos_le_norm_aeval_mul_supNorm_pow {ξ : ℂ} (hξ : IsAlgebra
 ## Sources
 
 - [Tau Ceti documentation: `Polynomial.inv_le_norm_ratCast_sub`](https://taucetiproject.org/docs/TauCeti/NumberTheory/DiophantineApproximation/Liouville.html#Polynomial.inv_le_norm_ratCast_sub)
-- [Source of `Polynomial.inv_le_norm_ratCast_sub` in TauCeti/NumberTheory/DiophantineApproximation/Liouville.lean](https://github.com/TauCetiProject/TauCeti/blob/a6027b1d24fcb935c53bd5b50d11b40991cda418/TauCeti/NumberTheory/DiophantineApproximation/Liouville.lean#L44)
+- [Source of `Polynomial.inv_le_norm_ratCast_sub` in TauCeti/NumberTheory/DiophantineApproximation/Liouville.lean](https://github.com/TauCetiProject/TauCeti/blob/cd41bffcb343151b3e58c89392e206b11fe78c1c/TauCeti/NumberTheory/DiophantineApproximation/Liouville.lean#L44)

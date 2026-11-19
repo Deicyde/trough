@@ -108,3 +108,4 @@ theorem Line.card_full (k n g : ℕ) (U : Type*) [Finite U] :
 ## Sources
 
 - [Cslib/Computability/Circuit/Finite.lean at 86d560b6](https://github.com/leanprover/cslib/blob/86d560b6cbb379bd82512424cbcd2a915a1565e7/Cslib/Computability/Circuit/Finite.lean)
+- [Declaration ledger](../../../../sources/cslib/Cslib.Computability.Circuit.Finite.json)

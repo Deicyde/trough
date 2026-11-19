@@ -28,7 +28,7 @@ Its statement uses no other declaration mapped here.
 
 ## Proof depends on
 
-- [De Finetti–Ryll-Nardzewski, two-way mixture form](de-finetti-ryll-nardzewski-two-way-mixture-form.md)
+- [De Finetti–Ryll-Nardzewski, two-way conditional form](de-finetti-ryll-nardzewski-two-way-conditional-f.md)
 
 ## Lean
 
@@ -50,5 +50,5 @@ TauCeti.Probability.contractable_iff_exchangeable_and_mixedIID.{u_1, u_2} {Ω : 
 ## Sources
 
 - [Tau Ceti documentation: `TauCeti.Probability.deFinetti_RyllNardzewski_equivalence`](https://taucetiproject.org/docs/TauCeti/Probability/DeFinetti/Theorem.html#TauCeti.Probability.deFinetti_RyllNardzewski_equivalence)
-- [Source of `TauCeti.Probability.deFinetti_RyllNardzewski_equivalence` in TauCeti/Probability/DeFinetti/Theorem.lean](https://github.com/TauCetiProject/TauCeti/blob/a6027b1d24fcb935c53bd5b50d11b40991cda418/TauCeti/Probability/DeFinetti/Theorem.lean#L187)
-- [Tau Ceti roadmap status: Exchangeability and de Finetti](https://github.com/TauCetiProject/TauCetiRoadmap/blob/9f7c032adaf1b838e8183d63ff3cfa886d061cb3/Completed/Exchangeability/STATUS.md)
+- [Source of `TauCeti.Probability.deFinetti_RyllNardzewski_equivalence` in TauCeti/Probability/DeFinetti/Theorem.lean](https://github.com/TauCetiProject/TauCeti/blob/cd41bffcb343151b3e58c89392e206b11fe78c1c/TauCeti/Probability/DeFinetti/Theorem.lean#L184)
+- [Tau Ceti roadmap status: Exchangeability and de Finetti](https://github.com/TauCetiProject/TauCetiRoadmap/blob/612845ab80fb9c2b9bee724a156756ee78031591/Completed/Exchangeability/STATUS.md)
