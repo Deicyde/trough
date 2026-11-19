@@ -50,7 +50,7 @@ Of the files its headlines import, directly or not, `proof/ConRon/Refine/HashMap
 
 ## Mathlib use
 
-*Proof depends on* names 6 of the 6 Mathlib concepts its files name, those named most often relative to the other projects.
+*Proof depends on* lists 6 of the 6 Mathlib overview articles whose Lean names its files write, those written most often relative to the other projects; a name match, not an import.
 
 ## Sources
 

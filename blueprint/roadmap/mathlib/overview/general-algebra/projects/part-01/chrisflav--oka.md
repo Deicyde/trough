@@ -68,7 +68,7 @@ No file its headlines import, directly or not (707 files), holds `sorry`, `admit
 
 ## Mathlib use
 
-Areas of its Mathlib imports by lift over the average project: Topology (93 of 601 imports, 2.1×), General algebra (281 of 601 imports, 1.3×), Analysis (112 of 601 imports, 0.7×). *Proof depends on* names 8 of the 120 Mathlib concepts its files name, those named most often relative to the other projects.
+Areas of its Mathlib imports by lift over the average project: Topology (93 of 601 imports, 2.1×), General algebra (281 of 601 imports, 1.3×), Analysis (112 of 601 imports, 0.7×). *Proof depends on* lists 8 of the 120 Mathlib overview articles whose Lean names its files write, those written most often relative to the other projects; a name match, not an import.
 
 ## Sources
 

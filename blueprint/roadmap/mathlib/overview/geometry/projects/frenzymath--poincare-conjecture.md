@@ -51,7 +51,7 @@ Of its imports of Mathlib modules in an overview area, 237 of 2242 are in Geomet
 
 ## Mathlib use
 
-Areas of its Mathlib imports by lift over the average project: Geometry (237 of 2242 imports, 4.5×), Topology (464 of 2242 imports, 2.8×), Analysis (1332 of 2242 imports, 2.2×). *Proof depends on* names 8 of the 182 Mathlib concepts its files name, those named most often relative to the other projects.
+Areas of its Mathlib imports by lift over the average project: Geometry (237 of 2242 imports, 4.5×), Topology (464 of 2242 imports, 2.8×), Analysis (1332 of 2242 imports, 2.2×). *Proof depends on* lists 8 of the 182 Mathlib overview articles whose Lean names its files write, those written most often relative to the other projects; a name match, not an import.
 
 ## Sources
 

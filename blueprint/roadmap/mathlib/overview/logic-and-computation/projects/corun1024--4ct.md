@@ -59,7 +59,7 @@ Of its imports of Mathlib modules in an overview area, 5 of 34 are in Logic and 
 
 ## Mathlib use
 
-Areas of its Mathlib imports by lift over the average project: Logic and computation (5 of 34 imports, 13.8×), Topology (7 of 34 imports, 2.8×), General algebra (13 of 34 imports, 1.1×). *Proof depends on* names 8 of the 14 Mathlib concepts its files name, those named most often relative to the other projects.
+Areas of its Mathlib imports by lift over the average project: Logic and computation (5 of 34 imports, 13.8×), Topology (7 of 34 imports, 2.8×), General algebra (13 of 34 imports, 1.1×). *Proof depends on* lists 8 of the 14 Mathlib overview articles whose Lean names its files write, those written most often relative to the other projects; a name match, not an import.
 
 ## Sources
 

@@ -49,7 +49,7 @@ Of its imports of Mathlib modules in an overview area, 103 of 439 are in Topolog
 
 ## Mathlib use
 
-Areas of its Mathlib imports by lift over the average project: Topology (103 of 439 imports, 3.1×), Linear algebra (47 of 439 imports, 1.8×), General algebra (247 of 439 imports, 1.6×). *Proof depends on* names 8 of the 42 Mathlib concepts its files name, those named most often relative to the other projects.
+Areas of its Mathlib imports by lift over the average project: Topology (103 of 439 imports, 3.1×), Linear algebra (47 of 439 imports, 1.8×), General algebra (247 of 439 imports, 1.6×). *Proof depends on* lists 8 of the 42 Mathlib overview articles whose Lean names its files write, those written most often relative to the other projects; a name match, not an import.
 
 ## Sources
 

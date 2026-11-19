@@ -59,7 +59,7 @@ No file its headlines import, directly or not (1960 files), holds `sorry`, `admi
 
 ## Mathlib use
 
-Areas of its Mathlib imports by lift over the average project: Probability Theory (122 of 1092 imports, 5.9×), Analysis (788 of 1092 imports, 2.7×), Topology (129 of 1092 imports, 1.6×). *Proof depends on* names 8 of the 98 Mathlib concepts its files name, those named most often relative to the other projects.
+Areas of its Mathlib imports by lift over the average project: Probability Theory (122 of 1092 imports, 5.9×), Analysis (788 of 1092 imports, 2.7×), Topology (129 of 1092 imports, 1.6×). *Proof depends on* lists 8 of the 98 Mathlib overview articles whose Lean names its files write, those written most often relative to the other projects; a name match, not an import.
 
 ## Sources
 

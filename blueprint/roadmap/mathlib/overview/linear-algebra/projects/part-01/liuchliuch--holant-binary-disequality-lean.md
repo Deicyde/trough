@@ -49,7 +49,7 @@ Of its imports of Mathlib modules in an overview area, 68 of 425 are in Linear a
 
 ## Mathlib use
 
-Areas of its Mathlib imports by lift over the average project: Linear algebra (68 of 425 imports, 2.7×), Combinatorics (47 of 425 imports, 2.6×), Data structures (86 of 425 imports, 1.4×). *Proof depends on* names 8 of the 69 Mathlib concepts its files name, those named most often relative to the other projects.
+Areas of its Mathlib imports by lift over the average project: Linear algebra (68 of 425 imports, 2.7×), Combinatorics (47 of 425 imports, 2.6×), Data structures (86 of 425 imports, 1.4×). *Proof depends on* lists 8 of the 69 Mathlib overview articles whose Lean names its files write, those written most often relative to the other projects; a name match, not an import.
 
 ## Sources
 

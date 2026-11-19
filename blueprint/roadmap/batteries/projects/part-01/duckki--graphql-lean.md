@@ -18,11 +18,7 @@ Its headline statements name no Mathlib concept or declaration mapped elsewhere 
 
 - [List](../../../mathlib/overview/data-structures/list-like-structures/list.md)
 - [Natural number](../../../mathlib/overview/general-algebra/numbers/natural-number.md)
-- [Group](../../../mathlib/overview/general-algebra/group-theory/part-01/group.md)
-- [Closure](../../../mathlib/overview/topology/general-topology/part-01/closure.md)
-- [Associative algebra over a commutative ring](../../../mathlib/overview/general-algebra/algebras-over-a-ring/associative-algebra-over-a-commutative-ring.md)
 - [Integer](../../../mathlib/overview/general-algebra/numbers/integer.md)
-- [Field](../../../mathlib/overview/general-algebra/field-theory/field.md)
 - [Array](../../../mathlib/overview/data-structures/list-like-structures/array.md)
 
 ## Main results
@@ -50,7 +46,7 @@ It requires neither Mathlib nor another library mapped here, and imports no Batt
 
 ## Mathlib use
 
-*Proof depends on* names 8 of the 8 Mathlib concepts its files name, those named most often relative to the other projects.
+*Proof depends on* lists 4 of the 4 Mathlib overview articles whose Lean names its files write, those written most often relative to the other projects; a name match, not an import. It requires no Mathlib, so only the articles whose Lean names Lean core or Std declares are kept.
 
 ## Sources
 

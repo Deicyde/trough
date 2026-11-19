@@ -22,10 +22,8 @@ A root module states no result, so the node has no statement edges.
 - [Array](../../../mathlib/overview/data-structures/list-like-structures/array.md)
 - [Hash map](../../../mathlib/overview/data-structures/maps/hash-map.md)
 - [Natural number](../../../mathlib/overview/general-algebra/numbers/natural-number.md)
-- [Differentiable functions](../../../mathlib/undergraduate/multivariable-calculus/differential-calculus/differentiable-functions.md)
 - [Integer](../../../mathlib/overview/general-algebra/numbers/integer.md)
 - [List](../../../mathlib/overview/data-structures/list-like-structures/list.md)
-- [Module](../../../mathlib/overview/linear-algebra/fundamentals/module.md)
 
 ## Root modules
 
@@ -48,7 +46,7 @@ It requires neither Mathlib nor another library mapped here, and imports no Batt
 
 ## Mathlib use
 
-*Proof depends on* names 7 of the 7 Mathlib concepts its files name, those named most often relative to the other projects.
+*Proof depends on* lists 5 of the 5 Mathlib overview articles whose Lean names its files write, those written most often relative to the other projects; a name match, not an import. It requires no Mathlib, so only the articles whose Lean names Lean core or Std declares are kept.
 
 ## Sources
 

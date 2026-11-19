@@ -68,7 +68,7 @@ Of its imports of Mathlib modules in an overview area, 274 of 2185 are in Probab
 
 ## Mathlib use
 
-Areas of its Mathlib imports by lift over the average project: Probability Theory (274 of 2185 imports, 6.6×), Topology (443 of 2185 imports, 2.7×), Analysis (1193 of 2185 imports, 2.0×). *Proof depends on* names 8 of the 143 Mathlib concepts its files name, those named most often relative to the other projects.
+Areas of its Mathlib imports by lift over the average project: Probability Theory (274 of 2185 imports, 6.6×), Topology (443 of 2185 imports, 2.7×), Analysis (1193 of 2185 imports, 2.0×). *Proof depends on* lists 8 of the 143 Mathlib overview articles whose Lean names its files write, those written most often relative to the other projects; a name match, not an import.
 
 ## Sources
 

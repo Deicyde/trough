@@ -24,9 +24,7 @@ A root module states no result, so the node has no statement edges.
 - [List](../../../mathlib/overview/data-structures/list-like-structures/list.md)
 - [Natural number](../../../mathlib/overview/general-algebra/numbers/natural-number.md)
 - [Hash map](../../../mathlib/overview/data-structures/maps/hash-map.md)
-- [Set](../../../mathlib/overview/data-structures/sets/set.md)
 - [Array](../../../mathlib/overview/data-structures/list-like-structures/array.md)
-- [Field](../../../mathlib/overview/general-algebra/field-theory/field.md)
 
 ## Root modules
 
@@ -45,7 +43,7 @@ It requires neither Mathlib nor another library mapped here; 21 files of the pro
 
 ## Mathlib use
 
-*Proof depends on* names 7 of the 7 Mathlib concepts its files name, those named most often relative to the other projects.
+*Proof depends on* lists 5 of the 5 Mathlib overview articles whose Lean names its files write, those written most often relative to the other projects; a name match, not an import. It requires no Mathlib, so only the articles whose Lean names Lean core or Std declares are kept.
 
 ## Sources
 

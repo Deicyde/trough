@@ -46,7 +46,7 @@ The project names no main result in a blueprint, its README or a Main module, so
 
 ## Mathlib use
 
-*Proof depends on* names 5 of the 5 Mathlib concepts its files name, those named most often relative to the other projects.
+*Proof depends on* lists 5 of the 5 Mathlib overview articles whose Lean names its files write, those written most often relative to the other projects; a name match, not an import.
 
 ## Sources
 

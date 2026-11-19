@@ -44,7 +44,7 @@ Of its imports of Mathlib modules in an overview area, 1337 of 9612 are in Geome
 
 ## Mathlib use
 
-Areas of its Mathlib imports by lift over the average project: Geometry (1337 of 9612 imports, 5.9×), Topology (2681 of 9612 imports, 3.7×), Linear algebra (1153 of 9612 imports, 2.1×). *Proof depends on* names 8 of the 170 Mathlib concepts its files name, those named most often relative to the other projects.
+Areas of its Mathlib imports by lift over the average project: Geometry (1337 of 9612 imports, 5.9×), Topology (2681 of 9612 imports, 3.7×), Linear algebra (1153 of 9612 imports, 2.1×). *Proof depends on* lists 8 of the 170 Mathlib overview articles whose Lean names its files write, those written most often relative to the other projects; a name match, not an import.
 
 ## Sources
 

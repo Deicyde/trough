@@ -48,7 +48,7 @@ Of its imports of Mathlib modules in an overview area, 17 of 17 are in General a
 
 ## Mathlib use
 
-Areas of its Mathlib imports by lift over the average project: General algebra (17 of 17 imports, 2.8×). *Proof depends on* names 4 of the 4 Mathlib concepts its files name, those named most often relative to the other projects.
+Areas of its Mathlib imports by lift over the average project: General algebra (17 of 17 imports, 2.8×). *Proof depends on* lists 4 of the 4 Mathlib overview articles whose Lean names its files write, those written most often relative to the other projects; a name match, not an import.
 
 ## Sources
 

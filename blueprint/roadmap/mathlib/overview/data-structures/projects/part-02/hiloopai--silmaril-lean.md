@@ -51,7 +51,7 @@ Of its imports of Mathlib modules in an overview area, 47 of 114 are in Data str
 
 ## Mathlib use
 
-Areas of its Mathlib imports by lift over the average project: Data structures (47 of 114 imports, 2.9×), General algebra (48 of 114 imports, 1.2×). *Proof depends on* names 8 of the 21 Mathlib concepts its files name, those named most often relative to the other projects.
+Areas of its Mathlib imports by lift over the average project: Data structures (47 of 114 imports, 2.9×), General algebra (48 of 114 imports, 1.2×). *Proof depends on* lists 8 of the 21 Mathlib overview articles whose Lean names its files write, those written most often relative to the other projects; a name match, not an import.
 
 ## Sources
 

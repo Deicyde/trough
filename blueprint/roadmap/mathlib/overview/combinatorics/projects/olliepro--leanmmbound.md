@@ -48,7 +48,7 @@ Of its imports of Mathlib modules in an overview area, 20 of 105 are in Combinat
 
 ## Mathlib use
 
-Areas of its Mathlib imports by lift over the average project: Combinatorics (20 of 105 imports, 4.4×), General algebra (51 of 105 imports, 1.4×), Data structures (17 of 105 imports, 1.1×). *Proof depends on* names 8 of the 18 Mathlib concepts its files name, those named most often relative to the other projects.
+Areas of its Mathlib imports by lift over the average project: Combinatorics (20 of 105 imports, 4.4×), General algebra (51 of 105 imports, 1.4×), Data structures (17 of 105 imports, 1.1×). *Proof depends on* lists 8 of the 18 Mathlib overview articles whose Lean names its files write, those written most often relative to the other projects; a name match, not an import.
 
 ## Sources
 

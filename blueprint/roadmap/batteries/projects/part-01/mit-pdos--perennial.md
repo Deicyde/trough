@@ -19,9 +19,7 @@ statement: formalized
 - [Integer](../../../mathlib/overview/general-algebra/numbers/integer.md)
 - [Rational number](../../../mathlib/overview/general-algebra/numbers/rational-number.md)
 - [Hash map](../../../mathlib/overview/data-structures/maps/hash-map.md)
-- [Language](../../../mathlib/overview/logic-and-computation/formal-languages/language.md)
 - [Array](../../../mathlib/overview/data-structures/list-like-structures/array.md)
-- [Prime numbers](../../../mathlib/undergraduate/ring-theory/divisibility-in-integral-domains/prime-numbers.md)
 
 ## Main results
 
@@ -54,7 +52,7 @@ It requires neither Mathlib nor another library mapped here; 1 file of the proje
 
 ## Mathlib use
 
-*Proof depends on* names 6 of the 8 Mathlib concepts its files name, those named most often relative to the other projects.
+*Proof depends on* lists 4 of the 6 Mathlib overview articles whose Lean names its files write, those written most often relative to the other projects; a name match, not an import. It requires no Mathlib, so only the articles whose Lean names Lean core or Std declares are kept.
 
 ## Sources
 

@@ -56,7 +56,7 @@ Its Lake manifest requires `PrimeNumberTheoremAnd`, a GitHub fork of AlexKontoro
 
 ## Mathlib use
 
-Areas of its Mathlib imports by lift over the average project: Data structures (599 of 2287 imports, 1.8×), General algebra (885 of 2287 imports, 1.1×), Analysis (667 of 2287 imports, 1.1×). *Proof depends on* names 8 of the 38 Mathlib concepts its files name, those named most often relative to the other projects.
+Areas of its Mathlib imports by lift over the average project: Data structures (599 of 2287 imports, 1.8×), General algebra (885 of 2287 imports, 1.1×), Analysis (667 of 2287 imports, 1.1×). *Proof depends on* lists 8 of the 38 Mathlib overview articles whose Lean names its files write, those written most often relative to the other projects; a name match, not an import.
 
 ## Sources
 

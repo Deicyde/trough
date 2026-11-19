@@ -53,7 +53,7 @@ Placed by hand. Its README states lower bounds for the number of unit-distance p
 
 ## Mathlib use
 
-Areas of its Mathlib imports by lift over the average project: General algebra (1329 of 2160 imports, 1.7×), Analysis (259 of 2160 imports, 0.4×). *Proof depends on* names 8 of the 184 Mathlib concepts its files name, those named most often relative to the other projects.
+Areas of its Mathlib imports by lift over the average project: General algebra (1329 of 2160 imports, 1.7×), Analysis (259 of 2160 imports, 0.4×). *Proof depends on* lists 8 of the 184 Mathlib overview articles whose Lean names its files write, those written most often relative to the other projects; a name match, not an import.
 
 ## Sources
 

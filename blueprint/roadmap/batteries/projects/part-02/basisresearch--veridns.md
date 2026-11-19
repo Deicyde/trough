@@ -19,7 +19,6 @@ proof: formalized
 ## Proof depends on
 
 - [Hash map](../../../mathlib/overview/data-structures/maps/hash-map.md)
-- [Set](../../../mathlib/overview/data-structures/sets/set.md)
 
 ## Main results
 
@@ -45,7 +44,7 @@ It requires neither Mathlib nor another library mapped here; 36 files of the pro
 
 ## Mathlib use
 
-*Proof depends on* names 2 of the 5 Mathlib concepts its files name, those named most often relative to the other projects.
+*Proof depends on* lists 1 of the 4 Mathlib overview articles whose Lean names its files write, those written most often relative to the other projects; a name match, not an import. It requires no Mathlib, so only the articles whose Lean names Lean core or Std declares are kept.
 
 ## Sources
 

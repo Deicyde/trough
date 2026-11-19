@@ -70,7 +70,7 @@ No file its headlines import, directly or not (173 files), holds `sorry`, `admit
 
 ## Mathlib use
 
-Areas of its Mathlib imports by lift over the average project: Geometry (172 of 1040 imports, 7.0×), General algebra (677 of 1040 imports, 1.8×). *Proof depends on* names 8 of the 134 Mathlib concepts its files name, those named most often relative to the other projects.
+Areas of its Mathlib imports by lift over the average project: Geometry (172 of 1040 imports, 7.0×), General algebra (677 of 1040 imports, 1.8×). *Proof depends on* lists 8 of the 134 Mathlib overview articles whose Lean names its files write, those written most often relative to the other projects; a name match, not an import.
 
 ## Sources
 

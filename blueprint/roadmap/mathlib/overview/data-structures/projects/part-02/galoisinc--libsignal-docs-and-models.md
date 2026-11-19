@@ -46,7 +46,7 @@ Of its imports of Mathlib modules in an overview area, 1 of 1 are in Data struct
 
 ## Mathlib use
 
-Areas of its Mathlib imports by lift over the average project: Data structures (1 of 1 imports, 7.0×). *Proof depends on* names 7 of the 7 Mathlib concepts its files name, those named most often relative to the other projects.
+Areas of its Mathlib imports by lift over the average project: Data structures (1 of 1 imports, 7.0×). *Proof depends on* lists 7 of the 7 Mathlib overview articles whose Lean names its files write, those written most often relative to the other projects; a name match, not an import.
 
 ## Sources
 

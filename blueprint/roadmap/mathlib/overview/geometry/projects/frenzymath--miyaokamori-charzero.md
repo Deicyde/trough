@@ -44,7 +44,7 @@ Of its imports of Mathlib modules in an overview area, 140 of 630 are in Geometr
 
 ## Mathlib use
 
-Areas of its Mathlib imports by lift over the average project: Geometry (140 of 630 imports, 9.4×), Linear algebra (91 of 630 imports, 2.5×), General algebra (350 of 630 imports, 1.6×). *Proof depends on* names 8 of the 84 Mathlib concepts its files name, those named most often relative to the other projects.
+Areas of its Mathlib imports by lift over the average project: Geometry (140 of 630 imports, 9.4×), Linear algebra (91 of 630 imports, 2.5×), General algebra (350 of 630 imports, 1.6×). *Proof depends on* lists 8 of the 84 Mathlib overview articles whose Lean names its files write, those written most often relative to the other projects; a name match, not an import.
 
 ## Sources
 

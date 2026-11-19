@@ -58,7 +58,7 @@ Of its imports of Mathlib modules in an overview area, 11 of 84 are in Probabili
 
 ## Mathlib use
 
-Areas of its Mathlib imports by lift over the average project: Probability Theory (11 of 84 imports, 6.9×), Combinatorics (11 of 84 imports, 3.0×), Analysis (44 of 84 imports, 1.9×). *Proof depends on* names 8 of the 75 Mathlib concepts its files name, those named most often relative to the other projects.
+Areas of its Mathlib imports by lift over the average project: Probability Theory (11 of 84 imports, 6.9×), Combinatorics (11 of 84 imports, 3.0×), Analysis (44 of 84 imports, 1.9×). *Proof depends on* lists 8 of the 75 Mathlib overview articles whose Lean names its files write, those written most often relative to the other projects; a name match, not an import.
 
 ## Sources
 

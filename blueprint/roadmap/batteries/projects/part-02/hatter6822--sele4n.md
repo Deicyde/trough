@@ -41,7 +41,7 @@ It requires neither Mathlib nor another library mapped here, and imports no Batt
 
 ## Mathlib use
 
-*Proof depends on* names 4 of the 4 Mathlib concepts its files name, those named most often relative to the other projects.
+*Proof depends on* lists 4 of the 4 Mathlib overview articles whose Lean names its files write, those written most often relative to the other projects; a name match, not an import. It requires no Mathlib, so only the articles whose Lean names Lean core or Std declares are kept.
 
 ## Sources
 

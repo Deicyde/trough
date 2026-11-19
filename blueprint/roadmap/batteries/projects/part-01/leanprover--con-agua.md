@@ -21,8 +21,6 @@ statement: formalized
 - [Natural number](../../../mathlib/overview/general-algebra/numbers/natural-number.md)
 - [Array](../../../mathlib/overview/data-structures/list-like-structures/array.md)
 - [Integer](../../../mathlib/overview/general-algebra/numbers/integer.md)
-- [Closure](../../../mathlib/overview/topology/general-topology/part-01/closure.md)
-- [Field](../../../mathlib/overview/general-algebra/field-theory/field.md)
 
 ## Main results
 
@@ -50,7 +48,7 @@ It requires neither Mathlib nor another library mapped here, and imports no Batt
 
 ## Mathlib use
 
-*Proof depends on* names 6 of the 7 Mathlib concepts its files name, those named most often relative to the other projects.
+*Proof depends on* lists 4 of the 5 Mathlib overview articles whose Lean names its files write, those written most often relative to the other projects; a name match, not an import. It requires no Mathlib, so only the articles whose Lean names Lean core or Std declares are kept.
 
 ## Sources
 

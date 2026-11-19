@@ -57,7 +57,7 @@ Of its imports of Mathlib modules in an overview area, 458 of 662 are in Analysi
 
 ## Mathlib use
 
-Areas of its Mathlib imports by lift over the average project: Analysis (458 of 662 imports, 2.5×), General algebra (67 of 662 imports, 0.3×). *Proof depends on* names 8 of the 93 Mathlib concepts its files name, those named most often relative to the other projects.
+Areas of its Mathlib imports by lift over the average project: Analysis (458 of 662 imports, 2.5×), General algebra (67 of 662 imports, 0.3×). *Proof depends on* lists 8 of the 93 Mathlib overview articles whose Lean names its files write, those written most often relative to the other projects; a name match, not an import.
 
 ## Sources
 

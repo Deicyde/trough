@@ -55,7 +55,7 @@ Of the files its headlines import, directly or not, `Comparator/Challenge.lean` 
 
 ## Mathlib use
 
-Areas of its Mathlib imports by lift over the average project: General algebra (1664 of 3484 imports, 1.3×), Analysis (688 of 3484 imports, 0.7×). *Proof depends on* names 8 of the 160 Mathlib concepts its files name, those named most often relative to the other projects.
+Areas of its Mathlib imports by lift over the average project: General algebra (1664 of 3484 imports, 1.3×), Analysis (688 of 3484 imports, 0.7×). *Proof depends on* lists 8 of the 160 Mathlib overview articles whose Lean names its files write, those written most often relative to the other projects; a name match, not an import.
 
 ## Sources
 

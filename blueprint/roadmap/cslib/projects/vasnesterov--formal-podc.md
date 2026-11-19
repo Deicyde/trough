@@ -46,7 +46,7 @@ Its Lake manifest requires `cslib`, a GitHub fork of leanprover/cslib.
 
 ## Mathlib use
 
-Areas of its Mathlib imports by lift over the average project: Combinatorics (121 of 596 imports, 4.7×), Topology (70 of 596 imports, 1.6×), Data structures (128 of 596 imports, 1.5×). *Proof depends on* names 8 of the 101 Mathlib concepts its files name, those named most often relative to the other projects.
+Areas of its Mathlib imports by lift over the average project: Combinatorics (121 of 596 imports, 4.7×), Topology (70 of 596 imports, 1.6×), Data structures (128 of 596 imports, 1.5×). *Proof depends on* lists 8 of the 101 Mathlib overview articles whose Lean names its files write, those written most often relative to the other projects; a name match, not an import.
 
 ## Sources
 
