@@ -62,6 +62,7 @@ Trough reads these sources. The catalog of libraries is `catalog/libraries.toml`
 ## Batteries
 
 - `data/batteries/library.json`: each module's title, docstrings and authors, and its declarations with their kinds, lines, docstrings and Lean statements, read from the source text without Lean, with the README's description, from [leanprover-community/batteries at b4b25a38](https://github.com/leanprover-community/batteries/tree/b4b25a3886a16daacaf6615c2eea7170a6e8f458), Apache-2.0. `data/batteries/deps.json`: the modules each module's statements and proofs use, and the names read from the source that Lean has only as private declarations or not at all, written by `lean/library/LibraryDeps.lean` in GitHub Actions. `data/batteries/source.json` records the commit and its Lean toolchain.
+- `blueprint/sources/batteries/`: a declaration ledger for each module with an article, which the article's Sources links, as for CSLib.
 
 ## Physlib
 

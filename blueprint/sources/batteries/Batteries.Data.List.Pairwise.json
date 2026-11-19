@@ -1,0 +1,24 @@
+{
+ "schema": "trough-ledger/v1",
+ "library": "Batteries",
+ "repo": "leanprover-community/batteries",
+ "rev": "b4b25a3886a16daacaf6615c2eea7170a6e8f458",
+ "module": "Batteries.Data.List.Pairwise",
+ "file": "Batteries/Data/List/Pairwise.lean",
+ "public": [
+  {"name": "List.pairwise_iff_get", "kind": "theorem", "line": 36},
+  {"name": "List.pwFilter_nil", "kind": "theorem", "line": 46},
+  {"name": "List.pwFilter_cons_of_pos", "kind": "theorem", "line": 48},
+  {"name": "List.pwFilter_cons_of_neg", "kind": "theorem", "line": 51},
+  {"name": "List.pwFilter_map", "kind": "theorem", "line": 54},
+  {"name": "List.pwFilter_sublist", "kind": "theorem", "line": 68},
+  {"name": "List.pwFilter_subset", "kind": "theorem", "line": 76},
+  {"name": "List.pairwise_pwFilter", "kind": "theorem", "line": 79},
+  {"name": "List.pwFilter_eq_self", "kind": "theorem", "line": 87},
+  {"name": "List.pwFilter_idem", "kind": "theorem", "line": 98},
+  {"name": "List.forall_mem_pwFilter", "kind": "theorem", "line": 101}
+ ],
+ "private": [],
+ "missing": [],
+ "unread": "Unnamed instances, the names an `alias ⟨…⟩` command gives, and the names Lean generates for a declaration (constructors, recursors, derived instances) are not read from the source, so they are not listed."
+}

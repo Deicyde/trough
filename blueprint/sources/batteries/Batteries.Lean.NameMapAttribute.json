@@ -1,0 +1,19 @@
+{
+ "schema": "trough-ledger/v1",
+ "library": "Batteries",
+ "repo": "leanprover-community/batteries",
+ "rev": "b4b25a3886a16daacaf6615c2eea7170a6e8f458",
+ "module": "Batteries.Lean.NameMapAttribute",
+ "file": "Batteries/Lean/NameMapAttribute.lean",
+ "public": [
+  {"name": "Lean.NameMapExtension", "kind": "def", "line": 17},
+  {"name": "Lean.NameMapExtension.find?", "kind": "def", "line": 23},
+  {"name": "Lean.NameMapExtension.add", "kind": "def", "line": 27},
+  {"name": "Lean.registerNameMapExtension", "kind": "def", "line": 35},
+  {"name": "Lean.NameMapAttributeImpl", "kind": "structure", "line": 44},
+  {"name": "Lean.registerNameMapAttribute", "kind": "def", "line": 58}
+ ],
+ "private": [],
+ "missing": [],
+ "unread": "Unnamed instances, the names an `alias ⟨…⟩` command gives, and the names Lean generates for a declaration (constructors, recursors, derived instances) are not read from the source, so they are not listed."
+}

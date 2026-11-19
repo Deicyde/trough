@@ -1,0 +1,21 @@
+{
+ "schema": "trough-ledger/v1",
+ "library": "Batteries",
+ "repo": "leanprover-community/batteries",
+ "rev": "b4b25a3886a16daacaf6615c2eea7170a6e8f458",
+ "module": "Batteries.Lean.PersistentHashSet",
+ "file": "Batteries/Lean/PersistentHashSet.lean",
+ "public": [
+  {"name": "Lean.PersistentHashSet.anyM", "kind": "def", "line": 29},
+  {"name": "Lean.PersistentHashSet.any", "kind": "def", "line": 39},
+  {"name": "Lean.PersistentHashSet.allM", "kind": "def", "line": 46},
+  {"name": "Lean.PersistentHashSet.all", "kind": "def", "line": 56},
+  {"name": "Lean.PersistentHashSet.insertMany", "kind": "def", "line": 65},
+  {"name": "Lean.PersistentHashSet.ofArray", "kind": "def", "line": 76},
+  {"name": "Lean.PersistentHashSet.ofList", "kind": "def", "line": 83},
+  {"name": "Lean.PersistentHashSet.merge", "kind": "def", "line": 90}
+ ],
+ "private": [],
+ "missing": [],
+ "unread": "Unnamed instances, the names an `alias ⟨…⟩` command gives, and the names Lean generates for a declaration (constructors, recursors, derived instances) are not read from the source, so they are not listed."
+}

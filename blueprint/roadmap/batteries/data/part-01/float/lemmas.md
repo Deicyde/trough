@@ -264,3 +264,4 @@ Its statements use no other Batteries module's declarations.
 ## Sources
 
 - [Batteries/Data/Float/Lemmas.lean at b4b25a38](https://github.com/leanprover-community/batteries/blob/b4b25a3886a16daacaf6615c2eea7170a6e8f458/Batteries/Data/Float/Lemmas.lean)
+- [Declaration ledger](../../../../../sources/batteries/Batteries.Data.Float.Lemmas.json)

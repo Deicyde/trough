@@ -349,3 +349,4 @@ def ofListWith [BEq α] [Hashable α] (l : List (α × β)) (f : β → β → �
 ## Sources
 
 - [Batteries/Data/HashMap/Basic.lean at b4b25a38](https://github.com/leanprover-community/batteries/blob/b4b25a3886a16daacaf6615c2eea7170a6e8f458/Batteries/Data/HashMap/Basic.lean)
+- [Declaration ledger](../../../../../sources/batteries/Batteries.Data.HashMap.Basic.json)

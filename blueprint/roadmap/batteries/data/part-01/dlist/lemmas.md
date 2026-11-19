@@ -79,3 +79,4 @@ theorem ofThunk_coe {α : Type _} {l : List α} : ofThunk l = ofList l
 ## Sources
 
 - [Batteries/Data/DList/Lemmas.lean at b4b25a38](https://github.com/leanprover-community/batteries/blob/b4b25a3886a16daacaf6615c2eea7170a6e8f458/Batteries/Data/DList/Lemmas.lean)
+- [Declaration ledger](../../../../../sources/batteries/Batteries.Data.DList.Lemmas.json)

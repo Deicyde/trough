@@ -380,3 +380,4 @@ theorem Array.heapSort_sorted [instOrd : Ord α] [Std.TransOrd α] {a : Array α
 ## Sources
 
 - [Batteries/Data/BinaryHeap/Lemmas.lean at b4b25a38](https://github.com/leanprover-community/batteries/blob/b4b25a3886a16daacaf6615c2eea7170a6e8f458/Batteries/Data/BinaryHeap/Lemmas.lean)
+- [Declaration ledger](../../../../../sources/batteries/Batteries.Data.BinaryHeap.Lemmas.json)

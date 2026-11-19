@@ -270,3 +270,4 @@ protected theorem beq_eq [BEq α] [BEq β] {l m : AssocList α β} :
 ## Sources
 
 - [Batteries/Data/AssocList/Lemmas.lean at b4b25a38](https://github.com/leanprover-community/batteries/blob/b4b25a3886a16daacaf6615c2eea7170a6e8f458/Batteries/Data/AssocList/Lemmas.lean)
+- [Declaration ledger](../../../../../sources/batteries/Batteries.Data.AssocList.Lemmas.json)

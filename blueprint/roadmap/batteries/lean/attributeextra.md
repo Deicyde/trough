@@ -121,3 +121,4 @@ def setParam (attr : ParametricAttributeExtra α)
 ## Sources
 
 - [Batteries/Lean/AttributeExtra.lean at b4b25a38](https://github.com/leanprover-community/batteries/blob/b4b25a3886a16daacaf6615c2eea7170a6e8f458/Batteries/Lean/AttributeExtra.lean)
+- [Declaration ledger](../../../sources/batteries/Batteries.Lean.AttributeExtra.json)

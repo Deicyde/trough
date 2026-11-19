@@ -488,3 +488,4 @@ theorem decodeQuotient_encodeQuotient (s : Setoid (Fin n)) [DecidableRel s.r] (x
 ## Sources
 
 - [Batteries/Data/Fin/Coding.lean at b4b25a38](https://github.com/leanprover-community/batteries/blob/b4b25a3886a16daacaf6615c2eea7170a6e8f458/Batteries/Data/Fin/Coding.lean)
+- [Declaration ledger](../../../../../sources/batteries/Batteries.Data.Fin.Coding.json)

@@ -1,0 +1,17 @@
+{
+ "schema": "trough-ledger/v1",
+ "library": "Batteries",
+ "repo": "leanprover-community/batteries",
+ "rev": "b4b25a3886a16daacaf6615c2eea7170a6e8f458",
+ "module": "Batteries.Lean.LawfulMonadLift",
+ "file": "Batteries/Lean/LawfulMonadLift.lean",
+ "public": [
+  {"name": "EIO.adapt_pure", "kind": "theorem", "line": 31},
+  {"name": "EIO.adapt_bind", "kind": "theorem", "line": 44},
+  {"name": "StateRefT'.lift_pure", "kind": "theorem", "line": 50},
+  {"name": "StateRefT'.lift_bind", "kind": "theorem", "line": 53}
+ ],
+ "private": [],
+ "missing": [],
+ "unread": "Unnamed instances, the names an `alias ⟨…⟩` command gives, and the names Lean generates for a declaration (constructors, recursors, derived instances) are not read from the source, so they are not listed."
+}

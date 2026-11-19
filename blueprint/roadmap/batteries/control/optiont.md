@@ -32,3 +32,4 @@ theorem run_mapConst [Monad m] [LawfulMonad m] (x : OptionT m α) (y : β) :
 ## Sources
 
 - [Batteries/Control/OptionT.lean at b4b25a38](https://github.com/leanprover-community/batteries/blob/b4b25a3886a16daacaf6615c2eea7170a6e8f458/Batteries/Control/OptionT.lean)
+- [Declaration ledger](../../../sources/batteries/Batteries.Control.OptionT.json)

@@ -1,0 +1,28 @@
+{
+ "schema": "trough-ledger/v1",
+ "library": "Batteries",
+ "repo": "leanprover-community/batteries",
+ "rev": "b4b25a3886a16daacaf6615c2eea7170a6e8f458",
+ "module": "Batteries.CodeAction.Misc",
+ "file": "Batteries/CodeAction/Misc.lean",
+ "public": [
+  {"name": "Batteries.CodeAction.findStack?", "kind": "def", "line": 29},
+  {"name": "Batteries.CodeAction.holeKindToHoleString", "kind": "def", "line": 35},
+  {"name": "Batteries.CodeAction.instanceStub", "kind": "def", "line": 68},
+  {"name": "Batteries.CodeAction.getExplicitArgs", "kind": "def", "line": 135},
+  {"name": "Batteries.CodeAction.getAllArgs", "kind": "def", "line": 142},
+  {"name": "Batteries.CodeAction.eqnStub", "kind": "def", "line": 173},
+  {"name": "Batteries.CodeAction.startTacticStub", "kind": "def", "line": 206},
+  {"name": "Batteries.CodeAction.removeAfterDoneAction", "kind": "def", "line": 234},
+  {"name": "Batteries.CodeAction.getElimExprNames", "kind": "def", "line": 256},
+  {"name": "Batteries.CodeAction.findTermInfo?", "kind": "def", "line": 278},
+  {"name": "Batteries.CodeAction.findTermInfoWithCtx?", "kind": "def", "line": 289},
+  {"name": "Batteries.CodeAction.casesExpand", "kind": "def", "line": 328},
+  {"name": "Batteries.CodeAction.addSubgoalsActionCore", "kind": "def", "line": 428},
+  {"name": "Batteries.CodeAction.addSubgoalsSeqAction", "kind": "def", "line": 471},
+  {"name": "Batteries.CodeAction.addSubgoalsAction", "kind": "def", "line": 477}
+ ],
+ "private": [],
+ "missing": [],
+ "unread": "Unnamed instances, the names an `alias ⟨…⟩` command gives, and the names Lean generates for a declaration (constructors, recursors, derived instances) are not read from the source, so they are not listed."
+}

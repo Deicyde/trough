@@ -74,3 +74,4 @@ Its statements use no other Batteries module's declarations.
 ## Sources
 
 - [Batteries/Lean/PersistentHashMap.lean at b4b25a38](https://github.com/leanprover-community/batteries/blob/b4b25a3886a16daacaf6615c2eea7170a6e8f458/Batteries/Lean/PersistentHashMap.lean)
+- [Declaration ledger](../../../sources/batteries/Batteries.Lean.PersistentHashMap.json)

@@ -183,3 +183,4 @@ theorem getElem_flatten (L : List (List α)) (i : Nat) (h : i < L.flatten.length
 ## Sources
 
 - [Batteries/Data/List/Scan.lean at b4b25a38](https://github.com/leanprover-community/batteries/blob/b4b25a3886a16daacaf6615c2eea7170a6e8f458/Batteries/Data/List/Scan.lean)
+- [Declaration ledger](../../../../../../sources/batteries/Batteries.Data.List.Scan.json)

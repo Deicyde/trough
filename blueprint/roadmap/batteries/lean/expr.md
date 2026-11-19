@@ -119,3 +119,4 @@ Its statements use no other Batteries module's declarations.
 ## Sources
 
 - [Batteries/Lean/Expr.lean at b4b25a38](https://github.com/leanprover-community/batteries/blob/b4b25a3886a16daacaf6615c2eea7170a6e8f458/Batteries/Lean/Expr.lean)
+- [Declaration ledger](../../../sources/batteries/Batteries.Lean.Expr.json)

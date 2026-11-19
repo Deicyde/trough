@@ -168,3 +168,4 @@ theorem surjective_idxToSigmaCount [BEq α] [LawfulBEq α] {xs : List α} :
 ## Sources
 
 - [Batteries/Data/List/Count.lean at b4b25a38](https://github.com/leanprover-community/batteries/blob/b4b25a3886a16daacaf6615c2eea7170a6e8f458/Batteries/Data/List/Count.lean)
+- [Declaration ledger](../../../../../../sources/batteries/Batteries.Data.List.Count.json)

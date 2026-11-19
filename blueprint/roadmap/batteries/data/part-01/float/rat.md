@@ -41,3 +41,4 @@ protected def _root_.Float.toRat0 (a : Float) : Rat
 ## Sources
 
 - [Batteries/Data/Float/Rat.lean at b4b25a38](https://github.com/leanprover-community/batteries/blob/b4b25a3886a16daacaf6615c2eea7170a6e8f458/Batteries/Data/Float/Rat.lean)
+- [Declaration ledger](../../../../../sources/batteries/Batteries.Data.Float.Rat.json)

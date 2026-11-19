@@ -1,0 +1,28 @@
+{
+ "schema": "trough-ledger/v1",
+ "library": "Batteries",
+ "repo": "leanprover-community/batteries",
+ "rev": "b4b25a3886a16daacaf6615c2eea7170a6e8f458",
+ "module": "Batteries.Lean.Meta.Basic",
+ "file": "Batteries/Lean/Meta/Basic.lean",
+ "public": [
+  {"name": "Lean.Meta.sortFVarsByContextOrder", "kind": "def", "line": 25},
+  {"name": "Lean.MetavarContext.getExprMVarDecl", "kind": "def", "line": 35},
+  {"name": "Lean.MetavarContext.declareExprMVar", "kind": "def", "line": 46},
+  {"name": "Lean.MetavarContext.isExprMVarAssignedOrDelayedAssigned", "kind": "def", "line": 57},
+  {"name": "Lean.MetavarContext.isExprMVarDeclared", "kind": "def", "line": 64},
+  {"name": "Lean.MetavarContext.eraseExprMVarAssignment", "kind": "def", "line": 70},
+  {"name": "Lean.MetavarContext.unassignedExprMVars", "kind": "def", "line": 81},
+  {"name": "Lean.MVarId.isDeclared", "kind": "def", "line": 98},
+  {"name": "Lean.MVarId.eraseAssignment", "kind": "def", "line": 104},
+  {"name": "Lean.MVarId.synthInstance", "kind": "def", "line": 109},
+  {"name": "Lean.MVarId.getTypeCleanup", "kind": "def", "line": 114},
+  {"name": "Lean.Meta.getUnassignedExprMVars", "kind": "def", "line": 126},
+  {"name": "Lean.Meta.unhygienic", "kind": "def", "line": 133},
+  {"name": "Lean.Meta.mkFreshIdWithPrefix", "kind": "def", "line": 141},
+  {"name": "Lean.Meta.saturate1", "kind": "def", "line": 157}
+ ],
+ "private": [],
+ "missing": [],
+ "unread": "Unnamed instances, the names an `alias ⟨…⟩` command gives, and the names Lean generates for a declaration (constructors, recursors, derived instances) are not read from the source, so they are not listed."
+}

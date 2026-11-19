@@ -1,0 +1,23 @@
+{
+ "schema": "trough-ledger/v1",
+ "library": "Batteries",
+ "repo": "leanprover-community/batteries",
+ "rev": "b4b25a3886a16daacaf6615c2eea7170a6e8f458",
+ "module": "Batteries.Data.Float.Basic",
+ "file": "Batteries/Data/Float/Basic.lean",
+ "public": [
+  {"name": "Float.pi", "kind": "def", "line": 15},
+  {"name": "Float.toRatParts", "kind": "def", "line": 20},
+  {"name": "Float.toRatParts'", "kind": "def", "line": 35},
+  {"name": "Float.toStringFull", "kind": "def", "line": 52},
+  {"name": "Float32.pi", "kind": "def", "line": 77},
+  {"name": "Float32.toRatParts", "kind": "def", "line": 82},
+  {"name": "Float32.toRatParts'", "kind": "def", "line": 97},
+  {"name": "Float32.toStringFull", "kind": "def", "line": 112},
+  {"name": "Nat.divFloat", "kind": "def", "line": 137},
+  {"name": "Int.divFloat", "kind": "def", "line": 155}
+ ],
+ "private": [],
+ "missing": [],
+ "unread": "Unnamed instances, the names an `alias ⟨…⟩` command gives, and the names Lean generates for a declaration (constructors, recursors, derived instances) are not read from the source, so they are not listed."
+}

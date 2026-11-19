@@ -319,3 +319,4 @@ theorem add_mul_lt_mul_of_lt_of_lt {m n x y : Nat} (hx : x < m) (hy : y < n) :
 ## Sources
 
 - [Batteries/Data/Nat/Lemmas.lean at b4b25a38](https://github.com/leanprover-community/batteries/blob/b4b25a3886a16daacaf6615c2eea7170a6e8f458/Batteries/Data/Nat/Lemmas.lean)
+- [Declaration ledger](../../../../../sources/batteries/Batteries.Data.Nat.Lemmas.json)

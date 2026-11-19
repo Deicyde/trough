@@ -1,0 +1,19 @@
+{
+ "schema": "trough-ledger/v1",
+ "library": "Batteries",
+ "repo": "leanprover-community/batteries",
+ "rev": "b4b25a3886a16daacaf6615c2eea7170a6e8f458",
+ "module": "Batteries.Data.Int",
+ "file": "Batteries/Data/Int.lean",
+ "public": [
+  {"name": "Int.testBit", "kind": "def", "line": 19},
+  {"name": "Int.ofBits", "kind": "def", "line": 29},
+  {"name": "Int.ofBits_zero", "kind": "theorem", "line": 35},
+  {"name": "Int.testBit_ofBits_lt", "kind": "theorem", "line": 38},
+  {"name": "Int.testBit_ofBits_ge", "kind": "theorem", "line": 46},
+  {"name": "Int.testBit_ofBits", "kind": "theorem", "line": 57}
+ ],
+ "private": [],
+ "missing": [],
+ "unread": "Unnamed instances, the names an `alias ⟨…⟩` command gives, and the names Lean generates for a declaration (constructors, recursors, derived instances) are not read from the source, so they are not listed."
+}

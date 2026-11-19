@@ -1,0 +1,23 @@
+{
+ "schema": "trough-ledger/v1",
+ "library": "Batteries",
+ "repo": "leanprover-community/batteries",
+ "rev": "b4b25a3886a16daacaf6615c2eea7170a6e8f458",
+ "module": "Batteries.Data.Random.MersenneTwister",
+ "file": "Batteries/Data/Random/MersenneTwister.lean",
+ "public": [
+  {"name": "Batteries.Random.MersenneTwister.Config", "kind": "structure", "line": 54},
+  {"name": "Batteries.Random.MersenneTwister.Config.zero_lt_wordSize", "kind": "theorem", "line": 80},
+  {"name": "Batteries.Random.MersenneTwister.Config.zero_lt_stateSize", "kind": "theorem", "line": 83},
+  {"name": "Batteries.Random.MersenneTwister.State", "kind": "structure", "line": 87},
+  {"name": "Batteries.Random.MersenneTwister.Config.init", "kind": "def", "line": 94},
+  {"name": "Batteries.Random.MersenneTwister.State.twist", "kind": "def", "line": 106},
+  {"name": "Batteries.Random.MersenneTwister.State.update", "kind": "def", "line": 116},
+  {"name": "Batteries.Random.MersenneTwister.State.next", "kind": "def", "line": 121},
+  {"name": "Batteries.Random.MersenneTwister.mt19937", "kind": "def", "line": 139},
+  {"name": "Batteries.Random.MersenneTwister.mt19937_64", "kind": "def", "line": 151}
+ ],
+ "private": [],
+ "missing": [],
+ "unread": "Unnamed instances, the names an `alias ⟨…⟩` command gives, and the names Lean generates for a declaration (constructors, recursors, derived instances) are not read from the source, so they are not listed."
+}

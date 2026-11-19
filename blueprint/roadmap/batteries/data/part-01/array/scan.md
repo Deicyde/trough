@@ -472,3 +472,4 @@ theorem scanr_eq_scanr_extract {f : α → β → β} {as : Subarray α} :
 ## Sources
 
 - [Batteries/Data/Array/Scan.lean at b4b25a38](https://github.com/leanprover-community/batteries/blob/b4b25a3886a16daacaf6615c2eea7170a6e8f458/Batteries/Data/Array/Scan.lean)
+- [Declaration ledger](../../../../../sources/batteries/Batteries.Data.Array.Scan.json)
