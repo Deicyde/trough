@@ -1,0 +1,28 @@
+{
+ "schema": "trough-ledger/v1",
+ "library": "Aesop",
+ "repo": "leanprover-community/aesop",
+ "rev": "637fdbb8689a3387a82568b07355231f892144d7",
+ "module": "Aesop.Search.SearchM",
+ "file": "Aesop/Search/SearchM.lean",
+ "public": [
+  {"name": "Aesop.NormSimpContext", "kind": "structure", "line": 18},
+  {"name": "Aesop.SearchM.Context", "kind": "structure", "line": 28},
+  {"name": "Aesop.SearchM.State", "kind": "structure", "line": 34},
+  {"name": "Aesop.SearchM", "kind": "abbrev", "line": 42},
+  {"name": "Aesop.SearchM.run'", "kind": "def", "line": 75},
+  {"name": "Aesop.SearchM.run", "kind": "def", "line": 81},
+  {"name": "Aesop.getTree", "kind": "def", "line": 105},
+  {"name": "Aesop.setTree", "kind": "def", "line": 108},
+  {"name": "Aesop.modifyTree", "kind": "def", "line": 111},
+  {"name": "Aesop.getIteration", "kind": "def", "line": 114},
+  {"name": "Aesop.incrementIteration", "kind": "def", "line": 117},
+  {"name": "Aesop.popGoal?", "kind": "def", "line": 120},
+  {"name": "Aesop.enqueueGoals", "kind": "def", "line": 126},
+  {"name": "Aesop.setMaxRuleApplicationDepthReached", "kind": "def", "line": 131},
+  {"name": "Aesop.wasMaxRuleApplicationDepthReached", "kind": "def", "line": 134}
+ ],
+ "private": [],
+ "missing": [],
+ "unread": "Unnamed instances, the names an `alias ⟨…⟩` command gives, and the names Lean generates for a declaration (constructors, recursors, derived instances) are not read from the source, so they are not listed."
+}

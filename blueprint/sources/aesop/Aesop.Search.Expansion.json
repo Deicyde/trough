@@ -1,0 +1,31 @@
+{
+ "schema": "trough-ledger/v1",
+ "library": "Aesop",
+ "repo": "leanprover-community/aesop",
+ "rev": "637fdbb8689a3387a82568b07355231f892144d7",
+ "module": "Aesop.Search.Expansion",
+ "file": "Aesop/Search/Expansion.lean",
+ "public": [
+  {"name": "Aesop.RuleResult", "kind": "inductive", "line": 25},
+  {"name": "Aesop.RuleResult.toEmoji", "kind": "def", "line": 32},
+  {"name": "Aesop.RuleResult.isSuccessful", "kind": "def", "line": 37},
+  {"name": "Aesop.SafeRuleResult", "kind": "inductive", "line": 43},
+  {"name": "Aesop.SafeRuleResult.toEmoji", "kind": "def", "line": 49},
+  {"name": "Aesop.SafeRuleResult.isSuccessfulOrPostponed", "kind": "def", "line": 53},
+  {"name": "Aesop.runRegularRuleTac", "kind": "def", "line": 59},
+  {"name": "Aesop.addRapps", "kind": "def", "line": 72},
+  {"name": "Aesop.withRuleTraceNode", "kind": "def", "line": 110},
+  {"name": "Aesop.runRegularRuleCore", "kind": "def", "line": 118},
+  {"name": "Aesop.runSafeRule", "kind": "def", "line": 136},
+  {"name": "Aesop.runUnsafeRule", "kind": "def", "line": 160},
+  {"name": "Aesop.SafeRulesResult", "kind": "inductive", "line": 171},
+  {"name": "Aesop.SafeRulesResult.toEmoji", "kind": "def", "line": 177},
+  {"name": "Aesop.runFirstSafeRule", "kind": "def", "line": 183},
+  {"name": "Aesop.applyPostponedSafeRule", "kind": "def", "line": 202},
+  {"name": "Aesop.runFirstUnsafeRule", "kind": "def", "line": 207},
+  {"name": "Aesop.expandGoal", "kind": "def", "line": 232}
+ ],
+ "private": [],
+ "missing": [],
+ "unread": "Unnamed instances, the names an `alias ⟨…⟩` command gives, and the names Lean generates for a declaration (constructors, recursors, derived instances) are not read from the source, so they are not listed."
+}

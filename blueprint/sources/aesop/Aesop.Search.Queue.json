@@ -1,0 +1,29 @@
+{
+ "schema": "trough-ledger/v1",
+ "library": "Aesop",
+ "repo": "leanprover-community/aesop",
+ "rev": "637fdbb8689a3387a82568b07355231f892144d7",
+ "module": "Aesop.Search.Queue",
+ "file": "Aesop/Search/Queue.lean",
+ "public": [
+  {"name": "Aesop.BestFirstQueue.ActiveGoal", "kind": "structure", "line": 18},
+  {"name": "Aesop.BestFirstQueue.ActiveGoal.le", "kind": "def", "line": 41},
+  {"name": "Aesop.BestFirstQueue.ActiveGoal.ofGoalRef", "kind": "def", "line": 48},
+  {"name": "Aesop.BestFirstQueue", "kind": "def", "line": 59},
+  {"name": "Aesop.BestFirstQueue.init", "kind": "def", "line": 64},
+  {"name": "Aesop.BestFirstQueue.addGoals", "kind": "def", "line": 67},
+  {"name": "Aesop.BestFirstQueue.popGoal", "kind": "def", "line": 72},
+  {"name": "Aesop.LIFOQueue", "kind": "structure", "line": 85},
+  {"name": "Aesop.LIFOQueue.init", "kind": "def", "line": 90},
+  {"name": "Aesop.LIFOQueue.addGoals", "kind": "def", "line": 93},
+  {"name": "Aesop.LIFOQueue.popGoal", "kind": "def", "line": 96},
+  {"name": "Aesop.FIFOQueue", "kind": "structure", "line": 109},
+  {"name": "Aesop.FIFOQueue.init", "kind": "def", "line": 115},
+  {"name": "Aesop.FIFOQueue.addGoals", "kind": "def", "line": 118},
+  {"name": "Aesop.FIFOQueue.popGoal", "kind": "def", "line": 121},
+  {"name": "Aesop.Options.queue", "kind": "def", "line": 134}
+ ],
+ "private": [],
+ "missing": [],
+ "unread": "Unnamed instances, the names an `alias ⟨…⟩` command gives, and the names Lean generates for a declaration (constructors, recursors, derived instances) are not read from the source, so they are not listed."
+}

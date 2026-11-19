@@ -1,0 +1,19 @@
+{
+ "schema": "trough-ledger/v1",
+ "library": "Aesop",
+ "repo": "leanprover-community/aesop",
+ "rev": "637fdbb8689a3387a82568b07355231f892144d7",
+ "module": "Aesop.RuleSet.Name",
+ "file": "Aesop/RuleSet/Name.lean",
+ "public": [
+  {"name": "Aesop.RuleSetName", "kind": "abbrev", "line": 15},
+  {"name": "Aesop.defaultRuleSetName", "kind": "def", "line": 17},
+  {"name": "Aesop.builtinRuleSetName", "kind": "def", "line": 19},
+  {"name": "Aesop.localRuleSetName", "kind": "def", "line": 21},
+  {"name": "Aesop.builtinRuleSetNames", "kind": "def", "line": 23},
+  {"name": "Aesop.RuleSetName.isReserved", "kind": "def", "line": 26}
+ ],
+ "private": [],
+ "missing": [],
+ "unread": "Unnamed instances, the names an `alias ⟨…⟩` command gives, and the names Lean generates for a declaration (constructors, recursors, derived instances) are not read from the source, so they are not listed."
+}

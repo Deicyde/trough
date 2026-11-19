@@ -1,0 +1,26 @@
+{
+ "schema": "trough-ledger/v1",
+ "library": "Aesop",
+ "repo": "leanprover-community/aesop",
+ "rev": "637fdbb8689a3387a82568b07355231f892144d7",
+ "module": "Aesop.RuleTac.Forward",
+ "file": "Aesop/RuleTac/Forward.lean",
+ "public": [
+  {"name": "Aesop.RuleTac.ForwardM.Context", "kind": "structure", "line": 22},
+  {"name": "Aesop.RuleTac.ForwardM.State", "kind": "structure", "line": 27},
+  {"name": "Aesop.RuleTac.ForwardM", "kind": "abbrev", "line": 32},
+  {"name": "Aesop.RuleTac.makeForwardHypProofs", "kind": "def", "line": 34},
+  {"name": "Aesop.RuleTac.makeForwardHypProofs'", "kind": "def", "line": 116},
+  {"name": "Aesop.RuleTac.assertForwardHyp", "kind": "def", "line": 125},
+  {"name": "Aesop.RuleTac.applyForwardRule", "kind": "def", "line": 146},
+  {"name": "Aesop.RuleTac.forwardExpr", "kind": "def", "line": 183},
+  {"name": "Aesop.RuleTac.forwardConst", "kind": "def", "line": 192},
+  {"name": "Aesop.RuleTac.forwardTerm", "kind": "def", "line": 197},
+  {"name": "Aesop.RuleTac.forward", "kind": "def", "line": 203},
+  {"name": "Aesop.RuleTac.forwardMatches", "kind": "def", "line": 209},
+  {"name": "Aesop.RuleTac.forwardMatch", "kind": "def", "line": 235}
+ ],
+ "private": [],
+ "missing": [],
+ "unread": "Unnamed instances, the names an `alias ⟨…⟩` command gives, and the names Lean generates for a declaration (constructors, recursors, derived instances) are not read from the source, so they are not listed."
+}

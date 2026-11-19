@@ -1,0 +1,23 @@
+{
+ "schema": "trough-ledger/v1",
+ "library": "Aesop",
+ "repo": "leanprover-community/aesop",
+ "rev": "637fdbb8689a3387a82568b07355231f892144d7",
+ "module": "Aesop.Tree.Check",
+ "file": "Aesop/Tree/Check.lean",
+ "public": [
+  {"name": "Aesop.MVarClusterRef.checkIds", "kind": "def", "line": 22},
+  {"name": "Aesop.MVarClusterRef.checkAcyclic", "kind": "def", "line": 41},
+  {"name": "Aesop.MVarClusterRef.checkConsistentParentChildLinks", "kind": "def", "line": 62},
+  {"name": "Aesop.MVarClusterRef.checkState", "kind": "def", "line": 89},
+  {"name": "Aesop.MVarClusterRef.checkIrrelevance", "kind": "def", "line": 108},
+  {"name": "Aesop.MVarClusterRef.checkMVars", "kind": "def", "line": 130},
+  {"name": "Aesop.MVarClusterRef.checkIntroducedMVars", "kind": "def", "line": 203},
+  {"name": "Aesop.MVarClusterRef.checkInvariants", "kind": "def", "line": 222},
+  {"name": "Aesop.MVarClusterRef.checkInvariantsIfEnabled", "kind": "def", "line": 232},
+  {"name": "Aesop.checkInvariantsIfEnabled", "kind": "def", "line": 239}
+ ],
+ "private": [],
+ "missing": [],
+ "unread": "Unnamed instances, the names an `alias ⟨…⟩` command gives, and the names Lean generates for a declaration (constructors, recursors, derived instances) are not read from the source, so they are not listed."
+}

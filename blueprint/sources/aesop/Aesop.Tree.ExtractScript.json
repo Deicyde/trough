@@ -1,0 +1,30 @@
+{
+ "schema": "trough-ledger/v1",
+ "library": "Aesop",
+ "repo": "leanprover-community/aesop",
+ "rev": "637fdbb8689a3387a82568b07355231f892144d7",
+ "module": "Aesop.Tree.ExtractScript",
+ "file": "Aesop/Tree/ExtractScript.lean",
+ "public": [
+  {"name": "Aesop.ExtractScriptM.State", "kind": "structure", "line": 21},
+  {"name": "Aesop.ExtractScriptM", "kind": "abbrev", "line": 25},
+  {"name": "Aesop.ExtractScriptM.run", "kind": "def", "line": 27},
+  {"name": "Aesop.ExtractScript.lazyStepToStep", "kind": "def", "line": 33},
+  {"name": "Aesop.ExtractScript.lazyStepsToSteps", "kind": "def", "line": 40},
+  {"name": "Aesop.ExtractScript.recordStep", "kind": "def", "line": 45},
+  {"name": "Aesop.ExtractScript.recordLazySteps", "kind": "def", "line": 48},
+  {"name": "Aesop.ExtractScript.visitGoal", "kind": "def", "line": 53},
+  {"name": "Aesop.ExtractScript.visitRapp", "kind": "def", "line": 64},
+  {"name": "Aesop.MVarClusterRef.extractScriptCore", "kind": "def", "line": 73},
+  {"name": "Aesop.GoalRef.extractScriptCore", "kind": "def", "line": 80},
+  {"name": "Aesop.RappRef.extractScriptCore", "kind": "def", "line": 88},
+  {"name": "Aesop.extractScript", "kind": "def", "line": 96},
+  {"name": "Aesop.MVarClusterRef.extractSafePrefixScriptCore", "kind": "def", "line": 101},
+  {"name": "Aesop.GoalRef.extractSafePrefixScriptCore", "kind": "def", "line": 105},
+  {"name": "Aesop.RappRef.extractSafePrefixScriptCore", "kind": "def", "line": 120},
+  {"name": "Aesop.extractSafePrefixScript", "kind": "def", "line": 132}
+ ],
+ "private": [],
+ "missing": [],
+ "unread": "Unnamed instances, the names an `alias ⟨…⟩` command gives, and the names Lean generates for a declaration (constructors, recursors, derived instances) are not read from the source, so they are not listed."
+}

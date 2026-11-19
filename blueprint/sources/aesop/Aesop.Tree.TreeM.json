@@ -1,0 +1,28 @@
+{
+ "schema": "trough-ledger/v1",
+ "library": "Aesop",
+ "repo": "leanprover-community/aesop",
+ "rev": "637fdbb8689a3387a82568b07355231f892144d7",
+ "module": "Aesop.Tree.TreeM",
+ "file": "Aesop/Tree/TreeM.lean",
+ "public": [
+  {"name": "Aesop.Tree", "kind": "structure", "line": 19},
+  {"name": "Aesop.mkInitialTree", "kind": "def", "line": 31},
+  {"name": "Aesop.TreeM.Context", "kind": "structure", "line": 72},
+  {"name": "Aesop.TreeM.State", "kind": "structure", "line": 76},
+  {"name": "Aesop.TreeM", "kind": "abbrev", "line": 79},
+  {"name": "Aesop.TreeM.run'", "kind": "def", "line": 98},
+  {"name": "Aesop.getRootMVarCluster", "kind": "def", "line": 104},
+  {"name": "Aesop.getRootMetaState", "kind": "def", "line": 107},
+  {"name": "Aesop.getRootGoal", "kind": "def", "line": 110},
+  {"name": "Aesop.getRootMVarId", "kind": "def", "line": 118},
+  {"name": "Aesop.incrementNumGoals", "kind": "def", "line": 122},
+  {"name": "Aesop.incrementNumRapps", "kind": "def", "line": 125},
+  {"name": "Aesop.getAllIntroducedMVars", "kind": "def", "line": 128},
+  {"name": "Aesop.getAndIncrementNextGoalId", "kind": "def", "line": 131},
+  {"name": "Aesop.getAndIncrementNextRappId", "kind": "def", "line": 136}
+ ],
+ "private": [],
+ "missing": [],
+ "unread": "Unnamed instances, the names an `alias ⟨…⟩` command gives, and the names Lean generates for a declaration (constructors, recursors, derived instances) are not read from the source, so they are not listed."
+}

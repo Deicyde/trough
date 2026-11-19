@@ -1,0 +1,20 @@
+{
+ "schema": "trough-ledger/v1",
+ "library": "Aesop",
+ "repo": "leanprover-community/aesop",
+ "rev": "637fdbb8689a3387a82568b07355231f892144d7",
+ "module": "Aesop.Tree.Traversal",
+ "file": "Aesop/Tree/Traversal.lean",
+ "public": [
+  {"name": "Aesop.TreeRef", "kind": "inductive", "line": 14},
+  {"name": "Aesop.traverseDown", "kind": "def", "line": 33},
+  {"name": "Aesop.traverseUp", "kind": "def", "line": 48},
+  {"name": "Aesop.preTraverseDown", "kind": "def", "line": 68},
+  {"name": "Aesop.preTraverseUp", "kind": "def", "line": 80},
+  {"name": "Aesop.postTraverseDown", "kind": "def", "line": 91},
+  {"name": "Aesop.postTraverseUp", "kind": "def", "line": 103}
+ ],
+ "private": [],
+ "missing": [],
+ "unread": "Unnamed instances, the names an `alias ⟨…⟩` command gives, and the names Lean generates for a declaration (constructors, recursors, derived instances) are not read from the source, so they are not listed."
+}

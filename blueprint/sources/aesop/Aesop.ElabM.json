@@ -1,0 +1,22 @@
+{
+ "schema": "trough-ledger/v1",
+ "library": "Aesop",
+ "repo": "leanprover-community/aesop",
+ "rev": "637fdbb8689a3387a82568b07355231f892144d7",
+ "module": "Aesop.ElabM",
+ "file": "Aesop/ElabM.lean",
+ "public": [
+  {"name": "Aesop.ElabM.Context", "kind": "structure", "line": 16},
+  {"name": "Aesop.ElabM.Context.forAdditionalRules", "kind": "def", "line": 22},
+  {"name": "Aesop.ElabM.Context.forAdditionalGlobalRules", "kind": "def", "line": 29},
+  {"name": "Aesop.ElabM.Context.forErasing", "kind": "def", "line": 33},
+  {"name": "Aesop.ElabM.Context.forGlobalErasing", "kind": "def", "line": 38},
+  {"name": "Aesop.ElabM", "kind": "abbrev", "line": 45},
+  {"name": "Aesop.ElabM.run", "kind": "def", "line": 52},
+  {"name": "Aesop.shouldParsePriorities", "kind": "def", "line": 55},
+  {"name": "Aesop.getGoal", "kind": "def", "line": 58}
+ ],
+ "private": [],
+ "missing": [],
+ "unread": "Unnamed instances, the names an `alias ⟨…⟩` command gives, and the names Lean generates for a declaration (constructors, recursors, derived instances) are not read from the source, so they are not listed."
+}

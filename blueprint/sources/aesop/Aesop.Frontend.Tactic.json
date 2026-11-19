@@ -1,0 +1,21 @@
+{
+ "schema": "trough-ledger/v1",
+ "library": "Aesop",
+ "repo": "leanprover-community/aesop",
+ "rev": "637fdbb8689a3387a82568b07355231f892144d7",
+ "module": "Aesop.Frontend.Tactic",
+ "file": "Aesop/Frontend/Tactic.lean",
+ "public": [
+  {"name": "Aesop.Frontend.elabConfigUnsafe", "kind": "def", "line": 73},
+  {"name": "Aesop.Frontend.elabOptions", "kind": "def", "line": 81},
+  {"name": "Aesop.Frontend.elabSimpConfig", "kind": "def", "line": 84},
+  {"name": "Aesop.Frontend.elabSimpConfigCtx", "kind": "def", "line": 87},
+  {"name": "Aesop.Frontend.TacticConfig", "kind": "structure", "line": 90},
+  {"name": "Aesop.Frontend.TacticConfig.parse", "kind": "def", "line": 100},
+  {"name": "Aesop.Frontend.TacticConfig.updateRuleSet", "kind": "def", "line": 170},
+  {"name": "Aesop.Frontend.TacticConfig.getRuleSet", "kind": "def", "line": 188}
+ ],
+ "private": [],
+ "missing": [],
+ "unread": "Unnamed instances, the names an `alias ⟨…⟩` command gives, and the names Lean generates for a declaration (constructors, recursors, derived instances) are not read from the source, so they are not listed."
+}

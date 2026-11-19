@@ -1,0 +1,19 @@
+{
+ "schema": "trough-ledger/v1",
+ "library": "Aesop",
+ "repo": "leanprover-community/aesop",
+ "rev": "637fdbb8689a3387a82568b07355231f892144d7",
+ "module": "Aesop.Util.Unfold",
+ "file": "Aesop/Util/Unfold.lean",
+ "public": [
+  {"name": "Aesop.mkUnfoldSimpContext", "kind": "def", "line": 21},
+  {"name": "Aesop.unfoldManyCore", "kind": "def", "line": 25},
+  {"name": "Aesop.unfoldMany", "kind": "def", "line": 67},
+  {"name": "Aesop.unfoldManyTarget", "kind": "def", "line": 76},
+  {"name": "Aesop.unfoldManyAt", "kind": "def", "line": 86},
+  {"name": "Aesop.unfoldManyStar", "kind": "def", "line": 99}
+ ],
+ "private": [],
+ "missing": [],
+ "unread": "Unnamed instances, the names an `alias ⟨…⟩` command gives, and the names Lean generates for a declaration (constructors, recursors, derived instances) are not read from the source, so they are not listed."
+}

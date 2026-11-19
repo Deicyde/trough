@@ -1,0 +1,21 @@
+{
+ "schema": "trough-ledger/v1",
+ "library": "Aesop",
+ "repo": "leanprover-community/aesop",
+ "rev": "637fdbb8689a3387a82568b07355231f892144d7",
+ "module": "Aesop.Rule.Name",
+ "file": "Aesop/Rule/Name.lean",
+ "public": [
+  {"name": "Aesop.PhaseName", "kind": "inductive", "line": 17},
+  {"name": "Aesop.ScopeName", "kind": "inductive", "line": 39},
+  {"name": "Aesop.BuilderName", "kind": "inductive", "line": 59},
+  {"name": "Aesop.RuleName", "kind": "structure", "line": 94},
+  {"name": "Aesop.RuleName.compare", "kind": "def", "line": 114},
+  {"name": "Aesop.RuleName.quickCompare", "kind": "def", "line": 120},
+  {"name": "Aesop.getRuleNameForExpr", "kind": "def", "line": 144},
+  {"name": "Aesop.DisplayRuleName", "kind": "inductive", "line": 150}
+ ],
+ "private": [],
+ "missing": [],
+ "unread": "Unnamed instances, the names an `alias ⟨…⟩` command gives, and the names Lean generates for a declaration (constructors, recursors, derived instances) are not read from the source, so they are not listed."
+}

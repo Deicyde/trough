@@ -1,0 +1,21 @@
+{
+ "schema": "trough-ledger/v1",
+ "library": "Aesop",
+ "repo": "leanprover-community/aesop",
+ "rev": "637fdbb8689a3387a82568b07355231f892144d7",
+ "module": "Aesop.Tree.Tracing",
+ "file": "Aesop/Tree/Tracing.lean",
+ "public": [
+  {"name": "Aesop.Goal.withHeadlineTraceNode", "kind": "def", "line": 18},
+  {"name": "Aesop.Goal.traceMetadata", "kind": "def", "line": 29},
+  {"name": "Aesop.Rapp.withHeadlineTraceNode", "kind": "def", "line": 83},
+  {"name": "Aesop.Rapp.traceMetadata", "kind": "def", "line": 90},
+  {"name": "Aesop.Goal.traceTreeCore", "kind": "def", "line": 106},
+  {"name": "Aesop.Rapp.traceTreeCore", "kind": "def", "line": 116},
+  {"name": "Aesop.Goal.traceTree", "kind": "def", "line": 125},
+  {"name": "Aesop.Rapp.traceTree", "kind": "def", "line": 129}
+ ],
+ "private": [],
+ "missing": [],
+ "unread": "Unnamed instances, the names an `alias ⟨…⟩` command gives, and the names Lean generates for a declaration (constructors, recursors, derived instances) are not read from the source, so they are not listed."
+}

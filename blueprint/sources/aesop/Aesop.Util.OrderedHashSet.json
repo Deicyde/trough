@@ -1,0 +1,23 @@
+{
+ "schema": "trough-ledger/v1",
+ "library": "Aesop",
+ "repo": "leanprover-community/aesop",
+ "rev": "637fdbb8689a3387a82568b07355231f892144d7",
+ "module": "Aesop.Util.OrderedHashSet",
+ "file": "Aesop/Util/OrderedHashSet.lean",
+ "public": [
+  {"name": "Aesop.OrderedHashSet", "kind": "structure", "line": 12},
+  {"name": "Aesop.OrderedHashSet.emptyWithCapacity", "kind": "def", "line": 24},
+  {"name": "Aesop.OrderedHashSet.insert", "kind": "def", "line": 28},
+  {"name": "Aesop.OrderedHashSet.insertMany", "kind": "def", "line": 36},
+  {"name": "Aesop.OrderedHashSet.ofArray", "kind": "def", "line": 43},
+  {"name": "Aesop.OrderedHashSet.contains", "kind": "def", "line": 46},
+  {"name": "Aesop.OrderedHashSet.foldlM", "kind": "def", "line": 56},
+  {"name": "Aesop.OrderedHashSet.foldl", "kind": "def", "line": 60},
+  {"name": "Aesop.OrderedHashSet.foldrM", "kind": "def", "line": 64},
+  {"name": "Aesop.OrderedHashSet.foldr", "kind": "def", "line": 68}
+ ],
+ "private": [],
+ "missing": [],
+ "unread": "Unnamed instances, the names an `alias ⟨…⟩` command gives, and the names Lean generates for a declaration (constructors, recursors, derived instances) are not read from the source, so they are not listed."
+}

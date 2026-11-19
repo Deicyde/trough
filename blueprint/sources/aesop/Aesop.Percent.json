@@ -1,0 +1,20 @@
+{
+ "schema": "trough-ledger/v1",
+ "library": "Aesop",
+ "repo": "leanprover-community/aesop",
+ "rev": "637fdbb8689a3387a82568b07355231f892144d7",
+ "module": "Aesop.Percent",
+ "file": "Aesop/Percent.lean",
+ "public": [
+  {"name": "Aesop.Percent", "kind": "structure", "line": 18},
+  {"name": "Aesop.Percent.ofFloat", "kind": "def", "line": 24},
+  {"name": "Aesop.Percent.δ", "kind": "def", "line": 31},
+  {"name": "Aesop.Percent.hundred", "kind": "def", "line": 60},
+  {"name": "Aesop.Percent.fifty", "kind": "def", "line": 63},
+  {"name": "Aesop.Percent.toHumanString", "kind": "def", "line": 66},
+  {"name": "Aesop.Percent.ofNat", "kind": "def", "line": 74}
+ ],
+ "private": [],
+ "missing": [],
+ "unread": "Unnamed instances, the names an `alias ⟨…⟩` command gives, and the names Lean generates for a declaration (constructors, recursors, derived instances) are not read from the source, so they are not listed."
+}

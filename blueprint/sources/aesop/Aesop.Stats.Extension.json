@@ -1,0 +1,22 @@
+{
+ "schema": "trough-ledger/v1",
+ "library": "Aesop",
+ "repo": "leanprover-community/aesop",
+ "rev": "637fdbb8689a3387a82568b07355231f892144d7",
+ "module": "Aesop.Stats.Extension",
+ "file": "Aesop/Stats/Extension.lean",
+ "public": [
+  {"name": "Aesop.StatsExtensionEntry", "kind": "structure", "line": 16},
+  {"name": "Aesop.StatsExtensionEntry.forCurrentFile", "kind": "def", "line": 36},
+  {"name": "Aesop.StatsExtension", "kind": "abbrev", "line": 45},
+  {"name": "Aesop.StatsExtension.importedEntries", "kind": "def", "line": 47},
+  {"name": "Aesop.recordStatsIfEnabled", "kind": "def", "line": 58},
+  {"name": "Aesop.recordStatsForCurrentFileIfEnabled", "kind": "def", "line": 63},
+  {"name": "Aesop.StatsArray", "kind": "abbrev", "line": 69},
+  {"name": "Aesop.mkStatsArray", "kind": "def", "line": 71},
+  {"name": "Aesop.getStatsArray", "kind": "def", "line": 81}
+ ],
+ "private": [],
+ "missing": [],
+ "unread": "Unnamed instances, the names an `alias ⟨…⟩` command gives, and the names Lean generates for a declaration (constructors, recursors, derived instances) are not read from the source, so they are not listed."
+}

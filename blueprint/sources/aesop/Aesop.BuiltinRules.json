@@ -1,0 +1,17 @@
+{
+ "schema": "trough-ledger/v1",
+ "library": "Aesop",
+ "repo": "leanprover-community/aesop",
+ "rev": "637fdbb8689a3387a82568b07355231f892144d7",
+ "module": "Aesop.BuiltinRules",
+ "file": "Aesop/BuiltinRules.lean",
+ "public": [
+  {"name": "Aesop.BuiltinRules.not_intro", "kind": "theorem", "line": 48},
+  {"name": "Aesop.BuiltinRules.empty_false", "kind": "theorem", "line": 51},
+  {"name": "Aesop.BuiltinRules.pEmpty_false", "kind": "theorem", "line": 54},
+  {"name": "Aesop.BuiltinRules.heq_iff_eq", "kind": "theorem", "line": 61}
+ ],
+ "private": [],
+ "missing": [],
+ "unread": "Unnamed instances, the names an `alias ⟨…⟩` command gives, and the names Lean generates for a declaration (constructors, recursors, derived instances) are not read from the source, so they are not listed."
+}
