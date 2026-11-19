@@ -47,6 +47,31 @@
  "closure_files": 0,
  "closure_sorry": [],
  "closure_axioms": 0,
+ "root_modules": [
+  {
+   "name": "Miri",
+   "file": "Miri.lean"
+  },
+  {
+   "name": "MiriTests",
+   "file": "MiriTests.lean"
+  },
+  {
+   "name": "NativeStdioHost",
+   "file": "tools/NativeStdioHost.lean"
+  },
+  {
+   "name": "NativeStdioProtocol",
+   "file": "tools/NativeStdioProtocol.lean"
+  }
+ ],
+ "root_closure_files": 689,
+ "root_closure_sorry": [
+  "Miri/DataStructures/DedupRangeMap.lean",
+  "Miri/DataStructures/RangeObjectMap.lean",
+  "Miri/Memory/AllocAddresses/AddressGenerator.lean"
+ ],
+ "root_closure_axioms": 0,
  "unclosed_files": 0,
  "headline_rule": null,
  "headline_count": 0,

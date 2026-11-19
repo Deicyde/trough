@@ -6,7 +6,9 @@ statement: formalized
 proof: formalized
 ---
 
-# Uniform sheafy Tate rings that are not stably uniform — the Lean formalisation
+# uniform-sheafy-tate-domains-lean
+
+*Uniform sheafy Tate rings that are not stably uniform — the Lean formalisation*
 
 [CBirkbeck/uniform-sheafy-tate-domains-lean](https://github.com/CBirkbeck/uniform-sheafy-tate-domains-lean) at commit [2f45865e](https://github.com/CBirkbeck/uniform-sheafy-tate-domains-lean/tree/2f45865e87d20dd460cc5a14d04850bf03be4570), 2026-08-22.
 

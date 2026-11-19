@@ -62,6 +62,137 @@
  "closure_files": 0,
  "closure_sorry": [],
  "closure_axioms": 0,
+ "root_modules": [
+  {
+   "name": "Challenge",
+   "file": "Challenge.lean"
+  },
+  {
+   "name": "ExactCore",
+   "file": "ExactCore.lean"
+  },
+  {
+   "name": "FixActualBridge",
+   "file": "FixActualBridge.lean"
+  },
+  {
+   "name": "FixTemplateBridge",
+   "file": "FixTemplateBridge.lean"
+  },
+  {
+   "name": "FixTemplateCore",
+   "file": "FixTemplateCore.lean"
+  },
+  {
+   "name": "FoundationBridge",
+   "file": "FoundationBridge.lean"
+  },
+  {
+   "name": "MappingTemplateBridge",
+   "file": "MappingTemplateBridge.lean"
+  },
+  {
+   "name": "MappingTemplateCore",
+   "file": "MappingTemplateCore.lean"
+  },
+  {
+   "name": "NthBridge",
+   "file": "NthBridge.lean"
+  },
+  {
+   "name": "NthData",
+   "file": "NthData.lean"
+  },
+  {
+   "name": "OperatorBridge",
+   "file": "OperatorBridge.lean"
+  },
+  {
+   "name": "PA196",
+   "file": "PA196.lean"
+  },
+  {
+   "name": "PACore",
+   "file": "PACore.lean"
+  },
+  {
+   "name": "PAProof",
+   "file": "PAProof.lean"
+  },
+  {
+   "name": "PATheory",
+   "file": "PATheory.lean"
+  },
+  {
+   "name": "PATheoryBridge",
+   "file": "PATheoryBridge.lean"
+  },
+  {
+   "name": "PRTemplateBridge",
+   "file": "PRTemplateBridge.lean"
+  },
+  {
+   "name": "PRTemplateCore",
+   "file": "PRTemplateCore.lean"
+  },
+  {
+   "name": "PrimitiveCoreBridge",
+   "file": "PrimitiveCoreBridge.lean"
+  },
+  {
+   "name": "PrimitiveData",
+   "file": "PrimitiveData.lean"
+  },
+  {
+   "name": "PrimitiveDomainBridge",
+   "file": "PrimitiveDomainBridge.lean"
+  },
+  {
+   "name": "PrimitiveEdgeBridge",
+   "file": "PrimitiveEdgeBridge.lean"
+  },
+  {
+   "name": "PrimitiveMemberBridge",
+   "file": "PrimitiveMemberBridge.lean"
+  },
+  {
+   "name": "PrimitivePair3Bridge",
+   "file": "PrimitivePair3Bridge.lean"
+  },
+  {
+   "name": "PrimitiveUnderBridge",
+   "file": "PrimitiveUnderBridge.lean"
+  },
+  {
+   "name": "ProofBridge",
+   "file": "ProofBridge.lean"
+  },
+  {
+   "name": "RowBridge",
+   "file": "RowBridge.lean"
+  },
+  {
+   "name": "SeqTemplateBridge",
+   "file": "SeqTemplateBridge.lean"
+  },
+  {
+   "name": "SeqTemplateCore",
+   "file": "SeqTemplateCore.lean"
+  },
+  {
+   "name": "TemplateNthBridge",
+   "file": "TemplateNthBridge.lean"
+  },
+  {
+   "name": "TemplateNthCore",
+   "file": "TemplateNthCore.lean"
+  }
+ ],
+ "root_closure_files": 1960,
+ "root_closure_sorry": [
+  "Challenge.lean"
+ ],
+ "root_closure_axioms": 0,
  "unclosed_files": 0,
  "headline_rule": null,
  "headline_count": 0,

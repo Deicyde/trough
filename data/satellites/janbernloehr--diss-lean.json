@@ -38,6 +38,15 @@
  "closure_files": 11,
  "closure_sorry": [],
  "closure_axioms": 0,
+ "root_modules": [
+  {
+   "name": "NLS",
+   "file": "NLS.lean"
+  }
+ ],
+ "root_closure_files": 4674,
+ "root_closure_sorry": [],
+ "root_closure_axioms": 0,
  "unclosed_files": 0,
  "headline_rule": "readme",
  "headline_count": 2,

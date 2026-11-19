@@ -48,6 +48,33 @@
   "SeLe4n/Kernel/Capability/Operations.lean"
  ],
  "closure_axioms": 0,
+ "root_modules": [
+  {
+   "name": "SeLe4n",
+   "file": "SeLe4n.lean"
+  },
+  {
+   "name": "SeLe4n.Platform.Exerciser",
+   "file": "SeLe4n/Platform/Exerciser.lean"
+  },
+  {
+   "name": "SeLe4n.Platform.QemuVirt.Exerciser",
+   "file": "SeLe4n/Platform/QemuVirt/Exerciser.lean"
+  },
+  {
+   "name": "SeLe4n.Platform.RPi5.Exerciser",
+   "file": "SeLe4n/Platform/RPi5/Exerciser.lean"
+  },
+  {
+   "name": "SeLe4n.Testing.BoundaryProbes",
+   "file": "SeLe4n/Testing/BoundaryProbes.lean"
+  }
+ ],
+ "root_closure_files": 479,
+ "root_closure_sorry": [
+  "SeLe4n/Kernel/Capability/Operations.lean"
+ ],
+ "root_closure_axioms": 0,
  "unclosed_files": 0,
  "headline_rule": "readme",
  "headline_count": 1,

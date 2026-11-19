@@ -38,6 +38,21 @@
  "closure_files": 0,
  "closure_sorry": [],
  "closure_axioms": 0,
+ "root_modules": [
+  {
+   "name": "YesMetaZFC",
+   "file": "YesMetaZFC.lean"
+  }
+ ],
+ "root_closure_files": 794,
+ "root_closure_sorry": [
+  "YesMetaZFC/Automation/HostFirstOrder/Backend.lean",
+  "YesMetaZFC/Automation/HostHigherOrder.lean",
+  "YesMetaZFC/Automation/HostRules/Backend.lean",
+  "YesMetaZFC/Automation/Request.lean",
+  "YesMetaZFC/SetTheory/Automation/Context.lean"
+ ],
+ "root_closure_axioms": 0,
  "unclosed_files": 1,
  "headline_rule": null,
  "headline_count": 0,

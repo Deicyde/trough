@@ -46,6 +46,31 @@
  "closure_files": 41,
  "closure_sorry": [],
  "closure_axioms": 0,
+ "root_modules": [
+  {
+   "name": "Blanc",
+   "file": "Blanc.lean"
+  }
+ ],
+ "root_closure_files": 980,
+ "root_closure_sorry": [
+  "Blanc/Composition/BuilderRequestPublicBounds.lean",
+  "Blanc/Composition/BuilderRequestPublicStorage.lean",
+  "Blanc/Composition/Corpus/Proofs/RingHistory.lean",
+  "Blanc/Corpus/Freeze/DepositLedger.lean",
+  "Blanc/Lift/BuilderRequest/Deposit/FeeDomain.lean",
+  "Blanc/Lift/BuilderRequest/Deposit/Message.lean",
+  "Blanc/Lift/BuilderRequest/Deposit/Properties.lean",
+  "Blanc/Lift/BuilderRequest/Exit/FeeDomain.lean",
+  "Blanc/Lift/BuilderRequest/Exit/Message.lean",
+  "Blanc/Lift/BuilderRequest/Exit/Properties.lean",
+  "Blanc/Lift/BuilderRequest/FeeDomain.lean",
+  "Blanc/Lift/BuilderRequest/Message.lean",
+  "Blanc/Lift/BuilderRequest/Surplus.lean",
+  "Blanc/Lift/BuilderRequest/Transaction.lean",
+  "Blanc/Lift/Cursor.lean"
+ ],
+ "root_closure_axioms": 0,
  "unclosed_files": 0,
  "headline_rule": "readme",
  "headline_count": 8,

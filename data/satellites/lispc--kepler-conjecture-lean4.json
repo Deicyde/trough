@@ -38,6 +38,15 @@
   "lean/Kepler/Assembly.lean"
  ],
  "closure_axioms": 0,
+ "root_modules": [
+  {
+   "name": "Kepler",
+   "file": "lean/Kepler.lean"
+  }
+ ],
+ "root_closure_files": 962,
+ "root_closure_sorry": [],
+ "root_closure_axioms": 0,
  "unclosed_files": 0,
  "headline_rule": "readme",
  "headline_count": 2,

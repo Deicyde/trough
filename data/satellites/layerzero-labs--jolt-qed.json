@@ -52,6 +52,31 @@
  "closure_files": 0,
  "closure_sorry": [],
  "closure_axioms": 0,
+ "root_modules": [
+  {
+   "name": "JoltBytecode",
+   "file": "JoltBytecode.lean"
+  },
+  {
+   "name": "JoltConstraints",
+   "file": "JoltConstraints.lean"
+  },
+  {
+   "name": "LeanRV64D",
+   "file": "LeanRV64D.lean"
+  }
+ ],
+ "root_closure_files": 673,
+ "root_closure_sorry": [
+  "JoltBytecode/InstructionEquivalence/Instructions/System/Mret.lean",
+  "JoltBytecode/RiscvInstruction.lean",
+  "JoltConstraints/theorems/Completeness/RamAddrEqRs1PlusImmMinusLookupIfLoadStore.lean",
+  "JoltConstraints/theorems/Completeness/RamValEqInitialPlusPrefixRamInc.lean",
+  "JoltConstraints/theorems/Completeness/RamValFinalEqInitialPlusRamInc.lean",
+  "JoltConstraints/theorems/Completeness/RightLookupAdd.lean",
+  "JoltConstraints/theorems/Completeness/RightLookupEqRightInputOtherwise.lean"
+ ],
+ "root_closure_axioms": 75,
  "unclosed_files": 0,
  "headline_rule": null,
  "headline_count": 0,

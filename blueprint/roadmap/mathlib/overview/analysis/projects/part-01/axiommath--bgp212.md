@@ -16,7 +16,7 @@ proof: formalized
 
 ## Depends on
 
-- [Projects building on PNT+ (5)](../../../../../pnt-plus/projects/README.md)
+- [PrimeGapsLib](../../../../../pnt-plus/projects/axiommath--primegapslib.md)
 
 ## Proof depends on
 
@@ -51,7 +51,7 @@ No file its headlines import, directly or not (11 files), holds `sorry`, `admit`
 ## Builds on
 
 - Mathlib, at [288f16d9](https://github.com/leanprover-community/mathlib4/tree/288f16d9a07189233a9bc5e1c143c38d1f3f4d37).
-- [PrimeGapsLib](../../../../../pnt-plus/projects/README.md) at `1faa7b14`.
+- [PrimeGapsLib](../../../../../pnt-plus/projects/axiommath--primegapslib.md) at `1faa7b14`.
 
 ## Placement
 

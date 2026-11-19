@@ -58,6 +58,19 @@
  "closure_files": 0,
  "closure_sorry": [],
  "closure_axioms": 0,
+ "root_modules": [
+  {
+   "name": "PicoFV32",
+   "file": "PicoFV32.lean"
+  },
+  {
+   "name": "PicoFV64",
+   "file": "PicoFV64.lean"
+  }
+ ],
+ "root_closure_files": 272,
+ "root_closure_sorry": [],
+ "root_closure_axioms": 0,
  "unclosed_files": 36,
  "headline_rule": null,
  "headline_count": 0,

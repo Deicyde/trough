@@ -67,6 +67,26 @@
   "Xv6/UserHeap.lean"
  ],
  "closure_axioms": 0,
+ "root_modules": [
+  {
+   "name": "MachCSL",
+   "file": "MachCSL.lean"
+  },
+  {
+   "name": "Vtest",
+   "file": "vtest-lean/Vtest.lean"
+  },
+  {
+   "name": "Xv6",
+   "file": "Xv6.lean"
+  }
+ ],
+ "root_closure_files": 2844,
+ "root_closure_sorry": [
+  "Xv6/UShLexRedir.lean",
+  "Xv6/UserHeap.lean"
+ ],
+ "root_closure_axioms": 0,
  "unclosed_files": 0,
  "headline_rule": "readme",
  "headline_count": 3,

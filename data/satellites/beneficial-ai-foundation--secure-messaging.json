@@ -50,6 +50,25 @@
  "closure_files": 0,
  "closure_sorry": [],
  "closure_axioms": 0,
+ "root_modules": [
+  {
+   "name": "SecureMessaging",
+   "file": "SecureMessaging.lean"
+  },
+  {
+   "name": "SecureMessagingDocs",
+   "file": "docs/SecureMessagingDocs.lean"
+  },
+  {
+   "name": "ToVCVio",
+   "file": "ToVCVio.lean"
+  }
+ ],
+ "root_closure_files": 378,
+ "root_closure_sorry": [
+  "SecureMessaging/PRFPRNG/Defs.lean"
+ ],
+ "root_closure_axioms": 2,
  "unclosed_files": 0,
  "headline_rule": null,
  "headline_count": 0,

@@ -46,6 +46,25 @@
  "closure_files": 38,
  "closure_sorry": [],
  "closure_axioms": 0,
+ "root_modules": [
+  {
+   "name": "Challenge",
+   "file": "Challenge.lean"
+  },
+  {
+   "name": "LinearAlgebraLemma",
+   "file": "LinearAlgebraLemma.lean"
+  },
+  {
+   "name": "Solution",
+   "file": "Solution.lean"
+  }
+ ],
+ "root_closure_files": 205,
+ "root_closure_sorry": [
+  "Challenge.lean"
+ ],
+ "root_closure_axioms": 0,
  "unclosed_files": 0,
  "headline_rule": "blueprint",
  "headline_count": 1,

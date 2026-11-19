@@ -58,6 +58,22 @@
  "closure_files": 0,
  "closure_sorry": [],
  "closure_axioms": 0,
+ "root_modules": [
+  {
+   "name": "SolidCore",
+   "file": "SolidCore.lean"
+  },
+  {
+   "name": "SolidCore.Solidity.Interface.Statements",
+   "file": "SolidCore/Solidity/Interface/Statements.lean"
+  }
+ ],
+ "root_closure_files": 178,
+ "root_closure_sorry": [
+  "SolidCore/Solidity/Interface/Expressions.lean",
+  "SolidCore/Solidity/Interface/Foundation.lean"
+ ],
+ "root_closure_axioms": 0,
  "unclosed_files": 0,
  "headline_rule": null,
  "headline_count": 0,

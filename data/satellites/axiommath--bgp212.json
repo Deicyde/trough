@@ -52,6 +52,25 @@
  "closure_files": 11,
  "closure_sorry": [],
  "closure_axioms": 0,
+ "root_modules": [
+  {
+   "name": "Gap212",
+   "file": "Gap212.lean"
+  },
+  {
+   "name": "Gap212Challenge",
+   "file": "Gap212Challenge.lean"
+  },
+  {
+   "name": "Gap212Solution",
+   "file": "Gap212Solution.lean"
+  }
+ ],
+ "root_closure_files": 254,
+ "root_closure_sorry": [
+  "Gap212Challenge/Basic.lean"
+ ],
+ "root_closure_axioms": 0,
  "unclosed_files": 0,
  "headline_rule": "main",
  "headline_count": 5,

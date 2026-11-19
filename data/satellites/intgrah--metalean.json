@@ -38,6 +38,17 @@
  "closure_files": 0,
  "closure_sorry": [],
  "closure_axioms": 0,
+ "root_modules": [
+  {
+   "name": "Metalean",
+   "file": "Metalean.lean"
+  }
+ ],
+ "root_closure_files": 286,
+ "root_closure_sorry": [
+  "Metalean/Syntax/Inductive/Ctor.lean"
+ ],
+ "root_closure_axioms": 1,
  "unclosed_files": 0,
  "headline_rule": null,
  "headline_count": 0,

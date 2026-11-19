@@ -56,6 +56,29 @@
  "closure_files": 90,
  "closure_sorry": [],
  "closure_axioms": 0,
+ "root_modules": [
+  {
+   "name": "GraphQL",
+   "file": "GraphQL.lean"
+  },
+  {
+   "name": "Lint.ImportClosure",
+   "file": "Lint/ImportClosure.lean"
+  },
+  {
+   "name": "Proofs",
+   "file": "Proofs.lean"
+  },
+  {
+   "name": "Tests",
+   "file": "Tests.lean"
+  }
+ ],
+ "root_closure_files": 1678,
+ "root_closure_sorry": [
+  "Proofs/GraphQL/IncrementalDelivery/WorkQueueAlternativeImpl/IntervalPlanning.lean"
+ ],
+ "root_closure_axioms": 0,
  "unclosed_files": 81,
  "headline_rule": "readme",
  "headline_count": 1,

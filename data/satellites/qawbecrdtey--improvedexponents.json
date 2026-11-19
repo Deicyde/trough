@@ -58,6 +58,33 @@
  "closure_files": 450,
  "closure_sorry": [],
  "closure_axioms": 0,
+ "root_modules": [
+  {
+   "name": "EndStatement",
+   "file": "upstream/3sum-apsp/EndStatement.lean"
+  },
+  {
+   "name": "ImprovedChallenge",
+   "file": "ImprovedChallenge.lean"
+  },
+  {
+   "name": "ImprovedExponents",
+   "file": "ImprovedExponents.lean"
+  },
+  {
+   "name": "ImprovedSolution",
+   "file": "ImprovedSolution.lean"
+  },
+  {
+   "name": "PaperStatements",
+   "file": "upstream/3sum-apsp/PaperStatements.lean"
+  }
+ ],
+ "root_closure_files": 522,
+ "root_closure_sorry": [
+  "ImprovedChallenge.lean"
+ ],
+ "root_closure_axioms": 0,
  "unclosed_files": 0,
  "headline_rule": "readme",
  "headline_count": 25,

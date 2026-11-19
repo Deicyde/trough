@@ -71,6 +71,33 @@
   "proof/ConRon/Refine/HashMap2.lean"
  ],
  "closure_axioms": 0,
+ "root_modules": [
+  {
+   "name": "ConRon",
+   "file": "proof/ConRon.lean"
+  },
+  {
+   "name": "ConRon.Arena",
+   "file": "proof/ConRon/Arena.lean"
+  },
+  {
+   "name": "ConRon.Bridge",
+   "file": "proof/ConRon/Bridge.lean"
+  },
+  {
+   "name": "ConRon.Capstone",
+   "file": "proof/ConRon/Capstone.lean"
+  },
+  {
+   "name": "ConRon.Refine2",
+   "file": "proof/ConRon/Refine2.lean"
+  }
+ ],
+ "root_closure_files": 379,
+ "root_closure_sorry": [
+  "proof/ConRon/Refine/HashMap2.lean"
+ ],
+ "root_closure_axioms": 0,
  "unclosed_files": 0,
  "headline_rule": "readme",
  "headline_count": 2,

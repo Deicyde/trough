@@ -110,6 +110,147 @@
  "closure_files": 96,
  "closure_sorry": [],
  "closure_axioms": 0,
+ "root_modules": [
+  {
+   "name": "Basic",
+   "file": "proof/Basic.lean"
+  },
+  {
+   "name": "Bounding",
+   "file": "proof/Bounding.lean"
+  },
+  {
+   "name": "Cayley",
+   "file": "proof/Cayley.lean"
+  },
+  {
+   "name": "ChippedM18",
+   "file": "proof/ChippedM18.lean"
+  },
+  {
+   "name": "ConvertPose",
+   "file": "proof/ConvertPose.lean"
+  },
+  {
+   "name": "DeltoidalHexecontahedron",
+   "file": "proof/DeltoidalHexecontahedron.lean"
+  },
+  {
+   "name": "EuclideanSpaceNotation",
+   "file": "proof/EuclideanSpaceNotation.lean"
+  },
+  {
+   "name": "Global",
+   "file": "proof/Global.lean"
+  },
+  {
+   "name": "MainTheorem",
+   "file": "proof/MainTheorem.lean"
+  },
+  {
+   "name": "MatrixPose",
+   "file": "proof/MatrixPose.lean"
+  },
+  {
+   "name": "Minimality",
+   "file": "proof/Minimality.lean"
+  },
+  {
+   "name": "MinimalityExtra",
+   "file": "proof/MinimalityExtra.lean"
+  },
+  {
+   "name": "Nopert",
+   "file": "proof/Nopert.lean"
+  },
+  {
+   "name": "Nopert231",
+   "file": "proof/Nopert231.lean"
+  },
+  {
+   "name": "ParallelBool",
+   "file": "proof/ParallelBool.lean"
+  },
+  {
+   "name": "PentagonalHexecontahedron",
+   "file": "proof/PentagonalHexecontahedron.lean"
+  },
+  {
+   "name": "PointSym",
+   "file": "proof/PointSym.lean"
+  },
+  {
+   "name": "Pose",
+   "file": "proof/Pose.lean"
+  },
+  {
+   "name": "PoseClasses",
+   "file": "proof/PoseClasses.lean"
+  },
+  {
+   "name": "PoseInterval",
+   "file": "proof/PoseInterval.lean"
+  },
+  {
+   "name": "PoseParam",
+   "file": "proof/PoseParam.lean"
+  },
+  {
+   "name": "ProofOfMainTheorem",
+   "file": "proof/ProofOfMainTheorem.lean"
+  },
+  {
+   "name": "ProofOfMinimalityExtra",
+   "file": "proof/ProofOfMinimalityExtra.lean"
+  },
+  {
+   "name": "RealMod",
+   "file": "proof/RealMod.lean"
+  },
+  {
+   "name": "Septopert",
+   "file": "proof/Septopert.lean"
+  },
+  {
+   "name": "SeptopertClassic",
+   "file": "proof/SeptopertClassic.lean"
+  },
+  {
+   "name": "SeptopertFamily",
+   "file": "proof/SeptopertFamily.lean"
+  },
+  {
+   "name": "SeptopertM12",
+   "file": "proof/SeptopertM12.lean"
+  },
+  {
+   "name": "SeptopertM18",
+   "file": "proof/SeptopertM18.lean"
+  },
+  {
+   "name": "SeptopertShell",
+   "file": "proof/SeptopertShell.lean"
+  },
+  {
+   "name": "SeptopertShellNative",
+   "file": "proof/SeptopertShellNative.lean"
+  },
+  {
+   "name": "SnubCube",
+   "file": "proof/SnubCube.lean"
+  },
+  {
+   "name": "SnubDodecahedron",
+   "file": "proof/SnubDodecahedron.lean"
+  },
+  {
+   "name": "Util",
+   "file": "proof/Util.lean"
+  }
+ ],
+ "root_closure_files": 479,
+ "root_closure_sorry": [],
+ "root_closure_axioms": 0,
  "unclosed_files": 0,
  "headline_rule": "main",
  "headline_count": 129,

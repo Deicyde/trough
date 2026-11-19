@@ -54,6 +54,31 @@
  "closure_files": 1031,
  "closure_sorry": [],
  "closure_axioms": 0,
+ "root_modules": [
+  {
+   "name": "DecoupledConsensusInternal",
+   "file": "DecoupledConsensusInternal.lean"
+  },
+  {
+   "name": "DecoupledConsensusModel",
+   "file": "DecoupledConsensusModel.lean"
+  },
+  {
+   "name": "DecoupledConsensusProofs",
+   "file": "DecoupledConsensusProofs.lean"
+  },
+  {
+   "name": "DecoupledConsensusStatements",
+   "file": "DecoupledConsensusStatements.lean"
+  },
+  {
+   "name": "DecoupledConsensusWitnesses",
+   "file": "DecoupledConsensusWitnesses.lean"
+  }
+ ],
+ "root_closure_files": 1044,
+ "root_closure_sorry": [],
+ "root_closure_axioms": 0,
  "unclosed_files": 0,
  "headline_rule": "readme",
  "headline_count": 1,

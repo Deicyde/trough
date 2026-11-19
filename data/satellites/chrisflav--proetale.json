@@ -56,6 +56,48 @@
  "closure_files": 0,
  "closure_sorry": [],
  "closure_axioms": 0,
+ "root_modules": [
+  {
+   "name": "Challenge",
+   "file": "Comparator/Challenge.lean"
+  },
+  {
+   "name": "Definitions",
+   "file": "Comparator/Definitions.lean"
+  },
+  {
+   "name": "Proetale",
+   "file": "Proetale.lean"
+  },
+  {
+   "name": "Solution",
+   "file": "Comparator/Solution.lean"
+  }
+ ],
+ "root_closure_files": 148,
+ "root_closure_sorry": [
+  "Comparator/Challenge.lean",
+  "Comparator/Solution.lean",
+  "Proetale/Algebra/Bijective.lean",
+  "Proetale/Algebra/HenselianLocalRing.lean",
+  "Proetale/Algebra/IndBijectiveOnStalks.lean",
+  "Proetale/Algebra/IndEtale.lean",
+  "Proetale/Algebra/IndWeaklyEtale.lean",
+  "Proetale/Algebra/IndZariski.lean",
+  "Proetale/Algebra/IntegralLocal.lean",
+  "Proetale/Algebra/WContractible.lean",
+  "Proetale/Algebra/WLocalization/Basic.lean",
+  "Proetale/Algebra/WStrictLocalization.lean",
+  "Proetale/Algebra/WeaklyEtaleField.lean",
+  "Proetale/Mathlib/AlgebraicGeometry/Sites/Small.lean",
+  "Proetale/Mathlib/CategoryTheory/MorphismProperty/Ind.lean",
+  "Proetale/Mathlib/CategoryTheory/MorphismProperty/IndSpreads.lean",
+  "Proetale/Mathlib/CategoryTheory/Sites/InducedTopology.lean",
+  "Proetale/Mathlib/RingTheory/Henselian.lean",
+  "Proetale/Mathlib/Topology/Connected/TotallyDisconnected.lean",
+  "Proetale/Morphisms/ProAffineEtale.lean"
+ ],
+ "root_closure_axioms": 0,
  "unclosed_files": 0,
  "headline_rule": null,
  "headline_count": 0,

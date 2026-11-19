@@ -52,6 +52,25 @@
  "closure_files": 0,
  "closure_sorry": [],
  "closure_axioms": 0,
+ "root_modules": [
+  {
+   "name": "Challenge",
+   "file": "Challenge.lean"
+  },
+  {
+   "name": "Solution",
+   "file": "Solution.lean"
+  },
+  {
+   "name": "Zeta5Irr",
+   "file": "Zeta5Irr.lean"
+  }
+ ],
+ "root_closure_files": 504,
+ "root_closure_sorry": [
+  "Challenge/Basic.lean"
+ ],
+ "root_closure_axioms": 0,
  "unclosed_files": 0,
  "headline_rule": null,
  "headline_count": 0,

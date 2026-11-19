@@ -72,6 +72,39 @@
   "Verified/Reflect/Definitions.lean"
  ],
  "closure_axioms": 0,
+ "root_modules": [
+  {
+   "name": "Demos",
+   "file": "Demos.lean"
+  },
+  {
+   "name": "Examples",
+   "file": "Examples.lean"
+  },
+  {
+   "name": "LeanExe",
+   "file": "LeanExe.lean"
+  },
+  {
+   "name": "Library",
+   "file": "Library.lean"
+  },
+  {
+   "name": "TestSupport",
+   "file": "tests/TestSupport.lean"
+  },
+  {
+   "name": "Verified",
+   "file": "Verified.lean"
+  }
+ ],
+ "root_closure_files": 3142,
+ "root_closure_sorry": [
+  "Demos/PassiveSafety/Program.lean",
+  "Demos/Slew/Optimal.lean",
+  "Verified/Reflect/Definitions.lean"
+ ],
+ "root_closure_axioms": 0,
  "unclosed_files": 0,
  "headline_rule": "readme",
  "headline_count": 120,

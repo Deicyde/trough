@@ -52,6 +52,25 @@
  "closure_files": 0,
  "closure_sorry": [],
  "closure_axioms": 0,
+ "root_modules": [
+  {
+   "name": "DefinableSaturated.Challenge",
+   "file": "DefinableSaturated/Challenge.lean"
+  },
+  {
+   "name": "DefinableSaturated.Solution",
+   "file": "DefinableSaturated/Solution.lean"
+  },
+  {
+   "name": "Scotts",
+   "file": "Scotts.lean"
+  }
+ ],
+ "root_closure_files": 697,
+ "root_closure_sorry": [
+  "DefinableSaturated/Challenge.lean"
+ ],
+ "root_closure_axioms": 0,
  "unclosed_files": 0,
  "headline_rule": null,
  "headline_count": 0,

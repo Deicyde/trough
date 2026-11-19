@@ -114,6 +114,91 @@
  "closure_files": 2,
  "closure_sorry": [],
  "closure_axioms": 0,
+ "root_modules": [
+  {
+   "name": "AffineAgreement",
+   "file": "formal/ligero/AffineAgreement.lean"
+  },
+  {
+   "name": "Bcs",
+   "file": "formal/bcs/Bcs.lean"
+  },
+  {
+   "name": "CodingTheory",
+   "file": "formal/ligero/CodingTheory.lean"
+  },
+  {
+   "name": "JBAgreement",
+   "file": "formal/ligero/JBAgreement.lean"
+  },
+  {
+   "name": "LfzkV1",
+   "file": "formal/lfzk-v1/LfzkV1.lean"
+  },
+  {
+   "name": "LfzkV2",
+   "file": "formal/lfzk-v2/LfzkV2.lean"
+  },
+  {
+   "name": "Ligero",
+   "file": "formal/ligero/Ligero.lean"
+  },
+  {
+   "name": "LigeroFamily",
+   "file": "formal/ligero/LigeroFamily.lean"
+  },
+  {
+   "name": "LigeroLocalCounts",
+   "file": "formal/ligero/LigeroLocalCounts.lean"
+  },
+  {
+   "name": "Merkle",
+   "file": "formal/merkle/Merkle.lean"
+  },
+  {
+   "name": "PkCircuit",
+   "file": "formal/circuits/tests/ec/PkCircuit.lean"
+  },
+  {
+   "name": "PkCircuitPoly",
+   "file": "formal/circuits/tests/ec/PkCircuitPoly.lean"
+  },
+  {
+   "name": "PolygeroRustHahn",
+   "file": "formal/parameters/polygero/PolygeroRustHahn.lean"
+  },
+  {
+   "name": "ReedSolomon",
+   "file": "formal/ligero/ReedSolomon.lean"
+  },
+  {
+   "name": "SelectedMCA",
+   "file": "formal/ligero/SelectedMCA.lean"
+  },
+  {
+   "name": "SumcheckV1",
+   "file": "formal/sumcheck-v1/SumcheckV1.lean"
+  },
+  {
+   "name": "SumcheckV2",
+   "file": "formal/sumcheck-v2/SumcheckV2.lean"
+  },
+  {
+   "name": "TunedProfiles",
+   "file": "formal/parameters/polygero/TunedProfiles.lean"
+  },
+  {
+   "name": "examples",
+   "file": "formal/ligero/examples.lean"
+  },
+  {
+   "name": "polygero",
+   "file": "formal/polygero.lean"
+  }
+ ],
+ "root_closure_files": 659,
+ "root_closure_sorry": [],
+ "root_closure_axioms": 0,
  "unclosed_files": 0,
  "headline_rule": "main",
  "headline_count": 4,

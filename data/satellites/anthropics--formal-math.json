@@ -54,6 +54,23 @@
  "closure_files": 67,
  "closure_sorry": [],
  "closure_axioms": 0,
+ "root_modules": [
+  {
+   "name": "EndStatement",
+   "file": "3sum-apsp/EndStatement.lean"
+  },
+  {
+   "name": "PaperStatements",
+   "file": "3sum-apsp/PaperStatements.lean"
+  },
+  {
+   "name": "ThreeSumApsp",
+   "file": "3sum-apsp/ThreeSumApsp.lean"
+  }
+ ],
+ "root_closure_files": 429,
+ "root_closure_sorry": [],
+ "root_closure_axioms": 0,
  "unclosed_files": 0,
  "headline_rule": "readme",
  "headline_count": 3,

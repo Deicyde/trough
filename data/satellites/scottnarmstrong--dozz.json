@@ -58,6 +58,38 @@
  "closure_files": 1960,
  "closure_sorry": [],
  "closure_axioms": 0,
+ "root_modules": [
+  {
+   "name": "DOZZ",
+   "file": "DOZZ.lean"
+  },
+  {
+   "name": "GaussianFields",
+   "file": "GaussianFields.lean"
+  },
+  {
+   "name": "comparators.DOZZ.Challenge",
+   "file": "comparators/DOZZ/Challenge.lean"
+  },
+  {
+   "name": "comparators.DOZZ.Solution",
+   "file": "comparators/DOZZ/Solution.lean"
+  },
+  {
+   "name": "comparators.Reflection.Challenge",
+   "file": "comparators/Reflection/Challenge.lean"
+  },
+  {
+   "name": "comparators.Reflection.Solution",
+   "file": "comparators/Reflection/Solution.lean"
+  }
+ ],
+ "root_closure_files": 2224,
+ "root_closure_sorry": [
+  "comparators/DOZZ/Challenge.lean",
+  "comparators/Reflection/Challenge.lean"
+ ],
+ "root_closure_axioms": 0,
  "unclosed_files": 0,
  "headline_rule": "readme",
  "headline_count": 11,

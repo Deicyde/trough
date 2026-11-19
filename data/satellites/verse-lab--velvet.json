@@ -42,6 +42,19 @@
  "closure_files": 0,
  "closure_sorry": [],
  "closure_axioms": 0,
+ "root_modules": [
+  {
+   "name": "Velvet",
+   "file": "Velvet.lean"
+  },
+  {
+   "name": "Velvet.Examples",
+   "file": "Velvet/Examples.lean"
+  }
+ ],
+ "root_closure_files": 77,
+ "root_closure_sorry": [],
+ "root_closure_axioms": 0,
  "unclosed_files": 0,
  "headline_rule": null,
  "headline_count": 0,

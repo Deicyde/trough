@@ -50,6 +50,29 @@
  "closure_files": 4,
  "closure_sorry": [],
  "closure_axioms": 0,
+ "root_modules": [
+  {
+   "name": "Challenge",
+   "file": "lean/Challenge.lean"
+  },
+  {
+   "name": "GraphIso",
+   "file": "lean/GraphIso.lean"
+  },
+  {
+   "name": "GraphIsoChecks",
+   "file": "lean/GraphIsoChecks.lean"
+  },
+  {
+   "name": "Solution",
+   "file": "lean/Solution.lean"
+  }
+ ],
+ "root_closure_files": 430,
+ "root_closure_sorry": [
+  "lean/Challenge.lean"
+ ],
+ "root_closure_axioms": 0,
  "unclosed_files": 0,
  "headline_rule": "readme",
  "headline_count": 1,

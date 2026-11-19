@@ -53,6 +53,26 @@
  "closure_files": 0,
  "closure_sorry": [],
  "closure_axioms": 0,
+ "root_modules": [
+  {
+   "name": "UnitTest",
+   "file": "UnitTest.lean"
+  },
+  {
+   "name": "Veir",
+   "file": "Veir.lean"
+  }
+ ],
+ "root_closure_files": 343,
+ "root_closure_sorry": [
+  "UnitTest/CTreePuddle.lean",
+  "Veir/Benchmarks.lean",
+  "Veir/Parser/Lexer.lean",
+  "Veir/Rewriter/InlineBlock.lean",
+  "Veir/Rewriter/WellFormed/Operation.lean",
+  "Veir/Rewriter/WellFormed/Value.lean"
+ ],
+ "root_closure_axioms": 8,
  "unclosed_files": 0,
  "headline_rule": null,
  "headline_count": 0,

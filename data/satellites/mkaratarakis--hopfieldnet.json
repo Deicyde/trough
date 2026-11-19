@@ -56,6 +56,22 @@
  "closure_files": 1,
  "closure_sorry": [],
  "closure_axioms": 0,
+ "root_modules": [
+  {
+   "name": "HopfieldNet",
+   "file": "HopfieldNet.lean"
+  },
+  {
+   "name": "MCMC",
+   "file": "MCMC.lean"
+  }
+ ],
+ "root_closure_files": 38,
+ "root_closure_sorry": [
+  "HopfieldNet/HN/Core.lean",
+  "HopfieldNet/NNStochastic.lean"
+ ],
+ "root_closure_axioms": 0,
  "unclosed_files": 0,
  "headline_rule": "blueprint",
  "headline_count": 1,

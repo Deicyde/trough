@@ -42,6 +42,37 @@
  "closure_files": 2,
  "closure_sorry": [],
  "closure_axioms": 0,
+ "root_modules": [
+  {
+   "name": "Challenge",
+   "file": "Challenge.lean"
+  },
+  {
+   "name": "Palomar.Bridge",
+   "file": "Palomar/Bridge.lean"
+  },
+  {
+   "name": "Palomar.Bridge.Jet",
+   "file": "Palomar/Bridge/Jet.lean"
+  },
+  {
+   "name": "Palomar.Bridge.TateExt",
+   "file": "Palomar/Bridge/TateExt.lean"
+  },
+  {
+   "name": "Palomar.Defs",
+   "file": "Palomar/Defs.lean"
+  },
+  {
+   "name": "Solution",
+   "file": "Solution.lean"
+  }
+ ],
+ "root_closure_files": 6,
+ "root_closure_sorry": [
+  "Challenge.lean"
+ ],
+ "root_closure_axioms": 0,
  "unclosed_files": 0,
  "headline_rule": "readme",
  "headline_count": 2,

@@ -48,6 +48,21 @@
  "closure_files": 10,
  "closure_sorry": [],
  "closure_axioms": 0,
+ "root_modules": [
+  {
+   "name": "PadicLFunctions",
+   "file": "PadicLFunctions.lean"
+  },
+  {
+   "name": "PadicLFunctionsBlueprint",
+   "file": "PadicLFunctionsBlueprint.lean"
+  }
+ ],
+ "root_closure_files": 73,
+ "root_closure_sorry": [
+  "PadicLFunctionsBlueprint/Blueprint.lean"
+ ],
+ "root_closure_axioms": 0,
  "unclosed_files": 0,
  "headline_rule": "readme",
  "headline_count": 1,

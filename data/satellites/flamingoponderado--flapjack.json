@@ -48,6 +48,18 @@
   "Flapjack/Compiler/Backend/StackAlloc/Proofs/CodeThm/GenGcMoveLoop.lean"
  ],
  "closure_axioms": 0,
+ "root_modules": [
+  {
+   "name": "Flapjack",
+   "file": "Flapjack.lean"
+  }
+ ],
+ "root_closure_files": 4979,
+ "root_closure_sorry": [
+  "Flapjack/Compiler/Backend/StackAlloc/Proofs/CodeThm/GenGcMoveLoop.lean",
+  "Flapjack/Mips32/Run.lean"
+ ],
+ "root_closure_axioms": 0,
  "unclosed_files": 0,
  "headline_rule": "readme",
  "headline_count": 1,

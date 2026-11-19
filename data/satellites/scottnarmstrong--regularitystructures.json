@@ -110,6 +110,86 @@
  "closure_files": 2768,
  "closure_sorry": [],
  "closure_axioms": 0,
+ "root_modules": [
+  {
+   "name": "GlobalPhi43",
+   "file": "GlobalPhi43.lean"
+  },
+  {
+   "name": "GlobalPhi43Statements",
+   "file": "GlobalPhi43Statements.lean"
+  },
+  {
+   "name": "Phi43",
+   "file": "Phi43.lean"
+  },
+  {
+   "name": "Phi43Statements",
+   "file": "Phi43Statements.lean"
+  },
+  {
+   "name": "RegularityStructures",
+   "file": "RegularityStructures.lean"
+  },
+  {
+   "name": "comparators.ExponentCompatibility.Challenge",
+   "file": "comparators/ExponentCompatibility/Challenge.lean"
+  },
+  {
+   "name": "comparators.ExponentCompatibility.Solution",
+   "file": "comparators/ExponentCompatibility/Solution.lean"
+  },
+  {
+   "name": "comparators.GlobalDynamics.Challenge",
+   "file": "comparators/GlobalDynamics/Challenge.lean"
+  },
+  {
+   "name": "comparators.GlobalDynamics.Solution",
+   "file": "comparators/GlobalDynamics/Solution.lean"
+  },
+  {
+   "name": "comparators.Reconstruction.Challenge",
+   "file": "comparators/Reconstruction/Challenge.lean"
+  },
+  {
+   "name": "comparators.Reconstruction.Solution",
+   "file": "comparators/Reconstruction/Solution.lean"
+  },
+  {
+   "name": "comparators.RegularisedBound.Challenge",
+   "file": "comparators/RegularisedBound/Challenge.lean"
+  },
+  {
+   "name": "comparators.RegularisedBound.Solution",
+   "file": "comparators/RegularisedBound/Solution.lean"
+  },
+  {
+   "name": "comparators.Schauder.Challenge",
+   "file": "comparators/Schauder/Challenge.lean"
+  },
+  {
+   "name": "comparators.Schauder.Solution",
+   "file": "comparators/Schauder/Solution.lean"
+  },
+  {
+   "name": "comparators.TheoremA.Challenge",
+   "file": "comparators/TheoremA/Challenge.lean"
+  },
+  {
+   "name": "comparators.TheoremA.Solution",
+   "file": "comparators/TheoremA/Solution.lean"
+  }
+ ],
+ "root_closure_files": 3060,
+ "root_closure_sorry": [
+  "comparators/ExponentCompatibility/Challenge.lean",
+  "comparators/GlobalDynamics/Challenge.lean",
+  "comparators/Reconstruction/Challenge.lean",
+  "comparators/RegularisedBound/Challenge.lean",
+  "comparators/Schauder/Challenge.lean",
+  "comparators/TheoremA/Challenge.lean"
+ ],
+ "root_closure_axioms": 0,
  "unclosed_files": 0,
  "headline_rule": "readme",
  "headline_count": 4,

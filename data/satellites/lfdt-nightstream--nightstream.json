@@ -48,6 +48,213 @@
  "closure_files": 318,
  "closure_sorry": [],
  "closure_axioms": 0,
+ "root_modules": [
+  {
+   "name": "NightstreamFPrime",
+   "file": "formal/nightstream-fprime/NightstreamFPrime.lean"
+  },
+  {
+   "name": "tests.AxiomAudit",
+   "file": "formal/nightstream-fprime/tests/AxiomAudit.lean"
+  },
+  {
+   "name": "tests.Axioms",
+   "file": "formal/nightstream-fprime/tests/Axioms.lean"
+  },
+  {
+   "name": "tests.AxiomsAjtaiSetupV1",
+   "file": "formal/nightstream-fprime/tests/AxiomsAjtaiSetupV1.lean"
+  },
+  {
+   "name": "tests.AxiomsAuxRelocation",
+   "file": "formal/nightstream-fprime/tests/AxiomsAuxRelocation.lean"
+  },
+  {
+   "name": "tests.AxiomsBooleanInference",
+   "file": "formal/nightstream-fprime/tests/AxiomsBooleanInference.lean"
+  },
+  {
+   "name": "tests.AxiomsBoundedDepthIvc",
+   "file": "formal/nightstream-fprime/tests/AxiomsBoundedDepthIvc.lean"
+  },
+  {
+   "name": "tests.AxiomsBoundedDepthRandomOracle",
+   "file": "formal/nightstream-fprime/tests/AxiomsBoundedDepthRandomOracle.lean"
+  },
+  {
+   "name": "tests.AxiomsChainBinding",
+   "file": "formal/nightstream-fprime/tests/AxiomsChainBinding.lean"
+  },
+  {
+   "name": "tests.AxiomsCompression",
+   "file": "formal/nightstream-fprime/tests/AxiomsCompression.lean"
+  },
+  {
+   "name": "tests.AxiomsCompressionRust",
+   "file": "formal/nightstream-fprime/tests/AxiomsCompressionRust.lean"
+  },
+  {
+   "name": "tests.AxiomsContinuityRanges",
+   "file": "formal/nightstream-fprime/tests/AxiomsContinuityRanges.lean"
+  },
+  {
+   "name": "tests.AxiomsFoldGate",
+   "file": "formal/nightstream-fprime/tests/AxiomsFoldGate.lean"
+  },
+  {
+   "name": "tests.AxiomsFoundations",
+   "file": "formal/nightstream-fprime/tests/AxiomsFoundations.lean"
+  },
+  {
+   "name": "tests.AxiomsGuardFusion",
+   "file": "formal/nightstream-fprime/tests/AxiomsGuardFusion.lean"
+  },
+  {
+   "name": "tests.AxiomsHashEncodings",
+   "file": "formal/nightstream-fprime/tests/AxiomsHashEncodings.lean"
+  },
+  {
+   "name": "tests.AxiomsIntegerProduct",
+   "file": "formal/nightstream-fprime/tests/AxiomsIntegerProduct.lean"
+  },
+  {
+   "name": "tests.AxiomsLightFold",
+   "file": "formal/nightstream-fprime/tests/AxiomsLightFold.lean"
+  },
+  {
+   "name": "tests.AxiomsNativeBooleanCompleteness",
+   "file": "formal/nightstream-fprime/tests/AxiomsNativeBooleanCompleteness.lean"
+  },
+  {
+   "name": "tests.AxiomsNativePower",
+   "file": "formal/nightstream-fprime/tests/AxiomsNativePower.lean"
+  },
+  {
+   "name": "tests.AxiomsNebula",
+   "file": "formal/nightstream-fprime/tests/AxiomsNebula.lean"
+  },
+  {
+   "name": "tests.AxiomsNifsClosure",
+   "file": "formal/nightstream-fprime/tests/AxiomsNifsClosure.lean"
+  },
+  {
+   "name": "tests.AxiomsPackedBoolean",
+   "file": "formal/nightstream-fprime/tests/AxiomsPackedBoolean.lean"
+  },
+  {
+   "name": "tests.AxiomsPackedProduct",
+   "file": "formal/nightstream-fprime/tests/AxiomsPackedProduct.lean"
+  },
+  {
+   "name": "tests.AxiomsPackedZero",
+   "file": "formal/nightstream-fprime/tests/AxiomsPackedZero.lean"
+  },
+  {
+   "name": "tests.AxiomsPaddingZero",
+   "file": "formal/nightstream-fprime/tests/AxiomsPaddingZero.lean"
+  },
+  {
+   "name": "tests.AxiomsPiCCSClosure",
+   "file": "formal/nightstream-fprime/tests/AxiomsPiCCSClosure.lean"
+  },
+  {
+   "name": "tests.AxiomsPiRLCTail",
+   "file": "formal/nightstream-fprime/tests/AxiomsPiRLCTail.lean"
+  },
+  {
+   "name": "tests.AxiomsPiRlcSampler",
+   "file": "formal/nightstream-fprime/tests/AxiomsPiRlcSampler.lean"
+  },
+  {
+   "name": "tests.AxiomsProductionMatrixPlan",
+   "file": "formal/nightstream-fprime/tests/AxiomsProductionMatrixPlan.lean"
+  },
+  {
+   "name": "tests.AxiomsReadOnlyValues",
+   "file": "formal/nightstream-fprime/tests/AxiomsReadOnlyValues.lean"
+  },
+  {
+   "name": "tests.AxiomsRecursivePublicInput",
+   "file": "formal/nightstream-fprime/tests/AxiomsRecursivePublicInput.lean"
+  },
+  {
+   "name": "tests.AxiomsRefreshFold",
+   "file": "formal/nightstream-fprime/tests/AxiomsRefreshFold.lean"
+  },
+  {
+   "name": "tests.AxiomsSchedule",
+   "file": "formal/nightstream-fprime/tests/AxiomsSchedule.lean"
+  },
+  {
+   "name": "tests.AxiomsSharedAbsorb",
+   "file": "formal/nightstream-fprime/tests/AxiomsSharedAbsorb.lean"
+  },
+  {
+   "name": "tests.AxiomsSharedExports",
+   "file": "formal/nightstream-fprime/tests/AxiomsSharedExports.lean"
+  },
+  {
+   "name": "tests.AxiomsStage1Accumulator",
+   "file": "formal/nightstream-fprime/tests/AxiomsStage1Accumulator.lean"
+  },
+  {
+   "name": "tests.AxiomsStage1Application",
+   "file": "formal/nightstream-fprime/tests/AxiomsStage1Application.lean"
+  },
+  {
+   "name": "tests.AxiomsStage1Assembler",
+   "file": "formal/nightstream-fprime/tests/AxiomsStage1Assembler.lean"
+  },
+  {
+   "name": "tests.AxiomsStage1PiDEC",
+   "file": "formal/nightstream-fprime/tests/AxiomsStage1PiDEC.lean"
+  },
+  {
+   "name": "tests.AxiomsStage1PiRLCExport",
+   "file": "formal/nightstream-fprime/tests/AxiomsStage1PiRLCExport.lean"
+  },
+  {
+   "name": "tests.AxiomsStage1Security",
+   "file": "formal/nightstream-fprime/tests/AxiomsStage1Security.lean"
+  },
+  {
+   "name": "tests.AxiomsWordPacking",
+   "file": "formal/nightstream-fprime/tests/AxiomsWordPacking.lean"
+  },
+  {
+   "name": "tests.EndpointCensus",
+   "file": "formal/nightstream-fprime/tests/EndpointCensus.lean"
+  },
+  {
+   "name": "tests.NativePoseidon2Boundary",
+   "file": "formal/nightstream-fprime/tests/NativePoseidon2Boundary.lean"
+  },
+  {
+   "name": "tests.PerApplicationEmitterFixture",
+   "file": "formal/nightstream-fprime/tests/PerApplicationEmitterFixture.lean"
+  },
+  {
+   "name": "tests.Poseidon2Vectors",
+   "file": "formal/nightstream-fprime/tests/Poseidon2Vectors.lean"
+  },
+  {
+   "name": "tests.PremiseAudit",
+   "file": "formal/nightstream-fprime/tests/PremiseAudit.lean"
+  },
+  {
+   "name": "tests.PremiseCensus",
+   "file": "formal/nightstream-fprime/tests/PremiseCensus.lean"
+  },
+  {
+   "name": "tests.SharedFormulas",
+   "file": "formal/nightstream-fprime/tests/SharedFormulas.lean"
+  }
+ ],
+ "root_closure_files": 986,
+ "root_closure_sorry": [
+  "formal/nightstream-fprime/NightstreamFPrime/Spec/RandomOracle.lean"
+ ],
+ "root_closure_axioms": 0,
  "unclosed_files": 0,
  "headline_rule": "readme",
  "headline_count": 4,

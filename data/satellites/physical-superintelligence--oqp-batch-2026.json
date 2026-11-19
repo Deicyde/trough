@@ -46,6 +46,29 @@
  "closure_files": 3326,
  "closure_sorry": [],
  "closure_axioms": 0,
+ "root_modules": [
+  {
+   "name": "Challenge",
+   "file": "oqp02-three-copy-werner/lean/Challenge.lean"
+  },
+  {
+   "name": "Solution",
+   "file": "oqp02-three-copy-werner/lean/Solution.lean"
+  },
+  {
+   "name": "ThreeCopyQutritWerner",
+   "file": "oqp02-three-copy-werner/lean/ThreeCopyQutritWerner.lean"
+  },
+  {
+   "name": "ThreeCopyQutritWerner.Audit.FinalCheck",
+   "file": "oqp02-three-copy-werner/lean/ThreeCopyQutritWerner/Audit/FinalCheck.lean"
+  }
+ ],
+ "root_closure_files": 3619,
+ "root_closure_sorry": [
+  "oqp02-three-copy-werner/lean/Challenge.lean"
+ ],
+ "root_closure_axioms": 0,
  "unclosed_files": 0,
  "headline_rule": "readme",
  "headline_count": 19,

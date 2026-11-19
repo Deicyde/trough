@@ -78,6 +78,57 @@
  "closure_files": 421,
  "closure_sorry": [],
  "closure_axioms": 0,
+ "root_modules": [
+  {
+   "name": "Cacti",
+   "file": "Cacti.lean"
+  },
+  {
+   "name": "Checks",
+   "file": "Checks.lean"
+  },
+  {
+   "name": "Grid3",
+   "file": "Grid3.lean"
+  },
+  {
+   "name": "GridGen",
+   "file": "GridGen.lean"
+  },
+  {
+   "name": "Ladder",
+   "file": "Ladder.lean"
+  },
+  {
+   "name": "ListColoring",
+   "file": "ListColoring.lean"
+  },
+  {
+   "name": "NonPersistence",
+   "file": "NonPersistence.lean"
+  },
+  {
+   "name": "OpenProblems",
+   "file": "OpenProblems.lean"
+  },
+  {
+   "name": "Outerplanar",
+   "file": "Outerplanar.lean"
+  },
+  {
+   "name": "ProductCounterexample",
+   "file": "ProductCounterexample.lean"
+  },
+  {
+   "name": "TwoDegenerate",
+   "file": "TwoDegenerate.lean"
+  }
+ ],
+ "root_closure_files": 665,
+ "root_closure_sorry": [
+  "OpenProblems.lean"
+ ],
+ "root_closure_axioms": 0,
  "unclosed_files": 0,
  "headline_rule": "readme",
  "headline_count": 36,

@@ -6,7 +6,9 @@ statement: formalized
 proof: formalized
 ---
 
-# List coloring and enumeratively chromatic-choosable graphs — a Lean 4…
+# enumerative-chromatic-choosability
+
+*List coloring and enumeratively chromatic-choosable graphs — a Lean 4 formalization*
 
 [rkirov/enumerative-chromatic-choosability](https://github.com/rkirov/enumerative-chromatic-choosability) at commit [5ae30add](https://github.com/rkirov/enumerative-chromatic-choosability/tree/5ae30add62b88ec085dc76f78b1b2dbe121dd70e), 2026-11-13.
 

@@ -72,6 +72,37 @@
  "closure_files": 133,
  "closure_sorry": [],
  "closure_axioms": 0,
+ "root_modules": [
+  {
+   "name": "Challenge",
+   "file": "Challenge.lean"
+  },
+  {
+   "name": "Solution",
+   "file": "Solution.lean"
+  },
+  {
+   "name": "Thomson",
+   "file": "Thomson.lean"
+  },
+  {
+   "name": "Thomson.Complete",
+   "file": "Thomson/Complete.lean"
+  },
+  {
+   "name": "Thomson.Main",
+   "file": "Thomson/Main.lean"
+  },
+  {
+   "name": "Thomson8",
+   "file": "Thomson8.lean"
+  }
+ ],
+ "root_closure_files": 834,
+ "root_closure_sorry": [
+  "Challenge.lean"
+ ],
+ "root_closure_axioms": 0,
  "unclosed_files": 0,
  "headline_rule": "main",
  "headline_count": 5,

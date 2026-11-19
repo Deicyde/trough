@@ -70,6 +70,51 @@
  "closure_files": 2913,
  "closure_sorry": [],
  "closure_axioms": 0,
+ "root_modules": [
+  {
+   "name": "HeatKernel",
+   "file": "HeatKernel.lean"
+  },
+  {
+   "name": "Hormander",
+   "file": "Hormander.lean"
+  },
+  {
+   "name": "RothschildStein",
+   "file": "RothschildStein.lean"
+  },
+  {
+   "name": "comparators.HeatKernel.Challenge",
+   "file": "comparators/HeatKernel/Challenge.lean"
+  },
+  {
+   "name": "comparators.HeatKernel.Solution",
+   "file": "comparators/HeatKernel/Solution.lean"
+  },
+  {
+   "name": "comparators.Hormander.Challenge",
+   "file": "comparators/Hormander/Challenge.lean"
+  },
+  {
+   "name": "comparators.Hormander.Solution",
+   "file": "comparators/Hormander/Solution.lean"
+  },
+  {
+   "name": "comparators.RothschildStein.Challenge",
+   "file": "comparators/RothschildStein/Challenge.lean"
+  },
+  {
+   "name": "comparators.RothschildStein.Solution",
+   "file": "comparators/RothschildStein/Solution.lean"
+  }
+ ],
+ "root_closure_files": 4774,
+ "root_closure_sorry": [
+  "comparators/HeatKernel/Challenge.lean",
+  "comparators/Hormander/Challenge.lean",
+  "comparators/RothschildStein/Challenge.lean"
+ ],
+ "root_closure_axioms": 0,
  "unclosed_files": 0,
  "headline_rule": "readme",
  "headline_count": 27,

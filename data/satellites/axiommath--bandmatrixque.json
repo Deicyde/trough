@@ -46,6 +46,19 @@
  "closure_files": 0,
  "closure_sorry": [],
  "closure_axioms": 0,
+ "root_modules": [
+  {
+   "name": "BlockBand",
+   "file": "BlockBand.lean"
+  }
+ ],
+ "root_closure_files": 4995,
+ "root_closure_sorry": [
+  "BlockBand/SourceProcess/PhysApprox/B3FddMod.lean",
+  "BlockBand/SourceProcess/PhysApprox/B3ModulMain.lean",
+  "BlockBand/SourceProcess/Stochastic/SemimartingaleIto/LocData.lean"
+ ],
+ "root_closure_axioms": 0,
  "unclosed_files": 0,
  "headline_rule": null,
  "headline_count": 0,

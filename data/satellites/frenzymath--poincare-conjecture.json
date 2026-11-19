@@ -65,6 +65,33 @@
  "closure_files": 0,
  "closure_sorry": [],
  "closure_axioms": 0,
+ "root_modules": [
+  {
+   "name": "Challenge",
+   "file": "PoincareConjecture/Comparator/Challenge.lean"
+  },
+  {
+   "name": "PoincareConjecture",
+   "file": "PoincareConjecture/PoincareConjecture.lean"
+  },
+  {
+   "name": "PoincareLib",
+   "file": "PoincareConjecture/PoincareLib.lean"
+  },
+  {
+   "name": "Solution",
+   "file": "PoincareConjecture/Comparator/Solution.lean"
+  },
+  {
+   "name": "Statements",
+   "file": "PoincareConjecture/Comparator/Statements.lean"
+  }
+ ],
+ "root_closure_files": 5,
+ "root_closure_sorry": [
+  "PoincareConjecture/Comparator/Challenge.lean"
+ ],
+ "root_closure_axioms": 0,
  "unclosed_files": 0,
  "headline_rule": null,
  "headline_count": 0,

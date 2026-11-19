@@ -6,7 +6,9 @@ statement: formalized
 proof: formalized
 ---
 
-# Blanc: A Verification Stack for EVM Smart Contracts in Lean 4
+# blanc
+
+*Blanc: A Verification Stack for EVM Smart Contracts in Lean 4*
 
 [skbaek/blanc](https://github.com/skbaek/blanc) at commit [251128de](https://github.com/skbaek/blanc/tree/251128de090c5b14c655d9be5dfbc7dd35076a92), 2026-11-14.
 
@@ -19,7 +21,7 @@ proof: formalized
 - [List](../../../data-structures/list-like-structures/list.md)
 - [Natural number](../../numbers/natural-number.md)
 - [Integer](../../numbers/integer.md)
-- [Jaune](../../../data-structures/projects/skbaek--jaune.md)
+- [Jaune](../../../data-structures/projects/part-01/skbaek--jaune.md)
 
 ## Proof depends on
 
@@ -51,7 +53,7 @@ No file its headlines import, directly or not (41 files), holds `sorry`, `admit`
 ## Builds on
 
 - Mathlib, at [56a00585](https://github.com/leanprover-community/mathlib4/tree/56a005855ea17e0b0958f73ec801ae140b0a1679).
-- [jaune](../../../data-structures/projects/skbaek--jaune.md) at `730aae65`.
+- [jaune](../../../data-structures/projects/part-01/skbaek--jaune.md) at `730aae65`.
 
 ## Placement
 

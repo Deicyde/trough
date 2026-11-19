@@ -6,7 +6,9 @@ statement: formalized
 proof: formalized
 ---
 
-# Almost Every Pair of Interval Exchange Transformations Does Not Generate a Free…
+# IETFree
+
+*Almost Every Pair of Interval Exchange Transformations Does Not Generate a Free Group*
 
 [sgouezel/IETFree](https://github.com/sgouezel/IETFree) at commit [94c4455c](https://github.com/sgouezel/IETFree/tree/94c4455c3243ff4229cd5e0c58af6f97879777b7), 2026-11-09.
 

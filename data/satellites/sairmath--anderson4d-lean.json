@@ -38,6 +38,21 @@
  "closure_files": 22,
  "closure_sorry": [],
  "closure_axioms": 0,
+ "root_modules": [
+  {
+   "name": "Anderson4D",
+   "file": "Anderson4D.lean"
+  }
+ ],
+ "root_closure_files": 818,
+ "root_closure_sorry": [
+  "Anderson4D/DetParametrix/Paper42_Moment/R324FullPairingBudgetStopTrace.lean",
+  "Anderson4D/DetParametrix/Paper42_Moment/R324FullPairingFinalHeadGeometry.lean",
+  "Anderson4D/DetParametrix/Paper42_Moment/R324IncomingExceptionalStop.lean",
+  "Anderson4D/DetParametrix/Paper42_Moment/R324IncomingPreCollapseFourier.lean",
+  "Anderson4D/DetParametrix/Paper42_Moment/R324WithinHalfEndpointStopAtTerminal.lean"
+ ],
+ "root_closure_axioms": 0,
  "unclosed_files": 0,
  "headline_rule": "blueprint",
  "headline_count": 12,

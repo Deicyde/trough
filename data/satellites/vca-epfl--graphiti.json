@@ -50,6 +50,29 @@
  "closure_files": 0,
  "closure_sorry": [],
  "closure_axioms": 0,
+ "root_modules": [
+  {
+   "name": "Graphiti",
+   "file": "Graphiti.lean"
+  },
+  {
+   "name": "Graphiti.Projects",
+   "file": "Graphiti/Projects.lean"
+  }
+ ],
+ "root_closure_files": 83,
+ "root_closure_sorry": [
+  "Graphiti/Core/Dataflow/Rewrites/JoinRewrite.lean",
+  "Graphiti/Core/Graph/Environment.lean",
+  "Graphiti/Core/Graph/ExprLowLemmas.lean",
+  "Graphiti/Core/Graph/ModuleLemmas.lean",
+  "Graphiti/Projects/DeadlockRefinement.lean",
+  "Graphiti/Projects/Flushability/ConfluentModule.lean",
+  "Graphiti/Projects/Flushability/FlushedModule.lean",
+  "Graphiti/Projects/Flushability/JoinRewriteCorrect.lean",
+  "Graphiti/Projects/Flushability/ModuleRefinement.lean"
+ ],
+ "root_closure_axioms": 1,
  "unclosed_files": 5,
  "headline_rule": null,
  "headline_count": 0,

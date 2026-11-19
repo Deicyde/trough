@@ -64,6 +64,34 @@
  "closure_files": 2357,
  "closure_sorry": [],
  "closure_axioms": 0,
+ "root_modules": [
+  {
+   "name": "AleksandrovComparators.FullCoefficient.Challenge",
+   "file": "AleksandrovComparators/FullCoefficient/Challenge.lean"
+  },
+  {
+   "name": "AleksandrovComparators.FullCoefficient.Solution",
+   "file": "AleksandrovComparators/FullCoefficient/Solution.lean"
+  },
+  {
+   "name": "AleksandrovComparators.KineticAleksandrov.Challenge",
+   "file": "AleksandrovComparators/KineticAleksandrov/Challenge.lean"
+  },
+  {
+   "name": "AleksandrovComparators.KineticAleksandrov.Solution",
+   "file": "AleksandrovComparators/KineticAleksandrov/Solution.lean"
+  },
+  {
+   "name": "HypoellipticAleksandrov",
+   "file": "HypoellipticAleksandrov.lean"
+  }
+ ],
+ "root_closure_files": 2539,
+ "root_closure_sorry": [
+  "AleksandrovComparators/FullCoefficient/Challenge.lean",
+  "AleksandrovComparators/KineticAleksandrov/Challenge.lean"
+ ],
+ "root_closure_axioms": 0,
  "unclosed_files": 0,
  "headline_rule": "readme",
  "headline_count": 19,

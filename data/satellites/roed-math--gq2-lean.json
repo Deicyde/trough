@@ -60,6 +60,34 @@
  "closure_files": 304,
  "closure_sorry": [],
  "closure_axioms": 9,
+ "root_modules": [
+  {
+   "name": "Challenge",
+   "file": "Challenge.lean"
+  },
+  {
+   "name": "ChallengePalomar",
+   "file": "ChallengePalomar.lean"
+  },
+  {
+   "name": "GQ2",
+   "file": "GQ2.lean"
+  },
+  {
+   "name": "Solution",
+   "file": "Solution.lean"
+  },
+  {
+   "name": "SolutionPalomar",
+   "file": "SolutionPalomar.lean"
+  }
+ ],
+ "root_closure_files": 313,
+ "root_closure_sorry": [
+  "Challenge.lean",
+  "ChallengePalomar.lean"
+ ],
+ "root_closure_axioms": 9,
  "unclosed_files": 0,
  "headline_rule": "readme",
  "headline_count": 7,

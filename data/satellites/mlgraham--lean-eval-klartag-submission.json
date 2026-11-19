@@ -46,6 +46,25 @@
  "closure_files": 178,
  "closure_sorry": [],
  "closure_axioms": 0,
+ "root_modules": [
+  {
+   "name": "Challenge",
+   "file": "klartag_packing/Challenge.lean"
+  },
+  {
+   "name": "Solution",
+   "file": "klartag_packing/Solution.lean"
+  },
+  {
+   "name": "Submission",
+   "file": "klartag_packing/Submission.lean"
+  }
+ ],
+ "root_closure_files": 180,
+ "root_closure_sorry": [
+  "klartag_packing/Challenge.lean"
+ ],
+ "root_closure_axioms": 0,
  "unclosed_files": 0,
  "headline_rule": "readme",
  "headline_count": 1,

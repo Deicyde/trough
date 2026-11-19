@@ -76,6 +76,56 @@
  "closure_files": 0,
  "closure_sorry": [],
  "closure_axioms": 0,
+ "root_modules": [
+  {
+   "name": "AWSLCELFTests",
+   "file": "AWSLCELFTests.lean"
+  },
+  {
+   "name": "Arm",
+   "file": "Arm.lean"
+  },
+  {
+   "name": "Benchmarks",
+   "file": "Benchmarks.lean"
+  },
+  {
+   "name": "Correctness",
+   "file": "Correctness.lean"
+  },
+  {
+   "name": "Doc",
+   "file": "Doc.lean"
+  },
+  {
+   "name": "Proofs",
+   "file": "Proofs.lean"
+  },
+  {
+   "name": "Specs",
+   "file": "Specs.lean"
+  },
+  {
+   "name": "Tactics",
+   "file": "Tactics.lean"
+  },
+  {
+   "name": "Tests",
+   "file": "Tests.lean"
+  }
+ ],
+ "root_closure_files": 99,
+ "root_closure_sorry": [
+  "Benchmarks/SHA512_150.lean",
+  "Benchmarks/SHA512_150_noKernel_noLint.lean",
+  "Benchmarks/SHA512_225.lean",
+  "Benchmarks/SHA512_225_noKernel_noLint.lean",
+  "Benchmarks/SHA512_400.lean",
+  "Benchmarks/SHA512_400_noKernel_noLint.lean",
+  "Benchmarks/SHA512_75.lean",
+  "Benchmarks/SHA512_75_noKernel_noLint.lean"
+ ],
+ "root_closure_axioms": 0,
  "unclosed_files": 1,
  "headline_rule": null,
  "headline_count": 0,

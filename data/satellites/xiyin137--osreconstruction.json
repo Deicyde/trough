@@ -48,6 +48,41 @@
  "closure_files": 847,
  "closure_sorry": [],
  "closure_axioms": 0,
+ "root_modules": [
+  {
+   "name": "Challenge",
+   "file": "os-reconstruction/verification/comparator/Challenge.lean"
+  },
+  {
+   "name": "Definitions",
+   "file": "os-reconstruction/verification/comparator/Definitions.lean"
+  },
+  {
+   "name": "OSBridge",
+   "file": "os-reconstruction/verification/comparator/OSBridge.lean"
+  },
+  {
+   "name": "OSReconstruction",
+   "file": "os-reconstruction/OSReconstruction.lean"
+  },
+  {
+   "name": "ReverseBridge",
+   "file": "os-reconstruction/verification/comparator/ReverseBridge.lean"
+  },
+  {
+   "name": "Solution",
+   "file": "os-reconstruction/verification/comparator/Solution.lean"
+  },
+  {
+   "name": "WightmanBridge",
+   "file": "os-reconstruction/verification/comparator/WightmanBridge.lean"
+  }
+ ],
+ "root_closure_files": 854,
+ "root_closure_sorry": [
+  "os-reconstruction/verification/comparator/Challenge.lean"
+ ],
+ "root_closure_axioms": 0,
  "unclosed_files": 0,
  "headline_rule": "readme",
  "headline_count": 4,

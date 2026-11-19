@@ -50,6 +50,27 @@
  "closure_files": 344,
  "closure_sorry": [],
  "closure_axioms": 0,
+ "root_modules": [
+  {
+   "name": "BimodalTest",
+   "file": "Tests/BimodalTest.lean"
+  },
+  {
+   "name": "BimodalTools",
+   "file": "BimodalTools.lean"
+  },
+  {
+   "name": "BimodalToolsTest",
+   "file": "Tests/BimodalToolsTest.lean"
+  },
+  {
+   "name": "FormalSystem",
+   "file": "FormalSystem.lean"
+  }
+ ],
+ "root_closure_files": 868,
+ "root_closure_sorry": [],
+ "root_closure_axioms": 0,
  "unclosed_files": 0,
  "headline_rule": "readme",
  "headline_count": 57,

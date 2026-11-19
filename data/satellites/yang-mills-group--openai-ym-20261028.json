@@ -50,6 +50,81 @@
  "closure_files": 0,
  "closure_sorry": [],
  "closure_axioms": 0,
+ "root_modules": [
+  {
+   "name": "Challenge",
+   "file": "Challenge.lean"
+  },
+  {
+   "name": "ChallengeSpec",
+   "file": "ChallengeSpec.lean"
+  },
+  {
+   "name": "ConcreteSU2",
+   "file": "ConcreteSU2.lean"
+  },
+  {
+   "name": "Construction",
+   "file": "Construction.lean"
+  },
+  {
+   "name": "ContactBridge",
+   "file": "ContactBridge.lean"
+  },
+  {
+   "name": "ContactSpec",
+   "file": "ContactSpec.lean"
+  },
+  {
+   "name": "HierarchyBridge",
+   "file": "HierarchyBridge.lean"
+  },
+  {
+   "name": "PublicTheory",
+   "file": "PublicTheory.lean"
+  },
+  {
+   "name": "PublicView",
+   "file": "PublicView.lean"
+  },
+  {
+   "name": "PublicWilson",
+   "file": "PublicWilson.lean"
+  },
+  {
+   "name": "Solution",
+   "file": "Solution.lean"
+  },
+  {
+   "name": "TraceBridge",
+   "file": "TraceBridge.lean"
+  },
+  {
+   "name": "WilsonBridge",
+   "file": "WilsonBridge.lean"
+  },
+  {
+   "name": "YM",
+   "file": "YM.lean"
+  }
+ ],
+ "root_closure_files": 4241,
+ "root_closure_sorry": [
+  "Challenge.lean",
+  "YM/AnalyticNext/CONNECTED_ACTIVITY_JETS_E6/OptionCost.lean",
+  "YM/Branch/Pick.lean",
+  "YM/Branch/Predict.lean",
+  "YM/Further/CORRECTED_LIFT_COEFFICIENTS/Building.lean",
+  "YM/Further/CORRECTED_LIFT_COEFFICIENTS/Collapse.lean",
+  "YM/Further/CORRECTED_LIFT_COEFFICIENTS/TurnCorner.lean",
+  "YM/Further/ROOTED_INTERACTING_REMAINDER/Station.lean",
+  "YM/Lattice/Box.lean",
+  "YM/Next/UV_STRESS/Birth.lean",
+  "YM/Overlay/Supplier.lean",
+  "YM/PREC/FrameResponse.lean",
+  "YM/Pert/Lattice/Difference.lean"
+ ],
+ "root_closure_axioms": 0,
  "unclosed_files": 0,
  "headline_rule": null,
  "headline_count": 0,

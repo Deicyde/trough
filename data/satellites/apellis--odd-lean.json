@@ -63,6 +63,19 @@
  "closure_files": 1260,
  "closure_sorry": [],
  "closure_axioms": 0,
+ "root_modules": [
+  {
+   "name": "NonVacuity",
+   "file": "scripts/NonVacuity.lean"
+  },
+  {
+   "name": "OddMath",
+   "file": "OddMath.lean"
+  }
+ ],
+ "root_closure_files": 2228,
+ "root_closure_sorry": [],
+ "root_closure_axioms": 0,
  "unclosed_files": 0,
  "headline_rule": "readme",
  "headline_count": 1419,

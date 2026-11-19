@@ -55,6 +55,23 @@
  "closure_files": 661,
  "closure_sorry": [],
  "closure_axioms": 0,
+ "root_modules": [
+  {
+   "name": "Vsa",
+   "file": "Vsa.lean"
+  },
+  {
+   "name": "VsaBoot",
+   "file": "VsaBoot.lean"
+  },
+  {
+   "name": "VsaIris",
+   "file": "VsaIris.lean"
+  }
+ ],
+ "root_closure_files": 812,
+ "root_closure_sorry": [],
+ "root_closure_axioms": 0,
  "unclosed_files": 0,
  "headline_rule": "readme",
  "headline_count": 30,

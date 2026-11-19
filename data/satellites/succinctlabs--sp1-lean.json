@@ -85,6 +85,17 @@
   "SP1Clean/Soundness/SP1GatedVm.lean"
  ],
  "closure_axioms": 0,
+ "root_modules": [
+  {
+   "name": "SP1Clean",
+   "file": "SP1Clean.lean"
+  }
+ ],
+ "root_closure_files": 344,
+ "root_closure_sorry": [
+  "SP1Clean/Soundness/SP1GatedVm.lean"
+ ],
+ "root_closure_axioms": 0,
  "unclosed_files": 0,
  "headline_rule": "readme",
  "headline_count": 1,

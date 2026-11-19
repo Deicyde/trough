@@ -40,6 +40,4011 @@
  "closure_files": 0,
  "closure_sorry": [],
  "closure_axioms": 0,
+ "root_modules": [
+  {
+   "name": "AsymptoticAnalyticReconstructionV1",
+   "file": "lean/AsymptoticAnalyticReconstructionV1.lean"
+  },
+  {
+   "name": "AsymptoticArithmeticNewCoefficientV1",
+   "file": "lean/AsymptoticArithmeticNewCoefficientV1.lean"
+  },
+  {
+   "name": "AsymptoticAtkinLehnerComplementV1",
+   "file": "lean/AsymptoticAtkinLehnerComplementV1.lean"
+  },
+  {
+   "name": "AsymptoticAtkinLehnerNormalizerV1",
+   "file": "lean/AsymptoticAtkinLehnerNormalizerV1.lean"
+  },
+  {
+   "name": "AsymptoticAtkinLehnerOldTraceV1",
+   "file": "lean/AsymptoticAtkinLehnerOldTraceV1.lean"
+  },
+  {
+   "name": "AsymptoticAtkinLehnerPeriodicityV1",
+   "file": "lean/AsymptoticAtkinLehnerPeriodicityV1.lean"
+  },
+  {
+   "name": "AsymptoticAtkinLehnerRamanujanV1",
+   "file": "lean/AsymptoticAtkinLehnerRamanujanV1.lean"
+  },
+  {
+   "name": "AsymptoticAtkinLehnerSquareV1",
+   "file": "lean/AsymptoticAtkinLehnerSquareV1.lean"
+  },
+  {
+   "name": "AsymptoticAtkinLehnerTraceCosetsV1",
+   "file": "lean/AsymptoticAtkinLehnerTraceCosetsV1.lean"
+  },
+  {
+   "name": "AsymptoticBergmanDecayV1",
+   "file": "lean/AsymptoticBergmanDecayV1.lean"
+  },
+  {
+   "name": "AsymptoticBlockLossV1",
+   "file": "lean/AsymptoticBlockLossV1.lean"
+  },
+  {
+   "name": "AsymptoticBranchKernelTraceV1",
+   "file": "lean/AsymptoticBranchKernelTraceV1.lean"
+  },
+  {
+   "name": "AsymptoticBranchTraceAdditivityV1",
+   "file": "lean/AsymptoticBranchTraceAdditivityV1.lean"
+  },
+  {
+   "name": "AsymptoticCappedGammaV1",
+   "file": "lean/AsymptoticCappedGammaV1.lean"
+  },
+  {
+   "name": "AsymptoticCertificateBranchesV1",
+   "file": "lean/AsymptoticCertificateBranchesV1.lean"
+  },
+  {
+   "name": "AsymptoticCertificateFEV1",
+   "file": "lean/AsymptoticCertificateFEV1.lean"
+  },
+  {
+   "name": "AsymptoticCertificateOperatorsV1",
+   "file": "lean/AsymptoticCertificateOperatorsV1.lean"
+  },
+  {
+   "name": "AsymptoticCertificateSupportV1",
+   "file": "lean/AsymptoticCertificateSupportV1.lean"
+  },
+  {
+   "name": "AsymptoticClassicalAxisDecayV1",
+   "file": "lean/AsymptoticClassicalAxisDecayV1.lean"
+  },
+  {
+   "name": "AsymptoticClassicalBadHeckeCosetsV1",
+   "file": "lean/AsymptoticClassicalBadHeckeCosetsV1.lean"
+  },
+  {
+   "name": "AsymptoticClassicalBadHeckeGroupV1",
+   "file": "lean/AsymptoticClassicalBadHeckeGroupV1.lean"
+  },
+  {
+   "name": "AsymptoticClassicalBadHeckeLowerV1",
+   "file": "lean/AsymptoticClassicalBadHeckeLowerV1.lean"
+  },
+  {
+   "name": "AsymptoticClassicalBadHeckeNewV1",
+   "file": "lean/AsymptoticClassicalBadHeckeNewV1.lean"
+  },
+  {
+   "name": "AsymptoticClassicalBadHeckeRepeatedV1",
+   "file": "lean/AsymptoticClassicalBadHeckeRepeatedV1.lean"
+  },
+  {
+   "name": "AsymptoticClassicalBadHeckeSimpleV1",
+   "file": "lean/AsymptoticClassicalBadHeckeSimpleV1.lean"
+  },
+  {
+   "name": "AsymptoticClassicalBadHeckeV1",
+   "file": "lean/AsymptoticClassicalBadHeckeV1.lean"
+  },
+  {
+   "name": "AsymptoticClassicalCosetBridgeV1",
+   "file": "lean/AsymptoticClassicalCosetBridgeV1.lean"
+  },
+  {
+   "name": "AsymptoticClassicalCuspInjectionV1",
+   "file": "lean/AsymptoticClassicalCuspInjectionV1.lean"
+  },
+  {
+   "name": "AsymptoticClassicalCuspL2V1",
+   "file": "lean/AsymptoticClassicalCuspL2V1.lean"
+  },
+  {
+   "name": "AsymptoticClassicalCuspLowerDimensionV1",
+   "file": "lean/AsymptoticClassicalCuspLowerDimensionV1.lean"
+  },
+  {
+   "name": "AsymptoticClassicalCuspSplitV1",
+   "file": "lean/AsymptoticClassicalCuspSplitV1.lean"
+  },
+  {
+   "name": "AsymptoticClassicalCuspTraceV1",
+   "file": "lean/AsymptoticClassicalCuspTraceV1.lean"
+  },
+  {
+   "name": "AsymptoticClassicalDegeneracyRangeV1",
+   "file": "lean/AsymptoticClassicalDegeneracyRangeV1.lean"
+  },
+  {
+   "name": "AsymptoticClassicalDegeneracyV1",
+   "file": "lean/AsymptoticClassicalDegeneracyV1.lean"
+  },
+  {
+   "name": "AsymptoticClassicalDilationTriangularV1",
+   "file": "lean/AsymptoticClassicalDilationTriangularV1.lean"
+  },
+  {
+   "name": "AsymptoticClassicalDimensionBoundV1",
+   "file": "lean/AsymptoticClassicalDimensionBoundV1.lean"
+  },
+  {
+   "name": "AsymptoticClassicalDiscriminantAffineV1",
+   "file": "lean/AsymptoticClassicalDiscriminantAffineV1.lean"
+  },
+  {
+   "name": "AsymptoticClassicalDiscriminantDecayV1",
+   "file": "lean/AsymptoticClassicalDiscriminantDecayV1.lean"
+  },
+  {
+   "name": "AsymptoticClassicalDiscriminantFamilyV1",
+   "file": "lean/AsymptoticClassicalDiscriminantFamilyV1.lean"
+  },
+  {
+   "name": "AsymptoticClassicalDiscriminantLevelV1",
+   "file": "lean/AsymptoticClassicalDiscriminantLevelV1.lean"
+  },
+  {
+   "name": "AsymptoticClassicalDiscriminantOrbitV1",
+   "file": "lean/AsymptoticClassicalDiscriminantOrbitV1.lean"
+  },
+  {
+   "name": "AsymptoticClassicalDiscriminantStabilizerV1",
+   "file": "lean/AsymptoticClassicalDiscriminantStabilizerV1.lean"
+  },
+  {
+   "name": "AsymptoticClassicalEigenCoefficientsV1",
+   "file": "lean/AsymptoticClassicalEigenCoefficientsV1.lean"
+  },
+  {
+   "name": "AsymptoticClassicalEigenCommutantV1",
+   "file": "lean/AsymptoticClassicalEigenCommutantV1.lean"
+  },
+  {
+   "name": "AsymptoticClassicalEigenCountV1",
+   "file": "lean/AsymptoticClassicalEigenCountV1.lean"
+  },
+  {
+   "name": "AsymptoticClassicalEigenCuspPrimeV1",
+   "file": "lean/AsymptoticClassicalEigenCuspPrimeV1.lean"
+  },
+  {
+   "name": "AsymptoticClassicalEigenFrickeSlashV1",
+   "file": "lean/AsymptoticClassicalEigenFrickeSlashV1.lean"
+  },
+  {
+   "name": "AsymptoticClassicalEigenFrickeV1",
+   "file": "lean/AsymptoticClassicalEigenFrickeV1.lean"
+  },
+  {
+   "name": "AsymptoticClassicalEigenNormalizationV1",
+   "file": "lean/AsymptoticClassicalEigenNormalizationV1.lean"
+  },
+  {
+   "name": "AsymptoticClassicalEigenPrimeArithmeticV1",
+   "file": "lean/AsymptoticClassicalEigenPrimeArithmeticV1.lean"
+  },
+  {
+   "name": "AsymptoticClassicalEigenPrimeBasisV1",
+   "file": "lean/AsymptoticClassicalEigenPrimeBasisV1.lean"
+  },
+  {
+   "name": "AsymptoticClassicalEigenPrimeSolutionV1",
+   "file": "lean/AsymptoticClassicalEigenPrimeSolutionV1.lean"
+  },
+  {
+   "name": "AsymptoticClassicalEigenPrimeV1",
+   "file": "lean/AsymptoticClassicalEigenPrimeV1.lean"
+  },
+  {
+   "name": "AsymptoticClassicalEigenbasisV1",
+   "file": "lean/AsymptoticClassicalEigenbasisV1.lean"
+  },
+  {
+   "name": "AsymptoticClassicalEulerBadPrimesV1",
+   "file": "lean/AsymptoticClassicalEulerBadPrimesV1.lean"
+  },
+  {
+   "name": "AsymptoticClassicalEulerNormalizationV1",
+   "file": "lean/AsymptoticClassicalEulerNormalizationV1.lean"
+  },
+  {
+   "name": "AsymptoticClassicalEulerProductV1",
+   "file": "lean/AsymptoticClassicalEulerProductV1.lean"
+  },
+  {
+   "name": "AsymptoticClassicalEulerSolutionV1",
+   "file": "lean/AsymptoticClassicalEulerSolutionV1.lean"
+  },
+  {
+   "name": "AsymptoticClassicalFiniteDimensionV1",
+   "file": "lean/AsymptoticClassicalFiniteDimensionV1.lean"
+  },
+  {
+   "name": "AsymptoticClassicalFourierNormalizationV1",
+   "file": "lean/AsymptoticClassicalFourierNormalizationV1.lean"
+  },
+  {
+   "name": "AsymptoticClassicalFrickeCosetsV1",
+   "file": "lean/AsymptoticClassicalFrickeCosetsV1.lean"
+  },
+  {
+   "name": "AsymptoticClassicalFrickeDegeneracyV1",
+   "file": "lean/AsymptoticClassicalFrickeDegeneracyV1.lean"
+  },
+  {
+   "name": "AsymptoticClassicalFrickeGroupV1",
+   "file": "lean/AsymptoticClassicalFrickeGroupV1.lean"
+  },
+  {
+   "name": "AsymptoticClassicalFrickeIsometryV1",
+   "file": "lean/AsymptoticClassicalFrickeIsometryV1.lean"
+  },
+  {
+   "name": "AsymptoticClassicalFrickeNewV1",
+   "file": "lean/AsymptoticClassicalFrickeNewV1.lean"
+  },
+  {
+   "name": "AsymptoticClassicalFrickeOperatorV1",
+   "file": "lean/AsymptoticClassicalFrickeOperatorV1.lean"
+  },
+  {
+   "name": "AsymptoticClassicalFrickeOrthogonalV1",
+   "file": "lean/AsymptoticClassicalFrickeOrthogonalV1.lean"
+  },
+  {
+   "name": "AsymptoticClassicalFrickeSquareV1",
+   "file": "lean/AsymptoticClassicalFrickeSquareV1.lean"
+  },
+  {
+   "name": "AsymptoticClassicalFrickeTraceIntegrandV1",
+   "file": "lean/AsymptoticClassicalFrickeTraceIntegrandV1.lean"
+  },
+  {
+   "name": "AsymptoticClassicalFrickeTraceSwapV1",
+   "file": "lean/AsymptoticClassicalFrickeTraceSwapV1.lean"
+  },
+  {
+   "name": "AsymptoticClassicalFullDimensionV1",
+   "file": "lean/AsymptoticClassicalFullDimensionV1.lean"
+  },
+  {
+   "name": "AsymptoticClassicalHeckeAverageV1",
+   "file": "lean/AsymptoticClassicalHeckeAverageV1.lean"
+  },
+  {
+   "name": "AsymptoticClassicalHeckeCoefficientAlgebraV1",
+   "file": "lean/AsymptoticClassicalHeckeCoefficientAlgebraV1.lean"
+  },
+  {
+   "name": "AsymptoticClassicalHeckeCoefficientV1",
+   "file": "lean/AsymptoticClassicalHeckeCoefficientV1.lean"
+  },
+  {
+   "name": "AsymptoticClassicalHeckeCommutationV1",
+   "file": "lean/AsymptoticClassicalHeckeCommutationV1.lean"
+  },
+  {
+   "name": "AsymptoticClassicalHeckeCosetsV1",
+   "file": "lean/AsymptoticClassicalHeckeCosetsV1.lean"
+  },
+  {
+   "name": "AsymptoticClassicalHeckeDegeneracyV1",
+   "file": "lean/AsymptoticClassicalHeckeDegeneracyV1.lean"
+  },
+  {
+   "name": "AsymptoticClassicalHeckeFormulaV1",
+   "file": "lean/AsymptoticClassicalHeckeFormulaV1.lean"
+  },
+  {
+   "name": "AsymptoticClassicalHeckeFourierV1",
+   "file": "lean/AsymptoticClassicalHeckeFourierV1.lean"
+  },
+  {
+   "name": "AsymptoticClassicalHeckeFrickeV1",
+   "file": "lean/AsymptoticClassicalHeckeFrickeV1.lean"
+  },
+  {
+   "name": "AsymptoticClassicalHeckeNewV1",
+   "file": "lean/AsymptoticClassicalHeckeNewV1.lean"
+  },
+  {
+   "name": "AsymptoticClassicalHeckeNormalizerV1",
+   "file": "lean/AsymptoticClassicalHeckeNormalizerV1.lean"
+  },
+  {
+   "name": "AsymptoticClassicalHeckeOldIntertwineV1",
+   "file": "lean/AsymptoticClassicalHeckeOldIntertwineV1.lean"
+  },
+  {
+   "name": "AsymptoticClassicalHeckePrimeV1",
+   "file": "lean/AsymptoticClassicalHeckePrimeV1.lean"
+  },
+  {
+   "name": "AsymptoticClassicalHeckeSwapV1",
+   "file": "lean/AsymptoticClassicalHeckeSwapV1.lean"
+  },
+  {
+   "name": "AsymptoticClassicalHeckeSymmetryV1",
+   "file": "lean/AsymptoticClassicalHeckeSymmetryV1.lean"
+  },
+  {
+   "name": "AsymptoticClassicalHeckeTraceSumV1",
+   "file": "lean/AsymptoticClassicalHeckeTraceSumV1.lean"
+  },
+  {
+   "name": "AsymptoticClassicalHeckeTraceV1",
+   "file": "lean/AsymptoticClassicalHeckeTraceV1.lean"
+  },
+  {
+   "name": "AsymptoticClassicalHolomorphicDensityV1",
+   "file": "lean/AsymptoticClassicalHolomorphicDensityV1.lean"
+  },
+  {
+   "name": "AsymptoticClassicalHolomorphicVandermondeV1",
+   "file": "lean/AsymptoticClassicalHolomorphicVandermondeV1.lean"
+  },
+  {
+   "name": "AsymptoticClassicalIntegralTriangularV1",
+   "file": "lean/AsymptoticClassicalIntegralTriangularV1.lean"
+  },
+  {
+   "name": "AsymptoticClassicalLSeriesFrickeV1",
+   "file": "lean/AsymptoticClassicalLSeriesFrickeV1.lean"
+  },
+  {
+   "name": "AsymptoticClassicalLSeriesOrderV1",
+   "file": "lean/AsymptoticClassicalLSeriesOrderV1.lean"
+  },
+  {
+   "name": "AsymptoticClassicalLSeriesV1",
+   "file": "lean/AsymptoticClassicalLSeriesV1.lean"
+  },
+  {
+   "name": "AsymptoticClassicalLevelOneDimensionV1",
+   "file": "lean/AsymptoticClassicalLevelOneDimensionV1.lean"
+  },
+  {
+   "name": "AsymptoticClassicalLocalAtkinLowerV1",
+   "file": "lean/AsymptoticClassicalLocalAtkinLowerV1.lean"
+  },
+  {
+   "name": "AsymptoticClassicalLocalAtkinMatrixV1",
+   "file": "lean/AsymptoticClassicalLocalAtkinMatrixV1.lean"
+  },
+  {
+   "name": "AsymptoticClassicalLocalAtkinNewV1",
+   "file": "lean/AsymptoticClassicalLocalAtkinNewV1.lean"
+  },
+  {
+   "name": "AsymptoticClassicalLocalAtkinOldIntertwineV1",
+   "file": "lean/AsymptoticClassicalLocalAtkinOldIntertwineV1.lean"
+  },
+  {
+   "name": "AsymptoticClassicalLocalAtkinOperatorV1",
+   "file": "lean/AsymptoticClassicalLocalAtkinOperatorV1.lean"
+  },
+  {
+   "name": "AsymptoticClassicalLocalAtkinSymmetryV1",
+   "file": "lean/AsymptoticClassicalLocalAtkinSymmetryV1.lean"
+  },
+  {
+   "name": "AsymptoticClassicalLocalAtkinTraceV1",
+   "file": "lean/AsymptoticClassicalLocalAtkinTraceV1.lean"
+  },
+  {
+   "name": "AsymptoticClassicalLocalFrickeMatrixV1",
+   "file": "lean/AsymptoticClassicalLocalFrickeMatrixV1.lean"
+  },
+  {
+   "name": "AsymptoticClassicalLocalFrickeV1",
+   "file": "lean/AsymptoticClassicalLocalFrickeV1.lean"
+  },
+  {
+   "name": "AsymptoticClassicalMellinBoundV1",
+   "file": "lean/AsymptoticClassicalMellinBoundV1.lean"
+  },
+  {
+   "name": "AsymptoticClassicalMellinSplitV1",
+   "file": "lean/AsymptoticClassicalMellinSplitV1.lean"
+  },
+  {
+   "name": "AsymptoticClassicalMultiplicityAdjointV1",
+   "file": "lean/AsymptoticClassicalMultiplicityAdjointV1.lean"
+  },
+  {
+   "name": "AsymptoticClassicalMultiplicityCosetsV1",
+   "file": "lean/AsymptoticClassicalMultiplicityCosetsV1.lean"
+  },
+  {
+   "name": "AsymptoticClassicalMultiplicityDimensionV1",
+   "file": "lean/AsymptoticClassicalMultiplicityDimensionV1.lean"
+  },
+  {
+   "name": "AsymptoticClassicalMultiplicityFrickeV1",
+   "file": "lean/AsymptoticClassicalMultiplicityFrickeV1.lean"
+  },
+  {
+   "name": "AsymptoticClassicalMultiplicityKernelsV1",
+   "file": "lean/AsymptoticClassicalMultiplicityKernelsV1.lean"
+  },
+  {
+   "name": "AsymptoticClassicalMultiplicityMixedGroupsV1",
+   "file": "lean/AsymptoticClassicalMultiplicityMixedGroupsV1.lean"
+  },
+  {
+   "name": "AsymptoticClassicalMultiplicityMixedTraceV1",
+   "file": "lean/AsymptoticClassicalMultiplicityMixedTraceV1.lean"
+  },
+  {
+   "name": "AsymptoticClassicalMultiplicityOrdinaryV1",
+   "file": "lean/AsymptoticClassicalMultiplicityOrdinaryV1.lean"
+  },
+  {
+   "name": "AsymptoticClassicalMultiplicityPartialV1",
+   "file": "lean/AsymptoticClassicalMultiplicityPartialV1.lean"
+  },
+  {
+   "name": "AsymptoticClassicalMultiplicityProjectionV1",
+   "file": "lean/AsymptoticClassicalMultiplicityProjectionV1.lean"
+  },
+  {
+   "name": "AsymptoticClassicalMultiplicityRecurrenceV1",
+   "file": "lean/AsymptoticClassicalMultiplicityRecurrenceV1.lean"
+  },
+  {
+   "name": "AsymptoticClassicalMultiplicityRelativeV1",
+   "file": "lean/AsymptoticClassicalMultiplicityRelativeV1.lean"
+  },
+  {
+   "name": "AsymptoticClassicalMultiplicityRepeatedV1",
+   "file": "lean/AsymptoticClassicalMultiplicityRepeatedV1.lean"
+  },
+  {
+   "name": "AsymptoticClassicalMultiplicityTraceV1",
+   "file": "lean/AsymptoticClassicalMultiplicityTraceV1.lean"
+  },
+  {
+   "name": "AsymptoticClassicalNewCuspKernelV1",
+   "file": "lean/AsymptoticClassicalNewCuspKernelV1.lean"
+  },
+  {
+   "name": "AsymptoticClassicalNewCuspV1",
+   "file": "lean/AsymptoticClassicalNewCuspV1.lean"
+  },
+  {
+   "name": "AsymptoticClassicalNewDimensionAdmissibleV1",
+   "file": "lean/AsymptoticClassicalNewDimensionAdmissibleV1.lean"
+  },
+  {
+   "name": "AsymptoticClassicalNewDimensionArithmeticV1",
+   "file": "lean/AsymptoticClassicalNewDimensionArithmeticV1.lean"
+  },
+  {
+   "name": "AsymptoticClassicalNewDimensionBasesV1",
+   "file": "lean/AsymptoticClassicalNewDimensionBasesV1.lean"
+  },
+  {
+   "name": "AsymptoticClassicalNewDimensionCoefficientV1",
+   "file": "lean/AsymptoticClassicalNewDimensionCoefficientV1.lean"
+  },
+  {
+   "name": "AsymptoticClassicalNewDimensionDifferenceProductV1",
+   "file": "lean/AsymptoticClassicalNewDimensionDifferenceProductV1.lean"
+  },
+  {
+   "name": "AsymptoticClassicalNewDimensionDifferenceV1",
+   "file": "lean/AsymptoticClassicalNewDimensionDifferenceV1.lean"
+  },
+  {
+   "name": "AsymptoticClassicalNewDimensionInductionV1",
+   "file": "lean/AsymptoticClassicalNewDimensionInductionV1.lean"
+  },
+  {
+   "name": "AsymptoticClassicalNewDimensionListsV1",
+   "file": "lean/AsymptoticClassicalNewDimensionListsV1.lean"
+  },
+  {
+   "name": "AsymptoticClassicalNewDimensionPrimesV1",
+   "file": "lean/AsymptoticClassicalNewDimensionPrimesV1.lean"
+  },
+  {
+   "name": "AsymptoticClassicalNewDimensionRepeatedV1",
+   "file": "lean/AsymptoticClassicalNewDimensionRepeatedV1.lean"
+  },
+  {
+   "name": "AsymptoticClassicalNewDimensionTotalV1",
+   "file": "lean/AsymptoticClassicalNewDimensionTotalV1.lean"
+  },
+  {
+   "name": "AsymptoticClassicalNewDimensionTwoArithmeticV1",
+   "file": "lean/AsymptoticClassicalNewDimensionTwoArithmeticV1.lean"
+  },
+  {
+   "name": "AsymptoticClassicalNewEigenCountV1",
+   "file": "lean/AsymptoticClassicalNewEigenCountV1.lean"
+  },
+  {
+   "name": "AsymptoticClassicalNewEigenSolutionV1",
+   "file": "lean/AsymptoticClassicalNewEigenSolutionV1.lean"
+  },
+  {
+   "name": "AsymptoticClassicalNewOrthogonalV1",
+   "file": "lean/AsymptoticClassicalNewOrthogonalV1.lean"
+  },
+  {
+   "name": "AsymptoticClassicalNewPrimeEigenbasisV1",
+   "file": "lean/AsymptoticClassicalNewPrimeEigenbasisV1.lean"
+  },
+  {
+   "name": "AsymptoticClassicalNormFactorV1",
+   "file": "lean/AsymptoticClassicalNormFactorV1.lean"
+  },
+  {
+   "name": "AsymptoticClassicalOldDimensionV1",
+   "file": "lean/AsymptoticClassicalOldDimensionV1.lean"
+  },
+  {
+   "name": "AsymptoticClassicalOldIntersectionGroupsV1",
+   "file": "lean/AsymptoticClassicalOldIntersectionGroupsV1.lean"
+  },
+  {
+   "name": "AsymptoticClassicalOldIntersectionIndexV1",
+   "file": "lean/AsymptoticClassicalOldIntersectionIndexV1.lean"
+  },
+  {
+   "name": "AsymptoticClassicalOldIntersectionLowerV1",
+   "file": "lean/AsymptoticClassicalOldIntersectionLowerV1.lean"
+  },
+  {
+   "name": "AsymptoticClassicalOldIntersectionPeriodsV1",
+   "file": "lean/AsymptoticClassicalOldIntersectionPeriodsV1.lean"
+  },
+  {
+   "name": "AsymptoticClassicalOldIntersectionRepeatedV1",
+   "file": "lean/AsymptoticClassicalOldIntersectionRepeatedV1.lean"
+  },
+  {
+   "name": "AsymptoticClassicalOldIntersectionSimpleGroupV1",
+   "file": "lean/AsymptoticClassicalOldIntersectionSimpleGroupV1.lean"
+  },
+  {
+   "name": "AsymptoticClassicalOldIntersectionSimpleV1",
+   "file": "lean/AsymptoticClassicalOldIntersectionSimpleV1.lean"
+  },
+  {
+   "name": "AsymptoticClassicalOldIntersectionV1",
+   "file": "lean/AsymptoticClassicalOldIntersectionV1.lean"
+  },
+  {
+   "name": "AsymptoticClassicalOldLevelsV1",
+   "file": "lean/AsymptoticClassicalOldLevelsV1.lean"
+  },
+  {
+   "name": "AsymptoticClassicalPeterssonDensityV1",
+   "file": "lean/AsymptoticClassicalPeterssonDensityV1.lean"
+  },
+  {
+   "name": "AsymptoticClassicalPeterssonInnerV1",
+   "file": "lean/AsymptoticClassicalPeterssonInnerV1.lean"
+  },
+  {
+   "name": "AsymptoticClassicalPeterssonMeasureV1",
+   "file": "lean/AsymptoticClassicalPeterssonMeasureV1.lean"
+  },
+  {
+   "name": "AsymptoticClassicalPeterssonNormalizerV1",
+   "file": "lean/AsymptoticClassicalPeterssonNormalizerV1.lean"
+  },
+  {
+   "name": "AsymptoticClassicalPrimeFrickeV1",
+   "file": "lean/AsymptoticClassicalPrimeFrickeV1.lean"
+  },
+  {
+   "name": "AsymptoticClassicalPrimeHeckeNewV1",
+   "file": "lean/AsymptoticClassicalPrimeHeckeNewV1.lean"
+  },
+  {
+   "name": "AsymptoticClassicalPrimeHeckeV1",
+   "file": "lean/AsymptoticClassicalPrimeHeckeV1.lean"
+  },
+  {
+   "name": "AsymptoticClassicalSturmV1",
+   "file": "lean/AsymptoticClassicalSturmV1.lean"
+  },
+  {
+   "name": "AsymptoticClassicalTraceAdjointV1",
+   "file": "lean/AsymptoticClassicalTraceAdjointV1.lean"
+  },
+  {
+   "name": "AsymptoticClassicalTraceIntegrandV1",
+   "file": "lean/AsymptoticClassicalTraceIntegrandV1.lean"
+  },
+  {
+   "name": "AsymptoticClassicalTraceTranslateV1",
+   "file": "lean/AsymptoticClassicalTraceTranslateV1.lean"
+  },
+  {
+   "name": "AsymptoticClassicalTranslateEquivV1",
+   "file": "lean/AsymptoticClassicalTranslateEquivV1.lean"
+  },
+  {
+   "name": "AsymptoticClassicalTriangularSlashV1",
+   "file": "lean/AsymptoticClassicalTriangularSlashV1.lean"
+  },
+  {
+   "name": "AsymptoticCoefficientGrowthV1",
+   "file": "lean/AsymptoticCoefficientGrowthV1.lean"
+  },
+  {
+   "name": "AsymptoticCoerciveInverseV1",
+   "file": "lean/AsymptoticCoerciveInverseV1.lean"
+  },
+  {
+   "name": "AsymptoticCoerciveNeumannV1",
+   "file": "lean/AsymptoticCoerciveNeumannV1.lean"
+  },
+  {
+   "name": "AsymptoticCompactBranchFormulaV1",
+   "file": "lean/AsymptoticCompactBranchFormulaV1.lean"
+  },
+  {
+   "name": "AsymptoticCompactBranchV1",
+   "file": "lean/AsymptoticCompactBranchV1.lean"
+  },
+  {
+   "name": "AsymptoticCompactFamilyTranslationV1",
+   "file": "lean/AsymptoticCompactFamilyTranslationV1.lean"
+  },
+  {
+   "name": "AsymptoticCompactObservationCountV1",
+   "file": "lean/AsymptoticCompactObservationCountV1.lean"
+  },
+  {
+   "name": "AsymptoticCompactProjectiveV1",
+   "file": "lean/AsymptoticCompactProjectiveV1.lean"
+  },
+  {
+   "name": "AsymptoticCompactRestrictionV1",
+   "file": "lean/AsymptoticCompactRestrictionV1.lean"
+  },
+  {
+   "name": "AsymptoticCompactTranslationV1",
+   "file": "lean/AsymptoticCompactTranslationV1.lean"
+  },
+  {
+   "name": "AsymptoticCompletedObservationV1",
+   "file": "lean/AsymptoticCompletedObservationV1.lean"
+  },
+  {
+   "name": "AsymptoticComplexMultiplierAdjointV1",
+   "file": "lean/AsymptoticComplexMultiplierAdjointV1.lean"
+  },
+  {
+   "name": "AsymptoticConcreteBranchAdjointV1",
+   "file": "lean/AsymptoticConcreteBranchAdjointV1.lean"
+  },
+  {
+   "name": "AsymptoticConcreteBranchAlgebraV1",
+   "file": "lean/AsymptoticConcreteBranchAlgebraV1.lean"
+  },
+  {
+   "name": "AsymptoticConcreteBranchMatrixV1",
+   "file": "lean/AsymptoticConcreteBranchMatrixV1.lean"
+  },
+  {
+   "name": "AsymptoticConcreteCountReductionV1",
+   "file": "lean/AsymptoticConcreteCountReductionV1.lean"
+  },
+  {
+   "name": "AsymptoticConcreteCountUpperV1",
+   "file": "lean/AsymptoticConcreteCountUpperV1.lean"
+  },
+  {
+   "name": "AsymptoticConcreteRationalBranchV1",
+   "file": "lean/AsymptoticConcreteRationalBranchV1.lean"
+  },
+  {
+   "name": "AsymptoticConcreteTraceLimitV1",
+   "file": "lean/AsymptoticConcreteTraceLimitV1.lean"
+  },
+  {
+   "name": "AsymptoticCongruenceCovolumeV1",
+   "file": "lean/AsymptoticCongruenceCovolumeV1.lean"
+  },
+  {
+   "name": "AsymptoticCongruenceDefectV1",
+   "file": "lean/AsymptoticCongruenceDefectV1.lean"
+  },
+  {
+   "name": "AsymptoticCongruenceFiniteCoverV1",
+   "file": "lean/AsymptoticCongruenceFiniteCoverV1.lean"
+  },
+  {
+   "name": "AsymptoticCongruenceGeneratorsV1",
+   "file": "lean/AsymptoticCongruenceGeneratorsV1.lean"
+  },
+  {
+   "name": "AsymptoticCongruenceLabelsV1",
+   "file": "lean/AsymptoticCongruenceLabelsV1.lean"
+  },
+  {
+   "name": "AsymptoticCongruenceNewTraceV1",
+   "file": "lean/AsymptoticCongruenceNewTraceV1.lean"
+  },
+  {
+   "name": "AsymptoticCongruenceOldMeetV1",
+   "file": "lean/AsymptoticCongruenceOldMeetV1.lean"
+  },
+  {
+   "name": "AsymptoticCongruenceOldSpaceV1",
+   "file": "lean/AsymptoticCongruenceOldSpaceV1.lean"
+  },
+  {
+   "name": "AsymptoticCongruenceOldTraceV1",
+   "file": "lean/AsymptoticCongruenceOldTraceV1.lean"
+  },
+  {
+   "name": "AsymptoticCongruenceProjectionV1",
+   "file": "lean/AsymptoticCongruenceProjectionV1.lean"
+  },
+  {
+   "name": "AsymptoticCongruenceQuotientV1",
+   "file": "lean/AsymptoticCongruenceQuotientV1.lean"
+  },
+  {
+   "name": "AsymptoticCongruenceRankLossV1",
+   "file": "lean/AsymptoticCongruenceRankLossV1.lean"
+  },
+  {
+   "name": "AsymptoticCongruenceStripV1",
+   "file": "lean/AsymptoticCongruenceStripV1.lean"
+  },
+  {
+   "name": "AsymptoticCongruenceTraceFiniteV1",
+   "file": "lean/AsymptoticCongruenceTraceFiniteV1.lean"
+  },
+  {
+   "name": "AsymptoticCongruenceTransvectionsV1",
+   "file": "lean/AsymptoticCongruenceTransvectionsV1.lean"
+  },
+  {
+   "name": "AsymptoticCongruenceWeightRemovalV1",
+   "file": "lean/AsymptoticCongruenceWeightRemovalV1.lean"
+  },
+  {
+   "name": "AsymptoticCongruenceWeightV1",
+   "file": "lean/AsymptoticCongruenceWeightV1.lean"
+  },
+  {
+   "name": "AsymptoticCoprimeCongruenceIndexV1",
+   "file": "lean/AsymptoticCoprimeCongruenceIndexV1.lean"
+  },
+  {
+   "name": "AsymptoticCoprimeCosetChartV1",
+   "file": "lean/AsymptoticCoprimeCosetChartV1.lean"
+  },
+  {
+   "name": "AsymptoticCornerKernelV1",
+   "file": "lean/AsymptoticCornerKernelV1.lean"
+  },
+  {
+   "name": "AsymptoticCosetSectorOrthogonalityV1",
+   "file": "lean/AsymptoticCosetSectorOrthogonalityV1.lean"
+  },
+  {
+   "name": "AsymptoticCosetTraceSumsV1",
+   "file": "lean/AsymptoticCosetTraceSumsV1.lean"
+  },
+  {
+   "name": "AsymptoticCutEmbeddingLimitV1",
+   "file": "lean/AsymptoticCutEmbeddingLimitV1.lean"
+  },
+  {
+   "name": "AsymptoticCylinderAnalyticV1",
+   "file": "lean/AsymptoticCylinderAnalyticV1.lean"
+  },
+  {
+   "name": "AsymptoticCylinderCountV1",
+   "file": "lean/AsymptoticCylinderCountV1.lean"
+  },
+  {
+   "name": "AsymptoticCylinderCutLimitV1",
+   "file": "lean/AsymptoticCylinderCutLimitV1.lean"
+  },
+  {
+   "name": "AsymptoticCylinderCutPositiveV1",
+   "file": "lean/AsymptoticCylinderCutPositiveV1.lean"
+  },
+  {
+   "name": "AsymptoticCylinderCutReconstructionV1",
+   "file": "lean/AsymptoticCylinderCutReconstructionV1.lean"
+  },
+  {
+   "name": "AsymptoticCylinderCutTraceErrorV1",
+   "file": "lean/AsymptoticCylinderCutTraceErrorV1.lean"
+  },
+  {
+   "name": "AsymptoticCylinderCutTraceLimitV1",
+   "file": "lean/AsymptoticCylinderCutTraceLimitV1.lean"
+  },
+  {
+   "name": "AsymptoticCylinderCutTraceV1",
+   "file": "lean/AsymptoticCylinderCutTraceV1.lean"
+  },
+  {
+   "name": "AsymptoticCylinderEmbeddingV1",
+   "file": "lean/AsymptoticCylinderEmbeddingV1.lean"
+  },
+  {
+   "name": "AsymptoticCylinderFinitePolynomialV1",
+   "file": "lean/AsymptoticCylinderFinitePolynomialV1.lean"
+  },
+  {
+   "name": "AsymptoticCylinderFiniteReconstructionV1",
+   "file": "lean/AsymptoticCylinderFiniteReconstructionV1.lean"
+  },
+  {
+   "name": "AsymptoticCylinderFiniteUpperCutoffV1",
+   "file": "lean/AsymptoticCylinderFiniteUpperCutoffV1.lean"
+  },
+  {
+   "name": "AsymptoticCylinderFourierV1",
+   "file": "lean/AsymptoticCylinderFourierV1.lean"
+  },
+  {
+   "name": "AsymptoticCylinderHeightCutoffV1",
+   "file": "lean/AsymptoticCylinderHeightCutoffV1.lean"
+  },
+  {
+   "name": "AsymptoticCylinderInversePolynomialV1",
+   "file": "lean/AsymptoticCylinderInversePolynomialV1.lean"
+  },
+  {
+   "name": "AsymptoticCylinderKernelPeriodizationV1",
+   "file": "lean/AsymptoticCylinderKernelPeriodizationV1.lean"
+  },
+  {
+   "name": "AsymptoticCylinderLiftRangeV1",
+   "file": "lean/AsymptoticCylinderLiftRangeV1.lean"
+  },
+  {
+   "name": "AsymptoticCylinderLiftV1",
+   "file": "lean/AsymptoticCylinderLiftV1.lean"
+  },
+  {
+   "name": "AsymptoticCylinderModeAngleV1",
+   "file": "lean/AsymptoticCylinderModeAngleV1.lean"
+  },
+  {
+   "name": "AsymptoticCylinderModeComparisonV1",
+   "file": "lean/AsymptoticCylinderModeComparisonV1.lean"
+  },
+  {
+   "name": "AsymptoticCylinderPolynomialTraceV1",
+   "file": "lean/AsymptoticCylinderPolynomialTraceV1.lean"
+  },
+  {
+   "name": "AsymptoticCylinderRamifiedV1",
+   "file": "lean/AsymptoticCylinderRamifiedV1.lean"
+  },
+  {
+   "name": "AsymptoticCylinderReconstructionV1",
+   "file": "lean/AsymptoticCylinderReconstructionV1.lean"
+  },
+  {
+   "name": "AsymptoticCylinderSectionV1",
+   "file": "lean/AsymptoticCylinderSectionV1.lean"
+  },
+  {
+   "name": "AsymptoticCylinderSectorsV1",
+   "file": "lean/AsymptoticCylinderSectorsV1.lean"
+  },
+  {
+   "name": "AsymptoticCylinderSeriesV1",
+   "file": "lean/AsymptoticCylinderSeriesV1.lean"
+  },
+  {
+   "name": "AsymptoticCylinderTerminalLiftV1",
+   "file": "lean/AsymptoticCylinderTerminalLiftV1.lean"
+  },
+  {
+   "name": "AsymptoticCylinderTerminalV1",
+   "file": "lean/AsymptoticCylinderTerminalV1.lean"
+  },
+  {
+   "name": "AsymptoticCylinderTraceV1",
+   "file": "lean/AsymptoticCylinderTraceV1.lean"
+  },
+  {
+   "name": "AsymptoticCylinderTwistV1",
+   "file": "lean/AsymptoticCylinderTwistV1.lean"
+  },
+  {
+   "name": "AsymptoticCylinderUpperCutoffLimitV1",
+   "file": "lean/AsymptoticCylinderUpperCutoffLimitV1.lean"
+  },
+  {
+   "name": "AsymptoticCylinderUpperCutoffV1",
+   "file": "lean/AsymptoticCylinderUpperCutoffV1.lean"
+  },
+  {
+   "name": "AsymptoticCylinderUpperTailLimitV1",
+   "file": "lean/AsymptoticCylinderUpperTailLimitV1.lean"
+  },
+  {
+   "name": "AsymptoticCylinderUpperTailV1",
+   "file": "lean/AsymptoticCylinderUpperTailV1.lean"
+  },
+  {
+   "name": "AsymptoticCylinderV1",
+   "file": "lean/AsymptoticCylinderV1.lean"
+  },
+  {
+   "name": "AsymptoticCylinderWeightV1",
+   "file": "lean/AsymptoticCylinderWeightV1.lean"
+  },
+  {
+   "name": "AsymptoticDecodedCongruenceV1",
+   "file": "lean/AsymptoticDecodedCongruenceV1.lean"
+  },
+  {
+   "name": "AsymptoticDecodedObservationsV1",
+   "file": "lean/AsymptoticDecodedObservationsV1.lean"
+  },
+  {
+   "name": "AsymptoticDecodedQuotientV1",
+   "file": "lean/AsymptoticDecodedQuotientV1.lean"
+  },
+  {
+   "name": "AsymptoticDecodedRamifiedKernelV1",
+   "file": "lean/AsymptoticDecodedRamifiedKernelV1.lean"
+  },
+  {
+   "name": "AsymptoticDecreasingProjectionTraceV1",
+   "file": "lean/AsymptoticDecreasingProjectionTraceV1.lean"
+  },
+  {
+   "name": "AsymptoticDegeneracyContainmentV1",
+   "file": "lean/AsymptoticDegeneracyContainmentV1.lean"
+  },
+  {
+   "name": "AsymptoticDegeneracyGroupV1",
+   "file": "lean/AsymptoticDegeneracyGroupV1.lean"
+  },
+  {
+   "name": "AsymptoticDiagonalComparisonV1",
+   "file": "lean/AsymptoticDiagonalComparisonV1.lean"
+  },
+  {
+   "name": "AsymptoticDiagonalSubtractionV1",
+   "file": "lean/AsymptoticDiagonalSubtractionV1.lean"
+  },
+  {
+   "name": "AsymptoticDiagonalTraceV1",
+   "file": "lean/AsymptoticDiagonalTraceV1.lean"
+  },
+  {
+   "name": "AsymptoticEulerCountTheoremV1",
+   "file": "lean/AsymptoticEulerCountTheoremV1.lean"
+  },
+  {
+   "name": "AsymptoticExponentialTraceTailV1",
+   "file": "lean/AsymptoticExponentialTraceTailV1.lean"
+  },
+  {
+   "name": "AsymptoticFactoredPolynomialTraceV1",
+   "file": "lean/AsymptoticFactoredPolynomialTraceV1.lean"
+  },
+  {
+   "name": "AsymptoticFiberCompressionV1",
+   "file": "lean/AsymptoticFiberCompressionV1.lean"
+  },
+  {
+   "name": "AsymptoticFiberIsometryV1",
+   "file": "lean/AsymptoticFiberIsometryV1.lean"
+  },
+  {
+   "name": "AsymptoticFiberProjectionV1",
+   "file": "lean/AsymptoticFiberProjectionV1.lean"
+  },
+  {
+   "name": "AsymptoticFiniteBranchCertificateV1",
+   "file": "lean/AsymptoticFiniteBranchCertificateV1.lean"
+  },
+  {
+   "name": "AsymptoticFiniteBranchCompactV1",
+   "file": "lean/AsymptoticFiniteBranchCompactV1.lean"
+  },
+  {
+   "name": "AsymptoticFiniteBranchCornersV1",
+   "file": "lean/AsymptoticFiniteBranchCornersV1.lean"
+  },
+  {
+   "name": "AsymptoticFiniteBranchDataV1",
+   "file": "lean/AsymptoticFiniteBranchDataV1.lean"
+  },
+  {
+   "name": "AsymptoticFiniteBranchExpressionV1",
+   "file": "lean/AsymptoticFiniteBranchExpressionV1.lean"
+  },
+  {
+   "name": "AsymptoticFiniteBranchFamilyV1",
+   "file": "lean/AsymptoticFiniteBranchFamilyV1.lean"
+  },
+  {
+   "name": "AsymptoticFiniteBranchFoldsV1",
+   "file": "lean/AsymptoticFiniteBranchFoldsV1.lean"
+  },
+  {
+   "name": "AsymptoticFiniteBranchNormalV1",
+   "file": "lean/AsymptoticFiniteBranchNormalV1.lean"
+  },
+  {
+   "name": "AsymptoticFiniteBranchPolynomialV1",
+   "file": "lean/AsymptoticFiniteBranchPolynomialV1.lean"
+  },
+  {
+   "name": "AsymptoticFiniteBranchReconstructionV1",
+   "file": "lean/AsymptoticFiniteBranchReconstructionV1.lean"
+  },
+  {
+   "name": "AsymptoticFiniteBranchRetainedV1",
+   "file": "lean/AsymptoticFiniteBranchRetainedV1.lean"
+  },
+  {
+   "name": "AsymptoticFiniteBranchRowsV1",
+   "file": "lean/AsymptoticFiniteBranchRowsV1.lean"
+  },
+  {
+   "name": "AsymptoticFiniteBranchSumsV1",
+   "file": "lean/AsymptoticFiniteBranchSumsV1.lean"
+  },
+  {
+   "name": "AsymptoticFiniteBranchSupportV1",
+   "file": "lean/AsymptoticFiniteBranchSupportV1.lean"
+  },
+  {
+   "name": "AsymptoticFiniteBranchWeightV1",
+   "file": "lean/AsymptoticFiniteBranchWeightV1.lean"
+  },
+  {
+   "name": "AsymptoticFiniteCertificateV1",
+   "file": "lean/AsymptoticFiniteCertificateV1.lean"
+  },
+  {
+   "name": "AsymptoticFiniteCylinderPolynomialV1",
+   "file": "lean/AsymptoticFiniteCylinderPolynomialV1.lean"
+  },
+  {
+   "name": "AsymptoticFiniteCylinderTransportV1",
+   "file": "lean/AsymptoticFiniteCylinderTransportV1.lean"
+  },
+  {
+   "name": "AsymptoticFiniteExpressionTraceV1",
+   "file": "lean/AsymptoticFiniteExpressionTraceV1.lean"
+  },
+  {
+   "name": "AsymptoticFiniteFiberAverageV1",
+   "file": "lean/AsymptoticFiniteFiberAverageV1.lean"
+  },
+  {
+   "name": "AsymptoticFiniteFiberInductionV1",
+   "file": "lean/AsymptoticFiniteFiberInductionV1.lean"
+  },
+  {
+   "name": "AsymptoticFiniteFoldAssemblyV1",
+   "file": "lean/AsymptoticFiniteFoldAssemblyV1.lean"
+  },
+  {
+   "name": "AsymptoticFiniteFoldReconstructionV1",
+   "file": "lean/AsymptoticFiniteFoldReconstructionV1.lean"
+  },
+  {
+   "name": "AsymptoticFiniteHolomorphicNormalV1",
+   "file": "lean/AsymptoticFiniteHolomorphicNormalV1.lean"
+  },
+  {
+   "name": "AsymptoticFiniteKernelCountReductionV1",
+   "file": "lean/AsymptoticFiniteKernelCountReductionV1.lean"
+  },
+  {
+   "name": "AsymptoticFiniteNeumannPerturbationV1",
+   "file": "lean/AsymptoticFiniteNeumannPerturbationV1.lean"
+  },
+  {
+   "name": "AsymptoticFiniteNeumannV1",
+   "file": "lean/AsymptoticFiniteNeumannV1.lean"
+  },
+  {
+   "name": "AsymptoticFiniteReconstructionV1",
+   "file": "lean/AsymptoticFiniteReconstructionV1.lean"
+  },
+  {
+   "name": "AsymptoticFiniteRegularSupportV1",
+   "file": "lean/AsymptoticFiniteRegularSupportV1.lean"
+  },
+  {
+   "name": "AsymptoticFiniteTraceReductionV1",
+   "file": "lean/AsymptoticFiniteTraceReductionV1.lean"
+  },
+  {
+   "name": "AsymptoticFiniteUpperRetainedLimitV1",
+   "file": "lean/AsymptoticFiniteUpperRetainedLimitV1.lean"
+  },
+  {
+   "name": "AsymptoticFlatHyperbolicV1",
+   "file": "lean/AsymptoticFlatHyperbolicV1.lean"
+  },
+  {
+   "name": "AsymptoticFoldMajorantV1",
+   "file": "lean/AsymptoticFoldMajorantV1.lean"
+  },
+  {
+   "name": "AsymptoticFoldSelectionV1",
+   "file": "lean/AsymptoticFoldSelectionV1.lean"
+  },
+  {
+   "name": "AsymptoticFoldSumV1",
+   "file": "lean/AsymptoticFoldSumV1.lean"
+  },
+  {
+   "name": "AsymptoticFoldTruncationV1",
+   "file": "lean/AsymptoticFoldTruncationV1.lean"
+  },
+  {
+   "name": "AsymptoticFoldedLowV1",
+   "file": "lean/AsymptoticFoldedLowV1.lean"
+  },
+  {
+   "name": "AsymptoticFoldedSupportV1",
+   "file": "lean/AsymptoticFoldedSupportV1.lean"
+  },
+  {
+   "name": "AsymptoticFoldedTerminalV1",
+   "file": "lean/AsymptoticFoldedTerminalV1.lean"
+  },
+  {
+   "name": "AsymptoticFourierKernelTermBoundV1",
+   "file": "lean/AsymptoticFourierKernelTermBoundV1.lean"
+  },
+  {
+   "name": "AsymptoticFourierMajorantV1",
+   "file": "lean/AsymptoticFourierMajorantV1.lean"
+  },
+  {
+   "name": "AsymptoticFourierNormV1",
+   "file": "lean/AsymptoticFourierNormV1.lean"
+  },
+  {
+   "name": "AsymptoticFourierTraceContinuityV1",
+   "file": "lean/AsymptoticFourierTraceContinuityV1.lean"
+  },
+  {
+   "name": "AsymptoticFourierUpperTailV1",
+   "file": "lean/AsymptoticFourierUpperTailV1.lean"
+  },
+  {
+   "name": "AsymptoticFreshAveragingV1",
+   "file": "lean/AsymptoticFreshAveragingV1.lean"
+  },
+  {
+   "name": "AsymptoticFreshCRTResiduesV1",
+   "file": "lean/AsymptoticFreshCRTResiduesV1.lean"
+  },
+  {
+   "name": "AsymptoticFreshCanonicalReductionV1",
+   "file": "lean/AsymptoticFreshCanonicalReductionV1.lean"
+  },
+  {
+   "name": "AsymptoticFreshCompactDefectsV1",
+   "file": "lean/AsymptoticFreshCompactDefectsV1.lean"
+  },
+  {
+   "name": "AsymptoticFreshCongruenceV1",
+   "file": "lean/AsymptoticFreshCongruenceV1.lean"
+  },
+  {
+   "name": "AsymptoticFreshCongruenceVanishingV1",
+   "file": "lean/AsymptoticFreshCongruenceVanishingV1.lean"
+  },
+  {
+   "name": "AsymptoticFreshDecodedRelationsV1",
+   "file": "lean/AsymptoticFreshDecodedRelationsV1.lean"
+  },
+  {
+   "name": "AsymptoticFreshEquationV1",
+   "file": "lean/AsymptoticFreshEquationV1.lean"
+  },
+  {
+   "name": "AsymptoticFreshGlobalRankV1",
+   "file": "lean/AsymptoticFreshGlobalRankV1.lean"
+  },
+  {
+   "name": "AsymptoticFreshKernelRankV1",
+   "file": "lean/AsymptoticFreshKernelRankV1.lean"
+  },
+  {
+   "name": "AsymptoticFreshMatricesV1",
+   "file": "lean/AsymptoticFreshMatricesV1.lean"
+  },
+  {
+   "name": "AsymptoticFreshRankV1",
+   "file": "lean/AsymptoticFreshRankV1.lean"
+  },
+  {
+   "name": "AsymptoticFreshResidueIdentificationV1",
+   "file": "lean/AsymptoticFreshResidueIdentificationV1.lean"
+  },
+  {
+   "name": "AsymptoticFreshResiduesV1",
+   "file": "lean/AsymptoticFreshResiduesV1.lean"
+  },
+  {
+   "name": "AsymptoticFrickeCosetTransportV1",
+   "file": "lean/AsymptoticFrickeCosetTransportV1.lean"
+  },
+  {
+   "name": "AsymptoticFrickeCosetsV1",
+   "file": "lean/AsymptoticFrickeCosetsV1.lean"
+  },
+  {
+   "name": "AsymptoticFrickeNormalizerV1",
+   "file": "lean/AsymptoticFrickeNormalizerV1.lean"
+  },
+  {
+   "name": "AsymptoticFrickeOldGroupV1",
+   "file": "lean/AsymptoticFrickeOldGroupV1.lean"
+  },
+  {
+   "name": "AsymptoticFullCongruenceInvarianceV1",
+   "file": "lean/AsymptoticFullCongruenceInvarianceV1.lean"
+  },
+  {
+   "name": "AsymptoticFunctionalCalculusApproxV1",
+   "file": "lean/AsymptoticFunctionalCalculusApproxV1.lean"
+  },
+  {
+   "name": "AsymptoticGammaMomentsV1",
+   "file": "lean/AsymptoticGammaMomentsV1.lean"
+  },
+  {
+   "name": "AsymptoticGammaTailV1",
+   "file": "lean/AsymptoticGammaTailV1.lean"
+  },
+  {
+   "name": "AsymptoticGeneratorDetectionV1",
+   "file": "lean/AsymptoticGeneratorDetectionV1.lean"
+  },
+  {
+   "name": "AsymptoticGeometricReconstructionV1",
+   "file": "lean/AsymptoticGeometricReconstructionV1.lean"
+  },
+  {
+   "name": "AsymptoticGlobalObservationFamiliesV1",
+   "file": "lean/AsymptoticGlobalObservationFamiliesV1.lean"
+  },
+  {
+   "name": "AsymptoticGlobalPrefixKernelsV1",
+   "file": "lean/AsymptoticGlobalPrefixKernelsV1.lean"
+  },
+  {
+   "name": "AsymptoticGramProductPerturbationV1",
+   "file": "lean/AsymptoticGramProductPerturbationV1.lean"
+  },
+  {
+   "name": "AsymptoticGramTracePerturbationV1",
+   "file": "lean/AsymptoticGramTracePerturbationV1.lean"
+  },
+  {
+   "name": "AsymptoticHeightInverseV1",
+   "file": "lean/AsymptoticHeightInverseV1.lean"
+  },
+  {
+   "name": "AsymptoticHolomorphicPerturbationV1",
+   "file": "lean/AsymptoticHolomorphicPerturbationV1.lean"
+  },
+  {
+   "name": "AsymptoticHolomorphicTraceV1",
+   "file": "lean/AsymptoticHolomorphicTraceV1.lean"
+  },
+  {
+   "name": "AsymptoticHyperbolicAreaV1",
+   "file": "lean/AsymptoticHyperbolicAreaV1.lean"
+  },
+  {
+   "name": "AsymptoticHyperbolicSlashV1",
+   "file": "lean/AsymptoticHyperbolicSlashV1.lean"
+  },
+  {
+   "name": "AsymptoticIdentityObservationV1",
+   "file": "lean/AsymptoticIdentityObservationV1.lean"
+  },
+  {
+   "name": "AsymptoticIncidenceCountReductionV1",
+   "file": "lean/AsymptoticIncidenceCountReductionV1.lean"
+  },
+  {
+   "name": "AsymptoticIncidenceOrthogonalityV1",
+   "file": "lean/AsymptoticIncidenceOrthogonalityV1.lean"
+  },
+  {
+   "name": "AsymptoticIncidenceSumTraceV1",
+   "file": "lean/AsymptoticIncidenceSumTraceV1.lean"
+  },
+  {
+   "name": "AsymptoticInfiniteKernelCountReductionV1",
+   "file": "lean/AsymptoticInfiniteKernelCountReductionV1.lean"
+  },
+  {
+   "name": "AsymptoticInfiniteKernelTraceV1",
+   "file": "lean/AsymptoticInfiniteKernelTraceV1.lean"
+  },
+  {
+   "name": "AsymptoticIntegralBranchSupportV1",
+   "file": "lean/AsymptoticIntegralBranchSupportV1.lean"
+  },
+  {
+   "name": "AsymptoticIntegralCertificateV1",
+   "file": "lean/AsymptoticIntegralCertificateV1.lean"
+  },
+  {
+   "name": "AsymptoticIntegralKernelsV1",
+   "file": "lean/AsymptoticIntegralKernelsV1.lean"
+  },
+  {
+   "name": "AsymptoticIntegralMatricesV1",
+   "file": "lean/AsymptoticIntegralMatricesV1.lean"
+  },
+  {
+   "name": "AsymptoticIntegralObservationsV1",
+   "file": "lean/AsymptoticIntegralObservationsV1.lean"
+  },
+  {
+   "name": "AsymptoticIntegralSubgroupV1",
+   "file": "lean/AsymptoticIntegralSubgroupV1.lean"
+  },
+  {
+   "name": "AsymptoticIntegralTranslationsV1",
+   "file": "lean/AsymptoticIntegralTranslationsV1.lean"
+  },
+  {
+   "name": "AsymptoticInvariantCutSpaceV1",
+   "file": "lean/AsymptoticInvariantCutSpaceV1.lean"
+  },
+  {
+   "name": "AsymptoticInvariantCutTraceV1",
+   "file": "lean/AsymptoticInvariantCutTraceV1.lean"
+  },
+  {
+   "name": "AsymptoticInversePolynomialV1",
+   "file": "lean/AsymptoticInversePolynomialV1.lean"
+  },
+  {
+   "name": "AsymptoticIsometryRangeV1",
+   "file": "lean/AsymptoticIsometryRangeV1.lean"
+  },
+  {
+   "name": "AsymptoticJointKernelV1",
+   "file": "lean/AsymptoticJointKernelV1.lean"
+  },
+  {
+   "name": "AsymptoticKernelIntegralSeriesV1",
+   "file": "lean/AsymptoticKernelIntegralSeriesV1.lean"
+  },
+  {
+   "name": "AsymptoticL2MultiplierV1",
+   "file": "lean/AsymptoticL2MultiplierV1.lean"
+  },
+  {
+   "name": "AsymptoticLabelledTraceV1",
+   "file": "lean/AsymptoticLabelledTraceV1.lean"
+  },
+  {
+   "name": "AsymptoticLocalCongruenceIntegralV1",
+   "file": "lean/AsymptoticLocalCongruenceIntegralV1.lean"
+  },
+  {
+   "name": "AsymptoticLocalCongruenceSLV1",
+   "file": "lean/AsymptoticLocalCongruenceSLV1.lean"
+  },
+  {
+   "name": "AsymptoticLocalOldGroupsV1",
+   "file": "lean/AsymptoticLocalOldGroupsV1.lean"
+  },
+  {
+   "name": "AsymptoticLocalizedModeComparisonV1",
+   "file": "lean/AsymptoticLocalizedModeComparisonV1.lean"
+  },
+  {
+   "name": "AsymptoticLowerLevelOldSpaceV1",
+   "file": "lean/AsymptoticLowerLevelOldSpaceV1.lean"
+  },
+  {
+   "name": "AsymptoticMassTransportV1",
+   "file": "lean/AsymptoticMassTransportV1.lean"
+  },
+  {
+   "name": "AsymptoticMixingCornerV1",
+   "file": "lean/AsymptoticMixingCornerV1.lean"
+  },
+  {
+   "name": "AsymptoticMixingGlobalV1",
+   "file": "lean/AsymptoticMixingGlobalV1.lean"
+  },
+  {
+   "name": "AsymptoticMixingOperatorV1",
+   "file": "lean/AsymptoticMixingOperatorV1.lean"
+  },
+  {
+   "name": "AsymptoticMixingRankV1",
+   "file": "lean/AsymptoticMixingRankV1.lean"
+  },
+  {
+   "name": "AsymptoticMobiusFoldV1",
+   "file": "lean/AsymptoticMobiusFoldV1.lean"
+  },
+  {
+   "name": "AsymptoticModularAreaIntegralV1",
+   "file": "lean/AsymptoticModularAreaIntegralV1.lean"
+  },
+  {
+   "name": "AsymptoticModularAreaV1",
+   "file": "lean/AsymptoticModularAreaV1.lean"
+  },
+  {
+   "name": "AsymptoticModularBoundaryV1",
+   "file": "lean/AsymptoticModularBoundaryV1.lean"
+  },
+  {
+   "name": "AsymptoticModularFundamentalV1",
+   "file": "lean/AsymptoticModularFundamentalV1.lean"
+  },
+  {
+   "name": "AsymptoticNestedQuotientsV1",
+   "file": "lean/AsymptoticNestedQuotientsV1.lean"
+  },
+  {
+   "name": "AsymptoticNeumannReconstructionV1",
+   "file": "lean/AsymptoticNeumannReconstructionV1.lean"
+  },
+  {
+   "name": "AsymptoticNewSpaceCompressionV1",
+   "file": "lean/AsymptoticNewSpaceCompressionV1.lean"
+  },
+  {
+   "name": "AsymptoticNewSpaceRootTraceV1",
+   "file": "lean/AsymptoticNewSpaceRootTraceV1.lean"
+  },
+  {
+   "name": "AsymptoticNonreturningBranchTraceV1",
+   "file": "lean/AsymptoticNonreturningBranchTraceV1.lean"
+  },
+  {
+   "name": "AsymptoticNormalPerturbationV1",
+   "file": "lean/AsymptoticNormalPerturbationV1.lean"
+  },
+  {
+   "name": "AsymptoticNormalizedCongruenceWeightV1",
+   "file": "lean/AsymptoticNormalizedCongruenceWeightV1.lean"
+  },
+  {
+   "name": "AsymptoticNormalizedKernelLimitV1",
+   "file": "lean/AsymptoticNormalizedKernelLimitV1.lean"
+  },
+  {
+   "name": "AsymptoticObservationAmplificationV1",
+   "file": "lean/AsymptoticObservationAmplificationV1.lean"
+  },
+  {
+   "name": "AsymptoticObservationCompressionV1",
+   "file": "lean/AsymptoticObservationCompressionV1.lean"
+  },
+  {
+   "name": "AsymptoticObservationKernelLimitV1",
+   "file": "lean/AsymptoticObservationKernelLimitV1.lean"
+  },
+  {
+   "name": "AsymptoticObservationNormalV1",
+   "file": "lean/AsymptoticObservationNormalV1.lean"
+  },
+  {
+   "name": "AsymptoticObservationOperatorV1",
+   "file": "lean/AsymptoticObservationOperatorV1.lean"
+  },
+  {
+   "name": "AsymptoticObservationPerturbationV1",
+   "file": "lean/AsymptoticObservationPerturbationV1.lean"
+  },
+  {
+   "name": "AsymptoticObservationReindexV1",
+   "file": "lean/AsymptoticObservationReindexV1.lean"
+  },
+  {
+   "name": "AsymptoticObservationStackV1",
+   "file": "lean/AsymptoticObservationStackV1.lean"
+  },
+  {
+   "name": "AsymptoticObservationTraceV1",
+   "file": "lean/AsymptoticObservationTraceV1.lean"
+  },
+  {
+   "name": "AsymptoticOrbitBranchAlgebraV1",
+   "file": "lean/AsymptoticOrbitBranchAlgebraV1.lean"
+  },
+  {
+   "name": "AsymptoticOrbitBranchV1",
+   "file": "lean/AsymptoticOrbitBranchV1.lean"
+  },
+  {
+   "name": "AsymptoticOrbitDecodeV1",
+   "file": "lean/AsymptoticOrbitDecodeV1.lean"
+  },
+  {
+   "name": "AsymptoticOrbitDensityAverageV1",
+   "file": "lean/AsymptoticOrbitDensityAverageV1.lean"
+  },
+  {
+   "name": "AsymptoticOrbitDensityCosetsV1",
+   "file": "lean/AsymptoticOrbitDensityCosetsV1.lean"
+  },
+  {
+   "name": "AsymptoticOrbitDensityCoverV1",
+   "file": "lean/AsymptoticOrbitDensityCoverV1.lean"
+  },
+  {
+   "name": "AsymptoticOrbitDensityFundamentalV1",
+   "file": "lean/AsymptoticOrbitDensityFundamentalV1.lean"
+  },
+  {
+   "name": "AsymptoticOrbitDensityIndependenceV1",
+   "file": "lean/AsymptoticOrbitDensityIndependenceV1.lean"
+  },
+  {
+   "name": "AsymptoticOrbitDensityIndexV1",
+   "file": "lean/AsymptoticOrbitDensityIndexV1.lean"
+  },
+  {
+   "name": "AsymptoticOrbitDensityNormalizerV1",
+   "file": "lean/AsymptoticOrbitDensityNormalizerV1.lean"
+  },
+  {
+   "name": "AsymptoticOrbitDensityTransportV1",
+   "file": "lean/AsymptoticOrbitDensityTransportV1.lean"
+  },
+  {
+   "name": "AsymptoticOrbitDiagonalV1",
+   "file": "lean/AsymptoticOrbitDiagonalV1.lean"
+  },
+  {
+   "name": "AsymptoticOrbitRegionAdjointV1",
+   "file": "lean/AsymptoticOrbitRegionAdjointV1.lean"
+  },
+  {
+   "name": "AsymptoticOrbitRegionV1",
+   "file": "lean/AsymptoticOrbitRegionV1.lean"
+  },
+  {
+   "name": "AsymptoticOrthogonalProjectionSumV1",
+   "file": "lean/AsymptoticOrthogonalProjectionSumV1.lean"
+  },
+  {
+   "name": "AsymptoticOvergroupAverageV1",
+   "file": "lean/AsymptoticOvergroupAverageV1.lean"
+  },
+  {
+   "name": "AsymptoticOvergroupIsometryV1",
+   "file": "lean/AsymptoticOvergroupIsometryV1.lean"
+  },
+  {
+   "name": "AsymptoticPartitionSupportV1",
+   "file": "lean/AsymptoticPartitionSupportV1.lean"
+  },
+  {
+   "name": "AsymptoticPeriodizedKernelBoundV1",
+   "file": "lean/AsymptoticPeriodizedKernelBoundV1.lean"
+  },
+  {
+   "name": "AsymptoticPeriodizedKernelIntegralV1",
+   "file": "lean/AsymptoticPeriodizedKernelIntegralV1.lean"
+  },
+  {
+   "name": "AsymptoticPeriodizedKernelLimitV1",
+   "file": "lean/AsymptoticPeriodizedKernelLimitV1.lean"
+  },
+  {
+   "name": "AsymptoticPermutationInvariantV1",
+   "file": "lean/AsymptoticPermutationInvariantV1.lean"
+  },
+  {
+   "name": "AsymptoticPersistentRankV1",
+   "file": "lean/AsymptoticPersistentRankV1.lean"
+  },
+  {
+   "name": "AsymptoticPolarApproximationV1",
+   "file": "lean/AsymptoticPolarApproximationV1.lean"
+  },
+  {
+   "name": "AsymptoticPolarBoundsV1",
+   "file": "lean/AsymptoticPolarBoundsV1.lean"
+  },
+  {
+   "name": "AsymptoticPolarIsometryV1",
+   "file": "lean/AsymptoticPolarIsometryV1.lean"
+  },
+  {
+   "name": "AsymptoticPolarPartitionSupportV1",
+   "file": "lean/AsymptoticPolarPartitionSupportV1.lean"
+  },
+  {
+   "name": "AsymptoticPolarPermutationInvariantV1",
+   "file": "lean/AsymptoticPolarPermutationInvariantV1.lean"
+  },
+  {
+   "name": "AsymptoticPolarRangeV1",
+   "file": "lean/AsymptoticPolarRangeV1.lean"
+  },
+  {
+   "name": "AsymptoticPolarSubgroupSupportV1",
+   "file": "lean/AsymptoticPolarSubgroupSupportV1.lean"
+  },
+  {
+   "name": "AsymptoticPolarSupportV1",
+   "file": "lean/AsymptoticPolarSupportV1.lean"
+  },
+  {
+   "name": "AsymptoticPolynomialObservationV1",
+   "file": "lean/AsymptoticPolynomialObservationV1.lean"
+  },
+  {
+   "name": "AsymptoticPolynomialPerturbationV1",
+   "file": "lean/AsymptoticPolynomialPerturbationV1.lean"
+  },
+  {
+   "name": "AsymptoticPolynomialTransportV1",
+   "file": "lean/AsymptoticPolynomialTransportV1.lean"
+  },
+  {
+   "name": "AsymptoticPositiveCoordinateWeightV1",
+   "file": "lean/AsymptoticPositiveCoordinateWeightV1.lean"
+  },
+  {
+   "name": "AsymptoticPositiveWeightTraceV1",
+   "file": "lean/AsymptoticPositiveWeightTraceV1.lean"
+  },
+  {
+   "name": "AsymptoticPrefixCongruenceLossV1",
+   "file": "lean/AsymptoticPrefixCongruenceLossV1.lean"
+  },
+  {
+   "name": "AsymptoticPrimeIndexJoinV1",
+   "file": "lean/AsymptoticPrimeIndexJoinV1.lean"
+  },
+  {
+   "name": "AsymptoticPrimeMixingV1",
+   "file": "lean/AsymptoticPrimeMixingV1.lean"
+  },
+  {
+   "name": "AsymptoticPrimeNewCornerV1",
+   "file": "lean/AsymptoticPrimeNewCornerV1.lean"
+  },
+  {
+   "name": "AsymptoticPrimeNewOperatorsV1",
+   "file": "lean/AsymptoticPrimeNewOperatorsV1.lean"
+  },
+  {
+   "name": "AsymptoticPrimeNewRootV1",
+   "file": "lean/AsymptoticPrimeNewRootV1.lean"
+  },
+  {
+   "name": "AsymptoticPrimePrefixRowsV1",
+   "file": "lean/AsymptoticPrimePrefixRowsV1.lean"
+  },
+  {
+   "name": "AsymptoticPrimeProductBoundV1",
+   "file": "lean/AsymptoticPrimeProductBoundV1.lean"
+  },
+  {
+   "name": "AsymptoticPrimeSeparatedGroupsV1",
+   "file": "lean/AsymptoticPrimeSeparatedGroupsV1.lean"
+  },
+  {
+   "name": "AsymptoticPrimeSequenceV1",
+   "file": "lean/AsymptoticPrimeSequenceV1.lean"
+  },
+  {
+   "name": "AsymptoticPrimesInAPV1",
+   "file": "lean/AsymptoticPrimesInAPV1.lean"
+  },
+  {
+   "name": "AsymptoticProjectionTraceV1",
+   "file": "lean/AsymptoticProjectionTraceV1.lean"
+  },
+  {
+   "name": "AsymptoticProjectiveCongruenceIndexV1",
+   "file": "lean/AsymptoticProjectiveCongruenceIndexV1.lean"
+  },
+  {
+   "name": "AsymptoticProjectiveIntegralV1",
+   "file": "lean/AsymptoticProjectiveIntegralV1.lean"
+  },
+  {
+   "name": "AsymptoticProjectiveRamifiedCosetsV1",
+   "file": "lean/AsymptoticProjectiveRamifiedCosetsV1.lean"
+  },
+  {
+   "name": "AsymptoticQuotientCompressionV1",
+   "file": "lean/AsymptoticQuotientCompressionV1.lean"
+  },
+  {
+   "name": "AsymptoticQuotientCoordinatesV1",
+   "file": "lean/AsymptoticQuotientCoordinatesV1.lean"
+  },
+  {
+   "name": "AsymptoticQuotientEquivarianceV1",
+   "file": "lean/AsymptoticQuotientEquivarianceV1.lean"
+  },
+  {
+   "name": "AsymptoticQuotientIncidenceSpaceV1",
+   "file": "lean/AsymptoticQuotientIncidenceSpaceV1.lean"
+  },
+  {
+   "name": "AsymptoticQuotientInvariantsV1",
+   "file": "lean/AsymptoticQuotientInvariantsV1.lean"
+  },
+  {
+   "name": "AsymptoticQuotientLeftActionV1",
+   "file": "lean/AsymptoticQuotientLeftActionV1.lean"
+  },
+  {
+   "name": "AsymptoticQuotientNewSpaceV1",
+   "file": "lean/AsymptoticQuotientNewSpaceV1.lean"
+  },
+  {
+   "name": "AsymptoticQuotientProductBoundV1",
+   "file": "lean/AsymptoticQuotientProductBoundV1.lean"
+  },
+  {
+   "name": "AsymptoticQuotientProductV1",
+   "file": "lean/AsymptoticQuotientProductV1.lean"
+  },
+  {
+   "name": "AsymptoticQuotientRightActionV1",
+   "file": "lean/AsymptoticQuotientRightActionV1.lean"
+  },
+  {
+   "name": "AsymptoticQuotientSandwichV1",
+   "file": "lean/AsymptoticQuotientSandwichV1.lean"
+  },
+  {
+   "name": "AsymptoticQuotientSupportV1",
+   "file": "lean/AsymptoticQuotientSupportV1.lean"
+  },
+  {
+   "name": "AsymptoticRamifiedBranchV1",
+   "file": "lean/AsymptoticRamifiedBranchV1.lean"
+  },
+  {
+   "name": "AsymptoticRamifiedCoefficientsV1",
+   "file": "lean/AsymptoticRamifiedCoefficientsV1.lean"
+  },
+  {
+   "name": "AsymptoticRamifiedCongruenceIndexV1",
+   "file": "lean/AsymptoticRamifiedCongruenceIndexV1.lean"
+  },
+  {
+   "name": "AsymptoticRamifiedCosetReductionV1",
+   "file": "lean/AsymptoticRamifiedCosetReductionV1.lean"
+  },
+  {
+   "name": "AsymptoticRamifiedFourierV1",
+   "file": "lean/AsymptoticRamifiedFourierV1.lean"
+  },
+  {
+   "name": "AsymptoticRamifiedNonzeroSumV1",
+   "file": "lean/AsymptoticRamifiedNonzeroSumV1.lean"
+  },
+  {
+   "name": "AsymptoticRamifiedObservationV1",
+   "file": "lean/AsymptoticRamifiedObservationV1.lean"
+  },
+  {
+   "name": "AsymptoticRamifiedOldBranchesV1",
+   "file": "lean/AsymptoticRamifiedOldBranchesV1.lean"
+  },
+  {
+   "name": "AsymptoticRamifiedSectorsV1",
+   "file": "lean/AsymptoticRamifiedSectorsV1.lean"
+  },
+  {
+   "name": "AsymptoticRamifiedTranslationAverageV1",
+   "file": "lean/AsymptoticRamifiedTranslationAverageV1.lean"
+  },
+  {
+   "name": "AsymptoticRamifiedTwistedLawV1",
+   "file": "lean/AsymptoticRamifiedTwistedLawV1.lean"
+  },
+  {
+   "name": "AsymptoticRankMonotonicityV1",
+   "file": "lean/AsymptoticRankMonotonicityV1.lean"
+  },
+  {
+   "name": "AsymptoticRankRestrictionV1",
+   "file": "lean/AsymptoticRankRestrictionV1.lean"
+  },
+  {
+   "name": "AsymptoticRankSubadditivityV1",
+   "file": "lean/AsymptoticRankSubadditivityV1.lean"
+  },
+  {
+   "name": "AsymptoticRationalBranchTraceLimitV1",
+   "file": "lean/AsymptoticRationalBranchTraceLimitV1.lean"
+  },
+  {
+   "name": "AsymptoticRationalBranchesV1",
+   "file": "lean/AsymptoticRationalBranchesV1.lean"
+  },
+  {
+   "name": "AsymptoticRationalCompactFoldV1",
+   "file": "lean/AsymptoticRationalCompactFoldV1.lean"
+  },
+  {
+   "name": "AsymptoticRationalFreenessV1",
+   "file": "lean/AsymptoticRationalFreenessV1.lean"
+  },
+  {
+   "name": "AsymptoticRationalGroupV1",
+   "file": "lean/AsymptoticRationalGroupV1.lean"
+  },
+  {
+   "name": "AsymptoticRationalLocalIntegralV1",
+   "file": "lean/AsymptoticRationalLocalIntegralV1.lean"
+  },
+  {
+   "name": "AsymptoticRationalSLLabelsV1",
+   "file": "lean/AsymptoticRationalSLLabelsV1.lean"
+  },
+  {
+   "name": "AsymptoticReconstructedCountV1",
+   "file": "lean/AsymptoticReconstructedCountV1.lean"
+  },
+  {
+   "name": "AsymptoticReconstructionBranchV1",
+   "file": "lean/AsymptoticReconstructionBranchV1.lean"
+  },
+  {
+   "name": "AsymptoticReconstructionStripSupportV1",
+   "file": "lean/AsymptoticReconstructionStripSupportV1.lean"
+  },
+  {
+   "name": "AsymptoticRegionL2V1",
+   "file": "lean/AsymptoticRegionL2V1.lean"
+  },
+  {
+   "name": "AsymptoticRegularAlgebraV1",
+   "file": "lean/AsymptoticRegularAlgebraV1.lean"
+  },
+  {
+   "name": "AsymptoticRegularBoundedSandwichV1",
+   "file": "lean/AsymptoticRegularBoundedSandwichV1.lean"
+  },
+  {
+   "name": "AsymptoticRegularBranchFamilyV1",
+   "file": "lean/AsymptoticRegularBranchFamilyV1.lean"
+  },
+  {
+   "name": "AsymptoticRegularCertificateV1",
+   "file": "lean/AsymptoticRegularCertificateV1.lean"
+  },
+  {
+   "name": "AsymptoticRegularCompactBranchV1",
+   "file": "lean/AsymptoticRegularCompactBranchV1.lean"
+  },
+  {
+   "name": "AsymptoticRegularCompactSelectionV1",
+   "file": "lean/AsymptoticRegularCompactSelectionV1.lean"
+  },
+  {
+   "name": "AsymptoticRegularCutDimensionV1",
+   "file": "lean/AsymptoticRegularCutDimensionV1.lean"
+  },
+  {
+   "name": "AsymptoticRegularCutInverseV1",
+   "file": "lean/AsymptoticRegularCutInverseV1.lean"
+  },
+  {
+   "name": "AsymptoticRegularCutLimitV1",
+   "file": "lean/AsymptoticRegularCutLimitV1.lean"
+  },
+  {
+   "name": "AsymptoticRegularCutNormalFamilyV1",
+   "file": "lean/AsymptoticRegularCutNormalFamilyV1.lean"
+  },
+  {
+   "name": "AsymptoticRegularCutNormalV1",
+   "file": "lean/AsymptoticRegularCutNormalV1.lean"
+  },
+  {
+   "name": "AsymptoticRegularCutPositiveV1",
+   "file": "lean/AsymptoticRegularCutPositiveV1.lean"
+  },
+  {
+   "name": "AsymptoticRegularCutReconstructionV1",
+   "file": "lean/AsymptoticRegularCutReconstructionV1.lean"
+  },
+  {
+   "name": "AsymptoticRegularCutTerminalTraceV1",
+   "file": "lean/AsymptoticRegularCutTerminalTraceV1.lean"
+  },
+  {
+   "name": "AsymptoticRegularCutTraceLimitV1",
+   "file": "lean/AsymptoticRegularCutTraceLimitV1.lean"
+  },
+  {
+   "name": "AsymptoticRegularEmbeddingTraceV1",
+   "file": "lean/AsymptoticRegularEmbeddingTraceV1.lean"
+  },
+  {
+   "name": "AsymptoticRegularFiniteAmbientTraceV1",
+   "file": "lean/AsymptoticRegularFiniteAmbientTraceV1.lean"
+  },
+  {
+   "name": "AsymptoticRegularFiniteCertificateV1",
+   "file": "lean/AsymptoticRegularFiniteCertificateV1.lean"
+  },
+  {
+   "name": "AsymptoticRegularFinitePolynomialTraceV1",
+   "file": "lean/AsymptoticRegularFinitePolynomialTraceV1.lean"
+  },
+  {
+   "name": "AsymptoticRegularFinitePolynomialV1",
+   "file": "lean/AsymptoticRegularFinitePolynomialV1.lean"
+  },
+  {
+   "name": "AsymptoticRegularFiniteReconstructionV1",
+   "file": "lean/AsymptoticRegularFiniteReconstructionV1.lean"
+  },
+  {
+   "name": "AsymptoticRegularFiniteUpperCutoffV1",
+   "file": "lean/AsymptoticRegularFiniteUpperCutoffV1.lean"
+  },
+  {
+   "name": "AsymptoticRegularFoldedLowV1",
+   "file": "lean/AsymptoticRegularFoldedLowV1.lean"
+  },
+  {
+   "name": "AsymptoticRegularFoldedSupportV1",
+   "file": "lean/AsymptoticRegularFoldedSupportV1.lean"
+  },
+  {
+   "name": "AsymptoticRegularFoldedTerminalV1",
+   "file": "lean/AsymptoticRegularFoldedTerminalV1.lean"
+  },
+  {
+   "name": "AsymptoticRegularFunctionalCalculusV1",
+   "file": "lean/AsymptoticRegularFunctionalCalculusV1.lean"
+  },
+  {
+   "name": "AsymptoticRegularHeightCutoffV1",
+   "file": "lean/AsymptoticRegularHeightCutoffV1.lean"
+  },
+  {
+   "name": "AsymptoticRegularIncludedReconstructionV1",
+   "file": "lean/AsymptoticRegularIncludedReconstructionV1.lean"
+  },
+  {
+   "name": "AsymptoticRegularInclusionV1",
+   "file": "lean/AsymptoticRegularInclusionV1.lean"
+  },
+  {
+   "name": "AsymptoticRegularInfiniteKernelV1",
+   "file": "lean/AsymptoticRegularInfiniteKernelV1.lean"
+  },
+  {
+   "name": "AsymptoticRegularIntersectionV1",
+   "file": "lean/AsymptoticRegularIntersectionV1.lean"
+  },
+  {
+   "name": "AsymptoticRegularInversePolynomialV1",
+   "file": "lean/AsymptoticRegularInversePolynomialV1.lean"
+  },
+  {
+   "name": "AsymptoticRegularInverseV1",
+   "file": "lean/AsymptoticRegularInverseV1.lean"
+  },
+  {
+   "name": "AsymptoticRegularKernelApproximationV1",
+   "file": "lean/AsymptoticRegularKernelApproximationV1.lean"
+  },
+  {
+   "name": "AsymptoticRegularKernelSubspacesV1",
+   "file": "lean/AsymptoticRegularKernelSubspacesV1.lean"
+  },
+  {
+   "name": "AsymptoticRegularNormalV1",
+   "file": "lean/AsymptoticRegularNormalV1.lean"
+  },
+  {
+   "name": "AsymptoticRegularObservationGramV1",
+   "file": "lean/AsymptoticRegularObservationGramV1.lean"
+  },
+  {
+   "name": "AsymptoticRegularObservationInverseV1",
+   "file": "lean/AsymptoticRegularObservationInverseV1.lean"
+  },
+  {
+   "name": "AsymptoticRegularObservationNormalBoundV1",
+   "file": "lean/AsymptoticRegularObservationNormalBoundV1.lean"
+  },
+  {
+   "name": "AsymptoticRegularObservationNormalFamilyV1",
+   "file": "lean/AsymptoticRegularObservationNormalFamilyV1.lean"
+  },
+  {
+   "name": "AsymptoticRegularObservationNormalV1",
+   "file": "lean/AsymptoticRegularObservationNormalV1.lean"
+  },
+  {
+   "name": "AsymptoticRegularObservationPositiveFamilyV1",
+   "file": "lean/AsymptoticRegularObservationPositiveFamilyV1.lean"
+  },
+  {
+   "name": "AsymptoticRegularObservationPositiveV1",
+   "file": "lean/AsymptoticRegularObservationPositiveV1.lean"
+  },
+  {
+   "name": "AsymptoticRegularObservationRowsV1",
+   "file": "lean/AsymptoticRegularObservationRowsV1.lean"
+  },
+  {
+   "name": "AsymptoticRegularPolarV1",
+   "file": "lean/AsymptoticRegularPolarV1.lean"
+  },
+  {
+   "name": "AsymptoticRegularPolynomialTraceV1",
+   "file": "lean/AsymptoticRegularPolynomialTraceV1.lean"
+  },
+  {
+   "name": "AsymptoticRegularReconstructionFamilyV1",
+   "file": "lean/AsymptoticRegularReconstructionFamilyV1.lean"
+  },
+  {
+   "name": "AsymptoticRegularReconstructionTraceV1",
+   "file": "lean/AsymptoticRegularReconstructionTraceV1.lean"
+  },
+  {
+   "name": "AsymptoticRegularReconstructionV1",
+   "file": "lean/AsymptoticRegularReconstructionV1.lean"
+  },
+  {
+   "name": "AsymptoticRegularRetainedTraceV1",
+   "file": "lean/AsymptoticRegularRetainedTraceV1.lean"
+  },
+  {
+   "name": "AsymptoticRegularSandwichBoundV1",
+   "file": "lean/AsymptoticRegularSandwichBoundV1.lean"
+  },
+  {
+   "name": "AsymptoticRegularSignedTraceV1",
+   "file": "lean/AsymptoticRegularSignedTraceV1.lean"
+  },
+  {
+   "name": "AsymptoticRegularStackPolarV1",
+   "file": "lean/AsymptoticRegularStackPolarV1.lean"
+  },
+  {
+   "name": "AsymptoticRegularStrongTraceV1",
+   "file": "lean/AsymptoticRegularStrongTraceV1.lean"
+  },
+  {
+   "name": "AsymptoticRegularSupportProjectionsV1",
+   "file": "lean/AsymptoticRegularSupportProjectionsV1.lean"
+  },
+  {
+   "name": "AsymptoticRegularSupportV1",
+   "file": "lean/AsymptoticRegularSupportV1.lean"
+  },
+  {
+   "name": "AsymptoticRegularTerminalTraceV1",
+   "file": "lean/AsymptoticRegularTerminalTraceV1.lean"
+  },
+  {
+   "name": "AsymptoticRegularTraceCyclicV1",
+   "file": "lean/AsymptoticRegularTraceCyclicV1.lean"
+  },
+  {
+   "name": "AsymptoticRegularTraceSandwichV1",
+   "file": "lean/AsymptoticRegularTraceSandwichV1.lean"
+  },
+  {
+   "name": "AsymptoticRegularTraceV1",
+   "file": "lean/AsymptoticRegularTraceV1.lean"
+  },
+  {
+   "name": "AsymptoticRegularTwoOldTraceV1",
+   "file": "lean/AsymptoticRegularTwoOldTraceV1.lean"
+  },
+  {
+   "name": "AsymptoticRegularUpperCutoffV1",
+   "file": "lean/AsymptoticRegularUpperCutoffV1.lean"
+  },
+  {
+   "name": "AsymptoticRepeatedBothOldV1",
+   "file": "lean/AsymptoticRepeatedBothOldV1.lean"
+  },
+  {
+   "name": "AsymptoticRepeatedJoinIndexV1",
+   "file": "lean/AsymptoticRepeatedJoinIndexV1.lean"
+  },
+  {
+   "name": "AsymptoticRepeatedNewCornerV1",
+   "file": "lean/AsymptoticRepeatedNewCornerV1.lean"
+  },
+  {
+   "name": "AsymptoticRepeatedNewTraceV1",
+   "file": "lean/AsymptoticRepeatedNewTraceV1.lean"
+  },
+  {
+   "name": "AsymptoticRepeatedObservationsV1",
+   "file": "lean/AsymptoticRepeatedObservationsV1.lean"
+  },
+  {
+   "name": "AsymptoticRepeatedOldAnnihilationV1",
+   "file": "lean/AsymptoticRepeatedOldAnnihilationV1.lean"
+  },
+  {
+   "name": "AsymptoticRetainedCutTraceV1",
+   "file": "lean/AsymptoticRetainedCutTraceV1.lean"
+  },
+  {
+   "name": "AsymptoticRetainedCylinderV1",
+   "file": "lean/AsymptoticRetainedCylinderV1.lean"
+  },
+  {
+   "name": "AsymptoticRetainedTraceTransportV1",
+   "file": "lean/AsymptoticRetainedTraceTransportV1.lean"
+  },
+  {
+   "name": "AsymptoticRetainedWeightedLimitV1",
+   "file": "lean/AsymptoticRetainedWeightedLimitV1.lean"
+  },
+  {
+   "name": "AsymptoticReturningBranchTraceV1",
+   "file": "lean/AsymptoticReturningBranchTraceV1.lean"
+  },
+  {
+   "name": "AsymptoticSandwichCutoffV1",
+   "file": "lean/AsymptoticSandwichCutoffV1.lean"
+  },
+  {
+   "name": "AsymptoticSectorComparisonV1",
+   "file": "lean/AsymptoticSectorComparisonV1.lean"
+  },
+  {
+   "name": "AsymptoticSectorReconstructionV1",
+   "file": "lean/AsymptoticSectorReconstructionV1.lean"
+  },
+  {
+   "name": "AsymptoticSectorSignsV1",
+   "file": "lean/AsymptoticSectorSignsV1.lean"
+  },
+  {
+   "name": "AsymptoticSharedFiniteReconstructionV1",
+   "file": "lean/AsymptoticSharedFiniteReconstructionV1.lean"
+  },
+  {
+   "name": "AsymptoticSharedFiniteTraceV1",
+   "file": "lean/AsymptoticSharedFiniteTraceV1.lean"
+  },
+  {
+   "name": "AsymptoticSharedNormalBoundV1",
+   "file": "lean/AsymptoticSharedNormalBoundV1.lean"
+  },
+  {
+   "name": "AsymptoticSignedCornerContinuityV1",
+   "file": "lean/AsymptoticSignedCornerContinuityV1.lean"
+  },
+  {
+   "name": "AsymptoticSignedCornerV1",
+   "file": "lean/AsymptoticSignedCornerV1.lean"
+  },
+  {
+   "name": "AsymptoticSimpleJoinIndexV1",
+   "file": "lean/AsymptoticSimpleJoinIndexV1.lean"
+  },
+  {
+   "name": "AsymptoticSimpleJoinPowersV1",
+   "file": "lean/AsymptoticSimpleJoinPowersV1.lean"
+  },
+  {
+   "name": "AsymptoticSimpleNewTraceV1",
+   "file": "lean/AsymptoticSimpleNewTraceV1.lean"
+  },
+  {
+   "name": "AsymptoticSimpleOldAnnihilationV1",
+   "file": "lean/AsymptoticSimpleOldAnnihilationV1.lean"
+  },
+  {
+   "name": "AsymptoticSlashGaugeV1",
+   "file": "lean/AsymptoticSlashGaugeV1.lean"
+  },
+  {
+   "name": "AsymptoticStackPolarV1",
+   "file": "lean/AsymptoticStackPolarV1.lean"
+  },
+  {
+   "name": "AsymptoticStackSubgroupSupportV1",
+   "file": "lean/AsymptoticStackSubgroupSupportV1.lean"
+  },
+  {
+   "name": "AsymptoticStripBranchReturnV1",
+   "file": "lean/AsymptoticStripBranchReturnV1.lean"
+  },
+  {
+   "name": "AsymptoticStripCoordinatesV1",
+   "file": "lean/AsymptoticStripCoordinatesV1.lean"
+  },
+  {
+   "name": "AsymptoticStrongConvergenceSpaceV1",
+   "file": "lean/AsymptoticStrongConvergenceSpaceV1.lean"
+  },
+  {
+   "name": "AsymptoticSubgroupOrthogonalityV1",
+   "file": "lean/AsymptoticSubgroupOrthogonalityV1.lean"
+  },
+  {
+   "name": "AsymptoticSubgroupSupportV1",
+   "file": "lean/AsymptoticSubgroupSupportV1.lean"
+  },
+  {
+   "name": "AsymptoticTotalCountReductionV1",
+   "file": "lean/AsymptoticTotalCountReductionV1.lean"
+  },
+  {
+   "name": "AsymptoticTotalNewCornerV1",
+   "file": "lean/AsymptoticTotalNewCornerV1.lean"
+  },
+  {
+   "name": "AsymptoticTotalNewTraceV1",
+   "file": "lean/AsymptoticTotalNewTraceV1.lean"
+  },
+  {
+   "name": "AsymptoticTraceCutoffV1",
+   "file": "lean/AsymptoticTraceCutoffV1.lean"
+  },
+  {
+   "name": "AsymptoticTranslatedCosetFiberV1",
+   "file": "lean/AsymptoticTranslatedCosetFiberV1.lean"
+  },
+  {
+   "name": "AsymptoticTwistCountV1",
+   "file": "lean/AsymptoticTwistCountV1.lean"
+  },
+  {
+   "name": "AsymptoticTwistObservationFormulaV1",
+   "file": "lean/AsymptoticTwistObservationFormulaV1.lean"
+  },
+  {
+   "name": "AsymptoticTwistObservationV1",
+   "file": "lean/AsymptoticTwistObservationV1.lean"
+  },
+  {
+   "name": "AsymptoticTwoOldSubspacesV1",
+   "file": "lean/AsymptoticTwoOldSubspacesV1.lean"
+  },
+  {
+   "name": "AsymptoticUniversalIncidenceTraceV1",
+   "file": "lean/AsymptoticUniversalIncidenceTraceV1.lean"
+  },
+  {
+   "name": "AsymptoticUniversalIncidenceTransportV1",
+   "file": "lean/AsymptoticUniversalIncidenceTransportV1.lean"
+  },
+  {
+   "name": "AsymptoticUniversalObservationKernelV1",
+   "file": "lean/AsymptoticUniversalObservationKernelV1.lean"
+  },
+  {
+   "name": "AsymptoticUniversalQuotientKernelV1",
+   "file": "lean/AsymptoticUniversalQuotientKernelV1.lean"
+  },
+  {
+   "name": "AsymptoticUnweightedFourierKernelV1",
+   "file": "lean/AsymptoticUnweightedFourierKernelV1.lean"
+  },
+  {
+   "name": "AsymptoticUpperCutTraceReductionV1",
+   "file": "lean/AsymptoticUpperCutTraceReductionV1.lean"
+  },
+  {
+   "name": "AsymptoticWeightedBranchesV1",
+   "file": "lean/AsymptoticWeightedBranchesV1.lean"
+  },
+  {
+   "name": "AsymptoticWeightedFEV1",
+   "file": "lean/AsymptoticWeightedFEV1.lean"
+  },
+  {
+   "name": "AsymptoticWeightedProjectionLimitV1",
+   "file": "lean/AsymptoticWeightedProjectionLimitV1.lean"
+  },
+  {
+   "name": "AsymptoticWeightedProjectionTraceV1",
+   "file": "lean/AsymptoticWeightedProjectionTraceV1.lean"
+  },
+  {
+   "name": "AsymptoticZeroExtensionV1",
+   "file": "lean/AsymptoticZeroExtensionV1.lean"
+  },
+  {
+   "name": "AutomaticSequencesV1",
+   "file": "lean/AutomaticSequencesV1.lean"
+  },
+  {
+   "name": "CobhamClosePowersV1",
+   "file": "lean/CobhamClosePowersV1.lean"
+  },
+  {
+   "name": "CobhamColoringV1",
+   "file": "lean/CobhamColoringV1.lean"
+  },
+  {
+   "name": "CobhamLocalPeriodsV1",
+   "file": "lean/CobhamLocalPeriodsV1.lean"
+  },
+  {
+   "name": "CobhamPeriodTransferV1",
+   "file": "lean/CobhamPeriodTransferV1.lean"
+  },
+  {
+   "name": "CobhamStatementV1",
+   "file": "lean/CobhamStatementV1.lean"
+  },
+  {
+   "name": "CobhamTheoremV1",
+   "file": "lean/CobhamTheoremV1.lean"
+  },
+  {
+   "name": "CompleteRowCosetsV1",
+   "file": "lean/CompleteRowCosetsV1.lean"
+  },
+  {
+   "name": "EventuallyPeriodicV1",
+   "file": "lean/EventuallyPeriodicV1.lean"
+  },
+  {
+   "name": "FiniteEndomorphismPowersV1",
+   "file": "lean/FiniteEndomorphismPowersV1.lean"
+  },
+  {
+   "name": "FinitenessAllLevelAlgebraicEliminantV1",
+   "file": "lean/FinitenessAllLevelAlgebraicEliminantV1.lean"
+  },
+  {
+   "name": "FinitenessAllLevelAmbientGraphsV1",
+   "file": "lean/FinitenessAllLevelAmbientGraphsV1.lean"
+  },
+  {
+   "name": "FinitenessAllLevelAnalyticAtlasV1",
+   "file": "lean/FinitenessAllLevelAnalyticAtlasV1.lean"
+  },
+  {
+   "name": "FinitenessAllLevelAnalyticBranchV1",
+   "file": "lean/FinitenessAllLevelAnalyticBranchV1.lean"
+  },
+  {
+   "name": "FinitenessAllLevelAnalyticEliminantV1",
+   "file": "lean/FinitenessAllLevelAnalyticEliminantV1.lean"
+  },
+  {
+   "name": "FinitenessAllLevelAnalyticIntegralV1",
+   "file": "lean/FinitenessAllLevelAnalyticIntegralV1.lean"
+  },
+  {
+   "name": "FinitenessAllLevelAnalyticRankV1",
+   "file": "lean/FinitenessAllLevelAnalyticRankV1.lean"
+  },
+  {
+   "name": "FinitenessAllLevelAnalyticSubstitutionV1",
+   "file": "lean/FinitenessAllLevelAnalyticSubstitutionV1.lean"
+  },
+  {
+   "name": "FinitenessAllLevelAtlasCoefficientsV1",
+   "file": "lean/FinitenessAllLevelAtlasCoefficientsV1.lean"
+  },
+  {
+   "name": "FinitenessAllLevelAutomaticGrowthV1",
+   "file": "lean/FinitenessAllLevelAutomaticGrowthV1.lean"
+  },
+  {
+   "name": "FinitenessAllLevelAuxiliaryV1",
+   "file": "lean/FinitenessAllLevelAuxiliaryV1.lean"
+  },
+  {
+   "name": "FinitenessAllLevelAxisDecayV1",
+   "file": "lean/FinitenessAllLevelAxisDecayV1.lean"
+  },
+  {
+   "name": "FinitenessAllLevelBoundaryCoordinatesV1",
+   "file": "lean/FinitenessAllLevelBoundaryCoordinatesV1.lean"
+  },
+  {
+   "name": "FinitenessAllLevelBoundaryGeometryV1",
+   "file": "lean/FinitenessAllLevelBoundaryGeometryV1.lean"
+  },
+  {
+   "name": "FinitenessAllLevelBoundarySamplingV1",
+   "file": "lean/FinitenessAllLevelBoundarySamplingV1.lean"
+  },
+  {
+   "name": "FinitenessAllLevelBoundedFamiliesV1",
+   "file": "lean/FinitenessAllLevelBoundedFamiliesV1.lean"
+  },
+  {
+   "name": "FinitenessAllLevelBoundedFinitenessV1",
+   "file": "lean/FinitenessAllLevelBoundedFinitenessV1.lean"
+  },
+  {
+   "name": "FinitenessAllLevelCauchyAnalyticV1",
+   "file": "lean/FinitenessAllLevelCauchyAnalyticV1.lean"
+  },
+  {
+   "name": "FinitenessAllLevelCauchyChartV1",
+   "file": "lean/FinitenessAllLevelCauchyChartV1.lean"
+  },
+  {
+   "name": "FinitenessAllLevelCauchyConstraintsV1",
+   "file": "lean/FinitenessAllLevelCauchyConstraintsV1.lean"
+  },
+  {
+   "name": "FinitenessAllLevelCauchyOperatorV1",
+   "file": "lean/FinitenessAllLevelCauchyOperatorV1.lean"
+  },
+  {
+   "name": "FinitenessAllLevelCauchyTransformV1",
+   "file": "lean/FinitenessAllLevelCauchyTransformV1.lean"
+  },
+  {
+   "name": "FinitenessAllLevelCertificateBoundaryV1",
+   "file": "lean/FinitenessAllLevelCertificateBoundaryV1.lean"
+  },
+  {
+   "name": "FinitenessAllLevelCertificatePencilV1",
+   "file": "lean/FinitenessAllLevelCertificatePencilV1.lean"
+  },
+  {
+   "name": "FinitenessAllLevelChartTestsV1",
+   "file": "lean/FinitenessAllLevelChartTestsV1.lean"
+  },
+  {
+   "name": "FinitenessAllLevelChartTopologyV1",
+   "file": "lean/FinitenessAllLevelChartTopologyV1.lean"
+  },
+  {
+   "name": "FinitenessAllLevelClosedLocusV1",
+   "file": "lean/FinitenessAllLevelClosedLocusV1.lean"
+  },
+  {
+   "name": "FinitenessAllLevelCodiscreteExtensionV1",
+   "file": "lean/FinitenessAllLevelCodiscreteExtensionV1.lean"
+  },
+  {
+   "name": "FinitenessAllLevelCoefficientFunctionalV1",
+   "file": "lean/FinitenessAllLevelCoefficientFunctionalV1.lean"
+  },
+  {
+   "name": "FinitenessAllLevelCoefficientRingV1",
+   "file": "lean/FinitenessAllLevelCoefficientRingV1.lean"
+  },
+  {
+   "name": "FinitenessAllLevelCoherentSectorsV1",
+   "file": "lean/FinitenessAllLevelCoherentSectorsV1.lean"
+  },
+  {
+   "name": "FinitenessAllLevelCompactFredholmV1",
+   "file": "lean/FinitenessAllLevelCompactFredholmV1.lean"
+  },
+  {
+   "name": "FinitenessAllLevelCompactIndexV1",
+   "file": "lean/FinitenessAllLevelCompactIndexV1.lean"
+  },
+  {
+   "name": "FinitenessAllLevelCompactLocusV1",
+   "file": "lean/FinitenessAllLevelCompactLocusV1.lean"
+  },
+  {
+   "name": "FinitenessAllLevelConstraintLocusV1",
+   "file": "lean/FinitenessAllLevelConstraintLocusV1.lean"
+  },
+  {
+   "name": "FinitenessAllLevelConstraintQuadraticV1",
+   "file": "lean/FinitenessAllLevelConstraintQuadraticV1.lean"
+  },
+  {
+   "name": "FinitenessAllLevelContinuationV1",
+   "file": "lean/FinitenessAllLevelContinuationV1.lean"
+  },
+  {
+   "name": "FinitenessAllLevelCutoffV1",
+   "file": "lean/FinitenessAllLevelCutoffV1.lean"
+  },
+  {
+   "name": "FinitenessAllLevelDeterminantPolynomialV1",
+   "file": "lean/FinitenessAllLevelDeterminantPolynomialV1.lean"
+  },
+  {
+   "name": "FinitenessAllLevelDeterminantRigidityV1",
+   "file": "lean/FinitenessAllLevelDeterminantRigidityV1.lean"
+  },
+  {
+   "name": "FinitenessAllLevelDiskAlgebraV1",
+   "file": "lean/FinitenessAllLevelDiskAlgebraV1.lean"
+  },
+  {
+   "name": "FinitenessAllLevelDiskCoordinatesV1",
+   "file": "lean/FinitenessAllLevelDiskCoordinatesV1.lean"
+  },
+  {
+   "name": "FinitenessAllLevelDiskRecoveryV1",
+   "file": "lean/FinitenessAllLevelDiskRecoveryV1.lean"
+  },
+  {
+   "name": "FinitenessAllLevelDiskRestrictionV1",
+   "file": "lean/FinitenessAllLevelDiskRestrictionV1.lean"
+  },
+  {
+   "name": "FinitenessAllLevelDiskSeriesV1",
+   "file": "lean/FinitenessAllLevelDiskSeriesV1.lean"
+  },
+  {
+   "name": "FinitenessAllLevelEigenvalueDegreeV1",
+   "file": "lean/FinitenessAllLevelEigenvalueDegreeV1.lean"
+  },
+  {
+   "name": "FinitenessAllLevelEigenvalueFibersV1",
+   "file": "lean/FinitenessAllLevelEigenvalueFibersV1.lean"
+  },
+  {
+   "name": "FinitenessAllLevelEliminantBranchesV1",
+   "file": "lean/FinitenessAllLevelEliminantBranchesV1.lean"
+  },
+  {
+   "name": "FinitenessAllLevelEntireCoefficientsV1",
+   "file": "lean/FinitenessAllLevelEntireCoefficientsV1.lean"
+  },
+  {
+   "name": "FinitenessAllLevelEnvelopeV1",
+   "file": "lean/FinitenessAllLevelEnvelopeV1.lean"
+  },
+  {
+   "name": "FinitenessAllLevelEquationSolutionV1",
+   "file": "lean/FinitenessAllLevelEquationSolutionV1.lean"
+  },
+  {
+   "name": "FinitenessAllLevelEulerEquationRecoveryV1",
+   "file": "lean/FinitenessAllLevelEulerEquationRecoveryV1.lean"
+  },
+  {
+   "name": "FinitenessAllLevelEulerEquationsV1",
+   "file": "lean/FinitenessAllLevelEulerEquationsV1.lean"
+  },
+  {
+   "name": "FinitenessAllLevelExactChartV1",
+   "file": "lean/FinitenessAllLevelExactChartV1.lean"
+  },
+  {
+   "name": "FinitenessAllLevelExceptionalScalarV1",
+   "file": "lean/FinitenessAllLevelExceptionalScalarV1.lean"
+  },
+  {
+   "name": "FinitenessAllLevelFiberDescentV1",
+   "file": "lean/FinitenessAllLevelFiberDescentV1.lean"
+  },
+  {
+   "name": "FinitenessAllLevelFiberProductBoundsV1",
+   "file": "lean/FinitenessAllLevelFiberProductBoundsV1.lean"
+  },
+  {
+   "name": "FinitenessAllLevelFiniteEquationsV1",
+   "file": "lean/FinitenessAllLevelFiniteEquationsV1.lean"
+  },
+  {
+   "name": "FinitenessAllLevelFiniteFiberAlgebraV1",
+   "file": "lean/FinitenessAllLevelFiniteFiberAlgebraV1.lean"
+  },
+  {
+   "name": "FinitenessAllLevelFiniteLocusV1",
+   "file": "lean/FinitenessAllLevelFiniteLocusV1.lean"
+  },
+  {
+   "name": "FinitenessAllLevelFiniteRowsV1",
+   "file": "lean/FinitenessAllLevelFiniteRowsV1.lean"
+  },
+  {
+   "name": "FinitenessAllLevelFiniteSectorFibersV1",
+   "file": "lean/FinitenessAllLevelFiniteSectorFibersV1.lean"
+  },
+  {
+   "name": "FinitenessAllLevelFiniteSectorsV1",
+   "file": "lean/FinitenessAllLevelFiniteSectorsV1.lean"
+  },
+  {
+   "name": "FinitenessAllLevelFiniteSheetsV1",
+   "file": "lean/FinitenessAllLevelFiniteSheetsV1.lean"
+  },
+  {
+   "name": "FinitenessAllLevelFormalAnalyticV1",
+   "file": "lean/FinitenessAllLevelFormalAnalyticV1.lean"
+  },
+  {
+   "name": "FinitenessAllLevelFormalCoefficientsV1",
+   "file": "lean/FinitenessAllLevelFormalCoefficientsV1.lean"
+  },
+  {
+   "name": "FinitenessAllLevelFormalContinuationV1",
+   "file": "lean/FinitenessAllLevelFormalContinuationV1.lean"
+  },
+  {
+   "name": "FinitenessAllLevelFormalCuspV1",
+   "file": "lean/FinitenessAllLevelFormalCuspV1.lean"
+  },
+  {
+   "name": "FinitenessAllLevelFormalGrowthV1",
+   "file": "lean/FinitenessAllLevelFormalGrowthV1.lean"
+  },
+  {
+   "name": "FinitenessAllLevelFormalMeasurableV1",
+   "file": "lean/FinitenessAllLevelFormalMeasurableV1.lean"
+  },
+  {
+   "name": "FinitenessAllLevelFormalOperatorAnalyticV1",
+   "file": "lean/FinitenessAllLevelFormalOperatorAnalyticV1.lean"
+  },
+  {
+   "name": "FinitenessAllLevelFormalOperatorV1",
+   "file": "lean/FinitenessAllLevelFormalOperatorV1.lean"
+  },
+  {
+   "name": "FinitenessAllLevelFormalRecoveryV1",
+   "file": "lean/FinitenessAllLevelFormalRecoveryV1.lean"
+  },
+  {
+   "name": "FinitenessAllLevelFormalRowBoundsV1",
+   "file": "lean/FinitenessAllLevelFormalRowBoundsV1.lean"
+  },
+  {
+   "name": "FinitenessAllLevelFormalSolutionV1",
+   "file": "lean/FinitenessAllLevelFormalSolutionV1.lean"
+  },
+  {
+   "name": "FinitenessAllLevelFormalTestsV1",
+   "file": "lean/FinitenessAllLevelFormalTestsV1.lean"
+  },
+  {
+   "name": "FinitenessAllLevelFormalUniformBoundsV1",
+   "file": "lean/FinitenessAllLevelFormalUniformBoundsV1.lean"
+  },
+  {
+   "name": "FinitenessAllLevelFourierGrowthV1",
+   "file": "lean/FinitenessAllLevelFourierGrowthV1.lean"
+  },
+  {
+   "name": "FinitenessAllLevelFredholmReductionV1",
+   "file": "lean/FinitenessAllLevelFredholmReductionV1.lean"
+  },
+  {
+   "name": "FinitenessAllLevelFrickeLimitsV1",
+   "file": "lean/FinitenessAllLevelFrickeLimitsV1.lean"
+  },
+  {
+   "name": "FinitenessAllLevelFunctionalChartV1",
+   "file": "lean/FinitenessAllLevelFunctionalChartV1.lean"
+  },
+  {
+   "name": "FinitenessAllLevelGenericParameterV1",
+   "file": "lean/FinitenessAllLevelGenericParameterV1.lean"
+  },
+  {
+   "name": "FinitenessAllLevelGenericSeparableV1",
+   "file": "lean/FinitenessAllLevelGenericSeparableV1.lean"
+  },
+  {
+   "name": "FinitenessAllLevelGlobalHeightV1",
+   "file": "lean/FinitenessAllLevelGlobalHeightV1.lean"
+  },
+  {
+   "name": "FinitenessAllLevelGlobalRecoveryV1",
+   "file": "lean/FinitenessAllLevelGlobalRecoveryV1.lean"
+  },
+  {
+   "name": "FinitenessAllLevelGlobalSectorFibersV1",
+   "file": "lean/FinitenessAllLevelGlobalSectorFibersV1.lean"
+  },
+  {
+   "name": "FinitenessAllLevelGlobalSectorProperV1",
+   "file": "lean/FinitenessAllLevelGlobalSectorProperV1.lean"
+  },
+  {
+   "name": "FinitenessAllLevelGoodCoefficientsV1",
+   "file": "lean/FinitenessAllLevelGoodCoefficientsV1.lean"
+  },
+  {
+   "name": "FinitenessAllLevelGoodFourierV1",
+   "file": "lean/FinitenessAllLevelGoodFourierV1.lean"
+  },
+  {
+   "name": "FinitenessAllLevelGoodTraceV1",
+   "file": "lean/FinitenessAllLevelGoodTraceV1.lean"
+  },
+  {
+   "name": "FinitenessAllLevelHeckePowerV1",
+   "file": "lean/FinitenessAllLevelHeckePowerV1.lean"
+  },
+  {
+   "name": "FinitenessAllLevelHeightWeightsV1",
+   "file": "lean/FinitenessAllLevelHeightWeightsV1.lean"
+  },
+  {
+   "name": "FinitenessAllLevelHolomorphicReductionV1",
+   "file": "lean/FinitenessAllLevelHolomorphicReductionV1.lean"
+  },
+  {
+   "name": "FinitenessAllLevelHolomorphicSpaceV1",
+   "file": "lean/FinitenessAllLevelHolomorphicSpaceV1.lean"
+  },
+  {
+   "name": "FinitenessAllLevelHomeomorphicChartV1",
+   "file": "lean/FinitenessAllLevelHomeomorphicChartV1.lean"
+  },
+  {
+   "name": "FinitenessAllLevelIndexedConstraintsV1",
+   "file": "lean/FinitenessAllLevelIndexedConstraintsV1.lean"
+  },
+  {
+   "name": "FinitenessAllLevelLocalAnalyticIntegralV1",
+   "file": "lean/FinitenessAllLevelLocalAnalyticIntegralV1.lean"
+  },
+  {
+   "name": "FinitenessAllLevelLocalDichotomyV1",
+   "file": "lean/FinitenessAllLevelLocalDichotomyV1.lean"
+  },
+  {
+   "name": "FinitenessAllLevelLocalEquationsV1",
+   "file": "lean/FinitenessAllLevelLocalEquationsV1.lean"
+  },
+  {
+   "name": "FinitenessAllLevelLocalGraphV1",
+   "file": "lean/FinitenessAllLevelLocalGraphV1.lean"
+  },
+  {
+   "name": "FinitenessAllLevelLocalReadV1",
+   "file": "lean/FinitenessAllLevelLocalReadV1.lean"
+  },
+  {
+   "name": "FinitenessAllLevelLocalRootsV1",
+   "file": "lean/FinitenessAllLevelLocalRootsV1.lean"
+  },
+  {
+   "name": "FinitenessAllLevelLowHeightV1",
+   "file": "lean/FinitenessAllLevelLowHeightV1.lean"
+  },
+  {
+   "name": "FinitenessAllLevelMeasurableDerivativeV1",
+   "file": "lean/FinitenessAllLevelMeasurableDerivativeV1.lean"
+  },
+  {
+   "name": "FinitenessAllLevelMellinDirichletV1",
+   "file": "lean/FinitenessAllLevelMellinDirichletV1.lean"
+  },
+  {
+   "name": "FinitenessAllLevelMellinNormalizationV1",
+   "file": "lean/FinitenessAllLevelMellinNormalizationV1.lean"
+  },
+  {
+   "name": "FinitenessAllLevelMellinPairV1",
+   "file": "lean/FinitenessAllLevelMellinPairV1.lean"
+  },
+  {
+   "name": "FinitenessAllLevelNormalizedFunctionalV1",
+   "file": "lean/FinitenessAllLevelNormalizedFunctionalV1.lean"
+  },
+  {
+   "name": "FinitenessAllLevelObservableEliminantV1",
+   "file": "lean/FinitenessAllLevelObservableEliminantV1.lean"
+  },
+  {
+   "name": "FinitenessAllLevelOriginalEquationsV1",
+   "file": "lean/FinitenessAllLevelOriginalEquationsV1.lean"
+  },
+  {
+   "name": "FinitenessAllLevelOriginalPencilV1",
+   "file": "lean/FinitenessAllLevelOriginalPencilV1.lean"
+  },
+  {
+   "name": "FinitenessAllLevelParameterChangeV1",
+   "file": "lean/FinitenessAllLevelParameterChangeV1.lean"
+  },
+  {
+   "name": "FinitenessAllLevelPencilFredholmV1",
+   "file": "lean/FinitenessAllLevelPencilFredholmV1.lean"
+  },
+  {
+   "name": "FinitenessAllLevelPencilHeightsV1",
+   "file": "lean/FinitenessAllLevelPencilHeightsV1.lean"
+  },
+  {
+   "name": "FinitenessAllLevelPolynomialBoundV1",
+   "file": "lean/FinitenessAllLevelPolynomialBoundV1.lean"
+  },
+  {
+   "name": "FinitenessAllLevelPolynomialFibersV1",
+   "file": "lean/FinitenessAllLevelPolynomialFibersV1.lean"
+  },
+  {
+   "name": "FinitenessAllLevelPolynomialGrowthOrderV1",
+   "file": "lean/FinitenessAllLevelPolynomialGrowthOrderV1.lean"
+  },
+  {
+   "name": "FinitenessAllLevelPolynomialLiouvilleV1",
+   "file": "lean/FinitenessAllLevelPolynomialLiouvilleV1.lean"
+  },
+  {
+   "name": "FinitenessAllLevelPolynomialPresentationV1",
+   "file": "lean/FinitenessAllLevelPolynomialPresentationV1.lean"
+  },
+  {
+   "name": "FinitenessAllLevelPresentationCoefficientRingV1",
+   "file": "lean/FinitenessAllLevelPresentationCoefficientRingV1.lean"
+  },
+  {
+   "name": "FinitenessAllLevelPrimeRigidityV1",
+   "file": "lean/FinitenessAllLevelPrimeRigidityV1.lean"
+  },
+  {
+   "name": "FinitenessAllLevelProjectionDichotomyV1",
+   "file": "lean/FinitenessAllLevelProjectionDichotomyV1.lean"
+  },
+  {
+   "name": "FinitenessAllLevelPropernessV1",
+   "file": "lean/FinitenessAllLevelPropernessV1.lean"
+  },
+  {
+   "name": "FinitenessAllLevelQuadraticCoordinatesV1",
+   "file": "lean/FinitenessAllLevelQuadraticCoordinatesV1.lean"
+  },
+  {
+   "name": "FinitenessAllLevelReconstructionV1",
+   "file": "lean/FinitenessAllLevelReconstructionV1.lean"
+  },
+  {
+   "name": "FinitenessAllLevelRectangularAlgebraV1",
+   "file": "lean/FinitenessAllLevelRectangularAlgebraV1.lean"
+  },
+  {
+   "name": "FinitenessAllLevelRectangularBranchesV1",
+   "file": "lean/FinitenessAllLevelRectangularBranchesV1.lean"
+  },
+  {
+   "name": "FinitenessAllLevelRegularDegreeV1",
+   "file": "lean/FinitenessAllLevelRegularDegreeV1.lean"
+  },
+  {
+   "name": "FinitenessAllLevelRegularGraphsV1",
+   "file": "lean/FinitenessAllLevelRegularGraphsV1.lean"
+  },
+  {
+   "name": "FinitenessAllLevelRegularModelsV1",
+   "file": "lean/FinitenessAllLevelRegularModelsV1.lean"
+  },
+  {
+   "name": "FinitenessAllLevelSectorAtlasV1",
+   "file": "lean/FinitenessAllLevelSectorAtlasV1.lean"
+  },
+  {
+   "name": "FinitenessAllLevelSectorDichotomyV1",
+   "file": "lean/FinitenessAllLevelSectorDichotomyV1.lean"
+  },
+  {
+   "name": "FinitenessAllLevelSectorEliminantsV1",
+   "file": "lean/FinitenessAllLevelSectorEliminantsV1.lean"
+  },
+  {
+   "name": "FinitenessAllLevelSectorFinitenessV1",
+   "file": "lean/FinitenessAllLevelSectorFinitenessV1.lean"
+  },
+  {
+   "name": "FinitenessAllLevelSectorPolynomialV1",
+   "file": "lean/FinitenessAllLevelSectorPolynomialV1.lean"
+  },
+  {
+   "name": "FinitenessAllLevelSectorRootModelsV1",
+   "file": "lean/FinitenessAllLevelSectorRootModelsV1.lean"
+  },
+  {
+   "name": "FinitenessAllLevelSeparableCertificateV1",
+   "file": "lean/FinitenessAllLevelSeparableCertificateV1.lean"
+  },
+  {
+   "name": "FinitenessAllLevelSeparableEliminantV1",
+   "file": "lean/FinitenessAllLevelSeparableEliminantV1.lean"
+  },
+  {
+   "name": "FinitenessAllLevelSharpDegreeV1",
+   "file": "lean/FinitenessAllLevelSharpDegreeV1.lean"
+  },
+  {
+   "name": "FinitenessAllLevelSharpHeightV1",
+   "file": "lean/FinitenessAllLevelSharpHeightV1.lean"
+  },
+  {
+   "name": "FinitenessAllLevelSharpTailV1",
+   "file": "lean/FinitenessAllLevelSharpTailV1.lean"
+  },
+  {
+   "name": "FinitenessAllLevelSpatialLinearV1",
+   "file": "lean/FinitenessAllLevelSpatialLinearV1.lean"
+  },
+  {
+   "name": "FinitenessAllLevelSymmetricAnalyticV1",
+   "file": "lean/FinitenessAllLevelSymmetricAnalyticV1.lean"
+  },
+  {
+   "name": "FinitenessAllLevelSymmetricBoundsV1",
+   "file": "lean/FinitenessAllLevelSymmetricBoundsV1.lean"
+  },
+  {
+   "name": "FinitenessAllLevelSystemCertificateV1",
+   "file": "lean/FinitenessAllLevelSystemCertificateV1.lean"
+  },
+  {
+   "name": "FinitenessAllLevelTaylorGrowthV1",
+   "file": "lean/FinitenessAllLevelTaylorGrowthV1.lean"
+  },
+  {
+   "name": "FinitenessAllLevelTopologyV1",
+   "file": "lean/FinitenessAllLevelTopologyV1.lean"
+  },
+  {
+   "name": "FinitenessAllLevelTwoPrimeBoundsV1",
+   "file": "lean/FinitenessAllLevelTwoPrimeBoundsV1.lean"
+  },
+  {
+   "name": "FinitenessAllLevelUniformTwoPrimeV1",
+   "file": "lean/FinitenessAllLevelUniformTwoPrimeV1.lean"
+  },
+  {
+   "name": "FinitenessAnalyticReconstructionV1",
+   "file": "lean/FinitenessAnalyticReconstructionV1.lean"
+  },
+  {
+   "name": "FinitenessAxisIdentityV1",
+   "file": "lean/FinitenessAxisIdentityV1.lean"
+  },
+  {
+   "name": "FinitenessBoundaryDecayV1",
+   "file": "lean/FinitenessBoundaryDecayV1.lean"
+  },
+  {
+   "name": "FinitenessCertificateV1",
+   "file": "lean/FinitenessCertificateV1.lean"
+  },
+  {
+   "name": "FinitenessCompletedNormalizationV1",
+   "file": "lean/FinitenessCompletedNormalizationV1.lean"
+  },
+  {
+   "name": "FinitenessCompletionCheckV1",
+   "file": "lean/FinitenessCompletionCheckV1.lean"
+  },
+  {
+   "name": "FinitenessComplexGeometryV1",
+   "file": "lean/FinitenessComplexGeometryV1.lean"
+  },
+  {
+   "name": "FinitenessContourShiftV1",
+   "file": "lean/FinitenessContourShiftV1.lean"
+  },
+  {
+   "name": "FinitenessCuspBoundsV1",
+   "file": "lean/FinitenessCuspBoundsV1.lean"
+  },
+  {
+   "name": "FinitenessDirichletInversionV1",
+   "file": "lean/FinitenessDirichletInversionV1.lean"
+  },
+  {
+   "name": "FinitenessDiskDecayV1",
+   "file": "lean/FinitenessDiskDecayV1.lean"
+  },
+  {
+   "name": "FinitenessDiskJetV1",
+   "file": "lean/FinitenessDiskJetV1.lean"
+  },
+  {
+   "name": "FinitenessEnvelopeAssemblyV1",
+   "file": "lean/FinitenessEnvelopeAssemblyV1.lean"
+  },
+  {
+   "name": "FinitenessEulerCoefficientsV1",
+   "file": "lean/FinitenessEulerCoefficientsV1.lean"
+  },
+  {
+   "name": "FinitenessEulerDirichletV1",
+   "file": "lean/FinitenessEulerDirichletV1.lean"
+  },
+  {
+   "name": "FinitenessEulerFamilyV1",
+   "file": "lean/FinitenessEulerFamilyV1.lean"
+  },
+  {
+   "name": "FinitenessEulerIdentificationV1",
+   "file": "lean/FinitenessEulerIdentificationV1.lean"
+  },
+  {
+   "name": "FinitenessEulerIndependenceV1",
+   "file": "lean/FinitenessEulerIndependenceV1.lean"
+  },
+  {
+   "name": "FinitenessEulerLocalV1",
+   "file": "lean/FinitenessEulerLocalV1.lean"
+  },
+  {
+   "name": "FinitenessEulerRecurrenceV1",
+   "file": "lean/FinitenessEulerRecurrenceV1.lean"
+  },
+  {
+   "name": "FinitenessEulerTwistLocalV1",
+   "file": "lean/FinitenessEulerTwistLocalV1.lean"
+  },
+  {
+   "name": "FinitenessEulerTwistReciprocityV1",
+   "file": "lean/FinitenessEulerTwistReciprocityV1.lean"
+  },
+  {
+   "name": "FinitenessExponentialCutoffV1",
+   "file": "lean/FinitenessExponentialCutoffV1.lean"
+  },
+  {
+   "name": "FinitenessFiniteOrderClosureV1",
+   "file": "lean/FinitenessFiniteOrderClosureV1.lean"
+  },
+  {
+   "name": "FinitenessFiniteOrderV1",
+   "file": "lean/FinitenessFiniteOrderV1.lean"
+  },
+  {
+   "name": "FinitenessFiniteUnionV1",
+   "file": "lean/FinitenessFiniteUnionV1.lean"
+  },
+  {
+   "name": "FinitenessFourierConstructionV1",
+   "file": "lean/FinitenessFourierConstructionV1.lean"
+  },
+  {
+   "name": "FinitenessGammaDecayV1",
+   "file": "lean/FinitenessGammaDecayV1.lean"
+  },
+  {
+   "name": "FinitenessGammaIntegrabilityV1",
+   "file": "lean/FinitenessGammaIntegrabilityV1.lean"
+  },
+  {
+   "name": "FinitenessGammaMellinV1",
+   "file": "lean/FinitenessGammaMellinV1.lean"
+  },
+  {
+   "name": "FinitenessGlobalHeightV1",
+   "file": "lean/FinitenessGlobalHeightV1.lean"
+  },
+  {
+   "name": "FinitenessGrowthNormalizationV1",
+   "file": "lean/FinitenessGrowthNormalizationV1.lean"
+  },
+  {
+   "name": "FinitenessHeightEnvelopeV1",
+   "file": "lean/FinitenessHeightEnvelopeV1.lean"
+  },
+  {
+   "name": "FinitenessHolomorphicCutoffV1",
+   "file": "lean/FinitenessHolomorphicCutoffV1.lean"
+  },
+  {
+   "name": "FinitenessHolomorphicSpaceV1",
+   "file": "lean/FinitenessHolomorphicSpaceV1.lean"
+  },
+  {
+   "name": "FinitenessInputBoundsV1",
+   "file": "lean/FinitenessInputBoundsV1.lean"
+  },
+  {
+   "name": "FinitenessIntegerWeightV1",
+   "file": "lean/FinitenessIntegerWeightV1.lean"
+  },
+  {
+   "name": "FinitenessLowHeightV1",
+   "file": "lean/FinitenessLowHeightV1.lean"
+  },
+  {
+   "name": "FinitenessMellinContourV1",
+   "file": "lean/FinitenessMellinContourV1.lean"
+  },
+  {
+   "name": "FinitenessMellinSeriesV1",
+   "file": "lean/FinitenessMellinSeriesV1.lean"
+  },
+  {
+   "name": "FinitenessNormalizedTwistLocalV1",
+   "file": "lean/FinitenessNormalizedTwistLocalV1.lean"
+  },
+  {
+   "name": "FinitenessNormalizedTwistProductV1",
+   "file": "lean/FinitenessNormalizedTwistProductV1.lean"
+  },
+  {
+   "name": "FinitenessOriginalDiskIndependenceV1",
+   "file": "lean/FinitenessOriginalDiskIndependenceV1.lean"
+  },
+  {
+   "name": "FinitenessOriginalEulerFamilyV1",
+   "file": "lean/FinitenessOriginalEulerFamilyV1.lean"
+  },
+  {
+   "name": "FinitenessOriginalFourierV1",
+   "file": "lean/FinitenessOriginalFourierV1.lean"
+  },
+  {
+   "name": "FinitenessOriginalFrickeV1",
+   "file": "lean/FinitenessOriginalFrickeV1.lean"
+  },
+  {
+   "name": "FinitenessOriginalInputV1",
+   "file": "lean/FinitenessOriginalInputV1.lean"
+  },
+  {
+   "name": "FinitenessOriginalInversionV1",
+   "file": "lean/FinitenessOriginalInversionV1.lean"
+  },
+  {
+   "name": "FinitenessOriginalTheoremV1",
+   "file": "lean/FinitenessOriginalTheoremV1.lean"
+  },
+  {
+   "name": "FinitenessOriginalTwistLocalV1",
+   "file": "lean/FinitenessOriginalTwistLocalV1.lean"
+  },
+  {
+   "name": "FinitenessOriginalTwistedContinuationsV1",
+   "file": "lean/FinitenessOriginalTwistedContinuationsV1.lean"
+  },
+  {
+   "name": "FinitenessPaper2CoefficientBoundsV1",
+   "file": "lean/FinitenessPaper2CoefficientBoundsV1.lean"
+  },
+  {
+   "name": "FinitenessPaper2CoefficientCompactnessV1",
+   "file": "lean/FinitenessPaper2CoefficientCompactnessV1.lean"
+  },
+  {
+   "name": "FinitenessPaper2DiskLimitsV1",
+   "file": "lean/FinitenessPaper2DiskLimitsV1.lean"
+  },
+  {
+   "name": "FinitenessPaper2EulerLimitsV1",
+   "file": "lean/FinitenessPaper2EulerLimitsV1.lean"
+  },
+  {
+   "name": "FinitenessPaper2GrowthV1",
+   "file": "lean/FinitenessPaper2GrowthV1.lean"
+  },
+  {
+   "name": "FinitenessPaper2Main1V1",
+   "file": "lean/FinitenessPaper2Main1V1.lean"
+  },
+  {
+   "name": "FinitenessPaperConvergenceV1",
+   "file": "lean/FinitenessPaperConvergenceV1.lean"
+  },
+  {
+   "name": "FinitenessPaperMain1V1",
+   "file": "lean/FinitenessPaperMain1V1.lean"
+  },
+  {
+   "name": "FinitenessPaperTheoremV1",
+   "file": "lean/FinitenessPaperTheoremV1.lean"
+  },
+  {
+   "name": "FinitenessPolynomialSeriesV1",
+   "file": "lean/FinitenessPolynomialSeriesV1.lean"
+  },
+  {
+   "name": "FinitenessPrimeSeriesSplitV1",
+   "file": "lean/FinitenessPrimeSeriesSplitV1.lean"
+  },
+  {
+   "name": "FinitenessRamanujanArithmeticV1",
+   "file": "lean/FinitenessRamanujanArithmeticV1.lean"
+  },
+  {
+   "name": "FinitenessRamanujanDivisorV1",
+   "file": "lean/FinitenessRamanujanDivisorV1.lean"
+  },
+  {
+   "name": "FinitenessRamanujanFourierV1",
+   "file": "lean/FinitenessRamanujanFourierV1.lean"
+  },
+  {
+   "name": "FinitenessRamanujanSumV1",
+   "file": "lean/FinitenessRamanujanSumV1.lean"
+  },
+  {
+   "name": "FinitenessReconstructionV1",
+   "file": "lean/FinitenessReconstructionV1.lean"
+  },
+  {
+   "name": "FinitenessSeriesIndependenceV1",
+   "file": "lean/FinitenessSeriesIndependenceV1.lean"
+  },
+  {
+   "name": "FinitenessSignPatternsV1",
+   "file": "lean/FinitenessSignPatternsV1.lean"
+  },
+  {
+   "name": "FinitenessStripDecayV1",
+   "file": "lean/FinitenessStripDecayV1.lean"
+  },
+  {
+   "name": "FinitenessTwistConductorV1",
+   "file": "lean/FinitenessTwistConductorV1.lean"
+  },
+  {
+   "name": "FinitenessTwistExponentialV1",
+   "file": "lean/FinitenessTwistExponentialV1.lean"
+  },
+  {
+   "name": "FinitenessTwistedAnalyticBridgeV1",
+   "file": "lean/FinitenessTwistedAnalyticBridgeV1.lean"
+  },
+  {
+   "name": "FinitenessTwistedEulerProductV1",
+   "file": "lean/FinitenessTwistedEulerProductV1.lean"
+  },
+  {
+   "name": "FinitenessTwistedPrimeFactorV1",
+   "file": "lean/FinitenessTwistedPrimeFactorV1.lean"
+  },
+  {
+   "name": "FinitenessWeightedIndependenceV1",
+   "file": "lean/FinitenessWeightedIndependenceV1.lean"
+  },
+  {
+   "name": "FinitenessWindowGainV1",
+   "file": "lean/FinitenessWindowGainV1.lean"
+  },
+  {
+   "name": "FurstenbergDichotomyV1",
+   "file": "lean/FurstenbergDichotomyV1.lean"
+  },
+  {
+   "name": "FurstenbergMinimalFiniteV1",
+   "file": "lean/FurstenbergMinimalFiniteV1.lean"
+  },
+  {
+   "name": "FurstenbergMinimalV1",
+   "file": "lean/FurstenbergMinimalV1.lean"
+  },
+  {
+   "name": "FurstenbergSemigroupV1",
+   "file": "lean/FurstenbergSemigroupV1.lean"
+  },
+  {
+   "name": "FurstenbergZeroV1",
+   "file": "lean/FurstenbergZeroV1.lean"
+  },
+  {
+   "name": "GridActualIncidenceV1",
+   "file": "lean/GridActualIncidenceV1.lean"
+  },
+  {
+   "name": "GridAdmissibleGapV1",
+   "file": "lean/GridAdmissibleGapV1.lean"
+  },
+  {
+   "name": "GridBufferedDetectionV1",
+   "file": "lean/GridBufferedDetectionV1.lean"
+  },
+  {
+   "name": "GridCarrierV1",
+   "file": "lean/GridCarrierV1.lean"
+  },
+  {
+   "name": "GridCenterChoiceV1",
+   "file": "lean/GridCenterChoiceV1.lean"
+  },
+  {
+   "name": "GridCosetOrderV1",
+   "file": "lean/GridCosetOrderV1.lean"
+  },
+  {
+   "name": "GridLabelDetectionV1",
+   "file": "lean/GridLabelDetectionV1.lean"
+  },
+  {
+   "name": "GridLevelFormulaV1",
+   "file": "lean/GridLevelFormulaV1.lean"
+  },
+  {
+   "name": "GridOrderTriangularityV1",
+   "file": "lean/GridOrderTriangularityV1.lean"
+  },
+  {
+   "name": "GridParametersV1",
+   "file": "lean/GridParametersV1.lean"
+  },
+  {
+   "name": "GridPrimePartsV1",
+   "file": "lean/GridPrimePartsV1.lean"
+  },
+  {
+   "name": "GridRadiusV1",
+   "file": "lean/GridRadiusV1.lean"
+  },
+  {
+   "name": "GridRationalDenominatorsV1",
+   "file": "lean/GridRationalDenominatorsV1.lean"
+  },
+  {
+   "name": "GridRestrictedRowsV1",
+   "file": "lean/GridRestrictedRowsV1.lean"
+  },
+  {
+   "name": "GridSelectedWindowsV1",
+   "file": "lean/GridSelectedWindowsV1.lean"
+  },
+  {
+   "name": "GridSpecialWindowsV1",
+   "file": "lean/GridSpecialWindowsV1.lean"
+  },
+  {
+   "name": "GridSupportGeometryV1",
+   "file": "lean/GridSupportGeometryV1.lean"
+  },
+  {
+   "name": "GridSupportedDetectionV1",
+   "file": "lean/GridSupportedDetectionV1.lean"
+  },
+  {
+   "name": "GridTriangularDetectionV1",
+   "file": "lean/GridTriangularDetectionV1.lean"
+  },
+  {
+   "name": "GridUnitChoiceV1",
+   "file": "lean/GridUnitChoiceV1.lean"
+  },
+  {
+   "name": "IndependentBasesV1",
+   "file": "lean/IndependentBasesV1.lean"
+  },
+  {
+   "name": "MaassActualMellinV1",
+   "file": "lean/MaassActualMellinV1.lean"
+  },
+  {
+   "name": "MaassAxisInversionV1",
+   "file": "lean/MaassAxisInversionV1.lean"
+  },
+  {
+   "name": "MaassBilateralBetaV1",
+   "file": "lean/MaassBilateralBetaV1.lean"
+  },
+  {
+   "name": "MaassBilateralKernelV1",
+   "file": "lean/MaassBilateralKernelV1.lean"
+  },
+  {
+   "name": "MaassBilinearRotationV1",
+   "file": "lean/MaassBilinearRotationV1.lean"
+  },
+  {
+   "name": "MaassDirectionalV1",
+   "file": "lean/MaassDirectionalV1.lean"
+  },
+  {
+   "name": "MaassEulerInputV1",
+   "file": "lean/MaassEulerInputV1.lean"
+  },
+  {
+   "name": "MaassExceptionalComparisonV1",
+   "file": "lean/MaassExceptionalComparisonV1.lean"
+  },
+  {
+   "name": "MaassExceptionalIntegralV1",
+   "file": "lean/MaassExceptionalIntegralV1.lean"
+  },
+  {
+   "name": "MaassExceptionalODEV1",
+   "file": "lean/MaassExceptionalODEV1.lean"
+  },
+  {
+   "name": "MaassFrickeAccelerationV1",
+   "file": "lean/MaassFrickeAccelerationV1.lean"
+  },
+  {
+   "name": "MaassFrickeCovarianceV1",
+   "file": "lean/MaassFrickeCovarianceV1.lean"
+  },
+  {
+   "name": "MaassFrickeGeometryV1",
+   "file": "lean/MaassFrickeGeometryV1.lean"
+  },
+  {
+   "name": "MaassFrickeSmoothV1",
+   "file": "lean/MaassFrickeSmoothV1.lean"
+  },
+  {
+   "name": "MaassGammaRapidV1",
+   "file": "lean/MaassGammaRapidV1.lean"
+  },
+  {
+   "name": "MaassInverseMellinV1",
+   "file": "lean/MaassInverseMellinV1.lean"
+  },
+  {
+   "name": "MaassKBesselComparisonV1",
+   "file": "lean/MaassKBesselComparisonV1.lean"
+  },
+  {
+   "name": "MaassKBesselDecayV1",
+   "file": "lean/MaassKBesselDecayV1.lean"
+  },
+  {
+   "name": "MaassKBesselEventualPosV1",
+   "file": "lean/MaassKBesselEventualPosV1.lean"
+  },
+  {
+   "name": "MaassKBesselIntegralV1",
+   "file": "lean/MaassKBesselIntegralV1.lean"
+  },
+  {
+   "name": "MaassKBesselMomentsV1",
+   "file": "lean/MaassKBesselMomentsV1.lean"
+  },
+  {
+   "name": "MaassKBesselODEV1",
+   "file": "lean/MaassKBesselODEV1.lean"
+  },
+  {
+   "name": "MaassLogitV1",
+   "file": "lean/MaassLogitV1.lean"
+  },
+  {
+   "name": "MaassMellinFubiniV1",
+   "file": "lean/MaassMellinFubiniV1.lean"
+  },
+  {
+   "name": "MaassMellinSeriesV1",
+   "file": "lean/MaassMellinSeriesV1.lean"
+  },
+  {
+   "name": "MaassODEComparisonV1",
+   "file": "lean/MaassODEComparisonV1.lean"
+  },
+  {
+   "name": "MaassODELowerComparisonV1",
+   "file": "lean/MaassODELowerComparisonV1.lean"
+  },
+  {
+   "name": "MaassODEPositivityV1",
+   "file": "lean/MaassODEPositivityV1.lean"
+  },
+  {
+   "name": "MaassOriginalAxisV1",
+   "file": "lean/MaassOriginalAxisV1.lean"
+  },
+  {
+   "name": "MaassParityMellinV1",
+   "file": "lean/MaassParityMellinV1.lean"
+  },
+  {
+   "name": "MaassSecondCurveV1",
+   "file": "lean/MaassSecondCurveV1.lean"
+  },
+  {
+   "name": "MaassSpectralKernelV1",
+   "file": "lean/MaassSpectralKernelV1.lean"
+  },
+  {
+   "name": "MaassSqrtBoundaryV1",
+   "file": "lean/MaassSqrtBoundaryV1.lean"
+  },
+  {
+   "name": "MaassSqrtRescalingV1",
+   "file": "lean/MaassSqrtRescalingV1.lean"
+  },
+  {
+   "name": "QuantitativeArithmeticAffineOrbitRigidityTheoryV4",
+   "file": "lean/QuantitativeArithmeticAffineOrbitRigidityTheoryV4.lean"
+  },
+  {
+   "name": "QuantitativeArithmeticAnalyticDivisorContinuationV1",
+   "file": "lean/QuantitativeArithmeticAnalyticDivisorContinuationV1.lean"
+  },
+  {
+   "name": "QuantitativeArithmeticAnalyticGermTheoryV4",
+   "file": "lean/QuantitativeArithmeticAnalyticGermTheoryV4.lean"
+  },
+  {
+   "name": "QuantitativeArithmeticAnchoredPoleReconstructionV1",
+   "file": "lean/QuantitativeArithmeticAnchoredPoleReconstructionV1.lean"
+  },
+  {
+   "name": "QuantitativeArithmeticAnchoredPoleVectorV1",
+   "file": "lean/QuantitativeArithmeticAnchoredPoleVectorV1.lean"
+  },
+  {
+   "name": "QuantitativeArithmeticAtkinSignsCompleteV1",
+   "file": "lean/QuantitativeArithmeticAtkinSignsCompleteV1.lean"
+  },
+  {
+   "name": "QuantitativeArithmeticAtkinSignsLabelsV1",
+   "file": "lean/QuantitativeArithmeticAtkinSignsLabelsV1.lean"
+  },
+  {
+   "name": "QuantitativeArithmeticAtkinSignsLowerV1",
+   "file": "lean/QuantitativeArithmeticAtkinSignsLowerV1.lean"
+  },
+  {
+   "name": "QuantitativeArithmeticAtkinSignsOldV1",
+   "file": "lean/QuantitativeArithmeticAtkinSignsOldV1.lean"
+  },
+  {
+   "name": "QuantitativeArithmeticAtkinSignsTheoryV4",
+   "file": "lean/QuantitativeArithmeticAtkinSignsTheoryV4.lean"
+  },
+  {
+   "name": "QuantitativeArithmeticAugmentedSpanningV1",
+   "file": "lean/QuantitativeArithmeticAugmentedSpanningV1.lean"
+  },
+  {
+   "name": "QuantitativeArithmeticCancelledTaylorRowsV1",
+   "file": "lean/QuantitativeArithmeticCancelledTaylorRowsV1.lean"
+  },
+  {
+   "name": "QuantitativeArithmeticCertificateChoiceV1",
+   "file": "lean/QuantitativeArithmeticCertificateChoiceV1.lean"
+  },
+  {
+   "name": "QuantitativeArithmeticCertificatePreparationV1",
+   "file": "lean/QuantitativeArithmeticCertificatePreparationV1.lean"
+  },
+  {
+   "name": "QuantitativeArithmeticCertificateV1",
+   "file": "lean/QuantitativeArithmeticCertificateV1.lean"
+  },
+  {
+   "name": "QuantitativeArithmeticClassicalRepeatedV1",
+   "file": "lean/QuantitativeArithmeticClassicalRepeatedV1.lean"
+  },
+  {
+   "name": "QuantitativeArithmeticClosedEntireV1",
+   "file": "lean/QuantitativeArithmeticClosedEntireV1.lean"
+  },
+  {
+   "name": "QuantitativeArithmeticCoefficientSlicesV1",
+   "file": "lean/QuantitativeArithmeticCoefficientSlicesV1.lean"
+  },
+  {
+   "name": "QuantitativeArithmeticCoherentTaylorTheoryV4",
+   "file": "lean/QuantitativeArithmeticCoherentTaylorTheoryV4.lean"
+  },
+  {
+   "name": "QuantitativeArithmeticCompact19ClearAtomicV1",
+   "file": "lean/QuantitativeArithmeticCompact19ClearAtomicV1.lean"
+  },
+  {
+   "name": "QuantitativeArithmeticCompact22ArrayKernelTheoryV4",
+   "file": "lean/QuantitativeArithmeticCompact22ArrayKernelTheoryV4.lean"
+  },
+  {
+   "name": "QuantitativeArithmeticCompact25FinalHTheoryV4",
+   "file": "lean/QuantitativeArithmeticCompact25FinalHTheoryV4.lean"
+  },
+  {
+   "name": "QuantitativeArithmeticCompact26GermPrimitiveV1",
+   "file": "lean/QuantitativeArithmeticCompact26GermPrimitiveV1.lean"
+  },
+  {
+   "name": "QuantitativeArithmeticCompact26JetReductionV1",
+   "file": "lean/QuantitativeArithmeticCompact26JetReductionV1.lean"
+  },
+  {
+   "name": "QuantitativeArithmeticCompact26SourceCompilerTheoryV4",
+   "file": "lean/QuantitativeArithmeticCompact26SourceCompilerTheoryV4.lean"
+  },
+  {
+   "name": "QuantitativeArithmeticCompact26SourceCompilerVerificationV1",
+   "file": "lean/QuantitativeArithmeticCompact26SourceCompilerVerificationV1.lean"
+  },
+  {
+   "name": "QuantitativeArithmeticCompact33CompilerV1",
+   "file": "lean/QuantitativeArithmeticCompact33CompilerV1.lean"
+  },
+  {
+   "name": "QuantitativeArithmeticCompact33VerificationV1",
+   "file": "lean/QuantitativeArithmeticCompact33VerificationV1.lean"
+  },
+  {
+   "name": "QuantitativeArithmeticCompact34ExportsV1",
+   "file": "lean/QuantitativeArithmeticCompact34ExportsV1.lean"
+  },
+  {
+   "name": "QuantitativeArithmeticCompact34MMMRecurrenceV1",
+   "file": "lean/QuantitativeArithmeticCompact34MMMRecurrenceV1.lean"
+  },
+  {
+   "name": "QuantitativeArithmeticCompact34MMPRecurrenceV1",
+   "file": "lean/QuantitativeArithmeticCompact34MMPRecurrenceV1.lean"
+  },
+  {
+   "name": "QuantitativeArithmeticCompact35AnalyticWeightsV1",
+   "file": "lean/QuantitativeArithmeticCompact35AnalyticWeightsV1.lean"
+  },
+  {
+   "name": "QuantitativeArithmeticCompact35ColumnsSynchronousV1",
+   "file": "lean/QuantitativeArithmeticCompact35ColumnsSynchronousV1.lean"
+  },
+  {
+   "name": "QuantitativeArithmeticCompact35DenominatorRepairV1",
+   "file": "lean/QuantitativeArithmeticCompact35DenominatorRepairV1.lean"
+  },
+  {
+   "name": "QuantitativeArithmeticCompact35JetRowsNegative118TheoryV4",
+   "file": "lean/QuantitativeArithmeticCompact35JetRowsNegative118TheoryV4.lean"
+  },
+  {
+   "name": "QuantitativeArithmeticCompact35JetRowsNegativeATheoryV4",
+   "file": "lean/QuantitativeArithmeticCompact35JetRowsNegativeATheoryV4.lean"
+  },
+  {
+   "name": "QuantitativeArithmeticCompact35JetRowsNegativeBTheoryV4",
+   "file": "lean/QuantitativeArithmeticCompact35JetRowsNegativeBTheoryV4.lean"
+  },
+  {
+   "name": "QuantitativeArithmeticCompact35JetRowsPositiveTheoryV4",
+   "file": "lean/QuantitativeArithmeticCompact35JetRowsPositiveTheoryV4.lean"
+  },
+  {
+   "name": "QuantitativeArithmeticCompact35JetRowsSoundnessV1",
+   "file": "lean/QuantitativeArithmeticCompact35JetRowsSoundnessV1.lean"
+  },
+  {
+   "name": "QuantitativeArithmeticCompactCommandsV1",
+   "file": "lean/QuantitativeArithmeticCompactCommandsV1.lean"
+  },
+  {
+   "name": "QuantitativeArithmeticCompactFactCommandsV1",
+   "file": "lean/QuantitativeArithmeticCompactFactCommandsV1.lean"
+  },
+  {
+   "name": "QuantitativeArithmeticCompactGermProgramBatchedV1",
+   "file": "lean/QuantitativeArithmeticCompactGermProgramBatchedV1.lean"
+  },
+  {
+   "name": "QuantitativeArithmeticCompactGermProgramBlockIndexSeriesV4",
+   "file": "lean/QuantitativeArithmeticCompactGermProgramBlockIndexSeriesV4.lean"
+  },
+  {
+   "name": "QuantitativeArithmeticCompactGermProgramFinalInitialStagesV1",
+   "file": "lean/QuantitativeArithmeticCompactGermProgramFinalInitialStagesV1.lean"
+  },
+  {
+   "name": "QuantitativeArithmeticCompactGermProgramFinalMiddleStagesV1",
+   "file": "lean/QuantitativeArithmeticCompactGermProgramFinalMiddleStagesV1.lean"
+  },
+  {
+   "name": "QuantitativeArithmeticCompactGermProgramInitialBlocksV1",
+   "file": "lean/QuantitativeArithmeticCompactGermProgramInitialBlocksV1.lean"
+  },
+  {
+   "name": "QuantitativeArithmeticCompactGermProgramLateBlocksV1",
+   "file": "lean/QuantitativeArithmeticCompactGermProgramLateBlocksV1.lean"
+  },
+  {
+   "name": "QuantitativeArithmeticCompactGermProgramMiddleBlocksV1",
+   "file": "lean/QuantitativeArithmeticCompactGermProgramMiddleBlocksV1.lean"
+  },
+  {
+   "name": "QuantitativeArithmeticCompactGermProgramPenultimateBlocksV1",
+   "file": "lean/QuantitativeArithmeticCompactGermProgramPenultimateBlocksV1.lean"
+  },
+  {
+   "name": "QuantitativeArithmeticCompactGermProgramTransitionBlocksV1",
+   "file": "lean/QuantitativeArithmeticCompactGermProgramTransitionBlocksV1.lean"
+  },
+  {
+   "name": "QuantitativeArithmeticCompactIndexCaseIndexRowDataSeriesV4",
+   "file": "lean/QuantitativeArithmeticCompactIndexCaseIndexRowDataSeriesV4.lean"
+  },
+  {
+   "name": "QuantitativeArithmeticCompactIndexTreeCaseIndexDataSeriesV4",
+   "file": "lean/QuantitativeArithmeticCompactIndexTreeCaseIndexDataSeriesV4.lean"
+  },
+  {
+   "name": "QuantitativeArithmeticComplexHornerBoundsTheoryV4",
+   "file": "lean/QuantitativeArithmeticComplexHornerBoundsTheoryV4.lean"
+  },
+  {
+   "name": "QuantitativeArithmeticComplexOuterNonzeroV1",
+   "file": "lean/QuantitativeArithmeticComplexOuterNonzeroV1.lean"
+  },
+  {
+   "name": "QuantitativeArithmeticCrossPrimeBandsV1",
+   "file": "lean/QuantitativeArithmeticCrossPrimeBandsV1.lean"
+  },
+  {
+   "name": "QuantitativeArithmeticCrossPrimeTheoryV4",
+   "file": "lean/QuantitativeArithmeticCrossPrimeTheoryV4.lean"
+  },
+  {
+   "name": "QuantitativeArithmeticCrossPrimeV1",
+   "file": "lean/QuantitativeArithmeticCrossPrimeV1.lean"
+  },
+  {
+   "name": "QuantitativeArithmeticCubicTraceV1",
+   "file": "lean/QuantitativeArithmeticCubicTraceV1.lean"
+  },
+  {
+   "name": "QuantitativeArithmeticCurvedTaylorContinuationV1",
+   "file": "lean/QuantitativeArithmeticCurvedTaylorContinuationV1.lean"
+  },
+  {
+   "name": "QuantitativeArithmeticCurvedTaylorMellinV1",
+   "file": "lean/QuantitativeArithmeticCurvedTaylorMellinV1.lean"
+  },
+  {
+   "name": "QuantitativeArithmeticCurvedTaylorModelsV1",
+   "file": "lean/QuantitativeArithmeticCurvedTaylorModelsV1.lean"
+  },
+  {
+   "name": "QuantitativeArithmeticCurvedTaylorPoleBoundV1",
+   "file": "lean/QuantitativeArithmeticCurvedTaylorPoleBoundV1.lean"
+  },
+  {
+   "name": "QuantitativeArithmeticCurvedTaylorRemainderV1",
+   "file": "lean/QuantitativeArithmeticCurvedTaylorRemainderV1.lean"
+  },
+  {
+   "name": "QuantitativeArithmeticCurvedTaylorTheoryV4",
+   "file": "lean/QuantitativeArithmeticCurvedTaylorTheoryV4.lean"
+  },
+  {
+   "name": "QuantitativeArithmeticCuspRemainderTheoryV4",
+   "file": "lean/QuantitativeArithmeticCuspRemainderTheoryV4.lean"
+  },
+  {
+   "name": "QuantitativeArithmeticDensityTransferV1",
+   "file": "lean/QuantitativeArithmeticDensityTransferV1.lean"
+  },
+  {
+   "name": "QuantitativeArithmeticDensityV1",
+   "file": "lean/QuantitativeArithmeticDensityV1.lean"
+  },
+  {
+   "name": "QuantitativeArithmeticDiamondLabelsTransportV1",
+   "file": "lean/QuantitativeArithmeticDiamondLabelsTransportV1.lean"
+  },
+  {
+   "name": "QuantitativeArithmeticDiamondLabelsV1",
+   "file": "lean/QuantitativeArithmeticDiamondLabelsV1.lean"
+  },
+  {
+   "name": "QuantitativeArithmeticDilationLaplaceTheoryV4",
+   "file": "lean/QuantitativeArithmeticDilationLaplaceTheoryV4.lean"
+  },
+  {
+   "name": "QuantitativeArithmeticDilationRectanglesTheoryV4",
+   "file": "lean/QuantitativeArithmeticDilationRectanglesTheoryV4.lean"
+  },
+  {
+   "name": "QuantitativeArithmeticDilationRecurrencePropagationV1",
+   "file": "lean/QuantitativeArithmeticDilationRecurrencePropagationV1.lean"
+  },
+  {
+   "name": "QuantitativeArithmeticEntireQuotientV1",
+   "file": "lean/QuantitativeArithmeticEntireQuotientV1.lean"
+  },
+  {
+   "name": "QuantitativeArithmeticExceptionalMomentsV1",
+   "file": "lean/QuantitativeArithmeticExceptionalMomentsV1.lean"
+  },
+  {
+   "name": "QuantitativeArithmeticExceptionalOldSpaceV1",
+   "file": "lean/QuantitativeArithmeticExceptionalOldSpaceV1.lean"
+  },
+  {
+   "name": "QuantitativeArithmeticExponentEncodingV1",
+   "file": "lean/QuantitativeArithmeticExponentEncodingV1.lean"
+  },
+  {
+   "name": "QuantitativeArithmeticExponentialDivisionLocalV1",
+   "file": "lean/QuantitativeArithmeticExponentialDivisionLocalV1.lean"
+  },
+  {
+   "name": "QuantitativeArithmeticExponentialDivisionSmallV1",
+   "file": "lean/QuantitativeArithmeticExponentialDivisionSmallV1.lean"
+  },
+  {
+   "name": "QuantitativeArithmeticExponentialDivisionTheoryV4",
+   "file": "lean/QuantitativeArithmeticExponentialDivisionTheoryV4.lean"
+  },
+  {
+   "name": "QuantitativeArithmeticExponentialDominanceV1",
+   "file": "lean/QuantitativeArithmeticExponentialDominanceV1.lean"
+  },
+  {
+   "name": "QuantitativeArithmeticExponentialEnvelopeV1",
+   "file": "lean/QuantitativeArithmeticExponentialEnvelopeV1.lean"
+  },
+  {
+   "name": "QuantitativeArithmeticFin210FastCoordinatesV1",
+   "file": "lean/QuantitativeArithmeticFin210FastCoordinatesV1.lean"
+  },
+  {
+   "name": "QuantitativeArithmeticFiniteAbelNegativeTheoryV4",
+   "file": "lean/QuantitativeArithmeticFiniteAbelNegativeTheoryV4.lean"
+  },
+  {
+   "name": "QuantitativeArithmeticFiniteAnalyticWitnessV1",
+   "file": "lean/QuantitativeArithmeticFiniteAnalyticWitnessV1.lean"
+  },
+  {
+   "name": "QuantitativeArithmeticFiniteBlockCheckV1",
+   "file": "lean/QuantitativeArithmeticFiniteBlockCheckV1.lean"
+  },
+  {
+   "name": "QuantitativeArithmeticFiniteRangeCertificatesV1",
+   "file": "lean/QuantitativeArithmeticFiniteRangeCertificatesV1.lean"
+  },
+  {
+   "name": "QuantitativeArithmeticFiniteRangeCommandsV4",
+   "file": "lean/QuantitativeArithmeticFiniteRangeCommandsV4.lean"
+  },
+  {
+   "name": "QuantitativeArithmeticFiniteRowCombinationTheoryV4",
+   "file": "lean/QuantitativeArithmeticFiniteRowCombinationTheoryV4.lean"
+  },
+  {
+   "name": "QuantitativeArithmeticFiniteRowEvaluationTheoryV4",
+   "file": "lean/QuantitativeArithmeticFiniteRowEvaluationTheoryV4.lean"
+  },
+  {
+   "name": "QuantitativeArithmeticFourNinePhysicalPowersTheoryV4",
+   "file": "lean/QuantitativeArithmeticFourNinePhysicalPowersTheoryV4.lean"
+  },
+  {
+   "name": "QuantitativeArithmeticGammaThreeOrbitLiftV1",
+   "file": "lean/QuantitativeArithmeticGammaThreeOrbitLiftV1.lean"
+  },
+  {
+   "name": "QuantitativeArithmeticGaussianStripTheoryV4",
+   "file": "lean/QuantitativeArithmeticGaussianStripTheoryV4.lean"
+  },
+  {
+   "name": "QuantitativeArithmeticGeneralDimensionCoefficientV1",
+   "file": "lean/QuantitativeArithmeticGeneralDimensionCoefficientV1.lean"
+  },
+  {
+   "name": "QuantitativeArithmeticGeneralDimensionV1",
+   "file": "lean/QuantitativeArithmeticGeneralDimensionV1.lean"
+  },
+  {
+   "name": "QuantitativeArithmeticGeneralNewCoefficientV1",
+   "file": "lean/QuantitativeArithmeticGeneralNewCoefficientV1.lean"
+  },
+  {
+   "name": "QuantitativeArithmeticGoodLabelWindowsV1",
+   "file": "lean/QuantitativeArithmeticGoodLabelWindowsV1.lean"
+  },
+  {
+   "name": "QuantitativeArithmeticGridCertificateConstructorsV1",
+   "file": "lean/QuantitativeArithmeticGridCertificateConstructorsV1.lean"
+  },
+  {
+   "name": "QuantitativeArithmeticHeckeCuspIndicatorV1",
+   "file": "lean/QuantitativeArithmeticHeckeCuspIndicatorV1.lean"
+  },
+  {
+   "name": "QuantitativeArithmeticInitialTaylorDivisorEliminationV1",
+   "file": "lean/QuantitativeArithmeticInitialTaylorDivisorEliminationV1.lean"
+  },
+  {
+   "name": "QuantitativeArithmeticInitialTaylorEliminationV1",
+   "file": "lean/QuantitativeArithmeticInitialTaylorEliminationV1.lean"
+  },
+  {
+   "name": "QuantitativeArithmeticInitialTaylorGermTheoryV4",
+   "file": "lean/QuantitativeArithmeticInitialTaylorGermTheoryV4.lean"
+  },
+  {
+   "name": "QuantitativeArithmeticIntegerSevenLaurentRowsTheoryV4",
+   "file": "lean/QuantitativeArithmeticIntegerSevenLaurentRowsTheoryV4.lean"
+  },
+  {
+   "name": "QuantitativeArithmeticIntervalCertificateV1",
+   "file": "lean/QuantitativeArithmeticIntervalCertificateV1.lean"
+  },
+  {
+   "name": "QuantitativeArithmeticInverseMellinBoundV1",
+   "file": "lean/QuantitativeArithmeticInverseMellinBoundV1.lean"
+  },
+  {
+   "name": "QuantitativeArithmeticIsometricSourceV1",
+   "file": "lean/QuantitativeArithmeticIsometricSourceV1.lean"
+  },
+  {
+   "name": "QuantitativeArithmeticKernelRangeCommandsV4",
+   "file": "lean/QuantitativeArithmeticKernelRangeCommandsV4.lean"
+  },
+  {
+   "name": "QuantitativeArithmeticLaurentCertificateCommandsV1",
+   "file": "lean/QuantitativeArithmeticLaurentCertificateCommandsV1.lean"
+  },
+  {
+   "name": "QuantitativeArithmeticLaurentCertificateCompactCommandsV1",
+   "file": "lean/QuantitativeArithmeticLaurentCertificateCompactCommandsV1.lean"
+  },
+  {
+   "name": "QuantitativeArithmeticLaurentNormalizeV1",
+   "file": "lean/QuantitativeArithmeticLaurentNormalizeV1.lean"
+  },
+  {
+   "name": "QuantitativeArithmeticLaurentProgramComputeV4",
+   "file": "lean/QuantitativeArithmeticLaurentProgramComputeV4.lean"
+  },
+  {
+   "name": "QuantitativeArithmeticLaurentProgramDataV4",
+   "file": "lean/QuantitativeArithmeticLaurentProgramDataV4.lean"
+  },
+  {
+   "name": "QuantitativeArithmeticLaurentProgramTheoryV4",
+   "file": "lean/QuantitativeArithmeticLaurentProgramTheoryV4.lean"
+  },
+  {
+   "name": "QuantitativeArithmeticLaurentRegisterDataV5",
+   "file": "lean/QuantitativeArithmeticLaurentRegisterDataV5.lean"
+  },
+  {
+   "name": "QuantitativeArithmeticLaurentRegisterProgramTheoryV4",
+   "file": "lean/QuantitativeArithmeticLaurentRegisterProgramTheoryV4.lean"
+  },
+  {
+   "name": "QuantitativeArithmeticLevelNineteenConverseV4",
+   "file": "lean/QuantitativeArithmeticLevelNineteenConverseV4.lean"
+  },
+  {
+   "name": "QuantitativeArithmeticLevelThirtyFiveChiThreeRegularityV1",
+   "file": "lean/QuantitativeArithmeticLevelThirtyFiveChiThreeRegularityV1.lean"
+  }
+ ],
+ "root_closure_files": 5000,
+ "root_closure_sorry": [],
+ "root_closure_axioms": 0,
  "unclosed_files": 0,
  "headline_rule": null,
  "headline_count": 0,

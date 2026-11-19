@@ -5,7 +5,9 @@ lean: Balaban.logPartition_multiscale, Balaban.lowTemperature_correlations
 statement: formalized
 ---
 
-# Balaban's low-temperature renormalization group for O(N) spin models, in Lean 4
+# balaban-lean
+
+*Balaban's low-temperature renormalization group for O(N) spin models, in Lean 4*
 
 [scottnarmstrong/balaban-lean](https://github.com/scottnarmstrong/balaban-lean) at commit [493e9eb9](https://github.com/scottnarmstrong/balaban-lean/tree/493e9eb97292ebf6070c1c217a09bcf1adc23857), 2026-10-22.
 

@@ -47,6 +47,26 @@
   "MainProjects/Algebraic-Jacobian-Challenge/AlgebraicJacobian/Picard/QuotFunctorDef.lean"
  ],
  "closure_axioms": 0,
+ "root_modules": [
+  {
+   "name": "AlgebraicJacobian",
+   "file": "MainProjects/Algebraic-Jacobian-Challenge/AlgebraicJacobian.lean"
+  }
+ ],
+ "root_closure_files": 394,
+ "root_closure_sorry": [
+  "MainProjects/Algebraic-Jacobian-Challenge/AlgebraicJacobian/Albanese/AlbaneseUP.lean",
+  "MainProjects/Algebraic-Jacobian-Challenge/AlgebraicJacobian/Cohomology/CechHigherDirectImageUnconditional.lean",
+  "MainProjects/Algebraic-Jacobian-Challenge/AlgebraicJacobian/Jacobian.lean",
+  "MainProjects/Algebraic-Jacobian-Challenge/AlgebraicJacobian/Picard/FGAPicRepresentability.lean",
+  "MainProjects/Algebraic-Jacobian-Challenge/AlgebraicJacobian/Picard/IdentityComponent.lean",
+  "MainProjects/Algebraic-Jacobian-Challenge/AlgebraicJacobian/Picard/Pic0AbelianVariety.lean",
+  "MainProjects/Algebraic-Jacobian-Challenge/AlgebraicJacobian/Picard/Pic0Et.lean",
+  "MainProjects/Algebraic-Jacobian-Challenge/AlgebraicJacobian/Picard/QuotFunctorDef.lean",
+  "MainProjects/Algebraic-Jacobian-Challenge/AlgebraicJacobian/Picard/QuotRepresentability.lean",
+  "MainProjects/Algebraic-Jacobian-Challenge/AlgebraicJacobian/Picard/SerreFiniteness.lean"
+ ],
+ "root_closure_axioms": 0,
  "unclosed_files": 0,
  "headline_rule": "readme",
  "headline_count": 13,

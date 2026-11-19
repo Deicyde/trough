@@ -36,6 +36,19 @@
  "closure_files": 3,
  "closure_sorry": [],
  "closure_axioms": 0,
+ "root_modules": [
+  {
+   "name": "LeanFlagAlgebras",
+   "file": "LeanFlagAlgebras.lean"
+  },
+  {
+   "name": "LeanFlagAlgebras.MetaTheory",
+   "file": "LeanFlagAlgebras/MetaTheory.lean"
+  }
+ ],
+ "root_closure_files": 288,
+ "root_closure_sorry": [],
+ "root_closure_axioms": 2,
  "unclosed_files": 0,
  "headline_rule": "blueprint",
  "headline_count": 24,

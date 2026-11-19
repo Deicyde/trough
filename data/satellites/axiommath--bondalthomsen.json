@@ -46,6 +46,44 @@
  "closure_files": 0,
  "closure_sorry": [],
  "closure_axioms": 0,
+ "root_modules": [
+  {
+   "name": "BondalThomsen",
+   "file": "BondalThomsen.lean"
+  },
+  {
+   "name": "Challenge",
+   "file": "Challenge.lean"
+  },
+  {
+   "name": "Solution",
+   "file": "Solution.lean"
+  }
+ ],
+ "root_closure_files": 674,
+ "root_closure_sorry": [
+  "Challenge/Basic.lean",
+  "Challenge/Defs/Collection/BondalThomsenClasses.lean",
+  "Challenge/Defs/Fan/Basic.lean",
+  "Challenge/Defs/Fan/CompleteFanGlobalFunctions.lean",
+  "Challenge/Defs/Fan/Completeness.lean",
+  "Challenge/Defs/Ports/MiyaokaMori/AmpleLineBundle.lean",
+  "Challenge/Defs/Ports/MiyaokaMori/LineBundleNonvanishingLocus.lean",
+  "Challenge/Defs/Ports/MiyaokaMori/ModulesTensorPower.lean",
+  "Challenge/Defs/Ports/TauCeti/Algebra/Category/ModuleCat/Sheaf/Invertible/Basic.lean",
+  "Challenge/Defs/Ports/TauCeti/Algebra/Category/ModuleCat/Sheaf/Invertible/TensorProduct/Closure.lean",
+  "Challenge/Defs/Ports/TauCeti/Algebra/Category/ModuleCat/Sheaf/TensorProduct/Associator.lean",
+  "Challenge/Defs/Ports/TauCeti/Algebra/Module/Primitive.lean",
+  "Challenge/Defs/Ports/TauCeti/AlgebraicGeometry/CartierDivisor/Basic.lean",
+  "Challenge/Defs/Ports/TauCeti/AlgebraicGeometry/CartierDivisor/Picard.lean",
+  "Challenge/Defs/Ports/TauCeti/AlgebraicGeometry/CartierDivisor/Representation.lean",
+  "Challenge/Defs/Ports/TauCeti/AlgebraicGeometry/CartierDivisor/Sheaf.lean",
+  "Challenge/Defs/Ports/TauCeti/AlgebraicGeometry/LineBundle/Basic.lean",
+  "Challenge/Defs/Ports/TauCeti/AlgebraicGeometry/LineBundle/Class.lean",
+  "Challenge/Defs/Ports/TauCeti/AlgebraicGeometry/LineBundle/TensorProduct.lean",
+  "Challenge/Defs/Ports/TauCeti/AlgebraicGeometry/Modules/GlobalSections.lean"
+ ],
+ "root_closure_axioms": 0,
  "unclosed_files": 0,
  "headline_rule": null,
  "headline_count": 0,

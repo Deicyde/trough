@@ -5,7 +5,9 @@ lean: GQ2.main_surjection_count_R, GQ2.admissibleCountR_eq_admissibleCount, GQ2.
 statement: formalized
 ---
 
-# gq2-lean — A presentation of $G{\\mathbf{Q}2}$ in Lean
+# gq2-lean
+
+*gq2-lean — A presentation of $G{\mathbf{Q}2}$ in Lean*
 
 [roed-math/gq2-lean](https://github.com/roed-math/gq2-lean) at commit [3c7b1aba](https://github.com/roed-math/gq2-lean/tree/3c7b1abaf04ec8424decc2b1eb1b91bfe0ce5a33), 2026-08-11.
 

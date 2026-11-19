@@ -38,6 +38,15 @@
  "closure_files": 31,
  "closure_sorry": [],
  "closure_axioms": 0,
+ "root_modules": [
+  {
+   "name": "PhD",
+   "file": "PhD.lean"
+  }
+ ],
+ "root_closure_files": 54,
+ "root_closure_sorry": [],
+ "root_closure_axioms": 0,
  "unclosed_files": 1,
  "headline_rule": "blueprint",
  "headline_count": 57,

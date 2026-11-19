@@ -57,6 +57,28 @@
  "closure_files": 0,
  "closure_sorry": [],
  "closure_axioms": 0,
+ "root_modules": [
+  {
+   "name": "Curve25519Dalek",
+   "file": "Curve25519Dalek.lean"
+  },
+  {
+   "name": "Tests",
+   "file": "Tests.lean"
+  },
+  {
+   "name": "Utils",
+   "file": "Utils.lean"
+  }
+ ],
+ "root_closure_files": 244,
+ "root_closure_sorry": [
+  "Curve25519Dalek/Math/Edwards/Curve.lean",
+  "Curve25519Dalek/Math/Ristretto/Representation.lean",
+  "Curve25519Dalek/Specs/Montgomery/MontgomeryPoint/Mul.lean",
+  "Utils/Lib/Analysis.lean"
+ ],
+ "root_closure_axioms": 18,
  "unclosed_files": 0,
  "headline_rule": null,
  "headline_count": 0,

@@ -78,6 +78,65 @@
  "closure_files": 149,
  "closure_sorry": [],
  "closure_axioms": 0,
+ "root_modules": [
+  {
+   "name": "ForShor",
+   "file": "ForShor.lean"
+  },
+  {
+   "name": "ForShor.Emit.Tests",
+   "file": "ForShor/Emit/Tests.lean"
+  },
+  {
+   "name": "ForShor.ShorVerification.Implementation.QubitCount.Proofs.PolicyNumeralsBoardExact",
+   "file": "ForShor/ShorVerification/Implementation/QubitCount/Proofs/PolicyNumeralsBoardExact.lean"
+  },
+  {
+   "name": "ForShor.ShorVerification.Implementation.QubitCount.Proofs.PolicyNumeralsBoardExactHeavy",
+   "file": "ForShor/ShorVerification/Implementation/QubitCount/Proofs/PolicyNumeralsBoardExactHeavy.lean"
+  },
+  {
+   "name": "ForShor.ShorVerification.Implementation.QubitCount.Proofs.PolicyNumeralsExact",
+   "file": "ForShor/ShorVerification/Implementation/QubitCount/Proofs/PolicyNumeralsExact.lean"
+  },
+  {
+   "name": "ForShor.ShorVerification.Implementation.Reference.Balanced.Main",
+   "file": "ForShor/ShorVerification/Implementation/Reference/Balanced/Main.lean"
+  },
+  {
+   "name": "ForShor.ShorVerification.Implementation.Reference.Balanced.Proofs.Checks",
+   "file": "ForShor/ShorVerification/Implementation/Reference/Balanced/Proofs/Checks.lean"
+  },
+  {
+   "name": "ForShor.ShorVerification.Implementation.Reference.Balanced.Proofs.Fault",
+   "file": "ForShor/ShorVerification/Implementation/Reference/Balanced/Proofs/Fault.lean"
+  },
+  {
+   "name": "ForShor.ShorVerification.Submission.Check",
+   "file": "ForShor/ShorVerification/Submission/Check.lean"
+  },
+  {
+   "name": "ForShor.ShorVerification.Submission.ExactWidthTests",
+   "file": "ForShor/ShorVerification/Submission/ExactWidthTests.lean"
+  },
+  {
+   "name": "ForShor.ShorVerification.Submission.PTPPolicyCheck",
+   "file": "ForShor/ShorVerification/Submission/PTPPolicyCheck.lean"
+  },
+  {
+   "name": "ForShor.ShorVerification.Submission.PolicyCheck",
+   "file": "ForShor/ShorVerification/Submission/PolicyCheck.lean"
+  },
+  {
+   "name": "ForShor.ShorVerification.Submission.PolicyTests",
+   "file": "ForShor/ShorVerification/Submission/PolicyTests.lean"
+  }
+ ],
+ "root_closure_files": 329,
+ "root_closure_sorry": [
+  "ForShor/ShorVerification/Submission/Audit.lean"
+ ],
+ "root_closure_axioms": 1,
  "unclosed_files": 0,
  "headline_rule": "readme",
  "headline_count": 11,

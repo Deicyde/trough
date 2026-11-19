@@ -42,6 +42,28 @@
  "closure_files": 0,
  "closure_sorry": [],
  "closure_axioms": 0,
+ "root_modules": [
+  {
+   "name": "Aeneas",
+   "file": "backends/lean/Aeneas.lean"
+  },
+  {
+   "name": "AeneasMeta",
+   "file": "backends/lean/AeneasMeta.lean"
+  }
+ ],
+ "root_closure_files": 272,
+ "root_closure_sorry": [
+  "backends/lean/Aeneas/Data/Range/DivRange/Basic.lean",
+  "backends/lean/Aeneas/Data/Range/DivRange/Lemmas.lean",
+  "backends/lean/Aeneas/Data/Range/MulRange/Basic.lean",
+  "backends/lean/Aeneas/Data/Range/MulRange/Lemmas.lean",
+  "backends/lean/Aeneas/Data/Range/SRRange/Basic.lean",
+  "backends/lean/Aeneas/Tactic/Step/StepStar.lean",
+  "backends/lean/Aeneas/Tactic/Step/Tests/IntroOutputsRecursion.lean",
+  "backends/lean/AeneasMeta/Utils.lean"
+ ],
+ "root_closure_axioms": 7,
  "unclosed_files": 2,
  "headline_rule": null,
  "headline_count": 0,

@@ -148,6 +148,84 @@
  "closure_files": 156,
  "closure_sorry": [],
  "closure_axioms": 0,
+ "root_modules": [
+  {
+   "name": "Challenge",
+   "file": "Challenge.lean"
+  },
+  {
+   "name": "ChallengeAdamczewskiBugeaud2007",
+   "file": "ChallengeAdamczewskiBugeaud2007.lean"
+  },
+  {
+   "name": "ChallengeCorvajaZannier2004",
+   "file": "ChallengeCorvajaZannier2004.lean"
+  },
+  {
+   "name": "ChallengeEvertse1984",
+   "file": "ChallengeEvertse1984.lean"
+  },
+  {
+   "name": "ChallengeFlat",
+   "file": "ChallengeFlat.lean"
+  },
+  {
+   "name": "ChallengeQuantitativeSubspace",
+   "file": "ChallengeQuantitativeSubspace.lean"
+  },
+  {
+   "name": "ChallengeStephan2026a",
+   "file": "ChallengeStephan2026a.lean"
+  },
+  {
+   "name": "Solution",
+   "file": "Solution.lean"
+  },
+  {
+   "name": "SolutionAdamczewskiBugeaud2007",
+   "file": "SolutionAdamczewskiBugeaud2007.lean"
+  },
+  {
+   "name": "SolutionCorvajaZannier2004",
+   "file": "SolutionCorvajaZannier2004.lean"
+  },
+  {
+   "name": "SolutionEvertse1984",
+   "file": "SolutionEvertse1984.lean"
+  },
+  {
+   "name": "SolutionQuantitativeSubspace",
+   "file": "SolutionQuantitativeSubspace.lean"
+  },
+  {
+   "name": "SolutionStephan2026a",
+   "file": "SolutionStephan2026a.lean"
+  }
+ ],
+ "root_closure_files": 422,
+ "root_closure_sorry": [
+  "Challenge/ArithmeticHeights/AuxiliaryPolynomial.lean",
+  "Challenge/ArithmeticHeights/BombieriVaaler.lean",
+  "Challenge/ArithmeticHeights/BombieriVaalerEntries.lean",
+  "Challenge/ArithmeticHeights/BombieriVaalerRelative.lean",
+  "Challenge/ArithmeticHeights/Siegel.lean",
+  "Challenge/DiophantineApproximation/MovingTargets.lean",
+  "Challenge/DiophantineApproximation/ParametricSubspace.lean",
+  "Challenge/DiophantineApproximation/Ridout.lean",
+  "Challenge/DiophantineApproximation/RothInfinity.lean",
+  "Challenge/DiophantineApproximation/RothProjective.lean",
+  "Challenge/DiophantineApproximation/RothRational.lean",
+  "Challenge/DiophantineApproximation/RothSubspaceCount.lean",
+  "Challenge/DiophantineApproximation/RothTheorem.lean",
+  "Challenge/DiophantineApproximation/SubspaceAffine.lean",
+  "Challenge/DiophantineApproximation/SubspaceAlgebraic.lean",
+  "Challenge/DiophantineApproximation/SubspaceConsistency.lean",
+  "Challenge/DiophantineApproximation/SubspaceGeneralPosition.lean",
+  "Challenge/DiophantineApproximation/SubspaceIntervals.lean",
+  "Challenge/DiophantineApproximation/SubspaceSmall.lean",
+  "Challenge/DiophantineApproximation/SubspaceSystem.lean"
+ ],
+ "root_closure_axioms": 0,
  "unclosed_files": 0,
  "headline_rule": "main",
  "headline_count": 7,

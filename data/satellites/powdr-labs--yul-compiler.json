@@ -69,6 +69,41 @@
  "closure_files": 130,
  "closure_sorry": [],
  "closure_axioms": 0,
+ "root_modules": [
+  {
+   "name": "YulCApi",
+   "file": "YulCApi.lean"
+  },
+  {
+   "name": "YulEvmCompiler",
+   "file": "YulEvmCompiler.lean"
+  },
+  {
+   "name": "YulEvmCompilerTests",
+   "file": "YulEvmCompilerTests.lean"
+  },
+  {
+   "name": "YulIR",
+   "file": "YulIR.lean"
+  },
+  {
+   "name": "YulIR.Check",
+   "file": "YulIR/Check.lean"
+  },
+  {
+   "name": "YulIR.Corpus",
+   "file": "YulIR/Corpus.lean"
+  },
+  {
+   "name": "YulParser",
+   "file": "YulParser.lean"
+  }
+ ],
+ "root_closure_files": 226,
+ "root_closure_sorry": [
+  "YulIR/Corpus.lean"
+ ],
+ "root_closure_axioms": 0,
  "unclosed_files": 0,
  "headline_rule": "readme",
  "headline_count": 21,

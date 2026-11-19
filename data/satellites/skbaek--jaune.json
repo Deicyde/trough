@@ -68,6 +68,77 @@
  "closure_files": 29,
  "closure_sorry": [],
  "closure_axioms": 0,
+ "root_modules": [
+  {
+   "name": "AxiomAudit",
+   "file": "scripts/AxiomAudit.lean"
+  },
+  {
+   "name": "ConsensusUnionAxioms",
+   "file": "scripts/ConsensusUnionAxioms.lean"
+  },
+  {
+   "name": "Examples",
+   "file": "Examples.lean"
+  },
+  {
+   "name": "ExecutionAxioms",
+   "file": "scripts/ExecutionAxioms.lean"
+  },
+  {
+   "name": "Jaune",
+   "file": "Jaune.lean"
+  },
+  {
+   "name": "JauneChecks",
+   "file": "JauneChecks.lean"
+  },
+  {
+   "name": "JauneConsensus",
+   "file": "JauneConsensus.lean"
+  },
+  {
+   "name": "JauneUnionAxioms",
+   "file": "scripts/JauneUnionAxioms.lean"
+  },
+  {
+   "name": "NamingReferencesCore",
+   "file": "scripts/NamingReferencesCore.lean"
+  },
+  {
+   "name": "Pilot",
+   "file": "scripts/tests/naming/Pilot.lean"
+  },
+  {
+   "name": "RealSharedField",
+   "file": "scripts/tests/naming/RealSharedField.lean"
+  },
+  {
+   "name": "UnionAxiomsControls",
+   "file": "scripts/UnionAxiomsControls.lean"
+  },
+  {
+   "name": "UnionAxiomsFixture.Bad",
+   "file": "scripts/UnionAxiomsFixture/Bad.lean"
+  },
+  {
+   "name": "UnionAxiomsFixture.Dep",
+   "file": "scripts/UnionAxiomsFixture/Dep.lean"
+  },
+  {
+   "name": "UnionAxiomsFixture.Good",
+   "file": "scripts/UnionAxiomsFixture/Good.lean"
+  },
+  {
+   "name": "UnionAxiomsFixture.ViaDep",
+   "file": "scripts/UnionAxiomsFixture/ViaDep.lean"
+  }
+ ],
+ "root_closure_files": 243,
+ "root_closure_sorry": [
+  "JauneConsensus/Harness/Yaml.lean"
+ ],
+ "root_closure_axioms": 3,
  "unclosed_files": 0,
  "headline_rule": "readme",
  "headline_count": 3,

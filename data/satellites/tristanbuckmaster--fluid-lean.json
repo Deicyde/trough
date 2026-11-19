@@ -52,6 +52,33 @@
  "closure_files": 0,
  "closure_sorry": [],
  "closure_axioms": 0,
+ "root_modules": [
+  {
+   "name": "AffineCore",
+   "file": "affinecore/AffineCore.lean"
+  },
+  {
+   "name": "ChainPlanar",
+   "file": "affinecore/vendor/ChainPlanar/ChainPlanar.lean"
+  },
+  {
+   "name": "Challenge",
+   "file": "affinecore/Challenge.lean"
+  },
+  {
+   "name": "Cm24",
+   "file": "affinecore/vendor/ChainPlanar/vendor/cm24-r2/Cm24.lean"
+  },
+  {
+   "name": "Solution",
+   "file": "affinecore/Solution.lean"
+  }
+ ],
+ "root_closure_files": 1180,
+ "root_closure_sorry": [
+  "affinecore/Challenge.lean"
+ ],
+ "root_closure_axioms": 0,
  "unclosed_files": 0,
  "headline_rule": null,
  "headline_count": 0,

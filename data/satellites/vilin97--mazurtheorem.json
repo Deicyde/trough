@@ -52,6 +52,30 @@
  "closure_files": 0,
  "closure_sorry": [],
  "closure_axioms": 0,
+ "root_modules": [
+  {
+   "name": "Challenge",
+   "file": "Challenge.lean"
+  },
+  {
+   "name": "EllipticCurves",
+   "file": "EllipticCurves.lean"
+  },
+  {
+   "name": "MazurTorsion",
+   "file": "MazurTorsion.lean"
+  }
+ ],
+ "root_closure_files": 2057,
+ "root_closure_sorry": [
+  "Challenge/CyclotomicClassFieldTheory.lean",
+  "Challenge/DivisorLineBundle.lean",
+  "Challenge/OrderThirtyFive.lean",
+  "Challenge/OrderTwentyFive.lean",
+  "Challenge/XOneElevenCoset.lean",
+  "Challenge/XOneThirteenNoncusp.lean"
+ ],
+ "root_closure_axioms": 0,
  "unclosed_files": 0,
  "headline_rule": null,
  "headline_count": 0,

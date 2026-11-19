@@ -100,6 +100,23 @@
  "closure_files": 0,
  "closure_sorry": [],
  "closure_axioms": 0,
+ "root_modules": [
+  {
+   "name": "VerifiedGarbage.Impl.AArch64Instrs",
+   "file": "lean/VerifiedGarbage/Impl/AArch64Instrs.lean"
+  },
+  {
+   "name": "VerifiedGarbage.Impl.NatPairs",
+   "file": "lean/VerifiedGarbage/Impl/NatPairs.lean"
+  },
+  {
+   "name": "VerifiedGarbage.Impl.Scrub.X86_64",
+   "file": "lean/VerifiedGarbage/Impl/Scrub/X86_64.lean"
+  }
+ ],
+ "root_closure_files": 3,
+ "root_closure_sorry": [],
+ "root_closure_axioms": 0,
  "unclosed_files": 0,
  "headline_rule": null,
  "headline_count": 0,

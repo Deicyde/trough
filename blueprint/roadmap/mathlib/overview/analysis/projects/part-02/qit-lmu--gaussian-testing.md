@@ -6,7 +6,9 @@ statement: formalized
 proof: formalized
 ---
 
-# Testing bosonic and fermionic Gaussian states with a constant number of copies
+# gaussian-testing
+
+*Testing bosonic and fermionic Gaussian states with a constant number of copies*
 
 [qit-lmu/gaussian-testing](https://github.com/qit-lmu/gaussian-testing) at commit [9133f49b](https://github.com/qit-lmu/gaussian-testing/tree/9133f49bfeca4b8f1da6ed1b1f94041b0b148c38), 2026-11-08.
 

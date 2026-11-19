@@ -48,6 +48,443 @@
  "closure_files": 0,
  "closure_sorry": [],
  "closure_axioms": 0,
+ "root_modules": [
+  {
+   "name": "AbsAssumedTests",
+   "file": "examples/lean/AbsAssumedTests.lean"
+  },
+  {
+   "name": "AccountGuarantees",
+   "file": "examples/lean/AccountGuarantees.lean"
+  },
+  {
+   "name": "AsmTimeout",
+   "file": "examples/lean/AsmTimeout.lean"
+  },
+  {
+   "name": "AxiomAudit",
+   "file": "examples/lean/AxiomAudit.lean"
+  },
+  {
+   "name": "ByteIncrement",
+   "file": "examples/lean/ByteIncrement.lean"
+  },
+  {
+   "name": "CompilerRtF64ToI64",
+   "file": "examples/lean/CompilerRtF64ToI64.lean"
+  },
+  {
+   "name": "CompilerRtFpCmp",
+   "file": "examples/lean/CompilerRtFpCmp.lean"
+  },
+  {
+   "name": "CpiEnvelopeDemo",
+   "file": "examples/lean/CpiEnvelopeDemo.lean"
+  },
+  {
+   "name": "CpiRunnerSmoke",
+   "file": "examples/lean/CpiRunnerSmoke.lean"
+  },
+  {
+   "name": "CpiWriterEndToEnd",
+   "file": "examples/lean/CpiWriterEndToEnd.lean"
+  },
+  {
+   "name": "DischargePoC",
+   "file": "examples/lean/DischargePoC.lean"
+  },
+  {
+   "name": "Generated.AbortCallerLifted",
+   "file": "examples/lean/Generated/AbortCallerLifted.lean"
+  },
+  {
+   "name": "Generated.ByteIncrementLifted",
+   "file": "examples/lean/Generated/ByteIncrementLifted.lean"
+  },
+  {
+   "name": "Generated.CounterDescriptorRefinement",
+   "file": "examples/lean/Generated/CounterDescriptorRefinement.lean"
+  },
+  {
+   "name": "Generated.CounterDescriptorTracedLifted",
+   "file": "examples/lean/Generated/CounterDescriptorTracedLifted.lean"
+  },
+  {
+   "name": "Generated.CounterRefinement",
+   "file": "examples/lean/Generated/CounterRefinement.lean"
+  },
+  {
+   "name": "Generated.CounterTracedLifted",
+   "file": "examples/lean/Generated/CounterTracedLifted.lean"
+  },
+  {
+   "name": "Generated.CpiEnvelopeCallerLifted",
+   "file": "examples/lean/Generated/CpiEnvelopeCallerLifted.lean"
+  },
+  {
+   "name": "Generated.HalfwordStoreLifted",
+   "file": "examples/lean/Generated/HalfwordStoreLifted.lean"
+  },
+  {
+   "name": "Generated.HeapAllocLifted",
+   "file": "examples/lean/Generated/HeapAllocLifted.lean"
+  },
+  {
+   "name": "Generated.LoggerLifted",
+   "file": "examples/lean/Generated/LoggerLifted.lean"
+  },
+  {
+   "name": "Generated.MemcmpLifted",
+   "file": "examples/lean/Generated/MemcmpLifted.lean"
+  },
+  {
+   "name": "Generated.MemcpyLifted",
+   "file": "examples/lean/Generated/MemcpyLifted.lean"
+  },
+  {
+   "name": "Generated.MemmoveLifted",
+   "file": "examples/lean/Generated/MemmoveLifted.lean"
+  },
+  {
+   "name": "Generated.OobClockSysvarLifted",
+   "file": "examples/lean/Generated/OobClockSysvarLifted.lean"
+  },
+  {
+   "name": "Generated.OobCreatePdaLifted",
+   "file": "examples/lean/Generated/OobCreatePdaLifted.lean"
+  },
+  {
+   "name": "Generated.OobRentSysvarLifted",
+   "file": "examples/lean/Generated/OobRentSysvarLifted.lean"
+  },
+  {
+   "name": "Generated.OobSecp256k1Lifted",
+   "file": "examples/lean/Generated/OobSecp256k1Lifted.lean"
+  },
+  {
+   "name": "Generated.OobSetReturnDataLifted",
+   "file": "examples/lean/Generated/OobSetReturnDataLifted.lean"
+  },
+  {
+   "name": "Generated.OobSha256Lifted",
+   "file": "examples/lean/Generated/OobSha256Lifted.lean"
+  },
+  {
+   "name": "Generated.PdaCreateLifted",
+   "file": "examples/lean/Generated/PdaCreateLifted.lean"
+  },
+  {
+   "name": "Generated.SbpfV3AccountPath",
+   "file": "examples/lean/Generated/SbpfV3AccountPath.lean"
+  },
+  {
+   "name": "Generated.SbpfV3StaticPath",
+   "file": "examples/lean/Generated/SbpfV3StaticPath.lean"
+  },
+  {
+   "name": "Generated.Sbpfv3AccountPathLifted",
+   "file": "examples/lean/Generated/Sbpfv3AccountPathLifted.lean"
+  },
+  {
+   "name": "Generated.Sbpfv3CallxPathLifted",
+   "file": "examples/lean/Generated/Sbpfv3CallxPathLifted.lean"
+  },
+  {
+   "name": "Generated.Sbpfv3CompiledAccountLifted",
+   "file": "examples/lean/Generated/Sbpfv3CompiledAccountLifted.lean"
+  },
+  {
+   "name": "Generated.Sbpfv3CpiCallerLifted",
+   "file": "examples/lean/Generated/Sbpfv3CpiCallerLifted.lean"
+  },
+  {
+   "name": "Generated.Sbpfv3CpiCallerLiftedRollback",
+   "file": "examples/lean/Generated/Sbpfv3CpiCallerLiftedRollback.lean"
+  },
+  {
+   "name": "Generated.Sbpfv3CpiCallerLiftedSuccess",
+   "file": "examples/lean/Generated/Sbpfv3CpiCallerLiftedSuccess.lean"
+  },
+  {
+   "name": "Generated.Sbpfv3CpiWriterCalleeLifted",
+   "file": "examples/lean/Generated/Sbpfv3CpiWriterCalleeLifted.lean"
+  },
+  {
+   "name": "Generated.Sbpfv3CpiWriterLifted",
+   "file": "examples/lean/Generated/Sbpfv3CpiWriterLifted.lean"
+  },
+  {
+   "name": "Generated.Sbpfv3CpiWriterLiftedRollback",
+   "file": "examples/lean/Generated/Sbpfv3CpiWriterLiftedRollback.lean"
+  },
+  {
+   "name": "Generated.Sbpfv3CpiWriterLiftedSuccess",
+   "file": "examples/lean/Generated/Sbpfv3CpiWriterLiftedSuccess.lean"
+  },
+  {
+   "name": "Generated.Sbpfv3IsaMatrixLifted",
+   "file": "examples/lean/Generated/Sbpfv3IsaMatrixLifted.lean"
+  },
+  {
+   "name": "Generated.Sbpfv3SharedSkip",
+   "file": "examples/lean/Generated/Sbpfv3SharedSkip.lean"
+  },
+  {
+   "name": "Generated.Sbpfv3SharedText",
+   "file": "examples/lean/Generated/Sbpfv3SharedText.lean"
+  },
+  {
+   "name": "Generated.Sbpfv3SharedUpdate",
+   "file": "examples/lean/Generated/Sbpfv3SharedUpdate.lean"
+  },
+  {
+   "name": "Generated.SetReturnDataLifted",
+   "file": "examples/lean/Generated/SetReturnDataLifted.lean"
+  },
+  {
+   "name": "Generated.Sha256CallerLifted",
+   "file": "examples/lean/Generated/Sha256CallerLifted.lean"
+  },
+  {
+   "name": "Generated.VaultAdd5Refinement",
+   "file": "examples/lean/Generated/VaultAdd5Refinement.lean"
+  },
+  {
+   "name": "Generated.VaultAdd5TracedLifted",
+   "file": "examples/lean/Generated/VaultAdd5TracedLifted.lean"
+  },
+  {
+   "name": "Generated.VaultDepositRefinement",
+   "file": "examples/lean/Generated/VaultDepositRefinement.lean"
+  },
+  {
+   "name": "Generated.VaultDepositTracedLifted",
+   "file": "examples/lean/Generated/VaultDepositTracedLifted.lean"
+  },
+  {
+   "name": "Generated.VaultDescriptorRefinement",
+   "file": "examples/lean/Generated/VaultDescriptorRefinement.lean"
+  },
+  {
+   "name": "Generated.VaultDescriptorTracedLifted",
+   "file": "examples/lean/Generated/VaultDescriptorTracedLifted.lean"
+  },
+  {
+   "name": "Generated.VaultRefinement",
+   "file": "examples/lean/Generated/VaultRefinement.lean"
+  },
+  {
+   "name": "Generated.VaultTracedLifted",
+   "file": "examples/lean/Generated/VaultTracedLifted.lean"
+  },
+  {
+   "name": "H2Pin",
+   "file": "examples/lean/H2Pin.lean"
+  },
+  {
+   "name": "L1Pin",
+   "file": "examples/lean/L1Pin.lean"
+  },
+  {
+   "name": "LabelVault.Success",
+   "file": "examples/lean/LabelVault/Success.lean"
+  },
+  {
+   "name": "LabelVault.Text",
+   "file": "examples/lean/LabelVault/Text.lean"
+  },
+  {
+   "name": "LabelVaultV3.Success",
+   "file": "examples/lean/LabelVaultV3/Success.lean"
+  },
+  {
+   "name": "LabelVaultV3.Text",
+   "file": "examples/lean/LabelVaultV3/Text.lean"
+  },
+  {
+   "name": "M1Pin",
+   "file": "examples/lean/M1Pin.lean"
+  },
+  {
+   "name": "M4Pin",
+   "file": "examples/lean/M4Pin.lean"
+  },
+  {
+   "name": "MinimalTransferAsm",
+   "file": "examples/lean/MinimalTransferAsm.lean"
+  },
+  {
+   "name": "Multisig.MultisigGeneralization",
+   "file": "examples/lean/Multisig/MultisigGeneralization.lean"
+  },
+  {
+   "name": "PToken.BalanceSpec",
+   "file": "examples/lean/PToken/BalanceSpec.lean"
+  },
+  {
+   "name": "PToken.BurnRefinement",
+   "file": "examples/lean/PToken/BurnRefinement.lean"
+  },
+  {
+   "name": "PToken.DispatchComplete",
+   "file": "examples/lean/PToken/DispatchComplete.lean"
+  },
+  {
+   "name": "PToken.ErrorConvert",
+   "file": "examples/lean/PToken/ErrorConvert.lean"
+  },
+  {
+   "name": "PToken.ErrorConvertPins",
+   "file": "examples/lean/PToken/ErrorConvertPins.lean"
+  },
+  {
+   "name": "PToken.ErrorTail",
+   "file": "examples/lean/PToken/ErrorTail.lean"
+  },
+  {
+   "name": "PToken.ErrorTailPins",
+   "file": "examples/lean/PToken/ErrorTailPins.lean"
+  },
+  {
+   "name": "PToken.MintToRefinement",
+   "file": "examples/lean/PToken/MintToRefinement.lean"
+  },
+  {
+   "name": "PToken.NoReturnGeneric",
+   "file": "examples/lean/PToken/NoReturnGeneric.lean"
+  },
+  {
+   "name": "PToken.PanicChain",
+   "file": "examples/lean/PToken/PanicChain.lean"
+  },
+  {
+   "name": "PToken.PanicChainPins",
+   "file": "examples/lean/PToken/PanicChainPins.lean"
+  },
+  {
+   "name": "PToken.ReadableFields",
+   "file": "examples/lean/PToken/ReadableFields.lean"
+  },
+  {
+   "name": "PToken.RefinesTransfer",
+   "file": "examples/lean/PToken/RefinesTransfer.lean"
+  },
+  {
+   "name": "PToken.SuccessInputs",
+   "file": "examples/lean/PToken/SuccessInputs.lean"
+  },
+  {
+   "name": "PToken.SuccessPaths",
+   "file": "examples/lean/PToken/SuccessPaths.lean"
+  },
+  {
+   "name": "PToken.TransferArm.FullHappyPath",
+   "file": "examples/lean/PToken/TransferArm/FullHappyPath.lean"
+  },
+  {
+   "name": "PToken.TransferArm.H1Dispatch",
+   "file": "examples/lean/PToken/TransferArm/H1Dispatch.lean"
+  },
+  {
+   "name": "PToken.TransferArm.H3aAmountAlign",
+   "file": "examples/lean/PToken/TransferArm/H3aAmountAlign.lean"
+  },
+  {
+   "name": "PToken.TransferArm.H3bIndexBound",
+   "file": "examples/lean/PToken/TransferArm/H3bIndexBound.lean"
+  },
+  {
+   "name": "PToken.TransferArm.H3cStateChecks",
+   "file": "examples/lean/PToken/TransferArm/H3cStateChecks.lean"
+  },
+  {
+   "name": "PToken.TransferArm.H3dBalanceCheck",
+   "file": "examples/lean/PToken/TransferArm/H3dBalanceCheck.lean"
+  },
+  {
+   "name": "PToken.TransferArm.H3dBalanceGuard",
+   "file": "examples/lean/PToken/TransferArm/H3dBalanceGuard.lean"
+  },
+  {
+   "name": "PToken.TransferArm.H3eMintKeyCheck",
+   "file": "examples/lean/PToken/TransferArm/H3eMintKeyCheck.lean"
+  },
+  {
+   "name": "PToken.TransferArm.H3fSignerExit",
+   "file": "examples/lean/PToken/TransferArm/H3fSignerExit.lean"
+  },
+  {
+   "name": "PToken.TransferArm.H4aDestMintCheck",
+   "file": "examples/lean/PToken/TransferArm/H4aDestMintCheck.lean"
+  },
+  {
+   "name": "PToken.TransferArm.H4bBalanceMutation",
+   "file": "examples/lean/PToken/TransferArm/H4bBalanceMutation.lean"
+  },
+  {
+   "name": "PToken.TransferArm.L1Setup",
+   "file": "examples/lean/PToken/TransferArm/L1Setup.lean"
+  },
+  {
+   "name": "PToken.TransferArm.L2Bytecode",
+   "file": "examples/lean/PToken/TransferArm/L2Bytecode.lean"
+  },
+  {
+   "name": "PToken.TransferArm.L3TwoCalls",
+   "file": "examples/lean/PToken/TransferArm/L3TwoCalls.lean"
+  },
+  {
+   "name": "PToken.TransferArm.L4TwoCallsExt",
+   "file": "examples/lean/PToken/TransferArm/L4TwoCallsExt.lean"
+  },
+  {
+   "name": "PToken.TransferArm.L5ThirdCall",
+   "file": "examples/lean/PToken/TransferArm/L5ThirdCall.lean"
+  },
+  {
+   "name": "PToken.TransferArm.L6FarJump",
+   "file": "examples/lean/PToken/TransferArm/L6FarJump.lean"
+  },
+  {
+   "name": "PToken.TransferCheckedRefinement",
+   "file": "examples/lean/PToken/TransferCheckedRefinement.lean"
+  },
+  {
+   "name": "PToken.TransferRefinement",
+   "file": "examples/lean/PToken/TransferRefinement.lean"
+  },
+  {
+   "name": "PToken.TransferSpec",
+   "file": "examples/lean/PToken/TransferSpec.lean"
+  },
+  {
+   "name": "PToken.ValidationPrelude",
+   "file": "examples/lean/PToken/ValidationPrelude.lean"
+  },
+  {
+   "name": "ProofDemo",
+   "file": "examples/lean/ProofDemo.lean"
+  },
+  {
+   "name": "SVM",
+   "file": "SVM.lean"
+  },
+  {
+   "name": "SVM.Syscalls.CpiTests",
+   "file": "SVM/Syscalls/CpiTests.lean"
+  },
+  {
+   "name": "SyscallHashPin",
+   "file": "examples/lean/SyscallHashPin.lean"
+  },
+  {
+   "name": "VestingGate",
+   "file": "examples/lean/VestingGate.lean"
+  }
+ ],
+ "root_closure_files": 226,
+ "root_closure_sorry": [],
+ "root_closure_axioms": 19,
  "unclosed_files": 0,
  "headline_rule": null,
  "headline_count": 0,

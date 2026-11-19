@@ -83,6 +83,91 @@
  "closure_files": 85,
  "closure_sorry": [],
  "closure_axioms": 0,
+ "root_modules": [
+  {
+   "name": "Apps",
+   "file": "Apps.lean"
+  },
+  {
+   "name": "Benchmarks.Kernel.CheckIxe",
+   "file": "Benchmarks/Kernel/CheckIxe.lean"
+  },
+  {
+   "name": "Benchmarks.Kernel.CheckIxeEntry",
+   "file": "Benchmarks/Kernel/CheckIxeEntry.lean"
+  },
+  {
+   "name": "Benchmarks.Kernel.CheckIxeFold",
+   "file": "Benchmarks/Kernel/CheckIxeFold.lean"
+  },
+  {
+   "name": "Benchmarks.Kernel.CheckIxeGuarded",
+   "file": "Benchmarks/Kernel/CheckIxeGuarded.lean"
+  },
+  {
+   "name": "Benchmarks.Kernel.CheckIxeMeta",
+   "file": "Benchmarks/Kernel/CheckIxeMeta.lean"
+  },
+  {
+   "name": "Benchmarks.Kernel.CheckIxePaired",
+   "file": "Benchmarks/Kernel/CheckIxePaired.lean"
+  },
+  {
+   "name": "Benchmarks.Kernel.CheckIxePool",
+   "file": "Benchmarks/Kernel/CheckIxePool.lean"
+  },
+  {
+   "name": "Benchmarks.Kernel.CheckIxeReadCache",
+   "file": "Benchmarks/Kernel/CheckIxeReadCache.lean"
+  },
+  {
+   "name": "Benchmarks.Kernel.CheckIxeReport",
+   "file": "Benchmarks/Kernel/CheckIxeReport.lean"
+  },
+  {
+   "name": "Benchmarks.Kernel.CheckIxeRows",
+   "file": "Benchmarks/Kernel/CheckIxeRows.lean"
+  },
+  {
+   "name": "Benchmarks.Kernel.CheckIxeStep",
+   "file": "Benchmarks/Kernel/CheckIxeStep.lean"
+  },
+  {
+   "name": "Benchmarks.Kernel.CheckIxeStream",
+   "file": "Benchmarks/Kernel/CheckIxeStream.lean"
+  },
+  {
+   "name": "Ix",
+   "file": "Ix.lean"
+  },
+  {
+   "name": "IxSharingVerify",
+   "file": "IxSharingVerify.lean"
+  },
+  {
+   "name": "MultiStark",
+   "file": "MultiStark.lean"
+  },
+  {
+   "name": "Tests",
+   "file": "Tests.lean"
+  },
+  {
+   "name": "Tests.Ix.Kernel.EntryCaseDefs",
+   "file": "Tests/Ix/Kernel/EntryCaseDefs.lean"
+  }
+ ],
+ "root_closure_files": 599,
+ "root_closure_sorry": [
+  "Ix/Cli/CheckLeanCmd.lean",
+  "Ix/Compile/ReadyQueue.lean",
+  "Ix/IxonSyntax/AST.lean",
+  "Tests/Ix/Cert/Statement.lean",
+  "Tests/Ix/IxVM/Exploits.lean",
+  "Tests/Ix/Kernel/Tutorial.lean",
+  "Tests/Ix/SourceContract/SyntaxCheck.lean"
+ ],
+ "root_closure_axioms": 7,
  "unclosed_files": 0,
  "headline_rule": "readme",
  "headline_count": 1,

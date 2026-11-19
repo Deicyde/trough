@@ -42,6 +42,15 @@
  "closure_files": 540,
  "closure_sorry": [],
  "closure_axioms": 0,
+ "root_modules": [
+  {
+   "name": "FroehlichSpencer",
+   "file": "FroehlichSpencer.lean"
+  }
+ ],
+ "root_closure_files": 142,
+ "root_closure_sorry": [],
+ "root_closure_axioms": 0,
  "unclosed_files": 0,
  "headline_rule": "readme",
  "headline_count": 31,

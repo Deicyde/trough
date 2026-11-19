@@ -38,6 +38,68 @@
  "closure_files": 0,
  "closure_sorry": [],
  "closure_axioms": 0,
+ "root_modules": [
+  {
+   "name": "KIP126",
+   "file": "KIP126.lean"
+  },
+  {
+   "name": "KIP126.AdamsComputation",
+   "file": "KIP126/AdamsComputation.lean"
+  },
+  {
+   "name": "KIP126.AdamsSynthetic",
+   "file": "KIP126/AdamsSynthetic.lean"
+  },
+  {
+   "name": "KIP126.Geometry",
+   "file": "KIP126/Geometry.lean"
+  },
+  {
+   "name": "KIP126.Literature",
+   "file": "KIP126/Literature.lean"
+  },
+  {
+   "name": "KIP126.Main",
+   "file": "KIP126/Main.lean"
+  },
+  {
+   "name": "KIP126.ProofTools",
+   "file": "KIP126/ProofTools.lean"
+  },
+  {
+   "name": "KIP126.SSComputation",
+   "file": "KIP126/SSComputation.lean"
+  },
+  {
+   "name": "KIP126.SpectralSequence",
+   "file": "KIP126/SpectralSequence.lean"
+  }
+ ],
+ "root_closure_files": 1291,
+ "root_closure_sorry": [
+  "KIP126/AdamsComputation/Internal/NuCofiberArchive/Realization.lean",
+  "KIP126/AdamsComputation/Standard.lean",
+  "KIP126/AdamsComputation/Table/D2.lean",
+  "KIP126/AdamsComputation/Table/Relations.lean",
+  "KIP126/AdamsSynthetic/Completed/Acyclic.lean",
+  "KIP126/AdamsSynthetic/Completed/Adams.lean",
+  "KIP126/AdamsSynthetic/Completed/AdamsScope.lean",
+  "KIP126/AdamsSynthetic/Completed/Background.lean",
+  "KIP126/AdamsSynthetic/Completed/Coefficients.lean",
+  "KIP126/AdamsSynthetic/Completed/Completion.lean",
+  "KIP126/AdamsSynthetic/Completed/Completion/Classical.lean",
+  "KIP126/AdamsSynthetic/Completed/Filtration.lean",
+  "KIP126/AdamsSynthetic/Completed/FirstQuotientCompatibility.lean",
+  "KIP126/AdamsSynthetic/Completed/Foundations.lean",
+  "KIP126/AdamsSynthetic/Completed/HomotopyCoproduct.lean",
+  "KIP126/AdamsSynthetic/Completed/MappingOperations.lean",
+  "KIP126/AdamsSynthetic/Completed/Separation.lean",
+  "KIP126/AdamsSynthetic/Completed/ShiftOperations.lean",
+  "KIP126/AdamsSynthetic/Completed/SpectrumScope/Basic.lean",
+  "KIP126/AdamsSynthetic/Completed/SphereCoproduct.lean"
+ ],
+ "root_closure_axioms": 0,
  "unclosed_files": 0,
  "headline_rule": null,
  "headline_count": 0,

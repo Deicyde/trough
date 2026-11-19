@@ -6,7 +6,9 @@ statement: formalized
 proof: formalized
 ---
 
-# Rogers-Ramanujan Identities from the Geometry of X^a=Y^b
+# HJO
+
+*Rogers-Ramanujan Identities from the Geometry of X^a=Y^b*
 
 [AxiomMath/HJO](https://github.com/AxiomMath/HJO) at commit [6a58dfa6](https://github.com/AxiomMath/HJO/tree/6a58dfa6ab98bd35d841cb2cf8fd9081f62fad03), 2026-10-07.
 

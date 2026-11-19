@@ -84,6 +84,4013 @@
  "closure_files": 0,
  "closure_sorry": [],
  "closure_axioms": 0,
+ "root_modules": [
+  {
+   "name": "AAG10InnerLiftProfile",
+   "file": "LeanCode/Internal/PhysicalAnalysis/AAG10InnerLiftProfile.lean"
+  },
+  {
+   "name": "AAG11InnerLiftEnergy",
+   "file": "LeanCode/Internal/PhysicalAnalysis/AAG11InnerLiftEnergy.lean"
+  },
+  {
+   "name": "AAG12InnerLiftCore",
+   "file": "LeanCode/Internal/PhysicalAnalysis/AAG12InnerLiftCore.lean"
+  },
+  {
+   "name": "AAG13PhysicalTestMultipliers",
+   "file": "LeanCode/Internal/PhysicalAnalysis/AAG13PhysicalTestMultipliers.lean"
+  },
+  {
+   "name": "AAG14CompletedInnerLift",
+   "file": "LeanCode/Internal/PhysicalAnalysis/AAG14CompletedInnerLift.lean"
+  },
+  {
+   "name": "AAG15PhysicalFunctional",
+   "file": "LeanCode/Internal/PhysicalAnalysis/AAG15PhysicalFunctional.lean"
+  },
+  {
+   "name": "AAG16FormBounds",
+   "file": "LeanCode/Internal/PhysicalAnalysis/AAG16FormBounds.lean"
+  },
+  {
+   "name": "AAG17ActualVariationalInverse",
+   "file": "LeanCode/Internal/PhysicalAnalysis/AAG17ActualVariationalInverse.lean"
+  },
+  {
+   "name": "AAG18UniqueInverseBound",
+   "file": "LeanCode/Internal/PhysicalAnalysis/AAG18UniqueInverseBound.lean"
+  },
+  {
+   "name": "AAG19InnerZeroDensity",
+   "file": "LeanCode/Internal/PhysicalAnalysis/AAG19InnerZeroDensity.lean"
+  },
+  {
+   "name": "AAG1ActualPhasePotential",
+   "file": "LeanCode/Internal/PhysicalAnalysis/AAG1ActualPhasePotential.lean"
+  },
+  {
+   "name": "AAG20BoundedComplexInverse",
+   "file": "LeanCode/Internal/PhysicalAnalysis/AAG20BoundedComplexInverse.lean"
+  },
+  {
+   "name": "AAG21ExactVariationalConsumer",
+   "file": "LeanCode/Internal/PhysicalAnalysis/AAG21ExactVariationalConsumer.lean"
+  },
+  {
+   "name": "AAG2ComplexSmoothCore",
+   "file": "LeanCode/Internal/PhysicalAnalysis/AAG2ComplexSmoothCore.lean"
+  },
+  {
+   "name": "AAG3ActualEnergyCore",
+   "file": "LeanCode/Internal/PhysicalAnalysis/AAG3ActualEnergyCore.lean"
+  },
+  {
+   "name": "AAG4EnergyMultipliers",
+   "file": "LeanCode/Internal/PhysicalAnalysis/AAG4EnergyMultipliers.lean"
+  },
+  {
+   "name": "AAG5ActualEnergyCoordinates",
+   "file": "LeanCode/Internal/PhysicalAnalysis/AAG5ActualEnergyCoordinates.lean"
+  },
+  {
+   "name": "AAG6ActualCoerciveForm",
+   "file": "LeanCode/Internal/PhysicalAnalysis/AAG6ActualCoerciveForm.lean"
+  },
+  {
+   "name": "AAG7SharpEndpointCore",
+   "file": "LeanCode/Internal/PhysicalAnalysis/AAG7SharpEndpointCore.lean"
+  },
+  {
+   "name": "AAG8SharpEnergyTrace",
+   "file": "LeanCode/Internal/PhysicalAnalysis/AAG8SharpEnergyTrace.lean"
+  },
+  {
+   "name": "AAG9CompletedSharpTrace",
+   "file": "LeanCode/Internal/PhysicalAnalysis/AAG9CompletedSharpTrace.lean"
+  },
+  {
+   "name": "AAQ10ActualSolutionFluxGraph",
+   "file": "LeanCode/Internal/PhysicalAnalysis/AAQ10ActualSolutionFluxGraph.lean"
+  },
+  {
+   "name": "AAQ11ExactPhysicalTraceEstimate",
+   "file": "LeanCode/Internal/PhysicalAnalysis/AAQ11ExactPhysicalTraceEstimate.lean"
+  },
+  {
+   "name": "AAQ12NaturalPhysicalFluxTraces",
+   "file": "LeanCode/Internal/PhysicalAnalysis/AAQ12NaturalPhysicalFluxTraces.lean"
+  },
+  {
+   "name": "AAQ13ExactSolutionConormalTrace",
+   "file": "LeanCode/Internal/PhysicalAnalysis/AAQ13ExactSolutionConormalTrace.lean"
+  },
+  {
+   "name": "AAQ14FluxGraphDiagonals",
+   "file": "LeanCode/Internal/PhysicalAnalysis/AAQ14FluxGraphDiagonals.lean"
+  },
+  {
+   "name": "AAQ15SameSolutionFluxDiagonals",
+   "file": "LeanCode/Internal/PhysicalAnalysis/AAQ15SameSolutionFluxDiagonals.lean"
+  },
+  {
+   "name": "AAQ16ActualWeightedFluxTraces",
+   "file": "LeanCode/Internal/PhysicalAnalysis/AAQ16ActualWeightedFluxTraces.lean"
+  },
+  {
+   "name": "AAQ17ActualWeightedFluxGraph",
+   "file": "LeanCode/Internal/PhysicalAnalysis/AAQ17ActualWeightedFluxGraph.lean"
+  },
+  {
+   "name": "AAQ18DataGraphRadialRealization",
+   "file": "LeanCode/Internal/PhysicalAnalysis/AAQ18DataGraphRadialRealization.lean"
+  },
+  {
+   "name": "AAQ19ExactSharpTraceConsumer",
+   "file": "LeanCode/Internal/PhysicalAnalysis/AAQ19ExactSharpTraceConsumer.lean"
+  },
+  {
+   "name": "AAQ1SharpWeakEndpoint",
+   "file": "LeanCode/Internal/PhysicalAnalysis/AAQ1SharpWeakEndpoint.lean"
+  },
+  {
+   "name": "AAQ2NormalizedCoefficientBounds",
+   "file": "LeanCode/Internal/PhysicalAnalysis/AAQ2NormalizedCoefficientBounds.lean"
+  },
+  {
+   "name": "AAQ3NormalizedRadialMaps",
+   "file": "LeanCode/Internal/PhysicalAnalysis/AAQ3NormalizedRadialMaps.lean"
+  },
+  {
+   "name": "AAQ4ActualNormalizedFluxSlope",
+   "file": "LeanCode/Internal/PhysicalAnalysis/AAQ4ActualNormalizedFluxSlope.lean"
+  },
+  {
+   "name": "AAQ5UniformFluxSlopeEstimate",
+   "file": "LeanCode/Internal/PhysicalAnalysis/AAQ5UniformFluxSlopeEstimate.lean"
+  },
+  {
+   "name": "AAQ6LiteralFluxWeakGraph",
+   "file": "LeanCode/Internal/PhysicalAnalysis/AAQ6LiteralFluxWeakGraph.lean"
+  },
+  {
+   "name": "AAQ7SharpFluxTraceFamily",
+   "file": "LeanCode/Internal/PhysicalAnalysis/AAQ7SharpFluxTraceFamily.lean"
+  },
+  {
+   "name": "AAQ8CanonicalFluxSections",
+   "file": "LeanCode/Internal/PhysicalAnalysis/AAQ8CanonicalFluxSections.lean"
+  },
+  {
+   "name": "AAQ9BoundedComplexFluxTrace",
+   "file": "LeanCode/Internal/PhysicalAnalysis/AAQ9BoundedComplexFluxTrace.lean"
+  },
+  {
+   "name": "AAR10ActualRadialPairings",
+   "file": "LeanCode/Internal/PhysicalAnalysis/AAR10ActualRadialPairings.lean"
+  },
+  {
+   "name": "AAR11SingleModeVariationalFormula",
+   "file": "LeanCode/Internal/PhysicalAnalysis/AAR11SingleModeVariationalFormula.lean"
+  },
+  {
+   "name": "AAR12RadialMomentCalculus",
+   "file": "LeanCode/Internal/PhysicalAnalysis/AAR12RadialMomentCalculus.lean"
+  },
+  {
+   "name": "AAR13ScalarVariationalTests",
+   "file": "LeanCode/Internal/PhysicalAnalysis/AAR13ScalarVariationalTests.lean"
+  },
+  {
+   "name": "AAR14ScalarMomentFormula",
+   "file": "LeanCode/Internal/PhysicalAnalysis/AAR14ScalarMomentFormula.lean"
+  },
+  {
+   "name": "AAR15ActualFluxMomentWeak",
+   "file": "LeanCode/Internal/PhysicalAnalysis/AAR15ActualFluxMomentWeak.lean"
+  },
+  {
+   "name": "AAR16WeakRadiusDivision",
+   "file": "LeanCode/Internal/PhysicalAnalysis/AAR16WeakRadiusDivision.lean"
+  },
+  {
+   "name": "AAR17ActualFluxWeakGraph",
+   "file": "LeanCode/Internal/PhysicalAnalysis/AAR17ActualFluxWeakGraph.lean"
+  },
+  {
+   "name": "AAR18NormalizedSecondRow",
+   "file": "LeanCode/Internal/PhysicalAnalysis/AAR18NormalizedSecondRow.lean"
+  },
+  {
+   "name": "AAR19PhysicalSecondRow",
+   "file": "LeanCode/Internal/PhysicalAnalysis/AAR19PhysicalSecondRow.lean"
+  },
+  {
+   "name": "AAR1ActualBulkRecovery",
+   "file": "LeanCode/Internal/PhysicalAnalysis/AAR1ActualBulkRecovery.lean"
+  },
+  {
+   "name": "AAR20ActualMomentGraph",
+   "file": "LeanCode/Internal/PhysicalAnalysis/AAR20ActualMomentGraph.lean"
+  },
+  {
+   "name": "AAR21NaturalMomentBoundary",
+   "file": "LeanCode/Internal/PhysicalAnalysis/AAR21NaturalMomentBoundary.lean"
+  },
+  {
+   "name": "AAR22PhysicalContinuousSections",
+   "file": "LeanCode/Internal/PhysicalAnalysis/AAR22PhysicalContinuousSections.lean"
+  },
+  {
+   "name": "AAR23OriginalOuterBoundary",
+   "file": "LeanCode/Internal/PhysicalAnalysis/AAR23OriginalOuterBoundary.lean"
+  },
+  {
+   "name": "AAR24OriginalSecondSymbols",
+   "file": "LeanCode/Internal/PhysicalAnalysis/AAR24OriginalSecondSymbols.lean"
+  },
+  {
+   "name": "AAR25OriginalSecondRow",
+   "file": "LeanCode/Internal/PhysicalAnalysis/AAR25OriginalSecondRow.lean"
+  },
+  {
+   "name": "AAR26OriginalInnerBoundary",
+   "file": "LeanCode/Internal/PhysicalAnalysis/AAR26OriginalInnerBoundary.lean"
+  },
+  {
+   "name": "AAR27ExactPhysicalConsumer",
+   "file": "LeanCode/Internal/PhysicalAnalysis/AAR27ExactPhysicalConsumer.lean"
+  },
+  {
+   "name": "AAR2ActualRadialGraph",
+   "file": "LeanCode/Internal/PhysicalAnalysis/AAR2ActualRadialGraph.lean"
+  },
+  {
+   "name": "AAR3FaithfulEnergyRealization",
+   "file": "LeanCode/Internal/PhysicalAnalysis/AAR3FaithfulEnergyRealization.lean"
+  },
+  {
+   "name": "AAR4ActualHighFluxMultipliers",
+   "file": "LeanCode/Internal/PhysicalAnalysis/AAR4ActualHighFluxMultipliers.lean"
+  },
+  {
+   "name": "AAR5ActualFirstRow",
+   "file": "LeanCode/Internal/PhysicalAnalysis/AAR5ActualFirstRow.lean"
+  },
+  {
+   "name": "AAR6PhysicalWeakDerivative",
+   "file": "LeanCode/Internal/PhysicalAnalysis/AAR6PhysicalWeakDerivative.lean"
+  },
+  {
+   "name": "AAR7NormalizedCoordinateLaws",
+   "file": "LeanCode/Internal/PhysicalAnalysis/AAR7NormalizedCoordinateLaws.lean"
+  },
+  {
+   "name": "AAR8OriginalPhysicalFirstRow",
+   "file": "LeanCode/Internal/PhysicalAnalysis/AAR8OriginalPhysicalFirstRow.lean"
+  },
+  {
+   "name": "AAR9SingleModeEnergyTesting",
+   "file": "LeanCode/Internal/PhysicalAnalysis/AAR9SingleModeEnergyTesting.lean"
+  },
+  {
+   "name": "AAT10NormalizedGradeCoordinates",
+   "file": "LeanCode/Internal/PhysicalAnalysis/AAT10NormalizedGradeCoordinates.lean"
+  },
+  {
+   "name": "AAT11ActualGradedInverse",
+   "file": "LeanCode/Internal/PhysicalAnalysis/AAT11ActualGradedInverse.lean"
+  },
+  {
+   "name": "AAT12CompatibleGradeInclusions",
+   "file": "LeanCode/Internal/PhysicalAnalysis/AAT12CompatibleGradeInclusions.lean"
+  },
+  {
+   "name": "AAT13CompleteGradeModels",
+   "file": "LeanCode/Internal/PhysicalAnalysis/AAT13CompleteGradeModels.lean"
+  },
+  {
+   "name": "AAT14WeightedCutoffConvergence",
+   "file": "LeanCode/Internal/PhysicalAnalysis/AAT14WeightedCutoffConvergence.lean"
+  },
+  {
+   "name": "AAT15DataGradeCompatibility",
+   "file": "LeanCode/Internal/PhysicalAnalysis/AAT15DataGradeCompatibility.lean"
+  },
+  {
+   "name": "AAT16ExactSourceGradeCarrier",
+   "file": "LeanCode/Internal/PhysicalAnalysis/AAT16ExactSourceGradeCarrier.lean"
+  },
+  {
+   "name": "AAT17ExactGradedConsumer",
+   "file": "LeanCode/Internal/PhysicalAnalysis/AAT17ExactGradedConsumer.lean"
+  },
+  {
+   "name": "AAT1RealFourierDiagonal",
+   "file": "LeanCode/Internal/PhysicalAnalysis/AAT1RealFourierDiagonal.lean"
+  },
+  {
+   "name": "AAT2EnergyDiagonal",
+   "file": "LeanCode/Internal/PhysicalAnalysis/AAT2EnergyDiagonal.lean"
+  },
+  {
+   "name": "AAT3CoordinateCommutation",
+   "file": "LeanCode/Internal/PhysicalAnalysis/AAT3CoordinateCommutation.lean"
+  },
+  {
+   "name": "AAT4TraceLiftCommutation",
+   "file": "LeanCode/Internal/PhysicalAnalysis/AAT4TraceLiftCommutation.lean"
+  },
+  {
+   "name": "AAT5FormFunctionalCommutation",
+   "file": "LeanCode/Internal/PhysicalAnalysis/AAT5FormFunctionalCommutation.lean"
+  },
+  {
+   "name": "AAT6SameInverseCommutation",
+   "file": "LeanCode/Internal/PhysicalAnalysis/AAT6SameInverseCommutation.lean"
+  },
+  {
+   "name": "AAT7ActualFourierCutoffs",
+   "file": "LeanCode/Internal/PhysicalAnalysis/AAT7ActualFourierCutoffs.lean"
+  },
+  {
+   "name": "AAT8ExactTangentialWeights",
+   "file": "LeanCode/Internal/PhysicalAnalysis/AAT8ExactTangentialWeights.lean"
+  },
+  {
+   "name": "AAT9LiteralWeightedCarrier",
+   "file": "LeanCode/Internal/PhysicalAnalysis/AAT9LiteralWeightedCarrier.lean"
+  },
+  {
+   "name": "AAV10ClosedBoundaryGraph",
+   "file": "LeanCode/Internal/PhysicalAnalysis/AAV10ClosedBoundaryGraph.lean"
+  },
+  {
+   "name": "AAV11ActualGraphIsomorphism",
+   "file": "LeanCode/Internal/PhysicalAnalysis/AAV11ActualGraphIsomorphism.lean"
+  },
+  {
+   "name": "AAV12ExactWeakGraphConsumer",
+   "file": "LeanCode/Internal/PhysicalAnalysis/AAV12ExactWeakGraphConsumer.lean"
+  },
+  {
+   "name": "AAV1VectorRadialIntegration",
+   "file": "LeanCode/Internal/PhysicalAnalysis/AAV1VectorRadialIntegration.lean"
+  },
+  {
+   "name": "AAV2VectorMomentPairings",
+   "file": "LeanCode/Internal/PhysicalAnalysis/AAV2VectorMomentPairings.lean"
+  },
+  {
+   "name": "AAV3VectorVariationalFormula",
+   "file": "LeanCode/Internal/PhysicalAnalysis/AAV3VectorVariationalFormula.lean"
+  },
+  {
+   "name": "AAV4MomentGraphSingleTest",
+   "file": "LeanCode/Internal/PhysicalAnalysis/AAV4MomentGraphSingleTest.lean"
+  },
+  {
+   "name": "AAV5FullVariationalConverse",
+   "file": "LeanCode/Internal/PhysicalAnalysis/AAV5FullVariationalConverse.lean"
+  },
+  {
+   "name": "AAV6FluxGraphMomentConverse",
+   "file": "LeanCode/Internal/PhysicalAnalysis/AAV6FluxGraphMomentConverse.lean"
+  },
+  {
+   "name": "AAV7GenericMomentEndpoint",
+   "file": "LeanCode/Internal/PhysicalAnalysis/AAV7GenericMomentEndpoint.lean"
+  },
+  {
+   "name": "AAV8ActualWeakGraphUniqueness",
+   "file": "LeanCode/Internal/PhysicalAnalysis/AAV8ActualWeakGraphUniqueness.lean"
+  },
+  {
+   "name": "AAV9ActualGraphBoundary",
+   "file": "LeanCode/Internal/PhysicalAnalysis/AAV9ActualGraphBoundary.lean"
+  },
+  {
+   "name": "AAW10SmoothGraphApproximation",
+   "file": "LeanCode/Internal/PhysicalAnalysis/AAW10SmoothGraphApproximation.lean"
+  },
+  {
+   "name": "AAW11FiniteDataSupport",
+   "file": "LeanCode/Internal/PhysicalAnalysis/AAW11FiniteDataSupport.lean"
+  },
+  {
+   "name": "AAW12FiniteSolutionSupport",
+   "file": "LeanCode/Internal/PhysicalAnalysis/AAW12FiniteSolutionSupport.lean"
+  },
+  {
+   "name": "AAW13HomogeneousSmoothCore",
+   "file": "LeanCode/Internal/PhysicalAnalysis/AAW13HomogeneousSmoothCore.lean"
+  },
+  {
+   "name": "AAW14ActualDenseSmoothGraph",
+   "file": "LeanCode/Internal/PhysicalAnalysis/AAW14ActualDenseSmoothGraph.lean"
+  },
+  {
+   "name": "AAW15ExactSmoothCoreConsumer",
+   "file": "LeanCode/Internal/PhysicalAnalysis/AAW15ExactSmoothCoreConsumer.lean"
+  },
+  {
+   "name": "AAW1WeakEndpointDifferentiation",
+   "file": "LeanCode/Internal/PhysicalAnalysis/AAW1WeakEndpointDifferentiation.lean"
+  },
+  {
+   "name": "AAW2PhysicalODEBootstrap",
+   "file": "LeanCode/Internal/PhysicalAnalysis/AAW2PhysicalODEBootstrap.lean"
+  },
+  {
+   "name": "AAW3ContinuousSectionCalculus",
+   "file": "LeanCode/Internal/PhysicalAnalysis/AAW3ContinuousSectionCalculus.lean"
+  },
+  {
+   "name": "AAW4ActualFieldDerivative",
+   "file": "LeanCode/Internal/PhysicalAnalysis/AAW4ActualFieldDerivative.lean"
+  },
+  {
+   "name": "AAW5ActualFluxDerivative",
+   "file": "LeanCode/Internal/PhysicalAnalysis/AAW5ActualFluxDerivative.lean"
+  },
+  {
+   "name": "AAW6SameSolutionSmoothness",
+   "file": "LeanCode/Internal/PhysicalAnalysis/AAW6SameSolutionSmoothness.lean"
+  },
+  {
+   "name": "AAW7DenseSmoothBulkData",
+   "file": "LeanCode/Internal/PhysicalAnalysis/AAW7DenseSmoothBulkData.lean"
+  },
+  {
+   "name": "AAW8DenseFullSmoothData",
+   "file": "LeanCode/Internal/PhysicalAnalysis/AAW8DenseFullSmoothData.lean"
+  },
+  {
+   "name": "AAW9WeightedSmoothData",
+   "file": "LeanCode/Internal/PhysicalAnalysis/AAW9WeightedSmoothData.lean"
+  },
+  {
+   "name": "AAX14ActualPhysicalResidual",
+   "file": "LeanCode/Internal/PhysicalAnalysis/AAX14ActualPhysicalResidual.lean"
+  },
+  {
+   "name": "AAX15InvertibleWeakConjugation",
+   "file": "LeanCode/Internal/PhysicalAnalysis/AAX15InvertibleWeakConjugation.lean"
+  },
+  {
+   "name": "AAX1OriginalAngularCoordinates",
+   "file": "LeanCode/Internal/PhysicalAnalysis/AAX1OriginalAngularCoordinates.lean"
+  },
+  {
+   "name": "AAX2OriginalSumAmbient",
+   "file": "LeanCode/Internal/PhysicalAnalysis/AAX2OriginalSumAmbient.lean"
+  },
+  {
+   "name": "AAX3ClosedResidualGraph",
+   "file": "LeanCode/Internal/PhysicalAnalysis/AAX3ClosedResidualGraph.lean"
+  },
+  {
+   "name": "AAX4OriginalFirstResidual",
+   "file": "LeanCode/Internal/PhysicalAnalysis/AAX4OriginalFirstResidual.lean"
+  },
+  {
+   "name": "AAX5NaturalWeakBoundary",
+   "file": "LeanCode/Internal/PhysicalAnalysis/AAX5NaturalWeakBoundary.lean"
+  },
+  {
+   "name": "AAZ10UniformJetCoefficientBounds",
+   "file": "LeanCode/Internal/PhysicalAnalysis/AAZ10UniformJetCoefficientBounds.lean"
+  },
+  {
+   "name": "AAZ11WeightedJetOperations",
+   "file": "LeanCode/Internal/PhysicalAnalysis/AAZ11WeightedJetOperations.lean"
+  },
+  {
+   "name": "AAZ12NoncircularJetMembership",
+   "file": "LeanCode/Internal/PhysicalAnalysis/AAZ12NoncircularJetMembership.lean"
+  },
+  {
+   "name": "AAZ13SameSolutionPhysicalJetMembership",
+   "file": "LeanCode/Internal/PhysicalAnalysis/AAZ13SameSolutionPhysicalJetMembership.lean"
+  },
+  {
+   "name": "AAZ14UniformLeibnizNorm",
+   "file": "LeanCode/Internal/PhysicalAnalysis/AAZ14UniformLeibnizNorm.lean"
+  },
+  {
+   "name": "AAZ15FinitePrefixNorms",
+   "file": "LeanCode/Internal/PhysicalAnalysis/AAZ15FinitePrefixNorms.lean"
+  },
+  {
+   "name": "AAZ16ComponentRadialRecurrence",
+   "file": "LeanCode/Internal/PhysicalAnalysis/AAZ16ComponentRadialRecurrence.lean"
+  },
+  {
+   "name": "AAZ17OriginalFiniteRadialRecurrence",
+   "file": "LeanCode/Internal/PhysicalAnalysis/AAZ17OriginalFiniteRadialRecurrence.lean"
+  },
+  {
+   "name": "AAZ18ExactPhysicalRadialConsumer",
+   "file": "LeanCode/Internal/PhysicalAnalysis/AAZ18ExactPhysicalRadialConsumer.lean"
+  },
+  {
+   "name": "AAZ1WeakReciprocalPowers",
+   "file": "LeanCode/Internal/PhysicalAnalysis/AAZ1WeakReciprocalPowers.lean"
+  },
+  {
+   "name": "AAZ2LiteralRawGrade",
+   "file": "LeanCode/Internal/PhysicalAnalysis/AAZ2LiteralRawGrade.lean"
+  },
+  {
+   "name": "AAZ3ActualPhysicalWeakFamilies",
+   "file": "LeanCode/Internal/PhysicalAnalysis/AAZ3ActualPhysicalWeakFamilies.lean"
+  },
+  {
+   "name": "AAZ4PhysicalLeibnizCalculus",
+   "file": "LeanCode/Internal/PhysicalAnalysis/AAZ4PhysicalLeibnizCalculus.lean"
+  },
+  {
+   "name": "AAZ5ActualRadialJetRecursion",
+   "file": "LeanCode/Internal/PhysicalAnalysis/AAZ5ActualRadialJetRecursion.lean"
+  },
+  {
+   "name": "AAZ6RawGradeAlgebra",
+   "file": "LeanCode/Internal/PhysicalAnalysis/AAZ6RawGradeAlgebra.lean"
+  },
+  {
+   "name": "AAZ7PhysicalJetDerivativeInduction",
+   "file": "LeanCode/Internal/PhysicalAnalysis/AAZ7PhysicalJetDerivativeInduction.lean"
+  },
+  {
+   "name": "AAZ8LiteralInitialSlopes",
+   "file": "LeanCode/Internal/PhysicalAnalysis/AAZ8LiteralInitialSlopes.lean"
+  },
+  {
+   "name": "AAZ9ActualInitialWeakJets",
+   "file": "LeanCode/Internal/PhysicalAnalysis/AAZ9ActualInitialWeakJets.lean"
+  },
+  {
+   "name": "AAZJ10JointSmoothReconstruction",
+   "file": "LeanCode/Internal/PhysicalAnalysis/AAZJ10JointSmoothReconstruction.lean"
+  },
+  {
+   "name": "AAZJ11ExactDoubleFourierCoefficient",
+   "file": "LeanCode/Internal/PhysicalAnalysis/AAZJ11ExactDoubleFourierCoefficient.lean"
+  },
+  {
+   "name": "AAZJ12ActualFourierL2Identity",
+   "file": "LeanCode/Internal/PhysicalAnalysis/AAZJ12ActualFourierL2Identity.lean"
+  },
+  {
+   "name": "AAZJ13OriginalTwoTorusReconstruction",
+   "file": "LeanCode/Internal/PhysicalAnalysis/AAZJ13OriginalTwoTorusReconstruction.lean"
+  },
+  {
+   "name": "AAZJ14ClosedJointPhysicalJets",
+   "file": "LeanCode/Internal/PhysicalAnalysis/AAZJ14ClosedJointPhysicalJets.lean"
+  },
+  {
+   "name": "AAZJ15SameSolutionJointSmoothConsumer",
+   "file": "LeanCode/Internal/PhysicalAnalysis/AAZJ15SameSolutionJointSmoothConsumer.lean"
+  },
+  {
+   "name": "AAZJ1OriginalPhaseDomination",
+   "file": "LeanCode/Internal/PhysicalAnalysis/AAZJ1OriginalPhaseDomination.lean"
+  },
+  {
+   "name": "AAZJ2ActualPhysicalJetSections",
+   "file": "LeanCode/Internal/PhysicalAnalysis/AAZJ2ActualPhysicalJetSections.lean"
+  },
+  {
+   "name": "AAZJ3UniformPhysicalJetSections",
+   "file": "LeanCode/Internal/PhysicalAnalysis/AAZJ3UniformPhysicalJetSections.lean"
+  },
+  {
+   "name": "AAZJ4TwoExtraGradeSummability",
+   "file": "LeanCode/Internal/PhysicalAnalysis/AAZJ4TwoExtraGradeSummability.lean"
+  },
+  {
+   "name": "AAZJ5ClosedRadialSeriesDerivative",
+   "file": "LeanCode/Internal/PhysicalAnalysis/AAZJ5ClosedRadialSeriesDerivative.lean"
+  },
+  {
+   "name": "AAZJ6ExactFourierDerivatives",
+   "file": "LeanCode/Internal/PhysicalAnalysis/AAZJ6ExactFourierDerivatives.lean"
+  },
+  {
+   "name": "AAZJ7ActualMixedFourierSections",
+   "file": "LeanCode/Internal/PhysicalAnalysis/AAZJ7ActualMixedFourierSections.lean"
+  },
+  {
+   "name": "AAZJ8AllMixedSectionDerivatives",
+   "file": "LeanCode/Internal/PhysicalAnalysis/AAZJ8AllMixedSectionDerivatives.lean"
+  },
+  {
+   "name": "AAZJ9JointFrechetDerivative",
+   "file": "LeanCode/Internal/PhysicalAnalysis/AAZJ9JointFrechetDerivative.lean"
+  },
+  {
+   "name": "AAZK1ClosedProductDerivative",
+   "file": "LeanCode/Internal/PhysicalAnalysis/AAZK1ClosedProductDerivative.lean"
+  },
+  {
+   "name": "ABF1OrdinaryBulkFaithfulness",
+   "file": "LeanCode/Internal/PhysicalAnalysis/ABF1OrdinaryBulkFaithfulness.lean"
+  },
+  {
+   "name": "ABF2SameBulkSmoothRealization",
+   "file": "LeanCode/Internal/PhysicalAnalysis/ABF2SameBulkSmoothRealization.lean"
+  },
+  {
+   "name": "ABF3ActualFiniteSmoothInverse",
+   "file": "LeanCode/Internal/PhysicalAnalysis/ABF3ActualFiniteSmoothInverse.lean"
+  },
+  {
+   "name": "ABG1OrdinaryAngularModes",
+   "file": "LeanCode/Internal/PhysicalAnalysis/ABG1OrdinaryAngularModes.lean"
+  },
+  {
+   "name": "ABG2MultiplierSeries",
+   "file": "LeanCode/Internal/PhysicalAnalysis/ABG2MultiplierSeries.lean"
+  },
+  {
+   "name": "ABG3ActualDiskMultiplier",
+   "file": "LeanCode/Internal/PhysicalAnalysis/ABG3ActualDiskMultiplier.lean"
+  },
+  {
+   "name": "ABG4OrdinaryMultiplier",
+   "file": "LeanCode/Internal/PhysicalAnalysis/ABG4OrdinaryMultiplier.lean"
+  },
+  {
+   "name": "ABG5RadialScalarModes",
+   "file": "LeanCode/Internal/PhysicalAnalysis/ABG5RadialScalarModes.lean"
+  },
+  {
+   "name": "ABG6RadialMultiplierCommutation",
+   "file": "LeanCode/Internal/PhysicalAnalysis/ABG6RadialMultiplierCommutation.lean"
+  },
+  {
+   "name": "ABG7ActualMultiplierConsumer",
+   "file": "LeanCode/Internal/PhysicalAnalysis/ABG7ActualMultiplierConsumer.lean"
+  },
+  {
+   "name": "ABH1RepresentedWeakLaplacian",
+   "file": "LeanCode/Internal/PhysicalAnalysis/ABH1RepresentedWeakLaplacian.lean"
+  },
+  {
+   "name": "ABH2ActualLaplacianConsumer",
+   "file": "LeanCode/Internal/PhysicalAnalysis/ABH2ActualLaplacianConsumer.lean"
+  },
+  {
+   "name": "ACB10GenericCollarRecurrence",
+   "file": "LeanCode/Internal/PhysicalAnalysis/ACB10GenericCollarRecurrence.lean"
+  },
+  {
+   "name": "ACB11OriginalProfileEnergies",
+   "file": "LeanCode/Internal/PhysicalAnalysis/ACB11OriginalProfileEnergies.lean"
+  },
+  {
+   "name": "ACB12RadialEnergyInduction",
+   "file": "LeanCode/Internal/PhysicalAnalysis/ACB12RadialEnergyInduction.lean"
+  },
+  {
+   "name": "ACB13ActualAllRadialBounds",
+   "file": "LeanCode/Internal/PhysicalAnalysis/ACB13ActualAllRadialBounds.lean"
+  },
+  {
+   "name": "ACB14ActualCenterOuterRows",
+   "file": "LeanCode/Internal/PhysicalAnalysis/ACB14ActualCenterOuterRows.lean"
+  },
+  {
+   "name": "ACB15CenterMixedRowEnergy",
+   "file": "LeanCode/Internal/PhysicalAnalysis/ACB15CenterMixedRowEnergy.lean"
+  },
+  {
+   "name": "ACB16ActualNativeOuterBounds",
+   "file": "LeanCode/Internal/PhysicalAnalysis/ACB16ActualNativeOuterBounds.lean"
+  },
+  {
+   "name": "ACB17ActualInteriorPartition",
+   "file": "LeanCode/Internal/PhysicalAnalysis/ACB17ActualInteriorPartition.lean"
+  },
+  {
+   "name": "ACB18ActualGlobalGradeRecurrence",
+   "file": "LeanCode/Internal/PhysicalAnalysis/ACB18ActualGlobalGradeRecurrence.lean"
+  },
+  {
+   "name": "ACB19ActualNativeCenterGain",
+   "file": "LeanCode/Internal/PhysicalAnalysis/ACB19ActualNativeCenterGain.lean"
+  },
+  {
+   "name": "ACB1OriginalCenterSourceBound",
+   "file": "LeanCode/Internal/PhysicalAnalysis/ACB1OriginalCenterSourceBound.lean"
+  },
+  {
+   "name": "ACB20NativeCenterConsumer",
+   "file": "LeanCode/Internal/PhysicalAnalysis/ACB20NativeCenterConsumer.lean"
+  },
+  {
+   "name": "ACB2RadialVolterraGradient",
+   "file": "LeanCode/Internal/PhysicalAnalysis/ACB2RadialVolterraGradient.lean"
+  },
+  {
+   "name": "ACB3VolterraNativeValueBound",
+   "file": "LeanCode/Internal/PhysicalAnalysis/ACB3VolterraNativeValueBound.lean"
+  },
+  {
+   "name": "ACB4NativeResolventGradient",
+   "file": "LeanCode/Internal/PhysicalAnalysis/ACB4NativeResolventGradient.lean"
+  },
+  {
+   "name": "ACB5OriginalFirstGrade",
+   "file": "LeanCode/Internal/PhysicalAnalysis/ACB5OriginalFirstGrade.lean"
+  },
+  {
+   "name": "ACB6ActualCenterH1Bound",
+   "file": "LeanCode/Internal/PhysicalAnalysis/ACB6ActualCenterH1Bound.lean"
+  },
+  {
+   "name": "ACB7ActualPureProfile",
+   "file": "LeanCode/Internal/PhysicalAnalysis/ACB7ActualPureProfile.lean"
+  },
+  {
+   "name": "ACB8PureProfileLaplacian",
+   "file": "LeanCode/Internal/PhysicalAnalysis/ACB8PureProfileLaplacian.lean"
+  },
+  {
+   "name": "ACB9LiteralCenterCollarEquation",
+   "file": "LeanCode/Internal/PhysicalAnalysis/ACB9LiteralCenterCollarEquation.lean"
+  },
+  {
+   "name": "ACE10VolterraDerivativeBounds",
+   "file": "LeanCode/Internal/PhysicalAnalysis/ACE10VolterraDerivativeBounds.lean"
+  },
+  {
+   "name": "ACE11VolterraSeriesMajorant",
+   "file": "LeanCode/Internal/PhysicalAnalysis/ACE11VolterraSeriesMajorant.lean"
+  },
+  {
+   "name": "ACE12ActualSmoothVolterraSeries",
+   "file": "LeanCode/Internal/PhysicalAnalysis/ACE12ActualSmoothVolterraSeries.lean"
+  },
+  {
+   "name": "ACE13EulerPrimitiveIdentity",
+   "file": "LeanCode/Internal/PhysicalAnalysis/ACE13EulerPrimitiveIdentity.lean"
+  },
+  {
+   "name": "ACE14EulerDilationCommutation",
+   "file": "LeanCode/Internal/PhysicalAnalysis/ACE14EulerDilationCommutation.lean"
+  },
+  {
+   "name": "ACE15ClosedCartesianAlgebra",
+   "file": "LeanCode/Internal/PhysicalAnalysis/ACE15ClosedCartesianAlgebra.lean"
+  },
+  {
+   "name": "ACE16CenterLaplacianIdentity",
+   "file": "LeanCode/Internal/PhysicalAnalysis/ACE16CenterLaplacianIdentity.lean"
+  },
+  {
+   "name": "ACE17VolterraRadiality",
+   "file": "LeanCode/Internal/PhysicalAnalysis/ACE17VolterraRadiality.lean"
+  },
+  {
+   "name": "ACE18ActualVolterraPoisson",
+   "file": "LeanCode/Internal/PhysicalAnalysis/ACE18ActualVolterraPoisson.lean"
+  },
+  {
+   "name": "ACE19LaplacianSeriesPassage",
+   "file": "LeanCode/Internal/PhysicalAnalysis/ACE19LaplacianSeriesPassage.lean"
+  },
+  {
+   "name": "ACE1PowerDilationIntegral",
+   "file": "LeanCode/Internal/PhysicalAnalysis/ACE1PowerDilationIntegral.lean"
+  },
+  {
+   "name": "ACE20ActualVolterraEquation",
+   "file": "LeanCode/Internal/PhysicalAnalysis/ACE20ActualVolterraEquation.lean"
+  },
+  {
+   "name": "ACE21PinnedCenterJet",
+   "file": "LeanCode/Internal/PhysicalAnalysis/ACE21PinnedCenterJet.lean"
+  },
+  {
+   "name": "ACE22PinnedRadialInverse",
+   "file": "LeanCode/Internal/PhysicalAnalysis/ACE22PinnedRadialInverse.lean"
+  },
+  {
+   "name": "ACE23VolterraUniqueness",
+   "file": "LeanCode/Internal/PhysicalAnalysis/ACE23VolterraUniqueness.lean"
+  },
+  {
+   "name": "ACE24PinnedCenterUniqueness",
+   "file": "LeanCode/Internal/PhysicalAnalysis/ACE24PinnedCenterUniqueness.lean"
+  },
+  {
+   "name": "ACE25ActualPinnedCenterSolution",
+   "file": "LeanCode/Internal/PhysicalAnalysis/ACE25ActualPinnedCenterSolution.lean"
+  },
+  {
+   "name": "ACE26LiteralCenterConsumer",
+   "file": "LeanCode/Internal/PhysicalAnalysis/ACE26LiteralCenterConsumer.lean"
+  },
+  {
+   "name": "ACE2DilationBoundsAndLinearity",
+   "file": "LeanCode/Internal/PhysicalAnalysis/ACE2DilationBoundsAndLinearity.lean"
+  },
+  {
+   "name": "ACE3PureModeEuler",
+   "file": "LeanCode/Internal/PhysicalAnalysis/ACE3PureModeEuler.lean"
+  },
+  {
+   "name": "ACE4ActualCenterQuotient",
+   "file": "LeanCode/Internal/PhysicalAnalysis/ACE4ActualCenterQuotient.lean"
+  },
+  {
+   "name": "ACE5CenterQuotientRadiality",
+   "file": "LeanCode/Internal/PhysicalAnalysis/ACE5CenterQuotientRadiality.lean"
+  },
+  {
+   "name": "ACE6RadialPowers",
+   "file": "LeanCode/Internal/PhysicalAnalysis/ACE6RadialPowers.lean"
+  },
+  {
+   "name": "ACE7VolterraPositiveKernel",
+   "file": "LeanCode/Internal/PhysicalAnalysis/ACE7VolterraPositiveKernel.lean"
+  },
+  {
+   "name": "ACE8PositiveKernelBounds",
+   "file": "LeanCode/Internal/PhysicalAnalysis/ACE8PositiveKernelBounds.lean"
+  },
+  {
+   "name": "ACE9PolynomialDerivativeMajorant",
+   "file": "LeanCode/Internal/PhysicalAnalysis/ACE9PolynomialDerivativeMajorant.lean"
+  },
+  {
+   "name": "ACF1SameCellProductRows",
+   "file": "LeanCode/Internal/PhysicalAnalysis/ACF1SameCellProductRows.lean"
+  },
+  {
+   "name": "ACF2OriginalFixedMultiplier",
+   "file": "LeanCode/Internal/PhysicalAnalysis/ACF2OriginalFixedMultiplier.lean"
+  },
+  {
+   "name": "ACF3ActualUniformRadialForcing",
+   "file": "LeanCode/Internal/PhysicalAnalysis/ACF3ActualUniformRadialForcing.lean"
+  },
+  {
+   "name": "ACP10AngularMoments",
+   "file": "LeanCode/Internal/NonlinearAnalysis/ACP10AngularMoments.lean"
+  },
+  {
+   "name": "ACP11ExactPolarForceAlgebra",
+   "file": "LeanCode/Internal/NonlinearAnalysis/ACP11ExactPolarForceAlgebra.lean"
+  },
+  {
+   "name": "ACP12AD10Consumer",
+   "file": "LeanCode/Internal/NonlinearAnalysis/ACP12AD10Consumer.lean"
+  },
+  {
+   "name": "ACP13GenuineCoefficientRotation",
+   "file": "LeanCode/Internal/NonlinearAnalysis/ACP13GenuineCoefficientRotation.lean"
+  },
+  {
+   "name": "ACP14GenuineFourierRotation",
+   "file": "LeanCode/Internal/NonlinearAnalysis/ACP14GenuineFourierRotation.lean"
+  },
+  {
+   "name": "ACP15PhysicalFrameRotation",
+   "file": "LeanCode/Internal/NonlinearAnalysis/ACP15PhysicalFrameRotation.lean"
+  },
+  {
+   "name": "ACP16ForceCoefficientConsumer",
+   "file": "LeanCode/Internal/NonlinearAnalysis/ACP16ForceCoefficientConsumer.lean"
+  },
+  {
+   "name": "ACP1OriginalRotation",
+   "file": "LeanCode/Internal/NonlinearAnalysis/ACP1OriginalRotation.lean"
+  },
+  {
+   "name": "ACP2ForceMatrix",
+   "file": "LeanCode/Internal/NonlinearAnalysis/ACP2ForceMatrix.lean"
+  },
+  {
+   "name": "ACP3MappedForce",
+   "file": "LeanCode/Internal/NonlinearAnalysis/ACP3MappedForce.lean"
+  },
+  {
+   "name": "ACP4PolarForceRows",
+   "file": "LeanCode/Internal/NonlinearAnalysis/ACP4PolarForceRows.lean"
+  },
+  {
+   "name": "ACP5ForceFourierBound",
+   "file": "LeanCode/Internal/NonlinearAnalysis/ACP5ForceFourierBound.lean"
+  },
+  {
+   "name": "ACP6ForceCellCalculus",
+   "file": "LeanCode/Internal/NonlinearAnalysis/ACP6ForceCellCalculus.lean"
+  },
+  {
+   "name": "ACP7ForcePhysicalSeries",
+   "file": "LeanCode/Internal/NonlinearAnalysis/ACP7ForcePhysicalSeries.lean"
+  },
+  {
+   "name": "ACP8ActualForceCoefficients",
+   "file": "LeanCode/Internal/NonlinearAnalysis/ACP8ActualForceCoefficients.lean"
+  },
+  {
+   "name": "ACP9ForceScalarMoments",
+   "file": "LeanCode/Internal/NonlinearAnalysis/ACP9ForceScalarMoments.lean"
+  },
+  {
+   "name": "ADW1ActualOmegaBounds",
+   "file": "LeanCode/Internal/PhysicalAnalysis/ADW1ActualOmegaBounds.lean"
+  },
+  {
+   "name": "ADW2ReciprocalOmegaMultipliers",
+   "file": "LeanCode/Internal/PhysicalAnalysis/ADW2ReciprocalOmegaMultipliers.lean"
+  },
+  {
+   "name": "ADW3LiteralClosedOmegaGraph",
+   "file": "LeanCode/Internal/PhysicalAnalysis/ADW3LiteralClosedOmegaGraph.lean"
+  },
+  {
+   "name": "ADW4ExactNormalizationEquivalence",
+   "file": "LeanCode/Internal/PhysicalAnalysis/ADW4ExactNormalizationEquivalence.lean"
+  },
+  {
+   "name": "ADW5ActualFiniteSmoothCore",
+   "file": "LeanCode/Internal/PhysicalAnalysis/ADW5ActualFiniteSmoothCore.lean"
+  },
+  {
+   "name": "ADW6LiteralOmegaDenseConsumer",
+   "file": "LeanCode/Internal/PhysicalAnalysis/ADW6LiteralOmegaDenseConsumer.lean"
+  },
+  {
+   "name": "ADX1ExactOmegaDiagonals",
+   "file": "LeanCode/Internal/PhysicalAnalysis/ADX1ExactOmegaDiagonals.lean"
+  },
+  {
+   "name": "ADX2LiteralOmegaGrades",
+   "file": "LeanCode/Internal/PhysicalAnalysis/ADX2LiteralOmegaGrades.lean"
+  },
+  {
+   "name": "ADX3CompatibleOmegaGrades",
+   "file": "LeanCode/Internal/PhysicalAnalysis/ADX3CompatibleOmegaGrades.lean"
+  },
+  {
+   "name": "ADY1OriginalLowWeights",
+   "file": "LeanCode/Internal/PhysicalAnalysis/ADY1OriginalLowWeights.lean"
+  },
+  {
+   "name": "ADY2LiteralLowHilbertGraph",
+   "file": "LeanCode/Internal/PhysicalAnalysis/ADY2LiteralLowHilbertGraph.lean"
+  },
+  {
+   "name": "ADY3ActualLowRadialRealization",
+   "file": "LeanCode/Internal/PhysicalAnalysis/ADY3ActualLowRadialRealization.lean"
+  },
+  {
+   "name": "ADY4ActualLowFiniteSmoothDensity",
+   "file": "LeanCode/Internal/PhysicalAnalysis/ADY4ActualLowFiniteSmoothDensity.lean"
+  },
+  {
+   "name": "ADY5LowIncomingTraceBound",
+   "file": "LeanCode/Internal/PhysicalAnalysis/ADY5LowIncomingTraceBound.lean"
+  },
+  {
+   "name": "ADY6OriginalLowDataAndTrace",
+   "file": "LeanCode/Internal/PhysicalAnalysis/ADY6OriginalLowDataAndTrace.lean"
+  },
+  {
+   "name": "ADY7OriginalLowPhysicalCoordinates",
+   "file": "LeanCode/Internal/PhysicalAnalysis/ADY7OriginalLowPhysicalCoordinates.lean"
+  },
+  {
+   "name": "ADY8OriginalLowCarrierConsumer",
+   "file": "LeanCode/Internal/PhysicalAnalysis/ADY8OriginalLowCarrierConsumer.lean"
+  },
+  {
+   "name": "ADZ10UniformHighComparison",
+   "file": "LeanCode/Internal/PhysicalAnalysis/ADZ10UniformHighComparison.lean"
+  },
+  {
+   "name": "ADZ1SmoothHighPowers",
+   "file": "LeanCode/Internal/PhysicalAnalysis/ADZ1SmoothHighPowers.lean"
+  },
+  {
+   "name": "ADZ2HighOmegaMultipliers",
+   "file": "LeanCode/Internal/PhysicalAnalysis/ADZ2HighOmegaMultipliers.lean"
+  },
+  {
+   "name": "ADZ3ExactHighOmegaTilt",
+   "file": "LeanCode/Internal/PhysicalAnalysis/ADZ3ExactHighOmegaTilt.lean"
+  },
+  {
+   "name": "ADZ4HighOmegaEquivalence",
+   "file": "LeanCode/Internal/PhysicalAnalysis/ADZ4HighOmegaEquivalence.lean"
+  },
+  {
+   "name": "ADZ5HighEnergyModeTilt",
+   "file": "LeanCode/Internal/PhysicalAnalysis/ADZ5HighEnergyModeTilt.lean"
+  },
+  {
+   "name": "ADZ6HighEnergyCoreAction",
+   "file": "LeanCode/Internal/PhysicalAnalysis/ADZ6HighEnergyCoreAction.lean"
+  },
+  {
+   "name": "ADZ7HighEnergyCompletedTilt",
+   "file": "LeanCode/Internal/PhysicalAnalysis/ADZ7HighEnergyCompletedTilt.lean"
+  },
+  {
+   "name": "ADZ8HighEnergyEquivalence",
+   "file": "LeanCode/Internal/PhysicalAnalysis/ADZ8HighEnergyEquivalence.lean"
+  },
+  {
+   "name": "ADZ9CompletedCoordinateAction",
+   "file": "LeanCode/Internal/PhysicalAnalysis/ADZ9CompletedCoordinateAction.lean"
+  },
+  {
+   "name": "AEA10ActualPhysicalRowConjugation",
+   "file": "LeanCode/Internal/PhysicalAnalysis/AEA10ActualPhysicalRowConjugation.lean"
+  },
+  {
+   "name": "AEA11OriginalPhysicalEnergyConsumer",
+   "file": "LeanCode/Internal/PhysicalAnalysis/AEA11OriginalPhysicalEnergyConsumer.lean"
+  },
+  {
+   "name": "AEA1ExactLowFrequencyDerivative",
+   "file": "LeanCode/Internal/PhysicalAnalysis/AEA1ExactLowFrequencyDerivative.lean"
+  },
+  {
+   "name": "AEA2OriginalCircularMatrix",
+   "file": "LeanCode/Internal/PhysicalAnalysis/AEA2OriginalCircularMatrix.lean"
+  },
+  {
+   "name": "AEA3OriginalDampingMargin",
+   "file": "LeanCode/Internal/PhysicalAnalysis/AEA3OriginalDampingMargin.lean"
+  },
+  {
+   "name": "AEA4FullReferenceDissipation",
+   "file": "LeanCode/Internal/PhysicalAnalysis/AEA4FullReferenceDissipation.lean"
+  },
+  {
+   "name": "AEA5LiteralWeightedEnergyDerivative",
+   "file": "LeanCode/Internal/PhysicalAnalysis/AEA5LiteralWeightedEnergyDerivative.lean"
+  },
+  {
+   "name": "AEA6ActualFiniteReferenceEnergy",
+   "file": "LeanCode/Internal/PhysicalAnalysis/AEA6ActualFiniteReferenceEnergy.lean"
+  },
+  {
+   "name": "AEA7UniformNormalizedCoefficients",
+   "file": "LeanCode/Internal/PhysicalAnalysis/AEA7UniformNormalizedCoefficients.lean"
+  },
+  {
+   "name": "AEA8ActualNormalizedLowHilbertAction",
+   "file": "LeanCode/Internal/PhysicalAnalysis/AEA8ActualNormalizedLowHilbertAction.lean"
+  },
+  {
+   "name": "AEA9PhysicalBalancingDerivative",
+   "file": "LeanCode/Internal/PhysicalAnalysis/AEA9PhysicalBalancingDerivative.lean"
+  },
+  {
+   "name": "AEB10TiltedReferenceDataSolution",
+   "file": "LeanCode/Internal/PhysicalAnalysis/AEB10TiltedReferenceDataSolution.lean"
+  },
+  {
+   "name": "AEB11TiltedReferenceUniquenessBound",
+   "file": "LeanCode/Internal/PhysicalAnalysis/AEB11TiltedReferenceUniquenessBound.lean"
+  },
+  {
+   "name": "AEB12BoundedComplexTiltedInverse",
+   "file": "LeanCode/Internal/PhysicalAnalysis/AEB12BoundedComplexTiltedInverse.lean"
+  },
+  {
+   "name": "AEB13ExactTiltedReferenceConsumer",
+   "file": "LeanCode/Internal/PhysicalAnalysis/AEB13ExactTiltedReferenceConsumer.lean"
+  },
+  {
+   "name": "AEB1OriginalTiltPotential",
+   "file": "LeanCode/Internal/PhysicalAnalysis/AEB1OriginalTiltPotential.lean"
+  },
+  {
+   "name": "AEB2ActualTiltMultiplier",
+   "file": "LeanCode/Internal/PhysicalAnalysis/AEB2ActualTiltMultiplier.lean"
+  },
+  {
+   "name": "AEB3CoerciveTiltedReferenceForm",
+   "file": "LeanCode/Internal/PhysicalAnalysis/AEB3CoerciveTiltedReferenceForm.lean"
+  },
+  {
+   "name": "AEB4LiteralBWeightedEnergy",
+   "file": "LeanCode/Internal/PhysicalAnalysis/AEB4LiteralBWeightedEnergy.lean"
+  },
+  {
+   "name": "AEB5LiteralTiltCoordinates",
+   "file": "LeanCode/Internal/PhysicalAnalysis/AEB5LiteralTiltCoordinates.lean"
+  },
+  {
+   "name": "AEB6TiltFormBounds",
+   "file": "LeanCode/Internal/PhysicalAnalysis/AEB6TiltFormBounds.lean"
+  },
+  {
+   "name": "AEB7LiteralBWeightedCoercivity",
+   "file": "LeanCode/Internal/PhysicalAnalysis/AEB7LiteralBWeightedCoercivity.lean"
+  },
+  {
+   "name": "AEB8ConstructedTiltReferenceInverse",
+   "file": "LeanCode/Internal/PhysicalAnalysis/AEB8ConstructedTiltReferenceInverse.lean"
+  },
+  {
+   "name": "AEB9TiltedReferenceFunctional",
+   "file": "LeanCode/Internal/PhysicalAnalysis/AEB9TiltedReferenceFunctional.lean"
+  },
+  {
+   "name": "AEC10DerivativeDensityContinuity",
+   "file": "LeanCode/Internal/PhysicalAnalysis/AEC10DerivativeDensityContinuity.lean"
+  },
+  {
+   "name": "AEC11LiteralLowGraphEstimate",
+   "file": "LeanCode/Internal/PhysicalAnalysis/AEC11LiteralLowGraphEstimate.lean"
+  },
+  {
+   "name": "AEC12ConstructedOriginalYEstimateConsumer",
+   "file": "LeanCode/Internal/PhysicalAnalysis/AEC12ConstructedOriginalYEstimateConsumer.lean"
+  },
+  {
+   "name": "AEC1ActualGlobalVolterraMap",
+   "file": "LeanCode/Internal/PhysicalAnalysis/AEC1ActualGlobalVolterraMap.lean"
+  },
+  {
+   "name": "AEC2GlobalFactorialIteration",
+   "file": "LeanCode/Internal/PhysicalAnalysis/AEC2GlobalFactorialIteration.lean"
+  },
+  {
+   "name": "AEC3GlobalLinearCauchyExistence",
+   "file": "LeanCode/Internal/PhysicalAnalysis/AEC3GlobalLinearCauchyExistence.lean"
+  },
+  {
+   "name": "AEC4ActualReferenceCoefficientContinuity",
+   "file": "LeanCode/Internal/PhysicalAnalysis/AEC4ActualReferenceCoefficientContinuity.lean"
+  },
+  {
+   "name": "AEC5ActualLowReferenceCauchySolution",
+   "file": "LeanCode/Internal/PhysicalAnalysis/AEC5ActualLowReferenceCauchySolution.lean"
+  },
+  {
+   "name": "AEC6ActualEnergySlopeContinuity",
+   "file": "LeanCode/Internal/PhysicalAnalysis/AEC6ActualEnergySlopeContinuity.lean"
+  },
+  {
+   "name": "AEC7OriginalIntegratedReferenceEnergy",
+   "file": "LeanCode/Internal/PhysicalAnalysis/AEC7OriginalIntegratedReferenceEnergy.lean"
+  },
+  {
+   "name": "AEC8ConstructedReferenceEnergyConsumer",
+   "file": "LeanCode/Internal/PhysicalAnalysis/AEC8ConstructedReferenceEnergyConsumer.lean"
+  },
+  {
+   "name": "AEC9NormalizedDerivativeEnergyBound",
+   "file": "LeanCode/Internal/PhysicalAnalysis/AEC9NormalizedDerivativeEnergyBound.lean"
+  },
+  {
+   "name": "AED1CompletedEnergyPairing",
+   "file": "LeanCode/Internal/PhysicalAnalysis/AED1CompletedEnergyPairing.lean"
+  },
+  {
+   "name": "AED2InversePowerPairing",
+   "file": "LeanCode/Internal/PhysicalAnalysis/AED2InversePowerPairing.lean"
+  },
+  {
+   "name": "AED3ExactPhaseDerivativeTransport",
+   "file": "LeanCode/Internal/PhysicalAnalysis/AED3ExactPhaseDerivativeTransport.lean"
+  },
+  {
+   "name": "AED4ExactReferenceFormTransport",
+   "file": "LeanCode/Internal/PhysicalAnalysis/AED4ExactReferenceFormTransport.lean"
+  },
+  {
+   "name": "AED5ExactTraceTransport",
+   "file": "LeanCode/Internal/PhysicalAnalysis/AED5ExactTraceTransport.lean"
+  },
+  {
+   "name": "AED6ExactSourceTestCoordinates",
+   "file": "LeanCode/Internal/PhysicalAnalysis/AED6ExactSourceTestCoordinates.lean"
+  },
+  {
+   "name": "AED7ExactForcingTransport",
+   "file": "LeanCode/Internal/PhysicalAnalysis/AED7ExactForcingTransport.lean"
+  },
+  {
+   "name": "AED8SameReferenceInverse",
+   "file": "LeanCode/Internal/PhysicalAnalysis/AED8SameReferenceInverse.lean"
+  },
+  {
+   "name": "AED9ActualPhysicalWeakRows",
+   "file": "LeanCode/Internal/PhysicalAnalysis/AED9ActualPhysicalWeakRows.lean"
+  },
+  {
+   "name": "AEE10SmoothActualReferenceEquations",
+   "file": "LeanCode/Internal/PhysicalAnalysis/AEE10SmoothActualReferenceEquations.lean"
+  },
+  {
+   "name": "AEE11LiteralSmoothModeSquares",
+   "file": "LeanCode/Internal/PhysicalAnalysis/AEE11LiteralSmoothModeSquares.lean"
+  },
+  {
+   "name": "AEE12ActualSmoothPairCoercivity",
+   "file": "LeanCode/Internal/PhysicalAnalysis/AEE12ActualSmoothPairCoercivity.lean"
+  },
+  {
+   "name": "AEE13ExactStoredModeNorms",
+   "file": "LeanCode/Internal/PhysicalAnalysis/AEE13ExactStoredModeNorms.lean"
+  },
+  {
+   "name": "AEE14OriginalSummedSmoothNorms",
+   "file": "LeanCode/Internal/PhysicalAnalysis/AEE14OriginalSummedSmoothNorms.lean"
+  },
+  {
+   "name": "AEE15UniformSmoothCoreCoercivity",
+   "file": "LeanCode/Internal/PhysicalAnalysis/AEE15UniformSmoothCoreCoercivity.lean"
+  },
+  {
+   "name": "AEE16CompleteOriginalLowCoercivity",
+   "file": "LeanCode/Internal/PhysicalAnalysis/AEE16CompleteOriginalLowCoercivity.lean"
+  },
+  {
+   "name": "AEE17OriginalLowReferenceClosedRange",
+   "file": "LeanCode/Internal/PhysicalAnalysis/AEE17OriginalLowReferenceClosedRange.lean"
+  },
+  {
+   "name": "AEE18ActualClassicalDerivativeCurve",
+   "file": "LeanCode/Internal/PhysicalAnalysis/AEE18ActualClassicalDerivativeCurve.lean"
+  },
+  {
+   "name": "AEE19ActualRadialL2Representatives",
+   "file": "LeanCode/Internal/PhysicalAnalysis/AEE19ActualRadialL2Representatives.lean"
+  },
+  {
+   "name": "AEE1ActualContinuousRadialRealization",
+   "file": "LeanCode/Internal/PhysicalAnalysis/AEE1ActualContinuousRadialRealization.lean"
+  },
+  {
+   "name": "AEE20ActualRadialReferenceSolutions",
+   "file": "LeanCode/Internal/PhysicalAnalysis/AEE20ActualRadialReferenceSolutions.lean"
+  },
+  {
+   "name": "AEE21ActualPairedLowGraph",
+   "file": "LeanCode/Internal/PhysicalAnalysis/AEE21ActualPairedLowGraph.lean"
+  },
+  {
+   "name": "AEE22ActualModalResidual",
+   "file": "LeanCode/Internal/PhysicalAnalysis/AEE22ActualModalResidual.lean"
+  },
+  {
+   "name": "AEE23LiteralContinuousLowData",
+   "file": "LeanCode/Internal/PhysicalAnalysis/AEE23LiteralContinuousLowData.lean"
+  },
+  {
+   "name": "AEE24ActualContinuousDataRange",
+   "file": "LeanCode/Internal/PhysicalAnalysis/AEE24ActualContinuousDataRange.lean"
+  },
+  {
+   "name": "AEE25OriginalSmoothDataDensity",
+   "file": "LeanCode/Internal/PhysicalAnalysis/AEE25OriginalSmoothDataDensity.lean"
+  },
+  {
+   "name": "AEE26OriginalSingleDataRange",
+   "file": "LeanCode/Internal/PhysicalAnalysis/AEE26OriginalSingleDataRange.lean"
+  },
+  {
+   "name": "AEE27CompleteLowReferenceSurjectivity",
+   "file": "LeanCode/Internal/PhysicalAnalysis/AEE27CompleteLowReferenceSurjectivity.lean"
+  },
+  {
+   "name": "AEE28UniformOriginalLowInverse",
+   "file": "LeanCode/Internal/PhysicalAnalysis/AEE28UniformOriginalLowInverse.lean"
+  },
+  {
+   "name": "AEE29ActualInverseRowsAndTrace",
+   "file": "LeanCode/Internal/PhysicalAnalysis/AEE29ActualInverseRowsAndTrace.lean"
+  },
+  {
+   "name": "AEE2ActualScalarRadialCoordinates",
+   "file": "LeanCode/Internal/PhysicalAnalysis/AEE2ActualScalarRadialCoordinates.lean"
+  },
+  {
+   "name": "AEE30OriginalLowInverseConsumer",
+   "file": "LeanCode/Internal/PhysicalAnalysis/AEE30OriginalLowInverseConsumer.lean"
+  },
+  {
+   "name": "AEE3OriginalLowRadialMultiplier",
+   "file": "LeanCode/Internal/PhysicalAnalysis/AEE3OriginalLowRadialMultiplier.lean"
+  },
+  {
+   "name": "AEE4CompleteLowReferenceBulkAction",
+   "file": "LeanCode/Internal/PhysicalAnalysis/AEE4CompleteLowReferenceBulkAction.lean"
+  },
+  {
+   "name": "AEE5ActualLowReferenceDataOperator",
+   "file": "LeanCode/Internal/PhysicalAnalysis/AEE5ActualLowReferenceDataOperator.lean"
+  },
+  {
+   "name": "AEE6ActualSingleModeGraphCoordinates",
+   "file": "LeanCode/Internal/PhysicalAnalysis/AEE6ActualSingleModeGraphCoordinates.lean"
+  },
+  {
+   "name": "AEE7OriginalSmoothGraphRealization",
+   "file": "LeanCode/Internal/PhysicalAnalysis/AEE7OriginalSmoothGraphRealization.lean"
+  },
+  {
+   "name": "AEE8LiteralReferenceResidualIdentity",
+   "file": "LeanCode/Internal/PhysicalAnalysis/AEE8LiteralReferenceResidualIdentity.lean"
+  },
+  {
+   "name": "AEE9ActualSmoothReferenceResidual",
+   "file": "LeanCode/Internal/PhysicalAnalysis/AEE9ActualSmoothReferenceResidual.lean"
+  },
+  {
+   "name": "AEF10UniformBoundedTiltInverse",
+   "file": "LeanCode/Internal/PhysicalAnalysis/AEF10UniformBoundedTiltInverse.lean"
+  },
+  {
+   "name": "AEF11UniformHighReferenceConsumer",
+   "file": "LeanCode/Internal/PhysicalAnalysis/AEF11UniformHighReferenceConsumer.lean"
+  },
+  {
+   "name": "AEF1FixedOuterCollar",
+   "file": "LeanCode/Internal/PhysicalAnalysis/AEF1FixedOuterCollar.lean"
+  },
+  {
+   "name": "AEF2CompletedUniformOuterTrace",
+   "file": "LeanCode/Internal/PhysicalAnalysis/AEF2CompletedUniformOuterTrace.lean"
+  },
+  {
+   "name": "AEF3ExponentialMoments",
+   "file": "LeanCode/Internal/PhysicalAnalysis/AEF3ExponentialMoments.lean"
+  },
+  {
+   "name": "AEF4ScaledInnerProfile",
+   "file": "LeanCode/Internal/PhysicalAnalysis/AEF4ScaledInnerProfile.lean"
+  },
+  {
+   "name": "AEF5UniformInnerEnergy",
+   "file": "LeanCode/Internal/PhysicalAnalysis/AEF5UniformInnerEnergy.lean"
+  },
+  {
+   "name": "AEF6CompletedUniformInnerLift",
+   "file": "LeanCode/Internal/PhysicalAnalysis/AEF6CompletedUniformInnerLift.lean"
+  },
+  {
+   "name": "AEF7UniformBWeightedLift",
+   "file": "LeanCode/Internal/PhysicalAnalysis/AEF7UniformBWeightedLift.lean"
+  },
+  {
+   "name": "AEF8UniformTiltFunctional",
+   "file": "LeanCode/Internal/PhysicalAnalysis/AEF8UniformTiltFunctional.lean"
+  },
+  {
+   "name": "AEF9UniformTiltSolutionBound",
+   "file": "LeanCode/Internal/PhysicalAnalysis/AEF9UniformTiltSolutionBound.lean"
+  },
+  {
+   "name": "AEG10LiteralPhysicalDualPairing",
+   "file": "LeanCode/Internal/PhysicalAnalysis/AEG10LiteralPhysicalDualPairing.lean"
+  },
+  {
+   "name": "AEG11ExactEnergyPacketConsumer",
+   "file": "LeanCode/Internal/PhysicalAnalysis/AEG11ExactEnergyPacketConsumer.lean"
+  },
+  {
+   "name": "AEG1UniformHighPhysicalCoordinates",
+   "file": "LeanCode/Internal/PhysicalAnalysis/AEG1UniformHighPhysicalCoordinates.lean"
+  },
+  {
+   "name": "AEG2LiteralHighBulkEmbedding",
+   "file": "LeanCode/Internal/PhysicalAnalysis/AEG2LiteralHighBulkEmbedding.lean"
+  },
+  {
+   "name": "AEG3CompletedPhysicalSlots",
+   "file": "LeanCode/Internal/PhysicalAnalysis/AEG3CompletedPhysicalSlots.lean"
+  },
+  {
+   "name": "AEG4ActualHighEnergyPackets",
+   "file": "LeanCode/Internal/PhysicalAnalysis/AEG4ActualHighEnergyPackets.lean"
+  },
+  {
+   "name": "AEG5LiteralPhysicalCoordinateLaws",
+   "file": "LeanCode/Internal/PhysicalAnalysis/AEG5LiteralPhysicalCoordinateLaws.lean"
+  },
+  {
+   "name": "AEG6OriginalTiltedBulkFidelity",
+   "file": "LeanCode/Internal/PhysicalAnalysis/AEG6OriginalTiltedBulkFidelity.lean"
+  },
+  {
+   "name": "AEG7ActualReconstructionEnergyInput",
+   "file": "LeanCode/Internal/PhysicalAnalysis/AEG7ActualReconstructionEnergyInput.lean"
+  },
+  {
+   "name": "AEG8ActualErrorTestPairing",
+   "file": "LeanCode/Internal/PhysicalAnalysis/AEG8ActualErrorTestPairing.lean"
+  },
+  {
+   "name": "AEG9ActualEightInputCoordinates",
+   "file": "LeanCode/Internal/PhysicalAnalysis/AEG9ActualEightInputCoordinates.lean"
+  },
+  {
+   "name": "AEH1HighBoundaryEmbedding",
+   "file": "LeanCode/Internal/PhysicalAnalysis/AEH1HighBoundaryEmbedding.lean"
+  },
+  {
+   "name": "AEH2RetainedBoundaryMoments",
+   "file": "LeanCode/Internal/PhysicalAnalysis/AEH2RetainedBoundaryMoments.lean"
+  },
+  {
+   "name": "AEH3ActualOuterRetainedTrace",
+   "file": "LeanCode/Internal/PhysicalAnalysis/AEH3ActualOuterRetainedTrace.lean"
+  },
+  {
+   "name": "AEH4ActualHighBoundaryD",
+   "file": "LeanCode/Internal/PhysicalAnalysis/AEH4ActualHighBoundaryD.lean"
+  },
+  {
+   "name": "AEH5SesquilinearBoundaryForm",
+   "file": "LeanCode/Internal/PhysicalAnalysis/AEH5SesquilinearBoundaryForm.lean"
+  },
+  {
+   "name": "AEH6OriginalPhysicalBoundaryConsumer",
+   "file": "LeanCode/Internal/PhysicalAnalysis/AEH6OriginalPhysicalBoundaryConsumer.lean"
+  },
+  {
+   "name": "AEH7ExactBoundaryTermConsumer",
+   "file": "LeanCode/Internal/PhysicalAnalysis/AEH7ExactBoundaryTermConsumer.lean"
+  },
+  {
+   "name": "AEI10OriginalPhysicalLowMultipliers",
+   "file": "LeanCode/Internal/PhysicalAnalysis/AEI10OriginalPhysicalLowMultipliers.lean"
+  },
+  {
+   "name": "AEI11LiteralPhysicalPacketFidelity",
+   "file": "LeanCode/Internal/PhysicalAnalysis/AEI11LiteralPhysicalPacketFidelity.lean"
+  },
+  {
+   "name": "AEI12LiteralLowOutputCoefficientLaws",
+   "file": "LeanCode/Internal/PhysicalAnalysis/AEI12LiteralLowOutputCoefficientLaws.lean"
+  },
+  {
+   "name": "AEI13OriginalLowStoredPhysicalFidelity",
+   "file": "LeanCode/Internal/PhysicalAnalysis/AEI13OriginalLowStoredPhysicalFidelity.lean"
+  },
+  {
+   "name": "AEI14ActualCurrentLowPhysicalRows",
+   "file": "LeanCode/Internal/PhysicalAnalysis/AEI14ActualCurrentLowPhysicalRows.lean"
+  },
+  {
+   "name": "AEI15ActualCompletedLowRowErrors",
+   "file": "LeanCode/Internal/PhysicalAnalysis/AEI15ActualCompletedLowRowErrors.lean"
+  },
+  {
+   "name": "AEI16ActualNormalizedLowResponse",
+   "file": "LeanCode/Internal/PhysicalAnalysis/AEI16ActualNormalizedLowResponse.lean"
+  },
+  {
+   "name": "AEI17LiteralCircularCompletedAction",
+   "file": "LeanCode/Internal/PhysicalAnalysis/AEI17LiteralCircularCompletedAction.lean"
+  },
+  {
+   "name": "AEI18ActualCircularLowRowAlgebra",
+   "file": "LeanCode/Internal/PhysicalAnalysis/AEI18ActualCircularLowRowAlgebra.lean"
+  },
+  {
+   "name": "AEI19OriginalCommonBalancingDiagonal",
+   "file": "LeanCode/Internal/PhysicalAnalysis/AEI19OriginalCommonBalancingDiagonal.lean"
+  },
+  {
+   "name": "AEI1ActualLowNormalizedSymbols",
+   "file": "LeanCode/Internal/PhysicalAnalysis/AEI1ActualLowNormalizedSymbols.lean"
+  },
+  {
+   "name": "AEI20CompletedCircularLowResponse",
+   "file": "LeanCode/Internal/PhysicalAnalysis/AEI20CompletedCircularLowResponse.lean"
+  },
+  {
+   "name": "AEI21OriginalCurrentLowGenerator",
+   "file": "LeanCode/Internal/PhysicalAnalysis/AEI21OriginalCurrentLowGenerator.lean"
+  },
+  {
+   "name": "AEI22OriginalCurrentCauchyOperator",
+   "file": "LeanCode/Internal/PhysicalAnalysis/AEI22OriginalCurrentCauchyOperator.lean"
+  },
+  {
+   "name": "AEI23OriginalUniformLowNeighborhood",
+   "file": "LeanCode/Internal/PhysicalAnalysis/AEI23OriginalUniformLowNeighborhood.lean"
+  },
+  {
+   "name": "AEI24ActualUniformCurrentLowInverse",
+   "file": "LeanCode/Internal/PhysicalAnalysis/AEI24ActualUniformCurrentLowInverse.lean"
+  },
+  {
+   "name": "AEI25OriginalCurrentWeakRows",
+   "file": "LeanCode/Internal/PhysicalAnalysis/AEI25OriginalCurrentWeakRows.lean"
+  },
+  {
+   "name": "AEI26OriginalLowFullPhysicalPacket",
+   "file": "LeanCode/Internal/PhysicalAnalysis/AEI26OriginalLowFullPhysicalPacket.lean"
+  },
+  {
+   "name": "AEI27ExactRhoPhysicalKernelAction",
+   "file": "LeanCode/Internal/PhysicalAnalysis/AEI27ExactRhoPhysicalKernelAction.lean"
+  },
+  {
+   "name": "AEI28LiteralPhysicalCurrentLowRows",
+   "file": "LeanCode/Internal/PhysicalAnalysis/AEI28LiteralPhysicalCurrentLowRows.lean"
+  },
+  {
+   "name": "AEI29OriginalPhysicalCurrentInverseConsumer",
+   "file": "LeanCode/Internal/PhysicalAnalysis/AEI29OriginalPhysicalCurrentInverseConsumer.lean"
+  },
+  {
+   "name": "AEI2OriginalLowComponentRestriction",
+   "file": "LeanCode/Internal/PhysicalAnalysis/AEI2OriginalLowComponentRestriction.lean"
+  },
+  {
+   "name": "AEI3LiteralLowBulkEmbedding",
+   "file": "LeanCode/Internal/PhysicalAnalysis/AEI3LiteralLowBulkEmbedding.lean"
+  },
+  {
+   "name": "AEI4OriginalLowRadialInputMultipliers",
+   "file": "LeanCode/Internal/PhysicalAnalysis/AEI4OriginalLowRadialInputMultipliers.lean"
+  },
+  {
+   "name": "AEI5ActualLowSevenInputPacket",
+   "file": "LeanCode/Internal/PhysicalAnalysis/AEI5ActualLowSevenInputPacket.lean"
+  },
+  {
+   "name": "AEI6ExactLowInputCoefficientLaws",
+   "file": "LeanCode/Internal/PhysicalAnalysis/AEI6ExactLowInputCoefficientLaws.lean"
+  },
+  {
+   "name": "AEI7ActualLowOutputRestriction",
+   "file": "LeanCode/Internal/PhysicalAnalysis/AEI7ActualLowOutputRestriction.lean"
+  },
+  {
+   "name": "AEI8ActualNormalizedLowOutputMaps",
+   "file": "LeanCode/Internal/PhysicalAnalysis/AEI8ActualNormalizedLowOutputMaps.lean"
+  },
+  {
+   "name": "AEI9LiteralLowSevenComponentIdentity",
+   "file": "LeanCode/Internal/PhysicalAnalysis/AEI9LiteralLowSevenComponentIdentity.lean"
+  },
+  {
+   "name": "AEJ1ActualEliminatedDifference",
+   "file": "LeanCode/Internal/PhysicalAnalysis/AEJ1ActualEliminatedDifference.lean"
+  },
+  {
+   "name": "AEJ2ActualHighBulkForms",
+   "file": "LeanCode/Internal/PhysicalAnalysis/AEJ2ActualHighBulkForms.lean"
+  },
+  {
+   "name": "AEJ3ContinuousActualBulkForms",
+   "file": "LeanCode/Internal/PhysicalAnalysis/AEJ3ContinuousActualBulkForms.lean"
+  },
+  {
+   "name": "AEJ4OriginalPhysicalBulkForm",
+   "file": "LeanCode/Internal/PhysicalAnalysis/AEJ4OriginalPhysicalBulkForm.lean"
+  },
+  {
+   "name": "AEJ5ActualFullHighForm",
+   "file": "LeanCode/Internal/PhysicalAnalysis/AEJ5ActualFullHighForm.lean"
+  },
+  {
+   "name": "AEJ6OnePhysicalHighFormBall",
+   "file": "LeanCode/Internal/PhysicalAnalysis/AEJ6OnePhysicalHighFormBall.lean"
+  },
+  {
+   "name": "AEK10UniformGraphOuterTuple",
+   "file": "LeanCode/Internal/PhysicalAnalysis/AEK10UniformGraphOuterTuple.lean"
+  },
+  {
+   "name": "AEK11GraphNativeBoundaryVector",
+   "file": "LeanCode/Internal/PhysicalAnalysis/AEK11GraphNativeBoundaryVector.lean"
+  },
+  {
+   "name": "AEK12GraphNativeKnownFunctional",
+   "file": "LeanCode/Internal/PhysicalAnalysis/AEK12GraphNativeKnownFunctional.lean"
+  },
+  {
+   "name": "AEK13UniformGraphKnownBound",
+   "file": "LeanCode/Internal/PhysicalAnalysis/AEK13UniformGraphKnownBound.lean"
+  },
+  {
+   "name": "AEK14GraphKnownDataConsumer",
+   "file": "LeanCode/Internal/PhysicalAnalysis/AEK14GraphKnownDataConsumer.lean"
+  },
+  {
+   "name": "AEK15BaseB8KnownFunctional",
+   "file": "LeanCode/Internal/PhysicalAnalysis/AEK15BaseB8KnownFunctional.lean"
+  },
+  {
+   "name": "AEK16ExactBaseBF13Consumer",
+   "file": "LeanCode/Internal/PhysicalAnalysis/AEK16ExactBaseBF13Consumer.lean"
+  },
+  {
+   "name": "AEK1ActualInhomogeneousPacket",
+   "file": "LeanCode/Internal/PhysicalAnalysis/AEK1ActualInhomogeneousPacket.lean"
+  },
+  {
+   "name": "AEK2LiteralSourceCoordinates",
+   "file": "LeanCode/Internal/PhysicalAnalysis/AEK2LiteralSourceCoordinates.lean"
+  },
+  {
+   "name": "AEK3ActualSourceGraphBulk",
+   "file": "LeanCode/Internal/PhysicalAnalysis/AEK3ActualSourceGraphBulk.lean"
+  },
+  {
+   "name": "AEK4DirectKnownBulk",
+   "file": "LeanCode/Internal/PhysicalAnalysis/AEK4DirectKnownBulk.lean"
+  },
+  {
+   "name": "AEK5ActualKnownFunctional",
+   "file": "LeanCode/Internal/PhysicalAnalysis/AEK5ActualKnownFunctional.lean"
+  },
+  {
+   "name": "AEK6CompleteSourceCompatibility",
+   "file": "LeanCode/Internal/PhysicalAnalysis/AEK6CompleteSourceCompatibility.lean"
+  },
+  {
+   "name": "AEK7UniformKnownFunctionalBound",
+   "file": "LeanCode/Internal/PhysicalAnalysis/AEK7UniformKnownFunctionalBound.lean"
+  },
+  {
+   "name": "AEK8CompleteKnownDataFunctional",
+   "file": "LeanCode/Internal/PhysicalAnalysis/AEK8CompleteKnownDataFunctional.lean"
+  },
+  {
+   "name": "AEK9UniformSourceOuterTrace",
+   "file": "LeanCode/Internal/PhysicalAnalysis/AEK9UniformSourceOuterTrace.lean"
+  },
+  {
+   "name": "AEL1ActualCurrentZeroForm",
+   "file": "LeanCode/Internal/PhysicalAnalysis/AEL1ActualCurrentZeroForm.lean"
+  },
+  {
+   "name": "AEL2ActualComplexWeakCorrespondence",
+   "file": "LeanCode/Internal/PhysicalAnalysis/AEL2ActualComplexWeakCorrespondence.lean"
+  },
+  {
+   "name": "AEL3CoerciveDualConstruction",
+   "file": "LeanCode/Internal/PhysicalAnalysis/AEL3CoerciveDualConstruction.lean"
+  },
+  {
+   "name": "AEL4ActualCurrentCoercivity",
+   "file": "LeanCode/Internal/PhysicalAnalysis/AEL4ActualCurrentCoercivity.lean"
+  },
+  {
+   "name": "AEL5ActualHighDualInverse",
+   "file": "LeanCode/Internal/PhysicalAnalysis/AEL5ActualHighDualInverse.lean"
+  },
+  {
+   "name": "AEL6ActualLiftedHighSolution",
+   "file": "LeanCode/Internal/PhysicalAnalysis/AEL6ActualLiftedHighSolution.lean"
+  },
+  {
+   "name": "AEL7OneOriginalHighLowBall",
+   "file": "LeanCode/Internal/PhysicalAnalysis/AEL7OneOriginalHighLowBall.lean"
+  },
+  {
+   "name": "AEL8ActualComplexSolutionAndUniqueness",
+   "file": "LeanCode/Internal/PhysicalAnalysis/AEL8ActualComplexSolutionAndUniqueness.lean"
+  },
+  {
+   "name": "AEL9SamePhysicalDiagonalConsumer",
+   "file": "LeanCode/Internal/PhysicalAnalysis/AEL9SamePhysicalDiagonalConsumer.lean"
+  },
+  {
+   "name": "AEM10ActualLowSevenBoundaryInput",
+   "file": "LeanCode/Internal/PhysicalAnalysis/AEM10ActualLowSevenBoundaryInput.lean"
+  },
+  {
+   "name": "AEM11GenuineLowPhysicalBoundaryCross",
+   "file": "LeanCode/Internal/PhysicalAnalysis/AEM11GenuineLowPhysicalBoundaryCross.lean"
+  },
+  {
+   "name": "AEM12UniformOriginalBoundaryCross",
+   "file": "LeanCode/Internal/PhysicalAnalysis/AEM12UniformOriginalBoundaryCross.lean"
+  },
+  {
+   "name": "AEM13ExactHighOutputRestriction",
+   "file": "LeanCode/Internal/PhysicalAnalysis/AEM13ExactHighOutputRestriction.lean"
+  },
+  {
+   "name": "AEM14CircularCrossSupport",
+   "file": "LeanCode/Internal/PhysicalAnalysis/AEM14CircularCrossSupport.lean"
+  },
+  {
+   "name": "AEM15ActualLowToHighBulkCross",
+   "file": "LeanCode/Internal/PhysicalAnalysis/AEM15ActualLowToHighBulkCross.lean"
+  },
+  {
+   "name": "AEM16LiteralHighCrossDomain",
+   "file": "LeanCode/Internal/PhysicalAnalysis/AEM16LiteralHighCrossDomain.lean"
+  },
+  {
+   "name": "AEM17ExactHighToLowSupportCancellation",
+   "file": "LeanCode/Internal/PhysicalAnalysis/AEM17ExactHighToLowSupportCancellation.lean"
+  },
+  {
+   "name": "AEM18UniformOriginalHighToLowCross",
+   "file": "LeanCode/Internal/PhysicalAnalysis/AEM18UniformOriginalHighToLowCross.lean"
+  },
+  {
+   "name": "AEM19ExactHighLowPhysicalStorage",
+   "file": "LeanCode/Internal/PhysicalAnalysis/AEM19ExactHighLowPhysicalStorage.lean"
+  },
+  {
+   "name": "AEM1ExactLowHalfCollarEnergy",
+   "file": "LeanCode/Internal/PhysicalAnalysis/AEM1ExactLowHalfCollarEnergy.lean"
+  },
+  {
+   "name": "AEM20LiteralFreeHighPhysicalPacket",
+   "file": "LeanCode/Internal/PhysicalAnalysis/AEM20LiteralFreeHighPhysicalPacket.lean"
+  },
+  {
+   "name": "AEM21CompletedPhysicalHighCrossRows",
+   "file": "LeanCode/Internal/PhysicalAnalysis/AEM21CompletedPhysicalHighCrossRows.lean"
+  },
+  {
+   "name": "AEM22LiteralHighToLowSourceRows",
+   "file": "LeanCode/Internal/PhysicalAnalysis/AEM22LiteralHighToLowSourceRows.lean"
+  },
+  {
+   "name": "AEM23CompleteCrossDataMaps",
+   "file": "LeanCode/Internal/PhysicalAnalysis/AEM23CompleteCrossDataMaps.lean"
+  },
+  {
+   "name": "AEM24ExactGraphNativeCrossEmbedding",
+   "file": "LeanCode/Internal/PhysicalAnalysis/AEM24ExactGraphNativeCrossEmbedding.lean"
+  },
+  {
+   "name": "AEM2ActualCanonicalEndpointContinuity",
+   "file": "LeanCode/Internal/PhysicalAnalysis/AEM2ActualCanonicalEndpointContinuity.lean"
+  },
+  {
+   "name": "AEM3UniformOriginalLowOuterEstimate",
+   "file": "LeanCode/Internal/PhysicalAnalysis/AEM3UniformOriginalLowOuterEstimate.lean"
+  },
+  {
+   "name": "AEM4CompleteUniformLowOuterTrace",
+   "file": "LeanCode/Internal/PhysicalAnalysis/AEM4CompleteUniformLowOuterTrace.lean"
+  },
+  {
+   "name": "AEM5ActualOuterFrequencyComparison",
+   "file": "LeanCode/Internal/PhysicalAnalysis/AEM5ActualOuterFrequencyComparison.lean"
+  },
+  {
+   "name": "AEM6LiteralLowOuterHalfWeights",
+   "file": "LeanCode/Internal/PhysicalAnalysis/AEM6LiteralLowOuterHalfWeights.lean"
+  },
+  {
+   "name": "AEM7LiteralLowBoundaryCoordinates",
+   "file": "LeanCode/Internal/PhysicalAnalysis/AEM7LiteralLowBoundaryCoordinates.lean"
+  },
+  {
+   "name": "AEM8ActualLowOuterTraceMaps",
+   "file": "LeanCode/Internal/PhysicalAnalysis/AEM8ActualLowOuterTraceMaps.lean"
+  },
+  {
+   "name": "AEM99OriginalCrossMapConsumer",
+   "file": "LeanCode/Internal/PhysicalAnalysis/AEM99OriginalCrossMapConsumer.lean"
+  },
+  {
+   "name": "AEM9LiteralPhysicalOuterTrace",
+   "file": "LeanCode/Internal/PhysicalAnalysis/AEM9LiteralPhysicalOuterTrace.lean"
+  },
+  {
+   "name": "AEN10OriginalSmoothNormTools",
+   "file": "LeanCode/Internal/PhysicalAnalysis/AEN10OriginalSmoothNormTools.lean"
+  },
+  {
+   "name": "AEN11PrimitiveLinearityAndSupport",
+   "file": "LeanCode/Internal/PhysicalAnalysis/AEN11PrimitiveLinearityAndSupport.lean"
+  },
+  {
+   "name": "AEN12OriginalBandPrimitiveGain",
+   "file": "LeanCode/Internal/PhysicalAnalysis/AEN12OriginalBandPrimitiveGain.lean"
+  },
+  {
+   "name": "AEN13ActualExceptionalStageBounds",
+   "file": "LeanCode/Internal/PhysicalAnalysis/AEN13ActualExceptionalStageBounds.lean"
+  },
+  {
+   "name": "AEN14ActualPinnedStageBound",
+   "file": "LeanCode/Internal/PhysicalAnalysis/AEN14ActualPinnedStageBound.lean"
+  },
+  {
+   "name": "AEN15ActualStoredNormBounds",
+   "file": "LeanCode/Internal/PhysicalAnalysis/AEN15ActualStoredNormBounds.lean"
+  },
+  {
+   "name": "AEN16ActualNativeExceptionalConsumer",
+   "file": "LeanCode/Internal/PhysicalAnalysis/AEN16ActualNativeExceptionalConsumer.lean"
+  },
+  {
+   "name": "AEN1OrdinaryPowerIntegral",
+   "file": "LeanCode/Internal/PhysicalAnalysis/AEN1OrdinaryPowerIntegral.lean"
+  },
+  {
+   "name": "AEN2ActualPrimitiveBase",
+   "file": "LeanCode/Internal/PhysicalAnalysis/AEN2ActualPrimitiveBase.lean"
+  },
+  {
+   "name": "AEN3FirstOrderRadialRecurrence",
+   "file": "LeanCode/Internal/PhysicalAnalysis/AEN3FirstOrderRadialRecurrence.lean"
+  },
+  {
+   "name": "AEN4ActualSignedCollarEquation",
+   "file": "LeanCode/Internal/PhysicalAnalysis/AEN4ActualSignedCollarEquation.lean"
+  },
+  {
+   "name": "AEN5FiniteRadialInduction",
+   "file": "LeanCode/Internal/PhysicalAnalysis/AEN5FiniteRadialInduction.lean"
+  },
+  {
+   "name": "AEN6ActualRadialBounds",
+   "file": "LeanCode/Internal/PhysicalAnalysis/AEN6ActualRadialBounds.lean"
+  },
+  {
+   "name": "AEN7ActualOuterNativeBounds",
+   "file": "LeanCode/Internal/PhysicalAnalysis/AEN7ActualOuterNativeBounds.lean"
+  },
+  {
+   "name": "AEN8SharpSignedNativeGain",
+   "file": "LeanCode/Internal/PhysicalAnalysis/AEN8SharpSignedNativeGain.lean"
+  },
+  {
+   "name": "AEN9ActualSharpPrimitiveBounds",
+   "file": "LeanCode/Internal/PhysicalAnalysis/AEN9ActualSharpPrimitiveBounds.lean"
+  },
+  {
+   "name": "AFC1CellCutoff",
+   "file": "LeanCode/Internal/PhysicalAnalysis/AFC1CellCutoff.lean"
+  },
+  {
+   "name": "AFI1ActualInteriorReconstruction",
+   "file": "LeanCode/Internal/PhysicalAnalysis/AFI1ActualInteriorReconstruction.lean"
+  },
+  {
+   "name": "AFI2ActualBoundaryMultiplier",
+   "file": "LeanCode/Internal/PhysicalAnalysis/AFI2ActualBoundaryMultiplier.lean"
+  },
+  {
+   "name": "AFI3ActualRadialResidual",
+   "file": "LeanCode/Internal/PhysicalAnalysis/AFI3ActualRadialResidual.lean"
+  },
+  {
+   "name": "AFI4OriginalBoundaryEquation",
+   "file": "LeanCode/Internal/PhysicalAnalysis/AFI4OriginalBoundaryEquation.lean"
+  },
+  {
+   "name": "AFI5ActualScalarToOriginalRows",
+   "file": "LeanCode/Internal/PhysicalAnalysis/AFI5ActualScalarToOriginalRows.lean"
+  },
+  {
+   "name": "AFI6OriginalNonexceptionalInverse",
+   "file": "LeanCode/Internal/PhysicalAnalysis/AFI6OriginalNonexceptionalInverse.lean"
+  },
+  {
+   "name": "AFL1OriginalRowCommutation",
+   "file": "LeanCode/Internal/PhysicalAnalysis/AFL1OriginalRowCommutation.lean"
+  },
+  {
+   "name": "AFL2OriginalTraceCoherence",
+   "file": "LeanCode/Internal/PhysicalAnalysis/AFL2OriginalTraceCoherence.lean"
+  },
+  {
+   "name": "AFL3ExceptionalProjectionIdentification",
+   "file": "LeanCode/Internal/PhysicalAnalysis/AFL3ExceptionalProjectionIdentification.lean"
+  },
+  {
+   "name": "AFL4FullReferenceUniqueness",
+   "file": "LeanCode/Internal/PhysicalAnalysis/AFL4FullReferenceUniqueness.lean"
+  },
+  {
+   "name": "AFM1ActualLinearData",
+   "file": "LeanCode/Internal/PhysicalAnalysis/AFM1ActualLinearData.lean"
+  },
+  {
+   "name": "AFT1OriginalScalarNecessity",
+   "file": "LeanCode/Internal/PhysicalAnalysis/AFT1OriginalScalarNecessity.lean"
+  },
+  {
+   "name": "AFT2OriginalRobinNecessity",
+   "file": "LeanCode/Internal/PhysicalAnalysis/AFT2OriginalRobinNecessity.lean"
+  },
+  {
+   "name": "AFT3OriginalScalarLaws",
+   "file": "LeanCode/Internal/PhysicalAnalysis/AFT3OriginalScalarLaws.lean"
+  },
+  {
+   "name": "AFT4ActualNonexceptionalUniqueness",
+   "file": "LeanCode/Internal/PhysicalAnalysis/AFT4ActualNonexceptionalUniqueness.lean"
+  },
+  {
+   "name": "AFU1ActualSectorBandInputs",
+   "file": "LeanCode/Internal/PhysicalAnalysis/AFU1ActualSectorBandInputs.lean"
+  },
+  {
+   "name": "AFU2ActualFullReferenceState",
+   "file": "LeanCode/Internal/PhysicalAnalysis/AFU2ActualFullReferenceState.lean"
+  },
+  {
+   "name": "AFU3FullNativeBound",
+   "file": "LeanCode/Internal/PhysicalAnalysis/AFU3FullNativeBound.lean"
+  },
+  {
+   "name": "AFU4FullReferenceRightInverse",
+   "file": "LeanCode/Internal/PhysicalAnalysis/AFU4FullReferenceRightInverse.lean"
+  },
+  {
+   "name": "AFX1ActualFluxBulk",
+   "file": "LeanCode/Internal/PhysicalAnalysis/AFX1ActualFluxBulk.lean"
+  },
+  {
+   "name": "AFX2CompletedMatchingTraces",
+   "file": "LeanCode/Internal/PhysicalAnalysis/AFX2CompletedMatchingTraces.lean"
+  },
+  {
+   "name": "AFX3PhysicalFluxIdentity",
+   "file": "LeanCode/Internal/PhysicalAnalysis/AFX3PhysicalFluxIdentity.lean"
+  },
+  {
+   "name": "AFX4MatchingTraceBounds",
+   "file": "LeanCode/Internal/PhysicalAnalysis/AFX4MatchingTraceBounds.lean"
+  },
+  {
+   "name": "AFX5MatchingAngularFlux",
+   "file": "LeanCode/Internal/PhysicalAnalysis/AFX5MatchingAngularFlux.lean"
+  },
+  {
+   "name": "AFX6ActualMatchingConsumer",
+   "file": "LeanCode/Internal/PhysicalAnalysis/AFX6ActualMatchingConsumer.lean"
+  },
+  {
+   "name": "AFY1StrongMatchingSpace",
+   "file": "LeanCode/Internal/PhysicalAnalysis/AFY1StrongMatchingSpace.lean"
+  },
+  {
+   "name": "AFY2AngularIsometry",
+   "file": "LeanCode/Internal/PhysicalAnalysis/AFY2AngularIsometry.lean"
+  },
+  {
+   "name": "AFY3WeakMatchingInclusion",
+   "file": "LeanCode/Internal/PhysicalAnalysis/AFY3WeakMatchingInclusion.lean"
+  },
+  {
+   "name": "AFY4NativeStrongPair",
+   "file": "LeanCode/Internal/PhysicalAnalysis/AFY4NativeStrongPair.lean"
+  },
+  {
+   "name": "AFY5PhysicalStrongTraces",
+   "file": "LeanCode/Internal/PhysicalAnalysis/AFY5PhysicalStrongTraces.lean"
+  },
+  {
+   "name": "AFY6StrongTransfer",
+   "file": "LeanCode/Internal/PhysicalAnalysis/AFY6StrongTransfer.lean"
+  },
+  {
+   "name": "AFY7ActualStrongConsumer",
+   "file": "LeanCode/Internal/PhysicalAnalysis/AFY7ActualStrongConsumer.lean"
+  },
+  {
+   "name": "AFZ1HighMeanFreeTrace",
+   "file": "LeanCode/Internal/PhysicalAnalysis/AFZ1HighMeanFreeTrace.lean"
+  },
+  {
+   "name": "AFZ2ActualDefectFormula",
+   "file": "LeanCode/Internal/PhysicalAnalysis/AFZ2ActualDefectFormula.lean"
+  },
+  {
+   "name": "AFZ3PhysicalDefectCoefficients",
+   "file": "LeanCode/Internal/PhysicalAnalysis/AFZ3PhysicalDefectCoefficients.lean"
+  },
+  {
+   "name": "AFZ4DefectBounds",
+   "file": "LeanCode/Internal/PhysicalAnalysis/AFZ4DefectBounds.lean"
+  },
+  {
+   "name": "AFZ5StrongPhysicalRow",
+   "file": "LeanCode/Internal/PhysicalAnalysis/AFZ5StrongPhysicalRow.lean"
+  },
+  {
+   "name": "AFZ6ActualPhysicalDefectConsumer",
+   "file": "LeanCode/Internal/PhysicalAnalysis/AFZ6ActualPhysicalDefectConsumer.lean"
+  },
+  {
+   "name": "AFZ7CompletedPhysicalRow",
+   "file": "LeanCode/Internal/PhysicalAnalysis/AFZ7CompletedPhysicalRow.lean"
+  },
+  {
+   "name": "AHC1AdditivePhaseRatio",
+   "file": "LeanCode/Internal/PhysicalAnalysis/AHC1AdditivePhaseRatio.lean"
+  },
+  {
+   "name": "AHC2DistributedMomentKernel",
+   "file": "LeanCode/Internal/PhysicalAnalysis/AHC2DistributedMomentKernel.lean"
+  },
+  {
+   "name": "AHC3DistributedShiftOperators",
+   "file": "LeanCode/Internal/PhysicalAnalysis/AHC3DistributedShiftOperators.lean"
+  },
+  {
+   "name": "AHC4DistributedConvolutionBounds",
+   "file": "LeanCode/Internal/PhysicalAnalysis/AHC4DistributedConvolutionBounds.lean"
+  },
+  {
+   "name": "AHC5ExactKernelSplit",
+   "file": "LeanCode/Internal/PhysicalAnalysis/AHC5ExactKernelSplit.lean"
+  },
+  {
+   "name": "AHC6OriginalSingleShift",
+   "file": "LeanCode/Internal/PhysicalAnalysis/AHC6OriginalSingleShift.lean"
+  },
+  {
+   "name": "AHC7OriginalConvolution",
+   "file": "LeanCode/Internal/PhysicalAnalysis/AHC7OriginalConvolution.lean"
+  },
+  {
+   "name": "AHC8DistributedMultiplier",
+   "file": "LeanCode/Internal/PhysicalAnalysis/AHC8DistributedMultiplier.lean"
+  },
+  {
+   "name": "AHC9ActualMultiplierConsumer",
+   "file": "LeanCode/Internal/PhysicalAnalysis/AHC9ActualMultiplierConsumer.lean"
+  },
+  {
+   "name": "AHJ1OrdinaryDiskInterpolation",
+   "file": "LeanCode/Internal/PhysicalAnalysis/AHJ1OrdinaryDiskInterpolation.lean"
+  },
+  {
+   "name": "AHJ2MassGradeComparison",
+   "file": "LeanCode/Internal/PhysicalAnalysis/AHJ2MassGradeComparison.lean"
+  },
+  {
+   "name": "AHJ3MassInterpolationAlgebra",
+   "file": "LeanCode/Internal/PhysicalAnalysis/AHJ3MassInterpolationAlgebra.lean"
+  },
+  {
+   "name": "AHJ4MassEndpointEstimate",
+   "file": "LeanCode/Internal/PhysicalAnalysis/AHJ4MassEndpointEstimate.lean"
+  },
+  {
+   "name": "AHP10ActualRadialFirstInverse",
+   "file": "LeanCode/Internal/NonlinearAnalysis/AHP10ActualRadialFirstInverse.lean"
+  },
+  {
+   "name": "AHP11ActualRadialMassSystem",
+   "file": "LeanCode/Internal/NonlinearAnalysis/AHP11ActualRadialMassSystem.lean"
+  },
+  {
+   "name": "AHP12UniformRadialReconstructionBound",
+   "file": "LeanCode/Internal/NonlinearAnalysis/AHP12UniformRadialReconstructionBound.lean"
+  },
+  {
+   "name": "AHP13ActualRadialMassInverse",
+   "file": "LeanCode/Internal/NonlinearAnalysis/AHP13ActualRadialMassInverse.lean"
+  },
+  {
+   "name": "AHP14ActualRadialCovariantReconstruction",
+   "file": "LeanCode/Internal/NonlinearAnalysis/AHP14ActualRadialCovariantReconstruction.lean"
+  },
+  {
+   "name": "AHP15ExactOuterGaugeBridge",
+   "file": "LeanCode/Internal/NonlinearAnalysis/AHP15ExactOuterGaugeBridge.lean"
+  },
+  {
+   "name": "AHP16ExactOuterEncodedBridge",
+   "file": "LeanCode/Internal/NonlinearAnalysis/AHP16ExactOuterEncodedBridge.lean"
+  },
+  {
+   "name": "AHP17ExactOuterMassBridge",
+   "file": "LeanCode/Internal/NonlinearAnalysis/AHP17ExactOuterMassBridge.lean"
+  },
+  {
+   "name": "AHP18ExactOuterReconstructionBridge",
+   "file": "LeanCode/Internal/NonlinearAnalysis/AHP18ExactOuterReconstructionBridge.lean"
+  },
+  {
+   "name": "AHP19RadialGaugeAndMassSupport",
+   "file": "LeanCode/Internal/NonlinearAnalysis/AHP19RadialGaugeAndMassSupport.lean"
+  },
+  {
+   "name": "AHP1ExactRadialKernelPhase",
+   "file": "LeanCode/Internal/NonlinearAnalysis/AHP1ExactRadialKernelPhase.lean"
+  },
+  {
+   "name": "AHP20GenuineRadialAngularReconstruction",
+   "file": "LeanCode/Internal/NonlinearAnalysis/AHP20GenuineRadialAngularReconstruction.lean"
+  },
+  {
+   "name": "AHP21RadialPhysicalFluxPrimitives",
+   "file": "LeanCode/Internal/NonlinearAnalysis/AHP21RadialPhysicalFluxPrimitives.lean"
+  },
+  {
+   "name": "AHP22ActualRadialCorrectedFluxIdentity",
+   "file": "LeanCode/Internal/NonlinearAnalysis/AHP22ActualRadialCorrectedFluxIdentity.lean"
+  },
+  {
+   "name": "AHP23RadialPhysicalCoordinateIdentities",
+   "file": "LeanCode/Internal/NonlinearAnalysis/AHP23RadialPhysicalCoordinateIdentities.lean"
+  },
+  {
+   "name": "AHP24OriginalSevenSlotReconstruction",
+   "file": "LeanCode/Internal/NonlinearAnalysis/AHP24OriginalSevenSlotReconstruction.lean"
+  },
+  {
+   "name": "AHP25UniformRadialMomentAllocation",
+   "file": "LeanCode/Internal/NonlinearAnalysis/AHP25UniformRadialMomentAllocation.lean"
+  },
+  {
+   "name": "AHP26RadialPhysicalMomentFamilies",
+   "file": "LeanCode/Internal/NonlinearAnalysis/AHP26RadialPhysicalMomentFamilies.lean"
+  },
+  {
+   "name": "AHP27RadialGaugePhysicalMoments",
+   "file": "LeanCode/Internal/NonlinearAnalysis/AHP27RadialGaugePhysicalMoments.lean"
+  },
+  {
+   "name": "AHP28RadialSigmaPhysicalMoments",
+   "file": "LeanCode/Internal/NonlinearAnalysis/AHP28RadialSigmaPhysicalMoments.lean"
+  },
+  {
+   "name": "AHP29RadialFirstInversePhysicalMoments",
+   "file": "LeanCode/Internal/NonlinearAnalysis/AHP29RadialFirstInversePhysicalMoments.lean"
+  },
+  {
+   "name": "AHP2OriginalRadialCoefficientState",
+   "file": "LeanCode/Internal/NonlinearAnalysis/AHP2OriginalRadialCoefficientState.lean"
+  },
+  {
+   "name": "AHP30RadialReconstructionPhysicalMoments",
+   "file": "LeanCode/Internal/NonlinearAnalysis/AHP30RadialReconstructionPhysicalMoments.lean"
+  },
+  {
+   "name": "AHP31RadialMassPhysicalMoments",
+   "file": "LeanCode/Internal/NonlinearAnalysis/AHP31RadialMassPhysicalMoments.lean"
+  },
+  {
+   "name": "AHP33ActualRadialReconstructionConsumer",
+   "file": "LeanCode/Internal/NonlinearAnalysis/AHP33ActualRadialReconstructionConsumer.lean"
+  },
+  {
+   "name": "AHP3ActualRadialForceKernels",
+   "file": "LeanCode/Internal/NonlinearAnalysis/AHP3ActualRadialForceKernels.lean"
+  },
+  {
+   "name": "AHP4ActualRadialGaugeSigmaKernels",
+   "file": "LeanCode/Internal/NonlinearAnalysis/AHP4ActualRadialGaugeSigmaKernels.lean"
+  },
+  {
+   "name": "AHP5FixedKernelRadialBounds",
+   "file": "LeanCode/Internal/NonlinearAnalysis/AHP5FixedKernelRadialBounds.lean"
+  },
+  {
+   "name": "AHP6ActualRadialGaugeInverse",
+   "file": "LeanCode/Internal/NonlinearAnalysis/AHP6ActualRadialGaugeInverse.lean"
+  },
+  {
+   "name": "AHP7UniformRadialGaugeBound",
+   "file": "LeanCode/Internal/NonlinearAnalysis/AHP7UniformRadialGaugeBound.lean"
+  },
+  {
+   "name": "AHP8ActualRadialEncodedSystem",
+   "file": "LeanCode/Internal/NonlinearAnalysis/AHP8ActualRadialEncodedSystem.lean"
+  },
+  {
+   "name": "AHP9UniformRadialEncodedBound",
+   "file": "LeanCode/Internal/NonlinearAnalysis/AHP9UniformRadialEncodedBound.lean"
+  },
+  {
+   "name": "AHQ10ActualSigmaKernelContinuity",
+   "file": "LeanCode/Internal/NonlinearAnalysis/AHQ10ActualSigmaKernelContinuity.lean"
+  },
+  {
+   "name": "AHQ11ActualKnownKernelContinuity",
+   "file": "LeanCode/Internal/NonlinearAnalysis/AHQ11ActualKnownKernelContinuity.lean"
+  },
+  {
+   "name": "AHQ12ActualUnknownKernelContinuity",
+   "file": "LeanCode/Internal/NonlinearAnalysis/AHQ12ActualUnknownKernelContinuity.lean"
+  },
+  {
+   "name": "AHQ13ActualMassKernelContinuity",
+   "file": "LeanCode/Internal/NonlinearAnalysis/AHQ13ActualMassKernelContinuity.lean"
+  },
+  {
+   "name": "AHQ14OriginalSevenSlotContinuity",
+   "file": "LeanCode/Internal/NonlinearAnalysis/AHQ14OriginalSevenSlotContinuity.lean"
+  },
+  {
+   "name": "AHQ1UniformKernelEntryDecay",
+   "file": "LeanCode/Internal/NonlinearAnalysis/AHQ1UniformKernelEntryDecay.lean"
+  },
+  {
+   "name": "AHQ2CompositionContinuity",
+   "file": "LeanCode/Internal/NonlinearAnalysis/AHQ2CompositionContinuity.lean"
+  },
+  {
+   "name": "AHQ3KernelPowerContinuity",
+   "file": "LeanCode/Internal/NonlinearAnalysis/AHQ3KernelPowerContinuity.lean"
+  },
+  {
+   "name": "AHQ4NeumannEntryContinuity",
+   "file": "LeanCode/Internal/NonlinearAnalysis/AHQ4NeumannEntryContinuity.lean"
+  },
+  {
+   "name": "AHQ5RegularKernelAlgebra",
+   "file": "LeanCode/Internal/NonlinearAnalysis/AHQ5RegularKernelAlgebra.lean"
+  },
+  {
+   "name": "AHQ6FixedRadialKernelRegularity",
+   "file": "LeanCode/Internal/NonlinearAnalysis/AHQ6FixedRadialKernelRegularity.lean"
+  },
+  {
+   "name": "AHQ7PhysicalCoefficientContinuity",
+   "file": "LeanCode/Internal/NonlinearAnalysis/AHQ7PhysicalCoefficientContinuity.lean"
+  },
+  {
+   "name": "AHQ8ActualGaugeInverseContinuity",
+   "file": "LeanCode/Internal/NonlinearAnalysis/AHQ8ActualGaugeInverseContinuity.lean"
+  },
+  {
+   "name": "AHQ9ActualFirstSystemContinuity",
+   "file": "LeanCode/Internal/NonlinearAnalysis/AHQ9ActualFirstSystemContinuity.lean"
+  },
+  {
+   "name": "AHR1PositiveAnnulusNormalization",
+   "file": "LeanCode/Internal/NonlinearAnalysis/AHR1PositiveAnnulusNormalization.lean"
+  },
+  {
+   "name": "AHR2OriginalSevenSlotOneHigh",
+   "file": "LeanCode/Internal/NonlinearAnalysis/AHR2OriginalSevenSlotOneHigh.lean"
+  },
+  {
+   "name": "AHS10ForceEncodingEquivalence",
+   "file": "LeanCode/Internal/NonlinearAnalysis/AHS10ForceEncodingEquivalence.lean"
+  },
+  {
+   "name": "AHS11ActualEncodedForceSystem",
+   "file": "LeanCode/Internal/NonlinearAnalysis/AHS11ActualEncodedForceSystem.lean"
+  },
+  {
+   "name": "AHS12ActualForceInverseConsumer",
+   "file": "LeanCode/Internal/NonlinearAnalysis/AHS12ActualForceInverseConsumer.lean"
+  },
+  {
+   "name": "AHS13SameSevenSlotForceChart",
+   "file": "LeanCode/Internal/NonlinearAnalysis/AHS13SameSevenSlotForceChart.lean"
+  },
+  {
+   "name": "AHS14SameSevenSlotForceData",
+   "file": "LeanCode/Internal/NonlinearAnalysis/AHS14SameSevenSlotForceData.lean"
+  },
+  {
+   "name": "AHS15SameCovariantPhysicalForceRows",
+   "file": "LeanCode/Internal/NonlinearAnalysis/AHS15SameCovariantPhysicalForceRows.lean"
+  },
+  {
+   "name": "AHS16OriginalRadiusForceGaugeConsumer",
+   "file": "LeanCode/Internal/NonlinearAnalysis/AHS16OriginalRadiusForceGaugeConsumer.lean"
+  },
+  {
+   "name": "AHS1GaugeMeanContraction",
+   "file": "LeanCode/Internal/NonlinearAnalysis/AHS1GaugeMeanContraction.lean"
+  },
+  {
+   "name": "AHS2ActualGaugeEquivalence",
+   "file": "LeanCode/Internal/NonlinearAnalysis/AHS2ActualGaugeEquivalence.lean"
+  },
+  {
+   "name": "AHS3ActualRetainedForceRow",
+   "file": "LeanCode/Internal/NonlinearAnalysis/AHS3ActualRetainedForceRow.lean"
+  },
+  {
+   "name": "AHS4RetainedFirstRowExtraction",
+   "file": "LeanCode/Internal/NonlinearAnalysis/AHS4RetainedFirstRowExtraction.lean"
+  },
+  {
+   "name": "AHS5ActualCovariantGaugeConsumer",
+   "file": "LeanCode/Internal/NonlinearAnalysis/AHS5ActualCovariantGaugeConsumer.lean"
+  },
+  {
+   "name": "AHS6RadialEncodedSupport",
+   "file": "LeanCode/Internal/NonlinearAnalysis/AHS6RadialEncodedSupport.lean"
+  },
+  {
+   "name": "AHS7EncodedCoordinateCalculus",
+   "file": "LeanCode/Internal/NonlinearAnalysis/AHS7EncodedCoordinateCalculus.lean"
+  },
+  {
+   "name": "AHS8ActualForceChartCalculus",
+   "file": "LeanCode/Internal/NonlinearAnalysis/AHS8ActualForceChartCalculus.lean"
+  },
+  {
+   "name": "AHS9EncodedForceScalarRows",
+   "file": "LeanCode/Internal/NonlinearAnalysis/AHS9EncodedForceScalarRows.lean"
+  },
+  {
+   "name": "AHT10UniformNormalizedActions",
+   "file": "LeanCode/Internal/NonlinearAnalysis/AHT10UniformNormalizedActions.lean"
+  },
+  {
+   "name": "AHT1OriginalBulkWeights",
+   "file": "LeanCode/Internal/NonlinearAnalysis/AHT1OriginalBulkWeights.lean"
+  },
+  {
+   "name": "AHT2FullBulkKernelAction",
+   "file": "LeanCode/Internal/NonlinearAnalysis/AHT2FullBulkKernelAction.lean"
+  },
+  {
+   "name": "AHT3BulkActionMeasurable",
+   "file": "LeanCode/Internal/NonlinearAnalysis/AHT3BulkActionMeasurable.lean"
+  },
+  {
+   "name": "AHT4CompletedKernelLp",
+   "file": "LeanCode/Internal/NonlinearAnalysis/AHT4CompletedKernelLp.lean"
+  },
+  {
+   "name": "AHT5RadialCoordinateEquivalence",
+   "file": "LeanCode/Internal/NonlinearAnalysis/AHT5RadialCoordinateEquivalence.lean"
+  },
+  {
+   "name": "AHT6LiteralPhysicalKernelAction",
+   "file": "LeanCode/Internal/NonlinearAnalysis/AHT6LiteralPhysicalKernelAction.lean"
+  },
+  {
+   "name": "AHT7ActualOriginalKernelFamilies",
+   "file": "LeanCode/Internal/NonlinearAnalysis/AHT7ActualOriginalKernelFamilies.lean"
+  },
+  {
+   "name": "AHT8OriginalCompletedCovariants",
+   "file": "LeanCode/Internal/NonlinearAnalysis/AHT8OriginalCompletedCovariants.lean"
+  },
+  {
+   "name": "AHT9ExactAnnularConsumer",
+   "file": "LeanCode/Internal/NonlinearAnalysis/AHT9ExactAnnularConsumer.lean"
+  },
+  {
+   "name": "AHU10CircularKernelEntryContinuity",
+   "file": "LeanCode/Internal/NonlinearAnalysis/AHU10CircularKernelEntryContinuity.lean"
+  },
+  {
+   "name": "AHU11CompletedAnnularErrorActions",
+   "file": "LeanCode/Internal/NonlinearAnalysis/AHU11CompletedAnnularErrorActions.lean"
+  },
+  {
+   "name": "AHU12ExactAnnularErrorConsumer",
+   "file": "LeanCode/Internal/NonlinearAnalysis/AHU12ExactAnnularErrorConsumer.lean"
+  },
+  {
+   "name": "AHU13EvaluatedOneHighErrorConsumer",
+   "file": "LeanCode/Internal/NonlinearAnalysis/AHU13EvaluatedOneHighErrorConsumer.lean"
+  },
+  {
+   "name": "AHU1RadialVanishingMomentAllocation",
+   "file": "LeanCode/Internal/NonlinearAnalysis/AHU1RadialVanishingMomentAllocation.lean"
+  },
+  {
+   "name": "AHU2ActualCoefficientVanishing",
+   "file": "LeanCode/Internal/NonlinearAnalysis/AHU2ActualCoefficientVanishing.lean"
+  },
+  {
+   "name": "AHU3OrderedReferenceDifferences",
+   "file": "LeanCode/Internal/NonlinearAnalysis/AHU3OrderedReferenceDifferences.lean"
+  },
+  {
+   "name": "AHU4ActualGaugeFirstInverseErrors",
+   "file": "LeanCode/Internal/NonlinearAnalysis/AHU4ActualGaugeFirstInverseErrors.lean"
+  },
+  {
+   "name": "AHU5ExactCircularEncodedData",
+   "file": "LeanCode/Internal/NonlinearAnalysis/AHU5ExactCircularEncodedData.lean"
+  },
+  {
+   "name": "AHU6CircularChartReconstruction",
+   "file": "LeanCode/Internal/NonlinearAnalysis/AHU6CircularChartReconstruction.lean"
+  },
+  {
+   "name": "AHU7ActualScalarMassErrors",
+   "file": "LeanCode/Internal/NonlinearAnalysis/AHU7ActualScalarMassErrors.lean"
+  },
+  {
+   "name": "AHU8ActualNormalizedReconstructionErrors",
+   "file": "LeanCode/Internal/NonlinearAnalysis/AHU8ActualNormalizedReconstructionErrors.lean"
+  },
+  {
+   "name": "AHU9LiteralCircularFourierFormula",
+   "file": "LeanCode/Internal/NonlinearAnalysis/AHU9LiteralCircularFourierFormula.lean"
+  },
+  {
+   "name": "AHV10FrozenOriginalOuterInverseReuse",
+   "file": "LeanCode/Internal/NonlinearAnalysis/AHV10FrozenOriginalOuterInverseReuse.lean"
+  },
+  {
+   "name": "AHV11RetainedInverseRadiusContinuity",
+   "file": "LeanCode/Internal/NonlinearAnalysis/AHV11RetainedInverseRadiusContinuity.lean"
+  },
+  {
+   "name": "AHV12CompletedAnnularRetainedInverse",
+   "file": "LeanCode/Internal/NonlinearAnalysis/AHV12CompletedAnnularRetainedInverse.lean"
+  },
+  {
+   "name": "AHV13EvaluatedInverseOneHigh",
+   "file": "LeanCode/Internal/NonlinearAnalysis/AHV13EvaluatedInverseOneHigh.lean"
+  },
+  {
+   "name": "AHV14ExactPhysicalInverseConsumer",
+   "file": "LeanCode/Internal/NonlinearAnalysis/AHV14ExactPhysicalInverseConsumer.lean"
+  },
+  {
+   "name": "AHV1ActualRetainedForceError",
+   "file": "LeanCode/Internal/NonlinearAnalysis/AHV1ActualRetainedForceError.lean"
+  },
+  {
+   "name": "AHV2FixedRetainedHighInverse",
+   "file": "LeanCode/Internal/NonlinearAnalysis/AHV2FixedRetainedHighInverse.lean"
+  },
+  {
+   "name": "AHV3NormalizedRetainedHighError",
+   "file": "LeanCode/Internal/NonlinearAnalysis/AHV3NormalizedRetainedHighError.lean"
+  },
+  {
+   "name": "AHV4CircularRetainedSymbol",
+   "file": "LeanCode/Internal/NonlinearAnalysis/AHV4CircularRetainedSymbol.lean"
+  },
+  {
+   "name": "AHV5OriginalRetainedAIdentification",
+   "file": "LeanCode/Internal/NonlinearAnalysis/AHV5OriginalRetainedAIdentification.lean"
+  },
+  {
+   "name": "AHV6ActualRetainedInverseBall",
+   "file": "LeanCode/Internal/NonlinearAnalysis/AHV6ActualRetainedInverseBall.lean"
+  },
+  {
+   "name": "AHV7ActualRetainedInverseIdentities",
+   "file": "LeanCode/Internal/NonlinearAnalysis/AHV7ActualRetainedInverseIdentities.lean"
+  },
+  {
+   "name": "AHV8RetainedInversePhysicalMoments",
+   "file": "LeanCode/Internal/NonlinearAnalysis/AHV8RetainedInversePhysicalMoments.lean"
+  },
+  {
+   "name": "AHV9CompleteRetainedHighIsomorphism",
+   "file": "LeanCode/Internal/NonlinearAnalysis/AHV9CompleteRetainedHighIsomorphism.lean"
+  },
+  {
+   "name": "AHW10ActualCofactorJetCoefficients",
+   "file": "LeanCode/Internal/NonlinearAnalysis/AHW10ActualCofactorJetCoefficients.lean"
+  },
+  {
+   "name": "AHW11ActualSignedCofactorKernels",
+   "file": "LeanCode/Internal/NonlinearAnalysis/AHW11ActualSignedCofactorKernels.lean"
+  },
+  {
+   "name": "AHW12ScalarFactorsAndCofactorContinuity",
+   "file": "LeanCode/Internal/NonlinearAnalysis/AHW12ScalarFactorsAndCofactorContinuity.lean"
+  },
+  {
+   "name": "AHW13LiteralCorrectedFluxKernels",
+   "file": "LeanCode/Internal/NonlinearAnalysis/AHW13LiteralCorrectedFluxKernels.lean"
+  },
+  {
+   "name": "AHW14ActualKVReferenceEstimate",
+   "file": "LeanCode/Internal/NonlinearAnalysis/AHW14ActualKVReferenceEstimate.lean"
+  },
+  {
+   "name": "AHW15NormalizedFluxReferenceErrors",
+   "file": "LeanCode/Internal/NonlinearAnalysis/AHW15NormalizedFluxReferenceErrors.lean"
+  },
+  {
+   "name": "AHW16UnprojectedPhysicalFluxErrors",
+   "file": "LeanCode/Internal/NonlinearAnalysis/AHW16UnprojectedPhysicalFluxErrors.lean"
+  },
+  {
+   "name": "AHW17UnprojectedFirstRowAndContinuity",
+   "file": "LeanCode/Internal/NonlinearAnalysis/AHW17UnprojectedFirstRowAndContinuity.lean"
+  },
+  {
+   "name": "AHW18LiteralUnprojectedCircularRows",
+   "file": "LeanCode/Internal/NonlinearAnalysis/AHW18LiteralUnprojectedCircularRows.lean"
+  },
+  {
+   "name": "AHW19EliminatedBulkReferenceAndContinuity",
+   "file": "LeanCode/Internal/NonlinearAnalysis/AHW19EliminatedBulkReferenceAndContinuity.lean"
+  },
+  {
+   "name": "AHW1RetainedStateMomentAllocation",
+   "file": "LeanCode/Internal/NonlinearAnalysis/AHW1RetainedStateMomentAllocation.lean"
+  },
+  {
+   "name": "AHW20CompletedEliminatedBulkAction",
+   "file": "LeanCode/Internal/NonlinearAnalysis/AHW20CompletedEliminatedBulkAction.lean"
+  },
+  {
+   "name": "AHW21GenuineCofactorAngularProduct",
+   "file": "LeanCode/Internal/NonlinearAnalysis/AHW21GenuineCofactorAngularProduct.lean"
+  },
+  {
+   "name": "AHW22LiteralCircularEntries",
+   "file": "LeanCode/Internal/NonlinearAnalysis/AHW22LiteralCircularEntries.lean"
+  },
+  {
+   "name": "AHW23GenuinePhysicalThirdFlux",
+   "file": "LeanCode/Internal/NonlinearAnalysis/AHW23GenuinePhysicalThirdFlux.lean"
+  },
+  {
+   "name": "AHW24LiteralKVAndPhysicalV",
+   "file": "LeanCode/Internal/NonlinearAnalysis/AHW24LiteralKVAndPhysicalV.lean"
+  },
+  {
+   "name": "AHW25LiteralEliminatedCircularFlux",
+   "file": "LeanCode/Internal/NonlinearAnalysis/AHW25LiteralEliminatedCircularFlux.lean"
+  },
+  {
+   "name": "AHW26PhysicalErrorOneHighAndJets",
+   "file": "LeanCode/Internal/NonlinearAnalysis/AHW26PhysicalErrorOneHighAndJets.lean"
+  },
+  {
+   "name": "AHW27ExactEliminatedPhysicalConsumer",
+   "file": "LeanCode/Internal/NonlinearAnalysis/AHW27ExactEliminatedPhysicalConsumer.lean"
+  },
+  {
+   "name": "AHW28LiteralMeanFreePhysicalRV",
+   "file": "LeanCode/Internal/NonlinearAnalysis/AHW28LiteralMeanFreePhysicalRV.lean"
+  },
+  {
+   "name": "AHW2RetainedReferenceAlgebra",
+   "file": "LeanCode/Internal/NonlinearAnalysis/AHW2RetainedReferenceAlgebra.lean"
+  },
+  {
+   "name": "AHW3NormalizedEightSlotElimination",
+   "file": "LeanCode/Internal/NonlinearAnalysis/AHW3NormalizedEightSlotElimination.lean"
+  },
+  {
+   "name": "AHW4EliminatedKernelReferenceErrors",
+   "file": "LeanCode/Internal/NonlinearAnalysis/AHW4EliminatedKernelReferenceErrors.lean"
+  },
+  {
+   "name": "AHW5ExactNormalizedFirstRowElimination",
+   "file": "LeanCode/Internal/NonlinearAnalysis/AHW5ExactNormalizedFirstRowElimination.lean"
+  },
+  {
+   "name": "AHW6OriginalPhysicalFirstRowConsumer",
+   "file": "LeanCode/Internal/NonlinearAnalysis/AHW6OriginalPhysicalFirstRowConsumer.lean"
+  },
+  {
+   "name": "AHW7LiteralCircularEliminationFormula",
+   "file": "LeanCode/Internal/NonlinearAnalysis/AHW7LiteralCircularEliminationFormula.lean"
+  },
+  {
+   "name": "AHW8EliminatedKernelContinuity",
+   "file": "LeanCode/Internal/NonlinearAnalysis/AHW8EliminatedKernelContinuity.lean"
+  },
+  {
+   "name": "AHW9CompletedEliminatedXAction",
+   "file": "LeanCode/Internal/NonlinearAnalysis/AHW9CompletedEliminatedXAction.lean"
+  },
+  {
+   "name": "AHX1BulkWeightCocycle",
+   "file": "LeanCode/Internal/NonlinearAnalysis/AHX1BulkWeightCocycle.lean"
+  },
+  {
+   "name": "AHX2BulkKernelComposition",
+   "file": "LeanCode/Internal/NonlinearAnalysis/AHX2BulkKernelComposition.lean"
+  },
+  {
+   "name": "AHX3BulkKernelAlgebra",
+   "file": "LeanCode/Internal/NonlinearAnalysis/AHX3BulkKernelAlgebra.lean"
+  },
+  {
+   "name": "AHX4CompletedKernelComposition",
+   "file": "LeanCode/Internal/NonlinearAnalysis/AHX4CompletedKernelComposition.lean"
+  },
+  {
+   "name": "AHX5CompletedKernelLinearAlgebra",
+   "file": "LeanCode/Internal/NonlinearAnalysis/AHX5CompletedKernelLinearAlgebra.lean"
+  },
+  {
+   "name": "AHX6CompletedDiagonalAndHighSupport",
+   "file": "LeanCode/Internal/NonlinearAnalysis/AHX6CompletedDiagonalAndHighSupport.lean"
+  },
+  {
+   "name": "AHX7RegularRadialActionAlgebra",
+   "file": "LeanCode/Internal/NonlinearAnalysis/AHX7RegularRadialActionAlgebra.lean"
+  },
+  {
+   "name": "AHX8ActualCompletedRetainedInverse",
+   "file": "LeanCode/Internal/NonlinearAnalysis/AHX8ActualCompletedRetainedInverse.lean"
+  },
+  {
+   "name": "AHX9ExactRetainedL2Consumer",
+   "file": "LeanCode/Internal/NonlinearAnalysis/AHX9ExactRetainedL2Consumer.lean"
+  },
+  {
+   "name": "AIA10CompletedCircularPacketIdentity",
+   "file": "LeanCode/Internal/PhysicalAnalysis/AIA10CompletedCircularPacketIdentity.lean"
+  },
+  {
+   "name": "AIA11LiteralDecodedCoordinates",
+   "file": "LeanCode/Internal/PhysicalAnalysis/AIA11LiteralDecodedCoordinates.lean"
+  },
+  {
+   "name": "AIA12ActualPotentialPairing",
+   "file": "LeanCode/Internal/PhysicalAnalysis/AIA12ActualPotentialPairing.lean"
+  },
+  {
+   "name": "AIA13CircularScalarAlgebra",
+   "file": "LeanCode/Internal/PhysicalAnalysis/AIA13CircularScalarAlgebra.lean"
+  },
+  {
+   "name": "AIA14ActualCircleReferenceIdentity",
+   "file": "LeanCode/Internal/PhysicalAnalysis/AIA14ActualCircleReferenceIdentity.lean"
+  },
+  {
+   "name": "AIA15ActualCircularModePairing",
+   "file": "LeanCode/Internal/PhysicalAnalysis/AIA15ActualCircularModePairing.lean"
+  },
+  {
+   "name": "AIA16CompletedCircularPairing",
+   "file": "LeanCode/Internal/PhysicalAnalysis/AIA16CompletedCircularPairing.lean"
+  },
+  {
+   "name": "AIA1CompletedRadialEndpointPairing",
+   "file": "LeanCode/Internal/PhysicalAnalysis/AIA1CompletedRadialEndpointPairing.lean"
+  },
+  {
+   "name": "AIA2LiteralRadialCrossTerm",
+   "file": "LeanCode/Internal/PhysicalAnalysis/AIA2LiteralRadialCrossTerm.lean"
+  },
+  {
+   "name": "AIA3ActualHighEndpointCross",
+   "file": "LeanCode/Internal/PhysicalAnalysis/AIA3ActualHighEndpointCross.lean"
+  },
+  {
+   "name": "AIA4ExactZeroShiftConsumers",
+   "file": "LeanCode/Internal/PhysicalAnalysis/AIA4ExactZeroShiftConsumers.lean"
+  },
+  {
+   "name": "AIA5LiteralCircularBulkEntries",
+   "file": "LeanCode/Internal/PhysicalAnalysis/AIA5LiteralCircularBulkEntries.lean"
+  },
+  {
+   "name": "AIA6ExactPacketOrthogonality",
+   "file": "LeanCode/Internal/PhysicalAnalysis/AIA6ExactPacketOrthogonality.lean"
+  },
+  {
+   "name": "AIA7ActualCircularOutputCoordinates",
+   "file": "LeanCode/Internal/PhysicalAnalysis/AIA7ActualCircularOutputCoordinates.lean"
+  },
+  {
+   "name": "AIA8ActualCompletedCircularCoordinates",
+   "file": "LeanCode/Internal/PhysicalAnalysis/AIA8ActualCompletedCircularCoordinates.lean"
+  },
+  {
+   "name": "AIA9ExactCircularOutputRepresentatives",
+   "file": "LeanCode/Internal/PhysicalAnalysis/AIA9ExactCircularOutputRepresentatives.lean"
+  },
+  {
+   "name": "AIB1GeneralPhysicalSpectral",
+   "file": "LeanCode/Internal/PhysicalAnalysis/AIB1GeneralPhysicalSpectral.lean"
+  },
+  {
+   "name": "AIB2HigherOrdinaryRegularity",
+   "file": "LeanCode/Internal/PhysicalAnalysis/AIB2HigherOrdinaryRegularity.lean"
+  },
+  {
+   "name": "AIB3InteriorEstimateConsumer",
+   "file": "LeanCode/Internal/PhysicalAnalysis/AIB3InteriorEstimateConsumer.lean"
+  },
+  {
+   "name": "AIC10DiskCutoffLaplacian",
+   "file": "LeanCode/Internal/PhysicalAnalysis/AIC10DiskCutoffLaplacian.lean"
+  },
+  {
+   "name": "AIC11LiteralZeroExtension",
+   "file": "LeanCode/Internal/PhysicalAnalysis/AIC11LiteralZeroExtension.lean"
+  },
+  {
+   "name": "AIC12ActualInteriorEquation",
+   "file": "LeanCode/Internal/PhysicalAnalysis/AIC12ActualInteriorEquation.lean"
+  },
+  {
+   "name": "AIC13InteriorBounds",
+   "file": "LeanCode/Internal/PhysicalAnalysis/AIC13InteriorBounds.lean"
+  },
+  {
+   "name": "AIC14ActualInteriorConsumer",
+   "file": "LeanCode/Internal/PhysicalAnalysis/AIC14ActualInteriorConsumer.lean"
+  },
+  {
+   "name": "AIC1ActualWeakJet",
+   "file": "LeanCode/Internal/PhysicalAnalysis/AIC1ActualWeakJet.lean"
+  },
+  {
+   "name": "AIC2ActualCellLocalization",
+   "file": "LeanCode/Internal/PhysicalAnalysis/AIC2ActualCellLocalization.lean"
+  },
+  {
+   "name": "AIC3InteriorCutoff",
+   "file": "LeanCode/Internal/PhysicalAnalysis/AIC3InteriorCutoff.lean"
+  },
+  {
+   "name": "AIC4WeakInverseLocalization",
+   "file": "LeanCode/Internal/PhysicalAnalysis/AIC4WeakInverseLocalization.lean"
+  },
+  {
+   "name": "AIC5LiteralLocalization",
+   "file": "LeanCode/Internal/PhysicalAnalysis/AIC5LiteralLocalization.lean"
+  },
+  {
+   "name": "AIC6CutoffTestCalculus",
+   "file": "LeanCode/Internal/PhysicalAnalysis/AIC6CutoffTestCalculus.lean"
+  },
+  {
+   "name": "AIC7DiskScalarMultiplication",
+   "file": "LeanCode/Internal/PhysicalAnalysis/AIC7DiskScalarMultiplication.lean"
+  },
+  {
+   "name": "AIC8CutoffIntegral",
+   "file": "LeanCode/Internal/PhysicalAnalysis/AIC8CutoffIntegral.lean"
+  },
+  {
+   "name": "AIC9DiskTestIdentities",
+   "file": "LeanCode/Internal/PhysicalAnalysis/AIC9DiskTestIdentities.lean"
+  },
+  {
+   "name": "AID10ActualDomegaRealization",
+   "file": "LeanCode/Internal/PhysicalAnalysis/AID10ActualDomegaRealization.lean"
+  },
+  {
+   "name": "AID11ActualCompactTestConsumer",
+   "file": "LeanCode/Internal/PhysicalAnalysis/AID11ActualCompactTestConsumer.lean"
+  },
+  {
+   "name": "AID12ActualPhysicalGreenIdentity",
+   "file": "LeanCode/Internal/PhysicalAnalysis/AID12ActualPhysicalGreenIdentity.lean"
+  },
+  {
+   "name": "AID13LiteralPhysicalOuterTesting",
+   "file": "LeanCode/Internal/PhysicalAnalysis/AID13LiteralPhysicalOuterTesting.lean"
+  },
+  {
+   "name": "AID14CompletedPhysicalGreenConverse",
+   "file": "LeanCode/Internal/PhysicalAnalysis/AID14CompletedPhysicalGreenConverse.lean"
+  },
+  {
+   "name": "AID15ExactCompletedPhysicalConsumer",
+   "file": "LeanCode/Internal/PhysicalAnalysis/AID15ExactCompletedPhysicalConsumer.lean"
+  },
+  {
+   "name": "AID1ActualHighOutputCoordinates",
+   "file": "LeanCode/Internal/PhysicalAnalysis/AID1ActualHighOutputCoordinates.lean"
+  },
+  {
+   "name": "AID2LiteralPhysicalPacketPairing",
+   "file": "LeanCode/Internal/PhysicalAnalysis/AID2LiteralPhysicalPacketPairing.lean"
+  },
+  {
+   "name": "AID3ActualSinglePhysicalTests",
+   "file": "LeanCode/Internal/PhysicalAnalysis/AID3ActualSinglePhysicalTests.lean"
+  },
+  {
+   "name": "AID4LiteralSingleFluxPairing",
+   "file": "LeanCode/Internal/PhysicalAnalysis/AID4LiteralSingleFluxPairing.lean"
+  },
+  {
+   "name": "AID5ActualCompactFluxEquation",
+   "file": "LeanCode/Internal/PhysicalAnalysis/AID5ActualCompactFluxEquation.lean"
+  },
+  {
+   "name": "AID6LiteralNormalizedSecondRow",
+   "file": "LeanCode/Internal/PhysicalAnalysis/AID6LiteralNormalizedSecondRow.lean"
+  },
+  {
+   "name": "AID7UniformPhysicalOmegaBounds",
+   "file": "LeanCode/Internal/PhysicalAnalysis/AID7UniformPhysicalOmegaBounds.lean"
+  },
+  {
+   "name": "AID8ActualOmegaNormalizedOperators",
+   "file": "LeanCode/Internal/PhysicalAnalysis/AID8ActualOmegaNormalizedOperators.lean"
+  },
+  {
+   "name": "AID9ExactOmegaDerivativeCoordinates",
+   "file": "LeanCode/Internal/PhysicalAnalysis/AID9ExactOmegaDerivativeCoordinates.lean"
+  },
+  {
+   "name": "AIE1ActualHighEnergySourceSolution",
+   "file": "LeanCode/Internal/PhysicalAnalysis/AIE1ActualHighEnergySourceSolution.lean"
+  },
+  {
+   "name": "AIE2ExactFullOutputVariationalLaw",
+   "file": "LeanCode/Internal/PhysicalAnalysis/AIE2ExactFullOutputVariationalLaw.lean"
+  },
+  {
+   "name": "AIE3PhysicalIncomingNormalization",
+   "file": "LeanCode/Internal/PhysicalAnalysis/AIE3PhysicalIncomingNormalization.lean"
+  },
+  {
+   "name": "AIE4ActualGraphSourceEnergySolution",
+   "file": "LeanCode/Internal/PhysicalAnalysis/AIE4ActualGraphSourceEnergySolution.lean"
+  },
+  {
+   "name": "AIE5CompleteGraphEnergyConsumer",
+   "file": "LeanCode/Internal/PhysicalAnalysis/AIE5CompleteGraphEnergyConsumer.lean"
+  },
+  {
+   "name": "AIE6FullPhysicalOutputBound",
+   "file": "LeanCode/Internal/PhysicalAnalysis/AIE6FullPhysicalOutputBound.lean"
+  },
+  {
+   "name": "AIF1FourierGain",
+   "file": "LeanCode/Internal/PhysicalAnalysis/AIF1FourierGain.lean"
+  },
+  {
+   "name": "AIG1ActualInteriorInduction",
+   "file": "LeanCode/Internal/PhysicalAnalysis/AIG1ActualInteriorInduction.lean"
+  },
+  {
+   "name": "AIG2ActualGlobalGluing",
+   "file": "LeanCode/Internal/PhysicalAnalysis/AIG2ActualGlobalGluing.lean"
+  },
+  {
+   "name": "AIM1OrdinaryCoreExtension",
+   "file": "LeanCode/Internal/PhysicalAnalysis/AIM1OrdinaryCoreExtension.lean"
+  },
+  {
+   "name": "AIM2CompletedMultiplication",
+   "file": "LeanCode/Internal/PhysicalAnalysis/AIM2CompletedMultiplication.lean"
+  },
+  {
+   "name": "AIM3CompletedDerivatives",
+   "file": "LeanCode/Internal/PhysicalAnalysis/AIM3CompletedDerivatives.lean"
+  },
+  {
+   "name": "AIM4ActualWeakDerivatives",
+   "file": "LeanCode/Internal/PhysicalAnalysis/AIM4ActualWeakDerivatives.lean"
+  },
+  {
+   "name": "AIM5LocalizedLaplacian",
+   "file": "LeanCode/Internal/PhysicalAnalysis/AIM5LocalizedLaplacian.lean"
+  },
+  {
+   "name": "AIM6ExactLocalizationConsumer",
+   "file": "LeanCode/Internal/PhysicalAnalysis/AIM6ExactLocalizationConsumer.lean"
+  },
+  {
+   "name": "AIP10DiskCoefficientFunctional",
+   "file": "LeanCode/Internal/PhysicalAnalysis/AIP10DiskCoefficientFunctional.lean"
+  },
+  {
+   "name": "AIP11CompletedCoefficientIdentity",
+   "file": "LeanCode/Internal/PhysicalAnalysis/AIP11CompletedCoefficientIdentity.lean"
+  },
+  {
+   "name": "AIP12LocalizedSupport",
+   "file": "LeanCode/Internal/PhysicalAnalysis/AIP12LocalizedSupport.lean"
+  },
+  {
+   "name": "AIP13SmoothTestEquation",
+   "file": "LeanCode/Internal/PhysicalAnalysis/AIP13SmoothTestEquation.lean"
+  },
+  {
+   "name": "AIP14RealFourierTests",
+   "file": "LeanCode/Internal/PhysicalAnalysis/AIP14RealFourierTests.lean"
+  },
+  {
+   "name": "AIP15FourierTestLaplacian",
+   "file": "LeanCode/Internal/PhysicalAnalysis/AIP15FourierTestLaplacian.lean"
+  },
+  {
+   "name": "AIP16FourierPairing",
+   "file": "LeanCode/Internal/PhysicalAnalysis/AIP16FourierPairing.lean"
+  },
+  {
+   "name": "AIP17ActualSpectralEquation",
+   "file": "LeanCode/Internal/PhysicalAnalysis/AIP17ActualSpectralEquation.lean"
+  },
+  {
+   "name": "AIP18ActualInteriorBound",
+   "file": "LeanCode/Internal/PhysicalAnalysis/AIP18ActualInteriorBound.lean"
+  },
+  {
+   "name": "AIP1OriginalZeroGrade",
+   "file": "LeanCode/Internal/PhysicalAnalysis/AIP1OriginalZeroGrade.lean"
+  },
+  {
+   "name": "AIP2ActualDiskFourier",
+   "file": "LeanCode/Internal/PhysicalAnalysis/AIP2ActualDiskFourier.lean"
+  },
+  {
+   "name": "AIP3CompactExtension",
+   "file": "LeanCode/Internal/PhysicalAnalysis/AIP3CompactExtension.lean"
+  },
+  {
+   "name": "AIP4PhysicalTorusIntegrals",
+   "file": "LeanCode/Internal/PhysicalAnalysis/AIP4PhysicalTorusIntegrals.lean"
+  },
+  {
+   "name": "AIP5ActualTorusField",
+   "file": "LeanCode/Internal/PhysicalAnalysis/AIP5ActualTorusField.lean"
+  },
+  {
+   "name": "AIP6SingleCellFourier",
+   "file": "LeanCode/Internal/PhysicalAnalysis/AIP6SingleCellFourier.lean"
+  },
+  {
+   "name": "AIP7SpatialCoefficientIntegral",
+   "file": "LeanCode/Internal/PhysicalAnalysis/AIP7SpatialCoefficientIntegral.lean"
+  },
+  {
+   "name": "AIP8CompactDiskIntegral",
+   "file": "LeanCode/Internal/PhysicalAnalysis/AIP8CompactDiskIntegral.lean"
+  },
+  {
+   "name": "AIP9PeriodizationCutoff",
+   "file": "LeanCode/Internal/PhysicalAnalysis/AIP9PeriodizationCutoff.lean"
+  },
+  {
+   "name": "AIQ10IndependentPhysicalWeakUniqueness",
+   "file": "LeanCode/Internal/PhysicalAnalysis/AIQ10IndependentPhysicalWeakUniqueness.lean"
+  },
+  {
+   "name": "AIQ11ExactCrossSourceAlgebra",
+   "file": "LeanCode/Internal/PhysicalAnalysis/AIQ11ExactCrossSourceAlgebra.lean"
+  },
+  {
+   "name": "AIQ12ActualComplexLinearHighResponse",
+   "file": "LeanCode/Internal/PhysicalAnalysis/AIQ12ActualComplexLinearHighResponse.lean"
+  },
+  {
+   "name": "AIQ13UniformCrossEnergyBound",
+   "file": "LeanCode/Internal/PhysicalAnalysis/AIQ13UniformCrossEnergyBound.lean"
+  },
+  {
+   "name": "AIQ14CompleteHighCrossResponse",
+   "file": "LeanCode/Internal/PhysicalAnalysis/AIQ14CompleteHighCrossResponse.lean"
+  },
+  {
+   "name": "AIQ15UniformPhysicalHighInverseConsumer",
+   "file": "LeanCode/Internal/PhysicalAnalysis/AIQ15UniformPhysicalHighInverseConsumer.lean"
+  },
+  {
+   "name": "AIQ1SameActualSolutionDomega",
+   "file": "LeanCode/Internal/PhysicalAnalysis/AIQ1SameActualSolutionDomega.lean"
+  },
+  {
+   "name": "AIQ2ActualPhysicalCandidateUniqueness",
+   "file": "LeanCode/Internal/PhysicalAnalysis/AIQ2ActualPhysicalCandidateUniqueness.lean"
+  },
+  {
+   "name": "AIQ3OriginalWeakRowConverse",
+   "file": "LeanCode/Internal/PhysicalAnalysis/AIQ3OriginalWeakRowConverse.lean"
+  },
+  {
+   "name": "AIQ4DirectGraphPhysicalBoundary",
+   "file": "LeanCode/Internal/PhysicalAnalysis/AIQ4DirectGraphPhysicalBoundary.lean"
+  },
+  {
+   "name": "AIQ5SameGraphPhysicalBoundaryConsumer",
+   "file": "LeanCode/Internal/PhysicalAnalysis/AIQ5SameGraphPhysicalBoundaryConsumer.lean"
+  },
+  {
+   "name": "AIQ6CompletedFirstRowElimination",
+   "file": "LeanCode/Internal/PhysicalAnalysis/AIQ6CompletedFirstRowElimination.lean"
+  },
+  {
+   "name": "AIQ7LiteralCompletedXCoordinate",
+   "file": "LeanCode/Internal/PhysicalAnalysis/AIQ7LiteralCompletedXCoordinate.lean"
+  },
+  {
+   "name": "AIQ8RegularCompletedAddition",
+   "file": "LeanCode/Internal/PhysicalAnalysis/AIQ8RegularCompletedAddition.lean"
+  },
+  {
+   "name": "AIQ9CompletedPhysicalFluxAssembly",
+   "file": "LeanCode/Internal/PhysicalAnalysis/AIQ9CompletedPhysicalFluxAssembly.lean"
+  },
+  {
+   "name": "AIR1UniformActualSourceRows",
+   "file": "LeanCode/Internal/PhysicalAnalysis/AIR1UniformActualSourceRows.lean"
+  },
+  {
+   "name": "AIR2OriginalKnownSourcePacket",
+   "file": "LeanCode/Internal/PhysicalAnalysis/AIR2OriginalKnownSourcePacket.lean"
+  },
+  {
+   "name": "AIR3ActualKnownLowForcing",
+   "file": "LeanCode/Internal/PhysicalAnalysis/AIR3ActualKnownLowForcing.lean"
+  },
+  {
+   "name": "AIR4CompleteKnownLowDataMap",
+   "file": "LeanCode/Internal/PhysicalAnalysis/AIR4CompleteKnownLowDataMap.lean"
+  },
+  {
+   "name": "AIR5ActualKnownLowDiagonalResponse",
+   "file": "LeanCode/Internal/PhysicalAnalysis/AIR5ActualKnownLowDiagonalResponse.lean"
+  },
+  {
+   "name": "AIR6LiteralKnownPhysicalRows",
+   "file": "LeanCode/Internal/PhysicalAnalysis/AIR6LiteralKnownPhysicalRows.lean"
+  },
+  {
+   "name": "AIR7ExactKnownLowPhysicalForcing",
+   "file": "LeanCode/Internal/PhysicalAnalysis/AIR7ExactKnownLowPhysicalForcing.lean"
+  },
+  {
+   "name": "AIR8ExactKnownLowResponseConsumer",
+   "file": "LeanCode/Internal/PhysicalAnalysis/AIR8ExactKnownLowResponseConsumer.lean"
+  },
+  {
+   "name": "AIS1HighKnownHilbertAmbient",
+   "file": "LeanCode/Internal/PhysicalAnalysis/AIS1HighKnownHilbertAmbient.lean"
+  },
+  {
+   "name": "AIS2ClosedWeightedGraphCompatibility",
+   "file": "LeanCode/Internal/PhysicalAnalysis/AIS2ClosedWeightedGraphCompatibility.lean"
+  },
+  {
+   "name": "AIS3OriginalHighDataCarrier",
+   "file": "LeanCode/Internal/PhysicalAnalysis/AIS3OriginalHighDataCarrier.lean"
+  },
+  {
+   "name": "AIS4LiteralHighDataNorm",
+   "file": "LeanCode/Internal/PhysicalAnalysis/AIS4LiteralHighDataNorm.lean"
+  },
+  {
+   "name": "AIS5SingleHilbertNormBF13",
+   "file": "LeanCode/Internal/PhysicalAnalysis/AIS5SingleHilbertNormBF13.lean"
+  },
+  {
+   "name": "AIT10ActualCoupledNeumannInverse",
+   "file": "LeanCode/Internal/PhysicalAnalysis/AIT10ActualCoupledNeumannInverse.lean"
+  },
+  {
+   "name": "AIT11ActualCoupledResidualCorrespondence",
+   "file": "LeanCode/Internal/PhysicalAnalysis/AIT11ActualCoupledResidualCorrespondence.lean"
+  },
+  {
+   "name": "AIT12OriginalHighCrossWeakEquation",
+   "file": "LeanCode/Internal/PhysicalAnalysis/AIT12OriginalHighCrossWeakEquation.lean"
+  },
+  {
+   "name": "AIT13SameOriginalPrimitiveState",
+   "file": "LeanCode/Internal/PhysicalAnalysis/AIT13SameOriginalPrimitiveState.lean"
+  },
+  {
+   "name": "AIT1OriginalCompleteCoupledSpace",
+   "file": "LeanCode/Internal/PhysicalAnalysis/AIT1OriginalCompleteCoupledSpace.lean"
+  },
+  {
+   "name": "AIT2ActualLowOffDiagonalResponse",
+   "file": "LeanCode/Internal/PhysicalAnalysis/AIT2ActualLowOffDiagonalResponse.lean"
+  },
+  {
+   "name": "AIT3HilbertOffDiagonalNorm",
+   "file": "LeanCode/Internal/PhysicalAnalysis/AIT3HilbertOffDiagonalNorm.lean"
+  },
+  {
+   "name": "AIT4CompleteNeumannFixedPoint",
+   "file": "LeanCode/Internal/PhysicalAnalysis/AIT4CompleteNeumannFixedPoint.lean"
+  },
+  {
+   "name": "AIT5OriginalLowCrossWeakEquation",
+   "file": "LeanCode/Internal/PhysicalAnalysis/AIT5OriginalLowCrossWeakEquation.lean"
+  },
+  {
+   "name": "AIT6ActualCoupledLowCorrespondence",
+   "file": "LeanCode/Internal/PhysicalAnalysis/AIT6ActualCoupledLowCorrespondence.lean"
+  },
+  {
+   "name": "AIT7ActualPhysicalOffDiagonalOperator",
+   "file": "LeanCode/Internal/PhysicalAnalysis/AIT7ActualPhysicalOffDiagonalOperator.lean"
+  },
+  {
+   "name": "AIT8UniformActualCoupledError",
+   "file": "LeanCode/Internal/PhysicalAnalysis/AIT8UniformActualCoupledError.lean"
+  },
+  {
+   "name": "AIT99OriginalCoupledInverseConsumer",
+   "file": "LeanCode/Internal/PhysicalAnalysis/AIT99OriginalCoupledInverseConsumer.lean"
+  },
+  {
+   "name": "AIT9OneOriginalCoupledNeighborhood",
+   "file": "LeanCode/Internal/PhysicalAnalysis/AIT9OneOriginalCoupledNeighborhood.lean"
+  },
+  {
+   "name": "AIU10FullHighSingleDataNorm",
+   "file": "LeanCode/Internal/PhysicalAnalysis/AIU10FullHighSingleDataNorm.lean"
+  },
+  {
+   "name": "AIU11CompleteIndependentCoupledData",
+   "file": "LeanCode/Internal/PhysicalAnalysis/AIU11CompleteIndependentCoupledData.lean"
+  },
+  {
+   "name": "AIU12UniformCoupledFullDataBound",
+   "file": "LeanCode/Internal/PhysicalAnalysis/AIU12UniformCoupledFullDataBound.lean"
+  },
+  {
+   "name": "AIU13CompleteSourcedCoupledConsumer",
+   "file": "LeanCode/Internal/PhysicalAnalysis/AIU13CompleteSourcedCoupledConsumer.lean"
+  },
+  {
+   "name": "AIU14IndependentPhysicalSourceEquation",
+   "file": "LeanCode/Internal/PhysicalAnalysis/AIU14IndependentPhysicalSourceEquation.lean"
+  },
+  {
+   "name": "AIU15IndependentLowPhysicalEquation",
+   "file": "LeanCode/Internal/PhysicalAnalysis/AIU15IndependentLowPhysicalEquation.lean"
+  },
+  {
+   "name": "AIU16OriginalPhysicalCoupledUniqueness",
+   "file": "LeanCode/Internal/PhysicalAnalysis/AIU16OriginalPhysicalCoupledUniqueness.lean"
+  },
+  {
+   "name": "AIU17SamePhysicalFirstRow",
+   "file": "LeanCode/Internal/PhysicalAnalysis/AIU17SamePhysicalFirstRow.lean"
+  },
+  {
+   "name": "AIU1FullKnownHighResponse",
+   "file": "LeanCode/Internal/PhysicalAnalysis/AIU1FullKnownHighResponse.lean"
+  },
+  {
+   "name": "AIU2ExactCrossDataAddition",
+   "file": "LeanCode/Internal/PhysicalAnalysis/AIU2ExactCrossDataAddition.lean"
+  },
+  {
+   "name": "AIU3SamePhysicalHighSuperposition",
+   "file": "LeanCode/Internal/PhysicalAnalysis/AIU3SamePhysicalHighSuperposition.lean"
+  },
+  {
+   "name": "AIU4ActualHighSourceEquation",
+   "file": "LeanCode/Internal/PhysicalAnalysis/AIU4ActualHighSourceEquation.lean"
+  },
+  {
+   "name": "AIU5ActualCoupledKnownSourceResponse",
+   "file": "LeanCode/Internal/PhysicalAnalysis/AIU5ActualCoupledKnownSourceResponse.lean"
+  },
+  {
+   "name": "AIU6GenuineCoupledIncoming",
+   "file": "LeanCode/Internal/PhysicalAnalysis/AIU6GenuineCoupledIncoming.lean"
+  },
+  {
+   "name": "AIU7SameCoupledHighPacket",
+   "file": "LeanCode/Internal/PhysicalAnalysis/AIU7SameCoupledHighPacket.lean"
+  },
+  {
+   "name": "AIU8ActualCoupledPhysicalBoundary",
+   "file": "LeanCode/Internal/PhysicalAnalysis/AIU8ActualCoupledPhysicalBoundary.lean"
+  },
+  {
+   "name": "AIU9OriginalCoupledWeakRows",
+   "file": "LeanCode/Internal/PhysicalAnalysis/AIU9OriginalCoupledWeakRows.lean"
+  },
+  {
+   "name": "AIV1OriginalHilbertNuGraph",
+   "file": "LeanCode/Internal/PhysicalAnalysis/AIV1OriginalHilbertNuGraph.lean"
+  },
+  {
+   "name": "AIV2UniformCombinedNuMultipliers",
+   "file": "LeanCode/Internal/PhysicalAnalysis/AIV2UniformCombinedNuMultipliers.lean"
+  },
+  {
+   "name": "AIV3LiteralInverseProductRule",
+   "file": "LeanCode/Internal/PhysicalAnalysis/AIV3LiteralInverseProductRule.lean"
+  },
+  {
+   "name": "AIV4UniformOriginalFluxComparison",
+   "file": "LeanCode/Internal/PhysicalAnalysis/AIV4UniformOriginalFluxComparison.lean"
+  },
+  {
+   "name": "AIV5ActualHighPairEquivalence",
+   "file": "LeanCode/Internal/PhysicalAnalysis/AIV5ActualHighPairEquivalence.lean"
+  },
+  {
+   "name": "AIV6ExactHighDiagonalCommutation",
+   "file": "LeanCode/Internal/PhysicalAnalysis/AIV6ExactHighDiagonalCommutation.lean"
+  },
+  {
+   "name": "AIV7SameInsertedGradeEquivalence",
+   "file": "LeanCode/Internal/PhysicalAnalysis/AIV7SameInsertedGradeEquivalence.lean"
+  },
+  {
+   "name": "AIV8ExactOriginalHighConsumer",
+   "file": "LeanCode/Internal/PhysicalAnalysis/AIV8ExactOriginalHighConsumer.lean"
+  },
+  {
+   "name": "AIV9LiteralWeightedGraphBounds",
+   "file": "LeanCode/Internal/PhysicalAnalysis/AIV9LiteralWeightedGraphBounds.lean"
+  },
+  {
+   "name": "AIW10OriginalLowUnweightMap",
+   "file": "LeanCode/Internal/PhysicalAnalysis/AIW10OriginalLowUnweightMap.lean"
+  },
+  {
+   "name": "AIW11ExactInverseLowCoefficients",
+   "file": "LeanCode/Internal/PhysicalAnalysis/AIW11ExactInverseLowCoefficients.lean"
+  },
+  {
+   "name": "AIW12UniformFromAJCoefficients",
+   "file": "LeanCode/Internal/PhysicalAnalysis/AIW12UniformFromAJCoefficients.lean"
+  },
+  {
+   "name": "AIW13OriginalLowWeightMultipliers",
+   "file": "LeanCode/Internal/PhysicalAnalysis/AIW13OriginalLowWeightMultipliers.lean"
+  },
+  {
+   "name": "AIW14ActualOriginalLowWeightGraph",
+   "file": "LeanCode/Internal/PhysicalAnalysis/AIW14ActualOriginalLowWeightGraph.lean"
+  },
+  {
+   "name": "AIW15OriginalLowGraphEquivalence",
+   "file": "LeanCode/Internal/PhysicalAnalysis/AIW15OriginalLowGraphEquivalence.lean"
+  },
+  {
+   "name": "AIW16ExactLowDiagonalCompatibility",
+   "file": "LeanCode/Internal/PhysicalAnalysis/AIW16ExactLowDiagonalCompatibility.lean"
+  },
+  {
+   "name": "AIW17BoundedOriginalLowGradeInclusions",
+   "file": "LeanCode/Internal/PhysicalAnalysis/AIW17BoundedOriginalLowGradeInclusions.lean"
+  },
+  {
+   "name": "AIW18OriginalLowBF6Consumer",
+   "file": "LeanCode/Internal/PhysicalAnalysis/AIW18OriginalLowBF6Consumer.lean"
+  },
+  {
+   "name": "AIW1OriginalAJClosedGraph",
+   "file": "LeanCode/Internal/PhysicalAnalysis/AIW1OriginalAJClosedGraph.lean"
+  },
+  {
+   "name": "AIW2ExactAJBalancing",
+   "file": "LeanCode/Internal/PhysicalAnalysis/AIW2ExactAJBalancing.lean"
+  },
+  {
+   "name": "AIW3ActualSmoothLowFrequency",
+   "file": "LeanCode/Internal/PhysicalAnalysis/AIW3ActualSmoothLowFrequency.lean"
+  },
+  {
+   "name": "AIW4ExactLowConjugationCurves",
+   "file": "LeanCode/Internal/PhysicalAnalysis/AIW4ExactLowConjugationCurves.lean"
+  },
+  {
+   "name": "AIW5LiteralLowCoefficientIdentities",
+   "file": "LeanCode/Internal/PhysicalAnalysis/AIW5LiteralLowCoefficientIdentities.lean"
+  },
+  {
+   "name": "AIW6UniformOriginalLowFactors",
+   "file": "LeanCode/Internal/PhysicalAnalysis/AIW6UniformOriginalLowFactors.lean"
+  },
+  {
+   "name": "AIW7ActualLowProductConsumer",
+   "file": "LeanCode/Internal/PhysicalAnalysis/AIW7ActualLowProductConsumer.lean"
+  },
+  {
+   "name": "AIW8UniformToAJCoefficients",
+   "file": "LeanCode/Internal/PhysicalAnalysis/AIW8UniformToAJCoefficients.lean"
+  },
+  {
+   "name": "AIW9ActualToAJFourierMultipliers",
+   "file": "LeanCode/Internal/PhysicalAnalysis/AIW9ActualToAJFourierMultipliers.lean"
+  },
+  {
+   "name": "AIX10ActualOperatorOrbitDerivative",
+   "file": "LeanCode/Internal/PhysicalAnalysis/AIX10ActualOperatorOrbitDerivative.lean"
+  },
+  {
+   "name": "AIX11ActualBoundaryOrbitDerivative",
+   "file": "LeanCode/Internal/PhysicalAnalysis/AIX11ActualBoundaryOrbitDerivative.lean"
+  },
+  {
+   "name": "AIX12OriginalOrbitAndReferenceCancellation",
+   "file": "LeanCode/Internal/PhysicalAnalysis/AIX12OriginalOrbitAndReferenceCancellation.lean"
+  },
+  {
+   "name": "AIX13ActualEliminatedPhysicalOrbit",
+   "file": "LeanCode/Internal/PhysicalAnalysis/AIX13ActualEliminatedPhysicalOrbit.lean"
+  },
+  {
+   "name": "AIX1ActualDisplacementCharacters",
+   "file": "LeanCode/Internal/PhysicalAnalysis/AIX1ActualDisplacementCharacters.lean"
+  },
+  {
+   "name": "AIX2FullDisplacementMultipliers",
+   "file": "LeanCode/Internal/PhysicalAnalysis/AIX2FullDisplacementMultipliers.lean"
+  },
+  {
+   "name": "AIX3ExactFourierUnitary",
+   "file": "LeanCode/Internal/PhysicalAnalysis/AIX3ExactFourierUnitary.lean"
+  },
+  {
+   "name": "AIX4ActualKernelUnitaryConjugation",
+   "file": "LeanCode/Internal/PhysicalAnalysis/AIX4ActualKernelUnitaryConjugation.lean"
+  },
+  {
+   "name": "AIX5RegularRadialOrbitActions",
+   "file": "LeanCode/Internal/PhysicalAnalysis/AIX5RegularRadialOrbitActions.lean"
+  },
+  {
+   "name": "AIX6CompletedActualUnitaryOrbit",
+   "file": "LeanCode/Internal/PhysicalAnalysis/AIX6CompletedActualUnitaryOrbit.lean"
+  },
+  {
+   "name": "AIX7KernelOrbitalTaylorRemainder",
+   "file": "LeanCode/Internal/PhysicalAnalysis/AIX7KernelOrbitalTaylorRemainder.lean"
+  },
+  {
+   "name": "AIX8CompletedScalarKernelAlgebra",
+   "file": "LeanCode/Internal/PhysicalAnalysis/AIX8CompletedScalarKernelAlgebra.lean"
+  },
+  {
+   "name": "AIX9ActualCompletedTaylorEstimate",
+   "file": "LeanCode/Internal/PhysicalAnalysis/AIX9ActualCompletedTaylorEstimate.lean"
+  },
+  {
+   "name": "AIY10OriginalStrongNormComparison",
+   "file": "LeanCode/Internal/PhysicalAnalysis/AIY10OriginalStrongNormComparison.lean"
+  },
+  {
+   "name": "AIY11OriginalStrongForwardComparison",
+   "file": "LeanCode/Internal/PhysicalAnalysis/AIY11OriginalStrongForwardComparison.lean"
+  },
+  {
+   "name": "AIY12IndependentOriginalStrongCarrier",
+   "file": "LeanCode/Internal/PhysicalAnalysis/AIY12IndependentOriginalStrongCarrier.lean"
+  },
+  {
+   "name": "AIY13ReconstructOriginalStrongData",
+   "file": "LeanCode/Internal/PhysicalAnalysis/AIY13ReconstructOriginalStrongData.lean"
+  },
+  {
+   "name": "AIY14OriginalStrongDataIsomorphism",
+   "file": "LeanCode/Internal/PhysicalAnalysis/AIY14OriginalStrongDataIsomorphism.lean"
+  },
+  {
+   "name": "AIY15ExactSharedStrongDataConsumer",
+   "file": "LeanCode/Internal/PhysicalAnalysis/AIY15ExactSharedStrongDataConsumer.lean"
+  },
+  {
+   "name": "AIY1FullStrongDataAmbient",
+   "file": "LeanCode/Internal/PhysicalAnalysis/AIY1FullStrongDataAmbient.lean"
+  },
+  {
+   "name": "AIY2ClosedSharedStrongCarrier",
+   "file": "LeanCode/Internal/PhysicalAnalysis/AIY2ClosedSharedStrongCarrier.lean"
+  },
+  {
+   "name": "AIY3ExactHighDataRestriction",
+   "file": "LeanCode/Internal/PhysicalAnalysis/AIY3ExactHighDataRestriction.lean"
+  },
+  {
+   "name": "AIY4SharedDataSingleNorm",
+   "file": "LeanCode/Internal/PhysicalAnalysis/AIY4SharedDataSingleNorm.lean"
+  },
+  {
+   "name": "AIY5OriginalBulkWeightEquivalence",
+   "file": "LeanCode/Internal/PhysicalAnalysis/AIY5OriginalBulkWeightEquivalence.lean"
+  },
+  {
+   "name": "AIY6ExactStrengthenedAngularSource",
+   "file": "LeanCode/Internal/PhysicalAnalysis/AIY6ExactStrengthenedAngularSource.lean"
+  },
+  {
+   "name": "AIY7OriginalLowIncomingFactors",
+   "file": "LeanCode/Internal/PhysicalAnalysis/AIY7OriginalLowIncomingFactors.lean"
+  },
+  {
+   "name": "AIY8OriginalLowIncomingEquivalence",
+   "file": "LeanCode/Internal/PhysicalAnalysis/AIY8OriginalLowIncomingEquivalence.lean"
+  },
+  {
+   "name": "AIY9OriginalStrongHilbertCoordinates",
+   "file": "LeanCode/Internal/PhysicalAnalysis/AIY9OriginalStrongHilbertCoordinates.lean"
+  },
+  {
+   "name": "AIZ1ActualEnergyTranslations",
+   "file": "LeanCode/Internal/PhysicalAnalysis/AIZ1ActualEnergyTranslations.lean"
+  },
+  {
+   "name": "AIZ2ActualFluxTranslations",
+   "file": "LeanCode/Internal/PhysicalAnalysis/AIZ2ActualFluxTranslations.lean"
+  },
+  {
+   "name": "AIZ3ActualLowTranslations",
+   "file": "LeanCode/Internal/PhysicalAnalysis/AIZ3ActualLowTranslations.lean"
+  },
+  {
+   "name": "AIZ4CompleteCoupledUnitary",
+   "file": "LeanCode/Internal/PhysicalAnalysis/AIZ4CompleteCoupledUnitary.lean"
+  },
+  {
+   "name": "AIZ5ActualZeroTestTranslations",
+   "file": "LeanCode/Internal/PhysicalAnalysis/AIZ5ActualZeroTestTranslations.lean"
+  },
+  {
+   "name": "AIZ6SameCoupledInverseOrbit",
+   "file": "LeanCode/Internal/PhysicalAnalysis/AIZ6SameCoupledInverseOrbit.lean"
+  },
+  {
+   "name": "AJA10SameHighInverseOrbit",
+   "file": "LeanCode/Internal/PhysicalAnalysis/AJA10SameHighInverseOrbit.lean"
+  },
+  {
+   "name": "AJA11GenericInverseDerivative",
+   "file": "LeanCode/Internal/PhysicalAnalysis/AJA11GenericInverseDerivative.lean"
+  },
+  {
+   "name": "AJA12ActualHighInverseDerivative",
+   "file": "LeanCode/Internal/PhysicalAnalysis/AJA12ActualHighInverseDerivative.lean"
+  },
+  {
+   "name": "AJA13RealOrbitColumns",
+   "file": "LeanCode/Internal/PhysicalAnalysis/AJA13RealOrbitColumns.lean"
+  },
+  {
+   "name": "AJA14ActualFullJetTower",
+   "file": "LeanCode/Internal/PhysicalAnalysis/AJA14ActualFullJetTower.lean"
+  },
+  {
+   "name": "AJA15GenericInverseSmooth",
+   "file": "LeanCode/Internal/PhysicalAnalysis/AJA15GenericInverseSmooth.lean"
+  },
+  {
+   "name": "AJA16ActualHighInverseSmooth",
+   "file": "LeanCode/Internal/PhysicalAnalysis/AJA16ActualHighInverseSmooth.lean"
+  },
+  {
+   "name": "AJA17ActualFullJetOneHigh",
+   "file": "LeanCode/Internal/PhysicalAnalysis/AJA17ActualFullJetOneHigh.lean"
+  },
+  {
+   "name": "AJA18OrderedInverseWords",
+   "file": "LeanCode/Internal/PhysicalAnalysis/AJA18OrderedInverseWords.lean"
+  },
+  {
+   "name": "AJA19OrderedInverseBounds",
+   "file": "LeanCode/Internal/PhysicalAnalysis/AJA19OrderedInverseBounds.lean"
+  },
+  {
+   "name": "AJA1ActualPhysicalCoordinateTranslations",
+   "file": "LeanCode/Internal/PhysicalAnalysis/AJA1ActualPhysicalCoordinateTranslations.lean"
+  },
+  {
+   "name": "AJA20ActualOrderedHighInverse",
+   "file": "LeanCode/Internal/PhysicalAnalysis/AJA20ActualOrderedHighInverse.lean"
+  },
+  {
+   "name": "AJA21PositiveOrderedBounds",
+   "file": "LeanCode/Internal/PhysicalAnalysis/AJA21PositiveOrderedBounds.lean"
+  },
+  {
+   "name": "AJA22SharpHighInverseOneHigh",
+   "file": "LeanCode/Internal/PhysicalAnalysis/AJA22SharpHighInverseOneHigh.lean"
+  },
+  {
+   "name": "AJA2ExactPhysicalPacketTranslations",
+   "file": "LeanCode/Internal/PhysicalAnalysis/AJA2ExactPhysicalPacketTranslations.lean"
+  },
+  {
+   "name": "AJA3ActualBulkFormOrbit",
+   "file": "LeanCode/Internal/PhysicalAnalysis/AJA3ActualBulkFormOrbit.lean"
+  },
+  {
+   "name": "AJA4ActualBulkOrbitConjugacy",
+   "file": "LeanCode/Internal/PhysicalAnalysis/AJA4ActualBulkOrbitConjugacy.lean"
+  },
+  {
+   "name": "AJA5OriginalBoundaryTranslationLaws",
+   "file": "LeanCode/Internal/PhysicalAnalysis/AJA5OriginalBoundaryTranslationLaws.lean"
+  },
+  {
+   "name": "AJA6ActualBoundaryFormOrbit",
+   "file": "LeanCode/Internal/PhysicalAnalysis/AJA6ActualBoundaryFormOrbit.lean"
+  },
+  {
+   "name": "AJA7ActualBoundaryOrbitConjugacy",
+   "file": "LeanCode/Internal/PhysicalAnalysis/AJA7ActualBoundaryOrbitConjugacy.lean"
+  },
+  {
+   "name": "AJA8ActualFullFormOrbit",
+   "file": "LeanCode/Internal/PhysicalAnalysis/AJA8ActualFullFormOrbit.lean"
+  },
+  {
+   "name": "AJA9ActualZeroFormOrbit",
+   "file": "LeanCode/Internal/PhysicalAnalysis/AJA9ActualZeroFormOrbit.lean"
+  },
+  {
+   "name": "AJB10ActualLowSmoothGenerator",
+   "file": "LeanCode/Internal/PhysicalAnalysis/AJB10ActualLowSmoothGenerator.lean"
+  },
+  {
+   "name": "AJB11SameLowInverseDerivative",
+   "file": "LeanCode/Internal/PhysicalAnalysis/AJB11SameLowInverseDerivative.lean"
+  },
+  {
+   "name": "AJB12OriginalLowInverseFirstJetBound",
+   "file": "LeanCode/Internal/PhysicalAnalysis/AJB12OriginalLowInverseFirstJetBound.lean"
+  },
+  {
+   "name": "AJB13SameLowInverseSmoothness",
+   "file": "LeanCode/Internal/PhysicalAnalysis/AJB13SameLowInverseSmoothness.lean"
+  },
+  {
+   "name": "AJB14GenuineFourierGeneratorExtraction",
+   "file": "LeanCode/Internal/PhysicalAnalysis/AJB14GenuineFourierGeneratorExtraction.lean"
+  },
+  {
+   "name": "AJB15CompleteLpGeneratorMembership",
+   "file": "LeanCode/Internal/PhysicalAnalysis/AJB15CompleteLpGeneratorMembership.lean"
+  },
+  {
+   "name": "AJB16ActualLowSolutionGeneratorDomains",
+   "file": "LeanCode/Internal/PhysicalAnalysis/AJB16ActualLowSolutionGeneratorDomains.lean"
+  },
+  {
+   "name": "AJB17ActualFiniteDataOrbitSmoothness",
+   "file": "LeanCode/Internal/PhysicalAnalysis/AJB17ActualFiniteDataOrbitSmoothness.lean"
+  },
+  {
+   "name": "AJB18OriginalLowGradeMembership",
+   "file": "LeanCode/Internal/PhysicalAnalysis/AJB18OriginalLowGradeMembership.lean"
+  },
+  {
+   "name": "AJB1ActualLowPhysicalRowOrbit",
+   "file": "LeanCode/Internal/PhysicalAnalysis/AJB1ActualLowPhysicalRowOrbit.lean"
+  },
+  {
+   "name": "AJB20ActualLowOrderedInverse",
+   "file": "LeanCode/Internal/PhysicalAnalysis/AJB20ActualLowOrderedInverse.lean"
+  },
+  {
+   "name": "AJB21OriginalLowOrderedOneHigh",
+   "file": "LeanCode/Internal/PhysicalAnalysis/AJB21OriginalLowOrderedOneHigh.lean"
+  },
+  {
+   "name": "AJB22ActualOperatorApplicationDerivatives",
+   "file": "LeanCode/Internal/PhysicalAnalysis/AJB22ActualOperatorApplicationDerivatives.lean"
+  },
+  {
+   "name": "AJB23ActualAxisDerivativeRestriction",
+   "file": "LeanCode/Internal/PhysicalAnalysis/AJB23ActualAxisDerivativeRestriction.lean"
+  },
+  {
+   "name": "AJB24OriginalLowSolutionLeibnizBound",
+   "file": "LeanCode/Internal/PhysicalAnalysis/AJB24OriginalLowSolutionLeibnizBound.lean"
+  },
+  {
+   "name": "AJB25CompleteLpFatou",
+   "file": "LeanCode/Internal/PhysicalAnalysis/AJB25CompleteLpFatou.lean"
+  },
+  {
+   "name": "AJB26GenuineLowWeightedGraphClosure",
+   "file": "LeanCode/Internal/PhysicalAnalysis/AJB26GenuineLowWeightedGraphClosure.lean"
+  },
+  {
+   "name": "AJB27OriginalLowGradeNormBound",
+   "file": "LeanCode/Internal/PhysicalAnalysis/AJB27OriginalLowGradeNormBound.lean"
+  },
+  {
+   "name": "AJB28OriginalFrequencyOneHighAllocation",
+   "file": "LeanCode/Internal/PhysicalAnalysis/AJB28OriginalFrequencyOneHighAllocation.lean"
+  },
+  {
+   "name": "AJB29ActualLpComplementaryEstimate",
+   "file": "LeanCode/Internal/PhysicalAnalysis/AJB29ActualLpComplementaryEstimate.lean"
+  },
+  {
+   "name": "AJB2SameNormalizedLowGeneratorOrbit",
+   "file": "LeanCode/Internal/PhysicalAnalysis/AJB2SameNormalizedLowGeneratorOrbit.lean"
+  },
+  {
+   "name": "AJB30IndependentLowDataGenerators",
+   "file": "LeanCode/Internal/PhysicalAnalysis/AJB30IndependentLowDataGenerators.lean"
+  },
+  {
+   "name": "AJB32LiteralLowInsertedGraphGrade",
+   "file": "LeanCode/Internal/PhysicalAnalysis/AJB32LiteralLowInsertedGraphGrade.lean"
+  },
+  {
+   "name": "AJB35OriginalLowDataFiniteApproximation",
+   "file": "LeanCode/Internal/PhysicalAnalysis/AJB35OriginalLowDataFiniteApproximation.lean"
+  },
+  {
+   "name": "AJB3ActualNormalizedLowOrbitDerivative",
+   "file": "LeanCode/Internal/PhysicalAnalysis/AJB3ActualNormalizedLowOrbitDerivative.lean"
+  },
+  {
+   "name": "AJB4ActualLowCharacterCommutation",
+   "file": "LeanCode/Internal/PhysicalAnalysis/AJB4ActualLowCharacterCommutation.lean"
+  },
+  {
+   "name": "AJB5SameLowGeneratorConjugation",
+   "file": "LeanCode/Internal/PhysicalAnalysis/AJB5SameLowGeneratorConjugation.lean"
+  },
+  {
+   "name": "AJB6GenuineLowTraceDataTranslations",
+   "file": "LeanCode/Internal/PhysicalAnalysis/AJB6GenuineLowTraceDataTranslations.lean"
+  },
+  {
+   "name": "AJB7ActualLowDataOperatorOrbit",
+   "file": "LeanCode/Internal/PhysicalAnalysis/AJB7ActualLowDataOperatorOrbit.lean"
+  },
+  {
+   "name": "AJB8SameLowInverseOrbit",
+   "file": "LeanCode/Internal/PhysicalAnalysis/AJB8SameLowInverseOrbit.lean"
+  },
+  {
+   "name": "AJB9ActualLowMixedJetDerivatives",
+   "file": "LeanCode/Internal/PhysicalAnalysis/AJB9ActualLowMixedJetDerivatives.lean"
+  },
+  {
+   "name": "AJC10CompletedHighPacketAssembly",
+   "file": "LeanCode/Internal/PhysicalAnalysis/AJC10CompletedHighPacketAssembly.lean"
+  },
+  {
+   "name": "AJC11SameFullPhysicalPacket",
+   "file": "LeanCode/Internal/PhysicalAnalysis/AJC11SameFullPhysicalPacket.lean"
+  },
+  {
+   "name": "AJC12CompletedPhysicalFirstRow",
+   "file": "LeanCode/Internal/PhysicalAnalysis/AJC12CompletedPhysicalFirstRow.lean"
+  },
+  {
+   "name": "AJC13FullPhysicalBoundary",
+   "file": "LeanCode/Internal/PhysicalAnalysis/AJC13FullPhysicalBoundary.lean"
+  },
+  {
+   "name": "AJC14LiteralEightInputProjections",
+   "file": "LeanCode/Internal/PhysicalAnalysis/AJC14LiteralEightInputProjections.lean"
+  },
+  {
+   "name": "AJC15SameFullHighFirstRow",
+   "file": "LeanCode/Internal/PhysicalAnalysis/AJC15SameFullHighFirstRow.lean"
+  },
+  {
+   "name": "AJC16SharedPhysicalWeakGraph",
+   "file": "LeanCode/Internal/PhysicalAnalysis/AJC16SharedPhysicalWeakGraph.lean"
+  },
+  {
+   "name": "AJC17OriginalCoupledGraph",
+   "file": "LeanCode/Internal/PhysicalAnalysis/AJC17OriginalCoupledGraph.lean"
+  },
+  {
+   "name": "AJC18OriginalSharedInverseBound",
+   "file": "LeanCode/Internal/PhysicalAnalysis/AJC18OriginalSharedInverseBound.lean"
+  },
+  {
+   "name": "AJC19OriginalSharedInverseConsumer",
+   "file": "LeanCode/Internal/PhysicalAnalysis/AJC19OriginalSharedInverseConsumer.lean"
+  },
+  {
+   "name": "AJC1SameSharedCoupledData",
+   "file": "LeanCode/Internal/PhysicalAnalysis/AJC1SameSharedCoupledData.lean"
+  },
+  {
+   "name": "AJC2SharedStrongCoupledInverse",
+   "file": "LeanCode/Internal/PhysicalAnalysis/AJC2SharedStrongCoupledInverse.lean"
+  },
+  {
+   "name": "AJC3OnceOnlyPhysicalInput",
+   "file": "LeanCode/Internal/PhysicalAnalysis/AJC3OnceOnlyPhysicalInput.lean"
+  },
+  {
+   "name": "AJC4SameFullLowPhysicalRow",
+   "file": "LeanCode/Internal/PhysicalAnalysis/AJC4SameFullLowPhysicalRow.lean"
+  },
+  {
+   "name": "AJC5ExactKnownSevenSelection",
+   "file": "LeanCode/Internal/PhysicalAnalysis/AJC5ExactKnownSevenSelection.lean"
+  },
+  {
+   "name": "AJC6SharedHighSevenAssembly",
+   "file": "LeanCode/Internal/PhysicalAnalysis/AJC6SharedHighSevenAssembly.lean"
+  },
+  {
+   "name": "AJC7SameActualHighFluxAssembly",
+   "file": "LeanCode/Internal/PhysicalAnalysis/AJC7SameActualHighFluxAssembly.lean"
+  },
+  {
+   "name": "AJC8SamePhysicalRowProjections",
+   "file": "LeanCode/Internal/PhysicalAnalysis/AJC8SamePhysicalRowProjections.lean"
+  },
+  {
+   "name": "AJC9ExactSharedCrossSources",
+   "file": "LeanCode/Internal/PhysicalAnalysis/AJC9ExactSharedCrossSources.lean"
+  },
+  {
+   "name": "AJD10SameCrossEnergySmoothness",
+   "file": "LeanCode/Internal/PhysicalAnalysis/AJD10SameCrossEnergySmoothness.lean"
+  },
+  {
+   "name": "AJD11SameCrossPhysicalOutputOrbit",
+   "file": "LeanCode/Internal/PhysicalAnalysis/AJD11SameCrossPhysicalOutputOrbit.lean"
+  },
+  {
+   "name": "AJD12OriginalOmegaCoordinateCovariance",
+   "file": "LeanCode/Internal/PhysicalAnalysis/AJD12OriginalOmegaCoordinateCovariance.lean"
+  },
+  {
+   "name": "AJD13SameOriginalCrossFluxOrbit",
+   "file": "LeanCode/Internal/PhysicalAnalysis/AJD13SameOriginalCrossFluxOrbit.lean"
+  },
+  {
+   "name": "AJD14SameCompleteHighCrossResponseOrbit",
+   "file": "LeanCode/Internal/PhysicalAnalysis/AJD14SameCompleteHighCrossResponseOrbit.lean"
+  },
+  {
+   "name": "AJD15OriginalHighCrossInputCovariance",
+   "file": "LeanCode/Internal/PhysicalAnalysis/AJD15OriginalHighCrossInputCovariance.lean"
+  },
+  {
+   "name": "AJD16ActualCrossBulkOperatorOrbits",
+   "file": "LeanCode/Internal/PhysicalAnalysis/AJD16ActualCrossBulkOperatorOrbits.lean"
+  },
+  {
+   "name": "AJD17ActualLowOuterInputTranslations",
+   "file": "LeanCode/Internal/PhysicalAnalysis/AJD17ActualLowOuterInputTranslations.lean"
+  },
+  {
+   "name": "AJD18SameLowToHighBoundaryOrbit",
+   "file": "LeanCode/Internal/PhysicalAnalysis/AJD18SameLowToHighBoundaryOrbit.lean"
+  },
+  {
+   "name": "AJD19CompleteActualCrossDataOrbits",
+   "file": "LeanCode/Internal/PhysicalAnalysis/AJD19CompleteActualCrossDataOrbits.lean"
+  },
+  {
+   "name": "AJD1RealToComplexOperatorRetraction",
+   "file": "LeanCode/Internal/PhysicalAnalysis/AJD1RealToComplexOperatorRetraction.lean"
+  },
+  {
+   "name": "AJD20SameActualOffDiagonalOrbits",
+   "file": "LeanCode/Internal/PhysicalAnalysis/AJD20SameActualOffDiagonalOrbits.lean"
+  },
+  {
+   "name": "AJD21SameCoupledErrorSmoothness",
+   "file": "LeanCode/Internal/PhysicalAnalysis/AJD21SameCoupledErrorSmoothness.lean"
+  },
+  {
+   "name": "AJD22SameCoupledInverseFrechetCalculus",
+   "file": "LeanCode/Internal/PhysicalAnalysis/AJD22SameCoupledInverseFrechetCalculus.lean"
+  },
+  {
+   "name": "AJD23OneVariableInverseBounds",
+   "file": "LeanCode/Internal/PhysicalAnalysis/AJD23OneVariableInverseBounds.lean"
+  },
+  {
+   "name": "AJD24ActualBetaInverseJetBounds",
+   "file": "LeanCode/Internal/PhysicalAnalysis/AJD24ActualBetaInverseJetBounds.lean"
+  },
+  {
+   "name": "AJD25PureCoordinateProductEstimates",
+   "file": "LeanCode/Internal/PhysicalAnalysis/AJD25PureCoordinateProductEstimates.lean"
+  },
+  {
+   "name": "AJD26UniformCoordinateCalculus",
+   "file": "LeanCode/Internal/PhysicalAnalysis/AJD26UniformCoordinateCalculus.lean"
+  },
+  {
+   "name": "AJD27OriginalCoupledBudgetContexts",
+   "file": "LeanCode/Internal/PhysicalAnalysis/AJD27OriginalCoupledBudgetContexts.lean"
+  },
+  {
+   "name": "AJD28ActualCoefficientCoordinateBounds",
+   "file": "LeanCode/Internal/PhysicalAnalysis/AJD28ActualCoefficientCoordinateBounds.lean"
+  },
+  {
+   "name": "AJD29SameDiagonalCoordinateBounds",
+   "file": "LeanCode/Internal/PhysicalAnalysis/AJD29SameDiagonalCoordinateBounds.lean"
+  },
+  {
+   "name": "AJD2ActualBoundaryInverseOrbit",
+   "file": "LeanCode/Internal/PhysicalAnalysis/AJD2ActualBoundaryInverseOrbit.lean"
+  },
+  {
+   "name": "AJD30UniformOperatorOperations",
+   "file": "LeanCode/Internal/PhysicalAnalysis/AJD30UniformOperatorOperations.lean"
+  },
+  {
+   "name": "AJD31CrossPacketUniformNorms",
+   "file": "LeanCode/Internal/PhysicalAnalysis/AJD31CrossPacketUniformNorms.lean"
+  },
+  {
+   "name": "AJD32ActualKnownFunctionalCoordinateBounds",
+   "file": "LeanCode/Internal/PhysicalAnalysis/AJD32ActualKnownFunctionalCoordinateBounds.lean"
+  },
+  {
+   "name": "AJD33UniformOperatorComposition",
+   "file": "LeanCode/Internal/PhysicalAnalysis/AJD33UniformOperatorComposition.lean"
+  },
+  {
+   "name": "AJD34SameCrossEnergyCoordinateBounds",
+   "file": "LeanCode/Internal/PhysicalAnalysis/AJD34SameCrossEnergyCoordinateBounds.lean"
+  },
+  {
+   "name": "AJD35SameCompleteCrossResponseBounds",
+   "file": "LeanCode/Internal/PhysicalAnalysis/AJD35SameCompleteCrossResponseBounds.lean"
+  },
+  {
+   "name": "AJD36UniformClosedGraphAndPair",
+   "file": "LeanCode/Internal/PhysicalAnalysis/AJD36UniformClosedGraphAndPair.lean"
+  },
+  {
+   "name": "AJD37ActualBoundaryDeviationCoordinateBounds",
+   "file": "LeanCode/Internal/PhysicalAnalysis/AJD37ActualBoundaryDeviationCoordinateBounds.lean"
+  },
+  {
+   "name": "AJD38ActualBoundaryCrossCoordinateBounds",
+   "file": "LeanCode/Internal/PhysicalAnalysis/AJD38ActualBoundaryCrossCoordinateBounds.lean"
+  },
+  {
+   "name": "AJD39ActualBulkCrossCoordinateBounds",
+   "file": "LeanCode/Internal/PhysicalAnalysis/AJD39ActualBulkCrossCoordinateBounds.lean"
+  },
+  {
+   "name": "AJD3OriginalClosedGraphOperatorLift",
+   "file": "LeanCode/Internal/PhysicalAnalysis/AJD3OriginalClosedGraphOperatorLift.lean"
+  },
+  {
+   "name": "AJD40UniformPhysicalPairingCalculus",
+   "file": "LeanCode/Internal/PhysicalAnalysis/AJD40UniformPhysicalPairingCalculus.lean"
+  },
+  {
+   "name": "AJD41UniformFiniteOperatorAssembly",
+   "file": "LeanCode/Internal/PhysicalAnalysis/AJD41UniformFiniteOperatorAssembly.lean"
+  },
+  {
+   "name": "AJD42CompleteCrossDataCoordinateBounds",
+   "file": "LeanCode/Internal/PhysicalAnalysis/AJD42CompleteCrossDataCoordinateBounds.lean"
+  },
+  {
+   "name": "AJD43SameOffDiagonalCoordinateBounds",
+   "file": "LeanCode/Internal/PhysicalAnalysis/AJD43SameOffDiagonalCoordinateBounds.lean"
+  },
+  {
+   "name": "AJD44SameCoupledResidualCoordinateBounds",
+   "file": "LeanCode/Internal/PhysicalAnalysis/AJD44SameCoupledResidualCoordinateBounds.lean"
+  },
+  {
+   "name": "AJD45UniformSameInverseCoordinateBounds",
+   "file": "LeanCode/Internal/PhysicalAnalysis/AJD45UniformSameInverseCoordinateBounds.lean"
+  },
+  {
+   "name": "AJD46SameCoupledInverseCoordinateBounds",
+   "file": "LeanCode/Internal/PhysicalAnalysis/AJD46SameCoupledInverseCoordinateBounds.lean"
+  },
+  {
+   "name": "AJD4OriginalCrossDatumTranslations",
+   "file": "LeanCode/Internal/PhysicalAnalysis/AJD4OriginalCrossDatumTranslations.lean"
+  },
+  {
+   "name": "AJD5ActualCrossKnownPackets",
+   "file": "LeanCode/Internal/PhysicalAnalysis/AJD5ActualCrossKnownPackets.lean"
+  },
+  {
+   "name": "AJD6ActualCrossKnownBulkOrbit",
+   "file": "LeanCode/Internal/PhysicalAnalysis/AJD6ActualCrossKnownBulkOrbit.lean"
+  },
+  {
+   "name": "AJD7ActualCrossKnownFunctionalOrbit",
+   "file": "LeanCode/Internal/PhysicalAnalysis/AJD7ActualCrossKnownFunctionalOrbit.lean"
+  },
+  {
+   "name": "AJD8ActualKnownZeroFunctionalPullback",
+   "file": "LeanCode/Internal/PhysicalAnalysis/AJD8ActualKnownZeroFunctionalPullback.lean"
+  },
+  {
+   "name": "AJD9SameActualHighCrossEnergyOrbit",
+   "file": "LeanCode/Internal/PhysicalAnalysis/AJD9SameActualHighCrossEnergyOrbit.lean"
+  },
+  {
+   "name": "AJE10SourceLiftJetOneHigh",
+   "file": "LeanCode/Internal/PhysicalAnalysis/AJE10SourceLiftJetOneHigh.lean"
+  },
+  {
+   "name": "AJE11GenuineGraphOuterTupleMap",
+   "file": "LeanCode/Internal/PhysicalAnalysis/AJE11GenuineGraphOuterTupleMap.lean"
+  },
+  {
+   "name": "AJE12RealKnownOperatorCalculus",
+   "file": "LeanCode/Internal/PhysicalAnalysis/AJE12RealKnownOperatorCalculus.lean"
+  },
+  {
+   "name": "AJE13ActualKnownDataCoordinates",
+   "file": "LeanCode/Internal/PhysicalAnalysis/AJE13ActualKnownDataCoordinates.lean"
+  },
+  {
+   "name": "AJE14CompleteKnownCoefficientTower",
+   "file": "LeanCode/Internal/PhysicalAnalysis/AJE14CompleteKnownCoefficientTower.lean"
+  },
+  {
+   "name": "AJE15OriginalKnownBulkCovariance",
+   "file": "LeanCode/Internal/PhysicalAnalysis/AJE15OriginalKnownBulkCovariance.lean"
+  },
+  {
+   "name": "AJE16FullKnownFunctionalTower",
+   "file": "LeanCode/Internal/PhysicalAnalysis/AJE16FullKnownFunctionalTower.lean"
+  },
+  {
+   "name": "AJE17ExactFullKnownFunctionalOrbit",
+   "file": "LeanCode/Internal/PhysicalAnalysis/AJE17ExactFullKnownFunctionalOrbit.lean"
+  },
+  {
+   "name": "AJE18KnownCoordinateNorms",
+   "file": "LeanCode/Internal/PhysicalAnalysis/AJE18KnownCoordinateNorms.lean"
+  },
+  {
+   "name": "AJE19SharedHighProjectionCovariance",
+   "file": "LeanCode/Internal/PhysicalAnalysis/AJE19SharedHighProjectionCovariance.lean"
+  },
+  {
+   "name": "AJE1GenuineSourceGraphCharacters",
+   "file": "LeanCode/Internal/PhysicalAnalysis/AJE1GenuineSourceGraphCharacters.lean"
+  },
+  {
+   "name": "AJE20FullKnownFunctionalOneHigh",
+   "file": "LeanCode/Internal/PhysicalAnalysis/AJE20FullKnownFunctionalOneHigh.lean"
+  },
+  {
+   "name": "AJE21FullKnownFunctionalBaseBound",
+   "file": "LeanCode/Internal/PhysicalAnalysis/AJE21FullKnownFunctionalBaseBound.lean"
+  },
+  {
+   "name": "AJE22SharedKnownFunctionalTower",
+   "file": "LeanCode/Internal/PhysicalAnalysis/AJE22SharedKnownFunctionalTower.lean"
+  },
+  {
+   "name": "AJE23FixedKnownTowerTransport",
+   "file": "LeanCode/Internal/PhysicalAnalysis/AJE23FixedKnownTowerTransport.lean"
+  },
+  {
+   "name": "AJE24SharedKnownFunctionalBounds",
+   "file": "LeanCode/Internal/PhysicalAnalysis/AJE24SharedKnownFunctionalBounds.lean"
+  },
+  {
+   "name": "AJE25SharedLowForcingTower",
+   "file": "LeanCode/Internal/PhysicalAnalysis/AJE25SharedLowForcingTower.lean"
+  },
+  {
+   "name": "AJE2ExactSourceTraceOrbit",
+   "file": "LeanCode/Internal/PhysicalAnalysis/AJE2ExactSourceTraceOrbit.lean"
+  },
+  {
+   "name": "AJE30KnownLowSourceCoordinates",
+   "file": "LeanCode/Internal/PhysicalAnalysis/AJE30KnownLowSourceCoordinates.lean"
+  },
+  {
+   "name": "AJE31ActualKnownLowRHSTower",
+   "file": "LeanCode/Internal/PhysicalAnalysis/AJE31ActualKnownLowRHSTower.lean"
+  },
+  {
+   "name": "AJE32ExactKnownLowRHSConjugation",
+   "file": "LeanCode/Internal/PhysicalAnalysis/AJE32ExactKnownLowRHSConjugation.lean"
+  },
+  {
+   "name": "AJE33KnownLowRHSOneHigh",
+   "file": "LeanCode/Internal/PhysicalAnalysis/AJE33KnownLowRHSOneHigh.lean"
+  },
+  {
+   "name": "AJE34KnownLowBaseAndSharedBounds",
+   "file": "LeanCode/Internal/PhysicalAnalysis/AJE34KnownLowBaseAndSharedBounds.lean"
+  },
+  {
+   "name": "AJE3ExactSharedBulkOrbit",
+   "file": "LeanCode/Internal/PhysicalAnalysis/AJE3ExactSharedBulkOrbit.lean"
+  },
+  {
+   "name": "AJE40FiniteSourceCutPrimitives",
+   "file": "LeanCode/Internal/PhysicalAnalysis/AJE40FiniteSourceCutPrimitives.lean"
+  },
+  {
+   "name": "AJE41ExactSourceGraphCut",
+   "file": "LeanCode/Internal/PhysicalAnalysis/AJE41ExactSourceGraphCut.lean"
+  },
+  {
+   "name": "AJE42SharedAmbientFiniteCut",
+   "file": "LeanCode/Internal/PhysicalAnalysis/AJE42SharedAmbientFiniteCut.lean"
+  },
+  {
+   "name": "AJE43CompleteStrongFiniteApproximation",
+   "file": "LeanCode/Internal/PhysicalAnalysis/AJE43CompleteStrongFiniteApproximation.lean"
+  },
+  {
+   "name": "AJE44OriginalSharedInsertedGrade",
+   "file": "LeanCode/Internal/PhysicalAnalysis/AJE44OriginalSharedInsertedGrade.lean"
+  }
+ ],
+ "root_closure_files": 5000,
+ "root_closure_sorry": [
+  "Comparator/Showcase_DefinitionSurface.lean"
+ ],
+ "root_closure_axioms": 0,
  "unclosed_files": 0,
  "headline_rule": null,
  "headline_count": 0,

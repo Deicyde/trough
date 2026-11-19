@@ -52,6 +52,36 @@
  "closure_files": 0,
  "closure_sorry": [],
  "closure_axioms": 0,
+ "root_modules": [
+  {
+   "name": "ReasLib",
+   "file": "ReasLib.lean"
+  }
+ ],
+ "root_closure_files": 916,
+ "root_closure_sorry": [
+  "ReasLib/Algebra/Category/CommAlgCat/FilteredColimit/FinitelyGenerated.lean",
+  "ReasLib/Algebra/Category/CommAlgCat/FilteredColimit/Representatives.lean",
+  "ReasLib/Algebra/Category/CommAlgCat/Over/Etale.lean",
+  "ReasLib/Algebra/Category/CommAlgCat/Over/Etale/Localization.lean",
+  "ReasLib/Algebra/Category/CommAlgCat/Over/Etale/Neighborhood.lean",
+  "ReasLib/Algebra/Category/CommAlgCat/Over/Target.lean",
+  "ReasLib/Algebra/Category/CommAlgCat/Over/Target/Localization.lean",
+  "ReasLib/Algebra/Category/CommAlgCat/Over/Target/Localization/SeparableClosure.lean",
+  "ReasLib/Algebra/Category/CommAlgCat/Over/Target/ResidueField.lean",
+  "ReasLib/Algebra/Category/CommRingCat/FilteredColimit/Algebra.lean",
+  "ReasLib/Algebra/Category/CommRingCat/FilteredColimit/Representatives.lean",
+  "ReasLib/Algebra/Category/CommRingCat/PolynomialResolution/AlternatingFace.lean",
+  "ReasLib/Algebra/Category/CommRingCat/PolynomialResolution/Construction.lean",
+  "ReasLib/Algebra/Category/CommRingCat/PolynomialResolution/Contraction/FreeResolution.lean",
+  "ReasLib/Algebra/Category/CommRingCat/PolynomialResolution/Contraction/UnderlyingSet.lean",
+  "ReasLib/Algebra/Category/CommRingCat/PolynomialResolution/Generators.lean",
+  "ReasLib/Algebra/Category/CommRingCat/Under/FreeAlgebra.lean",
+  "ReasLib/Algebra/Category/CommRingCat/Under/Module.lean",
+  "ReasLib/Algebra/Category/DifferentialGraded/Admissible.lean",
+  "ReasLib/Algebra/Category/DifferentialGraded/AdmissibleCone.lean"
+ ],
+ "root_closure_axioms": 0,
  "unclosed_files": 0,
  "headline_rule": null,
  "headline_count": 0,

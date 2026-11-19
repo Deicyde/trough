@@ -102,6 +102,55 @@
  "closure_files": 8,
  "closure_sorry": [],
  "closure_axioms": 0,
+ "root_modules": [
+  {
+   "name": "APITests",
+   "file": "APITests.lean"
+  },
+  {
+   "name": "AxiomAudit",
+   "file": "AxiomAudit.lean"
+  },
+  {
+   "name": "CartesianFrames",
+   "file": "CartesianFrames.lean"
+  },
+  {
+   "name": "Condensation",
+   "file": "Condensation.lean"
+  },
+  {
+   "name": "FactoredSpaces",
+   "file": "FactoredSpaces.lean"
+  },
+  {
+   "name": "FiniteFactoredSets",
+   "file": "FiniteFactoredSets.lean"
+  },
+  {
+   "name": "LogicalInduction",
+   "file": "LogicalInduction.lean"
+  },
+  {
+   "name": "ModalAgents",
+   "file": "ModalAgents.lean"
+  },
+  {
+   "name": "SafeParetoImprovements",
+   "file": "SafeParetoImprovements.lean"
+  },
+  {
+   "name": "Scratchpad",
+   "file": "Scratchpad.lean"
+  },
+  {
+   "name": "ShannonInformation",
+   "file": "ShannonInformation.lean"
+  }
+ ],
+ "root_closure_files": 346,
+ "root_closure_sorry": [],
+ "root_closure_axioms": 0,
  "unclosed_files": 1,
  "headline_rule": "main",
  "headline_count": 5,

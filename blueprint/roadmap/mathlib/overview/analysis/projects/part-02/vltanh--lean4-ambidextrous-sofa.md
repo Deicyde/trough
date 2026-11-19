@@ -6,7 +6,9 @@ statement: formalized
 proof: formalized
 ---
 
-# Optimality and uniqueness of Romik's ambidextrous sofa, in Lean 4
+# lean4-ambidextrous-sofa
+
+*Optimality and uniqueness of Romik's ambidextrous sofa, in Lean 4*
 
 [vltanh/lean4-ambidextrous-sofa](https://github.com/vltanh/lean4-ambidextrous-sofa) at commit [5e90d029](https://github.com/vltanh/lean4-ambidextrous-sofa/tree/5e90d029cab30151441a5794db31423bc277aad8), 2026-11-14.
 

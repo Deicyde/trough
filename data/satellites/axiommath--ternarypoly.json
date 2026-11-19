@@ -48,6 +48,25 @@
   "Comparator/Challenge.lean"
  ],
  "closure_axioms": 0,
+ "root_modules": [
+  {
+   "name": "Challenge",
+   "file": "Comparator/Challenge.lean"
+  },
+  {
+   "name": "Solution",
+   "file": "Comparator/Solution.lean"
+  },
+  {
+   "name": "TernaryPeriodPolynomials",
+   "file": "TernaryPeriodPolynomials.lean"
+  }
+ ],
+ "root_closure_files": 3707,
+ "root_closure_sorry": [
+  "Comparator/Challenge.lean"
+ ],
+ "root_closure_axioms": 0,
  "unclosed_files": 0,
  "headline_rule": "readme",
  "headline_count": 2,

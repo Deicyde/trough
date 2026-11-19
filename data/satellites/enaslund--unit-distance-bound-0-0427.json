@@ -58,6 +58,38 @@
  "closure_files": 2316,
  "closure_sorry": [],
  "closure_axioms": 0,
+ "root_modules": [
+  {
+   "name": "AuditSupport",
+   "file": "lean/AuditSupport.lean"
+  },
+  {
+   "name": "ChallengeZeta",
+   "file": "lean/ChallengeZeta.lean"
+  },
+  {
+   "name": "ChallengeZeta241",
+   "file": "lean/ChallengeZeta241.lean"
+  },
+  {
+   "name": "SolutionZeta",
+   "file": "lean/SolutionZeta.lean"
+  },
+  {
+   "name": "SolutionZeta241",
+   "file": "lean/SolutionZeta241.lean"
+  },
+  {
+   "name": "UnitDistance",
+   "file": "lean/UnitDistance.lean"
+  }
+ ],
+ "root_closure_files": 2433,
+ "root_closure_sorry": [
+  "lean/ChallengeZeta.lean",
+  "lean/ChallengeZeta241.lean"
+ ],
+ "root_closure_axioms": 0,
  "unclosed_files": 0,
  "headline_rule": "readme",
  "headline_count": 1,

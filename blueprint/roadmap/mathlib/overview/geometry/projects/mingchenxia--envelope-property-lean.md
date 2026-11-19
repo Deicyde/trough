@@ -5,7 +5,9 @@ lean: EnvelopeProperty.ProjSubvariety.isPSH_of_isPSH_comp_proj, EnvelopeProperty
 statement: formalized
 ---
 
-# The envelope property for unibranch projective varieties
+# envelope-property-lean
+
+*The envelope property for unibranch projective varieties*
 
 [MingchenXia/envelope-property-lean](https://github.com/MingchenXia/envelope-property-lean) at commit [bb713041](https://github.com/MingchenXia/envelope-property-lean/tree/bb7130411c5594e951c5923f8b82c021ce3d6c8d), 2026-10-30.
 

@@ -158,6 +158,27 @@
  "closure_files": 3536,
  "closure_sorry": [],
  "closure_axioms": 123,
+ "root_modules": [
+  {
+   "name": "Ch25A7BoundaryCert",
+   "file": "Ch25A7BoundaryCert.lean"
+  },
+  {
+   "name": "HeavyCertificates",
+   "file": "HeavyCertificates.lean"
+  },
+  {
+   "name": "Math",
+   "file": "Math.lean"
+  },
+  {
+   "name": "MathExtras",
+   "file": "MathExtras.lean"
+  }
+ ],
+ "root_closure_files": 4134,
+ "root_closure_sorry": [],
+ "root_closure_axioms": 122,
  "unclosed_files": 4,
  "headline_rule": "readme",
  "headline_count": 5,

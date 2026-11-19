@@ -68,6 +68,19 @@
  "closure_files": 17,
  "closure_sorry": [],
  "closure_axioms": 0,
+ "root_modules": [
+  {
+   "name": "Common",
+   "file": "Common.lean"
+  },
+  {
+   "name": "Pphi2",
+   "file": "Pphi2.lean"
+  }
+ ],
+ "root_closure_files": 163,
+ "root_closure_sorry": [],
+ "root_closure_axioms": 24,
  "unclosed_files": 0,
  "headline_rule": "blueprint",
  "headline_count": 226,

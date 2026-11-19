@@ -74,6 +74,219 @@
  "closure_files": 4972,
  "closure_sorry": [],
  "closure_axioms": 0,
+ "root_modules": [
+  {
+   "name": "Bridge.Arrows",
+   "file": "Bridge/Arrows.lean"
+  },
+  {
+   "name": "Bridge.Concave",
+   "file": "Bridge/Concave.lean"
+  },
+  {
+   "name": "Bridge.Data",
+   "file": "Bridge/Data.lean"
+  },
+  {
+   "name": "Bridge.DataDerivs",
+   "file": "Bridge/DataDerivs.lean"
+  },
+  {
+   "name": "Bridge.DataKnots",
+   "file": "Bridge/DataKnots.lean"
+  },
+  {
+   "name": "Bridge.DataValues",
+   "file": "Bridge/DataValues.lean"
+  },
+  {
+   "name": "Bridge.Foundations",
+   "file": "Bridge/Foundations.lean"
+  },
+  {
+   "name": "Bridge.KernelRfl",
+   "file": "Bridge/KernelRfl.lean"
+  },
+  {
+   "name": "Bridge.P06LinesP0r12",
+   "file": "Bridge/P06LinesP0r12.lean"
+  },
+  {
+   "name": "Bridge.P06LinesP0r12_0",
+   "file": "Bridge/P06LinesP0r12_0.lean"
+  },
+  {
+   "name": "Bridge.P06LinesP0r12_1",
+   "file": "Bridge/P06LinesP0r12_1.lean"
+  },
+  {
+   "name": "Bridge.P06LinesP0r12_10",
+   "file": "Bridge/P06LinesP0r12_10.lean"
+  },
+  {
+   "name": "Bridge.P06LinesP0r12_11",
+   "file": "Bridge/P06LinesP0r12_11.lean"
+  },
+  {
+   "name": "Bridge.P06LinesP0r12_12",
+   "file": "Bridge/P06LinesP0r12_12.lean"
+  },
+  {
+   "name": "Bridge.P06LinesP0r12_13",
+   "file": "Bridge/P06LinesP0r12_13.lean"
+  },
+  {
+   "name": "Bridge.P06LinesP0r12_14",
+   "file": "Bridge/P06LinesP0r12_14.lean"
+  },
+  {
+   "name": "Bridge.P06LinesP0r12_15",
+   "file": "Bridge/P06LinesP0r12_15.lean"
+  },
+  {
+   "name": "Bridge.P06LinesP0r12_16",
+   "file": "Bridge/P06LinesP0r12_16.lean"
+  },
+  {
+   "name": "Bridge.P06LinesP0r12_17",
+   "file": "Bridge/P06LinesP0r12_17.lean"
+  },
+  {
+   "name": "Bridge.P06LinesP0r12_18",
+   "file": "Bridge/P06LinesP0r12_18.lean"
+  },
+  {
+   "name": "Bridge.P06LinesP0r12_19",
+   "file": "Bridge/P06LinesP0r12_19.lean"
+  },
+  {
+   "name": "Bridge.P06LinesP0r12_2",
+   "file": "Bridge/P06LinesP0r12_2.lean"
+  },
+  {
+   "name": "Bridge.P06LinesP0r12_20",
+   "file": "Bridge/P06LinesP0r12_20.lean"
+  },
+  {
+   "name": "Bridge.P06LinesP0r12_21",
+   "file": "Bridge/P06LinesP0r12_21.lean"
+  },
+  {
+   "name": "Bridge.P06LinesP0r12_22",
+   "file": "Bridge/P06LinesP0r12_22.lean"
+  },
+  {
+   "name": "Bridge.P06LinesP0r12_23",
+   "file": "Bridge/P06LinesP0r12_23.lean"
+  },
+  {
+   "name": "Bridge.P06LinesP0r12_24",
+   "file": "Bridge/P06LinesP0r12_24.lean"
+  },
+  {
+   "name": "Bridge.P06LinesP0r12_25",
+   "file": "Bridge/P06LinesP0r12_25.lean"
+  },
+  {
+   "name": "Bridge.P06LinesP0r12_26",
+   "file": "Bridge/P06LinesP0r12_26.lean"
+  },
+  {
+   "name": "Bridge.P06LinesP0r12_27",
+   "file": "Bridge/P06LinesP0r12_27.lean"
+  },
+  {
+   "name": "Bridge.P06LinesP0r12_28",
+   "file": "Bridge/P06LinesP0r12_28.lean"
+  },
+  {
+   "name": "Bridge.P06LinesP0r12_3",
+   "file": "Bridge/P06LinesP0r12_3.lean"
+  },
+  {
+   "name": "Bridge.P06LinesP0r12_4",
+   "file": "Bridge/P06LinesP0r12_4.lean"
+  },
+  {
+   "name": "Bridge.P06LinesP0r12_5",
+   "file": "Bridge/P06LinesP0r12_5.lean"
+  },
+  {
+   "name": "Bridge.P06LinesP0r12_6",
+   "file": "Bridge/P06LinesP0r12_6.lean"
+  },
+  {
+   "name": "Bridge.P06LinesP0r12_7",
+   "file": "Bridge/P06LinesP0r12_7.lean"
+  },
+  {
+   "name": "Bridge.P06LinesP0r12_8",
+   "file": "Bridge/P06LinesP0r12_8.lean"
+  },
+  {
+   "name": "Bridge.P06LinesP0r12_9",
+   "file": "Bridge/P06LinesP0r12_9.lean"
+  },
+  {
+   "name": "Bridge.ParseRat",
+   "file": "Bridge/ParseRat.lean"
+  },
+  {
+   "name": "Bridge.Source",
+   "file": "Bridge/Source.lean"
+  },
+  {
+   "name": "Bridge.Tangent",
+   "file": "Bridge/Tangent.lean"
+  },
+  {
+   "name": "Bridge.TangentLines",
+   "file": "Bridge/TangentLines.lean"
+  },
+  {
+   "name": "Definitions.Def_DiagRamsey_Basic",
+   "file": "Definitions/Def_DiagRamsey_Basic.lean"
+  },
+  {
+   "name": "Definitions.Def_DiagRamsey_Cert",
+   "file": "Definitions/Def_DiagRamsey_Cert.lean"
+  },
+  {
+   "name": "Definitions.Def_DiagRamsey_JointBank",
+   "file": "Definitions/Def_DiagRamsey_JointBank.lean"
+  },
+  {
+   "name": "Definitions.Def_DiagRamsey_JointBank2",
+   "file": "Definitions/Def_DiagRamsey_JointBank2.lean"
+  },
+  {
+   "name": "Definitions.Def_DiagRamsey_LuWangSource",
+   "file": "Definitions/Def_DiagRamsey_LuWangSource.lean"
+  },
+  {
+   "name": "Definitions.Def_DiagRamsey_NestedMoment",
+   "file": "Definitions/Def_DiagRamsey_NestedMoment.lean"
+  },
+  {
+   "name": "Definitions.Def_DiagRamsey_SourceBank",
+   "file": "Definitions/Def_DiagRamsey_SourceBank.lean"
+  },
+  {
+   "name": "Definitions.Def_DiagRamsey_WeightedHost",
+   "file": "Definitions/Def_DiagRamsey_WeightedHost.lean"
+  },
+  {
+   "name": "FinalCheck",
+   "file": "FinalCheck.lean"
+  },
+  {
+   "name": "SharpBound",
+   "file": "SharpBound.lean"
+  }
+ ],
+ "root_closure_files": 4973,
+ "root_closure_sorry": [],
+ "root_closure_axioms": 0,
  "unclosed_files": 0,
  "headline_rule": "readme",
  "headline_count": 2,

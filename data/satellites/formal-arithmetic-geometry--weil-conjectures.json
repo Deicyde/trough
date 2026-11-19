@@ -60,6 +60,56 @@
   "Comparator/LeanEvalWeil/Challenge.lean"
  ],
  "closure_axioms": 0,
+ "root_modules": [
+  {
+   "name": "LeanEvalWeil.Challenge",
+   "file": "Comparator/LeanEvalWeil/Challenge.lean"
+  },
+  {
+   "name": "LeanEvalWeil.Solution",
+   "file": "Comparator/LeanEvalWeil/Solution.lean"
+  },
+  {
+   "name": "Weil.Challenge",
+   "file": "Comparator/Weil/Challenge.lean"
+  },
+  {
+   "name": "Weil.Definitions",
+   "file": "Comparator/Weil/Definitions.lean"
+  },
+  {
+   "name": "Weil.Solution",
+   "file": "Comparator/Weil/Solution.lean"
+  },
+  {
+   "name": "WeilConjectures",
+   "file": "WeilConjectures.lean"
+  }
+ ],
+ "root_closure_files": 5000,
+ "root_closure_sorry": [
+  "Comparator/LeanEvalWeil/Challenge.lean",
+  "Comparator/Weil/Challenge.lean",
+  "WeilConjectures/Algebra/Homology/GeometricSystemOrdinaryData/SystemGeometricOrdinaryComparison.lean",
+  "WeilConjectures/Algebra/Homology/OpenTensorNormalization/FiniteBaseChangeRestrictionLocalizationStep.lean",
+  "WeilConjectures/Algebra/Homology/System/SystemGeometricDerivedLift.lean",
+  "WeilConjectures/Algebra/Homology/System/SystemSingletonKFlat.lean",
+  "WeilConjectures/Algebra/Homology/System/SystemSingletonScalarLower.lean",
+  "WeilConjectures/Algebra/Homology/System/SystemSingletonScalarRepresentative.lean",
+  "WeilConjectures/AlgebraicGeometry/Cbc/CbcOpenCoefficientSquare.lean",
+  "WeilConjectures/AlgebraicGeometry/Cbc/CbcProperCoefficientSquare.lean",
+  "WeilConjectures/AlgebraicGeometry/ChartCentreTransport.lean",
+  "WeilConjectures/AlgebraicGeometry/ClosedSectionCompactOrigin/ClosedSectionSourceNormalization.lean",
+  "WeilConjectures/AlgebraicGeometry/CoefficientFiniteDescentHomAnyField.lean",
+  "WeilConjectures/AlgebraicGeometry/CoefficientHeartStatement.lean",
+  "WeilConjectures/AlgebraicGeometry/CompactSupportCompositeTransposeDomains.lean",
+  "WeilConjectures/AlgebraicGeometry/Comparison/ComparisonTensoratorSignedSymmetry.lean",
+  "WeilConjectures/AlgebraicGeometry/CompleteDerivedCompletion/DirectImageReductionMapLevelwiseIso.lean",
+  "WeilConjectures/AlgebraicGeometry/CompleteDerivedCompletion/DirectImageRoosLimitData.lean",
+  "WeilConjectures/AlgebraicGeometry/CompleteDerivedCompletion/DirectImageRoosProjectionCompatibility.lean",
+  "WeilConjectures/AlgebraicGeometry/CompleteDerivedCompletion/DirectImageRoosProjectionData.lean"
+ ],
+ "root_closure_axioms": 0,
  "unclosed_files": 0,
  "headline_rule": "readme",
  "headline_count": 1,

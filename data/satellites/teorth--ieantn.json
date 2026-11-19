@@ -38,6 +38,36 @@
  "closure_files": 0,
  "closure_sorry": [],
  "closure_axioms": 0,
+ "root_modules": [
+  {
+   "name": "IEANTN",
+   "file": "IEANTN.lean"
+  }
+ ],
+ "root_closure_files": 152,
+ "root_closure_sorry": [
+  "IEANTN/Nodes/BKLNW/v1/Challenge.lean",
+  "IEANTN/Nodes/BKLNW/v2/Challenge.lean",
+  "IEANTN/Nodes/BKLNWNumerics/v1/Challenge.lean",
+  "IEANTN/Nodes/Buthe/v1/Challenge.lean",
+  "IEANTN/Nodes/Buthe/v2/Challenge.lean",
+  "IEANTN/Nodes/Buthe2016/v1/Challenge.lean",
+  "IEANTN/Nodes/ButheNumerics/v1/Challenge.lean",
+  "IEANTN/Nodes/CH2/v1/Challenge.lean",
+  "IEANTN/Nodes/CH2/v2/Challenge.lean",
+  "IEANTN/Nodes/CH2/v3/Challenge.lean",
+  "IEANTN/Nodes/Chebyshev/v1/Challenge.lean",
+  "IEANTN/Nodes/ChebyshevNumerics/v1/Challenge.lean",
+  "IEANTN/Nodes/CotangentSeries/v1/Challenge.lean",
+  "IEANTN/Nodes/DudekPlatt/v1/Challenge.lean",
+  "IEANTN/Nodes/DudekPlatt/v2/Challenge.lean",
+  "IEANTN/Nodes/DudekPlatt/v3/Challenge.lean",
+  "IEANTN/Nodes/DudekPlatt/v4/Challenge.lean",
+  "IEANTN/Nodes/DudekPlattNumerics/v1/Challenge.lean",
+  "IEANTN/Nodes/DudekPlattNumerics/v2/Challenge.lean",
+  "IEANTN/Nodes/DudekPlattNumerics/v3/Challenge.lean"
+ ],
+ "root_closure_axioms": 0,
  "unclosed_files": 0,
  "headline_rule": null,
  "headline_count": 0,

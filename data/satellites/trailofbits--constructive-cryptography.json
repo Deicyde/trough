@@ -60,6 +60,35 @@
  "closure_files": 0,
  "closure_sorry": [],
  "closure_axioms": 0,
+ "root_modules": [
+  {
+   "name": "Commons",
+   "file": "src/Commons.lean"
+  },
+  {
+   "name": "ConstructiveCryptography",
+   "file": "src/ConstructiveCryptography.lean"
+  },
+  {
+   "name": "Examples",
+   "file": "src/Examples.lean"
+  },
+  {
+   "name": "Probability",
+   "file": "src/Probability.lean"
+  },
+  {
+   "name": "RandomSystems",
+   "file": "src/RandomSystems.lean"
+  },
+  {
+   "name": "Tests",
+   "file": "src/Tests.lean"
+  }
+ ],
+ "root_closure_files": 361,
+ "root_closure_sorry": [],
+ "root_closure_axioms": 0,
  "unclosed_files": 0,
  "headline_rule": null,
  "headline_count": 0,

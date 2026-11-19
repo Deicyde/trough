@@ -63,6 +63,2357 @@
   "vendor/con-leche/ConLeche/Frontend/Stream.lean"
  ],
  "closure_axioms": 0,
+ "root_modules": [
+  {
+   "name": "ConAgua",
+   "file": "ConAgua.lean"
+  },
+  {
+   "name": "ConAgua.Arena.Abs1",
+   "file": "ConAgua/Arena/Abs1.lean"
+  },
+  {
+   "name": "ConAgua.Arena.Abs1Refine",
+   "file": "ConAgua/Arena/Abs1Refine.lean"
+  },
+  {
+   "name": "ConAgua.Arena.Abs1Spec",
+   "file": "ConAgua/Arena/Abs1Spec.lean"
+  },
+  {
+   "name": "ConAgua.Arena.AndPinScratch",
+   "file": "ConAgua/Arena/AndPinScratch.lean"
+  },
+  {
+   "name": "ConAgua.Arena.AppRefine",
+   "file": "ConAgua/Arena/AppRefine.lean"
+  },
+  {
+   "name": "ConAgua.Arena.AppStore",
+   "file": "ConAgua/Arena/AppStore.lean"
+  },
+  {
+   "name": "ConAgua.Arena.ArRange",
+   "file": "ConAgua/Arena/ArRange.lean"
+  },
+  {
+   "name": "ConAgua.Arena.ArRangeRefine",
+   "file": "ConAgua/Arena/ArRangeRefine.lean"
+  },
+  {
+   "name": "ConAgua.Arena.ArRangeSpec",
+   "file": "ConAgua/Arena/ArRangeSpec.lean"
+  },
+  {
+   "name": "ConAgua.Arena.ArenaRel",
+   "file": "ConAgua/Arena/ArenaRel.lean"
+  },
+  {
+   "name": "ConAgua.Arena.BVarRefine",
+   "file": "ConAgua/Arena/BVarRefine.lean"
+  },
+  {
+   "name": "ConAgua.Arena.BVarStore",
+   "file": "ConAgua/Arena/BVarStore.lean"
+  },
+  {
+   "name": "ConAgua.Arena.BvarB",
+   "file": "ConAgua/Arena/BvarB.lean"
+  },
+  {
+   "name": "ConAgua.Arena.BvarBRefine",
+   "file": "ConAgua/Arena/BvarBRefine.lean"
+  },
+  {
+   "name": "ConAgua.Arena.CallF",
+   "file": "ConAgua/Arena/CallF.lean"
+  },
+  {
+   "name": "ConAgua.Arena.Checker",
+   "file": "ConAgua/Arena/Checker.lean"
+  },
+  {
+   "name": "ConAgua.Arena.CheckerT",
+   "file": "ConAgua/Arena/CheckerT.lean"
+  },
+  {
+   "name": "ConAgua.Arena.ConstRefine",
+   "file": "ConAgua/Arena/ConstRefine.lean"
+  },
+  {
+   "name": "ConAgua.Arena.ConstStore",
+   "file": "ConAgua/Arena/ConstStore.lean"
+  },
+  {
+   "name": "ConAgua.Arena.ConstsResolveFRefine",
+   "file": "ConAgua/Arena/ConstsResolveFRefine.lean"
+  },
+  {
+   "name": "ConAgua.Arena.ConstsResolveFRefine2",
+   "file": "ConAgua/Arena/ConstsResolveFRefine2.lean"
+  },
+  {
+   "name": "ConAgua.Arena.CoreAgree",
+   "file": "ConAgua/Arena/CoreAgree.lean"
+  },
+  {
+   "name": "ConAgua.Arena.CoreCaches",
+   "file": "ConAgua/Arena/CoreCaches.lean"
+  },
+  {
+   "name": "ConAgua.Arena.CoreDen",
+   "file": "ConAgua/Arena/CoreDen.lean"
+  },
+  {
+   "name": "ConAgua.Arena.CoreErec",
+   "file": "ConAgua/Arena/CoreErec.lean"
+  },
+  {
+   "name": "ConAgua.Arena.CoreLevels",
+   "file": "ConAgua/Arena/CoreLevels.lean"
+  },
+  {
+   "name": "ConAgua.Arena.CoreNatOp",
+   "file": "ConAgua/Arena/CoreNatOp.lean"
+  },
+  {
+   "name": "ConAgua.Arena.CoreRefine",
+   "file": "ConAgua/Arena/CoreRefine.lean"
+  },
+  {
+   "name": "ConAgua.Arena.CoreWalks",
+   "file": "ConAgua/Arena/CoreWalks.lean"
+  },
+  {
+   "name": "ConAgua.Arena.DeclAll",
+   "file": "ConAgua/Arena/DeclAll.lean"
+  },
+  {
+   "name": "ConAgua.Arena.DeclAndPin",
+   "file": "ConAgua/Arena/DeclAndPin.lean"
+  },
+  {
+   "name": "ConAgua.Arena.DeclAndPinInd",
+   "file": "ConAgua/Arena/DeclAndPinInd.lean"
+  },
+  {
+   "name": "ConAgua.Arena.DeclAndPinIndCopy",
+   "file": "ConAgua/Arena/DeclAndPinIndCopy.lean"
+  },
+  {
+   "name": "ConAgua.Arena.DeclAndPinIndCopy2",
+   "file": "ConAgua/Arena/DeclAndPinIndCopy2.lean"
+  },
+  {
+   "name": "ConAgua.Arena.DeclAndPinIndDec",
+   "file": "ConAgua/Arena/DeclAndPinIndDec.lean"
+  },
+  {
+   "name": "ConAgua.Arena.DeclAndPinIndRef",
+   "file": "ConAgua/Arena/DeclAndPinIndRef.lean"
+  },
+  {
+   "name": "ConAgua.Arena.DeclArmT",
+   "file": "ConAgua/Arena/DeclArmT.lean"
+  },
+  {
+   "name": "ConAgua.Arena.DeclAxQuotT",
+   "file": "ConAgua/Arena/DeclAxQuotT.lean"
+  },
+  {
+   "name": "ConAgua.Arena.DeclBase",
+   "file": "ConAgua/Arena/DeclBase.lean"
+  },
+  {
+   "name": "ConAgua.Arena.DeclCrpT",
+   "file": "ConAgua/Arena/DeclCrpT.lean"
+  },
+  {
+   "name": "ConAgua.Arena.DeclCvgT",
+   "file": "ConAgua/Arena/DeclCvgT.lean"
+  },
+  {
+   "name": "ConAgua.Arena.DeclDefnT",
+   "file": "ConAgua/Arena/DeclDefnT.lean"
+  },
+  {
+   "name": "ConAgua.Arena.DeclDivGateT",
+   "file": "ConAgua/Arena/DeclDivGateT.lean"
+  },
+  {
+   "name": "ConAgua.Arena.DeclDivGateT1",
+   "file": "ConAgua/Arena/DeclDivGateT1.lean"
+  },
+  {
+   "name": "ConAgua.Arena.DeclDivGateT2",
+   "file": "ConAgua/Arena/DeclDivGateT2.lean"
+  },
+  {
+   "name": "ConAgua.Arena.DeclHeader",
+   "file": "ConAgua/Arena/DeclHeader.lean"
+  },
+  {
+   "name": "ConAgua.Arena.DeclLvlStage",
+   "file": "ConAgua/Arena/DeclLvlStage.lean"
+  },
+  {
+   "name": "ConAgua.Arena.DeclNatGateT",
+   "file": "ConAgua/Arena/DeclNatGateT.lean"
+  },
+  {
+   "name": "ConAgua.Arena.DeclStep",
+   "file": "ConAgua/Arena/DeclStep.lean"
+  },
+  {
+   "name": "ConAgua.Arena.DeclTwin",
+   "file": "ConAgua/Arena/DeclTwin.lean"
+  },
+  {
+   "name": "ConAgua.Arena.DefEq",
+   "file": "ConAgua/Arena/DefEq.lean"
+  },
+  {
+   "name": "ConAgua.Arena.DefEqBody",
+   "file": "ConAgua/Arena/DefEqBody.lean"
+  },
+  {
+   "name": "ConAgua.Arena.DefEqGrindAttr",
+   "file": "ConAgua/Arena/DefEqGrindAttr.lean"
+  },
+  {
+   "name": "ConAgua.Arena.DefEqKnot",
+   "file": "ConAgua/Arena/DefEqKnot.lean"
+  },
+  {
+   "name": "ConAgua.Arena.DefEqLeaves",
+   "file": "ConAgua/Arena/DefEqLeaves.lean"
+  },
+  {
+   "name": "ConAgua.Arena.DefEqLeaves2",
+   "file": "ConAgua/Arena/DefEqLeaves2.lean"
+  },
+  {
+   "name": "ConAgua.Arena.DefEqMid",
+   "file": "ConAgua/Arena/DefEqMid.lean"
+  },
+  {
+   "name": "ConAgua.Arena.DefEqMidLazy",
+   "file": "ConAgua/Arena/DefEqMidLazy.lean"
+  },
+  {
+   "name": "ConAgua.Arena.DefEqMidLazy2",
+   "file": "ConAgua/Arena/DefEqMidLazy2.lean"
+  },
+  {
+   "name": "ConAgua.Arena.DefEqMidLoops",
+   "file": "ConAgua/Arena/DefEqMidLoops.lean"
+  },
+  {
+   "name": "ConAgua.Arena.DefEqMidPeel",
+   "file": "ConAgua/Arena/DefEqMidPeel.lean"
+  },
+  {
+   "name": "ConAgua.Arena.DefEqMidQuick",
+   "file": "ConAgua/Arena/DefEqMidQuick.lean"
+  },
+  {
+   "name": "ConAgua.Arena.DefEqMidSpine",
+   "file": "ConAgua/Arena/DefEqMidSpine.lean"
+  },
+  {
+   "name": "ConAgua.Arena.DefEqStuck",
+   "file": "ConAgua/Arena/DefEqStuck.lean"
+  },
+  {
+   "name": "ConAgua.Arena.DefEqStuckApp",
+   "file": "ConAgua/Arena/DefEqStuckApp.lean"
+  },
+  {
+   "name": "ConAgua.Arena.DefEqStuckCert",
+   "file": "ConAgua/Arena/DefEqStuckCert.lean"
+  },
+  {
+   "name": "ConAgua.Arena.DefEqStuckDisp",
+   "file": "ConAgua/Arena/DefEqStuckDisp.lean"
+  },
+  {
+   "name": "ConAgua.Arena.DefEqStuckEta",
+   "file": "ConAgua/Arena/DefEqStuckEta.lean"
+  },
+  {
+   "name": "ConAgua.Arena.DefEqStuckGo",
+   "file": "ConAgua/Arena/DefEqStuckGo.lean"
+  },
+  {
+   "name": "ConAgua.Arena.DefEqStuckIrrel",
+   "file": "ConAgua/Arena/DefEqStuckIrrel.lean"
+  },
+  {
+   "name": "ConAgua.Arena.DefEqStuckProj",
+   "file": "ConAgua/Arena/DefEqStuckProj.lean"
+  },
+  {
+   "name": "ConAgua.Arena.DefEqStuckShape",
+   "file": "ConAgua/Arena/DefEqStuckShape.lean"
+  },
+  {
+   "name": "ConAgua.Arena.DefEqStuckStr",
+   "file": "ConAgua/Arena/DefEqStuckStr.lean"
+  },
+  {
+   "name": "ConAgua.Arena.DefEqStuckTail",
+   "file": "ConAgua/Arena/DefEqStuckTail.lean"
+  },
+  {
+   "name": "ConAgua.Arena.DefEqStuckUnit",
+   "file": "ConAgua/Arena/DefEqStuckUnit.lean"
+  },
+  {
+   "name": "ConAgua.Arena.DefEqStuckWith",
+   "file": "ConAgua/Arena/DefEqStuckWith.lean"
+  },
+  {
+   "name": "ConAgua.Arena.DerRel",
+   "file": "ConAgua/Arena/DerRel.lean"
+  },
+  {
+   "name": "ConAgua.Arena.Env",
+   "file": "ConAgua/Arena/Env.lean"
+  },
+  {
+   "name": "ConAgua.Arena.EnvFlags",
+   "file": "ConAgua/Arena/EnvFlags.lean"
+  },
+  {
+   "name": "ConAgua.Arena.EnvRec",
+   "file": "ConAgua/Arena/EnvRec.lean"
+  },
+  {
+   "name": "ConAgua.Arena.ExprMk",
+   "file": "ConAgua/Arena/ExprMk.lean"
+  },
+  {
+   "name": "ConAgua.Arena.FVarRange",
+   "file": "ConAgua/Arena/FVarRange.lean"
+  },
+  {
+   "name": "ConAgua.Arena.FVarRangeRefine",
+   "file": "ConAgua/Arena/FVarRangeRefine.lean"
+  },
+  {
+   "name": "ConAgua.Arena.FVarRefine",
+   "file": "ConAgua/Arena/FVarRefine.lean"
+  },
+  {
+   "name": "ConAgua.Arena.FVarStore",
+   "file": "ConAgua/Arena/FVarStore.lean"
+  },
+  {
+   "name": "ConAgua.Arena.ForallRefine",
+   "file": "ConAgua/Arena/ForallRefine.lean"
+  },
+  {
+   "name": "ConAgua.Arena.ForallStore",
+   "file": "ConAgua/Arena/ForallStore.lean"
+  },
+  {
+   "name": "ConAgua.Arena.Frame",
+   "file": "ConAgua/Arena/Frame.lean"
+  },
+  {
+   "name": "ConAgua.Arena.FreezeFresh",
+   "file": "ConAgua/Arena/FreezeFresh.lean"
+  },
+  {
+   "name": "ConAgua.Arena.FreezeRel",
+   "file": "ConAgua/Arena/FreezeRel.lean"
+  },
+  {
+   "name": "ConAgua.Arena.FreezeTrunc",
+   "file": "ConAgua/Arena/FreezeTrunc.lean"
+  },
+  {
+   "name": "ConAgua.Arena.FuelConsts",
+   "file": "ConAgua/Arena/FuelConsts.lean"
+  },
+  {
+   "name": "ConAgua.Arena.HasFvar",
+   "file": "ConAgua/Arena/HasFvar.lean"
+  },
+  {
+   "name": "ConAgua.Arena.HasFvarRefine",
+   "file": "ConAgua/Arena/HasFvarRefine.lean"
+  },
+  {
+   "name": "ConAgua.Arena.ImaxRefine",
+   "file": "ConAgua/Arena/ImaxRefine.lean"
+  },
+  {
+   "name": "ConAgua.Arena.ImaxStore",
+   "file": "ConAgua/Arena/ImaxStore.lean"
+  },
+  {
+   "name": "ConAgua.Arena.IndAll",
+   "file": "ConAgua/Arena/IndAll.lean"
+  },
+  {
+   "name": "ConAgua.Arena.IndArm",
+   "file": "ConAgua/Arena/IndArm.lean"
+  },
+  {
+   "name": "ConAgua.Arena.IndCopy",
+   "file": "ConAgua/Arena/IndCopy.lean"
+  },
+  {
+   "name": "ConAgua.Arena.IndCopy2",
+   "file": "ConAgua/Arena/IndCopy2.lean"
+  },
+  {
+   "name": "ConAgua.Arena.IndGrindAttr",
+   "file": "ConAgua/Arena/IndGrindAttr.lean"
+  },
+  {
+   "name": "ConAgua.Arena.IndIface",
+   "file": "ConAgua/Arena/IndIface.lean"
+  },
+  {
+   "name": "ConAgua.Arena.IndInstall",
+   "file": "ConAgua/Arena/IndInstall.lean"
+  },
+  {
+   "name": "ConAgua.Arena.IndLibSpec",
+   "file": "ConAgua/Arena/IndLibSpec.lean"
+  },
+  {
+   "name": "ConAgua.Arena.IndMaster",
+   "file": "ConAgua/Arena/IndMaster.lean"
+  },
+  {
+   "name": "ConAgua.Arena.IndParts",
+   "file": "ConAgua/Arena/IndParts.lean"
+  },
+  {
+   "name": "ConAgua.Arena.IndPos",
+   "file": "ConAgua/Arena/IndPos.lean"
+  },
+  {
+   "name": "ConAgua.Arena.IndPos2",
+   "file": "ConAgua/Arena/IndPos2.lean"
+  },
+  {
+   "name": "ConAgua.Arena.IndProg",
+   "file": "ConAgua/Arena/IndProg.lean"
+  },
+  {
+   "name": "ConAgua.Arena.IndRealAbsT",
+   "file": "ConAgua/Arena/IndRealAbsT.lean"
+  },
+  {
+   "name": "ConAgua.Arena.IndRealBle",
+   "file": "ConAgua/Arena/IndRealBle.lean"
+  },
+  {
+   "name": "ConAgua.Arena.IndRealCrF",
+   "file": "ConAgua/Arena/IndRealCrF.lean"
+  },
+  {
+   "name": "ConAgua.Arena.IndRealMemo",
+   "file": "ConAgua/Arena/IndRealMemo.lean"
+  },
+  {
+   "name": "ConAgua.Arena.IndRealMemoCr",
+   "file": "ConAgua/Arena/IndRealMemoCr.lean"
+  },
+  {
+   "name": "ConAgua.Arena.IndRealOpf",
+   "file": "ConAgua/Arena/IndRealOpf.lean"
+  },
+  {
+   "name": "ConAgua.Arena.IndRealOpf2",
+   "file": "ConAgua/Arena/IndRealOpf2.lean"
+  },
+  {
+   "name": "ConAgua.Arena.IndRealOpf3",
+   "file": "ConAgua/Arena/IndRealOpf3.lean"
+  },
+  {
+   "name": "ConAgua.Arena.IndRealPartsC1",
+   "file": "ConAgua/Arena/IndRealPartsC1.lean"
+  },
+  {
+   "name": "ConAgua.Arena.IndRealPartsC2",
+   "file": "ConAgua/Arena/IndRealPartsC2.lean"
+  },
+  {
+   "name": "ConAgua.Arena.IndRealSctC",
+   "file": "ConAgua/Arena/IndRealSctC.lean"
+  },
+  {
+   "name": "ConAgua.Arena.IndStubs",
+   "file": "ConAgua/Arena/IndStubs.lean"
+  },
+  {
+   "name": "ConAgua.Arena.IndSum",
+   "file": "ConAgua/Arena/IndSum.lean"
+  },
+  {
+   "name": "ConAgua.Arena.IndT.ArmMemos",
+   "file": "ConAgua/Arena/IndT/ArmMemos.lean"
+  },
+  {
+   "name": "ConAgua.Arena.IndT.Base",
+   "file": "ConAgua/Arena/IndT/Base.lean"
+  },
+  {
+   "name": "ConAgua.Arena.IndT.Block",
+   "file": "ConAgua/Arena/IndT/Block.lean"
+  },
+  {
+   "name": "ConAgua.Arena.IndT.BncAfr",
+   "file": "ConAgua/Arena/IndT/BncAfr.lean"
+  },
+  {
+   "name": "ConAgua.Arena.IndT.CheckIndDecl",
+   "file": "ConAgua/Arena/IndT/CheckIndDecl.lean"
+  },
+  {
+   "name": "ConAgua.Arena.IndT.GenRec1",
+   "file": "ConAgua/Arena/IndT/GenRec1.lean"
+  },
+  {
+   "name": "ConAgua.Arena.IndT.GenRec2",
+   "file": "ConAgua/Arena/IndT/GenRec2.lean"
+  },
+  {
+   "name": "ConAgua.Arena.IndT.GenRec3",
+   "file": "ConAgua/Arena/IndT/GenRec3.lean"
+  },
+  {
+   "name": "ConAgua.Arena.IndT.Install1",
+   "file": "ConAgua/Arena/IndT/Install1.lean"
+  },
+  {
+   "name": "ConAgua.Arena.IndT.Install3",
+   "file": "ConAgua/Arena/IndT/Install3.lean"
+  },
+  {
+   "name": "ConAgua.Arena.IndT.Install4",
+   "file": "ConAgua/Arena/IndT/Install4.lean"
+  },
+  {
+   "name": "ConAgua.Arena.IndT.Install6",
+   "file": "ConAgua/Arena/IndT/Install6.lean"
+  },
+  {
+   "name": "ConAgua.Arena.IndT.Install7",
+   "file": "ConAgua/Arena/IndT/Install7.lean"
+  },
+  {
+   "name": "ConAgua.Arena.IndT.KeepC",
+   "file": "ConAgua/Arena/IndT/KeepC.lean"
+  },
+  {
+   "name": "ConAgua.Arena.IndT.Lift",
+   "file": "ConAgua/Arena/IndT/Lift.lean"
+  },
+  {
+   "name": "ConAgua.Arena.IndT.Pass",
+   "file": "ConAgua/Arena/IndT/Pass.lean"
+  },
+  {
+   "name": "ConAgua.Arena.IndT.PosAll",
+   "file": "ConAgua/Arena/IndT/PosAll.lean"
+  },
+  {
+   "name": "ConAgua.Arena.IndT.PosApp",
+   "file": "ConAgua/Arena/IndT/PosApp.lean"
+  },
+  {
+   "name": "ConAgua.Arena.IndT.PosBind",
+   "file": "ConAgua/Arena/IndT/PosBind.lean"
+  },
+  {
+   "name": "ConAgua.Arena.IndT.PosCensus",
+   "file": "ConAgua/Arena/IndT/PosCensus.lean"
+  },
+  {
+   "name": "ConAgua.Arena.IndT.PosCont",
+   "file": "ConAgua/Arena/IndT/PosCont.lean"
+  },
+  {
+   "name": "ConAgua.Arena.IndT.PosCrest",
+   "file": "ConAgua/Arena/IndT/PosCrest.lean"
+  },
+  {
+   "name": "ConAgua.Arena.IndT.PosCtors",
+   "file": "ConAgua/Arena/IndT/PosCtors.lean"
+  },
+  {
+   "name": "ConAgua.Arena.IndT.PosDefs",
+   "file": "ConAgua/Arena/IndT/PosDefs.lean"
+  },
+  {
+   "name": "ConAgua.Arena.IndT.PosFields",
+   "file": "ConAgua/Arena/IndT/PosFields.lean"
+  },
+  {
+   "name": "ConAgua.Arena.IndT.PosFrame",
+   "file": "ConAgua/Arena/IndT/PosFrame.lean"
+  },
+  {
+   "name": "ConAgua.Arena.IndT.PosKey",
+   "file": "ConAgua/Arena/IndT/PosKey.lean"
+  },
+  {
+   "name": "ConAgua.Arena.IndT.PosNew",
+   "file": "ConAgua/Arena/IndT/PosNew.lean"
+  },
+  {
+   "name": "ConAgua.Arena.IndT.PosOne",
+   "file": "ConAgua/Arena/IndT/PosOne.lean"
+  },
+  {
+   "name": "ConAgua.Arena.IndT.PosRoot",
+   "file": "ConAgua/Arena/IndT/PosRoot.lean"
+  },
+  {
+   "name": "ConAgua.Arena.IndT.PosWalk",
+   "file": "ConAgua/Arena/IndT/PosWalk.lean"
+  },
+  {
+   "name": "ConAgua.Arena.IndT.Positivity",
+   "file": "ConAgua/Arena/IndT/Positivity.lean"
+  },
+  {
+   "name": "ConAgua.Arena.IndT.RecCheckK53",
+   "file": "ConAgua/Arena/IndT/RecCheckK53.lean"
+  },
+  {
+   "name": "ConAgua.Arena.IndT.RecCheckPins",
+   "file": "ConAgua/Arena/IndT/RecCheckPins.lean"
+  },
+  {
+   "name": "ConAgua.Arena.IndT.RecCheckTpd",
+   "file": "ConAgua/Arena/IndT/RecCheckTpd.lean"
+  },
+  {
+   "name": "ConAgua.Arena.IndT.RecGen19",
+   "file": "ConAgua/Arena/IndT/RecGen19.lean"
+  },
+  {
+   "name": "ConAgua.Arena.IndT.RecGen21",
+   "file": "ConAgua/Arena/IndT/RecGen21.lean"
+  },
+  {
+   "name": "ConAgua.Arena.IndT.RecGen23",
+   "file": "ConAgua/Arena/IndT/RecGen23.lean"
+  },
+  {
+   "name": "ConAgua.Arena.IndT.RecGen24",
+   "file": "ConAgua/Arena/IndT/RecGen24.lean"
+  },
+  {
+   "name": "ConAgua.Arena.IndT.RecGen27",
+   "file": "ConAgua/Arena/IndT/RecGen27.lean"
+  },
+  {
+   "name": "ConAgua.Arena.IndT.RecGen28",
+   "file": "ConAgua/Arena/IndT/RecGen28.lean"
+  },
+  {
+   "name": "ConAgua.Arena.IndT.StreamRecs",
+   "file": "ConAgua/Arena/IndT/StreamRecs.lean"
+  },
+  {
+   "name": "ConAgua.Arena.IndT.Sum1",
+   "file": "ConAgua/Arena/IndT/Sum1.lean"
+  },
+  {
+   "name": "ConAgua.Arena.IndT.Sum2",
+   "file": "ConAgua/Arena/IndT/Sum2.lean"
+  },
+  {
+   "name": "ConAgua.Arena.IndT.Sum3",
+   "file": "ConAgua/Arena/IndT/Sum3.lean"
+  },
+  {
+   "name": "ConAgua.Arena.IndT.Sum4",
+   "file": "ConAgua/Arena/IndT/Sum4.lean"
+  },
+  {
+   "name": "ConAgua.Arena.IndT.Tail",
+   "file": "ConAgua/Arena/IndT/Tail.lean"
+  },
+  {
+   "name": "ConAgua.Arena.IndView",
+   "file": "ConAgua/Arena/IndView.lean"
+  },
+  {
+   "name": "ConAgua.Arena.IndexFreeze",
+   "file": "ConAgua/Arena/IndexFreeze.lean"
+  },
+  {
+   "name": "ConAgua.Arena.Infer",
+   "file": "ConAgua/Arena/Infer.lean"
+  },
+  {
+   "name": "ConAgua.Arena.InferBodyBind",
+   "file": "ConAgua/Arena/InferBodyBind.lean"
+  },
+  {
+   "name": "ConAgua.Arena.InferBodyBindPi",
+   "file": "ConAgua/Arena/InferBodyBindPi.lean"
+  },
+  {
+   "name": "ConAgua.Arena.InferBodyDisp",
+   "file": "ConAgua/Arena/InferBodyDisp.lean"
+  },
+  {
+   "name": "ConAgua.Arena.InferBodyIntern",
+   "file": "ConAgua/Arena/InferBodyIntern.lean"
+  },
+  {
+   "name": "ConAgua.Arena.InferBodyLet",
+   "file": "ConAgua/Arena/InferBodyLet.lean"
+  },
+  {
+   "name": "ConAgua.Arena.InferBodySpine",
+   "file": "ConAgua/Arena/InferBodySpine.lean"
+  },
+  {
+   "name": "ConAgua.Arena.InferBodySpineF",
+   "file": "ConAgua/Arena/InferBodySpineF.lean"
+  },
+  {
+   "name": "ConAgua.Arena.InferFieldSort",
+   "file": "ConAgua/Arena/InferFieldSort.lean"
+  },
+  {
+   "name": "ConAgua.Arena.InferFieldSortNat",
+   "file": "ConAgua/Arena/InferFieldSortNat.lean"
+  },
+  {
+   "name": "ConAgua.Arena.InferLeaves",
+   "file": "ConAgua/Arena/InferLeaves.lean"
+  },
+  {
+   "name": "ConAgua.Arena.InferProj",
+   "file": "ConAgua/Arena/InferProj.lean"
+  },
+  {
+   "name": "ConAgua.Arena.InferProj2",
+   "file": "ConAgua/Arena/InferProj2.lean"
+  },
+  {
+   "name": "ConAgua.Arena.InitLink",
+   "file": "ConAgua/Arena/InitLink.lean"
+  },
+  {
+   "name": "ConAgua.Arena.Inst1",
+   "file": "ConAgua/Arena/Inst1.lean"
+  },
+  {
+   "name": "ConAgua.Arena.Inst1Bench",
+   "file": "ConAgua/Arena/Inst1Bench.lean"
+  },
+  {
+   "name": "ConAgua.Arena.Inst1BenchComp",
+   "file": "ConAgua/Arena/Inst1BenchComp.lean"
+  },
+  {
+   "name": "ConAgua.Arena.Inst1Emit",
+   "file": "ConAgua/Arena/Inst1Emit.lean"
+  },
+  {
+   "name": "ConAgua.Arena.Inst1Refine",
+   "file": "ConAgua/Arena/Inst1Refine.lean"
+  },
+  {
+   "name": "ConAgua.Arena.Inst1Spec",
+   "file": "ConAgua/Arena/Inst1Spec.lean"
+  },
+  {
+   "name": "ConAgua.Arena.InstLP",
+   "file": "ConAgua/Arena/InstLP.lean"
+  },
+  {
+   "name": "ConAgua.Arena.InstLPEntry",
+   "file": "ConAgua/Arena/InstLPEntry.lean"
+  },
+  {
+   "name": "ConAgua.Arena.InstLPKeys",
+   "file": "ConAgua/Arena/InstLPKeys.lean"
+  },
+  {
+   "name": "ConAgua.Arena.InstLPLevel",
+   "file": "ConAgua/Arena/InstLPLevel.lean"
+  },
+  {
+   "name": "ConAgua.Arena.InstLPLevel2",
+   "file": "ConAgua/Arena/InstLPLevel2.lean"
+  },
+  {
+   "name": "ConAgua.Arena.InstLPRef",
+   "file": "ConAgua/Arena/InstLPRef.lean"
+  },
+  {
+   "name": "ConAgua.Arena.InstLPRef2",
+   "file": "ConAgua/Arena/InstLPRef2.lean"
+  },
+  {
+   "name": "ConAgua.Arena.InstLPSpec",
+   "file": "ConAgua/Arena/InstLPSpec.lean"
+  },
+  {
+   "name": "ConAgua.Arena.InstLPWalk",
+   "file": "ConAgua/Arena/InstLPWalk.lean"
+  },
+  {
+   "name": "ConAgua.Arena.InstLPWalkArms",
+   "file": "ConAgua/Arena/InstLPWalkArms.lean"
+  },
+  {
+   "name": "ConAgua.Arena.InstLPWalkBase",
+   "file": "ConAgua/Arena/InstLPWalkBase.lean"
+  },
+  {
+   "name": "ConAgua.Arena.InstLPWalkGo",
+   "file": "ConAgua/Arena/InstLPWalkGo.lean"
+  },
+  {
+   "name": "ConAgua.Arena.InstLPWalkLet",
+   "file": "ConAgua/Arena/InstLPWalkLet.lean"
+  },
+  {
+   "name": "ConAgua.Arena.InstLPWalkRef",
+   "file": "ConAgua/Arena/InstLPWalkRef.lean"
+  },
+  {
+   "name": "ConAgua.Arena.InstLPWalkRef2",
+   "file": "ConAgua/Arena/InstLPWalkRef2.lean"
+  },
+  {
+   "name": "ConAgua.Arena.InstLPWalkRef3",
+   "file": "ConAgua/Arena/InstLPWalkRef3.lean"
+  },
+  {
+   "name": "ConAgua.Arena.InstLPWalkStep",
+   "file": "ConAgua/Arena/InstLPWalkStep.lean"
+  },
+  {
+   "name": "ConAgua.Arena.InstList",
+   "file": "ConAgua/Arena/InstList.lean"
+  },
+  {
+   "name": "ConAgua.Arena.InstListRefine",
+   "file": "ConAgua/Arena/InstListRefine.lean"
+  },
+  {
+   "name": "ConAgua.Arena.InstListSpec",
+   "file": "ConAgua/Arena/InstListSpec.lean"
+  },
+  {
+   "name": "ConAgua.Arena.Keeps",
+   "file": "ConAgua/Arena/Keeps.lean"
+  },
+  {
+   "name": "ConAgua.Arena.Knot",
+   "file": "ConAgua/Arena/Knot.lean"
+  },
+  {
+   "name": "ConAgua.Arena.KnotE",
+   "file": "ConAgua/Arena/KnotE.lean"
+  },
+  {
+   "name": "ConAgua.Arena.KnotEntry",
+   "file": "ConAgua/Arena/KnotEntry.lean"
+  },
+  {
+   "name": "ConAgua.Arena.KnotSlot",
+   "file": "ConAgua/Arena/KnotSlot.lean"
+  },
+  {
+   "name": "ConAgua.Arena.KnotTagged",
+   "file": "ConAgua/Arena/KnotTagged.lean"
+  },
+  {
+   "name": "ConAgua.Arena.LamRefine",
+   "file": "ConAgua/Arena/LamRefine.lean"
+  },
+  {
+   "name": "ConAgua.Arena.LamStore",
+   "file": "ConAgua/Arena/LamStore.lean"
+  },
+  {
+   "name": "ConAgua.Arena.LeafFns",
+   "file": "ConAgua/Arena/LeafFns.lean"
+  },
+  {
+   "name": "ConAgua.Arena.LetRefine",
+   "file": "ConAgua/Arena/LetRefine.lean"
+  },
+  {
+   "name": "ConAgua.Arena.LetStore",
+   "file": "ConAgua/Arena/LetStore.lean"
+  },
+  {
+   "name": "ConAgua.Arena.LevelApd",
+   "file": "ConAgua/Arena/LevelApd.lean"
+  },
+  {
+   "name": "ConAgua.Arena.LevelArena",
+   "file": "ConAgua/Arena/LevelArena.lean"
+  },
+  {
+   "name": "ConAgua.Arena.LevelEquiv",
+   "file": "ConAgua/Arena/LevelEquiv.lean"
+  },
+  {
+   "name": "ConAgua.Arena.LevelEquivRel",
+   "file": "ConAgua/Arena/LevelEquivRel.lean"
+  },
+  {
+   "name": "ConAgua.Arena.LevelGrindAttr",
+   "file": "ConAgua/Arena/LevelGrindAttr.lean"
+  },
+  {
+   "name": "ConAgua.Arena.LevelHeap",
+   "file": "ConAgua/Arena/LevelHeap.lean"
+  },
+  {
+   "name": "ConAgua.Arena.LevelHeapRel",
+   "file": "ConAgua/Arena/LevelHeapRel.lean"
+  },
+  {
+   "name": "ConAgua.Arena.LevelIntern",
+   "file": "ConAgua/Arena/LevelIntern.lean"
+  },
+  {
+   "name": "ConAgua.Arena.LevelInternRef",
+   "file": "ConAgua/Arena/LevelInternRef.lean"
+  },
+  {
+   "name": "ConAgua.Arena.LevelLeq",
+   "file": "ConAgua/Arena/LevelLeq.lean"
+  },
+  {
+   "name": "ConAgua.Arena.LevelLeqRel",
+   "file": "ConAgua/Arena/LevelLeqRel.lean"
+  },
+  {
+   "name": "ConAgua.Arena.LevelLeqSpec",
+   "file": "ConAgua/Arena/LevelLeqSpec.lean"
+  },
+  {
+   "name": "ConAgua.Arena.LevelRefine",
+   "file": "ConAgua/Arena/LevelRefine.lean"
+  },
+  {
+   "name": "ConAgua.Arena.LevelSimp",
+   "file": "ConAgua/Arena/LevelSimp.lean"
+  },
+  {
+   "name": "ConAgua.Arena.LevelSimpRel",
+   "file": "ConAgua/Arena/LevelSimpRel.lean"
+  },
+  {
+   "name": "ConAgua.Arena.LevelStore",
+   "file": "ConAgua/Arena/LevelStore.lean"
+  },
+  {
+   "name": "ConAgua.Arena.LevelSubst",
+   "file": "ConAgua/Arena/LevelSubst.lean"
+  },
+  {
+   "name": "ConAgua.Arena.LevelSubstL",
+   "file": "ConAgua/Arena/LevelSubstL.lean"
+  },
+  {
+   "name": "ConAgua.Arena.LevelSubstLP",
+   "file": "ConAgua/Arena/LevelSubstLP.lean"
+  },
+  {
+   "name": "ConAgua.Arena.LevelView",
+   "file": "ConAgua/Arena/LevelView.lean"
+  },
+  {
+   "name": "ConAgua.Arena.LevelZero",
+   "file": "ConAgua/Arena/LevelZero.lean"
+  },
+  {
+   "name": "ConAgua.Arena.Lift",
+   "file": "ConAgua/Arena/Lift.lean"
+  },
+  {
+   "name": "ConAgua.Arena.LiftBench",
+   "file": "ConAgua/Arena/LiftBench.lean"
+  },
+  {
+   "name": "ConAgua.Arena.LiftBenchComp",
+   "file": "ConAgua/Arena/LiftBenchComp.lean"
+  },
+  {
+   "name": "ConAgua.Arena.LiftEmit",
+   "file": "ConAgua/Arena/LiftEmit.lean"
+  },
+  {
+   "name": "ConAgua.Arena.LiftRefine",
+   "file": "ConAgua/Arena/LiftRefine.lean"
+  },
+  {
+   "name": "ConAgua.Arena.LiftSpec",
+   "file": "ConAgua/Arena/LiftSpec.lean"
+  },
+  {
+   "name": "ConAgua.Arena.LitRefine",
+   "file": "ConAgua/Arena/LitRefine.lean"
+  },
+  {
+   "name": "ConAgua.Arena.LoopFns",
+   "file": "ConAgua/Arena/LoopFns.lean"
+  },
+  {
+   "name": "ConAgua.Arena.LoopStart",
+   "file": "ConAgua/Arena/LoopStart.lean"
+  },
+  {
+   "name": "ConAgua.Arena.LoopT",
+   "file": "ConAgua/Arena/LoopT.lean"
+  },
+  {
+   "name": "ConAgua.Arena.LsRefine",
+   "file": "ConAgua/Arena/LsRefine.lean"
+  },
+  {
+   "name": "ConAgua.Arena.LsStore",
+   "file": "ConAgua/Arena/LsStore.lean"
+  },
+  {
+   "name": "ConAgua.Arena.LvlGrow",
+   "file": "ConAgua/Arena/LvlGrow.lean"
+  },
+  {
+   "name": "ConAgua.Arena.MaxRefine",
+   "file": "ConAgua/Arena/MaxRefine.lean"
+  },
+  {
+   "name": "ConAgua.Arena.MaxStore",
+   "file": "ConAgua/Arena/MaxStore.lean"
+  },
+  {
+   "name": "ConAgua.Arena.MemoBank",
+   "file": "ConAgua/Arena/MemoBank.lean"
+  },
+  {
+   "name": "ConAgua.Arena.MemoLib",
+   "file": "ConAgua/Arena/MemoLib.lean"
+  },
+  {
+   "name": "ConAgua.Arena.MemoLibRel",
+   "file": "ConAgua/Arena/MemoLibRel.lean"
+  },
+  {
+   "name": "ConAgua.Arena.MemoTree",
+   "file": "ConAgua/Arena/MemoTree.lean"
+  },
+  {
+   "name": "ConAgua.Arena.NAnonRefine",
+   "file": "ConAgua/Arena/NAnonRefine.lean"
+  },
+  {
+   "name": "ConAgua.Arena.NAnonStore",
+   "file": "ConAgua/Arena/NAnonStore.lean"
+  },
+  {
+   "name": "ConAgua.Arena.NNumRefine",
+   "file": "ConAgua/Arena/NNumRefine.lean"
+  },
+  {
+   "name": "ConAgua.Arena.NNumStore",
+   "file": "ConAgua/Arena/NNumStore.lean"
+  },
+  {
+   "name": "ConAgua.Arena.NStrRefine",
+   "file": "ConAgua/Arena/NStrRefine.lean"
+  },
+  {
+   "name": "ConAgua.Arena.NStrStore",
+   "file": "ConAgua/Arena/NStrStore.lean"
+  },
+  {
+   "name": "ConAgua.Arena.NatArms",
+   "file": "ConAgua/Arena/NatArms.lean"
+  },
+  {
+   "name": "ConAgua.Arena.ParamRefine",
+   "file": "ConAgua/Arena/ParamRefine.lean"
+  },
+  {
+   "name": "ConAgua.Arena.ParamStore",
+   "file": "ConAgua/Arena/ParamStore.lean"
+  },
+  {
+   "name": "ConAgua.Arena.PhaseBT",
+   "file": "ConAgua/Arena/PhaseBT.lean"
+  },
+  {
+   "name": "ConAgua.Arena.PhaseWorker",
+   "file": "ConAgua/Arena/PhaseWorker.lean"
+  },
+  {
+   "name": "ConAgua.Arena.Pins",
+   "file": "ConAgua/Arena/Pins.lean"
+  },
+  {
+   "name": "ConAgua.Arena.PinsNatOp",
+   "file": "ConAgua/Arena/PinsNatOp.lean"
+  },
+  {
+   "name": "ConAgua.Arena.Prelude",
+   "file": "ConAgua/Arena/Prelude.lean"
+  },
+  {
+   "name": "ConAgua.Arena.ProjRefine",
+   "file": "ConAgua/Arena/ProjRefine.lean"
+  },
+  {
+   "name": "ConAgua.Arena.ProjStore",
+   "file": "ConAgua/Arena/ProjStore.lean"
+  },
+  {
+   "name": "ConAgua.Arena.PropRead",
+   "file": "ConAgua/Arena/PropRead.lean"
+  },
+  {
+   "name": "ConAgua.Arena.PropReadLoops",
+   "file": "ConAgua/Arena/PropReadLoops.lean"
+  },
+  {
+   "name": "ConAgua.Arena.PropReadRefine",
+   "file": "ConAgua/Arena/PropReadRefine.lean"
+  },
+  {
+   "name": "ConAgua.Arena.PropReadRefine2",
+   "file": "ConAgua/Arena/PropReadRefine2.lean"
+  },
+  {
+   "name": "ConAgua.Arena.PropReadRefine3",
+   "file": "ConAgua/Arena/PropReadRefine3.lean"
+  },
+  {
+   "name": "ConAgua.Arena.PropReadRefine4",
+   "file": "ConAgua/Arena/PropReadRefine4.lean"
+  },
+  {
+   "name": "ConAgua.Arena.PropReadW",
+   "file": "ConAgua/Arena/PropReadW.lean"
+  },
+  {
+   "name": "ConAgua.Arena.RecCheck",
+   "file": "ConAgua/Arena/RecCheck.lean"
+  },
+  {
+   "name": "ConAgua.Arena.RecClass",
+   "file": "ConAgua/Arena/RecClass.lean"
+  },
+  {
+   "name": "ConAgua.Arena.RecFireCore",
+   "file": "ConAgua/Arena/RecFireCore.lean"
+  },
+  {
+   "name": "ConAgua.Arena.RecFireEnv",
+   "file": "ConAgua/Arena/RecFireEnv.lean"
+  },
+  {
+   "name": "ConAgua.Arena.RecGen",
+   "file": "ConAgua/Arena/RecGen.lean"
+  },
+  {
+   "name": "ConAgua.Arena.Refine",
+   "file": "ConAgua/Arena/Refine.lean"
+  },
+  {
+   "name": "ConAgua.Arena.Rom",
+   "file": "ConAgua/Arena/Rom.lean"
+  },
+  {
+   "name": "ConAgua.Arena.RomCI",
+   "file": "ConAgua/Arena/RomCI.lean"
+  },
+  {
+   "name": "ConAgua.Arena.RomExpr",
+   "file": "ConAgua/Arena/RomExpr.lean"
+  },
+  {
+   "name": "ConAgua.Arena.RomExprRef",
+   "file": "ConAgua/Arena/RomExprRef.lean"
+  },
+  {
+   "name": "ConAgua.Arena.RomItems",
+   "file": "ConAgua/Arena/RomItems.lean"
+  },
+  {
+   "name": "ConAgua.Arena.RomLevel",
+   "file": "ConAgua/Arena/RomLevel.lean"
+  },
+  {
+   "name": "ConAgua.Arena.RomLevels",
+   "file": "ConAgua/Arena/RomLevels.lean"
+  },
+  {
+   "name": "ConAgua.Arena.RomPins",
+   "file": "ConAgua/Arena/RomPins.lean"
+  },
+  {
+   "name": "ConAgua.Arena.Scratch",
+   "file": "ConAgua/Arena/Scratch.lean"
+  },
+  {
+   "name": "ConAgua.Arena.ScratchRefine",
+   "file": "ConAgua/Arena/ScratchRefine.lean"
+  },
+  {
+   "name": "ConAgua.Arena.SimLib",
+   "file": "ConAgua/Arena/SimLib.lean"
+  },
+  {
+   "name": "ConAgua.Arena.SortRefine",
+   "file": "ConAgua/Arena/SortRefine.lean"
+  },
+  {
+   "name": "ConAgua.Arena.SortStore",
+   "file": "ConAgua/Arena/SortStore.lean"
+  },
+  {
+   "name": "ConAgua.Arena.StageC",
+   "file": "ConAgua/Arena/StageC.lean"
+  },
+  {
+   "name": "ConAgua.Arena.StageInst1",
+   "file": "ConAgua/Arena/StageInst1.lean"
+  },
+  {
+   "name": "ConAgua.Arena.StoreDen",
+   "file": "ConAgua/Arena/StoreDen.lean"
+  },
+  {
+   "name": "ConAgua.Arena.StoreDenIntern",
+   "file": "ConAgua/Arena/StoreDenIntern.lean"
+  },
+  {
+   "name": "ConAgua.Arena.StoreDenLvl",
+   "file": "ConAgua/Arena/StoreDenLvl.lean"
+  },
+  {
+   "name": "ConAgua.Arena.StoreLib",
+   "file": "ConAgua/Arena/StoreLib.lean"
+  },
+  {
+   "name": "ConAgua.Arena.StoreRel",
+   "file": "ConAgua/Arena/StoreRel.lean"
+  },
+  {
+   "name": "ConAgua.Arena.StrLit",
+   "file": "ConAgua/Arena/StrLit.lean"
+  },
+  {
+   "name": "ConAgua.Arena.StrLitBase",
+   "file": "ConAgua/Arena/StrLitBase.lean"
+  },
+  {
+   "name": "ConAgua.Arena.StrLitChar",
+   "file": "ConAgua/Arena/StrLitChar.lean"
+  },
+  {
+   "name": "ConAgua.Arena.StrLitCtor",
+   "file": "ConAgua/Arena/StrLitCtor.lean"
+  },
+  {
+   "name": "ConAgua.Arena.StrLitCv",
+   "file": "ConAgua/Arena/StrLitCv.lean"
+  },
+  {
+   "name": "ConAgua.Arena.StrLitKeep",
+   "file": "ConAgua/Arena/StrLitKeep.lean"
+  },
+  {
+   "name": "ConAgua.Arena.StrLitList",
+   "file": "ConAgua/Arena/StrLitList.lean"
+  },
+  {
+   "name": "ConAgua.Arena.StrLitTy",
+   "file": "ConAgua/Arena/StrLitTy.lean"
+  },
+  {
+   "name": "ConAgua.Arena.StrLitUtf8",
+   "file": "ConAgua/Arena/StrLitUtf8.lean"
+  },
+  {
+   "name": "ConAgua.Arena.StripTele",
+   "file": "ConAgua/Arena/StripTele.lean"
+  },
+  {
+   "name": "ConAgua.Arena.StripTeleSpec",
+   "file": "ConAgua/Arena/StripTeleSpec.lean"
+  },
+  {
+   "name": "ConAgua.Arena.StubIndRefine",
+   "file": "ConAgua/Arena/StubIndRefine.lean"
+  },
+  {
+   "name": "ConAgua.Arena.StubNamesRefine",
+   "file": "ConAgua/Arena/StubNamesRefine.lean"
+  },
+  {
+   "name": "ConAgua.Arena.TeleLift",
+   "file": "ConAgua/Arena/TeleLift.lean"
+  },
+  {
+   "name": "ConAgua.Arena.Tiers",
+   "file": "ConAgua/Arena/Tiers.lean"
+  },
+  {
+   "name": "ConAgua.Arena.TwinStep",
+   "file": "ConAgua/Arena/TwinStep.lean"
+  },
+  {
+   "name": "ConAgua.Arena.Verdict",
+   "file": "ConAgua/Arena/Verdict.lean"
+  },
+  {
+   "name": "ConAgua.Arena.View",
+   "file": "ConAgua/Arena/View.lean"
+  },
+  {
+   "name": "ConAgua.Arena.ViewL",
+   "file": "ConAgua/Arena/ViewL.lean"
+  },
+  {
+   "name": "ConAgua.Arena.Walk",
+   "file": "ConAgua/Arena/Walk.lean"
+  },
+  {
+   "name": "ConAgua.Arena.WalkBench",
+   "file": "ConAgua/Arena/WalkBench.lean"
+  },
+  {
+   "name": "ConAgua.Arena.WalkBenchLean",
+   "file": "ConAgua/Arena/WalkBenchLean.lean"
+  },
+  {
+   "name": "ConAgua.Arena.WalkCore",
+   "file": "ConAgua/Arena/WalkCore.lean"
+  },
+  {
+   "name": "ConAgua.Arena.WalkEmit",
+   "file": "ConAgua/Arena/WalkEmit.lean"
+  },
+  {
+   "name": "ConAgua.Arena.WalkLeaves",
+   "file": "ConAgua/Arena/WalkLeaves.lean"
+  },
+  {
+   "name": "ConAgua.Arena.WalkLeavesRefine",
+   "file": "ConAgua/Arena/WalkLeavesRefine.lean"
+  },
+  {
+   "name": "ConAgua.Arena.WalkLift",
+   "file": "ConAgua/Arena/WalkLift.lean"
+  },
+  {
+   "name": "ConAgua.Arena.WalkLiftRefine",
+   "file": "ConAgua/Arena/WalkLiftRefine.lean"
+  },
+  {
+   "name": "ConAgua.Arena.WalkRefine",
+   "file": "ConAgua/Arena/WalkRefine.lean"
+  },
+  {
+   "name": "ConAgua.Arena.WalkScope",
+   "file": "ConAgua/Arena/WalkScope.lean"
+  },
+  {
+   "name": "ConAgua.Arena.WalkScopeRefine",
+   "file": "ConAgua/Arena/WalkScopeRefine.lean"
+  },
+  {
+   "name": "ConAgua.Arena.WhnfBase",
+   "file": "ConAgua/Arena/WhnfBase.lean"
+  },
+  {
+   "name": "ConAgua.Arena.WhnfCore",
+   "file": "ConAgua/Arena/WhnfCore.lean"
+  },
+  {
+   "name": "ConAgua.Arena.WhnfCoreApp",
+   "file": "ConAgua/Arena/WhnfCoreApp.lean"
+  },
+  {
+   "name": "ConAgua.Arena.WhnfCoreAppLoop",
+   "file": "ConAgua/Arena/WhnfCoreAppLoop.lean"
+  },
+  {
+   "name": "ConAgua.Arena.WhnfCoreLoop",
+   "file": "ConAgua/Arena/WhnfCoreLoop.lean"
+  },
+  {
+   "name": "ConAgua.Arena.WhnfCoreProj",
+   "file": "ConAgua/Arena/WhnfCoreProj.lean"
+  },
+  {
+   "name": "ConAgua.Arena.WhnfCoreRefine",
+   "file": "ConAgua/Arena/WhnfCoreRefine.lean"
+  },
+  {
+   "name": "ConAgua.Arena.WhnfCoreSlot",
+   "file": "ConAgua/Arena/WhnfCoreSlot.lean"
+  },
+  {
+   "name": "ConAgua.Arena.WhnfCoreStep",
+   "file": "ConAgua/Arena/WhnfCoreStep.lean"
+  },
+  {
+   "name": "ConAgua.Arena.WhnfDelta",
+   "file": "ConAgua/Arena/WhnfDelta.lean"
+  },
+  {
+   "name": "ConAgua.Arena.WhnfDeltaRefine",
+   "file": "ConAgua/Arena/WhnfDeltaRefine.lean"
+  },
+  {
+   "name": "ConAgua.Arena.WhnfDeltaRefine2",
+   "file": "ConAgua/Arena/WhnfDeltaRefine2.lean"
+  },
+  {
+   "name": "ConAgua.Arena.WhnfDeltaRefine3",
+   "file": "ConAgua/Arena/WhnfDeltaRefine3.lean"
+  },
+  {
+   "name": "ConAgua.Arena.WhnfDeltaRefine4",
+   "file": "ConAgua/Arena/WhnfDeltaRefine4.lean"
+  },
+  {
+   "name": "ConAgua.Arena.WhnfDeltaSlot",
+   "file": "ConAgua/Arena/WhnfDeltaSlot.lean"
+  },
+  {
+   "name": "ConAgua.Arena.WhnfEntry",
+   "file": "ConAgua/Arena/WhnfEntry.lean"
+  },
+  {
+   "name": "ConAgua.Arena.WhnfIota",
+   "file": "ConAgua/Arena/WhnfIota.lean"
+  },
+  {
+   "name": "ConAgua.Arena.WhnfIotaRec",
+   "file": "ConAgua/Arena/WhnfIotaRec.lean"
+  },
+  {
+   "name": "ConAgua.Arena.WhnfIotaRecRefine",
+   "file": "ConAgua/Arena/WhnfIotaRecRefine.lean"
+  },
+  {
+   "name": "ConAgua.Arena.WhnfIotaRecRefine2",
+   "file": "ConAgua/Arena/WhnfIotaRecRefine2.lean"
+  },
+  {
+   "name": "ConAgua.Arena.WhnfIotaRecRefine3",
+   "file": "ConAgua/Arena/WhnfIotaRecRefine3.lean"
+  },
+  {
+   "name": "ConAgua.Arena.WhnfIotaRefine",
+   "file": "ConAgua/Arena/WhnfIotaRefine.lean"
+  },
+  {
+   "name": "ConAgua.Arena.WhnfIotaRefine2",
+   "file": "ConAgua/Arena/WhnfIotaRefine2.lean"
+  },
+  {
+   "name": "ConAgua.Arena.WhnfIotaRefine3",
+   "file": "ConAgua/Arena/WhnfIotaRefine3.lean"
+  },
+  {
+   "name": "ConAgua.Arena.WhnfIotaRefine4",
+   "file": "ConAgua/Arena/WhnfIotaRefine4.lean"
+  },
+  {
+   "name": "ConAgua.Arena.WhnfIotaRefine5",
+   "file": "ConAgua/Arena/WhnfIotaRefine5.lean"
+  },
+  {
+   "name": "ConAgua.Arena.WhnfIotaRefine6",
+   "file": "ConAgua/Arena/WhnfIotaRefine6.lean"
+  },
+  {
+   "name": "ConAgua.Arena.WhnfM2C",
+   "file": "ConAgua/Arena/WhnfM2C.lean"
+  },
+  {
+   "name": "ConAgua.Arena.WhnfM2CRefine",
+   "file": "ConAgua/Arena/WhnfM2CRefine.lean"
+  },
+  {
+   "name": "ConAgua.Arena.WhnfM2CRefine2",
+   "file": "ConAgua/Arena/WhnfM2CRefine2.lean"
+  },
+  {
+   "name": "ConAgua.Arena.WhnfM2CRefine3",
+   "file": "ConAgua/Arena/WhnfM2CRefine3.lean"
+  },
+  {
+   "name": "ConAgua.Arena.WhnfM2CRefine4",
+   "file": "ConAgua/Arena/WhnfM2CRefine4.lean"
+  },
+  {
+   "name": "ConAgua.Arena.WhnfM2CRefine5",
+   "file": "ConAgua/Arena/WhnfM2CRefine5.lean"
+  },
+  {
+   "name": "ConAgua.Arena.WhnfProj",
+   "file": "ConAgua/Arena/WhnfProj.lean"
+  },
+  {
+   "name": "ConAgua.Arena.WhnfProjRefine",
+   "file": "ConAgua/Arena/WhnfProjRefine.lean"
+  },
+  {
+   "name": "ConAgua.Arena.WhnfProjRefine2",
+   "file": "ConAgua/Arena/WhnfProjRefine2.lean"
+  },
+  {
+   "name": "ConAgua.Arena.WhnfSpine",
+   "file": "ConAgua/Arena/WhnfSpine.lean"
+  },
+  {
+   "name": "ConAgua.Arena.WhnfSpineArgs",
+   "file": "ConAgua/Arena/WhnfSpineArgs.lean"
+  },
+  {
+   "name": "ConAgua.Arena.WhnfSpineRefine",
+   "file": "ConAgua/Arena/WhnfSpineRefine.lean"
+  },
+  {
+   "name": "ConAgua.Arena.WhnfTagged",
+   "file": "ConAgua/Arena/WhnfTagged.lean"
+  },
+  {
+   "name": "ConAgua.Arena.WriteSets",
+   "file": "ConAgua/Arena/WriteSets.lean"
+  },
+  {
+   "name": "ConAgua.Arena.ZeroRefine",
+   "file": "ConAgua/Arena/ZeroRefine.lean"
+  },
+  {
+   "name": "ConAgua.Arena.ZeroStore",
+   "file": "ConAgua/Arena/ZeroStore.lean"
+  },
+  {
+   "name": "ConAgua.AsmFile.CrossCheck",
+   "file": "ConAgua/AsmFile/CrossCheck.lean"
+  },
+  {
+   "name": "ConAgua.AsmFile.Eq",
+   "file": "ConAgua/AsmFile/Eq.lean"
+  },
+  {
+   "name": "ConAgua.AsmFile.Include",
+   "file": "ConAgua/AsmFile/Include.lean"
+  },
+  {
+   "name": "ConAgua.AsmFile.ListEq",
+   "file": "ConAgua/AsmFile/ListEq.lean"
+  },
+  {
+   "name": "ConAgua.AsmFile.Parse",
+   "file": "ConAgua/AsmFile/Parse.lean"
+  },
+  {
+   "name": "ConAgua.AsmFile.Term",
+   "file": "ConAgua/AsmFile/Term.lean"
+  },
+  {
+   "name": "ConAgua.Audit.Final",
+   "file": "ConAgua/Audit/Final.lean"
+  },
+  {
+   "name": "ConAgua.Checker.ArrCheck",
+   "file": "ConAgua/Checker/ArrCheck.lean"
+  },
+  {
+   "name": "ConAgua.Checker.Asm",
+   "file": "ConAgua/Checker/Asm.lean"
+  },
+  {
+   "name": "ConAgua.Checker.AsmEmit",
+   "file": "ConAgua/Checker/AsmEmit.lean"
+  },
+  {
+   "name": "ConAgua.Checker.AsmFileEq",
+   "file": "ConAgua/Checker/AsmFileEq.lean"
+  },
+  {
+   "name": "ConAgua.Checker.AsmFinal",
+   "file": "ConAgua/Checker/AsmFinal.lean"
+  },
+  {
+   "name": "ConAgua.Checker.AsmPart0",
+   "file": "ConAgua/Checker/AsmPart0.lean"
+  },
+  {
+   "name": "ConAgua.Checker.AsmPart1",
+   "file": "ConAgua/Checker/AsmPart1.lean"
+  },
+  {
+   "name": "ConAgua.Checker.AsmPart2",
+   "file": "ConAgua/Checker/AsmPart2.lean"
+  },
+  {
+   "name": "ConAgua.Checker.AsmPart3",
+   "file": "ConAgua/Checker/AsmPart3.lean"
+  },
+  {
+   "name": "ConAgua.Checker.AsmStubEq",
+   "file": "ConAgua/Checker/AsmStubEq.lean"
+  },
+  {
+   "name": "ConAgua.Checker.CapCheck",
+   "file": "ConAgua/Checker/CapCheck.lean"
+  },
+  {
+   "name": "ConAgua.Checker.CheckARun",
+   "file": "ConAgua/Checker/CheckARun.lean"
+  },
+  {
+   "name": "ConAgua.Checker.CoreErec",
+   "file": "ConAgua/Checker/CoreErec.lean"
+  },
+  {
+   "name": "ConAgua.Checker.Entry",
+   "file": "ConAgua/Checker/Entry.lean"
+  },
+  {
+   "name": "ConAgua.Checker.FrontProg",
+   "file": "ConAgua/Checker/FrontProg.lean"
+  },
+  {
+   "name": "ConAgua.Checker.FrontProgAgree",
+   "file": "ConAgua/Checker/FrontProgAgree.lean"
+  },
+  {
+   "name": "ConAgua.Checker.FrontReset",
+   "file": "ConAgua/Checker/FrontReset.lean"
+  },
+  {
+   "name": "ConAgua.Checker.Hoist",
+   "file": "ConAgua/Checker/Hoist.lean"
+  },
+  {
+   "name": "ConAgua.Checker.HoistClosureL",
+   "file": "ConAgua/Checker/HoistClosureL.lean"
+  },
+  {
+   "name": "ConAgua.Checker.HoistClosureTwin",
+   "file": "ConAgua/Checker/HoistClosureTwin.lean"
+  },
+  {
+   "name": "ConAgua.Checker.HoistDecode",
+   "file": "ConAgua/Checker/HoistDecode.lean"
+  },
+  {
+   "name": "ConAgua.Checker.HoistIndexRef",
+   "file": "ConAgua/Checker/HoistIndexRef.lean"
+  },
+  {
+   "name": "ConAgua.Checker.HoistNatRef",
+   "file": "ConAgua/Checker/HoistNatRef.lean"
+  },
+  {
+   "name": "ConAgua.Checker.HoistOrderRef",
+   "file": "ConAgua/Checker/HoistOrderRef.lean"
+  },
+  {
+   "name": "ConAgua.Checker.HoistOrderRef2",
+   "file": "ConAgua/Checker/HoistOrderRef2.lean"
+  },
+  {
+   "name": "ConAgua.Checker.HoistOrderRef3",
+   "file": "ConAgua/Checker/HoistOrderRef3.lean"
+  },
+  {
+   "name": "ConAgua.Checker.HoistRef",
+   "file": "ConAgua/Checker/HoistRef.lean"
+  },
+  {
+   "name": "ConAgua.Checker.HoistRefBase",
+   "file": "ConAgua/Checker/HoistRefBase.lean"
+  },
+  {
+   "name": "ConAgua.Checker.HoistTargetsRef",
+   "file": "ConAgua/Checker/HoistTargetsRef.lean"
+  },
+  {
+   "name": "ConAgua.Checker.HoistWalkRef",
+   "file": "ConAgua/Checker/HoistWalkRef.lean"
+  },
+  {
+   "name": "ConAgua.Checker.IndArm",
+   "file": "ConAgua/Checker/IndArm.lean"
+  },
+  {
+   "name": "ConAgua.Checker.IndArmClosed",
+   "file": "ConAgua/Checker/IndArmClosed.lean"
+  },
+  {
+   "name": "ConAgua.Checker.IndArmFns",
+   "file": "ConAgua/Checker/IndArmFns.lean"
+  },
+  {
+   "name": "ConAgua.Checker.IndCore",
+   "file": "ConAgua/Checker/IndCore.lean"
+  },
+  {
+   "name": "ConAgua.Checker.LeafAll",
+   "file": "ConAgua/Checker/LeafAll.lean"
+  },
+  {
+   "name": "ConAgua.Checker.LoopAll",
+   "file": "ConAgua/Checker/LoopAll.lean"
+  },
+  {
+   "name": "ConAgua.Checker.LoopDecl",
+   "file": "ConAgua/Checker/LoopDecl.lean"
+  },
+  {
+   "name": "ConAgua.Checker.LoopDeclAgree",
+   "file": "ConAgua/Checker/LoopDeclAgree.lean"
+  },
+  {
+   "name": "ConAgua.Checker.LoopDeclArm",
+   "file": "ConAgua/Checker/LoopDeclArm.lean"
+  },
+  {
+   "name": "ConAgua.Checker.LoopDeclArm1",
+   "file": "ConAgua/Checker/LoopDeclArm1.lean"
+  },
+  {
+   "name": "ConAgua.Checker.LoopProg",
+   "file": "ConAgua/Checker/LoopProg.lean"
+  },
+  {
+   "name": "ConAgua.Checker.LoopProgInd",
+   "file": "ConAgua/Checker/LoopProgInd.lean"
+  },
+  {
+   "name": "ConAgua.Checker.LoopProgTac",
+   "file": "ConAgua/Checker/LoopProgTac.lean"
+  },
+  {
+   "name": "ConAgua.Checker.LoopStage",
+   "file": "ConAgua/Checker/LoopStage.lean"
+  },
+  {
+   "name": "ConAgua.Checker.NoVerdictClosed",
+   "file": "ConAgua/Checker/NoVerdictClosed.lean"
+  },
+  {
+   "name": "ConAgua.Checker.NoVerdictFns",
+   "file": "ConAgua/Checker/NoVerdictFns.lean"
+  },
+  {
+   "name": "ConAgua.Checker.ParDriverL",
+   "file": "ConAgua/Checker/ParDriverL.lean"
+  },
+  {
+   "name": "ConAgua.Checker.ParDriverTwin",
+   "file": "ConAgua/Checker/ParDriverTwin.lean"
+  },
+  {
+   "name": "ConAgua.Checker.ParOwned",
+   "file": "ConAgua/Checker/ParOwned.lean"
+  },
+  {
+   "name": "ConAgua.Checker.ParThreadTwin",
+   "file": "ConAgua/Checker/ParThreadTwin.lean"
+  },
+  {
+   "name": "ConAgua.Checker.PhaseBReads",
+   "file": "ConAgua/Checker/PhaseBReads.lean"
+  },
+  {
+   "name": "ConAgua.Checker.PipeFinal",
+   "file": "ConAgua/Checker/PipeFinal.lean"
+  },
+  {
+   "name": "ConAgua.Checker.PipePrelude",
+   "file": "ConAgua/Checker/PipePrelude.lean"
+  },
+  {
+   "name": "ConAgua.Checker.PipeRest",
+   "file": "ConAgua/Checker/PipeRest.lean"
+  },
+  {
+   "name": "ConAgua.Checker.PipeStages",
+   "file": "ConAgua/Checker/PipeStages.lean"
+  },
+  {
+   "name": "ConAgua.Checker.Pipeline",
+   "file": "ConAgua/Checker/Pipeline.lean"
+  },
+  {
+   "name": "ConAgua.Checker.PreLoopWS",
+   "file": "ConAgua/Checker/PreLoopWS.lean"
+  },
+  {
+   "name": "ConAgua.Checker.PreLoopWSStages",
+   "file": "ConAgua/Checker/PreLoopWSStages.lean"
+  },
+  {
+   "name": "ConAgua.Checker.Prelude",
+   "file": "ConAgua/Checker/Prelude.lean"
+  },
+  {
+   "name": "ConAgua.Checker.PreludeSim",
+   "file": "ConAgua/Checker/PreludeSim.lean"
+  },
+  {
+   "name": "ConAgua.Checker.PreludeSimProg",
+   "file": "ConAgua/Checker/PreludeSimProg.lean"
+  },
+  {
+   "name": "ConAgua.Checker.PrepCopyRef",
+   "file": "ConAgua/Checker/PrepCopyRef.lean"
+  },
+  {
+   "name": "ConAgua.Checker.PrepLeafRef",
+   "file": "ConAgua/Checker/PrepLeafRef.lean"
+  },
+  {
+   "name": "ConAgua.Checker.PrepLoopRef",
+   "file": "ConAgua/Checker/PrepLoopRef.lean"
+  },
+  {
+   "name": "ConAgua.Checker.PrepProgChecker",
+   "file": "ConAgua/Checker/PrepProgChecker.lean"
+  },
+  {
+   "name": "ConAgua.Checker.PrepRef",
+   "file": "ConAgua/Checker/PrepRef.lean"
+  },
+  {
+   "name": "ConAgua.Checker.Prog",
+   "file": "ConAgua/Checker/Prog.lean"
+  },
+  {
+   "name": "ConAgua.Checker.RomProg",
+   "file": "ConAgua/Checker/RomProg.lean"
+  },
+  {
+   "name": "ConAgua.Checker.RomProg0",
+   "file": "ConAgua/Checker/RomProg0.lean"
+  },
+  {
+   "name": "ConAgua.Checker.RomProgA",
+   "file": "ConAgua/Checker/RomProgA.lean"
+  },
+  {
+   "name": "ConAgua.Checker.RomProgB",
+   "file": "ConAgua/Checker/RomProgB.lean"
+  },
+  {
+   "name": "ConAgua.Checker.RomProgInit",
+   "file": "ConAgua/Checker/RomProgInit.lean"
+  },
+  {
+   "name": "ConAgua.Checker.Sources",
+   "file": "ConAgua/Checker/Sources.lean"
+  },
+  {
+   "name": "ConAgua.Checker.SyncFns",
+   "file": "ConAgua/Checker/SyncFns.lean"
+  },
+  {
+   "name": "ConAgua.Checker.TwinCaches",
+   "file": "ConAgua/Checker/TwinCaches.lean"
+  },
+  {
+   "name": "ConAgua.Checker.TwinPins",
+   "file": "ConAgua/Checker/TwinPins.lean"
+  },
+  {
+   "name": "ConAgua.Checker.TwinShapeFront",
+   "file": "ConAgua/Checker/TwinShapeFront.lean"
+  },
+  {
+   "name": "ConAgua.Checker.TwinShapeQuot",
+   "file": "ConAgua/Checker/TwinShapeQuot.lean"
+  },
+  {
+   "name": "ConAgua.Checker.VerdictEntry1",
+   "file": "ConAgua/Checker/VerdictEntry1.lean"
+  },
+  {
+   "name": "ConAgua.Checker.VerdictTop",
+   "file": "ConAgua/Checker/VerdictTop.lean"
+  },
+  {
+   "name": "ConAgua.Compiler.AbiSim",
+   "file": "ConAgua/Compiler/AbiSim.lean"
+  },
+  {
+   "name": "ConAgua.Compiler.WFAll",
+   "file": "ConAgua/Compiler/WFAll.lean"
+  },
+  {
+   "name": "ConAgua.Compiler.WFAllBench",
+   "file": "ConAgua/Compiler/WFAllBench.lean"
+  },
+  {
+   "name": "ConAgua.E2E.Check",
+   "file": "ConAgua/E2E/Check.lean"
+  },
+  {
+   "name": "ConAgua.E2E.Dump",
+   "file": "ConAgua/E2E/Dump.lean"
+  },
+  {
+   "name": "ConAgua.E2E.Ser",
+   "file": "ConAgua/E2E/Ser.lean"
+  },
+  {
+   "name": "ConAgua.E2E.Trace",
+   "file": "ConAgua/E2E/Trace.lean"
+  },
+  {
+   "name": "ConAgua.Final.Abi",
+   "file": "ConAgua/Final/Abi.lean"
+  },
+  {
+   "name": "ConAgua.Final.BufAbi",
+   "file": "ConAgua/Final/BufAbi.lean"
+  },
+  {
+   "name": "ConAgua.Final.BufChain",
+   "file": "ConAgua/Final/BufChain.lean"
+  },
+  {
+   "name": "ConAgua.Final.BufLayout",
+   "file": "ConAgua/Final/BufLayout.lean"
+  },
+  {
+   "name": "ConAgua.Final.DrvAbi",
+   "file": "ConAgua/Final/DrvAbi.lean"
+  },
+  {
+   "name": "ConAgua.Final.DrvFinal",
+   "file": "ConAgua/Final/DrvFinal.lean"
+  },
+  {
+   "name": "ConAgua.Final.EndToEnd",
+   "file": "ConAgua/Final/EndToEnd.lean"
+  },
+  {
+   "name": "ConAgua.Final.ParAbi",
+   "file": "ConAgua/Final/ParAbi.lean"
+  },
+  {
+   "name": "ConAgua.Final.SeqAbi",
+   "file": "ConAgua/Final/SeqAbi.lean"
+  },
+  {
+   "name": "ConAgua.Final.SeqLayout",
+   "file": "ConAgua/Final/SeqLayout.lean"
+  },
+  {
+   "name": "ConAgua.Final.Statement",
+   "file": "ConAgua/Final/Statement.lean"
+  },
+  {
+   "name": "ConAgua.Final.ThreadsFinal",
+   "file": "ConAgua/Final/ThreadsFinal.lean"
+  },
+  {
+   "name": "ConAgua.Final.ThreadsVerdict",
+   "file": "ConAgua/Final/ThreadsVerdict.lean"
+  },
+  {
+   "name": "ConAgua.Final.Twin",
+   "file": "ConAgua/Final/Twin.lean"
+  },
+  {
+   "name": "ConAgua.Final.TwinPooled",
+   "file": "ConAgua/Final/TwinPooled.lean"
+  },
+  {
+   "name": "ConAgua.Final.TwinVerdict",
+   "file": "ConAgua/Final/TwinVerdict.lean"
+  },
+  {
+   "name": "ConAgua.Final.VerdictFinal",
+   "file": "ConAgua/Final/VerdictFinal.lean"
+  },
+  {
+   "name": "ConAgua.Front.Apply",
+   "file": "ConAgua/Front/Apply.lean"
+  },
+  {
+   "name": "ConAgua.Front.ApplyDecl",
+   "file": "ConAgua/Front/ApplyDecl.lean"
+  },
+  {
+   "name": "ConAgua.Front.ApplyDeclRefine",
+   "file": "ConAgua/Front/ApplyDeclRefine.lean"
+  },
+  {
+   "name": "ConAgua.Front.ApplyExpr",
+   "file": "ConAgua/Front/ApplyExpr.lean"
+  },
+  {
+   "name": "ConAgua.Front.ApplyExprRefine",
+   "file": "ConAgua/Front/ApplyExprRefine.lean"
+  },
+  {
+   "name": "ConAgua.Front.ChunkBridge",
+   "file": "ConAgua/Front/ChunkBridge.lean"
+  },
+  {
+   "name": "ConAgua.Front.DeclIface",
+   "file": "ConAgua/Front/DeclIface.lean"
+  },
+  {
+   "name": "ConAgua.Front.DeclsPre",
+   "file": "ConAgua/Front/DeclsPre.lean"
+  },
+  {
+   "name": "ConAgua.Front.Driver",
+   "file": "ConAgua/Front/Driver.lean"
+  },
+  {
+   "name": "ConAgua.Front.DriverProg",
+   "file": "ConAgua/Front/DriverProg.lean"
+  },
+  {
+   "name": "ConAgua.Front.DriverRefine",
+   "file": "ConAgua/Front/DriverRefine.lean"
+  },
+  {
+   "name": "ConAgua.Front.ExprIface",
+   "file": "ConAgua/Front/ExprIface.lean"
+  },
+  {
+   "name": "ConAgua.Front.Fields",
+   "file": "ConAgua/Front/Fields.lean"
+  },
+  {
+   "name": "ConAgua.Front.FieldsDecl",
+   "file": "ConAgua/Front/FieldsDecl.lean"
+  },
+  {
+   "name": "ConAgua.Front.FieldsDeclLink",
+   "file": "ConAgua/Front/FieldsDeclLink.lean"
+  },
+  {
+   "name": "ConAgua.Front.FieldsDeclSpec",
+   "file": "ConAgua/Front/FieldsDeclSpec.lean"
+  },
+  {
+   "name": "ConAgua.Front.FieldsExpr",
+   "file": "ConAgua/Front/FieldsExpr.lean"
+  },
+  {
+   "name": "ConAgua.Front.FieldsExprLink",
+   "file": "ConAgua/Front/FieldsExprLink.lean"
+  },
+  {
+   "name": "ConAgua.Front.FieldsLink",
+   "file": "ConAgua/Front/FieldsLink.lean"
+  },
+  {
+   "name": "ConAgua.Front.FrontPre",
+   "file": "ConAgua/Front/FrontPre.lean"
+  },
+  {
+   "name": "ConAgua.Front.FrontPreOK",
+   "file": "ConAgua/Front/FrontPreOK.lean"
+  },
+  {
+   "name": "ConAgua.Front.FrontPreOK1",
+   "file": "ConAgua/Front/FrontPreOK1.lean"
+  },
+  {
+   "name": "ConAgua.Front.FrontPreOK2",
+   "file": "ConAgua/Front/FrontPreOK2.lean"
+  },
+  {
+   "name": "ConAgua.Front.FrontRun",
+   "file": "ConAgua/Front/FrontRun.lean"
+  },
+  {
+   "name": "ConAgua.Front.IdTable",
+   "file": "ConAgua/Front/IdTable.lean"
+  },
+  {
+   "name": "ConAgua.Front.IndAlloc",
+   "file": "ConAgua/Front/IndAlloc.lean"
+  },
+  {
+   "name": "ConAgua.Front.IndApply",
+   "file": "ConAgua/Front/IndApply.lean"
+  },
+  {
+   "name": "ConAgua.Front.IndApplyRefine",
+   "file": "ConAgua/Front/IndApplyRefine.lean"
+  },
+  {
+   "name": "ConAgua.Front.IndApplyRefine2",
+   "file": "ConAgua/Front/IndApplyRefine2.lean"
+  },
+  {
+   "name": "ConAgua.Front.IndApplyRefine3",
+   "file": "ConAgua/Front/IndApplyRefine3.lean"
+  },
+  {
+   "name": "ConAgua.Front.IndApplyRefine5",
+   "file": "ConAgua/Front/IndApplyRefine5.lean"
+  },
+  {
+   "name": "ConAgua.Front.IndApplyRefine7",
+   "file": "ConAgua/Front/IndApplyRefine7.lean"
+  },
+  {
+   "name": "ConAgua.Front.IndApplyRefine8",
+   "file": "ConAgua/Front/IndApplyRefine8.lean"
+  },
+  {
+   "name": "ConAgua.Front.IndApplyRefine9",
+   "file": "ConAgua/Front/IndApplyRefine9.lean"
+  },
+  {
+   "name": "ConAgua.Front.IndApplySpec",
+   "file": "ConAgua/Front/IndApplySpec.lean"
+  },
+  {
+   "name": "ConAgua.Front.IndApplySpec2",
+   "file": "ConAgua/Front/IndApplySpec2.lean"
+  },
+  {
+   "name": "ConAgua.Front.IndApplySpec3",
+   "file": "ConAgua/Front/IndApplySpec3.lean"
+  },
+  {
+   "name": "ConAgua.Front.IndFields",
+   "file": "ConAgua/Front/IndFields.lean"
+  },
+  {
+   "name": "ConAgua.Front.IndFieldsLink",
+   "file": "ConAgua/Front/IndFieldsLink.lean"
+  },
+  {
+   "name": "ConAgua.Front.IndFieldsLink2",
+   "file": "ConAgua/Front/IndFieldsLink2.lean"
+  },
+  {
+   "name": "ConAgua.Front.IndFieldsLink3",
+   "file": "ConAgua/Front/IndFieldsLink3.lean"
+  },
+  {
+   "name": "ConAgua.Front.IndFieldsSpec",
+   "file": "ConAgua/Front/IndFieldsSpec.lean"
+  },
+  {
+   "name": "ConAgua.Front.IndInstallRefine",
+   "file": "ConAgua/Front/IndInstallRefine.lean"
+  },
+  {
+   "name": "ConAgua.Front.IndInstallRefine2",
+   "file": "ConAgua/Front/IndInstallRefine2.lean"
+  },
+  {
+   "name": "ConAgua.Front.IndInstallRefine3",
+   "file": "ConAgua/Front/IndInstallRefine3.lean"
+  },
+  {
+   "name": "ConAgua.Front.IndInstallRefine4",
+   "file": "ConAgua/Front/IndInstallRefine4.lean"
+  },
+  {
+   "name": "ConAgua.Front.IndInstallRefine5",
+   "file": "ConAgua/Front/IndInstallRefine5.lean"
+  },
+  {
+   "name": "ConAgua.Front.IndRel",
+   "file": "ConAgua/Front/IndRel.lean"
+  },
+  {
+   "name": "ConAgua.Front.IndTest",
+   "file": "ConAgua/Front/IndTest.lean"
+  },
+  {
+   "name": "ConAgua.Front.IndValidTwin",
+   "file": "ConAgua/Front/IndValidTwin.lean"
+  },
+  {
+   "name": "ConAgua.Front.Line",
+   "file": "ConAgua/Front/Line.lean"
+  },
+  {
+   "name": "ConAgua.Front.LineRefine",
+   "file": "ConAgua/Front/LineRefine.lean"
+  },
+  {
+   "name": "ConAgua.Front.NatDec",
+   "file": "ConAgua/Front/NatDec.lean"
+  },
+  {
+   "name": "ConAgua.Front.NatDecLink",
+   "file": "ConAgua/Front/NatDecLink.lean"
+  },
+  {
+   "name": "ConAgua.Front.Preserve",
+   "file": "ConAgua/Front/Preserve.lean"
+  },
+  {
+   "name": "ConAgua.Front.RunModel",
+   "file": "ConAgua/Front/RunModel.lean"
+  },
+  {
+   "name": "ConAgua.Front.StateDR",
+   "file": "ConAgua/Front/StateDR.lean"
+  },
+  {
+   "name": "ConAgua.Front.Unescape",
+   "file": "ConAgua/Front/Unescape.lean"
+  },
+  {
+   "name": "ConAgua.Front.UnescapeLink",
+   "file": "ConAgua/Front/UnescapeLink.lean"
+  },
+  {
+   "name": "ConAgua.L.Agree",
+   "file": "ConAgua/L/Agree.lean"
+  },
+  {
+   "name": "ConAgua.L.ModelGenTest",
+   "file": "ConAgua/L/ModelGenTest.lean"
+  },
+  {
+   "name": "ConAgua.Rom.CIEnc",
+   "file": "ConAgua/Rom/CIEnc.lean"
+  },
+  {
+   "name": "ConAgua.Rom.CIRead",
+   "file": "ConAgua/Rom/CIRead.lean"
+  },
+  {
+   "name": "ConAgua.Rom.CIReadRefBase",
+   "file": "ConAgua/Rom/CIReadRefBase.lean"
+  },
+  {
+   "name": "ConAgua.Rom.CIReadRefBlock",
+   "file": "ConAgua/Rom/CIReadRefBlock.lean"
+  },
+  {
+   "name": "ConAgua.Rom.CIReadRefCI",
+   "file": "ConAgua/Rom/CIReadRefCI.lean"
+  },
+  {
+   "name": "ConAgua.Rom.CIReadRefCV",
+   "file": "ConAgua/Rom/CIReadRefCV.lean"
+  },
+  {
+   "name": "ConAgua.Rom.CIReadRefCaps",
+   "file": "ConAgua/Rom/CIReadRefCaps.lean"
+  },
+  {
+   "name": "ConAgua.Rom.CIReadRefData",
+   "file": "ConAgua/Rom/CIReadRefData.lean"
+  },
+  {
+   "name": "ConAgua.Rom.CIReadRefLayout",
+   "file": "ConAgua/Rom/CIReadRefLayout.lean"
+  },
+  {
+   "name": "ConAgua.Rom.CIReadRefNames",
+   "file": "ConAgua/Rom/CIReadRefNames.lean"
+  },
+  {
+   "name": "ConAgua.Rom.CIReadRefRule",
+   "file": "ConAgua/Rom/CIReadRefRule.lean"
+  },
+  {
+   "name": "ConAgua.Rom.CIReadRefW",
+   "file": "ConAgua/Rom/CIReadRefW.lean"
+  },
+  {
+   "name": "ConAgua.Rom.CIReadRefs",
+   "file": "ConAgua/Rom/CIReadRefs.lean"
+  },
+  {
+   "name": "ConAgua.Rom.CIReadSpec",
+   "file": "ConAgua/Rom/CIReadSpec.lean"
+  },
+  {
+   "name": "ConAgua.Rom.CIReadTest",
+   "file": "ConAgua/Rom/CIReadTest.lean"
+  },
+  {
+   "name": "ConAgua.Rom.Dec",
+   "file": "ConAgua/Rom/Dec.lean"
+  },
+  {
+   "name": "ConAgua.Rom.DecExpr",
+   "file": "ConAgua/Rom/DecExpr.lean"
+  },
+  {
+   "name": "ConAgua.Rom.PinRead",
+   "file": "ConAgua/Rom/PinRead.lean"
+  },
+  {
+   "name": "ConAgua.Rom.PinReadSpec",
+   "file": "ConAgua/Rom/PinReadSpec.lean"
+  },
+  {
+   "name": "ConAgua.Rom.PinSets",
+   "file": "ConAgua/Rom/PinSets.lean"
+  },
+  {
+   "name": "ConAgua.Rom.PinStream",
+   "file": "ConAgua/Rom/PinStream.lean"
+  },
+  {
+   "name": "ConAgua.Rom.Stage",
+   "file": "ConAgua/Rom/Stage.lean"
+  },
+  {
+   "name": "ConAgua.Rom.Subst",
+   "file": "ConAgua/Rom/Subst.lean"
+  },
+  {
+   "name": "ConLeche",
+   "file": "vendor/con-leche/ConLeche.lean"
+  },
+  {
+   "name": "ConRon.Arena",
+   "file": "vendor/con-ron/ConRon/Arena.lean"
+  },
+  {
+   "name": "ConRon.Bridge",
+   "file": "vendor/con-ron/ConRon/Bridge.lean"
+  },
+  {
+   "name": "ConRon.Dump.Pins",
+   "file": "vendor/con-ron/ConRon/Dump/Pins.lean"
+  }
+ ],
+ "root_closure_files": 2213,
+ "root_closure_sorry": [
+  "ConAgua/Front/FieldsDeclLink.lean",
+  "ConAgua/Front/FieldsExprLink.lean",
+  "ConAgua/Front/IndFieldsLink.lean",
+  "ConAgua/Scan/RecordsLink.lean",
+  "vendor/con-leche/ConLeche/Frontend/Stream.lean"
+ ],
+ "root_closure_axioms": 0,
  "unclosed_files": 0,
  "headline_rule": "main",
  "headline_count": 2,

@@ -54,6 +54,33 @@
  "closure_files": 0,
  "closure_sorry": [],
  "closure_axioms": 0,
+ "root_modules": [
+  {
+   "name": "AxiomAudit",
+   "file": "erdos-10/AxiomAudit.lean"
+  },
+  {
+   "name": "Challenge",
+   "file": "erdos-10/Challenge.lean"
+  },
+  {
+   "name": "PrimeAndTwoPowersCovering10",
+   "file": "erdos-10/Proofs/PrimeAndTwoPowersCovering10.lean"
+  },
+  {
+   "name": "Solution",
+   "file": "erdos-10/Solution.lean"
+  },
+  {
+   "name": "Statement",
+   "file": "erdos-10/Statement.lean"
+  }
+ ],
+ "root_closure_files": 5,
+ "root_closure_sorry": [
+  "erdos-10/Challenge.lean"
+ ],
+ "root_closure_axioms": 0,
  "unclosed_files": 0,
  "headline_rule": null,
  "headline_count": 0,

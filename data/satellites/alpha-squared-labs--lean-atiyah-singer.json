@@ -50,6 +50,29 @@
  "closure_files": 0,
  "closure_sorry": [],
  "closure_axioms": 0,
+ "root_modules": [
+  {
+   "name": "AtiyahSinger",
+   "file": "AtiyahSinger.lean"
+  },
+  {
+   "name": "Challenge",
+   "file": "Comparator/Challenge.lean"
+  },
+  {
+   "name": "Solution",
+   "file": "Comparator/Solution.lean"
+  },
+  {
+   "name": "Statements",
+   "file": "Comparator/Statements.lean"
+  }
+ ],
+ "root_closure_files": 2326,
+ "root_closure_sorry": [
+  "Comparator/Challenge.lean"
+ ],
+ "root_closure_axioms": 0,
  "unclosed_files": 0,
  "headline_rule": null,
  "headline_count": 0,

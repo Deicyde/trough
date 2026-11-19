@@ -40,6 +40,10 @@
   "lean/Verification/Source/Claims/Wire.lean"
  ],
  "closure_axioms": 0,
+ "root_modules": [],
+ "root_closure_files": 0,
+ "root_closure_sorry": [],
+ "root_closure_axioms": 0,
  "unclosed_files": 0,
  "headline_rule": "readme",
  "headline_count": 1,

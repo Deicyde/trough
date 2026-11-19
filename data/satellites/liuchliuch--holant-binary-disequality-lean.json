@@ -42,6 +42,17 @@
  "closure_files": 0,
  "closure_sorry": [],
  "closure_axioms": 0,
+ "root_modules": [
+  {
+   "name": "Holant",
+   "file": "Holant.lean"
+  }
+ ],
+ "root_closure_files": 4738,
+ "root_closure_sorry": [
+  "Holant/Proofs/Closure/GeneratedGroupWorklistExecution.lean"
+ ],
+ "root_closure_axioms": 0,
  "unclosed_files": 0,
  "headline_rule": null,
  "headline_count": 0,

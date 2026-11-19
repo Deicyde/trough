@@ -66,6 +66,83 @@
  "closure_files": 140,
  "closure_sorry": [],
  "closure_axioms": 0,
+ "root_modules": [
+  {
+   "name": "CompStark",
+   "file": "CompStark.lean"
+  },
+  {
+   "name": "CompStark.BabyBear.Fast",
+   "file": "CompStark/BabyBear/Fast.lean"
+  },
+  {
+   "name": "CompStark.Keccak.Duplex",
+   "file": "CompStark/Keccak/Duplex.lean"
+  },
+  {
+   "name": "CompStark.Keccak.Merkle",
+   "file": "CompStark/Keccak/Merkle.lean"
+  },
+  {
+   "name": "CompStark.Keccak.Prepared",
+   "file": "CompStark/Keccak/Prepared.lean"
+  },
+  {
+   "name": "CompStark.Keccak.Scalar",
+   "file": "CompStark/Keccak/Scalar.lean"
+  },
+  {
+   "name": "CompStark.Keccak.Sponge",
+   "file": "CompStark/Keccak/Sponge.lean"
+  },
+  {
+   "name": "CompStark.Keccak.WordLoop",
+   "file": "CompStark/Keccak/WordLoop.lean"
+  },
+  {
+   "name": "CompStark.KoalaBear.Fast",
+   "file": "CompStark/KoalaBear/Fast.lean"
+  },
+  {
+   "name": "CompStark.KoalaBear.Group",
+   "file": "CompStark/KoalaBear/Group.lean"
+  },
+  {
+   "name": "CompStark.Merkle.Packed",
+   "file": "CompStark/Merkle/Packed.lean"
+  },
+  {
+   "name": "CompStark.Merkle.PackedColumns",
+   "file": "CompStark/Merkle/PackedColumns.lean"
+  },
+  {
+   "name": "CompStark.Poseidon2.PackedBabyBear",
+   "file": "CompStark/Poseidon2/PackedBabyBear.lean"
+  },
+  {
+   "name": "CompStark.Poseidon2.PackedKoalaBear",
+   "file": "CompStark/Poseidon2/PackedKoalaBear.lean"
+  },
+  {
+   "name": "CompStark.Stark.Fast",
+   "file": "CompStark/Stark/Fast.lean"
+  },
+  {
+   "name": "CompStark.Stark.ProgGroup",
+   "file": "CompStark/Stark/ProgGroup.lean"
+  },
+  {
+   "name": "CompStark.Stark.ProgWords",
+   "file": "CompStark/Stark/ProgWords.lean"
+  },
+  {
+   "name": "CompStarkTests",
+   "file": "tests/CompStarkTests.lean"
+  }
+ ],
+ "root_closure_files": 588,
+ "root_closure_sorry": [],
+ "root_closure_axioms": 0,
  "unclosed_files": 0,
  "headline_rule": "readme",
  "headline_count": 18,

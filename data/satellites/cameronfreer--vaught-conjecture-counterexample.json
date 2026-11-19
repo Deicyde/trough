@@ -54,6 +54,15 @@
  "closure_files": 418,
  "closure_sorry": [],
  "closure_axioms": 0,
+ "root_modules": [
+  {
+   "name": "VaughtConjecture",
+   "file": "VaughtConjecture.lean"
+  }
+ ],
+ "root_closure_files": 1,
+ "root_closure_sorry": [],
+ "root_closure_axioms": 0,
  "unclosed_files": 0,
  "headline_rule": "readme",
  "headline_count": 56,

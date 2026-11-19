@@ -50,6 +50,29 @@
  "closure_files": 122,
  "closure_sorry": [],
  "closure_axioms": 0,
+ "root_modules": [
+  {
+   "name": "Challenge",
+   "file": "comparator/Challenge.lean"
+  },
+  {
+   "name": "JPoints",
+   "file": "JPoints.lean"
+  },
+  {
+   "name": "JPoints.Model",
+   "file": "JPoints/Model.lean"
+  },
+  {
+   "name": "Solution",
+   "file": "comparator/Solution.lean"
+  }
+ ],
+ "root_closure_files": 128,
+ "root_closure_sorry": [
+  "comparator/Challenge.lean"
+ ],
+ "root_closure_axioms": 0,
  "unclosed_files": 0,
  "headline_rule": "blueprint",
  "headline_count": 5,

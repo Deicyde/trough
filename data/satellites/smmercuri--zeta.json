@@ -68,6 +68,79 @@
  "closure_files": 38,
  "closure_sorry": [],
  "closure_axioms": 0,
+ "root_modules": [
+  {
+   "name": "Enclosure",
+   "file": "Enclosure.lean"
+  },
+  {
+   "name": "Fast",
+   "file": "Fast.lean"
+  },
+  {
+   "name": "Native",
+   "file": "Native.lean"
+  },
+  {
+   "name": "Native.Arctan",
+   "file": "Native/Arctan.lean"
+  },
+  {
+   "name": "Native.Batch",
+   "file": "Native/Batch.lean"
+  },
+  {
+   "name": "Native.BuildCerts",
+   "file": "Native/BuildCerts.lean"
+  },
+  {
+   "name": "Native.Certificates",
+   "file": "Native/Certificates.lean"
+  },
+  {
+   "name": "Native.Const",
+   "file": "Native/Const.lean"
+  },
+  {
+   "name": "Native.CountCertificates",
+   "file": "Native/CountCertificates.lean"
+  },
+  {
+   "name": "Native.Encl",
+   "file": "Native/Encl.lean"
+  },
+  {
+   "name": "Native.Eval",
+   "file": "Native/Eval.lean"
+  },
+  {
+   "name": "Native.Fix",
+   "file": "Native/Fix.lean"
+  },
+  {
+   "name": "Native.Log",
+   "file": "Native/Log.lean"
+  },
+  {
+   "name": "Native.Main",
+   "file": "Native/Main.lean"
+  },
+  {
+   "name": "Native.PluginCheck",
+   "file": "Native/PluginCheck.lean"
+  },
+  {
+   "name": "Native.RiemannSiegel",
+   "file": "Native/RiemannSiegel.lean"
+  },
+  {
+   "name": "Zeta",
+   "file": "Zeta.lean"
+  }
+ ],
+ "root_closure_files": 233,
+ "root_closure_sorry": [],
+ "root_closure_axioms": 0,
  "unclosed_files": 0,
  "headline_rule": "blueprint",
  "headline_count": 16,

@@ -54,6 +54,35 @@
  "closure_files": 0,
  "closure_sorry": [],
  "closure_axioms": 0,
+ "root_modules": [
+  {
+   "name": "Challenge",
+   "file": "Challenge.lean"
+  },
+  {
+   "name": "ChallengeCh0",
+   "file": "ChallengeCh0.lean"
+  },
+  {
+   "name": "ChallengeMainCh0",
+   "file": "ChallengeMainCh0.lean"
+  },
+  {
+   "name": "Hironaka",
+   "file": "Hironaka.lean"
+  },
+  {
+   "name": "Solution",
+   "file": "Solution.lean"
+  }
+ ],
+ "root_closure_files": 339,
+ "root_closure_sorry": [
+  "Challenge.lean",
+  "ChallengeCh0.lean",
+  "ChallengeMainCh0.lean"
+ ],
+ "root_closure_axioms": 0,
  "unclosed_files": 0,
  "headline_rule": null,
  "headline_count": 0,

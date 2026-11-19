@@ -6,7 +6,9 @@ statement: formalized
 proof: formalized
 ---
 
-# A two-dimensional area law from a global spectral gap, in Lean 4
+# AreaLaw2D
+
+*A two-dimensional area law from a global spectral gap, in Lean 4*
 
 [AxiomMath/AreaLaw2D](https://github.com/AxiomMath/AreaLaw2D) at commit [7768136b](https://github.com/AxiomMath/AreaLaw2D/tree/7768136b2e90d736e5de25a6d857b2ea4fdea7b2), 2026-11-09.
 

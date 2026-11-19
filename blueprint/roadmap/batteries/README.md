@@ -25,3 +25,4 @@ These modules declare nothing public by name, so they have no article: [`Batteri
 - [Tactic](tactic/README.md)
 - [Util](util/README.md)
 - [Logic](logic.md)
+- [Projects building on Batteries: the extended library for Lean (28)](projects/README.md)

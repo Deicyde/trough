@@ -80,6 +80,33 @@
  "closure_files": 710,
  "closure_sorry": [],
  "closure_axioms": 0,
+ "root_modules": [
+  {
+   "name": "Challenge",
+   "file": "Challenge.lean"
+  },
+  {
+   "name": "ChallengeDefs",
+   "file": "ChallengeDefs.lean"
+  },
+  {
+   "name": "Solution",
+   "file": "Solution.lean"
+  },
+  {
+   "name": "SphereSixComplex",
+   "file": "SphereSixComplex.lean"
+  },
+  {
+   "name": "SphereSixComplex.All",
+   "file": "SphereSixComplex/All.lean"
+  }
+ ],
+ "root_closure_files": 719,
+ "root_closure_sorry": [
+  "Challenge.lean"
+ ],
+ "root_closure_axioms": 0,
  "unclosed_files": 0,
  "headline_rule": "readme",
  "headline_count": 1,

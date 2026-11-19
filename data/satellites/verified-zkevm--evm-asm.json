@@ -46,6 +46,15 @@
  "closure_files": 0,
  "closure_sorry": [],
  "closure_axioms": 0,
+ "root_modules": [
+  {
+   "name": "EvmAsm",
+   "file": "EvmAsm.lean"
+  }
+ ],
+ "root_closure_files": 3104,
+ "root_closure_sorry": [],
+ "root_closure_axioms": 0,
  "unclosed_files": 0,
  "headline_rule": null,
  "headline_count": 0,

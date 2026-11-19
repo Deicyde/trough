@@ -6,7 +6,9 @@ statement: formalized
 proof: formalized
 ---
 
-# A counterexample to Vaught's conjecture for $L{\\omega1,\\omega}$
+# vaught-conjecture-counterexample
+
+*A counterexample to Vaught's conjecture for $L{\omega1,\omega}$*
 
 [cameronfreer/vaught-conjecture-counterexample](https://github.com/cameronfreer/vaught-conjecture-counterexample) at commit [d159d16a](https://github.com/cameronfreer/vaught-conjecture-counterexample/tree/d159d16aa19bf338d8ad556becfa7749d5c13bb8), 2026-11-17.
 

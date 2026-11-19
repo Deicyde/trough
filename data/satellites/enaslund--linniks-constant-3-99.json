@@ -74,6 +74,77 @@
  "closure_files": 36,
  "closure_sorry": [],
  "closure_axioms": 0,
+ "root_modules": [
+  {
+   "name": "CertCore",
+   "file": "CertCore.lean"
+  },
+  {
+   "name": "Challenge",
+   "file": "Challenge.lean"
+  },
+  {
+   "name": "GradedNear",
+   "file": "GradedNear.lean"
+  },
+  {
+   "name": "GradedNear.Cert.Samples.I1155_0",
+   "file": "GradedNear/Cert/Samples/I1155_0.lean"
+  },
+  {
+   "name": "GradedNear.Cert.Samples.I1155_1",
+   "file": "GradedNear/Cert/Samples/I1155_1.lean"
+  },
+  {
+   "name": "GradedNear.Cert.Samples.I2766_0",
+   "file": "GradedNear/Cert/Samples/I2766_0.lean"
+  },
+  {
+   "name": "GradedNear.Cert.Samples.Large",
+   "file": "GradedNear/Cert/Samples/Large.lean"
+  },
+  {
+   "name": "GradedNear.Cert.Samples.O1193_0",
+   "file": "GradedNear/Cert/Samples/O1193_0.lean"
+  },
+  {
+   "name": "GradedNear.Cert.Samples.O1202_0",
+   "file": "GradedNear/Cert/Samples/O1202_0.lean"
+  },
+  {
+   "name": "GradedNear.Cert.Samples.O2455_0",
+   "file": "GradedNear/Cert/Samples/O2455_0.lean"
+  },
+  {
+   "name": "IntervalCore",
+   "file": "IntervalCore.lean"
+  },
+  {
+   "name": "LeafCheckCore",
+   "file": "LeafCheckCore.lean"
+  },
+  {
+   "name": "LeafMetaCore",
+   "file": "LeafMetaCore.lean"
+  },
+  {
+   "name": "LeafNumCore",
+   "file": "LeafNumCore.lean"
+  },
+  {
+   "name": "RowCheckCore",
+   "file": "RowCheckCore.lean"
+  },
+  {
+   "name": "Solution",
+   "file": "Solution.lean"
+  }
+ ],
+ "root_closure_files": 80,
+ "root_closure_sorry": [
+  "Challenge.lean"
+ ],
+ "root_closure_axioms": 0,
  "unclosed_files": 0,
  "headline_rule": "readme",
  "headline_count": 66,

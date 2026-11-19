@@ -57,6 +57,37 @@
   "code/lean/CertifiedGaps/Models/SpinOneLargeD.lean"
  ],
  "closure_axioms": 0,
+ "root_modules": [
+  {
+   "name": "CertifiedGaps",
+   "file": "code/lean/CertifiedGaps.lean"
+  },
+  {
+   "name": "Leaderboard",
+   "file": "code/leaderboard/Leaderboard.lean"
+  },
+  {
+   "name": "SeedKernel",
+   "file": "code/lean/SeedKernel.lean"
+  },
+  {
+   "name": "SeedKernel.Audit",
+   "file": "code/lean/SeedKernel/Audit.lean"
+  }
+ ],
+ "root_closure_files": 184,
+ "root_closure_sorry": [
+  "code/lean/CertifiedGaps/Heisenberg/Main.lean",
+  "code/lean/CertifiedGaps/Heisenberg/OpenChain.lean",
+  "code/lean/CertifiedGaps/Models/DimerizedHeisenberg.lean",
+  "code/lean/CertifiedGaps/Models/HeisenbergLadder.lean",
+  "code/lean/CertifiedGaps/Models/IsingLongitudinal.lean",
+  "code/lean/CertifiedGaps/Models/SpinOneDimerized.lean",
+  "code/lean/CertifiedGaps/Models/SpinOneLargeD.lean",
+  "code/lean/CertifiedGaps/Models/StaggeredHeisenberg.lean",
+  "code/lean/CertifiedGaps/Models/TwoLegIsing.lean"
+ ],
+ "root_closure_axioms": 0,
  "unclosed_files": 0,
  "headline_rule": "blueprint",
  "headline_count": 47,

@@ -6,7 +6,9 @@ statement: formalized
 proof: formalized
 ---
 
-# Erdős Problem 1017: clique partitions of graphs of given size
+# erdos-1017
+
+*Erdős Problem 1017: clique partitions of graphs of given size*
 
 [plasma-ai/erdos-1017](https://github.com/plasma-ai/erdos-1017) at commit [cdac1d10](https://github.com/plasma-ai/erdos-1017/tree/cdac1d10ae8d69428ce17f9762e1f83303615a78), 2026-11-11.
 

@@ -182,6 +182,274 @@
  "closure_files": 1395,
  "closure_sorry": [],
  "closure_axioms": 0,
+ "root_modules": [
+  {
+   "name": "Challenge_ChenevierLannes",
+   "file": "Challenge_ChenevierLannes.lean"
+  },
+  {
+   "name": "Challenge_ClassicalCases",
+   "file": "Challenge_ClassicalCases.lean"
+  },
+  {
+   "name": "Challenge_Classification",
+   "file": "Challenge_Classification.lean"
+  },
+  {
+   "name": "Challenge_ExactMass",
+   "file": "Challenge_ExactMass.lean"
+  },
+  {
+   "name": "Challenge_LocalGlobal",
+   "file": "Challenge_LocalGlobal.lean"
+  },
+  {
+   "name": "Challenge_MorenoWagstaff",
+   "file": "Challenge_MorenoWagstaff.lean"
+  },
+  {
+   "name": "Challenge_Shimura",
+   "file": "Challenge_Shimura.lean"
+  },
+  {
+   "name": "Challenge_SiegelIndefinite",
+   "file": "Challenge_SiegelIndefinite.lean"
+  },
+  {
+   "name": "Challenge_SiegelTotallyReal",
+   "file": "Challenge_SiegelTotallyReal.lean"
+  },
+  {
+   "name": "Challenge_SiegelWeil",
+   "file": "Challenge_SiegelWeil.lean"
+  },
+  {
+   "name": "Challenge_TamagawaGroups",
+   "file": "Challenge_TamagawaGroups.lean"
+  },
+  {
+   "name": "Challenge_TamagawaSO",
+   "file": "Challenge_TamagawaSO.lean"
+  },
+  {
+   "name": "Challenge_TamagawaTotallyReal",
+   "file": "Challenge_TamagawaTotallyReal.lean"
+  },
+  {
+   "name": "Challenge_Voight",
+   "file": "Challenge_Voight.lean"
+  },
+  {
+   "name": "QuadFormsKB",
+   "file": "QuadFormsKB.lean"
+  },
+  {
+   "name": "QuadFormsKB.Historical.BinaryForms",
+   "file": "QuadFormsKB/Historical/BinaryForms.lean"
+  },
+  {
+   "name": "QuadFormsKB.Historical.BinaryForms.Dirichlet",
+   "file": "QuadFormsKB/Historical/BinaryForms/Dirichlet.lean"
+  },
+  {
+   "name": "QuadFormsKB.Historical.BinaryForms.Primes",
+   "file": "QuadFormsKB/Historical/BinaryForms/Primes.lean"
+  },
+  {
+   "name": "QuadFormsKB.Historical.BinaryForms.Smith",
+   "file": "QuadFormsKB/Historical/BinaryForms/Smith.lean"
+  },
+  {
+   "name": "QuadFormsKB.Historical.Dickson",
+   "file": "QuadFormsKB/Historical/Dickson.lean"
+  },
+  {
+   "name": "QuadFormsKB.Historical.Dickson.Elementary",
+   "file": "QuadFormsKB/Historical/Dickson/Elementary.lean"
+  },
+  {
+   "name": "QuadFormsKB.Historical.Dickson.Legendre",
+   "file": "QuadFormsKB/Historical/Dickson/Legendre.lean"
+  },
+  {
+   "name": "QuadFormsKB.Historical.Dickson.Minima",
+   "file": "QuadFormsKB/Historical/Dickson/Minima.lean"
+  },
+  {
+   "name": "QuadFormsKB.Historical.Dickson.Universal",
+   "file": "QuadFormsKB/Historical/Dickson/Universal.lean"
+  },
+  {
+   "name": "QuadFormsKB.Historical.DicksonStudies.Ternary",
+   "file": "QuadFormsKB/Historical/DicksonStudies/Ternary.lean"
+  },
+  {
+   "name": "QuadFormsKB.Historical.DicksonStudies.UniversalZeroForms",
+   "file": "QuadFormsKB/Historical/DicksonStudies/UniversalZeroForms.lean"
+  },
+  {
+   "name": "QuadFormsKB.Historical.Gauss",
+   "file": "QuadFormsKB/Historical/Gauss.lean"
+  },
+  {
+   "name": "QuadFormsKB.Historical.Jacobi",
+   "file": "QuadFormsKB/Historical/Jacobi.lean"
+  },
+  {
+   "name": "QuadFormsKB.Historical.Ramanujan",
+   "file": "QuadFormsKB/Historical/Ramanujan.lean"
+  },
+  {
+   "name": "QuadFormsKB.Historical.Ramanujan.Asymptotic",
+   "file": "QuadFormsKB/Historical/Ramanujan/Asymptotic.lean"
+  },
+  {
+   "name": "QuadFormsKB.Historical.Ramanujan.Exceptions",
+   "file": "QuadFormsKB/Historical/Ramanujan/Exceptions.lean"
+  },
+  {
+   "name": "QuadFormsKB.Historical.Ramanujan.Papers",
+   "file": "QuadFormsKB/Historical/Ramanujan/Papers.lean"
+  },
+  {
+   "name": "QuadFormsKB.Historical.Ramanujan.Quaternary",
+   "file": "QuadFormsKB/Historical/Ramanujan/Quaternary.lean"
+  },
+  {
+   "name": "QuadFormsKB.Historical.Ramanujan.Reductions",
+   "file": "QuadFormsKB/Historical/Ramanujan/Reductions.lean"
+  },
+  {
+   "name": "QuadFormsKB.Historical.Ramanujan.SquaresDivisorSums",
+   "file": "QuadFormsKB/Historical/Ramanujan/SquaresDivisorSums.lean"
+  },
+  {
+   "name": "QuadFormsKB.Historical.Ramanujan.Ternary",
+   "file": "QuadFormsKB/Historical/Ramanujan/Ternary.lean"
+  },
+  {
+   "name": "QuadFormsKB.Historical.SmithPapers.Ternary",
+   "file": "QuadFormsKB/Historical/SmithPapers/Ternary.lean"
+  },
+  {
+   "name": "QuadFormsKB.Historical.SmithPapers.Values",
+   "file": "QuadFormsKB/Historical/SmithPapers/Values.lean"
+  },
+  {
+   "name": "QuadFormsKB.Historical.SumsOfSquares",
+   "file": "QuadFormsKB/Historical/SumsOfSquares.lean"
+  },
+  {
+   "name": "QuadFormsKB.Historical.SumsOfSquares.Eisenstein",
+   "file": "QuadFormsKB/Historical/SumsOfSquares/Eisenstein.lean"
+  },
+  {
+   "name": "QuadFormsKB.Historical.SumsOfSquares.FiveSevenFour",
+   "file": "QuadFormsKB/Historical/SumsOfSquares/FiveSevenFour.lean"
+  },
+  {
+   "name": "QuadFormsKB.Historical.SumsOfSquares.FiveSquares",
+   "file": "QuadFormsKB/Historical/SumsOfSquares/FiveSquares.lean"
+  },
+  {
+   "name": "QuadFormsKB.Historical.SumsOfSquares.JacobiCounts",
+   "file": "QuadFormsKB/Historical/SumsOfSquares/JacobiCounts.lean"
+  },
+  {
+   "name": "QuadFormsKB.Historical.SumsOfSquares.OddSquares",
+   "file": "QuadFormsKB/Historical/SumsOfSquares/OddSquares.lean"
+  },
+  {
+   "name": "QuadFormsKB.Historical.SumsOfSquares.PositiveOddSquares",
+   "file": "QuadFormsKB/Historical/SumsOfSquares/PositiveOddSquares.lean"
+  },
+  {
+   "name": "QuadFormsKB.Historical.SumsOfSquares.Siegel",
+   "file": "QuadFormsKB/Historical/SumsOfSquares/Siegel.lean"
+  },
+  {
+   "name": "QuadFormsKB.Historical.SumsOfSquares.SixSquares",
+   "file": "QuadFormsKB/Historical/SumsOfSquares/SixSquares.lean"
+  },
+  {
+   "name": "QuadFormsKB.Historical.SumsOfSquares.SixSquaresAll",
+   "file": "QuadFormsKB/Historical/SumsOfSquares/SixSquaresAll.lean"
+  },
+  {
+   "name": "Solution_ChenevierLannes",
+   "file": "Solution_ChenevierLannes.lean"
+  },
+  {
+   "name": "Solution_ClassicalCases",
+   "file": "Solution_ClassicalCases.lean"
+  },
+  {
+   "name": "Solution_Classification",
+   "file": "Solution_Classification.lean"
+  },
+  {
+   "name": "Solution_ExactMass",
+   "file": "Solution_ExactMass.lean"
+  },
+  {
+   "name": "Solution_LocalGlobal",
+   "file": "Solution_LocalGlobal.lean"
+  },
+  {
+   "name": "Solution_MorenoWagstaff",
+   "file": "Solution_MorenoWagstaff.lean"
+  },
+  {
+   "name": "Solution_Shimura",
+   "file": "Solution_Shimura.lean"
+  },
+  {
+   "name": "Solution_SiegelIndefinite",
+   "file": "Solution_SiegelIndefinite.lean"
+  },
+  {
+   "name": "Solution_SiegelTotallyReal",
+   "file": "Solution_SiegelTotallyReal.lean"
+  },
+  {
+   "name": "Solution_SiegelWeil",
+   "file": "Solution_SiegelWeil.lean"
+  },
+  {
+   "name": "Solution_TamagawaGroups",
+   "file": "Solution_TamagawaGroups.lean"
+  },
+  {
+   "name": "Solution_TamagawaSO",
+   "file": "Solution_TamagawaSO.lean"
+  },
+  {
+   "name": "Solution_TamagawaTotallyReal",
+   "file": "Solution_TamagawaTotallyReal.lean"
+  },
+  {
+   "name": "Solution_Voight",
+   "file": "Solution_Voight.lean"
+  }
+ ],
+ "root_closure_files": 3002,
+ "root_closure_sorry": [
+  "Challenge_ChenevierLannes.lean",
+  "Challenge_ClassicalCases.lean",
+  "Challenge_Classification.lean",
+  "Challenge_ExactMass.lean",
+  "Challenge_LocalGlobal.lean",
+  "Challenge_MorenoWagstaff.lean",
+  "Challenge_Shimura.lean",
+  "Challenge_SiegelIndefinite.lean",
+  "Challenge_SiegelTotallyReal.lean",
+  "Challenge_SiegelWeil.lean",
+  "Challenge_TamagawaGroups.lean",
+  "Challenge_TamagawaSO.lean",
+  "Challenge_TamagawaTotallyReal.lean",
+  "Challenge_Voight.lean"
+ ],
+ "root_closure_axioms": 0,
  "unclosed_files": 2,
  "headline_rule": "readme",
  "headline_count": 6,

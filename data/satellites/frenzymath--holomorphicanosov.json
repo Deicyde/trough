@@ -40,6 +40,26 @@
  "closure_files": 0,
  "closure_sorry": [],
  "closure_axioms": 0,
+ "root_modules": [
+  {
+   "name": "Comparator.Challenge",
+   "file": "Comparator/Challenge.lean"
+  },
+  {
+   "name": "Comparator.Solution",
+   "file": "Comparator/Solution.lean"
+  },
+  {
+   "name": "HolomorphicAnosov",
+   "file": "HolomorphicAnosov.lean"
+  }
+ ],
+ "root_closure_files": 4232,
+ "root_closure_sorry": [
+  "Comparator/Challenge.lean",
+  "HolomorphicAnosov/Topology/CairnsNormalizedCircleGap.lean"
+ ],
+ "root_closure_axioms": 0,
  "unclosed_files": 0,
  "headline_rule": null,
  "headline_count": 0,

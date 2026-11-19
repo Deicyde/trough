@@ -6,7 +6,9 @@ statement: formalized
 proof: formalized
 ---
 
-# Formalization of "The strong perfect graph theorem" by Maria Chudnovsky, Neil…
+# spgt
+
+*Formalization of "The strong perfect graph theorem" by Maria Chudnovsky, Neil Robertson, Paul Seymour and Robin Thomas*
 
 [wpegden/spgt](https://github.com/wpegden/spgt) at commit [9a5aa0f2](https://github.com/wpegden/spgt/tree/9a5aa0f22cb7464e2cd01c1b3750c3f1541133f8), 2026-09-02.
 

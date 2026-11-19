@@ -6,7 +6,9 @@ statement: formalized
 proof: formalized
 ---
 
-# Optimizing the CGMS upper bound on Ramsey numbers in Lean
+# RamseyLean
+
+*Optimizing the CGMS upper bound on Ramsey numbers in Lean*
 
 [snorin239/RamseyLean](https://github.com/snorin239/RamseyLean) at commit [90e87da2](https://github.com/snorin239/RamseyLean/tree/90e87da214701dd6eb3d56a2c7121839d8269d14), 2026-08-17.
 

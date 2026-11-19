@@ -49,6 +49,35 @@
  "closure_files": 0,
  "closure_sorry": [],
  "closure_axioms": 0,
+ "root_modules": [
+  {
+   "name": "CodeLib",
+   "file": "codelib/CodeLib.lean"
+  },
+  {
+   "name": "CodeLib.Examples.Gcd",
+   "file": "codelib/CodeLib/Examples/Gcd.lean"
+  },
+  {
+   "name": "CodeLib.Examples.MergeSort.StdIO",
+   "file": "codelib/CodeLib/Examples/MergeSort/StdIO.lean"
+  },
+  {
+   "name": "CodeLib.Examples.Quicksort.TotalProof",
+   "file": "codelib/CodeLib/Examples/Quicksort/TotalProof.lean"
+  },
+  {
+   "name": "CodeLib.IEEE32.Exec",
+   "file": "codelib/CodeLib/IEEE32/Exec.lean"
+  },
+  {
+   "name": "CodeLib.Near.Examples.KvSetter",
+   "file": "codelib/CodeLib/Near/Examples/KvSetter.lean"
+  }
+ ],
+ "root_closure_files": 86,
+ "root_closure_sorry": [],
+ "root_closure_axioms": 0,
  "unclosed_files": 0,
  "headline_rule": null,
  "headline_count": 0,

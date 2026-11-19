@@ -131,6 +131,151 @@
  "closure_files": 0,
  "closure_sorry": [],
  "closure_axioms": 0,
+ "root_modules": [
+  {
+   "name": "Computational",
+   "file": "Computational.lean"
+  },
+  {
+   "name": "Computational.Proofs.LibsignalCli.ElfHeadlinePq",
+   "file": "Computational/Proofs/LibsignalCli/ElfHeadlinePq.lean"
+  },
+  {
+   "name": "Computational.Tests",
+   "file": "Computational/Tests.lean"
+  },
+  {
+   "name": "Computational.Tests.AEAD.CBCDecTest",
+   "file": "Computational/Tests/AEAD/CBCDecTest.lean"
+  },
+  {
+   "name": "Computational.Tests.AEAD.HKDFTest",
+   "file": "Computational/Tests/AEAD/HKDFTest.lean"
+  },
+  {
+   "name": "Computational.Tests.AEAD.HMACTest",
+   "file": "Computational/Tests/AEAD/HMACTest.lean"
+  },
+  {
+   "name": "Computational.Tests.AEAD.LibsignalAeadTest",
+   "file": "Computational/Tests/AEAD/LibsignalAeadTest.lean"
+  },
+  {
+   "name": "Computational.Tests.AEAD.WireAeadTest",
+   "file": "Computational/Tests/AEAD/WireAeadTest.lean"
+  },
+  {
+   "name": "Computational.Tests.Deviations.PaperCorrRule",
+   "file": "Computational/Tests/Deviations/PaperCorrRule.lean"
+  },
+  {
+   "name": "Computational.Tests.Deviations.PaperCorrRuleProof",
+   "file": "Computational/Tests/Deviations/PaperCorrRuleProof.lean"
+  },
+  {
+   "name": "Computational.Tests.Deviations.PaperFaithfulSendDefs",
+   "file": "Computational/Tests/Deviations/PaperFaithfulSendDefs.lean"
+  },
+  {
+   "name": "Computational.Tests.Deviations.PaperFaithfulSendProof",
+   "file": "Computational/Tests/Deviations/PaperFaithfulSendProof.lean"
+  },
+  {
+   "name": "Computational.Tests.NonVacuity.ModelTest",
+   "file": "Computational/Tests/NonVacuity/ModelTest.lean"
+  },
+  {
+   "name": "Computational.Tests.NonVacuity.X25519ModelTest",
+   "file": "Computational/Tests/NonVacuity/X25519ModelTest.lean"
+  },
+  {
+   "name": "Computational.Tests.Sanity.InOrder",
+   "file": "Computational/Tests/Sanity/InOrder.lean"
+  },
+  {
+   "name": "Computational.Tests.Sanity.LibsignalCorrNoInjSanity",
+   "file": "Computational/Tests/Sanity/LibsignalCorrNoInjSanity.lean"
+  },
+  {
+   "name": "Computational.Tests.Sanity.LibsignalGameSanity",
+   "file": "Computational/Tests/Sanity/LibsignalGameSanity.lean"
+  },
+  {
+   "name": "Computational.Tests.Sanity.LibsignalRefinesCSanity",
+   "file": "Computational/Tests/Sanity/LibsignalRefinesCSanity.lean"
+  },
+  {
+   "name": "Computational.Tests.Sanity.LibsignalSimCFacts",
+   "file": "Computational/Tests/Sanity/LibsignalSimCFacts.lean"
+  },
+  {
+   "name": "Computational.Tests.Sanity.LibsignalSpqrCorrectFacts",
+   "file": "Computational/Tests/Sanity/LibsignalSpqrCorrectFacts.lean"
+  },
+  {
+   "name": "Computational.Tests.Sanity.LibsignalSpqrLogProjection",
+   "file": "Computational/Tests/Sanity/LibsignalSpqrLogProjection.lean"
+  },
+  {
+   "name": "Computational.Tests.Sanity.Sanity",
+   "file": "Computational/Tests/Sanity/Sanity.lean"
+  },
+  {
+   "name": "Computational.Tests.Sanity.UnrestrictedEq",
+   "file": "Computational/Tests/Sanity/UnrestrictedEq.lean"
+  },
+  {
+   "name": "Computational.Tests.Sanity.Window",
+   "file": "Computational/Tests/Sanity/Window.lean"
+  },
+  {
+   "name": "Computational.Tests.Session.RootKdfTest",
+   "file": "Computational/Tests/Session/RootKdfTest.lean"
+  },
+  {
+   "name": "Computational.Theorems.Main",
+   "file": "Computational/Theorems/Main.lean"
+  },
+  {
+   "name": "LibsignalBinary",
+   "file": "LibsignalBinary.lean"
+  },
+  {
+   "name": "LibsignalBinary.Cli",
+   "file": "LibsignalBinary/Cli.lean"
+  },
+  {
+   "name": "LibsignalBinary.Proofs.E2E.V1.ReachSteps",
+   "file": "LibsignalBinary/Proofs/E2E/V1/ReachSteps.lean"
+  },
+  {
+   "name": "LibsignalBinary.Proofs.Placed.SubsetA4b",
+   "file": "LibsignalBinary/Proofs/Placed/SubsetA4b.lean"
+  },
+  {
+   "name": "LibsignalBinary.Proofs.Placed.SubsetA4c",
+   "file": "LibsignalBinary/Proofs/Placed/SubsetA4c.lean"
+  },
+  {
+   "name": "LibsignalBinary.Proofs.Placed.SubsetA6a",
+   "file": "LibsignalBinary/Proofs/Placed/SubsetA6a.lean"
+  },
+  {
+   "name": "LibsignalBinary.Proofs.Placed.SubsetA6b",
+   "file": "LibsignalBinary/Proofs/Placed/SubsetA6b.lean"
+  },
+  {
+   "name": "LibsignalBinary.Proofs.Placed.SubsetA6c",
+   "file": "LibsignalBinary/Proofs/Placed/SubsetA6c.lean"
+  },
+  {
+   "name": "LibsignalBinary.Proofs.SignalSession.Cli.CliElfProof",
+   "file": "LibsignalBinary/Proofs/SignalSession/Cli/CliElfProof.lean"
+  }
+ ],
+ "root_closure_files": 4835,
+ "root_closure_sorry": [],
+ "root_closure_axioms": 0,
  "unclosed_files": 1,
  "headline_rule": null,
  "headline_count": 0,

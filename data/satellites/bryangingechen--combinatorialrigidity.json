@@ -44,6 +44,15 @@
  "closure_files": 26,
  "closure_sorry": [],
  "closure_axioms": 0,
+ "root_modules": [
+  {
+   "name": "CombinatorialRigidity",
+   "file": "CombinatorialRigidity.lean"
+  }
+ ],
+ "root_closure_files": 197,
+ "root_closure_sorry": [],
+ "root_closure_axioms": 0,
  "unclosed_files": 0,
  "headline_rule": "blueprint",
  "headline_count": 85,

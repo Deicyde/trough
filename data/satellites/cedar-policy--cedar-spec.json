@@ -70,6 +70,47 @@
  "closure_files": 0,
  "closure_sorry": [],
  "closure_axioms": 0,
+ "root_modules": [
+  {
+   "name": "Cedar",
+   "file": "cedar-lean/Cedar.lean"
+  },
+  {
+   "name": "Cedar.SymCC",
+   "file": "cedar-lean/Cedar/SymCC.lean"
+  },
+  {
+   "name": "CedarFFI",
+   "file": "cedar-lean/CedarFFI.lean"
+  },
+  {
+   "name": "CedarProto",
+   "file": "cedar-lean/CedarProto.lean"
+  },
+  {
+   "name": "DiffTest",
+   "file": "cedar-lean/DiffTest.lean"
+  },
+  {
+   "name": "Protobuf",
+   "file": "cedar-lean/Protobuf.lean"
+  },
+  {
+   "name": "SymCC",
+   "file": "cedar-lean/SymCC.lean"
+  },
+  {
+   "name": "SymTest",
+   "file": "cedar-lean/SymTest.lean"
+  },
+  {
+   "name": "UnitTest",
+   "file": "cedar-lean/UnitTest.lean"
+  }
+ ],
+ "root_closure_files": 387,
+ "root_closure_sorry": [],
+ "root_closure_axioms": 0,
  "unclosed_files": 0,
  "headline_rule": null,
  "headline_count": 0,

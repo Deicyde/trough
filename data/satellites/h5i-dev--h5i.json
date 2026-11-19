@@ -92,6 +92,139 @@
  "closure_files": 0,
  "closure_sorry": [],
  "closure_axioms": 0,
+ "root_modules": [
+  {
+   "name": "Abs",
+   "file": "crates/h5i-app-pgsql/proofs/Abs.lean"
+  },
+  {
+   "name": "AuthzSpecs",
+   "file": "crates/h5i-app-std/proofs/AuthzSpecs.lean"
+  },
+  {
+   "name": "Check",
+   "file": "crates/h5i-app-std/proofs/Check.lean"
+  },
+  {
+   "name": "Compile",
+   "file": "crates/h5i-app-pgsql/proofs/Compile.lean"
+  },
+  {
+   "name": "H1Body",
+   "file": "crates/h5i-app-h1/proofs/H1Body.lean"
+  },
+  {
+   "name": "H1Chunked",
+   "file": "crates/h5i-app-h1/proofs/H1Chunked.lean"
+  },
+  {
+   "name": "H1Fields",
+   "file": "crates/h5i-app-h1/proofs/H1Fields.lean"
+  },
+  {
+   "name": "H1Prefix",
+   "file": "crates/h5i-app-h1/proofs/H1Prefix.lean"
+  },
+  {
+   "name": "H1Proofs",
+   "file": "crates/h5i-app-h1/proofs/H1Proofs.lean"
+  },
+  {
+   "name": "H1Props",
+   "file": "crates/h5i-app-h1/proofs/H1Props.lean"
+  },
+  {
+   "name": "H1Read",
+   "file": "crates/h5i-app-h1/proofs/H1Read.lean"
+  },
+  {
+   "name": "H1Recv",
+   "file": "crates/h5i-app-h1/proofs/H1Recv.lean"
+  },
+  {
+   "name": "H1Smuggle",
+   "file": "crates/h5i-app-h1/proofs/H1Smuggle.lean"
+  },
+  {
+   "name": "H1Sound",
+   "file": "crates/h5i-app-h1/proofs/H1Sound.lean"
+  },
+  {
+   "name": "H1Spec",
+   "file": "crates/h5i-app-h1/proofs/H1Spec.lean"
+  },
+  {
+   "name": "H1Valid",
+   "file": "crates/h5i-app-h1/proofs/H1Valid.lean"
+  },
+  {
+   "name": "H5iAppH1",
+   "file": "crates/h5i-app-h1/proofs/generated/H5iAppH1.lean"
+  },
+  {
+   "name": "H5iAppJson",
+   "file": "crates/h5i-app-json/proofs/generated/H5iAppJson.lean"
+  },
+  {
+   "name": "H5iAppLib",
+   "file": "crates/h5i-app-core/proofs/H5iAppLib.lean"
+  },
+  {
+   "name": "H5iAppPgsql",
+   "file": "crates/h5i-app-pgsql/proofs/generated/H5iAppPgsql.lean"
+  },
+  {
+   "name": "H5iAppSql",
+   "file": "crates/h5i-app-sql/proofs/generated/H5iAppSql.lean"
+  },
+  {
+   "name": "H5iAppStd",
+   "file": "crates/h5i-app-std/proofs/generated/H5iAppStd.lean"
+  },
+  {
+   "name": "H5iAppToken",
+   "file": "crates/h5i-app-token/proofs/generated/H5iAppToken.lean"
+  },
+  {
+   "name": "JsonProofs",
+   "file": "crates/h5i-app-json/proofs/JsonProofs.lean"
+  },
+  {
+   "name": "JsonSpec",
+   "file": "crates/h5i-app-json/proofs/JsonSpec.lean"
+  },
+  {
+   "name": "Render",
+   "file": "crates/h5i-app-pgsql/proofs/Render.lean"
+  },
+  {
+   "name": "Semantics",
+   "file": "crates/h5i-app-sql/proofs/Semantics.lean"
+  },
+  {
+   "name": "Sound",
+   "file": "crates/h5i-app-pgsql/proofs/Sound.lean"
+  },
+  {
+   "name": "StdSpecs",
+   "file": "crates/h5i-app-std/proofs/StdSpecs.lean"
+  },
+  {
+   "name": "TokenEncode",
+   "file": "crates/h5i-app-token/proofs/TokenEncode.lean"
+  },
+  {
+   "name": "TokenProofs",
+   "file": "crates/h5i-app-token/proofs/TokenProofs.lean"
+  },
+  {
+   "name": "TokenSpec",
+   "file": "crates/h5i-app-token/proofs/TokenSpec.lean"
+  }
+ ],
+ "root_closure_files": 56,
+ "root_closure_sorry": [],
+ "root_closure_axioms": 0,
  "unclosed_files": 0,
  "headline_rule": null,
  "headline_count": 0,

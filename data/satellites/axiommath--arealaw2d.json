@@ -65,6 +65,45 @@
  "closure_files": 304,
  "closure_sorry": [],
  "closure_axioms": 0,
+ "root_modules": [
+  {
+   "name": "AreaLaw",
+   "file": "AreaLaw.lean"
+  },
+  {
+   "name": "AreaLawForMathlib",
+   "file": "AreaLawForMathlib.lean"
+  },
+  {
+   "name": "Challenge",
+   "file": "Challenge.lean"
+  },
+  {
+   "name": "OpenAI.Cylinder3D",
+   "file": "OpenAI/Cylinder3D.lean"
+  },
+  {
+   "name": "OpenAI.Cylinder3DSupport",
+   "file": "OpenAI/Cylinder3DSupport.lean"
+  },
+  {
+   "name": "OpenAI.Statements",
+   "file": "OpenAI/Statements.lean"
+  },
+  {
+   "name": "OpenAI.Statements3D",
+   "file": "OpenAI/Statements3D.lean"
+  },
+  {
+   "name": "Solution",
+   "file": "Solution.lean"
+  }
+ ],
+ "root_closure_files": 314,
+ "root_closure_sorry": [
+  "Challenge/Basic.lean"
+ ],
+ "root_closure_axioms": 0,
  "unclosed_files": 0,
  "headline_rule": "readme",
  "headline_count": 16,

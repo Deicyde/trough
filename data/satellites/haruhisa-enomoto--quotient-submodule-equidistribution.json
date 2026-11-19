@@ -42,6 +42,19 @@
  "closure_files": 628,
  "closure_sorry": [],
  "closure_axioms": 0,
+ "root_modules": [
+  {
+   "name": "MainResults",
+   "file": "MainResults.lean"
+  },
+  {
+   "name": "QuotientSubmoduleEquidistribution",
+   "file": "QuotientSubmoduleEquidistribution.lean"
+  }
+ ],
+ "root_closure_files": 681,
+ "root_closure_sorry": [],
+ "root_closure_axioms": 0,
  "unclosed_files": 0,
  "headline_rule": "readme",
  "headline_count": 8,

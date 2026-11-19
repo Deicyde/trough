@@ -50,6 +50,25 @@
  "closure_files": 0,
  "closure_sorry": [],
  "closure_axioms": 0,
+ "root_modules": [
+  {
+   "name": "Clean",
+   "file": "Clean.lean"
+  },
+  {
+   "name": "Clean.Specs.BLAKE3.ChunkProcessingTests",
+   "file": "Clean/Specs/BLAKE3/ChunkProcessingTests.lean"
+  },
+  {
+   "name": "Clean.Test",
+   "file": "Clean/Test.lean"
+  }
+ ],
+ "root_closure_files": 206,
+ "root_closure_sorry": [
+  "Clean/Utils/Test/TestCircuitProofStart.lean"
+ ],
+ "root_closure_axioms": 0,
  "unclosed_files": 0,
  "headline_rule": null,
  "headline_count": 0,

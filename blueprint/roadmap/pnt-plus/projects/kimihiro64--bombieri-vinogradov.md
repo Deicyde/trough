@@ -16,7 +16,7 @@ proof: formalized
 
 ## Depends on
 
-- [Projects building on PNT+ (5)](README.md)
+- [Robin1984](kimihiro64--robin1984.md)
 
 ## Proof depends on
 
@@ -48,7 +48,7 @@ No file its headlines import, directly or not (819 files), holds `sorry`, `admit
 
 - Mathlib, at [0df444a3](https://github.com/leanprover-community/mathlib4/tree/0df444a360eaa60ab8c11dca51a86af692955474).
 - [PrimeNumberTheoremAnd](../README.md) at `0f15a38c`, a GitHub fork of AlexKontorovich/PrimeNumberTheoremAnd.
-- [Robin1984](README.md) at `bfa72aec`.
+- [Robin1984](kimihiro64--robin1984.md) at `bfa72aec`.
 
 ## Placement
 

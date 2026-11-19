@@ -5,7 +5,9 @@ lean: SubdiffusiveProcess.process_convergence, SubdiffusiveProcess.process_conve
 statement: formalized
 ---
 
-# Anomalous scaling limit of a Brownian particle in a log-correlated potential
+# subdiffusive-process
+
+*Anomalous scaling limit of a Brownian particle in a log-correlated potential*
 
 [nitromannitol/subdiffusive-process](https://github.com/nitromannitol/subdiffusive-process) at commit [4c6b8fa6](https://github.com/nitromannitol/subdiffusive-process/tree/4c6b8fa60357a07fd5713e5104a6cc70f8e432dc), 2026-10-08.
 

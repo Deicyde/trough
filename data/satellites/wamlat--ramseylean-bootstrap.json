@@ -36,6 +36,15 @@
  "closure_files": 589,
  "closure_sorry": [],
  "closure_axioms": 0,
+ "root_modules": [
+  {
+   "name": "RamseyLean",
+   "file": "RamseyLean.lean"
+  }
+ ],
+ "root_closure_files": 587,
+ "root_closure_sorry": [],
+ "root_closure_axioms": 0,
  "unclosed_files": 0,
  "headline_rule": "readme",
  "headline_count": 5,

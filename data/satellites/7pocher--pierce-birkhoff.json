@@ -36,6 +36,15 @@
  "closure_files": 2,
  "closure_sorry": [],
  "closure_axioms": 0,
+ "root_modules": [
+  {
+   "name": "PBCounterexample",
+   "file": "n=30_d=5_k=2/lean/PBCounterexample.lean"
+  }
+ ],
+ "root_closure_files": 24,
+ "root_closure_sorry": [],
+ "root_closure_axioms": 0,
  "unclosed_files": 0,
  "headline_rule": "readme",
  "headline_count": 2,

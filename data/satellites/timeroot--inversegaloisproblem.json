@@ -68,6 +68,93 @@
  "closure_files": 1026,
  "closure_sorry": [],
  "closure_axioms": 0,
+ "root_modules": [
+  {
+   "name": "Challenge",
+   "file": "extras/comparator/Challenge.lean"
+  },
+  {
+   "name": "InverseGalois",
+   "file": "InverseGalois.lean"
+  },
+  {
+   "name": "InverseGalois.Rigidity.Examples.MathieuM11",
+   "file": "InverseGalois/Rigidity/Examples/MathieuM11.lean"
+  },
+  {
+   "name": "InverseGalois.Rigidity.Examples.MathieuM12",
+   "file": "InverseGalois/Rigidity/Examples/MathieuM12.lean"
+  },
+  {
+   "name": "InverseGalois.Rigidity.Examples.MathieuM22",
+   "file": "InverseGalois/Rigidity/Examples/MathieuM22.lean"
+  },
+  {
+   "name": "InverseGalois.Rigidity.Examples.MathieuM22Index",
+   "file": "InverseGalois/Rigidity/Examples/MathieuM22Index.lean"
+  },
+  {
+   "name": "InverseGalois.Rigidity.Examples.MathieuM24",
+   "file": "InverseGalois/Rigidity/Examples/MathieuM24.lean"
+  },
+  {
+   "name": "InverseGalois.Rigidity.Examples.MathieuM24Class",
+   "file": "InverseGalois/Rigidity/Examples/MathieuM24Class.lean"
+  },
+  {
+   "name": "InverseGalois.Rigidity.Examples.PGL2F29",
+   "file": "InverseGalois/Rigidity/Examples/PGL2F29.lean"
+  },
+  {
+   "name": "InverseGalois.Rigidity.Examples.PGL2F31",
+   "file": "InverseGalois/Rigidity/Examples/PGL2F31.lean"
+  },
+  {
+   "name": "InverseGalois.Rigidity.Examples.PGL2F37",
+   "file": "InverseGalois/Rigidity/Examples/PGL2F37.lean"
+  },
+  {
+   "name": "InverseGalois.Rigidity.Examples.PSL2F13",
+   "file": "InverseGalois/Rigidity/Examples/PSL2F13.lean"
+  },
+  {
+   "name": "InverseGalois.Rigidity.Examples.PSL2F17",
+   "file": "InverseGalois/Rigidity/Examples/PSL2F17.lean"
+  },
+  {
+   "name": "InverseGalois.Rigidity.Examples.PSL2F19",
+   "file": "InverseGalois/Rigidity/Examples/PSL2F19.lean"
+  },
+  {
+   "name": "InverseGalois.Rigidity.Examples.PSL2F23",
+   "file": "InverseGalois/Rigidity/Examples/PSL2F23.lean"
+  },
+  {
+   "name": "InverseGalois.Rigidity.Examples.PSL2F29",
+   "file": "InverseGalois/Rigidity/Examples/PSL2F29.lean"
+  },
+  {
+   "name": "InverseGalois.Rigidity.Examples.PSL2F31",
+   "file": "InverseGalois/Rigidity/Examples/PSL2F31.lean"
+  },
+  {
+   "name": "InverseGalois.Rigidity.Examples.PSL2F37",
+   "file": "InverseGalois/Rigidity/Examples/PSL2F37.lean"
+  },
+  {
+   "name": "Mathieu",
+   "file": "Mathieu.lean"
+  },
+  {
+   "name": "Solution",
+   "file": "extras/comparator/Solution.lean"
+  }
+ ],
+ "root_closure_files": 2008,
+ "root_closure_sorry": [
+  "extras/comparator/Challenge.lean"
+ ],
+ "root_closure_axioms": 0,
  "unclosed_files": 0,
  "headline_rule": "readme",
  "headline_count": 17,

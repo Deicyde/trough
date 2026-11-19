@@ -76,6 +76,64 @@
  "closure_files": 0,
  "closure_sorry": [],
  "closure_axioms": 0,
+ "root_modules": [
+  {
+   "name": "BenderGlauberman",
+   "file": "BenderGlauberman.lean"
+  },
+  {
+   "name": "BenderSuzuki",
+   "file": "BenderSuzuki.lean"
+  },
+  {
+   "name": "Challenge",
+   "file": "Challenge.lean"
+  },
+  {
+   "name": "FeitThompson",
+   "file": "FeitThompson.lean"
+  },
+  {
+   "name": "Glauberman",
+   "file": "Glauberman.lean"
+  },
+  {
+   "name": "GorensteinWalter",
+   "file": "GorensteinWalter.lean"
+  },
+  {
+   "name": "Solution",
+   "file": "Solution.lean"
+  },
+  {
+   "name": "Theory",
+   "file": "Theory.lean"
+  }
+ ],
+ "root_closure_files": 2859,
+ "root_closure_sorry": [
+  "Challenge.lean",
+  "GorensteinWalter/Suzuki/SylowThreeJoin.lean",
+  "Theory/AlgebraicGroup/Automorphisms/Classification/theorem_1_15_2.lean",
+  "Theory/AlgebraicGroup/Automorphisms/Classification/theorem_1_15_4.lean",
+  "Theory/AlgebraicGroup/Automorphisms/Classification/theorem_1_15_6.lean",
+  "Theory/AlgebraicGroup/Automorphisms/Classification/theorem_1_15_7.lean",
+  "Theory/AlgebraicGroup/Automorphisms/Classification/theorem_1_15_8.lean",
+  "Theory/AlgebraicGroup/Automorphisms/Classification/theorem_1_15_9.lean",
+  "Theory/AlgebraicGroup/Automorphisms/Lang/theorem_2_1_1.lean",
+  "Theory/AlgebraicGroup/Automorphisms/Lang/theorem_2_1_11.lean",
+  "Theory/AlgebraicGroup/Automorphisms/Lang/theorem_2_1_12.lean",
+  "Theory/AlgebraicGroup/Automorphisms/Lang/theorem_2_1_2_d.lean",
+  "Theory/AlgebraicGroup/Automorphisms/Lang/theorem_2_1_2_e.lean",
+  "Theory/AlgebraicGroup/Automorphisms/Lang/theorem_2_1_2_f.lean",
+  "Theory/AlgebraicGroup/Automorphisms/Lang/theorem_2_1_2_g.lean",
+  "Theory/AlgebraicGroup/Automorphisms/Lang/theorem_2_1_4.lean",
+  "Theory/AlgebraicGroup/Automorphisms/Lang/theorem_2_1_6.lean",
+  "Theory/AlgebraicGroup/Automorphisms/Lang/theorem_2_1_8.lean",
+  "Theory/AlgebraicGroup/Borel/Conjugation/theorem_1_6_2_b.lean",
+  "Theory/AlgebraicGroup/Borel/Conjugation/theorem_1_6_3.lean"
+ ],
+ "root_closure_axioms": 0,
  "unclosed_files": 0,
  "headline_rule": null,
  "headline_count": 0,

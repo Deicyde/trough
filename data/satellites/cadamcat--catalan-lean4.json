@@ -62,6 +62,37 @@
  "closure_files": 1347,
  "closure_sorry": [],
  "closure_axioms": 0,
+ "root_modules": [
+  {
+   "name": "Catalan",
+   "file": "Catalan.lean"
+  },
+  {
+   "name": "Challenge",
+   "file": "Challenge.lean"
+  },
+  {
+   "name": "Solution",
+   "file": "Solution.lean"
+  },
+  {
+   "name": "Verification.Axioms",
+   "file": "Verification/Axioms.lean"
+  },
+  {
+   "name": "Verification.Replay",
+   "file": "Verification/Replay.lean"
+  },
+  {
+   "name": "Verification.Statements",
+   "file": "Verification/Statements.lean"
+  }
+ ],
+ "root_closure_files": 1363,
+ "root_closure_sorry": [
+  "Challenge.lean"
+ ],
+ "root_closure_axioms": 0,
  "unclosed_files": 0,
  "headline_rule": "readme",
  "headline_count": 5,

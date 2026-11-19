@@ -50,6 +50,25 @@
  "closure_files": 71,
  "closure_sorry": [],
  "closure_axioms": 0,
+ "root_modules": [
+  {
+   "name": "Challenge",
+   "file": "Challenge.lean"
+  },
+  {
+   "name": "Divisor",
+   "file": "Divisor.lean"
+  },
+  {
+   "name": "Tests",
+   "file": "Tests.lean"
+  }
+ ],
+ "root_closure_files": 129,
+ "root_closure_sorry": [
+  "Challenge.lean"
+ ],
+ "root_closure_axioms": 1,
  "unclosed_files": 0,
  "headline_rule": "readme",
  "headline_count": 1,

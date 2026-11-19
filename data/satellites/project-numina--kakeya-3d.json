@@ -48,6 +48,25 @@
   "Kakeya/DimensionThree/MainLemma1/QuotientAwareQV5W58.lean"
  ],
  "closure_axioms": 0,
+ "root_modules": [
+  {
+   "name": "FinalCheck",
+   "file": "FinalCheck.lean"
+  },
+  {
+   "name": "Kakeya",
+   "file": "Kakeya.lean"
+  },
+  {
+   "name": "Unconditional",
+   "file": "Unconditional.lean"
+  }
+ ],
+ "root_closure_files": 902,
+ "root_closure_sorry": [
+  "Kakeya/DimensionThree/MainLemma1/QuotientAwareQV5W58.lean"
+ ],
+ "root_closure_axioms": 0,
  "unclosed_files": 0,
  "headline_rule": "readme",
  "headline_count": 3,

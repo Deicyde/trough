@@ -46,6 +46,17 @@
   "Jacobians/RiemannSurface/Cohomology/RiemannRochAnchor.lean"
  ],
  "closure_axioms": 4,
+ "root_modules": [
+  {
+   "name": "Jacobians",
+   "file": "Jacobians.lean"
+  }
+ ],
+ "root_closure_files": 234,
+ "root_closure_sorry": [
+  "Jacobians/RiemannSurface/Cohomology/RiemannRochAnchor.lean"
+ ],
+ "root_closure_axioms": 7,
  "unclosed_files": 0,
  "headline_rule": "readme",
  "headline_count": 12,

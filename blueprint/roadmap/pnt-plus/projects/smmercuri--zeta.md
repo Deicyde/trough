@@ -6,7 +6,9 @@ statement: formalized
 proof: formalized
 ---
 
-# Certifying the Riemann hypothesis up to bounded height in Lean
+# zeta
+
+*Certifying the Riemann hypothesis up to bounded height in Lean*
 
 [smmercuri/zeta](https://github.com/smmercuri/zeta) at commit [34037d5a](https://github.com/smmercuri/zeta/tree/34037d5a7662e2eb6e970bfb22299c84e45ed5d9), 2026-11-15.
 

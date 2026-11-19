@@ -57,6 +57,25 @@
  "closure_files": 3842,
  "closure_sorry": [],
  "closure_axioms": 0,
+ "root_modules": [
+  {
+   "name": "DedekindZetaChallenge",
+   "file": "Challenge/DedekindZetaChallenge.lean"
+  },
+  {
+   "name": "DedekindZetaSolution",
+   "file": "Solution/DedekindZetaSolution.lean"
+  },
+  {
+   "name": "DedekindZetaZeroFree",
+   "file": "DedekindZetaZeroFree.lean"
+  }
+ ],
+ "root_closure_files": 3853,
+ "root_closure_sorry": [
+  "Challenge/DedekindZetaChallenge.lean"
+ ],
+ "root_closure_axioms": 0,
  "unclosed_files": 0,
  "headline_rule": "main",
  "headline_count": 1,

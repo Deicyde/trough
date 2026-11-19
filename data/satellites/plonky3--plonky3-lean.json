@@ -249,6 +249,207 @@
  "closure_files": 0,
  "closure_sorry": [],
  "closure_axioms": 0,
+ "root_modules": [
+  {
+   "name": "Blake3Crate",
+   "file": "crates/blake3-crate/stub/Blake3Crate.lean"
+  },
+  {
+   "name": "HaxExt",
+   "file": "HaxExt.lean"
+  },
+  {
+   "name": "P3Air",
+   "file": "crates/air/extraction/P3Air.lean"
+  },
+  {
+   "name": "P3BabyBear",
+   "file": "crates/baby-bear/extraction/P3BabyBear.lean"
+  },
+  {
+   "name": "P3BatchStark",
+   "file": "crates/batch-stark/extraction/P3BatchStark.lean"
+  },
+  {
+   "name": "P3BinaryDft",
+   "file": "crates/binary-dft/extraction/P3BinaryDft.lean"
+  },
+  {
+   "name": "P3BinaryField",
+   "file": "crates/binary-field/extraction/P3BinaryField.lean"
+  },
+  {
+   "name": "P3BinaryPcs",
+   "file": "crates/binary-pcs/extraction/P3BinaryPcs.lean"
+  },
+  {
+   "name": "P3Blake2s",
+   "file": "crates/blake2s/extraction/P3Blake2s.lean"
+  },
+  {
+   "name": "P3Blake2sAir",
+   "file": "crates/blake2s-air/extraction/P3Blake2sAir.lean"
+  },
+  {
+   "name": "P3Blake3",
+   "file": "crates/blake3/extraction/P3Blake3.lean"
+  },
+  {
+   "name": "P3Blake3Air",
+   "file": "crates/blake3-air/extraction/P3Blake3Air.lean"
+  },
+  {
+   "name": "P3Bus",
+   "file": "crates/bus/extraction/P3Bus.lean"
+  },
+  {
+   "name": "P3Challenger",
+   "file": "crates/challenger/extraction/P3Challenger.lean"
+  },
+  {
+   "name": "P3Circle",
+   "file": "crates/circle/stub/P3Circle.lean"
+  },
+  {
+   "name": "P3Commit",
+   "file": "crates/commit/stub/P3Commit.lean"
+  },
+  {
+   "name": "P3Dft",
+   "file": "crates/dft/stub/P3Dft.lean"
+  },
+  {
+   "name": "P3Field",
+   "file": "crates/field/stub/P3Field.lean"
+  },
+  {
+   "name": "P3Fri",
+   "file": "crates/fri/stub/P3Fri.lean"
+  },
+  {
+   "name": "P3Goldilocks",
+   "file": "crates/goldilocks/extraction/P3Goldilocks.lean"
+  },
+  {
+   "name": "P3Keccak",
+   "file": "crates/keccak/extraction/P3Keccak.lean"
+  },
+  {
+   "name": "P3KeccakAir",
+   "file": "crates/keccak-air/extraction/P3KeccakAir.lean"
+  },
+  {
+   "name": "P3KoalaBear",
+   "file": "crates/koala-bear/extraction/P3KoalaBear.lean"
+  },
+  {
+   "name": "P3Lookup",
+   "file": "crates/lookup/extraction/P3Lookup.lean"
+  },
+  {
+   "name": "P3Matrix",
+   "file": "crates/matrix/extraction/P3Matrix.lean"
+  },
+  {
+   "name": "P3Mds",
+   "file": "crates/mds/extraction/P3Mds.lean"
+  },
+  {
+   "name": "P3MerkleTree",
+   "file": "crates/merkle-tree/extraction/P3MerkleTree.lean"
+  },
+  {
+   "name": "P3Mersenne31",
+   "file": "crates/mersenne-31/extraction/P3Mersenne31.lean"
+  },
+  {
+   "name": "P3Monty31",
+   "file": "crates/monty-31/extraction/P3Monty31.lean"
+  },
+  {
+   "name": "P3MultiStark",
+   "file": "crates/multi-stark/extraction/P3MultiStark.lean"
+  },
+  {
+   "name": "P3MultilinearUtil",
+   "file": "crates/multilinear-util/extraction/P3MultilinearUtil.lean"
+  },
+  {
+   "name": "P3Poseidon1",
+   "file": "crates/poseidon1/stub/P3Poseidon1.lean"
+  },
+  {
+   "name": "P3Poseidon2",
+   "file": "crates/poseidon2/stub/P3Poseidon2.lean"
+  },
+  {
+   "name": "P3Security",
+   "file": "crates/security/extraction/P3Security.lean"
+  },
+  {
+   "name": "P3Sha256",
+   "file": "crates/sha256/extraction/P3Sha256.lean"
+  },
+  {
+   "name": "P3Sha256Air",
+   "file": "crates/sha256-air/extraction/P3Sha256Air.lean"
+  },
+  {
+   "name": "P3Stir",
+   "file": "crates/stir/stub/P3Stir.lean"
+  },
+  {
+   "name": "P3Sumcheck",
+   "file": "crates/sumcheck/extraction/P3Sumcheck.lean"
+  },
+  {
+   "name": "P3Symmetric",
+   "file": "crates/symmetric/extraction/P3Symmetric.lean"
+  },
+  {
+   "name": "P3UniStark",
+   "file": "crates/uni-stark/extraction/P3UniStark.lean"
+  },
+  {
+   "name": "P3Util",
+   "file": "crates/util/extraction/P3Util.lean"
+  },
+  {
+   "name": "P3Whir",
+   "file": "crates/whir/stub/P3Whir.lean"
+  },
+  {
+   "name": "P3Word",
+   "file": "crates/word/extraction/P3Word.lean"
+  },
+  {
+   "name": "P3WordBackend",
+   "file": "crates/word-backend/stub/P3WordBackend.lean"
+  },
+  {
+   "name": "P3ZkCodes",
+   "file": "crates/zk-codes/stub/P3ZkCodes.lean"
+  },
+  {
+   "name": "Plonky3Lean",
+   "file": "Plonky3Lean.lean"
+  },
+  {
+   "name": "Sha2",
+   "file": "crates/sha2/extraction/Sha2.lean"
+  },
+  {
+   "name": "TinyKeccak",
+   "file": "crates/tiny-keccak/extraction/TinyKeccak.lean"
+  },
+  {
+   "name": "ToCompPoly",
+   "file": "ToCompPoly.lean"
+  }
+ ],
+ "root_closure_files": 998,
+ "root_closure_sorry": [],
+ "root_closure_axioms": 0,
  "unclosed_files": 0,
  "headline_rule": null,
  "headline_count": 0,

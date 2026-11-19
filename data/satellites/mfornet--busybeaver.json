@@ -64,6 +64,31 @@
  "closure_files": 80,
  "closure_sorry": [],
  "closure_axioms": 0,
+ "root_modules": [
+  {
+   "name": "BBTheorems",
+   "file": "BBTheorems.lean"
+  },
+  {
+   "name": "Busybeaver",
+   "file": "Busybeaver.lean"
+  },
+  {
+   "name": "Skelet1Fast",
+   "file": "Skelet1Fast.lean"
+  },
+  {
+   "name": "Skelet1Kernel",
+   "file": "Skelet1Kernel.lean"
+  },
+  {
+   "name": "Witness",
+   "file": "Witness.lean"
+  }
+ ],
+ "root_closure_files": 93,
+ "root_closure_sorry": [],
+ "root_closure_axioms": 0,
  "unclosed_files": 0,
  "headline_rule": "readme",
  "headline_count": 3,

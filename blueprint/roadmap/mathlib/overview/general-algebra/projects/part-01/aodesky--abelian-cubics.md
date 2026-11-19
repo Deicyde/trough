@@ -18,7 +18,7 @@ Its headline statements name no Mathlib concept or declaration mapped elsewhere 
 
 - [Integral root theorem](../../../../thousand-plus/algebra/12-field-theory-and-polynomials/integral-root-theorem.md)
 - [Burnside lemma](../../group-theory/part-01/burnside-lemma.md)
-- [Cyclotomic polynomials in $\Q\[X\]$](../../../../undergraduate/ring-theory/polynomial-rings/cyclotomic-polynomials-in-q-x.md)
+- [Cyclotomic polynomials in $\Q[X]$](../../../../undergraduate/ring-theory/polynomial-rings/cyclotomic-polynomials-in-q-x.md)
 - [Haar measure on a locally compact Hausdorff group](../../../topology/topological-algebra/haar-measure-on-a-locally-compact-hausdorff-grou.md)
 - [Dirichlet class number formula](../../algebraic-number-theory/dirichlet-class-number-formula.md)
 - [Counting measure](../../../../undergraduate/measures-and-integral-calculus/measure-theory/counting-measure.md)

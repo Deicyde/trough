@@ -48,6 +48,29 @@
  "closure_files": 0,
  "closure_sorry": [],
  "closure_axioms": 0,
+ "root_modules": [
+  {
+   "name": "Challenge",
+   "file": "submissions/baer_suzuki/Challenge.lean"
+  },
+  {
+   "name": "ChallengeDeps",
+   "file": "submissions/baer_suzuki/ChallengeDeps.lean"
+  },
+  {
+   "name": "Solution",
+   "file": "submissions/baer_suzuki/Solution.lean"
+  },
+  {
+   "name": "Submission",
+   "file": "submissions/baer_suzuki/Submission.lean"
+  }
+ ],
+ "root_closure_files": 32,
+ "root_closure_sorry": [
+  "submissions/baer_suzuki/Challenge.lean"
+ ],
+ "root_closure_axioms": 0,
  "unclosed_files": 0,
  "headline_rule": null,
  "headline_count": 0,

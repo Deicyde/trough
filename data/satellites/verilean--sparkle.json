@@ -204,6 +204,167 @@
  "closure_files": 0,
  "closure_sorry": [],
  "closure_axioms": 0,
+ "root_modules": [
+  {
+   "name": "Display",
+   "file": "docs/tutorial/Display.lean"
+  },
+  {
+   "name": "Examples.CDC",
+   "file": "Examples/CDC.lean"
+  },
+  {
+   "name": "Examples.FPU",
+   "file": "Examples/FPU.lean"
+  },
+  {
+   "name": "IP.Arbiter",
+   "file": "IP/Arbiter.lean"
+  },
+  {
+   "name": "IP.BitNet",
+   "file": "IP/BitNet.lean"
+  },
+  {
+   "name": "IP.Bus",
+   "file": "IP/Bus.lean"
+  },
+  {
+   "name": "IP.Control",
+   "file": "IP/Control.lean"
+  },
+  {
+   "name": "IP.Drone",
+   "file": "IP/Drone.lean"
+  },
+  {
+   "name": "IP.Humanoid",
+   "file": "IP/Humanoid.lean"
+  },
+  {
+   "name": "IP.Net",
+   "file": "IP/Net.lean"
+  },
+  {
+   "name": "IP.RV32",
+   "file": "IP/RV32.lean"
+  },
+  {
+   "name": "IP.TLS",
+   "file": "IP/TLS.lean"
+  },
+  {
+   "name": "IP.Video",
+   "file": "IP/Video.lean"
+  },
+  {
+   "name": "IP.YOLOv8",
+   "file": "IP/YOLOv8.lean"
+  },
+  {
+   "name": "Notebooks",
+   "file": "docs/tutorial/Notebooks.lean"
+  },
+  {
+   "name": "Sparkle",
+   "file": "Sparkle.lean"
+  },
+  {
+   "name": "Tests.Ved.NestedCacheCheck",
+   "file": "Tests/Ved/NestedCacheCheck.lean"
+  },
+  {
+   "name": "Tests.Ved.PilotB0Fixture",
+   "file": "Tests/Ved/PilotB0Fixture.lean"
+  },
+  {
+   "name": "Tests.Ved.RegDedupWidthCheck",
+   "file": "Tests/Ved/RegDedupWidthCheck.lean"
+  },
+  {
+   "name": "Tests.Ved.StrictAuditCheck",
+   "file": "Tests/Ved/StrictAuditCheck.lean"
+  },
+  {
+   "name": "Tests.Ved.U1ContractCheck",
+   "file": "Tests/Ved/U1ContractCheck.lean"
+  },
+  {
+   "name": "Tests.Ved.U1DeepCheck",
+   "file": "Tests/Ved/U1DeepCheck.lean"
+  },
+  {
+   "name": "Tests.Ved.U1EntryCheck",
+   "file": "Tests/Ved/U1EntryCheck.lean"
+  },
+  {
+   "name": "Tools.ConcatNorm",
+   "file": "Tools/ConcatNorm.lean"
+  },
+  {
+   "name": "Tools.ConeFold",
+   "file": "Tools/ConeFold.lean"
+  },
+  {
+   "name": "Tools.ConeFoldMem",
+   "file": "Tools/ConeFoldMem.lean"
+  },
+  {
+   "name": "Tools.ConeFoldOpt",
+   "file": "Tools/ConeFoldOpt.lean"
+  },
+  {
+   "name": "Tools.ConeFoldRT",
+   "file": "Tools/ConeFoldRT.lean"
+  },
+  {
+   "name": "Tools.ConeFoldSlices",
+   "file": "Tools/ConeFoldSlices.lean"
+  },
+  {
+   "name": "Tools.DeepElab",
+   "file": "Tools/DeepElab.lean"
+  },
+  {
+   "name": "Tools.SVParser",
+   "file": "Tools/SVParser.lean"
+  },
+  {
+   "name": "Tools.VedIRDecEq",
+   "file": "Tools/VedIRDecEq.lean"
+  },
+  {
+   "name": "Tools.VedStrictAudit",
+   "file": "Tools/VedStrictAudit.lean"
+  },
+  {
+   "name": "Tools.VedU1Contract",
+   "file": "Tools/VedU1Contract.lean"
+  },
+  {
+   "name": "Tools.VedU1Deep",
+   "file": "Tools/VedU1Deep.lean"
+  },
+  {
+   "name": "Tools.VedU1Entry",
+   "file": "Tools/VedU1Entry.lean"
+  },
+  {
+   "name": "Tools.VerifyElab",
+   "file": "Tools/VerifyElab.lean"
+  }
+ ],
+ "root_closure_files": 351,
+ "root_closure_sorry": [
+  "Examples/FPU/Proofs.lean",
+  "Examples/FPU/Spec.lean",
+  "IP/BitNet/Spec/FixedPoint.lean",
+  "Tests/Ved/StrictAuditCheck.lean",
+  "Tools/DeepElab.lean",
+  "Tools/VedStrictAudit.lean",
+  "Tools/VerifyElab.lean"
+ ],
+ "root_closure_axioms": 2,
  "unclosed_files": 0,
  "headline_rule": null,
  "headline_count": 0,
