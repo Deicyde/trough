@@ -6,10 +6,10 @@ vaults, rendered with [AutoformBot](https://github.com/facebookresearch/autoform
 and published at https://trough.jackmccarthy.org/. The book shows no Lean
 progress: the generated `blueprint/roadmap/README.md` sets `tracks_lean: false`.
 
-`catalog/libraries.toml` lists the 63 libraries trough targets: Mathlib, Tau
+`catalog/libraries.toml` lists the 64 libraries trough targets: Mathlib, Tau
 Ceti, ATLAS, the research projects with blueprints (Imperial's FLT, PNT+, PFR,
 Equational Theories, Strong PNT), Formal Conjectures, Physlib, CSLib,
-Batteries, Foundation, the Analysis I companion, the large corpora (Anthropic's FLT, Lean
+Batteries, Aesop, Foundation, the Analysis I companion, the large corpora (Anthropic's FLT, Lean
 Pool, OpenAI Math, Axiom's CFSG and Stacks Project) and the 44 Formal Frontier
 libraries. Each gets the article unit that suits it, recorded as `map_unit` and
 `map_plan`.
@@ -21,8 +21,8 @@ headline results, Formal Conjectures from its problem files, Lean Pool from
 its project cards, Anthropic's FLT from the landmark theorems of its proof,
 Axiom's CFSG from its proof's case division and its milestones, Axiom's
 Stacks Project formalization from its Stacks tags, ATLAS from the topics of
-its vault, OpenAI Math from its result families, and CSLib, Batteries and
-Physlib from their modules.
+its vault, OpenAI Math from its result families, and CSLib, Batteries, Aesop
+and Physlib from their modules.
 
 ## The Mathlib map
 
@@ -711,6 +711,26 @@ Physlib chapters use, and each article links its declaration ledger,
    committed data differ from what the pin gives; the weekly run, or a dispatch
    with `newest`, moves the pin to the newest main commit whose CI passed.
 
+## The Aesop chapter
+
+[Aesop](https://github.com/leanprover-community/aesop), Automated Extensible
+Search for Obvious Proofs, is a proof search tactic for Lean 4; Mathlib
+requires it. Its chapter, under `blueprint/roadmap/aesop/`, is built as
+Batteries' is, with `tools/trough/aesop.py` holding its README's description
+and the opening of its intro, and the rest of the intro shared with Batteries
+(`trough.library.module_intro`).
+
+The **Aesop data** workflow (`.github/workflows/aesop-data.yml`) calls the
+reusable **Library data** workflow (`.github/workflows/library-data.yml`),
+which every later library on the reader can call with its own id, repository,
+roots, pin rule and build commands. Aesop's CI runs only on pull requests and
+its merge queue, so the pin rule takes the newest master commit whose
+merge-queue build passed. After `lake build`, the workflow imports every module
+that left an `.olean` above `lean/library/LibraryDeps.lean`, which records them
+under `built`; a module that did not build has no article and is listed on the
+front page, and the generator refuses a dump in which over half the modules
+did not build.
+
 ## Working on it
 
     uv run python tools/generate.py           # rewrite blueprint/ from data/ and catalog/
@@ -810,3 +830,6 @@ The docstrings, Lean statements, API maps and README text quoted in
 The docstrings, Lean statements and README text in `data/batteries/` come from
 [Batteries](https://github.com/leanprover-community/batteries), Apache-2.0; each
 article names its module's authors as the file's header does.
+The docstrings, Lean statements and README text in `data/aesop/` come from
+[Aesop](https://github.com/leanprover-community/aesop), Apache-2.0; each article
+names its module's authors as the file's header does.
