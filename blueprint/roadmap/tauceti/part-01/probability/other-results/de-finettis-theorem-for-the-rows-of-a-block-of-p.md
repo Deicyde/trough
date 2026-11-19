@@ -72,4 +72,4 @@ TauCeti.Probability.SeparatelyExchangeable.conditionallyIID_arrayRow.{u_1, u_2} 
 ## Sources
 
 - [Tau Ceti documentation: `TauCeti.Probability.JointlyExchangeable.conditionallyIID_arrayRow_arrayBlockPair`](https://taucetiproject.org/docs/TauCeti/Probability/Exchangeability/Arrays/DeFinetti.html#TauCeti.Probability.JointlyExchangeable.conditionallyIID_arrayRow_arrayBlockPair)
-- [Source of `TauCeti.Probability.JointlyExchangeable.conditionallyIID_arrayRow_arrayBlockPair` in TauCeti/Probability/Exchangeability/Arrays/DeFinetti.lean](https://github.com/TauCetiProject/TauCeti/blob/a6027b1d24fcb935c53bd5b50d11b40991cda418/TauCeti/Probability/Exchangeability/Arrays/DeFinetti.lean#L90)
+- [Source of `TauCeti.Probability.JointlyExchangeable.conditionallyIID_arrayRow_arrayBlockPair` in TauCeti/Probability/Exchangeability/Arrays/DeFinetti.lean](https://github.com/TauCetiProject/TauCeti/blob/cd41bffcb343151b3e58c89392e206b11fe78c1c/TauCeti/Probability/Exchangeability/Arrays/DeFinetti.lean#L90)

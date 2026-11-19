@@ -1,7 +1,7 @@
 ---
 declaration: theorem
 origin: cited
-lean: TauCeti.isIso_cubicalHomologyKunneth, TauCeti.isIso_cubicalHomologyKunneth_of_isSemisimpleRing, TauCeti.isIso_cubicalHomologyKunneth_of_projective, TopCat.isIso_singularHomologyKunneth, TopCat.isIso_singularHomologyKunneth_of_projective, TopCat.isIso_singularHomologyKunneth_of_projective_homology
+lean: TauCeti.isIso_cubicalHomologyKunneth, TauCeti.isIso_singularHomologyKunnethPair, TauCeti.isIso_singularHomologyKunnethPair_of_isSemisimpleRing, TauCeti.isIso_singularHomologyKunnethPair_of_projective, TauCeti.isIso_cubicalHomologyKunnethPair, TauCeti.isIso_cubicalHomologyKunnethPair_of_isSemisimpleRing, TauCeti.isIso_cubicalHomologyKunnethPair_of_projective, TauCeti.isIso_cubicalHomologyKunneth_of_isSemisimpleRing, TauCeti.isIso_cubicalHomologyKunneth_of_projective, TopCat.isIso_singularHomologyKunneth, TopCat.isIso_singularHomologyKunneth_of_projective, TopCat.isIso_singularHomologyKunneth_of_projective_homology
 statement: formalized
 proof: formalized
 ---
@@ -40,12 +40,72 @@ Its statement uses no other declaration mapped here.
 - [The cubical Eilenberg–Zilber theorem](the-cubical-eilenberg-zilber-theorem.md)
 - [The Eilenberg–Zilber theorem for singular chains](the-eilenberg-zilber-theorem-for-singular-chains.md)
 - [The Künneth theorem for split complexes](../../algebra/part-02/homology/the-kunneth-theorem-for-split-complexes.md)
+- [The small-chain theorem for a product of open pairs](the-small-chain-theorem-for-a-product-of-open-pa.md)
 
 ## Lean
 
 Formalized in Tau Ceti as [`TauCeti.isIso_cubicalHomologyKunneth`](https://taucetiproject.org/docs/TauCeti/AlgebraicTopology/Singular/Cubical/Kunneth.html#TauCeti.isIso_cubicalHomologyKunneth).
 
 ## Other forms
+
+**The Künneth theorem for a product of open pairs in singular homology.** Formalized in Tau Ceti as [`TauCeti.isIso_singularHomologyKunnethPair`](https://taucetiproject.org/docs/TauCeti/AlgebraicTopology/Singular/Cubical/Kunneth/Excisive.html#TauCeti.isIso_singularHomologyKunnethPair).
+
+```lean
+TauCeti.isIso_singularHomologyKunnethPair.{u} (k : Type u) [CommRing k] {X Y : TopCat} {A : Set ↑X}
+  {B : Set ↑Y} (hA : IsOpen A) (hB : IsOpen B) (n : ℕ)
+  [CategoryTheory.IsIso
+      (TauCeti.cubicalHomologyKunnethPair k (TopPair.ofSubset A) (TopPair.ofSubset B) n)] :
+  CategoryTheory.IsIso (TauCeti.singularHomologyKunnethPair k A B n)
+```
+
+**The Künneth theorem for a product of open pairs over a field.** Formalized in Tau Ceti as [`TauCeti.isIso_singularHomologyKunnethPair_of_isSemisimpleRing`](https://taucetiproject.org/docs/TauCeti/AlgebraicTopology/Singular/Cubical/Kunneth/Excisive.html#TauCeti.isIso_singularHomologyKunnethPair_of_isSemisimpleRing).
+
+```lean
+TauCeti.isIso_singularHomologyKunnethPair_of_isSemisimpleRing.{u} (k : Type u) [CommRing k]
+  {X Y : TopCat} {A : Set ↑X} {B : Set ↑Y} [IsSemisimpleRing k] (hA : IsOpen A) (hB : IsOpen B)
+  (n : ℕ) : CategoryTheory.IsIso (TauCeti.singularHomologyKunnethPair k A B n)
+```
+
+**The Künneth theorem for a product of open pairs with projective homology.** Formalized in Tau Ceti as [`TauCeti.isIso_singularHomologyKunnethPair_of_projective`](https://taucetiproject.org/docs/TauCeti/AlgebraicTopology/Singular/Cubical/Kunneth/Excisive.html#TauCeti.isIso_singularHomologyKunnethPair_of_projective).
+
+```lean
+TauCeti.isIso_singularHomologyKunnethPair_of_projective.{u} (k : Type u) [CommRing k] {X Y : TopCat}
+  {A : Set ↑X} {B : Set ↑Y} (hA : IsOpen A) (hB : IsOpen B)
+  [hA' : ∀ (p : ℕ), CategoryTheory.Projective ((TopPair.ofSubset A).singularHomology (↧k) p)]
+  (n : ℕ) : CategoryTheory.IsIso (TauCeti.singularHomologyKunnethPair k A B n)
+```
+
+**The Künneth theorem for a product of pairs.** Formalized in Tau Ceti as [`TauCeti.isIso_cubicalHomologyKunnethPair`](https://taucetiproject.org/docs/TauCeti/AlgebraicTopology/Singular/Cubical/Kunneth/Pair.html#TauCeti.isIso_cubicalHomologyKunnethPair).
+
+```lean
+TauCeti.isIso_cubicalHomologyKunnethPair.{u} (k : Type u) [CommRing k] (P Q : TopPair)
+  [∀ (p : ℕ),
+      CategoryTheory.IsSplitMono (HomologicalComplex.iCycles (TopPair.cubicalChainComplex k P) p)]
+  [∀ (p : ℕ),
+      CategoryTheory.IsSplitEpi (HomologicalComplex.homologyπ (TopPair.cubicalChainComplex k P) p)]
+  [∀ (q : ℕ),
+      CategoryTheory.IsSplitMono (HomologicalComplex.iCycles (TopPair.cubicalChainComplex k Q) q)]
+  [∀ (q : ℕ),
+      CategoryTheory.IsSplitEpi (HomologicalComplex.homologyπ (TopPair.cubicalChainComplex k Q) q)]
+  (n : ℕ) : CategoryTheory.IsIso (TauCeti.cubicalHomologyKunnethPair k P Q n)
+```
+
+**The Künneth theorem for a product of pairs over a semisimple ring, for instance a field.** Formalized in Tau Ceti as [`TauCeti.isIso_cubicalHomologyKunnethPair_of_isSemisimpleRing`](https://taucetiproject.org/docs/TauCeti/AlgebraicTopology/Singular/Cubical/Kunneth/Pair.html#TauCeti.isIso_cubicalHomologyKunnethPair_of_isSemisimpleRing).
+
+```lean
+TauCeti.isIso_cubicalHomologyKunnethPair_of_isSemisimpleRing.{u} (k : Type u) [CommRing k]
+  (P Q : TopPair) [IsSemisimpleRing k] (n : ℕ) :
+  CategoryTheory.IsIso (TauCeti.cubicalHomologyKunnethPair k P Q n)
+```
+
+**The Künneth theorem for a product of pairs with projective homology.** Formalized in Tau Ceti as [`TauCeti.isIso_cubicalHomologyKunnethPair_of_projective`](https://taucetiproject.org/docs/TauCeti/AlgebraicTopology/Singular/Cubical/Kunneth/Pair.html#TauCeti.isIso_cubicalHomologyKunnethPair_of_projective).
+
+```lean
+TauCeti.isIso_cubicalHomologyKunnethPair_of_projective.{u} (k : Type u) [CommRing k] (P Q : TopPair)
+  [∀ (p : ℕ),
+      CategoryTheory.Projective (HomologicalComplex.homology (TopPair.cubicalChainComplex k P) p)]
+  (n : ℕ) : CategoryTheory.IsIso (TauCeti.cubicalHomologyKunnethPair k P Q n)
+```
 
 **The Künneth theorem for cubical homology over a semisimple ring, for instance a field.** Formalized in Tau Ceti as [`TauCeti.isIso_cubicalHomologyKunneth_of_isSemisimpleRing`](https://taucetiproject.org/docs/TauCeti/AlgebraicTopology/Singular/Cubical/Kunneth.html#TauCeti.isIso_cubicalHomologyKunneth_of_isSemisimpleRing).
 
@@ -130,4 +190,4 @@ TopCat.isIso_singularHomologyKunneth_of_projective_homology.{w} {k : Type w} [Co
 ## Sources
 
 - [Tau Ceti documentation: `TauCeti.isIso_cubicalHomologyKunneth`](https://taucetiproject.org/docs/TauCeti/AlgebraicTopology/Singular/Cubical/Kunneth.html#TauCeti.isIso_cubicalHomologyKunneth)
-- [Source of `TauCeti.isIso_cubicalHomologyKunneth` in TauCeti/AlgebraicTopology/Singular/Cubical/Kunneth.lean](https://github.com/TauCetiProject/TauCeti/blob/a6027b1d24fcb935c53bd5b50d11b40991cda418/TauCeti/AlgebraicTopology/Singular/Cubical/Kunneth.lean#L154)
+- [Source of `TauCeti.isIso_cubicalHomologyKunneth` in TauCeti/AlgebraicTopology/Singular/Cubical/Kunneth.lean](https://github.com/TauCetiProject/TauCeti/blob/cd41bffcb343151b3e58c89392e206b11fe78c1c/TauCeti/AlgebraicTopology/Singular/Cubical/Kunneth.lean#L154)

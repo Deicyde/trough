@@ -40,4 +40,4 @@ Formalized in Tau Ceti as [`TauCeti.SmoothForm.IsContactForm.jacobiBracket_jacob
 ## Sources
 
 - [Tau Ceti documentation: `TauCeti.SmoothForm.IsContactForm.jacobiBracket_jacobi`](https://taucetiproject.org/docs/TauCeti/Geometry/Contact/Jacobi.html#TauCeti.SmoothForm.IsContactForm.jacobiBracket_jacobi)
-- [Source of `TauCeti.SmoothForm.IsContactForm.jacobiBracket_jacobi` in TauCeti/Geometry/Contact/Jacobi.lean](https://github.com/TauCetiProject/TauCeti/blob/a6027b1d24fcb935c53bd5b50d11b40991cda418/TauCeti/Geometry/Contact/Jacobi.lean#L406)
+- [Source of `TauCeti.SmoothForm.IsContactForm.jacobiBracket_jacobi` in TauCeti/Geometry/Contact/Jacobi.lean](https://github.com/TauCetiProject/TauCeti/blob/cd41bffcb343151b3e58c89392e206b11fe78c1c/TauCeti/Geometry/Contact/Jacobi.lean#L406)

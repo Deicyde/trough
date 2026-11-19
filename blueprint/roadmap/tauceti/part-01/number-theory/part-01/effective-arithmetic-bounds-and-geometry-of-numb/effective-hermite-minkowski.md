@@ -34,5 +34,5 @@ Formalized in Tau Ceti as [`NumberField.ncard_setOf_finiteDimensional_abs_discr_
 ## Sources
 
 - [Tau Ceti documentation: `NumberField.ncard_setOf_finiteDimensional_abs_discr_le_le`](https://taucetiproject.org/docs/TauCeti/NumberTheory/EffectiveBounds/HermiteCount/Basic.html#NumberField.ncard_setOf_finiteDimensional_abs_discr_le_le)
-- [Source of `NumberField.ncard_setOf_finiteDimensional_abs_discr_le_le` in TauCeti/NumberTheory/EffectiveBounds/HermiteCount/Basic.lean](https://github.com/TauCetiProject/TauCeti/blob/a6027b1d24fcb935c53bd5b50d11b40991cda418/TauCeti/NumberTheory/EffectiveBounds/HermiteCount/Basic.lean#L167)
-- [Tau Ceti roadmap status: Effective arithmetic bounds and geometry of numbers](https://github.com/TauCetiProject/TauCetiRoadmap/blob/9f7c032adaf1b838e8183d63ff3cfa886d061cb3/Completed/EffectiveBounds/STATUS.md)
+- [Source of `NumberField.ncard_setOf_finiteDimensional_abs_discr_le_le` in TauCeti/NumberTheory/EffectiveBounds/HermiteCount/Basic.lean](https://github.com/TauCetiProject/TauCeti/blob/cd41bffcb343151b3e58c89392e206b11fe78c1c/TauCeti/NumberTheory/EffectiveBounds/HermiteCount/Basic.lean#L167)
+- [Tau Ceti roadmap status: Effective arithmetic bounds and geometry of numbers](https://github.com/TauCetiProject/TauCetiRoadmap/blob/612845ab80fb9c2b9bee724a156756ee78031591/Completed/EffectiveBounds/STATUS.md)

@@ -29,5 +29,5 @@ Formalized in Tau Ceti as [`TauCeti.FiberInclusionPathFiber.loopHomotopyEquiv`](
 ## Sources
 
 - [Tau Ceti documentation: `TauCeti.FiberInclusionPathFiber.loopHomotopyEquiv`](https://taucetiproject.org/docs/TauCeti/Topology/Homotopy/HurewiczFibration/FiberInclusion.html#TauCeti.FiberInclusionPathFiber.loopHomotopyEquiv)
-- [Source of `TauCeti.FiberInclusionPathFiber.loopHomotopyEquiv` in TauCeti/Topology/Homotopy/HurewiczFibration/FiberInclusion.lean](https://github.com/TauCetiProject/TauCeti/blob/a6027b1d24fcb935c53bd5b50d11b40991cda418/TauCeti/Topology/Homotopy/HurewiczFibration/FiberInclusion.lean#L260)
-- [Tau Ceti roadmap status: Generalized cohomology, spectra and orientations](https://github.com/TauCetiProject/TauCetiRoadmap/blob/9f7c032adaf1b838e8183d63ff3cfa886d061cb3/TauCetiRoadmap/GeneralizedCohomology/STATUS.md)
+- [Source of `TauCeti.FiberInclusionPathFiber.loopHomotopyEquiv` in TauCeti/Topology/Homotopy/HurewiczFibration/FiberInclusion.lean](https://github.com/TauCetiProject/TauCeti/blob/cd41bffcb343151b3e58c89392e206b11fe78c1c/TauCeti/Topology/Homotopy/HurewiczFibration/FiberInclusion.lean#L260)
+- [Tau Ceti roadmap status: Generalized cohomology, spectra and orientations](https://github.com/TauCetiProject/TauCetiRoadmap/blob/612845ab80fb9c2b9bee724a156756ee78031591/TauCetiRoadmap/GeneralizedCohomology/STATUS.md)

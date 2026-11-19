@@ -29,5 +29,5 @@ Formalized in Tau Ceti as [`ContinuousLinearMap.IsCompletelyContinuous.isFredhol
 ## Sources
 
 - [Tau Ceti documentation: `ContinuousLinearMap.IsCompletelyContinuous.isFredholm_one_sub`](https://taucetiproject.org/docs/TauCeti/Analysis/Fredholm/CompletelyContinuous.html#ContinuousLinearMap.IsCompletelyContinuous.isFredholm_one_sub)
-- [Source of `ContinuousLinearMap.IsCompletelyContinuous.isFredholm_one_sub` in TauCeti/Analysis/Fredholm/CompletelyContinuous.lean](https://github.com/TauCetiProject/TauCeti/blob/a6027b1d24fcb935c53bd5b50d11b40991cda418/TauCeti/Analysis/Fredholm/CompletelyContinuous.lean#L71)
-- [Tau Ceti roadmap status: Compact operators and nonarchimedean Fredholm theory](https://github.com/TauCetiProject/TauCetiRoadmap/blob/9f7c032adaf1b838e8183d63ff3cfa886d061cb3/TauCetiRoadmap/CompactOperators/STATUS.md)
+- [Source of `ContinuousLinearMap.IsCompletelyContinuous.isFredholm_one_sub` in TauCeti/Analysis/Fredholm/CompletelyContinuous.lean](https://github.com/TauCetiProject/TauCeti/blob/cd41bffcb343151b3e58c89392e206b11fe78c1c/TauCeti/Analysis/Fredholm/CompletelyContinuous.lean#L81)
+- [Tau Ceti roadmap status: Compact operators and nonarchimedean Fredholm theory](https://github.com/TauCetiProject/TauCetiRoadmap/blob/612845ab80fb9c2b9bee724a156756ee78031591/TauCetiRoadmap/CompactOperators/STATUS.md)

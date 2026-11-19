@@ -166,3 +166,4 @@ lemma subst_def (m : Term Var) (x : Var) (n : Term Var) : m.subst x n = m[x := n
 ## Sources
 
 - [Cslib/Languages/LambdaCalculus/LocallyNameless/Untyped/Basic.lean at 86d560b6](https://github.com/leanprover/cslib/blob/86d560b6cbb379bd82512424cbcd2a915a1565e7/Cslib/Languages/LambdaCalculus/LocallyNameless/Untyped/Basic.lean)
+- [Declaration ledger](../../../../../../sources/cslib/Cslib.Languages.LambdaCalculus.LocallyNameless.Untyped.Basic.json)

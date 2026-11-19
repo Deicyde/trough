@@ -31,5 +31,5 @@ Formalized in Tau Ceti as [`TauCeti.exists_eqOn_const_mul_add_iff_logDeriv_deriv
 ## Sources
 
 - [Tau Ceti documentation: `TauCeti.exists_eqOn_const_mul_add_iff_logDeriv_deriv_eqOn`](https://taucetiproject.org/docs/TauCeti/Analysis/Complex/Conformal/PreSchwarzian.html#TauCeti.exists_eqOn_const_mul_add_iff_logDeriv_deriv_eqOn)
-- [Source of `TauCeti.exists_eqOn_const_mul_add_iff_logDeriv_deriv_eqOn` in TauCeti/Analysis/Complex/Conformal/PreSchwarzian.lean](https://github.com/TauCetiProject/TauCeti/blob/a6027b1d24fcb935c53bd5b50d11b40991cda418/TauCeti/Analysis/Complex/Conformal/PreSchwarzian.lean#L177)
-- [Tau Ceti roadmap status: Conformal mapping and the geometric theory of holomorphic functions](https://github.com/TauCetiProject/TauCetiRoadmap/blob/9f7c032adaf1b838e8183d63ff3cfa886d061cb3/Completed/ConformalMapping/STATUS.md)
+- [Source of `TauCeti.exists_eqOn_const_mul_add_iff_logDeriv_deriv_eqOn` in TauCeti/Analysis/Complex/Conformal/PreSchwarzian.lean](https://github.com/TauCetiProject/TauCeti/blob/cd41bffcb343151b3e58c89392e206b11fe78c1c/TauCeti/Analysis/Complex/Conformal/PreSchwarzian.lean#L177)
+- [Tau Ceti roadmap status: Conformal mapping and the geometric theory of holomorphic functions](https://github.com/TauCetiProject/TauCetiRoadmap/blob/612845ab80fb9c2b9bee724a156756ee78031591/Completed/ConformalMapping/STATUS.md)

@@ -25,8 +25,8 @@ TauCeti.IntegralLattice.StoredClassNumberCertificate (n : ℕ) : Type
 
 ## Depends on
 
-- [TauCeti.IntegralLattice](../../../linear-algebra/integral-lattices-discriminant-forms-and-overlat/tauceti-integrallattice.md)
-- [TauCeti.IntegralLattice.mass](../../../linear-algebra/integral-lattices-discriminant-forms-and-overlat/tauceti-integrallattice-mass.md)
+- [TauCeti.IntegralLattice](../../../linear-algebra/part-01/integral-lattices-discriminant-forms-and-overlat/tauceti-integrallattice.md)
+- [TauCeti.IntegralLattice.mass](../../../linear-algebra/part-01/integral-lattices-discriminant-forms-and-overlat/tauceti-integrallattice-mass.md)
 
 ## Lean
 
@@ -35,5 +35,5 @@ Formalized in Tau Ceti as [`TauCeti.IntegralLattice.StoredClassNumberCertificate
 ## Sources
 
 - [Tau Ceti documentation: `TauCeti.IntegralLattice.StoredClassNumberCertificate`](https://taucetiproject.org/docs/TauCeti/NumberTheory/IntegralLattice/LMFDB/StoredClassNumberCertificate.html#TauCeti.IntegralLattice.StoredClassNumberCertificate)
-- [Source of `TauCeti.IntegralLattice.StoredClassNumberCertificate` in TauCeti/NumberTheory/IntegralLattice/LMFDB/StoredClassNumberCertificate.lean](https://github.com/TauCetiProject/TauCeti/blob/a6027b1d24fcb935c53bd5b50d11b40991cda418/TauCeti/NumberTheory/IntegralLattice/LMFDB/StoredClassNumberCertificate.lean#L62)
-- [Tau Ceti roadmap status: Integral quadratic forms and lattices](https://github.com/TauCetiProject/TauCetiRoadmap/blob/9f7c032adaf1b838e8183d63ff3cfa886d061cb3/TauCetiRoadmap/IntegralLattices/STATUS.md)
+- [Source of `TauCeti.IntegralLattice.StoredClassNumberCertificate` in TauCeti/NumberTheory/IntegralLattice/LMFDB/StoredClassNumberCertificate.lean](https://github.com/TauCetiProject/TauCeti/blob/cd41bffcb343151b3e58c89392e206b11fe78c1c/TauCeti/NumberTheory/IntegralLattice/LMFDB/StoredClassNumberCertificate.lean#L62)
+- [Tau Ceti roadmap status: Integral quadratic forms and lattices](https://github.com/TauCetiProject/TauCetiRoadmap/blob/612845ab80fb9c2b9bee724a156756ee78031591/TauCetiRoadmap/IntegralLattices/STATUS.md)

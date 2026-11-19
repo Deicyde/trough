@@ -1,0 +1,15 @@
+{
+ "schema": "trough-ledger/v1",
+ "library": "CSLib",
+ "repo": "leanprover/cslib",
+ "rev": "86d560b6cbb379bd82512424cbcd2a915a1565e7",
+ "module": "Cslib.Foundations.Syntax.HasSubstitution",
+ "file": "Cslib/Foundations/Syntax/HasSubstitution.lean",
+ "public": [
+  {"name": "Cslib.HasSubstitution", "kind": "class", "line": 18},
+  {"name": "Cslib.unexpandHasSubstitutionSubst", "kind": "def", "line": 37}
+ ],
+ "private": [],
+ "missing": [],
+ "unread": "Unnamed instances, the names an `alias ⟨…⟩` command gives, and the names Lean generates for a declaration (constructors, recursors, derived instances) are not read from the source, so they are not listed."
+}

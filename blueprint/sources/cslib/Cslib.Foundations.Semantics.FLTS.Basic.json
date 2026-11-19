@@ -1,0 +1,18 @@
+{
+ "schema": "trough-ledger/v1",
+ "library": "CSLib",
+ "repo": "leanprover/cslib",
+ "rev": "86d560b6cbb379bd82512424cbcd2a915a1565e7",
+ "module": "Cslib.Foundations.Semantics.FLTS.Basic",
+ "file": "Cslib/Foundations/Semantics/FLTS/Basic.lean",
+ "public": [
+  {"name": "Cslib.FLTS", "kind": "structure", "line": 32},
+  {"name": "Cslib.FLTS.mtr", "kind": "def", "line": 46},
+  {"name": "Cslib.FLTS.mtr_nil_eq", "kind": "theorem", "line": 49},
+  {"name": "Cslib.FLTS.mtr_concat_eq", "kind": "theorem", "line": 52},
+  {"name": "Cslib.FLTS.mtr_append_eq", "kind": "theorem", "line": 56}
+ ],
+ "private": [],
+ "missing": [],
+ "unread": "Unnamed instances, the names an `alias ⟨…⟩` command gives, and the names Lean generates for a declaration (constructors, recursors, derived instances) are not read from the source, so they are not listed."
+}

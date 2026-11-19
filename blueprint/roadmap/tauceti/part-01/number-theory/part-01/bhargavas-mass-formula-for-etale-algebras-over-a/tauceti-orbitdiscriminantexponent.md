@@ -29,5 +29,5 @@ Formalized in Tau Ceti as [`TauCeti.orbitDiscriminantExponent`](https://taucetip
 ## Sources
 
 - [Tau Ceti documentation: `TauCeti.orbitDiscriminantExponent`](https://taucetiproject.org/docs/TauCeti/NumberTheory/LocalField/EtaleMassFormula/OrbitWeight.html#TauCeti.orbitDiscriminantExponent)
-- [Source of `TauCeti.orbitDiscriminantExponent` in TauCeti/NumberTheory/LocalField/EtaleMassFormula/OrbitWeight.lean](https://github.com/TauCetiProject/TauCeti/blob/a6027b1d24fcb935c53bd5b50d11b40991cda418/TauCeti/NumberTheory/LocalField/EtaleMassFormula/OrbitWeight.lean#L86)
-- [Tau Ceti roadmap status: Bhargava's mass formula for étale algebras over a local field](https://github.com/TauCetiProject/TauCetiRoadmap/blob/9f7c032adaf1b838e8183d63ff3cfa886d061cb3/TauCetiRoadmap/EtaleMassFormula/STATUS.md)
+- [Source of `TauCeti.orbitDiscriminantExponent` in TauCeti/NumberTheory/LocalField/EtaleMassFormula/OrbitWeight.lean](https://github.com/TauCetiProject/TauCeti/blob/cd41bffcb343151b3e58c89392e206b11fe78c1c/TauCeti/NumberTheory/LocalField/EtaleMassFormula/OrbitWeight.lean#L86)
+- [Tau Ceti roadmap status: Bhargava's mass formula for étale algebras over a local field](https://github.com/TauCetiProject/TauCetiRoadmap/blob/612845ab80fb9c2b9bee724a156756ee78031591/TauCetiRoadmap/EtaleMassFormula/STATUS.md)

@@ -25,7 +25,7 @@ Its statement uses no other declaration mapped here.
 
 ## Proof depends on
 
-- [Henkel's open mapping theorem](../../../../topology/algebra/part-01/henkels-open-mapping-theorem.md)
+- [Henkel's open mapping theorem](../../../../../part-02/topology/algebra/part-01/henkels-open-mapping-theorem.md)
 
 ## Lean
 
@@ -34,4 +34,4 @@ Formalized in Tau Ceti as [`LinearMap.isOpenMap_of_isTate`](https://taucetiproje
 ## Sources
 
 - [Tau Ceti documentation: `LinearMap.isOpenMap_of_isTate`](https://taucetiproject.org/docs/TauCeti/Analysis/Normed/Operator/RingOpNorm/OpenMapping.html#LinearMap.isOpenMap_of_isTate)
-- [Source of `LinearMap.isOpenMap_of_isTate` in TauCeti/Analysis/Normed/Operator/RingOpNorm/OpenMapping.lean](https://github.com/TauCetiProject/TauCeti/blob/a6027b1d24fcb935c53bd5b50d11b40991cda418/TauCeti/Analysis/Normed/Operator/RingOpNorm/OpenMapping.lean#L156)
+- [Source of `LinearMap.isOpenMap_of_isTate` in TauCeti/Analysis/Normed/Operator/RingOpNorm/OpenMapping.lean](https://github.com/TauCetiProject/TauCeti/blob/cd41bffcb343151b3e58c89392e206b11fe78c1c/TauCeti/Analysis/Normed/Operator/RingOpNorm/OpenMapping.lean#L156)

@@ -31,7 +31,7 @@ Its statement uses no other declaration mapped here.
 
 - [The fundamental inequality (Stichtenoth, Theorem 3.1.11)](the-fundamental-inequality-stichtenoth-theorem-3.md)
 - [Riemann's theorem](../part-02/riemanns-theorem.md)
-- [The Riemann–Roch theorem (Stichtenoth, Theorem 1.5.15), for the divisor `(ω)` itself](../../../algebraic-geometry/algebraic-curves-function-fields-divisors-and-ri/the-riemann-roch-theorem-stichtenoth-theorem-1-5.md)
+- [The Riemann–Roch theorem (Stichtenoth, Theorem 1.5.15), for the divisor `(ω)` itself](../../algebraic-curves-function-fields-divisors-and-ri/the-riemann-roch-theorem-stichtenoth-theorem-1-5.md)
 - [The weak approximation theorem](../part-02/the-weak-approximation-theorem.md)
 
 ## Lean
@@ -41,4 +41,4 @@ Formalized in Tau Ceti as [`TauCeti.Divisor.two_mul_dim_le_degree_add_two`](http
 ## Sources
 
 - [Tau Ceti documentation: `TauCeti.Divisor.two_mul_dim_le_degree_add_two`](https://taucetiproject.org/docs/TauCeti/FieldTheory/FunctionField/Consequences/Clifford.html#TauCeti.Divisor.two_mul_dim_le_degree_add_two)
-- [Source of `TauCeti.Divisor.two_mul_dim_le_degree_add_two` in TauCeti/FieldTheory/FunctionField/Consequences/Clifford.lean](https://github.com/TauCetiProject/TauCeti/blob/a6027b1d24fcb935c53bd5b50d11b40991cda418/TauCeti/FieldTheory/FunctionField/Consequences/Clifford.lean#L259)
+- [Source of `TauCeti.Divisor.two_mul_dim_le_degree_add_two` in TauCeti/FieldTheory/FunctionField/Consequences/Clifford.lean](https://github.com/TauCetiProject/TauCeti/blob/cd41bffcb343151b3e58c89392e206b11fe78c1c/TauCeti/FieldTheory/FunctionField/Consequences/Clifford.lean#L259)

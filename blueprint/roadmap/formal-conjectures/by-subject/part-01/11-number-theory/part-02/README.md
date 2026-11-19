@@ -265,7 +265,7 @@ navigation: transparent
 - [Catalan-Larcombe-French sequence](../../../../oeis/part-03/catalan-larcombe-french-sequence.md)
 - [Least $m$ such that $\phi(m) = n!$](../../../../oeis/part-03/least-m-such-that-phi-m-n.md)
 - [Divisibility of $2^n + 1$ by $n$](../../../../oeis/part-03/divisibility-of-2-n-1-by-n.md)
-- [Numerator of $1/\det(M)$ for $M\[i,j\] = 1/\operatorname{lcm}(i,j)$](../../../../oeis/part-03/numerator-of-1-det-m-for-m-i-j-1-lcm-i-j.md)
+- [Numerator of $1/\det(M)$ for $M[i,j] = 1/\operatorname{lcm}(i,j)$](../../../../oeis/part-03/numerator-of-1-det-m-for-m-i-j-1-lcm-i-j.md)
 - [Number of different products of subsets of $\{1, 2, \dots, n\}$](../../../../oeis/part-03/number-of-different-products-of-subsets-of-1-2-d.md)
 - [Reversible multiples $a(3^n) = 10^{3^{n-2}} - 1$ for powers of $3$](../../../../oeis/part-03/reversible-multiples-a-3-n-10-3-n-2-1-for-powers.md)
 - [Conjectures associated with A063880](../../../../oeis/part-03/conjectures-associated-with-a063880.md)
@@ -330,7 +330,7 @@ navigation: transparent
 
 - [$a(n) = 3a(n-1) + a(n-2) - 3a(n-3)$](../../../../oeis/part-06/a-n-3a-n-1-a-n-2-3a-n-3.md)
 - [Smallest power with base>1 and exponent $n$ without digit 0](../../../../oeis/part-06/smallest-power-with-base-1-and-exponent-n-withou.md)
-- [$a(n) = \[x^{2n}\] \left(\frac{1 + x}{1 - x}\right)^n$](../../../../oeis/part-06/a-n-x-2n-left-frac-1-x-1-x-right-n.md)
+- [$a(n) = [x^{2n}] \left(\frac{1 + x}{1 - x}\right)^n$](../../../../oeis/part-06/a-n-x-2n-left-frac-1-x-1-x-right-n.md)
 - [Number of zeros in ternary representation of $2^n$](../../../../oeis/part-06/number-of-zeros-in-ternary-representation-of-2-n.md)
 - [Array read by upward antidiagonals](../../../../oeis/part-06/array-read-by-upward-antidiagonals.md)
 - [Conjectures associated with A105210](../../../../oeis/part-06/conjectures-associated-with-a105210.md)

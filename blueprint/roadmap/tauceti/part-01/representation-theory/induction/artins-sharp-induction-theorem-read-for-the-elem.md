@@ -39,4 +39,4 @@ Formalized in Tau Ceti as [`TauCeti.ClassFunction.natCard_nsmul_mem_indVirtualCh
 ## Sources
 
 - [Tau Ceti documentation: `TauCeti.ClassFunction.natCard_nsmul_mem_indVirtualCharacters_isElementary`](https://taucetiproject.org/docs/TauCeti/RepresentationTheory/Induction/Artin/Basic.html#TauCeti.ClassFunction.natCard_nsmul_mem_indVirtualCharacters_isElementary)
-- [Source of `TauCeti.ClassFunction.natCard_nsmul_mem_indVirtualCharacters_isElementary` in TauCeti/RepresentationTheory/Induction/Artin/Basic.lean](https://github.com/TauCetiProject/TauCeti/blob/a6027b1d24fcb935c53bd5b50d11b40991cda418/TauCeti/RepresentationTheory/Induction/Artin/Basic.lean#L205)
+- [Source of `TauCeti.ClassFunction.natCard_nsmul_mem_indVirtualCharacters_isElementary` in TauCeti/RepresentationTheory/Induction/Artin/Basic.lean](https://github.com/TauCetiProject/TauCeti/blob/cd41bffcb343151b3e58c89392e206b11fe78c1c/TauCeti/RepresentationTheory/Induction/Artin/Basic.lean#L205)

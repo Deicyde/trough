@@ -18,7 +18,7 @@ navigation: transparent
 - [Fundamental theorem for absolutely continuous curves, integrability](fundamental-theorem-for-absolutely-continuous-cu.md)
 - [Hardy--Littlewood rearrangement inequality](hardy-littlewood-rearrangement-inequality.md)
 - [Hölder estimate along a curve](holder-estimate-along-a-curve.md)
-- [Hölder's inequality for the integral of a product](holders-inequality-for-the-integral-of-a-product.md)
+- [Hölder's inequality for disjoint pieces](holders-inequality-for-disjoint-pieces.md)
 - [Jensen's inequality for the conditional expectation, as an inequality of `lintegral`s](jensens-inequality-for-the-conditional-expectati.md)
 - [The local Campanato estimate](the-local-campanato-estimate.md)
 - [Lusin's theorem](lusins-theorem.md)

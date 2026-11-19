@@ -23,8 +23,7 @@ Its statement uses no other declaration mapped here.
 
 ## Proof depends on
 
-- [Eberlein–Šmulian, relative form](eberlein-smulian-relative-form.md)
-- [Šmulian's theorem](../part-02/smulians-theorem.md)
+- [Šmulian's theorem](../../../part-03/normed/part-03/smulians-theorem.md)
 
 ## Lean
 
@@ -33,5 +32,5 @@ Formalized in Tau Ceti as [`TauCeti.isCompact_toWeakSpace_iff_isSeqCompact`](htt
 ## Sources
 
 - [Tau Ceti documentation: `TauCeti.isCompact_toWeakSpace_iff_isSeqCompact`](https://taucetiproject.org/docs/TauCeti/Analysis/Normed/Module/WeakSpace/EberleinSmulian.html#TauCeti.isCompact_toWeakSpace_iff_isSeqCompact)
-- [Source of `TauCeti.isCompact_toWeakSpace_iff_isSeqCompact` in TauCeti/Analysis/Normed/Module/WeakSpace/EberleinSmulian.lean](https://github.com/TauCetiProject/TauCeti/blob/a6027b1d24fcb935c53bd5b50d11b40991cda418/TauCeti/Analysis/Normed/Module/WeakSpace/EberleinSmulian.lean#L151)
-- [Tau Ceti roadmap status: Banach space theory](https://github.com/TauCetiProject/TauCetiRoadmap/blob/9f7c032adaf1b838e8183d63ff3cfa886d061cb3/TauCetiRoadmap/BanachSpaceTheory/STATUS.md)
+- [Source of `TauCeti.isCompact_toWeakSpace_iff_isSeqCompact` in TauCeti/Analysis/Normed/Module/WeakSpace/EberleinSmulian.lean](https://github.com/TauCetiProject/TauCeti/blob/cd41bffcb343151b3e58c89392e206b11fe78c1c/TauCeti/Analysis/Normed/Module/WeakSpace/EberleinSmulian.lean#L151)
+- [Tau Ceti roadmap status: Banach space theory](https://github.com/TauCetiProject/TauCetiRoadmap/blob/612845ab80fb9c2b9bee724a156756ee78031591/TauCetiRoadmap/BanachSpaceTheory/STATUS.md)

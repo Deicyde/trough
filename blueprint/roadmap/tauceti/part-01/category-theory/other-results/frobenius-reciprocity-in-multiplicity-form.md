@@ -25,7 +25,7 @@ TauCeti.fusionCoeff_eq_simpleMultiplicities_rightDual_tensor.{w', v, u} {C : Typ
 
 ## Depends on
 
-- [TauCeti.fusionCoeff](../pivotal-and-spherical-categories/tauceti-fusioncoeff.md)
+Its statement uses no other declaration mapped here.
 
 ## Lean
 
@@ -72,4 +72,4 @@ TauCeti.fusionCoeff_eq_simpleMultiplicities_tensor_rightDual.{w', v, u} {C : Typ
 ## Sources
 
 - [Tau Ceti documentation: `TauCeti.fusionCoeff_eq_simpleMultiplicities_rightDual_tensor`](https://taucetiproject.org/docs/TauCeti/CategoryTheory/Semisimple/Rigid.html#TauCeti.fusionCoeff_eq_simpleMultiplicities_rightDual_tensor)
-- [Source of `TauCeti.fusionCoeff_eq_simpleMultiplicities_rightDual_tensor` in TauCeti/CategoryTheory/Semisimple/Rigid.lean](https://github.com/TauCetiProject/TauCeti/blob/a6027b1d24fcb935c53bd5b50d11b40991cda418/TauCeti/CategoryTheory/Semisimple/Rigid.lean#L217)
+- [Source of `TauCeti.fusionCoeff_eq_simpleMultiplicities_rightDual_tensor` in TauCeti/CategoryTheory/Semisimple/Rigid.lean](https://github.com/TauCetiProject/TauCeti/blob/cd41bffcb343151b3e58c89392e206b11fe78c1c/TauCeti/CategoryTheory/Semisimple/Rigid.lean#L221)

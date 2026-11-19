@@ -30,7 +30,7 @@ TauCeti.natCard_le_eighty_four_mul_genus_sub_one.{u, v} {k : Type u} {F : Type v
 - [Dedekind's different theorem, first part (Stichtenoth, Theorem 3.5.1(a))](dedekinds-different-theorem-first-part-stichteno.md)
 - [The fundamental identity](the-fundamental-identity.md)
 - [The fundamental inequality (Stichtenoth, Theorem 3.1.11)](the-fundamental-inequality-stichtenoth-theorem-3.md)
-- [The Hurwitz genus formula (Stichtenoth, Theorem 3.4.13)](../../../algebraic-geometry/algebraic-curves-function-fields-divisors-and-ri/the-hurwitz-genus-formula-stichtenoth-theorem-3.md)
+- [The Hurwitz genus formula (Stichtenoth, Theorem 3.4.13)](../../algebraic-curves-function-fields-divisors-and-ri/the-hurwitz-genus-formula-stichtenoth-theorem-3.md)
 - [The weak approximation theorem](../part-02/the-weak-approximation-theorem.md)
 
 ## Lean
@@ -70,4 +70,4 @@ TauCeti.natCard_le_eighty_four_mul_genus_sub_one_of_charZero.{u, v} {k : Type u}
 ## Sources
 
 - [Tau Ceti documentation: `TauCeti.natCard_le_eighty_four_mul_genus_sub_one`](https://taucetiproject.org/docs/TauCeti/FieldTheory/FunctionField/Automorphism/HurwitzBound.html#TauCeti.natCard_le_eighty_four_mul_genus_sub_one)
-- [Source of `TauCeti.natCard_le_eighty_four_mul_genus_sub_one` in TauCeti/FieldTheory/FunctionField/Automorphism/HurwitzBound.lean](https://github.com/TauCetiProject/TauCeti/blob/a6027b1d24fcb935c53bd5b50d11b40991cda418/TauCeti/FieldTheory/FunctionField/Automorphism/HurwitzBound.lean#L82)
+- [Source of `TauCeti.natCard_le_eighty_four_mul_genus_sub_one` in TauCeti/FieldTheory/FunctionField/Automorphism/HurwitzBound.lean](https://github.com/TauCetiProject/TauCeti/blob/cd41bffcb343151b3e58c89392e206b11fe78c1c/TauCeti/FieldTheory/FunctionField/Automorphism/HurwitzBound.lean#L82)

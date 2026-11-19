@@ -36,4 +36,4 @@ Formalized in Tau Ceti as [`Equiv.Perm.orbitCount_add_orbitCount_add_orbitCount_
 ## Sources
 
 - [Tau Ceti documentation: `Equiv.Perm.orbitCount_add_orbitCount_add_orbitCount_mul_le`](https://taucetiproject.org/docs/TauCeti/GroupTheory/Perm/SwapFactors.html#Equiv.Perm.orbitCount_add_orbitCount_add_orbitCount_mul_le)
-- [Source of `Equiv.Perm.orbitCount_add_orbitCount_add_orbitCount_mul_le` in TauCeti/GroupTheory/Perm/SwapFactors.lean](https://github.com/TauCetiProject/TauCeti/blob/a6027b1d24fcb935c53bd5b50d11b40991cda418/TauCeti/GroupTheory/Perm/SwapFactors.lean#L767)
+- [Source of `Equiv.Perm.orbitCount_add_orbitCount_add_orbitCount_mul_le` in TauCeti/GroupTheory/Perm/SwapFactors.lean](https://github.com/TauCetiProject/TauCeti/blob/cd41bffcb343151b3e58c89392e206b11fe78c1c/TauCeti/GroupTheory/Perm/SwapFactors.lean#L763)

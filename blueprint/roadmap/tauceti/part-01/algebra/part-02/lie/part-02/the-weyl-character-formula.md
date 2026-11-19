@@ -53,4 +53,4 @@ Formalized in Tau Ceti as [`TauCeti.formalCharacter_mul_weylDenominator_eq_weylN
 ## Sources
 
 - [Tau Ceti documentation: `TauCeti.formalCharacter_mul_weylDenominator_eq_weylNumerator`](https://taucetiproject.org/docs/TauCeti/Algebra/Lie/HighestWeight/Weyl/Character.html#TauCeti.formalCharacter_mul_weylDenominator_eq_weylNumerator)
-- [Source of `TauCeti.formalCharacter_mul_weylDenominator_eq_weylNumerator` in TauCeti/Algebra/Lie/HighestWeight/Weyl/Character.lean](https://github.com/TauCetiProject/TauCeti/blob/a6027b1d24fcb935c53bd5b50d11b40991cda418/TauCeti/Algebra/Lie/HighestWeight/Weyl/Character.lean#L333)
+- [Source of `TauCeti.formalCharacter_mul_weylDenominator_eq_weylNumerator` in TauCeti/Algebra/Lie/HighestWeight/Weyl/Character.lean](https://github.com/TauCetiProject/TauCeti/blob/cd41bffcb343151b3e58c89392e206b11fe78c1c/TauCeti/Algebra/Lie/HighestWeight/Weyl/Character.lean#L333)

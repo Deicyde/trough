@@ -24,8 +24,9 @@ Its statement uses no other declaration mapped here.
 
 ## Proof depends on
 
-- [The Cauchy–Binet formula](../../../linear-algebra/other-results/the-cauchy-binet-formula.md)
 - [Minkowski's second theorem, upper bound, in terms of the successive minima](minkowskis-second-theorem-upper-bound-in-terms-o.md)
+- [Pseudo-bases over a Dedekind domain](../../part-02/roths-theorem-and-the-subspace-theorem-over-numb/pseudo-bases-over-a-dedekind-domain.md)
+- [Schmidt's covolume identity](../diophantine-approximation-and-transcendence/schmidts-covolume-identity.md)
 - [Vaaler's cube-slicing theorem](../../../measure-theory/measure/vaalers-cube-slicing-theorem.md)
 - [ZLattice.successiveMin](zlattice-successivemin.md)
 
@@ -36,4 +37,4 @@ Formalized in Tau Ceti as [`Submodule.exists_ne_zero_mem_intPoints_norm_le`](htt
 ## Sources
 
 - [Tau Ceti documentation: `Submodule.exists_ne_zero_mem_intPoints_norm_le`](https://taucetiproject.org/docs/TauCeti/NumberTheory/Height/Arakelov/SiegelsLemma.html#Submodule.exists_ne_zero_mem_intPoints_norm_le)
-- [Source of `Submodule.exists_ne_zero_mem_intPoints_norm_le` in TauCeti/NumberTheory/Height/Arakelov/SiegelsLemma.lean](https://github.com/TauCetiProject/TauCeti/blob/a6027b1d24fcb935c53bd5b50d11b40991cda418/TauCeti/NumberTheory/Height/Arakelov/SiegelsLemma.lean#L67)
+- [Source of `Submodule.exists_ne_zero_mem_intPoints_norm_le` in TauCeti/NumberTheory/Height/Arakelov/SiegelsLemma.lean](https://github.com/TauCetiProject/TauCeti/blob/cd41bffcb343151b3e58c89392e206b11fe78c1c/TauCeti/NumberTheory/Height/Arakelov/SiegelsLemma.lean#L67)

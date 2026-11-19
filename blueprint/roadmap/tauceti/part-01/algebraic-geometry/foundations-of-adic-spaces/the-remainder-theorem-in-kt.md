@@ -28,9 +28,9 @@ Its statement uses no other declaration mapped here.
 
 ## Proof depends on
 
-- [TauCeti.IsNormMulUnit](../../ring-theory/part-01/restricted-power-series-and-tate-algebras/part-01/tauceti-isnormmulunit.md)
-- [TauCeti.PowerSeries.IsMulDistinguished](../../ring-theory/part-01/restricted-power-series-and-tate-algebras/part-01/tauceti-powerseries-ismuldistinguished.md)
-- [The Weierstrass division estimate for a multiplicatively distinguished divisor](../../ring-theory/part-01/restricted-power-series-and-tate-algebras/part-01/the-weierstrass-division-estimate-for-a-multipli.md)
+- [TauCeti.IsNormMulUnit](../../ring-theory/part-01/restricted-power-series-and-tate-algebras/tauceti-isnormmulunit.md)
+- [TauCeti.PowerSeries.IsMulDistinguished](../../ring-theory/part-01/restricted-power-series-and-tate-algebras/tauceti-powerseries-ismuldistinguished.md)
+- [The Weierstrass division estimate (Bosch–Güntzer–Remmert §5.2.1, Theorem 2)](../../ring-theory/part-01/restricted-power-series-and-tate-algebras/the-weierstrass-division-estimate-bosch-guntzer.md)
 
 ## Lean
 
@@ -39,4 +39,4 @@ Formalized in Tau Ceti as [`TauCeti.ValuationSpectrum.weightedX_sub_weightedC_dv
 ## Sources
 
 - [Tau Ceti documentation: `TauCeti.ValuationSpectrum.weightedX_sub_weightedC_dvd_sub_weightedC_evalAtHom`](https://taucetiproject.org/docs/TauCeti/AlgebraicGeometry/AdicSpace/Spa/Polydisc/ClassicalPoint.html#TauCeti.ValuationSpectrum.weightedX_sub_weightedC_dvd_sub_weightedC_evalAtHom)
-- [Source of `TauCeti.ValuationSpectrum.weightedX_sub_weightedC_dvd_sub_weightedC_evalAtHom` in TauCeti/AlgebraicGeometry/AdicSpace/Spa/Polydisc/ClassicalPoint.lean](https://github.com/TauCetiProject/TauCeti/blob/a6027b1d24fcb935c53bd5b50d11b40991cda418/TauCeti/AlgebraicGeometry/AdicSpace/Spa/Polydisc/ClassicalPoint.lean#L74)
+- [Source of `TauCeti.ValuationSpectrum.weightedX_sub_weightedC_dvd_sub_weightedC_evalAtHom` in TauCeti/AlgebraicGeometry/AdicSpace/Spa/Polydisc/ClassicalPoint.lean](https://github.com/TauCetiProject/TauCeti/blob/cd41bffcb343151b3e58c89392e206b11fe78c1c/TauCeti/AlgebraicGeometry/AdicSpace/Spa/Polydisc/ClassicalPoint.lean#L74)

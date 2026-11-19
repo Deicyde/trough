@@ -1,0 +1,28 @@
+{
+ "schema": "trough-ledger/v1",
+ "library": "CSLib",
+ "repo": "leanprover/cslib",
+ "rev": "86d560b6cbb379bd82512424cbcd2a915a1565e7",
+ "module": "Cslib.Foundations.Semantics.LTS.Reverse",
+ "file": "Cslib/Foundations/Semantics/LTS/Reverse.lean",
+ "public": [
+  {"name": "Cslib.LTS.reverse", "kind": "def", "line": 35},
+  {"name": "Cslib.LTS.reverse_tr", "kind": "theorem", "line": 40},
+  {"name": "Cslib.LTS.reverse_reverse", "kind": "theorem", "line": 45},
+  {"name": "Cslib.LTS.reverse_involutive", "kind": "theorem", "line": 48},
+  {"name": "Cslib.LTS.Execution.reverse", "kind": "theorem", "line": 51},
+  {"name": "Cslib.LTS.reverse_execution", "kind": "theorem", "line": 61},
+  {"name": "Cslib.LTS.reverse_mTr", "kind": "theorem", "line": 68},
+  {"name": "Cslib.LTS.reverse_canReach", "kind": "theorem", "line": 75},
+  {"name": "Cslib.LTS.reverse_unlabelledTr", "kind": "theorem", "line": 82},
+  {"name": "Cslib.LTS.reverse_image", "kind": "theorem", "line": 87},
+  {"name": "Cslib.LTS.mem_reverse_image", "kind": "theorem", "line": 91},
+  {"name": "Cslib.LTS.reverse_imageMultistep", "kind": "theorem", "line": 96},
+  {"name": "Cslib.LTS.mem_reverse_imageMultistep", "kind": "theorem", "line": 101},
+  {"name": "Cslib.LTS.reverse_hasOutLabel", "kind": "theorem", "line": 107},
+  {"name": "Cslib.LTS.reverse_boundedUpTo", "kind": "theorem", "line": 112}
+ ],
+ "private": [],
+ "missing": [],
+ "unread": "Unnamed instances, the names an `alias ⟨…⟩` command gives, and the names Lean generates for a declaration (constructors, recursors, derived instances) are not read from the source, so they are not listed."
+}

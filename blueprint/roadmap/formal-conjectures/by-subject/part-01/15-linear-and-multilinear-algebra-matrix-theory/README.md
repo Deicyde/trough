@@ -7,7 +7,7 @@ The 20 problems with a statement whose `AMS` attribute names 15, Linear and mult
 - [Central factorial numbers: $((2n)!!)^2$](../../../oeis/part-01/central-factorial-numbers-2n-2.md)
 - [Determinant of Hankel matrix of the first $2n-1$ prime numbers](../../../oeis/part-02/determinant-of-hankel-matrix-of-the-first-2n-1-p.md)
 - [Catalan-Larcombe-French sequence](../../../oeis/part-03/catalan-larcombe-french-sequence.md)
-- [Numerator of $1/\det(M)$ for $M\[i,j\] = 1/\operatorname{lcm}(i,j)$](../../../oeis/part-03/numerator-of-1-det-m-for-m-i-j-1-lcm-i-j.md)
+- [Numerator of $1/\det(M)$ for $M[i,j] = 1/\operatorname{lcm}(i,j)$](../../../oeis/part-03/numerator-of-1-det-m-for-m-i-j-1-lcm-i-j.md)
 - [Determinant of matrix with entries indicating primality of $i^2 + j^2$](../../../oeis/part-04/determinant-of-matrix-with-entries-indicating-pr.md)
 - [Butson-type Hadamard matrices](../../../wikipedia/part-02/butson-type-hadamard-matrices.md)
 - [Determinantal conjecture](../../../wikipedia/part-02/determinantal-conjecture.md)

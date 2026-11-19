@@ -561,3 +561,4 @@ theorem blockSensitivity_le_card (f : BooleanFunction n) : blockSensitivity f â‰
 ## Sources
 
 - [Cslib/Computability/QueryComplexity/Measures.lean at 86d560b6](https://github.com/leanprover/cslib/blob/86d560b6cbb379bd82512424cbcd2a915a1565e7/Cslib/Computability/QueryComplexity/Measures.lean)
+- [Declaration ledger](../../../../sources/cslib/Cslib.Computability.QueryComplexity.Measures.json)

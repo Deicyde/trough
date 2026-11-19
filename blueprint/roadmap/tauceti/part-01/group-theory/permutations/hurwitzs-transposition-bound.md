@@ -56,4 +56,4 @@ TauCeti.card_add_orbitCount_le_length_add_two_mul_card_orbits.{u_1} {α : Type u
 ## Sources
 
 - [Tau Ceti documentation: `TauCeti.card_add_orbitCount_le_length_add_two`](https://taucetiproject.org/docs/TauCeti/GroupTheory/Perm/SwapFactors.html#TauCeti.card_add_orbitCount_le_length_add_two)
-- [Source of `TauCeti.card_add_orbitCount_le_length_add_two` in TauCeti/GroupTheory/Perm/SwapFactors.lean](https://github.com/TauCetiProject/TauCeti/blob/a6027b1d24fcb935c53bd5b50d11b40991cda418/TauCeti/GroupTheory/Perm/SwapFactors.lean#L583)
+- [Source of `TauCeti.card_add_orbitCount_le_length_add_two` in TauCeti/GroupTheory/Perm/SwapFactors.lean](https://github.com/TauCetiProject/TauCeti/blob/cd41bffcb343151b3e58c89392e206b11fe78c1c/TauCeti/GroupTheory/Perm/SwapFactors.lean#L579)

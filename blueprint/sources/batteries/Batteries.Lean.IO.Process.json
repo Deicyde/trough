@@ -1,0 +1,15 @@
+{
+ "schema": "trough-ledger/v1",
+ "library": "Batteries",
+ "repo": "leanprover-community/batteries",
+ "rev": "b4b25a3886a16daacaf6615c2eea7170a6e8f458",
+ "module": "Batteries.Lean.IO.Process",
+ "file": "Batteries/Lean/IO/Process.lean",
+ "public": [
+  {"name": "IO.Process.runCmdWithInput'", "kind": "def", "line": 22},
+  {"name": "IO.Process.runCmdWithInput", "kind": "def", "line": 42}
+ ],
+ "private": [],
+ "missing": [],
+ "unread": "Unnamed instances, the names an `alias ⟨…⟩` command gives, and the names Lean generates for a declaration (constructors, recursors, derived instances) are not read from the source, so they are not listed."
+}

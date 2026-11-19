@@ -25,7 +25,7 @@ Its statement uses no other declaration mapped here.
 
 ## Proof depends on
 
-- [Noshiro--Warschawski criterion](../../part-02/calculus/part-02/noshiro-warschawski-criterion.md)
+- [Noshiro--Warschawski criterion](../../part-03/calculus/part-02/noshiro-warschawski-criterion.md)
 
 ## Lean
 
@@ -34,5 +34,5 @@ Formalized in Tau Ceti as [`TauCeti.injOn_schwarzChristoffelPrimitive_of_sum_abs
 ## Sources
 
 - [Tau Ceti documentation: `TauCeti.injOn_schwarzChristoffelPrimitive_of_sum_abs_le_one`](https://taucetiproject.org/docs/TauCeti/Analysis/Complex/Conformal/SchwarzChristoffel/Univalence.html#TauCeti.injOn_schwarzChristoffelPrimitive_of_sum_abs_le_one)
-- [Source of `TauCeti.injOn_schwarzChristoffelPrimitive_of_sum_abs_le_one` in TauCeti/Analysis/Complex/Conformal/SchwarzChristoffel/Univalence.lean](https://github.com/TauCetiProject/TauCeti/blob/a6027b1d24fcb935c53bd5b50d11b40991cda418/TauCeti/Analysis/Complex/Conformal/SchwarzChristoffel/Univalence.lean#L74)
-- [Tau Ceti roadmap status: Conformal mapping and the geometric theory of holomorphic functions](https://github.com/TauCetiProject/TauCetiRoadmap/blob/9f7c032adaf1b838e8183d63ff3cfa886d061cb3/Completed/ConformalMapping/STATUS.md)
+- [Source of `TauCeti.injOn_schwarzChristoffelPrimitive_of_sum_abs_le_one` in TauCeti/Analysis/Complex/Conformal/SchwarzChristoffel/Univalence.lean](https://github.com/TauCetiProject/TauCeti/blob/cd41bffcb343151b3e58c89392e206b11fe78c1c/TauCeti/Analysis/Complex/Conformal/SchwarzChristoffel/Univalence.lean#L74)
+- [Tau Ceti roadmap status: Conformal mapping and the geometric theory of holomorphic functions](https://github.com/TauCetiProject/TauCetiRoadmap/blob/612845ab80fb9c2b9bee724a156756ee78031591/Completed/ConformalMapping/STATUS.md)

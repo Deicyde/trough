@@ -28,5 +28,5 @@ Formalized in Tau Ceti as [`TauCeti.ExactStructure.Ext1`](https://taucetiproject
 ## Sources
 
 - [Tau Ceti documentation: `TauCeti.ExactStructure.Ext1`](https://taucetiproject.org/docs/TauCeti/CategoryTheory/Exact/YonedaExt/Basic.html#TauCeti.ExactStructure.Ext1)
-- [Source of `TauCeti.ExactStructure.Ext1` in TauCeti/CategoryTheory/Exact/YonedaExt/Basic.lean](https://github.com/TauCetiProject/TauCeti/blob/a6027b1d24fcb935c53bd5b50d11b40991cda418/TauCeti/CategoryTheory/Exact/YonedaExt/Basic.lean#L327)
-- [Tau Ceti roadmap status: Representation theory](https://github.com/TauCetiProject/TauCetiRoadmap/blob/9f7c032adaf1b838e8183d63ff3cfa886d061cb3/TauCetiRoadmap/RepresentationTheory/STATUS.md)
+- [Source of `TauCeti.ExactStructure.Ext1` in TauCeti/CategoryTheory/Exact/YonedaExt/Basic.lean](https://github.com/TauCetiProject/TauCeti/blob/cd41bffcb343151b3e58c89392e206b11fe78c1c/TauCeti/CategoryTheory/Exact/YonedaExt/Basic.lean#L327)
+- [Tau Ceti roadmap status: Representation theory](https://github.com/TauCetiProject/TauCetiRoadmap/blob/612845ab80fb9c2b9bee724a156756ee78031591/TauCetiRoadmap/RepresentationTheory/STATUS.md)

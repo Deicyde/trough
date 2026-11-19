@@ -39,4 +39,4 @@ IntermediateField.isGalois_fixedField.{u_1, u_2} {K : Type u_1} {M : Type u_2} [
 ## Sources
 
 - [Tau Ceti documentation: `IntermediateField.finiteDimensional_fixedField`](https://taucetiproject.org/docs/TauCeti/FieldTheory/Galois/FixedField.html#IntermediateField.finiteDimensional_fixedField)
-- [Source of `IntermediateField.finiteDimensional_fixedField` in TauCeti/FieldTheory/Galois/FixedField.lean](https://github.com/TauCetiProject/TauCeti/blob/a6027b1d24fcb935c53bd5b50d11b40991cda418/TauCeti/FieldTheory/Galois/FixedField.lean#L171)
+- [Source of `IntermediateField.finiteDimensional_fixedField` in TauCeti/FieldTheory/Galois/FixedField.lean](https://github.com/TauCetiProject/TauCeti/blob/cd41bffcb343151b3e58c89392e206b11fe78c1c/TauCeti/FieldTheory/Galois/FixedField.lean#L171)

@@ -34,13 +34,13 @@ Its statement uses no other declaration mapped here.
 
 ## Proof depends on
 
-- [Cartan's formula](../../../analysis/part-02/calculus/part-01/cartans-formula.md)
+- [Cartan's formula](../../../analysis/part-03/calculus/part-01/cartans-formula.md)
 
 ## Lean
 
-Formalized in Tau Ceti as [`TauCeti.exists_diffeomorph_eventually_compContinuousLinearMap_fderiv_eq_smul_of_extDeriv_eq`](https://taucetiproject.org/docs/TauCeti/Geometry/Contact/Darboux.html#TauCeti.exists_diffeomorph_eventually_compContinuousLinearMap_fderiv_eq_smul_of_extDeriv_eq).
+Formalized in Tau Ceti as [`TauCeti.exists_diffeomorph_eventually_compContinuousLinearMap_fderiv_eq_smul_of_extDeriv_eq`](https://taucetiproject.org/docs/TauCeti/Geometry/Contact/Darboux/Basic.html#TauCeti.exists_diffeomorph_eventually_compContinuousLinearMap_fderiv_eq_smul_of_extDeriv_eq).
 
 ## Sources
 
-- [Tau Ceti documentation: `TauCeti.exists_diffeomorph_eventually_compContinuousLinearMap_fderiv_eq_smul_of_extDeriv_eq`](https://taucetiproject.org/docs/TauCeti/Geometry/Contact/Darboux.html#TauCeti.exists_diffeomorph_eventually_compContinuousLinearMap_fderiv_eq_smul_of_extDeriv_eq)
-- [Source of `TauCeti.exists_diffeomorph_eventually_compContinuousLinearMap_fderiv_eq_smul_of_extDeriv_eq` in TauCeti/Geometry/Contact/Darboux.lean](https://github.com/TauCetiProject/TauCeti/blob/a6027b1d24fcb935c53bd5b50d11b40991cda418/TauCeti/Geometry/Contact/Darboux.lean#L243)
+- [Tau Ceti documentation: `TauCeti.exists_diffeomorph_eventually_compContinuousLinearMap_fderiv_eq_smul_of_extDeriv_eq`](https://taucetiproject.org/docs/TauCeti/Geometry/Contact/Darboux/Basic.html#TauCeti.exists_diffeomorph_eventually_compContinuousLinearMap_fderiv_eq_smul_of_extDeriv_eq)
+- [Source of `TauCeti.exists_diffeomorph_eventually_compContinuousLinearMap_fderiv_eq_smul_of_extDeriv_eq` in TauCeti/Geometry/Contact/Darboux/Basic.lean](https://github.com/TauCetiProject/TauCeti/blob/cd41bffcb343151b3e58c89392e206b11fe78c1c/TauCeti/Geometry/Contact/Darboux/Basic.lean#L251)

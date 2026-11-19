@@ -24,7 +24,6 @@ CategoryTheory.Functor.isBalanced_iff_isPivotal.{v₁, v₂, u₁, u₂} {C : Ty
 ## Depends on
 
 - [CategoryTheory.Functor.IsBalanced](categorytheory-functor-isbalanced.md)
-- [TauCeti.BalancedCategory](../pivotal-and-spherical-categories/tauceti-balancedcategory.md)
 
 ## Lean
 
@@ -33,5 +32,5 @@ Formalized in Tau Ceti as [`CategoryTheory.Functor.isBalanced_iff_isPivotal`](ht
 ## Sources
 
 - [Tau Ceti documentation: `CategoryTheory.Functor.isBalanced_iff_isPivotal`](https://taucetiproject.org/docs/TauCeti/CategoryTheory/Monoidal/Pivotal/Functor/Balanced.html#CategoryTheory.Functor.isBalanced_iff_isPivotal)
-- [Source of `CategoryTheory.Functor.isBalanced_iff_isPivotal` in TauCeti/CategoryTheory/Monoidal/Pivotal/Functor/Balanced.lean](https://github.com/TauCetiProject/TauCeti/blob/a6027b1d24fcb935c53bd5b50d11b40991cda418/TauCeti/CategoryTheory/Monoidal/Pivotal/Functor/Balanced.lean#L68)
-- [Tau Ceti roadmap status: Diagrammatic coherence for monoidal categories and duality](https://github.com/TauCetiProject/TauCetiRoadmap/blob/9f7c032adaf1b838e8183d63ff3cfa886d061cb3/TauCetiRoadmap/DiagrammaticCoherence/STATUS.md)
+- [Source of `CategoryTheory.Functor.isBalanced_iff_isPivotal` in TauCeti/CategoryTheory/Monoidal/Pivotal/Functor/Balanced.lean](https://github.com/TauCetiProject/TauCeti/blob/cd41bffcb343151b3e58c89392e206b11fe78c1c/TauCeti/CategoryTheory/Monoidal/Pivotal/Functor/Balanced.lean#L68)
+- [Tau Ceti roadmap status: Diagrammatic coherence for monoidal categories and duality](https://github.com/TauCetiProject/TauCetiRoadmap/blob/612845ab80fb9c2b9bee724a156756ee78031591/TauCetiRoadmap/DiagrammaticCoherence/STATUS.md)

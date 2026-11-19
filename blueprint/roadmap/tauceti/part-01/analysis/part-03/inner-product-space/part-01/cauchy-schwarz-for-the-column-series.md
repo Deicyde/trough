@@ -1,7 +1,7 @@
 ---
 declaration: theorem
 origin: cited
-lean: HilbertBasis.tsum_norm_inner_mul_norm_le, ContinuousLinearMap.sq_opNorm_sq_mul_re_inner_sub_re_inner_le
+lean: HilbertBasis.tsum_norm_inner_mul_norm_le, TauCeti.norm_prod_inner_le, ContinuousLinearMap.sq_mul_re_inner_sub_re_inner_sq_le_of_opNorm_le
 statement: formalized
 proof: formalized
 ---
@@ -27,17 +27,26 @@ Formalized in Tau Ceti as [`HilbertBasis.tsum_norm_inner_mul_norm_le`](https://t
 
 ## Other forms
 
-**Cauchy–Schwarz for the defect form of an operator.** Formalized in Tau Ceti as [`ContinuousLinearMap.sq_opNorm_sq_mul_re_inner_sub_re_inner_le`](https://taucetiproject.org/docs/TauCeti/Analysis/InnerProductSpace/OpNormDefect.html#ContinuousLinearMap.sq_opNorm_sq_mul_re_inner_sub_re_inner_le).
+**Cauchy–Schwarz for a product of inner products.** Formalized in Tau Ceti as [`TauCeti.norm_prod_inner_le`](https://taucetiproject.org/docs/TauCeti/Analysis/InnerProductSpace/ProdInner.html#TauCeti.norm_prod_inner_le).
 
 ```lean
-ContinuousLinearMap.sq_opNorm_sq_mul_re_inner_sub_re_inner_le.{u_1, u_2, u_3} {𝕜 : Type u_1}
+TauCeti.norm_prod_inner_le.{u_1, u_2, u_3} {𝕜 : Type u_1} {E : Type u_2} {ι : Type u_3} [RCLike 𝕜]
+  [SeminormedAddCommGroup E] [InnerProductSpace 𝕜 E] (s : Finset ι) (m : ι → E) (η : E) :
+  ‖∏ i ∈ s, inner 𝕜 (m i) η‖ ≤ (∏ i ∈ s, ‖m i‖) * ‖η‖ ^ s.card
+```
+
+**Cauchy–Schwarz for the defect form of an operator.** Formalized in Tau Ceti as [`ContinuousLinearMap.sq_mul_re_inner_sub_re_inner_sq_le_of_opNorm_le`](https://taucetiproject.org/docs/TauCeti/Analysis/InnerProductSpace/OpNormDefect.html#ContinuousLinearMap.sq_mul_re_inner_sub_re_inner_sq_le_of_opNorm_le).
+
+```lean
+ContinuousLinearMap.sq_mul_re_inner_sub_re_inner_sq_le_of_opNorm_le.{u_1, u_2, u_3} {𝕜 : Type u_1}
   {E : Type u_2} {F : Type u_3} [RCLike 𝕜] [SeminormedAddCommGroup E] [InnerProductSpace 𝕜 E]
-  [SeminormedAddCommGroup F] [InnerProductSpace 𝕜 F] (X : F →L[𝕜] E) (v w : F) :
-  (‖X‖ ^ 2 * RCLike.re (inner 𝕜 v w) - RCLike.re (inner 𝕜 (X v) (X w))) ^ 2 ≤
-    (‖X‖ ^ 2 * ‖v‖ ^ 2 - ‖X v‖ ^ 2) * (‖X‖ ^ 2 * ‖w‖ ^ 2 - ‖X w‖ ^ 2)
+  [SeminormedAddCommGroup F] [InnerProductSpace 𝕜 F] (X : F →L[𝕜] E) {c : ℝ} (hc : ‖X‖ ≤ c)
+  (v w : F) :
+  (c ^ 2 * RCLike.re (inner 𝕜 v w) - RCLike.re (inner 𝕜 (X v) (X w))) ^ 2 ≤
+    (c ^ 2 * ‖v‖ ^ 2 - ‖X v‖ ^ 2) * (c ^ 2 * ‖w‖ ^ 2 - ‖X w‖ ^ 2)
 ```
 
 ## Sources
 
 - [Tau Ceti documentation: `HilbertBasis.tsum_norm_inner_mul_norm_le`](https://taucetiproject.org/docs/TauCeti/Analysis/InnerProductSpace/HilbertSchmidt/Columns.html#HilbertBasis.tsum_norm_inner_mul_norm_le)
-- [Source of `HilbertBasis.tsum_norm_inner_mul_norm_le` in TauCeti/Analysis/InnerProductSpace/HilbertSchmidt/Columns.lean](https://github.com/TauCetiProject/TauCeti/blob/a6027b1d24fcb935c53bd5b50d11b40991cda418/TauCeti/Analysis/InnerProductSpace/HilbertSchmidt/Columns.lean#L80)
+- [Source of `HilbertBasis.tsum_norm_inner_mul_norm_le` in TauCeti/Analysis/InnerProductSpace/HilbertSchmidt/Columns.lean](https://github.com/TauCetiProject/TauCeti/blob/cd41bffcb343151b3e58c89392e206b11fe78c1c/TauCeti/Analysis/InnerProductSpace/HilbertSchmidt/Columns.lean#L80)

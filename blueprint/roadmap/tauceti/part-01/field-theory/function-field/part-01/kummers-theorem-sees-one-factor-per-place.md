@@ -18,10 +18,9 @@ Theorem 3.3.7).
 TauCeti.Place.map_residue_eq_of_valuation_lt_one.{u, u', v, v'} {k : Type u} {k' : Type u'}
   {F : Type v} {F' : Type v'} [Field k] [Field k'] [Field F] [Field F'] [Algebra k k'] [Algebra k F]
   [Algebra k' F'] [Algebra F F'] [Algebra k F'] [IsScalarTower k k' F'] [IsScalarTower k F F']
-  [FiniteDimensional F F'] {P : TauCeti.Place k F} {P' : TauCeti.Place k' F'}
-  (hres : TauCeti.Place.restrict k F P' = P) {y : F'} (hy : y ∈ P'.integers)
-  {g₁ g₂ : Polynomial ↥P.integers} (hg₁ : g₁.Monic)
-  (hirr₁ : Irreducible (Polynomial.map (IsLocalRing.residue ↥P.integers) g₁))
+  [Algebra.IsIntegral F F'] {P : TauCeti.Place k F} {P' : TauCeti.Place k' F'}
+  (hres : TauCeti.Place.restrict k F P' = P) {y : F'} {g₁ g₂ : Polynomial ↥P.integers}
+  (hg₁ : g₁.Monic) (hirr₁ : Irreducible (Polynomial.map (IsLocalRing.residue ↥P.integers) g₁))
   (hv₁ : P'.valuation ((P.integersEval y) g₁) < 1) (hg₂ : g₂.Monic)
   (hirr₂ : Irreducible (Polynomial.map (IsLocalRing.residue ↥P.integers) g₂))
   (hv₂ : P'.valuation ((P.integersEval y) g₂) < 1) :
@@ -40,4 +39,4 @@ Formalized in Tau Ceti as [`TauCeti.Place.map_residue_eq_of_valuation_lt_one`](h
 ## Sources
 
 - [Tau Ceti documentation: `TauCeti.Place.map_residue_eq_of_valuation_lt_one`](https://taucetiproject.org/docs/TauCeti/FieldTheory/FunctionField/Place/Extension/Kummer.html#TauCeti.Place.map_residue_eq_of_valuation_lt_one)
-- [Source of `TauCeti.Place.map_residue_eq_of_valuation_lt_one` in TauCeti/FieldTheory/FunctionField/Place/Extension/Kummer.lean](https://github.com/TauCetiProject/TauCeti/blob/a6027b1d24fcb935c53bd5b50d11b40991cda418/TauCeti/FieldTheory/FunctionField/Place/Extension/Kummer.lean#L278)
+- [Source of `TauCeti.Place.map_residue_eq_of_valuation_lt_one` in TauCeti/FieldTheory/FunctionField/Place/Extension/Kummer.lean](https://github.com/TauCetiProject/TauCeti/blob/cd41bffcb343151b3e58c89392e206b11fe78c1c/TauCeti/FieldTheory/FunctionField/Place/Extension/Kummer.lean#L315)

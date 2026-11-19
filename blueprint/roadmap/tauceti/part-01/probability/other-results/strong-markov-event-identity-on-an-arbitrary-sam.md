@@ -40,4 +40,4 @@ Formalized in Tau Ceti as [`ProbabilityTheory.HasLaw.markovChainLaw_inter_preima
 ## Sources
 
 - [Tau Ceti documentation: `ProbabilityTheory.HasLaw.markovChainLaw_inter_preimage_stoppedValue_processShift`](https://taucetiproject.org/docs/TauCeti/Probability/MarkovChain/StrongMarkov/Process.html#ProbabilityTheory.HasLaw.markovChainLaw_inter_preimage_stoppedValue_processShift)
-- [Source of `ProbabilityTheory.HasLaw.markovChainLaw_inter_preimage_stoppedValue_processShift` in TauCeti/Probability/MarkovChain/StrongMarkov/Process.lean](https://github.com/TauCetiProject/TauCeti/blob/a6027b1d24fcb935c53bd5b50d11b40991cda418/TauCeti/Probability/MarkovChain/StrongMarkov/Process.lean#L92)
+- [Source of `ProbabilityTheory.HasLaw.markovChainLaw_inter_preimage_stoppedValue_processShift` in TauCeti/Probability/MarkovChain/StrongMarkov/Process.lean](https://github.com/TauCetiProject/TauCeti/blob/cd41bffcb343151b3e58c89392e206b11fe78c1c/TauCeti/Probability/MarkovChain/StrongMarkov/Process.lean#L92)

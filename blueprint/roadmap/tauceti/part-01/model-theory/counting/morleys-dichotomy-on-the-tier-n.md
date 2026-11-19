@@ -1,7 +1,7 @@
 ---
 declaration: theorem
 origin: cited
-lean: TauCeti.mk_quotient_isoSetoidOn_nat_le_aleph_one_or_hasPerfectAntichainOn, TauCeti.mk_isoClasses_le_aleph_one_or_hasPerfectAntichainOn
+lean: TauCeti.mk_quotient_isoSetoidOn_nat_le_aleph_one_or_hasPerfectAntichainOn, TauCeti.mk_isoClasses_le_aleph_one_or_hasPerfectAntichainOn, TauCeti.mk_isoClasses_modelsOfTheory_nat_le_aleph_one_or_eq_continuum, TauCeti.mk_isoClasses_modelsOfTheory_nat_le_aleph_one_or_hasPerfectAntichainOn
 statement: formalized
 proof: formalized
 ---
@@ -28,6 +28,7 @@ TauCeti.mk_quotient_isoSetoidOn_nat_le_aleph_one_or_hasPerfectAntichainOn.{u, v,
 
 ## Proof depends on
 
+- [Morley's cardinal dichotomy on the tier `ℕ`](morleys-cardinal-dichotomy-on-the-tier-n.md)
 - [Setoid.HasCantorAntichainOn](../../set-theory/borel-equivalence-relations-the-g0-dichotomy-and/setoid-hascantorantichainon.md)
 - [Silver's theorem relative to a Borel subset](../../set-theory/borel-equivalence-relations-the-g0-dichotomy-and/silvers-theorem-relative-to-a-borel-subset.md)
 - [The stratification bound](../counting-countable-models-morleys-theorem-and-th/the-stratification-bound.md)
@@ -52,7 +53,32 @@ TauCeti.mk_isoClasses_le_aleph_one_or_hasPerfectAntichainOn.{u, v} {L : FirstOrd
     (TauCeti.RelationalConfiguration.isoSetoid L ℕ).HasPerfectAntichainOn K
 ```
 
+**Morley's dichotomy for first-order theories on `ℕ` (cardinal form).** Formalized in Tau Ceti as [`TauCeti.mk_isoClasses_modelsOfTheory_nat_le_aleph_one_or_eq_continuum`](https://taucetiproject.org/docs/TauCeti/ModelTheory/Counting/FirstOrder.html#TauCeti.mk_isoClasses_modelsOfTheory_nat_le_aleph_one_or_eq_continuum).
+
+```lean
+TauCeti.mk_isoClasses_modelsOfTheory_nat_le_aleph_one_or_eq_continuum.{u, v}
+  {L : FirstOrder.Language} [L.IsRelational] [∀ (n : ℕ), Countable (L.Relations n)] (T : L.Theory) :
+  Cardinal.mk
+        (Quotient (Setoid.comap Subtype.val (TauCeti.RelationalConfiguration.isoSetoid L ℕ))) ≤
+      Cardinal.aleph 1 ∨
+    Cardinal.mk
+        (Quotient (Setoid.comap Subtype.val (TauCeti.RelationalConfiguration.isoSetoid L ℕ))) =
+      Cardinal.continuum
+```
+
+**Morley's dichotomy for first-order theories on `ℕ` (witnessed form).** Formalized in Tau Ceti as [`TauCeti.mk_isoClasses_modelsOfTheory_nat_le_aleph_one_or_hasPerfectAntichainOn`](https://taucetiproject.org/docs/TauCeti/ModelTheory/Counting/FirstOrder.html#TauCeti.mk_isoClasses_modelsOfTheory_nat_le_aleph_one_or_hasPerfectAntichainOn).
+
+```lean
+TauCeti.mk_isoClasses_modelsOfTheory_nat_le_aleph_one_or_hasPerfectAntichainOn.{u, v}
+  {L : FirstOrder.Language} [L.IsRelational] [∀ (n : ℕ), Countable (L.Relations n)] (T : L.Theory) :
+  Cardinal.mk
+        (Quotient (Setoid.comap Subtype.val (TauCeti.RelationalConfiguration.isoSetoid L ℕ))) ≤
+      Cardinal.aleph 1 ∨
+    (TauCeti.RelationalConfiguration.isoSetoid L ℕ).HasPerfectAntichainOn
+      (TauCeti.RelationalConfiguration.modelsOfTheory T)
+```
+
 ## Sources
 
 - [Tau Ceti documentation: `TauCeti.mk_quotient_isoSetoidOn_nat_le_aleph_one_or_hasPerfectAntichainOn`](https://taucetiproject.org/docs/TauCeti/ModelTheory/Counting/Morley.html#TauCeti.mk_quotient_isoSetoidOn_nat_le_aleph_one_or_hasPerfectAntichainOn)
-- [Source of `TauCeti.mk_quotient_isoSetoidOn_nat_le_aleph_one_or_hasPerfectAntichainOn` in TauCeti/ModelTheory/Counting/Morley.lean](https://github.com/TauCetiProject/TauCeti/blob/a6027b1d24fcb935c53bd5b50d11b40991cda418/TauCeti/ModelTheory/Counting/Morley.lean#L129)
+- [Source of `TauCeti.mk_quotient_isoSetoidOn_nat_le_aleph_one_or_hasPerfectAntichainOn` in TauCeti/ModelTheory/Counting/Morley.lean](https://github.com/TauCetiProject/TauCeti/blob/cd41bffcb343151b3e58c89392e206b11fe78c1c/TauCeti/ModelTheory/Counting/Morley.lean#L129)

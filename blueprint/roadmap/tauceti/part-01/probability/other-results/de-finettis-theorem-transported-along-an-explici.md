@@ -35,4 +35,4 @@ Formalized in Tau Ceti as [`TauCeti.Probability.conditionallyIID_of_exchangeable
 ## Sources
 
 - [Tau Ceti documentation: `TauCeti.Probability.conditionallyIID_of_exchangeableFamily_of_equiv_nat`](https://taucetiproject.org/docs/TauCeti/Probability/DeFinetti/CountableIndex.html#TauCeti.Probability.conditionallyIID_of_exchangeableFamily_of_equiv_nat)
-- [Source of `TauCeti.Probability.conditionallyIID_of_exchangeableFamily_of_equiv_nat` in TauCeti/Probability/DeFinetti/CountableIndex.lean](https://github.com/TauCetiProject/TauCeti/blob/a6027b1d24fcb935c53bd5b50d11b40991cda418/TauCeti/Probability/DeFinetti/CountableIndex.lean#L38)
+- [Source of `TauCeti.Probability.conditionallyIID_of_exchangeableFamily_of_equiv_nat` in TauCeti/Probability/DeFinetti/CountableIndex.lean](https://github.com/TauCetiProject/TauCeti/blob/cd41bffcb343151b3e58c89392e206b11fe78c1c/TauCeti/Probability/DeFinetti/CountableIndex.lean#L38)

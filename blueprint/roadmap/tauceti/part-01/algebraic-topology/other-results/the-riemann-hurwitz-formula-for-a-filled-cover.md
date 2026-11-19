@@ -37,4 +37,4 @@ Formalized in Tau Ceti as [`TauCeti.FilledCover.two_mul_genus_sub_two`](https://
 ## Sources
 
 - [Tau Ceti documentation: `TauCeti.FilledCover.two_mul_genus_sub_two`](https://taucetiproject.org/docs/TauCeti/AlgebraicTopology/ThricePuncturedSphere/FilledCover/Ramification.html#TauCeti.FilledCover.two_mul_genus_sub_two)
-- [Source of `TauCeti.FilledCover.two_mul_genus_sub_two` in TauCeti/AlgebraicTopology/ThricePuncturedSphere/FilledCover/Ramification.lean](https://github.com/TauCetiProject/TauCeti/blob/a6027b1d24fcb935c53bd5b50d11b40991cda418/TauCeti/AlgebraicTopology/ThricePuncturedSphere/FilledCover/Ramification.lean#L119)
+- [Source of `TauCeti.FilledCover.two_mul_genus_sub_two` in TauCeti/AlgebraicTopology/ThricePuncturedSphere/FilledCover/Ramification.lean](https://github.com/TauCetiProject/TauCeti/blob/cd41bffcb343151b3e58c89392e206b11fe78c1c/TauCeti/AlgebraicTopology/ThricePuncturedSphere/FilledCover/Ramification.lean#L119)

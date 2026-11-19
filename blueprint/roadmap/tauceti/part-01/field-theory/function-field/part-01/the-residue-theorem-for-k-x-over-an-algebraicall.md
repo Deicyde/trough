@@ -33,4 +33,4 @@ Formalized in Tau Ceti as [`TauCeti.finsum_residue_adicOfIrreducible_X_sub_C_of_
 ## Sources
 
 - [Tau Ceti documentation: `TauCeti.finsum_residue_adicOfIrreducible_X_sub_C_of_isAlgClosed`](https://taucetiproject.org/docs/TauCeti/FieldTheory/FunctionField/Differential/RatFunc/Residue.html#TauCeti.finsum_residue_adicOfIrreducible_X_sub_C_of_isAlgClosed)
-- [Source of `TauCeti.finsum_residue_adicOfIrreducible_X_sub_C_of_isAlgClosed` in TauCeti/FieldTheory/FunctionField/Differential/RatFunc/Residue.lean](https://github.com/TauCetiProject/TauCeti/blob/a6027b1d24fcb935c53bd5b50d11b40991cda418/TauCeti/FieldTheory/FunctionField/Differential/RatFunc/Residue.lean#L240)
+- [Source of `TauCeti.finsum_residue_adicOfIrreducible_X_sub_C_of_isAlgClosed` in TauCeti/FieldTheory/FunctionField/Differential/RatFunc/Residue.lean](https://github.com/TauCetiProject/TauCeti/blob/cd41bffcb343151b3e58c89392e206b11fe78c1c/TauCeti/FieldTheory/FunctionField/Differential/RatFunc/Residue.lean#L240)

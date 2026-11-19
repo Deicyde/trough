@@ -47,3 +47,4 @@ theorem reindex_language_eq {f : State ≃ State'} {nba : Buchi State Symbol} :
 ## Sources
 
 - [Cslib/Computability/Automata/NA/BuchiEquiv.lean at 86d560b6](https://github.com/leanprover/cslib/blob/86d560b6cbb379bd82512424cbcd2a915a1565e7/Cslib/Computability/Automata/NA/BuchiEquiv.lean)
+- [Declaration ledger](../../../../../sources/cslib/Cslib.Computability.Automata.NA.BuchiEquiv.json)

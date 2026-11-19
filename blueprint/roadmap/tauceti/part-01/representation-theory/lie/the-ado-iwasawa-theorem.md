@@ -43,4 +43,4 @@ TauCeti.exists_faithful_nilrepresentation.{u, v} (K : Type u) (L : Type v) [Fiel
 ## Sources
 
 - [Tau Ceti documentation: `TauCeti.adoIwasawa`](https://taucetiproject.org/docs/TauCeti/RepresentationTheory/Lie/Ado/ArbitraryField.html#TauCeti.adoIwasawa)
-- [Source of `TauCeti.adoIwasawa` in TauCeti/RepresentationTheory/Lie/Ado/ArbitraryField.lean](https://github.com/TauCetiProject/TauCeti/blob/a6027b1d24fcb935c53bd5b50d11b40991cda418/TauCeti/RepresentationTheory/Lie/Ado/ArbitraryField.lean#L111)
+- [Source of `TauCeti.adoIwasawa` in TauCeti/RepresentationTheory/Lie/Ado/ArbitraryField.lean](https://github.com/TauCetiProject/TauCeti/blob/cd41bffcb343151b3e58c89392e206b11fe78c1c/TauCeti/RepresentationTheory/Lie/Ado/ArbitraryField.lean#L111)

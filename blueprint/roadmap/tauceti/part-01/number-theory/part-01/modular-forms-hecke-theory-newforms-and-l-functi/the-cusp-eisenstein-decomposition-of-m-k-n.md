@@ -25,7 +25,7 @@ Its statement uses no other declaration mapped here.
 
 - [The Lipschitz formula along residue classes](../../part-02/modular-forms/the-lipschitz-formula-along-residue-classes.md)
 - [The Möbius difference formula](../../../algebra/part-02/other-results/the-mobius-difference-formula.md)
-- [Shimizu's inequality at two cusps](../../../analysis/part-02/complex/part-03/shimizus-inequality-at-two-cusps.md)
+- [Shimizu's inequality at two cusps](../../../analysis/part-03/complex/part-04/shimizus-inequality-at-two-cusps.md)
 - [Sturm bound for subgroups of `GL(2, ℝ)` of finite relative index in `SL(2, ℤ)` with discrete strict periods](../../part-02/modular-forms/sturm-bound-for-subgroups-of-gl-2-r-of-finite-re.md)
 
 ## Lean
@@ -35,5 +35,5 @@ Formalized in Tau Ceti as [`TauCeti.isCompl_eisensteinSubspace_range_cuspToModFo
 ## Sources
 
 - [Tau Ceti documentation: `TauCeti.isCompl_eisensteinSubspace_range_cuspToModFormCharSpace`](https://taucetiproject.org/docs/TauCeti/NumberTheory/ModularForms/EisensteinSeries/Dimension.html#TauCeti.isCompl_eisensteinSubspace_range_cuspToModFormCharSpace)
-- [Source of `TauCeti.isCompl_eisensteinSubspace_range_cuspToModFormCharSpace` in TauCeti/NumberTheory/ModularForms/EisensteinSeries/Dimension.lean](https://github.com/TauCetiProject/TauCeti/blob/a6027b1d24fcb935c53bd5b50d11b40991cda418/TauCeti/NumberTheory/ModularForms/EisensteinSeries/Dimension.lean#L202)
-- [Tau Ceti roadmap status: Modular forms — Hecke theory, newforms, and L-functions](https://github.com/TauCetiProject/TauCetiRoadmap/blob/9f7c032adaf1b838e8183d63ff3cfa886d061cb3/TauCetiRoadmap/ModularForms/STATUS.md)
+- [Source of `TauCeti.isCompl_eisensteinSubspace_range_cuspToModFormCharSpace` in TauCeti/NumberTheory/ModularForms/EisensteinSeries/Dimension.lean](https://github.com/TauCetiProject/TauCeti/blob/cd41bffcb343151b3e58c89392e206b11fe78c1c/TauCeti/NumberTheory/ModularForms/EisensteinSeries/Dimension.lean#L204)
+- [Tau Ceti roadmap status: Modular forms — Hecke theory, newforms, and L-functions](https://github.com/TauCetiProject/TauCetiRoadmap/blob/612845ab80fb9c2b9bee724a156756ee78031591/TauCetiRoadmap/ModularForms/STATUS.md)

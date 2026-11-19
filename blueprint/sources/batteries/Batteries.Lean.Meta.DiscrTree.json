@@ -1,0 +1,16 @@
+{
+ "schema": "trough-ledger/v1",
+ "library": "Batteries",
+ "repo": "leanprover-community/batteries",
+ "rev": "b4b25a3886a16daacaf6615c2eea7170a6e8f458",
+ "module": "Batteries.Lean.Meta.DiscrTree",
+ "file": "Batteries/Lean/Meta/DiscrTree.lean",
+ "public": [
+  {"name": "Lean.Meta.DiscrTree.Key.cmp", "kind": "def", "line": 23},
+  {"name": "Lean.Meta.DiscrTree.Trie.mergePreservingDuplicates", "kind": "def", "line": 41},
+  {"name": "Lean.Meta.DiscrTree.mergePreservingDuplicates", "kind": "def", "line": 59}
+ ],
+ "private": [],
+ "missing": [],
+ "unread": "Unnamed instances, the names an `alias ⟨…⟩` command gives, and the names Lean generates for a declaration (constructors, recursors, derived instances) are not read from the source, so they are not listed."
+}

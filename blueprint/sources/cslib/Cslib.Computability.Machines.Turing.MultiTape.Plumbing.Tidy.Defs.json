@@ -1,0 +1,21 @@
+{
+ "schema": "trough-ledger/v1",
+ "library": "CSLib",
+ "repo": "leanprover/cslib",
+ "rev": "86d560b6cbb379bd82512424cbcd2a915a1565e7",
+ "module": "Cslib.Computability.Machines.Turing.MultiTape.Plumbing.Tidy.Defs",
+ "file": "Cslib/Computability/Machines/Turing/MultiTape/Plumbing/Tidy/Defs.lean",
+ "public": [
+  {"name": "Turing.MultiTapeTM.ComputesTidilyInTimeAndSpace", "kind": "abbrev", "line": 50},
+  {"name": "Turing.MultiTapeTM.computesTidily_iff", "kind": "theorem", "line": 57},
+  {"name": "Turing.MultiTapeTM.ComputesTidilyInTimeAndSpace.mono", "kind": "theorem", "line": 69},
+  {"name": "Turing.MultiTapeTM.ComputesFunTidilyInTimeAndSpace", "kind": "def", "line": 80},
+  {"name": "Turing.MultiTapeTM.ComputesFunTidilyInTimeAndSpace.mono", "kind": "theorem", "line": 85},
+  {"name": "Turing.MultiTapeTM.ComputableTidilyInTimeAndSpace", "kind": "def", "line": 95},
+  {"name": "Turing.MultiTapeTM.ComputableTidilyInTimeAndSpaceOfLength", "kind": "abbrev", "line": 103},
+  {"name": "Turing.MultiTapeTM.ComputableTidilyInTimeAndSpace.mono", "kind": "theorem", "line": 109}
+ ],
+ "private": [],
+ "missing": [],
+ "unread": "Unnamed instances, the names an `alias ⟨…⟩` command gives, and the names Lean generates for a declaration (constructors, recursors, derived instances) are not read from the source, so they are not listed."
+}

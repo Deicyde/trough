@@ -11,9 +11,9 @@
                                         workflow does this on main, before generating)
 
 Everything under blueprint/roadmap/ and blueprint/links/ is generated, and so are
-blueprint/coverage/README.md, blueprint/sources/README.md and
-hooks/lean-links.json; a stale file under blueprint/roadmap/ or blueprint/links/
-is deleted.
+blueprint/coverage/README.md, blueprint/sources/README.md, the declaration
+ledgers under blueprint/sources/ (JSON files) and hooks/lean-links.json; a stale
+file under blueprint/roadmap/ or blueprint/links/, or a stale ledger, is deleted.
 """
 
 from __future__ import annotations
@@ -26,7 +26,7 @@ from pathlib import Path
 
 from collections import Counter
 
-from trough import anthropic_flt, atlas, blueprints, catalog, cfsg, cslib, ff, formal_conjectures, lean_pool, links, mathlib, openai_math, physlib, satellites, stacks, tauceti, wiki
+from trough import anthropic_flt, atlas, batteries, blueprints, catalog, cfsg, cslib, ff, formal_conjectures, lean_pool, links, mathlib, openai_math, physlib, satellites, stacks, tauceti, wiki
 from trough.vault import Container, Leaf, assign_paths, render_container, render_tree, walk
 
 ROOT = Path(__file__).resolve().parent.parent
@@ -287,6 +287,7 @@ def generate() -> dict[Path, str]:
         hosts["cslib"] = cslib_built.root
         blueprints.resolve(cslib_built, VAULT)
         files.update(render_tree(cslib_built.root, VAULT))
+        files.update({VAULT / path: text for path, text in cslib_built.files.items()})
         chapters["cslib"] = "cslib/README.md"
         lean_links["cslib"] = cslib_links
         cs = Counter(cslib_built.stats)
@@ -297,6 +298,27 @@ def generate() -> dict[Path, str]:
             f"cslib: {cs['articles']} module articles in {cs['folders']} folders and {cs['parts']} parts; "
             f"{cs['declarations']} public declarations, {cs['documented']} documented, {cs['sorry']} holding sorry; "
             f"{cs['statement_edges']} statement and {cs['proof_edges']} proof edges",
+            file=sys.stderr,
+        )
+    batteries_data = batteries.load(DATA)
+    if batteries_data:
+        batteries_built, batteries_links = batteries.chapter(batteries_data)
+        assign_paths(batteries_built.root, ROADMAP / "batteries")
+        blueprints.resolve(batteries_built, VAULT)
+        files.update(render_tree(batteries_built.root, VAULT))
+        files.update({VAULT / path: text for path, text in batteries_built.files.items()})
+        chapters["batteries"] = "batteries/README.md"
+        lean_links["batteries"] = batteries_links
+        hosts["batteries"] = batteries_built.root
+        bt = Counter(batteries_built.stats)
+        blueprint_rows.append(("Batteries", "INVENTORIED",
+                               f"[{bt['articles']:,} modules](../roadmap/batteries/README.md), one article each, with a "
+                               f"block per public declaration; {bt['listed']:,} modules that declare nothing public by "
+                               "name are listed on their folders' pages."))
+        print(
+            f"batteries: {bt['articles']} module articles in {bt['folders']} folders and {bt['parts']} parts, "
+            f"{bt['listed']} modules listed; {bt['declarations']} public declarations, {bt['documented']} documented, "
+            f"{bt['sorry']} holding sorry; {bt['statement_edges']} statement and {bt['proof_edges']} proof edges",
             file=sys.stderr,
         )
     physlib_data = physlib.load(DATA)
@@ -401,6 +423,7 @@ def generate() -> dict[Path, str]:
         atlas=atlas_data["source"]["rev"] if atlas_data else None,
         openai_math=oai_data["source"]["rev"] if oai_data else None,
         cslib=cslib_data["rev"] if cslib_data else None,
+        batteries=batteries_data["rev"] if batteries_data else None,
         physlib=physlib_data["source"]["rev"] if physlib_data else None,
         satellites=sat_stats["projects"] if sat_stats else None,
     )
@@ -418,7 +441,9 @@ def _list_of(slug: str) -> str:
 
 
 def owned() -> set[Path]:
-    return set(ROADMAP.rglob("*.md")) | {path for path in LINKS.rglob("*") if path.is_file()}
+    # The generated files under sources/ are the module catalogs' declaration ledgers, JSON files.
+    return (set(ROADMAP.rglob("*.md")) | {path for path in LINKS.rglob("*") if path.is_file()}
+            | set((VAULT / "sources").rglob("*.json")))
 
 
 def main() -> int:

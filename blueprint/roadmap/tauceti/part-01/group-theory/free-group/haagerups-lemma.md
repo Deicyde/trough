@@ -31,4 +31,4 @@ Formalized in Tau Ceti as [`FreeGroup.posSemidef_pow_norm_inv_mul`](https://tauc
 ## Sources
 
 - [Tau Ceti documentation: `FreeGroup.posSemidef_pow_norm_inv_mul`](https://taucetiproject.org/docs/TauCeti/GroupTheory/FreeGroup/GeodesicEdges.html#FreeGroup.posSemidef_pow_norm_inv_mul)
-- [Source of `FreeGroup.posSemidef_pow_norm_inv_mul` in TauCeti/GroupTheory/FreeGroup/GeodesicEdges.lean](https://github.com/TauCetiProject/TauCeti/blob/a6027b1d24fcb935c53bd5b50d11b40991cda418/TauCeti/GroupTheory/FreeGroup/GeodesicEdges.lean#L297)
+- [Source of `FreeGroup.posSemidef_pow_norm_inv_mul` in TauCeti/GroupTheory/FreeGroup/GeodesicEdges.lean](https://github.com/TauCetiProject/TauCeti/blob/cd41bffcb343151b3e58c89392e206b11fe78c1c/TauCeti/GroupTheory/FreeGroup/GeodesicEdges.lean#L297)

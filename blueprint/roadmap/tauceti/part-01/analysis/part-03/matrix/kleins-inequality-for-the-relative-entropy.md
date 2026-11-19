@@ -28,4 +28,4 @@ Formalized in Tau Ceti as [`Matrix.PosSemidef.re_trace_sub_trace_le_relativeEntr
 ## Sources
 
 - [Tau Ceti documentation: `Matrix.PosSemidef.re_trace_sub_trace_le_relativeEntropy`](https://taucetiproject.org/docs/TauCeti/Analysis/Matrix/Entropy.html#Matrix.PosSemidef.re_trace_sub_trace_le_relativeEntropy)
-- [Source of `Matrix.PosSemidef.re_trace_sub_trace_le_relativeEntropy` in TauCeti/Analysis/Matrix/Entropy.lean](https://github.com/TauCetiProject/TauCeti/blob/a6027b1d24fcb935c53bd5b50d11b40991cda418/TauCeti/Analysis/Matrix/Entropy.lean#L213)
+- [Source of `Matrix.PosSemidef.re_trace_sub_trace_le_relativeEntropy` in TauCeti/Analysis/Matrix/Entropy.lean](https://github.com/TauCetiProject/TauCeti/blob/cd41bffcb343151b3e58c89392e206b11fe78c1c/TauCeti/Analysis/Matrix/Entropy.lean#L239)

@@ -1,0 +1,26 @@
+{
+ "schema": "trough-ledger/v1",
+ "library": "Batteries",
+ "repo": "leanprover-community/batteries",
+ "rev": "b4b25a3886a16daacaf6615c2eea7170a6e8f458",
+ "module": "Batteries.Data.Stream",
+ "file": "Batteries/Data/Stream.lean",
+ "public": [
+  {"name": "Std.Stream.drop", "kind": "def", "line": 13},
+  {"name": "Std.Stream.take", "kind": "def", "line": 21},
+  {"name": "Std.Stream.fst_take_zero", "kind": "theorem", "line": 30},
+  {"name": "Std.Stream.fst_take_succ", "kind": "theorem", "line": 33},
+  {"name": "Std.Stream.snd_take_eq_drop", "kind": "theorem", "line": 39},
+  {"name": "Std.Stream.takeTR", "kind": "def", "line": 48},
+  {"name": "Std.Stream.fst_takeTR_loop", "kind": "theorem", "line": 58},
+  {"name": "Std.Stream.fst_takeTR", "kind": "theorem", "line": 64},
+  {"name": "Std.Stream.snd_takeTR_loop", "kind": "theorem", "line": 67},
+  {"name": "Std.Stream.snd_takeTR", "kind": "theorem", "line": 73},
+  {"name": "Std.Stream.take_eq_takeTR", "kind": "theorem", "line": 76},
+  {"name": "Std.List.stream_drop_eq_drop", "kind": "theorem", "line": 81},
+  {"name": "Std.List.stream_take_eq_take_drop", "kind": "theorem", "line": 89}
+ ],
+ "private": [],
+ "missing": [],
+ "unread": "Unnamed instances, the names an `alias ⟨…⟩` command gives, and the names Lean generates for a declaration (constructors, recursors, derived instances) are not read from the source, so they are not listed."
+}

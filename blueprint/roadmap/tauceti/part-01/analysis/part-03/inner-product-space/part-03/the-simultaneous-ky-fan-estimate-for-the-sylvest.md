@@ -29,7 +29,7 @@ Its statement uses no other declaration mapped here.
 
 ## Proof depends on
 
-- [The exterior reciprocal Fourier identity](../../../part-02/fourier/the-exterior-reciprocal-fourier-identity.md)
+- [The exterior reciprocal Fourier identity](../../fourier/part-01/the-exterior-reciprocal-fourier-identity.md)
 - [Ky Fan's maximum principle, attainment](../part-02/ky-fans-maximum-principle-attainment.md)
 
 ## Lean
@@ -39,4 +39,4 @@ Formalized in Tau Ceti as [`ContinuousLinearMap.mul_kyFanSum_le_pi_div_two_mul_k
 ## Sources
 
 - [Tau Ceti documentation: `ContinuousLinearMap.mul_kyFanSum_le_pi_div_two_mul_kyFanSum_sylvester_apply`](https://taucetiproject.org/docs/TauCeti/Analysis/InnerProductSpace/UnitarilyInvariantSeminorm/Sylvester/Pairwise.html#ContinuousLinearMap.mul_kyFanSum_le_pi_div_two_mul_kyFanSum_sylvester_apply)
-- [Source of `ContinuousLinearMap.mul_kyFanSum_le_pi_div_two_mul_kyFanSum_sylvester_apply` in TauCeti/Analysis/InnerProductSpace/UnitarilyInvariantSeminorm/Sylvester/Pairwise.lean](https://github.com/TauCetiProject/TauCeti/blob/a6027b1d24fcb935c53bd5b50d11b40991cda418/TauCeti/Analysis/InnerProductSpace/UnitarilyInvariantSeminorm/Sylvester/Pairwise.lean#L203)
+- [Source of `ContinuousLinearMap.mul_kyFanSum_le_pi_div_two_mul_kyFanSum_sylvester_apply` in TauCeti/Analysis/InnerProductSpace/UnitarilyInvariantSeminorm/Sylvester/Pairwise.lean](https://github.com/TauCetiProject/TauCeti/blob/cd41bffcb343151b3e58c89392e206b11fe78c1c/TauCeti/Analysis/InnerProductSpace/UnitarilyInvariantSeminorm/Sylvester/Pairwise.lean#L203)

@@ -34,4 +34,4 @@ Formalized in Tau Ceti as [`ContinuousLinearMap.mul_frobenius_le_frobenius_sylve
 ## Sources
 
 - [Tau Ceti documentation: `ContinuousLinearMap.mul_frobenius_le_frobenius_sylvester_apply`](https://taucetiproject.org/docs/TauCeti/Analysis/InnerProductSpace/UnitarilyInvariantSeminorm/Sylvester/Basic.html#ContinuousLinearMap.mul_frobenius_le_frobenius_sylvester_apply)
-- [Source of `ContinuousLinearMap.mul_frobenius_le_frobenius_sylvester_apply` in TauCeti/Analysis/InnerProductSpace/UnitarilyInvariantSeminorm/Sylvester/Basic.lean](https://github.com/TauCetiProject/TauCeti/blob/a6027b1d24fcb935c53bd5b50d11b40991cda418/TauCeti/Analysis/InnerProductSpace/UnitarilyInvariantSeminorm/Sylvester/Basic.lean#L110)
+- [Source of `ContinuousLinearMap.mul_frobenius_le_frobenius_sylvester_apply` in TauCeti/Analysis/InnerProductSpace/UnitarilyInvariantSeminorm/Sylvester/Basic.lean](https://github.com/TauCetiProject/TauCeti/blob/cd41bffcb343151b3e58c89392e206b11fe78c1c/TauCeti/Analysis/InnerProductSpace/UnitarilyInvariantSeminorm/Sylvester/Basic.lean#L110)

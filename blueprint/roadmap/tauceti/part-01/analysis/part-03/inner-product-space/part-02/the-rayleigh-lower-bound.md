@@ -32,4 +32,4 @@ Formalized in Tau Ceti as [`IsCoercive.inv_norm_formSolutionOperator_mul_norm_ap
 ## Sources
 
 - [Tau Ceti documentation: `IsCoercive.inv_norm_formSolutionOperator_mul_norm_apply_sq_le`](https://taucetiproject.org/docs/TauCeti/Analysis/InnerProductSpace/Variational/Rayleigh.html#IsCoercive.inv_norm_formSolutionOperator_mul_norm_apply_sq_le)
-- [Source of `IsCoercive.inv_norm_formSolutionOperator_mul_norm_apply_sq_le` in TauCeti/Analysis/InnerProductSpace/Variational/Rayleigh.lean](https://github.com/TauCetiProject/TauCeti/blob/a6027b1d24fcb935c53bd5b50d11b40991cda418/TauCeti/Analysis/InnerProductSpace/Variational/Rayleigh.lean#L112)
+- [Source of `IsCoercive.inv_norm_formSolutionOperator_mul_norm_apply_sq_le` in TauCeti/Analysis/InnerProductSpace/Variational/Rayleigh.lean](https://github.com/TauCetiProject/TauCeti/blob/cd41bffcb343151b3e58c89392e206b11fe78c1c/TauCeti/Analysis/InnerProductSpace/Variational/Rayleigh.lean#L112)

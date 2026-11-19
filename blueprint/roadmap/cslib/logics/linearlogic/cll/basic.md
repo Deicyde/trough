@@ -10,6 +10,7 @@ proof: formalized
 `Cslib.Logics.LinearLogic.CLL.Basic`, in [Cslib/Logics/LinearLogic/CLL/Basic.lean](https://github.com/leanprover/cslib/blob/86d560b6cbb379bd82512424cbcd2a915a1565e7/Cslib/Logics/LinearLogic/CLL/Basic.lean), by Fabrizio Montesi.
 
 > …
+>
 > ## References
 >
 > * [J.-Y. Girard, *Linear Logic: its syntax and semantics*][Girard1995]
@@ -492,3 +493,4 @@ def Proof.cutFree {Γ : Sequent Atom} : ⇓Γ → Bool
 ## Sources
 
 - [Cslib/Logics/LinearLogic/CLL/Basic.lean at 86d560b6](https://github.com/leanprover/cslib/blob/86d560b6cbb379bd82512424cbcd2a915a1565e7/Cslib/Logics/LinearLogic/CLL/Basic.lean)
+- [Declaration ledger](../../../../../sources/cslib/Cslib.Logics.LinearLogic.CLL.Basic.json)

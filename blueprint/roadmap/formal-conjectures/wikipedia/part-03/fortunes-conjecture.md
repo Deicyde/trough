@@ -7,8 +7,8 @@ statement: formalized
 
 # Fortune's Conjecture
 
-> A *Fortunate number* is the smallest integer $m > 1$ such that $p_n\\# + m$ is prime,
-> where $p_n\\#$ denotes the primorial of the $n$-th prime — equivalently, the product
+> A *Fortunate number* is the smallest integer $m > 1$ such that $p_n\# + m$ is prime,
+> where $p_n\#$ denotes the primorial of the $n$-th prime — equivalently, the product
 > of the first $n$ primes.
 >
 > **Fortune's Conjecture** asserts that every Fortunate number is prime — equivalently,

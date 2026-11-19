@@ -27,7 +27,7 @@ TauCeti.Probability.deFinetti.{u_1, u_2} {Ω : Type u_1} {α : Type u_2} {mΩ : 
 
 - [The contractable form of de Finetti's theorem via `L²` averaging](../other-results/the-contractable-form-of-de-finettis-theorem-via.md)
 - [De Finetti's theorem transported along an explicit enumeration](../other-results/de-finettis-theorem-transported-along-an-explici.md)
-- [The mean ergodic theorem for conditional expectations](../other-results/the-mean-ergodic-theorem-for-conditional-expecta.md)
+- [The mean ergodic theorem for conditional expectations](the-mean-ergodic-theorem-for-conditional-expecta.md)
 
 ## Lean
 
@@ -98,10 +98,9 @@ TauCeti.Probability.deFinetti_viaL2.{u_1, u_2} {Ω : Type u_1} {α : Type u_2} [
 
 ```lean
 TauCeti.Probability.deFinetti_viaKoopman.{u_1, u_2} {Ω : Type u_1} {α : Type u_2}
-  [MeasurableSpace Ω] [MeasurableSpace α] [StandardBorelSpace α] [Nonempty α]
-  {μ : MeasureTheory.Measure Ω} [MeasureTheory.IsFiniteMeasure μ] {X : ℕ → Ω → α}
-  (hX_meas : ∀ (n : ℕ), Measurable (X n)) (hX : TauCeti.Probability.Exchangeable μ X) :
-  TauCeti.Probability.ConditionallyIID μ X
+  [MeasurableSpace Ω] [MeasurableSpace α] [StandardBorelSpace α] {μ : MeasureTheory.Measure Ω}
+  [MeasureTheory.IsFiniteMeasure μ] {X : ℕ → Ω → α} (hX_meas : ∀ (n : ℕ), Measurable (X n))
+  (hX : TauCeti.Probability.Exchangeable μ X) : TauCeti.Probability.ConditionallyIID μ X
 ```
 
 **De Finetti's theorem, conditional form.** Formalized in Tau Ceti as [`TauCeti.Probability.conditionallyIID_of_exchangeable`](https://taucetiproject.org/docs/TauCeti/Probability/DeFinetti/Theorem.html#TauCeti.Probability.conditionallyIID_of_exchangeable).
@@ -136,20 +135,18 @@ TauCeti.Probability.exchangeable_iff_mixedIID.{u_1, u_2} {Ω : Type u_1} {α : T
 
 ```lean
 TauCeti.Probability.mixedIID_of_contractable.{u_3, u_4} {Ω : Type u_3} {α : Type u_4}
-  [MeasurableSpace Ω] [MeasurableSpace α] [StandardBorelSpace α] [Nonempty α]
-  {μ : MeasureTheory.Measure Ω} [MeasureTheory.IsFiniteMeasure μ] {X : ℕ → Ω → α}
-  (hX : TauCeti.Probability.Contractable μ X) (hX_meas : ∀ (n : ℕ), Measurable (X n)) :
-  TauCeti.Probability.MixedIID μ X
+  [MeasurableSpace Ω] [MeasurableSpace α] [StandardBorelSpace α] {μ : MeasureTheory.Measure Ω}
+  [MeasureTheory.IsFiniteMeasure μ] {X : ℕ → Ω → α} (hX : TauCeti.Probability.Contractable μ X)
+  (hX_meas : ∀ (n : ℕ), Measurable (X n)) : TauCeti.Probability.MixedIID μ X
 ```
 
 **de Finetti's theorem, mixture form: exchangeable ⇒ mixed i.i.d.** Formalized in Tau Ceti as [`TauCeti.Probability.mixedIID_of_exchangeable`](https://taucetiproject.org/docs/TauCeti/Probability/DeFinetti/BlockFactorization.html#TauCeti.Probability.mixedIID_of_exchangeable).
 
 ```lean
 TauCeti.Probability.mixedIID_of_exchangeable.{u_3, u_4} {Ω : Type u_3} {α : Type u_4}
-  [MeasurableSpace Ω] [MeasurableSpace α] [StandardBorelSpace α] [Nonempty α]
-  {μ : MeasureTheory.Measure Ω} [MeasureTheory.IsFiniteMeasure μ] {X : ℕ → Ω → α}
-  (hX : TauCeti.Probability.Exchangeable μ X) (hX_meas : ∀ (n : ℕ), Measurable (X n)) :
-  TauCeti.Probability.MixedIID μ X
+  [MeasurableSpace Ω] [MeasurableSpace α] [StandardBorelSpace α] {μ : MeasureTheory.Measure Ω}
+  [MeasureTheory.IsFiniteMeasure μ] {X : ℕ → Ω → α} (hX : TauCeti.Probability.Exchangeable μ X)
+  (hX_meas : ∀ (n : ℕ), Measurable (X n)) : TauCeti.Probability.MixedIID μ X
 ```
 
 **De Finetti's theorem, unique mixture form.** Formalized in Tau Ceti as [`TauCeti.Probability.deFinetti_mixture`](https://taucetiproject.org/docs/TauCeti/Probability/DeFinetti/Representation.html#TauCeti.Probability.deFinetti_mixture).
@@ -167,4 +164,4 @@ TauCeti.Probability.deFinetti_mixture.{u_1, u_2} {Ω : Type u_1} {α : Type u_2}
 ## Sources
 
 - [Tau Ceti documentation: `TauCeti.Probability.deFinetti`](https://taucetiproject.org/docs/TauCeti/Probability/DeFinetti/Theorem.html#TauCeti.Probability.deFinetti)
-- [Source of `TauCeti.Probability.deFinetti` in TauCeti/Probability/DeFinetti/Theorem.lean](https://github.com/TauCetiProject/TauCeti/blob/a6027b1d24fcb935c53bd5b50d11b40991cda418/TauCeti/Probability/DeFinetti/Theorem.lean#L160)
+- [Source of `TauCeti.Probability.deFinetti` in TauCeti/Probability/DeFinetti/Theorem.lean](https://github.com/TauCetiProject/TauCeti/blob/cd41bffcb343151b3e58c89392e206b11fe78c1c/TauCeti/Probability/DeFinetti/Theorem.lean#L157)

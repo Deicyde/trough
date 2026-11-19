@@ -64,10 +64,6 @@ TauCeti.exists_straightening_graphOn.{u_1} {E : Type u_1} [NormedAddCommGroup E]
 
 Its statement uses no other declaration mapped here.
 
-## Proof depends on
-
-- [Truncated Laplace transforms are entire](../../../number-theory/part-01/bounded-laplace-and-ordered-dirichlet-boundary-c/truncated-laplace-transforms-are-entire.md)
-
 ## Lean
 
 Formalized in Tau Ceti as [`TauCeti.exists_straightening_graphOn`](https://taucetiproject.org/docs/TauCeti/Analysis/Analytic/GraphStraightening.html#TauCeti.exists_straightening_graphOn).
@@ -75,5 +71,5 @@ Formalized in Tau Ceti as [`TauCeti.exists_straightening_graphOn`](https://tauce
 ## Sources
 
 - [Tau Ceti documentation: `TauCeti.exists_straightening_graphOn`](https://taucetiproject.org/docs/TauCeti/Analysis/Analytic/GraphStraightening.html#TauCeti.exists_straightening_graphOn)
-- [Source of `TauCeti.exists_straightening_graphOn` in TauCeti/Analysis/Analytic/GraphStraightening.lean](https://github.com/TauCetiProject/TauCeti/blob/a6027b1d24fcb935c53bd5b50d11b40991cda418/TauCeti/Analysis/Analytic/GraphStraightening.lean#L385)
-- [Tau Ceti roadmap status: Real-analytic geometry and semianalytic triangulation](https://github.com/TauCetiProject/TauCetiRoadmap/blob/9f7c032adaf1b838e8183d63ff3cfa886d061cb3/TauCetiRoadmap/RealAnalyticGeometry/STATUS.md)
+- [Source of `TauCeti.exists_straightening_graphOn` in TauCeti/Analysis/Analytic/GraphStraightening.lean](https://github.com/TauCetiProject/TauCeti/blob/cd41bffcb343151b3e58c89392e206b11fe78c1c/TauCeti/Analysis/Analytic/GraphStraightening.lean#L384)
+- [Tau Ceti roadmap status: Real-analytic geometry and semianalytic triangulation](https://github.com/TauCetiProject/TauCetiRoadmap/blob/612845ab80fb9c2b9bee724a156756ee78031591/TauCetiRoadmap/RealAnalyticGeometry/STATUS.md)

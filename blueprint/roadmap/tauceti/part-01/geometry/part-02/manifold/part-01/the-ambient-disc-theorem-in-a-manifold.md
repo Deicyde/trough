@@ -37,8 +37,8 @@ Its statement uses no other declaration mapped here.
 ## Proof depends on
 
 - [The disc theorem in a manifold](the-disc-theorem-in-a-manifold.md)
-- [The inverse function theorem, with a `C^n` inverse on the whole target](../../../../analysis/part-02/calculus/part-01/the-inverse-function-theorem-with-a-c-n-inverse.md)
-- [The relative ambient disc theorem](../part-02/the-relative-ambient-disc-theorem.md)
+- [The inverse function theorem for a converging family](../../../../analysis/part-03/calculus/part-01/the-inverse-function-theorem-for-a-converging-fa.md)
+- [The relative ambient disc theorem](../part-04/the-relative-ambient-disc-theorem.md)
 
 ## Lean
 
@@ -67,4 +67,4 @@ TauCeti.SmoothEmbedding.exists_diffeotopy_eqOn_of_isOrientationPreservingAt.{u_1
 ## Sources
 
 - [Tau Ceti documentation: `TauCeti.SmoothEmbedding.exists_diffeotopy_eqOn_of_det_chartAt_mul_pos`](https://taucetiproject.org/docs/TauCeti/Geometry/Manifold/SmoothIsotopy/DiscTheorem.html#TauCeti.SmoothEmbedding.exists_diffeotopy_eqOn_of_det_chartAt_mul_pos)
-- [Source of `TauCeti.SmoothEmbedding.exists_diffeotopy_eqOn_of_det_chartAt_mul_pos` in TauCeti/Geometry/Manifold/SmoothIsotopy/DiscTheorem.lean](https://github.com/TauCetiProject/TauCeti/blob/a6027b1d24fcb935c53bd5b50d11b40991cda418/TauCeti/Geometry/Manifold/SmoothIsotopy/DiscTheorem.lean#L158)
+- [Source of `TauCeti.SmoothEmbedding.exists_diffeotopy_eqOn_of_det_chartAt_mul_pos` in TauCeti/Geometry/Manifold/SmoothIsotopy/DiscTheorem.lean](https://github.com/TauCetiProject/TauCeti/blob/cd41bffcb343151b3e58c89392e206b11fe78c1c/TauCeti/Geometry/Manifold/SmoothIsotopy/DiscTheorem.lean#L154)

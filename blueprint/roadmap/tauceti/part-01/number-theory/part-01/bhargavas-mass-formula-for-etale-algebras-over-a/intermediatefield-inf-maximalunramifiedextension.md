@@ -36,5 +36,5 @@ Formalized in Tau Ceti as [`IntermediateField.inf_maximalUnramifiedExtension`](h
 ## Sources
 
 - [Tau Ceti documentation: `IntermediateField.inf_maximalUnramifiedExtension`](https://taucetiproject.org/docs/TauCeti/NumberTheory/LocalField/Unramified/IntermediateField.html#IntermediateField.inf_maximalUnramifiedExtension)
-- [Source of `IntermediateField.inf_maximalUnramifiedExtension` in TauCeti/NumberTheory/LocalField/Unramified/IntermediateField.lean](https://github.com/TauCetiProject/TauCeti/blob/a6027b1d24fcb935c53bd5b50d11b40991cda418/TauCeti/NumberTheory/LocalField/Unramified/IntermediateField.lean#L141)
-- [Tau Ceti roadmap status: Bhargava's mass formula for étale algebras over a local field](https://github.com/TauCetiProject/TauCetiRoadmap/blob/9f7c032adaf1b838e8183d63ff3cfa886d061cb3/TauCetiRoadmap/EtaleMassFormula/STATUS.md)
+- [Source of `IntermediateField.inf_maximalUnramifiedExtension` in TauCeti/NumberTheory/LocalField/Unramified/IntermediateField.lean](https://github.com/TauCetiProject/TauCeti/blob/cd41bffcb343151b3e58c89392e206b11fe78c1c/TauCeti/NumberTheory/LocalField/Unramified/IntermediateField.lean#L158)
+- [Tau Ceti roadmap status: Bhargava's mass formula for étale algebras over a local field](https://github.com/TauCetiProject/TauCetiRoadmap/blob/612845ab80fb9c2b9bee724a156756ee78031591/TauCetiRoadmap/EtaleMassFormula/STATUS.md)

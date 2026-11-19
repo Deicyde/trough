@@ -1,0 +1,21 @@
+{
+ "schema": "trough-ledger/v1",
+ "library": "CSLib",
+ "repo": "leanprover/cslib",
+ "rev": "86d560b6cbb379bd82512424cbcd2a915a1565e7",
+ "module": "Cslib.Foundations.Data.PFunctor.Free.W",
+ "file": "Cslib/Foundations/Data/PFunctor/Free/W.lean",
+ "public": [
+  {"name": "PFunctor.FreeM.toWOfIsEmpty", "kind": "def", "line": 27},
+  {"name": "PFunctor.W.toFreeM", "kind": "def", "line": 32},
+  {"name": "PFunctor.FreeM.toWOfIsEmpty_lift_bind", "kind": "theorem", "line": 36},
+  {"name": "PFunctor.FreeM.toWOfIsEmpty_lift_bind'", "kind": "theorem", "line": 41},
+  {"name": "PFunctor.W.toFreeM_mk", "kind": "theorem", "line": 47},
+  {"name": "PFunctor.FreeM.toWOfIsEmpty_toFreeM", "kind": "theorem", "line": 52},
+  {"name": "PFunctor.W.toFreeM_toWOfIsEmpty", "kind": "theorem", "line": 58},
+  {"name": "PFunctor.FreeM.equivWOfIsEmpty", "kind": "def", "line": 66}
+ ],
+ "private": [],
+ "missing": [],
+ "unread": "Unnamed instances, the names an `alias ⟨…⟩` command gives, and the names Lean generates for a declaration (constructors, recursors, derived instances) are not read from the source, so they are not listed."
+}

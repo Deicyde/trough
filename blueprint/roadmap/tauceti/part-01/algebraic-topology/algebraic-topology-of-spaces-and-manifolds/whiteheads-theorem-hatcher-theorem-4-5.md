@@ -30,5 +30,5 @@ Formalized in Tau Ceti as [`ContinuousMap.IsWeakHomotopyEquivalence.homotopyEqui
 ## Sources
 
 - [Tau Ceti documentation: `ContinuousMap.IsWeakHomotopyEquivalence.homotopyEquiv`](https://taucetiproject.org/docs/TauCeti/AlgebraicTopology/Homotopy/Whitehead.html#ContinuousMap.IsWeakHomotopyEquivalence.homotopyEquiv)
-- [Source of `ContinuousMap.IsWeakHomotopyEquivalence.homotopyEquiv` in TauCeti/AlgebraicTopology/Homotopy/Whitehead.lean](https://github.com/TauCetiProject/TauCeti/blob/a6027b1d24fcb935c53bd5b50d11b40991cda418/TauCeti/AlgebraicTopology/Homotopy/Whitehead.lean#L260)
-- [Tau Ceti roadmap status: Algebraic topology of spaces and manifolds](https://github.com/TauCetiProject/TauCetiRoadmap/blob/9f7c032adaf1b838e8183d63ff3cfa886d061cb3/TauCetiRoadmap/AlgebraicTopology/STATUS.md)
+- [Source of `ContinuousMap.IsWeakHomotopyEquivalence.homotopyEquiv` in TauCeti/AlgebraicTopology/Homotopy/Whitehead.lean](https://github.com/TauCetiProject/TauCeti/blob/cd41bffcb343151b3e58c89392e206b11fe78c1c/TauCeti/AlgebraicTopology/Homotopy/Whitehead.lean#L260)
+- [Tau Ceti roadmap status: Algebraic topology of spaces and manifolds](https://github.com/TauCetiProject/TauCetiRoadmap/blob/612845ab80fb9c2b9bee724a156756ee78031591/TauCetiRoadmap/AlgebraicTopology/STATUS.md)

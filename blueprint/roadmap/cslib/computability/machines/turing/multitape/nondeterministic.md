@@ -330,3 +330,4 @@ def prependOutputHom (ntm : MultiTapeNTM k Symbol State) (pre : List Symbol) :
 ## Sources
 
 - [Cslib/Computability/Machines/Turing/MultiTape/Nondeterministic.lean at 86d560b6](https://github.com/leanprover/cslib/blob/86d560b6cbb379bd82512424cbcd2a915a1565e7/Cslib/Computability/Machines/Turing/MultiTape/Nondeterministic.lean)
+- [Declaration ledger](../../../../../../sources/cslib/Cslib.Computability.Machines.Turing.MultiTape.Nondeterministic.json)

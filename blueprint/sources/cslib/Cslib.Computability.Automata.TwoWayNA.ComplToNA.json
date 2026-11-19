@@ -1,0 +1,25 @@
+{
+ "schema": "trough-ledger/v1",
+ "library": "CSLib",
+ "repo": "leanprover/cslib",
+ "rev": "86d560b6cbb379bd82512424cbcd2a915a1565e7",
+ "module": "Cslib.Computability.Automata.TwoWayNA.ComplToNA",
+ "file": "Cslib/Computability/Automata/TwoWayNA/ComplToNA.lean",
+ "public": [
+  {"name": "Cslib.Automata.TwoWayNA.IsStepClosed", "kind": "def", "line": 85},
+  {"name": "Cslib.Automata.TwoWayNA.IsRejectionCert", "kind": "structure", "line": 92},
+  {"name": "Cslib.Automata.TwoWayNA.IsRejectionCert.not_accepts", "kind": "theorem", "line": 104},
+  {"name": "Cslib.Automata.TwoWayNA.reachable", "kind": "def", "line": 114},
+  {"name": "Cslib.Automata.TwoWayNA.isRejectionCert_reachable", "kind": "theorem", "line": 120},
+  {"name": "Cslib.Automata.TwoWayNA.not_accepts_iff_exists_isRejectionCert", "kind": "theorem", "line": 138},
+  {"name": "Cslib.Automata.TwoWayNA.LocalOK", "kind": "def", "line": 148},
+  {"name": "Cslib.Automata.TwoWayNA.isStepClosed_iff_localOK", "kind": "theorem", "line": 154},
+  {"name": "Cslib.Automata.TwoWayNA.complToNA", "kind": "def", "line": 199},
+  {"name": "Cslib.Automata.TwoWayNA.exists_accepting_mTr_iff", "kind": "theorem", "line": 208},
+  {"name": "Cslib.Automata.TwoWayNA.accepts_complToNA_iff", "kind": "theorem", "line": 252},
+  {"name": "Cslib.Automata.TwoWayNA.language_complToNA", "kind": "theorem", "line": 278}
+ ],
+ "private": [],
+ "missing": [],
+ "unread": "Unnamed instances, the names an `alias ⟨…⟩` command gives, and the names Lean generates for a declaration (constructors, recursors, derived instances) are not read from the source, so they are not listed."
+}

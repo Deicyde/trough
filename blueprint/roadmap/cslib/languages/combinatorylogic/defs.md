@@ -172,3 +172,4 @@ Its statements use no other CSLib module's declarations.
 ## Sources
 
 - [Cslib/Languages/CombinatoryLogic/Defs.lean at 86d560b6](https://github.com/leanprover/cslib/blob/86d560b6cbb379bd82512424cbcd2a915a1565e7/Cslib/Languages/CombinatoryLogic/Defs.lean)
+- [Declaration ledger](../../../../sources/cslib/Cslib.Languages.CombinatoryLogic.Defs.json)

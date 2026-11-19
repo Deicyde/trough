@@ -29,7 +29,7 @@ ContinuousLinearMap.IsRieszProjection.rankAtStalk_range.{u_1, u_2} {I : Type u_1
 
 ## Proof depends on
 
-- [Factor theorem for entire series](../../../ring-theory/part-01/power-series/factor-theorem-for-entire-series.md)
+- [Factor theorem for entire series](../../../ring-theory/part-02/power-series/factor-theorem-for-entire-series.md)
 - [Quantitative Open Mapping Theorem](../../part-03/normed/part-02/quantitative-open-mapping-theorem.md)
 
 ## Lean
@@ -39,5 +39,5 @@ Formalized in Tau Ceti as [`ContinuousLinearMap.IsRieszProjection.rankAtStalk_ra
 ## Sources
 
 - [Tau Ceti documentation: `ContinuousLinearMap.IsRieszProjection.rankAtStalk_range`](https://taucetiproject.org/docs/TauCeti/Analysis/Normed/Operator/Nonarchimedean/RieszProjection/Multiplicity.html#ContinuousLinearMap.IsRieszProjection.rankAtStalk_range)
-- [Source of `ContinuousLinearMap.IsRieszProjection.rankAtStalk_range` in TauCeti/Analysis/Normed/Operator/Nonarchimedean/RieszProjection/Multiplicity.lean](https://github.com/TauCetiProject/TauCeti/blob/a6027b1d24fcb935c53bd5b50d11b40991cda418/TauCeti/Analysis/Normed/Operator/Nonarchimedean/RieszProjection/Multiplicity.lean#L143)
-- [Tau Ceti roadmap status: Compact operators and nonarchimedean Fredholm theory](https://github.com/TauCetiProject/TauCetiRoadmap/blob/9f7c032adaf1b838e8183d63ff3cfa886d061cb3/TauCetiRoadmap/CompactOperators/STATUS.md)
+- [Source of `ContinuousLinearMap.IsRieszProjection.rankAtStalk_range` in TauCeti/Analysis/Normed/Operator/Nonarchimedean/RieszProjection/Multiplicity.lean](https://github.com/TauCetiProject/TauCeti/blob/cd41bffcb343151b3e58c89392e206b11fe78c1c/TauCeti/Analysis/Normed/Operator/Nonarchimedean/RieszProjection/Multiplicity.lean#L143)
+- [Tau Ceti roadmap status: Compact operators and nonarchimedean Fredholm theory](https://github.com/TauCetiProject/TauCetiRoadmap/blob/612845ab80fb9c2b9bee724a156756ee78031591/TauCetiRoadmap/CompactOperators/STATUS.md)

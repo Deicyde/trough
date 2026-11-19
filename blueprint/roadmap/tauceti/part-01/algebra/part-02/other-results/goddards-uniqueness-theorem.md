@@ -46,4 +46,4 @@ TauCeti.FormalVertexAxioms.eq_field_of_ncoeff_apply_vacuum_eq.{u_1, u_2} {R : Ty
 ## Sources
 
 - [Tau Ceti documentation: `TauCeti.FormalVertexAxioms.eq_of_ncoeff_apply_vacuum_eq`](https://taucetiproject.org/docs/TauCeti/Algebra/Vertex/Axioms.html#TauCeti.FormalVertexAxioms.eq_of_ncoeff_apply_vacuum_eq)
-- [Source of `TauCeti.FormalVertexAxioms.eq_of_ncoeff_apply_vacuum_eq` in TauCeti/Algebra/Vertex/Axioms.lean](https://github.com/TauCetiProject/TauCeti/blob/a6027b1d24fcb935c53bd5b50d11b40991cda418/TauCeti/Algebra/Vertex/Axioms.lean#L202)
+- [Source of `TauCeti.FormalVertexAxioms.eq_of_ncoeff_apply_vacuum_eq` in TauCeti/Algebra/Vertex/Axioms.lean](https://github.com/TauCetiProject/TauCeti/blob/cd41bffcb343151b3e58c89392e206b11fe78c1c/TauCeti/Algebra/Vertex/Axioms.lean#L202)

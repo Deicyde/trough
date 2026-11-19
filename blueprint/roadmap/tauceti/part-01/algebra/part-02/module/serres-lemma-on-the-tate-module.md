@@ -36,4 +36,4 @@ Formalized in Tau Ceti as [`TauCeti.TateModule.eq_one_of_isOfFinOrder_of_forall_
 ## Sources
 
 - [Tau Ceti documentation: `TauCeti.TateModule.eq_one_of_isOfFinOrder_of_forall_proj_eq`](https://taucetiproject.org/docs/TauCeti/Algebra/Module/Torsion/TateModule.html#TauCeti.TateModule.eq_one_of_isOfFinOrder_of_forall_proj_eq)
-- [Source of `TauCeti.TateModule.eq_one_of_isOfFinOrder_of_forall_proj_eq` in TauCeti/Algebra/Module/Torsion/TateModule.lean](https://github.com/TauCetiProject/TauCeti/blob/a6027b1d24fcb935c53bd5b50d11b40991cda418/TauCeti/Algebra/Module/Torsion/TateModule.lean#L687)
+- [Source of `TauCeti.TateModule.eq_one_of_isOfFinOrder_of_forall_proj_eq` in TauCeti/Algebra/Module/Torsion/TateModule.lean](https://github.com/TauCetiProject/TauCeti/blob/cd41bffcb343151b3e58c89392e206b11fe78c1c/TauCeti/Algebra/Module/Torsion/TateModule.lean#L736)

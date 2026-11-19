@@ -38,5 +38,5 @@ Formalized in Tau Ceti as [`TauCeti.Probability.deFinettiEquiv`](https://tauceti
 ## Sources
 
 - [Tau Ceti documentation: `TauCeti.Probability.deFinettiEquiv`](https://taucetiproject.org/docs/TauCeti/Probability/DeFinetti/Correspondence.html#TauCeti.Probability.deFinettiEquiv)
-- [Source of `TauCeti.Probability.deFinettiEquiv` in TauCeti/Probability/DeFinetti/Correspondence.lean](https://github.com/TauCetiProject/TauCeti/blob/a6027b1d24fcb935c53bd5b50d11b40991cda418/TauCeti/Probability/DeFinetti/Correspondence.lean#L95)
-- [Tau Ceti roadmap status: Exchangeability and de Finetti](https://github.com/TauCetiProject/TauCetiRoadmap/blob/9f7c032adaf1b838e8183d63ff3cfa886d061cb3/Completed/Exchangeability/STATUS.md)
+- [Source of `TauCeti.Probability.deFinettiEquiv` in TauCeti/Probability/DeFinetti/Correspondence.lean](https://github.com/TauCetiProject/TauCeti/blob/cd41bffcb343151b3e58c89392e206b11fe78c1c/TauCeti/Probability/DeFinetti/Correspondence.lean#L93)
+- [Tau Ceti roadmap status: Exchangeability and de Finetti](https://github.com/TauCetiProject/TauCetiRoadmap/blob/612845ab80fb9c2b9bee724a156756ee78031591/Completed/Exchangeability/STATUS.md)

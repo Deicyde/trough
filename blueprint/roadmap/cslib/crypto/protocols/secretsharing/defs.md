@@ -113,3 +113,4 @@ theorem perfectlyPrivate
 ## Sources
 
 - [Cslib/Crypto/Protocols/SecretSharing/Defs.lean at 86d560b6](https://github.com/leanprover/cslib/blob/86d560b6cbb379bd82512424cbcd2a915a1565e7/Cslib/Crypto/Protocols/SecretSharing/Defs.lean)
+- [Declaration ledger](../../../../../sources/cslib/Cslib.Crypto.Protocols.SecretSharing.Defs.json)

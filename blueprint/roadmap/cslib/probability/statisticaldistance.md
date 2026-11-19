@@ -189,3 +189,4 @@ Its statements use no other CSLib module's declarations.
 ## Sources
 
 - [Cslib/Probability/StatisticalDistance.lean at 86d560b6](https://github.com/leanprover/cslib/blob/86d560b6cbb379bd82512424cbcd2a915a1565e7/Cslib/Probability/StatisticalDistance.lean)
+- [Declaration ledger](../../../sources/cslib/Cslib.Probability.StatisticalDistance.json)

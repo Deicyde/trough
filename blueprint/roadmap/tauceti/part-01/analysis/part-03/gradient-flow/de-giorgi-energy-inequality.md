@@ -34,4 +34,4 @@ Formalized in Tau Ceti as [`TauCeti.moreauYosida_add_integral_le`](https://tauce
 ## Sources
 
 - [Tau Ceti documentation: `TauCeti.moreauYosida_add_integral_le`](https://taucetiproject.org/docs/TauCeti/Analysis/GradientFlow/MoreauYosida/Derivative.html#TauCeti.moreauYosida_add_integral_le)
-- [Source of `TauCeti.moreauYosida_add_integral_le` in TauCeti/Analysis/GradientFlow/MoreauYosida/Derivative.lean](https://github.com/TauCetiProject/TauCeti/blob/a6027b1d24fcb935c53bd5b50d11b40991cda418/TauCeti/Analysis/GradientFlow/MoreauYosida/Derivative.lean#L432)
+- [Source of `TauCeti.moreauYosida_add_integral_le` in TauCeti/Analysis/GradientFlow/MoreauYosida/Derivative.lean](https://github.com/TauCetiProject/TauCeti/blob/cd41bffcb343151b3e58c89392e206b11fe78c1c/TauCeti/Analysis/GradientFlow/MoreauYosida/Derivative.lean#L420)

@@ -34,8 +34,7 @@ Its statement uses no other declaration mapped here.
 
 ## Proof depends on
 
-- [Euler's identity (`TauCeti.tprod_one_add_pow_mul_tprod_one_sub_pow_odd`)](../../../analysis/part-03/special-functions/eulers-identity-tauceti-tprod-one-add-pow-mul-tp.md)
-- [The transformation of Siegel functions under `SL₂(ℤ)`](the-transformation-of-siegel-functions-under-sl2.md)
+- [Euler's identity (`TauCeti.tprod_one_add_pow_mul_tprod_one_sub_pow_odd`)](../../../analysis/part-04/special-functions/eulers-identity-tauceti-tprod-one-add-pow-mul-tp.md)
 
 ## Lean
 
@@ -44,4 +43,5 @@ Formalized in Tau Ceti as [`TauCeti.ModularForm.prod_siegelFunction_div_zpow_smu
 ## Sources
 
 - [Tau Ceti documentation: `TauCeti.ModularForm.prod_siegelFunction_div_zpow_smul_of_mem_Gamma`](https://taucetiproject.org/docs/TauCeti/NumberTheory/ModularForms/SiegelFunction/Congruence.html#TauCeti.ModularForm.prod_siegelFunction_div_zpow_smul_of_mem_Gamma)
-- [Source of `TauCeti.ModularForm.prod_siegelFunction_div_zpow_smul_of_mem_Gamma` in TauCeti/NumberTheory/ModularForms/SiegelFunction/Congruence.lean](https://github.com/TauCetiProject/TauCeti/blob/a6027b1d24fcb935c53bd5b50d11b40991cda418/TauCeti/NumberTheory/ModularForms/SiegelFunction/Congruence.lean#L442)
+- [Source of `TauCeti.ModularForm.prod_siegelFunction_div_zpow_smul_of_mem_Gamma` in TauCeti/NumberTheory/ModularForms/SiegelFunction/Congruence.lean](https://github.com/TauCetiProject/TauCeti/blob/cd41bffcb343151b3e58c89392e206b11fe78c1c/TauCeti/NumberTheory/ModularForms/SiegelFunction/Congruence.lean#L442)
+- [Tau Ceti roadmap status: Imaginary quadratic fields: class numbers, finiteness and class number one](https://github.com/TauCetiProject/TauCetiRoadmap/blob/612845ab80fb9c2b9bee724a156756ee78031591/TauCetiRoadmap/ImaginaryQuadraticClassNumber/STATUS.md)

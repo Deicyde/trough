@@ -45,4 +45,4 @@ TauCeti.SmoothEmbedding.exists_smoothIsotopy_of_det_pos.{u_1, u_2} {E : Type u_1
 ## Sources
 
 - [Tau Ceti documentation: `TauCeti.SmoothEmbedding.exists_smoothIsotopy_of_det_mul_pos`](https://taucetiproject.org/docs/TauCeti/Geometry/Manifold/SmoothIsotopy/Euclidean.html#TauCeti.SmoothEmbedding.exists_smoothIsotopy_of_det_mul_pos)
-- [Source of `TauCeti.SmoothEmbedding.exists_smoothIsotopy_of_det_mul_pos` in TauCeti/Geometry/Manifold/SmoothIsotopy/Euclidean.lean](https://github.com/TauCetiProject/TauCeti/blob/a6027b1d24fcb935c53bd5b50d11b40991cda418/TauCeti/Geometry/Manifold/SmoothIsotopy/Euclidean.lean#L128)
+- [Source of `TauCeti.SmoothEmbedding.exists_smoothIsotopy_of_det_mul_pos` in TauCeti/Geometry/Manifold/SmoothIsotopy/Euclidean.lean](https://github.com/TauCetiProject/TauCeti/blob/cd41bffcb343151b3e58c89392e206b11fe78c1c/TauCeti/Geometry/Manifold/SmoothIsotopy/Euclidean.lean#L128)

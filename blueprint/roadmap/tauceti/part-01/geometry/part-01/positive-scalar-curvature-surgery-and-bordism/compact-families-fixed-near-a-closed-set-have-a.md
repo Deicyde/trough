@@ -67,7 +67,7 @@ Its statement uses no other declaration mapped here.
 ## Proof depends on
 
 - [Bundle.Trivialization.mem_maximalAtlas_contMDiffFiberwiseLinear_iff](../complex-manifolds-transport-quotients-bundles-an/bundle-trivialization-mem-maximalatlas-contmdiff.md)
-- [The Koszul formula](../../part-02/manifold/part-02/the-koszul-formula.md)
+- [The Koszul formula](../../part-02/manifold/part-03/the-koszul-formula.md)
 - [TauCeti.Manifold.scalarCurvatureOfJet](tauceti-manifold-scalarcurvatureofjet.md)
 
 ## Lean
@@ -77,5 +77,5 @@ Formalized in Tau Ceti as [`TauCeti.Manifold.exists_pos_forall_le_scalarCurvatur
 ## Sources
 
 - [Tau Ceti documentation: `TauCeti.Manifold.exists_pos_forall_le_scalarCurvature_of_eventually_inner_eq`](https://taucetiproject.org/docs/TauCeti/Geometry/Manifold/Riemannian/PositiveScalarCurvature/Family.html#TauCeti.Manifold.exists_pos_forall_le_scalarCurvature_of_eventually_inner_eq)
-- [Source of `TauCeti.Manifold.exists_pos_forall_le_scalarCurvature_of_eventually_inner_eq` in TauCeti/Geometry/Manifold/Riemannian/PositiveScalarCurvature/Family.lean](https://github.com/TauCetiProject/TauCeti/blob/a6027b1d24fcb935c53bd5b50d11b40991cda418/TauCeti/Geometry/Manifold/Riemannian/PositiveScalarCurvature/Family.lean#L159)
-- [Tau Ceti roadmap status: Positive scalar curvature, surgery and bordism](https://github.com/TauCetiProject/TauCetiRoadmap/blob/9f7c032adaf1b838e8183d63ff3cfa886d061cb3/TauCetiRoadmap/PositiveScalarCurvature/STATUS.md)
+- [Source of `TauCeti.Manifold.exists_pos_forall_le_scalarCurvature_of_eventually_inner_eq` in TauCeti/Geometry/Manifold/Riemannian/PositiveScalarCurvature/Family.lean](https://github.com/TauCetiProject/TauCeti/blob/cd41bffcb343151b3e58c89392e206b11fe78c1c/TauCeti/Geometry/Manifold/Riemannian/PositiveScalarCurvature/Family.lean#L159)
+- [Tau Ceti roadmap status: Positive scalar curvature, surgery and bordism](https://github.com/TauCetiProject/TauCetiRoadmap/blob/612845ab80fb9c2b9bee724a156756ee78031591/TauCetiRoadmap/PositiveScalarCurvature/STATUS.md)

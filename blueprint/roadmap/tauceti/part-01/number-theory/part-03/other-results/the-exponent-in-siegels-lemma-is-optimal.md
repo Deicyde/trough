@@ -31,4 +31,4 @@ Formalized in Tau Ceti as [`TauCeti.Int.Matrix.not_forall_exists_ne_zero_int_vec
 ## Sources
 
 - [Tau Ceti documentation: `TauCeti.Int.Matrix.not_forall_exists_ne_zero_int_vec_norm_le`](https://taucetiproject.org/docs/TauCeti/NumberTheory/SiegelsLemma.html#TauCeti.Int.Matrix.not_forall_exists_ne_zero_int_vec_norm_le)
-- [Source of `TauCeti.Int.Matrix.not_forall_exists_ne_zero_int_vec_norm_le` in TauCeti/NumberTheory/SiegelsLemma.lean](https://github.com/TauCetiProject/TauCeti/blob/a6027b1d24fcb935c53bd5b50d11b40991cda418/TauCeti/NumberTheory/SiegelsLemma.lean#L169)
+- [Source of `TauCeti.Int.Matrix.not_forall_exists_ne_zero_int_vec_norm_le` in TauCeti/NumberTheory/SiegelsLemma.lean](https://github.com/TauCetiProject/TauCeti/blob/cd41bffcb343151b3e58c89392e206b11fe78c1c/TauCeti/NumberTheory/SiegelsLemma.lean#L169)

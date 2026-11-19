@@ -35,18 +35,18 @@ TauCeti.Fuchsian.eulerChar_compactifiedQuotient_eq_index_mul_sub_ramificationDeg
 - [A CW structure lifts along a covering map](../../../algebraic-topology/classifying-spaces-of-discrete-groups/a-cw-structure-lifts-along-a-covering-map.md)
 - [Compactness for cofinite groups](compactness-for-cofinite-groups.md)
 - [The degree of a finite-index map of compactified Fuchsian quotients is the index](the-degree-of-a-finite-index-map-of-compactified.md)
-- [Euler--Poincaré for cellular chains](../../../algebraic-topology/cellular/euler-poincare-for-cellular-chains.md)
-- [Jørgensen's inequality](../../part-02/complex/part-02/jrgensens-inequality.md)
-- [The Margulis lemma for Fuchsian groups](../../part-02/complex/part-02/the-margulis-lemma-for-fuchsian-groups.md)
+- [Euler--Poincaré for cellular chains](../../../algebraic-topology/other-results/euler-poincare-for-cellular-chains.md)
+- [Jørgensen's inequality](../../part-03/complex/part-02/jrgensens-inequality.md)
+- [The Margulis lemma for Fuchsian groups](../../part-03/complex/part-03/the-margulis-lemma-for-fuchsian-groups.md)
 - [The Mayer–Vietoris isomorphism of a sphere](../../../algebraic-topology/singular/the-mayer-vietoris-isomorphism-of-a-sphere.md)
 - [The Möbius difference formula](../../../algebra/part-02/other-results/the-mobius-difference-formula.md)
-- [The open mapping theorem](../../part-02/complex/part-03/the-open-mapping-theorem.md)
+- [The open mapping theorem](../../part-03/complex/part-03/the-open-mapping-theorem.md)
 - [The orbifold area formula for a cocompact Fuchsian group](the-orbifold-area-formula-for-a-cocompact-fuchsi.md)
 - [Osgood's lemma](../../../geometry/part-01/complex-manifolds-dolbeault-theory-and-kahler-ge/osgoods-lemma.md)
 - [The quotient of a cocompact Fuchsian group has finite CW type](the-quotient-of-a-cocompact-fuchsian-group-has-f.md)
 - [The relative small-chain theorem](../../../algebraic-topology/singular/the-relative-small-chain-theorem.md)
-- [Rouché's theorem for a disc, classical form](../../part-02/complex/part-03/rouches-theorem-for-a-disc-classical-form.md)
-- [Shimizu's inequality at two cusps](../../part-02/complex/part-03/shimizus-inequality-at-two-cusps.md)
+- [Rouché's theorem for a disc, classical form](../../part-03/complex/part-04/rouches-theorem-for-a-disc-classical-form.md)
+- [Shimizu's inequality at two cusps](../../part-03/complex/part-04/shimizus-inequality-at-two-cusps.md)
 
 ## Lean
 
@@ -88,5 +88,5 @@ TauCeti.Fuchsian.eulerChar_compactifiedQuotient_eq_index_mul_sub_interior_sub_cu
 ## Sources
 
 - [Tau Ceti documentation: `TauCeti.Fuchsian.eulerChar_compactifiedQuotient_eq_index_mul_sub_ramificationDegree_of_compactSpace`](https://taucetiproject.org/docs/TauCeti/Analysis/Complex/Fuchsian/Compactification/EulerCharacteristic.html#TauCeti.Fuchsian.eulerChar_compactifiedQuotient_eq_index_mul_sub_ramificationDegree_of_compactSpace)
-- [Source of `TauCeti.Fuchsian.eulerChar_compactifiedQuotient_eq_index_mul_sub_ramificationDegree_of_compactSpace` in TauCeti/Analysis/Complex/Fuchsian/Compactification/EulerCharacteristic.lean](https://github.com/TauCetiProject/TauCeti/blob/a6027b1d24fcb935c53bd5b50d11b40991cda418/TauCeti/Analysis/Complex/Fuchsian/Compactification/EulerCharacteristic.lean#L169)
-- [Tau Ceti roadmap status: Fuchsian groups and orbifold Riemann surfaces](https://github.com/TauCetiProject/TauCetiRoadmap/blob/9f7c032adaf1b838e8183d63ff3cfa886d061cb3/TauCetiRoadmap/FuchsianOrbifolds/STATUS.md)
+- [Source of `TauCeti.Fuchsian.eulerChar_compactifiedQuotient_eq_index_mul_sub_ramificationDegree_of_compactSpace` in TauCeti/Analysis/Complex/Fuchsian/Compactification/EulerCharacteristic.lean](https://github.com/TauCetiProject/TauCeti/blob/cd41bffcb343151b3e58c89392e206b11fe78c1c/TauCeti/Analysis/Complex/Fuchsian/Compactification/EulerCharacteristic.lean#L169)
+- [Tau Ceti roadmap status: Fuchsian groups and orbifold Riemann surfaces](https://github.com/TauCetiProject/TauCetiRoadmap/blob/612845ab80fb9c2b9bee724a156756ee78031591/TauCetiRoadmap/FuchsianOrbifolds/STATUS.md)

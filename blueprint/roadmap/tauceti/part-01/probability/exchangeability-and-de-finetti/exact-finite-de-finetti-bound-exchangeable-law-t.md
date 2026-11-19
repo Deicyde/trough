@@ -9,7 +9,7 @@ proof: formalized
 # Exact finite de Finetti bound, exchangeable law to empirical mixture
 
 Under finite
-exchangeability and `m ≤ n`, the prefix law exceeds its with-replacement sample on a measurable
+exchangeability and `m ≤ n`, the prefix law exceeds its with-replacement sample on an
 event by at most the exact index-collision error.
 
 ```lean
@@ -17,7 +17,7 @@ TauCeti.Probability.ExchangeableAt.prefixLaw_le_sampleWithReplacement_add_exact_
   {α : Type u_1} [MeasurableSpace α] {Ω : Type u_2} [MeasurableSpace Ω]
   {μ : MeasureTheory.Measure Ω} [MeasureTheory.IsProbabilityMeasure μ] {X : ℕ → Ω → α} {m n : ℕ}
   (h : TauCeti.Probability.ExchangeableAt μ X n) (hmn : m ≤ n)
-  (hX : ∀ (i : Fin n), AEMeasurable (X ↑i) μ) {A : Set (Fin m → α)} (hA : MeasurableSet A) :
+  (hX : ∀ (i : Fin n), AEMeasurable (X ↑i) μ) (A : Set (Fin m → α)) :
   (TauCeti.Probability.prefixLaw μ X m) A ≤
     (TauCeti.Probability.sampleWithReplacement (TauCeti.Probability.prefixLaw μ X n)) A +
       (1 - ↑(n.descFactorial m) / ↑n ^ m)
@@ -40,7 +40,7 @@ TauCeti.Probability.ExchangeableAt.sampleWithReplacement_le_prefixLaw_add_exact_
   {α : Type u_1} [MeasurableSpace α] {Ω : Type u_2} [MeasurableSpace Ω]
   {μ : MeasureTheory.Measure Ω} [MeasureTheory.IsProbabilityMeasure μ] {X : ℕ → Ω → α} {m n : ℕ}
   (h : TauCeti.Probability.ExchangeableAt μ X n) (hmn : m ≤ n)
-  (hX : ∀ (i : Fin n), AEMeasurable (X ↑i) μ) {A : Set (Fin m → α)} (hA : MeasurableSet A) :
+  (hX : ∀ (i : Fin n), AEMeasurable (X ↑i) μ) (A : Set (Fin m → α)) :
   (TauCeti.Probability.sampleWithReplacement (TauCeti.Probability.prefixLaw μ X n)) A ≤
     (TauCeti.Probability.prefixLaw μ X m) A + (1 - ↑(n.descFactorial m) / ↑n ^ m)
 ```
@@ -48,4 +48,4 @@ TauCeti.Probability.ExchangeableAt.sampleWithReplacement_le_prefixLaw_add_exact_
 ## Sources
 
 - [Tau Ceti documentation: `TauCeti.Probability.ExchangeableAt.prefixLaw_le_sampleWithReplacement_add_exact_collision`](https://taucetiproject.org/docs/TauCeti/Probability/Exchangeability/FiniteDeFinetti.html#TauCeti.Probability.ExchangeableAt.prefixLaw_le_sampleWithReplacement_add_exact_collision)
-- [Source of `TauCeti.Probability.ExchangeableAt.prefixLaw_le_sampleWithReplacement_add_exact_collision` in TauCeti/Probability/Exchangeability/FiniteDeFinetti.lean](https://github.com/TauCetiProject/TauCeti/blob/a6027b1d24fcb935c53bd5b50d11b40991cda418/TauCeti/Probability/Exchangeability/FiniteDeFinetti.lean#L134)
+- [Source of `TauCeti.Probability.ExchangeableAt.prefixLaw_le_sampleWithReplacement_add_exact_collision` in TauCeti/Probability/Exchangeability/FiniteDeFinetti.lean](https://github.com/TauCetiProject/TauCeti/blob/cd41bffcb343151b3e58c89392e206b11fe78c1c/TauCeti/Probability/Exchangeability/FiniteDeFinetti.lean#L132)

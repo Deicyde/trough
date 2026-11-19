@@ -38,4 +38,4 @@ Formalized in Tau Ceti as [`TauCeti.IsLocalRing.sum_addVal_smul_sub_eq_finsum_ca
 ## Sources
 
 - [Tau Ceti documentation: `TauCeti.IsLocalRing.sum_addVal_smul_sub_eq_finsum_card_ramificationGroup_sub_one`](https://taucetiproject.org/docs/TauCeti/RingTheory/LocalRing/RamificationGroup.html#TauCeti.IsLocalRing.sum_addVal_smul_sub_eq_finsum_card_ramificationGroup_sub_one)
-- [Source of `TauCeti.IsLocalRing.sum_addVal_smul_sub_eq_finsum_card_ramificationGroup_sub_one` in TauCeti/RingTheory/LocalRing/RamificationGroup.lean](https://github.com/TauCetiProject/TauCeti/blob/a6027b1d24fcb935c53bd5b50d11b40991cda418/TauCeti/RingTheory/LocalRing/RamificationGroup.lean#L464)
+- [Source of `TauCeti.IsLocalRing.sum_addVal_smul_sub_eq_finsum_card_ramificationGroup_sub_one` in TauCeti/RingTheory/LocalRing/RamificationGroup.lean](https://github.com/TauCetiProject/TauCeti/blob/cd41bffcb343151b3e58c89392e206b11fe78c1c/TauCeti/RingTheory/LocalRing/RamificationGroup.lean#L464)

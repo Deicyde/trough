@@ -38,5 +38,5 @@ Formalized in Tau Ceti as [`TopCat.isColimitCompactSupportCohomologyOpensCocone`
 ## Sources
 
 - [Tau Ceti documentation: `TopCat.isColimitCompactSupportCohomologyOpensCocone`](https://taucetiproject.org/docs/TauCeti/AlgebraicTopology/Cohomology/CompactSupport/DirectedUnion.html#TopCat.isColimitCompactSupportCohomologyOpensCocone)
-- [Source of `TopCat.isColimitCompactSupportCohomologyOpensCocone` in TauCeti/AlgebraicTopology/Cohomology/CompactSupport/DirectedUnion.lean](https://github.com/TauCetiProject/TauCeti/blob/a6027b1d24fcb935c53bd5b50d11b40991cda418/TauCeti/AlgebraicTopology/Cohomology/CompactSupport/DirectedUnion.lean#L149)
-- [Tau Ceti roadmap status: Algebraic topology of spaces and manifolds](https://github.com/TauCetiProject/TauCetiRoadmap/blob/9f7c032adaf1b838e8183d63ff3cfa886d061cb3/TauCetiRoadmap/AlgebraicTopology/STATUS.md)
+- [Source of `TopCat.isColimitCompactSupportCohomologyOpensCocone` in TauCeti/AlgebraicTopology/Cohomology/CompactSupport/DirectedUnion.lean](https://github.com/TauCetiProject/TauCeti/blob/cd41bffcb343151b3e58c89392e206b11fe78c1c/TauCeti/AlgebraicTopology/Cohomology/CompactSupport/DirectedUnion.lean#L149)
+- [Tau Ceti roadmap status: Algebraic topology of spaces and manifolds](https://github.com/TauCetiProject/TauCetiRoadmap/blob/612845ab80fb9c2b9bee724a156756ee78031591/TauCetiRoadmap/AlgebraicTopology/STATUS.md)

@@ -32,8 +32,8 @@ Its statement uses no other declaration mapped here.
 ## Proof depends on
 
 - [Brunn–Minkowski for a shell](brunn-minkowski-for-a-shell.md)
-- [The Morse--Sard theorem](../../analysis/part-02/calculus/part-01/the-morse-sard-theorem.md)
-- [Rademacher's theorem for locally Lipschitz functions](../../analysis/part-02/calculus/part-02/rademachers-theorem-for-locally-lipschitz-functi.md)
+- [The Morse--Sard theorem](../../analysis/part-01/analytic-heegaard-floer-homology/the-morse-sard-theorem.md)
+- [Rademacher's theorem for locally Lipschitz functions](../../analysis/part-03/calculus/part-02/rademachers-theorem-for-locally-lipschitz-functi.md)
 
 ## Lean
 
@@ -42,5 +42,5 @@ Formalized in Tau Ceti as [`MeasureTheory.NullMeasurableSet.finrank_pow_mul_volu
 ## Sources
 
 - [Tau Ceti documentation: `MeasureTheory.NullMeasurableSet.finrank_pow_mul_volume_ball_mul_volume_pow_le_perimeter_pow`](https://taucetiproject.org/docs/TauCeti/Analysis/BoundedVariation/Isoperimetric.html#MeasureTheory.NullMeasurableSet.finrank_pow_mul_volume_ball_mul_volume_pow_le_perimeter_pow)
-- [Source of `MeasureTheory.NullMeasurableSet.finrank_pow_mul_volume_ball_mul_volume_pow_le_perimeter_pow` in TauCeti/Analysis/BoundedVariation/Isoperimetric.lean](https://github.com/TauCetiProject/TauCeti/blob/a6027b1d24fcb935c53bd5b50d11b40991cda418/TauCeti/Analysis/BoundedVariation/Isoperimetric.lean#L335)
-- [Tau Ceti roadmap status: Euclidean isoperimetry, sharp inequalities, and rigidity](https://github.com/TauCetiProject/TauCetiRoadmap/blob/9f7c032adaf1b838e8183d63ff3cfa886d061cb3/TauCetiRoadmap/Isoperimetry/STATUS.md)
+- [Source of `MeasureTheory.NullMeasurableSet.finrank_pow_mul_volume_ball_mul_volume_pow_le_perimeter_pow` in TauCeti/Analysis/BoundedVariation/Isoperimetric.lean](https://github.com/TauCetiProject/TauCeti/blob/cd41bffcb343151b3e58c89392e206b11fe78c1c/TauCeti/Analysis/BoundedVariation/Isoperimetric.lean#L335)
+- [Tau Ceti roadmap status: Euclidean isoperimetry, sharp inequalities, and rigidity](https://github.com/TauCetiProject/TauCetiRoadmap/blob/612845ab80fb9c2b9bee724a156756ee78031591/TauCetiRoadmap/Isoperimetry/STATUS.md)

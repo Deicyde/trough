@@ -1,0 +1,22 @@
+{
+ "schema": "trough-ledger/v1",
+ "library": "CSLib",
+ "repo": "leanprover/cslib",
+ "rev": "86d560b6cbb379bd82512424cbcd2a915a1565e7",
+ "module": "Cslib.Computability.Circuit.Counting",
+ "file": "Cslib/Computability/Circuit/Counting.lean",
+ "public": [
+  {"name": "Cslib.Circuits.computableFunctions", "kind": "def", "line": 49},
+  {"name": "Cslib.Circuits.mem_computableFunctions", "kind": "theorem", "line": 56},
+  {"name": "Cslib.Circuits.mem_computableFunctions_iff_ecomplexity_le", "kind": "theorem", "line": 68},
+  {"name": "Cslib.Circuits.irredundantFunctions", "kind": "def", "line": 75},
+  {"name": "Cslib.Circuits.mem_irredundantFunctions", "kind": "theorem", "line": 87},
+  {"name": "Cslib.Circuits.card_irredundantFunctions_mul_factorial_le", "kind": "theorem", "line": 172},
+  {"name": "Cslib.Circuits.card_computableFunctions_le_sum", "kind": "theorem", "line": 182},
+  {"name": "Cslib.Circuits.card_computableFunctions_mul_factorial_le", "kind": "theorem", "line": 198},
+  {"name": "Cslib.Circuits.card_computableFunctions_mul_factorial_le_of_arity_le", "kind": "theorem", "line": 225}
+ ],
+ "private": [],
+ "missing": [],
+ "unread": "Unnamed instances, the names an `alias ⟨…⟩` command gives, and the names Lean generates for a declaration (constructors, recursors, derived instances) are not read from the source, so they are not listed."
+}

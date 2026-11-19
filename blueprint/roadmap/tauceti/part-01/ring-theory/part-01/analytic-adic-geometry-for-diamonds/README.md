@@ -1,12 +1,15 @@
 # Analytic adic geometry for diamonds
 
-The declarations the status of Tau Ceti's [roadmap](https://github.com/TauCetiProject/TauCetiRoadmap/blob/9f7c032adaf1b838e8183d63ff3cfa886d061cb3/TauCetiRoadmap/AdicEtaleGeometry/README.md) names as Tau Ceti has them at commit [a6027b1d](https://github.com/TauCetiProject/TauCeti/tree/a6027b1d24fcb935c53bd5b50d11b40991cda418).
+The declarations the status of Tau Ceti's [roadmap](https://github.com/TauCetiProject/TauCetiRoadmap/blob/612845ab80fb9c2b9bee724a156756ee78031591/TauCetiRoadmap/AdicEtaleGeometry/README.md) names, and the other results named in the modules where only this status names declarations, or in folders below the areas where only it names 2 or more, as Tau Ceti has them at commit [cd41bffc](https://github.com/TauCetiProject/TauCeti/tree/cd41bffcb343151b3e58c89392e206b11fe78c1c).
 
-- [Morphisms out of the Huber pair of a finite algebra](morphisms-out-of-the-huber-pair-of-a-finite-alge.md)
-- [A finite algebra over a Tate ring is a Tate ring](a-finite-algebra-over-a-tate-ring-is-a-tate-ring.md)
-- [TauCeti.isFiniteEtaleSplit_iff_exists_section](tauceti-isfiniteetalesplit-iff-exists-section.md)
-- [TauCeti.IsFiniteEtaleSplit.of_henselianLocalRing](tauceti-isfiniteetalesplit-of-henselianlocalring.md)
-- [Henselian pairs are stable under directed colimits](henselian-pairs-are-stable-under-directed-colimi.md)
-- [TauCeti.IsFiniteEtaleSplit](tauceti-isfiniteetalesplit.md)
-- [TauCeti.Huber.IsPseudoCoherentOver](tauceti-huber-ispseudocoherentover.md)
-- [Analytic points of a pre-adic space (Wedhorn, Proposition and Definition 8.36)](analytic-points-of-a-pre-adic-space-wedhorn-prop.md)
+- [Surjectivity criterion for finite étale morphisms of Huber pairs](surjectivity-criterion-for-finite-etale-morphism.md)
+- [The fibres of a finite étale morphism of Huber pairs](the-fibres-of-a-finite-etale-morphism-of-huber-p.md)
+- [TauCeti.Huber.henselianRing_powerBoundedSubring](tauceti-huber-henselianring-powerboundedsubring.md)
+- [Chase–Harrison–Rosenberg (`TauCeti.Algebra.isFiniteEtaleTorsor_iff`)](chase-harrison-rosenberg-tauceti-algebra-isfinit.md)
+- [The base is the `G`-quotient of the adic spectrum of a finite étale torsor](the-base-is-the-g-quotient-of-the-adic-spectrum.md)
+- [Newton's method for restricted series with integral coefficients](newtons-method-for-restricted-series-with-integr.md)
+- [TauCeti.Algebra.FrameAlgebra](tauceti-algebra-framealgebra.md)
+- [The frame algebra is a torsor](the-frame-algebra-is-a-torsor.md)
+- [The analytic locus `X_a` of an adic space `X` (Wedhorn, Remark 8.37)](the-analytic-locus-x-a-of-an-adic-space-x-wedhor.md)
+- [TauCeti.Huber.IsCompletedPushout](tauceti-huber-iscompletedpushout.md)
+- [Taylor's estimate for restricted series with integral coefficients](taylors-estimate-for-restricted-series-with-inte.md)

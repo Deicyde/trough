@@ -31,4 +31,4 @@ Formalized in Tau Ceti as [`Nat.card_filter_not_dvd_choose`](https://taucetiproj
 ## Sources
 
 - [Tau Ceti documentation: `Nat.card_filter_not_dvd_choose`](https://taucetiproject.org/docs/TauCeti/Data/Nat/Choose/Digits.html#Nat.card_filter_not_dvd_choose)
-- [Source of `Nat.card_filter_not_dvd_choose` in TauCeti/Data/Nat/Choose/Digits.lean](https://github.com/TauCetiProject/TauCeti/blob/a6027b1d24fcb935c53bd5b50d11b40991cda418/TauCeti/Data/Nat/Choose/Digits.lean#L99)
+- [Source of `Nat.card_filter_not_dvd_choose` in TauCeti/Data/Nat/Choose/Digits.lean](https://github.com/TauCetiProject/TauCeti/blob/cd41bffcb343151b3e58c89392e206b11fe78c1c/TauCeti/Data/Nat/Choose/Digits.lean#L99)

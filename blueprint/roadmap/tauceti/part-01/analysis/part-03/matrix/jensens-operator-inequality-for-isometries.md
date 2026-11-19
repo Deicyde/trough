@@ -33,4 +33,4 @@ Formalized in Tau Ceti as [`Matrix.conjTranspose_mul_cfc_mul_le_cfc_conjTranspos
 ## Sources
 
 - [Tau Ceti documentation: `Matrix.conjTranspose_mul_cfc_mul_le_cfc_conjTranspose_mul_mul`](https://taucetiproject.org/docs/TauCeti/Analysis/Matrix/OperatorJensen.html#Matrix.conjTranspose_mul_cfc_mul_le_cfc_conjTranspose_mul_mul)
-- [Source of `Matrix.conjTranspose_mul_cfc_mul_le_cfc_conjTranspose_mul_mul` in TauCeti/Analysis/Matrix/OperatorJensen.lean](https://github.com/TauCetiProject/TauCeti/blob/a6027b1d24fcb935c53bd5b50d11b40991cda418/TauCeti/Analysis/Matrix/OperatorJensen.lean#L60)
+- [Source of `Matrix.conjTranspose_mul_cfc_mul_le_cfc_conjTranspose_mul_mul` in TauCeti/Analysis/Matrix/OperatorJensen.lean](https://github.com/TauCetiProject/TauCeti/blob/cd41bffcb343151b3e58c89392e206b11fe78c1c/TauCeti/Analysis/Matrix/OperatorJensen.lean#L60)

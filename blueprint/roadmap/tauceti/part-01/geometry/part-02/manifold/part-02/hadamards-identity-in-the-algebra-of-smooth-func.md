@@ -38,4 +38,4 @@ Formalized in Tau Ceti as [`TauCeti.sub_algebraMap_eq_sum_mul_sub_algebraMap`](h
 ## Sources
 
 - [Tau Ceti documentation: `TauCeti.sub_algebraMap_eq_sum_mul_sub_algebraMap`](https://taucetiproject.org/docs/TauCeti/Geometry/Manifold/Algebra/SmoothFunctions.html#TauCeti.sub_algebraMap_eq_sum_mul_sub_algebraMap)
-- [Source of `TauCeti.sub_algebraMap_eq_sum_mul_sub_algebraMap` in TauCeti/Geometry/Manifold/Algebra/SmoothFunctions.lean](https://github.com/TauCetiProject/TauCeti/blob/a6027b1d24fcb935c53bd5b50d11b40991cda418/TauCeti/Geometry/Manifold/Algebra/SmoothFunctions.lean#L203)
+- [Source of `TauCeti.sub_algebraMap_eq_sum_mul_sub_algebraMap` in TauCeti/Geometry/Manifold/Algebra/SmoothFunctions.lean](https://github.com/TauCetiProject/TauCeti/blob/cd41bffcb343151b3e58c89392e206b11fe78c1c/TauCeti/Geometry/Manifold/Algebra/SmoothFunctions.lean#L203)

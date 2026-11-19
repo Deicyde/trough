@@ -29,4 +29,4 @@ Formalized in Tau Ceti as [`MeasureTheory.AnalyticSet.measurable_of_graph`](http
 ## Sources
 
 - [Tau Ceti documentation: `MeasureTheory.AnalyticSet.measurable_of_graph`](https://taucetiproject.org/docs/TauCeti/MeasureTheory/Constructions/Polish/Graph.html#MeasureTheory.AnalyticSet.measurable_of_graph)
-- [Source of `MeasureTheory.AnalyticSet.measurable_of_graph` in TauCeti/MeasureTheory/Constructions/Polish/Graph.lean](https://github.com/TauCetiProject/TauCeti/blob/a6027b1d24fcb935c53bd5b50d11b40991cda418/TauCeti/MeasureTheory/Constructions/Polish/Graph.lean#L172)
+- [Source of `MeasureTheory.AnalyticSet.measurable_of_graph` in TauCeti/MeasureTheory/Constructions/Polish/Graph.lean](https://github.com/TauCetiProject/TauCeti/blob/cd41bffcb343151b3e58c89392e206b11fe78c1c/TauCeti/MeasureTheory/Constructions/Polish/Graph.lean#L172)

@@ -41,4 +41,4 @@ TauCeti.ClassFunction.natCard_nsmul_mem_indVirtualCharacters_isCyclic.{u, v} {k 
 ## Sources
 
 - [Tau Ceti documentation: `TauCeti.ClassFunction.natCard_nsmul_mem_indCharacterSpanInt_isCyclic`](https://taucetiproject.org/docs/TauCeti/RepresentationTheory/Induction/Artin/Basic.html#TauCeti.ClassFunction.natCard_nsmul_mem_indCharacterSpanInt_isCyclic)
-- [Source of `TauCeti.ClassFunction.natCard_nsmul_mem_indCharacterSpanInt_isCyclic` in TauCeti/RepresentationTheory/Induction/Artin/Basic.lean](https://github.com/TauCetiProject/TauCeti/blob/a6027b1d24fcb935c53bd5b50d11b40991cda418/TauCeti/RepresentationTheory/Induction/Artin/Basic.lean#L169)
+- [Source of `TauCeti.ClassFunction.natCard_nsmul_mem_indCharacterSpanInt_isCyclic` in TauCeti/RepresentationTheory/Induction/Artin/Basic.lean](https://github.com/TauCetiProject/TauCeti/blob/cd41bffcb343151b3e58c89392e206b11fe78c1c/TauCeti/RepresentationTheory/Induction/Artin/Basic.lean#L169)

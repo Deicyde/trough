@@ -51,5 +51,5 @@ Formalized in Tau Ceti as [`TauCeti.isSubmersion_fst_transverseFiberProduct`](ht
 ## Sources
 
 - [Tau Ceti documentation: `TauCeti.isSubmersion_fst_transverseFiberProduct`](https://taucetiproject.org/docs/TauCeti/Geometry/Manifold/FiberProduct/Submersion.html#TauCeti.isSubmersion_fst_transverseFiberProduct)
-- [Source of `TauCeti.isSubmersion_fst_transverseFiberProduct` in TauCeti/Geometry/Manifold/FiberProduct/Submersion.lean](https://github.com/TauCetiProject/TauCeti/blob/a6027b1d24fcb935c53bd5b50d11b40991cda418/TauCeti/Geometry/Manifold/FiberProduct/Submersion.lean#L122)
-- [Tau Ceti roadmap status: Smooth principal bundles, connections, and holonomy](https://github.com/TauCetiProject/TauCetiRoadmap/blob/9f7c032adaf1b838e8183d63ff3cfa886d061cb3/TauCetiRoadmap/SmoothBundlesConnections/STATUS.md)
+- [Source of `TauCeti.isSubmersion_fst_transverseFiberProduct` in TauCeti/Geometry/Manifold/FiberProduct/Submersion.lean](https://github.com/TauCetiProject/TauCeti/blob/cd41bffcb343151b3e58c89392e206b11fe78c1c/TauCeti/Geometry/Manifold/FiberProduct/Submersion.lean#L122)
+- [Tau Ceti roadmap status: Smooth principal bundles, connections, and holonomy](https://github.com/TauCetiProject/TauCetiRoadmap/blob/612845ab80fb9c2b9bee724a156756ee78031591/TauCetiRoadmap/SmoothBundlesConnections/STATUS.md)

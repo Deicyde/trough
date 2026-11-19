@@ -36,3 +36,4 @@ theorem prod_mtr_eq (da1 : DA State1 Symbol) (da2 : DA State2 Symbol)
 ## Sources
 
 - [Cslib/Computability/Automata/DA/Prod.lean at 86d560b6](https://github.com/leanprover/cslib/blob/86d560b6cbb379bd82512424cbcd2a915a1565e7/Cslib/Computability/Automata/DA/Prod.lean)
+- [Declaration ledger](../../../../../sources/cslib/Cslib.Computability.Automata.DA.Prod.json)

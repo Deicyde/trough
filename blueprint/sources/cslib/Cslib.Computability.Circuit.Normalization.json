@@ -1,0 +1,17 @@
+{
+ "schema": "trough-ledger/v1",
+ "library": "CSLib",
+ "repo": "leanprover/cslib",
+ "rev": "86d560b6cbb379bd82512424cbcd2a915a1565e7",
+ "module": "Cslib.Computability.Circuit.Normalization",
+ "file": "Cslib/Computability/Circuit/Normalization.lean",
+ "public": [
+  {"name": "Cslib.Circuits.Program.Irredundant", "kind": "def", "line": 25},
+  {"name": "Cslib.Circuits.Circuit.Irredundant", "kind": "def", "line": 29},
+  {"name": "Cslib.Circuits.Program.exists_irredundant", "kind": "theorem", "line": 33},
+  {"name": "Cslib.Circuits.Circuit.exists_irredundant", "kind": "theorem", "line": 63}
+ ],
+ "private": [],
+ "missing": [],
+ "unread": "Unnamed instances, the names an `alias ⟨…⟩` command gives, and the names Lean generates for a declaration (constructors, recursors, derived instances) are not read from the source, so they are not listed."
+}

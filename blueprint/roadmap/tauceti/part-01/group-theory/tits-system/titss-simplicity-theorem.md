@@ -50,4 +50,4 @@ TauCeti.TitsSystem.le_normalCore_or_eq_top_of_normal.{u} {G : Type u} [Group G]
 ## Sources
 
 - [Tau Ceti documentation: `TauCeti.TitsSystem.isSimpleGroup_quotient_normalCore`](https://taucetiproject.org/docs/TauCeti/GroupTheory/TitsSystem/NormalSubgroup.html#TauCeti.TitsSystem.isSimpleGroup_quotient_normalCore)
-- [Source of `TauCeti.TitsSystem.isSimpleGroup_quotient_normalCore` in TauCeti/GroupTheory/TitsSystem/NormalSubgroup.lean](https://github.com/TauCetiProject/TauCeti/blob/a6027b1d24fcb935c53bd5b50d11b40991cda418/TauCeti/GroupTheory/TitsSystem/NormalSubgroup.lean#L129)
+- [Source of `TauCeti.TitsSystem.isSimpleGroup_quotient_normalCore` in TauCeti/GroupTheory/TitsSystem/NormalSubgroup.lean](https://github.com/TauCetiProject/TauCeti/blob/cd41bffcb343151b3e58c89392e206b11fe78c1c/TauCeti/GroupTheory/TitsSystem/NormalSubgroup.lean#L129)

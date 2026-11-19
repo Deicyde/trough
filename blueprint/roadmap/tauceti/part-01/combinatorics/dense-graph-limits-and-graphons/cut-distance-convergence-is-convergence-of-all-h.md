@@ -35,7 +35,7 @@ TauCeti.DenseGraphLimits.tendsto_cutDist_iff_forall_homDensity_tendsto.{u_1, u_3
 
 - [A measurable function on a product factors through Boolean coordinates](a-measurable-function-on-a-product-factors-throu.md)
 - [Frieze--Kannan weak regularity](frieze-kannan-weak-regularity.md)
-- [Hoeffding's lemma, oscillation form](../../probability/moments/hoeffdings-lemma-oscillation-form.md)
+- [Hoeffding's lemma, oscillation form](../../probability/moments/part-01/hoeffdings-lemma-oscillation-form.md)
 - [TauCeti.DenseGraphLimits.cutDist_triangle](tauceti-densegraphlimits-cutdist-triangle.md)
 - [TauCeti.DenseGraphLimits.Graphon.unitIntervalRepr](tauceti-densegraphlimits-graphon-unitintervalrep.md)
 - [TauCeti.Probability.empiricalFiniteMeasure](../../probability/random-matrices/tauceti-probability-empiricalfinitemeasure.md)
@@ -47,5 +47,5 @@ Formalized in Tau Ceti as [`TauCeti.DenseGraphLimits.tendsto_cutDist_iff_forall_
 ## Sources
 
 - [Tau Ceti documentation: `TauCeti.DenseGraphLimits.tendsto_cutDist_iff_forall_homDensity_tendsto`](https://taucetiproject.org/docs/TauCeti/Combinatorics/DenseGraphLimits/GraphonSpace/Convergence.html#TauCeti.DenseGraphLimits.tendsto_cutDist_iff_forall_homDensity_tendsto)
-- [Source of `TauCeti.DenseGraphLimits.tendsto_cutDist_iff_forall_homDensity_tendsto` in TauCeti/Combinatorics/DenseGraphLimits/GraphonSpace/Convergence.lean](https://github.com/TauCetiProject/TauCeti/blob/a6027b1d24fcb935c53bd5b50d11b40991cda418/TauCeti/Combinatorics/DenseGraphLimits/GraphonSpace/Convergence.lean#L152)
-- [Tau Ceti roadmap status: Dense graph limits and graphons](https://github.com/TauCetiProject/TauCetiRoadmap/blob/9f7c032adaf1b838e8183d63ff3cfa886d061cb3/Completed/DenseGraphLimits/STATUS.md)
+- [Source of `TauCeti.DenseGraphLimits.tendsto_cutDist_iff_forall_homDensity_tendsto` in TauCeti/Combinatorics/DenseGraphLimits/GraphonSpace/Convergence.lean](https://github.com/TauCetiProject/TauCeti/blob/cd41bffcb343151b3e58c89392e206b11fe78c1c/TauCeti/Combinatorics/DenseGraphLimits/GraphonSpace/Convergence.lean#L152)
+- [Tau Ceti roadmap status: Dense graph limits and graphons](https://github.com/TauCetiProject/TauCetiRoadmap/blob/612845ab80fb9c2b9bee724a156756ee78031591/Completed/DenseGraphLimits/STATUS.md)

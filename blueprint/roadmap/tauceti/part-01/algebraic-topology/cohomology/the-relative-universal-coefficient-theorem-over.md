@@ -43,4 +43,4 @@ TopPair.singularKronecker_bijective_of_projective_homology.{w, u_1} {k : Type u_
 ## Sources
 
 - [Tau Ceti documentation: `TopPair.singularCohomologyDualEquiv`](https://taucetiproject.org/docs/TauCeti/AlgebraicTopology/Cohomology/UniversalCoefficient/Field.html#TopPair.singularCohomologyDualEquiv)
-- [Source of `TopPair.singularCohomologyDualEquiv` in TauCeti/AlgebraicTopology/Cohomology/UniversalCoefficient/Field.lean](https://github.com/TauCetiProject/TauCeti/blob/a6027b1d24fcb935c53bd5b50d11b40991cda418/TauCeti/AlgebraicTopology/Cohomology/UniversalCoefficient/Field.lean#L125)
+- [Source of `TopPair.singularCohomologyDualEquiv` in TauCeti/AlgebraicTopology/Cohomology/UniversalCoefficient/Field.lean](https://github.com/TauCetiProject/TauCeti/blob/cd41bffcb343151b3e58c89392e206b11fe78c1c/TauCeti/AlgebraicTopology/Cohomology/UniversalCoefficient/Field.lean#L125)

@@ -29,4 +29,4 @@ Formalized in Tau Ceti as [`TauCeti.TitsSystem.simple_mul_comm_of_bruhatCell_sub
 ## Sources
 
 - [Tau Ceti documentation: `TauCeti.TitsSystem.simple_mul_comm_of_bruhatCell_subset_sup`](https://taucetiproject.org/docs/TauCeti/GroupTheory/TitsSystem/NormalSubgroup.html#TauCeti.TitsSystem.simple_mul_comm_of_bruhatCell_subset_sup)
-- [Source of `TauCeti.TitsSystem.simple_mul_comm_of_bruhatCell_subset_sup` in TauCeti/GroupTheory/TitsSystem/NormalSubgroup.lean](https://github.com/TauCetiProject/TauCeti/blob/a6027b1d24fcb935c53bd5b50d11b40991cda418/TauCeti/GroupTheory/TitsSystem/NormalSubgroup.lean#L71)
+- [Source of `TauCeti.TitsSystem.simple_mul_comm_of_bruhatCell_subset_sup` in TauCeti/GroupTheory/TitsSystem/NormalSubgroup.lean](https://github.com/TauCetiProject/TauCeti/blob/cd41bffcb343151b3e58c89392e206b11fe78c1c/TauCeti/GroupTheory/TitsSystem/NormalSubgroup.lean#L71)

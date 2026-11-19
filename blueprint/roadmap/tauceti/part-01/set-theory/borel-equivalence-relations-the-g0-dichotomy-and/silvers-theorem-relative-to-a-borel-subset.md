@@ -36,4 +36,4 @@ Formalized in Tau Ceti as [`Setoid.countable_or_hasCantorAntichainOn_of_measurab
 ## Sources
 
 - [Tau Ceti documentation: `Setoid.countable_or_hasCantorAntichainOn_of_measurableSet`](https://taucetiproject.org/docs/TauCeti/SetTheory/Descriptive/Silver.html#Setoid.countable_or_hasCantorAntichainOn_of_measurableSet)
-- [Source of `Setoid.countable_or_hasCantorAntichainOn_of_measurableSet` in TauCeti/SetTheory/Descriptive/Silver.lean](https://github.com/TauCetiProject/TauCeti/blob/a6027b1d24fcb935c53bd5b50d11b40991cda418/TauCeti/SetTheory/Descriptive/Silver.lean#L159)
+- [Source of `Setoid.countable_or_hasCantorAntichainOn_of_measurableSet` in TauCeti/SetTheory/Descriptive/Silver.lean](https://github.com/TauCetiProject/TauCeti/blob/cd41bffcb343151b3e58c89392e206b11fe78c1c/TauCeti/SetTheory/Descriptive/Silver.lean#L159)

@@ -37,4 +37,4 @@ Formalized in Tau Ceti as [`WeierstrassCurve.map_quadraticTwistOfTraceNormVariab
 ## Sources
 
 - [Tau Ceti documentation: `WeierstrassCurve.map_quadraticTwistOfTraceNormVariableChange`](https://taucetiproject.org/docs/TauCeti/AlgebraicGeometry/EllipticCurve/QuadraticTwist/Basic.html#WeierstrassCurve.map_quadraticTwistOfTraceNormVariableChange)
-- [Source of `WeierstrassCurve.map_quadraticTwistOfTraceNormVariableChange` in TauCeti/AlgebraicGeometry/EllipticCurve/QuadraticTwist/Basic.lean](https://github.com/TauCetiProject/TauCeti/blob/a6027b1d24fcb935c53bd5b50d11b40991cda418/TauCeti/AlgebraicGeometry/EllipticCurve/QuadraticTwist/Basic.lean#L582)
+- [Source of `WeierstrassCurve.map_quadraticTwistOfTraceNormVariableChange` in TauCeti/AlgebraicGeometry/EllipticCurve/QuadraticTwist/Basic.lean](https://github.com/TauCetiProject/TauCeti/blob/cd41bffcb343151b3e58c89392e206b11fe78c1c/TauCeti/AlgebraicGeometry/EllipticCurve/QuadraticTwist/Basic.lean#L582)

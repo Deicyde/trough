@@ -33,4 +33,4 @@ Formalized in Tau Ceti as [`CategoryTheory.SpectralSequence.Hom.isoModSerre_hom_
 ## Sources
 
 - [Tau Ceti documentation: `CategoryTheory.SpectralSequence.Hom.isoModSerre_hom_f_of_le`](https://taucetiproject.org/docs/TauCeti/Algebra/Homology/SpectralSequence/SerreClass.html#CategoryTheory.SpectralSequence.Hom.isoModSerre_hom_f_of_le)
-- [Source of `CategoryTheory.SpectralSequence.Hom.isoModSerre_hom_f_of_le` in TauCeti/Algebra/Homology/SpectralSequence/SerreClass.lean](https://github.com/TauCetiProject/TauCeti/blob/a6027b1d24fcb935c53bd5b50d11b40991cda418/TauCeti/Algebra/Homology/SpectralSequence/SerreClass.lean#L121)
+- [Source of `CategoryTheory.SpectralSequence.Hom.isoModSerre_hom_f_of_le` in TauCeti/Algebra/Homology/SpectralSequence/SerreClass.lean](https://github.com/TauCetiProject/TauCeti/blob/cd41bffcb343151b3e58c89392e206b11fe78c1c/TauCeti/Algebra/Homology/SpectralSequence/SerreClass.lean#L121)

@@ -51,8 +51,8 @@ TauCeti.exists_equiv_linearEquiv_of_iSupIndep.{u, v, w, x} {A : Type u} [Ring A]
 
 ```lean
 TauCeti.exists_equiv_linearEquiv_of_isLocalRing_end.{u, v, w, x} {A : Type u} [Ring A] {M : Type v}
-  [AddCommGroup M] [_root_.Module A M] {ι : Type w} {κ : Type x} [Finite ι] [Finite κ]
-  {P : ι → Submodule A M} {Q : κ → Submodule A M} (hP : iSupIndep P) (hPt : ⨆ i, P i = ⊤)
+  [AddCommGroup M] [_root_.Module A M] {ι : Type w} {κ : Type x} [Finite κ] {P : ι → Submodule A M}
+  {Q : κ → Submodule A M} (hP : iSupIndep P) (hPt : ⨆ i, P i = ⊤)
   (hPloc : ∀ (i : ι), IsLocalRing (Module.End A ↥(P i))) (hQ : iSupIndep Q) (hQt : ⨆ j, Q j = ⊤)
   (hQind : ∀ (j : κ), TauCeti.IsIndecomposableModule A ↥(Q j)) :
   ∃ e, ∀ (i : ι), Nonempty (↥(P i) ≃ₗ[A] ↥(Q (e i)))
@@ -77,7 +77,7 @@ TauCeti.exists_equiv_linearEquiv_of_directSum.{u, v, w, x, y, z} {A : Type u} [R
 TauCeti.exists_equiv_linearEquiv_of_directSum_of_isLocalRing_end.{u, v, w, x, y, z} {A : Type u}
   [Ring A] {M : Type v} [AddCommGroup M] [_root_.Module A M] {ι : Type w} {κ : Type x}
   {N : ι → Type y} [(i : ι) → AddCommGroup (N i)] [(i : ι) → _root_.Module A (N i)] {Q : κ → Type z}
-  [(j : κ) → AddCommGroup (Q j)] [(j : κ) → _root_.Module A (Q j)] [Finite ι] [Finite κ]
+  [(j : κ) → AddCommGroup (Q j)] [(j : κ) → _root_.Module A (Q j)] [Finite κ]
   (eN : M ≃ₗ[A] DirectSum ι fun i => N i) (eQ : M ≃ₗ[A] DirectSum κ fun j => Q j)
   (hN : ∀ (i : ι), IsLocalRing (Module.End A (N i)))
   (hQ : ∀ (j : κ), TauCeti.IsIndecomposableModule A (Q j)) :
@@ -90,7 +90,7 @@ TauCeti.exists_equiv_linearEquiv_of_directSum_of_isLocalRing_end.{u, v, w, x, y,
 TauCeti.exists_equiv_linearEquiv_of_directSumEquiv.{u, w, x, y, z} {A : Type u} [Ring A]
   {ι : Type w} {κ : Type x} {N : ι → Type y} [(i : ι) → AddCommGroup (N i)]
   [(i : ι) → _root_.Module A (N i)] {Q : κ → Type z} [(j : κ) → AddCommGroup (Q j)]
-  [(j : κ) → _root_.Module A (Q j)] [Finite ι] [Finite κ]
+  [(j : κ) → _root_.Module A (Q j)] [Finite κ]
   (e : (DirectSum ι fun i => N i) ≃ₗ[A] DirectSum κ fun j => Q j)
   (hN : ∀ (i : ι), IsLocalRing (Module.End A (N i)))
   (hQ : ∀ (j : κ), TauCeti.IsIndecomposableModule A (Q j)) :
@@ -100,4 +100,4 @@ TauCeti.exists_equiv_linearEquiv_of_directSumEquiv.{u, w, x, y, z} {A : Type u} 
 ## Sources
 
 - [Tau Ceti documentation: `TauCeti.exists_equiv_linearEquiv_of_finset`](https://taucetiproject.org/docs/TauCeti/RingTheory/KrullSchmidt/Uniqueness.html#TauCeti.exists_equiv_linearEquiv_of_finset)
-- [Source of `TauCeti.exists_equiv_linearEquiv_of_finset` in TauCeti/RingTheory/KrullSchmidt/Uniqueness.lean](https://github.com/TauCetiProject/TauCeti/blob/a6027b1d24fcb935c53bd5b50d11b40991cda418/TauCeti/RingTheory/KrullSchmidt/Uniqueness.lean#L202)
+- [Source of `TauCeti.exists_equiv_linearEquiv_of_finset` in TauCeti/RingTheory/KrullSchmidt/Uniqueness.lean](https://github.com/TauCetiProject/TauCeti/blob/cd41bffcb343151b3e58c89392e206b11fe78c1c/TauCeti/RingTheory/KrullSchmidt/Uniqueness.lean#L211)

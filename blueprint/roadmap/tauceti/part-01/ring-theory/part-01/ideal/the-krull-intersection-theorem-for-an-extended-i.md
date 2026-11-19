@@ -29,4 +29,4 @@ Formalized in Tau Ceti as [`Ideal.mem_iInf_map_algebraMap_pow_iff`](https://tauc
 ## Sources
 
 - [Tau Ceti documentation: `Ideal.mem_iInf_map_algebraMap_pow_iff`](https://taucetiproject.org/docs/TauCeti/RingTheory/Ideal/Extended.html#Ideal.mem_iInf_map_algebraMap_pow_iff)
-- [Source of `Ideal.mem_iInf_map_algebraMap_pow_iff` in TauCeti/RingTheory/Ideal/Extended.lean](https://github.com/TauCetiProject/TauCeti/blob/a6027b1d24fcb935c53bd5b50d11b40991cda418/TauCeti/RingTheory/Ideal/Extended.lean#L168)
+- [Source of `Ideal.mem_iInf_map_algebraMap_pow_iff` in TauCeti/RingTheory/Ideal/Extended.lean](https://github.com/TauCetiProject/TauCeti/blob/cd41bffcb343151b3e58c89392e206b11fe78c1c/TauCeti/RingTheory/Ideal/Extended.lean#L199)

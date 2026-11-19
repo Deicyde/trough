@@ -46,4 +46,4 @@ Formalized in Tau Ceti as [`TauCeti.freudenthal_multiplicity_formula`](https://t
 ## Sources
 
 - [Tau Ceti documentation: `TauCeti.freudenthal_multiplicity_formula`](https://taucetiproject.org/docs/TauCeti/Algebra/Lie/HighestWeight/Freudenthal.html#TauCeti.freudenthal_multiplicity_formula)
-- [Source of `TauCeti.freudenthal_multiplicity_formula` in TauCeti/Algebra/Lie/HighestWeight/Freudenthal.lean](https://github.com/TauCetiProject/TauCeti/blob/a6027b1d24fcb935c53bd5b50d11b40991cda418/TauCeti/Algebra/Lie/HighestWeight/Freudenthal.lean#L441)
+- [Source of `TauCeti.freudenthal_multiplicity_formula` in TauCeti/Algebra/Lie/HighestWeight/Freudenthal.lean](https://github.com/TauCetiProject/TauCeti/blob/cd41bffcb343151b3e58c89392e206b11fe78c1c/TauCeti/Algebra/Lie/HighestWeight/Freudenthal.lean#L441)

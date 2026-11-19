@@ -193,4 +193,4 @@ groupCohomology.map_id_eq_zero_iff_of_comp_eq_resCoindToHom.{u} {k G : Type u} [
 ## Sources
 
 - [Tau Ceti documentation: `TauCeti.ContCohomology.explicitShapiro1`](https://taucetiproject.org/docs/TauCeti/RepresentationTheory/Homological/ContCohomology/Shapiro/Basic.html#TauCeti.ContCohomology.explicitShapiro1)
-- [Source of `TauCeti.ContCohomology.explicitShapiro1` in TauCeti/RepresentationTheory/Homological/ContCohomology/Shapiro/Basic.lean](https://github.com/TauCetiProject/TauCeti/blob/a6027b1d24fcb935c53bd5b50d11b40991cda418/TauCeti/RepresentationTheory/Homological/ContCohomology/Shapiro/Basic.lean#L417)
+- [Source of `TauCeti.ContCohomology.explicitShapiro1` in TauCeti/RepresentationTheory/Homological/ContCohomology/Shapiro/Basic.lean](https://github.com/TauCetiProject/TauCeti/blob/cd41bffcb343151b3e58c89392e206b11fe78c1c/TauCeti/RepresentationTheory/Homological/ContCohomology/Shapiro/Basic.lean#L417)

@@ -33,4 +33,4 @@ Formalized in Tau Ceti as [`TauCeti.invariants_eq_span_matchingTensor_two`](http
 ## Sources
 
 - [Tau Ceti documentation: `TauCeti.invariants_eq_span_matchingTensor_two`](https://taucetiproject.org/docs/TauCeti/RepresentationTheory/ClassicalGroups/BrauerGenerators/Orthogonal/InvariantTensor.html#TauCeti.invariants_eq_span_matchingTensor_two)
-- [Source of `TauCeti.invariants_eq_span_matchingTensor_two` in TauCeti/RepresentationTheory/ClassicalGroups/BrauerGenerators/Orthogonal/InvariantTensor.lean](https://github.com/TauCetiProject/TauCeti/blob/a6027b1d24fcb935c53bd5b50d11b40991cda418/TauCeti/RepresentationTheory/ClassicalGroups/BrauerGenerators/Orthogonal/InvariantTensor.lean#L421)
+- [Source of `TauCeti.invariants_eq_span_matchingTensor_two` in TauCeti/RepresentationTheory/ClassicalGroups/BrauerGenerators/Orthogonal/InvariantTensor.lean](https://github.com/TauCetiProject/TauCeti/blob/cd41bffcb343151b3e58c89392e206b11fe78c1c/TauCeti/RepresentationTheory/ClassicalGroups/BrauerGenerators/Orthogonal/InvariantTensor.lean#L421)

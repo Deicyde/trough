@@ -40,7 +40,7 @@ Its statement uses no other declaration mapped here.
 - [Artin's induction identity for every virtual class over every field](../../../representation-theory/grothendieck-group/artins-induction-identity-for-every-virtual-clas.md)
 - [The dual Noether isomorphism](../../../category-theory/exact/the-dual-noether-isomorphism.md)
 - [The Euler characteristic formula and `G₀`](the-euler-characteristic-formula-and-g0.md)
-- [Kolchin's common fixed vector theorem](../../../linear-algebra/other-results/kolchins-common-fixed-vector-theorem.md)
+- [Kolchin's common fixed vector theorem](../../../linear-algebra/part-02/other-results/kolchins-common-fixed-vector-theorem.md)
 - [The Kummer isomorphism](../../../representation-theory/continuous-cohomology-of-profinite-groups/the-kummer-isomorphism.md)
 - [The local invariant](../../part-01/class-field-theory/the-local-invariant.md)
 - [Local Tate duality in degree one](local-tate-duality-in-degree-one.md)
@@ -55,4 +55,4 @@ Formalized in Tau Ceti as [`TauCeti.ClassFieldTheory.localEulerCharacteristic_eq
 ## Sources
 
 - [Tau Ceti documentation: `TauCeti.ClassFieldTheory.localEulerCharacteristic_eq_localCardNorm_of_indFDRep`](https://taucetiproject.org/docs/TauCeti/NumberTheory/ClassFieldTheory/Local/EulerCharacteristic/ModularInduction.html#TauCeti.ClassFieldTheory.localEulerCharacteristic_eq_localCardNorm_of_indFDRep)
-- [Source of `TauCeti.ClassFieldTheory.localEulerCharacteristic_eq_localCardNorm_of_indFDRep` in TauCeti/NumberTheory/ClassFieldTheory/Local/EulerCharacteristic/ModularInduction.lean](https://github.com/TauCetiProject/TauCeti/blob/a6027b1d24fcb935c53bd5b50d11b40991cda418/TauCeti/NumberTheory/ClassFieldTheory/Local/EulerCharacteristic/ModularInduction.lean#L51)
+- [Source of `TauCeti.ClassFieldTheory.localEulerCharacteristic_eq_localCardNorm_of_indFDRep` in TauCeti/NumberTheory/ClassFieldTheory/Local/EulerCharacteristic/ModularInduction.lean](https://github.com/TauCetiProject/TauCeti/blob/cd41bffcb343151b3e58c89392e206b11fe78c1c/TauCeti/NumberTheory/ClassFieldTheory/Local/EulerCharacteristic/ModularInduction.lean#L51)

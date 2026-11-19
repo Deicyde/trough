@@ -36,19 +36,19 @@ Formalized in Tau Ceti as [`HomotopyGroup.bijective_hurewicz`](https://taucetipr
 
 ```lean
 TauCeti.HurewiczOne.hurewiczAddEquiv {X : TopCat} [PathConnectedSpace ↑X] (x : ↑X) :
-  Additive (Abelianization (FundamentalGroup (↑X) x)) ≃+ ↑(TauCeti.HurewiczOne.H₁ X)
+  Additive (Group.Abelianization (FundamentalGroup (↑X) x)) ≃+ ↑(TauCeti.HurewiczOne.H₁ X)
 ```
 
 **The Hurewicz theorem in degree one.** Formalized in Tau Ceti as [`TauCeti.HurewiczOne.hurewiczHomologyAddEquiv`](https://taucetiproject.org/docs/TauCeti/AlgebraicTopology/Homotopy/Hurewicz/One/Basic.html#TauCeti.HurewiczOne.hurewiczHomologyAddEquiv).
 
 ```lean
 TauCeti.HurewiczOne.hurewiczHomologyAddEquiv {X : TopCat} [PathConnectedSpace ↑X] (x : ↑X) :
-  Additive (Abelianization (FundamentalGroup (↑X) x)) ≃+
+  Additive (Group.Abelianization (FundamentalGroup (↑X) x)) ≃+
     ↑(HomologicalComplex.homology ((TauCeti.singularChains ℤ).obj X) 1)
 ```
 
 ## Sources
 
 - [Tau Ceti documentation: `HomotopyGroup.bijective_hurewicz`](https://taucetiproject.org/docs/TauCeti/AlgebraicTopology/Homotopy/Hurewicz/Absolute.html#HomotopyGroup.bijective_hurewicz)
-- [Source of `HomotopyGroup.bijective_hurewicz` in TauCeti/AlgebraicTopology/Homotopy/Hurewicz/Absolute.lean](https://github.com/TauCetiProject/TauCeti/blob/a6027b1d24fcb935c53bd5b50d11b40991cda418/TauCeti/AlgebraicTopology/Homotopy/Hurewicz/Absolute.lean#L135)
-- [Tau Ceti roadmap status: Algebraic topology of spaces and manifolds](https://github.com/TauCetiProject/TauCetiRoadmap/blob/9f7c032adaf1b838e8183d63ff3cfa886d061cb3/TauCetiRoadmap/AlgebraicTopology/STATUS.md)
+- [Source of `HomotopyGroup.bijective_hurewicz` in TauCeti/AlgebraicTopology/Homotopy/Hurewicz/Absolute.lean](https://github.com/TauCetiProject/TauCeti/blob/cd41bffcb343151b3e58c89392e206b11fe78c1c/TauCeti/AlgebraicTopology/Homotopy/Hurewicz/Absolute.lean#L138)
+- [Tau Ceti roadmap status: Algebraic topology of spaces and manifolds](https://github.com/TauCetiProject/TauCetiRoadmap/blob/612845ab80fb9c2b9bee724a156756ee78031591/TauCetiRoadmap/AlgebraicTopology/STATUS.md)

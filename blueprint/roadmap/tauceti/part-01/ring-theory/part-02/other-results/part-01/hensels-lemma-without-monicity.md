@@ -30,4 +30,4 @@ Formalized in Tau Ceti as [`Polynomial.exists_isRoot_sub_mem`](https://taucetipr
 ## Sources
 
 - [Tau Ceti documentation: `Polynomial.exists_isRoot_sub_mem`](https://taucetiproject.org/docs/TauCeti/RingTheory/Henselian/Basic.html#Polynomial.exists_isRoot_sub_mem)
-- [Source of `Polynomial.exists_isRoot_sub_mem` in TauCeti/RingTheory/Henselian/Basic.lean](https://github.com/TauCetiProject/TauCeti/blob/a6027b1d24fcb935c53bd5b50d11b40991cda418/TauCeti/RingTheory/Henselian/Basic.lean#L190)
+- [Source of `Polynomial.exists_isRoot_sub_mem` in TauCeti/RingTheory/Henselian/Basic.lean](https://github.com/TauCetiProject/TauCeti/blob/cd41bffcb343151b3e58c89392e206b11fe78c1c/TauCeti/RingTheory/Henselian/Basic.lean#L202)

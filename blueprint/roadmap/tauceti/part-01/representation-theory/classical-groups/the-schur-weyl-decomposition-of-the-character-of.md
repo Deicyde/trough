@@ -50,4 +50,4 @@ TauCeti.sum_finrank_spechtModule_mul_char_weylFDRepOfShape_ofPartition.{u} {k : 
 ## Sources
 
 - [Tau Ceti documentation: `TauCeti.sum_finrank_spechtModule_mul_char_weylRepOfShape_ofPartition`](https://taucetiproject.org/docs/TauCeti/RepresentationTheory/ClassicalGroups/WeylModule/SchurWeyl.html#TauCeti.sum_finrank_spechtModule_mul_char_weylRepOfShape_ofPartition)
-- [Source of `TauCeti.sum_finrank_spechtModule_mul_char_weylRepOfShape_ofPartition` in TauCeti/RepresentationTheory/ClassicalGroups/WeylModule/SchurWeyl.lean](https://github.com/TauCetiProject/TauCeti/blob/a6027b1d24fcb935c53bd5b50d11b40991cda418/TauCeti/RepresentationTheory/ClassicalGroups/WeylModule/SchurWeyl.lean#L174)
+- [Source of `TauCeti.sum_finrank_spechtModule_mul_char_weylRepOfShape_ofPartition` in TauCeti/RepresentationTheory/ClassicalGroups/WeylModule/SchurWeyl.lean](https://github.com/TauCetiProject/TauCeti/blob/cd41bffcb343151b3e58c89392e206b11fe78c1c/TauCeti/RepresentationTheory/ClassicalGroups/WeylModule/SchurWeyl.lean#L174)

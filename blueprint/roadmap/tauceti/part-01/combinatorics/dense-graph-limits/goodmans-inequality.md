@@ -30,4 +30,4 @@ Formalized in Tau Ceti as [`TauCeti.DenseGraphLimits.goodman_triangle_density`](
 ## Sources
 
 - [Tau Ceti documentation: `TauCeti.DenseGraphLimits.goodman_triangle_density`](https://taucetiproject.org/docs/TauCeti/Combinatorics/DenseGraphLimits/Applications.html#TauCeti.DenseGraphLimits.goodman_triangle_density)
-- [Source of `TauCeti.DenseGraphLimits.goodman_triangle_density` in TauCeti/Combinatorics/DenseGraphLimits/Applications.lean](https://github.com/TauCetiProject/TauCeti/blob/a6027b1d24fcb935c53bd5b50d11b40991cda418/TauCeti/Combinatorics/DenseGraphLimits/Applications.lean#L406)
+- [Source of `TauCeti.DenseGraphLimits.goodman_triangle_density` in TauCeti/Combinatorics/DenseGraphLimits/Applications.lean](https://github.com/TauCetiProject/TauCeti/blob/cd41bffcb343151b3e58c89392e206b11fe78c1c/TauCeti/Combinatorics/DenseGraphLimits/Applications.lean#L406)

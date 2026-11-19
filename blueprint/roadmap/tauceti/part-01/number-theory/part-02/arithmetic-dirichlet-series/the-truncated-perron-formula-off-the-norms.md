@@ -55,4 +55,4 @@ TauCeti.truncatedPerron_LSeries {f : ℕ → ℂ} {x c T : ℝ} (hx : 0 < x) (hc
 ## Sources
 
 - [Tau Ceti documentation: `TauCeti.norm_truncatedPerron_LSeries_normCoeff_sub_idealSummatory_le`](https://taucetiproject.org/docs/TauCeti/NumberTheory/ArithmeticDirichletSeries/Perron/Ideal.html#TauCeti.norm_truncatedPerron_LSeries_normCoeff_sub_idealSummatory_le)
-- [Source of `TauCeti.norm_truncatedPerron_LSeries_normCoeff_sub_idealSummatory_le` in TauCeti/NumberTheory/ArithmeticDirichletSeries/Perron/Ideal.lean](https://github.com/TauCetiProject/TauCeti/blob/a6027b1d24fcb935c53bd5b50d11b40991cda418/TauCeti/NumberTheory/ArithmeticDirichletSeries/Perron/Ideal.lean#L217)
+- [Source of `TauCeti.norm_truncatedPerron_LSeries_normCoeff_sub_idealSummatory_le` in TauCeti/NumberTheory/ArithmeticDirichletSeries/Perron/Ideal.lean](https://github.com/TauCetiProject/TauCeti/blob/cd41bffcb343151b3e58c89392e206b11fe78c1c/TauCeti/NumberTheory/ArithmeticDirichletSeries/Perron/Ideal.lean#L217)

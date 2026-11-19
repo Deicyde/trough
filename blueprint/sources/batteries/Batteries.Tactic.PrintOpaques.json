@@ -1,0 +1,16 @@
+{
+ "schema": "trough-ledger/v1",
+ "library": "Batteries",
+ "repo": "leanprover-community/batteries",
+ "rev": "b4b25a3886a16daacaf6615c2eea7170a6e8f458",
+ "module": "Batteries.Tactic.PrintOpaques",
+ "file": "Batteries/Tactic/PrintOpaques.lean",
+ "public": [
+  {"name": "Batteries.Tactic.CollectOpaques.State", "kind": "structure", "line": 19},
+  {"name": "Batteries.Tactic.CollectOpaques.M", "kind": "abbrev", "line": 26},
+  {"name": "Batteries.Tactic.CollectOpaques.collect", "kind": "def", "line": 29}
+ ],
+ "private": [],
+ "missing": [],
+ "unread": "Unnamed instances, the names an `alias ⟨…⟩` command gives, and the names Lean generates for a declaration (constructors, recursors, derived instances) are not read from the source, so they are not listed."
+}

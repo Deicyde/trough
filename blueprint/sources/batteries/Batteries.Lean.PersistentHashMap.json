@@ -1,0 +1,19 @@
+{
+ "schema": "trough-ledger/v1",
+ "library": "Batteries",
+ "repo": "leanprover-community/batteries",
+ "rev": "b4b25a3886a16daacaf6615c2eea7170a6e8f458",
+ "module": "Batteries.Lean.PersistentHashMap",
+ "file": "Batteries/Lean/PersistentHashMap.lean",
+ "public": [
+  {"name": "Lean.PersistentHashMap.ofList", "kind": "def", "line": 20},
+  {"name": "Lean.PersistentHashMap.ofListWith", "kind": "def", "line": 27},
+  {"name": "Lean.PersistentHashMap.ofArray", "kind": "def", "line": 38},
+  {"name": "Lean.PersistentHashMap.ofArrayWith", "kind": "def", "line": 45},
+  {"name": "Lean.PersistentHashMap.mergeWithM", "kind": "def", "line": 57},
+  {"name": "Lean.PersistentHashMap.mergeWith", "kind": "def", "line": 69}
+ ],
+ "private": [],
+ "missing": [],
+ "unread": "Unnamed instances, the names an `alias ⟨…⟩` command gives, and the names Lean generates for a declaration (constructors, recursors, derived instances) are not read from the source, so they are not listed."
+}

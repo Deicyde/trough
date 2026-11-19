@@ -36,4 +36,4 @@ Formalized in Tau Ceti as [`Graph.IsBipartition.exists_isCapacitatedMatching_isV
 ## Sources
 
 - [Tau Ceti documentation: `Graph.IsBipartition.exists_isCapacitatedMatching_isVertexCover_sum_eq`](https://taucetiproject.org/docs/TauCeti/Combinatorics/Graph/Matching/Capacitated.html#Graph.IsBipartition.exists_isCapacitatedMatching_isVertexCover_sum_eq)
-- [Source of `Graph.IsBipartition.exists_isCapacitatedMatching_isVertexCover_sum_eq` in TauCeti/Combinatorics/Graph/Matching/Capacitated.lean](https://github.com/TauCetiProject/TauCeti/blob/a6027b1d24fcb935c53bd5b50d11b40991cda418/TauCeti/Combinatorics/Graph/Matching/Capacitated.lean#L313)
+- [Source of `Graph.IsBipartition.exists_isCapacitatedMatching_isVertexCover_sum_eq` in TauCeti/Combinatorics/Graph/Matching/Capacitated.lean](https://github.com/TauCetiProject/TauCeti/blob/cd41bffcb343151b3e58c89392e206b11fe78c1c/TauCeti/Combinatorics/Graph/Matching/Capacitated.lean#L313)

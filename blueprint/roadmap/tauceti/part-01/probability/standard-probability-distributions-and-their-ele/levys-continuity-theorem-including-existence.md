@@ -35,5 +35,5 @@ Formalized in Tau Ceti as [`TauCeti.exists_probabilityMeasure_of_tendsto_charFun
 ## Sources
 
 - [Tau Ceti documentation: `TauCeti.exists_probabilityMeasure_of_tendsto_charFun`](https://taucetiproject.org/docs/TauCeti/MeasureTheory/Measure/LevyConvergence.html#TauCeti.exists_probabilityMeasure_of_tendsto_charFun)
-- [Source of `TauCeti.exists_probabilityMeasure_of_tendsto_charFun` in TauCeti/MeasureTheory/Measure/LevyConvergence.lean](https://github.com/TauCetiProject/TauCeti/blob/a6027b1d24fcb935c53bd5b50d11b40991cda418/TauCeti/MeasureTheory/Measure/LevyConvergence.lean#L43)
-- [Tau Ceti roadmap status: Standard probability distributions and their elementary theory](https://github.com/TauCetiProject/TauCetiRoadmap/blob/9f7c032adaf1b838e8183d63ff3cfa886d061cb3/TauCetiRoadmap/StandardDistributions/STATUS.md)
+- [Source of `TauCeti.exists_probabilityMeasure_of_tendsto_charFun` in TauCeti/MeasureTheory/Measure/LevyConvergence.lean](https://github.com/TauCetiProject/TauCeti/blob/cd41bffcb343151b3e58c89392e206b11fe78c1c/TauCeti/MeasureTheory/Measure/LevyConvergence.lean#L43)
+- [Tau Ceti roadmap status: Standard probability distributions and their elementary theory](https://github.com/TauCetiProject/TauCetiRoadmap/blob/612845ab80fb9c2b9bee724a156756ee78031591/TauCetiRoadmap/StandardDistributions/STATUS.md)

@@ -1,6 +1,6 @@
 # Roth's theorem and the Subspace Theorem over number fields
 
-The declarations the status of Tau Ceti's [roadmap](https://github.com/TauCetiProject/TauCetiRoadmap/blob/9f7c032adaf1b838e8183d63ff3cfa886d061cb3/TauCetiRoadmap/SubspaceTheorem/README.md) names as Tau Ceti has them at commit [a6027b1d](https://github.com/TauCetiProject/TauCeti/tree/a6027b1d24fcb935c53bd5b50d11b40991cda418).
+The declarations the status of Tau Ceti's [roadmap](https://github.com/TauCetiProject/TauCetiRoadmap/blob/612845ab80fb9c2b9bee724a156756ee78031591/TauCetiRoadmap/SubspaceTheorem/README.md) names as Tau Ceti has them at commit [cd41bffc](https://github.com/TauCetiProject/TauCeti/tree/cd41bffcb343151b3e58c89392e206b11fe78c1c).
 
 - [Evertse's lemma (Evertse; Bombieri–Gubler, Lemma 7.5.29)](evertses-lemma-evertse-bombieri-gubler-lemma-7-5.md)
 - [Upper bound on the volume-to-covolume ratio in terms of `Q ^ approxWeight S₀ c`](upper-bound-on-the-volume-to-covolume-ratio-in-t.md)

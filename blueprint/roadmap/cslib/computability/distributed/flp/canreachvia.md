@@ -99,3 +99,4 @@ theorem subset_inp [Fintype P] {ps : Set P} {inp1 inp2 : P → Bool} {s1 : State
 ## Sources
 
 - [Cslib/Computability/Distributed/FLP/CanReachVia.lean at 86d560b6](https://github.com/leanprover/cslib/blob/86d560b6cbb379bd82512424cbcd2a915a1565e7/Cslib/Computability/Distributed/FLP/CanReachVia.lean)
+- [Declaration ledger](../../../../../sources/cslib/Cslib.Computability.Distributed.FLP.CanReachVia.json)

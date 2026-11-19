@@ -20,15 +20,12 @@ FormalGroup.height_eq_height_iff_nonempty_formalGroupIso.{u_1} {K : Type u_1} [F
 
 ## Depends on
 
-- [FormalGroup.height](formalgroup-height.md)
-- [TauCeti.FormalGroupIso](tauceti-formalgroupiso.md)
+Its statement uses no other declaration mapped here.
 
 ## Proof depends on
 
-- [The `p`-series has order a power of `p` in characteristic `p`](the-p-series-has-order-a-power-of-p-in-character.md)
-- [FormalGroup.TopNilpotentPoint](formalgroup-topnilpotentpoint.md)
+- [Formal group laws of infinite height are the additive ones](formal-group-laws-of-infinite-height-are-the-add.md)
 - [Nakayama's lemma over `ℤ`](../../part-02/other-results/part-02/nakayamas-lemma-over-z.md)
-- [TauCeti.FormalGroupHom](tauceti-formalgrouphom.md)
 
 ## Lean
 
@@ -37,4 +34,5 @@ Formalized in Tau Ceti as [`FormalGroup.height_eq_height_iff_nonempty_formalGrou
 ## Sources
 
 - [Tau Ceti documentation: `FormalGroup.height_eq_height_iff_nonempty_formalGroupIso`](https://taucetiproject.org/docs/TauCeti/RingTheory/FormalGroup/Height/Classification.html#FormalGroup.height_eq_height_iff_nonempty_formalGroupIso)
-- [Source of `FormalGroup.height_eq_height_iff_nonempty_formalGroupIso` in TauCeti/RingTheory/FormalGroup/Height/Classification.lean](https://github.com/TauCetiProject/TauCeti/blob/a6027b1d24fcb935c53bd5b50d11b40991cda418/TauCeti/RingTheory/FormalGroup/Height/Classification.lean#L471)
+- [Source of `FormalGroup.height_eq_height_iff_nonempty_formalGroupIso` in TauCeti/RingTheory/FormalGroup/Height/Classification.lean](https://github.com/TauCetiProject/TauCeti/blob/cd41bffcb343151b3e58c89392e206b11fe78c1c/TauCeti/RingTheory/FormalGroup/Height/Classification.lean#L468)
+- [Tau Ceti roadmap status: Bordism, formal groups and chromatic operations](https://github.com/TauCetiProject/TauCetiRoadmap/blob/612845ab80fb9c2b9bee724a156756ee78031591/TauCetiRoadmap/BordismFormalGroups/STATUS.md)

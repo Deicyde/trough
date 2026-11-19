@@ -37,7 +37,7 @@ Its statement uses no other declaration mapped here.
 - [The fundamental inequality (Stichtenoth, Theorem 3.1.11)](the-fundamental-inequality-stichtenoth-theorem-3.md)
 - [The residue theorem for trace residues (Stichtenoth, Corollary 4.3.3 and Remark 4.3.7(d))](the-residue-theorem-for-trace-residues-stichteno.md)
 - [Riemann's theorem](../part-02/riemanns-theorem.md)
-- [The Riemann–Roch theorem (Stichtenoth, Theorem 1.5.15), for the divisor `(ω)` itself](../../../algebraic-geometry/algebraic-curves-function-fields-divisors-and-ri/the-riemann-roch-theorem-stichtenoth-theorem-1-5.md)
+- [The Riemann–Roch theorem (Stichtenoth, Theorem 1.5.15), for the divisor `(ω)` itself](../../algebraic-curves-function-fields-divisors-and-ri/the-riemann-roch-theorem-stichtenoth-theorem-1-5.md)
 - [Stichtenoth's transformation formula](../part-02/stichtenoths-transformation-formula.md)
 - [The weak approximation theorem](../part-02/the-weak-approximation-theorem.md)
 
@@ -48,4 +48,4 @@ Formalized in Tau Ceti as [`TauCeti.finsum_kaehlerResidueOfPerfectField_eq_zero`
 ## Sources
 
 - [Tau Ceti documentation: `TauCeti.finsum_kaehlerResidueOfPerfectField_eq_zero`](https://taucetiproject.org/docs/TauCeti/FieldTheory/FunctionField/Differential/Independence.html#TauCeti.finsum_kaehlerResidueOfPerfectField_eq_zero)
-- [Source of `TauCeti.finsum_kaehlerResidueOfPerfectField_eq_zero` in TauCeti/FieldTheory/FunctionField/Differential/Independence.lean](https://github.com/TauCetiProject/TauCeti/blob/a6027b1d24fcb935c53bd5b50d11b40991cda418/TauCeti/FieldTheory/FunctionField/Differential/Independence.lean#L438)
+- [Source of `TauCeti.finsum_kaehlerResidueOfPerfectField_eq_zero` in TauCeti/FieldTheory/FunctionField/Differential/Independence.lean](https://github.com/TauCetiProject/TauCeti/blob/cd41bffcb343151b3e58c89392e206b11fe78c1c/TauCeti/FieldTheory/FunctionField/Differential/Independence.lean#L436)

@@ -46,4 +46,4 @@ TauCeti.mulVec_surjective_jacobiMatrixAt_iff_exists_eval_pderiv_ne_zero.{u_2, u_
 ## Sources
 
 - [Tau Ceti documentation: `TauCeti.rank_jacobiMatrixAt_dehomogenize_div`](https://taucetiproject.org/docs/TauCeti/RingTheory/MvPolynomial/Jacobian/Basic.html#TauCeti.rank_jacobiMatrixAt_dehomogenize_div)
-- [Source of `TauCeti.rank_jacobiMatrixAt_dehomogenize_div` in TauCeti/RingTheory/MvPolynomial/Jacobian/Basic.lean](https://github.com/TauCetiProject/TauCeti/blob/a6027b1d24fcb935c53bd5b50d11b40991cda418/TauCeti/RingTheory/MvPolynomial/Jacobian/Basic.lean#L238)
+- [Source of `TauCeti.rank_jacobiMatrixAt_dehomogenize_div` in TauCeti/RingTheory/MvPolynomial/Jacobian/Basic.lean](https://github.com/TauCetiProject/TauCeti/blob/cd41bffcb343151b3e58c89392e206b11fe78c1c/TauCeti/RingTheory/MvPolynomial/Jacobian/Basic.lean#L238)

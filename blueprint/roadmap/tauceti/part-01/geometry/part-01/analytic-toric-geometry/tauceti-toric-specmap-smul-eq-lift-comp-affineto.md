@@ -38,5 +38,5 @@ Formalized in Tau Ceti as [`TauCeti.Toric.specMap_smul_eq_lift_comp_affineToricS
 ## Sources
 
 - [Tau Ceti documentation: `TauCeti.Toric.specMap_smul_eq_lift_comp_affineToricSchemeAction`](https://taucetiproject.org/docs/TauCeti/Geometry/Toric/Analytic/Cone/TorusAction/Coaction.html#TauCeti.Toric.specMap_smul_eq_lift_comp_affineToricSchemeAction)
-- [Source of `TauCeti.Toric.specMap_smul_eq_lift_comp_affineToricSchemeAction` in TauCeti/Geometry/Toric/Analytic/Cone/TorusAction/Coaction.lean](https://github.com/TauCetiProject/TauCeti/blob/a6027b1d24fcb935c53bd5b50d11b40991cda418/TauCeti/Geometry/Toric/Analytic/Cone/TorusAction/Coaction.lean#L51)
-- [Tau Ceti roadmap status: Analytic toric geometry](https://github.com/TauCetiProject/TauCetiRoadmap/blob/9f7c032adaf1b838e8183d63ff3cfa886d061cb3/Completed/AnalyticToricGeometry/STATUS.md)
+- [Source of `TauCeti.Toric.specMap_smul_eq_lift_comp_affineToricSchemeAction` in TauCeti/Geometry/Toric/Analytic/Cone/TorusAction/Coaction.lean](https://github.com/TauCetiProject/TauCeti/blob/cd41bffcb343151b3e58c89392e206b11fe78c1c/TauCeti/Geometry/Toric/Analytic/Cone/TorusAction/Coaction.lean#L51)
+- [Tau Ceti roadmap status: Analytic toric geometry](https://github.com/TauCetiProject/TauCetiRoadmap/blob/612845ab80fb9c2b9bee724a156756ee78031591/Completed/AnalyticToricGeometry/STATUS.md)

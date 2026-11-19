@@ -41,4 +41,4 @@ TauCeti.isFredholm_one_sub.{u_1, u_2} {𝕜 : Type u_1} {E : Type u_2} [Nontrivi
 ## Sources
 
 - [Tau Ceti documentation: `TauCeti.isFredholm_one_add`](https://taucetiproject.org/docs/TauCeti/Analysis/Fredholm/CompactPerturbation.html#TauCeti.isFredholm_one_add)
-- [Source of `TauCeti.isFredholm_one_add` in TauCeti/Analysis/Fredholm/CompactPerturbation.lean](https://github.com/TauCetiProject/TauCeti/blob/a6027b1d24fcb935c53bd5b50d11b40991cda418/TauCeti/Analysis/Fredholm/CompactPerturbation.lean#L93)
+- [Source of `TauCeti.isFredholm_one_add` in TauCeti/Analysis/Fredholm/CompactPerturbation.lean](https://github.com/TauCetiProject/TauCeti/blob/cd41bffcb343151b3e58c89392e206b11fe78c1c/TauCeti/Analysis/Fredholm/CompactPerturbation.lean#L109)

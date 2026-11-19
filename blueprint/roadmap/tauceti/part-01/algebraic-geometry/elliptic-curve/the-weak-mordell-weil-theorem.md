@@ -40,4 +40,4 @@ Formalized in Tau Ceti as [`WeierstrassCurve.Affine.finiteIndex_range_nsmulAddMo
 ## Sources
 
 - [Tau Ceti documentation: `WeierstrassCurve.Affine.finiteIndex_range_nsmulAddMonoidHom_two`](https://taucetiproject.org/docs/TauCeti/AlgebraicGeometry/EllipticCurve/MordellWeil/WeakMordellWeil.html#WeierstrassCurve.Affine.finiteIndex_range_nsmulAddMonoidHom_two)
-- [Source of `WeierstrassCurve.Affine.finiteIndex_range_nsmulAddMonoidHom_two` in TauCeti/AlgebraicGeometry/EllipticCurve/MordellWeil/WeakMordellWeil.lean](https://github.com/TauCetiProject/TauCeti/blob/a6027b1d24fcb935c53bd5b50d11b40991cda418/TauCeti/AlgebraicGeometry/EllipticCurve/MordellWeil/WeakMordellWeil.lean#L88)
+- [Source of `WeierstrassCurve.Affine.finiteIndex_range_nsmulAddMonoidHom_two` in TauCeti/AlgebraicGeometry/EllipticCurve/MordellWeil/WeakMordellWeil.lean](https://github.com/TauCetiProject/TauCeti/blob/cd41bffcb343151b3e58c89392e206b11fe78c1c/TauCeti/AlgebraicGeometry/EllipticCurve/MordellWeil/WeakMordellWeil.lean#L84)

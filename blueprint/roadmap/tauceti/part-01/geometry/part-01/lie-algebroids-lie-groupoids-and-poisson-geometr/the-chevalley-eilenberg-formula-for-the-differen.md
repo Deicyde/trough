@@ -39,4 +39,4 @@ Formalized in Tau Ceti as [`TauCeti.LieModule.Cohomology.d_succ_apply`](https://
 ## Sources
 
 - [Tau Ceti documentation: `TauCeti.LieModule.Cohomology.d_succ_apply`](https://taucetiproject.org/docs/TauCeti/Algebra/Lie/Cohomology/ChevalleyEilenberg.html#TauCeti.LieModule.Cohomology.d_succ_apply)
-- [Source of `TauCeti.LieModule.Cohomology.d_succ_apply` in TauCeti/Algebra/Lie/Cohomology/ChevalleyEilenberg.lean](https://github.com/TauCetiProject/TauCeti/blob/a6027b1d24fcb935c53bd5b50d11b40991cda418/TauCeti/Algebra/Lie/Cohomology/ChevalleyEilenberg.lean#L254)
+- [Source of `TauCeti.LieModule.Cohomology.d_succ_apply` in TauCeti/Algebra/Lie/Cohomology/ChevalleyEilenberg.lean](https://github.com/TauCetiProject/TauCeti/blob/cd41bffcb343151b3e58c89392e206b11fe78c1c/TauCeti/Algebra/Lie/Cohomology/ChevalleyEilenberg.lean#L254)

@@ -15,7 +15,7 @@ TauCeti.dgYonedaIso.{uR, uA, uM} {R : Type uR} {A : Type uA} {M : Type (max uA u
   [Ring A] [Algebra R A] [AddCommGroup M] [_root_.Module R M] [_root_.Module Aᵐᵒᵖ M]
   [IsScalarTower R Aᵐᵒᵖ M] {𝒜 : ℤ → Submodule R A} [GradedAlgebra 𝒜] {d : A →ₗ[R] A}
   {h : TauCeti.IsDGAlgebra 𝒜 d} {ℳ : ℤ → Submodule R M}
-  [SetLike.GradedSMul ((TauCeti.InternalGrading.ofDecomposition 𝒜).opposite.piece ℤ) ℳ]
+  [SetLike.GradedSMul (TauCeti.InternalGrading.ofDecomposition 𝒜).opposite.piece ℳ]
   [DirectSum.Decomposition ℳ] {dM : M →ₗ[R] M} (hM : TauCeti.IsDGRightModule h ℳ dM) :
   TauCeti.dgRightModuleHomComplex ⋯ hM ≅ TauCeti.gradedCochainComplex ℳ dM ⋯ ⋯
 ```
@@ -36,7 +36,7 @@ Formalized in Tau Ceti as [`TauCeti.dgYonedaIso`](https://taucetiproject.org/doc
 TauCeti.dgYonedaCochainEquiv.{uR, uA, uM} {R : Type uR} {A : Type uA} {M : Type uM} [CommRing R]
   [Ring A] [Algebra R A] [AddCommGroup M] [_root_.Module R M] [_root_.Module Aᵐᵒᵖ M]
   [IsScalarTower R Aᵐᵒᵖ M] {𝒜 : ℤ → Submodule R A} [GradedAlgebra 𝒜] {ℳ : ℤ → Submodule R M}
-  [SetLike.GradedSMul ((TauCeti.InternalGrading.ofDecomposition 𝒜).opposite.piece ℤ) ℳ] (p : ℤ) :
+  [SetLike.GradedSMul (TauCeti.InternalGrading.ofDecomposition 𝒜).opposite.piece ℳ] (p : ℤ) :
   ↥(TauCeti.dgRightModuleCochains p) ≃ₗ[R] ↥(ℳ p)
 ```
 
@@ -47,7 +47,7 @@ TauCeti.dgYonedaHomEquiv.{uR, uA, uM} {R : Type uR} {A : Type uA} {M : Type uM} 
   [Ring A] [Algebra R A] [AddCommGroup M] [_root_.Module R M] [_root_.Module Aᵐᵒᵖ M]
   [IsScalarTower R Aᵐᵒᵖ M] {𝒜 : ℤ → Submodule R A} [GradedAlgebra 𝒜] {d : A →ₗ[R] A}
   {h : TauCeti.IsDGAlgebra 𝒜 d} {ℳ : ℤ → Submodule R M}
-  [SetLike.GradedSMul ((TauCeti.InternalGrading.ofDecomposition 𝒜).opposite.piece ℤ) ℳ]
+  [SetLike.GradedSMul (TauCeti.InternalGrading.ofDecomposition 𝒜).opposite.piece ℳ]
   [DirectSum.Decomposition ℳ] {dM : M →ₗ[R] M} (hM : TauCeti.IsDGRightModule h ℳ dM) :
   TauCeti.DGRightModuleHom ⋯ hM ≃ₗ[R] ↥(hM.cyclesDeg 0)
 ```
@@ -55,4 +55,4 @@ TauCeti.dgYonedaHomEquiv.{uR, uA, uM} {R : Type uR} {A : Type uA} {M : Type uM} 
 ## Sources
 
 - [Tau Ceti documentation: `TauCeti.dgYonedaIso`](https://taucetiproject.org/docs/TauCeti/Algebra/Homology/DG/Module/Right/Yoneda.html#TauCeti.dgYonedaIso)
-- [Source of `TauCeti.dgYonedaIso` in TauCeti/Algebra/Homology/DG/Module/Right/Yoneda.lean](https://github.com/TauCetiProject/TauCeti/blob/a6027b1d24fcb935c53bd5b50d11b40991cda418/TauCeti/Algebra/Homology/DG/Module/Right/Yoneda.lean#L186)
+- [Source of `TauCeti.dgYonedaIso` in TauCeti/Algebra/Homology/DG/Module/Right/Yoneda.lean](https://github.com/TauCetiProject/TauCeti/blob/cd41bffcb343151b3e58c89392e206b11fe78c1c/TauCeti/Algebra/Homology/DG/Module/Right/Yoneda.lean#L186)

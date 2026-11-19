@@ -30,4 +30,4 @@ Formalized in Tau Ceti as [`TauCeti.ContCohomology.continuousFiniteQuotientColim
 ## Sources
 
 - [Tau Ceti documentation: `TauCeti.ContCohomology.continuousFiniteQuotientColimit`](https://taucetiproject.org/docs/TauCeti/RepresentationTheory/Homological/ContCohomology/FiniteQuotient/AllDegreeColimit.html#TauCeti.ContCohomology.continuousFiniteQuotientColimit)
-- [Source of `TauCeti.ContCohomology.continuousFiniteQuotientColimit` in TauCeti/RepresentationTheory/Homological/ContCohomology/FiniteQuotient/AllDegreeColimit.lean](https://github.com/TauCetiProject/TauCeti/blob/a6027b1d24fcb935c53bd5b50d11b40991cda418/TauCeti/RepresentationTheory/Homological/ContCohomology/FiniteQuotient/AllDegreeColimit.lean#L398)
+- [Source of `TauCeti.ContCohomology.continuousFiniteQuotientColimit` in TauCeti/RepresentationTheory/Homological/ContCohomology/FiniteQuotient/AllDegreeColimit.lean](https://github.com/TauCetiProject/TauCeti/blob/cd41bffcb343151b3e58c89392e206b11fe78c1c/TauCeti/RepresentationTheory/Homological/ContCohomology/FiniteQuotient/AllDegreeColimit.lean#L398)

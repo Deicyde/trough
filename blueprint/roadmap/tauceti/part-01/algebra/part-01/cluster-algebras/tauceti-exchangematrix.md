@@ -30,5 +30,5 @@ Formalized in Tau Ceti as [`TauCeti.ExchangeMatrix`](https://taucetiproject.org/
 ## Sources
 
 - [Tau Ceti documentation: `TauCeti.ExchangeMatrix`](https://taucetiproject.org/docs/TauCeti/Algebra/Cluster/ExchangeMatrix/Basic.html#TauCeti.ExchangeMatrix)
-- [Source of `TauCeti.ExchangeMatrix` in TauCeti/Algebra/Cluster/ExchangeMatrix/Basic.lean](https://github.com/TauCetiProject/TauCeti/blob/a6027b1d24fcb935c53bd5b50d11b40991cda418/TauCeti/Algebra/Cluster/ExchangeMatrix/Basic.lean#L151)
-- [Tau Ceti roadmap status: Cluster algebras](https://github.com/TauCetiProject/TauCetiRoadmap/blob/9f7c032adaf1b838e8183d63ff3cfa886d061cb3/TauCetiRoadmap/ClusterAlgebras/STATUS.md)
+- [Source of `TauCeti.ExchangeMatrix` in TauCeti/Algebra/Cluster/ExchangeMatrix/Basic.lean](https://github.com/TauCetiProject/TauCeti/blob/cd41bffcb343151b3e58c89392e206b11fe78c1c/TauCeti/Algebra/Cluster/ExchangeMatrix/Basic.lean#L151)
+- [Tau Ceti roadmap status: Cluster algebras](https://github.com/TauCetiProject/TauCetiRoadmap/blob/612845ab80fb9c2b9bee724a156756ee78031591/TauCetiRoadmap/ClusterAlgebras/STATUS.md)

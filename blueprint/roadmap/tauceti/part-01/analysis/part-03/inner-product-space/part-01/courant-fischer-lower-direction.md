@@ -59,4 +59,4 @@ LinearMap.IsSymmetric.exists_unit_vector_re_inner_le_eigenvalue_of_le_finrank.{u
 ## Sources
 
 - [Tau Ceti documentation: `LinearMap.IsSymmetric.exists_submodule_forall_unit_eigenvalue_le_re_inner`](https://taucetiproject.org/docs/TauCeti/Analysis/InnerProductSpace/CourantFischer.html#LinearMap.IsSymmetric.exists_submodule_forall_unit_eigenvalue_le_re_inner)
-- [Source of `LinearMap.IsSymmetric.exists_submodule_forall_unit_eigenvalue_le_re_inner` in TauCeti/Analysis/InnerProductSpace/CourantFischer.lean](https://github.com/TauCetiProject/TauCeti/blob/a6027b1d24fcb935c53bd5b50d11b40991cda418/TauCeti/Analysis/InnerProductSpace/CourantFischer.lean#L228)
+- [Source of `LinearMap.IsSymmetric.exists_submodule_forall_unit_eigenvalue_le_re_inner` in TauCeti/Analysis/InnerProductSpace/CourantFischer.lean](https://github.com/TauCetiProject/TauCeti/blob/cd41bffcb343151b3e58c89392e206b11fe78c1c/TauCeti/Analysis/InnerProductSpace/CourantFischer.lean#L227)

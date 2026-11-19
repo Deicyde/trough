@@ -1,0 +1,25 @@
+{
+ "schema": "trough-ledger/v1",
+ "library": "Batteries",
+ "repo": "leanprover-community/batteries",
+ "rev": "b4b25a3886a16daacaf6615c2eea7170a6e8f458",
+ "module": "Batteries.Data.Except",
+ "file": "Batteries/Data/Except.lean",
+ "public": [
+  {"name": "Except.emoji", "kind": "def", "line": 15},
+  {"name": "Except.map_error", "kind": "theorem", "line": 19},
+  {"name": "Except.map_ok", "kind": "theorem", "line": 22},
+  {"name": "Except.map_eq_ok", "kind": "theorem", "line": 25},
+  {"name": "Except.map_eq_error", "kind": "theorem", "line": 29},
+  {"name": "Except.pmap", "kind": "def", "line": 35},
+  {"name": "Except.pmap_error", "kind": "theorem", "line": 40},
+  {"name": "Except.pmap_ok", "kind": "theorem", "line": 44},
+  {"name": "Except.pmap_id", "kind": "theorem", "line": 48},
+  {"name": "Except.map_pmap", "kind": "theorem", "line": 51},
+  {"name": "ExceptT.mk_run", "kind": "theorem", "line": 61},
+  {"name": "ExceptT.map_mk", "kind": "theorem", "line": 64}
+ ],
+ "private": [],
+ "missing": [],
+ "unread": "Unnamed instances, the names an `alias ⟨…⟩` command gives, and the names Lean generates for a declaration (constructors, recursors, derived instances) are not read from the source, so they are not listed."
+}

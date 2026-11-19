@@ -22,7 +22,7 @@ Its statement uses no other declaration mapped here.
 
 ## Proof depends on
 
-- [The product decomposition of the profinite integers](../../topology/profinite-integers-profinite-powers-and-continuo/the-product-decomposition-of-the-profinite-integ.md)
+- [The product decomposition of the profinite integers](../../../part-02/topology/profinite-integers-profinite-powers-and-continuo/the-product-decomposition-of-the-profinite-integ.md)
 
 ## Lean
 
@@ -31,5 +31,5 @@ Formalized in Tau Ceti as [`TauCeti.profiniteCyclotomicCharacter`](https://tauce
 ## Sources
 
 - [Tau Ceti documentation: `TauCeti.profiniteCyclotomicCharacter`](https://taucetiproject.org/docs/TauCeti/FieldTheory/Galois/AbsoluteGaloisGroup/Cyclotomic/Profinite.html#TauCeti.profiniteCyclotomicCharacter)
-- [Source of `TauCeti.profiniteCyclotomicCharacter` in TauCeti/FieldTheory/Galois/AbsoluteGaloisGroup/Cyclotomic/Profinite.lean](https://github.com/TauCetiProject/TauCeti/blob/a6027b1d24fcb935c53bd5b50d11b40991cda418/TauCeti/FieldTheory/Galois/AbsoluteGaloisGroup/Cyclotomic/Profinite.lean#L36)
-- [Tau Ceti roadmap status: Belyi maps, dessins d'enfants, and three-point covers](https://github.com/TauCetiProject/TauCetiRoadmap/blob/9f7c032adaf1b838e8183d63ff3cfa886d061cb3/TauCetiRoadmap/BelyiMaps/STATUS.md)
+- [Source of `TauCeti.profiniteCyclotomicCharacter` in TauCeti/FieldTheory/Galois/AbsoluteGaloisGroup/Cyclotomic/Profinite.lean](https://github.com/TauCetiProject/TauCeti/blob/cd41bffcb343151b3e58c89392e206b11fe78c1c/TauCeti/FieldTheory/Galois/AbsoluteGaloisGroup/Cyclotomic/Profinite.lean#L41)
+- [Tau Ceti roadmap status: Belyi maps, dessins d'enfants, and three-point covers](https://github.com/TauCetiProject/TauCetiRoadmap/blob/612845ab80fb9c2b9bee724a156756ee78031591/TauCetiRoadmap/BelyiMaps/STATUS.md)

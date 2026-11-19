@@ -28,4 +28,4 @@ Formalized in Tau Ceti as [`TauCeti.spectralRadius_eq_gelfandRadius_toLp_inr`](h
 ## Sources
 
 - [Tau Ceti documentation: `TauCeti.spectralRadius_eq_gelfandRadius_toLp_inr`](https://taucetiproject.org/docs/TauCeti/Analysis/Normed/Algebra/GelfandRadius.html#TauCeti.spectralRadius_eq_gelfandRadius_toLp_inr)
-- [Source of `TauCeti.spectralRadius_eq_gelfandRadius_toLp_inr` in TauCeti/Analysis/Normed/Algebra/GelfandRadius.lean](https://github.com/TauCetiProject/TauCeti/blob/a6027b1d24fcb935c53bd5b50d11b40991cda418/TauCeti/Analysis/Normed/Algebra/GelfandRadius.lean#L74)
+- [Source of `TauCeti.spectralRadius_eq_gelfandRadius_toLp_inr` in TauCeti/Analysis/Normed/Algebra/GelfandRadius.lean](https://github.com/TauCetiProject/TauCeti/blob/cd41bffcb343151b3e58c89392e206b11fe78c1c/TauCeti/Analysis/Normed/Algebra/GelfandRadius.lean#L74)

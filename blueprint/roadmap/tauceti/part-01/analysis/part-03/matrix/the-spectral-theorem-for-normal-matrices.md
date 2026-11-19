@@ -28,4 +28,4 @@ Formalized in Tau Ceti as [`Matrix.exists_mem_unitaryGroup_star_mul_mul_eq_diago
 ## Sources
 
 - [Tau Ceti documentation: `Matrix.exists_mem_unitaryGroup_star_mul_mul_eq_diagonal`](https://taucetiproject.org/docs/TauCeti/Analysis/Matrix/Normal.html#Matrix.exists_mem_unitaryGroup_star_mul_mul_eq_diagonal)
-- [Source of `Matrix.exists_mem_unitaryGroup_star_mul_mul_eq_diagonal` in TauCeti/Analysis/Matrix/Normal.lean](https://github.com/TauCetiProject/TauCeti/blob/a6027b1d24fcb935c53bd5b50d11b40991cda418/TauCeti/Analysis/Matrix/Normal.lean#L86)
+- [Source of `Matrix.exists_mem_unitaryGroup_star_mul_mul_eq_diagonal` in TauCeti/Analysis/Matrix/Normal.lean](https://github.com/TauCetiProject/TauCeti/blob/cd41bffcb343151b3e58c89392e206b11fe78c1c/TauCeti/Analysis/Matrix/Normal.lean#L86)

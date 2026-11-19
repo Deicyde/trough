@@ -29,10 +29,9 @@ Its statement uses no other declaration mapped here.
 
 ## Proof depends on
 
-- [Characters of the Grothendieck ring are ⋆-characters](characters-of-the-grothendieck-ring-are-characte.md)
-- [The Freyd–Yetter identity](the-freyd-yetter-identity.md)
+- [The Freyd–Yetter identity](../other-results/the-freyd-yetter-identity.md)
+- [Frobenius reciprocity in multiplicity form](../other-results/frobenius-reciprocity-in-multiplicity-form.md)
 - [Schur's lemma as an identification of algebras](../preadditive/schurs-lemma-as-an-identification-of-algebras.md)
-- [TauCeti.SplitK0.simpleBasis](tauceti-splitk0-simplebasis.md)
 
 ## Lean
 
@@ -41,5 +40,5 @@ Formalized in Tau Ceti as [`TauCeti.globalDim_ne_zero`](https://taucetiproject.o
 ## Sources
 
 - [Tau Ceti documentation: `TauCeti.globalDim_ne_zero`](https://taucetiproject.org/docs/TauCeti/CategoryTheory/Monoidal/Pivotal/Character.html#TauCeti.globalDim_ne_zero)
-- [Source of `TauCeti.globalDim_ne_zero` in TauCeti/CategoryTheory/Monoidal/Pivotal/Character.lean](https://github.com/TauCetiProject/TauCeti/blob/a6027b1d24fcb935c53bd5b50d11b40991cda418/TauCeti/CategoryTheory/Monoidal/Pivotal/Character.lean#L237)
-- [Tau Ceti roadmap status: Pivotal and spherical categories](https://github.com/TauCetiProject/TauCetiRoadmap/blob/9f7c032adaf1b838e8183d63ff3cfa886d061cb3/TauCetiRoadmap/PivotalSpherical/STATUS.md)
+- [Source of `TauCeti.globalDim_ne_zero` in TauCeti/CategoryTheory/Monoidal/Pivotal/Character.lean](https://github.com/TauCetiProject/TauCeti/blob/cd41bffcb343151b3e58c89392e206b11fe78c1c/TauCeti/CategoryTheory/Monoidal/Pivotal/Character.lean#L237)
+- [Tau Ceti roadmap status: Pivotal and spherical categories](https://github.com/TauCetiProject/TauCetiRoadmap/blob/612845ab80fb9c2b9bee724a156756ee78031591/TauCetiRoadmap/PivotalSpherical/STATUS.md)

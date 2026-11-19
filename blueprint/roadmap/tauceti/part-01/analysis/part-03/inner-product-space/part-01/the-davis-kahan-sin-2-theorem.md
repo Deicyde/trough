@@ -30,9 +30,7 @@ Its statement uses no other declaration mapped here.
 
 ## Proof depends on
 
-- [Courant–Fischer, lower direction](courant-fischer-lower-direction.md)
 - [The interval/exterior Sylvester bound](../part-02/the-interval-exterior-sylvester-bound.md)
-- [Ky Fan's maximum principle, attainment](../part-02/ky-fans-maximum-principle-attainment.md)
 
 ## Lean
 
@@ -41,4 +39,4 @@ Formalized in Tau Ceti as [`TauCeti.UnitarilyInvariantSeminorm.mul_map_sinTwoAng
 ## Sources
 
 - [Tau Ceti documentation: `TauCeti.UnitarilyInvariantSeminorm.mul_map_sinTwoAngleOperator_le_two_mul_map_sub`](https://taucetiproject.org/docs/TauCeti/Analysis/InnerProductSpace/UnitarilyInvariantSeminorm/SinTheta/DoubleAngle.html#TauCeti.UnitarilyInvariantSeminorm.mul_map_sinTwoAngleOperator_le_two_mul_map_sub)
-- [Source of `TauCeti.UnitarilyInvariantSeminorm.mul_map_sinTwoAngleOperator_le_two_mul_map_sub` in TauCeti/Analysis/InnerProductSpace/UnitarilyInvariantSeminorm/SinTheta/DoubleAngle.lean](https://github.com/TauCetiProject/TauCeti/blob/a6027b1d24fcb935c53bd5b50d11b40991cda418/TauCeti/Analysis/InnerProductSpace/UnitarilyInvariantSeminorm/SinTheta/DoubleAngle.lean#L69)
+- [Source of `TauCeti.UnitarilyInvariantSeminorm.mul_map_sinTwoAngleOperator_le_two_mul_map_sub` in TauCeti/Analysis/InnerProductSpace/UnitarilyInvariantSeminorm/SinTheta/DoubleAngle.lean](https://github.com/TauCetiProject/TauCeti/blob/cd41bffcb343151b3e58c89392e206b11fe78c1c/TauCeti/Analysis/InnerProductSpace/UnitarilyInvariantSeminorm/SinTheta/DoubleAngle.lean#L68)

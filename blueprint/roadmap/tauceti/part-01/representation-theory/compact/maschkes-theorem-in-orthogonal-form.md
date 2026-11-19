@@ -56,4 +56,4 @@ Formalized in Tau Ceti as [`ContRepresentation.exists_orthogonal_irreducible_dec
 ## Sources
 
 - [Tau Ceti documentation: `ContRepresentation.exists_orthogonal_irreducible_decomposition_of_finite`](https://taucetiproject.org/docs/TauCeti/RepresentationTheory/Compact/Finite.html#ContRepresentation.exists_orthogonal_irreducible_decomposition_of_finite)
-- [Source of `ContRepresentation.exists_orthogonal_irreducible_decomposition_of_finite` in TauCeti/RepresentationTheory/Compact/Finite.lean](https://github.com/TauCetiProject/TauCeti/blob/a6027b1d24fcb935c53bd5b50d11b40991cda418/TauCeti/RepresentationTheory/Compact/Finite.lean#L788)
+- [Source of `ContRepresentation.exists_orthogonal_irreducible_decomposition_of_finite` in TauCeti/RepresentationTheory/Compact/Finite.lean](https://github.com/TauCetiProject/TauCeti/blob/cd41bffcb343151b3e58c89392e206b11fe78c1c/TauCeti/RepresentationTheory/Compact/Finite.lean#L804)

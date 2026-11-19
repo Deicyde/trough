@@ -61,4 +61,4 @@ LinearMap.IsSymmetric.sin_two_theta_le.{u_1, u_2} {𝕜 : Type u_1} {E : Type u_
 ## Sources
 
 - [Tau Ceti documentation: `LinearMap.IsSymmetric.sin_two_arccos_le`](https://taucetiproject.org/docs/TauCeti/Analysis/InnerProductSpace/DoubleAngle/Vector.html#LinearMap.IsSymmetric.sin_two_arccos_le)
-- [Source of `LinearMap.IsSymmetric.sin_two_arccos_le` in TauCeti/Analysis/InnerProductSpace/DoubleAngle/Vector.lean](https://github.com/TauCetiProject/TauCeti/blob/a6027b1d24fcb935c53bd5b50d11b40991cda418/TauCeti/Analysis/InnerProductSpace/DoubleAngle/Vector.lean#L226)
+- [Source of `LinearMap.IsSymmetric.sin_two_arccos_le` in TauCeti/Analysis/InnerProductSpace/DoubleAngle/Vector.lean](https://github.com/TauCetiProject/TauCeti/blob/cd41bffcb343151b3e58c89392e206b11fe78c1c/TauCeti/Analysis/InnerProductSpace/DoubleAngle/Vector.lean#L226)

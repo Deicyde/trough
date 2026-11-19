@@ -65,4 +65,4 @@ TauCeti.Place.ramificationIdx_restrict_sup_of_isGalois.{u, v, w} {k : Type u} {F
 ## Sources
 
 - [Tau Ceti documentation: `TauCeti.Place.ramificationIdx_restrict_sup`](https://taucetiproject.org/docs/TauCeti/FieldTheory/FunctionField/Place/Extension/Abhyankar.html#TauCeti.Place.ramificationIdx_restrict_sup)
-- [Source of `TauCeti.Place.ramificationIdx_restrict_sup` in TauCeti/FieldTheory/FunctionField/Place/Extension/Abhyankar.lean](https://github.com/TauCetiProject/TauCeti/blob/a6027b1d24fcb935c53bd5b50d11b40991cda418/TauCeti/FieldTheory/FunctionField/Place/Extension/Abhyankar.lean#L133)
+- [Source of `TauCeti.Place.ramificationIdx_restrict_sup` in TauCeti/FieldTheory/FunctionField/Place/Extension/Abhyankar.lean](https://github.com/TauCetiProject/TauCeti/blob/cd41bffcb343151b3e58c89392e206b11fe78c1c/TauCeti/FieldTheory/FunctionField/Place/Extension/Abhyankar.lean#L130)

@@ -35,4 +35,4 @@ TauCeti.vertexStrongConnectivity_le_arcConnectivity.{u, v} {V : Type u} {Q : V â
 ## Sources
 
 - [Tau Ceti documentation: `TauCeti.IsVertexStrong.isArcStrong`](https://taucetiproject.org/docs/TauCeti/Combinatorics/Network/Connectivity/Basic.html#TauCeti.IsVertexStrong.isArcStrong)
-- [Source of `TauCeti.IsVertexStrong.isArcStrong` in TauCeti/Combinatorics/Network/Connectivity/Basic.lean](https://github.com/TauCetiProject/TauCeti/blob/a6027b1d24fcb935c53bd5b50d11b40991cda418/TauCeti/Combinatorics/Network/Connectivity/Basic.lean#L251)
+- [Source of `TauCeti.IsVertexStrong.isArcStrong` in TauCeti/Combinatorics/Network/Connectivity/Basic.lean](https://github.com/TauCetiProject/TauCeti/blob/cd41bffcb343151b3e58c89392e206b11fe78c1c/TauCeti/Combinatorics/Network/Connectivity/Basic.lean#L251)

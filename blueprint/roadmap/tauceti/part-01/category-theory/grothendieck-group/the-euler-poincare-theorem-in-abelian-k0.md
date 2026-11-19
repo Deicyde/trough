@@ -81,4 +81,4 @@ TauCeti.ExactK0.sum_negOnePow_of_X_eq_sum_negOnePow_of_homology.{w, v, u} {A : T
 ## Sources
 
 - [Tau Ceti documentation: `TauCeti.AbelianK0.eulerChar_eq_homologyEulerChar`](https://taucetiproject.org/docs/TauCeti/CategoryTheory/GrothendieckGroup/EulerCharacteristic.html#TauCeti.AbelianK0.eulerChar_eq_homologyEulerChar)
-- [Source of `TauCeti.AbelianK0.eulerChar_eq_homologyEulerChar` in TauCeti/CategoryTheory/GrothendieckGroup/EulerCharacteristic.lean](https://github.com/TauCetiProject/TauCeti/blob/a6027b1d24fcb935c53bd5b50d11b40991cda418/TauCeti/CategoryTheory/GrothendieckGroup/EulerCharacteristic.lean#L366)
+- [Source of `TauCeti.AbelianK0.eulerChar_eq_homologyEulerChar` in TauCeti/CategoryTheory/GrothendieckGroup/EulerCharacteristic.lean](https://github.com/TauCetiProject/TauCeti/blob/cd41bffcb343151b3e58c89392e206b11fe78c1c/TauCeti/CategoryTheory/GrothendieckGroup/EulerCharacteristic.lean#L366)

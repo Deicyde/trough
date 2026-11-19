@@ -36,4 +36,4 @@ Formalized in Tau Ceti as [`ContinuousLinearMap.mul_norm_le_norm_sylvester_apply
 ## Sources
 
 - [Tau Ceti documentation: `ContinuousLinearMap.mul_norm_le_norm_sylvester_apply_of_re_inner_le_of_le_re_inner`](https://taucetiproject.org/docs/TauCeti/Analysis/InnerProductSpace/Sylvester.html#ContinuousLinearMap.mul_norm_le_norm_sylvester_apply_of_re_inner_le_of_le_re_inner)
-- [Source of `ContinuousLinearMap.mul_norm_le_norm_sylvester_apply_of_re_inner_le_of_le_re_inner` in TauCeti/Analysis/InnerProductSpace/Sylvester.lean](https://github.com/TauCetiProject/TauCeti/blob/a6027b1d24fcb935c53bd5b50d11b40991cda418/TauCeti/Analysis/InnerProductSpace/Sylvester.lean#L188)
+- [Source of `ContinuousLinearMap.mul_norm_le_norm_sylvester_apply_of_re_inner_le_of_le_re_inner` in TauCeti/Analysis/InnerProductSpace/Sylvester.lean](https://github.com/TauCetiProject/TauCeti/blob/cd41bffcb343151b3e58c89392e206b11fe78c1c/TauCeti/Analysis/InnerProductSpace/Sylvester.lean#L189)

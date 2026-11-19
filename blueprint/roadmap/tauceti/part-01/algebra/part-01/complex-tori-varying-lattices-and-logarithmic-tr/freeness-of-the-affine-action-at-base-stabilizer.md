@@ -23,7 +23,6 @@ TauCeti.isCancelSMul_torusFamilyAffineMulAction_iff.{u_1, u_2, u_3, u_4} {Y : Ty
   (hP : ∀ (g : Γ) (y : Y) (l : Λ), (P (g • y)) ((ρ g) l) = (R g y) ((P y) l))
   (b : Γ → Y → AddAction.orbitRel.Quotient Λ (Y × E))
   (hb : ∀ (g : Γ) (y : Y), TauCeti.torusFamilyProjection P (b g y) = g • y)
-  (hbone : ∀ (y : Y), b 1 y = ⟦(y, 0)⟧)
   (hbmul :
     ∀ (g h : Γ) (y : Y), b (g * h) y = TauCeti.torusFamilyAffineMap R P ρ hP b hb g (b h y)) :
   IsCancelSMul Γ (AddAction.orbitRel.Quotient Λ (Y × E)) ↔
@@ -45,5 +44,5 @@ Formalized in Tau Ceti as [`TauCeti.isCancelSMul_torusFamilyAffineMulAction_iff`
 ## Sources
 
 - [Tau Ceti documentation: `TauCeti.isCancelSMul_torusFamilyAffineMulAction_iff`](https://taucetiproject.org/docs/TauCeti/Algebra/Module/ZLattice/Family/Stabilizer.html#TauCeti.isCancelSMul_torusFamilyAffineMulAction_iff)
-- [Source of `TauCeti.isCancelSMul_torusFamilyAffineMulAction_iff` in TauCeti/Algebra/Module/ZLattice/Family/Stabilizer.lean](https://github.com/TauCetiProject/TauCeti/blob/a6027b1d24fcb935c53bd5b50d11b40991cda418/TauCeti/Algebra/Module/ZLattice/Family/Stabilizer.lean#L309)
-- [Tau Ceti roadmap status: Complex tori: varying lattices and logarithmic transforms](https://github.com/TauCetiProject/TauCetiRoadmap/blob/9f7c032adaf1b838e8183d63ff3cfa886d061cb3/TauCetiRoadmap/ComplexTori/STATUS.md)
+- [Source of `TauCeti.isCancelSMul_torusFamilyAffineMulAction_iff` in TauCeti/Algebra/Module/ZLattice/Family/Stabilizer.lean](https://github.com/TauCetiProject/TauCeti/blob/cd41bffcb343151b3e58c89392e206b11fe78c1c/TauCeti/Algebra/Module/ZLattice/Family/Stabilizer.lean#L332)
+- [Tau Ceti roadmap status: Complex tori: varying lattices and logarithmic transforms](https://github.com/TauCetiProject/TauCetiRoadmap/blob/612845ab80fb9c2b9bee724a156756ee78031591/TauCetiRoadmap/ComplexTori/STATUS.md)

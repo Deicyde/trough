@@ -1,0 +1,23 @@
+{
+ "schema": "trough-ledger/v1",
+ "library": "CSLib",
+ "repo": "leanprover/cslib",
+ "rev": "86d560b6cbb379bd82512424cbcd2a915a1565e7",
+ "module": "Cslib.Computability.Languages.Congruences.MyhillCongruence",
+ "file": "Cslib/Computability/Languages/Congruences/MyhillCongruence.lean",
+ "public": [
+  {"name": "Language.MyhillCongruence", "kind": "def", "line": 35},
+  {"name": "Language.MyhillQuotient", "kind": "abbrev", "line": 44},
+  {"name": "Language.nerodeMap", "kind": "def", "line": 48},
+  {"name": "Language.nerodeMap_append", "kind": "theorem", "line": 51},
+  {"name": "Language.nerodeMap_accept", "kind": "theorem", "line": 56},
+  {"name": "Language.myhillCongruence_iff", "kind": "theorem", "line": 62},
+  {"name": "Language.IsRegular.finite_myhillQuotient", "kind": "theorem", "line": 73},
+  {"name": "Language.myhillCongruenceDA", "kind": "def", "line": 84},
+  {"name": "Language.myhillCongruenceDA_language_eq", "kind": "theorem", "line": 89},
+  {"name": "Language.IsRegular.iff_finite_myhillQuotient", "kind": "theorem", "line": 104}
+ ],
+ "private": [],
+ "missing": [],
+ "unread": "Unnamed instances, the names an `alias ⟨…⟩` command gives, and the names Lean generates for a declaration (constructors, recursors, derived instances) are not read from the source, so they are not listed."
+}

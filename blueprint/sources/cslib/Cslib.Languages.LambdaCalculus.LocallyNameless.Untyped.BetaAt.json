@@ -1,0 +1,33 @@
+{
+ "schema": "trough-ledger/v1",
+ "library": "CSLib",
+ "repo": "leanprover/cslib",
+ "rev": "86d560b6cbb379bd82512424cbcd2a915a1565e7",
+ "module": "Cslib.Languages.LambdaCalculus.LocallyNameless.Untyped.BetaAt",
+ "file": "Cslib/Languages/LambdaCalculus/LocallyNameless/Untyped/BetaAt.lean",
+ "public": [
+  {"name": "Cslib.LambdaCalculus.LocallyNameless.Untyped.Term.countRedexes", "kind": "def", "line": 35},
+  {"name": "Cslib.LambdaCalculus.LocallyNameless.Untyped.Term.BetaAt", "kind": "inductive", "line": 44},
+  {"name": "Cslib.LambdaCalculus.LocallyNameless.Untyped.Term.BetaAt.appNoAbsL", "kind": "lemma", "line": 59},
+  {"name": "Cslib.LambdaCalculus.LocallyNameless.Untyped.Term.BetaAt.appAbsL", "kind": "lemma", "line": 64},
+  {"name": "Cslib.LambdaCalculus.LocallyNameless.Untyped.Term.BetaAt.appNoAbsR", "kind": "lemma", "line": 69},
+  {"name": "Cslib.LambdaCalculus.LocallyNameless.Untyped.Term.BetaAt.appAbsR", "kind": "lemma", "line": 74},
+  {"name": "Cslib.LambdaCalculus.LocallyNameless.Untyped.Term.countRedexes_openRec_fvar", "kind": "lemma", "line": 79},
+  {"name": "Cslib.LambdaCalculus.LocallyNameless.Untyped.Term.countRedexes_open_fvar", "kind": "lemma", "line": 88},
+  {"name": "Cslib.LambdaCalculus.LocallyNameless.Untyped.Term.countRedexes_app_le", "kind": "lemma", "line": 93},
+  {"name": "Cslib.LambdaCalculus.LocallyNameless.Untyped.Term.countRedexes_app_abs", "kind": "lemma", "line": 98},
+  {"name": "Cslib.LambdaCalculus.LocallyNameless.Untyped.Term.BetaAt.isAbs_r", "kind": "lemma", "line": 103},
+  {"name": "Cslib.LambdaCalculus.LocallyNameless.Untyped.Term.cbn_not_isAbs", "kind": "lemma", "line": 109},
+  {"name": "Cslib.LambdaCalculus.LocallyNameless.Untyped.Term.BetaAt.of_cbn_step", "kind": "lemma", "line": 115},
+  {"name": "Cslib.LambdaCalculus.LocallyNameless.Untyped.Term.countRedexes_subst_fvar", "kind": "lemma", "line": 123},
+  {"name": "Cslib.LambdaCalculus.LocallyNameless.Untyped.Term.isAbs_subst_fvar", "kind": "lemma", "line": 132},
+  {"name": "Cslib.LambdaCalculus.LocallyNameless.Untyped.Term.BetaAt.to_step", "kind": "lemma", "line": 136},
+  {"name": "Cslib.LambdaCalculus.LocallyNameless.Untyped.Term.BetaAt.le_countRedexes", "kind": "lemma", "line": 155},
+  {"name": "Cslib.LambdaCalculus.LocallyNameless.Untyped.Term.BetaAt.rename", "kind": "lemma", "line": 175},
+  {"name": "Cslib.LambdaCalculus.LocallyNameless.Untyped.Term.BetaAt.lc_r", "kind": "lemma", "line": 195},
+  {"name": "Cslib.LambdaCalculus.LocallyNameless.Untyped.Term.BetaAt.abs_close", "kind": "lemma", "line": 212}
+ ],
+ "private": [],
+ "missing": [],
+ "unread": "Unnamed instances, the names an `alias ⟨…⟩` command gives, and the names Lean generates for a declaration (constructors, recursors, derived instances) are not read from the source, so they are not listed."
+}

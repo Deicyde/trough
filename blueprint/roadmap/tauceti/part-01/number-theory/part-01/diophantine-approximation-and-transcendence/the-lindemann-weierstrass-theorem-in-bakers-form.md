@@ -24,7 +24,7 @@ Its statement uses no other declaration mapped here.
 
 ## Proof depends on
 
-- [The weak Lindemann–Weierstrass theorem](../../part-02/transcendental/the-weak-lindemann-weierstrass-theorem.md)
+- [The weak Lindemann–Weierstrass theorem](../../part-03/transcendental/the-weak-lindemann-weierstrass-theorem.md)
 
 ## Lean
 
@@ -58,5 +58,5 @@ TauCeti.LindemannWeierstrass.linearIndependent_exp_algebraMap.{u_1} {K : Type u_
 ## Sources
 
 - [Tau Ceti documentation: `TauCeti.linearIndependent_exp`](https://taucetiproject.org/docs/TauCeti/NumberTheory/Transcendental/Lindemann/Theorem.html#TauCeti.linearIndependent_exp)
-- [Source of `TauCeti.linearIndependent_exp` in TauCeti/NumberTheory/Transcendental/Lindemann/Theorem.lean](https://github.com/TauCetiProject/TauCeti/blob/a6027b1d24fcb935c53bd5b50d11b40991cda418/TauCeti/NumberTheory/Transcendental/Lindemann/Theorem.lean#L50)
-- [Tau Ceti roadmap status: Diophantine approximation and transcendence](https://github.com/TauCetiProject/TauCetiRoadmap/blob/9f7c032adaf1b838e8183d63ff3cfa886d061cb3/TauCetiRoadmap/DiophantineApproximationAndTranscendence/STATUS.md)
+- [Source of `TauCeti.linearIndependent_exp` in TauCeti/NumberTheory/Transcendental/Lindemann/Theorem.lean](https://github.com/TauCetiProject/TauCeti/blob/cd41bffcb343151b3e58c89392e206b11fe78c1c/TauCeti/NumberTheory/Transcendental/Lindemann/Theorem.lean#L50)
+- [Tau Ceti roadmap status: Diophantine approximation and transcendence](https://github.com/TauCetiProject/TauCetiRoadmap/blob/612845ab80fb9c2b9bee724a156756ee78031591/TauCetiRoadmap/DiophantineApproximationAndTranscendence/STATUS.md)

@@ -1,0 +1,18 @@
+{
+ "schema": "trough-ledger/v1",
+ "library": "CSLib",
+ "repo": "leanprover/cslib",
+ "rev": "86d560b6cbb379bd82512424cbcd2a915a1565e7",
+ "module": "Cslib.Foundations.Semantics.FLTS.FLTSToLTS",
+ "file": "Cslib/Foundations/Semantics/FLTS/FLTSToLTS.lean",
+ "public": [
+  {"name": "Cslib.FLTS.toLTS", "kind": "def", "line": 22},
+  {"name": "Cslib.FLTS.toLTS_tr", "kind": "theorem", "line": 30},
+  {"name": "Cslib.FLTS.toLTS_deterministic", "kind": "instance", "line": 35},
+  {"name": "Cslib.FLTS.toLTS_imageFinite", "kind": "instance", "line": 40},
+  {"name": "Cslib.FLTS.toLTS_mtr", "kind": "theorem", "line": 46}
+ ],
+ "private": [],
+ "missing": [],
+ "unread": "Unnamed instances, the names an `alias ⟨…⟩` command gives, and the names Lean generates for a declaration (constructors, recursors, derived instances) are not read from the source, so they are not listed."
+}

@@ -36,4 +36,4 @@ Subgroup.inf_sup_assoc_of_le.{u_1} {G : Type u_1} [Group G] {H K N : Subgroup G}
 ## Sources
 
 - [Tau Ceti documentation: `AddSubgroup.inf_sup_assoc_of_le`](https://taucetiproject.org/docs/TauCeti/Algebra/Group/Subgroup/ModularLaw.html#AddSubgroup.inf_sup_assoc_of_le)
-- [Source of `AddSubgroup.inf_sup_assoc_of_le` in TauCeti/Algebra/Group/Subgroup/ModularLaw.lean](https://github.com/TauCetiProject/TauCeti/blob/a6027b1d24fcb935c53bd5b50d11b40991cda418/TauCeti/Algebra/Group/Subgroup/ModularLaw.lean#L37)
+- [Source of `AddSubgroup.inf_sup_assoc_of_le` in TauCeti/Algebra/Group/Subgroup/ModularLaw.lean](https://github.com/TauCetiProject/TauCeti/blob/cd41bffcb343151b3e58c89392e206b11fe78c1c/TauCeti/Algebra/Group/Subgroup/ModularLaw.lean#L37)

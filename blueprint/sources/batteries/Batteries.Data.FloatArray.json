@@ -1,0 +1,16 @@
+{
+ "schema": "trough-ledger/v1",
+ "library": "Batteries",
+ "repo": "leanprover-community/batteries",
+ "rev": "b4b25a3886a16daacaf6615c2eea7170a6e8f458",
+ "module": "Batteries.Data.FloatArray",
+ "file": "Batteries/Data/FloatArray.lean",
+ "public": [
+  {"name": "FloatArray.mapMUnsafe", "kind": "def", "line": 21},
+  {"name": "FloatArray.mapM", "kind": "def", "line": 36},
+  {"name": "FloatArray.map", "kind": "def", "line": 44}
+ ],
+ "private": [],
+ "missing": [],
+ "unread": "Unnamed instances, the names an `alias ⟨…⟩` command gives, and the names Lean generates for a declaration (constructors, recursors, derived instances) are not read from the source, so they are not listed."
+}

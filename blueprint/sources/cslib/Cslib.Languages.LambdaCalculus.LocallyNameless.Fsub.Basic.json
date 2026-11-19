@@ -1,0 +1,21 @@
+{
+ "schema": "trough-ledger/v1",
+ "library": "CSLib",
+ "repo": "leanprover/cslib",
+ "rev": "86d560b6cbb379bd82512424cbcd2a915a1565e7",
+ "module": "Cslib.Languages.LambdaCalculus.LocallyNameless.Fsub.Basic",
+ "file": "Cslib/Languages/LambdaCalculus/LocallyNameless/Fsub/Basic.lean",
+ "public": [
+  {"name": "Cslib.LambdaCalculus.LocallyNameless.Fsub.Ty", "kind": "inductive", "line": 33},
+  {"name": "Cslib.LambdaCalculus.LocallyNameless.Fsub.Term", "kind": "inductive", "line": 49},
+  {"name": "Cslib.LambdaCalculus.LocallyNameless.Fsub.Binding", "kind": "inductive", "line": 72},
+  {"name": "Cslib.LambdaCalculus.LocallyNameless.Fsub.Ty.fv", "kind": "def", "line": 81},
+  {"name": "Cslib.LambdaCalculus.LocallyNameless.Fsub.Binding.fv", "kind": "def", "line": 88},
+  {"name": "Cslib.LambdaCalculus.LocallyNameless.Fsub.Term.fvTy", "kind": "def", "line": 93},
+  {"name": "Cslib.LambdaCalculus.LocallyNameless.Fsub.Term.fvTm", "kind": "def", "line": 102},
+  {"name": "Cslib.LambdaCalculus.LocallyNameless.Fsub.Env", "kind": "abbrev", "line": 110}
+ ],
+ "private": [],
+ "missing": [],
+ "unread": "Unnamed instances, the names an `alias ⟨…⟩` command gives, and the names Lean generates for a declaration (constructors, recursors, derived instances) are not read from the source, so they are not listed."
+}

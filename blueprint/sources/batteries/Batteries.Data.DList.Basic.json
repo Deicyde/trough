@@ -1,0 +1,24 @@
+{
+ "schema": "trough-ledger/v1",
+ "library": "Batteries",
+ "repo": "leanprover-community/batteries",
+ "rev": "b4b25a3886a16daacaf6615c2eea7170a6e8f458",
+ "module": "Batteries.Data.DList.Basic",
+ "file": "Batteries/Data/DList/Basic.lean",
+ "public": [
+  {"name": "Batteries.DList", "kind": "structure", "line": 17},
+  {"name": "Batteries.DList.ofList", "kind": "def", "line": 30},
+  {"name": "Batteries.DList.empty", "kind": "def", "line": 34},
+  {"name": "Batteries.DList.toList", "kind": "def", "line": 42},
+  {"name": "Batteries.DList.toList_mk", "kind": "theorem", "line": 45},
+  {"name": "Batteries.DList.singleton", "kind": "def", "line": 48},
+  {"name": "Batteries.DList.cons", "kind": "def", "line": 53},
+  {"name": "Batteries.DList.append", "kind": "def", "line": 60},
+  {"name": "Batteries.DList.push", "kind": "def", "line": 70},
+  {"name": "Batteries.DList.ofThunk", "kind": "def", "line": 83},
+  {"name": "Batteries.DList.join", "kind": "def", "line": 88}
+ ],
+ "private": [],
+ "missing": [],
+ "unread": "Unnamed instances, the names an `alias ⟨…⟩` command gives, and the names Lean generates for a declaration (constructors, recursors, derived instances) are not read from the source, so they are not listed."
+}

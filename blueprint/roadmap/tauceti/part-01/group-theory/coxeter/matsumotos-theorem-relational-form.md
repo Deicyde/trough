@@ -48,4 +48,4 @@ TauCeti.matsumoto.{u_1, u_2, u_3} {B : Type u_1} {W : Type u_2} [Group W] {M : C
 ## Sources
 
 - [Tau Ceti documentation: `TauCeti.braidEquivalent_of_isReduced_wordProd_eq`](https://taucetiproject.org/docs/TauCeti/GroupTheory/Coxeter/Matsumoto.html#TauCeti.braidEquivalent_of_isReduced_wordProd_eq)
-- [Source of `TauCeti.braidEquivalent_of_isReduced_wordProd_eq` in TauCeti/GroupTheory/Coxeter/Matsumoto.lean](https://github.com/TauCetiProject/TauCeti/blob/a6027b1d24fcb935c53bd5b50d11b40991cda418/TauCeti/GroupTheory/Coxeter/Matsumoto.lean#L81)
+- [Source of `TauCeti.braidEquivalent_of_isReduced_wordProd_eq` in TauCeti/GroupTheory/Coxeter/Matsumoto.lean](https://github.com/TauCetiProject/TauCeti/blob/cd41bffcb343151b3e58c89392e206b11fe78c1c/TauCeti/GroupTheory/Coxeter/Matsumoto.lean#L81)

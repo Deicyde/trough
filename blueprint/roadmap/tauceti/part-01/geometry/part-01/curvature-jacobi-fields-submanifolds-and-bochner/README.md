@@ -1,15 +1,13 @@
 # Curvature, Jacobi fields, submanifolds, and Bochner geometry
 
-The declarations the status of Tau Ceti's [roadmap](https://github.com/TauCetiProject/TauCetiRoadmap/blob/9f7c032adaf1b838e8183d63ff3cfa886d061cb3/TauCetiRoadmap/RiemannianGeometry/README.md) names, and the other results named in the modules where only this status names declarations, or in folders below the areas where only it names 2 or more, as Tau Ceti has them at commit [a6027b1d](https://github.com/TauCetiProject/TauCeti/tree/a6027b1d24fcb935c53bd5b50d11b40991cda418).
+The declarations the status of Tau Ceti's [roadmap](https://github.com/TauCetiProject/TauCetiRoadmap/blob/612845ab80fb9c2b9bee724a156756ee78031591/TauCetiRoadmap/RiemannianGeometry/README.md) names as Tau Ceti has them at commit [cd41bffc](https://github.com/TauCetiProject/TauCeti/tree/cd41bffcb343151b3e58c89392e206b11fe78c1c).
 
+- [Rauch comparison under an upper sectional curvature bound](rauch-comparison-under-an-upper-sectional-curvat.md)
+- [Bundle.ContMDiffRiemannianMetric.forall_curvatureTensor_leviCivitaConnection_eq_zero_iff](bundle-contmdiffriemannianmetric-forall-curvatur.md)
 - [The Lichnerowicz estimate](the-lichnerowicz-estimate.md)
-- [The Bochner formula](the-bochner-formula.md)
-- [Einstein's constancy theorem](einsteins-constancy-theorem.md)
 - [TauCeti.Manifold.IsJacobiFieldOn.exists_geodesicVariation_of_isCompact](tauceti-manifold-isjacobifieldon-exists-geodesic.md)
-- [The first variation of length](the-first-variation-of-length.md)
-- [Uniform quadratic expansion of the exponential metric](uniform-quadratic-expansion-of-the-exponential-m.md)
+- [The scalar Jacobi equation for the polar Jacobian](the-scalar-jacobi-equation-for-the-polar-jacobia.md)
 - [TauCeti.Manifold.IsJacobiFieldOn](tauceti-manifold-isjacobifieldon.md)
-- [TauCeti.curvatureCotangent](tauceti-curvaturecotangent.md)
 - [TauCeti.Manifold.polarJacobian](tauceti-manifold-polarjacobian.md)
-- [Change of variables](change-of-variables.md)
-- [The contracted Ricci identity for the gradient](the-contracted-ricci-identity-for-the-gradient.md)
+- [TauCeti.Manifold.geodesicCircle](tauceti-manifold-geodesiccircle.md)
+- [TauCeti.discreteEnergyStrictSublevel](tauceti-discreteenergystrictsublevel.md)

@@ -42,4 +42,4 @@ TauCeti.exists_isCellular_homotopic.{w} {X Y : Type w} [TopologicalSpace X] [T2S
 ## Sources
 
 - [Tau Ceti documentation: `TauCeti.exists_isCellular_homotopicRel`](https://taucetiproject.org/docs/TauCeti/Topology/CWComplex/Classical/CellularApproximation.html#TauCeti.exists_isCellular_homotopicRel)
-- [Source of `TauCeti.exists_isCellular_homotopicRel` in TauCeti/Topology/CWComplex/Classical/CellularApproximation.lean](https://github.com/TauCetiProject/TauCeti/blob/a6027b1d24fcb935c53bd5b50d11b40991cda418/TauCeti/Topology/CWComplex/Classical/CellularApproximation.lean#L91)
+- [Source of `TauCeti.exists_isCellular_homotopicRel` in TauCeti/Topology/CWComplex/Classical/CellularApproximation.lean](https://github.com/TauCetiProject/TauCeti/blob/cd41bffcb343151b3e58c89392e206b11fe78c1c/TauCeti/Topology/CWComplex/Classical/CellularApproximation.lean#L91)

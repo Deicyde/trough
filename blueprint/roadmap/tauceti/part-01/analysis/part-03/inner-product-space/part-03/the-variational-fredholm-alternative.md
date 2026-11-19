@@ -32,4 +32,4 @@ Formalized in Tau Ceti as [`IsCoercive.fredholmAlternative_formPerturbation`](ht
 ## Sources
 
 - [Tau Ceti documentation: `IsCoercive.fredholmAlternative_formPerturbation`](https://taucetiproject.org/docs/TauCeti/Analysis/InnerProductSpace/Variational/Fredholm.html#IsCoercive.fredholmAlternative_formPerturbation)
-- [Source of `IsCoercive.fredholmAlternative_formPerturbation` in TauCeti/Analysis/InnerProductSpace/Variational/Fredholm.lean](https://github.com/TauCetiProject/TauCeti/blob/a6027b1d24fcb935c53bd5b50d11b40991cda418/TauCeti/Analysis/InnerProductSpace/Variational/Fredholm.lean#L128)
+- [Source of `IsCoercive.fredholmAlternative_formPerturbation` in TauCeti/Analysis/InnerProductSpace/Variational/Fredholm.lean](https://github.com/TauCetiProject/TauCeti/blob/cd41bffcb343151b3e58c89392e206b11fe78c1c/TauCeti/Analysis/InnerProductSpace/Variational/Fredholm.lean#L125)

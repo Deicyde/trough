@@ -49,7 +49,7 @@ Its statement uses no other declaration mapped here.
 
 ## Proof depends on
 
-- [Evertse's lemma](../../../analysis/part-03/other-results/evertses-lemma.md)
+- [Evertse's lemma](../../../analysis/part-04/other-results/evertses-lemma.md)
 
 ## Lean
 
@@ -85,5 +85,5 @@ NumberField.exists_evertse_unweighted.{u_1, u_2} {K : Type u_1} [Field K] [Numbe
 ## Sources
 
 - [Tau Ceti documentation: `NumberField.exists_evertse`](https://taucetiproject.org/docs/TauCeti/NumberTheory/NumberField/Global/Approximation/Evertse.html#NumberField.exists_evertse)
-- [Source of `NumberField.exists_evertse` in TauCeti/NumberTheory/NumberField/Global/Approximation/Evertse.lean](https://github.com/TauCetiProject/TauCeti/blob/a6027b1d24fcb935c53bd5b50d11b40991cda418/TauCeti/NumberTheory/NumberField/Global/Approximation/Evertse.lean#L62)
-- [Tau Ceti roadmap status: Roth's theorem and the Subspace Theorem over number fields](https://github.com/TauCetiProject/TauCetiRoadmap/blob/9f7c032adaf1b838e8183d63ff3cfa886d061cb3/TauCetiRoadmap/SubspaceTheorem/STATUS.md)
+- [Source of `NumberField.exists_evertse` in TauCeti/NumberTheory/NumberField/Global/Approximation/Evertse.lean](https://github.com/TauCetiProject/TauCeti/blob/cd41bffcb343151b3e58c89392e206b11fe78c1c/TauCeti/NumberTheory/NumberField/Global/Approximation/Evertse.lean#L62)
+- [Tau Ceti roadmap status: Roth's theorem and the Subspace Theorem over number fields](https://github.com/TauCetiProject/TauCetiRoadmap/blob/612845ab80fb9c2b9bee724a156756ee78031591/TauCetiRoadmap/SubspaceTheorem/STATUS.md)

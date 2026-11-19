@@ -34,4 +34,4 @@ Formalized in Tau Ceti as [`TauCeti.card_sq_lt_four_mul_card_of_relations_le_spa
 ## Sources
 
 - [Tau Ceti documentation: `TauCeti.card_sq_lt_four_mul_card_of_relations_le_span`](https://taucetiproject.org/docs/TauCeti/RingTheory/Ideal/GolodShafarevich.html#TauCeti.card_sq_lt_four_mul_card_of_relations_le_span)
-- [Source of `TauCeti.card_sq_lt_four_mul_card_of_relations_le_span` in TauCeti/RingTheory/Ideal/GolodShafarevich.lean](https://github.com/TauCetiProject/TauCeti/blob/a6027b1d24fcb935c53bd5b50d11b40991cda418/TauCeti/RingTheory/Ideal/GolodShafarevich.lean#L65)
+- [Source of `TauCeti.card_sq_lt_four_mul_card_of_relations_le_span` in TauCeti/RingTheory/Ideal/GolodShafarevich.lean](https://github.com/TauCetiProject/TauCeti/blob/cd41bffcb343151b3e58c89392e206b11fe78c1c/TauCeti/RingTheory/Ideal/GolodShafarevich.lean#L65)

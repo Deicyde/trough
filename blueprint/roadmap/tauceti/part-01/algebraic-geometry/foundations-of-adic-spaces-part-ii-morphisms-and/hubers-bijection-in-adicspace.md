@@ -27,10 +27,6 @@ TauCeti.AdicSpace.ofPairHomEquiv.{u} {A : Type u} [CommRing A] [UniformSpace A]
 - [Adic spaces (Wedhorn, Definition 8.22)](../foundations-of-adic-spaces/adic-spaces-wedhorn-definition-8-22.md)
 - [TauCeti.AdicSpace.ofPair](tauceti-adicspace-ofpair.md)
 
-## Proof depends on
-
-- [Ideals contained in supports](../foundations-of-adic-spaces/ideals-contained-in-supports.md)
-
 ## Lean
 
 Formalized in Tau Ceti as [`TauCeti.AdicSpace.ofPairHomEquiv`](https://taucetiproject.org/docs/TauCeti/AlgebraicGeometry/AdicSpace/Affinoid.html#TauCeti.AdicSpace.ofPairHomEquiv).
@@ -38,5 +34,5 @@ Formalized in Tau Ceti as [`TauCeti.AdicSpace.ofPairHomEquiv`](https://taucetipr
 ## Sources
 
 - [Tau Ceti documentation: `TauCeti.AdicSpace.ofPairHomEquiv`](https://taucetiproject.org/docs/TauCeti/AlgebraicGeometry/AdicSpace/Affinoid.html#TauCeti.AdicSpace.ofPairHomEquiv)
-- [Source of `TauCeti.AdicSpace.ofPairHomEquiv` in TauCeti/AlgebraicGeometry/AdicSpace/Affinoid.lean](https://github.com/TauCetiProject/TauCeti/blob/a6027b1d24fcb935c53bd5b50d11b40991cda418/TauCeti/AlgebraicGeometry/AdicSpace/Affinoid.lean#L452)
-- [Tau Ceti roadmap status: Foundations of adic spaces, part II — morphisms and analytification](https://github.com/TauCetiProject/TauCetiRoadmap/blob/9f7c032adaf1b838e8183d63ff3cfa886d061cb3/TauCetiRoadmap/AdicSpacesPartII/STATUS.md)
+- [Source of `TauCeti.AdicSpace.ofPairHomEquiv` in TauCeti/AlgebraicGeometry/AdicSpace/Affinoid.lean](https://github.com/TauCetiProject/TauCeti/blob/cd41bffcb343151b3e58c89392e206b11fe78c1c/TauCeti/AlgebraicGeometry/AdicSpace/Affinoid.lean#L452)
+- [Tau Ceti roadmap status: Foundations of adic spaces, part II — morphisms and analytification](https://github.com/TauCetiProject/TauCetiRoadmap/blob/612845ab80fb9c2b9bee724a156756ee78031591/TauCetiRoadmap/AdicSpacesPartII/STATUS.md)

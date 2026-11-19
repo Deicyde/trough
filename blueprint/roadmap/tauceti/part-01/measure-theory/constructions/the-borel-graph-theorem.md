@@ -52,4 +52,4 @@ TauCeti.analyticSet_graph_iff_measurable.{u_1, u_2} {X : Type u_1} {Y : Type u_2
 ## Sources
 
 - [Tau Ceti documentation: `TauCeti.measurableSet_graph_iff_measurable`](https://taucetiproject.org/docs/TauCeti/MeasureTheory/Constructions/Polish/Graph.html#TauCeti.measurableSet_graph_iff_measurable)
-- [Source of `TauCeti.measurableSet_graph_iff_measurable` in TauCeti/MeasureTheory/Constructions/Polish/Graph.lean](https://github.com/TauCetiProject/TauCeti/blob/a6027b1d24fcb935c53bd5b50d11b40991cda418/TauCeti/MeasureTheory/Constructions/Polish/Graph.lean#L158)
+- [Source of `TauCeti.measurableSet_graph_iff_measurable` in TauCeti/MeasureTheory/Constructions/Polish/Graph.lean](https://github.com/TauCetiProject/TauCeti/blob/cd41bffcb343151b3e58c89392e206b11fe78c1c/TauCeti/MeasureTheory/Constructions/Polish/Graph.lean#L158)

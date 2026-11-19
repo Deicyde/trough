@@ -31,8 +31,8 @@ Its statement uses no other declaration mapped here.
 ## Proof depends on
 
 - [Hadamard's identity in the algebra of smooth functions](hadamards-identity-in-the-algebra-of-smooth-func.md)
-- [Hadamard's lemma along a graph](../../../../analysis/part-02/analytic/hadamards-lemma-along-a-graph.md)
-- [Taylor's formula in coordinates](../part-03/taylors-formula-in-coordinates.md)
+- [Hadamard's lemma along a graph](../../../../analysis/part-03/analytic/hadamards-lemma-along-a-graph.md)
+- [Taylor's formula in coordinates](../part-05/taylors-formula-in-coordinates.md)
 
 ## Lean
 
@@ -101,4 +101,4 @@ TauCeti.mem_smoothVanishingIdeal_pow_succ_of_iteratedFDeriv_eq_zero.{u_1, u_2, u
 ## Sources
 
 - [Tau Ceti documentation: `Module.Basis.smoothVanishingIdeal_eq_span`](https://taucetiproject.org/docs/TauCeti/Geometry/Manifold/Algebra/VanishingIdeal/Basic.html#Module.Basis.smoothVanishingIdeal_eq_span)
-- [Source of `Module.Basis.smoothVanishingIdeal_eq_span` in TauCeti/Geometry/Manifold/Algebra/VanishingIdeal/Basic.lean](https://github.com/TauCetiProject/TauCeti/blob/a6027b1d24fcb935c53bd5b50d11b40991cda418/TauCeti/Geometry/Manifold/Algebra/VanishingIdeal/Basic.lean#L557)
+- [Source of `Module.Basis.smoothVanishingIdeal_eq_span` in TauCeti/Geometry/Manifold/Algebra/VanishingIdeal/Basic.lean](https://github.com/TauCetiProject/TauCeti/blob/cd41bffcb343151b3e58c89392e206b11fe78c1c/TauCeti/Geometry/Manifold/Algebra/VanishingIdeal/Basic.lean#L565)

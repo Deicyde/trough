@@ -34,7 +34,7 @@ Its statement uses no other declaration mapped here.
 
 ## Proof depends on
 
-- [The fundamental theorem of calculus for line integrals](the-fundamental-theorem-of-calculus-for-line-int.md)
+- [The fundamental theorem of calculus for line integrals](../part-02/the-fundamental-theorem-of-calculus-for-line-int.md)
 
 ## Lean
 
@@ -43,4 +43,4 @@ Formalized in Tau Ceti as [`TauCeti.pathIntegral_comp_eq_sub_of_mpullback_eq`](h
 ## Sources
 
 - [Tau Ceti documentation: `TauCeti.pathIntegral_comp_eq_sub_of_mpullback_eq`](https://taucetiproject.org/docs/TauCeti/Geometry/Manifold/DifferentialForm/Integration/Path.html#TauCeti.pathIntegral_comp_eq_sub_of_mpullback_eq)
-- [Source of `TauCeti.pathIntegral_comp_eq_sub_of_mpullback_eq` in TauCeti/Geometry/Manifold/DifferentialForm/Integration/Path.lean](https://github.com/TauCetiProject/TauCeti/blob/a6027b1d24fcb935c53bd5b50d11b40991cda418/TauCeti/Geometry/Manifold/DifferentialForm/Integration/Path.lean#L410)
+- [Source of `TauCeti.pathIntegral_comp_eq_sub_of_mpullback_eq` in TauCeti/Geometry/Manifold/DifferentialForm/Integration/Path.lean](https://github.com/TauCetiProject/TauCeti/blob/cd41bffcb343151b3e58c89392e206b11fe78c1c/TauCeti/Geometry/Manifold/DifferentialForm/Integration/Path.lean#L528)

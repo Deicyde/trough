@@ -14,21 +14,20 @@ Frobenius–Perron character `TauCeti.SplitK0.frobeniusPerronChar` at the class 
 TauCeti.frobeniusPerronDim.{w, w', v, u} (k : Type w') [Field k] [IsAlgClosed k] {C : Type u}
   [CategoryTheory.Category.{v, u} C] [CategoryTheory.Abelian C] [CategoryTheory.MonoidalCategory C]
   [CategoryTheory.MonoidalPreadditive C] [CategoryTheory.RigidCategory C]
-  [CategoryTheory.Linear k C] [CategoryTheory.MonoidalLinear k C]
-  [TauCeti.IsFiniteSemisimpleCategory C] [∀ (X Y : C), FiniteDimensional k (X ⟶ Y)]
+  [CategoryTheory.Linear k C] [TauCeti.IsFiniteSemisimpleCategory C]
+  [∀ (X Y : C), FiniteDimensional k (X ⟶ Y)]
   [CategoryTheory.Simple (CategoryTheory.MonoidalCategoryStruct.tensorUnit C)]
   [CategoryTheory.EssentiallySmall.{w, v, u} C] [Finite (TauCeti.SimpleClasses C)] (X : C) : ℝ
 ```
 
 ## Depends on
 
-- [TauCeti.SplitK0.simpleBasis](tauceti-splitk0-simplebasis.md)
+Its statement uses no other declaration mapped here.
 
 ## Proof depends on
 
-- [Frobenius reciprocity in multiplicity form](../other-results/frobenius-reciprocity-in-multiplicity-form.md)
-- [The Frobenius–Perron character](the-frobenius-perron-character.md)
-- [TauCeti.fusionCoeff](tauceti-fusioncoeff.md)
+- [Collatz–Wielandt bound](collatz-wielandt-bound.md)
+- [Perron–Frobenius theorem for irreducible matrices, existence](perron-frobenius-theorem-for-irreducible-matrice.md)
 
 ## Lean
 
@@ -37,5 +36,5 @@ Formalized in Tau Ceti as [`TauCeti.frobeniusPerronDim`](https://taucetiproject.
 ## Sources
 
 - [Tau Ceti documentation: `TauCeti.frobeniusPerronDim`](https://taucetiproject.org/docs/TauCeti/CategoryTheory/Semisimple/FrobeniusPerron.html#TauCeti.frobeniusPerronDim)
-- [Source of `TauCeti.frobeniusPerronDim` in TauCeti/CategoryTheory/Semisimple/FrobeniusPerron.lean](https://github.com/TauCetiProject/TauCeti/blob/a6027b1d24fcb935c53bd5b50d11b40991cda418/TauCeti/CategoryTheory/Semisimple/FrobeniusPerron.lean#L196)
-- [Tau Ceti roadmap status: Pivotal and spherical categories](https://github.com/TauCetiProject/TauCetiRoadmap/blob/9f7c032adaf1b838e8183d63ff3cfa886d061cb3/TauCetiRoadmap/PivotalSpherical/STATUS.md)
+- [Source of `TauCeti.frobeniusPerronDim` in TauCeti/CategoryTheory/Semisimple/FrobeniusPerron.lean](https://github.com/TauCetiProject/TauCeti/blob/cd41bffcb343151b3e58c89392e206b11fe78c1c/TauCeti/CategoryTheory/Semisimple/FrobeniusPerron.lean#L196)
+- [Tau Ceti roadmap status: Pivotal and spherical categories](https://github.com/TauCetiProject/TauCetiRoadmap/blob/612845ab80fb9c2b9bee724a156756ee78031591/TauCetiRoadmap/PivotalSpherical/STATUS.md)

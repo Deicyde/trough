@@ -15,7 +15,7 @@ degree `n`, the Kronecker map `Hⁿ(Hom(X, Y)) →ₗ[k] (Hₙ(X) ⟶ Y)` is bij
 
 ```lean
 TauCeti.ChainComplex.kronecker_bijective_of_projective_homology_lt.{v_1, u_1, u_3} {C : Type u_1}
-  [CategoryTheory.Category.{v_1, u_1} C] [CategoryTheory.Abelian C] {k : Type u_3} [CommRing k]
+  [CategoryTheory.Category.{v_1, u_1} C] [CategoryTheory.Abelian C] {k : Type u_3} [Ring k]
   [CategoryTheory.Linear k C] {X : ChainComplex C ℕ} {Y : C}
   [∀ (n : ℕ), CategoryTheory.Projective (X.X n)] (n : ℕ)
   (h : ∀ j < n, CategoryTheory.Projective (HomologicalComplex.homology X j)) :
@@ -37,4 +37,4 @@ Formalized in Tau Ceti as [`TauCeti.ChainComplex.kronecker_bijective_of_projecti
 ## Sources
 
 - [Tau Ceti documentation: `TauCeti.ChainComplex.kronecker_bijective_of_projective_homology_lt`](https://taucetiproject.org/docs/TauCeti/Algebra/Homology/UniversalCoefficient/Basic.html#TauCeti.ChainComplex.kronecker_bijective_of_projective_homology_lt)
-- [Source of `TauCeti.ChainComplex.kronecker_bijective_of_projective_homology_lt` in TauCeti/Algebra/Homology/UniversalCoefficient/Basic.lean](https://github.com/TauCetiProject/TauCeti/blob/a6027b1d24fcb935c53bd5b50d11b40991cda418/TauCeti/Algebra/Homology/UniversalCoefficient/Basic.lean#L240)
+- [Source of `TauCeti.ChainComplex.kronecker_bijective_of_projective_homology_lt` in TauCeti/Algebra/Homology/UniversalCoefficient/Basic.lean](https://github.com/TauCetiProject/TauCeti/blob/cd41bffcb343151b3e58c89392e206b11fe78c1c/TauCeti/Algebra/Homology/UniversalCoefficient/Basic.lean#L290)

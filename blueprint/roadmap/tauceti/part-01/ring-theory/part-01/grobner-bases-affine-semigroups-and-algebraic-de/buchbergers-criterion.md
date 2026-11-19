@@ -52,5 +52,5 @@ MonomialOrder.isGroebnerBasis_span_of_isRemainder_sPolynomial_zero.{u_1, u_2, u_
 ## Sources
 
 - [Tau Ceti documentation: `MonomialOrder.isGroebnerBasis_span_iff_isRemainder_sPolynomial_zero`](https://taucetiproject.org/docs/TauCeti/RingTheory/MvPolynomial/Groebner/Buchberger.html#MonomialOrder.isGroebnerBasis_span_iff_isRemainder_sPolynomial_zero)
-- [Source of `MonomialOrder.isGroebnerBasis_span_iff_isRemainder_sPolynomial_zero` in TauCeti/RingTheory/MvPolynomial/Groebner/Buchberger.lean](https://github.com/TauCetiProject/TauCeti/blob/a6027b1d24fcb935c53bd5b50d11b40991cda418/TauCeti/RingTheory/MvPolynomial/Groebner/Buchberger.lean#L292)
-- [Tau Ceti roadmap status: Gröbner bases, affine semigroups and algebraic degenerations](https://github.com/TauCetiProject/TauCetiRoadmap/blob/9f7c032adaf1b838e8183d63ff3cfa886d061cb3/TauCetiRoadmap/GroebnerGeometry/STATUS.md)
+- [Source of `MonomialOrder.isGroebnerBasis_span_iff_isRemainder_sPolynomial_zero` in TauCeti/RingTheory/MvPolynomial/Groebner/Buchberger.lean](https://github.com/TauCetiProject/TauCeti/blob/cd41bffcb343151b3e58c89392e206b11fe78c1c/TauCeti/RingTheory/MvPolynomial/Groebner/Buchberger.lean#L292)
+- [Tau Ceti roadmap status: Gröbner bases, affine semigroups and algebraic degenerations](https://github.com/TauCetiProject/TauCetiRoadmap/blob/612845ab80fb9c2b9bee724a156756ee78031591/TauCetiRoadmap/GroebnerGeometry/STATUS.md)

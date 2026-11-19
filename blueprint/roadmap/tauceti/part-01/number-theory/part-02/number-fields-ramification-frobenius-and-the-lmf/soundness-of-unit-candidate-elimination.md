@@ -17,7 +17,7 @@ TauCeti.NumberField.Units.UnitCandidateEliminationCertificate.sound.{u_1} {K : T
   (h :
     TauCeti.NumberField.Units.UnitCandidateEliminationCertificate K
       (w ((algebraMap (NumberField.RingOfIntegers K) K) ↑u)))
-  (hr : NumberField.Units.rank K = 1) (hp : Nat.Prime (Module.finrank ℚ K)) (hw : w.IsReal)
+  (hr : NumberField.Units.rank K = 1) (hw : w.IsReal)
   (hu : 1 < w ((algebraMap (NumberField.RingOfIntegers K) K) ↑u)) :
   Subgroup.closure {u} ⊔ NumberField.Units.torsion K = ⊤
 ```
@@ -33,5 +33,5 @@ Formalized in Tau Ceti as [`TauCeti.NumberField.Units.UnitCandidateEliminationCe
 ## Sources
 
 - [Tau Ceti documentation: `TauCeti.NumberField.Units.UnitCandidateEliminationCertificate.sound`](https://taucetiproject.org/docs/TauCeti/NumberTheory/NumberField/Units/Elimination/Basic.html#TauCeti.NumberField.Units.UnitCandidateEliminationCertificate.sound)
-- [Source of `TauCeti.NumberField.Units.UnitCandidateEliminationCertificate.sound` in TauCeti/NumberTheory/NumberField/Units/Elimination/Basic.lean](https://github.com/TauCetiProject/TauCeti/blob/a6027b1d24fcb935c53bd5b50d11b40991cda418/TauCeti/NumberTheory/NumberField/Units/Elimination/Basic.lean#L97)
-- [Tau Ceti roadmap status: Number fields, ramification, Frobenius, and the LMFDB invariants](https://github.com/TauCetiProject/TauCetiRoadmap/blob/9f7c032adaf1b838e8183d63ff3cfa886d061cb3/Completed/NumberFieldArithmetic/STATUS.md)
+- [Source of `TauCeti.NumberField.Units.UnitCandidateEliminationCertificate.sound` in TauCeti/NumberTheory/NumberField/Units/Elimination/Basic.lean](https://github.com/TauCetiProject/TauCeti/blob/cd41bffcb343151b3e58c89392e206b11fe78c1c/TauCeti/NumberTheory/NumberField/Units/Elimination/Basic.lean#L98)
+- [Tau Ceti roadmap status: Number fields, ramification, Frobenius, and the LMFDB invariants](https://github.com/TauCetiProject/TauCetiRoadmap/blob/612845ab80fb9c2b9bee724a156756ee78031591/Completed/NumberFieldArithmetic/STATUS.md)

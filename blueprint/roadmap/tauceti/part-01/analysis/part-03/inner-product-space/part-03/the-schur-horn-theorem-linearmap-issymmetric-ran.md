@@ -28,7 +28,7 @@ Its statement uses no other declaration mapped here.
 ## Proof depends on
 
 - [Horn's theorem (`LinearMap.IsSymmetric.exists_orthonormalBasis_re_inner_apply_self_eq_of_mem_convexHull`)](../part-01/horns-theorem-linearmap-issymmetric-exists-ortho.md)
-- [Rado's theorem](../../../part-02/convex/rados-theorem.md)
+- [Rado's theorem](../../convex/rados-theorem.md)
 
 ## Lean
 
@@ -51,4 +51,4 @@ LinearMap.IsSymmetric.exists_orthonormalBasis_re_inner_apply_self_eq_iff.{u_1, u
 ## Sources
 
 - [Tau Ceti documentation: `LinearMap.IsSymmetric.range_re_inner_apply_self_eq_convexHull_eigenvalues_comp_perm`](https://taucetiproject.org/docs/TauCeti/Analysis/InnerProductSpace/SchurHorn.html#LinearMap.IsSymmetric.range_re_inner_apply_self_eq_convexHull_eigenvalues_comp_perm)
-- [Source of `LinearMap.IsSymmetric.range_re_inner_apply_self_eq_convexHull_eigenvalues_comp_perm` in TauCeti/Analysis/InnerProductSpace/SchurHorn.lean](https://github.com/TauCetiProject/TauCeti/blob/a6027b1d24fcb935c53bd5b50d11b40991cda418/TauCeti/Analysis/InnerProductSpace/SchurHorn.lean#L398)
+- [Source of `LinearMap.IsSymmetric.range_re_inner_apply_self_eq_convexHull_eigenvalues_comp_perm` in TauCeti/Analysis/InnerProductSpace/SchurHorn.lean](https://github.com/TauCetiProject/TauCeti/blob/cd41bffcb343151b3e58c89392e206b11fe78c1c/TauCeti/Analysis/InnerProductSpace/SchurHorn.lean#L398)

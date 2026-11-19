@@ -110,3 +110,4 @@ theorem IsRegular.iff_finite_myhillQuotient (l : Language α) :
 ## Sources
 
 - [Cslib/Computability/Languages/Congruences/MyhillCongruence.lean at 86d560b6](https://github.com/leanprover/cslib/blob/86d560b6cbb379bd82512424cbcd2a915a1565e7/Cslib/Computability/Languages/Congruences/MyhillCongruence.lean)
+- [Declaration ledger](../../../../../sources/cslib/Cslib.Computability.Languages.Congruences.MyhillCongruence.json)

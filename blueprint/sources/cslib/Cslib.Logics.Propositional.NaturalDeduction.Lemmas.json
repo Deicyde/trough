@@ -1,0 +1,22 @@
+{
+ "schema": "trough-ledger/v1",
+ "library": "CSLib",
+ "repo": "leanprover/cslib",
+ "rev": "86d560b6cbb379bd82512424cbcd2a915a1565e7",
+ "module": "Cslib.Logics.Propositional.NaturalDeduction.Lemmas",
+ "file": "Cslib/Logics/Propositional/NaturalDeduction/Lemmas.lean",
+ "public": [
+  {"name": "Cslib.Logic.PL.NaturalDeduction.instIsIntuitionisticND₁", "kind": "instance", "line": 29},
+  {"name": "Cslib.Logic.PL.NaturalDeduction.derivBotImpCtx", "kind": "def", "line": 33},
+  {"name": "Cslib.Logic.PL.NaturalDeduction.contra", "kind": "def", "line": 37},
+  {"name": "Cslib.Logic.PL.NaturalDeduction.instIsClassicalCPL", "kind": "instance", "line": 41},
+  {"name": "Cslib.Logic.PL.NaturalDeduction.byContra", "kind": "def", "line": 45},
+  {"name": "Cslib.Logic.PL.NaturalDeduction.lem", "kind": "def", "line": 50},
+  {"name": "Cslib.Logic.PL.NaturalDeduction.peirce", "kind": "def", "line": 57},
+  {"name": "Cslib.Logic.PL.NaturalDeduction.instIsClassicalLEM", "kind": "instance", "line": 64},
+  {"name": "Cslib.Logic.PL.NaturalDeduction.instIsClassicalPeirce", "kind": "instance", "line": 71}
+ ],
+ "private": [],
+ "missing": [],
+ "unread": "Unnamed instances, the names an `alias ⟨…⟩` command gives, and the names Lean generates for a declaration (constructors, recursors, derived instances) are not read from the source, so they are not listed."
+}

@@ -39,4 +39,4 @@ Formalized in Tau Ceti as [`Subgroup.comap_subtype_indClassFunction_mackey`](htt
 ## Sources
 
 - [Tau Ceti documentation: `Subgroup.comap_subtype_indClassFunction_mackey`](https://taucetiproject.org/docs/TauCeti/RepresentationTheory/Induction/Mackey/Basic.html#Subgroup.comap_subtype_indClassFunction_mackey)
-- [Source of `Subgroup.comap_subtype_indClassFunction_mackey` in TauCeti/RepresentationTheory/Induction/Mackey/Basic.lean](https://github.com/TauCetiProject/TauCeti/blob/a6027b1d24fcb935c53bd5b50d11b40991cda418/TauCeti/RepresentationTheory/Induction/Mackey/Basic.lean#L423)
+- [Source of `Subgroup.comap_subtype_indClassFunction_mackey` in TauCeti/RepresentationTheory/Induction/Mackey/Basic.lean](https://github.com/TauCetiProject/TauCeti/blob/cd41bffcb343151b3e58c89392e206b11fe78c1c/TauCeti/RepresentationTheory/Induction/Mackey/Basic.lean#L439)

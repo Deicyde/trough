@@ -47,4 +47,4 @@ Formalized in Tau Ceti as [`TauCeti.holomorphicStructureSheaf.existsUnique_weier
 ## Sources
 
 - [Tau Ceti documentation: `TauCeti.holomorphicStructureSheaf.existsUnique_weierstrassPreparation`](https://taucetiproject.org/docs/TauCeti/Geometry/Manifold/Complex/StructureSheaf/Weierstrass.html#TauCeti.holomorphicStructureSheaf.existsUnique_weierstrassPreparation)
-- [Source of `TauCeti.holomorphicStructureSheaf.existsUnique_weierstrassPreparation` in TauCeti/Geometry/Manifold/Complex/StructureSheaf/Weierstrass.lean](https://github.com/TauCetiProject/TauCeti/blob/a6027b1d24fcb935c53bd5b50d11b40991cda418/TauCeti/Geometry/Manifold/Complex/StructureSheaf/Weierstrass.lean#L618)
+- [Source of `TauCeti.holomorphicStructureSheaf.existsUnique_weierstrassPreparation` in TauCeti/Geometry/Manifold/Complex/StructureSheaf/Weierstrass.lean](https://github.com/TauCetiProject/TauCeti/blob/cd41bffcb343151b3e58c89392e206b11fe78c1c/TauCeti/Geometry/Manifold/Complex/StructureSheaf/Weierstrass.lean#L618)

@@ -36,6 +36,7 @@ Its statement uses no other declaration mapped here.
 
 ## Proof depends on
 
+- [Jensen's inequality for the square of a mean](jensens-inequality-for-the-square-of-a-mean.md)
 - [Lebesgue's differentiation theorem along dyadic cubes](../../measure/lebesgues-differentiation-theorem-along-dyadic-c.md)
 
 ## Lean
@@ -66,4 +67,4 @@ TauCeti.volume_le_mul_volume_of_subset_dyadicCube.{u_1} {ι : Type u_1} [Fintype
 ## Sources
 
 - [Tau Ceti documentation: `TauCeti.volume_le_mul_volume_of_forall_dyadicCube`](https://taucetiproject.org/docs/TauCeti/MeasureTheory/Integral/CalderonZygmund/KrylovSafonov.html#TauCeti.volume_le_mul_volume_of_forall_dyadicCube)
-- [Source of `TauCeti.volume_le_mul_volume_of_forall_dyadicCube` in TauCeti/MeasureTheory/Integral/CalderonZygmund/KrylovSafonov.lean](https://github.com/TauCetiProject/TauCeti/blob/a6027b1d24fcb935c53bd5b50d11b40991cda418/TauCeti/MeasureTheory/Integral/CalderonZygmund/KrylovSafonov.lean#L68)
+- [Source of `TauCeti.volume_le_mul_volume_of_forall_dyadicCube` in TauCeti/MeasureTheory/Integral/CalderonZygmund/KrylovSafonov.lean](https://github.com/TauCetiProject/TauCeti/blob/cd41bffcb343151b3e58c89392e206b11fe78c1c/TauCeti/MeasureTheory/Integral/CalderonZygmund/KrylovSafonov.lean#L68)

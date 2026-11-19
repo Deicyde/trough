@@ -38,6 +38,7 @@ proof: formalized
 > Several lemmas about facts and orthogonality useful in the proof of soundness are proven here.
 >
 > …
+>
 > ## References
 >
 > * [J.-Y. Girard, *Linear logic*][Girard1987]
@@ -940,3 +941,4 @@ def interpProp [PhaseSpace M] (v : Atom → Fact M) : Proposition Atom → Fact 
 ## Sources
 
 - [Cslib/Logics/LinearLogic/CLL/PhaseSemantics/Basic.lean at 86d560b6](https://github.com/leanprover/cslib/blob/86d560b6cbb379bd82512424cbcd2a915a1565e7/Cslib/Logics/LinearLogic/CLL/PhaseSemantics/Basic.lean)
+- [Declaration ledger](../../../../../../sources/cslib/Cslib.Logics.LinearLogic.CLL.PhaseSemantics.Basic.json)

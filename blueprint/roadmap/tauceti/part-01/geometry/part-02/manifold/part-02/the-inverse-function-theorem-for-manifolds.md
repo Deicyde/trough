@@ -1,7 +1,7 @@
 ---
 declaration: theorem
 origin: cited
-lean: TauCeti.isLocalDiffeomorphAt_of_mfderiv_eq, TauCeti.isLocalDiffeomorphAt_of_injective_mfderiv, TauCeti.isLocalDiffeomorph_of_mfderiv_eq, TauCeti.isLocalDiffeomorph_of_deriv_ne_zero
+lean: TauCeti.isLocalDiffeomorphAt_of_mfderiv_eq, TauCeti.isLocalDiffeomorphAt_of_injective_mfderiv, TauCeti.isLocalDiffeomorph_of_mfderiv_eq, TauCeti.isLocalDiffeomorphAt_of_fderiv_eq, TauCeti.isLocalDiffeomorph_of_deriv_ne_zero
 statement: formalized
 proof: formalized
 ---
@@ -32,7 +32,7 @@ Its statement uses no other declaration mapped here.
 
 ## Proof depends on
 
-- [The inverse function theorem, with a `C^n` inverse on the whole target](../../../../analysis/part-02/calculus/part-01/the-inverse-function-theorem-with-a-c-n-inverse.md)
+- [The inverse function theorem for a converging family](../../../../analysis/part-03/calculus/part-01/the-inverse-function-theorem-for-a-converging-fa.md)
 
 ## Lean
 
@@ -68,6 +68,16 @@ TauCeti.isLocalDiffeomorph_of_mfderiv_eq.{u_1, u_2, u_3, u_4, u_5, u_6, u_7} {�
   (he : ∀ (y : M), ∃ e, ↑e = mfderiv% f y) : IsLocalDiffeomorph I J n f
 ```
 
+**The inverse function theorem in a Banach space, as a local diffeomorphism.** Formalized in Tau Ceti as [`TauCeti.isLocalDiffeomorphAt_of_fderiv_eq`](https://taucetiproject.org/docs/TauCeti/Geometry/Manifold/LocalDiffeomorph/Basic.html#TauCeti.isLocalDiffeomorphAt_of_fderiv_eq).
+
+```lean
+TauCeti.isLocalDiffeomorphAt_of_fderiv_eq.{u_1, u_2, u_3} {𝕂 : Type u_1} [RCLike 𝕂] {E : Type u_2}
+  [NormedAddCommGroup E] [NormedSpace 𝕂 E] {F : Type u_3} [NormedAddCommGroup F] [NormedSpace 𝕂 F]
+  [CompleteSpace E] {n : WithTop ℕ∞} {g : E → F} {t : Set E} {a : E} (hg : ContDiffOn 𝕂 n g t)
+  (ht : IsOpen t) (ha : a ∈ t) (hn : 1 ≤ n) {e : E ≃L[𝕂] F} (he : ↑e = fderiv 𝕂 g a) :
+  IsLocalDiffeomorphAt (modelWithCornersSelf 𝕂 E) (modelWithCornersSelf 𝕂 F) n g a
+```
+
 **The inverse function theorem in one variable.** Formalized in Tau Ceti as [`TauCeti.isLocalDiffeomorph_of_deriv_ne_zero`](https://taucetiproject.org/docs/TauCeti/Geometry/Manifold/LocalDiffeomorph/Deriv.html#TauCeti.isLocalDiffeomorph_of_deriv_ne_zero).
 
 ```lean
@@ -79,4 +89,4 @@ TauCeti.isLocalDiffeomorph_of_deriv_ne_zero.{u_1} {𝕂 : Type u_1} [RCLike 𝕂
 ## Sources
 
 - [Tau Ceti documentation: `TauCeti.isLocalDiffeomorphAt_of_mfderiv_eq`](https://taucetiproject.org/docs/TauCeti/Geometry/Manifold/LocalDiffeomorph/Basic.html#TauCeti.isLocalDiffeomorphAt_of_mfderiv_eq)
-- [Source of `TauCeti.isLocalDiffeomorphAt_of_mfderiv_eq` in TauCeti/Geometry/Manifold/LocalDiffeomorph/Basic.lean](https://github.com/TauCetiProject/TauCeti/blob/a6027b1d24fcb935c53bd5b50d11b40991cda418/TauCeti/Geometry/Manifold/LocalDiffeomorph/Basic.lean#L551)
+- [Source of `TauCeti.isLocalDiffeomorphAt_of_mfderiv_eq` in TauCeti/Geometry/Manifold/LocalDiffeomorph/Basic.lean](https://github.com/TauCetiProject/TauCeti/blob/cd41bffcb343151b3e58c89392e206b11fe78c1c/TauCeti/Geometry/Manifold/LocalDiffeomorph/Basic.lean#L711)

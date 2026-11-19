@@ -20,11 +20,11 @@ TauCeti.InternalGrading.exists_isInternal_span_singleton.{u, u_1} {k : Type u_1}
   [Field k] [AddCommGroup M] [_root_.Module k M] [_root_.Module (Polynomial k) M]
   [IsScalarTower k (Polynomial k) M] {G : TauCeti.InternalGrading k M ℤ} {d : ℕ}
   [Module.Finite (Polynomial k) M] (hd : d ≠ 0)
-  (hX : ∀ ⦃p : ℤ⦄ ⦃x : M⦄, x ∈ G.piece ℤ p → Polynomial.X • x ∈ G.piece ℤ (p - ↑d)) :
+  (hX : ∀ ⦃p : ℤ⦄ ⦃x : M⦄, x ∈ G.piece p → Polynomial.X • x ∈ G.piece (p - ↑d)) :
   ∃ ι κ,
     ∃ (_ : Finite ι) (_ : Finite κ),
       ∃ t deg m,
-        (∀ (i : ι ⊕ κ), t i ∈ G.piece ℤ (deg i)) ∧
+        (∀ (i : ι ⊕ κ), t i ∈ G.piece (deg i)) ∧
           (∀ (i : ι), Ideal.torsionOf (Polynomial k) M (t (Sum.inl i)) = ⊥) ∧
             (∀ (j : κ), m j ≠ 0) ∧
               (∀ (j : κ),
@@ -49,5 +49,5 @@ Formalized in Tau Ceti as [`TauCeti.InternalGrading.exists_isInternal_span_singl
 ## Sources
 
 - [Tau Ceti documentation: `TauCeti.InternalGrading.exists_isInternal_span_singleton`](https://taucetiproject.org/docs/TauCeti/Algebra/Module/GradedModule/CyclicDecomposition.html#TauCeti.InternalGrading.exists_isInternal_span_singleton)
-- [Source of `TauCeti.InternalGrading.exists_isInternal_span_singleton` in TauCeti/Algebra/Module/GradedModule/CyclicDecomposition.lean](https://github.com/TauCetiProject/TauCeti/blob/a6027b1d24fcb935c53bd5b50d11b40991cda418/TauCeti/Algebra/Module/GradedModule/CyclicDecomposition.lean#L264)
-- [Tau Ceti roadmap status: Combinatorial Heegaard Floer and grid homology](https://github.com/TauCetiProject/TauCetiRoadmap/blob/9f7c032adaf1b838e8183d63ff3cfa886d061cb3/TauCetiRoadmap/CombinatorialHeegaardFloer/STATUS.md)
+- [Source of `TauCeti.InternalGrading.exists_isInternal_span_singleton` in TauCeti/Algebra/Module/GradedModule/CyclicDecomposition.lean](https://github.com/TauCetiProject/TauCeti/blob/cd41bffcb343151b3e58c89392e206b11fe78c1c/TauCeti/Algebra/Module/GradedModule/CyclicDecomposition.lean#L253)
+- [Tau Ceti roadmap status: Combinatorial Heegaard Floer and grid homology](https://github.com/TauCetiProject/TauCetiRoadmap/blob/612845ab80fb9c2b9bee724a156756ee78031591/TauCetiRoadmap/CombinatorialHeegaardFloer/STATUS.md)

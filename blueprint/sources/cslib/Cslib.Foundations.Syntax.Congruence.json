@@ -1,0 +1,18 @@
+{
+ "schema": "trough-ledger/v1",
+ "library": "CSLib",
+ "repo": "leanprover/cslib",
+ "rev": "86d560b6cbb379bd82512424cbcd2a915a1565e7",
+ "module": "Cslib.Foundations.Syntax.Congruence",
+ "file": "Cslib/Foundations/Syntax/Congruence.lean",
+ "public": [
+  {"name": "Cslib.Congruence", "kind": "class", "line": 23},
+  {"name": "Cslib.Congruence.r", "kind": "abbrev", "line": 27},
+  {"name": "Cslib.DefaultCongruence", "kind": "class", "line": 33},
+  {"name": "Cslib.DefaultCongruence.r", "kind": "abbrev", "line": 38},
+  {"name": "Cslib.LawfulCongruence", "kind": "class", "line": 47}
+ ],
+ "private": [],
+ "missing": [],
+ "unread": "Unnamed instances, the names an `alias ⟨…⟩` command gives, and the names Lean generates for a declaration (constructors, recursors, derived instances) are not read from the source, so they are not listed."
+}

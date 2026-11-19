@@ -1,0 +1,32 @@
+{
+ "schema": "trough-ledger/v1",
+ "library": "Batteries",
+ "repo": "leanprover-community/batteries",
+ "rev": "b4b25a3886a16daacaf6615c2eea7170a6e8f458",
+ "module": "Batteries.Data.List.Scan",
+ "file": "Batteries/Data/List/Scan.lean",
+ "public": [
+  {"name": "List.length_partialSums", "kind": "theorem", "line": 25},
+  {"name": "List.partialSums_ne_nil", "kind": "theorem", "line": 30},
+  {"name": "List.partialSums_nil", "kind": "theorem", "line": 34},
+  {"name": "List.partialSums_cons", "kind": "theorem", "line": 37},
+  {"name": "List.partialSums_append", "kind": "theorem", "line": 49},
+  {"name": "List.getElem_partialSums", "kind": "theorem", "line": 60},
+  {"name": "List.getElem?_partialSums", "kind": "theorem", "line": 66},
+  {"name": "List.take_partialSums", "kind": "theorem", "line": 72},
+  {"name": "List.length_partialProds", "kind": "theorem", "line": 77},
+  {"name": "List.partialProds_nil", "kind": "theorem", "line": 82},
+  {"name": "List.partialProds_cons", "kind": "theorem", "line": 86},
+  {"name": "List.partialProds_append", "kind": "theorem", "line": 98},
+  {"name": "List.getElem_partialProds", "kind": "theorem", "line": 109},
+  {"name": "List.getElem?_partialProds", "kind": "theorem", "line": 115},
+  {"name": "List.take_partialProds", "kind": "theorem", "line": 121},
+  {"name": "List.length_flatten_mem_partialSums_map_length", "kind": "theorem", "line": 127},
+  {"name": "List.getElem_flatten_aux₁", "kind": "theorem", "line": 136},
+  {"name": "List.getElem_flatten_aux₂", "kind": "theorem", "line": 149},
+  {"name": "List.getElem_flatten", "kind": "theorem", "line": 183}
+ ],
+ "private": [],
+ "missing": [],
+ "unread": "Unnamed instances, the names an `alias ⟨…⟩` command gives, and the names Lean generates for a declaration (constructors, recursors, derived instances) are not read from the source, so they are not listed."
+}

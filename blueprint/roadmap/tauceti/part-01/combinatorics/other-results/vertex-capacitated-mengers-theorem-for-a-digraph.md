@@ -37,4 +37,4 @@ Formalized in Tau Ceti as [`Digraph.exists_paths_vertexSeparator_sum_eq`](https:
 ## Sources
 
 - [Tau Ceti documentation: `Digraph.exists_paths_vertexSeparator_sum_eq`](https://taucetiproject.org/docs/TauCeti/Combinatorics/Digraph/Menger.html#Digraph.exists_paths_vertexSeparator_sum_eq)
-- [Source of `Digraph.exists_paths_vertexSeparator_sum_eq` in TauCeti/Combinatorics/Digraph/Menger.lean](https://github.com/TauCetiProject/TauCeti/blob/a6027b1d24fcb935c53bd5b50d11b40991cda418/TauCeti/Combinatorics/Digraph/Menger.lean#L55)
+- [Source of `Digraph.exists_paths_vertexSeparator_sum_eq` in TauCeti/Combinatorics/Digraph/Menger.lean](https://github.com/TauCetiProject/TauCeti/blob/cd41bffcb343151b3e58c89392e206b11fe78c1c/TauCeti/Combinatorics/Digraph/Menger.lean#L55)

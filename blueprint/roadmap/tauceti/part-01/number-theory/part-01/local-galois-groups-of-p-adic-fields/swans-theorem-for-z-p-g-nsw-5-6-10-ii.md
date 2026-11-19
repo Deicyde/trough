@@ -30,7 +30,7 @@ Its statement uses no other declaration mapped here.
 
 ## Proof depends on
 
-- [Schur's lemma, vanishing form](../../../ring-theory/part-01/semisimple/schurs-lemma-vanishing-form.md)
+- [Schur's lemma, vanishing form](../../../ring-theory/part-02/semisimple/schurs-lemma-vanishing-form.md)
 
 ## Lean
 
@@ -39,5 +39,5 @@ Formalized in Tau Ceti as [`TauCeti.nonempty_linearEquiv_of_projective_of_tensor
 ## Sources
 
 - [Tau Ceti documentation: `TauCeti.nonempty_linearEquiv_of_projective_of_tensorRat`](https://taucetiproject.org/docs/TauCeti/NumberTheory/Padics/GroupAlgebra/Swan.html#TauCeti.nonempty_linearEquiv_of_projective_of_tensorRat)
-- [Source of `TauCeti.nonempty_linearEquiv_of_projective_of_tensorRat` in TauCeti/NumberTheory/Padics/GroupAlgebra/Swan.lean](https://github.com/TauCetiProject/TauCeti/blob/a6027b1d24fcb935c53bd5b50d11b40991cda418/TauCeti/NumberTheory/Padics/GroupAlgebra/Swan.lean#L57)
-- [Tau Ceti roadmap status: Local Galois groups of p-adic fields](https://github.com/TauCetiProject/TauCetiRoadmap/blob/9f7c032adaf1b838e8183d63ff3cfa886d061cb3/Completed/LocalGaloisGroups/STATUS.md)
+- [Source of `TauCeti.nonempty_linearEquiv_of_projective_of_tensorRat` in TauCeti/NumberTheory/Padics/GroupAlgebra/Swan.lean](https://github.com/TauCetiProject/TauCeti/blob/cd41bffcb343151b3e58c89392e206b11fe78c1c/TauCeti/NumberTheory/Padics/GroupAlgebra/Swan.lean#L200)
+- [Tau Ceti roadmap status: Local Galois groups of p-adic fields](https://github.com/TauCetiProject/TauCetiRoadmap/blob/612845ab80fb9c2b9bee724a156756ee78031591/Completed/LocalGaloisGroups/STATUS.md)

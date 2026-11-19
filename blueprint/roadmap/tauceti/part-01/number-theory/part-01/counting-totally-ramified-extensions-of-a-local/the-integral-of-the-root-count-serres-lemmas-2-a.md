@@ -36,7 +36,7 @@ IntermediateField.lintegral_rootCount.{u_1} {K : Type u_1} [Field K] [ValuativeR
 ## Proof depends on
 
 - [The first half of Dedekind's different theorem](../../part-02/local-field/the-first-half-of-dedekinds-different-theorem.md)
-- [Hermite's identity in truncated ceiling-division form](../../../algebra/part-02/other-results/hermites-identity-in-truncated-ceiling-division.md)
+- [Hermite's identity in truncated ceiling-division form](../../../algebra/part-02/order/hermites-identity-in-truncated-ceiling-division.md)
 - [The local fibre count](the-local-fibre-count.md)
 
 ## Lean
@@ -46,5 +46,5 @@ Formalized in Tau Ceti as [`IntermediateField.lintegral_rootCount`](https://tauc
 ## Sources
 
 - [Tau Ceti documentation: `IntermediateField.lintegral_rootCount`](https://taucetiproject.org/docs/TauCeti/NumberTheory/LocalField/MassFormula/Integral.html#IntermediateField.lintegral_rootCount)
-- [Source of `IntermediateField.lintegral_rootCount` in TauCeti/NumberTheory/LocalField/MassFormula/Integral.lean](https://github.com/TauCetiProject/TauCeti/blob/a6027b1d24fcb935c53bd5b50d11b40991cda418/TauCeti/NumberTheory/LocalField/MassFormula/Integral.lean#L227)
-- [Tau Ceti roadmap status: Counting totally ramified extensions of a local field, and Serre's mass formula](https://github.com/TauCetiProject/TauCetiRoadmap/blob/9f7c032adaf1b838e8183d63ff3cfa886d061cb3/TauCetiRoadmap/MassFormula/STATUS.md)
+- [Source of `IntermediateField.lintegral_rootCount` in TauCeti/NumberTheory/LocalField/MassFormula/Integral.lean](https://github.com/TauCetiProject/TauCeti/blob/cd41bffcb343151b3e58c89392e206b11fe78c1c/TauCeti/NumberTheory/LocalField/MassFormula/Integral.lean#L227)
+- [Tau Ceti roadmap status: Counting totally ramified extensions of a local field, and Serre's mass formula](https://github.com/TauCetiProject/TauCetiRoadmap/blob/612845ab80fb9c2b9bee724a156756ee78031591/TauCetiRoadmap/MassFormula/STATUS.md)

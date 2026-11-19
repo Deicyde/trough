@@ -2,7 +2,7 @@
 navigation: transparent
 ---
 
-# The nonlinear Hardy graph… to Weierstrass division theorem in…
+# The nonlinear Hardy graph… to Rellich's theorem on the circle
 
 - [The nonlinear Hardy graph theorem at a plumbing node](the-nonlinear-hardy-graph-theorem-at-a-plumbing.md)
 - [TauCeti.NodalGluing.existsUnique_iso_gluedCurveHomeomorph_eq_iff](tauceti-nodalgluing-existsunique-iso-gluedcurveh.md)
@@ -20,7 +20,7 @@ navigation: transparent
 - [TauCeti.ComplexStructureFamily.nijenhuis_eq_zero_iff](tauceti-complexstructurefamily-nijenhuis-eq-zero.md)
 - [TauCeti.ComplexStructureFamily.isPseudoholomorphic_graph_iff](tauceti-complexstructurefamily-ispseudoholomorph.md)
 - [Ehrling's inequality on the circle](ehrlings-inequality-on-the-circle.md)
+- [Hartogs' theorem for sections of the holomorphic structure sheaf](hartogs-theorem-for-sections-of-the-holomorphic.md)
+- [Parseval's identity for continuous loops](parsevals-identity-for-continuous-loops.md)
 - [Peetre's inequality (`TauCeti.CircleSobolev.weight_add_le`)](peetres-inequality-tauceti-circlesobolev-weight.md)
 - [Rellich's theorem on the circle](rellichs-theorem-on-the-circle.md)
-- [Robbin–Salamon Corrigendum Lemma B (on arbitrary real normed spaces under `C²` regularity)](robbin-salamon-corrigendum-lemma-b-on-arbitrary.md)
-- [Weierstrass division theorem in holomorphic stalks](weierstrass-division-theorem-in-holomorphic-stal.md)

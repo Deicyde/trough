@@ -1,0 +1,26 @@
+{
+ "schema": "trough-ledger/v1",
+ "library": "CSLib",
+ "repo": "leanprover/cslib",
+ "rev": "86d560b6cbb379bd82512424cbcd2a915a1565e7",
+ "module": "Cslib.Computability.Languages.MyhillNerode",
+ "file": "Cslib/Computability/Languages/MyhillNerode.lean",
+ "public": [
+  {"name": "Language.NerodeCongruence", "kind": "def", "line": 53},
+  {"name": "Language.NerodeQuotient", "kind": "abbrev", "line": 61},
+  {"name": "Language.NerodeCongruenceDA", "kind": "def", "line": 67},
+  {"name": "Language.nerodeCongruenceDA_language_eq", "kind": "theorem", "line": 74},
+  {"name": "Language.da_nerodeCongruence_iff", "kind": "theorem", "line": 89},
+  {"name": "Language.IsRegular.finite_nerodeQuotient", "kind": "theorem", "line": 96},
+  {"name": "Language.IsRegular.iff_finite_nerodeQuotient", "kind": "theorem", "line": 113},
+  {"name": "Language.dfa_num_state_ge", "kind": "theorem", "line": 125},
+  {"name": "Language.dfa_num_state_min", "kind": "theorem", "line": 146},
+  {"name": "Cslib.Automata.DA.FinAcc.IsMinimalAutomaton", "kind": "def", "line": 168},
+  {"name": "Cslib.Automata.DA.FinAcc.StateCongruence", "kind": "def", "line": 174},
+  {"name": "Cslib.Automata.DA.FinAcc.stateCongruence_le_nerodeCongruence", "kind": "theorem", "line": 184},
+  {"name": "Cslib.Automata.DA.FinAcc.unique_minimal", "kind": "theorem", "line": 192}
+ ],
+ "private": [],
+ "missing": [],
+ "unread": "Unnamed instances, the names an `alias ⟨…⟩` command gives, and the names Lean generates for a declaration (constructors, recursors, derived instances) are not read from the source, so they are not listed."
+}

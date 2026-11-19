@@ -26,7 +26,7 @@ Its statement uses no other declaration mapped here.
 
 ## Proof depends on
 
-- [Liouville's inequality at a finite place](../number-field/liouvilles-inequality-at-a-finite-place.md)
+- [Liouville's inequality at a finite place](../../part-03/number-field/liouvilles-inequality-at-a-finite-place.md)
 
 ## Lean
 
@@ -58,4 +58,4 @@ IsDedekindDomain.HeightOneSpectrum.neg_log_valuation_aeval_mul_log_absNorm_le.{u
 ## Sources
 
 - [Tau Ceti documentation: `NumberField.eq_zero_of_norm_le_exp_of_house_le_exp`](https://taucetiproject.org/docs/TauCeti/NumberTheory/Height/House.html#NumberField.eq_zero_of_norm_le_exp_of_house_le_exp)
-- [Source of `NumberField.eq_zero_of_norm_le_exp_of_house_le_exp` in TauCeti/NumberTheory/Height/House.lean](https://github.com/TauCetiProject/TauCeti/blob/a6027b1d24fcb935c53bd5b50d11b40991cda418/TauCeti/NumberTheory/Height/House.lean#L404)
+- [Source of `NumberField.eq_zero_of_norm_le_exp_of_house_le_exp` in TauCeti/NumberTheory/Height/House.lean](https://github.com/TauCetiProject/TauCeti/blob/cd41bffcb343151b3e58c89392e206b11fe78c1c/TauCeti/NumberTheory/Height/House.lean#L404)

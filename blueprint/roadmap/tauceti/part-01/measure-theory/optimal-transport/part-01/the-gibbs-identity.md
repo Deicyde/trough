@@ -37,4 +37,4 @@ Formalized in Tau Ceti as [`TauCeti.lintegral_add_mul_klDiv_eq_mul_klDiv_tilted`
 ## Sources
 
 - [Tau Ceti documentation: `TauCeti.lintegral_add_mul_klDiv_eq_mul_klDiv_tilted`](https://taucetiproject.org/docs/TauCeti/MeasureTheory/OptimalTransport/Entropic/Basic.html#TauCeti.lintegral_add_mul_klDiv_eq_mul_klDiv_tilted)
-- [Source of `TauCeti.lintegral_add_mul_klDiv_eq_mul_klDiv_tilted` in TauCeti/MeasureTheory/OptimalTransport/Entropic/Basic.lean](https://github.com/TauCetiProject/TauCeti/blob/a6027b1d24fcb935c53bd5b50d11b40991cda418/TauCeti/MeasureTheory/OptimalTransport/Entropic/Basic.lean#L513)
+- [Source of `TauCeti.lintegral_add_mul_klDiv_eq_mul_klDiv_tilted` in TauCeti/MeasureTheory/OptimalTransport/Entropic/Basic.lean](https://github.com/TauCetiProject/TauCeti/blob/cd41bffcb343151b3e58c89392e206b11fe78c1c/TauCeti/MeasureTheory/OptimalTransport/Entropic/Basic.lean#L513)

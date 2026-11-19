@@ -218,6 +218,21 @@ map_status = "live"
 map_unit = "module"
 map_plan = "One article per module under Cslib/, titled by its module docstring or its file name, in a part per area and a page per folder: the module's authors, its docstrings and a block per public declaration with its docstring and Lean statement, read from the source without Lean; a Lean run over the built library gives the edges between modules, split into what statements and what proofs use, and decides which declarations are public."
 
+
+[[library]]
+id = "batteries"
+name = "Batteries"
+repo = "leanprover-community/batteries"
+group = "library"
+what = "The \"batteries included\" extended library for Lean: data structures, tactics, linters, code actions and other tools for Lean programs and proofs, in folders under Batteries/ (Classes, CodeAction, Control, Data, Lean, Linter, Recycling, Tactic, Util). Mathlib requires it."
+informal_layer = "Module docstrings, most with a title and a description, and a docstring on most definitions and theorems; a README that says what the library is. No blueprint."
+formalization_yaml = "absent"
+license = "Apache-2.0"
+toolchain = "v4.36.0"
+lean_files = 262
+map_status = "live"
+map_unit = "module"
+map_plan = "One article per module under Batteries/ that declares something public by name, titled by its module docstring or its file name, in a part per folder and a page per folder below: the module's authors, its docstrings and a block per public declaration with its docstring and Lean statement, read from the source without Lean; a Lean run over the built library gives the edges between modules, split into what statements and what proofs use, and decides which declarations are public. A module that declares nothing public by name is listed on its folder's page."
 [[library]]
 id = "foundation"
 name = "Foundation"

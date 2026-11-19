@@ -1,0 +1,31 @@
+{
+ "schema": "trough-ledger/v1",
+ "library": "Batteries",
+ "repo": "leanprover-community/batteries",
+ "rev": "b4b25a3886a16daacaf6615c2eea7170a6e8f458",
+ "module": "Batteries.Data.List.Count",
+ "file": "Batteries/Data/List/Count.lean",
+ "public": [
+  {"name": "List.count_singleton'", "kind": "theorem", "line": 29},
+  {"name": "List.count_concat", "kind": "theorem", "line": 32},
+  {"name": "List.idxToSigmaCount", "kind": "def", "line": 50},
+  {"name": "List.fst_idxToSigmaCount", "kind": "theorem", "line": 54},
+  {"name": "List.snd_idxToSigmaCount", "kind": "theorem", "line": 58},
+  {"name": "List.coe_snd_idxToSigmaCount", "kind": "theorem", "line": 62},
+  {"name": "List.sigmaCountToIdx", "kind": "def", "line": 72},
+  {"name": "List.coe_sigmaCountToIdx", "kind": "theorem", "line": 76},
+  {"name": "List.sigmaCountToIdx_idxToSigmaCount", "kind": "theorem", "line": 80},
+  {"name": "List.leftInverse_sigmaCountToIdx_idxToSigmaCount", "kind": "theorem", "line": 83},
+  {"name": "List.rightInverse_idxToSigmaCount_sigmaCountToIdx", "kind": "theorem", "line": 86},
+  {"name": "List.injective_idxToSigmaCount", "kind": "theorem", "line": 89},
+  {"name": "List.surjective_sigmaCountToIdx", "kind": "theorem", "line": 92},
+  {"name": "List.idxToSigmaCount_sigmaCountToIdx", "kind": "theorem", "line": 96},
+  {"name": "List.leftInverse_idxToSigmaCount_sigmaCountToIdx", "kind": "theorem", "line": 100},
+  {"name": "List.rightInverse_sigmaCountToIdx_idxToSigmaCount", "kind": "theorem", "line": 103},
+  {"name": "List.injective_sigmaCountToIdx", "kind": "theorem", "line": 106},
+  {"name": "List.surjective_idxToSigmaCount", "kind": "theorem", "line": 109}
+ ],
+ "private": [],
+ "missing": [],
+ "unread": "Unnamed instances, the names an `alias ⟨…⟩` command gives, and the names Lean generates for a declaration (constructors, recursors, derived instances) are not read from the source, so they are not listed."
+}

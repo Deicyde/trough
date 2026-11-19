@@ -89,4 +89,4 @@ TauCeti.ClassFieldTheory.dualityMap0_kummerCoeff_bijective {K : Type} [Field K] 
 ## Sources
 
 - [Tau Ceti documentation: `TauCeti.ClassFieldTheory.dualityMap1_kummerCoeff_bijective`](https://taucetiproject.org/docs/TauCeti/NumberTheory/ClassFieldTheory/Local/Duality/FiniteModule.html#TauCeti.ClassFieldTheory.dualityMap1_kummerCoeff_bijective)
-- [Source of `TauCeti.ClassFieldTheory.dualityMap1_kummerCoeff_bijective` in TauCeti/NumberTheory/ClassFieldTheory/Local/Duality/FiniteModule.lean](https://github.com/TauCetiProject/TauCeti/blob/a6027b1d24fcb935c53bd5b50d11b40991cda418/TauCeti/NumberTheory/ClassFieldTheory/Local/Duality/FiniteModule.lean#L258)
+- [Source of `TauCeti.ClassFieldTheory.dualityMap1_kummerCoeff_bijective` in TauCeti/NumberTheory/ClassFieldTheory/Local/Duality/FiniteModule.lean](https://github.com/TauCetiProject/TauCeti/blob/cd41bffcb343151b3e58c89392e206b11fe78c1c/TauCeti/NumberTheory/ClassFieldTheory/Local/Duality/FiniteModule.lean#L258)

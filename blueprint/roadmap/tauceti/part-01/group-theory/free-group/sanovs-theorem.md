@@ -42,4 +42,4 @@ TauCeti.injective_freeGroup_lift_transvection_two :
 ## Sources
 
 - [Tau Ceti documentation: `TauCeti.injective_freeGroup_lift_transvection_of_two_le_abs`](https://taucetiproject.org/docs/TauCeti/GroupTheory/FreeGroup/Linear.html#TauCeti.injective_freeGroup_lift_transvection_of_two_le_abs)
-- [Source of `TauCeti.injective_freeGroup_lift_transvection_of_two_le_abs` in TauCeti/GroupTheory/FreeGroup/Linear.lean](https://github.com/TauCetiProject/TauCeti/blob/a6027b1d24fcb935c53bd5b50d11b40991cda418/TauCeti/GroupTheory/FreeGroup/Linear.lean#L98)
+- [Source of `TauCeti.injective_freeGroup_lift_transvection_of_two_le_abs` in TauCeti/GroupTheory/FreeGroup/Linear.lean](https://github.com/TauCetiProject/TauCeti/blob/cd41bffcb343151b3e58c89392e206b11fe78c1c/TauCeti/GroupTheory/FreeGroup/Linear.lean#L96)

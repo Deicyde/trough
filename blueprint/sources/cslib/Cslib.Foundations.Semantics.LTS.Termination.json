@@ -1,0 +1,22 @@
+{
+ "schema": "trough-ledger/v1",
+ "library": "CSLib",
+ "repo": "leanprover/cslib",
+ "rev": "86d560b6cbb379bd82512424cbcd2a915a1565e7",
+ "module": "Cslib.Foundations.Semantics.LTS.Termination",
+ "file": "Cslib/Foundations/Semantics/LTS/Termination.lean",
+ "public": [
+  {"name": "Cslib.LTS.Bounded.toTerminating", "kind": "theorem", "line": 30},
+  {"name": "Cslib.LTS.bounded_terminating", "kind": "instance", "line": 50},
+  {"name": "Cslib.LTS.Terminating.toAcyclic", "kind": "theorem", "line": 54},
+  {"name": "Cslib.LTS.terminating_acyclic", "kind": "instance", "line": 58},
+  {"name": "Cslib.LTS.Acyclic.toBoundedUpTo", "kind": "theorem", "line": 63},
+  {"name": "Cslib.LTS.Acyclic.toBounded", "kind": "theorem", "line": 76},
+  {"name": "Cslib.LTS.Acyclic.toTerminating", "kind": "theorem", "line": 80},
+  {"name": "Cslib.LTS.MayTerminate", "kind": "def", "line": 85},
+  {"name": "Cslib.LTS.Stuck", "kind": "def", "line": 89}
+ ],
+ "private": [],
+ "missing": [],
+ "unread": "Unnamed instances, the names an `alias ⟨…⟩` command gives, and the names Lean generates for a declaration (constructors, recursors, derived instances) are not read from the source, so they are not listed."
+}

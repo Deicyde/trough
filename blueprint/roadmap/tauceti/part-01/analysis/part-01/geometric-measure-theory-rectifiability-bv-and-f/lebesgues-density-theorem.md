@@ -71,4 +71,4 @@ TauCeti.measure_essentialBoundary.{u_1} {α : Type u_1} [MetricSpace α] [Measur
 ## Sources
 
 - [Tau Ceti documentation: `TauCeti.ae_hasDensityAt_indicator`](https://taucetiproject.org/docs/TauCeti/MeasureTheory/Covering/EssentialBoundary.html#TauCeti.ae_hasDensityAt_indicator)
-- [Source of `TauCeti.ae_hasDensityAt_indicator` in TauCeti/MeasureTheory/Covering/EssentialBoundary.lean](https://github.com/TauCetiProject/TauCeti/blob/a6027b1d24fcb935c53bd5b50d11b40991cda418/TauCeti/MeasureTheory/Covering/EssentialBoundary.lean#L400)
+- [Source of `TauCeti.ae_hasDensityAt_indicator` in TauCeti/MeasureTheory/Covering/EssentialBoundary.lean](https://github.com/TauCetiProject/TauCeti/blob/cd41bffcb343151b3e58c89392e206b11fe78c1c/TauCeti/MeasureTheory/Covering/EssentialBoundary.lean#L452)

@@ -35,4 +35,4 @@ Formalized in Tau Ceti as [`TauCeti.isInternal_gtLine`](https://taucetiproject.o
 ## Sources
 
 - [Tau Ceti documentation: `TauCeti.isInternal_gtLine`](https://taucetiproject.org/docs/TauCeti/RepresentationTheory/ClassicalGroups/GelfandTsetlin/Line.html#TauCeti.isInternal_gtLine)
-- [Source of `TauCeti.isInternal_gtLine` in TauCeti/RepresentationTheory/ClassicalGroups/GelfandTsetlin/Line.lean](https://github.com/TauCetiProject/TauCeti/blob/a6027b1d24fcb935c53bd5b50d11b40991cda418/TauCeti/RepresentationTheory/ClassicalGroups/GelfandTsetlin/Line.lean#L171)
+- [Source of `TauCeti.isInternal_gtLine` in TauCeti/RepresentationTheory/ClassicalGroups/GelfandTsetlin/Line.lean](https://github.com/TauCetiProject/TauCeti/blob/cd41bffcb343151b3e58c89392e206b11fe78c1c/TauCeti/RepresentationTheory/ClassicalGroups/GelfandTsetlin/Line.lean#L171)

@@ -30,4 +30,4 @@ Formalized in Tau Ceti as [`TauCeti.AlgebraicGeometry.Scheme.coheight_eq_one_of_
 ## Sources
 
 - [Tau Ceti documentation: `TauCeti.AlgebraicGeometry.Scheme.coheight_eq_one_of_maximal_mem_zeroLocus`](https://taucetiproject.org/docs/TauCeti/AlgebraicGeometry/Scheme/ZeroLocusComponents.html#TauCeti.AlgebraicGeometry.Scheme.coheight_eq_one_of_maximal_mem_zeroLocus)
-- [Source of `TauCeti.AlgebraicGeometry.Scheme.coheight_eq_one_of_maximal_mem_zeroLocus` in TauCeti/AlgebraicGeometry/Scheme/ZeroLocusComponents.lean](https://github.com/TauCetiProject/TauCeti/blob/a6027b1d24fcb935c53bd5b50d11b40991cda418/TauCeti/AlgebraicGeometry/Scheme/ZeroLocusComponents.lean#L182)
+- [Source of `TauCeti.AlgebraicGeometry.Scheme.coheight_eq_one_of_maximal_mem_zeroLocus` in TauCeti/AlgebraicGeometry/Scheme/ZeroLocusComponents.lean](https://github.com/TauCetiProject/TauCeti/blob/cd41bffcb343151b3e58c89392e206b11fe78c1c/TauCeti/AlgebraicGeometry/Scheme/ZeroLocusComponents.lean#L182)

@@ -38,4 +38,4 @@ Formalized in Tau Ceti as [`TauCeti.ExactStructure.FiniteResolution.liftShiftHom
 ## Sources
 
 - [Tau Ceti documentation: `TauCeti.ExactStructure.FiniteResolution.liftShiftHomotopy`](https://taucetiproject.org/docs/TauCeti/CategoryTheory/Exact/Graded/Projective.html#TauCeti.ExactStructure.FiniteResolution.liftShiftHomotopy)
-- [Source of `TauCeti.ExactStructure.FiniteResolution.liftShiftHomotopy` in TauCeti/CategoryTheory/Exact/Graded/Projective.lean](https://github.com/TauCetiProject/TauCeti/blob/a6027b1d24fcb935c53bd5b50d11b40991cda418/TauCeti/CategoryTheory/Exact/Graded/Projective.lean#L279)
+- [Source of `TauCeti.ExactStructure.FiniteResolution.liftShiftHomotopy` in TauCeti/CategoryTheory/Exact/Graded/Projective.lean](https://github.com/TauCetiProject/TauCeti/blob/cd41bffcb343151b3e58c89392e206b11fe78c1c/TauCeti/CategoryTheory/Exact/Graded/Projective.lean#L288)

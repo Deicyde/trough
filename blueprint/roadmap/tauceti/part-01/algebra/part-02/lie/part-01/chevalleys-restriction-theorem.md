@@ -24,9 +24,8 @@ Its statement uses no other declaration mapped here.
 
 ## Proof depends on
 
-- [Cauchy-Schwarz against a majorant](../../../../linear-algebra/bilinear-form/cauchy-schwarz-against-a-majorant.md)
-- [Representation.symmetricAlgebraInvariants](../../../../representation-theory/finite-reflection-invariants-degrees-and-weyl-ex/representation-symmetricalgebrainvariants.md)
-- [Representation.symmetricAlgebraReynolds](../../../../representation-theory/finite-reflection-invariants-degrees-and-weyl-ex/representation-symmetricalgebrareynolds.md)
+- [Cauchy-Schwarz against a majorant](../../../../linear-algebra/part-01/bilinear-form/cauchy-schwarz-against-a-majorant.md)
+- [The group `Int L` of inner automorphisms of a Lie algebra `L`](../../../part-01/representation-theory/the-group-int-l-of-inner-automorphisms-of-a-lie.md)
 
 ## Lean
 
@@ -57,4 +56,4 @@ LieSubalgebra.lieCartanRestriction_injOn_lieInvariants.{u_1, u_2} {K : Type u_1}
 ## Sources
 
 - [Tau Ceti documentation: `LieSubalgebra.lieChevalleyRestrictionIso`](https://taucetiproject.org/docs/TauCeti/Algebra/Lie/HighestWeight/ChevalleyRestriction.html#LieSubalgebra.lieChevalleyRestrictionIso)
-- [Source of `LieSubalgebra.lieChevalleyRestrictionIso` in TauCeti/Algebra/Lie/HighestWeight/ChevalleyRestriction.lean](https://github.com/TauCetiProject/TauCeti/blob/a6027b1d24fcb935c53bd5b50d11b40991cda418/TauCeti/Algebra/Lie/HighestWeight/ChevalleyRestriction.lean#L148)
+- [Source of `LieSubalgebra.lieChevalleyRestrictionIso` in TauCeti/Algebra/Lie/HighestWeight/ChevalleyRestriction.lean](https://github.com/TauCetiProject/TauCeti/blob/cd41bffcb343151b3e58c89392e206b11fe78c1c/TauCeti/Algebra/Lie/HighestWeight/ChevalleyRestriction.lean#L148)

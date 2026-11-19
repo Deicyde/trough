@@ -39,4 +39,4 @@ Formalized in Tau Ceti as [`TauCeti.WittVector.IntervalLocalization.exists_sum_e
 ## Sources
 
 - [Tau Ceti documentation: `TauCeti.WittVector.IntervalLocalization.exists_sum_eq_mul_inv_pow`](https://taucetiproject.org/docs/TauCeti/RingTheory/WittVector/IntervalRing/Radius.html#TauCeti.WittVector.IntervalLocalization.exists_sum_eq_mul_inv_pow)
-- [Source of `TauCeti.WittVector.IntervalLocalization.exists_sum_eq_mul_inv_pow` in TauCeti/RingTheory/WittVector/IntervalRing/Radius.lean](https://github.com/TauCetiProject/TauCeti/blob/a6027b1d24fcb935c53bd5b50d11b40991cda418/TauCeti/RingTheory/WittVector/IntervalRing/Radius.lean#L198)
+- [Source of `TauCeti.WittVector.IntervalLocalization.exists_sum_eq_mul_inv_pow` in TauCeti/RingTheory/WittVector/IntervalRing/Radius.lean](https://github.com/TauCetiProject/TauCeti/blob/cd41bffcb343151b3e58c89392e206b11fe78c1c/TauCeti/RingTheory/WittVector/IntervalRing/Radius.lean#L198)

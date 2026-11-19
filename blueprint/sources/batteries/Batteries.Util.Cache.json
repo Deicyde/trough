@@ -1,0 +1,23 @@
+{
+ "schema": "trough-ledger/v1",
+ "library": "Batteries",
+ "repo": "leanprover-community/batteries",
+ "rev": "b4b25a3886a16daacaf6615c2eea7170a6e8f458",
+ "module": "Batteries.Util.Cache",
+ "file": "Batteries/Util/Cache.lean",
+ "public": [
+  {"name": "Batteries.Tactic.Cache", "kind": "def", "line": 44},
+  {"name": "Batteries.Tactic.Cache.mk", "kind": "def", "line": 52},
+  {"name": "Lean.Meta.wrapAsync", "kind": "def", "line": 55},
+  {"name": "Batteries.Tactic.Cache.get", "kind": "def", "line": 65},
+  {"name": "Batteries.Tactic.DeclCache", "kind": "structure", "line": 80},
+  {"name": "Batteries.Tactic.DeclCache.mk", "kind": "def", "line": 104},
+  {"name": "Batteries.Tactic.DeclCache.get", "kind": "def", "line": 125},
+  {"name": "Batteries.Tactic.DiscrTreeCache", "kind": "def", "line": 134},
+  {"name": "Batteries.Tactic.DiscrTreeCache.mk", "kind": "def", "line": 140},
+  {"name": "Batteries.Tactic.DiscrTreeCache.getMatch", "kind": "def", "line": 167}
+ ],
+ "private": [],
+ "missing": [],
+ "unread": "Unnamed instances, the names an `alias ⟨…⟩` command gives, and the names Lean generates for a declaration (constructors, recursors, derived instances) are not read from the source, so they are not listed."
+}

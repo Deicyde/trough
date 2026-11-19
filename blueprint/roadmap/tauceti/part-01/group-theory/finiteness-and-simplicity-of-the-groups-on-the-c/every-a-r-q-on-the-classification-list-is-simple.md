@@ -25,7 +25,7 @@ TauCeti.ValidLieTypeIndex.isSimpleGroup_A {r : ℕ} {q : TauCeti.PrimePower}
 
 ## Proof depends on
 
-- [Cauchy--Binet for `2 × 2` minors](../../linear-algebra/matrix/cauchy-binet-for-2-2-minors.md)
+- [Cauchy--Binet for `2 × 2` minors](../../linear-algebra/part-01/matrix/cauchy-binet-for-2-2-minors.md)
 - [Iwasawa's theorem for `PSL`](iwasawas-theorem-for-psl.md)
 
 ## Lean
@@ -35,5 +35,5 @@ Formalized in Tau Ceti as [`TauCeti.ValidLieTypeIndex.isSimpleGroup_A`](https://
 ## Sources
 
 - [Tau Ceti documentation: `TauCeti.ValidLieTypeIndex.isSimpleGroup_A`](https://taucetiproject.org/docs/TauCeti/GroupTheory/SpecificGroups/CFSG/BasicProperties/TypeA.html#TauCeti.ValidLieTypeIndex.isSimpleGroup_A)
-- [Source of `TauCeti.ValidLieTypeIndex.isSimpleGroup_A` in TauCeti/GroupTheory/SpecificGroups/CFSG/BasicProperties/TypeA.lean](https://github.com/TauCetiProject/TauCeti/blob/a6027b1d24fcb935c53bd5b50d11b40991cda418/TauCeti/GroupTheory/SpecificGroups/CFSG/BasicProperties/TypeA.lean#L188)
-- [Tau Ceti roadmap status: Finiteness and simplicity of the groups on the CFSG list](https://github.com/TauCetiProject/TauCetiRoadmap/blob/9f7c032adaf1b838e8183d63ff3cfa886d061cb3/TauCetiRoadmap/CFSGBasicProperties/STATUS.md)
+- [Source of `TauCeti.ValidLieTypeIndex.isSimpleGroup_A` in TauCeti/GroupTheory/SpecificGroups/CFSG/BasicProperties/TypeA.lean](https://github.com/TauCetiProject/TauCeti/blob/cd41bffcb343151b3e58c89392e206b11fe78c1c/TauCeti/GroupTheory/SpecificGroups/CFSG/BasicProperties/TypeA.lean#L188)
+- [Tau Ceti roadmap status: Finiteness and simplicity of the groups on the CFSG list](https://github.com/TauCetiProject/TauCetiRoadmap/blob/612845ab80fb9c2b9bee724a156756ee78031591/TauCetiRoadmap/CFSGBasicProperties/STATUS.md)

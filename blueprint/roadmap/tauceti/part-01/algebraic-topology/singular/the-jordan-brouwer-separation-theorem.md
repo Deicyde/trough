@@ -58,4 +58,4 @@ TauCeti.natCard_connectedComponents_sphere_compl_range_eq_two.{w, u} {F : Type w
 ## Sources
 
 - [Tau Ceti documentation: `TauCeti.natCard_zerothHomotopy_sphere_compl_range_eq_two`](https://taucetiproject.org/docs/TauCeti/AlgebraicTopology/Singular/JordanBrouwer.html#TauCeti.natCard_zerothHomotopy_sphere_compl_range_eq_two)
-- [Source of `TauCeti.natCard_zerothHomotopy_sphere_compl_range_eq_two` in TauCeti/AlgebraicTopology/Singular/JordanBrouwer.lean](https://github.com/TauCetiProject/TauCeti/blob/a6027b1d24fcb935c53bd5b50d11b40991cda418/TauCeti/AlgebraicTopology/Singular/JordanBrouwer.lean#L217)
+- [Source of `TauCeti.natCard_zerothHomotopy_sphere_compl_range_eq_two` in TauCeti/AlgebraicTopology/Singular/JordanBrouwer.lean](https://github.com/TauCetiProject/TauCeti/blob/cd41bffcb343151b3e58c89392e206b11fe78c1c/TauCeti/AlgebraicTopology/Singular/JordanBrouwer.lean#L217)

@@ -30,4 +30,4 @@ Formalized in Tau Ceti as [`TauCeti.etale_aeval_of_basis`](https://taucetiprojec
 ## Sources
 
 - [Tau Ceti documentation: `TauCeti.etale_aeval_of_basis`](https://taucetiproject.org/docs/TauCeti/RingTheory/Kaehler/FormallyEtale.html#TauCeti.etale_aeval_of_basis)
-- [Source of `TauCeti.etale_aeval_of_basis` in TauCeti/RingTheory/Kaehler/FormallyEtale.lean](https://github.com/TauCetiProject/TauCeti/blob/a6027b1d24fcb935c53bd5b50d11b40991cda418/TauCeti/RingTheory/Kaehler/FormallyEtale.lean#L147)
+- [Source of `TauCeti.etale_aeval_of_basis` in TauCeti/RingTheory/Kaehler/FormallyEtale.lean](https://github.com/TauCetiProject/TauCeti/blob/cd41bffcb343151b3e58c89392e206b11fe78c1c/TauCeti/RingTheory/Kaehler/FormallyEtale.lean#L150)

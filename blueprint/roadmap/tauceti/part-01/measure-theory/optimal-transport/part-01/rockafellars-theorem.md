@@ -27,7 +27,7 @@ Its statement uses no other declaration mapped here.
 
 ## Proof depends on
 
-- [The Fenchel–Young inequality](../../../analysis/part-02/convex/the-fenchel-young-inequality.md)
+- [The Fenchel–Young inequality](../../../analysis/part-03/convex/the-fenchel-young-inequality.md)
 - [The theorem of Rockafellar and Rüschendorf](../part-02/the-theorem-of-rockafellar-and-ruschendorf.md)
 
 ## Lean
@@ -49,4 +49,4 @@ TauCeti.IsCyclicallyMonotone.exists_fenchelConjugate_innerₗ_subset_subdifferen
 ## Sources
 
 - [Tau Ceti documentation: `TauCeti.IsCyclicallyMonotone.exists_fenchelConjugate_subset_subdifferential`](https://taucetiproject.org/docs/TauCeti/MeasureTheory/OptimalTransport/CTransform/Rockafellar.html#TauCeti.IsCyclicallyMonotone.exists_fenchelConjugate_subset_subdifferential)
-- [Source of `TauCeti.IsCyclicallyMonotone.exists_fenchelConjugate_subset_subdifferential` in TauCeti/MeasureTheory/OptimalTransport/CTransform/Rockafellar.lean](https://github.com/TauCetiProject/TauCeti/blob/a6027b1d24fcb935c53bd5b50d11b40991cda418/TauCeti/MeasureTheory/OptimalTransport/CTransform/Rockafellar.lean#L72)
+- [Source of `TauCeti.IsCyclicallyMonotone.exists_fenchelConjugate_subset_subdifferential` in TauCeti/MeasureTheory/OptimalTransport/CTransform/Rockafellar.lean](https://github.com/TauCetiProject/TauCeti/blob/cd41bffcb343151b3e58c89392e206b11fe78c1c/TauCeti/MeasureTheory/OptimalTransport/CTransform/Rockafellar.lean#L72)

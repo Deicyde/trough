@@ -34,7 +34,7 @@ Formalized in Tau Ceti as [`TauCeti.groupCohomology.coindIso_hom_comp_corestrict
 
 ```lean
 TauCeti.groupHomology.indIso_inv_comp_map_counit.{u} {k G : Type u} [CommRing k] [Group G]
-  [DecidableEq G] (S : Subgroup G) (B : Rep.{u, u, u} k G) (n : ℕ) :
+  (S : Subgroup G) (B : Rep.{u, u, u} k G) (n : ℕ) :
   CategoryTheory.CategoryStruct.comp (groupHomology.indIso S (Rep.res S.subtype B) n).inv
       (groupHomology.map (MonoidHom.id G) ((Rep.indResAdjunction k S.subtype).counit.app B) n) =
     groupHomology.map S.subtype (CategoryTheory.CategoryStruct.id (Rep.res S.subtype B)) n
@@ -44,8 +44,7 @@ TauCeti.groupHomology.indIso_inv_comp_map_counit.{u} {k G : Type u} [CommRing k]
 
 ```lean
 TauCeti.groupHomology.indIso_inv_comp_map_counit_assoc.{u} {k G : Type u} [CommRing k] [Group G]
-  [DecidableEq G] (S : Subgroup G) (B : Rep.{u, u, u} k G) (n : ℕ) {Z : ModuleCat k}
-  (h : groupHomology B n ⟶ Z) :
+  (S : Subgroup G) (B : Rep.{u, u, u} k G) (n : ℕ) {Z : ModuleCat k} (h : groupHomology B n ⟶ Z) :
   CategoryTheory.CategoryStruct.comp (groupHomology.indIso S (Rep.res S.subtype B) n).inv
       (CategoryTheory.CategoryStruct.comp
         (groupHomology.map (MonoidHom.id G) ((Rep.indResAdjunction k S.subtype).counit.app B) n)
@@ -57,4 +56,4 @@ TauCeti.groupHomology.indIso_inv_comp_map_counit_assoc.{u} {k G : Type u} [CommR
 ## Sources
 
 - [Tau Ceti documentation: `TauCeti.groupCohomology.coindIso_hom_comp_corestriction`](https://taucetiproject.org/docs/TauCeti/RepresentationTheory/Homological/GroupCohomology/Corestriction.html#TauCeti.groupCohomology.coindIso_hom_comp_corestriction)
-- [Source of `TauCeti.groupCohomology.coindIso_hom_comp_corestriction` in TauCeti/RepresentationTheory/Homological/GroupCohomology/Corestriction.lean](https://github.com/TauCetiProject/TauCeti/blob/a6027b1d24fcb935c53bd5b50d11b40991cda418/TauCeti/RepresentationTheory/Homological/GroupCohomology/Corestriction.lean#L146)
+- [Source of `TauCeti.groupCohomology.coindIso_hom_comp_corestriction` in TauCeti/RepresentationTheory/Homological/GroupCohomology/Corestriction.lean](https://github.com/TauCetiProject/TauCeti/blob/cd41bffcb343151b3e58c89392e206b11fe78c1c/TauCeti/RepresentationTheory/Homological/GroupCohomology/Corestriction.lean#L146)

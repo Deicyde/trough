@@ -39,5 +39,5 @@ Formalized in Tau Ceti as [`TauCeti.DGTwistedObject.isLeast_isoClosure_oneSided`
 ## Sources
 
 - [Tau Ceti documentation: `TauCeti.DGTwistedObject.isLeast_isoClosure_oneSided`](https://taucetiproject.org/docs/TauCeti/CategoryTheory/DG/Twisted/OneSided.html#TauCeti.DGTwistedObject.isLeast_isoClosure_oneSided)
-- [Source of `TauCeti.DGTwistedObject.isLeast_isoClosure_oneSided` in TauCeti/CategoryTheory/DG/Twisted/OneSided.lean](https://github.com/TauCetiProject/TauCeti/blob/a6027b1d24fcb935c53bd5b50d11b40991cda418/TauCeti/CategoryTheory/DG/Twisted/OneSided.lean#L354)
-- [Tau Ceti roadmap status: DG and A-infinity algebras, categories, and modules](https://github.com/TauCetiProject/TauCetiRoadmap/blob/9f7c032adaf1b838e8183d63ff3cfa886d061cb3/TauCetiRoadmap/DGAInfinity/STATUS.md)
+- [Source of `TauCeti.DGTwistedObject.isLeast_isoClosure_oneSided` in TauCeti/CategoryTheory/DG/Twisted/OneSided.lean](https://github.com/TauCetiProject/TauCeti/blob/cd41bffcb343151b3e58c89392e206b11fe78c1c/TauCeti/CategoryTheory/DG/Twisted/OneSided.lean#L354)
+- [Tau Ceti roadmap status: DG and A-infinity algebras, categories, and modules](https://github.com/TauCetiProject/TauCetiRoadmap/blob/612845ab80fb9c2b9bee724a156756ee78031591/TauCetiRoadmap/DGAInfinity/STATUS.md)

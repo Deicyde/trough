@@ -30,4 +30,4 @@ Formalized in Tau Ceti as [`HeckeCosetModule.mul_comm_of_antiInvolution`](https:
 ## Sources
 
 - [Tau Ceti documentation: `HeckeCosetModule.mul_comm_of_antiInvolution`](https://taucetiproject.org/docs/TauCeti/NumberTheory/HeckeRing/Commutativity.html#HeckeCosetModule.mul_comm_of_antiInvolution)
-- [Source of `HeckeCosetModule.mul_comm_of_antiInvolution` in TauCeti/NumberTheory/HeckeRing/Commutativity.lean](https://github.com/TauCetiProject/TauCeti/blob/a6027b1d24fcb935c53bd5b50d11b40991cda418/TauCeti/NumberTheory/HeckeRing/Commutativity.lean#L456)
+- [Source of `HeckeCosetModule.mul_comm_of_antiInvolution` in TauCeti/NumberTheory/HeckeRing/Commutativity.lean](https://github.com/TauCetiProject/TauCeti/blob/cd41bffcb343151b3e58c89392e206b11fe78c1c/TauCeti/NumberTheory/HeckeRing/Commutativity.lean#L455)

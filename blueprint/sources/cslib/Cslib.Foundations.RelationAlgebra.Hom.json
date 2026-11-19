@@ -1,0 +1,30 @@
+{
+ "schema": "trough-ledger/v1",
+ "library": "CSLib",
+ "repo": "leanprover/cslib",
+ "rev": "86d560b6cbb379bd82512424cbcd2a915a1565e7",
+ "module": "Cslib.Foundations.RelationAlgebra.Hom",
+ "file": "Cslib/Foundations/RelationAlgebra/Hom.lean",
+ "public": [
+  {"name": "Cslib.RelationAlgebraHom", "kind": "structure", "line": 24},
+  {"name": "Cslib.RelationAlgebraEquiv", "kind": "structure", "line": 32},
+  {"name": "Cslib.RelationAlgebraHom.ext", "kind": "theorem", "line": 59},
+  {"name": "Cslib.RelationAlgebraHom.id", "kind": "def", "line": 63},
+  {"name": "Cslib.RelationAlgebraHom.comp", "kind": "def", "line": 67},
+  {"name": "Cslib.RelationAlgebraHom.id_apply", "kind": "theorem", "line": 72},
+  {"name": "Cslib.RelationAlgebraHom.comp_apply", "kind": "theorem", "line": 75},
+  {"name": "Cslib.RelationAlgebraEquiv.ext", "kind": "theorem", "line": 101},
+  {"name": "Cslib.RelationAlgebraEquiv.refl", "kind": "def", "line": 105},
+  {"name": "Cslib.RelationAlgebraEquiv.symm", "kind": "def", "line": 109},
+  {"name": "Cslib.RelationAlgebraEquiv.trans", "kind": "def", "line": 113},
+  {"name": "Cslib.RelationAlgebraEquiv.toHom", "kind": "def", "line": 118},
+  {"name": "Cslib.RelationAlgebraEquiv.refl_apply", "kind": "theorem", "line": 122},
+  {"name": "Cslib.RelationAlgebraEquiv.trans_apply", "kind": "theorem", "line": 125},
+  {"name": "Cslib.RelationAlgebraEquiv.toHom_apply", "kind": "theorem", "line": 129},
+  {"name": "Cslib.RelationAlgebraEquiv.symm_apply_apply", "kind": "theorem", "line": 132},
+  {"name": "Cslib.RelationAlgebraEquiv.apply_symm_apply", "kind": "theorem", "line": 136}
+ ],
+ "private": [],
+ "missing": [],
+ "unread": "Unnamed instances, the names an `alias ⟨…⟩` command gives, and the names Lean generates for a declaration (constructors, recursors, derived instances) are not read from the source, so they are not listed."
+}

@@ -1,0 +1,17 @@
+{
+ "schema": "trough-ledger/v1",
+ "library": "CSLib",
+ "repo": "leanprover/cslib",
+ "rev": "86d560b6cbb379bd82512424cbcd2a915a1565e7",
+ "module": "Cslib.Foundations.Logic.InferenceSystem.Basic",
+ "file": "Cslib/Foundations/Logic/InferenceSystem/Basic.lean",
+ "public": [
+  {"name": "Cslib.Logic.InferenceSystem.IsIntuitionistic", "kind": "class", "line": 19},
+  {"name": "Cslib.Logic.InferenceSystem.derivableIn_bot_imp", "kind": "lemma", "line": 23},
+  {"name": "Cslib.Logic.InferenceSystem.IsClassical", "kind": "class", "line": 28},
+  {"name": "Cslib.Logic.InferenceSystem.derivableIn_dne", "kind": "lemma", "line": 32}
+ ],
+ "private": [],
+ "missing": [],
+ "unread": "Unnamed instances, the names an `alias ⟨…⟩` command gives, and the names Lean generates for a declaration (constructors, recursors, derived instances) are not read from the source, so they are not listed."
+}

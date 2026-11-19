@@ -9,50 +9,36 @@ an API map, the repository's own account of an area. tools/refresh_physlib.py re
 into data/physlib/ without Lean: each module's docstring, its section docstrings and its declarations as
 trough.leansource reads them, the API maps, the significant results scripts/lint/exemptions/Theorems.txt lists, and
 the README's descriptions. lean/physlib/PhyslibDeps.lean then reads with Lean which modules each module's statements
-and proofs use, and which of the names read from the source Lean has.
+and proofs use, and which of the names read from the source Lean has. trough.library holds what Physlib shares with the
+other libraries: its links at the pin, its guards, its docstring filter, its quoting of docstrings and its edges;
+PHYSLIB, at the end, configures them.
 """
 
 from __future__ import annotations
 
 import json
-import posixpath
 import re
 from collections import Counter, defaultdict
 from pathlib import Path
 
-from . import leansource
+from . import library, leansource
 from .blueprints import Built, escape
 from .ff import is_apache
-from .formal_conjectures import OPAQUE, module_name, natural, plural, quote, title_and_doc
+from .formal_conjectures import module_name, natural, plural, quote, title_and_doc
+from .library import GITHUB, HEADING, PLANS, Library, checked_out, check_names, declared_name, one_cut
 from .mathlib import fence
 from .stacks import comment, header, literal
 from .vault import Container, Entry, Leaf, chunk, slugify
 
 SCHEMA = "trough-physlib/v1"
 REPO = "leanprover-community/physlib"
-GITHUB = "https://github.com"
 LIBRARIES = ("Physlib", "PhyslibAlpha", "QuantumInfo")
 THEOREMS = "scripts/lint/exemptions/Theorems.txt"
 API_MAP = "API-map.md"
-HEADING = re.compile(r"^(#{1,6})[ \t]+(.+?)[ \t]*#*[ \t]*$")
-HEADING_START = re.compile(r"#{1,6}[ \t]")
-TODO = re.compile(r"\bTODOs?\b")
-# A sentence about what is planned, wanted or welcome, not about what the library has. Not "not yet", "remains to be",
-# "in the future" or "upstream", which say what the library has or are physics.
-PLANS = re.compile(r"\b(?:underway|under way|planned|we plan|plans? to|welcome|reserved for future work|future work on|"
-                   r"future design work|be upstreamed|will follow|to be added|we would want|we should show|"
-                   r"will eventually|near future|one day|be deprecated|with the intention|eventually we will|"
-                   r"long term aim)\b", re.I)
-# A TODO note: a block that starts with one.
-TODO_NOTE = re.compile(r"TODOs?\b")
-# A heading over plans, after its section number if it has one.
-PLAN_HEADING = re.compile(r"^(?:[A-Za-z0-9]+(?:\.[A-Za-z0-9]+)*\.[ \t]+)?(?:plans?|future work|todos?|roadmap)\b", re.I)
 # A line of a structure, class or inductive type that starts at its command's column without ending it.
 CONTINUES = re.compile(r"\||deriving\b(?![ \t]+instance\b)")
 # `alias ⟨mp, mpr⟩ := ...`, which names the two directions of an equivalence; leansource does not read it.
 ALIAS_PAIR = re.compile(r"^[ \t]*(?:@\[[^\n]*?\][ \t]*)?(?:(?:protected|public|nonrec)[ \t]+)*alias[ \t]+⟨", re.M)
-# `class abbrev X := A, B`, which leansource reads as a class named `abbrev`.
-CLASS_ABBREV = re.compile(rf"\bclass[ \t]+abbrev[ \t]+({leansource.NAME})")
 # Physlib's commands for what is not formalized: informal results and TODO items.
 INFORMAL = re.compile(r"^[ \t]*(?:informal_lemma|informal_definition|semiformal_result|TODO)\b", re.M)
 COPYRIGHT = re.compile(r"Copyright \(c\) (.+?)\.? All rights reserved")
@@ -115,19 +101,12 @@ def read_module(text: str, path: str) -> dict | None:
     code = blanked.split("\n")
     keywords = leansource.blank_attributes(blanked).split("\n")
     source = text.split("\n")
-
-    def name(declaration: leansource.Declaration) -> str:
-        if declaration.kind == "class" and declaration.name.rsplit(".", 1)[-1] == "abbrev":
-            if match := CLASS_ABBREV.search(source[declaration.line - 1]):
-                return declaration.name.removesuffix("abbrev") + match.group(1)
-        return declaration.name
-
     copyright = COPYRIGHT.search(text[:1000])
     return {
         "file": path, "module": module_name(path), "title": title, "doc": doc,
         "copyright": copyright.group(1) if copyright else "",
         "sections": [{"line": line, "text": words} for line, words in (docs[1:] if opening else docs)],
-        "declarations": [{"name": name(declaration), "kind": declaration.kind, "line": declaration.line,
+        "declarations": [{"name": declared_name(declaration, source), "kind": declaration.kind, "line": declaration.line,
                           "doc": declaration.doc,
                           "statement": whole(source, code, keywords, declaration.line) if declaration.kind in WHOLE
                           else declaration.statement if declaration.statement is not None
@@ -228,10 +207,8 @@ def read(checkout: Path, paths: list[str]) -> tuple[dict, list[str]]:
         problems.append(f"{REPO}: its LICENSE is not the Apache License 2.0")
     lean = lean_paths(paths)
     maps = sorted((path for path in paths if path.endswith("/" + API_MAP) and path.split("/")[0] in LIBRARIES), key=natural)
-    wanted = [*lean, *maps, THEOREMS, "README.md", "lean-toolchain", "lake-manifest.json"]
-    missing = [path for path in wanted if not (checkout / path).is_file()]
-    if missing:
-        problems.append(f"not checked out: {missing[0]}" + (f" and {len(missing) - 1:,} other files" if len(missing) > 1 else ""))
+    if problem := checked_out(checkout, [*lean, *maps, *PHYSLIB.required]):
+        problems.append(problem)
     if not lean:
         problems.append(f"{REPO} has no .lean files under {', '.join(LIBRARIES)}")
     if problems:
@@ -273,20 +250,11 @@ def shard(path: str) -> str:
 TITLE = "Physlib: The Lean Physics Library"
 MATHLIB_REPO = "https://github.com/leanprover-community/mathlib4"
 LEAN_NAMES = 8  # the names a card's Lean row shows
-# The bytes of article Markdown a listing page folds in before its next article starts a page.
-PAGE_BUDGET = 250_000
 NO_DEPENDS = "Its declarations' statements use no declaration of another module with an article here."
 NO_DEPENDS_UNREAD = "No dependencies are recorded: they come from Lean's reading of the modules, which the data lack."
 NO_RECORD = "The Lean dump has no record of this module, so its dependencies are unknown."
-SENTENCE_END = re.compile(r"(?<=[.!?])\s+")
-ABBREVIATION = re.compile(r"\b(?:e\.g|i\.e|cf|resp|vs)\.$")
-LIST_ITEM = re.compile(r"^[ \t]*[-*+][ \t]")
-FENCE = re.compile(r"^ {0,3}(?:`{3,}|~{3,})")
 CITATIONS = re.compile(r"((?:\s*\[(?:\d+|TODO)\])+)")
-INLINE_LINK = re.compile(r"(?<!!)\[((?:[^\[\]\n]|\[[^\[\]\n]*\])*)\]\(([^()\s]+)\)")
-SCHEME = re.compile(r"^(?:[a-zA-Z][a-zA-Z0-9+.-]*:|#)")
 API_MAP_PATH = re.compile(r"(\S+)/API-map\.md$")
-CUT = ("…", "> …")  # a cut mark, as a paragraph and quoted
 TAU_CETI = "The Tau Ceti contributors"  # the copyright holder of the code PhyslibAlpha takes from Tau Ceti
 META = "Physlib/Meta/"  # Physlib's tooling, which defines the TODO command and counts its items
 
@@ -306,26 +274,23 @@ def load(data: Path) -> dict | None:
 
 
 def blob(source: dict, path: str, line: int | None = None) -> str:
-    return f"{GITHUB}/{source['repo']}/blob/{source['rev']}/{path}" + (f"#L{line}" if line else "")
+    return library.blob(PHYSLIB, source["rev"], path, line)
 
 
 def tree(source: dict, path: str = "") -> str:
-    return f"{GITHUB}/{source['repo']}/tree/{source['rev']}" + (f"/{path}" if path else "")
+    return library.folder_url(PHYSLIB, source["rev"], path)
 
 
 def at(source: dict) -> str:
-    return f"[{source['rev'][:8]}]({tree(source)})"
+    return library.at(PHYSLIB, source["rev"])
 
 
 def credit(source: dict) -> str:
-    return (f"The docstrings, Lean statements, API maps and README text are quoted from "
-            f"[{source['repo']}]({GITHUB}/{source['repo']}) at commit {at(source)}, under its Apache-2.0 license.")
+    return library.credit(PHYSLIB, source["rev"])
 
 
 def pinned(text: str, source: dict) -> str:
-    """Quoted text whose links into the repository's master branch point at the pinned commit."""
-    return re.sub(rf"{GITHUB}/{re.escape(source['repo'])}/(blob|tree)/master/",
-                  lambda match: f"{GITHUB}/{source['repo']}/{match.group(1)}/{source['rev']}/", text)
+    return library.pinned(PHYSLIB, text, source["rev"])
 
 
 def without_plans(text: str) -> str:
@@ -335,142 +300,19 @@ def without_plans(text: str) -> str:
     return " ".join(kept) + (" …" if len(kept) < len(clauses) else "")
 
 
-def sentences(paragraph: str) -> list[str]:
-    """A paragraph's sentences, each with the space after it, so that they join to the paragraph; a sentence does not
-    end at an abbreviation such as e.g."""
-    pieces, start = [], 0
-    for match in SENTENCE_END.finditer(paragraph):
-        if not ABBREVIATION.search(paragraph[start:match.start()]):
-            pieces.append(paragraph[start:match.end()])
-            start = match.end()
-    return pieces + ([paragraph[start:]] if start < len(paragraph) else [])
-
-
-def without_cut_sentences(paragraph: str, todos: re.Pattern = TODO) -> str:
-    """A paragraph without its sentences about plans, and without what follows the start of the sentence, or of the
-    clause after a semicolon, that mentions a TODO item, each cut marked with …."""
-    kept, marked = "", False
-    for sentence in sentences(paragraph):
-        todo = todos.search(sentence)
-        clauses = [match.start() for match in re.finditer(r";\s", sentence[:todo.start()])] if todo else []
-        if clauses:
-            return kept + sentence[:clauses[-1] + 1] + " …"
-        if todo or PLANS.search(sentence):
-            if not marked:
-                kept, marked = kept + "… ", True
-            if todo:
-                break
-            continue
-        kept, marked = kept + sentence, False
-    return kept.strip()
-
-
 def without_todos(markdown: str, notes: bool = True) -> str:
-    """Quoted Markdown without its TODO notes and its sentences about plans, each cut marked with …. A paragraph that
-    starts with a TODO note, or whose first sentence is about plans, goes with the list it introduces and every
-    paragraph after it up to the next heading. Otherwise a list item that mentions a TODO item or plans goes whole, and
-    in a paragraph a sentence about plans goes, and so does a sentence that mentions a TODO item with the rest of its
-    paragraph. The map records what the library has, not what it plans. Without *notes*, TODO items are not cut, for
-    text that describes Physlib's TODO command."""
-    todos = TODO if notes else re.compile(r"(?!)")
-    out, cutting = [], False
-    for block in re.split(r"\n[ \t]*\n", markdown.strip()):
-        if HEADING_START.match(block):
-            cutting = False
-        elif cutting:
-            continue
-        else:
-            # The paragraph's first sentence, before any list it introduces.
-            lines = block.strip().split("\n")
-            opening = lines[:next((index for index, line in enumerate(lines) if index and LIST_ITEM.match(line)), len(lines))]
-            lead = (sentences("\n".join(opening)) or [""])[0]
-            if (notes and TODO_NOTE.match(block.lstrip())) or PLANS.search(lead):
-                out.append("…")
-                cutting = True
-                continue
-        if not (todos.search(block) or PLANS.search(block)):
-            out.append(block)
-            continue
-        items: list[list[str]] = []
-        for line in block.split("\n"):
-            if LIST_ITEM.match(line) or not items:
-                items.append([line])
-            else:
-                items[-1].append(line)
-        if len(items) > 1 and all(LIST_ITEM.match(item[0]) for item in items):
-            kept = [line for item in items if not (todos.search(text := "\n".join(item)) or PLANS.search(text))
-                    for line in item]
-            out.append("\n".join(kept) + "\n\n…" if kept else "…")
-        else:
-            out.append(without_cut_sentences(block, todos))
-    return re.sub(r"…(?:\n\n…)+", "…", "\n\n".join(out)).strip()
+    """trough.library's without_todos() with Physlib's plan phrases; without *notes*, TODO items stay."""
+    return library.without_todos(markdown, PLANS, notes)
 
 
 def quoted_prose(markdown: str, here: str = "", source: dict | None = None, keys: dict[str, str] | None = None) -> str:
-    """Prose of the module at *here*, quoted: escaped as literal() escapes it, its inline links kept whole, so an
-    underscore in a link's target stays one. A link to one of the repository's files, written relative to the
-    module, points at the article of that module here; a link to another path, which is no module of the commit, keeps
-    only its label, and a link out of the repository is left for quote() to make text."""
-    links: list[str] = []
-    folder = here.rsplit("/", 1)[0]
-    opaque = [match.span() for match in OPAQUE.finditer(markdown)]
-
-    def keep(match: re.Match) -> str:
-        label, target = match.groups()
-        if any(start <= match.start() < end for start, end in opaque):
-            return match.group()
-        if not SCHEME.match(target):
-            if source is None:
-                return match.group()
-            path = target.split("#")[0]
-            path = posixpath.normpath(path.lstrip("/") if path.startswith("/") else posixpath.join(folder, path))
-            if path == ".." or path.startswith("../"):
-                return match.group()
-            if not (keys and path in keys):
-                return label
-            target = f"trough:{keys[path]}"
-        links.append(f"[{literal(label)}]({target})")
-        return f"\x00{len(links) - 1}\x00"
-
-    text = literal(INLINE_LINK.sub(keep, markdown))
-    return quote(re.sub(r"\x00(\d+)\x00", lambda match: links[int(match.group(1))], text))
+    """trough.library's quoted_prose(); with *source*, a relative link points at its module's article or keeps only
+    its label."""
+    return library.quoted_prose(markdown, here, (keys or {}) if source is not None else None)
 
 
 def doc_markdown(text: str, quoted=quoted_prose) -> list[str]:
-    """A docstring as an article shows it: its headings as the article's, from `##` down, and its prose quoted. A
-    table of contents, which the article's own headings give, is left out, and so is a section headed by a TODO or by
-    plans (Future work, Roadmap), with the TODO notes and sentences about plans without_todos cuts, each such cut
-    marked with …."""
-    parts: list[str] = []
-    prose: list[str] = []
-    skipping, fenced = 0, False
-
-    def flush() -> None:
-        kept = without_todos("\n".join(prose))
-        if kept:
-            parts.append(quoted(kept))
-        prose.clear()
-
-    for line in text.split("\n"):
-        if FENCE.match(line):
-            fenced = not fenced
-        match = None if fenced else HEADING.match(line)
-        if match is None:
-            if not skipping:
-                prose.append(line)
-            continue
-        level, words = len(match.group(1)), match.group(2)
-        if skipping and level > skipping:
-            continue
-        flush()
-        planned = bool(TODO.search(words) or PLAN_HEADING.match(words))
-        skipping = level if "table of contents" in words.casefold() or planned else 0
-        if planned:
-            parts.append("…")
-        elif not skipping:
-            parts.append("#" * min(max(level, 2), 6) + " " + comment(words))
-    flush()
-    return parts
+    return library.doc_markdown(text, quoted, PLANS)
 
 
 def significant(source: dict) -> set[str]:
@@ -493,7 +335,7 @@ def declaration_block(declaration: dict, module: dict, source: dict, listed: set
     if declaration["sorry"]:
         head += " Its value contains `sorry`."
     parts = [head]
-    doc = without_todos(declaration["doc"], notes=not module["file"].startswith(META))
+    doc = PHYSLIB.without_todos(declaration["doc"], module["file"])
     if doc:
         parts.append(quoted_prose(doc, module["file"], source, keys))
     parts.append(fence(declaration["statement"]))
@@ -553,8 +395,7 @@ def article(module: dict, source: dict, listed: set[str], links: dict[str, str],
         index += len(before)
         parts += doc_markdown(section["text"], quoted)
     parts += [declaration_block(declaration, module, source, listed, keys) for declaration in declarations[index:]]
-    # Section docstrings cut whole one after another show one cut mark.
-    parts = [part for index, part in enumerate(parts) if not (part in CUT and parts[index - 1] in CUT)]
+    parts = one_cut(parts)
     names = lean_names(module, listed)
     fields = [("declaration", "module"), ("origin", "cited")]
     if names:
@@ -626,63 +467,9 @@ def api_map_prose(api_map: dict, source: dict, keys: dict[str, str], pages: set[
     return "\n\n".join(lines)
 
 
-def closures(graph: dict[str, list[str]]) -> dict[str, set[str]]:
-    """What each node of an acyclic graph reaches through one or more edges."""
-    out: dict[str, set[str]] = {}
-
-    def visit(node: str) -> set[str]:
-        if node not in out:
-            out[node] = set()
-            out[node] = set().union(*({target} | visit(target) for target in graph.get(node, [])))
-        return out[node]
-
-    for node in graph:
-        visit(node)
-    return out
-
-
 def edges(deps: dict, articles: set[str]) -> tuple[dict[str, list[str]], dict[str, list[str]]]:
-    """Each module's nearest dependencies among the modules with an article: those its statements use, without one
-    reached through another's statements, and those only its proofs use, without one reached through any other.
-    A module without an article is passed through, its uses taken as the module's own."""
-    uses = deps["modules"]
-
-    def through(kind: str) -> dict[str, list[str]]:
-        memo: dict[str, set[str]] = {}
-
-        def reached(module: str) -> set[str]:
-            if module not in memo:
-                memo[module] = set()
-                found: set[str] = set()
-                direct = uses.get(module, {}).get(kind, [])
-                if kind == "proof":
-                    direct = [*direct, *uses.get(module, {}).get("statement", [])]
-                for target in direct:
-                    found |= {target} if target in articles else reached(target)
-                memo[module] = found
-            return memo[module]
-
-        out = {}
-        for module in articles:
-            found: set[str] = set()
-            for target in uses.get(module, {}).get(kind, []):
-                found |= {target} if target in articles else reached(target)
-            out[module] = sorted(found - {module}, key=natural)
-        return out
-
-    statement = through("statement")
-    proof = {module: [target for target in targets if target not in set(statement[module])]
-             for module, targets in through("proof").items()}
-    by_statement = closures(statement)
-    either = {module: statement[module] + proof[module] for module in articles}
-    by_either = closures(either)
-    nearest = {module: [target for target in targets
-                        if not any(target in by_statement[other] for other in targets if other != target)]
-               for module, targets in statement.items()}
-    proof_nearest = {module: [target for target in targets
-                              if not any(target in by_either[other] for other in either[module] if other != target)]
-                     for module, targets in proof.items()}
-    return nearest, proof_nearest
+    """trough.library's nearest_edges(), each list in path order."""
+    return library.nearest_edges(deps, articles, natural)
 
 
 def chapter(data: dict, tauceti: Container | None = None) -> tuple[Built, dict[str, str]]:
@@ -693,13 +480,8 @@ def chapter(data: dict, tauceti: Container | None = None) -> tuple[Built, dict[s
     if deps and deps["rev"] != source["rev"]:
         raise ValueError(f"data/physlib/deps.json reads {deps['rev'][:8]}, but source.json pins {source['rev'][:8]}")
     missing = set(deps["missing"]) if deps else set()
-    # As the refresh refuses a record that reads under half the last one, a dump that has under half the names read
-    # from the source is refused: the reading, not the library, has gone wrong.
-    read_names = {declaration["name"] for module in data["modules"] for declaration in module["declarations"]
-                  if declaration["name"]}
-    if len(missing & read_names) * 2 > len(read_names):
-        raise ValueError(f"data/physlib/deps.json marks {len(missing & read_names):,} of the {len(read_names):,} names "
-                         "read from the source missing, over half")
+    check_names(PHYSLIB, {declaration["name"] for module in data["modules"] for declaration in module["declarations"]
+                          if declaration["name"]}, missing)
     listed = significant(source)
     stats: Counter = Counter()
     targets: dict[str, Leaf | Container] = {"tauceti": tauceti} if tauceti else {}
@@ -812,7 +594,7 @@ def chapter(data: dict, tauceti: Container | None = None) -> tuple[Built, dict[s
             stats["api_maps_quoted"] += 1
         page.prose = "\n\n".join(prose)
     for folder in sorted(containers, key=natural):
-        chunk(containers[folder], budget=PAGE_BUDGET)
+        chunk(containers[folder], budget=PHYSLIB.page_budget)
 
     parts = []
     readme = source["readme"]
@@ -938,3 +720,9 @@ def intro(data: dict, stats: Counter) -> str:
 
 def listing(parts: list[str]) -> str:
     return ", ".join(parts[:-1]) + " and " + parts[-1] if len(parts) > 1 else "".join(parts)
+
+
+PHYSLIB = Library(id="physlib", name="Physlib", title=TITLE, repo=REPO, root=LIBRARIES[0], schema=SCHEMA, intro=intro,
+                  roots=LIBRARIES, required=(THEOREMS, "README.md", "lean-toolchain", "lake-manifest.json"),
+                  page_budget=250_000, quotes="The docstrings, Lean statements, API maps and README text",
+                  todo_exempt=(META,))

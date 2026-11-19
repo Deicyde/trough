@@ -1,0 +1,17 @@
+{
+ "schema": "trough-ledger/v1",
+ "library": "CSLib",
+ "repo": "leanprover/cslib",
+ "rev": "86d560b6cbb379bd82512424cbcd2a915a1565e7",
+ "module": "Cslib.Computability.Automata.EpsilonNA.OfRegularExpression",
+ "file": "Cslib/Computability/Automata/EpsilonNA/OfRegularExpression.lean",
+ "public": [
+  {"name": "RegularExpression.State", "kind": "def", "line": 42},
+  {"name": "RegularExpression.instFiniteState", "kind": "instance", "line": 51},
+  {"name": "RegularExpression.toEpsilonNA", "kind": "def", "line": 68},
+  {"name": "RegularExpression.language_toEpsilonNA", "kind": "theorem", "line": 78}
+ ],
+ "private": [],
+ "missing": [],
+ "unread": "Unnamed instances, the names an `alias ⟨…⟩` command gives, and the names Lean generates for a declaration (constructors, recursors, derived instances) are not read from the source, so they are not listed."
+}

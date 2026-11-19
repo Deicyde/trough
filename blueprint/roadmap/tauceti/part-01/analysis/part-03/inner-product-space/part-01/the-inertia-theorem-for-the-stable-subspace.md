@@ -32,4 +32,4 @@ Formalized in Tau Ceti as [`ContinuousLinearMap.finrank_stableSubspace_eq_finran
 ## Sources
 
 - [Tau Ceti documentation: `ContinuousLinearMap.finrank_stableSubspace_eq_finrank_pointSpectralSubspace_Iio`](https://taucetiproject.org/docs/TauCeti/Analysis/InnerProductSpace/LyapunovForm/Inertia.html#ContinuousLinearMap.finrank_stableSubspace_eq_finrank_pointSpectralSubspace_Iio)
-- [Source of `ContinuousLinearMap.finrank_stableSubspace_eq_finrank_pointSpectralSubspace_Iio` in TauCeti/Analysis/InnerProductSpace/LyapunovForm/Inertia.lean](https://github.com/TauCetiProject/TauCeti/blob/a6027b1d24fcb935c53bd5b50d11b40991cda418/TauCeti/Analysis/InnerProductSpace/LyapunovForm/Inertia.lean#L294)
+- [Source of `ContinuousLinearMap.finrank_stableSubspace_eq_finrank_pointSpectralSubspace_Iio` in TauCeti/Analysis/InnerProductSpace/LyapunovForm/Inertia.lean](https://github.com/TauCetiProject/TauCeti/blob/cd41bffcb343151b3e58c89392e206b11fe78c1c/TauCeti/Analysis/InnerProductSpace/LyapunovForm/Inertia.lean#L294)

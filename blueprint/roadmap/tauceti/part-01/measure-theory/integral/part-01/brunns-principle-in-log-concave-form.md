@@ -26,9 +26,9 @@ Its statement uses no other declaration mapped here.
 
 ## Lean
 
-Formalized in Tau Ceti as [`Convex.logConcave_measure_preimage_prodMk`](https://taucetiproject.org/docs/TauCeti/MeasureTheory/Integral/PrekopaLeindler.html#Convex.logConcave_measure_preimage_prodMk).
+Formalized in Tau Ceti as [`Convex.logConcave_measure_preimage_prodMk`](https://taucetiproject.org/docs/TauCeti/MeasureTheory/Integral/PrekopaLeindler/Basic.html#Convex.logConcave_measure_preimage_prodMk).
 
 ## Sources
 
-- [Tau Ceti documentation: `Convex.logConcave_measure_preimage_prodMk`](https://taucetiproject.org/docs/TauCeti/MeasureTheory/Integral/PrekopaLeindler.html#Convex.logConcave_measure_preimage_prodMk)
-- [Source of `Convex.logConcave_measure_preimage_prodMk` in TauCeti/MeasureTheory/Integral/PrekopaLeindler.lean](https://github.com/TauCetiProject/TauCeti/blob/a6027b1d24fcb935c53bd5b50d11b40991cda418/TauCeti/MeasureTheory/Integral/PrekopaLeindler.lean#L481)
+- [Tau Ceti documentation: `Convex.logConcave_measure_preimage_prodMk`](https://taucetiproject.org/docs/TauCeti/MeasureTheory/Integral/PrekopaLeindler/Basic.html#Convex.logConcave_measure_preimage_prodMk)
+- [Source of `Convex.logConcave_measure_preimage_prodMk` in TauCeti/MeasureTheory/Integral/PrekopaLeindler/Basic.lean](https://github.com/TauCetiProject/TauCeti/blob/cd41bffcb343151b3e58c89392e206b11fe78c1c/TauCeti/MeasureTheory/Integral/PrekopaLeindler/Basic.lean#L465)

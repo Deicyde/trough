@@ -30,4 +30,4 @@ Formalized in Tau Ceti as [`TauCeti.Ideal.mem_inertia_iff_of_adjoin_eq_top`](htt
 ## Sources
 
 - [Tau Ceti documentation: `TauCeti.Ideal.mem_inertia_iff_of_adjoin_eq_top`](https://taucetiproject.org/docs/TauCeti/RingTheory/Ideal/Inertia.html#TauCeti.Ideal.mem_inertia_iff_of_adjoin_eq_top)
-- [Source of `TauCeti.Ideal.mem_inertia_iff_of_adjoin_eq_top` in TauCeti/RingTheory/Ideal/Inertia.lean](https://github.com/TauCetiProject/TauCeti/blob/a6027b1d24fcb935c53bd5b50d11b40991cda418/TauCeti/RingTheory/Ideal/Inertia.lean#L44)
+- [Source of `TauCeti.Ideal.mem_inertia_iff_of_adjoin_eq_top` in TauCeti/RingTheory/Ideal/Inertia.lean](https://github.com/TauCetiProject/TauCeti/blob/cd41bffcb343151b3e58c89392e206b11fe78c1c/TauCeti/RingTheory/Ideal/Inertia.lean#L44)

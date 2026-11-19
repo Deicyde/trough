@@ -38,4 +38,4 @@ Formalized in Tau Ceti as [`TauCeti.Isogeny.existsUnique_comp_eq_iff_ker_le`](ht
 ## Sources
 
 - [Tau Ceti documentation: `TauCeti.Isogeny.existsUnique_comp_eq_iff_ker_le`](https://taucetiproject.org/docs/TauCeti/AlgebraicGeometry/EllipticCurve/Isogeny/Factorisation.html#TauCeti.Isogeny.existsUnique_comp_eq_iff_ker_le)
-- [Source of `TauCeti.Isogeny.existsUnique_comp_eq_iff_ker_le` in TauCeti/AlgebraicGeometry/EllipticCurve/Isogeny/Factorisation.lean](https://github.com/TauCetiProject/TauCeti/blob/a6027b1d24fcb935c53bd5b50d11b40991cda418/TauCeti/AlgebraicGeometry/EllipticCurve/Isogeny/Factorisation.lean#L126)
+- [Source of `TauCeti.Isogeny.existsUnique_comp_eq_iff_ker_le` in TauCeti/AlgebraicGeometry/EllipticCurve/Isogeny/Factorisation.lean](https://github.com/TauCetiProject/TauCeti/blob/cd41bffcb343151b3e58c89392e206b11fe78c1c/TauCeti/AlgebraicGeometry/EllipticCurve/Isogeny/Factorisation.lean#L117)

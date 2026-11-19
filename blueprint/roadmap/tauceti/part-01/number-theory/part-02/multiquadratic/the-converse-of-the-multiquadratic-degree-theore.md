@@ -27,10 +27,6 @@ TauCeti.Multiquadratic.exists_root_adjoin_range_eq_top.{u_1, u_2} {K : Type u_1}
 
 Its statement uses no other declaration mapped here.
 
-## Proof depends on
-
-- [Degree of a multiquadratic field over a finite index](../../part-01/multiquadratic-fields-and-genus-theory/degree-of-a-multiquadratic-field-over-a-finite-i.md)
-
 ## Lean
 
 Formalized in Tau Ceti as [`TauCeti.Multiquadratic.exists_root_adjoin_range_eq_top`](https://taucetiproject.org/docs/TauCeti/NumberTheory/Multiquadratic/Galois/Kummer.html#TauCeti.Multiquadratic.exists_root_adjoin_range_eq_top).
@@ -38,4 +34,4 @@ Formalized in Tau Ceti as [`TauCeti.Multiquadratic.exists_root_adjoin_range_eq_t
 ## Sources
 
 - [Tau Ceti documentation: `TauCeti.Multiquadratic.exists_root_adjoin_range_eq_top`](https://taucetiproject.org/docs/TauCeti/NumberTheory/Multiquadratic/Galois/Kummer.html#TauCeti.Multiquadratic.exists_root_adjoin_range_eq_top)
-- [Source of `TauCeti.Multiquadratic.exists_root_adjoin_range_eq_top` in TauCeti/NumberTheory/Multiquadratic/Galois/Kummer.lean](https://github.com/TauCetiProject/TauCeti/blob/a6027b1d24fcb935c53bd5b50d11b40991cda418/TauCeti/NumberTheory/Multiquadratic/Galois/Kummer.lean#L179)
+- [Source of `TauCeti.Multiquadratic.exists_root_adjoin_range_eq_top` in TauCeti/NumberTheory/Multiquadratic/Galois/Kummer.lean](https://github.com/TauCetiProject/TauCeti/blob/cd41bffcb343151b3e58c89392e206b11fe78c1c/TauCeti/NumberTheory/Multiquadratic/Galois/Kummer.lean#L188)

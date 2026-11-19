@@ -31,7 +31,7 @@ Its statement uses no other declaration mapped here.
 
 ## Proof depends on
 
-- [TauCeti.Algebra.etale_of_isUnramifiedAt_of_two_le_ringKrullDim](../finite-etale-covers-of-punctured-spectra-and-loc/tauceti-algebra-etale-of-isunramifiedat-of-two-l.md)
+- [Purity for a two-dimensional regular local ring (`TauCeti.Algebra.etale_of_finiteNormal_of_ringKrullDim_eq_two`)](../../../algebraic-geometry/finite-etale-covers-of-punctured-spectra-and-loc/purity-for-a-two-dimensional-regular-local-ring-2.md)
 
 ## Lean
 
@@ -40,5 +40,5 @@ Formalized in Tau Ceti as [`TauCeti.Algebra.etale_of_isUnramifiedAt_height_eq_on
 ## Sources
 
 - [Tau Ceti documentation: `TauCeti.Algebra.etale_of_isUnramifiedAt_height_eq_one_of_ringKrullDim_le_two`](https://taucetiproject.org/docs/TauCeti/RingTheory/RegularLocalRing/Purity.html#TauCeti.Algebra.etale_of_isUnramifiedAt_height_eq_one_of_ringKrullDim_le_two)
-- [Source of `TauCeti.Algebra.etale_of_isUnramifiedAt_height_eq_one_of_ringKrullDim_le_two` in TauCeti/RingTheory/RegularLocalRing/Purity.lean](https://github.com/TauCetiProject/TauCeti/blob/a6027b1d24fcb935c53bd5b50d11b40991cda418/TauCeti/RingTheory/RegularLocalRing/Purity.lean#L83)
-- [Tau Ceti roadmap status: Purity of the branch locus](https://github.com/TauCetiProject/TauCetiRoadmap/blob/9f7c032adaf1b838e8183d63ff3cfa886d061cb3/TauCetiRoadmap/PurityOfBranchLocus/STATUS.md)
+- [Source of `TauCeti.Algebra.etale_of_isUnramifiedAt_height_eq_one_of_ringKrullDim_le_two` in TauCeti/RingTheory/RegularLocalRing/Purity.lean](https://github.com/TauCetiProject/TauCeti/blob/cd41bffcb343151b3e58c89392e206b11fe78c1c/TauCeti/RingTheory/RegularLocalRing/Purity.lean#L83)
+- [Tau Ceti roadmap status: Purity of the branch locus](https://github.com/TauCetiProject/TauCetiRoadmap/blob/612845ab80fb9c2b9bee724a156756ee78031591/TauCetiRoadmap/PurityOfBranchLocus/STATUS.md)

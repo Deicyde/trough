@@ -20,11 +20,7 @@ TauCeti.BlackScholes.riskNeutralPrice_call {s r σ K τ : ℝ} (hs : 0 < s) (hσ
 
 ## Depends on
 
-- [TauCeti.BlackScholes.riskNeutralPrice](tauceti-blackscholes-riskneutralprice.md)
-
-## Proof depends on
-
-- [TauCeti.Probability.setIntegral_exp_mul_gaussianReal](tauceti-probability-setintegral-exp-mul-gaussian.md)
+Its statement uses no other declaration mapped here.
 
 ## Lean
 
@@ -33,5 +29,4 @@ Formalized in Tau Ceti as [`TauCeti.BlackScholes.riskNeutralPrice_call`](https:/
 ## Sources
 
 - [Tau Ceti documentation: `TauCeti.BlackScholes.riskNeutralPrice_call`](https://taucetiproject.org/docs/TauCeti/Probability/Finance/BlackScholes/Basic.html#TauCeti.BlackScholes.riskNeutralPrice_call)
-- [Source of `TauCeti.BlackScholes.riskNeutralPrice_call` in TauCeti/Probability/Finance/BlackScholes/Basic.lean](https://github.com/TauCetiProject/TauCeti/blob/a6027b1d24fcb935c53bd5b50d11b40991cda418/TauCeti/Probability/Finance/BlackScholes/Basic.lean#L312)
-- [Tau Ceti roadmap status: Financial mathematics: one-factor markets and replication](https://github.com/TauCetiProject/TauCetiRoadmap/blob/9f7c032adaf1b838e8183d63ff3cfa886d061cb3/TauCetiRoadmap/FinancialMathematics/STATUS.md)
+- [Source of `TauCeti.BlackScholes.riskNeutralPrice_call` in TauCeti/Probability/Finance/BlackScholes/Basic.lean](https://github.com/TauCetiProject/TauCeti/blob/cd41bffcb343151b3e58c89392e206b11fe78c1c/TauCeti/Probability/Finance/BlackScholes/Basic.lean#L345)

@@ -30,10 +30,10 @@ TauCeti.LFunctions.mellinKernel_inv.{u_1} {K : Type u_1} [Field K] [NumberField 
 
 ## Lean
 
-Formalized in Tau Ceti as [`TauCeti.LFunctions.mellinKernel_inv`](https://taucetiproject.org/docs/TauCeti/NumberTheory/LFunctions/Theta/MellinKernel.html#TauCeti.LFunctions.mellinKernel_inv).
+Formalized in Tau Ceti as [`TauCeti.LFunctions.mellinKernel_inv`](https://taucetiproject.org/docs/TauCeti/NumberTheory/LFunctions/Theta/Mellin/Kernel.html#TauCeti.LFunctions.mellinKernel_inv).
 
 ## Sources
 
-- [Tau Ceti documentation: `TauCeti.LFunctions.mellinKernel_inv`](https://taucetiproject.org/docs/TauCeti/NumberTheory/LFunctions/Theta/MellinKernel.html#TauCeti.LFunctions.mellinKernel_inv)
-- [Source of `TauCeti.LFunctions.mellinKernel_inv` in TauCeti/NumberTheory/LFunctions/Theta/MellinKernel.lean](https://github.com/TauCetiProject/TauCeti/blob/a6027b1d24fcb935c53bd5b50d11b40991cda418/TauCeti/NumberTheory/LFunctions/Theta/MellinKernel.lean#L104)
-- [Tau Ceti roadmap status: L-functions — completions and functional equations](https://github.com/TauCetiProject/TauCetiRoadmap/blob/9f7c032adaf1b838e8183d63ff3cfa886d061cb3/TauCetiRoadmap/LFunctions/STATUS.md)
+- [Tau Ceti documentation: `TauCeti.LFunctions.mellinKernel_inv`](https://taucetiproject.org/docs/TauCeti/NumberTheory/LFunctions/Theta/Mellin/Kernel.html#TauCeti.LFunctions.mellinKernel_inv)
+- [Source of `TauCeti.LFunctions.mellinKernel_inv` in TauCeti/NumberTheory/LFunctions/Theta/Mellin/Kernel.lean](https://github.com/TauCetiProject/TauCeti/blob/cd41bffcb343151b3e58c89392e206b11fe78c1c/TauCeti/NumberTheory/LFunctions/Theta/Mellin/Kernel.lean#L108)
+- [Tau Ceti roadmap status: L-functions — completions and functional equations](https://github.com/TauCetiProject/TauCetiRoadmap/blob/612845ab80fb9c2b9bee724a156756ee78031591/TauCetiRoadmap/LFunctions/STATUS.md)

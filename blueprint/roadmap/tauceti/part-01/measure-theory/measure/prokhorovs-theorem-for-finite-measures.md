@@ -44,4 +44,4 @@ TauCeti.exists_tendsto_finiteMeasure_of_eventually_measure_compl_eq_zero.{u_1, u
 ## Sources
 
 - [Tau Ceti documentation: `TauCeti.isCompact_closure_of_isTightMeasureSet_of_mass_le`](https://taucetiproject.org/docs/TauCeti/MeasureTheory/Measure/Prokhorov.html#TauCeti.isCompact_closure_of_isTightMeasureSet_of_mass_le)
-- [Source of `TauCeti.isCompact_closure_of_isTightMeasureSet_of_mass_le` in TauCeti/MeasureTheory/Measure/Prokhorov.lean](https://github.com/TauCetiProject/TauCeti/blob/a6027b1d24fcb935c53bd5b50d11b40991cda418/TauCeti/MeasureTheory/Measure/Prokhorov.lean#L60)
+- [Source of `TauCeti.isCompact_closure_of_isTightMeasureSet_of_mass_le` in TauCeti/MeasureTheory/Measure/Prokhorov.lean](https://github.com/TauCetiProject/TauCeti/blob/cd41bffcb343151b3e58c89392e206b11fe78c1c/TauCeti/MeasureTheory/Measure/Prokhorov.lean#L55)

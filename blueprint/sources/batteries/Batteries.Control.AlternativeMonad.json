@@ -1,0 +1,22 @@
+{
+ "schema": "trough-ledger/v1",
+ "library": "Batteries",
+ "repo": "leanprover-community/batteries",
+ "rev": "b4b25a3886a16daacaf6615c2eea7170a6e8f458",
+ "module": "Batteries.Control.AlternativeMonad",
+ "file": "Batteries/Control/AlternativeMonad.lean",
+ "public": [
+  {"name": "AlternativeMonad", "kind": "class", "line": 49},
+  {"name": "LawfulAlternative", "kind": "class", "line": 55},
+  {"name": "mapConst_failure", "kind": "theorem", "line": 76},
+  {"name": "mapConst_orElse", "kind": "theorem", "line": 80},
+  {"name": "failure_seqLeft", "kind": "theorem", "line": 84},
+  {"name": "failure_seqRight", "kind": "theorem", "line": 88},
+  {"name": "failure_bind", "kind": "theorem", "line": 96},
+  {"name": "seq_failure", "kind": "theorem", "line": 104},
+  {"name": "LawfulAlternativeLift", "kind": "class", "line": 113}
+ ],
+ "private": [],
+ "missing": [],
+ "unread": "Unnamed instances, the names an `alias ⟨…⟩` command gives, and the names Lean generates for a declaration (constructors, recursors, derived instances) are not read from the source, so they are not listed."
+}

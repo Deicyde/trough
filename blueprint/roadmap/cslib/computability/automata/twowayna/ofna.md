@@ -77,3 +77,4 @@ theorem language_toTwoWayNA (a : NA.FinAcc State Symbol) : language a.toTwoWayNA
 ## Sources
 
 - [Cslib/Computability/Automata/TwoWayNA/OfNA.lean at 86d560b6](https://github.com/leanprover/cslib/blob/86d560b6cbb379bd82512424cbcd2a915a1565e7/Cslib/Computability/Automata/TwoWayNA/OfNA.lean)
+- [Declaration ledger](../../../../../sources/cslib/Cslib.Computability.Automata.TwoWayNA.OfNA.json)

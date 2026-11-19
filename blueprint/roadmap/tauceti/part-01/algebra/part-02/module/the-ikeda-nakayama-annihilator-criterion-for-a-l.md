@@ -39,4 +39,4 @@ TauCeti.exists_eq_sum_mul_of_forall_mul_eq_zero'.{u, w} {R : Type u} [Ring R] {Î
 ## Sources
 
 - [Tau Ceti documentation: `TauCeti.exists_eq_sum_mul_of_forall_mul_eq_zero`](https://taucetiproject.org/docs/TauCeti/Algebra/Module/Injective/SelfInjective.html#TauCeti.exists_eq_sum_mul_of_forall_mul_eq_zero)
-- [Source of `TauCeti.exists_eq_sum_mul_of_forall_mul_eq_zero` in TauCeti/Algebra/Module/Injective/SelfInjective.lean](https://github.com/TauCetiProject/TauCeti/blob/a6027b1d24fcb935c53bd5b50d11b40991cda418/TauCeti/Algebra/Module/Injective/SelfInjective.lean#L119)
+- [Source of `TauCeti.exists_eq_sum_mul_of_forall_mul_eq_zero` in TauCeti/Algebra/Module/Injective/SelfInjective.lean](https://github.com/TauCetiProject/TauCeti/blob/cd41bffcb343151b3e58c89392e206b11fe78c1c/TauCeti/Algebra/Module/Injective/SelfInjective.lean#L119)

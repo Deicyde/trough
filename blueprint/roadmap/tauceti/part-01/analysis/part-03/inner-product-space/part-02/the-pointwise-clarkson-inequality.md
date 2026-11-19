@@ -29,4 +29,4 @@ Formalized in Tau Ceti as [`TauCeti.norm_add_rpow_add_norm_sub_rpow_le`](https:/
 ## Sources
 
 - [Tau Ceti documentation: `TauCeti.norm_add_rpow_add_norm_sub_rpow_le`](https://taucetiproject.org/docs/TauCeti/Analysis/InnerProductSpace/Clarkson.html#TauCeti.norm_add_rpow_add_norm_sub_rpow_le)
-- [Source of `TauCeti.norm_add_rpow_add_norm_sub_rpow_le` in TauCeti/Analysis/InnerProductSpace/Clarkson.lean](https://github.com/TauCetiProject/TauCeti/blob/a6027b1d24fcb935c53bd5b50d11b40991cda418/TauCeti/Analysis/InnerProductSpace/Clarkson.lean#L42)
+- [Source of `TauCeti.norm_add_rpow_add_norm_sub_rpow_le` in TauCeti/Analysis/InnerProductSpace/Clarkson.lean](https://github.com/TauCetiProject/TauCeti/blob/cd41bffcb343151b3e58c89392e206b11fe78c1c/TauCeti/Analysis/InnerProductSpace/Clarkson.lean#L42)

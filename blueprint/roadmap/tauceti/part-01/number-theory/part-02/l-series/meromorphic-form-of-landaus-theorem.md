@@ -37,4 +37,4 @@ Formalized in Tau Ceti as [`TauCeti.LSeries.meromorphicOrderAt_lt_zero_of_eq_LSe
 ## Sources
 
 - [Tau Ceti documentation: `TauCeti.LSeries.meromorphicOrderAt_lt_zero_of_eq_LSeries`](https://taucetiproject.org/docs/TauCeti/NumberTheory/LSeries/Landau.html#TauCeti.LSeries.meromorphicOrderAt_lt_zero_of_eq_LSeries)
-- [Source of `TauCeti.LSeries.meromorphicOrderAt_lt_zero_of_eq_LSeries` in TauCeti/NumberTheory/LSeries/Landau.lean](https://github.com/TauCetiProject/TauCeti/blob/a6027b1d24fcb935c53bd5b50d11b40991cda418/TauCeti/NumberTheory/LSeries/Landau.lean#L354)
+- [Source of `TauCeti.LSeries.meromorphicOrderAt_lt_zero_of_eq_LSeries` in TauCeti/NumberTheory/LSeries/Landau.lean](https://github.com/TauCetiProject/TauCeti/blob/cd41bffcb343151b3e58c89392e206b11fe78c1c/TauCeti/NumberTheory/LSeries/Landau.lean#L354)

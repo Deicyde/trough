@@ -27,5 +27,5 @@ Formalized in Tau Ceti as [`TauCeti.Dagger.FringePresentation.fringeTopology`](h
 ## Sources
 
 - [Tau Ceti documentation: `TauCeti.Dagger.FringePresentation.fringeTopology`](https://taucetiproject.org/docs/TauCeti/RingTheory/Dagger/FringePresentation/Topology.html#TauCeti.Dagger.FringePresentation.fringeTopology)
-- [Source of `TauCeti.Dagger.FringePresentation.fringeTopology` in TauCeti/RingTheory/Dagger/FringePresentation/Topology.lean](https://github.com/TauCetiProject/TauCeti/blob/a6027b1d24fcb935c53bd5b50d11b40991cda418/TauCeti/RingTheory/Dagger/FringePresentation/Topology.lean#L83)
-- [Tau Ceti roadmap status: Foundations of adic spaces, part IV — étale sites, families and dagger geometry](https://github.com/TauCetiProject/TauCetiRoadmap/blob/9f7c032adaf1b838e8183d63ff3cfa886d061cb3/TauCetiRoadmap/AdicSpacesPartIV/STATUS.md)
+- [Source of `TauCeti.Dagger.FringePresentation.fringeTopology` in TauCeti/RingTheory/Dagger/FringePresentation/Topology.lean](https://github.com/TauCetiProject/TauCeti/blob/cd41bffcb343151b3e58c89392e206b11fe78c1c/TauCeti/RingTheory/Dagger/FringePresentation/Topology.lean#L83)
+- [Tau Ceti roadmap status: Foundations of adic spaces, part IV — étale sites, families and dagger geometry](https://github.com/TauCetiProject/TauCetiRoadmap/blob/612845ab80fb9c2b9bee724a156756ee78031591/TauCetiRoadmap/AdicSpacesPartIV/STATUS.md)

@@ -27,5 +27,5 @@ Formalized in Tau Ceti as [`TauCeti.existsUnique_transitiveGroupLabel_five`](htt
 ## Sources
 
 - [Tau Ceti documentation: `TauCeti.existsUnique_transitiveGroupLabel_five`](https://taucetiproject.org/docs/TauCeti/GroupTheory/Perm/TransitiveGroupLabel/Classification.html#TauCeti.existsUnique_transitiveGroupLabel_five)
-- [Source of `TauCeti.existsUnique_transitiveGroupLabel_five` in TauCeti/GroupTheory/Perm/TransitiveGroupLabel/Classification.lean](https://github.com/TauCetiProject/TauCeti/blob/a6027b1d24fcb935c53bd5b50d11b40991cda418/TauCeti/GroupTheory/Perm/TransitiveGroupLabel/Classification.lean#L790)
-- [Tau Ceti roadmap status: Galois groups of polynomials](https://github.com/TauCetiProject/TauCetiRoadmap/blob/9f7c032adaf1b838e8183d63ff3cfa886d061cb3/Completed/PolynomialGaloisGroups/STATUS.md)
+- [Source of `TauCeti.existsUnique_transitiveGroupLabel_five` in TauCeti/GroupTheory/Perm/TransitiveGroupLabel/Classification.lean](https://github.com/TauCetiProject/TauCeti/blob/cd41bffcb343151b3e58c89392e206b11fe78c1c/TauCeti/GroupTheory/Perm/TransitiveGroupLabel/Classification.lean#L828)
+- [Tau Ceti roadmap status: Galois groups of polynomials](https://github.com/TauCetiProject/TauCetiRoadmap/blob/612845ab80fb9c2b9bee724a156756ee78031591/Completed/PolynomialGaloisGroups/STATUS.md)

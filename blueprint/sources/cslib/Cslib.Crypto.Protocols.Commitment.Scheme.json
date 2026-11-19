@@ -1,0 +1,19 @@
+{
+ "schema": "trough-ledger/v1",
+ "library": "CSLib",
+ "repo": "leanprover/cslib",
+ "rev": "86d560b6cbb379bd82512424cbcd2a915a1565e7",
+ "module": "Cslib.Crypto.Protocols.Commitment.Scheme",
+ "file": "Cslib/Crypto/Protocols/Commitment/Scheme.lean",
+ "public": [
+  {"name": "Cslib.Crypto.Protocols.Commitment.Scheme", "kind": "structure", "line": 49},
+  {"name": "Cslib.Crypto.Protocols.Commitment.Scheme.commitmentDist", "kind": "def", "line": 64},
+  {"name": "Cslib.Crypto.Protocols.Commitment.Scheme.mem_support_commitmentDist_iff", "kind": "theorem", "line": 70},
+  {"name": "Cslib.Crypto.Protocols.Commitment.Scheme.Accepts", "kind": "def", "line": 78},
+  {"name": "Cslib.Crypto.Protocols.Commitment.Scheme.accepts_of_mem_support", "kind": "theorem", "line": 83},
+  {"name": "Cslib.Crypto.Protocols.Commitment.Scheme.ofPure", "kind": "def", "line": 90}
+ ],
+ "private": [],
+ "missing": [],
+ "unread": "Unnamed instances, the names an `alias ⟨…⟩` command gives, and the names Lean generates for a declaration (constructors, recursors, derived instances) are not read from the source, so they are not listed."
+}

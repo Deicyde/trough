@@ -30,10 +30,7 @@ Its statement uses no other declaration mapped here.
 
 ## Proof depends on
 
-- [The detour contribution in Newman's argument vanishes in the limit](the-detour-contribution-in-newmans-argument-vani.md)
-- [The detour inside the continuation domain](the-detour-inside-the-continuation-domain.md)
 - [Newman's contour identity](newmans-contour-identity.md)
-- [Newman's left detour](newmans-left-detour.md)
 
 ## Lean
 
@@ -42,5 +39,4 @@ Formalized in Tau Ceti as [`TauCeti.LSeries.eventually_norm_sub_intervalIntegral
 ## Sources
 
 - [Tau Ceti documentation: `TauCeti.LSeries.eventually_norm_sub_intervalIntegral_le`](https://taucetiproject.org/docs/TauCeti/NumberTheory/LSeries/Newman/Tauberian.html#TauCeti.LSeries.eventually_norm_sub_intervalIntegral_le)
-- [Source of `TauCeti.LSeries.eventually_norm_sub_intervalIntegral_le` in TauCeti/NumberTheory/LSeries/Newman/Tauberian.lean](https://github.com/TauCetiProject/TauCeti/blob/a6027b1d24fcb935c53bd5b50d11b40991cda418/TauCeti/NumberTheory/LSeries/Newman/Tauberian.lean#L153)
-- [Tau Ceti roadmap status: Bounded Laplace and ordered Dirichlet boundary convergence](https://github.com/TauCetiProject/TauCetiRoadmap/blob/9f7c032adaf1b838e8183d63ff3cfa886d061cb3/TauCetiRoadmap/TauberianBoundaryConvergence/STATUS.md)
+- [Source of `TauCeti.LSeries.eventually_norm_sub_intervalIntegral_le` in TauCeti/NumberTheory/LSeries/Newman/Tauberian.lean](https://github.com/TauCetiProject/TauCeti/blob/cd41bffcb343151b3e58c89392e206b11fe78c1c/TauCeti/NumberTheory/LSeries/Newman/Tauberian.lean#L153)

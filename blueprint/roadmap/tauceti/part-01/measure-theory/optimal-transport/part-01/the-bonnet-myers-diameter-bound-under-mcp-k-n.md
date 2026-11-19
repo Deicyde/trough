@@ -66,4 +66,4 @@ TauCeti.MetricMeasureSpace.MeasureContraction.diam_support_le.{u_1} {X : Type u_
 ## Sources
 
 - [Tau Ceti documentation: `TauCeti.MetricMeasureSpace.MeasureContraction.dist_le`](https://taucetiproject.org/docs/TauCeti/MeasureTheory/OptimalTransport/MetricMeasure/MeasureContraction.html#TauCeti.MetricMeasureSpace.MeasureContraction.dist_le)
-- [Source of `TauCeti.MetricMeasureSpace.MeasureContraction.dist_le` in TauCeti/MeasureTheory/OptimalTransport/MetricMeasure/MeasureContraction.lean](https://github.com/TauCetiProject/TauCeti/blob/a6027b1d24fcb935c53bd5b50d11b40991cda418/TauCeti/MeasureTheory/OptimalTransport/MetricMeasure/MeasureContraction.lean#L137)
+- [Source of `TauCeti.MetricMeasureSpace.MeasureContraction.dist_le` in TauCeti/MeasureTheory/OptimalTransport/MetricMeasure/MeasureContraction.lean](https://github.com/TauCetiProject/TauCeti/blob/cd41bffcb343151b3e58c89392e206b11fe78c1c/TauCeti/MeasureTheory/OptimalTransport/MetricMeasure/MeasureContraction.lean#L137)

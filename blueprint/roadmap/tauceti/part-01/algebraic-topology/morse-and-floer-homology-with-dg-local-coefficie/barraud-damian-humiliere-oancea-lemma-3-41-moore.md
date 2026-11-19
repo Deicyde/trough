@@ -33,7 +33,7 @@ Its statement uses no other declaration mapped here.
 ## Proof depends on
 
 - [The Hurewicz theorem](../algebraic-topology-of-spaces-and-manifolds/the-hurewicz-theorem.md)
-- [Inductive Hurewicz vanishing criterion (singular homology)](../algebraic-topology-of-spaces-and-manifolds/inductive-hurewicz-vanishing-criterion-singular.md)
+- [Inductive Hurewicz vanishing criterion (singular homology)](../other-results/inductive-hurewicz-vanishing-criterion-singular.md)
 
 ## Lean
 
@@ -42,5 +42,5 @@ Formalized in Tau Ceti as [`TauCeti.MooreLoopSpace.isAspherical_iff_double_singu
 ## Sources
 
 - [Tau Ceti documentation: `TauCeti.MooreLoopSpace.isAspherical_iff_double_singularHomology`](https://taucetiproject.org/docs/TauCeti/AlgebraicTopology/Homotopy/LoopSpace/Aspherical.html#TauCeti.MooreLoopSpace.isAspherical_iff_double_singularHomology)
-- [Source of `TauCeti.MooreLoopSpace.isAspherical_iff_double_singularHomology` in TauCeti/AlgebraicTopology/Homotopy/LoopSpace/Aspherical.lean](https://github.com/TauCetiProject/TauCeti/blob/a6027b1d24fcb935c53bd5b50d11b40991cda418/TauCeti/AlgebraicTopology/Homotopy/LoopSpace/Aspherical.lean#L330)
-- [Tau Ceti roadmap status: Morse and Floer homology with DG local coefficients](https://github.com/TauCetiProject/TauCetiRoadmap/blob/9f7c032adaf1b838e8183d63ff3cfa886d061cb3/TauCetiRoadmap/DGFloer/STATUS.md)
+- [Source of `TauCeti.MooreLoopSpace.isAspherical_iff_double_singularHomology` in TauCeti/AlgebraicTopology/Homotopy/LoopSpace/Aspherical.lean](https://github.com/TauCetiProject/TauCeti/blob/cd41bffcb343151b3e58c89392e206b11fe78c1c/TauCeti/AlgebraicTopology/Homotopy/LoopSpace/Aspherical.lean#L330)
+- [Tau Ceti roadmap status: Morse and Floer homology with DG local coefficients](https://github.com/TauCetiProject/TauCetiRoadmap/blob/612845ab80fb9c2b9bee724a156756ee78031591/TauCetiRoadmap/DGFloer/STATUS.md)

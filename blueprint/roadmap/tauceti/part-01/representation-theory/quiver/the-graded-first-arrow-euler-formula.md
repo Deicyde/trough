@@ -40,4 +40,4 @@ Formalized in Tau Ceti as [`TauCeti.PathAlgebra.gradedExtEuler_gradedVertexSimpl
 ## Sources
 
 - [Tau Ceti documentation: `TauCeti.PathAlgebra.gradedExtEuler_gradedVertexSimple`](https://taucetiproject.org/docs/TauCeti/RepresentationTheory/Quiver/PathAlgebra/GradedExtEuler/Value.html#TauCeti.PathAlgebra.gradedExtEuler_gradedVertexSimple)
-- [Source of `TauCeti.PathAlgebra.gradedExtEuler_gradedVertexSimple` in TauCeti/RepresentationTheory/Quiver/PathAlgebra/GradedExtEuler/Value.lean](https://github.com/TauCetiProject/TauCeti/blob/a6027b1d24fcb935c53bd5b50d11b40991cda418/TauCeti/RepresentationTheory/Quiver/PathAlgebra/GradedExtEuler/Value.lean#L101)
+- [Source of `TauCeti.PathAlgebra.gradedExtEuler_gradedVertexSimple` in TauCeti/RepresentationTheory/Quiver/PathAlgebra/GradedExtEuler/Value.lean](https://github.com/TauCetiProject/TauCeti/blob/cd41bffcb343151b3e58c89392e206b11fe78c1c/TauCeti/RepresentationTheory/Quiver/PathAlgebra/GradedExtEuler/Value.lean#L101)

@@ -48,7 +48,7 @@ Its statement uses no other declaration mapped here.
 ## Proof depends on
 
 - [Pythagorean Gram identity for complementary linear blocks](../part-02/pythagorean-gram-identity-for-complementary-line.md)
-- [The rectangular double-angle Gram identity](the-rectangular-double-angle-gram-identity.md)
+- [The rectangular double-angle Gram identity](../part-02/the-rectangular-double-angle-gram-identity.md)
 
 ## Lean
 
@@ -57,4 +57,4 @@ Formalized in Tau Ceti as [`LinearIsometry.adjoint_comp_self_adjoint_two_smul_co
 ## Sources
 
 - [Tau Ceti documentation: `LinearIsometry.adjoint_comp_self_adjoint_two_smul_comp_adjoint_sub_id_comp_comp_of_adjoint_comp_eq_zero`](https://taucetiproject.org/docs/TauCeti/Analysis/InnerProductSpace/DoubleAngle/Gram.html#LinearIsometry.adjoint_comp_self_adjoint_two_smul_comp_adjoint_sub_id_comp_comp_of_adjoint_comp_eq_zero)
-- [Source of `LinearIsometry.adjoint_comp_self_adjoint_two_smul_comp_adjoint_sub_id_comp_comp_of_adjoint_comp_eq_zero` in TauCeti/Analysis/InnerProductSpace/DoubleAngle/Gram.lean](https://github.com/TauCetiProject/TauCeti/blob/a6027b1d24fcb935c53bd5b50d11b40991cda418/TauCeti/Analysis/InnerProductSpace/DoubleAngle/Gram.lean#L176)
+- [Source of `LinearIsometry.adjoint_comp_self_adjoint_two_smul_comp_adjoint_sub_id_comp_comp_of_adjoint_comp_eq_zero` in TauCeti/Analysis/InnerProductSpace/DoubleAngle/Gram.lean](https://github.com/TauCetiProject/TauCeti/blob/cd41bffcb343151b3e58c89392e206b11fe78c1c/TauCeti/Analysis/InnerProductSpace/DoubleAngle/Gram.lean#L176)

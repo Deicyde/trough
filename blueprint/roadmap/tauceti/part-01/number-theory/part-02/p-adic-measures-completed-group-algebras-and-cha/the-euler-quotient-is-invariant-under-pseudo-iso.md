@@ -38,5 +38,5 @@ Formalized in Tau Ceti as [`TauCeti.Iwasawa.IsPseudoIsomorphism.natCard_quotSMul
 ## Sources
 
 - [Tau Ceti documentation: `TauCeti.Iwasawa.IsPseudoIsomorphism.natCard_quotSMulTop_div_natCard_torsionBy_eq`](https://taucetiproject.org/docs/TauCeti/RingTheory/Iwasawa/PseudoIsomorphism.html#TauCeti.Iwasawa.IsPseudoIsomorphism.natCard_quotSMulTop_div_natCard_torsionBy_eq)
-- [Source of `TauCeti.Iwasawa.IsPseudoIsomorphism.natCard_quotSMulTop_div_natCard_torsionBy_eq` in TauCeti/RingTheory/Iwasawa/PseudoIsomorphism.lean](https://github.com/TauCetiProject/TauCeti/blob/a6027b1d24fcb935c53bd5b50d11b40991cda418/TauCeti/RingTheory/Iwasawa/PseudoIsomorphism.lean#L377)
-- [Tau Ceti roadmap status: p-adic measures, completed group algebras, and characteristic ideals](https://github.com/TauCetiProject/TauCetiRoadmap/blob/9f7c032adaf1b838e8183d63ff3cfa886d061cb3/TauCetiRoadmap/PadicMeasuresIwasawaAlgebras/STATUS.md)
+- [Source of `TauCeti.Iwasawa.IsPseudoIsomorphism.natCard_quotSMulTop_div_natCard_torsionBy_eq` in TauCeti/RingTheory/Iwasawa/PseudoIsomorphism.lean](https://github.com/TauCetiProject/TauCeti/blob/cd41bffcb343151b3e58c89392e206b11fe78c1c/TauCeti/RingTheory/Iwasawa/PseudoIsomorphism.lean#L377)
+- [Tau Ceti roadmap status: p-adic measures, completed group algebras, and characteristic ideals](https://github.com/TauCetiProject/TauCetiRoadmap/blob/612845ab80fb9c2b9bee724a156756ee78031591/TauCetiRoadmap/PadicMeasuresIwasawaAlgebras/STATUS.md)

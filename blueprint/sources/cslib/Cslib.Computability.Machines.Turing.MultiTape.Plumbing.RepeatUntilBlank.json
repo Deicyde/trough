@@ -1,0 +1,19 @@
+{
+ "schema": "trough-ledger/v1",
+ "library": "CSLib",
+ "repo": "leanprover/cslib",
+ "rev": "86d560b6cbb379bd82512424cbcd2a915a1565e7",
+ "module": "Cslib.Computability.Machines.Turing.MultiTape.Plumbing.RepeatUntilBlank",
+ "file": "Cslib/Computability/Machines/Turing/MultiTape/Plumbing/RepeatUntilBlank.lean",
+ "public": [
+  {"name": "Turing.MultiTapeTM.RepeatUntilBlank.blankTest", "kind": "def", "line": 32},
+  {"name": "Turing.MultiTapeTM.repeatUntilBlank", "kind": "abbrev", "line": 39},
+  {"name": "Turing.MultiTapeTM.transformsTapes_repeatUntilBlank", "kind": "theorem", "line": 97}
+ ],
+ "private": [
+  {"name": "Turing.MultiTapeTM.RepeatUntilBlank.step_check", "kind": "lemma", "line": 50},
+  {"name": "Turing.MultiTapeTM.RepeatUntilBlank.exists_round", "kind": "lemma", "line": 62}
+ ],
+ "missing": [],
+ "unread": "Unnamed instances, the names an `alias ⟨…⟩` command gives, and the names Lean generates for a declaration (constructors, recursors, derived instances) are not read from the source, so they are not listed."
+}

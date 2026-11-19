@@ -61,4 +61,4 @@ TauCeti.simple_indFDRep_iff.{u} {k G : Type u} [Field k] [Group G] [Finite G] [I
 ## Sources
 
 - [Tau Ceti documentation: `TauCeti.simple_indFDRep_iff_doubleCoset`](https://taucetiproject.org/docs/TauCeti/RepresentationTheory/Induction/Mackey/Split.html#TauCeti.simple_indFDRep_iff_doubleCoset)
-- [Source of `TauCeti.simple_indFDRep_iff_doubleCoset` in TauCeti/RepresentationTheory/Induction/Mackey/Split.lean](https://github.com/TauCetiProject/TauCeti/blob/a6027b1d24fcb935c53bd5b50d11b40991cda418/TauCeti/RepresentationTheory/Induction/Mackey/Split.lean#L94)
+- [Source of `TauCeti.simple_indFDRep_iff_doubleCoset` in TauCeti/RepresentationTheory/Induction/Mackey/Split.lean](https://github.com/TauCetiProject/TauCeti/blob/cd41bffcb343151b3e58c89392e206b11fe78c1c/TauCeti/RepresentationTheory/Induction/Mackey/Split.lean#L94)

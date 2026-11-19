@@ -1,0 +1,19 @@
+{
+ "schema": "trough-ledger/v1",
+ "library": "Batteries",
+ "repo": "leanprover-community/batteries",
+ "rev": "b4b25a3886a16daacaf6615c2eea7170a6e8f458",
+ "module": "Batteries.Tactic.Trans",
+ "file": "Batteries/Tactic/Trans.lean",
+ "public": [
+  {"name": "Trans.simple", "kind": "def", "line": 22},
+  {"name": "Batteries.Tactic.getExplicitFuncArg?", "kind": "def", "line": 58},
+  {"name": "Batteries.Tactic.getExplicitRelArg?", "kind": "def", "line": 68},
+  {"name": "Batteries.Tactic.getExplicitRelArgCore", "kind": "def", "line": 84},
+  {"name": "Batteries.Tactic.TransRelation", "kind": "inductive", "line": 101},
+  {"name": "Batteries.Tactic.getRel", "kind": "def", "line": 108}
+ ],
+ "private": [],
+ "missing": [],
+ "unread": "Unnamed instances, the names an `alias ⟨…⟩` command gives, and the names Lean generates for a declaration (constructors, recursors, derived instances) are not read from the source, so they are not listed."
+}

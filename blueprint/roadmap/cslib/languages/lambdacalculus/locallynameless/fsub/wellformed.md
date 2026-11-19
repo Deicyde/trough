@@ -206,3 +206,4 @@ lemma map_subst_nmem (Γ : Env Var) (X : Var) (σ : Ty Var) (wf : Γ.Wf) (nmem :
 ## Sources
 
 - [Cslib/Languages/LambdaCalculus/LocallyNameless/Fsub/WellFormed.lean at 86d560b6](https://github.com/leanprover/cslib/blob/86d560b6cbb379bd82512424cbcd2a915a1565e7/Cslib/Languages/LambdaCalculus/LocallyNameless/Fsub/WellFormed.lean)
+- [Declaration ledger](../../../../../../sources/cslib/Cslib.Languages.LambdaCalculus.LocallyNameless.Fsub.WellFormed.json)

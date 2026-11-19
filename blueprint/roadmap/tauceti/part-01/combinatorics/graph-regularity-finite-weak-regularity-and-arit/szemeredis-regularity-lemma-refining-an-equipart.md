@@ -36,4 +36,4 @@ Formalized in Tau Ceti as [`SimpleGraph.exists_regular_exact_refining_equipartit
 ## Sources
 
 - [Tau Ceti documentation: `SimpleGraph.exists_regular_exact_refining_equipartition`](https://taucetiproject.org/docs/TauCeti/Combinatorics/Regularity/Graph/SeededRegularity.html#SimpleGraph.exists_regular_exact_refining_equipartition)
-- [Source of `SimpleGraph.exists_regular_exact_refining_equipartition` in TauCeti/Combinatorics/Regularity/Graph/SeededRegularity.lean](https://github.com/TauCetiProject/TauCeti/blob/a6027b1d24fcb935c53bd5b50d11b40991cda418/TauCeti/Combinatorics/Regularity/Graph/SeededRegularity.lean#L199)
+- [Source of `SimpleGraph.exists_regular_exact_refining_equipartition` in TauCeti/Combinatorics/Regularity/Graph/SeededRegularity.lean](https://github.com/TauCetiProject/TauCeti/blob/cd41bffcb343151b3e58c89392e206b11fe78c1c/TauCeti/Combinatorics/Regularity/Graph/SeededRegularity.lean#L199)

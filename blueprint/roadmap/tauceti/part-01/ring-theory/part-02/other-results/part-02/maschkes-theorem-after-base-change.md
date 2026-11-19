@@ -29,4 +29,4 @@ Formalized in Tau Ceti as [`MonoidAlgebra.isSemisimpleRing_tensor`](https://tauc
 ## Sources
 
 - [Tau Ceti documentation: `MonoidAlgebra.isSemisimpleRing_tensor`](https://taucetiproject.org/docs/TauCeti/RingTheory/TensorProduct/MonoidAlgebra.html#MonoidAlgebra.isSemisimpleRing_tensor)
-- [Source of `MonoidAlgebra.isSemisimpleRing_tensor` in TauCeti/RingTheory/TensorProduct/MonoidAlgebra.lean](https://github.com/TauCetiProject/TauCeti/blob/a6027b1d24fcb935c53bd5b50d11b40991cda418/TauCeti/RingTheory/TensorProduct/MonoidAlgebra.lean#L98)
+- [Source of `MonoidAlgebra.isSemisimpleRing_tensor` in TauCeti/RingTheory/TensorProduct/MonoidAlgebra.lean](https://github.com/TauCetiProject/TauCeti/blob/cd41bffcb343151b3e58c89392e206b11fe78c1c/TauCeti/RingTheory/TensorProduct/MonoidAlgebra.lean#L98)

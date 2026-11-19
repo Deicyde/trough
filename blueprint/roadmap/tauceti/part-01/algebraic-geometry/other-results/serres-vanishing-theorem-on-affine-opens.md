@@ -26,7 +26,7 @@ Its statement uses no other declaration mapped here.
 
 ## Proof depends on
 
-- [Cartan's criterion](../../topology/other-results/cartans-criterion.md)
+- [Cartan's criterion](../../../part-02/topology/other-results/cartans-criterion.md)
 
 ## Lean
 
@@ -46,4 +46,4 @@ AlgebraicGeometry.Scheme.Modules.subsingleton_cohomology_succ_of_isAffine.{u}
 ## Sources
 
 - [Tau Ceti documentation: `AlgebraicGeometry.Scheme.Modules.subsingleton_cohomologyOn_succ_of_isAffineOpen`](https://taucetiproject.org/docs/TauCeti/AlgebraicGeometry/Cohomology/Affine.html#AlgebraicGeometry.Scheme.Modules.subsingleton_cohomologyOn_succ_of_isAffineOpen)
-- [Source of `AlgebraicGeometry.Scheme.Modules.subsingleton_cohomologyOn_succ_of_isAffineOpen` in TauCeti/AlgebraicGeometry/Cohomology/Affine.lean](https://github.com/TauCetiProject/TauCeti/blob/a6027b1d24fcb935c53bd5b50d11b40991cda418/TauCeti/AlgebraicGeometry/Cohomology/Affine.lean#L266)
+- [Source of `AlgebraicGeometry.Scheme.Modules.subsingleton_cohomologyOn_succ_of_isAffineOpen` in TauCeti/AlgebraicGeometry/Cohomology/Affine.lean](https://github.com/TauCetiProject/TauCeti/blob/cd41bffcb343151b3e58c89392e206b11fe78c1c/TauCeti/AlgebraicGeometry/Cohomology/Affine.lean#L256)

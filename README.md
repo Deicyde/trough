@@ -6,10 +6,10 @@ vaults, rendered with [AutoformBot](https://github.com/facebookresearch/autoform
 and published at https://trough.jackmccarthy.org/. The book shows no Lean
 progress: the generated `blueprint/roadmap/README.md` sets `tracks_lean: false`.
 
-`catalog/libraries.toml` lists the 62 libraries trough targets: Mathlib, Tau
+`catalog/libraries.toml` lists the 63 libraries trough targets: Mathlib, Tau
 Ceti, ATLAS, the research projects with blueprints (Imperial's FLT, PNT+, PFR,
 Equational Theories, Strong PNT), Formal Conjectures, Physlib, CSLib,
-Foundation, the Analysis I companion, the large corpora (Anthropic's FLT, Lean
+Batteries, Foundation, the Analysis I companion, the large corpora (Anthropic's FLT, Lean
 Pool, OpenAI Math, Axiom's CFSG and Stacks Project) and the 44 Formal Frontier
 libraries. Each gets the article unit that suits it, recorded as `map_unit` and
 `map_plan`.
@@ -21,8 +21,8 @@ headline results, Formal Conjectures from its problem files, Lean Pool from
 its project cards, Anthropic's FLT from the landmark theorems of its proof,
 Axiom's CFSG from its proof's case division and its milestones, Axiom's
 Stacks Project formalization from its Stacks tags, ATLAS from the topics of
-its vault, OpenAI Math from its result families, CSLib from its modules, and
-Physlib from its modules.
+its vault, OpenAI Math from its result families, and CSLib, Batteries and
+Physlib from their modules.
 
 ## The Mathlib map
 
@@ -555,19 +555,29 @@ Lean statement, or the whole text of a structure, class or inductive type. The
 module's later `/-!` notes stand where it writes them. A folder's page quotes
 the opening paragraph of its README, the folder's description, and links the
 README; the READMEs' principles for contributors and their plans are left out.
-So are TODO notes, from a TODO to the end of its paragraph, and text about
-plans or inviting future work: a section headed plans, future work, TODOs or
-roadmap, a sentence that plans or invites work ("would be welcome", "we plan",
-"reserved for future work", "future work on", "future design work", "will
-follow") and a paragraph saying code should be upstreamed, each cut marked with
-…. Sections on a module's limitations stay: they say what it does not claim.
+The docstrings are quoted through the filter the Physlib chapter uses, applied
+when the chapter is built, so `data/cslib/` keeps them as written: a section
+headed plans, future work, TODOs or roadmap goes, and so does a sentence that
+mentions a TODO with the rest of its paragraph, a sentence about plans or
+inviting work ("we plan", "welcome", "will follow", "be upstreamed" and the
+other phrases `trough.library.PLANS` lists), and a list item that does either;
+a paragraph that opens with a TODO note or a plan goes with the paragraphs after
+it up to the next heading. Each cut is marked with …, and docstrings cut whole
+one after another show one mark. A link to another module points at its
+article, and a link into the repository's `master` points at the pin. Sections
+on a module's limitations stay: they say what it does not claim.
 An edge means that a module's declarations use another module's: "Depends on"
 lists the modules its statements use, the types of its declarations and the
 values of its definitions, and "Proof depends on" those only its proofs use; a
 dependency reached through another is left out. `tools/trough/library.py`
 reads the modules and builds the chapter, as it will for other Lean libraries;
 `tools/trough/cslib.py` holds what is CSLib's own: its README's description,
-the maintainers GOVERNANCE.md names and the chapter's intro.
+the maintainers GOVERNANCE.md names and the chapter's intro. Each article is an
+AutoformBot module catalog (`catalog: module`), so its Sources link the
+module's declaration ledger, `blueprint/sources/cslib/<module>.json`: every
+declaration read from the source, with its kind and line, as public (the
+article's `lean:` names), private to the module or not in Lean. The site does
+not publish JSON from `sources/`; it links each ledger in the repository.
 
 1. `tools/refresh_cslib.py CHECKOUT` reads a checkout and writes
    `data/cslib/source.json`, the commit, its date, toolchain and Mathlib, and
@@ -625,7 +635,10 @@ plans or inviting work, each cut marked with …; the docstrings of Physlib's ow
 tooling under `Physlib/Meta/`, which define and count TODO items, keep their
 mentions of them. An article depends on the modules whose declarations its
 statements use, and its proof on those that only its proofs use, each without
-what another of them reaches.
+what another of them reaches. `tools/trough/physlib.py` builds the chapter and
+takes from `tools/trough/library.py` what Physlib shares with CSLib: links at
+the pin, the guards, the docstring filter, the quoting of docstrings and the
+edges, configured for Physlib.
 
 1. `tools/refresh_physlib.py CHECKOUT` reads a checkout and writes
    `data/physlib/`: `source.json`, the commit, its date, toolchain and Mathlib,
@@ -662,6 +675,41 @@ what another of them reaches.
    file the commit lists is not checked out, a module's scopes don't close, the
    README no longer describes each library, or the declarations drop under half
    the last record's.
+
+## The Batteries chapter
+
+[Batteries](https://github.com/leanprover-community/batteries) is, in its
+README's words, the "batteries included" extended library for Lean 4: data
+structures and tactics for both computer-science and mathematics applications
+of Lean. Mathlib requires it. The chapter, under `blueprint/roadmap/batteries/`,
+is built as CSLib's is, by `tools/trough/library.py`, with
+`tools/trough/batteries.py` holding what is Batteries' own, its README's
+description and the chapter's intro: an article per module under `Batteries/`
+that declares something public by name, in a part per folder of `Batteries/`
+(Data, Lean, Tactic, Util and smaller ones) and a page per folder below.
+Tactic, linter and other meta modules are mapped like any others; a module
+that declares nothing public by name, such as one that only imports others, a
+deprecated module or one that only adds syntax, is listed on its folder's page
+instead of having an article, and a folder left without an article lists its
+modules on the page above. Docstrings go through the filter the CSLib and
+Physlib chapters use, and each article links its declaration ledger,
+`blueprint/sources/batteries/<module>.json`, as a CSLib article does.
+
+1. `tools/refresh_library.py batteries CHECKOUT` reads a checkout and writes
+   `data/batteries/source.json`, the commit, its date and toolchain, and
+   `library.json`, as `refresh_cslib.py` does for CSLib (both call
+   `trough.library.refresh`), with the README's description.
+2. The **Batteries data** workflow (`.github/workflows/batteries-data.yml`)
+   fetches Batteries at the commit `source.json` pins, runs the refresh, builds
+   it with `lake build` (it needs only Lean) and runs
+   `lean/library/LibraryDeps.lean` below `import Batteries`, which writes
+   `data/batteries/deps.json` as CSLib's dump does: the modules whose
+   declarations each module's statements and proofs use, and which of the names
+   read are private or missing in Lean. The dump takes the library's roots from
+   `TROUGH_ROOTS`, so a later library can use it as it is. The workflow
+   regenerates the pages, runs the tests and, on a pull request, fails when the
+   committed data differ from what the pin gives; the weekly run, or a dispatch
+   with `newest`, moves the pin to the newest main commit whose CI passed.
 
 ## Working on it
 
@@ -759,3 +807,6 @@ module's authors as the file's header does.
 The docstrings, Lean statements, API maps and README text quoted in
 `data/physlib/` come from
 [Physlib](https://github.com/leanprover-community/physlib), Apache-2.0.
+The docstrings, Lean statements and README text in `data/batteries/` come from
+[Batteries](https://github.com/leanprover-community/batteries), Apache-2.0; each
+article names its module's authors as the file's header does.

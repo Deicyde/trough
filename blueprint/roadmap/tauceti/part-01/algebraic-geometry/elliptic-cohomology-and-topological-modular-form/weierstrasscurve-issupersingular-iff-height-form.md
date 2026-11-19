@@ -19,11 +19,10 @@ WeierstrassCurve.isSupersingular_iff_height_formalGroup_eq_two_of_char_three.{u_
 
 ## Depends on
 
-- [FormalGroup.height](../../ring-theory/part-01/bordism-formal-groups-and-chromatic-operations/formalgroup-height.md)
+Its statement uses no other declaration mapped here.
 
 ## Proof depends on
 
-- [The `p`-series has order a power of `p` in characteristic `p`](../../ring-theory/part-01/bordism-formal-groups-and-chromatic-operations/the-p-series-has-order-a-power-of-p-in-character.md)
 - [The height-one criterion for `Ê`](the-height-one-criterion-for-e.md)
 
 ## Lean
@@ -33,5 +32,5 @@ Formalized in Tau Ceti as [`WeierstrassCurve.isSupersingular_iff_height_formalGr
 ## Sources
 
 - [Tau Ceti documentation: `WeierstrassCurve.isSupersingular_iff_height_formalGroup_eq_two_of_char_three`](https://taucetiproject.org/docs/TauCeti/AlgebraicGeometry/EllipticCurve/FormalGroup/Char/Three.html#WeierstrassCurve.isSupersingular_iff_height_formalGroup_eq_two_of_char_three)
-- [Source of `WeierstrassCurve.isSupersingular_iff_height_formalGroup_eq_two_of_char_three` in TauCeti/AlgebraicGeometry/EllipticCurve/FormalGroup/Char/Three.lean](https://github.com/TauCetiProject/TauCeti/blob/a6027b1d24fcb935c53bd5b50d11b40991cda418/TauCeti/AlgebraicGeometry/EllipticCurve/FormalGroup/Char/Three.lean#L201)
-- [Tau Ceti roadmap status: Elliptic cohomology and topological modular forms](https://github.com/TauCetiProject/TauCetiRoadmap/blob/9f7c032adaf1b838e8183d63ff3cfa886d061cb3/TauCetiRoadmap/EllipticCohomology/STATUS.md)
+- [Source of `WeierstrassCurve.isSupersingular_iff_height_formalGroup_eq_two_of_char_three` in TauCeti/AlgebraicGeometry/EllipticCurve/FormalGroup/Char/Three.lean](https://github.com/TauCetiProject/TauCeti/blob/cd41bffcb343151b3e58c89392e206b11fe78c1c/TauCeti/AlgebraicGeometry/EllipticCurve/FormalGroup/Char/Three.lean#L201)
+- [Tau Ceti roadmap status: Elliptic cohomology and topological modular forms](https://github.com/TauCetiProject/TauCetiRoadmap/blob/612845ab80fb9c2b9bee724a156756ee78031591/TauCetiRoadmap/EllipticCohomology/STATUS.md)

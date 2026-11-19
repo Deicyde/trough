@@ -133,7 +133,8 @@ def sources_readme(libraries: list[dict], mathlib_rev: str, thousand_plus: dict 
                    formal_conjectures: str | None = None, lean_pool: str | None = None,
                    anthropic_flt: dict | None = None, cfsg: str | None = None,
                    stacks: str | None = None, atlas: str | None = None, openai_math: str | None = None,
-                   cslib: str | None = None, physlib: str | None = None, satellites: int | None = None) -> str:
+                   cslib: str | None = None, physlib: str | None = None, batteries: str | None = None,
+                   satellites: int | None = None) -> str:
     """The sources page. *blueprints* has (id, name, repo, license, text) for each blueprint library;
     *tauceti* has the Tau Ceti and roadmap commits, once the chapter is built; *formal_frontier* has the
     commit each Formal Frontier library's record pins, by library id; *formal_conjectures* is the Formal
@@ -141,8 +142,8 @@ def sources_readme(libraries: list[dict], mathlib_rev: str, thousand_plus: dict 
     source record of Anthropic's Fermat's Last Theorem, whose commit it pins, *cfsg* the commit Axiom
     Math's CFSG's record pins, *stacks* the commit of Axiom's Stacks Project formalization, *atlas* the
     commit of ATLAS's vault, on its fork's wiki/autoform-blueprint branch, *openai_math* the commit of
-    OpenAI Math's record, *cslib* the commit of CSLib, *physlib* the commit of Physlib its record pins, and
-    *satellites* the number of satellite projects read."""
+    OpenAI Math's record, *cslib* the commit of CSLib, *physlib* the commit of Physlib its record pins,
+    *batteries* the commit of Batteries, and *satellites* the number of satellite projects read."""
     formal_frontier = formal_frontier or {}
     # Every chapter whose data pins a library's commit, by library id; the Libraries list shows that commit.
     pinned = (formal_frontier | ({"formal-conjectures": formal_conjectures} if formal_conjectures else {})
@@ -152,7 +153,8 @@ def sources_readme(libraries: list[dict], mathlib_rev: str, thousand_plus: dict 
               | ({"stacks": stacks} if stacks else {})
               | ({"openai-math": openai_math} if openai_math else {})
               | ({"cslib": cslib} if cslib else {})
-              | ({"physlib": physlib} if physlib else {}))
+              | ({"physlib": physlib} if physlib else {})
+              | ({"batteries": batteries} if batteries else {}))
     lines = [
         "# Sources",
         "",
@@ -305,6 +307,25 @@ def sources_readme(libraries: list[dict], mathlib_rev: str, thousand_plus: dict 
             "the source that Lean has only as private declarations or not at all, written by "
             "`lean/cslib/CslibDeps.lean` in GitHub Actions. `data/cslib/source.json` records the commit, its Lean "
             "toolchain and Mathlib.",
+            "- `blueprint/sources/cslib/`: a declaration ledger for each module, which its article's Sources links: "
+            "every declaration read from the module's source, with its kind and line, as public (the article's `lean:` "
+            "names), private to the module, or not in Lean.",
+        ]
+    if batteries:
+        lines += [
+            "",
+            "## Batteries",
+            "",
+            f"- `data/batteries/library.json`: each module's title, docstrings and authors, and its declarations with "
+            "their kinds, lines, docstrings and Lean statements, read from the source text without Lean, with the "
+            f"README's description, from [leanprover-community/batteries at {batteries[:8]}]"
+            f"(https://github.com/leanprover-community/batteries/tree/{batteries}), Apache-2.0. "
+            "`data/batteries/deps.json`: the modules each module's statements and proofs use, and the names read from "
+            "the source that Lean has only as private declarations or not at all, written by "
+            "`lean/library/LibraryDeps.lean` in GitHub Actions. `data/batteries/source.json` records the commit and its "
+            "Lean toolchain.",
+            "- `blueprint/sources/batteries/`: a declaration ledger for each module with an article, which the "
+            "article's Sources links, as for CSLib.",
         ]
     if physlib:
         lines += [

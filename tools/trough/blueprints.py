@@ -19,7 +19,7 @@ from __future__ import annotations
 import json
 import re
 from collections import Counter
-from dataclasses import dataclass
+from dataclasses import dataclass, field
 from pathlib import Path
 from urllib.parse import quote, unquote
 
@@ -30,7 +30,8 @@ from trough.vault import MATH_SPAN, Container, Entry, Leaf, chunk, rel, slugify,
 
 KINDS = {"theorem": "theorem", "lemma": "lemma", "proposition": "proposition", "corollary": "corollary",
          "definition": "definition", "sublemma": "lemma", "conjecture": "theorem", "claim": "lemma"}
-LINK = re.compile(r"\]\(trough:([^)\s]*)\)")  # a placeholder's target is percent-encoded
+LINK = re.compile(r"\]\(trough:([^)\s]*)\)")
+VAULT_FILE = "vault:"  # a Sources link to a file of the vault, by its path below the vault  # a placeholder's target is percent-encoded
 # Characters Markdown can read as markup. One or two underscores between letters or digits, as in a Lean
 # name, can't start or end emphasis, so they stay bare; Python-Markdown can read a longer run as emphasis.
 MARKUP = re.compile(r"(?<=[^\W_])_{1,2}(?=[^\W_])|(?P<markup>[*_\[\]\\`])")
@@ -185,6 +186,8 @@ class Built:
     lean_links: dict[str, str]
     stats: dict[str, int]
     unknown: Counter
+    # Files the chapter writes besides its pages, by path below the vault, as a module catalog's declaration ledger.
+    files: dict[str, str] = field(default_factory=dict)
 
 
 @dataclass
@@ -695,3 +698,6 @@ def resolve(built: Built, vault: Path) -> None:
         else:
             node.body = fix(node.body, here)
             node.notes = [(heading, fix(text, here)) for heading, text in node.notes]
+            # A source that is a file of the vault, written vault:<path below the vault>, links it relatively.
+            node.sources = [(label, rel(here, Path(url.removeprefix(VAULT_FILE))) if url.startswith(VAULT_FILE) else url)
+                            for label, url in node.sources]

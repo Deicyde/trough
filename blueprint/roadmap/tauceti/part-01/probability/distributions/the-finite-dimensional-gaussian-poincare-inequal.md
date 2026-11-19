@@ -41,4 +41,4 @@ Formalized in Tau Ceti as [`TauCeti.Probability.variance_le_sum_integral_fderiv_
 ## Sources
 
 - [Tau Ceti documentation: `TauCeti.Probability.variance_le_sum_integral_fderiv_sq_pi`](https://taucetiproject.org/docs/TauCeti/Probability/Distributions/Gaussian/Poincare.html#TauCeti.Probability.variance_le_sum_integral_fderiv_sq_pi)
-- [Source of `TauCeti.Probability.variance_le_sum_integral_fderiv_sq_pi` in TauCeti/Probability/Distributions/Gaussian/Poincare.lean](https://github.com/TauCetiProject/TauCeti/blob/a6027b1d24fcb935c53bd5b50d11b40991cda418/TauCeti/Probability/Distributions/Gaussian/Poincare.lean#L317)
+- [Source of `TauCeti.Probability.variance_le_sum_integral_fderiv_sq_pi` in TauCeti/Probability/Distributions/Gaussian/Poincare.lean](https://github.com/TauCetiProject/TauCeti/blob/cd41bffcb343151b3e58c89392e206b11fe78c1c/TauCeti/Probability/Distributions/Gaussian/Poincare.lean#L313)

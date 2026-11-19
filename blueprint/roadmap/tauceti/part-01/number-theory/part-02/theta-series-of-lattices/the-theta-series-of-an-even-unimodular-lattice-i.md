@@ -24,7 +24,7 @@ Its statement uses no other declaration mapped here.
 
 ## Proof depends on
 
-- [The inversion law of theta series](the-inversion-law-of-theta-series.md)
+- [Poisson's summation formula](../../../analysis/part-03/fourier/part-01/poissons-summation-formula.md)
 - [The rank of an even unimodular lattice is divisible by `8`](the-rank-of-an-even-unimodular-lattice-is-divisi.md)
 
 ## Lean
@@ -34,5 +34,5 @@ Formalized in Tau Ceti as [`ZLattice.thetaForm`](https://taucetiproject.org/docs
 ## Sources
 
 - [Tau Ceti documentation: `ZLattice.thetaForm`](https://taucetiproject.org/docs/TauCeti/NumberTheory/ModularForms/ThetaSeries/LevelOne.html#ZLattice.thetaForm)
-- [Source of `ZLattice.thetaForm` in TauCeti/NumberTheory/ModularForms/ThetaSeries/LevelOne.lean](https://github.com/TauCetiProject/TauCeti/blob/a6027b1d24fcb935c53bd5b50d11b40991cda418/TauCeti/NumberTheory/ModularForms/ThetaSeries/LevelOne.lean#L130)
-- [Tau Ceti roadmap status: Theta series of lattices](https://github.com/TauCetiProject/TauCetiRoadmap/blob/9f7c032adaf1b838e8183d63ff3cfa886d061cb3/TauCetiRoadmap/ThetaSeries/STATUS.md)
+- [Source of `ZLattice.thetaForm` in TauCeti/NumberTheory/ModularForms/ThetaSeries/LevelOne.lean](https://github.com/TauCetiProject/TauCeti/blob/cd41bffcb343151b3e58c89392e206b11fe78c1c/TauCeti/NumberTheory/ModularForms/ThetaSeries/LevelOne.lean#L135)
+- [Tau Ceti roadmap status: Theta series of lattices](https://github.com/TauCetiProject/TauCetiRoadmap/blob/612845ab80fb9c2b9bee724a156756ee78031591/TauCetiRoadmap/ThetaSeries/STATUS.md)

@@ -1,7 +1,7 @@
 ---
 declaration: section
 origin: cited
-lean: OAI.Nagata.Workers.W30.exists_positive_degree_equation_of_homogeneous_cycle, OAI.Nagata.nagata_conjecture, OAI.Nagata.nagata_conjecture_coordinates, OAI.MaximalSeshadri.Geometry.maximalSeshadriConstants
+lean: OAI.Nagata.nagata_conjecture, OAI.Nagata.nagata_conjecture_coordinates, OAI.MaximalSeshadri.Geometry.maximalSeshadriConstants, OAI.Nagata.Workers.W30.exists_positive_degree_equation_of_homogeneous_cycle
 statement: formalized
 ---
 

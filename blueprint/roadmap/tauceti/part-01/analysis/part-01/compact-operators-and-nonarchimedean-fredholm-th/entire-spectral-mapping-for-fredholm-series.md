@@ -28,7 +28,7 @@ ContinuousLinearMap.IsRowCompact.charPowerSeries_eq_colemanDEntire.{u_1, u_2} {I
 
 ## Proof depends on
 
-- [Cauchy–Hadamard for entire series](../../../ring-theory/part-01/power-series/cauchy-hadamard-for-entire-series.md)
+- [Cauchy–Hadamard for entire series](../../../ring-theory/part-02/power-series/cauchy-hadamard-for-entire-series.md)
 
 ## Lean
 
@@ -37,5 +37,5 @@ Formalized in Tau Ceti as [`ContinuousLinearMap.IsRowCompact.charPowerSeries_eq_
 ## Sources
 
 - [Tau Ceti documentation: `ContinuousLinearMap.IsRowCompact.charPowerSeries_eq_colemanDEntire`](https://taucetiproject.org/docs/TauCeti/Analysis/Normed/Operator/Nonarchimedean/FunctionalCalculus.html#ContinuousLinearMap.IsRowCompact.charPowerSeries_eq_colemanDEntire)
-- [Source of `ContinuousLinearMap.IsRowCompact.charPowerSeries_eq_colemanDEntire` in TauCeti/Analysis/Normed/Operator/Nonarchimedean/FunctionalCalculus.lean](https://github.com/TauCetiProject/TauCeti/blob/a6027b1d24fcb935c53bd5b50d11b40991cda418/TauCeti/Analysis/Normed/Operator/Nonarchimedean/FunctionalCalculus.lean#L45)
-- [Tau Ceti roadmap status: Compact operators and nonarchimedean Fredholm theory](https://github.com/TauCetiProject/TauCetiRoadmap/blob/9f7c032adaf1b838e8183d63ff3cfa886d061cb3/TauCetiRoadmap/CompactOperators/STATUS.md)
+- [Source of `ContinuousLinearMap.IsRowCompact.charPowerSeries_eq_colemanDEntire` in TauCeti/Analysis/Normed/Operator/Nonarchimedean/FunctionalCalculus.lean](https://github.com/TauCetiProject/TauCeti/blob/cd41bffcb343151b3e58c89392e206b11fe78c1c/TauCeti/Analysis/Normed/Operator/Nonarchimedean/FunctionalCalculus.lean#L45)
+- [Tau Ceti roadmap status: Compact operators and nonarchimedean Fredholm theory](https://github.com/TauCetiProject/TauCetiRoadmap/blob/612845ab80fb9c2b9bee724a156756ee78031591/TauCetiRoadmap/CompactOperators/STATUS.md)

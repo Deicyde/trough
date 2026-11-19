@@ -49,4 +49,4 @@ TauCeti.SmoothForm.IsContactHamiltonianVectorField.mlieDerivForm_apply_eq.{u_1, 
 ## Sources
 
 - [Tau Ceti documentation: `TauCeti.SmoothForm.IsContactHamiltonianVectorField.mlieDerivForm_eq`](https://taucetiproject.org/docs/TauCeti/Geometry/Contact/Hamiltonian.html#TauCeti.SmoothForm.IsContactHamiltonianVectorField.mlieDerivForm_eq)
-- [Source of `TauCeti.SmoothForm.IsContactHamiltonianVectorField.mlieDerivForm_eq` in TauCeti/Geometry/Contact/Hamiltonian.lean](https://github.com/TauCetiProject/TauCeti/blob/a6027b1d24fcb935c53bd5b50d11b40991cda418/TauCeti/Geometry/Contact/Hamiltonian.lean#L165)
+- [Source of `TauCeti.SmoothForm.IsContactHamiltonianVectorField.mlieDerivForm_eq` in TauCeti/Geometry/Contact/Hamiltonian.lean](https://github.com/TauCetiProject/TauCeti/blob/cd41bffcb343151b3e58c89392e206b11fe78c1c/TauCeti/Geometry/Contact/Hamiltonian.lean#L165)

@@ -57,4 +57,4 @@ TauCeti.mul_preprojectiveHilbertSeries_eq_one_of_two_mul_le_sum.{u, v, w, u_1} (
 ## Sources
 
 - [Tau Ceti documentation: `TauCeti.mul_preprojectiveHilbertSeries_eq_one`](https://taucetiproject.org/docs/TauCeti/RepresentationTheory/Quiver/Preprojective/HilbertSeries/ZigzagCartan.html#TauCeti.mul_preprojectiveHilbertSeries_eq_one)
-- [Source of `TauCeti.mul_preprojectiveHilbertSeries_eq_one` in TauCeti/RepresentationTheory/Quiver/Preprojective/HilbertSeries/ZigzagCartan.lean](https://github.com/TauCetiProject/TauCeti/blob/a6027b1d24fcb935c53bd5b50d11b40991cda418/TauCeti/RepresentationTheory/Quiver/Preprojective/HilbertSeries/ZigzagCartan.lean#L117)
+- [Source of `TauCeti.mul_preprojectiveHilbertSeries_eq_one` in TauCeti/RepresentationTheory/Quiver/Preprojective/HilbertSeries/ZigzagCartan.lean](https://github.com/TauCetiProject/TauCeti/blob/cd41bffcb343151b3e58c89392e206b11fe78c1c/TauCeti/RepresentationTheory/Quiver/Preprojective/HilbertSeries/ZigzagCartan.lean#L117)

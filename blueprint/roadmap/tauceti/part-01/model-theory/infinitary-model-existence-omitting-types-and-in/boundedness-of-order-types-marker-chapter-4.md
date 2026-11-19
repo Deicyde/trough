@@ -38,5 +38,5 @@ Formalized in Tau Ceti as [`FirstOrder.Language.Sentenceω.wellOrder_type_bounde
 ## Sources
 
 - [Tau Ceti documentation: `FirstOrder.Language.Sentenceω.wellOrder_type_boundedness`](https://taucetiproject.org/docs/TauCeti/ModelTheory/WellOrdering.html#FirstOrder.Language.Sentence%CF%89.wellOrder_type_boundedness)
-- [Source of `FirstOrder.Language.Sentenceω.wellOrder_type_boundedness` in TauCeti/ModelTheory/WellOrdering.lean](https://github.com/TauCetiProject/TauCeti/blob/a6027b1d24fcb935c53bd5b50d11b40991cda418/TauCeti/ModelTheory/WellOrdering.lean#L689)
-- [Tau Ceti roadmap status: Infinitary model existence, omitting types and interpolation](https://github.com/TauCetiProject/TauCetiRoadmap/blob/9f7c032adaf1b838e8183d63ff3cfa886d061cb3/TauCetiRoadmap/InfinitaryModelExistence/STATUS.md)
+- [Source of `FirstOrder.Language.Sentenceω.wellOrder_type_boundedness` in TauCeti/ModelTheory/WellOrdering.lean](https://github.com/TauCetiProject/TauCeti/blob/cd41bffcb343151b3e58c89392e206b11fe78c1c/TauCeti/ModelTheory/WellOrdering.lean#L693)
+- [Tau Ceti roadmap status: Infinitary model existence, omitting types and interpolation](https://github.com/TauCetiProject/TauCetiRoadmap/blob/612845ab80fb9c2b9bee724a156756ee78031591/TauCetiRoadmap/InfinitaryModelExistence/STATUS.md)

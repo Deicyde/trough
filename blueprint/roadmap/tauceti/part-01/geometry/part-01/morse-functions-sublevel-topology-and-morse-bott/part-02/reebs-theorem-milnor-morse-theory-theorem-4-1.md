@@ -27,6 +27,7 @@ Its statement uses no other declaration mapped here.
 
 ## Proof depends on
 
+- [A maximal integral curve confined to a compact set is defined for all time](../../geodesics-the-exponential-map-and-the-hopf-rinow/a-maximal-integral-curve-confined-to-a-compact-s.md)
 - [Fermat's theorem on a manifold](../part-01/fermats-theorem-on-a-manifold.md)
 - [The normalized Morse lemma](the-normalized-morse-lemma.md)
 
@@ -37,4 +38,4 @@ Formalized in Tau Ceti as [`TauCeti.IsMorse.nonempty_homeomorph_sphere_of_totalC
 ## Sources
 
 - [Tau Ceti documentation: `TauCeti.IsMorse.nonempty_homeomorph_sphere_of_totalCriticalCount_eq_two`](https://taucetiproject.org/docs/TauCeti/Geometry/Manifold/Morse/Reeb.html#TauCeti.IsMorse.nonempty_homeomorph_sphere_of_totalCriticalCount_eq_two)
-- [Source of `TauCeti.IsMorse.nonempty_homeomorph_sphere_of_totalCriticalCount_eq_two` in TauCeti/Geometry/Manifold/Morse/Reeb.lean](https://github.com/TauCetiProject/TauCeti/blob/a6027b1d24fcb935c53bd5b50d11b40991cda418/TauCeti/Geometry/Manifold/Morse/Reeb.lean#L123)
+- [Source of `TauCeti.IsMorse.nonempty_homeomorph_sphere_of_totalCriticalCount_eq_two` in TauCeti/Geometry/Manifold/Morse/Reeb.lean](https://github.com/TauCetiProject/TauCeti/blob/cd41bffcb343151b3e58c89392e206b11fe78c1c/TauCeti/Geometry/Manifold/Morse/Reeb.lean#L123)

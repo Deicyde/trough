@@ -1,0 +1,20 @@
+{
+ "schema": "trough-ledger/v1",
+ "library": "Batteries",
+ "repo": "leanprover-community/batteries",
+ "rev": "b4b25a3886a16daacaf6615c2eea7170a6e8f458",
+ "module": "Batteries.Data.ByteSlice",
+ "file": "Batteries/Data/ByteSlice.lean",
+ "public": [
+  {"name": "ByteSlice.isEmpty", "kind": "abbrev", "line": 15},
+  {"name": "ByteSlice.stop_eq_start_add_size", "kind": "theorem", "line": 17},
+  {"name": "ByteSlice.pop", "kind": "abbrev", "line": 21},
+  {"name": "ByteSlice.popFront", "kind": "abbrev", "line": 25},
+  {"name": "ByteSlice.foldlM", "kind": "def", "line": 30},
+  {"name": "ByteSlice.foldl", "kind": "def", "line": 35},
+  {"name": "ByteSlice.forIn", "kind": "def", "line": 40}
+ ],
+ "private": [],
+ "missing": [],
+ "unread": "Unnamed instances, the names an `alias ⟨…⟩` command gives, and the names Lean generates for a declaration (constructors, recursors, derived instances) are not read from the source, so they are not listed."
+}

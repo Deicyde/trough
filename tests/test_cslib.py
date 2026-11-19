@@ -5,7 +5,7 @@ from pathlib import Path
 
 import refresh_cslib
 from trough import blueprints
-from trough import cslib
+from trough import cslib, library
 from trough.vault import Container, Leaf, assign_paths, render_tree, walk
 
 ROOT = Path(__file__).resolve().parent.parent
@@ -243,14 +243,21 @@ def checkout(root: Path, files: dict[str, str] = FILES, license_text: str = APAC
     return root
 
 
+def cut(text: str) -> str:
+    """A docstring as CSLib's chapter quotes it, before quoting: the filter Physlib's chapter uses too."""
+    return library.doc_text(text, cslib.CSLIB.plans)
+
+
 def test_plans_sections_and_todo_lines_are_cut_and_marked():
-    # A TODO runs to the end of its paragraph; a plans section to the next heading of its level; cuts in a row are one.
+    # A TODO goes with the rest of its paragraph; a plans section to the next heading of its level; cuts in a row are
+    # one.
     text = "Intro.\nTODO: more.\nStill here.\n\n## Plans\n\n- One.\n\n### Detail\n\nMore plans.\n\n## Kept\n\nYes."
-    assert cslib.without_plans(text) == "Intro.\n…\n## Kept\n\nYes."
-    # A TODO in a code block or a code span stays; a list item ends a TODO's paragraph.
-    assert cslib.without_plans("```\nTODO x\n```\n- TODO a\n- `TODO` b\nEnd.") == "```\nTODO x\n```\n…\n- `TODO` b\nEnd."
-    # The ellipsis a text writes itself is not a cut.
-    assert cslib.without_plans("For i ∈ {0, …, n}.") == "For i ∈ {0, …, n}."
+    assert cut(text) == "Intro.\n…\n\n## Kept\n\nYes."
+    # A TODO in a fenced code block is not read; a list item that mentions one goes.
+    assert cut("```\nTODO x\n```\n- TODO a\n- b\nEnd.") == "```\nTODO x\n```\n- b\nEnd.\n\n…"
+    # The ellipsis a text writes itself is not a cut, and a docstring with nothing cut stays as written.
+    assert cut("For i ∈ {0, …, n}.") == "For i ∈ {0, …, n}."
+    assert cut("A.\n\n\n- b\n  c") == "A.\n\n\n- b\n  c"
 
 
 # Docstrings at CSLib 86d560b6: SingleTape/Deterministic.lean's module docstring, Derivation.subs, VendingMachine.lean,
@@ -302,43 +309,40 @@ BTL = """The basic temporal language has two unary modalities: `F` (sometime in 
 
 
 def test_todo_notes_and_plans_in_cslibs_docstrings_are_cut():
-    assert cslib.without_plans(DETERMINISTIC) == DETERMINISTIC.split("\n\n## TODOs")[0] + "\n\n…"
-    # A TODO in the middle of a line keeps the text before it.
-    assert cslib.without_plans(SUBS) == ("Substitution of a family of derivations `D` for hypotheses in the context `Γ` "
-                                         "of `E`. …")
-    assert cslib.without_plans(VENDING) == "We then prove the classical example that the two are not bisimilar.\n\n…"
-    assert cslib.without_plans(OPERATORS) == OPERATORS.split("\n")[0] + "\n…"
-    assert cslib.without_plans(LOCAL) == "The module is currently developed with minimality in mind. …"
-    # The paragraph on upstreaming goes; the attribution under the same heading stays.
-    pmf = cslib.without_plans(PMF)
-    assert pmf.startswith("## NB: This module is temporary\n\n…\n\nThe uniform samplers retain")
+    assert cut(DETERMINISTIC) == DETERMINISTIC.split("\n\n## TODOs")[0] + "\n\n…"
+    # A TODO in the middle of a line goes from its sentence.
+    assert cut(SUBS) == "Substitution of a family of derivations `D` for hypotheses in the context `Γ` of `E`. …"
+    assert cut(VENDING) == "We then prove the classical example that the two are not bisimilar.\n\n…"
+    assert cut(OPERATORS) == OPERATORS.split("\n")[0] + "\n…"
+    assert cut(LOCAL) == "The module is currently developed with minimality in mind. …"
+    # The sentences on upstreaming go; the attribution under the same heading stays.
+    pmf = cut(PMF)
+    assert "upstream" not in pmf and "domain-specific\nstructure. …\n\nThe uniform samplers" in pmf
+    # "Has to be added" says what a construction needs, not what is planned.
+    assert cut("The empty list has to be added explicitly.") == "The empty list has to be added explicitly."
     assert "under the Apache 2.0 license.\nOriginal sampler copyright (c) 2024 Josha Dekker." in pmf
-    assert "upstream" not in pmf.split("The uniform samplers")[0]
     # A section on limitations stays, without its sentence on what will follow.
-    assert cslib.without_plans(LIMITATIONS) == LIMITATIONS.split(" Its semantics")[0] + " …"
+    assert cut(LIMITATIONS) == LIMITATIONS.split(" Its semantics")[0] + " …"
     # "In the future" alone is vocabulary, as in temporal logic.
-    assert cslib.without_plans(BTL) == BTL
-    # A heading with nothing left under it goes.
-    assert cslib.without_plans("Kept.\n\n## Note\n\nWe plan to add more.\n\n## Next\n\nText.") == (
-        "Kept.\n\n…\n\n## Next\n\nText.")
+    assert cut(BTL) == BTL
+    # A section whose text is all cut keeps its heading over the cut.
+    assert cut("Kept.\n\n## Note\n\nWe plan to add more.\n\n## Next\n\nText.") == (
+        "Kept.\n\n## Note\n\n…\n\n## Next\n\nText.")
 
 
 def test_a_plan_in_a_list_item_cuts_that_item_and_a_plan_lead_in_its_list():
-    # A list with no full stops is not one sentence: only the item that plans goes.
-    assert cslib.without_plans("Notes:\n- `a` is defined here\n- a faster `a` would be welcome") == (
-        "Notes:\n- `a` is defined here\n…")
-    assert cslib.without_plans("- `a` is defined\n- `b` is defined\n- `c` will follow") == (
-        "- `a` is defined\n- `b` is defined\n…")
-    # A lead-in that invites work takes the items it introduces.
-    assert cslib.without_plans("Further results would be welcome:\n- a\n- b") == "…"
+    # Only the item that plans goes, and the line that introduces the list stays.
+    assert cut("Notes:\n- `a` is defined here\n- a faster `a` would be welcome") == "Notes:\n- `a` is defined here\n\n…"
+    assert cut("- `a` is defined\n- `b` is defined\n- `c` will follow") == "- `a` is defined\n- `b` is defined\n\n…"
+    # A lead-in that invites work takes the items it introduces, and the paragraphs after it up to the next heading.
+    assert cut("Further results would be welcome:\n- a\n- b\n\nMore.\n\n## Next\n\nText.") == "…\n\n## Next\n\nText."
 
 
-def test_a_heading_stays_while_a_subsection_under_it_has_text():
+def test_a_heading_over_a_todo_or_plans_goes_with_its_subsections():
     text = "# Title\n\n## Main results\n\n### TODO\n\n- More.\n\n### Theorems\n\n- `foo`: a theorem."
-    assert cslib.without_plans(text) == "# Title\n\n## Main results\n\n…\n### Theorems\n\n- `foo`: a theorem."
-    # It goes when every subsection under it is cut.
-    assert cslib.without_plans("# Title\n\n## Later\n\n### TODO\n\n- More.\n\n## Next\n\nText.") == (
-        "# Title\n\n…\n## Next\n\nText.")
+    assert cut(text) == "# Title\n\n## Main results\n\n…\n\n### Theorems\n\n- `foo`: a theorem."
+    assert cut("# Title\n\n## Roadmap\n\n### Later\n\n- More.\n\n## Next\n\nText.") == (
+        "# Title\n\n…\n\n## Next\n\nText.")
 
 
 def test_the_header_names_the_copyright_holders_and_the_authors():
@@ -366,9 +370,11 @@ def test_a_module_keeps_its_title_docstrings_and_public_declarations_in_file_ord
     record = cslib.read_module(LTS, "Cslib/Foundations/Semantics/LTS/Basic.lean")
     assert record["module"] == "Cslib.Foundations.Semantics.LTS.Basic"
     assert record["title"] == "Labelled Transition System (LTS)"
-    # The TODO line and the TODO section are cut.
-    assert record["doc"] == ("A Labelled Transition System (`LTS`) models the observable behaviour of a system.\n…\n\n"
-                             "## Main definitions\n\n- `LTS` is a structure for labelled transition systems.\n\n…")
+    # The docstring is kept as written; the chapter cuts the TODO line and the TODO section.
+    assert record["doc"].startswith("A Labelled Transition System (`LTS`) models the observable behaviour of a system.\n"
+                                    "TODO: add image-finite LTSs.")
+    assert cut(record["doc"]) == ("A Labelled Transition System (`LTS`) models the observable behaviour of a system.\n"
+                                  "…\n\n## Main definitions\n\n- `LTS` is a structure for labelled transition systems.\n\n…")
     items = record["items"]
     assert [item.get("name") or item["note"].split("\n")[0] for item in items] == [
         "Cslib.LTS", "Cslib.LTS.IsTerminal", "## Multistep transitions", "Cslib.LTS.terminal_iff", "Cslib.LTS.steps",
@@ -610,6 +616,22 @@ def test_lean_decides_which_declarations_are_public(tmp_path):
     assert ("Lean marks 3 of them as private to their modules (in a `module` file, a declaration outside a `public "
             "section` and not marked `public` is private), and these are left out, as is 1 name Lean does not have."
             ) in pages["README.md"]
+
+
+def test_each_article_links_its_declaration_ledger(tmp_path):
+    # An article is a module catalog, whose Sources link a declaration ledger under blueprint/sources/.
+    loaded, result, links, pages = built(tmp_path, {}, private=["Cslib.LTS.IsTerminal"], missing=["elabLts"])
+    basic = pages["foundations/semantics/lts/basic.md"]
+    assert "- [Declaration ledger](../../../../../sources/cslib/Cslib.Foundations.Semantics.LTS.Basic.json)" in basic
+    assert len(result.files) == len(loaded["modules"])
+    ledger = json.loads(result.files["sources/cslib/Cslib.Foundations.Semantics.LTS.Basic.json"])
+    assert ledger["schema"] == "trough-ledger/v1" and ledger["rev"] == loaded["rev"]
+    assert ledger["file"] == "Cslib/Foundations/Semantics/LTS/Basic.lean"
+    # Public, as the article's lean: names, private to the module, or not in Lean, each with its kind and line.
+    assert [entry["name"] for entry in ledger["public"]] == ["Cslib.LTS", "Cslib.LTS.terminal_iff", "Cslib.LTS.steps"]
+    assert ledger["private"] == [{"name": "Cslib.LTS.IsTerminal", "kind": "def", "line": 40}]
+    assert ledger["missing"] == [{"name": "elabLts", "kind": "def", "line": 67}]
+    assert "lean: Cslib.LTS, Cslib.LTS.terminal_iff, Cslib.LTS.steps\n" in basic
 
 
 def test_a_dump_of_another_commit_gives_no_edges(tmp_path):

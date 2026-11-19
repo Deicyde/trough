@@ -1,0 +1,28 @@
+{
+ "schema": "trough-ledger/v1",
+ "library": "Batteries",
+ "repo": "leanprover-community/batteries",
+ "rev": "b4b25a3886a16daacaf6615c2eea7170a6e8f458",
+ "module": "Batteries.Data.Fin.Basic",
+ "file": "Batteries/Data/Fin/Basic.lean",
+ "public": [
+  {"name": "Fin.clamp", "kind": "def", "line": 15},
+  {"name": "Fin.dfoldrM", "kind": "def", "line": 27},
+  {"name": "Fin.dfoldr", "kind": "def", "line": 50},
+  {"name": "Fin.dfoldlM", "kind": "def", "line": 64},
+  {"name": "Fin.dfoldl", "kind": "def", "line": 87},
+  {"name": "Fin.sum", "kind": "def", "line": 92},
+  {"name": "Fin.prod", "kind": "def", "line": 96},
+  {"name": "Fin.countP", "kind": "def", "line": 100},
+  {"name": "Fin.findSome?", "kind": "def", "line": 107},
+  {"name": "Fin.findSomeRev?", "kind": "def", "line": 114},
+  {"name": "Fin.find?", "kind": "abbrev", "line": 122},
+  {"name": "Fin.findRev?", "kind": "abbrev", "line": 129},
+  {"name": "Fin.divNat", "kind": "def", "line": 133},
+  {"name": "Fin.modNat", "kind": "def", "line": 137},
+  {"name": "Fin.mkDivMod", "kind": "def", "line": 144}
+ ],
+ "private": [],
+ "missing": [],
+ "unread": "Unnamed instances, the names an `alias ⟨…⟩` command gives, and the names Lean generates for a declaration (constructors, recursors, derived instances) are not read from the source, so they are not listed."
+}

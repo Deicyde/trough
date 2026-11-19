@@ -39,4 +39,4 @@ Formalized in Tau Ceti as [`CliffordAlgebra.nonempty_algEquiv_matrix_of_finrank_
 ## Sources
 
 - [Tau Ceti documentation: `CliffordAlgebra.nonempty_algEquiv_matrix_of_finrank_eq_two_mul`](https://taucetiproject.org/docs/TauCeti/RepresentationTheory/Spin/Structure.html#CliffordAlgebra.nonempty_algEquiv_matrix_of_finrank_eq_two_mul)
-- [Source of `CliffordAlgebra.nonempty_algEquiv_matrix_of_finrank_eq_two_mul` in TauCeti/RepresentationTheory/Spin/Structure.lean](https://github.com/TauCetiProject/TauCeti/blob/a6027b1d24fcb935c53bd5b50d11b40991cda418/TauCeti/RepresentationTheory/Spin/Structure.lean#L441)
+- [Source of `CliffordAlgebra.nonempty_algEquiv_matrix_of_finrank_eq_two_mul` in TauCeti/RepresentationTheory/Spin/Structure.lean](https://github.com/TauCetiProject/TauCeti/blob/cd41bffcb343151b3e58c89392e206b11fe78c1c/TauCeti/RepresentationTheory/Spin/Structure.lean#L439)

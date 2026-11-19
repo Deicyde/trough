@@ -1,0 +1,16 @@
+{
+ "schema": "trough-ledger/v1",
+ "library": "CSLib",
+ "repo": "leanprover/cslib",
+ "rev": "86d560b6cbb379bd82512424cbcd2a915a1565e7",
+ "module": "Cslib.Crypto.Protocols.PerfectSecrecy.OneTimePad",
+ "file": "Cslib/Crypto/Protocols/PerfectSecrecy/OneTimePad.lean",
+ "public": [
+  {"name": "Cslib.Crypto.Protocols.PerfectSecrecy.otp", "kind": "def", "line": 41},
+  {"name": "Cslib.Crypto.Protocols.PerfectSecrecy.otp_ciphertextDist_eq_uniform", "kind": "theorem", "line": 49},
+  {"name": "Cslib.Crypto.Protocols.PerfectSecrecy.otp_perfectlySecret", "kind": "theorem", "line": 57}
+ ],
+ "private": [],
+ "missing": [],
+ "unread": "Unnamed instances, the names an `alias ⟨…⟩` command gives, and the names Lean generates for a declaration (constructors, recursors, derived instances) are not read from the source, so they are not listed."
+}

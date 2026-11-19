@@ -46,4 +46,4 @@ TauCeti.LSeries.abscissaOfAbsConv_le_of_differentiableOn {a : ℕ → ℂ} (ha :
 ## Sources
 
 - [Tau Ceti documentation: `TauCeti.LSeries.landau`](https://taucetiproject.org/docs/TauCeti/NumberTheory/LSeries/Landau.html#TauCeti.LSeries.landau)
-- [Source of `TauCeti.LSeries.landau` in TauCeti/NumberTheory/LSeries/Landau.lean](https://github.com/TauCetiProject/TauCeti/blob/a6027b1d24fcb935c53bd5b50d11b40991cda418/TauCeti/NumberTheory/LSeries/Landau.lean#L294)
+- [Source of `TauCeti.LSeries.landau` in TauCeti/NumberTheory/LSeries/Landau.lean](https://github.com/TauCetiProject/TauCeti/blob/cd41bffcb343151b3e58c89392e206b11fe78c1c/TauCeti/NumberTheory/LSeries/Landau.lean#L294)

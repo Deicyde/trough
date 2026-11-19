@@ -1,0 +1,25 @@
+{
+ "schema": "trough-ledger/v1",
+ "library": "CSLib",
+ "repo": "leanprover/cslib",
+ "rev": "86d560b6cbb379bd82512424cbcd2a915a1565e7",
+ "module": "Cslib.Probability.PMF",
+ "file": "Cslib/Probability/PMF.lean",
+ "public": [
+  {"name": "Cslib.Probability.PMF.uniformOfFinset", "kind": "def", "line": 53},
+  {"name": "Cslib.Probability.PMF.uniformOfFinset_apply", "kind": "theorem", "line": 65},
+  {"name": "Cslib.Probability.PMF.mem_support_uniformOfFinset_iff", "kind": "theorem", "line": 69},
+  {"name": "Cslib.Probability.PMF.uniformOfFintype", "kind": "def", "line": 74},
+  {"name": "Cslib.Probability.PMF.uniformOfFintype_apply", "kind": "theorem", "line": 78},
+  {"name": "Cslib.Probability.PMF.bind_pair_apply", "kind": "theorem", "line": 84},
+  {"name": "Cslib.Probability.PMF.bind_pair_tsum_fst", "kind": "theorem", "line": 93},
+  {"name": "Cslib.Probability.PMF.uniformOfFintype_map_equiv", "kind": "theorem", "line": 99},
+  {"name": "Cslib.Probability.PMF.uniformOfFintype_prod", "kind": "theorem", "line": 108},
+  {"name": "Cslib.Probability.PMF.posteriorDist", "kind": "def", "line": 121},
+  {"name": "Cslib.Probability.PMF.posteriorDist_apply", "kind": "theorem", "line": 129},
+  {"name": "Cslib.Probability.PMF.posteriorDist_eq_prior_of_outputIndist", "kind": "theorem", "line": 138}
+ ],
+ "private": [],
+ "missing": [],
+ "unread": "Unnamed instances, the names an `alias ⟨…⟩` command gives, and the names Lean generates for a declaration (constructors, recursors, derived instances) are not read from the source, so they are not listed."
+}

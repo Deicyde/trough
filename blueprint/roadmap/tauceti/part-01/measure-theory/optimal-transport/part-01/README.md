@@ -2,9 +2,10 @@
 navigation: transparent
 ---
 
-# Approximate Kantorovich duality… to The Schachermayer--Teichmann…
+# Approximate Kantorovich duality… to Rockafellar's theorem
 
 - [Approximate Kantorovich duality on compact spaces](approximate-kantorovich-duality-on-compact-space.md)
+- [Beiglböck--Léonard--Schachermayer relaxed Kantorovich duality over integrable potentials](beiglbock-leonard-schachermayer-relaxed-kantorov.md)
 - [The Benamou–Brenier upper bound](the-benamou-brenier-upper-bound.md)
 - [The Bonnet–Myers diameter bound under `MCP(K, N)`](the-bonnet-myers-diameter-bound-under-mcp-k-n.md)
 - [Bounded-Lipschitz duality in supremum form](bounded-lipschitz-duality-in-supremum-form.md)
@@ -23,4 +24,3 @@ navigation: transparent
 - [Prokhorov's theorem for multi-couplings](prokhorovs-theorem-for-multi-couplings.md)
 - [The Pythagorean identity of the Schrödinger problem](the-pythagorean-identity-of-the-schrodinger-prob.md)
 - [Rockafellar's theorem](rockafellars-theorem.md)
-- [The Schachermayer--Teichmann theorem](the-schachermayer-teichmann-theorem.md)

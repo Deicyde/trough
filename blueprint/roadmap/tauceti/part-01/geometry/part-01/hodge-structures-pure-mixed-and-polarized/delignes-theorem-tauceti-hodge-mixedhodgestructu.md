@@ -30,5 +30,5 @@ Formalized in Tau Ceti as [`TauCeti.Hodge.MixedHodgeStructure.isInternal_deligne
 ## Sources
 
 - [Tau Ceti documentation: `TauCeti.Hodge.MixedHodgeStructure.isInternal_deligneSplittingFamily`](https://taucetiproject.org/docs/TauCeti/Geometry/Hodge/Mixed/Decomposition.html#TauCeti.Hodge.MixedHodgeStructure.isInternal_deligneSplittingFamily)
-- [Source of `TauCeti.Hodge.MixedHodgeStructure.isInternal_deligneSplittingFamily` in TauCeti/Geometry/Hodge/Mixed/Decomposition.lean](https://github.com/TauCetiProject/TauCeti/blob/a6027b1d24fcb935c53bd5b50d11b40991cda418/TauCeti/Geometry/Hodge/Mixed/Decomposition.lean#L537)
-- [Tau Ceti roadmap status: Hodge structures (pure, mixed, and polarized)](https://github.com/TauCetiProject/TauCetiRoadmap/blob/9f7c032adaf1b838e8183d63ff3cfa886d061cb3/Completed/HodgeStructures/STATUS.md)
+- [Source of `TauCeti.Hodge.MixedHodgeStructure.isInternal_deligneSplittingFamily` in TauCeti/Geometry/Hodge/Mixed/Decomposition.lean](https://github.com/TauCetiProject/TauCeti/blob/cd41bffcb343151b3e58c89392e206b11fe78c1c/TauCeti/Geometry/Hodge/Mixed/Decomposition.lean#L537)
+- [Tau Ceti roadmap status: Hodge structures (pure, mixed, and polarized)](https://github.com/TauCetiProject/TauCetiRoadmap/blob/612845ab80fb9c2b9bee724a156756ee78031591/Completed/HodgeStructures/STATUS.md)

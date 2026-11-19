@@ -376,3 +376,4 @@ theorem liftM_comp {m : Type u → Type w} [Monad m] [LawfulMonad m]
 ## Sources
 
 - [Cslib/Foundations/Control/Monad/Free.lean at 86d560b6](https://github.com/leanprover/cslib/blob/86d560b6cbb379bd82512424cbcd2a915a1565e7/Cslib/Foundations/Control/Monad/Free.lean)
+- [Declaration ledger](../../../../../sources/cslib/Cslib.Foundations.Control.Monad.Free.json)

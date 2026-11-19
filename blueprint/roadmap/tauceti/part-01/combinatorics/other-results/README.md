@@ -1,7 +1,8 @@
 # Other results
 
-Results named in the rest of Tau Ceti's `TauCeti.Combinatorics` modules and in no roadmap's section, as Tau Ceti has them at commit [a6027b1d](https://github.com/TauCetiProject/TauCeti/tree/a6027b1d24fcb935c53bd5b50d11b40991cda418).
+Results named in the rest of Tau Ceti's `TauCeti.Combinatorics` modules and in no roadmap's section, as Tau Ceti has them at commit [cd41bffc](https://github.com/TauCetiProject/TauCeti/tree/cd41bffcb343151b3e58c89392e206b11fe78c1c).
 
+- [Cauchy–Schwarz on a resolved witness](cauchy-schwarz-on-a-resolved-witness.md)
 - [The Frobenius determinant formula](the-frobenius-determinant-formula.md)
 - [Hall's theorem for expanding sets](halls-theorem-for-expanding-sets.md)
 - [Hoeffding's inequality for a color count](hoeffdings-inequality-for-a-color-count.md)
@@ -10,4 +11,3 @@ Results named in the rest of Tau Ceti's `TauCeti.Combinatorics` modules and in n
 - [The Riemann–Hurwitz inequality for a block quotient](the-riemann-hurwitz-inequality-for-a-block-quoti.md)
 - [Schützenberger's symmetry theorem](schutzenbergers-symmetry-theorem.md)
 - [Vertex-capacitated Menger's theorem for a digraph](vertex-capacitated-mengers-theorem-for-a-digraph.md)
-- [Whitney's theorem with prescribed initial cycle](whitneys-theorem-with-prescribed-initial-cycle.md)

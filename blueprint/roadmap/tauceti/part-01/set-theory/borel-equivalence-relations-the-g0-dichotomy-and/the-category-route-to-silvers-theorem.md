@@ -28,7 +28,7 @@ Setoid.hasCantorAntichainOn_range_of_forall_gSGraph_adj.{u_1} {X : Type u_1} {S 
 
 - [The Kuratowski–Ulam theorem](the-kuratowski-ulam-theorem.md)
 - [Miller's independence lemma](../descriptive/millers-independence-lemma.md)
-- [Mycielski's theorem](../../topology/other-results/mycielskis-theorem.md)
+- [Mycielski's theorem](../../../part-02/topology/other-results/mycielskis-theorem.md)
 
 ## Lean
 
@@ -37,5 +37,5 @@ Formalized in Tau Ceti as [`Setoid.hasCantorAntichainOn_range_of_forall_gSGraph_
 ## Sources
 
 - [Tau Ceti documentation: `Setoid.hasCantorAntichainOn_range_of_forall_gSGraph_adj`](https://taucetiproject.org/docs/TauCeti/SetTheory/Descriptive/Silver.html#Setoid.hasCantorAntichainOn_range_of_forall_gSGraph_adj)
-- [Source of `Setoid.hasCantorAntichainOn_range_of_forall_gSGraph_adj` in TauCeti/SetTheory/Descriptive/Silver.lean](https://github.com/TauCetiProject/TauCeti/blob/a6027b1d24fcb935c53bd5b50d11b40991cda418/TauCeti/SetTheory/Descriptive/Silver.lean#L112)
-- [Tau Ceti roadmap status: Borel equivalence relations, the G₀ dichotomy and Silver's theorem](https://github.com/TauCetiProject/TauCetiRoadmap/blob/9f7c032adaf1b838e8183d63ff3cfa886d061cb3/TauCetiRoadmap/BorelEquivalenceRelations/STATUS.md)
+- [Source of `Setoid.hasCantorAntichainOn_range_of_forall_gSGraph_adj` in TauCeti/SetTheory/Descriptive/Silver.lean](https://github.com/TauCetiProject/TauCeti/blob/cd41bffcb343151b3e58c89392e206b11fe78c1c/TauCeti/SetTheory/Descriptive/Silver.lean#L112)
+- [Tau Ceti roadmap status: Borel equivalence relations, the G₀ dichotomy and Silver's theorem](https://github.com/TauCetiProject/TauCetiRoadmap/blob/612845ab80fb9c2b9bee724a156756ee78031591/TauCetiRoadmap/BorelEquivalenceRelations/STATUS.md)

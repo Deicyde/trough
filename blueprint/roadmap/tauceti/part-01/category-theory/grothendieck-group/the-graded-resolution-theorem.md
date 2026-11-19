@@ -57,4 +57,4 @@ TauCeti.GradedExactStructure.IsResolving.laurentResolutionEquiv.{w, v, u} {C : T
 ## Sources
 
 - [Tau Ceti documentation: `TauCeti.GradedExactStructure.laurentResolutionEquiv`](https://taucetiproject.org/docs/TauCeti/CategoryTheory/GrothendieckGroup/Laurent/Resolution.html#TauCeti.GradedExactStructure.laurentResolutionEquiv)
-- [Source of `TauCeti.GradedExactStructure.laurentResolutionEquiv` in TauCeti/CategoryTheory/GrothendieckGroup/Laurent/Resolution.lean](https://github.com/TauCetiProject/TauCeti/blob/a6027b1d24fcb935c53bd5b50d11b40991cda418/TauCeti/CategoryTheory/GrothendieckGroup/Laurent/Resolution.lean#L118)
+- [Source of `TauCeti.GradedExactStructure.laurentResolutionEquiv` in TauCeti/CategoryTheory/GrothendieckGroup/Laurent/Resolution.lean](https://github.com/TauCetiProject/TauCeti/blob/cd41bffcb343151b3e58c89392e206b11fe78c1c/TauCeti/CategoryTheory/GrothendieckGroup/Laurent/Resolution.lean#L118)

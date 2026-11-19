@@ -28,4 +28,4 @@ Formalized in Tau Ceti as [`TauCeti.simplyConnectedSpace_of_interior_union`](htt
 ## Sources
 
 - [Tau Ceti documentation: `TauCeti.simplyConnectedSpace_of_interior_union`](https://taucetiproject.org/docs/TauCeti/AlgebraicTopology/FundamentalGroup/VanKampen/Basic.html#TauCeti.simplyConnectedSpace_of_interior_union)
-- [Source of `TauCeti.simplyConnectedSpace_of_interior_union` in TauCeti/AlgebraicTopology/FundamentalGroup/VanKampen/Basic.lean](https://github.com/TauCetiProject/TauCeti/blob/a6027b1d24fcb935c53bd5b50d11b40991cda418/TauCeti/AlgebraicTopology/FundamentalGroup/VanKampen/Basic.lean#L481)
+- [Source of `TauCeti.simplyConnectedSpace_of_interior_union` in TauCeti/AlgebraicTopology/FundamentalGroup/VanKampen/Basic.lean](https://github.com/TauCetiProject/TauCeti/blob/cd41bffcb343151b3e58c89392e206b11fe78c1c/TauCeti/AlgebraicTopology/FundamentalGroup/VanKampen/Basic.lean#L481)

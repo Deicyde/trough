@@ -34,7 +34,7 @@ Its statement uses no other declaration mapped here.
 
 ## Proof depends on
 
-- [The Poincaré–Wirtinger inequality on `H¹(M)`](../part-02/the-poincare-wirtinger-inequality-on-h1-m.md)
+- [The Poincaré–Wirtinger inequality on `H¹(M)`](../part-03/the-poincare-wirtinger-inequality-on-h1-m.md)
 
 ## Lean
 
@@ -43,4 +43,4 @@ Formalized in Tau Ceti as [`TauCeti.Manifold.exists_integral_sq_sub_average_le_m
 ## Sources
 
 - [Tau Ceti documentation: `TauCeti.Manifold.exists_integral_sq_sub_average_le_mul_integral_norm_sq_mgradient`](https://taucetiproject.org/docs/TauCeti/Geometry/Manifold/Riemannian/Poincare.html#TauCeti.Manifold.exists_integral_sq_sub_average_le_mul_integral_norm_sq_mgradient)
-- [Source of `TauCeti.Manifold.exists_integral_sq_sub_average_le_mul_integral_norm_sq_mgradient` in TauCeti/Geometry/Manifold/Riemannian/Poincare.lean](https://github.com/TauCetiProject/TauCeti/blob/a6027b1d24fcb935c53bd5b50d11b40991cda418/TauCeti/Geometry/Manifold/Riemannian/Poincare.lean#L195)
+- [Source of `TauCeti.Manifold.exists_integral_sq_sub_average_le_mul_integral_norm_sq_mgradient` in TauCeti/Geometry/Manifold/Riemannian/Poincare.lean](https://github.com/TauCetiProject/TauCeti/blob/cd41bffcb343151b3e58c89392e206b11fe78c1c/TauCeti/Geometry/Manifold/Riemannian/Poincare.lean#L195)

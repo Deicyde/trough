@@ -1,7 +1,7 @@
 ---
 declaration: theorem
 origin: cited
-lean: TauCeti.SmoothForm.integralTopForm_inner_codifferential_mextDeriv, TauCeti.SmoothForm.integralTopForm_inner_mextDeriv_codifferential, TauCeti.SmoothForm.mextDeriv_wedge_hodgeStar
+lean: TauCeti.SmoothForm.integralTopForm_inner_codifferential_mextDeriv, TauCeti.integralTopForm_inner_wittenExtDerivₗ_wittenCodifferential, TauCeti.integralTopForm_inner_wittenCodifferential_wittenExtDerivₗ, TauCeti.SmoothForm.integralTopForm_inner_mextDeriv_codifferential, TauCeti.SmoothForm.mextDeriv_wedge_hodgeStar
 statement: formalized
 proof: formalized
 ---
@@ -37,15 +37,63 @@ TauCeti.SmoothForm.integralTopForm_inner_codifferential_mextDeriv.{u_1, u_2, u_3
 
 - [TauCeti.SmoothForm.hodgeStar](tauceti-smoothform-hodgestar.md)
 
-## Proof depends on
-
-- [Orientation.hodgeStar](../../../analysis/part-01/four-dimensional-seiberg-witten-theory/orientation-hodgestar.md)
-
 ## Lean
 
 Formalized in Tau Ceti as [`TauCeti.SmoothForm.integralTopForm_inner_codifferential_mextDeriv`](https://taucetiproject.org/docs/TauCeti/Geometry/Manifold/Riemannian/Codifferential.html#TauCeti.SmoothForm.integralTopForm_inner_codifferential_mextDeriv).
 
 ## Other forms
+
+**Green's formula for `d_t d_t^*`.** Formalized in Tau Ceti as [`TauCeti.integralTopForm_inner_wittenExtDerivₗ_wittenCodifferential`](https://taucetiproject.org/docs/TauCeti/Geometry/Manifold/Riemannian/WittenLaplacian.html#TauCeti.integralTopForm_inner_wittenExtDeriv%E2%82%97_wittenCodifferential).
+
+```lean
+TauCeti.integralTopForm_inner_wittenExtDerivₗ_wittenCodifferential.{u_1, u_2, u_3} {E : Type u_1}
+  {H : Type u_2} {M : Type u_3} [NormedAddCommGroup E] [NormedSpace ℝ E] [TopologicalSpace H]
+  {I : ModelWithCorners ℝ E H} [TopologicalSpace M] [ChartedSpace H M] [FiniteDimensional ℝ E]
+  [IsManifold I (↑⊤) M] [Bundle.RiemannianBundle fun x => TangentSpace I x]
+  [IsContMDiffRiemannianBundle I (↑⊤) E fun x => TangentSpace I x] {m k l : ℕ}
+  [BoundarylessManifold I M] [T2Space M] [SigmaCompactSpace M]
+  (o : TauCeti.Manifold.Orientation I M (Fin m))
+  (f : ContMDiffMap I (modelWithCornersSelf ℝ ℝ) M ℝ ↑⊤) (t : ℝ) (hkl : k + 1 + l = m)
+  (α β : TauCeti.SmoothForm I M ℝ (k + 1))
+  (h :
+    α ∈ TauCeti.compactlySupportedForms I M (k + 1) ∨
+      β ∈ TauCeti.compactlySupportedForms I M (k + 1)) :
+  (TauCeti.integralTopForm o fun x =>
+      ((TauCeti.alternatingFormInner (TangentSpace I x) (k + 1))
+            (↑((TauCeti.wittenExtDerivₗ f t k) ((TauCeti.wittenCodifferential o f t hkl) α)) x))
+          (↑β x) •
+        TauCeti.riemannianVolumeForm o x) =
+    TauCeti.integralTopForm o fun x =>
+      ((TauCeti.alternatingFormInner (TangentSpace I x) k)
+            (↑((TauCeti.wittenCodifferential o f t hkl) α) x))
+          (↑((TauCeti.wittenCodifferential o f t hkl) β) x) •
+        TauCeti.riemannianVolumeForm o x
+```
+
+**Green's formula for `d_t^* d_t`.** Formalized in Tau Ceti as [`TauCeti.integralTopForm_inner_wittenCodifferential_wittenExtDerivₗ`](https://taucetiproject.org/docs/TauCeti/Geometry/Manifold/Riemannian/WittenLaplacian.html#TauCeti.integralTopForm_inner_wittenCodifferential_wittenExtDeriv%E2%82%97).
+
+```lean
+TauCeti.integralTopForm_inner_wittenCodifferential_wittenExtDerivₗ.{u_1, u_2, u_3} {E : Type u_1}
+  {H : Type u_2} {M : Type u_3} [NormedAddCommGroup E] [NormedSpace ℝ E] [TopologicalSpace H]
+  {I : ModelWithCorners ℝ E H} [TopologicalSpace M] [ChartedSpace H M] [FiniteDimensional ℝ E]
+  [IsManifold I (↑⊤) M] [Bundle.RiemannianBundle fun x => TangentSpace I x]
+  [IsContMDiffRiemannianBundle I (↑⊤) E fun x => TangentSpace I x] {m k l : ℕ}
+  [BoundarylessManifold I M] [T2Space M] [SigmaCompactSpace M]
+  (o : TauCeti.Manifold.Orientation I M (Fin m))
+  (f : ContMDiffMap I (modelWithCornersSelf ℝ ℝ) M ℝ ↑⊤) (t : ℝ) (hkl : k + 1 + l = m)
+  (α β : TauCeti.SmoothForm I M ℝ k)
+  (h : α ∈ TauCeti.compactlySupportedForms I M k ∨ β ∈ TauCeti.compactlySupportedForms I M k) :
+  (TauCeti.integralTopForm o fun x =>
+      ((TauCeti.alternatingFormInner (TangentSpace I x) k)
+            (↑((TauCeti.wittenCodifferential o f t hkl) ((TauCeti.wittenExtDerivₗ f t k) α)) x))
+          (↑β x) •
+        TauCeti.riemannianVolumeForm o x) =
+    TauCeti.integralTopForm o fun x =>
+      ((TauCeti.alternatingFormInner (TangentSpace I x) (k + 1))
+            (↑((TauCeti.wittenExtDerivₗ f t k) α) x))
+          (↑((TauCeti.wittenExtDerivₗ f t k) β) x) •
+        TauCeti.riemannianVolumeForm o x
+```
 
 **Green's formula for `dd*`.** Formalized in Tau Ceti as [`TauCeti.SmoothForm.integralTopForm_inner_mextDeriv_codifferential`](https://taucetiproject.org/docs/TauCeti/Geometry/Manifold/Riemannian/Codifferential.html#TauCeti.SmoothForm.integralTopForm_inner_mextDeriv_codifferential).
 
@@ -98,4 +146,4 @@ TauCeti.SmoothForm.mextDeriv_wedge_hodgeStar.{u_1, u_2, u_3} {E : Type u_1} {H :
 ## Sources
 
 - [Tau Ceti documentation: `TauCeti.SmoothForm.integralTopForm_inner_codifferential_mextDeriv`](https://taucetiproject.org/docs/TauCeti/Geometry/Manifold/Riemannian/Codifferential.html#TauCeti.SmoothForm.integralTopForm_inner_codifferential_mextDeriv)
-- [Source of `TauCeti.SmoothForm.integralTopForm_inner_codifferential_mextDeriv` in TauCeti/Geometry/Manifold/Riemannian/Codifferential.lean](https://github.com/TauCetiProject/TauCeti/blob/a6027b1d24fcb935c53bd5b50d11b40991cda418/TauCeti/Geometry/Manifold/Riemannian/Codifferential.lean#L524)
+- [Source of `TauCeti.SmoothForm.integralTopForm_inner_codifferential_mextDeriv` in TauCeti/Geometry/Manifold/Riemannian/Codifferential.lean](https://github.com/TauCetiProject/TauCeti/blob/cd41bffcb343151b3e58c89392e206b11fe78c1c/TauCeti/Geometry/Manifold/Riemannian/Codifferential.lean#L1063)

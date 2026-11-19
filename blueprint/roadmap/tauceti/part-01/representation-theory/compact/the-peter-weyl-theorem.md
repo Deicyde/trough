@@ -58,4 +58,4 @@ TauCeti.stdPeterWeylBasis.{u_1, u_2} (ğ•œ : Type u_1) (G : Type u_2) [RCLike ğ
 ## Sources
 
 - [Tau Ceti documentation: `TauCeti.peterWeylBasis`](https://taucetiproject.org/docs/TauCeti/RepresentationTheory/Compact/PeterWeyl.html#TauCeti.peterWeylBasis)
-- [Source of `TauCeti.peterWeylBasis` in TauCeti/RepresentationTheory/Compact/PeterWeyl.lean](https://github.com/TauCetiProject/TauCeti/blob/a6027b1d24fcb935c53bd5b50d11b40991cda418/TauCeti/RepresentationTheory/Compact/PeterWeyl.lean#L513)
+- [Source of `TauCeti.peterWeylBasis` in TauCeti/RepresentationTheory/Compact/PeterWeyl.lean](https://github.com/TauCetiProject/TauCeti/blob/cd41bffcb343151b3e58c89392e206b11fe78c1c/TauCeti/RepresentationTheory/Compact/PeterWeyl.lean#L513)

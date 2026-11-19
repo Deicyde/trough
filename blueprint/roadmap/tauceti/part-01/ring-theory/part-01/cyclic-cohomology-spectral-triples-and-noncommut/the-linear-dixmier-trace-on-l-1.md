@@ -23,10 +23,10 @@ Its statement uses no other declaration mapped here.
 
 ## Proof depends on
 
-- [Ky Fan triangle inequality](../../../analysis/part-03/operator-ideal/ky-fan-triangle-inequality.md)
-- [Ky Fan two-sided ideal inequality](../../../analysis/part-03/operator-ideal/ky-fan-two-sided-ideal-inequality.md)
-- [Ky Fan's maximum principle](../../../analysis/part-03/operator-ideal/ky-fans-maximum-principle.md)
-- [TauCeti.Complexification](../../../analysis/part-01/one-parameter-semigroups-completely-monotone-and/tauceti-complexification.md)
+- [Ky Fan triangle inequality](../../../analysis/part-04/operator-ideal/ky-fan-triangle-inequality.md)
+- [Ky Fan two-sided ideal inequality](../../../analysis/part-04/operator-ideal/ky-fan-two-sided-ideal-inequality.md)
+- [Ky Fan's maximum principle](../../../analysis/part-04/operator-ideal/ky-fans-maximum-principle.md)
+- [TauCeti.Complexification](../../../analysis/part-02/one-parameter-semigroups-completely-monotone-and/tauceti-complexification.md)
 
 ## Lean
 
@@ -35,5 +35,5 @@ Formalized in Tau Ceti as [`TauCeti.linearDixmierTrace`](https://taucetiproject.
 ## Sources
 
 - [Tau Ceti documentation: `TauCeti.linearDixmierTrace`](https://taucetiproject.org/docs/TauCeti/Analysis/OperatorIdeal/Family/DixmierTrace/Linear.html#TauCeti.linearDixmierTrace)
-- [Source of `TauCeti.linearDixmierTrace` in TauCeti/Analysis/OperatorIdeal/Family/DixmierTrace/Linear.lean](https://github.com/TauCetiProject/TauCeti/blob/a6027b1d24fcb935c53bd5b50d11b40991cda418/TauCeti/Analysis/OperatorIdeal/Family/DixmierTrace/Linear.lean#L448)
-- [Tau Ceti roadmap status: Cyclic cohomology, spectral triples and noncommutative tori](https://github.com/TauCetiProject/TauCetiRoadmap/blob/9f7c032adaf1b838e8183d63ff3cfa886d061cb3/TauCetiRoadmap/NoncommutativeGeometry/STATUS.md)
+- [Source of `TauCeti.linearDixmierTrace` in TauCeti/Analysis/OperatorIdeal/Family/DixmierTrace/Linear.lean](https://github.com/TauCetiProject/TauCeti/blob/cd41bffcb343151b3e58c89392e206b11fe78c1c/TauCeti/Analysis/OperatorIdeal/Family/DixmierTrace/Linear.lean#L448)
+- [Tau Ceti roadmap status: Cyclic cohomology, spectral triples and noncommutative tori](https://github.com/TauCetiProject/TauCetiRoadmap/blob/612845ab80fb9c2b9bee724a156756ee78031591/TauCetiRoadmap/NoncommutativeGeometry/STATUS.md)

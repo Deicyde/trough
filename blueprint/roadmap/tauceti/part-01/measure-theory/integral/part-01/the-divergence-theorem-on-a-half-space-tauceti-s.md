@@ -28,7 +28,7 @@ Its statement uses no other declaration mapped here.
 
 ## Proof depends on
 
-- [The divergence theorem on a half-space (`TauCeti.setIntegral_normalHalfSpace_fderiv_apply`)](../../../analysis/part-03/sobolev/part-01/the-divergence-theorem-on-a-half-space-tauceti-s.md)
+- [The divergence theorem on a half-space (`TauCeti.setIntegral_normalHalfSpace_fderiv_apply`)](../../../analysis/part-04/sobolev/part-01/the-divergence-theorem-on-a-half-space-tauceti-s.md)
 
 ## Lean
 
@@ -51,4 +51,4 @@ TauCeti.setIntegral_setOf_inner_lt_fderiv_apply.{u_1} {F : Type u_1} [NormedAddC
 ## Sources
 
 - [Tau Ceti documentation: `TauCeti.setIntegral_setOf_inner_lt_trace_fderiv`](https://taucetiproject.org/docs/TauCeti/MeasureTheory/Integral/DivergenceTheorem/InnerHalfSpace.html#TauCeti.setIntegral_setOf_inner_lt_trace_fderiv)
-- [Source of `TauCeti.setIntegral_setOf_inner_lt_trace_fderiv` in TauCeti/MeasureTheory/Integral/DivergenceTheorem/InnerHalfSpace.lean](https://github.com/TauCetiProject/TauCeti/blob/a6027b1d24fcb935c53bd5b50d11b40991cda418/TauCeti/MeasureTheory/Integral/DivergenceTheorem/InnerHalfSpace.lean#L100)
+- [Source of `TauCeti.setIntegral_setOf_inner_lt_trace_fderiv` in TauCeti/MeasureTheory/Integral/DivergenceTheorem/InnerHalfSpace.lean](https://github.com/TauCetiProject/TauCeti/blob/cd41bffcb343151b3e58c89392e206b11fe78c1c/TauCeti/MeasureTheory/Integral/DivergenceTheorem/InnerHalfSpace.lean#L100)

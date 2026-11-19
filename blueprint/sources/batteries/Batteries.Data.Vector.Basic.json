@@ -1,0 +1,19 @@
+{
+ "schema": "trough-ledger/v1",
+ "library": "Batteries",
+ "repo": "leanprover-community/batteries",
+ "rev": "b4b25a3886a16daacaf6615c2eea7170a6e8f458",
+ "module": "Batteries.Data.Vector.Basic",
+ "file": "Batteries/Data/Vector/Basic.lean",
+ "public": [
+  {"name": "Vector.allDiff", "kind": "def", "line": 23},
+  {"name": "Vector.uset", "kind": "def", "line": 30},
+  {"name": "Vector.scanlM", "kind": "def", "line": 75},
+  {"name": "Vector.scanrM", "kind": "def", "line": 120},
+  {"name": "Vector.scanl", "kind": "def", "line": 137},
+  {"name": "Vector.scanr", "kind": "def", "line": 144}
+ ],
+ "private": [],
+ "missing": [],
+ "unread": "Unnamed instances, the names an `alias ⟨…⟩` command gives, and the names Lean generates for a declaration (constructors, recursors, derived instances) are not read from the source, so they are not listed."
+}

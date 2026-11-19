@@ -35,4 +35,4 @@ Formalized in Tau Ceti as [`TauCeti.spechtSubrepresentation_le_or_le_orthogonal`
 ## Sources
 
 - [Tau Ceti documentation: `TauCeti.spechtSubrepresentation_le_or_le_orthogonal`](https://taucetiproject.org/docs/TauCeti/RepresentationTheory/Symmetric/Specht/SubmoduleTheorem.html#TauCeti.spechtSubrepresentation_le_or_le_orthogonal)
-- [Source of `TauCeti.spechtSubrepresentation_le_or_le_orthogonal` in TauCeti/RepresentationTheory/Symmetric/Specht/SubmoduleTheorem.lean](https://github.com/TauCetiProject/TauCeti/blob/a6027b1d24fcb935c53bd5b50d11b40991cda418/TauCeti/RepresentationTheory/Symmetric/Specht/SubmoduleTheorem.lean#L200)
+- [Source of `TauCeti.spechtSubrepresentation_le_or_le_orthogonal` in TauCeti/RepresentationTheory/Symmetric/Specht/SubmoduleTheorem.lean](https://github.com/TauCetiProject/TauCeti/blob/cd41bffcb343151b3e58c89392e206b11fe78c1c/TauCeti/RepresentationTheory/Symmetric/Specht/SubmoduleTheorem.lean#L200)

@@ -30,7 +30,7 @@ Its statement uses no other declaration mapped here.
 
 ## Proof depends on
 
-- [Schur's lemma, vanishing form](../../ring-theory/part-01/semisimple/schurs-lemma-vanishing-form.md)
+- [Schur's lemma, vanishing form](../../ring-theory/part-02/semisimple/schurs-lemma-vanishing-form.md)
 
 ## Lean
 
@@ -69,4 +69,4 @@ Representation.char_eq_zero_or_exists_apply_eq_smul.{u_1, u_2} {G : Type u_1} {V
 ## Sources
 
 - [Tau Ceti documentation: `Representation.char_eq_zero_or_norm_char_eq_finrank`](https://taucetiproject.org/docs/TauCeti/RepresentationTheory/CharacterTable/Vanishing.html#Representation.char_eq_zero_or_norm_char_eq_finrank)
-- [Source of `Representation.char_eq_zero_or_norm_char_eq_finrank` in TauCeti/RepresentationTheory/CharacterTable/Vanishing.lean](https://github.com/TauCetiProject/TauCeti/blob/a6027b1d24fcb935c53bd5b50d11b40991cda418/TauCeti/RepresentationTheory/CharacterTable/Vanishing.lean#L127)
+- [Source of `Representation.char_eq_zero_or_norm_char_eq_finrank` in TauCeti/RepresentationTheory/CharacterTable/Vanishing.lean](https://github.com/TauCetiProject/TauCeti/blob/cd41bffcb343151b3e58c89392e206b11fe78c1c/TauCeti/RepresentationTheory/CharacterTable/Vanishing.lean#L127)

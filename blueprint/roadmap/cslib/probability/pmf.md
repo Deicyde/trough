@@ -11,7 +11,8 @@ proof: formalized
 
 > ## NB: This module is temporary
 >
-> …
+> The bind/pure and posterior lemmas here have no dependence on any domain-specific
+> structure. …
 >
 > The uniform samplers retain the PMF interface removed in
 > [mathlib#42909](https://github.com/leanprover-community/mathlib4/pull/42909),
@@ -150,3 +151,4 @@ Its statements use no other CSLib module's declarations.
 ## Sources
 
 - [Cslib/Probability/PMF.lean at 86d560b6](https://github.com/leanprover/cslib/blob/86d560b6cbb379bd82512424cbcd2a915a1565e7/Cslib/Probability/PMF.lean)
+- [Declaration ledger](../../../sources/cslib/Cslib.Probability.PMF.json)

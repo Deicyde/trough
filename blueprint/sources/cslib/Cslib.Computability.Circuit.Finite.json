@@ -1,0 +1,23 @@
+{
+ "schema": "trough-ledger/v1",
+ "library": "CSLib",
+ "repo": "leanprover/cslib",
+ "rev": "86d560b6cbb379bd82512424cbcd2a915a1565e7",
+ "module": "Cslib.Computability.Circuit.Finite",
+ "file": "Cslib/Computability/Circuit/Finite.lean",
+ "public": [
+  {"name": "Cslib.Circuits.Line.instFinite", "kind": "instance", "line": 33},
+  {"name": "Cslib.Circuits.Program.instFinite", "kind": "instance", "line": 36},
+  {"name": "Cslib.Circuits.Line.card", "kind": "theorem", "line": 43},
+  {"name": "Cslib.Circuits.Line.card_le", "kind": "theorem", "line": 51},
+  {"name": "Cslib.Circuits.Program.card_zero", "kind": "theorem", "line": 65},
+  {"name": "Cslib.Circuits.Program.card_succ", "kind": "theorem", "line": 71},
+  {"name": "Cslib.Circuits.Program.card", "kind": "theorem", "line": 77},
+  {"name": "Cslib.Circuits.FullOp.equiv", "kind": "def", "line": 87},
+  {"name": "Cslib.Circuits.FullOp.card", "kind": "theorem", "line": 101},
+  {"name": "Cslib.Circuits.Line.card_full", "kind": "theorem", "line": 111}
+ ],
+ "private": [],
+ "missing": [],
+ "unread": "Unnamed instances, the names an `alias ⟨…⟩` command gives, and the names Lean generates for a declaration (constructors, recursors, derived instances) are not read from the source, so they are not listed."
+}

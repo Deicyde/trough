@@ -44,4 +44,4 @@ Seminorm.seminorm_le_integral_seminorm_sum_smul_rademacher.{u_1, u_2, u_3} {Ω :
 ## Sources
 
 - [Tau Ceti documentation: `Finset.norm_le_integral_norm_sum_smul_rademacher`](https://taucetiproject.org/docs/TauCeti/Probability/Distributions/Rademacher/Norm.html#Finset.norm_le_integral_norm_sum_smul_rademacher)
-- [Source of `Finset.norm_le_integral_norm_sum_smul_rademacher` in TauCeti/Probability/Distributions/Rademacher/Norm.lean](https://github.com/TauCetiProject/TauCeti/blob/a6027b1d24fcb935c53bd5b50d11b40991cda418/TauCeti/Probability/Distributions/Rademacher/Norm.lean#L161)
+- [Source of `Finset.norm_le_integral_norm_sum_smul_rademacher` in TauCeti/Probability/Distributions/Rademacher/Norm.lean](https://github.com/TauCetiProject/TauCeti/blob/cd41bffcb343151b3e58c89392e206b11fe78c1c/TauCeti/Probability/Distributions/Rademacher/Norm.lean#L161)

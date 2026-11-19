@@ -32,5 +32,5 @@ Formalized in Tau Ceti as [`TauCeti.GridLink.unknottingNumber_toGridLink_torusLi
 ## Sources
 
 - [Tau Ceti documentation: `TauCeti.GridLink.unknottingNumber_toGridLink_torusLink_le`](https://taucetiproject.org/docs/TauCeti/KnotTheory/Grid/TorusLink/UnknottingNumber.html#TauCeti.GridLink.unknottingNumber_toGridLink_torusLink_le)
-- [Source of `TauCeti.GridLink.unknottingNumber_toGridLink_torusLink_le` in TauCeti/KnotTheory/Grid/TorusLink/UnknottingNumber.lean](https://github.com/TauCetiProject/TauCeti/blob/a6027b1d24fcb935c53bd5b50d11b40991cda418/TauCeti/KnotTheory/Grid/TorusLink/UnknottingNumber.lean#L300)
-- [Tau Ceti roadmap status: Combinatorial Heegaard Floer and grid homology](https://github.com/TauCetiProject/TauCetiRoadmap/blob/9f7c032adaf1b838e8183d63ff3cfa886d061cb3/TauCetiRoadmap/CombinatorialHeegaardFloer/STATUS.md)
+- [Source of `TauCeti.GridLink.unknottingNumber_toGridLink_torusLink_le` in TauCeti/KnotTheory/Grid/TorusLink/UnknottingNumber.lean](https://github.com/TauCetiProject/TauCeti/blob/cd41bffcb343151b3e58c89392e206b11fe78c1c/TauCeti/KnotTheory/Grid/TorusLink/UnknottingNumber.lean#L299)
+- [Tau Ceti roadmap status: Combinatorial Heegaard Floer and grid homology](https://github.com/TauCetiProject/TauCetiRoadmap/blob/612845ab80fb9c2b9bee724a156756ee78031591/TauCetiRoadmap/CombinatorialHeegaardFloer/STATUS.md)

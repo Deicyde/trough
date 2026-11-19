@@ -30,4 +30,4 @@ Formalized in Tau Ceti as [`MeasureTheory.exists_ne_zero_int_vec_mem_of_two_pow_
 ## Sources
 
 - [Tau Ceti documentation: `MeasureTheory.exists_ne_zero_int_vec_mem_of_two_pow_le_volume`](https://taucetiproject.org/docs/TauCeti/MeasureTheory/Group/GeometryOfNumbers.html#MeasureTheory.exists_ne_zero_int_vec_mem_of_two_pow_le_volume)
-- [Source of `MeasureTheory.exists_ne_zero_int_vec_mem_of_two_pow_le_volume` in TauCeti/MeasureTheory/Group/GeometryOfNumbers.lean](https://github.com/TauCetiProject/TauCeti/blob/a6027b1d24fcb935c53bd5b50d11b40991cda418/TauCeti/MeasureTheory/Group/GeometryOfNumbers.lean#L31)
+- [Source of `MeasureTheory.exists_ne_zero_int_vec_mem_of_two_pow_le_volume` in TauCeti/MeasureTheory/Group/GeometryOfNumbers.lean](https://github.com/TauCetiProject/TauCeti/blob/cd41bffcb343151b3e58c89392e206b11fe78c1c/TauCeti/MeasureTheory/Group/GeometryOfNumbers.lean#L31)

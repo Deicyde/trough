@@ -1,0 +1,27 @@
+{
+ "schema": "trough-ledger/v1",
+ "library": "CSLib",
+ "repo": "leanprover/cslib",
+ "rev": "86d560b6cbb379bd82512424cbcd2a915a1565e7",
+ "module": "Cslib.Foundations.Semantics.LTS.TraceEq",
+ "file": "Cslib/Foundations/Semantics/LTS/TraceEq.lean",
+ "public": [
+  {"name": "Cslib.LTS.IsSimulation.traces_subset", "kind": "theorem", "line": 41},
+  {"name": "Cslib.LTS.TraceEq", "kind": "def", "line": 48},
+  {"name": "Cslib.LTS.HomTraceEq", "kind": "abbrev", "line": 61},
+  {"name": "Cslib.LTS.HomTraceEq.refl", "kind": "theorem", "line": 67},
+  {"name": "Cslib.LTS.TraceEq.flip_eq", "kind": "theorem", "line": 69},
+  {"name": "Cslib.LTS.TraceEq.symm", "kind": "theorem", "line": 73},
+  {"name": "Cslib.LTS.TraceEq.trans", "kind": "theorem", "line": 77},
+  {"name": "Cslib.LTS.HomTraceEq.eqv", "kind": "theorem", "line": 81},
+  {"name": "Cslib.LTS.TraceEq.exists_mTr_of_mTr", "kind": "theorem", "line": 91},
+  {"name": "Cslib.LTS.TraceEq.exists_tr_of_tr", "kind": "theorem", "line": 97},
+  {"name": "Cslib.LTS.TraceEq.traceEq_of_tr_of_tr", "kind": "theorem", "line": 104},
+  {"name": "Cslib.LTS.Deterministic.isSimulation_traceEq", "kind": "theorem", "line": 111},
+  {"name": "Cslib.LTS.SimulationEquiv.traceEq", "kind": "theorem", "line": 119},
+  {"name": "Cslib.LTS.Deterministic.traceEq_iff_simulationEquiv", "kind": "theorem", "line": 124}
+ ],
+ "private": [],
+ "missing": [],
+ "unread": "Unnamed instances, the names an `alias ⟨…⟩` command gives, and the names Lean generates for a declaration (constructors, recursors, derived instances) are not read from the source, so they are not listed."
+}

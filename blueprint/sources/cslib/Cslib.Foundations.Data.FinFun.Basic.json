@@ -1,0 +1,32 @@
+{
+ "schema": "trough-ledger/v1",
+ "library": "CSLib",
+ "repo": "leanprover/cslib",
+ "rev": "86d560b6cbb379bd82512424cbcd2a915a1565e7",
+ "module": "Cslib.Foundations.Data.FinFun.Basic",
+ "file": "Cslib/Foundations/Data/FinFun/Basic.lean",
+ "public": [
+  {"name": "Cslib.FinFun", "kind": "structure", "line": 27},
+  {"name": "Cslib.FinFun.fromFun", "kind": "def", "line": 45},
+  {"name": "Cslib.FinFun.instFunLike", "kind": "instance", "line": 54},
+  {"name": "Cslib.FinFun.coe_fn", "kind": "theorem", "line": 61},
+  {"name": "Cslib.FinFun.coe_eq_fn", "kind": "theorem", "line": 64},
+  {"name": "Cslib.FinFun.ext", "kind": "theorem", "line": 69},
+  {"name": "Cslib.FinFun.mem_support_not_zero", "kind": "theorem", "line": 73},
+  {"name": "Cslib.FinFun.not_mem_support_zero", "kind": "theorem", "line": 77},
+  {"name": "Cslib.FinFun.eq_fields_eq", "kind": "theorem", "line": 82},
+  {"name": "Cslib.FinFun.fn_eq_eq", "kind": "theorem", "line": 88},
+  {"name": "Cslib.FinFun.congrFinFun", "kind": "theorem", "line": 92},
+  {"name": "Cslib.FinFun.fromFun_eq", "kind": "theorem", "line": 95},
+  {"name": "Cslib.FinFun.fromFun_fn", "kind": "theorem", "line": 100},
+  {"name": "Cslib.FinFun.fromFun_support", "kind": "theorem", "line": 106},
+  {"name": "Cslib.FinFun.fromFun_idem", "kind": "theorem", "line": 113},
+  {"name": "Cslib.FinFun.coe_fromFun_id", "kind": "theorem", "line": 119},
+  {"name": "Cslib.FinFun.fromFun_inter", "kind": "theorem", "line": 124},
+  {"name": "Cslib.FinFun.fromFun_comm", "kind": "theorem", "line": 130},
+  {"name": "Cslib.FinFun.instDecidableEq", "kind": "instance", "line": 136}
+ ],
+ "private": [],
+ "missing": [],
+ "unread": "Unnamed instances, the names an `alias ⟨…⟩` command gives, and the names Lean generates for a declaration (constructors, recursors, derived instances) are not read from the source, so they are not listed."
+}

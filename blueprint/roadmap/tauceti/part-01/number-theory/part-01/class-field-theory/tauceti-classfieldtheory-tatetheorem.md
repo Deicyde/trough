@@ -47,4 +47,4 @@ Formalized in Tau Ceti as [`TauCeti.ClassFieldTheory.tateTheorem`](https://tauce
 ## Sources
 
 - [Tau Ceti documentation: `TauCeti.ClassFieldTheory.tateTheorem`](https://taucetiproject.org/docs/TauCeti/NumberTheory/ClassFieldTheory/Formation/Tate/Theorem.html#TauCeti.ClassFieldTheory.tateTheorem)
-- [Source of `TauCeti.ClassFieldTheory.tateTheorem` in TauCeti/NumberTheory/ClassFieldTheory/Formation/Tate/Theorem.lean](https://github.com/TauCetiProject/TauCeti/blob/a6027b1d24fcb935c53bd5b50d11b40991cda418/TauCeti/NumberTheory/ClassFieldTheory/Formation/Tate/Theorem.lean#L112)
+- [Source of `TauCeti.ClassFieldTheory.tateTheorem` in TauCeti/NumberTheory/ClassFieldTheory/Formation/Tate/Theorem.lean](https://github.com/TauCetiProject/TauCeti/blob/cd41bffcb343151b3e58c89392e206b11fe78c1c/TauCeti/NumberTheory/ClassFieldTheory/Formation/Tate/Theorem.lean#L112)

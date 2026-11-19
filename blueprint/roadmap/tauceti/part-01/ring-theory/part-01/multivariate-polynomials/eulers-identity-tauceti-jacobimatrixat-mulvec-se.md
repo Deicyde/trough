@@ -29,4 +29,4 @@ Formalized in Tau Ceti as [`TauCeti.jacobiMatrixAt_mulVec_self`](https://tauceti
 ## Sources
 
 - [Tau Ceti documentation: `TauCeti.jacobiMatrixAt_mulVec_self`](https://taucetiproject.org/docs/TauCeti/RingTheory/MvPolynomial/Jacobian/Basic.html#TauCeti.jacobiMatrixAt_mulVec_self)
-- [Source of `TauCeti.jacobiMatrixAt_mulVec_self` in TauCeti/RingTheory/MvPolynomial/Jacobian/Basic.lean](https://github.com/TauCetiProject/TauCeti/blob/a6027b1d24fcb935c53bd5b50d11b40991cda418/TauCeti/RingTheory/MvPolynomial/Jacobian/Basic.lean#L88)
+- [Source of `TauCeti.jacobiMatrixAt_mulVec_self` in TauCeti/RingTheory/MvPolynomial/Jacobian/Basic.lean](https://github.com/TauCetiProject/TauCeti/blob/cd41bffcb343151b3e58c89392e206b11fe78c1c/TauCeti/RingTheory/MvPolynomial/Jacobian/Basic.lean#L88)

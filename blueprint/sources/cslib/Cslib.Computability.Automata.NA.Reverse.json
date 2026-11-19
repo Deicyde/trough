@@ -1,0 +1,21 @@
+{
+ "schema": "trough-ledger/v1",
+ "library": "CSLib",
+ "repo": "leanprover/cslib",
+ "rev": "86d560b6cbb379bd82512424cbcd2a915a1565e7",
+ "module": "Cslib.Computability.Automata.NA.Reverse",
+ "file": "Cslib/Computability/Automata/NA/Reverse.lean",
+ "public": [
+  {"name": "Cslib.Automata.NA.FinAcc.reverse", "kind": "def", "line": 38},
+  {"name": "Cslib.Automata.NA.FinAcc.reverse_reverse", "kind": "theorem", "line": 45},
+  {"name": "Cslib.Automata.NA.FinAcc.reverse_involutive", "kind": "theorem", "line": 48},
+  {"name": "Cslib.Automata.NA.FinAcc.reverse_start", "kind": "theorem", "line": 53},
+  {"name": "Cslib.Automata.NA.FinAcc.reverse_accept", "kind": "theorem", "line": 57},
+  {"name": "Cslib.Automata.NA.FinAcc.reverse_mTr", "kind": "theorem", "line": 62},
+  {"name": "Cslib.Automata.NA.FinAcc.accepts_reverse", "kind": "theorem", "line": 67},
+  {"name": "Cslib.Automata.NA.FinAcc.reverse_language_eq", "kind": "theorem", "line": 73}
+ ],
+ "private": [],
+ "missing": [],
+ "unread": "Unnamed instances, the names an `alias ⟨…⟩` command gives, and the names Lean generates for a declaration (constructors, recursors, derived instances) are not read from the source, so they are not listed."
+}

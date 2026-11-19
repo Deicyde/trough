@@ -27,5 +27,5 @@ Formalized in Tau Ceti as [`TauCeti.simplyConnectedSpace_sphere`](https://taucet
 ## Sources
 
 - [Tau Ceti documentation: `TauCeti.simplyConnectedSpace_sphere`](https://taucetiproject.org/docs/TauCeti/AlgebraicTopology/Sphere/SimplyConnected.html#TauCeti.simplyConnectedSpace_sphere)
-- [Source of `TauCeti.simplyConnectedSpace_sphere` in TauCeti/AlgebraicTopology/Sphere/SimplyConnected.lean](https://github.com/TauCetiProject/TauCeti/blob/a6027b1d24fcb935c53bd5b50d11b40991cda418/TauCeti/AlgebraicTopology/Sphere/SimplyConnected.lean#L419)
-- [Tau Ceti roadmap status: Universal covers](https://github.com/TauCetiProject/TauCetiRoadmap/blob/9f7c032adaf1b838e8183d63ff3cfa886d061cb3/Completed/UniversalCovers/STATUS.md)
+- [Source of `TauCeti.simplyConnectedSpace_sphere` in TauCeti/AlgebraicTopology/Sphere/SimplyConnected.lean](https://github.com/TauCetiProject/TauCeti/blob/cd41bffcb343151b3e58c89392e206b11fe78c1c/TauCeti/AlgebraicTopology/Sphere/SimplyConnected.lean#L419)
+- [Tau Ceti roadmap status: Universal covers](https://github.com/TauCetiProject/TauCetiRoadmap/blob/612845ab80fb9c2b9bee724a156756ee78031591/Completed/UniversalCovers/STATUS.md)

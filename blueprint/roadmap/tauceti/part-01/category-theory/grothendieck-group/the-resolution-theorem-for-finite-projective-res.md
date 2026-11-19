@@ -42,4 +42,4 @@ Formalized in Tau Ceti as [`TauCeti.ExactStructure.resolutionEquiv`](https://tau
 ## Sources
 
 - [Tau Ceti documentation: `TauCeti.ExactStructure.resolutionEquiv`](https://taucetiproject.org/docs/TauCeti/CategoryTheory/GrothendieckGroup/ProjectiveResolution.html#TauCeti.ExactStructure.resolutionEquiv)
-- [Source of `TauCeti.ExactStructure.resolutionEquiv` in TauCeti/CategoryTheory/GrothendieckGroup/ProjectiveResolution.lean](https://github.com/TauCetiProject/TauCeti/blob/a6027b1d24fcb935c53bd5b50d11b40991cda418/TauCeti/CategoryTheory/GrothendieckGroup/ProjectiveResolution.lean#L375)
+- [Source of `TauCeti.ExactStructure.resolutionEquiv` in TauCeti/CategoryTheory/GrothendieckGroup/ProjectiveResolution.lean](https://github.com/TauCetiProject/TauCeti/blob/cd41bffcb343151b3e58c89392e206b11fe78c1c/TauCeti/CategoryTheory/GrothendieckGroup/ProjectiveResolution.lean#L372)

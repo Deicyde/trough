@@ -37,7 +37,7 @@ Its statement uses no other declaration mapped here.
 - [The dual Noether isomorphism](../../../category-theory/exact/the-dual-noether-isomorphism.md)
 - [The Krull-Schmidt theorem](../../../ring-theory/part-01/krull-schmidt/the-krull-schmidt-theorem.md)
 - [The Noether isomorphism for exact categories](../../../category-theory/exact/the-noether-isomorphism-for-exact-categories.md)
-- [Schur's lemma, vanishing form](../../../ring-theory/part-01/semisimple/schurs-lemma-vanishing-form.md)
+- [Schur's lemma, vanishing form](../../../ring-theory/part-02/semisimple/schurs-lemma-vanishing-form.md)
 
 ## Lean
 
@@ -46,5 +46,5 @@ Formalized in Tau Ceti as [`TauCeti.projectiveExtEuler_isPerfPair_iff`](https://
 ## Sources
 
 - [Tau Ceti documentation: `TauCeti.projectiveExtEuler_isPerfPair_iff`](https://taucetiproject.org/docs/TauCeti/RepresentationTheory/GrothendieckGroup/EulerDuality.html#TauCeti.projectiveExtEuler_isPerfPair_iff)
-- [Source of `TauCeti.projectiveExtEuler_isPerfPair_iff` in TauCeti/RepresentationTheory/GrothendieckGroup/EulerDuality.lean](https://github.com/TauCetiProject/TauCeti/blob/a6027b1d24fcb935c53bd5b50d11b40991cda418/TauCeti/RepresentationTheory/GrothendieckGroup/EulerDuality.lean#L232)
-- [Tau Ceti roadmap status: Grothendieck groups, Cartan maps, and Euler forms](https://github.com/TauCetiProject/TauCetiRoadmap/blob/9f7c032adaf1b838e8183d63ff3cfa886d061cb3/TauCetiRoadmap/GrothendieckEulerForms/STATUS.md)
+- [Source of `TauCeti.projectiveExtEuler_isPerfPair_iff` in TauCeti/RepresentationTheory/GrothendieckGroup/EulerDuality.lean](https://github.com/TauCetiProject/TauCeti/blob/cd41bffcb343151b3e58c89392e206b11fe78c1c/TauCeti/RepresentationTheory/GrothendieckGroup/EulerDuality.lean#L232)
+- [Tau Ceti roadmap status: Grothendieck groups, Cartan maps, and Euler forms](https://github.com/TauCetiProject/TauCetiRoadmap/blob/612845ab80fb9c2b9bee724a156756ee78031591/TauCetiRoadmap/GrothendieckEulerForms/STATUS.md)

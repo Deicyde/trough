@@ -26,5 +26,5 @@ Formalized in Tau Ceti as [`TauCeti.WeierstrassHopfAlgebroid.smoothOfRelativeDim
 ## Sources
 
 - [Tau Ceti documentation: `TauCeti.WeierstrassHopfAlgebroid.smoothOfRelativeDimension_source`](https://taucetiproject.org/docs/TauCeti/AlgebraicGeometry/EllipticCurve/VariableChange/Groupoid.html#TauCeti.WeierstrassHopfAlgebroid.smoothOfRelativeDimension_source)
-- [Source of `TauCeti.WeierstrassHopfAlgebroid.smoothOfRelativeDimension_source` in TauCeti/AlgebraicGeometry/EllipticCurve/VariableChange/Groupoid.lean](https://github.com/TauCetiProject/TauCeti/blob/a6027b1d24fcb935c53bd5b50d11b40991cda418/TauCeti/AlgebraicGeometry/EllipticCurve/VariableChange/Groupoid.lean#L109)
-- [Tau Ceti roadmap status: Elliptic cohomology and topological modular forms](https://github.com/TauCetiProject/TauCetiRoadmap/blob/9f7c032adaf1b838e8183d63ff3cfa886d061cb3/TauCetiRoadmap/EllipticCohomology/STATUS.md)
+- [Source of `TauCeti.WeierstrassHopfAlgebroid.smoothOfRelativeDimension_source` in TauCeti/AlgebraicGeometry/EllipticCurve/VariableChange/Groupoid.lean](https://github.com/TauCetiProject/TauCeti/blob/cd41bffcb343151b3e58c89392e206b11fe78c1c/TauCeti/AlgebraicGeometry/EllipticCurve/VariableChange/Groupoid.lean#L109)
+- [Tau Ceti roadmap status: Elliptic cohomology and topological modular forms](https://github.com/TauCetiProject/TauCetiRoadmap/blob/612845ab80fb9c2b9bee724a156756ee78031591/TauCetiRoadmap/EllipticCohomology/STATUS.md)

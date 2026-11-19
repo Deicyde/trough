@@ -31,4 +31,4 @@ Formalized in Tau Ceti as [`HeckeRing.GLn.range_evalHom`](https://taucetiproject
 ## Sources
 
 - [Tau Ceti documentation: `HeckeRing.GLn.range_evalHom`](https://taucetiproject.org/docs/TauCeti/NumberTheory/HeckeRing/GLn/PolynomialRing/Presentation.html#HeckeRing.GLn.range_evalHom)
-- [Source of `HeckeRing.GLn.range_evalHom` in TauCeti/NumberTheory/HeckeRing/GLn/PolynomialRing/Presentation.lean](https://github.com/TauCetiProject/TauCeti/blob/a6027b1d24fcb935c53bd5b50d11b40991cda418/TauCeti/NumberTheory/HeckeRing/GLn/PolynomialRing/Presentation.lean#L237)
+- [Source of `HeckeRing.GLn.range_evalHom` in TauCeti/NumberTheory/HeckeRing/GLn/PolynomialRing/Presentation.lean](https://github.com/TauCetiProject/TauCeti/blob/cd41bffcb343151b3e58c89392e206b11fe78c1c/TauCeti/NumberTheory/HeckeRing/GLn/PolynomialRing/Presentation.lean#L237)

@@ -15,8 +15,7 @@ trivial coefficients.
 
 ```lean
 TauCeti.CurrentAlgebra.invariantFormsResidueClassEquiv.{u_1, u_2} (K : Type u_1) (L : Type u_2)
-  [Field K] [CharZero K] [LieRing L] [LieAlgebra K L] [FiniteDimensional K L]
-  [LieAlgebra.IsKilling K L] :
+  [Field K] [CharZero K] [LieRing L] [LieAlgebra K L] [LieAlgebra.IsKilling K L] :
   ↥(TauCeti.LieModule.invariantForms K L L) ≃ₗ[K]
     TauCeti.LieModule.Cohomology.continuousSecondCohomology K (TauCeti.currentAlgebra K L)
       (TrivialLieModule K (TauCeti.currentAlgebra K L) K)
@@ -37,5 +36,5 @@ Formalized in Tau Ceti as [`TauCeti.CurrentAlgebra.invariantFormsResidueClassEqu
 ## Sources
 
 - [Tau Ceti documentation: `TauCeti.CurrentAlgebra.invariantFormsResidueClassEquiv`](https://taucetiproject.org/docs/TauCeti/Algebra/Lie/Current/InvariantForms.html#TauCeti.CurrentAlgebra.invariantFormsResidueClassEquiv)
-- [Source of `TauCeti.CurrentAlgebra.invariantFormsResidueClassEquiv` in TauCeti/Algebra/Lie/Current/InvariantForms.lean](https://github.com/TauCetiProject/TauCeti/blob/a6027b1d24fcb935c53bd5b50d11b40991cda418/TauCeti/Algebra/Lie/Current/InvariantForms.lean#L130)
-- [Tau Ceti roadmap status: Affine Lie algebras, smooth modules and completed centers](https://github.com/TauCetiProject/TauCetiRoadmap/blob/9f7c032adaf1b838e8183d63ff3cfa886d061cb3/TauCetiRoadmap/AffineLieAlgebras/STATUS.md)
+- [Source of `TauCeti.CurrentAlgebra.invariantFormsResidueClassEquiv` in TauCeti/Algebra/Lie/Current/InvariantForms.lean](https://github.com/TauCetiProject/TauCeti/blob/cd41bffcb343151b3e58c89392e206b11fe78c1c/TauCeti/Algebra/Lie/Current/InvariantForms.lean#L130)
+- [Tau Ceti roadmap status: Affine Lie algebras, smooth modules and completed centers](https://github.com/TauCetiProject/TauCetiRoadmap/blob/612845ab80fb9c2b9bee724a156756ee78031591/TauCetiRoadmap/AffineLieAlgebras/STATUS.md)

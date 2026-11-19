@@ -32,4 +32,4 @@ Formalized in Tau Ceti as [`TauCeti.lintegral_mul_le_lintegral_schwarzRearrangem
 ## Sources
 
 - [Tau Ceti documentation: `TauCeti.lintegral_mul_le_lintegral_schwarzRearrangement_mul`](https://taucetiproject.org/docs/TauCeti/MeasureTheory/Function/SchwarzRearrangement.html#TauCeti.lintegral_mul_le_lintegral_schwarzRearrangement_mul)
-- [Source of `TauCeti.lintegral_mul_le_lintegral_schwarzRearrangement_mul` in TauCeti/MeasureTheory/Function/SchwarzRearrangement.lean](https://github.com/TauCetiProject/TauCeti/blob/a6027b1d24fcb935c53bd5b50d11b40991cda418/TauCeti/MeasureTheory/Function/SchwarzRearrangement.lean#L406)
+- [Source of `TauCeti.lintegral_mul_le_lintegral_schwarzRearrangement_mul` in TauCeti/MeasureTheory/Function/SchwarzRearrangement.lean](https://github.com/TauCetiProject/TauCeti/blob/cd41bffcb343151b3e58c89392e206b11fe78c1c/TauCeti/MeasureTheory/Function/SchwarzRearrangement.lean#L486)

@@ -1,0 +1,19 @@
+{
+ "schema": "trough-ledger/v1",
+ "library": "CSLib",
+ "repo": "leanprover/cslib",
+ "rev": "86d560b6cbb379bd82512424cbcd2a915a1565e7",
+ "module": "Cslib.Algorithms.Lean.Query.Arith.Lemmas",
+ "file": "Cslib/Algorithms/Lean/Query/Arith/Lemmas.lean",
+ "public": [
+  {"name": "Cslib.Query.complexMulNaive_eval_honest", "kind": "theorem", "line": 33},
+  {"name": "Cslib.Query.complexMulGauss_eval_honest", "kind": "theorem", "line": 37},
+  {"name": "Cslib.Query.complexMulNaive_cost", "kind": "theorem", "line": 44},
+  {"name": "Cslib.Query.complexMulGauss_cost", "kind": "theorem", "line": 51},
+  {"name": "Cslib.Query.gauss_le_naive", "kind": "theorem", "line": 60},
+  {"name": "Cslib.Query.gauss_le_naive_iff", "kind": "theorem", "line": 67}
+ ],
+ "private": [],
+ "missing": [],
+ "unread": "Unnamed instances, the names an `alias ⟨…⟩` command gives, and the names Lean generates for a declaration (constructors, recursors, derived instances) are not read from the source, so they are not listed."
+}

@@ -37,4 +37,4 @@ Formalized in Tau Ceti as [`WeierstrassCurve.tateModuleGaloisRepresentation_eq_o
 ## Sources
 
 - [Tau Ceti documentation: `WeierstrassCurve.tateModuleGaloisRepresentation_eq_one_of_isOfFinOrder`](https://taucetiproject.org/docs/TauCeti/AlgebraicGeometry/EllipticCurve/TateModule/Galois.html#WeierstrassCurve.tateModuleGaloisRepresentation_eq_one_of_isOfFinOrder)
-- [Source of `WeierstrassCurve.tateModuleGaloisRepresentation_eq_one_of_isOfFinOrder` in TauCeti/AlgebraicGeometry/EllipticCurve/TateModule/Galois.lean](https://github.com/TauCetiProject/TauCeti/blob/a6027b1d24fcb935c53bd5b50d11b40991cda418/TauCeti/AlgebraicGeometry/EllipticCurve/TateModule/Galois.lean#L110)
+- [Source of `WeierstrassCurve.tateModuleGaloisRepresentation_eq_one_of_isOfFinOrder` in TauCeti/AlgebraicGeometry/EllipticCurve/TateModule/Galois.lean](https://github.com/TauCetiProject/TauCeti/blob/cd41bffcb343151b3e58c89392e206b11fe78c1c/TauCeti/AlgebraicGeometry/EllipticCurve/TateModule/Galois.lean#L110)

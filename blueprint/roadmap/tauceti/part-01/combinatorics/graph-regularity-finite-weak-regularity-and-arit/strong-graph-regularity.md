@@ -37,5 +37,5 @@ Formalized in Tau Ceti as [`SimpleGraph.exists_strong_regular`](https://taucetip
 ## Sources
 
 - [Tau Ceti documentation: `SimpleGraph.exists_strong_regular`](https://taucetiproject.org/docs/TauCeti/Combinatorics/Regularity/Graph/StrongRegularity.html#SimpleGraph.exists_strong_regular)
-- [Source of `SimpleGraph.exists_strong_regular` in TauCeti/Combinatorics/Regularity/Graph/StrongRegularity.lean](https://github.com/TauCetiProject/TauCeti/blob/a6027b1d24fcb935c53bd5b50d11b40991cda418/TauCeti/Combinatorics/Regularity/Graph/StrongRegularity.lean#L156)
-- [Tau Ceti roadmap status: Graph regularity, finite weak regularity, and arity-3 hypergraph complexes](https://github.com/TauCetiProject/TauCetiRoadmap/blob/9f7c032adaf1b838e8183d63ff3cfa886d061cb3/TauCetiRoadmap/Regularity/STATUS.md)
+- [Source of `SimpleGraph.exists_strong_regular` in TauCeti/Combinatorics/Regularity/Graph/StrongRegularity.lean](https://github.com/TauCetiProject/TauCeti/blob/cd41bffcb343151b3e58c89392e206b11fe78c1c/TauCeti/Combinatorics/Regularity/Graph/StrongRegularity.lean#L156)
+- [Tau Ceti roadmap status: Graph regularity, finite weak regularity, and arity-3 hypergraph complexes](https://github.com/TauCetiProject/TauCetiRoadmap/blob/612845ab80fb9c2b9bee724a156756ee78031591/TauCetiRoadmap/Regularity/STATUS.md)

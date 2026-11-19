@@ -52,6 +52,10 @@ CODE = re.compile(r"(?s)(`{3,}).*?\1|`[^`\n]*`")
 # A display formula, which the site's converter reads only as a block of its own.
 DISPLAY = re.compile(r"(?s)(?<!\\)\$\$.+?(?<!\\)\$\$")
 REFERENCE_ENTITY = re.compile(r"&(?:#[0-9]+|#[xX][0-9A-Fa-f]+|[A-Za-z][A-Za-z0-9]*);")
+# Inside a formula, the Markdown escapes GitHub reads before the formula: a bracket or an asterisk, and `\\#` for `\#`.
+MATH_ESCAPE = re.compile(r"\\\\#|\\\\|\\([\[\]*])")
+# The C0 control characters but tab and newline, which a docstring can hold by mistake and the site's formulas fail on.
+CONTROL = re.compile(r"[\x00-\x08\x0b-\x1f]")
 PROSE_LINK = re.compile(r"\[((?:[^\[\]\n]|\[[^\[\]\n]*\])*)\]\((?!\s*<?(?:[a-zA-Z][a-zA-Z0-9+.-]*:|#))")
 
 
@@ -296,6 +300,18 @@ def quote(markdown: str) -> str:
     return "\n".join(f"> {line}".rstrip() for line in text.split("\n"))
 
 
+def docstring(markdown: str) -> str:
+    """A Formal Conjectures docstring, quoted: without control characters, and with its formulas (`$...$` and
+    `$$...$$`) as GitHub reads them, the Markdown escapes in them undone; the text outside formulas is unchanged."""
+    def formula(match: re.Match) -> str:
+        if not match.group().startswith("$"):
+            return match.group()
+        return MATH_ESCAPE.sub(lambda found: "\\#" if found.group() == "\\\\#" else found[1] or found.group(),
+                               match.group())
+
+    return quote(OPAQUE.sub(formula, CONTROL.sub("", markdown)))
+
+
 def erdos_number(problem: dict) -> int | None:
     """The number of an Erdős problem's file, when its title names the same number."""
     stem = problem["file"].rsplit("/", 1)[-1].removesuffix(".lean")
@@ -357,7 +373,7 @@ def card(statement: dict, file: str, rev: str, subjects: dict[str, str]) -> str:
     """A statement's section of its problem's article."""
     lines = [f"## `{statement['name']}`", "", status(statement)]
     if statement["doc"]:
-        lines += ["", quote(statement["doc"])]
+        lines += ["", docstring(statement["doc"])]
     lines += ["", fence(statement["statement"]), ""]
     codes = ", ".join(f"[{code:02d} {escape(subjects.get(str(code), 'AMS ' + str(code)))}](trough:fc-ams-{code})"
                       for code in statement["ams"])
@@ -395,7 +411,7 @@ def article(problem: dict, rev: str, subjects: dict[str, str]) -> Leaf:
     """A problem file's article: its module docstring, then a card per statement it keeps."""
     title = escape(title_of(problem))
     file = problem["file"]
-    parts = [quote(problem["doc"])] if problem["doc"] else []
+    parts = [docstring(problem["doc"])] if problem["doc"] else []
     parts.append(f"*Quoted from [{file}]({blob(rev, file)}) in [Formal Conjectures]({GITHUB}/{REPO}) (Google DeepMind) "
                  f"at commit {at(rev)}, Apache-2.0, as are the docstrings and Lean statements below.*")
     sources = [(f"{file} at {rev[:8]}", blob(rev, file))]
@@ -559,7 +575,7 @@ def chapter(data: dict) -> tuple[Built, dict[str, str]]:
             place[id(entry)] = number
         named = len(subset["names"])
         page.prose = "\n\n".join(filter(None, [
-            quote(subset["doc"]) if subset["doc"] else "",
+            docstring(subset["doc"]) if subset["doc"] else "",
             f"*Quoted from [{subset['file']}]({blob(rev, subset['file'])}) in [Formal Conjectures]({GITHUB}/{REPO}) "
             f"(Google DeepMind) at commit {at(rev)}, Apache-2.0.*",
             f"The {plural(named, 'statement')} the list names, numbered as it lists them, "

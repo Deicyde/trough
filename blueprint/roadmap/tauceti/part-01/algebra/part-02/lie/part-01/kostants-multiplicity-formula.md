@@ -31,7 +31,7 @@ Its statement uses no other declaration mapped here.
 
 ## Proof depends on
 
-- [Kostant's multiplicity formula, stated before any module is named](../../../../linear-algebra/root-system/kostants-multiplicity-formula-stated-before-any.md)
+- [Kostant's multiplicity formula, stated before any module is named](../../../../linear-algebra/part-01/root-system/kostants-multiplicity-formula-stated-before-any.md)
 - [The Weyl character formula](../part-02/the-weyl-character-formula.md)
 
 ## Lean
@@ -58,4 +58,4 @@ TauCeti.formalCharacter_coeff_eq_kostantMultiplicity.{u, v, w} {K : Type u} {L :
 ## Sources
 
 - [Tau Ceti documentation: `TauCeti.finrank_weightSpace_eq_kostantMultiplicity`](https://taucetiproject.org/docs/TauCeti/Algebra/Lie/HighestWeight/KostantMultiplicity.html#TauCeti.finrank_weightSpace_eq_kostantMultiplicity)
-- [Source of `TauCeti.finrank_weightSpace_eq_kostantMultiplicity` in TauCeti/Algebra/Lie/HighestWeight/KostantMultiplicity.lean](https://github.com/TauCetiProject/TauCeti/blob/a6027b1d24fcb935c53bd5b50d11b40991cda418/TauCeti/Algebra/Lie/HighestWeight/KostantMultiplicity.lean#L79)
+- [Source of `TauCeti.finrank_weightSpace_eq_kostantMultiplicity` in TauCeti/Algebra/Lie/HighestWeight/KostantMultiplicity.lean](https://github.com/TauCetiProject/TauCeti/blob/cd41bffcb343151b3e58c89392e206b11fe78c1c/TauCeti/Algebra/Lie/HighestWeight/KostantMultiplicity.lean#L79)

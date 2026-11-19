@@ -1,0 +1,19 @@
+{
+ "schema": "trough-ledger/v1",
+ "library": "CSLib",
+ "repo": "leanprover/cslib",
+ "rev": "86d560b6cbb379bd82512424cbcd2a915a1565e7",
+ "module": "Cslib.Computability.Circuit.Boolean.Basic",
+ "file": "Cslib/Computability/Circuit/Boolean/Basic.lean",
+ "public": [
+  {"name": "Cslib.Circuits.Boolean.Op", "kind": "inductive", "line": 29},
+  {"name": "Cslib.Circuits.Boolean.Op.card", "kind": "theorem", "line": 41},
+  {"name": "Cslib.Circuits.Boolean.signature", "kind": "abbrev", "line": 44},
+  {"name": "Cslib.Circuits.Boolean.interpretation", "kind": "def", "line": 52},
+  {"name": "Cslib.Circuits.Program.fanInAtMost_two", "kind": "theorem", "line": 61},
+  {"name": "Cslib.Circuits.Circuit.fanInAtMost_two", "kind": "theorem", "line": 68}
+ ],
+ "private": [],
+ "missing": [],
+ "unread": "Unnamed instances, the names an `alias ⟨…⟩` command gives, and the names Lean generates for a declaration (constructors, recursors, derived instances) are not read from the source, so they are not listed."
+}

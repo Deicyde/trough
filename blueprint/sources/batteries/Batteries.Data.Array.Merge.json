@@ -1,0 +1,20 @@
+{
+ "schema": "trough-ledger/v1",
+ "library": "Batteries",
+ "repo": "leanprover-community/batteries",
+ "rev": "b4b25a3886a16daacaf6615c2eea7170a6e8f458",
+ "module": "Batteries.Data.Array.Merge",
+ "file": "Batteries/Data/Array/Merge.lean",
+ "public": [
+  {"name": "Array.merge", "kind": "def", "line": 16},
+  {"name": "Array.mergeDedupWith", "kind": "def", "line": 39},
+  {"name": "Array.mergeDedup", "kind": "def", "line": 61},
+  {"name": "Array.mergeUnsortedDedup", "kind": "def", "line": 70},
+  {"name": "Array.mergeAdjacentDups", "kind": "def", "line": 87},
+  {"name": "Array.dedupSorted", "kind": "def", "line": 103},
+  {"name": "Array.sortDedup", "kind": "def", "line": 107}
+ ],
+ "private": [],
+ "missing": [],
+ "unread": "Unnamed instances, the names an `alias ⟨…⟩` command gives, and the names Lean generates for a declaration (constructors, recursors, derived instances) are not read from the source, so they are not listed."
+}
