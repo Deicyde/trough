@@ -1,0 +1,17 @@
+{
+ "schema": "trough-ledger/v1",
+ "library": "Batteries",
+ "repo": "leanprover-community/batteries",
+ "rev": "b4b25a3886a16daacaf6615c2eea7170a6e8f458",
+ "module": "Batteries.Data.BinomialHeap.Lemmas",
+ "file": "Batteries/Data/BinomialHeap/Lemmas.lean",
+ "public": [
+  {"name": "Batteries.BinomialHeap.Imp.Heap.findMin_val", "kind": "theorem", "line": 15},
+  {"name": "Batteries.BinomialHeap.Imp.Heap.deleteMin_fst", "kind": "theorem", "line": 20},
+  {"name": "Batteries.BinomialHeap.Imp.HeapNode.WF.realSize_eq", "kind": "theorem", "line": 25},
+  {"name": "Batteries.BinomialHeap.Imp.Heap.WF.size_eq", "kind": "theorem", "line": 32}
+ ],
+ "private": [],
+ "missing": [],
+ "unread": "Unnamed instances, the names an `alias ⟨…⟩` command gives, and the names Lean generates for a declaration (constructors, recursors, derived instances) are not read from the source, so they are not listed."
+}

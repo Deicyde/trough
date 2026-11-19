@@ -1,0 +1,21 @@
+{
+ "schema": "trough-ledger/v1",
+ "library": "Batteries",
+ "repo": "leanprover-community/batteries",
+ "rev": "b4b25a3886a16daacaf6615c2eea7170a6e8f458",
+ "module": "Batteries.Lean.AttributeExtra",
+ "file": "Batteries/Lean/AttributeExtra.lean",
+ "public": [
+  {"name": "Lean.TagAttributeExtra", "kind": "structure", "line": 30},
+  {"name": "Lean.registerTagAttributeExtra", "kind": "def", "line": 45},
+  {"name": "Lean.TagAttributeExtra.hasTag", "kind": "def", "line": 54},
+  {"name": "Lean.TagAttributeExtra.getDecls", "kind": "def", "line": 61},
+  {"name": "Lean.ParametricAttributeExtra", "kind": "structure", "line": 79},
+  {"name": "Lean.registerParametricAttributeExtra", "kind": "def", "line": 91},
+  {"name": "Lean.ParametricAttributeExtra.getParam?", "kind": "def", "line": 102},
+  {"name": "Lean.ParametricAttributeExtra.setParam", "kind": "def", "line": 107}
+ ],
+ "private": [],
+ "missing": [],
+ "unread": "Unnamed instances, the names an `alias ⟨…⟩` command gives, and the names Lean generates for a declaration (constructors, recursors, derived instances) are not read from the source, so they are not listed."
+}

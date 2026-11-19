@@ -1,0 +1,22 @@
+{
+ "schema": "trough-ledger/v1",
+ "library": "Batteries",
+ "repo": "leanprover-community/batteries",
+ "rev": "b4b25a3886a16daacaf6615c2eea7170a6e8f458",
+ "module": "Batteries.Data.DList.Lemmas",
+ "file": "Batteries/Data/DList/Lemmas.lean",
+ "public": [
+  {"name": "Batteries.DList.toList_ofList", "kind": "theorem", "line": 29},
+  {"name": "Batteries.DList.ofList_toList", "kind": "theorem", "line": 32},
+  {"name": "Batteries.DList.toList_empty", "kind": "theorem", "line": 39},
+  {"name": "Batteries.DList.toList_singleton", "kind": "theorem", "line": 42},
+  {"name": "Batteries.DList.toList_append", "kind": "theorem", "line": 44},
+  {"name": "Batteries.DList.toList_cons", "kind": "theorem", "line": 47},
+  {"name": "Batteries.DList.toList_push", "kind": "theorem", "line": 50},
+  {"name": "Batteries.DList.singleton_eq_ofThunk", "kind": "theorem", "line": 54},
+  {"name": "Batteries.DList.ofThunk_coe", "kind": "theorem", "line": 58}
+ ],
+ "private": [],
+ "missing": [],
+ "unread": "Unnamed instances, the names an `alias ⟨…⟩` command gives, and the names Lean generates for a declaration (constructors, recursors, derived instances) are not read from the source, so they are not listed."
+}

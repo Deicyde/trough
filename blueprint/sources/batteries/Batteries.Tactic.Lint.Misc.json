@@ -1,0 +1,21 @@
+{
+ "schema": "trough-ledger/v1",
+ "library": "Batteries",
+ "repo": "leanprover-community/batteries",
+ "rev": "b4b25a3886a16daacaf6615c2eea7170a6e8f458",
+ "module": "Batteries.Tactic.Lint.Misc",
+ "file": "Batteries/Tactic/Lint/Misc.lean",
+ "public": [
+  {"name": "Batteries.Tactic.Lint.unusedArguments", "kind": "def", "line": 29},
+  {"name": "Batteries.Tactic.Lint.docBlame", "kind": "def", "line": 83},
+  {"name": "Batteries.Tactic.Lint.docBlameThm", "kind": "def", "line": 111},
+  {"name": "Batteries.Tactic.Lint.checkType", "kind": "def", "line": 132},
+  {"name": "Batteries.Tactic.Lint.synTaut", "kind": "def", "line": 149},
+  {"name": "Batteries.Tactic.Lint.findUnusedHaves", "kind": "def", "line": 174},
+  {"name": "Batteries.Tactic.Lint.unusedHavesSuffices", "kind": "def", "line": 194},
+  {"name": "Batteries.Tactic.Lint.explicitVarsOfIff", "kind": "def", "line": 221}
+ ],
+ "private": [],
+ "missing": [],
+ "unread": "Unnamed instances, the names an `alias ⟨…⟩` command gives, and the names Lean generates for a declaration (constructors, recursors, derived instances) are not read from the source, so they are not listed."
+}

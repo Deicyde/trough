@@ -1,0 +1,19 @@
+{
+ "schema": "trough-ledger/v1",
+ "library": "Batteries",
+ "repo": "leanprover-community/batteries",
+ "rev": "b4b25a3886a16daacaf6615c2eea7170a6e8f458",
+ "module": "Batteries.Linter.UnnecessarySeqFocus",
+ "file": "Batteries/Linter/UnnecessarySeqFocus.lean",
+ "public": [
+  {"name": "Batteries.Linter.UnnecessarySeqFocus.getLinterUnnecessarySeqFocus", "kind": "def", "line": 53},
+  {"name": "Batteries.Linter.UnnecessarySeqFocus.M", "kind": "abbrev", "line": 83},
+  {"name": "Batteries.Linter.UnnecessarySeqFocus.getPath", "kind": "def", "line": 89},
+  {"name": "Batteries.Linter.UnnecessarySeqFocus.markUsedTacticsList", "kind": "def", "line": 99},
+  {"name": "Batteries.Linter.UnnecessarySeqFocus.markUsedTactics", "kind": "def", "line": 103},
+  {"name": "Batteries.Linter.UnnecessarySeqFocus.unnecessarySeqFocusLinter", "kind": "def", "line": 135}
+ ],
+ "private": [],
+ "missing": [],
+ "unread": "Unnamed instances, the names an `alias ⟨…⟩` command gives, and the names Lean generates for a declaration (constructors, recursors, derived instances) are not read from the source, so they are not listed."
+}

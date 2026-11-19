@@ -1,0 +1,27 @@
+{
+ "schema": "trough-ledger/v1",
+ "library": "Batteries",
+ "repo": "leanprover-community/batteries",
+ "rev": "b4b25a3886a16daacaf6615c2eea7170a6e8f458",
+ "module": "Batteries.Tactic.Alias",
+ "file": "Batteries/Tactic/Alias.lean",
+ "public": [
+  {"name": "Batteries.Tactic.Alias.AliasInfo", "kind": "inductive", "line": 27},
+  {"name": "Batteries.Tactic.Alias.AliasInfo.name", "kind": "def", "line": 37},
+  {"name": "Batteries.Tactic.Alias.AliasInfo.toString", "kind": "def", "line": 43},
+  {"name": "Batteries.Tactic.Alias.addAliasDocstring", "kind": "def", "line": 53},
+  {"name": "Batteries.Tactic.Alias.getAliasInfo?", "kind": "def", "line": 64},
+  {"name": "Batteries.Tactic.Alias.getOldAliasInfo?", "kind": "def", "line": 68},
+  {"name": "Batteries.Tactic.Alias.getAliasInfo", "kind": "def", "line": 86},
+  {"name": "Batteries.Tactic.Alias.getAliasPath", "kind": "def", "line": 95},
+  {"name": "Batteries.Tactic.Alias.setAliasInfo", "kind": "def", "line": 107},
+  {"name": "Batteries.Tactic.Alias.setDeprecatedTarget", "kind": "def", "line": 111},
+  {"name": "Batteries.Tactic.Alias.isReducibilityAttr", "kind": "def", "line": 126},
+  {"name": "Batteries.Tactic.Alias.declNamespace?", "kind": "def", "line": 134},
+  {"name": "Batteries.Tactic.Alias.realizeAliasTarget", "kind": "def", "line": 146},
+  {"name": "Batteries.Tactic.Alias.mkIffMpApp", "kind": "def", "line": 233}
+ ],
+ "private": [],
+ "missing": [],
+ "unread": "Unnamed instances, the names an `alias ⟨…⟩` command gives, and the names Lean generates for a declaration (constructors, recursors, derived instances) are not read from the source, so they are not listed."
+}

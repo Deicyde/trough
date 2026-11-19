@@ -1,0 +1,15 @@
+{
+ "schema": "trough-ledger/v1",
+ "library": "Batteries",
+ "repo": "leanprover-community/batteries",
+ "rev": "b4b25a3886a16daacaf6615c2eea7170a6e8f458",
+ "module": "Batteries.Tactic.Congr",
+ "file": "Batteries/Tactic/Congr.lean",
+ "public": [
+  {"name": "Batteries.Tactic.Congr.Config", "kind": "structure", "line": 23},
+  {"name": "Batteries.Tactic.rcongrCore", "kind": "def", "line": 80}
+ ],
+ "private": [],
+ "missing": [],
+ "unread": "Unnamed instances, the names an `alias ⟨…⟩` command gives, and the names Lean generates for a declaration (constructors, recursors, derived instances) are not read from the source, so they are not listed."
+}

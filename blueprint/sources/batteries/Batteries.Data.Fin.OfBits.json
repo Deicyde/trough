@@ -1,0 +1,15 @@
+{
+ "schema": "trough-ledger/v1",
+ "library": "Batteries",
+ "repo": "leanprover-community/batteries",
+ "rev": "b4b25a3886a16daacaf6615c2eea7170a6e8f458",
+ "module": "Batteries.Data.Fin.OfBits",
+ "file": "Batteries/Data/Fin/OfBits.lean",
+ "public": [
+  {"name": "Fin.ofBits", "kind": "abbrev", "line": 17},
+  {"name": "Fin.val_ofBits", "kind": "theorem", "line": 19}
+ ],
+ "private": [],
+ "missing": [],
+ "unread": "Unnamed instances, the names an `alias ⟨…⟩` command gives, and the names Lean generates for a declaration (constructors, recursors, derived instances) are not read from the source, so they are not listed."
+}

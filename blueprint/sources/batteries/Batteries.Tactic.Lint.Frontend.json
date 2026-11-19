@@ -1,0 +1,29 @@
+{
+ "schema": "trough-ledger/v1",
+ "library": "Batteries",
+ "repo": "leanprover-community/batteries",
+ "rev": "b4b25a3886a16daacaf6615c2eea7170a6e8f458",
+ "module": "Batteries.Tactic.Lint.Frontend",
+ "file": "Batteries/Tactic/Lint/Frontend.lean",
+ "public": [
+  {"name": "Batteries.Tactic.Lint.LintVerbosity", "kind": "inductive", "line": 61},
+  {"name": "Batteries.Tactic.Lint.getChecks", "kind": "def", "line": 78},
+  {"name": "Batteries.Tactic.Lint.traceLintCore", "kind": "def", "line": 101},
+  {"name": "Batteries.Tactic.Lint.traceLint", "kind": "def", "line": 113},
+  {"name": "Batteries.Tactic.Lint.lintBatchSize", "kind": "def", "line": 126},
+  {"name": "Batteries.Tactic.Lint.mapOnWorkers", "kind": "def", "line": 134},
+  {"name": "Batteries.Tactic.Lint.lintDecl", "kind": "def", "line": 155},
+  {"name": "Batteries.Tactic.Lint.lintCore", "kind": "def", "line": 184},
+  {"name": "Batteries.Tactic.Lint.sortResults", "kind": "def", "line": 249},
+  {"name": "Batteries.Tactic.Lint.printWarning", "kind": "def", "line": 257},
+  {"name": "Batteries.Tactic.Lint.printWarnings", "kind": "def", "line": 268},
+  {"name": "Batteries.Tactic.Lint.groupedByFilename", "kind": "def", "line": 278},
+  {"name": "Batteries.Tactic.Lint.formatLinterResults", "kind": "def", "line": 301},
+  {"name": "Batteries.Tactic.Lint.getDeclsInCurrModule", "kind": "def", "line": 333},
+  {"name": "Batteries.Tactic.Lint.getAllDecls", "kind": "def", "line": 337},
+  {"name": "Batteries.Tactic.Lint.getDeclsInPackage", "kind": "def", "line": 341}
+ ],
+ "private": [],
+ "missing": [],
+ "unread": "Unnamed instances, the names an `alias ⟨…⟩` command gives, and the names Lean generates for a declaration (constructors, recursors, derived instances) are not read from the source, so they are not listed."
+}

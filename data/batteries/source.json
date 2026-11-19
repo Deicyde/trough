@@ -1,0 +1,8 @@
+{
+ "repo": "leanprover-community/batteries",
+ "rev": "b4b25a3886a16daacaf6615c2eea7170a6e8f458",
+ "date": "2026-11-16T16:41:33Z",
+ "toolchain": "v4.36.0",
+ "mathlib": "",
+ "license": "Apache-2.0"
+}

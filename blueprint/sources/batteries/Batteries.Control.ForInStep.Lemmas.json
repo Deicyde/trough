@@ -1,0 +1,24 @@
+{
+ "schema": "trough-ledger/v1",
+ "library": "Batteries",
+ "repo": "leanprover-community/batteries",
+ "rev": "b4b25a3886a16daacaf6615c2eea7170a6e8f458",
+ "module": "Batteries.Control.ForInStep.Lemmas",
+ "file": "Batteries/Control/ForInStep/Lemmas.lean",
+ "public": [
+  {"name": "ForInStep.bind_done", "kind": "theorem", "line": 14},
+  {"name": "ForInStep.bind_yield", "kind": "theorem", "line": 16},
+  {"name": "ForInStep.run_done", "kind": "theorem", "line": 21},
+  {"name": "ForInStep.run_yield", "kind": "theorem", "line": 22},
+  {"name": "ForInStep.bindList_nil", "kind": "theorem", "line": 24},
+  {"name": "ForInStep.bindList_cons", "kind": "theorem", "line": 27},
+  {"name": "ForInStep.done_bindList", "kind": "theorem", "line": 31},
+  {"name": "ForInStep.bind_yield_bindList", "kind": "theorem", "line": 35},
+  {"name": "ForInStep.bind_bindList_assoc", "kind": "theorem", "line": 39},
+  {"name": "ForInStep.bindList_cons'", "kind": "theorem", "line": 44},
+  {"name": "ForInStep.bindList_append", "kind": "theorem", "line": 48}
+ ],
+ "private": [],
+ "missing": [],
+ "unread": "Unnamed instances, the names an `alias ⟨…⟩` command gives, and the names Lean generates for a declaration (constructors, recursors, derived instances) are not read from the source, so they are not listed."
+}

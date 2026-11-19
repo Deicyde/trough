@@ -1,0 +1,16 @@
+{
+ "schema": "trough-ledger/v1",
+ "library": "Batteries",
+ "repo": "leanprover-community/batteries",
+ "rev": "b4b25a3886a16daacaf6615c2eea7170a6e8f458",
+ "module": "Batteries.Util.Pickle",
+ "file": "Batteries/Util/Pickle.lean",
+ "public": [
+  {"name": "pickle", "kind": "def", "line": 25},
+  {"name": "unpickle", "kind": "def", "line": 38},
+  {"name": "withUnpickle", "kind": "def", "line": 42}
+ ],
+ "private": [],
+ "missing": [],
+ "unread": "Unnamed instances, the names an `alias ⟨…⟩` command gives, and the names Lean generates for a declaration (constructors, recursors, derived instances) are not read from the source, so they are not listed."
+}

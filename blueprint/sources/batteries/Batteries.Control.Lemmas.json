@@ -1,0 +1,25 @@
+{
+ "schema": "trough-ledger/v1",
+ "library": "Batteries",
+ "repo": "leanprover-community/batteries",
+ "rev": "b4b25a3886a16daacaf6615c2eea7170a6e8f458",
+ "module": "Batteries.Control.Lemmas",
+ "file": "Batteries/Control/Lemmas.lean",
+ "public": [
+  {"name": "ReaderT.run_failure", "kind": "theorem", "line": 16},
+  {"name": "ReaderT.run_orElse", "kind": "theorem", "line": 19},
+  {"name": "ReaderT.run_throw", "kind": "theorem", "line": 22},
+  {"name": "ReaderT.run_throwThe", "kind": "theorem", "line": 25},
+  {"name": "ReaderT.run_tryCatch", "kind": "theorem", "line": 28},
+  {"name": "ReaderT.run_tryCatchThe", "kind": "theorem", "line": 32},
+  {"name": "StateT.run_failure", "kind": "theorem", "line": 43},
+  {"name": "StateT.run_orElse", "kind": "theorem", "line": 46},
+  {"name": "StateT.run_throw", "kind": "theorem", "line": 49},
+  {"name": "StateT.run_throwThe", "kind": "theorem", "line": 52},
+  {"name": "StateT.run_tryCatch", "kind": "theorem", "line": 55},
+  {"name": "StateT.run_tryCatchThe", "kind": "theorem", "line": 59}
+ ],
+ "private": [],
+ "missing": [],
+ "unread": "Unnamed instances, the names an `alias ⟨…⟩` command gives, and the names Lean generates for a declaration (constructors, recursors, derived instances) are not read from the source, so they are not listed."
+}

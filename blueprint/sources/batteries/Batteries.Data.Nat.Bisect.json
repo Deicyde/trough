@@ -1,0 +1,28 @@
+{
+ "schema": "trough-ledger/v1",
+ "library": "Batteries",
+ "repo": "leanprover-community/batteries",
+ "rev": "b4b25a3886a16daacaf6615c2eea7170a6e8f458",
+ "module": "Batteries.Data.Nat.Bisect",
+ "file": "Batteries/Data/Nat/Bisect.lean",
+ "public": [
+  {"name": "Nat.avg", "kind": "abbrev", "line": 15},
+  {"name": "Nat.avg_comm", "kind": "theorem", "line": 17},
+  {"name": "Nat.avg_le_left", "kind": "theorem", "line": 20},
+  {"name": "Nat.avg_le_right", "kind": "theorem", "line": 23},
+  {"name": "Nat.avg_lt_left", "kind": "theorem", "line": 26},
+  {"name": "Nat.avg_lt_right", "kind": "theorem", "line": 29},
+  {"name": "Nat.le_avg_left", "kind": "theorem", "line": 32},
+  {"name": "Nat.le_avg_right", "kind": "theorem", "line": 35},
+  {"name": "Nat.le_add_one_of_avg_eq_left", "kind": "theorem", "line": 38},
+  {"name": "Nat.le_add_one_of_avg_eq_right", "kind": "theorem", "line": 47},
+  {"name": "Nat.bisect", "kind": "def", "line": 60},
+  {"name": "Nat.bisect_lt_stop", "kind": "theorem", "line": 71},
+  {"name": "Nat.start_le_bisect", "kind": "theorem", "line": 87},
+  {"name": "Nat.bisect_true", "kind": "theorem", "line": 104},
+  {"name": "Nat.bisect_add_one_false", "kind": "theorem", "line": 121}
+ ],
+ "private": [],
+ "missing": [],
+ "unread": "Unnamed instances, the names an `alias ⟨…⟩` command gives, and the names Lean generates for a declaration (constructors, recursors, derived instances) are not read from the source, so they are not listed."
+}
