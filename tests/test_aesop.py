@@ -136,6 +136,19 @@ def test_a_dump_in_which_over_half_the_modules_did_not_build_is_refused(tmp_path
         built(tmp_path, {"Aesop.Rule.Basic": {"statement": [], "proof": []}}, built=["Aesop.Rule.Basic"])
 
 
+def test_a_dump_with_a_cycle_of_dependencies_is_refused(tmp_path):
+    names = ["Aesop.Rule.Basic", *(f"Aesop.Top{number:02d}" for number in range(22))]
+    deps = {name: {"statement": [], "proof": []} for name in names}
+    deps["Aesop.Top00"]["proof"], deps["Aesop.Top01"]["proof"] = ["Aesop.Top01"], ["Aesop.Top00"]
+    with pytest.raises(ValueError, match="has a cycle of module dependencies"):
+        built(tmp_path, deps, built=names)
+
+
+def test_the_generic_dump_gives_a_name_to_a_module_the_user_imports():
+    dump = (ROOT / "lean" / "library" / "LibraryDeps.lean").read_text(encoding="utf-8")
+    assert "ownerOf module imported used" in dump
+
+
 def test_the_generic_dump_records_the_modules_that_built():
     dump = (ROOT / "lean" / "library" / "LibraryDeps.lean").read_text(encoding="utf-8")
     assert '("built",' in dump

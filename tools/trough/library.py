@@ -645,12 +645,17 @@ def edges(library: Library, data: dict, leaves: dict[str, Leaf], stats: Counter)
     reach_all: dict[str, set[str]] = {}
 
     def walk_from(module: str) -> None:
-        # Modules import one another without cycles, so a depth-first walk ends; each set is its node's closure.
+        # Modules import one another without cycles, so a depth-first walk ends; each set is its node's closure. A
+        # node met again before its closure is done is on a cycle, which a dump that reads imports cannot give.
         stack = [(module, False)]
+        open_nodes: set[str] = set()
         while stack:
             node, done = stack.pop()
             if node in reach_all:
                 continue
+            if not done and node in open_nodes:
+                raise ValueError(f"data/{library.id}/deps.json has a cycle of module dependencies through {node}")
+            open_nodes.add(node)
             if done:
                 reach_stmt[node] = set().union(*(reach_stmt[child] | {child} for child in stmt[node]))
                 reach_all[node] = set().union(*(reach_all[child] | {child} for child in stmt[node] | proof[node]))
