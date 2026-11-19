@@ -288,6 +288,7 @@ def record(slug: str, **changes) -> dict:
             "requirements": [], "libraries": [{"name": "X", "src": "."}], "library_files": 10,
             "capped": False, "lean_files": 10, "declarations": 50, "sorry_files": 0, "axioms": 0, "unclosed_files": 0,
             "closure_files": 3, "closure_sorry": [], "closure_axioms": 0,
+            "root_modules": [], "root_closure_files": 0, "root_closure_sorry": [], "root_closure_axioms": 0,
             "license": {"files": ["LICENSE"], "spdx": "Apache-2.0", "file": "LICENSE", "copyright": []},
             "readme": {"file": "README.md", "title": slug.title(), "excerpt": "It proves a theorem."},
             "headline_rule": "readme", "headline_count": 1,
@@ -464,3 +465,66 @@ def test_a_quoted_readme_links_relative_paths_to_the_repository_at_its_commit():
     assert satellites.absolute(item, text) == (
         f"See [the paper](https://github.com/o/q/blob/{REV}/paper/p.pdf), [site](https://x.org), [here](#use) and "
         f'<img src="https://github.com/o/q/blob/{REV}/docs/fig.png">.')
+
+
+def test_a_record_reads_its_libraries_root_modules_and_what_they_import(tmp_path):
+    checkout, _ = demo(tmp_path)
+    write(tmp_path / "src" / "Demo.lean", "import Demo.Main\n")
+    paths = sorted(path.relative_to(tmp_path).as_posix() for path in tmp_path.rglob("*") if path.is_file())
+    project = {"repo": "ada/demo", "slug": "ada--demo", "kind": "research-project"}
+    record_ = satellites.read_project(checkout, project, REV, "2026-11-01T00:00:00Z", paths, HEADS, set())
+    # Extra's glob root names no file of its own, so only Demo is a root module read here.
+    assert record_["root_modules"] == [{"name": "Demo", "file": "src/Demo.lean"}]
+    assert (record_["root_closure_files"], record_["root_closure_sorry"], record_["root_closure_axioms"]) == (
+        2, ["src/Demo/Main.lean"], 0)
+
+
+def roots(*names: str) -> list[dict]:
+    return [{"name": name, "file": f"{name}.lean"} for name in names]
+
+
+def test_a_project_without_a_headline_gets_a_card_for_its_own_root_modules(tmp_path):
+    bare = dict(headlines=[], headline_rule=None, headline_count=0, root_closure_files=4)
+    records = [record("card"),
+               record("node", root_modules=roots("Challenge", "Node", "Node2", "Node3", "Node4"), **bare),
+               record("shared", root_modules=roots("Challenge"), **bare),
+               record("stated", root_modules=roots("Stated"), **bare | {"root_closure_sorry": ["Stated/A.lean"]})]
+    placed, stats = placements(records, tmp_path)
+    node = placed["node"][1]
+    fields = dict(node.fields)
+    # Challenge is a root of two projects, so it names neither; at most three roots are named.
+    assert (fields["declaration"], fields["lean"], fields["statement"], fields["proof"]) == (
+        "module", "Node, Node2, Node3", "formalized", "formalized")
+    note = dict(node.notes)["Root modules"]
+    assert "stands for its root modules" in note and "not a theorem" in note and "(4 files)" in note
+    assert placed["shared"] == ("Overview", None)
+    assert "proof" not in dict(placed["stated"][1].fields)
+    assert "`Stated/A.lean` holds `sorry`" in dict(placed["stated"][1].notes)["Root modules"]
+    assert (stats["module_nodes"], stats["module_proved"], stats["listed"], stats["without_headline"]) == (2, 1, 1, 3)
+
+
+def test_a_long_or_generic_readme_title_gives_way_to_the_repository_name(tmp_path):
+    long = "A computer-assisted counterexample to the planar Pompeiu and Schiffer conjectures"
+    records = [record("long", readme={"file": "README.md", "title": long, "excerpt": None}),
+               record("generic", readme={"file": "README.md", "title": "License", "excerpt": None}),
+               record("plain", readme={"file": "README.md", "title": "Plain words", "excerpt": None})]
+    placed, _ = placements(records, tmp_path)
+    assert placed["long"][1].title == "long" and placed["long"][1].body.startswith(f"*{long}*\n\n")
+    assert placed["generic"][1].title == "generic" and not placed["generic"][1].body.startswith("*")
+    assert placed["plain"][1].title == "Plain words"
+
+
+def test_a_project_on_neither_mathlib_nor_a_mapped_library_goes_to_the_batteries_chapter(tmp_path):
+    batteries = Container("Batteries", "batteries")
+    batteries.path = tmp_path / "roadmap" / "batteries" / "README.md"
+    records = [record("std", mathlib="", import_roots={"Batteries": 4, "Lean": 2}),
+               record("core", mathlib="", import_roots={"Lean": 2}),
+               record("packages", mathlib="", import_roots={"Iris": 3},
+                      requirements=[{"name": "iris", "url": "https://github.com/x/iris", "rev": ""}])]
+    placed, stats = placements(records, tmp_path, hosts_extra={"batteries": batteries})
+    notes = {slug: dict(leaf.notes)["Placement"] for slug, (host, leaf) in placed.items() if host == "Batteries"}
+    assert notes["std"] == ("It requires neither Mathlib nor another library mapped here; 4 files of the project "
+                            "import Batteries modules.")
+    assert notes["core"].endswith("imports no Batteries module: it builds on Lean core alone.")
+    assert notes["packages"].endswith("it builds on Lean core and packages not mapped here.")
+    assert stats["held_back"] == 0

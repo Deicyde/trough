@@ -38,7 +38,7 @@ from pathlib import Path
 from . import leanblueprint, leansource
 from .ff import CODE, FENCE, HEADING, blocks, plural, safe
 from .mathlib import title_key
-from .vault import Container, Entry, Leaf, chunk, link_text, short
+from .vault import Container, Entry, Leaf, chunk, link_text
 
 SCHEMA = "trough-satellites/v1"
 GITHUB = "https://github.com"
@@ -531,15 +531,27 @@ def read_project(checkout: Path, project: dict, rev: str, date: str, paths: list
                           "kind": declaration.kind, "sorry": declaration.sorry, "names": sorted(named)})
     # The files the headlines' files import, directly or not, through the project's own modules.
     by_module = {module: path for path, module in files.items() if path in file_imports}
-    closure, todo = set(), sorted({declared[name][0] for name in chosen})
-    while todo:
-        path = todo.pop()
-        if path not in closure:
-            closure.add(path)
-            todo += [by_module[module] for module in file_imports.get(path, ()) if module in by_module]
+
+    def imported(start: set[str]) -> set[str]:
+        closure, todo = set(), sorted(start)
+        while todo:
+            path = todo.pop()
+            if path not in closure:
+                closure.add(path)
+                todo += [by_module[module] for module in file_imports.get(path, ()) if module in by_module]
+        return closure
+
+    closure = imported({declared[name][0] for name in chosen})
+    # The root modules of its Lean libraries that are files read here, and the files they import.
+    wanted = {root for library in libraries for root in library["roots"]}
+    root_files = {module: path for module, path in by_module.items() if module in wanted}
+    root_closure = imported(set(root_files.values()))
     record.update(declarations=len(declared), sorry_files=len(sorry_paths), axioms=sum(axioms.values()),
                   closure_files=len(closure), closure_sorry=sorted(closure & sorry_paths)[:20],
                   closure_axioms=sum(axioms[path] for path in closure),
+                  root_modules=[{"name": module, "file": path} for module, path in sorted(root_files.items())],
+                  root_closure_files=len(root_closure), root_closure_sorry=sorted(root_closure & sorry_paths)[:20],
+                  root_closure_axioms=sum(axioms[path] for path in root_closure),
                   unclosed_files=counts["unclosed_files"], headline_rule=rule, headline_count=total,
                   headlines=heads_out, mathlib_imports=dict(sorted(imports.items())),
                   import_roots=dict(sorted(roots.items())), uses=dict(sorted(uses.items())))
@@ -551,6 +563,14 @@ def read_project(checkout: Path, project: dict, rev: str, date: str, paths: list
 NO_DEPENDS = "Its headline statements name no Mathlib concept or declaration mapped elsewhere on this site."
 MATHLIB_REPO = "https://github.com/leanprover-community/mathlib4"
 OVERVIEW = "mathlib:overview"  # the home of a Mathlib project no area claims
+CORE_HOME = "batteries"  # the home of a project that requires neither Mathlib nor another library mapped here
+ROOT_NO_DEPENDS = "A root module states no result, so the node has no statement edges."
+MAX_ROOTS = 3  # root modules a node names
+LONG_TITLE = 50  # README titles longer than this give way to the repository name
+#: README headings that name a section, not the project.
+GENERIC_TITLES = {"about", "abstract", "build", "building", "contents", "description", "documentation",
+                  "getting started", "installation", "introduction", "license", "licence", "overview", "readme",
+                  "requirements", "setup", "summary", "table of contents", "usage"}
 CI_WORDS = {"SUCCESS": "passing", "FAILURE": "failing", "ERROR": "failing", "PENDING": "pending",
             "EXPECTED": "pending"}
 
@@ -681,7 +701,15 @@ def home(record: dict, live: dict[str, tuple[str, str]], hosts: dict, overrides:
         return chosen, (f"Its Lake manifest requires `{package['name']}`" + (f", {how}" if how else "")
                         + (f", whose modules {plural(files, 'file')} of the project import." if files else "."))
     if not record.get("mathlib") and not record.get("mathlib_imports"):
-        return None, "It requires neither Mathlib nor a library mapped here."
+        if CORE_HOME not in hosts:
+            return None, "It requires neither Mathlib nor a library mapped here."
+        files = record.get("import_roots", {}).get("Batteries", 0)
+        if files:
+            return CORE_HOME, (f"It requires neither Mathlib nor another library mapped here; {plural(files, 'file')} "
+                               "of the project import Batteries modules.")
+        return CORE_HOME, ("It requires neither Mathlib nor another library mapped here, and imports no Batteries "
+                           "module: it builds on Lean core" + (" and packages not mapped here." if record.get("requirements")
+                                                               else " alone."))
     counts = Counter(statement_areas)
     if len(statement_areas) >= 3 and (area := plurality(statement_areas, areas.order)) and counts[area] * 2 > len(statement_areas):
         return f"mathlib:{area}", (f"{counts[area]} of the {plural(len(statement_areas), 'Mathlib concept')} its "
@@ -723,13 +751,22 @@ def proof_formalized(record: dict) -> bool:
     return bool(record["headlines"]) and not (record["closure_sorry"] or record["closure_axioms"] or record["capped"])
 
 
+def roots_proved(record: dict) -> bool:
+    """No file the root modules import, directly or not, holds sorry, admit or an axiom, and every file was read."""
+    return not (record["root_closure_sorry"] or record["root_closure_axioms"] or record["capped"])
+
+
 def notice(record: dict) -> str:
     license_record = record["license"]
     return ", ".join([license_record["spdx"], *license_record["copyright"]])
 
 
 def title(record: dict) -> str:
-    return short(record["readme"]["title"], 80) if record["readme"].get("title") else record["repo"].split("/")[1]
+    """The README's title, or the repository's name where the title is long or names a section."""
+    readme = (record["readme"].get("title") or "").strip()
+    if not readme or len(readme) > LONG_TITLE or readme.casefold().strip(" :") in GENERIC_TITLES:
+        return record["repo"].split("/")[1]
+    return readme
 
 
 def heading_text(text: str) -> str:
@@ -737,14 +774,25 @@ def heading_text(text: str) -> str:
 
 
 def card(record: dict, depends: list[Leaf], uses: list[Leaf], named: int, placement: str,
-         builds_on: list[str], lifts: list[tuple[str, float, int, int]], areas: Areas) -> tuple[Leaf, dict[str, str]]:
-    """A project's card, and the source links of its headline names."""
+         builds_on: list[str], lifts: list[tuple[str, float, int, int]], areas: Areas,
+         roots: list[dict] | None = None) -> tuple[Leaf, dict[str, str]]:
+    """A project's card, and the source links of its Lean names. With *roots*, the project names no main result
+    and the card stands for those root modules of its libraries."""
     heads = record["headlines"]
-    fields = [("declaration", heads[0]["kind"]), ("origin", "cited"),
-              ("lean", ", ".join(head["name"] for head in heads)), ("statement", "formalized")]
-    if proof_formalized(record):
+    if roots:
+        fields = [("declaration", "module"), ("origin", "cited"), ("lean", ", ".join(root["name"] for root in roots)),
+                  ("statement", "formalized")]
+        proved = roots_proved(record)
+    else:
+        fields = [("declaration", heads[0]["kind"]), ("origin", "cited"),
+                  ("lean", ", ".join(head["name"] for head in heads)), ("statement", "formalized")]
+        proved = proof_formalized(record)
+    if proved:
         fields.append(("proof", "formalized"))
     body = f"[{record['repo']}]({GITHUB}/{record['repo']}) at commit {at(record)}, {record['date'][:10]}."
+    long_title = (record["readme"].get("title") or "").strip()
+    if len(long_title) > LONG_TITLE:
+        body = f"*{safe(long_title)}*\n\n{body}"
     excerpt = record["readme"].get("excerpt")
     if excerpt and record["license"]["spdx"]:
         body += (f"\n\n> {safe(absolute(record, excerpt))}\n\n*Quoted from [{record['readme']['file']}]"
@@ -758,7 +806,7 @@ def card(record: dict, depends: list[Leaf], uses: list[Leaf], named: int, placem
     rows = [f"- [`{head['name']}`]({blob(record, head['file'], head['line'])}) ({head['kind']}"
             + (", its text holds `sorry`" if head["sorry"] else "") + ")" for head in heads]
     notes = [("Main results", f"Its Lean names are {count} {RULES[record['headline_rule']]}:\n\n" + "\n".join(rows)
-              + (f"\n\n{proof}" if proof else ""))]
+              + (f"\n\n{proof}" if proof else ""))] if not roots else [("Root modules", root_note(record, roots))]
     facts = [f"- Lean {record['toolchain'] or 'toolchain not given'}"
              + (f", Mathlib at [{record['mathlib'][:8]}]({MATHLIB_REPO}/tree/{record['mathlib']})"
                 if re.fullmatch(r"[0-9a-f]{40}", record.get("mathlib") or "") else "") + ".",
@@ -791,9 +839,30 @@ def card(record: dict, depends: list[Leaf], uses: list[Leaf], named: int, placem
                 "those named most often relative to the other projects.")
         notes.append(("Mathlib use", text))
     leaf = Leaf(heading_text(title(record)), record["slug"], fields, body, depends=depends, proof_depends=uses,
-                notes=notes, no_depends=NO_DEPENDS)
+                notes=notes, no_depends=ROOT_NO_DEPENDS if roots else NO_DEPENDS)
     leaf.sources = [(f"{record['repo']} at {record['rev'][:8]}", tree(record))]
+    if roots:
+        return leaf, {root["name"]: blob(record, root["file"]) for root in roots}
     return leaf, {head["name"]: blob(record, head["file"], head["line"]) for head in heads}
+
+
+def root_note(record: dict, roots: list[dict]) -> str:
+    """What a root-module card stands for: not a result, but the roots of the libraries the lakefile builds."""
+    names = ", ".join(f"[`{root['name']}`]({blob(record, root['file'])})" for root in roots)
+    text = ("The project names no main result in a blueprint, its README or a Main module, so this card stands for "
+            + ("its root module " if len(roots) == 1 else "its root modules ") + names
+            + ": the root of a Lean library its lakefile builds, not a theorem.")
+    if roots_proved(record):
+        return text + (f" No file {'it imports' if len(roots) == 1 else 'they import'}, directly or not "
+                       f"({plural(record['root_closure_files'], 'file')}), holds `sorry`, `admit` or an axiom.")
+    if record["root_closure_sorry"]:
+        return text + (f" Of the files {'it imports' if len(roots) == 1 else 'they import'}, directly or not, "
+                       + ", ".join(f"`{path}`" for path in record["root_closure_sorry"])
+                       + (" holds" if len(record["root_closure_sorry"]) == 1 else " hold") + " `sorry` or `admit`.")
+    if record["root_closure_axioms"]:
+        return text + f" The files {'it imports' if len(roots) == 1 else 'they import'} declare " \
+                      f"{plural(record['root_closure_axioms'], 'axiom')}."
+    return text + " Not every file of the project was read."
 
 
 def listed(record: dict) -> str:
@@ -858,6 +927,9 @@ def chapter(records: list[dict], packages: dict, overrides: dict, libraries: lis
                                            area_lifts(record, areas, baseline)))
     out = []
     targets: dict[str, Leaf | Container] = {}
+    # A root module names a project's node only when no other project, and no page here, has that name.
+    root_count = Counter(root["name"] for record in admitted for root in record.get("root_modules", []))
+    taken = set(heads) | set(names)
     # A requirement on a project the map holds back is named, not linked.
     on_map = {record["slug"] for members in placed.values() for record, *_ in members}
     unlink = re.compile(r"\[([^\]]*)\]\(trough:satellite:([^)]+)\)")
@@ -871,8 +943,20 @@ def chapter(records: list[dict], packages: dict, overrides: dict, libraries: lis
                                     line) for line in builds_on]
             # A corpus collects many problems or theorems: none is its main result.
             if not record["headlines"] or record["kind"] == "corpus":
-                without.append(record)
                 stats["without_headline"] += 1
+                roots = [root for root in record.get("root_modules", [])
+                         if root_count[root["name"]] == 1 and root["name"] not in taken][:MAX_ROOTS]
+                if not roots:
+                    without.append(record)
+                    stats["listed"] += 1
+                    continue
+                leaf, names_here = card(record, [], uses, named, placement, builds_on, lifts, areas, roots)
+                cards.append(leaf)
+                links.update(names_here)
+                targets[f"satellite:{record['slug']}"] = leaf
+                stats["module_nodes"] += 1
+                stats["module_proved"] += roots_proved(record)
+                stats["proof_edges"] += len(uses)
                 continue
             leaf, names_here = card(record, statement, uses, named, placement, builds_on, lifts, areas)
             cards.append(leaf)
@@ -886,9 +970,12 @@ def chapter(records: list[dict], packages: dict, overrides: dict, libraries: lis
         cards.sort(key=lambda leaf: title_key(leaf.title))
         where = "across Mathlib" if key == OVERVIEW else f"building on {host.title}"
         projects = Container(f"Projects {where} ({len(cards) + len(without)})", "projects", [Entry(leaf) for leaf in cards])
-        projects.prose = ("Lean projects outside the libraries mapped here that build on "
-                          + ("Mathlib" if key == OVERVIEW else f"Mathlib, placed by their use of its {host.title.lower()}"
-                             if key.startswith("mathlib:") else host.title)
+        projects.prose = ("Lean projects outside the libraries mapped here that "
+                          + ("build on Mathlib" if key == OVERVIEW else
+                             f"build on Mathlib, placed by their use of its {host.title.lower()}"
+                             if key.startswith("mathlib:") else
+                             "require neither Mathlib nor another library mapped here" if key == CORE_HOME else
+                             f"build on {host.title}")
                           + ", read at a pinned commit without Lean" + (", one card each." if cards else "."))
         if without:
             listing = "\n".join(["## Projects without a named main result", ""] + [listed(record) for record in without])

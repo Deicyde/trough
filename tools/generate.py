@@ -380,14 +380,16 @@ def generate() -> dict[Path, str]:
                           for _, page, _ in pages if page is not None and page.children)
         blueprint_rows.append((
             "Satellite projects", "DECOMPOSED",
-            f"{sat_stats['cards']} project cards, each in a projects box on the page of the library it builds on "
-            f"({boxes}); {sat_stats['without_headline']} more listed there without a named main result"
+            f"{sat_stats['cards']} project cards by their main results and {sat_stats['module_nodes']} by their root "
+            f"modules, each in a projects box on the page of the library it builds on ({boxes}); "
+            f"{sat_stats['listed']} more listed there without a named main result or a root module of their own"
             + (f"; {sat_stats['held_back']} held back, as they build on neither Mathlib nor a library mapped here"
                if sat_stats["held_back"] else "") + "."))
         print(
             f"satellites: {sat_stats['cards']} cards of {sat_stats['admitted']} admitted projects "
             f"({sat_stats['projects']} read) in {sat_stats['homes']} homes; {sat_stats['without_headline']} without "
-            f"a headline, {sat_stats['held_back']} held back; headlines by blueprint {sat_stats['rule_blueprint']}, "
+            f"a headline: {sat_stats['module_nodes']} root-module cards ({sat_stats['module_proved']} with proof), "
+            f"{sat_stats['listed']} listed; {sat_stats['held_back']} held back; headlines by blueprint {sat_stats['rule_blueprint']}, "
             f"README {sat_stats['rule_readme']}, Main module {sat_stats['rule_main']}; {sat_stats['statement_edges']} "
             f"statement, {sat_stats['proof_edges']} proof and {sat_stats['satellite_edges']} project edges; "
             f"{sat_stats['mathlib_edges']} cards with Mathlib edges",
