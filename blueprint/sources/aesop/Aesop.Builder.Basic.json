@@ -1,0 +1,24 @@
+{
+ "schema": "trough-ledger/v1",
+ "library": "Aesop",
+ "repo": "leanprover-community/aesop",
+ "rev": "637fdbb8689a3387a82568b07355231f892144d7",
+ "module": "Aesop.Builder.Basic",
+ "file": "Aesop/Builder/Basic.lean",
+ "public": [
+  {"name": "Aesop.RuleBuilderOptions", "kind": "structure", "line": 20},
+  {"name": "Aesop.RuleBuilderOptions.default", "kind": "def", "line": 34},
+  {"name": "Aesop.CoreRuleBuilderOutput", "kind": "structure", "line": 42},
+  {"name": "Aesop.PhaseSpec", "kind": "inductive", "line": 50},
+  {"name": "Aesop.PhaseSpec.phase", "kind": "def", "line": 58},
+  {"name": "Aesop.PhaseSpec.toRule", "kind": "def", "line": 63},
+  {"name": "Aesop.RuleBuilderInput", "kind": "structure", "line": 88},
+  {"name": "Aesop.RuleBuilderInput.phaseName", "kind": "def", "line": 96},
+  {"name": "Aesop.RuleBuilder", "kind": "abbrev", "line": 102},
+  {"name": "Aesop.elabGlobalRuleIdent", "kind": "def", "line": 105},
+  {"name": "Aesop.elabInductiveRuleIdent", "kind": "def", "line": 112}
+ ],
+ "private": [],
+ "missing": [],
+ "unread": "Unnamed instances, the names an `alias ⟨…⟩` command gives, and the names Lean generates for a declaration (constructors, recursors, derived instances) are not read from the source, so they are not listed."
+}

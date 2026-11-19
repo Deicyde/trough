@@ -1,0 +1,8 @@
+{
+ "repo": "leanprover-community/aesop",
+ "rev": "637fdbb8689a3387a82568b07355231f892144d7",
+ "date": "2026-11-18T14:07:49Z",
+ "toolchain": "v4.37.0-rc1",
+ "mathlib": "",
+ "license": "Apache-2.0"
+}

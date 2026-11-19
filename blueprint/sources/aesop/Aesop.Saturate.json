@@ -1,0 +1,23 @@
+{
+ "schema": "trough-ledger/v1",
+ "library": "Aesop",
+ "repo": "leanprover-community/aesop",
+ "rev": "637fdbb8689a3387a82568b07355231f892144d7",
+ "module": "Aesop.Saturate",
+ "file": "Aesop/Saturate.lean",
+ "public": [
+  {"name": "Aesop.isForwardOrDestructRuleName", "kind": "def", "line": 23},
+  {"name": "Aesop.SaturateM.Context", "kind": "structure", "line": 26},
+  {"name": "Aesop.SaturateM", "kind": "abbrev", "line": 30},
+  {"name": "Aesop.SaturateM.run", "kind": "def", "line": 34},
+  {"name": "Aesop.getSingleGoal", "kind": "def", "line": 40},
+  {"name": "Aesop.saturateCore", "kind": "def", "line": 51},
+  {"name": "Aesop.Stateful.saturateCore", "kind": "def", "line": 129},
+  {"name": "Aesop.saturateMain'", "kind": "def", "line": 186},
+  {"name": "Aesop.saturateMain", "kind": "def", "line": 213},
+  {"name": "Aesop.saturate", "kind": "def", "line": 218}
+ ],
+ "private": [],
+ "missing": [],
+ "unread": "Unnamed instances, the names an `alias ⟨…⟩` command gives, and the names Lean generates for a declaration (constructors, recursors, derived instances) are not read from the source, so they are not listed."
+}

@@ -1,0 +1,20 @@
+{
+ "schema": "trough-ledger/v1",
+ "library": "Aesop",
+ "repo": "leanprover-community/aesop",
+ "rev": "637fdbb8689a3387a82568b07355231f892144d7",
+ "module": "Aesop.Script.ScriptM",
+ "file": "Aesop/Script/ScriptM.lean",
+ "public": [
+  {"name": "Aesop.ScriptT", "kind": "abbrev", "line": 17},
+  {"name": "Aesop.ScriptT.run", "kind": "def", "line": 21},
+  {"name": "Aesop.ScriptM", "kind": "abbrev", "line": 27},
+  {"name": "Aesop.recordScriptStep", "kind": "def", "line": 31},
+  {"name": "Aesop.recordScriptSteps", "kind": "def", "line": 34},
+  {"name": "Aesop.withScriptStep", "kind": "def", "line": 37},
+  {"name": "Aesop.withOptScriptStep", "kind": "def", "line": 51}
+ ],
+ "private": [],
+ "missing": [],
+ "unread": "Unnamed instances, the names an `alias ⟨…⟩` command gives, and the names Lean generates for a declaration (constructors, recursors, derived instances) are not read from the source, so they are not listed."
+}

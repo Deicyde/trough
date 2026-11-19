@@ -1,0 +1,21 @@
+{
+ "schema": "trough-ledger/v1",
+ "library": "Aesop",
+ "repo": "leanprover-community/aesop",
+ "rev": "637fdbb8689a3387a82568b07355231f892144d7",
+ "module": "Aesop.Tree.AddRapp",
+ "file": "Aesop/Tree/AddRapp.lean",
+ "public": [
+  {"name": "Aesop.AddRapp", "kind": "structure", "line": 21},
+  {"name": "Aesop.AddRapp.consumedForwardRuleMatches", "kind": "def", "line": 28},
+  {"name": "Aesop.findPathForAssignedMVars", "kind": "def", "line": 33},
+  {"name": "Aesop.getGoalsToCopy", "kind": "def", "line": 65},
+  {"name": "Aesop.copyGoals", "kind": "def", "line": 87},
+  {"name": "Aesop.makeInitialGoal", "kind": "def", "line": 127},
+  {"name": "Aesop.addRappUnsafe", "kind": "def", "line": 158},
+  {"name": "Aesop.addRapp", "kind": "opaque", "line": 321}
+ ],
+ "private": [],
+ "missing": [],
+ "unread": "Unnamed instances, the names an `alias ⟨…⟩` command gives, and the names Lean generates for a declaration (constructors, recursors, derived instances) are not read from the source, so they are not listed."
+}

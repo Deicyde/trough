@@ -1,0 +1,22 @@
+{
+ "schema": "trough-ledger/v1",
+ "library": "Aesop",
+ "repo": "leanprover-community/aesop",
+ "rev": "637fdbb8689a3387a82568b07355231f892144d7",
+ "module": "Aesop.RuleTac.GoalDiff",
+ "file": "Aesop/RuleTac/GoalDiff.lean",
+ "public": [
+  {"name": "Aesop.GoalDiff", "kind": "structure", "line": 45},
+  {"name": "Aesop.isGoalDiffDefeqExpr", "kind": "def", "line": 64},
+  {"name": "Aesop.isGoalDiffDefeqTarget", "kind": "def", "line": 69},
+  {"name": "Aesop.isGoalDiffDefeqLDecl", "kind": "def", "line": 73},
+  {"name": "Aesop.getNewFVars", "kind": "def", "line": 82},
+  {"name": "Aesop.diffGoals", "kind": "def", "line": 98},
+  {"name": "Aesop.GoalDiff.comp", "kind": "def", "line": 121},
+  {"name": "Aesop.GoalDiff.checkCore", "kind": "def", "line": 138},
+  {"name": "Aesop.GoalDiff.check", "kind": "def", "line": 204}
+ ],
+ "private": [],
+ "missing": [],
+ "unread": "Unnamed instances, the names an `alias ⟨…⟩` command gives, and the names Lean generates for a declaration (constructors, recursors, derived instances) are not read from the source, so they are not listed."
+}

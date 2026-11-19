@@ -1,0 +1,19 @@
+{
+ "schema": "trough-ledger/v1",
+ "library": "Aesop",
+ "repo": "leanprover-community/aesop",
+ "rev": "637fdbb8689a3387a82568b07355231f892144d7",
+ "module": "Aesop.Rule.Basic",
+ "file": "Aesop/Rule/Basic.lean",
+ "public": [
+  {"name": "Aesop.Rule", "kind": "structure", "line": 16},
+  {"name": "Aesop.Rule.compareByPriority", "kind": "def", "line": 35},
+  {"name": "Aesop.Rule.compareByName", "kind": "def", "line": 38},
+  {"name": "Aesop.Rule.compareByPriorityThenName", "kind": "def", "line": 41},
+  {"name": "Aesop.Rule.map", "kind": "def", "line": 45},
+  {"name": "Aesop.Rule.mapM", "kind": "def", "line": 49}
+ ],
+ "private": [],
+ "missing": [],
+ "unread": "Unnamed instances, the names an `alias ⟨…⟩` command gives, and the names Lean generates for a declaration (constructors, recursors, derived instances) are not read from the source, so they are not listed."
+}

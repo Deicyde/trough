@@ -1,0 +1,73 @@
+# Reads Aesop at the commit data/aesop/source.json pins, through the reusable
+# Library data workflow (library-data.yml). Aesop's CI runs only on pull
+# requests and its merge queue, so the pin rule takes the newest commit on
+# master whose merge-queue build passed. Aesop needs only Lean and Batteries,
+# so `lake build` compiles all of it.
+
+name: Aesop data
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - "tools/refresh_library.py"
+      - "tools/trough/aesop.py"
+      - "tools/trough/library.py"
+      - "tools/trough/stacks.py"
+      - "tools/trough/leansource.py"
+      - "tools/trough/formal_conjectures.py"
+      - "tools/trough/ff.py"
+      - "lean/library/**"
+      - "data/aesop/**"
+      - ".github/workflows/aesop-data.yml"
+      - ".github/workflows/library-data.yml"
+  pull_request:
+    paths:
+      - "tools/refresh_library.py"
+      - "tools/trough/aesop.py"
+      - "tools/trough/library.py"
+      - "tools/trough/stacks.py"
+      - "tools/trough/leansource.py"
+      - "tools/trough/formal_conjectures.py"
+      - "tools/trough/ff.py"
+      - "lean/library/**"
+      - "data/aesop/**"
+      - ".github/workflows/aesop-data.yml"
+      - ".github/workflows/library-data.yml"
+  workflow_dispatch:
+    inputs:
+      newest:
+        description: Pin the newest Aesop commit whose merge-queue build passed
+        type: boolean
+        default: false
+  schedule:
+    - cron: "41 7 * * 6"
+
+permissions:
+  contents: read
+
+concurrency:
+  group: aesop-data-${{ github.ref }}
+  cancel-in-progress: ${{ github.event_name == 'pull_request' }}
+
+jobs:
+  data:
+    uses: ./.github/workflows/library-data.yml
+    permissions:
+      contents: write
+      actions: write
+    with:
+      id: aesop
+      name: Aesop
+      repo: leanprover-community/aesop
+      roots: Aesop
+      newest: ${{ inputs.newest || false }}
+      # A merge-queue run's commit is the one master gets when the queue merges it.
+      pin: |
+        shas=$(gh api "repos/leanprover-community/aesop/actions/workflows/build.yml/runs?event=merge_group&status=success&per_page=30" \
+          --jq '.workflow_runs[].head_sha')
+        for sha in $shas; do
+          status=$(gh api "repos/leanprover-community/aesop/compare/master...$sha" --jq .status)
+          if [ "$status" = identical ] || [ "$status" = behind ]; then echo "$sha"; break; fi
+        done
+      build: lake build

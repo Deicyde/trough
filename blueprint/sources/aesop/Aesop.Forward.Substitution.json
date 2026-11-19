@@ -1,0 +1,24 @@
+{
+ "schema": "trough-ledger/v1",
+ "library": "Aesop",
+ "repo": "leanprover-community/aesop",
+ "rev": "637fdbb8689a3387a82568b07355231f892144d7",
+ "module": "Aesop.Forward.Substitution",
+ "file": "Aesop/Forward/Substitution.lean",
+ "public": [
+  {"name": "Aesop.Substitution", "kind": "structure", "line": 24},
+  {"name": "Aesop.Substitution.empty", "kind": "def", "line": 58},
+  {"name": "Aesop.Substitution.insert", "kind": "def", "line": 64},
+  {"name": "Aesop.Substitution.find?", "kind": "def", "line": 70},
+  {"name": "Aesop.Substitution.insertLevel", "kind": "def", "line": 75},
+  {"name": "Aesop.Substitution.findLevel?", "kind": "def", "line": 81},
+  {"name": "Aesop.Substitution.mergeCompatible", "kind": "def", "line": 94},
+  {"name": "Aesop.Substitution.containsHyp", "kind": "def", "line": 109},
+  {"name": "Aesop.Substitution.openRuleType", "kind": "def", "line": 120},
+  {"name": "Aesop.Substitution.specializeRule", "kind": "def", "line": 142},
+  {"name": "Aesop.openRuleType", "kind": "def", "line": 166}
+ ],
+ "private": [],
+ "missing": [],
+ "unread": "Unnamed instances, the names an `alias ⟨…⟩` command gives, and the names Lean generates for a declaration (constructors, recursors, derived instances) are not read from the source, so they are not listed."
+}

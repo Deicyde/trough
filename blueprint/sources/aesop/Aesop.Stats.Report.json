@@ -1,0 +1,20 @@
+{
+ "schema": "trough-ledger/v1",
+ "library": "Aesop",
+ "repo": "leanprover-community/aesop",
+ "rev": "637fdbb8689a3387a82568b07355231f892144d7",
+ "module": "Aesop.Stats.Report",
+ "file": "Aesop/Stats/Report.lean",
+ "public": [
+  {"name": "Aesop.sortedPercentileD", "kind": "def", "line": 19},
+  {"name": "Aesop.sortedMedianD", "kind": "def", "line": 26},
+  {"name": "Aesop.StatsReport", "kind": "abbrev", "line": 29},
+  {"name": "Aesop.StatsReport.default", "kind": "def", "line": 36},
+  {"name": "Aesop.StatsReport.scriptsCore", "kind": "def", "line": 83},
+  {"name": "Aesop.StatsReport.scripts", "kind": "def", "line": 151},
+  {"name": "Aesop.StatsReport.scriptsNontrivial", "kind": "def", "line": 152}
+ ],
+ "private": [],
+ "missing": [],
+ "unread": "Unnamed instances, the names an `alias ⟨…⟩` command gives, and the names Lean generates for a declaration (constructors, recursors, derived instances) are not read from the source, so they are not listed."
+}

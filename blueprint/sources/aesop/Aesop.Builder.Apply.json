@@ -1,0 +1,19 @@
+{
+ "schema": "trough-ledger/v1",
+ "library": "Aesop",
+ "repo": "leanprover-community/aesop",
+ "rev": "637fdbb8689a3387a82568b07355231f892144d7",
+ "module": "Aesop.Builder.Apply",
+ "file": "Aesop/Builder/Apply.lean",
+ "public": [
+  {"name": "Aesop.RuleBuilderOptions.applyTransparency", "kind": "def", "line": 20},
+  {"name": "Aesop.RuleBuilderOptions.applyIndexTransparency", "kind": "def", "line": 23},
+  {"name": "Aesop.RuleBuilder.getApplyIndexingMode", "kind": "def", "line": 30},
+  {"name": "Aesop.RuleBuilder.checkNoIff", "kind": "def", "line": 37},
+  {"name": "Aesop.RuleBuilder.applyCore", "kind": "def", "line": 43},
+  {"name": "Aesop.RuleBuilder.apply", "kind": "def", "line": 52}
+ ],
+ "private": [],
+ "missing": [],
+ "unread": "Unnamed instances, the names an `alias ⟨…⟩` command gives, and the names Lean generates for a declaration (constructors, recursors, derived instances) are not read from the source, so they are not listed."
+}

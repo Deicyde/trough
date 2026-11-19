@@ -1,0 +1,29 @@
+{
+ "schema": "trough-ledger/v1",
+ "library": "Aesop",
+ "repo": "leanprover-community/aesop",
+ "rev": "637fdbb8689a3387a82568b07355231f892144d7",
+ "module": "Aesop.Forward.Match",
+ "file": "Aesop/Forward/Match.lean",
+ "public": [
+  {"name": "Aesop.elabForwardRuleTerm", "kind": "def", "line": 25},
+  {"name": "Aesop.Match.initial", "kind": "def", "line": 37},
+  {"name": "Aesop.Match.addHypOrPatSubst", "kind": "def", "line": 50},
+  {"name": "Aesop.Match.containsHyp", "kind": "def", "line": 60},
+  {"name": "Aesop.Match.containsPatSubst", "kind": "def", "line": 64},
+  {"name": "Aesop.CompleteMatch.reconstructArgs", "kind": "def", "line": 74},
+  {"name": "Aesop.CompleteMatch.toMessageData", "kind": "def", "line": 89},
+  {"name": "Aesop.ForwardRuleMatch.foldHypsM", "kind": "def", "line": 101},
+  {"name": "Aesop.ForwardRuleMatch.foldHyps", "kind": "def", "line": 110},
+  {"name": "Aesop.ForwardRuleMatch.anyHyp", "kind": "def", "line": 114},
+  {"name": "Aesop.ForwardRuleMatch.getPropHyps", "kind": "def", "line": 122},
+  {"name": "Aesop.ForwardRuleMatch.getProof", "kind": "def", "line": 127},
+  {"name": "Aesop.ForwardRuleMatch.apply", "kind": "def", "line": 168},
+  {"name": "Aesop.forwardRuleMatchesToNormRules?", "kind": "def", "line": 218},
+  {"name": "Aesop.forwardRuleMatchesToSafeRules?", "kind": "def", "line": 225},
+  {"name": "Aesop.forwardRuleMatchesToUnsafeRules?", "kind": "def", "line": 232}
+ ],
+ "private": [],
+ "missing": [],
+ "unread": "Unnamed instances, the names an `alias ⟨…⟩` command gives, and the names Lean generates for a declaration (constructors, recursors, derived instances) are not read from the source, so they are not listed."
+}

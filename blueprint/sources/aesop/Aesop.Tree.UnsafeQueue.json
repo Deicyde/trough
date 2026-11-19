@@ -1,0 +1,21 @@
+{
+ "schema": "trough-ledger/v1",
+ "library": "Aesop",
+ "repo": "leanprover-community/aesop",
+ "rev": "637fdbb8689a3387a82568b07355231f892144d7",
+ "module": "Aesop.Tree.UnsafeQueue",
+ "file": "Aesop/Tree/UnsafeQueue.lean",
+ "public": [
+  {"name": "Aesop.PostponedSafeRule", "kind": "structure", "line": 17},
+  {"name": "Aesop.PostponedSafeRule.toUnsafeRule", "kind": "def", "line": 24},
+  {"name": "Aesop.UnsafeQueueEntry", "kind": "inductive", "line": 30},
+  {"name": "Aesop.UnsafeQueueEntry.successProbability", "kind": "def", "line": 42},
+  {"name": "Aesop.UnsafeQueueEntry.name", "kind": "def", "line": 46},
+  {"name": "Aesop.UnsafeQueue", "kind": "def", "line": 58},
+  {"name": "Aesop.UnsafeQueue.initial", "kind": "def", "line": 70},
+  {"name": "Aesop.UnsafeQueue.entriesToMessageData", "kind": "def", "line": 78}
+ ],
+ "private": [],
+ "missing": [],
+ "unread": "Unnamed instances, the names an `alias ⟨…⟩` command gives, and the names Lean generates for a declaration (constructors, recursors, derived instances) are not read from the source, so they are not listed."
+}

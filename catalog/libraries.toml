@@ -233,6 +233,21 @@ lean_files = 262
 map_status = "live"
 map_unit = "module"
 map_plan = "One article per module under Batteries/ that declares something public by name, titled by its module docstring or its file name, in a part per folder and a page per folder below: the module's authors, its docstrings and a block per public declaration with its docstring and Lean statement, read from the source without Lean; a Lean run over the built library gives the edges between modules, split into what statements and what proofs use, and decides which declarations are public. A module that declares nothing public by name is listed on its folder's page."
+
+[[library]]
+id = "aesop"
+name = "Aesop"
+repo = "leanprover-community/aesop"
+group = "library"
+what = "Aesop (Automated Extensible Search for Obvious Proofs), a proof search tactic for Lean 4, broadly similar to Isabelle's auto: rule sets, best-first search trees, normalisation, forward reasoning and script generation, in folders under Aesop/. Mathlib requires it."
+informal_layer = "Module docstrings on some modules and docstrings on many definitions; a README that explains the tactic and its rules. No blueprint."
+formalization_yaml = "absent"
+license = "Apache-2.0"
+toolchain = "v4.37.0-rc1"
+lean_files = 250
+map_status = "live"
+map_unit = "module"
+map_plan = "One article per module under Aesop/ that declares something public by name, titled by its module docstring or its file name, in a part per folder and a page per folder below: the module's authors, its docstrings and a block per public declaration with its docstring and Lean statement, read from the source without Lean; a Lean run over the built library gives the edges between modules and decides which declarations are public. A module that declares nothing public by name is listed on its folder's page, and one that does not build on the front page."
 [[library]]
 id = "foundation"
 name = "Foundation"

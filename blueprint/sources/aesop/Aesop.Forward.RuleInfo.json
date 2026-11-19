@@ -1,0 +1,17 @@
+{
+ "schema": "trough-ledger/v1",
+ "library": "Aesop",
+ "repo": "leanprover-community/aesop",
+ "rev": "637fdbb8689a3387a82568b07355231f892144d7",
+ "module": "Aesop.Forward.RuleInfo",
+ "file": "Aesop/Forward/RuleInfo.lean",
+ "public": [
+  {"name": "Aesop.Slot", "kind": "structure", "line": 29},
+  {"name": "Aesop.ForwardRuleInfo", "kind": "structure", "line": 58},
+  {"name": "Aesop.ForwardRuleInfo.isConstant", "kind": "def", "line": 78},
+  {"name": "Aesop.ForwardRuleInfo.ofExpr", "kind": "def", "line": 82}
+ ],
+ "private": [],
+ "missing": [],
+ "unread": "Unnamed instances, the names an `alias ⟨…⟩` command gives, and the names Lean generates for a declaration (constructors, recursors, derived instances) are not read from the source, so they are not listed."
+}

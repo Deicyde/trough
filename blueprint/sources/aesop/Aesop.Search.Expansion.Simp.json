@@ -1,0 +1,20 @@
+{
+ "schema": "trough-ledger/v1",
+ "library": "Aesop",
+ "repo": "leanprover-community/aesop",
+ "rev": "637fdbb8689a3387a82568b07355231f892144d7",
+ "module": "Aesop.Search.Expansion.Simp",
+ "file": "Aesop/Search/Expansion/Simp.lean",
+ "public": [
+  {"name": "Aesop.SimpResult", "kind": "inductive", "line": 17},
+  {"name": "Aesop.SimpResult.newGoal?", "kind": "def", "line": 24},
+  {"name": "Aesop.addLetDeclsToSimpTheorems", "kind": "def", "line": 43},
+  {"name": "Aesop.addLetDeclsToSimpTheoremsUnlessZetaDelta", "kind": "def", "line": 53},
+  {"name": "Aesop.simpGoal", "kind": "def", "line": 60},
+  {"name": "Aesop.simpGoalWithAllHypotheses", "kind": "def", "line": 77},
+  {"name": "Aesop.simpAll", "kind": "def", "line": 92}
+ ],
+ "private": [],
+ "missing": [],
+ "unread": "Unnamed instances, the names an `alias ⟨…⟩` command gives, and the names Lean generates for a declaration (constructors, recursors, derived instances) are not read from the source, so they are not listed."
+}

@@ -1,0 +1,16 @@
+{
+ "schema": "trough-ledger/v1",
+ "library": "Aesop",
+ "repo": "leanprover-community/aesop",
+ "rev": "637fdbb8689a3387a82568b07355231f892144d7",
+ "module": "Aesop.Util.Tactic.Ext",
+ "file": "Aesop/Util/Tactic/Ext.lean",
+ "public": [
+  {"name": "Aesop.ExtResult", "kind": "structure", "line": 18},
+  {"name": "Aesop.straightLineExt", "kind": "def", "line": 23},
+  {"name": "Aesop.straightLineExtProgress", "kind": "def", "line": 48}
+ ],
+ "private": [],
+ "missing": [],
+ "unread": "Unnamed instances, the names an `alias ⟨…⟩` command gives, and the names Lean generates for a declaration (constructors, recursors, derived instances) are not read from the source, so they are not listed."
+}

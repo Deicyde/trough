@@ -1,0 +1,28 @@
+{
+ "schema": "trough-ledger/v1",
+ "library": "Aesop",
+ "repo": "leanprover-community/aesop",
+ "rev": "637fdbb8689a3387a82568b07355231f892144d7",
+ "module": "Aesop.EMap",
+ "file": "Aesop/EMap.lean",
+ "public": [
+  {"name": "Aesop.EMap", "kind": "structure", "line": 20},
+  {"name": "Aesop.EMap.empty", "kind": "def", "line": 35},
+  {"name": "Aesop.EMap.foldlM", "kind": "def", "line": 54},
+  {"name": "Aesop.EMap.foldl", "kind": "def", "line": 59},
+  {"name": "Aesop.EMap.alterM", "kind": "def", "line": 66},
+  {"name": "Aesop.EMap.alter", "kind": "def", "line": 82},
+  {"name": "Aesop.EMap.insertNew", "kind": "def", "line": 87},
+  {"name": "Aesop.EMap.insertWithM", "kind": "def", "line": 94},
+  {"name": "Aesop.EMap.insertWith", "kind": "def", "line": 106},
+  {"name": "Aesop.EMap.insert", "kind": "def", "line": 110},
+  {"name": "Aesop.EMap.singleton", "kind": "def", "line": 113},
+  {"name": "Aesop.EMap.findWithKey?", "kind": "def", "line": 116},
+  {"name": "Aesop.EMap.find?", "kind": "def", "line": 127},
+  {"name": "Aesop.EMap.mapM", "kind": "def", "line": 131},
+  {"name": "Aesop.EMap.map", "kind": "def", "line": 135}
+ ],
+ "private": [],
+ "missing": [],
+ "unread": "Unnamed instances, the names an `alias ⟨…⟩` command gives, and the names Lean generates for a declaration (constructors, recursors, derived instances) are not read from the source, so they are not listed."
+}
