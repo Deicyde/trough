@@ -1,0 +1,122 @@
+{
+ "schema": "trough-satellites/v1",
+ "repo": "7pocheR/Pierce-Birkhoff",
+ "slug": "7pocher--pierce-birkhoff",
+ "rev": "b8d342ab889845e7efcb9c29d964baab2250aa53",
+ "date": "2026-10-04T07:12:19Z",
+ "stable": "1c01cb8327b00225c8c72c47336f58f057cdaa53118a479430c755912546811a",
+ "license": {
+  "files": [],
+  "spdx": null,
+  "file": null,
+  "copyright": []
+ },
+ "readme": {
+  "file": "README.md",
+  "title": "Pierce–Birkhoff conjecture is false",
+  "excerpt": null
+ },
+ "lean_files": 19087,
+ "admitted": true,
+ "folder": "n=30_d=5_k=2/lean",
+ "toolchain": "v4.34.0-rc1",
+ "mathlib": "ffbfefaec67d01d561affd800125a281db8bb7f3",
+ "requirements": [],
+ "libraries": [
+  {
+   "name": "PBCounterexample",
+   "src": "."
+  }
+ ],
+ "library_files": 40,
+ "capped": false,
+ "declarations": 590,
+ "sorry_files": 0,
+ "axioms": 0,
+ "closure_files": 2,
+ "closure_sorry": [],
+ "closure_axioms": 0,
+ "root_modules": [
+  {
+   "name": "PBCounterexample",
+   "file": "n=30_d=5_k=2/lean/PBCounterexample.lean"
+  }
+ ],
+ "root_closure_files": 24,
+ "root_closure_sorry": [],
+ "root_closure_axioms": 0,
+ "unclosed_files": 0,
+ "headline_rule": "readme",
+ "headline_count": 2,
+ "headlines": [
+  {
+   "name": "PBCounterexample.IsPolynomialLattice.max",
+   "module": "PBCounterexample.FiniteExpressions",
+   "file": "n=30_d=5_k=2/lean/PBCounterexample/FiniteExpressions.lean",
+   "line": 22,
+   "kind": "theorem",
+   "sorry": false,
+   "names": []
+  },
+  {
+   "name": "PBCounterexample.IsPolynomialLattice.min",
+   "module": "PBCounterexample.FiniteExpressions",
+   "file": "n=30_d=5_k=2/lean/PBCounterexample/FiniteExpressions.lean",
+   "line": 28,
+   "kind": "theorem",
+   "sorry": false,
+   "names": []
+  }
+ ],
+ "mathlib_imports": {
+  "Mathlib.Algebra.MvPolynomial.Eval": 2,
+  "Mathlib.Algebra.MvPolynomial.Funext": 1,
+  "Mathlib.Algebra.MvPolynomial.Rename": 1,
+  "Mathlib.Algebra.Polynomial.Inductions": 1,
+  "Mathlib.Data.Finset.Lattice.Fold": 1,
+  "Mathlib.Data.Matrix.Basis": 1,
+  "Mathlib.Data.Real.Basic": 3,
+  "Mathlib.Data.Real.Sign": 2,
+  "Mathlib.LinearAlgebra.BilinearMap": 1,
+  "Mathlib.LinearAlgebra.Matrix.NonsingularInverse": 2,
+  "Mathlib.LinearAlgebra.Pi": 1,
+  "Mathlib.Order.Filter.Finite": 1,
+  "Mathlib.RingTheory.MvPolynomial.Homogeneous": 2,
+  "Mathlib.Tactic.FieldSimp": 2,
+  "Mathlib.Tactic.FunProp": 2,
+  "Mathlib.Tactic.Linarith": 2,
+  "Mathlib.Tactic.NormNum": 2,
+  "Mathlib.Tactic.Ring": 3,
+  "Mathlib.Topology.Algebra.Module.FiniteDimension": 1,
+  "Mathlib.Topology.Algebra.MvPolynomial": 1,
+  "Mathlib.Topology.Algebra.Polynomial": 1,
+  "Mathlib.Topology.Constructions": 1,
+  "Mathlib.Topology.DenseEmbedding": 1,
+  "Mathlib.Topology.Instances.Matrix": 1,
+  "Mathlib.Topology.Instances.Real.Lemmas": 3,
+  "Mathlib.Topology.Order.Lattice": 1,
+  "Mathlib.Topology.Separation.Basic": 1
+ },
+ "import_roots": {
+  "Lean": 1,
+  "Mathlib": 16
+ },
+ "uses": {
+  "Array": 1,
+  "Continuous": 15,
+  "Equiv.Perm": 1,
+  "Filter": 11,
+  "Filter.Tendsto": 11,
+  "Finset": 15,
+  "Matrix": 14,
+  "Matrix.det": 3,
+  "Matrix.inv": 3,
+  "MvPolynomial": 27,
+  "MvPolynomial.sum_homogeneousComponent": 1,
+  "Polynomial": 1,
+  "Polynomial.eval": 1,
+  "Set": 8,
+  "closure": 2
+ },
+ "ci": null
+}

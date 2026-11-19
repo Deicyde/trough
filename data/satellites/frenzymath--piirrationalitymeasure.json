@@ -1,0 +1,263 @@
+{
+ "schema": "trough-satellites/v1",
+ "repo": "frenzymath/PiIrrationalityMeasure",
+ "slug": "frenzymath--piirrationalitymeasure",
+ "rev": "3ee5d4d080b440469d331a2fb3862aee88c23ca0",
+ "date": "2026-09-17T13:04:45Z",
+ "stable": "5bad6a2ffbe077ed69ca8cc696f6d6adcf8b55d23b3281e74479be37b46f857a",
+ "license": {
+  "files": [
+   "LICENSE"
+  ],
+  "spdx": "Apache-2.0",
+  "file": "LICENSE",
+  "copyright": []
+ },
+ "readme": {
+  "file": "README.md",
+  "title": "Pi irrationality measure formalization",
+  "excerpt": "Lean 4.33.0 and mathlib `v4.33.0` formalization of the [paper](https://arxiv.org/abs/2609.11276)."
+ },
+ "lean_files": 312,
+ "admitted": true,
+ "folder": "",
+ "toolchain": "v4.33.0",
+ "mathlib": "db584cd6d46c92f209a44c0f1c829460d327499d",
+ "requirements": [],
+ "libraries": [
+  {
+   "name": "Formalization",
+   "src": "."
+  },
+  {
+   "name": "Challenge",
+   "src": "."
+  },
+  {
+   "name": "Solution",
+   "src": "."
+  }
+ ],
+ "library_files": 312,
+ "capped": false,
+ "declarations": 2922,
+ "sorry_files": 1,
+ "axioms": 0,
+ "closure_files": 1,
+ "closure_sorry": [],
+ "closure_axioms": 0,
+ "root_modules": [
+  {
+   "name": "Challenge",
+   "file": "Challenge.lean"
+  },
+  {
+   "name": "Formalization",
+   "file": "Formalization.lean"
+  },
+  {
+   "name": "Solution",
+   "file": "Solution.lean"
+  }
+ ],
+ "root_closure_files": 312,
+ "root_closure_sorry": [
+  "Challenge.lean"
+ ],
+ "root_closure_axioms": 0,
+ "unclosed_files": 0,
+ "headline_rule": "main",
+ "headline_count": 10,
+ "headlines": [
+  {
+   "name": "PiIrrationality.candidate_admissible",
+   "module": "Formalization.Statements",
+   "file": "Formalization/Statements.lean",
+   "line": 51,
+   "kind": "theorem",
+   "sorry": false,
+   "names": []
+  },
+  {
+   "name": "PiIrrationality.IrrationalityMeasureAtMost.mono",
+   "module": "Formalization.Statements",
+   "file": "Formalization/Statements.lean",
+   "line": 54,
+   "kind": "theorem",
+   "sorry": false,
+   "names": []
+  },
+  {
+   "name": "PiIrrationality.candidate_coordinates",
+   "module": "Formalization.Statements",
+   "file": "Formalization/Statements.lean",
+   "line": 68,
+   "kind": "theorem",
+   "sorry": false,
+   "names": []
+  },
+  {
+   "name": "PiIrrationality.irrationalityMeasure_le_of_atMost",
+   "module": "Formalization.Statements",
+   "file": "Formalization/Statements.lean",
+   "line": 71,
+   "kind": "theorem",
+   "sorry": false,
+   "names": []
+  },
+  {
+   "name": "PiIrrationality.theorem11_of_atMost_bound",
+   "module": "Formalization.Statements",
+   "file": "Formalization/Statements.lean",
+   "line": 78,
+   "kind": "theorem",
+   "sorry": false,
+   "names": []
+  },
+  {
+   "name": "PiIrrationality.irrationalityMeasureAtMost_of_uniform_power_bound",
+   "module": "Formalization.Statements",
+   "file": "Formalization/Statements.lean",
+   "line": 86,
+   "kind": "theorem",
+   "sorry": false,
+   "names": []
+  },
+  {
+   "name": "PiIrrationality.rpow_neg_eventually_lt",
+   "module": "Formalization.Statements",
+   "file": "Formalization/Statements.lean",
+   "line": 117,
+   "kind": "theorem",
+   "sorry": false,
+   "names": []
+  },
+  {
+   "name": "PiIrrationality.irrationalityMeasureAtMost_of_uniform_power_bound_of_pos_constant",
+   "module": "Formalization.Statements",
+   "file": "Formalization/Statements.lean",
+   "line": 129,
+   "kind": "theorem",
+   "sorry": false,
+   "names": []
+  }
+ ],
+ "mathlib_imports": {
+  "Mathlib.Algebra.BigOperators.Field": 1,
+  "Mathlib.Algebra.Notation.Support": 1,
+  "Mathlib.Algebra.Polynomial.PartialFractions": 1,
+  "Mathlib.Analysis.Asymptotics.Lemmas": 1,
+  "Mathlib.Analysis.Calculus.Deriv.Support": 1,
+  "Mathlib.Analysis.Calculus.UniformLimitsDeriv": 1,
+  "Mathlib.Analysis.Complex.HasPrimitives": 1,
+  "Mathlib.Analysis.Complex.LocallyUniformLimit": 1,
+  "Mathlib.Analysis.Convolution": 1,
+  "Mathlib.Analysis.Distribution.SchwartzSpace.Deriv": 2,
+  "Mathlib.Analysis.Fourier.FourierTransformDeriv": 1,
+  "Mathlib.Analysis.Fourier.RiemannLebesgueLemma": 1,
+  "Mathlib.Analysis.Normed.Group.FunctionSeries": 1,
+  "Mathlib.Analysis.Normed.Group.Tannery": 1,
+  "Mathlib.Analysis.PSeries": 1,
+  "Mathlib.Analysis.SpecialFunctions.Complex.Log": 1,
+  "Mathlib.Analysis.SpecialFunctions.Complex.LogBounds": 1,
+  "Mathlib.Analysis.SpecialFunctions.Complex.LogDeriv": 1,
+  "Mathlib.Analysis.SpecialFunctions.ExpDeriv": 1,
+  "Mathlib.Analysis.SpecialFunctions.FrullaniIntegral": 1,
+  "Mathlib.Analysis.SpecialFunctions.Gamma.Beta": 1,
+  "Mathlib.Analysis.SpecialFunctions.Gamma.Digamma": 1,
+  "Mathlib.Analysis.SpecialFunctions.Gaussian.GaussianIntegral": 1,
+  "Mathlib.Analysis.SpecialFunctions.Log.Deriv": 1,
+  "Mathlib.Analysis.SpecialFunctions.Log.ENNRealLog": 1,
+  "Mathlib.Analysis.SpecialFunctions.Trigonometric.Cotangent": 1,
+  "Mathlib.Analysis.SumIntegralComparisons": 1,
+  "Mathlib.Data.Rat.Cast.Order": 2,
+  "Mathlib.Geometry.Manifold.PartitionOfUnity": 1,
+  "Mathlib.MeasureTheory.Integral.IntegralEqImproper": 1,
+  "Mathlib.NumberTheory.Bernoulli": 1,
+  "Mathlib.NumberTheory.Chebyshev": 1,
+  "Mathlib.NumberTheory.Harmonic.Bounds": 2,
+  "Mathlib.NumberTheory.Harmonic.Defs": 1,
+  "Mathlib.NumberTheory.Harmonic.EulerMascheroni": 1,
+  "Mathlib.NumberTheory.LSeries.PrimesInAP": 1,
+  "Mathlib.NumberTheory.MulChar.Lemmas": 1,
+  "Mathlib.NumberTheory.ZetaValues": 1,
+  "Mathlib.Order.Filter.ZeroAndBoundedAtFilter": 2,
+  "Mathlib.RingTheory.Derivation.Basic": 1,
+  "Mathlib.RingTheory.LaurentSeries": 1,
+  "Mathlib.RingTheory.Polynomial.Resultant.Basic": 1,
+  "Mathlib.RingTheory.PowerSeries.WellKnown": 1,
+  "Mathlib.Tactic": 1,
+  "Mathlib.Tactic.Bound": 1,
+  "Mathlib.Topology.Algebra.InfiniteSum.Real": 2,
+  "Mathlib.Topology.Algebra.IsUniformGroup.Basic": 1,
+  "Mathlib.Topology.ContinuousMap.Bounded.Basic": 1,
+  "Mathlib.Topology.EMetricSpace.BoundedVariation": 1,
+  "Mathlib.Topology.Order.Compact": 1
+ },
+ "import_roots": {
+  "Batteries": 6,
+  "Mathlib": 53
+ },
+ "uses": {
+  "Algebra": 9,
+  "AnalyticAt": 9,
+  "ArithmeticFunction": 2,
+  "BorelSpace": 1,
+  "CauchySeq": 1,
+  "CharZero": 8,
+  "Complex": 6,
+  "Complex.exp": 14,
+  "ContDiff": 16,
+  "Continuous": 30,
+  "Convex": 1,
+  "Differentiable": 2,
+  "DifferentiableOn": 2,
+  "EReal": 8,
+  "Field": 9,
+  "Filter": 91,
+  "Filter.Tendsto": 47,
+  "Finset": 24,
+  "HasDerivAt": 30,
+  "HasFDerivAt": 1,
+  "HasSum": 23,
+  "IsCompact": 4,
+  "IsCoprime": 3,
+  "List": 4,
+  "Measurable": 8,
+  "MeasurableSet": 5,
+  "MeasurableSpace": 2,
+  "MeasureTheory.Integrable": 11,
+  "MeasureTheory.IsProbabilityMeasure": 3,
+  "MeasureTheory.Measure": 2,
+  "MeasureTheory.charFun": 7,
+  "Metric.ball": 2,
+  "Nat": 1,
+  "NormedSpace": 4,
+  "PMF": 8,
+  "Polynomial": 42,
+  "Polynomial.derivative": 10,
+  "Polynomial.eval": 1,
+  "PowerSeries": 17,
+  "ProbabilityTheory.variance": 2,
+  "RatFunc": 3,
+  "Real": 4,
+  "Real.exp": 34,
+  "Real.fourier_eq": 2,
+  "Real.log": 80,
+  "Real.sin": 1,
+  "Ring": 1,
+  "SchwartzMap": 3,
+  "Set": 64,
+  "Subfield": 2,
+  "Summable.of_norm": 1,
+  "TopologicalSpace": 1,
+  "bernoulli": 7,
+  "closure": 1,
+  "continuous_tsum": 1,
+  "fderiv": 2,
+  "intermediate_value_Icc": 3,
+  "iteratedDeriv": 12,
+  "norm_add_le": 7
+ },
+ "ci": "FAILURE"
+}

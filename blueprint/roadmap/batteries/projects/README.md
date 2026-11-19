@@ -1,0 +1,35 @@
+# Projects building on Batteries: the extended library for Lean (28)
+
+Lean projects outside the libraries mapped here that require neither Mathlib nor another library mapped here, read at a pinned commit without Lean, one card each.
+
+## [BMS 良序性证明的 Lean 形式化 to velvet](part-01/README.md)
+
+- [BMS 良序性证明的 Lean 形式化](part-01/egofakefantasy--bms-well-ordering-lean.md)
+- [Cedar Specification](part-01/cedar-policy--cedar-spec.md)
+- [clifv](part-01/eth-act--clifv.md)
+- [con-agua](part-01/leanprover--con-agua.md)
+- [Formalizing Julia in Lean](part-01/milescranmer--julia-in-lean.md)
+- [graphql-lean](part-01/duckki--graphql-lean.md)
+- [Hesper](part-01/verilean--hesper.md)
+- [Hypernets in Lean 4](part-01/danghica--hypernets-lean.md)
+- [Ix: a zero-knowledge proof-carrying code platform](part-01/argumentcomputer--ix.md)
+- [lean-miri](part-01/proofs-rs--lean-miri.md)
+- [lean-zip](part-01/kim-em--lean-zip.md)
+- [LeanCIL: Formal Verification for .NET](part-01/nethermindeth--leancil.md)
+- [LNSym: Native Code Symbolic Simulator in Lean](part-01/leanprover--lnsym.md)
+- [LYNX](part-01/josevalim--lynx.md)
+- [Perennial](part-01/mit-pdos--perennial.md)
+- [python-formalization](part-01/broyojo--python-formalization.md)
+- [qedsvm](part-01/qedgen--qedsvm.md)
+- [Ship your interpreter](part-01/basisresearch--ship-your-interpreter.md)
+- [Sparkle HDL](part-01/verilean--sparkle.md)
+- [velvet](part-01/verse-lab--velvet.md)
+
+## [VeriDNS to xv6iris](part-02/README.md)
+
+- [VeriDNS](part-02/basisresearch--veridns.md)
+- [Verified Intermediate Representation](part-02/opencompl--veir.md)
+- [verified-libtommath](part-02/basisresearch--verified-libtommath.md)
+- [What is seLe4n?](part-02/hatter6822--sele4n.md)
+- [Why](part-02/cristianoc--tscert.md)
+- [xv6iris](part-02/mit-pdos--xv6iris.md)

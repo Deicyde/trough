@@ -1,0 +1,193 @@
+{
+ "schema": "trough-satellites/v1",
+ "repo": "RBarish-UTokyo/FourColorTheorem-Lean4",
+ "slug": "rbarish-utokyo--fourcolortheorem-lean4",
+ "rev": "20fa34599f5189dd569d96dd22f306c94ab1c446",
+ "date": "2026-09-26T16:14:19Z",
+ "stable": "e9f48167f603ac9e66eee1d08825121f0959e91c40e49dd7acc85f8a854dd9a7",
+ "license": {
+  "files": [
+   "LICENSE",
+   "LICENSES/CeCILL-B.txt"
+  ],
+  "spdx": "Apache-2.0",
+  "file": "LICENSE",
+  "copyright": []
+ },
+ "readme": {
+  "file": "README.md",
+  "title": "The Four Color Theorem in Lean 4",
+  "excerpt": "A Lean 4 + Mathlib port of Georges Gonthier's Coq/Rocq formal proof of the Four Color Theorem, [math-comp/fourcolor](https://github.com/math-comp/fourcolor) (ported from commit `c1d6b1cd5288bea4b067aac13cdde3c18dffe018`). It is written for the Palomar registry's standards: the proof may use only the axioms `propext`, `Classical.choice` and `Quot.sound`, and every computation in it is checked by the Lean kernel (`decide +kernel`, never `native_decide`)."
+ },
+ "lean_files": 816,
+ "admitted": true,
+ "folder": "",
+ "toolchain": "v4.35.0-rc2",
+ "mathlib": "065356127b1dc0016f66b7283ce0ce2c4055aa55",
+ "requirements": [],
+ "libraries": [
+  {
+   "name": "FourColor",
+   "src": "."
+  },
+  {
+   "name": "Challenge",
+   "src": "."
+  },
+  {
+   "name": "Solution",
+   "src": "."
+  }
+ ],
+ "library_files": 815,
+ "capped": false,
+ "declarations": 10805,
+ "sorry_files": 1,
+ "axioms": 0,
+ "closure_files": 803,
+ "closure_sorry": [],
+ "closure_axioms": 0,
+ "root_modules": [
+  {
+   "name": "Challenge",
+   "file": "Challenge.lean"
+  },
+  {
+   "name": "FourColor",
+   "file": "FourColor.lean"
+  },
+  {
+   "name": "Solution",
+   "file": "Solution.lean"
+  }
+ ],
+ "root_closure_files": 811,
+ "root_closure_sorry": [
+  "Challenge.lean"
+ ],
+ "root_closure_axioms": 0,
+ "unclosed_files": 0,
+ "headline_rule": "readme",
+ "headline_count": 92,
+ "headlines": [
+  {
+   "name": "FourColor.RealPlane.compactness_extension",
+   "module": "FourColor.Finitize",
+   "file": "FourColor/Finitize.lean",
+   "line": 777,
+   "kind": "theorem",
+   "sorry": false,
+   "names": []
+  },
+  {
+   "name": "FourColor.RealPlane.discretize_to_hypermap",
+   "module": "FourColor.Discretize",
+   "file": "FourColor/Discretize.lean",
+   "line": 682,
+   "kind": "theorem",
+   "sorry": false,
+   "names": []
+  },
+  {
+   "name": "FourColor.four_color_hypermap",
+   "module": "FourColor.FourColorThm",
+   "file": "FourColor/FourColorThm.lean",
+   "line": 41,
+   "kind": "theorem",
+   "sorry": false,
+   "names": []
+  },
+  {
+   "name": "FourColor.unavoidability",
+   "module": "FourColor.Unavoidability",
+   "file": "FourColor/Unavoidability.lean",
+   "line": 93,
+   "kind": "theorem",
+   "sorry": false,
+   "names": []
+  },
+  {
+   "name": "FourColor.exclude5",
+   "module": "FourColor.Present.P5.Exclude",
+   "file": "FourColor/Present/P5/Exclude.lean",
+   "line": 96,
+   "kind": "theorem",
+   "sorry": false,
+   "names": []
+  },
+  {
+   "name": "FourColor.exclude11",
+   "module": "FourColor.Present.P11.Exclude",
+   "file": "FourColor/Present/P11/Exclude.lean",
+   "line": 1249,
+   "kind": "theorem",
+   "sorry": false,
+   "names": []
+  },
+  {
+   "name": "FourColor.theReducibility",
+   "module": "FourColor.Reducibility",
+   "file": "FourColor/Reducibility.lean",
+   "line": 1389,
+   "kind": "theorem",
+   "sorry": false,
+   "names": []
+  },
+  {
+   "name": "FourColor.cfreducible_of_engine",
+   "module": "FourColor.CfReducible",
+   "file": "FourColor/CfReducible.lean",
+   "line": 82,
+   "kind": "theorem",
+   "sorry": false,
+   "names": [
+    "List",
+    "Nat",
+    "tau"
+   ]
+  }
+ ],
+ "mathlib_imports": {
+  "Mathlib.Algebra.BigOperators.Group.Finset.Basic": 1,
+  "Mathlib.Algebra.Group.InjSurj": 1,
+  "Mathlib.Algebra.Order.Archimedean.Basic": 1,
+  "Mathlib.Algebra.Order.Archimedean.Real.Basic": 1,
+  "Mathlib.Algebra.Order.Floor.Ring": 1,
+  "Mathlib.Basic.Real.Basic": 2,
+  "Mathlib.Data.Fintype.Card": 1,
+  "Mathlib.Data.Fintype.Defs": 1,
+  "Mathlib.Data.List.Basic": 1,
+  "Mathlib.Data.List.GetD": 1,
+  "Mathlib.Data.List.Infix": 1,
+  "Mathlib.Data.List.Iterate": 2,
+  "Mathlib.Data.List.Nodup": 1,
+  "Mathlib.Data.List.Perm.Basic": 1,
+  "Mathlib.Data.List.Rotate": 3,
+  "Mathlib.Data.Nat.Bitwise": 1,
+  "Mathlib.Data.Nat.Choose.Basic": 1,
+  "Mathlib.Data.Set.Card": 1,
+  "Mathlib.GroupTheory.Perm.Cycle.Basic": 1,
+  "Mathlib.Logic.Encodable.Basic": 2,
+  "Mathlib.Logic.Relation": 1,
+  "Mathlib.Tactic.FinCases": 1,
+  "Mathlib.Tactic.Linarith": 2,
+  "Mathlib.Tactic.Positivity": 1,
+  "Mathlib.Tactic.Ring": 3,
+  "Mathlib.Tactic.Zify": 1
+ },
+ "import_roots": {
+  "Lean": 1,
+  "Mathlib": 16
+ },
+ "uses": {
+  "Array": 1,
+  "Equiv.Perm": 1,
+  "Finset": 2,
+  "List": 76,
+  "Nat": 19,
+  "Set": 19,
+  "closure": 8,
+  "orderOf": 1
+ },
+ "ci": null
+}

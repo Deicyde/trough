@@ -1,0 +1,122 @@
+{
+ "schema": "trough-satellites/v1",
+ "repo": "mahdi-jfri/StrongPerfectGraphTheorem",
+ "slug": "mahdi-jfri--strongperfectgraphtheorem",
+ "rev": "f81220fa3d8ebf987d44ab452f3abadb13c0ac2d",
+ "date": "2026-11-05T19:00:38Z",
+ "stable": "28a2002bbe222803afacce2ec756f32e11585521ad5e464537229b01bbc8e0f4",
+ "license": {
+  "files": [
+   "LICENSE"
+  ],
+  "spdx": "Apache-2.0",
+  "file": "LICENSE",
+  "copyright": []
+ },
+ "readme": {
+  "file": "README.md",
+  "title": "The Strong Perfect Graph Theorem in Lean",
+  "excerpt": null
+ },
+ "lean_files": 1210,
+ "admitted": true,
+ "folder": "",
+ "toolchain": "v4.35.0-rc3",
+ "mathlib": "b63f6e8a68d220e3b3bc4f3792bb53650d375f24",
+ "requirements": [],
+ "libraries": [
+  {
+   "name": "StrongPerfectGraphTheorem",
+   "src": "."
+  },
+  {
+   "name": "Challenge",
+   "src": "."
+  },
+  {
+   "name": "Solution",
+   "src": "."
+  }
+ ],
+ "library_files": 1210,
+ "capped": false,
+ "declarations": 5416,
+ "sorry_files": 1,
+ "axioms": 0,
+ "closure_files": 1201,
+ "closure_sorry": [],
+ "closure_axioms": 0,
+ "root_modules": [
+  {
+   "name": "Challenge",
+   "file": "Challenge.lean"
+  },
+  {
+   "name": "Solution",
+   "file": "Solution.lean"
+  },
+  {
+   "name": "StrongPerfectGraphTheorem",
+   "file": "StrongPerfectGraphTheorem.lean"
+  }
+ ],
+ "root_closure_files": 1210,
+ "root_closure_sorry": [
+  "Challenge.lean"
+ ],
+ "root_closure_axioms": 0,
+ "unclosed_files": 0,
+ "headline_rule": "readme",
+ "headline_count": 1,
+ "headlines": [
+  {
+   "name": "StrongPerfectGraphTheorem.MainTheorem.SPGT.thm_1_2",
+   "module": "StrongPerfectGraphTheorem.MainTheorem",
+   "file": "StrongPerfectGraphTheorem/MainTheorem.lean",
+   "line": 132,
+   "kind": "theorem",
+   "sorry": false,
+   "names": [
+    "SimpleGraph"
+   ]
+  }
+ ],
+ "mathlib_imports": {
+  "Mathlib.Combinatorics.Pigeonhole": 1,
+  "Mathlib.Combinatorics.SimpleGraph.Bipartite": 3,
+  "Mathlib.Combinatorics.SimpleGraph.Circulant": 2,
+  "Mathlib.Combinatorics.SimpleGraph.Clique": 2,
+  "Mathlib.Combinatorics.SimpleGraph.Coloring.Constructions": 1,
+  "Mathlib.Combinatorics.SimpleGraph.Coloring.Vertex": 2,
+  "Mathlib.Combinatorics.SimpleGraph.Coloring.VertexColoring": 5,
+  "Mathlib.Combinatorics.SimpleGraph.Copy": 3,
+  "Mathlib.Combinatorics.SimpleGraph.CycleGraph": 3,
+  "Mathlib.Combinatorics.SimpleGraph.DeleteEdges": 2,
+  "Mathlib.Combinatorics.SimpleGraph.Finite": 3,
+  "Mathlib.Combinatorics.SimpleGraph.Hall": 1,
+  "Mathlib.Combinatorics.SimpleGraph.LineGraph": 3,
+  "Mathlib.Combinatorics.SimpleGraph.Maps": 1,
+  "Mathlib.Combinatorics.SimpleGraph.Matching": 2,
+  "Mathlib.Combinatorics.SimpleGraph.Subgraph": 3,
+  "Mathlib.Data.Fin.Basic": 1,
+  "Mathlib.Data.Set.Card": 1,
+  "Mathlib.Logic.Equiv.Fin.Basic": 1,
+  "Mathlib.Tactic": 1
+ },
+ "import_roots": {
+  "Mathlib": 786
+ },
+ "uses": {
+  "Equiv.Perm": 26,
+  "Finset": 76,
+  "Finset.all_card_le_biUnion_card_iff_exists_injective": 2,
+  "Finset.card_powerset": 1,
+  "Fintype.exists_lt_card_fiber_of_mul_lt_card": 1,
+  "Int": 1,
+  "List": 983,
+  "Nat": 9,
+  "Set": 1068,
+  "SimpleGraph": 1190
+ },
+ "ci": "FAILURE"
+}

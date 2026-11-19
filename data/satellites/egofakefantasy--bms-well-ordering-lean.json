@@ -1,0 +1,76 @@
+{
+ "schema": "trough-satellites/v1",
+ "repo": "EgoFakeFantasy/BMS-Well-Ordering-Lean",
+ "slug": "egofakefantasy--bms-well-ordering-lean",
+ "rev": "3a4a945fd8dfc32e608189aa1d70d7e42912d353",
+ "date": "2026-10-28T07:28:53Z",
+ "stable": "392cad8cd38ba2c20e76f64f058bcd9c8de9b05c279593d0056fe8697372f3dd",
+ "license": {
+  "files": [
+   "LICENSE"
+  ],
+  "spdx": "Apache-2.0",
+  "file": "LICENSE",
+  "copyright": []
+ },
+ "readme": {
+  "file": "README.md",
+  "title": "BMS 良序性证明的 Lean 形式化",
+  "excerpt": null
+ },
+ "lean_files": 3229,
+ "admitted": true,
+ "folder": "",
+ "toolchain": "v4.33.1",
+ "mathlib": "",
+ "requirements": [],
+ "libraries": [
+  {
+   "name": "YesMetaZFC",
+   "src": "."
+  }
+ ],
+ "library_files": 834,
+ "capped": false,
+ "declarations": 13490,
+ "sorry_files": 6,
+ "axioms": 0,
+ "closure_files": 0,
+ "closure_sorry": [],
+ "closure_axioms": 0,
+ "root_modules": [
+  {
+   "name": "YesMetaZFC",
+   "file": "YesMetaZFC.lean"
+  }
+ ],
+ "root_closure_files": 794,
+ "root_closure_sorry": [
+  "YesMetaZFC/Automation/HostFirstOrder/Backend.lean",
+  "YesMetaZFC/Automation/HostHigherOrder.lean",
+  "YesMetaZFC/Automation/HostRules/Backend.lean",
+  "YesMetaZFC/Automation/Request.lean",
+  "YesMetaZFC/SetTheory/Automation/Context.lean"
+ ],
+ "root_closure_axioms": 0,
+ "unclosed_files": 1,
+ "headline_rule": null,
+ "headline_count": 0,
+ "headlines": [],
+ "mathlib_imports": {},
+ "import_roots": {
+  "Init": 2,
+  "Lean": 37,
+  "Std": 1
+ },
+ "uses": {
+  "Array": 84,
+  "List": 246,
+  "Nat": 441,
+  "Ordinal": 1,
+  "Set": 1,
+  "Std.HashMap": 2,
+  "closure": 1
+ },
+ "ci": "SUCCESS"
+}

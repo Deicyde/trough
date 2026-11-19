@@ -1,0 +1,80 @@
+{
+ "schema": "trough-satellites/v1",
+ "repo": "spitters/catcrypt-compiler",
+ "slug": "spitters--catcrypt-compiler",
+ "rev": "7d671a89da474faff8010b4607a152ee2c4a3ae6",
+ "date": "2026-11-13T21:14:18Z",
+ "stable": "4f6f0e7b789dc3c0bdca3dc376a86fb7fc568f51e9876de760311555b763e195",
+ "license": {
+  "files": [
+   "LICENSE"
+  ],
+  "spdx": "MIT",
+  "file": "LICENSE",
+  "copyright": [
+   "Copyright (c) 2024-2026 CatCrypt Contributors"
+  ]
+ },
+ "readme": {
+  "file": "README.md",
+  "title": "CatCrypt compiler",
+  "excerpt": "A verified compiler for cryptographic code, written in Lean 4, in the tradition of Jasmin and CT-CompCert. Its sources are Rust, through hax, Lean, and Jasmin, through an [importer](JINC_IMPORT.md). The [overview](OVERVIEW.md) follows one function from source to machine code."
+ },
+ "lean_files": 3743,
+ "admitted": true,
+ "folder": "",
+ "toolchain": "v4.35.0",
+ "mathlib": "",
+ "requirements": [],
+ "libraries": [
+  {
+   "name": "CatCryptCompiler",
+   "src": "."
+  },
+  {
+   "name": "CatCryptCompilerExamples",
+   "src": "."
+  },
+  {
+   "name": "CatCryptCompilerVeir",
+   "src": "."
+  },
+  {
+   "name": "HaxAscent",
+   "src": "."
+  }
+ ],
+ "library_files": 73,
+ "capped": false,
+ "declarations": 1837,
+ "sorry_files": 2,
+ "axioms": 0,
+ "closure_files": 0,
+ "closure_sorry": [],
+ "closure_axioms": 0,
+ "root_modules": [],
+ "root_closure_files": 0,
+ "root_closure_sorry": [],
+ "root_closure_axioms": 0,
+ "unclosed_files": 0,
+ "headline_rule": null,
+ "headline_count": 0,
+ "headlines": [],
+ "mathlib_imports": {},
+ "import_roots": {
+  "Batteries": 1,
+  "CatCryptCore": 3,
+  "HaxLean": 17,
+  "Lean": 4,
+  "Std": 4
+ },
+ "uses": {
+  "Array": 17,
+  "Field": 1,
+  "Int": 36,
+  "List": 45,
+  "Nat": 46,
+  "Std.HashMap": 3
+ },
+ "ci": "SUCCESS"
+}

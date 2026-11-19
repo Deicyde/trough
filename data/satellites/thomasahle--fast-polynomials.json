@@ -1,0 +1,171 @@
+{
+ "schema": "trough-satellites/v1",
+ "repo": "thomasahle/fast-polynomials",
+ "slug": "thomasahle--fast-polynomials",
+ "rev": "09a36b0e7a6c153462bd43b91d4a3bb7ac886bef",
+ "date": "2026-10-13T19:55:01Z",
+ "stable": "2d824a01576b2b209fed20fa97c41b23dfb9e8921ba590d0d6a7e9770390996c",
+ "license": {
+  "files": [
+   "LICENSE"
+  ],
+  "spdx": "MIT",
+  "file": "LICENSE",
+  "copyright": [
+   "Copyright (c) 2026 Thomas Ahle"
+  ]
+ },
+ "readme": {
+  "file": "README.md",
+  "title": "Fast Polynomials",
+  "excerpt": "Evaluate a polynomial of degree *n* with about *n*/2 multiplications instead of Horner's *n*, after a one-time, exact preprocessing of its coefficients."
+ },
+ "lean_files": 372,
+ "admitted": true,
+ "folder": "",
+ "toolchain": "v4.27.0-rc1",
+ "mathlib": "16635ad47947fa897163ee5f3362a2f18f61b6fd",
+ "requirements": [],
+ "libraries": [
+  {
+   "name": "FastPoly",
+   "src": "."
+  }
+ ],
+ "library_files": 372,
+ "capped": false,
+ "declarations": 7090,
+ "sorry_files": 0,
+ "axioms": 0,
+ "closure_files": 195,
+ "closure_sorry": [],
+ "closure_axioms": 0,
+ "root_modules": [
+  {
+   "name": "FastPoly",
+   "file": "FastPoly.lean"
+  }
+ ],
+ "root_closure_files": 363,
+ "root_closure_sorry": [],
+ "root_closure_axioms": 0,
+ "unclosed_files": 0,
+ "headline_rule": "readme",
+ "headline_count": 2,
+ "headlines": [
+  {
+   "name": "FastPoly.LowerBound.General.no_rationalInverse_general",
+   "module": "FastPoly.LowerBound.General.Main",
+   "file": "FastPoly/LowerBound/General/Main.lean",
+   "line": 134,
+   "kind": "theorem",
+   "sorry": false,
+   "names": [
+    "Matrix"
+   ]
+  },
+  {
+   "name": "FastPoly.Char2Finite.monic_evaluation",
+   "module": "FastPoly.Examples.Char2Finite",
+   "file": "FastPoly/Examples/Char2Finite.lean",
+   "line": 108,
+   "kind": "theorem",
+   "sorry": false,
+   "names": []
+  }
+ ],
+ "mathlib_imports": {
+  "Mathlib.Algebra.Algebra.Basic": 1,
+  "Mathlib.Algebra.Algebra.Hom": 1,
+  "Mathlib.Algebra.Algebra.Subalgebra.Basic": 1,
+  "Mathlib.Algebra.BigOperators.Fin": 4,
+  "Mathlib.Algebra.CharP.Basic": 3,
+  "Mathlib.Algebra.CharP.Lemmas": 2,
+  "Mathlib.Algebra.CharP.Two": 3,
+  "Mathlib.Algebra.CharZero.Defs": 1,
+  "Mathlib.Algebra.Field.Basic": 2,
+  "Mathlib.Algebra.GroupWithZero.Units.Basic": 1,
+  "Mathlib.Algebra.MvPolynomial.CommRing": 1,
+  "Mathlib.Algebra.MvPolynomial.Funext": 1,
+  "Mathlib.Algebra.MvPolynomial.Monad": 1,
+  "Mathlib.Algebra.MvPolynomial.PDeriv": 2,
+  "Mathlib.Algebra.Polynomial.AlgebraMap": 2,
+  "Mathlib.Algebra.Polynomial.Basic": 1,
+  "Mathlib.Algebra.Polynomial.BigOperators": 1,
+  "Mathlib.Algebra.Polynomial.Coeff": 2,
+  "Mathlib.Algebra.Polynomial.Degree.Definitions": 1,
+  "Mathlib.Algebra.Polynomial.Degree.IsMonicOfDegree": 6,
+  "Mathlib.Algebra.Polynomial.Degree.Operations": 1,
+  "Mathlib.Algebra.Polynomial.Div": 5,
+  "Mathlib.Algebra.Polynomial.Eval.Degree": 1,
+  "Mathlib.Algebra.Polynomial.Expand": 1,
+  "Mathlib.Algebra.Polynomial.Monic": 2,
+  "Mathlib.Algebra.Polynomial.Reverse": 2,
+  "Mathlib.Algebra.Ring.Divisibility.Lemmas": 1,
+  "Mathlib.Data.Fin.SuccPred": 1,
+  "Mathlib.Data.Fin.Tuple.Basic": 1,
+  "Mathlib.Data.Fin.VecNotation": 3,
+  "Mathlib.Data.Finset.Piecewise": 1,
+  "Mathlib.Data.Fintype.Basic": 1,
+  "Mathlib.Data.Fintype.BigOperators": 1,
+  "Mathlib.Data.Fintype.EquivFin": 2,
+  "Mathlib.Data.Fintype.Order": 1,
+  "Mathlib.Data.Fintype.Pigeonhole": 1,
+  "Mathlib.Data.Fintype.Sum": 1,
+  "Mathlib.Data.Nat.Basic": 1,
+  "Mathlib.Data.Nat.Log": 2,
+  "Mathlib.Data.Set.Function": 1,
+  "Mathlib.FieldTheory.Perfect": 2,
+  "Mathlib.LinearAlgebra.Lagrange": 2,
+  "Mathlib.LinearAlgebra.Matrix.Adjugate": 1,
+  "Mathlib.LinearAlgebra.Matrix.Block": 1,
+  "Mathlib.LinearAlgebra.Matrix.Determinant.Basic": 1,
+  "Mathlib.LinearAlgebra.Matrix.NonsingularInverse": 2,
+  "Mathlib.LinearAlgebra.Matrix.ToLin": 1,
+  "Mathlib.LinearAlgebra.Matrix.ToLinearEquiv": 2,
+  "Mathlib.Logic.Equiv.Basic": 1,
+  "Mathlib.Logic.Equiv.Fin.Basic": 1,
+  "Mathlib.Order.WellFoundedSet": 1,
+  "Mathlib.RingTheory.Adjoin.Basic": 2,
+  "Mathlib.RingTheory.MvPolynomial.Basic": 1,
+  "Mathlib.RingTheory.Noetherian.Orzech": 1,
+  "Mathlib.RingTheory.Polynomial.Basic": 3,
+  "Mathlib.SetTheory.Cardinal.Finite": 1,
+  "Mathlib.Tactic.ComputeDegree": 1,
+  "Mathlib.Tactic.FieldSimp": 2,
+  "Mathlib.Tactic.FinCases": 19,
+  "Mathlib.Tactic.IntervalCases": 9,
+  "Mathlib.Tactic.LinearCombination": 11,
+  "Mathlib.Tactic.NormNum": 3,
+  "Mathlib.Tactic.NormNum.NatLog": 1,
+  "Mathlib.Tactic.Ring": 11
+ },
+ "import_roots": {
+  "Lean": 4,
+  "Mathlib": 81
+ },
+ "uses": {
+  "Algebra": 124,
+  "Array": 1,
+  "CharP": 195,
+  "CharZero": 3,
+  "Field": 70,
+  "Finset": 52,
+  "Fintype.exists_ne_map_eq_of_card_lt": 2,
+  "Ideal": 1,
+  "IsNoetherian": 1,
+  "IsNoetherianRing": 3,
+  "Lagrange.interpolate": 2,
+  "Matrix": 18,
+  "Matrix.det": 1,
+  "MvPolynomial": 13,
+  "Nat": 1,
+  "Polynomial": 285,
+  "Ring": 5,
+  "Set": 10,
+  "add_pow": 2,
+  "frobenius": 1,
+  "ringChar": 2
+ },
+ "ci": "SUCCESS"
+}

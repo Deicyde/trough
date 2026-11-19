@@ -1,0 +1,304 @@
+{
+ "schema": "trough-satellites/v1",
+ "repo": "bryangingechen/CombinatorialRigidity",
+ "slug": "bryangingechen--combinatorialrigidity",
+ "rev": "072e20b5a0b9ed41b7d0e018b93c49a47a9db8a8",
+ "date": "2026-11-13T23:16:18Z",
+ "stable": "821617f7499eafc157c8bbf4491735e045e14212f2d6862dc2681449a3e7dcc4",
+ "license": {
+  "files": [
+   "LICENSE"
+  ],
+  "spdx": "Apache-2.0",
+  "file": "LICENSE",
+  "copyright": []
+ },
+ "readme": {
+  "file": "README.md",
+  "title": "CombinatorialRigidity",
+  "excerpt": "A Lean 4 / mathlib4 formalization of combinatorial rigidity theory. It began with **Laman's theorem** (Pollaczek-Geiringer 1927, Laman 1970): for `n ≥ 2`, a graph is generically rigid in the plane iff it contains a `(2, 3)`-tight spanning subgraph."
+ },
+ "lean_files": 221,
+ "admitted": true,
+ "folder": "",
+ "toolchain": "v4.36.0-rc1",
+ "mathlib": "ba5499e069f24171b4be2229dea365c897205f5e",
+ "requirements": [
+  {
+   "name": "Matroid",
+   "url": "https://github.com/apnelson1/Matroid.git",
+   "rev": "8ece6307a54854484c9b5fa40b9ed3c5ccc8e42b"
+  }
+ ],
+ "libraries": [
+  {
+   "name": "CombinatorialRigidity",
+   "src": "."
+  }
+ ],
+ "library_files": 197,
+ "capped": false,
+ "declarations": 3226,
+ "sorry_files": 0,
+ "axioms": 0,
+ "closure_files": 26,
+ "closure_sorry": [],
+ "closure_axioms": 0,
+ "root_modules": [
+  {
+   "name": "CombinatorialRigidity",
+   "file": "CombinatorialRigidity.lean"
+  }
+ ],
+ "root_closure_files": 197,
+ "root_closure_sorry": [],
+ "root_closure_axioms": 0,
+ "unclosed_files": 0,
+ "headline_rule": "blueprint",
+ "headline_count": 85,
+ "headlines": [
+  {
+   "name": "SimpleGraph.IsTight.not_isSparse_of_lt",
+   "module": "CombinatorialRigidity.Sparsity",
+   "file": "CombinatorialRigidity/Sparsity.lean",
+   "line": 307,
+   "kind": "theorem",
+   "sorry": false,
+   "names": [
+    "SimpleGraph"
+   ]
+  },
+  {
+   "name": "SimpleGraph.IsLaman.exists_two_le_degree_le_three",
+   "module": "CombinatorialRigidity.Laman",
+   "file": "CombinatorialRigidity/Laman.lean",
+   "line": 104,
+   "kind": "theorem",
+   "sorry": false,
+   "names": [
+    "SimpleGraph"
+   ]
+  },
+  {
+   "name": "SimpleGraph.Henneberg.typeII_isLaman",
+   "module": "CombinatorialRigidity.Henneberg",
+   "file": "CombinatorialRigidity/Henneberg.lean",
+   "line": 373,
+   "kind": "theorem",
+   "sorry": false,
+   "names": [
+    "SimpleGraph"
+   ]
+  },
+  {
+   "name": "SimpleGraph.top_fin_four_minus_edge_isLaman",
+   "module": "CombinatorialRigidity.HennebergReverse",
+   "file": "CombinatorialRigidity/HennebergReverse.lean",
+   "line": 235,
+   "kind": "theorem",
+   "sorry": false,
+   "names": [
+    "SimpleGraph"
+   ]
+  },
+  {
+   "name": "SimpleGraph.IsGenericallyRigidInj.mono",
+   "module": "CombinatorialRigidity.Framework",
+   "file": "CombinatorialRigidity/Framework.lean",
+   "line": 308,
+   "kind": "theorem",
+   "sorry": false,
+   "names": [
+    "SimpleGraph"
+   ]
+  },
+  {
+   "name": "SimpleGraph.IsGenericallyRigid.iso",
+   "module": "CombinatorialRigidity.Framework",
+   "file": "CombinatorialRigidity/Framework.lean",
+   "line": 232,
+   "kind": "theorem",
+   "sorry": false,
+   "names": [
+    "SimpleGraph"
+   ]
+  },
+  {
+   "name": "SimpleGraph.top_fin_two_isGenericallyRigid",
+   "module": "CombinatorialRigidity.Framework",
+   "file": "CombinatorialRigidity/Framework.lean",
+   "line": 377,
+   "kind": "theorem",
+   "sorry": false,
+   "names": [
+    "SimpleGraph"
+   ]
+  },
+  {
+   "name": "SimpleGraph.IsGenericallyRigid.card_mul_le_two",
+   "module": "CombinatorialRigidity.LamanTheorem",
+   "file": "CombinatorialRigidity/LamanTheorem.lean",
+   "line": 48,
+   "kind": "theorem",
+   "sorry": false,
+   "names": [
+    "SimpleGraph"
+   ]
+  }
+ ],
+ "mathlib_imports": {
+  "Mathlib.Algebra.BigOperators.Group.Finset.Basic": 1,
+  "Mathlib.Algebra.BigOperators.Ring.Finset": 1,
+  "Mathlib.Algebra.Module.Submodule.Union": 1,
+  "Mathlib.Algebra.Module.Torsion.Field": 1,
+  "Mathlib.Algebra.MvPolynomial.Eval": 1,
+  "Mathlib.Algebra.MvPolynomial.Funext": 1,
+  "Mathlib.Algebra.MvPolynomial.Monad": 1,
+  "Mathlib.Algebra.Order.Algebra": 1,
+  "Mathlib.Algebra.Order.BigOperators.Group.Finset": 2,
+  "Mathlib.Algebra.Polynomial.Roots": 3,
+  "Mathlib.Analysis.InnerProductSpace.Adjoint": 1,
+  "Mathlib.Analysis.InnerProductSpace.PiL2": 2,
+  "Mathlib.Analysis.Normed.Module.FiniteDimension": 1,
+  "Mathlib.Analysis.SpecialFunctions.Pow.NNReal": 1,
+  "Mathlib.Basic.Countable.Defs": 1,
+  "Mathlib.Basic.Real.Basic": 2,
+  "Mathlib.Combinatorics.Graph.Basic": 4,
+  "Mathlib.Combinatorics.Graph.Delete": 3,
+  "Mathlib.Combinatorics.Matroid.IndepAxioms": 1,
+  "Mathlib.Combinatorics.Matroid.Init": 1,
+  "Mathlib.Combinatorics.Matroid.Sum": 1,
+  "Mathlib.Combinatorics.SimpleGraph.Acyclic": 1,
+  "Mathlib.Combinatorics.SimpleGraph.Basic": 1,
+  "Mathlib.Combinatorics.SimpleGraph.Clique": 2,
+  "Mathlib.Combinatorics.SimpleGraph.Connectivity.Connected": 1,
+  "Mathlib.Combinatorics.SimpleGraph.DegreeSum": 2,
+  "Mathlib.Combinatorics.SimpleGraph.DeleteEdges": 6,
+  "Mathlib.Combinatorics.SimpleGraph.Finite": 2,
+  "Mathlib.Combinatorics.SimpleGraph.Maps": 2,
+  "Mathlib.Combinatorics.SimpleGraph.Star": 1,
+  "Mathlib.Combinatorics.SimpleGraph.Walk.Maps": 1,
+  "Mathlib.Combinatorics.SimpleGraph.Walk.Traversal": 1,
+  "Mathlib.Data.Fin.SuccPred": 1,
+  "Mathlib.Data.Fin.VecNotation": 1,
+  "Mathlib.Data.Finset.Basic": 2,
+  "Mathlib.Data.Finset.BooleanAlgebra": 1,
+  "Mathlib.Data.Finset.Card": 2,
+  "Mathlib.Data.Finset.CastCard": 1,
+  "Mathlib.Data.Finset.Insert": 1,
+  "Mathlib.Data.Finset.Option": 1,
+  "Mathlib.Data.Finset.Sort": 3,
+  "Mathlib.Data.Finset.Sym": 1,
+  "Mathlib.Data.Fintype.Basic": 1,
+  "Mathlib.Data.Fintype.Card": 2,
+  "Mathlib.Data.Fintype.EquivFin": 1,
+  "Mathlib.Data.Fintype.Inv": 1,
+  "Mathlib.Data.Fintype.Powerset": 1,
+  "Mathlib.Data.Fintype.Prod": 1,
+  "Mathlib.Data.List.Chain": 1,
+  "Mathlib.Data.List.GetD": 1,
+  "Mathlib.Data.List.Nodup": 1,
+  "Mathlib.Data.Matrix.ColumnRowPartitioned": 1,
+  "Mathlib.Data.Set.Card": 5,
+  "Mathlib.Data.Set.Card.Arithmetic": 2,
+  "Mathlib.Data.Set.Insert": 1,
+  "Mathlib.Data.Set.Subsingleton": 1,
+  "Mathlib.Data.Sym.Sym2": 2,
+  "Mathlib.GroupTheory.CosetCover": 1,
+  "Mathlib.GroupTheory.Perm.List": 1,
+  "Mathlib.LinearAlgebra.AffineSpace.AffineSubspace.Basic": 2,
+  "Mathlib.LinearAlgebra.AffineSpace.AffineSubspace.Defs": 1,
+  "Mathlib.LinearAlgebra.AffineSpace.FiniteDimensional": 2,
+  "Mathlib.LinearAlgebra.AffineSpace.Independent": 1,
+  "Mathlib.LinearAlgebra.Basis.VectorSpace": 1,
+  "Mathlib.LinearAlgebra.BilinearForm.Orthogonal": 1,
+  "Mathlib.LinearAlgebra.CrossProduct": 1,
+  "Mathlib.LinearAlgebra.Determinant": 1,
+  "Mathlib.LinearAlgebra.Dimension.Constructions": 2,
+  "Mathlib.LinearAlgebra.Dimension.OrzechProperty": 1,
+  "Mathlib.LinearAlgebra.Dual.Basis": 2,
+  "Mathlib.LinearAlgebra.Dual.Defs": 1,
+  "Mathlib.LinearAlgebra.Dual.Lemmas": 5,
+  "Mathlib.LinearAlgebra.ExteriorPower.Basic": 1,
+  "Mathlib.LinearAlgebra.ExteriorPower.Basis": 2,
+  "Mathlib.LinearAlgebra.FiniteDimensional.Basic": 2,
+  "Mathlib.LinearAlgebra.FiniteDimensional.Lemmas": 5,
+  "Mathlib.LinearAlgebra.Finsupp.LinearCombination": 1,
+  "Mathlib.LinearAlgebra.LinearIndependent.Basic": 2,
+  "Mathlib.LinearAlgebra.LinearIndependent.Lemmas": 2,
+  "Mathlib.LinearAlgebra.Matrix.BilinearForm": 1,
+  "Mathlib.LinearAlgebra.Matrix.Determinant.Basic": 1,
+  "Mathlib.LinearAlgebra.Matrix.MvPolynomial": 1,
+  "Mathlib.LinearAlgebra.Matrix.NonsingularInverse": 4,
+  "Mathlib.LinearAlgebra.Matrix.Polynomial": 2,
+  "Mathlib.LinearAlgebra.Matrix.Rank": 2,
+  "Mathlib.LinearAlgebra.Matrix.ToLin": 1,
+  "Mathlib.LinearAlgebra.Pi": 2,
+  "Mathlib.LinearAlgebra.Quotient.Basic": 1,
+  "Mathlib.LinearAlgebra.Quotient.Pi": 2,
+  "Mathlib.LinearAlgebra.Span.Basic": 1,
+  "Mathlib.LinearAlgebra.StdBasis": 1,
+  "Mathlib.LinearAlgebra.Vandermonde": 1,
+  "Mathlib.Logic.Equiv.Option": 1,
+  "Mathlib.Order.Lattice": 1,
+  "Mathlib.Order.Prod.Lex.Basic": 1,
+  "Mathlib.Order.Sym2": 1,
+  "Mathlib.RingTheory.MvPolynomial.Basic": 1,
+  "Mathlib.RingTheory.MvPolynomial.WeightedHomogeneous": 1,
+  "Mathlib.Tactic.Cases": 1,
+  "Mathlib.Tactic.FinCases": 1,
+  "Mathlib.Tactic.Linarith": 1,
+  "Mathlib.Tactic.NormNum.GCD": 1,
+  "Mathlib.Tactic.Positivity.Finset": 1,
+  "Mathlib.Tactic.Ring": 1,
+  "Mathlib.Topology.Separation.Hausdorff": 1
+ },
+ "import_roots": {
+  "Mathlib": 69,
+  "Matroid": 10
+ },
+ "uses": {
+  "AffineSubspace": 2,
+  "Continuous": 4,
+  "Equiv.Perm": 3,
+  "Equiv.Perm.sign": 1,
+  "ExteriorAlgebra": 7,
+  "Field": 101,
+  "Filter": 1,
+  "Filter.Tendsto": 1,
+  "FiniteDimensional": 11,
+  "Finset": 53,
+  "Finset.sum_range_id": 2,
+  "InnerProductSpace": 9,
+  "Invertible": 1,
+  "LinearIndependent": 82,
+  "LinearMap": 2,
+  "LinearMap.BilinForm": 1,
+  "LinearMap.det": 4,
+  "LinearMap.ker": 48,
+  "LinearMap.range": 34,
+  "List": 8,
+  "Matrix": 58,
+  "Matrix.det": 7,
+  "Matrix.rank": 1,
+  "Module": 27,
+  "Module.Basis": 13,
+  "Module.Dual": 38,
+  "MvPolynomial": 48,
+  "Polynomial": 7,
+  "Polynomial.eval": 3,
+  "Ring": 2,
+  "Set": 124,
+  "Set.finrank": 6,
+  "SimpleGraph": 35,
+  "Submodule.exists_isCompl": 1,
+  "Submodule.span": 94,
+  "Subspace": 2,
+  "T2Space": 1,
+  "TopologicalSpace": 1,
+  "affineSpan": 5,
+  "crossProduct": 6,
+  "triple_product_eq_det": 1
+ },
+ "ci": "SUCCESS"
+}

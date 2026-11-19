@@ -1,0 +1,146 @@
+{
+ "schema": "trough-satellites/v1",
+ "repo": "succinctlabs/sp1-lean",
+ "slug": "succinctlabs--sp1-lean",
+ "rev": "512e944ab2a680593125265694dcbd9b058b4dcb",
+ "date": "2026-06-26T00:54:41Z",
+ "stable": "94db3612f0dd723b2067fa85491c804a9d45cc45c0444f88fdc5a1ada5546647",
+ "license": {
+  "files": [
+   "LICENSE-APACHE",
+   "LICENSE-MIT"
+  ],
+  "spdx": "Apache-2.0",
+  "file": "LICENSE-APACHE",
+  "copyright": []
+ },
+ "readme": {
+  "file": "README.md",
+  "title": "Overview",
+  "excerpt": null
+ },
+ "lean_files": 396,
+ "admitted": true,
+ "folder": "",
+ "toolchain": "v4.28.0",
+ "mathlib": "8f9d9cff6bd728b17a24e163c9402775d9e6a365",
+ "requirements": [
+  {
+   "name": "Clean",
+   "url": "https://github.com/Verified-zkEVM/clean",
+   "rev": "292b9cc369be11baf816926a4bd5a697c01b1dcc"
+  },
+  {
+   "name": "LeanRV64D",
+   "url": "https://github.com/succinctlabs/sail-riscv-lean",
+   "rev": "b8186950b658b82dec948abd173c864e7b643191"
+  },
+  {
+   "name": "RISCV",
+   "url": "https://github.com/succinctlabs/riscv-lean",
+   "rev": "58725b8c24a47433f02bb2133082554002272405"
+  }
+ ],
+ "libraries": [
+  {
+   "name": "SP1Clean",
+   "src": "."
+  },
+  {
+   "name": "SP1Math",
+   "src": "."
+  },
+  {
+   "name": "SP1Model",
+   "src": "."
+  },
+  {
+   "name": "SP1Extracted",
+   "src": "."
+  },
+  {
+   "name": "SP1FormalModel",
+   "src": "."
+  },
+  {
+   "name": "SP1Native",
+   "src": "."
+  },
+  {
+   "name": "SP1Proofs",
+   "src": "."
+  },
+  {
+   "name": "SP1CleanTest",
+   "src": "."
+  }
+ ],
+ "library_files": 394,
+ "capped": false,
+ "declarations": 2771,
+ "sorry_files": 1,
+ "axioms": 0,
+ "closure_files": 268,
+ "closure_sorry": [
+  "SP1Clean/Soundness/SP1GatedVm.lean"
+ ],
+ "closure_axioms": 0,
+ "root_modules": [
+  {
+   "name": "SP1Clean",
+   "file": "SP1Clean.lean"
+  }
+ ],
+ "root_closure_files": 344,
+ "root_closure_sorry": [
+  "SP1Clean/Soundness/SP1GatedVm.lean"
+ ],
+ "root_closure_axioms": 0,
+ "unclosed_files": 0,
+ "headline_rule": "readme",
+ "headline_count": 1,
+ "headlines": [
+  {
+   "name": "SP1Clean.Soundness.sp1_machine_soundness",
+   "module": "SP1Clean.Soundness.SP1GatedVm",
+   "file": "SP1Clean/Soundness/SP1GatedVm.lean",
+   "line": 299,
+   "kind": "theorem",
+   "sorry": false,
+   "names": []
+  }
+ ],
+ "mathlib_imports": {
+  "Mathlib.Algebra.BigOperators.Fin": 1,
+  "Mathlib.Algebra.BigOperators.Group.Finset.Basic": 1,
+  "Mathlib.Algebra.BigOperators.Group.List.Basic": 1,
+  "Mathlib.Algebra.Order.BigOperators.Group.List": 1,
+  "Mathlib.Algebra.Order.Group.Int": 1,
+  "Mathlib.Data.Fin.VecNotation": 2,
+  "Mathlib.Data.List.Perm.Basic": 1,
+  "Mathlib.Data.ZMod.Basic": 56,
+  "Mathlib.Tactic": 57,
+  "Mathlib.Tactic.IntervalCases": 12,
+  "Mathlib.Tactic.Linarith": 1,
+  "Mathlib.Tactic.LinearCombination": 15,
+  "Mathlib.Tactic.NormNum.Prime": 2
+ },
+ "import_roots": {
+  "Clean": 122,
+  "Lean": 1,
+  "LeanRV64D": 3,
+  "Mathlib": 84,
+  "RISCV": 7,
+  "Std": 1
+ },
+ "uses": {
+  "Array": 1,
+  "Field": 55,
+  "Finset": 1,
+  "Int": 1,
+  "List": 146,
+  "Multiset": 4,
+  "Nat": 1
+ },
+ "ci": "SUCCESS"
+}

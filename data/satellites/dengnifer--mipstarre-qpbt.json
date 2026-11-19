@@ -1,0 +1,160 @@
+{
+ "schema": "trough-satellites/v1",
+ "repo": "Dengnifer/MIPStarRE-QPBT",
+ "slug": "dengnifer--mipstarre-qpbt",
+ "rev": "cd2509945687ecb2e708222df3e4281c6e0f5138",
+ "date": "2026-11-15T05:35:10Z",
+ "stable": "47e6d0f6f5f2b7f221d8c8af4d6f30c1e8b71ccc8d385c9a5075ada13e362563",
+ "license": {
+  "files": [
+   "LICENSE"
+  ],
+  "spdx": "Apache-2.0",
+  "file": "LICENSE",
+  "copyright": []
+ },
+ "readme": {
+  "file": "README.md",
+  "title": "Quantum Pauli basis test",
+  "excerpt": null
+ },
+ "lean_files": 354,
+ "admitted": true,
+ "folder": "",
+ "toolchain": "v4.35.0-rc2",
+ "mathlib": "065356127b1dc0016f66b7283ce0ce2c4055aa55",
+ "requirements": [
+  {
+   "name": "MIPStarRE",
+   "url": "https://github.com/LionSR/MIPStarRE",
+   "rev": "5fc363bc8b77b1a6bbdaaeea634f1b0f3ff0ad79"
+  }
+ ],
+ "libraries": [
+  {
+   "name": "QPBT",
+   "src": "."
+  },
+  {
+   "name": "Challenge",
+   "src": "."
+  },
+  {
+   "name": "Solution",
+   "src": "."
+  }
+ ],
+ "library_files": 354,
+ "capped": false,
+ "declarations": 3913,
+ "sorry_files": 2,
+ "axioms": 0,
+ "closure_files": 320,
+ "closure_sorry": [],
+ "closure_axioms": 0,
+ "root_modules": [
+  {
+   "name": "Challenge",
+   "file": "Challenge.lean"
+  },
+  {
+   "name": "QPBT",
+   "file": "QPBT.lean"
+  },
+  {
+   "name": "Solution",
+   "file": "Solution.lean"
+  }
+ ],
+ "root_closure_files": 354,
+ "root_closure_sorry": [
+  "Challenge.lean",
+  "QPBT/Test/AxiomAudit.lean"
+ ],
+ "root_closure_axioms": 0,
+ "unclosed_files": 0,
+ "headline_rule": "readme",
+ "headline_count": 4,
+ "headlines": [
+  {
+   "name": "MIPStarRE.QPBT.exists_spcc_value_one",
+   "module": "QPBT.Test.Completeness",
+   "file": "QPBT/Test/Completeness.lean",
+   "line": 271,
+   "kind": "theorem",
+   "sorry": false,
+   "names": []
+  },
+  {
+   "name": "MIPStarRE.QPBT.exists_ld_soundness",
+   "module": "QPBT.Test.LowDegreeGameTheorems",
+   "file": "QPBT/Test/LowDegreeGameTheorems.lean",
+   "line": 88,
+   "kind": "theorem",
+   "sorry": false,
+   "names": []
+  },
+  {
+   "name": "MIPStarRE.QPBT.pauli_soundness",
+   "module": "QPBT.Test.Soundness",
+   "file": "QPBT/Test/Soundness.lean",
+   "line": 115,
+   "kind": "theorem",
+   "sorry": false,
+   "names": []
+  },
+  {
+   "name": "MIPStarRE.QPBT.pauli_soundness_qubit",
+   "module": "QPBT.Test.QubitForm",
+   "file": "QPBT/Test/QubitForm.lean",
+   "line": 467,
+   "kind": "theorem",
+   "sorry": false,
+   "names": []
+  }
+ ],
+ "mathlib_imports": {
+  "Mathlib.Algebra.MvPolynomial.Equiv": 1,
+  "Mathlib.Analysis.MeanInequalitiesPow": 1,
+  "Mathlib.Analysis.SpecialFunctions.Pow.Continuity": 1,
+  "Mathlib.Analysis.SpecificLimits.Basic": 1
+ },
+ "import_roots": {
+  "Lean": 1,
+  "MIPStarRE": 40,
+  "Mathlib": 9
+ },
+ "uses": {
+  "Algebra": 12,
+  "Array": 1,
+  "CharP": 10,
+  "Complex": 1,
+  "Distribution": 89,
+  "Field": 38,
+  "Filter": 1,
+  "Filter.Tendsto": 1,
+  "Finset": 64,
+  "InnerProductSpace": 2,
+  "LinearIndependent": 1,
+  "LinearMap.BilinForm.toMatrix": 1,
+  "LinearMap.ker": 1,
+  "LinearMap.range": 1,
+  "Matrix": 195,
+  "Matrix.rank": 1,
+  "Matrix.unitaryGroup": 1,
+  "Module.Basis": 4,
+  "MvPolynomial": 19,
+  "Nat": 1,
+  "PMF": 4,
+  "Polynomial": 9,
+  "Polynomial.eval": 3,
+  "Real": 6,
+  "Real.exp": 7,
+  "Real.log": 3,
+  "Real.rpow": 38,
+  "Set": 8,
+  "Submodule.span": 7,
+  "norm_add_le": 15
+ },
+ "ci": "SUCCESS"
+}

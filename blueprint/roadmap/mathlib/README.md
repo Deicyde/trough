@@ -8,6 +8,8 @@ An article's *Depends on* list names the nearest concepts on these lists that it
 
 155 articles are written for Trough, under CC BY-SA 4.0: original text, whose citations link to Mathlib's documentation, and prerequisites chosen for the reader: 498 statement and 116 proof edges, in place of the 1,047 and 272 nearest-concept edges Mathlib's graph gives those concepts.
 
+Lean projects outside the libraries mapped here that build on Mathlib have cards in a projects box beside the sections of the overview area they draw on most.
+
 - [Mathlib overview](overview/README.md)
 - [Undergraduate mathematics](undergraduate/README.md)
 - [Freek Wiedijk's 100 theorems](hundred-theorems/README.md)

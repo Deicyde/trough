@@ -1,0 +1,853 @@
+{
+ "schema": "trough-satellites/v1",
+ "repo": "lfglabs-dev/verity",
+ "slug": "lfglabs-dev--verity",
+ "rev": "42cbb5de217c89538fc231a8f4b2ac423457e0ec",
+ "date": "2026-11-18T07:01:50Z",
+ "stable": "e9c9dc6c9df49e9db30fabb87ae6155a1086cccfa11dbda1db5002cd73bcc248",
+ "license": {
+  "files": [
+   "LICENSE.md"
+  ],
+  "spdx": "MIT",
+  "file": "LICENSE.md",
+  "copyright": [
+   "Copyright (c) 2025 Thomas Marchand"
+  ]
+ },
+ "readme": {
+  "file": "README.md",
+  "title": "Guarantees",
+  "excerpt": "A formally verified smart contract compiler for Ethereum, written in [Lean 4](https://lean-lang.org/). Write a contract in an embedded DSL (or import it from Solidity), prove properties about it, and compile it to EVM bytecode through a compiler whose layers are themselves proved. Documentation: [veritylang.com](https://veritylang.com) · Paper: [verity.pdf](https://lfglabs.dev/papers/verity.pdf) · MIT licensed."
+ },
+ "lean_files": 793,
+ "admitted": true,
+ "folder": "",
+ "toolchain": "v4.31.0",
+ "mathlib": "fabf563a7c95a166b8d7b6efca11c8b4dc9d911f",
+ "requirements": [
+  {
+   "name": "evmyul",
+   "url": "https://github.com/lfglabs-dev/EVMYulLean.git",
+   "rev": "eb0b6ddfab7daacbc3963f8fbb765853fee6ccb0"
+  }
+ ],
+ "libraries": [
+  {
+   "name": "Verity",
+   "src": "."
+  },
+  {
+   "name": "Contracts",
+   "src": "."
+  },
+  {
+   "name": "SolidityImportSmoke",
+   "src": "."
+  },
+  {
+   "name": "Compiler",
+   "src": "."
+  },
+  {
+   "name": "AssuranceFixtures",
+   "src": "scripts/.assurance_fixtures"
+  },
+  {
+   "name": "Assurance",
+   "src": "scripts"
+  },
+  {
+   "name": "VerityUnionAxioms",
+   "src": "scripts"
+  },
+  {
+   "name": "PrintAxioms",
+   "src": "."
+  },
+  {
+   "name": "StorageLayoutReport",
+   "src": "."
+  }
+ ],
+ "library_files": 766,
+ "capped": false,
+ "declarations": 16200,
+ "sorry_files": 1,
+ "axioms": 8,
+ "closure_files": 0,
+ "closure_sorry": [],
+ "closure_axioms": 0,
+ "root_modules": [
+  {
+   "name": "AxiomAudit",
+   "file": "scripts/AxiomAudit.lean"
+  },
+  {
+   "name": "Compiler",
+   "file": "Compiler.lean"
+  },
+  {
+   "name": "Compiler.SolidityImport.AbiByteLanes",
+   "file": "Compiler/SolidityImport/AbiByteLanes.lean"
+  },
+  {
+   "name": "Compiler.SolidityImport.AbiMemory",
+   "file": "Compiler/SolidityImport/AbiMemory.lean"
+  },
+  {
+   "name": "Contracts",
+   "file": "Contracts.lean"
+  },
+  {
+   "name": "Contracts.BytesEqSmoke",
+   "file": "Contracts/BytesEqSmoke.lean"
+  },
+  {
+   "name": "Contracts.Common",
+   "file": "Contracts/Common.lean"
+  },
+  {
+   "name": "Contracts.Counter",
+   "file": "Contracts/Counter.lean"
+  },
+  {
+   "name": "Contracts.CryptoHash",
+   "file": "Contracts/CryptoHash.lean"
+  },
+  {
+   "name": "Contracts.ERC20",
+   "file": "Contracts/ERC20.lean"
+  },
+  {
+   "name": "Contracts.ERC721",
+   "file": "Contracts/ERC721.lean"
+  },
+  {
+   "name": "Contracts.Interpreter",
+   "file": "Contracts/Interpreter.lean"
+  },
+  {
+   "name": "Contracts.Ledger",
+   "file": "Contracts/Ledger.lean"
+  },
+  {
+   "name": "Contracts.LocalObligationMacroSmoke.SpecProofs",
+   "file": "Contracts/LocalObligationMacroSmoke/SpecProofs.lean"
+  },
+  {
+   "name": "Contracts.Ownable",
+   "file": "Contracts/Ownable.lean"
+  },
+  {
+   "name": "Contracts.Owned",
+   "file": "Contracts/Owned.lean"
+  },
+  {
+   "name": "Contracts.OwnedCounter",
+   "file": "Contracts/OwnedCounter.lean"
+  },
+  {
+   "name": "Contracts.OwnedCounterComposed",
+   "file": "Contracts/OwnedCounterComposed.lean"
+  },
+  {
+   "name": "Contracts.ProofKit",
+   "file": "Contracts/ProofKit.lean"
+  },
+  {
+   "name": "Contracts.ReentrancyExample",
+   "file": "Contracts/ReentrancyExample.lean"
+  },
+  {
+   "name": "Contracts.ReentrancyRelyGuarantee",
+   "file": "Contracts/ReentrancyRelyGuarantee.lean"
+  },
+  {
+   "name": "Contracts.SafeCounter",
+   "file": "Contracts/SafeCounter.lean"
+  },
+  {
+   "name": "Contracts.SimpleStorage",
+   "file": "Contracts/SimpleStorage.lean"
+  },
+  {
+   "name": "Contracts.SimpleToken",
+   "file": "Contracts/SimpleToken.lean"
+  },
+  {
+   "name": "Contracts.Smoke",
+   "file": "Contracts/Smoke.lean"
+  },
+  {
+   "name": "Contracts.SolidityImportSmoke.AbiCanonicalityModel",
+   "file": "Contracts/SolidityImportSmoke/AbiCanonicalityModel.lean"
+  },
+  {
+   "name": "Contracts.SolidityImportSmoke.AbiCoverageChecks",
+   "file": "Contracts/SolidityImportSmoke/AbiCoverageChecks.lean"
+  },
+  {
+   "name": "Contracts.SolidityImportSmoke.AbiDecodeAndVerifierSequenceModel",
+   "file": "Contracts/SolidityImportSmoke/AbiDecodeAndVerifierSequenceModel.lean"
+  },
+  {
+   "name": "Contracts.SolidityImportSmoke.AbiEventCompositionModel",
+   "file": "Contracts/SolidityImportSmoke/AbiEventCompositionModel.lean"
+  },
+  {
+   "name": "Contracts.SolidityImportSmoke.AbiHashingModel",
+   "file": "Contracts/SolidityImportSmoke/AbiHashingModel.lean"
+  },
+  {
+   "name": "Contracts.SolidityImportSmoke.AbiLoweringChecks",
+   "file": "Contracts/SolidityImportSmoke/AbiLoweringChecks.lean"
+  },
+  {
+   "name": "Contracts.SolidityImportSmoke.AccessManagerTargetRoleSequenceModel",
+   "file": "Contracts/SolidityImportSmoke/AccessManagerTargetRoleSequenceModel.lean"
+  },
+  {
+   "name": "Contracts.SolidityImportSmoke.AccountStorageBridgeChecks",
+   "file": "Contracts/SolidityImportSmoke/AccountStorageBridgeChecks.lean"
+  },
+  {
+   "name": "Contracts.SolidityImportSmoke.ArrayForAbiModel",
+   "file": "Contracts/SolidityImportSmoke/ArrayForAbiModel.lean"
+  },
+  {
+   "name": "Contracts.SolidityImportSmoke.ArrayStringParamsAndContextSequenceModel",
+   "file": "Contracts/SolidityImportSmoke/ArrayStringParamsAndContextSequenceModel.lean"
+  },
+  {
+   "name": "Contracts.SolidityImportSmoke.BytesAndStringStorageSequenceModel",
+   "file": "Contracts/SolidityImportSmoke/BytesAndStringStorageSequenceModel.lean"
+  },
+  {
+   "name": "Contracts.SolidityImportSmoke.BytesMemoryAndAbiEncodeCallSequenceModel",
+   "file": "Contracts/SolidityImportSmoke/BytesMemoryAndAbiEncodeCallSequenceModel.lean"
+  },
+  {
+   "name": "Contracts.SolidityImportSmoke.BytesNamedReturnSliceStructSequenceModel",
+   "file": "Contracts/SolidityImportSmoke/BytesNamedReturnSliceStructSequenceModel.lean"
+  },
+  {
+   "name": "Contracts.SolidityImportSmoke.BytesNamedReturnStatelessSequenceModel",
+   "file": "Contracts/SolidityImportSmoke/BytesNamedReturnStatelessSequenceModel.lean"
+  },
+  {
+   "name": "Contracts.SolidityImportSmoke.BytesObjectMemoryDriver",
+   "file": "Contracts/SolidityImportSmoke/BytesObjectMemoryDriver.lean"
+  },
+  {
+   "name": "Contracts.SolidityImportSmoke.CheckpointsAndStructArraysSequenceModel",
+   "file": "Contracts/SolidityImportSmoke/CheckpointsAndStructArraysSequenceModel.lean"
+  },
+  {
+   "name": "Contracts.SolidityImportSmoke.CollectUnsupportedSurveyChecks",
+   "file": "Contracts/SolidityImportSmoke/CollectUnsupportedSurveyChecks.lean"
+  },
+  {
+   "name": "Contracts.SolidityImportSmoke.ConstantArraySequenceModel",
+   "file": "Contracts/SolidityImportSmoke/ConstantArraySequenceModel.lean"
+  },
+  {
+   "name": "Contracts.SolidityImportSmoke.Create2BytecodeAndStructEmitSequenceModel",
+   "file": "Contracts/SolidityImportSmoke/Create2BytecodeAndStructEmitSequenceModel.lean"
+  },
+  {
+   "name": "Contracts.SolidityImportSmoke.Create2ClonesMsgDataDequeSequenceModel",
+   "file": "Contracts/SolidityImportSmoke/Create2ClonesMsgDataDequeSequenceModel.lean"
+  },
+  {
+   "name": "Contracts.SolidityImportSmoke.Create2OpcodeChecks",
+   "file": "Contracts/SolidityImportSmoke/Create2OpcodeChecks.lean"
+  },
+  {
+   "name": "Contracts.SolidityImportSmoke.Create2OpcodeDriver",
+   "file": "Contracts/SolidityImportSmoke/Create2OpcodeDriver.lean"
+  },
+  {
+   "name": "Contracts.SolidityImportSmoke.Create2ParentGasChecks",
+   "file": "Contracts/SolidityImportSmoke/Create2ParentGasChecks.lean"
+  },
+  {
+   "name": "Contracts.SolidityImportSmoke.Create2ParentGasDriver",
+   "file": "Contracts/SolidityImportSmoke/Create2ParentGasDriver.lean"
+  },
+  {
+   "name": "Contracts.SolidityImportSmoke.DefaultLocalSequenceModel",
+   "file": "Contracts/SolidityImportSmoke/DefaultLocalSequenceModel.lean"
+  },
+  {
+   "name": "Contracts.SolidityImportSmoke.DeploymentWorldChecks",
+   "file": "Contracts/SolidityImportSmoke/DeploymentWorldChecks.lean"
+  },
+  {
+   "name": "Contracts.SolidityImportSmoke.DeploymentWorldDriver",
+   "file": "Contracts/SolidityImportSmoke/DeploymentWorldDriver.lean"
+  },
+  {
+   "name": "Contracts.SolidityImportSmoke.DiscardedHelperSequenceModel",
+   "file": "Contracts/SolidityImportSmoke/DiscardedHelperSequenceModel.lean"
+  },
+  {
+   "name": "Contracts.SolidityImportSmoke.DynamicBytesAndStringReturnSequenceModel",
+   "file": "Contracts/SolidityImportSmoke/DynamicBytesAndStringReturnSequenceModel.lean"
+  },
+  {
+   "name": "Contracts.SolidityImportSmoke.DynamicMemoryArraySequenceModel",
+   "file": "Contracts/SolidityImportSmoke/DynamicMemoryArraySequenceModel.lean"
+  },
+  {
+   "name": "Contracts.SolidityImportSmoke.ERC2981HoldersArraysMsgHashSequenceModel",
+   "file": "Contracts/SolidityImportSmoke/ERC2981HoldersArraysMsgHashSequenceModel.lean"
+  },
+  {
+   "name": "Contracts.SolidityImportSmoke.EcdsaMerkleCheckpointsStorageSlotSequenceModel",
+   "file": "Contracts/SolidityImportSmoke/EcdsaMerkleCheckpointsStorageSlotSequenceModel.lean"
+  },
+  {
+   "name": "Contracts.SolidityImportSmoke.EcrecoverAuthorizerArraysMapSequenceModel",
+   "file": "Contracts/SolidityImportSmoke/EcrecoverAuthorizerArraysMapSequenceModel.lean"
+  },
+  {
+   "name": "Contracts.SolidityImportSmoke.EmptyArrayReturnBytesCalldataSequenceModel",
+   "file": "Contracts/SolidityImportSmoke/EmptyArrayReturnBytesCalldataSequenceModel.lean"
+  },
+  {
+   "name": "Contracts.SolidityImportSmoke.EmptyRevertSequenceModel",
+   "file": "Contracts/SolidityImportSmoke/EmptyRevertSequenceModel.lean"
+  },
+  {
+   "name": "Contracts.SolidityImportSmoke.EncodedByteLocalSequenceModel",
+   "file": "Contracts/SolidityImportSmoke/EncodedByteLocalSequenceModel.lean"
+  },
+  {
+   "name": "Contracts.SolidityImportSmoke.EntryPointInvariantChecks",
+   "file": "Contracts/SolidityImportSmoke/EntryPointInvariantChecks.lean"
+  },
+  {
+   "name": "Contracts.SolidityImportSmoke.EnumerableSetMapSequenceModel",
+   "file": "Contracts/SolidityImportSmoke/EnumerableSetMapSequenceModel.lean"
+  },
+  {
+   "name": "Contracts.SolidityImportSmoke.EnvironmentSequenceModel",
+   "file": "Contracts/SolidityImportSmoke/EnvironmentSequenceModel.lean"
+  },
+  {
+   "name": "Contracts.SolidityImportSmoke.ErrorPayloads",
+   "file": "Contracts/SolidityImportSmoke/ErrorPayloads.lean"
+  },
+  {
+   "name": "Contracts.SolidityImportSmoke.ErrorSequenceModel",
+   "file": "Contracts/SolidityImportSmoke/ErrorSequenceModel.lean"
+  },
+  {
+   "name": "Contracts.SolidityImportSmoke.EventRejections",
+   "file": "Contracts/SolidityImportSmoke/EventRejections.lean"
+  },
+  {
+   "name": "Contracts.SolidityImportSmoke.EventSequenceModel",
+   "file": "Contracts/SolidityImportSmoke/EventSequenceModel.lean"
+  },
+  {
+   "name": "Contracts.SolidityImportSmoke.ExpAndBitwiseShiftSequenceModel",
+   "file": "Contracts/SolidityImportSmoke/ExpAndBitwiseShiftSequenceModel.lean"
+  },
+  {
+   "name": "Contracts.SolidityImportSmoke.ExplicitAbiChecks",
+   "file": "Contracts/SolidityImportSmoke/ExplicitAbiChecks.lean"
+  },
+  {
+   "name": "Contracts.SolidityImportSmoke.ExtCodeCopyStructDecodeSequenceModel",
+   "file": "Contracts/SolidityImportSmoke/ExtCodeCopyStructDecodeSequenceModel.lean"
+  },
+  {
+   "name": "Contracts.SolidityImportSmoke.ExternalCodeAndLowLevelCallSequenceModel",
+   "file": "Contracts/SolidityImportSmoke/ExternalCodeAndLowLevelCallSequenceModel.lean"
+  },
+  {
+   "name": "Contracts.SolidityImportSmoke.FixedArrayWriteOrderSequenceModel",
+   "file": "Contracts/SolidityImportSmoke/FixedArrayWriteOrderSequenceModel.lean"
+  },
+  {
+   "name": "Contracts.SolidityImportSmoke.FixedMemoryArraySequenceModel",
+   "file": "Contracts/SolidityImportSmoke/FixedMemoryArraySequenceModel.lean"
+  },
+  {
+   "name": "Contracts.SolidityImportSmoke.FnPtrStructDeleteModifierSequenceModel",
+   "file": "Contracts/SolidityImportSmoke/FnPtrStructDeleteModifierSequenceModel.lean"
+  },
+  {
+   "name": "Contracts.SolidityImportSmoke.GovernorSliceProposerDelaySequenceModel",
+   "file": "Contracts/SolidityImportSmoke/GovernorSliceProposerDelaySequenceModel.lean"
+  },
+  {
+   "name": "Contracts.SolidityImportSmoke.HelperEffectSequenceModel",
+   "file": "Contracts/SolidityImportSmoke/HelperEffectSequenceModel.lean"
+  },
+  {
+   "name": "Contracts.SolidityImportSmoke.HelperLoopSequenceModel",
+   "file": "Contracts/SolidityImportSmoke/HelperLoopSequenceModel.lean"
+  },
+  {
+   "name": "Contracts.SolidityImportSmoke.IfElseSequenceModel",
+   "file": "Contracts/SolidityImportSmoke/IfElseSequenceModel.lean"
+  },
+  {
+   "name": "Contracts.SolidityImportSmoke.ImportedEventSequenceModel",
+   "file": "Contracts/SolidityImportSmoke/ImportedEventSequenceModel.lean"
+  },
+  {
+   "name": "Contracts.SolidityImportSmoke.InheritanceSequenceModel",
+   "file": "Contracts/SolidityImportSmoke/InheritanceSequenceModel.lean"
+  },
+  {
+   "name": "Contracts.SolidityImportSmoke.InitCodeExecutionChecks",
+   "file": "Contracts/SolidityImportSmoke/InitCodeExecutionChecks.lean"
+  },
+  {
+   "name": "Contracts.SolidityImportSmoke.InitCodeExecutionDriver",
+   "file": "Contracts/SolidityImportSmoke/InitCodeExecutionDriver.lean"
+  },
+  {
+   "name": "Contracts.SolidityImportSmoke.InlineArrayLiteralSequenceModel",
+   "file": "Contracts/SolidityImportSmoke/InlineArrayLiteralSequenceModel.lean"
+  },
+  {
+   "name": "Contracts.SolidityImportSmoke.Int256ContractTypeSequenceModel",
+   "file": "Contracts/SolidityImportSmoke/Int256ContractTypeSequenceModel.lean"
+  },
+  {
+   "name": "Contracts.SolidityImportSmoke.InterfaceStaticCallSequenceModel",
+   "file": "Contracts/SolidityImportSmoke/InterfaceStaticCallSequenceModel.lean"
+  },
+  {
+   "name": "Contracts.SolidityImportSmoke.InterfaceWordStaticCallSequenceModel",
+   "file": "Contracts/SolidityImportSmoke/InterfaceWordStaticCallSequenceModel.lean"
+  },
+  {
+   "name": "Contracts.SolidityImportSmoke.InvariantForSequenceModel",
+   "file": "Contracts/SolidityImportSmoke/InvariantForSequenceModel.lean"
+  },
+  {
+   "name": "Contracts.SolidityImportSmoke.LocalWriteSequenceModel",
+   "file": "Contracts/SolidityImportSmoke/LocalWriteSequenceModel.lean"
+  },
+  {
+   "name": "Contracts.SolidityImportSmoke.LoopInvariantChecks",
+   "file": "Contracts/SolidityImportSmoke/LoopInvariantChecks.lean"
+  },
+  {
+   "name": "Contracts.SolidityImportSmoke.MappingDirtySequenceModel",
+   "file": "Contracts/SolidityImportSmoke/MappingDirtySequenceModel.lean"
+  },
+  {
+   "name": "Contracts.SolidityImportSmoke.MappingFixedArraySequenceModel",
+   "file": "Contracts/SolidityImportSmoke/MappingFixedArraySequenceModel.lean"
+  },
+  {
+   "name": "Contracts.SolidityImportSmoke.MappingSequenceModel",
+   "file": "Contracts/SolidityImportSmoke/MappingSequenceModel.lean"
+  },
+  {
+   "name": "Contracts.SolidityImportSmoke.MerkleAndNoncesSequenceModel",
+   "file": "Contracts/SolidityImportSmoke/MerkleAndNoncesSequenceModel.lean"
+  },
+  {
+   "name": "Contracts.SolidityImportSmoke.ModifierUncheckedCompoundSequenceModel",
+   "file": "Contracts/SolidityImportSmoke/ModifierUncheckedCompoundSequenceModel.lean"
+  },
+  {
+   "name": "Contracts.SolidityImportSmoke.ModuloSequenceModel",
+   "file": "Contracts/SolidityImportSmoke/ModuloSequenceModel.lean"
+  },
+  {
+   "name": "Contracts.SolidityImportSmoke.MsgDataAndEnumSequenceModel",
+   "file": "Contracts/SolidityImportSmoke/MsgDataAndEnumSequenceModel.lean"
+  },
+  {
+   "name": "Contracts.SolidityImportSmoke.MultiProofMappingKeysVerifiersSequenceModel",
+   "file": "Contracts/SolidityImportSmoke/MultiProofMappingKeysVerifiersSequenceModel.lean"
+  },
+  {
+   "name": "Contracts.SolidityImportSmoke.MultipleDynamicAbiModel",
+   "file": "Contracts/SolidityImportSmoke/MultipleDynamicAbiModel.lean"
+  },
+  {
+   "name": "Contracts.SolidityImportSmoke.NamedHelperReturnSequenceModel",
+   "file": "Contracts/SolidityImportSmoke/NamedHelperReturnSequenceModel.lean"
+  },
+  {
+   "name": "Contracts.SolidityImportSmoke.NarrowEventSequenceModel",
+   "file": "Contracts/SolidityImportSmoke/NarrowEventSequenceModel.lean"
+  },
+  {
+   "name": "Contracts.SolidityImportSmoke.NestedDynamicStructAbiModel",
+   "file": "Contracts/SolidityImportSmoke/NestedDynamicStructAbiModel.lean"
+  },
+  {
+   "name": "Contracts.SolidityImportSmoke.NumericLiteralSequenceModel",
+   "file": "Contracts/SolidityImportSmoke/NumericLiteralSequenceModel.lean"
+  },
+  {
+   "name": "Contracts.SolidityImportSmoke.OverloadConstErrorCondTupleTloadSequenceModel",
+   "file": "Contracts/SolidityImportSmoke/OverloadConstErrorCondTupleTloadSequenceModel.lean"
+  },
+  {
+   "name": "Contracts.SolidityImportSmoke.PackedMemberWriteSequenceModel",
+   "file": "Contracts/SolidityImportSmoke/PackedMemberWriteSequenceModel.lean"
+  },
+  {
+   "name": "Contracts.SolidityImportSmoke.PackedStructMappingAndTernaryTupleSequenceModel",
+   "file": "Contracts/SolidityImportSmoke/PackedStructMappingAndTernaryTupleSequenceModel.lean"
+  },
+  {
+   "name": "Contracts.SolidityImportSmoke.PhysicalMemoryFrameChecks",
+   "file": "Contracts/SolidityImportSmoke/PhysicalMemoryFrameChecks.lean"
+  },
+  {
+   "name": "Contracts.SolidityImportSmoke.PublicGettersAndBuiltinsSequenceModel",
+   "file": "Contracts/SolidityImportSmoke/PublicGettersAndBuiltinsSequenceModel.lean"
+  },
+  {
+   "name": "Contracts.SolidityImportSmoke.ReferenceArgumentsModel",
+   "file": "Contracts/SolidityImportSmoke/ReferenceArgumentsModel.lean"
+  },
+  {
+   "name": "Contracts.SolidityImportSmoke.Require",
+   "file": "Contracts/SolidityImportSmoke/Require.lean"
+  },
+  {
+   "name": "Contracts.SolidityImportSmoke.RequireCustom",
+   "file": "Contracts/SolidityImportSmoke/RequireCustom.lean"
+  },
+  {
+   "name": "Contracts.SolidityImportSmoke.ScalarArrayAbiModel",
+   "file": "Contracts/SolidityImportSmoke/ScalarArrayAbiModel.lean"
+  },
+  {
+   "name": "Contracts.SolidityImportSmoke.SelectorIdentityChecks",
+   "file": "Contracts/SolidityImportSmoke/SelectorIdentityChecks.lean"
+  },
+  {
+   "name": "Contracts.SolidityImportSmoke.SequenceModel",
+   "file": "Contracts/SolidityImportSmoke/SequenceModel.lean"
+  },
+  {
+   "name": "Contracts.SolidityImportSmoke.ShortCircuitSequenceModel",
+   "file": "Contracts/SolidityImportSmoke/ShortCircuitSequenceModel.lean"
+  },
+  {
+   "name": "Contracts.SolidityImportSmoke.SignedModuloSequenceModel",
+   "file": "Contracts/SolidityImportSmoke/SignedModuloSequenceModel.lean"
+  },
+  {
+   "name": "Contracts.SolidityImportSmoke.Smoke",
+   "file": "Contracts/SolidityImportSmoke/Smoke.lean"
+  },
+  {
+   "name": "Contracts.SolidityImportSmoke.Solc0810SequenceModel",
+   "file": "Contracts/SolidityImportSmoke/Solc0810SequenceModel.lean"
+  },
+  {
+   "name": "Contracts.SolidityImportSmoke.SolidityAbiPrimitiveChecks",
+   "file": "Contracts/SolidityImportSmoke/SolidityAbiPrimitiveChecks.lean"
+  },
+  {
+   "name": "Contracts.SolidityImportSmoke.StaticAbiChecks",
+   "file": "Contracts/SolidityImportSmoke/StaticAbiChecks.lean"
+  },
+  {
+   "name": "Contracts.SolidityImportSmoke.StorageBytesSequenceModel",
+   "file": "Contracts/SolidityImportSmoke/StorageBytesSequenceModel.lean"
+  },
+  {
+   "name": "Contracts.SolidityImportSmoke.StorageSequenceModel",
+   "file": "Contracts/SolidityImportSmoke/StorageSequenceModel.lean"
+  },
+  {
+   "name": "Contracts.SolidityImportSmoke.StorageSlotShortStringsTimeSequenceModel",
+   "file": "Contracts/SolidityImportSmoke/StorageSlotShortStringsTimeSequenceModel.lean"
+  },
+  {
+   "name": "Contracts.SolidityImportSmoke.StorageStructParamsDequeShortStringsSequenceModel",
+   "file": "Contracts/SolidityImportSmoke/StorageStructParamsDequeShortStringsSequenceModel.lean"
+  },
+  {
+   "name": "Contracts.SolidityImportSmoke.StorageTraceChecks",
+   "file": "Contracts/SolidityImportSmoke/StorageTraceChecks.lean"
+  },
+  {
+   "name": "Contracts.SolidityImportSmoke.StorageVoidSequenceModel",
+   "file": "Contracts/SolidityImportSmoke/StorageVoidSequenceModel.lean"
+  },
+  {
+   "name": "Contracts.SolidityImportSmoke.StringBytesMappingsUriStorageStringsSequenceModel",
+   "file": "Contracts/SolidityImportSmoke/StringBytesMappingsUriStorageStringsSequenceModel.lean"
+  },
+  {
+   "name": "Contracts.SolidityImportSmoke.StringsHexArraysBitmapsSequenceModel",
+   "file": "Contracts/SolidityImportSmoke/StringsHexArraysBitmapsSequenceModel.lean"
+  },
+  {
+   "name": "Contracts.SolidityImportSmoke.StructFixedArrayAndFixedReturnSequenceModel",
+   "file": "Contracts/SolidityImportSmoke/StructFixedArrayAndFixedReturnSequenceModel.lean"
+  },
+  {
+   "name": "Contracts.SolidityImportSmoke.StructHashAndDomainSeparatorSequenceModel",
+   "file": "Contracts/SolidityImportSmoke/StructHashAndDomainSeparatorSequenceModel.lean"
+  },
+  {
+   "name": "Contracts.SolidityImportSmoke.StructMappingAndBytes4InterfaceSequenceModel",
+   "file": "Contracts/SolidityImportSmoke/StructMappingAndBytes4InterfaceSequenceModel.lean"
+  },
+  {
+   "name": "Contracts.SolidityImportSmoke.StructParamsAndBalancesSequenceModel",
+   "file": "Contracts/SolidityImportSmoke/StructParamsAndBalancesSequenceModel.lean"
+  },
+  {
+   "name": "Contracts.SolidityImportSmoke.StructValidationOrderModel",
+   "file": "Contracts/SolidityImportSmoke/StructValidationOrderModel.lean"
+  },
+  {
+   "name": "Contracts.SolidityImportSmoke.SymbolicExecutionChecks",
+   "file": "Contracts/SolidityImportSmoke/SymbolicExecutionChecks.lean"
+  },
+  {
+   "name": "Contracts.SolidityImportSmoke.TimelockAndBytes4CastSequenceModel",
+   "file": "Contracts/SolidityImportSmoke/TimelockAndBytes4CastSequenceModel.lean"
+  },
+  {
+   "name": "Contracts.SolidityImportSmoke.Transactions",
+   "file": "Contracts/SolidityImportSmoke/Transactions.lean"
+  },
+  {
+   "name": "Contracts.SolidityImportSmoke.TupleHelperSequenceModel",
+   "file": "Contracts/SolidityImportSmoke/TupleHelperSequenceModel.lean"
+  },
+  {
+   "name": "Contracts.SolidityImportSmoke.TupleSequenceModel",
+   "file": "Contracts/SolidityImportSmoke/TupleSequenceModel.lean"
+  },
+  {
+   "name": "Contracts.SolidityImportSmoke.UdvtParamAssignStructHashSequenceModel",
+   "file": "Contracts/SolidityImportSmoke/UdvtParamAssignStructHashSequenceModel.lean"
+  },
+  {
+   "name": "Contracts.SolidityImportSmoke.UncheckedSequenceModel",
+   "file": "Contracts/SolidityImportSmoke/UncheckedSequenceModel.lean"
+  },
+  {
+   "name": "Contracts.SolidityImportSmoke.UniswapV4TypesAndTransientSequenceModel",
+   "file": "Contracts/SolidityImportSmoke/UniswapV4TypesAndTransientSequenceModel.lean"
+  },
+  {
+   "name": "Contracts.SolidityImportSmoke.VoidHelperGuardSequenceModel",
+   "file": "Contracts/SolidityImportSmoke/VoidHelperGuardSequenceModel.lean"
+  },
+  {
+   "name": "Contracts.SolidityImportSmoke.VotesCheckpointsArraysBitMapsSequenceModel",
+   "file": "Contracts/SolidityImportSmoke/VotesCheckpointsArraysBitMapsSequenceModel.lean"
+  },
+  {
+   "name": "Contracts.SolidityImportSmoke.WadExpAndThreeKeyMappingSequenceModel",
+   "file": "Contracts/SolidityImportSmoke/WadExpAndThreeKeyMappingSequenceModel.lean"
+  },
+  {
+   "name": "Contracts.SolidityImportSmoke.WhileClzAndStructLocSequenceModel",
+   "file": "Contracts/SolidityImportSmoke/WhileClzAndStructLocSequenceModel.lean"
+  },
+  {
+   "name": "Contracts.SolidityImportSmoke.YulBlockMulmodTstoreSequenceModel",
+   "file": "Contracts/SolidityImportSmoke/YulBlockMulmodTstoreSequenceModel.lean"
+  },
+  {
+   "name": "Contracts.SolidityImportSmoke.YulBuiltinsAndEncodeSelectorSequenceModel",
+   "file": "Contracts/SolidityImportSmoke/YulBuiltinsAndEncodeSelectorSequenceModel.lean"
+  },
+  {
+   "name": "Contracts.SolidityImportSmoke.YulNumericSequenceModel",
+   "file": "Contracts/SolidityImportSmoke/YulNumericSequenceModel.lean"
+  },
+  {
+   "name": "Contracts.Specs",
+   "file": "Contracts/Specs.lean"
+  },
+  {
+   "name": "Contracts.StringEqSmoke",
+   "file": "Contracts/StringEqSmoke.lean"
+  },
+  {
+   "name": "Contracts.StringErrorSmokeContract",
+   "file": "Contracts/StringErrorSmokeContract.lean"
+  },
+  {
+   "name": "Contracts.StringEventSmoke",
+   "file": "Contracts/StringEventSmoke.lean"
+  },
+  {
+   "name": "Contracts.Vault",
+   "file": "Contracts/Vault.lean"
+  },
+  {
+   "name": "Contracts.Vault.Invariants",
+   "file": "Contracts/Vault/Invariants.lean"
+  },
+  {
+   "name": "Contracts.Vault.Proofs.Basic",
+   "file": "Contracts/Vault/Proofs/Basic.lean"
+  },
+  {
+   "name": "Contracts.Vault.Proofs.Conservation",
+   "file": "Contracts/Vault/Proofs/Conservation.lean"
+  },
+  {
+   "name": "Contracts.Vault.Proofs.Correctness",
+   "file": "Contracts/Vault/Proofs/Correctness.lean"
+  },
+  {
+   "name": "Contracts.Vault.Proofs.Native",
+   "file": "Contracts/Vault/Proofs/Native.lean"
+  },
+  {
+   "name": "Contracts.Vault.Spec",
+   "file": "Contracts/Vault/Spec.lean"
+  },
+  {
+   "name": "Contracts.Vault.SpecProofs",
+   "file": "Contracts/Vault/SpecProofs.lean"
+  },
+  {
+   "name": "Contracts.Vault.Vault",
+   "file": "Contracts/Vault/Vault.lean"
+  },
+  {
+   "name": "PrintAxioms",
+   "file": "PrintAxioms.lean"
+  },
+  {
+   "name": "StorageLayoutReport",
+   "file": "StorageLayoutReport.lean"
+  },
+  {
+   "name": "UnionAxiomsControls",
+   "file": "scripts/UnionAxiomsControls.lean"
+  },
+  {
+   "name": "UnionAxiomsFixture.Bad",
+   "file": "scripts/.assurance_fixtures/UnionAxiomsFixture/Bad.lean"
+  },
+  {
+   "name": "UnionAxiomsFixture.Dep",
+   "file": "scripts/.assurance_fixtures/UnionAxiomsFixture/Dep.lean"
+  },
+  {
+   "name": "UnionAxiomsFixture.Good",
+   "file": "scripts/.assurance_fixtures/UnionAxiomsFixture/Good.lean"
+  },
+  {
+   "name": "UnionAxiomsFixture.NativeAndAttrs",
+   "file": "scripts/.assurance_fixtures/UnionAxiomsFixture/NativeAndAttrs.lean"
+  },
+  {
+   "name": "UnionAxiomsFixture.ViaDep",
+   "file": "scripts/.assurance_fixtures/UnionAxiomsFixture/ViaDep.lean"
+  },
+  {
+   "name": "Verity",
+   "file": "Verity.lean"
+  },
+  {
+   "name": "Verity.Core",
+   "file": "Verity/Core.lean"
+  },
+  {
+   "name": "Verity.Macro",
+   "file": "Verity/Macro.lean"
+  },
+  {
+   "name": "Verity.Proofs.CheckedExternalCallConsumer",
+   "file": "Verity/Proofs/CheckedExternalCallConsumer.lean"
+  },
+  {
+   "name": "Verity.Proofs.LoopSimulation",
+   "file": "Verity/Proofs/LoopSimulation.lean"
+  },
+  {
+   "name": "Verity.Proofs.LoopSimulationResultAware",
+   "file": "Verity/Proofs/LoopSimulationResultAware.lean"
+  },
+  {
+   "name": "Verity.Proofs.Model.GeneratedEntrypointRegistry",
+   "file": "Verity/Proofs/Model/GeneratedEntrypointRegistry.lean"
+  },
+  {
+   "name": "Verity.Specs.AdversaryAndHelpers",
+   "file": "Verity/Specs/AdversaryAndHelpers.lean"
+  },
+  {
+   "name": "Verity.Specs.Common",
+   "file": "Verity/Specs/Common.lean"
+  },
+  {
+   "name": "Verity.Specs.Composition",
+   "file": "Verity/Specs/Composition.lean"
+  },
+  {
+   "name": "Verity.Specs.ObsAlgebra",
+   "file": "Verity/Specs/ObsAlgebra.lean"
+  },
+  {
+   "name": "VerityUnionAxioms",
+   "file": "scripts/VerityUnionAxioms.lean"
+  }
+ ],
+ "root_closure_files": 714,
+ "root_closure_sorry": [
+  "scripts/.assurance_fixtures/UnionAxiomsFixture/NativeAndAttrs.lean"
+ ],
+ "root_closure_axioms": 8,
+ "unclosed_files": 13,
+ "headline_rule": null,
+ "headline_count": 0,
+ "headlines": [],
+ "mathlib_imports": {
+  "Mathlib.Algebra.Order.Group.Abs": 1,
+  "Mathlib.Algebra.Order.Group.Unbundled.Int": 1,
+  "Mathlib.Analysis.Complex.Exponential": 1,
+  "Mathlib.Analysis.Complex.ExponentialBounds": 1,
+  "Mathlib.Data.Finmap": 1,
+  "Mathlib.Data.List.Nodup": 1,
+  "Mathlib.Data.List.OfFn": 1,
+  "Mathlib.Data.Nat.Basic": 2,
+  "Mathlib.Data.Nat.Bitwise": 2,
+  "Mathlib.Tactic": 1,
+  "Mathlib.Tactic.Attr.Register": 1,
+  "Mathlib.Tactic.Linarith": 2,
+  "Mathlib.Tactic.Ring": 2,
+  "Mathlib.Tactic.SplitIfs": 1
+ },
+ "import_roots": {
+  "Batteries": 1,
+  "EvmYul": 11,
+  "Init": 5,
+  "Lean": 47,
+  "Mathlib": 11,
+  "Std": 10
+ },
+ "uses": {
+  "Array": 61,
+  "Field": 110,
+  "Finmap": 2,
+  "Int": 22,
+  "List": 474,
+  "Nat": 417,
+  "Real.exp": 1,
+  "Real.log": 1,
+  "Std.HashMap": 3,
+  "closure": 4
+ },
+ "ci": "SUCCESS"
+}

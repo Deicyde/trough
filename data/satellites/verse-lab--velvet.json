@@ -1,0 +1,79 @@
+{
+ "schema": "trough-satellites/v1",
+ "repo": "verse-lab/velvet",
+ "slug": "verse-lab--velvet",
+ "rev": "b2a349a57021b6d4e24ab403365b404db1ce7e08",
+ "date": "2026-11-05T16:54:45Z",
+ "stable": "fdc2433421508c5648f37378946f656390430da7d25c0130fabda94b793f747c",
+ "license": {
+  "files": [
+   "LICENSE"
+  ],
+  "spdx": "Apache-2.0",
+  "file": "LICENSE",
+  "copyright": []
+ },
+ "readme": {
+  "file": "README.md",
+  "title": "Velvet: A Multi-Modal Verifier for Imperative Programs in Lean",
+  "excerpt": "Velvet is a Dafny-style verifier for imperative programs embedded in the Lean proof assistant. Velvet seamlessly combines SMT-inspired proof automation with Lean's interactive proof mode, enabling multi-modal verification: programs can be compiled, executed, validated using property-based testing, and formally verified within one unified environment."
+ },
+ "lean_files": 140,
+ "admitted": true,
+ "folder": "",
+ "toolchain": "v4.35.0",
+ "mathlib": "",
+ "requirements": [],
+ "libraries": [
+  {
+   "name": "Velvet",
+   "src": "."
+  },
+  {
+   "name": "Examples",
+   "src": "."
+  }
+ ],
+ "library_files": 78,
+ "capped": false,
+ "declarations": 453,
+ "sorry_files": 0,
+ "axioms": 0,
+ "closure_files": 0,
+ "closure_sorry": [],
+ "closure_axioms": 0,
+ "root_modules": [
+  {
+   "name": "Velvet",
+   "file": "Velvet.lean"
+  },
+  {
+   "name": "Velvet.Examples",
+   "file": "Velvet/Examples.lean"
+  }
+ ],
+ "root_closure_files": 77,
+ "root_closure_sorry": [],
+ "root_closure_axioms": 0,
+ "unclosed_files": 0,
+ "headline_rule": null,
+ "headline_count": 0,
+ "headlines": [],
+ "mathlib_imports": {},
+ "import_roots": {
+  "Init": 6,
+  "Lean": 21,
+  "Plausible": 1,
+  "Std": 14
+ },
+ "uses": {
+  "Array": 25,
+  "Int": 14,
+  "Language": 1,
+  "List": 23,
+  "Nat": 45,
+  "Set": 1,
+  "Std.HashMap": 3
+ },
+ "ci": "SUCCESS"
+}

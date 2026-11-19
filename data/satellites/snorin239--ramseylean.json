@@ -1,0 +1,129 @@
+{
+ "schema": "trough-satellites/v1",
+ "repo": "snorin239/RamseyLean",
+ "slug": "snorin239--ramseylean",
+ "rev": "90e87da214701dd6eb3d56a2c7121839d8269d14",
+ "date": "2026-08-17T12:31:31Z",
+ "stable": "72997244371c8ad1ad961857f0cfe98b8da61198c24c644d882268f701349822",
+ "license": {
+  "files": [],
+  "spdx": null,
+  "file": null,
+  "copyright": []
+ },
+ "readme": {
+  "file": "README.md",
+  "title": "Optimizing the CGMS upper bound on Ramsey numbers in Lean",
+  "excerpt": null
+ },
+ "lean_files": 586,
+ "admitted": true,
+ "folder": "",
+ "toolchain": "v4.32.1",
+ "mathlib": "520045ab14e26149ee970e2e617ca04b09bde5d6",
+ "requirements": [],
+ "libraries": [
+  {
+   "name": "RamseyLean",
+   "src": "."
+  }
+ ],
+ "library_files": 586,
+ "capped": false,
+ "declarations": 4065,
+ "sorry_files": 0,
+ "axioms": 0,
+ "closure_files": 585,
+ "closure_sorry": [],
+ "closure_axioms": 0,
+ "root_modules": [
+  {
+   "name": "RamseyLean",
+   "file": "RamseyLean.lean"
+  }
+ ],
+ "root_closure_files": 586,
+ "root_closure_sorry": [],
+ "root_closure_axioms": 0,
+ "unclosed_files": 0,
+ "headline_rule": "readme",
+ "headline_count": 2,
+ "headlines": [
+  {
+   "name": "RamseyLean.main",
+   "module": "RamseyLean.Main",
+   "file": "RamseyLean/Main.lean",
+   "line": 176,
+   "kind": "theorem",
+   "sorry": false,
+   "names": [
+    "Real.exp",
+    "main"
+   ]
+  },
+  {
+   "name": "RamseyLean.ramseyNumber_le_easy_optimized",
+   "module": "RamseyLean.EasyBound",
+   "file": "RamseyLean/EasyBound.lean",
+   "line": 1201,
+   "kind": "theorem",
+   "sorry": false,
+   "names": []
+  }
+ ],
+ "mathlib_imports": {
+  "Mathlib.Algebra.Order.Floor.Semiring": 2,
+  "Mathlib.Analysis.Asymptotics.Lemmas": 1,
+  "Mathlib.Analysis.Calculus.Deriv.MeanValue": 2,
+  "Mathlib.Analysis.Complex.Exponential": 1,
+  "Mathlib.Analysis.Complex.ExponentialBounds": 1,
+  "Mathlib.Analysis.Convex.Deriv": 1,
+  "Mathlib.Analysis.Real.Sqrt": 1,
+  "Mathlib.Analysis.SpecialFunctions.Complex.LogBounds": 1,
+  "Mathlib.Analysis.SpecialFunctions.Exp": 1,
+  "Mathlib.Analysis.SpecialFunctions.Log.Basic": 1,
+  "Mathlib.Analysis.SpecialFunctions.Log.Deriv": 1,
+  "Mathlib.Analysis.SpecialFunctions.Log.RpowTendsto": 1,
+  "Mathlib.Analysis.SpecialFunctions.Pochhammer": 1,
+  "Mathlib.Analysis.SpecialFunctions.Pow.Continuity": 1,
+  "Mathlib.Analysis.SpecialFunctions.Pow.Deriv": 1,
+  "Mathlib.Analysis.SpecialFunctions.Pow.Real": 1,
+  "Mathlib.Analysis.SpecialFunctions.Stirling": 1,
+  "Mathlib.Analysis.SpecificLimits.Basic": 1,
+  "Mathlib.Combinatorics.Enumerative.DoubleCounting": 1,
+  "Mathlib.Combinatorics.SimpleGraph.Basic": 1,
+  "Mathlib.Combinatorics.SimpleGraph.Clique": 1,
+  "Mathlib.Combinatorics.SimpleGraph.Density": 1,
+  "Mathlib.Combinatorics.SimpleGraph.Finite": 1,
+  "Mathlib.Data.Finset.Lattice.Fold": 1,
+  "Mathlib.Data.Fintype.EquivFin": 1,
+  "Mathlib.Data.Nat.Choose.Bounds": 1,
+  "Mathlib.Data.Real.Basic": 1,
+  "Mathlib.Order.Nat": 1,
+  "Mathlib.Tactic": 11,
+  "Mathlib.Topology.Compactness.Compact": 1,
+  "Mathlib.Topology.Constructions": 1,
+  "Mathlib.Topology.Order.DenselyOrdered": 1,
+  "Mathlib.Topology.UniformSpace.HeineCantor": 1
+ },
+ "import_roots": {
+  "Mathlib": 20
+ },
+ "uses": {
+  "Continuous": 3,
+  "Filter": 5,
+  "Filter.Tendsto": 2,
+  "Finset": 12,
+  "Finset.card_powersetCard": 1,
+  "HasDerivAt": 6,
+  "List": 533,
+  "Nat": 40,
+  "Real.exp": 26,
+  "Real.log": 22,
+  "Real.rpow": 4,
+  "Set": 30,
+  "SimpleGraph": 8,
+  "closure": 3
+ },
+ "ci": null
+}

@@ -1,0 +1,141 @@
+{
+ "schema": "trough-satellites/v1",
+ "repo": "lispc/kepler-conjecture-lean4",
+ "slug": "lispc--kepler-conjecture-lean4",
+ "rev": "6654a964c5c5b6bf483b9537cf0f80ecd83a8390",
+ "date": "2026-11-17T05:47:48Z",
+ "stable": "1c01cb8327b00225c8c72c47336f58f057cdaa53118a479430c755912546811a",
+ "license": {
+  "files": [],
+  "spdx": null,
+  "file": null,
+  "copyright": []
+ },
+ "readme": {
+  "file": "README.md",
+  "title": "The Kepler Conjecture, Re-Proven in Lean 4",
+  "excerpt": null
+ },
+ "lean_files": 20776,
+ "admitted": true,
+ "folder": "lean",
+ "toolchain": "v4.32.2",
+ "mathlib": "",
+ "requirements": [],
+ "libraries": [
+  {
+   "name": "Kepler",
+   "src": "."
+  }
+ ],
+ "library_files": 5000,
+ "capped": true,
+ "declarations": 11999,
+ "sorry_files": 1,
+ "axioms": 0,
+ "closure_files": 1158,
+ "closure_sorry": [
+  "lean/Kepler/Assembly.lean"
+ ],
+ "closure_axioms": 0,
+ "root_modules": [
+  {
+   "name": "Kepler",
+   "file": "lean/Kepler.lean"
+  }
+ ],
+ "root_closure_files": 962,
+ "root_closure_sorry": [],
+ "root_closure_axioms": 0,
+ "unclosed_files": 0,
+ "headline_rule": "readme",
+ "headline_count": 2,
+ "headlines": [
+  {
+   "name": "Kepler.the_kepler_conjecture_e2e",
+   "module": "Kepler.Final",
+   "file": "lean/Kepler/Final.lean",
+   "line": 22,
+   "kind": "theorem",
+   "sorry": false,
+   "names": [
+    "Metric.ball",
+    "Set"
+   ]
+  },
+  {
+   "name": "Kepler.Assembly.lpArchiveCertificatesDebt",
+   "module": "Kepler.Assembly",
+   "file": "lean/Kepler/Assembly.lean",
+   "line": 7106,
+   "kind": "theorem",
+   "sorry": true,
+   "names": [
+    "Set"
+   ]
+  }
+ ],
+ "mathlib_imports": {
+  "Mathlib.Algebra.BigOperators.Group.Finset.Basic": 1,
+  "Mathlib.Algebra.Order.BigOperators.Group.Finset": 1,
+  "Mathlib.Analysis.InnerProductSpace.EuclideanDist": 1,
+  "Mathlib.Analysis.Normed.Module.FiniteDimension": 1,
+  "Mathlib.Analysis.SpecialFunctions.Complex.Log": 1,
+  "Mathlib.Data.List.Basic": 2,
+  "Mathlib.Data.List.Induction": 1,
+  "Mathlib.Data.List.Rotate": 4,
+  "Mathlib.Data.Nat.Basic": 1,
+  "Mathlib.Data.Set.Card": 1,
+  "Mathlib.Data.Set.Defs": 2,
+  "Mathlib.Data.Set.Finite.Basic": 1,
+  "Mathlib.Data.Set.Function": 1,
+  "Mathlib.Data.Set.Lattice": 2,
+  "Mathlib.LinearAlgebra.AffineSpace.FiniteDimensional": 1,
+  "Mathlib.LinearAlgebra.CrossProduct": 1,
+  "Mathlib.Order.Defs.LinearOrder": 1,
+  "Mathlib.Order.Lattice.Nat": 1,
+  "Mathlib.Tactic.Tauto": 1
+ },
+ "import_roots": {
+  "Mathlib": 17
+ },
+ "uses": {
+  "Array": 1,
+  "Complex": 5,
+  "Complex.cos": 2,
+  "Complex.exp": 4,
+  "Complex.sin": 2,
+  "Continuous": 1,
+  "Convex": 1,
+  "Equiv.Perm": 1,
+  "Finset": 9,
+  "InnerProductSpace": 1,
+  "Int": 3,
+  "IsCompact": 1,
+  "LinearIndependent": 3,
+  "LinearMap.det": 1,
+  "List": 52,
+  "Matrix.det": 1,
+  "Measurable": 2,
+  "MeasurableSet": 4,
+  "MeasureTheory.Integrable": 1,
+  "MeasureTheory.Measure": 2,
+  "MeasureTheory.Measure.pi": 1,
+  "Metric.ball": 6,
+  "Module": 2,
+  "Module.Basis": 1,
+  "Nat": 42,
+  "Rat": 1,
+  "Real": 2,
+  "Real.arcsin": 1,
+  "Real.sin": 5,
+  "Set": 25,
+  "Set.finrank": 2,
+  "Submodule.span": 2,
+  "TopologicalSpace": 1,
+  "affineSpan": 3,
+  "convexHull": 1,
+  "crossProduct": 2
+ },
+ "ci": "FAILURE"
+}

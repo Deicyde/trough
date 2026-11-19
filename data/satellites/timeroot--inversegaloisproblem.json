@@ -1,0 +1,497 @@
+{
+ "schema": "trough-satellites/v1",
+ "repo": "Timeroot/InverseGaloisProblem",
+ "slug": "timeroot--inversegaloisproblem",
+ "rev": "973f72c1900fb72c460833448b472899fa659366",
+ "date": "2026-09-16T19:29:32Z",
+ "stable": "cd4173bca026eb5ccec4720a3e0844dad1904090d925b6ba0e783946f9800994",
+ "license": {
+  "files": [],
+  "spdx": null,
+  "file": null,
+  "copyright": []
+ },
+ "readme": {
+  "file": "README.md",
+  "title": "The Inverse Galois Problem, in Lean 4",
+  "excerpt": null
+ },
+ "lean_files": 2014,
+ "admitted": true,
+ "folder": "",
+ "toolchain": "v4.28.0",
+ "mathlib": "8f9d9cff6bd728b17a24e163c9402775d9e6a365",
+ "requirements": [],
+ "libraries": [
+  {
+   "name": "InverseGalois",
+   "src": "."
+  },
+  {
+   "name": "Mathieu",
+   "src": "."
+  },
+  {
+   "name": "MathieuRigidity",
+   "src": "."
+  },
+  {
+   "name": "MathieuRigidityM22",
+   "src": "."
+  },
+  {
+   "name": "MathieuRigidityM24",
+   "src": "."
+  },
+  {
+   "name": "PGL2Large",
+   "src": "."
+  },
+  {
+   "name": "PSL2Large",
+   "src": "."
+  },
+  {
+   "name": "Challenge",
+   "src": "extras/comparator"
+  },
+  {
+   "name": "Solution",
+   "src": "extras/comparator"
+  }
+ ],
+ "library_files": 2014,
+ "capped": false,
+ "declarations": 21569,
+ "sorry_files": 1,
+ "axioms": 0,
+ "closure_files": 1026,
+ "closure_sorry": [],
+ "closure_axioms": 0,
+ "root_modules": [
+  {
+   "name": "Challenge",
+   "file": "extras/comparator/Challenge.lean"
+  },
+  {
+   "name": "InverseGalois",
+   "file": "InverseGalois.lean"
+  },
+  {
+   "name": "InverseGalois.Rigidity.Examples.MathieuM11",
+   "file": "InverseGalois/Rigidity/Examples/MathieuM11.lean"
+  },
+  {
+   "name": "InverseGalois.Rigidity.Examples.MathieuM12",
+   "file": "InverseGalois/Rigidity/Examples/MathieuM12.lean"
+  },
+  {
+   "name": "InverseGalois.Rigidity.Examples.MathieuM22",
+   "file": "InverseGalois/Rigidity/Examples/MathieuM22.lean"
+  },
+  {
+   "name": "InverseGalois.Rigidity.Examples.MathieuM22Index",
+   "file": "InverseGalois/Rigidity/Examples/MathieuM22Index.lean"
+  },
+  {
+   "name": "InverseGalois.Rigidity.Examples.MathieuM24",
+   "file": "InverseGalois/Rigidity/Examples/MathieuM24.lean"
+  },
+  {
+   "name": "InverseGalois.Rigidity.Examples.MathieuM24Class",
+   "file": "InverseGalois/Rigidity/Examples/MathieuM24Class.lean"
+  },
+  {
+   "name": "InverseGalois.Rigidity.Examples.PGL2F29",
+   "file": "InverseGalois/Rigidity/Examples/PGL2F29.lean"
+  },
+  {
+   "name": "InverseGalois.Rigidity.Examples.PGL2F31",
+   "file": "InverseGalois/Rigidity/Examples/PGL2F31.lean"
+  },
+  {
+   "name": "InverseGalois.Rigidity.Examples.PGL2F37",
+   "file": "InverseGalois/Rigidity/Examples/PGL2F37.lean"
+  },
+  {
+   "name": "InverseGalois.Rigidity.Examples.PSL2F13",
+   "file": "InverseGalois/Rigidity/Examples/PSL2F13.lean"
+  },
+  {
+   "name": "InverseGalois.Rigidity.Examples.PSL2F17",
+   "file": "InverseGalois/Rigidity/Examples/PSL2F17.lean"
+  },
+  {
+   "name": "InverseGalois.Rigidity.Examples.PSL2F19",
+   "file": "InverseGalois/Rigidity/Examples/PSL2F19.lean"
+  },
+  {
+   "name": "InverseGalois.Rigidity.Examples.PSL2F23",
+   "file": "InverseGalois/Rigidity/Examples/PSL2F23.lean"
+  },
+  {
+   "name": "InverseGalois.Rigidity.Examples.PSL2F29",
+   "file": "InverseGalois/Rigidity/Examples/PSL2F29.lean"
+  },
+  {
+   "name": "InverseGalois.Rigidity.Examples.PSL2F31",
+   "file": "InverseGalois/Rigidity/Examples/PSL2F31.lean"
+  },
+  {
+   "name": "InverseGalois.Rigidity.Examples.PSL2F37",
+   "file": "InverseGalois/Rigidity/Examples/PSL2F37.lean"
+  },
+  {
+   "name": "Mathieu",
+   "file": "Mathieu.lean"
+  },
+  {
+   "name": "Solution",
+   "file": "extras/comparator/Solution.lean"
+  }
+ ],
+ "root_closure_files": 2008,
+ "root_closure_sorry": [
+  "extras/comparator/Challenge.lean"
+ ],
+ "root_closure_axioms": 0,
+ "unclosed_files": 0,
+ "headline_rule": "readme",
+ "headline_count": 17,
+ "headlines": [
+  {
+   "name": "Shafarevich.splitPrimePowerEP",
+   "module": "InverseGalois.Solvable.Shafarevich.Theorem",
+   "file": "InverseGalois/Solvable/Shafarevich/Theorem.lean",
+   "line": 44,
+   "kind": "theorem",
+   "sorry": false,
+   "names": []
+  },
+  {
+   "name": "Rigidity.RET.IsRegularInverseGalois.of_commGroup",
+   "module": "InverseGalois.Rigidity.RET.AbelFinale",
+   "file": "InverseGalois/Rigidity/RET/AbelFinale.lean",
+   "line": 73,
+   "kind": "theorem",
+   "sorry": false,
+   "names": []
+  },
+  {
+   "name": "isRegularInverseGalois_of_isSemiabelian",
+   "module": "InverseGalois.Rigidity.RET.Wreath.Main",
+   "file": "InverseGalois/Rigidity/RET/Wreath/Main.lean",
+   "line": 221,
+   "kind": "theorem",
+   "sorry": false,
+   "names": [
+    "Group"
+   ]
+  },
+  {
+   "name": "InverseGalois.isRegularInverseGalois_of_isZGroup",
+   "module": "InverseGalois.Rigidity.RET.Wreath.SmallGroups",
+   "file": "InverseGalois/Rigidity/RET/Wreath/SmallGroups.lean",
+   "line": 88,
+   "kind": "theorem",
+   "sorry": false,
+   "names": [
+    "Group"
+   ]
+  },
+  {
+   "name": "InverseGalois.isRegularInverseGalois_of_nilpotencyClass_le_two",
+   "module": "InverseGalois.Rigidity.RET.Wreath.SmallGroups",
+   "file": "InverseGalois/Rigidity/RET/Wreath/SmallGroups.lean",
+   "line": 247,
+   "kind": "theorem",
+   "sorry": false,
+   "names": [
+    "Group",
+    "Group.IsNilpotent"
+   ]
+  },
+  {
+   "name": "InverseGalois.isRegularInverseGalois_of_forall_sylow_comm",
+   "module": "InverseGalois.Rigidity.RET.Wreath.SmallGroups",
+   "file": "InverseGalois/Rigidity/RET/Wreath/SmallGroups.lean",
+   "line": 189,
+   "kind": "theorem",
+   "sorry": false,
+   "names": [
+    "Group",
+    "Subgroup"
+   ]
+  },
+  {
+   "name": "InverseGalois.isRegularInverseGalois_of_card_lt_fortyeight",
+   "module": "InverseGalois.Rigidity.RET.Wreath.SmallGroups",
+   "file": "InverseGalois/Rigidity/RET/Wreath/SmallGroups.lean",
+   "line": 164,
+   "kind": "theorem",
+   "sorry": false,
+   "names": [
+    "Group"
+   ]
+  },
+  {
+   "name": "InverseGalois.isRegularInverseGalois_sylow_perm",
+   "module": "InverseGalois.Rigidity.RET.Wreath.SmallGroups",
+   "file": "InverseGalois/Rigidity/RET/Wreath/SmallGroups.lean",
+   "line": 217,
+   "kind": "theorem",
+   "sorry": false,
+   "names": [
+    "Equiv.Perm",
+    "Subgroup"
+   ]
+  }
+ ],
+ "mathlib_imports": {
+  "Mathlib.Algebra.Algebra.Pi": 1,
+  "Mathlib.Algebra.Algebra.Prod": 1,
+  "Mathlib.Algebra.BigOperators.Group.List.Basic": 1,
+  "Mathlib.Algebra.Category.CommAlgCat.Basic": 1,
+  "Mathlib.Algebra.Category.CommAlgCat.Monoidal": 1,
+  "Mathlib.Algebra.FreeAbelianGroup.Finsupp": 1,
+  "Mathlib.AlgebraicTopology.FundamentalGroupoid.Basic": 1,
+  "Mathlib.AlgebraicTopology.FundamentalGroupoid.FundamentalGroup": 2,
+  "Mathlib.AlgebraicTopology.FundamentalGroupoid.InducedMaps": 1,
+  "Mathlib.AlgebraicTopology.FundamentalGroupoid.Product": 1,
+  "Mathlib.AlgebraicTopology.FundamentalGroupoid.SimplyConnected": 3,
+  "Mathlib.Analysis.Complex.Convex": 1,
+  "Mathlib.Analysis.Complex.CoveringMap": 2,
+  "Mathlib.Analysis.Convex.Contractible": 2,
+  "Mathlib.Analysis.Normed.Module.Connected": 1,
+  "Mathlib.CategoryTheory.Action.Continuous": 1,
+  "Mathlib.CategoryTheory.Category.Cat": 1,
+  "Mathlib.CategoryTheory.Galois.Basic": 5,
+  "Mathlib.CategoryTheory.Galois.Equivalence": 1,
+  "Mathlib.CategoryTheory.Galois.IsFundamentalgroup": 2,
+  "Mathlib.CategoryTheory.Groupoid.Grpd.Basic": 1,
+  "Mathlib.CategoryTheory.Limits.Constructions.LimitsOfProductsAndEqualizers": 1,
+  "Mathlib.CategoryTheory.Limits.FullSubcategory": 2,
+  "Mathlib.CategoryTheory.Limits.Opposites": 1,
+  "Mathlib.CategoryTheory.Limits.Preserves.Finite": 1,
+  "Mathlib.CategoryTheory.Limits.Preserves.Opposites": 1,
+  "Mathlib.CategoryTheory.Limits.Preserves.Shapes.Pullbacks": 1,
+  "Mathlib.CategoryTheory.Limits.Preserves.Shapes.Terminal": 1,
+  "Mathlib.CategoryTheory.Limits.Shapes.Equalizers": 1,
+  "Mathlib.CategoryTheory.Limits.Shapes.FiniteLimits": 1,
+  "Mathlib.CategoryTheory.Limits.Shapes.Opposites.Products": 1,
+  "Mathlib.CategoryTheory.Limits.Shapes.Opposites.Pullbacks": 2,
+  "Mathlib.CategoryTheory.Limits.Shapes.Products": 1,
+  "Mathlib.CategoryTheory.Limits.Shapes.Pullback.HasPullback": 1,
+  "Mathlib.CategoryTheory.Limits.Shapes.Pullback.IsPullback.Defs": 1,
+  "Mathlib.CategoryTheory.Limits.Shapes.Pullback.PullbackCone": 1,
+  "Mathlib.CategoryTheory.Limits.Shapes.SingleObj": 2,
+  "Mathlib.CategoryTheory.Limits.Yoneda": 1,
+  "Mathlib.CategoryTheory.SingleObj": 1,
+  "Mathlib.Data.Finite.Card": 1,
+  "Mathlib.Data.List.OfFn": 1,
+  "Mathlib.FieldTheory.AbsoluteGaloisGroup": 1,
+  "Mathlib.FieldTheory.Galois.Profinite": 1,
+  "Mathlib.FieldTheory.IntermediateField.Adjoin.Basic": 1,
+  "Mathlib.FieldTheory.Minpoly.Basic": 1,
+  "Mathlib.FieldTheory.Perfect": 1,
+  "Mathlib.FieldTheory.Separable": 1,
+  "Mathlib.GroupTheory.Coprod.Basic": 1,
+  "Mathlib.GroupTheory.CoprodI": 1,
+  "Mathlib.GroupTheory.FreeGroup.Basic": 1,
+  "Mathlib.GroupTheory.PresentedGroup": 1,
+  "Mathlib.LinearAlgebra.Dimension.Free": 1,
+  "Mathlib.RingTheory.Artinian.Module": 1,
+  "Mathlib.RingTheory.Etale.Basic": 2,
+  "Mathlib.RingTheory.Etale.Field": 4,
+  "Mathlib.RingTheory.Etale.Pi": 1,
+  "Mathlib.RingTheory.FinitePresentation": 1,
+  "Mathlib.RingTheory.Flat.FaithfullyFlat.Algebra": 1,
+  "Mathlib.RingTheory.Invariant.Basic": 1,
+  "Mathlib.RingTheory.Noetherian.Basic": 1,
+  "Mathlib.RingTheory.Smooth.Flat": 1,
+  "Mathlib.RingTheory.TensorProduct.Maps": 1,
+  "Mathlib.Topology.Algebra.ContinuousMonoidHom": 1,
+  "Mathlib.Topology.ContinuousMap.Basic": 1,
+  "Mathlib.Topology.Homotopy.Path": 1,
+  "Mathlib.Topology.LocallyConstant.Basic": 1,
+  "Mathlib.Topology.Subpath": 2,
+  "Mathlib.Topology.UnitInterval": 2
+ },
+ "import_roots": {
+  "Mathlib": 1895
+ },
+ "uses": {
+  "AdjoinRoot": 13,
+  "Algebra": 874,
+  "Algebra.IsAlgebraic": 65,
+  "AlgebraicClosure": 158,
+  "AnalyticAt": 22,
+  "ArithmeticFunction": 1,
+  "BorelSpace": 10,
+  "Cardinal": 3,
+  "CategoryTheory.Category": 4,
+  "CategoryTheory.Functor": 8,
+  "CategoryTheory.Iso": 1,
+  "CauchySeq": 1,
+  "CharP": 11,
+  "CharZero": 101,
+  "CompleteSpace": 71,
+  "Complex": 7,
+  "Complex.exists_root": 5,
+  "Complex.exp": 24,
+  "ConjClasses": 25,
+  "ConnectedSpace": 1,
+  "ContDiff": 34,
+  "Continuous": 79,
+  "ContinuousSMul": 8,
+  "Convex": 11,
+  "Differentiable": 6,
+  "DifferentiableOn": 18,
+  "Equiv.Perm": 147,
+  "Equiv.Perm.sign": 11,
+  "EuclideanDomain.gcd": 3,
+  "Field": 1120,
+  "Field.exists_primitive_element": 17,
+  "Filter": 62,
+  "Filter.Tendsto": 26,
+  "FiniteDimensional": 389,
+  "FiniteDimensional.proper": 3,
+  "Finset": 316,
+  "Finset.sum_range_id": 1,
+  "Finsupp": 3,
+  "FractionalIdeal": 10,
+  "FreeGroup": 8,
+  "Group": 725,
+  "Group.IsNilpotent": 28,
+  "HasDerivAt": 11,
+  "HasFDerivAt": 11,
+  "HasFDerivAt.comp": 3,
+  "HasSum": 7,
+  "Homeomorph": 1,
+  "Ideal": 267,
+  "InnerProductSpace.toDual": 1,
+  "Int": 5,
+  "Int.ModEq": 1,
+  "Invertible": 5,
+  "Irreducible": 116,
+  "IsAlgClosed": 101,
+  "IsAlgebraic": 25,
+  "IsClosedMap": 2,
+  "IsCompact": 11,
+  "IsCoprime": 33,
+  "IsCyclic": 183,
+  "IsFractionRing": 54,
+  "IsGalois.intermediateFieldEquivSubgroup": 2,
+  "IsLocalRing": 2,
+  "IsNoetherian": 1,
+  "IsNoetherianRing": 4,
+  "IsPathConnected": 3,
+  "IsSimpleGroup": 12,
+  "IsTopologicalGroup": 10,
+  "Lagrange.interpolate": 1,
+  "LinearIndependent": 10,
+  "LinearMap.GeneralLinearGroup": 1,
+  "LinearMap.ker": 50,
+  "LinearMap.range": 82,
+  "LinearMap.toMatrix": 3,
+  "List": 35,
+  "Matrix": 56,
+  "Matrix.GeneralLinearGroup": 2,
+  "Matrix.SpecialLinearGroup": 7,
+  "Matrix.det": 5,
+  "Matrix.rank": 1,
+  "Measurable": 1,
+  "MeasurableSet": 3,
+  "MeasurableSpace": 10,
+  "MeasureTheory.Integrable": 15,
+  "MeasureTheory.Lp": 5,
+  "MeasureTheory.Measure": 9,
+  "MeasureTheory.tendsto_integral_of_dominated_convergence": 1,
+  "Metric.ball": 54,
+  "Metric.isOpen_iff": 7,
+  "Module": 262,
+  "Module.Basis": 23,
+  "Module.Basis.ofVectorSpace": 1,
+  "Module.Dual": 8,
+  "Module.evalEquiv": 2,
+  "ModuleCat": 11,
+  "MonoidHom": 1,
+  "MulAction": 436,
+  "MulAction.orbit": 30,
+  "MulAction.orbitEquivQuotientStabilizer": 7,
+  "MulAction.stabilizer": 345,
+  "Multiset": 18,
+  "MvPolynomial": 15,
+  "MvPolynomial.IsSymmetric": 1,
+  "Nat": 5,
+  "Nat.ModEq.pow_totient": 2,
+  "Nat.gcd_eq_gcd_ab": 15,
+  "Nat.totient": 8,
+  "NormedSpace": 4,
+  "NumberField.tendsto_sub_one_mul_dedekindZeta_nhdsGT": 1,
+  "Polynomial": 425,
+  "Polynomial.Separable": 9,
+  "Polynomial.coeff_eq_esymm_roots_of_card": 1,
+  "Polynomial.cyclotomic": 6,
+  "Polynomial.derivative": 43,
+  "Polynomial.dvd_iff_isRoot": 5,
+  "Polynomial.eval": 52,
+  "Polynomial.irreducible_of_eisenstein_criterion": 6,
+  "Polynomial.rootMultiplicity": 2,
+  "Polynomial.roots": 13,
+  "PowerSeries": 9,
+  "PresentedGroup": 2,
+  "Prime": 16,
+  "QuotientGroup.quotientKerEquivRange": 14,
+  "QuotientGroup.quotientQuotientEquivQuotient": 1,
+  "Rat": 3,
+  "RatFunc": 207,
+  "Real": 7,
+  "Real.exp": 9,
+  "Real.log": 11,
+  "Real.sin": 3,
+  "Representation": 80,
+  "Ring": 31,
+  "RingHom.quotientKerEquivOfSurjective": 2,
+  "Set": 593,
+  "Subfield": 13,
+  "Subgroup": 492,
+  "Subgroup.Normal": 3,
+  "Subgroup.card_subgroup_dvd_card": 23,
+  "Subgroup.closure": 156,
+  "Subgroup.index": 5,
+  "Submodule.span": 33,
+  "Subring": 6,
+  "Sylow.exists_subgroup_card_pow_prime": 4,
+  "T2Space": 15,
+  "TensorProduct": 127,
+  "TopologicalSpace": 176,
+  "Transcendental": 31,
+  "UniformSpace": 1,
+  "UniqueFactorizationMonoid": 12,
+  "ZMod.pow_card_sub_one_eq_one": 6,
+  "ZMod.unitOfCoprime": 10,
+  "ZMod.wilsons_lemma": 1,
+  "add_pow": 1,
+  "alternatingGroup": 19,
+  "card_sylow_modEq_one": 5,
+  "closure": 6,
+  "exists_deriv_eq_zero": 2,
+  "exists_extension_norm_eq": 1,
+  "exists_prime_orderOf_dvd_card": 6,
+  "fderiv": 14,
+  "fderiv_comp": 1,
+  "frobenius": 2,
+  "hensels_lemma": 2,
+  "irrational_sqrt_two": 1,
+  "iteratedDeriv": 10,
+  "lineDeriv": 7,
+  "littleWedderburn": 1,
+  "minpoly": 84,
+  "norm_add_le": 6,
+  "orderOf": 160,
+  "ringChar": 16,
+  "tsum_geometric_of_norm_lt_one": 1
+ },
+ "ci": null
+}

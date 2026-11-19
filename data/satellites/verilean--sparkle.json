@@ -1,0 +1,390 @@
+{
+ "schema": "trough-satellites/v1",
+ "repo": "Verilean/sparkle",
+ "slug": "verilean--sparkle",
+ "rev": "6c29b9b8b4bed436afcc0a3f23a6335bfbc751a1",
+ "date": "2026-11-09T13:45:34Z",
+ "stable": "7e8c691827926853db01210338468ff8a917ddef353203dc9cb065b9d75e9bd3",
+ "license": {
+  "files": [
+   "LICENSE"
+  ],
+  "spdx": "Apache-2.0",
+  "file": "LICENSE",
+  "copyright": []
+ },
+ "readme": {
+  "file": "README.md",
+  "title": "Sparkle HDL",
+  "excerpt": "**Write hardware in Lean 4. Prove it correct. Generate Verilog.**"
+ },
+ "lean_files": 1016,
+ "admitted": true,
+ "folder": "",
+ "toolchain": "v4.32.1",
+ "mathlib": "",
+ "requirements": [
+  {
+   "name": "LSpec",
+   "url": "https://github.com/argumentcomputer/LSpec",
+   "rev": "3e23a4ad2e91eaf07845cecad157b7ffbb437aed"
+  }
+ ],
+ "libraries": [
+  {
+   "name": "Sparkle",
+   "src": "."
+  },
+  {
+   "name": "IP.BitNet",
+   "src": "."
+  },
+  {
+   "name": "IP.Drone",
+   "src": "."
+  },
+  {
+   "name": "IP.Humanoid",
+   "src": "."
+  },
+  {
+   "name": "IP.RV32",
+   "src": "."
+  },
+  {
+   "name": "IP.YOLOv8",
+   "src": "."
+  },
+  {
+   "name": "IP.Arbiter",
+   "src": "."
+  },
+  {
+   "name": "Examples.CDC",
+   "src": "."
+  },
+  {
+   "name": "Examples.FPU",
+   "src": "."
+  },
+  {
+   "name": "IP.Video",
+   "src": "."
+  },
+  {
+   "name": "IP.Bus",
+   "src": "."
+  },
+  {
+   "name": "IP.Net",
+   "src": "."
+  },
+  {
+   "name": "IP.USB",
+   "src": "."
+  },
+  {
+   "name": "IP.Crypto",
+   "src": "."
+  },
+  {
+   "name": "IP.TLS",
+   "src": "."
+  },
+  {
+   "name": "IP.Control",
+   "src": "."
+  },
+  {
+   "name": "Tools.SVParser",
+   "src": "."
+  },
+  {
+   "name": "Tools.VerifyElab",
+   "src": "."
+  },
+  {
+   "name": "Tools.ConcatNorm",
+   "src": "."
+  },
+  {
+   "name": "Tools.ConeFold",
+   "src": "."
+  },
+  {
+   "name": "Tools.ConeFoldSlices",
+   "src": "."
+  },
+  {
+   "name": "Tools.ConeFoldOpt",
+   "src": "."
+  },
+  {
+   "name": "Tools.ConeFoldMem",
+   "src": "."
+  },
+  {
+   "name": "Tools.ConeFoldRT",
+   "src": "."
+  },
+  {
+   "name": "Tools.DeepElab",
+   "src": "."
+  },
+  {
+   "name": "Tools.VedStrictAudit",
+   "src": "."
+  },
+  {
+   "name": "Tests.Ved.StrictAuditCheck",
+   "src": "."
+  },
+  {
+   "name": "Tests.Ved.RegDedupWidthCheck",
+   "src": "."
+  },
+  {
+   "name": "Tests.Ved.NestedCacheCheck",
+   "src": "."
+  },
+  {
+   "name": "Tools.VedIRDecEq",
+   "src": "."
+  },
+  {
+   "name": "Tools.VedU1Contract",
+   "src": "."
+  },
+  {
+   "name": "Tools.VedU1Entry",
+   "src": "."
+  },
+  {
+   "name": "Tools.VedU1Deep",
+   "src": "."
+  },
+  {
+   "name": "Tests.Ved.PilotB0Fixture",
+   "src": "."
+  },
+  {
+   "name": "Tests.Ved.U1ContractCheck",
+   "src": "."
+  },
+  {
+   "name": "Tests.Ved.U1EntryCheck",
+   "src": "."
+  },
+  {
+   "name": "Tests.Ved.U1DeepCheck",
+   "src": "."
+  },
+  {
+   "name": "TutorialExtended",
+   "src": "tutorial-extended"
+  },
+  {
+   "name": "Display",
+   "src": "docs/tutorial"
+  },
+  {
+   "name": "TutorialNotebooks",
+   "src": "docs/tutorial"
+  },
+  {
+   "name": "Tests",
+   "src": "."
+  }
+ ],
+ "library_files": 978,
+ "capped": false,
+ "declarations": 8140,
+ "sorry_files": 9,
+ "axioms": 4,
+ "closure_files": 0,
+ "closure_sorry": [],
+ "closure_axioms": 0,
+ "root_modules": [
+  {
+   "name": "Display",
+   "file": "docs/tutorial/Display.lean"
+  },
+  {
+   "name": "Examples.CDC",
+   "file": "Examples/CDC.lean"
+  },
+  {
+   "name": "Examples.FPU",
+   "file": "Examples/FPU.lean"
+  },
+  {
+   "name": "IP.Arbiter",
+   "file": "IP/Arbiter.lean"
+  },
+  {
+   "name": "IP.BitNet",
+   "file": "IP/BitNet.lean"
+  },
+  {
+   "name": "IP.Bus",
+   "file": "IP/Bus.lean"
+  },
+  {
+   "name": "IP.Control",
+   "file": "IP/Control.lean"
+  },
+  {
+   "name": "IP.Drone",
+   "file": "IP/Drone.lean"
+  },
+  {
+   "name": "IP.Humanoid",
+   "file": "IP/Humanoid.lean"
+  },
+  {
+   "name": "IP.Net",
+   "file": "IP/Net.lean"
+  },
+  {
+   "name": "IP.RV32",
+   "file": "IP/RV32.lean"
+  },
+  {
+   "name": "IP.TLS",
+   "file": "IP/TLS.lean"
+  },
+  {
+   "name": "IP.Video",
+   "file": "IP/Video.lean"
+  },
+  {
+   "name": "IP.YOLOv8",
+   "file": "IP/YOLOv8.lean"
+  },
+  {
+   "name": "Notebooks",
+   "file": "docs/tutorial/Notebooks.lean"
+  },
+  {
+   "name": "Sparkle",
+   "file": "Sparkle.lean"
+  },
+  {
+   "name": "Tests.Ved.NestedCacheCheck",
+   "file": "Tests/Ved/NestedCacheCheck.lean"
+  },
+  {
+   "name": "Tests.Ved.PilotB0Fixture",
+   "file": "Tests/Ved/PilotB0Fixture.lean"
+  },
+  {
+   "name": "Tests.Ved.RegDedupWidthCheck",
+   "file": "Tests/Ved/RegDedupWidthCheck.lean"
+  },
+  {
+   "name": "Tests.Ved.StrictAuditCheck",
+   "file": "Tests/Ved/StrictAuditCheck.lean"
+  },
+  {
+   "name": "Tests.Ved.U1ContractCheck",
+   "file": "Tests/Ved/U1ContractCheck.lean"
+  },
+  {
+   "name": "Tests.Ved.U1DeepCheck",
+   "file": "Tests/Ved/U1DeepCheck.lean"
+  },
+  {
+   "name": "Tests.Ved.U1EntryCheck",
+   "file": "Tests/Ved/U1EntryCheck.lean"
+  },
+  {
+   "name": "Tools.ConcatNorm",
+   "file": "Tools/ConcatNorm.lean"
+  },
+  {
+   "name": "Tools.ConeFold",
+   "file": "Tools/ConeFold.lean"
+  },
+  {
+   "name": "Tools.ConeFoldMem",
+   "file": "Tools/ConeFoldMem.lean"
+  },
+  {
+   "name": "Tools.ConeFoldOpt",
+   "file": "Tools/ConeFoldOpt.lean"
+  },
+  {
+   "name": "Tools.ConeFoldRT",
+   "file": "Tools/ConeFoldRT.lean"
+  },
+  {
+   "name": "Tools.ConeFoldSlices",
+   "file": "Tools/ConeFoldSlices.lean"
+  },
+  {
+   "name": "Tools.DeepElab",
+   "file": "Tools/DeepElab.lean"
+  },
+  {
+   "name": "Tools.SVParser",
+   "file": "Tools/SVParser.lean"
+  },
+  {
+   "name": "Tools.VedIRDecEq",
+   "file": "Tools/VedIRDecEq.lean"
+  },
+  {
+   "name": "Tools.VedStrictAudit",
+   "file": "Tools/VedStrictAudit.lean"
+  },
+  {
+   "name": "Tools.VedU1Contract",
+   "file": "Tools/VedU1Contract.lean"
+  },
+  {
+   "name": "Tools.VedU1Deep",
+   "file": "Tools/VedU1Deep.lean"
+  },
+  {
+   "name": "Tools.VedU1Entry",
+   "file": "Tools/VedU1Entry.lean"
+  },
+  {
+   "name": "Tools.VerifyElab",
+   "file": "Tools/VerifyElab.lean"
+  }
+ ],
+ "root_closure_files": 351,
+ "root_closure_sorry": [
+  "Examples/FPU/Proofs.lean",
+  "Examples/FPU/Spec.lean",
+  "IP/BitNet/Spec/FixedPoint.lean",
+  "Tests/Ved/StrictAuditCheck.lean",
+  "Tools/DeepElab.lean",
+  "Tools/VedStrictAudit.lean",
+  "Tools/VerifyElab.lean"
+ ],
+ "root_closure_axioms": 2,
+ "unclosed_files": 0,
+ "headline_rule": null,
+ "headline_count": 0,
+ "headlines": [],
+ "mathlib_imports": {},
+ "import_roots": {
+  "LSpec": 49,
+  "Lake": 1,
+  "Lean": 21,
+  "Notebooks": 1,
+  "Std": 13
+ },
+ "uses": {
+  "Array": 240,
+  "Int": 103,
+  "List": 233,
+  "Module": 34,
+  "Nat": 481,
+  "Std.HashMap": 19,
+  "ack": 3
+ },
+ "ci": "SUCCESS"
+}

@@ -1,0 +1,162 @@
+{
+ "schema": "trough-satellites/v1",
+ "repo": "formal-dynamics/leanamics",
+ "slug": "formal-dynamics--leanamics",
+ "rev": "81fd0712a766bebfe6419a66bfa35f9c0f91e753",
+ "date": "2026-11-04T18:55:47Z",
+ "stable": "396261cd2917baa86715cc9232f2c7901cf2e1a0c0d926e947c993a253583d72",
+ "license": {
+  "files": [
+   "LICENSE"
+  ],
+  "spdx": "MIT",
+  "file": "LICENSE",
+  "copyright": [
+   "Copyright (c) 2026 The Leanamics contributors"
+  ]
+ },
+ "readme": {
+  "file": "README.md",
+  "title": "Leanamics",
+  "excerpt": "Lean 4 + Mathlib formalizations of classical results on opinion dynamics and related distributed processes. Each project is paired with a [leanblueprint](https://github.com/PatrickMassot/leanblueprint) connecting the paper proof to the Lean code statement-by-statement."
+ },
+ "lean_files": 383,
+ "admitted": true,
+ "folder": "averaging",
+ "toolchain": "v4.32.0",
+ "mathlib": "2d8c533bd0a0515caa32f18c0ab4485bd6229378",
+ "requirements": [
+  {
+   "name": "dynamics",
+   "url": "../dynamics",
+   "rev": ""
+  }
+ ],
+ "libraries": [
+  {
+   "name": "Averaging",
+   "src": "."
+  }
+ ],
+ "library_files": 28,
+ "capped": false,
+ "declarations": 431,
+ "sorry_files": 0,
+ "axioms": 0,
+ "closure_files": 20,
+ "closure_sorry": [],
+ "closure_axioms": 0,
+ "root_modules": [
+  {
+   "name": "Averaging",
+   "file": "averaging/Averaging.lean"
+  }
+ ],
+ "root_closure_files": 28,
+ "root_closure_sorry": [],
+ "root_closure_axioms": 0,
+ "unclosed_files": 0,
+ "headline_rule": "blueprint",
+ "headline_count": 20,
+ "headlines": [
+  {
+   "name": "Averaging.not_tendsto_of_colorable",
+   "module": "Averaging.Basic",
+   "file": "averaging/Averaging/Basic.lean",
+   "line": 503,
+   "kind": "theorem",
+   "sorry": false,
+   "names": [
+    "Filter.Tendsto"
+   ]
+  },
+  {
+   "name": "Averaging.walkLambda_lt_one",
+   "module": "Averaging.Rate",
+   "file": "averaging/Averaging/Rate.lean",
+   "line": 54,
+   "kind": "theorem",
+   "sorry": false,
+   "names": []
+  },
+  {
+   "name": "Averaging.abs_avgIter_sub_walkStationary_le",
+   "module": "Averaging.Rate",
+   "file": "averaging/Averaging/Rate.lean",
+   "line": 61,
+   "kind": "theorem",
+   "sorry": false,
+   "names": []
+  },
+  {
+   "name": "Averaging.strong_reconstruction",
+   "module": "Averaging.Reconstruction",
+   "file": "averaging/Averaging/Reconstruction.lean",
+   "line": 123,
+   "kind": "theorem",
+   "sorry": false,
+   "names": []
+  },
+  {
+   "name": "Averaging.Opportunistic.oppRun_isSome_iff",
+   "module": "Averaging.OpportunisticModel",
+   "file": "averaging/Averaging/OpportunisticModel.lean",
+   "line": 98,
+   "kind": "theorem",
+   "sorry": false,
+   "names": [
+    "List"
+   ]
+  },
+  {
+   "name": "Averaging.Opportunistic.oppRun_getD",
+   "module": "Averaging.OpportunisticModel",
+   "file": "averaging/Averaging/OpportunisticModel.lean",
+   "line": 104,
+   "kind": "theorem",
+   "sorry": false,
+   "names": [
+    "List"
+   ]
+  },
+  {
+   "name": "Averaging.Opportunistic.sum_avgRun",
+   "module": "Averaging.OpportunisticModel",
+   "file": "averaging/Averaging/OpportunisticModel.lean",
+   "line": 114,
+   "kind": "theorem",
+   "sorry": false,
+   "names": [
+    "List"
+   ]
+  },
+  {
+   "name": "Averaging.Opportunistic.meanStepMatrix_mulVec_cutVec",
+   "module": "Averaging.OpportunisticClustered",
+   "file": "averaging/Averaging/OpportunisticClustered.lean",
+   "line": 703,
+   "kind": "theorem",
+   "sorry": false,
+   "names": []
+  }
+ ],
+ "mathlib_imports": {},
+ "import_roots": {
+  "Dynamics": 8,
+  "Mathlib": 2
+ },
+ "uses": {
+  "Filter": 2,
+  "Filter.Tendsto": 2,
+  "Finset": 27,
+  "Finset.card_powersetCard": 1,
+  "List": 6,
+  "Matrix": 20,
+  "Real": 2,
+  "Real.exp": 2,
+  "Real.log": 8,
+  "Set": 2,
+  "SimpleGraph": 24
+ },
+ "ci": "FAILURE"
+}

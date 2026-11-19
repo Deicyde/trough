@@ -1,0 +1,23 @@
+{
+ "schema": "trough-satellites/v1",
+ "repo": "leanprover-community/lean-liquid",
+ "slug": "leanprover-community--lean-liquid",
+ "rev": "ee4795874a99ea5f9d85bd0b364425f07b932377",
+ "date": "2026-10-02T07:08:05Z",
+ "stable": "42e15478399938afce7158937d9be2cba419a93077717e5bda65e1a5a1405892",
+ "license": {
+  "files": [],
+  "spdx": null,
+  "file": null,
+  "copyright": []
+ },
+ "readme": {
+  "file": "README.md",
+  "title": "Liquid Tensor Experiment",
+  "excerpt": null
+ },
+ "lean_files": 412,
+ "admitted": false,
+ "reason": "a Lean 3 project: leanpkg.toml and no lakefile",
+ "ci": "FAILURE"
+}

@@ -1,0 +1,191 @@
+{
+ "schema": "trough-satellites/v1",
+ "repo": "zcash/ironwood",
+ "slug": "zcash--ironwood",
+ "rev": "ab5d90f510a4d1bc9833c139600caeac4dbd19dd",
+ "date": "2026-11-09T17:10:27Z",
+ "stable": "1a011077690cbac8ac09ce10555837976d0bde409f68318e5001b9d29f636378",
+ "license": {
+  "files": [
+   "COPYING.md",
+   "LICENSE-APACHE",
+   "LICENSE-MIT"
+  ],
+  "spdx": "Apache-2.0",
+  "file": "LICENSE-APACHE",
+  "copyright": []
+ },
+ "readme": {
+  "file": "README.md",
+  "title": "Formalizing Ironwood",
+  "excerpt": "$\\textsf{Ironwood}$ is a project to deploy a new shielded pool, built to restore confidence for all Zcash'rs in the supply integrity of Zcash."
+ },
+ "lean_files": 489,
+ "admitted": true,
+ "folder": "",
+ "toolchain": "v4.30.0",
+ "mathlib": "c5ea00351c28e24afc9f0f84379aa41082b1188f",
+ "requirements": [
+  {
+   "name": "Clean",
+   "url": "https://github.com/Verified-zkEVM/clean",
+   "rev": "e4f973bf3aed32673cdb9c381ec5671535bae051"
+  },
+  {
+   "name": "CompElliptic",
+   "url": "https://github.com/daira/CompElliptic",
+   "rev": "2c0444035a84db957f27f06433715058d1e890ad"
+  }
+ ],
+ "libraries": [
+  {
+   "name": "Zcash",
+   "src": "."
+  },
+  {
+   "name": "MetaCheck",
+   "src": "."
+  },
+  {
+   "name": "FixtureCheck",
+   "src": "."
+  },
+  {
+   "name": "CircuitCheck",
+   "src": "."
+  },
+  {
+   "name": "SecurityCheck",
+   "src": "."
+  },
+  {
+   "name": "CensusCheck",
+   "src": "."
+  }
+ ],
+ "library_files": 489,
+ "capped": false,
+ "declarations": 9438,
+ "sorry_files": 0,
+ "axioms": 4,
+ "closure_files": 0,
+ "closure_sorry": [],
+ "closure_axioms": 0,
+ "root_modules": [
+  {
+   "name": "Zcash",
+   "file": "Zcash.lean"
+  },
+  {
+   "name": "Zcash.CensusCheck",
+   "file": "Zcash/CensusCheck.lean"
+  },
+  {
+   "name": "Zcash.Security.Ledger.BridgeTests",
+   "file": "Zcash/Security/Ledger/BridgeTests.lean"
+  },
+  {
+   "name": "Zcash.Snark.Keygen.Certificate",
+   "file": "Zcash/Snark/Keygen/Certificate.lean"
+  },
+  {
+   "name": "Zcash.Snark.Keygen.InstanceCapture",
+   "file": "Zcash/Snark/Keygen/InstanceCapture.lean"
+  }
+ ],
+ "root_closure_files": 462,
+ "root_closure_sorry": [],
+ "root_closure_axioms": 0,
+ "unclosed_files": 0,
+ "headline_rule": null,
+ "headline_count": 0,
+ "headlines": [],
+ "mathlib_imports": {
+  "Mathlib.Algebra.BigOperators.Group.Finset.Basic": 1,
+  "Mathlib.Algebra.BigOperators.Group.Multiset.Basic": 1,
+  "Mathlib.Algebra.BigOperators.GroupWithZero.Action": 1,
+  "Mathlib.Algebra.Field.Defs": 3,
+  "Mathlib.Algebra.Field.GeomSum": 1,
+  "Mathlib.Algebra.Field.ZMod": 2,
+  "Mathlib.Algebra.Group.Nat.Defs": 1,
+  "Mathlib.Algebra.Lie.OfAssociative": 2,
+  "Mathlib.Algebra.Module.Defs": 4,
+  "Mathlib.Algebra.Module.NatInt": 1,
+  "Mathlib.Algebra.Module.ZMod": 3,
+  "Mathlib.Algebra.MvPolynomial.SchwartzZippel": 2,
+  "Mathlib.Algebra.NoZeroSMulDivisors.Defs": 3,
+  "Mathlib.Algebra.Order.BigOperators.Group.Finset": 1,
+  "Mathlib.Algebra.Order.BigOperators.Group.List": 1,
+  "Mathlib.Algebra.Order.BigOperators.Group.Multiset": 1,
+  "Mathlib.Algebra.Order.Chebyshev": 1,
+  "Mathlib.Data.Fin.Tuple.Basic": 2,
+  "Mathlib.Data.Fin.VecNotation": 1,
+  "Mathlib.Data.Fintype.Basic": 3,
+  "Mathlib.Data.Fintype.Card": 2,
+  "Mathlib.Data.Fintype.Prod": 2,
+  "Mathlib.Data.Int.CardIntervalMod": 1,
+  "Mathlib.Data.List.Basic": 2,
+  "Mathlib.Data.List.GetD": 4,
+  "Mathlib.Data.List.TakeDrop": 1,
+  "Mathlib.Data.NNRat.Order": 1,
+  "Mathlib.Data.Nat.Choose.Cast": 1,
+  "Mathlib.Data.Nat.Digits.Lemmas": 1,
+  "Mathlib.Data.Nat.Notation": 3,
+  "Mathlib.Data.Nat.Prime.Defs": 2,
+  "Mathlib.Data.ZMod.Basic": 3,
+  "Mathlib.GroupTheory.OrderOfElement": 1,
+  "Mathlib.LinearAlgebra.Lagrange": 2,
+  "Mathlib.Logic.Equiv.PartialEquiv": 1,
+  "Mathlib.Probability.Distributions.Uniform": 7,
+  "Mathlib.RingTheory.MvPolynomial.Symmetric.Defs": 1,
+  "Mathlib.RingTheory.Polynomial.Vieta": 1,
+  "Mathlib.RingTheory.RootsOfUnity.PrimitiveRoots": 1,
+  "Mathlib.Tactic.Abel": 9,
+  "Mathlib.Tactic.DeriveFintype": 1,
+  "Mathlib.Tactic.FieldSimp": 82,
+  "Mathlib.Tactic.GCongr": 6,
+  "Mathlib.Tactic.Linarith": 82,
+  "Mathlib.Tactic.LinearCombination": 6,
+  "Mathlib.Tactic.Module": 1,
+  "Mathlib.Tactic.NormNum": 83,
+  "Mathlib.Tactic.NormNum.Basic": 1,
+  "Mathlib.Tactic.NormNum.Parity": 1,
+  "Mathlib.Tactic.Positivity": 1,
+  "Mathlib.Tactic.Ring": 83,
+  "Mathlib.Tactic.Set": 15,
+  "Mathlib.Tactic.TypeStar": 1,
+  "Mathlib.Util.AssertNoSorry": 17
+ },
+ "import_roots": {
+  "Batteries": 2,
+  "Clean": 72,
+  "CompElliptic": 24,
+  "CompPoly": 3,
+  "Lean": 4,
+  "Mathlib": 126
+ },
+ "uses": {
+  "Algebra": 1,
+  "Array": 15,
+  "Equiv.Perm": 8,
+  "Field": 68,
+  "Filter": 1,
+  "Filter.Tendsto": 3,
+  "Finset": 54,
+  "Finset.card_powersetCard": 1,
+  "Int": 5,
+  "Lagrange.interpolate": 3,
+  "List": 251,
+  "Matrix": 2,
+  "Module": 104,
+  "Multiset": 7,
+  "MvPolynomial": 13,
+  "Nat": 74,
+  "PMF": 26,
+  "Polynomial": 9,
+  "Ring": 1,
+  "Set": 51,
+  "ZMod.pow_card_sub_one_eq_one": 1
+ },
+ "ci": "SUCCESS"
+}

@@ -1,0 +1,108 @@
+{
+ "schema": "trough-satellites/v1",
+ "repo": "VCA-EPFL/graphiti",
+ "slug": "vca-epfl--graphiti",
+ "rev": "6fde142e1ded3b7ff214f1ecaa816b140e4ecb9a",
+ "date": "2026-10-04T20:14:55Z",
+ "stable": "62b80cb9528a6e1f048d63850a067ece2ec30e6691a3d65f0400f0ca4de1decb",
+ "license": {
+  "files": [
+   "LICENSE"
+  ],
+  "spdx": "Apache-2.0",
+  "file": "LICENSE",
+  "copyright": []
+ },
+ "readme": {
+  "file": "README.md",
+  "title": "How to build",
+  "excerpt": "The following commands should successfully build the project."
+ },
+ "lean_files": 150,
+ "admitted": true,
+ "folder": "",
+ "toolchain": "v4.34.1",
+ "mathlib": "d13f23b723b8a846827a245b89c10fc7d3f11612",
+ "requirements": [],
+ "libraries": [
+  {
+   "name": "Graphiti",
+   "src": "."
+  },
+  {
+   "name": "GraphitiCore",
+   "src": "."
+  },
+  {
+   "name": "GraphitiProjects",
+   "src": "."
+  },
+  {
+   "name": "GraphitiTest",
+   "src": "."
+  }
+ ],
+ "library_files": 149,
+ "capped": false,
+ "declarations": 2701,
+ "sorry_files": 27,
+ "axioms": 1,
+ "closure_files": 0,
+ "closure_sorry": [],
+ "closure_axioms": 0,
+ "root_modules": [
+  {
+   "name": "Graphiti",
+   "file": "Graphiti.lean"
+  },
+  {
+   "name": "Graphiti.Projects",
+   "file": "Graphiti/Projects.lean"
+  }
+ ],
+ "root_closure_files": 83,
+ "root_closure_sorry": [
+  "Graphiti/Core/Dataflow/Rewrites/JoinRewrite.lean",
+  "Graphiti/Core/Graph/Environment.lean",
+  "Graphiti/Core/Graph/ExprLowLemmas.lean",
+  "Graphiti/Core/Graph/ModuleLemmas.lean",
+  "Graphiti/Projects/DeadlockRefinement.lean",
+  "Graphiti/Projects/Flushability/ConfluentModule.lean",
+  "Graphiti/Projects/Flushability/FlushedModule.lean",
+  "Graphiti/Projects/Flushability/JoinRewriteCorrect.lean",
+  "Graphiti/Projects/Flushability/ModuleRefinement.lean"
+ ],
+ "root_closure_axioms": 1,
+ "unclosed_files": 5,
+ "headline_rule": null,
+ "headline_count": 0,
+ "headlines": [],
+ "mathlib_imports": {
+  "Mathlib.Analysis.SpecialFunctions.ExpDeriv": 1,
+  "Mathlib.Data.Option.Basic": 1,
+  "Mathlib.Data.Sigma.Basic": 1,
+  "Mathlib.Logic.Function.Basic": 2,
+  "Mathlib.Tactic": 10,
+  "Mathlib.Tactic.Convert": 1,
+  "Mathlib.Tactic.FinCases": 1
+ },
+ "import_roots": {
+  "Batteries": 8,
+  "Graphiti": 20,
+  "Init": 4,
+  "Lean": 22,
+  "Mathlib": 16,
+  "Qq": 9
+ },
+ "uses": {
+  "Array": 8,
+  "Differentiable": 1,
+  "Int": 3,
+  "List": 56,
+  "Module": 24,
+  "Nat": 82,
+  "Real": 1,
+  "Std.HashMap": 5
+ },
+ "ci": "SUCCESS"
+}

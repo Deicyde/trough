@@ -1,0 +1,181 @@
+{
+ "schema": "trough-satellites/v1",
+ "repo": "RBarish-UTokyo/OrthogonalArtGalleryProblem-BoundaryPointVariant-ExistsR-Lean4",
+ "slug": "rbarish-utokyo--orthogonalartgalleryproblem-boundarypointvariant-existsr-lean4",
+ "rev": "2a85b75f31661e89d545efdb3c6e2d3c3e54aa09",
+ "date": "2026-11-08T09:20:41Z",
+ "stable": "b578e6438f015d8e489f51e44f8052126c4d556374ca98a35dbcd8566373ac57",
+ "license": {
+  "files": [
+   "LICENSE"
+  ],
+  "spdx": "Apache-2.0",
+  "file": "LICENSE",
+  "copyright": []
+ },
+ "readme": {
+  "file": "README.md",
+  "title": "The orthogonal boundary-point art gallery problem is ∃ℝ-complete, in Lean 4",
+  "excerpt": "This repository contains a Lean 4 formalization of material in a forthcoming manuscript entitled *The Orthogonal Art Gallery Problem is ∃ℝ-complete*."
+ },
+ "lean_files": 1821,
+ "admitted": true,
+ "folder": "",
+ "toolchain": "v4.35.0-rc2",
+ "mathlib": "065356127b1dc0016f66b7283ce0ce2c4055aa55",
+ "requirements": [],
+ "libraries": [
+  {
+   "name": "ArtGallery",
+   "src": "."
+  },
+  {
+   "name": "Challenge",
+   "src": "."
+  },
+  {
+   "name": "Solution",
+   "src": "."
+  },
+  {
+   "name": "Complexity",
+   "src": "."
+  },
+  {
+   "name": "PT",
+   "src": "."
+  }
+ ],
+ "library_files": 1821,
+ "capped": false,
+ "declarations": 99550,
+ "sorry_files": 2,
+ "axioms": 0,
+ "closure_files": 0,
+ "closure_sorry": [],
+ "closure_axioms": 0,
+ "root_modules": [
+  {
+   "name": "Challenge",
+   "file": "Challenge.lean"
+  },
+  {
+   "name": "Solution",
+   "file": "Solution.lean"
+  }
+ ],
+ "root_closure_files": 1821,
+ "root_closure_sorry": [
+  "ArtGallery/Orthogonal/BoundaryPoint/EdgeSew.lean",
+  "Challenge.lean"
+ ],
+ "root_closure_axioms": 0,
+ "unclosed_files": 0,
+ "headline_rule": null,
+ "headline_count": 0,
+ "headlines": [],
+ "mathlib_imports": {
+  "Mathlib.Algebra.Algebra.Rat": 2,
+  "Mathlib.Algebra.BigOperators.Group.Finset.Basic": 1,
+  "Mathlib.Algebra.BigOperators.Pi": 1,
+  "Mathlib.Algebra.BigOperators.Ring.Finset": 1,
+  "Mathlib.Algebra.Order.BigOperators.Group.Finset": 1,
+  "Mathlib.Algebra.Polynomial.AlgebraMap": 1,
+  "Mathlib.Algebra.Ring.GeomSum": 1,
+  "Mathlib.Analysis.Calculus.Deriv.Mul": 1,
+  "Mathlib.Analysis.Calculus.Deriv.Pow": 1,
+  "Mathlib.Analysis.Calculus.LocalExtr.Basic": 1,
+  "Mathlib.Analysis.Convex.Combination": 1,
+  "Mathlib.Analysis.Convex.Hull": 1,
+  "Mathlib.Analysis.Convex.KreinMilman": 1,
+  "Mathlib.Analysis.Convex.PathConnected": 1,
+  "Mathlib.Analysis.Convex.Segment": 1,
+  "Mathlib.Analysis.Convex.Topology": 3,
+  "Mathlib.Analysis.LocallyConvex.Separation": 2,
+  "Mathlib.Analysis.LocallyConvex.WithSeminorms": 1,
+  "Mathlib.Analysis.Normed.Group.Bounded": 1,
+  "Mathlib.Analysis.Normed.Module.Basic": 1,
+  "Mathlib.Analysis.Normed.Module.Convex": 1,
+  "Mathlib.Analysis.Normed.Module.FiniteDimension": 1,
+  "Mathlib.Analysis.Real.Sqrt": 1,
+  "Mathlib.Analysis.SpecificLimits.Basic": 1,
+  "Mathlib.Basic.Real.Basic": 5,
+  "Mathlib.Data.Finset.Card": 2,
+  "Mathlib.Data.Fintype.Perm": 1,
+  "Mathlib.Data.Fintype.Prod": 1,
+  "Mathlib.Data.Fintype.Sum": 2,
+  "Mathlib.Data.List.Chain": 2,
+  "Mathlib.Data.List.GetD": 3,
+  "Mathlib.Data.List.Pairwise": 1,
+  "Mathlib.Data.List.Rotate": 1,
+  "Mathlib.Data.List.Sort": 2,
+  "Mathlib.Data.Nat.Bits": 2,
+  "Mathlib.Data.Nat.Factorial.Basic": 1,
+  "Mathlib.Data.Nat.ModEq": 1,
+  "Mathlib.Data.Nat.Pairing": 1,
+  "Mathlib.Data.Rat.Defs": 1,
+  "Mathlib.Data.ZMod.Basic": 1,
+  "Mathlib.Data.ZMod.Defs": 1,
+  "Mathlib.LinearAlgebra.Matrix.Charpoly.Basic": 1,
+  "Mathlib.LinearAlgebra.Matrix.Charpoly.Coeff": 1,
+  "Mathlib.LinearAlgebra.Matrix.ToLinearEquiv": 1,
+  "Mathlib.Logic.Equiv.Defs": 1,
+  "Mathlib.Logic.Function.Iterate": 1,
+  "Mathlib.RingTheory.Algebraic.Defs": 1,
+  "Mathlib.Tactic.FieldSimp": 4,
+  "Mathlib.Tactic.FunProp": 1,
+  "Mathlib.Tactic.IntervalCases": 6,
+  "Mathlib.Tactic.Linarith": 13,
+  "Mathlib.Tactic.LinearCombination": 2,
+  "Mathlib.Tactic.Positivity": 3,
+  "Mathlib.Tactic.Ring": 12,
+  "Mathlib.Topology.Algebra.Order.Field": 1,
+  "Mathlib.Topology.Algebra.Ring.Basic": 1,
+  "Mathlib.Topology.Compactness.Compact": 1,
+  "Mathlib.Topology.Connected.Basic": 2,
+  "Mathlib.Topology.Connected.Clopen": 1,
+  "Mathlib.Topology.Connected.LocallyConnected": 1,
+  "Mathlib.Topology.Connected.TotallyDisconnected": 1,
+  "Mathlib.Topology.Homeomorph.Lemmas": 1,
+  "Mathlib.Topology.Instances.Real.Lemmas": 4,
+  "Mathlib.Topology.LocallyConstant.Basic": 1,
+  "Mathlib.Topology.MetricSpace.Bounded": 1,
+  "Mathlib.Topology.MetricSpace.ProperSpace": 1,
+  "Mathlib.Topology.MetricSpace.Pseudo.Defs": 1,
+  "Mathlib.Topology.MetricSpace.Thickening": 1,
+  "Mathlib.Topology.Order.Compact": 1,
+  "Mathlib.Topology.Order.IntermediateValue": 2,
+  "Mathlib.Topology.Sequences": 1
+ },
+ "import_roots": {
+  "Init": 3,
+  "Lean": 19,
+  "Mathlib": 64
+ },
+ "uses": {
+  "Array": 1,
+  "Continuous": 21,
+  "Convex": 27,
+  "Equiv.Perm": 1,
+  "Equiv.Perm.sign": 1,
+  "Filter": 20,
+  "Filter.Tendsto": 11,
+  "Finset": 55,
+  "Group": 1,
+  "HasDerivAt": 1,
+  "Int": 11,
+  "IsCompact": 10,
+  "Language": 12,
+  "List": 953,
+  "Matrix": 2,
+  "Metric.ball": 8,
+  "Metric.isOpen_iff": 3,
+  "Nat": 782,
+  "Polynomial": 3,
+  "Set": 182,
+  "closure": 11,
+  "closure_convexHull_extremePoints": 1,
+  "convexHull": 11
+ },
+ "ci": null
+}

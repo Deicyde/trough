@@ -1,0 +1,443 @@
+{
+ "schema": "trough-satellites/v1",
+ "repo": "smmercuri/zeta",
+ "slug": "smmercuri--zeta",
+ "rev": "34037d5a7662e2eb6e970bfb22299c84e45ed5d9",
+ "date": "2026-11-15T13:11:29Z",
+ "stable": "09de7d846a4d9b975cafcb3631332437425fb5d7d58119d8a9856e0d6896fbb6",
+ "license": {
+  "files": [
+   "LICENSE"
+  ],
+  "spdx": "Apache-2.0",
+  "file": "LICENSE",
+  "copyright": []
+ },
+ "readme": {
+  "file": "README.md",
+  "title": "Certifying the Riemann hypothesis up to bounded height in Lean",
+  "excerpt": "This repository proves in Lean's kernel that all the nontrivial zeros of the Riemann zeta function up to a specified height $T$ lie on the critical line, as predicted by the Riemann hypothesis. Intervals are certified on the critical line, proving the location of nontrivial zeros with configurable precision. The main theorem is proved fully in the kernel, depending only on the standard axiom set `[propext, Classical.choice, Quot.sound]`."
+ },
+ "lean_files": 346,
+ "admitted": true,
+ "folder": "",
+ "toolchain": "v4.35.0",
+ "mathlib": "56a005855ea17e0b0958f73ec801ae140b0a1679",
+ "requirements": [
+  {
+   "name": "PrimeNumberTheoremAnd",
+   "url": "https://github.com/smmercuri/PrimeNumberTheoremAnd",
+   "rev": "16a8986210e61636b13d58cec400e8c467441b70"
+  }
+ ],
+ "libraries": [
+  {
+   "name": "Zeta",
+   "src": "."
+  },
+  {
+   "name": "Enclosure",
+   "src": "."
+  },
+  {
+   "name": "Fast",
+   "src": "."
+  },
+  {
+   "name": "Bernoulli",
+   "src": "."
+  },
+  {
+   "name": "Native",
+   "src": "."
+  },
+  {
+   "name": "NativeEval",
+   "src": "."
+  },
+  {
+   "name": "Comparator",
+   "src": "comparator"
+  }
+ ],
+ "library_files": 346,
+ "capped": false,
+ "declarations": 2340,
+ "sorry_files": 55,
+ "axioms": 0,
+ "closure_files": 38,
+ "closure_sorry": [],
+ "closure_axioms": 0,
+ "root_modules": [
+  {
+   "name": "Enclosure",
+   "file": "Enclosure.lean"
+  },
+  {
+   "name": "Fast",
+   "file": "Fast.lean"
+  },
+  {
+   "name": "Native",
+   "file": "Native.lean"
+  },
+  {
+   "name": "Native.Arctan",
+   "file": "Native/Arctan.lean"
+  },
+  {
+   "name": "Native.Batch",
+   "file": "Native/Batch.lean"
+  },
+  {
+   "name": "Native.BuildCerts",
+   "file": "Native/BuildCerts.lean"
+  },
+  {
+   "name": "Native.Certificates",
+   "file": "Native/Certificates.lean"
+  },
+  {
+   "name": "Native.Const",
+   "file": "Native/Const.lean"
+  },
+  {
+   "name": "Native.CountCertificates",
+   "file": "Native/CountCertificates.lean"
+  },
+  {
+   "name": "Native.Encl",
+   "file": "Native/Encl.lean"
+  },
+  {
+   "name": "Native.Eval",
+   "file": "Native/Eval.lean"
+  },
+  {
+   "name": "Native.Fix",
+   "file": "Native/Fix.lean"
+  },
+  {
+   "name": "Native.Log",
+   "file": "Native/Log.lean"
+  },
+  {
+   "name": "Native.Main",
+   "file": "Native/Main.lean"
+  },
+  {
+   "name": "Native.PluginCheck",
+   "file": "Native/PluginCheck.lean"
+  },
+  {
+   "name": "Native.RiemannSiegel",
+   "file": "Native/RiemannSiegel.lean"
+  },
+  {
+   "name": "Zeta",
+   "file": "Zeta.lean"
+  }
+ ],
+ "root_closure_files": 233,
+ "root_closure_sorry": [],
+ "root_closure_axioms": 0,
+ "unclosed_files": 0,
+ "headline_rule": "blueprint",
+ "headline_count": 16,
+ "headlines": [
+  {
+   "name": "Complex.Stirling.norm_digamma_sub_log_le'",
+   "module": "Zeta.Gamma.DigammaStirling",
+   "file": "Zeta/Gamma/DigammaStirling.lean",
+   "line": 478,
+   "kind": "theorem",
+   "sorry": false,
+   "names": []
+  },
+  {
+   "name": "sum_integral_gramCoord_le",
+   "module": "Zeta.Gram.Averaging",
+   "file": "Zeta/Gram/Averaging.lean",
+   "line": 157,
+   "kind": "theorem",
+   "sorry": false,
+   "names": []
+  },
+  {
+   "name": "abs_riemannSiegelTheta_sub_stirling_le",
+   "module": "Zeta.Zeros.HardyZ",
+   "file": "Zeta/Zeros/HardyZ.lean",
+   "line": 379,
+   "kind": "theorem",
+   "sorry": false,
+   "names": [
+    "Real.log"
+   ]
+  },
+  {
+   "name": "abs_hardyZ_sub_re_le",
+   "module": "Zeta.Zeros.HardyZ",
+   "file": "Zeta/Zeros/HardyZ.lean",
+   "line": 271,
+   "kind": "theorem",
+   "sorry": false,
+   "names": [
+    "Complex.exp"
+   ]
+  },
+  {
+   "name": "Zeta.RiemannSiegel.kernel_add_one",
+   "module": "Zeta.RiemannSiegel.Kernel",
+   "file": "Zeta/RiemannSiegel/Kernel.lean",
+   "line": 62,
+   "kind": "theorem",
+   "sorry": false,
+   "names": [
+    "Complex.exp"
+   ]
+  },
+  {
+   "name": "Zeta.RiemannSiegel.kernel_add_one_sub_kernel",
+   "module": "Zeta.RiemannSiegel.Kernel",
+   "file": "Zeta/RiemannSiegel/Kernel.lean",
+   "line": 70,
+   "kind": "theorem",
+   "sorry": false,
+   "names": [
+    "Complex.exp"
+   ]
+  },
+  {
+   "name": "Zeta.RiemannSiegel.tendsto_contourIntegral_atTop_nhds_riemannZeta_add_contourIntegral_half",
+   "module": "Zeta.RiemannSiegel.Siegel",
+   "file": "Zeta/RiemannSiegel/Siegel.lean",
+   "line": 50,
+   "kind": "theorem",
+   "sorry": false,
+   "names": [
+    "Filter.Tendsto"
+   ]
+  },
+  {
+   "name": "Zeta.RiemannSiegel.kernel_eq_tsum_of_im_neg",
+   "module": "Zeta.RiemannSiegel.Kernel",
+   "file": "Zeta/RiemannSiegel/Kernel.lean",
+   "line": 86,
+   "kind": "theorem",
+   "sorry": false,
+   "names": [
+    "Complex.exp"
+   ]
+  }
+ ],
+ "mathlib_imports": {
+  "Mathlib.Algebra.BigOperators.Intervals": 3,
+  "Mathlib.Algebra.BigOperators.Ring.Finset": 1,
+  "Mathlib.Analysis.Analytic.Constructions": 1,
+  "Mathlib.Analysis.Analytic.IsolatedZeros": 3,
+  "Mathlib.Analysis.Analytic.Order": 3,
+  "Mathlib.Analysis.Analytic.Uniqueness": 3,
+  "Mathlib.Analysis.Calculus.Deriv.MeanValue": 3,
+  "Mathlib.Analysis.Calculus.Deriv.Polynomial": 1,
+  "Mathlib.Analysis.Calculus.Deriv.Pow": 1,
+  "Mathlib.Analysis.Calculus.Deriv.Star": 3,
+  "Mathlib.Analysis.Calculus.Deriv.ZPow": 1,
+  "Mathlib.Analysis.Calculus.FDeriv.Analytic": 2,
+  "Mathlib.Analysis.Calculus.FDeriv.RestrictScalars": 1,
+  "Mathlib.Analysis.Calculus.IteratedDeriv.Defs": 1,
+  "Mathlib.Analysis.Calculus.IteratedDeriv.Lemmas": 1,
+  "Mathlib.Analysis.Calculus.LogDeriv": 3,
+  "Mathlib.Analysis.Calculus.LogDerivUniformlyOn": 1,
+  "Mathlib.Analysis.Calculus.MeanValue": 3,
+  "Mathlib.Analysis.Calculus.ParametricIntegral": 4,
+  "Mathlib.Analysis.Complex.AbsMax": 1,
+  "Mathlib.Analysis.Complex.Basic": 1,
+  "Mathlib.Analysis.Complex.CauchyIntegral": 5,
+  "Mathlib.Analysis.Complex.Convex": 5,
+  "Mathlib.Analysis.Complex.CoveringMap": 1,
+  "Mathlib.Analysis.Complex.Exponential": 2,
+  "Mathlib.Analysis.Complex.ExponentialBounds": 5,
+  "Mathlib.Analysis.Complex.HalfPlane": 1,
+  "Mathlib.Analysis.Complex.HasPrimitives": 1,
+  "Mathlib.Analysis.Complex.Liouville": 2,
+  "Mathlib.Analysis.Complex.LocallyUniformLimit": 2,
+  "Mathlib.Analysis.Complex.Norm": 2,
+  "Mathlib.Analysis.Complex.RealDeriv": 2,
+  "Mathlib.Analysis.Complex.ValueDistribution.LogCounting.Basic": 1,
+  "Mathlib.Analysis.Convex.Contractible": 1,
+  "Mathlib.Analysis.Convex.Deriv": 2,
+  "Mathlib.Analysis.Convex.PathConnected": 1,
+  "Mathlib.Analysis.Convex.Slope": 2,
+  "Mathlib.Analysis.InnerProductSpace.Calculus": 1,
+  "Mathlib.Analysis.Meromorphic.NormalForm": 1,
+  "Mathlib.Analysis.Meromorphic.Order": 2,
+  "Mathlib.Analysis.Normed.Field.Basic": 1,
+  "Mathlib.Analysis.Normed.Group.Tannery": 1,
+  "Mathlib.Analysis.Normed.Module.FiniteDimension": 1,
+  "Mathlib.Analysis.Normed.Module.MultipliableUniformlyOn": 1,
+  "Mathlib.Analysis.PSeries": 1,
+  "Mathlib.Analysis.PSeriesComplex": 2,
+  "Mathlib.Analysis.Real.Pi.Bounds": 7,
+  "Mathlib.Analysis.Real.Pi.Irrational": 1,
+  "Mathlib.Analysis.Real.Sqrt": 2,
+  "Mathlib.Analysis.SpecialFunctions.Complex.Arctan": 1,
+  "Mathlib.Analysis.SpecialFunctions.Complex.Arg": 2,
+  "Mathlib.Analysis.SpecialFunctions.Complex.Log": 3,
+  "Mathlib.Analysis.SpecialFunctions.Complex.LogBounds": 2,
+  "Mathlib.Analysis.SpecialFunctions.Complex.LogDeriv": 4,
+  "Mathlib.Analysis.SpecialFunctions.ExpDeriv": 2,
+  "Mathlib.Analysis.SpecialFunctions.Gamma.Basic": 1,
+  "Mathlib.Analysis.SpecialFunctions.Gamma.Beta": 3,
+  "Mathlib.Analysis.SpecialFunctions.Gamma.BohrMollerup": 2,
+  "Mathlib.Analysis.SpecialFunctions.Gamma.Deligne": 3,
+  "Mathlib.Analysis.SpecialFunctions.Gamma.Deriv": 4,
+  "Mathlib.Analysis.SpecialFunctions.Gamma.Digamma": 3,
+  "Mathlib.Analysis.SpecialFunctions.Gaussian.FourierTransform": 1,
+  "Mathlib.Analysis.SpecialFunctions.Gaussian.GaussianIntegral": 3,
+  "Mathlib.Analysis.SpecialFunctions.ImproperIntegrals": 4,
+  "Mathlib.Analysis.SpecialFunctions.Integrability.Basic": 2,
+  "Mathlib.Analysis.SpecialFunctions.Integrability.Log": 1,
+  "Mathlib.Analysis.SpecialFunctions.Integrability.PosLog": 1,
+  "Mathlib.Analysis.SpecialFunctions.Integrals.Basic": 3,
+  "Mathlib.Analysis.SpecialFunctions.Log.Basic": 1,
+  "Mathlib.Analysis.SpecialFunctions.Log.Deriv": 2,
+  "Mathlib.Analysis.SpecialFunctions.Log.NegMulLog": 1,
+  "Mathlib.Analysis.SpecialFunctions.Log.Summable": 1,
+  "Mathlib.Analysis.SpecialFunctions.PolarCoord": 1,
+  "Mathlib.Analysis.SpecialFunctions.Pow.Asymptotics": 2,
+  "Mathlib.Analysis.SpecialFunctions.Pow.Complex": 2,
+  "Mathlib.Analysis.SpecialFunctions.Pow.Continuity": 2,
+  "Mathlib.Analysis.SpecialFunctions.Pow.Deriv": 4,
+  "Mathlib.Analysis.SpecialFunctions.Pow.Real": 2,
+  "Mathlib.Analysis.SpecialFunctions.Sqrt": 1,
+  "Mathlib.Analysis.SpecialFunctions.Stirling": 1,
+  "Mathlib.Analysis.SpecialFunctions.Trigonometric.Arctan": 3,
+  "Mathlib.Analysis.SpecialFunctions.Trigonometric.ArctanDeriv": 2,
+  "Mathlib.Analysis.SpecialFunctions.Trigonometric.Bounds": 6,
+  "Mathlib.Analysis.SpecialFunctions.Trigonometric.Complex": 2,
+  "Mathlib.Analysis.SpecialFunctions.Trigonometric.Deriv": 1,
+  "Mathlib.Analysis.SpecialFunctions.Trigonometric.DerivHyp": 2,
+  "Mathlib.Analysis.SpecialFunctions.Trigonometric.Inverse": 1,
+  "Mathlib.Analysis.SpecialFunctions.Trigonometric.Series": 1,
+  "Mathlib.Analysis.SpecificLimits.Basic": 2,
+  "Mathlib.Analysis.SpecificLimits.Normed": 4,
+  "Mathlib.Analysis.SumIntegralComparisons": 4,
+  "Mathlib.Basic.Complex.Basic": 2,
+  "Mathlib.Basic.Complex.BigOperators": 1,
+  "Mathlib.Basic.Real.Basic": 1,
+  "Mathlib.Basic.Real.Sign": 1,
+  "Mathlib.Data.Nat.Log": 1,
+  "Mathlib.Data.Set.Card": 1,
+  "Mathlib.Data.Set.Card.Arithmetic": 1,
+  "Mathlib.MeasureTheory.Function.Floor": 1,
+  "Mathlib.MeasureTheory.Function.LocallyIntegrable": 1,
+  "Mathlib.MeasureTheory.Group.Integral": 4,
+  "Mathlib.MeasureTheory.Integral.Bochner.ContinuousLinearMap": 2,
+  "Mathlib.MeasureTheory.Integral.CurveIntegral.Poincare": 1,
+  "Mathlib.MeasureTheory.Integral.DominatedConvergence": 4,
+  "Mathlib.MeasureTheory.Integral.IntegralEqImproper": 6,
+  "Mathlib.MeasureTheory.Integral.IntervalIntegral.FundThmCalculus": 4,
+  "Mathlib.MeasureTheory.Integral.IntervalIntegral.IntegrationByParts": 2,
+  "Mathlib.MeasureTheory.Integral.Prod": 2,
+  "Mathlib.MeasureTheory.Measure.Lebesgue.Basic": 1,
+  "Mathlib.MeasureTheory.Measure.Lebesgue.Complex": 1,
+  "Mathlib.MeasureTheory.Measure.Lebesgue.Integral": 1,
+  "Mathlib.NumberTheory.Bernoulli": 2,
+  "Mathlib.NumberTheory.EulerProduct.DirichletLSeries": 1,
+  "Mathlib.NumberTheory.Harmonic.ZetaAsymp": 1,
+  "Mathlib.NumberTheory.LSeries.Deriv": 2,
+  "Mathlib.NumberTheory.LSeries.Dirichlet": 2,
+  "Mathlib.NumberTheory.LSeries.Nonvanishing": 3,
+  "Mathlib.NumberTheory.LSeries.RiemannZeta": 8,
+  "Mathlib.NumberTheory.ZetaValues": 3,
+  "Mathlib.Order.Interval.Basic": 1,
+  "Mathlib.Order.Interval.Set.Basic": 1,
+  "Mathlib.Order.Interval.Set.Infinite": 1,
+  "Mathlib.Order.Interval.Set.Union": 1,
+  "Mathlib.RingTheory.Polynomial.Pochhammer": 1,
+  "Mathlib.Tactic.Abel": 2,
+  "Mathlib.Tactic.Bound": 2,
+  "Mathlib.Tactic.FieldSimp": 2,
+  "Mathlib.Tactic.GCongr": 2,
+  "Mathlib.Tactic.Linarith": 2,
+  "Mathlib.Tactic.LinearCombination": 1,
+  "Mathlib.Tactic.Module": 2,
+  "Mathlib.Tactic.NormNum": 2,
+  "Mathlib.Tactic.Positivity": 2,
+  "Mathlib.Tactic.Ring": 2,
+  "Mathlib.Topology.Algebra.InfiniteSum.ENNReal": 1,
+  "Mathlib.Topology.Algebra.InfiniteSum.Field": 1,
+  "Mathlib.Topology.Algebra.Module.LocallyConvex": 1,
+  "Mathlib.Topology.DiscreteSubset": 1,
+  "Mathlib.Topology.Homotopy.Lifting": 1,
+  "Mathlib.Topology.Order.Compact": 1,
+  "Mathlib.Topology.Order.IntermediateValue": 1
+ },
+ "import_roots": {
+  "Lean": 1,
+  "Mathlib": 89,
+  "PrimeNumberTheoremAnd": 9
+ },
+ "uses": {
+  "AnalyticAt": 7,
+  "ArithmeticFunction": 2,
+  "Array": 14,
+  "Cardinal.not_countable_real": 1,
+  "CompleteSpace": 1,
+  "Complex": 79,
+  "Complex.cos": 6,
+  "Complex.exp": 45,
+  "Complex.hasSum_taylorSeries_log": 1,
+  "Complex.sin": 18,
+  "Continuous": 27,
+  "Convex": 1,
+  "ConvexOn": 3,
+  "Differentiable": 10,
+  "DifferentiableOn": 8,
+  "Filter": 36,
+  "Filter.Tendsto": 20,
+  "Finset": 18,
+  "HasDerivAt": 35,
+  "HasSum": 5,
+  "Int": 7,
+  "IsCompact": 3,
+  "List": 8,
+  "Measurable": 4,
+  "MeasurableSet": 1,
+  "MeasurableSpace": 1,
+  "MeasureTheory.Integrable": 19,
+  "MeasureTheory.Measure": 5,
+  "MeasureTheory.ae": 1,
+  "MeasureTheory.tendsto_integral_of_dominated_convergence": 2,
+  "Metric.ball": 6,
+  "Metric.isOpen_iff": 1,
+  "Nat": 43,
+  "NormedSpace": 2,
+  "Polynomial": 2,
+  "Polynomial.derivative": 1,
+  "Polynomial.eval": 1,
+  "PowerSeries": 2,
+  "Rat": 2,
+  "Real": 70,
+  "Real.arcsin": 1,
+  "Real.exp": 44,
+  "Real.log": 51,
+  "Real.sin": 16,
+  "Real.sinh": 2,
+  "Set": 41,
+  "Std.HashMap": 3,
+  "Stirling.tendsto_stirlingSeq_sqrt_pi": 1,
+  "TopologicalSpace": 1,
+  "bernoulli": 18,
+  "convexOn_of_deriv2_nonneg": 1,
+  "fderiv": 1,
+  "hasSum_zeta_two": 1,
+  "intermediate_value_Icc": 2,
+  "intervalIntegral.integral_eq_sub_of_hasDeriv_right_of_le": 2,
+  "intervalIntegral.integral_mul_deriv_eq_deriv_mul": 2,
+  "iteratedDeriv": 16,
+  "norm_add_le": 11,
+  "tsum_geometric_of_norm_lt_one": 2
+ },
+ "ci": "SUCCESS"
+}

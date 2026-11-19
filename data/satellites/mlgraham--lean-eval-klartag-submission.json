@@ -1,0 +1,139 @@
+{
+ "schema": "trough-satellites/v1",
+ "repo": "mlgraham/lean-eval-klartag-submission",
+ "slug": "mlgraham--lean-eval-klartag-submission",
+ "rev": "270b3358a135f64a6688636660c07772e8db0173",
+ "date": "2026-09-12T21:22:22Z",
+ "stable": "56f86cca4934532b28040750bbd13c2f6c4581f85507f9f65079287342322d10",
+ "license": {
+  "files": [
+   "LICENSE"
+  ],
+  "spdx": "Apache-2.0",
+  "file": "LICENSE",
+  "copyright": []
+ },
+ "readme": {
+  "file": "README.md",
+  "title": "lean-eval submission — klartagpacking",
+  "excerpt": "A proof of [`klartag_packing`](https://github.com/leanprover/lean-eval/tree/main/generated/klartag_packing) — Klartag's construction of lattice sphere packings: an ellipsoid in ℝ^(n+1) of volume c·n² whose only lattice point is the origin (B. Klartag, *Lattice packing of spheres in high dimensions using a stochastically evolving ellipsoid*)."
+ },
+ "lean_files": 182,
+ "admitted": true,
+ "folder": "klartag_packing",
+ "toolchain": "v4.33.0",
+ "mathlib": "6f1ef4e5dd604a435bddba4747b13970cd65d2a1",
+ "requirements": [],
+ "libraries": [
+  {
+   "name": "Challenge",
+   "src": "."
+  },
+  {
+   "name": "Solution",
+   "src": "."
+  },
+  {
+   "name": "Submission",
+   "src": "."
+  }
+ ],
+ "library_files": 180,
+ "capped": false,
+ "declarations": 2124,
+ "sorry_files": 1,
+ "axioms": 0,
+ "closure_files": 178,
+ "closure_sorry": [],
+ "closure_axioms": 0,
+ "root_modules": [
+  {
+   "name": "Challenge",
+   "file": "klartag_packing/Challenge.lean"
+  },
+  {
+   "name": "Solution",
+   "file": "klartag_packing/Solution.lean"
+  },
+  {
+   "name": "Submission",
+   "file": "klartag_packing/Submission.lean"
+  }
+ ],
+ "root_closure_files": 180,
+ "root_closure_sorry": [
+  "klartag_packing/Challenge.lean"
+ ],
+ "root_closure_axioms": 0,
+ "unclosed_files": 0,
+ "headline_rule": "readme",
+ "headline_count": 1,
+ "headlines": [
+  {
+   "name": "Submission.klartag_packing",
+   "module": "Submission",
+   "file": "klartag_packing/Submission.lean",
+   "line": 10,
+   "kind": "theorem",
+   "sorry": false,
+   "names": [
+    "EReal",
+    "Metric.ball"
+   ]
+  }
+ ],
+ "mathlib_imports": {},
+ "import_roots": {
+  "Lake": 3,
+  "Lean": 3,
+  "Mathlib": 29
+ },
+ "uses": {
+  "BorelSpace": 11,
+  "Complex.exp": 3,
+  "Continuous": 7,
+  "Convex": 2,
+  "EReal": 37,
+  "Filter": 1,
+  "Filter.Tendsto": 1,
+  "FiniteDimensional": 14,
+  "Finset": 138,
+  "HasDerivAt": 6,
+  "InnerProductSpace": 16,
+  "Int": 1,
+  "Invertible": 1,
+  "LinearMap.det": 1,
+  "LinearMap.range": 1,
+  "Matrix": 70,
+  "Matrix.det": 4,
+  "Measurable": 50,
+  "MeasurableSet": 26,
+  "MeasurableSpace": 78,
+  "MeasureTheory.Integrable": 44,
+  "MeasureTheory.IsProbabilityMeasure": 56,
+  "MeasureTheory.IsStoppingTime": 1,
+  "MeasureTheory.Measure": 65,
+  "MeasureTheory.Measure.pi": 10,
+  "MeasureTheory.charFun": 2,
+  "Metric.ball": 45,
+  "Module": 68,
+  "Module.Basis": 2,
+  "Nat.exists_infinite_primes": 1,
+  "NormedSpace": 2,
+  "OrthonormalBasis": 1,
+  "ProbabilityTheory.gaussianReal": 19,
+  "ProbabilityTheory.iIndepFun": 13,
+  "ProbabilityTheory.variance": 2,
+  "Real": 55,
+  "Real.exp": 57,
+  "Real.log": 58,
+  "Set": 80,
+  "Set.finrank": 1,
+  "StrongDual": 1,
+  "Submodule.reflection": 1,
+  "Submodule.span": 3,
+  "exists_norm_eq_iInf_of_complete_convex": 1,
+  "norm_add_le": 7
+ },
+ "ci": null
+}

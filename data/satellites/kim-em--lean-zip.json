@@ -1,0 +1,80 @@
+{
+ "schema": "trough-satellites/v1",
+ "repo": "kim-em/lean-zip",
+ "slug": "kim-em--lean-zip",
+ "rev": "2f7a63f38195bc667a926881b55d10c9f8a88eeb",
+ "date": "2026-09-23T04:24:56Z",
+ "stable": "2ee5f6b22ac6250358f95a54569784857fd2025c6be5ca7c1787264a396c5b47",
+ "license": {
+  "files": [
+   "LICENSE"
+  ],
+  "spdx": "Apache-2.0",
+  "file": "LICENSE",
+  "copyright": []
+ },
+ "readme": {
+  "file": "README.md",
+  "title": "lean-zip",
+  "excerpt": "**A formally verified DEFLATE implementation in Lean 4.**"
+ },
+ "lean_files": 112,
+ "admitted": true,
+ "folder": "",
+ "toolchain": "v4.35.0-rc2",
+ "mathlib": "",
+ "requirements": [
+  {
+   "name": "zipCommon",
+   "url": "https://github.com/kim-em/lean-zip-common",
+   "rev": "a9ffa91f53ff542c3ce96619d7b455d676e8ebc9"
+  }
+ ],
+ "libraries": [
+  {
+   "name": "Zip",
+   "src": "."
+  },
+  {
+   "name": "ZipTest",
+   "src": "."
+  }
+ ],
+ "library_files": 98,
+ "capped": false,
+ "declarations": 2113,
+ "sorry_files": 0,
+ "axioms": 0,
+ "closure_files": 0,
+ "closure_sorry": [],
+ "closure_axioms": 0,
+ "root_modules": [
+  {
+   "name": "Zip",
+   "file": "Zip.lean"
+  },
+  {
+   "name": "ZipTest",
+   "file": "ZipTest.lean"
+  }
+ ],
+ "root_closure_files": 98,
+ "root_closure_sorry": [],
+ "root_closure_axioms": 0,
+ "unclosed_files": 0,
+ "headline_rule": null,
+ "headline_count": 0,
+ "headlines": [],
+ "mathlib_imports": {},
+ "import_roots": {
+  "Std": 7,
+  "ZipCommon": 7,
+  "ZipForStd": 7
+ },
+ "uses": {
+  "Array": 53,
+  "List": 57,
+  "Nat": 95
+ },
+ "ci": "SUCCESS"
+}

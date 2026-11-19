@@ -1,0 +1,79 @@
+{
+ "schema": "trough-satellites/v1",
+ "repo": "starkware-libs/formal-proofs",
+ "slug": "starkware-libs--formal-proofs",
+ "rev": "d0dd8279612a248cbc6bf6d286030bf0bb2a37ff",
+ "date": "2026-06-04T19:13:57Z",
+ "stable": "02a3e285ca3e0dc5ba2f9488cd61368087daf633d061eb4954a5cc38da55ab95",
+ "license": {
+  "files": [],
+  "spdx": null,
+  "file": null,
+  "copyright": []
+ },
+ "readme": {
+  "file": "README.md",
+  "title": "Cairo Verification",
+  "excerpt": null
+ },
+ "lean_files": 276,
+ "admitted": true,
+ "folder": "",
+ "toolchain": "v4.13.0-rc3",
+ "mathlib": "dde8da66e3a5773f20dceaea8d37e91ffcb5183f",
+ "requirements": [],
+ "libraries": [
+  {
+   "name": "Verification",
+   "src": "."
+  }
+ ],
+ "library_files": 101,
+ "capped": false,
+ "declarations": 1110,
+ "sorry_files": 0,
+ "axioms": 0,
+ "closure_files": 0,
+ "closure_sorry": [],
+ "closure_axioms": 0,
+ "root_modules": [
+  {
+   "name": "Verification",
+   "file": "Verification.lean"
+  }
+ ],
+ "root_closure_files": 93,
+ "root_closure_sorry": [],
+ "root_closure_axioms": 0,
+ "unclosed_files": 0,
+ "headline_rule": null,
+ "headline_count": 0,
+ "headlines": [],
+ "mathlib_imports": {
+  "Mathlib.Algebra.Field.Basic": 1,
+  "Mathlib.Algebra.Field.Power": 1,
+  "Mathlib.Data.Fin.Basic": 2,
+  "Mathlib.FieldTheory.Finite.Basic": 1,
+  "Mathlib.Tactic.Attr.Register": 1,
+  "Mathlib.Tactic.NormNum": 1,
+  "Mathlib.Tactic.NormNum.NatSqrt": 1
+ },
+ "import_roots": {
+  "Init": 2,
+  "Mathlib": 5
+ },
+ "uses": {
+  "CharP": 2,
+  "Field": 57,
+  "Finset": 5,
+  "Int": 9,
+  "List": 3,
+  "Multiset": 1,
+  "Nat": 22,
+  "Polynomial": 2,
+  "Polynomial.eval": 1,
+  "Ring": 2,
+  "ringChar": 10
+ },
+ "ci": null
+}

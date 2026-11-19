@@ -1,0 +1,317 @@
+{
+ "schema": "trough-satellites/v1",
+ "repo": "rkirov/enumerative-chromatic-choosability",
+ "slug": "rkirov--enumerative-chromatic-choosability",
+ "rev": "5ae30add62b88ec085dc76f78b1b2dbe121dd70e",
+ "date": "2026-11-13T20:15:42Z",
+ "stable": "bf7da4bc297fc98552008d9921d9331f6ba71d00adff66d4a0be5878677c4d42",
+ "license": {
+  "files": [
+   "LICENSE"
+  ],
+  "spdx": "Apache-2.0",
+  "file": "LICENSE",
+  "copyright": []
+ },
+ "readme": {
+  "file": "README.md",
+  "title": "List coloring and enumeratively chromatic-choosable graphs — a Lean 4 formalization",
+  "excerpt": null
+ },
+ "lean_files": 1316,
+ "admitted": true,
+ "folder": "",
+ "toolchain": "v4.35.0",
+ "mathlib": "56a005855ea17e0b0958f73ec801ae140b0a1679",
+ "requirements": [],
+ "libraries": [
+  {
+   "name": "ListColoring",
+   "src": "."
+  },
+  {
+   "name": "OpenProblems",
+   "src": "."
+  },
+  {
+   "name": "Cacti",
+   "src": "."
+  },
+  {
+   "name": "NonPersistence",
+   "src": "."
+  },
+  {
+   "name": "ProductCounterexample",
+   "src": "."
+  },
+  {
+   "name": "Ladder",
+   "src": "."
+  },
+  {
+   "name": "Grid3",
+   "src": "."
+  },
+  {
+   "name": "Checks",
+   "src": "."
+  },
+  {
+   "name": "TwoDegenerate",
+   "src": "."
+  },
+  {
+   "name": "GridGen",
+   "src": "."
+  },
+  {
+   "name": "Outerplanar",
+   "src": "."
+  }
+ ],
+ "library_files": 1290,
+ "capped": false,
+ "declarations": 72535,
+ "sorry_files": 1,
+ "axioms": 0,
+ "closure_files": 421,
+ "closure_sorry": [],
+ "closure_axioms": 0,
+ "root_modules": [
+  {
+   "name": "Cacti",
+   "file": "Cacti.lean"
+  },
+  {
+   "name": "Checks",
+   "file": "Checks.lean"
+  },
+  {
+   "name": "Grid3",
+   "file": "Grid3.lean"
+  },
+  {
+   "name": "GridGen",
+   "file": "GridGen.lean"
+  },
+  {
+   "name": "Ladder",
+   "file": "Ladder.lean"
+  },
+  {
+   "name": "ListColoring",
+   "file": "ListColoring.lean"
+  },
+  {
+   "name": "NonPersistence",
+   "file": "NonPersistence.lean"
+  },
+  {
+   "name": "OpenProblems",
+   "file": "OpenProblems.lean"
+  },
+  {
+   "name": "Outerplanar",
+   "file": "Outerplanar.lean"
+  },
+  {
+   "name": "ProductCounterexample",
+   "file": "ProductCounterexample.lean"
+  },
+  {
+   "name": "TwoDegenerate",
+   "file": "TwoDegenerate.lean"
+  }
+ ],
+ "root_closure_files": 665,
+ "root_closure_sorry": [
+  "OpenProblems.lean"
+ ],
+ "root_closure_axioms": 0,
+ "unclosed_files": 0,
+ "headline_rule": "readme",
+ "headline_count": 36,
+ "headlines": [
+  {
+   "name": "SimpleGraph.eccAt_of_maxDegree_bound",
+   "module": "GridGen.MaximumDegree",
+   "file": "GridGen/MaximumDegree.lean",
+   "line": 48,
+   "kind": "theorem",
+   "sorry": false,
+   "names": [
+    "SimpleGraph"
+   ]
+  },
+  {
+   "name": "SimpleGraph.eccAt_of_degree_le_three_eleven",
+   "module": "GridGen.PeelDegree",
+   "file": "GridGen/PeelDegree.lean",
+   "line": 104,
+   "kind": "theorem",
+   "sorry": false,
+   "names": []
+  },
+  {
+   "name": "SimpleGraph.eccAt_of_degree_le_four_sixteen",
+   "module": "GridGen.PeelDegree",
+   "file": "GridGen/PeelDegree.lean",
+   "line": 117,
+   "kind": "theorem",
+   "sorry": false,
+   "names": []
+  },
+  {
+   "name": "GridGen.Four.ecc_boxProd_pathG_three",
+   "module": "GridGen.Four.Main",
+   "file": "GridGen/Four/Main.lean",
+   "line": 42,
+   "kind": "theorem",
+   "sorry": false,
+   "names": []
+  },
+  {
+   "name": "GridGen.Five.ecc_boxProd_pathG_four",
+   "module": "GridGen.Five.Main",
+   "file": "GridGen/Five/Main.lean",
+   "line": 28,
+   "kind": "theorem",
+   "sorry": false,
+   "names": []
+  },
+  {
+   "name": "GridGen.Six.ecc_boxProd_pathG_five",
+   "module": "GridGen.Six.Main",
+   "file": "GridGen/Six/Main.lean",
+   "line": 28,
+   "kind": "theorem",
+   "sorry": false,
+   "names": []
+  },
+  {
+   "name": "ListColoring.ecc_boxProd_pathG_of_seven",
+   "module": "GridGen.Gauge.Seven.Assemble7",
+   "file": "GridGen/Gauge/Seven/Assemble7.lean",
+   "line": 44,
+   "kind": "theorem",
+   "sorry": false,
+   "names": []
+  },
+  {
+   "name": "SimpleGraph.KN5.exists_choosable_not_ecc_of_two_le",
+   "module": "ListColoring.Section5",
+   "file": "ListColoring/Section5.lean",
+   "line": 635,
+   "kind": "theorem",
+   "sorry": false,
+   "names": [
+    "SimpleGraph"
+   ]
+  }
+ ],
+ "mathlib_imports": {
+  "Mathlib.Algebra.BigOperators.Field": 2,
+  "Mathlib.Algebra.BigOperators.Fin": 4,
+  "Mathlib.Algebra.BigOperators.Group.Finset.Sigma": 2,
+  "Mathlib.Algebra.BigOperators.Ring.Finset": 4,
+  "Mathlib.Algebra.CharP.Defs": 1,
+  "Mathlib.Algebra.Order.BigOperators.Group.Finset": 4,
+  "Mathlib.Algebra.Order.BigOperators.GroupWithZero.Finset": 1,
+  "Mathlib.Algebra.Order.BigOperators.Ring.Finset": 1,
+  "Mathlib.Algebra.Order.Ring.Int": 1,
+  "Mathlib.Algebra.Order.Ring.Star": 1,
+  "Mathlib.Algebra.Order.Star.Real": 2,
+  "Mathlib.Algebra.Polynomial.Degree.Defs": 1,
+  "Mathlib.Algebra.Polynomial.Eval.Defs": 1,
+  "Mathlib.Algebra.Ring.Parity": 1,
+  "Mathlib.Analysis.Calculus.Deriv.Add": 1,
+  "Mathlib.Analysis.Calculus.Deriv.MeanValue": 1,
+  "Mathlib.Analysis.Calculus.Deriv.Mul": 1,
+  "Mathlib.Analysis.Complex.ExponentialBounds": 1,
+  "Mathlib.Analysis.Convex.SpecificFunctions.Basic": 2,
+  "Mathlib.Analysis.MeanInequalities": 3,
+  "Mathlib.Analysis.Normed.Field.Basic": 1,
+  "Mathlib.Analysis.SpecialFunctions.Log.Basic": 4,
+  "Mathlib.Analysis.SpecialFunctions.Log.NegMulLog": 2,
+  "Mathlib.Analysis.SpecialFunctions.Trigonometric.DerivHyp": 1,
+  "Mathlib.Basic.Real.Basic": 3,
+  "Mathlib.Combinatorics.Hall.Basic": 1,
+  "Mathlib.Combinatorics.Hall.Finite": 1,
+  "Mathlib.Combinatorics.SimpleGraph.Acyclic": 2,
+  "Mathlib.Combinatorics.SimpleGraph.Bipartite": 1,
+  "Mathlib.Combinatorics.SimpleGraph.Clique": 1,
+  "Mathlib.Combinatorics.SimpleGraph.Coloring.Constructions": 1,
+  "Mathlib.Combinatorics.SimpleGraph.Coloring.Vertex": 1,
+  "Mathlib.Combinatorics.SimpleGraph.Connectivity.Finite": 1,
+  "Mathlib.Combinatorics.SimpleGraph.Connectivity.Subgraph": 1,
+  "Mathlib.Combinatorics.SimpleGraph.CycleGraph": 3,
+  "Mathlib.Combinatorics.SimpleGraph.Finite": 1,
+  "Mathlib.Combinatorics.SimpleGraph.Prod": 1,
+  "Mathlib.Combinatorics.SimpleGraph.Sum": 1,
+  "Mathlib.Combinatorics.SimpleGraph.Walk.Chord": 1,
+  "Mathlib.Data.Fin.SuccPred": 1,
+  "Mathlib.Data.Fin.Tuple.Basic": 1,
+  "Mathlib.Data.Fin.VecNotation": 1,
+  "Mathlib.Data.Finset.Card": 1,
+  "Mathlib.Data.Finset.Max": 2,
+  "Mathlib.Data.Finset.Powerset": 1,
+  "Mathlib.Data.Finset.Sort": 2,
+  "Mathlib.Data.Fintype.BigOperators": 2,
+  "Mathlib.Data.Fintype.Card": 1,
+  "Mathlib.Data.Fintype.Option": 2,
+  "Mathlib.Data.Fintype.Perm": 1,
+  "Mathlib.Data.Fintype.Pi": 4,
+  "Mathlib.Data.Fintype.Powerset": 1,
+  "Mathlib.Data.Fintype.Sum": 1,
+  "Mathlib.Data.Int.Star": 1,
+  "Mathlib.Data.Matrix.Basic": 1,
+  "Mathlib.LinearAlgebra.Matrix.Notation": 1,
+  "Mathlib.Logic.Equiv.Fin.Basic": 1,
+  "Mathlib.Order.Fin.Basic": 1,
+  "Mathlib.Order.Partition.Finpartition": 1,
+  "Mathlib.Tactic": 18,
+  "Mathlib.Tactic.DeriveFintype": 1,
+  "Mathlib.Tactic.FieldSimp": 1,
+  "Mathlib.Tactic.IntervalCases": 2,
+  "Mathlib.Tactic.Linarith": 3,
+  "Mathlib.Tactic.LinearCombination": 2,
+  "Mathlib.Tactic.NormNum": 1,
+  "Mathlib.Tactic.Positivity": 1,
+  "Mathlib.Tactic.Push": 1,
+  "Mathlib.Tactic.Ring": 4,
+  "Mathlib.Topology.Algebra.Module.FiniteDimension": 1,
+  "Mathlib.Topology.Order.Compact": 1
+ },
+ "import_roots": {
+  "Lean": 2,
+  "Mathlib": 71
+ },
+ "uses": {
+  "Array": 2,
+  "Continuous": 1,
+  "ConvexOn": 1,
+  "Equiv.Perm": 11,
+  "Finset": 386,
+  "Finset.all_card_le_biUnion_card_iff_exists_injective": 1,
+  "Finset.card_powerset": 1,
+  "Finset.card_powersetCard": 1,
+  "HasDerivAt": 3,
+  "Int": 3,
+  "IsCompact": 1,
+  "LinearMap.range": 1,
+  "List": 234,
+  "Matrix": 8,
+  "Nat": 608,
+  "Polynomial": 1,
+  "Real": 24,
+  "Real.exp": 8,
+  "Real.geom_mean_le_arith_mean": 1,
+  "Real.geom_mean_le_arith_mean_weighted": 2,
+  "Real.log": 37,
+  "Real.sinh": 1,
+  "Set": 30,
+  "SimpleGraph": 153
+ },
+ "ci": "SUCCESS"
+}

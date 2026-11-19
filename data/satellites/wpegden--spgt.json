@@ -1,0 +1,188 @@
+{
+ "schema": "trough-satellites/v1",
+ "repo": "wpegden/spgt",
+ "slug": "wpegden--spgt",
+ "rev": "9a5aa0f22cb7464e2cd01c1b3750c3f1541133f8",
+ "date": "2026-09-02T17:39:40Z",
+ "stable": "7d192692bc82b358f5e7f01d3be4258e016ffb41479b141295ba4bd6679c4c70",
+ "license": {
+  "files": [
+   "LICENSE"
+  ],
+  "spdx": null,
+  "file": null,
+  "copyright": []
+ },
+ "readme": {
+  "file": "README.md",
+  "title": "Formalization of \"The strong perfect graph theorem\" by Maria Chudnovsky, Neil Robertson, Paul Seymour and Robin Thomas",
+  "excerpt": null
+ },
+ "lean_files": 1529,
+ "admitted": true,
+ "folder": "",
+ "toolchain": "v4.30.0-rc1",
+ "mathlib": "a090f46da78e9af11fee348cd7ee47bf8dd219d2",
+ "requirements": [],
+ "libraries": [
+  {
+   "name": "Tablet",
+   "src": "."
+  }
+ ],
+ "library_files": 1517,
+ "capped": false,
+ "declarations": 1515,
+ "sorry_files": 0,
+ "axioms": 0,
+ "closure_files": 1516,
+ "closure_sorry": [],
+ "closure_axioms": 0,
+ "root_modules": [
+  {
+   "name": "Tablet",
+   "file": "Tablet.lean"
+  }
+ ],
+ "root_closure_files": 1517,
+ "root_closure_sorry": [],
+ "root_closure_axioms": 0,
+ "unclosed_files": 0,
+ "headline_rule": "readme",
+ "headline_count": 15,
+ "headlines": [
+  {
+   "name": "SPGC",
+   "module": "Tablet.SPGC",
+   "file": "Tablet/SPGC.lean",
+   "line": 16,
+   "kind": "theorem",
+   "sorry": false,
+   "names": [
+    "SimpleGraph"
+   ]
+  },
+  {
+   "name": "decomp",
+   "module": "Tablet.decomp",
+   "file": "Tablet/decomp.lean",
+   "line": 23,
+   "kind": "theorem",
+   "sorry": false,
+   "names": [
+    "SimpleGraph"
+   ]
+  },
+  {
+   "name": "PerfectComplement",
+   "module": "Tablet.PerfectComplement",
+   "file": "Tablet/PerfectComplement.lean",
+   "line": 16,
+   "kind": "theorem",
+   "sorry": false,
+   "names": [
+    "SimpleGraph"
+   ]
+  },
+  {
+   "name": "RR",
+   "module": "Tablet.RR",
+   "file": "Tablet/RR.lean",
+   "line": 19,
+   "kind": "theorem",
+   "sorry": false,
+   "names": [
+    "Set",
+    "SimpleGraph"
+   ]
+  },
+  {
+   "name": "RRC",
+   "module": "Tablet.RRC",
+   "file": "Tablet/RRC.lean",
+   "line": 17,
+   "kind": "theorem",
+   "sorry": false,
+   "names": [
+    "Set",
+    "SimpleGraph"
+   ]
+  },
+  {
+   "name": "RRstrip",
+   "module": "Tablet.RRstrip",
+   "file": "Tablet/RRstrip.lean",
+   "line": 33,
+   "kind": "theorem",
+   "sorry": false,
+   "names": [
+    "Set",
+    "SimpleGraph",
+    "SimpleGraph.F"
+   ]
+  },
+  {
+   "name": "betterwheel",
+   "module": "Tablet.betterwheel",
+   "file": "Tablet/betterwheel.lean",
+   "line": 21,
+   "kind": "theorem",
+   "sorry": false,
+   "names": [
+    "Set",
+    "SimpleGraph",
+    "SimpleGraph.F"
+   ]
+  },
+  {
+   "name": "allpairs",
+   "module": "Tablet.allpairs",
+   "file": "Tablet/allpairs.lean",
+   "line": 33,
+   "kind": "theorem",
+   "sorry": false,
+   "names": [
+    "Set",
+    "SimpleGraph"
+   ]
+  }
+ ],
+ "mathlib_imports": {
+  "Mathlib.Combinatorics.SimpleGraph.Acyclic": 6,
+  "Mathlib.Combinatorics.SimpleGraph.Bipartite": 1,
+  "Mathlib.Combinatorics.SimpleGraph.Circulant": 1,
+  "Mathlib.Combinatorics.SimpleGraph.Clique": 1,
+  "Mathlib.Combinatorics.SimpleGraph.Coloring.VertexColoring": 1,
+  "Mathlib.Combinatorics.SimpleGraph.CompleteMultipartite": 1,
+  "Mathlib.Combinatorics.SimpleGraph.ConcreteColorings": 10,
+  "Mathlib.Combinatorics.SimpleGraph.Connectivity.Subgraph": 1,
+  "Mathlib.Combinatorics.SimpleGraph.Copy": 1,
+  "Mathlib.Combinatorics.SimpleGraph.DeleteEdges": 1,
+  "Mathlib.Combinatorics.SimpleGraph.EdgeLabeling": 1,
+  "Mathlib.Combinatorics.SimpleGraph.Hamiltonian": 1,
+  "Mathlib.Combinatorics.SimpleGraph.LineGraph": 1,
+  "Mathlib.Combinatorics.SimpleGraph.Matching": 1,
+  "Mathlib.Combinatorics.SimpleGraph.Paths": 1,
+  "Mathlib.Data.Fin.VecNotation": 12,
+  "Mathlib.Data.Finite.Sum": 2,
+  "Mathlib.Data.Finset.Sort": 1,
+  "Mathlib.Data.Fintype.Fin": 1,
+  "Mathlib.Data.List.ChainOfFn": 1,
+  "Mathlib.Data.List.FinRange": 1,
+  "Mathlib.Data.Set.Card": 1,
+  "Mathlib.Logic.Equiv.Fintype": 2
+ },
+ "import_roots": {
+  "Mathlib": 37
+ },
+ "uses": {
+  "Equiv.Perm": 25,
+  "Finset": 112,
+  "Finset.card_powerset": 1,
+  "List": 44,
+  "Nat": 301,
+  "Set": 1114,
+  "SimpleGraph": 1509
+ },
+ "ci": null
+}

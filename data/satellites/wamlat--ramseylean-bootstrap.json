@@ -1,0 +1,167 @@
+{
+ "schema": "trough-satellites/v1",
+ "repo": "wamlat/RamseyLean-bootstrap",
+ "slug": "wamlat--ramseylean-bootstrap",
+ "rev": "e53b8cf11d064daae70372b3a93b2556a5fee926",
+ "date": "2026-09-03T19:29:03Z",
+ "stable": "1c01cb8327b00225c8c72c47336f58f057cdaa53118a479430c755912546811a",
+ "license": {
+  "files": [],
+  "spdx": null,
+  "file": null,
+  "copyright": []
+ },
+ "readme": {
+  "file": "README.md",
+  "title": "R(k,k) ≤ 3.769^(k+o(k)), formalized in Lean 4",
+  "excerpt": null
+ },
+ "lean_files": 1551,
+ "admitted": true,
+ "folder": "",
+ "toolchain": "v4.32.1",
+ "mathlib": "520045ab14e26149ee970e2e617ca04b09bde5d6",
+ "requirements": [],
+ "libraries": [
+  {
+   "name": "RamseyLean",
+   "src": "."
+  }
+ ],
+ "library_files": 1551,
+ "capped": false,
+ "declarations": 6608,
+ "sorry_files": 0,
+ "axioms": 0,
+ "closure_files": 589,
+ "closure_sorry": [],
+ "closure_axioms": 0,
+ "root_modules": [
+  {
+   "name": "RamseyLean",
+   "file": "RamseyLean.lean"
+  }
+ ],
+ "root_closure_files": 587,
+ "root_closure_sorry": [],
+ "root_closure_axioms": 0,
+ "unclosed_files": 0,
+ "headline_rule": "readme",
+ "headline_count": 5,
+ "headlines": [
+  {
+   "name": "RamseyLean.Bootstrap2.exp_FN_le_sharp",
+   "module": "RamseyLean.Bootstrap2.CertMain",
+   "file": "RamseyLean/Bootstrap2/CertMain.lean",
+   "line": 115,
+   "kind": "theorem",
+   "sorry": false,
+   "names": [
+    "Real.exp"
+   ]
+  },
+  {
+   "name": "RamseyLean.uniformRamseyExpBound_selfConsistent",
+   "module": "RamseyLean.SelfConsistent",
+   "file": "RamseyLean/SelfConsistent.lean",
+   "line": 175,
+   "kind": "theorem",
+   "sorry": false,
+   "names": [
+    "HasDerivAt",
+    "Real.exp",
+    "Real.log"
+   ]
+  },
+  {
+   "name": "RamseyLean.Bootstrap2.main_cert",
+   "module": "RamseyLean.Bootstrap2.Main2",
+   "file": "RamseyLean/Bootstrap2/Main2.lean",
+   "line": 135,
+   "kind": "theorem",
+   "sorry": false,
+   "names": []
+  },
+  {
+   "name": "RamseyLean.Bootstrap2.cert_diagonal",
+   "module": "RamseyLean.Bootstrap2.Main2",
+   "file": "RamseyLean/Bootstrap2/Main2.lean",
+   "line": 161,
+   "kind": "theorem",
+   "sorry": false,
+   "names": [
+    "Real.exp"
+   ]
+  },
+  {
+   "name": "RamseyLean.uniformRamseyExpBound_of_descent",
+   "module": "RamseyLean.Descent",
+   "file": "RamseyLean/Descent.lean",
+   "line": 843,
+   "kind": "theorem",
+   "sorry": false,
+   "names": [
+    "HasDerivAt",
+    "Real.exp"
+   ]
+  }
+ ],
+ "mathlib_imports": {
+  "Mathlib.Algebra.Order.Floor.Semiring": 2,
+  "Mathlib.Analysis.Asymptotics.Lemmas": 1,
+  "Mathlib.Analysis.Calculus.Deriv.MeanValue": 2,
+  "Mathlib.Analysis.Complex.Exponential": 1,
+  "Mathlib.Analysis.Complex.ExponentialBounds": 1,
+  "Mathlib.Analysis.Convex.Deriv": 1,
+  "Mathlib.Analysis.Convex.SpecificFunctions.Basic": 1,
+  "Mathlib.Analysis.Real.Sqrt": 1,
+  "Mathlib.Analysis.SpecialFunctions.Complex.LogBounds": 1,
+  "Mathlib.Analysis.SpecialFunctions.Exp": 1,
+  "Mathlib.Analysis.SpecialFunctions.Log.Basic": 1,
+  "Mathlib.Analysis.SpecialFunctions.Log.Deriv": 1,
+  "Mathlib.Analysis.SpecialFunctions.Log.RpowTendsto": 1,
+  "Mathlib.Analysis.SpecialFunctions.Pochhammer": 1,
+  "Mathlib.Analysis.SpecialFunctions.Pow.Continuity": 1,
+  "Mathlib.Analysis.SpecialFunctions.Pow.Deriv": 1,
+  "Mathlib.Analysis.SpecialFunctions.Pow.Real": 1,
+  "Mathlib.Analysis.SpecialFunctions.Stirling": 2,
+  "Mathlib.Analysis.SpecificLimits.Basic": 1,
+  "Mathlib.Combinatorics.Enumerative.DoubleCounting": 1,
+  "Mathlib.Combinatorics.SimpleGraph.Basic": 1,
+  "Mathlib.Combinatorics.SimpleGraph.Clique": 1,
+  "Mathlib.Combinatorics.SimpleGraph.Density": 1,
+  "Mathlib.Combinatorics.SimpleGraph.Finite": 1,
+  "Mathlib.Data.Finset.Lattice.Fold": 1,
+  "Mathlib.Data.Fintype.EquivFin": 1,
+  "Mathlib.Data.Nat.Choose.Bounds": 1,
+  "Mathlib.Data.Real.Basic": 1,
+  "Mathlib.MeasureTheory.Integral.IntervalIntegral.FundThmCalculus": 1,
+  "Mathlib.Order.Nat": 1,
+  "Mathlib.Tactic": 18,
+  "Mathlib.Topology.Compactness.Compact": 1,
+  "Mathlib.Topology.Constructions": 1,
+  "Mathlib.Topology.Order.DenselyOrdered": 1,
+  "Mathlib.Topology.UniformSpace.HeineCantor": 1
+ },
+ "import_roots": {
+  "Mathlib": 29
+ },
+ "uses": {
+  "Continuous": 4,
+  "Filter": 9,
+  "Filter.Tendsto": 4,
+  "Finset": 12,
+  "Finset.card_powersetCard": 1,
+  "HasDerivAt": 11,
+  "Int": 6,
+  "List": 1490,
+  "Nat": 41,
+  "Real.exp": 37,
+  "Real.log": 32,
+  "Real.rpow": 4,
+  "Set": 45,
+  "SimpleGraph": 8,
+  "closure": 3
+ },
+ "ci": null
+}

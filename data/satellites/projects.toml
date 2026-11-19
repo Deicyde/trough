@@ -1,0 +1,1290 @@
+# The one-off Lean projects trough maps as satellites of the libraries they build on, one [[project]] each.
+# tools/refresh_satellites.py reads each at a pinned commit into data/satellites/<slug>.json. The slug is
+# fixed at admission, as it names the project's page. kind is the survey's: research-project, verification,
+# research-math or textbook-or-course. A project with a chapter of its own is not listed here, nor is
+# Timeroot/Lean-QuantumInfo, which Physlib holds as its QuantumInfo library.
+
+[[project]]
+repo = "7pocheR/Pierce-Birkhoff"
+slug = "7pocher--pierce-birkhoff"
+kind = "research-project"
+
+[[project]]
+repo = "A-M-Berns/Formalized-Agent-Foundations"
+slug = "a-m-berns--formalized-agent-foundations"
+kind = "research-project"
+
+[[project]]
+repo = "AeneasVerif/aeneas"
+slug = "aeneasverif--aeneas"
+kind = "verification"
+
+[[project]]
+repo = "AlexKontorovich/quasi-rh"
+slug = "alexkontorovich--quasi-rh"
+kind = "research-project"
+
+[[project]]
+repo = "alpha-squared-labs/Lean-Atiyah-Singer"
+slug = "alpha-squared-labs--lean-atiyah-singer"
+kind = "research-project"
+
+[[project]]
+repo = "amelieloher/hoermander-rothschild-stein"
+slug = "amelieloher--hoermander-rothschild-stein"
+kind = "research-project"
+
+[[project]]
+repo = "amelieloher/hypoelliptic-aleksandrov"
+slug = "amelieloher--hypoelliptic-aleksandrov"
+kind = "research-project"
+
+[[project]]
+repo = "anthropics/FlashProve"
+slug = "anthropics--flashprove"
+kind = "verification"
+
+[[project]]
+repo = "anthropics/formal-math"
+slug = "anthropics--formal-math"
+kind = "research-project"
+
+[[project]]
+repo = "aodesky/abelian-cubics"
+slug = "aodesky--abelian-cubics"
+kind = "research-project"
+
+[[project]]
+repo = "apellis/odd-lean"
+slug = "apellis--odd-lean"
+kind = "research-project"
+
+[[project]]
+repo = "aptos-labs/aptos-core"
+slug = "aptos-labs--aptos-core"
+kind = "verification"
+
+[[project]]
+repo = "arbooker/twistless_converse"
+slug = "arbooker--twistless-converse"
+kind = "research-project"
+
+[[project]]
+repo = "argumentcomputer/ix"
+slug = "argumentcomputer--ix"
+kind = "verification"
+
+[[project]]
+repo = "AxelDlv00/LeanAlgebraicGeometry"
+slug = "axeldlv00--leanalgebraicgeometry"
+kind = "research-project"
+
+[[project]]
+repo = "AxiomMath/AreaLaw2D"
+slug = "axiommath--arealaw2d"
+kind = "research-project"
+
+[[project]]
+repo = "AxiomMath/BandMatrixQUE"
+slug = "axiommath--bandmatrixque"
+kind = "research-math"
+
+[[project]]
+repo = "AxiomMath/BGP212"
+slug = "axiommath--bgp212"
+kind = "research-project"
+
+[[project]]
+repo = "AxiomMath/BondalThomsen"
+slug = "axiommath--bondalthomsen"
+kind = "research-project"
+
+[[project]]
+repo = "AxiomMath/BSDTamagawa"
+slug = "axiommath--bsdtamagawa"
+kind = "research-project"
+
+[[project]]
+repo = "AxiomMath/ClusterAlgebras"
+slug = "axiommath--clusteralgebras"
+kind = "textbook-or-course"
+
+[[project]]
+repo = "AxiomMath/CollatzPositiveDensity"
+slug = "axiommath--collatzpositivedensity"
+kind = "research-project"
+
+[[project]]
+repo = "AxiomMath/CycleCutoff"
+slug = "axiommath--cyclecutoff"
+kind = "research-project"
+
+[[project]]
+repo = "AxiomMath/DedekindZetaZeroFree"
+slug = "axiommath--dedekindzetazerofree"
+kind = "research-project"
+
+[[project]]
+repo = "AxiomMath/HigherDyson3"
+slug = "axiommath--higherdyson3"
+kind = "research-project"
+
+[[project]]
+repo = "AxiomMath/HJO"
+slug = "axiommath--hjo"
+kind = "research-project"
+
+[[project]]
+repo = "AxiomMath/LogNarayana"
+slug = "axiommath--lognarayana"
+kind = "research-project"
+
+[[project]]
+repo = "AxiomMath/Mordell"
+slug = "axiommath--mordell"
+kind = "research-math"
+
+[[project]]
+repo = "AxiomMath/PrimeGapsLib"
+slug = "axiommath--primegapslib"
+kind = "research-project"
+
+[[project]]
+repo = "AxiomMath/RiemannJensen"
+slug = "axiommath--riemannjensen"
+kind = "research-project"
+
+[[project]]
+repo = "AxiomMath/TernaryPoly"
+slug = "axiommath--ternarypoly"
+kind = "research-project"
+
+[[project]]
+repo = "AxiomMath/Weil"
+slug = "axiommath--weil"
+kind = "research-project"
+
+[[project]]
+repo = "AxiomMath/Zeta5Irrational"
+slug = "axiommath--zeta5irrational"
+kind = "research-project"
+
+[[project]]
+repo = "b-mehta/EllipticCurveRank"
+slug = "b-mehta--ellipticcurverank"
+kind = "research-math"
+
+[[project]]
+repo = "b-mehta/ExponentialRamsey"
+slug = "b-mehta--exponentialramsey"
+kind = "research-project"
+
+[[project]]
+repo = "BasisResearch/ship-your-interpreter"
+slug = "basisresearch--ship-your-interpreter"
+kind = "verification"
+
+[[project]]
+repo = "BasisResearch/VeriDNS"
+slug = "basisresearch--veridns"
+kind = "verification"
+
+[[project]]
+repo = "BasisResearch/verified-libtommath"
+slug = "basisresearch--verified-libtommath"
+kind = "verification"
+
+[[project]]
+repo = "benbrastmckie/BimodalLogic"
+slug = "benbrastmckie--bimodallogic"
+kind = "research-project"
+
+[[project]]
+repo = "Beneficial-AI-Foundation/curve25519-dalek-lean-verify"
+slug = "beneficial-ai-foundation--curve25519-dalek-lean-verify"
+kind = "verification"
+
+[[project]]
+repo = "Beneficial-AI-Foundation/secure-messaging"
+slug = "beneficial-ai-foundation--secure-messaging"
+kind = "verification"
+
+[[project]]
+repo = "bjoernkjoshanssen/tt-auto"
+slug = "bjoernkjoshanssen--tt-auto"
+kind = "research-math"
+
+[[project]]
+repo = "brettkoonce/lean4-mlir"
+slug = "brettkoonce--lean4-mlir"
+kind = "verification"
+
+[[project]]
+repo = "Broyojo/python-formalization"
+slug = "broyojo--python-formalization"
+kind = "verification"
+
+[[project]]
+repo = "bryangingechen/CombinatorialRigidity"
+slug = "bryangingechen--combinatorialrigidity"
+kind = "research-project"
+
+[[project]]
+repo = "cadamcat/catalan-lean4"
+slug = "cadamcat--catalan-lean4"
+kind = "research-project"
+
+[[project]]
+repo = "cajal-technologies/talos"
+slug = "cajal-technologies--talos"
+kind = "verification"
+
+[[project]]
+repo = "cameronfreer/vaught-conjecture-counterexample"
+slug = "cameronfreer--vaught-conjecture-counterexample"
+kind = "research-project"
+
+[[project]]
+repo = "CBirkbeck/Adic-Spaces"
+slug = "cbirkbeck--adic-spaces"
+kind = "research-project"
+
+[[project]]
+repo = "CBirkbeck/padic-L-functions"
+slug = "cbirkbeck--padic-l-functions"
+kind = "research-math"
+
+[[project]]
+repo = "CBirkbeck/uniform-sheafy-tate-domains-lean"
+slug = "cbirkbeck--uniform-sheafy-tate-domains-lean"
+kind = "research-project"
+
+[[project]]
+repo = "cedar-policy/cedar-spec"
+slug = "cedar-policy--cedar-spec"
+kind = "verification"
+
+[[project]]
+repo = "chenle02/rmt-foundations-lean"
+slug = "chenle02--rmt-foundations-lean"
+kind = "research-project"
+
+[[project]]
+repo = "chrisflav/oka"
+slug = "chrisflav--oka"
+kind = "research-project"
+
+[[project]]
+repo = "chrisflav/proetale"
+slug = "chrisflav--proetale"
+kind = "research-project"
+
+[[project]]
+repo = "corun1024/4ct"
+slug = "corun1024--4ct"
+kind = "research-project"
+
+[[project]]
+repo = "cristianoc/TScert"
+slug = "cristianoc--tscert"
+kind = "verification"
+
+[[project]]
+repo = "cvc5/logos"
+slug = "cvc5--logos"
+kind = "verification"
+
+[[project]]
+repo = "daattavya98/HironakaLean-public"
+slug = "daattavya98--hironakalean-public"
+kind = "research-project"
+
+[[project]]
+repo = "dagurtomas/rigid"
+slug = "dagurtomas--rigid"
+kind = "research-math"
+
+[[project]]
+repo = "danghica/hypernets-lean"
+slug = "danghica--hypernets-lean"
+kind = "research-project"
+
+[[project]]
+repo = "davidturturean/klt-del-pezzo"
+slug = "davidturturean--klt-del-pezzo"
+kind = "research-project"
+
+[[project]]
+repo = "deancureton/sphere-six-complex"
+slug = "deancureton--sphere-six-complex"
+kind = "research-project"
+
+[[project]]
+repo = "Dengnifer/MIPStarRE-QPBT"
+slug = "dengnifer--mipstarre-qpbt"
+kind = "research-project"
+
+[[project]]
+repo = "djalilchafai/ginibre-poincare"
+slug = "djalilchafai--ginibre-poincare"
+kind = "research-project"
+
+[[project]]
+repo = "dpwoodru/general-courtade-kumar-lean"
+slug = "dpwoodru--general-courtade-kumar-lean"
+kind = "research-project"
+
+[[project]]
+repo = "duckki/graphql-lean"
+slug = "duckki--graphql-lean"
+kind = "verification"
+
+[[project]]
+repo = "edemaine/lean-trominoes"
+slug = "edemaine--lean-trominoes"
+kind = "research-project"
+
+[[project]]
+repo = "EgoFakeFantasy/BMS-Well-Ordering-Lean"
+slug = "egofakefantasy--bms-well-ordering-lean"
+kind = "research-project"
+
+[[project]]
+repo = "elliotglazer/definable-saturated"
+slug = "elliotglazer--definable-saturated"
+kind = "research-math"
+
+[[project]]
+repo = "enaslund/linniks-constant-3.99"
+slug = "enaslund--linniks-constant-3-99"
+kind = "research-math"
+
+[[project]]
+repo = "enaslund/unit-distance-bound-0.0427"
+slug = "enaslund--unit-distance-bound-0-0427"
+kind = "research-project"
+
+[[project]]
+repo = "eohjelle/feit-thompson-odd-order-theorem"
+slug = "eohjelle--feit-thompson-odd-order-theorem"
+kind = "research-project"
+
+[[project]]
+repo = "eth-act/clifv"
+slug = "eth-act--clifv"
+kind = "verification"
+
+[[project]]
+repo = "flamingoponderado/flapjack"
+slug = "flamingoponderado--flapjack"
+kind = "verification"
+
+[[project]]
+repo = "formal-arithmetic-geometry/weil-conjectures"
+slug = "formal-arithmetic-geometry--weil-conjectures"
+kind = "research-project"
+
+[[project]]
+repo = "formal-dynamics/leanamics"
+slug = "formal-dynamics--leanamics"
+kind = "research-project"
+
+[[project]]
+repo = "FormalizedFormalLogic/goodstein-independence"
+slug = "formalizedformallogic--goodstein-independence"
+kind = "research-project"
+
+[[project]]
+repo = "fradamt/verified-consensus"
+slug = "fradamt--verified-consensus"
+kind = "verification"
+
+[[project]]
+repo = "frenzymath/HolomorphicAnosov"
+slug = "frenzymath--holomorphicanosov"
+kind = "research-project"
+
+[[project]]
+repo = "frenzymath/MiyaokaMori-CharZero"
+slug = "frenzymath--miyaokamori-charzero"
+kind = "research-project"
+
+[[project]]
+repo = "frenzymath/PiIrrationalityMeasure"
+slug = "frenzymath--piirrationalitymeasure"
+kind = "research-math"
+
+[[project]]
+repo = "frenzymath/Poincare-Conjecture"
+slug = "frenzymath--poincare-conjecture"
+kind = "research-project"
+
+[[project]]
+repo = "GAIR-NLP/Kervaire126"
+slug = "gair-nlp--kervaire126"
+kind = "research-project"
+
+[[project]]
+repo = "GaloisInc/libsignal-docs-and-models"
+slug = "galoisinc--libsignal-docs-and-models"
+kind = "verification"
+
+[[project]]
+repo = "gdanezis/lean-dag"
+slug = "gdanezis--lean-dag"
+kind = "verification"
+
+[[project]]
+repo = "gersh/ternary-goldbach-lean"
+slug = "gersh--ternary-goldbach-lean"
+kind = "research-project"
+
+[[project]]
+repo = "girving/aks"
+slug = "girving--aks"
+kind = "research-project"
+
+[[project]]
+repo = "girving/ray"
+slug = "girving--ray"
+kind = "research-project"
+
+[[project]]
+repo = "google-deepmind/code-verification"
+slug = "google-deepmind--code-verification"
+kind = "verification"
+
+[[project]]
+repo = "GTimG/QuasiRiemannTracker"
+slug = "gtimg--quasiriemanntracker"
+kind = "research-project"
+
+[[project]]
+repo = "h5i-dev/h5i"
+slug = "h5i-dev--h5i"
+kind = "verification"
+
+[[project]]
+repo = "hanwenzhu/wang_zahl_kakeya_dimH"
+slug = "hanwenzhu--wang-zahl-kakeya-dimh"
+kind = "research-project"
+
+[[project]]
+repo = "haruhisa-enomoto/magnitude-conjecture"
+slug = "haruhisa-enomoto--magnitude-conjecture"
+kind = "research-math"
+
+[[project]]
+repo = "haruhisa-enomoto/multiplicative-bases-deformations"
+slug = "haruhisa-enomoto--multiplicative-bases-deformations"
+kind = "research-project"
+
+[[project]]
+repo = "haruhisa-enomoto/quotient-submodule-equidistribution"
+slug = "haruhisa-enomoto--quotient-submodule-equidistribution"
+kind = "research-project"
+
+[[project]]
+repo = "haruhisa-enomoto/third-brauer-thrall-conjecture"
+slug = "haruhisa-enomoto--third-brauer-thrall-conjecture"
+kind = "research-project"
+
+[[project]]
+repo = "hatter6822/seLe4n"
+slug = "hatter6822--sele4n"
+kind = "verification"
+
+[[project]]
+repo = "hiloopai/silmaril-lean"
+slug = "hiloopai--silmaril-lean"
+kind = "verification"
+
+[[project]]
+repo = "human-ai-mathematics/kls-lean"
+slug = "human-ai-mathematics--kls-lean"
+kind = "research-project"
+
+[[project]]
+repo = "igor-kortchemski/random-trees-lean"
+slug = "igor-kortchemski--random-trees-lean"
+kind = "research-project"
+
+[[project]]
+repo = "intgrah/metalean"
+slug = "intgrah--metalean"
+kind = "verification"
+
+[[project]]
+repo = "jamesyc/BusyBeaver"
+slug = "jamesyc--busybeaver"
+kind = "research-project"
+
+[[project]]
+repo = "janbernloehr/diss-lean"
+slug = "janbernloehr--diss-lean"
+kind = "research-project"
+
+[[project]]
+repo = "joelriou/topcat-model-category"
+slug = "joelriou--topcat-model-category"
+kind = "research-project"
+
+[[project]]
+repo = "jonhanke/quadratic-forms-lean"
+slug = "jonhanke--quadratic-forms-lean"
+kind = "research-project"
+
+[[project]]
+repo = "josevalim/lynx"
+slug = "josevalim--lynx"
+kind = "verification"
+
+[[project]]
+repo = "jsmorph/leanexe"
+slug = "jsmorph--leanexe"
+kind = "verification"
+
+[[project]]
+repo = "jstoobysmith/Thomson-N-8-Warrant"
+slug = "jstoobysmith--thomson-n-8-warrant"
+kind = "research-project"
+
+[[project]]
+repo = "jyh/salt"
+slug = "jyh--salt"
+kind = "research-project"
+
+[[project]]
+repo = "kebekus/ProjectVD"
+slug = "kebekus--projectvd"
+kind = "research-project"
+
+[[project]]
+repo = "kim-em/lean-zip"
+slug = "kim-em--lean-zip"
+kind = "verification"
+
+[[project]]
+repo = "kimihiro64/bombieri-vinogradov"
+slug = "kimihiro64--bombieri-vinogradov"
+kind = "research-project"
+
+[[project]]
+repo = "kimihiro64/erdos-690-prime-factor-unimodality"
+slug = "kimihiro64--erdos-690-prime-factor-unimodality"
+kind = "research-project"
+
+[[project]]
+repo = "kimihiro64/Robin1984"
+slug = "kimihiro64--robin1984"
+kind = "research-project"
+
+[[project]]
+repo = "KitaKen1/finite-simple-groups-lean"
+slug = "kitaken1--finite-simple-groups-lean"
+kind = "research-project"
+
+[[project]]
+repo = "lana-agents/tempered-fundamental-groups"
+slug = "lana-agents--tempered-fundamental-groups"
+kind = "research-project"
+
+[[project]]
+repo = "laurentbartholdi/whitehead"
+slug = "laurentbartholdi--whitehead"
+kind = "research-project"
+
+[[project]]
+repo = "LayerZero-Labs/jolt-qed"
+slug = "layerzero-labs--jolt-qed"
+kind = "verification"
+
+[[project]]
+repo = "LeanEconomics/DynamicProgramming"
+slug = "leaneconomics--dynamicprogramming"
+kind = "research-project"
+
+[[project]]
+repo = "LeanEconomics/MonetaryEconomics"
+slug = "leaneconomics--monetaryeconomics"
+kind = "research-project"
+
+[[project]]
+repo = "leanEthereum/leanVM"
+slug = "leanethereum--leanvm"
+kind = "verification"
+
+[[project]]
+repo = "leanprover-community/lean-liquid"
+slug = "leanprover-community--lean-liquid"
+kind = "research-project"
+
+[[project]]
+repo = "leanprover/con-agua"
+slug = "leanprover--con-agua"
+kind = "verification"
+
+[[project]]
+repo = "leanprover/con-ron"
+slug = "leanprover--con-ron"
+kind = "verification"
+
+[[project]]
+repo = "leanprover/LNSym"
+slug = "leanprover--lnsym"
+kind = "verification"
+
+[[project]]
+repo = "leanprover/SampCert"
+slug = "leanprover--sampcert"
+kind = "verification"
+
+[[project]]
+repo = "LFDT-Nightstream/Nightstream"
+slug = "lfdt-nightstream--nightstream"
+kind = "verification"
+
+[[project]]
+repo = "lfglabs-dev/verity"
+slug = "lfglabs-dev--verity"
+kind = "verification"
+
+[[project]]
+repo = "linrock/math-proofs"
+slug = "linrock--math-proofs"
+kind = "research-project"
+
+[[project]]
+repo = "LionSR/CertifiedGaps"
+slug = "lionsr--certifiedgaps"
+kind = "research-project"
+
+[[project]]
+repo = "LionSR/MIPStarRE"
+slug = "lionsr--mipstarre"
+kind = "research-project"
+
+[[project]]
+repo = "lispc/kepler-conjecture-lean4"
+slug = "lispc--kepler-conjecture-lean4"
+kind = "research-project"
+
+[[project]]
+repo = "liuchliuch/holant-binary-disequality-lean"
+slug = "liuchliuch--holant-binary-disequality-lean"
+kind = "research-project"
+
+[[project]]
+repo = "longfellow-zk/longfellow-zk"
+slug = "longfellow-zk--longfellow-zk"
+kind = "verification"
+
+[[project]]
+repo = "lukasliehr/Grad-Conjecture"
+slug = "lukasliehr--grad-conjecture"
+kind = "research-project"
+
+[[project]]
+repo = "M32026/3d-sticky-kakeya"
+slug = "m32026--3d-sticky-kakeya"
+kind = "research-project"
+
+[[project]]
+repo = "mahdi-jfri/StrongPerfectGraphTheorem"
+slug = "mahdi-jfri--strongperfectgraphtheorem"
+kind = "research-project"
+
+[[project]]
+repo = "marozols/SIC-existence"
+slug = "marozols--sic-existence"
+kind = "research-project"
+
+[[project]]
+repo = "mathlib-initiative/cft"
+slug = "mathlib-initiative--cft"
+kind = "research-project"
+
+[[project]]
+repo = "mathlib-initiative/stein-weinstein"
+slug = "mathlib-initiative--stein-weinstein"
+kind = "research-math"
+
+[[project]]
+repo = "mattrobball/BridgelandStability"
+slug = "mattrobball--bridgelandstability"
+kind = "research-project"
+
+[[project]]
+repo = "MColbrook/Pompeiu_Schiffer"
+slug = "mcolbrook--pompeiu-schiffer"
+kind = "research-project"
+
+[[project]]
+repo = "mfornet/busybeaver"
+slug = "mfornet--busybeaver"
+kind = "research-project"
+
+[[project]]
+repo = "MichaelStollBayreuth/JPointsLean"
+slug = "michaelstollbayreuth--jpointslean"
+kind = "verification"
+
+[[project]]
+repo = "MilesCranmer/julia-in-lean"
+slug = "milescranmer--julia-in-lean"
+kind = "verification"
+
+[[project]]
+repo = "MingchenXia/envelope-property-lean"
+slug = "mingchenxia--envelope-property-lean"
+kind = "research-project"
+
+[[project]]
+repo = "MingchenXia/hironaka"
+slug = "mingchenxia--hironaka"
+kind = "research-project"
+
+[[project]]
+repo = "mit-pdos/perennial"
+slug = "mit-pdos--perennial"
+kind = "verification"
+
+[[project]]
+repo = "mit-pdos/xv6iris"
+slug = "mit-pdos--xv6iris"
+kind = "verification"
+
+[[project]]
+repo = "mkaratarakis/HopfieldNet"
+slug = "mkaratarakis--hopfieldnet"
+kind = "research-project"
+
+[[project]]
+repo = "mlgraham/lean-eval-klartag-submission"
+slug = "mlgraham--lean-eval-klartag-submission"
+kind = "research-project"
+
+[[project]]
+repo = "Moonshine-in-Kansas/atlas"
+slug = "moonshine-in-kansas--atlas"
+kind = "research-project"
+
+[[project]]
+repo = "mrdouglasny/jacobian-challenge"
+slug = "mrdouglasny--jacobian-challenge"
+kind = "research-project"
+
+[[project]]
+repo = "mrdouglasny/pphi2"
+slug = "mrdouglasny--pphi2"
+kind = "research-project"
+
+[[project]]
+repo = "n-yamaguchi-0729/GeneralizedJacobianVarieties"
+slug = "n-yamaguchi-0729--generalizedjacobianvarieties"
+kind = "research-project"
+
+[[project]]
+repo = "n-yamaguchi-0729/SawinTotallyRealTowers"
+slug = "n-yamaguchi-0729--sawintotallyrealtowers"
+kind = "research-project"
+
+[[project]]
+repo = "NethermindEth/LeanCIL"
+slug = "nethermindeth--leancil"
+kind = "verification"
+
+[[project]]
+repo = "NethermindEth/pico-fv"
+slug = "nethermindeth--pico-fv"
+kind = "verification"
+
+[[project]]
+repo = "nitromannitol/subdiffusive-process"
+slug = "nitromannitol--subdiffusive-process"
+kind = "research-project"
+
+[[project]]
+repo = "olliepro/LeanMMBound"
+slug = "olliepro--leanmmbound"
+kind = "research-project"
+
+[[project]]
+repo = "opencompl/lean-mlir"
+slug = "opencompl--lean-mlir"
+kind = "verification"
+
+[[project]]
+repo = "opencompl/veir"
+slug = "opencompl--veir"
+kind = "verification"
+
+[[project]]
+repo = "openvm-org/openvm-fv"
+slug = "openvm-org--openvm-fv"
+kind = "verification"
+
+[[project]]
+repo = "optpku/ReasBook"
+slug = "optpku--reasbook"
+kind = "textbook-or-course"
+
+[[project]]
+repo = "optpku/stacks"
+slug = "optpku--stacks"
+kind = "research-project"
+
+[[project]]
+repo = "or4nge19/SpinGlass"
+slug = "or4nge19--spinglass"
+kind = "research-project"
+
+[[project]]
+repo = "paradigmxyz/solidity-lean"
+slug = "paradigmxyz--solidity-lean"
+kind = "verification"
+
+[[project]]
+repo = "physical-superintelligence/oqp-batch-2026"
+slug = "physical-superintelligence--oqp-batch-2026"
+kind = "research-project"
+
+[[project]]
+repo = "plasma-ai/erdos-1017"
+slug = "plasma-ai--erdos-1017"
+kind = "research-project"
+
+[[project]]
+repo = "plasma-ai/erdos-188"
+slug = "plasma-ai--erdos-188"
+kind = "research-project"
+
+[[project]]
+repo = "plasma-ai/erdos-408"
+slug = "plasma-ai--erdos-408"
+kind = "research-project"
+
+[[project]]
+repo = "plby/Erdos90"
+slug = "plby--erdos90"
+kind = "research-project"
+
+[[project]]
+repo = "Plonky3/Plonky3-lean"
+slug = "plonky3--plonky3-lean"
+kind = "verification"
+
+[[project]]
+repo = "Polarnova/FABL"
+slug = "polarnova--fabl"
+kind = "textbook-or-course"
+
+[[project]]
+repo = "powdr-labs/yul-compiler"
+slug = "powdr-labs--yul-compiler"
+kind = "verification"
+
+[[project]]
+repo = "project-numina/kakeya-3d"
+slug = "project-numina--kakeya-3d"
+kind = "research-project"
+
+[[project]]
+repo = "proofs-rs/lean-miri"
+slug = "proofs-rs--lean-miri"
+kind = "verification"
+
+[[project]]
+repo = "psuarezserrato/gromov-genus0-compactness"
+slug = "psuarezserrato--gromov-genus0-compactness"
+kind = "research-project"
+
+[[project]]
+repo = "pyca/verified-garbage"
+slug = "pyca--verified-garbage"
+kind = "verification"
+
+[[project]]
+repo = "qawbecrdtey/ImprovedExponents"
+slug = "qawbecrdtey--improvedexponents"
+kind = "research-project"
+
+[[project]]
+repo = "QEDGen/qedsvm"
+slug = "qedgen--qedsvm"
+kind = "verification"
+
+[[project]]
+repo = "qit-lmu/gaussian-testing"
+slug = "qit-lmu--gaussian-testing"
+kind = "research-project"
+
+[[project]]
+repo = "Qiuzhen-CFSG/CFSG"
+slug = "qiuzhen-cfsg--cfsg"
+kind = "research-project"
+
+[[project]]
+repo = "RBarish-UTokyo/FourColorTheorem-Lean4"
+slug = "rbarish-utokyo--fourcolortheorem-lean4"
+kind = "research-project"
+
+[[project]]
+repo = "RBarish-UTokyo/OrthogonalArtGalleryProblem-BoundaryPointVariant-ExistsR-Lean4"
+slug = "rbarish-utokyo--orthogonalartgalleryproblem-boundarypointvariant-existsr-lean4"
+kind = "research-project"
+
+[[project]]
+repo = "reilabs/lampe"
+slug = "reilabs--lampe"
+kind = "verification"
+
+[[project]]
+repo = "resolutionorg/hironaka"
+slug = "resolutionorg--hironaka"
+kind = "research-project"
+
+[[project]]
+repo = "rkirov/enumerative-chromatic-choosability"
+slug = "rkirov--enumerative-chromatic-choosability"
+kind = "research-project"
+
+[[project]]
+repo = "roed-math/gq2-lean"
+slug = "roed-math--gq2-lean"
+kind = "research-project"
+
+[[project]]
+repo = "rupakm/leslie"
+slug = "rupakm--leslie"
+kind = "verification"
+
+[[project]]
+repo = "rwst/Subspace-Theorems"
+slug = "rwst--subspace-theorems"
+kind = "research-project"
+
+[[project]]
+repo = "sairmath/anderson4d_lean"
+slug = "sairmath--anderson4d-lean"
+kind = "research-project"
+
+[[project]]
+repo = "schildep/verified-3d-mesh-intersection"
+slug = "schildep--verified-3d-mesh-intersection"
+kind = "verification"
+
+[[project]]
+repo = "scottnarmstrong/balaban-lean"
+slug = "scottnarmstrong--balaban-lean"
+kind = "research-project"
+
+[[project]]
+repo = "scottnarmstrong/Critical2DKPZ"
+slug = "scottnarmstrong--critical2dkpz"
+kind = "research-project"
+
+[[project]]
+repo = "scottnarmstrong/DeGiorgi"
+slug = "scottnarmstrong--degiorgi"
+kind = "research-project"
+
+[[project]]
+repo = "scottnarmstrong/DOZZ"
+slug = "scottnarmstrong--dozz"
+kind = "research-project"
+
+[[project]]
+repo = "scottnarmstrong/EllipticRegularityLean"
+slug = "scottnarmstrong--ellipticregularitylean"
+kind = "research-project"
+
+[[project]]
+repo = "scottnarmstrong/Frohlich-Spencer"
+slug = "scottnarmstrong--frohlich-spencer"
+kind = "research-project"
+
+[[project]]
+repo = "scottnarmstrong/KAM-dev"
+slug = "scottnarmstrong--kam-dev"
+kind = "research-project"
+
+[[project]]
+repo = "scottnarmstrong/RegularityStructures"
+slug = "scottnarmstrong--regularitystructures"
+kind = "research-project"
+
+[[project]]
+repo = "scottnarmstrong/WaveTurbulence-dev"
+slug = "scottnarmstrong--waveturbulence-dev"
+kind = "research-project"
+
+[[project]]
+repo = "sgouezel/IETFree"
+slug = "sgouezel--ietfree"
+kind = "research-project"
+
+[[project]]
+repo = "skbaek/blanc"
+slug = "skbaek--blanc"
+kind = "verification"
+
+[[project]]
+repo = "skbaek/jaune"
+slug = "skbaek--jaune"
+kind = "verification"
+
+[[project]]
+repo = "smmercuri/zeta"
+slug = "smmercuri--zeta"
+kind = "research-project"
+
+[[project]]
+repo = "snorin239/RamseyLean"
+slug = "snorin239--ramseylean"
+kind = "research-project"
+
+[[project]]
+repo = "spitters/catcrypt-compiler"
+slug = "spitters--catcrypt-compiler"
+kind = "verification"
+
+[[project]]
+repo = "starkware-libs/formal-proofs"
+slug = "starkware-libs--formal-proofs"
+kind = "verification"
+
+[[project]]
+repo = "subfish-zhou/goldbach-lean"
+slug = "subfish-zhou--goldbach-lean"
+kind = "research-project"
+
+[[project]]
+repo = "succinctlabs/sp1-lean"
+slug = "succinctlabs--sp1-lean"
+kind = "verification"
+
+[[project]]
+repo = "taeyool/lean-flag-algebras"
+slug = "taeyool--lean-flag-algebras"
+kind = "research-project"
+
+[[project]]
+repo = "TankTechnology/CLRS-Lean"
+slug = "tanktechnology--clrs-lean"
+kind = "textbook-or-course"
+
+[[project]]
+repo = "tejasvi/smale6-six-bodies-generic"
+slug = "tejasvi--smale6-six-bodies-generic"
+kind = "research-project"
+
+[[project]]
+repo = "teorth/IEANTN"
+slug = "teorth--ieantn"
+kind = "research-project"
+
+[[project]]
+repo = "thomasahle/fast-polynomials"
+slug = "thomasahle--fast-polynomials"
+kind = "research-project"
+
+[[project]]
+repo = "timaeus-research/laplace"
+slug = "timaeus-research--laplace"
+kind = "research-project"
+
+[[project]]
+repo = "Timeroot/InverseGaloisProblem"
+slug = "timeroot--inversegaloisproblem"
+kind = "research-project"
+
+[[project]]
+repo = "tom7/noperts"
+slug = "tom7--noperts"
+kind = "research-project"
+
+[[project]]
+repo = "TomasOrtega/Sidon"
+slug = "tomasortega--sidon"
+kind = "research-project"
+
+[[project]]
+repo = "trailofbits/constructive-cryptography"
+slug = "trailofbits--constructive-cryptography"
+kind = "verification"
+
+[[project]]
+repo = "tristanbuckmaster/fluid_lean"
+slug = "tristanbuckmaster--fluid-lean"
+kind = "research-project"
+
+[[project]]
+repo = "troyjlee/graph-iso-lean"
+slug = "troyjlee--graph-iso-lean"
+kind = "research-project"
+
+[[project]]
+repo = "TUMcps/CORALean"
+slug = "tumcps--coralean"
+kind = "verification"
+
+[[project]]
+repo = "uda-lab/leray-hopf"
+slug = "uda-lab--leray-hopf"
+kind = "research-project"
+
+[[project]]
+repo = "uedakazushi/serre-markov-lean"
+slug = "uedakazushi--serre-markov-lean"
+kind = "research-project"
+
+[[project]]
+repo = "ufmg-smite/cad-formalization"
+slug = "ufmg-smite--cad-formalization"
+kind = "verification"
+
+[[project]]
+repo = "ultronozm/GGPTransversalityBounds"
+slug = "ultronozm--ggptransversalitybounds"
+kind = "research-project"
+
+[[project]]
+repo = "vaca22/grothendieck-riemann-roch"
+slug = "vaca22--grothendieck-riemann-roch"
+kind = "research-project"
+
+[[project]]
+repo = "vasnesterov/formal_podc"
+slug = "vasnesterov--formal-podc"
+kind = "research-project"
+
+[[project]]
+repo = "VCA-EPFL/graphiti"
+slug = "vca-epfl--graphiti"
+kind = "verification"
+
+[[project]]
+repo = "Verified-zkEVM/clean"
+slug = "verified-zkevm--clean"
+kind = "verification"
+
+[[project]]
+repo = "Verified-zkEVM/evm-asm"
+slug = "verified-zkevm--evm-asm"
+kind = "verification"
+
+[[project]]
+repo = "Verified-zkEVM/leanerVM"
+slug = "verified-zkevm--leanervm"
+kind = "verification"
+
+[[project]]
+repo = "Verified-zkEVM/machine-checked"
+slug = "verified-zkevm--machine-checked"
+kind = "verification"
+
+[[project]]
+repo = "VerifiedQC/ForShor"
+slug = "verifiedqc--forshor"
+kind = "verification"
+
+[[project]]
+repo = "VeriInfra-Lab/VeriTile"
+slug = "veriinfra-lab--veritile"
+kind = "verification"
+
+[[project]]
+repo = "Verilean/hesper"
+slug = "verilean--hesper"
+kind = "verification"
+
+[[project]]
+repo = "Verilean/sparkle"
+slug = "verilean--sparkle"
+kind = "verification"
+
+[[project]]
+repo = "verse-lab/velvet"
+slug = "verse-lab--velvet"
+kind = "verification"
+
+[[project]]
+repo = "Vilin97/MazurTheorem"
+slug = "vilin97--mazurtheorem"
+kind = "research-project"
+
+[[project]]
+repo = "vltanh/lean4-ambidextrous-sofa"
+slug = "vltanh--lean4-ambidextrous-sofa"
+kind = "research-project"
+
+[[project]]
+repo = "vltanh/lean4-markman25-hodge-abelian-fourfolds"
+slug = "vltanh--lean4-markman25-hodge-abelian-fourfolds"
+kind = "research-project"
+
+[[project]]
+repo = "vltanh/lean4-smoothed-octagon"
+slug = "vltanh--lean4-smoothed-octagon"
+kind = "research-project"
+
+[[project]]
+repo = "w2ll2am/diagonal-ramsey"
+slug = "w2ll2am--diagonal-ramsey"
+kind = "research-project"
+
+[[project]]
+repo = "wamlat/RamseyLean-bootstrap"
+slug = "wamlat--ramseylean-bootstrap"
+kind = "research-project"
+
+[[project]]
+repo = "WilliamCoram/PhD"
+slug = "williamcoram--phd"
+kind = "research-project"
+
+[[project]]
+repo = "wpegden/spgt"
+slug = "wpegden--spgt"
+kind = "research-project"
+
+[[project]]
+repo = "wxkj99/calabi-yau"
+slug = "wxkj99--calabi-yau"
+kind = "research-project"
+
+[[project]]
+repo = "xiyin137/OSreconstruction"
+slug = "xiyin137--osreconstruction"
+kind = "research-project"
+
+[[project]]
+repo = "yang-mills-group/OpenAI-YM-20261028"
+slug = "yang-mills-group--openai-ym-20261028"
+kind = "research-project"
+
+[[project]]
+repo = "yawara/odd-order"
+slug = "yawara--odd-order"
+kind = "research-project"
+
+[[project]]
+repo = "ylsong1024/BC4lean"
+slug = "ylsong1024--bc4lean"
+kind = "research-project"
+
+[[project]]
+repo = "zcash/ironwood"
+slug = "zcash--ironwood"
+kind = "verification"
+
+[[project]]
+repo = "zksecurity/CompStark"
+slug = "zksecurity--compstark"
+kind = "verification"
+
+[[project]]
+repo = "zksecurity/eagen-divisor-formalization"
+slug = "zksecurity--eagen-divisor-formalization"
+kind = "verification"

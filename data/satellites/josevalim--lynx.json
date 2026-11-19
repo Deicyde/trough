@@ -1,0 +1,79 @@
+{
+ "schema": "trough-satellites/v1",
+ "repo": "josevalim/lynx",
+ "slug": "josevalim--lynx",
+ "rev": "99a6db764c154207cf3b28c35409d9b56c463357",
+ "date": "2026-11-16T18:24:56Z",
+ "stable": "d06b3eabaec5975d8dd0a3e656a0353e9e374790c5806b456273d65810fcea36",
+ "license": {
+  "files": [
+   "LICENSE"
+  ],
+  "spdx": "Apache-2.0",
+  "file": "LICENSE",
+  "copyright": []
+ },
+ "readme": {
+  "file": "README.md",
+  "title": "LYNX",
+  "excerpt": "Write proofs about Erlang/Elixir programs using Lean."
+ },
+ "lean_files": 276,
+ "admitted": true,
+ "folder": "Lean",
+ "toolchain": "",
+ "mathlib": "",
+ "requirements": [],
+ "libraries": [
+  {
+   "name": "Lynx",
+   "src": "."
+  },
+  {
+   "name": "LynxTest",
+   "src": "."
+  }
+ ],
+ "library_files": 65,
+ "capped": false,
+ "declarations": 1359,
+ "sorry_files": 1,
+ "axioms": 0,
+ "closure_files": 0,
+ "closure_sorry": [],
+ "closure_axioms": 0,
+ "root_modules": [
+  {
+   "name": "Lynx",
+   "file": "Lean/Lynx.lean"
+  },
+  {
+   "name": "LynxTest",
+   "file": "Lean/LynxTest.lean"
+  }
+ ],
+ "root_closure_files": 62,
+ "root_closure_sorry": [
+  "Lean/LynxTest/Counterexample.lean"
+ ],
+ "root_closure_axioms": 0,
+ "unclosed_files": 0,
+ "headline_rule": null,
+ "headline_count": 0,
+ "headlines": [],
+ "mathlib_imports": {},
+ "import_roots": {
+  "Init": 10,
+  "Lean": 4,
+  "Std": 8
+ },
+ "uses": {
+  "Array": 10,
+  "Int": 21,
+  "List": 37,
+  "Nat": 38,
+  "Rat": 8,
+  "Std.HashMap": 1
+ },
+ "ci": "SUCCESS"
+}

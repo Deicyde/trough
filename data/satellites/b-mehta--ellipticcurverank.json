@@ -1,0 +1,142 @@
+{
+ "schema": "trough-satellites/v1",
+ "repo": "b-mehta/EllipticCurveRank",
+ "slug": "b-mehta--ellipticcurverank",
+ "rev": "47b1ca61bebae66a8afea8eb09a9d140f0edf0f6",
+ "date": "2026-09-12T14:43:31Z",
+ "stable": "528b158f4d8c57d92a762c5e8c0475be4df7094e907af1487cb5543c412f38e9",
+ "license": {
+  "files": [
+   "LICENSE"
+  ],
+  "spdx": null,
+  "file": null,
+  "copyright": []
+ },
+ "readme": {
+  "file": "README.md",
+  "title": "ECCompute",
+  "excerpt": null
+ },
+ "lean_files": 511,
+ "admitted": true,
+ "folder": "",
+ "toolchain": "v4.33.0",
+ "mathlib": "db584cd6d46c92f209a44c0f1c829460d327499d",
+ "requirements": [],
+ "libraries": [
+  {
+   "name": "ECCompute",
+   "src": "."
+  },
+  {
+   "name": "Curves",
+   "src": "."
+  }
+ ],
+ "library_files": 511,
+ "capped": false,
+ "declarations": 1737,
+ "sorry_files": 0,
+ "axioms": 0,
+ "closure_files": 26,
+ "closure_sorry": [],
+ "closure_axioms": 0,
+ "root_modules": [
+  {
+   "name": "Curves",
+   "file": "Curves.lean"
+  },
+  {
+   "name": "ECCompute",
+   "file": "ECCompute.lean"
+  }
+ ],
+ "root_closure_files": 511,
+ "root_closure_sorry": [],
+ "root_closure_axioms": 0,
+ "unclosed_files": 0,
+ "headline_rule": "readme",
+ "headline_count": 1,
+ "headlines": [
+  {
+   "name": "ECCompute.hasRankGE_of_certificate",
+   "module": "ECCompute.MainTheorem",
+   "file": "ECCompute/MainTheorem.lean",
+   "line": 79,
+   "kind": "theorem",
+   "sorry": false,
+   "names": []
+  }
+ ],
+ "mathlib_imports": {
+  "Mathlib.Algebra.BigOperators.Fin": 1,
+  "Mathlib.Algebra.CharP.Invertible": 1,
+  "Mathlib.Algebra.Field.ZMod": 7,
+  "Mathlib.Algebra.Group.Pi.Lemmas": 1,
+  "Mathlib.Algebra.Module.PID": 1,
+  "Mathlib.Algebra.Module.Torsion.Basic": 2,
+  "Mathlib.AlgebraicGeometry.EllipticCurve.Affine.Basic": 1,
+  "Mathlib.AlgebraicGeometry.EllipticCurve.Affine.Formula": 1,
+  "Mathlib.AlgebraicGeometry.EllipticCurve.Affine.Point": 4,
+  "Mathlib.AlgebraicGeometry.EllipticCurve.NormalForms": 1,
+  "Mathlib.AlgebraicGeometry.EllipticCurve.Projective.Basic": 1,
+  "Mathlib.AlgebraicGeometry.EllipticCurve.Projective.Point": 2,
+  "Mathlib.AlgebraicGeometry.EllipticCurve.VariableChange": 1,
+  "Mathlib.AlgebraicGeometry.EllipticCurve.Weierstrass": 1,
+  "Mathlib.Data.DFinsupp.FiniteInfinite": 1,
+  "Mathlib.Data.Int.GCD": 1,
+  "Mathlib.Data.List.Basic": 1,
+  "Mathlib.Data.Matrix.Basic": 1,
+  "Mathlib.Data.Matrix.Mul": 1,
+  "Mathlib.Data.Nat.Bitwise": 4,
+  "Mathlib.Data.Nat.Prime.Defs": 1,
+  "Mathlib.Data.Rat.Cast.Defs": 2,
+  "Mathlib.Data.Rat.Defs": 1,
+  "Mathlib.Data.Rat.Lemmas": 2,
+  "Mathlib.Data.ZMod.Basic": 4,
+  "Mathlib.Data.ZMod.QuotientRing": 1,
+  "Mathlib.FieldTheory.Finiteness": 1,
+  "Mathlib.GroupTheory.FiniteAbelian.Basic": 1,
+  "Mathlib.GroupTheory.Index": 1,
+  "Mathlib.LinearAlgebra.Dimension.Constructions": 1,
+  "Mathlib.LinearAlgebra.Dimension.Torsion.Finite": 1,
+  "Mathlib.LinearAlgebra.FreeModule.ModN": 2,
+  "Mathlib.LinearAlgebra.Isomorphisms": 1,
+  "Mathlib.LinearAlgebra.Matrix.ToLin": 1,
+  "Mathlib.NumberTheory.LegendreSymbol.QuadraticChar.Basic": 1,
+  "Mathlib.NumberTheory.Padics.PadicNumbers": 1,
+  "Mathlib.RingTheory.Coprime.Lemmas": 1,
+  "Mathlib.RingTheory.Int.Basic": 1,
+  "Mathlib.RingTheory.Polynomial.RationalRoot": 2,
+  "Mathlib.RingTheory.Valuation.Integers": 1,
+  "Mathlib.Tactic.Linarith": 1,
+  "Mathlib.Tactic.Qify": 2
+ },
+ "import_roots": {
+  "Mathlib": 22
+ },
+ "uses": {
+  "Algebra": 1,
+  "Array": 2,
+  "Field": 3,
+  "Finset": 2,
+  "Int": 3,
+  "IsCoprime": 2,
+  "LinearIndependent": 2,
+  "LinearMap.ker": 1,
+  "LinearMap.range": 1,
+  "List": 11,
+  "Matrix": 1,
+  "Module": 3,
+  "Module.equiv_free_prod_directSum": 1,
+  "Nat": 4,
+  "Polynomial": 3,
+  "Prime": 1,
+  "Rat": 4,
+  "Set": 2,
+  "Submodule.span": 1,
+  "fderiv": 4
+ },
+ "ci": "SUCCESS"
+}

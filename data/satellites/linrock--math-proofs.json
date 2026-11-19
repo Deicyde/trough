@@ -1,0 +1,100 @@
+{
+ "schema": "trough-satellites/v1",
+ "repo": "linrock/math-proofs",
+ "slug": "linrock--math-proofs",
+ "rev": "994b4c04dc4cf77c4b27364e27f179622104c681",
+ "date": "2026-10-25T20:48:31Z",
+ "stable": "2a38bc803b26fbc8317de8c51d5fb3138ddfec9750090750575f0ee8b00674c9",
+ "license": {
+  "files": [
+   "LICENSE"
+  ],
+  "spdx": "Apache-2.0",
+  "file": "LICENSE",
+  "copyright": []
+ },
+ "readme": {
+  "file": "README.md",
+  "title": "Math proofs",
+  "excerpt": "Standalone [Lean 4](https://lean-lang.org/) proofs of [Erdős problems](https://www.erdosproblems.com/), packaged as pinned [Lake](https://lean-lang.org/doc/reference/latest/Build-Tools-and-Distribution/Lake/) projects for [Palomar](https://palomar-registry.org/) submission. Each project has a statement-only `Challenge.lean`, a proved `Solution.lean`, an `AxiomAudit.lean`, and build instructions."
+ },
+ "lean_files": 863,
+ "admitted": true,
+ "folder": "erdos-10",
+ "toolchain": "v4.35.0-rc2",
+ "mathlib": "065356127b1dc0016f66b7283ce0ce2c4055aa55",
+ "requirements": [],
+ "libraries": [
+  {
+   "name": "Proofs10",
+   "src": "Proofs"
+  },
+  {
+   "name": "Challenge",
+   "src": "."
+  },
+  {
+   "name": "Solution",
+   "src": "."
+  },
+  {
+   "name": "AxiomAudit",
+   "src": "."
+  },
+  {
+   "name": "Statement",
+   "src": "."
+  }
+ ],
+ "library_files": 5,
+ "capped": false,
+ "declarations": 243,
+ "sorry_files": 1,
+ "axioms": 0,
+ "closure_files": 0,
+ "closure_sorry": [],
+ "closure_axioms": 0,
+ "root_modules": [
+  {
+   "name": "AxiomAudit",
+   "file": "erdos-10/AxiomAudit.lean"
+  },
+  {
+   "name": "Challenge",
+   "file": "erdos-10/Challenge.lean"
+  },
+  {
+   "name": "PrimeAndTwoPowersCovering10",
+   "file": "erdos-10/Proofs/PrimeAndTwoPowersCovering10.lean"
+  },
+  {
+   "name": "Solution",
+   "file": "erdos-10/Solution.lean"
+  },
+  {
+   "name": "Statement",
+   "file": "erdos-10/Statement.lean"
+  }
+ ],
+ "root_closure_files": 5,
+ "root_closure_sorry": [
+  "erdos-10/Challenge.lean"
+ ],
+ "root_closure_axioms": 0,
+ "unclosed_files": 0,
+ "headline_rule": null,
+ "headline_count": 0,
+ "headlines": [],
+ "mathlib_imports": {},
+ "import_roots": {
+  "Mathlib": 3
+ },
+ "uses": {
+  "Filter": 1,
+  "Finset": 1,
+  "List": 1,
+  "Multiset": 3,
+  "Set": 3
+ },
+ "ci": "SUCCESS"
+}

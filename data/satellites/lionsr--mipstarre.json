@@ -1,0 +1,221 @@
+{
+ "schema": "trough-satellites/v1",
+ "repo": "LionSR/MIPStarRE",
+ "slug": "lionsr--mipstarre",
+ "rev": "6203928569d45956b9c3e1f808e8e1a9f0116f70",
+ "date": "2026-11-15T05:34:47Z",
+ "stable": "7ee41f13e957798a2a83cb592f62267ea72850f5e27152d753526ba0bff296fa",
+ "license": {
+  "files": [
+   "LICENSE"
+  ],
+  "spdx": "Apache-2.0",
+  "file": "LICENSE",
+  "copyright": []
+ },
+ "readme": {
+  "file": "README.md",
+  "title": "MIPStarRE",
+  "excerpt": "Formalization project for mathematics around $\\mathrm{MIP}^*=\\mathrm{RE}$."
+ },
+ "lean_files": 341,
+ "admitted": true,
+ "folder": "",
+ "toolchain": "v4.35.0-rc2",
+ "mathlib": "065356127b1dc0016f66b7283ce0ce2c4055aa55",
+ "requirements": [],
+ "libraries": [
+  {
+   "name": "MIPStarRE",
+   "src": "."
+  }
+ ],
+ "library_files": 338,
+ "capped": false,
+ "declarations": 3545,
+ "sorry_files": 1,
+ "axioms": 0,
+ "closure_files": 323,
+ "closure_sorry": [],
+ "closure_axioms": 0,
+ "root_modules": [
+  {
+   "name": "MIPStarRE",
+   "file": "MIPStarRE.lean"
+  }
+ ],
+ "root_closure_files": 337,
+ "root_closure_sorry": [],
+ "root_closure_axioms": 0,
+ "unclosed_files": 0,
+ "headline_rule": "blueprint",
+ "headline_count": 20,
+ "headlines": [
+  {
+   "name": "MIPStarRE.LDT.Test.TwoProverClassicalLIDPassCondition",
+   "module": "MIPStarRE.LDT.Test.Classical",
+   "file": "MIPStarRE/LDT/Test/Classical.lean",
+   "line": 345,
+   "kind": "def",
+   "sorry": false,
+   "names": []
+  },
+  {
+   "name": "MIPStarRE.LDT.Test.PolishchukSpielmanClassicalSoundnessStatement",
+   "module": "MIPStarRE.LDT.Test.Classical",
+   "file": "MIPStarRE/LDT/Test/Classical.lean",
+   "line": 365,
+   "kind": "def",
+   "sorry": false,
+   "names": []
+  },
+  {
+   "name": "MIPStarRE.LDT.Test.classicalTestSoundness",
+   "module": "MIPStarRE.LDT.Test.Classical",
+   "file": "MIPStarRE/LDT/Test/Classical.lean",
+   "line": 380,
+   "kind": "theorem",
+   "sorry": false,
+   "names": []
+  },
+  {
+   "name": "MIPStarRE.LDT.Test.TwoProverClassicalLIDStrategy.lowIndividualDegreeAcceptanceProbability_eq_branchAverage",
+   "module": "MIPStarRE.LDT.Test.Classical",
+   "file": "MIPStarRE/LDT/Test/Classical.lean",
+   "line": 277,
+   "kind": "theorem",
+   "sorry": false,
+   "names": []
+  },
+  {
+   "name": "MIPStarRE.LDT.ProjStrat.roleRegisterSymmStrategy_is_good_three_mul",
+   "module": "MIPStarRE.LDT.Test.StrategyBiProjRoleAverage.Final",
+   "file": "MIPStarRE/LDT/Test/StrategyBiProjRoleAverage/Final.lean",
+   "line": 136,
+   "kind": "theorem",
+   "sorry": false,
+   "names": []
+  },
+  {
+   "name": "MIPStarRE.LDT.Test.mainFormalConclusion",
+   "module": "MIPStarRE.LDT.Test.MainTheorem.MainFormal",
+   "file": "MIPStarRE/LDT/Test/MainTheorem/MainFormal.lean",
+   "line": 262,
+   "kind": "theorem",
+   "sorry": false,
+   "names": [
+    "Polynomial"
+   ]
+  },
+  {
+   "name": "MIPStarRE.LDT.Preliminaries.polynomialAgreement_avg_le_mdq",
+   "module": "MIPStarRE.LDT.Preliminaries.PolynomialAgreement",
+   "file": "MIPStarRE/LDT/Preliminaries/PolynomialAgreement.lean",
+   "line": 104,
+   "kind": "lemma",
+   "sorry": false,
+   "names": [
+    "Polynomial"
+   ]
+  },
+  {
+   "name": "MIPStarRE.LDT.Preliminaries.completionMissingMassBound",
+   "module": "MIPStarRE.LDT.Preliminaries.SelfConsistency.Core",
+   "file": "MIPStarRE/LDT/Preliminaries/SelfConsistency/Core.lean",
+   "line": 76,
+   "kind": "theorem",
+   "sorry": false,
+   "names": []
+  }
+ ],
+ "mathlib_imports": {
+  "Mathlib.Algebra.BigOperators.Group.Finset.Sigma": 1,
+  "Mathlib.Algebra.BigOperators.Ring.Finset": 1,
+  "Mathlib.Algebra.MvPolynomial.CommRing": 1,
+  "Mathlib.Algebra.MvPolynomial.SchwartzZippel": 1,
+  "Mathlib.Algebra.Order.BigOperators.Group.Finset": 1,
+  "Mathlib.Algebra.Polynomial.Roots": 1,
+  "Mathlib.Analysis.CStarAlgebra.ContinuousFunctionalCalculus.Order": 1,
+  "Mathlib.Analysis.Complex.Basic": 1,
+  "Mathlib.Analysis.Convex.Cone.Dual": 1,
+  "Mathlib.Analysis.Convex.SpecificFunctions.Pow": 3,
+  "Mathlib.Analysis.Fourier.FiniteAbelian.Orthogonality": 1,
+  "Mathlib.Analysis.Fourier.ZMod": 1,
+  "Mathlib.Analysis.InnerProductSpace.Adjoint": 1,
+  "Mathlib.Analysis.InnerProductSpace.GramMatrix": 1,
+  "Mathlib.Analysis.InnerProductSpace.PiL2": 1,
+  "Mathlib.Analysis.LocallyConvex.WithSeminorms": 1,
+  "Mathlib.Analysis.Matrix.HermitianFunctionalCalculus": 1,
+  "Mathlib.Analysis.Matrix.Normed": 1,
+  "Mathlib.Analysis.Matrix.Spectrum": 2,
+  "Mathlib.Analysis.MeanInequalitiesPow": 1,
+  "Mathlib.Analysis.Real.Sqrt": 1,
+  "Mathlib.Analysis.SpecialFunctions.Complex.CircleAddChar": 1,
+  "Mathlib.Analysis.SpecialFunctions.Pow.Real": 1,
+  "Mathlib.Data.Finset.Max": 1,
+  "Mathlib.Data.Finset.Powerset": 1,
+  "Mathlib.Data.Fintype.EquivFin": 1,
+  "Mathlib.Data.Nat.Choose.Sum": 1,
+  "Mathlib.NumberTheory.LegendreSymbol.AddCharacter": 1,
+  "Mathlib.Probability.Distributions.Binomial": 1,
+  "Mathlib.Probability.Moments.SubGaussian": 1,
+  "Mathlib.Probability.ProbabilityMassFunction.Integrals": 1,
+  "Mathlib.Probability.ProbabilityMassFunction.Monad": 1,
+  "Mathlib.RingTheory.MvPolynomial.Basic": 1,
+  "Mathlib.Tactic.Attr.Register": 1,
+  "Mathlib.Topology.Algebra.Module.ContinuousLinearMap.PiProd": 1,
+  "Mathlib.Topology.Bases": 1,
+  "Mathlib.Topology.Instances.Matrix": 1
+ },
+ "import_roots": {
+  "Lean": 2,
+  "Mathlib": 27
+ },
+ "uses": {
+  "Algebra": 1,
+  "CharP": 1,
+  "Complex.exp": 1,
+  "Continuous": 4,
+  "ContinuousSMul": 1,
+  "Distribution": 74,
+  "Field": 5,
+  "Filter": 2,
+  "Filter.Tendsto": 1,
+  "FiniteDimensional": 2,
+  "Finset": 70,
+  "Finset.sum_range_id": 1,
+  "InnerProductSpace": 3,
+  "IsCompact": 1,
+  "IsSelfAdjoint": 6,
+  "LinearMap.range": 1,
+  "List": 2,
+  "LocallyConvexSpace": 2,
+  "Matrix": 282,
+  "Matrix.rank": 2,
+  "Matrix.unitaryGroup": 8,
+  "MeasurableSpace": 1,
+  "MeasureTheory.Integrable": 1,
+  "MeasureTheory.Measure": 1,
+  "Module": 9,
+  "MvPolynomial": 5,
+  "Nat": 5,
+  "NormedSpace": 1,
+  "OrthonormalBasis": 1,
+  "PMF": 3,
+  "Polynomial": 131,
+  "Polynomial.eval": 4,
+  "ProbabilityTheory.bernoulliMeasure": 1,
+  "ProbabilityTheory.binomial": 1,
+  "ProbabilityTheory.cond": 1,
+  "Real.exp": 21,
+  "Real.log": 1,
+  "Real.rpow": 47,
+  "Set": 8,
+  "StrongDual": 3,
+  "TopologicalSpace": 1,
+  "add_pow": 1,
+  "ringChar": 1,
+  "tendsto_subseq_of_frequently_bounded": 1
+ },
+ "ci": null
+}

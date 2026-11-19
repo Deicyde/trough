@@ -1,0 +1,199 @@
+{
+ "schema": "trough-satellites/v1",
+ "repo": "skbaek/jaune",
+ "slug": "skbaek--jaune",
+ "rev": "ba15f397195d9c73c89aec7bfc179e0f32a3e8dc",
+ "date": "2026-11-18T05:02:53Z",
+ "stable": "18a1003636e93cbb87575544bf54fc03ab9b42a6a49f54781e1e45a427de9a82",
+ "license": {
+  "files": [
+   "LICENSE"
+  ],
+  "spdx": "MIT",
+  "file": "LICENSE",
+  "copyright": [
+   "Copyright (c) 2025 skbaek"
+  ]
+ },
+ "readme": {
+  "file": "README.md",
+  "title": "Jaune",
+  "excerpt": "**[skbaek.github.io/jaune](https://skbaek.github.io/jaune/)** — the guided tour: claim, evidence, trust boundaries, roadmap. **[Blanc](https://github.com/skbaek/blanc)** ([site](https://skbaek.github.io/blanc/)) — the sibling project: a verification stack built on these semantics, which proves theorems about Ethereum bytecode as it is deployed and offers a native contract language with a verified compiler. It is Jaune's end-to-end case study."
+ },
+ "lean_files": 265,
+ "admitted": true,
+ "folder": "",
+ "toolchain": "v4.35.0",
+ "mathlib": "56a005855ea17e0b0958f73ec801ae140b0a1679",
+ "requirements": [],
+ "libraries": [
+  {
+   "name": "Jaune",
+   "src": "."
+  },
+  {
+   "name": "JauneChecks",
+   "src": "."
+  },
+  {
+   "name": "Examples",
+   "src": "."
+  },
+  {
+   "name": "Assurance",
+   "src": "scripts"
+  },
+  {
+   "name": "JauneConsensus",
+   "src": "."
+  },
+  {
+   "name": "ConsensusAssurance",
+   "src": "scripts"
+  },
+  {
+   "name": "NamingReferenceCore",
+   "src": "scripts"
+  },
+  {
+   "name": "NamingToolTests",
+   "src": "scripts/tests/naming"
+  }
+ ],
+ "library_files": 243,
+ "capped": false,
+ "declarations": 7700,
+ "sorry_files": 1,
+ "axioms": 3,
+ "closure_files": 29,
+ "closure_sorry": [],
+ "closure_axioms": 0,
+ "root_modules": [
+  {
+   "name": "AxiomAudit",
+   "file": "scripts/AxiomAudit.lean"
+  },
+  {
+   "name": "ConsensusUnionAxioms",
+   "file": "scripts/ConsensusUnionAxioms.lean"
+  },
+  {
+   "name": "Examples",
+   "file": "Examples.lean"
+  },
+  {
+   "name": "ExecutionAxioms",
+   "file": "scripts/ExecutionAxioms.lean"
+  },
+  {
+   "name": "Jaune",
+   "file": "Jaune.lean"
+  },
+  {
+   "name": "JauneChecks",
+   "file": "JauneChecks.lean"
+  },
+  {
+   "name": "JauneConsensus",
+   "file": "JauneConsensus.lean"
+  },
+  {
+   "name": "JauneUnionAxioms",
+   "file": "scripts/JauneUnionAxioms.lean"
+  },
+  {
+   "name": "NamingReferencesCore",
+   "file": "scripts/NamingReferencesCore.lean"
+  },
+  {
+   "name": "Pilot",
+   "file": "scripts/tests/naming/Pilot.lean"
+  },
+  {
+   "name": "RealSharedField",
+   "file": "scripts/tests/naming/RealSharedField.lean"
+  },
+  {
+   "name": "UnionAxiomsControls",
+   "file": "scripts/UnionAxiomsControls.lean"
+  },
+  {
+   "name": "UnionAxiomsFixture.Bad",
+   "file": "scripts/UnionAxiomsFixture/Bad.lean"
+  },
+  {
+   "name": "UnionAxiomsFixture.Dep",
+   "file": "scripts/UnionAxiomsFixture/Dep.lean"
+  },
+  {
+   "name": "UnionAxiomsFixture.Good",
+   "file": "scripts/UnionAxiomsFixture/Good.lean"
+  },
+  {
+   "name": "UnionAxiomsFixture.ViaDep",
+   "file": "scripts/UnionAxiomsFixture/ViaDep.lean"
+  }
+ ],
+ "root_closure_files": 243,
+ "root_closure_sorry": [
+  "JauneConsensus/Harness/Yaml.lean"
+ ],
+ "root_closure_axioms": 3,
+ "unclosed_files": 0,
+ "headline_rule": "readme",
+ "headline_count": 3,
+ "headlines": [
+  {
+   "name": "Examples.Arithmetic.result",
+   "module": "Examples.Arithmetic",
+   "file": "Examples/Arithmetic.lean",
+   "line": 192,
+   "kind": "theorem",
+   "sorry": false,
+   "names": [
+    "List",
+    "Nat"
+   ]
+  },
+  {
+   "name": "Jaune.Bytes.sha256_eq_fips",
+   "module": "Jaune.SHA256Spec",
+   "file": "Jaune/SHA256Spec.lean",
+   "line": 740,
+   "kind": "theorem",
+   "sorry": false,
+   "names": []
+  },
+  {
+   "name": "Jaune.Bytes.keccak_eq_fips",
+   "module": "Jaune.KeccakSpec",
+   "file": "Jaune/KeccakSpec.lean",
+   "line": 962,
+   "kind": "theorem",
+   "sorry": false,
+   "names": []
+  }
+ ],
+ "mathlib_imports": {
+  "Mathlib.Data.List.Chain": 1,
+  "Mathlib.Data.List.Lemmas": 1,
+  "Mathlib.Data.List.TakeDrop": 1,
+  "Mathlib.Data.List.TakeWhile": 1,
+  "Mathlib.Data.Nat.Basic": 1,
+  "Mathlib.Data.UInt": 1,
+  "Mathlib.Tactic.NormNum": 1
+ },
+ "import_roots": {
+  "Lean": 6,
+  "Mathlib": 2,
+  "Std": 2
+ },
+ "uses": {
+  "Array": 75,
+  "Int": 13,
+  "List": 139,
+  "Nat": 188,
+  "Std.HashMap": 2
+ },
+ "ci": "FAILURE"
+}

@@ -1,0 +1,260 @@
+{
+ "schema": "trough-satellites/v1",
+ "repo": "tejasvi/smale6-six-bodies-generic",
+ "slug": "tejasvi--smale6-six-bodies-generic",
+ "rev": "84bbcf276d029fdf31375c4a21c6a7e136955e51",
+ "date": "2026-10-19T21:43:20Z",
+ "stable": "d71b7eece5f4eb7f0008a462e01aa7fe73d71c24eaa037c075cf93d3c2f5dded",
+ "license": {
+  "files": [
+   "LICENSE",
+   "LICENSE-CC-BY-4.0.txt"
+  ],
+  "spdx": "Apache-2.0",
+  "file": "LICENSE",
+  "copyright": []
+ },
+ "readme": {
+  "file": "README.md",
+  "title": "Smale's sixth problem for six bodies in the plane: finiteness of central configurations for generic masses, with a proof formalized in Lean",
+  "excerpt": "Programs and certificates for the paper of the same title by Tejasvi Singh Tomar (ORCID 0000-0003-4668-3639)."
+ },
+ "lean_files": 5586,
+ "admitted": true,
+ "folder": "lean/full",
+ "toolchain": "v4.35.0-rc3",
+ "mathlib": "c55e6e786f49471c72fbddbec5415808896aec1e",
+ "requirements": [],
+ "libraries": [
+  {
+   "name": "CC6Full",
+   "src": "."
+  }
+ ],
+ "library_files": 66,
+ "capped": false,
+ "declarations": 1744,
+ "sorry_files": 0,
+ "axioms": 0,
+ "closure_files": 39,
+ "closure_sorry": [],
+ "closure_axioms": 0,
+ "root_modules": [
+  {
+   "name": "CC6Full",
+   "file": "lean/full/CC6Full.lean"
+  }
+ ],
+ "root_closure_files": 66,
+ "root_closure_sorry": [],
+ "root_closure_axioms": 0,
+ "unclosed_files": 0,
+ "headline_rule": "readme",
+ "headline_count": 7,
+ "headlines": [
+  {
+   "name": "CC6Full.elim_integral_int",
+   "module": "CC6Full.Algebra.Elim",
+   "file": "lean/full/CC6Full/Algebra/Elim.lean",
+   "line": 331,
+   "kind": "theorem",
+   "sorry": false,
+   "names": [
+    "MvPolynomial",
+    "Set"
+   ]
+  },
+  {
+   "name": "CC6Full.macaulay_transfer",
+   "module": "CC6Full.Algebra.Macaulay",
+   "file": "lean/full/CC6Full/Algebra/Macaulay.lean",
+   "line": 348,
+   "kind": "theorem",
+   "sorry": false,
+   "names": [
+    "MvPolynomial"
+   ]
+  },
+  {
+   "name": "CC6Full.biMacaulay_transfer_poly",
+   "module": "CC6Full.Algebra.MacaulayBi",
+   "file": "lean/full/CC6Full/Algebra/MacaulayBi.lean",
+   "line": 707,
+   "kind": "theorem",
+   "sorry": false,
+   "names": [
+    "Field",
+    "MvPolynomial"
+   ]
+  },
+  {
+   "name": "CC6Full.Six.d64_poly_of_noZero",
+   "module": "CC6Full.Six.D64NoZero",
+   "file": "lean/full/CC6Full/Six/D64NoZero.lean",
+   "line": 281,
+   "kind": "theorem",
+   "sorry": false,
+   "names": [
+    "MvPolynomial"
+   ]
+  },
+  {
+   "name": "CC6Full.goodred",
+   "module": "CC6Full.Algebra.GoodRed",
+   "file": "lean/full/CC6Full/Algebra/GoodRed.lean",
+   "line": 480,
+   "kind": "theorem",
+   "sorry": false,
+   "names": [
+    "Finset",
+    "Ideal",
+    "MvPolynomial"
+   ]
+  },
+  {
+   "name": "CC6Full.goodred_torus_opt",
+   "module": "CC6Full.Algebra.GoodRedTorus",
+   "file": "lean/full/CC6Full/Algebra/GoodRedTorus.lean",
+   "line": 192,
+   "kind": "theorem",
+   "sorry": false,
+   "names": [
+    "Finset",
+    "Ideal",
+    "MvPolynomial"
+   ]
+  },
+  {
+   "name": "CC6Full.exists_germ",
+   "module": "CC6Full.Curve.GermOfPlace",
+   "file": "lean/full/CC6Full/Curve/GermOfPlace.lean",
+   "line": 402,
+   "kind": "theorem",
+   "sorry": false,
+   "names": []
+  }
+ ],
+ "mathlib_imports": {
+  "Mathlib.Algebra.BigOperators.Field": 1,
+  "Mathlib.Algebra.BigOperators.Fin": 1,
+  "Mathlib.Algebra.BigOperators.Ring.Finset": 1,
+  "Mathlib.Algebra.Field.ZMod": 2,
+  "Mathlib.Algebra.Module.Projective": 1,
+  "Mathlib.Algebra.MvPolynomial.Basic": 1,
+  "Mathlib.Algebra.MvPolynomial.Eval": 3,
+  "Mathlib.Algebra.MvPolynomial.Funext": 2,
+  "Mathlib.Algebra.MvPolynomial.Rename": 2,
+  "Mathlib.Algebra.Order.Antidiag.Finsupp": 1,
+  "Mathlib.Algebra.Order.Group.Units": 1,
+  "Mathlib.Algebra.Order.Monoid.TypeTags": 1,
+  "Mathlib.Algebra.Polynomial.Eval.Degree": 1,
+  "Mathlib.Algebra.Polynomial.Roots": 1,
+  "Mathlib.Algebra.Polynomial.Taylor": 1,
+  "Mathlib.Analysis.Complex.Basic": 3,
+  "Mathlib.Analysis.Complex.Polynomial.Basic": 4,
+  "Mathlib.Analysis.SpecialFunctions.Pow.Real": 2,
+  "Mathlib.Basic.Complex.Basic": 1,
+  "Mathlib.Data.Fintype.Sum": 1,
+  "Mathlib.Data.Matrix.Mul": 1,
+  "Mathlib.Data.Set.Card": 1,
+  "Mathlib.Data.ZMod.Basic": 1,
+  "Mathlib.FieldTheory.IntermediateField.Adjoin.Algebra": 1,
+  "Mathlib.FieldTheory.IsAlgClosed.Basic": 2,
+  "Mathlib.LinearAlgebra.Dimension.Constructions": 1,
+  "Mathlib.LinearAlgebra.Dimension.Free": 1,
+  "Mathlib.LinearAlgebra.Dimension.FreeAndStrongRankCondition": 1,
+  "Mathlib.LinearAlgebra.FiniteDimensional.Lemmas": 1,
+  "Mathlib.LinearAlgebra.Finsupp.LinearCombination": 1,
+  "Mathlib.LinearAlgebra.FreeModule.PID": 1,
+  "Mathlib.LinearAlgebra.Matrix.NonsingularInverse": 1,
+  "Mathlib.LinearAlgebra.Matrix.Rank": 1,
+  "Mathlib.LinearAlgebra.Matrix.ToLin": 1,
+  "Mathlib.Order.Interval.Set.Infinite": 1,
+  "Mathlib.RingTheory.Adjoin.Polynomial.Transcendental": 1,
+  "Mathlib.RingTheory.AlgebraicIndependent.TranscendenceBasis": 1,
+  "Mathlib.RingTheory.AlgebraicIndependent.Transcendental": 1,
+  "Mathlib.RingTheory.DedekindDomain.AdicValuation": 1,
+  "Mathlib.RingTheory.DedekindDomain.Basic": 1,
+  "Mathlib.RingTheory.DedekindDomain.IntegralClosure": 1,
+  "Mathlib.RingTheory.FiniteType": 2,
+  "Mathlib.RingTheory.HahnSeries.Multiplication": 1,
+  "Mathlib.RingTheory.Ideal.GoingUp": 2,
+  "Mathlib.RingTheory.Ideal.HasGoingUp": 1,
+  "Mathlib.RingTheory.Ideal.MinimalPrime.Noetherian": 2,
+  "Mathlib.RingTheory.Ideal.Quotient.Basic": 1,
+  "Mathlib.RingTheory.Ideal.Span": 1,
+  "Mathlib.RingTheory.IntegralClosure.IsIntegral.Defs": 1,
+  "Mathlib.RingTheory.IntegralClosure.IsIntegralClosure.Basic": 2,
+  "Mathlib.RingTheory.KrullDimension.Basic": 1,
+  "Mathlib.RingTheory.KrullDimension.Field": 1,
+  "Mathlib.RingTheory.KrullDimension.NonZeroDivisors": 1,
+  "Mathlib.RingTheory.KrullDimension.Zero": 1,
+  "Mathlib.RingTheory.LaurentSeries": 1,
+  "Mathlib.RingTheory.LocalRing.ResidueField.Basic": 1,
+  "Mathlib.RingTheory.Localization.AtPrime.Basic": 1,
+  "Mathlib.RingTheory.Localization.Away.Basic": 1,
+  "Mathlib.RingTheory.Localization.FractionRing": 3,
+  "Mathlib.RingTheory.Localization.Submodule": 1,
+  "Mathlib.RingTheory.MvPolynomial.Basic": 1,
+  "Mathlib.RingTheory.MvPolynomial.Homogeneous": 2,
+  "Mathlib.RingTheory.MvPolynomial.Localization": 1,
+  "Mathlib.RingTheory.MvPolynomial.Tower": 3,
+  "Mathlib.RingTheory.MvPolynomial.WeightedHomogeneous": 1,
+  "Mathlib.RingTheory.Nakayama": 1,
+  "Mathlib.RingTheory.NoetherNormalization": 1,
+  "Mathlib.RingTheory.Nullstellensatz": 2,
+  "Mathlib.RingTheory.Polynomial.Basic": 2,
+  "Mathlib.RingTheory.PowerSeries.Derivative": 1,
+  "Mathlib.RingTheory.PowerSeries.Trunc": 1,
+  "Mathlib.RingTheory.QuasiFinite.Basic": 1,
+  "Mathlib.RingTheory.RamificationInertia.Basic": 1,
+  "Mathlib.RingTheory.RootsOfUnity.Complex": 2,
+  "Mathlib.RingTheory.Valuation.Basic": 2,
+  "Mathlib.RingTheory.Valuation.LocalSubring": 1,
+  "Mathlib.RingTheory.Valuation.ValuationSubring": 1,
+  "Mathlib.Tactic.ComputeDegree": 1,
+  "Mathlib.Tactic.FieldSimp": 1,
+  "Mathlib.Tactic.Linarith": 1,
+  "Mathlib.Tactic.LinearCombination": 3,
+  "Mathlib.Tactic.NormNum.Prime": 2
+ },
+ "import_roots": {
+  "Mathlib": 32
+ },
+ "uses": {
+  "Algebra": 13,
+  "Algebra.IsAlgebraic": 1,
+  "CharP": 1,
+  "Complex.exp": 2,
+  "Equiv.Perm": 5,
+  "Field": 14,
+  "FiniteDimensional": 3,
+  "Finset": 50,
+  "Ideal": 8,
+  "Ideal.exists_ideal_over_prime_of_isIntegral_of_isDomain": 2,
+  "Invertible": 1,
+  "IsAlgClosed": 1,
+  "IsAlgebraic": 1,
+  "IsFractionRing": 2,
+  "IsLocalRing": 3,
+  "IsNoetherianRing": 3,
+  "LinearIndependent": 3,
+  "LinearMap.ker": 1,
+  "LinearMap.range": 1,
+  "List": 6,
+  "Matrix": 3,
+  "Multiset": 1,
+  "MvPolynomial": 39,
+  "MvPolynomial.vanishingIdeal_zeroLocus_eq_radical": 1,
+  "Polynomial": 16,
+  "Polynomial.eval": 1,
+  "PowerSeries": 2,
+  "PrimeSpectrum": 1,
+  "RingHom.quotientKerEquivOfSurjective": 1,
+  "Set": 13,
+  "Submodule.span": 7,
+  "Subring": 3,
+  "Transcendental": 3
+ },
+ "ci": null
+}

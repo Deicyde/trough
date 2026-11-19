@@ -1,0 +1,839 @@
+{
+ "schema": "trough-satellites/v1",
+ "repo": "mit-pdos/perennial",
+ "slug": "mit-pdos--perennial",
+ "rev": "6d365ee1aac396061ed93e644a7f5aa53228ced9",
+ "date": "2026-11-17T19:40:27Z",
+ "stable": "1b00193775a5b760e45c42829a3963c7e86e4eb7693d8a200cea35c254def39a",
+ "license": {
+  "files": [],
+  "spdx": null,
+  "file": null,
+  "copyright": []
+ },
+ "readme": {
+  "file": "README.md",
+  "title": "Perennial",
+  "excerpt": null
+ },
+ "lean_files": 1682,
+ "admitted": true,
+ "folder": "",
+ "toolchain": "v4.34.1",
+ "mathlib": "",
+ "requirements": [
+  {
+   "name": "iris",
+   "url": "https://github.com/leanprover-community/iris-lean",
+   "rev": "6d6544a4394c1f89ce43b26a35f09de9b2158bc9"
+  }
+ ],
+ "libraries": [
+  {
+   "name": "Perennial",
+   "src": "."
+  },
+  {
+   "name": "PerennialMeta",
+   "src": "."
+  }
+ ],
+ "library_files": 1645,
+ "capped": false,
+ "declarations": 30246,
+ "sorry_files": 15,
+ "axioms": 3722,
+ "closure_files": 332,
+ "closure_sorry": [
+  "Perennial/GeneratedProof/strings.lean"
+ ],
+ "closure_axioms": 21,
+ "root_modules": [
+  {
+   "name": "Perennial",
+   "file": "Perennial.lean"
+  },
+  {
+   "name": "Perennial.Algebra.BigOp",
+   "file": "Perennial/Algebra/BigOp.lean"
+  },
+  {
+   "name": "Perennial.Algebra.BigOp.BigSepL",
+   "file": "Perennial/Algebra/BigOp/BigSepL.lean"
+  },
+  {
+   "name": "Perennial.Algebra.BigOp.BigSepM",
+   "file": "Perennial/Algebra/BigOp/BigSepM.lean"
+  },
+  {
+   "name": "Perennial.Algebra.BigOp.BigSepML",
+   "file": "Perennial/Algebra/BigOp/BigSepML.lean"
+  },
+  {
+   "name": "Perennial.Algebra.BigOp.BigSepS",
+   "file": "Perennial/Algebra/BigOp/BigSepS.lean"
+  },
+  {
+   "name": "Perennial.Algebra.NaHeap",
+   "file": "Perennial/Algebra/NaHeap.lean"
+  },
+  {
+   "name": "Perennial.Code.github_com.goose_lang.primitive",
+   "file": "Perennial/Code/github_com/goose_lang/primitive.lean"
+  },
+  {
+   "name": "Perennial.Code.github_com.mit_pdos.perennial.goose.model.channel",
+   "file": "Perennial/Code/github_com/mit_pdos/perennial/goose/model/channel.lean"
+  },
+  {
+   "name": "Perennial.Code.github_com.mit_pdos.perennial.goose.model.pool",
+   "file": "Perennial/Code/github_com/mit_pdos/perennial/goose/model/pool.lean"
+  },
+  {
+   "name": "Perennial.Code.github_com.mit_pdos.perennial.goose.model.strings",
+   "file": "Perennial/Code/github_com/mit_pdos/perennial/goose/model/strings.lean"
+  },
+  {
+   "name": "Perennial.GeneratedProof.github_com.goose_lang.primitive",
+   "file": "Perennial/GeneratedProof/github_com/goose_lang/primitive.lean"
+  },
+  {
+   "name": "Perennial.GeneratedProof.github_com.mit_pdos.perennial.goose.model.channel",
+   "file": "Perennial/GeneratedProof/github_com/mit_pdos/perennial/goose/model/channel.lean"
+  },
+  {
+   "name": "Perennial.GeneratedProof.github_com.mit_pdos.perennial.goose.model.strings",
+   "file": "Perennial/GeneratedProof/github_com/mit_pdos/perennial/goose/model/strings.lean"
+  },
+  {
+   "name": "Perennial.Ghost",
+   "file": "Perennial/Ghost.lean"
+  },
+  {
+   "name": "Perennial.Ghost.All",
+   "file": "Perennial/Ghost/All.lean"
+  },
+  {
+   "name": "Perennial.Ghost.AuthSet",
+   "file": "Perennial/Ghost/AuthSet.lean"
+  },
+  {
+   "name": "Perennial.Ghost.Countable",
+   "file": "Perennial/Ghost/Countable.lean"
+  },
+  {
+   "name": "Perennial.Ghost.DGhostVar",
+   "file": "Perennial/Ghost/DGhostVar.lean"
+  },
+  {
+   "name": "Perennial.Ghost.GhostMap",
+   "file": "Perennial/Ghost/GhostMap.lean"
+  },
+  {
+   "name": "Perennial.Ghost.GhostVar",
+   "file": "Perennial/Ghost/GhostVar.lean"
+  },
+  {
+   "name": "Perennial.Ghost.MonoList",
+   "file": "Perennial/Ghost/MonoList.lean"
+  },
+  {
+   "name": "Perennial.Ghost.MonoNat",
+   "file": "Perennial/Ghost/MonoNat.lean"
+  },
+  {
+   "name": "Perennial.Ghost.Own",
+   "file": "Perennial/Ghost/Own.lean"
+  },
+  {
+   "name": "Perennial.Ghost.SavedProp",
+   "file": "Perennial/Ghost/SavedProp.lean"
+  },
+  {
+   "name": "Perennial.Ghost.Token",
+   "file": "Perennial/Ghost/Token.lean"
+  },
+  {
+   "name": "Perennial.Golang.Defn",
+   "file": "Perennial/Golang/Defn.lean"
+  },
+  {
+   "name": "Perennial.Golang.Defn.Array",
+   "file": "Perennial/Golang/Defn/Array.lean"
+  },
+  {
+   "name": "Perennial.Golang.Defn.Assume",
+   "file": "Perennial/Golang/Defn/Assume.lean"
+  },
+  {
+   "name": "Perennial.Golang.Defn.Chan",
+   "file": "Perennial/Golang/Defn/Chan.lean"
+  },
+  {
+   "name": "Perennial.Golang.Defn.Defer",
+   "file": "Perennial/Golang/Defn/Defer.lean"
+  },
+  {
+   "name": "Perennial.Golang.Defn.Exception",
+   "file": "Perennial/Golang/Defn/Exception.lean"
+  },
+  {
+   "name": "Perennial.Golang.Defn.Interface",
+   "file": "Perennial/Golang/Defn/Interface.lean"
+  },
+  {
+   "name": "Perennial.Golang.Defn.Lock",
+   "file": "Perennial/Golang/Defn/Lock.lean"
+  },
+  {
+   "name": "Perennial.Golang.Defn.Loop",
+   "file": "Perennial/Golang/Defn/Loop.lean"
+  },
+  {
+   "name": "Perennial.Golang.Defn.Map",
+   "file": "Perennial/Golang/Defn/Map.lean"
+  },
+  {
+   "name": "Perennial.Golang.Defn.MethodSet",
+   "file": "Perennial/Golang/Defn/MethodSet.lean"
+  },
+  {
+   "name": "Perennial.Golang.Defn.Pkg",
+   "file": "Perennial/Golang/Defn/Pkg.lean"
+  },
+  {
+   "name": "Perennial.Golang.Defn.Plain",
+   "file": "Perennial/Golang/Defn/Plain.lean"
+  },
+  {
+   "name": "Perennial.Golang.Defn.PostLang",
+   "file": "Perennial/Golang/Defn/PostLang.lean"
+  },
+  {
+   "name": "Perennial.Golang.Defn.Pre",
+   "file": "Perennial/Golang/Defn/Pre.lean"
+  },
+  {
+   "name": "Perennial.Golang.Defn.PreLang",
+   "file": "Perennial/Golang/Defn/PreLang.lean"
+  },
+  {
+   "name": "Perennial.Golang.Defn.Predeclared",
+   "file": "Perennial/Golang/Defn/Predeclared.lean"
+  },
+  {
+   "name": "Perennial.Golang.Defn.Slice",
+   "file": "Perennial/Golang/Defn/Slice.lean"
+  },
+  {
+   "name": "Perennial.Golang.Defn.String",
+   "file": "Perennial/Golang/Defn/String.lean"
+  },
+  {
+   "name": "Perennial.Golang.Theory",
+   "file": "Perennial/Golang/Theory.lean"
+  },
+  {
+   "name": "Perennial.Golang.Theory.Array",
+   "file": "Perennial/Golang/Theory/Array.lean"
+  },
+  {
+   "name": "Perennial.Golang.Theory.ArrayLit",
+   "file": "Perennial/Golang/Theory/ArrayLit.lean"
+  },
+  {
+   "name": "Perennial.Golang.Theory.Assume",
+   "file": "Perennial/Golang/Theory/Assume.lean"
+  },
+  {
+   "name": "Perennial.Golang.Theory.Auto",
+   "file": "Perennial/Golang/Theory/Auto.lean"
+  },
+  {
+   "name": "Perennial.Golang.Theory.Chan.AuSpec.ChanAuBase",
+   "file": "Perennial/Golang/Theory/Chan/AuSpec/ChanAuBase.lean"
+  },
+  {
+   "name": "Perennial.Golang.Theory.Chan.AuSpec.ChanInit",
+   "file": "Perennial/Golang/Theory/Chan/AuSpec/ChanInit.lean"
+  },
+  {
+   "name": "Perennial.Golang.Theory.Defer",
+   "file": "Perennial/Golang/Theory/Defer.lean"
+  },
+  {
+   "name": "Perennial.Golang.Theory.Display",
+   "file": "Perennial/Golang/Theory/Display.lean"
+  },
+  {
+   "name": "Perennial.Golang.Theory.Exception",
+   "file": "Perennial/Golang/Theory/Exception.lean"
+  },
+  {
+   "name": "Perennial.Golang.Theory.IfJoin",
+   "file": "Perennial/Golang/Theory/IfJoin.lean"
+  },
+  {
+   "name": "Perennial.Golang.Theory.IrisTactics",
+   "file": "Perennial/Golang/Theory/IrisTactics.lean"
+  },
+  {
+   "name": "Perennial.Golang.Theory.Join",
+   "file": "Perennial/Golang/Theory/Join.lean"
+  },
+  {
+   "name": "Perennial.Golang.Theory.Lock",
+   "file": "Perennial/Golang/Theory/Lock.lean"
+  },
+  {
+   "name": "Perennial.Golang.Theory.Loop",
+   "file": "Perennial/Golang/Theory/Loop.lean"
+  },
+  {
+   "name": "Perennial.Golang.Theory.Map",
+   "file": "Perennial/Golang/Theory/Map.lean"
+  },
+  {
+   "name": "Perennial.Golang.Theory.Mem",
+   "file": "Perennial/Golang/Theory/Mem.lean"
+  },
+  {
+   "name": "Perennial.Golang.Theory.Pkg",
+   "file": "Perennial/Golang/Theory/Pkg.lean"
+  },
+  {
+   "name": "Perennial.Golang.Theory.PostLifting",
+   "file": "Perennial/Golang/Theory/PostLifting.lean"
+  },
+  {
+   "name": "Perennial.Golang.Theory.Pre",
+   "file": "Perennial/Golang/Theory/Pre.lean"
+  },
+  {
+   "name": "Perennial.Golang.Theory.Predeclared",
+   "file": "Perennial/Golang/Theory/Predeclared.lean"
+  },
+  {
+   "name": "Perennial.Golang.Theory.ProofMode",
+   "file": "Perennial/Golang/Theory/ProofMode.lean"
+  },
+  {
+   "name": "Perennial.Golang.Theory.SimpAttr",
+   "file": "Perennial/Golang/Theory/SimpAttr.lean"
+  },
+  {
+   "name": "Perennial.Golang.Theory.Slice",
+   "file": "Perennial/Golang/Theory/Slice.lean"
+  },
+  {
+   "name": "Perennial.Golang.Theory.String",
+   "file": "Perennial/Golang/Theory/String.lean"
+  },
+  {
+   "name": "Perennial.Golang.Theory.SubstEnv",
+   "file": "Perennial/Golang/Theory/SubstEnv.lean"
+  },
+  {
+   "name": "Perennial.Golang.Theory.SubstSimp",
+   "file": "Perennial/Golang/Theory/SubstSimp.lean"
+  },
+  {
+   "name": "Perennial.Golang.Theory.TacticsSimp",
+   "file": "Perennial/Golang/Theory/TacticsSimp.lean"
+  },
+  {
+   "name": "Perennial.Golang.Theory.TacticsSimpAttr",
+   "file": "Perennial/Golang/Theory/TacticsSimpAttr.lean"
+  },
+  {
+   "name": "Perennial.Golang.Theory.TypeSet",
+   "file": "Perennial/Golang/Theory/TypeSet.lean"
+  },
+  {
+   "name": "Perennial.GooseLang.BoundedLang",
+   "file": "Perennial/GooseLang/BoundedLang.lean"
+  },
+  {
+   "name": "Perennial.GooseLang.Countable",
+   "file": "Perennial/GooseLang/Countable.lean"
+  },
+  {
+   "name": "Perennial.GooseLang.CrashToken",
+   "file": "Perennial/GooseLang/CrashToken.lean"
+  },
+  {
+   "name": "Perennial.GooseLang.Ext",
+   "file": "Perennial/GooseLang/Ext.lean"
+  },
+  {
+   "name": "Perennial.GooseLang.Ext.Fs.Impl",
+   "file": "Perennial/GooseLang/Ext/Fs/Impl.lean"
+  },
+  {
+   "name": "Perennial.GooseLang.Ext.Fs.Specs",
+   "file": "Perennial/GooseLang/Ext/Fs/Specs.lean"
+  },
+  {
+   "name": "Perennial.GooseLang.Ext.GenHeap",
+   "file": "Perennial/GooseLang/Ext/GenHeap.lean"
+  },
+  {
+   "name": "Perennial.GooseLang.Ext.Grove.Impl",
+   "file": "Perennial/GooseLang/Ext/Grove/Impl.lean"
+  },
+  {
+   "name": "Perennial.GooseLang.Ext.Grove.Specs",
+   "file": "Perennial/GooseLang/Ext/Grove/Specs.lean"
+  },
+  {
+   "name": "Perennial.GooseLang.Ext.Net.Impl",
+   "file": "Perennial/GooseLang/Ext/Net/Impl.lean"
+  },
+  {
+   "name": "Perennial.GooseLang.Ext.Net.Specs",
+   "file": "Perennial/GooseLang/Ext/Net/Specs.lean"
+  },
+  {
+   "name": "Perennial.GooseLang.IPersist",
+   "file": "Perennial/GooseLang/IPersist.lean"
+  },
+  {
+   "name": "Perennial.GooseLang.Lang",
+   "file": "Perennial/GooseLang/Lang.lean"
+  },
+  {
+   "name": "Perennial.GooseLang.Lifting",
+   "file": "Perennial/GooseLang/Lifting.lean"
+  },
+  {
+   "name": "Perennial.GooseLang.LiftingBytes",
+   "file": "Perennial/GooseLang/LiftingBytes.lean"
+  },
+  {
+   "name": "Perennial.GooseLang.Locations",
+   "file": "Perennial/GooseLang/Locations.lean"
+  },
+  {
+   "name": "Perennial.GooseLang.Notation",
+   "file": "Perennial/GooseLang/Notation.lean"
+  },
+  {
+   "name": "Perennial.GooseLang.Receipts",
+   "file": "Perennial/GooseLang/Receipts.lean"
+  },
+  {
+   "name": "Perennial.GooseLang.Threads",
+   "file": "Perennial/GooseLang/Threads.lean"
+  },
+  {
+   "name": "Perennial.Helpers.NamedProps",
+   "file": "Perennial/Helpers/NamedProps.lean"
+  },
+  {
+   "name": "Perennial.Helpers.ThreadRef",
+   "file": "Perennial/Helpers/ThreadRef.lean"
+  },
+  {
+   "name": "Perennial.IrisLib.Conflicting",
+   "file": "Perennial/IrisLib/Conflicting.lean"
+  },
+  {
+   "name": "Perennial.IrisLib.DFrac",
+   "file": "Perennial/IrisLib/DFrac.lean"
+  },
+  {
+   "name": "Perennial.IrisLib.DFractional",
+   "file": "Perennial/IrisLib/DFractional.lean"
+  },
+  {
+   "name": "Perennial.ManualProof.github_com.goose_lang.primitive",
+   "file": "Perennial/ManualProof/github_com/goose_lang/primitive.lean"
+  },
+  {
+   "name": "Perennial.ProgramLogic.AtomicFupd",
+   "file": "Perennial/ProgramLogic/AtomicFupd.lean"
+  },
+  {
+   "name": "Perennial.ProgramLogic.EctxLifting",
+   "file": "Perennial/ProgramLogic/EctxLifting.lean"
+  },
+  {
+   "name": "Perennial.Proof.ProofPrelude",
+   "file": "Perennial/Proof/ProofPrelude.lean"
+  },
+  {
+   "name": "Perennial.Proof.TokSet",
+   "file": "Perennial/Proof/TokSet.lean"
+  },
+  {
+   "name": "Perennial.Proof.github_com.goose_lang.primitive",
+   "file": "Perennial/Proof/github_com/goose_lang/primitive.lean"
+  },
+  {
+   "name": "Perennial.Proof.github_com.goose_lang.primitive.Assume",
+   "file": "Perennial/Proof/github_com/goose_lang/primitive/Assume.lean"
+  },
+  {
+   "name": "Perennial.Proof.github_com.goose_lang.primitive.Base",
+   "file": "Perennial/Proof/github_com/goose_lang/primitive/Base.lean"
+  },
+  {
+   "name": "Perennial.Proof.github_com.goose_lang.primitive.Link",
+   "file": "Perennial/Proof/github_com/goose_lang/primitive/Link.lean"
+  },
+  {
+   "name": "Perennial.Proof.github_com.goose_lang.primitive.Mutex__Lock",
+   "file": "Perennial/Proof/github_com/goose_lang/primitive/Mutex__Lock.lean"
+  },
+  {
+   "name": "Perennial.Proof.github_com.goose_lang.primitive.Mutex__Unlock",
+   "file": "Perennial/Proof/github_com/goose_lang/primitive/Mutex__Unlock.lean"
+  },
+  {
+   "name": "Perennial.Proof.github_com.goose_lang.primitive.NewProph",
+   "file": "Perennial/Proof/github_com/goose_lang/primitive/NewProph.lean"
+  },
+  {
+   "name": "Perennial.Proof.github_com.goose_lang.primitive.ProphId__ResolveBool",
+   "file": "Perennial/Proof/github_com/goose_lang/primitive/ProphId__ResolveBool.lean"
+  },
+  {
+   "name": "Perennial.Proof.github_com.goose_lang.primitive.ProphId__ResolveU64",
+   "file": "Perennial/Proof/github_com/goose_lang/primitive/ProphId__ResolveU64.lean"
+  },
+  {
+   "name": "Perennial.Proof.github_com.goose_lang.primitive.RandomUint64",
+   "file": "Perennial/Proof/github_com/goose_lang/primitive/RandomUint64.lean"
+  },
+  {
+   "name": "Perennial.Proof.github_com.goose_lang.primitive.Results",
+   "file": "Perennial/Proof/github_com/goose_lang/primitive/Results.lean"
+  },
+  {
+   "name": "Perennial.Proof.github_com.goose_lang.primitive.initialize",
+   "file": "Perennial/Proof/github_com/goose_lang/primitive/initialize.lean"
+  },
+  {
+   "name": "Perennial.Proof.github_com.mit_pdos.perennial.goose.model.strings",
+   "file": "Perennial/Proof/github_com/mit_pdos/perennial/goose/model/strings.lean"
+  },
+  {
+   "name": "Perennial.Proof.github_com.mit_pdos.perennial.goose.model.strings.Base",
+   "file": "Perennial/Proof/github_com/mit_pdos/perennial/goose/model/strings/Base.lean"
+  },
+  {
+   "name": "Perennial.Proof.github_com.mit_pdos.perennial.goose.model.strings.ByteSliceToString",
+   "file": "Perennial/Proof/github_com/mit_pdos/perennial/goose/model/strings/ByteSliceToString.lean"
+  },
+  {
+   "name": "Perennial.Proof.github_com.mit_pdos.perennial.goose.model.strings.DecodeRune",
+   "file": "Perennial/Proof/github_com/mit_pdos/perennial/goose/model/strings/DecodeRune.lean"
+  },
+  {
+   "name": "Perennial.Proof.github_com.mit_pdos.perennial.goose.model.strings.Link",
+   "file": "Perennial/Proof/github_com/mit_pdos/perennial/goose/model/strings/Link.lean"
+  },
+  {
+   "name": "Perennial.Proof.github_com.mit_pdos.perennial.goose.model.strings.StringToByteSlice",
+   "file": "Perennial/Proof/github_com/mit_pdos/perennial/goose/model/strings/StringToByteSlice.lean"
+  },
+  {
+   "name": "Perennial.Proof.github_com.mit_pdos.perennial.goose.model.strings.decoderune_",
+   "file": "Perennial/Proof/github_com/mit_pdos/perennial/goose/model/strings/decoderune_.lean"
+  },
+  {
+   "name": "Perennial.Spec.github_com.goose_lang.primitive.Assume",
+   "file": "Perennial/Spec/github_com/goose_lang/primitive/Assume.lean"
+  },
+  {
+   "name": "Perennial.Spec.github_com.goose_lang.primitive.Mutex__Lock",
+   "file": "Perennial/Spec/github_com/goose_lang/primitive/Mutex__Lock.lean"
+  },
+  {
+   "name": "Perennial.Spec.github_com.goose_lang.primitive.Mutex__Unlock",
+   "file": "Perennial/Spec/github_com/goose_lang/primitive/Mutex__Unlock.lean"
+  },
+  {
+   "name": "Perennial.Spec.github_com.goose_lang.primitive.NewProph",
+   "file": "Perennial/Spec/github_com/goose_lang/primitive/NewProph.lean"
+  },
+  {
+   "name": "Perennial.Spec.github_com.goose_lang.primitive.ProphId__ResolveBool",
+   "file": "Perennial/Spec/github_com/goose_lang/primitive/ProphId__ResolveBool.lean"
+  },
+  {
+   "name": "Perennial.Spec.github_com.goose_lang.primitive.ProphId__ResolveU64",
+   "file": "Perennial/Spec/github_com/goose_lang/primitive/ProphId__ResolveU64.lean"
+  },
+  {
+   "name": "Perennial.Spec.github_com.goose_lang.primitive.RandomUint64",
+   "file": "Perennial/Spec/github_com/goose_lang/primitive/RandomUint64.lean"
+  },
+  {
+   "name": "Perennial.Spec.github_com.goose_lang.primitive.initialize",
+   "file": "Perennial/Spec/github_com/goose_lang/primitive/initialize.lean"
+  },
+  {
+   "name": "Perennial.Spec.github_com.mit_pdos.perennial.goose.model.strings.ByteSliceToString",
+   "file": "Perennial/Spec/github_com/mit_pdos/perennial/goose/model/strings/ByteSliceToString.lean"
+  },
+  {
+   "name": "Perennial.Spec.github_com.mit_pdos.perennial.goose.model.strings.DecodeRune",
+   "file": "Perennial/Spec/github_com/mit_pdos/perennial/goose/model/strings/DecodeRune.lean"
+  },
+  {
+   "name": "Perennial.Spec.github_com.mit_pdos.perennial.goose.model.strings.StringToByteSlice",
+   "file": "Perennial/Spec/github_com/mit_pdos/perennial/goose/model/strings/StringToByteSlice.lean"
+  },
+  {
+   "name": "Perennial.Spec.github_com.mit_pdos.perennial.goose.model.strings.decoderune_",
+   "file": "Perennial/Spec/github_com/mit_pdos/perennial/goose/model/strings/decoderune_.lean"
+  },
+  {
+   "name": "Perennial.Std.All",
+   "file": "Perennial/Std/All.lean"
+  },
+  {
+   "name": "Perennial.Std.Attrs",
+   "file": "Perennial/Std/Attrs.lean"
+  },
+  {
+   "name": "Perennial.Std.ByteExplode",
+   "file": "Perennial/Std/ByteExplode.lean"
+  },
+  {
+   "name": "Perennial.Std.ByteString",
+   "file": "Perennial/Std/ByteString.lean"
+  },
+  {
+   "name": "Perennial.Std.Bytes",
+   "file": "Perennial/Std/Bytes.lean"
+  },
+  {
+   "name": "Perennial.Std.Countable",
+   "file": "Perennial/Std/Countable.lean"
+  },
+  {
+   "name": "Perennial.Std.GMap",
+   "file": "Perennial/Std/GMap.lean"
+  },
+  {
+   "name": "Perennial.Std.GSet",
+   "file": "Perennial/Std/GSet.lean"
+  },
+  {
+   "name": "Perennial.Std.List",
+   "file": "Perennial/Std/List.lean"
+  },
+  {
+   "name": "Perennial.Std.ListBasics",
+   "file": "Perennial/Std/ListBasics.lean"
+  },
+  {
+   "name": "Perennial.Std.ListLen",
+   "file": "Perennial/Std/ListLen.lean"
+  },
+  {
+   "name": "Perennial.Std.ListSolver",
+   "file": "Perennial/Std/ListSolver.lean"
+  },
+  {
+   "name": "Perennial.Std.ListSplice",
+   "file": "Perennial/Std/ListSplice.lean"
+  },
+  {
+   "name": "Perennial.Std.ListSubset",
+   "file": "Perennial/Std/ListSubset.lean"
+  },
+  {
+   "name": "Perennial.Std.ListZ",
+   "file": "Perennial/Std/ListZ.lean"
+  },
+  {
+   "name": "Perennial.Std.LittleEndian",
+   "file": "Perennial/Std/LittleEndian.lean"
+  },
+  {
+   "name": "Perennial.Std.Map",
+   "file": "Perennial/Std/Map.lean"
+  },
+  {
+   "name": "Perennial.Std.ModArith",
+   "file": "Perennial/Std/ModArith.lean"
+  },
+  {
+   "name": "Perennial.Std.Namespaces",
+   "file": "Perennial/Std/Namespaces.lean"
+  },
+  {
+   "name": "Perennial.Std.NatDivMod",
+   "file": "Perennial/Std/NatDivMod.lean"
+  },
+  {
+   "name": "Perennial.Std.Qextra",
+   "file": "Perennial/Std/Qextra.lean"
+  },
+  {
+   "name": "Perennial.Std.RangeSet",
+   "file": "Perennial/Std/RangeSet.lean"
+  },
+  {
+   "name": "Perennial.Std.Word",
+   "file": "Perennial/Std/Word.lean"
+  },
+  {
+   "name": "Perennial.Std.Word.Automation",
+   "file": "Perennial/Std/Word/Automation.lean"
+  },
+  {
+   "name": "Perennial.Std.Word.Cache",
+   "file": "Perennial/Std/Word/Cache.lean"
+  },
+  {
+   "name": "Perennial.Std.Word.LittleEndian",
+   "file": "Perennial/Std/Word/LittleEndian.lean"
+  },
+  {
+   "name": "Perennial.Std.Word.MulOverflow",
+   "file": "Perennial/Std/Word/MulOverflow.lean"
+  },
+  {
+   "name": "Perennial.Std.Word.Properties",
+   "file": "Perennial/Std/Word/Properties.lean"
+  },
+  {
+   "name": "Perennial.Std.Word.SimpSets",
+   "file": "Perennial/Std/Word/SimpSets.lean"
+  },
+  {
+   "name": "Perennial.Std.Word.ToIntArith",
+   "file": "Perennial/Std/Word/ToIntArith.lean"
+  },
+  {
+   "name": "Perennial.TrustedCode.github_com.goose_lang.primitive",
+   "file": "Perennial/TrustedCode/github_com/goose_lang/primitive.lean"
+  },
+  {
+   "name": "PerennialMeta",
+   "file": "PerennialMeta.lean"
+  }
+ ],
+ "root_closure_files": 192,
+ "root_closure_sorry": [],
+ "root_closure_axioms": 1,
+ "unclosed_files": 0,
+ "headline_rule": "readme",
+ "headline_count": 10,
+ "headlines": [
+  {
+   "name": "Perennial.goose_crash_adequacy",
+   "module": "Perennial.GooseLang.CrashAdequacy",
+   "file": "Perennial/GooseLang/CrashAdequacy.lean",
+   "line": 440,
+   "kind": "theorem",
+   "sorry": false,
+   "names": [
+    "List",
+    "Nat"
+   ]
+  },
+  {
+   "name": "Perennial.github_com.mit_pdos.perennial.goose.testdata.examples.crashfs.crash_safety",
+   "module": "Perennial.Proof.github_com.mit_pdos.perennial.goose.testdata.examples.crashfs.Results",
+   "file": "Perennial/Proof/github_com/mit_pdos/perennial/goose/testdata/examples/crashfs/Results.lean",
+   "line": 143,
+   "kind": "theorem",
+   "sorry": false,
+   "names": [
+    "List",
+    "Nat"
+   ]
+  },
+  {
+   "name": "Perennial.goose_dist_adequacy",
+   "module": "Perennial.GooseLang.DistAdequacy",
+   "file": "Perennial/GooseLang/DistAdequacy.lean",
+   "line": 466,
+   "kind": "theorem",
+   "sorry": false,
+   "names": [
+    "List",
+    "Nat"
+   ]
+  },
+  {
+   "name": "Perennial.goose_dist_crash_adequacy",
+   "module": "Perennial.GooseLang.DistAdequacy",
+   "file": "Perennial/GooseLang/DistAdequacy.lean",
+   "line": 744,
+   "kind": "theorem",
+   "sorry": false,
+   "names": [
+    "List",
+    "Nat"
+   ]
+  },
+  {
+   "name": "Perennial.github_com.mit_pdos.perennial.goose.testdata.examples.netfs.netfs_crash_safety",
+   "module": "Perennial.Proof.github_com.mit_pdos.perennial.goose.testdata.examples.netfs.Results",
+   "file": "Perennial/Proof/github_com/mit_pdos/perennial/goose/testdata/examples/netfs/Results.lean",
+   "line": 329,
+   "kind": "theorem",
+   "sorry": false,
+   "names": [
+    "List",
+    "Nat"
+   ]
+  },
+  {
+   "name": "Perennial.TimeReceiptsTest.wp_clock_incr",
+   "module": "Perennial.ProgramLogic.TimeReceiptsTest",
+   "file": "Perennial/ProgramLogic/TimeReceiptsTest.lean",
+   "line": 74,
+   "kind": "theorem",
+   "sorry": false,
+   "names": [
+    "Nat"
+   ]
+  },
+  {
+   "name": "Perennial.ThreadTokensTest.wp_counter_register",
+   "module": "Perennial.ProgramLogic.ThreadTokensTest",
+   "file": "Perennial/ProgramLogic/ThreadTokensTest.lean",
+   "line": 106,
+   "kind": "theorem",
+   "sorry": false,
+   "names": [
+    "Nat"
+   ]
+  },
+  {
+   "name": "Perennial.strings.wp_Join",
+   "module": "Perennial.Proof.strings.Link",
+   "file": "Perennial/Proof/strings/Link.lean",
+   "line": 38,
+   "kind": "theorem",
+   "sorry": false,
+   "names": []
+  }
+ ],
+ "mathlib_imports": {},
+ "import_roots": {
+  "Batteries": 1,
+  "Iris": 30,
+  "Lean": 9,
+  "Perennial": 16,
+  "Std": 1
+ },
+ "uses": {
+  "Array": 10,
+  "Int": 143,
+  "Language": 1,
+  "List": 294,
+  "Nat": 162,
+  "Prime": 1,
+  "Rat": 8,
+  "Std.HashMap": 4
+ },
+ "ci": null
+}

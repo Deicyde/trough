@@ -1,0 +1,2987 @@
+{
+ "schema": "trough-satellites/v1",
+ "repo": "olliepro/LeanMMBound",
+ "slug": "olliepro--leanmmbound",
+ "rev": "93492a4dd1ee90fd98cd7b339af77bb8bbc8be55",
+ "date": "2026-10-06T04:00:28Z",
+ "stable": "255c9bb5880509c4a0d3f86ca9317d421f2fc0b2bd5ff22192b61d216b057050",
+ "license": {
+  "files": [
+   "LICENSE"
+  ],
+  "spdx": "Apache-2.0",
+  "file": "LICENSE",
+  "copyright": []
+ },
+ "readme": {
+  "file": "README.md",
+  "title": "Matrix multiplication bounds: Lean formalization",
+  "excerpt": "**Paper: [Cross-Level Laser Extraction for Faster Matrix Multiplication](paper/matrix-multiplication-exponent.pdf)** — LaTeX source in [`paper/`](paper/)."
+ },
+ "lean_files": 2173,
+ "admitted": true,
+ "folder": "",
+ "toolchain": "v4.35.0-rc2",
+ "mathlib": "065356127b1dc0016f66b7283ce0ce2c4055aa55",
+ "requirements": [],
+ "libraries": [
+  {
+   "name": "Challenge",
+   "src": "."
+  },
+  {
+   "name": "Solution",
+   "src": "."
+  },
+  {
+   "name": "MatrixBounds",
+   "src": "src"
+  }
+ ],
+ "library_files": 2173,
+ "capped": false,
+ "declarations": 34469,
+ "sorry_files": 1,
+ "axioms": 0,
+ "closure_files": 0,
+ "closure_sorry": [],
+ "closure_axioms": 0,
+ "root_modules": [
+  {
+   "name": "AcceptedRestrictions",
+   "file": "src/AcceptedRestrictions.lean"
+  },
+  {
+   "name": "ActivePools",
+   "file": "src/ActivePools.lean"
+  },
+  {
+   "name": "AllWeightSectorAllocation",
+   "file": "src/AllWeightSectorAllocation.lean"
+  },
+  {
+   "name": "ApproximateProfiles",
+   "file": "src/ApproximateProfiles.lean"
+  },
+  {
+   "name": "ApproximateTypes",
+   "file": "src/ApproximateTypes.lean"
+  },
+  {
+   "name": "AsymptoticSum",
+   "file": "src/AsymptoticSum.lean"
+  },
+  {
+   "name": "BatchPowers",
+   "file": "src/BatchPowers.lean"
+  },
+  {
+   "name": "BatchRepair",
+   "file": "src/BatchRepair.lean"
+  },
+  {
+   "name": "BatchRestrictions",
+   "file": "src/BatchRestrictions.lean"
+  },
+  {
+   "name": "BatchSymmetry",
+   "file": "src/BatchSymmetry.lean"
+  },
+  {
+   "name": "BehrendRetention",
+   "file": "src/BehrendRetention.lean"
+  },
+  {
+   "name": "BlockConcentration",
+   "file": "src/BlockConcentration.lean"
+  },
+  {
+   "name": "CWActiveCollisions",
+   "file": "src/CWActiveCollisions.lean"
+  },
+  {
+   "name": "CWActiveLaws",
+   "file": "src/CWActiveLaws.lean"
+  },
+  {
+   "name": "CWActualSelection",
+   "file": "src/CWActualSelection.lean"
+  },
+  {
+   "name": "CWApproximateCosts",
+   "file": "src/CWApproximateCosts.lean"
+  },
+  {
+   "name": "CWApproximateMixedExtraction",
+   "file": "src/CWApproximateMixedExtraction.lean"
+  },
+  {
+   "name": "CWAsymptoticContextualExtraction",
+   "file": "src/CWAsymptoticContextualExtraction.lean"
+  },
+  {
+   "name": "CWAsymptoticDegrees",
+   "file": "src/CWAsymptoticDegrees.lean"
+  },
+  {
+   "name": "CWAxisPermutations",
+   "file": "src/CWAxisPermutations.lean"
+  },
+  {
+   "name": "CWAxisPooling",
+   "file": "src/CWAxisPooling.lean"
+  },
+  {
+   "name": "CWCoarseData",
+   "file": "src/CWCoarseData.lean"
+  },
+  {
+   "name": "CWCoarseEntropy",
+   "file": "src/CWCoarseEntropy.lean"
+  },
+  {
+   "name": "CWCoarseGraph",
+   "file": "src/CWCoarseGraph.lean"
+  },
+  {
+   "name": "CWCoarseHalves",
+   "file": "src/CWCoarseHalves.lean"
+  },
+  {
+   "name": "CWCoarseOwnership",
+   "file": "src/CWCoarseOwnership.lean"
+  },
+  {
+   "name": "CWCoarseRates",
+   "file": "src/CWCoarseRates.lean"
+  },
+  {
+   "name": "CWCollisionCounts",
+   "file": "src/CWCollisionCounts.lean"
+  },
+  {
+   "name": "CWCompatibilityNecessary",
+   "file": "src/CWCompatibilityNecessary.lean"
+  },
+  {
+   "name": "CWCompatibilityRates",
+   "file": "src/CWCompatibilityRates.lean"
+  },
+  {
+   "name": "CWCompatibleCollisions",
+   "file": "src/CWCompatibleCollisions.lean"
+  },
+  {
+   "name": "CWConstituents",
+   "file": "src/CWConstituents.lean"
+  },
+  {
+   "name": "CWContextualApproximateExtraction",
+   "file": "src/CWContextualApproximateExtraction.lean"
+  },
+  {
+   "name": "CWContextualNearbyExtraction",
+   "file": "src/CWContextualNearbyExtraction.lean"
+  },
+  {
+   "name": "CWContextualProfileGluing",
+   "file": "src/CWContextualProfileGluing.lean"
+  },
+  {
+   "name": "CWContextualReprofile",
+   "file": "src/CWContextualReprofile.lean"
+  },
+  {
+   "name": "CWDegreeControl",
+   "file": "src/CWDegreeControl.lean"
+  },
+  {
+   "name": "CWDegreeControlShrink",
+   "file": "src/CWDegreeControlShrink.lean"
+  },
+  {
+   "name": "CWExactCoarseRates",
+   "file": "src/CWExactCoarseRates.lean"
+  },
+  {
+   "name": "CWExactGibbs",
+   "file": "src/CWExactGibbs.lean"
+  },
+  {
+   "name": "CWExactProfileValidity",
+   "file": "src/CWExactProfileValidity.lean"
+  },
+  {
+   "name": "CWExtractedTargets",
+   "file": "src/CWExtractedTargets.lean"
+  },
+  {
+   "name": "CWExtractionOverhead",
+   "file": "src/CWExtractionOverhead.lean"
+  },
+  {
+   "name": "CWExtractionSchedule",
+   "file": "src/CWExtractionSchedule.lean"
+  },
+  {
+   "name": "CWFiberCounts",
+   "file": "src/CWFiberCounts.lean"
+  },
+  {
+   "name": "CWFineCollisionCounts",
+   "file": "src/CWFineCollisionCounts.lean"
+  },
+  {
+   "name": "CWFineCompatibility",
+   "file": "src/CWFineCompatibility.lean"
+  },
+  {
+   "name": "CWFiniteContextualExtraction",
+   "file": "src/CWFiniteContextualExtraction.lean"
+  },
+  {
+   "name": "CWFiniteExtraction",
+   "file": "src/CWFiniteExtraction.lean"
+  },
+  {
+   "name": "CWFiniteMixedExtraction",
+   "file": "src/CWFiniteMixedExtraction.lean"
+  },
+  {
+   "name": "CWFiniteRootExtraction",
+   "file": "src/CWFiniteRootExtraction.lean"
+  },
+  {
+   "name": "CWInterfaceSize",
+   "file": "src/CWInterfaceSize.lean"
+  },
+  {
+   "name": "CWLawStability",
+   "file": "src/CWLawStability.lean"
+  },
+  {
+   "name": "CWMixedActualCounts",
+   "file": "src/CWMixedActualCounts.lean"
+  },
+  {
+   "name": "CWMixedCollisionCounts",
+   "file": "src/CWMixedCollisionCounts.lean"
+  },
+  {
+   "name": "CWMixedConcentration",
+   "file": "src/CWMixedConcentration.lean"
+  },
+  {
+   "name": "CWMixedContextualPrime",
+   "file": "src/CWMixedContextualPrime.lean"
+  },
+  {
+   "name": "CWMixedContextualRates",
+   "file": "src/CWMixedContextualRates.lean"
+  },
+  {
+   "name": "CWMixedContextualRepair",
+   "file": "src/CWMixedContextualRepair.lean"
+  },
+  {
+   "name": "CWMixedContextualSource",
+   "file": "src/CWMixedContextualSource.lean"
+  },
+  {
+   "name": "CWMixedContextualTargets",
+   "file": "src/CWMixedContextualTargets.lean"
+  },
+  {
+   "name": "CWMixedDegreeRates",
+   "file": "src/CWMixedDegreeRates.lean"
+  },
+  {
+   "name": "CWMixedDegrees",
+   "file": "src/CWMixedDegrees.lean"
+  },
+  {
+   "name": "CWMixedEvents",
+   "file": "src/CWMixedEvents.lean"
+  },
+  {
+   "name": "CWMixedExtractedTargets",
+   "file": "src/CWMixedExtractedTargets.lean"
+  },
+  {
+   "name": "CWMixedGraph",
+   "file": "src/CWMixedGraph.lean"
+  },
+  {
+   "name": "CWMixedNearbyExtraction",
+   "file": "src/CWMixedNearbyExtraction.lean"
+  },
+  {
+   "name": "CWMixedNearbySource",
+   "file": "src/CWMixedNearbySource.lean"
+  },
+  {
+   "name": "CWMixedNominalRates",
+   "file": "src/CWMixedNominalRates.lean"
+  },
+  {
+   "name": "CWMixedOwnership",
+   "file": "src/CWMixedOwnership.lean"
+  },
+  {
+   "name": "CWMixedOwnershipData",
+   "file": "src/CWMixedOwnershipData.lean"
+  },
+  {
+   "name": "CWMixedPrepared",
+   "file": "src/CWMixedPrepared.lean"
+  },
+  {
+   "name": "CWMixedPrimeExtraction",
+   "file": "src/CWMixedPrimeExtraction.lean"
+  },
+  {
+   "name": "CWMixedProfileFacts",
+   "file": "src/CWMixedProfileFacts.lean"
+  },
+  {
+   "name": "CWMixedProfileGluing",
+   "file": "src/CWMixedProfileGluing.lean"
+  },
+  {
+   "name": "CWMixedProfiles",
+   "file": "src/CWMixedProfiles.lean"
+  },
+  {
+   "name": "CWMixedRateExtraction",
+   "file": "src/CWMixedRateExtraction.lean"
+  },
+  {
+   "name": "CWMixedRepairedTargets",
+   "file": "src/CWMixedRepairedTargets.lean"
+  },
+  {
+   "name": "CWMixedSelection",
+   "file": "src/CWMixedSelection.lean"
+  },
+  {
+   "name": "CWMixedSource",
+   "file": "src/CWMixedSource.lean"
+  },
+  {
+   "name": "CWMixedTargetCoefficients",
+   "file": "src/CWMixedTargetCoefficients.lean"
+  },
+  {
+   "name": "CWMixedTargetOwnership",
+   "file": "src/CWMixedTargetOwnership.lean"
+  },
+  {
+   "name": "CWMixedTargetSymmetry",
+   "file": "src/CWMixedTargetSymmetry.lean"
+  },
+  {
+   "name": "CWMixedTargets",
+   "file": "src/CWMixedTargets.lean"
+  },
+  {
+   "name": "CWMixedWindowedOwners",
+   "file": "src/CWMixedWindowedOwners.lean"
+  },
+  {
+   "name": "CWNearbyDegreeRates",
+   "file": "src/CWNearbyDegreeRates.lean"
+  },
+  {
+   "name": "CWNearbyParameters",
+   "file": "src/CWNearbyParameters.lean"
+  },
+  {
+   "name": "CWNearbyWindows",
+   "file": "src/CWNearbyWindows.lean"
+  },
+  {
+   "name": "CWNominalCopyRates",
+   "file": "src/CWNominalCopyRates.lean"
+  },
+  {
+   "name": "CWNominalRetentionLoss",
+   "file": "src/CWNominalRetentionLoss.lean"
+  },
+  {
+   "name": "CWOneLetterData",
+   "file": "src/CWOneLetterData.lean"
+  },
+  {
+   "name": "CWOneLetterDimensions",
+   "file": "src/CWOneLetterDimensions.lean"
+  },
+  {
+   "name": "CWOneLetterEntropy",
+   "file": "src/CWOneLetterEntropy.lean"
+  },
+  {
+   "name": "CWOneLetterInterfaces",
+   "file": "src/CWOneLetterInterfaces.lean"
+  },
+  {
+   "name": "CWOneLetterMatrices",
+   "file": "src/CWOneLetterMatrices.lean"
+  },
+  {
+   "name": "CWOneLetterMatrixVolume",
+   "file": "src/CWOneLetterMatrixVolume.lean"
+  },
+  {
+   "name": "CWOneLetterProfileLaws",
+   "file": "src/CWOneLetterProfileLaws.lean"
+  },
+  {
+   "name": "CWOneLetterWindowedMatrix",
+   "file": "src/CWOneLetterWindowedMatrix.lean"
+  },
+  {
+   "name": "CWPairing",
+   "file": "src/CWPairing.lean"
+  },
+  {
+   "name": "CWParentCenterBounds",
+   "file": "src/CWParentCenterBounds.lean"
+  },
+  {
+   "name": "CWParentCompatibility",
+   "file": "src/CWParentCompatibility.lean"
+  },
+  {
+   "name": "CWPartition",
+   "file": "src/CWPartition.lean"
+  },
+  {
+   "name": "CWPermutedCoarseData",
+   "file": "src/CWPermutedCoarseData.lean"
+  },
+  {
+   "name": "CWPermutedTerminalAsymptotic",
+   "file": "src/CWPermutedTerminalAsymptotic.lean"
+  },
+  {
+   "name": "CWPermutedTerminalCoarse",
+   "file": "src/CWPermutedTerminalCoarse.lean"
+  },
+  {
+   "name": "CWPermutedTerminalCountScaling",
+   "file": "src/CWPermutedTerminalCountScaling.lean"
+  },
+  {
+   "name": "CWPermutedTerminalData",
+   "file": "src/CWPermutedTerminalData.lean"
+  },
+  {
+   "name": "CWPermutedTerminalDegreeControl",
+   "file": "src/CWPermutedTerminalDegreeControl.lean"
+  },
+  {
+   "name": "CWPermutedTerminalExtraction",
+   "file": "src/CWPermutedTerminalExtraction.lean"
+  },
+  {
+   "name": "CWPermutedTerminalGibbs",
+   "file": "src/CWPermutedTerminalGibbs.lean"
+  },
+  {
+   "name": "CWPermutedTerminalLaws",
+   "file": "src/CWPermutedTerminalLaws.lean"
+  },
+  {
+   "name": "CWPermutedTerminalMatrices",
+   "file": "src/CWPermutedTerminalMatrices.lean"
+  },
+  {
+   "name": "CWPermutedTerminalMixedTarget",
+   "file": "src/CWPermutedTerminalMixedTarget.lean"
+  },
+  {
+   "name": "CWPermutedTerminalNominal",
+   "file": "src/CWPermutedTerminalNominal.lean"
+  },
+  {
+   "name": "CWPermutedTerminalRateBounds",
+   "file": "src/CWPermutedTerminalRateBounds.lean"
+  },
+  {
+   "name": "CWPermutedTerminalRates",
+   "file": "src/CWPermutedTerminalRates.lean"
+  },
+  {
+   "name": "CWPermutedTerminalWindowTarget",
+   "file": "src/CWPermutedTerminalWindowTarget.lean"
+  },
+  {
+   "name": "CWPhysicalWindowFamilies",
+   "file": "src/CWPhysicalWindowFamilies.lean"
+  },
+  {
+   "name": "CWPhysicalWindowInverse",
+   "file": "src/CWPhysicalWindowInverse.lean"
+  },
+  {
+   "name": "CWPhysicalWindows",
+   "file": "src/CWPhysicalWindows.lean"
+  },
+  {
+   "name": "CWPooledCompatibility",
+   "file": "src/CWPooledCompatibility.lean"
+  },
+  {
+   "name": "CWPooledDegrees",
+   "file": "src/CWPooledDegrees.lean"
+  },
+  {
+   "name": "CWPrescribedGraph",
+   "file": "src/CWPrescribedGraph.lean"
+  },
+  {
+   "name": "CWProfileLaws",
+   "file": "src/CWProfileLaws.lean"
+  },
+  {
+   "name": "CWRationalCanonicalAssembly",
+   "file": "src/CWRationalCanonicalAssembly.lean"
+  },
+  {
+   "name": "CWRationalCanonicalInterfaces",
+   "file": "src/CWRationalCanonicalInterfaces.lean"
+  },
+  {
+   "name": "CWRationalChildren",
+   "file": "src/CWRationalChildren.lean"
+  },
+  {
+   "name": "CWRationalData",
+   "file": "src/CWRationalData.lean"
+  },
+  {
+   "name": "CWRationalLawValidity",
+   "file": "src/CWRationalLawValidity.lean"
+  },
+  {
+   "name": "CWRationalMixedExtraction",
+   "file": "src/CWRationalMixedExtraction.lean"
+  },
+  {
+   "name": "CWRationalMixedRates",
+   "file": "src/CWRationalMixedRates.lean"
+  },
+  {
+   "name": "CWRationalOrbitParents",
+   "file": "src/CWRationalOrbitParents.lean"
+  },
+  {
+   "name": "CWRationalOrbitRates",
+   "file": "src/CWRationalOrbitRates.lean"
+  },
+  {
+   "name": "CWRationalOrientedChildren",
+   "file": "src/CWRationalOrientedChildren.lean"
+  },
+  {
+   "name": "CWRationalOrientedParents",
+   "file": "src/CWRationalOrientedParents.lean"
+  },
+  {
+   "name": "CWRationalPermutations",
+   "file": "src/CWRationalPermutations.lean"
+  },
+  {
+   "name": "CWRationalPopulation",
+   "file": "src/CWRationalPopulation.lean"
+  },
+  {
+   "name": "CWRationalProbabilityTotals",
+   "file": "src/CWRationalProbabilityTotals.lean"
+  },
+  {
+   "name": "CWRationalRates",
+   "file": "src/CWRationalRates.lean"
+  },
+  {
+   "name": "CWRationalSixfoldAssembly",
+   "file": "src/CWRationalSixfoldAssembly.lean"
+  },
+  {
+   "name": "CWRationalSixfoldInterfaces",
+   "file": "src/CWRationalSixfoldInterfaces.lean"
+  },
+  {
+   "name": "CWRationalSplit",
+   "file": "src/CWRationalSplit.lean"
+  },
+  {
+   "name": "CWRationalStage",
+   "file": "src/CWRationalStage.lean"
+  },
+  {
+   "name": "CWRationalStageAssembly",
+   "file": "src/CWRationalStageAssembly.lean"
+  },
+  {
+   "name": "CWRationalStagePresentation",
+   "file": "src/CWRationalStagePresentation.lean"
+  },
+  {
+   "name": "CWRationalSupportedTotals",
+   "file": "src/CWRationalSupportedTotals.lean"
+  },
+  {
+   "name": "CWRegroup",
+   "file": "src/CWRegroup.lean"
+  },
+  {
+   "name": "CWRepairedTargets",
+   "file": "src/CWRepairedTargets.lean"
+  },
+  {
+   "name": "CWReprofile",
+   "file": "src/CWReprofile.lean"
+  },
+  {
+   "name": "CWReprofiledSource",
+   "file": "src/CWReprofiledSource.lean"
+  },
+  {
+   "name": "CWRetentionContinuity",
+   "file": "src/CWRetentionContinuity.lean"
+  },
+  {
+   "name": "CWRoleWindowRegions",
+   "file": "src/CWRoleWindowRegions.lean"
+  },
+  {
+   "name": "CWRoleWindowRouting",
+   "file": "src/CWRoleWindowRouting.lean"
+  },
+  {
+   "name": "CWRoleWindowUnrouting",
+   "file": "src/CWRoleWindowUnrouting.lean"
+  },
+  {
+   "name": "CWRootActiveCollisions",
+   "file": "src/CWRootActiveCollisions.lean"
+  },
+  {
+   "name": "CWRootApproximateCosts",
+   "file": "src/CWRootApproximateCosts.lean"
+  },
+  {
+   "name": "CWRootApproximateExtraction",
+   "file": "src/CWRootApproximateExtraction.lean"
+  },
+  {
+   "name": "CWRootAsymptotic",
+   "file": "src/CWRootAsymptotic.lean"
+  },
+  {
+   "name": "CWRootAsymptoticApproximate",
+   "file": "src/CWRootAsymptoticApproximate.lean"
+  },
+  {
+   "name": "CWRootCoarseEntropy",
+   "file": "src/CWRootCoarseEntropy.lean"
+  },
+  {
+   "name": "CWRootCoarseRates",
+   "file": "src/CWRootCoarseRates.lean"
+  },
+  {
+   "name": "CWRootCompatibility",
+   "file": "src/CWRootCompatibility.lean"
+  },
+  {
+   "name": "CWRootData",
+   "file": "src/CWRootData.lean"
+  },
+  {
+   "name": "CWRootDegreeControl",
+   "file": "src/CWRootDegreeControl.lean"
+  },
+  {
+   "name": "CWRootDegrees",
+   "file": "src/CWRootDegrees.lean"
+  },
+  {
+   "name": "CWRootExtractedTargets",
+   "file": "src/CWRootExtractedTargets.lean"
+  },
+  {
+   "name": "CWRootFineCollisions",
+   "file": "src/CWRootFineCollisions.lean"
+  },
+  {
+   "name": "CWRootFineRates",
+   "file": "src/CWRootFineRates.lean"
+  },
+  {
+   "name": "CWRootFineTypes",
+   "file": "src/CWRootFineTypes.lean"
+  },
+  {
+   "name": "CWRootGraph",
+   "file": "src/CWRootGraph.lean"
+  },
+  {
+   "name": "CWRootHashing",
+   "file": "src/CWRootHashing.lean"
+  },
+  {
+   "name": "CWRootNearbyRates",
+   "file": "src/CWRootNearbyRates.lean"
+  },
+  {
+   "name": "CWRootOrbitRates",
+   "file": "src/CWRootOrbitRates.lean"
+  },
+  {
+   "name": "CWRootOwnership",
+   "file": "src/CWRootOwnership.lean"
+  },
+  {
+   "name": "CWRootPrimeExtraction",
+   "file": "src/CWRootPrimeExtraction.lean"
+  },
+  {
+   "name": "CWRootProfileLaws",
+   "file": "src/CWRootProfileLaws.lean"
+  },
+  {
+   "name": "CWRootProfiles",
+   "file": "src/CWRootProfiles.lean"
+  },
+  {
+   "name": "CWRootRateExtraction",
+   "file": "src/CWRootRateExtraction.lean"
+  },
+  {
+   "name": "CWRootRationalData",
+   "file": "src/CWRootRationalData.lean"
+  },
+  {
+   "name": "CWRootRationalExtraction",
+   "file": "src/CWRootRationalExtraction.lean"
+  },
+  {
+   "name": "CWRootRepair",
+   "file": "src/CWRootRepair.lean"
+  },
+  {
+   "name": "CWRootRetentionContinuity",
+   "file": "src/CWRootRetentionContinuity.lean"
+  },
+  {
+   "name": "CWRootSelection",
+   "file": "src/CWRootSelection.lean"
+  },
+  {
+   "name": "CWRootTargetCoefficients",
+   "file": "src/CWRootTargetCoefficients.lean"
+  },
+  {
+   "name": "CWRootTargetMaps",
+   "file": "src/CWRootTargetMaps.lean"
+  },
+  {
+   "name": "CWRootTargetOwnership",
+   "file": "src/CWRootTargetOwnership.lean"
+  },
+  {
+   "name": "CWRootTargetSymmetry",
+   "file": "src/CWRootTargetSymmetry.lean"
+  },
+  {
+   "name": "CWRootWeightedExtraction",
+   "file": "src/CWRootWeightedExtraction.lean"
+  },
+  {
+   "name": "CWSequentialData",
+   "file": "src/CWSequentialData.lean"
+  },
+  {
+   "name": "CWSequentialExtraction",
+   "file": "src/CWSequentialExtraction.lean"
+  },
+  {
+   "name": "CWShapePermutations",
+   "file": "src/CWShapePermutations.lean"
+  },
+  {
+   "name": "CWTargetCoefficients",
+   "file": "src/CWTargetCoefficients.lean"
+  },
+  {
+   "name": "CWTargetConcentration",
+   "file": "src/CWTargetConcentration.lean"
+  },
+  {
+   "name": "CWTargetMaps",
+   "file": "src/CWTargetMaps.lean"
+  },
+  {
+   "name": "CWTargetOwnership",
+   "file": "src/CWTargetOwnership.lean"
+  },
+  {
+   "name": "CWTargetSupport",
+   "file": "src/CWTargetSupport.lean"
+  },
+  {
+   "name": "CWTargetSymmetry",
+   "file": "src/CWTargetSymmetry.lean"
+  },
+  {
+   "name": "CWTerminalAlphabet",
+   "file": "src/CWTerminalAlphabet.lean"
+  },
+  {
+   "name": "CWTerminalCenters",
+   "file": "src/CWTerminalCenters.lean"
+  },
+  {
+   "name": "CWTerminalCoarse",
+   "file": "src/CWTerminalCoarse.lean"
+  },
+  {
+   "name": "CWTerminalCounts",
+   "file": "src/CWTerminalCounts.lean"
+  },
+  {
+   "name": "CWTerminalData",
+   "file": "src/CWTerminalData.lean"
+  },
+  {
+   "name": "CWTerminalDegreeControl",
+   "file": "src/CWTerminalDegreeControl.lean"
+  },
+  {
+   "name": "CWTerminalDegreeRate",
+   "file": "src/CWTerminalDegreeRate.lean"
+  },
+  {
+   "name": "CWTerminalExtraction",
+   "file": "src/CWTerminalExtraction.lean"
+  },
+  {
+   "name": "CWTerminalInterfaces",
+   "file": "src/CWTerminalInterfaces.lean"
+  },
+  {
+   "name": "CWTerminalLaws",
+   "file": "src/CWTerminalLaws.lean"
+  },
+  {
+   "name": "CWTerminalMatrices",
+   "file": "src/CWTerminalMatrices.lean"
+  },
+  {
+   "name": "CWTerminalMatrixRates",
+   "file": "src/CWTerminalMatrixRates.lean"
+  },
+  {
+   "name": "CWTerminalMixedTarget",
+   "file": "src/CWTerminalMixedTarget.lean"
+  },
+  {
+   "name": "CWTerminalOrbitLaws",
+   "file": "src/CWTerminalOrbitLaws.lean"
+  },
+  {
+   "name": "CWTerminalParentLaws",
+   "file": "src/CWTerminalParentLaws.lean"
+  },
+  {
+   "name": "CWTerminalProbabilities",
+   "file": "src/CWTerminalProbabilities.lean"
+  },
+  {
+   "name": "CWTerminalRateBounds",
+   "file": "src/CWTerminalRateBounds.lean"
+  },
+  {
+   "name": "CWTerminalRateScaling",
+   "file": "src/CWTerminalRateScaling.lean"
+  },
+  {
+   "name": "CWTerminalRetention",
+   "file": "src/CWTerminalRetention.lean"
+  },
+  {
+   "name": "CWTerminalScaling",
+   "file": "src/CWTerminalScaling.lean"
+  },
+  {
+   "name": "CWTypedDimensions",
+   "file": "src/CWTypedDimensions.lean"
+  },
+  {
+   "name": "CWTypedInterfaces",
+   "file": "src/CWTypedInterfaces.lean"
+  },
+  {
+   "name": "CWUniformPairing",
+   "file": "src/CWUniformPairing.lean"
+  },
+  {
+   "name": "CWUniformWindowEntropy",
+   "file": "src/CWUniformWindowEntropy.lean"
+  },
+  {
+   "name": "CWWindowCollisionRates",
+   "file": "src/CWWindowCollisionRates.lean"
+  },
+  {
+   "name": "CWWindowEntropy",
+   "file": "src/CWWindowEntropy.lean"
+  },
+  {
+   "name": "CWWindowedInterfaces",
+   "file": "src/CWWindowedInterfaces.lean"
+  },
+  {
+   "name": "CWWindowedOwners",
+   "file": "src/CWWindowedOwners.lean"
+  },
+  {
+   "name": "CWWindowedSource",
+   "file": "src/CWWindowedSource.lean"
+  },
+  {
+   "name": "CWZeroContext",
+   "file": "src/CWZeroContext.lean"
+  },
+  {
+   "name": "CWZeroCoordinateRestrictions",
+   "file": "src/CWZeroCoordinateRestrictions.lean"
+  },
+  {
+   "name": "CWZeroExact",
+   "file": "src/CWZeroExact.lean"
+  },
+  {
+   "name": "CWZeroMatrix",
+   "file": "src/CWZeroMatrix.lean"
+  },
+  {
+   "name": "CWZeroOrbitDimensions",
+   "file": "src/CWZeroOrbitDimensions.lean"
+  },
+  {
+   "name": "CWZeroOrbitExtraction",
+   "file": "src/CWZeroOrbitExtraction.lean"
+  },
+  {
+   "name": "CWZeroPower",
+   "file": "src/CWZeroPower.lean"
+  },
+  {
+   "name": "CWZeroRationalDimensions",
+   "file": "src/CWZeroRationalDimensions.lean"
+  },
+  {
+   "name": "CWZeroRationalExtraction",
+   "file": "src/CWZeroRationalExtraction.lean"
+  },
+  {
+   "name": "CWZeroSlice",
+   "file": "src/CWZeroSlice.lean"
+  },
+  {
+   "name": "CWZeroWindowedMatrix",
+   "file": "src/CWZeroWindowedMatrix.lean"
+  },
+  {
+   "name": "CanonicalZeroShape",
+   "file": "src/CanonicalZeroShape.lean"
+  },
+  {
+   "name": "CertificateData",
+   "file": "src/CertificateData.lean"
+  },
+  {
+   "name": "CertifiedConstants",
+   "file": "src/CertifiedConstants.lean"
+  },
+  {
+   "name": "CertifiedDimensionRate0",
+   "file": "src/CertifiedDimensionRate0.lean"
+  },
+  {
+   "name": "CertifiedDimensionRate1",
+   "file": "src/CertifiedDimensionRate1.lean"
+  },
+  {
+   "name": "CertifiedDimensionRate2",
+   "file": "src/CertifiedDimensionRate2.lean"
+  },
+  {
+   "name": "CertifiedLevel3Rate0",
+   "file": "src/CertifiedLevel3Rate0.lean"
+  },
+  {
+   "name": "CertifiedLevel3Rate1",
+   "file": "src/CertifiedLevel3Rate1.lean"
+  },
+  {
+   "name": "CertifiedLevel3Rate2",
+   "file": "src/CertifiedLevel3Rate2.lean"
+  },
+  {
+   "name": "CertifiedLevel4Rate0",
+   "file": "src/CertifiedLevel4Rate0.lean"
+  },
+  {
+   "name": "CertifiedLevel4Rate1",
+   "file": "src/CertifiedLevel4Rate1.lean"
+  },
+  {
+   "name": "CertifiedLevel4Rate2",
+   "file": "src/CertifiedLevel4Rate2.lean"
+  },
+  {
+   "name": "CertifiedLogBlocks",
+   "file": "src/CertifiedLogBlocks.lean"
+  },
+  {
+   "name": "CertifiedLogGrid",
+   "file": "src/CertifiedLogGrid.lean"
+  },
+  {
+   "name": "CertifiedLogTraces",
+   "file": "src/CertifiedLogTraces.lean"
+  },
+  {
+   "name": "CertifiedPipelineScalar",
+   "file": "src/CertifiedPipelineScalar.lean"
+  },
+  {
+   "name": "CertifiedRootParameters",
+   "file": "src/CertifiedRootParameters.lean"
+  },
+  {
+   "name": "CertifiedRootRate0",
+   "file": "src/CertifiedRootRate0.lean"
+  },
+  {
+   "name": "CertifiedRootRate1",
+   "file": "src/CertifiedRootRate1.lean"
+  },
+  {
+   "name": "CertifiedRootRate2",
+   "file": "src/CertifiedRootRate2.lean"
+  },
+  {
+   "name": "CertifiedTerminalParameters",
+   "file": "src/CertifiedTerminalParameters.lean"
+  },
+  {
+   "name": "CertifiedTerminalRate0",
+   "file": "src/CertifiedTerminalRate0.lean"
+  },
+  {
+   "name": "CertifiedTerminalRate1",
+   "file": "src/CertifiedTerminalRate1.lean"
+  },
+  {
+   "name": "CertifiedTerminalRate2",
+   "file": "src/CertifiedTerminalRate2.lean"
+  },
+  {
+   "name": "CertifiedZeroOrbitExtraction",
+   "file": "src/CertifiedZeroOrbitExtraction.lean"
+  },
+  {
+   "name": "Challenge",
+   "file": "Challenge.lean"
+  },
+  {
+   "name": "CheckedIndexTable",
+   "file": "src/CheckedIndexTable.lean"
+  },
+  {
+   "name": "CoarseLogExpressions",
+   "file": "src/CoarseLogExpressions.lean"
+  },
+  {
+   "name": "CoarseRetentionRates",
+   "file": "src/CoarseRetentionRates.lean"
+  },
+  {
+   "name": "CoarsenedCompatibility",
+   "file": "src/CoarsenedCompatibility.lean"
+  },
+  {
+   "name": "CollisionHoles",
+   "file": "src/CollisionHoles.lean"
+  },
+  {
+   "name": "CompatibilitySymmetry",
+   "file": "src/CompatibilitySymmetry.lean"
+  },
+  {
+   "name": "ConcentrationRepair",
+   "file": "src/ConcentrationRepair.lean"
+  },
+  {
+   "name": "ConstrainedCounting",
+   "file": "src/ConstrainedCounting.lean"
+  },
+  {
+   "name": "ContextBatchRepair",
+   "file": "src/ContextBatchRepair.lean"
+  },
+  {
+   "name": "ContextComposition",
+   "file": "src/ContextComposition.lean"
+  },
+  {
+   "name": "ContextCopies",
+   "file": "src/ContextCopies.lean"
+  },
+  {
+   "name": "ContextExtraction",
+   "file": "src/ContextExtraction.lean"
+  },
+  {
+   "name": "ContextFactorGrouping",
+   "file": "src/ContextFactorGrouping.lean"
+  },
+  {
+   "name": "ContextHeterogeneousBatching",
+   "file": "src/ContextHeterogeneousBatching.lean"
+  },
+  {
+   "name": "ContextHeterogeneousFlatten",
+   "file": "src/ContextHeterogeneousFlatten.lean"
+  },
+  {
+   "name": "ContextHeterogeneousGluing",
+   "file": "src/ContextHeterogeneousGluing.lean"
+  },
+  {
+   "name": "ContextHeterogeneousReductions",
+   "file": "src/ContextHeterogeneousReductions.lean"
+  },
+  {
+   "name": "ContextMatrix",
+   "file": "src/ContextMatrix.lean"
+  },
+  {
+   "name": "ContextMatrixProducts",
+   "file": "src/ContextMatrixProducts.lean"
+  },
+  {
+   "name": "ContextOperations",
+   "file": "src/ContextOperations.lean"
+  },
+  {
+   "name": "ContextProductReductions",
+   "file": "src/ContextProductReductions.lean"
+  },
+  {
+   "name": "ContextProducts",
+   "file": "src/ContextProducts.lean"
+  },
+  {
+   "name": "ContextRank",
+   "file": "src/ContextRank.lean"
+  },
+  {
+   "name": "ContextRepair",
+   "file": "src/ContextRepair.lean"
+  },
+  {
+   "name": "ContextRestrictions",
+   "file": "src/ContextRestrictions.lean"
+  },
+  {
+   "name": "ContextSequence",
+   "file": "src/ContextSequence.lean"
+  },
+  {
+   "name": "ContextSequenceRates",
+   "file": "src/ContextSequenceRates.lean"
+  },
+  {
+   "name": "ContextSubtypeExtension",
+   "file": "src/ContextSubtypeExtension.lean"
+  },
+  {
+   "name": "ContextTypeGluing",
+   "file": "src/ContextTypeGluing.lean"
+  },
+  {
+   "name": "ContextUniformCopies",
+   "file": "src/ContextUniformCopies.lean"
+  },
+  {
+   "name": "CoordinateRestriction",
+   "file": "src/CoordinateRestriction.lean"
+  },
+  {
+   "name": "CoppersmithWinograd",
+   "file": "src/CoppersmithWinograd.lean"
+  },
+  {
+   "name": "CubicLogBounds",
+   "file": "src/CubicLogBounds.lean"
+  },
+  {
+   "name": "CubicParameterWitness",
+   "file": "src/CubicParameterWitness.lean"
+  },
+  {
+   "name": "CubicTableLogBounds",
+   "file": "src/CubicTableLogBounds.lean"
+  },
+  {
+   "name": "DegenerationExponent",
+   "file": "src/DegenerationExponent.lean"
+  },
+  {
+   "name": "DyadicData",
+   "file": "src/DyadicData.lean"
+  },
+  {
+   "name": "DyadicOrbitSupport",
+   "file": "src/DyadicOrbitSupport.lean"
+  },
+  {
+   "name": "DyadicPopulationArithmetic",
+   "file": "src/DyadicPopulationArithmetic.lean"
+  },
+  {
+   "name": "DyadicRowMetadata",
+   "file": "src/DyadicRowMetadata.lean"
+  },
+  {
+   "name": "DyadicShapeData",
+   "file": "src/DyadicShapeData.lean"
+  },
+  {
+   "name": "EmpiricalTypes",
+   "file": "src/EmpiricalTypes.lean"
+  },
+  {
+   "name": "EntropyBounds",
+   "file": "src/EntropyBounds.lean"
+  },
+  {
+   "name": "EntropyPointMass",
+   "file": "src/EntropyPointMass.lean"
+  },
+  {
+   "name": "EntropyRelabeling",
+   "file": "src/EntropyRelabeling.lean"
+  },
+  {
+   "name": "EventualContextSequence",
+   "file": "src/EventualContextSequence.lean"
+  },
+  {
+   "name": "ExactInterface",
+   "file": "src/ExactInterface.lean"
+  },
+  {
+   "name": "ExponentialPowerBounds",
+   "file": "src/ExponentialPowerBounds.lean"
+  },
+  {
+   "name": "ExtractionExponent",
+   "file": "src/ExtractionExponent.lean"
+  },
+  {
+   "name": "FactorialEntropy",
+   "file": "src/FactorialEntropy.lean"
+  },
+  {
+   "name": "FineOrbitComplement",
+   "file": "src/FineOrbitComplement.lean"
+  },
+  {
+   "name": "FineOrbitStatistics",
+   "file": "src/FineOrbitStatistics.lean"
+  },
+  {
+   "name": "FineWordOrbits",
+   "file": "src/FineWordOrbits.lean"
+  },
+  {
+   "name": "FiniteCover",
+   "file": "src/FiniteCover.lean"
+  },
+  {
+   "name": "FiniteIndexBlockComposition",
+   "file": "src/FiniteIndexBlockComposition.lean"
+  },
+  {
+   "name": "FiniteIndexBlocks",
+   "file": "src/FiniteIndexBlocks.lean"
+  },
+  {
+   "name": "FiniteMaximumRates",
+   "file": "src/FiniteMaximumRates.lean"
+  },
+  {
+   "name": "FiniteOrbitData",
+   "file": "src/FiniteOrbitData.lean"
+  },
+  {
+   "name": "FiniteOrbitProducts",
+   "file": "src/FiniteOrbitProducts.lean"
+  },
+  {
+   "name": "FiniteOrbitReindexing",
+   "file": "src/FiniteOrbitReindexing.lean"
+  },
+  {
+   "name": "FiniteRepair",
+   "file": "src/FiniteRepair.lean"
+  },
+  {
+   "name": "FiniteSampling",
+   "file": "src/FiniteSampling.lean"
+  },
+  {
+   "name": "FiniteSelection",
+   "file": "src/FiniteSelection.lean"
+  },
+  {
+   "name": "FiniteTensorEquality",
+   "file": "src/FiniteTensorEquality.lean"
+  },
+  {
+   "name": "FiniteTensorFamily",
+   "file": "src/FiniteTensorFamily.lean"
+  },
+  {
+   "name": "FixedCubicLogBounds",
+   "file": "src/FixedCubicLogBounds.lean"
+  },
+  {
+   "name": "FixedIntegerIntervals",
+   "file": "src/FixedIntegerIntervals.lean"
+  },
+  {
+   "name": "FixedLogGrid",
+   "file": "src/FixedLogGrid.lean"
+  },
+  {
+   "name": "GibbsCertificateData",
+   "file": "src/GibbsCertificateData.lean"
+  },
+  {
+   "name": "GibbsCounting",
+   "file": "src/GibbsCounting.lean"
+  },
+  {
+   "name": "GibbsData",
+   "file": "src/GibbsData.lean"
+  },
+  {
+   "name": "GibbsRowMetadata",
+   "file": "src/GibbsRowMetadata.lean"
+  },
+  {
+   "name": "GroupedConcentration",
+   "file": "src/GroupedConcentration.lean"
+  },
+  {
+   "name": "GroupedMoments",
+   "file": "src/GroupedMoments.lean"
+  },
+  {
+   "name": "HashCollisionRates",
+   "file": "src/HashCollisionRates.lean"
+  },
+  {
+   "name": "HashConditional",
+   "file": "src/HashConditional.lean"
+  },
+  {
+   "name": "HashCounting",
+   "file": "src/HashCounting.lean"
+  },
+  {
+   "name": "HashEdges",
+   "file": "src/HashEdges.lean"
+  },
+  {
+   "name": "HashIntegerWords",
+   "file": "src/HashIntegerWords.lean"
+  },
+  {
+   "name": "HashModulus",
+   "file": "src/HashModulus.lean"
+  },
+  {
+   "name": "HashSurvivors",
+   "file": "src/HashSurvivors.lean"
+  },
+  {
+   "name": "HeterogeneousConcentration",
+   "file": "src/HeterogeneousConcentration.lean"
+  },
+  {
+   "name": "HeterogeneousDependentSum",
+   "file": "src/HeterogeneousDependentSum.lean"
+  },
+  {
+   "name": "HeterogeneousExchange",
+   "file": "src/HeterogeneousExchange.lean"
+  },
+  {
+   "name": "HeterogeneousFiniteRegrouping",
+   "file": "src/HeterogeneousFiniteRegrouping.lean"
+  },
+  {
+   "name": "HeterogeneousFlatten",
+   "file": "src/HeterogeneousFlatten.lean"
+  },
+  {
+   "name": "HeterogeneousInterface",
+   "file": "src/HeterogeneousInterface.lean"
+  },
+  {
+   "name": "HeterogeneousMasks",
+   "file": "src/HeterogeneousMasks.lean"
+  },
+  {
+   "name": "HeterogeneousPartition",
+   "file": "src/HeterogeneousPartition.lean"
+  },
+  {
+   "name": "HeterogeneousProductRegrouping",
+   "file": "src/HeterogeneousProductRegrouping.lean"
+  },
+  {
+   "name": "HeterogeneousProducts",
+   "file": "src/HeterogeneousProducts.lean"
+  },
+  {
+   "name": "HeterogeneousRegrouping",
+   "file": "src/HeterogeneousRegrouping.lean"
+  },
+  {
+   "name": "HeterogeneousTypeGluing",
+   "file": "src/HeterogeneousTypeGluing.lean"
+  },
+  {
+   "name": "IncidenceRates",
+   "file": "src/IncidenceRates.lean"
+  },
+  {
+   "name": "IndexedCertificateRows",
+   "file": "src/IndexedCertificateRows.lean"
+  },
+  {
+   "name": "IndicatorConcentration",
+   "file": "src/IndicatorConcentration.lean"
+  },
+  {
+   "name": "IntegerLogLinearCertificates",
+   "file": "src/IntegerLogLinearCertificates.lean"
+  },
+  {
+   "name": "IntegerLogParameter",
+   "file": "src/IntegerLogParameter.lean"
+  },
+  {
+   "name": "IntegerLogQuery",
+   "file": "src/IntegerLogQuery.lean"
+  },
+  {
+   "name": "InterfaceContinuity",
+   "file": "src/InterfaceContinuity.lean"
+  },
+  {
+   "name": "IntervalPowerTrace",
+   "file": "src/IntervalPowerTrace.lean"
+  },
+  {
+   "name": "LabelledConcentration",
+   "file": "src/LabelledConcentration.lean"
+  },
+  {
+   "name": "Level3TransitionRegrouping",
+   "file": "src/Level3TransitionRegrouping.lean"
+  },
+  {
+   "name": "LinearSymmetryRepair",
+   "file": "src/LinearSymmetryRepair.lean"
+  },
+  {
+   "name": "LocalLogBounds",
+   "file": "src/LocalLogBounds.lean"
+  },
+  {
+   "name": "LogEnclosures",
+   "file": "src/LogEnclosures.lean"
+  },
+  {
+   "name": "LogarithmicLoss",
+   "file": "src/LogarithmicLoss.lean"
+  },
+  {
+   "name": "MassEntropy",
+   "file": "src/MassEntropy.lean"
+  },
+  {
+   "name": "MassEntropyContinuity",
+   "file": "src/MassEntropyContinuity.lean"
+  },
+  {
+   "name": "MatrixBatching",
+   "file": "src/MatrixBatching.lean"
+  },
+  {
+   "name": "MatrixBounds",
+   "file": "src/MatrixBounds.lean"
+  },
+  {
+   "name": "MatrixBoundsStatement",
+   "file": "src/MatrixBoundsStatement.lean"
+  },
+  {
+   "name": "MatrixCoordinateRestrictions",
+   "file": "src/MatrixCoordinateRestrictions.lean"
+  },
+  {
+   "name": "MatrixDegeneration",
+   "file": "src/MatrixDegeneration.lean"
+  },
+  {
+   "name": "MatrixExponent",
+   "file": "src/MatrixExponent.lean"
+  },
+  {
+   "name": "MatrixFamilyVolume",
+   "file": "src/MatrixFamilyVolume.lean"
+  },
+  {
+   "name": "MatrixProductVolume",
+   "file": "src/MatrixProductVolume.lean"
+  },
+  {
+   "name": "MatrixTensor",
+   "file": "src/MatrixTensor.lean"
+  },
+  {
+   "name": "MixedSelection",
+   "file": "src/MixedSelection.lean"
+  },
+  {
+   "name": "NamedPopulationAllocation",
+   "file": "src/NamedPopulationAllocation.lean"
+  },
+  {
+   "name": "NormalizedLogTrace",
+   "file": "src/NormalizedLogTrace.lean"
+  },
+  {
+   "name": "OrbitDiracLaws",
+   "file": "src/OrbitDiracLaws.lean"
+  },
+  {
+   "name": "OrbitEntropy",
+   "file": "src/OrbitEntropy.lean"
+  },
+  {
+   "name": "OrbitExpectations",
+   "file": "src/OrbitExpectations.lean"
+  },
+  {
+   "name": "OrbitLogExpressions",
+   "file": "src/OrbitLogExpressions.lean"
+  },
+  {
+   "name": "OrbitRationalProfiles",
+   "file": "src/OrbitRationalProfiles.lean"
+  },
+  {
+   "name": "OrbitSymmetryTransport",
+   "file": "src/OrbitSymmetryTransport.lean"
+  },
+  {
+   "name": "OrientedBatches",
+   "file": "src/OrientedBatches.lean"
+  },
+  {
+   "name": "OrientedCertificates",
+   "file": "src/OrientedCertificates.lean"
+  },
+  {
+   "name": "OrientedHeterogeneousProducts",
+   "file": "src/OrientedHeterogeneousProducts.lean"
+  },
+  {
+   "name": "OrientedMatrixFactors",
+   "file": "src/OrientedMatrixFactors.lean"
+  },
+  {
+   "name": "OrientedZeroLawIdentities",
+   "file": "src/OrientedZeroLawIdentities.lean"
+  },
+  {
+   "name": "OwnedTargets",
+   "file": "src/OwnedTargets.lean"
+  },
+  {
+   "name": "PairOrbitEncoding",
+   "file": "src/PairOrbitEncoding.lean"
+  },
+  {
+   "name": "PairOrbitSymmetries",
+   "file": "src/PairOrbitSymmetries.lean"
+  },
+  {
+   "name": "PairedCoarse3CertificateTable",
+   "file": "src/PairedCoarse3CertificateTable.lean"
+  },
+  {
+   "name": "PairedCoarse3Certified",
+   "file": "src/PairedCoarse3Certified.lean"
+  },
+  {
+   "name": "PairedCoarse4CertificateTable",
+   "file": "src/PairedCoarse4CertificateTable.lean"
+  },
+  {
+   "name": "PairedCoarse4Certified",
+   "file": "src/PairedCoarse4Certified.lean"
+  },
+  {
+   "name": "PairedCoarseColumns",
+   "file": "src/PairedCoarseColumns.lean"
+  },
+  {
+   "name": "PairedFine3TableA0",
+   "file": "src/PairedFine3TableA0.lean"
+  },
+  {
+   "name": "PairedFine3TableA1",
+   "file": "src/PairedFine3TableA1.lean"
+  },
+  {
+   "name": "PairedFine4TableA0",
+   "file": "src/PairedFine4TableA0.lean"
+  },
+  {
+   "name": "PairedFine4TableA1",
+   "file": "src/PairedFine4TableA1.lean"
+  },
+  {
+   "name": "PairingConcentration",
+   "file": "src/PairingConcentration.lean"
+  },
+  {
+   "name": "PairingSectorTypes",
+   "file": "src/PairingSectorTypes.lean"
+  },
+  {
+   "name": "ParameterIndexData",
+   "file": "src/ParameterIndexData.lean"
+  },
+  {
+   "name": "ParameterIndexMetadata",
+   "file": "src/ParameterIndexMetadata.lean"
+  },
+  {
+   "name": "PartialSectorTypes",
+   "file": "src/PartialSectorTypes.lean"
+  },
+  {
+   "name": "PartialWindowReindexing",
+   "file": "src/PartialWindowReindexing.lean"
+  },
+  {
+   "name": "PartitionedContextExtraction",
+   "file": "src/PartitionedContextExtraction.lean"
+  },
+  {
+   "name": "PhysicalRoleRouting",
+   "file": "src/PhysicalRoleRouting.lean"
+  },
+  {
+   "name": "PhysicalRoles",
+   "file": "src/PhysicalRoles.lean"
+  },
+  {
+   "name": "PipelineActiveRates",
+   "file": "src/PipelineActiveRates.lean"
+  },
+  {
+   "name": "PipelineNumericIntervals",
+   "file": "src/PipelineNumericIntervals.lean"
+  },
+  {
+   "name": "PipelineRateScaling",
+   "file": "src/PipelineRateScaling.lean"
+  },
+  {
+   "name": "PipelineSchedule",
+   "file": "src/PipelineSchedule.lean"
+  },
+  {
+   "name": "PipelineScheduleRates",
+   "file": "src/PipelineScheduleRates.lean"
+  },
+  {
+   "name": "PipelineTensorSchedule",
+   "file": "src/PipelineTensorSchedule.lean"
+  },
+  {
+   "name": "PolynomialDegeneration",
+   "file": "src/PolynomialDegeneration.lean"
+  },
+  {
+   "name": "PooledCompatibility",
+   "file": "src/PooledCompatibility.lean"
+  },
+  {
+   "name": "PooledEntropy",
+   "file": "src/PooledEntropy.lean"
+  },
+  {
+   "name": "PooledMassEntropy",
+   "file": "src/PooledMassEntropy.lean"
+  },
+  {
+   "name": "PositiveLookupEquivalence",
+   "file": "src/PositiveLookupEquivalence.lean"
+  },
+  {
+   "name": "ProductDegreeRates",
+   "file": "src/ProductDegreeRates.lean"
+  },
+  {
+   "name": "ProductHoleCounts",
+   "file": "src/ProductHoleCounts.lean"
+  },
+  {
+   "name": "ProductSampling",
+   "file": "src/ProductSampling.lean"
+  },
+  {
+   "name": "ProfileCountRates",
+   "file": "src/ProfileCountRates.lean"
+  },
+  {
+   "name": "ProgressionBuckets",
+   "file": "src/ProgressionBuckets.lean"
+  },
+  {
+   "name": "RankAmplification",
+   "file": "src/RankAmplification.lean"
+  },
+  {
+   "name": "RationalIntervalOperations",
+   "file": "src/RationalIntervalOperations.lean"
+  },
+  {
+   "name": "RationalIntervalRounding",
+   "file": "src/RationalIntervalRounding.lean"
+  },
+  {
+   "name": "RationalIntervals",
+   "file": "src/RationalIntervals.lean"
+  },
+  {
+   "name": "RationalLogExpressions",
+   "file": "src/RationalLogExpressions.lean"
+  },
+  {
+   "name": "RationalLogNormalization",
+   "file": "src/RationalLogNormalization.lean"
+  },
+  {
+   "name": "RationalOrbitArithmetic",
+   "file": "src/RationalOrbitArithmetic.lean"
+  },
+  {
+   "name": "RationalOrbitValidity",
+   "file": "src/RationalOrbitValidity.lean"
+  },
+  {
+   "name": "RationalSectorAllocation",
+   "file": "src/RationalSectorAllocation.lean"
+  },
+  {
+   "name": "RectangularBatches",
+   "file": "src/RectangularBatches.lean"
+  },
+  {
+   "name": "RectangularExtractionExponent",
+   "file": "src/RectangularExtractionExponent.lean"
+  },
+  {
+   "name": "RectangularSum",
+   "file": "src/RectangularSum.lean"
+  },
+  {
+   "name": "RefinedOwnership",
+   "file": "src/RefinedOwnership.lean"
+  },
+  {
+   "name": "RegularFibers",
+   "file": "src/RegularFibers.lean"
+  },
+  {
+   "name": "RepairRates",
+   "file": "src/RepairRates.lean"
+  },
+  {
+   "name": "RepairedTargets",
+   "file": "src/RepairedTargets.lean"
+  },
+  {
+   "name": "RetentionLossRates",
+   "file": "src/RetentionLossRates.lean"
+  },
+  {
+   "name": "RootCoarseEnumeration",
+   "file": "src/RootCoarseEnumeration.lean"
+  },
+  {
+   "name": "RootCoarseKernelNormalization",
+   "file": "src/RootCoarseKernelNormalization.lean"
+  },
+  {
+   "name": "RootFineCacheAssembly",
+   "file": "src/RootFineCacheAssembly.lean"
+  },
+  {
+   "name": "RootFineCachedParent4",
+   "file": "src/RootFineCachedParent4.lean"
+  },
+  {
+   "name": "RootFineCachedRootExpression",
+   "file": "src/RootFineCachedRootExpression.lean"
+  },
+  {
+   "name": "RootFineCertificateExpressions",
+   "file": "src/RootFineCertificateExpressions.lean"
+  },
+  {
+   "name": "RootFineColumnConvolution",
+   "file": "src/RootFineColumnConvolution.lean"
+  },
+  {
+   "name": "RootFineExecutablePools",
+   "file": "src/RootFineExecutablePools.lean"
+  },
+  {
+   "name": "RootFineIntegerMixture",
+   "file": "src/RootFineIntegerMixture.lean"
+  },
+  {
+   "name": "RootFineIntegerParent",
+   "file": "src/RootFineIntegerParent.lean"
+  },
+  {
+   "name": "RootFineIntegerPoolValidity",
+   "file": "src/RootFineIntegerPoolValidity.lean"
+  },
+  {
+   "name": "RootFineIntegerPools",
+   "file": "src/RootFineIntegerPools.lean"
+  },
+  {
+   "name": "RootFineIntegerVectorCheck",
+   "file": "src/RootFineIntegerVectorCheck.lean"
+  },
+  {
+   "name": "RootFineKernelMergeNormalization",
+   "file": "src/RootFineKernelMergeNormalization.lean"
+  },
+  {
+   "name": "RootFineParent3CacheTable",
+   "file": "src/RootFineParent3CacheTable.lean"
+  },
+  {
+   "name": "RootFineParent4CacheTable",
+   "file": "src/RootFineParent4CacheTable.lean"
+  },
+  {
+   "name": "RootFineScaledPoolExpressions",
+   "file": "src/RootFineScaledPoolExpressions.lean"
+  },
+  {
+   "name": "RootFineSingletonPools",
+   "file": "src/RootFineSingletonPools.lean"
+  },
+  {
+   "name": "RootFineSparseVectorCheck",
+   "file": "src/RootFineSparseVectorCheck.lean"
+  },
+  {
+   "name": "RootLogExpressions",
+   "file": "src/RootLogExpressions.lean"
+  },
+  {
+   "name": "RoundedLogSeries",
+   "file": "src/RoundedLogSeries.lean"
+  },
+  {
+   "name": "SamplingBounds",
+   "file": "src/SamplingBounds.lean"
+  },
+  {
+   "name": "ScaledLogTrace",
+   "file": "src/ScaledLogTrace.lean"
+  },
+  {
+   "name": "ScaledSectorAllocation",
+   "file": "src/ScaledSectorAllocation.lean"
+  },
+  {
+   "name": "SectorAllocation",
+   "file": "src/SectorAllocation.lean"
+  },
+  {
+   "name": "SectorTypes",
+   "file": "src/SectorTypes.lean"
+  },
+  {
+   "name": "SectorWindows",
+   "file": "src/SectorWindows.lean"
+  },
+  {
+   "name": "SelectedTargets",
+   "file": "src/SelectedTargets.lean"
+  },
+  {
+   "name": "SequentialExtraction",
+   "file": "src/SequentialExtraction.lean"
+  },
+  {
+   "name": "ShapeAlphabet",
+   "file": "src/ShapeAlphabet.lean"
+  },
+  {
+   "name": "ShapePermutationComposition",
+   "file": "src/ShapePermutationComposition.lean"
+  },
+  {
+   "name": "ShapePermutations",
+   "file": "src/ShapePermutations.lean"
+  },
+  {
+   "name": "SharedModulusRates",
+   "file": "src/SharedModulusRates.lean"
+  },
+  {
+   "name": "SixfoldComposition",
+   "file": "src/SixfoldComposition.lean"
+  },
+  {
+   "name": "SixfoldExtraction",
+   "file": "src/SixfoldExtraction.lean"
+  },
+  {
+   "name": "Solution",
+   "file": "Solution.lean"
+  },
+  {
+   "name": "SparseRepair",
+   "file": "src/SparseRepair.lean"
+  },
+  {
+   "name": "SplitCertificateData",
+   "file": "src/SplitCertificateData.lean"
+  },
+  {
+   "name": "SplitData",
+   "file": "src/SplitData.lean"
+  },
+  {
+   "name": "SplitPairing",
+   "file": "src/SplitPairing.lean"
+  },
+  {
+   "name": "SplitRowMetadata",
+   "file": "src/SplitRowMetadata.lean"
+  },
+  {
+   "name": "SplitSemantics",
+   "file": "src/SplitSemantics.lean"
+  },
+  {
+   "name": "SubtypeExtension",
+   "file": "src/SubtypeExtension.lean"
+  },
+  {
+   "name": "SuppliedAllocationWindows",
+   "file": "src/SuppliedAllocationWindows.lean"
+  },
+  {
+   "name": "SuppliedBatchTensors",
+   "file": "src/SuppliedBatchTensors.lean"
+  },
+  {
+   "name": "SuppliedBatchTransitions",
+   "file": "src/SuppliedBatchTransitions.lean"
+  },
+  {
+   "name": "SuppliedBatchWidths",
+   "file": "src/SuppliedBatchWidths.lean"
+  },
+  {
+   "name": "SuppliedCanonicalStages",
+   "file": "src/SuppliedCanonicalStages.lean"
+  },
+  {
+   "name": "SuppliedCertifiedAssembly",
+   "file": "src/SuppliedCertifiedAssembly.lean"
+  },
+  {
+   "name": "SuppliedCertifiedPipeline",
+   "file": "src/SuppliedCertifiedPipeline.lean"
+  },
+  {
+   "name": "SuppliedChildEquivalences",
+   "file": "src/SuppliedChildEquivalences.lean"
+  },
+  {
+   "name": "SuppliedChildKinds",
+   "file": "src/SuppliedChildKinds.lean"
+  },
+  {
+   "name": "SuppliedCompletedMatrix",
+   "file": "src/SuppliedCompletedMatrix.lean"
+  },
+  {
+   "name": "SuppliedCompletedMatrixData",
+   "file": "src/SuppliedCompletedMatrixData.lean"
+  },
+  {
+   "name": "SuppliedDimensionBlocks",
+   "file": "src/SuppliedDimensionBlocks.lean"
+  },
+  {
+   "name": "SuppliedDimensionCertificateCuts0",
+   "file": "src/SuppliedDimensionCertificateCuts0.lean"
+  },
+  {
+   "name": "SuppliedDimensionCertificateCuts1",
+   "file": "src/SuppliedDimensionCertificateCuts1.lean"
+  },
+  {
+   "name": "SuppliedDimensionCertificateCuts2",
+   "file": "src/SuppliedDimensionCertificateCuts2.lean"
+  },
+  {
+   "name": "SuppliedDimensionCertificateTable0",
+   "file": "src/SuppliedDimensionCertificateTable0.lean"
+  },
+  {
+   "name": "SuppliedDimensionCertificateTable1",
+   "file": "src/SuppliedDimensionCertificateTable1.lean"
+  },
+  {
+   "name": "SuppliedDimensionCertificateTable2",
+   "file": "src/SuppliedDimensionCertificateTable2.lean"
+  },
+  {
+   "name": "SuppliedDimensionCertificateWindows",
+   "file": "src/SuppliedDimensionCertificateWindows.lean"
+  },
+  {
+   "name": "SuppliedDimensionFastExpressions",
+   "file": "src/SuppliedDimensionFastExpressions.lean"
+  },
+  {
+   "name": "SuppliedDimensionHigherArithmetic",
+   "file": "src/SuppliedDimensionHigherArithmetic.lean"
+  },
+  {
+   "name": "SuppliedDimensionLeafArithmetic",
+   "file": "src/SuppliedDimensionLeafArithmetic.lean"
+  },
+  {
+   "name": "SuppliedDimensionMasses",
+   "file": "src/SuppliedDimensionMasses.lean"
+  },
+  {
+   "name": "SuppliedDimensionRateBinding",
+   "file": "src/SuppliedDimensionRateBinding.lean"
+  },
+  {
+   "name": "SuppliedDimensionRootLookup",
+   "file": "src/SuppliedDimensionRootLookup.lean"
+  },
+  {
+   "name": "SuppliedDimensionSourceExpressions",
+   "file": "src/SuppliedDimensionSourceExpressions.lean"
+  },
+  {
+   "name": "SuppliedDimensionVolumeExpression",
+   "file": "src/SuppliedDimensionVolumeExpression.lean"
+  },
+  {
+   "name": "SuppliedFinitePipeline",
+   "file": "src/SuppliedFinitePipeline.lean"
+  },
+  {
+   "name": "SuppliedFixedStages",
+   "file": "src/SuppliedFixedStages.lean"
+  },
+  {
+   "name": "SuppliedHierarchyParentData",
+   "file": "src/SuppliedHierarchyParentData.lean"
+  },
+  {
+   "name": "SuppliedHierarchyParents",
+   "file": "src/SuppliedHierarchyParents.lean"
+  },
+  {
+   "name": "SuppliedHigherLaws",
+   "file": "src/SuppliedHigherLaws.lean"
+  },
+  {
+   "name": "SuppliedHigherOrbitMass",
+   "file": "src/SuppliedHigherOrbitMass.lean"
+  },
+  {
+   "name": "SuppliedInitialAllocation",
+   "file": "src/SuppliedInitialAllocation.lean"
+  },
+  {
+   "name": "SuppliedInitialPhase",
+   "file": "src/SuppliedInitialPhase.lean"
+  },
+  {
+   "name": "SuppliedInitialSixfold",
+   "file": "src/SuppliedInitialSixfold.lean"
+  },
+  {
+   "name": "SuppliedLeafLaws",
+   "file": "src/SuppliedLeafLaws.lean"
+  },
+  {
+   "name": "SuppliedLeafOrbitMass",
+   "file": "src/SuppliedLeafOrbitMass.lean"
+  },
+  {
+   "name": "SuppliedLevel3Transition",
+   "file": "src/SuppliedLevel3Transition.lean"
+  },
+  {
+   "name": "SuppliedLevel3TransitionBindings",
+   "file": "src/SuppliedLevel3TransitionBindings.lean"
+  },
+  {
+   "name": "SuppliedLevel4SixfoldTransition",
+   "file": "src/SuppliedLevel4SixfoldTransition.lean"
+  },
+  {
+   "name": "SuppliedLevel4Transition",
+   "file": "src/SuppliedLevel4Transition.lean"
+  },
+  {
+   "name": "SuppliedLevel4TransitionAllocation",
+   "file": "src/SuppliedLevel4TransitionAllocation.lean"
+  },
+  {
+   "name": "SuppliedLevel4TransitionRestoration",
+   "file": "src/SuppliedLevel4TransitionRestoration.lean"
+  },
+  {
+   "name": "SuppliedLevel4TransitionWindows",
+   "file": "src/SuppliedLevel4TransitionWindows.lean"
+  },
+  {
+   "name": "SuppliedNodeLookup",
+   "file": "src/SuppliedNodeLookup.lean"
+  },
+  {
+   "name": "SuppliedNodeLookupData",
+   "file": "src/SuppliedNodeLookupData.lean"
+  },
+  {
+   "name": "SuppliedNodePartialIndexing",
+   "file": "src/SuppliedNodePartialIndexing.lean"
+  },
+  {
+   "name": "SuppliedNormalizedExtraction",
+   "file": "src/SuppliedNormalizedExtraction.lean"
+  },
+  {
+   "name": "SuppliedNormalizedRates",
+   "file": "src/SuppliedNormalizedRates.lean"
+  },
+  {
+   "name": "SuppliedPairedCoarseBinding",
+   "file": "src/SuppliedPairedCoarseBinding.lean"
+  },
+  {
+   "name": "SuppliedPairedCoarseBlocks",
+   "file": "src/SuppliedPairedCoarseBlocks.lean"
+  },
+  {
+   "name": "SuppliedPairedCoarseColumns",
+   "file": "src/SuppliedPairedCoarseColumns.lean"
+  },
+  {
+   "name": "SuppliedPairedCoarseExpressions",
+   "file": "src/SuppliedPairedCoarseExpressions.lean"
+  },
+  {
+   "name": "SuppliedPairedFineBlocks",
+   "file": "src/SuppliedPairedFineBlocks.lean"
+  },
+  {
+   "name": "SuppliedPairedFineCertified",
+   "file": "src/SuppliedPairedFineCertified.lean"
+  },
+  {
+   "name": "SuppliedPairedFineIntegerParents",
+   "file": "src/SuppliedPairedFineIntegerParents.lean"
+  },
+  {
+   "name": "SuppliedPairedFineNodes",
+   "file": "src/SuppliedPairedFineNodes.lean"
+  },
+  {
+   "name": "SuppliedPairedFinePhysicalPools",
+   "file": "src/SuppliedPairedFinePhysicalPools.lean"
+  },
+  {
+   "name": "SuppliedPairedFinePoolArithmetic",
+   "file": "src/SuppliedPairedFinePoolArithmetic.lean"
+  },
+  {
+   "name": "SuppliedPairedFineSingletonLabels",
+   "file": "src/SuppliedPairedFineSingletonLabels.lean"
+  },
+  {
+   "name": "SuppliedPairedFineSourceExpressions",
+   "file": "src/SuppliedPairedFineSourceExpressions.lean"
+  },
+  {
+   "name": "SuppliedPairedFineSplitPools",
+   "file": "src/SuppliedPairedFineSplitPools.lean"
+  },
+  {
+   "name": "SuppliedPairedFineStageExpressions",
+   "file": "src/SuppliedPairedFineStageExpressions.lean"
+  },
+  {
+   "name": "SuppliedParameterChecks",
+   "file": "src/SuppliedParameterChecks.lean"
+  },
+  {
+   "name": "SuppliedParameterRows",
+   "file": "src/SuppliedParameterRows.lean"
+  },
+  {
+   "name": "SuppliedPathRateSums",
+   "file": "src/SuppliedPathRateSums.lean"
+  },
+  {
+   "name": "SuppliedPathStages",
+   "file": "src/SuppliedPathStages.lean"
+  },
+  {
+   "name": "SuppliedPhysicalZero2",
+   "file": "src/SuppliedPhysicalZero2.lean"
+  },
+  {
+   "name": "SuppliedPhysicalZero3",
+   "file": "src/SuppliedPhysicalZero3.lean"
+  },
+  {
+   "name": "SuppliedPhysicalZero4",
+   "file": "src/SuppliedPhysicalZero4.lean"
+  },
+  {
+   "name": "SuppliedPipelineMatrix",
+   "file": "src/SuppliedPipelineMatrix.lean"
+  },
+  {
+   "name": "SuppliedPipelineRank",
+   "file": "src/SuppliedPipelineRank.lean"
+  },
+  {
+   "name": "SuppliedPipelineRoot",
+   "file": "src/SuppliedPipelineRoot.lean"
+  },
+  {
+   "name": "SuppliedPopulationPaths",
+   "file": "src/SuppliedPopulationPaths.lean"
+  },
+  {
+   "name": "SuppliedPopulationWeights",
+   "file": "src/SuppliedPopulationWeights.lean"
+  },
+  {
+   "name": "SuppliedRationalStages",
+   "file": "src/SuppliedRationalStages.lean"
+  },
+  {
+   "name": "SuppliedRectangularAlgorithms",
+   "file": "src/SuppliedRectangularAlgorithms.lean"
+  },
+  {
+   "name": "SuppliedRoleIndex",
+   "file": "src/SuppliedRoleIndex.lean"
+  },
+  {
+   "name": "SuppliedRootChildren",
+   "file": "src/SuppliedRootChildren.lean"
+  },
+  {
+   "name": "SuppliedRootCoarseBinding",
+   "file": "src/SuppliedRootCoarseBinding.lean"
+  },
+  {
+   "name": "SuppliedRootCoarseExpression",
+   "file": "src/SuppliedRootCoarseExpression.lean"
+  },
+  {
+   "name": "SuppliedRootCoarseRate",
+   "file": "src/SuppliedRootCoarseRate.lean"
+  },
+  {
+   "name": "SuppliedRootFineArithmetic",
+   "file": "src/SuppliedRootFineArithmetic.lean"
+  },
+  {
+   "name": "SuppliedRootFineBinding",
+   "file": "src/SuppliedRootFineBinding.lean"
+  },
+  {
+   "name": "SuppliedRootFineCertifiedRates",
+   "file": "src/SuppliedRootFineCertifiedRates.lean"
+  },
+  {
+   "name": "SuppliedRootFineChild3Integers",
+   "file": "src/SuppliedRootFineChild3Integers.lean"
+  },
+  {
+   "name": "SuppliedRootFineExpression",
+   "file": "src/SuppliedRootFineExpression.lean"
+  },
+  {
+   "name": "SuppliedRootFineFastArithmetic",
+   "file": "src/SuppliedRootFineFastArithmetic.lean"
+  },
+  {
+   "name": "SuppliedRootFineLeafIntegers",
+   "file": "src/SuppliedRootFineLeafIntegers.lean"
+  },
+  {
+   "name": "SuppliedRootFineParent3Columns",
+   "file": "src/SuppliedRootFineParent3Columns.lean"
+  },
+  {
+   "name": "SuppliedRootFineParent3IntegerValidity",
+   "file": "src/SuppliedRootFineParent3IntegerValidity.lean"
+  },
+  {
+   "name": "SuppliedRootFineParent3Integers",
+   "file": "src/SuppliedRootFineParent3Integers.lean"
+  },
+  {
+   "name": "SuppliedRootFineParent4IntegerValidity",
+   "file": "src/SuppliedRootFineParent4IntegerValidity.lean"
+  },
+  {
+   "name": "SuppliedRootFineParent4Integers",
+   "file": "src/SuppliedRootFineParent4Integers.lean"
+  },
+  {
+   "name": "SuppliedRootFineRate1",
+   "file": "src/SuppliedRootFineRate1.lean"
+  },
+  {
+   "name": "SuppliedRootFineRate2",
+   "file": "src/SuppliedRootFineRate2.lean"
+  },
+  {
+   "name": "SuppliedRootFineRateExpressions",
+   "file": "src/SuppliedRootFineRateExpressions.lean"
+  },
+  {
+   "name": "SuppliedRootFineRoot4IntegerValidity",
+   "file": "src/SuppliedRootFineRoot4IntegerValidity.lean"
+  },
+  {
+   "name": "SuppliedRootFineRoot4Integers",
+   "file": "src/SuppliedRootFineRoot4Integers.lean"
+  },
+  {
+   "name": "SuppliedRootFineTerminalLookup",
+   "file": "src/SuppliedRootFineTerminalLookup.lean"
+  },
+  {
+   "name": "SuppliedRootPopulation",
+   "file": "src/SuppliedRootPopulation.lean"
+  },
+  {
+   "name": "SuppliedRootStage",
+   "file": "src/SuppliedRootStage.lean"
+  },
+  {
+   "name": "SuppliedRoundExtraction",
+   "file": "src/SuppliedRoundExtraction.lean"
+  },
+  {
+   "name": "SuppliedRoundTensors",
+   "file": "src/SuppliedRoundTensors.lean"
+  },
+  {
+   "name": "SuppliedRoundWidths",
+   "file": "src/SuppliedRoundWidths.lean"
+  },
+  {
+   "name": "SuppliedScaledRoot",
+   "file": "src/SuppliedScaledRoot.lean"
+  },
+  {
+   "name": "SuppliedShapeIndices",
+   "file": "src/SuppliedShapeIndices.lean"
+  },
+  {
+   "name": "SuppliedShapeInterfaceBindings",
+   "file": "src/SuppliedShapeInterfaceBindings.lean"
+  },
+  {
+   "name": "SuppliedSixfoldRoot",
+   "file": "src/SuppliedSixfoldRoot.lean"
+  },
+  {
+   "name": "SuppliedSourceCertificate",
+   "file": "src/SuppliedSourceCertificate.lean"
+  },
+  {
+   "name": "SuppliedSourcePipeline",
+   "file": "src/SuppliedSourcePipeline.lean"
+  },
+  {
+   "name": "SuppliedSourceRank",
+   "file": "src/SuppliedSourceRank.lean"
+  },
+  {
+   "name": "SuppliedStage3",
+   "file": "src/SuppliedStage3.lean"
+  },
+  {
+   "name": "SuppliedStage4",
+   "file": "src/SuppliedStage4.lean"
+  },
+  {
+   "name": "SuppliedStagePresentations",
+   "file": "src/SuppliedStagePresentations.lean"
+  },
+  {
+   "name": "SuppliedStrategyAllocation",
+   "file": "src/SuppliedStrategyAllocation.lean"
+  },
+  {
+   "name": "SuppliedTerminalLaws",
+   "file": "src/SuppliedTerminalLaws.lean"
+  },
+  {
+   "name": "SuppliedTerminalMatrix",
+   "file": "src/SuppliedTerminalMatrix.lean"
+  },
+  {
+   "name": "SuppliedTerminalPhysicalSplit",
+   "file": "src/SuppliedTerminalPhysicalSplit.lean"
+  },
+  {
+   "name": "SuppliedTerminalRateBinding",
+   "file": "src/SuppliedTerminalRateBinding.lean"
+  },
+  {
+   "name": "SuppliedTerminalRateBlocks",
+   "file": "src/SuppliedTerminalRateBlocks.lean"
+  },
+  {
+   "name": "SuppliedTerminalRateCertificates",
+   "file": "src/SuppliedTerminalRateCertificates.lean"
+  },
+  {
+   "name": "SuppliedTerminalRateExpression",
+   "file": "src/SuppliedTerminalRateExpression.lean"
+  },
+  {
+   "name": "SuppliedTerminalRateFastExpression",
+   "file": "src/SuppliedTerminalRateFastExpression.lean"
+  },
+  {
+   "name": "SuppliedTerminalRateMassArithmetic",
+   "file": "src/SuppliedTerminalRateMassArithmetic.lean"
+  },
+  {
+   "name": "SuppliedTerminalRateNodeBlocks",
+   "file": "src/SuppliedTerminalRateNodeBlocks.lean"
+  },
+  {
+   "name": "SuppliedTerminalRationalChildren",
+   "file": "src/SuppliedTerminalRationalChildren.lean"
+  },
+  {
+   "name": "SuppliedTerminalRationalDimensions",
+   "file": "src/SuppliedTerminalRationalDimensions.lean"
+  },
+  {
+   "name": "SuppliedTerminalRationalRates",
+   "file": "src/SuppliedTerminalRationalRates.lean"
+  },
+  {
+   "name": "SuppliedTerminalRationalSplit",
+   "file": "src/SuppliedTerminalRationalSplit.lean"
+  },
+  {
+   "name": "SuppliedTerminalRoles",
+   "file": "src/SuppliedTerminalRoles.lean"
+  },
+  {
+   "name": "SuppliedTerminalScaling",
+   "file": "src/SuppliedTerminalScaling.lean"
+  },
+  {
+   "name": "SuppliedTerminalSixfoldMatrix",
+   "file": "src/SuppliedTerminalSixfoldMatrix.lean"
+  },
+  {
+   "name": "SuppliedTypedParameters",
+   "file": "src/SuppliedTypedParameters.lean"
+  },
+  {
+   "name": "SuppliedWaitingMatrixPositivity",
+   "file": "src/SuppliedWaitingMatrixPositivity.lean"
+  },
+  {
+   "name": "SuppliedWaitingZero2Data",
+   "file": "src/SuppliedWaitingZero2Data.lean"
+  },
+  {
+   "name": "SuppliedWaitingZero2Extraction",
+   "file": "src/SuppliedWaitingZero2Extraction.lean"
+  },
+  {
+   "name": "SuppliedWaitingZero2Selection",
+   "file": "src/SuppliedWaitingZero2Selection.lean"
+  },
+  {
+   "name": "SuppliedWaitingZero2Sixfold",
+   "file": "src/SuppliedWaitingZero2Sixfold.lean"
+  },
+  {
+   "name": "SuppliedWaitingZero2Source",
+   "file": "src/SuppliedWaitingZero2Source.lean"
+  },
+  {
+   "name": "SuppliedWaitingZero2TargetCertificates",
+   "file": "src/SuppliedWaitingZero2TargetCertificates.lean"
+  },
+  {
+   "name": "SuppliedWaitingZero2TargetPredicate",
+   "file": "src/SuppliedWaitingZero2TargetPredicate.lean"
+  },
+  {
+   "name": "SuppliedWaitingZero2TargetTables",
+   "file": "src/SuppliedWaitingZero2TargetTables.lean"
+  },
+  {
+   "name": "SuppliedWaitingZero2Validity",
+   "file": "src/SuppliedWaitingZero2Validity.lean"
+  },
+  {
+   "name": "SuppliedWaitingZero3Data",
+   "file": "src/SuppliedWaitingZero3Data.lean"
+  },
+  {
+   "name": "SuppliedWaitingZero3Extraction",
+   "file": "src/SuppliedWaitingZero3Extraction.lean"
+  },
+  {
+   "name": "SuppliedWaitingZero3Sixfold",
+   "file": "src/SuppliedWaitingZero3Sixfold.lean"
+  },
+  {
+   "name": "SuppliedWaitingZero4Data",
+   "file": "src/SuppliedWaitingZero4Data.lean"
+  },
+  {
+   "name": "SuppliedWaitingZero4Extraction",
+   "file": "src/SuppliedWaitingZero4Extraction.lean"
+  },
+  {
+   "name": "SuppliedWaitingZero4Sixfold",
+   "file": "src/SuppliedWaitingZero4Sixfold.lean"
+  },
+  {
+   "name": "SuppliedZeroExtractions",
+   "file": "src/SuppliedZeroExtractions.lean"
+  },
+  {
+   "name": "SuppliedZeroLaws",
+   "file": "src/SuppliedZeroLaws.lean"
+  },
+  {
+   "name": "SuppliedZeroLeafSupport",
+   "file": "src/SuppliedZeroLeafSupport.lean"
+  },
+  {
+   "name": "SuppliedZeroLeafTargets",
+   "file": "src/SuppliedZeroLeafTargets.lean"
+  },
+  {
+   "name": "SuppliedZeroRegistryChecks",
+   "file": "src/SuppliedZeroRegistryChecks.lean"
+  },
+  {
+   "name": "SuppliedZeroRegistryData",
+   "file": "src/SuppliedZeroRegistryData.lean"
+  },
+  {
+   "name": "SuppliedZeroRegistrySemantics",
+   "file": "src/SuppliedZeroRegistrySemantics.lean"
+  },
+  {
+   "name": "SuppliedZeroShapeBindings",
+   "file": "src/SuppliedZeroShapeBindings.lean"
+  },
+  {
+   "name": "SuppliedZeroSupportData",
+   "file": "src/SuppliedZeroSupportData.lean"
+  },
+  {
+   "name": "SupportedTypes",
+   "file": "src/SupportedTypes.lean"
+  },
+  {
+   "name": "SymmetryCounts",
+   "file": "src/SymmetryCounts.lean"
+  },
+  {
+   "name": "TabulatedLogBounds",
+   "file": "src/TabulatedLogBounds.lean"
+  },
+  {
+   "name": "TensorBatching",
+   "file": "src/TensorBatching.lean"
+  },
+  {
+   "name": "TensorCore",
+   "file": "src/TensorCore.lean"
+  },
+  {
+   "name": "TensorCyclic",
+   "file": "src/TensorCyclic.lean"
+  },
+  {
+   "name": "TensorHashing",
+   "file": "src/TensorHashing.lean"
+  },
+  {
+   "name": "TensorOrientations",
+   "file": "src/TensorOrientations.lean"
+  },
+  {
+   "name": "TensorPowers",
+   "file": "src/TensorPowers.lean"
+  },
+  {
+   "name": "TensorProduct",
+   "file": "src/TensorProduct.lean"
+  },
+  {
+   "name": "TensorSymmetry",
+   "file": "src/TensorSymmetry.lean"
+  },
+  {
+   "name": "TensorTranspose",
+   "file": "src/TensorTranspose.lean"
+  },
+  {
+   "name": "TerminalLogExpressions",
+   "file": "src/TerminalLogExpressions.lean"
+  },
+  {
+   "name": "TerminalParameterData",
+   "file": "src/TerminalParameterData.lean"
+  },
+  {
+   "name": "TerminalRateBalancedInputs",
+   "file": "src/TerminalRateBalancedInputs.lean"
+  },
+  {
+   "name": "TerminalRateCertificateCuts",
+   "file": "src/TerminalRateCertificateCuts.lean"
+  },
+  {
+   "name": "TerminalRateCertificateTable0",
+   "file": "src/TerminalRateCertificateTable0.lean"
+  },
+  {
+   "name": "TerminalRateCertificateTable1",
+   "file": "src/TerminalRateCertificateTable1.lean"
+  },
+  {
+   "name": "TerminalRateCertificateTable2",
+   "file": "src/TerminalRateCertificateTable2.lean"
+  },
+  {
+   "name": "TerminalRateCertificateWindows",
+   "file": "src/TerminalRateCertificateWindows.lean"
+  },
+  {
+   "name": "TerminalRateWindowCorrection",
+   "file": "src/TerminalRateWindowCorrection.lean"
+  },
+  {
+   "name": "TerminalSourceNodeLookup",
+   "file": "src/TerminalSourceNodeLookup.lean"
+  },
+  {
+   "name": "TypeBatchGluing",
+   "file": "src/TypeBatchGluing.lean"
+  },
+  {
+   "name": "TypeCounting",
+   "file": "src/TypeCounting.lean"
+  },
+  {
+   "name": "TypeDenominators",
+   "file": "src/TypeDenominators.lean"
+  },
+  {
+   "name": "TypeEntropy",
+   "file": "src/TypeEntropy.lean"
+  },
+  {
+   "name": "TypePartition",
+   "file": "src/TypePartition.lean"
+  },
+  {
+   "name": "TypePlacement",
+   "file": "src/TypePlacement.lean"
+  },
+  {
+   "name": "TypeRelabeling",
+   "file": "src/TypeRelabeling.lean"
+  },
+  {
+   "name": "TypeSampling",
+   "file": "src/TypeSampling.lean"
+  },
+  {
+   "name": "TypeSamplingGeneral",
+   "file": "src/TypeSamplingGeneral.lean"
+  },
+  {
+   "name": "TypedFiberCounting",
+   "file": "src/TypedFiberCounting.lean"
+  },
+  {
+   "name": "TypedParameterRows",
+   "file": "src/TypedParameterRows.lean"
+  },
+  {
+   "name": "UniformRetainedBatch",
+   "file": "src/UniformRetainedBatch.lean"
+  },
+  {
+   "name": "VariableExtraction",
+   "file": "src/VariableExtraction.lean"
+  },
+  {
+   "name": "VerifiedCWApproximateData",
+   "file": "src/VerifiedCWApproximateData.lean"
+  },
+  {
+   "name": "VerifiedOrbitComplements",
+   "file": "src/VerifiedOrbitComplements.lean"
+  },
+  {
+   "name": "VerifiedOrbitLevel2",
+   "file": "src/VerifiedOrbitLevel2.lean"
+  },
+  {
+   "name": "VerifiedOrbitLevel3",
+   "file": "src/VerifiedOrbitLevel3.lean"
+  },
+  {
+   "name": "VerifiedOrbitLevel4",
+   "file": "src/VerifiedOrbitLevel4.lean"
+  },
+  {
+   "name": "VerifiedOrbitStatistics",
+   "file": "src/VerifiedOrbitStatistics.lean"
+  },
+  {
+   "name": "VerifiedOrbitSupportTables",
+   "file": "src/VerifiedOrbitSupportTables.lean"
+  },
+  {
+   "name": "VerifiedSplitData",
+   "file": "src/VerifiedSplitData.lean"
+  },
+  {
+   "name": "VerifiedSplitProfiles",
+   "file": "src/VerifiedSplitProfiles.lean"
+  },
+  {
+   "name": "VerifiedZeroOrbitLaws",
+   "file": "src/VerifiedZeroOrbitLaws.lean"
+  },
+  {
+   "name": "WaitingZeroMatrixCardinality",
+   "file": "src/WaitingZeroMatrixCardinality.lean"
+  },
+  {
+   "name": "WaitingZeroMatrixOrientation",
+   "file": "src/WaitingZeroMatrixOrientation.lean"
+  },
+  {
+   "name": "WeightedPools",
+   "file": "src/WeightedPools.lean"
+  },
+  {
+   "name": "WeightedSectorAllocation",
+   "file": "src/WeightedSectorAllocation.lean"
+  },
+  {
+   "name": "WindowExactRestriction",
+   "file": "src/WindowExactRestriction.lean"
+  },
+  {
+   "name": "WindowedInterface",
+   "file": "src/WindowedInterface.lean"
+  },
+  {
+   "name": "WindowedPermutations",
+   "file": "src/WindowedPermutations.lean"
+  },
+  {
+   "name": "WindowedReindexing",
+   "file": "src/WindowedReindexing.lean"
+  },
+  {
+   "name": "ZeroOrbitLawData",
+   "file": "src/ZeroOrbitLawData.lean"
+  },
+  {
+   "name": "ZeroParentRestoration",
+   "file": "src/ZeroParentRestoration.lean"
+  },
+  {
+   "name": "ZeroWeightRestoration",
+   "file": "src/ZeroWeightRestoration.lean"
+  },
+  {
+   "name": "ZeroWindowOrientation",
+   "file": "src/ZeroWindowOrientation.lean"
+  }
+ ],
+ "root_closure_files": 2173,
+ "root_closure_sorry": [
+  "Challenge.lean"
+ ],
+ "root_closure_axioms": 0,
+ "unclosed_files": 0,
+ "headline_rule": null,
+ "headline_count": 0,
+ "headlines": [],
+ "mathlib_imports": {
+  "Mathlib.Algebra.BigOperators.Field": 7,
+  "Mathlib.Algebra.BigOperators.Fin": 7,
+  "Mathlib.Algebra.BigOperators.Group.Finset.Sigma": 4,
+  "Mathlib.Algebra.BigOperators.Intervals": 3,
+  "Mathlib.Algebra.BigOperators.NatAntidiagonal": 1,
+  "Mathlib.Algebra.BigOperators.Ring.Finset": 1,
+  "Mathlib.Algebra.Field.ZMod": 1,
+  "Mathlib.Algebra.Group.Action.Pi": 1,
+  "Mathlib.Algebra.Order.Archimedean.Real.Basic": 2,
+  "Mathlib.Algebra.Order.BigOperators.Group.Finset": 1,
+  "Mathlib.Algebra.Order.BigOperators.Ring.Finset": 1,
+  "Mathlib.Algebra.Order.Chebyshev": 1,
+  "Mathlib.Algebra.Polynomial.Coeff": 1,
+  "Mathlib.Analysis.Normed.Group.Constructions": 1,
+  "Mathlib.Analysis.SpecialFunctions.Exp": 2,
+  "Mathlib.Analysis.SpecialFunctions.Log.Basic": 4,
+  "Mathlib.Analysis.SpecialFunctions.Log.Deriv": 1,
+  "Mathlib.Analysis.SpecialFunctions.Log.NegMulLog": 1,
+  "Mathlib.Analysis.SpecialFunctions.Pow.Real": 3,
+  "Mathlib.Analysis.SpecificLimits.Normed": 1,
+  "Mathlib.Basic.Real.Basic": 3,
+  "Mathlib.Combinatorics.Additive.AP.Three.Behrend": 1,
+  "Mathlib.Data.Fin.Basic": 2,
+  "Mathlib.Data.Fin.VecNotation": 1,
+  "Mathlib.Data.Fintype.BigOperators": 6,
+  "Mathlib.Data.Fintype.Card": 1,
+  "Mathlib.Data.Fintype.Perm": 3,
+  "Mathlib.Data.Fintype.Pi": 3,
+  "Mathlib.Data.Fintype.Prod": 4,
+  "Mathlib.Data.Fintype.Sum": 2,
+  "Mathlib.Data.Int.Basic": 1,
+  "Mathlib.Data.Int.DivMod": 1,
+  "Mathlib.Data.List.GetD": 1,
+  "Mathlib.Data.List.Nodup": 1,
+  "Mathlib.Data.List.NodupEquivFin": 1,
+  "Mathlib.Data.List.Sort": 1,
+  "Mathlib.Data.Matrix.Mul": 3,
+  "Mathlib.Data.Nat.Choose.Multinomial": 2,
+  "Mathlib.Data.Nat.Factorial.Basic": 1,
+  "Mathlib.Data.Rat.Cast.CharZero": 1,
+  "Mathlib.Data.Rat.Cast.Lemmas": 3,
+  "Mathlib.Data.Rat.Cast.Order": 2,
+  "Mathlib.Data.Rat.Floor": 1,
+  "Mathlib.GroupTheory.GroupAction.Basic": 1,
+  "Mathlib.GroupTheory.GroupAction.MultipleTransitivity": 1,
+  "Mathlib.GroupTheory.Perm.DomMulAct": 1,
+  "Mathlib.Logic.Equiv.Basic": 1,
+  "Mathlib.Logic.Equiv.Fin.Basic": 3,
+  "Mathlib.Logic.Equiv.Prod": 2,
+  "Mathlib.Logic.Equiv.Sum": 2,
+  "Mathlib.NumberTheory.Bertrand": 1,
+  "Mathlib.SetTheory.Cardinal.Finite": 2,
+  "Mathlib.SetTheory.Cardinal.NatCard": 1,
+  "Mathlib.Tactic.DeriveFintype": 1,
+  "Mathlib.Tactic.FieldSimp": 4,
+  "Mathlib.Tactic.FinCases": 4,
+  "Mathlib.Tactic.IntervalCases": 2,
+  "Mathlib.Tactic.Linarith": 7,
+  "Mathlib.Tactic.LinearCombination": 1,
+  "Mathlib.Tactic.NormNum": 7,
+  "Mathlib.Tactic.Positivity": 3,
+  "Mathlib.Tactic.Push": 1,
+  "Mathlib.Tactic.Ring": 7,
+  "Mathlib.Tactic.SplitIfs": 1,
+  "Mathlib.Topology.UniformSpace.HeineCantor": 1
+ },
+ "import_roots": {
+  "Mathlib": 74
+ },
+ "uses": {
+  "Array": 41,
+  "Behrend.roth_lower_bound": 1,
+  "Continuous": 2,
+  "Equiv.Perm": 56,
+  "Field": 8,
+  "Filter": 2,
+  "Finset": 15,
+  "Group": 14,
+  "List": 1050,
+  "Matrix": 1,
+  "MulAction": 14,
+  "Nat": 297,
+  "Polynomial": 3,
+  "Real.exp": 87,
+  "Real.log": 158,
+  "Set": 33,
+  "TensorProduct": 3,
+  "ThreeAPFree": 1
+ },
+ "ci": null
+}

@@ -1,0 +1,226 @@
+{
+ "schema": "trough-satellites/v1",
+ "repo": "sgouezel/IETFree",
+ "slug": "sgouezel--ietfree",
+ "rev": "94c4455c3243ff4229cd5e0c58af6f97879777b7",
+ "date": "2026-11-09T09:17:28Z",
+ "stable": "28a2002bbe222803afacce2ec756f32e11585521ad5e464537229b01bbc8e0f4",
+ "license": {
+  "files": [
+   "LICENSE"
+  ],
+  "spdx": "Apache-2.0",
+  "file": "LICENSE",
+  "copyright": []
+ },
+ "readme": {
+  "file": "README.md",
+  "title": "Almost Every Pair of Interval Exchange Transformations Does Not Generate a Free Group",
+  "excerpt": null
+ },
+ "lean_files": 122,
+ "admitted": true,
+ "folder": "",
+ "toolchain": "v4.35.0",
+ "mathlib": "56a005855ea17e0b0958f73ec801ae140b0a1679",
+ "requirements": [],
+ "libraries": [
+  {
+   "name": "IETFree",
+   "src": "."
+  },
+  {
+   "name": "Challenge",
+   "src": "."
+  }
+ ],
+ "library_files": 122,
+ "capped": false,
+ "declarations": 2331,
+ "sorry_files": 1,
+ "axioms": 0,
+ "closure_files": 103,
+ "closure_sorry": [],
+ "closure_axioms": 0,
+ "root_modules": [
+  {
+   "name": "Challenge",
+   "file": "Challenge.lean"
+  },
+  {
+   "name": "IETFree",
+   "file": "IETFree.lean"
+  }
+ ],
+ "root_closure_files": 122,
+ "root_closure_sorry": [
+  "Challenge.lean"
+ ],
+ "root_closure_axioms": 0,
+ "unclosed_files": 0,
+ "headline_rule": "readme",
+ "headline_count": 30,
+ "headlines": [
+  {
+   "name": "IntervalExchange.UniqueErgodicity.masurVeech_ae_unique_invariant",
+   "module": "IETFree.UniqueErgodicity.MainTheorem",
+   "file": "IETFree/UniqueErgodicity/MainTheorem.lean",
+   "line": 97,
+   "kind": "theorem",
+   "sorry": false,
+   "names": [
+    "MeasureTheory.Measure"
+   ]
+  },
+  {
+   "name": "IntervalExchange.Pair.masurVeech",
+   "module": "IETFree.Pair.Irreducible",
+   "file": "IETFree/Pair/Irreducible.lean",
+   "line": 60,
+   "kind": "theorem",
+   "sorry": false,
+   "names": [
+    "Equiv.Perm"
+   ]
+  },
+  {
+   "name": "IntervalExchange.UniqueErgodicity.uniformBirkhoff_of_uniqueErgodic",
+   "module": "IETFree.UniqueErgodicity.Theorem2",
+   "file": "IETFree/UniqueErgodicity/Theorem2.lean",
+   "line": 502,
+   "kind": "theorem",
+   "sorry": false,
+   "names": []
+  },
+  {
+   "name": "IntervalExchange.Pair.veechRigidity",
+   "module": "IETFree.Pair.Irreducible",
+   "file": "IETFree/Pair/Irreducible.lean",
+   "line": 71,
+   "kind": "theorem",
+   "sorry": false,
+   "names": [
+    "Equiv.Perm"
+   ]
+  },
+  {
+   "name": "IntervalExchange.UniqueErgodicity.exists_uniform_birkhoff",
+   "module": "IETFree.UniqueErgodicity.Theorem2",
+   "file": "IETFree/UniqueErgodicity/Theorem2.lean",
+   "line": 523,
+   "kind": "theorem",
+   "sorry": false,
+   "names": [
+    "Set"
+   ]
+  },
+  {
+   "name": "IntervalExchange.RauzyVeech.colSumInt_cast",
+   "module": "IETFree.RauzyVeech.MeshShrink",
+   "file": "IETFree/RauzyVeech/MeshShrink.lean",
+   "line": 83,
+   "kind": "theorem",
+   "sorry": false,
+   "names": []
+  },
+  {
+   "name": "IntervalExchange.Pair.ae_diophantine",
+   "module": "IETFree.Pair.Diophantine",
+   "file": "IETFree/Pair/Diophantine.lean",
+   "line": 971,
+   "kind": "theorem",
+   "sorry": false,
+   "names": [
+    "Equiv.Perm"
+   ]
+  },
+  {
+   "name": "IntervalExchange.Pair.evalWord_eventually_eq_one",
+   "module": "IETFree.Pair.RobustRelation.Robustness",
+   "file": "IETFree/Pair/RobustRelation/Robustness.lean",
+   "line": 39,
+   "kind": "theorem",
+   "sorry": false,
+   "names": [
+    "Equiv.Perm",
+    "FreeGroup"
+   ]
+  }
+ ],
+ "mathlib_imports": {
+  "Mathlib.Algebra.BigOperators.Fin": 1,
+  "Mathlib.Analysis.Calculus.FDeriv.Mul": 1,
+  "Mathlib.Analysis.Normed.Ring.Basic": 1,
+  "Mathlib.Analysis.PSeries": 1,
+  "Mathlib.Data.List.OfFn": 1,
+  "Mathlib.Data.List.PeriodicityLemma": 1,
+  "Mathlib.Dynamics.BirkhoffSum.Average": 1,
+  "Mathlib.Dynamics.Ergodic.EmpiricalMeasure": 1,
+  "Mathlib.GroupTheory.FreeGroup.CyclicallyReduced": 1,
+  "Mathlib.GroupTheory.FreeGroup.NielsenSchreier": 1,
+  "Mathlib.LinearAlgebra.Matrix.Defs": 1,
+  "Mathlib.LinearAlgebra.Matrix.Permutation": 1,
+  "Mathlib.LinearAlgebra.Matrix.SchurComplement": 1,
+  "Mathlib.MeasureTheory.Constructions.BorelSpace.Order": 1,
+  "Mathlib.MeasureTheory.Constructions.Polish.Basic": 1,
+  "Mathlib.MeasureTheory.Function.Jacobian": 1,
+  "Mathlib.MeasureTheory.Integral.Bochner.Set": 1,
+  "Mathlib.MeasureTheory.Integral.RieszMarkovKakutani.Real": 1,
+  "Mathlib.MeasureTheory.Measure.Haar.NormedSpace": 1,
+  "Mathlib.MeasureTheory.Measure.Haar.Unique": 1,
+  "Mathlib.MeasureTheory.Measure.Lebesgue.Basic": 1,
+  "Mathlib.MeasureTheory.Measure.Lebesgue.EqHaar": 1,
+  "Mathlib.MeasureTheory.Measure.ProbabilityMeasure": 2,
+  "Mathlib.MeasureTheory.Measure.Prokhorov": 1,
+  "Mathlib.MeasureTheory.Measure.RegularityCompacts": 1,
+  "Mathlib.MeasureTheory.Measure.Typeclasses.Probability": 1,
+  "Mathlib.Probability.Martingale.Convergence": 1,
+  "Mathlib.Tactic.Linarith.NNRealPreprocessor": 8,
+  "Mathlib.Tactic.Positivity.Finset": 1,
+  "Mathlib.Tactic.Ring.RingNF": 1,
+  "Mathlib.Topology.UniformSpace.Uniformizable": 1
+ },
+ "import_roots": {
+  "Mathlib": 29
+ },
+ "uses": {
+  "AddTorsor": 1,
+  "BorelSpace": 5,
+  "Continuous": 12,
+  "Differentiable": 1,
+  "Equiv.Perm": 43,
+  "Filter": 71,
+  "Filter.Tendsto": 14,
+  "FiniteDimensional": 1,
+  "Finset": 64,
+  "FreeGroup": 18,
+  "Group": 4,
+  "Irreducible": 2,
+  "IsCompact": 2,
+  "LinearMap.det": 1,
+  "LinearMap.ker": 1,
+  "List": 56,
+  "Matrix": 18,
+  "Measurable": 21,
+  "MeasurableSet": 35,
+  "MeasurableSpace": 8,
+  "MeasureTheory.Integrable": 4,
+  "MeasureTheory.IsProbabilityMeasure": 5,
+  "MeasureTheory.Measure": 31,
+  "MeasureTheory.MeasureSpace": 1,
+  "MeasureTheory.ProbabilityMeasure.tendsto_iff_forall_integral_tendsto": 1,
+  "Metric.ball": 6,
+  "MetricSpace": 1,
+  "Module": 2,
+  "NormedSpace": 1,
+  "Ring": 1,
+  "Set": 58,
+  "Subgroup": 1,
+  "Subgroup.closure": 1,
+  "T2Space": 2,
+  "TopologicalSpace": 3,
+  "closure": 5,
+  "exists_continuous_zero_one_of_isClosed": 1
+ },
+ "ci": "SUCCESS"
+}

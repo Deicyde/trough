@@ -1,0 +1,135 @@
+{
+ "schema": "trough-satellites/v1",
+ "repo": "cedar-policy/cedar-spec",
+ "slug": "cedar-policy--cedar-spec",
+ "rev": "cca421ef3134f0d0141958aed03bac67752871eb",
+ "date": "2026-11-17T15:33:33Z",
+ "stable": "e9dd5589827b0d249d55aba89ff32ab96ac94dadeaad67b5d636313a92ae9de6",
+ "license": {
+  "files": [
+   "LICENSE"
+  ],
+  "spdx": "Apache-2.0",
+  "file": "LICENSE",
+  "copyright": []
+ },
+ "readme": {
+  "file": "README.md",
+  "title": "Cedar Specification",
+  "excerpt": "This repository contains the formalization of Cedar and infrastructure for performing differential randomized testing (DRT) between the formalization and Rust production implementation available in [`cedar`](https://github.com/cedar-policy/cedar)."
+ },
+ "lean_files": 388,
+ "admitted": true,
+ "folder": "cedar-lean",
+ "toolchain": "v4.35.0",
+ "mathlib": "",
+ "requirements": [],
+ "libraries": [
+  {
+   "name": "Cedar",
+   "src": "."
+  },
+  {
+   "name": "SymCC",
+   "src": "."
+  },
+  {
+   "name": "Cedar.SymCC",
+   "src": "."
+  },
+  {
+   "name": "DiffTest",
+   "src": "."
+  },
+  {
+   "name": "UnitTest",
+   "src": "."
+  },
+  {
+   "name": "SymTest",
+   "src": "."
+  },
+  {
+   "name": "Protobuf",
+   "src": "."
+  },
+  {
+   "name": "CedarProto",
+   "src": "."
+  },
+  {
+   "name": "CedarFFI",
+   "src": "."
+  }
+ ],
+ "library_files": 387,
+ "capped": false,
+ "declarations": 5374,
+ "sorry_files": 0,
+ "axioms": 0,
+ "closure_files": 0,
+ "closure_sorry": [],
+ "closure_axioms": 0,
+ "root_modules": [
+  {
+   "name": "Cedar",
+   "file": "cedar-lean/Cedar.lean"
+  },
+  {
+   "name": "Cedar.SymCC",
+   "file": "cedar-lean/Cedar/SymCC.lean"
+  },
+  {
+   "name": "CedarFFI",
+   "file": "cedar-lean/CedarFFI.lean"
+  },
+  {
+   "name": "CedarProto",
+   "file": "cedar-lean/CedarProto.lean"
+  },
+  {
+   "name": "DiffTest",
+   "file": "cedar-lean/DiffTest.lean"
+  },
+  {
+   "name": "Protobuf",
+   "file": "cedar-lean/Protobuf.lean"
+  },
+  {
+   "name": "SymCC",
+   "file": "cedar-lean/SymCC.lean"
+  },
+  {
+   "name": "SymTest",
+   "file": "cedar-lean/SymTest.lean"
+  },
+  {
+   "name": "UnitTest",
+   "file": "cedar-lean/UnitTest.lean"
+  }
+ ],
+ "root_closure_files": 387,
+ "root_closure_sorry": [],
+ "root_closure_axioms": 0,
+ "unclosed_files": 0,
+ "headline_rule": null,
+ "headline_count": 0,
+ "headlines": [],
+ "mathlib_imports": {},
+ "import_roots": {
+  "Batteries": 21,
+  "Init": 7,
+  "Lean": 9,
+  "Std": 9
+ },
+ "uses": {
+  "Array": 12,
+  "Field": 22,
+  "Int": 34,
+  "List": 160,
+  "Nat": 87,
+  "Set": 69,
+  "Std.HashMap": 2
+ },
+ "ci": "SUCCESS"
+}
