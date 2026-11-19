@@ -459,11 +459,12 @@ def test_a_requirement_on_another_project_links_its_card_or_its_listing_or_names
     assert targets["satellite:carded"] in user.depends
 
 
-def test_a_quoted_readme_links_relative_paths_to_the_repository_at_its_commit():
+def test_a_quoted_readme_links_relative_paths_and_its_own_headings_to_the_repository_at_its_commit():
     item = record("q", readme={"file": "docs/README.md", "title": "Q", "excerpt": ""})
     text = 'See [the paper](../paper/p.pdf), [site](https://x.org), [here](#use) and <img src="fig.png">.'
     assert satellites.absolute(item, text) == (
-        f"See [the paper](https://github.com/o/q/blob/{REV}/paper/p.pdf), [site](https://x.org), [here](#use) and "
+        f"See [the paper](https://github.com/o/q/blob/{REV}/paper/p.pdf), [site](https://x.org), "
+        f"[here](https://github.com/o/q/blob/{REV}/docs/README.md#use) and "
         f'<img src="https://github.com/o/q/blob/{REV}/docs/fig.png">.')
 
 
