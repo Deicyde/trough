@@ -15,7 +15,9 @@ declarations, by the first of three rules that gives any:
 
 A project with headlines is a card: its `lean:` names are its headlines, its
 statement edges the Mathlib concepts and other chapters' declarations their
-signatures name, and its proof edges the Mathlib concepts whose Lean names its
+signatures name (another chapter's name only when it has a namespace or the
+project requires that chapter, since a bare name such as `h` or `F` is more
+often a variable than that chapter's declaration), and its proof edges the Mathlib concepts whose Lean names its
 files write most often relative to the other projects (only those of Lean core
 and Std for a project that neither requires nor imports Mathlib). The card
 lives in a projects/ folder of its home: the chapter of a live library it requires, else the overview area of
@@ -888,14 +890,15 @@ def listed(record: dict) -> str:
 
 
 def chapter(records: list[dict], packages: dict, overrides: dict, libraries: list[dict], hosts: dict[str, Container],
-            heads: dict[str, Leaf], names: dict[str, Leaf], modules: dict[str, str] | None = None
+            heads: dict[str, Leaf], names: dict[str, tuple[str, Leaf]], modules: dict[str, str] | None = None
             ) -> tuple[list[tuple[Container, Container, dict[str, str]]], Counter, dict[str, Leaf | Container]]:
     """The projects pages: each with its host, the page that lists it, and its cards' source links; the counts;
     and the link targets of the cards' notes (for blueprints.resolve). *hosts* has a page per home: each live
     chapter's by its catalog id, and Mathlib's overview areas as "mathlib:<slug>", with the overview as OVERVIEW.
     *modules* has the module declaring each Mathlib concept's Lean name: a project that neither requires nor
     imports Mathlib keeps only the concepts Lean core or Std declares, since another match is a name it shares by
-    chance."""
+    chance. *names* has the other chapters' `lean:` names, each with its chapter's key in *hosts* and its page; a
+    statement links one only when the name has a namespace or the project requires that chapter."""
     modules = modules or {}
     order = [library["id"] for library in libraries]
     live = {repo_key(library["repo"]): (library["id"], "") for library in libraries if library["map_status"] == "live"}
@@ -913,11 +916,21 @@ def chapter(records: list[dict], packages: dict, overrides: dict, libraries: lis
     placed: dict[str, list[tuple[dict, list[Leaf], list[Leaf], int, str, list, list]]] = {}
     for record in admitted:
         statement = []
+        required = {key for key, _, _ in live_requirements(record, live, hosts)}
+        bare = set()
         for head in record["headlines"]:
             for name in head["names"]:
-                target = heads.get(name) or names.get(name)
+                target = heads.get(name)
+                if target is None and name in names:
+                    key, leaf = names[name]
+                    if "." in name or key in required:
+                        target = leaf
+                    else:
+                        bare.add(name)
                 if target is not None and target not in statement:
                     statement.append(target)
+        stats["bare_names_dropped"] += len(bare)
+        stats["bare_names_projects"] += bool(bare)
         statement_areas = [areas.leaf(leaf) for leaf in statement if leaf in heads.values()]
         statement_areas = [area for area in statement_areas if area]
         kept = {name for name in record.get("uses", {})

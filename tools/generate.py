@@ -358,13 +358,13 @@ def generate() -> dict[Path, str]:
     if sat_records:
         overview = chapter.entries[0].node
         areas = {f"mathlib:{area.slug}": area for area in overview.children if isinstance(area, Container)}
-        names: dict[str, Leaf] = {}
-        for root in {id(host): host for host in hosts.values()}.values():
+        names: dict[str, tuple[str, Leaf]] = {}
+        for key, root in hosts.items():
             for node in walk(root):
                 if isinstance(node, Leaf):
                     for name in dict(node.fields).get("lean", "").split(", "):
                         if name:
-                            names.setdefault(name, node)
+                            names.setdefault(name, (key, node))
         pages, sat_stats, sat_targets = satellites.chapter(
             sat_records, sat_packages, sat_overrides, libraries, areas | {satellites.OVERVIEW: overview} | hosts,
             heads, names, {name: record["module"] for table in ("cited", "concepts")
@@ -406,7 +406,9 @@ def generate() -> dict[Path, str]:
             f"README {sat_stats['rule_readme']}, Main module {sat_stats['rule_main']}; {sat_stats['statement_edges']} "
             f"statement, {sat_stats['proof_edges']} proof and {sat_stats['satellite_edges']} project edges; "
             f"{sat_stats['mathlib_edges']} cards with Mathlib edges; {sat_stats['uses_dropped']} concept names outside "
-            f"Lean core and Std left out for {sat_stats['uses_dropped_projects']} projects without Mathlib",
+            f"Lean core and Std left out for {sat_stats['uses_dropped_projects']} projects without Mathlib; "
+            f"{sat_stats['bare_names_dropped']} other chapters' names without a namespace left out of the statements of "
+            f"{sat_stats['bare_names_projects']} projects that do not require them",
             file=sys.stderr,
         )
     files[ROOT / "hooks" / "lean-links.json"] = json.dumps(lean_links, indent=1, ensure_ascii=False) + "\n"

@@ -400,6 +400,25 @@ def test_a_project_without_mathlib_keeps_only_the_concepts_lean_core_or_std_decl
     assert (stats["uses_dropped"], stats["uses_dropped_projects"]) == (2, 1)
 
 
+def test_a_statement_links_another_chapters_bare_name_only_when_the_project_requires_that_chapter(tmp_path):
+    root, hosts, heads = mathlib_fixture(tmp_path)
+    pnt = Container("PNT+", "pnt-plus")
+    pnt.path = tmp_path / "roadmap" / "pnt-plus" / "README.md"
+    hosts["pnt-plus"] = pnt
+    h, f, dotted = (Leaf(title, title.lower().replace(".", "-"), [], "body") for title in ("h", "F", "Sphere.bound"))
+    names = {"h": ("sphere-packing", h), "F": ("pnt-plus", f), "Sphere.bound": ("sphere-packing", dotted)}
+    fork = {"name": "PrimeNumberTheoremAnd", "url": "https://github.com/AlexKontorovich/PrimeNumberTheoremAnd", "rev": "2" * 40}
+    headline = record("x")["headlines"][0] | {"names": ["F", "Real.cos", "Sphere.bound", "h"]}
+    # A bare name links its page only for a project requiring that page's chapter: F for the one requiring PNT+.
+    requires = record("requires", requirements=[fork], headlines=[headline])
+    bare = record("bare", headlines=[headline])
+    pages, stats, _ = satellites.chapter([requires, bare], {}, {}, LIBRARIES, hosts, heads, names)
+    cards = {node.slug: node for _, projects, _ in pages for node in walk(projects) if isinstance(node, Leaf)}
+    assert cards["requires"].depends == [f, heads["Real.cos"], dotted]
+    assert cards["bare"].depends == [heads["Real.cos"], dotted]
+    assert (stats["bare_names_dropped"], stats["bare_names_projects"]) == (3, 2)
+
+
 def test_a_card_quotes_its_readme_only_under_a_recognized_license(tmp_path):
     unlicensed = record("closed", license={"files": [], "spdx": None, "file": None, "copyright": []},
                         readme={"file": "README.md", "title": "Closed", "excerpt": "Words."})
