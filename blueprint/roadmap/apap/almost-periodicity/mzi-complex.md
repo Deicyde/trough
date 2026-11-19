@@ -22,10 +22,6 @@ Its statement uses no other node of the blueprint.
 
 - [Marcinkiewicz-Zygmund inequality](mzi.md)
 
-## Proof
-
-Test.
-
 ## Lean
 
 Formalized as [`RCLike.marcinkiewicz_zygmund`](https://yaeldillies.github.io/apap/docs/find/#doc/RCLike.marcinkiewicz_zygmund).

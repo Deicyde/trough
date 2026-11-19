@@ -18,10 +18,6 @@ $$
 
 Its statement uses no other node of the blueprint.
 
-## Proof
-
-Test.
-
 ## Lean
 
 Formalized as [`pow_inner_nonneg`](https://yaeldillies.github.io/apap/docs/find/#doc/pow_inner_nonneg).

@@ -18,10 +18,6 @@ $$
 
 Its statement uses no other node of the blueprint.
 
-## Proof
-
-Test.
-
 ## Lean
 
 Formalized as [`big_shifts`](https://yaeldillies.github.io/apap/docs/find/#doc/big_shifts).

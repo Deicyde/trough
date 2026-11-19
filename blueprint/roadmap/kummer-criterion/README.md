@@ -1,6 +1,10 @@
 # Kummer's criterion
 
-The project's blueprint, read at commit [b96b2cde](https://github.com/riccardobrasca/KummerCriterion/tree/b96b2cde81e799bfe8364b6dd469abafd9a26bdf) (2026-11-03): one article for each of its 93 nodes whose Lean declarations it names and marks formalized, or in Mathlib. A statement for which the blueprint marks no proof `\leanok` says so. Dependencies are the blueprint's `\uses`: a statement's under *Depends on*, a proof's under *Proof depends on*.
+[riccardobrasca/KummerCriterion](https://github.com/riccardobrasca/KummerCriterion) says in its README:
+
+> A [Lean 4](https://leanprover.github.io/) formalisation of **Kummer's criterion**, the Bernoulli-number characterisation of *regular* primes.
+
+Its blueprint, by Chris Birkbeck and Riccardo Brasca, read at commit [b96b2cde](https://github.com/riccardobrasca/KummerCriterion/tree/b96b2cde81e799bfe8364b6dd469abafd9a26bdf) (2026-11-03): one article for each of its 93 nodes whose Lean declarations it names and marks formalized, or in Mathlib. A statement for which the blueprint marks no proof `\leanok` says so. Dependencies are the blueprint's `\uses`: a statement's under *Depends on*, a proof's under *Proof depends on*.
 
 The text is the blueprint's, under its Apache-2.0 license: each page has a section's prose, remarks and examples in the blueprint's order, with each node's statement and proof where the node stands.
 

@@ -1,6 +1,10 @@
 # Equational Theories
 
-The project's blueprint, read at commit [8b87204d](https://github.com/teorth/equational_theories/tree/8b87204d5b201e1cf6c69b8dcabb0558109bee00) (2026-11-08): one article for each of its 137 nodes whose Lean declarations it names and marks formalized, or in Mathlib. Its other 77 nodes have no article, and a section of only those is left out: the map records what the project contains, not what it plans. A statement for which the blueprint marks no proof `\leanok` says so. Dependencies are the blueprint's `\uses`: a statement's under *Depends on*, a proof's under *Proof depends on*.
+[teorth/equational_theories](https://github.com/teorth/equational_theories) says in its README:
+
+> The purpose of this project, launched on Sep 25, 2024, is to explore the space of equational theories of [magmas](https://en.wikipedia.org/wiki/Magma_(algebra)), ordered by implication.
+
+Its blueprint, by Contributors of the Equational Theories Project, read at commit [8b87204d](https://github.com/teorth/equational_theories/tree/8b87204d5b201e1cf6c69b8dcabb0558109bee00) (2026-11-08): one article for each of its 137 nodes whose Lean declarations it names and marks formalized, or in Mathlib. Its other 77 nodes have no article, and a section of only those is left out: the map records what the project contains, not what it plans. A statement for which the blueprint marks no proof `\leanok` says so. Dependencies are the blueprint's `\uses`: a statement's under *Depends on*, a proof's under *Proof depends on*.
 
 The text is the blueprint's, under its Apache-2.0 license: each page has a section's prose, remarks and examples in the blueprint's order, with each node's statement and proof where the node stands.
 

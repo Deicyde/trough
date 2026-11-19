@@ -15,10 +15,6 @@ The function $r\mapsto b(r)$ analytically continues to a holomorphic function on
 - [b-d24](def-b-d24.md)
 - [psi-relations-d24](lem-psi-relations-d24.md)
 
-## Proof
-
-.
-
 ## Lean
 
 Formalized as `SpherePacking.Dim24.eig_b`.
