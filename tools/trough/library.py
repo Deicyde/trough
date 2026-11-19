@@ -25,7 +25,7 @@ from dataclasses import dataclass
 from pathlib import Path
 
 from . import leansource
-from .blueprints import Built, escape
+from .blueprints import VAULT_FILE, Built, escape
 from .ff import is_apache
 from .formal_conjectures import OPAQUE, module_name, quote
 from .mathlib import fence
@@ -351,7 +351,8 @@ def article(library: Library, module: dict, title: str, rev: str, links: dict[st
     for item in declarations(module):
         links.setdefault(item["name"], blob(library, rev, module["file"], item["line"]))
     leaf = Leaf(title_text(title), slugify(stem(module)), fields, "\n\n".join(parts))
-    leaf.sources = [(f"{module['file']} at {rev[:8]}", blob(library, rev, module["file"]))]
+    leaf.sources = [(f"{module['file']} at {rev[:8]}", blob(library, rev, module["file"])),
+                    ("Declaration ledger", VAULT_FILE + ledger_path(library, module))]
     return leaf
 
 
@@ -373,6 +374,31 @@ def every(node: dict) -> list[dict]:
 def credit(library: Library, rev: str) -> str:
     return (f"{library.quotes} are quoted from [{library.repo}]({GITHUB}/{library.repo}) "
             f"at commit {at(library, rev)}, under its Apache-2.0 license.")
+
+
+LEDGER_SCHEMA = "trough-ledger/v1"
+# What the source reading does not read, which a ledger therefore cannot list.
+UNREAD = ("Unnamed instances, the names an `alias ⟨…⟩` command gives, and the names Lean generates for a declaration "
+          "(constructors, recursors, derived instances) are not read from the source, so they are not listed.")
+
+
+def ledger_path(library: Library, module: dict) -> str:
+    """Where a module catalog's declaration ledger is, below the vault: a JSON file, which the site does not publish
+    and links in the repository instead."""
+    return f"sources/{library.id}/{module['module']}.json"
+
+
+def ledger(library: Library, module: dict, rev: str, private: set[str], missing: set[str]) -> str:
+    """A module catalog's declaration ledger: every declaration read from the module's source, with its kind and line,
+    under `public` when Lean has it as a public declaration (these are the article's `lean:` names), `private` when
+    Lean has it only as a declaration private to the module, and `missing` when Lean does not have it."""
+    entries: dict[str, list[dict]] = {"public": [], "private": [], "missing": []}
+    for item in declarations(module):
+        group = "private" if item["name"] in private else "missing" if item["name"] in missing else "public"
+        entries[group].append({"name": item["name"], "kind": item["kind"], "line": item["line"]})
+    record = {"schema": LEDGER_SCHEMA, "library": library.name, "repo": library.repo, "rev": rev,
+              "module": module["module"], "file": module["file"], **entries, "unread": UNREAD}
+    return json.dumps(record, indent=1, ensure_ascii=False) + "\n"
 
 
 def chapter(library: Library, data: dict) -> tuple[Built, dict[str, str]]:
@@ -441,7 +467,10 @@ def chapter(library: Library, data: dict) -> tuple[Built, dict[str, str]]:
     stats["empty"] = sum(1 for module in modules if not declarations(module))
     root = Container(library.title, library.id, parts)
     root.prose = library.intro(data, stats)
-    return Built(root, targets, {}, dict(stats), Counter()), dict(sorted(links.items()))
+    # A declaration ledger for each article, a module catalog.
+    ledgers = {ledger_path(library, module): ledger(library, module, rev, private, missing)
+               for module in data["modules"] if module["module"] in leaves}
+    return Built(root, targets, {}, dict(stats), Counter(), ledgers), dict(sorted(links.items()))
 
 
 def edges(library: Library, data: dict, leaves: dict[str, Leaf], stats: Counter) -> None:
