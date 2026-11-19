@@ -1,0 +1,24 @@
+{
+ "schema": "trough-ledger/v1",
+ "library": "CompPoly",
+ "repo": "Verified-zkEVM/CompPoly",
+ "rev": "afb9b1363984a70f10e24bd597f6ff40ebc8afbb",
+ "module": "CompPoly.Bivariate.GuruswamiSudan.Root.Alekhnovich.Correctness",
+ "file": "CompPoly/Bivariate/GuruswamiSudan/Root/Alekhnovich/Correctness.lean",
+ "public": [
+  {"name": "CompPoly.GuruswamiSudan.alekhnovichRootsYDegreeLt_sound", "kind": "theorem", "line": 913},
+  {"name": "CompPoly.GuruswamiSudan.alekhnovichRootsYDegreeLt_complete_of_candidate_mem", "kind": "theorem", "line": 927},
+  {"name": "CompPoly.GuruswamiSudan.RootMod.substituteYPolynomialPlusXPowerY", "kind": "theorem", "line": 945},
+  {"name": "CompPoly.GuruswamiSudan.RootMod.substituteYPolynomialPlusXPowerYTruncated", "kind": "theorem", "line": 956},
+  {"name": "CompPoly.GuruswamiSudan.RootMod.stripXAdicFactor", "kind": "theorem", "line": 978},
+  {"name": "CompPoly.GuruswamiSudan.alekhnovichRootPrefixesWithFuel_complete", "kind": "theorem", "line": 1411},
+  {"name": "CompPoly.GuruswamiSudan.alekhnovichRootCandidatesWithFuel_complete", "kind": "theorem", "line": 2235},
+  {"name": "CompPoly.GuruswamiSudan.composeY_eq_zero_of_rootMod_of_substitutionDegreeBound", "kind": "theorem", "line": 2318},
+  {"name": "CompPoly.GuruswamiSudan.alekhnovichRootCandidates_complete", "kind": "theorem", "line": 2363},
+  {"name": "CompPoly.GuruswamiSudan.alekhnovichRootsYDegreeLt_complete", "kind": "theorem", "line": 2378},
+  {"name": "CompPoly.GuruswamiSudan.alekhnovichRootContext", "kind": "def", "line": 2390}
+ ],
+ "private": [],
+ "missing": [],
+ "unread": "Unnamed instances, the names an `alias ⟨…⟩` command gives, and the names Lean generates for a declaration (constructors, recursors, derived instances) are not read from the source, so they are not listed."
+}

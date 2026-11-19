@@ -1,0 +1,28 @@
+{
+ "schema": "trough-ledger/v1",
+ "library": "CompPoly",
+ "repo": "Verified-zkEVM/CompPoly",
+ "rev": "afb9b1363984a70f10e24bd597f6ff40ebc8afbb",
+ "module": "CompPoly.Fields.Binary.Tower.Concrete.RelativeCoordinates",
+ "file": "CompPoly/Fields/Binary/Tower/Concrete/RelativeCoordinates.lean",
+ "public": [
+  {"name": "ConcreteBinaryTower.Coordinates.coordinates", "kind": "def", "line": 40},
+  {"name": "ConcreteBinaryTower.Coordinates.coordinates_eq_natCoordinatesConstOfLE", "kind": "theorem", "line": 47},
+  {"name": "ConcreteBinaryTower.Coordinates.pack", "kind": "def", "line": 53},
+  {"name": "ConcreteBinaryTower.Coordinates.coordinates_pack", "kind": "theorem", "line": 57},
+  {"name": "ConcreteBinaryTower.Coordinates.pack_coordinates", "kind": "theorem", "line": 62},
+  {"name": "ConcreteBinaryTower.Coordinates.coordinates_self", "kind": "theorem", "line": 66},
+  {"name": "ConcreteBinaryTower.Coordinates.pack_self", "kind": "theorem", "line": 71},
+  {"name": "ConcreteBinaryTower.Coordinates.coordinates_add", "kind": "theorem", "line": 76},
+  {"name": "ConcreteBinaryTower.Coordinates.pack_add", "kind": "theorem", "line": 81},
+  {"name": "ConcreteBinaryTower.Coordinates.coordinates_smul", "kind": "theorem", "line": 86},
+  {"name": "ConcreteBinaryTower.Coordinates.pack_smul", "kind": "theorem", "line": 93},
+  {"name": "ConcreteBinaryTower.Coordinates.coordinates_eq_setWidth_ushiftRight", "kind": "theorem", "line": 211},
+  {"name": "ConcreteBinaryTower.Coordinates.toBitVec_coordinates", "kind": "theorem", "line": 227},
+  {"name": "ConcreteBinaryTower.Coordinates.getLsbD_coordinates", "kind": "theorem", "line": 235},
+  {"name": "ConcreteBinaryTower.Coordinates.toNat_coordinates", "kind": "theorem", "line": 244}
+ ],
+ "private": [],
+ "missing": [],
+ "unread": "Unnamed instances, the names an `alias ⟨…⟩` command gives, and the names Lean generates for a declaration (constructors, recursors, derived instances) are not read from the source, so they are not listed."
+}

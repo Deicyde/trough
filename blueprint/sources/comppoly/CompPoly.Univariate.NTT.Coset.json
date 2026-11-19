@@ -1,0 +1,32 @@
+{
+ "schema": "trough-ledger/v1",
+ "library": "CompPoly",
+ "repo": "Verified-zkEVM/CompPoly",
+ "rev": "afb9b1363984a70f10e24bd597f6ff40ebc8afbb",
+ "module": "CompPoly.Univariate.NTT.Coset",
+ "file": "CompPoly/Univariate/NTT/Coset.lean",
+ "public": [
+  {"name": "CompPoly.CPolynomial.NTT.evalOnCoset", "kind": "def", "line": 50},
+  {"name": "CompPoly.CPolynomial.NTT.size_evalOnCoset", "kind": "theorem", "line": 53},
+  {"name": "CompPoly.CPolynomial.NTT.Coset.scale", "kind": "def", "line": 60},
+  {"name": "CompPoly.CPolynomial.NTT.Coset.size_scale", "kind": "theorem", "line": 63},
+  {"name": "CompPoly.CPolynomial.NTT.Coset.getD_scale", "kind": "theorem", "line": 66},
+  {"name": "CompPoly.CPolynomial.NTT.Coset.eval_eq_sum_fin", "kind": "theorem", "line": 71},
+  {"name": "CompPoly.CPolynomial.NTT.Coset.natDegree_lt_of_size_le", "kind": "theorem", "line": 81},
+  {"name": "CompPoly.CPolynomial.NTT.Coset.eval_scale", "kind": "theorem", "line": 94},
+  {"name": "CompPoly.CPolynomial.NTT.Coset.eval_scale_inv", "kind": "theorem", "line": 106},
+  {"name": "CompPoly.CPolynomial.NTT.Coset.forwardImpl", "kind": "def", "line": 112},
+  {"name": "CompPoly.CPolynomial.NTT.Coset.inverseImpl", "kind": "def", "line": 116},
+  {"name": "CompPoly.CPolynomial.NTT.Coset.forwardImpl_eq_evalOnCoset", "kind": "theorem", "line": 120},
+  {"name": "CompPoly.CPolynomial.NTT.Coset.natDegree_inverseImpl_lt", "kind": "theorem", "line": 133},
+  {"name": "CompPoly.CPolynomial.NTT.Coset.inverseImpl_eval_node_eq", "kind": "theorem", "line": 138},
+  {"name": "CompPoly.CPolynomial.NTT.Coset.inverseImpl_evalOnCoset_eq", "kind": "theorem", "line": 148},
+  {"name": "CompPoly.CPolynomial.NTT.Coset.forwardImpl_inverseImpl", "kind": "theorem", "line": 157},
+  {"name": "CompPoly.CPolynomial.NTT.Coset.interpolate", "kind": "def", "line": 163},
+  {"name": "CompPoly.CPolynomial.NTT.Coset.eval_interpolate_node", "kind": "theorem", "line": 169},
+  {"name": "CompPoly.CPolynomial.NTT.Coset.interpolate_eq_interpolate", "kind": "theorem", "line": 178}
+ ],
+ "private": [],
+ "missing": [],
+ "unread": "Unnamed instances, the names an `alias ⟨…⟩` command gives, and the names Lean generates for a declaration (constructors, recursors, derived instances) are not read from the source, so they are not listed."
+}

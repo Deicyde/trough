@@ -1,0 +1,31 @@
+{
+ "schema": "trough-ledger/v1",
+ "library": "CompPoly",
+ "repo": "Verified-zkEVM/CompPoly",
+ "rev": "afb9b1363984a70f10e24bd597f6ff40ebc8afbb",
+ "module": "CompPoly.Fields.Binary.BF64.Reduce",
+ "file": "CompPoly/Fields/Binary/BF64/Reduce.lean",
+ "public": [
+  {"name": "BF64.highHalf", "kind": "def", "line": 46},
+  {"name": "BF64.lowHalf", "kind": "def", "line": 49},
+  {"name": "BF64.highHalf_testBit", "kind": "theorem", "line": 52},
+  {"name": "BF64.lowHalf_testBit", "kind": "theorem", "line": 59},
+  {"name": "BF64.toPoly_halves", "kind": "theorem", "line": 66},
+  {"name": "BF64.highHalf_lt", "kind": "theorem", "line": 84},
+  {"name": "BF64.lowHalf_lt", "kind": "theorem", "line": 93},
+  {"name": "BF64.carryLessMul_lt", "kind": "theorem", "line": 96},
+  {"name": "BF64.reductionConstant", "kind": "def", "line": 116},
+  {"name": "BF64.toPoly_reductionConstant", "kind": "theorem", "line": 122},
+  {"name": "BF64.reductionConstant_lt", "kind": "theorem", "line": 134},
+  {"name": "BF64.foldStep", "kind": "def", "line": 137},
+  {"name": "BF64.foldStep_mod", "kind": "theorem", "line": 141},
+  {"name": "BF64.foldStep_lt", "kind": "theorem", "line": 151},
+  {"name": "BF64.reduce", "kind": "def", "line": 167},
+  {"name": "BF64.foldStep_foldStep_lt", "kind": "theorem", "line": 170},
+  {"name": "BF64.toPoly_lowHalf_of_lt", "kind": "theorem", "line": 176},
+  {"name": "BF64.toPoly_reduce", "kind": "theorem", "line": 186}
+ ],
+ "private": [],
+ "missing": [],
+ "unread": "Unnamed instances, the names an `alias ⟨…⟩` command gives, and the names Lean generates for a declaration (constructors, recursors, derived instances) are not read from the source, so they are not listed."
+}

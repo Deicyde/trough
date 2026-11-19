@@ -1,0 +1,26 @@
+{
+ "schema": "trough-ledger/v1",
+ "library": "CompPoly",
+ "repo": "Verified-zkEVM/CompPoly",
+ "rev": "afb9b1363984a70f10e24bd597f6ff40ebc8afbb",
+ "module": "CompPoly.LinearAlgebra.PolynomialMatrix.MuldersStorjohannCorrectness.Fast",
+ "file": "CompPoly/LinearAlgebra/PolynomialMatrix/MuldersStorjohannCorrectness/Fast.lean",
+ "public": [
+  {"name": "CompPoly.PolynomialMatrix.rowSubScaledShift_size", "kind": "theorem", "line": 31},
+  {"name": "CompPoly.PolynomialMatrix.rowGet_rowSubScaledShift", "kind": "theorem", "line": 36},
+  {"name": "CompPoly.PolynomialMatrix.rowSubScaledShift_eq", "kind": "theorem", "line": 54},
+  {"name": "CompPoly.PolynomialMatrix.cancelShiftedLeadingTermFast_eq", "kind": "theorem", "line": 71},
+  {"name": "CompPoly.PolynomialMatrix.rowLeadingPositions_size", "kind": "theorem", "line": 81},
+  {"name": "CompPoly.PolynomialMatrix.rowLeadingPositions_getD", "kind": "theorem", "line": 87},
+  {"name": "CompPoly.PolynomialMatrix.cachedLeadingConflictInRowStep?_eq", "kind": "theorem", "line": 100},
+  {"name": "CompPoly.PolynomialMatrix.cachedLeadingConflictInRow?_eq", "kind": "theorem", "line": 109},
+  {"name": "CompPoly.PolynomialMatrix.cachedLeadingConflict?_eq", "kind": "theorem", "line": 124},
+  {"name": "CompPoly.PolynomialMatrix.muldersStorjohannStepFast_eq", "kind": "theorem", "line": 139},
+  {"name": "CompPoly.PolynomialMatrix.muldersStorjohannReduceWithFuelFast_eq", "kind": "theorem", "line": 145},
+  {"name": "CompPoly.PolynomialMatrix.muldersStorjohannReduceFast_eq", "kind": "theorem", "line": 163},
+  {"name": "CompPoly.PolynomialMatrix.muldersStorjohannFastReducerContext", "kind": "def", "line": 174}
+ ],
+ "private": [],
+ "missing": [],
+ "unread": "Unnamed instances, the names an `alias ⟨…⟩` command gives, and the names Lean generates for a declaration (constructors, recursors, derived instances) are not read from the source, so they are not listed."
+}

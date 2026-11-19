@@ -1,0 +1,3234 @@
+{"stats":
+ {"theorems_with_proof": 13006,
+  "theorems": 13006,
+  "statement_edges": 1413,
+  "requested": 7329,
+  "proof_edges": 693,
+  "private": 0,
+  "modules": 401,
+  "missing": 0},
+ "schema": "trough-library-deps/v1",
+ "rev": "afb9b1363984a70f10e24bd597f6ff40ebc8afbb",
+ "private": [],
+ "modules":
+ {"CompPoly.Univariate.Vanishing":
+  {"statement":
+   ["CompPoly.Univariate.Basic",
+    "CompPoly.Univariate.BatchEval.SubproductTree",
+    "CompPoly.Univariate.Context"],
+   "proof":
+   ["CompPoly.Univariate.ToPoly.Core",
+    "CompPoly.Univariate.ToPoly.Equiv",
+    "CompPoly.Univariate.ToPoly.Impl"]},
+  "CompPoly.Univariate.ToPoly.RingHom":
+  {"statement":
+   ["CompPoly.Univariate.Basic",
+    "CompPoly.Univariate.ToPoly.Core",
+    "CompPoly.Univariate.ToPoly.Equiv"],
+   "proof": ["CompPoly.Univariate.ToPoly.Impl"]},
+  "CompPoly.Univariate.ToPoly.Impl":
+  {"statement":
+   ["CompPoly.Univariate.Basic",
+    "CompPoly.Univariate.Linear",
+    "CompPoly.Univariate.Raw.Core",
+    "CompPoly.Univariate.Raw.Division",
+    "CompPoly.Univariate.Raw.Ops",
+    "CompPoly.Univariate.ToPoly.Core"],
+   "proof":
+   ["CompPoly.Data.Array.Lemmas",
+    "CompPoly.Univariate.Raw.Proofs",
+    "CompPoly.Univariate.ToPoly.Equiv"]},
+  "CompPoly.Univariate.ToPoly.Equiv":
+  {"statement":
+   ["CompPoly.Univariate.Basic",
+    "CompPoly.Univariate.Raw.Core",
+    "CompPoly.Univariate.Raw.Ops",
+    "CompPoly.Univariate.ToPoly.Core"],
+   "proof": ["CompPoly.Univariate.Raw.Proofs"]},
+  "CompPoly.Univariate.ToPoly.Degree":
+  {"statement":
+   ["CompPoly.Univariate.Basic",
+    "CompPoly.Univariate.Linear",
+    "CompPoly.Univariate.Raw.Core",
+    "CompPoly.Univariate.ToPoly.Core",
+    "CompPoly.Univariate.ToPoly.Equiv",
+    "CompPoly.Univariate.ToPoly.Impl"],
+   "proof": []},
+  "CompPoly.Univariate.ToPoly.Core":
+  {"statement":
+   ["CompPoly.Univariate.Basic", "CompPoly.Univariate.Raw.Core", "CompPoly.Univariate.Raw.Ops"],
+   "proof": ["CompPoly.Data.Array.Lemmas", "CompPoly.Univariate.Raw.Proofs"]},
+  "CompPoly.Univariate.ToPoly": {"statement": [], "proof": []},
+  "CompPoly.Univariate.Roots.Splitter":
+  {"statement":
+   ["CompPoly.Univariate.Basic",
+    "CompPoly.Univariate.Raw.Context",
+    "CompPoly.Univariate.Raw.Core",
+    "CompPoly.Univariate.Raw.Modular",
+    "CompPoly.Univariate.Roots.Context"],
+   "proof": []},
+  "CompPoly.Univariate.Roots.SmoothSubgroup.Correctness":
+  {"statement":
+   ["CompPoly.Univariate.Basic",
+    "CompPoly.Univariate.BatchEval.Context",
+    "CompPoly.Univariate.Raw.Context",
+    "CompPoly.Univariate.Roots.Context",
+    "CompPoly.Univariate.Roots.RootProduct",
+    "CompPoly.Univariate.Roots.SmoothSubgroup.Basic",
+    "CompPoly.Univariate.Roots.Splitter"],
+   "proof":
+   ["CompPoly.Data.Array.Lemmas",
+    "CompPoly.Univariate.BatchEval.Naive",
+    "CompPoly.Univariate.Raw.Core",
+    "CompPoly.Univariate.Roots.Correctness",
+    "CompPoly.Univariate.ToPoly.Impl"]},
+  "CompPoly.Univariate.Roots.SmoothSubgroup.Basic":
+  {"statement":
+   ["CompPoly.Univariate.Basic",
+    "CompPoly.Univariate.BatchEval.Context",
+    "CompPoly.Univariate.Raw.Context",
+    "CompPoly.Univariate.Roots.Context"],
+   "proof": ["CompPoly.Univariate.Roots.Splitter"]},
+  "CompPoly.Univariate.Roots.SmoothSubgroup": {"statement": [], "proof": []},
+  "CompPoly.Univariate.Roots.Shoup.FrobeniusLinear":
+  {"statement":
+   ["CompPoly.Univariate.Basic",
+    "CompPoly.Univariate.Roots.Context",
+    "CompPoly.Univariate.Roots.Shoup.Basic",
+    "CompPoly.Univariate.Roots.Splitter",
+    "CompPoly.Univariate.ToPoly.Core"],
+   "proof": ["CompPoly.Univariate.Raw.Core", "CompPoly.Univariate.ToPoly.Impl"]},
+  "CompPoly.Univariate.Roots.Shoup.Correctness":
+  {"statement":
+   ["CompPoly.Univariate.Basic",
+    "CompPoly.Univariate.Raw.Context",
+    "CompPoly.Univariate.Roots.Context",
+    "CompPoly.Univariate.Roots.RootProduct",
+    "CompPoly.Univariate.Roots.Shoup.Basic",
+    "CompPoly.Univariate.Roots.Splitter",
+    "CompPoly.Univariate.ToPoly.Core"],
+   "proof":
+   ["CompPoly.Data.Array.Lemmas",
+    "CompPoly.Univariate.DivisionCorrectness",
+    "CompPoly.Univariate.EuclideanAlgorithm",
+    "CompPoly.Univariate.Raw.Core",
+    "CompPoly.Univariate.Raw.Division",
+    "CompPoly.Univariate.Raw.Modular",
+    "CompPoly.Univariate.Raw.Ops",
+    "CompPoly.Univariate.Raw.Proofs",
+    "CompPoly.Univariate.Roots.Correctness",
+    "CompPoly.Univariate.Roots.Shoup.FrobeniusLinear",
+    "CompPoly.Univariate.ToPoly.Equiv",
+    "CompPoly.Univariate.ToPoly.Impl"]},
+  "CompPoly.Univariate.Roots.Shoup.Basic":
+  {"statement":
+   ["CompPoly.Univariate.Basic",
+    "CompPoly.Univariate.Raw.Context",
+    "CompPoly.Univariate.Roots.Context",
+    "CompPoly.Univariate.Roots.Splitter",
+    "CompPoly.Univariate.ToPoly.Core"],
+   "proof": []},
+  "CompPoly.Univariate.Roots.Shoup": {"statement": [], "proof": []},
+  "CompPoly.Univariate.Roots.RootProduct":
+  {"statement":
+   ["CompPoly.Univariate.Basic",
+    "CompPoly.Univariate.Raw.Context",
+    "CompPoly.Univariate.Raw.Core",
+    "CompPoly.Univariate.Raw.Division",
+    "CompPoly.Univariate.Raw.Modular",
+    "CompPoly.Univariate.Raw.Ops",
+    "CompPoly.Univariate.Roots.Context",
+    "CompPoly.Univariate.ToPoly.Core"],
+   "proof":
+   ["CompPoly.Data.Array.Lemmas",
+    "CompPoly.Univariate.DivisionCorrectness",
+    "CompPoly.Univariate.EuclideanAlgorithm",
+    "CompPoly.Univariate.Raw.Proofs",
+    "CompPoly.Univariate.ToPoly.Equiv",
+    "CompPoly.Univariate.ToPoly.Impl"]},
+  "CompPoly.Univariate.Roots.LasVegas.Probability.Uniform":
+  {"statement":
+   ["CompPoly.Univariate.Basic",
+    "CompPoly.Univariate.Roots.Enumeration",
+    "CompPoly.Univariate.Roots.LasVegas.Probability.Basic"],
+   "proof":
+   ["CompPoly.Univariate.Raw.Core",
+    "CompPoly.Univariate.ToPoly.Core",
+    "CompPoly.Univariate.ToPoly.Impl"]},
+  "CompPoly.Univariate.Roots.LasVegas.Probability.Repeated":
+  {"statement":
+   ["CompPoly.Univariate.Basic",
+    "CompPoly.Univariate.Raw.Context",
+    "CompPoly.Univariate.Roots.Enumeration",
+    "CompPoly.Univariate.Roots.LasVegas.Basic",
+    "CompPoly.Univariate.Roots.LasVegas.Probability.Basic",
+    "CompPoly.Univariate.Roots.LasVegas.Probability.OddTrial",
+    "CompPoly.Univariate.Roots.LasVegas.Probability.Recursive",
+    "CompPoly.Univariate.Roots.LasVegas.Probability.Uniform",
+    "CompPoly.Univariate.Roots.Shoup.Basic"],
+   "proof":
+   ["CompPoly.Univariate.Roots.LasVegas.Correctness.Common",
+    "CompPoly.Univariate.Roots.LasVegas.Correctness.Odd",
+    "CompPoly.Univariate.Roots.LasVegas.Probability.EvenTrace",
+    "CompPoly.Univariate.ToPoly.Core",
+    "CompPoly.Univariate.ToPoly.Impl"]},
+  "CompPoly.Univariate.Roots.LasVegas.Probability.Recursive":
+  {"statement":
+   ["CompPoly.Univariate.Basic",
+    "CompPoly.Univariate.Raw.Context",
+    "CompPoly.Univariate.Roots.Context",
+    "CompPoly.Univariate.Roots.Enumeration",
+    "CompPoly.Univariate.Roots.LasVegas.Basic",
+    "CompPoly.Univariate.Roots.LasVegas.Correctness.Common",
+    "CompPoly.Univariate.Roots.LasVegas.Probability.Basic",
+    "CompPoly.Univariate.Roots.LasVegas.Probability.EvenTrace",
+    "CompPoly.Univariate.Roots.LasVegas.Probability.OddTrial",
+    "CompPoly.Univariate.Roots.RootProduct",
+    "CompPoly.Univariate.Roots.Shoup.Basic",
+    "CompPoly.Univariate.ToPoly.Core"],
+   "proof":
+   ["CompPoly.Univariate.Roots.LasVegas.Correctness.EvenTrace",
+    "CompPoly.Univariate.Roots.LasVegas.Correctness.Odd",
+    "CompPoly.Univariate.Roots.LasVegas.Probability.Uniform",
+    "CompPoly.Univariate.ToPoly.Impl"]},
+  "CompPoly.Univariate.Roots.LasVegas.Probability.OddTrial":
+  {"statement":
+   ["CompPoly.Univariate.Basic",
+    "CompPoly.Univariate.Raw.Context",
+    "CompPoly.Univariate.Raw.Core",
+    "CompPoly.Univariate.Roots.Context",
+    "CompPoly.Univariate.Roots.Enumeration",
+    "CompPoly.Univariate.Roots.LasVegas.Basic",
+    "CompPoly.Univariate.Roots.LasVegas.Probability.Basic",
+    "CompPoly.Univariate.Roots.LasVegas.Probability.Uniform",
+    "CompPoly.Univariate.Roots.RootProduct",
+    "CompPoly.Univariate.ToPoly.Core"],
+   "proof":
+   ["CompPoly.Univariate.Roots.LasVegas.Correctness.Common",
+    "CompPoly.Univariate.Roots.LasVegas.Correctness.Odd",
+    "CompPoly.Univariate.Roots.LasVegas.OddBucket",
+    "CompPoly.Univariate.Roots.LasVegas.Probability.OddBuckets",
+    "CompPoly.Univariate.ToPoly.Impl"]},
+  "CompPoly.Univariate.Roots.LasVegas.Probability.OddBuckets":
+  {"statement":
+   ["CompPoly.Univariate.Roots.LasVegas.OddBucket",
+    "CompPoly.Univariate.Roots.LasVegas.Probability.Basic",
+    "CompPoly.Univariate.Roots.LasVegas.Probability.Uniform"],
+   "proof": []},
+  "CompPoly.Univariate.Roots.LasVegas.Probability.EvenTrace":
+  {"statement":
+   ["CompPoly.Univariate.Basic",
+    "CompPoly.Univariate.Raw.Context",
+    "CompPoly.Univariate.Roots.Context",
+    "CompPoly.Univariate.Roots.Enumeration",
+    "CompPoly.Univariate.Roots.LasVegas.Basic",
+    "CompPoly.Univariate.Roots.LasVegas.Probability.Basic",
+    "CompPoly.Univariate.Roots.LasVegas.Probability.OddTrial",
+    "CompPoly.Univariate.Roots.LasVegas.Probability.Uniform",
+    "CompPoly.Univariate.Roots.Shoup.Basic"],
+   "proof": ["CompPoly.Univariate.Roots.LasVegas.Correctness.EvenTrace"]},
+  "CompPoly.Univariate.Roots.LasVegas.Probability.Basic":
+  {"statement": ["CompPoly.Univariate.Basic", "CompPoly.Univariate.Roots.Enumeration"],
+   "proof": []},
+  "CompPoly.Univariate.Roots.LasVegas.Probability": {"statement": [], "proof": []},
+  "CompPoly.Univariate.Roots.LasVegas.OddBucket": {"statement": [], "proof": []},
+  "CompPoly.Univariate.Roots.LasVegas.Correctness.Odd":
+  {"statement":
+   ["CompPoly.Univariate.Basic",
+    "CompPoly.Univariate.Raw.Context",
+    "CompPoly.Univariate.Roots.LasVegas.Basic",
+    "CompPoly.Univariate.Roots.LasVegas.Correctness.Common",
+    "CompPoly.Univariate.Roots.LasVegas.OddBucket",
+    "CompPoly.Univariate.ToPoly.Core"],
+   "proof":
+   ["CompPoly.Data.Array.Lemmas",
+    "CompPoly.Univariate.Raw.Core",
+    "CompPoly.Univariate.Roots.Correctness",
+    "CompPoly.Univariate.Roots.RootProduct",
+    "CompPoly.Univariate.ToPoly.Impl"]},
+  "CompPoly.Univariate.Roots.LasVegas.Correctness.Loop":
+  {"statement":
+   ["CompPoly.Univariate.Basic",
+    "CompPoly.Univariate.Raw.Context",
+    "CompPoly.Univariate.Roots.Context",
+    "CompPoly.Univariate.Roots.Enumeration",
+    "CompPoly.Univariate.Roots.LasVegas.Basic",
+    "CompPoly.Univariate.Roots.RootProduct",
+    "CompPoly.Univariate.Roots.Shoup.Basic",
+    "CompPoly.Univariate.Roots.Splitter"],
+   "proof":
+   ["CompPoly.Univariate.Raw.Core",
+    "CompPoly.Univariate.Roots.Correctness",
+    "CompPoly.Univariate.Roots.LasVegas.Correctness.Common",
+    "CompPoly.Univariate.Roots.LasVegas.Correctness.EvenTrace",
+    "CompPoly.Univariate.Roots.LasVegas.Correctness.Odd",
+    "CompPoly.Univariate.ToPoly.Core",
+    "CompPoly.Univariate.ToPoly.Impl"]},
+  "CompPoly.Univariate.Roots.LasVegas.Correctness.EvenTrace":
+  {"statement":
+   ["CompPoly.Univariate.Basic",
+    "CompPoly.Univariate.Raw.Context",
+    "CompPoly.Univariate.Roots.LasVegas.Basic",
+    "CompPoly.Univariate.Roots.LasVegas.Correctness.Common",
+    "CompPoly.Univariate.Roots.Shoup.Basic",
+    "CompPoly.Univariate.ToPoly.Core"],
+   "proof":
+   ["CompPoly.Univariate.Raw.Core",
+    "CompPoly.Univariate.Roots.Correctness",
+    "CompPoly.Univariate.Roots.RootProduct",
+    "CompPoly.Univariate.ToPoly.Equiv",
+    "CompPoly.Univariate.ToPoly.Impl"]},
+  "CompPoly.Univariate.Roots.LasVegas.Correctness.Common":
+  {"statement":
+   ["CompPoly.Data.Array.Lemmas",
+    "CompPoly.Univariate.Basic",
+    "CompPoly.Univariate.Raw.Context",
+    "CompPoly.Univariate.Raw.Core",
+    "CompPoly.Univariate.Roots.Context",
+    "CompPoly.Univariate.Roots.LasVegas.Basic",
+    "CompPoly.Univariate.Roots.RootProduct",
+    "CompPoly.Univariate.ToPoly.Core"],
+   "proof":
+   ["CompPoly.Univariate.DivisionCorrectness",
+    "CompPoly.Univariate.EuclideanAlgorithm",
+    "CompPoly.Univariate.Raw.Division",
+    "CompPoly.Univariate.Raw.Modular",
+    "CompPoly.Univariate.Raw.Ops",
+    "CompPoly.Univariate.Roots.Correctness",
+    "CompPoly.Univariate.ToPoly.Equiv",
+    "CompPoly.Univariate.ToPoly.Impl"]},
+  "CompPoly.Univariate.Roots.LasVegas.Correctness": {"statement": [], "proof": []},
+  "CompPoly.Univariate.Roots.LasVegas.Basic":
+  {"statement":
+   ["CompPoly.Data.Array.Lemmas",
+    "CompPoly.Univariate.Basic",
+    "CompPoly.Univariate.Raw.Context",
+    "CompPoly.Univariate.Raw.Core",
+    "CompPoly.Univariate.Raw.Modular",
+    "CompPoly.Univariate.Roots.Context",
+    "CompPoly.Univariate.Roots.Enumeration",
+    "CompPoly.Univariate.Roots.Shoup.Basic",
+    "CompPoly.Univariate.ToPoly.Core"],
+   "proof": ["CompPoly.Univariate.Roots.Splitter"]},
+  "CompPoly.Univariate.Roots.LasVegas": {"statement": [], "proof": []},
+  "CompPoly.Univariate.Roots.Extraction":
+  {"statement":
+   ["CompPoly.Data.Array.Lemmas", "CompPoly.Univariate.Basic", "CompPoly.Univariate.Raw.Core"],
+   "proof": []},
+  "CompPoly.Univariate.Roots.Enumeration":
+  {"statement": ["CompPoly.Univariate.Basic", "CompPoly.Univariate.Roots.Context"],
+   "proof": ["CompPoly.Univariate.Roots.Correctness"]},
+  "CompPoly.Univariate.Roots.Correctness":
+  {"statement":
+   ["CompPoly.Univariate.Basic",
+    "CompPoly.Univariate.EuclideanAlgorithm",
+    "CompPoly.Univariate.Raw.Context",
+    "CompPoly.Univariate.Raw.Core",
+    "CompPoly.Univariate.Raw.Division",
+    "CompPoly.Univariate.Raw.Modular",
+    "CompPoly.Univariate.Raw.Ops",
+    "CompPoly.Univariate.Roots.Backend",
+    "CompPoly.Univariate.Roots.Context",
+    "CompPoly.Univariate.Roots.Extraction",
+    "CompPoly.Univariate.Roots.RootProduct",
+    "CompPoly.Univariate.Roots.Splitter",
+    "CompPoly.Univariate.ToPoly.Core"],
+   "proof":
+   ["CompPoly.Data.Array.Lemmas",
+    "CompPoly.Univariate.DivisionCorrectness",
+    "CompPoly.Univariate.Raw.Proofs",
+    "CompPoly.Univariate.Raw.Size",
+    "CompPoly.Univariate.ToPoly.Equiv",
+    "CompPoly.Univariate.ToPoly.Impl"]},
+  "CompPoly.Univariate.Roots.Context":
+  {"statement": ["CompPoly.Univariate.Basic", "CompPoly.Univariate.Raw.Core"], "proof": []},
+  "CompPoly.Univariate.Roots.Backend":
+  {"statement":
+   ["CompPoly.Univariate.Basic",
+    "CompPoly.Univariate.Raw.Context",
+    "CompPoly.Univariate.Raw.Core",
+    "CompPoly.Univariate.Roots.Context",
+    "CompPoly.Univariate.Roots.Extraction",
+    "CompPoly.Univariate.Roots.RootProduct"],
+   "proof": []},
+  "CompPoly.Univariate.Roots": {"statement": [], "proof": []},
+  "CompPoly.Univariate.ReedSolomon.NTTEncode":
+  {"statement":
+   ["CompPoly.Univariate.NTT.Domain",
+    "CompPoly.Univariate.NTT.Forward",
+    "CompPoly.Univariate.Raw.Core",
+    "CompPoly.Univariate.ReedSolomon"],
+   "proof":
+   ["CompPoly.Univariate.Basic",
+    "CompPoly.Univariate.NTT.Evaluation",
+    "CompPoly.Univariate.Raw.Ops",
+    "CompPoly.Univariate.ToPoly.Core",
+    "CompPoly.Univariate.ToPoly.Impl"]},
+  "CompPoly.Univariate.ReedSolomon.GaoNTT":
+  {"statement":
+   ["CompPoly.Univariate.Basic",
+    "CompPoly.Univariate.EuclideanAlgorithm",
+    "CompPoly.Univariate.NTT.Domain",
+    "CompPoly.Univariate.NTT.Interpolation",
+    "CompPoly.Univariate.NTTFast.Correctness.Basic",
+    "CompPoly.Univariate.NTTFast.Interpolation",
+    "CompPoly.Univariate.NTTFast.Plan",
+    "CompPoly.Univariate.Raw.Core",
+    "CompPoly.Univariate.ReedSolomon",
+    "CompPoly.Univariate.ReedSolomon.GaoDecoder",
+    "CompPoly.Univariate.ReedSolomon.NTTEncode",
+    "CompPoly.Univariate.ToPoly.Core"],
+   "proof":
+   ["CompPoly.Univariate.Lagrange",
+    "CompPoly.Univariate.NTT.Barycentric",
+    "CompPoly.Univariate.ReedSolomon.GaoCorrectness",
+    "CompPoly.Univariate.ToPoly.Impl",
+    "CompPoly.Univariate.ToPoly.RingHom"]},
+  "CompPoly.Univariate.ReedSolomon.GaoDecoder":
+  {"statement":
+   ["CompPoly.Univariate.Basic",
+    "CompPoly.Univariate.EuclideanAlgorithm",
+    "CompPoly.Univariate.Lagrange",
+    "CompPoly.Univariate.ReedSolomon"],
+   "proof": []},
+  "CompPoly.Univariate.ReedSolomon.GaoCorrectness":
+  {"statement":
+   ["CompPoly.Univariate.Basic",
+    "CompPoly.Univariate.EuclideanAlgorithm",
+    "CompPoly.Univariate.ReedSolomon",
+    "CompPoly.Univariate.ReedSolomon.GaoDecoder",
+    "CompPoly.Univariate.ToPoly.Core"],
+   "proof":
+   ["CompPoly.ToMathlib.Polynomial.Roots",
+    "CompPoly.Univariate.DivisionCorrectness",
+    "CompPoly.Univariate.Lagrange",
+    "CompPoly.Univariate.ToPoly.Degree",
+    "CompPoly.Univariate.ToPoly.Equiv",
+    "CompPoly.Univariate.ToPoly.Impl"]},
+  "CompPoly.Univariate.ReedSolomon":
+  {"statement": ["CompPoly.Univariate.Basic", "CompPoly.Univariate.Raw.Core"],
+   "proof":
+   ["CompPoly.Univariate.Linear",
+    "CompPoly.Univariate.ToPoly.Core",
+    "CompPoly.Univariate.ToPoly.Impl"]},
+  "CompPoly.Univariate.Raw.Size":
+  {"statement": ["CompPoly.Univariate.Raw.Core", "CompPoly.Univariate.Raw.Ops"],
+   "proof": ["CompPoly.Data.Array.Lemmas"]},
+  "CompPoly.Univariate.Raw.Proofs":
+  {"statement":
+   ["CompPoly.Data.Array.Lemmas",
+    "CompPoly.Univariate.Raw.Core",
+    "CompPoly.Univariate.Raw.Division",
+    "CompPoly.Univariate.Raw.Ops"],
+   "proof": ["CompPoly.Univariate.Raw.Size"]},
+  "CompPoly.Univariate.Raw.Ops":
+  {"statement": ["CompPoly.Data.Array.Lemmas", "CompPoly.Univariate.Raw.Core"], "proof": []},
+  "CompPoly.Univariate.Raw.Modular":
+  {"statement":
+   ["CompPoly.Univariate.Raw.Context",
+    "CompPoly.Univariate.Raw.Core",
+    "CompPoly.Univariate.Raw.Division",
+    "CompPoly.Univariate.Raw.Ops"],
+   "proof": []},
+  "CompPoly.Univariate.Raw.Division":
+  {"statement": ["CompPoly.Univariate.Raw.Core", "CompPoly.Univariate.Raw.Ops"], "proof": []},
+  "CompPoly.Univariate.Raw.Core": {"statement": ["CompPoly.Data.Array.Lemmas"], "proof": []},
+  "CompPoly.Univariate.Raw.Context":
+  {"statement":
+   ["CompPoly.Univariate.NTT.Domain",
+    "CompPoly.Univariate.NTT.FastMul",
+    "CompPoly.Univariate.NTT.FastMulLow",
+    "CompPoly.Univariate.NTTFast.FastMul",
+    "CompPoly.Univariate.NTTFast.FastMulLow",
+    "CompPoly.Univariate.Raw.Core",
+    "CompPoly.Univariate.Raw.Division",
+    "CompPoly.Univariate.Raw.Ops",
+    "CompPoly.Univariate.Raw.Proofs"],
+   "proof":
+   ["CompPoly.Univariate.Basic",
+    "CompPoly.Univariate.DivisionCorrectness",
+    "CompPoly.Univariate.NTTFast.Correctness.Pipeline"]},
+  "CompPoly.Univariate.Raw": {"statement": [], "proof": []},
+  "CompPoly.Univariate.Quotient.Equiv":
+  {"statement":
+   ["CompPoly.Univariate.Quotient.Core",
+    "CompPoly.Univariate.Raw.Core",
+    "CompPoly.Univariate.ToPoly.Core"],
+   "proof": ["CompPoly.Univariate.Raw.Ops", "CompPoly.Univariate.ToPoly.Equiv"]},
+  "CompPoly.Univariate.Quotient.Core":
+  {"statement": ["CompPoly.Univariate.Raw.Core", "CompPoly.Univariate.Raw.Ops"],
+   "proof": ["CompPoly.Data.Array.Lemmas", "CompPoly.Univariate.Raw.Proofs"]},
+  "CompPoly.Univariate.NTTFast.Plan":
+  {"statement":
+   ["CompPoly.Univariate.Basic",
+    "CompPoly.Univariate.NTT.Domain",
+    "CompPoly.Univariate.NTT.FastMul",
+    "CompPoly.Univariate.Raw.Core"],
+   "proof": []},
+  "CompPoly.Univariate.NTTFast.Interpolation":
+  {"statement":
+   ["CompPoly.Univariate.Basic",
+    "CompPoly.Univariate.Lagrange",
+    "CompPoly.Univariate.NTT.Domain",
+    "CompPoly.Univariate.NTT.Evaluation",
+    "CompPoly.Univariate.NTT.Interpolation",
+    "CompPoly.Univariate.NTT.Transform",
+    "CompPoly.Univariate.NTTFast.Correctness.Basic",
+    "CompPoly.Univariate.NTTFast.Plan",
+    "CompPoly.Univariate.Raw.Core",
+    "CompPoly.Univariate.Raw.Ops"],
+   "proof":
+   ["CompPoly.Univariate.NTT.Inverse", "CompPoly.Univariate.NTTFast.Correctness.Pipeline"]},
+  "CompPoly.Univariate.NTTFast.FastMulLow":
+  {"statement":
+   ["CompPoly.Univariate.NTT.Domain",
+    "CompPoly.Univariate.NTTFast.FastMul",
+    "CompPoly.Univariate.Raw.Core",
+    "CompPoly.Univariate.Raw.Ops",
+    "CompPoly.Univariate.Raw.Proofs"],
+   "proof": ["CompPoly.Univariate.NTTFast.Correctness.Pipeline"]},
+  "CompPoly.Univariate.NTTFast.FastMul":
+  {"statement":
+   ["CompPoly.Univariate.Basic",
+    "CompPoly.Univariate.NTT.Domain",
+    "CompPoly.Univariate.NTTFast.Plan",
+    "CompPoly.Univariate.Raw.Core"],
+   "proof": []},
+  "CompPoly.Univariate.NTTFast.Evaluation":
+  {"statement":
+   ["CompPoly.Univariate.NTT.Domain",
+    "CompPoly.Univariate.NTT.Evaluation",
+    "CompPoly.Univariate.NTT.Transform",
+    "CompPoly.Univariate.NTTFast.Correctness.Basic",
+    "CompPoly.Univariate.NTTFast.Plan",
+    "CompPoly.Univariate.Raw.Core",
+    "CompPoly.Univariate.ToPoly.Core"],
+   "proof":
+   ["CompPoly.Univariate.NTT.Forward", "CompPoly.Univariate.NTTFast.Correctness.Pipeline"]},
+  "CompPoly.Univariate.NTTFast.Coset":
+  {"statement":
+   ["CompPoly.Univariate.Basic",
+    "CompPoly.Univariate.Lagrange",
+    "CompPoly.Univariate.NTT.Coset",
+    "CompPoly.Univariate.NTT.Domain",
+    "CompPoly.Univariate.NTT.Transform",
+    "CompPoly.Univariate.NTTFast.Correctness.Basic",
+    "CompPoly.Univariate.NTTFast.Plan",
+    "CompPoly.Univariate.Raw.Core",
+    "CompPoly.Univariate.ToPoly.Core"],
+   "proof":
+   ["CompPoly.Univariate.NTT.Evaluation",
+    "CompPoly.Univariate.NTT.Forward",
+    "CompPoly.Univariate.NTT.Inverse",
+    "CompPoly.Univariate.NTTFast.Correctness.Pipeline",
+    "CompPoly.Univariate.NTTFast.Evaluation"]},
+  "CompPoly.Univariate.NTTFast.Correctness.Radix4DIT":
+  {"statement":
+   ["CompPoly.Univariate.NTT.Domain",
+    "CompPoly.Univariate.NTT.Transform",
+    "CompPoly.Univariate.NTTFast.Plan"],
+   "proof": ["CompPoly.Univariate.NTTFast.Correctness.Basic"]},
+  "CompPoly.Univariate.NTTFast.Correctness.Radix4DIF":
+  {"statement":
+   ["CompPoly.Univariate.NTT.Domain",
+    "CompPoly.Univariate.NTT.Forward",
+    "CompPoly.Univariate.NTT.Transform",
+    "CompPoly.Univariate.NTTFast.Plan"],
+   "proof":
+   ["CompPoly.Univariate.NTTFast.Correctness.Basic",
+    "CompPoly.Univariate.NTTFast.Correctness.DIF"]},
+  "CompPoly.Univariate.NTTFast.Correctness.Pipeline":
+  {"statement":
+   ["CompPoly.Univariate.Basic",
+    "CompPoly.Univariate.NTT.Domain",
+    "CompPoly.Univariate.NTT.FastMul",
+    "CompPoly.Univariate.NTT.Forward",
+    "CompPoly.Univariate.NTT.Inverse",
+    "CompPoly.Univariate.NTT.Transform",
+    "CompPoly.Univariate.NTTFast.Correctness.Basic",
+    "CompPoly.Univariate.NTTFast.FastMul",
+    "CompPoly.Univariate.NTTFast.Plan",
+    "CompPoly.Univariate.Raw.Core",
+    "CompPoly.Univariate.Raw.Ops"],
+   "proof":
+   ["CompPoly.Univariate.NTTFast.Correctness.Pair",
+    "CompPoly.Univariate.NTTFast.Correctness.Radix4DIF",
+    "CompPoly.Univariate.NTTFast.Correctness.Radix4DIT"]},
+  "CompPoly.Univariate.NTTFast.Correctness.Pair":
+  {"statement": ["CompPoly.Univariate.NTT.Domain", "CompPoly.Univariate.NTTFast.Plan"],
+   "proof": ["CompPoly.Univariate.NTTFast.Correctness.Basic"]},
+  "CompPoly.Univariate.NTTFast.Correctness.DIF":
+  {"statement":
+   ["CompPoly.Univariate.NTT.Domain",
+    "CompPoly.Univariate.NTT.Forward",
+    "CompPoly.Univariate.NTT.Transform",
+    "CompPoly.Univariate.NTTFast.Plan"],
+   "proof": ["CompPoly.Data.Fin.BigOperators", "CompPoly.Univariate.NTTFast.Correctness.Basic"]},
+  "CompPoly.Univariate.NTTFast.Correctness.Basic":
+  {"statement":
+   ["CompPoly.Univariate.NTT.Domain",
+    "CompPoly.Univariate.NTT.Transform",
+    "CompPoly.Univariate.NTTFast.Plan"],
+   "proof": []},
+  "CompPoly.Univariate.NTTFast.Correctness": {"statement": [], "proof": []},
+  "CompPoly.Univariate.NTT.Transform":
+  {"statement": ["CompPoly.Univariate.NTT.Domain"], "proof": ["CompPoly.Data.Nat.Bitwise"]},
+  "CompPoly.Univariate.NTT.KoalaBear":
+  {"statement":
+   ["CompPoly.Fields.KoalaBear.Basic",
+    "CompPoly.Fields.KoalaBear.Fast",
+    "CompPoly.Fields.Montgomery.Native32Field",
+    "CompPoly.Univariate.NTT.Domain"],
+   "proof": []},
+  "CompPoly.Univariate.NTT.Kernel": {"statement": ["CompPoly.Univariate.NTT.Domain"], "proof": []},
+  "CompPoly.Univariate.NTT.Inverse":
+  {"statement":
+   ["CompPoly.Univariate.NTT.Domain",
+    "CompPoly.Univariate.NTT.Forward",
+    "CompPoly.Univariate.NTT.Transform",
+    "CompPoly.Univariate.Raw.Core"],
+   "proof": []},
+  "CompPoly.Univariate.NTT.Interpolation":
+  {"statement":
+   ["CompPoly.Univariate.Basic",
+    "CompPoly.Univariate.Lagrange",
+    "CompPoly.Univariate.NTT.Domain",
+    "CompPoly.Univariate.NTT.Evaluation",
+    "CompPoly.Univariate.NTT.Inverse",
+    "CompPoly.Univariate.Raw.Core",
+    "CompPoly.Univariate.Raw.Ops"],
+   "proof":
+   ["CompPoly.Univariate.NTT.Forward",
+    "CompPoly.Univariate.NTT.Kernel",
+    "CompPoly.Univariate.ToPoly.Core",
+    "CompPoly.Univariate.ToPoly.Impl"]},
+  "CompPoly.Univariate.NTT.Forward":
+  {"statement":
+   ["CompPoly.Univariate.NTT.Domain",
+    "CompPoly.Univariate.NTT.Transform",
+    "CompPoly.Univariate.Raw.Core"],
+   "proof": ["CompPoly.Data.Fin.BigOperators"]},
+  "CompPoly.Univariate.NTT.FastMulLow":
+  {"statement":
+   ["CompPoly.Univariate.NTT.Domain",
+    "CompPoly.Univariate.NTT.FastMul",
+    "CompPoly.Univariate.Raw.Core",
+    "CompPoly.Univariate.Raw.Ops",
+    "CompPoly.Univariate.Raw.Proofs"],
+   "proof": []},
+  "CompPoly.Univariate.NTT.FastMul":
+  {"statement":
+   ["CompPoly.Univariate.Basic",
+    "CompPoly.Univariate.NTT.Domain",
+    "CompPoly.Univariate.NTT.Forward",
+    "CompPoly.Univariate.NTT.Inverse",
+    "CompPoly.Univariate.Raw.Core",
+    "CompPoly.Univariate.Raw.Ops"],
+   "proof":
+   ["CompPoly.Univariate.NTT.Evaluation",
+    "CompPoly.Univariate.NTT.Kernel",
+    "CompPoly.Univariate.Raw.Proofs",
+    "CompPoly.Univariate.ToPoly.Core",
+    "CompPoly.Univariate.ToPoly.Equiv"]},
+  "CompPoly.Univariate.NTT.Evaluation":
+  {"statement":
+   ["CompPoly.Univariate.Basic",
+    "CompPoly.Univariate.BatchEval.Naive",
+    "CompPoly.Univariate.NTT.Domain",
+    "CompPoly.Univariate.NTT.Forward",
+    "CompPoly.Univariate.Raw.Core",
+    "CompPoly.Univariate.Raw.Ops",
+    "CompPoly.Univariate.ToPoly.Core"],
+   "proof": []},
+  "CompPoly.Univariate.NTT.Domain": {"statement": ["CompPoly.Univariate.Raw.Core"], "proof": []},
+  "CompPoly.Univariate.NTT.Coset":
+  {"statement":
+   ["CompPoly.Univariate.Basic",
+    "CompPoly.Univariate.Lagrange",
+    "CompPoly.Univariate.NTT.Domain",
+    "CompPoly.Univariate.NTT.Forward",
+    "CompPoly.Univariate.NTT.Inverse",
+    "CompPoly.Univariate.Raw.Core",
+    "CompPoly.Univariate.Raw.Ops",
+    "CompPoly.Univariate.ToPoly.Core"],
+   "proof":
+   ["CompPoly.Univariate.NTT.Evaluation",
+    "CompPoly.Univariate.NTT.Interpolation",
+    "CompPoly.Univariate.ToPoly.Impl",
+    "CompPoly.Univariate.ToPoly.RingHom"]},
+  "CompPoly.Univariate.NTT.Barycentric":
+  {"statement":
+   ["CompPoly.Univariate.Barycentric",
+    "CompPoly.Univariate.Basic",
+    "CompPoly.Univariate.Lagrange",
+    "CompPoly.Univariate.NTT.Domain"],
+   "proof": []},
+  "CompPoly.Univariate.NTT.BabyBear":
+  {"statement":
+   ["CompPoly.Fields.BabyBear.Basic",
+    "CompPoly.Fields.BabyBear.Fast",
+    "CompPoly.Fields.Montgomery.Native32Field",
+    "CompPoly.Univariate.NTT.Domain"],
+   "proof": []},
+  "CompPoly.Univariate.Modular":
+  {"statement": ["CompPoly.Univariate.Basic", "CompPoly.Univariate.Context"], "proof": []},
+  "CompPoly.Univariate.ManyEval.Correctness":
+  {"statement":
+   ["CompPoly.Univariate.Basic",
+    "CompPoly.Univariate.ManyEval.Basic",
+    "CompPoly.Univariate.Raw.Core"],
+   "proof": ["CompPoly.Data.Array.Lemmas", "CompPoly.Data.List.Lemmas"]},
+  "CompPoly.Univariate.ManyEval.Basic":
+  {"statement": ["CompPoly.Univariate.Basic", "CompPoly.Univariate.Raw.Core"], "proof": []},
+  "CompPoly.Univariate.ManyEval": {"statement": [], "proof": []},
+  "CompPoly.Univariate.Linear":
+  {"statement":
+   ["CompPoly.Univariate.Basic", "CompPoly.Univariate.Raw.Core", "CompPoly.Univariate.Raw.Ops"],
+   "proof": ["CompPoly.Univariate.Raw.Size"]},
+  "CompPoly.Univariate.LagrangeArray":
+  {"statement": ["CompPoly.Univariate.Basic", "CompPoly.Univariate.Lagrange"],
+   "proof": ["CompPoly.Univariate.ToPoly.Core", "CompPoly.Univariate.ToPoly.Impl"]},
+  "CompPoly.Univariate.Lagrange":
+  {"statement":
+   ["CompPoly.Univariate.Basic",
+    "CompPoly.Univariate.Raw.Core",
+    "CompPoly.Univariate.Raw.Ops",
+    "CompPoly.Univariate.ToPoly.Core"],
+   "proof": ["CompPoly.Univariate.ToPoly.Equiv", "CompPoly.Univariate.ToPoly.Impl"]},
+  "CompPoly.Univariate.EuclideanAlgorithm":
+  {"statement":
+   ["CompPoly.Univariate.Basic", "CompPoly.Univariate.Raw.Core", "CompPoly.Univariate.ToPoly.Core"],
+   "proof":
+   ["CompPoly.Data.Array.Lemmas",
+    "CompPoly.ToMathlib.Order.WithBot",
+    "CompPoly.Univariate.DivisionCorrectness",
+    "CompPoly.Univariate.Linear",
+    "CompPoly.Univariate.Raw.Division",
+    "CompPoly.Univariate.Raw.Ops",
+    "CompPoly.Univariate.Raw.Proofs",
+    "CompPoly.Univariate.ToPoly.Degree",
+    "CompPoly.Univariate.ToPoly.Equiv",
+    "CompPoly.Univariate.ToPoly.Impl"]},
+  "CompPoly.Univariate.DivisionCorrectness":
+  {"statement":
+   ["CompPoly.Univariate.Basic",
+    "CompPoly.Univariate.Raw.Core",
+    "CompPoly.Univariate.Raw.Division",
+    "CompPoly.Univariate.Raw.Ops",
+    "CompPoly.Univariate.ToPoly.Core"],
+   "proof":
+   ["CompPoly.Data.Array.Lemmas",
+    "CompPoly.Univariate.Raw.Proofs",
+    "CompPoly.Univariate.ToPoly.Degree",
+    "CompPoly.Univariate.ToPoly.Equiv",
+    "CompPoly.Univariate.ToPoly.Impl"]},
+  "CompPoly.Univariate.Deriv":
+  {"statement":
+   ["CompPoly.Univariate.Basic", "CompPoly.Univariate.Raw.Core", "CompPoly.Univariate.ToPoly.Core"],
+   "proof": ["CompPoly.Univariate.ToPoly.Equiv", "CompPoly.Univariate.ToPoly.Impl"]},
+  "CompPoly.Univariate.Context":
+  {"statement":
+   ["CompPoly.Univariate.Basic",
+    "CompPoly.Univariate.DivisionCorrectness",
+    "CompPoly.Univariate.NTT.Domain",
+    "CompPoly.Univariate.NTT.FastMul",
+    "CompPoly.Univariate.NTT.FastMulLow",
+    "CompPoly.Univariate.NTTFast.Correctness.Pipeline",
+    "CompPoly.Univariate.NTTFast.FastMul",
+    "CompPoly.Univariate.NTTFast.FastMulLow",
+    "CompPoly.Univariate.Raw.Ops"],
+   "proof": []},
+  "CompPoly.Univariate.CoefficientInterpolation":
+  {"statement":
+   ["CompPoly.Univariate.Basic",
+    "CompPoly.Univariate.BatchEval.Context",
+    "CompPoly.Univariate.Deriv",
+    "CompPoly.Univariate.Raw.Core",
+    "CompPoly.Univariate.Vanishing"],
+   "proof":
+   ["CompPoly.Data.Array.Lemmas",
+    "CompPoly.Univariate.BatchEval.Naive",
+    "CompPoly.Univariate.DivisionCorrectness",
+    "CompPoly.Univariate.NTT.Evaluation",
+    "CompPoly.Univariate.ToPoly.Core",
+    "CompPoly.Univariate.ToPoly.Equiv",
+    "CompPoly.Univariate.ToPoly.Impl"]},
+  "CompPoly.Univariate.CMvEquiv":
+  {"statement":
+   ["CompPoly.Multivariate.Basic",
+    "CompPoly.Multivariate.FinSuccEquiv",
+    "CompPoly.Multivariate.Lawful",
+    "CompPoly.Multivariate.MvPolyEquiv.Core",
+    "CompPoly.Multivariate.MvPolyEquiv.Instances",
+    "CompPoly.Univariate.Basic",
+    "CompPoly.Univariate.ToPoly.Equiv"],
+   "proof":
+   ["CompPoly.Multivariate.MvPolyEquiv.Eval",
+    "CompPoly.Univariate.ToPoly.Core",
+    "CompPoly.Univariate.ToPoly.Impl"]},
+  "CompPoly.Univariate.Bytes":
+  {"statement":
+   ["CompPoly.Data.Bytes.Codec",
+    "CompPoly.Data.Bytes.Delimited",
+    "CompPoly.Data.Bytes.Vector",
+    "CompPoly.Univariate.Basic",
+    "CompPoly.Univariate.Linear",
+    "CompPoly.Univariate.Raw.Core"],
+   "proof": []},
+  "CompPoly.Univariate.BatchEval.SubproductTree":
+  {"statement": ["CompPoly.Univariate.Basic", "CompPoly.Univariate.Context"], "proof": []},
+  "CompPoly.Univariate.BatchEval.Naive": {"statement": ["CompPoly.Univariate.Basic"], "proof": []},
+  "CompPoly.Univariate.BatchEval.Interpolation":
+  {"statement":
+   ["CompPoly.Univariate.Basic",
+    "CompPoly.Univariate.BatchEval.SubproductTree",
+    "CompPoly.Univariate.Context",
+    "CompPoly.Univariate.Deriv",
+    "CompPoly.Univariate.LagrangeArray"],
+   "proof":
+   ["CompPoly.Univariate.BatchEval.Correctness",
+    "CompPoly.Univariate.Lagrange",
+    "CompPoly.Univariate.ToPoly.Core",
+    "CompPoly.Univariate.ToPoly.Equiv",
+    "CompPoly.Univariate.ToPoly.Impl",
+    "CompPoly.Univariate.ToPoly.RingHom"]},
+  "CompPoly.Univariate.BatchEval.Correctness":
+  {"statement":
+   ["CompPoly.Univariate.Basic",
+    "CompPoly.Univariate.BatchEval.Naive",
+    "CompPoly.Univariate.BatchEval.SubproductTree",
+    "CompPoly.Univariate.Context"],
+   "proof":
+   ["CompPoly.Univariate.ToPoly.Core",
+    "CompPoly.Univariate.ToPoly.Equiv",
+    "CompPoly.Univariate.ToPoly.Impl"]},
+  "CompPoly.Univariate.BatchEval.Context":
+  {"statement":
+   ["CompPoly.Univariate.Basic",
+    "CompPoly.Univariate.BatchEval.Naive",
+    "CompPoly.Univariate.BatchEval.SubproductTree",
+    "CompPoly.Univariate.Context"],
+   "proof": ["CompPoly.Univariate.BatchEval.Correctness"]},
+  "CompPoly.Univariate.BatchEval": {"statement": [], "proof": []},
+  "CompPoly.Univariate.Basic":
+  {"statement":
+   ["CompPoly.Data.Array.Lemmas",
+    "CompPoly.Univariate.Raw.Core",
+    "CompPoly.Univariate.Raw.Division",
+    "CompPoly.Univariate.Raw.Ops"],
+   "proof": ["CompPoly.Univariate.Raw.Proofs"]},
+  "CompPoly.Univariate.Barycentric":
+  {"statement": ["CompPoly.Univariate.Basic", "CompPoly.Univariate.Lagrange"],
+   "proof": ["CompPoly.Univariate.ToPoly.Core", "CompPoly.Univariate.ToPoly.Impl"]},
+  "CompPoly.ToMathlib.Polynomial.Roots": {"statement": [], "proof": []},
+  "CompPoly.ToMathlib.Polynomial.Irreducible": {"statement": [], "proof": []},
+  "CompPoly.ToMathlib.Polynomial.CosetLagrange": {"statement": [], "proof": []},
+  "CompPoly.ToMathlib.Polynomial.BivariateWeightedDegree":
+  {"statement": ["CompPoly.ToMathlib.Polynomial.BivariateDegree"], "proof": []},
+  "CompPoly.ToMathlib.Polynomial.BivariateMultiplicity":
+  {"statement": ["CompPoly.ToMathlib.Polynomial.BivariateDegree"], "proof": []},
+  "CompPoly.ToMathlib.Polynomial.BivariateDegree":
+  {"statement": ["CompPoly.Bivariate.Basic", "CompPoly.Bivariate.ToPoly"],
+   "proof":
+   ["CompPoly.Univariate.Basic",
+    "CompPoly.Univariate.Raw.Core",
+    "CompPoly.Univariate.ToPoly.Core",
+    "CompPoly.Univariate.ToPoly.Impl"]},
+  "CompPoly.ToMathlib.Order.WithBot": {"statement": [], "proof": []},
+  "CompPoly.ToMathlib.MvPolynomial.Nullstellensatz": {"statement": [], "proof": []},
+  "CompPoly.ToMathlib.MvPolynomial.Equiv":
+  {"statement": ["CompPoly.ToMathlib.Finsupp.Fin"], "proof": []},
+  "CompPoly.ToMathlib.Finsupp.Fin": {"statement": [], "proof": []},
+  "CompPoly.Multivariate.VarsDegrees":
+  {"statement":
+   ["CompPoly.Multivariate.Basic",
+    "CompPoly.Multivariate.Lawful",
+    "CompPoly.Multivariate.MvPolyEquiv.Core"],
+   "proof":
+   ["CompPoly.Multivariate.CMvMonomial",
+    "CompPoly.Multivariate.MvPolyEquiv.Eval",
+    "CompPoly.Multivariate.MvPolyEquiv.Instances"]},
+  "CompPoly.Multivariate.Unlawful":
+  {"statement": ["CompPoly.Multivariate.CMvMonomial"],
+   "proof": ["CompPoly.Data.ExtTreeMap.ExtTreeMap"]},
+  "CompPoly.Multivariate.Restrict":
+  {"statement":
+   ["CompPoly.Multivariate.Basic",
+    "CompPoly.Multivariate.CMvMonomial",
+    "CompPoly.Multivariate.Lawful",
+    "CompPoly.Multivariate.MvPolyEquiv.Core",
+    "CompPoly.Multivariate.MvPolyEquiv.Instances"],
+   "proof":
+   ["CompPoly.Data.ExtTreeMap.ExtTreeMap",
+    "CompPoly.Multivariate.MvPolyEquiv.Eval",
+    "CompPoly.Multivariate.Unlawful"]},
+  "CompPoly.Multivariate.Rename":
+  {"statement":
+   ["CompPoly.Multivariate.Basic",
+    "CompPoly.Multivariate.CMvMonomial",
+    "CompPoly.Multivariate.Lawful",
+    "CompPoly.Multivariate.MvPolyEquiv.Core",
+    "CompPoly.Multivariate.MvPolyEquiv.Instances",
+    "CompPoly.Multivariate.Operations"],
+   "proof": ["CompPoly.Multivariate.Unlawful"]},
+  "CompPoly.Multivariate.PartialEval":
+  {"statement":
+   ["CompPoly.Multivariate.Basic",
+    "CompPoly.Multivariate.CMvMonomial",
+    "CompPoly.Multivariate.Lawful",
+    "CompPoly.Multivariate.Operations"],
+   "proof":
+   ["CompPoly.Multivariate.MvPolyEquiv.Core",
+    "CompPoly.Multivariate.MvPolyEquiv.Eval",
+    "CompPoly.Multivariate.MvPolyEquiv.Instances",
+    "CompPoly.Multivariate.Unlawful"]},
+  "CompPoly.Multivariate.Operations":
+  {"statement":
+   ["CompPoly.Multivariate.Basic",
+    "CompPoly.Multivariate.CMvMonomial",
+    "CompPoly.Multivariate.Lawful",
+    "CompPoly.Multivariate.MvPolyEquiv.Core",
+    "CompPoly.Multivariate.MvPolyEquiv.Eval",
+    "CompPoly.Multivariate.MvPolyEquiv.Instances",
+    "CompPoly.Multivariate.Unlawful"],
+   "proof": []},
+  "CompPoly.Multivariate.MvPolyEquiv.Instances":
+  {"statement":
+   ["CompPoly.Multivariate.Basic",
+    "CompPoly.Multivariate.CMvMonomial",
+    "CompPoly.Multivariate.Lawful",
+    "CompPoly.Multivariate.MvPolyEquiv.Core",
+    "CompPoly.Multivariate.Unlawful"],
+   "proof": ["CompPoly.Data.ExtTreeMap.ExtTreeMap"]},
+  "CompPoly.Multivariate.MvPolyEquiv.Eval":
+  {"statement":
+   ["CompPoly.Multivariate.Basic",
+    "CompPoly.Multivariate.MvPolyEquiv.Core",
+    "CompPoly.Multivariate.MvPolyEquiv.Instances"],
+   "proof":
+   ["CompPoly.Multivariate.CMvMonomial",
+    "CompPoly.Multivariate.Lawful",
+    "CompPoly.Multivariate.Unlawful"]},
+  "CompPoly.Multivariate.MvPolyEquiv.Core":
+  {"statement":
+   ["CompPoly.Multivariate.Basic",
+    "CompPoly.Multivariate.CMvMonomial",
+    "CompPoly.Multivariate.Lawful",
+    "CompPoly.Multivariate.Unlawful"],
+   "proof": ["CompPoly.Data.List.Lemmas"]},
+  "CompPoly.Multivariate.MvPolyEquiv": {"statement": [], "proof": []},
+  "CompPoly.Multivariate.Lawful":
+  {"statement": ["CompPoly.Multivariate.CMvMonomial", "CompPoly.Multivariate.Unlawful"],
+   "proof": ["CompPoly.Data.ExtTreeMap.ExtTreeMap"]},
+  "CompPoly.Multivariate.HornerLemmas":
+  {"statement": ["CompPoly.Multivariate.Basic", "CompPoly.Multivariate.CMvMonomial"],
+   "proof": ["CompPoly.Multivariate.Unlawful"]},
+  "CompPoly.Multivariate.FinSuccEquiv":
+  {"statement":
+   ["CompPoly.Multivariate.Basic",
+    "CompPoly.Multivariate.Lawful",
+    "CompPoly.Multivariate.MvPolyEquiv.Core",
+    "CompPoly.Multivariate.MvPolyEquiv.Eval",
+    "CompPoly.Multivariate.MvPolyEquiv.Instances",
+    "CompPoly.ToMathlib.MvPolynomial.Equiv",
+    "CompPoly.Univariate.Basic",
+    "CompPoly.Univariate.ToPoly.Core",
+    "CompPoly.Univariate.ToPoly.RingHom"],
+   "proof":
+   ["CompPoly.Multivariate.Operations",
+    "CompPoly.Univariate.ToPoly.Equiv",
+    "CompPoly.Univariate.ToPoly.Impl"]},
+  "CompPoly.Multivariate.Eval":
+  {"statement":
+   ["CompPoly.Multivariate.Basic",
+    "CompPoly.Multivariate.Lawful",
+    "CompPoly.Multivariate.MvPolyEquiv.Core",
+    "CompPoly.Multivariate.MvPolyEquiv.Eval",
+    "CompPoly.Multivariate.MvPolyEquiv.Instances"],
+   "proof":
+   ["CompPoly.Multivariate.Operations",
+    "CompPoly.Univariate.Basic",
+    "CompPoly.Univariate.CMvEquiv",
+    "CompPoly.Univariate.ToPoly.Impl"]},
+  "CompPoly.Multivariate.CMvMonomial": {"statement": [], "proof": []},
+  "CompPoly.Multivariate.Bytes":
+  {"statement":
+   ["CompPoly.Data.Bytes.Delimited",
+    "CompPoly.Multivariate.Basic",
+    "CompPoly.Multivariate.CMvMonomial",
+    "CompPoly.Multivariate.Unlawful"],
+   "proof": ["CompPoly.Multivariate.Lawful"]},
+  "CompPoly.Multivariate.Basic":
+  {"statement":
+   ["CompPoly.Multivariate.CMvMonomial",
+    "CompPoly.Multivariate.Lawful",
+    "CompPoly.Multivariate.Unlawful"],
+   "proof": ["CompPoly.Data.ExtTreeMap.ExtTreeMap"]},
+  "CompPoly.Multilinear.Unique":
+  {"statement": ["CompPoly.Multilinear.Basic", "CompPoly.Multilinear.Equiv"],
+   "proof":
+   ["CompPoly.Data.Nat.Bitwise",
+    "CompPoly.Data.Vector.Basic",
+    "CompPoly.Multilinear.TransformEquiv",
+    "CompPoly.ToMathlib.MvPolynomial.Nullstellensatz"]},
+  "CompPoly.Multilinear.TransformEquiv":
+  {"statement": ["CompPoly.Multilinear.Basic"], "proof": ["CompPoly.Data.Nat.Bitwise"]},
+  "CompPoly.Multilinear.ManyEval.Correctness":
+  {"statement": ["CompPoly.Multilinear.Basic", "CompPoly.Multilinear.ManyEval.Basic"], "proof": []},
+  "CompPoly.Multilinear.ManyEval.Basic": {"statement": ["CompPoly.Multilinear.Basic"], "proof": []},
+  "CompPoly.Multilinear.ManyEval": {"statement": [], "proof": []},
+  "CompPoly.Multilinear.Equiv":
+  {"statement": ["CompPoly.Data.Nat.Bitwise", "CompPoly.Multilinear.Basic"], "proof": []},
+  "CompPoly.Multilinear.Bytes":
+  {"statement":
+   ["CompPoly.Data.Bytes.Codec", "CompPoly.Data.Bytes.Vector", "CompPoly.Multilinear.Basic"],
+   "proof": []},
+  "CompPoly.Multilinear.Basic":
+  {"statement": ["CompPoly.Data.Nat.Bitwise", "CompPoly.Data.Vector.Basic"],
+   "proof": ["CompPoly.Data.Fin.BigOperators", "CompPoly.Data.List.Lemmas"]},
+  "CompPoly.LinearAlgebra.TensorProduct.Basis": {"statement": [], "proof": []},
+  "CompPoly.LinearAlgebra.PolynomialMatrix.StrassenCorrectness":
+  {"statement":
+   ["CompPoly.LinearAlgebra.PolynomialMatrix.Basic",
+    "CompPoly.LinearAlgebra.PolynomialMatrix.Operations",
+    "CompPoly.Univariate.Basic",
+    "CompPoly.Univariate.Context"],
+   "proof": ["CompPoly.Data.Array.Lemmas", "CompPoly.LinearAlgebra.PolynomialMatrix.Shifted"]},
+  "CompPoly.LinearAlgebra.PolynomialMatrix.ShiftedReduction":
+  {"statement":
+   ["CompPoly.LinearAlgebra.PolynomialMatrix.Basic",
+    "CompPoly.LinearAlgebra.PolynomialMatrix.RowSpan",
+    "CompPoly.LinearAlgebra.PolynomialMatrix.Shifted"],
+   "proof": []},
+  "CompPoly.LinearAlgebra.PolynomialMatrix.Shifted":
+  {"statement":
+   ["CompPoly.LinearAlgebra.PolynomialMatrix.Basic",
+    "CompPoly.LinearAlgebra.PolynomialMatrix.Degree",
+    "CompPoly.Univariate.Basic"],
+   "proof": []},
+  "CompPoly.LinearAlgebra.PolynomialMatrix.RowSpan":
+  {"statement": ["CompPoly.LinearAlgebra.PolynomialMatrix.Basic", "CompPoly.Univariate.Basic"],
+   "proof":
+   ["CompPoly.Univariate.ToPoly.Core",
+    "CompPoly.Univariate.ToPoly.Equiv",
+    "CompPoly.Univariate.ToPoly.Impl"]},
+  "CompPoly.LinearAlgebra.PolynomialMatrix.RowSelection":
+  {"statement":
+   ["CompPoly.LinearAlgebra.PolynomialMatrix.Basic",
+    "CompPoly.LinearAlgebra.PolynomialMatrix.Operations",
+    "CompPoly.LinearAlgebra.PolynomialMatrix.Shifted",
+    "CompPoly.Univariate.Basic"],
+   "proof": []},
+  "CompPoly.LinearAlgebra.PolynomialMatrix.Operations":
+  {"statement":
+   ["CompPoly.LinearAlgebra.PolynomialMatrix.Basic",
+    "CompPoly.LinearAlgebra.PolynomialMatrix.Shifted",
+    "CompPoly.Univariate.Basic",
+    "CompPoly.Univariate.Context",
+    "CompPoly.Univariate.Raw.Core",
+    "CompPoly.Univariate.Raw.Ops"],
+   "proof": ["CompPoly.Univariate.Raw.Proofs"]},
+  "CompPoly.LinearAlgebra.PolynomialMatrix.MuldersStorjohannCorrectness.WeakPopovMinimal":
+  {"statement":
+   ["CompPoly.LinearAlgebra.PolynomialMatrix.Basic",
+    "CompPoly.LinearAlgebra.PolynomialMatrix.MuldersStorjohann",
+    "CompPoly.LinearAlgebra.PolynomialMatrix.RowSpan",
+    "CompPoly.LinearAlgebra.PolynomialMatrix.Shifted",
+    "CompPoly.Univariate.Basic"],
+   "proof":
+   ["CompPoly.LinearAlgebra.PolynomialMatrix.Degree",
+    "CompPoly.LinearAlgebra.PolynomialMatrix.MuldersStorjohannCorrectness.Combinations",
+    "CompPoly.LinearAlgebra.PolynomialMatrix.MuldersStorjohannCorrectness.Leading",
+    "CompPoly.LinearAlgebra.PolynomialMatrix.MuldersStorjohannCorrectness.MatrixRows",
+    "CompPoly.LinearAlgebra.PolynomialMatrix.MuldersStorjohannCorrectness.Reduction",
+    "CompPoly.Univariate.Raw.Core",
+    "CompPoly.Univariate.ToPoly.Degree"]},
+  "CompPoly.LinearAlgebra.PolynomialMatrix.MuldersStorjohannCorrectness.RowOps":
+  {"statement":
+   ["CompPoly.LinearAlgebra.PolynomialMatrix.Basic",
+    "CompPoly.LinearAlgebra.PolynomialMatrix.Degree",
+    "CompPoly.LinearAlgebra.PolynomialMatrix.MuldersStorjohann",
+    "CompPoly.LinearAlgebra.PolynomialMatrix.RowSpan",
+    "CompPoly.Univariate.Basic"],
+   "proof":
+   ["CompPoly.LinearAlgebra.PolynomialMatrix.Shifted",
+    "CompPoly.Univariate.ToPoly.Core",
+    "CompPoly.Univariate.ToPoly.Equiv",
+    "CompPoly.Univariate.ToPoly.Impl"]},
+  "CompPoly.LinearAlgebra.PolynomialMatrix.MuldersStorjohannCorrectness.Reduction":
+  {"statement":
+   ["CompPoly.LinearAlgebra.PolynomialMatrix.Basic",
+    "CompPoly.LinearAlgebra.PolynomialMatrix.MuldersStorjohann",
+    "CompPoly.LinearAlgebra.PolynomialMatrix.MuldersStorjohannCorrectness.Measure",
+    "CompPoly.LinearAlgebra.PolynomialMatrix.RowSpan",
+    "CompPoly.LinearAlgebra.PolynomialMatrix.Shifted"],
+   "proof":
+   ["CompPoly.LinearAlgebra.PolynomialMatrix.MuldersStorjohannCorrectness.Conflict",
+    "CompPoly.LinearAlgebra.PolynomialMatrix.MuldersStorjohannCorrectness.Leading",
+    "CompPoly.LinearAlgebra.PolynomialMatrix.MuldersStorjohannCorrectness.MatrixRows",
+    "CompPoly.LinearAlgebra.PolynomialMatrix.MuldersStorjohannCorrectness.RowOps",
+    "CompPoly.Univariate.Basic"]},
+  "CompPoly.LinearAlgebra.PolynomialMatrix.MuldersStorjohannCorrectness.Minimal":
+  {"statement":
+   ["CompPoly.LinearAlgebra.PolynomialMatrix.Basic",
+    "CompPoly.LinearAlgebra.PolynomialMatrix.MuldersStorjohann",
+    "CompPoly.LinearAlgebra.PolynomialMatrix.RowSpan",
+    "CompPoly.LinearAlgebra.PolynomialMatrix.Shifted",
+    "CompPoly.LinearAlgebra.PolynomialMatrix.ShiftedReduction",
+    "CompPoly.Univariate.Basic"],
+   "proof":
+   ["CompPoly.LinearAlgebra.PolynomialMatrix.Degree",
+    "CompPoly.LinearAlgebra.PolynomialMatrix.MuldersStorjohannCorrectness.Combinations",
+    "CompPoly.LinearAlgebra.PolynomialMatrix.MuldersStorjohannCorrectness.Leading",
+    "CompPoly.LinearAlgebra.PolynomialMatrix.MuldersStorjohannCorrectness.MatrixRows",
+    "CompPoly.LinearAlgebra.PolynomialMatrix.MuldersStorjohannCorrectness.Reduction",
+    "CompPoly.Univariate.ToPoly.Degree"]},
+  "CompPoly.LinearAlgebra.PolynomialMatrix.MuldersStorjohannCorrectness.Measure":
+  {"statement":
+   ["CompPoly.LinearAlgebra.PolynomialMatrix.Basic",
+    "CompPoly.LinearAlgebra.PolynomialMatrix.MuldersStorjohann",
+    "CompPoly.LinearAlgebra.PolynomialMatrix.Shifted",
+    "CompPoly.Univariate.Basic"],
+   "proof":
+   ["CompPoly.LinearAlgebra.PolynomialMatrix.MuldersStorjohannCorrectness.Conflict",
+    "CompPoly.LinearAlgebra.PolynomialMatrix.MuldersStorjohannCorrectness.Leading",
+    "CompPoly.LinearAlgebra.PolynomialMatrix.MuldersStorjohannCorrectness.MatrixRows",
+    "CompPoly.LinearAlgebra.PolynomialMatrix.MuldersStorjohannCorrectness.RowOps"]},
+  "CompPoly.LinearAlgebra.PolynomialMatrix.MuldersStorjohannCorrectness.MatrixRows":
+  {"statement":
+   ["CompPoly.LinearAlgebra.PolynomialMatrix.Basic",
+    "CompPoly.LinearAlgebra.PolynomialMatrix.MuldersStorjohann",
+    "CompPoly.LinearAlgebra.PolynomialMatrix.RowSpan",
+    "CompPoly.Univariate.Basic"],
+   "proof": ["CompPoly.LinearAlgebra.PolynomialMatrix.MuldersStorjohannCorrectness.RowOps"]},
+  "CompPoly.LinearAlgebra.PolynomialMatrix.MuldersStorjohannCorrectness.Leading":
+  {"statement":
+   ["CompPoly.LinearAlgebra.PolynomialMatrix.Basic",
+    "CompPoly.LinearAlgebra.PolynomialMatrix.MuldersStorjohann",
+    "CompPoly.LinearAlgebra.PolynomialMatrix.Shifted",
+    "CompPoly.Univariate.Basic"],
+   "proof":
+   ["CompPoly.LinearAlgebra.PolynomialMatrix.MuldersStorjohannCorrectness.RowOps",
+    "CompPoly.Univariate.Raw.Core",
+    "CompPoly.Univariate.ToPoly.Core",
+    "CompPoly.Univariate.ToPoly.Degree",
+    "CompPoly.Univariate.ToPoly.Equiv",
+    "CompPoly.Univariate.ToPoly.Impl"]},
+  "CompPoly.LinearAlgebra.PolynomialMatrix.MuldersStorjohannCorrectness.Fast":
+  {"statement":
+   ["CompPoly.LinearAlgebra.PolynomialMatrix.Basic",
+    "CompPoly.LinearAlgebra.PolynomialMatrix.MuldersStorjohann",
+    "CompPoly.LinearAlgebra.PolynomialMatrix.Shifted",
+    "CompPoly.LinearAlgebra.PolynomialMatrix.ShiftedReduction",
+    "CompPoly.Univariate.Basic"],
+   "proof":
+   ["CompPoly.LinearAlgebra.PolynomialMatrix.MuldersStorjohannCorrectness.Minimal",
+    "CompPoly.LinearAlgebra.PolynomialMatrix.MuldersStorjohannCorrectness.Reduction",
+    "CompPoly.LinearAlgebra.PolynomialMatrix.MuldersStorjohannCorrectness.RowOps",
+    "CompPoly.LinearAlgebra.PolynomialMatrix.RowSpan"]},
+  "CompPoly.LinearAlgebra.PolynomialMatrix.MuldersStorjohannCorrectness.Conflict":
+  {"statement":
+   ["CompPoly.LinearAlgebra.PolynomialMatrix.Basic",
+    "CompPoly.LinearAlgebra.PolynomialMatrix.MuldersStorjohann",
+    "CompPoly.LinearAlgebra.PolynomialMatrix.Shifted",
+    "CompPoly.Univariate.Basic"],
+   "proof": []},
+  "CompPoly.LinearAlgebra.PolynomialMatrix.MuldersStorjohannCorrectness.Combinations":
+  {"statement":
+   ["CompPoly.LinearAlgebra.PolynomialMatrix.Basic",
+    "CompPoly.LinearAlgebra.PolynomialMatrix.Degree",
+    "CompPoly.LinearAlgebra.PolynomialMatrix.RowSpan",
+    "CompPoly.LinearAlgebra.PolynomialMatrix.Shifted",
+    "CompPoly.Univariate.Basic"],
+   "proof":
+   ["CompPoly.LinearAlgebra.PolynomialMatrix.MuldersStorjohannCorrectness.MatrixRows",
+    "CompPoly.LinearAlgebra.PolynomialMatrix.MuldersStorjohannCorrectness.RowOps"]},
+  "CompPoly.LinearAlgebra.PolynomialMatrix.MuldersStorjohannCorrectness":
+  {"statement": [], "proof": []},
+  "CompPoly.LinearAlgebra.PolynomialMatrix.MuldersStorjohann":
+  {"statement":
+   ["CompPoly.LinearAlgebra.PolynomialMatrix.Basic",
+    "CompPoly.LinearAlgebra.PolynomialMatrix.Shifted",
+    "CompPoly.Univariate.Basic"],
+   "proof": []},
+  "CompPoly.LinearAlgebra.PolynomialMatrix.Degree":
+  {"statement": ["CompPoly.LinearAlgebra.PolynomialMatrix.Basic", "CompPoly.Univariate.Basic"],
+   "proof": []},
+  "CompPoly.LinearAlgebra.PolynomialMatrix.Basic":
+  {"statement": ["CompPoly.Univariate.Basic"], "proof": []},
+  "CompPoly.LinearAlgebra.PolynomialMatrix.Approximant.PartialLinearization":
+  {"statement":
+   ["CompPoly.LinearAlgebra.PolynomialMatrix.Basic",
+    "CompPoly.Univariate.Basic",
+    "CompPoly.Univariate.Raw.Core"],
+   "proof": []},
+  "CompPoly.LinearAlgebra.PolynomialMatrix.Approximant.PMBasis.XAdicSoundness":
+  {"statement":
+   ["CompPoly.LinearAlgebra.PolynomialMatrix.Approximant.Basic",
+    "CompPoly.LinearAlgebra.PolynomialMatrix.Approximant.PMBasis.KernelLeaf",
+    "CompPoly.LinearAlgebra.PolynomialMatrix.Basic",
+    "CompPoly.LinearAlgebra.PolynomialMatrix.Degree",
+    "CompPoly.LinearAlgebra.PolynomialMatrix.Operations",
+    "CompPoly.Univariate.Basic",
+    "CompPoly.Univariate.Context",
+    "CompPoly.Univariate.ToPoly.Core"],
+   "proof":
+   ["CompPoly.LinearAlgebra.PolynomialMatrix.MuldersStorjohannCorrectness.RowOps",
+    "CompPoly.LinearAlgebra.PolynomialMatrix.RowSpan",
+    "CompPoly.LinearAlgebra.PolynomialMatrix.Shifted",
+    "CompPoly.LinearAlgebra.PolynomialMatrix.StrassenCorrectness",
+    "CompPoly.Univariate.Raw.Core",
+    "CompPoly.Univariate.ToPoly.Equiv",
+    "CompPoly.Univariate.ToPoly.Impl"]},
+  "CompPoly.LinearAlgebra.PolynomialMatrix.Approximant.PMBasis.Recursion":
+  {"statement":
+   ["CompPoly.LinearAlgebra.PolynomialMatrix.Approximant.Basic",
+    "CompPoly.LinearAlgebra.PolynomialMatrix.Approximant.PMBasis.KernelLeaf",
+    "CompPoly.LinearAlgebra.PolynomialMatrix.Basic",
+    "CompPoly.LinearAlgebra.PolynomialMatrix.Degree",
+    "CompPoly.LinearAlgebra.PolynomialMatrix.Operations",
+    "CompPoly.LinearAlgebra.PolynomialMatrix.Shifted",
+    "CompPoly.Univariate.Basic",
+    "CompPoly.Univariate.Context"],
+   "proof": []},
+  "CompPoly.LinearAlgebra.PolynomialMatrix.Approximant.PMBasis.KernelLeafSpan":
+  {"statement":
+   ["CompPoly.LinearAlgebra.PolynomialMatrix.Approximant.PMBasis.KernelLeaf",
+    "CompPoly.LinearAlgebra.PolynomialMatrix.Basic",
+    "CompPoly.LinearAlgebra.PolynomialMatrix.Degree",
+    "CompPoly.LinearAlgebra.PolynomialMatrix.RowSpan",
+    "CompPoly.LinearAlgebra.PolynomialMatrix.Shifted",
+    "CompPoly.Univariate.Basic"],
+   "proof":
+   ["CompPoly.LinearAlgebra.Dense.RowArrayCorrectness",
+    "CompPoly.LinearAlgebra.PolynomialMatrix.Approximant.PMBasis.KernelLeafSoundness",
+    "CompPoly.LinearAlgebra.PolynomialMatrix.Approximant.PMBasis.XAdicSoundness",
+    "CompPoly.LinearAlgebra.PolynomialMatrix.MuldersStorjohann",
+    "CompPoly.LinearAlgebra.PolynomialMatrix.MuldersStorjohannCorrectness.Leading",
+    "CompPoly.LinearAlgebra.PolynomialMatrix.MuldersStorjohannCorrectness.MatrixRows",
+    "CompPoly.LinearAlgebra.PolynomialMatrix.MuldersStorjohannCorrectness.Measure",
+    "CompPoly.LinearAlgebra.PolynomialMatrix.MuldersStorjohannCorrectness.RowOps",
+    "CompPoly.Univariate.ToPoly.Core",
+    "CompPoly.Univariate.ToPoly.Impl"]},
+  "CompPoly.LinearAlgebra.PolynomialMatrix.Approximant.PMBasis.KernelLeafSoundness":
+  {"statement":
+   ["CompPoly.LinearAlgebra.Dense.RowArray",
+    "CompPoly.LinearAlgebra.PolynomialMatrix.Approximant.Basic",
+    "CompPoly.LinearAlgebra.PolynomialMatrix.Approximant.PMBasis.KernelLeaf",
+    "CompPoly.LinearAlgebra.PolynomialMatrix.Approximant.PMBasis.XAdicSoundness",
+    "CompPoly.LinearAlgebra.PolynomialMatrix.Basic",
+    "CompPoly.Univariate.Basic",
+    "CompPoly.Univariate.Context"],
+   "proof":
+   ["CompPoly.LinearAlgebra.Dense.RowArrayCorrectness",
+    "CompPoly.LinearAlgebra.PolynomialMatrix.Degree",
+    "CompPoly.LinearAlgebra.PolynomialMatrix.MuldersStorjohannCorrectness.RowOps",
+    "CompPoly.LinearAlgebra.PolynomialMatrix.RowSpan",
+    "CompPoly.LinearAlgebra.PolynomialMatrix.Shifted",
+    "CompPoly.Univariate.ToPoly.Core",
+    "CompPoly.Univariate.ToPoly.Equiv",
+    "CompPoly.Univariate.ToPoly.Impl"]},
+  "CompPoly.LinearAlgebra.PolynomialMatrix.Approximant.PMBasis.KernelLeafCompleteness":
+  {"statement":
+   ["CompPoly.LinearAlgebra.PolynomialMatrix.Approximant.Basic",
+    "CompPoly.LinearAlgebra.PolynomialMatrix.Approximant.PMBasis.KernelLeaf",
+    "CompPoly.LinearAlgebra.PolynomialMatrix.Approximant.PMBasis.XAdicSoundness",
+    "CompPoly.LinearAlgebra.PolynomialMatrix.Basic",
+    "CompPoly.LinearAlgebra.PolynomialMatrix.Degree",
+    "CompPoly.LinearAlgebra.PolynomialMatrix.Operations",
+    "CompPoly.LinearAlgebra.PolynomialMatrix.RowSpan",
+    "CompPoly.Univariate.Basic",
+    "CompPoly.Univariate.Context"],
+   "proof":
+   ["CompPoly.LinearAlgebra.Dense.Kernel",
+    "CompPoly.LinearAlgebra.Dense.RowArray",
+    "CompPoly.LinearAlgebra.Dense.RowArrayCorrectness",
+    "CompPoly.LinearAlgebra.PolynomialMatrix.Approximant.PMBasis.KernelLeafSoundness",
+    "CompPoly.LinearAlgebra.PolynomialMatrix.Approximant.PMBasis.KernelLeafSpan",
+    "CompPoly.LinearAlgebra.PolynomialMatrix.MuldersStorjohannCorrectness.MatrixRows",
+    "CompPoly.LinearAlgebra.PolynomialMatrix.MuldersStorjohannCorrectness.RowOps",
+    "CompPoly.LinearAlgebra.PolynomialMatrix.Shifted",
+    "CompPoly.Univariate.Raw.Core",
+    "CompPoly.Univariate.ToPoly.Core",
+    "CompPoly.Univariate.ToPoly.Equiv",
+    "CompPoly.Univariate.ToPoly.Impl"]},
+  "CompPoly.LinearAlgebra.PolynomialMatrix.Approximant.PMBasis.KernelLeaf":
+  {"statement":
+   ["CompPoly.LinearAlgebra.Dense.Basic",
+    "CompPoly.LinearAlgebra.Dense.RowArray",
+    "CompPoly.LinearAlgebra.PolynomialMatrix.Approximant.Basic",
+    "CompPoly.LinearAlgebra.PolynomialMatrix.Basic",
+    "CompPoly.LinearAlgebra.PolynomialMatrix.Degree",
+    "CompPoly.LinearAlgebra.PolynomialMatrix.Shifted",
+    "CompPoly.Univariate.Basic",
+    "CompPoly.Univariate.Raw.Core"],
+   "proof": []},
+  "CompPoly.LinearAlgebra.PolynomialMatrix.Approximant.PMBasis.Correctness":
+  {"statement":
+   ["CompPoly.LinearAlgebra.PolynomialMatrix.Approximant.Basic",
+    "CompPoly.LinearAlgebra.PolynomialMatrix.Approximant.PMBasis.Recursion",
+    "CompPoly.LinearAlgebra.PolynomialMatrix.Approximant.PMBasis.XAdicSoundness",
+    "CompPoly.LinearAlgebra.PolynomialMatrix.Basic",
+    "CompPoly.LinearAlgebra.PolynomialMatrix.Degree",
+    "CompPoly.LinearAlgebra.PolynomialMatrix.Operations",
+    "CompPoly.LinearAlgebra.PolynomialMatrix.RowSpan",
+    "CompPoly.LinearAlgebra.PolynomialMatrix.Shifted",
+    "CompPoly.Univariate.Basic",
+    "CompPoly.Univariate.Context"],
+   "proof":
+   ["CompPoly.LinearAlgebra.Dense.RowArrayCorrectness",
+    "CompPoly.LinearAlgebra.PolynomialMatrix.Approximant.PMBasis.KernelLeaf",
+    "CompPoly.LinearAlgebra.PolynomialMatrix.Approximant.PMBasis.KernelLeafCompleteness",
+    "CompPoly.LinearAlgebra.PolynomialMatrix.Approximant.PMBasis.KernelLeafSoundness",
+    "CompPoly.LinearAlgebra.PolynomialMatrix.Approximant.PMBasis.KernelLeafSpan",
+    "CompPoly.LinearAlgebra.PolynomialMatrix.MuldersStorjohannCorrectness.Leading",
+    "CompPoly.LinearAlgebra.PolynomialMatrix.MuldersStorjohannCorrectness.MatrixRows",
+    "CompPoly.LinearAlgebra.PolynomialMatrix.MuldersStorjohannCorrectness.RowOps",
+    "CompPoly.LinearAlgebra.PolynomialMatrix.MuldersStorjohannCorrectness.WeakPopovMinimal",
+    "CompPoly.LinearAlgebra.PolynomialMatrix.StrassenCorrectness",
+    "CompPoly.Univariate.ToPoly.Core",
+    "CompPoly.Univariate.ToPoly.Equiv",
+    "CompPoly.Univariate.ToPoly.Impl"]},
+  "CompPoly.LinearAlgebra.PolynomialMatrix.Approximant.PMBasis":
+  {"statement":
+   ["CompPoly.LinearAlgebra.PolynomialMatrix.Approximant.PMBasis.Recursion",
+    "CompPoly.LinearAlgebra.PolynomialMatrix.Operations",
+    "CompPoly.Univariate.Context"],
+   "proof":
+   ["CompPoly.LinearAlgebra.PolynomialMatrix.Approximant.Basic",
+    "CompPoly.LinearAlgebra.PolynomialMatrix.Approximant.PMBasis.Correctness",
+    "CompPoly.LinearAlgebra.PolynomialMatrix.Basic",
+    "CompPoly.LinearAlgebra.PolynomialMatrix.Degree",
+    "CompPoly.LinearAlgebra.PolynomialMatrix.Shifted",
+    "CompPoly.Univariate.Basic"]},
+  "CompPoly.LinearAlgebra.PolynomialMatrix.Approximant.ModularEquation.Completeness":
+  {"statement":
+   ["CompPoly.LinearAlgebra.PolynomialMatrix.Approximant.ModularEquation.Basic",
+    "CompPoly.LinearAlgebra.PolynomialMatrix.Approximant.PMBasis.KernelLeaf",
+    "CompPoly.LinearAlgebra.PolynomialMatrix.Approximant.PMBasis.Recursion",
+    "CompPoly.LinearAlgebra.PolynomialMatrix.Approximant.PartialLinearization",
+    "CompPoly.LinearAlgebra.PolynomialMatrix.Basic",
+    "CompPoly.LinearAlgebra.PolynomialMatrix.Degree",
+    "CompPoly.LinearAlgebra.PolynomialMatrix.Operations",
+    "CompPoly.LinearAlgebra.PolynomialMatrix.Shifted",
+    "CompPoly.Univariate.Basic",
+    "CompPoly.Univariate.Context"],
+   "proof":
+   ["CompPoly.LinearAlgebra.PolynomialMatrix.Approximant.Basic",
+    "CompPoly.LinearAlgebra.PolynomialMatrix.Approximant.PMBasis.XAdicSoundness",
+    "CompPoly.LinearAlgebra.PolynomialMatrix.RowSpan",
+    "CompPoly.LinearAlgebra.PolynomialMatrix.StrassenCorrectness",
+    "CompPoly.Univariate.DivisionCorrectness",
+    "CompPoly.Univariate.ToPoly.Core",
+    "CompPoly.Univariate.ToPoly.Equiv",
+    "CompPoly.Univariate.ToPoly.Impl"]},
+  "CompPoly.LinearAlgebra.PolynomialMatrix.Approximant.ModularEquation.Basic":
+  {"statement":
+   ["CompPoly.LinearAlgebra.PolynomialMatrix.Approximant.Basic",
+    "CompPoly.LinearAlgebra.PolynomialMatrix.Approximant.PMBasis.KernelLeaf",
+    "CompPoly.LinearAlgebra.PolynomialMatrix.Approximant.PMBasis.Recursion",
+    "CompPoly.LinearAlgebra.PolynomialMatrix.Approximant.PartialLinearization",
+    "CompPoly.LinearAlgebra.PolynomialMatrix.Basic",
+    "CompPoly.LinearAlgebra.PolynomialMatrix.Degree",
+    "CompPoly.LinearAlgebra.PolynomialMatrix.Operations",
+    "CompPoly.LinearAlgebra.PolynomialMatrix.Shifted",
+    "CompPoly.Univariate.Basic",
+    "CompPoly.Univariate.Context"],
+   "proof": ["CompPoly.LinearAlgebra.PolynomialMatrix.RowSpan"]},
+  "CompPoly.LinearAlgebra.PolynomialMatrix.Approximant.ModularEquation":
+  {"statement":
+   ["CompPoly.LinearAlgebra.PolynomialMatrix.Approximant.ModularEquation.Basic",
+    "CompPoly.LinearAlgebra.PolynomialMatrix.Approximant.PMBasis.Recursion",
+    "CompPoly.Univariate.Context"],
+   "proof":
+   ["CompPoly.LinearAlgebra.PolynomialMatrix.Approximant.ModularEquation.Completeness",
+    "CompPoly.LinearAlgebra.PolynomialMatrix.Approximant.PMBasis.KernelLeaf",
+    "CompPoly.LinearAlgebra.PolynomialMatrix.Approximant.PMBasis.XAdicSoundness",
+    "CompPoly.LinearAlgebra.PolynomialMatrix.Approximant.PartialLinearization",
+    "CompPoly.LinearAlgebra.PolynomialMatrix.Basic",
+    "CompPoly.LinearAlgebra.PolynomialMatrix.Degree",
+    "CompPoly.LinearAlgebra.PolynomialMatrix.Operations",
+    "CompPoly.LinearAlgebra.PolynomialMatrix.RowSelection",
+    "CompPoly.LinearAlgebra.PolynomialMatrix.RowSpan",
+    "CompPoly.LinearAlgebra.PolynomialMatrix.Shifted",
+    "CompPoly.Univariate.Basic"]},
+  "CompPoly.LinearAlgebra.PolynomialMatrix.Approximant.Correctness":
+  {"statement":
+   ["CompPoly.LinearAlgebra.PolynomialMatrix.Approximant.ModularEquation.Basic",
+    "CompPoly.LinearAlgebra.PolynomialMatrix.Basic",
+    "CompPoly.LinearAlgebra.PolynomialMatrix.Degree",
+    "CompPoly.LinearAlgebra.PolynomialMatrix.Operations",
+    "CompPoly.LinearAlgebra.PolynomialMatrix.Shifted",
+    "CompPoly.Univariate.Basic"],
+   "proof": []},
+  "CompPoly.LinearAlgebra.PolynomialMatrix.Approximant.Basic":
+  {"statement":
+   ["CompPoly.LinearAlgebra.PolynomialMatrix.Basic",
+    "CompPoly.LinearAlgebra.PolynomialMatrix.Operations",
+    "CompPoly.LinearAlgebra.PolynomialMatrix.Shifted",
+    "CompPoly.Univariate.Basic"],
+   "proof": []},
+  "CompPoly.LinearAlgebra.PolynomialMatrix.Approximant": {"statement": [], "proof": []},
+  "CompPoly.LinearAlgebra.PolynomialMatrix": {"statement": [], "proof": []},
+  "CompPoly.LinearAlgebra.Dense.RrefShape":
+  {"statement": ["CompPoly.LinearAlgebra.Dense.Basic", "CompPoly.LinearAlgebra.Dense.RowOps"],
+   "proof":
+   ["CompPoly.LinearAlgebra.Dense.RowOpsCorrectness",
+    "CompPoly.LinearAlgebra.Dense.RrefSemantics"]},
+  "CompPoly.LinearAlgebra.Dense.RrefSemantics":
+  {"statement": ["CompPoly.LinearAlgebra.Dense.Basic", "CompPoly.LinearAlgebra.Dense.RowOps"],
+   "proof": ["CompPoly.LinearAlgebra.Dense.RowOpsCorrectness"]},
+  "CompPoly.LinearAlgebra.Dense.RowOpsCorrectness":
+  {"statement": ["CompPoly.LinearAlgebra.Dense.Basic", "CompPoly.LinearAlgebra.Dense.RowOps"],
+   "proof": []},
+  "CompPoly.LinearAlgebra.Dense.RowOps":
+  {"statement": ["CompPoly.LinearAlgebra.Dense.Basic"], "proof": []},
+  "CompPoly.LinearAlgebra.Dense.RowArrayCorrectness":
+  {"statement": ["CompPoly.LinearAlgebra.Dense.Kernel", "CompPoly.LinearAlgebra.Dense.RowArray"],
+   "proof": []},
+  "CompPoly.LinearAlgebra.Dense.RowArray":
+  {"statement": ["CompPoly.LinearAlgebra.Dense.Basic", "CompPoly.LinearAlgebra.Dense.Kernel"],
+   "proof": []},
+  "CompPoly.LinearAlgebra.Dense.KernelInPlaceCorrectness":
+  {"statement":
+   ["CompPoly.LinearAlgebra.Dense.Basic",
+    "CompPoly.LinearAlgebra.Dense.Kernel",
+    "CompPoly.LinearAlgebra.Dense.KernelInPlace",
+    "CompPoly.LinearAlgebra.Dense.RowOps"],
+   "proof":
+   ["CompPoly.LinearAlgebra.Dense.RowOpsCorrectness",
+    "CompPoly.LinearAlgebra.Dense.RrefSemantics"]},
+  "CompPoly.LinearAlgebra.Dense.KernelInPlace":
+  {"statement":
+   ["CompPoly.LinearAlgebra.Dense.Basic",
+    "CompPoly.LinearAlgebra.Dense.Kernel",
+    "CompPoly.LinearAlgebra.Dense.RowOps"],
+   "proof": []},
+  "CompPoly.LinearAlgebra.Dense.KernelCorrectness":
+  {"statement": ["CompPoly.LinearAlgebra.Dense.Basic", "CompPoly.LinearAlgebra.Dense.Kernel"],
+   "proof":
+   ["CompPoly.LinearAlgebra.Dense.RowOps",
+    "CompPoly.LinearAlgebra.Dense.RrefSemantics",
+    "CompPoly.LinearAlgebra.Dense.RrefShape"]},
+  "CompPoly.LinearAlgebra.Dense.KernelBasisCorrectness":
+  {"statement":
+   ["CompPoly.LinearAlgebra.Dense.Basic",
+    "CompPoly.LinearAlgebra.Dense.Kernel",
+    "CompPoly.LinearAlgebra.Dense.RowArray",
+    "CompPoly.LinearAlgebra.Dense.RowOps",
+    "CompPoly.LinearAlgebra.Dense.RrefShape"],
+   "proof":
+   ["CompPoly.LinearAlgebra.Dense.RowArrayCorrectness",
+    "CompPoly.LinearAlgebra.Dense.RowOpsCorrectness",
+    "CompPoly.LinearAlgebra.Dense.RrefSemantics"]},
+  "CompPoly.LinearAlgebra.Dense.Kernel":
+  {"statement": ["CompPoly.LinearAlgebra.Dense.Basic", "CompPoly.LinearAlgebra.Dense.RowOps"],
+   "proof": []},
+  "CompPoly.LinearAlgebra.Dense.Basic": {"statement": [], "proof": []},
+  "CompPoly.LinearAlgebra.Dense": {"statement": [], "proof": []},
+  "CompPoly.Fields.Secp256k1.Fast":
+  {"statement":
+   ["CompPoly.Fields.Montgomery.Native64x8Field",
+    "CompPoly.Fields.Montgomery.Native64x8InvDefs",
+    "CompPoly.Fields.Secp256k1.Basic"],
+   "proof": ["CompPoly.Fields.Montgomery.Native64x8Defs"]},
+  "CompPoly.Fields.Secp256k1.Basic":
+  {"statement": [], "proof": ["CompPoly.Fields.PrattCertificate"]},
+  "CompPoly.Fields.Secp256k1": {"statement": [], "proof": []},
+  "CompPoly.Fields.PrattCertificate": {"statement": [], "proof": []},
+  "CompPoly.Fields.Pasta.Fast":
+  {"statement": ["CompPoly.Fields.Montgomery.Native64x8Field", "CompPoly.Fields.Pasta.Basic"],
+   "proof": ["CompPoly.Fields.Montgomery.Native64x8Defs"]},
+  "CompPoly.Fields.Pasta.Basic": {"statement": [], "proof": ["CompPoly.Fields.PrattCertificate"]},
+  "CompPoly.Fields.Pasta": {"statement": [], "proof": []},
+  "CompPoly.Fields.Montgomery.ScalarFft":
+  {"statement": ["CompPoly.Fields.Montgomery.Native64x8Defs"], "proof": []},
+  "CompPoly.Fields.Montgomery.Native64x8Mul":
+  {"statement": ["CompPoly.Fields.Montgomery.Native64x8Defs"],
+   "proof": ["CompPoly.Fields.Montgomery.Basic", "CompPoly.Fields.Montgomery.Native64x8"]},
+  "CompPoly.Fields.Montgomery.Native64x8InvDefs":
+  {"statement": ["CompPoly.Fields.Montgomery.Native64x8Defs"], "proof": []},
+  "CompPoly.Fields.Montgomery.Native64x8Inv":
+  {"statement":
+   ["CompPoly.Fields.Montgomery.Native64x8Defs",
+    "CompPoly.Fields.Montgomery.Native64x8Field",
+    "CompPoly.Fields.Montgomery.Native64x8InvDefs"],
+   "proof": ["CompPoly.Fields.Montgomery.Native64x8", "CompPoly.Fields.Montgomery.Native64x8Mul"]},
+  "CompPoly.Fields.Montgomery.Native64x8Field":
+  {"statement": ["CompPoly.Fields.Basic", "CompPoly.Fields.Montgomery.Native64x8Defs"],
+   "proof":
+   ["CompPoly.Fields.Montgomery.Basic",
+    "CompPoly.Fields.Montgomery.Native64x8",
+    "CompPoly.Fields.Montgomery.Native64x8Mul"]},
+  "CompPoly.Fields.Montgomery.Native64x8Defs": {"statement": [], "proof": []},
+  "CompPoly.Fields.Montgomery.Native64x8Bytes":
+  {"statement":
+   ["CompPoly.Data.Bytes.CanonicalNat",
+    "CompPoly.Data.Bytes.Codec",
+    "CompPoly.Data.Bytes.LittleEndian",
+    "CompPoly.Data.Classes.CanonicalNat",
+    "CompPoly.Fields.Montgomery.Native64x8Field"],
+   "proof": []},
+  "CompPoly.Fields.Montgomery.Native64x8":
+  {"statement": ["CompPoly.Fields.Montgomery.Native64x8Defs"], "proof": []},
+  "CompPoly.Fields.Montgomery.Native32Field":
+  {"statement": ["CompPoly.Fields.Basic", "CompPoly.Fields.Montgomery.Native32"],
+   "proof": ["CompPoly.Fields.Montgomery.Basic"]},
+  "CompPoly.Fields.Montgomery.Native32Bytes":
+  {"statement":
+   ["CompPoly.Data.Bytes.CanonicalNat",
+    "CompPoly.Data.Bytes.Codec",
+    "CompPoly.Data.Bytes.LittleEndian",
+    "CompPoly.Data.Classes.CanonicalNat",
+    "CompPoly.Fields.Montgomery.Native32Field"],
+   "proof": []},
+  "CompPoly.Fields.Montgomery.Native32":
+  {"statement": ["CompPoly.Fields.Montgomery.Basic"], "proof": []},
+  "CompPoly.Fields.Montgomery.Basic": {"statement": [], "proof": []},
+  "CompPoly.Fields.Mersenne31.Fast":
+  {"statement": ["CompPoly.Fields.Basic", "CompPoly.Fields.Mersenne31.Basic"], "proof": []},
+  "CompPoly.Fields.Mersenne31.Circle":
+  {"statement": ["CompPoly.Fields.Mersenne31.Basic"], "proof": []},
+  "CompPoly.Fields.Mersenne31.Bytes":
+  {"statement":
+   ["CompPoly.Data.Bytes.CanonicalNat",
+    "CompPoly.Data.Bytes.Codec",
+    "CompPoly.Data.Classes.CanonicalNat",
+    "CompPoly.Fields.Mersenne31.Basic",
+    "CompPoly.Fields.Mersenne31.Fast"],
+   "proof": ["CompPoly.Data.Bytes.LittleEndian"]},
+  "CompPoly.Fields.Mersenne31.Basic":
+  {"statement": ["CompPoly.Fields.Basic"], "proof": ["CompPoly.Fields.PrattCertificate"]},
+  "CompPoly.Fields.Mersenne31": {"statement": [], "proof": []},
+  "CompPoly.Fields.KoalaBear.Fast":
+  {"statement": ["CompPoly.Fields.KoalaBear.Basic", "CompPoly.Fields.Montgomery.Native32Field"],
+   "proof": []},
+  "CompPoly.Fields.KoalaBear.Ext6.SexticIrreducible":
+  {"statement":
+   ["CompPoly.Data.Polynomial.RabinCertificate",
+    "CompPoly.Fields.KoalaBear.Basic",
+    "CompPoly.Fields.KoalaBear.Ext6.SexticCertData"],
+   "proof": []},
+  "CompPoly.Fields.KoalaBear.Ext6.SexticCertData":
+  {"statement": ["CompPoly.Data.Polynomial.RabinCertificate"], "proof": []},
+  "CompPoly.Fields.KoalaBear.Ext6.GaloisField":
+  {"statement":
+   ["CompPoly.Fields.Extension.Bridge",
+    "CompPoly.Fields.Extension.Cardinality",
+    "CompPoly.Fields.Extension.Field",
+    "CompPoly.Fields.KoalaBear.Basic",
+    "CompPoly.Fields.KoalaBear.Ext6"],
+   "proof": []},
+  "CompPoly.Fields.KoalaBear.Ext6":
+  {"statement":
+   ["CompPoly.Fields.Extension.Arithmetic",
+    "CompPoly.Fields.Extension.Bridge",
+    "CompPoly.Fields.Extension.Cardinality",
+    "CompPoly.Fields.Extension.Defs",
+    "CompPoly.Fields.Extension.Field",
+    "CompPoly.Fields.KoalaBear.Basic",
+    "CompPoly.Fields.KoalaBear.Ext6.SexticIrreducible"],
+   "proof": []},
+  "CompPoly.Fields.KoalaBear.Ext5.QuinticIrreducible":
+  {"statement":
+   ["CompPoly.Data.Polynomial.RabinCertificate",
+    "CompPoly.Fields.KoalaBear.Basic",
+    "CompPoly.Fields.KoalaBear.Ext5.QuinticCertData"],
+   "proof": []},
+  "CompPoly.Fields.KoalaBear.Ext5.QuinticCertData":
+  {"statement": ["CompPoly.Data.Polynomial.RabinCertificate"], "proof": []},
+  "CompPoly.Fields.KoalaBear.Ext5":
+  {"statement":
+   ["CompPoly.Fields.Extension.Arithmetic",
+    "CompPoly.Fields.Extension.Bridge",
+    "CompPoly.Fields.Extension.Cardinality",
+    "CompPoly.Fields.Extension.Defs",
+    "CompPoly.Fields.Extension.Field",
+    "CompPoly.Fields.KoalaBear.Basic",
+    "CompPoly.Fields.KoalaBear.Ext5.QuinticIrreducible"],
+   "proof": []},
+  "CompPoly.Fields.KoalaBear.Ext4":
+  {"statement":
+   ["CompPoly.Fields.Extension.Arithmetic",
+    "CompPoly.Fields.Extension.Bridge",
+    "CompPoly.Fields.Extension.Cardinality",
+    "CompPoly.Fields.Extension.Defs",
+    "CompPoly.Fields.Extension.Field",
+    "CompPoly.Fields.KoalaBear.Basic"],
+   "proof": ["CompPoly.Fields.Extension.Binomial"]},
+  "CompPoly.Fields.KoalaBear.Basic":
+  {"statement": ["CompPoly.Fields.Basic"], "proof": ["CompPoly.Fields.PrattCertificate"]},
+  "CompPoly.Fields.KoalaBear": {"statement": [], "proof": []},
+  "CompPoly.Fields.Hachi.Ext4":
+  {"statement":
+   ["CompPoly.Fields.Extension.Arithmetic",
+    "CompPoly.Fields.Extension.Bridge",
+    "CompPoly.Fields.Extension.Cardinality",
+    "CompPoly.Fields.Extension.Defs",
+    "CompPoly.Fields.Extension.Field",
+    "CompPoly.Fields.Hachi"],
+   "proof": ["CompPoly.Fields.Extension.Binomial"]},
+  "CompPoly.Fields.Hachi":
+  {"statement": ["CompPoly.Fields.Basic"], "proof": ["CompPoly.Fields.PrattCertificate"]},
+  "CompPoly.Fields.Goldilocks.FastReduction":
+  {"statement": ["CompPoly.Fields.Goldilocks.Basic", "CompPoly.Fields.Goldilocks.FastDefs"],
+   "proof": []},
+  "CompPoly.Fields.Goldilocks.FastDefs": {"statement": [], "proof": []},
+  "CompPoly.Fields.Goldilocks.Fast":
+  {"statement":
+   ["CompPoly.Fields.Basic",
+    "CompPoly.Fields.Goldilocks.Basic",
+    "CompPoly.Fields.Goldilocks.FastDefs",
+    "CompPoly.Fields.Goldilocks.FastReduction"],
+   "proof": []},
+  "CompPoly.Fields.Goldilocks.Bytes":
+  {"statement":
+   ["CompPoly.Data.Bytes.CanonicalNat",
+    "CompPoly.Data.Bytes.Codec",
+    "CompPoly.Data.Classes.CanonicalNat",
+    "CompPoly.Fields.Goldilocks.Basic",
+    "CompPoly.Fields.Goldilocks.Fast"],
+   "proof": ["CompPoly.Data.Bytes.LittleEndian"]},
+  "CompPoly.Fields.Goldilocks.Basic":
+  {"statement": ["CompPoly.Fields.Basic"], "proof": ["CompPoly.Fields.PrattCertificate"]},
+  "CompPoly.Fields.Goldilocks": {"statement": [], "proof": []},
+  "CompPoly.Fields.Extension.Field":
+  {"statement":
+   ["CompPoly.Fields.Extension.Arithmetic",
+    "CompPoly.Fields.Extension.Bridge",
+    "CompPoly.Fields.Extension.Defs"],
+   "proof": ["CompPoly.Fields.Extension.Cardinality"]},
+  "CompPoly.Fields.Extension.Defs":
+  {"statement": ["CompPoly.Fields.Extension.Arithmetic"], "proof": []},
+  "CompPoly.Fields.Extension.Cardinality":
+  {"statement": ["CompPoly.Fields.Extension.Arithmetic"], "proof": []},
+  "CompPoly.Fields.Extension.Bytes":
+  {"statement":
+   ["CompPoly.Data.Bytes.Codec",
+    "CompPoly.Data.Bytes.Vector",
+    "CompPoly.Data.Classes.Serialize",
+    "CompPoly.Fields.Extension.Arithmetic"],
+   "proof": []},
+  "CompPoly.Fields.Extension.Bridge":
+  {"statement": ["CompPoly.Fields.Extension.Arithmetic", "CompPoly.Fields.Extension.Defs"],
+   "proof": []},
+  "CompPoly.Fields.Extension.Binomial":
+  {"statement": [], "proof": ["CompPoly.Data.Polynomial.Rabin"]},
+  "CompPoly.Fields.Extension.Arithmetic": {"statement": [], "proof": []},
+  "CompPoly.Fields.Extension": {"statement": [], "proof": []},
+  "CompPoly.Fields.Binary.Tower.TensorAlgebra": {"statement": [], "proof": []},
+  "CompPoly.Fields.Binary.Tower.Support.Preliminaries":
+  {"statement": [], "proof": ["CompPoly.Data.Fin.BigOperators"]},
+  "CompPoly.Fields.Binary.Tower.Support.LinearIndependentFin2": {"statement": [], "proof": []},
+  "CompPoly.Fields.Binary.Tower.Support.IrreducibilityAndTraceMapProperty":
+  {"statement":
+   ["CompPoly.Fields.Binary.Tower.Support.DefiningPoly",
+    "CompPoly.Fields.Binary.Tower.Support.Preliminaries"],
+   "proof": []},
+  "CompPoly.Fields.Binary.Tower.Support.FinHelpers":
+  {"statement": ["CompPoly.Data.Nat.Bitwise"], "proof": []},
+  "CompPoly.Fields.Binary.Tower.Support.DefiningPoly":
+  {"statement": [], "proof": ["CompPoly.Fields.Binary.Tower.Support.Preliminaries"]},
+  "CompPoly.Fields.Binary.Tower.Prelude": {"statement": [], "proof": []},
+  "CompPoly.Fields.Binary.Tower.Impl": {"statement": [], "proof": []},
+  "CompPoly.Fields.Binary.Tower.FastDefs": {"statement": [], "proof": []},
+  "CompPoly.Fields.Binary.Tower.Fast.Multilinear":
+  {"statement":
+   ["CompPoly.Data.Vector.Basic",
+    "CompPoly.Fields.Binary.Tower.Concrete.Arithmetic",
+    "CompPoly.Fields.Binary.Tower.Concrete.Field",
+    "CompPoly.Fields.Binary.Tower.Fast",
+    "CompPoly.Fields.Binary.Tower.FastDefs",
+    "CompPoly.Multilinear.Basic"],
+   "proof": []},
+  "CompPoly.Fields.Binary.Tower.Fast":
+  {"statement":
+   ["CompPoly.Fields.Binary.Tower.Concrete.Arithmetic",
+    "CompPoly.Fields.Binary.Tower.Concrete.Field",
+    "CompPoly.Fields.Binary.Tower.FastDefs"],
+   "proof": ["CompPoly.Data.Classes.DCast", "CompPoly.Fields.Binary.Tower.Concrete.Core"]},
+  "CompPoly.Fields.Binary.Tower.Equiv":
+  {"statement":
+   ["CompPoly.Data.RingTheory.AlgebraTower",
+    "CompPoly.Fields.Binary.Tower.Abstract.Algebra",
+    "CompPoly.Fields.Binary.Tower.Abstract.Basis",
+    "CompPoly.Fields.Binary.Tower.Abstract.Core",
+    "CompPoly.Fields.Binary.Tower.Abstract.Split",
+    "CompPoly.Fields.Binary.Tower.Concrete.Algebra",
+    "CompPoly.Fields.Binary.Tower.Concrete.Arithmetic",
+    "CompPoly.Fields.Binary.Tower.Concrete.Basis",
+    "CompPoly.Fields.Binary.Tower.Concrete.Core",
+    "CompPoly.Fields.Binary.Tower.Concrete.Field"],
+   "proof": ["CompPoly.Data.Nat.Bitwise", "CompPoly.Fields.Binary.Tower.Support.Preliminaries"]},
+  "CompPoly.Fields.Binary.Tower.Concrete.RelativeCoordinates":
+  {"statement":
+   ["CompPoly.Data.Nat.Bitwise",
+    "CompPoly.Data.RingTheory.AlgebraTower.Coordinates",
+    "CompPoly.Fields.Binary.Tower.Concrete.Algebra",
+    "CompPoly.Fields.Binary.Tower.Concrete.Arithmetic",
+    "CompPoly.Fields.Binary.Tower.Concrete.Coordinates",
+    "CompPoly.Fields.Binary.Tower.Concrete.Field"],
+   "proof": ["CompPoly.Data.Classes.DCast", "CompPoly.Data.RingTheory.AlgebraTower"]},
+  "CompPoly.Fields.Binary.Tower.Concrete.Field":
+  {"statement":
+   ["CompPoly.Fields.Binary.Tower.Concrete.Arithmetic",
+    "CompPoly.Fields.Binary.Tower.Concrete.Core"],
+   "proof":
+   ["CompPoly.Fields.Binary.Tower.Support.DefiningPoly",
+    "CompPoly.Fields.Binary.Tower.Support.IrreducibilityAndTraceMapProperty",
+    "CompPoly.Fields.Binary.Tower.Support.Preliminaries"]},
+  "CompPoly.Fields.Binary.Tower.Concrete.Core":
+  {"statement":
+   ["CompPoly.Fields.Binary.Tower.Concrete.Arithmetic",
+    "CompPoly.Fields.Binary.Tower.Support.DefiningPoly",
+    "CompPoly.Fields.Binary.Tower.Support.Preliminaries"],
+   "proof": []},
+  "CompPoly.Fields.Binary.Tower.Concrete.Coordinates":
+  {"statement":
+   ["CompPoly.Fields.Binary.Tower.Concrete.Algebra",
+    "CompPoly.Fields.Binary.Tower.Concrete.Arithmetic",
+    "CompPoly.Fields.Binary.Tower.Concrete.Field"],
+   "proof": []},
+  "CompPoly.Fields.Binary.Tower.Concrete.CoordinateArithmetic":
+  {"statement":
+   ["CompPoly.Fields.Binary.Tower.Concrete.Algebra",
+    "CompPoly.Fields.Binary.Tower.Concrete.Arithmetic",
+    "CompPoly.Fields.Binary.Tower.Concrete.Coordinates",
+    "CompPoly.Fields.Binary.Tower.Concrete.Core",
+    "CompPoly.Fields.Binary.Tower.Concrete.Field"],
+   "proof": []},
+  "CompPoly.Fields.Binary.Tower.Concrete.BasisCoordinates":
+  {"statement":
+   ["CompPoly.Fields.Binary.Tower.Concrete.Algebra",
+    "CompPoly.Fields.Binary.Tower.Concrete.Arithmetic",
+    "CompPoly.Fields.Binary.Tower.Concrete.Basis",
+    "CompPoly.Fields.Binary.Tower.Concrete.Field",
+    "CompPoly.Fields.Binary.Tower.Concrete.RelativeCoordinates"],
+   "proof":
+   ["CompPoly.Data.Nat.Bitwise",
+    "CompPoly.Data.RingTheory.AlgebraTower",
+    "CompPoly.Data.RingTheory.AlgebraTower.Basis",
+    "CompPoly.Data.RingTheory.AlgebraTower.Coordinates",
+    "CompPoly.Fields.Binary.Tower.Concrete.Coordinates",
+    "CompPoly.Fields.Binary.Tower.Support.FinHelpers"]},
+  "CompPoly.Fields.Binary.Tower.Concrete.Basis":
+  {"statement":
+   ["CompPoly.Data.Nat.Bitwise",
+    "CompPoly.Data.RingTheory.AlgebraTower",
+    "CompPoly.Fields.Binary.Tower.Concrete.Algebra",
+    "CompPoly.Fields.Binary.Tower.Concrete.Arithmetic",
+    "CompPoly.Fields.Binary.Tower.Concrete.Field",
+    "CompPoly.Fields.Binary.Tower.Support.FinHelpers"],
+   "proof":
+   ["CompPoly.Data.Fin.BigOperators",
+    "CompPoly.Fields.Binary.Tower.Concrete.Core",
+    "CompPoly.Fields.Binary.Tower.Support.DefiningPoly",
+    "CompPoly.Fields.Binary.Tower.Support.LinearIndependentFin2",
+    "CompPoly.Fields.Binary.Tower.Support.Preliminaries"]},
+  "CompPoly.Fields.Binary.Tower.Concrete.Arithmetic":
+  {"statement": ["CompPoly.Data.Classes.DCast"], "proof": []},
+  "CompPoly.Fields.Binary.Tower.Concrete.Algebra":
+  {"statement":
+   ["CompPoly.Data.RingTheory.AlgebraTower",
+    "CompPoly.Fields.Binary.Tower.Concrete.Arithmetic",
+    "CompPoly.Fields.Binary.Tower.Concrete.Core",
+    "CompPoly.Fields.Binary.Tower.Concrete.Field",
+    "CompPoly.Fields.Binary.Tower.Support.DefiningPoly"],
+   "proof": ["CompPoly.Data.Classes.DCast"]},
+  "CompPoly.Fields.Binary.Tower.Bytes":
+  {"statement":
+   ["CompPoly.Data.Bytes.Codec",
+    "CompPoly.Data.Bytes.LittleEndian",
+    "CompPoly.Data.Classes.CanonicalNat",
+    "CompPoly.Fields.Binary.Tower.Concrete.Arithmetic",
+    "CompPoly.Fields.Binary.Tower.Fast",
+    "CompPoly.Fields.Binary.Tower.FastDefs"],
+   "proof": ["CompPoly.Data.Bytes.CanonicalNat"]},
+  "CompPoly.Fields.Binary.Tower.Basic": {"statement": [], "proof": []},
+  "CompPoly.Fields.Binary.Tower.Abstract.Split":
+  {"statement":
+   ["CompPoly.Fields.Binary.Tower.Abstract.Algebra", "CompPoly.Fields.Binary.Tower.Abstract.Core"],
+   "proof":
+   ["CompPoly.Data.RingTheory.AlgebraTower",
+    "CompPoly.Fields.Binary.Tower.Support.DefiningPoly",
+    "CompPoly.Fields.Binary.Tower.Support.Preliminaries"]},
+  "CompPoly.Fields.Binary.Tower.Abstract.Core":
+  {"statement":
+   ["CompPoly.Fields.Binary.Tower.Support.DefiningPoly",
+    "CompPoly.Fields.Binary.Tower.Support.Preliminaries"],
+   "proof": ["CompPoly.Fields.Binary.Tower.Support.IrreducibilityAndTraceMapProperty"]},
+  "CompPoly.Fields.Binary.Tower.Abstract.Basis":
+  {"statement":
+   ["CompPoly.Data.Nat.Bitwise",
+    "CompPoly.Data.RingTheory.AlgebraTower",
+    "CompPoly.Fields.Binary.Tower.Abstract.Algebra",
+    "CompPoly.Fields.Binary.Tower.Abstract.Core",
+    "CompPoly.Fields.Binary.Tower.Abstract.Split",
+    "CompPoly.Fields.Binary.Tower.Support.FinHelpers"],
+   "proof": ["CompPoly.Data.Fin.BigOperators"]},
+  "CompPoly.Fields.Binary.Tower.Abstract.Algebra":
+  {"statement":
+   ["CompPoly.Data.RingTheory.AlgebraTower", "CompPoly.Fields.Binary.Tower.Abstract.Core"],
+   "proof": []},
+  "CompPoly.Fields.Binary.Common.Arithmetic": {"statement": [], "proof": []},
+  "CompPoly.Fields.Binary.Common":
+  {"statement": ["CompPoly.Fields.Binary.Common.Arithmetic"],
+   "proof":
+   ["CompPoly.Data.Polynomial.Frobenius", "CompPoly.Data.RingTheory.CanonicalEuclideanDomain"]},
+  "CompPoly.Fields.Binary.BF64.Reduce":
+  {"statement":
+   ["CompPoly.Fields.Binary.BF64.Basic",
+    "CompPoly.Fields.Binary.Common",
+    "CompPoly.Fields.Binary.Common.Arithmetic"],
+   "proof": ["CompPoly.Data.RingTheory.CanonicalEuclideanDomain"]},
+  "CompPoly.Fields.Binary.BF64.Impl":
+  {"statement":
+   ["CompPoly.Fields.Binary.BF64.Basic",
+    "CompPoly.Fields.Binary.BF64.Reduce",
+    "CompPoly.Fields.Binary.Common",
+    "CompPoly.Fields.Binary.Common.Arithmetic"],
+   "proof": []},
+  "CompPoly.Fields.Binary.BF64.Ext3":
+  {"statement":
+   ["CompPoly.Fields.Binary.BF64.Impl",
+    "CompPoly.Fields.Extension.Arithmetic",
+    "CompPoly.Fields.Extension.Bridge",
+    "CompPoly.Fields.Extension.Defs",
+    "CompPoly.Fields.Extension.Field"],
+   "proof": ["CompPoly.Fields.Extension.Cardinality"]},
+  "CompPoly.Fields.Binary.BF64.Bytes":
+  {"statement":
+   ["CompPoly.Data.Bytes.Codec",
+    "CompPoly.Data.Classes.CanonicalNat",
+    "CompPoly.Fields.Binary.BF64.Impl"],
+   "proof": ["CompPoly.Data.Bytes.CanonicalNat", "CompPoly.Data.Bytes.LittleEndian"]},
+  "CompPoly.Fields.Binary.BF64.Basic":
+  {"statement":
+   ["CompPoly.Data.Polynomial.RabinCertificateBinary",
+    "CompPoly.Fields.Binary.BF64.BaseCertificate"],
+   "proof":
+   ["CompPoly.Data.Polynomial.RabinCertificate",
+    "CompPoly.Data.RingTheory.CanonicalEuclideanDomain"]},
+  "CompPoly.Fields.Binary.BF64.BaseCertificate":
+  {"statement": ["CompPoly.Data.Polynomial.RabinCertificateBinary"], "proof": []},
+  "CompPoly.Fields.Binary.BF64": {"statement": [], "proof": []},
+  "CompPoly.Fields.Binary.BF128Ghash.XPowTwoPowModCertificate":
+  {"statement":
+   ["CompPoly.Fields.Binary.BF128Ghash.Prelude",
+    "CompPoly.Fields.Binary.Common",
+    "CompPoly.Fields.Binary.Common.Arithmetic"],
+   "proof": []},
+  "CompPoly.Fields.Binary.BF128Ghash.XPowTwoPowGcdCertificate":
+  {"statement":
+   ["CompPoly.Fields.Binary.BF128Ghash.Prelude",
+    "CompPoly.Fields.Binary.Common",
+    "CompPoly.Fields.Binary.Common.Arithmetic"],
+   "proof":
+   ["CompPoly.Data.RingTheory.CanonicalEuclideanDomain",
+    "CompPoly.Fields.Binary.BF128Ghash.XPowTwoPowModCertificate"]},
+  "CompPoly.Fields.Binary.BF128Ghash.Prelude":
+  {"statement": ["CompPoly.Fields.Binary.Common", "CompPoly.Fields.Binary.Common.Arithmetic"],
+   "proof": ["CompPoly.Data.RingTheory.CanonicalEuclideanDomain"]},
+  "CompPoly.Fields.Binary.BF128Ghash.Impl":
+  {"statement":
+   ["CompPoly.Fields.Binary.BF128Ghash.Arithmetic",
+    "CompPoly.Fields.Binary.BF128Ghash.Basic",
+    "CompPoly.Fields.Binary.BF128Ghash.Prelude",
+    "CompPoly.Fields.Binary.Common",
+    "CompPoly.Fields.Binary.Common.Arithmetic"],
+   "proof": ["CompPoly.Data.Nat.Bitwise", "CompPoly.Data.RingTheory.CanonicalEuclideanDomain"]},
+  "CompPoly.Fields.Binary.BF128Ghash.Bytes":
+  {"statement":
+   ["CompPoly.Data.Bytes.Codec",
+    "CompPoly.Data.Classes.CanonicalNat",
+    "CompPoly.Fields.Binary.BF128Ghash.Arithmetic"],
+   "proof": ["CompPoly.Data.Bytes.CanonicalNat", "CompPoly.Data.Bytes.LittleEndian"]},
+  "CompPoly.Fields.Binary.BF128Ghash.Basic":
+  {"statement": ["CompPoly.Fields.Binary.BF128Ghash.Prelude"],
+   "proof":
+   ["CompPoly.Data.Polynomial.Frobenius",
+    "CompPoly.Data.RingTheory.CanonicalEuclideanDomain",
+    "CompPoly.Fields.Binary.BF128Ghash.XPowTwoPowGcdCertificate",
+    "CompPoly.Fields.Binary.BF128Ghash.XPowTwoPowModCertificate",
+    "CompPoly.Fields.Binary.Common"]},
+  "CompPoly.Fields.Binary.BF128Ghash.Arithmetic":
+  {"statement": ["CompPoly.Fields.Binary.Common.Arithmetic"], "proof": []},
+  "CompPoly.Fields.Binary.Aes.Ghash":
+  {"statement":
+   ["CompPoly.Fields.Binary.Aes.Arithmetic",
+    "CompPoly.Fields.Binary.Aes.Basic",
+    "CompPoly.Fields.Binary.BF128Ghash.Arithmetic",
+    "CompPoly.Fields.Binary.BF128Ghash.Impl",
+    "CompPoly.Fields.Extension.Arithmetic",
+    "CompPoly.Fields.Extension.Field"],
+   "proof": ["CompPoly.Fields.Extension.Bridge", "CompPoly.Fields.Extension.Defs"]},
+  "CompPoly.Fields.Binary.Aes.Certificate":
+  {"statement": ["CompPoly.Data.Polynomial.RabinCertificate"], "proof": []},
+  "CompPoly.Fields.Binary.Aes.Bytes":
+  {"statement":
+   ["CompPoly.Data.Bytes.Codec",
+    "CompPoly.Data.Classes.CanonicalNat",
+    "CompPoly.Fields.Binary.Aes.Arithmetic"],
+   "proof": ["CompPoly.Data.Bytes.CanonicalNat", "CompPoly.Data.Bytes.LittleEndian"]},
+  "CompPoly.Fields.Binary.Aes.Basic":
+  {"statement":
+   ["CompPoly.Fields.Binary.Aes.Arithmetic",
+    "CompPoly.Fields.Extension.Arithmetic",
+    "CompPoly.Fields.Extension.Bridge",
+    "CompPoly.Fields.Extension.Defs",
+    "CompPoly.Fields.Extension.Field"],
+   "proof":
+   ["CompPoly.Data.Polynomial.RabinCertificate",
+    "CompPoly.Fields.Binary.Aes.Certificate",
+    "CompPoly.Fields.Extension.Cardinality"]},
+  "CompPoly.Fields.Binary.Aes.Arithmetic":
+  {"statement": ["CompPoly.Fields.Extension.Arithmetic"], "proof": []},
+  "CompPoly.Fields.Binary.AdditiveNTT.NovelPolynomialBasis":
+  {"statement": ["CompPoly.Data.Nat.Bitwise"],
+   "proof":
+   ["CompPoly.Data.Fin.BigOperators",
+    "CompPoly.Data.Polynomial.Frobenius",
+    "CompPoly.Data.Polynomial.MonomialBasis"]},
+  "CompPoly.Fields.Binary.AdditiveNTT.Intermediate":
+  {"statement":
+   ["CompPoly.Data.Nat.Bitwise",
+    "CompPoly.Fields.Binary.AdditiveNTT.Domain",
+    "CompPoly.Fields.Binary.AdditiveNTT.NovelPolynomialBasis"],
+   "proof": ["CompPoly.Data.Fin.BigOperators", "CompPoly.Data.Polynomial.Frobenius"]},
+  "CompPoly.Fields.Binary.AdditiveNTT.Impl":
+  {"statement":
+   ["CompPoly.Data.Nat.Bitwise",
+    "CompPoly.Fields.Binary.AdditiveNTT.Executable",
+    "CompPoly.Fields.Binary.Tower.Concrete.Algebra",
+    "CompPoly.Fields.Binary.Tower.Concrete.Arithmetic",
+    "CompPoly.Fields.Binary.Tower.Concrete.Basis",
+    "CompPoly.Fields.Binary.Tower.Concrete.Field"],
+   "proof": []},
+  "CompPoly.Fields.Binary.AdditiveNTT.Executable":
+  {"statement":
+   ["CompPoly.Data.Nat.Bitwise",
+    "CompPoly.Fields.Binary.AdditiveNTT.Algorithm",
+    "CompPoly.Fields.Binary.AdditiveNTT.NovelPolynomialBasis"],
+   "proof": ["CompPoly.Data.Fin.BigOperators"]},
+  "CompPoly.Fields.Binary.AdditiveNTT.Domain":
+  {"statement":
+   ["CompPoly.Data.Nat.Bitwise",
+    "CompPoly.Data.Polynomial.Frobenius",
+    "CompPoly.Fields.Binary.AdditiveNTT.NovelPolynomialBasis"],
+   "proof": ["CompPoly.Data.Fin.BigOperators"]},
+  "CompPoly.Fields.Binary.AdditiveNTT.CosetBridge":
+  {"statement":
+   ["CompPoly.Data.Nat.Bitwise",
+    "CompPoly.Fields.Binary.AdditiveNTT.Algorithm",
+    "CompPoly.Fields.Binary.AdditiveNTT.Coset",
+    "CompPoly.Fields.Binary.AdditiveNTT.NovelPolynomialBasis"],
+   "proof":
+   ["CompPoly.Fields.Binary.AdditiveNTT.Correctness",
+    "CompPoly.Fields.Binary.AdditiveNTT.Executable"]},
+  "CompPoly.Fields.Binary.AdditiveNTT.Coset": {"statement": [], "proof": []},
+  "CompPoly.Fields.Binary.AdditiveNTT.Correctness":
+  {"statement":
+   ["CompPoly.Fields.Binary.AdditiveNTT.Algorithm",
+    "CompPoly.Fields.Binary.AdditiveNTT.Executable",
+    "CompPoly.Fields.Binary.AdditiveNTT.Intermediate",
+    "CompPoly.Fields.Binary.AdditiveNTT.NovelPolynomialBasis"],
+   "proof":
+   ["CompPoly.Data.Fin.BigOperators",
+    "CompPoly.Data.Nat.Bitwise",
+    "CompPoly.Data.Polynomial.Frobenius",
+    "CompPoly.Fields.Binary.AdditiveNTT.Domain"]},
+  "CompPoly.Fields.Binary.AdditiveNTT.Algorithm":
+  {"statement":
+   ["CompPoly.Data.Nat.Bitwise",
+    "CompPoly.Fields.Binary.AdditiveNTT.Domain",
+    "CompPoly.Fields.Binary.AdditiveNTT.Intermediate",
+    "CompPoly.Fields.Binary.AdditiveNTT.NovelPolynomialBasis"],
+   "proof": ["CompPoly.Data.Fin.BigOperators", "CompPoly.Data.Polynomial.Frobenius"]},
+  "CompPoly.Fields.Binary.AdditiveNTT.AdditiveNTT": {"statement": [], "proof": []},
+  "CompPoly.Fields.Basic": {"statement": [], "proof": []},
+  "CompPoly.Fields.BabyBear.Fast":
+  {"statement": ["CompPoly.Fields.BabyBear.Basic", "CompPoly.Fields.Montgomery.Native32Field"],
+   "proof": []},
+  "CompPoly.Fields.BabyBear.Ext4":
+  {"statement":
+   ["CompPoly.Fields.BabyBear.Basic",
+    "CompPoly.Fields.Extension.Arithmetic",
+    "CompPoly.Fields.Extension.Bridge",
+    "CompPoly.Fields.Extension.Cardinality",
+    "CompPoly.Fields.Extension.Defs",
+    "CompPoly.Fields.Extension.Field"],
+   "proof": ["CompPoly.Fields.Extension.Binomial"]},
+  "CompPoly.Fields.BabyBear.Basic":
+  {"statement": ["CompPoly.Fields.Basic"], "proof": ["CompPoly.Fields.PrattCertificate"]},
+  "CompPoly.Fields.BabyBear": {"statement": [], "proof": []},
+  "CompPoly.Fields.BN254.Fast":
+  {"statement":
+   ["CompPoly.Fields.BN254.Basic",
+    "CompPoly.Fields.Montgomery.Native64x8Field",
+    "CompPoly.Fields.Montgomery.Native64x8InvDefs"],
+   "proof": ["CompPoly.Fields.Montgomery.Native64x8Defs"]},
+  "CompPoly.Fields.BN254.Basic": {"statement": [], "proof": ["CompPoly.Fields.PrattCertificate"]},
+  "CompPoly.Fields.BN254": {"statement": [], "proof": []},
+  "CompPoly.Fields.BLS12_381.Fast":
+  {"statement":
+   ["CompPoly.Fields.BLS12_381.Basic",
+    "CompPoly.Fields.Montgomery.Native64x8Field",
+    "CompPoly.Fields.Montgomery.Native64x8InvDefs"],
+   "proof": ["CompPoly.Fields.Montgomery.Native64x8Defs"]},
+  "CompPoly.Fields.BLS12_381.Basic":
+  {"statement": [], "proof": ["CompPoly.Fields.PrattCertificate"]},
+  "CompPoly.Fields.BLS12_381": {"statement": [], "proof": []},
+  "CompPoly.Fields.BLS12_377.Fast":
+  {"statement":
+   ["CompPoly.Fields.BLS12_377.Basic",
+    "CompPoly.Fields.Montgomery.Native64x8Field",
+    "CompPoly.Fields.Montgomery.Native64x8InvDefs"],
+   "proof": ["CompPoly.Fields.Montgomery.Native64x8Defs"]},
+  "CompPoly.Fields.BLS12_377.Basic":
+  {"statement": [], "proof": ["CompPoly.Fields.PrattCertificate"]},
+  "CompPoly.Fields.BLS12_377": {"statement": [], "proof": []},
+  "CompPoly.Data.Vector.Basic": {"statement": [], "proof": ["CompPoly.Data.List.Lemmas"]},
+  "CompPoly.Data.RingTheory.CanonicalEuclideanDomain": {"statement": [], "proof": []},
+  "CompPoly.Data.RingTheory.AlgebraTower.Coordinates":
+  {"statement": ["CompPoly.Data.RingTheory.AlgebraTower"], "proof": []},
+  "CompPoly.Data.RingTheory.AlgebraTower.Basis":
+  {"statement":
+   ["CompPoly.Data.RingTheory.AlgebraTower", "CompPoly.Data.RingTheory.AlgebraTower.Coordinates"],
+   "proof": []},
+  "CompPoly.Data.RingTheory.AlgebraTower": {"statement": [], "proof": []},
+  "CompPoly.Data.Polynomial.RabinCertificateBinary":
+  {"statement": [],
+   "proof":
+   ["CompPoly.Data.Polynomial.RabinCertificate",
+    "CompPoly.Data.RingTheory.CanonicalEuclideanDomain"]},
+  "CompPoly.Data.Polynomial.RabinCertificate":
+  {"statement": [],
+   "proof":
+   ["CompPoly.Data.Polynomial.Rabin", "CompPoly.Data.RingTheory.CanonicalEuclideanDomain"]},
+  "CompPoly.Data.Polynomial.Rabin":
+  {"statement": [],
+   "proof": ["CompPoly.Data.Polynomial.Frobenius", "CompPoly.ToMathlib.Polynomial.Irreducible"]},
+  "CompPoly.Data.Polynomial.MonomialBasis": {"statement": [], "proof": []},
+  "CompPoly.Data.Polynomial.Frobenius": {"statement": [], "proof": ["CompPoly.Data.Nat.Bitwise"]},
+  "CompPoly.Data.Option.Lemmas": {"statement": [], "proof": []},
+  "CompPoly.Data.Nat.Bitwise": {"statement": [], "proof": ["CompPoly.Data.Fin.BigOperators"]},
+  "CompPoly.Data.MvPolynomial.Notation": {"statement": [], "proof": []},
+  "CompPoly.Data.List.Lemmas": {"statement": [], "proof": []},
+  "CompPoly.Data.Fin.BigOperators": {"statement": [], "proof": []},
+  "CompPoly.Data.ExtTreeMap.ExtTreeMap":
+  {"statement": [],
+   "proof": ["CompPoly.Data.ExtTreeMap.DTreeMap", "CompPoly.Data.ExtTreeMap.ExtDTreeMap"]},
+  "CompPoly.Data.ExtTreeMap.ExtDTreeMap": {"statement": [], "proof": []},
+  "CompPoly.Data.ExtTreeMap.DTreeMap": {"statement": [], "proof": []},
+  "CompPoly.Data.Classes.Serialize": {"statement": [], "proof": []},
+  "CompPoly.Data.Classes.LawfulBEq": {"statement": [], "proof": []},
+  "CompPoly.Data.Classes.HasSize": {"statement": [], "proof": []},
+  "CompPoly.Data.Classes.DCast": {"statement": [], "proof": []},
+  "CompPoly.Data.Classes.CanonicalNat": {"statement": [], "proof": []},
+  "CompPoly.Data.Bytes.Vector":
+  {"statement": ["CompPoly.Data.Bytes.Codec", "CompPoly.Data.Classes.Serialize"], "proof": []},
+  "CompPoly.Data.Bytes.LittleEndian": {"statement": [], "proof": []},
+  "CompPoly.Data.Bytes.Delimited":
+  {"statement":
+   ["CompPoly.Data.Bytes.Codec",
+    "CompPoly.Data.Bytes.LittleEndian",
+    "CompPoly.Data.Classes.Serialize"],
+   "proof": ["CompPoly.Data.Bytes.Vector"]},
+  "CompPoly.Data.Bytes.Codec":
+  {"statement": ["CompPoly.Data.Classes.HasSize", "CompPoly.Data.Classes.Serialize"], "proof": []},
+  "CompPoly.Data.Bytes.CanonicalNat":
+  {"statement":
+   ["CompPoly.Data.Bytes.Codec",
+    "CompPoly.Data.Bytes.LittleEndian",
+    "CompPoly.Data.Classes.CanonicalNat",
+    "CompPoly.Data.Classes.Serialize"],
+   "proof": []},
+  "CompPoly.Data.Bytes.Bias":
+  {"statement":
+   ["CompPoly.Data.Bytes.CanonicalNat",
+    "CompPoly.Data.Bytes.LittleEndian",
+    "CompPoly.Data.Classes.CanonicalNat"],
+   "proof": []},
+  "CompPoly.Data.Array.Lemmas": {"statement": ["CompPoly.Data.List.Lemmas"], "proof": []},
+  "CompPoly.Bivariate.ToPoly":
+  {"statement":
+   ["CompPoly.Bivariate.Basic",
+    "CompPoly.Univariate.Basic",
+    "CompPoly.Univariate.Raw.Core",
+    "CompPoly.Univariate.Raw.Ops",
+    "CompPoly.Univariate.ToPoly.Core",
+    "CompPoly.Univariate.ToPoly.Equiv"],
+   "proof": ["CompPoly.Univariate.ToPoly.Impl"]},
+  "CompPoly.Bivariate.Kronecker":
+  {"statement":
+   ["CompPoly.Bivariate.Basic",
+    "CompPoly.Univariate.Basic",
+    "CompPoly.Univariate.NTT.Domain",
+    "CompPoly.Univariate.NTT.FastMul",
+    "CompPoly.Univariate.NTTFast.FastMul",
+    "CompPoly.Univariate.Raw.Core",
+    "CompPoly.Univariate.Raw.Ops"],
+   "proof":
+   ["CompPoly.Univariate.NTTFast.Correctness.Pipeline",
+    "CompPoly.Univariate.ToPoly.Core",
+    "CompPoly.Univariate.ToPoly.Equiv",
+    "CompPoly.Univariate.ToPoly.Impl"]},
+  "CompPoly.Bivariate.GuruswamiSudan.Util": {"statement": [], "proof": []},
+  "CompPoly.Bivariate.GuruswamiSudan.Root.ShiftedSubstitution.Lemmas":
+  {"statement":
+   ["CompPoly.Bivariate.Basic",
+    "CompPoly.Bivariate.GuruswamiSudan.Polynomial",
+    "CompPoly.Bivariate.GuruswamiSudan.Root.ShiftedSubstitution",
+    "CompPoly.Univariate.Basic"],
+   "proof":
+   ["CompPoly.Bivariate.GuruswamiSudan.Root.Common.Lemmas", "CompPoly.Univariate.Raw.Core"]},
+  "CompPoly.Bivariate.GuruswamiSudan.Root.ShiftedSubstitution":
+  {"statement":
+   ["CompPoly.Bivariate.Basic",
+    "CompPoly.Bivariate.GuruswamiSudan.Polynomial",
+    "CompPoly.Univariate.Basic",
+    "CompPoly.Univariate.Raw.Core"],
+   "proof": []},
+  "CompPoly.Bivariate.GuruswamiSudan.Root.RothRuckenstein.Lemmas":
+  {"statement":
+   ["CompPoly.Bivariate.Basic",
+    "CompPoly.Bivariate.GuruswamiSudan.Polynomial",
+    "CompPoly.Bivariate.GuruswamiSudan.Root.Common",
+    "CompPoly.Bivariate.ToPoly",
+    "CompPoly.Univariate.Basic",
+    "CompPoly.Univariate.Raw.Core",
+    "CompPoly.Univariate.ToPoly.Core"],
+   "proof":
+   ["CompPoly.Bivariate.GuruswamiSudan.Root.Common.Lemmas",
+    "CompPoly.Univariate.ToPoly.Equiv",
+    "CompPoly.Univariate.ToPoly.Impl"]},
+  "CompPoly.Bivariate.GuruswamiSudan.Root.RothRuckenstein.Correctness":
+  {"statement":
+   ["CompPoly.Bivariate.Basic",
+    "CompPoly.Bivariate.GuruswamiSudan.Context",
+    "CompPoly.Bivariate.GuruswamiSudan.Polynomial",
+    "CompPoly.Bivariate.GuruswamiSudan.Root.Common",
+    "CompPoly.Bivariate.GuruswamiSudan.Root.RothRuckenstein.Algorithm",
+    "CompPoly.Univariate.Basic"],
+   "proof":
+   ["CompPoly.Bivariate.GuruswamiSudan.PolynomialCorrectness",
+    "CompPoly.Bivariate.GuruswamiSudan.Root.Common.Lemmas",
+    "CompPoly.Bivariate.GuruswamiSudan.Root.FieldRoots",
+    "CompPoly.Bivariate.GuruswamiSudan.Root.RothRuckenstein.Lemmas",
+    "CompPoly.Bivariate.ToPoly",
+    "CompPoly.Data.Array.Lemmas",
+    "CompPoly.Data.List.Lemmas",
+    "CompPoly.LinearAlgebra.Dense.RowOpsCorrectness",
+    "CompPoly.Univariate.Raw.Core",
+    "CompPoly.Univariate.ToPoly.Core",
+    "CompPoly.Univariate.ToPoly.Equiv",
+    "CompPoly.Univariate.ToPoly.Impl"]},
+  "CompPoly.Bivariate.GuruswamiSudan.Root.RothRuckenstein.Algorithm":
+  {"statement":
+   ["CompPoly.Bivariate.Basic",
+    "CompPoly.Bivariate.GuruswamiSudan.Context",
+    "CompPoly.Bivariate.GuruswamiSudan.Polynomial",
+    "CompPoly.Bivariate.GuruswamiSudan.Root.Common",
+    "CompPoly.Univariate.Basic",
+    "CompPoly.Univariate.Raw.Core"],
+   "proof": []},
+  "CompPoly.Bivariate.GuruswamiSudan.Root.FieldRoots.KoalaBear":
+  {"statement":
+   ["CompPoly.Bivariate.GuruswamiSudan.Context",
+    "CompPoly.Bivariate.GuruswamiSudan.Root.FieldRoots.FiniteField",
+    "CompPoly.Fields.KoalaBear.Basic",
+    "CompPoly.Fields.KoalaBear.Fast",
+    "CompPoly.Fields.Montgomery.Native32Field",
+    "CompPoly.Univariate.BatchEval.Context",
+    "CompPoly.Univariate.NTT.KoalaBear",
+    "CompPoly.Univariate.Raw.Context",
+    "CompPoly.Univariate.Roots.Context",
+    "CompPoly.Univariate.Roots.SmoothSubgroup.Basic"],
+   "proof":
+   ["CompPoly.Univariate.Basic",
+    "CompPoly.Univariate.Roots.RootProduct",
+    "CompPoly.Univariate.Roots.SmoothSubgroup.Correctness"]},
+  "CompPoly.Bivariate.GuruswamiSudan.Root.FieldRoots.FiniteField":
+  {"statement":
+   ["CompPoly.Bivariate.GuruswamiSudan.Context",
+    "CompPoly.Univariate.Basic",
+    "CompPoly.Univariate.Raw.Context",
+    "CompPoly.Univariate.Roots.Backend",
+    "CompPoly.Univariate.Roots.Context",
+    "CompPoly.Univariate.Roots.RootProduct",
+    "CompPoly.Univariate.Roots.SmoothSubgroup.Basic"],
+   "proof": ["CompPoly.Univariate.Roots.Correctness"]},
+  "CompPoly.Bivariate.GuruswamiSudan.Root.FieldRoots":
+  {"statement":
+   ["CompPoly.Bivariate.GuruswamiSudan.Context",
+    "CompPoly.Univariate.Basic",
+    "CompPoly.Univariate.Raw.Core",
+    "CompPoly.Univariate.Roots.Enumeration"],
+   "proof": []},
+  "CompPoly.Bivariate.GuruswamiSudan.Root.Common.Lemmas":
+  {"statement":
+   ["CompPoly.Bivariate.Basic",
+    "CompPoly.Bivariate.GuruswamiSudan.Context",
+    "CompPoly.Bivariate.GuruswamiSudan.Polynomial",
+    "CompPoly.Bivariate.GuruswamiSudan.Root.Common",
+    "CompPoly.Bivariate.GuruswamiSudan.Root.FieldRoots",
+    "CompPoly.Bivariate.ToPoly",
+    "CompPoly.Data.Array.Lemmas",
+    "CompPoly.Univariate.Basic",
+    "CompPoly.Univariate.Raw.Core",
+    "CompPoly.Univariate.ToPoly.Core"],
+   "proof":
+   ["CompPoly.Data.List.Lemmas",
+    "CompPoly.Univariate.ToPoly.Equiv",
+    "CompPoly.Univariate.ToPoly.Impl"]},
+  "CompPoly.Bivariate.GuruswamiSudan.Root.Common":
+  {"statement":
+   ["CompPoly.Bivariate.Basic",
+    "CompPoly.Bivariate.GuruswamiSudan.Context",
+    "CompPoly.Bivariate.GuruswamiSudan.Polynomial",
+    "CompPoly.Bivariate.GuruswamiSudan.Root.FieldRoots",
+    "CompPoly.Univariate.Basic",
+    "CompPoly.Univariate.Raw.Core"],
+   "proof": []},
+  "CompPoly.Bivariate.GuruswamiSudan.Root.Alekhnovich.Lemmas":
+  {"statement":
+   ["CompPoly.Bivariate.Basic",
+    "CompPoly.Bivariate.GuruswamiSudan.Polynomial",
+    "CompPoly.Bivariate.GuruswamiSudan.Root.Alekhnovich.Algorithm",
+    "CompPoly.Bivariate.GuruswamiSudan.Root.Common",
+    "CompPoly.Univariate.Basic",
+    "CompPoly.Univariate.Raw.Core"],
+   "proof": []},
+  "CompPoly.Bivariate.GuruswamiSudan.Root.Alekhnovich.Correctness":
+  {"statement":
+   ["CompPoly.Bivariate.Basic",
+    "CompPoly.Bivariate.GuruswamiSudan.Context",
+    "CompPoly.Bivariate.GuruswamiSudan.Polynomial",
+    "CompPoly.Bivariate.GuruswamiSudan.Root.Alekhnovich.Algorithm",
+    "CompPoly.Bivariate.GuruswamiSudan.Root.Alekhnovich.Lemmas",
+    "CompPoly.Bivariate.GuruswamiSudan.Root.Common",
+    "CompPoly.Bivariate.GuruswamiSudan.Root.ShiftedSubstitution",
+    "CompPoly.Univariate.Basic"],
+   "proof":
+   ["CompPoly.Bivariate.GuruswamiSudan.PolynomialCorrectness",
+    "CompPoly.Bivariate.GuruswamiSudan.Root.Common.Lemmas",
+    "CompPoly.Bivariate.GuruswamiSudan.Root.FieldRoots",
+    "CompPoly.Bivariate.GuruswamiSudan.Root.RothRuckenstein.Lemmas",
+    "CompPoly.Bivariate.GuruswamiSudan.Root.ShiftedSubstitution.Lemmas",
+    "CompPoly.Bivariate.ToPoly",
+    "CompPoly.Data.Array.Lemmas",
+    "CompPoly.Data.List.Lemmas",
+    "CompPoly.Univariate.Raw.Core",
+    "CompPoly.Univariate.ToPoly.Core",
+    "CompPoly.Univariate.ToPoly.Degree",
+    "CompPoly.Univariate.ToPoly.Equiv",
+    "CompPoly.Univariate.ToPoly.Impl"]},
+  "CompPoly.Bivariate.GuruswamiSudan.Root.Alekhnovich.Algorithm":
+  {"statement":
+   ["CompPoly.Bivariate.Basic",
+    "CompPoly.Bivariate.GuruswamiSudan.Context",
+    "CompPoly.Bivariate.GuruswamiSudan.Polynomial",
+    "CompPoly.Bivariate.GuruswamiSudan.Root.Common",
+    "CompPoly.Bivariate.GuruswamiSudan.Root.ShiftedSubstitution",
+    "CompPoly.Data.Array.Lemmas",
+    "CompPoly.Univariate.Basic",
+    "CompPoly.Univariate.Raw.Core"],
+   "proof": []},
+  "CompPoly.Bivariate.GuruswamiSudan.PolynomialCorrectness":
+  {"statement":
+   ["CompPoly.Bivariate.Basic",
+    "CompPoly.Bivariate.Deriv",
+    "CompPoly.Bivariate.GuruswamiSudan.Polynomial",
+    "CompPoly.Bivariate.ToPoly",
+    "CompPoly.LinearAlgebra.Dense.Basic",
+    "CompPoly.Univariate.Basic",
+    "CompPoly.Univariate.Raw.Core"],
+   "proof": ["CompPoly.Data.List.Lemmas", "CompPoly.ToMathlib.Polynomial.BivariateMultiplicity"]},
+  "CompPoly.Bivariate.GuruswamiSudan.Polynomial":
+  {"statement":
+   ["CompPoly.Bivariate.Basic",
+    "CompPoly.Univariate.Basic",
+    "CompPoly.Univariate.Raw.Core",
+    "CompPoly.Univariate.Raw.Ops"],
+   "proof": []},
+  "CompPoly.Bivariate.GuruswamiSudan.Interpolation.WitnessDivisibilityCorrectness":
+  {"statement":
+   ["CompPoly.Bivariate.Basic",
+    "CompPoly.Bivariate.GuruswamiSudan.Context",
+    "CompPoly.Bivariate.GuruswamiSudan.Interpolation.Basic",
+    "CompPoly.Bivariate.GuruswamiSudan.Interpolation.WitnessDivisibility",
+    "CompPoly.Bivariate.GuruswamiSudan.Polynomial",
+    "CompPoly.Univariate.Basic",
+    "CompPoly.Univariate.BatchEval.Context",
+    "CompPoly.Univariate.Context",
+    "CompPoly.Univariate.Deriv",
+    "CompPoly.Univariate.Vanishing"],
+   "proof":
+   ["CompPoly.Bivariate.Deriv",
+    "CompPoly.Bivariate.Factor",
+    "CompPoly.Bivariate.FactorMonic",
+    "CompPoly.Bivariate.GuruswamiSudan.Interpolation.LeeOSullivan.Correctness.Basis",
+    "CompPoly.Bivariate.GuruswamiSudan.Interpolation.LeeOSullivan.Correctness.Combinations",
+    "CompPoly.Bivariate.GuruswamiSudan.Interpolation.LeeOSullivan.Correctness.Common",
+    "CompPoly.Bivariate.GuruswamiSudan.Interpolation.LeeOSullivan.Correctness.Divisibility",
+    "CompPoly.Bivariate.GuruswamiSudan.PolynomialCorrectness",
+    "CompPoly.Univariate.CoefficientInterpolation",
+    "CompPoly.Univariate.DivisionCorrectness",
+    "CompPoly.Univariate.Raw.Core",
+    "CompPoly.Univariate.ToPoly.Core",
+    "CompPoly.Univariate.ToPoly.Equiv",
+    "CompPoly.Univariate.ToPoly.Impl"]},
+  "CompPoly.Bivariate.GuruswamiSudan.Interpolation.WitnessDivisibility":
+  {"statement":
+   ["CompPoly.Bivariate.Basic",
+    "CompPoly.Bivariate.Factor",
+    "CompPoly.Bivariate.GuruswamiSudan.Context",
+    "CompPoly.Univariate.Basic",
+    "CompPoly.Univariate.BatchEval.Context",
+    "CompPoly.Univariate.CoefficientInterpolation",
+    "CompPoly.Univariate.Context",
+    "CompPoly.Univariate.Raw.Core",
+    "CompPoly.Univariate.Vanishing"],
+   "proof": []},
+  "CompPoly.Bivariate.GuruswamiSudan.Interpolation.LeeOSullivan.Correctness.Soundness":
+  {"statement":
+   ["CompPoly.Bivariate.Basic",
+    "CompPoly.Bivariate.GuruswamiSudan.Context",
+    "CompPoly.Bivariate.GuruswamiSudan.Interpolation.LeeOSullivan.Algorithm",
+    "CompPoly.LinearAlgebra.PolynomialMatrix.ShiftedReduction",
+    "CompPoly.Univariate.BatchEval.Context",
+    "CompPoly.Univariate.Vanishing"],
+   "proof":
+   ["CompPoly.Bivariate.CoeffRows",
+    "CompPoly.Bivariate.GuruswamiSudan.Interpolation.Basic",
+    "CompPoly.Bivariate.GuruswamiSudan.Interpolation.Correctness",
+    "CompPoly.Bivariate.GuruswamiSudan.Interpolation.LeeOSullivan.Basic",
+    "CompPoly.Bivariate.GuruswamiSudan.Interpolation.LeeOSullivan.Correctness.Basis",
+    "CompPoly.Bivariate.GuruswamiSudan.Interpolation.LeeOSullivan.Correctness.Common",
+    "CompPoly.Bivariate.GuruswamiSudan.Interpolation.LeeOSullivan.Correctness.Normalization",
+    "CompPoly.Bivariate.GuruswamiSudan.Interpolation.LeeOSullivan.Correctness.Rows",
+    "CompPoly.Bivariate.GuruswamiSudan.Interpolation.LeeOSullivan.Correctness.Selection",
+    "CompPoly.Bivariate.GuruswamiSudan.Polynomial",
+    "CompPoly.LinearAlgebra.PolynomialMatrix.Basic",
+    "CompPoly.LinearAlgebra.PolynomialMatrix.RowSpan",
+    "CompPoly.LinearAlgebra.PolynomialMatrix.Shifted",
+    "CompPoly.Univariate.Basic",
+    "CompPoly.Univariate.CoefficientInterpolation"]},
+  "CompPoly.Bivariate.GuruswamiSudan.Interpolation.LeeOSullivan.Correctness.Selection":
+  {"statement":
+   ["CompPoly.Bivariate.GuruswamiSudan.Interpolation.LeeOSullivan.Algorithm",
+    "CompPoly.LinearAlgebra.PolynomialMatrix.Basic",
+    "CompPoly.LinearAlgebra.PolynomialMatrix.Shifted",
+    "CompPoly.Univariate.Basic"],
+   "proof": []},
+  "CompPoly.Bivariate.GuruswamiSudan.Interpolation.LeeOSullivan.Correctness.Rows":
+  {"statement":
+   ["CompPoly.Bivariate.Basic",
+    "CompPoly.Bivariate.CoeffRows",
+    "CompPoly.Bivariate.GuruswamiSudan.Context",
+    "CompPoly.Bivariate.GuruswamiSudan.Interpolation.LeeOSullivan.Basic",
+    "CompPoly.Bivariate.GuruswamiSudan.Interpolation.LeeOSullivan.Correctness.Combinations",
+    "CompPoly.Bivariate.GuruswamiSudan.Interpolation.LeeOSullivan.Correctness.Common",
+    "CompPoly.Bivariate.GuruswamiSudan.Polynomial",
+    "CompPoly.LinearAlgebra.PolynomialMatrix.Basic",
+    "CompPoly.LinearAlgebra.PolynomialMatrix.RowSpan",
+    "CompPoly.LinearAlgebra.PolynomialMatrix.Shifted",
+    "CompPoly.Univariate.Basic"],
+   "proof":
+   ["CompPoly.Bivariate.FactorMonic",
+    "CompPoly.Bivariate.GuruswamiSudan.Interpolation.Basic",
+    "CompPoly.Bivariate.GuruswamiSudan.Interpolation.LeeOSullivan.Correctness.Basis",
+    "CompPoly.Bivariate.GuruswamiSudan.PolynomialCorrectness",
+    "CompPoly.Bivariate.ToPoly",
+    "CompPoly.LinearAlgebra.PolynomialMatrix.Degree",
+    "CompPoly.LinearAlgebra.PolynomialMatrix.MuldersStorjohannCorrectness.Combinations",
+    "CompPoly.Univariate.Raw.Core",
+    "CompPoly.Univariate.ToPoly.Core",
+    "CompPoly.Univariate.ToPoly.Degree",
+    "CompPoly.Univariate.ToPoly.Impl"]},
+  "CompPoly.Bivariate.GuruswamiSudan.Interpolation.LeeOSullivan.Correctness.Normalization":
+  {"statement":
+   ["CompPoly.Bivariate.Basic",
+    "CompPoly.Bivariate.GuruswamiSudan.Context",
+    "CompPoly.Bivariate.GuruswamiSudan.Interpolation.LeeOSullivan.Algorithm",
+    "CompPoly.Bivariate.GuruswamiSudan.Polynomial"],
+   "proof":
+   ["CompPoly.Bivariate.Deriv",
+    "CompPoly.Bivariate.GuruswamiSudan.Interpolation.Basic",
+    "CompPoly.Bivariate.GuruswamiSudan.Interpolation.Dense.Correctness",
+    "CompPoly.Bivariate.GuruswamiSudan.PolynomialCorrectness",
+    "CompPoly.LinearAlgebra.Dense.Basic"]},
+  "CompPoly.Bivariate.GuruswamiSudan.Interpolation.LeeOSullivan.Correctness.Divisibility":
+  {"statement":
+   ["CompPoly.Bivariate.Basic",
+    "CompPoly.Bivariate.GuruswamiSudan.Context",
+    "CompPoly.Bivariate.GuruswamiSudan.Polynomial",
+    "CompPoly.Univariate.Basic",
+    "CompPoly.Univariate.Raw.Core",
+    "CompPoly.Univariate.Vanishing"],
+   "proof":
+   ["CompPoly.Bivariate.GuruswamiSudan.PolynomialCorrectness",
+    "CompPoly.Bivariate.ToPoly",
+    "CompPoly.Univariate.ToPoly.Core",
+    "CompPoly.Univariate.ToPoly.Equiv",
+    "CompPoly.Univariate.ToPoly.Impl"]},
+  "CompPoly.Bivariate.GuruswamiSudan.Interpolation.LeeOSullivan.Correctness.Completeness":
+  {"statement":
+   ["CompPoly.Bivariate.Basic",
+    "CompPoly.Bivariate.GuruswamiSudan.Context",
+    "CompPoly.Bivariate.GuruswamiSudan.Interpolation.LeeOSullivan.Algorithm",
+    "CompPoly.Bivariate.GuruswamiSudan.Interpolation.LeeOSullivan.Basic",
+    "CompPoly.Bivariate.GuruswamiSudan.Interpolation.LeeOSullivan.Correctness.Combinations",
+    "CompPoly.Bivariate.GuruswamiSudan.Interpolation.LeeOSullivan.Correctness.Common",
+    "CompPoly.LinearAlgebra.PolynomialMatrix.Basic",
+    "CompPoly.LinearAlgebra.PolynomialMatrix.RowSpan",
+    "CompPoly.LinearAlgebra.PolynomialMatrix.Shifted",
+    "CompPoly.LinearAlgebra.PolynomialMatrix.ShiftedReduction",
+    "CompPoly.Univariate.BatchEval.Context",
+    "CompPoly.Univariate.CoefficientInterpolation",
+    "CompPoly.Univariate.Vanishing"],
+   "proof":
+   ["CompPoly.Bivariate.CoeffRows",
+    "CompPoly.Bivariate.Deriv",
+    "CompPoly.Bivariate.GuruswamiSudan.Interpolation.Basic",
+    "CompPoly.Bivariate.GuruswamiSudan.Interpolation.LeeOSullivan.Correctness.Basis",
+    "CompPoly.Bivariate.GuruswamiSudan.Interpolation.LeeOSullivan.Correctness.Divisibility",
+    "CompPoly.Bivariate.GuruswamiSudan.Interpolation.LeeOSullivan.Correctness.Normalization",
+    "CompPoly.Bivariate.GuruswamiSudan.Interpolation.LeeOSullivan.Correctness.Rows",
+    "CompPoly.Bivariate.GuruswamiSudan.Interpolation.LeeOSullivan.Correctness.Selection",
+    "CompPoly.Bivariate.GuruswamiSudan.Interpolation.LeeOSullivan.Correctness.Soundness",
+    "CompPoly.Bivariate.GuruswamiSudan.Polynomial",
+    "CompPoly.Bivariate.GuruswamiSudan.PolynomialCorrectness",
+    "CompPoly.Univariate.Basic",
+    "CompPoly.Univariate.Raw.Core"]},
+  "CompPoly.Bivariate.GuruswamiSudan.Interpolation.LeeOSullivan.Correctness.Common":
+  {"statement":
+   ["CompPoly.Bivariate.Basic",
+    "CompPoly.Bivariate.GuruswamiSudan.Context",
+    "CompPoly.Bivariate.GuruswamiSudan.Interpolation.Basic",
+    "CompPoly.Bivariate.GuruswamiSudan.Interpolation.LeeOSullivan.Basic",
+    "CompPoly.LinearAlgebra.PolynomialMatrix.Basic",
+    "CompPoly.Univariate.Basic",
+    "CompPoly.Univariate.BatchEval.Context",
+    "CompPoly.Univariate.CoefficientInterpolation",
+    "CompPoly.Univariate.Vanishing"],
+   "proof": ["CompPoly.Bivariate.CoeffRows"]},
+  "CompPoly.Bivariate.GuruswamiSudan.Interpolation.LeeOSullivan.Correctness.Combinations":
+  {"statement":
+   ["CompPoly.Bivariate.Basic",
+    "CompPoly.Bivariate.GuruswamiSudan.Context",
+    "CompPoly.Bivariate.GuruswamiSudan.Polynomial",
+    "CompPoly.Univariate.Basic",
+    "CompPoly.Univariate.Raw.Core"],
+   "proof":
+   ["CompPoly.Bivariate.Deriv",
+    "CompPoly.Bivariate.GuruswamiSudan.PolynomialCorrectness",
+    "CompPoly.Bivariate.ToPoly",
+    "CompPoly.Univariate.ToPoly.Core",
+    "CompPoly.Univariate.ToPoly.Degree",
+    "CompPoly.Univariate.ToPoly.Equiv",
+    "CompPoly.Univariate.ToPoly.Impl"]},
+  "CompPoly.Bivariate.GuruswamiSudan.Interpolation.LeeOSullivan.Correctness.Basis":
+  {"statement":
+   ["CompPoly.Bivariate.Basic",
+    "CompPoly.Bivariate.FactorMonic",
+    "CompPoly.Bivariate.GuruswamiSudan.Context",
+    "CompPoly.Bivariate.GuruswamiSudan.Interpolation.LeeOSullivan.Basic",
+    "CompPoly.Bivariate.GuruswamiSudan.Interpolation.LeeOSullivan.Correctness.Common",
+    "CompPoly.Bivariate.GuruswamiSudan.Polynomial",
+    "CompPoly.Univariate.Basic"],
+   "proof":
+   ["CompPoly.Bivariate.GuruswamiSudan.Interpolation.LeeOSullivan.Correctness.Combinations",
+    "CompPoly.Bivariate.GuruswamiSudan.PolynomialCorrectness",
+    "CompPoly.Bivariate.ToPoly",
+    "CompPoly.Univariate.Raw.Core",
+    "CompPoly.Univariate.ToPoly.Core",
+    "CompPoly.Univariate.ToPoly.Degree",
+    "CompPoly.Univariate.ToPoly.Equiv",
+    "CompPoly.Univariate.ToPoly.Impl"]},
+  "CompPoly.Bivariate.GuruswamiSudan.Interpolation.LeeOSullivan.Correctness":
+  {"statement": [], "proof": []},
+  "CompPoly.Bivariate.GuruswamiSudan.Interpolation.LeeOSullivan.Basic":
+  {"statement":
+   ["CompPoly.Bivariate.Basic",
+    "CompPoly.Bivariate.CoeffRows",
+    "CompPoly.Bivariate.FactorMonic",
+    "CompPoly.Bivariate.GuruswamiSudan.Context",
+    "CompPoly.Bivariate.GuruswamiSudan.Interpolation.Basic",
+    "CompPoly.Bivariate.GuruswamiSudan.Polynomial",
+    "CompPoly.LinearAlgebra.PolynomialMatrix.Basic",
+    "CompPoly.Univariate.Basic",
+    "CompPoly.Univariate.BatchEval.Context",
+    "CompPoly.Univariate.CoefficientInterpolation",
+    "CompPoly.Univariate.Vanishing"],
+   "proof": []},
+  "CompPoly.Bivariate.GuruswamiSudan.Interpolation.LeeOSullivan.Algorithm":
+  {"statement":
+   ["CompPoly.Bivariate.Basic",
+    "CompPoly.Bivariate.CoeffRows",
+    "CompPoly.Bivariate.GuruswamiSudan.Context",
+    "CompPoly.Bivariate.GuruswamiSudan.Interpolation.Basic",
+    "CompPoly.Bivariate.GuruswamiSudan.Interpolation.LeeOSullivan.Basic",
+    "CompPoly.LinearAlgebra.PolynomialMatrix.Basic",
+    "CompPoly.LinearAlgebra.PolynomialMatrix.Shifted",
+    "CompPoly.LinearAlgebra.PolynomialMatrix.ShiftedReduction",
+    "CompPoly.Univariate.Basic",
+    "CompPoly.Univariate.BatchEval.Context",
+    "CompPoly.Univariate.CoefficientInterpolation",
+    "CompPoly.Univariate.Vanishing"],
+   "proof": []},
+  "CompPoly.Bivariate.GuruswamiSudan.Interpolation.LeeOSullivan": {"statement": [], "proof": []},
+  "CompPoly.Bivariate.GuruswamiSudan.Interpolation.Hybrid.Correctness":
+  {"statement":
+   ["CompPoly.Bivariate.Basic",
+    "CompPoly.Bivariate.GuruswamiSudan.Context",
+    "CompPoly.Bivariate.GuruswamiSudan.Interpolation.ApproximantBasis.Algorithm",
+    "CompPoly.Bivariate.GuruswamiSudan.Interpolation.Hybrid.Algorithm",
+    "CompPoly.Bivariate.GuruswamiSudan.Interpolation.LeeOSullivan.Algorithm",
+    "CompPoly.LinearAlgebra.PolynomialMatrix.Approximant.ModularEquation.Basic",
+    "CompPoly.LinearAlgebra.PolynomialMatrix.Basic",
+    "CompPoly.LinearAlgebra.PolynomialMatrix.MuldersStorjohannCorrectness.Fast",
+    "CompPoly.LinearAlgebra.PolynomialMatrix.RowSpan",
+    "CompPoly.LinearAlgebra.PolynomialMatrix.Shifted",
+    "CompPoly.LinearAlgebra.PolynomialMatrix.ShiftedReduction",
+    "CompPoly.Univariate.BatchEval.Context",
+    "CompPoly.Univariate.Vanishing"],
+   "proof":
+   ["CompPoly.Bivariate.CoeffRows",
+    "CompPoly.Bivariate.GuruswamiSudan.Interpolation.ApproximantBasis.Correctness",
+    "CompPoly.Bivariate.GuruswamiSudan.Interpolation.Basic",
+    "CompPoly.Bivariate.GuruswamiSudan.Interpolation.LeeOSullivan.Basic",
+    "CompPoly.Bivariate.GuruswamiSudan.Interpolation.LeeOSullivan.Correctness.Common",
+    "CompPoly.Bivariate.GuruswamiSudan.Interpolation.LeeOSullivan.Correctness.Completeness",
+    "CompPoly.Bivariate.GuruswamiSudan.Interpolation.LeeOSullivan.Correctness.Soundness",
+    "CompPoly.LinearAlgebra.PolynomialMatrix.MuldersStorjohann",
+    "CompPoly.LinearAlgebra.PolynomialMatrix.MuldersStorjohannCorrectness.Reduction",
+    "CompPoly.Univariate.Basic",
+    "CompPoly.Univariate.CoefficientInterpolation"]},
+  "CompPoly.Bivariate.GuruswamiSudan.Interpolation.Hybrid.Algorithm":
+  {"statement":
+   ["CompPoly.Bivariate.Basic",
+    "CompPoly.Bivariate.CoeffRows",
+    "CompPoly.Bivariate.GuruswamiSudan.Context",
+    "CompPoly.Bivariate.GuruswamiSudan.Interpolation.ApproximantBasis.Algorithm",
+    "CompPoly.Bivariate.GuruswamiSudan.Interpolation.Basic",
+    "CompPoly.Bivariate.GuruswamiSudan.Interpolation.LeeOSullivan.Algorithm",
+    "CompPoly.Bivariate.GuruswamiSudan.Interpolation.LeeOSullivan.Basic",
+    "CompPoly.LinearAlgebra.PolynomialMatrix.Approximant.ModularEquation.Basic",
+    "CompPoly.LinearAlgebra.PolynomialMatrix.Basic",
+    "CompPoly.LinearAlgebra.PolynomialMatrix.MuldersStorjohann",
+    "CompPoly.LinearAlgebra.PolynomialMatrix.Shifted",
+    "CompPoly.Univariate.Basic",
+    "CompPoly.Univariate.BatchEval.Context",
+    "CompPoly.Univariate.CoefficientInterpolation",
+    "CompPoly.Univariate.Vanishing"],
+   "proof": []},
+  "CompPoly.Bivariate.GuruswamiSudan.Interpolation.Hybrid": {"statement": [], "proof": []},
+  "CompPoly.Bivariate.GuruswamiSudan.Interpolation.Dense.Correctness":
+  {"statement":
+   ["CompPoly.Bivariate.Basic",
+    "CompPoly.Bivariate.GuruswamiSudan.Context",
+    "CompPoly.Bivariate.GuruswamiSudan.Interpolation.Basic",
+    "CompPoly.Bivariate.GuruswamiSudan.Interpolation.Dense.Algorithm",
+    "CompPoly.Bivariate.GuruswamiSudan.Polynomial",
+    "CompPoly.LinearAlgebra.Dense.Basic"],
+   "proof":
+   ["CompPoly.Bivariate.Deriv",
+    "CompPoly.Bivariate.GuruswamiSudan.Interpolation.Correctness",
+    "CompPoly.Bivariate.GuruswamiSudan.PolynomialCorrectness",
+    "CompPoly.LinearAlgebra.Dense.Kernel",
+    "CompPoly.LinearAlgebra.Dense.KernelCorrectness",
+    "CompPoly.LinearAlgebra.Dense.KernelInPlace",
+    "CompPoly.LinearAlgebra.Dense.KernelInPlaceCorrectness",
+    "CompPoly.Univariate.Basic",
+    "CompPoly.Univariate.Raw.Core"]},
+  "CompPoly.Bivariate.GuruswamiSudan.Interpolation.Dense.Algorithm":
+  {"statement":
+   ["CompPoly.Bivariate.Basic",
+    "CompPoly.Bivariate.GuruswamiSudan.Context",
+    "CompPoly.Bivariate.GuruswamiSudan.Interpolation.Basic",
+    "CompPoly.Bivariate.GuruswamiSudan.Polynomial",
+    "CompPoly.LinearAlgebra.Dense.Basic"],
+   "proof": []},
+  "CompPoly.Bivariate.GuruswamiSudan.Interpolation.Correctness":
+  {"statement":
+   ["CompPoly.Bivariate.Basic",
+    "CompPoly.Bivariate.GuruswamiSudan.Context",
+    "CompPoly.Bivariate.GuruswamiSudan.Interpolation.Basic"],
+   "proof":
+   ["CompPoly.Bivariate.Deriv",
+    "CompPoly.Bivariate.FactorMonic",
+    "CompPoly.Bivariate.GuruswamiSudan.Polynomial",
+    "CompPoly.Bivariate.GuruswamiSudan.PolynomialCorrectness",
+    "CompPoly.Bivariate.ToPoly",
+    "CompPoly.Univariate.Basic",
+    "CompPoly.Univariate.ToPoly.Core",
+    "CompPoly.Univariate.ToPoly.Equiv",
+    "CompPoly.Univariate.ToPoly.Impl"]},
+  "CompPoly.Bivariate.GuruswamiSudan.Interpolation.Basic":
+  {"statement":
+   ["CompPoly.Bivariate.Basic",
+    "CompPoly.Bivariate.CoeffRows",
+    "CompPoly.Bivariate.FactorMonic",
+    "CompPoly.Bivariate.GuruswamiSudan.Context",
+    "CompPoly.Bivariate.GuruswamiSudan.Polynomial",
+    "CompPoly.LinearAlgebra.Dense.Basic",
+    "CompPoly.Univariate.Basic"],
+   "proof": []},
+  "CompPoly.Bivariate.GuruswamiSudan.Interpolation.ApproximantBasis.Multiplicity":
+  {"statement":
+   ["CompPoly.Bivariate.Basic",
+    "CompPoly.Bivariate.Deriv",
+    "CompPoly.Bivariate.GuruswamiSudan.Context",
+    "CompPoly.Bivariate.GuruswamiSudan.Polynomial",
+    "CompPoly.Bivariate.ToPoly",
+    "CompPoly.Univariate.Basic",
+    "CompPoly.Univariate.ToPoly.Core",
+    "CompPoly.Univariate.Vanishing"],
+   "proof":
+   ["CompPoly.Bivariate.GuruswamiSudan.PolynomialCorrectness",
+    "CompPoly.Univariate.ToPoly.Equiv",
+    "CompPoly.Univariate.ToPoly.Impl"]},
+  "CompPoly.Bivariate.GuruswamiSudan.Interpolation.ApproximantBasis.ModularData":
+  {"statement":
+   ["CompPoly.Bivariate.CoeffRows",
+    "CompPoly.Bivariate.GuruswamiSudan.Context",
+    "CompPoly.Bivariate.GuruswamiSudan.Interpolation.ApproximantBasis.Basic",
+    "CompPoly.Bivariate.GuruswamiSudan.Interpolation.Basic",
+    "CompPoly.Bivariate.ToPoly",
+    "CompPoly.LinearAlgebra.PolynomialMatrix.Basic",
+    "CompPoly.LinearAlgebra.PolynomialMatrix.Operations",
+    "CompPoly.Univariate.Basic",
+    "CompPoly.Univariate.Context",
+    "CompPoly.Univariate.ToPoly.Core"],
+   "proof":
+   ["CompPoly.Bivariate.Basic",
+    "CompPoly.LinearAlgebra.PolynomialMatrix.Approximant.ModularEquation.Completeness",
+    "CompPoly.LinearAlgebra.PolynomialMatrix.Approximant.PMBasis.XAdicSoundness",
+    "CompPoly.LinearAlgebra.PolynomialMatrix.Shifted",
+    "CompPoly.LinearAlgebra.PolynomialMatrix.StrassenCorrectness",
+    "CompPoly.Univariate.DivisionCorrectness",
+    "CompPoly.Univariate.ToPoly.Equiv",
+    "CompPoly.Univariate.ToPoly.Impl"]},
+  "CompPoly.Bivariate.GuruswamiSudan.Interpolation.ApproximantBasis.Correctness":
+  {"statement":
+   ["CompPoly.Bivariate.Basic",
+    "CompPoly.Bivariate.CoeffRows",
+    "CompPoly.Bivariate.GuruswamiSudan.Context",
+    "CompPoly.Bivariate.GuruswamiSudan.Interpolation.ApproximantBasis.Algorithm",
+    "CompPoly.Bivariate.GuruswamiSudan.Interpolation.ApproximantBasis.Basic",
+    "CompPoly.Bivariate.GuruswamiSudan.Interpolation.Basic",
+    "CompPoly.Bivariate.GuruswamiSudan.Polynomial",
+    "CompPoly.LinearAlgebra.PolynomialMatrix.Approximant.ModularEquation.Basic",
+    "CompPoly.LinearAlgebra.PolynomialMatrix.Basic",
+    "CompPoly.LinearAlgebra.PolynomialMatrix.Operations",
+    "CompPoly.Univariate.Basic",
+    "CompPoly.Univariate.BatchEval.Context",
+    "CompPoly.Univariate.Context",
+    "CompPoly.Univariate.Vanishing"],
+   "proof":
+   ["CompPoly.Bivariate.Deriv",
+    "CompPoly.Bivariate.GuruswamiSudan.Interpolation.ApproximantBasis.ModularData",
+    "CompPoly.Bivariate.GuruswamiSudan.Interpolation.ApproximantBasis.Multiplicity",
+    "CompPoly.Bivariate.GuruswamiSudan.Interpolation.Correctness",
+    "CompPoly.Bivariate.GuruswamiSudan.Interpolation.LeeOSullivan.Algorithm",
+    "CompPoly.Bivariate.GuruswamiSudan.Interpolation.LeeOSullivan.Correctness.Common",
+    "CompPoly.Bivariate.GuruswamiSudan.Interpolation.LeeOSullivan.Correctness.Normalization",
+    "CompPoly.Bivariate.GuruswamiSudan.Interpolation.LeeOSullivan.Correctness.Rows",
+    "CompPoly.Bivariate.GuruswamiSudan.PolynomialCorrectness",
+    "CompPoly.Bivariate.ToPoly",
+    "CompPoly.LinearAlgebra.PolynomialMatrix.Degree",
+    "CompPoly.LinearAlgebra.PolynomialMatrix.RowSelection",
+    "CompPoly.LinearAlgebra.PolynomialMatrix.RowSpan",
+    "CompPoly.LinearAlgebra.PolynomialMatrix.Shifted",
+    "CompPoly.Univariate.CoefficientInterpolation",
+    "CompPoly.Univariate.Raw.Core",
+    "CompPoly.Univariate.ToPoly.Core",
+    "CompPoly.Univariate.ToPoly.Equiv",
+    "CompPoly.Univariate.ToPoly.Impl"]},
+  "CompPoly.Bivariate.GuruswamiSudan.Interpolation.ApproximantBasis.Basic":
+  {"statement":
+   ["CompPoly.Bivariate.GuruswamiSudan.Context",
+    "CompPoly.Bivariate.GuruswamiSudan.Interpolation.Basic",
+    "CompPoly.LinearAlgebra.PolynomialMatrix.Approximant.ModularEquation.Basic",
+    "CompPoly.LinearAlgebra.PolynomialMatrix.Basic",
+    "CompPoly.LinearAlgebra.PolynomialMatrix.Operations",
+    "CompPoly.Univariate.Basic",
+    "CompPoly.Univariate.BatchEval.Context",
+    "CompPoly.Univariate.CoefficientInterpolation",
+    "CompPoly.Univariate.Context",
+    "CompPoly.Univariate.Vanishing"],
+   "proof": []},
+  "CompPoly.Bivariate.GuruswamiSudan.Interpolation.ApproximantBasis.Algorithm":
+  {"statement":
+   ["CompPoly.Bivariate.Basic",
+    "CompPoly.Bivariate.CoeffRows",
+    "CompPoly.Bivariate.GuruswamiSudan.Context",
+    "CompPoly.Bivariate.GuruswamiSudan.Interpolation.ApproximantBasis.Basic",
+    "CompPoly.Bivariate.GuruswamiSudan.Interpolation.Basic",
+    "CompPoly.LinearAlgebra.PolynomialMatrix.Approximant.ModularEquation.Basic",
+    "CompPoly.LinearAlgebra.PolynomialMatrix.Basic",
+    "CompPoly.LinearAlgebra.PolynomialMatrix.Operations",
+    "CompPoly.Univariate.Basic",
+    "CompPoly.Univariate.BatchEval.Context",
+    "CompPoly.Univariate.CoefficientInterpolation",
+    "CompPoly.Univariate.Vanishing"],
+   "proof": []},
+  "CompPoly.Bivariate.GuruswamiSudan.Interpolation.ApproximantBasis":
+  {"statement": [], "proof": []},
+  "CompPoly.Bivariate.GuruswamiSudan.Interpolation": {"statement": [], "proof": []},
+  "CompPoly.Bivariate.GuruswamiSudan.Implementations":
+  {"statement":
+   ["CompPoly.Bivariate.Basic",
+    "CompPoly.Bivariate.GuruswamiSudan.Context",
+    "CompPoly.Bivariate.GuruswamiSudan.Core",
+    "CompPoly.Bivariate.GuruswamiSudan.Executable",
+    "CompPoly.Bivariate.GuruswamiSudan.Filter",
+    "CompPoly.Bivariate.GuruswamiSudan.Interpolation.ApproximantBasis.Correctness",
+    "CompPoly.Bivariate.GuruswamiSudan.Interpolation.Dense.Correctness",
+    "CompPoly.Bivariate.GuruswamiSudan.Interpolation.Hybrid.Correctness",
+    "CompPoly.Bivariate.GuruswamiSudan.Interpolation.LeeOSullivan.Basic",
+    "CompPoly.Bivariate.GuruswamiSudan.Interpolation.LeeOSullivan.Correctness.Completeness",
+    "CompPoly.Bivariate.GuruswamiSudan.Polynomial",
+    "CompPoly.Bivariate.GuruswamiSudan.Root.Alekhnovich.Correctness",
+    "CompPoly.Bivariate.GuruswamiSudan.Root.FieldRoots.KoalaBear",
+    "CompPoly.Bivariate.GuruswamiSudan.Root.RothRuckenstein.Correctness",
+    "CompPoly.Fields.KoalaBear.Basic",
+    "CompPoly.Fields.KoalaBear.Fast",
+    "CompPoly.Fields.Montgomery.Native32Field",
+    "CompPoly.LinearAlgebra.PolynomialMatrix.Approximant.ModularEquation",
+    "CompPoly.LinearAlgebra.PolynomialMatrix.Approximant.ModularEquation.Basic",
+    "CompPoly.LinearAlgebra.PolynomialMatrix.Approximant.PMBasis",
+    "CompPoly.LinearAlgebra.PolynomialMatrix.Approximant.PMBasis.Recursion",
+    "CompPoly.LinearAlgebra.PolynomialMatrix.MuldersStorjohannCorrectness.Fast",
+    "CompPoly.LinearAlgebra.PolynomialMatrix.Operations",
+    "CompPoly.Univariate.Basic",
+    "CompPoly.Univariate.BatchEval.Context",
+    "CompPoly.Univariate.Context",
+    "CompPoly.Univariate.NTT.KoalaBear",
+    "CompPoly.Univariate.NTTFast.FastMulLow",
+    "CompPoly.Univariate.Vanishing"],
+   "proof":
+   ["CompPoly.Bivariate.GuruswamiSudan.CoreCorrectness",
+    "CompPoly.Bivariate.GuruswamiSudan.FilterCorrectness"]},
+  "CompPoly.Bivariate.GuruswamiSudan.FilterCorrectness":
+  {"statement":
+   ["CompPoly.Bivariate.Basic",
+    "CompPoly.Bivariate.GuruswamiSudan.Context",
+    "CompPoly.Bivariate.GuruswamiSudan.Core",
+    "CompPoly.Bivariate.GuruswamiSudan.Filter",
+    "CompPoly.Bivariate.GuruswamiSudan.Polynomial",
+    "CompPoly.Univariate.Basic"],
+   "proof": ["CompPoly.Bivariate.GuruswamiSudan.CoreCorrectness"]},
+  "CompPoly.Bivariate.GuruswamiSudan.Filter":
+  {"statement":
+   ["CompPoly.Bivariate.GuruswamiSudan.Context",
+    "CompPoly.Bivariate.GuruswamiSudan.Core",
+    "CompPoly.Univariate.Basic"],
+   "proof": []},
+  "CompPoly.Bivariate.GuruswamiSudan.Executable":
+  {"statement":
+   ["CompPoly.Bivariate.Basic",
+    "CompPoly.Bivariate.GuruswamiSudan.Context",
+    "CompPoly.Bivariate.GuruswamiSudan.Filter",
+    "CompPoly.Bivariate.GuruswamiSudan.Polynomial",
+    "CompPoly.Univariate.Basic"],
+   "proof": ["CompPoly.Bivariate.GuruswamiSudan.FilterCorrectness"]},
+  "CompPoly.Bivariate.GuruswamiSudan.CoreCorrectness":
+  {"statement":
+   ["CompPoly.Bivariate.Basic",
+    "CompPoly.Bivariate.GuruswamiSudan.Context",
+    "CompPoly.Bivariate.GuruswamiSudan.Core",
+    "CompPoly.Bivariate.GuruswamiSudan.Filter",
+    "CompPoly.Bivariate.GuruswamiSudan.Polynomial",
+    "CompPoly.Univariate.Basic"],
+   "proof":
+   ["CompPoly.Bivariate.Deriv",
+    "CompPoly.Bivariate.GuruswamiSudan.PolynomialCorrectness",
+    "CompPoly.Bivariate.GuruswamiSudan.Root.Common.Lemmas",
+    "CompPoly.Bivariate.ToPoly",
+    "CompPoly.ToMathlib.Polynomial.BivariateDegree",
+    "CompPoly.ToMathlib.Polynomial.BivariateWeightedDegree",
+    "CompPoly.Univariate.ToPoly.Core",
+    "CompPoly.Univariate.ToPoly.Impl"]},
+  "CompPoly.Bivariate.GuruswamiSudan.Core":
+  {"statement":
+   ["CompPoly.Bivariate.Basic",
+    "CompPoly.Bivariate.GuruswamiSudan.Context",
+    "CompPoly.Univariate.Basic"],
+   "proof": []},
+  "CompPoly.Bivariate.GuruswamiSudan.Context":
+  {"statement":
+   ["CompPoly.Bivariate.Basic",
+    "CompPoly.Bivariate.Deriv",
+    "CompPoly.Bivariate.GuruswamiSudan.Polynomial",
+    "CompPoly.LinearAlgebra.Dense.Basic",
+    "CompPoly.LinearAlgebra.Dense.KernelInPlace",
+    "CompPoly.Univariate.Basic"],
+   "proof":
+   ["CompPoly.LinearAlgebra.Dense.Kernel",
+    "CompPoly.LinearAlgebra.Dense.KernelCorrectness",
+    "CompPoly.LinearAlgebra.Dense.KernelInPlaceCorrectness"]},
+  "CompPoly.Bivariate.GuruswamiSudan": {"statement": [], "proof": []},
+  "CompPoly.Bivariate.FactorMonic":
+  {"statement":
+   ["CompPoly.Bivariate.Basic",
+    "CompPoly.Bivariate.Factor",
+    "CompPoly.Univariate.Basic",
+    "CompPoly.Univariate.ToPoly.Core"],
+   "proof":
+   ["CompPoly.Bivariate.ToPoly",
+    "CompPoly.Univariate.DivisionCorrectness",
+    "CompPoly.Univariate.ToPoly.Equiv",
+    "CompPoly.Univariate.ToPoly.Impl"]},
+  "CompPoly.Bivariate.Factor":
+  {"statement":
+   ["CompPoly.Bivariate.Basic",
+    "CompPoly.Bivariate.ToPoly",
+    "CompPoly.Univariate.Basic",
+    "CompPoly.Univariate.Raw.Core",
+    "CompPoly.Univariate.Raw.Ops",
+    "CompPoly.Univariate.ToPoly.Core"],
+   "proof": ["CompPoly.Univariate.ToPoly.Equiv", "CompPoly.Univariate.ToPoly.Impl"]},
+  "CompPoly.Bivariate.Deriv":
+  {"statement":
+   ["CompPoly.Bivariate.Basic",
+    "CompPoly.Bivariate.ToPoly",
+    "CompPoly.ToMathlib.Polynomial.BivariateMultiplicity",
+    "CompPoly.Univariate.Basic",
+    "CompPoly.Univariate.Deriv",
+    "CompPoly.Univariate.Raw.Core"],
+   "proof":
+   ["CompPoly.ToMathlib.Polynomial.BivariateDegree",
+    "CompPoly.Univariate.ToPoly.Core",
+    "CompPoly.Univariate.ToPoly.Equiv",
+    "CompPoly.Univariate.ToPoly.Impl"]},
+  "CompPoly.Bivariate.CoeffRows":
+  {"statement":
+   ["CompPoly.Bivariate.Basic",
+    "CompPoly.LinearAlgebra.PolynomialMatrix.Basic",
+    "CompPoly.LinearAlgebra.PolynomialMatrix.Shifted",
+    "CompPoly.Univariate.Basic"],
+   "proof": ["CompPoly.Univariate.Raw.Core"]},
+  "CompPoly.Bivariate.CMvEquiv":
+  {"statement":
+   ["CompPoly.Bivariate.Basic",
+    "CompPoly.Bivariate.ToPoly",
+    "CompPoly.Multivariate.Basic",
+    "CompPoly.Multivariate.FinSuccEquiv",
+    "CompPoly.Multivariate.Lawful",
+    "CompPoly.Multivariate.MvPolyEquiv.Instances",
+    "CompPoly.Multivariate.Operations"],
+   "proof": ["CompPoly.Multivariate.MvPolyEquiv.Core", "CompPoly.Multivariate.Rename"]},
+  "CompPoly.Bivariate.Bytes":
+  {"statement": ["CompPoly.Bivariate.Basic", "CompPoly.Data.Bytes.Delimited"],
+   "proof":
+   ["CompPoly.Univariate.Basic", "CompPoly.Univariate.Bytes", "CompPoly.Univariate.Raw.Core"]},
+  "CompPoly.Bivariate.Basic":
+  {"statement":
+   ["CompPoly.Univariate.Basic", "CompPoly.Univariate.Raw.Core", "CompPoly.Univariate.Raw.Ops"],
+   "proof": []}},
+ "missing": [],
+ "lean_githash": "611c117bfaf7b7ae1cfcf246ce6fba31e8f509e9",
+ "built":
+ ["CompPoly.Bivariate.Basic",
+  "CompPoly.Bivariate.Bytes",
+  "CompPoly.Bivariate.CMvEquiv",
+  "CompPoly.Bivariate.CoeffRows",
+  "CompPoly.Bivariate.Deriv",
+  "CompPoly.Bivariate.Factor",
+  "CompPoly.Bivariate.FactorMonic",
+  "CompPoly.Bivariate.GuruswamiSudan",
+  "CompPoly.Bivariate.GuruswamiSudan.Context",
+  "CompPoly.Bivariate.GuruswamiSudan.Core",
+  "CompPoly.Bivariate.GuruswamiSudan.CoreCorrectness",
+  "CompPoly.Bivariate.GuruswamiSudan.Executable",
+  "CompPoly.Bivariate.GuruswamiSudan.Filter",
+  "CompPoly.Bivariate.GuruswamiSudan.FilterCorrectness",
+  "CompPoly.Bivariate.GuruswamiSudan.Implementations",
+  "CompPoly.Bivariate.GuruswamiSudan.Interpolation",
+  "CompPoly.Bivariate.GuruswamiSudan.Interpolation.ApproximantBasis",
+  "CompPoly.Bivariate.GuruswamiSudan.Interpolation.ApproximantBasis.Algorithm",
+  "CompPoly.Bivariate.GuruswamiSudan.Interpolation.ApproximantBasis.Basic",
+  "CompPoly.Bivariate.GuruswamiSudan.Interpolation.ApproximantBasis.Correctness",
+  "CompPoly.Bivariate.GuruswamiSudan.Interpolation.ApproximantBasis.ModularData",
+  "CompPoly.Bivariate.GuruswamiSudan.Interpolation.ApproximantBasis.Multiplicity",
+  "CompPoly.Bivariate.GuruswamiSudan.Interpolation.Basic",
+  "CompPoly.Bivariate.GuruswamiSudan.Interpolation.Correctness",
+  "CompPoly.Bivariate.GuruswamiSudan.Interpolation.Dense.Algorithm",
+  "CompPoly.Bivariate.GuruswamiSudan.Interpolation.Dense.Correctness",
+  "CompPoly.Bivariate.GuruswamiSudan.Interpolation.Hybrid",
+  "CompPoly.Bivariate.GuruswamiSudan.Interpolation.Hybrid.Algorithm",
+  "CompPoly.Bivariate.GuruswamiSudan.Interpolation.Hybrid.Correctness",
+  "CompPoly.Bivariate.GuruswamiSudan.Interpolation.LeeOSullivan",
+  "CompPoly.Bivariate.GuruswamiSudan.Interpolation.LeeOSullivan.Algorithm",
+  "CompPoly.Bivariate.GuruswamiSudan.Interpolation.LeeOSullivan.Basic",
+  "CompPoly.Bivariate.GuruswamiSudan.Interpolation.LeeOSullivan.Correctness",
+  "CompPoly.Bivariate.GuruswamiSudan.Interpolation.LeeOSullivan.Correctness.Basis",
+  "CompPoly.Bivariate.GuruswamiSudan.Interpolation.LeeOSullivan.Correctness.Combinations",
+  "CompPoly.Bivariate.GuruswamiSudan.Interpolation.LeeOSullivan.Correctness.Common",
+  "CompPoly.Bivariate.GuruswamiSudan.Interpolation.LeeOSullivan.Correctness.Completeness",
+  "CompPoly.Bivariate.GuruswamiSudan.Interpolation.LeeOSullivan.Correctness.Divisibility",
+  "CompPoly.Bivariate.GuruswamiSudan.Interpolation.LeeOSullivan.Correctness.Normalization",
+  "CompPoly.Bivariate.GuruswamiSudan.Interpolation.LeeOSullivan.Correctness.Rows",
+  "CompPoly.Bivariate.GuruswamiSudan.Interpolation.LeeOSullivan.Correctness.Selection",
+  "CompPoly.Bivariate.GuruswamiSudan.Interpolation.LeeOSullivan.Correctness.Soundness",
+  "CompPoly.Bivariate.GuruswamiSudan.Interpolation.WitnessDivisibility",
+  "CompPoly.Bivariate.GuruswamiSudan.Interpolation.WitnessDivisibilityCorrectness",
+  "CompPoly.Bivariate.GuruswamiSudan.Polynomial",
+  "CompPoly.Bivariate.GuruswamiSudan.PolynomialCorrectness",
+  "CompPoly.Bivariate.GuruswamiSudan.Root.Alekhnovich.Algorithm",
+  "CompPoly.Bivariate.GuruswamiSudan.Root.Alekhnovich.Correctness",
+  "CompPoly.Bivariate.GuruswamiSudan.Root.Alekhnovich.Lemmas",
+  "CompPoly.Bivariate.GuruswamiSudan.Root.Common",
+  "CompPoly.Bivariate.GuruswamiSudan.Root.Common.Lemmas",
+  "CompPoly.Bivariate.GuruswamiSudan.Root.FieldRoots",
+  "CompPoly.Bivariate.GuruswamiSudan.Root.FieldRoots.FiniteField",
+  "CompPoly.Bivariate.GuruswamiSudan.Root.FieldRoots.KoalaBear",
+  "CompPoly.Bivariate.GuruswamiSudan.Root.RothRuckenstein.Algorithm",
+  "CompPoly.Bivariate.GuruswamiSudan.Root.RothRuckenstein.Correctness",
+  "CompPoly.Bivariate.GuruswamiSudan.Root.RothRuckenstein.Lemmas",
+  "CompPoly.Bivariate.GuruswamiSudan.Root.ShiftedSubstitution",
+  "CompPoly.Bivariate.GuruswamiSudan.Root.ShiftedSubstitution.Lemmas",
+  "CompPoly.Bivariate.GuruswamiSudan.Util",
+  "CompPoly.Bivariate.Kronecker",
+  "CompPoly.Bivariate.ToPoly",
+  "CompPoly.Data.Array.Lemmas",
+  "CompPoly.Data.Bytes.Bias",
+  "CompPoly.Data.Bytes.CanonicalNat",
+  "CompPoly.Data.Bytes.Codec",
+  "CompPoly.Data.Bytes.Delimited",
+  "CompPoly.Data.Bytes.LittleEndian",
+  "CompPoly.Data.Bytes.Vector",
+  "CompPoly.Data.Classes.CanonicalNat",
+  "CompPoly.Data.Classes.DCast",
+  "CompPoly.Data.Classes.HasSize",
+  "CompPoly.Data.Classes.LawfulBEq",
+  "CompPoly.Data.Classes.Serialize",
+  "CompPoly.Data.ExtTreeMap.DTreeMap",
+  "CompPoly.Data.ExtTreeMap.ExtDTreeMap",
+  "CompPoly.Data.ExtTreeMap.ExtTreeMap",
+  "CompPoly.Data.Fin.BigOperators",
+  "CompPoly.Data.List.Lemmas",
+  "CompPoly.Data.MvPolynomial.Notation",
+  "CompPoly.Data.Nat.Bitwise",
+  "CompPoly.Data.Option.Lemmas",
+  "CompPoly.Data.Polynomial.Frobenius",
+  "CompPoly.Data.Polynomial.MonomialBasis",
+  "CompPoly.Data.Polynomial.Rabin",
+  "CompPoly.Data.Polynomial.RabinCertificate",
+  "CompPoly.Data.Polynomial.RabinCertificateBinary",
+  "CompPoly.Data.RingTheory.AlgebraTower",
+  "CompPoly.Data.RingTheory.AlgebraTower.Basis",
+  "CompPoly.Data.RingTheory.AlgebraTower.Coordinates",
+  "CompPoly.Data.RingTheory.CanonicalEuclideanDomain",
+  "CompPoly.Data.Vector.Basic",
+  "CompPoly.Fields.BLS12_377",
+  "CompPoly.Fields.BLS12_377.Basic",
+  "CompPoly.Fields.BLS12_377.Fast",
+  "CompPoly.Fields.BLS12_381",
+  "CompPoly.Fields.BLS12_381.Basic",
+  "CompPoly.Fields.BLS12_381.Fast",
+  "CompPoly.Fields.BN254",
+  "CompPoly.Fields.BN254.Basic",
+  "CompPoly.Fields.BN254.Fast",
+  "CompPoly.Fields.BabyBear",
+  "CompPoly.Fields.BabyBear.Basic",
+  "CompPoly.Fields.BabyBear.Ext4",
+  "CompPoly.Fields.BabyBear.Fast",
+  "CompPoly.Fields.Basic",
+  "CompPoly.Fields.Binary.AdditiveNTT.AdditiveNTT",
+  "CompPoly.Fields.Binary.AdditiveNTT.Algorithm",
+  "CompPoly.Fields.Binary.AdditiveNTT.Correctness",
+  "CompPoly.Fields.Binary.AdditiveNTT.Coset",
+  "CompPoly.Fields.Binary.AdditiveNTT.CosetBridge",
+  "CompPoly.Fields.Binary.AdditiveNTT.Domain",
+  "CompPoly.Fields.Binary.AdditiveNTT.Executable",
+  "CompPoly.Fields.Binary.AdditiveNTT.Impl",
+  "CompPoly.Fields.Binary.AdditiveNTT.Intermediate",
+  "CompPoly.Fields.Binary.AdditiveNTT.NovelPolynomialBasis",
+  "CompPoly.Fields.Binary.Aes.Arithmetic",
+  "CompPoly.Fields.Binary.Aes.Basic",
+  "CompPoly.Fields.Binary.Aes.Bytes",
+  "CompPoly.Fields.Binary.Aes.Certificate",
+  "CompPoly.Fields.Binary.Aes.Ghash",
+  "CompPoly.Fields.Binary.BF128Ghash.Arithmetic",
+  "CompPoly.Fields.Binary.BF128Ghash.Basic",
+  "CompPoly.Fields.Binary.BF128Ghash.Bytes",
+  "CompPoly.Fields.Binary.BF128Ghash.Impl",
+  "CompPoly.Fields.Binary.BF128Ghash.Prelude",
+  "CompPoly.Fields.Binary.BF128Ghash.XPowTwoPowGcdCertificate",
+  "CompPoly.Fields.Binary.BF128Ghash.XPowTwoPowModCertificate",
+  "CompPoly.Fields.Binary.BF64",
+  "CompPoly.Fields.Binary.BF64.BaseCertificate",
+  "CompPoly.Fields.Binary.BF64.Basic",
+  "CompPoly.Fields.Binary.BF64.Bytes",
+  "CompPoly.Fields.Binary.BF64.Ext3",
+  "CompPoly.Fields.Binary.BF64.Impl",
+  "CompPoly.Fields.Binary.BF64.Reduce",
+  "CompPoly.Fields.Binary.Common",
+  "CompPoly.Fields.Binary.Common.Arithmetic",
+  "CompPoly.Fields.Binary.Tower.Abstract.Algebra",
+  "CompPoly.Fields.Binary.Tower.Abstract.Basis",
+  "CompPoly.Fields.Binary.Tower.Abstract.Core",
+  "CompPoly.Fields.Binary.Tower.Abstract.Split",
+  "CompPoly.Fields.Binary.Tower.Basic",
+  "CompPoly.Fields.Binary.Tower.Bytes",
+  "CompPoly.Fields.Binary.Tower.Concrete.Algebra",
+  "CompPoly.Fields.Binary.Tower.Concrete.Arithmetic",
+  "CompPoly.Fields.Binary.Tower.Concrete.Basis",
+  "CompPoly.Fields.Binary.Tower.Concrete.BasisCoordinates",
+  "CompPoly.Fields.Binary.Tower.Concrete.CoordinateArithmetic",
+  "CompPoly.Fields.Binary.Tower.Concrete.Coordinates",
+  "CompPoly.Fields.Binary.Tower.Concrete.Core",
+  "CompPoly.Fields.Binary.Tower.Concrete.Field",
+  "CompPoly.Fields.Binary.Tower.Concrete.RelativeCoordinates",
+  "CompPoly.Fields.Binary.Tower.Equiv",
+  "CompPoly.Fields.Binary.Tower.Fast",
+  "CompPoly.Fields.Binary.Tower.Fast.Multilinear",
+  "CompPoly.Fields.Binary.Tower.FastDefs",
+  "CompPoly.Fields.Binary.Tower.Impl",
+  "CompPoly.Fields.Binary.Tower.Prelude",
+  "CompPoly.Fields.Binary.Tower.Support.DefiningPoly",
+  "CompPoly.Fields.Binary.Tower.Support.FinHelpers",
+  "CompPoly.Fields.Binary.Tower.Support.IrreducibilityAndTraceMapProperty",
+  "CompPoly.Fields.Binary.Tower.Support.LinearIndependentFin2",
+  "CompPoly.Fields.Binary.Tower.Support.Preliminaries",
+  "CompPoly.Fields.Binary.Tower.TensorAlgebra",
+  "CompPoly.Fields.Extension",
+  "CompPoly.Fields.Extension.Arithmetic",
+  "CompPoly.Fields.Extension.Binomial",
+  "CompPoly.Fields.Extension.Bridge",
+  "CompPoly.Fields.Extension.Bytes",
+  "CompPoly.Fields.Extension.Cardinality",
+  "CompPoly.Fields.Extension.Defs",
+  "CompPoly.Fields.Extension.Field",
+  "CompPoly.Fields.Goldilocks",
+  "CompPoly.Fields.Goldilocks.Basic",
+  "CompPoly.Fields.Goldilocks.Bytes",
+  "CompPoly.Fields.Goldilocks.Fast",
+  "CompPoly.Fields.Goldilocks.FastDefs",
+  "CompPoly.Fields.Goldilocks.FastReduction",
+  "CompPoly.Fields.Hachi",
+  "CompPoly.Fields.Hachi.Ext4",
+  "CompPoly.Fields.KoalaBear",
+  "CompPoly.Fields.KoalaBear.Basic",
+  "CompPoly.Fields.KoalaBear.Ext4",
+  "CompPoly.Fields.KoalaBear.Ext5",
+  "CompPoly.Fields.KoalaBear.Ext5.QuinticCertData",
+  "CompPoly.Fields.KoalaBear.Ext5.QuinticIrreducible",
+  "CompPoly.Fields.KoalaBear.Ext6",
+  "CompPoly.Fields.KoalaBear.Ext6.GaloisField",
+  "CompPoly.Fields.KoalaBear.Ext6.SexticCertData",
+  "CompPoly.Fields.KoalaBear.Ext6.SexticIrreducible",
+  "CompPoly.Fields.KoalaBear.Fast",
+  "CompPoly.Fields.Mersenne31",
+  "CompPoly.Fields.Mersenne31.Basic",
+  "CompPoly.Fields.Mersenne31.Bytes",
+  "CompPoly.Fields.Mersenne31.Circle",
+  "CompPoly.Fields.Mersenne31.Fast",
+  "CompPoly.Fields.Montgomery.Basic",
+  "CompPoly.Fields.Montgomery.Native32",
+  "CompPoly.Fields.Montgomery.Native32Bytes",
+  "CompPoly.Fields.Montgomery.Native32Field",
+  "CompPoly.Fields.Montgomery.Native64x8",
+  "CompPoly.Fields.Montgomery.Native64x8Bytes",
+  "CompPoly.Fields.Montgomery.Native64x8Defs",
+  "CompPoly.Fields.Montgomery.Native64x8Field",
+  "CompPoly.Fields.Montgomery.Native64x8Inv",
+  "CompPoly.Fields.Montgomery.Native64x8InvDefs",
+  "CompPoly.Fields.Montgomery.Native64x8Mul",
+  "CompPoly.Fields.Montgomery.ScalarFft",
+  "CompPoly.Fields.Pasta",
+  "CompPoly.Fields.Pasta.Basic",
+  "CompPoly.Fields.Pasta.Fast",
+  "CompPoly.Fields.PrattCertificate",
+  "CompPoly.Fields.Secp256k1",
+  "CompPoly.Fields.Secp256k1.Basic",
+  "CompPoly.Fields.Secp256k1.Fast",
+  "CompPoly.LinearAlgebra.Dense",
+  "CompPoly.LinearAlgebra.Dense.Basic",
+  "CompPoly.LinearAlgebra.Dense.Kernel",
+  "CompPoly.LinearAlgebra.Dense.KernelBasisCorrectness",
+  "CompPoly.LinearAlgebra.Dense.KernelCorrectness",
+  "CompPoly.LinearAlgebra.Dense.KernelInPlace",
+  "CompPoly.LinearAlgebra.Dense.KernelInPlaceCorrectness",
+  "CompPoly.LinearAlgebra.Dense.RowArray",
+  "CompPoly.LinearAlgebra.Dense.RowArrayCorrectness",
+  "CompPoly.LinearAlgebra.Dense.RowOps",
+  "CompPoly.LinearAlgebra.Dense.RowOpsCorrectness",
+  "CompPoly.LinearAlgebra.Dense.RrefSemantics",
+  "CompPoly.LinearAlgebra.Dense.RrefShape",
+  "CompPoly.LinearAlgebra.PolynomialMatrix",
+  "CompPoly.LinearAlgebra.PolynomialMatrix.Approximant",
+  "CompPoly.LinearAlgebra.PolynomialMatrix.Approximant.Basic",
+  "CompPoly.LinearAlgebra.PolynomialMatrix.Approximant.Correctness",
+  "CompPoly.LinearAlgebra.PolynomialMatrix.Approximant.ModularEquation",
+  "CompPoly.LinearAlgebra.PolynomialMatrix.Approximant.ModularEquation.Basic",
+  "CompPoly.LinearAlgebra.PolynomialMatrix.Approximant.ModularEquation.Completeness",
+  "CompPoly.LinearAlgebra.PolynomialMatrix.Approximant.PMBasis",
+  "CompPoly.LinearAlgebra.PolynomialMatrix.Approximant.PMBasis.Correctness",
+  "CompPoly.LinearAlgebra.PolynomialMatrix.Approximant.PMBasis.KernelLeaf",
+  "CompPoly.LinearAlgebra.PolynomialMatrix.Approximant.PMBasis.KernelLeafCompleteness",
+  "CompPoly.LinearAlgebra.PolynomialMatrix.Approximant.PMBasis.KernelLeafSoundness",
+  "CompPoly.LinearAlgebra.PolynomialMatrix.Approximant.PMBasis.KernelLeafSpan",
+  "CompPoly.LinearAlgebra.PolynomialMatrix.Approximant.PMBasis.Recursion",
+  "CompPoly.LinearAlgebra.PolynomialMatrix.Approximant.PMBasis.XAdicSoundness",
+  "CompPoly.LinearAlgebra.PolynomialMatrix.Approximant.PartialLinearization",
+  "CompPoly.LinearAlgebra.PolynomialMatrix.Basic",
+  "CompPoly.LinearAlgebra.PolynomialMatrix.Degree",
+  "CompPoly.LinearAlgebra.PolynomialMatrix.MuldersStorjohann",
+  "CompPoly.LinearAlgebra.PolynomialMatrix.MuldersStorjohannCorrectness",
+  "CompPoly.LinearAlgebra.PolynomialMatrix.MuldersStorjohannCorrectness.Combinations",
+  "CompPoly.LinearAlgebra.PolynomialMatrix.MuldersStorjohannCorrectness.Conflict",
+  "CompPoly.LinearAlgebra.PolynomialMatrix.MuldersStorjohannCorrectness.Fast",
+  "CompPoly.LinearAlgebra.PolynomialMatrix.MuldersStorjohannCorrectness.Leading",
+  "CompPoly.LinearAlgebra.PolynomialMatrix.MuldersStorjohannCorrectness.MatrixRows",
+  "CompPoly.LinearAlgebra.PolynomialMatrix.MuldersStorjohannCorrectness.Measure",
+  "CompPoly.LinearAlgebra.PolynomialMatrix.MuldersStorjohannCorrectness.Minimal",
+  "CompPoly.LinearAlgebra.PolynomialMatrix.MuldersStorjohannCorrectness.Reduction",
+  "CompPoly.LinearAlgebra.PolynomialMatrix.MuldersStorjohannCorrectness.RowOps",
+  "CompPoly.LinearAlgebra.PolynomialMatrix.MuldersStorjohannCorrectness.WeakPopovMinimal",
+  "CompPoly.LinearAlgebra.PolynomialMatrix.Operations",
+  "CompPoly.LinearAlgebra.PolynomialMatrix.RowSelection",
+  "CompPoly.LinearAlgebra.PolynomialMatrix.RowSpan",
+  "CompPoly.LinearAlgebra.PolynomialMatrix.Shifted",
+  "CompPoly.LinearAlgebra.PolynomialMatrix.ShiftedReduction",
+  "CompPoly.LinearAlgebra.PolynomialMatrix.StrassenCorrectness",
+  "CompPoly.LinearAlgebra.TensorProduct.Basis",
+  "CompPoly.Multilinear.Basic",
+  "CompPoly.Multilinear.Bytes",
+  "CompPoly.Multilinear.Equiv",
+  "CompPoly.Multilinear.ManyEval",
+  "CompPoly.Multilinear.ManyEval.Basic",
+  "CompPoly.Multilinear.ManyEval.Correctness",
+  "CompPoly.Multilinear.TransformEquiv",
+  "CompPoly.Multilinear.Unique",
+  "CompPoly.Multivariate.Basic",
+  "CompPoly.Multivariate.Bytes",
+  "CompPoly.Multivariate.CMvMonomial",
+  "CompPoly.Multivariate.Eval",
+  "CompPoly.Multivariate.FinSuccEquiv",
+  "CompPoly.Multivariate.HornerLemmas",
+  "CompPoly.Multivariate.Lawful",
+  "CompPoly.Multivariate.MvPolyEquiv",
+  "CompPoly.Multivariate.MvPolyEquiv.Core",
+  "CompPoly.Multivariate.MvPolyEquiv.Eval",
+  "CompPoly.Multivariate.MvPolyEquiv.Instances",
+  "CompPoly.Multivariate.Operations",
+  "CompPoly.Multivariate.PartialEval",
+  "CompPoly.Multivariate.Rename",
+  "CompPoly.Multivariate.Restrict",
+  "CompPoly.Multivariate.Unlawful",
+  "CompPoly.Multivariate.VarsDegrees",
+  "CompPoly.ToMathlib.Finsupp.Fin",
+  "CompPoly.ToMathlib.MvPolynomial.Equiv",
+  "CompPoly.ToMathlib.MvPolynomial.Nullstellensatz",
+  "CompPoly.ToMathlib.Order.WithBot",
+  "CompPoly.ToMathlib.Polynomial.BivariateDegree",
+  "CompPoly.ToMathlib.Polynomial.BivariateMultiplicity",
+  "CompPoly.ToMathlib.Polynomial.BivariateWeightedDegree",
+  "CompPoly.ToMathlib.Polynomial.CosetLagrange",
+  "CompPoly.ToMathlib.Polynomial.Irreducible",
+  "CompPoly.ToMathlib.Polynomial.Roots",
+  "CompPoly.Univariate.Barycentric",
+  "CompPoly.Univariate.Basic",
+  "CompPoly.Univariate.BatchEval",
+  "CompPoly.Univariate.BatchEval.Context",
+  "CompPoly.Univariate.BatchEval.Correctness",
+  "CompPoly.Univariate.BatchEval.Interpolation",
+  "CompPoly.Univariate.BatchEval.Naive",
+  "CompPoly.Univariate.BatchEval.SubproductTree",
+  "CompPoly.Univariate.Bytes",
+  "CompPoly.Univariate.CMvEquiv",
+  "CompPoly.Univariate.CoefficientInterpolation",
+  "CompPoly.Univariate.Context",
+  "CompPoly.Univariate.Deriv",
+  "CompPoly.Univariate.DivisionCorrectness",
+  "CompPoly.Univariate.EuclideanAlgorithm",
+  "CompPoly.Univariate.Lagrange",
+  "CompPoly.Univariate.LagrangeArray",
+  "CompPoly.Univariate.Linear",
+  "CompPoly.Univariate.ManyEval",
+  "CompPoly.Univariate.ManyEval.Basic",
+  "CompPoly.Univariate.ManyEval.Correctness",
+  "CompPoly.Univariate.Modular",
+  "CompPoly.Univariate.NTT.BabyBear",
+  "CompPoly.Univariate.NTT.Barycentric",
+  "CompPoly.Univariate.NTT.Coset",
+  "CompPoly.Univariate.NTT.Domain",
+  "CompPoly.Univariate.NTT.Evaluation",
+  "CompPoly.Univariate.NTT.FastMul",
+  "CompPoly.Univariate.NTT.FastMulLow",
+  "CompPoly.Univariate.NTT.Forward",
+  "CompPoly.Univariate.NTT.Interpolation",
+  "CompPoly.Univariate.NTT.Inverse",
+  "CompPoly.Univariate.NTT.Kernel",
+  "CompPoly.Univariate.NTT.KoalaBear",
+  "CompPoly.Univariate.NTT.Transform",
+  "CompPoly.Univariate.NTTFast.Correctness",
+  "CompPoly.Univariate.NTTFast.Correctness.Basic",
+  "CompPoly.Univariate.NTTFast.Correctness.DIF",
+  "CompPoly.Univariate.NTTFast.Correctness.Pair",
+  "CompPoly.Univariate.NTTFast.Correctness.Pipeline",
+  "CompPoly.Univariate.NTTFast.Correctness.Radix4DIF",
+  "CompPoly.Univariate.NTTFast.Correctness.Radix4DIT",
+  "CompPoly.Univariate.NTTFast.Coset",
+  "CompPoly.Univariate.NTTFast.Evaluation",
+  "CompPoly.Univariate.NTTFast.FastMul",
+  "CompPoly.Univariate.NTTFast.FastMulLow",
+  "CompPoly.Univariate.NTTFast.Interpolation",
+  "CompPoly.Univariate.NTTFast.Plan",
+  "CompPoly.Univariate.Quotient.Core",
+  "CompPoly.Univariate.Quotient.Equiv",
+  "CompPoly.Univariate.Raw",
+  "CompPoly.Univariate.Raw.Context",
+  "CompPoly.Univariate.Raw.Core",
+  "CompPoly.Univariate.Raw.Division",
+  "CompPoly.Univariate.Raw.Modular",
+  "CompPoly.Univariate.Raw.Ops",
+  "CompPoly.Univariate.Raw.Proofs",
+  "CompPoly.Univariate.Raw.Size",
+  "CompPoly.Univariate.ReedSolomon",
+  "CompPoly.Univariate.ReedSolomon.GaoCorrectness",
+  "CompPoly.Univariate.ReedSolomon.GaoDecoder",
+  "CompPoly.Univariate.ReedSolomon.GaoNTT",
+  "CompPoly.Univariate.ReedSolomon.NTTEncode",
+  "CompPoly.Univariate.Roots",
+  "CompPoly.Univariate.Roots.Backend",
+  "CompPoly.Univariate.Roots.Context",
+  "CompPoly.Univariate.Roots.Correctness",
+  "CompPoly.Univariate.Roots.Enumeration",
+  "CompPoly.Univariate.Roots.Extraction",
+  "CompPoly.Univariate.Roots.LasVegas",
+  "CompPoly.Univariate.Roots.LasVegas.Basic",
+  "CompPoly.Univariate.Roots.LasVegas.Correctness",
+  "CompPoly.Univariate.Roots.LasVegas.Correctness.Common",
+  "CompPoly.Univariate.Roots.LasVegas.Correctness.EvenTrace",
+  "CompPoly.Univariate.Roots.LasVegas.Correctness.Loop",
+  "CompPoly.Univariate.Roots.LasVegas.Correctness.Odd",
+  "CompPoly.Univariate.Roots.LasVegas.OddBucket",
+  "CompPoly.Univariate.Roots.LasVegas.Probability",
+  "CompPoly.Univariate.Roots.LasVegas.Probability.Basic",
+  "CompPoly.Univariate.Roots.LasVegas.Probability.EvenTrace",
+  "CompPoly.Univariate.Roots.LasVegas.Probability.OddBuckets",
+  "CompPoly.Univariate.Roots.LasVegas.Probability.OddTrial",
+  "CompPoly.Univariate.Roots.LasVegas.Probability.Recursive",
+  "CompPoly.Univariate.Roots.LasVegas.Probability.Repeated",
+  "CompPoly.Univariate.Roots.LasVegas.Probability.Uniform",
+  "CompPoly.Univariate.Roots.RootProduct",
+  "CompPoly.Univariate.Roots.Shoup",
+  "CompPoly.Univariate.Roots.Shoup.Basic",
+  "CompPoly.Univariate.Roots.Shoup.Correctness",
+  "CompPoly.Univariate.Roots.Shoup.FrobeniusLinear",
+  "CompPoly.Univariate.Roots.SmoothSubgroup",
+  "CompPoly.Univariate.Roots.SmoothSubgroup.Basic",
+  "CompPoly.Univariate.Roots.SmoothSubgroup.Correctness",
+  "CompPoly.Univariate.Roots.Splitter",
+  "CompPoly.Univariate.ToPoly",
+  "CompPoly.Univariate.ToPoly.Core",
+  "CompPoly.Univariate.ToPoly.Degree",
+  "CompPoly.Univariate.ToPoly.Equiv",
+  "CompPoly.Univariate.ToPoly.Impl",
+  "CompPoly.Univariate.ToPoly.RingHom",
+  "CompPoly.Univariate.Vanishing"]}

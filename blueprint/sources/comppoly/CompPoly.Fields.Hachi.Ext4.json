@@ -1,0 +1,25 @@
+{
+ "schema": "trough-ledger/v1",
+ "library": "CompPoly",
+ "repo": "Verified-zkEVM/CompPoly",
+ "rev": "afb9b1363984a70f10e24bd597f6ff40ebc8afbb",
+ "module": "CompPoly.Fields.Hachi.Ext4",
+ "file": "CompPoly/Fields/Hachi/Ext4.lean",
+ "public": [
+  {"name": "Hachi.ext4Params", "kind": "def", "line": 46},
+  {"name": "Hachi.ext4Params_d", "kind": "theorem", "line": 55},
+  {"name": "Hachi.ext4Params_W", "kind": "theorem", "line": 56},
+  {"name": "Hachi.ext4Params_q", "kind": "theorem", "line": 57},
+  {"name": "Hachi.ext4Params_poly_irreducible", "kind": "theorem", "line": 60},
+  {"name": "Hachi.Ext4", "kind": "abbrev", "line": 77},
+  {"name": "Hachi.ext4Gen", "kind": "def", "line": 80},
+  {"name": "Hachi.ext4Gen_eq_gen", "kind": "theorem", "line": 90},
+  {"name": "Hachi.toQuot_ext4Gen", "kind": "theorem", "line": 93},
+  {"name": "Hachi.ext4Gen_pow_four", "kind": "theorem", "line": 97},
+  {"name": "Hachi.aeval_ext4Gen", "kind": "theorem", "line": 101},
+  {"name": "Hachi.card_ext4", "kind": "theorem", "line": 104}
+ ],
+ "private": [],
+ "missing": [],
+ "unread": "Unnamed instances, the names an `alias ⟨…⟩` command gives, and the names Lean generates for a declaration (constructors, recursors, derived instances) are not read from the source, so they are not listed."
+}

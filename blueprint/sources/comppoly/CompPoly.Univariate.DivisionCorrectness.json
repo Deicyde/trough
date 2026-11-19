@@ -1,0 +1,23 @@
+{
+ "schema": "trough-ledger/v1",
+ "library": "CompPoly",
+ "repo": "Verified-zkEVM/CompPoly",
+ "rev": "afb9b1363984a70f10e24bd597f6ff40ebc8afbb",
+ "module": "CompPoly.Univariate.DivisionCorrectness",
+ "file": "CompPoly/Univariate/DivisionCorrectness.lean",
+ "public": [
+  {"name": "CompPoly.CPolynomial.divByMonic_toPoly_eq_divByMonic", "kind": "theorem", "line": 488},
+  {"name": "CompPoly.CPolynomial.modByMonic_toPoly_eq_modByMonic", "kind": "theorem", "line": 494},
+  {"name": "CompPoly.CPolynomial.modByMonic_add_mul_divByMonic", "kind": "theorem", "line": 506},
+  {"name": "CompPoly.CPolynomial.leadingCoeff_inv_smul_monic", "kind": "theorem", "line": 524},
+  {"name": "CompPoly.CPolynomial.div_toPoly_eq_divByMonic", "kind": "theorem", "line": 530},
+  {"name": "CompPoly.CPolynomial.mod_toPoly_eq_modByMonic", "kind": "theorem", "line": 538},
+  {"name": "CompPoly.CPolynomial.div_toPoly_eq_div", "kind": "theorem", "line": 546},
+  {"name": "CompPoly.CPolynomial.mod_toPoly_eq_smul_mod", "kind": "theorem", "line": 554},
+  {"name": "CompPoly.CPolynomial.exactDiv_toPoly_iff", "kind": "theorem", "line": 564},
+  {"name": "CompPoly.CPolynomial.modByMonicByReversal_eq_modByMonic", "kind": "theorem", "line": 737}
+ ],
+ "private": [],
+ "missing": [],
+ "unread": "Unnamed instances, the names an `alias ⟨…⟩` command gives, and the names Lean generates for a declaration (constructors, recursors, derived instances) are not read from the source, so they are not listed."
+}

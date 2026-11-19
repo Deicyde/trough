@@ -1,0 +1,25 @@
+{
+ "schema": "trough-ledger/v1",
+ "library": "CompPoly",
+ "repo": "Verified-zkEVM/CompPoly",
+ "rev": "afb9b1363984a70f10e24bd597f6ff40ebc8afbb",
+ "module": "CompPoly.Bivariate.Factor",
+ "file": "CompPoly/Bivariate/Factor.lean",
+ "public": [
+  {"name": "CompPoly.CBivariate.evalYPoly", "kind": "def", "line": 40},
+  {"name": "CompPoly.CBivariate.isLinearYFactor", "kind": "def", "line": 46},
+  {"name": "CompPoly.CBivariate.evalYPoly_zero", "kind": "theorem", "line": 51},
+  {"name": "CompPoly.CBivariate.evalYPoly_add", "kind": "theorem", "line": 60},
+  {"name": "CompPoly.CBivariate.isLinearYFactor_iff", "kind": "theorem", "line": 71},
+  {"name": "CompPoly.CBivariate.evalYPoly_toPoly", "kind": "theorem", "line": 78},
+  {"name": "CompPoly.CBivariate.divByLinearY", "kind": "def", "line": 99},
+  {"name": "CompPoly.CBivariate.divByLinearY_const", "kind": "theorem", "line": 115},
+  {"name": "CompPoly.CBivariate.divByLinearY_zero", "kind": "theorem", "line": 227},
+  {"name": "CompPoly.CBivariate.divByLinearY_spec", "kind": "theorem", "line": 518},
+  {"name": "CompPoly.CBivariate.divByLinearY_rem_eq_eval", "kind": "theorem", "line": 563},
+  {"name": "CompPoly.CBivariate.divByLinearY_exact", "kind": "theorem", "line": 579}
+ ],
+ "private": [],
+ "missing": [],
+ "unread": "Unnamed instances, the names an `alias ⟨…⟩` command gives, and the names Lean generates for a declaration (constructors, recursors, derived instances) are not read from the source, so they are not listed."
+}

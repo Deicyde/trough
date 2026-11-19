@@ -1,0 +1,30 @@
+{
+ "schema": "trough-ledger/v1",
+ "library": "CompPoly",
+ "repo": "Verified-zkEVM/CompPoly",
+ "rev": "afb9b1363984a70f10e24bd597f6ff40ebc8afbb",
+ "module": "CompPoly.Data.RingTheory.AlgebraTower",
+ "file": "CompPoly/Data/RingTheory/AlgebraTower.lean",
+ "public": [
+  {"name": "AlgebraTower", "kind": "class", "line": 32},
+  {"name": "AlgebraTower.ofNatStep", "kind": "def", "line": 57},
+  {"name": "AlgebraTower.ofNatStep_algebraMap_succ_right", "kind": "theorem", "line": 70},
+  {"name": "AlgebraTower.ofNatStep_algebraMap_succ", "kind": "theorem", "line": 78},
+  {"name": "AlgebraTower.algebraMap_self", "kind": "lemma", "line": 95},
+  {"name": "AlgebraTower.algebraMap_self_apply", "kind": "lemma", "line": 100},
+  {"name": "AlgebraTower.toAlgebra", "kind": "abbrev", "line": 105},
+  {"name": "AlgebraTower.toIsScalarTower", "kind": "instance", "line": 109},
+  {"name": "AlgebraTowerEquiv", "kind": "structure", "line": 130},
+  {"name": "AlgebraTowerEquiv.commutesRight'", "kind": "lemma", "line": 138},
+  {"name": "AlgebraTowerEquiv.symm", "kind": "def", "line": 149},
+  {"name": "AlgebraTowerEquiv.algebraMapRightUp", "kind": "def", "line": 153},
+  {"name": "AlgebraTowerEquiv.algebraMapLeftUp", "kind": "def", "line": 159},
+  {"name": "AlgebraTowerEquiv.toAlgebraOverLeft", "kind": "abbrev", "line": 165},
+  {"name": "AlgebraTowerEquiv.toAlgebraOverRight", "kind": "abbrev", "line": 169},
+  {"name": "AlgebraTowerEquiv.toAlgEquivOverLeft", "kind": "def", "line": 173},
+  {"name": "AlgebraTowerEquiv.toAlgEquivOverRight", "kind": "def", "line": 196}
+ ],
+ "private": [],
+ "missing": [],
+ "unread": "Unnamed instances, the names an `alias ⟨…⟩` command gives, and the names Lean generates for a declaration (constructors, recursors, derived instances) are not read from the source, so they are not listed."
+}

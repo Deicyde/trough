@@ -1,0 +1,25 @@
+{
+ "schema": "trough-ledger/v1",
+ "library": "CompPoly",
+ "repo": "Verified-zkEVM/CompPoly",
+ "rev": "afb9b1363984a70f10e24bd597f6ff40ebc8afbb",
+ "module": "CompPoly.Fields.KoalaBear.Ext4",
+ "file": "CompPoly/Fields/KoalaBear/Ext4.lean",
+ "public": [
+  {"name": "KoalaBear.ext4Params", "kind": "def", "line": 48},
+  {"name": "KoalaBear.ext4Params_d", "kind": "theorem", "line": 57},
+  {"name": "KoalaBear.ext4Params_W", "kind": "theorem", "line": 58},
+  {"name": "KoalaBear.ext4Params_q", "kind": "theorem", "line": 59},
+  {"name": "KoalaBear.ext4Params_poly_irreducible", "kind": "theorem", "line": 62},
+  {"name": "KoalaBear.Ext4", "kind": "abbrev", "line": 79},
+  {"name": "KoalaBear.ext4Gen", "kind": "def", "line": 82},
+  {"name": "KoalaBear.ext4Gen_eq_gen", "kind": "theorem", "line": 92},
+  {"name": "KoalaBear.toQuot_ext4Gen", "kind": "theorem", "line": 95},
+  {"name": "KoalaBear.ext4Gen_pow_four", "kind": "theorem", "line": 99},
+  {"name": "KoalaBear.aeval_ext4Gen", "kind": "theorem", "line": 103},
+  {"name": "KoalaBear.card_ext4", "kind": "theorem", "line": 106}
+ ],
+ "private": [],
+ "missing": [],
+ "unread": "Unnamed instances, the names an `alias ⟨…⟩` command gives, and the names Lean generates for a declaration (constructors, recursors, derived instances) are not read from the source, so they are not listed."
+}

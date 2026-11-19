@@ -1,0 +1,24 @@
+{
+ "schema": "trough-ledger/v1",
+ "library": "CompPoly",
+ "repo": "Verified-zkEVM/CompPoly",
+ "rev": "afb9b1363984a70f10e24bd597f6ff40ebc8afbb",
+ "module": "CompPoly.Fields.KoalaBear.Ext5",
+ "file": "CompPoly/Fields/KoalaBear/Ext5.lean",
+ "public": [
+  {"name": "KoalaBear.ext5Params", "kind": "def", "line": 37},
+  {"name": "KoalaBear.ext5Params_d", "kind": "theorem", "line": 46},
+  {"name": "KoalaBear.ext5Params_q", "kind": "theorem", "line": 47},
+  {"name": "KoalaBear.ext5Params_poly", "kind": "theorem", "line": 50},
+  {"name": "KoalaBear.Ext5", "kind": "abbrev", "line": 73},
+  {"name": "KoalaBear.ext5Gen", "kind": "def", "line": 76},
+  {"name": "KoalaBear.ext5Gen_eq_gen", "kind": "theorem", "line": 84},
+  {"name": "KoalaBear.toQuot_ext5Gen", "kind": "theorem", "line": 87},
+  {"name": "KoalaBear.aeval_ext5Gen", "kind": "theorem", "line": 90},
+  {"name": "KoalaBear.ext5Gen_pow_five", "kind": "theorem", "line": 93},
+  {"name": "KoalaBear.card_ext5", "kind": "theorem", "line": 99}
+ ],
+ "private": [],
+ "missing": [],
+ "unread": "Unnamed instances, the names an `alias ⟨…⟩` command gives, and the names Lean generates for a declaration (constructors, recursors, derived instances) are not read from the source, so they are not listed."
+}

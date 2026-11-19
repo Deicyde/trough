@@ -1,0 +1,22 @@
+{
+ "schema": "trough-ledger/v1",
+ "library": "CompPoly",
+ "repo": "Verified-zkEVM/CompPoly",
+ "rev": "afb9b1363984a70f10e24bd597f6ff40ebc8afbb",
+ "module": "CompPoly.Fields.Montgomery.Native32Bytes",
+ "file": "CompPoly/Fields/Montgomery/Native32Bytes.lean",
+ "public": [
+  {"name": "Montgomery.Native32.FastField.toNat_eq_val_toField", "kind": "theorem", "line": 31},
+  {"name": "Montgomery.Native32.FastField.toNat_ofField", "kind": "theorem", "line": 35},
+  {"name": "Montgomery.Native32.FastField.ofField_cast_toNat", "kind": "theorem", "line": 38},
+  {"name": "Montgomery.Native32.FastField.canonicalNat_bound", "kind": "theorem", "line": 47},
+  {"name": "Montgomery.Native32.FastField.canonicalNat_toNat", "kind": "theorem", "line": 49},
+  {"name": "Montgomery.Native32.FastField.canonicalNat_ofNat", "kind": "theorem", "line": 51},
+  {"name": "Montgomery.Native32.FastField.byteCodec_width", "kind": "theorem", "line": 54},
+  {"name": "Montgomery.Native32.FastField.toBytes_ofField", "kind": "theorem", "line": 58},
+  {"name": "Montgomery.Native32.FastField.toBytes_eq_toBytes_toField", "kind": "theorem", "line": 64}
+ ],
+ "private": [],
+ "missing": [],
+ "unread": "Unnamed instances, the names an `alias ⟨…⟩` command gives, and the names Lean generates for a declaration (constructors, recursors, derived instances) are not read from the source, so they are not listed."
+}

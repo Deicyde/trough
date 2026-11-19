@@ -1,0 +1,22 @@
+{
+ "schema": "trough-ledger/v1",
+ "library": "CompPoly",
+ "repo": "Verified-zkEVM/CompPoly",
+ "rev": "afb9b1363984a70f10e24bd597f6ff40ebc8afbb",
+ "module": "CompPoly.Univariate.Roots.RootProduct",
+ "file": "CompPoly/Univariate/Roots/RootProduct.lean",
+ "public": [
+  {"name": "CompPoly.CPolynomial.Raw.Roots.FiniteField.finiteFieldRootProductWith", "kind": "def", "line": 35},
+  {"name": "CompPoly.CPolynomial.Raw.Roots.FiniteField.finiteFieldRootProduct", "kind": "def", "line": 46},
+  {"name": "CompPoly.CPolynomial.Roots.FiniteField.finiteFieldRootProductWith", "kind": "def", "line": 63},
+  {"name": "CompPoly.CPolynomial.Roots.FiniteField.finiteFieldRootProduct", "kind": "def", "line": 69},
+  {"name": "CompPoly.CPolynomial.Roots.FiniteField.finiteFieldRootProductWith_toPoly_eq_normalize_gcd", "kind": "theorem", "line": 153},
+  {"name": "CompPoly.CPolynomial.Roots.FiniteField.finiteFieldRootProductWith_dvd_frobenius_of_context", "kind": "theorem", "line": 489},
+  {"name": "CompPoly.CPolynomial.Roots.FiniteField.monicNormalize_ne_zero_of_ne_zero", "kind": "theorem", "line": 584},
+  {"name": "CompPoly.CPolynomial.Roots.FiniteField.gcdMonic_ne_zero_of_left", "kind": "theorem", "line": 603},
+  {"name": "CompPoly.CPolynomial.Roots.FiniteField.finiteFieldRootProductWith_ne_zero_of_ne_zero", "kind": "theorem", "line": 621}
+ ],
+ "private": [],
+ "missing": [],
+ "unread": "Unnamed instances, the names an `alias ⟨…⟩` command gives, and the names Lean generates for a declaration (constructors, recursors, derived instances) are not read from the source, so they are not listed."
+}

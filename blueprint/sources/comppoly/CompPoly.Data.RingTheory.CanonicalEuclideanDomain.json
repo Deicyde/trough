@@ -1,0 +1,31 @@
+{
+ "schema": "trough-ledger/v1",
+ "library": "CompPoly",
+ "repo": "Verified-zkEVM/CompPoly",
+ "rev": "afb9b1363984a70f10e24bd597f6ff40ebc8afbb",
+ "module": "CompPoly.Data.RingTheory.CanonicalEuclideanDomain",
+ "file": "CompPoly/Data/RingTheory/CanonicalEuclideanDomain.lean",
+ "public": [
+  {"name": "CanonicalEuclideanDomain", "kind": "class", "line": 96},
+  {"name": "Int.instCanonicalEuclideanDomainInt", "kind": "instance", "line": 109},
+  {"name": "Polynomial.instCanonicalEuclideanDomainPoly", "kind": "instance", "line": 200},
+  {"name": "Field.mod_eq_zero", "kind": "lemma", "line": 250},
+  {"name": "Field.instCanonicalEuclideanDomainField", "kind": "instance", "line": 255},
+  {"name": "CanonicalEuclideanDomain.div_eq_of_canonical_eq_mul_add", "kind": "theorem", "line": 290},
+  {"name": "CanonicalEuclideanDomain.div_eq_and_mod_eq_iff", "kind": "theorem", "line": 317},
+  {"name": "CanonicalEuclideanDomain.add_mul_div_right", "kind": "theorem", "line": 349},
+  {"name": "CanonicalEuclideanDomain.add_mul_mod_right", "kind": "theorem", "line": 370},
+  {"name": "CanonicalEuclideanDomain.add_mul_mod_left", "kind": "theorem", "line": 388},
+  {"name": "CanonicalEuclideanDomain.mod_eq_of_eq_add_mul", "kind": "theorem", "line": 394},
+  {"name": "CanonicalEuclideanDomain.mul_mod_eq_mul_mod_left", "kind": "theorem", "line": 402},
+  {"name": "CanonicalEuclideanDomain.mul_mod_eq_zero_of_mod_dvd", "kind": "theorem", "line": 412},
+  {"name": "CanonicalEuclideanDomain.add_mod_eq_add_mod_left", "kind": "theorem", "line": 421},
+  {"name": "CanonicalEuclideanDomain.add_mod_eq", "kind": "theorem", "line": 428},
+  {"name": "CanonicalEuclideanDomain.mul_mod_eq", "kind": "theorem", "line": 434},
+  {"name": "CanonicalEuclideanDomain.mod_mod_eq_mod", "kind": "theorem", "line": 442},
+  {"name": "CanonicalEuclideanDomain.dvd_sub_mod", "kind": "theorem", "line": 449}
+ ],
+ "private": [],
+ "missing": [],
+ "unread": "Unnamed instances, the names an `alias ⟨…⟩` command gives, and the names Lean generates for a declaration (constructors, recursors, derived instances) are not read from the source, so they are not listed."
+}

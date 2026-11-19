@@ -1,0 +1,28 @@
+{
+ "schema": "trough-ledger/v1",
+ "library": "CompPoly",
+ "repo": "Verified-zkEVM/CompPoly",
+ "rev": "afb9b1363984a70f10e24bd597f6ff40ebc8afbb",
+ "module": "CompPoly.Data.Polynomial.Frobenius",
+ "file": "CompPoly/Data/Polynomial/Frobenius.lean",
+ "public": [
+  {"name": "instExpCharOfAlgebra", "kind": "theorem", "line": 61},
+  {"name": "Polynomial.prod_X_sub_C_eq_X_pow_card_sub_X", "kind": "theorem", "line": 84},
+  {"name": "Polynomial.prod_X_sub_C_eq_X_pow_card_sub_X_in_L", "kind": "theorem", "line": 138},
+  {"name": "Polynomial.prod_poly_sub_C_eq_poly_pow_card_sub_poly_in_L", "kind": "theorem", "line": 161},
+  {"name": "Polynomial.frobenius_identity_in_ground_field", "kind": "theorem", "line": 192},
+  {"name": "Polynomial.frobenius_identity_in_algebra", "kind": "theorem", "line": 208},
+  {"name": "Polynomial.linear_map_of_comp_to_linear_map_of_eval", "kind": "theorem", "line": 229},
+  {"name": "Polynomial.aeval_pow_card_eq_aeval_pow_card", "kind": "theorem", "line": 257},
+  {"name": "Polynomial.aeval_pow_card_pow_eq_aeval_pow_card_pow", "kind": "theorem", "line": 287},
+  {"name": "Polynomial.X_pow_sub_one_dvd_X_pow_sub_one_of_dvd", "kind": "theorem", "line": 315},
+  {"name": "Polynomial.X_pow_card_pow_dvd_X_pow_card_pow_of_dvd", "kind": "theorem", "line": 326},
+  {"name": "Polynomial.irreducible_dvd_X_pow_card_pow_sub_X", "kind": "theorem", "line": 362},
+  {"name": "Polynomial.degree_dvd_of_irreducible_dvd_X_pow_card_pow_sub_X", "kind": "theorem", "line": 410},
+  {"name": "Polynomial.irreducible_dvd_X_pow_sub_X_iff_natDegree_dvd", "kind": "lemma", "line": 489},
+  {"name": "Polynomial.irreducible_dvd_X_pow_add_X_iff_natDegree_dvd", "kind": "lemma", "line": 512}
+ ],
+ "private": [],
+ "missing": [],
+ "unread": "Unnamed instances, the names an `alias ⟨…⟩` command gives, and the names Lean generates for a declaration (constructors, recursors, derived instances) are not read from the source, so they are not listed."
+}

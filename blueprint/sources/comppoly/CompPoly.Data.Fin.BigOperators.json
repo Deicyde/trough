@@ -1,0 +1,29 @@
+{
+ "schema": "trough-ledger/v1",
+ "library": "CompPoly",
+ "repo": "Verified-zkEVM/CompPoly",
+ "rev": "afb9b1363984a70f10e24bd597f6ff40ebc8afbb",
+ "module": "CompPoly.Data.Fin.BigOperators",
+ "file": "CompPoly/Data/Fin/BigOperators.lean",
+ "public": [
+  {"name": "mul_two_add_bit_lt_two_pow", "kind": "theorem", "line": 21},
+  {"name": "div_two_pow_lt_two_pow", "kind": "theorem", "line": 44},
+  {"name": "lt_two_pow_of_lt_two_pow_exp_le", "kind": "lemma", "line": 57},
+  {"name": "Fin.val_add_one'", "kind": "lemma", "line": 65},
+  {"name": "Fin.cast_val_eq_val", "kind": "theorem", "line": 72},
+  {"name": "Fin.val_sub_one", "kind": "lemma", "line": 77},
+  {"name": "Fin.lt_iff_le_pred", "kind": "lemma", "line": 80},
+  {"name": "Fin.le_iff_lt_succ", "kind": "lemma", "line": 90},
+  {"name": "Fin.lt_succ'", "kind": "lemma", "line": 100},
+  {"name": "Fin.le_succ", "kind": "lemma", "line": 105},
+  {"name": "Fin.succRecOnSameFinType", "kind": "def", "line": 114},
+  {"name": "Fin.predRecOnSameFinType", "kind": "def", "line": 143},
+  {"name": "Fin.sum_univ_split_even_add_odd", "kind": "theorem", "line": 178},
+  {"name": "Fin.sum_univ_pow_two_even_add_odd", "kind": "theorem", "line": 227},
+  {"name": "sum_Icc_split", "kind": "theorem", "line": 237},
+  {"name": "equivFinFunSplitLast", "kind": "def", "line": 280}
+ ],
+ "private": [],
+ "missing": [],
+ "unread": "Unnamed instances, the names an `alias ⟨…⟩` command gives, and the names Lean generates for a declaration (constructors, recursors, derived instances) are not read from the source, so they are not listed."
+}

@@ -1,0 +1,24 @@
+{
+ "schema": "trough-ledger/v1",
+ "library": "CompPoly",
+ "repo": "Verified-zkEVM/CompPoly",
+ "rev": "afb9b1363984a70f10e24bd597f6ff40ebc8afbb",
+ "module": "CompPoly.Fields.KoalaBear.Ext6.SexticCertData",
+ "file": "CompPoly/Fields/KoalaBear/Ext6/SexticCertData.lean",
+ "public": [
+  {"name": "KoalaBear.SexticCert.traceSteps", "kind": "def", "line": 40},
+  {"name": "KoalaBear.SexticCert.cop3Steps", "kind": "def", "line": 303},
+  {"name": "KoalaBear.SexticCert.cop3Rp", "kind": "def", "line": 427},
+  {"name": "KoalaBear.SexticCert.cop3W", "kind": "def", "line": 430},
+  {"name": "KoalaBear.SexticCert.cop3U", "kind": "def", "line": 433},
+  {"name": "KoalaBear.SexticCert.cop3V", "kind": "def", "line": 436},
+  {"name": "KoalaBear.SexticCert.cop2Steps", "kind": "def", "line": 441},
+  {"name": "KoalaBear.SexticCert.cop2Rp", "kind": "def", "line": 519},
+  {"name": "KoalaBear.SexticCert.cop2W", "kind": "def", "line": 522},
+  {"name": "KoalaBear.SexticCert.cop2U", "kind": "def", "line": 525},
+  {"name": "KoalaBear.SexticCert.cop2V", "kind": "def", "line": 528}
+ ],
+ "private": [],
+ "missing": [],
+ "unread": "Unnamed instances, the names an `alias ⟨…⟩` command gives, and the names Lean generates for a declaration (constructors, recursors, derived instances) are not read from the source, so they are not listed."
+}

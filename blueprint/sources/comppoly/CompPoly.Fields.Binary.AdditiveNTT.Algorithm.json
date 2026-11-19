@@ -1,0 +1,25 @@
+{
+ "schema": "trough-ledger/v1",
+ "library": "CompPoly",
+ "repo": "Verified-zkEVM/CompPoly",
+ "rev": "afb9b1363984a70f10e24bd597f6ff40ebc8afbb",
+ "module": "CompPoly.Fields.Binary.AdditiveNTT.Algorithm",
+ "file": "CompPoly/Fields/Binary/AdditiveNTT/Algorithm.lean",
+ "public": [
+  {"name": "AdditiveNTT.evaluationPointω", "kind": "def", "line": 45},
+  {"name": "AdditiveNTT.twiddleFactor", "kind": "def", "line": 60},
+  {"name": "AdditiveNTT.evaluationPointω_eq_twiddleFactor_of_div_2", "kind": "lemma", "line": 75},
+  {"name": "AdditiveNTT.eval_point_ω_eq_next_twiddleFactor_comp_qmap", "kind": "lemma", "line": 127},
+  {"name": "AdditiveNTT.tileCoeffs", "kind": "def", "line": 191},
+  {"name": "AdditiveNTT.NTTStage", "kind": "def", "line": 198},
+  {"name": "AdditiveNTT.additiveNTT", "kind": "def", "line": 275},
+  {"name": "AdditiveNTT.coeffsBySuffix", "kind": "def", "line": 285},
+  {"name": "AdditiveNTT.base_coeffsBySuffix", "kind": "lemma", "line": 298},
+  {"name": "AdditiveNTT.evenRefinement_eq_novel_poly_of_0_leading_suffix", "kind": "theorem", "line": 311},
+  {"name": "AdditiveNTT.oddRefinement_eq_novel_poly_of_1_leading_suffix", "kind": "theorem", "line": 367},
+  {"name": "AdditiveNTT.additiveNTTInvariant", "kind": "def", "line": 472}
+ ],
+ "private": [],
+ "missing": [],
+ "unread": "Unnamed instances, the names an `alias ⟨…⟩` command gives, and the names Lean generates for a declaration (constructors, recursors, derived instances) are not read from the source, so they are not listed."
+}

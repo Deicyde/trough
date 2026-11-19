@@ -1,0 +1,18 @@
+{
+ "schema": "trough-ledger/v1",
+ "library": "CompPoly",
+ "repo": "Verified-zkEVM/CompPoly",
+ "rev": "afb9b1363984a70f10e24bd597f6ff40ebc8afbb",
+ "module": "CompPoly.Fields.Binary.AdditiveNTT.Impl",
+ "file": "CompPoly/Fields/Binary/AdditiveNTT/Impl.lean",
+ "public": [
+  {"name": "AdditiveNTT.computableBasisExplicit", "kind": "def", "line": 37},
+  {"name": "AdditiveNTT.computableBasisExplicit_eq_multilinearBasis", "kind": "theorem", "line": 46},
+  {"name": "AdditiveNTT.hβ_lin_indep_concrete", "kind": "theorem", "line": 63},
+  {"name": "AdditiveNTT.BTF₃", "kind": "abbrev", "line": 71},
+  {"name": "AdditiveNTT.testNTTBTF₃", "kind": "def", "line": 87}
+ ],
+ "private": [],
+ "missing": [],
+ "unread": "Unnamed instances, the names an `alias ⟨…⟩` command gives, and the names Lean generates for a declaration (constructors, recursors, derived instances) are not read from the source, so they are not listed."
+}

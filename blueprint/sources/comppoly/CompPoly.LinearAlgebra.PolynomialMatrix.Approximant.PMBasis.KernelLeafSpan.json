@@ -1,0 +1,22 @@
+{
+ "schema": "trough-ledger/v1",
+ "library": "CompPoly",
+ "repo": "Verified-zkEVM/CompPoly",
+ "rev": "afb9b1363984a70f10e24bd597f6ff40ebc8afbb",
+ "module": "CompPoly.LinearAlgebra.PolynomialMatrix.Approximant.PMBasis.KernelLeafSpan",
+ "file": "CompPoly/LinearAlgebra/PolynomialMatrix/Approximant/PMBasis/KernelLeafSpan.lean",
+ "public": [
+  {"name": "CompPoly.PolynomialMatrix.Approximant.rowIsZero_eq_zeroRow", "kind": "theorem", "line": 127},
+  {"name": "CompPoly.PolynomialMatrix.Approximant.size_pos_of_mem_matrixRows", "kind": "theorem", "line": 180},
+  {"name": "CompPoly.PolynomialMatrix.Approximant.wellFormed_of_sizes", "kind": "theorem", "line": 189},
+  {"name": "CompPoly.PolynomialMatrix.Approximant.eq_empty_of_mem_rowSpan_empty", "kind": "theorem", "line": 718},
+  {"name": "CompPoly.PolynomialMatrix.Approximant.insertKernelLeaf_foldl_pivotInv", "kind": "theorem", "line": 774},
+  {"name": "CompPoly.PolynomialMatrix.Approximant.reduceKernelLeafRowsByPivots_rowSpan_superset", "kind": "theorem", "line": 1002},
+  {"name": "CompPoly.PolynomialMatrix.Approximant.reduceKernelLeafRowsByPivots_rows", "kind": "theorem", "line": 1030},
+  {"name": "CompPoly.PolynomialMatrix.Approximant.rowIsZero_empty", "kind": "theorem", "line": 1097},
+  {"name": "CompPoly.PolynomialMatrix.Approximant.reduceKernelLeafRowsIncremental_rowSpan_superset", "kind": "theorem", "line": 1200}
+ ],
+ "private": [],
+ "missing": [],
+ "unread": "Unnamed instances, the names an `alias ⟨…⟩` command gives, and the names Lean generates for a declaration (constructors, recursors, derived instances) are not read from the source, so they are not listed."
+}

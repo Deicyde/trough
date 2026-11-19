@@ -1,0 +1,27 @@
+{
+ "schema": "trough-ledger/v1",
+ "library": "CompPoly",
+ "repo": "Verified-zkEVM/CompPoly",
+ "rev": "afb9b1363984a70f10e24bd597f6ff40ebc8afbb",
+ "module": "CompPoly.Multilinear.Unique",
+ "file": "CompPoly/Multilinear/Unique.lean",
+ "public": [
+  {"name": "CompPoly.CMlPolynomialEval.vertex", "kind": "def", "line": 35},
+  {"name": "CompPoly.CMlPolynomialEval.exists_vertex_get_eq", "kind": "theorem", "line": 39},
+  {"name": "CompPoly.CMlPolynomialEval.lagrangeBasis_vertex", "kind": "theorem", "line": 65},
+  {"name": "CompPoly.CMlPolynomialEval.eval_vertex", "kind": "theorem", "line": 80},
+  {"name": "CompPoly.CMlPolynomialEval.ext_of_eval_vertex", "kind": "theorem", "line": 89},
+  {"name": "CompPoly.CMlPolynomial.monomialBasis_vertex", "kind": "theorem", "line": 100},
+  {"name": "CompPoly.CMlPolynomial.eval_vertex", "kind": "theorem", "line": 123},
+  {"name": "CompPoly.CMlPolynomial.eval_lagrangeToMono_vertex", "kind": "theorem", "line": 131},
+  {"name": "CompPoly.CMlPolynomial.ext_of_eval_vertex", "kind": "theorem", "line": 137},
+  {"name": "CompPoly.CMlPolynomial.eval_toMvPolynomial", "kind": "theorem", "line": 144},
+  {"name": "CompPoly.CMlPolynomial.degreeOf_toMvPolynomial_le_one", "kind": "theorem", "line": 154},
+  {"name": "CompPoly.CMlPolynomial.toMvPolynomial_eq_of_eval_vertex", "kind": "theorem", "line": 163},
+  {"name": "CompPoly.CMlPolynomialEval.eval_toMvPolynomial_vertex", "kind": "theorem", "line": 178},
+  {"name": "CompPoly.CMlPolynomialEval.toMvPolynomial_eq_of_eval_vertex", "kind": "theorem", "line": 186}
+ ],
+ "private": [],
+ "missing": [],
+ "unread": "Unnamed instances, the names an `alias ⟨…⟩` command gives, and the names Lean generates for a declaration (constructors, recursors, derived instances) are not read from the source, so they are not listed."
+}

@@ -1,0 +1,25 @@
+{
+ "schema": "trough-ledger/v1",
+ "library": "CompPoly",
+ "repo": "Verified-zkEVM/CompPoly",
+ "rev": "afb9b1363984a70f10e24bd597f6ff40ebc8afbb",
+ "module": "CompPoly.Fields.KoalaBear.Ext5.QuinticIrreducible",
+ "file": "CompPoly/Fields/KoalaBear/Ext5/QuinticIrreducible.lean",
+ "public": [
+  {"name": "KoalaBear.quinticPoly", "kind": "def", "line": 43},
+  {"name": "KoalaBear.quinticL", "kind": "def", "line": 46},
+  {"name": "KoalaBear.toPoly_quinticL", "kind": "theorem", "line": 57},
+  {"name": "KoalaBear.quinticPoly_natDegree", "kind": "theorem", "line": 63},
+  {"name": "KoalaBear.quinticPoly_ne_zero", "kind": "theorem", "line": 67},
+  {"name": "KoalaBear.quintic_trace_chain", "kind": "theorem", "line": 83},
+  {"name": "KoalaBear.quintic_trace_exp", "kind": "theorem", "line": 88},
+  {"name": "KoalaBear.quintic_frob_chain", "kind": "theorem", "line": 92},
+  {"name": "KoalaBear.quintic_frob_exp", "kind": "theorem", "line": 97},
+  {"name": "KoalaBear.quintic_w_check", "kind": "theorem", "line": 100},
+  {"name": "KoalaBear.quintic_bezout_check", "kind": "theorem", "line": 104},
+  {"name": "KoalaBear.quinticPoly_irreducible", "kind": "theorem", "line": 111}
+ ],
+ "private": [],
+ "missing": [],
+ "unread": "Unnamed instances, the names an `alias ⟨…⟩` command gives, and the names Lean generates for a declaration (constructors, recursors, derived instances) are not read from the source, so they are not listed."
+}

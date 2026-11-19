@@ -1,0 +1,20 @@
+{
+ "schema": "trough-ledger/v1",
+ "library": "CompPoly",
+ "repo": "Verified-zkEVM/CompPoly",
+ "rev": "afb9b1363984a70f10e24bd597f6ff40ebc8afbb",
+ "module": "CompPoly.Fields.Binary.BF64.BaseCertificate",
+ "file": "CompPoly/Fields/Binary/BF64/BaseCertificate.lean",
+ "public": [
+  {"name": "BF64.BaseCert.modulus", "kind": "def", "line": 47},
+  {"name": "BF64.BaseCert.traceSteps", "kind": "def", "line": 50},
+  {"name": "BF64.BaseCert.cop32Steps", "kind": "def", "line": 119},
+  {"name": "BF64.BaseCert.cop32Rp", "kind": "def", "line": 154},
+  {"name": "BF64.BaseCert.cop32W", "kind": "def", "line": 157},
+  {"name": "BF64.BaseCert.cop32U", "kind": "def", "line": 160},
+  {"name": "BF64.BaseCert.cop32V", "kind": "def", "line": 163}
+ ],
+ "private": [],
+ "missing": [],
+ "unread": "Unnamed instances, the names an `alias ⟨…⟩` command gives, and the names Lean generates for a declaration (constructors, recursors, derived instances) are not read from the source, so they are not listed."
+}

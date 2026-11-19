@@ -1,0 +1,19 @@
+{
+ "schema": "trough-ledger/v1",
+ "library": "CompPoly",
+ "repo": "Verified-zkEVM/CompPoly",
+ "rev": "afb9b1363984a70f10e24bd597f6ff40ebc8afbb",
+ "module": "CompPoly.Univariate.NTT.Evaluation",
+ "file": "CompPoly/Univariate/NTT/Evaluation.lean",
+ "public": [
+  {"name": "CompPoly.CPolynomial.NTT.evalOnDomain", "kind": "def", "line": 29},
+  {"name": "CompPoly.CPolynomial.NTT.evalOnDomain_eq_evalBatch", "kind": "theorem", "line": 33},
+  {"name": "CompPoly.CPolynomial.NTT.Forward.forwardSpec_eval_node_eq", "kind": "theorem", "line": 46},
+  {"name": "CompPoly.CPolynomial.NTT.Forward.forwardSpec_eq_evalOnDomain", "kind": "theorem", "line": 68},
+  {"name": "CompPoly.CPolynomial.NTT.Forward.forwardImpl_eval_node_eq", "kind": "theorem", "line": 78},
+  {"name": "CompPoly.CPolynomial.NTT.Forward.forwardImpl_eq_evalOnDomain", "kind": "theorem", "line": 86}
+ ],
+ "private": [],
+ "missing": [],
+ "unread": "Unnamed instances, the names an `alias ⟨…⟩` command gives, and the names Lean generates for a declaration (constructors, recursors, derived instances) are not read from the source, so they are not listed."
+}

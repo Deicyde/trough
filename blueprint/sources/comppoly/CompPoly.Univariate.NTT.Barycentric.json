@@ -1,0 +1,20 @@
+{
+ "schema": "trough-ledger/v1",
+ "library": "CompPoly",
+ "repo": "Verified-zkEVM/CompPoly",
+ "rev": "afb9b1363984a70f10e24bd597f6ff40ebc8afbb",
+ "module": "CompPoly.Univariate.NTT.Barycentric",
+ "file": "CompPoly/Univariate/NTT/Barycentric.lean",
+ "public": [
+  {"name": "CompPoly.CPolynomial.NTT.Domain.node_injective", "kind": "theorem", "line": 43},
+  {"name": "CompPoly.CPolynomial.NTT.Domain.node_pow_n", "kind": "theorem", "line": 47},
+  {"name": "CompPoly.CPolynomial.NTT.Domain.nodal_eq_X_pow_sub_one", "kind": "theorem", "line": 52},
+  {"name": "CompPoly.CPolynomial.NTT.Domain.nodalWeight_eq", "kind": "theorem", "line": 68},
+  {"name": "CompPoly.CPolynomial.NTT.Domain.barycentric", "kind": "def", "line": 82},
+  {"name": "CompPoly.CPolynomial.NTT.Domain.barycentric_nodes", "kind": "theorem", "line": 95},
+  {"name": "CompPoly.CPolynomial.NTT.Domain.barycentric_eval_eq_interpolatePow_eval", "kind": "theorem", "line": 100}
+ ],
+ "private": [],
+ "missing": [],
+ "unread": "Unnamed instances, the names an `alias ⟨…⟩` command gives, and the names Lean generates for a declaration (constructors, recursors, derived instances) are not read from the source, so they are not listed."
+}

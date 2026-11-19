@@ -1,0 +1,17 @@
+{
+ "schema": "trough-ledger/v1",
+ "library": "CompPoly",
+ "repo": "Verified-zkEVM/CompPoly",
+ "rev": "afb9b1363984a70f10e24bd597f6ff40ebc8afbb",
+ "module": "CompPoly.Bivariate.GuruswamiSudan.Interpolation.LeeOSullivan.Correctness.Completeness",
+ "file": "CompPoly/Bivariate/GuruswamiSudan/Interpolation/LeeOSullivan/Correctness/Completeness.lean",
+ "public": [
+  {"name": "CompPoly.GuruswamiSudan.LeeOSullivan.leeOSullivanPositiveInterpolate_complete_of_row", "kind": "theorem", "line": 30},
+  {"name": "CompPoly.GuruswamiSudan.LeeOSullivan.leeOSullivanPositiveInterpolate_complete_of_span", "kind": "theorem", "line": 123},
+  {"name": "CompPoly.GuruswamiSudan.LeeOSullivan.leeOSullivanInterpolate_complete", "kind": "theorem", "line": 379},
+  {"name": "CompPoly.GuruswamiSudan.LeeOSullivan.leeOSullivanInterpContext", "kind": "def", "line": 423}
+ ],
+ "private": [],
+ "missing": [],
+ "unread": "Unnamed instances, the names an `alias ⟨…⟩` command gives, and the names Lean generates for a declaration (constructors, recursors, derived instances) are not read from the source, so they are not listed."
+}

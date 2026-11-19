@@ -1,0 +1,33 @@
+{
+ "schema": "trough-ledger/v1",
+ "library": "CompPoly",
+ "repo": "Verified-zkEVM/CompPoly",
+ "rev": "afb9b1363984a70f10e24bd597f6ff40ebc8afbb",
+ "module": "CompPoly.Bivariate.GuruswamiSudan.Interpolation.ApproximantBasis.ModularData",
+ "file": "CompPoly/Bivariate/GuruswamiSudan/Interpolation/ApproximantBasis/ModularData.lean",
+ "public": [
+  {"name": "CompPoly.GuruswamiSudan.ApproximantBasis.ofFn_rowGet", "kind": "theorem", "line": 95},
+  {"name": "CompPoly.GuruswamiSudan.ApproximantBasis.ofFn_size", "kind": "theorem", "line": 107},
+  {"name": "CompPoly.GuruswamiSudan.ApproximantBasis.ofFn_matrixWidth", "kind": "theorem", "line": 113},
+  {"name": "CompPoly.GuruswamiSudan.ApproximantBasis.modByMonicWith_toPoly", "kind": "theorem", "line": 128},
+  {"name": "CompPoly.GuruswamiSudan.ApproximantBasis.dvd_modByMonicWith_sub", "kind": "theorem", "line": 143},
+  {"name": "CompPoly.GuruswamiSudan.ApproximantBasis.modByMonicWith_eq_zero_iff_dvd", "kind": "theorem", "line": 153},
+  {"name": "CompPoly.GuruswamiSudan.ApproximantBasis.gsModuli_eq", "kind": "theorem", "line": 208},
+  {"name": "CompPoly.GuruswamiSudan.ApproximantBasis.gsModuli_size", "kind": "theorem", "line": 230},
+  {"name": "CompPoly.GuruswamiSudan.ApproximantBasis.gsModuli_getD", "kind": "theorem", "line": 237},
+  {"name": "CompPoly.GuruswamiSudan.ApproximantBasis.gsRelationColumn_size", "kind": "theorem", "line": 411},
+  {"name": "CompPoly.GuruswamiSudan.ApproximantBasis.gsRelationColumn_getD_of_lt", "kind": "theorem", "line": 422},
+  {"name": "CompPoly.GuruswamiSudan.ApproximantBasis.gsRelationColumn_getD_congr", "kind": "theorem", "line": 435},
+  {"name": "CompPoly.GuruswamiSudan.ApproximantBasis.gsModuli_getD_one", "kind": "theorem", "line": 454},
+  {"name": "CompPoly.GuruswamiSudan.ApproximantBasis.gsRelationMatrixWithModuli_entry", "kind": "theorem", "line": 465},
+  {"name": "CompPoly.GuruswamiSudan.ApproximantBasis.gsRelationMatrixWithModuli_size", "kind": "theorem", "line": 479},
+  {"name": "CompPoly.GuruswamiSudan.ApproximantBasis.gsRelationMatrixWithModuli_matrixWidth", "kind": "theorem", "line": 488},
+  {"name": "CompPoly.GuruswamiSudan.ApproximantBasis.hasseDeriv_toPoly_ofCoeffRow_eval", "kind": "theorem", "line": 520},
+  {"name": "CompPoly.GuruswamiSudan.ApproximantBasis.rowMulMatrixWith_congr_of_agree", "kind": "theorem", "line": 574},
+  {"name": "CompPoly.GuruswamiSudan.ApproximantBasis.rowSatisfiesModularBool_congr_of_agree", "kind": "theorem", "line": 587},
+  {"name": "CompPoly.GuruswamiSudan.ApproximantBasis.rowSatisfiesModularBool_gsRelationMatrix_iff", "kind": "theorem", "line": 623}
+ ],
+ "private": [],
+ "missing": [],
+ "unread": "Unnamed instances, the names an `alias ⟨…⟩` command gives, and the names Lean generates for a declaration (constructors, recursors, derived instances) are not read from the source, so they are not listed."
+}

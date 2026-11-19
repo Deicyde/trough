@@ -1,0 +1,23 @@
+{
+ "schema": "trough-ledger/v1",
+ "library": "CompPoly",
+ "repo": "Verified-zkEVM/CompPoly",
+ "rev": "afb9b1363984a70f10e24bd597f6ff40ebc8afbb",
+ "module": "CompPoly.Fields.Binary.Tower.Support.DefiningPoly",
+ "file": "CompPoly/Fields/Binary/Tower/Support/DefiningPoly.lean",
+ "public": [
+  {"name": "definingPoly", "kind": "def", "line": 24},
+  {"name": "degree_s_smul_X", "kind": "lemma", "line": 27},
+  {"name": "degree_s_smul_X_add_1", "kind": "lemma", "line": 32},
+  {"name": "definingPoly_is_monic", "kind": "lemma", "line": 38},
+  {"name": "degree_definingPoly", "kind": "lemma", "line": 55},
+  {"name": "natDegree_definingPoly", "kind": "lemma", "line": 66},
+  {"name": "definingPoly_ne_zero", "kind": "lemma", "line": 69},
+  {"name": "definingPoly_is_not_unit", "kind": "lemma", "line": 75},
+  {"name": "definingPoly_coeffOf0", "kind": "lemma", "line": 87},
+  {"name": "definingPoly_coeffOf1", "kind": "lemma", "line": 93}
+ ],
+ "private": [],
+ "missing": [],
+ "unread": "Unnamed instances, the names an `alias ⟨…⟩` command gives, and the names Lean generates for a declaration (constructors, recursors, derived instances) are not read from the source, so they are not listed."
+}

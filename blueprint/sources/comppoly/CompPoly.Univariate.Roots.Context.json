@@ -1,0 +1,17 @@
+{
+ "schema": "trough-ledger/v1",
+ "library": "CompPoly",
+ "repo": "Verified-zkEVM/CompPoly",
+ "rev": "afb9b1363984a70f10e24bd597f6ff40ebc8afbb",
+ "module": "CompPoly.Univariate.Roots.Context",
+ "file": "CompPoly/Univariate/Roots/Context.lean",
+ "public": [
+  {"name": "CompPoly.CPolynomial.Roots.FiniteField.FiniteFieldContext", "kind": "structure", "line": 30},
+  {"name": "CompPoly.CPolynomial.Roots.FiniteField.IsLinearFactor", "kind": "def", "line": 37},
+  {"name": "CompPoly.CPolynomial.Roots.FiniteField.IsLinearRootFactorCandidate", "kind": "def", "line": 41},
+  {"name": "CompPoly.CPolynomial.Roots.FiniteField.LinearFactorProductSplitter", "kind": "structure", "line": 51}
+ ],
+ "private": [],
+ "missing": [],
+ "unread": "Unnamed instances, the names an `alias ⟨…⟩` command gives, and the names Lean generates for a declaration (constructors, recursors, derived instances) are not read from the source, so they are not listed."
+}

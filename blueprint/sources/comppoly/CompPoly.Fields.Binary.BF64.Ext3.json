@@ -1,0 +1,31 @@
+{
+ "schema": "trough-ledger/v1",
+ "library": "CompPoly",
+ "repo": "Verified-zkEVM/CompPoly",
+ "rev": "afb9b1363984a70f10e24bd597f6ff40ebc8afbb",
+ "module": "CompPoly.Fields.Binary.BF64.Ext3",
+ "file": "CompPoly/Fields/Binary/BF64/Ext3.lean",
+ "public": [
+  {"name": "BF64.ext3Poly", "kind": "def", "line": 58},
+  {"name": "BF64.ext3Poly_natDegree", "kind": "theorem", "line": 61},
+  {"name": "BF64.ext3Poly_degree", "kind": "theorem", "line": 65},
+  {"name": "BF64.ext3Poly_monic", "kind": "theorem", "line": 69},
+  {"name": "BF64.ext3Poly_no_root", "kind": "theorem", "line": 101},
+  {"name": "BF64.ext3Poly_irreducible", "kind": "theorem", "line": 127},
+  {"name": "BF64.ext3Params", "kind": "def", "line": 137},
+  {"name": "BF64.ext3Params_d", "kind": "theorem", "line": 147},
+  {"name": "BF64.ext3Params_q", "kind": "theorem", "line": 149},
+  {"name": "BF64.ext3Params_poly", "kind": "theorem", "line": 152},
+  {"name": "BF64.Ext3", "kind": "abbrev", "line": 172},
+  {"name": "BF64.ext3Gen", "kind": "def", "line": 179},
+  {"name": "BF64.ext3Gen_eq_gen", "kind": "theorem", "line": 187},
+  {"name": "BF64.toQuot_ext3Gen", "kind": "theorem", "line": 190},
+  {"name": "BF64.aeval_ext3Gen", "kind": "theorem", "line": 193},
+  {"name": "BF64.ext3Gen_pow_three", "kind": "theorem", "line": 196},
+  {"name": "BF64.nat_card_ext3", "kind": "theorem", "line": 203},
+  {"name": "BF64.card_ext3", "kind": "theorem", "line": 209}
+ ],
+ "private": [],
+ "missing": [],
+ "unread": "Unnamed instances, the names an `alias ⟨…⟩` command gives, and the names Lean generates for a declaration (constructors, recursors, derived instances) are not read from the source, so they are not listed."
+}

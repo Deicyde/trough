@@ -1,0 +1,23 @@
+{
+ "schema": "trough-ledger/v1",
+ "library": "CompPoly",
+ "repo": "Verified-zkEVM/CompPoly",
+ "rev": "afb9b1363984a70f10e24bd597f6ff40ebc8afbb",
+ "module": "CompPoly.Bivariate.GuruswamiSudan.Context",
+ "file": "CompPoly/Bivariate/GuruswamiSudan/Context.lean",
+ "public": [
+  {"name": "CompPoly.GuruswamiSudan.GSInterpParams", "kind": "structure", "line": 27},
+  {"name": "CompPoly.GuruswamiSudan.yWeight", "kind": "def", "line": 34},
+  {"name": "CompPoly.GuruswamiSudan.degreeLt", "kind": "def", "line": 38},
+  {"name": "CompPoly.GuruswamiSudan.DistinctXCoordinates", "kind": "def", "line": 42},
+  {"name": "CompPoly.GuruswamiSudan.ValidInterpolationWitness", "kind": "def", "line": 47},
+  {"name": "CompPoly.GuruswamiSudan.LinearKernelContext", "kind": "structure", "line": 62},
+  {"name": "CompPoly.GuruswamiSudan.denseLinearKernelContext", "kind": "def", "line": 93},
+  {"name": "CompPoly.GuruswamiSudan.GSInterpContext", "kind": "structure", "line": 119},
+  {"name": "CompPoly.GuruswamiSudan.FieldRootContext", "kind": "structure", "line": 138},
+  {"name": "CompPoly.GuruswamiSudan.GSRootContext", "kind": "structure", "line": 156}
+ ],
+ "private": [],
+ "missing": [],
+ "unread": "Unnamed instances, the names an `alias ⟨…⟩` command gives, and the names Lean generates for a declaration (constructors, recursors, derived instances) are not read from the source, so they are not listed."
+}

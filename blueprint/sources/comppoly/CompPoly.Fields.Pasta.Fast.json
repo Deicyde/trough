@@ -1,0 +1,21 @@
+{
+ "schema": "trough-ledger/v1",
+ "library": "CompPoly",
+ "repo": "Verified-zkEVM/CompPoly",
+ "rev": "afb9b1363984a70f10e24bd597f6ff40ebc8afbb",
+ "module": "CompPoly.Fields.Pasta.Fast",
+ "file": "CompPoly/Fields/Pasta/Fast.lean",
+ "public": [
+  {"name": "Pallas.Fast.instMont64x8Field", "kind": "instance", "line": 31},
+  {"name": "Pallas.Fast.Field", "kind": "abbrev", "line": 42},
+  {"name": "Pallas.Fast.ofField", "kind": "def", "line": 48},
+  {"name": "Pallas.Fast.ringEquiv", "kind": "def", "line": 54},
+  {"name": "Vesta.Fast.instMont64x8Field", "kind": "instance", "line": 67},
+  {"name": "Vesta.Fast.Field", "kind": "abbrev", "line": 78},
+  {"name": "Vesta.Fast.ofField", "kind": "def", "line": 84},
+  {"name": "Vesta.Fast.ringEquiv", "kind": "def", "line": 90}
+ ],
+ "private": [],
+ "missing": [],
+ "unread": "Unnamed instances, the names an `alias ⟨…⟩` command gives, and the names Lean generates for a declaration (constructors, recursors, derived instances) are not read from the source, so they are not listed."
+}

@@ -1,0 +1,22 @@
+{
+ "schema": "trough-ledger/v1",
+ "library": "CompPoly",
+ "repo": "Verified-zkEVM/CompPoly",
+ "rev": "afb9b1363984a70f10e24bd597f6ff40ebc8afbb",
+ "module": "CompPoly.Fields.Extension.Defs",
+ "file": "CompPoly/Fields/Extension/Defs.lean",
+ "public": [
+  {"name": "CompPoly.Extension.ExtensionParams.poly", "kind": "def", "line": 37},
+  {"name": "CompPoly.Extension.ExtensionParams.degree_lower_lt", "kind": "theorem", "line": 40},
+  {"name": "CompPoly.Extension.ExtensionParams.degree_poly", "kind": "theorem", "line": 47},
+  {"name": "CompPoly.Extension.ExtensionParams.monic_poly", "kind": "theorem", "line": 51},
+  {"name": "CompPoly.Extension.ExtensionParams.natDegree_poly", "kind": "theorem", "line": 55},
+  {"name": "CompPoly.Extension.BinomialParams.poly", "kind": "def", "line": 65},
+  {"name": "CompPoly.Extension.BinomialParams.natDegree_poly", "kind": "theorem", "line": 67},
+  {"name": "CompPoly.Extension.BinomialParams.monic_poly", "kind": "theorem", "line": 69},
+  {"name": "CompPoly.Extension.BinomialParams.toExtensionParams_poly", "kind": "theorem", "line": 72}
+ ],
+ "private": [],
+ "missing": [],
+ "unread": "Unnamed instances, the names an `alias ⟨…⟩` command gives, and the names Lean generates for a declaration (constructors, recursors, derived instances) are not read from the source, so they are not listed."
+}

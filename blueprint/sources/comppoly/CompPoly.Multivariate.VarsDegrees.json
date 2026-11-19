@@ -1,0 +1,21 @@
+{
+ "schema": "trough-ledger/v1",
+ "library": "CompPoly",
+ "repo": "Verified-zkEVM/CompPoly",
+ "rev": "afb9b1363984a70f10e24bd597f6ff40ebc8afbb",
+ "module": "CompPoly.Multivariate.VarsDegrees",
+ "file": "CompPoly/Multivariate/VarsDegrees.lean",
+ "public": [
+  {"name": "CPoly.mem_vars_iff_degreeOf_pos", "kind": "lemma", "line": 29},
+  {"name": "CPoly.degrees_equiv", "kind": "lemma", "line": 35},
+  {"name": "CPoly.vars_equiv", "kind": "lemma", "line": 44},
+  {"name": "CPoly.degreeOf_zero", "kind": "lemma", "line": 57},
+  {"name": "CPoly.degrees_zero", "kind": "lemma", "line": 68},
+  {"name": "CPoly.vars_zero", "kind": "lemma", "line": 74},
+  {"name": "CPoly.degrees_one", "kind": "lemma", "line": 80},
+  {"name": "CPoly.vars_add_subset", "kind": "lemma", "line": 85}
+ ],
+ "private": [],
+ "missing": [],
+ "unread": "Unnamed instances, the names an `alias ⟨…⟩` command gives, and the names Lean generates for a declaration (constructors, recursors, derived instances) are not read from the source, so they are not listed."
+}
