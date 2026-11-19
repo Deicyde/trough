@@ -1,0 +1,27 @@
+{
+ "schema": "trough-ledger/v1",
+ "library": "CSLib",
+ "repo": "leanprover/cslib",
+ "rev": "86d560b6cbb379bd82512424cbcd2a915a1565e7",
+ "module": "Cslib.Probability.StatisticalDistance",
+ "file": "Cslib/Probability/StatisticalDistance.lean",
+ "public": [
+  {"name": "Cslib.Probability.PMF.instMetricSpace", "kind": "instance", "line": 82},
+  {"name": "Cslib.Probability.PMF.dist_eq", "kind": "theorem", "line": 101},
+  {"name": "Cslib.Probability.PMF.dist_le_one", "kind": "theorem", "line": 106},
+  {"name": "Cslib.Probability.PMF.dist_eq_one_of_disjoint_support", "kind": "theorem", "line": 115},
+  {"name": "Cslib.Probability.PMF.dist_bind_le", "kind": "theorem", "line": 130},
+  {"name": "Cslib.Probability.PMF.dist_map_le", "kind": "theorem", "line": 152},
+  {"name": "Cslib.Probability.PMF.StatisticallyClose", "kind": "def", "line": 159},
+  {"name": "Cslib.Probability.PMF.StatisticallyClose.refl", "kind": "theorem", "line": 165},
+  {"name": "Cslib.Probability.PMF.StatisticallyClose.symm", "kind": "theorem", "line": 169},
+  {"name": "Cslib.Probability.PMF.StatisticallyClose.mono", "kind": "theorem", "line": 174},
+  {"name": "Cslib.Probability.PMF.StatisticallyClose.trans", "kind": "theorem", "line": 179},
+  {"name": "Cslib.Probability.PMF.StatisticallyClose.bind", "kind": "theorem", "line": 186},
+  {"name": "Cslib.Probability.PMF.StatisticallyClose.map", "kind": "theorem", "line": 192},
+  {"name": "Cslib.Probability.PMF.statisticallyClose_zero_iff", "kind": "theorem", "line": 201}
+ ],
+ "private": [],
+ "missing": [],
+ "unread": "Unnamed instances, the names an `alias ⟨…⟩` command gives, and the names Lean generates for a declaration (constructors, recursors, derived instances) are not read from the source, so they are not listed."
+}

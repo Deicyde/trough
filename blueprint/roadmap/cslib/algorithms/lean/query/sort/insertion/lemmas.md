@@ -96,3 +96,4 @@ theorem insertionSort_isSort : IsSort (insertionSort (α := α))
 ## Sources
 
 - [Cslib/Algorithms/Lean/Query/Sort/Insertion/Lemmas.lean at 86d560b6](https://github.com/leanprover/cslib/blob/86d560b6cbb379bd82512424cbcd2a915a1565e7/Cslib/Algorithms/Lean/Query/Sort/Insertion/Lemmas.lean)
+- [Declaration ledger](../../../../../../../sources/cslib/Cslib.Algorithms.Lean.Query.Sort.Insertion.Lemmas.json)

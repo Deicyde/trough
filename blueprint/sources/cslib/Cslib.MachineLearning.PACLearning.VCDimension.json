@@ -1,0 +1,20 @@
+{
+ "schema": "trough-ledger/v1",
+ "library": "CSLib",
+ "repo": "leanprover/cslib",
+ "rev": "86d560b6cbb379bd82512424cbcd2a915a1565e7",
+ "module": "Cslib.MachineLearning.PACLearning.VCDimension",
+ "file": "Cslib/MachineLearning/PACLearning/VCDimension.lean",
+ "public": [
+  {"name": "Cslib.MachineLearning.PACLearning.SetShatters", "kind": "def", "line": 53},
+  {"name": "Cslib.MachineLearning.PACLearning.SetShatters.subset", "kind": "theorem", "line": 58},
+  {"name": "Cslib.MachineLearning.PACLearning.SetShatters.superset", "kind": "theorem", "line": 75},
+  {"name": "Finset.Shatters.toSetShatters", "kind": "theorem", "line": 86},
+  {"name": "Cslib.MachineLearning.PACLearning.vcDim", "kind": "def", "line": 111},
+  {"name": "Cslib.MachineLearning.PACLearning.HasFiniteVCDim", "kind": "def", "line": 118},
+  {"name": "Cslib.MachineLearning.PACLearning.hasFiniteVCDim_iff", "kind": "theorem", "line": 123}
+ ],
+ "private": [],
+ "missing": [],
+ "unread": "Unnamed instances, the names an `alias ⟨…⟩` command gives, and the names Lean generates for a declaration (constructors, recursors, derived instances) are not read from the source, so they are not listed."
+}

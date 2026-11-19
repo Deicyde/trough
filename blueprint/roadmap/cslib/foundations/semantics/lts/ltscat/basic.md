@@ -85,3 +85,4 @@ def LTS.Morphism.comp {lts₁ lts₂ lts₃} (f : LTS.Morphism lts₁ lts₂) (g
 ## Sources
 
 - [Cslib/Foundations/Semantics/LTS/LTSCat/Basic.lean at 86d560b6](https://github.com/leanprover/cslib/blob/86d560b6cbb379bd82512424cbcd2a915a1565e7/Cslib/Foundations/Semantics/LTS/LTSCat/Basic.lean)
+- [Declaration ledger](../../../../../../sources/cslib/Cslib.Foundations.Semantics.LTS.LTSCat.Basic.json)

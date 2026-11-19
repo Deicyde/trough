@@ -1,0 +1,33 @@
+{
+ "schema": "trough-ledger/v1",
+ "library": "CSLib",
+ "repo": "leanprover/cslib",
+ "rev": "86d560b6cbb379bd82512424cbcd2a915a1565e7",
+ "module": "Cslib.Foundations.Data.List.IsChainFromTo",
+ "file": "Cslib/Foundations/Data/List/IsChainFromTo.lean",
+ "public": [
+  {"name": "List.IsChainFromTo", "kind": "structure", "line": 43},
+  {"name": "List.IsChainFromTo.length_pos", "kind": "lemma", "line": 53},
+  {"name": "List.IsChainFromTo.getElem_zero", "kind": "lemma", "line": 58},
+  {"name": "List.IsChainFromTo.getElem_length_sub_one", "kind": "lemma", "line": 65},
+  {"name": "List.IsChainFromTo.reflTransGen", "kind": "theorem", "line": 71},
+  {"name": "List.IsChain.isChainFromTo_of_ne_nil", "kind": "theorem", "line": 77},
+  {"name": "List.isChainFromTo_singleton", "kind": "lemma", "line": 84},
+  {"name": "List.IsChainFromTo.cons", "kind": "lemma", "line": 88},
+  {"name": "List.isChainFromTo_pair_iff", "kind": "lemma", "line": 96},
+  {"name": "List.IsChainFromTo.of_cons_cons", "kind": "lemma", "line": 105},
+  {"name": "List.IsChainFromTo.append_tail", "kind": "lemma", "line": 111},
+  {"name": "List.IsChainFromTo.snoc", "kind": "lemma", "line": 124},
+  {"name": "List.IsChainFromTo.append_dropLast", "kind": "lemma", "line": 130},
+  {"name": "List.IsChainFromTo.take", "kind": "lemma", "line": 138},
+  {"name": "List.IsChainFromTo.drop", "kind": "lemma", "line": 145},
+  {"name": "List.IsChainFromTo.head_induction_on", "kind": "lemma", "line": 151},
+  {"name": "List.IsChainFromTo.reflTransGen_of_mem", "kind": "lemma", "line": 166},
+  {"name": "List.IsChainFromTo.reflTransGen_of_mem'", "kind": "lemma", "line": 172},
+  {"name": "List.IsChainFromTo.exists_length_lt_of_not_nodup", "kind": "lemma", "line": 180},
+  {"name": "List.IsChainFromTo.exists_nodup", "kind": "lemma", "line": 197}
+ ],
+ "private": [],
+ "missing": [],
+ "unread": "Unnamed instances, the names an `alias ⟨…⟩` command gives, and the names Lean generates for a declaration (constructors, recursors, derived instances) are not read from the source, so they are not listed."
+}

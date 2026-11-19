@@ -1,0 +1,17 @@
+{
+ "schema": "trough-ledger/v1",
+ "library": "CSLib",
+ "repo": "leanprover/cslib",
+ "rev": "86d560b6cbb379bd82512424cbcd2a915a1565e7",
+ "module": "Cslib.Foundations.Data.Nat.Asymptotics",
+ "file": "Cslib/Foundations/Data/Nat/Asymptotics.lean",
+ "public": [
+  {"name": "Nat.eventually_mul_pow_le_pow", "kind": "theorem", "line": 31},
+  {"name": "Nat.eventually_add_one_le_pow_div", "kind": "theorem", "line": 41},
+  {"name": "Nat.eventually_mul_log_le", "kind": "theorem", "line": 49},
+  {"name": "Nat.eventually_mul_log2_le", "kind": "theorem", "line": 59}
+ ],
+ "private": [],
+ "missing": [],
+ "unread": "Unnamed instances, the names an `alias ⟨…⟩` command gives, and the names Lean generates for a declaration (constructors, recursors, derived instances) are not read from the source, so they are not listed."
+}

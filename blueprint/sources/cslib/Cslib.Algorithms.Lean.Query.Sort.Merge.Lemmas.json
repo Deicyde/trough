@@ -1,0 +1,27 @@
+{
+ "schema": "trough-ledger/v1",
+ "library": "CSLib",
+ "repo": "leanprover/cslib",
+ "rev": "86d560b6cbb379bd82512424cbcd2a915a1565e7",
+ "module": "Cslib.Algorithms.Lean.Query.Sort.Merge.Lemmas",
+ "file": "Cslib/Algorithms/Lean/Query/Sort/Merge/Lemmas.lean",
+ "public": [
+  {"name": "Cslib.Query.eval_merge", "kind": "theorem", "line": 39},
+  {"name": "Cslib.Query.eval_mergeSort", "kind": "theorem", "line": 49},
+  {"name": "Cslib.Query.mergeSort_perm", "kind": "theorem", "line": 55},
+  {"name": "Cslib.Query.mergeSort_sorted", "kind": "theorem", "line": 60},
+  {"name": "Cslib.Query.countQueries_merge_nil_left", "kind": "theorem", "line": 77},
+  {"name": "Cslib.Query.countQueries_merge_nil_right", "kind": "theorem", "line": 81},
+  {"name": "Cslib.Query.countQueries_merge_cons_cons", "kind": "theorem", "line": 85},
+  {"name": "Cslib.Query.countQueries_mergeSort_nil", "kind": "theorem", "line": 93},
+  {"name": "Cslib.Query.countQueries_mergeSort_singleton", "kind": "theorem", "line": 97},
+  {"name": "Cslib.Query.countQueries_mergeSort_cons_cons", "kind": "theorem", "line": 102},
+  {"name": "Cslib.Query.merge_countQueries_le", "kind": "theorem", "line": 115},
+  {"name": "Cslib.Query.mergeSort_countQueries_le", "kind": "theorem", "line": 145},
+  {"name": "Cslib.Query.mergeSort_upperBound", "kind": "theorem", "line": 167},
+  {"name": "Cslib.Query.mergeSort_isSort", "kind": "theorem", "line": 173}
+ ],
+ "private": [],
+ "missing": [],
+ "unread": "Unnamed instances, the names an `alias ⟨…⟩` command gives, and the names Lean generates for a declaration (constructors, recursors, derived instances) are not read from the source, so they are not listed."
+}

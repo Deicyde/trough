@@ -1,0 +1,19 @@
+{
+ "schema": "trough-ledger/v1",
+ "library": "CSLib",
+ "repo": "leanprover/cslib",
+ "rev": "86d560b6cbb379bd82512424cbcd2a915a1565e7",
+ "module": "Cslib.Computability.Languages.Congruences.Basic",
+ "file": "Cslib/Computability/Languages/Congruences/Basic.lean",
+ "public": [
+  {"name": "Language.RightCongruence", "kind": "class", "line": 28},
+  {"name": "Language.RightCongruence.eqvCls", "kind": "abbrev", "line": 34},
+  {"name": "Language.LeftCongruence", "kind": "class", "line": 42},
+  {"name": "Language.LeftCongruence.eqvCls", "kind": "abbrev", "line": 48},
+  {"name": "Language.Congruence", "kind": "class", "line": 55},
+  {"name": "Language.Congruence.eqvCls", "kind": "abbrev", "line": 60}
+ ],
+ "private": [],
+ "missing": [],
+ "unread": "Unnamed instances, the names an `alias ⟨…⟩` command gives, and the names Lean generates for a declaration (constructors, recursors, derived instances) are not read from the source, so they are not listed."
+}

@@ -112,3 +112,4 @@ abbrev AtPid.elem (a : AtPid Pid α)
 ## Sources
 
 - [Cslib/Languages/Mech/LocalComputation.lean at 86d560b6](https://github.com/leanprover/cslib/blob/86d560b6cbb379bd82512424cbcd2a915a1565e7/Cslib/Languages/Mech/LocalComputation.lean)
+- [Declaration ledger](../../../../sources/cslib/Cslib.Languages.Mech.LocalComputation.json)

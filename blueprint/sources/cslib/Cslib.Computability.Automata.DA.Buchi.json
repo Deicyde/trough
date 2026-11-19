@@ -1,0 +1,14 @@
+{
+ "schema": "trough-ledger/v1",
+ "library": "CSLib",
+ "repo": "leanprover/cslib",
+ "rev": "86d560b6cbb379bd82512424cbcd2a915a1565e7",
+ "module": "Cslib.Computability.Automata.DA.Buchi",
+ "file": "Cslib/Computability/Automata/DA/Buchi.lean",
+ "public": [
+  {"name": "Cslib.Automata.DA.buchi_eq_finAcc_omegaLim", "kind": "theorem", "line": 26}
+ ],
+ "private": [],
+ "missing": [],
+ "unread": "Unnamed instances, the names an `alias ⟨…⟩` command gives, and the names Lean generates for a declaration (constructors, recursors, derived instances) are not read from the source, so they are not listed."
+}

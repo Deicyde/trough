@@ -1,0 +1,31 @@
+{
+ "schema": "trough-ledger/v1",
+ "library": "CSLib",
+ "repo": "leanprover/cslib",
+ "rev": "86d560b6cbb379bd82512424cbcd2a915a1565e7",
+ "module": "Cslib.Computability.Distributed.FLP.FairScheduler",
+ "file": "Cslib/Computability/Distributed/FLP/FairScheduler.lean",
+ "public": [
+  {"name": "Cslib.FLP.DeliverMsg", "kind": "def", "line": 32},
+  {"name": "Cslib.FLP.DeliverMsg.ForallActions", "kind": "def", "line": 35},
+  {"name": "Cslib.FLP.DeliverMsg.foldList", "kind": "def", "line": 41},
+  {"name": "Cslib.FLP.DeliverMsg.scheduleMsgs", "kind": "def", "line": 57},
+  {"name": "Cslib.FLP.DeliverMsg.foldList_forallActions", "kind": "theorem", "line": 70},
+  {"name": "Cslib.FLP.Algorithm.fairScheduler", "kind": "def", "line": 80},
+  {"name": "Cslib.FLP.Algorithm.fairSegEnds", "kind": "def", "line": 87},
+  {"name": "Cslib.FLP.Algorithm.fairSegActions", "kind": "def", "line": 93},
+  {"name": "Cslib.FLP.Algorithm.FairDeliverMsg", "kind": "def", "line": 101},
+  {"name": "Cslib.FLP.FairScheduler.fairScheduler_init", "kind": "theorem", "line": 113},
+  {"name": "Cslib.FLP.FairScheduler.fairScheduler_step", "kind": "theorem", "line": 119},
+  {"name": "Cslib.FLP.FairScheduler.fairSeg_forallActions", "kind": "theorem", "line": 125},
+  {"name": "Cslib.FLP.FairScheduler.fairDeliverMsg_foldList", "kind": "theorem", "line": 132},
+  {"name": "Cslib.FLP.FairScheduler.fairDeliverMsg_scheduleMsgs", "kind": "theorem", "line": 153},
+  {"name": "Cslib.FLP.FairScheduler.fair_fairSegs", "kind": "theorem", "line": 177},
+  {"name": "Cslib.FLP.FairScheduler.flatten_fairSegs", "kind": "theorem", "line": 190},
+  {"name": "Cslib.FLP.FairScheduler.fair_omegaExecution", "kind": "theorem", "line": 212},
+  {"name": "Cslib.FLP.FairScheduler.omega_forall_actions", "kind": "theorem", "line": 233}
+ ],
+ "private": [],
+ "missing": [],
+ "unread": "Unnamed instances, the names an `alias ⟨…⟩` command gives, and the names Lean generates for a declaration (constructors, recursors, derived instances) are not read from the source, so they are not listed."
+}

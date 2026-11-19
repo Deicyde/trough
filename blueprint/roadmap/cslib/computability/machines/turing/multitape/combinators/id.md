@@ -35,3 +35,4 @@ public theorem computableInTimeAndSpace_id {enc : α ↪ List Bool} :
 ## Sources
 
 - [Cslib/Computability/Machines/Turing/MultiTape/Combinators/Id.lean at 86d560b6](https://github.com/leanprover/cslib/blob/86d560b6cbb379bd82512424cbcd2a915a1565e7/Cslib/Computability/Machines/Turing/MultiTape/Combinators/Id.lean)
+- [Declaration ledger](../../../../../../../sources/cslib/Cslib.Computability.Machines.Turing.MultiTape.Combinators.Id.json)

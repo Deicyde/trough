@@ -1,0 +1,18 @@
+{
+ "schema": "trough-ledger/v1",
+ "library": "CSLib",
+ "repo": "leanprover/cslib",
+ "rev": "86d560b6cbb379bd82512424cbcd2a915a1565e7",
+ "module": "Cslib.Foundations.Data.OmegaSequence.InfOcc",
+ "file": "Cslib/Foundations/Data/OmegaSequence/InfOcc.lean",
+ "public": [
+  {"name": "Cslib.ωSequence.infOcc", "kind": "def", "line": 30},
+  {"name": "Cslib.ωSequence.frequently_iff_strictMono", "kind": "theorem", "line": 34},
+  {"name": "Cslib.ωSequence.frequently_in_finite_type", "kind": "theorem", "line": 46},
+  {"name": "Cslib.ωSequence.frequently_in_strictMono", "kind": "theorem", "line": 53},
+  {"name": "Cslib.ωSequence.strictMono_of_infinite", "kind": "theorem", "line": 70}
+ ],
+ "private": [],
+ "missing": [],
+ "unread": "Unnamed instances, the names an `alias ⟨…⟩` command gives, and the names Lean generates for a declaration (constructors, recursors, derived instances) are not read from the source, so they are not listed."
+}

@@ -57,3 +57,4 @@ theorem congr_language_eq {a : Quotient c.eq} : language (FinAcc.mk c.toDA {a}) 
 ## Sources
 
 - [Cslib/Computability/Automata/DA/Congr.lean at 86d560b6](https://github.com/leanprover/cslib/blob/86d560b6cbb379bd82512424cbcd2a915a1565e7/Cslib/Computability/Automata/DA/Congr.lean)
+- [Declaration ledger](../../../../../sources/cslib/Cslib.Computability.Automata.DA.Congr.json)

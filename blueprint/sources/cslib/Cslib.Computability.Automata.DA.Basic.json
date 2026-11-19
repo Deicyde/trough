@@ -1,0 +1,22 @@
+{
+ "schema": "trough-ledger/v1",
+ "library": "CSLib",
+ "repo": "leanprover/cslib",
+ "rev": "86d560b6cbb379bd82512424cbcd2a915a1565e7",
+ "module": "Cslib.Computability.Automata.DA.Basic",
+ "file": "Cslib/Computability/Automata/DA/Basic.lean",
+ "public": [
+  {"name": "Cslib.Automata.DA", "kind": "structure", "line": 37},
+  {"name": "Cslib.Automata.DA.run'", "kind": "def", "line": 47},
+  {"name": "Cslib.Automata.DA.run", "kind": "def", "line": 53},
+  {"name": "Cslib.Automata.DA.run_zero", "kind": "theorem", "line": 56},
+  {"name": "Cslib.Automata.DA.run_succ", "kind": "theorem", "line": 61},
+  {"name": "Cslib.Automata.DA.mtr_extract_eq_run", "kind": "theorem", "line": 66},
+  {"name": "Cslib.Automata.DA.FinAcc", "kind": "structure", "line": 73},
+  {"name": "Cslib.Automata.DA.Buchi", "kind": "structure", "line": 91},
+  {"name": "Cslib.Automata.DA.Muller", "kind": "structure", "line": 106}
+ ],
+ "private": [],
+ "missing": [],
+ "unread": "Unnamed instances, the names an `alias ⟨…⟩` command gives, and the names Lean generates for a declaration (constructors, recursors, derived instances) are not read from the source, so they are not listed."
+}

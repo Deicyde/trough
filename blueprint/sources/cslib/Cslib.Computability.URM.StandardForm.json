@@ -1,0 +1,30 @@
+{
+ "schema": "trough-ledger/v1",
+ "library": "CSLib",
+ "repo": "leanprover/cslib",
+ "rev": "86d560b6cbb379bd82512424cbcd2a915a1565e7",
+ "module": "Cslib.Computability.URM.StandardForm",
+ "file": "Cslib/Computability/URM/StandardForm.lean",
+ "public": [
+  {"name": "Cslib.URM.Program.IsStandardForm", "kind": "def", "line": 36},
+  {"name": "Cslib.URM.Program.toStandardForm", "kind": "def", "line": 43},
+  {"name": "Cslib.URM.Program.toStandardForm_length", "kind": "theorem", "line": 48},
+  {"name": "Cslib.URM.Program.toStandardForm_isStandardForm", "kind": "theorem", "line": 52},
+  {"name": "Cslib.URM.Program.getElem?_toStandardForm", "kind": "theorem", "line": 61},
+  {"name": "Cslib.URM.Program.toStandardForm_idempotent", "kind": "theorem", "line": 67},
+  {"name": "Cslib.URM.straight_line_IsStandardForm", "kind": "theorem", "line": 79},
+  {"name": "Cslib.URM.Step.toStandardForm", "kind": "theorem", "line": 96},
+  {"name": "Cslib.URM.Steps.toStandardForm_halts", "kind": "theorem", "line": 128},
+  {"name": "Cslib.URM.Halts.toStandardForm", "kind": "theorem", "line": 145},
+  {"name": "Cslib.URM.Step.from_toStandardForm", "kind": "theorem", "line": 156},
+  {"name": "Cslib.URM.Steps.from_toStandardForm_halts", "kind": "theorem", "line": 170},
+  {"name": "Cslib.URM.Halts.of_toStandardForm", "kind": "theorem", "line": 189},
+  {"name": "Cslib.URM.Halts.toStandardForm_iff", "kind": "theorem", "line": 196},
+  {"name": "Cslib.URM.evalState_toStandardForm_regs", "kind": "theorem", "line": 203},
+  {"name": "Cslib.URM.eval_toStandardForm", "kind": "theorem", "line": 213},
+  {"name": "Cslib.URM.toStandardForm_equiv", "kind": "theorem", "line": 225}
+ ],
+ "private": [],
+ "missing": [],
+ "unread": "Unnamed instances, the names an `alias ⟨…⟩` command gives, and the names Lean generates for a declaration (constructors, recursors, derived instances) are not read from the source, so they are not listed."
+}

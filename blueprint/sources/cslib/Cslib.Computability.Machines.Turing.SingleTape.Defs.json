@@ -1,0 +1,20 @@
+{
+ "schema": "trough-ledger/v1",
+ "library": "CSLib",
+ "repo": "leanprover/cslib",
+ "rev": "86d560b6cbb379bd82512424cbcd2a915a1565e7",
+ "module": "Cslib.Computability.Machines.Turing.SingleTape.Defs",
+ "file": "Cslib/Computability/Machines/Turing/SingleTape/Defs.lean",
+ "public": [
+  {"name": "Cslib.Computability.Turing.SingleTape.TrLabel", "kind": "inductive", "line": 18},
+  {"name": "Cslib.Computability.Turing.SingleTape.TrLabel.applyToTape", "kind": "def", "line": 30},
+  {"name": "Cslib.Computability.Turing.SingleTape.TrLabel.applyToTape_isSome", "kind": "theorem", "line": 41},
+  {"name": "Cslib.Computability.Turing.SingleTape.TrLabel.applyToTape_foldl_isSome", "kind": "theorem", "line": 48},
+  {"name": "Cslib.Computability.Turing.SingleTape.Cfg", "kind": "structure", "line": 54},
+  {"name": "Cslib.Computability.Turing.SingleTape.Cfg.mk₁", "kind": "def", "line": 61},
+  {"name": "Cslib.Computability.Turing.SingleTape.Cfg.spaceUsed", "kind": "def", "line": 66}
+ ],
+ "private": [],
+ "missing": [],
+ "unread": "Unnamed instances, the names an `alias ⟨…⟩` command gives, and the names Lean generates for a declaration (constructors, recursors, derived instances) are not read from the source, so they are not listed."
+}

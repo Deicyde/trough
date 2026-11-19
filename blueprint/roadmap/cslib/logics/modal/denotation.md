@@ -75,3 +75,4 @@ theorem Proposition.denotation_eq_of_equiv (h : φ₁ ≡[Equiv m] φ₂) :
 ## Sources
 
 - [Cslib/Logics/Modal/Denotation.lean at 86d560b6](https://github.com/leanprover/cslib/blob/86d560b6cbb379bd82512424cbcd2a915a1565e7/Cslib/Logics/Modal/Denotation.lean)
+- [Declaration ledger](../../../../sources/cslib/Cslib.Logics.Modal.Denotation.json)

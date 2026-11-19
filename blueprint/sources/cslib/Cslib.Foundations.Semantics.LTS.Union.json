@@ -1,0 +1,26 @@
+{
+ "schema": "trough-ledger/v1",
+ "library": "CSLib",
+ "repo": "leanprover/cslib",
+ "rev": "86d560b6cbb379bd82512424cbcd2a915a1565e7",
+ "module": "Cslib.Foundations.Semantics.LTS.Union",
+ "file": "Cslib/Foundations/Semantics/LTS/Union.lean",
+ "public": [
+  {"name": "Cslib.LTS.union", "kind": "def", "line": 27},
+  {"name": "Cslib.LTS.unionSubtype", "kind": "def", "line": 31},
+  {"name": "Cslib.LTS.inl", "kind": "def", "line": 41},
+  {"name": "Cslib.LTS.inr", "kind": "def", "line": 49},
+  {"name": "Cslib.LTS.unionSum", "kind": "def", "line": 58},
+  {"name": "Cslib.LTS.unionSum_tr_inl_inl", "kind": "theorem", "line": 67},
+  {"name": "Cslib.LTS.unionSum_tr_inr_inr", "kind": "theorem", "line": 72},
+  {"name": "Cslib.LTS.unionSum_not_tr_inl_inr", "kind": "theorem", "line": 77},
+  {"name": "Cslib.LTS.unionSum_not_tr_inr_inl", "kind": "theorem", "line": 82},
+  {"name": "Cslib.LTS.unionSum_mTr_inl", "kind": "theorem", "line": 88},
+  {"name": "Cslib.LTS.unionSum_mTr_inr", "kind": "theorem", "line": 103},
+  {"name": "Cslib.LTS.unionSum_mTr_inl_iff", "kind": "theorem", "line": 117},
+  {"name": "Cslib.LTS.unionSum_mTr_inr_iff", "kind": "theorem", "line": 128}
+ ],
+ "private": [],
+ "missing": [],
+ "unread": "Unnamed instances, the names an `alias ⟨…⟩` command gives, and the names Lean generates for a declaration (constructors, recursors, derived instances) are not read from the source, so they are not listed."
+}

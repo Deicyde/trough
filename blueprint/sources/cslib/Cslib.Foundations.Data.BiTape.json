@@ -1,0 +1,28 @@
+{
+ "schema": "trough-ledger/v1",
+ "library": "CSLib",
+ "repo": "leanprover/cslib",
+ "rev": "86d560b6cbb379bd82512424cbcd2a915a1565e7",
+ "module": "Cslib.Foundations.Data.BiTape",
+ "file": "Cslib/Foundations/Data/BiTape.lean",
+ "public": [
+  {"name": "Cslib.Turing.BiTape", "kind": "structure", "line": 47},
+  {"name": "Cslib.Turing.BiTape.nil", "kind": "def", "line": 60},
+  {"name": "Cslib.Turing.BiTape.empty_eq_nil", "kind": "lemma", "line": 69},
+  {"name": "Cslib.Turing.BiTape.mk₁", "kind": "def", "line": 76},
+  {"name": "Cslib.Turing.BiTape.moveLeft", "kind": "def", "line": 86},
+  {"name": "Cslib.Turing.BiTape.moveRight", "kind": "def", "line": 92},
+  {"name": "Cslib.Turing.BiTape.move", "kind": "def", "line": 100},
+  {"name": "Cslib.Turing.BiTape.optionMove", "kind": "def", "line": 107},
+  {"name": "Cslib.Turing.BiTape.moveLeft_moveRight", "kind": "lemma", "line": 112},
+  {"name": "Cslib.Turing.BiTape.moveRight_moveLeft", "kind": "lemma", "line": 116},
+  {"name": "Cslib.Turing.BiTape.write", "kind": "def", "line": 124},
+  {"name": "Cslib.Turing.BiTape.spaceUsed", "kind": "def", "line": 130},
+  {"name": "Cslib.Turing.BiTape.spaceUsed_write", "kind": "lemma", "line": 133},
+  {"name": "Cslib.Turing.BiTape.spaceUsed_mk₁", "kind": "lemma", "line": 136},
+  {"name": "Cslib.Turing.BiTape.spaceUsed_move", "kind": "lemma", "line": 142}
+ ],
+ "private": [],
+ "missing": [],
+ "unread": "Unnamed instances, the names an `alias ⟨…⟩` command gives, and the names Lean generates for a declaration (constructors, recursors, derived instances) are not read from the source, so they are not listed."
+}

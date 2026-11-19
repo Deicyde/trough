@@ -1,0 +1,19 @@
+{
+ "schema": "trough-ledger/v1",
+ "library": "CSLib",
+ "repo": "leanprover/cslib",
+ "rev": "86d560b6cbb379bd82512424cbcd2a915a1565e7",
+ "module": "Cslib.Crypto.Protocols.PerfectSecrecy.Basic",
+ "file": "Cslib/Crypto/Protocols/PerfectSecrecy/Basic.lean",
+ "public": [
+  {"name": "Cslib.Crypto.Protocols.PerfectSecrecy.EncScheme.jointDist_eq", "kind": "theorem", "line": 43},
+  {"name": "Cslib.Crypto.Protocols.PerfectSecrecy.EncScheme.jointDist_tsum_fst", "kind": "theorem", "line": 50},
+  {"name": "Cslib.Crypto.Protocols.PerfectSecrecy.EncScheme.perfectlySecret_iff_indep", "kind": "theorem", "line": 56},
+  {"name": "Cslib.Crypto.Protocols.PerfectSecrecy.EncScheme.perfectlySecret_iff_ciphertextIndist", "kind": "theorem", "line": 77},
+  {"name": "Cslib.Crypto.Protocols.PerfectSecrecy.EncScheme.indep_of_ciphertextIndist", "kind": "theorem", "line": 95},
+  {"name": "Cslib.Crypto.Protocols.PerfectSecrecy.EncScheme.perfectlySecret_keySpace_ge", "kind": "theorem", "line": 115}
+ ],
+ "private": [],
+ "missing": [],
+ "unread": "Unnamed instances, the names an `alias ⟨…⟩` command gives, and the names Lean generates for a declaration (constructors, recursors, derived instances) are not read from the source, so they are not listed."
+}

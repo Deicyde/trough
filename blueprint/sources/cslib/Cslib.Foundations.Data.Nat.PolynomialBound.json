@@ -1,0 +1,16 @@
+{
+ "schema": "trough-ledger/v1",
+ "library": "CSLib",
+ "repo": "leanprover/cslib",
+ "rev": "86d560b6cbb379bd82512424cbcd2a915a1565e7",
+ "module": "Cslib.Foundations.Data.Nat.PolynomialBound",
+ "file": "Cslib/Foundations/Data/Nat/PolynomialBound.lean",
+ "public": [
+  {"name": "Cslib.PolynomiallyBounded", "kind": "def", "line": 29},
+  {"name": "Cslib.polynomiallyBounded_iff_isBigO", "kind": "theorem", "line": 33},
+  {"name": "Cslib.polynomiallyBounded_iff_le", "kind": "theorem", "line": 49}
+ ],
+ "private": [],
+ "missing": [],
+ "unread": "Unnamed instances, the names an `alias ⟨…⟩` command gives, and the names Lean generates for a declaration (constructors, recursors, derived instances) are not read from the source, so they are not listed."
+}

@@ -1,0 +1,17 @@
+{
+ "schema": "trough-ledger/v1",
+ "library": "CSLib",
+ "repo": "leanprover/cslib",
+ "rev": "86d560b6cbb379bd82512424cbcd2a915a1565e7",
+ "module": "Cslib.Computability.Automata.NA.Total",
+ "file": "Cslib/Computability/Automata/NA/Total.lean",
+ "public": [
+  {"name": "Cslib.Automata.NA.totalize", "kind": "def", "line": 25},
+  {"name": "Cslib.Automata.NA.totalize_run_mtr", "kind": "theorem", "line": 33},
+  {"name": "Cslib.Automata.NA.totalize_mtr_run", "kind": "theorem", "line": 46},
+  {"name": "Cslib.Automata.NA.FinAcc.totalize_language_eq", "kind": "theorem", "line": 55}
+ ],
+ "private": [],
+ "missing": [],
+ "unread": "Unnamed instances, the names an `alias ⟨…⟩` command gives, and the names Lean generates for a declaration (constructors, recursors, derived instances) are not read from the source, so they are not listed."
+}

@@ -147,3 +147,4 @@ lemma ofRelations_diagonal_iff {τ : PFunctor} [τ.Unary]
 ## Sources
 
 - [Cslib/Foundations/Semantics/Frame/Basic.lean at 86d560b6](https://github.com/leanprover/cslib/blob/86d560b6cbb379bd82512424cbcd2a915a1565e7/Cslib/Foundations/Semantics/Frame/Basic.lean)
+- [Declaration ledger](../../../../../sources/cslib/Cslib.Foundations.Semantics.Frame.Basic.json)

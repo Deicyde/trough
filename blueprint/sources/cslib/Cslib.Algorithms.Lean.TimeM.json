@@ -1,0 +1,33 @@
+{
+ "schema": "trough-ledger/v1",
+ "library": "CSLib",
+ "repo": "leanprover/cslib",
+ "rev": "86d560b6cbb379bd82512424cbcd2a915a1565e7",
+ "module": "Cslib.Algorithms.Lean.TimeM",
+ "file": "Cslib/Algorithms/Lean/TimeM.lean",
+ "public": [
+  {"name": "Cslib.Algorithms.Lean.TimeM", "kind": "structure", "line": 50},
+  {"name": "Cslib.Algorithms.Lean.TimeM.pure", "kind": "def", "line": 61},
+  {"name": "Cslib.Algorithms.Lean.TimeM.bind", "kind": "def", "line": 70},
+  {"name": "Cslib.Algorithms.Lean.TimeM.ret_pure", "kind": "theorem", "line": 97},
+  {"name": "Cslib.Algorithms.Lean.TimeM.ret_bind", "kind": "theorem", "line": 98},
+  {"name": "Cslib.Algorithms.Lean.TimeM.ret_map", "kind": "theorem", "line": 100},
+  {"name": "Cslib.Algorithms.Lean.TimeM.ret_mapConst", "kind": "theorem", "line": 101},
+  {"name": "Cslib.Algorithms.Lean.TimeM.ret_seqRight", "kind": "theorem", "line": 103},
+  {"name": "Cslib.Algorithms.Lean.TimeM.ret_seqLeft", "kind": "theorem", "line": 105},
+  {"name": "Cslib.Algorithms.Lean.TimeM.ret_seq", "kind": "theorem", "line": 107},
+  {"name": "Cslib.Algorithms.Lean.TimeM.isMonadHom_pure_ret", "kind": "theorem", "line": 110},
+  {"name": "Cslib.Algorithms.Lean.TimeM.time_bind", "kind": "theorem", "line": 119},
+  {"name": "Cslib.Algorithms.Lean.TimeM.time_pure", "kind": "theorem", "line": 121},
+  {"name": "Cslib.Algorithms.Lean.TimeM.time_map", "kind": "theorem", "line": 122},
+  {"name": "Cslib.Algorithms.Lean.TimeM.time_seqRight", "kind": "theorem", "line": 123},
+  {"name": "Cslib.Algorithms.Lean.TimeM.time_seqLeft", "kind": "theorem", "line": 125},
+  {"name": "Cslib.Algorithms.Lean.TimeM.time_seq", "kind": "theorem", "line": 127},
+  {"name": "Cslib.Algorithms.Lean.TimeM.tick", "kind": "def", "line": 139},
+  {"name": "Cslib.Algorithms.Lean.TimeM.ret_tick", "kind": "theorem", "line": 141},
+  {"name": "Cslib.Algorithms.Lean.TimeM.time_tick", "kind": "theorem", "line": 142}
+ ],
+ "private": [],
+ "missing": [],
+ "unread": "Unnamed instances, the names an `alias ⟨…⟩` command gives, and the names Lean generates for a declaration (constructors, recursors, derived instances) are not read from the source, so they are not listed."
+}

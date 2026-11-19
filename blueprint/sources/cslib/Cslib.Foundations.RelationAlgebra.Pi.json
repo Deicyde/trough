@@ -1,0 +1,19 @@
+{
+ "schema": "trough-ledger/v1",
+ "library": "CSLib",
+ "repo": "leanprover/cslib",
+ "rev": "86d560b6cbb379bd82512424cbcd2a915a1565e7",
+ "module": "Cslib.Foundations.RelationAlgebra.Pi",
+ "file": "Cslib/Foundations/RelationAlgebra/Pi.lean",
+ "public": [
+  {"name": "Cslib.Pi.instRelationAlgebra", "kind": "instance", "line": 24},
+  {"name": "Cslib.RelationAlgebraHom.pi", "kind": "def", "line": 35},
+  {"name": "Cslib.RelationAlgebraHom.pi_apply", "kind": "theorem", "line": 45},
+  {"name": "Cslib.RelationAlgebraHom.eval", "kind": "def", "line": 50},
+  {"name": "Cslib.RelationAlgebraHom.eval_apply", "kind": "theorem", "line": 59},
+  {"name": "Cslib.RelationAlgebraHom.piEquiv", "kind": "def", "line": 65}
+ ],
+ "private": [],
+ "missing": [],
+ "unread": "Unnamed instances, the names an `alias ⟨…⟩` command gives, and the names Lean generates for a declaration (constructors, recursors, derived instances) are not read from the source, so they are not listed."
+}

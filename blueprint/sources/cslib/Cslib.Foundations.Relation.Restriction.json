@@ -1,0 +1,19 @@
+{
+ "schema": "trough-ledger/v1",
+ "library": "CSLib",
+ "repo": "leanprover/cslib",
+ "rev": "86d560b6cbb379bd82512424cbcd2a915a1565e7",
+ "module": "Cslib.Foundations.Relation.Restriction",
+ "file": "Cslib/Foundations/Relation/Restriction.lean",
+ "public": [
+  {"name": "Set.refl_iff_reflOn", "kind": "theorem", "line": 28},
+  {"name": "Set.symm_iff_symmOn", "kind": "theorem", "line": 34},
+  {"name": "Set.ReflOn.of_dom", "kind": "theorem", "line": 41},
+  {"name": "Set.ReflOn.of_cod", "kind": "theorem", "line": 44},
+  {"name": "Set.SymmOn.of_dom", "kind": "theorem", "line": 47},
+  {"name": "Set.SymmOn.of_cod", "kind": "theorem", "line": 50}
+ ],
+ "private": [],
+ "missing": [],
+ "unread": "Unnamed instances, the names an `alias ⟨…⟩` command gives, and the names Lean generates for a declaration (constructors, recursors, derived instances) are not read from the source, so they are not listed."
+}

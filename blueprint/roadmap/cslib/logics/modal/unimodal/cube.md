@@ -208,3 +208,4 @@ theorem T.t_valid : (φ → ◇φ : Proposition Atom) ∈ T World Atom
 ## Sources
 
 - [Cslib/Logics/Modal/Unimodal/Cube.lean at 86d560b6](https://github.com/leanprover/cslib/blob/86d560b6cbb379bd82512424cbcd2a915a1565e7/Cslib/Logics/Modal/Unimodal/Cube.lean)
+- [Declaration ledger](../../../../../sources/cslib/Cslib.Logics.Modal.Unimodal.Cube.json)

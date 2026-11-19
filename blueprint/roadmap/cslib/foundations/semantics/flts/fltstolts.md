@@ -61,3 +61,4 @@ theorem toLTS_mtr {flts : FLTS State Label} {s1 : State} {μs : List Label} {s2 
 ## Sources
 
 - [Cslib/Foundations/Semantics/FLTS/FLTSToLTS.lean at 86d560b6](https://github.com/leanprover/cslib/blob/86d560b6cbb379bd82512424cbcd2a915a1565e7/Cslib/Foundations/Semantics/FLTS/FLTSToLTS.lean)
+- [Declaration ledger](../../../../../sources/cslib/Cslib.Foundations.Semantics.FLTS.FLTSToLTS.json)

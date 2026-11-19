@@ -1,0 +1,22 @@
+{
+ "schema": "trough-ledger/v1",
+ "library": "CSLib",
+ "repo": "leanprover/cslib",
+ "rev": "86d560b6cbb379bd82512424cbcd2a915a1565e7",
+ "module": "Cslib.Languages.LambdaCalculus.LocallyNameless.Stlc.StrongNorm",
+ "file": "Cslib/Languages/LambdaCalculus/LocallyNameless/Stlc/StrongNorm.lean",
+ "public": [
+  {"name": "Cslib.LambdaCalculus.LocallyNameless.Stlc.Saturated", "kind": "structure", "line": 39},
+  {"name": "Cslib.LambdaCalculus.LocallyNameless.Stlc.semanticMap", "kind": "def", "line": 53},
+  {"name": "Cslib.LambdaCalculus.LocallyNameless.Stlc.semanticMap_saturated", "kind": "lemma", "line": 58},
+  {"name": "Cslib.LambdaCalculus.LocallyNameless.Stlc.entailsContext", "kind": "abbrev", "line": 73},
+  {"name": "Cslib.LambdaCalculus.LocallyNameless.Stlc.entailsContext_empty", "kind": "lemma", "line": 77},
+  {"name": "Cslib.LambdaCalculus.LocallyNameless.Stlc.entailsContext_cons", "kind": "lemma", "line": 86},
+  {"name": "Cslib.LambdaCalculus.LocallyNameless.Stlc.entails", "kind": "abbrev", "line": 95},
+  {"name": "Cslib.LambdaCalculus.LocallyNameless.Stlc.soundness", "kind": "lemma", "line": 100},
+  {"name": "Cslib.LambdaCalculus.LocallyNameless.Stlc.strong_norm", "kind": "theorem", "line": 117}
+ ],
+ "private": [],
+ "missing": [],
+ "unread": "Unnamed instances, the names an `alias ⟨…⟩` command gives, and the names Lean generates for a declaration (constructors, recursors, derived instances) are not read from the source, so they are not listed."
+}

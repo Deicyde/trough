@@ -1,0 +1,23 @@
+{
+ "schema": "trough-ledger/v1",
+ "library": "CSLib",
+ "repo": "leanprover/cslib",
+ "rev": "86d560b6cbb379bd82512424cbcd2a915a1565e7",
+ "module": "Cslib.Foundations.Semantics.LTS.OmegaExecution",
+ "file": "Cslib/Foundations/Semantics/LTS/OmegaExecution.lean",
+ "public": [
+  {"name": "Cslib.LTS.OmegaExecution", "kind": "def", "line": 25},
+  {"name": "Cslib.LTS.OmegaExecution.extract_execution", "kind": "theorem", "line": 32},
+  {"name": "Cslib.LTS.OmegaExecution.extract_mTr", "kind": "theorem", "line": 38},
+  {"name": "Cslib.LTS.OmegaExecution.cons", "kind": "theorem", "line": 43},
+  {"name": "Cslib.LTS.OmegaExecution.prepend_execution_tr", "kind": "theorem", "line": 50},
+  {"name": "Cslib.LTS.OmegaExecution.prepend_execution", "kind": "theorem", "line": 60},
+  {"name": "Cslib.LTS.OmegaExecution.append", "kind": "theorem", "line": 70},
+  {"name": "Cslib.LTS.OmegaExecution.flatten_execution'", "kind": "theorem", "line": 87},
+  {"name": "Cslib.LTS.OmegaExecution.flatten_execution", "kind": "theorem", "line": 114},
+  {"name": "Cslib.LTS.OmegaExecution.flatten_mTr", "kind": "theorem", "line": 128}
+ ],
+ "private": [],
+ "missing": [],
+ "unread": "Unnamed instances, the names an `alias ⟨…⟩` command gives, and the names Lean generates for a declaration (constructors, recursors, derived instances) are not read from the source, so they are not listed."
+}

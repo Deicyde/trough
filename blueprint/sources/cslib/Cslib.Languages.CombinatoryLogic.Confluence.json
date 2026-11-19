@@ -1,0 +1,27 @@
+{
+ "schema": "trough-ledger/v1",
+ "library": "CSLib",
+ "repo": "leanprover/cslib",
+ "rev": "86d560b6cbb379bd82512424cbcd2a915a1565e7",
+ "module": "Cslib.Languages.CombinatoryLogic.Confluence",
+ "file": "Cslib/Languages/CombinatoryLogic/Confluence.lean",
+ "public": [
+  {"name": "Cslib.SKI.ParallelReduction", "kind": "inductive", "line": 51},
+  {"name": "Cslib.SKI.ParallelReduction.le_reflTransGen_red", "kind": "theorem", "line": 63},
+  {"name": "Cslib.SKI.Red.le_parallelReduction", "kind": "theorem", "line": 77},
+  {"name": "Cslib.SKI.reflTransGen_parallelReduction_mRed", "kind": "theorem", "line": 94},
+  {"name": "Cslib.SKI.I_irreducible", "kind": "lemma", "line": 106},
+  {"name": "Cslib.SKI.K_irreducible", "kind": "lemma", "line": 110},
+  {"name": "Cslib.SKI.Ka_irreducible", "kind": "lemma", "line": 114},
+  {"name": "Cslib.SKI.S_irreducible", "kind": "lemma", "line": 119},
+  {"name": "Cslib.SKI.Sa_irreducible", "kind": "lemma", "line": 123},
+  {"name": "Cslib.SKI.Sab_irreducible", "kind": "lemma", "line": 129},
+  {"name": "Cslib.SKI.parallelReduction_diamond", "kind": "theorem", "line": 142},
+  {"name": "Cslib.SKI.join_parallelReduction_equivalence", "kind": "theorem", "line": 207},
+  {"name": "Cslib.SKI.join_mRed_equivalence", "kind": "theorem", "line": 212},
+  {"name": "Cslib.SKI.MRed.diamond", "kind": "theorem", "line": 217}
+ ],
+ "private": [],
+ "missing": [],
+ "unread": "Unnamed instances, the names an `alias ⟨…⟩` command gives, and the names Lean generates for a declaration (constructors, recursors, derived instances) are not read from the source, so they are not listed."
+}

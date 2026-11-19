@@ -1,0 +1,21 @@
+{
+ "schema": "trough-ledger/v1",
+ "library": "CSLib",
+ "repo": "leanprover/cslib",
+ "rev": "86d560b6cbb379bd82512424cbcd2a915a1565e7",
+ "module": "Cslib.Languages.LambdaCalculus.LocallyNameless.Fsub.Reduction",
+ "file": "Cslib/Languages/LambdaCalculus/LocallyNameless/Fsub/Reduction.lean",
+ "public": [
+  {"name": "Cslib.LambdaCalculus.LocallyNameless.Fsub.Term.body", "kind": "def", "line": 39},
+  {"name": "Cslib.LambdaCalculus.LocallyNameless.Fsub.Term.body_let", "kind": "lemma", "line": 49},
+  {"name": "Cslib.LambdaCalculus.LocallyNameless.Fsub.Term.body_case", "kind": "lemma", "line": 58},
+  {"name": "Cslib.LambdaCalculus.LocallyNameless.Fsub.Term.open_tm_body", "kind": "lemma", "line": 69},
+  {"name": "Cslib.LambdaCalculus.LocallyNameless.Fsub.Term.Value", "kind": "inductive", "line": 77},
+  {"name": "Cslib.LambdaCalculus.LocallyNameless.Fsub.Term.Value.lc", "kind": "lemma", "line": 84},
+  {"name": "Cslib.LambdaCalculus.LocallyNameless.Fsub.Term.Red", "kind": "inductive", "line": 89},
+  {"name": "Cslib.LambdaCalculus.LocallyNameless.Fsub.Term.Red.lc", "kind": "lemma", "line": 105}
+ ],
+ "private": [],
+ "missing": [],
+ "unread": "Unnamed instances, the names an `alias ⟨…⟩` command gives, and the names Lean generates for a declaration (constructors, recursors, derived instances) are not read from the source, so they are not listed."
+}

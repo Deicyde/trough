@@ -1,0 +1,21 @@
+{
+ "schema": "trough-ledger/v1",
+ "library": "CSLib",
+ "repo": "leanprover/cslib",
+ "rev": "86d560b6cbb379bd82512424cbcd2a915a1565e7",
+ "module": "Cslib.Computability.Automata.TwoWayNA.Basic",
+ "file": "Cslib/Computability/Automata/TwoWayNA/Basic.lean",
+ "public": [
+  {"name": "Cslib.Automata.TwoWayNA", "kind": "structure", "line": 56},
+  {"name": "Cslib.Automata.TwoWayNACfg", "kind": "structure", "line": 68},
+  {"name": "Cslib.Automata.TwoWayNACfg.IsInitialForInput", "kind": "def", "line": 78},
+  {"name": "Cslib.Automata.TwoWayNACfg.IsAccepting", "kind": "def", "line": 83},
+  {"name": "Cslib.Automata.TwoWayNA.toCfgNA", "kind": "def", "line": 88},
+  {"name": "Cslib.Automata.TwoWayNA.toCfgNA_input_eq", "kind": "lemma", "line": 111},
+  {"name": "Cslib.Automata.TwoWayNACfg.eta", "kind": "theorem", "line": 118},
+  {"name": "Cslib.Automata.TwoWayNA.getElem_of_tr", "kind": "theorem", "line": 126}
+ ],
+ "private": [],
+ "missing": [],
+ "unread": "Unnamed instances, the names an `alias ⟨…⟩` command gives, and the names Lean generates for a declaration (constructors, recursors, derived instances) are not read from the source, so they are not listed."
+}

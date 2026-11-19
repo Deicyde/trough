@@ -1,0 +1,20 @@
+{
+ "schema": "trough-ledger/v1",
+ "library": "CSLib",
+ "repo": "leanprover/cslib",
+ "rev": "86d560b6cbb379bd82512424cbcd2a915a1565e7",
+ "module": "Cslib.Crypto.Protocols.PerfectSecrecy.Defs",
+ "file": "Cslib/Crypto/Protocols/PerfectSecrecy/Defs.lean",
+ "public": [
+  {"name": "Cslib.Crypto.Protocols.PerfectSecrecy.EncScheme.ciphertextDist", "kind": "def", "line": 44},
+  {"name": "Cslib.Crypto.Protocols.PerfectSecrecy.EncScheme.jointDist", "kind": "def", "line": 48},
+  {"name": "Cslib.Crypto.Protocols.PerfectSecrecy.EncScheme.marginalCiphertextDist", "kind": "def", "line": 53},
+  {"name": "Cslib.Crypto.Protocols.PerfectSecrecy.EncScheme.posteriorMsgDist", "kind": "def", "line": 60},
+  {"name": "Cslib.Crypto.Protocols.PerfectSecrecy.EncScheme.posteriorMsgDist_apply", "kind": "theorem", "line": 66},
+  {"name": "Cslib.Crypto.Protocols.PerfectSecrecy.EncScheme.PerfectlySecret", "kind": "def", "line": 76},
+  {"name": "Cslib.Crypto.Protocols.PerfectSecrecy.EncScheme.CiphertextIndist", "kind": "def", "line": 83}
+ ],
+ "private": [],
+ "missing": [],
+ "unread": "Unnamed instances, the names an `alias ⟨…⟩` command gives, and the names Lean generates for a declaration (constructors, recursors, derived instances) are not read from the source, so they are not listed."
+}

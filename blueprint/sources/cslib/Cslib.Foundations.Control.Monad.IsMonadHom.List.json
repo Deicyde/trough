@@ -1,0 +1,33 @@
+{
+ "schema": "trough-ledger/v1",
+ "library": "CSLib",
+ "repo": "leanprover/cslib",
+ "rev": "86d560b6cbb379bd82512424cbcd2a915a1565e7",
+ "module": "Cslib.Foundations.Control.Monad.IsMonadHom.List",
+ "file": "Cslib/Foundations/Control/Monad/IsMonadHom/List.lean",
+ "public": [
+  {"name": "Cslib.IsApplicativeHom.map_listMapA", "kind": "theorem", "line": 35},
+  {"name": "Cslib.IsApplicativeHom.map_listForA", "kind": "theorem", "line": 41},
+  {"name": "Cslib.IsMonadHom.map_listMapM'", "kind": "theorem", "line": 54},
+  {"name": "Cslib.IsMonadHom.map_listMapMLoop", "kind": "theorem", "line": 61},
+  {"name": "Cslib.IsMonadHom.map_listMapM", "kind": "theorem", "line": 70},
+  {"name": "Cslib.IsMonadHom.map_listForM", "kind": "theorem", "line": 77},
+  {"name": "Cslib.IsMonadHom.map_listFoldlM", "kind": "theorem", "line": 83},
+  {"name": "Cslib.IsMonadHom.map_listFoldrM", "kind": "theorem", "line": 89},
+  {"name": "Cslib.IsMonadHom.map_listFindSomeM?", "kind": "theorem", "line": 96},
+  {"name": "Cslib.IsMonadHom.map_listFindM?", "kind": "theorem", "line": 103},
+  {"name": "Cslib.IsMonadHom.map_listAnyM", "kind": "theorem", "line": 110},
+  {"name": "Cslib.IsMonadHom.map_listAllM", "kind": "theorem", "line": 117},
+  {"name": "Cslib.IsMonadHom.map_listFilterAuxM", "kind": "theorem", "line": 124},
+  {"name": "Cslib.IsMonadHom.map_listFilterM", "kind": "theorem", "line": 131},
+  {"name": "Cslib.IsAlternativeHom.map_listFirstM", "kind": "theorem", "line": 145},
+  {"name": "Cslib.IsApplicativeHom.map_listSingleton", "kind": "theorem", "line": 155},
+  {"name": "Cslib.IsMonadHom.map_listFlatMap", "kind": "theorem", "line": 159},
+  {"name": "Cslib.IsFunctorHom.map_listNil", "kind": "theorem", "line": 164},
+  {"name": "List.isMonadHom_reverse", "kind": "theorem", "line": 169},
+  {"name": "Cslib.isMonadHom_list_iff", "kind": "theorem", "line": 195}
+ ],
+ "private": [],
+ "missing": [],
+ "unread": "Unnamed instances, the names an `alias ⟨…⟩` command gives, and the names Lean generates for a declaration (constructors, recursors, derived instances) are not read from the source, so they are not listed."
+}

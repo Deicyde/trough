@@ -115,3 +115,4 @@ theorem totalize.nonsink_mtr_iff {μs : List Label} {s t : State} :
 ## Sources
 
 - [Cslib/Foundations/Semantics/LTS/Total.lean at 86d560b6](https://github.com/leanprover/cslib/blob/86d560b6cbb379bd82512424cbcd2a915a1565e7/Cslib/Foundations/Semantics/LTS/Total.lean)
+- [Declaration ledger](../../../../../sources/cslib/Cslib.Foundations.Semantics.LTS.Total.json)

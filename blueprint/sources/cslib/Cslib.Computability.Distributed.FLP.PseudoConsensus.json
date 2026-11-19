@@ -1,0 +1,19 @@
+{
+ "schema": "trough-ledger/v1",
+ "library": "CSLib",
+ "repo": "leanprover/cslib",
+ "rev": "86d560b6cbb379bd82512424cbcd2a915a1565e7",
+ "module": "Cslib.Computability.Distributed.FLP.PseudoConsensus",
+ "file": "Cslib/Computability/Distributed/FLP/PseudoConsensus.lean",
+ "public": [
+  {"name": "Cslib.FLP.Algorithm.PseudoTermination", "kind": "def", "line": 36},
+  {"name": "Cslib.FLP.Algorithm.PseudoConsensus", "kind": "def", "line": 43},
+  {"name": "Cslib.FLP.Algorithm.simpleDeliver", "kind": "def", "line": 48},
+  {"name": "Cslib.FLP.PseudoConsensus.simpleDeliver_fair", "kind": "lemma", "line": 58},
+  {"name": "Cslib.FLP.PseudoConsensus.simpleDeliver_forallActions", "kind": "lemma", "line": 64},
+  {"name": "Cslib.FLP.PseudoConsensus.of_consensus", "kind": "theorem", "line": 75}
+ ],
+ "private": [],
+ "missing": [],
+ "unread": "Unnamed instances, the names an `alias ⟨…⟩` command gives, and the names Lean generates for a declaration (constructors, recursors, derived instances) are not read from the source, so they are not listed."
+}

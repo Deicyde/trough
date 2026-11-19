@@ -1,0 +1,23 @@
+{
+ "schema": "trough-ledger/v1",
+ "library": "CSLib",
+ "repo": "leanprover/cslib",
+ "rev": "86d560b6cbb379bd82512424cbcd2a915a1565e7",
+ "module": "Cslib.Computability.Machines.Turing.MultiTape.Plumbing.OutputToTape",
+ "file": "Cslib/Computability/Machines/Turing/MultiTape/Plumbing/OutputToTape.lean",
+ "public": [
+  {"name": "Turing.MultiTapeTM.outputToTape", "kind": "def", "line": 31},
+  {"name": "Turing.MultiTapeTM.outCfg", "kind": "def", "line": 46},
+  {"name": "Turing.MultiTapeTM.outCfg_workTapes_last", "kind": "lemma", "line": 54},
+  {"name": "Turing.MultiTapeTM.outCfg_workTapes_castSucc", "kind": "lemma", "line": 59},
+  {"name": "Turing.MultiTapeTM.outCfg_workTapePos_last", "kind": "lemma", "line": 64},
+  {"name": "Turing.MultiTapeTM.outCfg_workTapePos_castSucc", "kind": "lemma", "line": 69},
+  {"name": "Turing.MultiTapeTM.outCfg_workTapeSymbols_castSucc", "kind": "lemma", "line": 74},
+  {"name": "Turing.MultiTapeTM.outCfgHom", "kind": "def", "line": 80},
+  {"name": "Turing.MultiTapeTM.initCfg_outputToTape", "kind": "lemma", "line": 91},
+  {"name": "Turing.MultiTapeTM.space_map_outCfgHom_le", "kind": "lemma", "line": 99}
+ ],
+ "private": [],
+ "missing": [],
+ "unread": "Unnamed instances, the names an `alias ⟨…⟩` command gives, and the names Lean generates for a declaration (constructors, recursors, derived instances) are not read from the source, so they are not listed."
+}

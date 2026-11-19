@@ -1,0 +1,28 @@
+{
+ "schema": "trough-ledger/v1",
+ "library": "CSLib",
+ "repo": "leanprover/cslib",
+ "rev": "86d560b6cbb379bd82512424cbcd2a915a1565e7",
+ "module": "Cslib.Algorithms.CCS.VendingMachine",
+ "file": "Cslib/Algorithms/CCS/VendingMachine.lean",
+ "public": [
+  {"name": "Cslib.Algorithms.CCS.VendingMachine.Coin", "kind": "abbrev", "line": 40},
+  {"name": "Cslib.Algorithms.CCS.VendingMachine.Tea", "kind": "abbrev", "line": 43},
+  {"name": "Cslib.Algorithms.CCS.VendingMachine.Coffee", "kind": "abbrev", "line": 46},
+  {"name": "Cslib.Algorithms.CCS.VendingMachine.Constant", "kind": "inductive", "line": 49},
+  {"name": "Cslib.Algorithms.CCS.VendingMachine.vm", "kind": "def", "line": 54},
+  {"name": "Cslib.Algorithms.CCS.VendingMachine.vendingDefs", "kind": "def", "line": 60},
+  {"name": "Cslib.Algorithms.CCS.VendingMachine.ltsD", "kind": "abbrev", "line": 64},
+  {"name": "Cslib.Algorithms.CCS.VendingMachine.vendingDefsND", "kind": "def", "line": 73},
+  {"name": "Cslib.Algorithms.CCS.VendingMachine.ltsND", "kind": "abbrev", "line": 77},
+  {"name": "Cslib.Algorithms.CCS.VendingMachine.vm_ltsD_ltsND_not_bisim", "kind": "theorem", "line": 82},
+  {"name": "Cslib.Algorithms.CCS.VendingMachine.modelD", "kind": "def", "line": 105},
+  {"name": "Cslib.Algorithms.CCS.VendingMachine.modelND", "kind": "def", "line": 109},
+  {"name": "Cslib.Algorithms.CCS.VendingMachine.choiceAfterCoin", "kind": "def", "line": 114},
+  {"name": "Cslib.Algorithms.CCS.VendingMachine.vm_modelD_choiceAfterCoin", "kind": "theorem", "line": 116},
+  {"name": "Cslib.Algorithms.CCS.VendingMachine.vm_modelND_not_choiceAfterCoin", "kind": "theorem", "line": 121}
+ ],
+ "private": [],
+ "missing": [],
+ "unread": "Unnamed instances, the names an `alias ⟨…⟩` command gives, and the names Lean generates for a declaration (constructors, recursors, derived instances) are not read from the source, so they are not listed."
+}

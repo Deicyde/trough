@@ -1,0 +1,27 @@
+{
+ "schema": "trough-ledger/v1",
+ "library": "CSLib",
+ "repo": "leanprover/cslib",
+ "rev": "86d560b6cbb379bd82512424cbcd2a915a1565e7",
+ "module": "Cslib.Logics.LinearLogic.CLL.MLL",
+ "file": "Cslib/Logics/LinearLogic/CLL/MLL.lean",
+ "public": [
+  {"name": "Cslib.Logic.CLL.Proposition.IsMLL", "kind": "def", "line": 38},
+  {"name": "Cslib.Logic.CLL.Proposition.IsMLL.rec", "kind": "def", "line": 45},
+  {"name": "Cslib.Logic.CLL.Proposition.isMLL_dual", "kind": "theorem", "line": 74},
+  {"name": "Cslib.Logic.CLL.Proposition.Context.IsMLL", "kind": "def", "line": 79},
+  {"name": "Cslib.Logic.CLL.Proposition.Context.isMLL_fill", "kind": "theorem", "line": 86},
+  {"name": "Cslib.Logic.CLL.Sequent.IsMLL", "kind": "def", "line": 95},
+  {"name": "Cslib.Logic.CLL.Proof.IsMLL", "kind": "def", "line": 101},
+  {"name": "Cslib.Logic.CLL.Proof.IsMLL.rec", "kind": "def", "line": 109},
+  {"name": "Cslib.Logic.CLL.Proof.isMLL_sequent", "kind": "theorem", "line": 145},
+  {"name": "Cslib.Logic.CLL.Proof.isMLL_cutFree", "kind": "theorem", "line": 158},
+  {"name": "Cslib.Logic.CLL.MLL.Proof", "kind": "abbrev", "line": 179},
+  {"name": "Cslib.Logic.CLL.MLL", "kind": "opaque", "line": 182},
+  {"name": "Cslib.Logic.CLL.MLL.Proof.isMLL_sequent", "kind": "theorem", "line": 192},
+  {"name": "Cslib.Logic.CLL.Proof.cutFreeToMLL", "kind": "def", "line": 198}
+ ],
+ "private": [],
+ "missing": [],
+ "unread": "Unnamed instances, the names an `alias ⟨…⟩` command gives, and the names Lean generates for a declaration (constructors, recursors, derived instances) are not read from the source, so they are not listed."
+}

@@ -75,3 +75,4 @@ theorem Satisfies.unary_dual (f : Frame World τ) {a : τ.A} {φ : Proposition �
 ## Sources
 
 - [Cslib/Logics/Modal/Unary/Basic.lean at 86d560b6](https://github.com/leanprover/cslib/blob/86d560b6cbb379bd82512424cbcd2a915a1565e7/Cslib/Logics/Modal/Unary/Basic.lean)
+- [Declaration ledger](../../../../../sources/cslib/Cslib.Logics.Modal.Unary.Basic.json)

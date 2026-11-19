@@ -1,0 +1,26 @@
+{
+ "schema": "trough-ledger/v1",
+ "library": "CSLib",
+ "repo": "leanprover/cslib",
+ "rev": "86d560b6cbb379bd82512424cbcd2a915a1565e7",
+ "module": "Cslib.Languages.LambdaCalculus.LocallyNameless.Untyped.FullBetaConfluence",
+ "file": "Cslib/Languages/LambdaCalculus/LocallyNameless/Untyped/FullBetaConfluence.lean",
+ "public": [
+  {"name": "Cslib.LambdaCalculus.LocallyNameless.Untyped.Term.Parallel", "kind": "inductive", "line": 30},
+  {"name": "Cslib.LambdaCalculus.LocallyNameless.Untyped.Term.para_lc_l", "kind": "lemma", "line": 53},
+  {"name": "Cslib.LambdaCalculus.LocallyNameless.Untyped.Term.Parallel.lc_refl", "kind": "lemma", "line": 61},
+  {"name": "Cslib.LambdaCalculus.LocallyNameless.Untyped.Term.para_lc_r", "kind": "lemma", "line": 69},
+  {"name": "Cslib.LambdaCalculus.LocallyNameless.Untyped.Term.FullBeta.le_parallel", "kind": "lemma", "line": 77},
+  {"name": "Cslib.LambdaCalculus.LocallyNameless.Untyped.Term.Parallel.le_reflTransGen_fullBeta", "kind": "lemma", "line": 90},
+  {"name": "Cslib.LambdaCalculus.LocallyNameless.Untyped.Term.reflTransGen_parallel_fullBeta", "kind": "theorem", "line": 113},
+  {"name": "Cslib.LambdaCalculus.LocallyNameless.Untyped.Term.para_subst", "kind": "lemma", "line": 121},
+  {"name": "Cslib.LambdaCalculus.LocallyNameless.Untyped.Term.para_open_close", "kind": "lemma", "line": 131},
+  {"name": "Cslib.LambdaCalculus.LocallyNameless.Untyped.Term.para_open_out", "kind": "lemma", "line": 135},
+  {"name": "Cslib.LambdaCalculus.LocallyNameless.Untyped.Term.parallel_diamond", "kind": "theorem", "line": 144},
+  {"name": "Cslib.LambdaCalculus.LocallyNameless.Untyped.Term.confluent_parallel", "kind": "theorem", "line": 207},
+  {"name": "Cslib.LambdaCalculus.LocallyNameless.Untyped.Term.confluent_fullBeta", "kind": "theorem", "line": 212}
+ ],
+ "private": [],
+ "missing": [],
+ "unread": "Unnamed instances, the names an `alias ⟨…⟩` command gives, and the names Lean generates for a declaration (constructors, recursors, derived instances) are not read from the source, so they are not listed."
+}

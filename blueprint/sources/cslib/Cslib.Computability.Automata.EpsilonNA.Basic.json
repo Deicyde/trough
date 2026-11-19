@@ -1,0 +1,18 @@
+{
+ "schema": "trough-ledger/v1",
+ "library": "CSLib",
+ "repo": "leanprover/cslib",
+ "rev": "86d560b6cbb379bd82512424cbcd2a915a1565e7",
+ "module": "Cslib.Computability.Automata.EpsilonNA.Basic",
+ "file": "Cslib/Computability/Automata/EpsilonNA/Basic.lean",
+ "public": [
+  {"name": "Cslib.Automata.εNA", "kind": "structure", "line": 25},
+  {"name": "Cslib.Automata.εNA.εClosure", "kind": "abbrev", "line": 37},
+  {"name": "Cslib.Automata.εNA.filter_ne_τ_eq_map_some", "kind": "theorem", "line": 41},
+  {"name": "Cslib.Automata.εNA.FinAcc", "kind": "structure", "line": 48},
+  {"name": "Cslib.Automata.εNA.FinAcc.mem_language_iff", "kind": "theorem", "line": 63}
+ ],
+ "private": [],
+ "missing": [],
+ "unread": "Unnamed instances, the names an `alias ⟨…⟩` command gives, and the names Lean generates for a declaration (constructors, recursors, derived instances) are not read from the source, so they are not listed."
+}

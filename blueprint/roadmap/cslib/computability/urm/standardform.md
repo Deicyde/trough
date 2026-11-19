@@ -209,3 +209,4 @@ theorem toStandardForm_equiv (p : Program) : p.toStandardForm ≈ p
 ## Sources
 
 - [Cslib/Computability/URM/StandardForm.lean at 86d560b6](https://github.com/leanprover/cslib/blob/86d560b6cbb379bd82512424cbcd2a915a1565e7/Cslib/Computability/URM/StandardForm.lean)
+- [Declaration ledger](../../../../sources/cslib/Cslib.Computability.URM.StandardForm.json)

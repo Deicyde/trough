@@ -1,0 +1,36 @@
+{
+ "schema": "trough-ledger/v1",
+ "library": "CSLib",
+ "repo": "leanprover/cslib",
+ "rev": "86d560b6cbb379bd82512424cbcd2a915a1565e7",
+ "module": "Cslib.Foundations.Order.Huntington",
+ "file": "Cslib/Foundations/Order/Huntington.lean",
+ "public": [
+  {"name": "HuntingtonAlgebra", "kind": "class", "line": 35}
+ ],
+ "private": [
+  {"name": "HuntingtonAlgebra.compl_top", "kind": "lemma", "line": 49},
+  {"name": "HuntingtonAlgebra.sup_compl", "kind": "lemma", "line": 51},
+  {"name": "HuntingtonAlgebra.sup_comm", "kind": "lemma", "line": 57},
+  {"name": "HuntingtonAlgebra.sup_assoc", "kind": "lemma", "line": 59},
+  {"name": "HuntingtonAlgebra.compl_sup", "kind": "lemma", "line": 61},
+  {"name": "HuntingtonAlgebra.compl_compl", "kind": "lemma", "line": 63},
+  {"name": "HuntingtonAlgebra.compl_inj", "kind": "lemma", "line": 67},
+  {"name": "HuntingtonAlgebra.huntington'", "kind": "lemma", "line": 71},
+  {"name": "HuntingtonAlgebra.top_sup_top", "kind": "lemma", "line": 74},
+  {"name": "HuntingtonAlgebra.bot_sup_bot", "kind": "lemma", "line": 81},
+  {"name": "HuntingtonAlgebra.bot_sup", "kind": "lemma", "line": 85},
+  {"name": "HuntingtonAlgebra.sup_idem", "kind": "lemma", "line": 91},
+  {"name": "HuntingtonAlgebra.sup_top", "kind": "lemma", "line": 98},
+  {"name": "HuntingtonAlgebra.sup_compl_eq", "kind": "lemma", "line": 101},
+  {"name": "HuntingtonAlgebra.inf_eq", "kind": "lemma", "line": 107},
+  {"name": "HuntingtonAlgebra.inf_assoc", "kind": "lemma", "line": 109},
+  {"name": "HuntingtonAlgebra.inf_comm", "kind": "lemma", "line": 111},
+  {"name": "HuntingtonAlgebra.sup_inf_self", "kind": "lemma", "line": 113},
+  {"name": "HuntingtonAlgebra.inf_sup_self", "kind": "lemma", "line": 117},
+  {"name": "HuntingtonAlgebra.inf_compl", "kind": "lemma", "line": 121},
+  {"name": "huntington", "kind": "theorem", "line": 143}
+ ],
+ "missing": [],
+ "unread": "Unnamed instances, the names an `alias ⟨…⟩` command gives, and the names Lean generates for a declaration (constructors, recursors, derived instances) are not read from the source, so they are not listed."
+}

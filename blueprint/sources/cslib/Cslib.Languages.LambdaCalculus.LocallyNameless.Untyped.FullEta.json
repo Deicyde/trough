@@ -1,0 +1,32 @@
+{
+ "schema": "trough-ledger/v1",
+ "library": "CSLib",
+ "repo": "leanprover/cslib",
+ "rev": "86d560b6cbb379bd82512424cbcd2a915a1565e7",
+ "module": "Cslib.Languages.LambdaCalculus.LocallyNameless.Untyped.FullEta",
+ "file": "Cslib/Languages/LambdaCalculus/LocallyNameless/Untyped/FullEta.lean",
+ "public": [
+  {"name": "Cslib.LambdaCalculus.LocallyNameless.Untyped.Term.Eta", "kind": "inductive", "line": 29},
+  {"name": "Cslib.LambdaCalculus.LocallyNameless.Untyped.Term.FullEta", "kind": "abbrev", "line": 35},
+  {"name": "Cslib.LambdaCalculus.LocallyNameless.Untyped.Term.FullEta.step_lc_r", "kind": "lemma", "line": 43},
+  {"name": "Cslib.LambdaCalculus.LocallyNameless.Untyped.Term.FullEta.step_lc_l", "kind": "lemma", "line": 47},
+  {"name": "Cslib.LambdaCalculus.LocallyNameless.Untyped.Term.FullEta.redex_app_l_cong", "kind": "theorem", "line": 53},
+  {"name": "Cslib.LambdaCalculus.LocallyNameless.Untyped.Term.FullEta.redex_app_r_cong", "kind": "theorem", "line": 57},
+  {"name": "Cslib.LambdaCalculus.LocallyNameless.Untyped.Term.FullEta.invert_step_app_fvar", "kind": "lemma", "line": 63},
+  {"name": "Cslib.LambdaCalculus.LocallyNameless.Untyped.Term.FullEta.step_not_fv", "kind": "lemma", "line": 72},
+  {"name": "Cslib.LambdaCalculus.LocallyNameless.Untyped.Term.FullEta.steps_fv", "kind": "lemma", "line": 80},
+  {"name": "Cslib.LambdaCalculus.LocallyNameless.Untyped.Term.FullEta.step_subst_cong_l", "kind": "lemma", "line": 84},
+  {"name": "Cslib.LambdaCalculus.LocallyNameless.Untyped.Term.FullEta.steps_subst_cong_l", "kind": "lemma", "line": 92},
+  {"name": "Cslib.LambdaCalculus.LocallyNameless.Untyped.Term.FullEta.step_abs_close", "kind": "lemma", "line": 99},
+  {"name": "Cslib.LambdaCalculus.LocallyNameless.Untyped.Term.FullEta.redex_abs_close", "kind": "lemma", "line": 104},
+  {"name": "Cslib.LambdaCalculus.LocallyNameless.Untyped.Term.FullEta.redex_abs_cong", "kind": "theorem", "line": 110},
+  {"name": "Cslib.LambdaCalculus.LocallyNameless.Untyped.Term.FullEta.step_subst_cong_r", "kind": "lemma", "line": 118},
+  {"name": "Cslib.LambdaCalculus.LocallyNameless.Untyped.Term.FullEta.steps_subst_cong_r", "kind": "lemma", "line": 131},
+  {"name": "Cslib.LambdaCalculus.LocallyNameless.Untyped.Term.FullEta.step_open_cong_r", "kind": "lemma", "line": 138},
+  {"name": "Cslib.LambdaCalculus.LocallyNameless.Untyped.Term.FullEta.steps_open_cong_r", "kind": "lemma", "line": 146},
+  {"name": "Cslib.LambdaCalculus.LocallyNameless.Untyped.Term.FullEta.close_eta_steps", "kind": "lemma", "line": 154}
+ ],
+ "private": [],
+ "missing": [],
+ "unread": "Unnamed instances, the names an `alias ⟨…⟩` command gives, and the names Lean generates for a declaration (constructors, recursors, derived instances) are not read from the source, so they are not listed."
+}

@@ -1,0 +1,27 @@
+{
+ "schema": "trough-ledger/v1",
+ "library": "CSLib",
+ "repo": "leanprover/cslib",
+ "rev": "86d560b6cbb379bd82512424cbcd2a915a1565e7",
+ "module": "Cslib.Languages.LambdaCalculus.LocallyNameless.Untyped.MultiApp",
+ "file": "Cslib/Languages/LambdaCalculus/LocallyNameless/Untyped/MultiApp.lean",
+ "public": [
+  {"name": "Cslib.LambdaCalculus.LocallyNameless.Untyped.Term.multiApp", "kind": "def", "line": 29},
+  {"name": "Cslib.LambdaCalculus.LocallyNameless.Untyped.Term.ListFullBeta", "kind": "inductive", "line": 40},
+  {"name": "Cslib.LambdaCalculus.LocallyNameless.Untyped.Term.multiApp_tail", "kind": "lemma", "line": 48},
+  {"name": "Cslib.LambdaCalculus.LocallyNameless.Untyped.Term.multiApp_lc", "kind": "lemma", "line": 56},
+  {"name": "Cslib.LambdaCalculus.LocallyNameless.Untyped.Term.step_multiApp_l", "kind": "lemma", "line": 62},
+  {"name": "Cslib.LambdaCalculus.LocallyNameless.Untyped.Term.steps_multiApp_l", "kind": "lemma", "line": 70},
+  {"name": "Cslib.LambdaCalculus.LocallyNameless.Untyped.Term.step_multiApp_r", "kind": "lemma", "line": 76},
+  {"name": "Cslib.LambdaCalculus.LocallyNameless.Untyped.Term.steps_multiApp_r", "kind": "lemma", "line": 80},
+  {"name": "Cslib.LambdaCalculus.LocallyNameless.Untyped.Term.listFullBeta_cons_r", "kind": "lemma", "line": 83},
+  {"name": "Cslib.LambdaCalculus.LocallyNameless.Untyped.Term.listFullBeta_cons_l", "kind": "lemma", "line": 86},
+  {"name": "Cslib.LambdaCalculus.LocallyNameless.Untyped.Term.invert_abs_multiApp_st", "kind": "lemma", "line": 97},
+  {"name": "Cslib.LambdaCalculus.LocallyNameless.Untyped.Term.invert_abs_multiApp_mst", "kind": "lemma", "line": 132},
+  {"name": "Cslib.LambdaCalculus.LocallyNameless.Untyped.Term.multiApp_step_lc_r", "kind": "lemma", "line": 151},
+  {"name": "Cslib.LambdaCalculus.LocallyNameless.Untyped.Term.multiApp_steps_lc", "kind": "lemma", "line": 155}
+ ],
+ "private": [],
+ "missing": [],
+ "unread": "Unnamed instances, the names an `alias ⟨…⟩` command gives, and the names Lean generates for a declaration (constructors, recursors, derived instances) are not read from the source, so they are not listed."
+}

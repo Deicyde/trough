@@ -120,3 +120,4 @@ public theorem workTapePos_runFrom_rewindWork (write : Option (Option Symbol))
 ## Sources
 
 - [Cslib/Computability/Machines/Turing/MultiTape/Plumbing/RewindWork.lean at 86d560b6](https://github.com/leanprover/cslib/blob/86d560b6cbb379bd82512424cbcd2a915a1565e7/Cslib/Computability/Machines/Turing/MultiTape/Plumbing/RewindWork.lean)
+- [Declaration ledger](../../../../../../../sources/cslib/Cslib.Computability.Machines.Turing.MultiTape.Plumbing.RewindWork.json)

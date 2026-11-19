@@ -1,0 +1,21 @@
+{
+ "schema": "trough-ledger/v1",
+ "library": "CSLib",
+ "repo": "leanprover/cslib",
+ "rev": "86d560b6cbb379bd82512424cbcd2a915a1565e7",
+ "module": "Cslib.Computability.Machines.Turing.MultiTape.Plumbing.TransformsTapes",
+ "file": "Cslib/Computability/Machines/Turing/MultiTape/Plumbing/TransformsTapes.lean",
+ "public": [
+  {"name": "Turing.MultiTapeTM.TransformsTapes", "kind": "def", "line": 66},
+  {"name": "Turing.MultiTapeTM.TransformsTapes.imp", "kind": "theorem", "line": 78},
+  {"name": "Turing.MultiTapeTM.TransformsTapes.mono", "kind": "theorem", "line": 93},
+  {"name": "Turing.MultiTapeTM.transformsTapes_iff_nil_output", "kind": "theorem", "line": 108},
+  {"name": "Turing.MultiTapeTM.nop", "kind": "def", "line": 128},
+  {"name": "Turing.MultiTapeTM.step_nop", "kind": "lemma", "line": 134},
+  {"name": "Turing.MultiTapeTM.runFrom_nop_one", "kind": "lemma", "line": 141},
+  {"name": "Turing.MultiTapeTM.transformsTapes_nop", "kind": "theorem", "line": 148}
+ ],
+ "private": [],
+ "missing": [],
+ "unread": "Unnamed instances, the names an `alias ⟨…⟩` command gives, and the names Lean generates for a declaration (constructors, recursors, derived instances) are not read from the source, so they are not listed."
+}
