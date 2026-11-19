@@ -15,7 +15,7 @@ Suppose $k$ is a finite field of characteristic 3, and suppose $\overline{rho}:\
 
 ## Proof
 
-Omitted for now. **TODO**
+Omitted for now. …
 
 ## Lean
 

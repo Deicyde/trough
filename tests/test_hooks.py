@@ -31,6 +31,11 @@ def test_a_page_takes_the_longest_key_its_path_starts_with(monkeypatch):
     assert shown("index.md", "T.a") == MISSING.format("T.a")
 
 
+def test_a_name_with_no_documentation_is_code(monkeypatch):
+    monkeypatch.setattr(lean_links, "LINKS", {"fork": {"F.a": ""}})
+    assert shown("roadmap/fork/part-01/a.md", "F.a") == "<code>F.a</code>"
+
+
 SLIM = importlib.util.spec_from_file_location("slim_code", ROOT / "hooks" / "slim_code.py")
 slim_code = importlib.util.module_from_spec(SLIM)
 SLIM.loader.exec_module(slim_code)

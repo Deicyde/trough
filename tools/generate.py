@@ -441,6 +441,7 @@ def generate() -> dict[Path, str]:
         cslib=cslib_data["rev"] if cslib_data else None,
         readers=readers,
         physlib=physlib_data["source"]["rev"] if physlib_data else None,
+        blueprint_revs={project.id: project.rev for project in projects},
         satellites=sat_stats["projects"] if sat_stats else None,
     )
     print(

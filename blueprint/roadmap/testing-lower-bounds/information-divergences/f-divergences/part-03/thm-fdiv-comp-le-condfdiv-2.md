@@ -1,0 +1,32 @@
+---
+declaration: theorem
+origin: cited
+lean: ProbabilityTheory.fDiv_comp_le_compProd_right'
+statement: formalized
+proof: formalized
+---
+
+# Conditioning increases f-divergence
+
+Let $\mu$ be a finite measure $\mathcal X$ and let $\kappa, \eta : \mathcal X \rightsquigarrow \mathcal Y$ be two finite kernels. Then $D_f(\kappa \circ \mu, \eta \circ \mu) \le D_f(\mu \otimes \kappa, \mu \otimes \eta) = D_f(\kappa, \eta \mid \mu)$ .
+
+## Depends on
+
+- [f-divergence](../part-01/def-fdiv.md)
+- [Conditional f-divergence](../part-01/def-condfdiv.md)
+
+## Proof depends on
+
+- [fDiv_comp_le_compProd_2](thm-fdiv-comp-le-compprod-2.md)
+
+## Proof
+
+This is a particular case of Theorem [fDiv_comp_le_compProd_2](thm-fdiv-comp-le-compprod-2.md).
+
+## Lean
+
+Formalized as [`ProbabilityTheory.fDiv_comp_le_compProd_right'`](https://RemyDegenne.github.io/testing-lower-bounds/docs/find/#doc/ProbabilityTheory.fDiv_comp_le_compProd_right').
+
+## Sources
+
+- [Lower bounds for hypothesis testing blueprint: sections/f_divergence.tex, line 1287](https://github.com/RemyDegenne/testing-lower-bounds/blob/6c303c98977be5a81e5a659823d83038d48a9a04/blueprint/src/sections/f_divergence.tex#L1287)

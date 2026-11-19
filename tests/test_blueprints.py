@@ -1,3 +1,4 @@
+import dataclasses
 import json
 from pathlib import Path
 
@@ -184,6 +185,36 @@ def test_articles_carry_the_blueprints_marks(blueprint, tmp_path):
     assert basics.tail == "**Remark.** A remark.\n\n*Proof.* Proves the remark, not the lemma."
 
 
+def test_the_catalogs_chapter_note_is_on_the_front_page(blueprint, tmp_path):
+    note = "A fork of o/q, one commit ahead of it."
+    built = blueprints.chapter(dataclasses.replace(project(tmp_path), note=note), blueprint, {})
+    assert built.root.prose.split("\n\n")[1] == note
+    [demo] = blueprints.load_projects(DATA.parent, [{"id": "pfr", "name": "PFR", "chapter_note": note}])
+    assert demo.note == note
+
+
+def test_a_relative_dochome_is_read_from_the_projects_homepage(tmp_path):
+    (tmp_path / "web.tex").write_text("\\dochome{../docs}\n\\begin{document}\\chapter{C}\n"
+                                      "\\begin{lemma}\\label{a}\\lean{A.b}\\leanok B.\\end{lemma}\n\\end{document}\n")
+    blueprint = leanblueprint.read(tmp_path, "web.tex")
+    site = dataclasses.replace(project(tmp_path), homepage="https://example.org/proj/")
+    assert blueprints.chapter(site, blueprint, {}).lean_links["A.b"] == "https://example.org/proj/docs/find/#doc/A.b"
+    # Without a homepage there is nothing to read it from, and the site check finds the links.
+    assert blueprints.chapter(project(tmp_path), blueprint, {}).lean_links["A.b"] == "../docs/find/#doc/A.b"
+
+
+def test_a_project_without_api_documentation_shows_its_names_as_code(tmp_path):
+    (tmp_path / "web.tex").write_text("\\dochome{https://upstream.org/docs}\n\\begin{document}\\chapter{C}\n"
+                                      "\\begin{lemma}\\label{a}\\lean{A.b}\\leanok B.\\end{lemma}\n\\end{document}\n")
+    fork = dataclasses.replace(project(tmp_path), lean_docs=False)
+    built = blueprints.chapter(fork, leanblueprint.read(tmp_path, "web.tex"), {})
+    [leaf] = [node for node in walk(built.root) if not hasattr(node, "entries")]
+    assert dict(leaf.notes)["Lean"] == "Stated as `A.b`; the blueprint marks no proof of it as formalized."
+    assert built.lean_links == {"A.b": ""}  # the site shows it as code, not as missing
+    [demo] = blueprints.load_projects(DATA.parent, [{"id": "pfr", "name": "PFR", "lean_docs": False}])
+    assert not demo.lean_docs
+
+
 def test_a_node_in_mathlib_is_the_mathlib_article_it_names(blueprint, tmp_path):
     from trough.vault import Leaf
 
@@ -192,6 +223,7 @@ def test_a_node_in_mathlib_is_the_mathlib_article_it_names(blueprint, tmp_path):
     built, leaves = build(blueprint, tmp_path, {"Mathlib.main": mathlib_leaf})
     assert "Main" not in leaves
     assert leaves["a-proof-label"].proof_depends == [mathlib_leaf]
+    assert "for 1 of them in Mathlib, the article is the Mathlib chapter's." in built.root.prose
 
 
 def test_a_library_without_a_license_shows_structure_only(blueprint, tmp_path):
@@ -303,6 +335,61 @@ def test_missing_files_are_problems(tmp_path):
     assert all(leanblueprint.UNREAD.search(problem) for problem in problems)  # so a refresh refuses
     with pytest.raises(FileNotFoundError):
         leanblueprint.read(tmp_path, "renamed.tex")
+
+
+def test_an_input_that_holds_no_tex_is_skipped(tmp_path):
+    """A bibliography LaTeX writes, or a Markdown file outside the blueprint's TeX, is no text to read."""
+    (tmp_path / "web.tex").write_text("\\author{\\input{../../AUTHORS.md}}\n\\begin{document}\n"
+                                      "\\chapter{A}\n\\input{../print/bu1.bbl}\n\\end{document}\n")
+    problems = leanblueprint.read(tmp_path, "web.tex").problems
+    assert problems == ["web.tex:1: \\input{../../AUTHORS.md} holds no blueprint text; skipped",
+                        "web.tex:4: \\input{../print/bu1.bbl} holds no blueprint text; skipped"]
+    assert not any(leanblueprint.UNREAD.search(problem) for problem in problems)  # so a refresh goes ahead
+
+
+def test_the_web_branch_of_ifplastex_is_read(tmp_path):
+    (tmp_path / "web.tex").write_text("\\newif\\ifplastex\n\\begin{document}\n\\chapter{A}\nSee \\ifplastex the web\n"
+                                      "\\else the PDF\n\\fi page.\n\\begin{lemma}\\label{a} B. \\end{lemma}\n\\end{document}\n")
+    blueprint = leanblueprint.read(tmp_path, "web.tex")
+    assert [" ".join(prose.text.split()) for prose in blueprint.prose] == ["See the web page."]
+    assert blueprint.graph[0].where == leanblueprint.Where("web.tex", 7)  # lines still count
+
+
+def test_a_title_block_in_the_text_is_dropped():
+    assert writer().statement(r"\title[Short]{A long title} \date{\today} \author{A \and B} Text.") == "Text."
+
+
+def test_a_checkmark_is_a_check_mark():
+    assert writer().statement(r"Gowers--Hatami & \checkmark") == "Gowers–Hatami & ✓"
+
+
+def test_verb_is_code():
+    assert writer().statement(r"see \verb|Rep.leftRegular R G| and \verb!a|b!.") == "see `Rep.leftRegular R G` and `a|b`."
+
+
+def test_a_thebibliography_is_a_list():
+    tex_ = "\\begin{thebibliography}{9}\n\\bibitem{a}\nL.~Carlitz, \\emph{Note}.\n\n\\bibitem[IR]{b} K. Ireland.\n\\end{thebibliography}"
+    assert writer().statement(tex_) == "**References**\n\n- [1] L. Carlitz, *Note*.\n- [IR] K. Ireland."
+    # Citations print the same labels: an item's own, or its number among the items with none.
+    assert tex.bibitems("\\bibitem{a} A. \\bibitem[IR]{b} B. \\bibitem{c} C.") == [("a", "1"), ("b", "IR"), ("c", "2")]
+
+
+def test_citations_read_a_thebibliography_and_the_print_entrys_bibliography(tmp_path):
+    src = tmp_path / "src"
+    src.mkdir()
+    (src / "web.tex").write_text(
+        "\\newcommand{\\putbib}{}\n\\begin{document}\n\\chapter{A}\n"
+        "\\begin{lemma}\\label{a}\\lean{A.a}\\leanok By \\cite[Exercise 1.1.1]{ds} and \\cite{luzin}.\\end{lemma}\n"
+        "\\putbib\n\\begin{thebibliography}{9}\\bibitem{ds} F. Diamond.\\end{thebibliography}\n\\end{document}\n")
+    # Brownian motion's layout: bibunits in print.tex names the .bib, and the web entry none.
+    (src / "print.tex").write_text("\\usepackage{bibunits}\n% \\defaultbibliography{old}\n"
+                                        "\\defaultbibliography{refs}\n\\input{content}\n")
+    (src / "refs.bib").write_text("@book{luzin, author = {Luzin, N.}, title = {Integral}, year = {1913}}\n")
+    blueprint = leanblueprint.read(src, "web.tex")
+    assert blueprint.bibliography == ["refs.bib"] and blueprint.print_files == ["print.tex"]
+    assert blueprint.bibitems == {"ds": "1"}
+    built, leaves = build(blueprint, tmp_path)
+    assert leaves["a"].body == "By (1, Exercise 1.1.1) and (Luzin 1913)."
 
 
 def test_a_proof_inside_a_proof_is_part_of_it(tmp_path):
@@ -534,3 +621,87 @@ def test_round_three_pages(tmp_path):
     assert "Theorem: $R$ is Church-Rosser iff it is confluent." in leaves  # no … after a full stop
     text = " ".join([page.prose, page.tail, *(entry.before for entry in page.entries)])
     assert "Remark R." in text and "shown with its statement" not in text  # the remark is inside lemma e
+
+
+def test_a_projects_todo_macro_is_dropped(tmp_path):
+    (tmp_path / "web.tex").write_text(
+        "\\newcommand{\\todo}[1]{{\\color{red}{\\textbf{#1}}}}\n\\begin{document}\n\\chapter{A}\n"
+        "\\begin{lemma}\\label{a}\\lean{A.a}\\leanok Prove it.\\todo{Lean hates me.}\\end{lemma}\n"
+        "\\begin{proof} Easy. \\todo[inline]{fill in proof.}\\end{proof}\n\\end{document}\n")
+    blueprint = leanblueprint.read(tmp_path, "web.tex")
+    built, leaves = build(blueprint, tmp_path)
+    assert leaves["a"].body == "Prove it."
+    assert dict(leaves["a"].notes)["Proof"] == "Easy."
+
+
+@pytest.mark.parametrize("markdown, kept", [
+    # From testing-lower-bounds: a parenthetical TODO goes and its sentence stays.
+    ("If we restrict the morphisms to Markov kernels, we get a Markov category (TODO ref), which is a copy-discard "
+     "category.", "If we restrict the morphisms to Markov kernels, we get a Markov category, which is a copy-discard "
+     "category."),
+    ("- The discard kernel $d_{\\mathcal X}$ (TODO: conflicts with deterministic kernel notation). This is a kernel "
+     "from $\\mathcal X$ to $*$.\n- The copy kernel.",
+     "- The discard kernel $d_{\\mathcal X}$. This is a kernel from $\\mathcal X$ to $*$.\n- The copy kernel."),
+    ("- $\\mathcal{M}$: càdlàg martingales (TODO: (he2019) add uniform integrability)", "- $\\mathcal{M}$: càdlàg martingales"),
+    ("and the fact that $a = b$ (Lemma TODO), done.", "and the fact that $a = b$, done."),
+    # A list item keeps its text before the TODO.
+    ("- First.\n- Second, TODO: say more.\n- TODO: third.", "- First.\n- Second …"),
+    # Any other TODO goes with the rest of its paragraph, from its sentence.
+    ("Note the bound. TODO: why? It is needed.\n\nNext paragraph.", "Note the bound. …\n\nNext paragraph."),
+    ("TODO: reorganize this section.\n\nThe measure is finite.", "…\n\nThe measure is finite."),
+    ("TODO", "…"),
+    # Formulas and code are not read.
+    ("$$\nTODO\n$$", "$$\nTODO\n$$"),
+])
+def test_todo_notes_are_cut(markdown, kept):
+    assert blueprints.without_notes(markdown) == kept
+
+
+def test_plans_and_invitations_are_cut():
+    plans = ("In addition, contributors can participate at different levels. Experts may want to focus on the "
+             "foundations.\n\n## Departures\n\nSimplifications have appeared. In particular, we plan to incorporate "
+             "the following.\n\nThis is hard over a scheme, so we leave this as future work.\n\n"
+             "One proof would be by induction. Ideas would be appreciated. Feel free to help.")
+    assert blueprints.without_notes(plans, plans=True) == (
+        "…\n\n## Departures\n\nSimplifications have appeared. …\n\nOne proof would be by induction. …")
+    assert blueprints.without_notes(plans) == plans  # a statement, or a proof marked formalized, keeps them
+
+
+def test_a_proof_that_is_only_notes_is_no_proof(tmp_path):
+    (tmp_path / "web.tex").write_text(
+        "\\begin{document}\n\\chapter{A}\n"
+        "\\begin{lemma}\\label{a}\\lean{A.a}\\leanok A.\\end{lemma}\\begin{proof} TODO \\end{proof}\n"
+        "\\begin{lemma}\\label{b}\\lean{A.b}\\leanok B.\\end{lemma}\\begin{proof} To do. \\end{proof}\n"
+        "\\begin{lemma}\\label{c}\\lean{A.c}\\leanok C.\\end{lemma}\\begin{proof} One proof is by induction. Ideas "
+        "would be appreciated.\\end{proof}\n"
+        "\\begin{lemma}\\label{d}\\lean{A.d}\\leanok D.\\end{lemma}\\begin{proof}\\leanok To do so, use C.\\end{proof}\n"
+        "\\end{document}\n")
+    built, leaves = build(leanblueprint.read(tmp_path, "web.tex"), tmp_path)
+    assert "Proof" not in dict(leaves["a"].notes) and "Proof" not in dict(leaves["b"].notes)
+    assert dict(leaves["c"].notes)["Proof"] == "One proof is by induction. …"
+    assert dict(leaves["d"].notes)["Proof"] == "To do so, use C."
+
+
+def test_macro_glue_keeps_control_words_apart():
+    macros = tex.definitions(r"\newcommand{\bra}[1]{\langle#1|}\newcommand{\degree}{d}")
+    assert tex.expand(r"\bra{u} \bra{\psi} 0\le\degree", macros) == r"\langle u| \langle\psi| 0\le d"
+
+
+def test_formulas_lose_what_mathjax_does_not_define():
+    assert tex.math_text(r"\mathsf{V}^{\textsc{Compr}} = b. \qedhere", True) == r"\mathsf{V}^{\text{Compr}} = b."
+    assert tex.math_text(r"\sum\displaylimits_{x} {\larger[2] f} \qed", False) == r"\sum\limits_{x} { f}"
+    assert tex.math_text(r"\mathop{\vcenter{\hbox{\larger[4]$\mathbb{E}$}}}", False) == r"\mathop{\vcenter{{\mathbb{E}}}}"
+
+
+def test_a_page_ends_before_its_articles_pass_the_budget(tmp_path, monkeypatch):
+    long = "A long statement. " * 50
+    lemmas = "".join(f"\\begin{{lemma}}\\label{{l{k}}}\\lean{{A.l{k}}}\\leanok {long}\\end{{lemma}}\n" for k in range(4))
+    (tmp_path / "web.tex").write_text(f"\\begin{{document}}\n\\chapter{{A}}\n{lemmas}\\end{{document}}\n")
+    blueprint = leanblueprint.read(tmp_path, "web.tex")
+    [page] = [entry.node for entry in blueprints.chapter(project(tmp_path), blueprint, {}).root.entries]
+    assert len(page.entries) == 4  # four nodes are well under the budget and under 20
+    monkeypatch.setattr(blueprints, "PAGE_BUDGET", 2 * len(long))
+    [page] = [entry.node for entry in blueprints.chapter(project(tmp_path), blueprint, {}).root.entries]
+    parts = [entry.node for entry in page.entries]
+    assert len(parts) > 1 and all(part.navigation == "transparent" for part in parts)
+    assert sum(len(part.entries) for part in parts) == 4

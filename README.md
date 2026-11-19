@@ -6,17 +6,18 @@ vaults, rendered with [AutoformBot](https://github.com/facebookresearch/autoform
 and published at https://trough.jackmccarthy.org/. The book shows no Lean
 progress: the generated `blueprint/roadmap/README.md` sets `tracks_lean: false`.
 
-`catalog/libraries.toml` lists the 65 libraries trough targets: Mathlib, Tau
-Ceti, ATLAS, the research projects with blueprints (Imperial's FLT, PNT+, PFR,
-Equational Theories, Strong PNT), Formal Conjectures, Physlib, CSLib,
-Batteries, Aesop, CompPoly, Foundation, the Analysis I companion, the large corpora (Anthropic's FLT, Lean
+`catalog/libraries.toml` lists the 81 libraries trough targets: Mathlib, Tau
+Ceti, ATLAS, the research projects with leanblueprints (among them Imperial's
+FLT, PNT+, PFR, Carleson's theorem, sphere packing and MIP* = RE), Formal
+Conjectures, Physlib, CSLib, Batteries, Aesop, CompPoly, Foundation, the
+Analysis I companion, the large corpora (Anthropic's FLT, Lean
 Pool, OpenAI Math, Axiom's CFSG and Stacks Project) and the 44 Formal Frontier
 libraries. Each gets the article unit that suits it, recorded as `map_unit` and
 `map_plan`.
 Mathlib is mapped from its curated lists, Tau Ceti from the declarations its
-roadmaps' status files name and the results its docstrings name, five
-research projects from their leanblueprints (Imperial's FLT, PFR, Equational
-Theories, Strong PNT and PNT+), the Formal Frontier libraries from their
+roadmaps' status files name and the results its docstrings name, the
+research projects with leanblueprints from those blueprints, the Formal
+Frontier libraries from their
 headline results, Formal Conjectures from its problem files, Lean Pool from
 its project cards, Anthropic's FLT from the landmark theorems of its proof,
 Axiom's CFSG from its proof's case division and its milestones, Axiom's
@@ -76,6 +77,9 @@ section is a page that reads in the blueprint's order: its prose, remarks and
 examples, smaller units as headings, and each node's card where the node
 stands. A labelled display, figure or table shows a number, counted on its
 page, and references print it; tables, listings and figure captions are kept.
+TODO notes are left out, as are sentences about plans and invitations in a
+section's prose and in proofs the blueprint does not mark formalized; each cut
+is marked with an ellipsis.
 
 1. `data/blueprints/<id>/source.json` pins the library's commit, names its
    web entry file and records its node count. `src/` holds the TeX and BibTeX
@@ -95,13 +99,17 @@ page, and references print it; tables, listings and figure captions are kept.
    and in a proof under "Proof depends on".
 4. AutoformBot looks Lean names up only in this repository, which holds none
    of these libraries' Lean, so `hooks/lean_links.py` links each one to the
-   library's documentation instead.
+   library's documentation instead. A library whose catalog entry says
+   `lean_docs = false` publishes no documentation, so its names are shown as
+   code.
 5. The **Blueprint data** workflow refreshes the sources weekly from each
    library's newest commit; `tools/refresh_blueprints.py ID CHECKOUT` does the
    same from a local checkout. PNT+'s blueprint is LeanArchitect output that
    `lake build :blueprint` writes, so the **Blueprint build** workflow builds
    it in CI first and the copy of that output sits in `src/leanarchitect/`. A refresh writes nothing, and the workflow
-   fails, when the blueprint names a file its repository lacks, reads to no
+   fails, when the blueprint names a TeX file its repository lacks (a missing
+   `.bbl`, which a LaTeX run writes, or `.md`, such as an authors list, holds
+   no blueprint text and is skipped), reads to no
    nodes or to under half the last count, or when a library whose text is
    shown loses its license or changes it.
 

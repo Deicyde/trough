@@ -1,0 +1,118 @@
+\section{The VCVio Library}\label{sec:vcvio}
+
+This library provides a formal framework for reasoning about computations that make \emph{oracle
+queries}. Many cryptographic primitives and interactive protocols use oracles to model (or simulate)
+external functionality such as random responses, coin flips, or more structured queries. The VCVio
+library "lifts" these ideas into a setting where both the abstract specification and concrete
+simulation of oracles may be studied, and their probabilistic behavior analyzed.
+
+The main ingredients of the library are as follows:
+
+\begin{definition}[Specification of Oracles]
+    \label{def:oracle_spec}
+    An oracle specification on an index type $\iota$ is a map $\mathsf{spec} : \iota \to \mathsf{Type}$.
+    Each $t : \iota$ is a possible query, and $\mathsf{spec}\ t$ is the type of answers to that
+    query. The query type is therefore the index type itself (\verb|spec.Domain| is $\iota$), and the
+    answer type depends on the query (\verb|spec.Range t| is $\mathsf{spec}\ t$). An oracle
+    specification is the same data as a polynomial functor with positions $\iota$ and directions
+    $\mathsf{spec}\ t$. The specification only describes interfaces, not how the oracles behave.
+    \lean{OracleSpec}
+    \leanok
+\end{definition}
+
+\begin{definition}[Standard Oracle Specifications]
+    \label{def:standard_oracle_specs}
+    \begin{itemize}
+        \item $A \to_{\mathsf{o}} B$: oracles that take inputs in $A$ and answer every query in $B$.
+        \item \verb|emptySpec|, written $[]_{\mathsf{o}}$: no oracles.
+        \item \verb|coinSpec| $= \mathsf{Unit} \to_{\mathsf{o}} \mathsf{Bool}$: a coin-flipping oracle.
+        \item \verb|unifSpec|: indexed by $n \in \mathbb{N}$, the query $n$ is answered in
+        $\mathsf{Fin}\ (n+1) = \{0, \ldots, n\}$; with uniform answers it samples uniformly from this set.
+    \end{itemize}
+    Specifications combine by disjoint sum $\mathsf{spec}_1 + \mathsf{spec}_2$.
+    \lean{OracleSpec.emptySpec, coinSpec, unifSpec}
+    \leanok
+    \uses{def:oracle_spec}
+\end{definition}
+
+We often require extra properties of query and answer types, such as decidable equality or
+finiteness. These are stated as ordinary instance hypotheses on the index type and on
+\verb|spec.Range t| (quantified over $t$), rather than as bundled classes on the specification.
+
+\begin{definition}[Oracle Computation]
+    \label{def:oracle_computation}
+    An oracle computation \verb|OracleComp spec| $\alpha$ is a program that makes queries to the oracles of
+    \verb|spec| and returns a value of type $\alpha$. It is the free monad of the polynomial functor
+    of \verb|spec|, so every computation either
+    \begin{itemize}
+        \item returns a value without making any queries (\verb|pure|), or
+        \item makes one query $t$ and continues with a function of the answer in \verb|spec.Range t|
+        (\verb|queryBind|).
+    \end{itemize}
+    There is no failure constructor. Computations that may fail are written in
+    \verb|OptionT (OracleComp spec)|. Computations whose only oracle is \verb|unifSpec| are called
+    probabilistic computations, \verb|ProbComp|.
+    \lean{OracleComp}
+    \leanok
+    \uses{def:oracle_spec}
+\end{definition}
+
+\begin{definition}[Handling Oracle Queries]
+    \label{def:handling_oracle_queries}
+    To run oracle computations, we need a way to handle (or implement) the oracle queries.
+    A query implementation \verb|QueryImpl spec m| maps every query $t$ to a computation in a monad
+    $m$ returning an answer in \verb|spec.Range t|. Depending on the monad, this allows various
+    interpretations of the queries.
+    \lean{QueryImpl}
+    \leanok
+    \uses{def:oracle_spec}
+\end{definition}
+
+\begin{definition}[Probabilistic Semantics of Oracle Computations]
+    \label{def:probabilistic_semantics_of_oracle_computations}
+    A computation denotes a subprobability measure on its outputs, \verb|evalDist mx|. The missing
+    mass represents failure or nontermination; the output distribution does not add an
+    \verb|Option| outcome. For oracle computations, the semantics is fixed by choosing a probability
+    measure on the answers to each query. The usual choice is the uniform measure, as for
+    \verb|ProbComp|. Probabilities of outputs and events are defined from this measure.
+    \lean{evalDist}
+    \leanok
+    \uses{def:oracle_computation}
+\end{definition}
+
+\begin{definition}[Simulating Oracle Queries with Other Oracles]
+    \label{def:sim_oracle}
+    Given a query implementation of \verb|spec| in a monad $m$, \verb|simulateQ| runs an oracle
+    computation by substituting the implementation for each query. Taking $m$ to be a computation
+    with access to other oracles, possibly with state (for example a state monad over \verb|OracleComp spec'|),
+    simulates one specification by another.
+    \lean{simulateQ}
+    \leanok
+    \uses{def:oracle_computation, def:handling_oracle_queries}
+\end{definition}
+
+\begin{definition}[Logging \& Caching Oracle Queries]
+    \label{def:logging_caching_oracle_queries}
+    Using the simulation framework, we can add logging and caching behaviors to oracle queries:
+    \begin{itemize}
+        \item Logging records all queries made during a computation
+        \item Caching remembers query responses and reuses them for repeated queries
+    \end{itemize}
+    Logging forwards every query and records it. Caching forwards only cache misses and answers
+    repeated queries from the cache.
+    \lean{OracleSpec.loggingOracle, OracleSpec.cachingOracle}
+    \leanok
+    \uses{def:oracle_computation, def:sim_oracle}
+\end{definition}
+
+\begin{definition}[Random Oracle]
+    \label{def:random_oracle}
+    A random oracle is implemented as a caching oracle that uses lazy sampling:
+    \begin{itemize}
+        \item On first query: generates a uniform random response and caches it
+        \item On repeated queries: returns the cached response
+    \end{itemize}
+    \lean{OracleSpec.randomOracle}
+    \leanok
+    \uses{def:oracle_computation, def:handling_oracle_queries}
+\end{definition}

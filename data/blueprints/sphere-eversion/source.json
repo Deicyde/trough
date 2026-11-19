@@ -1,0 +1,9 @@
+{
+ "repo": "leanprover-community/sphere-eversion",
+ "rev": "33ab3d626854a0f0f04ed5772e3102d652e96475",
+ "date": "2026-10-17T12:07:49+02:00",
+ "entry": "blueprint/src/web.tex",
+ "license": "Apache-2.0",
+ "text": true,
+ "nodes": 73
+}
