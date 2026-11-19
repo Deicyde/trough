@@ -1,6 +1,6 @@
 {"unresolved": ["Mathlib.FieldTheory.Finite.Basic", "Mathlib.Order.LiminfLimsup"],
  "stats":
- {"walked": 30667, "theorems_with_proof": 452, "theorems": 452, "listed": 936, "cited": 2751},
+ {"walked": 30667, "theorems_with_proof": 452, "theorems": 452, "listed": 936, "cited": 3056},
  "schema": "trough-concept-deps/v1",
  "modules":
  {"Mathlib.Order.LiminfLimsup":
@@ -24314,6 +24314,13 @@
    "line": 37,
    "kind": "theorem",
    "deprecated": null},
+  "tendsto_of_no_upcrossings":
+  {"signature":
+   "tendsto_of_no_upcrossings.{u_2, u_3} {α : Type u_2} {β : Type u_3}\n  [ConditionallyCompleteLinearOrder α] [TopologicalSpace α] [OrderTopology α] [DenselyOrdered α]\n  {f : Filter β} {u : β → α} {s : Set α} (hs : Dense s)\n  (H : ∀ a ∈ s, ∀ b ∈ s, a < b → ¬((∃ᶠ (n : β) in f, u n < a) ∧ ∃ᶠ (n : β) in f, b < u n))\n  (h : Filter.IsBoundedUnder (fun x1 x2 => x1 ≤ x2) f u := by isBoundedDefault)\n  (h' : Filter.IsBoundedUnder (fun x1 x2 => x1 ≥ x2) f u := by isBoundedDefault) :\n  ∃ c, Filter.Tendsto u f (nhds c)",
+   "module": "Mathlib.Topology.Order.LiminfLimsup",
+   "line": 313,
+   "kind": "theorem",
+   "deprecated": null},
   "taylor_within_zero_eval":
   {"signature":
    "taylor_within_zero_eval.{u_1} {E : Type u_1} [NormedAddCommGroup E] [NormedSpace ℝ E] (f : ℝ → E)\n  (s : Set ℝ) (x₀ x : ℝ) : taylorWithinEval f 0 s x₀ x = f x₀",
@@ -24410,6 +24417,33 @@
    "taylorCoeffWithin.{u_1} {E : Type u_1} [NormedAddCommGroup E] [NormedSpace ℝ E] (f : ℝ → E) (k : ℕ)\n  (s : Set ℝ) (x₀ : ℝ) : E",
    "module": "Mathlib.Analysis.Calculus.Taylor",
    "line": 62,
+   "kind": "def",
+   "deprecated": null},
+  "tateComplexFunctor":
+  {"signature":
+   "tateComplexFunctor.{u} (R G : Type u) [CommRing R] [Group G] [Fintype G] :\n  CategoryTheory.Functor (Rep.{u, u, u} R G) (CochainComplex (ModuleCat R) ℤ)",
+   "module": "Mathlib.RepresentationTheory.Homological.TateCohomology.Basic",
+   "line": 131,
+   "kind": "def",
+   "deprecated": null},
+  "tateComplex":
+  {"signature":
+   "tateComplex.{u} {R G : Type u} [CommRing R] [Group G] [Fintype G] (M : Rep.{u, u, u} R G) :\n  CochainComplex (ModuleCat R) ℤ",
+   "module": "Mathlib.RepresentationTheory.Homological.TateCohomology.Basic",
+   "line": 97,
+   "kind": "abbrev",
+   "deprecated": null},
+  "tateCohomology":
+  {"signature":
+   "tateCohomology.{u} {R G : Type u} [CommRing R] [Group G] [Fintype G] (M : Rep.{u, u, u} R G)\n  (n : ℤ) : ModuleCat R",
+   "module": "Mathlib.RepresentationTheory.Homological.TateCohomology.Basic",
+   "line": 144,
+   "kind": "abbrev",
+   "deprecated": null},
+  "supClosure":
+  {"signature": "supClosure.{u_3} {α : Type u_3} [SemilatticeSup α] : ClosureOperator (Set α)",
+   "module": "Mathlib.Order.SupClosed",
+   "line": 225,
    "kind": "def",
    "deprecated": null},
   "sum_range_pow":
@@ -24855,6 +24889,13 @@
    "normal_iff_eq_cosets.{u_1} {α : Type u_1} [Group α] (s : Subgroup α) :\n  s.Normal ↔ ∀ (g : α), g • ↑s = MulOpposite.op g • ↑s",
    "module": "Mathlib.GroupTheory.Coset.Basic",
    "line": 190,
+   "kind": "theorem",
+   "deprecated": null},
+  "norm_condExp_le":
+  {"signature":
+   "norm_condExp_le.{u_1, u_2} {E : Type u_1} [NormedAddCommGroup E] [NormedSpace ℝ E] [CompleteSpace E]\n  {α : Type u_2} {m mα : MeasurableSpace α} {μ : MeasureTheory.Measure α} (f : α → E) :\n  (fun x => ‖μ[f | m] x‖) ≤ᵐ[μ] μ[fun x => ‖f x‖ | m]",
+   "module": "Mathlib.MeasureTheory.Function.ConditionalExpectation.CondJensen",
+   "line": 243,
    "kind": "theorem",
    "deprecated": null},
   "neg_one_mul":
@@ -25432,11 +25473,32 @@
    "line": 83,
    "kind": "theorem",
    "deprecated": null},
+  "isCompactSystem_isCompact_isClosed":
+  {"signature":
+   "isCompactSystem_isCompact_isClosed.{u_2} (α : Type u_2) [TopologicalSpace α] :\n  IsCompactSystem {s | IsCompact s ∧ IsClosed s}",
+   "module": "Mathlib.Topology.Compactness.CompactSystem",
+   "line": 173,
+   "kind": "theorem",
+   "deprecated": null},
+  "isCompactSystem_isCompact":
+  {"signature":
+   "isCompactSystem_isCompact.{u_2} (α : Type u_2) [TopologicalSpace α] [T2Space α] :\n  IsCompactSystem {s | IsCompact s}",
+   "module": "Mathlib.Topology.Compactness.CompactSystem",
+   "line": 184,
+   "kind": "theorem",
+   "deprecated": null},
   "isCancelSMul_iff_stabilizer_eq_bot":
   {"signature":
    "isCancelSMul_iff_stabilizer_eq_bot.{u_1, u_2} {G : Type u_1} {α : Type u_2} [Group G]\n  [MulAction G α] : IsCancelSMul G α ↔ ∀ (a : α), MulAction.stabilizer G a = ⊥",
    "module": "Mathlib.GroupTheory.GroupAction.Basic",
    "line": 245,
+   "kind": "theorem",
+   "deprecated": null},
+  "isBounded_image_of_isCadlag_of_isCompact":
+  {"signature":
+   "isBounded_image_of_isCadlag_of_isCompact.{u_1, u_2} {X : Type u_1} {Y : Type u_2}\n  [TopologicalSpace X] {f : X → Y} [LinearOrder X] [PseudoMetricSpace Y] (hf : IsCadlag f)\n  {s : Set X} (hs : IsCompact s) : Bornology.IsBounded (f '' s)",
+   "module": "Mathlib.Topology.Order.Cadlag",
+   "line": 354,
    "kind": "theorem",
    "deprecated": null},
   "isArtinianRing_iff_isNoetherianRing_krullDimLE_zero":
@@ -25519,6 +25581,12 @@
    "line": 308,
    "kind": "theorem",
    "deprecated": null},
+  "infClosure":
+  {"signature": "infClosure.{u_3} {α : Type u_3} [SemilatticeInf α] : ClosureOperator (Set α)",
+   "module": "Mathlib.Order.SupClosed",
+   "line": 226,
+   "kind": "def",
+   "deprecated": null},
   "hensels_lemma":
   {"signature":
    "hensels_lemma.{u_1} {p : ℕ} [Fact (Nat.Prime p)] {R : Type u_1} [CommSemiring R] [Algebra R ℤ_[p]]\n  {F : Polynomial R} {a : ℤ_[p]}\n  (hnorm : ‖(Polynomial.aeval a) F‖ < ‖(Polynomial.aeval a) (Polynomial.derivative F)‖ ^ 2) :\n  ∃ z,\n    (Polynomial.aeval z) F = 0 ∧\n      ‖z - a‖ < ‖(Polynomial.aeval a) (Polynomial.derivative F)‖ ∧\n        ‖(Polynomial.aeval z) (Polynomial.derivative F)‖ =\n            ‖(Polynomial.aeval a) (Polynomial.derivative F)‖ ∧\n          ∀ (z' : ℤ_[p]),\n            (Polynomial.aeval z') F = 0 →\n              ‖z' - a‖ < ‖(Polynomial.aeval a) (Polynomial.derivative F)‖ → z' = z",
@@ -25559,6 +25627,69 @@
    "module": "Mathlib.RingTheory.HahnSeries.HahnEmbedding",
    "line": 51,
    "kind": "theorem",
+   "deprecated": null},
+  "groupHomology.map":
+  {"signature":
+   "groupHomology.map.{u} {k G H : Type u} [CommRing k] [Group G] [Group H] {A : Rep.{u, u, u} k G}\n  {B : Rep.{u, u, u} k H} (f : G →* H) (φ : A ⟶ Rep.res f B) (n : ℕ) :\n  groupHomology A n ⟶ groupHomology B n",
+   "module": "Mathlib.RepresentationTheory.Homological.GroupHomology.Functoriality",
+   "line": 153,
+   "kind": "abbrev",
+   "deprecated": null},
+  "groupHomology.inhomogeneousChains":
+  {"signature":
+   "groupHomology.inhomogeneousChains.{u} {k G : Type u} [CommRing k] [Group G]\n  (A : Rep.{u, u, u} k G) : ChainComplex (ModuleCat k) ℕ",
+   "module": "Mathlib.RepresentationTheory.Homological.GroupHomology.Basic",
+   "line": 149,
+   "kind": "abbrev",
+   "deprecated": null},
+  "groupHomology.indIso":
+  {"signature":
+   "groupHomology.indIso.{u} {k G : Type u} [CommRing k] [Group G] (S : Subgroup G)\n  (A : Rep.{u, u, u} k ↥S) (n : ℕ) : groupHomology (Rep.ind S.subtype A) n ≅ groupHomology A n",
+   "module": "Mathlib.RepresentationTheory.Homological.GroupHomology.Shapiro",
+   "line": 62,
+   "kind": "def",
+   "deprecated": null},
+  "groupHomology.chainsMap":
+  {"signature":
+   "groupHomology.chainsMap.{u} {k G H : Type u} [CommRing k] [Group G] [Group H]\n  {A : Rep.{u, u, u} k G} {B : Rep.{u, u, u} k H} (f : G →* H) (φ : A ⟶ Rep.res f B) :\n  groupHomology.inhomogeneousChains A ⟶ groupHomology.inhomogeneousChains B",
+   "module": "Mathlib.RepresentationTheory.Homological.GroupHomology.Functoriality",
+   "line": 54,
+   "kind": "def",
+   "deprecated": null},
+  "groupHomology.H1AddEquivOfIsTrivial":
+  {"signature":
+   "groupHomology.H1AddEquivOfIsTrivial.{u} {k G : Type u} [CommRing k] [Group G]\n  (A : Rep.{u, u, u} k G) [A.IsTrivial] :\n  ↑(groupHomology.H1 A) ≃+ TensorProduct ℤ (Additive (Group.Abelianization G)) ↑A",
+   "module": "Mathlib.RepresentationTheory.Homological.GroupHomology.LowDegree",
+   "line": 988,
+   "kind": "def",
+   "deprecated": null},
+  "groupHomology":
+  {"signature":
+   "groupHomology.{u} {k G : Type u} [CommRing k] [Group G] (A : Rep.{u, u, u} k G) (n : ℕ) :\n  ModuleCat k",
+   "module": "Mathlib.RepresentationTheory.Homological.GroupHomology.Basic",
+   "line": 223,
+   "kind": "def",
+   "deprecated": null},
+  "groupCohomology.δ":
+  {"signature":
+   "groupCohomology.δ.{u} {k G : Type u} [CommRing k] [Group G]\n  {X : CategoryTheory.ShortComplex (Rep.{u, u, u} k G)} (hX : X.ShortExact) (i j : ℕ)\n  (hij : i + 1 = j) : groupCohomology X.X₃ i ⟶ groupCohomology X.X₁ j",
+   "module": "Mathlib.RepresentationTheory.Homological.GroupCohomology.LongExactSequence",
+   "line": 91,
+   "kind": "abbrev",
+   "deprecated": null},
+  "groupCohomology.map_cochainsFunctor_shortExact":
+  {"signature":
+   "groupCohomology.map_cochainsFunctor_shortExact.{u} {k G : Type u} [CommRing k] [Group G]\n  {X : CategoryTheory.ShortComplex (Rep.{u, u, u} k G)} (hX : X.ShortExact) :\n  (X.map (groupCohomology.cochainsFunctor k G)).ShortExact",
+   "module": "Mathlib.RepresentationTheory.Homological.GroupCohomology.LongExactSequence",
+   "line": 49,
+   "kind": "theorem",
+   "deprecated": null},
+  "groupCohomology.coindIso":
+  {"signature":
+   "groupCohomology.coindIso.{u} {k G : Type u} [CommRing k] [Group G] {S : Subgroup G}\n  (A : Rep.{u, u, u} k ↥S) (n : ℕ) :\n  groupCohomology (Rep.coind.{u, u, u, u} S.subtype A) n ≅ groupCohomology A n",
+   "module": "Mathlib.RepresentationTheory.Homological.GroupCohomology.Shapiro",
+   "line": 56,
+   "kind": "def",
    "deprecated": null},
   "gcd_zero_right":
   {"signature":
@@ -25781,6 +25912,13 @@
    "line": 46,
    "kind": "theorem",
    "deprecated": null},
+  "eVariationOn":
+  {"signature":
+   "eVariationOn.{u_1, u_2} {α : Type u_1} [LinearOrder α] {E : Type u_2} [TopologicalSpace E]\n  [WeakPseudoEMetricSpace E] (f : α → E) (s : Set α) : ENNReal",
+   "module": "Mathlib.Topology.EMetricSpace.BoundedVariation",
+   "line": 58,
+   "kind": "def",
+   "deprecated": null},
   "dvd_lcm_right":
   {"signature":
    "dvd_lcm_right.{u_1} {α : Type u_1} [CommMonoidWithZero α] [GCDMonoid α] (a b : α) : b ∣ lcm a b",
@@ -25841,6 +25979,18 @@
    "module": "Mathlib.LinearAlgebra.CrossProduct",
    "line": 68,
    "kind": "theorem",
+   "deprecated": null},
+  "countableSupClosure":
+  {"signature": "countableSupClosure.{u_2} {α : Type u_2} [Preorder α] : ClosureOperator (Set α)",
+   "module": "Mathlib.Order.CountableSupClosed",
+   "line": 178,
+   "kind": "def",
+   "deprecated": null},
+  "countableInfClosure":
+  {"signature": "countableInfClosure.{u_2} {α : Type u_2} [Preorder α] : ClosureOperator (Set α)",
+   "module": "Mathlib.Order.CountableSupClosed",
+   "line": 179,
+   "kind": "def",
    "deprecated": null},
   "continuousOn_taylorWithinEval":
   {"signature":
@@ -26989,6 +27139,27 @@
    "line": 63,
    "kind": "def",
    "deprecated": null},
+  "TateCohomology.δ":
+  {"signature":
+   "TateCohomology.δ.{u} {R G : Type u} [CommRing R] [Group G] [Fintype G]\n  {S : CategoryTheory.ShortComplex (Rep.{u, u, u} R G)} (hS : S.ShortExact) (n : ℤ) :\n  tateCohomology S.X₃ n ⟶ tateCohomology S.X₁ (n + 1)",
+   "module": "Mathlib.RepresentationTheory.Homological.TateCohomology.Basic",
+   "line": 198,
+   "kind": "abbrev",
+   "deprecated": null},
+  "TateCohomology.preservesFiniteLimits_tateComplexFunctor":
+  {"signature":
+   "TateCohomology.preservesFiniteLimits_tateComplexFunctor.{u} {R G : Type u} [CommRing R] [Group G]\n  [Fintype G] : CategoryTheory.Limits.PreservesFiniteLimits (tateComplexFunctor R G)",
+   "module": "Mathlib.RepresentationTheory.Homological.TateCohomology.Basic",
+   "line": 184,
+   "kind": "theorem",
+   "deprecated": null},
+  "TateCohomology.preservesFiniteColimits_tateComplexFunctor":
+  {"signature":
+   "TateCohomology.preservesFiniteColimits_tateComplexFunctor.{u} {R G : Type u} [CommRing R] [Group G]\n  [Fintype G] : CategoryTheory.Limits.PreservesFiniteColimits (tateComplexFunctor R G)",
+   "module": "Mathlib.RepresentationTheory.Homological.TateCohomology.Basic",
+   "line": 191,
+   "kind": "theorem",
+   "deprecated": null},
   "T2Space":
   {"signature": "T2Space.{u} (X : Type u) [TopologicalSpace X] : Prop",
    "module": "Mathlib.Topology.Separation.Hausdorff",
@@ -28102,6 +28273,13 @@
    "line": 61,
    "kind": "def",
    "deprecated": null},
+  "StieltjesFunction.measure":
+  {"signature":
+   "StieltjesFunction.measure.{u_1} {R : Type u_1} [LinearOrder R] [TopologicalSpace R]\n  (f : StieltjesFunction R) [OrderTopology R] [CompactIccSpace R] [MeasurableSpace R] [BorelSpace R]\n  [SecondCountableTopology R] [DenselyOrdered R] : MeasureTheory.Measure R",
+   "module": "Mathlib.MeasureTheory.Measure.Stieltjes",
+   "line": 518,
+   "kind": "def",
+   "deprecated": null},
   "SimpContFract.determinant":
   {"signature":
    "SimpContFract.determinant.{u_1} {K : Type u_1} [Field K] {s : SimpContFract K} {n : ℕ}\n  (not_terminatedAt_n : ¬(↑s).TerminatedAt n) :\n  (↑s).nums n * (↑s).dens (n + 1) - (↑s).dens n * (↑s).nums (n + 1) = (-1) ^ (n + 1)",
@@ -28570,6 +28748,13 @@
    "line": 199,
    "kind": "def",
    "deprecated": null},
+  "Representation.norm":
+  {"signature":
+   "Representation.norm.{u_1, u_2, u_3} {k : Type u_1} {G : Type u_2} {V : Type u_3} [Semiring k]\n  [Group G] [Fintype G] [AddCommMonoid V] [_root_.Module k V] (ρ : Representation k G V) :\n  Module.End k V",
+   "module": "Mathlib.RepresentationTheory.Basic",
+   "line": 281,
+   "kind": "def",
+   "deprecated": null},
   "Representation.leftRegular":
   {"signature":
    "Representation.leftRegular.{u_1, u_2} (k : Type u_1) [Semiring k] (G : Type u_2) [Monoid G] :\n  Representation k G (MonoidAlgebra k G)",
@@ -28681,6 +28866,55 @@
    "module": "Mathlib.RepresentationTheory.Basic",
    "line": 46,
    "kind": "abbrev",
+   "deprecated": null},
+  "Rep.tateNorm_comp_d":
+  {"signature":
+   "Rep.tateNorm_comp_d.{u} {R G : Type u} [CommRing R] [Group G] [Fintype G] (M : Rep.{u, u, u} R G) :\n  CategoryTheory.CategoryStruct.comp M.tateNorm ((groupCohomology.inhomogeneousCochains M).d 0 1) =\n    0",
+   "module": "Mathlib.RepresentationTheory.Homological.TateCohomology.Basic",
+   "line": 77,
+   "kind": "theorem",
+   "deprecated": null},
+  "Rep.tateNorm":
+  {"signature":
+   "Rep.tateNorm.{u} {R G : Type u} [CommRing R] [Group G] [Fintype G] (M : Rep.{u, u, u} R G) :\n  (groupHomology.inhomogeneousChains M).X 0 ⟶ (groupCohomology.inhomogeneousCochains M).X 0",
+   "module": "Mathlib.RepresentationTheory.Homological.TateCohomology.Basic",
+   "line": 62,
+   "kind": "def",
+   "deprecated": null},
+  "Rep.res":
+  {"signature":
+   "Rep.res.{u, v1, v2, u_1} {k : Type u} [Semiring k] {G : Type v1} {H : Type v2} [Monoid G] [Monoid H]\n  (f : H →* G) (M : Rep.{u_1, u, v1} k G) : Rep.{u_1, u, v2} k H",
+   "module": "Mathlib.RepresentationTheory.Rep.Res",
+   "line": 41,
+   "kind": "abbrev",
+   "deprecated": null},
+  "Rep.quotientToInvariantsFunctor":
+  {"signature":
+   "Rep.quotientToInvariantsFunctor.{w, u, v} (k : Type u) {G : Type v} [CommRing k] [Group G]\n  (S : Subgroup G) [S.Normal] : CategoryTheory.Functor (Rep.{w, u, v} k G) (Rep.{w, u, v} k (G ⧸ S))",
+   "module": "Mathlib.RepresentationTheory.Invariants",
+   "line": 261,
+   "kind": "def",
+   "deprecated": null},
+  "Rep.norm_comm":
+  {"signature":
+   "Rep.norm_comm.{u, v, u_1} {k : Type u} [Semiring k] {G : Type v} [Group G] [Fintype G]\n  {A B : Rep.{u_1, u, v} k G} (f : A ⟶ B) :\n  CategoryTheory.CategoryStruct.comp f B.norm.asHom =\n    CategoryTheory.CategoryStruct.comp A.norm.asHom f",
+   "module": "Mathlib.RepresentationTheory.Rep.Basic",
+   "line": 889,
+   "kind": "theorem",
+   "deprecated": null},
+  "Rep.normNatTrans":
+  {"signature":
+   "Rep.normNatTrans.{u, v, u_1} {k : Type u} [Semiring k] {G : Type v} [Group G] [Fintype G] :\n  CategoryTheory.End (CategoryTheory.Functor.id (Rep.{u_1, u, v} k G))",
+   "module": "Mathlib.RepresentationTheory.Rep.Basic",
+   "line": 893,
+   "kind": "def",
+   "deprecated": null},
+  "Rep.d_comp_tateNorm":
+  {"signature":
+   "Rep.d_comp_tateNorm.{u} {R G : Type u} [CommRing R] [Group G] [Fintype G] (M : Rep.{u, u, u} R G) :\n  CategoryTheory.CategoryStruct.comp ((groupHomology.inhomogeneousChains M).d 1 0) M.tateNorm = 0",
+   "module": "Mathlib.RepresentationTheory.Homological.TateCohomology.Basic",
+   "line": 85,
+   "kind": "theorem",
    "deprecated": null},
   "Real.young_inequality_of_nonneg":
   {"signature":
@@ -29460,6 +29694,733 @@
    "Prod.charZero_of_left.{u_1, u_2} (R : Type u_1) (S : Type u_2) [AddMonoidWithOne R]\n  [AddMonoidWithOne S] [CharZero R] : CharZero (R × S)",
    "module": "Mathlib.Algebra.CharP.Basic",
    "line": 150,
+   "kind": "theorem",
+   "deprecated": null},
+  "ProbabilityTheory.stdGaussian":
+  {"signature":
+   "ProbabilityTheory.stdGaussian.{u_2} (E : Type u_2) [NormedAddCommGroup E] [InnerProductSpace ℝ E]\n  [FiniteDimensional ℝ E] [MeasurableSpace E] : MeasureTheory.Measure E",
+   "module": "Mathlib.Probability.Distributions.Gaussian.Multivariate",
+   "line": 57,
+   "kind": "def",
+   "deprecated": null},
+  "ProbabilityTheory.rnDeriv_posterior":
+  {"signature":
+   "ProbabilityTheory.rnDeriv_posterior.{u_1, u_2} {Ω : Type u_1} {𝓧 : Type u_2}\n  {mΩ : MeasurableSpace Ω} {m𝓧 : MeasurableSpace 𝓧} {κ : ProbabilityTheory.Kernel Ω 𝓧}\n  {μ : MeasureTheory.Measure Ω} [MeasureTheory.IsFiniteMeasure μ]\n  [ProbabilityTheory.IsFiniteKernel κ] [StandardBorelSpace Ω] [Nonempty Ω]\n  [MeasurableSpace.CountableOrCountablyGenerated Ω 𝓧]\n  (h_ac : ∀ᵐ (ω : Ω) ∂μ, (κ ω).AbsolutelyContinuous (μ.bind ⇑κ)) :\n  ∀ᵐ (ω : Ω) ∂μ,\n    ∀ᵐ (x : 𝓧) ∂μ.bind ⇑κ,\n      (ProbabilityTheory.posterior κ μ).rnDeriv (ProbabilityTheory.Kernel.const 𝓧 μ) x ω =\n        κ.rnDeriv (ProbabilityTheory.Kernel.const Ω (μ.bind ⇑κ)) ω x",
+   "module": "Mathlib.Probability.Kernel.Posterior",
+   "line": 266,
+   "kind": "theorem",
+   "deprecated": null},
+  "ProbabilityTheory.rnDeriv_measure_compProd_right":
+  {"signature":
+   "ProbabilityTheory.rnDeriv_measure_compProd_right.{u_1, u_2} {α : Type u_1} {β : Type u_2}\n  {mα : MeasurableSpace α} {mβ : MeasurableSpace β}\n  [MeasurableSpace.CountableOrCountablyGenerated α β] (μ : MeasureTheory.Measure α)\n  (κ η : ProbabilityTheory.Kernel α β) [MeasureTheory.IsFiniteMeasure μ]\n  [ProbabilityTheory.IsFiniteKernel κ] [ProbabilityTheory.IsFiniteKernel η] :\n  (μ.compProd κ).rnDeriv (μ.compProd η) =ᵐ[μ.compProd η] fun p => κ.rnDeriv η p.1 p.2",
+   "module": "Mathlib.Probability.Kernel.Composition.RadonNikodym",
+   "line": 153,
+   "kind": "theorem",
+   "deprecated": null},
+  "ProbabilityTheory.rnDeriv_measure_compProd_left":
+  {"signature":
+   "ProbabilityTheory.rnDeriv_measure_compProd_left.{u_1, u_2} {α : Type u_1} {β : Type u_2}\n  {mα : MeasurableSpace α} {mβ : MeasurableSpace β} (μ ν : MeasureTheory.Measure α)\n  (κ : ProbabilityTheory.Kernel α β) [MeasureTheory.IsFiniteMeasure μ]\n  [MeasureTheory.IsFiniteMeasure ν] [ProbabilityTheory.IsFiniteKernel κ] :\n  (μ.compProd κ).rnDeriv (ν.compProd κ) =ᵐ[ν.compProd κ] fun p => μ.rnDeriv ν p.1",
+   "module": "Mathlib.Probability.Kernel.Composition.RadonNikodym",
+   "line": 94,
+   "kind": "theorem",
+   "deprecated": null},
+  "ProbabilityTheory.rnDeriv_measure_compProd":
+  {"signature":
+   "ProbabilityTheory.rnDeriv_measure_compProd.{u_1, u_2} {α : Type u_1} {β : Type u_2}\n  {mα : MeasurableSpace α} {mβ : MeasurableSpace β}\n  [MeasurableSpace.CountableOrCountablyGenerated α β] (μ ν : MeasureTheory.Measure α)\n  (κ η : ProbabilityTheory.Kernel α β) [MeasureTheory.IsFiniteMeasure μ]\n  [MeasureTheory.IsFiniteMeasure ν] [ProbabilityTheory.IsFiniteKernel κ]\n  [ProbabilityTheory.IsFiniteKernel η] :\n  (μ.compProd κ).rnDeriv (ν.compProd η) =ᵐ[ν.compProd η] fun p =>\n    μ.rnDeriv ν p.1 * κ.rnDeriv η p.1 p.2",
+   "module": "Mathlib.Probability.Kernel.Composition.RadonNikodym",
+   "line": 126,
+   "kind": "theorem",
+   "deprecated": null},
+  "ProbabilityTheory.rnDeriv_compProd_withDensity_rnDeriv":
+  {"signature":
+   "ProbabilityTheory.rnDeriv_compProd_withDensity_rnDeriv.{u_1, u_2} {α : Type u_1} {β : Type u_2}\n  {mα : MeasurableSpace α} {mβ : MeasurableSpace β} (μ ν : MeasureTheory.Measure α)\n  (κ η : ProbabilityTheory.Kernel α β) [MeasureTheory.IsFiniteMeasure μ]\n  [MeasureTheory.IsFiniteMeasure ν] [ProbabilityTheory.IsFiniteKernel κ]\n  [ProbabilityTheory.IsFiniteKernel η] :\n  ((ν.withDensity (μ.rnDeriv ν)).compProd κ).rnDeriv (ν.compProd η) =ᵐ[ν.compProd η]\n    (μ.compProd κ).rnDeriv (ν.compProd η)",
+   "module": "Mathlib.Probability.Kernel.Composition.RadonNikodym",
+   "line": 79,
+   "kind": "theorem",
+   "deprecated": null},
+  "ProbabilityTheory.rnDeriv_compProd":
+  {"signature":
+   "ProbabilityTheory.rnDeriv_compProd.{u_1, u_2} {α : Type u_1} {β : Type u_2} {mα : MeasurableSpace α}\n  {mβ : MeasurableSpace β} {μ : MeasureTheory.Measure α} {κ η : ProbabilityTheory.Kernel α β}\n  [MeasureTheory.IsFiniteMeasure μ] [ProbabilityTheory.IsFiniteKernel κ]\n  [ProbabilityTheory.IsFiniteKernel η] (h_ac : (μ.compProd κ).AbsolutelyContinuous (μ.compProd η))\n  (ν : MeasureTheory.Measure α) [MeasureTheory.IsFiniteMeasure ν] :\n  (μ.compProd κ).rnDeriv (ν.compProd η) =ᵐ[ν.compProd η] fun p =>\n    μ.rnDeriv ν p.1 * (μ.compProd κ).rnDeriv (μ.compProd η) p",
+   "module": "Mathlib.Probability.Kernel.Composition.RadonNikodym",
+   "line": 108,
+   "kind": "theorem",
+   "deprecated": null},
+  "ProbabilityTheory.riskIncrease_comp_le":
+  {"signature":
+   "ProbabilityTheory.riskIncrease_comp_le.{u_1, u_2, u_3, u_4} {Θ : Type u_1} {𝓧 : Type u_2}\n  {𝓧' : Type u_3} {𝓨 : Type u_4} {mΘ : MeasurableSpace Θ} {m𝓧 : MeasurableSpace 𝓧}\n  {m𝓧' : MeasurableSpace 𝓧'} [MeasurableSpace 𝓨] (ℓ : Θ → 𝓨 → ENNReal)\n  (P : ProbabilityTheory.Kernel Θ 𝓧) (π : MeasureTheory.Measure Θ)\n  (η : ProbabilityTheory.Kernel 𝓧 𝓧') [ProbabilityTheory.IsMarkovKernel η] :\n  ProbabilityTheory.riskIncrease ℓ (η.comp P) π ≤ ProbabilityTheory.riskIncrease ℓ P π",
+   "module": "Mathlib.Probability.Decision.Risk.RiskIncrease",
+   "line": 100,
+   "kind": "theorem",
+   "deprecated": null},
+  "ProbabilityTheory.riskIncrease":
+  {"signature":
+   "ProbabilityTheory.riskIncrease.{u_1, u_2, u_4} {Θ : Type u_1} {𝓧 : Type u_2} {𝓨 : Type u_4}\n  {mΘ : MeasurableSpace Θ} {m𝓧 : MeasurableSpace 𝓧} [MeasurableSpace 𝓨] (ℓ : Θ → 𝓨 → ENNReal)\n  (P : ProbabilityTheory.Kernel Θ 𝓧) (π : MeasureTheory.Measure Θ) : ENNReal",
+   "module": "Mathlib.Probability.Decision.Risk.RiskIncrease",
+   "line": 50,
+   "kind": "def",
+   "deprecated": null},
+  "ProbabilityTheory.posterior_posterior":
+  {"signature":
+   "ProbabilityTheory.posterior_posterior.{u_1, u_2} {Ω : Type u_1} {𝓧 : Type u_2}\n  {mΩ : MeasurableSpace Ω} {m𝓧 : MeasurableSpace 𝓧} {κ : ProbabilityTheory.Kernel Ω 𝓧}\n  {μ : MeasureTheory.Measure Ω} [MeasureTheory.IsFiniteMeasure μ]\n  [ProbabilityTheory.IsFiniteKernel κ] [StandardBorelSpace Ω] [Nonempty Ω] [StandardBorelSpace 𝓧]\n  [Nonempty 𝓧] [ProbabilityTheory.IsMarkovKernel κ] :\n  ⇑(ProbabilityTheory.posterior (ProbabilityTheory.posterior κ μ) (μ.bind ⇑κ)) =ᵐ[μ] ⇑κ",
+   "module": "Mathlib.Probability.Kernel.Posterior",
+   "line": 174,
+   "kind": "theorem",
+   "deprecated": null},
+  "ProbabilityTheory.posterior_id":
+  {"signature":
+   "ProbabilityTheory.posterior_id.{u_1} {Ω : Type u_1} {mΩ : MeasurableSpace Ω} [StandardBorelSpace Ω]\n  [Nonempty Ω] (μ : MeasureTheory.Measure Ω) [MeasureTheory.IsFiniteMeasure μ] :\n  ⇑(ProbabilityTheory.posterior ProbabilityTheory.Kernel.id μ) =ᵐ[μ] ⇑ProbabilityTheory.Kernel.id",
+   "module": "Mathlib.Probability.Kernel.Posterior",
+   "line": 127,
+   "kind": "theorem",
+   "deprecated": null},
+  "ProbabilityTheory.posterior_comp_self":
+  {"signature":
+   "ProbabilityTheory.posterior_comp_self.{u_1, u_2} {Ω : Type u_1} {𝓧 : Type u_2}\n  {mΩ : MeasurableSpace Ω} {m𝓧 : MeasurableSpace 𝓧} {κ : ProbabilityTheory.Kernel Ω 𝓧}\n  {μ : MeasureTheory.Measure Ω} [MeasureTheory.IsFiniteMeasure μ]\n  [ProbabilityTheory.IsFiniteKernel κ] [StandardBorelSpace Ω] [Nonempty Ω]\n  [ProbabilityTheory.IsMarkovKernel κ] : (μ.bind ⇑κ).bind ⇑(ProbabilityTheory.posterior κ μ) = μ",
+   "module": "Mathlib.Probability.Kernel.Posterior",
+   "line": 122,
+   "kind": "theorem",
+   "deprecated": null},
+  "ProbabilityTheory.posterior_comp":
+  {"signature":
+   "ProbabilityTheory.posterior_comp.{u_1, u_2, u_3} {Ω : Type u_1} {𝓧 : Type u_2} {𝓨 : Type u_3}\n  {mΩ : MeasurableSpace Ω} {m𝓧 : MeasurableSpace 𝓧} {m𝓨 : MeasurableSpace 𝓨}\n  {κ : ProbabilityTheory.Kernel Ω 𝓧} {μ : MeasureTheory.Measure Ω} [MeasureTheory.IsFiniteMeasure μ]\n  [ProbabilityTheory.IsFiniteKernel κ] [StandardBorelSpace Ω] [Nonempty Ω] [StandardBorelSpace 𝓧]\n  [Nonempty 𝓧] {η : ProbabilityTheory.Kernel 𝓧 𝓨} [ProbabilityTheory.IsFiniteKernel η] :\n  ⇑(ProbabilityTheory.posterior (η.comp κ) μ) =ᵐ[(μ.bind ⇑κ).bind ⇑η]\n    ⇑((ProbabilityTheory.posterior κ μ).comp (ProbabilityTheory.posterior η (μ.bind ⇑κ)))",
+   "module": "Mathlib.Probability.Kernel.Posterior",
+   "line": 183,
+   "kind": "theorem",
+   "deprecated": null},
+  "ProbabilityTheory.posterior_boolKernel_apply_true":
+  {"signature":
+   "ProbabilityTheory.posterior_boolKernel_apply_true.{u_2} {𝓧 : Type u_2} {m𝓧 : MeasurableSpace 𝓧}\n  (μ ν : MeasureTheory.Measure 𝓧) [MeasureTheory.IsFiniteMeasure μ]\n  [MeasureTheory.IsFiniteMeasure ν] (π : MeasureTheory.Measure Bool)\n  [MeasureTheory.IsFiniteMeasure π] :\n  ∀ᵐ (x : 𝓧) ∂π.bind ⇑(ProbabilityTheory.Kernel.boolKernel μ ν),\n    ((ProbabilityTheory.posterior (ProbabilityTheory.Kernel.boolKernel μ ν) π) x) {true} =\n      π {true} * ν.rnDeriv (π.bind ⇑(ProbabilityTheory.Kernel.boolKernel μ ν)) x",
+   "module": "Mathlib.Probability.Kernel.Posterior",
+   "line": 319,
+   "kind": "theorem",
+   "deprecated": null},
+  "ProbabilityTheory.posterior_boolKernel_apply_false":
+  {"signature":
+   "ProbabilityTheory.posterior_boolKernel_apply_false.{u_2} {𝓧 : Type u_2} {m𝓧 : MeasurableSpace 𝓧}\n  (μ ν : MeasureTheory.Measure 𝓧) [MeasureTheory.IsFiniteMeasure μ]\n  [MeasureTheory.IsFiniteMeasure ν] (π : MeasureTheory.Measure Bool)\n  [MeasureTheory.IsFiniteMeasure π] :\n  ∀ᵐ (x : 𝓧) ∂π.bind ⇑(ProbabilityTheory.Kernel.boolKernel μ ν),\n    ((ProbabilityTheory.posterior (ProbabilityTheory.Kernel.boolKernel μ ν) π) x) {false} =\n      π {false} * μ.rnDeriv (π.bind ⇑(ProbabilityTheory.Kernel.boolKernel μ ν)) x",
+   "module": "Mathlib.Probability.Kernel.Posterior",
+   "line": 311,
+   "kind": "theorem",
+   "deprecated": null},
+  "ProbabilityTheory.posterior":
+  {"signature":
+   "ProbabilityTheory.posterior.{u_1, u_2} {Ω : Type u_1} {𝓧 : Type u_2} {mΩ : MeasurableSpace Ω}\n  {m𝓧 : MeasurableSpace 𝓧} [StandardBorelSpace Ω] [Nonempty Ω] (κ : ProbabilityTheory.Kernel Ω 𝓧)\n  (μ : MeasureTheory.Measure Ω) [MeasureTheory.IsFiniteMeasure μ]\n  [ProbabilityTheory.IsFiniteKernel κ] : ProbabilityTheory.Kernel 𝓧 Ω",
+   "module": "Mathlib.Probability.Kernel.Posterior",
+   "line": 66,
+   "kind": "def",
+   "deprecated": null},
+  "ProbabilityTheory.multivariateGaussian":
+  {"signature":
+   "ProbabilityTheory.multivariateGaussian.{u_1} {ι : Type u_1} [Fintype ι] [DecidableEq ι]\n  (μ : EuclideanSpace ℝ ι) (S : Matrix ι ι ℝ) : MeasureTheory.Measure (EuclideanSpace ℝ ι)",
+   "module": "Mathlib.Probability.Distributions.Gaussian.Multivariate",
+   "line": 160,
+   "kind": "def",
+   "deprecated": null},
+  "ProbabilityTheory.minimaxRisk":
+  {"signature":
+   "ProbabilityTheory.minimaxRisk.{u_1, u_2, u_3} {Θ : Type u_1} {𝓧 : Type u_2} {𝓨 : Type u_3}\n  {mΘ : MeasurableSpace Θ} {m𝓧 : MeasurableSpace 𝓧} [MeasurableSpace 𝓨] (ℓ : Θ → 𝓨 → ENNReal)\n  (P : ProbabilityTheory.Kernel Θ 𝓧) : ENNReal",
+   "module": "Mathlib.Probability.Decision.Risk.Defs",
+   "line": 56,
+   "kind": "def",
+   "deprecated": null},
+  "ProbabilityTheory.map_eq_of_forall_ae_eq":
+  {"signature":
+   "ProbabilityTheory.map_eq_of_forall_ae_eq.{u_1, u_2, u_3} {T : Type u_1} {Ω : Type u_2}\n  {𝓧 : T → Type u_3} {mΩ : MeasurableSpace Ω} {mα : (t : T) → MeasurableSpace (𝓧 t)}\n  {X Y : (t : T) → Ω → 𝓧 t} {P : MeasureTheory.Measure Ω} [MeasureTheory.IsFiniteMeasure P]\n  (hX : AEMeasurable (fun ω x => X x ω) P) (hY : AEMeasurable (fun ω x => Y x ω) P)\n  (h : ∀ (t : T), X t =ᵐ[P] Y t) :\n  MeasureTheory.Measure.map (fun ω x => X x ω) P = MeasureTheory.Measure.map (fun ω x => Y x ω) P",
+   "module": "Mathlib.Probability.Process.FiniteDimensionalLaws",
+   "line": 97,
+   "kind": "theorem",
+   "deprecated": null},
+  "ProbabilityTheory.map_eq_iff_forall_finset_map_restrict_eq":
+  {"signature":
+   "ProbabilityTheory.map_eq_iff_forall_finset_map_restrict_eq.{u_1, u_2, u_3} {T : Type u_1}\n  {Ω : Type u_2} {𝓧 : T → Type u_3} {mΩ : MeasurableSpace Ω} {mα : (t : T) → MeasurableSpace (𝓧 t)}\n  {X Y : (t : T) → Ω → 𝓧 t} {P : MeasureTheory.Measure Ω} [MeasureTheory.IsFiniteMeasure P]\n  (hX : AEMeasurable (fun ω x => X x ω) P) (hY : AEMeasurable (fun ω x => Y x ω) P) :\n  MeasureTheory.Measure.map (fun ω x => X x ω) P = MeasureTheory.Measure.map (fun ω x => Y x ω) P ↔\n    ∀ (I : Finset T),\n      MeasureTheory.Measure.map (fun ω => I.restrict fun x => X x ω) P =\n        MeasureTheory.Measure.map (fun ω => I.restrict fun x => Y x ω) P",
+   "module": "Mathlib.Probability.Process.FiniteDimensionalLaws",
+   "line": 58,
+   "kind": "theorem",
+   "deprecated": null},
+  "ProbabilityTheory.lintegral_iInf_posterior_le_avgRisk":
+  {"signature":
+   "ProbabilityTheory.lintegral_iInf_posterior_le_avgRisk.{u_1, u_2, u_3} {Θ : Type u_1} {𝓧 : Type u_2}\n  {𝓨 : Type u_3} {mΘ : MeasurableSpace Θ} {m𝓧 : MeasurableSpace 𝓧} {m𝓨 : MeasurableSpace 𝓨}\n  {ℓ : Θ → 𝓨 → ENNReal} [StandardBorelSpace Θ] [Nonempty Θ] (hl : Measurable (Function.uncurry ℓ))\n  (P : ProbabilityTheory.Kernel Θ 𝓧) [ProbabilityTheory.IsFiniteKernel P]\n  (κ : ProbabilityTheory.Kernel 𝓧 𝓨) [ProbabilityTheory.IsMarkovKernel κ]\n  (π : MeasureTheory.Measure Θ) [MeasureTheory.IsFiniteMeasure π] :\n  ∫⁻ (x : 𝓧), ⨅ y, ∫⁻ (θ : Θ), ℓ θ y ∂(ProbabilityTheory.posterior P π) x ∂π.bind ⇑P ≤\n    ProbabilityTheory.avgRisk ℓ P κ π",
+   "module": "Mathlib.Probability.Decision.BayesEstimator",
+   "line": 85,
+   "kind": "theorem",
+   "deprecated": null},
+  "ProbabilityTheory.isProbabilityMeasure_stdGaussian":
+  {"signature":
+   "ProbabilityTheory.isProbabilityMeasure_stdGaussian.{u_2} {E : Type u_2} [NormedAddCommGroup E]\n  [InnerProductSpace ℝ E] [FiniteDimensional ℝ E] [MeasurableSpace E] :\n  MeasureTheory.IsProbabilityMeasure (ProbabilityTheory.stdGaussian E)",
+   "module": "Mathlib.Probability.Distributions.Gaussian.Multivariate",
+   "line": 70,
+   "kind": "theorem",
+   "deprecated": null},
+  "ProbabilityTheory.isLocalizingSequence_const_top":
+  {"signature":
+   "ProbabilityTheory.isLocalizingSequence_const_top.{u_1, u_2} {ι : Type u_1} {Ω : Type u_2}\n  {mΩ : MeasurableSpace Ω} [Preorder ι] [TopologicalSpace ι] [OrderTopology ι]\n  (𝓕 : MeasureTheory.Filtration ι mΩ) (P : MeasureTheory.Measure Ω) :\n  ProbabilityTheory.IsLocalizingSequence 𝓕 (fun x x_1 => ⊤) P",
+   "module": "Mathlib.Probability.Process.LocalProperty",
+   "line": 69,
+   "kind": "theorem",
+   "deprecated": null},
+  "ProbabilityTheory.isGaussian_stdGaussian":
+  {"signature":
+   "ProbabilityTheory.isGaussian_stdGaussian.{u_2} {E : Type u_2} [NormedAddCommGroup E]\n  [InnerProductSpace ℝ E] [FiniteDimensional ℝ E] [MeasurableSpace E] [BorelSpace E] :\n  ProbabilityTheory.IsGaussian (ProbabilityTheory.stdGaussian E)",
+   "module": "Mathlib.Probability.Distributions.Gaussian.Multivariate",
+   "line": 106,
+   "kind": "theorem",
+   "deprecated": null},
+  "ProbabilityTheory.isGaussian_multivariateGaussian":
+  {"signature":
+   "ProbabilityTheory.isGaussian_multivariateGaussian.{u_1} {ι : Type u_1} [Fintype ι] [DecidableEq ι]\n  {μ : EuclideanSpace ℝ ι} {S : Matrix ι ι ℝ} :\n  ProbabilityTheory.IsGaussian (ProbabilityTheory.multivariateGaussian μ S)",
+   "module": "Mathlib.Probability.Distributions.Gaussian.Multivariate",
+   "line": 180,
+   "kind": "theorem",
+   "deprecated": null},
+  "ProbabilityTheory.isGaussian_map":
+  {"signature":
+   "ProbabilityTheory.isGaussian_map.{u_1, u_2} {E : Type u_1} {F : Type u_2} [NormedAddCommGroup E]\n  [NormedSpace ℝ E] [MeasurableSpace E] [BorelSpace E] [NormedAddCommGroup F] [NormedSpace ℝ F]\n  [MeasurableSpace F] [BorelSpace F] {μ : MeasureTheory.Measure E} [ProbabilityTheory.IsGaussian μ]\n  (L : E →L[ℝ] F) : ProbabilityTheory.IsGaussian (MeasureTheory.Measure.map (⇑L) μ)",
+   "module": "Mathlib.Probability.Distributions.Gaussian.Basic",
+   "line": 136,
+   "kind": "theorem",
+   "deprecated": null},
+  "ProbabilityTheory.isGaussian_iff_gaussian_charFun":
+  {"signature":
+   "ProbabilityTheory.isGaussian_iff_gaussian_charFun.{u_1} {E : Type u_1} [NormedAddCommGroup E]\n  [SecondCountableTopology E] [CompleteSpace E] [MeasurableSpace E] [BorelSpace E]\n  {μ : MeasureTheory.Measure E} [InnerProductSpace ℝ E] [MeasureTheory.IsFiniteMeasure μ] :\n  ProbabilityTheory.IsGaussian μ ↔\n    ∃ m f,\n      f.toBilinForm.IsPosSemidef ∧\n        ∀ (t : E),\n          MeasureTheory.charFun μ t = Complex.exp (↑(inner ℝ t m) * Complex.I - ↑((f t) t) / 2)",
+   "module": "Mathlib.Probability.Distributions.Gaussian.CharFun",
+   "line": 145,
+   "kind": "theorem",
+   "deprecated": null},
+  "ProbabilityTheory.isGaussian_iff_charFun_eq":
+  {"signature":
+   "ProbabilityTheory.isGaussian_iff_charFun_eq.{u_3} {E : Type u_3} [NormedAddCommGroup E]\n  [InnerProductSpace ℝ E] [MeasurableSpace E] [BorelSpace E] {μ : MeasureTheory.Measure E}\n  [CompleteSpace E] [MeasureTheory.IsFiniteMeasure μ] :\n  ProbabilityTheory.IsGaussian μ ↔\n    ∀ (t : E),\n      MeasureTheory.charFun μ t =\n        Complex.exp\n          ((∫ (x : E), ↑((fun x => inner ℝ t x) x) ∂μ) * Complex.I -\n            ↑(ProbabilityTheory.variance (fun x => inner ℝ t x) μ) / 2)",
+   "module": "Mathlib.Probability.Distributions.Gaussian.Basic",
+   "line": 201,
+   "kind": "theorem",
+   "deprecated": null},
+  "ProbabilityTheory.isGaussian_iff_charFunDual_eq":
+  {"signature":
+   "ProbabilityTheory.isGaussian_iff_charFunDual_eq.{u_1} {E : Type u_1} [NormedAddCommGroup E]\n  [NormedSpace ℝ E] [MeasurableSpace E] [BorelSpace E] {μ : MeasureTheory.Measure E}\n  [MeasureTheory.IsFiniteMeasure μ] :\n  ProbabilityTheory.IsGaussian μ ↔\n    ∀ (L : StrongDual ℝ E),\n      MeasureTheory.charFunDual μ L =\n        Complex.exp ((∫ (x : E), ↑(L x) ∂μ) * Complex.I - ↑(ProbabilityTheory.variance (⇑L) μ) / 2)",
+   "module": "Mathlib.Probability.Distributions.Gaussian.Basic",
+   "line": 168,
+   "kind": "theorem",
+   "deprecated": null},
+  "ProbabilityTheory.isGaussian_conv":
+  {"signature":
+   "ProbabilityTheory.isGaussian_conv.{u_1} {E : Type u_1} [NormedAddCommGroup E] [NormedSpace ℝ E]\n  [MeasurableSpace E] [BorelSpace E] [SecondCountableTopology E] {μ ν : MeasureTheory.Measure E}\n  [ProbabilityTheory.IsGaussian μ] [ProbabilityTheory.IsGaussian ν] :\n  ProbabilityTheory.IsGaussian (μ.conv ν)",
+   "module": "Mathlib.Probability.Distributions.Gaussian.Basic",
+   "line": 210,
+   "kind": "theorem",
+   "deprecated": null},
+  "ProbabilityTheory.integral_strongDual_stdGaussian":
+  {"signature":
+   "ProbabilityTheory.integral_strongDual_stdGaussian.{u_2} {E : Type u_2} [NormedAddCommGroup E]\n  [InnerProductSpace ℝ E] [FiniteDimensional ℝ E] [MeasurableSpace E] [BorelSpace E]\n  (L : StrongDual ℝ E) : ∫ (x : E), L x ∂ProbabilityTheory.stdGaussian E = 0",
+   "module": "Mathlib.Probability.Distributions.Gaussian.Multivariate",
+   "line": 111,
+   "kind": "theorem",
+   "deprecated": null},
+  "ProbabilityTheory.integral_id_stdGaussian":
+  {"signature":
+   "ProbabilityTheory.integral_id_stdGaussian.{u_2} {E : Type u_2} [NormedAddCommGroup E]\n  [InnerProductSpace ℝ E] [FiniteDimensional ℝ E] [MeasurableSpace E] [BorelSpace E] :\n  ∫ (x : E), x ∂ProbabilityTheory.stdGaussian E = 0",
+   "module": "Mathlib.Probability.Distributions.Gaussian.Multivariate",
+   "line": 74,
+   "kind": "theorem",
+   "deprecated": null},
+  "ProbabilityTheory.integral_id_multivariateGaussian":
+  {"signature":
+   "ProbabilityTheory.integral_id_multivariateGaussian.{u_1} {ι : Type u_1} [Fintype ι] [DecidableEq ι]\n  {μ : EuclideanSpace ℝ ι} {S : Matrix ι ι ℝ} :\n  ∫ (x : EuclideanSpace ℝ ι), x ∂ProbabilityTheory.multivariateGaussian μ S = μ",
+   "module": "Mathlib.Probability.Distributions.Gaussian.Multivariate",
+   "line": 187,
+   "kind": "theorem",
+   "deprecated": null},
+  "ProbabilityTheory.gaussian_charFun_congr":
+  {"signature":
+   "ProbabilityTheory.gaussian_charFun_congr.{u_1} {E : Type u_1} [NormedAddCommGroup E]\n  [SecondCountableTopology E] [CompleteSpace E] [MeasurableSpace E] [BorelSpace E]\n  {μ : MeasureTheory.Measure E} [InnerProductSpace ℝ E] [MeasureTheory.IsFiniteMeasure μ] (m : E)\n  (f : E →L[ℝ] E →L[ℝ] ℝ) (hf : f.toBilinForm.IsPosSemidef)\n  (h :\n    ∀ (t : E),\n      MeasureTheory.charFun μ t = Complex.exp (↑(inner ℝ t m) * Complex.I - ↑((f t) t) / 2)) :\n  m = ∫ (x : E), x ∂μ ∧ f = ProbabilityTheory.covarianceBilin μ",
+   "module": "Mathlib.Probability.Distributions.Gaussian.CharFun",
+   "line": 166,
+   "kind": "theorem",
+   "deprecated": null},
+  "ProbabilityTheory.gaussianReal":
+  {"signature": "ProbabilityTheory.gaussianReal (μ : ℝ) (v : NNReal) : MeasureTheory.Measure ℝ",
+   "module": "Mathlib.Probability.Distributions.Gaussian.Real",
+   "line": 216,
+   "kind": "def",
+   "deprecated": null},
+  "ProbabilityTheory.exists_integrable_exp_sq_of_map_rotation_eq_self":
+  {"signature":
+   "ProbabilityTheory.exists_integrable_exp_sq_of_map_rotation_eq_self.{u_1} {E : Type u_1}\n  [SeminormedAddCommGroup E] [NormedSpace ℝ E] [SecondCountableTopology E] [MeasurableSpace E]\n  [BorelSpace E] {μ : MeasureTheory.Measure E} [MeasureTheory.IsFiniteMeasure μ]\n  (h_rot :\n    MeasureTheory.Measure.map (⇑(ContinuousLinearMap.rotation (-(Real.pi / 4)))) (μ.prod μ) =\n      μ.prod μ) :\n  ∃ C, 0 < C ∧ MeasureTheory.Integrable (fun x => Real.exp (C * ‖x‖ ^ 2)) μ",
+   "module": "Mathlib.Probability.Distributions.Fernique",
+   "line": 590,
+   "kind": "theorem",
+   "deprecated": null},
+  "ProbabilityTheory.covarianceBilin_multivariateGaussian":
+  {"signature":
+   "ProbabilityTheory.covarianceBilin_multivariateGaussian.{u_1} {ι : Type u_1} [Fintype ι]\n  [DecidableEq ι] {μ : EuclideanSpace ℝ ι} {S : Matrix ι ι ℝ} (hS : S.PosSemidef)\n  (x y : EuclideanSpace ℝ ι) :\n  ((ProbabilityTheory.covarianceBilin (ProbabilityTheory.multivariateGaussian μ S)) x) y =\n    x.ofLp ⬝ᵥ S.mulVec y.ofLp",
+   "module": "Mathlib.Probability.Distributions.Gaussian.Multivariate",
+   "line": 196,
+   "kind": "theorem",
+   "deprecated": null},
+  "ProbabilityTheory.covarianceBilin_map":
+  {"signature":
+   "ProbabilityTheory.covarianceBilin_map.{u_1, u_2} {E : Type u_1} [NormedAddCommGroup E]\n  [InnerProductSpace ℝ E] [MeasurableSpace E] [BorelSpace E] {μ : MeasureTheory.Measure E}\n  {F : Type u_2} [NormedAddCommGroup F] [InnerProductSpace ℝ F] [MeasurableSpace F] [BorelSpace F]\n  [SecondCountableTopology F] [CompleteSpace F] [CompleteSpace E] [MeasureTheory.IsFiniteMeasure μ]\n  (h : MeasureTheory.MemLp id 2 μ) (L : E →L[ℝ] F) (u v : F) :\n  ((ProbabilityTheory.covarianceBilin (MeasureTheory.Measure.map (⇑L) μ)) u) v =\n    ((ProbabilityTheory.covarianceBilin μ) ((ContinuousLinearMap.adjoint L) u))\n      ((ContinuousLinearMap.adjoint L) v)",
+   "module": "Mathlib.Probability.Moments.CovarianceBilin",
+   "line": 111,
+   "kind": "theorem",
+   "deprecated": null},
+  "ProbabilityTheory.covarianceBilinDual_self_eq_variance":
+  {"signature":
+   "ProbabilityTheory.covarianceBilinDual_self_eq_variance.{u_1} {E : Type u_1} [NormedAddCommGroup E]\n  {mE : MeasurableSpace E} {μ : MeasureTheory.Measure E} [NormedSpace ℝ E] [BorelSpace E]\n  [CompleteSpace E] [MeasureTheory.IsFiniteMeasure μ] (h : MeasureTheory.MemLp id 2 μ)\n  (L : StrongDual ℝ E) :\n  ((ProbabilityTheory.covarianceBilinDual μ) L) L = ProbabilityTheory.variance (⇑L) μ",
+   "module": "Mathlib.Probability.Moments.CovarianceBilinDual",
+   "line": 354,
+   "kind": "theorem",
+   "deprecated": null},
+  "ProbabilityTheory.covarianceBilinDual_apply'":
+  {"signature":
+   "ProbabilityTheory.covarianceBilinDual_apply'.{u_1} {E : Type u_1} [NormedAddCommGroup E]\n  {mE : MeasurableSpace E} {μ : MeasureTheory.Measure E} [NormedSpace ℝ E] [BorelSpace E]\n  [CompleteSpace E] [MeasureTheory.IsFiniteMeasure μ] (h : MeasureTheory.MemLp id 2 μ)\n  (L₁ L₂ : StrongDual ℝ E) :\n  ((ProbabilityTheory.covarianceBilinDual μ) L₁) L₂ =\n    ∫ (x : E), L₁ (x - ∫ (x : E), id x ∂μ) * L₂ (x - ∫ (x : E), id x ∂μ) ∂μ",
+   "module": "Mathlib.Probability.Moments.CovarianceBilinDual",
+   "line": 343,
+   "kind": "theorem",
+   "deprecated": null},
+  "ProbabilityTheory.covarianceBilinDual_apply":
+  {"signature":
+   "ProbabilityTheory.covarianceBilinDual_apply.{u_1} {E : Type u_1} [NormedAddCommGroup E]\n  {mE : MeasurableSpace E} {μ : MeasureTheory.Measure E} [NormedSpace ℝ E] [BorelSpace E]\n  [CompleteSpace E] [MeasureTheory.IsFiniteMeasure μ] (h : MeasureTheory.MemLp id 2 μ)\n  (L₁ L₂ : StrongDual ℝ E) :\n  ((ProbabilityTheory.covarianceBilinDual μ) L₁) L₂ =\n    ∫ (x : E), (L₁ x - ∫ (x : E), L₁ x ∂μ) * (L₂ x - ∫ (x : E), L₂ x ∂μ) ∂μ",
+   "module": "Mathlib.Probability.Moments.CovarianceBilinDual",
+   "line": 334,
+   "kind": "theorem",
+   "deprecated": null},
+  "ProbabilityTheory.covarianceBilinDual":
+  {"signature":
+   "ProbabilityTheory.covarianceBilinDual.{u_1} {E : Type u_1} [NormedAddCommGroup E]\n  {mE : MeasurableSpace E} [NormedSpace ℝ E] [BorelSpace E] (μ : MeasureTheory.Measure E) :\n  StrongDual ℝ E →L[ℝ] StrongDual ℝ E →L[ℝ] ℝ",
+   "module": "Mathlib.Probability.Moments.CovarianceBilinDual",
+   "line": 238,
+   "kind": "def",
+   "deprecated": null},
+  "ProbabilityTheory.covarianceBilin":
+  {"signature":
+   "ProbabilityTheory.covarianceBilin.{u_1} {E : Type u_1} [NormedAddCommGroup E]\n  [InnerProductSpace ℝ E] [MeasurableSpace E] [BorelSpace E] (μ : MeasureTheory.Measure E) :\n  E →L[ℝ] E →L[ℝ] ℝ",
+   "module": "Mathlib.Probability.Moments.CovarianceBilin",
+   "line": 49,
+   "kind": "def",
+   "deprecated": null},
+  "ProbabilityTheory.compProd_posterior_eq_map_swap":
+  {"signature":
+   "ProbabilityTheory.compProd_posterior_eq_map_swap.{u_1, u_2} {Ω : Type u_1} {𝓧 : Type u_2}\n  {mΩ : MeasurableSpace Ω} {m𝓧 : MeasurableSpace 𝓧} {κ : ProbabilityTheory.Kernel Ω 𝓧}\n  {μ : MeasureTheory.Measure Ω} [MeasureTheory.IsFiniteMeasure μ]\n  [ProbabilityTheory.IsFiniteKernel κ] [StandardBorelSpace Ω] [Nonempty Ω] :\n  (μ.bind ⇑κ).compProd (ProbabilityTheory.posterior κ μ) =\n    MeasureTheory.Measure.map Prod.swap (μ.compProd κ)",
+   "module": "Mathlib.Probability.Kernel.Posterior",
+   "line": 78,
+   "kind": "theorem",
+   "deprecated": null},
+  "ProbabilityTheory.charFun_stdGaussian":
+  {"signature":
+   "ProbabilityTheory.charFun_stdGaussian.{u_2} {E : Type u_2} [NormedAddCommGroup E]\n  [InnerProductSpace ℝ E] [FiniteDimensional ℝ E] [MeasurableSpace E] [BorelSpace E] (t : E) :\n  MeasureTheory.charFun (ProbabilityTheory.stdGaussian E) t = Complex.exp (-↑‖t‖ ^ 2 / 2)",
+   "module": "Mathlib.Probability.Distributions.Gaussian.Multivariate",
+   "line": 93,
+   "kind": "theorem",
+   "deprecated": null},
+  "ProbabilityTheory.charFun_multivariateGaussian":
+  {"signature":
+   "ProbabilityTheory.charFun_multivariateGaussian.{u_1} {ι : Type u_1} [Fintype ι] [DecidableEq ι]\n  {μ : EuclideanSpace ℝ ι} {S : Matrix ι ι ℝ} (hS : S.PosSemidef) (x : EuclideanSpace ℝ ι) :\n  MeasureTheory.charFun (ProbabilityTheory.multivariateGaussian μ S) x =\n    Complex.exp (↑(inner ℝ x μ) * Complex.I - ↑(x.ofLp ⬝ᵥ S.mulVec x.ofLp) / 2)",
+   "module": "Mathlib.Probability.Distributions.Gaussian.Multivariate",
+   "line": 232,
+   "kind": "theorem",
+   "deprecated": null},
+  "ProbabilityTheory.charFun_gaussianReal":
+  {"signature":
+   "ProbabilityTheory.charFun_gaussianReal {μ : ℝ} {v : NNReal} (t : ℝ) :\n  MeasureTheory.charFun (ProbabilityTheory.gaussianReal μ v) t =\n    Complex.exp (↑t * ↑μ * Complex.I - ↑↑v * ↑t ^ 2 / 2)",
+   "module": "Mathlib.Probability.Distributions.Gaussian.Real",
+   "line": 478,
+   "kind": "theorem",
+   "deprecated": null},
+  "ProbabilityTheory.bayesRisk_le_minimaxRisk":
+  {"signature":
+   "ProbabilityTheory.bayesRisk_le_minimaxRisk.{u_1, u_2, u_4} {Θ : Type u_1} {𝓧 : Type u_2}\n  {𝓨 : Type u_4} {mΘ : MeasurableSpace Θ} {m𝓧 : MeasurableSpace 𝓧} {m𝓨 : MeasurableSpace 𝓨}\n  (ℓ : Θ → 𝓨 → ENNReal) (P : ProbabilityTheory.Kernel Θ 𝓧) (π : MeasureTheory.Measure Θ)\n  [MeasureTheory.IsProbabilityMeasure π] :\n  ProbabilityTheory.bayesRisk ℓ P π ≤ ProbabilityTheory.minimaxRisk ℓ P",
+   "module": "Mathlib.Probability.Decision.Risk.Basic",
+   "line": 59,
+   "kind": "theorem",
+   "deprecated": null},
+  "ProbabilityTheory.bayesRisk_le_iInf":
+  {"signature":
+   "ProbabilityTheory.bayesRisk_le_iInf.{u_1, u_2, u_4} {Θ : Type u_1} {𝓧 : Type u_2} {𝓨 : Type u_4}\n  {mΘ : MeasurableSpace Θ} {m𝓧 : MeasurableSpace 𝓧} {m𝓨 : MeasurableSpace 𝓨} {ℓ : Θ → 𝓨 → ENNReal}\n  (hl : Measurable (Function.uncurry ℓ)) (P : ProbabilityTheory.Kernel Θ 𝓧)\n  [ProbabilityTheory.IsMarkovKernel P] (π : MeasureTheory.Measure Θ) :\n  ProbabilityTheory.bayesRisk ℓ P π ≤ ⨅ y, ∫⁻ (θ : Θ), ℓ θ y ∂π",
+   "module": "Mathlib.Probability.Decision.Risk.Basic",
+   "line": 103,
+   "kind": "theorem",
+   "deprecated": null},
+  "ProbabilityTheory.bayesRisk_le_bayesRisk_comp":
+  {"signature":
+   "ProbabilityTheory.bayesRisk_le_bayesRisk_comp.{u_1, u_2, u_3, u_4} {Θ : Type u_1} {𝓧 : Type u_2}\n  {𝓧' : Type u_3} {𝓨 : Type u_4} {mΘ : MeasurableSpace Θ} {m𝓧 : MeasurableSpace 𝓧}\n  {m𝓧' : MeasurableSpace 𝓧'} {m𝓨 : MeasurableSpace 𝓨} (ℓ : Θ → 𝓨 → ENNReal)\n  (P : ProbabilityTheory.Kernel Θ 𝓧) (π : MeasureTheory.Measure Θ)\n  (η : ProbabilityTheory.Kernel 𝓧 𝓧') [ProbabilityTheory.IsMarkovKernel η] :\n  ProbabilityTheory.bayesRisk ℓ P π ≤ ProbabilityTheory.bayesRisk ℓ (η.comp P) π",
+   "module": "Mathlib.Probability.Decision.Risk.Basic",
+   "line": 236,
+   "kind": "theorem",
+   "deprecated": null},
+  "ProbabilityTheory.bayesRisk_const":
+  {"signature":
+   "ProbabilityTheory.bayesRisk_const.{u_1, u_2, u_4} {Θ : Type u_1} {𝓧 : Type u_2} {𝓨 : Type u_4}\n  {mΘ : MeasurableSpace Θ} {m𝓧 : MeasurableSpace 𝓧} {m𝓨 : MeasurableSpace 𝓨} {ℓ : Θ → 𝓨 → ENNReal}\n  (hl : Measurable (Function.uncurry ℓ)) (μ : MeasureTheory.Measure 𝓧)\n  [MeasureTheory.IsProbabilityMeasure μ] (π : MeasureTheory.Measure Θ) [MeasureTheory.SFinite π] :\n  ProbabilityTheory.bayesRisk ℓ (ProbabilityTheory.Kernel.const Θ μ) π = ⨅ y, ∫⁻ (θ : Θ), ℓ θ y ∂π",
+   "module": "Mathlib.Probability.Decision.Risk.Basic",
+   "line": 134,
+   "kind": "theorem",
+   "deprecated": null},
+  "ProbabilityTheory.bayesRisk_compProd_le_bayesRisk":
+  {"signature":
+   "ProbabilityTheory.bayesRisk_compProd_le_bayesRisk.{u_1, u_2, u_3, u_4} {Θ : Type u_1} {𝓧 : Type u_2}\n  {𝓧' : Type u_3} {𝓨 : Type u_4} {mΘ : MeasurableSpace Θ} {m𝓧 : MeasurableSpace 𝓧}\n  {m𝓧' : MeasurableSpace 𝓧'} {m𝓨 : MeasurableSpace 𝓨} (ℓ : Θ → 𝓨 → ENNReal)\n  (P : ProbabilityTheory.Kernel Θ 𝓧) [ProbabilityTheory.IsSFiniteKernel P]\n  (π : MeasureTheory.Measure Θ) (η : ProbabilityTheory.Kernel (Θ × 𝓧) 𝓧')\n  [ProbabilityTheory.IsMarkovKernel η] :\n  ProbabilityTheory.bayesRisk ℓ (P.compProd η) π ≤ ProbabilityTheory.bayesRisk ℓ P π",
+   "module": "Mathlib.Probability.Decision.Risk.Basic",
+   "line": 254,
+   "kind": "theorem",
+   "deprecated": null},
+  "ProbabilityTheory.bayesRisk":
+  {"signature":
+   "ProbabilityTheory.bayesRisk.{u_1, u_2, u_3} {Θ : Type u_1} {𝓧 : Type u_2} {𝓨 : Type u_3}\n  {mΘ : MeasurableSpace Θ} {m𝓧 : MeasurableSpace 𝓧} [MeasurableSpace 𝓨] (ℓ : Θ → 𝓨 → ENNReal)\n  (P : ProbabilityTheory.Kernel Θ 𝓧) (π : MeasureTheory.Measure Θ) : ENNReal",
+   "module": "Mathlib.Probability.Decision.Risk.Defs",
+   "line": 50,
+   "kind": "def",
+   "deprecated": null},
+  "ProbabilityTheory.avgRisk_eq_lintegral_posterior_prod":
+  {"signature":
+   "ProbabilityTheory.avgRisk_eq_lintegral_posterior_prod.{u_1, u_2, u_3} {Θ : Type u_1} {𝓧 : Type u_2}\n  {𝓨 : Type u_3} {mΘ : MeasurableSpace Θ} {m𝓧 : MeasurableSpace 𝓧} {m𝓨 : MeasurableSpace 𝓨}\n  {ℓ : Θ → 𝓨 → ENNReal} [StandardBorelSpace Θ] [Nonempty Θ] (hl : Measurable (Function.uncurry ℓ))\n  (P : ProbabilityTheory.Kernel Θ 𝓧) [ProbabilityTheory.IsFiniteKernel P]\n  (κ : ProbabilityTheory.Kernel 𝓧 𝓨) [ProbabilityTheory.IsSFiniteKernel κ]\n  (π : MeasureTheory.Measure Θ) [MeasureTheory.IsFiniteMeasure π] :\n  ProbabilityTheory.avgRisk ℓ P κ π =\n    ∫⁻ (θy : Θ × 𝓨), ℓ θy.1 θy.2 ∂(π.bind ⇑P).bind ⇑((ProbabilityTheory.posterior P π).prod κ)",
+   "module": "Mathlib.Probability.Decision.BayesEstimator",
+   "line": 64,
+   "kind": "theorem",
+   "deprecated": null},
+  "ProbabilityTheory.avgRisk":
+  {"signature":
+   "ProbabilityTheory.avgRisk.{u_1, u_2, u_3} {Θ : Type u_1} {𝓧 : Type u_2} {𝓨 : Type u_3}\n  {mΘ : MeasurableSpace Θ} {m𝓧 : MeasurableSpace 𝓧} {m𝓨 : MeasurableSpace 𝓨} (ℓ : Θ → 𝓨 → ENNReal)\n  (P : ProbabilityTheory.Kernel Θ 𝓧) (κ : ProbabilityTheory.Kernel 𝓧 𝓨)\n  (π : MeasureTheory.Measure Θ) : ENNReal",
+   "module": "Mathlib.Probability.Decision.Risk.Defs",
+   "line": 43,
+   "kind": "def",
+   "deprecated": null},
+  "ProbabilityTheory.ae_eq_posterior_of_compProd_eq":
+  {"signature":
+   "ProbabilityTheory.ae_eq_posterior_of_compProd_eq.{u_1, u_2} {Ω : Type u_1} {𝓧 : Type u_2}\n  {mΩ : MeasurableSpace Ω} {m𝓧 : MeasurableSpace 𝓧} {κ : ProbabilityTheory.Kernel Ω 𝓧}\n  {μ : MeasureTheory.Measure Ω} [MeasureTheory.IsFiniteMeasure μ]\n  [ProbabilityTheory.IsFiniteKernel κ] [StandardBorelSpace Ω] [Nonempty Ω]\n  {η : ProbabilityTheory.Kernel 𝓧 Ω} [ProbabilityTheory.IsFiniteKernel η]\n  (h : (μ.bind ⇑κ).compProd η = MeasureTheory.Measure.map Prod.swap (μ.compProd κ)) :\n  ⇑η =ᵐ[μ.bind ⇑κ] ⇑(ProbabilityTheory.posterior κ μ)",
+   "module": "Mathlib.Probability.Kernel.Posterior",
+   "line": 110,
+   "kind": "theorem",
+   "deprecated": null},
+  "ProbabilityTheory.Locally.of_prop":
+  {"signature":
+   "ProbabilityTheory.Locally.of_prop.{u_1, u_2, u_3} {ι : Type u_1} {Ω : Type u_2} {E : Type u_3}\n  {mΩ : MeasurableSpace Ω} {P : MeasureTheory.Measure Ω} [LinearOrder ι]\n  {𝓕 : MeasureTheory.Filtration ι mΩ} {X : ι → Ω → E} {p : (ι → Ω → E) → Prop} [OrderBot ι]\n  [TopologicalSpace ι] [OrderTopology ι] [Zero E] (hp : p X) : ProbabilityTheory.Locally p 𝓕 X P",
+   "module": "Mathlib.Probability.Process.LocalProperty",
+   "line": 117,
+   "kind": "theorem",
+   "deprecated": null},
+  "ProbabilityTheory.Locally.mono":
+  {"signature":
+   "ProbabilityTheory.Locally.mono.{u_1, u_2, u_3} {ι : Type u_1} {Ω : Type u_2} {E : Type u_3}\n  {mΩ : MeasurableSpace Ω} {P : MeasureTheory.Measure Ω} [LinearOrder ι]\n  {𝓕 : MeasureTheory.Filtration ι mΩ} {X : ι → Ω → E} {p q : (ι → Ω → E) → Prop} [OrderBot ι]\n  [TopologicalSpace ι] [OrderTopology ι] [Zero E] (hpq : ∀ (X : ι → Ω → E), p X → q X)\n  (hpX : ProbabilityTheory.Locally p 𝓕 X P) : ProbabilityTheory.Locally q 𝓕 X P",
+   "module": "Mathlib.Probability.Process.LocalProperty",
+   "line": 120,
+   "kind": "theorem",
+   "deprecated": null},
+  "ProbabilityTheory.Locally.localSeq":
+  {"signature":
+   "ProbabilityTheory.Locally.localSeq.{u_1, u_2, u_3} {ι : Type u_1} {Ω : Type u_2} {E : Type u_3}\n  {mΩ : MeasurableSpace Ω} {P : MeasureTheory.Measure Ω} [LinearOrder ι]\n  {𝓕 : MeasureTheory.Filtration ι mΩ} {X : ι → Ω → E} {p : (ι → Ω → E) → Prop} [OrderBot ι]\n  [TopologicalSpace ι] [OrderTopology ι] [Zero E] (hX : ProbabilityTheory.Locally p 𝓕 X P) :\n  ℕ → Ω → WithTop ι",
+   "module": "Mathlib.Probability.Process.LocalProperty",
+   "line": 103,
+   "kind": "def",
+   "deprecated": null},
+  "ProbabilityTheory.Locally":
+  {"signature":
+   "ProbabilityTheory.Locally.{u_1, u_2, u_3} {ι : Type u_1} {Ω : Type u_2} {E : Type u_3}\n  {mΩ : MeasurableSpace Ω} [LinearOrder ι] [OrderBot ι] [TopologicalSpace ι] [OrderTopology ι]\n  [Zero E] (p : (ι → Ω → E) → Prop) (𝓕 : MeasureTheory.Filtration ι mΩ) (X : ι → Ω → E)\n  (P : MeasureTheory.Measure Ω := by volume_tac) : Prop",
+   "module": "Mathlib.Probability.Process.LocalProperty",
+   "line": 90,
+   "kind": "def",
+   "deprecated": null},
+  "ProbabilityTheory.Kernel.rnDeriv_eq_rnDeriv_measure":
+  {"signature":
+   "ProbabilityTheory.Kernel.rnDeriv_eq_rnDeriv_measure.{u_1, u_2} {α : Type u_1} {γ : Type u_2}\n  {mα : MeasurableSpace α} {mγ : MeasurableSpace γ} {κ η : ProbabilityTheory.Kernel α γ}\n  [hαγ : MeasurableSpace.CountableOrCountablyGenerated α γ] [ProbabilityTheory.IsFiniteKernel η]\n  [ProbabilityTheory.IsFiniteKernel κ] {a : α} : κ.rnDeriv η a =ᵐ[η a] (κ a).rnDeriv (η a)",
+   "module": "Mathlib.Probability.Kernel.RadonNikodym",
+   "line": 504,
+   "kind": "theorem",
+   "deprecated": null},
+  "ProbabilityTheory.Kernel.rnDeriv":
+  {"signature":
+   "ProbabilityTheory.Kernel.rnDeriv.{u_1, u_2} {α : Type u_1} {γ : Type u_2} {mα : MeasurableSpace α}\n  {mγ : MeasurableSpace γ} [hαγ : MeasurableSpace.CountableOrCountablyGenerated α γ]\n  (κ η : ProbabilityTheory.Kernel α γ) (a : α) (x : γ) : ENNReal",
+   "module": "Mathlib.Probability.Kernel.RadonNikodym",
+   "line": 225,
+   "kind": "def",
+   "deprecated": null},
+  "ProbabilityTheory.Kernel.prod":
+  {"signature":
+   "ProbabilityTheory.Kernel.prod.{u_1, u_2, u_4} {α : Type u_1} {β : Type u_2} {mα : MeasurableSpace α}\n  {mβ : MeasurableSpace β} {γ : Type u_4} {mγ : MeasurableSpace γ}\n  (κ : ProbabilityTheory.Kernel α β) (η : ProbabilityTheory.Kernel α γ) :\n  ProbabilityTheory.Kernel α (β × γ)",
+   "module": "Mathlib.Probability.Kernel.Composition.Prod",
+   "line": 48,
+   "kind": "def",
+   "deprecated": null},
+  "ProbabilityTheory.Kernel.parallelComp":
+  {"signature":
+   "ProbabilityTheory.Kernel.parallelComp.{u_1, u_2, u_3, u_4} {α : Type u_1} {β : Type u_2}\n  {γ : Type u_3} {δ : Type u_4} {mα : MeasurableSpace α} {mβ : MeasurableSpace β}\n  {mγ : MeasurableSpace γ} {mδ : MeasurableSpace δ} (κ : ProbabilityTheory.Kernel α β)\n  (η : ProbabilityTheory.Kernel γ δ) : ProbabilityTheory.Kernel (α × γ) (β × δ)",
+   "module": "Mathlib.Probability.Kernel.Composition.ParallelComp",
+   "line": 43,
+   "kind": "def",
+   "deprecated": null},
+  "ProbabilityTheory.Kernel.ext_fun_iff":
+  {"signature":
+   "ProbabilityTheory.Kernel.ext_fun_iff.{u_1, u_2} {α : Type u_1} {β : Type u_2}\n  {mα : MeasurableSpace α} {mβ : MeasurableSpace β} {κ η : ProbabilityTheory.Kernel α β} :\n  κ = η ↔ ∀ (a : α) (f : β → ENNReal), Measurable f → ∫⁻ (b : β), f b ∂κ a = ∫⁻ (b : β), f b ∂η a",
+   "module": "Mathlib.Probability.Kernel.Defs",
+   "line": 253,
+   "kind": "theorem",
+   "deprecated": null},
+  "ProbabilityTheory.Kernel.eq_rnDeriv_measure":
+  {"signature":
+   "ProbabilityTheory.Kernel.eq_rnDeriv_measure.{u_1, u_2} {α : Type u_1} {γ : Type u_2}\n  {mα : MeasurableSpace α} {mγ : MeasurableSpace γ} {κ η ξ : ProbabilityTheory.Kernel α γ}\n  {f : α → γ → ENNReal} [ProbabilityTheory.IsFiniteKernel η] (h : κ = η.withDensity f + ξ)\n  (hf : Measurable (Function.uncurry f)) (a : α) (hξ : (ξ a).MutuallySingular (η a)) :\n  f a =ᵐ[η a] (κ a).rnDeriv (η a)",
+   "module": "Mathlib.Probability.Kernel.RadonNikodym",
+   "line": 487,
+   "kind": "theorem",
+   "deprecated": null},
+  "ProbabilityTheory.Kernel.disintegrate":
+  {"signature":
+   "ProbabilityTheory.Kernel.disintegrate.{u_1, u_2, u_3} {α : Type u_1} {β : Type u_2} {Ω : Type u_3}\n  {mα : MeasurableSpace α} {mβ : MeasurableSpace β} {mΩ : MeasurableSpace Ω}\n  (κ : ProbabilityTheory.Kernel α (β × Ω)) (κCond : ProbabilityTheory.Kernel (α × β) Ω)\n  [κ.IsCondKernel κCond] : κ.fst.compProd κCond = κ",
+   "module": "Mathlib.Probability.Kernel.Disintegration.Basic",
+   "line": 132,
+   "kind": "theorem",
+   "deprecated": null},
+  "ProbabilityTheory.Kernel.deterministic":
+  {"signature":
+   "ProbabilityTheory.Kernel.deterministic.{u_1, u_2} {α : Type u_1} {β : Type u_2}\n  {mα : MeasurableSpace α} {mβ : MeasurableSpace β} (f : α → β) (hf : Measurable f) :\n  ProbabilityTheory.Kernel α β",
+   "module": "Mathlib.Probability.Kernel.Basic",
+   "line": 56,
+   "kind": "def",
+   "deprecated": null},
+  "ProbabilityTheory.Kernel.condKernel":
+  {"signature":
+   "ProbabilityTheory.Kernel.condKernel.{u_1, u_2, u_4} {α : Type u_1} {β : Type u_2} {Ω : Type u_4}\n  {mα : MeasurableSpace α} {mβ : MeasurableSpace β} {mΩ : MeasurableSpace Ω} [StandardBorelSpace Ω]\n  [Nonempty Ω] [h : MeasurableSpace.CountableOrCountablyGenerated α β]\n  (κ : ProbabilityTheory.Kernel α (β × Ω)) [ProbabilityTheory.IsFiniteKernel κ] :\n  ProbabilityTheory.Kernel (α × β) Ω",
+   "module": "Mathlib.Probability.Kernel.Disintegration.StandardBorel",
+   "line": 400,
+   "kind": "def",
+   "deprecated": null},
+  "ProbabilityTheory.Kernel.compProd":
+  {"signature":
+   "ProbabilityTheory.Kernel.compProd.{u_1, u_2, u_3} {α : Type u_1} {β : Type u_2} {γ : Type u_3}\n  {mα : MeasurableSpace α} {mβ : MeasurableSpace β} {mγ : MeasurableSpace γ}\n  (κ : ProbabilityTheory.Kernel α β) (η : ProbabilityTheory.Kernel (α × β) γ) :\n  ProbabilityTheory.Kernel α (β × γ)",
+   "module": "Mathlib.Probability.Kernel.Composition.CompProd",
+   "line": 64,
+   "kind": "def",
+   "deprecated": null},
+  "ProbabilityTheory.Kernel.comp":
+  {"signature":
+   "ProbabilityTheory.Kernel.comp.{u_1, u_2, u_3} {α : Type u_1} {β : Type u_2} {γ : Type u_3}\n  {mα : MeasurableSpace α} {mβ : MeasurableSpace β} {mγ : MeasurableSpace γ}\n  (η : ProbabilityTheory.Kernel β γ) (κ : ProbabilityTheory.Kernel α β) :\n  ProbabilityTheory.Kernel α γ",
+   "module": "Mathlib.Probability.Kernel.Composition.Comp",
+   "line": 48,
+   "kind": "def",
+   "deprecated": null},
+  "ProbabilityTheory.Kernel":
+  {"signature":
+   "ProbabilityTheory.Kernel.{u_1, u_2} (α : Type u_1) (β : Type u_2) [MeasurableSpace α]\n  [MeasurableSpace β] : Type (max u_1 u_2)",
+   "module": "Mathlib.Probability.Kernel.Defs",
+   "line": 50,
+   "kind": "structure",
+   "deprecated": null},
+  "ProbabilityTheory.IsStable.locally_of_isPreLocalizingSequence":
+  {"signature":
+   "ProbabilityTheory.IsStable.locally_of_isPreLocalizingSequence.{u_1, u_2, u_3} {ι : Type u_1}\n  {Ω : Type u_2} {E : Type u_3} {mΩ : MeasurableSpace Ω} {P : MeasureTheory.Measure Ω}\n  [ConditionallyCompleteLinearOrderBot ι] [TopologicalSpace ι] [OrderTopology ι]\n  {𝓕 : MeasureTheory.Filtration ι mΩ} {X : ι → Ω → E} {p : (ι → Ω → E) → Prop} [Zero E]\n  [DenselyOrdered ι] [FirstCountableTopology ι] [NoMaxOrder ι] {τ : ℕ → Ω → WithTop ι}\n  (hp : ProbabilityTheory.IsStable 𝓕 p) [𝓕.IsRightContinuous]\n  (hτ : ProbabilityTheory.IsPreLocalizingSequence 𝓕 τ P)\n  (hpτ :\n    ∀ (n : ℕ), p (MeasureTheory.stoppedProcess (fun i => {ω | ⊥ < τ n ω}.indicator (X i)) (τ n))) :\n  ProbabilityTheory.Locally p 𝓕 X P",
+   "module": "Mathlib.Probability.Process.LocalProperty",
+   "line": 207,
+   "kind": "theorem",
+   "deprecated": null},
+  "ProbabilityTheory.IsStable.locally_locally_iff":
+  {"signature":
+   "ProbabilityTheory.IsStable.locally_locally_iff.{u_1, u_2, u_3} {ι : Type u_1} {Ω : Type u_2}\n  {E : Type u_3} {mΩ : MeasurableSpace Ω} {P : MeasureTheory.Measure Ω}\n  [ConditionallyCompleteLinearOrderBot ι] [TopologicalSpace ι] [OrderTopology ι]\n  {𝓕 : MeasureTheory.Filtration ι mΩ} {X : ι → Ω → E} {p : (ι → Ω → E) → Prop}\n  [SecondCountableTopology ι] [MeasureTheory.IsFiniteMeasure P] [DenselyOrdered ι] [NoMaxOrder ι]\n  [Zero E] [𝓕.IsRightContinuous] (hp : ProbabilityTheory.IsStable 𝓕 p) :\n  ProbabilityTheory.Locally (fun Y => ProbabilityTheory.Locally p 𝓕 Y P) 𝓕 X P ↔\n    ProbabilityTheory.Locally p 𝓕 X P",
+   "module": "Mathlib.Probability.Process.LocalProperty",
+   "line": 304,
+   "kind": "theorem",
+   "deprecated": null},
+  "ProbabilityTheory.IsStable.locally_induction":
+  {"signature":
+   "ProbabilityTheory.IsStable.locally_induction.{u_1, u_2, u_3} {ι : Type u_1} {Ω : Type u_2}\n  {E : Type u_3} {mΩ : MeasurableSpace Ω} {P : MeasureTheory.Measure Ω}\n  [ConditionallyCompleteLinearOrderBot ι] [TopologicalSpace ι] [OrderTopology ι]\n  {𝓕 : MeasureTheory.Filtration ι mΩ} {X : ι → Ω → E} {p q : (ι → Ω → E) → Prop}\n  [SecondCountableTopology ι] [MeasureTheory.IsFiniteMeasure P] [DenselyOrdered ι] [NoMaxOrder ι]\n  [Zero E] [𝓕.IsRightContinuous] (hq : ProbabilityTheory.IsStable 𝓕 q)\n  (hpq : ∀ (Y : ι → Ω → E), p Y → ProbabilityTheory.Locally q 𝓕 Y P)\n  (hpX : ProbabilityTheory.Locally p 𝓕 X P) : ProbabilityTheory.Locally q 𝓕 X P",
+   "module": "Mathlib.Probability.Process.LocalProperty",
+   "line": 324,
+   "kind": "theorem",
+   "deprecated": null},
+  "ProbabilityTheory.IsStable.locally":
+  {"signature":
+   "ProbabilityTheory.IsStable.locally.{u_1, u_2, u_3} {ι : Type u_1} {Ω : Type u_2} {E : Type u_3}\n  {mΩ : MeasurableSpace Ω} {P : MeasureTheory.Measure Ω} [LinearOrder ι]\n  {𝓕 : MeasureTheory.Filtration ι mΩ} {p : (ι → Ω → E) → Prop} [OrderBot ι] [Zero E]\n  [TopologicalSpace ι] [OrderTopology ι] (hp : ProbabilityTheory.IsStable 𝓕 p) :\n  ProbabilityTheory.IsStable 𝓕 fun Y => ProbabilityTheory.Locally p 𝓕 Y P",
+   "module": "Mathlib.Probability.Process.LocalProperty",
+   "line": 153,
+   "kind": "theorem",
+   "deprecated": null},
+  "ProbabilityTheory.IsStable.and":
+  {"signature":
+   "ProbabilityTheory.IsStable.and.{u_1, u_2, u_3} {ι : Type u_1} {Ω : Type u_2} {E : Type u_3}\n  {mΩ : MeasurableSpace Ω} [LinearOrder ι] {𝓕 : MeasureTheory.Filtration ι mΩ}\n  {p q : (ι → Ω → E) → Prop} [OrderBot ι] [Zero E] (hp : ProbabilityTheory.IsStable 𝓕 p)\n  (hq : ProbabilityTheory.IsStable 𝓕 q) : ProbabilityTheory.IsStable 𝓕 fun X => p X ∧ q X",
+   "module": "Mathlib.Probability.Process.LocalProperty",
+   "line": 147,
+   "kind": "theorem",
+   "deprecated": null},
+  "ProbabilityTheory.IsStable":
+  {"signature":
+   "ProbabilityTheory.IsStable.{u_1, u_2, u_3} {ι : Type u_1} {Ω : Type u_2} {E : Type u_3}\n  {mΩ : MeasurableSpace Ω} [LinearOrder ι] [OrderBot ι] [Zero E] (𝓕 : MeasureTheory.Filtration ι mΩ)\n  (p : (ι → Ω → E) → Prop) : Prop",
+   "module": "Mathlib.Probability.Process.LocalProperty",
+   "line": 140,
+   "kind": "def",
+   "deprecated": null},
+  "ProbabilityTheory.IsSFiniteKernel":
+  {"signature":
+   "ProbabilityTheory.IsSFiniteKernel.{u_1, u_2} {α : Type u_1} {β : Type u_2} {mα : MeasurableSpace α}\n  {mβ : MeasurableSpace β} (κ : ProbabilityTheory.Kernel α β) : Prop",
+   "module": "Mathlib.Probability.Kernel.Defs",
+   "line": 336,
+   "kind": "class",
+   "deprecated": null},
+  "ProbabilityTheory.IsPreLocalizingSequence":
+  {"signature":
+   "ProbabilityTheory.IsPreLocalizingSequence.{u_1, u_2} {ι : Type u_1} {Ω : Type u_2}\n  {mΩ : MeasurableSpace Ω} [Preorder ι] [TopologicalSpace ι] [OrderTopology ι]\n  (𝓕 : MeasureTheory.Filtration ι mΩ) (τ : ℕ → Ω → WithTop ι)\n  (P : MeasureTheory.Measure Ω := by volume_tac) : Prop",
+   "module": "Mathlib.Probability.Process.LocalProperty",
+   "line": 54,
+   "kind": "structure",
+   "deprecated": null},
+  "ProbabilityTheory.IsMarkovKernel":
+  {"signature":
+   "ProbabilityTheory.IsMarkovKernel.{u_1, u_2} {α : Type u_1} {β : Type u_2} {mα : MeasurableSpace α}\n  {mβ : MeasurableSpace β} (κ : ProbabilityTheory.Kernel α β) : Prop",
+   "module": "Mathlib.Probability.Kernel.Defs",
+   "line": 136,
+   "kind": "class",
+   "deprecated": null},
+  "ProbabilityTheory.IsLocalizingSequence.min":
+  {"signature":
+   "ProbabilityTheory.IsLocalizingSequence.min.{u_1, u_2} {ι : Type u_1} {Ω : Type u_2}\n  {mΩ : MeasurableSpace Ω} {P : MeasureTheory.Measure Ω} [LinearOrder ι]\n  {𝓕 : MeasureTheory.Filtration ι mΩ} [TopologicalSpace ι] [OrderTopology ι]\n  {τ σ : ℕ → Ω → WithTop ι} (hτ : ProbabilityTheory.IsLocalizingSequence 𝓕 τ P)\n  (hσ : ProbabilityTheory.IsLocalizingSequence 𝓕 σ P) :\n  ProbabilityTheory.IsLocalizingSequence 𝓕 (τ ⊓ σ) P",
+   "module": "Mathlib.Probability.Process.LocalProperty",
+   "line": 79,
+   "kind": "theorem",
+   "deprecated": null},
+  "ProbabilityTheory.IsLocalizingSequence.isPrelocalizingSequence_inf_extraction":
+  {"signature":
+   "ProbabilityTheory.IsLocalizingSequence.isPrelocalizingSequence_inf_extraction.{u_1, u_2}\n  {ι : Type u_1} {Ω : Type u_2} {mΩ : MeasurableSpace Ω} {P : MeasureTheory.Measure Ω}\n  [ConditionallyCompleteLinearOrderBot ι] [TopologicalSpace ι] [OrderTopology ι]\n  {𝓕 : MeasureTheory.Filtration ι mΩ} [SecondCountableTopology ι] [MeasureTheory.IsFiniteMeasure P]\n  [NoMaxOrder ι] {τ : ℕ → Ω → WithTop ι} {σ : ℕ → ℕ → Ω → WithTop ι}\n  (hτ : ProbabilityTheory.IsLocalizingSequence 𝓕 τ P)\n  (hσ : ∀ (n : ℕ), ProbabilityTheory.IsLocalizingSequence 𝓕 (σ n) P) :\n  ∃ nk,\n    StrictMono nk ∧\n      ProbabilityTheory.IsPreLocalizingSequence 𝓕 (fun i ω => min (τ i ω) (σ i (nk i) ω)) P",
+   "module": "Mathlib.Probability.Process.LocalProperty",
+   "line": 288,
+   "kind": "theorem",
+   "deprecated": null},
+  "ProbabilityTheory.IsLocalizingSequence":
+  {"signature":
+   "ProbabilityTheory.IsLocalizingSequence.{u_1, u_2} {ι : Type u_1} {Ω : Type u_2}\n  {mΩ : MeasurableSpace Ω} [Preorder ι] [TopologicalSpace ι] [OrderTopology ι]\n  (𝓕 : MeasureTheory.Filtration ι mΩ) (τ : ℕ → Ω → WithTop ι)\n  (P : MeasureTheory.Measure Ω := by volume_tac) : Prop",
+   "module": "Mathlib.Probability.Process.LocalProperty",
+   "line": 62,
+   "kind": "structure",
+   "deprecated": null},
+  "ProbabilityTheory.IsGaussianProcess.congr":
+  {"signature":
+   "ProbabilityTheory.IsGaussianProcess.congr.{u_2, u_3, u_4} {T : Type u_2} {Ω : Type u_3}\n  {E : Type u_4} {mΩ : MeasurableSpace Ω} {P : MeasureTheory.Measure Ω} {X Y : T → Ω → E}\n  [MeasurableSpace E] [TopologicalSpace E] [AddCommMonoid E] [_root_.Module ℝ E]\n  (hX : ProbabilityTheory.IsGaussianProcess X P) (hXY : ∀ (t : T), X t =ᵐ[P] Y t) :\n  ProbabilityTheory.IsGaussianProcess Y P",
+   "module": "Mathlib.Probability.Distributions.Gaussian.IsGaussianProcess.Basic",
+   "line": 53,
+   "kind": "theorem",
+   "deprecated": null},
+  "ProbabilityTheory.IsGaussianProcess":
+  {"signature":
+   "ProbabilityTheory.IsGaussianProcess.{u_1, u_2, u_3} {Ω : Type u_1} {E : Type u_2} {T : Type u_3}\n  {mΩ : MeasurableSpace Ω} [MeasurableSpace E] [TopologicalSpace E] [AddCommMonoid E]\n  [_root_.Module ℝ E] (X : T → Ω → E) (P : MeasureTheory.Measure Ω := by volume_tac) : Prop",
+   "module": "Mathlib.Probability.Distributions.Gaussian.IsGaussianProcess.Def",
+   "line": 27,
+   "kind": "structure",
+   "deprecated": null},
+  "ProbabilityTheory.IsGaussian.memLp_id":
+  {"signature":
+   "ProbabilityTheory.IsGaussian.memLp_id.{u_1} {E : Type u_1} [NormedAddCommGroup E] [NormedSpace ℝ E]\n  [MeasurableSpace E] [BorelSpace E] [CompleteSpace E] [SecondCountableTopology E]\n  (μ : MeasureTheory.Measure E) [ProbabilityTheory.IsGaussian μ] (p : ENNReal) (hp : p ≠ ⊤) :\n  MeasureTheory.MemLp id p μ",
+   "module": "Mathlib.Probability.Distributions.Gaussian.Fernique",
+   "line": 183,
+   "kind": "theorem",
+   "deprecated": null},
+  "ProbabilityTheory.IsGaussian.map_rotation_eq_self_of_forall_strongDual_eq_zero":
+  {"signature":
+   "ProbabilityTheory.IsGaussian.map_rotation_eq_self_of_forall_strongDual_eq_zero.{u_1} {E : Type u_1}\n  [NormedAddCommGroup E] [NormedSpace ℝ E] [MeasurableSpace E] [BorelSpace E]\n  {μ : MeasureTheory.Measure E} [ProbabilityTheory.IsGaussian μ] [SecondCountableTopology E]\n  [CompleteSpace E] (hμ : ∀ (L : StrongDual ℝ E), ∫ (x : E), L x ∂μ = 0) (θ : ℝ) :\n  MeasureTheory.Measure.map (⇑(ContinuousLinearMap.rotation θ)) (μ.prod μ) = μ.prod μ",
+   "module": "Mathlib.Probability.Distributions.Gaussian.Fernique",
+   "line": 53,
+   "kind": "theorem",
+   "deprecated": null},
+  "ProbabilityTheory.IsGaussian.ext_iff":
+  {"signature":
+   "ProbabilityTheory.IsGaussian.ext_iff.{u_1} {E : Type u_1} [NormedAddCommGroup E]\n  [SecondCountableTopology E] [CompleteSpace E] [MeasurableSpace E] [BorelSpace E]\n  {μ : MeasureTheory.Measure E} [InnerProductSpace ℝ E] {ν : MeasureTheory.Measure E}\n  [ProbabilityTheory.IsGaussian μ] [ProbabilityTheory.IsGaussian ν] :\n  μ = ν ↔\n    ∫ (x : E), id x ∂μ = ∫ (x : E), id x ∂ν ∧\n      ProbabilityTheory.covarianceBilin μ = ProbabilityTheory.covarianceBilin ν",
+   "module": "Mathlib.Probability.Distributions.Gaussian.CharFun",
+   "line": 192,
+   "kind": "theorem",
+   "deprecated": null},
+  "ProbabilityTheory.IsGaussian.ext":
+  {"signature":
+   "ProbabilityTheory.IsGaussian.ext.{u_1} {E : Type u_1} [NormedAddCommGroup E]\n  [SecondCountableTopology E] [CompleteSpace E] [MeasurableSpace E] [BorelSpace E]\n  {μ : MeasureTheory.Measure E} [InnerProductSpace ℝ E] {ν : MeasureTheory.Measure E}\n  [ProbabilityTheory.IsGaussian μ] [ProbabilityTheory.IsGaussian ν]\n  (hm : ∫ (x : E), id x ∂μ = ∫ (x : E), id x ∂ν)\n  (hv : ProbabilityTheory.covarianceBilin μ = ProbabilityTheory.covarianceBilin ν) : μ = ν",
+   "module": "Mathlib.Probability.Distributions.Gaussian.CharFun",
+   "line": 184,
+   "kind": "theorem",
+   "deprecated": null},
+  "ProbabilityTheory.IsGaussian.exists_integrable_exp_sq":
+  {"signature":
+   "ProbabilityTheory.IsGaussian.exists_integrable_exp_sq.{u_1} {E : Type u_1} [NormedAddCommGroup E]\n  [NormedSpace ℝ E] [MeasurableSpace E] [BorelSpace E] [SecondCountableTopology E] [CompleteSpace E]\n  (μ : MeasureTheory.Measure E) [ProbabilityTheory.IsGaussian μ] :\n  ∃ C, 0 < C ∧ MeasureTheory.Integrable (fun x => Real.exp (C * ‖x‖ ^ 2)) μ",
+   "module": "Mathlib.Probability.Distributions.Gaussian.Fernique",
+   "line": 160,
+   "kind": "theorem",
+   "deprecated": null},
+  "ProbabilityTheory.IsGaussian.charFun_eq":
+  {"signature":
+   "ProbabilityTheory.IsGaussian.charFun_eq.{u_3} {E : Type u_3} [NormedAddCommGroup E]\n  [InnerProductSpace ℝ E] [MeasurableSpace E] [BorelSpace E] {μ : MeasureTheory.Measure E}\n  [ProbabilityTheory.IsGaussian μ] (t : E) :\n  MeasureTheory.charFun μ t =\n    Complex.exp\n      ((∫ (x : E), ↑((fun x => inner ℝ t x) x) ∂μ) * Complex.I -\n        ↑(ProbabilityTheory.variance (fun x => inner ℝ t x) μ) / 2)",
+   "module": "Mathlib.Probability.Distributions.Gaussian.Basic",
+   "line": 194,
+   "kind": "theorem",
+   "deprecated": null},
+  "ProbabilityTheory.IsGaussian":
+  {"signature":
+   "ProbabilityTheory.IsGaussian.{u_1} {E : Type u_1} [TopologicalSpace E] [AddCommMonoid E]\n  [_root_.Module ℝ E] {mE : MeasurableSpace E} (μ : MeasureTheory.Measure E) : Prop",
+   "module": "Mathlib.Probability.Distributions.Gaussian.Basic",
+   "line": 43,
+   "kind": "class",
+   "deprecated": null},
+  "ProbabilityTheory.IsFiniteKernel":
+  {"signature":
+   "ProbabilityTheory.IsFiniteKernel.{u_1, u_2} {α : Type u_1} {β : Type u_2} {mα : MeasurableSpace α}\n  {mβ : MeasurableSpace β} (κ : ProbabilityTheory.Kernel α β) : Prop",
+   "module": "Mathlib.Probability.Kernel.Defs",
+   "line": 144,
+   "kind": "class",
+   "deprecated": null},
+  "ProbabilityTheory.IsBayesEstimator":
+  {"signature":
+   "ProbabilityTheory.IsBayesEstimator.{u_1, u_2, u_3} {Θ : Type u_1} {𝓧 : Type u_2} {𝓨 : Type u_3}\n  {mΘ : MeasurableSpace Θ} {m𝓧 : MeasurableSpace 𝓧} {m𝓨 : MeasurableSpace 𝓨} (ℓ : Θ → 𝓨 → ENNReal)\n  (P : ProbabilityTheory.Kernel Θ 𝓧) (κ : ProbabilityTheory.Kernel 𝓧 𝓨)\n  (π : MeasureTheory.Measure Θ) : Prop",
+   "module": "Mathlib.Probability.Decision.BayesEstimator",
+   "line": 101,
+   "kind": "def",
+   "deprecated": null},
+  "ProbabilityTheory.IsArgminEstimator.isBayesEstimator":
+  {"signature":
+   "ProbabilityTheory.IsArgminEstimator.isBayesEstimator.{u_1, u_2, u_3} {Θ : Type u_1} {𝓧 : Type u_2}\n  {𝓨 : Type u_3} {mΘ : MeasurableSpace Θ} {m𝓧 : MeasurableSpace 𝓧} {m𝓨 : MeasurableSpace 𝓨}\n  {ℓ : Θ → 𝓨 → ENNReal} {P : ProbabilityTheory.Kernel Θ 𝓧} {π : MeasureTheory.Measure Θ}\n  [StandardBorelSpace Θ] [Nonempty Θ] {f : 𝓧 → 𝓨} [ProbabilityTheory.IsFiniteKernel P]\n  [MeasureTheory.IsFiniteMeasure π] (hf : ProbabilityTheory.IsArgminEstimator ℓ P π f)\n  (hl : Measurable (Function.uncurry ℓ)) : ProbabilityTheory.IsBayesEstimator ℓ P hf.kernel π",
+   "module": "Mathlib.Probability.Decision.BayesEstimator",
+   "line": 131,
+   "kind": "theorem",
+   "deprecated": null},
+  "ProbabilityTheory.IsArgminEstimator.avgRisk_eq_lintegral_iInf":
+  {"signature":
+   "ProbabilityTheory.IsArgminEstimator.avgRisk_eq_lintegral_iInf.{u_1, u_2, u_3} {Θ : Type u_1}\n  {𝓧 : Type u_2} {𝓨 : Type u_3} {mΘ : MeasurableSpace Θ} {m𝓧 : MeasurableSpace 𝓧}\n  {m𝓨 : MeasurableSpace 𝓨} {ℓ : Θ → 𝓨 → ENNReal} {P : ProbabilityTheory.Kernel Θ 𝓧}\n  {π : MeasureTheory.Measure Θ} [StandardBorelSpace Θ] [Nonempty Θ] {f : 𝓧 → 𝓨}\n  [ProbabilityTheory.IsFiniteKernel P] [MeasureTheory.IsFiniteMeasure π]\n  (hf : ProbabilityTheory.IsArgminEstimator ℓ P π f) (hl : Measurable (Function.uncurry ℓ)) :\n  ProbabilityTheory.avgRisk ℓ P hf.kernel π =\n    ∫⁻ (x : 𝓧), ⨅ y, ∫⁻ (θ : Θ), ℓ θ y ∂(ProbabilityTheory.posterior P π) x ∂π.bind ⇑P",
+   "module": "Mathlib.Probability.Decision.BayesEstimator",
+   "line": 121,
+   "kind": "theorem",
+   "deprecated": null},
+  "ProbabilityTheory.IsArgminEstimator":
+  {"signature":
+   "ProbabilityTheory.IsArgminEstimator.{u_1, u_2, u_4} {Θ : Type u_1} {𝓧 : Type u_2}\n  {mΘ : MeasurableSpace Θ} {m𝓧 : MeasurableSpace 𝓧} [StandardBorelSpace Θ] [Nonempty Θ]\n  {𝓨 : Type u_4} [MeasurableSpace 𝓨] (ℓ : Θ → 𝓨 → ENNReal) (P : ProbabilityTheory.Kernel Θ 𝓧)\n  [ProbabilityTheory.IsFiniteKernel P] (π : MeasureTheory.Measure Θ)\n  [MeasureTheory.IsFiniteMeasure π] (f : 𝓧 → 𝓨) : Prop",
+   "module": "Mathlib.Probability.Decision.BayesEstimator",
+   "line": 107,
+   "kind": "structure",
+   "deprecated": null},
+  "ProbabilityTheory.IsAEKolmogorovProcess.edist_eq_zero":
+  {"signature":
+   "ProbabilityTheory.IsAEKolmogorovProcess.edist_eq_zero.{u_1, u_2, u_3} {T : Type u_1} {Ω : Type u_2}\n  {E : Type u_3} [PseudoEMetricSpace T] {mΩ : MeasurableSpace Ω} [PseudoEMetricSpace E] {p q : ℝ}\n  {M : NNReal} {P : MeasureTheory.Measure Ω} {X : T → Ω → E}\n  (hX : ProbabilityTheory.IsAEKolmogorovProcess X P p q M) {s t : T} (h : edist s t = 0) :\n  ∀ᵐ (ω : Ω) ∂P, edist (X s ω) (X t ω) = 0",
+   "module": "Mathlib.Probability.Process.Kolmogorov",
+   "line": 150,
+   "kind": "theorem",
+   "deprecated": null},
+  "ProbabilityTheory.IsAEKolmogorovProcess.aemeasurable_edist":
+  {"signature":
+   "ProbabilityTheory.IsAEKolmogorovProcess.aemeasurable_edist.{u_1, u_2, u_3} {T : Type u_1}\n  {Ω : Type u_2} {E : Type u_3} [PseudoEMetricSpace T] {mΩ : MeasurableSpace Ω}\n  [PseudoEMetricSpace E] {p q : ℝ} {M : NNReal} {P : MeasureTheory.Measure Ω} {X : T → Ω → E}\n  (hX : ProbabilityTheory.IsAEKolmogorovProcess X P p q M) {s t : T} :\n  AEMeasurable (fun ω => edist (X s ω) (X t ω)) P",
+   "module": "Mathlib.Probability.Process.Kolmogorov",
+   "line": 119,
+   "kind": "theorem",
+   "deprecated": null},
+  "ProbabilityTheory.IsAEKolmogorovProcess.aemeasurable":
+  {"signature":
+   "ProbabilityTheory.IsAEKolmogorovProcess.aemeasurable.{u_1, u_2, u_3} {T : Type u_1} {Ω : Type u_2}\n  {E : Type u_3} [PseudoEMetricSpace T] {mΩ : MeasurableSpace Ω} [PseudoEMetricSpace E] {p q : ℝ}\n  {M : NNReal} {P : MeasureTheory.Measure Ω} {X : T → Ω → E} [MeasurableSpace E] [BorelSpace E]\n  (hX : ProbabilityTheory.IsAEKolmogorovProcess X P p q M) (s : T) : AEMeasurable (X s) P",
+   "module": "Mathlib.Probability.Process.Kolmogorov",
+   "line": 128,
+   "kind": "theorem",
+   "deprecated": null},
+  "ProbabilityTheory.IsAEKolmogorovProcess":
+  {"signature":
+   "ProbabilityTheory.IsAEKolmogorovProcess.{u_1, u_2, u_3} {T : Type u_1} {Ω : Type u_2} {E : Type u_3}\n  [PseudoEMetricSpace T] {mΩ : MeasurableSpace Ω} [PseudoEMetricSpace E] (X : T → Ω → E)\n  (P : MeasureTheory.Measure Ω) (p q : ℝ) (M : NNReal) : Prop",
+   "module": "Mathlib.Probability.Process.Kolmogorov",
+   "line": 61,
+   "kind": "def",
+   "deprecated": null},
+  "ProbabilityTheory.HasIndepIncrements":
+  {"signature":
+   "ProbabilityTheory.HasIndepIncrements.{u_1, u_2, u_3} {T : Type u_1} {Ω : Type u_2} {E : Type u_3}\n  {mΩ : MeasurableSpace Ω} [Preorder T] [MeasurableSpace E] [Sub E] (X : T → Ω → E)\n  (P : MeasureTheory.Measure Ω := by volume_tac) : Prop",
+   "module": "Mathlib.Probability.Independence.Process.HasIndepIncrements.Basic",
+   "line": 53,
+   "kind": "def",
+   "deprecated": null},
+  "ProbabilityTheory.HasArgminEstimator.bayesRisk_eq":
+  {"signature":
+   "ProbabilityTheory.HasArgminEstimator.bayesRisk_eq.{u_1, u_2, u_3} {Θ : Type u_1} {𝓧 : Type u_2}\n  {𝓨 : Type u_3} {mΘ : MeasurableSpace Θ} {m𝓧 : MeasurableSpace 𝓧} {m𝓨 : MeasurableSpace 𝓨}\n  {ℓ : Θ → 𝓨 → ENNReal} {P : ProbabilityTheory.Kernel Θ 𝓧} {π : MeasureTheory.Measure Θ}\n  [StandardBorelSpace Θ] [Nonempty Θ] [ProbabilityTheory.IsFiniteKernel P]\n  [MeasureTheory.IsFiniteMeasure π] (hl : Measurable (Function.uncurry ℓ))\n  (h : ProbabilityTheory.HasArgminEstimator ℓ P π) :\n  ProbabilityTheory.bayesRisk ℓ P π =\n    ∫⁻ (x : 𝓧), ⨅ y, ∫⁻ (θ : Θ), ℓ θ y ∂(ProbabilityTheory.posterior P π) x ∂π.bind ⇑P",
+   "module": "Mathlib.Probability.Decision.BayesEstimator",
+   "line": 158,
    "kind": "theorem",
    "deprecated": null},
   "PrincipalIdealRing.to_uniqueFactorizationMonoid":
@@ -31253,6 +32214,90 @@
    "line": 610,
    "kind": "theorem",
    "deprecated": null},
+  "PairReduction.radius_logSizeBallSeq_le":
+  {"signature":
+   "PairReduction.radius_logSizeBallSeq_le.{u_1} {T : Type u_1} [TopologicalSpace T]\n  [WeakPseudoEMetricSpace T] {a c : ENNReal} {n : ℕ} {J : Finset T} [DecidableEq T]\n  (hJ : J.Nonempty) (ha : 1 < a) (hn : 1 ≤ n) (hJ_card : ↑J.card ≤ a ^ n) (i : ℕ) :\n  (PairReduction.logSizeBallSeq J hJ a c i).radius ≤ n",
+   "module": "Mathlib.Topology.EMetricSpace.PairReduction",
+   "line": 228,
+   "kind": "theorem",
+   "deprecated": null},
+  "PairReduction.pow_logSizeRadius_le_card_le_logSizeRadius":
+  {"signature":
+   "PairReduction.pow_logSizeRadius_le_card_le_logSizeRadius.{u_1} {T : Type u_1} [TopologicalSpace T]\n  [WeakPseudoEMetricSpace T] {a c : ENNReal} {V : Finset T} {t : T} (ha : 1 < a) (ht : t ∈ V) :\n  a ^ (PairReduction.logSizeRadius t V a c - 1) ≤\n    ↑{x ∈ V | edist t x ≤ (↑(PairReduction.logSizeRadius t V a c) - 1) * c}.card",
+   "module": "Mathlib.Topology.EMetricSpace.PairReduction",
+   "line": 137,
+   "kind": "theorem",
+   "deprecated": null},
+  "PairReduction.pairSet":
+  {"signature":
+   "PairReduction.pairSet.{u_1} {T : Type u_1} [TopologicalSpace T] [WeakPseudoEMetricSpace T]\n  [DecidableEq T] (J : Finset T) (a c : ENNReal) : Finset (T × T)",
+   "module": "Mathlib.Topology.EMetricSpace.PairReduction",
+   "line": 316,
+   "kind": "def",
+   "deprecated": null},
+  "PairReduction.logSizeRadius":
+  {"signature":
+   "PairReduction.logSizeRadius.{u_1} {T : Type u_1} [TopologicalSpace T] [WeakPseudoEMetricSpace T]\n  (t : T) (V : Finset T) (a c : ENNReal) : ℕ",
+   "module": "Mathlib.Topology.EMetricSpace.PairReduction",
+   "line": 121,
+   "kind": "def",
+   "deprecated": null},
+  "PairReduction.logSizeBallSeq":
+  {"signature":
+   "PairReduction.logSizeBallSeq.{u_1} {T : Type u_1} [TopologicalSpace T] [WeakPseudoEMetricSpace T]\n  [DecidableEq T] (J : Finset T) (hJ : J.Nonempty) (a c : ENNReal) :\n  ℕ → PairReduction.logSizeBallStruct T",
+   "module": "Mathlib.Topology.EMetricSpace.PairReduction",
+   "line": 178,
+   "kind": "def",
+   "deprecated": null},
+  "PairReduction.iSup_edist_pairSet":
+  {"signature":
+   "PairReduction.iSup_edist_pairSet.{u_1, u_2} {T : Type u_1} [TopologicalSpace T]\n  [WeakPseudoEMetricSpace T] {a c : ENNReal} {J : Finset T} [DecidableEq T] {E : Type u_2}\n  [TopologicalSpace E] [WeakPseudoEMetricSpace E] (ha : 1 < a) (f : T → E) :\n  ⨆ s, ⨆ t, edist (f ↑s) (f ↑↑t) ≤ 2 * ⨆ p, edist (f (↑p).1) (f (↑p).2)",
+   "module": "Mathlib.Topology.EMetricSpace.PairReduction",
+   "line": 395,
+   "kind": "theorem",
+   "deprecated": null},
+  "PairReduction.finset_logSizeBallSeq_add_one_subset":
+  {"signature":
+   "PairReduction.finset_logSizeBallSeq_add_one_subset.{u_1} {T : Type u_1} [TopologicalSpace T]\n  [WeakPseudoEMetricSpace T] {a c : ENNReal} {J : Finset T} [DecidableEq T] (hJ : J.Nonempty)\n  (i : ℕ) :\n  (PairReduction.logSizeBallSeq J hJ a c (i + 1)).finset ⊆\n    (PairReduction.logSizeBallSeq J hJ a c i).finset",
+   "module": "Mathlib.Topology.EMetricSpace.PairReduction",
+   "line": 215,
+   "kind": "theorem",
+   "deprecated": null},
+  "PairReduction.edist_le_of_mem_pairSet":
+  {"signature":
+   "PairReduction.edist_le_of_mem_pairSet.{u_1} {T : Type u_1} [TopologicalSpace T]\n  [WeakPseudoEMetricSpace T] {a c : ENNReal} {n : ℕ} {J : Finset T} [DecidableEq T] (ha : 1 < a)\n  (hJ_card : ↑J.card ≤ a ^ n) {s t : T} (h : (s, t) ∈ PairReduction.pairSet J a c) :\n  edist s t ≤ ↑n * c",
+   "module": "Mathlib.Topology.EMetricSpace.PairReduction",
+   "line": 380,
+   "kind": "theorem",
+   "deprecated": null},
+  "PairReduction.disjoint_smallBall_logSizeBallSeq":
+  {"signature":
+   "PairReduction.disjoint_smallBall_logSizeBallSeq.{u_1} {T : Type u_1} [TopologicalSpace T]\n  [WeakPseudoEMetricSpace T] {a c : ENNReal} {J : Finset T} [DecidableEq T] (hJ : J.Nonempty)\n  {i j : ℕ} (hij : i ≠ j) :\n  Disjoint ((PairReduction.logSizeBallSeq J hJ a c i).smallBall c)\n    ((PairReduction.logSizeBallSeq J hJ a c j).smallBall c)",
+   "module": "Mathlib.Topology.EMetricSpace.PairReduction",
+   "line": 299,
+   "kind": "theorem",
+   "deprecated": null},
+  "PairReduction.card_pairSet_le":
+  {"signature":
+   "PairReduction.card_pairSet_le.{u_1} {T : Type u_1} [TopologicalSpace T] [WeakPseudoEMetricSpace T]\n  {a c : ENNReal} {J : Finset T} [DecidableEq T] (ha : 1 < a) :\n  ↑(PairReduction.pairSet J a c).card ≤ a * ↑J.card",
+   "module": "Mathlib.Topology.EMetricSpace.PairReduction",
+   "line": 362,
+   "kind": "theorem",
+   "deprecated": null},
+  "PairReduction.card_le_logSizeRadius_le_pow_logSizeRadius":
+  {"signature":
+   "PairReduction.card_le_logSizeRadius_le_pow_logSizeRadius.{u_1} {T : Type u_1} [TopologicalSpace T]\n  [WeakPseudoEMetricSpace T] {a c : ENNReal} {V : Finset T} {t : T} (ha : 1 < a) :\n  ↑{x ∈ V | edist t x ≤ ↑(PairReduction.logSizeRadius t V a c) * c}.card ≤\n    a ^ PairReduction.logSizeRadius t V a c",
+   "module": "Mathlib.Topology.EMetricSpace.PairReduction",
+   "line": 132,
+   "kind": "theorem",
+   "deprecated": null},
+  "PairReduction.card_finset_logSizeBallSeq_card_eq_zero":
+  {"signature":
+   "PairReduction.card_finset_logSizeBallSeq_card_eq_zero.{u_1} {T : Type u_1} [TopologicalSpace T]\n  [WeakPseudoEMetricSpace T] {a c : ENNReal} {J : Finset T} [DecidableEq T] (hJ : J.Nonempty) :\n  (PairReduction.logSizeBallSeq J hJ a c J.card).finset.card = 0",
+   "module": "Mathlib.Topology.EMetricSpace.PairReduction",
+   "line": 294,
+   "kind": "theorem",
+   "deprecated": null},
   "PadicInt.valuation_zero":
   {"signature":
    "PadicInt.valuation_zero {p : ℕ} [hp : Fact (Nat.Prime p)] : PadicInt.valuation 0 = 0",
@@ -31599,6 +32644,12 @@
   {"signature": "OrderTopology.{u_1} (α : Type u_1) [t : TopologicalSpace α] [Preorder α] : Prop",
    "module": "Mathlib.Topology.Order.Basic",
    "line": 72,
+   "kind": "class",
+   "deprecated": null},
+  "OrderClosedTopology":
+  {"signature": "OrderClosedTopology.{u_1} (α : Type u_1) [TopologicalSpace α] [Preorder α] : Prop",
+   "module": "Mathlib.Topology.Order.OrderClosed",
+   "line": 84,
    "kind": "class",
    "deprecated": null},
   "Order.iso_of_countable_dense":
@@ -33362,11 +34413,354 @@
    "line": 911,
    "kind": "theorem",
    "deprecated": null},
+  "Metric.packingNumber_two_mul_le_externalCoveringNumber":
+  {"signature":
+   "Metric.packingNumber_two_mul_le_externalCoveringNumber.{u_1} {X : Type u_1} [PseudoEMetricSpace X]\n  (ε : NNReal) (A : Set X) : Metric.packingNumber (2 * ε) A ≤ Metric.externalCoveringNumber ε A",
+   "module": "Mathlib.Topology.MetricSpace.CoveringNumbers",
+   "line": 324,
+   "kind": "theorem",
+   "deprecated": null},
+  "Metric.packingNumber":
+  {"signature":
+   "Metric.packingNumber.{u_1} {X : Type u_1} [PseudoEMetricSpace X] (ε : NNReal) (A : Set X) : ℕ∞",
+   "module": "Mathlib.Topology.MetricSpace.CoveringNumbers",
+   "line": 76,
+   "kind": "def",
+   "deprecated": null},
+  "Metric.externalCoveringNumber_mono_set":
+  {"signature":
+   "Metric.externalCoveringNumber_mono_set.{u_1} {X : Type u_1} [PseudoEMetricSpace X] {A B : Set X}\n  {ε : NNReal} (h : A ⊆ B) : Metric.externalCoveringNumber ε A ≤ Metric.externalCoveringNumber ε B",
+   "module": "Mathlib.Topology.MetricSpace.CoveringNumbers",
+   "line": 159,
+   "kind": "theorem",
+   "deprecated": null},
+  "Metric.externalCoveringNumber_le_coveringNumber":
+  {"signature":
+   "Metric.externalCoveringNumber_le_coveringNumber.{u_1} {X : Type u_1} [PseudoEMetricSpace X]\n  (ε : NNReal) (A : Set X) : Metric.externalCoveringNumber ε A ≤ Metric.coveringNumber ε A",
+   "module": "Mathlib.Topology.MetricSpace.CoveringNumbers",
+   "line": 124,
+   "kind": "theorem",
+   "deprecated": null},
+  "Metric.externalCoveringNumber":
+  {"signature":
+   "Metric.externalCoveringNumber.{u_1} {X : Type u_1} [PseudoEMetricSpace X] (ε : NNReal) (A : Set X) :\n  ℕ∞",
+   "module": "Mathlib.Topology.MetricSpace.CoveringNumbers",
+   "line": 64,
+   "kind": "def",
+   "deprecated": null},
+  "Metric.coveringNumber_subset_le":
+  {"signature":
+   "Metric.coveringNumber_subset_le.{u_1} {X : Type u_1} [PseudoEMetricSpace X] {A B : Set X}\n  {ε : NNReal} (h : A ⊆ B) : Metric.coveringNumber ε A ≤ Metric.coveringNumber (ε / 2) B",
+   "module": "Mathlib.Topology.MetricSpace.CoveringNumbers",
+   "line": 364,
+   "kind": "theorem",
+   "deprecated": null},
+  "Metric.coveringNumber_le_packingNumber":
+  {"signature":
+   "Metric.coveringNumber_le_packingNumber.{u_1} {X : Type u_1} [PseudoEMetricSpace X] (ε : NNReal)\n  (A : Set X) : Metric.coveringNumber ε A ≤ Metric.packingNumber ε A",
+   "module": "Mathlib.Topology.MetricSpace.CoveringNumbers",
+   "line": 350,
+   "kind": "theorem",
+   "deprecated": null},
+  "Metric.coveringNumber_eq_one_of_ediam_le":
+  {"signature":
+   "Metric.coveringNumber_eq_one_of_ediam_le.{u_1} {X : Type u_1} [PseudoEMetricSpace X] {A : Set X}\n  {ε : NNReal} (h_nonempty : A.Nonempty) (hA : Metric.ediam A ≤ ↑ε) : Metric.coveringNumber ε A = 1",
+   "module": "Mathlib.Topology.MetricSpace.CoveringNumbers",
+   "line": 184,
+   "kind": "theorem",
+   "deprecated": null},
+  "Metric.coveringNumber":
+  {"signature":
+   "Metric.coveringNumber.{u_1} {X : Type u_1} [PseudoEMetricSpace X] (ε : NNReal) (A : Set X) : ℕ∞",
+   "module": "Mathlib.Topology.MetricSpace.CoveringNumbers",
+   "line": 70,
+   "kind": "def",
+   "deprecated": null},
+  "Metric.IsSeparated":
+  {"signature":
+   "Metric.IsSeparated.{u_1} {X : Type u_1} [PseudoEMetricSpace X] (ε : ENNReal) (s : Set X) : Prop",
+   "module": "Mathlib.Topology.MetricSpace.MetricSeparated",
+   "line": 41,
+   "kind": "def",
+   "deprecated": null},
+  "Metric.IsCover":
+  {"signature":
+   "Metric.IsCover.{u_1} {X : Type u_1} [PseudoEMetricSpace X] (ε : NNReal) (s N : Set X) : Prop",
+   "module": "Mathlib.Topology.MetricSpace.Cover",
+   "line": 41,
+   "kind": "def",
+   "deprecated": null},
+  "Metric.HasCoveringExponent.subset":
+  {"signature":
+   "Metric.HasCoveringExponent.subset.{u_1} {T : Type u_1} [PseudoEMetricSpace T] {A B : Set T}\n  {c : ENNReal} {d : ℝ} (h : Metric.HasCoveringExponent A c d) (hBA : B ⊆ A) (hd : 0 ≤ d) :\n  Metric.HasCoveringExponent B (2 ^ d * c) d",
+   "module": "Mathlib.Topology.MetricSpace.CoveringExponent",
+   "line": 64,
+   "kind": "theorem",
+   "deprecated": null},
+  "Metric.HasCoveringExponent":
+  {"signature":
+   "Metric.HasCoveringExponent.{u_1} {T : Type u_1} [PseudoEMetricSpace T] (A : Set T) (c : ENNReal)\n  (d : ℝ) : Prop",
+   "module": "Mathlib.Topology.MetricSpace.CoveringExponent",
+   "line": 40,
+   "kind": "structure",
+   "deprecated": null},
+  "MeasureTheory.upperCrossingTime":
+  {"signature":
+   "MeasureTheory.upperCrossingTime.{u_1, u_2} {Ω : Type u_1} {ι : Type u_2} [Preorder ι] [OrderBot ι]\n  [InfSet ι] (a b : ℝ) (f : ι → Ω → ℝ) (N : ι) : ℕ → Ω → ι",
+   "module": "Mathlib.Probability.Martingale.Upcrossing",
+   "line": 138,
+   "kind": "def",
+   "deprecated": null},
+  "MeasureTheory.upcrossingsBefore":
+  {"signature":
+   "MeasureTheory.upcrossingsBefore.{u_1, u_2} {Ω : Type u_1} {ι : Type u_2} [Preorder ι] [OrderBot ι]\n  [InfSet ι] (a b : ℝ) (f : ι → Ω → ℝ) (N : ι) (ω : Ω) : ℕ",
+   "module": "Mathlib.Probability.Martingale.Upcrossing",
+   "line": 413,
+   "kind": "def",
+   "deprecated": null},
+  "MeasureTheory.upcrossings":
+  {"signature":
+   "MeasureTheory.upcrossings.{u_1, u_2} {Ω : Type u_1} {ι : Type u_2} [Preorder ι] [OrderBot ι]\n  [InfSet ι] (a b : ℝ) (f : ι → Ω → ℝ) (ω : Ω) : ENNReal",
+   "module": "Mathlib.Probability.Martingale.Upcrossing",
+   "line": 757,
+   "kind": "def",
+   "deprecated": null},
+  "MeasureTheory.tvDist_eq_integral_abs_rnDeriv_add_singularPart":
+  {"signature":
+   "MeasureTheory.tvDist_eq_integral_abs_rnDeriv_add_singularPart.{u_1} {𝓧 : Type u_1}\n  {m𝓧 : MeasurableSpace 𝓧} {μ ν : MeasureTheory.Measure 𝓧} [MeasureTheory.IsFiniteMeasure μ]\n  [MeasureTheory.IsFiniteMeasure ν] :\n  MeasureTheory.tvDist μ ν =\n    ∫ (x : 𝓧), |1 - (μ.rnDeriv ν x).toReal| ∂ν + (μ.singularPart ν).real Set.univ",
+   "module": "Mathlib.MeasureTheory.Measure.TotalVariation.Basic",
+   "line": 153,
+   "kind": "theorem",
+   "deprecated": null},
+  "MeasureTheory.tvDist":
+  {"signature":
+   "MeasureTheory.tvDist.{u_1} {𝓧 : Type u_1} {m𝓧 : MeasurableSpace 𝓧} (μ ν : MeasureTheory.Measure 𝓧) :\n  ℝ",
+   "module": "Mathlib.MeasureTheory.Measure.TotalVariation.Defs",
+   "line": 59,
+   "kind": "def",
+   "deprecated": null},
+  "MeasureTheory.toReal_rnDeriv_trim":
+  {"signature":
+   "MeasureTheory.toReal_rnDeriv_trim.{u_1} {𝓧 : Type u_1} {m m𝓧 : MeasurableSpace 𝓧}\n  {μ ν : MeasureTheory.Measure 𝓧} (hm : m ≤ m𝓧) [MeasureTheory.IsFiniteMeasure μ]\n  [hsf : MeasureTheory.SigmaFinite (ν.trim hm)] (hμν : μ.AbsolutelyContinuous ν) :\n  (fun x => ((μ.trim hm).rnDeriv (ν.trim hm) x).toReal) =ᵐ[ν.trim hm]\n    ν[fun x => (μ.rnDeriv ν x).toReal | m]",
+   "module": "Mathlib.MeasureTheory.Function.ConditionalExpectation.RadonNikodym",
+   "line": 129,
+   "kind": "theorem",
+   "deprecated": null},
+  "MeasureTheory.toReal_rnDeriv_map":
+  {"signature":
+   "MeasureTheory.toReal_rnDeriv_map.{u_1, u_2} {𝓧 : Type u_1} {𝓨 : Type u_2} {m𝓧 : MeasurableSpace 𝓧}\n  {m𝓨 : MeasurableSpace 𝓨} {μ ν : MeasureTheory.Measure 𝓧} [MeasureTheory.IsFiniteMeasure μ]\n  (hμν : μ.AbsolutelyContinuous ν) {g : 𝓧 → 𝓨} (hg : Measurable g)\n  [hσ : MeasureTheory.SigmaFinite (MeasureTheory.Measure.map g ν)] :\n  (fun a =>\n      ((MeasureTheory.Measure.map g μ).rnDeriv (MeasureTheory.Measure.map g ν) (g a)).toReal) =ᵐ[ν]\n    ν[fun a => (μ.rnDeriv ν a).toReal | MeasurableSpace.comap g m𝓨]",
+   "module": "Mathlib.MeasureTheory.Function.ConditionalExpectation.RadonNikodym",
+   "line": 44,
+   "kind": "theorem",
+   "deprecated": null},
+  "MeasureTheory.tendstoInMeasure_iff_tendsto_Lp_finite":
+  {"signature":
+   "MeasureTheory.tendstoInMeasure_iff_tendsto_Lp_finite.{u_1, u_2} {α : Type u_1} {β : Type u_2}\n  {m : MeasurableSpace α} {μ : MeasureTheory.Measure α} [NormedAddCommGroup β] {p : ENNReal}\n  {f : ℕ → α → β} {g : α → β} [MeasureTheory.IsFiniteMeasure μ] (hp : 1 ≤ p) (hp' : p ≠ ⊤)\n  (hf : ∀ (n : ℕ), MeasureTheory.MemLp (f n) p μ) (hg : MeasureTheory.MemLp g p μ) :\n  MeasureTheory.TendstoInMeasure μ f Filter.atTop g ∧ MeasureTheory.UnifIntegrable f p μ ↔\n    Filter.Tendsto (fun n => MeasureTheory.eLpNorm (f n - g) p μ) Filter.atTop (nhds 0)",
+   "module": "Mathlib.MeasureTheory.Function.UniformIntegrable",
+   "line": 549,
+   "kind": "theorem",
+   "deprecated": null},
+  "MeasureTheory.sum_addContent_eq_of_sUnion_eq":
+  {"signature":
+   "MeasureTheory.sum_addContent_eq_of_sUnion_eq.{u_1, u_2} {α : Type u_1} {C : Set (Set α)}\n  {G : Type u_2} [AddCommMonoid G] {m : MeasureTheory.AddContent G C}\n  (hC : MeasureTheory.IsSetSemiring C) (J J' : Finset (Set α)) (hJ : ↑J ⊆ C)\n  (hJdisj : (↑J).PairwiseDisjoint id) (hJ' : ↑J' ⊆ C) (hJ'disj : (↑J').PairwiseDisjoint id)\n  (h : ⋃₀ ↑J = ⋃₀ ↑J') : ∑ s ∈ J, m s = ∑ t ∈ J', m t",
+   "module": "Mathlib.MeasureTheory.Measure.AddContent",
+   "line": 184,
+   "kind": "theorem",
+   "deprecated": null},
+  "MeasureTheory.stronglyAdapted_predictablePart":
+  {"signature":
+   "MeasureTheory.stronglyAdapted_predictablePart.{u_1, u_2} {Ω : Type u_1} {E : Type u_2}\n  {m0 : MeasurableSpace Ω} {μ : MeasureTheory.Measure Ω} [NormedAddCommGroup E] [NormedSpace ℝ E]\n  {f : ℕ → Ω → E} {ℱ : MeasureTheory.Filtration ℕ m0} :\n  MeasureTheory.StronglyAdapted ℱ fun n => MeasureTheory.predictablePart f ℱ μ (n + 1)",
+   "module": "Mathlib.Probability.Martingale.Centering",
+   "line": 110,
+   "kind": "theorem",
+   "deprecated": null},
+  "MeasureTheory.stoppedProcess":
+  {"signature":
+   "MeasureTheory.stoppedProcess.{u_1, u_2, u_3} {Ω : Type u_1} {β : Type u_2} {ι : Type u_3}\n  [Nonempty ι] [LinearOrder ι] (u : ι → Ω → β) (τ : Ω → WithTop ι) : ι → Ω → β",
+   "module": "Mathlib.Probability.Process.Stopping",
+   "line": 834,
+   "kind": "def",
+   "deprecated": null},
+  "MeasureTheory.projectiveLimit":
+  {"signature":
+   "MeasureTheory.projectiveLimit.{u_1, u_2} {ι : Type u_1} {α : ι → Type u_2}\n  [(i : ι) → MeasurableSpace (α i)] [(i : ι) → TopologicalSpace (α i)]\n  [∀ (i : ι), SecondCountableTopology (α i)]\n  [∀ (i : ι), TopologicalSpace.IsCompletelyPseudoMetrizableSpace (α i)]\n  [∀ (i : ι), BorelSpace (α i)] (P : (J : Finset ι) → MeasureTheory.Measure ((j : ↥J) → α ↑j))\n  [∀ (i : Finset ι), MeasureTheory.IsFiniteMeasure (P i)]\n  (hP : MeasureTheory.IsProjectiveMeasureFamily P) : MeasureTheory.Measure ((i : ι) → α i)",
+   "module": "Mathlib.MeasureTheory.Constructions.KolmogorovExtension",
+   "line": 113,
+   "kind": "def",
+   "deprecated": null},
+  "MeasureTheory.predictablePart_zero":
+  {"signature":
+   "MeasureTheory.predictablePart_zero.{u_1, u_2} {Ω : Type u_1} {E : Type u_2} {m0 : MeasurableSpace Ω}\n  {μ : MeasureTheory.Measure Ω} [NormedAddCommGroup E] [NormedSpace ℝ E] {f : ℕ → Ω → E}\n  {ℱ : MeasureTheory.Filtration ℕ m0} : MeasureTheory.predictablePart f ℱ μ 0 = 0",
+   "module": "Mathlib.Probability.Martingale.Centering",
+   "line": 50,
+   "kind": "theorem",
+   "deprecated": null},
+  "MeasureTheory.predictablePart_smul":
+  {"signature":
+   "MeasureTheory.predictablePart_smul.{u_1, u_2} {Ω : Type u_1} {E : Type u_2} {m0 : MeasurableSpace Ω}\n  {μ : MeasureTheory.Measure Ω} [NormedAddCommGroup E] [NormedSpace ℝ E] {f : ℕ → Ω → E}\n  {ℱ : MeasureTheory.Filtration ℕ m0} [CompleteSpace E] (c : ℝ) (n : ℕ) :\n  MeasureTheory.predictablePart (c • f) ℱ μ n =ᵐ[μ] c • MeasureTheory.predictablePart f ℱ μ n",
+   "module": "Mathlib.Probability.Martingale.Centering",
+   "line": 59,
+   "kind": "theorem",
+   "deprecated": null},
+  "MeasureTheory.predictablePart_add_one":
+  {"signature":
+   "MeasureTheory.predictablePart_add_one.{u_1, u_2} {Ω : Type u_1} {E : Type u_2}\n  {m0 : MeasurableSpace Ω} {μ : MeasureTheory.Measure Ω} [NormedAddCommGroup E] [NormedSpace ℝ E]\n  {f : ℕ → Ω → E} {ℱ : MeasureTheory.Filtration ℕ m0} (n : ℕ) :\n  MeasureTheory.predictablePart f ℱ μ (n + 1) =\n    MeasureTheory.predictablePart f ℱ μ n + μ[f (n + 1) - f n | ↑ℱ n]",
+   "module": "Mathlib.Probability.Martingale.Centering",
+   "line": 54,
+   "kind": "theorem",
+   "deprecated": null},
+  "MeasureTheory.predictablePart_add":
+  {"signature":
+   "MeasureTheory.predictablePart_add.{u_1, u_2} {Ω : Type u_1} {E : Type u_2} {m0 : MeasurableSpace Ω}\n  {μ : MeasureTheory.Measure Ω} [NormedAddCommGroup E] [NormedSpace ℝ E] {f g : ℕ → Ω → E}\n  {ℱ : MeasureTheory.Filtration ℕ m0} [CompleteSpace E]\n  (hfint : ∀ (n : ℕ), MeasureTheory.Integrable (f n) μ)\n  (hgint : ∀ (n : ℕ), MeasureTheory.Integrable (g n) μ) (n : ℕ) :\n  MeasureTheory.predictablePart (f + g) ℱ μ n =ᵐ[μ]\n    MeasureTheory.predictablePart f ℱ μ n + MeasureTheory.predictablePart g ℱ μ n",
+   "module": "Mathlib.Probability.Martingale.Centering",
+   "line": 65,
+   "kind": "theorem",
+   "deprecated": null},
+  "MeasureTheory.predictablePart":
+  {"signature":
+   "MeasureTheory.predictablePart.{u_1, u_2} {Ω : Type u_1} {E : Type u_2} [NormedAddCommGroup E]\n  [NormedSpace ℝ E] {m0 : MeasurableSpace Ω} (f : ℕ → Ω → E) (ℱ : MeasureTheory.Filtration ℕ m0)\n  (μ : MeasureTheory.Measure Ω) : ℕ → Ω → E",
+   "module": "Mathlib.Probability.Martingale.Centering",
+   "line": 45,
+   "kind": "def",
+   "deprecated": null},
+  "MeasureTheory.measurableSet_predictable_Ioc_prod":
+  {"signature":
+   "MeasureTheory.measurableSet_predictable_Ioc_prod.{u_1, u_2} {Ω : Type u_1} {ι : Type u_2}\n  {m : MeasurableSpace Ω} [LinearOrder ι] [OrderBot ι] {𝓕 : MeasureTheory.Filtration ι m} (i j : ι)\n  {s : Set Ω} (hs : MeasurableSet s) : MeasurableSet (Set.Ioc i j ×ˢ s)",
+   "module": "Mathlib.Probability.Process.Predictable",
+   "line": 68,
+   "kind": "theorem",
+   "deprecated": null},
+  "MeasureTheory.maximal_ineq":
+  {"signature":
+   "MeasureTheory.maximal_ineq.{u_1} {Ω : Type u_1} {m0 : MeasurableSpace Ω}\n  {μ : MeasureTheory.Measure Ω} {𝒢 : MeasureTheory.Filtration ℕ m0} {f : ℕ → Ω → ℝ}\n  [MeasureTheory.IsFiniteMeasure μ] (hsub : MeasureTheory.Submartingale f 𝒢 μ) (hnonneg : 0 ≤ f)\n  {ε : NNReal} (n : ℕ) :\n  ↑ε * μ {ω | ↑ε ≤ (Finset.range (n + 1)).sup' ⋯ fun k => f k ω} ≤\n    ENNReal.ofReal (∫ (ω : Ω) in {ω | ↑ε ≤ (Finset.range (n + 1)).sup' ⋯ fun k => f k ω}, f n ω ∂μ)",
+   "module": "Mathlib.Probability.Martingale.OptionalStopping",
+   "line": 138,
+   "kind": "theorem",
+   "deprecated": null},
+  "MeasureTheory.martingale_martingalePart":
+  {"signature":
+   "MeasureTheory.martingale_martingalePart.{u_1, u_2} {Ω : Type u_1} {E : Type u_2}\n  {m0 : MeasurableSpace Ω} {μ : MeasureTheory.Measure Ω} [NormedAddCommGroup E] [NormedSpace ℝ E]\n  {f : ℕ → Ω → E} {ℱ : MeasureTheory.Filtration ℕ m0} [CompleteSpace E]\n  (hf : MeasureTheory.StronglyAdapted ℱ f) (hf_int : ∀ (n : ℕ), MeasureTheory.Integrable (f n) μ)\n  [MeasureTheory.SigmaFiniteFiltration μ ℱ] :\n  MeasureTheory.Martingale (MeasureTheory.martingalePart f ℱ μ) ℱ μ",
+   "module": "Mathlib.Probability.Martingale.Centering",
+   "line": 174,
+   "kind": "theorem",
+   "deprecated": null},
+  "MeasureTheory.martingalePart_zero":
+  {"signature":
+   "MeasureTheory.martingalePart_zero.{u_1, u_2} {Ω : Type u_1} {E : Type u_2} {m0 : MeasurableSpace Ω}\n  {μ : MeasureTheory.Measure Ω} [NormedAddCommGroup E] [NormedSpace ℝ E] {f : ℕ → Ω → E}\n  {ℱ : MeasureTheory.Filtration ℕ m0} : MeasureTheory.martingalePart f ℱ μ 0 = f 0",
+   "module": "Mathlib.Probability.Martingale.Centering",
+   "line": 129,
+   "kind": "theorem",
+   "deprecated": null},
+  "MeasureTheory.martingalePart_smul":
+  {"signature":
+   "MeasureTheory.martingalePart_smul.{u_1, u_2} {Ω : Type u_1} {E : Type u_2} {m0 : MeasurableSpace Ω}\n  {μ : MeasureTheory.Measure Ω} [NormedAddCommGroup E] [NormedSpace ℝ E] {f : ℕ → Ω → E}\n  {ℱ : MeasureTheory.Filtration ℕ m0} [CompleteSpace E] (c : ℝ) (n : ℕ) :\n  MeasureTheory.martingalePart (c • f) ℱ μ n =ᵐ[μ] c • MeasureTheory.martingalePart f ℱ μ n",
+   "module": "Mathlib.Probability.Martingale.Centering",
+   "line": 133,
+   "kind": "theorem",
+   "deprecated": null},
+  "MeasureTheory.martingalePart_add":
+  {"signature":
+   "MeasureTheory.martingalePart_add.{u_1, u_2} {Ω : Type u_1} {E : Type u_2} {m0 : MeasurableSpace Ω}\n  {μ : MeasureTheory.Measure Ω} [NormedAddCommGroup E] [NormedSpace ℝ E] {f g : ℕ → Ω → E}\n  {ℱ : MeasureTheory.Filtration ℕ m0} [CompleteSpace E]\n  (hfint : ∀ (n : ℕ), MeasureTheory.Integrable (f n) μ)\n  (hgint : ∀ (n : ℕ), MeasureTheory.Integrable (g n) μ) (n : ℕ) :\n  MeasureTheory.martingalePart (f + g) ℱ μ n =ᵐ[μ]\n    MeasureTheory.martingalePart f ℱ μ n + MeasureTheory.martingalePart g ℱ μ n",
+   "module": "Mathlib.Probability.Martingale.Centering",
+   "line": 138,
+   "kind": "theorem",
+   "deprecated": null},
+  "MeasureTheory.martingalePart":
+  {"signature":
+   "MeasureTheory.martingalePart.{u_1, u_2} {Ω : Type u_1} {E : Type u_2} [NormedAddCommGroup E]\n  [NormedSpace ℝ E] {m0 : MeasurableSpace Ω} (f : ℕ → Ω → E) (ℱ : MeasureTheory.Filtration ℕ m0)\n  (μ : MeasureTheory.Measure Ω) : ℕ → Ω → E",
+   "module": "Mathlib.Probability.Martingale.Centering",
+   "line": 124,
+   "kind": "def",
+   "deprecated": null},
+  "MeasureTheory.lowerCrossingTimeAux":
+  {"signature":
+   "MeasureTheory.lowerCrossingTimeAux.{u_1, u_2} {Ω : Type u_1} {ι : Type u_2} [Preorder ι] [InfSet ι]\n  (a : ℝ) (f : ι → Ω → ℝ) (c N : ι) : Ω → ι",
+   "module": "Mathlib.Probability.Martingale.Upcrossing",
+   "line": 132,
+   "kind": "def",
+   "deprecated": null},
+  "MeasureTheory.lowerCrossingTime":
+  {"signature":
+   "MeasureTheory.lowerCrossingTime.{u_1, u_2} {Ω : Type u_1} {ι : Type u_2} [Preorder ι] [OrderBot ι]\n  [InfSet ι] (a b : ℝ) (f : ι → Ω → ℝ) (N : ι) (n : ℕ) : Ω → ι",
+   "module": "Mathlib.Probability.Martingale.Upcrossing",
+   "line": 146,
+   "kind": "def",
+   "deprecated": null},
   "MeasureTheory.lintegral":
   {"signature":
    "MeasureTheory.lintegral.{u_1} {α : Type u_1} {m : MeasurableSpace α} (μ : MeasureTheory.Measure α)\n  (f : α → ENNReal) : ENNReal",
    "module": "Mathlib.MeasureTheory.Integral.Lebesgue.Basic",
    "line": 47,
+   "kind": "def",
+   "deprecated": null},
+  "MeasureTheory.leastGT_lt_iff":
+  {"signature":
+   "MeasureTheory.leastGT_lt_iff.{u_1, u_2, u_3} {ι : Type u_1} {Ω : Type u_2} {β : Type u_3}\n  [ConditionallyCompleteLinearOrder ι] [OrderBot ι] [Preorder β] {f : ι → Ω → β} {r : β} {t : ι}\n  {ω : Ω} : MeasureTheory.leastGT f r ω < ↑t ↔ ∃ s < t, r < f s ω",
+   "module": "Mathlib.Probability.Martingale.BorelCantelli",
+   "line": 76,
+   "kind": "theorem",
+   "deprecated": null},
+  "MeasureTheory.leastGT":
+  {"signature":
+   "MeasureTheory.leastGT.{u_1, u_2, u_3} {ι : Type u_1} {Ω : Type u_2} {β : Type u_3} [Preorder ι]\n  [OrderBot ι] [InfSet ι] [Preorder β] (f : ι → Ω → β) (r : β) : Ω → WithTop ι",
+   "module": "Mathlib.Probability.Martingale.BorelCantelli",
+   "line": 55,
+   "kind": "def",
+   "deprecated": null},
+  "MeasureTheory.leastGE":
+  {"signature":
+   "MeasureTheory.leastGE.{u_1, u_2, u_3} {ι : Type u_1} {Ω : Type u_2} {β : Type u_3} [Preorder ι]\n  [OrderBot ι] [InfSet ι] [Preorder β] (f : ι → Ω → β) (r : β) : Ω → WithTop ι",
+   "module": "Mathlib.Probability.Martingale.BorelCantelli",
+   "line": 50,
+   "kind": "def",
+   "deprecated": null},
+  "MeasureTheory.isProjectiveLimit_projectiveLimit":
+  {"signature":
+   "MeasureTheory.isProjectiveLimit_projectiveLimit.{u_1, u_2} {ι : Type u_1} {α : ι → Type u_2}\n  [(i : ι) → MeasurableSpace (α i)] {P : (J : Finset ι) → MeasureTheory.Measure ((j : ↥J) → α ↑j)}\n  [(i : ι) → TopologicalSpace (α i)] [∀ (i : ι), SecondCountableTopology (α i)]\n  [∀ (i : ι), TopologicalSpace.IsCompletelyPseudoMetrizableSpace (α i)]\n  [∀ (i : ι), BorelSpace (α i)] [∀ (I : Finset ι), MeasureTheory.IsFiniteMeasure (P I)]\n  (hP : MeasureTheory.IsProjectiveMeasureFamily P) :\n  MeasureTheory.IsProjectiveLimit (MeasureTheory.projectiveLimit P hP) P",
+   "module": "Mathlib.MeasureTheory.Constructions.KolmogorovExtension",
+   "line": 121,
+   "kind": "theorem",
+   "deprecated": null},
+  "MeasureTheory.isProbabilityMeasure_projectiveLimit":
+  {"signature":
+   "MeasureTheory.isProbabilityMeasure_projectiveLimit.{u_1, u_2} {ι : Type u_1} {α : ι → Type u_2}\n  [(i : ι) → MeasurableSpace (α i)] [(i : ι) → TopologicalSpace (α i)]\n  [∀ (i : ι), SecondCountableTopology (α i)]\n  [∀ (i : ι), TopologicalSpace.IsCompletelyPseudoMetrizableSpace (α i)]\n  [∀ (i : ι), BorelSpace (α i)] {P : (J : Finset ι) → MeasureTheory.Measure ((j : ↥J) → α ↑j)}\n  [∀ (J : Finset ι), MeasureTheory.IsProbabilityMeasure (P J)]\n  (hP : MeasureTheory.IsProjectiveMeasureFamily P) :\n  MeasureTheory.IsProbabilityMeasure (MeasureTheory.projectiveLimit P hP)",
+   "module": "Mathlib.MeasureTheory.Constructions.KolmogorovExtension",
+   "line": 143,
+   "kind": "theorem",
+   "deprecated": null},
+  "MeasureTheory.isPredictable_predictablePart":
+  {"signature":
+   "MeasureTheory.isPredictable_predictablePart.{u_1, u_2} {Ω : Type u_1} {E : Type u_2}\n  {m0 : MeasurableSpace Ω} {μ : MeasureTheory.Measure Ω} [NormedAddCommGroup E] [NormedSpace ℝ E]\n  {f : ℕ → Ω → E} {ℱ : MeasureTheory.Filtration ℕ m0} [SecondCountableTopology E]\n  [MeasurableSpace E] [BorelSpace E] :\n  MeasureTheory.IsStronglyPredictable ℱ (MeasureTheory.predictablePart f ℱ μ)",
+   "module": "Mathlib.Probability.Martingale.Centering",
+   "line": 115,
+   "kind": "theorem",
+   "deprecated": null},
+  "MeasureTheory.isFiniteMeasure_projectiveLimit":
+  {"signature":
+   "MeasureTheory.isFiniteMeasure_projectiveLimit.{u_1, u_2} {ι : Type u_1} {α : ι → Type u_2}\n  [(i : ι) → MeasurableSpace (α i)] {P : (J : Finset ι) → MeasureTheory.Measure ((j : ↥J) → α ↑j)}\n  [(i : ι) → TopologicalSpace (α i)] [∀ (i : ι), SecondCountableTopology (α i)]\n  [∀ (i : ι), TopologicalSpace.IsCompletelyPseudoMetrizableSpace (α i)]\n  [∀ (i : ι), BorelSpace (α i)] [∀ (I : Finset ι), MeasureTheory.IsFiniteMeasure (P I)]\n  (hP : MeasureTheory.IsProjectiveMeasureFamily P) :\n  MeasureTheory.IsFiniteMeasure (MeasureTheory.projectiveLimit P hP)",
+   "module": "Mathlib.MeasureTheory.Constructions.KolmogorovExtension",
+   "line": 139,
+   "kind": "theorem",
+   "deprecated": null},
+  "MeasureTheory.integral_comp_eval":
+  {"signature":
+   "MeasureTheory.integral_comp_eval.{u_2, u_3, u_4} {ι : Type u_2} [Fintype ι] {X : ι → Type u_3}\n  {mX : (i : ι) → MeasurableSpace (X i)} {μ : (i : ι) → MeasureTheory.Measure (X i)} {E : Type u_4}\n  [NormedAddCommGroup E] [NormedSpace ℝ E] [∀ (i : ι), MeasureTheory.IsProbabilityMeasure (μ i)]\n  {i : ι} {f : X i → E} (hf : MeasureTheory.AEStronglyMeasurable f (μ i)) :\n  ∫ (x : (i : ι) → X i), f (x i) ∂MeasureTheory.Measure.pi μ = ∫ (x : X i), f x ∂μ i",
+   "module": "Mathlib.MeasureTheory.Integral.Pi",
+   "line": 147,
+   "kind": "theorem",
+   "deprecated": null},
+  "MeasureTheory.hittingBtwn":
+  {"signature":
+   "MeasureTheory.hittingBtwn.{u_1, u_2, u_3} {Ω : Type u_1} {β : Type u_2} {ι : Type u_3} [Preorder ι]\n  [InfSet ι] (u : ι → Ω → β) (s : Set β) (n m : ι) : Ω → ι",
+   "module": "Mathlib.Probability.Process.HittingTime",
+   "line": 51,
+   "kind": "def",
+   "deprecated": null},
+  "MeasureTheory.hittingAfter":
+  {"signature":
+   "MeasureTheory.hittingAfter.{u_1, u_2, u_3} {Ω : Type u_1} {β : Type u_2} {ι : Type u_3} [Preorder ι]\n  [InfSet ι] (u : ι → Ω → β) (s : Set β) (n : ι) : Ω → WithTop ι",
+   "module": "Mathlib.Probability.Process.HittingTime",
+   "line": 62,
    "kind": "def",
    "deprecated": null},
   "MeasureTheory.exists_ne_zero_mem_lattice_of_measure_mul_two_pow_lt_measure":
@@ -33376,12 +34770,556 @@
    "line": 63,
    "kind": "theorem",
    "deprecated": null},
+  "MeasureTheory.charFun_map_eq_charFunDual_smul":
+  {"signature":
+   "MeasureTheory.charFun_map_eq_charFunDual_smul.{u_2} {E : Type u_2} [NormedAddCommGroup E]\n  [NormedSpace ℝ E] {mE : MeasurableSpace E} {μ : MeasureTheory.Measure E} [OpensMeasurableSpace E]\n  (L : StrongDual ℝ E) (u : ℝ) :\n  MeasureTheory.charFun (MeasureTheory.Measure.map (⇑L) μ) u = MeasureTheory.charFunDual μ (u • L)",
+   "module": "Mathlib.MeasureTheory.Measure.CharacteristicFunction.Basic",
+   "line": 358,
+   "kind": "theorem",
+   "deprecated": null},
+  "MeasureTheory.charFunDual_map":
+  {"signature":
+   "MeasureTheory.charFunDual_map.{u_2, u_3} {E : Type u_2} {F : Type u_3} [NormedAddCommGroup E]\n  [NormedSpace ℝ E] {mE : MeasurableSpace E} [NormedAddCommGroup F] [NormedSpace ℝ F]\n  {mF : MeasurableSpace F} {μ : MeasureTheory.Measure E} [OpensMeasurableSpace E] [BorelSpace F]\n  (L : E →L[ℝ] F) (L' : StrongDual ℝ F) :\n  MeasureTheory.charFunDual (MeasureTheory.Measure.map (⇑L) μ) L' =\n    MeasureTheory.charFunDual μ (L' ∘SL L)",
+   "module": "Mathlib.MeasureTheory.Measure.CharacteristicFunction.Basic",
+   "line": 381,
+   "kind": "theorem",
+   "deprecated": null},
+  "MeasureTheory.charFunDual":
+  {"signature":
+   "MeasureTheory.charFunDual.{u_2} {E : Type u_2} [NormedAddCommGroup E] [NormedSpace ℝ E]\n  {mE : MeasurableSpace E} (μ : MeasureTheory.Measure E) (L : StrongDual ℝ E) : ℂ",
+   "module": "Mathlib.MeasureTheory.Measure.CharacteristicFunction.Basic",
+   "line": 341,
+   "kind": "def",
+   "deprecated": null},
+  "MeasureTheory.charFun":
+  {"signature":
+   "MeasureTheory.charFun.{u_2} {E : Type u_2} {mE : MeasurableSpace E} [Inner ℝ E]\n  (μ : MeasureTheory.Measure E) (t : E) : ℂ",
+   "module": "Mathlib.MeasureTheory.Measure.CharacteristicFunction.Basic",
+   "line": 128,
+   "kind": "def",
+   "deprecated": null},
+  "MeasureTheory.UniformIntegrable.uniformIntegrable_of_tendstoInMeasure":
+  {"signature":
+   "MeasureTheory.UniformIntegrable.uniformIntegrable_of_tendstoInMeasure.{u_1, u_2, u_3, u_4}\n  {α : Type u_1} {β : Type u_2} {ι : Type u_3} {m : MeasurableSpace α} {μ : MeasureTheory.Measure α}\n  [NormedAddCommGroup β] {p : ENNReal} {κ : Type u_4} (u : Filter κ) [u.NeBot]\n  [u.IsCountablyGenerated] {fn : ι → α → β} (hUI : MeasureTheory.UniformIntegrable fn p μ) :\n  MeasureTheory.UniformIntegrable (fun f => ↑f) p μ",
+   "module": "Mathlib.MeasureTheory.Function.UniformIntegrable",
+   "line": 852,
+   "kind": "theorem",
+   "deprecated": null},
+  "MeasureTheory.UniformIntegrable.uniformIntegrable_of_ae_tendsto":
+  {"signature":
+   "MeasureTheory.UniformIntegrable.uniformIntegrable_of_ae_tendsto.{u_1, u_2, u_3, u_4} {α : Type u_1}\n  {β : Type u_2} {ι : Type u_3} {m : MeasurableSpace α} {μ : MeasureTheory.Measure α}\n  [NormedAddCommGroup β] {p : ENNReal} {κ : Type u_4} (u : Filter κ) [u.NeBot]\n  [u.IsCountablyGenerated] {fn : ι → α → β} (hUI : MeasureTheory.UniformIntegrable fn p μ) :\n  MeasureTheory.UniformIntegrable (fun f => ↑f) p μ",
+   "module": "Mathlib.MeasureTheory.Function.UniformIntegrable",
+   "line": 880,
+   "kind": "theorem",
+   "deprecated": null},
+  "MeasureTheory.UniformIntegrable.memLp_of_tendstoInMeasure":
+  {"signature":
+   "MeasureTheory.UniformIntegrable.memLp_of_tendstoInMeasure.{u_1, u_2, u_4} {α : Type u_1}\n  {β : Type u_2} {m : MeasurableSpace α} {μ : MeasureTheory.Measure α} [NormedAddCommGroup β]\n  {p : ENNReal} {κ : Type u_4} {u : Filter κ} [u.NeBot] [u.IsCountablyGenerated] {f : κ → α → β}\n  {g : α → β} (hUI : MeasureTheory.UniformIntegrable f p μ)\n  (htends : MeasureTheory.TendstoInMeasure μ f u g) : MeasureTheory.MemLp g p μ",
+   "module": "Mathlib.MeasureTheory.Function.UniformIntegrable",
+   "line": 864,
+   "kind": "theorem",
+   "deprecated": null},
+  "MeasureTheory.Submartingale.stoppedProcess":
+  {"signature":
+   "MeasureTheory.Submartingale.stoppedProcess.{u_1} {Ω : Type u_1} {m0 : MeasurableSpace Ω}\n  {μ : MeasureTheory.Measure Ω} {𝒢 : MeasureTheory.Filtration ℕ m0} {f : ℕ → Ω → ℝ}\n  {τ : Ω → WithTop ℕ} [MeasureTheory.SigmaFiniteFiltration μ 𝒢]\n  (h : MeasureTheory.Submartingale f 𝒢 μ) (hτ : MeasureTheory.IsStoppingTime 𝒢 τ) :\n  MeasureTheory.Submartingale (MeasureTheory.stoppedProcess f τ) 𝒢 μ",
+   "module": "Mathlib.Probability.Martingale.OptionalStopping",
+   "line": 93,
+   "kind": "theorem",
+   "deprecated": null},
+  "MeasureTheory.Submartingale.predictablePart_nonneg":
+  {"signature":
+   "MeasureTheory.Submartingale.predictablePart_nonneg.{u_1, u_2} {Ω : Type u_1} {E : Type u_2}\n  {m0 : MeasurableSpace Ω} {μ : MeasureTheory.Measure Ω} [NormedAddCommGroup E] [NormedSpace ℝ E]\n  {f : ℕ → Ω → E} {ℱ : MeasureTheory.Filtration ℕ m0} [CompleteSpace E] [PartialOrder E]\n  [IsOrderedAddMonoid E] (hf : MeasureTheory.Submartingale f ℱ μ) :\n  ∀ᵐ (ω : Ω) ∂μ, ∀ (n : ℕ), 0 ≤ MeasureTheory.predictablePart f ℱ μ n ω",
+   "module": "Mathlib.Probability.Martingale.Centering",
+   "line": 94,
+   "kind": "theorem",
+   "deprecated": null},
+  "MeasureTheory.Submartingale.monotone_predictablePart":
+  {"signature":
+   "MeasureTheory.Submartingale.monotone_predictablePart.{u_1, u_2} {Ω : Type u_1} {E : Type u_2}\n  {m0 : MeasurableSpace Ω} {μ : MeasureTheory.Measure Ω} [NormedAddCommGroup E] [NormedSpace ℝ E]\n  {f : ℕ → Ω → E} {ℱ : MeasureTheory.Filtration ℕ m0} [CompleteSpace E] [PartialOrder E]\n  [IsOrderedAddMonoid E] (hf : MeasureTheory.Submartingale f ℱ μ) :\n  ∀ᵐ (ω : Ω) ∂μ, Monotone fun x => MeasureTheory.predictablePart f ℱ μ x ω",
+   "module": "Mathlib.Probability.Martingale.Centering",
+   "line": 84,
+   "kind": "theorem",
+   "deprecated": null},
+  "MeasureTheory.Submartingale.integrable_stoppedValue":
+  {"signature":
+   "MeasureTheory.Submartingale.integrable_stoppedValue.{u_1, u_2} {Ω : Type u_1} {E : Type u_2}\n  {m0 : MeasurableSpace Ω} {μ : MeasureTheory.Measure Ω} [NormedAddCommGroup E] [NormedSpace ℝ E]\n  {𝒢 : MeasureTheory.Filtration ℕ m0} [LE E] {f : ℕ → Ω → E}\n  (hf : MeasureTheory.Submartingale f 𝒢 μ) {τ : Ω → WithTop ℕ}\n  (hτ : MeasureTheory.IsStoppingTime 𝒢 τ) {N : ℕ} (hbdd : ∀ (ω : Ω), τ ω ≤ ↑N) :\n  MeasureTheory.Integrable (MeasureTheory.stoppedValue f τ) μ",
+   "module": "Mathlib.Probability.Martingale.Basic",
+   "line": 548,
+   "kind": "theorem",
+   "deprecated": null},
+  "MeasureTheory.Submartingale.congr":
+  {"signature":
+   "MeasureTheory.Submartingale.congr.{u_1, u_2, u_3} {Ω : Type u_1} {E : Type u_2} {ι : Type u_3}\n  [Preorder ι] {m0 : MeasurableSpace Ω} {μ : MeasureTheory.Measure Ω} [NormedAddCommGroup E]\n  [NormedSpace ℝ E] {f g : ι → Ω → E} {ℱ : MeasureTheory.Filtration ι m0} [CompleteSpace E] [LE E]\n  (hf : MeasureTheory.Submartingale f ℱ μ) (hg : MeasureTheory.StronglyAdapted ℱ g)\n  (h_eq : ∀ (t : ι), f t =ᵐ[μ] g t) : MeasureTheory.Submartingale g ℱ μ",
+   "module": "Mathlib.Probability.Martingale.Basic",
+   "line": 216,
+   "kind": "theorem",
+   "deprecated": null},
+  "MeasureTheory.Submartingale.condExp_sub_nonneg":
+  {"signature":
+   "MeasureTheory.Submartingale.condExp_sub_nonneg.{u_1, u_2, u_3} {Ω : Type u_1} {E : Type u_2}\n  {ι : Type u_3} [Preorder ι] {m0 : MeasurableSpace Ω} {μ : MeasureTheory.Measure Ω}\n  [NormedAddCommGroup E] [NormedSpace ℝ E] {ℱ : MeasureTheory.Filtration ι m0} [CompleteSpace E]\n  [PartialOrder E] [IsOrderedAddMonoid E] {f : ι → Ω → E} (hf : MeasureTheory.Submartingale f ℱ μ)\n  {i j : ι} (hij : i ≤ j) : 0 ≤ᵐ[μ] μ[f j - f i | ↑ℱ i]",
+   "module": "Mathlib.Probability.Martingale.Basic",
+   "line": 308,
+   "kind": "theorem",
+   "deprecated": null},
+  "MeasureTheory.Submartingale":
+  {"signature":
+   "MeasureTheory.Submartingale.{u_1, u_2, u_3} {Ω : Type u_1} {E : Type u_2} {ι : Type u_3}\n  [Preorder ι] {m0 : MeasurableSpace Ω} [NormedAddCommGroup E] [NormedSpace ℝ E] [LE E]\n  (f : ι → Ω → E) (ℱ : MeasureTheory.Filtration ι m0) (μ : MeasureTheory.Measure Ω) : Prop",
+   "module": "Mathlib.Probability.Martingale.Basic",
+   "line": 61,
+   "kind": "def",
+   "deprecated": null},
+  "MeasureTheory.Measure.rnDeriv_mul_rnDeriv'":
+  {"signature":
+   "MeasureTheory.Measure.rnDeriv_mul_rnDeriv'.{u_1} {α : Type u_1} {m : MeasurableSpace α}\n  {μ ν κ : MeasureTheory.Measure α} [MeasureTheory.SigmaFinite μ] [MeasureTheory.SigmaFinite ν]\n  [MeasureTheory.SigmaFinite κ] (hνκ : ν.AbsolutelyContinuous κ) :\n  μ.rnDeriv ν * ν.rnDeriv κ =ᵐ[ν] μ.rnDeriv κ",
+   "module": "Mathlib.MeasureTheory.Measure.Decomposition.RadonNikodym",
+   "line": 408,
+   "kind": "theorem",
+   "deprecated": null},
+  "MeasureTheory.Measure.rnDeriv_mul_rnDeriv":
+  {"signature":
+   "MeasureTheory.Measure.rnDeriv_mul_rnDeriv.{u_1} {α : Type u_1} {m : MeasurableSpace α}\n  {μ ν κ : MeasureTheory.Measure α} [MeasureTheory.SigmaFinite μ] [MeasureTheory.SigmaFinite ν]\n  [MeasureTheory.SigmaFinite κ] (hμν : μ.AbsolutelyContinuous ν) :\n  μ.rnDeriv ν * ν.rnDeriv κ =ᵐ[κ] μ.rnDeriv κ",
+   "module": "Mathlib.MeasureTheory.Measure.Decomposition.RadonNikodym",
+   "line": 400,
+   "kind": "theorem",
+   "deprecated": null},
+  "MeasureTheory.Measure.mutuallySingular_of_mutuallySingular_compProd":
+  {"signature":
+   "MeasureTheory.Measure.mutuallySingular_of_mutuallySingular_compProd.{u_1, u_2} {α : Type u_1}\n  {β : Type u_2} {mα : MeasurableSpace α} {mβ : MeasurableSpace β} {μ ν : MeasureTheory.Measure α}\n  {κ η : ProbabilityTheory.Kernel α β} {ξ : MeasureTheory.Measure α} [MeasureTheory.SFinite μ]\n  [MeasureTheory.SFinite ν] [ProbabilityTheory.IsSFiniteKernel κ]\n  [ProbabilityTheory.IsSFiniteKernel η] (h : (μ.compProd κ).MutuallySingular (ν.compProd η))\n  (hμ : ξ.AbsolutelyContinuous μ) (hν : ξ.AbsolutelyContinuous ν) :\n  ∀ᵐ (x : α) ∂ξ, (κ x).MutuallySingular (η x)",
+   "module": "Mathlib.Probability.Kernel.Composition.MeasureCompProd",
+   "line": 338,
+   "kind": "theorem",
+   "deprecated": null},
+  "MeasureTheory.Measure.mutuallySingular_compProd_iff":
+  {"signature":
+   "MeasureTheory.Measure.mutuallySingular_compProd_iff.{u_1, u_2} {α : Type u_1} {β : Type u_2}\n  {mα : MeasurableSpace α} {mβ : MeasurableSpace β} {μ ν : MeasureTheory.Measure α}\n  {κ η : ProbabilityTheory.Kernel α β} [MeasureTheory.SigmaFinite μ] [MeasureTheory.SigmaFinite ν] :\n  (μ.compProd κ).MutuallySingular (ν.compProd η) ↔\n    ∀ (ξ : MeasureTheory.Measure α),\n      MeasureTheory.SFinite ξ →\n        ξ.AbsolutelyContinuous μ →\n          ξ.AbsolutelyContinuous ν → (ξ.compProd κ).MutuallySingular (ξ.compProd η)",
+   "module": "Mathlib.Probability.Kernel.Composition.MeasureCompProd",
+   "line": 376,
+   "kind": "theorem",
+   "deprecated": null},
+  "MeasureTheory.Measure.measurable_of_measurable_coe":
+  {"signature":
+   "MeasureTheory.Measure.measurable_of_measurable_coe.{u_1, u_2} {α : Type u_1} {β : Type u_2}\n  {mα : MeasurableSpace α} {mβ : MeasurableSpace β} (f : β → MeasureTheory.Measure α)\n  (h : ∀ (s : Set α), MeasurableSet s → Measurable fun b => (f b) s) : Measurable f",
+   "module": "Mathlib.MeasureTheory.Measure.GiryMonad",
+   "line": 55,
+   "kind": "theorem",
+   "deprecated": null},
   "MeasureTheory.Measure.instMeasurableSpace":
   {"signature":
    "MeasureTheory.Measure.instMeasurableSpace.{u_1} {α : Type u_1} {mα : MeasurableSpace α} :\n  MeasurableSpace (MeasureTheory.Measure α)",
    "module": "Mathlib.MeasureTheory.Measure.GiryMonad",
    "line": 48,
    "kind": "instance",
+   "deprecated": null},
+  "MeasureTheory.Measure.ext_of_charFunDual":
+  {"signature":
+   "MeasureTheory.Measure.ext_of_charFunDual.{u_2} {E : Type u_2} [NormedAddCommGroup E]\n  [NormedSpace ℝ E] {mE : MeasurableSpace E} [BorelSpace E] [SecondCountableTopology E]\n  [CompleteSpace E] {μ ν : MeasureTheory.Measure E} [MeasureTheory.IsFiniteMeasure μ]\n  [MeasureTheory.IsFiniteMeasure ν]\n  (h : MeasureTheory.charFunDual μ = MeasureTheory.charFunDual ν) : μ = ν",
+   "module": "Mathlib.MeasureTheory.Measure.CharacteristicFunction.Basic",
+   "line": 460,
+   "kind": "theorem",
+   "deprecated": null},
+  "MeasureTheory.Measure.ext_of_charFun":
+  {"signature":
+   "MeasureTheory.Measure.ext_of_charFun.{u_3} {E : Type u_3} [MeasurableSpace E]\n  {μ ν : MeasureTheory.Measure E} [NormedAddCommGroup E] [InnerProductSpace ℝ E] [BorelSpace E]\n  [SecondCountableTopology E] [CompleteSpace E] [MeasureTheory.IsFiniteMeasure μ]\n  [MeasureTheory.IsFiniteMeasure ν] (h : MeasureTheory.charFun μ = MeasureTheory.charFun ν) : μ = ν",
+   "module": "Mathlib.MeasureTheory.Measure.CharacteristicFunction.Basic",
+   "line": 254,
+   "kind": "theorem",
+   "deprecated": null},
+  "MeasureTheory.Measure.compProd":
+  {"signature":
+   "MeasureTheory.Measure.compProd.{u_1, u_2} {α : Type u_1} {β : Type u_2} {mα : MeasurableSpace α}\n  {mβ : MeasurableSpace β} (μ : MeasureTheory.Measure α) (κ : ProbabilityTheory.Kernel α β) :\n  MeasureTheory.Measure (α × β)",
+   "module": "Mathlib.Probability.Kernel.Composition.MeasureCompProd",
+   "line": 40,
+   "kind": "def",
+   "deprecated": null},
+  "MeasureTheory.Measure.ae_rnDeriv_ne_zero_imp_of_ae":
+  {"signature":
+   "MeasureTheory.Measure.ae_rnDeriv_ne_zero_imp_of_ae.{u_1} {α : Type u_1} {m : MeasurableSpace α}\n  {μ : MeasureTheory.Measure α} (ν : MeasureTheory.Measure α) [MeasureTheory.SigmaFinite μ]\n  [MeasureTheory.SigmaFinite ν] {p : α → Prop} (h : ∀ᵐ (a : α) ∂μ, p a) :\n  ∀ᵐ (a : α) ∂ν, μ.rnDeriv ν a ≠ 0 → p a",
+   "module": "Mathlib.MeasureTheory.Measure.Decomposition.RadonNikodym",
+   "line": 304,
+   "kind": "theorem",
+   "deprecated": null},
+  "MeasureTheory.Measure.absolutelyContinuous_of_compProd":
+  {"signature":
+   "MeasureTheory.Measure.absolutelyContinuous_of_compProd.{u_1, u_2} {α : Type u_1} {β : Type u_2}\n  {mα : MeasurableSpace α} {mβ : MeasurableSpace β} {μ ν : MeasureTheory.Measure α}\n  {κ η : ProbabilityTheory.Kernel α β} [MeasureTheory.SFinite μ]\n  [ProbabilityTheory.IsSFiniteKernel κ] [h_zero : ∀ (a : α), NeZero (κ a)]\n  (h : (μ.compProd κ).AbsolutelyContinuous (ν.compProd η)) : μ.AbsolutelyContinuous ν",
+   "module": "Mathlib.Probability.Kernel.Composition.MeasureCompProd",
+   "line": 281,
+   "kind": "theorem",
+   "deprecated": null},
+  "MeasureTheory.Measure.absolutelyContinuous_compProd_of_compProd":
+  {"signature":
+   "MeasureTheory.Measure.absolutelyContinuous_compProd_of_compProd.{u_1, u_2} {α : Type u_1}\n  {β : Type u_2} {mα : MeasurableSpace α} {mβ : MeasurableSpace β} {μ ν : MeasureTheory.Measure α}\n  {κ η : ProbabilityTheory.Kernel α β} [MeasureTheory.SigmaFinite μ] [MeasureTheory.SigmaFinite ν]\n  (hκη : (μ.compProd κ).AbsolutelyContinuous (ν.compProd η)) :\n  (μ.compProd κ).AbsolutelyContinuous (μ.compProd η)",
+   "module": "Mathlib.Probability.Kernel.Composition.MeasureCompProd",
+   "line": 392,
+   "kind": "theorem",
+   "deprecated": null},
+  "MeasureTheory.Measure.MutuallySingular.compProd_of_left":
+  {"signature":
+   "MeasureTheory.Measure.MutuallySingular.compProd_of_left.{u_1, u_2} {α : Type u_1} {β : Type u_2}\n  {mα : MeasurableSpace α} {mβ : MeasurableSpace β} {μ ν : MeasureTheory.Measure α}\n  (hμν : μ.MutuallySingular ν) (κ η : ProbabilityTheory.Kernel α β) :\n  (μ.compProd κ).MutuallySingular (ν.compProd η)",
+   "module": "Mathlib.Probability.Kernel.Composition.MeasureCompProd",
+   "line": 321,
+   "kind": "theorem",
+   "deprecated": null},
+  "MeasureTheory.Martingale.stoppedValue_min_ae_eq_condExp":
+  {"signature":
+   "MeasureTheory.Martingale.stoppedValue_min_ae_eq_condExp.{u_1, u_2, u_3} {Ω : Type u_1}\n  {E : Type u_2} {m : MeasurableSpace Ω} {μ : MeasureTheory.Measure Ω} [NormedAddCommGroup E]\n  [NormedSpace ℝ E] [CompleteSpace E] {ι : Type u_3} [LinearOrder ι] [LocallyFiniteOrder ι]\n  [OrderBot ι] [TopologicalSpace ι] [DiscreteTopology ι] [MeasurableSpace ι] [BorelSpace ι]\n  [MeasurableSpace E] [BorelSpace E] [SecondCountableTopology E] {ℱ : MeasureTheory.Filtration ι m}\n  {τ σ : Ω → WithTop ι} {f : ι → Ω → E} [MeasureTheory.SigmaFiniteFiltration μ ℱ]\n  (h : MeasureTheory.Martingale f ℱ μ) (hτ : MeasureTheory.IsStoppingTime ℱ τ)\n  (hσ : MeasureTheory.IsStoppingTime ℱ σ) {n : ι} (hτ_le : ∀ (x : Ω), τ x ≤ ↑n) :\n  (MeasureTheory.stoppedValue f fun x => min (σ x) (τ x)) =ᵐ[μ]\n    μ[MeasureTheory.stoppedValue f τ | hσ.measurableSpace]",
+   "module": "Mathlib.Probability.Martingale.OptionalSampling",
+   "line": 189,
+   "kind": "theorem",
+   "deprecated": null},
+  "MeasureTheory.Martingale.predictablePart_eq_zero":
+  {"signature":
+   "MeasureTheory.Martingale.predictablePart_eq_zero.{u_1, u_2} {Ω : Type u_1} {E : Type u_2}\n  {m0 : MeasurableSpace Ω} {μ : MeasureTheory.Measure Ω} [NormedAddCommGroup E] [NormedSpace ℝ E]\n  {f : ℕ → Ω → E} {ℱ : MeasureTheory.Filtration ℕ m0} [CompleteSpace E]\n  (hf : MeasureTheory.Martingale f ℱ μ) (n : ℕ) : MeasureTheory.predictablePart f ℱ μ n =ᵐ[μ] 0",
+   "module": "Mathlib.Probability.Martingale.Centering",
+   "line": 74,
+   "kind": "theorem",
+   "deprecated": null},
+  "MeasureTheory.Martingale.martingalePart_eq":
+  {"signature":
+   "MeasureTheory.Martingale.martingalePart_eq.{u_1, u_2} {Ω : Type u_1} {E : Type u_2}\n  {m0 : MeasurableSpace Ω} {μ : MeasureTheory.Measure Ω} [NormedAddCommGroup E] [NormedSpace ℝ E]\n  {f : ℕ → Ω → E} {ℱ : MeasureTheory.Filtration ℕ m0} [CompleteSpace E]\n  (hf : MeasureTheory.Martingale f ℱ μ) (n : ℕ) : MeasureTheory.martingalePart f ℱ μ n =ᵐ[μ] f n",
+   "module": "Mathlib.Probability.Martingale.Centering",
+   "line": 145,
+   "kind": "theorem",
+   "deprecated": null},
+  "MeasureTheory.Martingale.congr":
+  {"signature":
+   "MeasureTheory.Martingale.congr.{u_1, u_2, u_3} {Ω : Type u_1} {E : Type u_2} {ι : Type u_3}\n  [Preorder ι] {m0 : MeasurableSpace Ω} {μ : MeasureTheory.Measure Ω} [NormedAddCommGroup E]\n  [NormedSpace ℝ E] {f g : ι → Ω → E} {ℱ : MeasureTheory.Filtration ι m0} [CompleteSpace E]\n  (hf : MeasureTheory.Martingale f ℱ μ) (hg : MeasureTheory.StronglyAdapted ℱ g)\n  (h_eq : ∀ (t : ι), f t =ᵐ[μ] g t) : MeasureTheory.Martingale g ℱ μ",
+   "module": "Mathlib.Probability.Martingale.Basic",
+   "line": 105,
+   "kind": "theorem",
+   "deprecated": null},
+  "MeasureTheory.Martingale":
+  {"signature":
+   "MeasureTheory.Martingale.{u_1, u_2, u_3} {Ω : Type u_1} {E : Type u_2} {ι : Type u_3} [Preorder ι]\n  {m0 : MeasurableSpace Ω} [NormedAddCommGroup E] [NormedSpace ℝ E] (f : ι → Ω → E)\n  (ℱ : MeasureTheory.Filtration ι m0) (μ : MeasureTheory.Measure Ω) : Prop",
+   "module": "Mathlib.Probability.Martingale.Basic",
+   "line": 50,
+   "kind": "def",
+   "deprecated": null},
+  "MeasureTheory.IsStronglyProgressive":
+  {"signature":
+   "MeasureTheory.IsStronglyProgressive.{u_1, u_2, u_3} {Ω : Type u_1} {ι : Type u_2}\n  {m : MeasurableSpace Ω} [Preorder ι] {β : Type u_3} [TopologicalSpace β] [MeasurableSpace ι]\n  (f : MeasureTheory.Filtration ι m) (u : ι → Ω → β) : Prop",
+   "module": "Mathlib.Probability.Process.Adapted",
+   "line": 254,
+   "kind": "def",
+   "deprecated": null},
+  "MeasureTheory.IsStronglyPredictable.predictablePart_eq":
+  {"signature":
+   "MeasureTheory.IsStronglyPredictable.predictablePart_eq.{u_1, u_2} {Ω : Type u_1} {E : Type u_2}\n  {m0 : MeasurableSpace Ω} {μ : MeasureTheory.Measure Ω} [NormedAddCommGroup E] [NormedSpace ℝ E]\n  {f : ℕ → Ω → E} {ℱ : MeasureTheory.Filtration ℕ m0} [MeasureTheory.SigmaFiniteFiltration μ ℱ]\n  (hf : MeasureTheory.IsStronglyPredictable ℱ f)\n  (hfint : ∀ (n : ℕ), MeasureTheory.Integrable (f n) μ) (n : ℕ) :\n  MeasureTheory.predictablePart f ℱ μ n =ᵐ[μ] f n - f 0",
+   "module": "Mathlib.Probability.Martingale.Centering",
+   "line": 101,
+   "kind": "theorem",
+   "deprecated": null},
+  "MeasureTheory.IsStronglyPredictable.isStronglyProgressive":
+  {"signature":
+   "MeasureTheory.IsStronglyPredictable.isStronglyProgressive.{u_1, u_2, u_3} {Ω : Type u_1}\n  {ι : Type u_2} {m : MeasurableSpace Ω} {E : Type u_3} [TopologicalSpace E] [LinearOrder ι]\n  [OrderBot ι] [MeasurableSpace ι] [TopologicalSpace ι] [OpensMeasurableSpace ι]\n  [OrderClosedTopology ι] {𝓕 : MeasureTheory.Filtration ι m} {u : ι → Ω → E}\n  (h𝓕 : MeasureTheory.IsStronglyPredictable 𝓕 u) : MeasureTheory.IsStronglyProgressive 𝓕 u",
+   "module": "Mathlib.Probability.Process.Predictable",
+   "line": 170,
+   "kind": "theorem",
+   "deprecated": null},
+  "MeasureTheory.IsStronglyPredictable.iff_measurable_add_one":
+  {"signature":
+   "MeasureTheory.IsStronglyPredictable.iff_measurable_add_one.{u_1, u_3} {Ω : Type u_1}\n  {m : MeasurableSpace Ω} {E : Type u_3} [TopologicalSpace E] {𝓕 : MeasureTheory.Filtration ℕ m}\n  {u : ℕ → Ω → E} :\n  MeasureTheory.IsStronglyPredictable 𝓕 u ↔\n    MeasureTheory.StronglyMeasurable (u 0) ∧ ∀ (n : ℕ), MeasureTheory.StronglyMeasurable (u (n + 1))",
+   "module": "Mathlib.Probability.Process.Predictable",
+   "line": 247,
+   "kind": "theorem",
+   "deprecated": null},
+  "MeasureTheory.IsStronglyPredictable":
+  {"signature":
+   "MeasureTheory.IsStronglyPredictable.{u_1, u_2, u_3} {Ω : Type u_1} {ι : Type u_2}\n  {m : MeasurableSpace Ω} {E : Type u_3} [TopologicalSpace E] [Preorder ι] [OrderBot ι]\n  (𝓕 : MeasureTheory.Filtration ι m) (u : ι → Ω → E) : Prop",
+   "module": "Mathlib.Probability.Process.Predictable",
+   "line": 160,
+   "kind": "def",
+   "deprecated": null},
+  "MeasureTheory.IsStoppingTime.measurableSpace_mono":
+  {"signature":
+   "MeasureTheory.IsStoppingTime.measurableSpace_mono.{u_1, u_3} {Ω : Type u_1} {ι : Type u_3}\n  {m : MeasurableSpace Ω} [Preorder ι] {f : MeasureTheory.Filtration ι m} {τ π : Ω → WithTop ι}\n  (hτ : MeasureTheory.IsStoppingTime f τ) (hπ : MeasureTheory.IsStoppingTime f π) (hle : τ ≤ π) :\n  hτ.measurableSpace ≤ hπ.measurableSpace",
+   "module": "Mathlib.Probability.Process.Stopping",
+   "line": 470,
+   "kind": "theorem",
+   "deprecated": null},
+  "MeasureTheory.IsStoppingTime.measurableSpace":
+  {"signature":
+   "MeasureTheory.IsStoppingTime.measurableSpace.{u_1, u_3} {Ω : Type u_1} {ι : Type u_3}\n  {m : MeasurableSpace Ω} [Preorder ι] {f : MeasureTheory.Filtration ι m} {τ : Ω → WithTop ι}\n  (hτ : MeasureTheory.IsStoppingTime f τ) : MeasurableSpace Ω",
+   "module": "Mathlib.Probability.Process.Stopping",
+   "line": 444,
+   "kind": "def",
+   "deprecated": null},
+  "MeasureTheory.IsStoppingTime":
+  {"signature":
+   "MeasureTheory.IsStoppingTime.{u_1, u_3} {Ω : Type u_1} {ι : Type u_3} {m : MeasurableSpace Ω}\n  [Preorder ι] (f : MeasureTheory.Filtration ι m) (τ : Ω → WithTop ι) : Prop",
+   "module": "Mathlib.Probability.Process.Stopping",
+   "line": 68,
+   "kind": "def",
+   "deprecated": null},
+  "MeasureTheory.IsSetSemiring.isSetRing_supClosure":
+  {"signature":
+   "MeasureTheory.IsSetSemiring.isSetRing_supClosure.{u_1} {α : Type u_1} {C : Set (Set α)}\n  (hC : MeasureTheory.IsSetSemiring C) : MeasureTheory.IsSetRing (supClosure C)",
+   "module": "Mathlib.MeasureTheory.SetSemiring",
+   "line": 200,
+   "kind": "theorem",
+   "deprecated": null},
+  "MeasureTheory.IsSetSemiring.exists_disjoint_finset_sdiff_eq":
+  {"signature":
+   "MeasureTheory.IsSetSemiring.exists_disjoint_finset_sdiff_eq.{u_1} {α : Type u_1} {C : Set (Set α)}\n  {s : Set α} {I : Finset (Set α)} (hC : MeasureTheory.IsSetSemiring C) (hs : s ∈ C) (hI : ↑I ⊆ C) :\n  ∃ J, ↑J ⊆ C ∧ (↑J).PairwiseDisjoint id ∧ s \\ ⋃₀ ↑I = ⋃₀ ↑J",
+   "module": "Mathlib.MeasureTheory.SetSemiring",
+   "line": 313,
+   "kind": "theorem",
+   "deprecated": null},
+  "MeasureTheory.IsSetSemiring.exists_disjoint_finset_diff_eq":
+  {"signature":
+   "MeasureTheory.IsSetSemiring.exists_disjoint_finset_diff_eq.{u_1} {α : Type u_1} {C : Set (Set α)}\n  {s : Set α} {I : Finset (Set α)} (hC : MeasureTheory.IsSetSemiring C) (hs : s ∈ C) (hI : ↑I ⊆ C) :\n  ∃ J, ↑J ⊆ C ∧ (↑J).PairwiseDisjoint id ∧ s \\ ⋃₀ ↑I = ⋃₀ ↑J",
+   "module": "Mathlib.MeasureTheory.SetSemiring",
+   "line": 324,
+   "kind": "theorem",
+   "deprecated": {"replacement": "MeasureTheory.IsSetSemiring.exists_disjoint_finset_sdiff_eq"}},
+  "MeasureTheory.IsSetSemiring.disjointOfUnion_props":
+  {"signature":
+   "MeasureTheory.IsSetSemiring.disjointOfUnion_props.{u_1} {α : Type u_1} {C : Set (Set α)}\n  {J : Finset (Set α)} (hC : MeasureTheory.IsSetSemiring C) (h1 : ↑J ⊆ C) :\n  ∃ K,\n    (↑J).PairwiseDisjoint K ∧\n      (∀ i ∈ J, ↑(K i) ⊆ C) ∧\n        (⋃ x ∈ J, ↑(K x)).PairwiseDisjoint id ∧\n          (∀ j ∈ J, ⋃₀ ↑(K j) ⊆ j) ∧ (∀ j ∈ J, ∅ ∉ K j) ∧ ⋃₀ ↑J = ⋃₀ ⋃ x ∈ J, ↑(K x)",
+   "module": "Mathlib.MeasureTheory.SetSemiring",
+   "line": 464,
+   "kind": "theorem",
+   "deprecated": null},
+  "MeasureTheory.IsSetSemiring.Ioc":
+  {"signature":
+   "MeasureTheory.IsSetSemiring.Ioc.{u_1} {α : Type u_1} [LinearOrder α] [Nonempty α] :\n  MeasureTheory.IsSetSemiring {s | ∃ u v, u ≤ v ∧ s = Set.Ioc u v}",
+   "module": "Mathlib.MeasureTheory.SetSemiring",
+   "line": 486,
+   "kind": "theorem",
+   "deprecated": null},
+  "MeasureTheory.IsSetSemiring":
+  {"signature": "MeasureTheory.IsSetSemiring.{u_1} {α : Type u_1} (C : Set (Set α)) : Prop",
+   "module": "Mathlib.MeasureTheory.SetSemiring",
+   "line": 60,
+   "kind": "structure",
+   "deprecated": null},
+  "MeasureTheory.IsSetRing":
+  {"signature": "MeasureTheory.IsSetRing.{u_1} {α : Type u_1} (C : Set (Set α)) : Prop",
+   "module": "Mathlib.MeasureTheory.SetSemiring",
+   "line": 68,
+   "kind": "structure",
+   "deprecated": null},
+  "MeasureTheory.IsProjectiveMeasureFamily":
+  {"signature":
+   "MeasureTheory.IsProjectiveMeasureFamily.{u_1, u_2} {ι : Type u_1} {α : ι → Type u_2}\n  [(i : ι) → MeasurableSpace (α i)] (P : (J : Finset ι) → MeasureTheory.Measure ((j : ↥J) → α ↑j)) :\n  Prop",
+   "module": "Mathlib.MeasureTheory.Constructions.Projective",
+   "line": 42,
+   "kind": "def",
+   "deprecated": null},
+  "MeasureTheory.IsProjectiveLimit.unique":
+  {"signature":
+   "MeasureTheory.IsProjectiveLimit.unique.{u_1, u_2} {ι : Type u_1} {α : ι → Type u_2}\n  [(i : ι) → MeasurableSpace (α i)] {P : (J : Finset ι) → MeasureTheory.Measure ((j : ↥J) → α ↑j)}\n  {μ ν : MeasureTheory.Measure ((i : ι) → α i)}\n  [∀ (i : Finset ι), MeasureTheory.IsFiniteMeasure (P i)] (hμ : MeasureTheory.IsProjectiveLimit μ P)\n  (hν : MeasureTheory.IsProjectiveLimit ν P) : μ = ν",
+   "module": "Mathlib.MeasureTheory.Constructions.Projective",
+   "line": 148,
+   "kind": "theorem",
+   "deprecated": null},
+  "MeasureTheory.IsProjectiveLimit":
+  {"signature":
+   "MeasureTheory.IsProjectiveLimit.{u_1, u_2} {ι : Type u_1} {α : ι → Type u_2}\n  [(i : ι) → MeasurableSpace (α i)] (μ : MeasureTheory.Measure ((i : ι) → α i))\n  (P : (J : Finset ι) → MeasureTheory.Measure ((j : ↥J) → α ↑j)) : Prop",
+   "module": "Mathlib.MeasureTheory.Constructions.Projective",
+   "line": 112,
+   "kind": "def",
+   "deprecated": null},
+  "MeasureTheory.IsPredictable.martingalePart_eq":
+  {"signature":
+   "MeasureTheory.IsPredictable.martingalePart_eq.{u_1, u_2} {Ω : Type u_1} {E : Type u_2}\n  {m0 : MeasurableSpace Ω} {μ : MeasureTheory.Measure Ω} [NormedAddCommGroup E] [NormedSpace ℝ E]\n  {f : ℕ → Ω → E} {ℱ : MeasureTheory.Filtration ℕ m0} [MeasureTheory.SigmaFiniteFiltration μ ℱ]\n  (hf : MeasureTheory.IsStronglyPredictable ℱ f)\n  (hfint : ∀ (n : ℕ), MeasureTheory.Integrable (f n) μ) (n : ℕ) :\n  MeasureTheory.martingalePart f ℱ μ n =ᵐ[μ] f 0",
+   "module": "Mathlib.Probability.Martingale.Centering",
+   "line": 150,
+   "kind": "theorem",
+   "deprecated": null},
+  "MeasureTheory.Filtration.rightCont_self":
+  {"signature":
+   "MeasureTheory.Filtration.rightCont_self.{u_1, u_2} {Ω : Type u_1} {ι : Type u_2}\n  {m : MeasurableSpace Ω} [PartialOrder ι] (𝓕 : MeasureTheory.Filtration ι m) :\n  𝓕.rightCont.rightCont = 𝓕.rightCont",
+   "module": "Mathlib.Probability.Process.Filtration",
+   "line": 354,
+   "kind": "theorem",
+   "deprecated": null},
+  "MeasureTheory.Filtration.rightCont_eq_self":
+  {"signature":
+   "MeasureTheory.Filtration.rightCont_eq_self.{u_1, u_2} {Ω : Type u_1} {ι : Type u_2}\n  {m : MeasurableSpace Ω} [LinearOrder ι] [SuccOrder ι] (𝓕 : MeasureTheory.Filtration ι m) :\n  𝓕.rightCont = 𝓕",
+   "module": "Mathlib.Probability.Process.Filtration",
+   "line": 302,
+   "kind": "theorem",
+   "deprecated": null},
+  "MeasureTheory.Filtration.rightCont_eq_of_not_isMax":
+  {"signature":
+   "MeasureTheory.Filtration.rightCont_eq_of_not_isMax.{u_1, u_2} {Ω : Type u_1} {ι : Type u_2}\n  {m : MeasurableSpace Ω} [LinearOrder ι] [DenselyOrdered ι] (𝓕 : MeasureTheory.Filtration ι m)\n  {i : ι} (hi : ¬IsMax i) : ↑𝓕.rightCont i = ⨅ j, ⨅ (_ : j > i), ↑𝓕 j",
+   "module": "Mathlib.Probability.Process.Filtration",
+   "line": 330,
+   "kind": "theorem",
+   "deprecated": null},
+  "MeasureTheory.Filtration.rightCont_eq_of_nhdsGT_eq_bot":
+  {"signature":
+   "MeasureTheory.Filtration.rightCont_eq_of_nhdsGT_eq_bot.{u_1, u_2} {Ω : Type u_1} {ι : Type u_2}\n  {m : MeasurableSpace Ω} [PartialOrder ι] [TopologicalSpace ι] [OrderTopology ι]\n  (𝓕 : MeasureTheory.Filtration ι m) {i : ι} (hi : nhdsWithin i (Set.Ioi i) = ⊥) :\n  ↑𝓕.rightCont i = ↑𝓕 i",
+   "module": "Mathlib.Probability.Process.Filtration",
+   "line": 297,
+   "kind": "theorem",
+   "deprecated": null},
+  "MeasureTheory.Filtration.rightCont_eq_of_neBot_nhdsGT":
+  {"signature":
+   "MeasureTheory.Filtration.rightCont_eq_of_neBot_nhdsGT.{u_1, u_2} {Ω : Type u_1} {ι : Type u_2}\n  {m : MeasurableSpace Ω} [PartialOrder ι] [TopologicalSpace ι] [OrderTopology ι]\n  (𝓕 : MeasureTheory.Filtration ι m) (i : ι) [(nhdsWithin i (Set.Ioi i)).NeBot] :\n  ↑𝓕.rightCont i = ⨅ j, ⨅ (_ : j > i), ↑𝓕 j",
+   "module": "Mathlib.Probability.Process.Filtration",
+   "line": 322,
+   "kind": "theorem",
+   "deprecated": null},
+  "MeasureTheory.Filtration.rightCont_eq_of_isMax":
+  {"signature":
+   "MeasureTheory.Filtration.rightCont_eq_of_isMax.{u_1, u_2} {Ω : Type u_1} {ι : Type u_2}\n  {m : MeasurableSpace Ω} [PartialOrder ι] (𝓕 : MeasureTheory.Filtration ι m) {i : ι}\n  (hi : IsMax i) : ↑𝓕.rightCont i = ↑𝓕 i",
+   "module": "Mathlib.Probability.Process.Filtration",
+   "line": 309,
+   "kind": "theorem",
+   "deprecated": null},
+  "MeasureTheory.Filtration.rightCont_eq_of_exists_gt":
+  {"signature":
+   "MeasureTheory.Filtration.rightCont_eq_of_exists_gt.{u_1, u_2} {Ω : Type u_1} {ι : Type u_2}\n  {m : MeasurableSpace Ω} [LinearOrder ι] (𝓕 : MeasureTheory.Filtration ι m) {i : ι}\n  (hi : ∃ j > i, Set.Ioo i j = ∅) : ↑𝓕.rightCont i = ↑𝓕 i",
+   "module": "Mathlib.Probability.Process.Filtration",
+   "line": 314,
+   "kind": "theorem",
+   "deprecated": null},
+  "MeasureTheory.Filtration.rightCont_eq":
+  {"signature":
+   "MeasureTheory.Filtration.rightCont_eq.{u_1, u_2} {Ω : Type u_1} {ι : Type u_2}\n  {m : MeasurableSpace Ω} [LinearOrder ι] [DenselyOrdered ι] [NoMaxOrder ι]\n  (𝓕 : MeasureTheory.Filtration ι m) (i : ι) : ↑𝓕.rightCont i = ⨅ j, ⨅ (_ : j > i), ↑𝓕 j",
+   "module": "Mathlib.Probability.Process.Filtration",
+   "line": 337,
+   "kind": "theorem",
+   "deprecated": null},
+  "MeasureTheory.Filtration.rightCont_apply":
+  {"signature":
+   "MeasureTheory.Filtration.rightCont_apply.{u_1, u_2} {Ω : Type u_1} {ι : Type u_2}\n  {m : MeasurableSpace Ω} [PartialOrder ι] [TopologicalSpace ι] [OrderTopology ι]\n  (𝓕 : MeasureTheory.Filtration ι m) (i : ι) :\n  ↑𝓕.rightCont i = if (nhdsWithin i (Set.Ioi i)).NeBot then ⨅ j, ⨅ (_ : j > i), ↑𝓕 j else ↑𝓕 i",
+   "module": "Mathlib.Probability.Process.Filtration",
+   "line": 292,
+   "kind": "theorem",
+   "deprecated": null},
+  "MeasureTheory.Filtration.rightCont":
+  {"signature":
+   "MeasureTheory.Filtration.rightCont.{u_1, u_2} {Ω : Type u_1} {ι : Type u_2} {m : MeasurableSpace Ω}\n  [PartialOrder ι] (𝓕 : MeasureTheory.Filtration ι m) : MeasureTheory.Filtration ι m",
+   "module": "Mathlib.Probability.Process.Filtration",
+   "line": 251,
+   "kind": "def",
+   "deprecated": null},
+  "MeasureTheory.Filtration.predictable":
+  {"signature":
+   "MeasureTheory.Filtration.predictable.{u_1, u_2} {Ω : Type u_1} {ι : Type u_2}\n  {m : MeasurableSpace Ω} [Preorder ι] [OrderBot ι] (𝓕 : MeasureTheory.Filtration ι m) :\n  MeasurableSpace (ι × Ω)",
+   "module": "Mathlib.Probability.Process.Predictable",
+   "line": 48,
+   "kind": "def",
+   "deprecated": null},
+  "MeasureTheory.Filtration.limitProcess_smul":
+  {"signature":
+   "MeasureTheory.Filtration.limitProcess_smul.{u_1, u_2, u_3, u_8} {ι : Type u_1} {Ω : Type u_2}\n  {E : Type u_3} [Preorder ι] {mΩ : MeasurableSpace Ω} [TopologicalSpace E]\n  {P : MeasureTheory.Measure Ω} {𝓕 : MeasureTheory.Filtration ι mΩ} [IsDirectedOrder ι] [Nonempty ι]\n  [T2Space E] [Zero E] {G : Type u_8} [GroupWithZero G] [MulActionWithZero G E]\n  [ContinuousConstSMul G E] (X : ι → Ω → E) (c : G) :\n  MeasureTheory.Filtration.limitProcess (c • X) 𝓕 P =ᵐ[P]\n    c • MeasureTheory.Filtration.limitProcess X 𝓕 P",
+   "module": "Mathlib.Probability.Process.LimitProcess",
+   "line": 248,
+   "kind": "theorem",
+   "deprecated": null},
+  "MeasureTheory.Filtration.limitProcess_neg":
+  {"signature":
+   "MeasureTheory.Filtration.limitProcess_neg.{u_1, u_2, u_3} {ι : Type u_1} {Ω : Type u_2}\n  {E : Type u_3} [Preorder ι] {mΩ : MeasurableSpace Ω} [TopologicalSpace E]\n  {P : MeasureTheory.Measure Ω} {𝓕 : MeasureTheory.Filtration ι mΩ} [IsDirectedOrder ι] [Nonempty ι]\n  [T2Space E] [AddGroup E] [ContinuousNeg E] (X : ι → Ω → E) :\n  MeasureTheory.Filtration.limitProcess (-X) 𝓕 P =ᵐ[P] -MeasureTheory.Filtration.limitProcess X 𝓕 P",
+   "module": "Mathlib.Probability.Process.LimitProcess",
+   "line": 261,
+   "kind": "theorem",
+   "deprecated": null},
+  "MeasureTheory.Filtration.limitProcess_const":
+  {"signature":
+   "MeasureTheory.Filtration.limitProcess_const.{u_1, u_2, u_3} {ι : Type u_1} {Ω : Type u_2}\n  {E : Type u_3} [Preorder ι] {mΩ : MeasurableSpace Ω} [TopologicalSpace E]\n  {P : MeasureTheory.Measure Ω} {𝓕 : MeasureTheory.Filtration ι mΩ} [IsDirectedOrder ι] [Nonempty ι]\n  [T2Space E] [Zero E] (c : E) :\n  MeasureTheory.Filtration.limitProcess (fun x x_1 => c) 𝓕 P =ᵐ[P] fun x => c",
+   "module": "Mathlib.Probability.Process.LimitProcess",
+   "line": 210,
+   "kind": "theorem",
+   "deprecated": null},
+  "MeasureTheory.Filtration.limitProcess_congr":
+  {"signature":
+   "MeasureTheory.Filtration.limitProcess_congr.{u_1, u_2, u_3} {ι : Type u_1} {Ω : Type u_2}\n  {E : Type u_3} [Preorder ι] {mΩ : MeasurableSpace Ω} [TopologicalSpace E]\n  {P : MeasureTheory.Measure Ω} {𝓕 : MeasureTheory.Filtration ι mΩ} {X Y : ι → Ω → E}\n  [IsDirectedOrder ι] [T2Space E] [Zero E] (hXY : X ≡ᵐ[P] Y) :\n  MeasureTheory.Filtration.limitProcess X 𝓕 P =ᵐ[P] MeasureTheory.Filtration.limitProcess Y 𝓕 P",
+   "module": "Mathlib.Probability.Process.LimitProcess",
+   "line": 197,
+   "kind": "theorem",
+   "deprecated": null},
+  "MeasureTheory.Filtration.limitProcess_ae_eq":
+  {"signature":
+   "MeasureTheory.Filtration.limitProcess_ae_eq.{u_1, u_2, u_3} {ι : Type u_1} {Ω : Type u_2}\n  {E : Type u_3} [Preorder ι] {mΩ : MeasurableSpace Ω} [TopologicalSpace E]\n  {P : MeasureTheory.Measure Ω} {𝓕 : MeasureTheory.Filtration ι mΩ} {X : ι → Ω → E} {g : Ω → E}\n  [IsDirectedOrder ι] [Nonempty ι] [T2Space E] [Zero E] (mg : MeasureTheory.StronglyMeasurable g)\n  (hg : ∀ᵐ (ω : Ω) ∂P, Filter.Tendsto (fun x => X x ω) Filter.atTop (nhds (g ω))) :\n  MeasureTheory.Filtration.limitProcess X 𝓕 P =ᵐ[P] g",
+   "module": "Mathlib.Probability.Process.LimitProcess",
+   "line": 187,
+   "kind": "theorem",
+   "deprecated": null},
+  "MeasureTheory.Filtration.limitProcess":
+  {"signature":
+   "MeasureTheory.Filtration.limitProcess.{u_1, u_2, u_3} {ι : Type u_1} {Ω : Type u_2} {E : Type u_3}\n  [Preorder ι] {mΩ : MeasurableSpace Ω} [TopologicalSpace E] [Zero E] (X : ι → Ω → E)\n  (𝓕 : MeasureTheory.Filtration ι mΩ) (P : MeasureTheory.Measure Ω) : Ω → E",
+   "module": "Mathlib.Probability.Process.LimitProcess",
+   "line": 154,
+   "kind": "def",
+   "deprecated": null},
+  "MeasureTheory.Filtration.le_rightCont":
+  {"signature":
+   "MeasureTheory.Filtration.le_rightCont.{u_1, u_2} {Ω : Type u_1} {ι : Type u_2}\n  {m : MeasurableSpace Ω} [PartialOrder ι] (𝓕 : MeasureTheory.Filtration ι m) : 𝓕 ≤ 𝓕.rightCont",
+   "module": "Mathlib.Probability.Process.Filtration",
+   "line": 346,
+   "kind": "theorem",
+   "deprecated": null},
+  "MeasureTheory.Filtration.instIsRightContinuousRightCont":
+  {"signature":
+   "MeasureTheory.Filtration.instIsRightContinuousRightCont.{u_1, u_2} {Ω : Type u_1} {ι : Type u_2}\n  {m : MeasurableSpace Ω} [PartialOrder ι] {𝓕 : MeasureTheory.Filtration ι m} :\n  𝓕.rightCont.IsRightContinuous",
+   "module": "Mathlib.Probability.Process.Filtration",
+   "line": 382,
+   "kind": "theorem",
+   "deprecated": null},
+  "MeasureTheory.Filtration.IsRightContinuous.measurableSet":
+  {"signature":
+   "MeasureTheory.Filtration.IsRightContinuous.measurableSet.{u_1, u_2} {Ω : Type u_1} {ι : Type u_2}\n  {m : MeasurableSpace Ω} [PartialOrder ι] {𝓕 : MeasureTheory.Filtration ι m} [𝓕.IsRightContinuous]\n  {i : ι} {s : Set Ω} (hs : MeasurableSet s) : MeasurableSet s",
+   "module": "Mathlib.Probability.Process.Filtration",
+   "line": 384,
+   "kind": "theorem",
+   "deprecated": null},
+  "MeasureTheory.Filtration.IsRightContinuous.eq":
+  {"signature":
+   "MeasureTheory.Filtration.IsRightContinuous.eq.{u_1, u_2} {Ω : Type u_1} {ι : Type u_2}\n  {m : MeasurableSpace Ω} [PartialOrder ι] {𝓕 : MeasureTheory.Filtration ι m}\n  [h : 𝓕.IsRightContinuous] : 𝓕.rightCont = 𝓕",
+   "module": "Mathlib.Probability.Process.Filtration",
+   "line": 379,
+   "kind": "theorem",
+   "deprecated": null},
+  "MeasureTheory.Filtration.IsRightContinuous":
+  {"signature":
+   "MeasureTheory.Filtration.IsRightContinuous.{u_1, u_2} {Ω : Type u_1} {ι : Type u_2}\n  {m : MeasurableSpace Ω} [PartialOrder ι] (𝓕 : MeasureTheory.Filtration ι m) : Prop",
+   "module": "Mathlib.Probability.Process.Filtration",
+   "line": 374,
+   "kind": "class",
+   "deprecated": null},
+  "MeasureTheory.Filtration.IsComplete":
+  {"signature":
+   "MeasureTheory.Filtration.IsComplete.{u_1, u_2} {Ω : Type u_1} {ι : Type u_2} {m : MeasurableSpace Ω}\n  [Preorder ι] (𝓕 : MeasureTheory.Filtration ι m) (μ : MeasureTheory.Measure Ω := by volume_tac) :\n  Prop",
+   "module": "Mathlib.Probability.Process.Filtration",
+   "line": 394,
+   "kind": "class",
+   "deprecated": null},
+  "MeasureTheory.Filtration":
+  {"signature":
+   "MeasureTheory.Filtration.{u_1, u_2} {Ω : Type u_1} (ι : Type u_2) [Preorder ι]\n  (m : MeasurableSpace Ω) : Type (max u_1 u_2)",
+   "module": "Mathlib.Probability.Process.Filtration",
+   "line": 49,
+   "kind": "structure",
+   "deprecated": null},
+  "MeasureTheory.AddContent":
+  {"signature":
+   "MeasureTheory.AddContent.{u_1, u_2} {α : Type u_1} (G : Type u_2) [AddCommMonoid G]\n  (C : Set (Set α)) : Type (max u_1 u_2)",
+   "module": "Mathlib.MeasureTheory.Measure.AddContent",
+   "line": 73,
+   "kind": "structure",
+   "deprecated": null},
+  "MeasureTheory.Adapted.isStoppingTime_hittingBtwn":
+  {"signature":
+   "MeasureTheory.Adapted.isStoppingTime_hittingBtwn.{u_1, u_2, u_3} {Ω : Type u_1} {β : Type u_2}\n  {ι : Type u_3} {m : MeasurableSpace Ω} [ConditionallyCompleteLinearOrder ι] [WellFoundedLT ι]\n  [Countable ι] {x✝ : MeasurableSpace β} {f : MeasureTheory.Filtration ι m} {u : ι → Ω → β}\n  {s : Set β} {n n' : ι} (hu : MeasureTheory.Adapted f u) (hs : MeasurableSet s) :\n  MeasureTheory.IsStoppingTime f fun ω => ↑(MeasureTheory.hittingBtwn u s n n' ω)",
+   "module": "Mathlib.Probability.Process.HittingTime",
+   "line": 398,
+   "kind": "theorem",
+   "deprecated": null},
+  "MeasureTheory.Adapted":
+  {"signature":
+   "MeasureTheory.Adapted.{u_1, u_2, u_3} {Ω : Type u_1} {ι : Type u_2} {m : MeasurableSpace Ω}\n  [Preorder ι] {β : ι → Type u_3} [(i : ι) → MeasurableSpace (β i)]\n  (f : MeasureTheory.Filtration ι m) (u : (i : ι) → Ω → β i) : Prop",
+   "module": "Mathlib.Probability.Process.Adapted",
+   "line": 54,
+   "kind": "def",
+   "deprecated": null},
+  "MeasurableEquiv.continuousMapToFun":
+  {"signature":
+   "MeasurableEquiv.continuousMapToFun.{u_1, u_2} (X : Type u_1) (Y : Type u_2) [TopologicalSpace X]\n  [TopologicalSpace Y] [SecondCountableTopology X] [SecondCountableTopology Y]\n  [LocallyCompactSpace X] [RegularSpace Y] [MeasurableSpace Y] [BorelSpace Y] :\n  C(X, Y) ≃ᵐ { f // Continuous f }",
+   "module": "Mathlib.MeasureTheory.Constructions.BorelSpace.ContinuousMap",
+   "line": 167,
+   "kind": "def",
    "deprecated": null},
   "MeasCat.Giry":
   {"signature": "MeasCat.Giry.{u_1} : CategoryTheory.Monad MeasCat",
@@ -33437,6 +35375,13 @@
    "module": "Mathlib.LinearAlgebra.UnitaryGroup",
    "line": 335,
    "kind": "abbrev",
+   "deprecated": null},
+  "Matrix.posSemidef_gram":
+  {"signature":
+   "Matrix.posSemidef_gram.{u_1, u_2, u_4} {E : Type u_1} {n : Type u_2} (𝕜 : Type u_4) [RCLike 𝕜]\n  [SeminormedAddCommGroup E] [InnerProductSpace 𝕜 E] (v : n → E) : (Matrix.gram 𝕜 v).PosSemidef",
+   "module": "Mathlib.Analysis.InnerProductSpace.GramMatrix",
+   "line": 87,
+   "kind": "theorem",
    "deprecated": null},
   "Matrix.orthogonalGroup":
   {"signature":
@@ -33535,6 +35480,13 @@
    "module": "Mathlib.Data.Matrix.Basic",
    "line": 242,
    "kind": "instance",
+   "deprecated": null},
+  "Matrix.gram":
+  {"signature":
+   "Matrix.gram.{u_1, u_2, u_5} {E : Type u_1} {n : Type u_2} (𝕜 : Type u_5) [Inner 𝕜 E] (v : n → E) :\n  Matrix n n 𝕜",
+   "module": "Mathlib.Analysis.InnerProductSpace.GramMatrix",
+   "line": 39,
+   "kind": "def",
    "deprecated": null},
   "Matrix.diagonal_mem_unitary":
   {"signature":
@@ -33748,6 +35700,13 @@
   {"signature": "LucasLehmer.LucasLehmerTest (p : ℕ) : Prop",
    "module": "Mathlib.NumberTheory.LucasLehmer",
    "line": 218,
+   "kind": "def",
+   "deprecated": null},
+  "LocallyBoundedVariationOn":
+  {"signature":
+   "LocallyBoundedVariationOn.{u_1, u_2} {α : Type u_1} [LinearOrder α] {E : Type u_2}\n  [TopologicalSpace E] [WeakPseudoEMetricSpace E] (f : α → E) (s : Set α) : Prop",
+   "module": "Mathlib.Topology.EMetricSpace.BoundedVariation",
+   "line": 69,
    "kind": "def",
    "deprecated": null},
   "LocalizedModule.equivTensorProduct":
@@ -33987,6 +35946,13 @@
    "LinearIsometryEquiv.reflections_generate.{u_3} {F : Type u_3} [NormedAddCommGroup F]\n  [InnerProductSpace ℝ F] [FiniteDimensional ℝ F] :\n  Subgroup.closure (Set.range fun v => (ℝ ∙ v)ᗮ.reflection) = ⊤",
    "module": "Mathlib.Analysis.InnerProductSpace.Projection.FiniteDimensional",
    "line": 233,
+   "kind": "theorem",
+   "deprecated": null},
+  "LinearIndependent.tmul_of_isDomain":
+  {"signature":
+   "LinearIndependent.tmul_of_isDomain.{u_1, u_2, u_3, u_6, u_7} {R : Type u_1} {M : Type u_2}\n  {N : Type u_3} [CommRing R] [IsDomain R] [AddCommGroup M] [_root_.Module R M] [AddCommGroup N]\n  [_root_.Module R N] {ι : Type u_6} {κ : Type u_7} {v : ι → M} {w : κ → N}\n  (hv : LinearIndependent R v) (hw : LinearIndependent R w) :\n  LinearIndependent R fun i => v i.1 ⊗ₜ[R] w i.2",
+   "module": "Mathlib.RingTheory.Flat.Domain",
+   "line": 63,
    "kind": "theorem",
    "deprecated": null},
   "LinearIndependent":
@@ -34255,6 +36221,13 @@
    "line": 282,
    "kind": "theorem",
    "deprecated": null},
+  "IsRightContinuous":
+  {"signature":
+   "IsRightContinuous.{u_1, u_2} {X : Type u_1} {Y : Type u_2} [TopologicalSpace X] [Preorder X]\n  [TopologicalSpace Y] (f : X → Y) : Prop",
+   "module": "Mathlib.Topology.Order.Cadlag",
+   "line": 39,
+   "kind": "def",
+   "deprecated": null},
   "IsPrincipalIdealRing.ringKrullDim_eq_one":
   {"signature":
    "IsPrincipalIdealRing.ringKrullDim_eq_one.{u_1} (R : Type u_1) [CommRing R] [IsDomain R]\n  [IsPrincipalIdealRing R] (h : ¬IsField R) : ringKrullDim R = 1",
@@ -34489,6 +36462,19 @@
   {"signature": "IsOrderedRing.{u_1} (R : Type u_1) [Semiring R] [PartialOrder R] : Prop",
    "module": "Mathlib.Algebra.Order.Ring.Defs",
    "line": 62,
+   "kind": "class",
+   "deprecated": null},
+  "IsOrderedModule":
+  {"signature":
+   "IsOrderedModule.{u_1, u_2} (α : Type u_1) (β : Type u_2) [SMul α β] [Preorder α] [Preorder β]\n  [Zero α] [Zero β] : Prop",
+   "module": "Mathlib.Algebra.Order.Module.Defs",
+   "line": 229,
+   "kind": "class",
+   "deprecated": null},
+  "IsOrderedAddMonoid":
+  {"signature": "IsOrderedAddMonoid.{u_2} (α : Type u_2) [AddCommMonoid α] [Preorder α] : Prop",
+   "module": "Mathlib.Algebra.Order.Monoid.Defs",
+   "line": 25,
    "kind": "class",
    "deprecated": null},
   "IsOfFinOrder":
@@ -35143,6 +37129,54 @@
    "line": 119,
    "kind": "def",
    "deprecated": null},
+  "IsCompactSystem.supClosure":
+  {"signature":
+   "IsCompactSystem.supClosure.{u_1} {α : Type u_1} {S : Set (Set α)} (hS : IsCompactSystem S) :\n  IsCompactSystem (supClosure S)",
+   "module": "Mathlib.Topology.Compactness.CompactSystem",
+   "line": 200,
+   "kind": "theorem",
+   "deprecated": null},
+  "IsCompactSystem.sigma":
+  {"signature":
+   "IsCompactSystem.sigma.{u_2, u_3} {ι : Type u_2} {α : ι → Type u_3} {C : (i : ι) → Set (Set (α i))}\n  (hC : ∀ (i : ι), IsCompactSystem (C i)) :\n  IsCompactSystem {S | ∃ s, S ∈ (↑s).sigma '' Set.univ.pi C}",
+   "module": "Mathlib.Topology.Compactness.CompactSystem",
+   "line": 304,
+   "kind": "theorem",
+   "deprecated": null},
+  "IsCompactSystem.prod":
+  {"signature":
+   "IsCompactSystem.prod.{u_1, u_2} {α : Type u_1} {S : Set (Set α)} {β : Type u_2} {T : Set (Set β)}\n  (hS : IsCompactSystem S) (hT : IsCompactSystem T) :\n  IsCompactSystem (Set.image2 (fun x1 x2 => x1 ×ˢ x2) S T)",
+   "module": "Mathlib.Topology.Compactness.CompactSystem",
+   "line": 257,
+   "kind": "theorem",
+   "deprecated": null},
+  "IsCompactSystem.mono":
+  {"signature":
+   "IsCompactSystem.mono.{u_1} {α : Type u_1} {S T : Set (Set α)} (hT : IsCompactSystem T)\n  (hST : S ⊆ T) : IsCompactSystem S",
+   "module": "Mathlib.Topology.Compactness.CompactSystem",
+   "line": 80,
+   "kind": "theorem",
+   "deprecated": null},
+  "IsCompactSystem.infClosure":
+  {"signature":
+   "IsCompactSystem.infClosure.{u_1} {α : Type u_1} {S : Set (Set α)} (hS : IsCompactSystem S) :\n  IsCompactSystem (infClosure S)",
+   "module": "Mathlib.Topology.Compactness.CompactSystem",
+   "line": 253,
+   "kind": "theorem",
+   "deprecated": null},
+  "IsCompactSystem":
+  {"signature": "IsCompactSystem.{u_1} {α : Type u_1} (S : Set (Set α)) : Prop",
+   "module": "Mathlib.Topology.Compactness.CompactSystem",
+   "line": 48,
+   "kind": "def",
+   "deprecated": null},
+  "IsCadlag":
+  {"signature":
+   "IsCadlag.{u_1, u_2} {X : Type u_1} {Y : Type u_2} [TopologicalSpace X] [Preorder X]\n  [TopologicalSpace Y] (f : X → Y) : Prop",
+   "module": "Mathlib.Topology.Order.Cadlag",
+   "line": 232,
+   "kind": "structure",
+   "deprecated": null},
   "IsArtinianRing.isPrime_iff_isMaximal":
   {"signature":
    "IsArtinianRing.isPrime_iff_isMaximal.{u_1} {R : Type u_1} [CommRing R] [IsArtinianRing R]\n  (p : Ideal R) : p.IsPrime ↔ p.IsMaximal",
@@ -35682,6 +37716,41 @@
    "line": 101,
    "kind": "class",
    "deprecated": null},
+  "InformationTheory.mul_log_le_klDiv":
+  {"signature":
+   "InformationTheory.mul_log_le_klDiv.{u_1} {α : Type u_1} {mα : MeasurableSpace α}\n  (μ ν : MeasureTheory.Measure α) [MeasureTheory.IsFiniteMeasure μ]\n  [MeasureTheory.IsFiniteMeasure ν] :\n  ENNReal.ofReal\n      (μ.real Set.univ * Real.log (μ.real Set.univ / ν.real Set.univ) + ν.real Set.univ -\n        μ.real Set.univ) ≤\n    InformationTheory.klDiv μ ν",
+   "module": "Mathlib.InformationTheory.KullbackLeibler.Basic",
+   "line": 354,
+   "kind": "theorem",
+   "deprecated": null},
+  "InformationTheory.klDiv_self":
+  {"signature":
+   "InformationTheory.klDiv_self.{u_1} {α : Type u_1} {mα : MeasurableSpace α}\n  (μ : MeasureTheory.Measure α) [MeasureTheory.SigmaFinite μ] : InformationTheory.klDiv μ μ = 0",
+   "module": "Mathlib.InformationTheory.KullbackLeibler.Basic",
+   "line": 72,
+   "kind": "theorem",
+   "deprecated": null},
+  "InformationTheory.klDiv_eq_zero_iff":
+  {"signature":
+   "InformationTheory.klDiv_eq_zero_iff.{u_1} {α : Type u_1} {mα : MeasurableSpace α}\n  {μ ν : MeasureTheory.Measure α} [MeasureTheory.IsFiniteMeasure μ]\n  [MeasureTheory.IsFiniteMeasure ν] : InformationTheory.klDiv μ ν = 0 ↔ μ = ν",
+   "module": "Mathlib.InformationTheory.KullbackLeibler.Basic",
+   "line": 369,
+   "kind": "theorem",
+   "deprecated": null},
+  "InformationTheory.klDiv_comp_right_le":
+  {"signature":
+   "InformationTheory.klDiv_comp_right_le.{u_1, u_2} {𝓧 : Type u_1} {𝓨 : Type u_2}\n  {m𝓧 : MeasurableSpace 𝓧} {m𝓨 : MeasurableSpace 𝓨} (μ ν : MeasureTheory.Measure 𝓧)\n  [MeasureTheory.IsFiniteMeasure μ] [MeasureTheory.IsFiniteMeasure ν]\n  (κ : ProbabilityTheory.Kernel 𝓧 𝓨) [ProbabilityTheory.IsMarkovKernel κ] :\n  InformationTheory.klDiv (μ.bind ⇑κ) (ν.bind ⇑κ) ≤ InformationTheory.klDiv μ ν",
+   "module": "Mathlib.InformationTheory.KullbackLeibler.DataProcessing",
+   "line": 183,
+   "kind": "theorem",
+   "deprecated": null},
+  "InformationTheory.klDiv":
+  {"signature":
+   "InformationTheory.klDiv.{u_1} {α : Type u_1} {mα : MeasurableSpace α}\n  (μ ν : MeasureTheory.Measure α) : ENNReal",
+   "module": "Mathlib.InformationTheory.KullbackLeibler.Basic",
+   "line": 54,
+   "kind": "def",
+   "deprecated": null},
   "InfiniteGalois.normal_iff_isGalois":
   {"signature":
    "InfiniteGalois.normal_iff_isGalois.{u_1, u_2} {k : Type u_1} {K : Type u_2} [Field k] [Field K]\n  [Algebra k K] (L : IntermediateField k K) [IsGalois k K] : L.fixingSubgroup.Normal ↔ IsGalois k ↥L",
@@ -35702,6 +37771,13 @@
    "module": "Mathlib.FieldTheory.Galois.Infinite",
    "line": 190,
    "kind": "def",
+   "deprecated": null},
+  "IndexedPartition":
+  {"signature":
+   "IndexedPartition.{u_1, u_2} {ι : Type u_1} {α : Type u_2} (s : ι → Set α) : Type (max u_1 u_2)",
+   "module": "Mathlib.Order.Setoid.Partition",
+   "line": 312,
+   "kind": "structure",
    "deprecated": null},
   "Ideal.sup_eq_top_iff_isCoprime":
   {"signature":
@@ -38912,6 +40988,13 @@
    "line": 1217,
    "kind": "theorem",
    "deprecated": null},
+  "EMetric.pair_reduction":
+  {"signature":
+   "EMetric.pair_reduction.{u_1, u_2} {T : Type u_1} [TopologicalSpace T] [WeakPseudoEMetricSpace T]\n  {a : ENNReal} {n : ℕ} {J : Finset T} (hJ_card : ↑J.card ≤ a ^ n) (c : ENNReal) (E : Type u_2)\n  [TopologicalSpace E] [WeakPseudoEMetricSpace E] :\n  ∃ K ⊆ J ×ˢ J,\n    ↑K.card ≤ a * ↑J.card ∧\n      (∀ (s t : T), (s, t) ∈ K → edist s t ≤ ↑n * c) ∧\n        ∀ (f : T → E), ⨆ s, ⨆ t, edist (f ↑s) (f ↑↑t) ≤ 2 * ⨆ p, edist (f (↑p).1) (f (↑p).2)",
+   "module": "Mathlib.Topology.EMetricSpace.PairReduction",
+   "line": 470,
+   "kind": "theorem",
+   "deprecated": null},
   "DoubleQuot.quotQuotEquivQuotOfLE":
   {"signature":
    "DoubleQuot.quotQuotEquivQuotOfLE.{u} {R : Type u} [CommRing R] {I J : Ideal R} (h : I ≤ J) :\n  (R ⧸ I) ⧸ Ideal.map (Ideal.Quotient.mk I) J ≃+* R ⧸ J",
@@ -39020,6 +41103,34 @@
    "module": "Mathlib.GroupTheory.Coxeter.Basic",
    "line": 106,
    "kind": "abbrev",
+   "deprecated": null},
+  "Convexity.iConvexComb":
+  {"signature":
+   "Convexity.iConvexComb.{u_1, u_2, u_5} {R : Type u_1} {X : Type u_2} {I : Type u_5} [PartialOrder R]\n  [Semiring R] [IsStrictOrderedRing R] [Convexity.ConvexSpace R X] (s : Convexity.StdSimplex R I)\n  (f : I → X) : X",
+   "module": "Mathlib.Geometry.Convex.ConvexSpace.Defs",
+   "line": 413,
+   "kind": "def",
+   "deprecated": null},
+  "ConvexOn.map_condExp_le_univ":
+  {"signature":
+   "ConvexOn.map_condExp_le_univ.{u_1, u_2} {E : Type u_1} [NormedAddCommGroup E] [NormedSpace ℝ E]\n  [CompleteSpace E] {α : Type u_2} {f : α → E} {φ : E → ℝ} {m mα : MeasurableSpace α}\n  {μ : MeasureTheory.Measure α} (hm : m ≤ mα) [MeasureTheory.SigmaFinite (μ.trim hm)]\n  (hφ_cvx : ConvexOn ℝ Set.univ φ) (hφ_cont : LowerSemicontinuous φ)\n  (hf_int : MeasureTheory.Integrable f μ) (hφ_int : MeasureTheory.Integrable (φ ∘ f) μ) :\n  φ ∘ μ[f | m] ≤ᵐ[μ] μ[φ ∘ f | m]",
+   "module": "Mathlib.MeasureTheory.Function.ConditionalExpectation.CondJensen",
+   "line": 209,
+   "kind": "theorem",
+   "deprecated": null},
+  "ConvexOn.map_condExp_le":
+  {"signature":
+   "ConvexOn.map_condExp_le.{u_1, u_2} {E : Type u_1} [NormedAddCommGroup E] [NormedSpace ℝ E]\n  [CompleteSpace E] {α : Type u_2} {f : α → E} {φ : E → ℝ} {m mα : MeasurableSpace α}\n  {μ : MeasureTheory.Measure α} {s : Set E} (hm : m ≤ mα) [MeasureTheory.SigmaFinite (μ.trim hm)]\n  (hφ_cvx : ConvexOn ℝ s φ) (hφ_cont : LowerSemicontinuousOn φ s) (hf : ∀ᵐ (a : α) ∂μ, f a ∈ s)\n  (hs : IsClosed s) (hf_int : MeasureTheory.Integrable f μ)\n  (hφ_int : MeasureTheory.Integrable (φ ∘ f) μ) : φ ∘ μ[f | m] ≤ᵐ[μ] μ[φ ∘ f | m]",
+   "module": "Mathlib.MeasureTheory.Function.ConditionalExpectation.CondJensen",
+   "line": 163,
+   "kind": "theorem",
+   "deprecated": null},
+  "ContinuousMap.borel_eq_iSup_comap_eval":
+  {"signature":
+   "ContinuousMap.borel_eq_iSup_comap_eval.{u_1, u_2} {X : Type u_1} {Y : Type u_2} [TopologicalSpace X]\n  [TopologicalSpace Y] [SecondCountableTopology X] [SecondCountableTopology Y]\n  [LocallyCompactSpace X] [RegularSpace Y] :\n  borel C(X, Y) = ⨆ x, MeasurableSpace.comap (fun f => f x) (borel Y)",
+   "module": "Mathlib.MeasureTheory.Constructions.BorelSpace.ContinuousMap",
+   "line": 73,
+   "kind": "theorem",
    "deprecated": null},
   "ContinuousLinearMap.inner_map_map_of_mem_unitary":
   {"signature":
@@ -40437,6 +42548,13 @@
    "line": 59,
    "kind": "class",
    "deprecated": null},
+  "CategoryTheory.Over.postAdjunctionRight":
+  {"signature":
+   "CategoryTheory.Over.postAdjunctionRight.{v₁, v₂, u₁, u₂} {T : Type u₁}\n  [CategoryTheory.Category.{v₁, u₁} T] {D : Type u₂} [CategoryTheory.Category.{v₂, u₂} D] {Y : D}\n  {F : CategoryTheory.Functor T D} {G : CategoryTheory.Functor D T} (a : F ⊣ G) :\n  (CategoryTheory.Over.post F).comp (CategoryTheory.Over.map (a.counit.app Y)) ⊣\n    CategoryTheory.Over.post G",
+   "module": "Mathlib.CategoryTheory.Comma.Over.Basic",
+   "line": 467,
+   "kind": "def",
+   "deprecated": null},
   "CategoryTheory.Over.mkIdTerminal":
   {"signature":
    "CategoryTheory.Over.mkIdTerminal.{v₁, u₁} {T : Type u₁} [CategoryTheory.Category.{v₁, u₁} T]\n  {X : T} :\n  CategoryTheory.Limits.IsTerminal (CategoryTheory.Over.mk (CategoryTheory.CategoryStruct.id X))",
@@ -41838,6 +43956,13 @@
   {"signature": "Cardinal.{u} : Type (u + 1)",
    "module": "Mathlib.SetTheory.Cardinal.Defs",
    "line": 78,
+   "kind": "def",
+   "deprecated": null},
+  "BoundedVariationOn":
+  {"signature":
+   "BoundedVariationOn.{u_1, u_2} {α : Type u_1} [LinearOrder α] {E : Type u_2} [TopologicalSpace E]\n  [WeakPseudoEMetricSpace E] (f : α → E) (s : Set α) : Prop",
+   "module": "Mathlib.Topology.EMetricSpace.BoundedVariation",
+   "line": 65,
    "kind": "def",
    "deprecated": null},
   "BialgCat":
