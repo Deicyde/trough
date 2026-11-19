@@ -233,6 +233,8 @@ ITEM = re.compile(r"^[ \t]*(?:[-*+]|\d+\.)[ \t]+")
 # A text that is only a note that it is still to be written.
 TO_DO = re.compile(r"\s*(?:TODO|To do)\.?\s*")
 NO_PLANS = re.compile(r"(?!)")
+# The bytes of article Markdown a page folds in before its next node starts a part, as in the other chapters.
+PAGE_BUDGET = 300_000
 
 
 def without_notes(markdown: str, plans: bool = False) -> str:
@@ -572,7 +574,7 @@ def chapter(project: Project, blueprint: Blueprint, mathlib_heads: dict[str, Lea
         for label in [node.id, *node.labels]:
             targets[label] = leaf_of[node]
     for container in [*pages.values(), root]:
-        chunk(container)
+        chunk(container, budget=PAGE_BUDGET)
 
     # Where each number in a page's own text ended up: the page, or one of its parts.
     for label, (number, article) in numbers.items():

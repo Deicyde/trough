@@ -669,3 +669,17 @@ def test_macro_glue_keeps_control_words_apart():
 def test_formulas_lose_what_mathjax_does_not_define():
     assert tex.math_text(r"\mathsf{V}^{\textsc{Compr}} = b. \qedhere", True) == r"\mathsf{V}^{\text{Compr}} = b."
     assert tex.math_text(r"\sum\displaylimits_{x} {\larger[2] f} \qed", False) == r"\sum\limits_{x} { f}"
+
+
+def test_a_page_ends_before_its_articles_pass_the_budget(tmp_path, monkeypatch):
+    long = "A long statement. " * 50
+    lemmas = "".join(f"\\begin{{lemma}}\\label{{l{k}}}\\lean{{A.l{k}}}\\leanok {long}\\end{{lemma}}\n" for k in range(4))
+    (tmp_path / "web.tex").write_text(f"\\begin{{document}}\n\\chapter{{A}}\n{lemmas}\\end{{document}}\n")
+    blueprint = leanblueprint.read(tmp_path, "web.tex")
+    [page] = [entry.node for entry in blueprints.chapter(project(tmp_path), blueprint, {}).root.entries]
+    assert len(page.entries) == 4  # four nodes are well under the budget and under 20
+    monkeypatch.setattr(blueprints, "PAGE_BUDGET", 2 * len(long))
+    [page] = [entry.node for entry in blueprints.chapter(project(tmp_path), blueprint, {}).root.entries]
+    parts = [entry.node for entry in page.entries]
+    assert len(parts) > 1 and all(part.navigation == "transparent" for part in parts)
+    assert sum(len(part.entries) for part in parts) == 4
