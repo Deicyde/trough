@@ -1,0 +1,19 @@
+{
+ "schema": "trough-ledger/v1",
+ "library": "Cedar",
+ "repo": "cedar-policy/cedar-spec",
+ "rev": "326d93c24490c90607a3e257318e9c6a049c8116",
+ "module": "Cedar.Slice.PolicySlice",
+ "file": "cedar-lean/Cedar/Slice/PolicySlice.lean",
+ "public": [
+  {"name": "Cedar.Slice.PolicyBound", "kind": "structure", "line": 35},
+  {"name": "Cedar.Slice.inSomeOrNone", "kind": "def", "line": 39},
+  {"name": "Cedar.Slice.satisfiedBound", "kind": "def", "line": 49},
+  {"name": "Cedar.Slice.BoundAnalysis", "kind": "abbrev", "line": 57},
+  {"name": "Cedar.Slice.BoundAnalysis.slice", "kind": "def", "line": 64},
+  {"name": "Cedar.Slice.scopeAnalysis", "kind": "def", "line": 71}
+ ],
+ "private": [],
+ "missing": [],
+ "unread": "Unnamed instances, the names an `alias ⟨…⟩` command gives, and the names Lean generates for a declaration (constructors, recursors, derived instances) are not read from the source, so they are not listed."
+}

@@ -1,0 +1,25 @@
+{
+ "schema": "trough-ledger/v1",
+ "library": "Cedar",
+ "repo": "cedar-policy/cedar-spec",
+ "rev": "326d93c24490c90607a3e257318e9c6a049c8116",
+ "module": "Cedar.SymCCOpt.CompiledPolicies",
+ "file": "cedar-lean/Cedar/SymCCOpt/CompiledPolicies.lean",
+ "public": [
+  {"name": "Cedar.SymCC.CompiledPolicyError", "kind": "inductive", "line": 33},
+  {"name": "Cedar.SymCC.CompiledPolicy", "kind": "structure", "line": 48},
+  {"name": "Cedar.SymCC.CompiledPolicy.compile", "kind": "def", "line": 67},
+  {"name": "Cedar.SymCC.CompiledPolicySet", "kind": "structure", "line": 80},
+  {"name": "Cedar.SymCC.CompiledPolicySet.compile", "kind": "def", "line": 99},
+  {"name": "Cedar.SymCC.CompiledPolicySet.allowAll", "kind": "def", "line": 111},
+  {"name": "Cedar.SymCC.CompiledPolicySet.denyAll", "kind": "def", "line": 124},
+  {"name": "Cedar.SymCC.CompiledPolicy.intoCompiledPolicySet", "kind": "def", "line": 140},
+  {"name": "Cedar.SymCC.CompiledPolicies", "kind": "inductive", "line": 159},
+  {"name": "Cedar.SymCC.CompiledPolicies.allPolicies", "kind": "def", "line": 163},
+  {"name": "Cedar.SymCC.CompiledPolicies.footprint", "kind": "def", "line": 167},
+  {"name": "Cedar.SymCC.CompiledPolicies.εnv", "kind": "def", "line": 171}
+ ],
+ "private": [],
+ "missing": [],
+ "unread": "Unnamed instances, the names an `alias ⟨…⟩` command gives, and the names Lean generates for a declaration (constructors, recursors, derived instances) are not read from the source, so they are not listed."
+}

@@ -1,0 +1,25 @@
+{
+ "schema": "trough-ledger/v1",
+ "library": "Cedar",
+ "repo": "cedar-policy/cedar-spec",
+ "rev": "326d93c24490c90607a3e257318e9c6a049c8116",
+ "module": "Cedar.Thm.SymCC.Enforcer.Footprint",
+ "file": "cedar-lean/Cedar/Thm/SymCC/Enforcer/Footprint.lean",
+ "public": [
+  {"name": "Cedar.SymCC.SymEntities.SameOn", "kind": "def", "line": 32},
+  {"name": "Cedar.SymCC.SymEnv.SameOn", "kind": "def", "line": 45},
+  {"name": "Cedar.Thm.mem_footprints_iff", "kind": "theorem", "line": 55},
+  {"name": "Cedar.Thm.mem_footprint_option_entity", "kind": "theorem", "line": 103},
+  {"name": "Cedar.Thm.mem_footprint_exists_wf", "kind": "theorem", "line": 225},
+  {"name": "Cedar.Thm.mem_footprint_compile_exists_swf", "kind": "theorem", "line": 243},
+  {"name": "Cedar.Thm.mem_footprint_wf", "kind": "theorem", "line": 260},
+  {"name": "Cedar.Thm.mem_footprints_wf", "kind": "theorem", "line": 271},
+  {"name": "Cedar.Thm.footprints_empty", "kind": "theorem", "line": 281},
+  {"name": "Cedar.Thm.footprints_singleton", "kind": "theorem", "line": 286},
+  {"name": "Cedar.Thm.footprints_append", "kind": "theorem", "line": 291},
+  {"name": "Cedar.Thm.footprint_subset_footprints", "kind": "theorem", "line": 297}
+ ],
+ "private": [],
+ "missing": [],
+ "unread": "Unnamed instances, the names an `alias ⟨…⟩` command gives, and the names Lean generates for a declaration (constructors, recursors, derived instances) are not read from the source, so they are not listed."
+}

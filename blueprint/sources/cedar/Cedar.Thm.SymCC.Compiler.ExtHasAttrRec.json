@@ -1,0 +1,22 @@
+{
+ "schema": "trough-ledger/v1",
+ "library": "Cedar",
+ "repo": "cedar-policy/cedar-spec",
+ "rev": "326d93c24490c90607a3e257318e9c6a049c8116",
+ "module": "Cedar.Thm.SymCC.Compiler.ExtHasAttrRec",
+ "file": "cedar-lean/Cedar/Thm/SymCC/Compiler/ExtHasAttrRec.lean",
+ "public": [
+  {"name": "Cedar.SymCC.compileExtHasAttrRec", "kind": "def", "line": 40},
+  {"name": "Cedar.Thm.compileExtHasAttr_eq_compileExtHasAttrRec", "kind": "theorem", "line": 140}
+ ],
+ "private": [
+  {"name": "Cedar.Thm.foldExtHasChecks", "kind": "def", "line": 63},
+  {"name": "Cedar.Thm.foldExtHasChecks_singleton", "kind": "theorem", "line": 68},
+  {"name": "Cedar.Thm.foldExtHasChecks_cons", "kind": "theorem", "line": 73},
+  {"name": "Cedar.Thm.compileExtHasAttr_loop_acc", "kind": "theorem", "line": 84},
+  {"name": "Cedar.Thm.compileExtHasAttr_eq_loop_fold", "kind": "theorem", "line": 109},
+  {"name": "Cedar.Thm.compileExtHasAttr_loop_nonempty", "kind": "theorem", "line": 115}
+ ],
+ "missing": [],
+ "unread": "Unnamed instances, the names an `alias ⟨…⟩` command gives, and the names Lean generates for a declaration (constructors, recursors, derived instances) are not read from the source, so they are not listed."
+}

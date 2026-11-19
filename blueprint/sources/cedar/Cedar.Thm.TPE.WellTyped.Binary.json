@@ -1,0 +1,22 @@
+{
+ "schema": "trough-ledger/v1",
+ "library": "Cedar",
+ "repo": "cedar-policy/cedar-spec",
+ "rev": "326d93c24490c90607a3e257318e9c6a049c8116",
+ "module": "Cedar.Thm.TPE.WellTyped.Binary",
+ "file": "cedar-lean/Cedar/Thm/TPE/WellTyped/Binary.lean",
+ "public": [
+  {"name": "Cedar.Thm.try_decide_residual₂_is_bool", "kind": "theorem", "line": 35},
+  {"name": "Cedar.Thm.tags_if_partial_tags", "kind": "theorem", "line": 45},
+  {"name": "Cedar.Thm.entity_tag_well_typed", "kind": "theorem", "line": 69},
+  {"name": "Cedar.Thm.partial_eval_well_typed_app₂_values_hasTag", "kind": "theorem", "line": 110},
+  {"name": "Cedar.Thm.partial_eval_well_typed_app₂_values_getTag", "kind": "theorem", "line": 181},
+  {"name": "Cedar.Thm.partial_eval_well_typed_app₂_values_mem", "kind": "theorem", "line": 287},
+  {"name": "Cedar.Thm.partial_eval_well_typed_app₂_values", "kind": "theorem", "line": 371},
+  {"name": "Cedar.Thm.partial_eval_well_typed_app₂_nonvalues", "kind": "theorem", "line": 440},
+  {"name": "Cedar.Thm.partial_eval_well_typed_app₂", "kind": "theorem", "line": 576}
+ ],
+ "private": [],
+ "missing": [],
+ "unread": "Unnamed instances, the names an `alias ⟨…⟩` command gives, and the names Lean generates for a declaration (constructors, recursors, derived instances) are not read from the source, so they are not listed."
+}

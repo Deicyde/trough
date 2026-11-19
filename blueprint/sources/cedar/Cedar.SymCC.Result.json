@@ -1,0 +1,16 @@
+{
+ "schema": "trough-ledger/v1",
+ "library": "Cedar",
+ "repo": "cedar-policy/cedar-spec",
+ "rev": "326d93c24490c90607a3e257318e9c6a049c8116",
+ "module": "Cedar.SymCC.Result",
+ "file": "cedar-lean/Cedar/SymCC/Result.lean",
+ "public": [
+  {"name": "Cedar.SymCC.Error", "kind": "inductive", "line": 25},
+  {"name": "Cedar.SymCC.Result", "kind": "abbrev", "line": 31},
+  {"name": "Cedar.SymCC.coeResult", "kind": "instance", "line": 35}
+ ],
+ "private": [],
+ "missing": [],
+ "unread": "Unnamed instances, the names an `alias ⟨…⟩` command gives, and the names Lean generates for a declaration (constructors, recursors, derived instances) are not read from the source, so they are not listed."
+}

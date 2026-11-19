@@ -1,0 +1,26 @@
+{
+ "schema": "trough-ledger/v1",
+ "library": "Cedar",
+ "repo": "cedar-policy/cedar-spec",
+ "rev": "326d93c24490c90607a3e257318e9c6a049c8116",
+ "module": "Cedar.Thm.SymCC.Opt.CompiledPolicies",
+ "file": "cedar-lean/Cedar/Thm/SymCC/Opt/CompiledPolicies.lean",
+ "public": [
+  {"name": "Cedar.Thm.intoCompiledPolicySet_correctness", "kind": "theorem", "line": 48},
+  {"name": "Cedar.Thm.cp_compile_produces_the_right_policy", "kind": "theorem", "line": 69},
+  {"name": "Cedar.Thm.cpset_compile_produces_the_right_policies", "kind": "theorem", "line": 81},
+  {"name": "Cedar.Thm.cp_compile_produces_the_right_env", "kind": "theorem", "line": 90},
+  {"name": "Cedar.Thm.cpset_compile_produces_the_right_env", "kind": "theorem", "line": 98},
+  {"name": "Cedar.Thm.cp_compile_produces_the_right_term", "kind": "theorem", "line": 106},
+  {"name": "Cedar.Thm.cpset_compile_produces_the_right_term", "kind": "theorem", "line": 120},
+  {"name": "Cedar.Thm.cp_compile_produces_the_right_footprint", "kind": "theorem", "line": 135},
+  {"name": "Cedar.Thm.cpset_compile_produces_the_right_footprint", "kind": "theorem", "line": 149},
+  {"name": "Cedar.Thm.cp_compile_produces_the_right_acyclicity", "kind": "theorem", "line": 163},
+  {"name": "Cedar.Thm.cpset_compile_produces_the_right_acyclicity", "kind": "theorem", "line": 174},
+  {"name": "Cedar.Thm.flatMap_allPolicies_policy", "kind": "theorem", "line": 185},
+  {"name": "Cedar.Thm.flatMap_allPolicies_policies", "kind": "theorem", "line": 191}
+ ],
+ "private": [],
+ "missing": [],
+ "unread": "Unnamed instances, the names an `alias ⟨…⟩` command gives, and the names Lean generates for a declaration (constructors, recursors, derived instances) are not read from the source, so they are not listed."
+}

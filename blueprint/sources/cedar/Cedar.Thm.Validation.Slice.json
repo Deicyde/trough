@@ -1,0 +1,21 @@
+{
+ "schema": "trough-ledger/v1",
+ "library": "Cedar",
+ "repo": "cedar-policy/cedar-spec",
+ "rev": "326d93c24490c90607a3e257318e9c6a049c8116",
+ "module": "Cedar.Thm.Validation.Slice",
+ "file": "cedar-lean/Cedar/Thm/Validation/Slice.lean",
+ "public": [
+  {"name": "Cedar.Thm.Value.sliceEUIDs_wf", "kind": "theorem", "line": 39},
+  {"name": "Cedar.Thm.EntityData.sliceEUIDs_wf", "kind": "theorem", "line": 56},
+  {"name": "Cedar.Thm.Request.sliceEUIDs_wf", "kind": "theorem", "line": 62},
+  {"name": "Cedar.Thm.slice_at_level_inner_well_formed", "kind": "theorem", "line": 66},
+  {"name": "Cedar.Thm.slice_at_level_request_well_formed", "kind": "theorem", "line": 77},
+  {"name": "Cedar.Thm.checked_eval_entity_in_slice", "kind": "theorem", "line": 81},
+  {"name": "Cedar.Thm.not_entities_then_not_slice", "kind": "theorem", "line": 104},
+  {"name": "Cedar.Thm.checked_eval_entity_find_entities_eq_find_slice", "kind": "theorem", "line": 115}
+ ],
+ "private": [],
+ "missing": [],
+ "unread": "Unnamed instances, the names an `alias ⟨…⟩` command gives, and the names Lean generates for a declaration (constructors, recursors, derived instances) are not read from the source, so they are not listed."
+}

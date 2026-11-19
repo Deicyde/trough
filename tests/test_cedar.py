@@ -102,7 +102,7 @@ def test_a_lake_project_in_a_subfolder_is_read_from_it_and_linked_with_it(tmp_pa
     assert "the 2 modules under `cedar-lean/Cedar/` that declare something public by name" in front
     # The headers name no authors, so the intro does not say an article gives them.
     assert "It gives its docstrings and a block per public declaration" in front and "authors" not in front
-    assert "this chapter maps that project's `Cedar` library" in front
+    assert "The project's libraries other than `Cedar`, for Protobuf serialization" in front
     ledger = json.loads(result.files["sources/cedar/Cedar.Spec.Authorizer.json"])
     assert ledger["file"] == "cedar-lean/Cedar/Spec/Authorizer.lean"
 

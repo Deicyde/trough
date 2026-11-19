@@ -1,0 +1,20 @@
+{
+ "schema": "trough-ledger/v1",
+ "library": "Cedar",
+ "repo": "cedar-policy/cedar-spec",
+ "rev": "326d93c24490c90607a3e257318e9c6a049c8116",
+ "module": "Cedar.Thm.WellTyped.Expr.Definition",
+ "file": "cedar-lean/Cedar/Thm/WellTyped/Expr/Definition.lean",
+ "public": [
+  {"name": "Cedar.Spec.Prim.WellTyped", "kind": "inductive", "line": 31},
+  {"name": "Cedar.Spec.Var.WellTyped", "kind": "inductive", "line": 42},
+  {"name": "Cedar.Spec.UnaryOp.WellTyped", "kind": "inductive", "line": 52},
+  {"name": "Cedar.Spec.BinaryOp.WellTyped", "kind": "inductive", "line": 69},
+  {"name": "Cedar.Spec.ExtFun.WellTyped", "kind": "inductive", "line": 145},
+  {"name": "Cedar.Thm.ExtHasAttrChainValid", "kind": "inductive", "line": 239},
+  {"name": "Cedar.Thm.TypedExpr.WellTyped", "kind": "inductive", "line": 284}
+ ],
+ "private": [],
+ "missing": [],
+ "unread": "Unnamed instances, the names an `alias ⟨…⟩` command gives, and the names Lean generates for a declaration (constructors, recursors, derived instances) are not read from the source, so they are not listed."
+}

@@ -1,0 +1,16 @@
+{
+ "schema": "trough-ledger/v1",
+ "library": "Cedar",
+ "repo": "cedar-policy/cedar-spec",
+ "rev": "326d93c24490c90607a3e257318e9c6a049c8116",
+ "module": "Cedar.Thm.Validation.Slice.Reachable.Record",
+ "file": "cedar-lean/Cedar/Thm/Validation/Slice/Reachable/Record.lean",
+ "public": [
+  {"name": "Cedar.Thm.typed_record_contains_typed_attrs", "kind": "theorem", "line": 35},
+  {"name": "Cedar.Thm.record_entity_access_implies_attr_entity_access", "kind": "theorem", "line": 47},
+  {"name": "Cedar.Thm.checked_eval_entity_reachable_record", "kind": "theorem", "line": 58}
+ ],
+ "private": [],
+ "missing": [],
+ "unread": "Unnamed instances, the names an `alias ⟨…⟩` command gives, and the names Lean generates for a declaration (constructors, recursors, derived instances) are not read from the source, so they are not listed."
+}

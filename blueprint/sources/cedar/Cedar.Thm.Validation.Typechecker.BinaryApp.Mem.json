@@ -1,0 +1,28 @@
+{
+ "schema": "trough-ledger/v1",
+ "library": "Cedar",
+ "repo": "cedar-policy/cedar-spec",
+ "rev": "326d93c24490c90607a3e257318e9c6a049c8116",
+ "module": "Cedar.Thm.Validation.Typechecker.BinaryApp.Mem",
+ "file": "cedar-lean/Cedar/Thm/Validation/Typechecker/BinaryApp/Mem.lean",
+ "public": [
+  {"name": "Cedar.Thm.type_of_mem_inversion", "kind": "theorem", "line": 40},
+  {"name": "Cedar.Thm.entityUID?_some_implies_entity_lit", "kind": "theorem", "line": 66},
+  {"name": "Cedar.Thm.actionUID?_some_implies_action_lit", "kind": "theorem", "line": 74},
+  {"name": "Cedar.Thm.entityUIDs?_some_implies_entity_lits", "kind": "theorem", "line": 87},
+  {"name": "Cedar.Thm.acts_maybeDescendentOf_false_implies_not_ancestor_type", "kind": "theorem", "line": 113},
+  {"name": "Cedar.Thm.entity_type_in_false_implies_inₑ_false", "kind": "theorem", "line": 138},
+  {"name": "Cedar.Thm.action_type_in_eq_action_inₑ", "kind": "theorem", "line": 174},
+  {"name": "Cedar.Thm.type_of_mem_is_soundₑ", "kind": "theorem", "line": 188},
+  {"name": "Cedar.Thm.entity_set_type_implies_set_of_entities", "kind": "theorem", "line": 248},
+  {"name": "Cedar.Thm.entity_type_in_false_implies_inₛ_false", "kind": "theorem", "line": 278},
+  {"name": "Cedar.Thm.mapM'_eval_lits_eq_prims", "kind": "theorem", "line": 330},
+  {"name": "Cedar.Thm.evaluate_entity_set_eqv", "kind": "theorem", "line": 349},
+  {"name": "Cedar.Thm.action_type_in_eq_action_inₛ", "kind": "theorem", "line": 372},
+  {"name": "Cedar.Thm.type_of_mem_is_soundₛ", "kind": "theorem", "line": 419},
+  {"name": "Cedar.Thm.type_of_mem_is_sound", "kind": "theorem", "line": 500}
+ ],
+ "private": [],
+ "missing": [],
+ "unread": "Unnamed instances, the names an `alias ⟨…⟩` command gives, and the names Lean generates for a declaration (constructors, recursors, derived instances) are not read from the source, so they are not listed."
+}

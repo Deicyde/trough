@@ -1,0 +1,26 @@
+{
+ "schema": "trough-ledger/v1",
+ "library": "Cedar",
+ "repo": "cedar-policy/cedar-spec",
+ "rev": "326d93c24490c90607a3e257318e9c6a049c8116",
+ "module": "Cedar.Spec.Evaluator",
+ "file": "cedar-lean/Cedar/Spec/Evaluator.lean",
+ "public": [
+  {"name": "Cedar.Spec.intOrErr", "kind": "def", "line": 34},
+  {"name": "Cedar.Spec.apply₁", "kind": "def", "line": 38},
+  {"name": "Cedar.Spec.inₑ", "kind": "def", "line": 46},
+  {"name": "Cedar.Spec.inₛ", "kind": "def", "line": 49},
+  {"name": "Cedar.Spec.hasTag", "kind": "def", "line": 53},
+  {"name": "Cedar.Spec.getTag", "kind": "def", "line": 56},
+  {"name": "Cedar.Spec.apply₂", "kind": "def", "line": 59},
+  {"name": "Cedar.Spec.attrsOf", "kind": "def", "line": 80},
+  {"name": "Cedar.Spec.hasAttr", "kind": "def", "line": 86},
+  {"name": "Cedar.Spec.getAttr", "kind": "def", "line": 90},
+  {"name": "Cedar.Spec.hasAttrs", "kind": "def", "line": 94},
+  {"name": "Cedar.Spec.bindAttr", "kind": "def", "line": 108},
+  {"name": "Cedar.Spec.evaluate", "kind": "def", "line": 112}
+ ],
+ "private": [],
+ "missing": [],
+ "unread": "Unnamed instances, the names an `alias ⟨…⟩` command gives, and the names Lean generates for a declaration (constructors, recursors, derived instances) are not read from the source, so they are not listed."
+}

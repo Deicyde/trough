@@ -1,0 +1,34 @@
+{
+ "schema": "trough-ledger/v1",
+ "library": "Cedar",
+ "repo": "cedar-policy/cedar-spec",
+ "rev": "326d93c24490c90607a3e257318e9c6a049c8116",
+ "module": "Cedar.Data.LT",
+ "file": "cedar-lean/Cedar/Data/LT.lean",
+ "public": [
+  {"name": "Cedar.Data.StrictLT", "kind": "class", "line": 30},
+  {"name": "Cedar.Data.StrictLT.irreflexive", "kind": "theorem", "line": 35},
+  {"name": "Cedar.Data.StrictLT.if_not_lt_gt_then_eq", "kind": "theorem", "line": 42},
+  {"name": "Cedar.Data.StrictLT.if_not_lt_eq_then_gt", "kind": "theorem", "line": 50},
+  {"name": "Cedar.Data.StrictLT.not_eq", "kind": "theorem", "line": 58},
+  {"name": "List.cons_lt_cons", "kind": "theorem", "line": 80},
+  {"name": "List.slt_irrefl", "kind": "theorem", "line": 87},
+  {"name": "List.slt_trans", "kind": "theorem", "line": 98},
+  {"name": "List.slt_asymm", "kind": "theorem", "line": 117},
+  {"name": "List.lt_conn", "kind": "theorem", "line": 134},
+  {"name": "List.strictLT", "kind": "instance", "line": 173},
+  {"name": "Bool.lt", "kind": "def", "line": 178},
+  {"name": "Bool.decLt", "kind": "instance", "line": 185},
+  {"name": "Bool.strictLT", "kind": "instance", "line": 188},
+  {"name": "Nat.strictLT", "kind": "instance", "line": 203},
+  {"name": "Int.strictLT", "kind": "instance", "line": 208},
+  {"name": "UInt32.strictLT", "kind": "instance", "line": 213},
+  {"name": "Char.strictLT", "kind": "instance", "line": 221},
+  {"name": "String.strictLT", "kind": "instance", "line": 231}
+ ],
+ "private": [
+  {"name": "List.lt_cons_cases", "kind": "theorem", "line": 73}
+ ],
+ "missing": [],
+ "unread": "Unnamed instances, the names an `alias ⟨…⟩` command gives, and the names Lean generates for a declaration (constructors, recursors, derived instances) are not read from the source, so they are not listed."
+}

@@ -1,0 +1,19 @@
+{
+ "schema": "trough-ledger/v1",
+ "library": "Cedar",
+ "repo": "cedar-policy/cedar-spec",
+ "rev": "326d93c24490c90607a3e257318e9c6a049c8116",
+ "module": "Cedar.Thm.SymCC.Compiler.Control",
+ "file": "cedar-lean/Cedar/Thm/SymCC/Compiler/Control.lean",
+ "public": [
+  {"name": "Cedar.Thm.compile_evaluate_ite", "kind": "theorem", "line": 52},
+  {"name": "Cedar.Thm.compile_interpret_ite", "kind": "theorem", "line": 112},
+  {"name": "Cedar.Thm.compile_evaluate_and", "kind": "theorem", "line": 232},
+  {"name": "Cedar.Thm.compile_interpret_and", "kind": "theorem", "line": 289},
+  {"name": "Cedar.Thm.compile_evaluate_or", "kind": "theorem", "line": 388},
+  {"name": "Cedar.Thm.compile_interpret_or", "kind": "theorem", "line": 445}
+ ],
+ "private": [],
+ "missing": [],
+ "unread": "Unnamed instances, the names an `alias ⟨…⟩` command gives, and the names Lean generates for a declaration (constructors, recursors, derived instances) are not read from the source, so they are not listed."
+}

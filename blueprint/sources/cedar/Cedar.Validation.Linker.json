@@ -1,0 +1,22 @@
+{
+ "schema": "trough-ledger/v1",
+ "library": "Cedar",
+ "repo": "cedar-policy/cedar-spec",
+ "rev": "326d93c24490c90607a3e257318e9c6a049c8116",
+ "module": "Cedar.Validation.Linker",
+ "file": "cedar-lean/Cedar/Validation/Linker.lean",
+ "public": [
+  {"name": "Cedar.Validation.LinkError", "kind": "inductive", "line": 33},
+  {"name": "Cedar.Validation.closeAncestorsRound", "kind": "def", "line": 72},
+  {"name": "Cedar.Validation.closeAncestorsIter", "kind": "def", "line": 82},
+  {"name": "Cedar.Validation.closeAncestors", "kind": "def", "line": 93},
+  {"name": "Cedar.Validation.PartialEntitySchema.closeForLink", "kind": "def", "line": 102},
+  {"name": "Cedar.Validation.PartialEntitySchemaEntry.link", "kind": "def", "line": 127},
+  {"name": "Cedar.Validation.PartialActionSchemaEntry.link", "kind": "def", "line": 144},
+  {"name": "Cedar.Validation.linkMaps", "kind": "def", "line": 159},
+  {"name": "Cedar.Validation.link", "kind": "def", "line": 172}
+ ],
+ "private": [],
+ "missing": [],
+ "unread": "Unnamed instances, the names an `alias ⟨…⟩` command gives, and the names Lean generates for a declaration (constructors, recursors, derived instances) are not read from the source, so they are not listed."
+}

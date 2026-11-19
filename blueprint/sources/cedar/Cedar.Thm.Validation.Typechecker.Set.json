@@ -1,0 +1,21 @@
+{
+ "schema": "trough-ledger/v1",
+ "library": "Cedar",
+ "repo": "cedar-policy/cedar-spec",
+ "rev": "326d93c24490c90607a3e257318e9c6a049c8116",
+ "module": "Cedar.Thm.Validation.Typechecker.Set",
+ "file": "cedar-lean/Cedar/Thm/Validation/Typechecker/Set.lean",
+ "public": [
+  {"name": "Cedar.Thm.type_of_set_tail", "kind": "theorem", "line": 39},
+  {"name": "Cedar.Thm.type_of_set_inversion", "kind": "theorem", "line": 82},
+  {"name": "Cedar.Thm.list_is_sound_implies_tail_is_sound", "kind": "theorem", "line": 140},
+  {"name": "Cedar.Thm.list_is_typed_implies_tail_is_typed", "kind": "theorem", "line": 148},
+  {"name": "Cedar.Thm.type_of_set_is_sound_err", "kind": "theorem", "line": 156},
+  {"name": "Cedar.Thm.type_of_set_is_sound_ok", "kind": "theorem", "line": 193},
+  {"name": "Cedar.Thm.type_of_set_is_sound", "kind": "theorem", "line": 239},
+  {"name": "Cedar.Thm.type_of_ok_attr_list", "kind": "theorem", "line": 267}
+ ],
+ "private": [],
+ "missing": [],
+ "unread": "Unnamed instances, the names an `alias ⟨…⟩` command gives, and the names Lean generates for a declaration (constructors, recursors, derived instances) are not read from the source, so they are not listed."
+}

@@ -46,8 +46,8 @@ def intro(data: dict, stats: Counter) -> str:
     return library.module_intro(CEDAR, data, stats, [
         f"[{REPO}]({GITHUB}/{REPO}) says in its README:",
         quote(pinned(CEDAR, "\n\n".join(data["readme"]), data["rev"])),
-        f"Its Lean is the Lake project in `{SUBDIR}/`, and this chapter maps that project's `{ROOT}` library. The "
-        "project's other libraries, for Protobuf serialization, the foreign function interface and tests, are left out.",
+        f"Its Lean is the Lake project in `{SUBDIR}/`. The project's libraries other than `{ROOT}`, for Protobuf "
+        "serialization, the foreign function interface and tests, are left out.",
     ])
 
 

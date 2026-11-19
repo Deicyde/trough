@@ -1,0 +1,23 @@
+{
+ "schema": "trough-ledger/v1",
+ "library": "Cedar",
+ "repo": "cedar-policy/cedar-spec",
+ "rev": "326d93c24490c90607a3e257318e9c6a049c8116",
+ "module": "Cedar.Thm.SymCC.Enforcer.Extractor",
+ "file": "cedar-lean/Cedar/Thm/SymCC/Enforcer/Extractor.lean",
+ "public": [
+  {"name": "Cedar.Thm.repair_wf", "kind": "theorem", "line": 156},
+  {"name": "Cedar.Thm.repair_env_wf_same", "kind": "theorem", "line": 198},
+  {"name": "Cedar.Thm.extract?_env_wf_same", "kind": "theorem", "line": 212},
+  {"name": "Cedar.Thm.not_mem_footprintUIDs_implies_empty_ancs", "kind": "theorem", "line": 276},
+  {"name": "Cedar.Thm.mem_footprintUIDs_implies_eq_ancs", "kind": "theorem", "line": 308},
+  {"name": "Cedar.Thm.mem_footprintUIDs_mem_footprints", "kind": "theorem", "line": 326},
+  {"name": "Cedar.Thm.mem_mem_footprints_footprintUIDs", "kind": "theorem", "line": 349},
+  {"name": "Cedar.Thm.εnv_same_on_footprints", "kind": "theorem", "line": 460},
+  {"name": "Cedar.Thm.sym_entities_entityUIDs_include_enums", "kind": "theorem", "line": 480},
+  {"name": "Cedar.Thm.extract?_implies_enum_complete", "kind": "theorem", "line": 505}
+ ],
+ "private": [],
+ "missing": [],
+ "unread": "Unnamed instances, the names an `alias ⟨…⟩` command gives, and the names Lean generates for a declaration (constructors, recursors, derived instances) are not read from the source, so they are not listed."
+}

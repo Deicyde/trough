@@ -1,0 +1,23 @@
+{
+ "schema": "trough-ledger/v1",
+ "library": "Cedar",
+ "repo": "cedar-policy/cedar-spec",
+ "rev": "326d93c24490c90607a3e257318e9c6a049c8116",
+ "module": "Cedar.Thm.Authorization.PolicySlice",
+ "file": "cedar-lean/Cedar/Thm/Authorization/PolicySlice.lean",
+ "public": [
+  {"name": "Cedar.Thm.IsSoundPolicySlice", "kind": "def", "line": 37},
+  {"name": "Cedar.Thm.sound_slice_transitive", "kind": "theorem", "line": 43},
+  {"name": "Cedar.Thm.IsSoundPolicySliceFalseDef", "kind": "def", "line": 63},
+  {"name": "Cedar.Thm.is_sound_policy_slice_def_equiv", "kind": "theorem", "line": 69},
+  {"name": "Cedar.Thm.IsSoundPolicyBound", "kind": "def", "line": 93},
+  {"name": "Cedar.Thm.IsSoundBoundAnalysis", "kind": "def", "line": 103},
+  {"name": "Cedar.Thm.sound_policy_slice_is_equisatisfied", "kind": "theorem", "line": 106},
+  {"name": "Cedar.Thm.satisfiedPolicies_eq_for_sound_policy_slice", "kind": "theorem", "line": 129},
+  {"name": "Cedar.Thm.sound_policy_slice_is_equierror", "kind": "theorem", "line": 138},
+  {"name": "Cedar.Thm.errorPolicies_eq_for_sound_policy_slice", "kind": "theorem", "line": 157}
+ ],
+ "private": [],
+ "missing": [],
+ "unread": "Unnamed instances, the names an `alias ⟨…⟩` command gives, and the names Lean generates for a declaration (constructors, recursors, derived instances) are not read from the source, so they are not listed."
+}

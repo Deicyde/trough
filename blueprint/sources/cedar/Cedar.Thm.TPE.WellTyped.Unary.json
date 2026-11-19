@@ -1,0 +1,15 @@
+{
+ "schema": "trough-ledger/v1",
+ "library": "Cedar",
+ "repo": "cedar-policy/cedar-spec",
+ "rev": "326d93c24490c90607a3e257318e9c6a049c8116",
+ "module": "Cedar.Thm.TPE.WellTyped.Unary",
+ "file": "cedar-lean/Cedar/Thm/TPE/WellTyped/Unary.lean",
+ "public": [
+  {"name": "Cedar.Thm.try_decide_residual₁_is_bool", "kind": "theorem", "line": 36},
+  {"name": "Cedar.Thm.partial_eval_well_typed_unaryApp", "kind": "theorem", "line": 49}
+ ],
+ "private": [],
+ "missing": [],
+ "unread": "Unnamed instances, the names an `alias ⟨…⟩` command gives, and the names Lean generates for a declaration (constructors, recursors, derived instances) are not read from the source, so they are not listed."
+}

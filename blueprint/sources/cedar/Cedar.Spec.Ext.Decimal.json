@@ -1,0 +1,18 @@
+{
+ "schema": "trough-ledger/v1",
+ "library": "Cedar",
+ "repo": "cedar-policy/cedar-spec",
+ "rev": "326d93c24490c90607a3e257318e9c6a049c8116",
+ "module": "Cedar.Spec.Ext.Decimal",
+ "file": "cedar-lean/Cedar/Spec/Ext/Decimal.lean",
+ "public": [
+  {"name": "Cedar.Spec.Ext.DECIMAL_DIGITS", "kind": "abbrev", "line": 36},
+  {"name": "Cedar.Spec.Ext.Decimal", "kind": "abbrev", "line": 38},
+  {"name": "Cedar.Spec.Ext.Decimal.decimal?", "kind": "def", "line": 45},
+  {"name": "Cedar.Spec.Ext.Decimal.parse", "kind": "def", "line": 48},
+  {"name": "Cedar.Spec.Ext.Decimal.decimal", "kind": "abbrev", "line": 79}
+ ],
+ "private": [],
+ "missing": [],
+ "unread": "Unnamed instances, the names an `alias ⟨…⟩` command gives, and the names Lean generates for a declaration (constructors, recursors, derived instances) are not read from the source, so they are not listed."
+}

@@ -1,0 +1,17 @@
+{
+ "schema": "trough-ledger/v1",
+ "library": "Cedar",
+ "repo": "cedar-policy/cedar-spec",
+ "rev": "326d93c24490c90607a3e257318e9c6a049c8116",
+ "module": "Cedar.Thm.TPE.WellTyped.GetAttr",
+ "file": "cedar-lean/Cedar/Thm/TPE/WellTyped/GetAttr.lean",
+ "public": [
+  {"name": "Cedar.Thm.find_lifted_type", "kind": "theorem", "line": 34},
+  {"name": "Cedar.Thm.attrs_if_partial_attrs", "kind": "theorem", "line": 69},
+  {"name": "Cedar.Thm.entity_attr_well_typed", "kind": "theorem", "line": 93},
+  {"name": "Cedar.Thm.partial_eval_well_typed_getAttr", "kind": "theorem", "line": 159}
+ ],
+ "private": [],
+ "missing": [],
+ "unread": "Unnamed instances, the names an `alias ⟨…⟩` command gives, and the names Lean generates for a declaration (constructors, recursors, derived instances) are not read from the source, so they are not listed."
+}

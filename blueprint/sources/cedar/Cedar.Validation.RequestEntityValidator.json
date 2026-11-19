@@ -1,0 +1,31 @@
+{
+ "schema": "trough-ledger/v1",
+ "library": "Cedar",
+ "repo": "cedar-policy/cedar-spec",
+ "rev": "326d93c24490c90607a3e257318e9c6a049c8116",
+ "module": "Cedar.Validation.RequestEntityValidator",
+ "file": "cedar-lean/Cedar/Validation/RequestEntityValidator.lean",
+ "public": [
+  {"name": "Cedar.Validation.RequestValidationError", "kind": "inductive", "line": 33},
+  {"name": "Cedar.Validation.RequestValidationResult", "kind": "abbrev", "line": 36},
+  {"name": "Cedar.Validation.EntityValidationError", "kind": "inductive", "line": 38},
+  {"name": "Cedar.Validation.EntityValidationResult", "kind": "abbrev", "line": 41},
+  {"name": "Cedar.Validation.instanceOfBoolType", "kind": "def", "line": 43},
+  {"name": "Cedar.Validation.instanceOfEntityType", "kind": "def", "line": 50},
+  {"name": "Cedar.Validation.instanceOfExtType", "kind": "def", "line": 54},
+  {"name": "Cedar.Validation.requiredAttributePresent", "kind": "def", "line": 62},
+  {"name": "Cedar.Validation.instanceOfType", "kind": "def", "line": 67},
+  {"name": "Cedar.Validation.instanceOfRequestType", "kind": "def", "line": 93},
+  {"name": "Cedar.Validation.instanceOfSchema", "kind": "def", "line": 111},
+  {"name": "Cedar.Validation.requestMatchesEnvironment", "kind": "def", "line": 149},
+  {"name": "Cedar.Validation.validateRequest", "kind": "def", "line": 151},
+  {"name": "Cedar.Validation.entitiesMatchEnvironment", "kind": "def", "line": 156},
+  {"name": "Cedar.Validation.actionSchemaEntryToEntityData", "kind": "def", "line": 159},
+  {"name": "Cedar.Validation.validateEntities", "kind": "def", "line": 165},
+  {"name": "Cedar.Validation.entityValidationErrorToJson", "kind": "def", "line": 170},
+  {"name": "Cedar.Validation.requestValidationErrorToJson", "kind": "def", "line": 176}
+ ],
+ "private": [],
+ "missing": [],
+ "unread": "Unnamed instances, the names an `alias ⟨…⟩` command gives, and the names Lean generates for a declaration (constructors, recursors, derived instances) are not read from the source, so they are not listed."
+}

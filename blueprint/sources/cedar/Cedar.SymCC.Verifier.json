@@ -1,0 +1,28 @@
+{
+ "schema": "trough-ledger/v1",
+ "library": "Cedar",
+ "repo": "cedar-policy/cedar-spec",
+ "rev": "326d93c24490c90607a3e257318e9c6a049c8116",
+ "module": "Cedar.SymCC.Verifier",
+ "file": "cedar-lean/Cedar/SymCC/Verifier.lean",
+ "public": [
+  {"name": "Cedar.SymCC.Asserts", "kind": "abbrev", "line": 36},
+  {"name": "Cedar.SymCC.verifyEvaluate", "kind": "def", "line": 43},
+  {"name": "Cedar.SymCC.verifyEvaluatePair", "kind": "def", "line": 54},
+  {"name": "Cedar.SymCC.verifyIsAuthorized", "kind": "def", "line": 67},
+  {"name": "Cedar.SymCC.verifyNeverErrors", "kind": "def", "line": 78},
+  {"name": "Cedar.SymCC.verifyAlwaysMatches", "kind": "def", "line": 86},
+  {"name": "Cedar.SymCC.verifyNeverMatches", "kind": "def", "line": 95},
+  {"name": "Cedar.SymCC.verifyMatchesEquivalent", "kind": "def", "line": 103},
+  {"name": "Cedar.SymCC.verifyMatchesImplies", "kind": "def", "line": 115},
+  {"name": "Cedar.SymCC.verifyMatchesDisjoint", "kind": "def", "line": 128},
+  {"name": "Cedar.SymCC.verifyImplies", "kind": "def", "line": 142},
+  {"name": "Cedar.SymCC.verifyAlwaysAllows", "kind": "def", "line": 148},
+  {"name": "Cedar.SymCC.verifyAlwaysDenies", "kind": "def", "line": 174},
+  {"name": "Cedar.SymCC.verifyEquivalent", "kind": "def", "line": 181},
+  {"name": "Cedar.SymCC.verifyDisjoint", "kind": "def", "line": 190}
+ ],
+ "private": [],
+ "missing": [],
+ "unread": "Unnamed instances, the names an `alias ⟨…⟩` command gives, and the names Lean generates for a declaration (constructors, recursors, derived instances) are not read from the source, so they are not listed."
+}

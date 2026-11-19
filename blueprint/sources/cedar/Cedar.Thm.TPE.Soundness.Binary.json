@@ -1,0 +1,20 @@
+{
+ "schema": "trough-ledger/v1",
+ "library": "Cedar",
+ "repo": "cedar-policy/cedar-spec",
+ "rev": "326d93c24490c90607a3e257318e9c6a049c8116",
+ "module": "Cedar.Thm.TPE.Soundness.Binary",
+ "file": "cedar-lean/Cedar/Thm/TPE/Soundness/Binary.lean",
+ "public": [
+  {"name": "Cedar.Thm.has_tag_false_of_entity_type_tagless", "kind": "theorem", "line": 39},
+  {"name": "Cedar.Thm.eq_false_of_distinct_entity_types", "kind": "theorem", "line": 67},
+  {"name": "Cedar.Thm.mem_false_of_cannot_be_inₑ", "kind": "theorem", "line": 83},
+  {"name": "Cedar.Thm.mem_false_of_cannot_be_inₛ", "kind": "theorem", "line": 98},
+  {"name": "Cedar.Thm.tpe_inₑ_agrees", "kind": "theorem", "line": 117},
+  {"name": "Cedar.Thm.try_decide_residual₂_sound", "kind": "theorem", "line": 144},
+  {"name": "Cedar.Thm.partial_evaluate_is_sound_binary_app", "kind": "theorem", "line": 211}
+ ],
+ "private": [],
+ "missing": [],
+ "unread": "Unnamed instances, the names an `alias ⟨…⟩` command gives, and the names Lean generates for a declaration (constructors, recursors, derived instances) are not read from the source, so they are not listed."
+}

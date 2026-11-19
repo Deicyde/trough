@@ -1,0 +1,18 @@
+{
+ "schema": "trough-ledger/v1",
+ "library": "Cedar",
+ "repo": "cedar-policy/cedar-spec",
+ "rev": "326d93c24490c90607a3e257318e9c6a049c8116",
+ "module": "Cedar.Validation.Levels",
+ "file": "cedar-lean/Cedar/Validation/Levels.lean",
+ "public": [
+  {"name": "Cedar.Validation.TypedExpr.checkEntityAccessLevel", "kind": "def", "line": 57},
+  {"name": "Cedar.Validation.extHasAttrChainCost", "kind": "def", "line": 98},
+  {"name": "Cedar.Validation.extHasAttrFirstEntityPath?", "kind": "def", "line": 127},
+  {"name": "Cedar.Validation.TypedExpr.checkLevel", "kind": "def", "line": 148},
+  {"name": "Cedar.Validation.typecheckAtLevel", "kind": "def", "line": 200}
+ ],
+ "private": [],
+ "missing": [],
+ "unread": "Unnamed instances, the names an `alias ⟨…⟩` command gives, and the names Lean generates for a declaration (constructors, recursors, derived instances) are not read from the source, so they are not listed."
+}

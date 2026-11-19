@@ -1,0 +1,16 @@
+{
+ "schema": "trough-ledger/v1",
+ "library": "Cedar",
+ "repo": "cedar-policy/cedar-spec",
+ "rev": "326d93c24490c90607a3e257318e9c6a049c8116",
+ "module": "Cedar.Thm.SymCC.Compiler",
+ "file": "cedar-lean/Cedar/Thm/SymCC/Compiler.lean",
+ "public": [
+  {"name": "Cedar.Thm.compile_evaluate", "kind": "theorem", "line": 48},
+  {"name": "Cedar.Thm.compile_interpret", "kind": "theorem", "line": 112},
+  {"name": "Cedar.Thm.compile_bisimulation", "kind": "theorem", "line": 168}
+ ],
+ "private": [],
+ "missing": [],
+ "unread": "Unnamed instances, the names an `alias ⟨…⟩` command gives, and the names Lean generates for a declaration (constructors, recursors, derived instances) are not read from the source, so they are not listed."
+}

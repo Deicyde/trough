@@ -1,0 +1,24 @@
+{
+ "schema": "trough-ledger/v1",
+ "library": "Cedar",
+ "repo": "cedar-policy/cedar-spec",
+ "rev": "326d93c24490c90607a3e257318e9c6a049c8116",
+ "module": "Cedar.Thm.Validation.Slice.Reachable.Basic",
+ "file": "cedar-lean/Cedar/Thm/Validation/Slice/Reachable/Basic.lean",
+ "public": [
+  {"name": "Cedar.Thm.ReachableIn", "kind": "inductive", "line": 36},
+  {"name": "Cedar.Thm.Value.EuidViaPath", "kind": "inductive", "line": 47},
+  {"name": "Cedar.Thm.mem_sliceEUIDs_record", "kind": "theorem", "line": 55},
+  {"name": "Cedar.Thm.mem_sliceEUIDs_entityData", "kind": "theorem", "line": 63},
+  {"name": "Cedar.Thm.mem_sliceEUIDs_request", "kind": "theorem", "line": 69},
+  {"name": "Cedar.Thm.mem_sliceEUIDs_entityUID", "kind": "theorem", "line": 75},
+  {"name": "Cedar.Thm.in_val_then_val_slice", "kind": "theorem", "line": 80},
+  {"name": "Cedar.Thm.CheckedEvalEntityReachable", "kind": "def", "line": 98},
+  {"name": "Cedar.Thm.reachable_succ", "kind": "theorem", "line": 108},
+  {"name": "Cedar.Thm.entities_attrs_then_find?", "kind": "theorem", "line": 118},
+  {"name": "Cedar.Thm.entities_tags_then_find?", "kind": "theorem", "line": 127}
+ ],
+ "private": [],
+ "missing": [],
+ "unread": "Unnamed instances, the names an `alias ⟨…⟩` command gives, and the names Lean generates for a declaration (constructors, recursors, derived instances) are not read from the source, so they are not listed."
+}

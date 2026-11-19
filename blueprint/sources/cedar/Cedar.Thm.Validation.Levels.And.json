@@ -1,0 +1,14 @@
+{
+ "schema": "trough-ledger/v1",
+ "library": "Cedar",
+ "repo": "cedar-policy/cedar-spec",
+ "rev": "326d93c24490c90607a3e257318e9c6a049c8116",
+ "module": "Cedar.Thm.Validation.Levels.And",
+ "file": "cedar-lean/Cedar/Thm/Validation/Levels/And.lean",
+ "public": [
+  {"name": "Cedar.Thm.level_based_slicing_is_sound_and", "kind": "theorem", "line": 41}
+ ],
+ "private": [],
+ "missing": [],
+ "unread": "Unnamed instances, the names an `alias ⟨…⟩` command gives, and the names Lean generates for a declaration (constructors, recursors, derived instances) are not read from the source, so they are not listed."
+}

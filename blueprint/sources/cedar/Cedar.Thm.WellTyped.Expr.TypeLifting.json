@@ -1,0 +1,27 @@
+{
+ "schema": "trough-ledger/v1",
+ "library": "Cedar",
+ "repo": "cedar-policy/cedar-spec",
+ "rev": "326d93c24490c90607a3e257318e9c6a049c8116",
+ "module": "Cedar.Thm.WellTyped.Expr.TypeLifting",
+ "file": "cedar-lean/Cedar/Thm/WellTyped/Expr/TypeLifting.lean",
+ "public": [
+  {"name": "Cedar.Thm.type_of_after_lifted_is_lifted", "kind": "theorem", "line": 38},
+  {"name": "Cedar.Thm.type_lifting_preserves_expr", "kind": "theorem", "line": 43},
+  {"name": "Cedar.Thm.type_lifting_preserves_evaluation_results", "kind": "theorem", "line": 88},
+  {"name": "Cedar.Thm.Lifted", "kind": "inductive", "line": 93},
+  {"name": "Cedar.Thm.lifted_record_is_lifted", "kind": "theorem", "line": 120},
+  {"name": "Cedar.Thm.lifted_type_is_lifted", "kind": "theorem", "line": 133},
+  {"name": "Cedar.Thm.lifted_type_is_super_type", "kind": "theorem", "line": 174},
+  {"name": "Cedar.Thm.lifted_record_type_is_top", "kind": "theorem", "line": 245},
+  {"name": "Cedar.Thm.lifted_type_is_top", "kind": "theorem", "line": 279},
+  {"name": "Cedar.Thm.lifted_type_lub", "kind": "theorem", "line": 319},
+  {"name": "Cedar.Thm.type_lifting_preserves_instance_of_type", "kind": "theorem", "line": 331},
+  {"name": "Cedar.Thm.lift_bool_types_record_eq_map_on_values", "kind": "theorem", "line": 345},
+  {"name": "Cedar.Thm.lift_bool_types_record_eq", "kind": "theorem", "line": 350},
+  {"name": "Cedar.Thm.wf_type_iff_wf_liftBoolTypes", "kind": "theorem", "line": 355}
+ ],
+ "private": [],
+ "missing": [],
+ "unread": "Unnamed instances, the names an `alias ⟨…⟩` command gives, and the names Lean generates for a declaration (constructors, recursors, derived instances) are not read from the source, so they are not listed."
+}

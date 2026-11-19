@@ -1,0 +1,20 @@
+{
+ "schema": "trough-ledger/v1",
+ "library": "Cedar",
+ "repo": "cedar-policy/cedar-spec",
+ "rev": "326d93c24490c90607a3e257318e9c6a049c8116",
+ "module": "Cedar.Thm.TPE.ErrorFree",
+ "file": "cedar-lean/Cedar/Thm/TPE/ErrorFree.lean",
+ "public": [
+  {"name": "Cedar.Spec.BinaryOp.CanError", "kind": "inductive", "line": 23},
+  {"name": "Cedar.Spec.UnaryOp.CanError", "kind": "inductive", "line": 29},
+  {"name": "Cedar.Spec.Residual.ErrorFree", "kind": "inductive", "line": 32},
+  {"name": "Cedar.Thm.BinaryOp.can_error_spec", "kind": "theorem", "line": 52},
+  {"name": "Cedar.Thm.UnaryOp.can_error_spec", "kind": "theorem", "line": 63},
+  {"name": "Cedar.Thm.Residual.error_free_spec", "kind": "theorem", "line": 75},
+  {"name": "Cedar.Thm.error_free_evaluate_ok", "kind": "theorem", "line": 320}
+ ],
+ "private": [],
+ "missing": [],
+ "unread": "Unnamed instances, the names an `alias ⟨…⟩` command gives, and the names Lean generates for a declaration (constructors, recursors, derived instances) are not read from the source, so they are not listed."
+}

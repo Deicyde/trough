@@ -1,0 +1,21 @@
+{
+ "schema": "trough-ledger/v1",
+ "library": "Cedar",
+ "repo": "cedar-policy/cedar-spec",
+ "rev": "326d93c24490c90607a3e257318e9c6a049c8116",
+ "module": "Cedar.Thm.WellTyped.Residual.Definition",
+ "file": "cedar-lean/Cedar/Thm/WellTyped/Residual/Definition.lean",
+ "public": [
+  {"name": "Cedar.Spec.UnaryResidualWellTyped", "kind": "inductive", "line": 31},
+  {"name": "Cedar.Spec.BinaryResidualWellTyped", "kind": "inductive", "line": 48},
+  {"name": "Cedar.Spec.ExtResidualWellTyped", "kind": "inductive", "line": 124},
+  {"name": "Cedar.Thm.Residual.WellTyped", "kind": "inductive", "line": 212},
+  {"name": "Cedar.Thm.well_typed_bool", "kind": "theorem", "line": 292},
+  {"name": "Cedar.Thm.well_typed_int", "kind": "theorem", "line": 296},
+  {"name": "Cedar.Thm.well_typed_string", "kind": "theorem", "line": 300},
+  {"name": "Cedar.Thm.well_typed_entity", "kind": "theorem", "line": 304}
+ ],
+ "private": [],
+ "missing": [],
+ "unread": "Unnamed instances, the names an `alias ⟨…⟩` command gives, and the names Lean generates for a declaration (constructors, recursors, derived instances) are not read from the source, so they are not listed."
+}

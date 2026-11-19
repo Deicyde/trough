@@ -1,0 +1,17 @@
+{
+ "schema": "trough-ledger/v1",
+ "library": "Cedar",
+ "repo": "cedar-policy/cedar-spec",
+ "rev": "326d93c24490c90607a3e257318e9c6a049c8116",
+ "module": "Cedar.SymCC.Tags",
+ "file": "cedar-lean/Cedar/SymCC/Tags.lean",
+ "public": [
+  {"name": "Cedar.SymCC.SymTags", "kind": "structure", "line": 45},
+  {"name": "Cedar.SymCC.SymTags.hasTag", "kind": "def", "line": 49},
+  {"name": "Cedar.SymCC.SymTags.getTag!", "kind": "def", "line": 52},
+  {"name": "Cedar.SymCC.SymTags.getTag", "kind": "def", "line": 55}
+ ],
+ "private": [],
+ "missing": [],
+ "unread": "Unnamed instances, the names an `alias ⟨…⟩` command gives, and the names Lean generates for a declaration (constructors, recursors, derived instances) are not read from the source, so they are not listed."
+}

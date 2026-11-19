@@ -1,0 +1,32 @@
+{
+ "schema": "trough-ledger/v1",
+ "library": "Cedar",
+ "repo": "cedar-policy/cedar-spec",
+ "rev": "326d93c24490c90607a3e257318e9c6a049c8116",
+ "module": "Cedar.Data.List",
+ "file": "cedar-lean/Cedar/Data/List.lean",
+ "public": [
+  {"name": "List.insertCanonical", "kind": "def", "line": 34},
+  {"name": "List.canonicalize", "kind": "def", "line": 51},
+  {"name": "List.mergeCanonical", "kind": "def", "line": 59},
+  {"name": "List.sizeOf_snd_lt_sizeOf_list", "kind": "theorem", "line": 70},
+  {"name": "List.attach₂", "kind": "def", "line": 84},
+  {"name": "List.attach₃", "kind": "def", "line": 89},
+  {"name": "List.map₁", "kind": "def", "line": 98},
+  {"name": "List.map₂", "kind": "def", "line": 101},
+  {"name": "List.map₃", "kind": "def", "line": 104},
+  {"name": "List.mapM₁", "kind": "def", "line": 107},
+  {"name": "List.mapM₂", "kind": "def", "line": 111},
+  {"name": "List.mapM₃", "kind": "def", "line": 115},
+  {"name": "List.mapUnion", "kind": "def", "line": 126},
+  {"name": "List.mapUnion₁", "kind": "def", "line": 129},
+  {"name": "List.mapUnion₂", "kind": "def", "line": 133},
+  {"name": "List.mapUnion₃", "kind": "def", "line": 137},
+  {"name": "List.isSortedBy", "kind": "def", "line": 141},
+  {"name": "List.isSorted", "kind": "def", "line": 151},
+  {"name": "List.ternaryAny", "kind": "def", "line": 161}
+ ],
+ "private": [],
+ "missing": [],
+ "unread": "Unnamed instances, the names an `alias ⟨…⟩` command gives, and the names Lean generates for a declaration (constructors, recursors, derived instances) are not read from the source, so they are not listed."
+}

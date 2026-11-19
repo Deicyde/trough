@@ -1,0 +1,18 @@
+{
+ "schema": "trough-ledger/v1",
+ "library": "Cedar",
+ "repo": "cedar-policy/cedar-spec",
+ "rev": "326d93c24490c90607a3e257318e9c6a049c8116",
+ "module": "Cedar.SymCC.SatUnsat",
+ "file": "cedar-lean/Cedar/SymCC/SatUnsat.lean",
+ "public": [
+  {"name": "Cedar.SymCC.checkSatAsserts", "kind": "def", "line": 41},
+  {"name": "Cedar.SymCC.satAsserts?", "kind": "def", "line": 78},
+  {"name": "Cedar.SymCC.sat?", "kind": "def", "line": 103},
+  {"name": "Cedar.SymCC.checkUnsatAsserts", "kind": "def", "line": 115},
+  {"name": "Cedar.SymCC.checkUnsat", "kind": "def", "line": 136}
+ ],
+ "private": [],
+ "missing": [],
+ "unread": "Unnamed instances, the names an `alias ⟨…⟩` command gives, and the names Lean generates for a declaration (constructors, recursors, derived instances) are not read from the source, so they are not listed."
+}

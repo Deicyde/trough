@@ -1,0 +1,23 @@
+{
+ "schema": "trough-ledger/v1",
+ "library": "Cedar",
+ "repo": "cedar-policy/cedar-spec",
+ "rev": "326d93c24490c90607a3e257318e9c6a049c8116",
+ "module": "Cedar.SymCC.Symbolizer",
+ "file": "cedar-lean/Cedar/SymCC/Symbolizer.lean",
+ "public": [
+  {"name": "Cedar.Spec.Prim.symbolize", "kind": "def", "line": 32},
+  {"name": "Cedar.Spec.Value.symbolize?", "kind": "def", "line": 39},
+  {"name": "Cedar.Spec.Request.symbolize?", "kind": "def", "line": 79},
+  {"name": "Cedar.Spec.defaultEidOf", "kind": "def", "line": 91},
+  {"name": "Cedar.Spec.defaultLitWithDefaultEid", "kind": "def", "line": 95},
+  {"name": "Cedar.Spec.Entities.symbolizeAttrs?", "kind": "def", "line": 101},
+  {"name": "Cedar.Spec.Entities.symbolizeTags?", "kind": "def", "line": 131},
+  {"name": "Cedar.Spec.Entities.symbolizeAncs?", "kind": "def", "line": 185},
+  {"name": "Cedar.Spec.Entities.symbolize?", "kind": "def", "line": 221},
+  {"name": "Cedar.Spec.Env.symbolize?", "kind": "def", "line": 231}
+ ],
+ "private": [],
+ "missing": [],
+ "unread": "Unnamed instances, the names an `alias ⟨…⟩` command gives, and the names Lean generates for a declaration (constructors, recursors, derived instances) are not read from the source, so they are not listed."
+}

@@ -1,0 +1,17 @@
+{
+ "schema": "trough-ledger/v1",
+ "library": "Cedar",
+ "repo": "cedar-policy/cedar-spec",
+ "rev": "326d93c24490c90607a3e257318e9c6a049c8116",
+ "module": "Cedar.Thm.SymCC.Compiler.Set",
+ "file": "cedar-lean/Cedar/Thm/SymCC/Compiler/Set.lean",
+ "public": [
+  {"name": "Cedar.Thm.interpret_terms_wfls", "kind": "theorem", "line": 30},
+  {"name": "Cedar.Thm.pe_interpret_terms_of_type_option", "kind": "theorem", "line": 40},
+  {"name": "Cedar.Thm.compile_interpret_set", "kind": "theorem", "line": 100},
+  {"name": "Cedar.Thm.compile_evaluate_set", "kind": "theorem", "line": 202}
+ ],
+ "private": [],
+ "missing": [],
+ "unread": "Unnamed instances, the names an `alias ⟨…⟩` command gives, and the names Lean generates for a declaration (constructors, recursors, derived instances) are not read from the source, so they are not listed."
+}

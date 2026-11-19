@@ -1,0 +1,28 @@
+{
+ "schema": "trough-ledger/v1",
+ "library": "Cedar",
+ "repo": "cedar-policy/cedar-spec",
+ "rev": "326d93c24490c90607a3e257318e9c6a049c8116",
+ "module": "Cedar.TPE.Authorizer",
+ "file": "cedar-lean/Cedar/TPE/Authorizer.lean",
+ "public": [
+  {"name": "Cedar.Spec.Residual.isTrue", "kind": "def", "line": 27},
+  {"name": "Cedar.Spec.Residual.isFalse", "kind": "def", "line": 31},
+  {"name": "Cedar.TPE.ResidualPolicy", "kind": "structure", "line": 43},
+  {"name": "Cedar.TPE.ResidualPolicy.satisfied", "kind": "def", "line": 48},
+  {"name": "Cedar.TPE.ResidualPolicy.hasError", "kind": "def", "line": 51},
+  {"name": "Cedar.TPE.ResidualPolicy.isFalse", "kind": "def", "line": 54},
+  {"name": "Cedar.TPE.ResidualPolicy.isResidual", "kind": "def", "line": 57},
+  {"name": "Cedar.TPE.ResidualPolicy.erroredWithEffect", "kind": "def", "line": 60},
+  {"name": "Cedar.TPE.ResidualPolicy.falseWithEffect", "kind": "def", "line": 65},
+  {"name": "Cedar.TPE.ResidualPolicy.residualWithEffect", "kind": "def", "line": 70},
+  {"name": "Cedar.TPE.ResidualPolicy.satisfiedWithEffect", "kind": "def", "line": 75},
+  {"name": "Cedar.TPE.Response", "kind": "structure", "line": 80},
+  {"name": "Cedar.TPE.isAuthorizedFromResiduals", "kind": "def", "line": 97},
+  {"name": "Cedar.TPE.isAuthorized", "kind": "def", "line": 141},
+  {"name": "Cedar.TPE.Response.reauthorize", "kind": "def", "line": 156}
+ ],
+ "private": [],
+ "missing": [],
+ "unread": "Unnamed instances, the names an `alias ⟨…⟩` command gives, and the names Lean generates for a declaration (constructors, recursors, derived instances) are not read from the source, so they are not listed."
+}

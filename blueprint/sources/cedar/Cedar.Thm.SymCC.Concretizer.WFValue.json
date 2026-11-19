@@ -1,0 +1,23 @@
+{
+ "schema": "trough-ledger/v1",
+ "library": "Cedar",
+ "repo": "cedar-policy/cedar-spec",
+ "rev": "326d93c24490c90607a3e257318e9c6a049c8116",
+ "module": "Cedar.Thm.SymCC.Concretizer.WFValue",
+ "file": "cedar-lean/Cedar/Thm/SymCC/Concretizer/WFValue.lean",
+ "public": [
+  {"name": "Cedar.Thm.value_set_entityUIDs_def", "kind": "theorem", "line": 29},
+  {"name": "Cedar.Thm.value_record_entityUIDs_def", "kind": "theorem", "line": 35},
+  {"name": "Cedar.Thm.termPrim_entityUIDs_wf", "kind": "theorem", "line": 41},
+  {"name": "Cedar.Thm.term_entityUIDs_wf", "kind": "theorem", "line": 47},
+  {"name": "Cedar.Thm.value_ws_closed_implies_wf", "kind": "theorem", "line": 82},
+  {"name": "Cedar.Thm.term_prim_value?_some_implies_ws", "kind": "theorem", "line": 118},
+  {"name": "Cedar.Thm.term_set_value?_some_implies", "kind": "theorem", "line": 132},
+  {"name": "Cedar.Thm.term_set_value?_some_implies_ws", "kind": "theorem", "line": 140},
+  {"name": "Cedar.Thm.term_value?_some_implies_ws", "kind": "theorem", "line": 235},
+  {"name": "Cedar.Thm.term_value?_some_implies_eq_entityUIDs", "kind": "theorem", "line": 337}
+ ],
+ "private": [],
+ "missing": [],
+ "unread": "Unnamed instances, the names an `alias ⟨…⟩` command gives, and the names Lean generates for a declaration (constructors, recursors, derived instances) are not read from the source, so they are not listed."
+}

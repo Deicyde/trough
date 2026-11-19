@@ -1,0 +1,21 @@
+{
+ "schema": "trough-ledger/v1",
+ "library": "Cedar",
+ "repo": "cedar-policy/cedar-spec",
+ "rev": "326d93c24490c90607a3e257318e9c6a049c8116",
+ "module": "Cedar.Thm.SymCC.Compiler.Binary",
+ "file": "cedar-lean/Cedar/Thm/SymCC/Compiler/Binary.lean",
+ "public": [
+  {"name": "Cedar.Thm.interpret_compileInₑ", "kind": "theorem", "line": 74},
+  {"name": "Cedar.Thm.interpret_compileInₛ", "kind": "theorem", "line": 139},
+  {"name": "Cedar.Thm.interpret_hasTag", "kind": "theorem", "line": 160},
+  {"name": "Cedar.Thm.interpret_getTag", "kind": "theorem", "line": 174},
+  {"name": "Cedar.Thm.compile_interpret_binaryApp", "kind": "theorem", "line": 346},
+  {"name": "Cedar.Thm.same_entities_ancestors_none_of_type", "kind": "theorem", "line": 779},
+  {"name": "Cedar.Thm.same_entities_ancestors_some_of_type", "kind": "theorem", "line": 800},
+  {"name": "Cedar.Thm.compile_evaluate_binaryApp", "kind": "theorem", "line": 1278}
+ ],
+ "private": [],
+ "missing": [],
+ "unread": "Unnamed instances, the names an `alias ⟨…⟩` command gives, and the names Lean generates for a declaration (constructors, recursors, derived instances) are not read from the source, so they are not listed."
+}

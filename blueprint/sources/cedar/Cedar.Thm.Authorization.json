@@ -1,0 +1,32 @@
+{
+ "schema": "trough-ledger/v1",
+ "library": "Cedar",
+ "repo": "cedar-policy/cedar-spec",
+ "rev": "326d93c24490c90607a3e257318e9c6a049c8116",
+ "module": "Cedar.Thm.Authorization",
+ "file": "cedar-lean/Cedar/Thm/Authorization.lean",
+ "public": [
+  {"name": "Cedar.Thm.PolicyIdsUnique", "kind": "def", "line": 34},
+  {"name": "Cedar.Thm.HasSatisfiedEffect", "kind": "def", "line": 37},
+  {"name": "Cedar.Thm.satisfied_iff_satisfiedPolicies_non_empty", "kind": "theorem", "line": 43},
+  {"name": "Cedar.Thm.IsExplicitlyForbidden", "kind": "def", "line": 50},
+  {"name": "Cedar.Thm.explicitly_forbidden_iff_satisfying_forbid", "kind": "theorem", "line": 52},
+  {"name": "Cedar.Thm.IsExplicitlyPermitted", "kind": "def", "line": 60},
+  {"name": "Cedar.Thm.explicitly_permitted_iff_satisfying_permit", "kind": "theorem", "line": 62},
+  {"name": "Cedar.Thm.forbid_trumps_permit", "kind": "theorem", "line": 69},
+  {"name": "Cedar.Thm.allowed_only_if_explicitly_permitted", "kind": "theorem", "line": 80},
+  {"name": "Cedar.Thm.default_deny", "kind": "theorem", "line": 97},
+  {"name": "Cedar.Thm.allowed_iff_explicitly_permitted_and_not_denied", "kind": "theorem", "line": 114},
+  {"name": "Cedar.Thm.denied_iff_explicitly_denied_or_not_permitted", "kind": "theorem", "line": 133},
+  {"name": "Cedar.Thm.order_and_dup_independent", "kind": "theorem", "line": 158},
+  {"name": "Cedar.Thm.unchanged_allow_when_add_permit", "kind": "theorem", "line": 171},
+  {"name": "Cedar.Thm.unchanged_deny_when_add_forbid", "kind": "theorem", "line": 184},
+  {"name": "Cedar.Thm.determiningPolicies_of", "kind": "theorem", "line": 200},
+  {"name": "Cedar.Thm.unchanged_determining_when_add_policy_and_decision_unchanged", "kind": "theorem", "line": 215},
+  {"name": "Cedar.Thm.unchanged_erroring_when_add_policy", "kind": "theorem", "line": 237},
+  {"name": "Cedar.Thm.determining_erroring_disjoint_when_unique_ids", "kind": "theorem", "line": 254}
+ ],
+ "private": [],
+ "missing": [],
+ "unread": "Unnamed instances, the names an `alias ⟨…⟩` command gives, and the names Lean generates for a declaration (constructors, recursors, derived instances) are not read from the source, so they are not listed."
+}

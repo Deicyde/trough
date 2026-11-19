@@ -1,0 +1,19 @@
+{
+ "schema": "trough-ledger/v1",
+ "library": "Cedar",
+ "repo": "cedar-policy/cedar-spec",
+ "rev": "326d93c24490c90607a3e257318e9c6a049c8116",
+ "module": "Cedar.Thm.SymCC.Enforcer.Util",
+ "file": "cedar-lean/Cedar/Thm/SymCC/Enforcer/Util.lean",
+ "public": [
+  {"name": "Cedar.Thm.interpret_option_entity_term", "kind": "theorem", "line": 29},
+  {"name": "Cedar.Thm.compile_interpret_entity_implies_wf", "kind": "theorem", "line": 47},
+  {"name": "Cedar.Thm.wfl_entity", "kind": "theorem", "line": 63},
+  {"name": "Cedar.Thm.εs_ancestors_find?_implies_ancestors", "kind": "theorem", "line": 71},
+  {"name": "Cedar.Thm.εs_ancestors_find?_implies_ancestorsOfType", "kind": "theorem", "line": 79},
+  {"name": "Cedar.Thm.wf_term_interpret_option_entity_implies_wf_typeOf", "kind": "theorem", "line": 90}
+ ],
+ "private": [],
+ "missing": [],
+ "unread": "Unnamed instances, the names an `alias ⟨…⟩` command gives, and the names Lean generates for a declaration (constructors, recursors, derived instances) are not read from the source, so they are not listed."
+}

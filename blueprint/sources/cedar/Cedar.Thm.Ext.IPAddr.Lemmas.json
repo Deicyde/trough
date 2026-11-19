@@ -1,0 +1,32 @@
+{
+ "schema": "trough-ledger/v1",
+ "library": "Cedar",
+ "repo": "cedar-policy/cedar-spec",
+ "rev": "326d93c24490c90607a3e257318e9c6a049c8116",
+ "module": "Cedar.Thm.Ext.IPAddr.Lemmas",
+ "file": "cedar-lean/Cedar/Thm/Ext/IPAddr/Lemmas.lean",
+ "public": [
+  {"name": "Cedar.Thm.IPAddr.splitDoubleColonModel", "kind": "def", "line": 693},
+  {"name": "Cedar.Thm.IPAddr.splitOn_doubleColon_eq", "kind": "theorem", "line": 914},
+  {"name": "Cedar.Thm.IPAddr.isWfV4_iff_exists_value", "kind": "theorem", "line": 1402},
+  {"name": "Cedar.Thm.IPAddr.isWfV6_iff_exists_value", "kind": "theorem", "line": 1411}
+ ],
+ "private": [
+  {"name": "Cedar.Thm.IPAddr.parseNumV4_eq_some", "kind": "theorem", "line": 56},
+  {"name": "Cedar.Thm.IPAddr.parseNumV4_isSome_wf", "kind": "theorem", "line": 75},
+  {"name": "Cedar.Thm.IPAddr.parseNumV6_eq_some", "kind": "theorem", "line": 141},
+  {"name": "Cedar.Thm.IPAddr.parseNumV6_isSome_wf", "kind": "theorem", "line": 161},
+  {"name": "Cedar.Thm.IPAddr.parsePrefixNat_eq_some", "kind": "theorem", "line": 176},
+  {"name": "Cedar.Thm.IPAddr.parseSegsV4_asString", "kind": "theorem", "line": 319},
+  {"name": "Cedar.Thm.IPAddr.parseIPv4Net_eq_some", "kind": "theorem", "line": 399},
+  {"name": "Cedar.Thm.IPAddr.parseIPv4Net_isSome_wf", "kind": "theorem", "line": 431},
+  {"name": "Cedar.Thm.IPAddr.parseSegsV6_asString", "kind": "theorem", "line": 1083},
+  {"name": "Cedar.Thm.IPAddr.parseIPv6Net_eq_some", "kind": "theorem", "line": 1295},
+  {"name": "Cedar.Thm.IPAddr.parseIPv6Net_isSome_wf", "kind": "theorem", "line": 1326},
+  {"name": "Cedar.Thm.IPAddr.parseIPv4Net_none_of_isWfV6", "kind": "theorem", "line": 1368},
+  {"name": "Cedar.Thm.IPAddr.parse_toString_v4", "kind": "theorem", "line": 1537},
+  {"name": "Cedar.Thm.IPAddr.parse_toString_v6", "kind": "theorem", "line": 1765}
+ ],
+ "missing": [],
+ "unread": "Unnamed instances, the names an `alias ⟨…⟩` command gives, and the names Lean generates for a declaration (constructors, recursors, derived instances) are not read from the source, so they are not listed."
+}

@@ -1,0 +1,43 @@
+{
+ "schema": "trough-ledger/v1",
+ "library": "Cedar",
+ "repo": "cedar-policy/cedar-spec",
+ "rev": "326d93c24490c90607a3e257318e9c6a049c8116",
+ "module": "Cedar.Thm.Data.LT",
+ "file": "cedar-lean/Cedar/Thm/Data/LT.lean",
+ "public": [
+  {"name": "Cedar.Thm.IPNetPrefix.strictLT", "kind": "instance", "line": 39},
+  {"name": "Cedar.Thm.CIDR.strictLT", "kind": "instance", "line": 66},
+  {"name": "Cedar.Thm.IPNet.strictLT", "kind": "instance", "line": 106},
+  {"name": "Cedar.Thm.Datetime.strictLT", "kind": "instance", "line": 131},
+  {"name": "Cedar.Thm.Duration.strictLT", "kind": "instance", "line": 152},
+  {"name": "Cedar.Thm.Ext.strictLT", "kind": "instance", "line": 173},
+  {"name": "Cedar.Thm.Name.strictLT", "kind": "instance", "line": 237},
+  {"name": "Cedar.Thm.EntityUID.strictLT", "kind": "instance", "line": 314},
+  {"name": "Cedar.Thm.Prim.strictLT", "kind": "instance", "line": 351},
+  {"name": "Cedar.Thm.Value.strictLT", "kind": "instance", "line": 622}
+ ],
+ "private": [
+  {"name": "Cedar.Thm.EntityUID.lt_asymm", "kind": "theorem", "line": 259},
+  {"name": "Cedar.Thm.EntityUID.lt_trans", "kind": "theorem", "line": 277},
+  {"name": "Cedar.Thm.EntityUID.lt_conn", "kind": "theorem", "line": 297},
+  {"name": "Cedar.Thm.Prim.lt_asymm", "kind": "theorem", "line": 321},
+  {"name": "Cedar.Thm.Prim.lt_trans", "kind": "theorem", "line": 331},
+  {"name": "Cedar.Thm.Prim.lt_conn", "kind": "theorem", "line": 341},
+  {"name": "Cedar.Thm.Value.lt_irrefl", "kind": "theorem", "line": 359},
+  {"name": "Cedar.Thm.Values.lt_irrefl", "kind": "theorem", "line": 376},
+  {"name": "Cedar.Thm.ValueAttrs.lt_irrefl", "kind": "theorem", "line": 388},
+  {"name": "Cedar.Thm.Value.lt_not_eq", "kind": "theorem", "line": 404},
+  {"name": "Cedar.Thm.Value.lt_asymm", "kind": "theorem", "line": 414},
+  {"name": "Cedar.Thm.Values.lt_asym", "kind": "theorem", "line": 433},
+  {"name": "Cedar.Thm.ValueAttrs.lt_asym", "kind": "theorem", "line": 448},
+  {"name": "Cedar.Thm.Value.lt_trans", "kind": "theorem", "line": 485},
+  {"name": "Cedar.Thm.Values.lt_trans", "kind": "theorem", "line": 503},
+  {"name": "Cedar.Thm.ValueAttrs.lt_trans", "kind": "theorem", "line": 522},
+  {"name": "Cedar.Thm.Value.lt_conn", "kind": "theorem", "line": 559},
+  {"name": "Cedar.Thm.Values.lt_conn", "kind": "theorem", "line": 577},
+  {"name": "Cedar.Thm.ValueAttrs.lt_conn", "kind": "theorem", "line": 594}
+ ],
+ "missing": [],
+ "unread": "Unnamed instances, the names an `alias ⟨…⟩` command gives, and the names Lean generates for a declaration (constructors, recursors, derived instances) are not read from the source, so they are not listed."
+}

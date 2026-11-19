@@ -1,0 +1,26 @@
+{
+ "schema": "trough-ledger/v1",
+ "library": "Cedar",
+ "repo": "cedar-policy/cedar-spec",
+ "rev": "326d93c24490c90607a3e257318e9c6a049c8116",
+ "module": "Cedar.Thm.Authorization.Evaluator",
+ "file": "cedar-lean/Cedar/Thm/Authorization/Evaluator.lean",
+ "public": [
+  {"name": "Cedar.Thm.producesBool", "kind": "def", "line": 40},
+  {"name": "Cedar.Thm.producesNonBool", "kind": "def", "line": 47},
+  {"name": "Cedar.Thm.and_bool_operands_is_boolean_and", "kind": "theorem", "line": 53},
+  {"name": "Cedar.Thm.left_false_implies_and_false", "kind": "theorem", "line": 68},
+  {"name": "Cedar.Thm.left_bool_right_false_implies_and_false", "kind": "theorem", "line": 75},
+  {"name": "Cedar.Thm.and_true_implies_left_true", "kind": "theorem", "line": 87},
+  {"name": "Cedar.Thm.and_true_implies_right_true", "kind": "theorem", "line": 108},
+  {"name": "Cedar.Thm.ways_and_can_error", "kind": "theorem", "line": 138},
+  {"name": "Cedar.Thm.and_produces_bool_or_error", "kind": "theorem", "line": 180},
+  {"name": "Cedar.Thm.policy_produces_bool_or_error", "kind": "theorem", "line": 215},
+  {"name": "Cedar.Thm.record_produces_record_value", "kind": "theorem", "line": 227},
+  {"name": "Cedar.Thm.record_value_contains_evaluated_attrs", "kind": "theorem", "line": 241},
+  {"name": "Cedar.Thm.mapM'_asEntityUID_eq_entities", "kind": "theorem", "line": 276}
+ ],
+ "private": [],
+ "missing": [],
+ "unread": "Unnamed instances, the names an `alias ⟨…⟩` command gives, and the names Lean generates for a declaration (constructors, recursors, derived instances) are not read from the source, so they are not listed."
+}

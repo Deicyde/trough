@@ -1,0 +1,18 @@
+{
+ "schema": "trough-ledger/v1",
+ "library": "Cedar",
+ "repo": "cedar-policy/cedar-spec",
+ "rev": "326d93c24490c90607a3e257318e9c6a049c8116",
+ "module": "Cedar.Spec.Ext",
+ "file": "cedar-lean/Cedar/Spec/Ext.lean",
+ "public": [
+  {"name": "Cedar.Spec.IPAddr", "kind": "abbrev", "line": 29},
+  {"name": "Cedar.Spec.Duration", "kind": "abbrev", "line": 30},
+  {"name": "Cedar.Spec.Ext", "kind": "inductive", "line": 32},
+  {"name": "Cedar.Spec.Ext.lt", "kind": "def", "line": 39},
+  {"name": "Cedar.Spec.Ext.decLt", "kind": "instance", "line": 57}
+ ],
+ "private": [],
+ "missing": [],
+ "unread": "Unnamed instances, the names an `alias ⟨…⟩` command gives, and the names Lean generates for a declaration (constructors, recursors, derived instances) are not read from the source, so they are not listed."
+}

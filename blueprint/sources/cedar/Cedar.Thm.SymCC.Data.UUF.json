@@ -1,0 +1,20 @@
+{
+ "schema": "trough-ledger/v1",
+ "library": "Cedar",
+ "repo": "cedar-policy/cedar-spec",
+ "rev": "326d93c24490c90607a3e257318e9c6a049c8116",
+ "module": "Cedar.Thm.SymCC.Data.UUF",
+ "file": "cedar-lean/Cedar/Thm/SymCC/Data/UUF.lean",
+ "public": [
+  {"name": "Cedar.Thm.prefix_ne_at_index", "kind": "theorem", "line": 27},
+  {"name": "Cedar.Thm.uuf_attrs_ancs_no_confusion", "kind": "theorem", "line": 54},
+  {"name": "Cedar.Thm.uuf_attrs_tag_keys_no_confusion", "kind": "theorem", "line": 61},
+  {"name": "Cedar.Thm.uuf_attrs_tag_vals_no_confusion", "kind": "theorem", "line": 68},
+  {"name": "Cedar.Thm.uuf_tag_vals_tag_keys_no_confusion", "kind": "theorem", "line": 75},
+  {"name": "Cedar.Thm.uuf_tag_keys_ancs_no_confusion", "kind": "theorem", "line": 82},
+  {"name": "Cedar.Thm.uuf_tag_vals_ancs_no_confusion", "kind": "theorem", "line": 89}
+ ],
+ "private": [],
+ "missing": [],
+ "unread": "Unnamed instances, the names an `alias ⟨…⟩` command gives, and the names Lean generates for a declaration (constructors, recursors, derived instances) are not read from the source, so they are not listed."
+}

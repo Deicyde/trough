@@ -1,0 +1,25 @@
+{
+ "schema": "trough-ledger/v1",
+ "library": "Cedar",
+ "repo": "cedar-policy/cedar-spec",
+ "rev": "326d93c24490c90607a3e257318e9c6a049c8116",
+ "module": "Cedar.Thm.Validation.Typechecker.UnaryApp",
+ "file": "cedar-lean/Cedar/Thm/Validation/Typechecker/UnaryApp.lean",
+ "public": [
+  {"name": "Cedar.Thm.type_of_unary_inversion", "kind": "theorem", "line": 35},
+  {"name": "Cedar.Thm.type_of_not_inversion", "kind": "theorem", "line": 62},
+  {"name": "Cedar.Thm.type_of_not_is_sound", "kind": "theorem", "line": 85},
+  {"name": "Cedar.Thm.type_of_neg_inversion", "kind": "theorem", "line": 124},
+  {"name": "Cedar.Thm.type_of_neg_is_sound", "kind": "theorem", "line": 141},
+  {"name": "Cedar.Thm.type_of_isEmpty_inversion", "kind": "theorem", "line": 173},
+  {"name": "Cedar.Thm.type_of_isEmpty_is_sound", "kind": "theorem", "line": 190},
+  {"name": "Cedar.Thm.type_of_like_inversion", "kind": "theorem", "line": 216},
+  {"name": "Cedar.Thm.type_of_like_is_sound", "kind": "theorem", "line": 233},
+  {"name": "Cedar.Thm.type_of_is_inversion", "kind": "theorem", "line": 259},
+  {"name": "Cedar.Thm.type_of_is_is_sound", "kind": "theorem", "line": 282},
+  {"name": "Cedar.Thm.type_of_unaryApp_is_sound", "kind": "theorem", "line": 311}
+ ],
+ "private": [],
+ "missing": [],
+ "unread": "Unnamed instances, the names an `alias ⟨…⟩` command gives, and the names Lean generates for a declaration (constructors, recursors, derived instances) are not read from the source, so they are not listed."
+}

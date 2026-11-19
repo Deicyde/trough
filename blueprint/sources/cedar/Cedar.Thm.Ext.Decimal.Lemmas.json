@@ -1,0 +1,26 @@
+{
+ "schema": "trough-ledger/v1",
+ "library": "Cedar",
+ "repo": "cedar-policy/cedar-spec",
+ "rev": "326d93c24490c90607a3e257318e9c6a049c8116",
+ "module": "Cedar.Thm.Ext.Decimal.Lemmas",
+ "file": "cedar-lean/Cedar/Thm/Ext/Decimal/Lemmas.lean",
+ "public": [
+  {"name": "Cedar.Thm.Decimal.isDecimalValue_unique", "kind": "theorem", "line": 278},
+  {"name": "Cedar.Thm.Decimal.isDecimalValue_toString", "kind": "theorem", "line": 514},
+  {"name": "Cedar.Thm.Decimal.toString_isWfDecimal", "kind": "theorem", "line": 575}
+ ],
+ "private": [
+  {"name": "Cedar.Thm.Decimal.no_underscore_of_sign_nat", "kind": "theorem", "line": 54},
+  {"name": "Cedar.Thm.Decimal.toInt?'_isSome_of_sign_nat", "kind": "theorem", "line": 65},
+  {"name": "Cedar.Thm.Decimal.sign_nat_of_toInt?'_isSome", "kind": "theorem", "line": 79},
+  {"name": "Cedar.Thm.Decimal.ne_dash_of_sign_nat", "kind": "theorem", "line": 102},
+  {"name": "Cedar.Thm.Decimal.no_dot_of_isDigits", "kind": "theorem", "line": 122},
+  {"name": "Cedar.Thm.Decimal.no_dot_of_sign_nat", "kind": "theorem", "line": 130},
+  {"name": "Cedar.Thm.Decimal.splitToList_of_isWfDecimal", "kind": "theorem", "line": 145},
+  {"name": "Cedar.Thm.Decimal.parser_value_eq_value", "kind": "theorem", "line": 204},
+  {"name": "Cedar.Thm.Decimal.parse_eq_decimal?_of_isDecimalValue", "kind": "theorem", "line": 237}
+ ],
+ "missing": [],
+ "unread": "Unnamed instances, the names an `alias ⟨…⟩` command gives, and the names Lean generates for a declaration (constructors, recursors, derived instances) are not read from the source, so they are not listed."
+}

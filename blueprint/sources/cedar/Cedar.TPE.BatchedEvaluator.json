@@ -1,0 +1,20 @@
+{
+ "schema": "trough-ledger/v1",
+ "library": "Cedar",
+ "repo": "cedar-policy/cedar-spec",
+ "rev": "326d93c24490c90607a3e257318e9c6a049c8116",
+ "module": "Cedar.TPE.BatchedEvaluator",
+ "file": "cedar-lean/Cedar/TPE/BatchedEvaluator.lean",
+ "public": [
+  {"name": "Cedar.TPE.EntityLoader", "kind": "abbrev", "line": 38},
+  {"name": "Cedar.TPE.batchedEvaluateLoop", "kind": "def", "line": 46},
+  {"name": "Cedar.TPE.actionEntities", "kind": "def", "line": 63},
+  {"name": "Cedar.TPE.batchedEvaluate", "kind": "def", "line": 73},
+  {"name": "Cedar.TPE.batchedAuthorizeLoop", "kind": "def", "line": 87},
+  {"name": "Cedar.TPE.batchedAuthorize", "kind": "def", "line": 112},
+  {"name": "Cedar.TPE.entityLoaderFor", "kind": "def", "line": 131}
+ ],
+ "private": [],
+ "missing": [],
+ "unread": "Unnamed instances, the names an `alias ⟨…⟩` command gives, and the names Lean generates for a declaration (constructors, recursors, derived instances) are not read from the source, so they are not listed."
+}

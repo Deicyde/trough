@@ -1,0 +1,24 @@
+{
+ "schema": "trough-ledger/v1",
+ "library": "Cedar",
+ "repo": "cedar-policy/cedar-spec",
+ "rev": "326d93c24490c90607a3e257318e9c6a049c8116",
+ "module": "Cedar.Thm.SymCC.Term.Interpret.WF",
+ "file": "cedar-lean/Cedar/Thm/SymCC/Term/Interpret/WF.lean",
+ "public": [
+  {"name": "Cedar.Thm.InterpretTermWF", "kind": "def", "line": 41},
+  {"name": "Cedar.Thm.interpret_term_prim_wf", "kind": "theorem", "line": 45},
+  {"name": "Cedar.Thm.interpret_term_var_wf", "kind": "theorem", "line": 51},
+  {"name": "Cedar.Thm.interpret_term_none_wf", "kind": "theorem", "line": 62},
+  {"name": "Cedar.Thm.interpret_term_some_wf", "kind": "theorem", "line": 68},
+  {"name": "Cedar.Thm.interpret_term_set_wf", "kind": "theorem", "line": 75},
+  {"name": "Cedar.Thm.interpret_term_record_wf", "kind": "theorem", "line": 97},
+  {"name": "Cedar.Thm.interpret_term_app_wf", "kind": "theorem", "line": 479},
+  {"name": "Cedar.Thm.interpret_term_wf", "kind": "theorem", "line": 531},
+  {"name": "Cedar.Thm.interpret_term_isEntityType", "kind": "theorem", "line": 568},
+  {"name": "Cedar.Thm.interpret_term_isRecordType", "kind": "theorem", "line": 574}
+ ],
+ "private": [],
+ "missing": [],
+ "unread": "Unnamed instances, the names an `alias ⟨…⟩` command gives, and the names Lean generates for a declaration (constructors, recursors, derived instances) are not read from the source, so they are not listed."
+}

@@ -1,0 +1,21 @@
+{
+ "schema": "trough-ledger/v1",
+ "library": "Cedar",
+ "repo": "cedar-policy/cedar-spec",
+ "rev": "326d93c24490c90607a3e257318e9c6a049c8116",
+ "module": "Cedar.Thm.TPE",
+ "file": "cedar-lean/Cedar/Thm/TPE.lean",
+ "public": [
+  {"name": "Cedar.Thm.reauthorize_is_sound", "kind": "theorem", "line": 51},
+  {"name": "Cedar.Thm.partial_authorize_decision_is_sound", "kind": "theorem", "line": 79},
+  {"name": "Cedar.Thm.partial_re_authorize_decision_eq", "kind": "theorem", "line": 102},
+  {"name": "Cedar.Thm.partial_authorize_erroring_policies_is_sound", "kind": "theorem", "line": 123},
+  {"name": "Cedar.Thm.partial_authorize_allow_determining_policies_is_sound", "kind": "theorem", "line": 148},
+  {"name": "Cedar.Thm.partial_authorize_satisfied_permits_not_determining_if_deny", "kind": "theorem", "line": 178},
+  {"name": "Cedar.Thm.partial_authorize_satisfied_forbid_is_determining", "kind": "theorem", "line": 215},
+  {"name": "Cedar.Thm.partial_authorize_no_satisfied_forbids_if_allow", "kind": "theorem", "line": 265}
+ ],
+ "private": [],
+ "missing": [],
+ "unread": "Unnamed instances, the names an `alias ⟨…⟩` command gives, and the names Lean generates for a declaration (constructors, recursors, derived instances) are not read from the source, so they are not listed."
+}

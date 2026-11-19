@@ -1,0 +1,33 @@
+{
+ "schema": "trough-ledger/v1",
+ "library": "Cedar",
+ "repo": "cedar-policy/cedar-spec",
+ "rev": "326d93c24490c90607a3e257318e9c6a049c8116",
+ "module": "Cedar.Spec.Template",
+ "file": "cedar-lean/Cedar/Spec/Template.lean",
+ "public": [
+  {"name": "Cedar.Spec.SlotID", "kind": "abbrev", "line": 34},
+  {"name": "Cedar.Spec.EntityUIDOrSlot", "kind": "inductive", "line": 36},
+  {"name": "Cedar.Spec.ScopeTemplate", "kind": "inductive", "line": 41},
+  {"name": "Cedar.Spec.PrincipalScopeTemplate", "kind": "inductive", "line": 49},
+  {"name": "Cedar.Spec.ResourceScopeTemplate", "kind": "inductive", "line": 53},
+  {"name": "Cedar.Spec.TemplateID", "kind": "abbrev", "line": 57},
+  {"name": "Cedar.Spec.Template", "kind": "structure", "line": 59},
+  {"name": "Cedar.Spec.Templates", "kind": "abbrev", "line": 67},
+  {"name": "Cedar.Spec.SlotEnv", "kind": "abbrev", "line": 69},
+  {"name": "Cedar.Spec.SlotEnv.empty", "kind": "def", "line": 71},
+  {"name": "Cedar.Spec.TemplateLinkedPolicy", "kind": "structure", "line": 73},
+  {"name": "Cedar.Spec.TemplateLinkedPolicies", "kind": "abbrev", "line": 81},
+  {"name": "Cedar.Spec.Template.link?", "kind": "def", "line": 110},
+  {"name": "Cedar.Spec.link?", "kind": "def", "line": 126}
+ ],
+ "private": [
+  {"name": "Cedar.Spec.EntityUIDOrSlot.link?", "kind": "def", "line": 83},
+  {"name": "Cedar.Spec.ScopeTemplate.link?", "kind": "def", "line": 87},
+  {"name": "Cedar.Spec.PrincipalScopeTemplate.link?", "kind": "def", "line": 100},
+  {"name": "Cedar.Spec.ResourceScopeTemplate.link?", "kind": "def", "line": 105},
+  {"name": "Cedar.Spec.linkPolicy?", "kind": "def", "line": 122}
+ ],
+ "missing": [],
+ "unread": "Unnamed instances, the names an `alias ⟨…⟩` command gives, and the names Lean generates for a declaration (constructors, recursors, derived instances) are not read from the source, so they are not listed."
+}

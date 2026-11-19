@@ -1,0 +1,17 @@
+{
+ "schema": "trough-ledger/v1",
+ "library": "Cedar",
+ "repo": "cedar-policy/cedar-spec",
+ "rev": "326d93c24490c90607a3e257318e9c6a049c8116",
+ "module": "Cedar.Thm.SymCC.Verifier.VerifyEvaluateQueries",
+ "file": "cedar-lean/Cedar/Thm/SymCC/Verifier/VerifyEvaluateQueries.lean",
+ "public": [
+  {"name": "Cedar.Thm.value_type_bool_implies_bool", "kind": "theorem", "line": 27},
+  {"name": "Cedar.Thm.verifyNeverErrors_wbeq", "kind": "theorem", "line": 43},
+  {"name": "Cedar.Thm.verifyAlwaysMatches_wbeq", "kind": "theorem", "line": 68},
+  {"name": "Cedar.Thm.verifyNeverMatches_wbeq", "kind": "theorem", "line": 114}
+ ],
+ "private": [],
+ "missing": [],
+ "unread": "Unnamed instances, the names an `alias ⟨…⟩` command gives, and the names Lean generates for a declaration (constructors, recursors, derived instances) are not read from the source, so they are not listed."
+}

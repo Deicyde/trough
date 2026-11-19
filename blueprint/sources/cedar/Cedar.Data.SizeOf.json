@@ -1,0 +1,23 @@
+{
+ "schema": "trough-ledger/v1",
+ "library": "Cedar",
+ "repo": "cedar-policy/cedar-spec",
+ "rev": "326d93c24490c90607a3e257318e9c6a049c8116",
+ "module": "Cedar.Data.SizeOf",
+ "file": "cedar-lean/Cedar/Data/SizeOf.lean",
+ "public": [
+  {"name": "Cedar.Data.List.sizeOf_attach₂", "kind": "theorem", "line": 34},
+  {"name": "Cedar.Data.List.sizeOf_attach₃", "kind": "theorem", "line": 43},
+  {"name": "Cedar.Data.Map.sizeOf_lt_of_value", "kind": "theorem", "line": 58},
+  {"name": "Cedar.Data.Map.sizeOf_lt_of_find?", "kind": "theorem", "line": 72},
+  {"name": "Cedar.Data.Map.sizeOf_lt_of_toList", "kind": "theorem", "line": 85},
+  {"name": "Cedar.Data.Map.sizeOf_lt_of_values", "kind": "theorem", "line": 93},
+  {"name": "Cedar.Data.Map.sizeOf_lt_of_tl", "kind": "theorem", "line": 101},
+  {"name": "Cedar.Data.Set.sizeOf_lt_of_mem", "kind": "theorem", "line": 117},
+  {"name": "Cedar.Data.Set.sizeOf_lt_of_elts", "kind": "theorem", "line": 128},
+  {"name": "Cedar.Data.Set.sizeOf_mk", "kind": "theorem", "line": 135}
+ ],
+ "private": [],
+ "missing": [],
+ "unread": "Unnamed instances, the names an `alias ⟨…⟩` command gives, and the names Lean generates for a declaration (constructors, recursors, derived instances) are not read from the source, so they are not listed."
+}

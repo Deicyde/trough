@@ -1,0 +1,36 @@
+{
+ "schema": "trough-ledger/v1",
+ "library": "Cedar",
+ "repo": "cedar-policy/cedar-spec",
+ "rev": "326d93c24490c90607a3e257318e9c6a049c8116",
+ "module": "Cedar.Data.Int64",
+ "file": "cedar-lean/Cedar/Data/Int64.lean",
+ "public": [
+  {"name": "Int64.MIN", "kind": "def", "line": 29},
+  {"name": "Int64.MAX", "kind": "def", "line": 31},
+  {"name": "Int64.ofIntChecked", "kind": "def", "line": 36},
+  {"name": "Int64.ofInt?", "kind": "def", "line": 39},
+  {"name": "Int64.ofInt?_some_iff", "kind": "theorem", "line": 46},
+  {"name": "Int64.ofInt?_none_iff", "kind": "theorem", "line": 51},
+  {"name": "Int64.add?", "kind": "def", "line": 55},
+  {"name": "Int64.sub?", "kind": "def", "line": 57},
+  {"name": "Int64.mul?", "kind": "def", "line": 59},
+  {"name": "Int64.neg?", "kind": "def", "line": 61},
+  {"name": "Int64.natAbs", "kind": "def", "line": 63},
+  {"name": "Int64.smod", "kind": "def", "line": 70},
+  {"name": "Int64.smod_result_nonneg", "kind": "theorem", "line": 76},
+  {"name": "Int64.toInt_smod", "kind": "theorem", "line": 86},
+  {"name": "Int64.ofInt?_toInt", "kind": "theorem", "line": 89},
+  {"name": "Int64.ofInt?_some_toInt", "kind": "theorem", "line": 101},
+  {"name": "Int64.toInt_nonneg_of_ge_zero", "kind": "theorem", "line": 111},
+  {"name": "Int64.toInt_neg_of_not_ge_zero", "kind": "theorem", "line": 115},
+  {"name": "Int64.lt_def_toInt", "kind": "theorem", "line": 131},
+  {"name": "Int64.le_def_toInt", "kind": "theorem", "line": 134},
+  {"name": "Int64.strictLT", "kind": "instance", "line": 139}
+ ],
+ "private": [
+  {"name": "Int64.ext_iff", "kind": "theorem", "line": 123}
+ ],
+ "missing": [],
+ "unread": "Unnamed instances, the names an `alias ⟨…⟩` command gives, and the names Lean generates for a declaration (constructors, recursors, derived instances) are not read from the source, so they are not listed."
+}

@@ -1,0 +1,22 @@
+{
+ "schema": "trough-ledger/v1",
+ "library": "Cedar",
+ "repo": "cedar-policy/cedar-spec",
+ "rev": "326d93c24490c90607a3e257318e9c6a049c8116",
+ "module": "Cedar.Thm.SymCC.Interpretation",
+ "file": "cedar-lean/Cedar/Thm/SymCC/Interpretation.lean",
+ "public": [
+  {"name": "Cedar.Thm.wf_interpretation_implies_wfl_var", "kind": "theorem", "line": 34},
+  {"name": "Cedar.Thm.wf_interpretation_implies_wf_var", "kind": "theorem", "line": 40},
+  {"name": "Cedar.Thm.wf_interpretation_implies_typeOf_var", "kind": "theorem", "line": 46},
+  {"name": "Cedar.Thm.wf_interpretation_implies_wf_udf", "kind": "theorem", "line": 52},
+  {"name": "Cedar.Thm.wf_interpretation_implies_wfp_option_get", "kind": "theorem", "line": 60},
+  {"name": "Cedar.Thm.wf_interpretation_implies_wfp_ext_ipaddr_addrV4", "kind": "theorem", "line": 71},
+  {"name": "Cedar.Thm.wf_interpretation_implies_wfp_ext_ipaddr_prefixV4", "kind": "theorem", "line": 87},
+  {"name": "Cedar.Thm.wf_interpretation_implies_wfp_ext_ipaddr_addrV6", "kind": "theorem", "line": 103},
+  {"name": "Cedar.Thm.wf_interpretation_implies_wfp_ext_ipaddr_prefixV6", "kind": "theorem", "line": 119}
+ ],
+ "private": [],
+ "missing": [],
+ "unread": "Unnamed instances, the names an `alias ⟨…⟩` command gives, and the names Lean generates for a declaration (constructors, recursors, derived instances) are not read from the source, so they are not listed."
+}

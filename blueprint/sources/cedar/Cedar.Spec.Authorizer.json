@@ -1,0 +1,20 @@
+{
+ "schema": "trough-ledger/v1",
+ "library": "Cedar",
+ "repo": "cedar-policy/cedar-spec",
+ "rev": "326d93c24490c90607a3e257318e9c6a049c8116",
+ "module": "Cedar.Spec.Authorizer",
+ "file": "cedar-lean/Cedar/Spec/Authorizer.lean",
+ "public": [
+  {"name": "Cedar.Spec.satisfied", "kind": "def", "line": 29},
+  {"name": "Cedar.Spec.satisfiedWithEffect", "kind": "def", "line": 32},
+  {"name": "Cedar.Spec.satisfiedPolicies", "kind": "def", "line": 37},
+  {"name": "Cedar.Spec.hasError", "kind": "def", "line": 40},
+  {"name": "Cedar.Spec.errored", "kind": "def", "line": 50},
+  {"name": "Cedar.Spec.errorPolicies", "kind": "def", "line": 53},
+  {"name": "Cedar.Spec.isAuthorized", "kind": "def", "line": 56}
+ ],
+ "private": [],
+ "missing": [],
+ "unread": "Unnamed instances, the names an `alias ⟨…⟩` command gives, and the names Lean generates for a declaration (constructors, recursors, derived instances) are not read from the source, so they are not listed."
+}

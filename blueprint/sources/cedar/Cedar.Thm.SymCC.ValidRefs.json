@@ -1,0 +1,27 @@
+{
+ "schema": "trough-ledger/v1",
+ "library": "Cedar",
+ "repo": "cedar-policy/cedar-spec",
+ "rev": "326d93c24490c90607a3e257318e9c6a049c8116",
+ "module": "Cedar.Thm.SymCC.ValidRefs",
+ "file": "cedar-lean/Cedar/Thm/SymCC/ValidRefs.lean",
+ "public": [
+  {"name": "Cedar.Thm.typeOf_preserves_valid_refs_ih", "kind": "abbrev", "line": 28},
+  {"name": "Cedar.Thm.typeOf_preserves_valid_refs_lit", "kind": "theorem", "line": 34},
+  {"name": "Cedar.Thm.typeOf_preserves_valid_refs_var", "kind": "theorem", "line": 74},
+  {"name": "Cedar.Thm.typeOf_preserves_valid_refs_and", "kind": "theorem", "line": 92},
+  {"name": "Cedar.Thm.typeOf_preserves_valid_refs_or", "kind": "theorem", "line": 127},
+  {"name": "Cedar.Thm.typeOf_preserves_valid_refs_ite", "kind": "theorem", "line": 174},
+  {"name": "Cedar.Thm.typeOf_preserves_valid_refs_unaryApp", "kind": "theorem", "line": 231},
+  {"name": "Cedar.Thm.typeOf_preserves_valid_refs_binaryApp", "kind": "theorem", "line": 254},
+  {"name": "Cedar.Thm.typeOf_preserves_valid_refs_getAttr", "kind": "theorem", "line": 327},
+  {"name": "Cedar.Thm.typeOf_preserves_valid_refs_hasAttr", "kind": "theorem", "line": 361},
+  {"name": "Cedar.Thm.typeOf_preserves_valid_refs_set", "kind": "theorem", "line": 400},
+  {"name": "Cedar.Thm.typeOf_preserves_valid_refs_call", "kind": "theorem", "line": 438},
+  {"name": "Cedar.Thm.typeOf_preserves_valid_refs_record", "kind": "theorem", "line": 499},
+  {"name": "Cedar.Thm.typeOf_preserves_valid_refs", "kind": "theorem", "line": 542}
+ ],
+ "private": [],
+ "missing": [],
+ "unread": "Unnamed instances, the names an `alias ⟨…⟩` command gives, and the names Lean generates for a declaration (constructors, recursors, derived instances) are not read from the source, so they are not listed."
+}

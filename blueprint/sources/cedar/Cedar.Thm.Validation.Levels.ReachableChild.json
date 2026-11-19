@@ -1,0 +1,15 @@
+{
+ "schema": "trough-ledger/v1",
+ "library": "Cedar",
+ "repo": "cedar-policy/cedar-spec",
+ "rev": "326d93c24490c90607a3e257318e9c6a049c8116",
+ "module": "Cedar.Thm.Validation.Levels.ReachableChild",
+ "file": "cedar-lean/Cedar/Thm/Validation/Levels/ReachableChild.lean",
+ "public": [
+  {"name": "Cedar.Thm.reachable_of_le", "kind": "theorem", "line": 14},
+  {"name": "Cedar.Thm.reachable_child", "kind": "theorem", "line": 27}
+ ],
+ "private": [],
+ "missing": [],
+ "unread": "Unnamed instances, the names an `alias ⟨…⟩` command gives, and the names Lean generates for a declaration (constructors, recursors, derived instances) are not read from the source, so they are not listed."
+}

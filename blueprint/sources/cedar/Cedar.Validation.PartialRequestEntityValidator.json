@@ -1,0 +1,18 @@
+{
+ "schema": "trough-ledger/v1",
+ "library": "Cedar",
+ "repo": "cedar-policy/cedar-spec",
+ "rev": "326d93c24490c90607a3e257318e9c6a049c8116",
+ "module": "Cedar.Validation.PartialRequestEntityValidator",
+ "file": "cedar-lean/Cedar/Validation/PartialRequestEntityValidator.lean",
+ "public": [
+  {"name": "Cedar.Validation.PartialEntitySchemaEntry.validationView", "kind": "def", "line": 33},
+  {"name": "Cedar.Validation.PartialActionSchemaEntry.validationView", "kind": "def", "line": 41},
+  {"name": "Cedar.Validation.PartialSchema.validationView", "kind": "def", "line": 50},
+  {"name": "Cedar.Validation.PartialSchema.validateRequest", "kind": "def", "line": 57},
+  {"name": "Cedar.Validation.PartialSchema.validateEntities", "kind": "def", "line": 67}
+ ],
+ "private": [],
+ "missing": [],
+ "unread": "Unnamed instances, the names an `alias ⟨…⟩` command gives, and the names Lean generates for a declaration (constructors, recursors, derived instances) are not read from the source, so they are not listed."
+}

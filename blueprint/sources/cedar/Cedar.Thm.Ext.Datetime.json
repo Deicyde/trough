@@ -1,0 +1,20 @@
+{
+ "schema": "trough-ledger/v1",
+ "library": "Cedar",
+ "repo": "cedar-policy/cedar-spec",
+ "rev": "326d93c24490c90607a3e257318e9c6a049c8116",
+ "module": "Cedar.Thm.Ext.Datetime",
+ "file": "cedar-lean/Cedar/Thm/Ext/Datetime.lean",
+ "public": [
+  {"name": "Cedar.Thm.Datetime.wf_iff_exists_value", "kind": "theorem", "line": 36},
+  {"name": "Cedar.Thm.Datetime.parse_sound", "kind": "theorem", "line": 46},
+  {"name": "Cedar.Thm.Datetime.parse_complete", "kind": "theorem", "line": 68},
+  {"name": "Cedar.Thm.Datetime.parse_eq_none_iff", "kind": "theorem", "line": 97},
+  {"name": "Cedar.Thm.Datetime.parse_toString_roundtrip", "kind": "theorem", "line": 128},
+  {"name": "Cedar.Thm.Datetime.toString?_injective", "kind": "theorem", "line": 136},
+  {"name": "Cedar.Thm.Datetime.normalize_eq_iff_parse_eq", "kind": "theorem", "line": 155}
+ ],
+ "private": [],
+ "missing": [],
+ "unread": "Unnamed instances, the names an `alias ⟨…⟩` command gives, and the names Lean generates for a declaration (constructors, recursors, derived instances) are not read from the source, so they are not listed."
+}

@@ -1,0 +1,18 @@
+{
+ "schema": "trough-ledger/v1",
+ "library": "Cedar",
+ "repo": "cedar-policy/cedar-spec",
+ "rev": "326d93c24490c90607a3e257318e9c6a049c8116",
+ "module": "Cedar.Spec.Slice",
+ "file": "cedar-lean/Cedar/Spec/Slice.lean",
+ "public": [
+  {"name": "Cedar.Spec.Value.sliceEUIDs", "kind": "def", "line": 32},
+  {"name": "Cedar.Spec.EntityData.sliceEUIDs", "kind": "def", "line": 37},
+  {"name": "Cedar.Spec.Request.sliceEUIDs", "kind": "def", "line": 41},
+  {"name": "Cedar.Spec.Entities.sliceAtLevel", "kind": "def", "line": 46},
+  {"name": "Cedar.Spec.Entities.closedAtLevel", "kind": "def", "line": 71}
+ ],
+ "private": [],
+ "missing": [],
+ "unread": "Unnamed instances, the names an `alias ⟨…⟩` command gives, and the names Lean generates for a declaration (constructors, recursors, derived instances) are not read from the source, so they are not listed."
+}

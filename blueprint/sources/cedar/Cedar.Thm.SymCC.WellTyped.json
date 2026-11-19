@@ -1,0 +1,26 @@
+{
+ "schema": "trough-ledger/v1",
+ "library": "Cedar",
+ "repo": "cedar-policy/cedar-spec",
+ "rev": "326d93c24490c90607a3e257318e9c6a049c8116",
+ "module": "Cedar.Thm.SymCC.WellTyped",
+ "file": "cedar-lean/Cedar/Thm/SymCC/WellTyped.lean",
+ "public": [
+  {"name": "Cedar.Thm.wellTypedPolicy_ok_implies_exists_typed_exprs", "kind": "theorem", "line": 35},
+  {"name": "Cedar.Thm.wellTypedPolicy_ok_implies_well_typed_expr", "kind": "theorem", "line": 123},
+  {"name": "Cedar.Thm.substitute_action_preserves_valid_refs", "kind": "theorem", "line": 137},
+  {"name": "Cedar.Thm.wellTypedPolicy_preserves_valid_refs", "kind": "theorem", "line": 283},
+  {"name": "Cedar.Thm.wellTypedPolicy_preserves_StronglyWellFormedForPolicy", "kind": "theorem", "line": 309},
+  {"name": "Cedar.Thm.wellTypedPolicies_preserves_StronglyWellFormedForPolicies", "kind": "theorem", "line": 320},
+  {"name": "Cedar.Thm.wellTypedPolicy_preserves_evaluation", "kind": "theorem", "line": 342},
+  {"name": "Cedar.Thm.wellTypedPolicies_preserves_policy_id_and_effect", "kind": "theorem", "line": 394},
+  {"name": "Cedar.Thm.wellTypedPolicies_preserves_satisfiedWithEffect", "kind": "theorem", "line": 405},
+  {"name": "Cedar.Thm.wellTypedPolicies_preserves_satisfiedPolicies", "kind": "theorem", "line": 420},
+  {"name": "Cedar.Thm.wellTypedPolicies_preserves_errored", "kind": "theorem", "line": 444},
+  {"name": "Cedar.Thm.wellTypedPolicies_preserves_errorPolicies", "kind": "theorem", "line": 457},
+  {"name": "Cedar.Thm.wellTypedPolicies_preserves_isAuthorized", "kind": "theorem", "line": 479}
+ ],
+ "private": [],
+ "missing": [],
+ "unread": "Unnamed instances, the names an `alias ⟨…⟩` command gives, and the names Lean generates for a declaration (constructors, recursors, derived instances) are not read from the source, so they are not listed."
+}

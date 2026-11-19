@@ -1,0 +1,8 @@
+{
+ "repo": "cedar-policy/cedar-spec",
+ "rev": "326d93c24490c90607a3e257318e9c6a049c8116",
+ "date": "2026-11-18T14:04:50Z",
+ "toolchain": "v4.36.0",
+ "mathlib": "",
+ "license": "Apache-2.0"
+}

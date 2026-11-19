@@ -1,0 +1,21 @@
+{
+ "schema": "trough-ledger/v1",
+ "library": "Cedar",
+ "repo": "cedar-policy/cedar-spec",
+ "rev": "326d93c24490c90607a3e257318e9c6a049c8116",
+ "module": "Cedar.Thm.Ext.Decimal",
+ "file": "cedar-lean/Cedar/Thm/Ext/Decimal.lean",
+ "public": [
+  {"name": "Cedar.Thm.Decimal.wf_iff_exists_value", "kind": "theorem", "line": 32},
+  {"name": "Cedar.Thm.Decimal.parse_complete", "kind": "theorem", "line": 43},
+  {"name": "Cedar.Thm.Decimal.parse_sound", "kind": "theorem", "line": 51},
+  {"name": "Cedar.Thm.Decimal.parse_eq_some_iff_isDecimalValue", "kind": "theorem", "line": 80},
+  {"name": "Cedar.Thm.Decimal.parse_toString_roundtrip", "kind": "theorem", "line": 85},
+  {"name": "Cedar.Thm.Decimal.parse_eq_none_iff", "kind": "theorem", "line": 92},
+  {"name": "Cedar.Thm.Decimal.toString_injective", "kind": "theorem", "line": 113},
+  {"name": "Cedar.Thm.Decimal.normalize_eq_iff_parse_eq", "kind": "theorem", "line": 121}
+ ],
+ "private": [],
+ "missing": [],
+ "unread": "Unnamed instances, the names an `alias ⟨…⟩` command gives, and the names Lean generates for a declaration (constructors, recursors, derived instances) are not read from the source, so they are not listed."
+}

@@ -1,0 +1,17 @@
+{
+ "schema": "trough-ledger/v1",
+ "library": "Cedar",
+ "repo": "cedar-policy/cedar-spec",
+ "rev": "326d93c24490c90607a3e257318e9c6a049c8116",
+ "module": "Cedar.SymCCOpt.CompiledSchema",
+ "file": "cedar-lean/Cedar/SymCCOpt/CompiledSchema.lean",
+ "public": [
+  {"name": "Cedar.SymCC.CompiledSchema", "kind": "structure", "line": 34},
+  {"name": "Cedar.SymCC.CompiledSchema.compile", "kind": "def", "line": 39},
+  {"name": "Cedar.SymCC.CompiledSchema.symEnv", "kind": "def", "line": 42},
+  {"name": "Cedar.SymCC.CompiledSchema.typeEnv", "kind": "def", "line": 45}
+ ],
+ "private": [],
+ "missing": [],
+ "unread": "Unnamed instances, the names an `alias ⟨…⟩` command gives, and the names Lean generates for a declaration (constructors, recursors, derived instances) are not read from the source, so they are not listed."
+}

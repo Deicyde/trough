@@ -1,0 +1,18 @@
+{
+ "schema": "trough-ledger/v1",
+ "library": "Cedar",
+ "repo": "cedar-policy/cedar-spec",
+ "rev": "326d93c24490c90607a3e257318e9c6a049c8116",
+ "module": "Cedar.Thm.SymCC.Opt.AllowDeny",
+ "file": "cedar-lean/Cedar/Thm/SymCC/Opt/AllowDeny.lean",
+ "public": [
+  {"name": "Cedar.Thm.wellTypedPolicies_empty", "kind": "theorem", "line": 31},
+  {"name": "Cedar.Thm.wellTypedPolicies_allowAll", "kind": "theorem", "line": 39},
+  {"name": "Cedar.Thm.isAuthorized_empty", "kind": "theorem", "line": 50},
+  {"name": "Cedar.Thm.isAuthorized_allowAll", "kind": "theorem", "line": 77},
+  {"name": "Cedar.Thm.footprint_allowAll", "kind": "theorem", "line": 86}
+ ],
+ "private": [],
+ "missing": [],
+ "unread": "Unnamed instances, the names an `alias ⟨…⟩` command gives, and the names Lean generates for a declaration (constructors, recursors, derived instances) are not read from the source, so they are not listed."
+}

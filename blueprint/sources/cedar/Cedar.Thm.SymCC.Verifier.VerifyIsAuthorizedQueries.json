@@ -1,0 +1,29 @@
+{
+ "schema": "trough-ledger/v1",
+ "library": "Cedar",
+ "repo": "cedar-policy/cedar-spec",
+ "rev": "326d93c24490c90607a3e257318e9c6a049c8116",
+ "module": "Cedar.Thm.SymCC.Verifier.VerifyIsAuthorizedQueries",
+ "file": "cedar-lean/Cedar/Thm/SymCC/Verifier/VerifyIsAuthorizedQueries.lean",
+ "public": [
+  {"name": "Cedar.Thm.bothAllowOrBothDeny", "kind": "def", "line": 27},
+  {"name": "Cedar.Thm.verifyEquivalent_wbaq", "kind": "theorem", "line": 30},
+  {"name": "Cedar.Thm.atLeastOneDenies", "kind": "def", "line": 51},
+  {"name": "Cedar.Thm.verifyDisjoint_wbaq", "kind": "theorem", "line": 54},
+  {"name": "Cedar.Thm.ifFirstAllowsSoDoesSecond", "kind": "def", "line": 77},
+  {"name": "Cedar.Thm.verifyImplies_wbaq", "kind": "theorem", "line": 80},
+  {"name": "Cedar.Thm.denies", "kind": "def", "line": 105},
+  {"name": "Cedar.Thm.isAuthorized_empty_denies", "kind": "theorem", "line": 108},
+  {"name": "Cedar.Thm.denies_eq_implies_false", "kind": "theorem", "line": 113},
+  {"name": "Cedar.Thm.swf_εnv_for_empty_policies", "kind": "theorem", "line": 119},
+  {"name": "Cedar.Thm.swf_env_for_empty_policies", "kind": "theorem", "line": 124},
+  {"name": "Cedar.Thm.allows", "kind": "def", "line": 129},
+  {"name": "Cedar.Thm.isAuthorized_allowAll_allows", "kind": "theorem", "line": 162},
+  {"name": "Cedar.Thm.allows_eq_allowAll_implies", "kind": "theorem", "line": 169},
+  {"name": "Cedar.Thm.swf_εnv_for_allowAll_policies", "kind": "theorem", "line": 195},
+  {"name": "Cedar.Thm.swf_env_for_allowAll_policies", "kind": "theorem", "line": 203}
+ ],
+ "private": [],
+ "missing": [],
+ "unread": "Unnamed instances, the names an `alias ⟨…⟩` command gives, and the names Lean generates for a declaration (constructors, recursors, derived instances) are not read from the source, so they are not listed."
+}

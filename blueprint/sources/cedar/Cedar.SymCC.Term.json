@@ -1,0 +1,38 @@
+{
+ "schema": "trough-ledger/v1",
+ "library": "Cedar",
+ "repo": "cedar-policy/cedar-spec",
+ "rev": "326d93c24490c90607a3e257318e9c6a049c8116",
+ "module": "Cedar.SymCC.Term",
+ "file": "cedar-lean/Cedar/SymCC/Term.lean",
+ "public": [
+  {"name": "Cedar.SymCC.TermVar", "kind": "structure", "line": 46},
+  {"name": "Cedar.SymCC.TermPrim", "kind": "inductive", "line": 50},
+  {"name": "Cedar.SymCC.Term", "kind": "inductive", "line": 57},
+  {"name": "Cedar.SymCC.Term.bool", "kind": "abbrev", "line": 66},
+  {"name": "Cedar.SymCC.Term.bitvec", "kind": "abbrev", "line": 67},
+  {"name": "Cedar.SymCC.Term.string", "kind": "abbrev", "line": 68},
+  {"name": "Cedar.SymCC.Term.entity", "kind": "abbrev", "line": 69},
+  {"name": "Cedar.SymCC.Term.ext", "kind": "abbrev", "line": 70},
+  {"name": "Cedar.SymCC.Term.typeOf", "kind": "def", "line": 82},
+  {"name": "Cedar.SymCC.Term.isLiteral", "kind": "def", "line": 92},
+  {"name": "Cedar.SymCC.Term.hasDecEq", "kind": "def", "line": 137},
+  {"name": "Cedar.SymCC.TermVar.lt", "kind": "def", "line": 191},
+  {"name": "Cedar.SymCC.TermVar.decLt", "kind": "instance", "line": 197},
+  {"name": "Cedar.SymCC.TermPrim.lt", "kind": "def", "line": 207},
+  {"name": "Cedar.SymCC.TermPrim.decLt", "kind": "instance", "line": 219},
+  {"name": "Cedar.SymCC.Term.lt", "kind": "def", "line": 233},
+  {"name": "Cedar.SymCC.Term.decLt", "kind": "instance", "line": 270}
+ ],
+ "private": [
+  {"name": "Cedar.SymCC.TermPrim.typeOf", "kind": "def", "line": 72},
+  {"name": "Cedar.SymCC.Term.hasListDec", "kind": "def", "line": 163},
+  {"name": "Cedar.SymCC.Term.hasListProdDec", "kind": "def", "line": 175},
+  {"name": "Cedar.SymCC.TermPrim.mkName", "kind": "def", "line": 200},
+  {"name": "Cedar.SymCC.Term.mkName", "kind": "def", "line": 222},
+  {"name": "Cedar.SymCC.Term.ltList", "kind": "def", "line": 249},
+  {"name": "Cedar.SymCC.Term.ltListProd", "kind": "def", "line": 256}
+ ],
+ "missing": [],
+ "unread": "Unnamed instances, the names an `alias ⟨…⟩` command gives, and the names Lean generates for a declaration (constructors, recursors, derived instances) are not read from the source, so they are not listed."
+}

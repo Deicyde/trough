@@ -1,0 +1,17 @@
+{
+ "schema": "trough-ledger/v1",
+ "library": "Cedar",
+ "repo": "cedar-policy/cedar-spec",
+ "rev": "326d93c24490c90607a3e257318e9c6a049c8116",
+ "module": "Cedar.Thm.Validation.Slice.Reachable.BinaryApp",
+ "file": "cedar-lean/Cedar/Thm/Validation/Slice/Reachable/BinaryApp.lean",
+ "public": [
+  {"name": "Cedar.Thm.reachable_tag_step", "kind": "theorem", "line": 38},
+  {"name": "Cedar.Thm.checked_eval_entity_reachable_get_tag", "kind": "theorem", "line": 61},
+  {"name": "Cedar.Thm.binary_op_not_euid_via_path", "kind": "theorem", "line": 95},
+  {"name": "Cedar.Thm.checked_eval_entity_reachable_binary", "kind": "theorem", "line": 117}
+ ],
+ "private": [],
+ "missing": [],
+ "unread": "Unnamed instances, the names an `alias ⟨…⟩` command gives, and the names Lean generates for a declaration (constructors, recursors, derived instances) are not read from the source, so they are not listed."
+}

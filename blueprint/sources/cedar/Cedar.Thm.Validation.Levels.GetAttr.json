@@ -1,0 +1,16 @@
+{
+ "schema": "trough-ledger/v1",
+ "library": "Cedar",
+ "repo": "cedar-policy/cedar-spec",
+ "rev": "326d93c24490c90607a3e257318e9c6a049c8116",
+ "module": "Cedar.Thm.Validation.Levels.GetAttr",
+ "file": "cedar-lean/Cedar/Thm/Validation/Levels/GetAttr.lean",
+ "public": [
+  {"name": "Cedar.Thm.level_based_slicing_is_sound_get_attr_entity", "kind": "theorem", "line": 42},
+  {"name": "Cedar.Thm.level_based_slicing_is_sound_get_attr_record", "kind": "theorem", "line": 69},
+  {"name": "Cedar.Thm.level_based_slicing_is_sound_get_attr", "kind": "theorem", "line": 94}
+ ],
+ "private": [],
+ "missing": [],
+ "unread": "Unnamed instances, the names an `alias ⟨…⟩` command gives, and the names Lean generates for a declaration (constructors, recursors, derived instances) are not read from the source, so they are not listed."
+}

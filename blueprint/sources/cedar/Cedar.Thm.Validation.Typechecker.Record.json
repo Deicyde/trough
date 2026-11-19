@@ -1,0 +1,29 @@
+{
+ "schema": "trough-ledger/v1",
+ "library": "Cedar",
+ "repo": "cedar-policy/cedar-spec",
+ "rev": "326d93c24490c90607a3e257318e9c6a049c8116",
+ "module": "Cedar.Thm.Validation.Typechecker.Record",
+ "file": "cedar-lean/Cedar/Thm/Validation/Typechecker/Record.lean",
+ "public": [
+  {"name": "Cedar.Thm.AttrValueHasAttrType", "kind": "def", "line": 37},
+  {"name": "Cedar.Thm.AttrExprHasAttrType", "kind": "def", "line": 40},
+  {"name": "Cedar.Thm.type_of_record_inversion_forall", "kind": "theorem", "line": 44},
+  {"name": "Cedar.Thm.type_of_record_inversion", "kind": "theorem", "line": 79},
+  {"name": "Cedar.Thm.mk_vals_instance_of_mk_types₁", "kind": "theorem", "line": 95},
+  {"name": "Cedar.Thm.mk_vals_instance_of_mk_types₂", "kind": "theorem", "line": 113},
+  {"name": "Cedar.Thm.mk_vals_instance_of_mk_types₃", "kind": "theorem", "line": 133},
+  {"name": "Cedar.Thm.mk_vals_instance_of_mk_types", "kind": "theorem", "line": 151},
+  {"name": "Cedar.Thm.find_mk_xs_find_mk_txs", "kind": "theorem", "line": 166},
+  {"name": "Cedar.Thm.find_make_xs_find_make_txs", "kind": "theorem", "line": 188},
+  {"name": "Cedar.Thm.head_of_vals_instance_of_head_of_types", "kind": "theorem", "line": 203},
+  {"name": "Cedar.Thm.vals_instance_of_types", "kind": "theorem", "line": 220},
+  {"name": "Cedar.Thm.type_of_record_is_sound_ok", "kind": "theorem", "line": 249},
+  {"name": "Cedar.Thm.type_of_record_is_sound_err", "kind": "theorem", "line": 265},
+  {"name": "Cedar.Thm.type_of_record_is_sound", "kind": "theorem", "line": 302},
+  {"name": "Cedar.Thm.type_of_ok_list", "kind": "theorem", "line": 327}
+ ],
+ "private": [],
+ "missing": [],
+ "unread": "Unnamed instances, the names an `alias ⟨…⟩` command gives, and the names Lean generates for a declaration (constructors, recursors, derived instances) are not read from the source, so they are not listed."
+}

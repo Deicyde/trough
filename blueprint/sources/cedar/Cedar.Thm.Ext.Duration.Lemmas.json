@@ -1,0 +1,32 @@
+{
+ "schema": "trough-ledger/v1",
+ "library": "Cedar",
+ "repo": "cedar-policy/cedar-spec",
+ "rev": "326d93c24490c90607a3e257318e9c6a049c8116",
+ "module": "Cedar.Thm.Ext.Duration.Lemmas",
+ "file": "cedar-lean/Cedar/Thm/Ext/Duration/Lemmas.lean",
+ "public": [
+  {"name": "Cedar.Thm.Duration.parse_eq_duration?_of_isDurationValue", "kind": "theorem", "line": 2753},
+  {"name": "Cedar.Thm.Duration.isDurationValue_unique", "kind": "theorem", "line": 2805}
+ ],
+ "private": [
+  {"name": "Cedar.Thm.Duration.duration?_eq_none_iff_overflow", "kind": "theorem", "line": 152},
+  {"name": "Cedar.Thm.Duration.duration_body_front_ne_dash", "kind": "theorem", "line": 333},
+  {"name": "Cedar.Thm.Duration.wf_of_parseDuration?_eq_some", "kind": "theorem", "line": 567},
+  {"name": "Cedar.Thm.Duration.parseDuration?_eq_duration?_of_wf", "kind": "theorem", "line": 1442},
+  {"name": "Cedar.Thm.Duration.parseDuration?_none_of_not_wf", "kind": "theorem", "line": 2586},
+  {"name": "Cedar.Thm.Duration.parseDuration?_eq_none_iff_overflow_of_wf", "kind": "theorem", "line": 2596},
+  {"name": "Cedar.Thm.Duration.parseDuration?_eq_none_iff", "kind": "theorem", "line": 2607},
+  {"name": "Cedar.Thm.Duration.wf_str_iff_signed_body", "kind": "theorem", "line": 2622},
+  {"name": "Cedar.Thm.Duration.duration?_some_toInt", "kind": "theorem", "line": 2669},
+  {"name": "Cedar.Thm.Duration.Int64.sub?_add?_inverse", "kind": "theorem", "line": 2681},
+  {"name": "Cedar.Thm.Duration.duration?_of_val_toInt", "kind": "theorem", "line": 2702},
+  {"name": "Cedar.Thm.Duration.canonicalDurationBody_wf", "kind": "theorem", "line": 2731},
+  {"name": "Cedar.Thm.Duration.isNegativeDuration_neg_body", "kind": "theorem", "line": 2738},
+  {"name": "Cedar.Thm.Duration.isNegativeDuration_canonical_body", "kind": "theorem", "line": 2744},
+  {"name": "Cedar.Thm.Duration.canonicalDurationBody_value", "kind": "theorem", "line": 2810},
+  {"name": "Cedar.Thm.Duration.durationParts_value_int", "kind": "theorem", "line": 2913}
+ ],
+ "missing": [],
+ "unread": "Unnamed instances, the names an `alias ⟨…⟩` command gives, and the names Lean generates for a declaration (constructors, recursors, derived instances) are not read from the source, so they are not listed."
+}

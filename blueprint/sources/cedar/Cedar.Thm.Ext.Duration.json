@@ -1,0 +1,23 @@
+{
+ "schema": "trough-ledger/v1",
+ "library": "Cedar",
+ "repo": "cedar-policy/cedar-spec",
+ "rev": "326d93c24490c90607a3e257318e9c6a049c8116",
+ "module": "Cedar.Thm.Ext.Duration",
+ "file": "cedar-lean/Cedar/Thm/Ext/Duration.lean",
+ "public": [
+  {"name": "Cedar.Thm.Duration.wf_iff_exists_value", "kind": "theorem", "line": 38},
+  {"name": "Cedar.Thm.Duration.parse_complete", "kind": "theorem", "line": 48},
+  {"name": "Cedar.Thm.Duration.parse_sound", "kind": "theorem", "line": 56},
+  {"name": "Cedar.Thm.Duration.parse_eq_some_iff_isDurationValue", "kind": "theorem", "line": 79},
+  {"name": "Cedar.Thm.Duration.parse_eq_none_iff", "kind": "theorem", "line": 85},
+  {"name": "Cedar.Thm.Duration.parse_neg", "kind": "theorem", "line": 104},
+  {"name": "Cedar.Thm.Duration.offset_durationSince_inverse", "kind": "theorem", "line": 139},
+  {"name": "Cedar.Thm.Duration.parse_toString_roundtrip", "kind": "theorem", "line": 154},
+  {"name": "Cedar.Thm.Duration.toString_injective", "kind": "theorem", "line": 192},
+  {"name": "Cedar.Thm.Duration.normalize_eq_iff_parse_eq", "kind": "theorem", "line": 202}
+ ],
+ "private": [],
+ "missing": [],
+ "unread": "Unnamed instances, the names an `alias ⟨…⟩` command gives, and the names Lean generates for a declaration (constructors, recursors, derived instances) are not read from the source, so they are not listed."
+}

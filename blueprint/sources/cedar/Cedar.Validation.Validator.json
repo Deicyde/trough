@@ -1,0 +1,30 @@
+{
+ "schema": "trough-ledger/v1",
+ "library": "Cedar",
+ "repo": "cedar-policy/cedar-spec",
+ "rev": "326d93c24490c90607a3e257318e9c6a049c8116",
+ "module": "Cedar.Validation.Validator",
+ "file": "cedar-lean/Cedar/Validation/Validator.lean",
+ "public": [
+  {"name": "Cedar.Validation.Schema.environments", "kind": "def", "line": 46},
+  {"name": "Cedar.Validation.Schema.environmentsForAction?", "kind": "def", "line": 63},
+  {"name": "Cedar.Validation.Schema.environment?", "kind": "def", "line": 81},
+  {"name": "Cedar.Validation.ValidationError", "kind": "inductive", "line": 96},
+  {"name": "Cedar.Validation.ValidationResult", "kind": "abbrev", "line": 108},
+  {"name": "Cedar.Validation.checkEntities", "kind": "def", "line": 118},
+  {"name": "Cedar.Validation.mapOnVars", "kind": "def", "line": 150},
+  {"name": "Cedar.Validation.substituteAction", "kind": "def", "line": 193},
+  {"name": "Cedar.Validation.typecheckPolicy", "kind": "def", "line": 201},
+  {"name": "Cedar.Validation.typecheckPolicyWithLevel", "kind": "def", "line": 210},
+  {"name": "Cedar.Validation.allFalse", "kind": "def", "line": 217},
+  {"name": "Cedar.Validation.typecheckPolicyWithEnvironments", "kind": "def", "line": 221},
+  {"name": "Cedar.Validation.validate", "kind": "def", "line": 230},
+  {"name": "Cedar.Validation.validateWithLevel", "kind": "def", "line": 237},
+  {"name": "Cedar.Validation.validationErrorToJson", "kind": "def", "line": 248}
+ ],
+ "private": [
+  {"name": "Cedar.Validation.ActionSchemaEntry.requestTypes", "kind": "def", "line": 36}
+ ],
+ "missing": [],
+ "unread": "Unnamed instances, the names an `alias ⟨…⟩` command gives, and the names Lean generates for a declaration (constructors, recursors, derived instances) are not read from the source, so they are not listed."
+}

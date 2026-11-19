@@ -1,0 +1,33 @@
+{
+ "schema": "trough-ledger/v1",
+ "library": "Cedar",
+ "repo": "cedar-policy/cedar-spec",
+ "rev": "326d93c24490c90607a3e257318e9c6a049c8116",
+ "module": "Cedar.Data.Map",
+ "file": "cedar-lean/Cedar/Data/Map.lean",
+ "public": [
+  {"name": "Cedar.Data.Map", "kind": "inductive", "line": 34},
+  {"name": "Cedar.Data.Map.make", "kind": "def", "line": 43},
+  {"name": "Cedar.Data.Map.empty", "kind": "def", "line": 47},
+  {"name": "Cedar.Data.Map.toList", "kind": "def", "line": 50},
+  {"name": "Cedar.Data.Map.keys", "kind": "def", "line": 53},
+  {"name": "Cedar.Data.Map.values", "kind": "def", "line": 57},
+  {"name": "Cedar.Data.Map.find?", "kind": "def", "line": 62},
+  {"name": "Cedar.Data.Map.contains", "kind": "def", "line": 68},
+  {"name": "Cedar.Data.Map.findOrErr", "kind": "def", "line": 72},
+  {"name": "Cedar.Data.Map.find!", "kind": "def", "line": 78},
+  {"name": "Cedar.Data.Map.filter", "kind": "def", "line": 84},
+  {"name": "Cedar.Data.Map.size", "kind": "def", "line": 87},
+  {"name": "Cedar.Data.Map.mapOnValues", "kind": "def", "line": 90},
+  {"name": "Cedar.Data.Map.mapOnKeys", "kind": "def", "line": 93},
+  {"name": "Cedar.Data.Map.mapMOnValues", "kind": "def", "line": 96},
+  {"name": "Cedar.Data.Map.mapMOnKeys", "kind": "def", "line": 100},
+  {"name": "Cedar.Data.Map.mapOnValues₂", "kind": "def", "line": 111},
+  {"name": "Cedar.Data.Map.mapMOnValues₂", "kind": "def", "line": 117},
+  {"name": "Cedar.Data.Map.wellFormed", "kind": "def", "line": 124},
+  {"name": "Cedar.Data.Map.decLt", "kind": "instance", "line": 132}
+ ],
+ "private": [],
+ "missing": [],
+ "unread": "Unnamed instances, the names an `alias ⟨…⟩` command gives, and the names Lean generates for a declaration (constructors, recursors, derived instances) are not read from the source, so they are not listed."
+}

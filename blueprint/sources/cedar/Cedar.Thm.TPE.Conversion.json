@@ -1,0 +1,18 @@
+{
+ "schema": "trough-ledger/v1",
+ "library": "Cedar",
+ "repo": "cedar-policy/cedar-spec",
+ "rev": "326d93c24490c90607a3e257318e9c6a049c8116",
+ "module": "Cedar.Thm.TPE.Conversion",
+ "file": "cedar-lean/Cedar/Thm/TPE/Conversion.lean",
+ "public": [
+  {"name": "Cedar.Thm.conversion_preserves_evaluation_forall2", "kind": "theorem", "line": 36},
+  {"name": "Cedar.Thm.conversion_preserves_evaluation_forall2_map", "kind": "theorem", "line": 49},
+  {"name": "Cedar.Thm.conversion_preserves_evaluation", "kind": "theorem", "line": 73},
+  {"name": "Cedar.Thm.conversion_preserves_typeof", "kind": "theorem", "line": 166},
+  {"name": "Cedar.Thm.conversion_preserves_typedness", "kind": "theorem", "line": 173}
+ ],
+ "private": [],
+ "missing": [],
+ "unread": "Unnamed instances, the names an `alias ⟨…⟩` command gives, and the names Lean generates for a declaration (constructors, recursors, derived instances) are not read from the source, so they are not listed."
+}

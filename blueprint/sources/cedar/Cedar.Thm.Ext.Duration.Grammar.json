@@ -1,0 +1,29 @@
+{
+ "schema": "trough-ledger/v1",
+ "library": "Cedar",
+ "repo": "cedar-policy/cedar-spec",
+ "rev": "326d93c24490c90607a3e257318e9c6a049c8116",
+ "module": "Cedar.Thm.Ext.Duration.Grammar",
+ "file": "cedar-lean/Cedar/Thm/Ext/Duration/Grammar.lean",
+ "public": [
+  {"name": "Cedar.Thm.Duration.durationChunk", "kind": "def", "line": 42},
+  {"name": "Cedar.Thm.Duration.IsWfOptionalQuantity", "kind": "def", "line": 49},
+  {"name": "Cedar.Thm.Duration.Components", "kind": "structure", "line": 55},
+  {"name": "Cedar.Thm.Duration.Components.nonempty", "kind": "def", "line": 63},
+  {"name": "Cedar.Thm.Duration.Components.quantitiesWf", "kind": "def", "line": 71},
+  {"name": "Cedar.Thm.Duration.Components.asString", "kind": "def", "line": 81},
+  {"name": "Cedar.Thm.Duration.optionalNatOf", "kind": "def", "line": 90},
+  {"name": "Cedar.Thm.Duration.Components.toMillis", "kind": "def", "line": 95},
+  {"name": "Cedar.Thm.Duration.value", "kind": "def", "line": 103},
+  {"name": "Cedar.Thm.Duration.canonicalComponents", "kind": "def", "line": 108},
+  {"name": "Cedar.Thm.Duration.canonicalBody", "kind": "def", "line": 118},
+  {"name": "Cedar.Thm.Duration.IsWfBody", "kind": "def", "line": 125},
+  {"name": "Cedar.Thm.Duration.DurationProduction", "kind": "def", "line": 132},
+  {"name": "Cedar.Thm.Duration.IsWfDuration", "kind": "def", "line": 139},
+  {"name": "Cedar.Thm.Duration.IsDurationValue", "kind": "def", "line": 143},
+  {"name": "Cedar.Thm.Duration.normalize", "kind": "def", "line": 150}
+ ],
+ "private": [],
+ "missing": [],
+ "unread": "Unnamed instances, the names an `alias ⟨…⟩` command gives, and the names Lean generates for a declaration (constructors, recursors, derived instances) are not read from the source, so they are not listed."
+}

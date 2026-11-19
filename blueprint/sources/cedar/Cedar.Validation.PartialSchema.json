@@ -1,0 +1,33 @@
+{
+ "schema": "trough-ledger/v1",
+ "library": "Cedar",
+ "repo": "cedar-policy/cedar-spec",
+ "rev": "326d93c24490c90607a3e257318e9c6a049c8116",
+ "module": "Cedar.Validation.PartialSchema",
+ "file": "cedar-lean/Cedar/Validation/PartialSchema.lean",
+ "public": [
+  {"name": "Cedar.Validation.PartialEntitySchemaEntry", "kind": "inductive", "line": 28},
+  {"name": "Cedar.Validation.PartialEntitySchemaEntry.isValidEntityEID", "kind": "def", "line": 33},
+  {"name": "Cedar.Validation.PartialEntitySchemaEntry.tags?", "kind": "def", "line": 38},
+  {"name": "Cedar.Validation.PartialEntitySchemaEntry.attrs?", "kind": "def", "line": 42},
+  {"name": "Cedar.Validation.PartialEntitySchemaEntry.ancestors", "kind": "def", "line": 46},
+  {"name": "Cedar.Validation.PartialEntitySchemaEntry.isStandard", "kind": "def", "line": 50},
+  {"name": "Cedar.Validation.PartialEntitySchemaEntry.isExternal", "kind": "def", "line": 54},
+  {"name": "Cedar.Validation.PartialEntitySchemaEntry.toEntitySchemaEntry?", "kind": "def", "line": 58},
+  {"name": "Cedar.Validation.PartialEntitySchemaEntry.withAncestors", "kind": "def", "line": 62},
+  {"name": "Cedar.Validation.PartialActionSchemaEntry", "kind": "inductive", "line": 70},
+  {"name": "Cedar.Validation.PartialActionSchemaEntry.ancestors", "kind": "def", "line": 75},
+  {"name": "Cedar.Validation.PartialActionSchemaEntry.isExternal", "kind": "def", "line": 79},
+  {"name": "Cedar.Validation.PartialActionSchemaEntry.toActionSchemaEntry?", "kind": "def", "line": 83},
+  {"name": "Cedar.Validation.PartialActionSchemaEntry.withAncestors", "kind": "def", "line": 87},
+  {"name": "Cedar.Validation.PartialEntitySchema", "kind": "abbrev", "line": 95},
+  {"name": "Cedar.Validation.PartialActionSchema", "kind": "abbrev", "line": 97},
+  {"name": "Cedar.Validation.PartialSchema", "kind": "structure", "line": 99},
+  {"name": "Cedar.Validation.Schema.toPartialSchema", "kind": "def", "line": 107},
+  {"name": "Cedar.Validation.PartialSchema.isComplete", "kind": "def", "line": 115},
+  {"name": "Cedar.Validation.PartialSchema.asSchema?", "kind": "def", "line": 118}
+ ],
+ "private": [],
+ "missing": [],
+ "unread": "Unnamed instances, the names an `alias ⟨…⟩` command gives, and the names Lean generates for a declaration (constructors, recursors, derived instances) are not read from the source, so they are not listed."
+}

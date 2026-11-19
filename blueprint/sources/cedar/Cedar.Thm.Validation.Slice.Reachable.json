@@ -1,0 +1,25 @@
+{
+ "schema": "trough-ledger/v1",
+ "library": "Cedar",
+ "repo": "cedar-policy/cedar-spec",
+ "rev": "326d93c24490c90607a3e257318e9c6a049c8116",
+ "module": "Cedar.Thm.Validation.Slice.Reachable",
+ "file": "cedar-lean/Cedar/Thm/Validation/Slice/Reachable.lean",
+ "public": [
+  {"name": "Cedar.Thm.checked_eval_entity_lit_is_action", "kind": "theorem", "line": 45},
+  {"name": "Cedar.Thm.and_not_euid_via_path", "kind": "theorem", "line": 69},
+  {"name": "Cedar.Thm.or_not_euid_via_path", "kind": "theorem", "line": 83},
+  {"name": "Cedar.Thm.unary_not_euid_via_path", "kind": "theorem", "line": 98},
+  {"name": "Cedar.Thm.has_attr_not_euid_via_path", "kind": "theorem", "line": 113},
+  {"name": "Cedar.Thm.set_not_euid_via_path", "kind": "theorem", "line": 126},
+  {"name": "Cedar.Thm.call_not_euid_via_path", "kind": "theorem", "line": 136},
+  {"name": "Cedar.Thm.checked_eval_entity_reachable", "kind": "theorem", "line": 157},
+  {"name": "Cedar.Thm.in_work_then_in_slice", "kind": "theorem", "line": 259},
+  {"name": "Cedar.Thm.slice_contains_reachable", "kind": "theorem", "line": 274},
+  {"name": "Cedar.Thm.reachable_of_mem_slice", "kind": "theorem", "line": 301},
+  {"name": "Cedar.Thm.reachable_then_mem_slice", "kind": "theorem", "line": 325}
+ ],
+ "private": [],
+ "missing": [],
+ "unread": "Unnamed instances, the names an `alias ⟨…⟩` command gives, and the names Lean generates for a declaration (constructors, recursors, derived instances) are not read from the source, so they are not listed."
+}

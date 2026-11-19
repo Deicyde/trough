@@ -1,0 +1,22 @@
+{
+ "schema": "trough-ledger/v1",
+ "library": "Cedar",
+ "repo": "cedar-policy/cedar-spec",
+ "rev": "326d93c24490c90607a3e257318e9c6a049c8116",
+ "module": "Cedar.Spec.Entities",
+ "file": "cedar-lean/Cedar/Spec/Entities.lean",
+ "public": [
+  {"name": "Cedar.Spec.Tag", "kind": "abbrev", "line": 31},
+  {"name": "Cedar.Spec.EntityData", "kind": "structure", "line": 33},
+  {"name": "Cedar.Spec.Entities", "kind": "abbrev", "line": 38},
+  {"name": "Cedar.Spec.Entities.ancestors", "kind": "def", "line": 41},
+  {"name": "Cedar.Spec.Entities.ancestorsOrEmpty", "kind": "def", "line": 46},
+  {"name": "Cedar.Spec.Entities.attrs", "kind": "def", "line": 52},
+  {"name": "Cedar.Spec.Entities.attrsOrEmpty", "kind": "def", "line": 57},
+  {"name": "Cedar.Spec.Entities.tags", "kind": "def", "line": 63},
+  {"name": "Cedar.Spec.Entities.tagsOrEmpty", "kind": "def", "line": 68}
+ ],
+ "private": [],
+ "missing": [],
+ "unread": "Unnamed instances, the names an `alias ⟨…⟩` command gives, and the names Lean generates for a declaration (constructors, recursors, derived instances) are not read from the source, so they are not listed."
+}

@@ -1,0 +1,21 @@
+{
+ "schema": "trough-ledger/v1",
+ "library": "Cedar",
+ "repo": "cedar-policy/cedar-spec",
+ "rev": "326d93c24490c90607a3e257318e9c6a049c8116",
+ "module": "Cedar.Thm.SymbolicCompilation",
+ "file": "cedar-lean/Cedar/Thm/SymbolicCompilation.lean",
+ "public": [
+  {"name": "Cedar.Thm.compile_is_sound", "kind": "theorem", "line": 71},
+  {"name": "Cedar.Thm.compile_is_complete", "kind": "theorem", "line": 99},
+  {"name": "Cedar.Thm.isAuthorized_is_sound", "kind": "theorem", "line": 155},
+  {"name": "Cedar.Thm.isAuthorized_is_complete", "kind": "theorem", "line": 183},
+  {"name": "Cedar.Thm.compile_well_typed", "kind": "theorem", "line": 208},
+  {"name": "Cedar.Thm.IsOption", "kind": "def", "line": 223},
+  {"name": "Cedar.Thm.OptionTyped", "kind": "def", "line": 224},
+  {"name": "Cedar.Thm.compile_ok_implies_option", "kind": "theorem", "line": 398}
+ ],
+ "private": [],
+ "missing": [],
+ "unread": "Unnamed instances, the names an `alias ⟨…⟩` command gives, and the names Lean generates for a declaration (constructors, recursors, derived instances) are not read from the source, so they are not listed."
+}

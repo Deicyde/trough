@@ -1,0 +1,38 @@
+{
+ "schema": "trough-ledger/v1",
+ "library": "Cedar",
+ "repo": "cedar-policy/cedar-spec",
+ "rev": "326d93c24490c90607a3e257318e9c6a049c8116",
+ "module": "Cedar.Thm.Data.MapUnion",
+ "file": "cedar-lean/Cedar/Thm/Data/MapUnion.lean",
+ "public": [
+  {"name": "List.mapUnion₁_eq_mapUnion", "kind": "theorem", "line": 48},
+  {"name": "List.mapUnion₂_eq_mapUnion", "kind": "theorem", "line": 53},
+  {"name": "List.mapUnion₃_eq_mapUnion", "kind": "theorem", "line": 58},
+  {"name": "List.mapUnion_nil", "kind": "theorem", "line": 64},
+  {"name": "List.mapUnion_wf", "kind": "theorem", "line": 70},
+  {"name": "List.mapUnion_cons", "kind": "theorem", "line": 100},
+  {"name": "List.mapUnion_singleton", "kind": "theorem", "line": 114},
+  {"name": "List.mapUnion_pair", "kind": "theorem", "line": 119},
+  {"name": "List.mapUnion_map", "kind": "theorem", "line": 125},
+  {"name": "List.mem_foldl_union_iff_mem_or_exists", "kind": "theorem", "line": 130},
+  {"name": "List.foldl_union_wf", "kind": "theorem", "line": 149},
+  {"name": "List.mem_mapUnion_iff_mem_exists", "kind": "theorem", "line": 160},
+  {"name": "List.mem_mem_implies_mem_mapUnion", "kind": "theorem", "line": 171},
+  {"name": "List.mem_implies_subset_mapUnion", "kind": "theorem", "line": 178},
+  {"name": "List.mapUnion_filterMap", "kind": "theorem", "line": 186},
+  {"name": "List.mapUnion_congr", "kind": "theorem", "line": 210},
+  {"name": "List.mapUnion_eq_mapUnion_id_map", "kind": "theorem", "line": 228},
+  {"name": "List.mapUnion_eq_of_map_eq", "kind": "theorem", "line": 240},
+  {"name": "List.mapUnion_append", "kind": "theorem", "line": 257},
+  {"name": "List.mapUnion_union_mapUnion", "kind": "theorem", "line": 273},
+  {"name": "List.mapUnion_union_mapUnion'", "kind": "theorem", "line": 283},
+  {"name": "List.mapUnion_comm", "kind": "theorem", "line": 327},
+  {"name": "List.map_eqv_implies_mapUnion_eq", "kind": "theorem", "line": 396}
+ ],
+ "private": [
+  {"name": "List.mapUnion_pmap_subtype", "kind": "theorem", "line": 35}
+ ],
+ "missing": [],
+ "unread": "Unnamed instances, the names an `alias ⟨…⟩` command gives, and the names Lean generates for a declaration (constructors, recursors, derived instances) are not read from the source, so they are not listed."
+}

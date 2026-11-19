@@ -1,0 +1,32 @@
+{
+ "schema": "trough-ledger/v1",
+ "library": "Cedar",
+ "repo": "cedar-policy/cedar-spec",
+ "rev": "326d93c24490c90607a3e257318e9c6a049c8116",
+ "module": "Cedar.Thm.WellTyped.Expr.Typechecking",
+ "file": "cedar-lean/Cedar/Thm/WellTyped/Expr/Typechecking.lean",
+ "public": [
+  {"name": "Cedar.Thm.typechecked_is_well_typed_after_lifting_lit", "kind": "theorem", "line": 38},
+  {"name": "Cedar.Thm.typechecked_is_well_typed_after_lifting_var", "kind": "theorem", "line": 66},
+  {"name": "Cedar.Thm.typechecked_is_well_typed_after_lifting_ite", "kind": "theorem", "line": 87},
+  {"name": "Cedar.Thm.typechecked_is_well_typed_after_lifting_and", "kind": "theorem", "line": 176},
+  {"name": "Cedar.Thm.typechecked_is_well_typed_after_lifting_or", "kind": "theorem", "line": 225},
+  {"name": "Cedar.Thm.typechecked_is_well_typed_after_lifting_unary_app", "kind": "theorem", "line": 291},
+  {"name": "Cedar.Thm.typechecked_is_well_typed_after_lifting_binary_app", "kind": "theorem", "line": 331},
+  {"name": "Cedar.Thm.typechecked_is_well_typed_after_lifting_has_attr", "kind": "theorem", "line": 653},
+  {"name": "Cedar.Thm.typeOfExtHasAttr_tyNext_type_entity_or_record", "kind": "theorem", "line": 817},
+  {"name": "Cedar.Thm.typechecked_is_well_typed_after_lifting_ext_has_attr", "kind": "theorem", "line": 993},
+  {"name": "Cedar.Thm.typechecked_is_well_typed_after_lifting_get_attr_in_record", "kind": "theorem", "line": 1045},
+  {"name": "Cedar.Thm.typechecked_is_well_typed_after_lifting_get_attr", "kind": "theorem", "line": 1083},
+  {"name": "Cedar.Thm.typechecked_is_well_typed_after_lifting_call_arg", "kind": "theorem", "line": 1126},
+  {"name": "Cedar.Thm.typechecked_is_well_typed_after_lifting_call", "kind": "theorem", "line": 1150},
+  {"name": "Cedar.Thm.foldM_lub_some", "kind": "theorem", "line": 1439},
+  {"name": "Cedar.Thm.typechecked_is_well_typed_after_lifting_set", "kind": "theorem", "line": 1460},
+  {"name": "Cedar.Thm.record_lifting_make", "kind": "theorem", "line": 1519},
+  {"name": "Cedar.Thm.typechecked_is_well_typed_after_lifting_record", "kind": "theorem", "line": 1532},
+  {"name": "Cedar.Thm.typechecked_is_well_typed_after_lifting", "kind": "theorem", "line": 1571}
+ ],
+ "private": [],
+ "missing": [],
+ "unread": "Unnamed instances, the names an `alias ⟨…⟩` command gives, and the names Lean generates for a declaration (constructors, recursors, derived instances) are not read from the source, so they are not listed."
+}

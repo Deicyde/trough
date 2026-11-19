@@ -1,0 +1,42 @@
+{
+ "schema": "trough-ledger/v1",
+ "library": "Cedar",
+ "repo": "cedar-policy/cedar-spec",
+ "rev": "326d93c24490c90607a3e257318e9c6a049c8116",
+ "module": "Cedar.SymCC.TermType",
+ "file": "cedar-lean/Cedar/SymCC/TermType.lean",
+ "public": [
+  {"name": "Cedar.SymCC.TermPrimType", "kind": "inductive", "line": 35},
+  {"name": "Cedar.SymCC.TermType", "kind": "inductive", "line": 42},
+  {"name": "Cedar.SymCC.TermType.bool", "kind": "abbrev", "line": 48},
+  {"name": "Cedar.SymCC.TermType.bitvec", "kind": "abbrev", "line": 49},
+  {"name": "Cedar.SymCC.TermType.string", "kind": "abbrev", "line": 50},
+  {"name": "Cedar.SymCC.TermType.entity", "kind": "abbrev", "line": 51},
+  {"name": "Cedar.SymCC.TermType.ext", "kind": "abbrev", "line": 52},
+  {"name": "Cedar.SymCC.TermType.tagFor", "kind": "abbrev", "line": 54},
+  {"name": "Cedar.SymCC.TermType.isPrimType", "kind": "def", "line": 58},
+  {"name": "Cedar.SymCC.TermType.isEntityType", "kind": "def", "line": 63},
+  {"name": "Cedar.SymCC.TermType.isBitVecType", "kind": "def", "line": 68},
+  {"name": "Cedar.SymCC.TermType.isRecordType", "kind": "def", "line": 73},
+  {"name": "Cedar.SymCC.TermType.isOptionType", "kind": "def", "line": 78},
+  {"name": "Cedar.SymCC.TermType.isOptionEntityType", "kind": "def", "line": 83},
+  {"name": "Cedar.SymCC.TermType.ofType", "kind": "def", "line": 89},
+  {"name": "Cedar.SymCC.TermType.ofRecordType", "kind": "def", "line": 99},
+  {"name": "Cedar.SymCC.TermType.ofQualifiedType", "kind": "def", "line": 103},
+  {"name": "Cedar.SymCC.TermType.hasDecEq", "kind": "def", "line": 114},
+  {"name": "Cedar.SymCC.TermPrimType.mkName", "kind": "def", "line": 146},
+  {"name": "Cedar.SymCC.TermType.mkName", "kind": "def", "line": 153},
+  {"name": "Cedar.Validation.ExtType.lt", "kind": "def", "line": 162},
+  {"name": "Cedar.Validation.ExtType.decLt", "kind": "instance", "line": 174},
+  {"name": "Cedar.SymCC.TermPrimType.lt", "kind": "def", "line": 184},
+  {"name": "Cedar.SymCC.TermPrimType.decLt", "kind": "instance", "line": 193},
+  {"name": "Cedar.SymCC.TermType.lt", "kind": "def", "line": 198},
+  {"name": "Cedar.SymCC.TermType.decLt", "kind": "instance", "line": 220}
+ ],
+ "private": [
+  {"name": "Cedar.SymCC.TermType.hasListProdDec", "kind": "def", "line": 130},
+  {"name": "Cedar.SymCC.TermType.ltListProd", "kind": "def", "line": 206}
+ ],
+ "missing": [],
+ "unread": "Unnamed instances, the names an `alias ⟨…⟩` command gives, and the names Lean generates for a declaration (constructors, recursors, derived instances) are not read from the source, so they are not listed."
+}

@@ -1,0 +1,24 @@
+{
+ "schema": "trough-ledger/v1",
+ "library": "Cedar",
+ "repo": "cedar-policy/cedar-spec",
+ "rev": "326d93c24490c90607a3e257318e9c6a049c8116",
+ "module": "Cedar.Thm.Ext.IPAddr",
+ "file": "cedar-lean/Cedar/Thm/Ext/IPAddr.lean",
+ "public": [
+  {"name": "Cedar.Thm.IPAddr.wf_iff_exists_value", "kind": "theorem", "line": 41},
+  {"name": "Cedar.Thm.IPAddr.parse_sound", "kind": "theorem", "line": 58},
+  {"name": "Cedar.Thm.IPAddr.parse_complete_v4", "kind": "theorem", "line": 69},
+  {"name": "Cedar.Thm.IPAddr.parse_complete_v6", "kind": "theorem", "line": 84},
+  {"name": "Cedar.Thm.IPAddr.parse_complete", "kind": "theorem", "line": 115},
+  {"name": "Cedar.Thm.IPAddr.parse_eq_some_iff_isIPNetValue", "kind": "theorem", "line": 134},
+  {"name": "Cedar.Thm.IPAddr.isIPNetValue_unique", "kind": "theorem", "line": 140},
+  {"name": "Cedar.Thm.IPAddr.parse_eq_none_iff", "kind": "theorem", "line": 152},
+  {"name": "Cedar.Thm.IPAddr.parse_toString_roundtrip", "kind": "theorem", "line": 170},
+  {"name": "Cedar.Thm.IPAddr.toString_injective", "kind": "theorem", "line": 181},
+  {"name": "Cedar.Thm.IPAddr.normalize_eq_iff_parse_eq", "kind": "theorem", "line": 190}
+ ],
+ "private": [],
+ "missing": [],
+ "unread": "Unnamed instances, the names an `alias ⟨…⟩` command gives, and the names Lean generates for a declaration (constructors, recursors, derived instances) are not read from the source, so they are not listed."
+}

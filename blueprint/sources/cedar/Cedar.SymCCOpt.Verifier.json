@@ -1,0 +1,27 @@
+{
+ "schema": "trough-ledger/v1",
+ "library": "Cedar",
+ "repo": "cedar-policy/cedar-spec",
+ "rev": "326d93c24490c90607a3e257318e9c6a049c8116",
+ "module": "Cedar.SymCCOpt.Verifier",
+ "file": "cedar-lean/Cedar/SymCCOpt/Verifier.lean",
+ "public": [
+  {"name": "Cedar.SymCC.verifyEvaluateOpt", "kind": "def", "line": 44},
+  {"name": "Cedar.SymCC.verifyEvaluatePairOpt", "kind": "def", "line": 64},
+  {"name": "Cedar.SymCC.verifyIsAuthorizedOpt", "kind": "def", "line": 85},
+  {"name": "Cedar.SymCC.verifyNeverErrorsOpt", "kind": "def", "line": 102},
+  {"name": "Cedar.SymCC.verifyAlwaysMatchesOpt", "kind": "def", "line": 110},
+  {"name": "Cedar.SymCC.verifyNeverMatchesOpt", "kind": "def", "line": 118},
+  {"name": "Cedar.SymCC.verifyMatchesEquivalentOpt", "kind": "def", "line": 128},
+  {"name": "Cedar.SymCC.verifyMatchesImpliesOpt", "kind": "def", "line": 142},
+  {"name": "Cedar.SymCC.verifyMatchesDisjointOpt", "kind": "def", "line": 156},
+  {"name": "Cedar.SymCC.verifyImpliesOpt", "kind": "def", "line": 172},
+  {"name": "Cedar.SymCC.verifyAlwaysAllowsOpt", "kind": "def", "line": 179},
+  {"name": "Cedar.SymCC.verifyAlwaysDeniesOpt", "kind": "def", "line": 186},
+  {"name": "Cedar.SymCC.verifyEquivalentOpt", "kind": "def", "line": 195},
+  {"name": "Cedar.SymCC.verifyDisjointOpt", "kind": "def", "line": 206}
+ ],
+ "private": [],
+ "missing": [],
+ "unread": "Unnamed instances, the names an `alias ⟨…⟩` command gives, and the names Lean generates for a declaration (constructors, recursors, derived instances) are not read from the source, so they are not listed."
+}

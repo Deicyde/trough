@@ -1,0 +1,16 @@
+{
+ "schema": "trough-ledger/v1",
+ "library": "Cedar",
+ "repo": "cedar-policy/cedar-spec",
+ "rev": "326d93c24490c90607a3e257318e9c6a049c8116",
+ "module": "Cedar.Thm.Validation.Levels.BinaryApp",
+ "file": "cedar-lean/Cedar/Thm/Validation/Levels/BinaryApp.lean",
+ "public": [
+  {"name": "Cedar.Thm.not_dereferencing_apply₂_invariant_entities", "kind": "theorem", "line": 40},
+  {"name": "Cedar.Thm.level_based_slicing_is_sound_inₑ", "kind": "theorem", "line": 54},
+  {"name": "Cedar.Thm.level_based_slicing_is_sound_binary_app", "kind": "theorem", "line": 67}
+ ],
+ "private": [],
+ "missing": [],
+ "unread": "Unnamed instances, the names an `alias ⟨…⟩` command gives, and the names Lean generates for a declaration (constructors, recursors, derived instances) are not read from the source, so they are not listed."
+}

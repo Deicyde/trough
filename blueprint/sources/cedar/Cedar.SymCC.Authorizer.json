@@ -1,0 +1,16 @@
+{
+ "schema": "trough-ledger/v1",
+ "library": "Cedar",
+ "repo": "cedar-policy/cedar-spec",
+ "rev": "326d93c24490c90607a3e257318e9c6a049c8116",
+ "module": "Cedar.SymCC.Authorizer",
+ "file": "cedar-lean/Cedar/SymCC/Authorizer.lean",
+ "public": [
+  {"name": "Cedar.SymCC.compileWithEffect", "kind": "def", "line": 42},
+  {"name": "Cedar.SymCC.satisfiedPolicies", "kind": "def", "line": 48},
+  {"name": "Cedar.SymCC.isAuthorized", "kind": "def", "line": 52}
+ ],
+ "private": [],
+ "missing": [],
+ "unread": "Unnamed instances, the names an `alias ⟨…⟩` command gives, and the names Lean generates for a declaration (constructors, recursors, derived instances) are not read from the source, so they are not listed."
+}

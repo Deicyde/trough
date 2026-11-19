@@ -1,0 +1,31 @@
+{
+ "schema": "trough-ledger/v1",
+ "library": "Cedar",
+ "repo": "cedar-policy/cedar-spec",
+ "rev": "326d93c24490c90607a3e257318e9c6a049c8116",
+ "module": "Cedar.Thm.SymCC.Verifier.WellTypedOk",
+ "file": "cedar-lean/Cedar/Thm/SymCC/Verifier/WellTypedOk.lean",
+ "public": [
+  {"name": "Cedar.Thm.verifyEvaluate_is_ok", "kind": "theorem", "line": 27},
+  {"name": "Cedar.Thm.verifyEvaluatePair_is_ok", "kind": "theorem", "line": 39},
+  {"name": "Cedar.Thm.compileWithEffect_is_ok", "kind": "theorem", "line": 54},
+  {"name": "Cedar.Thm.satisfiedPolicies_is_ok", "kind": "theorem", "line": 67},
+  {"name": "Cedar.Thm.isAuthorized_is_ok", "kind": "theorem", "line": 103},
+  {"name": "Cedar.Thm.verifyIsAuthorized_is_ok", "kind": "theorem", "line": 114},
+  {"name": "Cedar.Thm.verifyNeverErrors_is_ok", "kind": "theorem", "line": 126},
+  {"name": "Cedar.Thm.verifyAlwaysMatches_is_ok", "kind": "theorem", "line": 134},
+  {"name": "Cedar.Thm.verifyNeverMatches_is_ok", "kind": "theorem", "line": 142},
+  {"name": "Cedar.Thm.verifyMatchesEquivalent_is_ok", "kind": "theorem", "line": 150},
+  {"name": "Cedar.Thm.verifyMatchesImplies_is_ok", "kind": "theorem", "line": 159},
+  {"name": "Cedar.Thm.verifyMatchesDisjoint_is_ok", "kind": "theorem", "line": 168},
+  {"name": "Cedar.Thm.verifyImplies_is_ok", "kind": "theorem", "line": 177},
+  {"name": "Cedar.Thm.isAuthorized_allowAll_is_ok", "kind": "theorem", "line": 185},
+  {"name": "Cedar.Thm.verifyAlwaysAllows_is_ok", "kind": "theorem", "line": 197},
+  {"name": "Cedar.Thm.verifyAlwaysDenies_is_ok", "kind": "theorem", "line": 212},
+  {"name": "Cedar.Thm.verifyEquivalent_is_ok", "kind": "theorem", "line": 226},
+  {"name": "Cedar.Thm.verifyDisjoint_is_ok", "kind": "theorem", "line": 235}
+ ],
+ "private": [],
+ "missing": [],
+ "unread": "Unnamed instances, the names an `alias ⟨…⟩` command gives, and the names Lean generates for a declaration (constructors, recursors, derived instances) are not read from the source, so they are not listed."
+}

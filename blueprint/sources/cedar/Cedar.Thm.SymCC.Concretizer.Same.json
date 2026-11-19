@@ -1,0 +1,18 @@
+{
+ "schema": "trough-ledger/v1",
+ "library": "Cedar",
+ "repo": "cedar-policy/cedar-spec",
+ "rev": "326d93c24490c90607a3e257318e9c6a049c8116",
+ "module": "Cedar.Thm.SymCC.Concretizer.Same",
+ "file": "cedar-lean/Cedar/Thm/SymCC/Concretizer/Same.lean",
+ "public": [
+  {"name": "Cedar.Thm.term_entityUID?_some_iff_eq", "kind": "theorem", "line": 32},
+  {"name": "Cedar.Thm.term_recordValue?_some_same", "kind": "theorem", "line": 47},
+  {"name": "Cedar.Thm.term_tag?_some_iff_eq", "kind": "theorem", "line": 107},
+  {"name": "Cedar.Thm.concretize?_taggedValueFor_some_implies", "kind": "theorem", "line": 245},
+  {"name": "Cedar.Thm.concretize?_some_same", "kind": "theorem", "line": 395}
+ ],
+ "private": [],
+ "missing": [],
+ "unread": "Unnamed instances, the names an `alias ⟨…⟩` command gives, and the names Lean generates for a declaration (constructors, recursors, derived instances) are not read from the source, so they are not listed."
+}

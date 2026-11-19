@@ -1,0 +1,22 @@
+{
+ "schema": "trough-ledger/v1",
+ "library": "Cedar",
+ "repo": "cedar-policy/cedar-spec",
+ "rev": "326d93c24490c90607a3e257318e9c6a049c8116",
+ "module": "Cedar.Thm.Data.Relation",
+ "file": "cedar-lean/Cedar/Thm/Data/Relation.lean",
+ "public": [
+  {"name": "Cedar.Relation.transGen_head", "kind": "theorem", "line": 32},
+  {"name": "Cedar.Relation.transGen_tail", "kind": "theorem", "line": 40},
+  {"name": "Cedar.Relation.transGen_mono", "kind": "theorem", "line": 48},
+  {"name": "Cedar.Relation.Walk", "kind": "inductive", "line": 56},
+  {"name": "Cedar.Relation.Walk.append", "kind": "theorem", "line": 61},
+  {"name": "Cedar.Relation.Walk.of_transGen", "kind": "theorem", "line": 69},
+  {"name": "Cedar.Relation.Walk.source_edge", "kind": "theorem", "line": 79},
+  {"name": "Cedar.Relation.Walk.suffix", "kind": "theorem", "line": 91},
+  {"name": "Cedar.Relation.Walk.nodup", "kind": "theorem", "line": 106}
+ ],
+ "private": [],
+ "missing": [],
+ "unread": "Unnamed instances, the names an `alias ⟨…⟩` command gives, and the names Lean generates for a declaration (constructors, recursors, derived instances) are not read from the source, so they are not listed."
+}

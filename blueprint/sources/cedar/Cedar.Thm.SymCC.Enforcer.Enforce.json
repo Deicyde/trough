@@ -1,0 +1,16 @@
+{
+ "schema": "trough-ledger/v1",
+ "library": "Cedar",
+ "repo": "cedar-policy/cedar-spec",
+ "rev": "326d93c24490c90607a3e257318e9c6a049c8116",
+ "module": "Cedar.Thm.SymCC.Enforcer.Enforce",
+ "file": "cedar-lean/Cedar/Thm/SymCC/Enforcer/Enforce.lean",
+ "public": [
+  {"name": "Cedar.Thm.enforce_satisfiedBy_swf", "kind": "theorem", "line": 95},
+  {"name": "Cedar.Thm.enforce_satisfiedBy_implies_swf_extract?", "kind": "theorem", "line": 430},
+  {"name": "Cedar.Thm.enforce_satisfiedBy_implies_swf", "kind": "theorem", "line": 461}
+ ],
+ "private": [],
+ "missing": [],
+ "unread": "Unnamed instances, the names an `alias ⟨…⟩` command gives, and the names Lean generates for a declaration (constructors, recursors, derived instances) are not read from the source, so they are not listed."
+}

@@ -1,0 +1,30 @@
+{
+ "schema": "trough-ledger/v1",
+ "library": "Cedar",
+ "repo": "cedar-policy/cedar-spec",
+ "rev": "326d93c24490c90607a3e257318e9c6a049c8116",
+ "module": "Cedar.Thm.WellTyped.Residual.Soundness",
+ "file": "cedar-lean/Cedar/Thm/WellTyped/Residual/Soundness.lean",
+ "public": [
+  {"name": "Cedar.Thm.residual_well_typed_is_sound_val", "kind": "theorem", "line": 36},
+  {"name": "Cedar.Thm.residual_well_typed_is_sound_var", "kind": "theorem", "line": 51},
+  {"name": "Cedar.Thm.residual_well_typed_is_sound_and", "kind": "theorem", "line": 89},
+  {"name": "Cedar.Thm.residual_well_typed_is_sound_or", "kind": "theorem", "line": 132},
+  {"name": "Cedar.Thm.residual_well_typed_is_sound_ite", "kind": "theorem", "line": 175},
+  {"name": "Cedar.Thm.residual_well_typed_is_sound_unary_app", "kind": "theorem", "line": 211},
+  {"name": "Cedar.Thm.residual_well_typed_is_sound_binary_app", "kind": "theorem", "line": 262},
+  {"name": "Cedar.Thm.residual_well_typed_is_sound_ext_has_attr_entity", "kind": "theorem", "line": 384},
+  {"name": "Cedar.Thm.residual_well_typed_is_sound_ext_has_attr_record", "kind": "theorem", "line": 403},
+  {"name": "Cedar.Thm.residual_well_typed_is_sound_has_attr_entity", "kind": "theorem", "line": 422},
+  {"name": "Cedar.Thm.residual_well_typed_is_sound_has_attr_record", "kind": "theorem", "line": 440},
+  {"name": "Cedar.Thm.residual_well_typed_is_sound_get_attr_entity", "kind": "theorem", "line": 458},
+  {"name": "Cedar.Thm.residual_well_typed_is_sound_get_attr_record", "kind": "theorem", "line": 528},
+  {"name": "Cedar.Thm.residual_well_typed_is_sound_set", "kind": "theorem", "line": 564},
+  {"name": "Cedar.Thm.residual_attr_value_has_attrType", "kind": "theorem", "line": 592},
+  {"name": "Cedar.Thm.residual_well_typed_is_sound_record", "kind": "theorem", "line": 636},
+  {"name": "Cedar.Thm.residual_well_typed_is_sound_call", "kind": "theorem", "line": 678}
+ ],
+ "private": [],
+ "missing": [],
+ "unread": "Unnamed instances, the names an `alias ⟨…⟩` command gives, and the names Lean generates for a declaration (constructors, recursors, derived instances) are not read from the source, so they are not listed."
+}

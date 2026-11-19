@@ -1,0 +1,20 @@
+{
+ "schema": "trough-ledger/v1",
+ "library": "Cedar",
+ "repo": "cedar-policy/cedar-spec",
+ "rev": "326d93c24490c90607a3e257318e9c6a049c8116",
+ "module": "Cedar.SymCC.Data",
+ "file": "cedar-lean/Cedar/SymCC/Data.lean",
+ "public": [
+  {"name": "BitVec.width", "kind": "def", "line": 26},
+  {"name": "BitVec.signedMin", "kind": "def", "line": 28},
+  {"name": "BitVec.signedMax", "kind": "def", "line": 30},
+  {"name": "BitVec.overflows", "kind": "def", "line": 32},
+  {"name": "Cedar.SymCC.EntityTag", "kind": "abbrev", "line": 40},
+  {"name": "Cedar.SymCC.EntityTag.mk", "kind": "abbrev", "line": 42},
+  {"name": "Cedar.SymCC.EntityTag.wf", "kind": "abbrev", "line": 45}
+ ],
+ "private": [],
+ "missing": [],
+ "unread": "Unnamed instances, the names an `alias ⟨…⟩` command gives, and the names Lean generates for a declaration (constructors, recursors, derived instances) are not read from the source, so they are not listed."
+}

@@ -1,0 +1,20 @@
+{
+ "schema": "trough-ledger/v1",
+ "library": "Cedar",
+ "repo": "cedar-policy/cedar-spec",
+ "rev": "326d93c24490c90607a3e257318e9c6a049c8116",
+ "module": "Cedar.Thm.BatchedEvaluator.Common",
+ "file": "cedar-lean/Cedar/Thm/BatchedEvaluator/Common.lean",
+ "public": [
+  {"name": "Cedar.Thm.EntityLoader.WellBehaved", "kind": "abbrev", "line": 25},
+  {"name": "Cedar.Thm.environment?_schema", "kind": "theorem", "line": 30},
+  {"name": "Cedar.Thm.actionEntities_refines", "kind": "theorem", "line": 41},
+  {"name": "Cedar.Thm.as_partial_request_refines", "kind": "theorem", "line": 70},
+  {"name": "Cedar.Thm.any_refines_empty_entities", "kind": "theorem", "line": 83},
+  {"name": "Cedar.Thm.entities_refine_append", "kind": "theorem", "line": 89},
+  {"name": "Cedar.Thm.direct_request_and_entities_refine", "kind": "theorem", "line": 110}
+ ],
+ "private": [],
+ "missing": [],
+ "unread": "Unnamed instances, the names an `alias ⟨…⟩` command gives, and the names Lean generates for a declaration (constructors, recursors, derived instances) are not read from the source, so they are not listed."
+}

@@ -1,0 +1,21 @@
+{
+ "schema": "trough-ledger/v1",
+ "library": "Cedar",
+ "repo": "cedar-policy/cedar-spec",
+ "rev": "326d93c24490c90607a3e257318e9c6a049c8116",
+ "module": "Cedar.SymCC.Function",
+ "file": "cedar-lean/Cedar/SymCC/Function.lean",
+ "public": [
+  {"name": "Cedar.SymCC.UDF", "kind": "structure", "line": 40},
+  {"name": "Cedar.SymCC.UnaryFunction", "kind": "inductive", "line": 48},
+  {"name": "Cedar.SymCC.UnaryFunction.argType", "kind": "def", "line": 53},
+  {"name": "Cedar.SymCC.UnaryFunction.outType", "kind": "def", "line": 58},
+  {"name": "Cedar.SymCC.UnaryFunction.isUUF", "kind": "def", "line": 63},
+  {"name": "Cedar.SymCC.UnaryFunction.isUDF", "kind": "def", "line": 68},
+  {"name": "Cedar.SymCC.UDF.isLiteral", "kind": "def", "line": 72},
+  {"name": "Cedar.SymCC.UnaryFunction.isLiteral", "kind": "def", "line": 77}
+ ],
+ "private": [],
+ "missing": [],
+ "unread": "Unnamed instances, the names an `alias ⟨…⟩` command gives, and the names Lean generates for a declaration (constructors, recursors, derived instances) are not read from the source, so they are not listed."
+}

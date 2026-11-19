@@ -1,0 +1,27 @@
+{
+ "schema": "trough-ledger/v1",
+ "library": "Cedar",
+ "repo": "cedar-policy/cedar-spec",
+ "rev": "326d93c24490c90607a3e257318e9c6a049c8116",
+ "module": "Cedar.TPE.Residual",
+ "file": "cedar-lean/Cedar/TPE/Residual.lean",
+ "public": [
+  {"name": "Cedar.Spec.Residual", "kind": "inductive", "line": 29},
+  {"name": "Cedar.Spec.Residual.asValue", "kind": "def", "line": 57},
+  {"name": "Cedar.Spec.Value.toResidual", "kind": "def", "line": 61},
+  {"name": "Cedar.Spec.Residual.isError", "kind": "def", "line": 64},
+  {"name": "Cedar.Spec.Residual.typeOf", "kind": "def", "line": 68},
+  {"name": "Cedar.Spec.BinaryOp.canError", "kind": "def", "line": 85},
+  {"name": "Cedar.Spec.UnaryOp.canError", "kind": "def", "line": 89},
+  {"name": "Cedar.Spec.Residual.errorFree", "kind": "def", "line": 94},
+  {"name": "Cedar.Spec.Residual.evaluate", "kind": "def", "line": 121},
+  {"name": "Cedar.Spec.Residual.allLiteralUIDs", "kind": "def", "line": 176},
+  {"name": "Cedar.Spec.decResidual", "kind": "def", "line": 217},
+  {"name": "Cedar.Spec.decProdAttrResidualList", "kind": "def", "line": 265},
+  {"name": "Cedar.Spec.decResidualList", "kind": "def", "line": 275},
+  {"name": "Cedar.Validation.TypedExpr.toResidual", "kind": "def", "line": 295}
+ ],
+ "private": [],
+ "missing": [],
+ "unread": "Unnamed instances, the names an `alias ⟨…⟩` command gives, and the names Lean generates for a declaration (constructors, recursors, derived instances) are not read from the source, so they are not listed."
+}

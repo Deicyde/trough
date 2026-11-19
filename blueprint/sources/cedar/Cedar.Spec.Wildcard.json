@@ -1,0 +1,24 @@
+{
+ "schema": "trough-ledger/v1",
+ "library": "Cedar",
+ "repo": "cedar-policy/cedar-spec",
+ "rev": "326d93c24490c90607a3e257318e9c6a049c8116",
+ "module": "Cedar.Spec.Wildcard",
+ "file": "cedar-lean/Cedar/Spec/Wildcard.lean",
+ "public": [
+  {"name": "Cedar.Spec.PatElem", "kind": "inductive", "line": 25},
+  {"name": "Cedar.Spec.PatElem.lt", "kind": "def", "line": 33},
+  {"name": "Cedar.Spec.PatElem.decLt", "kind": "instance", "line": 41},
+  {"name": "Cedar.Spec.Pattern", "kind": "abbrev", "line": 44},
+  {"name": "Cedar.Spec.wildcardMatch", "kind": "def", "line": 82}
+ ],
+ "private": [
+  {"name": "Cedar.Spec.charMatch", "kind": "def", "line": 46},
+  {"name": "Cedar.Spec.wildcard", "kind": "def", "line": 50},
+  {"name": "Cedar.Spec.Cache", "kind": "abbrev", "line": 54},
+  {"name": "Cedar.Spec.CacheM", "kind": "abbrev", "line": 56},
+  {"name": "Cedar.Spec.wildcardMatchIdx", "kind": "def", "line": 58}
+ ],
+ "missing": [],
+ "unread": "Unnamed instances, the names an `alias ⟨…⟩` command gives, and the names Lean generates for a declaration (constructors, recursors, derived instances) are not read from the source, so they are not listed."
+}

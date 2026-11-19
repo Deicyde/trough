@@ -1,0 +1,18 @@
+{
+ "schema": "trough-ledger/v1",
+ "library": "Cedar",
+ "repo": "cedar-policy/cedar-spec",
+ "rev": "326d93c24490c90607a3e257318e9c6a049c8116",
+ "module": "Cedar.Thm.SymCC.Enforcer.Asserts",
+ "file": "cedar-lean/Cedar/Thm/SymCC/Enforcer/Asserts.lean",
+ "public": [
+  {"name": "Cedar.Thm.asserts_satisfiedBy_true", "kind": "theorem", "line": 28},
+  {"name": "Cedar.Thm.asserts_satisfiable_def", "kind": "theorem", "line": 34},
+  {"name": "Cedar.Thm.asserts_unsatisfiable_def", "kind": "theorem", "line": 40},
+  {"name": "Cedar.Thm.asserts_last_not_true", "kind": "theorem", "line": 47},
+  {"name": "Cedar.Thm.asserts_all_true", "kind": "theorem", "line": 60}
+ ],
+ "private": [],
+ "missing": [],
+ "unread": "Unnamed instances, the names an `alias ⟨…⟩` command gives, and the names Lean generates for a declaration (constructors, recursors, derived instances) are not read from the source, so they are not listed."
+}

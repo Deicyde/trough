@@ -1,0 +1,20 @@
+{
+ "schema": "trough-ledger/v1",
+ "library": "Cedar",
+ "repo": "cedar-policy/cedar-spec",
+ "rev": "326d93c24490c90607a3e257318e9c6a049c8116",
+ "module": "Cedar.Thm.Ext.Decimal.Grammar",
+ "file": "cedar-lean/Cedar/Thm/Ext/Decimal/Grammar.lean",
+ "public": [
+  {"name": "Cedar.Thm.Decimal.IsNatural", "kind": "abbrev", "line": 47},
+  {"name": "Cedar.Thm.Decimal.IsWfFrac", "kind": "def", "line": 51},
+  {"name": "Cedar.Thm.Decimal.DecimalProduction", "kind": "def", "line": 56},
+  {"name": "Cedar.Thm.Decimal.IsWfDecimal", "kind": "def", "line": 65},
+  {"name": "Cedar.Thm.Decimal.value", "kind": "def", "line": 74},
+  {"name": "Cedar.Thm.Decimal.IsDecimalValue", "kind": "def", "line": 86},
+  {"name": "Cedar.Thm.Decimal.normalize", "kind": "def", "line": 93}
+ ],
+ "private": [],
+ "missing": [],
+ "unread": "Unnamed instances, the names an `alias ⟨…⟩` command gives, and the names Lean generates for a declaration (constructors, recursors, derived instances) are not read from the source, so they are not listed."
+}

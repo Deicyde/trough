@@ -1,0 +1,15 @@
+{
+ "schema": "trough-ledger/v1",
+ "library": "Cedar",
+ "repo": "cedar-policy/cedar-spec",
+ "rev": "326d93c24490c90607a3e257318e9c6a049c8116",
+ "module": "Cedar.Thm.TPE.WellTyped.Basic",
+ "file": "cedar-lean/Cedar/Thm/TPE/WellTyped/Basic.lean",
+ "public": [
+  {"name": "Cedar.Thm.PEWellTyped", "kind": "abbrev", "line": 36},
+  {"name": "Cedar.Thm.entity_data_from_partial", "kind": "theorem", "line": 47}
+ ],
+ "private": [],
+ "missing": [],
+ "unread": "Unnamed instances, the names an `alias ⟨…⟩` command gives, and the names Lean generates for a declaration (constructors, recursors, derived instances) are not read from the source, so they are not listed."
+}

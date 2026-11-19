@@ -1,0 +1,21 @@
+{
+ "schema": "trough-ledger/v1",
+ "library": "Cedar",
+ "repo": "cedar-policy/cedar-spec",
+ "rev": "326d93c24490c90607a3e257318e9c6a049c8116",
+ "module": "Cedar.Validation.TypedExpr",
+ "file": "cedar-lean/Cedar/Validation/TypedExpr.lean",
+ "public": [
+  {"name": "Cedar.Validation.TypedExpr", "kind": "inductive", "line": 36},
+  {"name": "Cedar.Validation.decTypedExpr", "kind": "def", "line": 56},
+  {"name": "Cedar.Validation.TypedExpr.typeOf", "kind": "def", "line": 122},
+  {"name": "Cedar.Validation.TypedExpr.toExpr", "kind": "def", "line": 137},
+  {"name": "Cedar.Validation.TypedExpr.liftBoolTypes", "kind": "def", "line": 159}
+ ],
+ "private": [
+  {"name": "Cedar.Validation.decProdAttrExprList", "kind": "def", "line": 100},
+  {"name": "Cedar.Validation.decExprList", "kind": "def", "line": 110}
+ ],
+ "missing": [],
+ "unread": "Unnamed instances, the names an `alias ⟨…⟩` command gives, and the names Lean generates for a declaration (constructors, recursors, derived instances) are not read from the source, so they are not listed."
+}

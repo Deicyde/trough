@@ -1,0 +1,30 @@
+{
+ "schema": "trough-ledger/v1",
+ "library": "Cedar",
+ "repo": "cedar-policy/cedar-spec",
+ "rev": "326d93c24490c90607a3e257318e9c6a049c8116",
+ "module": "Cedar.Validation.EnvironmentValidator",
+ "file": "cedar-lean/Cedar/Validation/EnvironmentValidator.lean",
+ "public": [
+  {"name": "Cedar.Validation.EnvironmentValidationError", "kind": "inductive", "line": 35},
+  {"name": "Cedar.Validation.EnvironmentValidationResult", "kind": "abbrev", "line": 43},
+  {"name": "Cedar.Validation.EntityType.validateWellFormed", "kind": "def", "line": 45},
+  {"name": "Cedar.Validation.QualifiedType.validateWellFormed", "kind": "def", "line": 52},
+  {"name": "Cedar.Validation.validateAttrsWellFormed", "kind": "def", "line": 59},
+  {"name": "Cedar.Validation.CedarType.validateWellFormed", "kind": "def", "line": 67},
+  {"name": "Cedar.Validation.CedarType.validateLifted", "kind": "def", "line": 88},
+  {"name": "Cedar.Validation.StandardSchemaEntry.validateWellFormed", "kind": "def", "line": 113},
+  {"name": "Cedar.Validation.EntitySchemaEntry.validateWellFormed", "kind": "def", "line": 132},
+  {"name": "Cedar.Validation.EntitySchema.validateWellFormed", "kind": "def", "line": 141},
+  {"name": "Cedar.Validation.ActionSchemaEntry.validateWellFormed", "kind": "def", "line": 148},
+  {"name": "Cedar.Validation.ActionSchema.validateAcyclicActionHierarchy", "kind": "def", "line": 167},
+  {"name": "Cedar.Validation.ActionSchema.validateTransitiveActionHierarchy", "kind": "def", "line": 173},
+  {"name": "Cedar.Validation.ActionSchema.validateWellFormed", "kind": "def", "line": 182},
+  {"name": "Cedar.Validation.RequestType.validateWellFormed", "kind": "def", "line": 195},
+  {"name": "Cedar.Validation.TypeEnv.validateWellFormed", "kind": "def", "line": 209},
+  {"name": "Cedar.Validation.Schema.validateWellFormed", "kind": "def", "line": 216}
+ ],
+ "private": [],
+ "missing": [],
+ "unread": "Unnamed instances, the names an `alias ⟨…⟩` command gives, and the names Lean generates for a declaration (constructors, recursors, derived instances) are not read from the source, so they are not listed."
+}

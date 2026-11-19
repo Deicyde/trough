@@ -1,0 +1,25 @@
+{
+ "schema": "trough-ledger/v1",
+ "library": "Cedar",
+ "repo": "cedar-policy/cedar-spec",
+ "rev": "326d93c24490c90607a3e257318e9c6a049c8116",
+ "module": "Cedar.Thm.TPE.Authorizer",
+ "file": "cedar-lean/Cedar/Thm/TPE/Authorizer.lean",
+ "public": [
+  {"name": "Cedar.Thm.ResidualPoliciesEquiv", "kind": "def", "line": 38},
+  {"name": "Cedar.Thm.isValidAndConsistent_env", "kind": "theorem", "line": 49},
+  {"name": "Cedar.Thm.evaluatePolicies_residuals_equiv", "kind": "theorem", "line": 82},
+  {"name": "Cedar.Thm.reauthorize_satisfied_policies_equiv", "kind": "theorem", "line": 104},
+  {"name": "Cedar.Thm.reauthorize_error_policies_equiv", "kind": "theorem", "line": 136},
+  {"name": "Cedar.Thm.no_satisfied_effect_if_empty_satisfied_and_residual_policies", "kind": "theorem", "line": 174},
+  {"name": "Cedar.Thm.satisfied_effect_if_non_empty_satisfied_policies", "kind": "theorem", "line": 211},
+  {"name": "Cedar.Thm.residuals_decision_agrees", "kind": "theorem", "line": 238},
+  {"name": "Cedar.Thm.partial_authorize_error_policies_is_sound", "kind": "theorem", "line": 267},
+  {"name": "Cedar.Thm.partial_authorize_satisfied_policies_is_sound", "kind": "theorem", "line": 293},
+  {"name": "Cedar.Thm.partial_authorize_satisfied_forbids_is_sound", "kind": "theorem", "line": 321},
+  {"name": "Cedar.Thm.partial_authorize_satisfied_permits_is_sound", "kind": "theorem", "line": 340}
+ ],
+ "private": [],
+ "missing": [],
+ "unread": "Unnamed instances, the names an `alias ⟨…⟩` command gives, and the names Lean generates for a declaration (constructors, recursors, derived instances) are not read from the source, so they are not listed."
+}

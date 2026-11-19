@@ -1,0 +1,27 @@
+{
+ "schema": "trough-ledger/v1",
+ "library": "Cedar",
+ "repo": "cedar-policy/cedar-spec",
+ "rev": "326d93c24490c90607a3e257318e9c6a049c8116",
+ "module": "Cedar.Thm.SymCC.Opt.Verifier",
+ "file": "cedar-lean/Cedar/Thm/SymCC/Opt/Verifier.lean",
+ "public": [
+  {"name": "Cedar.Thm.verifyEvaluateOpt_eqv_verifyEvaluate_ok", "kind": "theorem", "line": 37},
+  {"name": "Cedar.Thm.verifyEvaluatePairOpt_eqv_verifyEvaluatePair_ok", "kind": "theorem", "line": 61},
+  {"name": "Cedar.Thm.verifyIsAuthorizedOpt_eqv_verifyIsAuthorized_ok", "kind": "theorem", "line": 97},
+  {"name": "Cedar.Thm.verifyNeverErrorsOpt_eqv_verifyNeverErrors_ok", "kind": "theorem", "line": 133},
+  {"name": "Cedar.Thm.verifyAlwaysMatchesOpt_eqv_verifyAlwaysMatches_ok", "kind": "theorem", "line": 146},
+  {"name": "Cedar.Thm.verifyNeverMatchesOpt_eqv_verifyNeverMatches_ok", "kind": "theorem", "line": 159},
+  {"name": "Cedar.Thm.verifyMatchesEquivalentOpt_eqv_verifyMatchesEquivalent_ok", "kind": "theorem", "line": 172},
+  {"name": "Cedar.Thm.verifyMatchesImpliesOpt_eqv_verifyMatchesImplies_ok", "kind": "theorem", "line": 187},
+  {"name": "Cedar.Thm.verifyMatchesDisjointOpt_eqv_verifyMatchesDisjoint_ok", "kind": "theorem", "line": 202},
+  {"name": "Cedar.Thm.verifyImpliesOpt_eqv_verifyImplies_ok", "kind": "theorem", "line": 217},
+  {"name": "Cedar.Thm.verifyAlwaysAllowsOpt_eqv_verifyAlwaysAllows_ok", "kind": "theorem", "line": 232},
+  {"name": "Cedar.Thm.verifyAlwaysDeniesOpt_eqv_verifyAlwaysDenies_ok", "kind": "theorem", "line": 249},
+  {"name": "Cedar.Thm.verifyEquivalentOpt_eqv_verifyEquivalent_ok", "kind": "theorem", "line": 268},
+  {"name": "Cedar.Thm.verifyDisjointOpt_eqv_verifyDisjoint_ok", "kind": "theorem", "line": 283}
+ ],
+ "private": [],
+ "missing": [],
+ "unread": "Unnamed instances, the names an `alias ⟨…⟩` command gives, and the names Lean generates for a declaration (constructors, recursors, derived instances) are not read from the source, so they are not listed."
+}

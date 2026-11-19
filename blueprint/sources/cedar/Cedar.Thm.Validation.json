@@ -1,0 +1,19 @@
+{
+ "schema": "trough-ledger/v1",
+ "library": "Cedar",
+ "repo": "cedar-policy/cedar-spec",
+ "rev": "326d93c24490c90607a3e257318e9c6a049c8116",
+ "module": "Cedar.Thm.Validation",
+ "file": "cedar-lean/Cedar/Thm/Validation.lean",
+ "public": [
+  {"name": "Cedar.Thm.validation_is_sound", "kind": "theorem", "line": 55},
+  {"name": "Cedar.Thm.validate_with_level_is_sound", "kind": "theorem", "line": 91},
+  {"name": "Cedar.Thm.validate_with_level_no_dne", "kind": "theorem", "line": 111},
+  {"name": "Cedar.Thm.error_of_mem_erroringPolicies", "kind": "theorem", "line": 129},
+  {"name": "Cedar.Thm.validate_with_level_no_dne_response", "kind": "theorem", "line": 144},
+  {"name": "Cedar.Thm.validation_is_sound_response", "kind": "theorem", "line": 165}
+ ],
+ "private": [],
+ "missing": [],
+ "unread": "Unnamed instances, the names an `alias ⟨…⟩` command gives, and the names Lean generates for a declaration (constructors, recursors, derived instances) are not read from the source, so they are not listed."
+}

@@ -1,0 +1,17 @@
+{
+ "schema": "trough-ledger/v1",
+ "library": "Cedar",
+ "repo": "cedar-policy/cedar-spec",
+ "rev": "326d93c24490c90607a3e257318e9c6a049c8116",
+ "module": "Cedar.SymCCOpt.Enforcer",
+ "file": "cedar-lean/Cedar/SymCCOpt/Enforcer.lean",
+ "public": [
+  {"name": "Cedar.SymCC.enforceCompiledPolicy", "kind": "def", "line": 29},
+  {"name": "Cedar.SymCC.enforceCompiledPolicySet", "kind": "def", "line": 36},
+  {"name": "Cedar.SymCC.enforcePairCompiledPolicy", "kind": "def", "line": 44},
+  {"name": "Cedar.SymCC.enforcePairCompiledPolicySet", "kind": "def", "line": 54}
+ ],
+ "private": [],
+ "missing": [],
+ "unread": "Unnamed instances, the names an `alias ⟨…⟩` command gives, and the names Lean generates for a declaration (constructors, recursors, derived instances) are not read from the source, so they are not listed."
+}

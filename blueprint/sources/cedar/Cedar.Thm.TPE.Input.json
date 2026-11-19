@@ -1,0 +1,24 @@
+{
+ "schema": "trough-ledger/v1",
+ "library": "Cedar",
+ "repo": "cedar-policy/cedar-spec",
+ "rev": "326d93c24490c90607a3e257318e9c6a049c8116",
+ "module": "Cedar.Thm.TPE.Input",
+ "file": "cedar-lean/Cedar/Thm/TPE/Input.lean",
+ "public": [
+  {"name": "Cedar.Thm.decide_eq_implies_eq", "kind": "theorem", "line": 33},
+  {"name": "Cedar.Thm.PartialIsValid", "kind": "inductive", "line": 37},
+  {"name": "Cedar.Thm.PartialIsValid.some_inv", "kind": "theorem", "line": 44},
+  {"name": "Cedar.Thm.partial_is_valid_rfl", "kind": "theorem", "line": 52},
+  {"name": "Cedar.Thm.RequestRefines", "kind": "def", "line": 62},
+  {"name": "Cedar.Thm.EntitiesRefine", "kind": "def", "line": 70},
+  {"name": "Cedar.Thm.RequestAndEntitiesRefine", "kind": "def", "line": 79},
+  {"name": "Cedar.Thm.validatePartialRequest_ok_environment?", "kind": "theorem", "line": 82},
+  {"name": "Cedar.Thm.entitiesIsConsistent_implies_refines", "kind": "theorem", "line": 95},
+  {"name": "Cedar.Thm.requestIsConsistent_implies_refines", "kind": "theorem", "line": 112},
+  {"name": "Cedar.Thm.consistent_checks_ensure_refinement", "kind": "theorem", "line": 128}
+ ],
+ "private": [],
+ "missing": [],
+ "unread": "Unnamed instances, the names an `alias ⟨…⟩` command gives, and the names Lean generates for a declaration (constructors, recursors, derived instances) are not read from the source, so they are not listed."
+}

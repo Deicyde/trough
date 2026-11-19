@@ -1,0 +1,20 @@
+{
+ "schema": "trough-ledger/v1",
+ "library": "Cedar",
+ "repo": "cedar-policy/cedar-spec",
+ "rev": "326d93c24490c90607a3e257318e9c6a049c8116",
+ "module": "Cedar.Thm.Validation.Validator",
+ "file": "cedar-lean/Cedar/Thm/Validation/Validator.lean",
+ "public": [
+  {"name": "Cedar.Thm.EvaluatesToBool", "kind": "def", "line": 38},
+  {"name": "Cedar.Thm.AllEvaluateToBool", "kind": "def", "line": 42},
+  {"name": "Cedar.Thm.InstanceOfWellFormedSchema", "kind": "def", "line": 45},
+  {"name": "Cedar.Thm.action_matches_env", "kind": "theorem", "line": 49},
+  {"name": "Cedar.Thm.typecheck_policy_produces_wt", "kind": "theorem", "line": 58},
+  {"name": "Cedar.Thm.typecheck_policy_is_sound", "kind": "theorem", "line": 71},
+  {"name": "Cedar.Thm.typecheck_policy_with_environments_is_sound", "kind": "theorem", "line": 90}
+ ],
+ "private": [],
+ "missing": [],
+ "unread": "Unnamed instances, the names an `alias ⟨…⟩` command gives, and the names Lean generates for a declaration (constructors, recursors, derived instances) are not read from the source, so they are not listed."
+}

@@ -1,0 +1,30 @@
+{
+ "schema": "trough-ledger/v1",
+ "library": "Cedar",
+ "repo": "cedar-policy/cedar-spec",
+ "rev": "326d93c24490c90607a3e257318e9c6a049c8116",
+ "module": "Cedar.Thm.SymCC.Compiler.Attr",
+ "file": "cedar-lean/Cedar/Thm/SymCC/Compiler/Attr.lean",
+ "public": [
+  {"name": "Cedar.Thm.compile_evaluate_hasAttr_record", "kind": "theorem", "line": 76},
+  {"name": "Cedar.Thm.compile_evaluate_hasAttr_entity", "kind": "theorem", "line": 145},
+  {"name": "Cedar.Thm.compile_evaluate_hasAttr", "kind": "theorem", "line": 186},
+  {"name": "Cedar.Thm.interpret_compileHasAttr", "kind": "theorem", "line": 260},
+  {"name": "Cedar.Thm.compileHasAttr_false_of_getAttr_error_typeOf_eq", "kind": "theorem", "line": 332},
+  {"name": "Cedar.Thm.compileGetAttr_noSuchAttribute_of_error_typeOf_eq", "kind": "theorem", "line": 350},
+  {"name": "Cedar.Thm.interpret_compileGetAttr_error_of_compileHasAttr_false", "kind": "theorem", "line": 368},
+  {"name": "Cedar.Thm.interpret_option_get_aux", "kind": "theorem", "line": 387},
+  {"name": "Cedar.Thm.compileHasAttr_interpret_ok", "kind": "theorem", "line": 407},
+  {"name": "Cedar.Thm.compile_interpret_hasAttr", "kind": "theorem", "line": 418},
+  {"name": "Cedar.Thm.compile_evaluate_getAttr_record", "kind": "theorem", "line": 488},
+  {"name": "Cedar.Thm.compile_evaluate_getAttr_entity", "kind": "theorem", "line": 526},
+  {"name": "Cedar.Thm.compile_evaluate_getAttr", "kind": "theorem", "line": 573},
+  {"name": "Cedar.Thm.interpret_compileGetAttr", "kind": "theorem", "line": 610},
+  {"name": "Cedar.Thm.compileGetAttr_interpret_ok", "kind": "theorem", "line": 669},
+  {"name": "Cedar.Thm.compileGetAttr_ok_typeOf_eq", "kind": "theorem", "line": 721},
+  {"name": "Cedar.Thm.compile_interpret_getAttr", "kind": "theorem", "line": 749}
+ ],
+ "private": [],
+ "missing": [],
+ "unread": "Unnamed instances, the names an `alias ⟨…⟩` command gives, and the names Lean generates for a declaration (constructors, recursors, derived instances) are not read from the source, so they are not listed."
+}

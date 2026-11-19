@@ -1,0 +1,30 @@
+{
+ "schema": "trough-ledger/v1",
+ "library": "Cedar",
+ "repo": "cedar-policy/cedar-spec",
+ "rev": "326d93c24490c90607a3e257318e9c6a049c8116",
+ "module": "Cedar.Thm.Validation.RequestEntityValidation",
+ "file": "cedar-lean/Cedar/Thm/Validation/RequestEntityValidation.lean",
+ "public": [
+  {"name": "Cedar.Thm.instance_of_bool_type_refl", "kind": "theorem", "line": 20},
+  {"name": "Cedar.Thm.instance_of_entity_type_refl", "kind": "theorem", "line": 27},
+  {"name": "Cedar.Thm.instance_of_ext_type_refl", "kind": "theorem", "line": 36},
+  {"name": "Cedar.Thm.instance_of_type_refl", "kind": "theorem", "line": 43},
+  {"name": "Cedar.Thm.instance_of_request_type_refl", "kind": "theorem", "line": 156},
+  {"name": "Cedar.Thm.instance_of_schema_refl", "kind": "theorem", "line": 171},
+  {"name": "Cedar.Thm.instance_of_well_formed_env", "kind": "theorem", "line": 255},
+  {"name": "Cedar.Thm.request_and_entities_validate_implies_instance_of_wf_schema", "kind": "theorem", "line": 272},
+  {"name": "Cedar.Thm.instanceOfType_mono", "kind": "theorem", "line": 296},
+  {"name": "Cedar.Thm.instanceOfType_record_contains", "kind": "theorem", "line": 359},
+  {"name": "Cedar.Thm.instanceOfType_record_required", "kind": "theorem", "line": 371},
+  {"name": "Cedar.Thm.instanceOfEntitySchemaEntry_mono", "kind": "theorem", "line": 385},
+  {"name": "Cedar.Thm.instanceOfActionSchemaEntry_mono", "kind": "theorem", "line": 420},
+  {"name": "Cedar.Thm.instanceOfActionSchemaEntry_find?", "kind": "theorem", "line": 442},
+  {"name": "Cedar.Thm.instanceOfSchemaEntry_eq", "kind": "theorem", "line": 456},
+  {"name": "Cedar.Thm.instanceOfSchemaEntry_attrs", "kind": "theorem", "line": 468},
+  {"name": "Cedar.Thm.instanceOfSchemaEntry_actionEntity", "kind": "theorem", "line": 481}
+ ],
+ "private": [],
+ "missing": [],
+ "unread": "Unnamed instances, the names an `alias ⟨…⟩` command gives, and the names Lean generates for a declaration (constructors, recursors, derived instances) are not read from the source, so they are not listed."
+}

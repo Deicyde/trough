@@ -1,0 +1,17 @@
+{
+ "schema": "trough-ledger/v1",
+ "library": "Cedar",
+ "repo": "cedar-policy/cedar-spec",
+ "rev": "326d93c24490c90607a3e257318e9c6a049c8116",
+ "module": "Cedar.Thm.SymCC.Term.UDF",
+ "file": "cedar-lean/Cedar/Thm/SymCC/Term/UDF.lean",
+ "public": [
+  {"name": "Cedar.Thm.map_make_filterMap_find?", "kind": "theorem", "line": 31},
+  {"name": "Cedar.Thm.map_make_filterMap_find?_none", "kind": "theorem", "line": 65},
+  {"name": "Cedar.Thm.app_table_make_filterMap", "kind": "theorem", "line": 93},
+  {"name": "Cedar.Thm.map_make_filterMap_flatten_find?", "kind": "theorem", "line": 124}
+ ],
+ "private": [],
+ "missing": [],
+ "unread": "Unnamed instances, the names an `alias ⟨…⟩` command gives, and the names Lean generates for a declaration (constructors, recursors, derived instances) are not read from the source, so they are not listed."
+}

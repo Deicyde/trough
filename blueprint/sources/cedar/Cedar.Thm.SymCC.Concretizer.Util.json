@@ -1,0 +1,21 @@
+{
+ "schema": "trough-ledger/v1",
+ "library": "Cedar",
+ "repo": "cedar-policy/cedar-spec",
+ "rev": "326d93c24490c90607a3e257318e9c6a049c8116",
+ "module": "Cedar.Thm.SymCC.Concretizer.Util",
+ "file": "cedar-lean/Cedar/Thm/SymCC/Concretizer/Util.lean",
+ "public": [
+  {"name": "Cedar.Thm.concretize?_ρ_some_eq", "kind": "theorem", "line": 34},
+  {"name": "Cedar.Thm.concretize?_εs_some_eq", "kind": "theorem", "line": 48},
+  {"name": "Cedar.Thm.concretize?_entityData?_some_eq", "kind": "theorem", "line": 59},
+  {"name": "Cedar.Thm.concretize?_δ_isValidEntityUID_implies_wfl", "kind": "theorem", "line": 71},
+  {"name": "Cedar.Thm.wf_δ_implies_wf_app_attrs", "kind": "theorem", "line": 84},
+  {"name": "Cedar.Thm.wf_δ_implies_wf_app_ancs", "kind": "theorem", "line": 94},
+  {"name": "Cedar.Thm.wf_δ_implies_wf_app_tags_keys", "kind": "theorem", "line": 107},
+  {"name": "Cedar.Thm.lit_tagOf", "kind": "theorem", "line": 121}
+ ],
+ "private": [],
+ "missing": [],
+ "unread": "Unnamed instances, the names an `alias ⟨…⟩` command gives, and the names Lean generates for a declaration (constructors, recursors, derived instances) are not read from the source, so they are not listed."
+}

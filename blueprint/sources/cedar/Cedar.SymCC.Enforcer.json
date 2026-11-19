@@ -1,0 +1,18 @@
+{
+ "schema": "trough-ledger/v1",
+ "library": "Cedar",
+ "repo": "cedar-policy/cedar-spec",
+ "rev": "326d93c24490c90607a3e257318e9c6a049c8116",
+ "module": "Cedar.SymCC.Enforcer",
+ "file": "cedar-lean/Cedar/SymCC/Enforcer.lean",
+ "public": [
+  {"name": "Cedar.SymCC.footprint", "kind": "def", "line": 61},
+  {"name": "Cedar.SymCC.footprints", "kind": "def", "line": 91},
+  {"name": "Cedar.SymCC.acyclicity", "kind": "def", "line": 97},
+  {"name": "Cedar.SymCC.transitivity", "kind": "def", "line": 110},
+  {"name": "Cedar.SymCC.enforce", "kind": "def", "line": 141}
+ ],
+ "private": [],
+ "missing": [],
+ "unread": "Unnamed instances, the names an `alias ⟨…⟩` command gives, and the names Lean generates for a declaration (constructors, recursors, derived instances) are not read from the source, so they are not listed."
+}

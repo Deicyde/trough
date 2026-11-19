@@ -1,0 +1,20 @@
+{
+ "schema": "trough-ledger/v1",
+ "library": "Cedar",
+ "repo": "cedar-policy/cedar-spec",
+ "rev": "326d93c24490c90607a3e257318e9c6a049c8116",
+ "module": "Cedar.Thm.SymCC.Opt.Asserts",
+ "file": "cedar-lean/Cedar/Thm/SymCC/Opt/Asserts.lean",
+ "public": [
+  {"name": "Cedar.Thm.Asserts.Equiv", "kind": "inductive", "line": 28},
+  {"name": "Cedar.Thm.ResultAssertsEquiv", "kind": "def", "line": 37},
+  {"name": "Cedar.Thm.Asserts.Equiv.symm", "kind": "theorem", "line": 47},
+  {"name": "Cedar.Thm.Asserts.Equiv.checkUnsatAsserts", "kind": "theorem", "line": 57},
+  {"name": "Cedar.Thm.Asserts.Equiv.checkSatAsserts", "kind": "theorem", "line": 69},
+  {"name": "Cedar.Thm.Asserts.Equiv.satAsserts?", "kind": "theorem", "line": 81},
+  {"name": "Cedar.Thm.Asserts.Equiv.satAssertsOpt?", "kind": "theorem", "line": 91}
+ ],
+ "private": [],
+ "missing": [],
+ "unread": "Unnamed instances, the names an `alias ⟨…⟩` command gives, and the names Lean generates for a declaration (constructors, recursors, derived instances) are not read from the source, so they are not listed."
+}

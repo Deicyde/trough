@@ -1,0 +1,24 @@
+{
+ "schema": "trough-ledger/v1",
+ "library": "Cedar",
+ "repo": "cedar-policy/cedar-spec",
+ "rev": "326d93c24490c90607a3e257318e9c6a049c8116",
+ "module": "Cedar.Thm.Validation.Typechecker.Basic",
+ "file": "cedar-lean/Cedar/Thm/Validation/Typechecker/Basic.lean",
+ "public": [
+  {"name": "Cedar.Thm.EvaluatesTo", "kind": "def", "line": 61},
+  {"name": "Cedar.Thm.CapabilitiesInvariant", "kind": "def", "line": 73},
+  {"name": "Cedar.Thm.GuardedCapabilitiesInvariant", "kind": "def", "line": 81},
+  {"name": "Cedar.Thm.TypeOfIsSound", "kind": "def", "line": 85},
+  {"name": "Cedar.Thm.empty_capabilities_invariant", "kind": "theorem", "line": 95},
+  {"name": "Cedar.Thm.empty_guarded_capabilities_invariant", "kind": "theorem", "line": 102},
+  {"name": "Cedar.Thm.capability_implies_record_attribute", "kind": "theorem", "line": 108},
+  {"name": "Cedar.Thm.capability_implies_entity_attribute", "kind": "theorem", "line": 119},
+  {"name": "Cedar.Thm.capability_union_invariant", "kind": "theorem", "line": 131},
+  {"name": "Cedar.Thm.capability_intersection_invariant", "kind": "theorem", "line": 149},
+  {"name": "Cedar.Thm.type_of_is_inhabited", "kind": "theorem", "line": 178}
+ ],
+ "private": [],
+ "missing": [],
+ "unread": "Unnamed instances, the names an `alias ⟨…⟩` command gives, and the names Lean generates for a declaration (constructors, recursors, derived instances) are not read from the source, so they are not listed."
+}

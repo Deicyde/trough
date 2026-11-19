@@ -1,0 +1,21 @@
+{
+ "schema": "trough-ledger/v1",
+ "library": "Cedar",
+ "repo": "cedar-policy/cedar-spec",
+ "rev": "326d93c24490c90607a3e257318e9c6a049c8116",
+ "module": "Cedar.Spec.Expr",
+ "file": "cedar-lean/Cedar/Spec/Expr.lean",
+ "public": [
+  {"name": "Cedar.Spec.Var", "kind": "inductive", "line": 32},
+  {"name": "Cedar.Spec.UnaryOp", "kind": "inductive", "line": 38},
+  {"name": "Cedar.Spec.BinaryOp", "kind": "inductive", "line": 45},
+  {"name": "Cedar.Spec.Expr", "kind": "inductive", "line": 59},
+  {"name": "Cedar.Spec.decExpr", "kind": "def", "line": 86}
+ ],
+ "private": [
+  {"name": "Cedar.Spec.decProdAttrExprList", "kind": "def", "line": 130},
+  {"name": "Cedar.Spec.decExprList", "kind": "def", "line": 140}
+ ],
+ "missing": [],
+ "unread": "Unnamed instances, the names an `alias ⟨…⟩` command gives, and the names Lean generates for a declaration (constructors, recursors, derived instances) are not read from the source, so they are not listed."
+}

@@ -1,0 +1,32 @@
+{
+ "schema": "trough-ledger/v1",
+ "library": "Cedar",
+ "repo": "cedar-policy/cedar-spec",
+ "rev": "326d93c24490c90607a3e257318e9c6a049c8116",
+ "module": "Cedar.Thm.Validation.SubstituteAction",
+ "file": "cedar-lean/Cedar/Thm/Validation/SubstituteAction.lean",
+ "public": [
+  {"name": "Cedar.Thm.SubstituteActionPreservesEvaluation", "kind": "def", "line": 34},
+  {"name": "Cedar.Thm.substitute_action_preserves_evaluation_ite", "kind": "theorem", "line": 38},
+  {"name": "Cedar.Thm.substitute_action_preserves_evaluation_getAttr", "kind": "theorem", "line": 48},
+  {"name": "Cedar.Thm.substitute_action_preserves_evaluation_hasAttr", "kind": "theorem", "line": 57},
+  {"name": "Cedar.Thm.substitute_action_preserves_evaluation_unaryApp", "kind": "theorem", "line": 66},
+  {"name": "Cedar.Thm.substitute_action_preserves_evaluation_binaryApp", "kind": "theorem", "line": 75},
+  {"name": "Cedar.Thm.substitute_action_preserves_evaluation_and", "kind": "theorem", "line": 85},
+  {"name": "Cedar.Thm.substitute_action_preserves_evaluation_or", "kind": "theorem", "line": 94},
+  {"name": "Cedar.Thm.substitute_action_nil_set", "kind": "theorem", "line": 103},
+  {"name": "Cedar.Thm.substitute_action_cons_set", "kind": "theorem", "line": 109},
+  {"name": "Cedar.Thm.substitute_action_preserves_evaluation_set", "kind": "theorem", "line": 118},
+  {"name": "Cedar.Thm.substitute_action_nil_record", "kind": "theorem", "line": 141},
+  {"name": "Cedar.Thm.substitute_action_cons_record", "kind": "theorem", "line": 147},
+  {"name": "Cedar.Thm.substitute_action_preserves_evaluation_record", "kind": "theorem", "line": 154},
+  {"name": "Cedar.Thm.substitute_action_nil_call", "kind": "theorem", "line": 186},
+  {"name": "Cedar.Thm.substitute_action_cons_call", "kind": "theorem", "line": 192},
+  {"name": "Cedar.Thm.substitute_action_preserves_evaluation_call", "kind": "theorem", "line": 202},
+  {"name": "Cedar.Thm.substitute_action_preserves_evaluation", "kind": "theorem", "line": 225},
+  {"name": "Cedar.Thm.substitute_action_preserves_evaluates_to", "kind": "theorem", "line": 284}
+ ],
+ "private": [],
+ "missing": [],
+ "unread": "Unnamed instances, the names an `alias ⟨…⟩` command gives, and the names Lean generates for a declaration (constructors, recursors, derived instances) are not read from the source, so they are not listed."
+}

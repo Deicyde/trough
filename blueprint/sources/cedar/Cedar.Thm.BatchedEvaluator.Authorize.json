@@ -1,0 +1,22 @@
+{
+ "schema": "trough-ledger/v1",
+ "library": "Cedar",
+ "repo": "cedar-policy/cedar-spec",
+ "rev": "326d93c24490c90607a3e257318e9c6a049c8116",
+ "module": "Cedar.Thm.BatchedEvaluator.Authorize",
+ "file": "cedar-lean/Cedar/Thm/BatchedEvaluator/Authorize.lean",
+ "public": [
+  {"name": "Cedar.Thm.evaluatePolicy_ok_implies_env_some", "kind": "theorem", "line": 23},
+  {"name": "Cedar.Thm.evaluatePolicy_ok_implies_requestMatchesEnvironment", "kind": "theorem", "line": 38},
+  {"name": "Cedar.Thm.evaluatePolicy_ok_implies_well_formed_env", "kind": "theorem", "line": 55},
+  {"name": "Cedar.Thm.ResidualPoliciesEquivAndWellTyped", "kind": "def", "line": 73},
+  {"name": "Cedar.Thm.equiv_well_typed_implies_equiv", "kind": "theorem", "line": 86},
+  {"name": "Cedar.Thm.residuals_equiv_preserved", "kind": "theorem", "line": 91},
+  {"name": "Cedar.Thm.batched_authorize_loop_equiv", "kind": "theorem", "line": 110},
+  {"name": "Cedar.Thm.batched_authorize_loop_decision_agrees", "kind": "theorem", "line": 143},
+  {"name": "Cedar.Thm.evaluatePolicies_equiv_and_well_typed", "kind": "theorem", "line": 158}
+ ],
+ "private": [],
+ "missing": [],
+ "unread": "Unnamed instances, the names an `alias ⟨…⟩` command gives, and the names Lean generates for a declaration (constructors, recursors, derived instances) are not read from the source, so they are not listed."
+}

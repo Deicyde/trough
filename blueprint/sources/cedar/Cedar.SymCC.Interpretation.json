@@ -1,0 +1,29 @@
+{
+ "schema": "trough-ledger/v1",
+ "library": "Cedar",
+ "repo": "cedar-policy/cedar-spec",
+ "rev": "326d93c24490c90607a3e257318e9c6a049c8116",
+ "module": "Cedar.SymCC.Interpretation",
+ "file": "cedar-lean/Cedar/SymCC/Interpretation.lean",
+ "public": [
+  {"name": "Cedar.SymCC.Interpretation", "kind": "structure", "line": 55},
+  {"name": "Cedar.SymCC.UnaryFunction.interpret", "kind": "def", "line": 61},
+  {"name": "Cedar.SymCC.Factory.option.get'", "kind": "def", "line": 65},
+  {"name": "Cedar.SymCC.Factory.ext.ipaddr.addrV4'", "kind": "def", "line": 71},
+  {"name": "Cedar.SymCC.Factory.ext.ipaddr.prefixV4'", "kind": "def", "line": 77},
+  {"name": "Cedar.SymCC.Factory.ext.ipaddr.addrV6'", "kind": "def", "line": 83},
+  {"name": "Cedar.SymCC.Factory.ext.ipaddr.prefixV6'", "kind": "def", "line": 89},
+  {"name": "Cedar.SymCC.Term.interpret", "kind": "def", "line": 144},
+  {"name": "Cedar.SymCC.SymRequest.interpret", "kind": "def", "line": 168},
+  {"name": "Cedar.SymCC.SymTags.interpret", "kind": "def", "line": 176},
+  {"name": "Cedar.SymCC.SymEntityData.interpret", "kind": "def", "line": 182},
+  {"name": "Cedar.SymCC.SymEntities.interpret", "kind": "def", "line": 190},
+  {"name": "Cedar.SymCC.SymEnv.interpret", "kind": "def", "line": 194}
+ ],
+ "private": [
+  {"name": "Cedar.SymCC.ExtOp.interpret", "kind": "def", "line": 94},
+  {"name": "Cedar.SymCC.Op.interpret", "kind": "def", "line": 107}
+ ],
+ "missing": [],
+ "unread": "Unnamed instances, the names an `alias ⟨…⟩` command gives, and the names Lean generates for a declaration (constructors, recursors, derived instances) are not read from the source, so they are not listed."
+}

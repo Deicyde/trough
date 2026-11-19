@@ -1,0 +1,25 @@
+{
+ "schema": "trough-ledger/v1",
+ "library": "Cedar",
+ "repo": "cedar-policy/cedar-spec",
+ "rev": "326d93c24490c90607a3e257318e9c6a049c8116",
+ "module": "Cedar.SymCC.Op",
+ "file": "cedar-lean/Cedar/SymCC/Op.lean",
+ "public": [
+  {"name": "Cedar.SymCC.UUF", "kind": "structure", "line": 45},
+  {"name": "Cedar.SymCC.ExtOp", "kind": "inductive", "line": 50},
+  {"name": "Cedar.SymCC.Op", "kind": "inductive", "line": 62},
+  {"name": "Cedar.SymCC.UUF.lt", "kind": "def", "line": 106},
+  {"name": "Cedar.SymCC.UUF.decLt", "kind": "instance", "line": 114},
+  {"name": "Cedar.SymCC.ExtOp.lt", "kind": "def", "line": 129},
+  {"name": "Cedar.SymCC.ExtOp.decLt", "kind": "instance", "line": 135},
+  {"name": "Cedar.SymCC.Op.mkName", "kind": "def", "line": 138},
+  {"name": "Cedar.SymCC.Op.lt", "kind": "def", "line": 173},
+  {"name": "Cedar.SymCC.Op.decLt", "kind": "instance", "line": 184}
+ ],
+ "private": [
+  {"name": "Cedar.SymCC.ExtOp.mkName", "kind": "def", "line": 117}
+ ],
+ "missing": [],
+ "unread": "Unnamed instances, the names an `alias ⟨…⟩` command gives, and the names Lean generates for a declaration (constructors, recursors, derived instances) are not read from the source, so they are not listed."
+}

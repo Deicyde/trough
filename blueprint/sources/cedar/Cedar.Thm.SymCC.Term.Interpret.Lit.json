@@ -1,0 +1,16 @@
+{
+ "schema": "trough-ledger/v1",
+ "library": "Cedar",
+ "repo": "cedar-policy/cedar-spec",
+ "rev": "326d93c24490c90607a3e257318e9c6a049c8116",
+ "module": "Cedar.Thm.SymCC.Term.Interpret.Lit",
+ "file": "cedar-lean/Cedar/Thm/SymCC/Term/Interpret/Lit.lean",
+ "public": [
+  {"name": "Cedar.Thm.interpret_term_lit_id", "kind": "theorem", "line": 72},
+  {"name": "Cedar.Thm.interpret_term_lit", "kind": "theorem", "line": 286},
+  {"name": "Cedar.Thm.interpret_term_wfl", "kind": "theorem", "line": 307}
+ ],
+ "private": [],
+ "missing": [],
+ "unread": "Unnamed instances, the names an `alias ⟨…⟩` command gives, and the names Lean generates for a declaration (constructors, recursors, derived instances) are not read from the source, so they are not listed."
+}

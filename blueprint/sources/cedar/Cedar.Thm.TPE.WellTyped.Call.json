@@ -1,0 +1,15 @@
+{
+ "schema": "trough-ledger/v1",
+ "library": "Cedar",
+ "repo": "cedar-policy/cedar-spec",
+ "rev": "326d93c24490c90607a3e257318e9c6a049c8116",
+ "module": "Cedar.Thm.TPE.WellTyped.Call",
+ "file": "cedar-lean/Cedar/Thm/TPE/WellTyped/Call.lean",
+ "public": [
+  {"name": "Cedar.Thm.ext_well_typed_after_map", "kind": "theorem", "line": 35},
+  {"name": "Cedar.Thm.partial_eval_well_typed_call", "kind": "theorem", "line": 101}
+ ],
+ "private": [],
+ "missing": [],
+ "unread": "Unnamed instances, the names an `alias ⟨…⟩` command gives, and the names Lean generates for a declaration (constructors, recursors, derived instances) are not read from the source, so they are not listed."
+}

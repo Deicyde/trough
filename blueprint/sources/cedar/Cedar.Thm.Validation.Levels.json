@@ -1,0 +1,20 @@
+{
+ "schema": "trough-ledger/v1",
+ "library": "Cedar",
+ "repo": "cedar-policy/cedar-spec",
+ "rev": "326d93c24490c90607a3e257318e9c6a049c8116",
+ "module": "Cedar.Thm.Validation.Levels",
+ "file": "cedar-lean/Cedar/Thm/Validation/Levels.lean",
+ "public": [
+  {"name": "Cedar.Thm.level_based_slicing_is_sound_expr", "kind": "theorem", "line": 53},
+  {"name": "Cedar.Thm.typecheck_policy_with_level_is_sound", "kind": "theorem", "line": 122},
+  {"name": "Cedar.Thm.typecheck_policy_with_level_no_dne_on_slice", "kind": "theorem", "line": 147},
+  {"name": "Cedar.Thm.typecheck_policy_at_level_with_environments_is_sound", "kind": "theorem", "line": 156},
+  {"name": "Cedar.Thm.validate_with_level_is_sound_wf", "kind": "theorem", "line": 174},
+  {"name": "Cedar.Thm.typecheck_policy_at_level_with_environments_no_dne", "kind": "theorem", "line": 191},
+  {"name": "Cedar.Thm.validate_with_level_no_dne_wf", "kind": "theorem", "line": 219}
+ ],
+ "private": [],
+ "missing": [],
+ "unread": "Unnamed instances, the names an `alias ⟨…⟩` command gives, and the names Lean generates for a declaration (constructors, recursors, derived instances) are not read from the source, so they are not listed."
+}

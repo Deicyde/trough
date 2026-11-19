@@ -1,0 +1,19 @@
+{
+ "schema": "trough-ledger/v1",
+ "library": "Cedar",
+ "repo": "cedar-policy/cedar-spec",
+ "rev": "326d93c24490c90607a3e257318e9c6a049c8116",
+ "module": "Cedar.SymCC.Extractor",
+ "file": "cedar-lean/Cedar/SymCC/Extractor.lean",
+ "public": [
+  {"name": "Cedar.SymCC.UnaryFunction.uuf?", "kind": "def", "line": 52},
+  {"name": "Cedar.SymCC.SymEntityData.uufAncestors", "kind": "def", "line": 56},
+  {"name": "Cedar.SymCC.SymEntities.uufAncestors", "kind": "def", "line": 59},
+  {"name": "Cedar.SymCC.UUF.repairAncestors", "kind": "def", "line": 62},
+  {"name": "Cedar.SymCC.Interpretation.repair", "kind": "def", "line": 76},
+  {"name": "Cedar.SymCC.SymEnv.extract?", "kind": "def", "line": 86}
+ ],
+ "private": [],
+ "missing": [],
+ "unread": "Unnamed instances, the names an `alias ⟨…⟩` command gives, and the names Lean generates for a declaration (constructors, recursors, derived instances) are not read from the source, so they are not listed."
+}

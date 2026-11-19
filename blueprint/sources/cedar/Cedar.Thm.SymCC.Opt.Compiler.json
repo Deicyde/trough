@@ -1,0 +1,26 @@
+{
+ "schema": "trough-ledger/v1",
+ "library": "Cedar",
+ "repo": "cedar-policy/cedar-spec",
+ "rev": "326d93c24490c90607a3e257318e9c6a049c8116",
+ "module": "Cedar.Thm.SymCC.Opt.Compiler",
+ "file": "cedar-lean/Cedar/Thm/SymCC/Opt/Compiler.lean",
+ "public": [
+  {"name": "Cedar.Thm.Opt.compile.correctness.lit", "kind": "theorem", "line": 457},
+  {"name": "Cedar.Thm.Opt.compile.correctness.var", "kind": "theorem", "line": 471},
+  {"name": "Cedar.Thm.Opt.compile.correctness.ite", "kind": "theorem", "line": 492},
+  {"name": "Cedar.Thm.Opt.compile.correctness.andor", "kind": "theorem", "line": 522},
+  {"name": "Cedar.Thm.Opt.compile.correctness.unaryApp", "kind": "theorem", "line": 555},
+  {"name": "Cedar.Thm.Opt.compile.correctness.binaryApp", "kind": "theorem", "line": 572},
+  {"name": "Cedar.Thm.Opt.compile.correctness.getAttr", "kind": "theorem", "line": 605},
+  {"name": "Cedar.Thm.Opt.compile.correctness.hasAttr", "kind": "theorem", "line": 628},
+  {"name": "Cedar.Thm.Opt.compile.correctness.extHasAttr", "kind": "theorem", "line": 647},
+  {"name": "Cedar.Thm.Opt.compile.correctness.set", "kind": "theorem", "line": 662},
+  {"name": "Cedar.Thm.Opt.compile.correctness.record", "kind": "theorem", "line": 712},
+  {"name": "Cedar.Thm.Opt.compile.correctness.call", "kind": "theorem", "line": 766},
+  {"name": "Cedar.Thm.Opt.compile.correctness", "kind": "theorem", "line": 819}
+ ],
+ "private": [],
+ "missing": [],
+ "unread": "Unnamed instances, the names an `alias ⟨…⟩` command gives, and the names Lean generates for a declaration (constructors, recursors, derived instances) are not read from the source, so they are not listed."
+}

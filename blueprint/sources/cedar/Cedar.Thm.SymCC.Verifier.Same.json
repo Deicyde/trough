@@ -1,0 +1,16 @@
+{
+ "schema": "trough-ledger/v1",
+ "library": "Cedar",
+ "repo": "cedar-policy/cedar-spec",
+ "rev": "326d93c24490c90607a3e257318e9c6a049c8116",
+ "module": "Cedar.Thm.SymCC.Verifier.Same",
+ "file": "cedar-lean/Cedar/Thm/SymCC/Verifier/Same.lean",
+ "public": [
+  {"name": "Cedar.Thm.same_bool_def", "kind": "theorem", "line": 32},
+  {"name": "Cedar.Thm.same_bool_not_true_implies_false", "kind": "theorem", "line": 36},
+  {"name": "Cedar.Thm.same_bool_not_not_true_implies_true", "kind": "theorem", "line": 48}
+ ],
+ "private": [],
+ "missing": [],
+ "unread": "Unnamed instances, the names an `alias ⟨…⟩` command gives, and the names Lean generates for a declaration (constructors, recursors, derived instances) are not read from the source, so they are not listed."
+}

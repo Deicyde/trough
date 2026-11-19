@@ -1,0 +1,23 @@
+{
+ "schema": "trough-ledger/v1",
+ "library": "Cedar",
+ "repo": "cedar-policy/cedar-spec",
+ "rev": "326d93c24490c90607a3e257318e9c6a049c8116",
+ "module": "Cedar.Thm.External.PartialValidation",
+ "file": "cedar-lean/Cedar/Thm/External/PartialValidation.lean",
+ "public": [
+  {"name": "Cedar.Validation.PartialSchema.validateEntities_ok_iff", "kind": "theorem", "line": 74},
+  {"name": "Cedar.Validation.entity_reference_validation_soundness", "kind": "theorem", "line": 96},
+  {"name": "Cedar.Validation.value_validation_soundness", "kind": "theorem", "line": 121},
+  {"name": "Cedar.Validation.request_environment_soundness", "kind": "theorem", "line": 134},
+  {"name": "Cedar.Validation.entity_validation_soundness", "kind": "theorem", "line": 164},
+  {"name": "Cedar.Validation.request_validation_soundness", "kind": "theorem", "line": 201},
+  {"name": "Cedar.Validation.entity_validation_completeness", "kind": "theorem", "line": 233},
+  {"name": "Cedar.Validation.request_validation_completeness", "kind": "theorem", "line": 272},
+  {"name": "Cedar.Validation.complete_request_validation_agreement", "kind": "theorem", "line": 288},
+  {"name": "Cedar.Validation.complete_entity_validation_agreement", "kind": "theorem", "line": 300}
+ ],
+ "private": [],
+ "missing": [],
+ "unread": "Unnamed instances, the names an `alias ⟨…⟩` command gives, and the names Lean generates for a declaration (constructors, recursors, derived instances) are not read from the source, so they are not listed."
+}

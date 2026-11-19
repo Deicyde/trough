@@ -1,0 +1,19 @@
+{
+ "schema": "trough-ledger/v1",
+ "library": "Cedar",
+ "repo": "cedar-policy/cedar-spec",
+ "rev": "326d93c24490c90607a3e257318e9c6a049c8116",
+ "module": "Cedar.Thm.SymCC.Symbolizer",
+ "file": "cedar-lean/Cedar/Thm/SymCC/Symbolizer.lean",
+ "public": [
+  {"name": "Cedar.Thm.value_symbolize?_well_typed", "kind": "theorem", "line": 33},
+  {"name": "Cedar.Thm.value_symbolize?_not_none", "kind": "theorem", "line": 158},
+  {"name": "Cedar.Thm.value_symbolize?_not_some", "kind": "theorem", "line": 182},
+  {"name": "Cedar.Thm.value_symbolize?_wf", "kind": "theorem", "line": 206},
+  {"name": "Cedar.Thm.value?_symbolize?_id", "kind": "theorem", "line": 384},
+  {"name": "Cedar.Thm.value_symbolize?_is_lit", "kind": "theorem", "line": 739}
+ ],
+ "private": [],
+ "missing": [],
+ "unread": "Unnamed instances, the names an `alias ⟨…⟩` command gives, and the names Lean generates for a declaration (constructors, recursors, derived instances) are not read from the source, so they are not listed."
+}

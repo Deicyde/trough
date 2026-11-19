@@ -1,0 +1,18 @@
+{
+ "schema": "trough-ledger/v1",
+ "library": "Cedar",
+ "repo": "cedar-policy/cedar-spec",
+ "rev": "326d93c24490c90607a3e257318e9c6a049c8116",
+ "module": "Cedar.Thm.Validation.Typechecker.GetAttr",
+ "file": "cedar-lean/Cedar/Thm/Validation/Typechecker/GetAttr.lean",
+ "public": [
+  {"name": "Cedar.Thm.getAttrInRecord_has_empty_capabilities", "kind": "theorem", "line": 35},
+  {"name": "Cedar.Thm.type_of_getAttr_inversion", "kind": "theorem", "line": 46},
+  {"name": "Cedar.Thm.type_of_getAttr_is_sound_for_records", "kind": "theorem", "line": 76},
+  {"name": "Cedar.Thm.type_of_getAttr_is_sound_for_entities", "kind": "theorem", "line": 139},
+  {"name": "Cedar.Thm.type_of_getAttr_is_sound", "kind": "theorem", "line": 203}
+ ],
+ "private": [],
+ "missing": [],
+ "unread": "Unnamed instances, the names an `alias ⟨…⟩` command gives, and the names Lean generates for a declaration (constructors, recursors, derived instances) are not read from the source, so they are not listed."
+}
