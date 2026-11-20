@@ -2,8 +2,12 @@
 navigation: transparent
 ---
 
-# Green's Open Problem 26 to Ben Green's Open Problem 68
+# Green's Open Problem 22 to Green's Open Problem 53
 
+- [Green's Open Problem 22](../../../../../greens-open-problems/part-01/greens-open-problem-22.md)
+- [Green's Open Problem 23](../../../../../greens-open-problems/part-01/greens-open-problem-23.md)
+- [Green's Open Problem 24](../../../../../greens-open-problems/part-01/greens-open-problem-24.md)
+- [Green's Open Problem 25](../../../../../greens-open-problems/part-01/greens-open-problem-25.md)
 - [Green's Open Problem 26](../../../../../greens-open-problems/part-01/greens-open-problem-26.md)
 - [Green's Open Problem 27](../../../../../greens-open-problems/part-02/greens-open-problem-27.md)
 - [Ben Green's Open Problem 31](../../../../../greens-open-problems/part-02/ben-greens-open-problem-31.md)
@@ -20,7 +24,3 @@ navigation: transparent
 - [Green's Open Problem 51](../../../../../greens-open-problems/part-03/greens-open-problem-51.md)
 - [Green's Open Problem 52](../../../../../greens-open-problems/part-03/greens-open-problem-52.md)
 - [Green's Open Problem 53](../../../../../greens-open-problems/part-03/greens-open-problem-53.md)
-- [Ben Green's Open Problem 57](../../../../../greens-open-problems/part-03/ben-greens-open-problem-57.md)
-- [Ben Green's Open Problem 58](../../../../../greens-open-problems/part-03/ben-greens-open-problem-58.md)
-- [Ben Green's Open Problem 65](../../../../../greens-open-problems/part-03/ben-greens-open-problem-65.md)
-- [Ben Green's Open Problem 68](../../../../../greens-open-problems/part-03/ben-greens-open-problem-68.md)

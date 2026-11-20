@@ -4,7 +4,7 @@
 > verified formal statements (`category research open`), excluding sub-variants,
 > OEIS sequences, and machine-generated graph conjectures.
 
-*Quoted from [FormalConjectures/Subsets/FC100OpenSet2.lean](https://github.com/google-deepmind/formal-conjectures/blob/5258ab9ac6db5eb0047aa4100ea0f995c5466da6/FormalConjectures/Subsets/FC100OpenSet2.lean) in [Formal Conjectures](https://github.com/google-deepmind/formal-conjectures) (Google DeepMind) at commit [5258ab9a](https://github.com/google-deepmind/formal-conjectures/tree/5258ab9ac6db5eb0047aa4100ea0f995c5466da6), Apache-2.0.*
+*Quoted from [FormalConjectures/Subsets/FC100OpenSet2.lean](https://github.com/google-deepmind/formal-conjectures/blob/d8d031d4998c78575159ccab9a7a9e95ce043883/FormalConjectures/Subsets/FC100OpenSet2.lean) in [Formal Conjectures](https://github.com/google-deepmind/formal-conjectures) (Google DeepMind) at commit [d8d031d4](https://github.com/google-deepmind/formal-conjectures/tree/d8d031d4998c78575159ccab9a7a9e95ce043883), Apache-2.0.*
 
 The 100 statements the list names, numbered as it lists them, each linked to its problem's article.
 
@@ -28,7 +28,7 @@ The 100 statements the list names, numbered as it lists them, each linked to its
 - [16. `Mandelbrot.MLC` (research open), in Conjectures about the Mandelbrot and Multibrot sets](../../wikipedia/part-06/conjectures-about-the-mandelbrot-and-multibrot-s.md)
 - [17. `LittlewoodConjecture.littlewood_conjecture` (research open), in Littlewood conjectures](../../wikipedia/part-05/littlewood-conjectures.md)
 - [18. `HasseWeil.exists_hasAnalyticContinuation` (research open), in The Hasse--Weil conjecture for elliptic curves](../../wikipedia/part-04/the-hasse-weil-conjecture-for-elliptic-curves.md)
-- [19. `Schanuel.schanuel_conjecture` (research open), in Schanuel's Conjecture](../../wikipedia/part-07/schanuels-conjecture.md)
+- [19. `Schanuel.schanuel_conjecture` (research open), in Schanuel's Conjecture](../../wikipedia/part-08/schanuels-conjecture.md)
 - [20. `Dickson.dickson_conjecture` (research open), in Dickson's conjecture](../../wikipedia/part-02/dicksons-conjecture.md)
 
 ## [Entries 21 to 40](part-02/README.md)

@@ -2,8 +2,13 @@
 navigation: transparent
 ---
 
-# Normality of Irrational… to Dirichlet divisor problem
+# Maximum number of terms in a… to Class number problem for real…
 
+- [Maximum number of terms in a 2-dense sublist of divisors of $n$](../../../../../oeis/part-18/maximum-number-of-terms-in-a-2-dense-sublist-of.md)
+- [Decimal concatenation of a cofactor and the largest prime factor](../../../../../oeis/part-18/decimal-concatenation-of-a-cofactor-and-the-larg.md)
+- [\*abc\* conjecture](../../../../../wikipedia/part-01/abc-conjecture.md)
+- [Agoh-Giuga conjecture](../../../../../wikipedia/part-01/agoh-giuga-conjecture.md)
+- [Agrawal's conjecture](../../../../../wikipedia/part-01/agrawals-conjecture.md)
 - [Normality of Irrational Algebraic Numbers](../../../../../wikipedia/part-01/normality-of-irrational-algebraic-numbers.md)
 - [Non-Power-of-2 Almost Perfect Numbers Conjecture](../../../../../wikipedia/part-01/non-power-of-2-almost-perfect-numbers-conjecture.md)
 - [Amicable numbers](../../../../../wikipedia/part-01/amicable-numbers.md)
@@ -19,8 +24,3 @@ navigation: transparent
 - [Carmichael's totient function conjecture](../../../../../wikipedia/part-02/carmichaels-totient-function-conjecture.md)
 - [Catalan's conjecture and related Diophantine equations](../../../../../wikipedia/part-02/catalans-conjecture-and-related-diophantine-equa.md)
 - [Class number problem for real quadratic fields](../../../../../wikipedia/part-02/class-number-problem-for-real-quadratic-fields.md)
-- [Collatz conjecture](../../../../../wikipedia/part-02/collatz-conjecture.md)
-- [Congruent Number](../../../../../wikipedia/part-02/congruent-number.md)
-- [Dickson's conjecture](../../../../../wikipedia/part-02/dicksons-conjecture.md)
-- [Diophantine $m$-tuples](../../../../../wikipedia/part-02/diophantine-m-tuples.md)
-- [Dirichlet divisor problem](../../../../../wikipedia/part-03/dirichlet-divisor-problem.md)

@@ -2,8 +2,15 @@
 navigation: transparent
 ---
 
-# Green's Open Problem 12 to Ben Green's Open Problem 43
+# Wilson primes to Green's Open Problem 26
 
+- [Wilson primes](../../../../../wikipedia/part-09/wilson-primes.md)
+- [Wolstenholme Prime](../../../../../wikipedia/part-09/wolstenholme-prime.md)
+- [Woodall Primes](../../../../../wikipedia/part-09/woodall-primes.md)
+- [Ben Green's Open Problem 1](../../../../../greens-open-problems/part-01/ben-greens-open-problem-1.md)
+- [Ben Green's Open Problem 2](../../../../../greens-open-problems/part-01/ben-greens-open-problem-2.md)
+- [Ben Green's Open Problem 3](../../../../../greens-open-problems/part-01/ben-greens-open-problem-3.md)
+- [Ben Green's Open Problem 7](../../../../../greens-open-problems/part-01/ben-greens-open-problem-7.md)
 - [Green's Open Problem 12](../../../../../greens-open-problems/part-01/greens-open-problem-12.md)
 - [Ben Green's Open Problem 14](../../../../../greens-open-problems/part-01/ben-greens-open-problem-14.md)
 - [Green's Open Problem 15](../../../../../greens-open-problems/part-01/greens-open-problem-15.md)
@@ -17,10 +24,3 @@ navigation: transparent
 - [Green's Open Problem 24](../../../../../greens-open-problems/part-01/greens-open-problem-24.md)
 - [Green's Open Problem 25](../../../../../greens-open-problems/part-01/greens-open-problem-25.md)
 - [Green's Open Problem 26](../../../../../greens-open-problems/part-01/greens-open-problem-26.md)
-- [Green's Open Problem 27](../../../../../greens-open-problems/part-02/greens-open-problem-27.md)
-- [Ben Green's Open Problem 31](../../../../../greens-open-problems/part-02/ben-greens-open-problem-31.md)
-- [Green's Open Problem 32](../../../../../greens-open-problems/part-02/greens-open-problem-32.md)
-- [Ben Green's Open Problem 33](../../../../../greens-open-problems/part-02/ben-greens-open-problem-33.md)
-- [Ben Green's Open Problem 37](../../../../../greens-open-problems/part-02/ben-greens-open-problem-37.md)
-- [Green's Open Problem 38](../../../../../greens-open-problems/part-02/greens-open-problem-38.md)
-- [Ben Green's Open Problem 43](../../../../../greens-open-problems/part-02/ben-greens-open-problem-43.md)

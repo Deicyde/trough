@@ -11,7 +11,7 @@ statement: formalized
 > **Bounded diagonal orbits in homogeneous spaces over function fields**
 > by *Qianlin Huang, Ronggang Shi*
 
-*Quoted from [FormalConjectures/Arxiv/2504.17644/Margulis.lean](https://github.com/google-deepmind/formal-conjectures/blob/5258ab9ac6db5eb0047aa4100ea0f995c5466da6/FormalConjectures/Arxiv/2504.17644/Margulis.lean) in [Formal Conjectures](https://github.com/google-deepmind/formal-conjectures) (Google DeepMind) at commit [5258ab9a](https://github.com/google-deepmind/formal-conjectures/tree/5258ab9ac6db5eb0047aa4100ea0f995c5466da6), Apache-2.0, as are the docstrings and Lean statements below.*
+*Quoted from [FormalConjectures/Arxiv/2504.17644/Margulis.lean](https://github.com/google-deepmind/formal-conjectures/blob/d8d031d4998c78575159ccab9a7a9e95ce043883/FormalConjectures/Arxiv/2504.17644/Margulis.lean) in [Formal Conjectures](https://github.com/google-deepmind/formal-conjectures) (Google DeepMind) at commit [d8d031d4](https://github.com/google-deepmind/formal-conjectures/tree/d8d031d4998c78575159ccab9a7a9e95ce043883), Apache-2.0, as are the docstrings and Lean statements below.*
 
 The file states 2 research or textbook statements: 1 open and 1 solved.
 
@@ -29,7 +29,7 @@ theorem conjecture_1_1 {n : ℕ} (hn : 3 ≤ n)
     IsClosed <| MulAction.orbit (diagonalSubgroup (Fin n) ℝ) g
 ```
 
-Category `research open`; AMS [11 Number theory](../../by-subject/part-01/11-number-theory/README.md), [15 Linear and multilinear algebra; matrix theory](../../by-subject/part-01/15-linear-and-multilinear-algebra-matrix-theory/README.md), [22 Topological groups, Lie groups](../../by-subject/part-01/22-topological-groups-lie-groups/README.md). Declared in [FormalConjectures/Arxiv/2504.17644/Margulis.lean, line 42](https://github.com/google-deepmind/formal-conjectures/blob/5258ab9ac6db5eb0047aa4100ea0f995c5466da6/FormalConjectures/Arxiv/2504.17644/Margulis.lean#L42).
+Category `research open`; AMS [11 Number theory](../../by-subject/part-01/11-number-theory/README.md), [15 Linear and multilinear algebra; matrix theory](../../by-subject/part-01/15-linear-and-multilinear-algebra-matrix-theory/README.md), [22 Topological groups, Lie groups](../../by-subject/part-01/22-topological-groups-lie-groups/README.md). Declared in [FormalConjectures/Arxiv/2504.17644/Margulis.lean, line 42](https://github.com/google-deepmind/formal-conjectures/blob/d8d031d4998c78575159ccab9a7a9e95ce043883/FormalConjectures/Arxiv/2504.17644/Margulis.lean#L42).
 
 ## `Margulis.huang_shi_theorem_1_2`
 
@@ -56,7 +56,7 @@ theorem huang_shi_theorem_1_2
       ¬ IsClosed (MulAction.orbit (diagonalSubgroup (Fin 4) (F⸨X⸩)) z)
 ```
 
-Category `research solved`; AMS [11 Number theory](../../by-subject/part-01/11-number-theory/README.md), [15 Linear and multilinear algebra; matrix theory](../../by-subject/part-01/15-linear-and-multilinear-algebra-matrix-theory/README.md), [22 Topological groups, Lie groups](../../by-subject/part-01/22-topological-groups-lie-groups/README.md). Declared in [FormalConjectures/Arxiv/2504.17644/Margulis.lean, line 97](https://github.com/google-deepmind/formal-conjectures/blob/5258ab9ac6db5eb0047aa4100ea0f995c5466da6/FormalConjectures/Arxiv/2504.17644/Margulis.lean#L97).
+Category `research solved`; AMS [11 Number theory](../../by-subject/part-01/11-number-theory/README.md), [15 Linear and multilinear algebra; matrix theory](../../by-subject/part-01/15-linear-and-multilinear-algebra-matrix-theory/README.md), [22 Topological groups, Lie groups](../../by-subject/part-01/22-topological-groups-lie-groups/README.md). Declared in [FormalConjectures/Arxiv/2504.17644/Margulis.lean, line 97](https://github.com/google-deepmind/formal-conjectures/blob/d8d031d4998c78575159ccab9a7a9e95ce043883/FormalConjectures/Arxiv/2504.17644/Margulis.lean#L97).
 
 ## Depends on
 
@@ -64,5 +64,5 @@ No dependencies are recorded: this chapter reads Formal Conjectures' source text
 
 ## Sources
 
-- [FormalConjectures/Arxiv/2504.17644/Margulis.lean at 5258ab9a](https://github.com/google-deepmind/formal-conjectures/blob/5258ab9ac6db5eb0047aa4100ea0f995c5466da6/FormalConjectures/Arxiv/2504.17644/Margulis.lean)
+- [FormalConjectures/Arxiv/2504.17644/Margulis.lean at d8d031d4](https://github.com/google-deepmind/formal-conjectures/blob/d8d031d4998c78575159ccab9a7a9e95ce043883/FormalConjectures/Arxiv/2504.17644/Margulis.lean)
 - [arxiv/2504.17644v3](https://arxiv.org/abs/2504.17644v3)

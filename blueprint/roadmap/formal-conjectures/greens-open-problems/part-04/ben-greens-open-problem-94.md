@@ -14,7 +14,7 @@ statement: formalized
 >   OpenAI Math Release preprint (2026).
 >   https://github.com/openai/math/blob/adc7f1241b42e322a6451854ab7e4b4c146bf78a/preprints/The-dyadic-case-of-the-Erdos-similarity-conjecture-September-25-2026/paper.pdf
 
-*Quoted from [FormalConjectures/GreensOpenProblems/94.lean](https://github.com/google-deepmind/formal-conjectures/blob/5258ab9ac6db5eb0047aa4100ea0f995c5466da6/FormalConjectures/GreensOpenProblems/94.lean) in [Formal Conjectures](https://github.com/google-deepmind/formal-conjectures) (Google DeepMind) at commit [5258ab9a](https://github.com/google-deepmind/formal-conjectures/tree/5258ab9ac6db5eb0047aa4100ea0f995c5466da6), Apache-2.0, as are the docstrings and Lean statements below.*
+*Quoted from [FormalConjectures/GreensOpenProblems/94.lean](https://github.com/google-deepmind/formal-conjectures/blob/d8d031d4998c78575159ccab9a7a9e95ce043883/FormalConjectures/GreensOpenProblems/94.lean) in [Formal Conjectures](https://github.com/google-deepmind/formal-conjectures) (Google DeepMind) at commit [d8d031d4](https://github.com/google-deepmind/formal-conjectures/tree/d8d031d4998c78575159ccab9a7a9e95ce043883), Apache-2.0, as are the docstrings and Lean statements below.*
 
 The file states 2 research or textbook statements: 2 solved.
 
@@ -33,7 +33,7 @@ theorem green_94_outer_measure :
    ∃ a b : ℝ, a ≠ 0 ∧ ∀ n : ℕ, a * (1 / 2^n) + b ∈ A
 ```
 
-Category `research solved`; AMS [28 Measure and integration](../../by-subject/part-01/28-measure-and-integration/README.md). Declared in [FormalConjectures/GreensOpenProblems/94.lean, line 44](https://github.com/google-deepmind/formal-conjectures/blob/5258ab9ac6db5eb0047aa4100ea0f995c5466da6/FormalConjectures/GreensOpenProblems/94.lean#L44).
+Category `research solved`; AMS [28 Measure and integration](../../by-subject/part-01/28-measure-and-integration/README.md). Declared in [FormalConjectures/GreensOpenProblems/94.lean, line 44](https://github.com/google-deepmind/formal-conjectures/blob/d8d031d4998c78575159ccab9a7a9e95ce043883/FormalConjectures/GreensOpenProblems/94.lean#L44).
 
 ## `Green94.green_94`
 
@@ -52,7 +52,7 @@ theorem green_94 :
    ∃ a b : ℝ, a ≠ 0 ∧ ∀ n : ℕ, a * (1 / 2^n) + b ∈ A
 ```
 
-Category `research solved`; AMS [28 Measure and integration](../../by-subject/part-01/28-measure-and-integration/README.md). Declared in [FormalConjectures/GreensOpenProblems/94.lean, line 60](https://github.com/google-deepmind/formal-conjectures/blob/5258ab9ac6db5eb0047aa4100ea0f995c5466da6/FormalConjectures/GreensOpenProblems/94.lean#L60).
+Category `research solved`; AMS [28 Measure and integration](../../by-subject/part-01/28-measure-and-integration/README.md). Declared in [FormalConjectures/GreensOpenProblems/94.lean, line 60](https://github.com/google-deepmind/formal-conjectures/blob/d8d031d4998c78575159ccab9a7a9e95ce043883/FormalConjectures/GreensOpenProblems/94.lean#L60).
 
 ## Depends on
 
@@ -60,5 +60,5 @@ No dependencies are recorded: this chapter reads Formal Conjectures' source text
 
 ## Sources
 
-- [FormalConjectures/GreensOpenProblems/94.lean at 5258ab9a](https://github.com/google-deepmind/formal-conjectures/blob/5258ab9ac6db5eb0047aa4100ea0f995c5466da6/FormalConjectures/GreensOpenProblems/94.lean)
+- [FormalConjectures/GreensOpenProblems/94.lean at d8d031d4](https://github.com/google-deepmind/formal-conjectures/blob/d8d031d4998c78575159ccab9a7a9e95ce043883/FormalConjectures/GreensOpenProblems/94.lean)
 - [Ben Green's Open Problem 94](https://people.maths.ox.ac.uk/greenbj/papers/open-problems.pdf#problem.94)

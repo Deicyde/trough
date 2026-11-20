@@ -2,8 +2,10 @@
 navigation: transparent
 ---
 
-# Erdős Problem 1201 to Euclid-Mullin sequence
+# Erdős Problem 1197 to Fractional parts of sums of…
 
+- [Erdős Problem 1197](../../../../../erdos-problems/1100-1199/part-04/erdos-problem-1197.md)
+- [Erdős Problem 1198](../../../../../erdos-problems/1100-1199/part-04/erdos-problem-1198.md)
 - [Erdős Problem 1201](../../../../../erdos-problems/1200-1299/erdos-problem-1201.md)
 - [Erdős Problem 1202](../../../../../erdos-problems/1200-1299/erdos-problem-1202.md)
 - [Erdős Problem 1203](../../../../../erdos-problems/1200-1299/erdos-problem-1203.md)
@@ -22,5 +24,3 @@ navigation: transparent
 - [The prime numbers](../../../../../oeis/part-01/the-prime-numbers.md)
 - [No powers as partition numbers](../../../../../oeis/part-01/no-powers-as-partition-numbers.md)
 - [Fractional parts of sums of reciprocals of Catalan numbers $C(n)$](../../../../../oeis/part-01/fractional-parts-of-sums-of-reciprocals-of-catal.md)
-- [Number of squares $\bmod n$](../../../../../oeis/part-01/number-of-squares-bmod-n.md)
-- [Euclid-Mullin sequence](../../../../../oeis/part-01/euclid-mullin-sequence.md)

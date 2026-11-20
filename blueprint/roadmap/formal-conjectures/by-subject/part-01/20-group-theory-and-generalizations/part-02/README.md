@@ -15,5 +15,6 @@ navigation: transparent
 - [Conjecture 1.74 (Minimal topological groups)](../../../../kourovka/conjecture-1-74-minimal-topological-groups.md)
 - [Conjecture 8.8](../../../../kourovka/conjecture-8-8.md)
 - [Conjecture 19.25](../../../../kourovka/conjecture-19-25.md)
+- [Conjecture 20.51](../../../../kourovka/conjecture-20-51.md)
 - [Conjecture 20.76](../../../../kourovka/conjecture-20-76.md)
 - [Conjecture 21.149](../../../../kourovka/conjecture-21-149.md)

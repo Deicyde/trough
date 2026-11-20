@@ -50,7 +50,7 @@ The 98 problems with a statement whose `AMS` attribute names 52, Convex and disc
 
 ## [Erdős Problem 655 to Erdős Problem 957](part-03/README.md)
 
-- [Erdős Problem 655](../../../erdos-problems/600-699/part-02/erdos-problem-655.md)
+- [Erdős Problem 655](../../../erdos-problems/600-699/part-03/erdos-problem-655.md)
 - [Erdős Problem 657](../../../erdos-problems/600-699/part-03/erdos-problem-657.md)
 - [Erdős Problem 659](../../../erdos-problems/600-699/part-03/erdos-problem-659.md)
 - [Erdős Problem 660](../../../erdos-problems/600-699/part-03/erdos-problem-660.md)
@@ -105,7 +105,7 @@ The 98 problems with a statement whose `AMS` attribute names 52, Convex and disc
 - [Ben Green's Open Problem 70](../../../greens-open-problems/part-03/ben-greens-open-problem-70.md)
 - [Ben Green's Open Problem 72](../../../greens-open-problems/part-03/ben-greens-open-problem-72.md)
 - [Ben Green's Open Problem 74](../../../greens-open-problems/part-03/ben-greens-open-problem-74.md)
-- [Ben Green's Open Problem 75](../../../greens-open-problems/part-03/ben-greens-open-problem-75.md)
+- [Ben Green's Open Problem 75](../../../greens-open-problems/part-04/ben-greens-open-problem-75.md)
 - [Ben Green's Open Problem 76](../../../greens-open-problems/part-04/ben-greens-open-problem-76.md)
 - [Ben Green's Open Problem 77](../../../greens-open-problems/part-04/ben-greens-open-problem-77.md)
 - [Green's Open Problem 85](../../../greens-open-problems/part-04/greens-open-problem-85.md)

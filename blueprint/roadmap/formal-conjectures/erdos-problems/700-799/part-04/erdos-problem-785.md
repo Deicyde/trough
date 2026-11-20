@@ -28,7 +28,7 @@ statement: formalized
 > - [SaSz94] Sárközy, A. and Szemerédi, E., *On a problem in additive number theory*.
 >   Acta Math. Hungar. (1994), 237-245.
 
-*Quoted from [FormalConjectures/ErdosProblems/785.lean](https://github.com/google-deepmind/formal-conjectures/blob/5258ab9ac6db5eb0047aa4100ea0f995c5466da6/FormalConjectures/ErdosProblems/785.lean) in [Formal Conjectures](https://github.com/google-deepmind/formal-conjectures) (Google DeepMind) at commit [5258ab9a](https://github.com/google-deepmind/formal-conjectures/tree/5258ab9ac6db5eb0047aa4100ea0f995c5466da6), Apache-2.0, as are the docstrings and Lean statements below.*
+*Quoted from [FormalConjectures/ErdosProblems/785.lean](https://github.com/google-deepmind/formal-conjectures/blob/d8d031d4998c78575159ccab9a7a9e95ce043883/FormalConjectures/ErdosProblems/785.lean) in [Formal Conjectures](https://github.com/google-deepmind/formal-conjectures) (Google DeepMind) at commit [d8d031d4](https://github.com/google-deepmind/formal-conjectures/tree/d8d031d4998c78575159ccab9a7a9e95ce043883), Apache-2.0, as are the docstrings and Lean statements below.*
 
 The problem's page on erdosproblems.com: [https://www.erdosproblems.com/785](https://www.erdosproblems.com/785).
 
@@ -59,7 +59,7 @@ theorem erdos_785 :
       Tendsto (fun x : ℕ => (counting A x * counting B x : ℝ) - (x : ℝ)) atTop atTop
 ```
 
-Category `research solved`; AMS [11 Number theory](../../../by-subject/part-01/11-number-theory/README.md). Declared in [FormalConjectures/ErdosProblems/785.lean, line 83](https://github.com/google-deepmind/formal-conjectures/blob/5258ab9ac6db5eb0047aa4100ea0f995c5466da6/FormalConjectures/ErdosProblems/785.lean#L83).
+Category `research solved`; AMS [11 Number theory](../../../by-subject/part-01/11-number-theory/README.md). Declared in [FormalConjectures/ErdosProblems/785.lean, line 83](https://github.com/google-deepmind/formal-conjectures/blob/d8d031d4998c78575159ccab9a7a9e95ce043883/FormalConjectures/ErdosProblems/785.lean#L83).
 
 ## `Erdos785.erdos_785.variants.danzer`
 
@@ -73,40 +73,50 @@ theorem erdos_785.variants.danzer :
     ∃ A B : Set ℕ, A.Infinite ∧ B.Infinite ∧ 0 ∉ A ∧ 0 ∉ B ∧ IsExactAdditiveComplement A B
 ```
 
-Category `research solved`; AMS [11 Number theory](../../../by-subject/part-01/11-number-theory/README.md). Declared in [FormalConjectures/ErdosProblems/785.lean, line 93](https://github.com/google-deepmind/formal-conjectures/blob/5258ab9ac6db5eb0047aa4100ea0f995c5466da6/FormalConjectures/ErdosProblems/785.lean#L93).
+Category `research solved`; AMS [11 Number theory](../../../by-subject/part-01/11-number-theory/README.md). Declared in [FormalConjectures/ErdosProblems/785.lean, line 93](https://github.com/google-deepmind/formal-conjectures/blob/d8d031d4998c78575159ccab9a7a9e95ce043883/FormalConjectures/ErdosProblems/785.lean#L93).
 
 ## `Erdos785.erdos_785.variants.sarkozy_szemeredi`
 
 Solved: stated here without proof.
 
-> Sárközy and Szemerédi [SaSz94] proved that it is impossible for
+> Sárközy and Szemerédi [SaSz94, pp. 244–245] stated that the global estimate
+> $A(x)B(x) - x = o(\min(A(x), B(x)))$ is impossible. The stronger eventual bound stated here,
 >
-> $$A(x)B(x)-x=o(A(x)).$$
+> $$A(x)B(x) - x \ge c \min(A(x), B(x))$$
+>
+> for some $c > 0$ and all sufficiently large $x$, follows as a later consequence of Chen and Fang
+> [ChFa15, Theorem 0.2] (for instance, taking $M = 2$).
 
 ```lean
 theorem erdos_785.variants.sarkozy_szemeredi (A B : Set ℕ) (hA : A.Infinite) (hB : B.Infinite)
     (hA₀ : 0 ∉ A) (hB₀ : 0 ∉ B) (h : IsExactAdditiveComplement A B) :
-    ¬ (fun x : ℕ => (counting A x * counting B x : ℝ) - (x : ℝ)) =o[atTop]
-      (fun x : ℕ => (counting A x : ℝ))
+    ∃ c > (0 : ℝ), ∀ᶠ x : ℕ in atTop,
+      c * (min (counting A x) (counting B x) : ℝ) ≤
+        (counting A x * counting B x : ℝ) - (x : ℝ)
 ```
 
-Category `research solved`; AMS [11 Number theory](../../../by-subject/part-01/11-number-theory/README.md). Declared in [FormalConjectures/ErdosProblems/785.lean, line 102](https://github.com/google-deepmind/formal-conjectures/blob/5258ab9ac6db5eb0047aa4100ea0f995c5466da6/FormalConjectures/ErdosProblems/785.lean#L102).
+Category `research solved`; AMS [11 Number theory](../../../by-subject/part-01/11-number-theory/README.md). Declared in [FormalConjectures/ErdosProblems/785.lean, line 105](https://github.com/google-deepmind/formal-conjectures/blob/d8d031d4998c78575159ccab9a7a9e95ce043883/FormalConjectures/ErdosProblems/785.lean#L105).
 
 ## `Erdos785.erdos_785.variants.chen_fang`
 
 Solved: stated here without proof.
 
-> Chen and Fang [ChFa15] proved $A(x)B(x)-x\ll \min(A(x),B(x))^c$ cannot hold for any constant
-> $c>0$. In particular $A(x)B(x)-x\ll A(x)^c$ cannot hold when $A$ is the sparser of the two sets.
+> Chen and Fang [ChFa15, Theorem 0.2] proved that for any $M > 1$,
+>
+> $$A(x)B(x) - x \ge \min(A(x), B(x))^M$$
+>
+> for all sufficiently large $x$. In particular $A(x)B(x)-x\ll A(x)^c$ cannot hold for any constant
+> $c>0$ when $A$ is the sparser of the two sets.
 
 ```lean
 theorem erdos_785.variants.chen_fang (A B : Set ℕ) (hA : A.Infinite) (hB : B.Infinite)
-    (hA₀ : 0 ∉ A) (hB₀ : 0 ∉ B) (h : IsExactAdditiveComplement A B) (c : ℝ) (hc : 0 < c) :
-    ¬ (fun x : ℕ => (counting A x * counting B x : ℝ) - (x : ℝ)) =O[atTop]
-      (fun x : ℕ => (min (counting A x) (counting B x) : ℝ) ^ c)
+    (hA₀ : 0 ∉ A) (hB₀ : 0 ∉ B) (h : IsExactAdditiveComplement A B) (M : ℝ) (hM : 1 < M) :
+    ∀ᶠ x : ℕ in atTop,
+      (min (counting A x) (counting B x) : ℝ) ^ M ≤
+        (counting A x * counting B x : ℝ) - (x : ℝ)
 ```
 
-Category `research solved`; AMS [11 Number theory](../../../by-subject/part-01/11-number-theory/README.md). Declared in [FormalConjectures/ErdosProblems/785.lean, line 113](https://github.com/google-deepmind/formal-conjectures/blob/5258ab9ac6db5eb0047aa4100ea0f995c5466da6/FormalConjectures/ErdosProblems/785.lean#L113).
+Category `research solved`; AMS [11 Number theory](../../../by-subject/part-01/11-number-theory/README.md). Declared in [FormalConjectures/ErdosProblems/785.lean, line 119](https://github.com/google-deepmind/formal-conjectures/blob/d8d031d4998c78575159ccab9a7a9e95ce043883/FormalConjectures/ErdosProblems/785.lean#L119).
 
 ## `Erdos785.erdos_785.variants.narkiewicz`
 
@@ -125,7 +135,7 @@ theorem erdos_785.variants.narkiewicz (A B : Set ℕ) (hA : A.Infinite) (hB : B.
         atTop (𝓝 2))
 ```
 
-Category `research solved`; AMS [11 Number theory](../../../by-subject/part-01/11-number-theory/README.md). Declared in [FormalConjectures/ErdosProblems/785.lean, line 124](https://github.com/google-deepmind/formal-conjectures/blob/5258ab9ac6db5eb0047aa4100ea0f995c5466da6/FormalConjectures/ErdosProblems/785.lean#L124).
+Category `research solved`; AMS [11 Number theory](../../../by-subject/part-01/11-number-theory/README.md). Declared in [FormalConjectures/ErdosProblems/785.lean, line 131](https://github.com/google-deepmind/formal-conjectures/blob/d8d031d4998c78575159ccab9a7a9e95ce043883/FormalConjectures/ErdosProblems/785.lean#L131).
 
 ## `Erdos785.erdos_785.variants.ruzsa_upper_bound`
 
@@ -143,29 +153,28 @@ theorem erdos_785.variants.ruzsa_upper_bound (w : ℕ → ℝ) (hw : Tendsto w a
       ∃ᶠ x : ℕ in atTop, (counting A x * counting B x : ℝ) - (x : ℝ) < w x
 ```
 
-Category `research solved`; AMS [11 Number theory](../../../by-subject/part-01/11-number-theory/README.md). Declared in [FormalConjectures/ErdosProblems/785.lean, line 139](https://github.com/google-deepmind/formal-conjectures/blob/5258ab9ac6db5eb0047aa4100ea0f995c5466da6/FormalConjectures/ErdosProblems/785.lean#L139).
+Category `research solved`; AMS [11 Number theory](../../../by-subject/part-01/11-number-theory/README.md). Declared in [FormalConjectures/ErdosProblems/785.lean, line 146](https://github.com/google-deepmind/formal-conjectures/blob/d8d031d4998c78575159ccab9a7a9e95ce043883/FormalConjectures/ErdosProblems/785.lean#L146).
 
 ## `Erdos785.erdos_785.variants.ruzsa_lower_bound`
 
 Solved: stated here without proof.
 
-> Ruzsa [Ru17] proves that, if $a^*(x)=\max A \cap [1,x]$ and $A$ and $B$ satisfy the conditions
-> in the problem then (after possibly changing the roles of $A$ and $B$)
+> Ruzsa [Ru17, Theorem 1.2] proves that, if $a^*(x)=\max A \cap [1,x]$, $A$ and $B$ satisfy the
+> conditions in the problem, and $A$ is the sparser set with $A(2x)/A(x) \to 1$ (which holds after
+> possibly swapping the roles of $A$ and $B$ by Narkiewicz's theorem), then
 >
 > $$A(x)B(x)-x > (1-o(1))\frac{a^*(x)}{A(x)}.$$
 
 ```lean
 theorem erdos_785.variants.ruzsa_lower_bound (A B : Set ℕ) (hA : A.Infinite) (hB : B.Infinite)
-    (hA₀ : 0 ∉ A) (hB₀ : 0 ∉ B) (h : IsExactAdditiveComplement A B) :
-    (∀ ε > (0 : ℝ), ∀ᶠ x : ℕ in atTop,
-        (1 - ε) * (aStar A x : ℝ) / (counting A x : ℝ)
-          < (counting A x * counting B x : ℝ) - (x : ℝ)) ∨
-    (∀ ε > (0 : ℝ), ∀ᶠ x : ℕ in atTop,
-        (1 - ε) * (aStar B x : ℝ) / (counting B x : ℝ)
-          < (counting A x * counting B x : ℝ) - (x : ℝ))
+    (hA₀ : 0 ∉ A) (hB₀ : 0 ∉ B) (h : IsExactAdditiveComplement A B)
+    (hsmall : Tendsto (fun x : ℕ => (counting A (2 * x) : ℝ) / (counting A x : ℝ)) atTop (𝓝 1)) :
+    ∀ ε > (0 : ℝ), ∀ᶠ x : ℕ in atTop,
+      (1 - ε) * (aStar A x : ℝ) / (counting A x : ℝ)
+        < (counting A x * counting B x : ℝ) - (x : ℝ)
 ```
 
-Category `research solved`; AMS [11 Number theory](../../../by-subject/part-01/11-number-theory/README.md). Declared in [FormalConjectures/ErdosProblems/785.lean, line 150](https://github.com/google-deepmind/formal-conjectures/blob/5258ab9ac6db5eb0047aa4100ea0f995c5466da6/FormalConjectures/ErdosProblems/785.lean#L150).
+Category `research solved`; AMS [11 Number theory](../../../by-subject/part-01/11-number-theory/README.md). Declared in [FormalConjectures/ErdosProblems/785.lean, line 158](https://github.com/google-deepmind/formal-conjectures/blob/d8d031d4998c78575159ccab9a7a9e95ce043883/FormalConjectures/ErdosProblems/785.lean#L158).
 
 ## `Erdos785.erdos_785.variants.chen_fang_limsup`
 
@@ -186,7 +195,7 @@ theorem erdos_785.variants.chen_fang_limsup (A B : Set ℕ) (hA : A.Infinite) (h
     Tendsto (fun x : ℕ => (counting A x * counting B x : ℝ) - (x : ℝ)) atTop atTop
 ```
 
-Category `research solved`; AMS [11 Number theory](../../../by-subject/part-01/11-number-theory/README.md). Declared in [FormalConjectures/ErdosProblems/785.lean, line 167](https://github.com/google-deepmind/formal-conjectures/blob/5258ab9ac6db5eb0047aa4100ea0f995c5466da6/FormalConjectures/ErdosProblems/785.lean#L167).
+Category `research solved`; AMS [11 Number theory](../../../by-subject/part-01/11-number-theory/README.md). Declared in [FormalConjectures/ErdosProblems/785.lean, line 173](https://github.com/google-deepmind/formal-conjectures/blob/d8d031d4998c78575159ccab9a7a9e95ce043883/FormalConjectures/ErdosProblems/785.lean#L173).
 
 ## `Erdos785.erdos_785.variants.chen_conjecture`
 
@@ -202,7 +211,7 @@ theorem erdos_785.variants.chen_conjecture :
         Tendsto (fun x : ℕ => (counting A x * counting B x : ℝ) - (x : ℝ)) atTop atTop
 ```
 
-Category `research open`; AMS [11 Number theory](../../../by-subject/part-01/11-number-theory/README.md). Declared in [FormalConjectures/ErdosProblems/785.lean, line 178](https://github.com/google-deepmind/formal-conjectures/blob/5258ab9ac6db5eb0047aa4100ea0f995c5466da6/FormalConjectures/ErdosProblems/785.lean#L178).
+Category `research open`; AMS [11 Number theory](../../../by-subject/part-01/11-number-theory/README.md). Declared in [FormalConjectures/ErdosProblems/785.lean, line 184](https://github.com/google-deepmind/formal-conjectures/blob/d8d031d4998c78575159ccab9a7a9e95ce043883/FormalConjectures/ErdosProblems/785.lean#L184).
 
 ## `Erdos785.erdos_785.variants.chen_fang_sharp`
 
@@ -222,7 +231,7 @@ theorem erdos_785.variants.chen_fang_sharp :
       ∃ᶠ x : ℕ in atTop, (counting A x * counting B x : ℝ) - (x : ℝ) = 1
 ```
 
-Category `research solved`; AMS [11 Number theory](../../../by-subject/part-01/11-number-theory/README.md). Declared in [FormalConjectures/ErdosProblems/785.lean, line 191](https://github.com/google-deepmind/formal-conjectures/blob/5258ab9ac6db5eb0047aa4100ea0f995c5466da6/FormalConjectures/ErdosProblems/785.lean#L191).
+Category `research solved`; AMS [11 Number theory](../../../by-subject/part-01/11-number-theory/README.md). Declared in [FormalConjectures/ErdosProblems/785.lean, line 197](https://github.com/google-deepmind/formal-conjectures/blob/d8d031d4998c78575159ccab9a7a9e95ce043883/FormalConjectures/ErdosProblems/785.lean#L197).
 
 ## Depends on
 
@@ -230,5 +239,5 @@ No dependencies are recorded: this chapter reads Formal Conjectures' source text
 
 ## Sources
 
-- [FormalConjectures/ErdosProblems/785.lean at 5258ab9a](https://github.com/google-deepmind/formal-conjectures/blob/5258ab9ac6db5eb0047aa4100ea0f995c5466da6/FormalConjectures/ErdosProblems/785.lean)
+- [FormalConjectures/ErdosProblems/785.lean at d8d031d4](https://github.com/google-deepmind/formal-conjectures/blob/d8d031d4998c78575159ccab9a7a9e95ce043883/FormalConjectures/ErdosProblems/785.lean)
 - [erdosproblems.com/785](https://www.erdosproblems.com/785)

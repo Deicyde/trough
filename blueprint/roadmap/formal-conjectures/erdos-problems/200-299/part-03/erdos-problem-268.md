@@ -11,7 +11,7 @@ statement: formalized
 >  - [erdosproblems.com/268](https://www.erdosproblems.com/268)
 >  - [KoTa24] Kova\vC, V. and Tao T., On several irrationality problems for Ahmes series.
 
-*Quoted from [FormalConjectures/ErdosProblems/268.lean](https://github.com/google-deepmind/formal-conjectures/blob/5258ab9ac6db5eb0047aa4100ea0f995c5466da6/FormalConjectures/ErdosProblems/268.lean) in [Formal Conjectures](https://github.com/google-deepmind/formal-conjectures) (Google DeepMind) at commit [5258ab9a](https://github.com/google-deepmind/formal-conjectures/tree/5258ab9ac6db5eb0047aa4100ea0f995c5466da6), Apache-2.0, as are the docstrings and Lean statements below.*
+*Quoted from [FormalConjectures/ErdosProblems/268.lean](https://github.com/google-deepmind/formal-conjectures/blob/d8d031d4998c78575159ccab9a7a9e95ce043883/FormalConjectures/ErdosProblems/268.lean) in [Formal Conjectures](https://github.com/google-deepmind/formal-conjectures) (Google DeepMind) at commit [d8d031d4](https://github.com/google-deepmind/formal-conjectures/tree/d8d031d4998c78575159ccab9a7a9e95ce043883), Apache-2.0, as are the docstrings and Lean statements below.*
 
 The problem's page on erdosproblems.com: [https://www.erdosproblems.com/268](https://www.erdosproblems.com/268).
 
@@ -32,7 +32,7 @@ theorem erdos_268 (d : ℕ) : (interior {x : Fin d → ℝ | ∃ A : Set ℕ, A.
     x = fun i : Fin d => ∑' n : A, (1 : ℝ) / (n + i)}).Nonempty
 ```
 
-Category `research solved`; AMS [40 Sequences, series, summability](../../../by-subject/part-02/40-sequences-series-summability/README.md), [54 General topology](../../../by-subject/part-02/54-general-topology/README.md). Declared in [FormalConjectures/ErdosProblems/268.lean, line 39](https://github.com/google-deepmind/formal-conjectures/blob/5258ab9ac6db5eb0047aa4100ea0f995c5466da6/FormalConjectures/ErdosProblems/268.lean#L39).
+Category `research solved`; AMS [40 Sequences, series, summability](../../../by-subject/part-02/40-sequences-series-summability/README.md), [54 General topology](../../../by-subject/part-02/54-general-topology/README.md). Declared in [FormalConjectures/ErdosProblems/268.lean, line 39](https://github.com/google-deepmind/formal-conjectures/blob/d8d031d4998c78575159ccab9a7a9e95ce043883/FormalConjectures/ErdosProblems/268.lean#L39).
 
 ## Depends on
 
@@ -40,5 +40,5 @@ No dependencies are recorded: this chapter reads Formal Conjectures' source text
 
 ## Sources
 
-- [FormalConjectures/ErdosProblems/268.lean at 5258ab9a](https://github.com/google-deepmind/formal-conjectures/blob/5258ab9ac6db5eb0047aa4100ea0f995c5466da6/FormalConjectures/ErdosProblems/268.lean)
+- [FormalConjectures/ErdosProblems/268.lean at d8d031d4](https://github.com/google-deepmind/formal-conjectures/blob/d8d031d4998c78575159ccab9a7a9e95ce043883/FormalConjectures/ErdosProblems/268.lean)
 - [erdosproblems.com/268](https://www.erdosproblems.com/268)

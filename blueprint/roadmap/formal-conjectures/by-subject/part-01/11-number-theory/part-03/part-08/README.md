@@ -2,8 +2,13 @@
 navigation: transparent
 ---
 
-# Elliott–Halberstam conjecture to Grimm's conjecture
+# Collatz conjecture to Fortune's Conjecture
 
+- [Collatz conjecture](../../../../../wikipedia/part-02/collatz-conjecture.md)
+- [Congruent Number](../../../../../wikipedia/part-02/congruent-number.md)
+- [Dickson's conjecture](../../../../../wikipedia/part-02/dicksons-conjecture.md)
+- [Diophantine $m$-tuples](../../../../../wikipedia/part-02/diophantine-m-tuples.md)
+- [Dirichlet divisor problem](../../../../../wikipedia/part-03/dirichlet-divisor-problem.md)
 - [Elliott–Halberstam conjecture](../../../../../wikipedia/part-03/elliott-halberstam-conjecture.md)
 - [Some conjectures about ranks of elliptic curves over ℚ](../../../../../wikipedia/part-03/some-conjectures-about-ranks-of-elliptic-curves.md)
 - [Emirps](../../../../../wikipedia/part-03/emirps.md)
@@ -19,8 +24,3 @@ navigation: transparent
 - [Fibonacci Primes](../../../../../wikipedia/part-03/fibonacci-primes.md)
 - [Firoozbakht's conjecture](../../../../../wikipedia/part-03/firoozbakhts-conjecture.md)
 - [Fortune's Conjecture](../../../../../wikipedia/part-03/fortunes-conjecture.md)
-- [Gauss circle problem](../../../../../wikipedia/part-04/gauss-circle-problem.md)
-- [Gilbreath's conjecture](../../../../../wikipedia/part-04/gilbreaths-conjecture.md)
-- [Goldbach's conjecture](../../../../../wikipedia/part-04/goldbachs-conjecture.md)
-- [The Goormaghtigh conjecture](../../../../../wikipedia/part-04/the-goormaghtigh-conjecture.md)
-- [Grimm's conjecture](../../../../../wikipedia/part-04/grimms-conjecture.md)

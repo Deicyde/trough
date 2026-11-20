@@ -2,8 +2,16 @@
 navigation: transparent
 ---
 
-# Ben Green's Open Problem 86 to Cunningham chains — Jones's…
+# Ben Green's Open Problem 60 to Prime Tuples Conjecture
 
+- [Ben Green's Open Problem 60](../../../../../greens-open-problems/part-03/ben-greens-open-problem-60.md)
+- [Ben Green's Open Problem 61](../../../../../greens-open-problems/part-03/ben-greens-open-problem-61.md)
+- [Ben Green's Open Problem 62](../../../../../greens-open-problems/part-03/ben-greens-open-problem-62.md)
+- [Green's Open Problem 64](../../../../../greens-open-problems/part-03/greens-open-problem-64.md)
+- [Ben Green's Open Problem 65](../../../../../greens-open-problems/part-03/ben-greens-open-problem-65.md)
+- [Ben Green's Open Problem 66](../../../../../greens-open-problems/part-03/ben-greens-open-problem-66.md)
+- [Ben Green's Open Problem 82](../../../../../greens-open-problems/part-04/ben-greens-open-problem-82.md)
+- [Ben Green's Open Problem 84](../../../../../greens-open-problems/part-04/ben-greens-open-problem-84.md)
 - [Ben Green's Open Problem 86](../../../../../greens-open-problems/part-04/ben-greens-open-problem-86.md)
 - [Ben Green's Open Problem 93](../../../../../greens-open-problems/part-04/ben-greens-open-problem-93.md)
 - [Ben Green's Open Problem 95](../../../../../greens-open-problems/part-04/ben-greens-open-problem-95.md)
@@ -16,11 +24,3 @@ navigation: transparent
 - [Parities of partition numbers](../../../../../papers/part-02/parities-of-partition-numbers.md)
 - [Pfister's problem on the Pythagoras number of $\mathbb{R}(X_1, \dots, X_n)$](../../../../../papers/part-02/pfisters-problem-on-the-pythagoras-number-of-r-x.md)
 - [Prime Tuples Conjecture](../../../../../papers/part-02/prime-tuples-conjecture.md)
-- [Equivalents to the Riemann Hypothesis](../../../../../papers/part-03/equivalents-to-the-riemann-hypothesis.md)
-- [Moments of the Riemann zeta function on the critical line](../../../../../papers/part-03/moments-of-the-riemann-zeta-function-on-the-crit.md)
-- [Simple zeros of the Riemann zeta function on the critical line](../../../../../papers/part-03/simple-zeros-of-the-riemann-zeta-function-on-the.md)
-- [Serre's uniformity conjecture over the rationals](../../../../../papers/part-03/serres-uniformity-conjecture-over-the-rationals.md)
-- [Tu-Deng Conjecture](../../../../../papers/part-03/tu-deng-conjecture.md)
-- [Zagier's Conjecture on Multiple Zeta Values](../../../../../papers/part-03/zagiers-conjecture-on-multiple-zeta-values.md)
-- [The Curling Number Conjecture](../../../../../arxiv/part-01/the-curling-number-conjecture.md)
-- [Cunningham chains — Jones's conjecture](../../../../../arxiv/part-01/cunningham-chains-joness-conjecture.md)

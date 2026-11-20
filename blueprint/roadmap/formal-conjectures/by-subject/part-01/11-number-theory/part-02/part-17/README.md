@@ -2,8 +2,10 @@
 navigation: transparent
 ---
 
-# Ascending descending base… to Recurrence involving LCM: $a(n)…
+# Square odd-indexed terms in the… to Ratio of product of GCDs to…
 
+- [Square odd-indexed terms in the recurrence $a(n) = 8a(n-1) - 8a(n-2) + 8a(n-3) - a(n-4)$](../../../../../oeis/part-08/square-odd-indexed-terms-in-the-recurrence-a-n-8.md)
+- [Conjectures associated with A113255](../../../../../oeis/part-08/conjectures-associated-with-a113255.md)
 - [Ascending descending base exponent transform of squares](../../../../../oeis/part-08/ascending-descending-base-exponent-transform-of.md)
 - [Ascending descending base exponent transform of factorials](../../../../../oeis/part-08/ascending-descending-base-exponent-transform-of-2.md)
 - [Ascending descending base exponent transform of $2^n$](../../../../../oeis/part-08/ascending-descending-base-exponent-transform-of-3.md)
@@ -22,5 +24,3 @@ navigation: transparent
 - [Least $k \ge 1$ such that $2 \cdot n^k - 1$ is prime](../../../../../oeis/part-09/least-k-ge-1-such-that-2-cdot-n-k-1-is-prime.md)
 - [Half-Fibonacci sequence](../../../../../oeis/part-09/half-fibonacci-sequence.md)
 - [Ratio of product of GCDs to product of factorials of floor divisions](../../../../../oeis/part-09/ratio-of-product-of-gcds-to-product-of-factorial.md)
-- [Odious primes minus evil primes among first $n$ primes](../../../../../oeis/part-09/odious-primes-minus-evil-primes-among-first-n-pr.md)
-- [Recurrence involving LCM: $a(n) = x(n+1)/x(n) - 2$](../../../../../oeis/part-09/recurrence-involving-lcm-a-n-x-n-1-x-n-2.md)

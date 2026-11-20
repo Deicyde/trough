@@ -2,10 +2,12 @@
 navigation: transparent
 ---
 
-# Tarski's exponential function… to Woodall Primes
+# Gottschalk's surjunctivity… to Woodall Primes
 
+- [Gottschalk's surjunctivity conjecture](gottschalks-surjunctivity-conjecture.md)
 - [Tarski's exponential function problem](tarskis-exponential-function-problem.md)
 - [Taxicab numbers](taxicab-numbers.md)
+- [Thabit numbers and Thabit primes](thabit-numbers-and-thabit-primes.md)
 - [Toronto spaces](toronto-spaces.md)
 - [The total colouring conjecture (Behzad 1965, Vizing 1968)](the-total-colouring-conjecture-behzad-1965-vizin.md)
 - [Open questions on transcendence of numbers](open-questions-on-transcendence-of-numbers.md)

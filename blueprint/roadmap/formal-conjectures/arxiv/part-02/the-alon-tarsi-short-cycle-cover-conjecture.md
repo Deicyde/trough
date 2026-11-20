@@ -19,7 +19,7 @@ statement: formalized
 > Every bridgeless simple graph has a list of cycles covering every edge whose lengths sum to at most
 > $\frac{7}{5}|E|$.
 
-*Quoted from [FormalConjectures/Arxiv/2607.06396/AlonTarsi.lean](https://github.com/google-deepmind/formal-conjectures/blob/5258ab9ac6db5eb0047aa4100ea0f995c5466da6/FormalConjectures/Arxiv/2607.06396/AlonTarsi.lean) in [Formal Conjectures](https://github.com/google-deepmind/formal-conjectures) (Google DeepMind) at commit [5258ab9a](https://github.com/google-deepmind/formal-conjectures/tree/5258ab9ac6db5eb0047aa4100ea0f995c5466da6), Apache-2.0, as are the docstrings and Lean statements below.*
+*Quoted from [FormalConjectures/Arxiv/2607.06396/AlonTarsi.lean](https://github.com/google-deepmind/formal-conjectures/blob/d8d031d4998c78575159ccab9a7a9e95ce043883/FormalConjectures/Arxiv/2607.06396/AlonTarsi.lean) in [Formal Conjectures](https://github.com/google-deepmind/formal-conjectures) (Google DeepMind) at commit [d8d031d4](https://github.com/google-deepmind/formal-conjectures/tree/d8d031d4998c78575159ccab9a7a9e95ce043883), Apache-2.0, as are the docstrings and Lean statements below.*
 
 The file states 1 research or textbook statement: 1 open. It also has 2 test statements and 5 API statements, counted here but not shown.
 
@@ -39,7 +39,7 @@ theorem alon_tarsi_short_cycle_cover :
         (totalLength C : ℚ) ≤ 7 / 5 * #G.edgeFinset
 ```
 
-Category `research open`; AMS [05 Combinatorics](../../by-subject/part-01/05-combinatorics/README.md). Declared in [FormalConjectures/Arxiv/2607.06396/AlonTarsi.lean, line 89](https://github.com/google-deepmind/formal-conjectures/blob/5258ab9ac6db5eb0047aa4100ea0f995c5466da6/FormalConjectures/Arxiv/2607.06396/AlonTarsi.lean#L89).
+Category `research open`; AMS [05 Combinatorics](../../by-subject/part-01/05-combinatorics/README.md). Declared in [FormalConjectures/Arxiv/2607.06396/AlonTarsi.lean, line 89](https://github.com/google-deepmind/formal-conjectures/blob/d8d031d4998c78575159ccab9a7a9e95ce043883/FormalConjectures/Arxiv/2607.06396/AlonTarsi.lean#L89).
 
 ## Depends on
 
@@ -47,5 +47,5 @@ No dependencies are recorded: this chapter reads Formal Conjectures' source text
 
 ## Sources
 
-- [FormalConjectures/Arxiv/2607.06396/AlonTarsi.lean at 5258ab9a](https://github.com/google-deepmind/formal-conjectures/blob/5258ab9ac6db5eb0047aa4100ea0f995c5466da6/FormalConjectures/Arxiv/2607.06396/AlonTarsi.lean)
+- [FormalConjectures/Arxiv/2607.06396/AlonTarsi.lean at d8d031d4](https://github.com/google-deepmind/formal-conjectures/blob/d8d031d4998c78575159ccab9a7a9e95ce043883/FormalConjectures/Arxiv/2607.06396/AlonTarsi.lean)
 - [arxiv/2607.06396](https://arxiv.org/abs/2607.06396)

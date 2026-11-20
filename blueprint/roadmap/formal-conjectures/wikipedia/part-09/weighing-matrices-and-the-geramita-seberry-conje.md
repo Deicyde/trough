@@ -12,10 +12,12 @@ statement: formalized
 >
 > *References:*
 > - [Wikipedia](https://en.wikipedia.org/wiki/Weighing_matrix)
+> - [Ea76] Eades, P. (1976). *Some asymptotic existence results for orthogonal designs*, Ars Combin.
+>   1, 109--118.
 > - [GS79] Geramita, A. V. and Seberry, J. (1979). *Orthogonal Designs: Quadratic Forms and Hadamard
 >   Matrices*, Lecture Notes in Pure and Applied Mathematics 45, Marcel Dekker, New York.
 
-*Quoted from [FormalConjectures/Wikipedia/WeighingMatrix.lean](https://github.com/google-deepmind/formal-conjectures/blob/5258ab9ac6db5eb0047aa4100ea0f995c5466da6/FormalConjectures/Wikipedia/WeighingMatrix.lean) in [Formal Conjectures](https://github.com/google-deepmind/formal-conjectures) (Google DeepMind) at commit [5258ab9a](https://github.com/google-deepmind/formal-conjectures/tree/5258ab9ac6db5eb0047aa4100ea0f995c5466da6), Apache-2.0, as are the docstrings and Lean statements below.*
+*Quoted from [FormalConjectures/Wikipedia/WeighingMatrix.lean](https://github.com/google-deepmind/formal-conjectures/blob/d8d031d4998c78575159ccab9a7a9e95ce043883/FormalConjectures/Wikipedia/WeighingMatrix.lean) in [Formal Conjectures](https://github.com/google-deepmind/formal-conjectures) (Google DeepMind) at commit [d8d031d4](https://github.com/google-deepmind/formal-conjectures/tree/d8d031d4998c78575159ccab9a7a9e95ce043883), Apache-2.0, as are the docstrings and Lean statements below.*
 
 The file states 2 research or textbook statements: 1 open and 1 solved. It also has 2 test statements and 3 API statements, counted here but not shown.
 
@@ -31,24 +33,25 @@ Open: stated without proof.
 
 ```lean
 theorem weighing_matrix_conjecture (m w : ℕ) (hm : 1 ≤ m) (hw : w ≤ 4 * m) :
-    ∃ W, IsWeighingMatrix (4 * m) w W
+    ∃ W, IsWeighingMatrix (n := 4 * m) w W
 ```
 
-Category `research open`; AMS [05 Combinatorics](../../by-subject/part-01/05-combinatorics/README.md), [15 Linear and multilinear algebra; matrix theory](../../by-subject/part-01/15-linear-and-multilinear-algebra-matrix-theory/README.md). Declared in [FormalConjectures/Wikipedia/WeighingMatrix.lean, line 92](https://github.com/google-deepmind/formal-conjectures/blob/5258ab9ac6db5eb0047aa4100ea0f995c5466da6/FormalConjectures/Wikipedia/WeighingMatrix.lean#L92).
+Category `research open`; AMS [05 Combinatorics](../../by-subject/part-01/05-combinatorics/README.md), [15 Linear and multilinear algebra; matrix theory](../../by-subject/part-01/15-linear-and-multilinear-algebra-matrix-theory/README.md). Declared in [FormalConjectures/Wikipedia/WeighingMatrix.lean, line 97](https://github.com/google-deepmind/formal-conjectures/blob/d8d031d4998c78575159ccab9a7a9e95ce043883/FormalConjectures/Wikipedia/WeighingMatrix.lean#L97).
 
 ## `WeighingMatrix.weighing_matrix_conjecture.variants.asymptotic`
 
 Solved: stated here without proof.
 
-> **Asymptotic existence of weighing matrices** (Geramita–Seberry [GS79]): for every fixed weight
-> $w$, a weighing matrix $W(4m, w)$ exists for all sufficiently large multiples $4m$.
+> **Asymptotic existence of weighing matrices** (Eades [Ea76]; Geramita–Seberry [GS79], Thm. 7.17):
+> for every fixed weight $w$, a weighing matrix $W(4m, w)$ exists for all sufficiently large multiples
+> $4m$.
 
 ```lean
 theorem weighing_matrix_conjecture.variants.asymptotic (w : ℕ) :
-    ∀ᶠ m in Filter.atTop, ∃ W, IsWeighingMatrix (4 * m) w W
+    ∀ᶠ m in Filter.atTop, ∃ W, IsWeighingMatrix (n := 4 * m) w W
 ```
 
-Category `research solved`; AMS [05 Combinatorics](../../by-subject/part-01/05-combinatorics/README.md), [15 Linear and multilinear algebra; matrix theory](../../by-subject/part-01/15-linear-and-multilinear-algebra-matrix-theory/README.md). Declared in [FormalConjectures/Wikipedia/WeighingMatrix.lean, line 101](https://github.com/google-deepmind/formal-conjectures/blob/5258ab9ac6db5eb0047aa4100ea0f995c5466da6/FormalConjectures/Wikipedia/WeighingMatrix.lean#L101).
+Category `research solved`; AMS [05 Combinatorics](../../by-subject/part-01/05-combinatorics/README.md), [15 Linear and multilinear algebra; matrix theory](../../by-subject/part-01/15-linear-and-multilinear-algebra-matrix-theory/README.md). Declared in [FormalConjectures/Wikipedia/WeighingMatrix.lean, line 107](https://github.com/google-deepmind/formal-conjectures/blob/d8d031d4998c78575159ccab9a7a9e95ce043883/FormalConjectures/Wikipedia/WeighingMatrix.lean#L107).
 
 ## Depends on
 
@@ -56,5 +59,5 @@ No dependencies are recorded: this chapter reads Formal Conjectures' source text
 
 ## Sources
 
-- [FormalConjectures/Wikipedia/WeighingMatrix.lean at 5258ab9a](https://github.com/google-deepmind/formal-conjectures/blob/5258ab9ac6db5eb0047aa4100ea0f995c5466da6/FormalConjectures/Wikipedia/WeighingMatrix.lean)
+- [FormalConjectures/Wikipedia/WeighingMatrix.lean at d8d031d4](https://github.com/google-deepmind/formal-conjectures/blob/d8d031d4998c78575159ccab9a7a9e95ce043883/FormalConjectures/Wikipedia/WeighingMatrix.lean)
 - [Wikipedia](https://en.wikipedia.org/wiki/Weighing_matrix)

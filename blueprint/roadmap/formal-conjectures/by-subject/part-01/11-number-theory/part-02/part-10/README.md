@@ -2,8 +2,10 @@
 navigation: transparent
 ---
 
-# $a(n) = 2^(2^n)$ to Wolstenholme numbers
+# Number of squares $\bmod n$ to Apéry numbers
 
+- [Number of squares $\bmod n$](../../../../../oeis/part-01/number-of-squares-bmod-n.md)
+- [Euclid-Mullin sequence](../../../../../oeis/part-01/euclid-mullin-sequence.md)
 - [$a(n) = 2^(2^n)$](../../../../../oeis/part-01/a-n-2-2-n.md)
 - [Sum of squares of divisors of $n$](../../../../../oeis/part-01/sum-of-squares-of-divisors-of-n.md)
 - [Prime gaps](../../../../../oeis/part-01/prime-gaps.md)
@@ -22,5 +24,3 @@ navigation: transparent
 - [Recamán's sequence](../../../../../oeis/part-02/recamans-sequence.md)
 - [Practical numbers](../../../../../oeis/part-02/practical-numbers.md)
 - [Apéry numbers](../../../../../oeis/part-02/apery-numbers.md)
-- [Catalan-Mersenne numbers](../../../../../oeis/part-02/catalan-mersenne-numbers.md)
-- [Wolstenholme numbers](../../../../../oeis/part-02/wolstenholme-numbers.md)

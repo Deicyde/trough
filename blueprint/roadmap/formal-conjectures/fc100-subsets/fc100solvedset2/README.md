@@ -3,7 +3,7 @@
 > A curated subset of 100 hard-to-formalise solved research problems with verified
 > formal statements (`category research solved`) and no existing formal proof.
 
-*Quoted from [FormalConjectures/Subsets/FC100SolvedSet2.lean](https://github.com/google-deepmind/formal-conjectures/blob/5258ab9ac6db5eb0047aa4100ea0f995c5466da6/FormalConjectures/Subsets/FC100SolvedSet2.lean) in [Formal Conjectures](https://github.com/google-deepmind/formal-conjectures) (Google DeepMind) at commit [5258ab9a](https://github.com/google-deepmind/formal-conjectures/tree/5258ab9ac6db5eb0047aa4100ea0f995c5466da6), Apache-2.0.*
+*Quoted from [FormalConjectures/Subsets/FC100SolvedSet2.lean](https://github.com/google-deepmind/formal-conjectures/blob/d8d031d4998c78575159ccab9a7a9e95ce043883/FormalConjectures/Subsets/FC100SolvedSet2.lean) in [Formal Conjectures](https://github.com/google-deepmind/formal-conjectures) (Google DeepMind) at commit [d8d031d4](https://github.com/google-deepmind/formal-conjectures/tree/d8d031d4998c78575159ccab9a7a9e95ce043883), Apache-2.0.*
 
 The 100 statements the list names, numbered as it lists them, each linked to its problem's article.
 

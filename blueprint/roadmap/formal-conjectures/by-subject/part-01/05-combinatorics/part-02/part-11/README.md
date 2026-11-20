@@ -2,8 +2,13 @@
 navigation: transparent
 ---
 
-# Barker sequences to Tao's Optimization Constant 6a…
+# Size, Order, and Connected… to MathOverflow 508539
 
+- [Size, Order, and Connected Domination](../../../../../papers/part-03/size-order-and-connected-domination.md)
+- [Tu-Deng Conjecture](../../../../../papers/part-03/tu-deng-conjecture.md)
+- [The length of an $s$-increasing sequence of $r$-tuples](../../../../../arxiv/part-01/the-length-of-an-s-increasing-sequence-of-r-tupl.md)
+- [Pittel's second-moment conjecture for nearly balanced markets](../../../../../arxiv/part-01/pittels-second-moment-conjecture-for-nearly-bala.md)
+- [Ringel's Conjecture and Kotzig's Conjecture for large $n$](../../../../../arxiv/part-01/ringels-conjecture-and-kotzigs-conjecture-for-la.md)
 - [Barker sequences](../../../../../arxiv/part-01/barker-sequences.md)
 - [Independent Domination of Regular Graphs, Conjecture 1.6](../../../../../arxiv/part-01/independent-domination-of-regular-graphs-conject.md)
 - [Digit $2$ in base $3$ representation of $2^n$](../../../../../arxiv/part-01/digit-2-in-base-3-representation-of-2-n.md)
@@ -19,8 +24,3 @@ navigation: transparent
 - [The Balister–Győri–Schelp conjecture](../../../../../arxiv/part-02/the-balister-gyori-schelp-conjecture.md)
 - [Optimal monotone families for the discrete isoperimetric inequality](../../../../../mathoverflow/optimal-monotone-families-for-the-discrete-isope.md)
 - [MathOverflow 508539](../../../../../mathoverflow/mathoverflow-508539.md)
-- [Beaver Math Olympiad (BMO)](../../../../../other/beaver-math-olympiad-bmo.md)
-- [Suffix-prefix avoidance bound](../../../../../other/suffix-prefix-avoidance-bound.md)
-- [VCₙ dimension of convex sets in ℝⁿ, ℝⁿ⁺¹, ℝⁿ⁺²](../../../../../other/vcn-dimension-of-convex-sets-in-rn-rn-1-rn-2.md)
-- [Tao's Optimization constant 1a / An autocorrelation constant related to Sidon sets](../../../../../optimization-constants/taos-optimization-constant-1a-an-autocorrelation.md)
-- [Tao's Optimization Constant 6a / The Union-Closed Sets Conjecture](../../../../../optimization-constants/taos-optimization-constant-6a-the-union-closed-s.md)

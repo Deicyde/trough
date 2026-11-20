@@ -9,12 +9,15 @@ statement: formalized
 
 > *References:*
 > - [erdosproblems.com/596](https://www.erdosproblems.com/596)
-> - [Er87] Erdős, *Some of my favourite problems in various branches of combinatorics*,
->   *Mat. Lapok* 1987.
-> - [NeRo75] Nešetřil and Rödl, *The Ramsey property for graphs with forbidden complete
->   subgraphs*, *J. Combin. Theory* B **20** (1976), 243--249.
+> - [Er87] Erdős, P., *Some problems on finite and infinite graphs*, in *Logic and combinatorics*
+>   (Arcata, Calif., 1985), Contemp. Math. **65** (1987), 223–228.
+> - [NeRo75] Nešetřil, J. and Rödl, V., *Type theory of partition properties of graphs*, in
+>   *Infinite and finite sets* (Colloq., Keszthely, 1973), Colloq. Math. Soc. János Bolyai **10**
+>   (1975), 405–412.
+> - [NeRo87] Nešetřil, J. and Rödl, V., *Strong Ramsey theorems for Steiner systems*,
+>   *Trans. Amer. Math. Soc.* **303** (1987), 183–192.
 
-*Quoted from [FormalConjectures/ErdosProblems/596.lean](https://github.com/google-deepmind/formal-conjectures/blob/5258ab9ac6db5eb0047aa4100ea0f995c5466da6/FormalConjectures/ErdosProblems/596.lean) in [Formal Conjectures](https://github.com/google-deepmind/formal-conjectures) (Google DeepMind) at commit [5258ab9a](https://github.com/google-deepmind/formal-conjectures/tree/5258ab9ac6db5eb0047aa4100ea0f995c5466da6), Apache-2.0, as are the docstrings and Lean statements below.*
+*Quoted from [FormalConjectures/ErdosProblems/596.lean](https://github.com/google-deepmind/formal-conjectures/blob/d8d031d4998c78575159ccab9a7a9e95ce043883/FormalConjectures/ErdosProblems/596.lean) in [Formal Conjectures](https://github.com/google-deepmind/formal-conjectures) (Google DeepMind) at commit [d8d031d4](https://github.com/google-deepmind/formal-conjectures/tree/d8d031d4998c78575159ccab9a7a9e95ce043883), Apache-2.0, as are the docstrings and Lean statements below.*
 
 The problem's page on erdosproblems.com: [https://www.erdosproblems.com/596](https://www.erdosproblems.com/596).
 
@@ -24,7 +27,7 @@ The file states 8 research or textbook statements: 2 open and 6 solved. It also 
 
 Open: stated without proof.
 
-> **Erdős Problem 596** (Erdős–Hajnal, [Er87]). For which graph pairs $(G_1, G_2)$ is it
+> **Erdős Problem 596** (Erdős–Hajnal, [Er87]). For which finite graph pairs $(G_1, G_2)$ is it
 > true that
 >
 >   (1) for every $n \geq 1$ there is a graph $H$ without a $G_1$ such that any
@@ -40,25 +43,26 @@ Open: stated without proof.
 
 ```lean
 theorem erdos_596 :
-    ∀ {U₁ U₂ : Type} (G₁ : SimpleGraph U₁) (G₂ : SimpleGraph U₂),
+    ∀ {U₁ U₂ : Type} [Finite U₁] [Finite U₂] (G₁ : SimpleGraph U₁) (G₂ : SimpleGraph U₂),
       IsErdosHajnalExceptional G₁ G₂ ↔ erdos_596.answer G₁ G₂
 ```
 
-Category `research open`; AMS [05 Combinatorics](../../../by-subject/part-01/05-combinatorics/README.md). Declared in [FormalConjectures/ErdosProblems/596.lean, line 55](https://github.com/google-deepmind/formal-conjectures/blob/5258ab9ac6db5eb0047aa4100ea0f995c5466da6/FormalConjectures/ErdosProblems/596.lean#L55).
+Category `research open`; AMS [05 Combinatorics](../../../by-subject/part-01/05-combinatorics/README.md). Declared in [FormalConjectures/ErdosProblems/596.lean, line 58](https://github.com/google-deepmind/formal-conjectures/blob/d8d031d4998c78575159ccab9a7a9e95ce043883/FormalConjectures/ErdosProblems/596.lean#L58).
 
 ## `Erdos596.erdos_596.variants.exists_exceptional`
 
 Solved: stated here without proof.
 
-> Erdős–Hajnal exceptional pairs exist — recorded as a known direction of `erdos_596`.
+> Finite Erdős–Hajnal exceptional pairs exist — recorded as a known direction of `erdos_596`.
 
 ```lean
 theorem erdos_596.variants.exists_exceptional :
-    ∃ (U₁ U₂ : Type) (G₁ : SimpleGraph U₁) (G₂ : SimpleGraph U₂),
+    ∃ (U₁ U₂ : Type) (_ : Finite U₁) (_ : Finite U₂)
+      (G₁ : SimpleGraph U₁) (G₂ : SimpleGraph U₂),
       IsErdosHajnalExceptional G₁ G₂
 ```
 
-Category `research solved`; AMS [05 Combinatorics](../../../by-subject/part-01/05-combinatorics/README.md). Declared in [FormalConjectures/ErdosProblems/596.lean, line 62](https://github.com/google-deepmind/formal-conjectures/blob/5258ab9ac6db5eb0047aa4100ea0f995c5466da6/FormalConjectures/ErdosProblems/596.lean#L62).
+Category `research solved`; AMS [05 Combinatorics](../../../by-subject/part-01/05-combinatorics/README.md). Declared in [FormalConjectures/ErdosProblems/596.lean, line 65](https://github.com/google-deepmind/formal-conjectures/blob/d8d031d4998c78575159ccab9a7a9e95ce043883/FormalConjectures/ErdosProblems/596.lean#L65).
 
 ## `Erdos596.erdos_596.variants.C4_free_countable_escape`
 
@@ -72,13 +76,13 @@ theorem erdos_596.variants.C4_free_countable_escape :
     HasCountableRamseyEscape (cycleGraph 4) (cycleGraph 6)
 ```
 
-Category `research solved`; AMS [05 Combinatorics](../../../by-subject/part-01/05-combinatorics/README.md). Declared in [FormalConjectures/ErdosProblems/596.lean, line 70](https://github.com/google-deepmind/formal-conjectures/blob/5258ab9ac6db5eb0047aa4100ea0f995c5466da6/FormalConjectures/ErdosProblems/596.lean#L70).
+Category `research solved`; AMS [05 Combinatorics](../../../by-subject/part-01/05-combinatorics/README.md). Declared in [FormalConjectures/ErdosProblems/596.lean, line 74](https://github.com/google-deepmind/formal-conjectures/blob/d8d031d4998c78575159ccab9a7a9e95ce043883/FormalConjectures/ErdosProblems/596.lean#L74).
 
 ## `Erdos596.erdos_596.variants.C4_C6_finite_ramsey`
 
 Solved: stated here without proof.
 
-> Nešetřil–Rödl [NeRo75]: for every $n \geq 1$ there is a $C_4$-free graph whose edges
+> Nešetřil–Rödl [NeRo87]: for every $n \geq 1$ there is a $C_4$-free graph whose edges
 > cannot be $n$-coloured without a monochromatic $C_6$.
 
 ```lean
@@ -86,7 +90,7 @@ theorem erdos_596.variants.C4_C6_finite_ramsey :
     HasFiniteRamseyProperty (cycleGraph 4) (cycleGraph 6)
 ```
 
-Category `research solved`; AMS [05 Combinatorics](../../../by-subject/part-01/05-combinatorics/README.md). Declared in [FormalConjectures/ErdosProblems/596.lean, line 77](https://github.com/google-deepmind/formal-conjectures/blob/5258ab9ac6db5eb0047aa4100ea0f995c5466da6/FormalConjectures/ErdosProblems/596.lean#L77).
+Category `research solved`; AMS [05 Combinatorics](../../../by-subject/part-01/05-combinatorics/README.md). Declared in [FormalConjectures/ErdosProblems/596.lean, line 81](https://github.com/google-deepmind/formal-conjectures/blob/d8d031d4998c78575159ccab9a7a9e95ce043883/FormalConjectures/ErdosProblems/596.lean#L81).
 
 ## `Erdos596.erdos_596.variants.C4_C6_is_exceptional`
 
@@ -100,22 +104,22 @@ theorem erdos_596.variants.C4_C6_is_exceptional :
     IsErdosHajnalExceptional (cycleGraph 4) (cycleGraph 6)
 ```
 
-Category `research solved`; AMS [05 Combinatorics](../../../by-subject/part-01/05-combinatorics/README.md). Declared in [FormalConjectures/ErdosProblems/596.lean, line 84](https://github.com/google-deepmind/formal-conjectures/blob/5258ab9ac6db5eb0047aa4100ea0f995c5466da6/FormalConjectures/ErdosProblems/596.lean#L84).
+Category `research solved`; AMS [05 Combinatorics](../../../by-subject/part-01/05-combinatorics/README.md). Declared in [FormalConjectures/ErdosProblems/596.lean, line 88](https://github.com/google-deepmind/formal-conjectures/blob/d8d031d4998c78575159ccab9a7a9e95ce043883/FormalConjectures/ErdosProblems/596.lean#L88).
 
 ## `Erdos596.erdos_596.variants.original_conjecture_is_false`
 
 Solved: stated here without proof.
 
-> The original Erdős–Hajnal conjecture (that no exceptional pair exists) is **false** —
+> The original Erdős–Hajnal conjecture (that no finite exceptional pair exists) is **false** —
 > witnessed by $(C_4, C_6)$ via `C4_C6_is_exceptional`.
 
 ```lean
 theorem erdos_596.variants.original_conjecture_is_false :
-    ¬ ∀ {U₁ U₂ : Type} (G₁ : SimpleGraph U₁) (G₂ : SimpleGraph U₂),
+    ¬ ∀ {U₁ U₂ : Type} [Finite U₁] [Finite U₂] (G₁ : SimpleGraph U₁) (G₂ : SimpleGraph U₂),
       ¬IsErdosHajnalExceptional G₁ G₂
 ```
 
-Category `research solved`; AMS [05 Combinatorics](../../../by-subject/part-01/05-combinatorics/README.md). Declared in [FormalConjectures/ErdosProblems/596.lean, line 91](https://github.com/google-deepmind/formal-conjectures/blob/5258ab9ac6db5eb0047aa4100ea0f995c5466da6/FormalConjectures/ErdosProblems/596.lean#L91).
+Category `research solved`; AMS [05 Combinatorics](../../../by-subject/part-01/05-combinatorics/README.md). Declared in [FormalConjectures/ErdosProblems/596.lean, line 95](https://github.com/google-deepmind/formal-conjectures/blob/d8d031d4998c78575159ccab9a7a9e95ce043883/FormalConjectures/ErdosProblems/596.lean#L95).
 
 ## `Erdos596.erdos_596.variants.K4_K3_exceptional_iff`
 
@@ -131,7 +135,7 @@ theorem erdos_596.variants.K4_K3_exceptional_iff :
     IsErdosHajnalExceptional (completeGraph (Fin 4)) (completeGraph (Fin 3))
 ```
 
-Category `research open`; AMS [05 Combinatorics](../../../by-subject/part-01/05-combinatorics/README.md). Declared in [FormalConjectures/ErdosProblems/596.lean, line 101](https://github.com/google-deepmind/formal-conjectures/blob/5258ab9ac6db5eb0047aa4100ea0f995c5466da6/FormalConjectures/ErdosProblems/596.lean#L101).
+Category `research open`; AMS [05 Combinatorics](../../../by-subject/part-01/05-combinatorics/README.md). Declared in [FormalConjectures/ErdosProblems/596.lean, line 105](https://github.com/google-deepmind/formal-conjectures/blob/d8d031d4998c78575159ccab9a7a9e95ce043883/FormalConjectures/ErdosProblems/596.lean#L105).
 
 ## `Erdos596.erdos_596.variants.K4_K3_finite_ramsey`
 
@@ -145,7 +149,7 @@ theorem erdos_596.variants.K4_K3_finite_ramsey :
     HasFiniteRamseyProperty (completeGraph (Fin 4)) (completeGraph (Fin 3))
 ```
 
-Category `research solved`; AMS [05 Combinatorics](../../../by-subject/part-01/05-combinatorics/README.md). Declared in [FormalConjectures/ErdosProblems/596.lean, line 108](https://github.com/google-deepmind/formal-conjectures/blob/5258ab9ac6db5eb0047aa4100ea0f995c5466da6/FormalConjectures/ErdosProblems/596.lean#L108).
+Category `research solved`; AMS [05 Combinatorics](../../../by-subject/part-01/05-combinatorics/README.md). Declared in [FormalConjectures/ErdosProblems/596.lean, line 112](https://github.com/google-deepmind/formal-conjectures/blob/d8d031d4998c78575159ccab9a7a9e95ce043883/FormalConjectures/ErdosProblems/596.lean#L112).
 
 ## Depends on
 
@@ -153,5 +157,5 @@ No dependencies are recorded: this chapter reads Formal Conjectures' source text
 
 ## Sources
 
-- [FormalConjectures/ErdosProblems/596.lean at 5258ab9a](https://github.com/google-deepmind/formal-conjectures/blob/5258ab9ac6db5eb0047aa4100ea0f995c5466da6/FormalConjectures/ErdosProblems/596.lean)
+- [FormalConjectures/ErdosProblems/596.lean at d8d031d4](https://github.com/google-deepmind/formal-conjectures/blob/d8d031d4998c78575159ccab9a7a9e95ce043883/FormalConjectures/ErdosProblems/596.lean)
 - [erdosproblems.com/596](https://www.erdosproblems.com/596)

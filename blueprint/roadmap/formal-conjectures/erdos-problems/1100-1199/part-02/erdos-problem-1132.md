@@ -22,7 +22,7 @@ statement: formalized
 > - [Va99] Various, *Some of Paul's favorite problems*. Booklet produced for the conference
 >   "Paul Erdős and his mathematics", Budapest, July 1999 (1999).
 
-*Quoted from [FormalConjectures/ErdosProblems/1132.lean](https://github.com/google-deepmind/formal-conjectures/blob/5258ab9ac6db5eb0047aa4100ea0f995c5466da6/FormalConjectures/ErdosProblems/1132.lean) in [Formal Conjectures](https://github.com/google-deepmind/formal-conjectures) (Google DeepMind) at commit [5258ab9a](https://github.com/google-deepmind/formal-conjectures/tree/5258ab9ac6db5eb0047aa4100ea0f995c5466da6), Apache-2.0, as are the docstrings and Lean statements below.*
+*Quoted from [FormalConjectures/ErdosProblems/1132.lean](https://github.com/google-deepmind/formal-conjectures/blob/d8d031d4998c78575159ccab9a7a9e95ce043883/FormalConjectures/ErdosProblems/1132.lean) in [Formal Conjectures](https://github.com/google-deepmind/formal-conjectures) (Google DeepMind) at commit [d8d031d4](https://github.com/google-deepmind/formal-conjectures/tree/d8d031d4998c78575159ccab9a7a9e95ce043883), Apache-2.0, as are the docstrings and Lean statements below.*
 
 The problem's page on erdosproblems.com: [https://www.erdosproblems.com/1132](https://www.erdosproblems.com/1132).
 
@@ -63,7 +63,7 @@ theorem erdos_1132.parts.i :
         2 / Real.pi * Real.log n - C < lebesgueFunction n x t
 ```
 
-Category `research open`; AMS [41 Approximations and expansions](../../../by-subject/part-02/41-approximations-and-expansions/README.md). Declared in [FormalConjectures/ErdosProblems/1132.lean, line 88](https://github.com/google-deepmind/formal-conjectures/blob/5258ab9ac6db5eb0047aa4100ea0f995c5466da6/FormalConjectures/ErdosProblems/1132.lean#L88).
+Category `research open`; AMS [41 Approximations and expansions](../../../by-subject/part-02/41-approximations-and-expansions/README.md). Declared in [FormalConjectures/ErdosProblems/1132.lean, line 88](https://github.com/google-deepmind/formal-conjectures/blob/d8d031d4998c78575159ccab9a7a9e95ce043883/FormalConjectures/ErdosProblems/1132.lean#L88).
 
 ## `Erdos1132.erdos_1132.parts.ii`
 
@@ -108,7 +108,7 @@ theorem erdos_1132.parts.ii :
           (2 / Real.pi - ε) * Real.log n ≤ lebesgueFunction n x t
 ```
 
-Category `research open`; AMS [41 Approximations and expansions](../../../by-subject/part-02/41-approximations-and-expansions/README.md). Declared in [FormalConjectures/ErdosProblems/1132.lean, line 119](https://github.com/google-deepmind/formal-conjectures/blob/5258ab9ac6db5eb0047aa4100ea0f995c5466da6/FormalConjectures/ErdosProblems/1132.lean#L119).
+Category `research open`; AMS [41 Approximations and expansions](../../../by-subject/part-02/41-approximations-and-expansions/README.md). Declared in [FormalConjectures/ErdosProblems/1132.lean, line 119](https://github.com/google-deepmind/formal-conjectures/blob/d8d031d4998c78575159ccab9a7a9e95ce043883/FormalConjectures/ErdosProblems/1132.lean#L119).
 
 ## `Erdos1132.erdos_1132.variants.erdos_max`
 
@@ -128,7 +128,7 @@ theorem erdos_1132.variants.erdos_max :
         ∃ t ∈ Set.Icc (-1 : ℝ) 1, 2 / Real.pi * Real.log n - C < lebesgueFunction n x t
 ```
 
-Category `research solved`; AMS [41 Approximations and expansions](../../../by-subject/part-02/41-approximations-and-expansions/README.md). Declared in [FormalConjectures/ErdosProblems/1132.lean, line 133](https://github.com/google-deepmind/formal-conjectures/blob/5258ab9ac6db5eb0047aa4100ea0f995c5466da6/FormalConjectures/ErdosProblems/1132.lean#L133).
+Category `research solved`; AMS [41 Approximations and expansions](../../../by-subject/part-02/41-approximations-and-expansions/README.md). Declared in [FormalConjectures/ErdosProblems/1132.lean, line 133](https://github.com/google-deepmind/formal-conjectures/blob/d8d031d4998c78575159ccab9a7a9e95ce043883/FormalConjectures/ErdosProblems/1132.lean#L133).
 
 ## `Erdos1132.erdos_1132.variants.tao`
 
@@ -155,7 +155,7 @@ theorem erdos_1132.variants.tao :
           ∃ᶠ n : ℕ in atTop, 2 / Real.pi * Real.log n - ω n ≤ lebesgueFunction n (x n) t}
 ```
 
-Category `research solved`; AMS [41 Approximations and expansions](../../../by-subject/part-02/41-approximations-and-expansions/README.md). Declared in [FormalConjectures/ErdosProblems/1132.lean, line 151](https://github.com/google-deepmind/formal-conjectures/blob/5258ab9ac6db5eb0047aa4100ea0f995c5466da6/FormalConjectures/ErdosProblems/1132.lean#L151).
+Category `research solved`; AMS [41 Approximations and expansions](../../../by-subject/part-02/41-approximations-and-expansions/README.md). Declared in [FormalConjectures/ErdosProblems/1132.lean, line 151](https://github.com/google-deepmind/formal-conjectures/blob/d8d031d4998c78575159ccab9a7a9e95ce043883/FormalConjectures/ErdosProblems/1132.lean#L151).
 
 ## Depends on
 
@@ -163,5 +163,5 @@ No dependencies are recorded: this chapter reads Formal Conjectures' source text
 
 ## Sources
 
-- [FormalConjectures/ErdosProblems/1132.lean at 5258ab9a](https://github.com/google-deepmind/formal-conjectures/blob/5258ab9ac6db5eb0047aa4100ea0f995c5466da6/FormalConjectures/ErdosProblems/1132.lean)
+- [FormalConjectures/ErdosProblems/1132.lean at d8d031d4](https://github.com/google-deepmind/formal-conjectures/blob/d8d031d4998c78575159ccab9a7a9e95ce043883/FormalConjectures/ErdosProblems/1132.lean)
 - [erdosproblems.com/1132](https://www.erdosproblems.com/1132)

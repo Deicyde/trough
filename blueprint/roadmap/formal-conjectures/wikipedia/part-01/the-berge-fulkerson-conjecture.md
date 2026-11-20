@@ -20,7 +20,7 @@ statement: formalized
 > * [Pe91] Petersen, J. (1891). "Die Theorie der regulären graphs." *Acta Math.* 15,
 >   pp. 193--220.
 
-*Quoted from [FormalConjectures/Wikipedia/BergeFulkersonConjecture.lean](https://github.com/google-deepmind/formal-conjectures/blob/5258ab9ac6db5eb0047aa4100ea0f995c5466da6/FormalConjectures/Wikipedia/BergeFulkersonConjecture.lean) in [Formal Conjectures](https://github.com/google-deepmind/formal-conjectures) (Google DeepMind) at commit [5258ab9a](https://github.com/google-deepmind/formal-conjectures/tree/5258ab9ac6db5eb0047aa4100ea0f995c5466da6), Apache-2.0, as are the docstrings and Lean statements below.*
+*Quoted from [FormalConjectures/Wikipedia/BergeFulkersonConjecture.lean](https://github.com/google-deepmind/formal-conjectures/blob/d8d031d4998c78575159ccab9a7a9e95ce043883/FormalConjectures/Wikipedia/BergeFulkersonConjecture.lean) in [Formal Conjectures](https://github.com/google-deepmind/formal-conjectures) (Google DeepMind) at commit [d8d031d4](https://github.com/google-deepmind/formal-conjectures/tree/d8d031d4998c78575159ccab9a7a9e95ce043883), Apache-2.0, as are the docstrings and Lean statements below.*
 
 The file states 4 research or textbook statements: 3 open and 1 solved. It also has 1 API statement, counted here but not shown.
 
@@ -40,7 +40,7 @@ theorem berge_fulkerson_conjecture :
       ∃ M : Fin 6 → G.Subgraph, IsPerfectMatchingCover G 6 2 M
 ```
 
-Category `research open`; AMS [05 Combinatorics](../../by-subject/part-01/05-combinatorics/README.md). Declared in [FormalConjectures/Wikipedia/BergeFulkersonConjecture.lean, line 64](https://github.com/google-deepmind/formal-conjectures/blob/5258ab9ac6db5eb0047aa4100ea0f995c5466da6/FormalConjectures/Wikipedia/BergeFulkersonConjecture.lean#L64).
+Category `research open`; AMS [05 Combinatorics](../../by-subject/part-01/05-combinatorics/README.md). Declared in [FormalConjectures/Wikipedia/BergeFulkersonConjecture.lean, line 64](https://github.com/google-deepmind/formal-conjectures/blob/d8d031d4998c78575159ccab9a7a9e95ce043883/FormalConjectures/Wikipedia/BergeFulkersonConjecture.lean#L64).
 
 ## `BergeFulkersonConjecture.berge_fulkerson_conjecture.variants.berge`
 
@@ -61,7 +61,7 @@ theorem berge_fulkerson_conjecture.variants.berge :
         ∀ e ∈ G.edgeSet, ∃ i, e ∈ (M i).edgeSet
 ```
 
-Category `research open`; AMS [05 Combinatorics](../../by-subject/part-01/05-combinatorics/README.md). Declared in [FormalConjectures/Wikipedia/BergeFulkersonConjecture.lean, line 79](https://github.com/google-deepmind/formal-conjectures/blob/5258ab9ac6db5eb0047aa4100ea0f995c5466da6/FormalConjectures/Wikipedia/BergeFulkersonConjecture.lean#L79).
+Category `research open`; AMS [05 Combinatorics](../../by-subject/part-01/05-combinatorics/README.md). Declared in [FormalConjectures/Wikipedia/BergeFulkersonConjecture.lean, line 79](https://github.com/google-deepmind/formal-conjectures/blob/d8d031d4998c78575159ccab9a7a9e95ce043883/FormalConjectures/Wikipedia/BergeFulkersonConjecture.lean#L79).
 
 ## `BergeFulkersonConjecture.berge_fulkerson_conjecture.variants.fan_raspaud`
 
@@ -82,7 +82,7 @@ theorem berge_fulkerson_conjecture.variants.fan_raspaud :
         ∀ e, ¬ (e ∈ (M 0).edgeSet ∧ e ∈ (M 1).edgeSet ∧ e ∈ (M 2).edgeSet)
 ```
 
-Category `research open`; AMS [05 Combinatorics](../../by-subject/part-01/05-combinatorics/README.md). Declared in [FormalConjectures/Wikipedia/BergeFulkersonConjecture.lean, line 95](https://github.com/google-deepmind/formal-conjectures/blob/5258ab9ac6db5eb0047aa4100ea0f995c5466da6/FormalConjectures/Wikipedia/BergeFulkersonConjecture.lean#L95).
+Category `research open`; AMS [05 Combinatorics](../../by-subject/part-01/05-combinatorics/README.md). Declared in [FormalConjectures/Wikipedia/BergeFulkersonConjecture.lean, line 95](https://github.com/google-deepmind/formal-conjectures/blob/d8d031d4998c78575159ccab9a7a9e95ce043883/FormalConjectures/Wikipedia/BergeFulkersonConjecture.lean#L95).
 
 ## `BergeFulkersonConjecture.berge_fulkerson_conjecture.variants.petersen`
 
@@ -102,7 +102,7 @@ theorem berge_fulkerson_conjecture.variants.petersen
     ∃ M : G.Subgraph, M.IsPerfectMatching
 ```
 
-Category `research solved`; AMS [05 Combinatorics](../../by-subject/part-01/05-combinatorics/README.md). Declared in [FormalConjectures/Wikipedia/BergeFulkersonConjecture.lean, line 111](https://github.com/google-deepmind/formal-conjectures/blob/5258ab9ac6db5eb0047aa4100ea0f995c5466da6/FormalConjectures/Wikipedia/BergeFulkersonConjecture.lean#L111).
+Category `research solved`; AMS [05 Combinatorics](../../by-subject/part-01/05-combinatorics/README.md). Declared in [FormalConjectures/Wikipedia/BergeFulkersonConjecture.lean, line 111](https://github.com/google-deepmind/formal-conjectures/blob/d8d031d4998c78575159ccab9a7a9e95ce043883/FormalConjectures/Wikipedia/BergeFulkersonConjecture.lean#L111).
 
 ## Depends on
 
@@ -110,5 +110,5 @@ No dependencies are recorded: this chapter reads Formal Conjectures' source text
 
 ## Sources
 
-- [FormalConjectures/Wikipedia/BergeFulkersonConjecture.lean at 5258ab9a](https://github.com/google-deepmind/formal-conjectures/blob/5258ab9ac6db5eb0047aa4100ea0f995c5466da6/FormalConjectures/Wikipedia/BergeFulkersonConjecture.lean)
+- [FormalConjectures/Wikipedia/BergeFulkersonConjecture.lean at d8d031d4](https://github.com/google-deepmind/formal-conjectures/blob/d8d031d4998c78575159ccab9a7a9e95ce043883/FormalConjectures/Wikipedia/BergeFulkersonConjecture.lean)
 - [Wikipedia](https://en.wikipedia.org/wiki/Petersen%27s_theorem#Related_conjectures)

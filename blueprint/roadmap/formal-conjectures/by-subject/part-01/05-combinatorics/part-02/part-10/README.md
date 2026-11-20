@@ -2,8 +2,13 @@
 navigation: transparent
 ---
 
-# Degree sequences in… to Ringel's Conjecture and…
+# Fanelli–Moscardelli conjecture… to Shelah-Spencer's Zero-One Law…
 
+- [Fanelli–Moscardelli conjecture on approximate roommates stability](../../../../../papers/part-01/fanelli-moscardelli-conjecture-on-approximate-ro.md)
+- [The Bollobás–Eldridge–Catlin conjecture on graph packing (1978)](../../../../../papers/part-01/the-bollobas-eldridge-catlin-conjecture-on-graph.md)
+- [The burning number conjecture](../../../../../papers/part-01/the-burning-number-conjecture.md)
+- [Chvátal's Conjecture](../../../../../papers/part-01/chvatals-conjecture.md)
+- [Claude's Cycles](../../../../../papers/part-01/claudes-cycles.md)
 - [Degree sequences in triangle-free graphs](../../../../../papers/part-01/degree-sequences-in-triangle-free-graphs.md)
 - [Euclidean Ramsey configurations on a circle](../../../../../papers/part-01/euclidean-ramsey-configurations-on-a-circle.md)
 - [Main conjecture on fusible numbers](../../../../../papers/part-01/main-conjecture-on-fusible-numbers.md)
@@ -19,8 +24,3 @@ navigation: transparent
 - [Reed's omega, delta, and chi conjecture](../../../../../papers/part-02/reeds-omega-delta-and-chi-conjecture.md)
 - [Ringel's Conjecture](../../../../../papers/part-03/ringels-conjecture.md)
 - [Shelah-Spencer's Zero-One Law for Sparse Random Graphs](../../../../../papers/part-03/shelah-spencers-zero-one-law-for-sparse-random-g.md)
-- [Size, Order, and Connected Domination](../../../../../papers/part-03/size-order-and-connected-domination.md)
-- [Tu-Deng Conjecture](../../../../../papers/part-03/tu-deng-conjecture.md)
-- [The length of an $s$-increasing sequence of $r$-tuples](../../../../../arxiv/part-01/the-length-of-an-s-increasing-sequence-of-r-tupl.md)
-- [Pittel's second-moment conjecture for nearly balanced markets](../../../../../arxiv/part-01/pittels-second-moment-conjecture-for-nearly-bala.md)
-- [Ringel's Conjecture and Kotzig's Conjecture for large $n$](../../../../../arxiv/part-01/ringels-conjecture-and-kotzigs-conjecture-for-la.md)

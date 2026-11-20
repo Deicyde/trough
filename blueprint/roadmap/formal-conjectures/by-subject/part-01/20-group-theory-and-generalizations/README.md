@@ -1,6 +1,6 @@
 # Group theory and generalizations
 
-The 33 problems with a statement whose `AMS` attribute names 20, Group theory and generalizations, in the Mathematics Subject Classification. A problem with statements in several subjects is listed under each; its article sits in its source folder's part.
+The 34 problems with a statement whose `AMS` attribute names 20, Group theory and generalizations, in the Mathematics Subject Classification. A problem with statements in several subjects is listed under each; its article sits in its source folder's part.
 
 ## [Erdős Problem 274 to Ben Green's Open Problem 100](part-01/README.md)
 
@@ -16,7 +16,7 @@ The 33 problems with a statement whose `AMS` attribute names 20, Group theory an
 - [Gromov's theorem on groups of polynomial growth](../../../wikipedia/part-04/gromovs-theorem-on-groups-of-polynomial-growth.md)
 - [Kaplansky's Conjectures](../../../wikipedia/part-05/kaplanskys-conjectures.md)
 - [Leinster Groups](../../../wikipedia/part-05/leinster-groups.md)
-- [Gottschalk's surjunctivity conjecture](../../../wikipedia/part-08/gottschalks-surjunctivity-conjecture.md)
+- [Gottschalk's surjunctivity conjecture](../../../wikipedia/part-09/gottschalks-surjunctivity-conjecture.md)
 - [Ben Green's Open Problem 4](../../../greens-open-problems/part-01/ben-greens-open-problem-4.md)
 - [Ben Green's Open Problem 5](../../../greens-open-problems/part-01/ben-greens-open-problem-5.md)
 - [Ben Green's Open Problem 18](../../../greens-open-problems/part-01/ben-greens-open-problem-18.md)
@@ -38,5 +38,6 @@ The 33 problems with a statement whose `AMS` attribute names 20, Group theory an
 - [Conjecture 1.74 (Minimal topological groups)](../../../kourovka/conjecture-1-74-minimal-topological-groups.md)
 - [Conjecture 8.8](../../../kourovka/conjecture-8-8.md)
 - [Conjecture 19.25](../../../kourovka/conjecture-19-25.md)
+- [Conjecture 20.51](../../../kourovka/conjecture-20-51.md)
 - [Conjecture 20.76](../../../kourovka/conjecture-20-76.md)
 - [Conjecture 21.149](../../../kourovka/conjecture-21-149.md)

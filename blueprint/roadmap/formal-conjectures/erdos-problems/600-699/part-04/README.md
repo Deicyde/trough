@@ -2,8 +2,9 @@
 navigation: transparent
 ---
 
-# Erdős Problem 678 to Erdős Problem 698
+# Erdős Problem 677 to Erdős Problem 697
 
+- [Erdős Problem 677](erdos-problem-677.md)
 - [Erdős Problem 678](erdos-problem-678.md)
 - [Erdős Problem 679](erdos-problem-679.md)
 - [Erdős Problem 680](erdos-problem-680.md)
@@ -23,4 +24,3 @@ navigation: transparent
 - [Erdős Problem 695](erdos-problem-695.md)
 - [Erdős Problem 696](erdos-problem-696.md)
 - [Erdős Problem 697](erdos-problem-697.md)
-- [Erdős Problem 698](erdos-problem-698.md)

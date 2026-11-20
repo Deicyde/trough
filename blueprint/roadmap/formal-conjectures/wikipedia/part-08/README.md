@@ -2,8 +2,9 @@
 navigation: transparent
 ---
 
-# Hypothesis H to Gottschalk's surjunctivity…
+# Schanuel's Conjecture to (m,k)-perfect numbers
 
+- [Schanuel's Conjecture](schanuels-conjecture.md)
 - [Hypothesis H](hypothesis-h.md)
 - [Scholz conjecture on addition chains](scholz-conjecture-on-addition-chains.md)
 - [Selfridge's conjectures](selfridges-conjectures.md)
@@ -23,4 +24,3 @@ navigation: transparent
 - [Sumner's universal tournament conjecture (1971)](sumners-universal-tournament-conjecture-1971.md)
 - [Sum of three cubes](sum-of-three-cubes.md)
 - [(m,k)-perfect numbers](m-k-perfect-numbers.md)
-- [Gottschalk's surjunctivity conjecture](gottschalks-surjunctivity-conjecture.md)

@@ -17,6 +17,8 @@ navigation: transparent
 - [Erdős Problem 786](erdos-problem-786.md)
 - [Erdős Problem 787](erdos-problem-787.md)
 - [Erdős Problem 789](erdos-problem-789.md)
+- [Erdős Problem 790](erdos-problem-790.md)
+- [Erdős Problem 792](erdos-problem-792.md)
 - [Erdős Problem 793](erdos-problem-793.md)
 - [Erdős Problem 794](erdos-problem-794.md)
 - [Erdős Problem 796](erdos-problem-796.md)

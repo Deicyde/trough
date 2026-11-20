@@ -14,7 +14,7 @@ statement: formalized
 > - D19 in [Unsolved Problems in Number Theory](https://doi.org/10.1007/978-0-387-26677-0)
 > by *Richard K. Guy*
 
-*Quoted from [FormalConjectures/Wikipedia/RationalDistanceProblem.lean](https://github.com/google-deepmind/formal-conjectures/blob/5258ab9ac6db5eb0047aa4100ea0f995c5466da6/FormalConjectures/Wikipedia/RationalDistanceProblem.lean) in [Formal Conjectures](https://github.com/google-deepmind/formal-conjectures) (Google DeepMind) at commit [5258ab9a](https://github.com/google-deepmind/formal-conjectures/tree/5258ab9ac6db5eb0047aa4100ea0f995c5466da6), Apache-2.0, as are the docstrings and Lean statements below.*
+*Quoted from [FormalConjectures/Wikipedia/RationalDistanceProblem.lean](https://github.com/google-deepmind/formal-conjectures/blob/d8d031d4998c78575159ccab9a7a9e95ce043883/FormalConjectures/Wikipedia/RationalDistanceProblem.lean) in [Formal Conjectures](https://github.com/google-deepmind/formal-conjectures) (Google DeepMind) at commit [d8d031d4](https://github.com/google-deepmind/formal-conjectures/tree/d8d031d4998c78575159ccab9a7a9e95ce043883), Apache-2.0, as are the docstrings and Lean statements below.*
 
 The file states 1 research or textbook statement: 1 open.
 
@@ -29,7 +29,7 @@ theorem rational_distance_problem :
     ∃ P : ℝ² , ∀ i, ¬ Irrational (dist P (UnitSquareCorners i))
 ```
 
-Category `research open`; AMS [11 Number theory](../../by-subject/part-01/11-number-theory/README.md), [51 Geometry](../../by-subject/part-02/51-geometry/README.md). Declared in [FormalConjectures/Wikipedia/RationalDistanceProblem.lean, line 44](https://github.com/google-deepmind/formal-conjectures/blob/5258ab9ac6db5eb0047aa4100ea0f995c5466da6/FormalConjectures/Wikipedia/RationalDistanceProblem.lean#L44).
+Category `research open`; AMS [11 Number theory](../../by-subject/part-01/11-number-theory/README.md), [51 Geometry](../../by-subject/part-02/51-geometry/README.md). Declared in [FormalConjectures/Wikipedia/RationalDistanceProblem.lean, line 44](https://github.com/google-deepmind/formal-conjectures/blob/d8d031d4998c78575159ccab9a7a9e95ce043883/FormalConjectures/Wikipedia/RationalDistanceProblem.lean#L44).
 
 ## Depends on
 
@@ -37,5 +37,5 @@ No dependencies are recorded: this chapter reads Formal Conjectures' source text
 
 ## Sources
 
-- [FormalConjectures/Wikipedia/RationalDistanceProblem.lean at 5258ab9a](https://github.com/google-deepmind/formal-conjectures/blob/5258ab9ac6db5eb0047aa4100ea0f995c5466da6/FormalConjectures/Wikipedia/RationalDistanceProblem.lean)
+- [FormalConjectures/Wikipedia/RationalDistanceProblem.lean at d8d031d4](https://github.com/google-deepmind/formal-conjectures/blob/d8d031d4998c78575159ccab9a7a9e95ce043883/FormalConjectures/Wikipedia/RationalDistanceProblem.lean)
 - [Wikipedia](https://en.wikipedia.org/wiki/Unit_square#Rational_distance_problem)

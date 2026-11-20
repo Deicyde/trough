@@ -30,7 +30,7 @@ statement: formalized
 > - J. Neukirch, *Algebraic Number Theory*, Springer (Grundlehren 322), 1999, Chapter VII, §5.
 > - D. A. Marcus, *Number Fields*, Springer (GTM 81), 1977, Chapter VII.
 
-*Quoted from [FormalConjectures/Millennium/RiemannHypothesis.lean](https://github.com/google-deepmind/formal-conjectures/blob/5258ab9ac6db5eb0047aa4100ea0f995c5466da6/FormalConjectures/Millennium/RiemannHypothesis.lean) in [Formal Conjectures](https://github.com/google-deepmind/formal-conjectures) (Google DeepMind) at commit [5258ab9a](https://github.com/google-deepmind/formal-conjectures/tree/5258ab9ac6db5eb0047aa4100ea0f995c5466da6), Apache-2.0, as are the docstrings and Lean statements below.*
+*Quoted from [FormalConjectures/Millennium/RiemannHypothesis.lean](https://github.com/google-deepmind/formal-conjectures/blob/d8d031d4998c78575159ccab9a7a9e95ce043883/FormalConjectures/Millennium/RiemannHypothesis.lean) in [Formal Conjectures](https://github.com/google-deepmind/formal-conjectures) (Google DeepMind) at commit [d8d031d4](https://github.com/google-deepmind/formal-conjectures/tree/d8d031d4998c78575159ccab9a7a9e95ce043883), Apache-2.0, as are the docstrings and Lean statements below.*
 
 The file states 2 research or textbook statements: 2 open. It also has 1 test statement, counted here but not shown.
 
@@ -52,7 +52,7 @@ Open: stated without proof.
 theorem riemannHypothesis : RiemannHypothesis
 ```
 
-Category `research open`; AMS [11 Number theory](../by-subject/part-01/11-number-theory/README.md). Declared in [FormalConjectures/Millennium/RiemannHypothesis.lean, line 61](https://github.com/google-deepmind/formal-conjectures/blob/5258ab9ac6db5eb0047aa4100ea0f995c5466da6/FormalConjectures/Millennium/RiemannHypothesis.lean#L61).
+Category `research open`; AMS [11 Number theory](../by-subject/part-01/11-number-theory/README.md). Declared in [FormalConjectures/Millennium/RiemannHypothesis.lean, line 61](https://github.com/google-deepmind/formal-conjectures/blob/d8d031d4998c78575159ccab9a7a9e95ce043883/FormalConjectures/Millennium/RiemannHypothesis.lean#L61).
 
 ## `GRH.generalized_riemann_hypothesis`
 
@@ -69,7 +69,7 @@ theorem generalized_riemann_hypothesis (q : ℕ) [NeZero q] (χ : DirichletChara
     s.re = 1 / 2
 ```
 
-Category `research open`; AMS [11 Number theory](../by-subject/part-01/11-number-theory/README.md). Declared in [FormalConjectures/Millennium/RiemannHypothesis.lean, line 83](https://github.com/google-deepmind/formal-conjectures/blob/5258ab9ac6db5eb0047aa4100ea0f995c5466da6/FormalConjectures/Millennium/RiemannHypothesis.lean#L83).
+Category `research open`; AMS [11 Number theory](../by-subject/part-01/11-number-theory/README.md). Declared in [FormalConjectures/Millennium/RiemannHypothesis.lean, line 83](https://github.com/google-deepmind/formal-conjectures/blob/d8d031d4998c78575159ccab9a7a9e95ce043883/FormalConjectures/Millennium/RiemannHypothesis.lean#L83).
 
 ## Depends on
 
@@ -77,5 +77,5 @@ No dependencies are recorded: this chapter reads Formal Conjectures' source text
 
 ## Sources
 
-- [FormalConjectures/Millennium/RiemannHypothesis.lean at 5258ab9a](https://github.com/google-deepmind/formal-conjectures/blob/5258ab9ac6db5eb0047aa4100ea0f995c5466da6/FormalConjectures/Millennium/RiemannHypothesis.lean)
+- [FormalConjectures/Millennium/RiemannHypothesis.lean at d8d031d4](https://github.com/google-deepmind/formal-conjectures/blob/d8d031d4998c78575159ccab9a7a9e95ce043883/FormalConjectures/Millennium/RiemannHypothesis.lean)
 - [The Clay Institute](https://www.claymath.org/wp-content/uploads/2022/05/riemann.pdf)

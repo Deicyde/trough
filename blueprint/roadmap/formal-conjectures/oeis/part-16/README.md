@@ -2,8 +2,9 @@
 navigation: transparent
 ---
 
-# Sums of a cube, a square, and a… to Characterization of Carmichael…
+# Representations of $n$ as $x^2… to Four-square conjecture with…
 
+- [Representations of $n$ as $x^2 + \phi(y^2) + \phi(z^2)$](representations-of-n-as-x-2-phi-y-2-phi-z-2.md)
 - [Sums of a cube, a square, and a positive triangular number](sums-of-a-cube-a-square-and-a-positive-triangula.md)
 - [Sums of a square and three weighted cubes](sums-of-a-square-and-three-weighted-cubes.md)
 - [Sums of a triangular number and three weighted cubes](sums-of-a-triangular-number-and-three-weighted-c.md)
@@ -23,4 +24,3 @@ navigation: transparent
 - [The 2-4-6-8 Conjecture](the-2-4-6-8-conjecture.md)
 - [Vanishing of bases with $b^n \equiv -1 \pmod{2n+1}$ for absolute Euler pseudoprimes](vanishing-of-bases-with-b-n-equiv-1-pmod-2n-1-fo.md)
 - [Four-square conjecture with powers of 2, 3, and 5](four-square-conjecture-with-powers-of-2-3-and-5.md)
-- [Characterization of Carmichael numbers via squarefree denominators $a(n)$](characterization-of-carmichael-numbers-via-squar.md)

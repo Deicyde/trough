@@ -27,7 +27,7 @@ statement: formalized
 > - [Po28] G. Pólya, *Beitrag zue Verallgemeinerung des Verzerrungssatzes auf mehrfach
 >   zusammenhängende Gebiete*. S-B. Akad. Wiss. (1928), 228-232 and 280-282.
 
-*Quoted from [FormalConjectures/ErdosProblems/116.lean](https://github.com/google-deepmind/formal-conjectures/blob/5258ab9ac6db5eb0047aa4100ea0f995c5466da6/FormalConjectures/ErdosProblems/116.lean) in [Formal Conjectures](https://github.com/google-deepmind/formal-conjectures) (Google DeepMind) at commit [5258ab9a](https://github.com/google-deepmind/formal-conjectures/tree/5258ab9ac6db5eb0047aa4100ea0f995c5466da6), Apache-2.0, as are the docstrings and Lean statements below.*
+*Quoted from [FormalConjectures/ErdosProblems/116.lean](https://github.com/google-deepmind/formal-conjectures/blob/d8d031d4998c78575159ccab9a7a9e95ce043883/FormalConjectures/ErdosProblems/116.lean) in [Formal Conjectures](https://github.com/google-deepmind/formal-conjectures) (Google DeepMind) at commit [d8d031d4](https://github.com/google-deepmind/formal-conjectures/tree/d8d031d4998c78575159ccab9a7a9e95ce043883), Apache-2.0, as are the docstrings and Lean statements below.*
 
 The problem's page on erdosproblems.com: [https://www.erdosproblems.com/116](https://www.erdosproblems.com/116).
 
@@ -63,7 +63,7 @@ theorem erdos_116 : ∃ c : ℝ, 0 < c ∧ ∃ C : ℕ, ∀ n : ℕ, 0 < n →
       ENNReal.ofReal (c / n ^ C) ≤ volume {w : ℂ | ‖∏ i, (w - z i)‖ < 1}
 ```
 
-Category `research solved`; AMS [30 Functions of a complex variable](../../../by-subject/part-01/30-functions-of-a-complex-variable/README.md). Declared in [FormalConjectures/ErdosProblems/116.lean, line 70](https://github.com/google-deepmind/formal-conjectures/blob/5258ab9ac6db5eb0047aa4100ea0f995c5466da6/FormalConjectures/ErdosProblems/116.lean#L70).
+Category `research solved`; AMS [30 Functions of a complex variable](../../../by-subject/part-01/30-functions-of-a-complex-variable/README.md). Declared in [FormalConjectures/ErdosProblems/116.lean, line 70](https://github.com/google-deepmind/formal-conjectures/blob/d8d031d4998c78575159ccab9a7a9e95ce043883/FormalConjectures/ErdosProblems/116.lean#L70).
 
 ## `Erdos116.erdos_116.variants.log`
 
@@ -79,7 +79,7 @@ theorem erdos_116.variants.log : ∃ c : ℝ, 0 < c ∧ ∀ n : ℕ, 2 ≤ n →
       ENNReal.ofReal (c / Real.log n) ≤ volume {w : ℂ | ‖∏ i, (w - z i)‖ < 1}
 ```
 
-Category `research solved`; AMS [30 Functions of a complex variable](../../../by-subject/part-01/30-functions-of-a-complex-variable/README.md). Declared in [FormalConjectures/ErdosProblems/116.lean, line 81](https://github.com/google-deepmind/formal-conjectures/blob/5258ab9ac6db5eb0047aa4100ea0f995c5466da6/FormalConjectures/ErdosProblems/116.lean#L81).
+Category `research solved`; AMS [30 Functions of a complex variable](../../../by-subject/part-01/30-functions-of-a-complex-variable/README.md). Declared in [FormalConjectures/ErdosProblems/116.lean, line 81](https://github.com/google-deepmind/formal-conjectures/blob/d8d031d4998c78575159ccab9a7a9e95ce043883/FormalConjectures/ErdosProblems/116.lean#L81).
 
 ## `Erdos116.erdos_116.variants.upper`
 
@@ -95,7 +95,7 @@ theorem erdos_116.variants.upper : ∃ C : ℝ, ∀ n : ℕ, 3 ≤ n →
       volume {w : ℂ | ‖∏ i, (w - z i)‖ < 1} ≤ ENNReal.ofReal (C / Real.log (Real.log n))
 ```
 
-Category `research solved`; AMS [30 Functions of a complex variable](../../../by-subject/part-01/30-functions-of-a-complex-variable/README.md). Declared in [FormalConjectures/ErdosProblems/116.lean, line 92](https://github.com/google-deepmind/formal-conjectures/blob/5258ab9ac6db5eb0047aa4100ea0f995c5466da6/FormalConjectures/ErdosProblems/116.lean#L92).
+Category `research solved`; AMS [30 Functions of a complex variable](../../../by-subject/part-01/30-functions-of-a-complex-variable/README.md). Declared in [FormalConjectures/ErdosProblems/116.lean, line 92](https://github.com/google-deepmind/formal-conjectures/blob/d8d031d4998c78575159ccab9a7a9e95ce043883/FormalConjectures/ErdosProblems/116.lean#L92).
 
 ## `Erdos116.erdos_116.variants.polya`
 
@@ -108,7 +108,7 @@ theorem erdos_116.variants.polya (n : ℕ) (z : Fin n → ℂ) :
     volume {w : ℂ | ‖∏ i, (w - z i)‖ < 1} ≤ ENNReal.ofReal Real.pi
 ```
 
-Category `research solved`; AMS [30 Functions of a complex variable](../../../by-subject/part-01/30-functions-of-a-complex-variable/README.md). Declared in [FormalConjectures/ErdosProblems/116.lean, line 99](https://github.com/google-deepmind/formal-conjectures/blob/5258ab9ac6db5eb0047aa4100ea0f995c5466da6/FormalConjectures/ErdosProblems/116.lean#L99).
+Category `research solved`; AMS [30 Functions of a complex variable](../../../by-subject/part-01/30-functions-of-a-complex-variable/README.md). Declared in [FormalConjectures/ErdosProblems/116.lean, line 99](https://github.com/google-deepmind/formal-conjectures/blob/d8d031d4998c78575159ccab9a7a9e95ce043883/FormalConjectures/ErdosProblems/116.lean#L99).
 
 ## Depends on
 
@@ -116,5 +116,5 @@ No dependencies are recorded: this chapter reads Formal Conjectures' source text
 
 ## Sources
 
-- [FormalConjectures/ErdosProblems/116.lean at 5258ab9a](https://github.com/google-deepmind/formal-conjectures/blob/5258ab9ac6db5eb0047aa4100ea0f995c5466da6/FormalConjectures/ErdosProblems/116.lean)
+- [FormalConjectures/ErdosProblems/116.lean at d8d031d4](https://github.com/google-deepmind/formal-conjectures/blob/d8d031d4998c78575159ccab9a7a9e95ce043883/FormalConjectures/ErdosProblems/116.lean)
 - [erdosproblems.com/116](https://www.erdosproblems.com/116)

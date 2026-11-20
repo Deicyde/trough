@@ -13,7 +13,7 @@ statement: formalized
 > * [Li26] Li, Z., *Counterexamples to Erdős Problem 341* (2026),
 >   https://github.com/LiAlreadyExists/Erdos-341/blob/main/paper/Erdos341.pdf
 
-*Quoted from [FormalConjectures/ErdosProblems/341.lean](https://github.com/google-deepmind/formal-conjectures/blob/5258ab9ac6db5eb0047aa4100ea0f995c5466da6/FormalConjectures/ErdosProblems/341.lean) in [Formal Conjectures](https://github.com/google-deepmind/formal-conjectures) (Google DeepMind) at commit [5258ab9a](https://github.com/google-deepmind/formal-conjectures/tree/5258ab9ac6db5eb0047aa4100ea0f995c5466da6), Apache-2.0, as are the docstrings and Lean statements below.*
+*Quoted from [FormalConjectures/ErdosProblems/341.lean](https://github.com/google-deepmind/formal-conjectures/blob/d8d031d4998c78575159ccab9a7a9e95ce043883/FormalConjectures/ErdosProblems/341.lean) in [Formal Conjectures](https://github.com/google-deepmind/formal-conjectures) (Google DeepMind) at commit [d8d031d4](https://github.com/google-deepmind/formal-conjectures/tree/d8d031d4998c78575159ccab9a7a9e95ce043883), Apache-2.0, as are the docstrings and Lean statements below.*
 
 The problem's page on erdosproblems.com: [https://www.erdosproblems.com/341](https://www.erdosproblems.com/341).
 
@@ -23,7 +23,7 @@ The file states 1 research or textbook statement: 1 solved.
 
 Solved: stated here; a Lean proof is at [https://github.com/plby/lean-proofs/blob/8822f7ddef30fadbd92e1c6ab4ed897af356af5e/src/latest/ErdosProblems/Erdos341.lean#L12](https://github.com/plby/lean-proofs/blob/8822f7ddef30fadbd92e1c6ab4ed897af356af5e/src/latest/ErdosProblems/Erdos341.lean#L12).
 
-> Let $A=\{a_1 < \cdots < a_k\}$ be a finite set of integers and extend it to an infinite
+> Let $A=\{a_1 < \cdots < a_k\}$ be a finite set of positive integers and extend it to an infinite
 > sequence $\overline{A}=\{a_1 < a_2 < \cdots \}$ by defining $a_{n+1}$ for $n \geq k$ to be
 > the least integer exceeding $a_n$ which is not of the form $a_i + a_j$ with $i,j \leq n$.
 > Is it true that the sequence of differences $a_{m+1}-a_m$ is eventually periodic?
@@ -34,19 +34,19 @@ Solved: stated here; a Lean proof is at [https://github.com/plby/lean-proofs/blo
 > $A = \{1, 2, 3, 5, 7, 13, 22, 27, 28, 32, 36, 40, 47, 48, 52, 63, 71, 77, 81, 89, 97\}$ has a
 > sequence of differences that is not eventually periodic. The linked formal proof
 > exhibits such a sequence `a : ℕ → ℕ` (strictly increasing, with the greedy rule holding from
-> some index on, and with `n ↦ a (n + 1) - a n` not eventually periodic); casting it to `ℤ`
-> gives a counterexample to the statement below.
+> some index on, and with `n ↦ a (n + 1) - a n` not eventually periodic), which is a
+> counterexample to the statement below.
 
 ```lean
 theorem erdos_341 :
-    ¬ ∀ (a : ℕ → ℤ),
+    ¬ ∀ (a : ℕ → ℕ), StrictMono a → 0 < a 0 →
       (∀ᶠ n in atTop,
         IsLeast { x | a n < x ∧ x ∉ { a i + a j | (i ≤ n) (j ≤ n) } } (a (n + 1))) →
-      let d := fun i ↦ a (i + 1) - a i
+      let d := fun i ↦ (a (i + 1) : ℤ) - a i
       ∃ p > 0, ∀ᶠ m in atTop, d (m + p) = d m
 ```
 
-Category `research solved`; AMS [11 Number theory](../../../by-subject/part-01/11-number-theory/README.md). Declared in [FormalConjectures/ErdosProblems/341.lean, line 55](https://github.com/google-deepmind/formal-conjectures/blob/5258ab9ac6db5eb0047aa4100ea0f995c5466da6/FormalConjectures/ErdosProblems/341.lean#L55).
+Category `research solved`; AMS [11 Number theory](../../../by-subject/part-01/11-number-theory/README.md). Declared in [FormalConjectures/ErdosProblems/341.lean, line 55](https://github.com/google-deepmind/formal-conjectures/blob/d8d031d4998c78575159ccab9a7a9e95ce043883/FormalConjectures/ErdosProblems/341.lean#L55).
 
 ## Depends on
 
@@ -54,5 +54,5 @@ No dependencies are recorded: this chapter reads Formal Conjectures' source text
 
 ## Sources
 
-- [FormalConjectures/ErdosProblems/341.lean at 5258ab9a](https://github.com/google-deepmind/formal-conjectures/blob/5258ab9ac6db5eb0047aa4100ea0f995c5466da6/FormalConjectures/ErdosProblems/341.lean)
+- [FormalConjectures/ErdosProblems/341.lean at d8d031d4](https://github.com/google-deepmind/formal-conjectures/blob/d8d031d4998c78575159ccab9a7a9e95ce043883/FormalConjectures/ErdosProblems/341.lean)
 - [erdosproblems.com/341](https://www.erdosproblems.com/341)

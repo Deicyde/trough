@@ -17,7 +17,7 @@ statement: formalized
 >   snarks." *Ars Math. Contemp.* 7, pp. 161--173.
 > * [Zh97] Zhang, C.-Q. (1997). *Integer flows and cycle covers of graphs.* Marcel Dekker.
 
-*Quoted from [FormalConjectures/Wikipedia/PetersenColoringConjecture.lean](https://github.com/google-deepmind/formal-conjectures/blob/5258ab9ac6db5eb0047aa4100ea0f995c5466da6/FormalConjectures/Wikipedia/PetersenColoringConjecture.lean) in [Formal Conjectures](https://github.com/google-deepmind/formal-conjectures) (Google DeepMind) at commit [5258ab9a](https://github.com/google-deepmind/formal-conjectures/tree/5258ab9ac6db5eb0047aa4100ea0f995c5466da6), Apache-2.0, as are the docstrings and Lean statements below.*
+*Quoted from [FormalConjectures/Wikipedia/PetersenColoringConjecture.lean](https://github.com/google-deepmind/formal-conjectures/blob/d8d031d4998c78575159ccab9a7a9e95ce043883/FormalConjectures/Wikipedia/PetersenColoringConjecture.lean) in [Formal Conjectures](https://github.com/google-deepmind/formal-conjectures) (Google DeepMind) at commit [d8d031d4](https://github.com/google-deepmind/formal-conjectures/tree/d8d031d4998c78575159ccab9a7a9e95ce043883), Apache-2.0, as are the docstrings and Lean statements below.*
 
 The file states 2 research or textbook statements: 1 open and 1 solved. It also has 1 test statement, counted here but not shown.
 
@@ -39,7 +39,7 @@ theorem petersen_coloring_conjecture :
       ∃ φ : Sym2 V → Sym2 PetersenVertex, IsPetersenColoring G φ
 ```
 
-Category `research open`; AMS [05 Combinatorics](../../by-subject/part-01/05-combinatorics/README.md). Declared in [FormalConjectures/Wikipedia/PetersenColoringConjecture.lean, line 63](https://github.com/google-deepmind/formal-conjectures/blob/5258ab9ac6db5eb0047aa4100ea0f995c5466da6/FormalConjectures/Wikipedia/PetersenColoringConjecture.lean#L63).
+Category `research open`; AMS [05 Combinatorics](../../by-subject/part-01/05-combinatorics/README.md). Declared in [FormalConjectures/Wikipedia/PetersenColoringConjecture.lean, line 63](https://github.com/google-deepmind/formal-conjectures/blob/d8d031d4998c78575159ccab9a7a9e95ce043883/FormalConjectures/Wikipedia/PetersenColoringConjecture.lean#L63).
 
 ## `PetersenColoringConjecture.petersen_coloring_conjecture.variants.normal_five_edge_coloring`
 
@@ -65,7 +65,7 @@ theorem petersen_coloring_conjecture.variants.normal_five_edge_coloring
         ((G.edgeFinset.filter fun f => ∃ v, v ∈ e ∧ v ∈ f).image c).card = 5
 ```
 
-Category `research solved`; AMS [05 Combinatorics](../../by-subject/part-01/05-combinatorics/README.md). Declared in [FormalConjectures/Wikipedia/PetersenColoringConjecture.lean, line 79](https://github.com/google-deepmind/formal-conjectures/blob/5258ab9ac6db5eb0047aa4100ea0f995c5466da6/FormalConjectures/Wikipedia/PetersenColoringConjecture.lean#L79).
+Category `research solved`; AMS [05 Combinatorics](../../by-subject/part-01/05-combinatorics/README.md). Declared in [FormalConjectures/Wikipedia/PetersenColoringConjecture.lean, line 79](https://github.com/google-deepmind/formal-conjectures/blob/d8d031d4998c78575159ccab9a7a9e95ce043883/FormalConjectures/Wikipedia/PetersenColoringConjecture.lean#L79).
 
 ## Depends on
 
@@ -73,5 +73,5 @@ No dependencies are recorded: this chapter reads Formal Conjectures' source text
 
 ## Sources
 
-- [FormalConjectures/Wikipedia/PetersenColoringConjecture.lean at 5258ab9a](https://github.com/google-deepmind/formal-conjectures/blob/5258ab9ac6db5eb0047aa4100ea0f995c5466da6/FormalConjectures/Wikipedia/PetersenColoringConjecture.lean)
+- [FormalConjectures/Wikipedia/PetersenColoringConjecture.lean at d8d031d4](https://github.com/google-deepmind/formal-conjectures/blob/d8d031d4998c78575159ccab9a7a9e95ce043883/FormalConjectures/Wikipedia/PetersenColoringConjecture.lean)
 - [Wikipedia](https://en.wikipedia.org/wiki/Petersen_graph#Petersen_coloring_conjecture)

@@ -2,8 +2,16 @@
 navigation: transparent
 ---
 
-# Conway's subprime Fibonacci… to Bugeaud Collection of…
+# Equivalents to the Riemann… to Bugeaud Collection of…
 
+- [Equivalents to the Riemann Hypothesis](../../../../../papers/part-03/equivalents-to-the-riemann-hypothesis.md)
+- [Moments of the Riemann zeta function on the critical line](../../../../../papers/part-03/moments-of-the-riemann-zeta-function-on-the-crit.md)
+- [Simple zeros of the Riemann zeta function on the critical line](../../../../../papers/part-03/simple-zeros-of-the-riemann-zeta-function-on-the.md)
+- [Serre's uniformity conjecture over the rationals](../../../../../papers/part-03/serres-uniformity-conjecture-over-the-rationals.md)
+- [Tu-Deng Conjecture](../../../../../papers/part-03/tu-deng-conjecture.md)
+- [Zagier's Conjecture on Multiple Zeta Values](../../../../../papers/part-03/zagiers-conjecture-on-multiple-zeta-values.md)
+- [The Curling Number Conjecture](../../../../../arxiv/part-01/the-curling-number-conjecture.md)
+- [Cunningham chains — Jones's conjecture](../../../../../arxiv/part-01/cunningham-chains-joness-conjecture.md)
 - [Conway's subprime Fibonacci sequences](../../../../../arxiv/part-01/conways-subprime-fibonacci-sequences.md)
 - [Unique Crystal Components](../../../../../arxiv/part-01/unique-crystal-components.md)
 - [Barker sequences](../../../../../arxiv/part-01/barker-sequences.md)
@@ -16,11 +24,3 @@ navigation: transparent
 - [Mathoverflow 75792](../../../../../mathoverflow/mathoverflow-75792.md)
 - [Are prime numbers among sums of prime numbers distributed as $\frac n{2\ln(n)}$?](../../../../../mathoverflow/are-prime-numbers-among-sums-of-prime-numbers-di.md)
 - [Bugeaud Collection of Conjectures and Open Questions: Fractional Parts of Powers](../../../../../books/bugeaud-collection-of-conjectures-and-open-quest.md)
-- [Normal and rich numbers and the sequence $(b^n \xi)$ modulo one](../../../../../books/normal-and-rich-numbers-and-the-sequence-b-n-xi.md)
-- [Bugeaud Collection of Conjectures and Open Questions: Spectrum of Sequence](../../../../../books/bugeaud-collection-of-conjectures-and-open-quest-2.md)
-- [Bugeaud Collection of Conjectures and Open Questions: Lacunary Sequences in Real Number Fields](../../../../../books/bugeaud-collection-of-conjectures-and-open-quest-3.md)
-- [Bugeaud Collection of Conjectures and Open Questions: Rapidly Increasing Sequences Dense Modulo One](../../../../../books/bugeaud-collection-of-conjectures-and-open-quest-4.md)
-- [Bugeaud Collection of Conjectures and Open Questions: Confined Powers of Non-Pisot Numbers](../../../../../books/bugeaud-collection-of-conjectures-and-open-quest-5.md)
-- [Bugeaud Collection of Conjectures and Open Questions: $p$-adic Littlewood Conjecture](../../../../../books/bugeaud-collection-of-conjectures-and-open-quest-6.md)
-- [Bugeaud Collection of Conjectures and Open Questions: Mahler's Z-numbers](../../../../../books/bugeaud-collection-of-conjectures-and-open-quest-7.md)
-- [Bugeaud Collection of Conjectures and Open Questions: Automatic Expansions in Two Bases](../../../../../books/bugeaud-collection-of-conjectures-and-open-quest-8.md)

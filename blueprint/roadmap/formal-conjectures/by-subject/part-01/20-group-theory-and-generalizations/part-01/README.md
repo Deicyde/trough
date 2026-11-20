@@ -16,7 +16,7 @@ navigation: transparent
 - [Gromov's theorem on groups of polynomial growth](../../../../wikipedia/part-04/gromovs-theorem-on-groups-of-polynomial-growth.md)
 - [Kaplansky's Conjectures](../../../../wikipedia/part-05/kaplanskys-conjectures.md)
 - [Leinster Groups](../../../../wikipedia/part-05/leinster-groups.md)
-- [Gottschalk's surjunctivity conjecture](../../../../wikipedia/part-08/gottschalks-surjunctivity-conjecture.md)
+- [Gottschalk's surjunctivity conjecture](../../../../wikipedia/part-09/gottschalks-surjunctivity-conjecture.md)
 - [Ben Green's Open Problem 4](../../../../greens-open-problems/part-01/ben-greens-open-problem-4.md)
 - [Ben Green's Open Problem 5](../../../../greens-open-problems/part-01/ben-greens-open-problem-5.md)
 - [Ben Green's Open Problem 18](../../../../greens-open-problems/part-01/ben-greens-open-problem-18.md)

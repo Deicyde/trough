@@ -86,6 +86,8 @@ The Erdős problems numbered 700 to 799 that Formal Conjectures states, one arti
 - [Erdős Problem 786](part-04/erdos-problem-786.md)
 - [Erdős Problem 787](part-04/erdos-problem-787.md)
 - [Erdős Problem 789](part-04/erdos-problem-789.md)
+- [Erdős Problem 790](part-04/erdos-problem-790.md)
+- [Erdős Problem 792](part-04/erdos-problem-792.md)
 - [Erdős Problem 793](part-04/erdos-problem-793.md)
 - [Erdős Problem 794](part-04/erdos-problem-794.md)
 - [Erdős Problem 796](part-04/erdos-problem-796.md)

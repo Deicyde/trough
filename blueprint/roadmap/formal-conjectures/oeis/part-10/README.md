@@ -2,8 +2,9 @@
 navigation: transparent
 ---
 
-# Recurrence with fourth powers… to Number of primes of the form…
+# Denominators of $\sum_{k=1}^n… to Denominator of $B_{n+1}(x) -…
 
+- [Denominators of $\sum_{k=1}^n \frac{1}{k 2^k}$](denominators-of-sum-k-1-n-frac-1-k-2-k.md)
 - [Recurrence with fourth powers of binomial coefficients](recurrence-with-fourth-powers-of-binomial-coeffi.md)
 - [Central binomial sum $a(n) = \sum_{k=0}^n (-4)^k \binom{n}{k}^2 \binom{n-k}{k}^2$](central-binomial-sum-a-n-sum-k-0-n-4-k-binom-n-k.md)
 - [Central binomial sum $a(n) = \sum_{k=0}^n \binom{n}{k}^2 \binom{n-k}{k}^2 (-16)^k$](central-binomial-sum-a-n-sum-k-0-n-binom-n-k-2-b.md)
@@ -23,4 +24,3 @@ navigation: transparent
 - [Number of distinct sums of distinct proper divisors of $n$](number-of-distinct-sums-of-distinct-proper-divis.md)
 - [Size of smallest subset of $\{1, 2, \dots, n\}$ with distinct subset sums](size-of-smallest-subset-of-1-2-dots-n-with-disti.md)
 - [Denominator of $B_{n+1}(x) - B_{n+1}$](denominator-of-b-n-1-x-b-n-1.md)
-- [Number of primes of the form $2^n \pm 2^k \pm 1$ with $0 \le k < n$](number-of-primes-of-the-form-2-n-pm-2-k-pm-1-wit.md)

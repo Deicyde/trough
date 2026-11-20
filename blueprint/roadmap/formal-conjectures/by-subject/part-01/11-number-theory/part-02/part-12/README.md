@@ -2,8 +2,10 @@
 navigation: transparent
 ---
 
-# Expansion of g.f.… to Value of $n$-th cyclotomic…
+# Asymptotics of subsets of $\{1… to Number of primes $p$ such that…
 
+- [Asymptotics of subsets of $\{1, 2, \dots, n\}$ with integer average](../../../../../oeis/part-03/asymptotics-of-subsets-of-1-2-dots-n-with-intege.md)
+- [Maximum exponent in the prime factorization of $n$](../../../../../oeis/part-03/maximum-exponent-in-the-prime-factorization-of-n.md)
 - [Expansion of g.f. $(1-\sqrt{1-4x-4x^2})/(2(1+x))$](../../../../../oeis/part-03/expansion-of-g-f-1-sqrt-1-4x-4x-2-2-1-x.md)
 - [$a(n) = (\text{smallest prime} > n^2) - n^2$](../../../../../oeis/part-03/a-n-smallest-prime-n-2-n-2.md)
 - [Concatenation of the next $n$ numbers](../../../../../oeis/part-03/concatenation-of-the-next-n-numbers.md)
@@ -22,5 +24,3 @@ navigation: transparent
 - [Number of times $n^2 + s^2$ is prime for positive integers $s < n$](../../../../../oeis/part-04/number-of-times-n-2-s-2-is-prime-for-positive-in.md)
 - [Determinant of prime sum indicator matrix](../../../../../oeis/part-04/determinant-of-prime-sum-indicator-matrix.md)
 - [Number of primes $p$ such that $n^n \le p \le n^n + n^2$](../../../../../oeis/part-04/number-of-primes-p-such-that-n-n-le-p-le-n-n-n-2.md)
-- [Number of primes $p$ such that $2^n \le p \le 2^n + \mathrm{prime}(n)$](../../../../../oeis/part-04/number-of-primes-p-such-that-2-n-le-p-le-2-n-pri.md)
-- [Value of $n$-th cyclotomic polynomial at $n$](../../../../../oeis/part-04/value-of-n-th-cyclotomic-polynomial-at-n.md)
