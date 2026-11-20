@@ -2,7 +2,7 @@
 navigation: transparent
 ---
 
-# MSC2020 classes 03 to 35
+# MSC2020 classes 03 to 34
 
 - [Mathematical logic and foundations](03-mathematical-logic-and-foundations/README.md)
 - [Combinatorics](05-combinatorics/README.md)
@@ -20,7 +20,7 @@ navigation: transparent
 - [Real functions](26-real-functions/README.md)
 - [Measure and integration](28-measure-and-integration/README.md)
 - [Functions of a complex variable](30-functions-of-a-complex-variable/README.md)
+- [Potential theory](31-potential-theory/README.md)
 - [Several complex variables and analytic spaces](32-several-complex-variables-and-analytic-spaces/README.md)
 - [Special functions](33-special-functions/README.md)
 - [Ordinary differential equations](34-ordinary-differential-equations/README.md)
-- [Partial differential equations](35-partial-differential-equations/README.md)

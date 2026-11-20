@@ -2,7 +2,7 @@
 navigation: transparent
 ---
 
-# 2-Coloring Cycles in One Round to Quartic-over-logarithmic lower…
+# 2-Coloring Cycles in One Round to Pumping Lemma for Context-Free…
 
 - [2-Coloring Cycles in One Round](2-coloring-1-round.md)
 - [The Aaronson–Ambainis influence conjecture](aaronson-ambainis.md)
@@ -20,7 +20,7 @@ navigation: transparent
 - [The Johnson–Lindenstrauss Lemma and Quantized JL](johnson-lindenstrauss-lean.md)
 - [Matrix multiplication exponent at most 9/4 over every field](matrix-multiplication-all-fields.md)
 - [MRiscX](mriscx.md)
+- [Parikh's theorem and a certified semilinear grammar compiler](parikh.md)
+- [Polynomial lower bounds for high-dimensional Steiner spanners](high-dimensional-steiner-spanners.md)
 - [Polynomial-factor hardness of the closest vector problem](gap-cvp.md)
 - [Pumping Lemma for Context-Free Grammars](pumping-cfg.md)
-- [Pure Nock semantics, trace certificates, and polynomial fingerprints](pure-nock.md)
-- [Quartic-over-logarithmic lower bound for rational permanent formulas](permanent-formula-lower-bound.md)

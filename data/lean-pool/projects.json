@@ -1,6 +1,6 @@
 {
  "schema": "trough-lean-pool/v1",
- "rev": "701389c04bdd56aabf8dbb9ad729165fdba772b5",
+ "rev": "307e31252a8b55092789f868afe6238397a6b50c",
  "projects": [
   {
    "slug": "1mfld",
@@ -691,6 +691,77 @@
    ]
   },
   {
+   "slug": "apollonian-superharmonic",
+   "title": "Apollonian classification of integer superharmonic matrices",
+   "summary": "Characterizes quadratic growths of integer-valued functions on the square lattice with discrete Laplacian at most one by the downsets of matrices associated to circles in the Apollonian band packing, together with nonpositive-trace matrices. Constructs maximal periodic odometers and rotationally symmetric lattice tilings, and identifies the tiling and integrality lattices.",
+   "msc": [
+    "31C20",
+    "52C15",
+    "60G50"
+   ],
+   "authors": [
+    "Wesley Pegden"
+   ],
+   "source": {
+    "title": "The Apollonian structure of integer superharmonic matrices",
+    "arxiv": "1309.3267",
+    "url": "https://github.com/wpegden/superharmonic",
+    "github_repo": "wpegden/superharmonic",
+    "commit": "45094b210503f117502dec51caf737e96da221f8"
+   },
+   "license": "Apache-2.0",
+   "notice": null,
+   "provenance": "AI",
+   "directory": "ApollonianSuperharmonic",
+   "main_results": [
+    {
+     "declaration": "ApollonianSuperharmonic.IntegerSuperharmonicCharacterization",
+     "informal": "A real symmetric two-by-two matrix admits an integer-valued lattice function with its quadratic growth and discrete Laplacian at most one if and only if it is below a band-circle matrix in the positive-semidefinite order or has nonpositive trace.",
+     "main": true,
+     "module": "LeanPool.ApollonianSuperharmonic.IntegerSuperharmonicCharacterization",
+     "line": 30,
+     "kind": "theorem",
+     "sorry": false
+    },
+    {
+     "declaration": "ApollonianSuperharmonic.BandOdometerTheorem",
+     "informal": "Every band-circle matrix has an integer superharmonic representative with the integrality-lattice cocycle identity, maximal among functions above it with discrete Laplacian at most one, up to a bounded difference.",
+     "main": true,
+     "module": "LeanPool.ApollonianSuperharmonic.BandOdometerTheorem",
+     "line": 29,
+     "kind": "theorem",
+     "sorry": false
+    },
+    {
+     "declaration": "ApollonianSuperharmonic.IntegralityTiling",
+     "informal": "Every band circle admits a quarter-turn-symmetric lattice tile whose integrality-lattice translates tile the plane, with six neighboring tiles except for circles of curvature one.",
+     "main": true,
+     "module": "LeanPool.ApollonianSuperharmonic.IntegralityTiling",
+     "line": 26,
+     "kind": "theorem",
+     "sorry": false
+    },
+    {
+     "declaration": "ApollonianSuperharmonic.LambdaTiling",
+     "informal": "Every band circle admits the analogous symmetric tiling by translates along its recursively defined tiling lattice.",
+     "main": true,
+     "module": "LeanPool.ApollonianSuperharmonic.LambdaTiling",
+     "line": 27,
+     "kind": "theorem",
+     "sorry": false
+    },
+    {
+     "declaration": "ApollonianSuperharmonic.BandLatticeEquality",
+     "informal": "For each band circle the recursively defined tiling lattice equals the lattice of integer vectors sent to integer vectors by its circle matrix.",
+     "main": true,
+     "module": "LeanPool.ApollonianSuperharmonic.BandLatticeEquality",
+     "line": 25,
+     "kind": "theorem",
+     "sorry": false
+    }
+   ]
+  },
+  {
    "slug": "apportionment",
    "title": "Apportionmentlib",
    "summary": "Formalizes apportionment rules and proves the Balinski-Young impossibility theorem: no anonymous quota rule can be population-monotone.",
@@ -1050,6 +1121,60 @@
      "source_ref": "Paper III AX1, cover-side formulation.",
      "module": "LeanPool.AsymptoticTrianglePacking.Main",
      "line": 1745,
+     "kind": "theorem",
+     "sorry": false
+    }
+   ]
+  },
+  {
+   "slug": "autoconvolution-sharpness",
+   "title": "Sharpness of the Martin–O’Bryant autoconvolution inequality",
+   "summary": "Proves that nonzero nonnegative finite step functions on the real line have autoconvolution norm ratios arbitrarily close to one. The ratio is the squared L2 norm divided by the product of the L1 and essential-supremum norms, all for Lebesgue measure. Develops polynomial coefficient blocks, digit separation, collision estimates, and reusable convolution plateau bounds.",
+   "msc": [
+    "26D15",
+    "42A85"
+   ],
+   "authors": [
+    "Tonći Crmarić",
+    "Vjekoslav Kovač",
+    "Jelena Rupčić"
+   ],
+   "source": {
+    "title": "Sharpness of the Martin–O’Bryant autoconvolution inequality",
+    "arxiv": "2611.12685",
+    "url": "https://github.com/VjekoKovac/lean-autoconvolutions/tree/e6a8e69129f67621693430dceeae42050377ffa6",
+    "github_repo": "VjekoKovac/lean-autoconvolutions",
+    "commit": "e6a8e69129f67621693430dceeae42050377ffa6"
+   },
+   "license": "Apache-2.0",
+   "notice": null,
+   "provenance": "AI",
+   "directory": "AutoconvolutionSharpness",
+   "main_results": [
+    {
+     "declaration": "Autoconvolutions.sharpness",
+     "informal": "For every positive real epsilon, some finite sequence of nonnegative real heights, including a positive height, gives a step function on successive integer unit intervals whose autoconvolution norm ratio exceeds one minus epsilon.",
+     "main": true,
+     "module": "LeanPool.AutoconvolutionSharpness.Sharpness",
+     "line": 24,
+     "kind": "theorem",
+     "sorry": false
+    },
+    {
+     "declaration": "Autoconvolutions.Construction.witness_ratio_lower",
+     "informal": "The explicitly constructed polynomial gives a quantitative lower bound for the Lebesgue autoconvolution ratio in terms of factorial and geometric factors.",
+     "main": false,
+     "module": "LeanPool.AutoconvolutionSharpness.Main",
+     "line": 32,
+     "kind": "theorem",
+     "sorry": false
+    },
+    {
+     "declaration": "Autoconvolutions.blocks_energy_le",
+     "informal": "An injectively indexed family of separated coefficient plateaus supplies a lower bound on the squared L2 norm of a step function's autoconvolution.",
+     "main": false,
+     "module": "LeanPool.AutoconvolutionSharpness.Bounds",
+     "line": 114,
      "kind": "theorem",
      "sorry": false
     }
@@ -2195,6 +2320,142 @@
    ]
   },
   {
+   "slug": "carleson-lacey-thiele",
+   "title": "Anisotropic Carleson bounds and almost-everywhere Fourier convergence",
+   "summary": "Weak (2,2) bounds for maximally modulated anisotropically homogeneous smooth multipliers on Euclidean space, following the Lacey–Thiele time-frequency method, and almost-everywhere convergence of the Fourier series of periodic L² functions.",
+   "msc": [
+    "42A20",
+    "42B20",
+    "42B25"
+   ],
+   "authors": [
+    "Joris Roos"
+   ],
+   "source": {
+    "doi": "10.1007/s00041-018-09657-7",
+    "arxiv": "1710.10962",
+    "url": "https://github.com/roos-j/lean-lt-carleson",
+    "github_repo": "roos-j/lean-lt-carleson",
+    "commit": "a83052776113c6417432c594a29b98f3500091a4"
+   },
+   "license": "Apache-2.0",
+   "notice": null,
+   "provenance": "AI",
+   "directory": "CarlesonLT",
+   "main_results": [
+    {
+     "declaration": "CarlesonLT.anisotropic_carleson",
+     "informal": "For positive integer anisotropies and sufficient multiplier smoothness, the associated maximally modulated multiplier operator obeys a weak L² bound on Schwartz functions, with a constant independent of the multiplier and function.",
+     "main": true,
+     "module": "LeanPool.CarlesonLT.Theorems",
+     "line": 30,
+     "kind": "theorem",
+     "sorry": false
+    },
+    {
+     "declaration": "CarlesonLT.classical_carleson",
+     "informal": "The symmetric Fourier partial sums of a 2π-periodic function that is square integrable on one period converge to the function almost everywhere on the real line.",
+     "main": true,
+     "module": "LeanPool.CarlesonLT.Theorems",
+     "line": 39,
+     "kind": "theorem",
+     "sorry": false
+    }
+   ]
+  },
+  {
+   "slug": "category-theory-toolkit",
+   "title": "Category theory toolkit",
+   "summary": "A collection of general results in category theory. Any adjunction restricts to an equivalence between the objects fixed by its unit and those fixed by its counit; the four usual conditions defining an idempotent adjunction are equivalent, and then the fixed objects form a reflective and a coreflective subcategory. Additive functors out of the Karoubi envelope into an idempotent complete category are equivalent to additive functors out of the original category. A category is direct exactly when the relation \"there is a non-identity morphism\" is well-founded, and the semi-simplex category is direct. Restriction of representations along a group homomorphism is full iff the homomorphism is surjective, and an equivalence iff it is bijective. In abelian categories, a pullback with an epimorphism opposite is a pushout, and semi-cartesian squares (pushout-to-corner mono, equivalently corner-to-pullback epi) are characterized by exactness and as composites of a pushout and a pullback square. Finally, a category with zero morphisms and binary biproducts in which every morphism with zero kernel and zero cokernel is invertible is preadditive. Two supporting files package results Mathlib already proves in other forms, for use by these statements, Beck's monadicity and comonadicity theorems as equivalences (a variant of Mac Lane, Theorem VI.7.1, for an equivalence rather than an isomorphism of categories), and the exactness criteria for pullback and pushout squares in abelian categories.",
+   "msc": [
+    "18A40",
+    "18C15",
+    "18E10",
+    "18E05",
+    "18N40",
+    "20C99"
+   ],
+   "authors": [
+    "Michel Hua"
+   ],
+   "source": {
+    "url": "https://ncatlab.org/nlab/show/idempotent+adjunction",
+    "github_repo": "mycaule/lean-pool",
+    "commit": "210cb3fdc18bac5b3d1741a5c7f8435f29388ab6"
+   },
+   "license": "Apache-2.0",
+   "notice": null,
+   "provenance": "mix",
+   "directory": "CategoryTheoryToolkit",
+   "main_results": [
+    {
+     "declaration": "CategoryTheory.Adjunction.fixedEquiv",
+     "informal": "Every adjunction L ⊣ R restricts to an equivalence between the full subcategory of objects at which the unit is an isomorphism and the full subcategory of objects at which the counit is an isomorphism.",
+     "main": true,
+     "source_ref": "nLab, \"idempotent adjunction\" (https://ncatlab.org/nlab/show/idempotent+adjunction).",
+     "module": "LeanPool.CategoryTheoryToolkit.AdjunctionIdempotent",
+     "line": 172,
+     "kind": "def",
+     "sorry": false
+    },
+    {
+     "declaration": "CategoryTheory.Adjunction.idempotent_tfae",
+     "informal": "For an adjunction L ⊣ R with unit η and counit ε, the conditions ηR, Rε, εL and Lη invertible are equivalent.",
+     "main": true,
+     "source_ref": "nLab, \"idempotent adjunction\" (https://ncatlab.org/nlab/show/idempotent+adjunction).",
+     "module": "LeanPool.CategoryTheoryToolkit.AdjunctionIdempotent",
+     "line": 51,
+     "kind": "theorem",
+     "sorry": false
+    },
+    {
+     "declaration": "CategoryTheory.Adjunction.fixedLeftReflective",
+     "informal": "For an idempotent adjunction L ⊣ R, the objects at which the unit is an isomorphism form a reflective subcategory with reflector L ⋙ R (and dually the objects at which the counit is an isomorphism form a coreflective subcategory).",
+     "main": true,
+     "module": "LeanPool.CategoryTheoryToolkit.AdjunctionIdempotent",
+     "line": 215,
+     "kind": "abbrev",
+     "sorry": false
+    },
+    {
+     "declaration": "CategoryTheory.Idempotents.karoubiUniversalAdditive",
+     "informal": "For preadditive C and idempotent complete preadditive D, precomposition with C → Karoubi C is an equivalence between additive functors Karoubi C ⥤ D and additive functors C ⥤ D.",
+     "main": true,
+     "module": "LeanPool.CategoryTheoryToolkit.KaroubiAdditiveFunctors",
+     "line": 97,
+     "kind": "def",
+     "sorry": false
+    },
+    {
+     "declaration": "Rep.isEquivalence_resFunctor_iff",
+     "informal": "For a group homomorphism f from H to G and a nontrivial commutative ring k, restriction of k-linear representations along f is an equivalence of categories iff f is bijective; it is full iff f is surjective.",
+     "main": true,
+     "module": "LeanPool.CategoryTheoryToolkit.RepResFunctor",
+     "line": 142,
+     "kind": "theorem",
+     "sorry": false
+    },
+    {
+     "declaration": "CategoryTheory.CommSq.isSemiCartesian_iff_exists_factorisation",
+     "informal": "In an abelian category, a commutative square is semi-cartesian (the map from the pushout of its top-left corner is a monomorphism, equivalently the map to the pullback of its bottom-right corner is an epimorphism, equivalently its biproduct sequence is exact in the middle) iff it factors as a pushout square followed by a pullback square.",
+     "main": true,
+     "module": "LeanPool.CategoryTheoryToolkit.SemiCartesianSquare",
+     "line": 287,
+     "kind": "theorem",
+     "sorry": false
+    },
+    {
+     "declaration": "CategoryTheory.SemiadditiveOfBinaryBiproducts.preadditiveOfWeakMonoEpiInvertible",
+     "informal": "In a category with zero morphisms and binary biproducts in which every morphism with zero kernel and zero cokernel is invertible, the commutative monoid structure on hom-sets given by the biproducts has additive inverses, so the category is preadditive.",
+     "main": true,
+     "module": "LeanPool.CategoryTheoryToolkit.BiprodShear",
+     "line": 114,
+     "kind": "def",
+     "sorry": false
+    }
+   ]
+  },
+  {
    "slug": "ccdn-dimension-growth",
    "title": "Polynomial degree bounds for rational points on varieties",
    "summary": "Proves the six main results of Castryck, Cluckers, Dittmann and Nguyen on dimension growth, uniform rational-point counts on curves and hypersurfaces, a lower-bound curve construction, and two-torsion in number-field class groups. Preserves the determinant method, Hilbert-function degree and dimension, bounded birational projections, and the required Bombieri-Vaaler and Mertens dependencies. Imports the main-result closure, excluding the separate intermediate-statement and counterexample library.",
@@ -3289,6 +3550,127 @@
    ]
   },
   {
+   "slug": "coboundary-k3",
+   "title": "The Sym(3) permutation coboundary constant of the complete complex",
+   "summary": "Defines the Sym(3) permutation coboundary constant h1 k of the complete complex K_k as the infimum of the moved-point ratio N/D over Sym(3)-valued non-coboundaries, where N counts points moved by triangle holonomies and D is the minimum moved-point cost over Sym(3) gauges. Proves h1 k = k/3 for every k ≥ 3. The lower bound is the star-gauge double count (Chapman–Lubotzky, Proposition 3.2), proved here only for Sym(3) in this same-degree counting convention. The upper bound comes from balanced replication of a k = 4 witness and of Kozlov's staircase seeds. Explicit witnesses for k = 4, ..., 8 are checked by kernel-evaluated gauge exhaustions. Not formalized, and only cited, are the general symmetric-group form of the Chapman–Lubotzky bound, the paper's cross-degree convention and its comparison (Proposition 10), the coefficient-subgroup minima (Proposition 5), and Section 5 beyond the displacement Gram formula.",
+   "msc": [
+    "05E45",
+    "20B30",
+    "55U10"
+   ],
+   "authors": [
+    "Jeromie Beasley"
+   ],
+   "source": {
+    "title": "The Permutation Coboundary Constant of the Complete Complex Is k/3 for Every k ≥ 4",
+    "authors": [
+     "Jeromie Beasley"
+    ],
+    "doi": "10.5281/zenodo.23245792",
+    "url": "https://github.com/dicipler-pixel/coboundary-k3-lean/tree/70a2b3de40f88f3bbe25b63e581e1fc84e88d841",
+    "github_repo": "dicipler-pixel/coboundary-k3-lean",
+    "commit": "70a2b3de40f88f3bbe25b63e581e1fc84e88d841"
+   },
+   "license": "MIT",
+   "notice": null,
+   "provenance": "AI",
+   "directory": "CoboundaryK3",
+   "main_results": [
+    {
+     "declaration": "CoboundaryK3.h1_eq_all",
+     "informal": "For every k ≥ 3, the Sym(3) permutation coboundary constant h1 k of the complete complex K_k, in the same-degree moved-point counting convention, equals k/3.",
+     "main": true,
+     "source_ref": "Theorem 8 of doi:10.5281/zenodo.23245792 (stated there for k ≥ 4).",
+     "module": "LeanPool.CoboundaryK3.Staircase",
+     "line": 568,
+     "kind": "theorem",
+     "sorry": false
+    },
+    {
+     "declaration": "CoboundaryK3.k_div_three_le_h1",
+     "informal": "If K_k carries a Sym(3)-valued non-coboundary, then k/3 ≤ h1 k; the star gauges at the k vertices cost three times the triangle defect in total.",
+     "main": true,
+     "source_ref": "Proposition 1 of doi:10.5281/zenodo.23245792, which is Chapman–Lubotzky, arXiv:2311.06706, Proposition 3.2, here only for Sym(3) in the counting convention.",
+     "module": "LeanPool.CoboundaryK3.Constant",
+     "line": 358,
+     "kind": "theorem",
+     "sorry": false
+    },
+    {
+     "declaration": "CoboundaryK3.stair_gaugeDist",
+     "informal": "Kozlov's staircase cochain on K_{2t+1} has Sym(3) gauge distance exactly t(t+1).",
+     "main": true,
+     "source_ref": "Kozlov, arXiv:1610.07136, Definition 3.2 and Lemma 3.8, with the Sym(3) parity transfer of doi:10.5281/zenodo.23245792.",
+     "module": "LeanPool.CoboundaryK3.Staircase",
+     "line": 467,
+     "kind": "theorem",
+     "sorry": false
+    },
+    {
+     "declaration": "CoboundaryK3.h1_eq_four_mul",
+     "informal": "Balanced replication of the k = 4 witness gives h1 (4q) = 4q/3 for every q ≥ 1.",
+     "main": true,
+     "source_ref": "Corollary 7 of doi:10.5281/zenodo.23245792.",
+     "module": "LeanPool.CoboundaryK3.Replication",
+     "line": 282,
+     "kind": "theorem",
+     "sorry": false
+    },
+    {
+     "declaration": "CoboundaryK3.witness_k8",
+     "informal": "The explicit k = 8 witness of Appendix A has triangle defect 72, every Sym(3) gauge costs at least 27, and the identity gauge costs exactly 27.",
+     "main": true,
+     "source_ref": "Theorem 4 and Appendix A of doi:10.5281/zenodo.23245792.",
+     "module": "LeanPool.CoboundaryK3.Witnesses",
+     "line": 279,
+     "kind": "theorem",
+     "sorry": false
+    }
+   ]
+  },
+  {
+   "slug": "cograph-distance",
+   "title": "Connected cographs with distance eigenvalues approaching −2 from below",
+   "summary": "Constructs connected cographs with a distance eigenvalue arbitrarily close to −2 from below. For each positive m, the join of a singleton with the disjoint union of a singleton and m edges has a distance eigenvalue between −2 − 1/(2m) and −2. The proof lifts a root of a cubic to an explicit eigenvector.\n",
+   "msc": [
+    "05C50",
+    "05C75"
+   ],
+   "authors": [
+    "Horace Dong"
+   ],
+   "source": {
+    "title": "Connected cographs with distance eigenvalues just below −2",
+    "url": "https://github.com/Horace-Maxwell/ai4math-results/blob/a104be9c0d4aaeeea65f6f62fed064525180a939/papers/cograph-distance/note.pdf",
+    "github_repo": "Horace-Maxwell/ai4math-results",
+    "commit": "a104be9c0d4aaeeea65f6f62fed064525180a939"
+   },
+   "license": "Apache-2.0",
+   "notice": null,
+   "provenance": "AI",
+   "directory": "CographDistance",
+   "main_results": [
+    {
+     "declaration": "CographDist.family_theorem",
+     "informal": "For each positive m, the stated family is connected and P4-free and has a distance eigenvalue in (−2 − 1/(2m), −2).",
+     "main": true,
+     "module": "LeanPool.CographDistance.Main",
+     "line": 22,
+     "kind": "theorem",
+     "sorry": false
+    },
+    {
+     "declaration": "CographDist.openProblemI_negative",
+     "informal": "Every open interval with right endpoint −2 contains a distance eigenvalue of a finite connected cograph.",
+     "main": true,
+     "module": "LeanPool.CographDistance.Main",
+     "line": 28,
+     "kind": "theorem",
+     "sorry": false
+    }
+   ]
+  },
+  {
    "slug": "common-neighbour-conjecture",
    "title": "Common-neighbour counterexamples for Saxl graphs",
    "summary": "Proves that for every base size B at least two and every prescribed degree bound, there is a finite faithful primitive permutation group of at least that degree and exact base size B whose generalized Saxl graph contains two nonadjacent vertices with no common neighbor. The supporting library constructs an explicit infinite family from binary deleted permutation modules over finite fields and proves the required base-size, irreducibility, primitivity, and graph-theoretic properties.",
@@ -3331,6 +3713,107 @@
      "main": false,
      "module": "LeanPool.CommonNeighbourConjecture.Examples.EveryBase.Main",
      "line": 175,
+     "kind": "theorem",
+     "sorry": false
+    }
+   ]
+  },
+  {
+   "slug": "commutative-algebra-toolkit",
+   "title": "Commutative algebra toolkit",
+   "summary": "A collection of general results in commutative algebra and neighbouring areas, each self-contained and stated in Mathlib's language. It proves Pólya's theorem that the binomial polynomials form a ℤ-basis of the integer-valued polynomials, via Newton's forward difference formula; that a ring is Noetherian if and only if every finitely generated module is finitely presented; that over a principal ideal domain a module is injective if and only if it is divisible, with the module K/A of a fraction field as an application; that two finite-dimensional simple modules over an algebraically closed field with the same trace function are isomorphic, in any characteristic; that in prime characteristic p the Hasse derivatives of orders 0 < k < p^e vanish exactly on polynomials in X^(p^e); that tensoring with a finitely presented module commutes with arbitrary products; and that associated primes of F/N lie over p when F is flat and N lies over pF. Smaller results cover flat products, adic completeness along nilpotent ideals, Baer's criterion for I-primary modules, stable range one for semilocal rings, Noetherian quasi-sober spaces, derivations, the group completion of a commutative monoid, resultants of split polynomials, and the image of Frobenius in a normed field of characteristic p.",
+   "msc": [
+    "13C11",
+    "13E05",
+    "13F20",
+    "13N15",
+    "11C08"
+   ],
+   "authors": [
+    "Michel Hua"
+   ],
+   "source": {
+    "url": "https://stacks.math.columbia.edu",
+    "github_repo": "mycaule/lean-pool",
+    "commit": "b3b0193d76e054318747eff01ad9c1f4c0b509a8"
+   },
+   "license": "Apache-2.0",
+   "notice": null,
+   "provenance": "mix",
+   "directory": "CommutativeAlgebraToolkit",
+   "main_results": [
+    {
+     "declaration": "Polynomial.intValuedBasis",
+     "informal": "The binomial polynomials X choose n, for n ≥ 0, form a basis over ℤ of the ring of rational polynomials taking integer values at all integers.",
+     "main": true,
+     "source_ref": "P.-J. Cahen and J.-L. Chabert, Integer-Valued Polynomials, Mathematical Surveys and Monographs 48, American Mathematical Society (1997), Chapter I.",
+     "module": "LeanPool.CommutativeAlgebraToolkit.PolynomialIntegerValued",
+     "line": 153,
+     "kind": "def",
+     "sorry": false
+    },
+    {
+     "declaration": "Polynomial.exists_eq_sum_intCast_smul_choose",
+     "informal": "A rational polynomial P taking integer values at all natural numbers is an integer linear combination of the binomial polynomials X choose k with k ≤ deg P.",
+     "main": true,
+     "source_ref": "G. Pólya, \"Über ganzwertige Polynome in algebraischen Zahlkörpern\", J. Reine Angew. Math. 149 (1919), 97–116; see also Cahen–Chabert, Integer-Valued Polynomials (1997), Chapter I.",
+     "module": "LeanPool.CommutativeAlgebraToolkit.PolynomialIntegerValued",
+     "line": 106,
+     "kind": "theorem",
+     "sorry": false
+    },
+    {
+     "declaration": "isNoetherianRing_iff_forall_finitePresentation",
+     "informal": "A ring R is Noetherian if and only if every finitely generated R-module is finitely presented.",
+     "main": true,
+     "module": "LeanPool.CommutativeAlgebraToolkit.IsNoetherianRingIffFinitePresentation",
+     "line": 30,
+     "kind": "theorem",
+     "sorry": false
+    },
+    {
+     "declaration": "Module.injective_iff_smul_surjective",
+     "informal": "Over a principal ideal domain R, a module Q is injective if and only if it is divisible, that is, multiplication by every nonzero r is surjective on Q.",
+     "main": true,
+     "module": "LeanPool.CommutativeAlgebraToolkit.InjectiveIffDivisible",
+     "line": 89,
+     "kind": "theorem",
+     "sorry": false
+    },
+    {
+     "declaration": "IsSimpleModule.nonempty_linearEquiv_of_trace_eq",
+     "informal": "Let k be an algebraically closed field of any characteristic and A a k-algebra. Two simple A-modules that are finite-dimensional over k and on which every element of A acts with the same trace are isomorphic.",
+     "main": true,
+     "module": "LeanPool.CommutativeAlgebraToolkit.IsSimpleModuleTrace",
+     "line": 98,
+     "kind": "theorem",
+     "sorry": false
+    },
+    {
+     "declaration": "Polynomial.forall_hasseDeriv_eq_zero_iff_exists_expand",
+     "informal": "Over a commutative ring of prime characteristic p, the Hasse derivatives of a polynomial f of all orders k with 0 < k < p^e vanish if and only if f is a polynomial in X^(p^e).",
+     "main": true,
+     "module": "LeanPool.CommutativeAlgebraToolkit.HasseDerivXPowMul",
+     "line": 141,
+     "kind": "theorem",
+     "sorry": false
+    },
+    {
+     "declaration": "Module.FinitePresentation.piRightHom_bijective",
+     "informal": "For a finitely presented R-module M and any family of R-modules P i, the canonical map from M ⊗ (Π i, P i) to Π i, M ⊗ P i is bijective.",
+     "main": true,
+     "source_ref": "The Stacks Project, Tag 059K, implication (1) ⇒ (2).",
+     "module": "LeanPool.CommutativeAlgebraToolkit.FinitePresentationPiRightHomBijective",
+     "line": 85,
+     "kind": "theorem",
+     "sorry": false
+    },
+    {
+     "declaration": "Submodule.IsAssociatedPrime.comap_eq_of_flat",
+     "informal": "Let B be an A-algebra, F a B-module that is flat over A, p a prime of A and N a B-submodule of F whose underlying A-submodule is pF. Then every associated prime of the B-module F/N lies over p.",
+     "main": true,
+     "module": "LeanPool.CommutativeAlgebraToolkit.FlatAssociatedPrimes",
+     "line": 65,
      "kind": "theorem",
      "sorry": false
     }
@@ -4051,7 +4534,7 @@
      "main": true,
      "source_ref": "Public v1.0.0 release, 2026-09-11T17:12:25Z; upstream README and Geometry/Basic.lean.",
      "module": "LeanPool.ConwaySoifer",
-     "line": 640,
+     "line": 784,
      "kind": "theorem",
      "sorry": false
     },
@@ -4061,7 +4544,49 @@
      "main": false,
      "source_ref": "Upstream public theorem and its proved scaling corollary.",
      "module": "LeanPool.ConwaySoifer",
-     "line": 643,
+     "line": 787,
+     "kind": "theorem",
+     "sorry": false
+    }
+   ]
+  },
+  {
+   "slug": "corless-nilpotent",
+   "title": "Corless's nilpotent Bohemian matrix conjecture",
+   "summary": "Classifies the nilpotent complex skew-symmetric tridiagonal matrices with superdiagonal entries in {1, i} and counts them in each admissible dimension. The proof relates characteristic polynomials to weighted path matching polynomials, then uses the mod-2 dimension restriction and a mod-4 folding argument to recover the recursive superdiagonal vectors.",
+   "msc": [
+    "15A18",
+    "05C31"
+   ],
+   "authors": [
+    "Marcel Blattner"
+   ],
+   "source": {
+    "doi": "10.5206/mt.v1i2.14360",
+    "url": "https://github.com/marcelbtec/corless-nilpotent/tree/1f4fa000540c5f8ab3f657fa436adb45a1404ade",
+    "github_repo": "marcelbtec/corless-nilpotent",
+    "commit": "1f4fa000540c5f8ab3f657fa436adb45a1404ade"
+   },
+   "license": "Apache-2.0",
+   "notice": null,
+   "provenance": "AI",
+   "directory": "CorlessNilpotent",
+   "main_results": [
+    {
+     "declaration": "Corless.corless_conjecture",
+     "informal": "For a superdiagonal vector with entries 1 or i, the associated skew-symmetric tridiagonal matrix is nilpotent exactly when the vector belongs to Corless's recursively folded family.",
+     "main": true,
+     "module": "LeanPool.CorlessNilpotent.Vectors",
+     "line": 226,
+     "kind": "theorem",
+     "sorry": false
+    },
+    {
+     "declaration": "Corless.card_nilpotent",
+     "informal": "For each nonnegative k, exactly 2^k superdiagonal vectors yield nilpotent matrices of dimension 2^(k+1) - 1.",
+     "main": true,
+     "module": "LeanPool.CorlessNilpotent.Vectors",
+     "line": 290,
      "kind": "theorem",
      "sorry": false
     }
@@ -4970,6 +5495,44 @@
    ]
   },
   {
+   "slug": "distinct-distances-general-position",
+   "title": "An explicit improvement to the planar distinct-distance bound in general position",
+   "summary": "Proves that an injectively indexed configuration of n at least 10000 planar points, with no three collinear and no four concyclic, determines more than (1/3 + 1/40)n distinct distances. The argument combines distance multiplicity and energy bounds, a thin annulus about the centroid, geometric constraints on close pairs and equidistant witnesses, and a kernel-checked rational certificate covering 60 cases. Reusable infrastructure includes an exact packed Farkas certificate checker with a general soundness theorem, annular geometry, and distance-counting identities.",
+   "msc": [
+    "52C10",
+    "51K05",
+    "68V20"
+   ],
+   "authors": [
+    "Adam McKenna"
+   ],
+   "source": {
+    "title": "Distinct distances in general position: an explicit improvement of the bound n/3",
+    "authors": [
+     "Adam McKenna"
+    ],
+    "doi": "10.5281/zenodo.23680960",
+    "url": "https://github.com/mysticflounder/distinct-distances-general-position",
+    "github_repo": "mysticflounder/distinct-distances-general-position",
+    "commit": "091530ea585b132a0c893910a9a367a00660659a"
+   },
+   "license": "Apache-2.0",
+   "notice": null,
+   "provenance": "AI",
+   "directory": "DistinctDistances",
+   "main_results": [
+    {
+     "declaration": "Esgk.numDistances_gt_one_third_add_kappa_image_gap",
+     "informal": "Every injective configuration of n at least 10000 points in the Euclidean plane, with no three points collinear and no four points concyclic, has strictly more than (1/3 + 1/40)n distinct distances between distinct points.",
+     "main": true,
+     "module": "LeanPool.DistinctDistances.S4ConstantGain",
+     "line": 79,
+     "kind": "theorem",
+     "sorry": false
+    }
+   ]
+  },
+  {
    "slug": "domain-theory",
    "title": "DomainTheory",
    "summary": "Formalizes Dana Scott's domain theory through Scott information systems and PRG-19 neighbourhood systems, including approximable maps, products, function spaces, fixed points, recursive presentations, and initial-algebra constructions for denotational semantics.",
@@ -5781,7 +6344,7 @@
      "informal": "Proves the sharp upper bound — a general-position point set with at least C(n+2,2)+2 points contains the Erdős–Tuza–Valtr cup–cap configuration.",
      "main": true,
      "module": "LeanPool.ErdosTuzaValtr.Main.Main",
-     "line": 106,
+     "line": 105,
      "kind": "theorem",
      "sorry": false
     },
@@ -5935,7 +6498,7 @@
      "main": true,
      "source_ref": "Erdős--Lovász--Vesztergombi, printed p. 542, suggest the stronger convex bound degree at most 2k. Morić--Pritchard, \"Counting large distances in convex polygons\" (arXiv:1103.0412), Theorem 1.4, prove m₁ + m₂ + m₃ ≤ 3n for sufficiently large n, which gives the same degree-six consequence in that range. The novelty here is the all-n theorem: it removes the sufficiently-large-n restriction. ErLV89 Theorem 2.7, printed p. 548, proves only degree at most 3k-1, which specializes to eight.",
      "module": "LeanPool.Erdos132ConvexK3.GlobalClosure",
-     "line": 3170,
+     "line": 3164,
      "kind": "theorem",
      "sorry": false
     },
@@ -5945,7 +6508,7 @@
      "main": false,
      "source_ref": "New proof-producing assembly theorem in this project. It combines the ErLV89 majorant framework with the project's maximal-gap tail, terminal-color, five-row, and thirteen-word transport lemmas.",
      "module": "LeanPool.Erdos132ConvexK3.GlobalClosure",
-     "line": 3163,
+     "line": 3157,
      "kind": "theorem",
      "sorry": false
     },
@@ -5955,7 +6518,7 @@
      "main": false,
      "source_ref": "New geometric transport theorem in this project. The thirteen-word classification and its four-predicate closure interface are not statements of ErLV89.",
      "module": "LeanPool.Erdos132ConvexK3.GlobalClosure",
-     "line": 3140,
+     "line": 3134,
      "kind": "theorem",
      "sorry": false
     },
@@ -5965,7 +6528,7 @@
      "main": false,
      "source_ref": "New derived variant contributed and proved in this Lean Pool project. The thirteen-word classification and its closures are not statements of ErLV89.",
      "module": "LeanPool.Erdos132ConvexK3.Assembly",
-     "line": 209,
+     "line": 203,
      "kind": "theorem",
      "sorry": false
     },
@@ -5974,7 +6537,7 @@
      "informal": "Every raw full-two-rung realization has its displayed vertex of degree at most six. A rigid normalization derives the canonical coordinates, the diameter branch is impossible, the long branch is counted from four raw boundary arcs, and the short branch contradicts the exact two-rung identity and metric dichotomy.",
      "main": false,
      "module": "LeanPool.Erdos132ConvexK3.WordClosures",
-     "line": 2391,
+     "line": 2382,
      "kind": "theorem",
      "sorry": false
     },
@@ -5984,7 +6547,7 @@
      "main": false,
      "source_ref": "Erdős--Lovász--Vesztergombi, printed p. 542: “Perhaps in the convex case there always exists an x_i such that the degree of x_i is at most 2k.” Alongside it, Theorem 2.7, printed p. 548, proves only: “If S is the set of vertices of a convex polygon then the graph G(S, k) has a point of degree at most 3k−1.” Thus degree six for k=3 is the stronger suggested variant; the proved source bound is eight, while this project's global closure proves degree six.",
      "module": "LeanPool.Erdos132ConvexK3.Assembly",
-     "line": 291,
+     "line": 285,
      "kind": "theorem",
      "sorry": false
     },
@@ -5993,7 +6556,7 @@
      "informal": "Every exceptional jointly minimal pair lies in case (1,2), (2,1), or (2,2). In (1,2), every first substitute has at least one right move while every second substitute has exactly two left moves and zero right moves. In (2,1), every first substitute has exactly two right moves and zero left moves while every second substitute has at least one left move. Only in (2,2) are those exact substitute counts proved on both sides.",
      "main": false,
      "module": "LeanPool.Erdos132ConvexK3.CoordinatedMajorants",
-     "line": 69,
+     "line": 67,
      "kind": "theorem",
      "sorry": false
     },
@@ -6002,7 +6565,7 @@
      "informal": "Assuming the three top distance classes and TopThreeAdjacent for both starting edges z–x and t–u, each forced two-move chain in an exceptional inner-move case has the rank ladder from the third-largest through the second-largest to the largest distance, while its proposed intermediate exchange edge remains nonterminal.",
      "main": false,
      "module": "LeanPool.Erdos132ConvexK3.CoordinatedMajorants",
-     "line": 326,
+     "line": 324,
      "kind": "theorem",
      "sorry": false
     },
@@ -7244,6 +7807,86 @@
    ]
   },
   {
+   "slug": "fekete",
+   "title": "Nearly subadditive sequences and Fekete's lemma beyond Mathlib",
+   "summary": "Extends Mathlib's Fekete lemma for real sequences on ℕ. Proves the Füredi–Ruzsa window theorem (subadditivity only on N ≤ m ≤ n ≤ μm with μ > 1 gives u n / n → -∞ or a real limit, identified as an infimum), the de Bruijn–Erdős theorem with a monotone error f satisfying ∑ f n / n² < ∞ (extended from f ≥ 0 to errors of any sign), and its sharpness (for monotone f ≥ 0 the summability is equivalent to the absence of a nearly f-subadditive sequence with u n / n → ∞). Also packages corollaries of Mathlib's Subadditive API (the unbounded case of Fekete's lemma, Fekete for superadditive and positive supermultiplicative sequences, bounded-defect and almost-additive versions) and a counterexample showing that positivity cannot be weakened to nonnegativity for supermultiplicative sequences.",
+   "msc": [
+    "40A05",
+    "39B62"
+   ],
+   "authors": [
+    "Brian Sanders"
+   ],
+   "source": {
+    "title": "Nearly subadditive sequences",
+    "authors": [
+     "Zoltán Füredi",
+     "Imre Z. Ruzsa"
+    ],
+    "doi": "10.1007/s10474-020-01071-0",
+    "arxiv": "1810.11723",
+    "url": "https://github.com/Egly443/lean-fekete",
+    "github_repo": "Egly443/lean-fekete",
+    "commit": "5faa67a2cbcf0d670bf2b8353336bab5818d6026"
+   },
+   "license": "Apache-2.0",
+   "notice": null,
+   "provenance": "AI",
+   "directory": "Fekete",
+   "main_results": [
+    {
+     "declaration": "NearlySubadditive.tendsto_atBot_or_exists_tendsto",
+     "informal": "If 1 < μ and u (m + n) ≤ u m + u n whenever N ≤ m ≤ n ≤ μ m, then u n / n tends to -∞ or to a real limit.",
+     "main": true,
+     "source_ref": "Füredi–Ruzsa, Nearly subadditive sequences, Theorem 2 (same number in the journal version and arXiv:1810.11723); the source takes N ≥ 1, while the Lean statement also allows N = 0.",
+     "module": "LeanPool.Fekete.Window",
+     "line": 281,
+     "kind": "theorem",
+     "sorry": false
+    },
+    {
+     "declaration": "NearlySubadditive.tendsto_lim",
+     "informal": "Under the same window hypothesis, if u n / n is bounded below then it converges to the infimum of u k / k over k ≥ max N 1.",
+     "main": true,
+     "source_ref": "Limit identification as in Füredi–Ruzsa Theorem 1 (de Bruijn–Erdős, ratio 2), here for every ratio μ > 1; upstream Fekete/Window.lean.",
+     "module": "LeanPool.Fekete.Window",
+     "line": 373,
+     "kind": "theorem",
+     "sorry": false
+    },
+    {
+     "declaration": "NearlySubadditive.tendsto_atBot_or_exists_tendsto_of_summable",
+     "informal": "If 1 < μ, u (m + n) ≤ u m + u n + f (m + n) for N ≤ m ≤ n ≤ μ m, f is monotone and ∑ f n / n² is summable, then u n / n tends to -∞ or to a real limit. No sign condition on f is assumed.",
+     "main": true,
+     "source_ref": "Füredi–Ruzsa, Theorem 3 of the journal version (Theorem 5 of arXiv:1810.11723), generalizing de Bruijn–Erdős (1952). The sources assume f ≥ 0; the signed version is an extension, reduced to the nonnegative case through max f 0.",
+     "module": "LeanPool.Fekete.DeBruijnErdos",
+     "line": 118,
+     "kind": "theorem",
+     "sorry": false
+    },
+    {
+     "declaration": "summable_div_sq_iff_forall_not_tendsto_atTop",
+     "informal": "For a nonnegative monotone f, ∑ f n / n² is summable if and only if no sequence with u (m + n) ≤ u m + u n + f (m + n) for all m, n has u n / n → ∞.",
+     "main": true,
+     "source_ref": "Combines a variant of Füredi–Ruzsa Claim 7 (the witness keeps the f 1 term and index 0) with journal Theorem 3 (arXiv Theorem 5).",
+     "module": "LeanPool.Fekete.Sharpness",
+     "line": 128,
+     "kind": "theorem",
+     "sorry": false
+    },
+    {
+     "declaration": "Supermultiplicative.exists_nonneg_not_tendsto_rpow_inv",
+     "informal": "Some nonnegative supermultiplicative sequence u has no limit of u n ^ (1 / n), so positivity is needed in the supermultiplicative Fekete lemma.",
+     "main": true,
+     "source_ref": "Upstream Fekete/SupermultiplicativeCounterexample.lean.",
+     "module": "LeanPool.Fekete.SupermultiplicativeCounterexample",
+     "line": 69,
+     "kind": "theorem",
+     "sorry": false
+    }
+   ]
+  },
+  {
    "slug": "fel-conjecture",
    "title": "Fel's Conjecture on Syzygies of Numerical Semigroups",
    "summary": "Formalizes Fel's conjectural formula for syzygies of numerical semigroups.",
@@ -7341,6 +7984,85 @@
      "main": false,
      "module": "LeanPool.Fineqs.Main",
      "line": 507,
+     "kind": "theorem",
+     "sorry": false
+    }
+   ]
+  },
+  {
+   "slug": "finite-dimensional-copulas",
+   "title": "Finite-dimensional copulas and Sklar's theorem",
+   "summary": "Constructs copulas as probability measures with uniform coordinate marginals, proves Sklar's theorem for arbitrary finite-dimensional real laws, and proves uniqueness for continuous marginals and equality on marginal CDF ranges in general. Establishes the equivalence with the classical normalized, grounded, uniform-margin, rectangle-increasing CDF conditions without assuming continuity. Includes compact quantile sampling, randomized inverse disintegration, general lifting of joint laws, Lipschitz bounds, and finite atomic approximation.",
+   "msc": [
+    "60E05",
+    "60B05"
+   ],
+   "authors": [
+    "Marcus Rockel",
+    "Gaëtan Serré",
+    "Rémy Degenne"
+   ],
+   "source": {
+    "title": "Copula — finite-dimensional copulas in Lean 4",
+    "authors": [
+     "Marcus Rockel"
+    ],
+    "url": "https://github.com/Corrram/copula/tree/fe53ea2f3e6af41da8541e7d0aa2edc38ed0dcc8",
+    "github_repo": "Corrram/copula",
+    "commit": "fe53ea2f3e6af41da8541e7d0aa2edc38ed0dcc8"
+   },
+   "license": "Apache-2.0",
+   "notice": null,
+   "provenance": "mix",
+   "directory": "Copula",
+   "main_results": [
+    {
+     "declaration": "ProbabilityTheory.Copula.exists_sklarCopula",
+     "informal": "Every probability measure on a finite-dimensional real vector space admits a copula whose CDF, evaluated at the marginal CDFs, equals the joint CDF. Atoms, singular joint laws, and dimension zero are allowed.",
+     "main": true,
+     "source_ref": "Upstream Copula/Sklar/General.lean. Completed in commit eaee4eab6931066921870358c0f4bc0b8bd32068 on 2026-09-18 at 13:15:59 UTC; publicly released as v0.1.0 on 2026-09-19 at 07:05:23 UTC at https://github.com/Corrram/copula/releases/tag/v0.1.0.",
+     "module": "LeanPool.Copula.Sklar.General",
+     "line": 29,
+     "kind": "theorem",
+     "sorry": false
+    },
+    {
+     "declaration": "ProbabilityTheory.Copula.existsUnique_sklarCopula_of_continuous",
+     "informal": "If each marginal CDF is continuous, the Sklar copula exists and is unique on the entire closed unit cube; strict monotonicity is unnecessary.",
+     "main": false,
+     "source_ref": "Upstream Copula/Sklar/Continuous.lean.",
+     "module": "LeanPool.Copula.Sklar.Continuous",
+     "line": 132,
+     "kind": "theorem",
+     "sorry": false
+    },
+    {
+     "declaration": "ProbabilityTheory.Copula.IsSklarCopula.cdf_eq_on_ranges",
+     "informal": "Any two Sklar copulas for the same real joint law have equal CDFs whenever every coordinate belongs to the range of the corresponding marginal CDF.",
+     "main": false,
+     "source_ref": "Upstream Copula/Sklar/Continuous.lean.",
+     "module": "LeanPool.Copula.Sklar.Continuous",
+     "line": 101,
+     "kind": "theorem",
+     "sorry": false
+    },
+    {
+     "declaration": "ProbabilityTheory.Copula.isClassical_iff_existsUnique",
+     "informal": "A real function on the finite unit cube is normalized, grounded, has uniform one-dimensional margins, and has nonnegative ordered rectangle increments if and only if it is the CDF of exactly one copula probability measure. Continuity follows from these conditions and is not an extra hypothesis.",
+     "main": false,
+     "source_ref": "Upstream Copula/Classical/Characterization.lean, completed in commit 5578d2b62ad948570a3edce60330d012e6b5c97b on 2026-09-18 at 13:58:11 UTC.",
+     "module": "LeanPool.Copula.Classical.Characterization",
+     "line": 122,
+     "kind": "theorem",
+     "sorry": false
+    },
+    {
+     "declaration": "ProbabilityTheory.Copula.exists_lift",
+     "informal": "A joint probability law on a finite power of a standard Borel space lifts to a copula through any measurable coordinate sampling maps from the uniform unit interval whose pushforwards are the given marginal laws.",
+     "main": false,
+     "source_ref": "Upstream Copula/Sklar/Lift.lean.",
+     "module": "LeanPool.Copula.Sklar.Lift",
+     "line": 22,
      "kind": "theorem",
      "sorry": false
     }
@@ -7479,6 +8201,53 @@
      "main": false,
      "module": "LeanPool.MaxFlowMinCut",
      "line": 575,
+     "kind": "theorem",
+     "sorry": false
+    }
+   ]
+  },
+  {
+   "slug": "finite-ramsey",
+   "title": "Finite-colour Ramsey theory",
+   "summary": "Finite-colour graph Ramsey theory on Mathlib edge labelings, with a common arrow relation and least-host numbers. Proves finite graph and infinite uniform existence, binomial upper and counting lower bounds, and transitive tournament bounds. Derives Schur triples as an application. Supplies colour-class induced-copy, ordered and hypergraph interfaces; the colour-class and hypergraph specifications retain explicit existence hypotheses.",
+   "msc": [
+    "05C55",
+    "05D10"
+   ],
+   "authors": [
+    "Brian Sanders"
+   ],
+   "source": {
+    "title": "Finite-colour Ramsey theory",
+    "authors": [
+     "Brian Sanders"
+    ],
+    "url": "https://github.com/Egly443/lean-ramsey",
+    "github_repo": "Egly443/lean-ramsey",
+    "commit": "ae8c9d97bae6d963a925754f8e2374f1c1b14587"
+   },
+   "license": "Apache-2.0",
+   "notice": null,
+   "provenance": "AI",
+   "directory": "FiniteRamsey",
+   "main_results": [
+    {
+     "declaration": "SimpleGraph.exists_arrow",
+     "informal": "Every family of finite target graphs indexed by a finite colour type is arrowed by some finite complete host.",
+     "main": true,
+     "source_ref": "Upstream lean-ramsey at ae8c9d97bae6d963a925754f8e2374f1c1b14587; proposed in #721 on 2026-10-27T10:39:24Z.",
+     "module": "LeanPool.FiniteRamsey.RamseyNumber",
+     "line": 62,
+     "kind": "theorem",
+     "sorry": false
+    },
+    {
+     "declaration": "SimpleGraph.lt_ramseyNumber_of_choose_lt",
+     "informal": "The first-moment counting inequality gives a strict lower bound for the diagonal Ramsey number.",
+     "main": true,
+     "source_ref": "Upstream lean-ramsey at ae8c9d97bae6d963a925754f8e2374f1c1b14587; proposed in #721 on 2026-10-27T10:39:24Z.",
+     "module": "LeanPool.FiniteRamsey.RamseyLowerBound",
+     "line": 208,
      "kind": "theorem",
      "sorry": false
     }
@@ -8200,6 +8969,88 @@
    ]
   },
   {
+   "slug": "free-banach-lattice-order-continuity",
+   "title": "Order continuity of induced homomorphisms between free Banach lattices",
+   "summary": "Characterizes order continuity of the lattice homomorphism induced by a bounded operator between real Banach spaces, for every free convexity exponent from one to infinity. Develops concrete free p-convex Banach lattices, their universal property, operator-extension criteria, compact-support witnesses, and equivalent conditions for canonical inclusions between different exponents.",
+   "msc": [
+    "46B42",
+    "46A40",
+    "47B60"
+   ],
+   "authors": [
+    "Raúl E. Pariente-Martín",
+    "Pedro Tradacete",
+    "David Muñoz-Lahoz"
+   ],
+   "source": {
+    "title": "Order continuity of induced homomorphisms between free Banach lattices",
+    "authors": [
+     "Raúl E. Pariente-Martín",
+     "Pedro Tradacete"
+    ],
+    "arxiv": "2611.00451",
+    "url": "https://github.com/pedrotradacete/FBLOrderContinuousLH/tree/ee3cde5070125ff2356b7144ff7a940a8dff2a54",
+    "github_repo": "pedrotradacete/FBLOrderContinuousLH",
+    "commit": "ee3cde5070125ff2356b7144ff7a940a8dff2a54"
+   },
+   "license": "Apache-2.0",
+   "notice": null,
+   "provenance": "AI",
+   "directory": "FBLOrderContinuity",
+   "main_results": [
+    {
+     "declaration": "FBLOrderContinuousLH.intro_infty",
+     "informal": "At exponent infinity, the induced lattice homomorphism is order continuous exactly when the original bounded operator is zero or an isomorphic embedding.",
+     "main": true,
+     "source_ref": "Theorem 1.1. The public manuscript was submitted on 2026-10-30 at 23:06:06 UTC; the completed Lean sources were committed earlier that evening as 167b82ad69724d2ddb2a701fc932e52d445faecc.",
+     "module": "LeanPool.FBLOrderContinuity.Order",
+     "line": 1834,
+     "kind": "theorem",
+     "sorry": false
+    },
+    {
+     "declaration": "FBLOrderContinuousLH.intro_poe",
+     "informal": "For a finite exponent p, the induced homomorphism is order continuous exactly when the original operator is zero or is an isomorphic embedding whose range has the POE-p operator-extension property. Equivalently, the induced homomorphism is zero or an isomorphic lattice embedding.",
+     "main": true,
+     "source_ref": "Theorem 1.3.",
+     "module": "LeanPool.FBLOrderContinuity.Extension",
+     "line": 767,
+     "kind": "theorem",
+     "sorry": false
+    },
+    {
+     "declaration": "FBLOrderContinuousLH.cross_parameter_inclusion",
+     "informal": "For p less than q, eight conditions on the canonical inclusion between the free p-convex and q-convex lattices are equivalent, including order continuity, surjectivity, equivalence of norms on the algebraic core, and order density.",
+     "main": true,
+     "source_ref": "Theorem 5.1.",
+     "module": "LeanPool.FBLOrderContinuity.Parameters",
+     "line": 173,
+     "kind": "theorem",
+     "sorry": false
+    },
+    {
+     "declaration": "FBLOrderContinuousLH.cross_parameter_above_two",
+     "informal": "When p is less than q and q exceeds two, these conditions hold exactly when the generating Banach space is finite dimensional.",
+     "main": false,
+     "source_ref": "Corollary 5.3.",
+     "module": "LeanPool.FBLOrderContinuity.Parameters",
+     "line": 465,
+     "kind": "theorem",
+     "sorry": false
+    },
+    {
+     "declaration": "FBLOrderContinuousLH.cross_parameter_hilbert",
+     "informal": "For the real Hilbert sequence space and one at most p less than q at most two, the canonical inclusion is an order-continuous bounded lattice isomorphism onto its target.",
+     "main": false,
+     "source_ref": "Remark 5.4.",
+     "module": "LeanPool.FBLOrderContinuity.Parameters",
+     "line": 500,
+     "kind": "theorem",
+     "sorry": false
+    }
+   ]
+  },
+  {
    "slug": "frieze-patterns",
    "title": "Maxima of Coxeter frieze patterns are Fibonacci numbers",
    "summary": "Formalizes the claim that the sequence of maxima of values of (Coxeter) arithmetic frieze patterns is the Fibonacci sequence, using a correspondence between arithmetic frieze patterns and n-flutes.",
@@ -8541,6 +9392,535 @@
    ]
   },
   {
+   "slug": "ginibre-poincare",
+   "title": "Sharp symmetric Poincaré inequality for the complex Ginibre log-gas",
+   "summary": "Proves the sharp Poincaré inequality for symmetric observables in the weighted weak-H¹ domain, using ordinary distributional gradients on the collision-free open set, of the complex Ginibre log-gas, with exhaustive affine equality cases, and the two Hermite sum-of-squares deficit identities on the real symmetric generator graph. Also formalizes the paper's three proofs of the inequality, namely the original Section 2 analytic route on the smooth compact core and the Section 3 spectral and Section 4 Hermite–Slater routes on the weak-H¹ domain. Proves the differential deficits of Theorem 1.10 with ordinary distributional second dbar derivatives, by the Hermite and by the Bochner–Kodaira routes; the Section 2 lemmas (sharp Gaussian dbar gap and equality space, canonical minimum-norm dbar solutions, closedness of the entire L² space, global Vandermonde division of entire alternating functions, holomorphic–antiholomorphic projection geometry); the Gamma law of the recentered radius; Hermite–Laguerre polynomial eigenfunctions, spectrum containment and polynomial-sector incompleteness; unbounded pointwise curvature; the radial log-Sobolev inequality; and the Appendix A core-closure and zero-capacity lemmas. Through the Gaussian matrix lift, proves the eigenvector-overlap variance and entropy inequalities of Theorem 1.13, including the Gaussian matrix Poincaré inequality. Builds Brownian stochastic-integration and finite-dimensional Itô infrastructure, and proves the joint Gamma law of the two equilibrium radii, the nonsymmetric constant lower bound (n+1)/4 and the non-holomorphy of the squared radius. Constructs the maximal Brownian-driven solution of the Ginibre Langevin equation, proves stationarity of the Ginibre law along its whole future path, and identifies its transition Laplace transform with the analytic resolvent of the full generator. Proves global noncollision of the original Brownian-driven dynamics, its dynamical factorization into two independent CIR radii (Theorem 1.3), stationarity of their Gamma product law, and identification of the transition semigroup with the analytic generator evolution. For nonquadratic rotation-invariant potentials (Theorem 1.14), proves the symmetric Poincaré inequality under a Laplacian lower bound and the radial log-Sobolev inequality under strong convexity, including an internal proof of the strongly convex Bakry–Émery log-Sobolev inequality. Finally proves the literal pointwise Γ₂ form of Theorem 1.9 and its curvature reformulation, the spectral support of the generator, unstopped CIR equations, the strong Markov property and ergodicity of the dynamics, the ordinary-H¹ form domain, the Gaussian number-operator spectrum, and the auxiliary Brascamp–Lieb, GUE, local Dolbeault, weighted entire-space, Gram–Schmidt and analyticity assertions.",
+   "msc": [
+    "60E15",
+    "60B20",
+    "46E35"
+   ],
+   "authors": [
+    "Djalil Chafaï"
+   ],
+   "source": {
+    "title": "An optimal Poincaré inequality for the complex Ginibre log-gas",
+    "authors": [
+     "Djalil Chafaï"
+    ],
+    "arxiv": "2608.19358v2",
+    "url": "https://github.com/djalilchafai/ginibre-poincare/tree/a1b2ba84e7dad8ba11b5c49a18b986a762a00a41",
+    "github_repo": "djalilchafai/ginibre-poincare",
+    "commit": "a1b2ba84e7dad8ba11b5c49a18b986a762a00a41"
+   },
+   "license": "MIT",
+   "notice": null,
+   "provenance": "AI",
+   "directory": "GinibrePoincare",
+   "main_results": [
+    {
+     "declaration": "GinibrePoincare.ginibre_symmetric_weak_poincare",
+     "informal": "For n > 0, symmetric Ginibre L² values and their ordinary distributional L² gradients satisfy variance ≤ energy / 2, with energy normalized by 1/n.",
+     "main": true,
+     "source_ref": "Theorem 1.1 of arXiv:2608.19358v2; Palomar PALOMAR-2026-10-09-000001 v1 was registered on 2026-10-09T00:48:41Z. Proposal #644 is dated 2026-10-12T16:36:51Z.",
+     "module": "LeanPool.GinibrePoincare.Analysis.GinibreSymmetricWeakPoincare",
+     "line": 118,
+     "kind": "theorem",
+     "sorry": false
+    },
+    {
+     "declaration": "GinibrePoincare.ginibreEquality_full_weak_affine_iff",
+     "informal": "Equality holds exactly for almost-everywhere representatives of a + 2 Re(c ∑ᵢ zᵢ), for a real a and a complex c; no smoothness or polynomial assumption is imposed.",
+     "main": true,
+     "source_ref": "Additional exhaustive affine classification accompanying Theorem 1.1, proved in upstream Analysis/GinibreEqualityWeakAffine.lean. The paper explicitly exhibits center-of-mass equality examples.",
+     "module": "LeanPool.GinibrePoincare.Analysis.GinibreEqualityWeakAffine",
+     "line": 173,
+     "kind": "theorem",
+     "sorry": false
+    },
+    {
+     "declaration": "GinibrePoincare.fullTheoremOneNine_named",
+     "informal": "For every real symmetric observable in the closed Ginibre generator graph, the energy-minus-variance and generator-minus-energy deficits equal explicit sums of squared norms and weighted Hermite masses. The weak gradient and moment summability are conclusions.",
+     "main": true,
+     "source_ref": "Generator-graph form of Theorem 1.9 of arXiv:2608.19358v2, formalized upstream in Endgame/FullTheoremOneNine.lean.",
+     "module": "LeanPool.GinibrePoincare.Endgame.FullTheoremOneNine",
+     "line": 122,
+     "kind": "theorem",
+     "sorry": false
+    },
+    {
+     "declaration": "GinibrePoincare.fullMainAnalyticProof",
+     "informal": "For every n > 0, every smooth, compactly supported, permutation-symmetric real f satisfies Var(f) ≤ E(f)/2 with E(f) = (1/n)∫|∇f|² for the Ginibre law, proved by the paper's original route (Vandermonde energy identity, Gaussian dbar estimate, distance transport, holomorphic–antiholomorphic half-distance). Every analytic input is a proved theorem.",
+     "main": true,
+     "source_ref": "Original Section 2 proof of Theorem 1.1 of arXiv:2608.19358v2, on the smooth compact symmetric core.",
+     "module": "LeanPool.GinibrePoincare.Endgame.FullMainAnalyticProof",
+     "line": 61,
+     "kind": "theorem",
+     "sorry": false
+    },
+    {
+     "declaration": "GinibrePoincare.spectral_ginibre_symmetric_weak_poincare",
+     "informal": "For n > 0, every symmetric real Ginibre L² class with an ordinary distributional L² gradient on the collision-free set satisfies Var ≤ E/2, proved through the Vandermonde-transformed Gaussian number forms and the projection bound.",
+     "main": true,
+     "source_ref": "Section 3 spectral proof of Theorem 1.1 of arXiv:2608.19358v2.",
+     "module": "LeanPool.GinibrePoincare.Analysis.AlternativeSpectralPoincare",
+     "line": 188,
+     "kind": "theorem",
+     "sorry": false
+    },
+    {
+     "declaration": "GinibrePoincare.slater_ginibre_symmetric_weak_poincare",
+     "informal": "The same weak-H¹ inequality Var ≤ E/2 for n > 0, proved through the factorial-normalized Slater-determinant expansion, its Parseval identity and degree energy.",
+     "main": true,
+     "source_ref": "Section 4 Hermite–Slater proof of Theorem 1.1 of arXiv:2608.19358v2.",
+     "module": "LeanPool.GinibrePoincare.Analysis.AlternativeSlaterPoincare",
+     "line": 113,
+     "kind": "theorem",
+     "sorry": false
+    },
+    {
+     "declaration": "GinibrePoincare.fullTheoremOneTenSchwartz",
+     "informal": "For n > 0 and every real symmetric pair (u, v) in the closed Ginibre generator graph, u has a symmetric distributional gradient g, and an explicit deficit vector w has ordinary distributional first and second dbar derivatives. With r the holomorphic remainder, E − 2Var = 2‖r‖² + (4/n)Σ‖∂̄∂̄w‖² and ‖v‖² − 2E = ‖v + 2(u − mean u)‖² + 4‖r‖² + (8/n)Σ‖∂̄∂̄w‖²; equality E = 2Var holds iff u = a + 2Re(c Σzᵢ) almost everywhere.",
+     "main": true,
+     "source_ref": "Theorem 1.10 of arXiv:2608.19358v2; derived upstream from the Theorem 1.9 Hermite identity.",
+     "module": "LeanPool.GinibrePoincare.Endgame.FullTheoremOneTen",
+     "line": 247,
+     "kind": "theorem",
+     "sorry": false
+    },
+    {
+     "declaration": "GinibrePoincare.bochnerKodairaTheoremOneTen",
+     "informal": "The two differential deficit identities of Theorem 1.10, with coefficients 4/n and 8/n and ordinary distributional first and second dbar derivatives, on the real symmetric generator graph for n > 0, obtained through the integrated Bochner–Kodaira identity.",
+     "main": true,
+     "source_ref": "Section 6 integrated Bochner–Kodaira route for Theorem 1.10 of arXiv:2608.19358v2.",
+     "module": "LeanPool.GinibrePoincare.Endgame.BochnerKodairaTheoremOneTen",
+     "line": 90,
+     "kind": "theorem",
+     "sorry": false
+    },
+    {
+     "declaration": "GinibrePoincare.radialObservable_ginibre_gamma",
+     "informal": "For n ≥ 2, under the Ginibre law the recentered radius n·Σᵢ|zᵢ − (Σⱼzⱼ)/n|² has the Gamma law with shape (n−1)(n+2)/2 and rate 1.",
+     "main": true,
+     "source_ref": "Gamma-radius part of Theorem 1.2 of arXiv:2608.19358v2.",
+     "module": "LeanPool.GinibrePoincare.Analysis.GinibreRadialGamma",
+     "line": 321,
+     "kind": "theorem",
+     "sorry": false
+    },
+    {
+     "declaration": "GinibrePoincare.polynomialEigenfunction_eigenvalue_equation_atSpeed",
+     "informal": "For n ≥ 2, any speed α and indices a, b, m, the Hermite–Laguerre polynomial H_{a,b}(S)·L_m(R) satisfies the pointwise eigenvalue equation for the negative Ginibre pregenerator at speed α, with eigenvalue 2(α/n)(a + b + 2m), at every collision-free configuration.",
+     "main": true,
+     "source_ref": "Theorem 1.4 of arXiv:2608.19358v2 (pointwise eigenvalue equation).",
+     "module": "LeanPool.GinibrePoincare.Analysis.PolynomialEigenfunctionGenerator",
+     "line": 131,
+     "kind": "theorem",
+     "sorry": false
+    },
+    {
+     "declaration": "GinibrePoincare.ginibreFullGeneratorAtSpeed_all_positive_n_spectrum_containment",
+     "informal": "For every n > 0 and α > 0, each −2αk/n (k ∈ ℕ) lies in the spectrum of the full symmetric Ginibre generator at speed α, where spectrum means failure of a bounded two-sided resolvent on the graph domain.",
+     "main": true,
+     "source_ref": "Corollary 1.5 of arXiv:2608.19358v2 (the case n = 1 included).",
+     "module": "LeanPool.GinibrePoincare.Analysis.GinibreOneParticleSpectrum",
+     "line": 279,
+     "kind": "theorem",
+     "sorry": false
+    },
+    {
+     "declaration": "GinibrePoincare.polynomialSector_incomplete",
+     "informal": "For n ≥ 2, an explicit nonzero permutation-symmetric centered quadratic is orthogonal to the closed span of the Hermite–Laguerre polynomial eigenfunctions, so that closed sector is a proper subspace of the Ginibre L² space.",
+     "main": true,
+     "source_ref": "Remark 1.6 of arXiv:2608.19358v2.",
+     "module": "LeanPool.GinibrePoincare.Analysis.PolynomialSectorIncompleteness",
+     "line": 250,
+     "kind": "theorem",
+     "sorry": false
+    },
+    {
+     "declaration": "GinibrePoincare.ginibre_pointwise_bakry_emery_curvature_unbounded_below",
+     "informal": "For n ≥ 2 and every real B, some collision-free configuration and unit coordinate direction e give (1/n)·∂²ₑH < B for the Ginibre Hamiltonian H = n|z|² − log|V(z)|², so the pointwise Bakry–Émery curvature has no lower bound.",
+     "main": true,
+     "source_ref": "Lemma 1.7 of arXiv:2608.19358v2 (with an explicit collapsing witness).",
+     "module": "LeanPool.GinibrePoincare.Analysis.GinibrePointwiseCurvature",
+     "line": 126,
+     "kind": "theorem",
+     "sorry": false
+    },
+    {
+     "declaration": "GinibrePoincare.ginibre_pointwise_mean_curvature",
+     "informal": "For n > 0, at every collision-free configuration the Laplacian of the Ginibre Hamiltonian divided by n·2n, the mean eigenvalue of its 1/n-normalized real Hessian, equals 2.",
+     "main": true,
+     "source_ref": "Remark 1.8 of arXiv:2608.19358v2.",
+     "module": "LeanPool.GinibrePoincare.Analysis.GinibrePointwiseCurvature",
+     "line": 139,
+     "kind": "theorem",
+     "sorry": false
+    },
+    {
+     "declaration": "GinibrePoincare.radial_sobolev_lsi",
+     "informal": "For n > 0, every pair in the L² value–gradient closure of smooth, compactly supported, symmetric functions of |z₁|²,…,|zₙ|² has integrable f² log f² and satisfies Ent(f²) ≤ (1/n)‖∇f‖² for the Ginibre law.",
+     "main": true,
+     "source_ref": "Theorem 1.12 of arXiv:2608.19358v2 (radial log-Sobolev inequality and its Sobolev completion).",
+     "module": "LeanPool.GinibrePoincare.Analysis.FullRadialLSIReduction",
+     "line": 104,
+     "kind": "theorem",
+     "sorry": false
+    },
+    {
+     "declaration": "GinibrePoincare.gaussianSchwartzDbar_entire_gap",
+     "informal": "For n > 0, every u in the Gaussian L² space whose ordinary distributional derivatives ∂̄ⱼu lie in L² satisfies dist(u, entire L² functions)² ≤ (1/n)Σⱼ‖∂̄ⱼu‖².",
+     "main": true,
+     "source_ref": "Lemma 2.2 of arXiv:2608.19358v2, on the maximal distributional domain.",
+     "module": "LeanPool.GinibrePoincare.Analysis.GaussianEntireSpaceClosure",
+     "line": 200,
+     "kind": "theorem",
+     "sorry": false
+    },
+    {
+     "declaration": "GinibrePoincare.gaussianVolumeClosedForm_canonicalSolvability",
+     "informal": "For n > 0, every distributionally dbar-closed (0,1)-form with Gaussian L² coefficients D has a unique minimum-norm Gaussian L² solution u of ∂̄u = D, with ‖u‖² ≤ (1/n)Σⱼ‖Dⱼ‖².",
+     "main": true,
+     "source_ref": "Remark 2.4 of arXiv:2608.19358v2, by a Gaussian-specific Hermite construction rather than the general Hörmander–Berndtsson theorem.",
+     "module": "LeanPool.GinibrePoincare.Analysis.GaussianCanonicalDbarSolution",
+     "line": 156,
+     "kind": "theorem",
+     "sorry": false
+    },
+    {
+     "declaration": "GinibrePoincare.entire_alternating_vandermonde_factorization",
+     "informal": "For n > 0, every entire alternating function on ℂⁿ equals the Vandermonde product times an entire symmetric function, globally including all collision points.",
+     "main": true,
+     "source_ref": "Lemma 2.6 of arXiv:2608.19358v2.",
+     "module": "LeanPool.GinibrePoincare.Analysis.EntireVandermondeFactorization",
+     "line": 184,
+     "kind": "theorem",
+     "sorry": false
+    },
+    {
+     "declaration": "GinibrePoincare.ginibreDivisibleEntire_real_centered_geometry",
+     "informal": "For n > 0 and a real centered Ginibre L² function f with projection h onto the Vandermonde-divisible entire space, h, its conjugate and the remainder r are mutually orthogonal, ‖f‖² = 2‖h‖² + ‖r‖², and dist(f, entire space)² = ‖f‖²/2 + ‖r‖²/2.",
+     "main": true,
+     "source_ref": "Lemma 2.7 of arXiv:2608.19358v2 (equations 2.26–2.28).",
+     "module": "LeanPool.GinibrePoincare.Analysis.GinibreEntireProjectionGeometry",
+     "line": 127,
+     "kind": "theorem",
+     "sorry": false
+    },
+    {
+     "declaration": "GinibrePoincare.ginibreComplexSmoothCore_closure_equivalence",
+     "informal": "For n > 0, the L² graph closures of complex-valued compactly supported smooth functions on all of ℂⁿ and on the collision-free set coincide.",
+     "main": true,
+     "source_ref": "Lemma A.2 of arXiv:2608.19358v2 (core equality).",
+     "module": "LeanPool.GinibrePoincare.Analysis.GinibreComplexCoreClosureEquivalence",
+     "line": 284,
+     "kind": "theorem",
+     "sorry": false
+    },
+    {
+     "declaration": "GinibrePoincare.ginibreCollisionSet_capacity_zero",
+     "informal": "For n > 0, the collision set has zero weighted H¹ capacity for the Ginibre law.",
+     "main": true,
+     "source_ref": "Lemma A.3 of arXiv:2608.19358v2.",
+     "module": "LeanPool.GinibrePoincare.Analysis.GinibreCollisionCapacity",
+     "line": 110,
+     "kind": "theorem",
+     "sorry": false
+    },
+    {
+     "declaration": "GinibrePoincare.correspondenceMatrix_theorem_1_13",
+     "informal": "For n > 0 and a permutation-symmetric C¹ observable F on ℂⁿ whose spectral lift F(eigenvalues of A) lies in the Gaussian matrix H¹ space, the eigenvector-overlap energy is integrable, F² log F² is integrable for the Ginibre law, Var(F) ≤ (2/n)·E[overlap energy] and Ent(F²) ≤ (4/n)·E[overlap energy], expectations under the Gaussian matrix law.",
+     "main": true,
+     "source_ref": "Theorem 1.13 of arXiv:2608.19358v2 (matrix lift and eigenvector-overlap inequalities, on the literal Gaussian matrix H¹ lift domain).",
+     "module": "LeanPool.GinibrePoincare.Analysis.CorrespondenceMatrixWeakClosure",
+     "line": 351,
+     "kind": "theorem",
+     "sorry": false
+    },
+    {
+     "declaration": "GinibrePoincare.fullMatrixLift_functional_inequalities",
+     "informal": "For n > 0 and a permutation-symmetric C¹ observable F in the Ginibre L² space with integrable eigenvector-overlap energy, F² log F² is integrable, Var(F) ≤ (2/n)·E[overlap energy] and Ent(F²) ≤ (4/n)·E[overlap energy].",
+     "main": true,
+     "source_ref": "Theorem 1.13 of arXiv:2608.19358v2 (finite overlap-energy domain).",
+     "module": "LeanPool.GinibrePoincare.Endgame.FullMatrixLift",
+     "line": 65,
+     "kind": "theorem",
+     "sorry": false
+    },
+    {
+     "declaration": "GinibrePoincare.matrixSpectralLift_finite_overlap_gaussian_poincare",
+     "informal": "For n > 0 and a differentiable permutation-symmetric F in the Ginibre L² space with integrable overlap energy, Var(F) ≤ (2/n)·E[overlap energy], proved by the Gaussian matrix Poincaré inequality applied to the spectral lift without invoking Theorem 1.1.",
+     "main": true,
+     "source_ref": "Gaussian matrix Poincaré proof of the variance part of Theorem 1.13 of arXiv:2608.19358v2.",
+     "module": "LeanPool.GinibrePoincare.Analysis.AlternativeMatrixPoincare",
+     "line": 136,
+     "kind": "theorem",
+     "sorry": false
+    },
+    {
+     "declaration": "GinibrePoincare.matrixGaussian_poincare_compactC1",
+     "informal": "For n > 0, every compactly supported C¹ function on the real coordinates of n×n complex matrices satisfies Var ≤ (1/(2n))·E[|∇F|²] under the Gaussian matrix law.",
+     "main": true,
+     "source_ref": "Gaussian matrix Poincaré inequality used in the proof of Theorem 1.13 of arXiv:2608.19358v2, proved internally from the Gaussian log-Sobolev inequality.",
+     "module": "LeanPool.GinibrePoincare.Analysis.MatrixGaussianPoincare",
+     "line": 55,
+     "kind": "theorem",
+     "sorry": false
+    },
+    {
+     "declaration": "GinibrePoincare.ginibreTwoRadius_equilibrium_gamma_product",
+     "informal": "For n ≥ 2, under the Ginibre law the pair (|Σᵢzᵢ|², Σ_{j<k}|zⱼ − zₖ|²) has the product law Gamma(1, 1) ⊗ Gamma(κₙ, 1) with κₙ the recentered Gamma shape, the two equilibrium radii of the stochastic factorization.",
+     "main": true,
+     "source_ref": "Equilibrium radius laws in Theorem 1.2 of arXiv:2608.19358v2.",
+     "module": "LeanPool.GinibrePoincare.Analysis.GinibreTwoRadiusEquilibriumLaw",
+     "line": 87,
+     "kind": "theorem",
+     "sorry": false
+    },
+    {
+     "declaration": "GinibrePoincare.ginibre_nonsymmetric_poincare_constant_lower_bound",
+     "informal": "For n ≥ 2, any constant C such that Var(f) ≤ C·E(f) for all smooth integrable f with square-integrable values and gradients, symmetric or not, satisfies C ≥ (n+1)/4; the witness is a real coordinate.",
+     "main": true,
+     "source_ref": "Nonsymmetric counterexample discussed with Theorem 1.1 of arXiv:2608.19358v2 (supplementary result).",
+     "module": "LeanPool.GinibrePoincare.Analysis.GinibreNonsymmetricCounterexample",
+     "line": 128,
+     "kind": "theorem",
+     "sorry": false
+    },
+    {
+     "declaration": "GinibrePoincare.ginibreSquaredNormL2_not_holomorphic",
+     "informal": "For n > 0, the squared Euclidean radius Σᵢ|zᵢ|², as an element of the complex Ginibre L² space, does not belong to the closed span of symmetric holomorphic polynomials.",
+     "main": true,
+     "source_ref": "Supplementary remark on the holomorphic projection geometry of arXiv:2608.19358v2, Section 2.",
+     "module": "LeanPool.GinibrePoincare.Analysis.GinibreRadiusNotHolomorphic",
+     "line": 116,
+     "kind": "theorem",
+     "sorry": false
+    },
+    {
+     "declaration": "GinibrePoincare.ginibreBrownian_equilibrium_original_whole_future_stationary",
+     "informal": "For n > 0 and speed α ≥ 0, let X be the maximal solution of the Ginibre Langevin equation driven by independent standard real Brownian motions on a complete probability space, started from a Ginibre-distributed configuration independent of the noise. For every s ≥ 0 the shifted path t ↦ X_{s+t} has the same law as t ↦ X_t.",
+     "main": true,
+     "source_ref": "Stationarity of the Ginibre law for the original stochastic dynamics, accompanying Theorem 1.3 of arXiv:2608.19358v2.",
+     "module": "LeanPool.GinibrePoincare.Analysis.GinibreEquilibriumProcessStationarityPath",
+     "line": 216,
+     "kind": "theorem",
+     "sorry": false
+    },
+    {
+     "declaration": "GinibrePoincare.ginibreOriginalStochasticL2Resolvent_eq_analytic",
+     "informal": "For n > 0 and α > 0, the normalized Laplace transform at rate α/n of the transition operators of the original Brownian-driven Ginibre dynamics equals the analytic unit resolvent of the full symmetric Ginibre generator on every symmetric L² value.",
+     "main": true,
+     "source_ref": "Identification of the original stochastic dynamics with the generator semigroup (dynamics discussion of arXiv:2608.19358v2, Section 1).",
+     "module": "LeanPool.GinibrePoincare.Analysis.GinibreStochasticTransitionResolventIdentification",
+     "line": 107,
+     "kind": "theorem",
+     "sorry": false
+    },
+    {
+     "declaration": "GinibrePoincare.ginibreBrownianMaximalProcess_global_original_solution",
+     "informal": "For n > 0, speed α ≥ 0 and a collision-free start z, the maximal solution of the Ginibre Langevin equation driven by independent standard Brownian motions is adapted, almost surely continuous, starts at z, never collides and solves the original singular equation for all times.",
+     "main": true,
+     "source_ref": "Global existence and noncollision for the original Brownian dynamics of arXiv:2608.19358v2 (Theorem 1.3 setting).",
+     "module": "LeanPool.GinibrePoincare.Analysis.GinibreStochasticNoncollision",
+     "line": 75,
+     "kind": "theorem",
+     "sorry": false
+    },
+    {
+     "declaration": "GinibrePoincare.ginibreBrownian_full_two_radius_independent_CIR_realization",
+     "informal": "For n ≥ 2, speed α ≥ 0 and a collision-free start, there are two independent standard Brownian motions such that, up to every bounded Hamiltonian stopping time, the center radius |Σzᵢ|² and the pairwise radius Σ_{j<k}|zⱼ − zₖ|² of the original process satisfy the CIR equations with drifts (4α/n)(1 − ·) and (4α/n)(κₙ − ·), whose martingale parts are stochastic integrals against these drivers.",
+     "main": true,
+     "source_ref": "Dynamical factorization, Theorem 1.3 of arXiv:2608.19358v2 (localized by bounded Hamiltonian stops; deterministic collision-free initial state).",
+     "module": "LeanPool.GinibrePoincare.Analysis.GinibreStochasticFullTwoRadiusRealization",
+     "line": 66,
+     "kind": "theorem",
+     "sorry": false
+    },
+    {
+     "declaration": "GinibrePoincare.ginibreBrownian_original_transition_eq_paper_ae",
+     "informal": "For n > 0 and α ≥ 0, the transition expectation z ↦ E[v(X_T^z)] of the original process equals, Ginibre-almost everywhere, the analytic paper-speed evolution of the full symmetric generator applied to any bounded measurable symmetric observable v.",
+     "main": true,
+     "source_ref": "Identification of the original Ginibre dynamics with the generator semigroup, arXiv:2608.19358v2, Section 1.",
+     "module": "LeanPool.GinibrePoincare.Analysis.GinibreStochasticTransitionSemigroupIdentification",
+     "line": 117,
+     "kind": "theorem",
+     "sorry": false
+    },
+    {
+     "declaration": "GinibrePoincare.ginibreOriginalEquilibrium_two_radius_gamma_product",
+     "informal": "For n ≥ 2 and α ≥ 0, started from the Ginibre law, at every time T the two radii of the original process have the product law Gamma(1, 1) ⊗ Gamma(κₙ, 1).",
+     "main": true,
+     "source_ref": "Stationary radius laws in Theorems 1.2–1.3 of arXiv:2608.19358v2.",
+     "module": "LeanPool.GinibrePoincare.Analysis.GinibreStochasticStationaryTwoRadiusLaw",
+     "line": 67,
+     "kind": "theorem",
+     "sorry": false
+    },
+    {
+     "declaration": "GinibrePoincare.fullNonQuadraticPotentialTheorem",
+     "informal": "For n > 0, let V be a C² rotation-invariant planar potential with finite partition function for the gas with density ∝ exp(−nΣᵢV(zᵢ))·|Vandermonde(z)|², and let ρ > 0. If ΔV ≥ 2ρ, every smooth compactly supported symmetric f satisfies Var(f) ≤ (1/(ρn))∫|∇f|². If V − ρ|z|²/2 is convex, every smooth compactly supported symmetric f depending only on |z₁|²,…,|zₙ|² satisfies Ent(f²) ≤ (2/(ρn))∫|∇f|².",
+     "main": true,
+     "source_ref": "Theorem 1.14 of arXiv:2608.19358v2 (nonquadratic determinantal log-gases).",
+     "module": "LeanPool.GinibrePoincare.Endgame.FullNonQuadraticPotential",
+     "line": 47,
+     "kind": "theorem",
+     "sorry": false
+    },
+    {
+     "declaration": "GinibrePoincare.bakryEmeryConfigurationGibbs_square_lsi",
+     "informal": "For n > 0, a C² potential W on configurations with W − κ|x|²/2 convex (κ > 0), and a compactly supported C¹ function f on the real coordinates, the normalized Gibbs measure ∝ exp(−W) satisfies Ent(f²) ≤ (2/κ)∫|∇f|². The Brownian noise, Langevin flow and Gibbs invariance used in the proof are constructed internally.",
+     "main": true,
+     "source_ref": "Strongly convex Bakry–Émery log-Sobolev inequality cited in the proof of Theorem 1.14 of arXiv:2608.19358v2, proved internally.",
+     "module": "LeanPool.GinibrePoincare.Analysis.AlternativeBakryEmeryConvexGibbsLSI",
+     "line": 56,
+     "kind": "theorem",
+     "sorry": false
+    },
+    {
+     "declaration": "GinibrePoincare.fullTheoremOneNinePointwiseGamma",
+     "informal": "For n > 0 and every smooth compactly supported symmetric observable f of the Theorem 1.9 core, with weak gradient g, E − 2Var = 2‖r‖² + 4·(Hermite tail), and the integral of the literal pointwise carré du champ itéré Γ₂(f) minus 2E equals ‖Lf + 2(f − mean f)‖² + 4‖r‖² + 8·(Hermite tail), where r is the holomorphic remainder.",
+     "main": true,
+     "source_ref": "Theorem 1.9 of arXiv:2608.19358v2 with the literal pointwise Γ₂ integral.",
+     "module": "LeanPool.GinibrePoincare.Endgame.FullTheoremOneNinePointwiseGamma",
+     "line": 62,
+     "kind": "theorem",
+     "sorry": false
+    },
+    {
+     "declaration": "GinibrePoincare.correspondence_poincare_iff_integrated_pointwise_curvature",
+     "informal": "For n > 0, the sharp symmetric weak-H¹ inequality Var ≤ E/2 holds if and only if 2E(f) ≤ ∫Γ₂(f) for every observable f of the smooth compact symmetric core.",
+     "main": true,
+     "source_ref": "Integrated curvature reformulation of Theorem 1.1, arXiv:2608.19358v2.",
+     "module": "LeanPool.GinibrePoincare.Endgame.CorrespondenceCurvatureCriterion",
+     "line": 75,
+     "kind": "theorem",
+     "sorry": false
+    },
+    {
+     "declaration": "GinibrePoincare.spectral_ginibre_full_generator_spectrum_support",
+     "informal": "For n > 0, the spectrum of the full complex symmetric Ginibre generator (failure of a bounded two-sided resolvent on its graph domain) is contained in {0} ∪ (−∞, −2].",
+     "main": true,
+     "source_ref": "Spectral gap of the generator, Section 3 of arXiv:2608.19358v2.",
+     "module": "LeanPool.GinibrePoincare.Analysis.AlternativeSpectralSupport",
+     "line": 229,
+     "kind": "theorem",
+     "sorry": false
+    },
+    {
+     "declaration": "GinibrePoincare.correspondence_ginibre_global_independent_CIR_equations",
+     "informal": "For n ≥ 2, α > 0 and a collision-free start, there are two independent standard Brownian motions such that, for all times and without stopping, the center radius and the pairwise radius of the original process satisfy the CIR equations with drifts (4α/n)(1 − ·) and (4α/n)(κₙ − ·). The martingale parts are limits in probability of left Riemann sums against these drivers.",
+     "main": true,
+     "source_ref": "Theorem 1.3 of arXiv:2608.19358v2 (unstopped CIR equations).",
+     "module": "LeanPool.GinibrePoincare.Analysis.CorrespondenceDynamicsGlobalCIR",
+     "line": 212,
+     "kind": "theorem",
+     "sorry": false
+    },
+    {
+     "declaration": "GinibrePoincare.correspondence_ginibre_continuous_strongMarkov",
+     "informal": "For n > 0, α ≥ 0 and a collision-free start, the original process has continuous paths, and for every finite stopping time τ, τ-measurable Y and t ≥ 0, the joint law of (Y, X_{τ+t}) is obtained by running the dynamics for time t from X_τ with an independent copy of the noise.",
+     "main": true,
+     "source_ref": "Strong Markov property of the original dynamics, arXiv:2608.19358v2, Section 1.",
+     "module": "LeanPool.GinibrePoincare.Analysis.CorrespondenceDynamicsHunt",
+     "line": 75,
+     "kind": "theorem",
+     "sorry": false
+    },
+    {
+     "declaration": "GinibrePoincare.correspondenceOperatorEvolution_ergodic",
+     "informal": "For n > 0, the semigroup of the unrestricted complex Ginibre generator converges strongly in L² to the mean of every observable as time tends to infinity.",
+     "main": true,
+     "source_ref": "Ergodicity of the Ginibre dynamics, arXiv:2608.19358v2, Section 1.",
+     "module": "LeanPool.GinibrePoincare.Analysis.CorrespondenceOperatorErgodicity",
+     "line": 101,
+     "kind": "theorem",
+     "sorry": false
+    },
+    {
+     "declaration": "GinibrePoincare.correspondenceFriedrichsSquareRoot_domain_ordinary_H1",
+     "informal": "For n > 0, let A be the unrestricted Ginibre generator. The domain of the positive self-adjoint square root of the nonnegative Friedrichs operator −A consists exactly of the complex L² functions whose real and imaginary parts have ordinary distributional L² gradients.",
+     "main": true,
+     "source_ref": "Closed Dirichlet form and Friedrichs extension in arXiv:2608.19358v2, Section 1.",
+     "module": "LeanPool.GinibrePoincare.Analysis.CorrespondenceOperatorFriedrichsSquareRoot",
+     "line": 117,
+     "kind": "theorem",
+     "sorry": false
+    },
+    {
+     "declaration": "GinibrePoincare.correspondenceOperatorNumber_spectrum_iff",
+     "informal": "For n > 0, a complex number lies in the spectrum of the maximal Gaussian number operator exactly when it equals n·k for some k ∈ ℕ.",
+     "main": true,
+     "source_ref": "Section 6 spectral calculus of arXiv:2608.19358v2.",
+     "module": "LeanPool.GinibrePoincare.Analysis.CorrespondenceOperatorNumberSpectrum",
+     "line": 174,
+     "kind": "theorem",
+     "sorry": false
+    },
+    {
+     "declaration": "GinibrePoincare.correspondenceBrascampLieb_weak_probability_variance",
+     "informal": "For a C² potential W with Gibbs probability density e^{−W} and positive-definite Hessian everywhere, every L² function with an ordinary weak gradient of finite inverse-Hessian energy satisfies Var ≤ E[⟨∇u, (∇²W)⁻¹∇u⟩].",
+     "main": true,
+     "source_ref": "Brascamp–Lieb inequality cited in arXiv:2608.19358v2, proved for ordinary weak gradients.",
+     "module": "LeanPool.GinibrePoincare.Analysis.CorrespondenceBrascampLiebWeak",
+     "line": 134,
+     "kind": "theorem",
+     "sorry": false
+    },
+    {
+     "declaration": "GinibrePoincare.gueFull_C1_H1_inequalities",
+     "informal": "For n > 0 and a permutation-symmetric C¹ function on ℝⁿ with value and gradient in L² of the GUE eigenvalue law, f² log f² is integrable, Ent(f²) ≤ (2/n)E|∇f|² and Var(f) ≤ (1/n)E|∇f|².",
+     "main": true,
+     "source_ref": "Real GUE comparison discussed in arXiv:2608.19358v2.",
+     "module": "LeanPool.GinibrePoincare.Analysis.CorrespondenceGUEEndpoints",
+     "line": 66,
+     "kind": "theorem",
+     "sorry": false
+    },
+    {
+     "declaration": "GinibrePoincare.localDolbeault_locallyL2",
+     "informal": "On an open set of ℂⁿ, every distributionally dbar-closed (0,1)-form with locally L² coefficients is locally the distributional dbar of an L² function.",
+     "main": true,
+     "source_ref": "Local Dolbeault exactness used in Section 2 of arXiv:2608.19358v2.",
+     "module": "LeanPool.GinibrePoincare.Analysis.CorrespondenceAuxiliaryLocalDolbeault",
+     "line": 60,
+     "kind": "theorem",
+     "sorry": false
+    },
+    {
+     "declaration": "GinibrePoincare.positiveWeightEntire_tendstoLocallyUniformly",
+     "informal": "For a measurable weight bounded below by a positive constant on each compact set, entire representatives of L²-convergent elements of the weighted entire space converge locally uniformly.",
+     "main": true,
+     "source_ref": "Remark 2.5 of arXiv:2608.19358v2 for general positive weights.",
+     "module": "LeanPool.GinibrePoincare.Analysis.CorrespondenceAuxiliaryPositiveWeightUniform",
+     "line": 143,
+     "kind": "theorem",
+     "sorry": false
+    },
+    {
+     "declaration": "GinibrePoincare.gaussian_tensor_mixed_monomial_gramSchmidt",
+     "informal": "For n > 0, Gram–Schmidt orthonormalization of the mixed monomials, in degree order, in the complex Gaussian L² space produces exactly the normalized multivariate complex Hermite polynomials.",
+     "main": true,
+     "source_ref": "Appendix B of arXiv:2608.19358v2 (Gram–Schmidt construction).",
+     "module": "LeanPool.GinibrePoincare.Analysis.CorrespondenceAuxiliaryTensorGramSchmidt",
+     "line": 131,
+     "kind": "theorem",
+     "sorry": false
+    },
+    {
+     "declaration": "GinibrePoincare.gaussianGapEqualitySpace_real_analytic_representative",
+     "informal": "For n > 0, every element of the equality space of the Gaussian dbar gap has a real analytic representative.",
+     "main": true,
+     "source_ref": "Remark 2.3 of arXiv:2608.19358v2.",
+     "module": "LeanPool.GinibrePoincare.Analysis.CorrespondenceAuxiliaryEqualityAnalytic",
+     "line": 85,
+     "kind": "theorem",
+     "sorry": false
+    }
+   ]
+  },
+  {
    "slug": "gkp-density-one",
    "title": "Density-One GKP Divisibility and Its Carry-Language Characterization",
    "summary": "Proves that the exponents k satisfying the Graham--Knuth--Patashnik divisibility condition have natural density one. The proof gives an exact all-depth modular sieve, quantitative bounds for possible failures in initial intervals, and a density-zero limit for the failure proportion. It also develops the Kummer digit-sum bridge, the binary-popcount reduction, and a verified ternary carry automaton. The universal GKP conjecture remains open because the possible density-zero failure set may be nonempty.",
@@ -8716,6 +10096,126 @@
    ]
   },
   {
+   "slug": "goldberg-seymour",
+   "title": "The Goldberg–Seymour edge-coloring theorem",
+   "summary": "Proves the Goldberg–Seymour bound for every finite loopless multigraph, with distinct identities for parallel edges: the chromatic index is at most the maximum of the maximum degree plus one and the ceiling of the odd-set density. Preserves proper partial edge colorings, Kempe components, critical subgraphs, Tashkinov trees, extension sequences, and good hierarchies. An incidence-preserving bridge supports Mathlib graphs on their actual vertex and edge sets, including isolated vertices and independently identified parallel edges. The import contains the dependency closure of the full theorem; it does not claim an executable edge-coloring algorithm or its polynomial running time.",
+   "msc": [
+    "05C15"
+   ],
+   "authors": [
+    "Wesley Pegden"
+   ],
+   "source": {
+    "title": "Proof of the Goldberg-Seymour Conjecture on Edge-Colorings of Multigraphs",
+    "authors": [
+     "Guantao Chen",
+     "Guangming Jing",
+     "Wenan Zang"
+    ],
+    "arxiv": "1901.10316v2",
+    "url": "https://github.com/wpegden/goldberg_seymour/tree/88d98c1d1a59d1f1bf7c4eb58e73f3945f6daf12",
+    "github_repo": "wpegden/goldberg_seymour",
+    "commit": "88d98c1d1a59d1f1bf7c4eb58e73f3945f6daf12"
+   },
+   "license": "Apache-2.0",
+   "notice": null,
+   "provenance": "AI",
+   "directory": "GoldbergSeymour",
+   "main_results": [
+    {
+     "declaration": "GoldbergSeymour.goldbergSeymour",
+     "informal": "Every finite loopless multigraph G has chromatic index at most max(Delta(G) + 1, ceil(Gamma(G))), where Delta is the maximum vertex degree and Gamma is the maximum of zero and 2|E(U)|/(|U| - 1) over odd vertex sets U of size at least three. E(U) contains every edge whose two endpoints lie in U, including parallel edges separately.",
+     "main": true,
+     "module": "LeanPool.GoldbergSeymour",
+     "line": 34,
+     "kind": "theorem",
+     "sorry": false
+    },
+    {
+     "declaration": "GoldbergSeymour.GeneralHighIndexElementary",
+     "informal": "If a finite loopless multigraph has chromatic index at least its maximum degree plus two, its chromatic index equals the ceiling of its odd-set density.",
+     "main": true,
+     "module": "LeanPool.GoldbergSeymour.GeneralHighIndexElementary",
+     "line": 25,
+     "kind": "theorem",
+     "sorry": false
+    }
+   ]
+  },
+  {
+   "slug": "goodman-supersaturation",
+   "title": "Goodman's formula and clique supersaturation for two-colourings",
+   "summary": "Counts monochromatic structures in a red/blue colouring of a complete graph, given as a `SimpleGraph` and its complement. Proves Goodman's formula for monochromatic triangles, inside any finite vertex set and globally, with its degree-imbalance form, the bound n(n-1)(n-5)/24, equality for graphs regular of degree k on 2k+1 vertices, and the stronger bound n(n-2)(n-4)/24 for even n. Also proves monochromatic books, an edge-balance inequality, supersaturation of monochromatic cliques by averaging (made unconditional at the diagonal Ramsey number of the pool's FiniteRamsey project), and a counted Erdős–Szekeres recursion giving explicit lower bounds on the number of red k-cliques or blue l-cliques.",
+   "msc": [
+    "05C55",
+    "05C35",
+    "05D10"
+   ],
+   "authors": [
+    "Brian Sanders"
+   ],
+   "source": {
+    "title": "Goodman's formula and supersaturation for two-colourings",
+    "authors": [
+     "Brian Sanders"
+    ],
+    "url": "https://github.com/Egly443/lean-goodman-supersaturation",
+    "github_repo": "Egly443/lean-goodman-supersaturation",
+    "commit": "6c32aa44315c4627ceff231bd15c8d48fa4bf2e7"
+   },
+   "license": "Apache-2.0",
+   "notice": null,
+   "provenance": "AI",
+   "directory": "GoodmanSupersaturation",
+   "main_results": [
+    {
+     "declaration": "SimpleGraph.goodman_within",
+     "informal": "Goodman's formula inside any finite vertex set S. Twice the number of triangles of G and of its complement inside S, plus the number of mixed wedges (the sum over v in S of the red degree times the blue degree of v within S), equals 2 C(|S|, 3).",
+     "main": true,
+     "module": "LeanPool.GoodmanSupersaturation.Goodman",
+     "line": 272,
+     "kind": "theorem",
+     "sorry": false
+    },
+    {
+     "declaration": "SimpleGraph.goodman_bound",
+     "informal": "Goodman's bound. For a finite vertex type of size n, n(n-1)(n-5) is at most 24 times the number of triangles of G plus the number of triangles of its complement (natural-number subtraction, so the statement is trivial for n < 5).",
+     "main": true,
+     "module": "LeanPool.GoodmanSupersaturation.Goodman",
+     "line": 406,
+     "kind": "theorem",
+     "sorry": false
+    },
+    {
+     "declaration": "SimpleGraph.IsRegularOfDegree.goodman_eq",
+     "informal": "Sharpness. If G is regular of degree k on 2k+1 vertices, then 24 times the number of monochromatic triangles equals n(n-1)(n-5) exactly (over the integers).",
+     "main": true,
+     "module": "LeanPool.GoodmanSupersaturation.Goodman",
+     "line": 435,
+     "kind": "theorem",
+     "sorry": false
+    },
+    {
+     "declaration": "SimpleGraph.supersaturation",
+     "informal": "Counted Erdős–Szekeres recursion. For k, l at least 1 with k + l at least 3 and a finite vertex set S with x = |S| + 1 - 2^(k+l-3) > 0, either G has at least supersaturationBound k l x k-cliques inside S or its complement has at least supersaturationBound l k x l-cliques inside S, where supersaturationBound k l x = x^k 2^(2k+1) / (k! 2^(kl + C(k+1, 2))).",
+     "main": true,
+     "module": "LeanPool.GoodmanSupersaturation.Supersaturation",
+     "line": 396,
+     "kind": "theorem",
+     "sorry": false
+    },
+    {
+     "declaration": "SimpleGraph.choose_le_card_cliqueFinset_add_mul_choose_ramseyNumber",
+     "informal": "Supersaturation by averaging at the diagonal Ramsey number. If R(t, t) is at most n, then C(n, t) is at most C(R(t, t), t) times the number of t-cliques of G plus those of its complement. R(t, t) is the pool's FiniteRamsey ramseyNumber ![t, t]; this bridge was added in the port.",
+     "main": true,
+     "module": "LeanPool.GoodmanSupersaturation.RamseyNumber",
+     "line": 45,
+     "kind": "theorem",
+     "sorry": false
+    }
+   ]
+  },
+  {
    "slug": "graham-lpt",
    "title": "Sharp list-scheduling and longest-processing-time bounds",
    "summary": "Formalizes identical-machine scheduling for arbitrary finite job sets with real processing times. Proves Graham's sharp list-scheduling and LPT approximation bounds, constructs their tight instances, characterizes all positive instances attaining the LPT bound, and establishes the supremum for every sufficiently large fixed job count.",
@@ -8876,6 +10376,63 @@
      "source_ref": "Upstream README, equality criterion, including d = p.",
      "module": "LeanPool.GranvilleMoore.MooreDeterminant",
      "line": 356,
+     "kind": "theorem",
+     "sorry": false
+    }
+   ]
+  },
+  {
+   "slug": "graph-extremal",
+   "title": "Weight shifting and extremal graph theory",
+   "summary": "General convex weight shifting on nonedges, attained Motzkin–Straus and weighted Zykov bounds, finite bipartite matching-cover duality, lexicographic graph products and Paley graphs with strong regularity, clique bounds and diameter two.",
+   "msc": [
+    "05C55",
+    "05D10"
+   ],
+   "authors": [
+    "Brian Sanders"
+   ],
+   "source": {
+    "title": "Weight shifting and extremal graph theory",
+    "authors": [
+     "Brian Sanders"
+    ],
+    "url": "https://github.com/Egly443/lean-graph-extremal",
+    "github_repo": "Egly443/lean-graph-extremal",
+    "commit": "cdd96c43e8cb0a95eba37eeaf8bf3ecf0e93baf9"
+   },
+   "license": "Apache-2.0",
+   "notice": null,
+   "provenance": "AI",
+   "directory": "GraphExtremal",
+   "main_results": [
+    {
+     "declaration": "SimpleGraph.exists_isClique_support_le",
+     "informal": "A nonnegative weighting is dominated by one supported on a clique for functions convex along nonedge directions.",
+     "main": true,
+     "source_ref": "Upstream lean-graph-extremal at cdd96c43e8cb0a95eba37eeaf8bf3ecf0e93baf9; proposed in #721 in the comment of 2026-10-31T14:28:18Z.",
+     "module": "LeanPool.GraphExtremal.Extremal.WeightShifting",
+     "line": 77,
+     "kind": "theorem",
+     "sorry": false
+    },
+    {
+     "declaration": "SimpleGraph.cliqueWeight_le_choose_mul",
+     "informal": "Weighted Zykov bounds control every clique count in a clique-free graph.",
+     "main": true,
+     "source_ref": "Upstream lean-graph-extremal at cdd96c43e8cb0a95eba37eeaf8bf3ecf0e93baf9; proposed in #721 in the comment of 2026-10-31T14:28:18Z.",
+     "module": "LeanPool.GraphExtremal.Extremal.Zykov",
+     "line": 233,
+     "kind": "theorem",
+     "sorry": false
+    },
+    {
+     "declaration": "SimpleGraph.paleyGraph_isSRGWith",
+     "informal": "A finite-field Paley graph has the classical strongly regular parameters under the stated characteristic and square conditions.",
+     "main": true,
+     "source_ref": "Upstream lean-graph-extremal at cdd96c43e8cb0a95eba37eeaf8bf3ecf0e93baf9; proposed in #721 in the comment of 2026-10-31T14:28:18Z.",
+     "module": "LeanPool.GraphExtremal.Paley",
+     "line": 346,
      "kind": "theorem",
      "sorry": false
     }
@@ -9253,6 +10810,86 @@
    ]
   },
   {
+   "slug": "herstein-jordan",
+   "title": "Herstein–Smiley theorems on Jordan homomorphisms of prime rings",
+   "summary": "Classifies surjective Jordan homomorphisms onto prime rings without two-torsion as multiplicative or anti-multiplicative. Also proves Smiley's square-and-triple-identity form in every characteristic and the Jacobson–Rickart domain form without surjectivity, with counterexamples separating the original hypotheses and general biadditive and prime-ring lemmas.",
+   "msc": [
+    "16W10",
+    "16N60",
+    "17C50"
+   ],
+   "authors": [
+    "Stephanie Alexander"
+   ],
+   "source": {
+    "title": "Jordan homomorphisms onto prime rings",
+    "doi": "10.1090/S0002-9947-1957-0083484-X",
+    "url": "https://github.com/stalex444/herstein-jordan-homomorphisms/tree/34dffa8aace3a1b565b11cbb561db3a58fa203da",
+    "github_repo": "stalex444/herstein-jordan-homomorphisms",
+    "commit": "34dffa8aace3a1b565b11cbb561db3a58fa203da"
+   },
+   "license": "MIT",
+   "notice": null,
+   "provenance": "AI",
+   "directory": "HersteinJordan",
+   "main_results": [
+    {
+     "declaration": "JordanPrime.jordan_onto_prime",
+     "informal": "A surjective additive Jordan homomorphism of possibly nonunital rings onto a prime ring without two-torsion is multiplicative or anti-multiplicative.",
+     "main": true,
+     "module": "LeanPool.HersteinJordan.Statements",
+     "line": 78,
+     "kind": "theorem",
+     "sorry": false
+    },
+    {
+     "declaration": "JordanPrime.twoIdentity_onto_prime",
+     "informal": "In every characteristic a surjective additive map onto a prime ring that preserves squares and triple products aba is multiplicative or anti-multiplicative.",
+     "main": true,
+     "module": "LeanPool.HersteinJordan.Statements",
+     "line": 152,
+     "kind": "theorem",
+     "sorry": false
+    },
+    {
+     "declaration": "JordanPrime.twoIdentity_into_domain",
+     "informal": "An additive map preserving squares and triple products into a ring without zero divisors is multiplicative or anti-multiplicative, without assuming surjectivity or excluding any characteristic.",
+     "main": true,
+     "module": "LeanPool.HersteinJordan.Statements",
+     "line": 89,
+     "kind": "theorem",
+     "sorry": false
+    },
+    {
+     "declaration": "JordanPrime.onto_needed",
+     "informal": "An explicit integer-matrix Jordan homomorphism shows that surjectivity cannot be dropped from the first theorem.",
+     "main": false,
+     "module": "LeanPool.HersteinJordan.Statements",
+     "line": 97,
+     "kind": "theorem",
+     "sorry": false
+    },
+    {
+     "declaration": "JordanPrime.prime_needed",
+     "informal": "Transposing one factor in a product of integer-matrix rings shows that the prime-target hypothesis cannot be dropped.",
+     "main": false,
+     "module": "LeanPool.HersteinJordan.Statements",
+     "line": 116,
+     "kind": "theorem",
+     "sorry": false
+    },
+    {
+     "declaration": "JordanPrime.two_needed",
+     "informal": "Addition from two copies of the field with two elements shows that the two-torsion hypothesis cannot be dropped from the first theorem.",
+     "main": false,
+     "module": "LeanPool.HersteinJordan.Statements",
+     "line": 138,
+     "kind": "theorem",
+     "sorry": false
+    }
+   ]
+  },
+  {
    "slug": "high-contrast-homogenization",
    "title": "Homogenization at a polynomial scale in high contrast",
    "summary": "Formalizes polynomial entry into the small-contrast regime, algebraic convergence of coarse blocks, and quantitative stochastic homogenization with correctors, Liouville classification and large-scale regularity. Uses locally uniformly elliptic measurable coefficient fields modulo almost-everywhere equality. The Dirichlet estimate has the documented negative-Sobolev formulation on adapted cells; the random radius is at least one and the effective matrix is existentially produced. Includes the complete production library and its pinned CoarseGraining dependency closure in an isolated support namespace.",
@@ -9319,6 +10956,77 @@
      "main": false,
      "module": "LeanPool.HighContrastHomogenization.MainResults",
      "line": 513,
+     "kind": "theorem",
+     "sorry": false
+    }
+   ]
+  },
+  {
+   "slug": "high-dimensional-steiner-spanners",
+   "title": "Polynomial lower bounds for high-dimensional Steiner spanners",
+   "summary": "For every real p at least one and constant stretch, some arbitrarily large point sets in real ell-p spaces force polynomial edge overhead in every non-metric Steiner spanner. Includes CSP code constructions, finite Bernoulli moment estimates, nearest terminal projection, Hamming-code hubs, Gaussian concentration, and linear Euclidean-to-ell-p embeddings.",
+   "msc": [
+    "68R10",
+    "05C12",
+    "46B07"
+   ],
+   "authors": [
+    "Goran Zuzic",
+    "David P. Woodruff",
+    "Vahab Mirrokni"
+   ],
+   "source": {
+    "title": "Constant-Stretch High-Dimensional Spanners Require Polynomial Overhead",
+    "url": "https://github.com/goranzuzic/high-dimensional-steiner-spanners/tree/e75290d4a81dc898469a71414edf5bee43dc1b02",
+    "github_repo": "goranzuzic/high-dimensional-steiner-spanners"
+   },
+   "license": "Apache-2.0",
+   "notice": null,
+   "provenance": "human",
+   "directory": "SteinerSpanners",
+   "main_results": [
+    {
+     "declaration": "HighDimSteinerSpanners.thm_1_3_non_metric_steiner_spanner_lower_bound",
+     "informal": "For every real p at least one and constant stretch C at least one, arbitrarily large bounded-aspect-ratio point sets in dimension proportional to log n require at least a constant times n to the power 1+c edges in every non-metric Steiner spanner, with an explicit positive lower bound on c.",
+     "main": true,
+     "module": "LeanPool.SteinerSpanners",
+     "line": 174,
+     "kind": "theorem",
+     "sorry": false
+    },
+    {
+     "declaration": "HighDimSteinerSpanners.thm_1_2_geometric_spanner_lower_bound",
+     "informal": "The same polynomial edge lower bound holds for geometric ell-p spanners.",
+     "main": true,
+     "module": "LeanPool.SteinerSpanners",
+     "line": 205,
+     "kind": "theorem",
+     "sorry": false
+    },
+    {
+     "declaration": "HighDimSteinerSpanners.cor_1_4_lp_dvoretzky_lower_bound",
+     "informal": "For p greater than two, a polynomial edge lower bound holds in dimension proportional to the p-over-two power of log n, with an exponent bound independent of p.",
+     "main": true,
+     "module": "LeanPool.SteinerSpanners",
+     "line": 229,
+     "kind": "theorem",
+     "sorry": false
+    },
+    {
+     "declaration": "HighDimSteinerSpanners.thm_2_3_locally_list_bounded_csp_codes",
+     "informal": "Constructs arbitrarily large finite codes with many exact-distance pairs, separation, and bounded local witness lists and overlaps.",
+     "main": true,
+     "module": "LeanPool.SteinerSpanners",
+     "line": 154,
+     "kind": "theorem",
+     "sorry": false
+    },
+    {
+     "declaration": "HighDimSteinerSpanners.prop_3_4_three_hop_hypercube_collapse",
+     "informal": "High-rate hypercube subsets admit sparse three-hop Steiner paths in a prescribed Hamming-distance window. Under minimum separation this extends to all terminal pairs. Also constructs a sparse three-hop spanner for the full hypercube.",
+     "main": true,
+     "module": "LeanPool.SteinerSpanners",
+     "line": 332,
      "kind": "theorem",
      "sorry": false
     }
@@ -9492,6 +11200,71 @@
      "main": false,
      "module": "LeanPool.HSDInteriorPointLP.FixedYTMTheory",
      "line": 1170,
+     "kind": "theorem",
+     "sorry": false
+    }
+   ]
+  },
+  {
+   "slug": "hubbard-spectral-moments",
+   "title": "Spectral moments of the projected Hubbard configuration graph",
+   "summary": "Constructs finite fermion creation and annihilation matrices and the projected Hubbard hopping operator. Proves the weighted second-moment formula for Hermitian hopping, the vanishing of the Schrieffer–Wolff cross term on triangle-free graphs, the doubled Peierls phase of the second-order pair hop, and the classification of permutations induced by four closed hard-core hops. Includes finite-population moment identities and torus calculations used in the paper.",
+   "msc": [
+    "81V70",
+    "05C50",
+    "82B20"
+   ],
+   "authors": [
+    "Daniel Souza"
+   ],
+   "source": {
+    "title": "Spectral Moments of the Projected Hubbard Configuration Graph: Connectivity, Exchange, and Virtual Doublons",
+    "authors": [
+     "Daniel Souza"
+    ],
+    "arxiv": "2611.19929",
+    "url": "https://github.com/zhineos/hubbard-spectral-moments/tree/66d5104785daae03e2f91bbb681aa0fbcea1e6d4/lean",
+    "github_repo": "zhineos/hubbard-spectral-moments",
+    "commit": "66d5104785daae03e2f91bbb681aa0fbcea1e6d4"
+   },
+   "license": "Apache-2.0",
+   "notice": null,
+   "provenance": "AI",
+   "directory": "HubbardMoments",
+   "main_results": [
+    {
+     "declaration": "HubbardMoments.secondMomentHubbardWeighted",
+     "informal": "In a nonempty no-double-occupancy spin sector with n particles on N sites, N at least two, the projected hopping matrix for Hermitian bond amplitudes has normalized second moment n(N-n)/(N(N-1)) times the sum of squared moduli of the off-diagonal hopping amplitudes.",
+     "main": true,
+     "module": "LeanPool.HubbardMoments.Main",
+     "line": 208,
+     "kind": "theorem",
+     "sorry": false
+    },
+    {
+     "declaration": "HubbardMoments.schriefferWolffHubbard",
+     "informal": "For the Hubbard hopping operator on a triangle-free graph, the cross term between projected hopping and the virtual operator vanishes when the projected states have no double occupation and the intermediate states each contain a doubly occupied site.",
+     "main": true,
+     "module": "LeanPool.HubbardMoments.Main",
+     "line": 200,
+     "kind": "theorem",
+     "sorry": false
+    },
+    {
+     "declaration": "HubbardMoments.doubledPeierlsPhase",
+     "informal": "Evaluating the second-order two-particle effective matrix element for a pair hopping to an adjacent site gives 2t²/U with twice the single-hop phase.",
+     "main": true,
+     "module": "LeanPool.HubbardMoments.Main",
+     "line": 87,
+     "kind": "theorem",
+     "sorry": false
+    },
+    {
+     "declaration": "HubbardMoments.fourHopPermutations",
+     "informal": "A closed walk of four single-particle hops with exclusion can induce only the identity, a transposition or a three-cycle.",
+     "main": true,
+     "module": "LeanPool.HubbardMoments.Main",
+     "line": 164,
      "kind": "theorem",
      "sorry": false
     }
@@ -9783,7 +11556,7 @@
      "informal": "A class of coded countable structures is Borel and isomorphism-invariant exactly when it is the model class of one infinitary sentence.",
      "main": false,
      "module": "LeanPool.InfinitaryLogic.Descriptive.LopezEscobar",
-     "line": 48,
+     "line": 44,
      "kind": "theorem",
      "sorry": false
     },
@@ -9792,7 +11565,7 @@
      "informal": "The López--Escobar characterization equivalently uses invariance under the natural permutation action on coded structures.",
      "main": false,
      "module": "LeanPool.InfinitaryLogic.Descriptive.LopezEscobar",
-     "line": 59,
+     "line": 55,
      "kind": "theorem",
      "sorry": false
     },
@@ -9801,7 +11574,7 @@
      "informal": "The class of coded well-orders is not a Borel set in the logic space.",
      "main": false,
      "module": "LeanPool.InfinitaryLogic.Descriptive.WellOrderNonBorel",
-     "line": 56,
+     "line": 52,
      "kind": "theorem",
      "sorry": false
     },
@@ -9837,7 +11610,7 @@
      "informal": "Isomorphism among models of an infinitary sentence is Borel whenever their Scott heights have a common countable bound.",
      "main": false,
      "module": "LeanPool.InfinitaryLogic.Descriptive.IsomorphismBorel",
-     "line": 48,
+     "line": 44,
      "kind": "theorem",
      "sorry": false
     },
@@ -10689,6 +12462,112 @@
    ]
   },
   {
+   "slug": "kls",
+   "title": "The dimension-free Kannan–Lovász–Simonovits bound",
+   "summary": "Formalizes the dimension-free Poincaré bound of Bizeul, Klartag and Lehec via cutoff stochastic localization. The project includes the covariance-normalized bound and two density formulations.",
+   "msc": [
+    "60E15",
+    "46E35",
+    "52A23"
+   ],
+   "authors": [
+    "kls-lean contributors"
+   ],
+   "source": {
+    "arxiv": "2610.05474v1",
+    "url": "https://github.com/human-ai-mathematics/kls-lean/tree/f280ffb3949e275593bb68b9356a70f92d52d1ee",
+    "github_repo": "human-ai-mathematics/kls-lean"
+   },
+   "license": "Apache-2.0",
+   "notice": null,
+   "provenance": "AI",
+   "directory": "KLS",
+   "main_results": [
+    {
+     "declaration": "FunctionalInequalities.KLS.kls",
+     "informal": "The Poincaré constant of a finite-dimensional log-concave probability measure with finite second moment is bounded by a universal constant times the operator norm of its covariance, including on singular affine supports.",
+     "main": true,
+     "source_ref": "P. Bizeul, B. Klartag and J. Lehec, arXiv:2610.05474v1, Theorem 1.1.",
+     "module": "LeanPool.KLS.FunctionalInequalities.KLS.Target",
+     "line": 38,
+     "kind": "theorem",
+     "sorry": false
+    },
+    {
+     "declaration": "KLSOpenAI.kls",
+     "informal": "One Poincaré constant works for isotropic log-concave probability densities in all positive dimensions and smooth compactly supported test functions.",
+     "main": true,
+     "source_ref": "OpenAI KLS model at commit adc7f1241b42e322a6451854ab7e4b4c146bf78a.",
+     "module": "LeanPool.KLS.KLSOpenAI.Target",
+     "line": 19,
+     "kind": "theorem",
+     "sorry": false
+    },
+    {
+     "declaration": "KLSOpenAI.kls_locallyLipschitz",
+     "informal": "One Poincaré constant works for isotropic log-concave probability densities in all positive dimensions and locally Lipschitz square-integrable test functions, with extended gradient energy.",
+     "main": true,
+     "source_ref": "P. Bizeul, B. Klartag and J. Lehec, arXiv:2610.05474v1, Theorem 1.1.",
+     "module": "LeanPool.KLS.KLSOpenAI.Target",
+     "line": 23,
+     "kind": "theorem",
+     "sorry": false
+    }
+   ]
+  },
+  {
+   "slug": "knill-laflamme",
+   "title": "Knill–Laflamme quantum error-correction conditions",
+   "summary": "Characterizes correctability of arbitrary finite families of complex error matrices on a nonzero orthogonal code projector by the Knill–Laflamme matrix condition. Constructs a finite Kraus recovery channel, proves both the individual-error and combined-noise equivalences up to scalar factors, and proves exact recovery when the errors themselves form a trace-preserving channel.",
+   "msc": [
+    "81P73",
+    "81P47"
+   ],
+   "authors": [
+    "Zayn Blore"
+   ],
+   "source": {
+    "title": "Theory of quantum error-correcting codes",
+    "doi": "10.1103/PhysRevA.55.900",
+    "url": "https://github.com/zblore/knill-laflamme-lean/tree/f680e2d5f616bb423fb814f1471b07387729fffd",
+    "github_repo": "zblore/knill-laflamme-lean",
+    "commit": "f680e2d5f616bb423fb814f1471b07387729fffd"
+   },
+   "license": "Apache-2.0",
+   "notice": null,
+   "provenance": "AI",
+   "directory": "KnillLaflamme",
+   "main_results": [
+    {
+     "declaration": "QuantumInfo.knill_laflamme",
+     "informal": "For a nonzero orthogonal code projector and arbitrary finite error family, the Knill–Laflamme condition is equivalent to the existence of a finite Kraus channel correcting each error up to a scalar on all supported matrices.",
+     "main": true,
+     "module": "LeanPool.KnillLaflamme.Basic",
+     "line": 88,
+     "kind": "theorem",
+     "sorry": false
+    },
+    {
+     "declaration": "QuantumInfo.knill_laflamme_sum",
+     "informal": "The same condition is equivalent to a finite Kraus channel correcting the sum of all error actions up to a scalar on all code-supported matrices; the errors need not preserve trace.",
+     "main": true,
+     "module": "LeanPool.KnillLaflamme.Basic",
+     "line": 109,
+     "kind": "theorem",
+     "sorry": false
+    },
+    {
+     "declaration": "QuantumInfo.exists_recovery_channel_of_knillLaflamme",
+     "informal": "A trace-preserving noise channel satisfying the Knill–Laflamme condition admits a recovery channel acting as the identity on every code-supported matrix.",
+     "main": true,
+     "module": "LeanPool.KnillLaflamme.QuantumInfo.KnillLaflamme",
+     "line": 516,
+     "kind": "theorem",
+     "sorry": false
+    }
+   ]
+  },
+  {
    "slug": "koethe-conjecture-disproof",
    "title": "Disproof of the Köthe conjecture (Krempa's matrix form)",
    "summary": "Refutes Köthe's 1930 conjecture in Krempa's matrix form: there is a ring R (the unitization of a nil algebra of three weighted backward shifts over the algebraic closure of F_2) with a nil two-sided ideal I such that the matrix ideal M_2(I) contains a non-nilpotent matrix. The compared theorem is exactly the negation of the research-open statement `Koethe.KotherConjecture.variants.general_matrix` from Google DeepMind's Formal Conjectures, in every universe. The supporting library proves a multiprojective common-zero theorem via the Segre cone, the Nullstellensatz and Krull's height theorem, a mask-mortality theorem for one-row matrix pencils, a diagonal construction of universal mortal sequences, and a linearization theorem reducing nilness of a three-generator algebra to nilness of its root-row pencils.",
@@ -11227,6 +13106,207 @@
      "main": false,
      "module": "LeanPool.LatinQuarter.Main",
      "line": 37,
+     "kind": "theorem",
+     "sorry": false
+    }
+   ]
+  },
+  {
+   "slug": "lattice-dirac-derivation",
+   "title": "Cubical lattice Dirac factorization and its continuum limit",
+   "summary": "Studies a quartic two-field lattice action on the 18-neighbour cubic stencil with fixed numerical constants. On a fixed period-two background, its quadratic fluctuation symbol splits into a continuum Klein-Gordon symbol and a fourth-order lattice remainder. The four-component Dirac Hamiltonian squares to that continuum symbol. Two flavour copies of a cubical Clifford representation, built from signed cube incidence maps, are equivalent to the standard alpha/beta Dirac representation. Under the stability bound (dt w)^2 <= 4, with continuum frequency w, a first-order branch solves the centred time recurrence using the continuum symbol. Under the same bound the exact lattice recurrence has a defect proportional to dt^2 times the spatial remainder. At fixed momentum the branch generator tends to the Dirac Hamiltonian as the time step vanishes. The project also proves local continuity for the linearized lattice dynamics, the continuum limit of the lattice current, an orthonormal Fourier frame on finite abelian groups, and spin one-half rotation generators. Free continuum identities include Lorentz boosts, the Pauli-Lubanski invariant and the Gordon decomposition. All results are about this lattice model and the free four-component continuum operator. They do not establish properties of physical electrons.",
+   "msc": [
+    "81Q05",
+    "15A66",
+    "65M06",
+    "81R20"
+   ],
+   "authors": [
+    "G. D. Partin"
+   ],
+   "source": {
+    "title": "Lean LFM-to-Dirac Derivation",
+    "authors": [
+     "G. D. Partin"
+    ],
+    "doi": "10.5281/zenodo.24150001",
+    "url": "https://github.com/gpartin/LeanDiracDerivation/tree/867004142ada3eec464d5bd3088d7313fdad1613",
+    "github_repo": "gpartin/LeanDiracDerivation",
+    "commit": "867004142ada3eec464d5bd3088d7313fdad1613"
+   },
+   "license": "MIT",
+   "notice": null,
+   "provenance": "mix",
+   "directory": "LatticeDiracDerivation",
+   "main_results": [
+    {
+     "declaration": "LeanDirac.restricted_action_variation_is_native_variation",
+     "informal": "Restriction to the aligned eight-corner cube sector commutes with the first variation of the two-field lattice Lagrangian. Along any real line of amplitudes and velocities in that sector, the derivative at zero of the restricted Lagrangian equals the full Lagrangian's state and kinetic first variations at the embedded configuration.",
+     "main": true,
+     "module": "LeanPool.LatticeDiracDerivation.Dirac006Restriction",
+     "line": 224,
+     "kind": "theorem",
+     "sorry": false
+    },
+    {
+     "declaration": "LeanDirac.native_prepared_modal_potential_expansion",
+     "informal": "Fix the prepared period-two background, with the second field at amplitude 19. A plane wave of amplitude eps times a and lattice momentum k in the first field then has local-plus-bond potential at every site exactly eps^2 |a|^2 / 2 times (19^2 + T(k)) plus eps^4 |a|^4 / 4. Here T is the weighted 18-neighbour transport symbol.",
+     "main": true,
+     "module": "LeanPool.LatticeDiracDerivation.Dirac012",
+     "line": 122,
+     "kind": "theorem",
+     "sorry": false
+    },
+    {
+     "declaration": "LeanDirac.native_psi_tangent_symbol_is_exact_scalar_coefficient",
+     "informal": "The quadratic fluctuation symbol 19^2 + T(k) equals the continuum Klein-Gordon symbol 19^2 + 12 |k|^2 plus the lattice remainder R(k) = T(k) - 12 |k|^2.",
+     "main": true,
+     "module": "LeanPool.LatticeDiracDerivation.Dirac012",
+     "line": 140,
+     "kind": "theorem",
+     "sorry": false
+    },
+    {
+     "declaration": "LeanDirac.c19_spatial_remainder_bound",
+     "informal": "If every component of k satisfies |k_i| <= r with 0 <= r <= 1/2, the lattice remainder satisfies |R(k)| <= 40 r^4.",
+     "main": true,
+     "module": "LeanPool.LatticeDiracDerivation.Dirac009Geometry",
+     "line": 616,
+     "kind": "theorem",
+     "sorry": false
+    },
+    {
+     "declaration": "LeanDirac.standard_c19_hamiltonian_square_is_continuum_dispersion",
+     "informal": "The four-component Dirac Hamiltonian 19 beta + alpha . p in the standard alpha/beta representation, with p = sqrt 12 (-k_2, -k_1, k_0), squares to (19^2 + 12 |k|^2) times the identity. This is the continuum Klein-Gordon symbol of the lattice model.",
+     "main": true,
+     "module": "LeanPool.LatticeDiracDerivation.Dirac012",
+     "line": 292,
+     "kind": "theorem",
+     "sorry": false
+    },
+    {
+     "declaration": "LeanDirac.interpreted_hamiltonian_intertwines_minus",
+     "informal": "The eight-corner operator m Beta + p_z Gamma_0 - p_y Gamma_1 - p_x Gamma_2 uses the cube parity grading Beta and the signed cube incidence maps Gamma_a. For all complex m and p, the injective embedding of the first rank-four flavour copy intertwines it with the standard Dirac Hamiltonian m beta + alpha . p.",
+     "main": true,
+     "module": "LeanPool.LatticeDiracDerivation.Dirac010",
+     "line": 413,
+     "kind": "theorem",
+     "sorry": false
+    },
+    {
+     "declaration": "LeanDirac.interpreted_hamiltonian_intertwines_plus",
+     "informal": "The same intertwining holds for the injective embedding of the second rank-four flavour copy.",
+     "main": true,
+     "module": "LeanPool.LatticeDiracDerivation.Dirac010",
+     "line": 434,
+     "kind": "theorem",
+     "sorry": false
+    },
+    {
+     "declaration": "LeanDirac.native_branch_defect_is_spatial_remainder",
+     "informal": "Let w^2 = 19^2 + 12 |k|^2 be the continuum symbol and assume (dt w)^2 <= 4. Then U_dt z = C z - i (S / w) H(k) z solves the centred second-order time recurrence using that symbol. Its defect in the exact lattice recurrence is dt^2 R(k) U_dt z, where R is the lattice remainder.",
+     "main": true,
+     "module": "LeanPool.LatticeDiracDerivation.Dirac012Branch",
+     "line": 257,
+     "kind": "theorem",
+     "sorry": false
+    },
+    {
+     "declaration": "LeanDirac.recurrence_branch_generator_defect_tends_to_zero",
+     "informal": "Fix a lattice momentum k and a four-spinor z, and let U_dt be the continuum-symbol branch above. As dt tends to 0 with dt nonzero, each component of (U_dt z - z) / dt + i H(k) z tends to 0. This is a time-step limit at fixed k; the spatial defect relative to the exact lattice recurrence is the separate dt^2 R(k) term.",
+     "main": true,
+     "module": "LeanPool.LatticeDiracDerivation.Dirac012Branch",
+     "line": 350,
+     "kind": "theorem",
+     "sorry": false
+    },
+    {
+     "declaration": "LeanDirac.native_tangent_local_continuity",
+     "informal": "On any 18-neighbour lattice, take the acceleration given by the linearized (tangent) scalar equation with a mass term. Then at every site the time derivative of the local phase density plus the divergence of the outward bond current vanishes. This concerns the linearized dynamics, not the full quartic equations of motion.",
+     "main": true,
+     "module": "LeanPool.LatticeDiracDerivation.Dirac013",
+     "line": 270,
+     "kind": "theorem",
+     "sorry": false
+    },
+    {
+     "declaration": "LeanDirac.native_cell4_flux_continuum_limit_is_dirac_current",
+     "informal": "Let z satisfy H_m(k) z = E z with E > 0, where H_m(k) is the Dirac Hamiltonian above with an arbitrary real mass m. For each axis, the normalized positive-frequency lattice flux at momentum s k has derivative at s = 0 equal to the Dirac current of z along that axis.",
+     "main": true,
+     "module": "LeanPool.LatticeDiracDerivation.Dirac013",
+     "line": 667,
+     "kind": "theorem",
+     "sorry": false
+    },
+    {
+     "declaration": "LeanDirac.normalized_finite_fourier_basis_orthonormal",
+     "informal": "On every finite abelian group G, the additive characters divided by sqrt |G| form an orthonormal family.",
+     "main": true,
+     "module": "LeanPool.LatticeDiracDerivation.Dirac020",
+     "line": 482,
+     "kind": "theorem",
+     "sorry": false
+    },
+    {
+     "declaration": "LeanDirac.exists_unique_admissible_spin_scale",
+     "informal": "Exactly one nonzero real scale s makes the scaled cubical bivector operators satisfy the commutation relation [S_0, S_1] = i S_2. That scale is 1/2.",
+     "main": true,
+     "module": "LeanPool.LatticeDiracDerivation.Dirac017",
+     "line": 248,
+     "kind": "theorem",
+     "sorry": false
+    },
+    {
+     "declaration": "LeanDirac.cube_spin_casimir",
+     "informal": "The cubical spin generators with scale 1/2 satisfy S_0^2 + S_1^2 + S_2^2 = 3/4 on the eight-corner space.",
+     "main": true,
+     "module": "LeanPool.LatticeDiracDerivation.Dirac017",
+     "line": 319,
+     "kind": "theorem",
+     "sorry": false
+    },
+    {
+     "declaration": "LeanDirac.cube_continuous_turn_two_pi",
+     "informal": "The continuous rotation generated by any cubical spin generator acts as -1 at angle 2 pi.",
+     "main": true,
+     "module": "LeanPool.LatticeDiracDerivation.Dirac017Closed",
+     "line": 433,
+     "kind": "theorem",
+     "sorry": false
+    },
+    {
+     "declaration": "LeanDirac.admissible_two_copy_native_root_is_canonical",
+     "informal": "Consider first-order operators mu m Beta + sum_a (T p)_a Gamma_a, chosen independently on the two flavour copies, with real mu >= 0 and a real 3 x 3 matrix T with T_00 >= 0. Suppose each is covariant under the cubic quarter turns and squares to (m^2 + |p|^2) on its copy. Then the operator equals the canonical cubical Dirac symbol.",
+     "main": true,
+     "module": "LeanPool.LatticeDiracDerivation.Dirac018",
+     "line": 487,
+     "kind": "theorem",
+     "sorry": false
+    },
+    {
+     "declaration": "LeanDirac.c19_first_brillouin_zone_zero_unique",
+     "informal": "In the first Brillouin zone [-pi, pi]^3, the 18-neighbour transport symbol vanishes only at k = 0.",
+     "main": true,
+     "module": "LeanPool.LatticeDiracDerivation.Dirac018",
+     "line": 628,
+     "kind": "theorem",
+     "sorry": false
+    },
+    {
+     "declaration": "LeanDirac.pauli_lubanski_mass_shell_spin_half",
+     "informal": "On the mass shell E^2 - |p|^2 = m^2, the Pauli-Lubanski square built from the four-component boost and rotation generators equals -(3/4) m^2 times the identity.",
+     "main": true,
+     "module": "LeanPool.LatticeDiracDerivation.Dirac027",
+     "line": 106,
+     "kind": "theorem",
+     "sorry": false
+    },
+    {
+     "declaration": "LeanDirac.gordon_current_decomposition",
+     "informal": "Let m be nonzero and let the spinors u and v satisfy the momentum-space Dirac equations gamma . q u = m u and gamma . p v = m v. Then the vector bilinear of u and gamma^mu v equals 1/(2m) times the Gordon sum of its convection and spin terms.",
+     "main": true,
+     "module": "LeanPool.LatticeDiracDerivation.Dirac030",
+     "line": 183,
      "kind": "theorem",
      "sorry": false
     }
@@ -12439,6 +14519,118 @@
    ]
   },
   {
+   "slug": "linear-algebra-combinatorics-and-analysis",
+   "title": "Singular values, minors and elementary matrices, with lemmas in combinatorics and analysis",
+   "summary": "A collection of general results centred on linear algebra. For linear maps between finite-dimensional inner product spaces over ℝ or ℂ, its main result is an analogue of Ky Fan's subadditivity for the second elementary symmetric function of the n largest singular values. Ky Fan's subadditivity is reused from the pool. The included maximum-principle upper bound is a supporting restatement that follows from the pool's existing contraction-family bound and finite-dimensional gauge identity; no attainment theorem is claimed. Its cited reference remains K. Fan, \"Maximum properties and inequalities for the eigenvalues of completely continuous operators\", Proc. Natl. Acad. Sci. USA 37 (1951), 760–766, Theorem 1 with m = 1. Proves the factorisation and unit determinant of the symmetric Pascal matrix and the trace of odd powers of a difference of two idempotent matrices, a characterisation of finite monoids with a right zero, continuity of currying for compact-open topologies out of an R1 space, quasi-sobriety of arbitrary products of quasi-sober spaces, an almost-everywhere diagonal bound for inner products of a non-measurable map, that C¹ self-maps of a finite-dimensional real space send meagre sets to meagre sets, and the congruence choose (p^a − 1) k ≡ (−1)^k mod p. Supporting files restate, in the forms these proofs use, results that also exist elsewhere, namely Cauchy–Binet for minors (in the pool and Tau Ceti), perfectness of E(n, A) and the Whitehead lemma (Tau Ceti), the finite q-binomial theorem (in the pool) and the class-two power formula (Tau Ceti); they are not headline claims.",
+   "msc": [
+    "15A18",
+    "15A15",
+    "15A42",
+    "19B10",
+    "05A30",
+    "11B65",
+    "20F12",
+    "20M10",
+    "54C35",
+    "54E52"
+   ],
+   "authors": [
+    "Michel Hua"
+   ],
+   "source": {
+    "url": "https://doi.org/10.1073/pnas.37.11.760",
+    "github_repo": "mycaule/lean-pool",
+    "commit": "623506555f2fde7d44c697d9f7d94f21e8015cd1"
+   },
+   "license": "Apache-2.0",
+   "notice": null,
+   "provenance": "mix",
+   "directory": "LinearAlgebraCombinatoricsAndAnalysis",
+   "main_results": [
+    {
+     "declaration": "LinearMap.sum_powersetCard_two_prod_singularValues_add_le",
+     "informal": "Writing σ₂(T) for the second elementary symmetric function of the n largest singular values of T, σ₂(u + v) ≤ σ₂(u) + (∑_{j<n} s_j(u)) (∑_{j<n} s_j(v)) + σ₂(v).",
+     "main": true,
+     "module": "LeanPool.LinearAlgebraCombinatoricsAndAnalysis.SingularValuesSigmaTwo",
+     "line": 961,
+     "kind": "theorem",
+     "sorry": false
+    },
+    {
+     "declaration": "Matrix.det_pascal",
+     "informal": "Over every commutative ring, the n × n symmetric Pascal matrix with entries choose (i + j) i has determinant 1; it is the product of the lower unitriangular matrix (choose i j) and its transpose.",
+     "main": true,
+     "module": "LeanPool.LinearAlgebraCombinatoricsAndAnalysis.DetPascalMatrix",
+     "line": 52,
+     "kind": "theorem",
+     "sorry": false
+    },
+    {
+     "declaration": "Matrix.trace_sub_pow_odd_of_isIdempotentElem",
+     "informal": "For idempotent square matrices P and Q over a commutative ring and every k, the trace of (P − Q)^(2k+1) is tr P − tr Q.",
+     "main": false,
+     "module": "LeanPool.LinearAlgebraCombinatoricsAndAnalysis.MatrixTraceSubPowOdd",
+     "line": 80,
+     "kind": "theorem",
+     "sorry": false
+    },
+    {
+     "declaration": "Choose.choose_pow_sub_one_modEq_neg_one_pow",
+     "informal": "For a prime p and k ≤ p^a − 1, choose (p^a − 1) k is congruent to (−1)^k modulo p.",
+     "main": false,
+     "module": "LeanPool.LinearAlgebraCombinatoricsAndAnalysis.ChoosePrimePowSubOne",
+     "line": 31,
+     "kind": "theorem",
+     "sorry": false
+    },
+    {
+     "declaration": "Monoid.exists_forall_mul_eq_self_iff_of_finite",
+     "informal": "A finite monoid has an element p with u p = p for every u if and only if any two of its principal right ideals meet and every monoid morphism from it to a group is trivial.",
+     "main": true,
+     "module": "LeanPool.LinearAlgebraCombinatoricsAndAnalysis.MonoidRightZero",
+     "line": 106,
+     "kind": "theorem",
+     "sorry": false
+    },
+    {
+     "declaration": "Homeomorph.curryOfR1Space",
+     "informal": "For X an R1 space (for instance Hausdorff) and Y locally compact, currying is a homeomorphism C(X × Y, Z) ≃ C(X, C(Y, Z)) for the compact-open topologies, with no hypothesis on Z.",
+     "main": true,
+     "module": "LeanPool.LinearAlgebraCombinatoricsAndAnalysis.CurryR1Space",
+     "line": 73,
+     "kind": "def",
+     "sorry": false
+    },
+    {
+     "declaration": "quasiSober_pi",
+     "informal": "An arbitrary product of quasi-sober topological spaces is quasi-sober.",
+     "main": false,
+     "module": "LeanPool.LinearAlgebraCombinatoricsAndAnalysis.QuasiSoberPiCoreCompact",
+     "line": 63,
+     "kind": "instance",
+     "sorry": false
+    },
+    {
+     "declaration": "MeasureTheory.ae_norm_sq_le_of_ae_inner_le",
+     "informal": "For an s-finite measure m on T and any map f from T to a separable real inner product space, if ⟪f t, f t'⟫ ≤ M for m ⊗ m-almost every (t, t'), then ‖f t‖² ≤ M for m-almost every t.",
+     "main": false,
+     "module": "LeanPool.LinearAlgebraCombinatoricsAndAnalysis.AeNormSqLeOfInner",
+     "line": 68,
+     "kind": "theorem",
+     "sorry": false
+    },
+    {
+     "declaration": "ContDiffOn.isMeagre_image",
+     "informal": "If f is C¹ on an open subset A of a finite-dimensional real normed space E, with values in E, then f sends meagre subsets of A to meagre subsets of E.",
+     "main": true,
+     "module": "LeanPool.LinearAlgebraCombinatoricsAndAnalysis.ContDiffIsMeagreImage",
+     "line": 110,
+     "kind": "theorem",
+     "sorry": false
+    }
+   ]
+  },
+  {
    "slug": "list-edge-coloring-complete",
    "title": "Häggkvist–Janssen list edge colouring of complete graphs",
    "summary": "Proves that arbitrary lists of at least n colours on the edges of a complete graph with n vertices admit a proper list edge colouring. The proof constructs and proves uniqueness of the local rank certificate, identifies a nonzero extended-star polynomial coefficient, and applies Mathlib's combinatorial Nullstellensatz. This is an alternative proof presentation, not a literal translation of the article's argument. The conclusion uses Mathlib's actual edge type and line-graph colouring, with no certificate hypothesis and no restriction on the colour universe. This formalizes a classical theorem, not a new bound or a solution of the general list-edge conjecture.",
@@ -13236,7 +15428,7 @@
      "informal": "For every relative distance strictly between zero and one half, the combined variational upper bound on the asymptotic binary-code rate is valid and is strictly smaller than the MRRW rate.",
      "main": true,
      "module": "LeanPool.MetricCodes.Conclusion",
-     "line": 7342,
+     "line": 7338,
      "kind": "theorem",
      "sorry": false
     },
@@ -13245,7 +15437,7 @@
      "informal": "Every feasible finite interlacing certificate gives an eventual exponential upper bound for spherical codes, while the spherical-code rate is bounded by the closed hierarchy's variational rate.",
      "main": false,
      "module": "LeanPool.MetricCodes.Conclusion",
-     "line": 7299,
+     "line": 7295,
      "kind": "theorem",
      "sorry": false
     },
@@ -13254,7 +15446,7 @@
      "informal": "At every angle parameter strictly between zero and one, successive levels of both the global and localized hierarchies improve strictly, with the localized hierarchy also strictly improving the row and classical bounds.",
      "main": false,
      "module": "LeanPool.MetricCodes.Conclusion",
-     "line": 7308,
+     "line": 7304,
      "kind": "theorem",
      "sorry": false
     },
@@ -13263,7 +15455,7 @@
      "informal": "In all sufficiently large dimensions, the kissing number is at most 2 raised to 0.39661 times the dimension.",
      "main": false,
      "module": "LeanPool.MetricCodes.Conclusion",
-     "line": 7353,
+     "line": 7349,
      "kind": "theorem",
      "sorry": false
     }
@@ -13475,7 +15667,7 @@
      "informal": "In positive dimension, a perfect multilinear Calderón–Zygmund form satisfying the local T(1) testing bound obeys a uniform Hölder bound on all dyadic test tuples, with a constant depending only on dimension, arity, exponents and testing bound.",
      "main": true,
      "module": "LeanPool.MirekThiele.T1Theorem",
-     "line": 4676,
+     "line": 4694,
      "kind": "theorem",
      "sorry": false
     },
@@ -13484,7 +15676,7 @@
      "informal": "In positive dimension, admissible collections of paths and testing functions satisfying the support, mean, norm, interdependence and local testing conditions imply the uniform Hölder bound, for every path length between one and the arity.",
      "main": true,
      "module": "LeanPool.MirekThiele.T1Theorem",
-     "line": 4706,
+     "line": 4724,
      "kind": "theorem",
      "sorry": false
     },
@@ -13493,7 +15685,7 @@
      "informal": "In positive dimension, locally dyadic, bounded pseudo-accretive testing functions satisfying scale-normalized weak boundedness and BMO testing on functions with integrable dyadic square function imply a uniform Hölder bound for the perfect form.",
      "main": true,
      "module": "LeanPool.MirekThiele.T1Theorem",
-     "line": 4712,
+     "line": 4730,
      "kind": "theorem",
      "sorry": false
     },
@@ -13502,7 +15694,7 @@
      "informal": "In positive dimension, dyadic martingale averages and differences satisfy outer Lp bounds for every finite exponent greater than one, with constants depending only on the dimension and exponent.",
      "main": true,
      "module": "LeanPool.MirekThiele.Estimates",
-     "line": 4889,
+     "line": 4939,
      "kind": "theorem",
      "sorry": false
     }
@@ -15008,6 +17200,61 @@
    ]
   },
   {
+   "slug": "order-maintenance",
+   "title": "Verified worst-case constant-step order maintenance",
+   "summary": "Verifies an order-maintenance program against a list specification, with a constant worst-case instruction bound and logarithmic word width in the number of operations. Includes fixed-width and preallocated allocation-free RAM variants, a zeroing-game bound, and reusable machine cost semantics.",
+   "msc": [
+    "68P05",
+    "68Q60"
+   ],
+   "authors": [
+    "Denis Firsov"
+   ],
+   "source": {
+    "title": "Order Maintenance in Worst-Case Constant Time, Verified",
+    "authors": [
+     "Denis Firsov"
+    ],
+    "arxiv": "2610.38616",
+    "url": "https://github.com/dfirsov/order_maintenance/tree/312b7b7d0686550ce7106fff1f6a47acb3e72866",
+    "github_repo": "dfirsov/order_maintenance",
+    "commit": "312b7b7d0686550ce7106fff1f6a47acb3e72866"
+   },
+   "license": "Apache-2.0",
+   "notice": null,
+   "provenance": "AI",
+   "directory": "OrderMaintenance",
+   "main_results": [
+    {
+     "declaration": "OrderMaintenance.Impl.theoremAB_word",
+     "informal": "For every parameter 4 ≤ K_B < 2^512, every valid finite operation trace and sufficiently wide fixed words, the RAM program returns the list specification answers and each operation takes at most opB K_B steps, independent of the trace length and number of live elements. Word width grows logarithmically with the number of operations.",
+     "main": true,
+     "module": "LeanPool.OrderMaintenance.Impl.PeakWord",
+     "line": 354,
+     "kind": "theorem",
+     "sorry": false
+    },
+    {
+     "declaration": "OrderMaintenance.Impl.theoremAB_flat_word",
+     "informal": "The translated program has no allocation instructions and satisfies the same specification with at most five times the operation-step bound, on sufficiently large preallocated zero-filled memory and sufficiently wide fixed words.",
+     "main": true,
+     "module": "LeanPool.OrderMaintenance.Impl.FlatRun",
+     "line": 286,
+     "kind": "theorem",
+     "sorry": false
+    },
+    {
+     "declaration": "OrderMaintenance.Zeroing.zeroing",
+     "informal": "In the zeroing game starting from zero, resetting a maximal coordinate before adding total nonnegative mass at most R bounds every coordinate by R times one plus the (n-1)st harmonic number.",
+     "main": true,
+     "module": "LeanPool.OrderMaintenance.Proof.Cost.Zeroing",
+     "line": 194,
+     "kind": "theorem",
+     "sorry": false
+    }
+   ]
+  },
+  {
    "slug": "order-p-q",
    "title": "Classification of groups of order p * q",
    "summary": "Classification of noncyclic finite groups of order p*q, including the prime-square direct-product case and the p<q semidirect-product normal form.",
@@ -15362,6 +17609,80 @@
    ]
   },
   {
+   "slug": "parikh",
+   "title": "Parikh's theorem and a certified semilinear grammar compiler",
+   "summary": "Proves that the letter-count image of every context-free language over a finite alphabet is semilinear, using Mathlib's language, grammar and semilinear-set definitions. Proves the converse realization by a regular language and computes exact finite semilinear representations for encoded finite grammars, with component, period, coordinate and bit-budget bounds. Preserves production-labelled derivation trees, bounded decomposition, context activation and word-block automata. The language theorem does not require a finite ambient nonterminal type.",
+   "msc": [
+    "68Q45",
+    "68Q42",
+    "03D05"
+   ],
+   "authors": [
+    "Umang Mathur"
+   ],
+   "source": {
+    "title": "On Context-Free Languages",
+    "authors": [
+     "Rohit J. Parikh"
+    ],
+    "doi": "10.1145/321356.321364",
+    "url": "https://github.com/focs-lab/parikh-theorem/tree/9c1cde93f29bbaa91542e401e074ec3cd7646880",
+    "github_repo": "focs-lab/parikh-theorem",
+    "commit": "9c1cde93f29bbaa91542e401e074ec3cd7646880"
+   },
+   "license": "Apache-2.0",
+   "notice": null,
+   "provenance": "AI",
+   "directory": "Parikh",
+   "main_results": [
+    {
+     "declaration": "Parikh.parikhImage_isSemilinear_of_isContextFree",
+     "informal": "For every context-free language over a finite alphabet, its set of letter-count vectors is semilinear in Mathlib's sense.",
+     "main": true,
+     "module": "LeanPool.Parikh.Api",
+     "line": 70,
+     "kind": "theorem",
+     "sorry": false
+    },
+    {
+     "declaration": "Parikh.exists_regularLanguage_with_parikhImage",
+     "informal": "Every semilinear set of natural-number vectors indexed by a finite alphabet is exactly the letter-count image of some regular language.",
+     "main": false,
+     "module": "LeanPool.Parikh.Api",
+     "line": 90,
+     "kind": "theorem",
+     "sorry": false
+    },
+    {
+     "declaration": "Parikh.compileGrammar_correct",
+     "informal": "For every encoded finite grammar, the compiled finite representation denotes exactly the letter-count image of its decoded Mathlib grammar language.",
+     "main": false,
+     "module": "LeanPool.Parikh.Api",
+     "line": 104,
+     "kind": "theorem",
+     "sorry": false
+    },
+    {
+     "declaration": "Parikh.compileGrammar_size_bounds",
+     "informal": "The compiled representation satisfies the explicit component-count, period-count, base-norm and period-norm bounds determined by the encoded grammar's size.",
+     "main": false,
+     "module": "LeanPool.Parikh.Api",
+     "line": 108,
+     "kind": "theorem",
+     "sorry": false
+    },
+    {
+     "declaration": "Parikh.compileGrammar_bit_bound",
+     "informal": "The compiled representation's numerical entries satisfy the declared total bit budget, and every base and period coordinate fits its coordinate bit width.",
+     "main": false,
+     "module": "LeanPool.Parikh.Api",
+     "line": 112,
+     "kind": "theorem",
+     "sorry": false
+    }
+   ]
+  },
+  {
    "slug": "partial-combinatory-algebras",
    "title": "Partial Combinatory Algebras",
    "summary": "Formalises partial combinatory algebras with the K/S combinators, programming combinators, the free combinatory algebra, and the graph model.",
@@ -15417,7 +17738,7 @@
      "informal": "Constructs the graph-model combinatory algebra on the powerset of any Listing-typed carrier.",
      "main": false,
      "module": "LeanPool.PartialCombinatoryAlgebras.GraphModel",
-     "line": 403,
+     "line": 402,
      "kind": "instance",
      "sorry": false
     }
@@ -15914,7 +18235,7 @@
      "informal": "Proves the local Fock-space stable phase retrieval coercivity estimate for centered polynomials.",
      "main": false,
      "module": "LeanPool.PhaseRetrieval.Constant.Internal.MainTheorem",
-     "line": 784,
+     "line": 736,
      "kind": "theorem",
      "sorry": false
     },
@@ -16709,7 +19030,7 @@
      "main": true,
      "source_ref": "N. Alon, M. B. Nathanson, I. Z. Ruzsa, The polynomial method and restricted sums of congruence classes, J. Number Theory 56 (1996), 404-417, doi:10.1006/jnth.1996.0029.",
      "module": "LeanPool.PolynomialMethodRestrictedSums.ANRPolynomialMethod",
-     "line": 1073,
+     "line": 1075,
      "kind": "theorem",
      "sorry": false
     },
@@ -16739,7 +19060,7 @@
      "main": false,
      "source_ref": "N. Alon, M. B. Nathanson, I. Z. Ruzsa, The polynomial method and restricted sums of congruence classes, J. Number Theory 56 (1996), 404-417, doi:10.1006/jnth.1996.0029.",
      "module": "LeanPool.PolynomialMethodRestrictedSums.RestrictedSumDistinctSizes",
-     "line": 293,
+     "line": 300,
      "kind": "theorem",
      "sorry": false
     },
@@ -16749,7 +19070,85 @@
      "main": false,
      "source_ref": "N. Alon, M. B. Nathanson, I. Z. Ruzsa, The polynomial method and restricted sums of congruence classes, J. Number Theory 56 (1996), 404-417, doi:10.1006/jnth.1996.0029.",
      "module": "LeanPool.PolynomialMethodRestrictedSums.VandermondeCoefficientFormula",
-     "line": 553,
+     "line": 559,
+     "kind": "theorem",
+     "sorry": false
+    }
+   ]
+  },
+  {
+   "slug": "probabilistic-method",
+   "title": "The finite probabilistic method for graphs",
+   "summary": "Finite, counting-based tools of the probabilistic method. Proves a quantitative asymmetric Lovász Local Lemma under lopsided dependence for arbitrary nonnegative weights of total one on a finite sample set, its p-biased-cube and symmetric corollaries for events determined by coordinate sets, dependent random choice in degree-moment and Fox–Sudakov average-degree forms, and first-moment and deletion bounds for cliques and independent sets of G(n, p). For a finite coordinate set in a countable type, and for a finite vertex type, it identifies the counting probability with Mathlib's setBer(U, p) and binomial random graph G(V, p).",
+   "msc": [
+    "05D40",
+    "05C80",
+    "60C05"
+   ],
+   "authors": [
+    "Brian Sanders"
+   ],
+   "source": {
+    "title": "The finite probabilistic method for graphs",
+    "authors": [
+     "Brian Sanders"
+    ],
+    "url": "https://github.com/Egly443/lean-probabilistic-method",
+    "github_repo": "Egly443/lean-probabilistic-method",
+    "commit": "841e3042ef057564ae3cbd2322e0f369bbf64d34"
+   },
+   "license": "Apache-2.0",
+   "notice": null,
+   "provenance": "AI",
+   "directory": "ProbabilisticMethod",
+   "main_results": [
+    {
+     "declaration": "Finset.prod_one_sub_le_weightProb_forall_not",
+     "informal": "Let w be nonnegative weights of total one on a finite set Ω, and let events E i, i ∈ I, satisfy the lopsided hypothesis that P(E i and no E j, j ∈ S) ≤ P(E i) P(no E j, j ∈ S) for every S ⊆ I avoiding i and Γ i. If 0 ≤ x ≤ 1 and P(E i) ≤ x i ∏ j ∈ Γ i, (1 - x j) for i ∈ I, then the probability that no E i occurs is at least ∏ i ∈ I, (1 - x i).",
+     "main": true,
+     "source_ref": "Upstream LocalLemma.lean at 841e3042ef057564ae3cbd2322e0f369bbf64d34. A finite-weight, lopsided variant of the quantitative asymmetric Local Lemma (Alon–Spencer, The probabilistic method, Lemma 5.1.1, which states the product lower bound); the lopsided dependence condition is that of Erdős–Spencer (1991), who state a symmetric positive-probability form.",
+     "module": "LeanPool.ProbabilisticMethod.LocalLemma",
+     "line": 262,
+     "kind": "theorem",
+     "sorry": false
+    },
+    {
+     "declaration": "Finset.exists_forall_not_of_symmetric_lll",
+     "informal": "On the p-biased cube of a finite subset U of a type α, with 0 ≤ p ≤ 1, let each event E i be determined by coordinates T i ⊆ U, meaning E i A ↔ E i B whenever A ∩ T i = B ∩ T i for all finite subsets A, B of α (not only subsets of U). If each P(E i) ≤ q, each T i meets T j for at most d other indices j ∈ I, and e q (d + 1) ≤ 1, some subset of U avoids every E i.",
+     "main": true,
+     "source_ref": "Upstream LocalLemma.lean at 841e3042ef057564ae3cbd2322e0f369bbf64d34; symmetric Local Lemma with the e p (d + 1) ≤ 1 criterion as in Alon–Spencer, The probabilistic method, Corollary 5.1.2, for events on independent biased coordinates.",
+     "module": "LeanPool.ProbabilisticMethod.LocalLemma",
+     "line": 342,
+     "kind": "theorem",
+     "sorry": false
+    },
+    {
+     "declaration": "SimpleGraph.exists_dependentRandomChoice",
+     "informal": "For a graph on a finite nonempty vertex set of size n and r ≥ 1, if a n ^ t + C(n, r) m ^ t ≤ ∑ v, deg v ^ t, there is a vertex set W with at least a elements in which every r-element subset has at least m common neighbours.",
+     "main": true,
+     "source_ref": "Upstream DependentRandomChoice.lean at 841e3042ef057564ae3cbd2322e0f369bbf64d34. A degree-moment refinement: the hypothesis keeps the moment ∑ v, deg v ^ t computed in the proof of Fox–Sudakov, Dependent random choice (2011), Lemma 2.1, before Jensen's inequality.",
+     "module": "LeanPool.ProbabilisticMethod.DependentRandomChoice",
+     "line": 141,
+     "kind": "theorem",
+     "sorry": false
+    },
+    {
+     "declaration": "SimpleGraph.exists_dependentRandomChoice_of_card_edgeFinset",
+     "informal": "For a graph on a finite nonempty vertex set of size n with e edges, average degree d = 2e / n and r ≥ 1, if a + C(n, r) (m / n) ^ t ≤ n (d / n) ^ t, there is a vertex set W with at least a elements in which every r-element subset has at least m common neighbours.",
+     "main": true,
+     "source_ref": "Upstream DependentRandomChoice.lean at 841e3042ef057564ae3cbd2322e0f369bbf64d34; Fox–Sudakov, Dependent random choice (2011), Lemma 2.1, whose condition n ^ (1 - t) d ^ t - C(n, r) (m / n) ^ t ≥ a is the same inequality.",
+     "module": "LeanPool.ProbabilisticMethod.DependentRandomChoice",
+     "line": 178,
+     "kind": "theorem",
+     "sorry": false
+    },
+    {
+     "declaration": "SimpleGraph.exists_large_cliqueFree_of_deletion",
+     "informal": "For 0 ≤ p ≤ 1 and k, l ≥ 1, some graph G on n vertices has a vertex set t of size at least n - C(n, k) p ^ C(k, 2) - C(n, l) (1 - p) ^ C(l, 2) such that no k-clique of G and no l-clique of its complement lies inside t.",
+     "main": true,
+     "source_ref": "Upstream RandomGraph.lean at 841e3042ef057564ae3cbd2322e0f369bbf64d34; deletion method for off-diagonal Ramsey numbers as in Alon–Spencer, The probabilistic method, Section 3.1.",
+     "module": "LeanPool.ProbabilisticMethod.RandomGraph",
+     "line": 185,
      "kind": "theorem",
      "sorry": false
     }
@@ -17618,6 +20017,134 @@
    ]
   },
   {
+   "slug": "ramsey-reservoir",
+   "title": "Reservoir and book calculus for greedy Ramsey arguments",
+   "summary": "Reservoirs track a clique and its pool of common neighbours. The winning-pivot theorem preserves a Pascal threshold for partially built two-colour clique spines. The development also proves greedy clique bounds from local non-adjacency budgets, books from triangle and edge density, book forcing, and anchored gluing for homogeneous block quotients. Starting from empty spines recovers Pascal upper bounds, including the Erdős–Szekeres binomial bound. A five-cycle gives the matching lower bound for R(3, 3) = 6. The Ramsey interface uses the two-colour Ramsey property in FiniteRamsey.",
+   "msc": [
+    "05C55",
+    "05C35",
+    "05D10"
+   ],
+   "authors": [
+    "Brian Sanders"
+   ],
+   "source": {
+    "title": "Reservoir and book calculus for greedy Ramsey arguments",
+    "authors": [
+     "Brian Sanders"
+    ],
+    "url": "https://github.com/Egly443/lean-ramsey-reservoir",
+    "github_repo": "Egly443/lean-ramsey-reservoir",
+    "commit": "7024820542e42feb8177cbf2c624d64106813332"
+   },
+   "license": "Apache-2.0",
+   "notice": null,
+   "provenance": "AI",
+   "directory": "RamseyReservoir",
+   "main_results": [
+    {
+     "declaration": "SimpleGraph.Bireservoir.IsWinning.exists_pivot",
+     "informal": "Let R satisfy Pascal's inequality and be positive at positive arguments. If both clique spines are short of their targets and the pool has at least R of the two deficits vertices, a pool vertex can be added to one spine while retaining at least R of the updated deficits common neighbours in that colour.",
+     "main": true,
+     "source_ref": "Upstream RamseyReservoir/Bireservoir.lean at 7024820542e42feb8177cbf2c624d64106813332.",
+     "module": "LeanPool.RamseyReservoir.Bireservoir",
+     "line": 248,
+     "kind": "theorem",
+     "sorry": false
+    },
+    {
+     "declaration": "SimpleGraph.ramseyBound_of_pascal",
+     "informal": "If R a (b + 1) + R (a + 1) b ≤ R (a + 1) (b + 1) and R (a + 1) (b + 1) > 0 for all a and b, then for all r and s every graph on R r s vertices has an r-clique or an independent set of size s.",
+     "main": false,
+     "source_ref": "Upstream RamseyReservoir/Bireservoir.lean at 7024820542e42feb8177cbf2c624d64106813332; proposed in #721.",
+     "module": "LeanPool.RamseyReservoir.Bireservoir",
+     "line": 292,
+     "kind": "theorem",
+     "sorry": false
+    },
+    {
+     "declaration": "SimpleGraph.ramseyBound_iff_ramseyNumber_le",
+     "informal": "The predicate RamseyBound n r s holds exactly when the FiniteRamsey Ramsey number ramseyNumber ![r, s] is at most n.",
+     "main": false,
+     "source_ref": "Lean Pool bridge to LeanPool.FiniteRamsey, added in this import.",
+     "module": "LeanPool.RamseyReservoir.RamseyBound",
+     "line": 85,
+     "kind": "theorem",
+     "sorry": false
+    },
+    {
+     "declaration": "SimpleGraph.ramseyNumber_le_of_isPascal",
+     "informal": "Every threshold R satisfying Pascal's inequality and positive whenever both inputs are positive bounds the FiniteRamsey Ramsey number ramseyNumber ![r, s] above by R r s.",
+     "main": false,
+     "source_ref": "Lean Pool corollary of the upstream Pascal-potential theorem, added in this import.",
+     "module": "LeanPool.RamseyReservoir.Bireservoir",
+     "line": 299,
+     "kind": "theorem",
+     "sorry": false
+    },
+    {
+     "declaration": "SimpleGraph.ramseyNumber_three_three",
+     "informal": "The FiniteRamsey Ramsey number ramseyNumber ![3, 3] equals 6. FiniteRamsey already proves the upper bound; the lower bound uses the five-cycle.",
+     "main": true,
+     "source_ref": "Upstream ramseyBound_six_three_three and not_ramseyBound_five_three_three at 7024820542e42feb8177cbf2c624d64106813332.",
+     "module": "LeanPool.RamseyReservoir.Bireservoir",
+     "line": 348,
+     "kind": "theorem",
+     "sorry": false
+    },
+    {
+     "declaration": "SimpleGraph.Reservoir.exists_isNClique_of_card_nonadj_le",
+     "informal": "In a reservoir (a clique spine and a pool of common neighbours), if every pool vertex is non-adjacent to at most d pool vertices, counting itself, and j d is less than the pool size, then G has a clique of size (spine size + j + 1).",
+     "main": true,
+     "source_ref": "Upstream RamseyReservoir/Reservoir.lean at 7024820542e42feb8177cbf2c624d64106813332.",
+     "module": "LeanPool.RamseyReservoir.Reservoir",
+     "line": 230,
+     "kind": "theorem",
+     "sorry": false
+    },
+    {
+     "declaration": "SimpleGraph.exists_isNClique_of_minDegree",
+     "informal": "A finite graph with minimum degree δ on n vertices and j (n - δ) < n contains a (j + 1)-clique. This empty-spine case also follows from Mathlib's Turán bound.",
+     "main": false,
+     "source_ref": "Upstream RamseyReservoir/Reservoir.lean at 7024820542e42feb8177cbf2c624d64106813332.",
+     "module": "LeanPool.RamseyReservoir.Reservoir",
+     "line": 258,
+     "kind": "theorem",
+     "sorry": false
+    },
+    {
+     "declaration": "SimpleGraph.exists_adj_four_mul_card_edgeFinset_le",
+     "informal": "A finite graph with e > 0 edges on n vertices has an edge uv whose endpoints have c common neighbours with 4e ≤ n (c + n).",
+     "main": false,
+     "source_ref": "Upstream RamseyReservoir/Book.lean at 7024820542e42feb8177cbf2c624d64106813332.",
+     "module": "LeanPool.RamseyReservoir.Book",
+     "line": 281,
+     "kind": "theorem",
+     "sorry": false
+    },
+    {
+     "declaration": "SimpleGraph.ContainsBook.not_cliqueFree_or",
+     "informal": "If G has an m-clique with at least n common neighbours and every graph on n vertices has an (r - m)-clique or an independent s-set (truncated subtraction), then G has an r-clique or an independent s-set.",
+     "main": true,
+     "source_ref": "Upstream RamseyReservoir/Book.lean at 7024820542e42feb8177cbf2c624d64106813332.",
+     "module": "LeanPool.RamseyReservoir.Book",
+     "line": 109,
+     "kind": "theorem",
+     "sorry": false
+    },
+    {
+     "declaration": "SimpleGraph.HomogeneousBlocks.isNClique_anchor",
+     "informal": "For disjoint nonempty blocks with all-or-nothing adjacency between blocks, an n-clique inside one block of an m-clique of the quotient graph, together with representatives of the other m - 1 blocks, is an (n + m - 1)-clique.",
+     "main": true,
+     "source_ref": "Upstream RamseyReservoir/HomogeneousBlocks.lean at 7024820542e42feb8177cbf2c624d64106813332.",
+     "module": "LeanPool.RamseyReservoir.HomogeneousBlocks",
+     "line": 138,
+     "kind": "theorem",
+     "sorry": false
+    }
+   ]
+  },
+  {
    "slug": "rare-subtree-patterns",
    "title": "Rare subtree patterns in conditioned Bienaymé trees",
    "summary": "Proves marked Poisson approximation, root declumping, maximal complete non-fringe r-ary height and maximum leaf-height for critical Bienaymé trees conditioned on their size, under the stated stable-domain, marking, cutoff and non-clustering hypotheses. Periodic offspring laws are included through admissible-size limits. Single-point phase refinements are formulated along phase-separated admissible subsequences. The dependency closure preserves tree coding, Chen–Stein bounds, regular variation, stable densities and lattice local limit estimates, with concrete offspring examples and direct consequences.",
@@ -17674,6 +20201,67 @@
      "main": true,
      "module": "LeanPool.RareSubtreePatterns.MainTheorems",
      "line": 56,
+     "kind": "theorem",
+     "sorry": false
+    }
+   ]
+  },
+  {
+   "slug": "ratpoints",
+   "title": "Verified bounded-height rational-point search on hyperelliptic curves",
+   "summary": "Certifies a pure Lean brute-force reference and modular sieve for normalized integral triples (x, y, z) satisfying a hyperelliptic binary-form equation. Height is max(|x|, z), where x and z are the coprime numerator and denominator. Both searches include eligible points at infinity (z = 0). For finite points the fast search enforces the lower denominator bound and applies the upper bound only when it is positive. The fast search enumerates exactly these points without duplicates, using Tau Ceti's Sturm root count for pruning.\n",
+   "msc": [
+    "11G30",
+    "11Y50",
+    "68V20"
+   ],
+   "authors": [
+    "Michael Stoll"
+   ],
+   "source": {
+    "title": "RatpointsLean, verified bounded-height search",
+    "url": "https://github.com/MichaelStollBayreuth/RatpointsLean/tree/aa11615d33f7b09c063447c1bffd00849db9acba",
+    "github_repo": "MichaelStollBayreuth/RatpointsLean",
+    "commit": "aa11615d33f7b09c063447c1bffd00849db9acba"
+   },
+   "license": "Apache-2.0",
+   "notice": null,
+   "provenance": "AI",
+   "directory": "Ratpoints",
+   "main_results": [
+    {
+     "declaration": "Ratpoints.mem_bruteForce_iff",
+     "informal": "Membership in the brute-force output is equivalent to being a normalized integral solution (x, y, z) with max(|x|, z) at most the height bound.",
+     "main": true,
+     "module": "LeanPool.Ratpoints.Proof.BruteForce",
+     "line": 181,
+     "kind": "theorem",
+     "sorry": false
+    },
+    {
+     "declaration": "Ratpoints.Fast.isPoint_and_inRegion_of_mem_fastPoints",
+     "informal": "Every fast-search output is a normalized solution within the height bound. Its denominator is zero or meets the lower bound and any positive upper denominator bound.",
+     "main": true,
+     "module": "LeanPool.Ratpoints.Proof.FastSieve",
+     "line": 1279,
+     "kind": "theorem",
+     "sorry": false
+    },
+    {
+     "declaration": "Ratpoints.Fast.mem_fastPoints_iff",
+     "informal": "For any tuning parameters, the fast search finds exactly the normalized solutions with max(|x|, z) within the height bound and with z zero or meeting the lower bound and any positive upper bound.",
+     "main": true,
+     "module": "LeanPool.Ratpoints.Proof.FastSieve",
+     "line": 1315,
+     "kind": "theorem",
+     "sorry": false
+    },
+    {
+     "declaration": "Ratpoints.Fast.nodup_fastPoints",
+     "informal": "The fast search never returns a point twice.",
+     "main": true,
+     "module": "LeanPool.Ratpoints.Proof.FastSieve",
+     "line": 1323,
      "kind": "theorem",
      "sorry": false
     }
@@ -18094,6 +20682,62 @@
      "main": false,
      "module": "LeanPool.RootSystem.BCn",
      "line": 265,
+     "kind": "theorem",
+     "sorry": false
+    }
+   ]
+  },
+  {
+   "slug": "roy-strong-six",
+   "title": "Roy's strong six exponentials theorem",
+   "summary": "Proves Roy's strong six exponentials theorem, Waldschmidt's transcendence theorem, and the additive-times-torus form of Philippon's multiplicity estimate over algebraically closed fields of characteristic zero.",
+   "msc": [
+    "11J81",
+    "11J86",
+    "14L10",
+    "13C14"
+   ],
+   "authors": [
+    "Shawn Krisman",
+    "Nailin Guan",
+    "Yongle Hu"
+   ],
+   "source": {
+    "title": "Matrices whose coefficients are linear forms in logarithms",
+    "doi": "10.1016/0022-314X(92)90081-Y",
+    "url": "https://github.com/telaviv/strong-six-exponentials/tree/b7f16499df6fa26840c72c1af0121f2ac4a159b5",
+    "github_repo": "telaviv/strong-six-exponentials",
+    "commit": "b7f16499df6fa26840c72c1af0121f2ac4a159b5"
+   },
+   "license": "Apache-2.0",
+   "notice": null,
+   "provenance": "AI",
+   "directory": "RoyStrongSix",
+   "main_results": [
+    {
+     "declaration": "LeanPool.StrongSix.M2.strongSixExponentials",
+     "informal": "If two complex numbers and three complex numbers are separately linearly independent over the algebraic numbers, at least one of their six products lies outside the algebraic-number span of one and all logarithms of nonzero algebraic numbers.",
+     "main": true,
+     "module": "LeanPool.RoyStrongSix.M2.Final",
+     "line": 73,
+     "kind": "theorem",
+     "sorry": false
+    },
+    {
+     "declaration": "LeanPool.StrongSix.M2.waldschmidtTheorem1",
+     "informal": "For a proper complex linear subspace containing an algebraic subspace and a finite-dimensional rational space of algebraic coordinates and logarithms, there is a surjective algebraically rational quotient satisfying Waldschmidt's dimension-ratio inequality.",
+     "main": true,
+     "module": "LeanPool.RoyStrongSix.M2.Final",
+     "line": 69,
+     "kind": "theorem",
+     "sorry": false
+    },
+    {
+     "declaration": "LeanPool.StrongSix.M2.multEst_of_isAlgClosed",
+     "informal": "Over every algebraically closed field of characteristic zero, sufficiently high vanishing along a linear subspace on a finite sumset yields a proper additive-times-torus subgroup satisfying the multiplicity, coset-count and bidegree estimate, with constants depending only on the ambient dimensions.",
+     "main": true,
+     "module": "LeanPool.RoyStrongSix.M2.Final",
+     "line": 45,
      "kind": "theorem",
      "sorry": false
     }
@@ -19050,7 +21694,7 @@
      "informal": "For every nonarchimedean local field K with residue-field cardinality q and every positive integer n, the sum of q^(-c(L)) over the totally ramified degree-n subextensions L of a separable closure of K is n, where c(L) is the discriminant exponent minus n plus one.",
      "main": true,
      "module": "LeanPool.MassFormula.First",
-     "line": 2794,
+     "line": 2759,
      "kind": "theorem",
      "sorry": false
     },
@@ -19068,7 +21712,7 @@
      "informal": "For positive n, the set of totally ramified separable degree-n subextensions is infinite exactly when K and its residue field have the same characteristic p and p divides n.",
      "main": false,
      "module": "LeanPool.MassFormula.Finiteness",
-     "line": 345,
+     "line": 344,
      "kind": "theorem",
      "sorry": false
     },
@@ -19301,6 +21945,40 @@
      "main": true,
      "module": "LeanPool.ShelahHalesJewett.Ackermann",
      "line": 98,
+     "kind": "theorem",
+     "sorry": false
+    }
+   ]
+  },
+  {
+   "slug": "siegel",
+   "title": "Siegel's lower bound for real Dirichlet L-functions",
+   "summary": "Proves the ineffective uniform lower bound for the value at one of every non-principal real Dirichlet character, including imprimitive characters. Preserves bounded-character-sum and Mellin integral infrastructure, positivity of the auxiliary Dirichlet coefficients, and Goldfeld's exceptional-zero argument.",
+   "msc": [
+    "11M20",
+    "11M06"
+   ],
+   "authors": [
+    "Juan Pablo Traverso Gianini"
+   ],
+   "source": {
+    "title": "A Simple Proof of Siegel's Theorem",
+    "doi": "10.1073/pnas.71.4.1055",
+    "url": "https://github.com/jtraverso/siegel-theorem/tree/dbe9353374a11317bdd2d436e264536258c5762f",
+    "github_repo": "jtraverso/siegel-theorem",
+    "commit": "dbe9353374a11317bdd2d436e264536258c5762f"
+   },
+   "license": "Apache-2.0",
+   "notice": null,
+   "provenance": "AI",
+   "directory": "Siegel",
+   "main_results": [
+    {
+     "declaration": "SiegelThmLib.siegel",
+     "informal": "For every positive epsilon there is a positive constant depending only on epsilon such that the absolute value of L(1, chi) is at least that constant times the modulus to the power minus epsilon, for every non-principal character whose square is principal.",
+     "main": true,
+     "module": "LeanPool.Siegel.Main",
+     "line": 268,
      "kind": "theorem",
      "sorry": false
     }
@@ -19702,6 +22380,57 @@
    ]
   },
   {
+   "slug": "stable-manifold",
+   "title": "The stable manifold theorem for hyperbolic fixed points",
+   "summary": "Uses a Lyapunov–Perron operator on bounded sequences to prove the smooth local stable and unstable graph theorem for finite-dimensional real dynamics. The development identifies the linear stable and unstable subspaces by factoring the characteristic polynomial, proves exponential estimates in the two directions, and proves regularity of the Lyapunov–Perron graph. The stable graph construction also applies to noninvertible maps when the stable and unstable subspaces are complementary.",
+   "msc": [
+    "37C25",
+    "37D10",
+    "47H10"
+   ],
+   "authors": [
+    "The-Anh Vu-Le"
+   ],
+   "source": {
+    "url": "https://github.com/vltanh/lean4-stable-manifold/tree/4909ed2eb6bdc504f86ccb455e544315f11d3860",
+    "github_repo": "vltanh/lean4-stable-manifold",
+    "commit": "4909ed2eb6bdc504f86ccb455e544315f11d3860"
+   },
+   "license": "Apache-2.0",
+   "notice": null,
+   "provenance": "AI",
+   "directory": "StableManifold",
+   "main_results": [
+    {
+     "declaration": "Function.exists_nhds_localStableSet_localUnstableSet_eq_graph",
+     "informal": "For a map of class C^n near a hyperbolic fixed point in a finite-dimensional real normed space, with n at least one and invertible derivative, the local stable and unstable sets are graphs over their respective linear subspaces in every sufficiently small neighborhood. The graph maps are C^n and have zero derivative at the origin.",
+     "main": true,
+     "module": "LeanPool.StableManifold.Theorem",
+     "line": 182,
+     "kind": "theorem",
+     "sorry": false
+    },
+    {
+     "declaration": "Function.exists_nhds_localStableSet_localUnstableSet_eq_setOf",
+     "informal": "Under the same smoothness, fixed-point, invertibility and hyperbolicity hypotheses, a forward or backward orbit that stays in a sufficiently small neighborhood of the fixed point converges to it.",
+     "main": true,
+     "module": "LeanPool.StableManifold.Theorem",
+     "line": 257,
+     "kind": "theorem",
+     "sorry": false
+    },
+    {
+     "declaration": "ContinuousLinearMap.isCompl_stableSubspace_unstableSubspace",
+     "informal": "The forward-decaying and backward-decaying subspaces of a hyperbolic real linear map in finite dimension are complementary.",
+     "main": true,
+     "module": "LeanPool.StableManifold.Linear.Splitting",
+     "line": 382,
+     "kind": "theorem",
+     "sorry": false
+    }
+   ]
+  },
+  {
    "slug": "stafford38-formal",
    "title": "Stafford 3.8",
    "summary": "Lean formalization of Stafford's Conjecture 3.8 for every characteristic-zero field and every Weyl-algebra rank, proving that each nonzero d admits F, R, and S with 1 = d*R + F*d*S. The development also proves an exact Bernstein-degree fixed-source strengthening and derived localization, adjoint, and evolutionary results.",
@@ -19980,6 +22709,75 @@
      "source_ref": "Direct finite maximization argument in SplitDecomposition.lean.",
      "module": "LeanPool.StructuralGraphClasses.SplitDecomposition",
      "line": 72,
+     "kind": "theorem",
+     "sorry": false
+    }
+   ]
+  },
+  {
+   "slug": "subtyping-sigma1",
+   "title": "Decidability of the Sigma-one theory of non-structural subtyping",
+   "summary": "Computable decision procedures for Boolean combinations of existential and universal non-structural subtype sentences, with one constructor of arbitrary finite arity and variance, over finite, regular, and arbitrary trees. Includes disjunctive entailment, finite-countermodel transfer under finite satisfiability, automata, word compression, and an elementary total-length bound for holes of finite-state structural readers over finite alphabets.",
+   "msc": [
+    "03B25",
+    "68N18",
+    "68Q45"
+   ],
+   "authors": [
+    "Yaoyu Zhao"
+   ],
+   "source": {
+    "title": "Decidability of the Sigma-one theory of non-structural subtyping",
+    "url": "https://github.com/noti0na1/deci-sigma1/tree/4d1702fd657be4d7bb3203e2e7302856353124c7",
+    "github_repo": "noti0na1/deci-sigma1"
+   },
+   "license": "Apache-2.0",
+   "notice": null,
+   "provenance": "mix",
+   "directory": "DeciSigma1",
+   "main_results": [
+    {
+     "declaration": "DeciSigma1.decideBooleanSentence",
+     "informal": "Decides Boolean combinations of existential and universal subtype sentences for every finite constructor arity and variance over finite, regular, or arbitrary trees with bottom and top.",
+     "main": true,
+     "module": "LeanPool.DeciSigma1.Main",
+     "line": 168,
+     "kind": "def",
+     "sorry": false
+    },
+    {
+     "declaration": "DeciSigma1.booleanSentence_regular_iff",
+     "informal": "Regular and arbitrary trees have the same Boolean existential theory.",
+     "main": true,
+     "module": "LeanPool.DeciSigma1.Main",
+     "line": 180,
+     "kind": "theorem",
+     "sorry": false
+    },
+    {
+     "declaration": "DeciSigma1.decideBooleanSentenceTopFree",
+     "informal": "Decides the corresponding theory without top for a covariant constructor over finite, regular, or arbitrary trees.",
+     "main": true,
+     "module": "LeanPool.DeciSigma1.Main",
+     "line": 186,
+     "kind": "def",
+     "sorry": false
+    },
+    {
+     "declaration": "DeciSigma1.exists_small_hole",
+     "informal": "Every finite-state structural reader over a finite alphabet, with decidable equality, that has a hole has one whose total word length satisfies a computable bound.",
+     "main": true,
+     "module": "LeanPool.DeciSigma1.Main",
+     "line": 400,
+     "kind": "theorem",
+     "sorry": false
+    },
+    {
+     "declaration": "DeciSigma1.smallHoleBound_le",
+     "informal": "The hole-length bound is bounded by four iterated exponentials.",
+     "main": true,
+     "module": "LeanPool.DeciSigma1.Main",
+     "line": 344,
      "kind": "theorem",
      "sorry": false
     }
@@ -20460,6 +23258,57 @@
    ]
   },
   {
+   "slug": "triangular-hilbert",
+   "title": "The symmetric triangular Hilbert form",
+   "summary": "Proves the symmetric L³ estimate and principal-value existence for the triangular Hilbert form on complex Schwartz inputs, and its unique bounded trilinear extension to L³. The proof develops matrix trace estimates, Gaussian scale kernels, heat-flow identities and the passage from finite lattice sums to the Euclidean estimate. As an application it reduces continuous periodic Fourier convergence to the triangular estimate through localized modulated kernel estimates. Lean Pool's CarlesonLT project proves the convergence theorem for periodic functions that are square-integrable on a period.",
+   "msc": [
+    "42B20",
+    "42A20"
+   ],
+   "authors": [
+    "Joris Roos"
+   ],
+   "source": {
+    "url": "https://github.com/roos-j/lean-triangular/tree/9edcdf82f32466c0275ba6d67f5b37876c23ed0c",
+    "manuscript_url": "https://github.com/openai/math/blob/adc7f1241b42e322a6451854ab7e4b4c146bf78a/preprints/The-maximal-triangular-Hilbert-transform-at-the-symmetric-point-September-24-2026/paper.pdf",
+    "github_repo": "roos-j/lean-triangular",
+    "commit": "9edcdf82f32466c0275ba6d67f5b37876c23ed0c"
+   },
+   "license": "Apache-2.0",
+   "notice": null,
+   "provenance": "AI",
+   "directory": "Triangular",
+   "main_results": [
+    {
+     "declaration": "Triangular.triangular_ht_bound",
+     "informal": "The norm of the triangular Hilbert trilinear form is at most an absolute constant times the product of the three L³ norms for complex Schwartz inputs.",
+     "main": true,
+     "module": "LeanPool.Triangular.Theorems",
+     "line": 28,
+     "kind": "theorem",
+     "sorry": false
+    },
+    {
+     "declaration": "Triangular.Auto.tendsto_truncatedForm",
+     "informal": "The trilinear truncations converge to the principal value as the cutoff decreases to zero.",
+     "main": true,
+     "module": "LeanPool.Triangular.Auto.TriangularHT",
+     "line": 990,
+     "kind": "theorem",
+     "sorry": false
+    },
+    {
+     "declaration": "Triangular.Auto.triangularHilbert_unique_extension",
+     "informal": "The principal-value form extends uniquely to a continuous complex trilinear form on L³, with the same norm bound.",
+     "main": true,
+     "module": "LeanPool.Triangular.Auto.TriangularHT",
+     "line": 952,
+     "kind": "theorem",
+     "sorry": false
+    }
+   ]
+  },
+  {
    "slug": "trilinear-hilbert-transform",
    "title": "Boundedness of the trilinear Hilbert transform",
    "summary": "Proves the L³ × L³ × L³ to L¹ bound for the principal-value trilinear Hilbert transform on Schwartz functions, together with its unique bounded extension to L³. Preserves the finite inverse theorem, quantitative quadratic charts, dyadic stopping and projection estimates used by the proof.",
@@ -20497,6 +23346,54 @@
      "main": false,
      "module": "LeanPool.TrilinearHilbertTransform.Auto.Sec163SummingUpdateLevels.RetainedMinHolds",
      "line": 2554,
+     "kind": "theorem",
+     "sorry": false
+    }
+   ]
+  },
+  {
+   "slug": "truth-table-rigidity",
+   "title": "Baire-measurable rigidity of the truth-table degrees",
+   "summary": "Proves that an automorphism of the truth-table degrees induced by a Baire-measurable map on Cantor space is the identity. It suffices to have a continuous inducing map on a comeager set. The formalization develops total oracle functionals, the truth-table degree order, and a Baire-category coding and inversion argument.",
+   "msc": [
+    "03D28",
+    "03B35"
+   ],
+   "authors": [
+    "Bjørn Kjos-Hanssen"
+   ],
+   "source": {
+    "title": "Baire measurable functions and automorphisms of the truth-table degrees",
+    "authors": [
+     "Bjørn Kjos-Hanssen"
+    ],
+    "arxiv": "2610.16059",
+    "url": "https://github.com/bjoernkjoshanssen/tt-auto/tree/3190d8d1a78e709297423d1343f68395127be5de",
+    "github_repo": "bjoernkjoshanssen/tt-auto",
+    "commit": "3190d8d1a78e709297423d1343f68395127be5de"
+   },
+   "license": "Apache-2.0",
+   "notice": null,
+   "provenance": "AI",
+   "directory": "TruthTableRigidity",
+   "main_results": [
+    {
+     "declaration": "TT.eq_refl_of_inducedOn_comeager",
+     "informal": "An order automorphism of the truth-table degrees is the identity if some Cantor-space map induces it on a comeager set and is continuous there.",
+     "main": true,
+     "source_ref": "Theorem 1.1 of arXiv:2610.16059, submitted 2026-10-12T02:01:06Z.",
+     "module": "LeanPool.TruthTableRigidity.Inverse",
+     "line": 280,
+     "kind": "theorem",
+     "sorry": false
+    },
+    {
+     "declaration": "TT.eq_refl_of_inducedByBaireMeasurable'",
+     "informal": "A Baire-measurable map on Cantor space can induce only the identity automorphism of the truth-table degrees.",
+     "main": true,
+     "source_ref": "Corollary 1.2 of arXiv:2610.16059.",
+     "module": "LeanPool.TruthTableRigidity.Inverse",
+     "line": 271,
      "kind": "theorem",
      "sorry": false
     }
@@ -20555,6 +23452,54 @@
      "main": false,
      "module": "LeanPool.Turan3.Turans3rdProof",
      "line": 1545,
+     "kind": "theorem",
+     "sorry": false
+    }
+   ]
+  },
+  {
+   "slug": "turing-cone-rigidity",
+   "title": "Pairwise rigidity of principal upper cones of the Turing degrees",
+   "summary": "Proves that principal upper cones of ordinary Turing degrees are order-isomorphic exactly when their base degrees agree, and that every such isomorphism fixes every underlying degree. Includes the required computability, degree coding, countable-model, forcing, persistence, and Baire-category infrastructure inherited from OpenAI's degree-rigidity development, together with the cone-specific extensions. No determinacy or regularity premise is imposed. The separate historical truth-table-degree project is outside this import.",
+   "msc": [
+    "03D28",
+    "03B35"
+   ],
+   "authors": [
+    "Bjørn Kjos-Hanssen",
+    "OpenAI"
+   ],
+   "source": {
+    "title": "Pairwise rigidity of principal Turing cones",
+    "authors": [
+     "Bjørn Kjos-Hanssen"
+    ],
+    "url": "https://github.com/bjoernkjoshanssen/tt-auto/tree/99621af8867a5d272b16eb1454a15f59fb43e9ea",
+    "github_repo": "bjoernkjoshanssen/tt-auto",
+    "commit": "99621af8867a5d272b16eb1454a15f59fb43e9ea"
+   },
+   "license": "Apache-2.0",
+   "notice": null,
+   "provenance": "AI",
+   "directory": "TuringConeRigidity",
+   "main_results": [
+    {
+     "declaration": "OAI.TuringRigidity.TwoConeMain.cones_orderIso_iff",
+     "informal": "For ordinary Turing degrees a and b, an order isomorphism between their principal upper cones exists if and only if a = b.",
+     "main": true,
+     "source_ref": "Upstream RequestProject/TuringTwoConeMain.lean, theorem cones_orderIso_iff, at commit 99621af8867a5d272b16eb1454a15f59fb43e9ea; Palomar PALOMAR-2026-11-09-000019 v2.",
+     "module": "LeanPool.TuringConeRigidity.TuringTwoConeMain",
+     "line": 99,
+     "kind": "theorem",
+     "sorry": false
+    },
+    {
+     "declaration": "OAI.TuringRigidity.TwoConeMain.cone_iso_apply_val",
+     "informal": "Every order isomorphism between principal upper cones sends each degree to itself, without continuity, measurability, determinacy, or model-existence assumptions.",
+     "main": true,
+     "source_ref": "Upstream RequestProject/TuringTwoConeMain.lean, theorem cone_iso_apply_val, at commit 99621af8867a5d272b16eb1454a15f59fb43e9ea; Palomar PALOMAR-2026-11-09-000019 v2.",
+     "module": "LeanPool.TuringConeRigidity.TuringTwoConeMain",
+     "line": 104,
      "kind": "theorem",
      "sorry": false
     }
@@ -21420,7 +24365,7 @@
      "informal": "Provides induction for the von Neumann natural numbers.",
      "main": true,
      "module": "LeanPool.ZFLean.Naturals",
-     "line": 319,
+     "line": 318,
      "kind": "theorem",
      "sorry": false
     },
@@ -21429,7 +24374,7 @@
      "informal": "Provides induction for the quotient construction of ZF integers.",
      "main": true,
      "module": "LeanPool.ZFLean.Integers",
-     "line": 570,
+     "line": 569,
      "kind": "theorem",
      "sorry": false
     }

@@ -2,7 +2,7 @@
 navigation: transparent
 ---
 
-# A proof of the Regts–Sevenster… to The Erdős–Sós conjecture (Erdős…
+# A proof of the Regts–Sevenster… to Dross's fractional triangle…
 
 - [A proof of the Regts–Sevenster conjecture, formalized](regts-sevenster.md)
 - [Asymptotically attaining the Moore bound](asymptotic-moore-bound.md)
@@ -18,9 +18,9 @@ navigation: transparent
 - [Classical graph colouring through lists, orientations and spectra](classical-graph-colouring.md)
 - [Classical matching and factor theorems in finite graphs](classical-matching-factors.md)
 - [Clique trees, subtree representations and chordal treewidth](paper-iv-clique-trees.md)
+- [Connected cographs with distance eigenvalues approaching −2 from below](cograph-distance.md)
 - [Counterexamples to graph compactness and two-degenerate extremal bounds](compactness-and-degeneracy.md)
 - [Counting Critical Portraits](critical-portraits.md)
 - [Demazure Operators and Lean](demazureoperatorslean.md)
 - [The density Hales–Jewett theorem and Szemerédi's theorem](densityhalesjewett.md)
 - [Dross's fractional triangle decomposition theorem](dross-fractional-triangle-decomposition.md)
-- [The Erdős–Sós conjecture (Erdős Problem 548)](erdos548.md)
